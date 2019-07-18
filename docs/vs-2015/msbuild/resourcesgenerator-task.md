@@ -18,22 +18,21 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f53f6f66b30509b56fbaf7cf54eecd0fe93b1434
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: fa8b438727160bb5a752643f7ef9791ca5e09245
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54805393"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65682143"
 ---
 # <a name="resourcesgenerator-task"></a>ResourcesGenerator 工作
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 <xref:Microsoft.Build.Tasks.Windows.ResourcesGenerator> 工作會將一或多種資源 (.jpg、.ico、.bmp、二進位格式的 [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)] 以及其他副檔名類型) 內嵌到 .resources 檔案。  
   
 ## <a name="task-parameters"></a>工作參數  
   
-|參數|描述|  
+|參數|說明|  
 |---------------|-----------------|  
 |`OutputPath`|必要的 **String** 參數。<br /><br /> 指定輸出目錄的路徑。 如果路徑不是絕對路徑，會將它視為相對於專案根目錄的路徑。|  
 |`OutputResourcesFile`|必要的 **ITaskItem[]** 輸出參數。<br /><br /> 指定所產生 .resources 檔案的路徑和名稱。 如果路徑不是絕對路徑，會相對於專案根目錄產生 .resources 檔案。|  
@@ -61,4 +60,4 @@ ms.locfileid: "54805393"
  [工作參考](../msbuild/wpf-msbuild-task-reference.md)   
  [MSBuild 參考](../msbuild/msbuild-reference.md)   
  [工作參考](../msbuild/msbuild-task-reference.md)   
- [建置 WPF 應用程式 (WPF)](http://msdn.microsoft.com/library/a58696fd-bdad-4b55-9759-136dfdf8b91c)
+ [建置 WPF 應用程式 (WPF)](https://msdn.microsoft.com/library/a58696fd-bdad-4b55-9759-136dfdf8b91c)

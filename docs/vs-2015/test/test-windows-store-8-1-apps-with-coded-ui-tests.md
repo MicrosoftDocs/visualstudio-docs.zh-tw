@@ -8,12 +8,12 @@ ms.assetid: c8d9c15e-ce3c-401a-86ec-c5c124a239d8
 caps.latest.revision: 26
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e8d7f1bf475dca7ed0e06e4b3ebb045b0513d5b7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: d772a2c3f8654d458ea1ba1b9d0661b290361b54
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54799293"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446006"
 ---
 # <a name="test-windows-uwp-and-81-store-apps-with-coded-ui-tests"></a>使用自動程式碼 UI 測試來測試 Windows UWP 和 8.1 市集應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "54799293"
   
 ## <a name="create-a-simple-windows-store-app"></a>建立簡單 Windows 市集應用程式  
   
-1.  如果您想要執行 XAML Windows 市集應用程式的自動程式碼 UI 測試，則必須 [設定可識別每個控制項的唯一自動化屬性](../test/set-a-unique-automation-property-for-windows-store-controls-for-testing.md)。  
+1. 如果您想要執行 XAML Windows 市集應用程式的自動程式碼 UI 測試，則必須 [設定可識別每個控制項的唯一自動化屬性](../test/set-a-unique-automation-property-for-windows-store-controls-for-testing.md)。  
   
      在 [工具]  功能表上，指向 [選項]  ，然後依序選擇 [文字編輯器] 、[XAML] 和 [其他] 。  
   
@@ -30,15 +30,15 @@ ms.locfileid: "54799293"
   
      ![XAML 其他選項](../test/media/cuit-windowsstoreapp-b.png "CUIT_WindowsStoreApp_B")  
   
-2.  使用 Visual C# 或 Visual Basic 範本，建立空白 XAML Windows 市集應用程式的新專案。  
+2. 使用 Visual C# 或 Visual Basic 範本，建立空白 XAML Windows 市集應用程式的新專案。  
   
      ![建立 Windows 市集空白應用程式 &#40;XAML&#41;](../test/media/cuit-windowsstoreapp-newproject-blankstoreapp.png "CUIT_WindowsStoreApp_NewProject_BlankStoreApp")  
   
-3.  在方案總管中，開啟 MainPage.xaml。 從 [工具箱] 中，將按鈕控制項和文字方塊控制項拖曳至設計介面。  
+3. 在方案總管中，開啟 MainPage.xaml。 從 [工具箱] 中，將按鈕控制項和文字方塊控制項拖曳至設計介面。  
   
      ![設計 Windows 市集應用程式](../test/media/cuit-windowsstoreapp-design.png "CUIT_WindowsStoreApp_Design")  
   
-4.  按兩下按鈕控制項，並加入下列程式碼：  
+4. 按兩下按鈕控制項，並加入下列程式碼：  
   
     ```csharp  
     private void button_Click_1(object sender, RoutedEventArgs e)  
@@ -58,7 +58,7 @@ ms.locfileid: "54799293"
     End Class  
     ```  
   
-5.  按 F5 鍵執行 Windows 市集應用程式。  
+5. 按 F5 鍵執行 Windows 市集應用程式。  
   
 ## <a name="create-and-run-a-coded-ui-test-for-the-windows-store-app"></a>為 Windows 市集應用程式建立和執行自動程式碼 UI 測試  
 
@@ -109,7 +109,7 @@ ms.locfileid: "54799293"
      在方案總管中，開啟 CodedUITest1.vb 檔案，然後在 CodedUITestMethod1() 測試方法程式碼中，以滑鼠右鍵按一下已自動加入 `Me.UIMap.AssertMethod1()` 的判斷提示方法呼叫，然後選擇 [移至定義] 。 這將會在程式碼編輯器中開啟 UIMap.Designer.vb 檔案，讓您可以檢視針對 assert 方法和控制項所加入的程式碼。  
   
     > [!WARNING]
-    >  請勿直接修改 UIMap.designer.cs 或 UIMap.Designer.vb 檔案。 如果您這麼做，則每次產生測試時，都會覆寫此檔案的變更。  
+    > 請勿直接修改 UIMap.designer.cs 或 UIMap.Designer.vb 檔案。 如果您這麼做，則每次產生測試時，都會覆寫此檔案的變更。  
   
      **Assert 方法**  
   
@@ -294,22 +294,22 @@ ms.locfileid: "54799293"
   
 ## <a name="q--a"></a>問與答  
   
--   **問：為什麼在 [產生自動程式化 UI 測試的程式碼] 對話方塊中看不到錄製自動程式化 UI 測試的選項？**  
+- **問：為什麼看錄製自動程式化的 UI 測試產生程式碼，自動程式化 UI 測試 對話方塊中的選項？**  
   
-     **答**：Windows 市集應用程式不支援錄製的選項。  
+     **答**：Windows 市集應用程式不支援錄製選項。  
   
--   **問：我可以根據 WinJS 建立 Windows 市集應用程式的自動程式化 UI 測試嗎？**  
+- **問：可以根據 WinJS Windows 市集應用程式建立自動程式化的 UI 測試嗎？**  
   
-     **答**：不可以，目前只支援以 XAML 為基礎的應用程式。  
+     **答**：不可以，只有為基礎的 XAML 應用程式支援。  
   
--   **問：我可以在未執行 Windows 8.1 或 Windows 10 的系統上，建立 Windows 市集應用程式的自動程式化 UI 測試嗎？**  
+- **問：可以建立自動程式化的 UI 測試 Windows 市集應用程式未執行 Windows 8.1 或 Windows 10 的系統上嗎？**  
   
-     **答**：不可以，自動程式碼 UI 測試專案範本僅適用於 Windows 8.1 和 Windows 10。 若要建立通用 Windows 平台 (UWP) 應用程式的自動化，您需要 Windows 10。  
+     **答**：否，僅適用於 Windows 8.1 和 Windows 10 的自動程式化 UI 測試專案範本。 若要建立通用 Windows 平台 (UWP) 應用程式的自動化，您需要 Windows 10。  
 
 <a name="uwpapps"></a>
-- **問：如何建立通用 Windows 平台 (UWP) App 的自動程式化 UI 測試？**  
+- **問：如何建立通用 Windows 平台 (UWP) 應用程式的自動程式化的 UI 測試？**  
   
-   **答**：您可以根據要測試 UWP 應用程式的平台，使用下列其中一種方式來建立自動程式碼 UI 測試專案：  
+   **答**：根據您要在其中測試您的 UWP 應用程式的平台，請在下列其中一種中建立自動程式化的 UI 測試專案：  
   
   - 在本機電腦上執行的 UWP 應用程式將會當做市集應用程式執行。 若要測試這種情況，您必須使用 [自動程式碼 UI 測試專案 (Windows)]  範本。 若要在建立新專案時找到這個範本，請移至 [Windows] 、[通用]  節點。 或移至 [Windows] 、[Windows 8] 、[Windows]  節點。  
   
@@ -321,6 +321,6 @@ ms.locfileid: "54799293"
   
    **答**：每次您使用 [UIMap - 自動程式碼 UI 測試產生器] 產生程式碼時，對 UIMapDesigner.cs 檔案中的程式碼所做的變更都會被覆寫。 如果您需要修改錄製的方法，必須將它複製到 UIMap.cs 檔案並重新命名。 UIMap.cs 檔案可用來覆寫 UIMapDesigner.cs 檔案中的方法和屬性。 您必須移除 Coded UITest.cs 檔案中原始方法的參考，並將它取代為重新命名的方法名稱。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [使用使用者介面自動化來測試您的程式碼](../test/use-ui-automation-to-test-your-code.md)   
  [為 Windows 市集控制項設定唯一自動化屬性以進行測試](../test/set-a-unique-automation-property-for-windows-store-controls-for-testing.md)

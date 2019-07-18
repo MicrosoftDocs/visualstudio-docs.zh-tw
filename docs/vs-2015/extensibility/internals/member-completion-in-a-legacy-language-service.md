@@ -1,14 +1,9 @@
 ---
 title: 舊版語言服務中的成員自動完成 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - IntelliSense, Member Completion tool tip
 - Member Completion, supporting in language services [managed package framework]
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 500f718d-9028-49a4-8615-ba95cf47fc52
 caps.latest.revision: 22
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: b8b5940e473c639600c30e66e7dc0c732359322d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 93182d61b6ecf5bf22ea7117bf8ccfd17e2acd1a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51790979"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437917"
 ---
 # <a name="member-completion-in-a-legacy-language-service"></a>舊版語言服務中的成員完成
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -34,7 +29,7 @@ IntelliSense 成員自動完成會顯示一份可能的成員，例如類別、 
  舊版語言服務會實作成 VSPackage 的一部分，但實作語言服務功能的較新的方式是使用 MEF 擴充功能。 若要深入了解，請參閱[擴充編輯器和語言服務](../../extensibility/extending-the-editor-and-language-services.md)。  
   
 > [!NOTE]
->  我們建議您開始使用新的編輯器 API 盡。 這會改善您的語言服務的效能，並可讓您充分利用新編輯器功能。  
+> 我們建議您開始使用新的編輯器 API 盡。 這會改善您的語言服務的效能，並可讓您充分利用新編輯器功能。  
   
 ## <a name="how-it-works"></a>它的運作方式  
  以下是在其成員的清單會顯示使用 MPF 類別的兩種方法：  
@@ -43,7 +38,7 @@ IntelliSense 成員自動完成會顯示一份可能的成員，例如類別、 
   
 - <xref:Microsoft.VisualStudio.Package.IScanner>掃描器會偵測成員完成字元，並設定語彙基元的觸發程序的<xref:Microsoft.VisualStudio.Package.TokenTriggers>該字元。  
   
-  成員完成字元表示的類別、 結構或列舉成員遵循。 例如，在 C# 或 Visual Basic 中的成員完成字元是`.`，而 c + + 中的字元是其中一個`.`或`->`。 成員選取字元會掃描時，會設定觸發程序的值。  
+  成員完成字元表示的類別、 結構或列舉成員遵循。 例如，在C#或 Visual Basic 的成員完成字元`.`，當您在C++的字元是其中一個`.`或`->`。 成員選取字元會掃描時，會設定觸發程序的值。  
   
 ### <a name="the-intellisense-member-list-command"></a>IntelliSense 成員 List 命令  
  <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>命令會起始呼叫<xref:Microsoft.VisualStudio.Package.Source.Completion%2A>方法<xref:Microsoft.VisualStudio.Package.Source>類別和<xref:Microsoft.VisualStudio.Package.Source.Completion%2A>方法，轉而呼叫<xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A>方法的剖析器，剖析原因為<xref:Microsoft.VisualStudio.Package.ParseReason>。  
@@ -262,4 +257,3 @@ namespace TestLanguagePackage
     }  
 }  
 ```
-

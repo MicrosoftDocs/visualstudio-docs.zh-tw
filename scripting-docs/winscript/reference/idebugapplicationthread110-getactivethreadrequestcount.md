@@ -13,18 +13,18 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d9bda0cc59560d90ebc0a382d858c881e7372c15
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: 3df2f0c44e42cf9e2c2aa846db4b88821fd73996
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58145066"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440573"
 ---
 # <a name="idebugapplicationthread110getactivethreadrequestcount"></a>IDebugApplicationThread110::GetActiveThreadRequestCount
 從 PDM 的執行緒切換目前正在處理的機制，會傳回執行緒的要求數目。 這個數字通常是 0 或 1。 不過，如果一個執行緒呼叫開始處理，但同步呼叫的執行緒，從觸發程序或否則暫止的執行緒，也允許再次處理傳入的呼叫數目可能會更高 (例如，透過觸發[IRemoteDebugApplicationEvents 介面](../../winscript/reference/iremotedebugapplicationevents-interface.md)偵錯工具執行緒發出的事件)。  
   
 > [!IMPORTANT]
->  [IDebugApplicationThread110 介面](../../winscript/reference/idebugapplicationthread110-interface.md)是實作由 PDM v11.0 和更新版本。 可在 activdbg100.h 中找到。  
+> [IDebugApplicationThread110 介面](../../winscript/reference/idebugapplicationthread110-interface.md)是實作由 PDM v11.0 和更新版本。 可在 activdbg100.h 中找到。  
   
 ## <a name="syntax"></a>語法  
   

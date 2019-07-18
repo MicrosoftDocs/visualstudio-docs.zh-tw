@@ -1,5 +1,5 @@
 ---
-title: 開始使用適用於 Excel 的文件層級自訂程式設計
+title: Excel:開始使用文件層級自訂程式設計
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a336463a3a7d8003c949242ad2f295a76633c894
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 2c1ff264eb1a4ca7afdc424cef7edf15bae06554
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56603790"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66402164"
 ---
 # <a name="get-started-programming-document-level-customizations-for-excel"></a>開始使用適用於 Excel 的文件層級自訂程式設計
   如果您剛開始使用 Visual Studio 建立適用於 Microsoft Office Excel 的文件層級自訂，以下是您需要知道。
@@ -44,11 +44,11 @@ ms.locfileid: "56603790"
 
  如需詳細資訊，請參閱下列主題：
 
--   [程式文件層級自訂](../vsto/programming-document-level-customizations.md)
+- [程式文件層級自訂](../vsto/programming-document-level-customizations.md)
 
--   [使用擴充的物件自動化 Excel](../vsto/automating-excel-by-using-extended-objects.md)
+- [使用擴充的物件自動化 Excel](../vsto/automating-excel-by-using-extended-objects.md)
 
--   [主項目和主控制項概觀](../vsto/host-items-and-host-controls-overview.md)
+- [主項目和主控制項概觀](../vsto/host-items-and-host-controls-overview.md)
 
 ## <a name="customize-the-user-interface-of-excel"></a>自訂 Excel 的使用者介面
  大部分的 Microsoft Office 解決方案會修改使用者介面 (UI)，提供一些方式，讓使用者與該解決方案互動的 Office 應用程式。 有許多方法，您可以在其中修改 Excel 的 UI 使用文件層級自訂。 比方說，您可以將控制項新增至功能區中，或您可以顯示執行窗格。 如需詳細資訊，請參閱 < [Office UI 自訂](../vsto/office-ui-customization.md)。

@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ed4826b61bb63993faed0dfebe113a89213d91b7
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: d9650c2ea67d847f225f047d62dd7d1867a61d4d
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56626449"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "64809181"
 ---
 # <a name="idiasymbolgetundecoratedname"></a>IDiaSymbol::get_undecoratedName
-擷取為 c + + 裝飾，或連結，名稱的未裝飾的名稱。
+擷取的未裝飾的名稱C++裝飾，或連結、 名稱。
 
 ## <a name="syntax"></a>語法
 
@@ -33,13 +33,13 @@ HRESULT get_undecoratedName ( 
 #### <a name="parameters"></a>參數
  `pRetVal`
 
-[out]傳回的未裝飾的名稱的 c + + 裝飾名稱。
+[out]傳回的未裝飾的名稱C++裝飾名稱。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。
 
 > [!NOTE]
->  傳回值為`S_FALSE`表示此屬性不適用於符號。
+> 傳回值為`S_FALSE`表示此屬性不適用於符號。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

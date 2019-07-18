@@ -1,5 +1,5 @@
 ---
-title: 逐步解說：使用組態檔定義資料來源
+title: 使用組態檔定義資料來源
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cfad5fbf5e6a4105926fe0293093749b4cecaf57
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: d6bfb122649f688ece90e981c419325564776215
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55935429"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746755"
 ---
 # <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>逐步解說：使用組態檔定義資料來源
 
@@ -46,13 +46,13 @@ ms.locfileid: "55935429"
 
 1. 如果您的測試專案中已經有 *app.config* 檔案，請移至[定義自訂組態區段](#define-a-custom-configuration-section)。
 
-2. 在 [方案總管] 中，以滑鼠右鍵按一下您的測試專案，然後選取 [新增] > [新增項目]。
+2. 在 [方案總管]  中，以滑鼠右鍵按一下您的測試專案，然後選取 [新增]   > [新增項目]  。
 
-     [新增項目] 視窗隨即開啟。
+     [新增項目]  視窗隨即開啟。
 
-3. 選取 [應用程式組態檔] 範本，然後按一下 [新增]。
+3. 選取 [應用程式組態檔]  範本，然後按一下 [新增]  。
 
-##  <a name="define-a-custom-configuration-section"></a>定義自訂組態區段
+## <a name="define-a-custom-configuration-section"></a>定義自訂組態區段
 
 檢查 *app.config* 檔案。 這個檔案至少會包含 XML 宣告和一個根項目。
 
@@ -62,16 +62,16 @@ ms.locfileid: "55935429"
 
 2. 在 **configSections** 項目內建立 **section** 項目。
 
-3. 在 **section** 項目中新增稱為 `name` 的屬性，並為它指派值 `microsoft.visualstudio.testtools`。 新增另一個稱為 `type` 的屬性，並為它指派值 `Microsoft.VisualStudio.TestTools.UnitTesting.TestConfigurationSection, Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a`。
+3. 在 **section** 項目中新增稱為 `name` 的屬性，並為它指派值 `microsoft.visualstudio.testtools`。 新增另一個稱為 `type` 的屬性，並為它指派值 `Microsoft.VisualStudio.TestTools.UnitTesting.TestConfigurationSection, Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions`。
 
 **section** 項目應該看起來像這樣：
 
 ```xml
-<section name="microsoft.visualstudio.testtools" type="Microsoft.VisualStudio.TestTools.UnitTesting.TestConfigurationSection, Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"/>
+<section name="microsoft.visualstudio.testtools" type="Microsoft.VisualStudio.TestTools.UnitTesting.TestConfigurationSection, Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions" />
 ```
 
 > [!NOTE]
-> 組件名稱必須與您所使用的 Microsoft Visual Studio .NET Framework 組建相符。 如果您是使用 Visual Studio .NET Framework 3.5，請將 Version 設定為 9.0.0.0。 如果您是使用 Visual Studio .NET Framework 2.0，請將 Version 設定為 8.0.0.0。
+> 組件名稱必須符合您所使用的版本。
 
 ## <a name="define-connection-strings"></a>定義連接字串
 

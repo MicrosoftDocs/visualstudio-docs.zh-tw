@@ -1,14 +1,9 @@
 ---
 title: 共用和建立版本的 Vspackage 之間做選擇 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - SxS
 - side-by-side installation
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: e3128ac3-2e92-48e9-87ab-3b6c9d80e8c9
 caps.latest.revision: 23
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 9fcae5b736310424f220d08aefa4e061e1f6c860
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 289e506d3cd404bba9a3a63d97179b89a948d381
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51756832"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821983"
 ---
 # <a name="choosing-between-shared-and-versioned-vspackages"></a>在共用和建立版本的 VSPackage 之間進行選擇
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,21 +31,21 @@ ms.locfileid: "51756832"
 ## <a name="shared-vspackages"></a>共用的 Vspackage  
  當您使用相同的 VSPackage 中的多個版本時使用的共用的 VSPackage 是適當[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。 若要實作共用的 VSPackage，您必須採取下列步驟：  
   
--   讓 VSPackage 與多個版本的相容[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。 這麼做的兩種方式是可用：  
+- 讓 VSPackage 與多個版本的相容[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。 這麼做的兩種方式是可用：  
   
-    -   限制要使用的最舊版本的功能 VSPackage[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]您支援。  
+  - 限制要使用的最舊版本的功能 VSPackage[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]您支援。  
+
+  - 程式設計 VSPackage 來適應的新版[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]中它正在執行。 然後，如果較新的服務的查詢失敗，VSPackage 可以提供其他服務所支援的舊版[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。  
   
-    -   程式設計 VSPackage 來適應的新版[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]中它正在執行。 然後，如果較新的服務的查詢失敗，VSPackage 可以提供其他服務所支援的舊版[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。  
+- 適當地註冊 VSPackage。 如需詳細資訊，請參閱 < [VSPackage 註冊](../extensibility/internals/vspackage-registration.md)並[Managed VSPackage 註冊](https://msdn.microsoft.com/f69e0ea3-6a92-4639-8ca9-4c9c210e58a1)。  
   
--   適當地註冊 VSPackage。 如需詳細資訊，請參閱 < [VSPackage 註冊](../extensibility/internals/vspackage-registration.md)並[Managed VSPackage 註冊](http://msdn.microsoft.com/en-us/f69e0ea3-6a92-4639-8ca9-4c9c210e58a1)。  
+- 適當地註冊副檔名。 如需詳細資訊，請參閱 <<c0> [ 並排顯示部署的註冊檔案名稱副檔名](../extensibility/registering-file-name-extensions-for-side-by-side-deployments.md)。  
   
--   適當地註冊副檔名。 如需詳細資訊，請參閱 <<c0> [ 並排顯示部署的註冊檔案名稱副檔名](../extensibility/registering-file-name-extensions-for-side-by-side-deployments.md)。  
+- 建立部署的適當版本的 VSPackage 的安裝程式[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。 如需詳細資訊，請參閱 <<c0> [ 使用 Windows Installer 安裝 Vspackage](../extensibility/internals/installing-vspackages-with-windows-installer.md)並[元件管理](../extensibility/internals/component-management.md)。  
   
--   建立部署的適當版本的 VSPackage 的安裝程式[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。 如需詳細資訊，請參閱 <<c0> [ 使用 Windows Installer 安裝 Vspackage](../extensibility/internals/installing-vspackages-with-windows-installer.md)並[元件管理](../extensibility/internals/component-management.md)。  
+- 解決註冊衝突的問題。 如需詳細資訊，請參閱 < [VSPackage 註冊](../extensibility/internals/vspackage-registration.md)。  
   
--   解決註冊衝突的問題。 如需詳細資訊，請參閱 < [VSPackage 註冊](../extensibility/internals/vspackage-registration.md)。  
-  
--   請確定共用和建立版本的檔案會採用參考計數來允許安全的安裝和移除多個版本。 如需詳細資訊，請參閱 <<c0> [ 元件管理](../extensibility/internals/component-management.md)。  
+- 請確定共用和建立版本的檔案會採用參考計數來允許安全的安裝和移除多個版本。 如需詳細資訊，請參閱 <<c0> [ 元件管理](../extensibility/internals/component-management.md)。  
   
 ## <a name="versioned-vspackages"></a>建立版本的 Vspackage  
  建立版本的 VSPackage 策略，在您建立的每個版本的一個 VSPackage[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]您支援。 您預計要充分利用的更新版本所提供的服務執行此動作會適當[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]，因為每個 VSPackage 不會影響其他人就能持續改進。 不過，從單一程式碼基底，或是從多個獨立的程式碼基底，建立多個二進位檔的版本控制策略可能需要多個初始開發也比共用的策略。 此外，因為您必須建立個別的安裝程式，每個版本或是單一安裝程式偵測到的版本的其他設定工作可能會需要[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]所安裝，以及支援 VSPackage。  
@@ -71,4 +66,3 @@ ms.locfileid: "51756832"
 ## <a name="see-also"></a>另請參閱  
  [使用 Windows Installer 安裝 Vspackage](../extensibility/internals/installing-vspackages-with-windows-installer.md)   
  [元件管理](../extensibility/internals/component-management.md)
-

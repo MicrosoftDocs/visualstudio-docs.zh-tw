@@ -1,14 +1,9 @@
 ---
-title: CA1039： 清單為強型別 |Microsoft Docs
-ms.custom: ''
+title: CA1039:清單強型別 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1039
 - ListsAreStronglyTyped
@@ -20,14 +15,14 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 681c1ada7600743c0a548f8a774dada6863f7d0d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3fb1a6255539ded989c5ad9638fc961d606a19f7
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49853411"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62559740"
 ---
-# <a name="ca1039-lists-are-strongly-typed"></a>CA1039：清單為強類型
+# <a name="ca1039-lists-are-strongly-typed"></a>CA1039:清單為強類型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -40,17 +35,17 @@ ms.locfileid: "49853411"
 ## <a name="cause"></a>原因
  公用或受保護的型別會實作<xref:System.Collections.IList?displayProperty=fullName>，但不提供強型別的方法的一個或多個項目：
 
--   IList.Item
+- IList.Item
 
--   IList.Add
+- IList.Add
 
--   IList.Contains
+- IList.Contains
 
--   IList.IndexOf
+- IList.IndexOf
 
--   IList.Insert
+- IList.Insert
 
--   IList.Remove
+- IList.Remove
 
 ## <a name="rule-description"></a>規則描述
  此規則需要<xref:System.Collections.IList>實作提供強類型成員，以便使用者不需要引數轉換<xref:System.Object?displayProperty=fullName>輸入使用時，就提供的功能介面。 <xref:System.Collections.IList>可依索引存取的物件的集合會實作介面。 這項規則假設，實作型別<xref:System.Collections.IList>這麼做以管理比更強型別的執行個體的集合<xref:System.Object>。
@@ -71,15 +66,12 @@ ms.locfileid: "49853411"
  [!code-csharp[FxCop.Design.IListStrongTypes#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.IListStrongTypes/cs/FxCop.Design.IListStrongTypes.cs#1)]
 
 ## <a name="related-rules"></a>相關的規則
- [CA1035：ICollection 實作包含強類型成員](../code-quality/ca1035-icollection-implementations-have-strongly-typed-members.md)
+ [CA1035:實作包含強類型成員](../code-quality/ca1035-icollection-implementations-have-strongly-typed-members.md)
 
- [CA1038：列舉程式應該是強類型](../code-quality/ca1038-enumerators-should-be-strongly-typed.md)
+ [CA1038:應該是強類型列舉值](../code-quality/ca1038-enumerators-should-be-strongly-typed.md)
 
 ## <a name="see-also"></a>另請參閱
  <xref:System.Collections.CollectionBase?displayProperty=fullName> <xref:System.Collections.ICollection?displayProperty=fullName>
  <xref:System.Collections.IEnumerable?displayProperty=fullName>
  <xref:System.Collections.IList?displayProperty=fullName>
  <xref:System.Object?displayProperty=fullName>
-
-
-

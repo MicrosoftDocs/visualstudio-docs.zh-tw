@@ -1,27 +1,22 @@
 ---
 title: 部署自訂起始頁 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - package start page
 - deploy start page
 ms.assetid: 4a7eb360-de83-41d5-be53-3cfb160d19f9
 caps.latest.revision: 22
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 5e788f9bb1ca0333fd20237103cf6bce136af2e0
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 1cdd172c2960024da8b12735764161d36498c4e2
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51795107"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68162097"
 ---
 # <a name="deploying-custom-start-pages"></a>部署自訂起始頁
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +28,7 @@ ms.locfileid: "51795107"
   
 - 您可以在公用網站或網路共用上放置.vsix 檔案。 當有人開啟檔案時，會自動安裝 [入門] 頁面。  
   
-- 您可以上傳.vsix 檔案[Visual Studio 組件庫](http://go.microsoft.com/fwlink/?LinkID=123847)網站，使用者可以使用來安裝它**延伸模組管理員**。  
+- 您可以上傳.vsix 檔案[Visual Studio Marketplace](https://marketplace.visualstudio.com/)網站，使用者可以使用來安裝它**延伸模組管理員**。  
   
   起始頁專案範本會建立一份預設 Visual Studio 起始頁，讓您可以修改複本，並保留原始。  
   
@@ -46,9 +41,9 @@ ms.locfileid: "51795107"
   
 - 藉由將空的 VSIX 專案中的自訂起始頁檔案。 如需詳細資訊，請參閱 < [VSIX 專案範本](../extensibility/vsix-project-template.md)。  
   
-- 手動建立.vsix 檔案。 如需詳細資訊，請參閱 <<c0> [ 如何： 手動封裝擴充功能 （VSIX 部署）](../misc/how-to-manually-package-an-extension-vsix-deployment.md)。  
+- 手動建立.vsix 檔案。 如需詳細資訊，請參閱[如何：手動封裝擴充功能 （VSIX 部署）](../misc/how-to-manually-package-an-extension-vsix-deployment.md)。  
   
-  Visual Studio 能夠辨識 [入門] 頁面中，如`Content Element`VSIX 資訊清單必須包含`CustomExtension Element`具有`Type`屬性設為`"StartPage"`。 使用 VSIX 部署已安裝的起始頁延伸模組會出現在**自訂起始頁**上列出**啟動**選項頁面中以 **[安裝延伸模組]***延伸模組名稱*。  
+  Visual Studio 能夠辨識 [入門] 頁面中，如`Content Element`VSIX 資訊清單必須包含`CustomExtension Element`具有`Type`屬性設為`"StartPage"`。 使用 VSIX 部署已安裝的起始頁延伸模組會出現在**自訂起始頁**上列出**啟動**選項頁面中以 **[安裝延伸模組]** *延伸模組名稱*。  
   
   如果您的起始頁套件包含組件，您必須先新增繫結路徑註冊，以便 Visual Studio 啟動時可供使用。 若要這樣做，請確定您的套件包含具有下列資訊的.pkgdef 檔。  
   
@@ -62,9 +57,9 @@ ms.locfileid: "51795107"
   
 ##### <a name="to-create-an-all-users-deployment"></a>若要建立的所有使用者部署  
   
-1.  在程式碼檢視中開啟 extension.vsixmanifest 檔案。  
+1. 在程式碼檢視中開啟 extension.vsixmanifest 檔案。  
   
-2.  在 `Identifier`加入 vsix 資訊清單的項目`AllUsers`項目，其值為`true`。  
+2. 在 `Identifier`加入 vsix 資訊清單的項目`AllUsers`項目，其值為`true`。  
   
     ```  
     <AllUsers>true</AllUsers>  
@@ -72,11 +67,11 @@ ms.locfileid: "51795107"
   
      這會造成 vsix 安裝程式提示您輸入系統管理員權限，並接著將檔案安裝到 \Common7\IDE\Extensions。  
   
-3.  開啟.pkgdef 檔。  
+3. 開啟.pkgdef 檔。  
   
-4.  修改以加入下列程式碼，來設定預設起始頁 HKLM 底下.pkgdef 所在*MyStartPage.xaml*是包含您的起始頁.xaml 檔的名稱。  
+4. 修改以加入下列程式碼，來設定預設起始頁 HKLM 底下.pkgdef 所在*MyStartPage.xaml*是包含您的起始頁.xaml 檔的名稱。  
   
-     [$RootKey$ \StartPage\Default]  
+     [$RootKey$\StartPage\Default]  
   
      "Uri"="$PackageFolder$\\*MyStartPage.xaml*"  
   
@@ -89,13 +84,12 @@ ms.locfileid: "51795107"
   
 #### <a name="to-manually-install-a-custom-start-page"></a>若要手動安裝自訂起始頁  
   
-1.  複製的.xaml 檔案，包含啟動網頁標記中，以及組件以外的任何支援檔案，並將它們貼到使用者的 \StartPages\ 資料夾。  
+1. 複製的.xaml 檔案，包含啟動網頁標記中，以及組件以外的任何支援檔案，並將它們貼到使用者的 \StartPages\ 資料夾。  
   
-2.  如果 [啟動] 頁面需要組件，請將其複製並貼到...\\ *Visual Studio 安裝資料夾*\Common7\IDE\PrivateAssemblies\\。  
+2. 如果 [啟動] 頁面需要組件，請將其複製並貼到...\\ *Visual Studio 安裝資料夾*\Common7\IDE\PrivateAssemblies\\。  
   
-3.  在 **自訂起始頁**上列出**啟動**選項頁面上，選取新的 入門 頁面。 如需詳細資訊，請參閱[自訂起始頁](../ide/customizing-the-start-page-for-visual-studio.md)。  
+3. 在 **自訂起始頁**上列出**啟動**選項頁面上，選取新的 入門 頁面。 如需詳細資訊，請參閱[自訂起始頁](../ide/customizing-the-start-page-for-visual-studio.md)。  
   
 ## <a name="see-also"></a>另請參閱  
  [自訂起始頁](../ide/customizing-the-start-page-for-visual-studio.md)   
  [將使用者控制項加入至起始頁](../extensibility/adding-user-control-to-the-start-page.md)
-

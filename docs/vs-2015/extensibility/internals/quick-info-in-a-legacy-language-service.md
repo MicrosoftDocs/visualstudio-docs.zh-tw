@@ -1,14 +1,9 @@
 ---
 title: 舊版語言服務中的快速諮詢 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Quick Info, supporting in language services [managed package framework]
 - IntelliSense, Quick Info
@@ -16,23 +11,23 @@ helpviewer_keywords:
 ms.assetid: 159ccb0b-f5d6-4912-b88b-e9612924ed5e
 caps.latest.revision: 17
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 6ff6f4a29d194aaa5c9b868fffa19947a7321c77
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: cc8bfff0903d2ed1554cfd8b3d5b1dcf5cf0fa8a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51797204"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436648"
 ---
 # <a name="quick-info-in-a-legacy-language-service"></a>舊版語言服務中的快速諮詢
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 IntelliSense 快速諮詢會顯示來源中的識別項的相關資訊時，使用者將插入號放在識別項，並選取**快速諮詢**從**IntelliSense**功能表或保留滑鼠資料指標的識別碼上方。 這會導致識別碼的相關資訊會出現工具提示。 這項資訊通常包括識別項型別。 作用中的偵錯引擎時，這項資訊可能包含目前的值。 語言服務處理只有識別碼項目時，偵錯引擎會提供運算式值。  
   
- 舊版語言服務會實作成 VSPackage 的一部分，但實作語言服務功能的較新的方式是使用 MEF 擴充功能。 若要深入了解，請參閱[逐步解說︰ 顯示 QuickInfo 工具提示](../../extensibility/walkthrough-displaying-quickinfo-tooltips.md)。  
+ 舊版語言服務會實作成 VSPackage 的一部分，但實作語言服務功能的較新的方式是使用 MEF 擴充功能。 若要深入了解，請參閱[逐步解說：顯示 QuickInfo 工具提示](../../extensibility/walkthrough-displaying-quickinfo-tooltips.md)。  
   
 > [!NOTE]
->  我們建議您開始使用新的編輯器 API 盡。 這會改善您的語言服務的效能，並可讓您充分利用新編輯器功能。  
+> 我們建議您開始使用新的編輯器 API 盡。 這會改善您的語言服務的效能，並可讓您充分利用新編輯器功能。  
   
  Managed 的封裝架構 (MPF) 語言服務類別會提供完整的支援，顯示 IntelliSense 快速諮詢工具提示。 您必須執行的只是提供文字顯示，並啟用快速諮詢功能。  
   
@@ -49,4 +44,3 @@ IntelliSense 快速諮詢會顯示來源中的識別項的相關資訊時，使�
  大部分的剖析器會執行整個原始程式檔的初始剖析，並將結果儲存在剖析樹狀結構中。 完整剖析執行時<xref:Microsoft.VisualStudio.Package.ParseReason>傳遞至<xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A>方法。 其他種類的剖析然後可以使用剖析樹狀結構，以取得所需的資訊。  
   
  例如，剖析原因值<xref:Microsoft.VisualStudio.Package.ParseReason>可以找到來源位置識別碼和查閱在剖析樹狀目錄中取得類型資訊。 此類型資訊會傳遞至<xref:Microsoft.VisualStudio.Package.AuthoringScope>類別，並傳回<xref:Microsoft.VisualStudio.Package.AuthoringScope.GetDataTipText%2A>方法。
-

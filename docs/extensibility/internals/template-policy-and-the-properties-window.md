@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - Properties window, template policy
 ms.assetid: 1d8019d3-5e57-47ba-b358-526b0796a63b
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 769a665e98fe2aaa5cb3ad75947caa177182f4cf
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 751e6d766a4ae107eaabb7364d8aeca627fc59da
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56603140"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66331219"
 ---
 # <a name="template-policy-and-the-properties-window"></a>範本原則和屬性視窗
 當專案包含在 enterprise 範本專案時，該企業樣板專案可以強制執行原則。 原則範本會變成可用來設定屬性的預設值、 隱藏的屬性、 加入屬性等等的條件約束系統。

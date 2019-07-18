@@ -20,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 03ea220bf886352a05cc67bdd44a9504dcd86964
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: a8a08b58871652cea6332f4239e9da98b28f28e0
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56600850"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62939576"
 ---
 # <a name="automate-excel-by-using-extended-objects"></a>使用擴充的物件自動化 Excel
   在 Visual Studio 中開發 Excel 方案時，您可以在方案中使用 *「主項目」* (host items) 和 *「主控制項」*(host controls)。 這些物件可以擴充 Excel 物件模型 (也就是 Excel 的主要 Interop 組件公開的物件模型) 中某些常用的物件，例如 <xref:Microsoft.Office.Interop.Excel.Worksheet> 和 <xref:Microsoft.Office.Interop.Excel.Range> 物件。 這些擴充物件的行為與它們所根據的 Excel 物件一樣，但是這些物件會將額外的功能 (例如新事件和資料繫結功能) 加入物件中 。
@@ -37,11 +37,11 @@ ms.locfileid: "56600850"
 ## <a name="excel-host-items"></a>Excel 主項目
  Excel 專案可讓您存取數個主項目：
 
--   <xref:Microsoft.Office.Tools.Excel.Worksheet>. 包含這個主項目，並代表您的專案中的工作表。 它還可當成 Managed 控制項 (包括主控制項與 Windows Form 控制項) 的容器使用，而且會在其介面維護控制項的相關資訊。 如需詳細資訊，請參閱 <<c0> [ 工作表主項目](../vsto/worksheet-host-item.md)。
+- <xref:Microsoft.Office.Tools.Excel.Worksheet>. 包含這個主項目，並代表您的專案中的工作表。 它還可當成 Managed 控制項 (包括主控制項與 Windows Form 控制項) 的容器使用，而且會在其介面維護控制項的相關資訊。 如需詳細資訊，請參閱 <<c0> [ 工作表主項目](../vsto/worksheet-host-item.md)。
 
--   <xref:Microsoft.Office.Tools.Excel.Workbook>. 這個主項目表示專案中的活頁簿，可當做活頁簿中所有工作表共用之元件的容器。 如需詳細資訊，請參閱 < [Workbook 主項目](../vsto/workbook-host-item.md)。
+- <xref:Microsoft.Office.Tools.Excel.Workbook>. 這個主項目表示專案中的活頁簿，可當做活頁簿中所有工作表共用之元件的容器。 如需詳細資訊，請參閱 < [Workbook 主項目](../vsto/workbook-host-item.md)。
 
--   <xref:Microsoft.Office.Tools.Excel.ChartSheet>. 這個主項目表示 Excel 中的工作表，其只包含一個圖表並會公開事件。
+- <xref:Microsoft.Office.Tools.Excel.ChartSheet>. 這個主項目表示 Excel 中的工作表，其只包含一個圖表並會公開事件。
 
      在設計階段將圖表工作表當做新工作表加入 Microsoft Office Excel 文件層級自訂專案時，Visual Studio 會自動建立 <xref:Microsoft.Office.Tools.Excel.ChartSheet> 主項目。
 
@@ -52,13 +52,13 @@ ms.locfileid: "56600850"
 
  如需可用於 Excel 專案中之主控制項的詳細資訊，請參閱下列主題：
 
--   [圖表控制項](../vsto/chart-control.md)
+- [圖表控制項](../vsto/chart-control.md)
 
--   [ListObject 控制項](../vsto/listobject-control.md)
+- [ListObject 控制項](../vsto/listobject-control.md)
 
--   [NamedRange 控制項](../vsto/namedrange-control.md)
+- [NamedRange 控制項](../vsto/namedrange-control.md)
 
--   [XmlMappedRange 控制項](../vsto/xmlmappedrange-control.md)
+- [XmlMappedRange 控制項](../vsto/xmlmappedrange-control.md)
 
 ## <a name="see-also"></a>另請參閱
 - [如何：使用資料填入 ListObject 控制項](../vsto/how-to-fill-listobject-controls-with-data.md)

@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bed026b76ae99509dd2abb77b11b46c14b1d3aae
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: d7f9edfb6b0c10a37aade6a9d37a5689e587890d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55928747"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438110"
 ---
 # <a name="command-window"></a>命令視窗
 [命令] 視窗是用來直接在 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 整合式開發環境 (IDE) 中執行命令或別名。 您可以執行功能表命令以及不會出現在任何功能表上的命令。 若要顯示 [命令] 視窗，請從 [檢視] 功能表中選擇 [其他視窗]，然後選取 [命令視窗]。
@@ -61,7 +61,6 @@ ms.locfileid: "55928747"
 > [!TIP]
 > 您可以將整個或一部分的先前命令複製至輸入行，方法是捲動到它，並反白顯示它的全部或一部分，然後按 ENTER。
 
-
 ## <a name="mark-mode"></a>標記模式
  當您按一下 [命令] 視窗中的任何先前行時，會自動切換至標記模式。 這可讓您像在任何文字編輯器中一樣地選取、編輯和複製先前命令的文字，並將它們貼入目前行。
 
@@ -81,16 +80,16 @@ Edit.ReplaceInFiles /case /pattern:regex var[1-3]+ oldpar
 
  在此範例中，
 
--   `Edit.ReplaceInFiles` 是命令
+- `Edit.ReplaceInFiles` 是命令
 
--   `/case` 和 `/pattern:regex` 是切換參數 (前面加上斜線 [/] 字元)
+- `/case` 和 `/pattern:regex` 是切換參數 (前面加上斜線 [/] 字元)
 
--   `regex` 是 `/pattern` 切換參數的值；`/case` 切換參數沒有值
+- `regex` 是 `/pattern` 切換參數的值；`/case` 切換參數沒有值
 
--   `var[1-3]+` 和 `oldpar` 是參數
+- `var[1-3]+` 和 `oldpar` 是參數
 
     > [!NOTE]
-    >  任何包含空格的命令、參數、切換參數或值的兩端都必須有雙引號。
+    > 任何包含空格的命令、參數、切換參數或值的兩端都必須有雙引號。
 
 在命令列上，切換參數和參數的位置可以自由地互換，例外是 [Shell](../../ide/reference/shell-command.md) 命令，其切換參數和參數必須為特定順序。
 

@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: aa3d347c08ee73054d4b229d7d2598331e44c1d7
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: faef5f2420f4abd30ecec9151212b8a731736886
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55941370"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62795118"
 ---
 # <a name="generate-a-constructor-in-visual-studio"></a>在 Visual Studio 中產生建構函式
 
@@ -30,11 +30,11 @@ ms.locfileid: "55941370"
 
 **做法：** 有數種產生建構函式的方式：
 
-   - [產生建構函式並選取成員](#pick)
-   - [從選取的欄位產生建構函式](#selection)
-   - [從新的使用方式產生建構函式](#usage)
-   - [將參數新增至現有的建構函式](#addparameter)
-   - [從建構函式參數建立欄位/屬性並加以初始化](#create)
+- [產生建構函式並選取成員](#pick)
+- [從選取的欄位產生建構函式](#selection)
+- [從新的使用方式產生建構函式](#usage)
+- [將參數新增至現有的建構函式](#addparameter)
+- [從建構函式參數建立欄位/屬性並加以初始化](#create)
 
 ## <a id = "pick"></a> 產生建構函式並選取成員 (僅限 C#)
 

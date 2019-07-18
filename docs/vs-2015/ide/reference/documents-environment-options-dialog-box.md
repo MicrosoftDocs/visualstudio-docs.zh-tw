@@ -33,21 +33,20 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 57191c1db161dab12175b1c05d4304c8b6f684d7
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: a6616593f01218b4a7e15809f841ee3cb4e7edb0
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54778574"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65700804"
 ---
 # <a name="documents-environment-options-dialog-box"></a>選項對話方塊、環境、文件
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 使用 [選項] 對話方塊的這個頁面，即可控制整合式開發環境 (IDE) 中的文件顯示，以及管理文件和檔案的外部變更。 按一下 [工具] 功能表上的 [選項]，然後選取 [環境] 節點中的 [文件]，即可存取此對話方塊。 如果 [文件] 未出現在清單中，請在 [選項] 對話方塊中選取 [顯示所有設定]。  
   
 > [!NOTE]
->  根據您目前使用的設定或版本，您所看到的對話方塊可用選項，以及功能表命令的名稱和位置，可能會與 [說明] 中描述的有所不同。 若要變更設定，請從 [ **工具** ] 功能表中選取 [ **匯入和匯出設定** ]。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
+> 根據您目前使用的設定或版本，您所看到的對話方塊可用選項，以及功能表命令的名稱和位置，可能會與 [說明] 中描述的有所不同。 若要變更設定，請從 [ **工具** ] 功能表中選取 [ **匯入和匯出設定** ]。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
   
  **重複使用目前的文件視窗 (如果已儲存)**  
  選取時，會關閉已儲存的目前文件，並在相同的視窗中開啟新文件。 如果尚未儲存您目前的文件，則仍然會保持開啟，並在個別視窗中開啟新文件。 清除此選項時，一律會在個別視窗中開啟新文件。  
@@ -76,7 +75,7 @@ ms.locfileid: "54778574"
  選取此選項，可在方案總管中顯示 [其他檔案] 節點。 其他檔案是與專案或方案無關，但為了方便您使用而出現在方案總管中。  
   
 > [!NOTE]
->  選取此選項，可針對使用中 Web 應用程式未包含的 Web 文件啟用 [檔案] 功能表上的 [在瀏覽器中檢視] 命令。  
+> 選取此選項，可針對使用中 Web 應用程式未包含的 Web 文件啟用 [檔案] 功能表上的 [在瀏覽器中檢視] 命令。  
   
  **\<** *n* **> 個項目儲存在其他檔案專案中**  
  指定要在方案總管的 **MiscellaneousFiles** 資料夾中保存的檔案數目。 即使不再於編輯器中開啟這些檔案，還是會列出這些檔案。 您可以指定從 0 到 256 的任何整數。 預設數字是 0。  

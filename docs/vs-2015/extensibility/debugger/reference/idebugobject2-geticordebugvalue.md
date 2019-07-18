@@ -1,14 +1,9 @@
 ---
 title: IDebugObject2::GetICorDebugValue |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugObject2::GetICorDebugValue
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: bcd4355d-3fbe-483f-bb23-a44348323c6a
 caps.latest.revision: 12
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 53a56dc74559e7b61ec1e0c9f1eb9d448337647c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 6fdf426058390aef2a0c8abf2590123572bbc3b1
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51787714"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68194603"
 ---
 # <a name="idebugobject2geticordebugvalue"></a>IDebugObject2::GetICorDebugValue
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -55,4 +50,3 @@ int GetICorDebugValue(
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md)
-

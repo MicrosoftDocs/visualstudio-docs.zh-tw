@@ -1,26 +1,21 @@
 ---
 title: 特定命令所使用的位元旗標 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, bitflags used by specific commands
 ms.assetid: 37969977-6f7d-45c9-ba03-1306ae71f5d1
 caps.latest.revision: 25
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: e8ea658e62ca2bcd3ca4d423f00a94f83f2a2086
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 43dc083812bc172fe4a9f80335742b3faab2e1f4
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51798179"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68184686"
 ---
 # <a name="bitflags-used-by-specific-commands"></a>特定命令所使用的位元旗標
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,7 +45,7 @@ ms.locfileid: "51798179"
 |旗標|值|描述|  
 |----------|-----------|-----------------|  
 |`SCC_DIFF_IGNORECASE`|0x0002|忽略大小寫差異。|  
-|`SCC_DIFF_IGNORESPACE`|0x0004|忽略空白字元的差異。 **注意︰** `SCC_DIFF_IGNORECASE`和`SCC_DIFF_IGNORESPACE`旗標是選擇性的位元旗標。|  
+|`SCC_DIFF_IGNORESPACE`|0x0004|忽略空白字元的差異。 **注意：** `SCC_DIFF_IGNORECASE`和`SCC_DIFF_IGNORESPACE`旗標是選擇性的位元旗標。|  
 |`SCC_DIFF_QD_CONTENTS`|0x0010|QD 藉由比較整個檔案內容。|  
 |`SCC_DIFF_QD_CHECKSUM`|0x0020|QD 透過總和檢查碼。|  
 |`SCC_DIFF_QD_TIME`|0x0040|QD 檔案的日期/時間戳記。|  
@@ -75,7 +70,7 @@ ms.locfileid: "51798179"
 ## <a name="openproject-flags"></a>OpenProject 旗標  
  這些旗標由[SccOpenProject](../extensibility/sccopenproject-function.md)在`dwFlags`參數。  
   
-|選項值|值|描述|  
+|選項值|值|說明|  
 |------------------|-----------|-----------------|  
 |SCC_OP_CREATEIFNEW|0x00000001L|如果專案不存在於原始檔控制中，建立它。 如果未設定此旗標，提示使用者輸入專案來建立 (除非`SCC_OP_SILENTOPEN`指定旗標)。|  
 |SCC_OP_SILENTOPEN|0x00000002L|不提示使用者建立的專案中;只傳回`SCC_E_UNKNOWNPROJECT`。|  
@@ -85,8 +80,8 @@ ms.locfileid: "51798179"
   
 |旗標|值|描述|  
 |----------|-----------|-----------------|  
-|`SCC_GET_ALL`|0x00000001L|IDE 傳遞的目錄，而不複製檔案： 取得這些目錄中的所有檔案。|  
-|`SCC_GET_RECURSIVE`|0x00000002L|IDE 傳遞目錄： 取得這些目錄和所有其子目錄。|  
+|`SCC_GET_ALL`|0x00000001L|IDE 傳遞不是檔案的目錄：取得這些目錄中的所有檔案。|  
+|`SCC_GET_RECURSIVE`|0x00000002L|IDE 傳遞目錄：取得這些目錄和所有其子目錄。|  
   
 ## <a name="noption-values"></a>nOption 值  
  這些旗標由[SccSetOption](../extensibility/sccsetoption-function.md)在`nOption`參數。  
@@ -103,7 +98,7 @@ ms.locfileid: "51798179"
 ## <a name="dwval-bitflags"></a>dwVal 位元旗標  
  這些旗標由[SccSetOption](../extensibility/sccsetoption-function.md)在`dwVal`參數。  
   
-|旗標|值|描述|使用`nOption`值|  
+|旗標|值|說明|使用`nOption`值|  
 |----------|-----------|-----------------|-----------------------------|  
 |`SCC_OPT_EQ_DISABLE`|0x00L|暫停事件佇列的活動。|`SCC_OPT_EVENTQUEUE`|  
 |`SCC_OPT_EQ_ENABLE`|0x01L|啟用事件佇列記錄。|`SCC_OPT_EVENTQUEUE`|  
@@ -114,4 +109,3 @@ ms.locfileid: "51798179"
   
 ## <a name="see-also"></a>另請參閱  
  [原始檔控制外掛程式](../extensibility/source-control-plug-ins.md)
-

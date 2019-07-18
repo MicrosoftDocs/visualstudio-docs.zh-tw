@@ -6,17 +6,20 @@ helpviewer_keywords:
 - IDebugSymbolProviderDirect::GetCurrentModulesInfo
 - GetCurrentModulesInfo
 ms.assetid: b3b45ed2-ea4e-4389-b78a-11fc9796a6c1
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 95dc42b0e65ad0f849dd95e0ffead122e4cd1ebf
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 67afbf985a8fb9934c1a105d1620becc80f00535
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56699544"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66347431"
 ---
 # <a name="idebugsymbolproviderdirectgetcurrentmodulesinfo"></a>IDebugSymbolProviderDirect::GetCurrentModulesInfo
 擷取符號群組中的模組的相關資訊。
@@ -43,26 +46,21 @@ int GetCurrentModulesInfo(
 );
 ```
 
-#### <a name="parameters"></a>參數
- `pCount`
+## <a name="parameters"></a>參數
+`pCount`\
+[in]中的模組數目`ppGuids`陣列。
 
- [in]中的模組數目`ppGuids`陣列。
+`ppGuids`\
+[in]陣列，其中包含模組的唯一識別碼。
 
- `ppGuids`
+`pADIds`\
+[in]針對應用程式定義域的識別項。
 
- [in]陣列，其中包含模組的唯一識別碼。
+`pCurrentState`\
+[in]目前的符號群組的狀態。
 
- `pADIds`
-
- [in]針對應用程式定義域的識別項。
-
- `pCurrentState`
-
- [in]目前的符號群組的狀態。
-
- `ppCDModItfs`
-
- [out]傳回物件，包含符號群組中的模組。
+`ppCDModItfs`\
+[out]傳回物件，包含符號群組中的模組。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEngineProgram2::WatchForThreadStep
 ms.assetid: b70922a3-1313-409a-b3b7-50c7cd13e394
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b5381cff406e3b6e182a6ecbb191381061fb3758
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 6b3f8db95d6e74a2aa1d146bdd37a66803a8503f
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56710379"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66345150"
 ---
 # <a name="idebugengineprogram2watchforthreadstep"></a>IDebugEngineProgram2::WatchForThreadStep
 監看的執行 （或停止執行監看） 指定的執行緒上發生。
@@ -42,22 +45,18 @@ int WatchForThreadStep( 
 );
 ```
 
-#### <a name="parameters"></a>參數
- `pOriginatingProgram`
+## <a name="parameters"></a>參數
+`pOriginatingProgram`\
+[in][IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)物件，表示正在逐步執行程式。
 
- [in][IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)物件，表示正在逐步執行程式。
+`dwTid`\
+[in]指定要監看之執行緒的識別碼。
 
- `dwTid`
+`fWatch`\
+[in]非零 (`TRUE`) 表示開始所識別的執行緒上執行監看`dwTid`，則為零 (`FALSE`) 方法可讓您停止上觀賞執行`dwTid`。
 
- [in]指定要監看之執行緒的識別碼。
-
- `fWatch`
-
- [in]非零 (`TRUE`) 表示開始所識別的執行緒上執行監看`dwTid`，則為零 (`FALSE`) 方法可讓您停止上觀賞執行`dwTid`。
-
- `dwFrame`
-
- [in]指定控制項的步驟類型的畫面格索引。 當這是值為零 (0) 步驟類型 「 逐步執行 」，是每當所識別的執行緒時，應該停止程式`dwTid`執行。 當`dwFrame`為非零，步驟類型是 「 進入 」 和程式應該停止的執行緒識別時，才`dwTid`正在執行中的索引是相等或更高版本，比在堆疊上框架`dwFrame`。
+`dwFrame`\
+[in]指定控制項的步驟類型的畫面格索引。 當這是值為零 (0) 步驟類型 「 逐步執行 」，是每當所識別的執行緒時，應該停止程式`dwTid`執行。 當`dwFrame`為非零，步驟類型是 「 進入 」 和程式應該停止的執行緒識別時，才`dwTid`正在執行中的索引是相等或更高版本，比在堆疊上框架`dwFrame`。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

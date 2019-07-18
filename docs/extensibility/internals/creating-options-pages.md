@@ -6,17 +6,17 @@ helpviewer_keywords:
 - managed package framework, creating Tools Options pages
 - Tools Options pages [Visual Studio SDK], creating using managed package framework
 ms.assetid: 1bf11fec-dece-4943-8053-6de1483c43eb
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5d05b64f2245e4710f501ed8a24f7052cc310b30
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 4d46055f14fdd1852e77ee78062548e5164140a3
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56633079"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66340683"
 ---
 # <a name="create-options-pages"></a>建立選項頁
 在[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]managed 的封裝架構類別衍生自<xref:Microsoft.VisualStudio.Shell.DialogPage>擴充[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]藉由新增 IDE**選項**頁面下**工具**功能表。
@@ -25,9 +25,9 @@ ms.locfileid: "56633079"
 
  因為環境實作特定的物件會具現化**工具選項**頁面時，IDE 會顯示該特定網頁：
 
--   A**工具選項**應該實作頁面，在其本身的物件，而不是在實作 VSPackage 的物件。
+- A**工具選項**應該實作頁面，在其本身的物件，而不是在實作 VSPackage 的物件。
 
--   物件不能實作多個**工具選項**頁面。
+- 物件不能實作多個**工具選項**頁面。
 
 ## <a name="register-as-a-tools-options-page-provider"></a>註冊工具選項頁面提供者為
  VSPackage 支援使用者透過設定**工具選項**頁面會指出提供這些物件**工具選項**藉由套用的執行個體的頁面<xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute>套用至<xref:Microsoft.VisualStudio.Shell.Package>實作。

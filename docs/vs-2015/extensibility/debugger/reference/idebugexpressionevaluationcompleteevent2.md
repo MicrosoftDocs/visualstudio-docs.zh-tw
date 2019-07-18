@@ -1,14 +1,9 @@
 ---
-title: IDebugExpressionEvaluationCompleteEvent2 |Microsoft Docs
-ms.custom: ''
+title: IDebugExpressionEvaluationCompleteEvent2 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugExpressionEvaluationCompleteEvent2
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: d538fc19-55bf-4231-9595-eb01e84fd1d8
 caps.latest.revision: 12
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 606bdec227feab623ba9d51976caf716baf1fa6c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: a7692a06004a1f9d31a31f91c081c6168d89a8dc
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51724382"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65694382"
 ---
 # <a name="idebugexpressionevaluationcompleteevent2"></a>IDebugExpressionEvaluationCompleteEvent2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -36,7 +31,7 @@ IDebugExpressionEvaluationCompleteEvent2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>實作者的附註  
- DE 實作這個介面來報告完成運算式評估的呼叫開始著手[EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md)。 [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)介面必須實作此介面的相同物件上。 使用 SDM [QueryInterface](http://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3)若要存取`IDebugEvent2`介面。  
+ DE 實作這個介面來報告完成運算式評估的呼叫開始著手[EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md)。 [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)介面必須實作此介面的相同物件上。 使用 SDM [QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3)若要存取`IDebugEvent2`介面。  
   
 ## <a name="notes-for-callers"></a>呼叫端資訊  
  DE 建立，並傳送這個事件来報告的物件完成的運算式評估。 事件會使用傳送[IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)它附加到正在偵錯程式時，會將 SDM 所提供的回呼函式。  
@@ -57,13 +52,12 @@ IDebugExpressionEvaluationCompleteEvent2 : IUnknown
 ## <a name="requirements"></a>需求  
  標頭： msdbg.h  
   
- 命名空間： Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間：Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)   
  [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)   
  [EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md)   
  [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)
-

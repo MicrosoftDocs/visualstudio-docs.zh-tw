@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9167c56d976cd79e2e51cf9914213b766f647416
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56623706"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62996784"
 ---
 # <a name="item-metadata-in-task-batching"></a>工作批次處理中的項目中繼資料
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 能夠根據項目中繼資料，將項目清單分割成不同的類別或批次，然後使用每個批次一次執行一個工作。 要確切了解哪個批次要傳遞哪些項目，可能會相當混亂。 本主題涵蓋下列與批次處理相關的常見案例。

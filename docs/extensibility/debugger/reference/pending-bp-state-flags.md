@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - PENDING_BP_STATE_FLAGS enumeration
 ms.assetid: 85522449-3fd8-4da5-b0fe-a43160e0c33b
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7614b0633f6490e8c3bb6837ed89fda67575c71e
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: f3b51d7c30650087c6611b79ec0b91e2a6bb83b1
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56691497"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66349897"
 ---
 # <a name="pendingbpstateflags"></a>PENDING_BP_STATE_FLAGS
 指定暫止中斷點的狀態旗標。
@@ -39,10 +42,10 @@ public enum enum_PENDING_BP_STATE_FLAGS { 
 };
 ```
 
-## <a name="members"></a>成員
- PBPSF_NONE 預留位置。
+## <a name="fields"></a>欄位
+ `PBPSF_NONE` 預留位置。
 
- PBPSF_VIRTUALIZED 暫止的中斷點，另一個則是每次載入新的程式碼時，繫結指定的虛擬化的。
+ `PBPSF_VIRTUALIZED` 指定虛擬化暫止中斷點，另一個則是每次載入新的程式碼時，繫結。
 
 ## <a name="remarks"></a>備註
  用於`flags`隸屬[PENDING_BP_STATE_INFO](../../../extensibility/debugger/reference/pending-bp-state-info.md)結構。

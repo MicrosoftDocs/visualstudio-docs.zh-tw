@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEEVisualizerDataProvider::CanSetObjectForVisualizer method
 ms.assetid: 70fd3c6f-2f82-43a3-993b-c1dc8aa080bf
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e5785efcd3d53a485c93f9335882dffacae258ef
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 71fe6ed16bd1e80a13cfe97fe5ebcf84bc140da4
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56707792"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66335602"
 ---
 # <a name="ieevisualizerdataprovidercansetobjectforvisualizer"></a>IEEVisualizerDataProvider::CanSetObjectForVisualizer
 這個方法會判斷是否視覺化檢視可以更新它所代表的資料物件。
@@ -36,10 +39,9 @@ int CanSetObjectForVisualizer(
 );
 ```
 
-#### <a name="parameters"></a>參數
- `b`
-
- [out]非零值 (`TRUE`) 可以更新在視覺化檢視上的物件，如果零 (`FALSE`) 如果不行。
+## <a name="parameters"></a>參數
+`b`\
+[out]非零值 (`TRUE`) 可以更新在視覺化檢視上的物件，如果零 (`FALSE`) 如果不行。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8333c7e57c3cd3f240f8a72dd865e458b23bc299
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56616023"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62828637"
 ---
 # <a name="idiainjectedsourcegetlength"></a>IDiaInjectedSource::get_length
 擷取的程式碼的位元組數目。
@@ -41,6 +41,6 @@ HRESULT get_length ( 
 ## <a name="remarks"></a>備註
  這個方法所傳回的值是原始碼的長度和是相同的值，傳回[idiainjectedsource:: Get_source](../../debugger/debug-interface-access/idiainjectedsource-get-source.md)方法。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)
 - [IDiaInjectedSource::get_source](../../debugger/debug-interface-access/idiainjectedsource-get-source.md)

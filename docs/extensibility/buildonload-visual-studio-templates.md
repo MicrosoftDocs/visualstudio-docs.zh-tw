@@ -9,17 +9,17 @@ helpviewer_keywords:
 - BuildOnLoad attribute [Visual Studio Templates]
 - BuildOnLoad element [Visual Studio Templates]
 ms.assetid: 950f5fc1-d041-4090-9a5c-60844768a4cc
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 760dc8bb501fb345cbee686818ad0b4d6698a684
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f32056aae3c860aee250248c606bbda4dbf9506c
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55041122"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66321263"
 ---
 # <a name="buildonload-attribute-and-element"></a>BuildOnLoad 屬性和項目
 

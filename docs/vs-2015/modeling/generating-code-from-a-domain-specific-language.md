@@ -1,23 +1,20 @@
 ---
 title: 從特定領域語言產生程式碼 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: e3706cc9-2afd-456a-a879-68425a248ebc
 caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 5edc6e267957f08837399ae5c2e56bce3cc26cce
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 63e1b48a7582294c200b1e30147d85a9b26165d4
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49231994"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68182809"
 ---
 # <a name="generating-code-from-a-domain-specific-language"></a>從網域指定的語言產生程式碼
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +46,7 @@ Microsoft[!INCLUDE[dsl](../includes/dsl-md.md)]提供功能強大的方式，從
   
  描述如何進行疑難排解和偵錯是指特定領域語言的文字範本。  
   
- [逐步解說：將主機連接至產生的指示詞處理器](../modeling/walkthrough-connecting-a-host-to-a-generated-directive-processor.md)  
+ [逐步解說：將主機連線至產生的指示詞處理器](../modeling/walkthrough-connecting-a-host-to-a-generated-directive-processor.md)  
   
  描述如何將自訂主機連線至產生的指示詞處理器。  
   
@@ -70,6 +67,3 @@ Microsoft[!INCLUDE[dsl](../includes/dsl-md.md)]提供功能強大的方式，從
  [建置流程中的程式碼產生](../modeling/code-generation-in-a-build-process.md)  
   
  如果您要從組建伺服器上的 DSL 中產生檔案，請閱讀本主題。
-
-
-

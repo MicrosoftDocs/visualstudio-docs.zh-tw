@@ -5,26 +5,26 @@ ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK], configuration details
 ms.assetid: adbee9fc-7a2e-4abe-a3b8-e6615bcd797f
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c01c71673640814006fe6771aa841852c247fd54
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 917354534ee3dbb2b615ec031f0a41c31bd88235
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54965311"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66322588"
 ---
 # <a name="source-control-configuration-details"></a>原始檔控制組態的詳細資料
 若要實作原始檔控制，您需要適當地設定您的專案系統或編輯器來執行下列作業：
 
--   要求轉換至已變更狀態的權限
+- 要求轉換至已變更狀態的權限
 
--   權限，才能儲存檔案
+- 權限，才能儲存檔案
 
--   要求權限來新增、 移除或重新命名專案中的檔案
+- 要求權限來新增、 移除或重新命名專案中的檔案
 
 ## <a name="request-permission-to-transition-to-changed-state"></a>要求轉換至已變更狀態的權限
  專案或編輯器必須藉由呼叫要求轉換至已變更 (dirty) 狀態的權限<xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2>。 實作每個編輯器<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData.IsDocDataDirty%2A>必須呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A>收發核准才可從環境中變更文件，再傳回`True`如<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData.IsDocDataDirty%2A>。 此專案是本質上的專案檔中，編輯器，並如此一來，已實作之專案檔的狀態變更追蹤，其檔案的文字編輯器一樣的相同責任。 環境會處理已變更的狀態的解決方案，但您必須處理的任何物件參考解決方案，但不會儲存，例如專案檔或其項目已變更的狀態。 一般情況下，如果您的專案或編輯器是負責管理持續性的項目，然後它會負責實作已變更狀態的追蹤。
@@ -41,7 +41,7 @@ ms.locfileid: "54965311"
  專案或編輯器儲存檔案之前，必須呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QuerySaveFile%2A>或<xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QuerySaveFiles%2A>。 對於專案檔案，這些呼叫會自動完成此解決方案，知道何時要儲存專案檔。 編輯器會負責進行這些呼叫，除非編輯器實作`IVsPersistDocData2`會使用協助程式函式<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.SaveDocDataToFile%2A>。 如果您的編輯器實作`IVsPersistDocData2`中，如此一來，然後呼叫`IVsQueryEditQuerySave2::QuerySaveFile`或`IVsQueryEditQuerySave2::QuerySaveFiles`就自動完成。
 
 > [!NOTE]
->  一定要先進行這些呼叫 — 亦即，當您的編輯器是能夠接收取消一次。
+> 一定要先進行這些呼叫 — 亦即，當您的編輯器是能夠接收取消一次。
 
 ## <a name="request-permission-to-add-remove-or-rename-files-in-the-project"></a>要求權限來新增、 移除或重新命名專案中的檔案
  專案可以新增、 重新命名或移除檔案或目錄之前，必須呼叫適當`IVsTrackProjectDocuments2::OnQuery*`從環境的方法來要求權限。 如果授與權限時，則專案必須完成作業，然後再呼叫 適當`IVsTrackProjectDocuments2::OnAfter*`方法來通知環境已完成的作業。 專案必須呼叫的方法<xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2>介面的所有檔案 （例如特殊的檔案） 和不只是父檔案。 檔案呼叫是必要項目，但目錄呼叫都是選擇性。 如果您的專案具有目錄資訊，則它應該呼叫適當<xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2>方法，但如果它並沒有這項資訊，則環境會推斷目錄資訊。

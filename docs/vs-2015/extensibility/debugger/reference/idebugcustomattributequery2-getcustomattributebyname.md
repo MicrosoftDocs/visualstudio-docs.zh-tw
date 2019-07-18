@@ -1,14 +1,9 @@
 ---
-title: IDebugCustomAttributeQuery2::GetCustomAttributeByName |Microsoft Docs
-ms.custom: ''
+title: IDebugCustomAttributeQuery2::GetCustomAttributeByName | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugCustomAttributeQuery2::GetCustomAttributeByName
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 7428dfeb-8929-41b2-9b99-cb343a86c02d
 caps.latest.revision: 10
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 80e67c26924a906cada5dec022b8a385f0f4afad
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: e1af059cf4319c18b8f8bb63e7b50ec3d2822e93
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51796112"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62568430"
 ---
 # <a name="idebugcustomattributequery2getcustomattributebyname"></a>IDebugCustomAttributeQuery2::GetCustomAttributeByName
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -58,7 +53,7 @@ int GetCustomAttributeByName(
  [in、 out]指定要傳回的位元組數目上限`ppBlob`陣列並傳回實際寫入至陣列的位元組數目。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，會傳回 S_OK，或如果沒有自訂屬性，則傳回 S_FALSE。 反之則傳回錯誤碼。  
+ 如果成功，會傳回 S_OK，或如果沒有自訂屬性，則傳回 S_FALSE。 否則會傳回錯誤碼。  
   
 ## <a name="remarks"></a>備註  
  設定`ppBlob`參數為 null 的值，傳回的數字屬性可用位元組。 配置的陣列，然後將陣列中的傳送`ppBlob`參數。  
@@ -70,4 +65,3 @@ int GetCustomAttributeByName(
 ## <a name="see-also"></a>另請參閱  
  [IDebugCustomAttributeQuery2](../../../extensibility/debugger/reference/idebugcustomattributequery2.md)   
  [IsCustomAttributeDefined](../../../extensibility/debugger/reference/idebugcustomattributequery2-iscustomattributedefined.md)
-

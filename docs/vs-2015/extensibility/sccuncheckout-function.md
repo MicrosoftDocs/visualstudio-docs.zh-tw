@@ -1,14 +1,9 @@
 ---
 title: SccUncheckout 函式 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - SccUncheckout
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 6d498b70-29c7-44b7-ae1c-7e99e488bb09
 caps.latest.revision: 13
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 5769f68055985fc79cc821387f6bd75613d70777
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 3ae5ecd7568a10936479f72f92e9914132f2dcdf
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51752728"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68190856"
 ---
 # <a name="sccuncheckout-function"></a>SccUncheckout 函式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +50,7 @@ SCCRTN SccUncheckout (
  lpFileNames  
  [in]要復原簽出檔案的完整格式的本機路徑名稱的陣列。  
   
- Stored  
+ fOptions  
  [in]（未使用） 的命令旗標。  
   
  pvOptions  
@@ -80,4 +75,3 @@ SCCRTN SccUncheckout (
   
 ## <a name="see-also"></a>另請參閱  
  [原始檔控制外掛程式 API 函式](../extensibility/source-control-plug-in-api-functions.md)
-

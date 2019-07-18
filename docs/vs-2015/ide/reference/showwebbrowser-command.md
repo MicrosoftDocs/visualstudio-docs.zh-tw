@@ -14,17 +14,16 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c1fca2c1c1dde167c8028d6ad4d543e108a488b4
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: c3cd5d04efab6f6cb5641c7e0c4c2a8547e1ef00
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54798209"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65689421"
 ---
 # <a name="showwebbrowser-command"></a>ShowWebBrowser 命令
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 顯示您在 Web 瀏覽器視窗內指定的 URL (不論是在整合式開發環境 (IDE) 內或 IDE 外部)。  
   
 ## <a name="syntax"></a>語法  
@@ -51,7 +50,7 @@ View.ShowWebBrowser URL [/new][/ext]
  下列範例會在 IDE 外面的網頁瀏覽器顯示 MSDN Online 首頁。 如果已經開啟網頁瀏覽器執行個體，便會使用它，否則系統會啟動新的執行個體。  
   
 ```  
->View.ShowWebBrowser http://msdn.microsoft.com /ext  
+>View.ShowWebBrowser https://msdn.microsoft.com /ext  
 ```  
   
 ## <a name="see-also"></a>請參閱  

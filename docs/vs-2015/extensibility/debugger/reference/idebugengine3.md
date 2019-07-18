@@ -1,14 +1,9 @@
 ---
-title: IDebugEngine3 |Microsoft Docs
-ms.custom: ''
+title: IDebugEngine3 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugEngine3
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 8bdf4bb7-3b5d-4991-8981-772d4f6bb656
 caps.latest.revision: 16
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: f66a17335c2bd9a4401f8490887f7ab2ab77ae80
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 1e43da0b05062c6c7b1c4d3cfe771ff0b93f83a9
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51760992"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68195790"
 ---
 # <a name="idebugengine3"></a>IDebugEngine3
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -55,10 +50,9 @@ IDebugEngine3 : IDebugEngine2
 ## <a name="requirements"></a>需求  
  標頭： msdbg.h  
   
- 命名空間： Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間：Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)
-

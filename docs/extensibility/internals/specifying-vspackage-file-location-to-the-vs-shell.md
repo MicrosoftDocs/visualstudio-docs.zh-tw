@@ -6,21 +6,20 @@ helpviewer_keywords:
 - managed VSPackages, file location
 - VSPackages, managed package file location
 ms.assetid: beb8607a-4183-4ed2-9ac8-7527f11513b1
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 47f95231c0c7bb955271203792bdd795772b50c1
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 601104e484682b7db833f74a3527139ed312e731
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56612370"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66322454"
 ---
 # <a name="specifying-vspackage-file-location-to-the-vs-shell"></a>為 VS Shell 指定 VSPackage 檔案位置
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 必須是找不到組件載入 VSPackage 的 DLL。 您可以找到以各種方式下, 表中所述。
-
 
 | 方法 | 描述 |
 | - | - |
@@ -30,4 +29,4 @@ ms.locfileid: "56612370"
 | 將放入 DLL **PublicAssemblies**目錄。 | 最後，組件也可以放入**PublicAssemblies**子目錄。 組件位於**PublicAssemblies**會自動偵測，並也會出現在**的 [加入參考**] 對話方塊中的[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。<br /><br /> VSPackage 組件應該只能置於**PublicAssemblies**如果它們包含的目錄管理是由其他 VSPackage 開發人員重複使用的元件。 大部分的組件不符合此準則。 |
 
 > [!NOTE]
->  使用強式名稱的所有相依組件已簽署組件。 這些組件也應該安裝在您自己的目錄或全域組件快取 (GAC) 中。 這可防止使用具有相同的基底檔案名稱，稱為弱式名稱繫結的組件的衝突。
+> 使用強式名稱的所有相依組件已簽署組件。 這些組件也應該安裝在您自己的目錄或全域組件快取 (GAC) 中。 這可防止使用具有相同的基底檔案名稱，稱為弱式名稱繫結的組件的衝突。

@@ -1,21 +1,17 @@
 ---
 title: 影像服務 」 和 「 類別目錄 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 34990c37-ae98-4140-9b1e-a91c192220d9
 caps.latest.revision: 38
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: c0e01d60bd7fab0b435f1b10ae744c3454aa0e44
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 1cc402792f39cbbebb6e7804e7406be4f06658a4
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51774363"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824676"
 ---
 # <a name="image-service-and-catalog"></a>影像服務與資料庫目錄
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,11 +46,11 @@ ms.locfileid: "51774363"
 ## <a name="how-it-works"></a>它的運作方式  
  映像服務可以提供點陣圖影像適用於任何支援的 UI 架構：  
 
-- WPF: BitmapSource  
+- WPF:BitmapSource  
 
-- WinForms: System.Drawing.Bitmap  
+- WinForms:System.Drawing.Bitmap  
 
-- Win32: HBITMAP  
+- Win32:HBITMAP  
 
   影像服務流程圖  
 
@@ -155,7 +151,7 @@ ms.locfileid: "51774363"
 |識別碼|[必要]影像 moniker 識別碼部分|  
 |AllowColorInversion|[選擇性的預設為 true]指出影像是否可以使用深色背景時以程式設計的方式已反轉其色彩。|  
 
- **來源**  
+ **Source**  
 
  \<來源 > 項目會定義單一映像來源資產 （XAML 和 PNG）。  
 
@@ -165,12 +161,11 @@ ms.locfileid: "51774363"
  </Source>  
 ```  
 
-
 |               |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 |---------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **屬性** |                                                                                                                                                                                                                                                                                                                                                                                                                                                                            **定義**                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
-|      URI      |                                                                                                                                                                                                                                                                                                               [必要]定義從何處可以載入映像的 URI。 它可以是下列其中一項：<br /><br /> -A [Pack URI](http://msdn.microsoft.com/library/aa970069\(v=vs.100\).aspx)使用應用程式: / / 授權單位<br />-絕對元件資源參考<br />-包含原生資源的檔案路徑                                                                                                                                                                                                                                                                                                               |
-|  背景   | [選用]指出哪些類型的來源要使用的背景。<br /><br /> 它可以是下列其中一項：<br /><br /> *Light:* 淺色背景上可用的來源。<br /><br /> <em>暗色調：</em>來源可以使用深色背景上。<br /><br /> *高對比：* 來源可以使用高對比模式中的任何背景上。<br /><br /> *HighContrastLight:* 來源可以使用高對比模式中是淺色背景。<br /><br /> *HighContrastDark:* 來源可用在高對比模式中使用深色背景上。<br /><br /> 如果省略背景屬性，則來源可用的任何背景。<br /><br /> 如果背景*Light*，*深色*， *HighContrastLight*，或*HighContrastDark*，永遠不會反轉來源的色彩。 如果省略或設為背景*高對比*，反轉的來源的色彩由映像的控制**AllowColorInversion**屬性。 |
+|      URI      |                                                                                                                                                                                                                                                                                                               [必要]定義從何處可以載入映像的 URI。 它可以是下列其中一項：<br /><br /> -A [Pack URI](https://msdn.microsoft.com/library/aa970069\(v=vs.100\).aspx)使用應用程式: / / 授權單位<br />-絕對元件資源參考<br />-包含原生資源的檔案路徑                                                                                                                                                                                                                                                                                                               |
+|  背景   | [選用]指出哪些類型的來源要使用的背景。<br /><br /> 它可以是下列其中一項：<br /><br /> *Light:* 淺色背景上可用的來源。<br /><br /> <em>暗色調：</em>來源可以使用深色背景上。<br /><br /> *HighContrast:* 高對比模式中的任何背景上可用的來源。<br /><br /> *HighContrastLight:* 高對比模式中的淺色背景上可用的來源。<br /><br /> *HighContrastDark:* 在高對比模式中使用深色背景上可用的來源。<br /><br /> 如果省略背景屬性，則來源可用的任何背景。<br /><br /> 如果背景*Light*，*深色*， *HighContrastLight*，或*HighContrastDark*，永遠不會反轉來源的色彩。 如果省略或設為背景*高對比*，反轉的來源的色彩由映像的控制**AllowColorInversion**屬性。 |
 |               |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 
  A\<來源 > 項目可以有一個下列的選擇性子項目：  
@@ -178,10 +173,10 @@ ms.locfileid: "51774363"
 ||||  
 |-|-|-|  
 |**目**|**屬性 （全部所需）**|**定義**|  
-|\<大小 >|值|來源會使用指定的大小 （以裝置為單位） 的映像。 映像會正方形。|  
-|\<SizeRange >|MinSize、 MaxSize|來源將使用的映像從 MinSize 至大小上限 （以裝置為單位） （含）。 映像會正方形。|  
-|\<維度 >|寬度高度|來源將使用指定的寬度和高度 （以裝置為單位） 的映像。|  
-|\<DimensionRange >|MinWidth 或 MinHeight<br /><br /> MaxWidth MaxHeight|來源將用於從最小寬度/高度的映像，以最大寬度/高度 （以裝置為單位） （含）。|  
+|\<Size>|值|來源會使用指定的大小 （以裝置為單位） 的映像。 映像會正方形。|  
+|\<SizeRange>|MinSize, MaxSize|來源將使用的映像從 MinSize 至大小上限 （以裝置為單位） （含）。 映像會正方形。|  
+|\<維度 >|Width, Height|來源將使用指定的寬度和高度 （以裝置為單位） 的映像。|  
+|\<DimensionRange>|MinWidth 或 MinHeight<br /><br /> MaxWidth MaxHeight|來源將用於從最小寬度/高度的映像，以最大寬度/高度 （以裝置為單位） （含）。|  
 
  A\<來源 > 項目也可以選擇性\<NativeResource > 子元素，定義\<來源 > 從原生組件，而不是 managed 組件載入的。  
 
@@ -220,78 +215,78 @@ ms.locfileid: "51774363"
 ### <a name="first-steps-managed"></a>第一個步驟 (managed)  
  若要使用映像服務，您需要將部分或全部的下列組件的參考加入至您的專案：  
 
--   **Microsoft.VisualStudio.ImageCatalog.dll**  
+- **Microsoft.VisualStudio.ImageCatalog.dll**  
 
-    -   如果您使用內建映像目錄 KnownMonikers 為必要項  
+  - 如果您使用內建映像目錄 KnownMonikers 為必要項  
 
--   **Microsoft.VisualStudio.Imaging.dll**  
+- **Microsoft.VisualStudio.Imaging.dll**  
 
-    -   如果您使用所需**CrispImage**並**ImageThemingUtilities**在 WPF UI  
+  - 如果您使用所需**CrispImage**並**ImageThemingUtilities**在 WPF UI  
 
--   **Microsoft.VisualStudio.Imaging.Interop.14.0.DesignTime.dll**  
+- **Microsoft.VisualStudio.Imaging.Interop.14.0.DesignTime.dll**  
 
-    -   如果您使用所需**ImageMoniker**並**ImageAttributes**類型  
+  - 如果您使用所需**ImageMoniker**並**ImageAttributes**類型  
 
-    -   **EmbedInteropTypes**應該設定為 true  
+  - **EmbedInteropTypes**應該設定為 true  
 
--   **Microsoft.VisualStudio.Shell.Interop.14.0.DesignTime**  
+- **Microsoft.VisualStudio.Shell.Interop.14.0.DesignTime**  
 
-    -   如果您使用所需**IVsImageService2**類型  
+  - 如果您使用所需**IVsImageService2**類型  
 
-    -   **EmbedInteropTypes**應該設定為 true  
+  - **EmbedInteropTypes**應該設定為 true  
 
--   **Microsoft.VisualStudio.Utilities.dll**  
+- **Microsoft.VisualStudio.Utilities.dll**  
 
-    -   如果您使用所需**BrushToColorConverter**如 ImageThemingUtilities。**ImageBackgroundColor**在 WPF UI  
+  - 如果您使用所需**BrushToColorConverter**如 ImageThemingUtilities。**ImageBackgroundColor**在 WPF UI  
 
--   **Microsoft.VisualStudio.Shell。\<VSVersion >.0**  
+- **Microsoft.VisualStudio.Shell.\<VSVersion>.0**  
 
-    -   如果您使用所需**IVsUIObject**類型  
+  - 如果您使用所需**IVsUIObject**類型  
 
--   **Microsoft.VisualStudio.Shell.Interop.10.0.dll**  
+- **Microsoft.VisualStudio.Shell.Interop.10.0.dll**  
 
-    -   如果您使用 WinForms 相關的 UI 協助程式為必要項  
+  - 如果您使用 WinForms 相關的 UI 協助程式為必要項  
 
-    -   **EmbedInteropTypes**應該設定為 true  
+  - **EmbedInteropTypes**應該設定為 true  
 
 ### <a name="first-steps-native"></a>第一個步驟 （原生）  
  若要使用映像服務，您需要包含部分或所有下列標頭至您的專案：  
 
--   **KnownImageIds.h**  
+- **KnownImageIds.h**  
 
-    -   如果您使用內建映像目錄所需**KnownMonikers**，但是不能使用**ImageMoniker**類型，例如當傳回值從**IVsHierarchy GetGuidProperty**或是**GetProperty**呼叫。  
+  - 如果您使用內建映像目錄所需**KnownMonikers**，但是不能使用**ImageMoniker**類型，例如當傳回值從**IVsHierarchy GetGuidProperty**或是**GetProperty**呼叫。  
 
--   **KnownMonikers.h**  
+- **KnownMonikers.h**  
 
-    -   如果您使用內建映像目錄所需**KnownMonikers**。  
+  - 如果您使用內建映像目錄所需**KnownMonikers**。  
 
--   **ImageParameters140.h**  
+- **ImageParameters140.h**  
 
-    -   如果您使用所需**ImageMoniker**並**ImageAttributes**型別。  
+  - 如果您使用所需**ImageMoniker**並**ImageAttributes**型別。  
 
--   **VSShell140.h**  
+- **VSShell140.h**  
 
-    -   如果您使用所需**IVsImageService2**型別。  
+  - 如果您使用所需**IVsImageService2**型別。  
 
--   **ImageThemingUtilities.h**  
+- **ImageThemingUtilities.h**  
 
-    -   如果您將無法讓映像服務來處理佈景主題為您的需要。  
+  - 如果您將無法讓映像服務來處理佈景主題為您的需要。  
 
-    -   如果映像服務可以處理您的映像佈景主題，請不要使用此標頭。  
+  - 如果映像服務可以處理您的映像佈景主題，請不要使用此標頭。  
 
--   **VSUIDPIHelper.h**  
+- **VSUIDPIHelper.h**  
 
-    -   如果您使用 DPI 協助程式來取得目前的 DPI 為必要項。  
+  - 如果您使用 DPI 協助程式來取得目前的 DPI 為必要項。  
 
 ## <a name="how-do-i-write-new-wpf-ui"></a>如何撰寫新的 WPF UI？  
 
-1.  藉由新增在以上所需的組件參考的開始前幾個步驟區段到您的專案。 您不需要新增它們全部，因此新增您需要的參考。 (注意： 如果您使用或享有**色彩**而不是**筆刷**，則可以略過參考**公用程式**，因為您不需要轉換子。)  
+1. 藉由新增在以上所需的組件參考的開始前幾個步驟區段到您的專案。 您不需要新增它們全部，因此新增您需要的參考。 (注意： 如果您使用或享有**色彩**而不是**筆刷**，則可以略過參考**公用程式**，因為您不需要轉換子。)  
 
-2.  選取所需的映像，並取得其 moniker。 使用  **KnownMoniker**，或使用您自己，如果您有自己的自訂映像和 moniker。  
+2. 選取所需的映像，並取得其 moniker。 使用  **KnownMoniker**，或使用您自己，如果您有自己的自訂映像和 moniker。  
 
-3.  新增**CrispImages**到您的 XAML。 （請參閱下列範例中）。  
+3. 新增**CrispImages**到您的 XAML。 （請參閱下列範例中）。  
 
-4.  設定**ImageThemingUtilities.ImageBackgroundColor** UI 階層中的屬性。 (這應該設定在其中的背景色彩為已知，不一定是在位置**CrispImage**。)（請參閱下列範例中）。  
+4. 設定**ImageThemingUtilities.ImageBackgroundColor** UI 階層中的屬性。 (這應該設定在其中的背景色彩為已知，不一定是在位置**CrispImage**。)（請參閱下列範例中）。  
 
 ```xaml  
 <Window  
@@ -317,19 +312,19 @@ ms.locfileid: "51774363"
 
  更新現有的 WPF UI 是相當簡單的程序，包含三個基本步驟：  
 
-1.  程式碼取代所有\<映像 > 在您使用的 UI 中的項目\<CrispImage > 項目  
+1. 程式碼取代所有\<映像 > 在您使用的 UI 中的項目\<CrispImage > 項目  
 
-2.  將來源的所有屬性都變更為 Moniker 屬性  
+2. 將來源的所有屬性都變更為 Moniker 屬性  
 
-    -   如果映像永遠不會變更，而且您使用**KnownMonikers**，然後以靜態方式繫結至該屬性**KnownMoniker**。 （請參閱上述範例中）。  
+    - 如果映像永遠不會變更，而且您使用**KnownMonikers**，然後以靜態方式繫結至該屬性**KnownMoniker**。 （請參閱上述範例中）。  
 
-    -   如果映像永遠不會變更，而且您使用您自己的自訂映像，然後以靜態方式繫結至您自己的 moniker。  
+    - 如果映像永遠不會變更，而且您使用您自己的自訂映像，然後以靜態方式繫結至您自己的 moniker。  
 
-    -   如果映像可以變更，繫結 Moniker 屬性，以通知屬性變更的程式碼屬性。  
+    - 如果映像可以變更，繫結 Moniker 屬性，以通知屬性變更的程式碼屬性。  
 
-3.  某處 UI 階層架構中設定**ImageThemingUtilities.ImageBackgroundColor**要確定色彩反轉運作正常。  
+3. 某處 UI 階層架構中設定**ImageThemingUtilities.ImageBackgroundColor**要確定色彩反轉運作正常。  
 
-    -   這可能需要使用**BrushToColorConverter**類別。 （請參閱上述範例中）。  
+    - 這可能需要使用**BrushToColorConverter**類別。 （請參閱上述範例中）。  
 
 ## <a name="how-do-i-update-win32-ui"></a>如何更新 Win32 UI？  
  新增下列程式碼，只要適當取代原始的映像載入。 切換傳回與 HIMAGELIST HICONs HBITMAPs，視需要的值。  
@@ -442,18 +437,18 @@ Bitmap bitmap = (Bitmap)GelUtilities.GetObjectData(uiObj); // Use this if you ne
 
 3. 當索引標籤取得小工具視窗索引標籤 （也用於 Ctrl + Tab 視窗切換器） 足夠。  
 
-   1.  移除這幾行 （如果有的話） 中的建構函式的類別，衍生自**ToolWindowPane**類型：  
+   1. 移除這幾行 （如果有的話） 中的建構函式的類別，衍生自**ToolWindowPane**類型：  
 
        ```csharp  
        this.BitmapResourceID = <Value>;  
        this.BitmapIndex = <Value>;  
        ```  
 
-   2.  請參閱步驟 1 的"How Do I 的新工具視窗中使用影像 Moniker？ 」 上一節。  
+   2. 請參閱步驟 1 的"How Do I 的新工具視窗中使用影像 Moniker？ 」 上一節。  
 
 4. 若要開啟工具視窗命令。  
 
-   -   請參閱步驟 2 的"How Do I 的新工具視窗中使用影像 Moniker？ 」 上一節。  
+   - 請參閱步驟 2 的"How Do I 的新工具視窗中使用影像 Moniker？ 」 上一節。  
 
 ## <a name="how-do-i-use-image-monikers-in-a-vsct-file"></a>如何使用.vsct 檔案中的影像 moniker？  
  下面加上註解的行所示，請更新您的.vsct 檔案：  
@@ -571,27 +566,27 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 
 1. 執行**ManifestFromResources**工具，將它傳遞影像區域。 這會產生帶狀的資訊清單。  
 
-   -   建議： 提供的資訊清單，以符合其使用量非預設名稱。  
+   - 建議： 提供的資訊清單，以符合其使用量非預設名稱。  
 
 2. 如果您只使用**KnownMonikers**，然後執行下列動作：  
 
-   -   取代\<映像 > 與資訊清單區段\<映像 / >。  
+   - 取代\<映像 > 與資訊清單區段\<映像 / >。  
 
-   -   移除所有 subimage 識別碼 (凡是\<imagestrip 名稱 > _ # #)。  
+   - 移除所有 subimage 識別碼 (凡是\<imagestrip 名稱 > _ # #)。  
 
-   -   建議： 重新命名的 AssetsGuid 符號和映像移除符號，以符合其使用方式。  
+   - 建議： 重新命名的 AssetsGuid 符號和映像移除符號，以符合其使用方式。  
 
-   -   取代每個**ContainedImage**的 GUID，以 $(ImageCatalogGuid)，取代每個**ContainedImage**的識別碼以 $(\<moniker >)，並將外部 ="true"屬性新增至每個**ContainedImage**  
+   - 取代每個**ContainedImage**的 GUID，以 $(ImageCatalogGuid)，取代每個**ContainedImage**的識別碼以 $(\<moniker >)，並將外部 ="true"屬性新增至每個**ContainedImage**  
 
-       -   \<moniker > 應該取代成**KnownMoniker**符合映像，但 「 KnownMonikers。 」 從名稱中移除。  
+       - \<moniker > 應該取代成**KnownMoniker**符合映像，但 「 KnownMonikers。 」 從名稱中移除。  
 
-   -   新增 < 匯入 Manifest="$(ManifestFolder)\\< 的相對安裝目錄路徑\>\Microsoft.VisualStudio.ImageCatalog.imagemanifest"/\>頂端\<符號 > 一節。  
+   - 新增 < 匯入 Manifest="$(ManifestFolder)\\< 的相對安裝目錄路徑\>\Microsoft.VisualStudio.ImageCatalog.imagemanifest"/\>頂端\<符號 > 一節。  
 
-       -   相對的路徑取決於製作資訊清單設定中所定義的部署位置。  
+       - 相對的路徑取決於製作資訊清單設定中所定義的部署位置。  
 
 3. 執行**ManifestToCode**工具來產生包裝函式，使現有的程式碼具有可用來查詢映像服務，影像區域的 moniker。  
 
-   -   建議： 提供包裝函式和命名空間，以符合其使用方式的非預設的名稱。  
+   - 建議： 提供包裝函式和命名空間，以符合其使用方式的非預設的名稱。  
 
 4. 執行所有加入時，安裝程式撰寫/部署和其他程式碼變更來處理映像服務和新的檔案。  
 
@@ -648,14 +643,14 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 
  **我不需要支援 HIMAGELISTs**  
 
-1.  判斷一組**KnownMonikers** ，符合您的影像區域中的映像，或在您的影像區域中建立您自己的映像的 moniker。  
+1. 判斷一組**KnownMonikers** ，符合您的影像區域中的映像，或在您的影像區域中建立您自己的映像的 moniker。  
 
-2.  更新您用來取得映像，在所需的索引，要改為使用 moniker 的映像帶中的任何對應。  
+2. 更新您用來取得映像，在所需的索引，要改為使用 moniker 的映像帶中的任何對應。  
 
-3.  更新您的程式碼，使用映像服務要求透過更新對應的 moniker。 (這可能表示更新至**CrispImages**的 managed 程式碼，或從映像服務要求 HBITMAPs 或 HICONs 和將它們傳遞原生程式碼。)  
+3. 更新您的程式碼，使用映像服務要求透過更新對應的 moniker。 (這可能表示更新至**CrispImages**的 managed 程式碼，或從映像服務要求 HBITMAPs 或 HICONs 和將它們傳遞原生程式碼。)  
 
 ## <a name="testing-your-images"></a>測試您的映像  
- 您可以使用影像庫檢視器工具來測試您的映像資訊清單，請確定已正確撰寫的所有項目。 您可以找到中的工具[Visual Studio 2015 SDK](http://msdn.microsoft.com/library/bb166441.aspx)。 您可以找到這項工具和其他文件[此處](http://aka.ms/VSImageThemeTools)。  
+ 您可以使用影像庫檢視器工具來測試您的映像資訊清單，請確定已正確撰寫的所有項目。 您可以找到中的工具[Visual Studio 2015 SDK](https://msdn.microsoft.com/library/bb166441.aspx)。 您可以找到這項工具和其他文件[此處](https://aka.ms/VSImageThemeTools)。  
 
 ## <a name="additional-resources"></a>其他資源  
 
@@ -665,7 +660,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
  請檢查[ http://github.com/Microsoft/VSSDK-Extensibility-Samples ](http://github.com/Microsoft/VSSDK-Extensibility-Samples)的最新的範例。  
 
 ### <a name="tooling"></a>Tooling  
- 建立一組映像服務的支援工具以協助建立/更新映像服務與搭配運作的 UI。 如需有關每個工具的詳細資訊，請查閱文件隨附的工具。 工具會併入[Visual Studio 2015 SDK。](http://msdn.microsoft.com/library/bb166441.aspx)  
+ 建立一組映像服務的支援工具以協助建立/更新映像服務與搭配運作的 UI。 如需有關每個工具的詳細資訊，請查閱文件隨附的工具。 工具會併入[Visual Studio 2015 SDK。](https://msdn.microsoft.com/library/bb166441.aspx)  
 
  **ManifestFromResources**  
 
@@ -673,7 +668,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 
  **ManifestToCode**  
 
- 資訊清單以程式碼工具會使用映像資訊清單檔案，並產生的包裝函式檔案參考 （c + +、 C# 或 VB） 的程式碼或.vsct 檔案中的資訊清單的值。  
+ 資訊清單以程式碼工具會使用映像資訊清單檔案，並產生包裝函式檔案來參考程式碼中的資訊清單的值 (C++， C#，或 VB) 或.vsct 檔案。  
 
  **ImageLibraryViewer**  
 
@@ -681,318 +676,317 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 
 ## <a name="faq"></a>常見問題集  
 
--   是否有任何相依性，您必須在載入時包含\<參考 Include="Microsoft.VisualStudio.*。Interop.14.0.DesignTime"/ > 嗎？  
+- 是否有任何相依性，您必須在載入時包含\<參考 Include="Microsoft.VisualStudio.*。Interop.14.0.DesignTime"/ > 嗎？  
 
-    -   設定 EmbedInteropTypes ="true"，所有的 interop Dll 上。  
+  - 設定 EmbedInteropTypes ="true"，所有的 interop Dll 上。  
 
--   如何使用 my 擴充功能部署的映像資訊清單？  
+- 如何使用 my 擴充功能部署的映像資訊清單？  
 
-    -   .Imagemanifest 檔案加入您的專案。  
+  - .Imagemanifest 檔案加入您的專案。  
 
-    -   將 [包含在 VSIX] 設定為 True。  
+  - 將 [包含在 VSIX] 設定為 True。  
 
--   我要更新我的 CPS 專案系統。 發生了什麼事**ImageName**並**StockIconService**？  
+- 我要更新我的 CPS 專案系統。 發生了什麼事**ImageName**並**StockIconService**？  
 
-    -   o CPS 已更新為使用 moniker 時，這些被移除。 您不再需要呼叫**StockIconService**，只傳遞所要**KnownMoniker**方法或屬性使用**ToProjectSystemType()** 中的擴充方法CPS 公用程式。 您可以找到的對應**ImageName**要**KnownMonikers**如下：  
+  - CPS 已更新為使用 moniker 時，已移除這些項目。 您不再需要呼叫**StockIconService**，只傳遞所要**KnownMoniker**方法或屬性使用**ToProjectSystemType()** 中的擴充方法CPS 公用程式。 您可以找到的對應**ImageName**要**KnownMonikers**如下：  
 
-        |||  
-        |-|-|  
-        |**ImageName**|**KnownMoniker**|  
-        |ImageName.OfflineWebApp|KnownImageIds.Web|  
-        |ImageName.WebReferencesFolder|KnownImageIds.Web|  
-        |ImageName.OpenReferenceFolder|KnownImageIds.FolderOpened|  
-        |ImageName.ReferenceFolder|KnownImageIds.Reference|  
-        |ImageName.Reference|KnownImageIds.Reference|  
-        |ImageName.SdlWebReference|KnownImageIds.WebReferenceFolder|  
-        |ImageName.DiscoWebReference|KnownImageIds.DynamicDiscoveryDocument|  
-        |ImageName.Folder|KnownImageIds.FolderClosed|  
-        |ImageName.OpenFolder|KnownImageIds.FolderOpened|  
-        |ImageName.ExcludedFolder|KnownImageIds.HiddenFolderClosed|  
-        |ImageName.OpenExcludedFolder|KnownImageIds.HiddenFolderOpened|  
-        |ImageName.ExcludedFile|KnownImageIds.HiddenFile|  
-        |ImageName.DependentFile|KnownImageIds.GenerateFile|  
-        |ImageName.MissingFile|KnownImageIds.DocumentWarning|  
-        |ImageName.WindowsForm|KnownImageIds.WindowsForm|  
-        |ImageName.WindowsUserControl|KnownImageIds.UserControl|  
-        |ImageName.WindowsComponent|KnownImageIds.ComponentFile|  
-        |ImageName.XmlSchema|KnownImageIds.XMLSchema|  
-        |ImageName.XmlFile|KnownImageIds.XMLFile|  
-        |ImageName.WebForm|KnownImageIds.Web|  
-        |ImageName.WebService|KnownImageIds.WebService|  
-        |ImageName.WebUserControl|KnownImageIds.WebUserControl|  
-        |ImageName.WebCustomUserControl|KnownImageIds.WebCustomControl|  
-        |ImageName.AspPage|KnownImageIds.ASPFile|  
-        |ImageName.GlobalApplicationClass|KnownImageIds.SettingsFile|  
-        |ImageName.WebConfig|KnownImageIds.ConfigurationFile|  
-        |ImageName.HtmlPage|KnownImageIds.HTMLFile|  
-        |ImageName.StyleSheet|KnownImageIds.StyleSheet|  
-        |ImageName.ScriptFile|KnownImageIds.JSScript|  
-        |ImageName.TextFile|KnownImageIds.Document|  
-        |ImageName.SettingsFile|KnownImageIds.Settings|  
-        |ImageName.Resources|KnownImageIds.DocumentGroup|  
-        |ImageName.Bitmap|KnownImageIds.Image|  
-        |ImageName.Icon|KnownImageIds.IconFile|  
-        |ImageName.Image|KnownImageIds.Image|  
-        |ImageName.ImageMap|KnownImageIds.ImageMapFile|  
-        |ImageName.XWorld|KnownImageIds.XWorldFile|  
-        |ImageName.Audio|KnownImageIds.Sound|  
-        |ImageName.Video|KnownImageIds.Media|  
-        |ImageName.Cab|KnownImageIds.CABProject|  
-        |ImageName.Jar|KnownImageIds.JARFile|  
-        |ImageName.DataEnvironment|KnownImageIds.DataTable|  
-        |ImageName.PreviewFile|KnownImageIds.Report|  
-        |ImageName.DanglingReference|KnownImageIds.ReferenceWarning|  
-        |ImageName.XsltFile|KnownImageIds.XSLTransform|  
-        |ImageName.Cursor|KnownImageIds.CursorFile|  
-        |ImageName.AppDesignerFolder|KnownImageIds.Property|  
-        |ImageName.Data|KnownImageIds.Database|  
-        |ImageName.Application|KnownImageIds.Application|  
-        |ImageName.DataSet|KnownImageIds.DatabaseGroup|  
-        |ImageName.Pfx|KnownImageIds.Certificate|  
-        |ImageName.Snk|KnownImageIds.Rule|  
-        |ImageName.VisualBasicProject|KnownImageIds.VBProjectNode|  
-        |ImageName.CSharpProject|KnownImageIds.CSProjectNode|  
-        |ImageName.Empty|KnownImageIds.Blank|  
-        |ImageName.MissingFolder|KnownImageIds.FolderOffline|  
-        |ImageName.SharedImportReference|KnownImageIds.SharedProject|  
-        |ImageName.SharedProjectCs|KnownImageIds.CSSharedProject|  
-        |ImageName.SharedProjectVc|KnownImageIds.CPPSharedProject|  
-        |ImageName.SharedProjectJs|KnownImageIds.JSSharedProject|  
-        |ImageName.CSharpCodeFile|KnownImageIds.CSFileNode|  
-        |ImageName.VisualBasicCodeFile|KnownImageIds.VBFileNode|  
+    |||  
+    |-|-|  
+    |**ImageName**|**KnownMoniker**|  
+    |ImageName.OfflineWebApp|KnownImageIds.Web|  
+    |ImageName.WebReferencesFolder|KnownImageIds.Web|  
+    |ImageName.OpenReferenceFolder|KnownImageIds.FolderOpened|  
+    |ImageName.ReferenceFolder|KnownImageIds.Reference|  
+    |ImageName.Reference|KnownImageIds.Reference|  
+    |ImageName.SdlWebReference|KnownImageIds.WebReferenceFolder|  
+    |ImageName.DiscoWebReference|KnownImageIds.DynamicDiscoveryDocument|  
+    |ImageName.Folder|KnownImageIds.FolderClosed|  
+    |ImageName.OpenFolder|KnownImageIds.FolderOpened|  
+    |ImageName.ExcludedFolder|KnownImageIds.HiddenFolderClosed|  
+    |ImageName.OpenExcludedFolder|KnownImageIds.HiddenFolderOpened|  
+    |ImageName.ExcludedFile|KnownImageIds.HiddenFile|  
+    |ImageName.DependentFile|KnownImageIds.GenerateFile|  
+    |ImageName.MissingFile|KnownImageIds.DocumentWarning|  
+    |ImageName.WindowsForm|KnownImageIds.WindowsForm|  
+    |ImageName.WindowsUserControl|KnownImageIds.UserControl|  
+    |ImageName.WindowsComponent|KnownImageIds.ComponentFile|  
+    |ImageName.XmlSchema|KnownImageIds.XMLSchema|  
+    |ImageName.XmlFile|KnownImageIds.XMLFile|  
+    |ImageName.WebForm|KnownImageIds.Web|  
+    |ImageName.WebService|KnownImageIds.WebService|  
+    |ImageName.WebUserControl|KnownImageIds.WebUserControl|  
+    |ImageName.WebCustomUserControl|KnownImageIds.WebCustomControl|  
+    |ImageName.AspPage|KnownImageIds.ASPFile|  
+    |ImageName.GlobalApplicationClass|KnownImageIds.SettingsFile|  
+    |ImageName.WebConfig|KnownImageIds.ConfigurationFile|  
+    |ImageName.HtmlPage|KnownImageIds.HTMLFile|  
+    |ImageName.StyleSheet|KnownImageIds.StyleSheet|  
+    |ImageName.ScriptFile|KnownImageIds.JSScript|  
+    |ImageName.TextFile|KnownImageIds.Document|  
+    |ImageName.SettingsFile|KnownImageIds.Settings|  
+    |ImageName.Resources|KnownImageIds.DocumentGroup|  
+    |ImageName.Bitmap|KnownImageIds.Image|  
+    |ImageName.Icon|KnownImageIds.IconFile|  
+    |ImageName.Image|KnownImageIds.Image|  
+    |ImageName.ImageMap|KnownImageIds.ImageMapFile|  
+    |ImageName.XWorld|KnownImageIds.XWorldFile|  
+    |ImageName.Audio|KnownImageIds.Sound|  
+    |ImageName.Video|KnownImageIds.Media|  
+    |ImageName.Cab|KnownImageIds.CABProject|  
+    |ImageName.Jar|KnownImageIds.JARFile|  
+    |ImageName.DataEnvironment|KnownImageIds.DataTable|  
+    |ImageName.PreviewFile|KnownImageIds.Report|  
+    |ImageName.DanglingReference|KnownImageIds.ReferenceWarning|  
+    |ImageName.XsltFile|KnownImageIds.XSLTransform|  
+    |ImageName.Cursor|KnownImageIds.CursorFile|  
+    |ImageName.AppDesignerFolder|KnownImageIds.Property|  
+    |ImageName.Data|KnownImageIds.Database|  
+    |ImageName.Application|KnownImageIds.Application|  
+    |ImageName.DataSet|KnownImageIds.DatabaseGroup|  
+    |ImageName.Pfx|KnownImageIds.Certificate|  
+    |ImageName.Snk|KnownImageIds.Rule|  
+    |ImageName.VisualBasicProject|KnownImageIds.VBProjectNode|  
+    |ImageName.CSharpProject|KnownImageIds.CSProjectNode|  
+    |ImageName.Empty|KnownImageIds.Blank|  
+    |ImageName.MissingFolder|KnownImageIds.FolderOffline|  
+    |ImageName.SharedImportReference|KnownImageIds.SharedProject|  
+    |ImageName.SharedProjectCs|KnownImageIds.CSSharedProject|  
+    |ImageName.SharedProjectVc|KnownImageIds.CPPSharedProject|  
+    |ImageName.SharedProjectJs|KnownImageIds.JSSharedProject|  
+    |ImageName.CSharpCodeFile|KnownImageIds.CSFileNode|  
+    |ImageName.VisualBasicCodeFile|KnownImageIds.VBFileNode|  
 
-    -   我要更新我的完成清單提供者。 什麼**KnownMonikers**比對舊**StandardGlyphGroup**並**StandardGlyph**值？  
+  - 我要更新我的完成清單提供者。 什麼**KnownMonikers**比對舊**StandardGlyphGroup**並**StandardGlyph**值？  
 
-        ||||  
-        |-|-|-|  
-        |GlyphGroupClass|GlyphItemPublic|ClassPublic|  
-        |GlyphGroupClass|GlyphItemInternal|ClassInternal|  
-        |GlyphGroupClass|GlyphItemFriend|ClassInternal|  
-        |GlyphGroupClass|GlyphItemProtected|ClassProtected|  
-        |GlyphGroupClass|GlyphItemPrivate|ClassPrivate|  
-        |GlyphGroupClass|GlyphItemShortcut|ClassShortcut|  
-        |GlyphGroupConstant|GlyphItemPublic|ClassPublic|  
-        |GlyphGroupConstant|GlyphItemInternal|ClassInternal|  
-        |GlyphGroupConstant|GlyphItemFriend|ClassInternal|  
-        |GlyphGroupConstant|GlyphItemProtected|ClassProtected|  
-        |GlyphGroupConstant|GlyphItemPrivate|ClassPrivate|  
-        |GlyphGroupConstant|GlyphItemShortcut|ClassShortcut|  
-        |GlyphGroupDelegate|GlyphItemPublic|DelegatePublic|  
-        |GlyphGroupDelegate|GlyphItemInternal|DelegateInternal|  
-        |GlyphGroupDelegate|GlyphItemFriend|DelegateInternal|  
-        |GlyphGroupDelegate|GlyphItemProtected|DelegateProtected|  
-        |GlyphGroupDelegate|GlyphItemPrivate|DelegatePrivate|  
-        |GlyphGroupDelegate|GlyphItemShortcut|DelegateShortcut|  
-        |GlyphGroupEnum|GlyphItemPublic|EnumerationPublic|  
-        |GlyphGroupEnum|GlyphItemInternal|EnumerationInternal|  
-        |GlyphGroupEnum|GlyphItemFriend|EnumerationInternal|  
-        |GlyphGroupEnum|GlyphItemProtected|EnumerationProtected|  
-        |GlyphGroupEnum|GlyphItemPrivate|EnumerationPrivate|  
-        |GlyphGroupEnum|GlyphItemShortcut|EnumerationShortcut|  
-        |GlyphGroupEnumMember|GlyphItemPublic|EnumerationMemberPublic|  
-        |GlyphGroupEnumMember|GlyphItemInternal|EnumerationMemberInternal|  
-        |GlyphGroupEnumMember|GlyphItemFriend|EnumerationMemberInternal|  
-        |GlyphGroupEnumMember|GlyphItemProtected|EnumerationMemberProtected|  
-        |GlyphGroupEnumMember|GlyphItemPrivate|EnumerationMemberPrivate|  
-        |GlyphGroupEnumMember|GlyphItemShortcut|EnumerationMemberShortcut|  
-        |GlyphGroupEvent|GlyphItemPublic|EventPublic|  
-        |GlyphGroupEvent|GlyphItemInternal|EventInternal|  
-        |GlyphGroupEvent|GlyphItemFriend|EventInternal|  
-        |GlyphGroupEvent|GlyphItemProtected|EventProtected|  
-        |GlyphGroupEvent|GlyphItemPrivate|EventPrivate|  
-        |GlyphGroupEvent|GlyphItemShortcut|EventShortcut|  
-        |GlyphGroupException|GlyphItemPublic|ExceptionPublic|  
-        |GlyphGroupException|GlyphItemInternal|ExceptionInternal|  
-        |GlyphGroupException|GlyphItemFriend|ExceptionInternal|  
-        |GlyphGroupException|GlyphItemProtected|ExceptionProtected|  
-        |GlyphGroupException|GlyphItemPrivate|ExceptionPrivate|  
-        |GlyphGroupException|GlyphItemShortcut|ExceptionShortcut|  
-        |GlyphGroupField|GlyphItemPublic|FieldPublic|  
-        |GlyphGroupField|GlyphItemInternal|FieldInternal|  
-        |GlyphGroupField|GlyphItemFriend|FieldInternal|  
-        |GlyphGroupField|GlyphItemProtected|FieldProtected|  
-        |GlyphGroupField|GlyphItemPrivate|FieldPrivate|  
-        |GlyphGroupField|GlyphItemShortcut|FieldShortcut|  
-        |GlyphGroupInterface|GlyphItemPublic|InterfacePublic|  
-        |GlyphGroupInterface|GlyphItemInternal|InterfaceInternal|  
-        |GlyphGroupInterface|GlyphItemFriend|InterfaceInternal|  
-        |GlyphGroupInterface|GlyphItemProtected|InterfaceProtected|  
-        |GlyphGroupInterface|GlyphItemPrivate|InterfacePrivate|  
-        |GlyphGroupInterface|GlyphItemShortcut|InterfaceShortcut|  
-        |GlyphGroupMacro|GlyphItemPublic|MacroPublic|  
-        |GlyphGroupMacro|GlyphItemInternal|MacroInternal|  
-        |GlyphGroupMacro|GlyphItemFriend|MacroInternal|  
-        |GlyphGroupMacro|GlyphItemProtected|MacroProtected|  
-        |GlyphGroupMacro|GlyphItemPrivate|MacroPrivate|  
-        |GlyphGroupMacro|GlyphItemShortcut|MacroShortcut|  
-        |GlyphGroupMap|GlyphItemPublic|MapPublic|  
-        |GlyphGroupMap|GlyphItemInternal|MapInternal|  
-        |GlyphGroupMap|GlyphItemFriend|MapInternal|  
-        |GlyphGroupMap|GlyphItemProtected|MapProtected|  
-        |GlyphGroupMap|GlyphItemPrivate|MapPrivate|  
-        |GlyphGroupMap|GlyphItemShortcut|MapShortcut|  
-        |GlyphGroupMapItem|GlyphItemPublic|MapItemPublic|  
-        |GlyphGroupMapItem|GlyphItemInternal|MapItemInternal|  
-        |GlyphGroupMapItem|GlyphItemFriend|MapItemInternal|  
-        |GlyphGroupMapItem|GlyphItemProtected|MapItemProtected|  
-        |GlyphGroupMapItem|GlyphItemPrivate|MapItemPrivate|  
-        |GlyphGroupMapItem|GlyphItemShortcut|MapItemShortcut|  
-        |GlyphGroupMethod|GlyphItemPublic|MethodPublic|  
-        |GlyphGroupMethod|GlyphItemInternal|MethodInternal|  
-        |GlyphGroupMethod|GlyphItemFriend|MethodInternal|  
-        |GlyphGroupMethod|GlyphItemProtected|MethodProtected|  
-        |GlyphGroupMethod|GlyphItemPrivate|MethodPrivate|  
-        |GlyphGroupMethod|GlyphItemShortcut|MethodShortcut|  
-        |GlyphGroupOverload|GlyphItemPublic|MethodPublic|  
-        |GlyphGroupOverload|GlyphItemInternal|MethodInternal|  
-        |GlyphGroupOverload|GlyphItemFriend|MethodInternal|  
-        |GlyphGroupOverload|GlyphItemProtected|MethodProtected|  
-        |GlyphGroupOverload|GlyphItemPrivate|MethodPrivate|  
-        |GlyphGroupOverload|GlyphItemShortcut|MethodShortcut|  
-        |GlyphGroupModule|GlyphItemPublic|ModulePublic|  
-        |GlyphGroupModule|GlyphItemInternal|ModuleInternal|  
-        |GlyphGroupModule|GlyphItemFriend|ModuleInternal|  
-        |GlyphGroupModule|GlyphItemProtected|ModuleProtected|  
-        |GlyphGroupModule|GlyphItemPrivate|ModulePrivate|  
-        |GlyphGroupModule|GlyphItemShortcut|ModuleShortcut|  
-        |GlyphGroupNamespace|GlyphItemPublic|NamespacePublic|  
-        |GlyphGroupNamespace|GlyphItemInternal|NamespaceInternal|  
-        |GlyphGroupNamespace|GlyphItemFriend|NamespaceInternal|  
-        |GlyphGroupNamespace|GlyphItemProtected|NamespaceProtected|  
-        |GlyphGroupNamespace|GlyphItemPrivate|NamespacePrivate|  
-        |GlyphGroupNamespace|GlyphItemShortcut|NamespaceShortcut|  
-        |GlyphGroupOperator|GlyphItemPublic|OperatorPublic|  
-        |GlyphGroupOperator|GlyphItemInternal|OperatorInternal|  
-        |GlyphGroupOperator|GlyphItemFriend|OperatorInternal|  
-        |GlyphGroupOperator|GlyphItemProtected|OperatorProtected|  
-        |GlyphGroupOperator|GlyphItemPrivate|OperatorPrivate|  
-        |GlyphGroupOperator|GlyphItemShortcut|OperatorShortcut|  
-        |GlyphGroupProperty|GlyphItemPublic|PropertyPublic|  
-        |GlyphGroupProperty|GlyphItemInternal|PropertyInternal|  
-        |GlyphGroupProperty|GlyphItemFriend|PropertyInternal|  
-        |GlyphGroupProperty|GlyphItemProtected|PropertyProtected|  
-        |GlyphGroupProperty|GlyphItemPrivate|PropertyPrivate|  
-        |GlyphGroupProperty|GlyphItemShortcut|PropertyShortcut|  
-        |GlyphGroupStruct|GlyphItemPublic|StructurePublic|  
-        |GlyphGroupStruct|GlyphItemInternal|StructureInternal|  
-        |GlyphGroupStruct|GlyphItemFriend|StructureInternal|  
-        |GlyphGroupStruct|GlyphItemProtected|StructureProtected|  
-        |GlyphGroupStruct|GlyphItemPrivate|StructurePrivate|  
-        |GlyphGroupStruct|GlyphItemShortcut|StructureShortcut|  
-        |GlyphGroupTemplate|GlyphItemPublic|TemplatePublic|  
-        |GlyphGroupTemplate|GlyphItemInternal|TemplateInternal|  
-        |GlyphGroupTemplate|GlyphItemFriend|TemplateInternal|  
-        |GlyphGroupTemplate|GlyphItemProtected|TemplateProtected|  
-        |GlyphGroupTemplate|GlyphItemPrivate|TemplatePrivate|  
-        |GlyphGroupTemplate|GlyphItemShortcut|TemplateShortcut|  
-        |GlyphGroupTypedef|GlyphItemPublic|TypeDefinitionPublic|  
-        |GlyphGroupTypedef|GlyphItemInternal|TypeDefinitionInternal|  
-        |GlyphGroupTypedef|GlyphItemFriend|TypeDefinitionInternal|  
-        |GlyphGroupTypedef|GlyphItemProtected|TypeDefinitionProtected|  
-        |GlyphGroupTypedef|GlyphItemPrivate|TypeDefinitionPrivate|  
-        |GlyphGroupTypedef|GlyphItemShortcut|TypeDefinitionShortcut|  
-        |GlyphGroupType|GlyphItemPublic|TypePublic|  
-        |GlyphGroupType|GlyphItemInternal|TypeInternal|  
-        |GlyphGroupType|GlyphItemFriend|TypeInternal|  
-        |GlyphGroupType|GlyphItemProtected|TypeProtected|  
-        |GlyphGroupType|GlyphItemPrivate|TypePrivate|  
-        |GlyphGroupType|GlyphItemShortcut|TypeShortcut|  
-        |GlyphGroupUnion|GlyphItemPublic|UnionPublic|  
-        |GlyphGroupUnion|GlyphItemInternal|UnionInternal|  
-        |GlyphGroupUnion|GlyphItemFriend|UnionInternal|  
-        |GlyphGroupUnion|GlyphItemProtected|UnionProtected|  
-        |GlyphGroupUnion|GlyphItemPrivate|UnionPrivate|  
-        |GlyphGroupUnion|GlyphItemShortcut|UnionShortcut|  
-        |GlyphGroupVariable|GlyphItemPublic|FieldPublic|  
-        |GlyphGroupVariable|GlyphItemInternal|FieldInternal|  
-        |GlyphGroupVariable|GlyphItemFriend|FieldInternal|  
-        |GlyphGroupVariable|GlyphItemProtected|FieldProtected|  
-        |GlyphGroupVariable|GlyphItemPrivate|FieldPrivate|  
-        |GlyphGroupVariable|GlyphItemShortcut|FieldShortcut|  
-        |GlyphGroupValueType|GlyphItemPublic|ValueTypePublic|  
-        |GlyphGroupValueType|GlyphItemInternal|ValueTypeInternal|  
-        |GlyphGroupValueType|GlyphItemFriend|ValueTypeInternal|  
-        |GlyphGroupValueType|GlyphItemProtected|ValueTypeProtected|  
-        |GlyphGroupValueType|GlyphItemPrivate|ValueTypePrivate|  
-        |GlyphGroupValueType|GlyphItemShortcut|ValueTypeShortcut|  
-        |GlyphGroupIntrinsic|GlyphItemPublic|ObjectPublic|  
-        |GlyphGroupIntrinsic|GlyphItemInternal|ObjectInternal|  
-        |GlyphGroupIntrinsic|GlyphItemFriend|ObjectInternal|  
-        |GlyphGroupIntrinsic|GlyphItemProtected|ObjectProtected|  
-        |GlyphGroupIntrinsic|GlyphItemPrivate|ObjectPrivate|  
-        |GlyphGroupIntrinsic|GlyphItemShortcut|ObjectShortcut|  
-        |GlyphGroupJSharpMethod|GlyphItemPublic|MethodPublic|  
-        |GlyphGroupJSharpMethod|GlyphItemInternal|MethodInternal|  
-        |GlyphGroupJSharpMethod|GlyphItemFriend|MethodInternal|  
-        |GlyphGroupJSharpMethod|GlyphItemProtected|MethodProtected|  
-        |GlyphGroupJSharpMethod|GlyphItemPrivate|MethodPrivate|  
-        |GlyphGroupJSharpMethod|GlyphItemShortcut|MethodShortcut|  
-        |GlyphGroupJSharpField|GlyphItemPublic|FieldPublic|  
-        |GlyphGroupJSharpField|GlyphItemInternal|FieldInternal|  
-        |GlyphGroupJSharpField|GlyphItemFriend|FieldInternal|  
-        |GlyphGroupJSharpField|GlyphItemProtected|FieldProtected|  
-        |GlyphGroupJSharpField|GlyphItemPrivate|FieldPrivate|  
-        |GlyphGroupJSharpField|GlyphItemShortcut|FieldShortcut|  
-        |GlyphGroupJSharpClass|GlyphItemPublic|ClassPublic|  
-        |GlyphGroupJSharpClass|GlyphItemInternal|ClassInternal|  
-        |GlyphGroupJSharpClass|GlyphItemFriend|ClassInternal|  
-        |GlyphGroupJSharpClass|GlyphItemProtected|ClassProtected|  
-        |GlyphGroupJSharpClass|GlyphItemPrivate|ClassPrivate|  
-        |GlyphGroupJSharpClass|GlyphItemShortcut|ClassShortcut|  
-        |GlyphGroupJSharpNamespace|GlyphItemPublic|NamespacePublic|  
-        |GlyphGroupJSharpNamespace|GlyphItemInternal|NamespaceInternal|  
-        |GlyphGroupJSharpNamespace|GlyphItemFriend|NamespaceInternal|  
-        |GlyphGroupJSharpNamespace|GlyphItemProtected|NamespaceProtected|  
-        |GlyphGroupJSharpNamespace|GlyphItemPrivate|NamespacePrivate|  
-        |GlyphGroupJSharpNamespace|GlyphItemShortcut|NamespaceShortcut|  
-        |GlyphGroupJSharpInterface|GlyphItemPublic|InterfacePublic|  
-        |GlyphGroupJSharpInterface|GlyphItemInternal|InterfaceInternal|  
-        |GlyphGroupJSharpInterface|GlyphItemFriend|InterfaceInternal|  
-        |GlyphGroupJSharpInterface|GlyphItemProtected|InterfaceProtected|  
-        |GlyphGroupJSharpInterface|GlyphItemPrivate|InterfacePrivate|  
-        |GlyphGroupJSharpInterface|GlyphItemShortcut|InterfaceShortcut|  
-        |GlyphGroupError||StatusError|  
-        |GlyphBscFile||ClassFile|  
-        |GlyphAssembly||參考資料|  
-        |GlyphLibrary||程式庫|  
-        |GlyphVBProject||VBProjectNode|  
-        |GlyphCoolProject||CSProjectNode|  
-        |GlyphCppProject||CPPProjectNode|  
-        |GlyphDialogId||對話方塊|  
-        |GlyphOpenFolder||FolderOpened|  
-        |GlyphClosedFolder||FolderClosed|  
-        |GlyphArrow||GoToNext|  
-        |GlyphCSharpFile||CSFileNode|  
-        |GlyphCSharpExpansion||程式碼片段|  
-        |GlyphKeyword||IntellisenseKeyword|  
-        |GlyphInformation||StatusInformation|  
-        |GlyphReference||ClassMethodReference|  
-        |GlyphRecursion||遞迴|  
-        |GlyphXmlItem||標記|  
-        |GlyphJSharpProject||DocumentCollection|  
-        |GlyphJSharpDocument||文件|  
-        |GlyphForwardType||GoToNext|  
-        |GlyphCallersGraph||下列|  
-        |GlyphCallGraph||CallFrom|  
-        |GlyphWarning||StatusWarning|  
-        |GlyphMaybeReference||QuestionMark|  
-        |GlyphMaybeCaller||下列|  
-        |GlyphMaybeCall||CallFrom|  
-        |GlyphExtensionMethod||ExtensionMethod|  
-        |GlyphExtensionMethodInternal||ExtensionMethod|  
-        |GlyphExtensionMethodFriend||ExtensionMethod|  
-        |GlyphExtensionMethodProtected||ExtensionMethod|  
-        |GlyphExtensionMethodPrivate||ExtensionMethod|  
-        |GlyphExtensionMethodShortcut||ExtensionMethod|  
-        |GlyphXmlAttribute||XmlAttribute|  
-        |GlyphXmlChild||XmlElement|  
-        |GlyphXmlDescendant||XmlDescendant|  
-        |GlyphXmlNamespace||XmlNamespace|  
-        |GlyphXmlAttributeQuestion||XmlAttributeLowConfidence|  
-        |GlyphXmlAttributeCheck||XmlAttributeHighConfidence|  
-        |GlyphXmlChildQuestion||XmlElementLowConfidence|  
-        |GlyphXmlChildCheck||XmlElementHighConfidence|  
-        |GlyphXmlDescendantQuestion||XmlDescendantLowConfidence|  
-        |GlyphXmlDescendantCheck||XmlDescendantHighConfidence|  
-        |GlyphCompletionWarning||IntellisenseWarning|
-
+    ||||  
+    |-|-|-|  
+    |GlyphGroupClass|GlyphItemPublic|ClassPublic|  
+    |GlyphGroupClass|GlyphItemInternal|ClassInternal|  
+    |GlyphGroupClass|GlyphItemFriend|ClassInternal|  
+    |GlyphGroupClass|GlyphItemProtected|ClassProtected|  
+    |GlyphGroupClass|GlyphItemPrivate|ClassPrivate|  
+    |GlyphGroupClass|GlyphItemShortcut|ClassShortcut|  
+    |GlyphGroupConstant|GlyphItemPublic|ClassPublic|  
+    |GlyphGroupConstant|GlyphItemInternal|ClassInternal|  
+    |GlyphGroupConstant|GlyphItemFriend|ClassInternal|  
+    |GlyphGroupConstant|GlyphItemProtected|ClassProtected|  
+    |GlyphGroupConstant|GlyphItemPrivate|ClassPrivate|  
+    |GlyphGroupConstant|GlyphItemShortcut|ClassShortcut|  
+    |GlyphGroupDelegate|GlyphItemPublic|DelegatePublic|  
+    |GlyphGroupDelegate|GlyphItemInternal|DelegateInternal|  
+    |GlyphGroupDelegate|GlyphItemFriend|DelegateInternal|  
+    |GlyphGroupDelegate|GlyphItemProtected|DelegateProtected|  
+    |GlyphGroupDelegate|GlyphItemPrivate|DelegatePrivate|  
+    |GlyphGroupDelegate|GlyphItemShortcut|DelegateShortcut|  
+    |GlyphGroupEnum|GlyphItemPublic|EnumerationPublic|  
+    |GlyphGroupEnum|GlyphItemInternal|EnumerationInternal|  
+    |GlyphGroupEnum|GlyphItemFriend|EnumerationInternal|  
+    |GlyphGroupEnum|GlyphItemProtected|EnumerationProtected|  
+    |GlyphGroupEnum|GlyphItemPrivate|EnumerationPrivate|  
+    |GlyphGroupEnum|GlyphItemShortcut|EnumerationShortcut|  
+    |GlyphGroupEnumMember|GlyphItemPublic|EnumerationMemberPublic|  
+    |GlyphGroupEnumMember|GlyphItemInternal|EnumerationMemberInternal|  
+    |GlyphGroupEnumMember|GlyphItemFriend|EnumerationMemberInternal|  
+    |GlyphGroupEnumMember|GlyphItemProtected|EnumerationMemberProtected|  
+    |GlyphGroupEnumMember|GlyphItemPrivate|EnumerationMemberPrivate|  
+    |GlyphGroupEnumMember|GlyphItemShortcut|EnumerationMemberShortcut|  
+    |GlyphGroupEvent|GlyphItemPublic|EventPublic|  
+    |GlyphGroupEvent|GlyphItemInternal|EventInternal|  
+    |GlyphGroupEvent|GlyphItemFriend|EventInternal|  
+    |GlyphGroupEvent|GlyphItemProtected|EventProtected|  
+    |GlyphGroupEvent|GlyphItemPrivate|EventPrivate|  
+    |GlyphGroupEvent|GlyphItemShortcut|EventShortcut|  
+    |GlyphGroupException|GlyphItemPublic|ExceptionPublic|  
+    |GlyphGroupException|GlyphItemInternal|ExceptionInternal|  
+    |GlyphGroupException|GlyphItemFriend|ExceptionInternal|  
+    |GlyphGroupException|GlyphItemProtected|ExceptionProtected|  
+    |GlyphGroupException|GlyphItemPrivate|ExceptionPrivate|  
+    |GlyphGroupException|GlyphItemShortcut|ExceptionShortcut|  
+    |GlyphGroupField|GlyphItemPublic|FieldPublic|  
+    |GlyphGroupField|GlyphItemInternal|FieldInternal|  
+    |GlyphGroupField|GlyphItemFriend|FieldInternal|  
+    |GlyphGroupField|GlyphItemProtected|FieldProtected|  
+    |GlyphGroupField|GlyphItemPrivate|FieldPrivate|  
+    |GlyphGroupField|GlyphItemShortcut|FieldShortcut|  
+    |GlyphGroupInterface|GlyphItemPublic|InterfacePublic|  
+    |GlyphGroupInterface|GlyphItemInternal|InterfaceInternal|  
+    |GlyphGroupInterface|GlyphItemFriend|InterfaceInternal|  
+    |GlyphGroupInterface|GlyphItemProtected|InterfaceProtected|  
+    |GlyphGroupInterface|GlyphItemPrivate|InterfacePrivate|  
+    |GlyphGroupInterface|GlyphItemShortcut|InterfaceShortcut|  
+    |GlyphGroupMacro|GlyphItemPublic|MacroPublic|  
+    |GlyphGroupMacro|GlyphItemInternal|MacroInternal|  
+    |GlyphGroupMacro|GlyphItemFriend|MacroInternal|  
+    |GlyphGroupMacro|GlyphItemProtected|MacroProtected|  
+    |GlyphGroupMacro|GlyphItemPrivate|MacroPrivate|  
+    |GlyphGroupMacro|GlyphItemShortcut|MacroShortcut|  
+    |GlyphGroupMap|GlyphItemPublic|MapPublic|  
+    |GlyphGroupMap|GlyphItemInternal|MapInternal|  
+    |GlyphGroupMap|GlyphItemFriend|MapInternal|  
+    |GlyphGroupMap|GlyphItemProtected|MapProtected|  
+    |GlyphGroupMap|GlyphItemPrivate|MapPrivate|  
+    |GlyphGroupMap|GlyphItemShortcut|MapShortcut|  
+    |GlyphGroupMapItem|GlyphItemPublic|MapItemPublic|  
+    |GlyphGroupMapItem|GlyphItemInternal|MapItemInternal|  
+    |GlyphGroupMapItem|GlyphItemFriend|MapItemInternal|  
+    |GlyphGroupMapItem|GlyphItemProtected|MapItemProtected|  
+    |GlyphGroupMapItem|GlyphItemPrivate|MapItemPrivate|  
+    |GlyphGroupMapItem|GlyphItemShortcut|MapItemShortcut|  
+    |GlyphGroupMethod|GlyphItemPublic|MethodPublic|  
+    |GlyphGroupMethod|GlyphItemInternal|MethodInternal|  
+    |GlyphGroupMethod|GlyphItemFriend|MethodInternal|  
+    |GlyphGroupMethod|GlyphItemProtected|MethodProtected|  
+    |GlyphGroupMethod|GlyphItemPrivate|MethodPrivate|  
+    |GlyphGroupMethod|GlyphItemShortcut|MethodShortcut|  
+    |GlyphGroupOverload|GlyphItemPublic|MethodPublic|  
+    |GlyphGroupOverload|GlyphItemInternal|MethodInternal|  
+    |GlyphGroupOverload|GlyphItemFriend|MethodInternal|  
+    |GlyphGroupOverload|GlyphItemProtected|MethodProtected|  
+    |GlyphGroupOverload|GlyphItemPrivate|MethodPrivate|  
+    |GlyphGroupOverload|GlyphItemShortcut|MethodShortcut|  
+    |GlyphGroupModule|GlyphItemPublic|ModulePublic|  
+    |GlyphGroupModule|GlyphItemInternal|ModuleInternal|  
+    |GlyphGroupModule|GlyphItemFriend|ModuleInternal|  
+    |GlyphGroupModule|GlyphItemProtected|ModuleProtected|  
+    |GlyphGroupModule|GlyphItemPrivate|ModulePrivate|  
+    |GlyphGroupModule|GlyphItemShortcut|ModuleShortcut|  
+    |GlyphGroupNamespace|GlyphItemPublic|NamespacePublic|  
+    |GlyphGroupNamespace|GlyphItemInternal|NamespaceInternal|  
+    |GlyphGroupNamespace|GlyphItemFriend|NamespaceInternal|  
+    |GlyphGroupNamespace|GlyphItemProtected|NamespaceProtected|  
+    |GlyphGroupNamespace|GlyphItemPrivate|NamespacePrivate|  
+    |GlyphGroupNamespace|GlyphItemShortcut|NamespaceShortcut|  
+    |GlyphGroupOperator|GlyphItemPublic|OperatorPublic|  
+    |GlyphGroupOperator|GlyphItemInternal|OperatorInternal|  
+    |GlyphGroupOperator|GlyphItemFriend|OperatorInternal|  
+    |GlyphGroupOperator|GlyphItemProtected|OperatorProtected|  
+    |GlyphGroupOperator|GlyphItemPrivate|OperatorPrivate|  
+    |GlyphGroupOperator|GlyphItemShortcut|OperatorShortcut|  
+    |GlyphGroupProperty|GlyphItemPublic|PropertyPublic|  
+    |GlyphGroupProperty|GlyphItemInternal|PropertyInternal|  
+    |GlyphGroupProperty|GlyphItemFriend|PropertyInternal|  
+    |GlyphGroupProperty|GlyphItemProtected|PropertyProtected|  
+    |GlyphGroupProperty|GlyphItemPrivate|PropertyPrivate|  
+    |GlyphGroupProperty|GlyphItemShortcut|PropertyShortcut|  
+    |GlyphGroupStruct|GlyphItemPublic|StructurePublic|  
+    |GlyphGroupStruct|GlyphItemInternal|StructureInternal|  
+    |GlyphGroupStruct|GlyphItemFriend|StructureInternal|  
+    |GlyphGroupStruct|GlyphItemProtected|StructureProtected|  
+    |GlyphGroupStruct|GlyphItemPrivate|StructurePrivate|  
+    |GlyphGroupStruct|GlyphItemShortcut|StructureShortcut|  
+    |GlyphGroupTemplate|GlyphItemPublic|TemplatePublic|  
+    |GlyphGroupTemplate|GlyphItemInternal|TemplateInternal|  
+    |GlyphGroupTemplate|GlyphItemFriend|TemplateInternal|  
+    |GlyphGroupTemplate|GlyphItemProtected|TemplateProtected|  
+    |GlyphGroupTemplate|GlyphItemPrivate|TemplatePrivate|  
+    |GlyphGroupTemplate|GlyphItemShortcut|TemplateShortcut|  
+    |GlyphGroupTypedef|GlyphItemPublic|TypeDefinitionPublic|  
+    |GlyphGroupTypedef|GlyphItemInternal|TypeDefinitionInternal|  
+    |GlyphGroupTypedef|GlyphItemFriend|TypeDefinitionInternal|  
+    |GlyphGroupTypedef|GlyphItemProtected|TypeDefinitionProtected|  
+    |GlyphGroupTypedef|GlyphItemPrivate|TypeDefinitionPrivate|  
+    |GlyphGroupTypedef|GlyphItemShortcut|TypeDefinitionShortcut|  
+    |GlyphGroupType|GlyphItemPublic|TypePublic|  
+    |GlyphGroupType|GlyphItemInternal|TypeInternal|  
+    |GlyphGroupType|GlyphItemFriend|TypeInternal|  
+    |GlyphGroupType|GlyphItemProtected|TypeProtected|  
+    |GlyphGroupType|GlyphItemPrivate|TypePrivate|  
+    |GlyphGroupType|GlyphItemShortcut|TypeShortcut|  
+    |GlyphGroupUnion|GlyphItemPublic|UnionPublic|  
+    |GlyphGroupUnion|GlyphItemInternal|UnionInternal|  
+    |GlyphGroupUnion|GlyphItemFriend|UnionInternal|  
+    |GlyphGroupUnion|GlyphItemProtected|UnionProtected|  
+    |GlyphGroupUnion|GlyphItemPrivate|UnionPrivate|  
+    |GlyphGroupUnion|GlyphItemShortcut|UnionShortcut|  
+    |GlyphGroupVariable|GlyphItemPublic|FieldPublic|  
+    |GlyphGroupVariable|GlyphItemInternal|FieldInternal|  
+    |GlyphGroupVariable|GlyphItemFriend|FieldInternal|  
+    |GlyphGroupVariable|GlyphItemProtected|FieldProtected|  
+    |GlyphGroupVariable|GlyphItemPrivate|FieldPrivate|  
+    |GlyphGroupVariable|GlyphItemShortcut|FieldShortcut|  
+    |GlyphGroupValueType|GlyphItemPublic|ValueTypePublic|  
+    |GlyphGroupValueType|GlyphItemInternal|ValueTypeInternal|  
+    |GlyphGroupValueType|GlyphItemFriend|ValueTypeInternal|  
+    |GlyphGroupValueType|GlyphItemProtected|ValueTypeProtected|  
+    |GlyphGroupValueType|GlyphItemPrivate|ValueTypePrivate|  
+    |GlyphGroupValueType|GlyphItemShortcut|ValueTypeShortcut|  
+    |GlyphGroupIntrinsic|GlyphItemPublic|ObjectPublic|  
+    |GlyphGroupIntrinsic|GlyphItemInternal|ObjectInternal|  
+    |GlyphGroupIntrinsic|GlyphItemFriend|ObjectInternal|  
+    |GlyphGroupIntrinsic|GlyphItemProtected|ObjectProtected|  
+    |GlyphGroupIntrinsic|GlyphItemPrivate|ObjectPrivate|  
+    |GlyphGroupIntrinsic|GlyphItemShortcut|ObjectShortcut|  
+    |GlyphGroupJSharpMethod|GlyphItemPublic|MethodPublic|  
+    |GlyphGroupJSharpMethod|GlyphItemInternal|MethodInternal|  
+    |GlyphGroupJSharpMethod|GlyphItemFriend|MethodInternal|  
+    |GlyphGroupJSharpMethod|GlyphItemProtected|MethodProtected|  
+    |GlyphGroupJSharpMethod|GlyphItemPrivate|MethodPrivate|  
+    |GlyphGroupJSharpMethod|GlyphItemShortcut|MethodShortcut|  
+    |GlyphGroupJSharpField|GlyphItemPublic|FieldPublic|  
+    |GlyphGroupJSharpField|GlyphItemInternal|FieldInternal|  
+    |GlyphGroupJSharpField|GlyphItemFriend|FieldInternal|  
+    |GlyphGroupJSharpField|GlyphItemProtected|FieldProtected|  
+    |GlyphGroupJSharpField|GlyphItemPrivate|FieldPrivate|  
+    |GlyphGroupJSharpField|GlyphItemShortcut|FieldShortcut|  
+    |GlyphGroupJSharpClass|GlyphItemPublic|ClassPublic|  
+    |GlyphGroupJSharpClass|GlyphItemInternal|ClassInternal|  
+    |GlyphGroupJSharpClass|GlyphItemFriend|ClassInternal|  
+    |GlyphGroupJSharpClass|GlyphItemProtected|ClassProtected|  
+    |GlyphGroupJSharpClass|GlyphItemPrivate|ClassPrivate|  
+    |GlyphGroupJSharpClass|GlyphItemShortcut|ClassShortcut|  
+    |GlyphGroupJSharpNamespace|GlyphItemPublic|NamespacePublic|  
+    |GlyphGroupJSharpNamespace|GlyphItemInternal|NamespaceInternal|  
+    |GlyphGroupJSharpNamespace|GlyphItemFriend|NamespaceInternal|  
+    |GlyphGroupJSharpNamespace|GlyphItemProtected|NamespaceProtected|  
+    |GlyphGroupJSharpNamespace|GlyphItemPrivate|NamespacePrivate|  
+    |GlyphGroupJSharpNamespace|GlyphItemShortcut|NamespaceShortcut|  
+    |GlyphGroupJSharpInterface|GlyphItemPublic|InterfacePublic|  
+    |GlyphGroupJSharpInterface|GlyphItemInternal|InterfaceInternal|  
+    |GlyphGroupJSharpInterface|GlyphItemFriend|InterfaceInternal|  
+    |GlyphGroupJSharpInterface|GlyphItemProtected|InterfaceProtected|  
+    |GlyphGroupJSharpInterface|GlyphItemPrivate|InterfacePrivate|  
+    |GlyphGroupJSharpInterface|GlyphItemShortcut|InterfaceShortcut|  
+    |GlyphGroupError||StatusError|  
+    |GlyphBscFile||ClassFile|  
+    |GlyphAssembly||參考資料|  
+    |GlyphLibrary||程式庫|  
+    |GlyphVBProject||VBProjectNode|  
+    |GlyphCoolProject||CSProjectNode|  
+    |GlyphCppProject||CPPProjectNode|  
+    |GlyphDialogId||對話方塊|  
+    |GlyphOpenFolder||FolderOpened|  
+    |GlyphClosedFolder||FolderClosed|  
+    |GlyphArrow||GoToNext|  
+    |GlyphCSharpFile||CSFileNode|  
+    |GlyphCSharpExpansion||程式碼片段|  
+    |GlyphKeyword||IntellisenseKeyword|  
+    |GlyphInformation||StatusInformation|  
+    |GlyphReference||ClassMethodReference|  
+    |GlyphRecursion||遞迴|  
+    |GlyphXmlItem||標記|  
+    |GlyphJSharpProject||DocumentCollection|  
+    |GlyphJSharpDocument||文件|  
+    |GlyphForwardType||GoToNext|  
+    |GlyphCallersGraph||CallTo|  
+    |GlyphCallGraph||CallFrom|  
+    |GlyphWarning||StatusWarning|  
+    |GlyphMaybeReference||QuestionMark|  
+    |GlyphMaybeCaller||CallTo|  
+    |GlyphMaybeCall||CallFrom|  
+    |GlyphExtensionMethod||ExtensionMethod|  
+    |GlyphExtensionMethodInternal||ExtensionMethod|  
+    |GlyphExtensionMethodFriend||ExtensionMethod|  
+    |GlyphExtensionMethodProtected||ExtensionMethod|  
+    |GlyphExtensionMethodPrivate||ExtensionMethod|  
+    |GlyphExtensionMethodShortcut||ExtensionMethod|  
+    |GlyphXmlAttribute||XmlAttribute|  
+    |GlyphXmlChild||XmlElement|  
+    |GlyphXmlDescendant||XmlDescendant|  
+    |GlyphXmlNamespace||XmlNamespace|  
+    |GlyphXmlAttributeQuestion||XmlAttributeLowConfidence|  
+    |GlyphXmlAttributeCheck||XmlAttributeHighConfidence|  
+    |GlyphXmlChildQuestion||XmlElementLowConfidence|  
+    |GlyphXmlChildCheck||XmlElementHighConfidence|  
+    |GlyphXmlDescendantQuestion||XmlDescendantLowConfidence|  
+    |GlyphXmlDescendantCheck||XmlDescendantHighConfidence|  
+    |GlyphCompletionWarning||IntellisenseWarning|

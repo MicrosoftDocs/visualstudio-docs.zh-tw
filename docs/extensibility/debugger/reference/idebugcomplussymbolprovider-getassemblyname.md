@@ -6,17 +6,20 @@ helpviewer_keywords:
 - IDebugComPlusSymbolProvider::GetAssemblyName
 - GetAssemblyName
 ms.assetid: a08cd609-b9b9-47bd-bf73-cbf851285907
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 491e3cbb2003dc293f41a207ab7ae13a7e76cc68
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: bbb3ca2fa998cfdb362c985edb7406ca623e2f89
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56692303"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66336975"
 ---
 # <a name="idebugcomplussymbolprovidergetassemblyname"></a>IDebugComPlusSymbolProvider::GetAssemblyName
 擷取其模組和應用程式定義域的組件名稱。
@@ -39,18 +42,15 @@ int GetAssemblyName(
 );
 ```
 
-#### <a name="parameters"></a>參數
-`ulAppDomainID`
+## <a name="parameters"></a>參數
+`ulAppDomainID`\
+[in]應用程式定義域的識別項。
 
- [in]應用程式定義域的識別項。
+`guidModule`\
+[in]模組的唯一識別碼。
 
-`guidModule`
-
- [in]模組的唯一識別碼。
-
-`pbstrName`
-
- [out]傳回組件的名稱。
+`pbstrName`\
+[out]傳回組件的名稱。
 
 ## <a name="return-value"></a>傳回值
 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

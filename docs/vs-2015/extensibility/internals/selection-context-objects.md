@@ -1,27 +1,22 @@
 ---
 title: 選取內容物件 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - selection, tracking
 - selection, context objects
 ms.assetid: 7308ea8f-a42c-47e5-954e-7dee933dce7a
 caps.latest.revision: 14
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: beaf1b9c67cdad3237d1ac48b4a8e464b0a203a7
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 7e1a43997d56f8d89f194fb83d20c1f160378873
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51769403"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68187426"
 ---
 # <a name="selection-context-objects"></a>選取項目內容物件
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -40,11 +35,11 @@ ms.locfileid: "51769403"
   
   下列順序顯示選取項目追蹤的一般程。  
   
-1.  IDE 會擷取新開啟的視窗中的選取項目內容，並將它放在全域範圍內容。 如果選取範圍內容使用 HIERARCHY_DONTPROPAGATE 或 SELCONTAINER_DONTPROPAGATE，該資訊不會傳播至全球的內容。 如需詳細資訊，請參閱 <<c0> [ 使用者的意見反應](../../extensibility/internals/feedback-to-the-user.md)。  
+1. IDE 會擷取新開啟的視窗中的選取項目內容，並將它放在全域範圍內容。 如果選取範圍內容使用 HIERARCHY_DONTPROPAGATE 或 SELCONTAINER_DONTPROPAGATE，該資訊不會傳播至全球的內容。 如需詳細資訊，請參閱 <<c0> [ 使用者的意見反應](../../extensibility/internals/feedback-to-the-user.md)。  
   
-2.  通知事件會廣播到任何要求它們的 VSPackage。  
+2. 通知事件會廣播到任何要求它們的 VSPackage。  
   
-3.  VSPackage 是藉由執行活動，例如更新的階層架構中，然後再重新啟動一項工具或其他類似工作收到的事件。  
+3. VSPackage 是藉由執行活動，例如更新的階層架構中，然後再重新啟動一項工具或其他類似工作收到的事件。  
   
 ## <a name="see-also"></a>另請參閱  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackSelectionEx>   
@@ -52,4 +47,3 @@ ms.locfileid: "51769403"
  [在 Visual Studio 中的階層](../../extensibility/internals/hierarchies-in-visual-studio.md)   
  [選取項目及在 IDE 中的貨幣](../../extensibility/internals/selection-and-currency-in-the-ide.md)   
  [專案類型](../../extensibility/internals/project-types.md)
-

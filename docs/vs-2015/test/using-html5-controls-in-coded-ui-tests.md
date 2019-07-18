@@ -8,12 +8,12 @@ ms.assetid: 2000b214-ae92-4334-b549-aa0eb4f45fe1
 caps.latest.revision: 19
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b13b8af221e317461f68a793e9b84420cd5dab48
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MTE95
+ms.openlocfilehash: 8b08853937be3f11913f88293633b02f3636898c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57867896"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439719"
 ---
 # <a name="using-html5-controls-in-coded-ui-tests"></a>在自動程式化 UI 測試中使用 HTML5 控制項
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,27 +22,27 @@ ms.locfileid: "57867896"
   
  **需求**  
   
--   Visual Studio 企業版  
+- Visual Studio 企業版  
   
 > [!WARNING]
->  在 Internet Explorer 10 之前的版本，可以在相較於 Internet Explorer 處理序更高的權限層級中，執行自動程式碼 UI 測試。 在 Internet Explorer 10 執行自動程式碼 UI 測試時，自動程式碼 UI 測試和 Internet Explorer 程序必須是相同的權限層級。 這是因為 Internet Explorer 10 中的 AppContainer 功能更安全。  
+> 在 Internet Explorer 10 之前的版本，可以在相較於 Internet Explorer 處理序更高的權限層級中，執行自動程式碼 UI 測試。 在 Internet Explorer 10 執行自動程式碼 UI 測試時，自動程式碼 UI 測試和 Internet Explorer 程序必須是相同的權限層級。 這是因為 Internet Explorer 10 中的 AppContainer 功能更安全。  
   
 > [!WARNING]
->  如果您在 Internet Explorer 10 中建立自動程式碼 UI 測試，可能無法使用 Internet Explorer 9 或 Internet Explorer 8 執行。 這是因為 Internet Explorer 10 包含 HTML5 控制項，例如 Audio、Video、ProgressBar 和 Slider。 Internet Explorer 9 或 Internet Explorer 8 無法辨識這些 HTML5 控制項。 同樣地，使用 Internet Explorer 9 的自動程式碼 UI 測試可能包含一些 Internet Explorer 8 無法辨識的 HTML5 控制項。  
+> 如果您在 Internet Explorer 10 中建立自動程式碼 UI 測試，可能無法使用 Internet Explorer 9 或 Internet Explorer 8 執行。 這是因為 Internet Explorer 10 包含 HTML5 控制項，例如 Audio、Video、ProgressBar 和 Slider。 Internet Explorer 9 或 Internet Explorer 8 無法辨識這些 HTML5 控制項。 同樣地，使用 Internet Explorer 9 的自動程式碼 UI 測試可能包含一些 Internet Explorer 8 無法辨識的 HTML5 控制項。  
   
 ## <a name="supported-html5-controls"></a>支援的 HTML5 控制項  
  自動程式化 UI 測試包括記錄、播放和驗證下列 HTML5 控制項的支援：  
   
--   [音訊控制項](#audio-control)  
+- [音訊控制項](#audio-control)  
   
--   [視訊控制項](#video-control)  
+- [視訊控制項](#video-control)  
   
--   [滑桿](#slider)  
+- [滑桿](#slider)  
   
--   [ProgressBar](#progressbar)  
+- [ProgressBar](#progressbar)  
   
 ### <a name="audio-control"></a>音訊控制項  
- **音訊控制項：** 正確記錄和播放 HTML5 Audio 控制項上的動作。  
+ **音訊控制項：** 正確錄製和播放 HTML5 音訊控制項上的動作。  
   
  ![HTML5 Audio 控制項](../test/media/codedui-html5-audio.png)  
   
@@ -76,15 +76,15 @@ string Src
 string Volume  
 ```  
   
- **搜尋屬性：**`HtmlAudio` 的搜尋屬性是 `Id`、`Name` 和 `Title`。  
+ **搜尋屬性：**`HtmlAudio` 的搜尋屬性為 `Id`、`Name` 和 `Title`。  
   
- **篩選屬性：**`HtmlAudio` 的篩選屬性是 `Src`、`Class`、`ControlDefinition` 和 `TagInstance`。  
+ **篩選屬性：**`HtmlAudio` 的篩選屬性為 `Src`、`Class`、`ControlDefinition` 和 `TagInstance`。  
   
 > [!NOTE]
->  搜尋和暫停的時間量可以很大。 在播放時，自動程式碼 UI 測試會等到 `(TimeSpan)` 中指定的時間才暫停音訊。 如果因為某些特殊情況，已經過所指定的時間才按下 [暫停] 命令，就會擲回例外狀況。  
+> 搜尋和暫停的時間量可以很大。 在播放時，自動程式碼 UI 測試會等到 `(TimeSpan)` 中指定的時間才暫停音訊。 如果因為某些特殊情況，已經過所指定的時間才按下 [暫停] 命令，就會擲回例外狀況。  
   
 ### <a name="video-control"></a>視訊控制項  
- **視訊控制項：** 正確記錄和播放 HTML5 Video 控制項上的動作。  
+ **視訊控制項：** 正確錄製和播放 HTML5 視訊控制項上的動作。  
   
  ![HTML5 Video 控制項](../test/media/codedui-html5-video.png)  
   
@@ -106,15 +106,15 @@ string VideoWidth
   
 ```  
   
- **搜尋屬性：**`HtmlVideo` 的搜尋屬性是 `Id`、`Name` 和 `Title`。  
+ **搜尋屬性：**`HtmlVideo` 的搜尋屬性為 `Id`、`Name` 和 `Title`。  
   
- **篩選屬性：**`HtmlVideo` 的篩選屬性是 `Src`、`Poster`、`Class`、`ControlDefinition` 和 `TagInstance`。  
+ **篩選屬性：**`HtmlVideo` 的篩選屬性為 `Src`、`Poster`、`Class`、`ControlDefinition` 和 `TagInstance`。  
   
 > [!NOTE]
->  如果您使用 -30s 或 +30s 標籤倒轉或向前快轉視訊時，會彙總以搜尋至適當的時間。  
+> 如果您使用 -30s 或 +30s 標籤倒轉或向前快轉視訊時，會彙總以搜尋至適當的時間。  
   
 ### <a name="slider"></a>滑桿  
- **滑桿控制項：** 正確記錄和播放 HTML5 Slider 控制項上的動作。  
+ **滑桿控制項：** 正確錄製和播放 HTML5 Slider 控制項上的動作。  
   
  ![HTML5 滑桿控制項](../test/media/codedui-html5-slider.png)  
   

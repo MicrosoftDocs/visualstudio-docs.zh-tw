@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: cd7ea5df54d1ef740feddaeb5fbedbc9b9a42fd4
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.openlocfilehash: 6f227a7948f5a842120341432c03747119988ddf
+ms.sourcegitcommit: aeb1a1135dd789551e15aa5124099a5fe3f0f32b
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55943112"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66501067"
 ---
 # <a name="create-a-database-and-add-tables-in-visual-studio"></a>建立資料庫，並在 Visual Studio 中新增資料表
 
@@ -26,11 +26,23 @@ ms.locfileid: "55943112"
 
 ## <a name="prerequisites"></a>必要條件
 
-若要完成此逐步解說中，您必須擁有選擇性**資料儲存和處理**安裝 Visual Studio 中的工作負載。 若要安裝，請開啟**Visual Studio 安裝程式**，然後選擇**工作負載** 索引標籤。底下**Web 和雲端**，選擇**資料儲存和處理**。 選擇**修改**按鈕以新增至 Visual Studio 的工作負載。
+若要完成此逐步解說中，您必須擁有選擇性**資料儲存和處理**安裝 Visual Studio 中的工作負載。 若要安裝，請開啟**Visual Studio 安裝程式**，然後選擇 **修改**或是**詳細** > **修改**旁邊的版本您想要修改的 visual Studio。
+
+::: moniker range=">=vs-2019"
+
+上**工作負載**索引標籤之下**其他工具組**，選擇 **資料儲存和處理**，然後按一下**修改**新增的工作負載Visual Studio。
+
+::: moniker-end
+
+::: moniker range="=vs-2017"
+
+上**工作負載**索引標籤之下**Web 與雲端**，選擇 **資料儲存和處理**，然後按一下**修改**新增的工作負載Visual Studio。
+
+::: moniker-end
 
 ## <a name="create-a-project-and-a-local-database-file"></a>建立專案和本機資料庫檔案
 
-1. 建立名為 **SampleDatabaseWalkthrough** 的 Windows Forms 專案。
+1. 建立新**Windows Forms 應用程式**專案，並命名**SampleDatabaseWalkthrough**。
 
 2. 在功能表列上選取**專案** > **加入新項目**。
 
@@ -38,7 +50,7 @@ ms.locfileid: "55943112"
 
      ![項目範本對話方塊](../data-tools/media/raddata-vsitemtemplates.png)
 
-4. 為資料庫命名**命名為 SampleDatabase**，然後選取**新增** 按鈕。
+4. 為資料庫命名**命名為 SampleDatabase**，然後按一下**新增**。
 
 ### <a name="add-a-data-source"></a>新增資料來源
 
@@ -46,25 +58,25 @@ ms.locfileid: "55943112"
 
 1. 在 **資料來源**視窗中，選取**加入新的資料來源**連結。
 
-   [資料來源組態精靈] 隨即開啟。
+   [資料來源組態精靈]  隨即開啟。
 
-1. 在 [**選擇資料來源類型**頁面上，選擇**資料庫**，然後選擇**下一步]**。
+1. 在 [**選擇資料來源類型**頁面上，選擇**資料庫**，然後選擇**下一步]** 。
 
 1. 在 [**選擇資料庫模型**頁面上，選擇**下一步]** 接受預設值 （資料集）。
 
-1. 在 [**選擇資料連接**頁面上，選取**SampleDatabase.mdf**在下拉式清單中，檔案，然後選擇**下一步]**。
+1. 在 [**選擇資料連接**頁面上，選取**SampleDatabase.mdf**在下拉式清單中，檔案，然後選擇**下一步]** 。
 
-1. 在 [**儲存連接字串儲存到應用程式組態檔**頁面上，選擇**下一步]**。
+1. 在 [**儲存連接字串儲存到應用程式組態檔**頁面上，選擇**下一步]** 。
 
-1. 一**選擇您的資料庫物件** 頁面上，您會看到訊息指出資料庫不包含任何物件。 選擇 [完成]。
+1. 一**選擇您的資料庫物件** 頁面上，您會看到訊息指出資料庫不包含任何物件。 選擇 [完成]  。
 
 ### <a name="view-properties-of-the-data-connection"></a>檢視的資料連接屬性
 
 您可以檢視連接字串*SampleDatabase.mdf*開啟資料連接的 [屬性] 視窗的檔案：
 
-- 在 Visual Studio 中，選取**檢視** > **SQL Server 物件總管**如果視窗尚未開啟。 開啟 [屬性] 視窗，展開**資料連接**節點，開啟捷徑功能表*SampleDatabase.mdf*，然後選取**屬性**。
+- 選取 **檢視** > **SQL Server 物件總管**以開啟**SQL Server 物件總管**視窗。 依序展開 **(localdb) \MSSQLLocalDB** > **資料庫**，然後按一下滑鼠右鍵上*SampleDatabase.mdf* ，然後選取**屬性**.
 
-- 或者，您可以選取**檢視** > **伺服器總管**，如果視窗尚未開啟。 開啟 [屬性] 視窗，展開**資料連接**節點。 開啟捷徑功能表*SampleDatabase.mdf*，然後選取**屬性**。
+- 或者，您可以選取**檢視** > **伺服器總管**，如果視窗尚未開啟。 開啟 [屬性] 視窗，展開**資料連接**節點，開啟捷徑功能表*SampleDatabase.mdf*，然後選取**屬性**。
 
 ## <a name="create-tables-and-keys-by-using-table-designer"></a>使用資料表設計工具中建立資料表和索引鍵
 
@@ -72,11 +84,11 @@ ms.locfileid: "55943112"
 
 ### <a name="create-the-customers-table"></a>建立 「 客戶 」 資料表
 
-1. 中**伺服器總管**或**SQL Server 物件總管**，展開**資料連接** 節點，然後展開**SampleDatabase.mdf**節點。
+1. 在**伺服器總管**，展開**資料連接**節點，然後展開**SampleDatabase.mdf**節點。
 
 2. 開啟捷徑功能表**資料表**，然後選取**加入新的資料表**。
 
-     [資料表設計工具] 隨即開啟並顯示含有一個預設列的格線，這表示您要建立的資料表中的單一資料行。 藉由在格線中加入資料列，您就是在資料表中加入資料行。
+     [資料表設計工具]  隨即開啟並顯示含有一個預設列的格線，這表示您要建立的資料表中的單一資料行。 藉由在格線中加入資料列，您就是在資料表中加入資料行。
 
 3. 在格線中，為下列每一個項目加入一個資料列：
 
@@ -101,9 +113,9 @@ ms.locfileid: "55943112"
 
     ![資料表設計工具](../data-tools/media/raddata-table-designer.png)
 
-7. 在左上角**資料表設計工具**，選取**更新** 按鈕。
+7. 在左上角**資料表設計工具**，選取**更新**。
 
-8. 在 [**預覽資料庫更新**對話方塊中，選取**更新資料庫**] 按鈕。
+8. 在 **預覽資料庫更新**對話方塊中，選取**更新資料庫**。
 
     您所做的變更會儲存到本機資料庫檔案中。
 
@@ -138,7 +150,7 @@ ms.locfileid: "55943112"
 
      ![在資料表設計工具中加入外部索引鍵](../data-tools/media/foreignkey.png)
 
-2. 在出現的文字方塊中，以 [Customers] 取代 [ToTable]。
+2. 在出現的文字方塊中，以 [Customers]  取代 [ToTable]  。
 
 3. 在 [T-SQL] 窗格中，更新最後一行以符合下面範例：
 

@@ -1,14 +1,9 @@
 ---
-title: Ca2211： 非常數欄位不應該為可見 |Microsoft Docs
-ms.custom: ''
+title: CA2211:非常數欄位不應該為可見 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA2211
 - NonConstantFieldsShouldNotBeVisible
@@ -20,14 +15,14 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 62c3ee28a3b7cbb9bef864483e254dda5f63bfae
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 48d1a449301c422aa457346d1eb3d48d2f395f2a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49894245"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68142490"
 ---
-# <a name="ca2211-non-constant-fields-should-not-be-visible"></a>CA2211：非常數欄位不應該為可見的
+# <a name="ca2211-non-constant-fields-should-not-be-visible"></a>CA2211:非常數欄位不應該為可見的
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -54,6 +49,3 @@ ms.locfileid: "49894245"
 
  [!code-csharp[FxCop.Usage.AvoidStaticNonConstants#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.AvoidStaticNonConstants/cs/FxCop.Usage.AvoidStaticNonConstants.cs#1)]
  [!code-vb[FxCop.Usage.AvoidStaticNonConstants#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Usage.AvoidStaticNonConstants/vb/FxCop.Usage.AvoidStaticNonConstants.vb#1)]
-
-
-

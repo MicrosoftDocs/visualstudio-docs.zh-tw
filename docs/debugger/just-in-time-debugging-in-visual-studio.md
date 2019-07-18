@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8c848281a89213a216bd8ec3ac1e651b6dfc32e4
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56796409"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62905709"
 ---
 # <a name="disable-the-just-in-time-debugger"></a>停用 Just-In-Time 偵錯工具
 
@@ -32,7 +32,7 @@ Just-In-Time 偵錯工具可讓您啟動 Visual Studio 偵錯錯誤的選項。 
 
 - 如果您想要執行 web 應用程式，停用指令碼偵錯：
 
-  在 Windows**控制台中** > **網路和網際網路** > **網際網路選項**，選取**停用指令碼偵錯 （Internet Explorer)** 並**停用指令碼除錯 （其他）**。 確切步驟和設定這需視您的 Windows 和您的瀏覽器版本而定。
+  在 Windows**控制台中** > **網路和網際網路** > **網際網路選項**，選取**停用指令碼偵錯 （Internet Explorer)** 並**停用指令碼除錯 （其他）** 。 確切步驟和設定這需視您的 Windows 和您的瀏覽器版本而定。
 
   ![JIT 網際網路選項](../debugger/media/jitinternetoptions.png "JIT 網際網路選項")
 

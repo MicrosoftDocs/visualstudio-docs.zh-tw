@@ -5,24 +5,24 @@ ms.topic: conceptual
 helpviewer_keywords:
 - expression evaluation, context
 ms.assetid: a2fd3758-09bd-45ae-8ecc-2d276c0036ba
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 498287f11361a57e969af3102e31d881cb0350bd
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: efaa678b5cbee763fabc9ccaf82c9322176b9102
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56688377"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66315228"
 ---
 # <a name="expression-evaluation-context"></a>運算式評估內容
 在 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]偵錯**運算式評估內容**:
 
--   表示運算式評估的內容。 通常，評估內容會對應至在其中評估變數、 參數、 函數和方法的語彙範圍。 比方說，堆疊框架相關聯的運算式評估內容將提供的內容，來評估區域變數、 方法參數和類別成員 （如果適用）。
+- 表示運算式評估的內容。 通常，評估內容會對應至在其中評估變數、 參數、 函數和方法的語彙範圍。 比方說，堆疊框架相關聯的運算式評估內容將提供的內容，來評估區域變數、 方法參數和類別成員 （如果適用）。
 
--   當程式已經在中斷點停止時，就會存在。 運算式本身是資料結構，表示剖析的運算式，供繫結和指定的內容內評估。
+- 當程式已經在中斷點停止時，就會存在。 運算式本身是資料結構，表示剖析的運算式，供繫結和指定的內容內評估。
 
      在詳細資料，運算式會建立使用[ParseText](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md)方法。 評估運算式時，它會產生可列印的字串，包含名稱和類型的變數或引數，而其值。 在 [監看式] 視窗或 IDE 的 [區域變數] 視窗中，會顯示這個字串。
 

@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fee9738cfce003ef19d311856304d87f6a4b2f15
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ce46f1db900aa5c37b49a1cc228290d7d99d29a2
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55918906"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62949535"
 ---
 # <a name="how-to-use-the-expression-editor"></a>HOW TO：使用運算式編輯器
 
@@ -36,18 +36,18 @@ ms.locfileid: "55918906"
 
 ## <a name="use-the-expression-editor"></a>使用運算式編輯器
 
-1.  在 Visual Studio 中開啟新的或現有的工作流程專案。
+1. 在 Visual Studio 中開啟新的或現有的工作流程專案。
 
-2.  將活動加入至工作流程，例如 <xref:System.Activities.Statements.Assign> 活動。
+2. 將活動加入至工作流程，例如 <xref:System.Activities.Statements.Assign> 活動。
 
     > [!NOTE]
     > 許多工作流程活動都有運算式編輯器。 在變數設計工具、引數設計工具及動態引數設計工具中，也會出現運算式 TextBlock， 而 <xref:System.Activities.Statements.Assign> 活動會用來做為範例。
 
-3.  在 <xref:System.Activities.Statements.Assign> 活動的活動設計工具中，按一下左方的運算式編輯器。
+3. 在 <xref:System.Activities.Statements.Assign> 活動的活動設計工具中，按一下左方的運算式編輯器。
 
-     灰色浮水印字串**\<至 >** 並**\<輸入 VB 運算式 >** 是預設值的文字字串中的運算式編輯器<xref:System.Activities.Statements.Assign>活動。
+     灰色浮水印字串 **\<至>** 並 **\<輸入VB運算式>** 是預設值的文字字串中的運算式編輯器<xref:System.Activities.Statements.Assign>活動。
 
-4.  輸入您的運算式。 如果您輸入字串，請務必以引號包圍字串。 如果您選擇將運算式引數繫結至某個變數，請勿加引號。
+4. 輸入您的運算式。 如果您輸入字串，請務必以引號包圍字串。 如果您選擇將運算式引數繫結至某個變數，請勿加引號。
 
      當您完成時，選取區域或區域外部運算式編輯器的焦點轉移到另一個組件的設計工具。 將焦點轉移可讓編譯器驗證運算式，如先前所述。
 

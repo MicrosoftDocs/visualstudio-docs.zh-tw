@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a355930734bfb122a088fb20817b3318a365cc63
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: MTE95
+ms.openlocfilehash: 8b34e23b1bc7972563d6d8d014ba0728dc637b34
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54961711"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66262137"
 ---
 # <a name="debugging-techniques-and-tools-to-help-you-write-better-code"></a>偵錯技術和工具，可協助您撰寫更好的程式碼
 
@@ -34,7 +34,7 @@ ms.locfileid: "54961711"
 
 * 使用偵錯工具的時機
 
-為了示範這些工作，我們會示範幾個最常見的錯誤和嘗試偵錯您的應用程式時，將會遇到的錯誤類型。 雖然程式碼範例C#，提供的概念性資訊是廣泛適用於 c + +、 Visual Basic、 JavaScript、 Visual Studio 其他語言支援 （除了註明）。 螢幕擷取畫面則使用 C# 表示。
+為了示範這些工作，我們會示範幾個最常見的錯誤和嘗試偵錯您的應用程式時，將會遇到的錯誤類型。 雖然程式碼範例C#，提供的概念性資訊是廣泛適用於C++，Visual Basic、 JavaScript 和 Visual Studio （除了註明） 支援其他語言。 螢幕擷取畫面則使用 C# 表示。
 
 ## <a name="create-a-sample-app-with-some-bugs-and-errors-in-it"></a>建立一些錯誤和錯誤中的範例應用程式
 
@@ -42,10 +42,10 @@ ms.locfileid: "54961711"
 
 建立應用程式：
 
-1. 開啟 Visual Studio，然後選擇**檔案 > 新增專案**。 底下**Visual C#** ，選擇**Windows 桌面**或是 **.NET Core**，然後在中間窗格選擇**主控台應用程式**。
+1. 開啟 Visual Studio，然後選擇**檔案** > **新增** > **專案**。 底下**Visual C#** ，選擇**Windows 桌面**或是 **.NET Core**，然後在中間窗格選擇**主控台應用程式**。
 
     > [!NOTE]
-    > 如果您沒有看到 [主控台應用程式] 專案範本，請在 [新增專案] 對話方塊的左窗格中，按一下 [開啟 Visual Studio 安裝程式] 連結。 Visual Studio 安裝程式即會啟動。 選擇 [.NET 桌面開發] (或 [.NET Core 跨平台開發]) 工作負載，然後選擇 [修改]。
+    > 如果您沒有看到 [主控台應用程式]  專案範本，請在 [新增專案]  對話方塊的左窗格中，按一下 [開啟 Visual Studio 安裝程式]  連結。 Visual Studio 安裝程式即會啟動。 選擇 [.NET 桌面開發]  (或 [.NET Core 跨平台開發]  ) 工作負載，然後選擇 [修改]  。
 
 2. 在 **名稱**欄位中，輸入**Console_Parse_JSON**然後按一下**確定**。 Visual Studio 會建立專案。
 
@@ -241,7 +241,7 @@ item.totalpoints += users[i].points;
 
 當您已修正所有紅色的波浪線和解決，或至少調查-所有綠色波浪線，您已準備好開始偵錯工具，並執行應用程式。
 
-按下 **F5** ([偵錯] > [開始偵錯]) 或在偵錯工具列中按下 [開始偵錯] 按鈕 ![開始偵錯](../debugger/media/dbg-tour-start-debugging.png "開始偵錯")。
+按下 **F5** ([偵錯] > [開始偵錯]  ) 或在偵錯工具列中按下 [開始偵錯]  按鈕 ![開始偵錯](../debugger/media/dbg-tour-start-debugging.png "開始偵錯")。
 
 到目前為止，範例應用程式會擲回`SerializationException`例外狀況 （執行階段錯誤）。 也就是您應用程式可以在它嘗試要序列化的資料。 因為您在偵錯模式 （附加偵錯工具） 中啟動應用程式，則偵錯工具的例外狀況協助程式會帶您前往擲回例外狀況，並提供您很有幫助的錯誤訊息的程式碼的權限。
 
@@ -294,13 +294,13 @@ A`try/catch`區塊有一些效能成本，因此您只會想要使用它們時�
     }
     ```
 
-* 對於您在您的應用程式，expecially 中包含這些外部資料 （例如 web 要求） 互動的熟悉函式，檢查以查看哪些例外狀況的函式是可能會擲回的文件。 這可能是適當的錯誤處理和偵錯您的應用程式的重要資訊。
+* 對於您納入您的應用程式，特別是那些外部資料 （例如 web 要求） 互動的熟悉函式，檢查以查看哪些例外狀況的函式是可能會擲回的文件。 這可能是適當的錯誤處理和偵錯您的應用程式的重要資訊。
 
 範例應用程式中，修正`SerializationException`中`GetJsonData`方法，藉由變更`4o`至`40`。
 
 ## <a name="clarify-your-code-intent-by-using-assert"></a>釐清您的程式碼的目的，使用判斷提示
 
-按一下偵錯工具列中的 [重新啟動] ![重新啟動應用程式](../debugger/media/dbg-tour-restart.png "RestartApp") 按鈕 (**Ctrl** + **Shift** + **F5**)。 這會應用程式更少的步驟重新啟動。 您會看到下列輸出在主控台視窗中。
+按一下偵錯工具列中的 [重新啟動]  ![重新啟動應用程式](../debugger/media/dbg-tour-restart.png "RestartApp") 按鈕 (**Ctrl** + **Shift** + **F5**)。 這會應用程式更少的步驟重新啟動。 您會看到下列輸出在主控台視窗中。
 
 ![在輸出中的 null 值](../debugger/media/write-better-code-using-assert-null-output.png)
 
@@ -336,7 +336,7 @@ if (existingUser == false)
 
 藉由指定意圖，如此一來，您將強制執行您的需求。 這是簡單且方便的方法，您可以在開發期間使用介面的錯誤。 (`assert`陳述式也可作為單元測試中的主要項目。)
 
-按一下偵錯工具列中的 [重新啟動] ![重新啟動應用程式](../debugger/media/dbg-tour-restart.png "RestartApp") 按鈕 (**Ctrl** + **Shift** + **F5**)。
+按一下偵錯工具列中的 [重新啟動]  ![重新啟動應用程式](../debugger/media/dbg-tour-restart.png "RestartApp") 按鈕 (**Ctrl** + **Shift** + **F5**)。
 
 > [!NOTE]
 > `assert`程式碼是只有在偵錯組建。

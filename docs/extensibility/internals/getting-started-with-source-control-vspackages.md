@@ -6,17 +6,17 @@ helpviewer_keywords:
 - source control packages, getting started
 - getting started, source control packages
 ms.assetid: 049c68f4-a041-4f24-8575-4837e7f5cf3f
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6f58511f8f716e71851c727915399f18d2e1d31a
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 9c729ca3e985b2904c9a1a577065865354796112
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57872045"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66328920"
 ---
 # <a name="get-started-with-source-control-vspackages"></a>開始使用原始檔控制 Vspackage
 

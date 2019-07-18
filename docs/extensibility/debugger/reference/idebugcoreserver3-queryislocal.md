@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugCoreServer3::QueryIsLocal
 ms.assetid: cca030de-f853-4ed7-b2fb-395f08a6b884
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c5021b7ac227499ef4d3af007d68f54a1565e7f9
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 92ef0e0016027bb8e5d60ee8df070095da72d7ab
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56678527"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66343963"
 ---
 # <a name="idebugcoreserver3queryislocal"></a>IDebugCoreServer3::QueryIsLocal
 判斷伺服器是否為本機呼叫端。

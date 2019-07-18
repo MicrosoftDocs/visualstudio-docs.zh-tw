@@ -1,25 +1,20 @@
 ---
 title: Windows 偵錯工具 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 4c6fe8f1-b015-4989-bb31-72ebac390026
 caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 9a49df0f355672a3e49a61c0cfe51c02ba96e4be
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 78a81b2392959b968e8905ae33a6f0751e73f2ff
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51727140"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686762"
 ---
 # <a name="debugger-windows"></a>偵錯工具視窗
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,22 +26,22 @@ ms.locfileid: "51727140"
 |**視窗**|**熱鍵**|**請參閱主題**|  
 |中斷點|CTRL+ALT+B|[使用中斷點](../debugger/using-breakpoints.md)|  
 |例外狀況設定|CTRL+ALT+E|[使用偵錯工具管理例外狀況](../debugger/managing-exceptions-with-the-debugger.md)|  
-|輸出|CTRL+ALT+O|[輸出視窗](../ide/reference/output-window.md)|  
+|Output|CTRL+ALT+O|[輸出視窗](../ide/reference/output-window.md)|  
 |GPU 執行緒|-|[如何：使用 GPU 執行緒視窗](../debugger/how-to-use-the-gpu-threads-window.md)|  
 |工作|CTR:+SHIFT+D, K|[使用工作視窗](../debugger/using-the-tasks-window.md)|  
 |平行堆疊|CTR:+SHIFT+D, S|[使用平行堆疊視窗](../debugger/using-the-parallel-stacks-window.md)|  
 |平行監看式|CTR:+SHIFT+D, (1, 2, 3, 4)|[使用平行堆疊視窗](../debugger/using-the-parallel-stacks-window.md)|  
 |監看式|CTRL+ALT+W, (1, 2, 3, 4)|[監看式及快速監看式視窗](../debugger/watch-and-quickwatch-windows.md)|  
 |快速監看式|SHIFT+F9|[監看式及快速監看式視窗](../debugger/watch-and-quickwatch-windows.md)|  
-|自動|CTRL+ALT+V, A|[變數的 Windows](http://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)|  
-|區域變數|CTRL+ALT+V, L|[變數的 Windows](http://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)|  
+|自動|CTRL+ALT+V, A|[變數視窗](https://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)|  
+|區域變數|CTRL+ALT+V, L|[變數視窗](https://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)|  
 |即時運算|CTRL+ALT+I|[即時運算視窗](../ide/reference/immediate-window.md)|  
-|Python 互動式偵錯|SHIFT+ALT+I|[PTVS 快速入門：互動式 Python](../python/getting-started-with-ptvs-interactive-python.md)|  
-|JavaScript 主控台|CTRL+ALT+V, C|[快速入門：偵錯 JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)|  
+|Python 互動式偵錯|SHIFT+ALT+I|[PTVS 入門：互動式 Python](../python/getting-started-with-ptvs-interactive-python.md)|  
+|JavaScript 主控台|CTRL+ALT+V, C|[快速入門：針對 JavaScript 進行偵錯](../debugger/quickstart-debug-javascript-using-the-console.md)|  
 |DOM 總管|CTRL+ALT+V, D|[使用 DOM 總管偵錯配置](../debugger/debug-layout-using-dom-explorer.md)|  
 |即時視覺化樹狀結構|-|[在偵錯時檢查 XAML 屬性](../debugger/inspect-xaml-properties-while-debugging.md)|  
 |即時屬性總管|-|[在偵錯時檢查 XAML 屬性](../debugger/inspect-xaml-properties-while-debugging.md)|  
-|呼叫堆疊|CTRL+ALT+C|[如何：使用呼叫堆疊視窗](../debugger/how-to-use-the-call-stack-window.md)|  
+|呼叫堆疊|CTRL+ALT+C|[如何：使用 [呼叫堆疊] 視窗](../debugger/how-to-use-the-call-stack-window.md)|  
 |執行緒|CTRL+ALT+H|[如何：使用執行緒視窗](../debugger/how-to-use-the-threads-window.md)|  
 |模組|CTRL+ALT+U|[如何：使用模組視窗](../debugger/how-to-use-the-modules-window.md)|  
 |處理序|CTRL+ALT+Z|[偵錯執行緒和處理序](../debugger/debug-threads-and-processes.md)|  
@@ -56,8 +51,3 @@ ms.locfileid: "51727140"
   
 ## <a name="see-also"></a>另請參閱  
  [偵錯工具基礎](../debugger/debugger-basics.md)
-
-
-
-
-

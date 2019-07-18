@@ -1,5 +1,5 @@
 ---
-title: 如何：使用分析工具命令列以檢測 .NET Framework 服務並收集記憶體資料 | Microsoft Docs
+title: HOW TO：使用分析工具命令列以檢測 .NET Framework 服務並收集記憶體資料 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -9,25 +9,25 @@ caps.latest.revision: 29
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 45904463abf5d7cd420c938f58eed6f35a2831eb
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: d76eb9882eaf51de031d886c15954df8d5180e25
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54766444"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432721"
 ---
-# <a name="how-to-instrument-a-net-framework-service-and-collect-memory-data-by-using-the-profiler-command-line"></a>如何：使用程式碼剖析工具命令列以檢測 .NET Framework 服務並收集記憶體資料
+# <a name="how-to-instrument-a-net-framework-service-and-collect-memory-data-by-using-the-profiler-command-line"></a>HOW TO：檢測.NET Framework 服務並收集記憶體資料使用 Profiler 命令列
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 本主題描述如何使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 分析工具命令列工具來檢測 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 服務，並收集記憶體使用量資料。 您可以收集記憶體配置資料，或收集記憶體配置和物件存留期資料。  
 
 > [!NOTE]
->  Windows 8 和 Windows Server 2012 增強式安全性功能需要的重大變更，會以 Visual Studio 分析工具在這些平台收集資料的方式表現。 Windows 市集應用程式也需要新的資料收集技術。 請參閱 [Windows 8 和 Windows Server 2012 應用程式的效能工具](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)。  
+> Windows 8 和 Windows Server 2012 增強式安全性功能需要的重大變更，會以 Visual Studio 分析工具在這些平台收集資料的方式表現。 Windows 市集應用程式也需要新的資料收集技術。 請參閱 [Windows 8 和 Windows Server 2012 應用程式的效能工具](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)。  
 
 > [!NOTE]
->  如果某項服務無法在電腦啟動後重新啟動 (這類服務會在作業系統啟動時一併啟動)，則無法使用檢測方法來分析服務。  
+> 如果某項服務無法在電腦啟動後重新啟動 (這類服務會在作業系統啟動時一併啟動)，則無法使用檢測方法來分析服務。  
 >   
->  程式碼剖析工具的命令列工具位於 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 安裝目錄的 \Team Tools\Performance Tools 子目錄中。 在 64 位元電腦上，64 位元和 32 位元版本的工具都可以使用。 若要使用程式碼剖析工具命令列工具，必須將工具路徑加入至命令提示字元視窗的 PATH 環境變數，或將它加入至命令本身。 如需詳細資訊，請參閱[指定命令列工具的路徑](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)。  
+> 程式碼剖析工具的命令列工具位於 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 安裝目錄的 \Team Tools\Performance Tools 子目錄中。 在 64 位元電腦上，64 位元和 32 位元版本的工具都可以使用。 若要使用程式碼剖析工具命令列工具，必須將工具路徑加入至命令提示字元視窗的 PATH 環境變數，或將它加入至命令本身。 如需詳細資訊，請參閱[指定命令列工具的路徑](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)。  
 
 ## <a name="starting-the-profiling-session"></a>啟動分析工作階段  
  若要收集 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 服務的效能資料，請使用 [VSPerfCLREnv.cmd](../profiling/vsperfclrenv.md) 工具來初始化適當的環境變數，並使用 [VSInstr.exe](../profiling/vsinstr.md) 工具來建立服務二進位檔的已檢測複本。  
@@ -50,7 +50,7 @@ ms.locfileid: "54766444"
 
     **VSPerfClrEnv** {**/globaltracegc** &#124; **/globaltracegclife**}  
 
-   -   **/globaltracegc** 和 **/globaltracegclife** 會啟用記憶體配置和物件存留期資料的收集功能。  
+   - **/globaltracegc** 和 **/globaltracegclife** 會啟用記憶體配置和物件存留期資料的收集功能。  
 
        |選項|描述|  
        |------------|-----------------|  
@@ -72,7 +72,7 @@ ms.locfileid: "54766444"
      您可以使用下列任一選項搭配 **/start:sample** 選項。  
 
    > [!NOTE]
-   >  **/User** 和 **/crosssession** 選項通常是服務的必要選項。  
+   > **/User** 和 **/crosssession** 選項通常是服務的必要選項。  
 
    |                                 選項                                  |                                                                                                                                                   描述                                                                                                                                                    |
    |-------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -85,21 +85,20 @@ ms.locfileid: "54766444"
    |         [/automark](../profiling/automark.md) **:** `Interval`          |                                                                                  只能搭配 **/wincounter** 使用。 指定 Windows 效能計數器收集事件間隔的毫秒數。 預設值為 500 毫秒。                                                                                   |
    |       [/events](../profiling/events-vsperfcmd.md) **:** `Config`        |                                                                                     指定程式碼剖析期間要收集的 Windows 事件追蹤 (ETW) 事件。 ETW 事件會收集至個別的 (.etl) 檔案。                                                                                     |
 
-
 8. 視需要啟動服務。  
 
 9. 將程式碼剖析工具附加至服務。 類型：  
 
      **VSPerfCmd /attach:** `PID`&#124;`ProcessName`  
 
-    -   指定服務的處理序識別碼或處理序名稱。 您可以在 [Windows 工作管理員] 中檢視所有執行中處理序的處理序識別碼和名稱。  
+    - 指定服務的處理序識別碼或處理序名稱。 您可以在 [Windows 工作管理員] 中檢視所有執行中處理序的處理序識別碼和名稱。  
 
 ## <a name="controlling-data-collection"></a>控制資料收集  
  當服務執行時，您可以使用 **VSPerfCmd.exe** 選項開始和停止將資料寫入至檔案，以控制資料收集。 控制資料收集可讓您收集特定程式執行 (例如啟動或關閉應用程式) 的資料。  
 
 #### <a name="to-start-and-stop-data-collection"></a>開始和停止資料收集  
 
--   下列成對的 **VSPerfCmd** 選項會開始和停止資料收集。 請在個別的命令列上指定各個選項。 您可以多次開始和停止資料收集。  
+- 下列成對的 **VSPerfCmd** 選項會開始和停止資料收集。 請在個別的命令列上指定各個選項。 您可以多次開始和停止資料收集。  
 
     |選項|描述|  
     |------------|-----------------|  
@@ -112,20 +111,20 @@ ms.locfileid: "54766444"
 
 #### <a name="to-end-a-profiling-session"></a>結束程式碼剖析工作階段  
 
-1.  從服務控制管理員停止服務。  
+1. 從服務控制管理員停止服務。  
 
-2.  關閉分析工具。 類型：  
+2. 關閉分析工具。 類型：  
 
      **VSPerfCmd /shutdown**  
 
-3.  當您完成所有分析時，請清除分析環境變數。 類型：  
+3. 當您完成所有分析時，請清除分析環境變數。 類型：  
 
      **VSPerfClrEnv /globaloff**  
 
      以原始模組取代檢測過的模組。 如有必要，請重新設定服務的啟動類型。  
 
-4.  重新啟動電腦。  
+4. 重新啟動電腦。  
 
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [分析服務](../profiling/command-line-profiling-of-services.md)   
  [.NET 記憶體資料檢視](../profiling/dotnet-memory-data-views.md)

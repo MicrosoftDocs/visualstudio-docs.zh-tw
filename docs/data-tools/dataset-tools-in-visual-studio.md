@@ -47,12 +47,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 00873cd84b5a6d89469de26ed982b98d2dffa27c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.openlocfilehash: ead32426585ecd4962ccc869f470021c5d0976fe
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55935026"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821360"
 ---
 # <a name="dataset-tools-in-visual-studio"></a>Visual Studio 中的資料集工具
 
@@ -61,7 +61,7 @@ ms.locfileid: "55935026"
 
 A`DataSet`物件是基本上是小型資料庫的記憶體物件。 它包含`DataTable`， `DataColumn`，和`DataRow`物件中，您可以儲存和修改一或多個資料庫中的資料，而不需要維護的開啟連接。 資料集會維護其資料，變更的相關資訊，因此更新可以追蹤與您的應用程式變得重新連線時，傳送回資料庫。
 
-資料集和相關的類別會定義在<xref:System.Data?displayProperty=fullName>.NET Framework 類別庫中的命名空間。 您可以建立及修改資料集，以動態方式使用 ADO.NET 程式碼。 在本節中的文件會示範如何使用 Visual Studio 設計工具使用資料集。 會透過設計工具使用的資料集**TableAdapter**與資料庫互動的物件。 以程式設計方式建立的資料集使用**DataAdapter**物件。 如需以程式設計方式建立資料集的資訊，請參閱[Dataadapter 和 Datareader](/dotnet/framework/data/adonet/dataadapters-and-datareaders)。
+資料集和相關的類別會定義在<xref:System.Data?displayProperty=fullName>.NET API 中的命名空間。 您可以建立及修改資料集，以動態方式使用 ADO.NET 程式碼。 在本節中的文件會示範如何使用 Visual Studio 設計工具使用資料集。 會透過設計工具使用的資料集**TableAdapter**與資料庫互動的物件。 以程式設計方式建立的資料集使用**DataAdapter**物件。 如需以程式設計方式建立資料集的資訊，請參閱[Dataadapter 和 Datareader](/dotnet/framework/data/adonet/dataadapters-and-datareaders)。
 
 如果您的應用程式必須只從資料庫讀取資料，並不會執行更新、 新增，或刪除，您可以使用，通常取得較佳的效能`DataReader`物件擷取資料到泛型`List`物件或另一個集合物件。 如果您要顯示的資料，您可以資料繫結的使用者介面的集合。
 
@@ -75,13 +75,13 @@ Visual Studio 提供工具，以簡化使用資料集。 基本的端對端工�
 
 - 使用**TableAdapter 組態精靈**指定的查詢或預存程序可填入資料集，以及要實作哪些資料庫作業 （update、 delete 等等）。 如需詳細資訊，請參閱下列主題：
 
-    - [使用 TableAdapter 填入資料集](../data-tools/fill-datasets-by-using-tableadapters.md)
+  - [使用 TableAdapter 填入資料集](../data-tools/fill-datasets-by-using-tableadapters.md)
 
-    - [編輯資料集中的資料](../data-tools/edit-data-in-datasets.md)
+  - [編輯資料集中的資料](../data-tools/edit-data-in-datasets.md)
 
-    - [驗證資料集中的資料](../data-tools/validate-data-in-datasets.md)
+  - [驗證資料集中的資料](../data-tools/validate-data-in-datasets.md)
 
-    - [將資料儲存回資料庫](../data-tools/save-data-back-to-the-database.md)
+  - [將資料儲存回資料庫](../data-tools/save-data-back-to-the-database.md)
 
 - 查詢，並在資料集中搜尋的資料。 如需詳細資訊，請參閱 <<c0> [ 查詢資料集](../data-tools/query-datasets.md)。 [!INCLUDE[linq_dataset](../data-tools/includes/linq_dataset_md.md)] 可讓[LINQ (Language-Integrated Query)](/dotnet/csharp/linq/)中的資料<xref:System.Data.DataSet>物件。 如需詳細資訊，請參閱 [LINQ to DataSet](/dotnet/framework/data/adonet/linq-to-dataset)。
 

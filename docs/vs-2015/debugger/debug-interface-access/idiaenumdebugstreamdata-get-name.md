@@ -1,14 +1,9 @@
 ---
-title: 'Idiaenumdebugstreamdata:: Get_name |Microsoft Docs'
-ms.custom: ''
+title: IDiaEnumDebugStreamData::get_name | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: e6cf2bed-ee2b-4122-886d-c20d93df7ff2
 caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: dcac7d43caf26d8f9bde9d3c24ae54b8a3716a54
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 71dc914ef76c512605dbef75de04781459c4929d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51728858"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68198543"
 ---
 # <a name="idiaenumdebugstreamdatagetname"></a>IDiaEnumDebugStreamData::get_name
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -47,6 +42,3 @@ HRESULT get_Name ( 
   
 ## <a name="see-also"></a>另請參閱  
  [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md)
-
-
-

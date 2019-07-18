@@ -3,19 +3,19 @@ title: Python 互動式視窗 (REPL)
 description: 在 Visual Studio 中使用互動式視窗 (REPL) 快速進行 Python 程式碼開發。
 ms.date: 02/11/2019
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: f7d4b36003d097fc4750b80f62fc1267908b8c0b
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: bc813868f3284ad81849e3a03d864de65d9f54ed
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58151137"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62896892"
 ---
 # <a name="work-with-the-python-interactive-window"></a>使用 Python 互動式視窗
 
@@ -32,7 +32,7 @@ Visual Studio 有多個 Python REPL 模式可供選擇：
 | IPython | REPL 與 IPython 後端交談 | IPython 命令、Pylab 便利性 | 否 | 是，內嵌於 REPL |
 | IPython (沒有 Pylab) | REPL 與 IPython 後端交談 | 標準 IPython | 否 | 是，獨立視窗 |
 
-此文章描述**標準**和**偵錯** REPL 模式。 如需 IPython 模式的詳細資料，請參閱[使用 IPython REPL](interactive-repl-ipython.md)。
+本文章描述**標準**和**偵錯** REPL 模式。 如需 IPython 模式的詳細資料，請參閱[使用 IPython REPL](interactive-repl-ipython.md)。
 
 如需範例的詳細逐步解說 (包含與編輯器的互動，例如 **Ctrl**+**Enter**)，請參閱[教學課程步驟 3：使用互動式 REPL 視窗](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md)。
 

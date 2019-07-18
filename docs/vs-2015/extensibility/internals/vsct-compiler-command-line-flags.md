@@ -1,27 +1,22 @@
 ---
 title: VSCT 編譯器命令列旗標 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - VSCT files, compiling
 - command-table file compilation (VSCT files)
 ms.assetid: 9dc6c33f-e6cf-4cf2-9b05-e8f7bfac1cfb
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 628c9ef34fc23776672a4252886c091a38f63b4b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 98cd0ec51ead200a904baeb409551cd1084f1f11
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51734959"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440823"
 ---
 # <a name="vsct-compiler-command-line-flags"></a>VSCT 編譯器命令列旗標
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -57,7 +52,7 @@ Syntax: vsct <infile> [<outfile>] [-S[symbols file]] [-D<preprocessor-define>]*
 ```  
   
 > [!NOTE]
->  字元-(dash) 及 / （斜線） 是這兩個可接受的標記法來表示命令列參數。  
+> 字元-(dash) 及 / （斜線） 是這兩個可接受的標記法來表示命令列參數。  
   
  可接受的旗標，這些代表什麼意思如下所示。  
   
@@ -66,7 +61,7 @@ Syntax: vsct <infile> [<outfile>] [-S[symbols file]] [-D<preprocessor-define>]*
 |-D|指定任何其他已定義的符號。|  
 |-I|表示額外的 include 路徑，應在解析檔案參考時使用。|  
 |-L|指定<xref:System.Globalization.CultureInfo>文化特性名稱，例如"EN-US"。|  
-|-E|發出C#後面接著命令項目，指定的命名空間中的物件 [C&#124;H&#124;N]:*filename*，C = C#，H = c + + 標頭，N = 命名空間。 需要適用於 C# 命名空間。|  
+|-E|發出C#後面接著命令項目，指定的命名空間中的物件 [C&#124;H&#124;N]:*filename*，C = C#，H =C++標頭，N = 命名空間。 需要適用於 C# 命名空間。|  
 |-v|詳細資訊輸出。|  
   
  -L 選項會指示編譯器選取一組的字串，以產生對應到二進位檔.cto 檔指定<xref:System.Globalization.CultureInfo>文化特性名稱。 指定的文化特性名稱應該符合 [語言] 屬性的一或多個[Strings 元素](../../extensibility/strings-element.md).vsct 檔案中。 如果字串項目不有任何語言屬性時，它繼承自包含[CommandTable 元素](../../extensibility/commandtable-element.md)。  
@@ -85,4 +80,3 @@ Syntax: vsct <infile> [<outfile>] [-S[symbols file]] [-D<preprocessor-define>]*
  [Visual Studio 命令資料表 (。Vsct) 檔案](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)   
  [VSCT XML 結構描述參考](../../extensibility/vsct-xml-schema-reference.md)   
  [VSPackage 如何新增使用者介面元素](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)
-

@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugCodeContexts2::Reset
 ms.assetid: df6cf1e3-2ef8-4d38-81a0-8e9adf151884
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7d52a485e043edda8a763e24b4365aad50f02dcd
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 974313e83e8a7bee87eaee25cfb9b542bce55745
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56680109"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66335043"
 ---
 # <a name="ienumdebugcodecontexts2reset"></a>IEnumDebugCodeContexts2::Reset
 將列舉重設第一個項目。

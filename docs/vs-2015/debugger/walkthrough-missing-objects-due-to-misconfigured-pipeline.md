@@ -1,25 +1,20 @@
 ---
-title: 逐步解說： 遺漏的物件，因為設定不正確的管線 |Microsoft Docs
-ms.custom: ''
+title: 逐步解說：遺漏的物件，因為設定不正確的管線 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: ed8ac02d-b38f-4055-82fb-67757c2ccbb9
 caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: cd28886695e3234240de5675e5e2b19972b105fa
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 9d74006051fd39043de75cec81fdad3f1083adef
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51782008"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444289"
 ---
 # <a name="walkthrough-missing-objects-due-to-misconfigured-pipeline"></a>逐步解說：因管線設定錯誤而遺漏的物件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,13 +23,13 @@ ms.locfileid: "51782008"
   
  本逐步解說將說明下列工作：  
   
--   使用 [圖形事件清單]  找出潛在的問題來源。  
+- 使用 [圖形事件清單]  找出潛在的問題來源。  
   
--   使用 [圖形管線階段]  視窗來檢查 `DrawIndexed` Direct3D API 呼叫的效果。  
+- 使用 [圖形管線階段]  視窗來檢查 `DrawIndexed` Direct3D API 呼叫的效果。  
   
--   檢查裝置內容，以確認未設定著色器階段。  
+- 檢查裝置內容，以確認未設定著色器階段。  
   
--   使用 [圖形管線階段]  視窗搭配 [圖形事件呼叫堆疊]  ，以協助找出未設定像素著色器的來源。  
+- 使用 [圖形管線階段]  視窗搭配 [圖形事件呼叫堆疊]  ，以協助找出未設定像素著色器的來源。  
   
 ## <a name="scenario"></a>情節  
  有時是因為在轉譯物件前未設定其中一個著色器階段，而造成 3D 應用程式遺漏物件。 在具有簡單轉譯需求的應用程式中，此錯誤來源通常位於物件繪製呼叫的呼叫堆疊中某處。 但為了達到最佳化，某些應用程式會將具有相同著色器程式、材質或其他資料的物件批次處理，以將狀態變更的額外負荷最小化。 在這些應用程式中，錯誤的來源可能埋沒在批次處理系統中，而非位於呼叫堆疊的繪製呼叫中。 此逐步解說中的情節示範具有簡單轉譯需求的應用程式，因此可在呼叫堆疊中找到錯誤的來源。  
@@ -69,7 +64,7 @@ ms.locfileid: "51782008"
     在 [圖形管線階段]  視窗中， **輸入組合語言** 階段會在物件轉換前顯示其幾何， **端點著色器** 階段則會顯示轉換後的相同物件。 在此情節中，請注意 [圖形管線階段]  視窗會顯示 **輸入組合語言** 和  **端點著色器** 階段，而非其中一個繪製呼叫的 **像素著色器** 階段。  
   
    > [!NOTE]
-   >  若有其他管線階段 (例如輪廓著色器、網域著色器或幾何著色器階段) 在處理物件，則其都可能是問題的原因。 一般而言，問題與初期階段相關，在該階段中不會顯示結果，或者會以非預期的方式顯示結果。  
+   > 若有其他管線階段 (例如輪廓著色器、網域著色器或幾何著色器階段) 在處理物件，則其都可能是問題的原因。 一般而言，問題與初期階段相關，在該階段中不會顯示結果，或者會以非預期的方式顯示結果。  
   
 4. 在到達對應至遺漏物件的繪製呼叫時停止。 在此情節中，[圖形管線階段]  視窗表示幾何已發給 GPU (由 **輸入組合語言** 階段的存在表現) 且已轉換 (由 **頂點著色器** 階段表示)，但似乎沒有作用中的像素著色器，因此不會出現在轉譯目標中 (因為不存在 **像素著色器** 階段)。 在此情節中，您甚至可在 **輸出合併** 階段中看到遺漏物件的黑色輪廓：  
   
@@ -92,7 +87,7 @@ ms.locfileid: "51782008"
 1. 尋找對應至遺漏物件的 `PSSetShader` 呼叫。 於 [圖形事件清單]  視窗中，在此 [圖形事件清單]  視窗右上角的 [搜尋]  方塊輸入「Draw;PSSetShade」。 這樣會篩選清單，使其只包含「PSSetShader」事件及標題中具有「Draw」的事件。 選擇出現在遺漏物件之繪製呼叫前的第一個 `PSSetShader` 呼叫。  
   
    > [!NOTE]
-   >  若未在此畫面格期間設定，則`PSSetShader` 不會出現在 [圖形事件清單]  視窗中。 通常只有在單一像素著色器為所有的物件使用，或在此畫面格期間無意地略過 `PSSetShader` 呼叫時，才會發生此狀況。 在任何一種情況下，建議您搜尋 `PSSetShader` 呼叫的應用程式原始程式碼，並使用傳統偵錯技術來檢查這些呼叫的行為。  
+   > 若未在此畫面格期間設定，則`PSSetShader` 不會出現在 [圖形事件清單]  視窗中。 通常只有在單一像素著色器為所有的物件使用，或在此畫面格期間無意地略過 `PSSetShader` 呼叫時，才會發生此狀況。 在任何一種情況下，建議您搜尋 `PSSetShader` 呼叫的應用程式原始程式碼，並使用傳統偵錯技術來檢查這些呼叫的行為。  
   
 2. 開啟 [圖形事件呼叫堆疊]  視窗。 在 [圖形診斷]  工具列上，選擇 [圖形事件清單堆疊] 。  
   
@@ -101,7 +96,7 @@ ms.locfileid: "51782008"
     ![不會初始化像素著色器程式碼](../debugger/media/gfx-diag-demo-misconfigured-pipeline-step-5.png "gfx_diag_demo_misconfigured_pipeline_step_5")  
   
    > [!NOTE]
-   >  若您無法只透過檢查呼叫堆疊來找到 null 值的來源，建議您在 `PSSetShader` 呼叫上設定條件中斷點，如此當像素著色器將設定為 null 時，會中斷程式執行。 然後在偵錯模式中重新啟動應用程式，並使用傳統的偵錯技術來尋找 null 值的來源。  
+   > 若您無法只透過檢查呼叫堆疊來找到 null 值的來源，建議您在 `PSSetShader` 呼叫上設定條件中斷點，如此當像素著色器將設定為 null 時，會中斷程式執行。 然後在偵錯模式中重新啟動應用程式，並使用傳統的偵錯技術來尋找 null 值的來源。  
   
    若要修正此問題，請使用 `ID3D11DeviceContext::PSSetShader` API 呼叫的第一個參數，以指派正確的像素著色器 。  
   
@@ -110,6 +105,3 @@ ms.locfileid: "51782008"
    修正程式碼之後，您可以加以重新建置並再次執行應用程式，以確認轉譯問題已解決：  
   
    ![物件現在會顯示](../debugger/media/gfx-diag-demo-misconfigured-pipeline-resolution.jpg "gfx_diag_demo_misconfigured_pipeline_resolution")
-
-
-

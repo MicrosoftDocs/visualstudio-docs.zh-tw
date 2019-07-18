@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 89b3e7492e0f5155dd1c36f0140f6a1ad11db027
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56632897"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62829966"
 ---
 # <a name="modules-view"></a>模組檢視
 模組檢視會列出分析資料的模組。 每個模組都是階層式樹狀結構的根節點。 模組的已分析函式列在模組節點之下。 如果使用取樣方法收集分析資料，則行資訊會列在函式節點下，而指令指標資料則列在行節點下。

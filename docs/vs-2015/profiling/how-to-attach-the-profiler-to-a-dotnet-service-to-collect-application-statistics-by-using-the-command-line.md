@@ -9,24 +9,24 @@ caps.latest.revision: 33
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 402d0c4de07cb827bbad389c447dedd2dc79d7ef
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: fc65d8afc75229caed524e5414abe4595d4de65a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54760174"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433630"
 ---
-# <a name="how-to-attach-the-profiler-to-a-net-service-to-collect-application-statistics-by-using-the-command-line"></a>如何：使用命令列將程式碼剖析工具附加至 .NET 服務以收集應用程式統計資料
+# <a name="how-to-attach-the-profiler-to-a-net-service-to-collect-application-statistics-by-using-the-command-line"></a>HOW TO：附加至.NET 服務以收集應用程式統計資料，請使用命令列的 Profiler
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 本主題描述如何使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 分析工具命令列工具將分析工具附加至 .NET Framework 服務，並使用取樣方法收集效能統計資料。  
 
 > [!NOTE]
->  Windows 8 和 Windows Server 2012 增強式安全性功能需要的重大變更，會以 Visual Studio 分析工具在這些平台收集資料的方式表現。 Windows 市集應用程式也需要新的資料收集技術。 請參閱 [Windows 8 和 Windows Server 2012 應用程式的效能工具](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)。  
+> Windows 8 和 Windows Server 2012 增強式安全性功能需要的重大變更，會以 Visual Studio 分析工具在這些平台收集資料的方式表現。 Windows 市集應用程式也需要新的資料收集技術。 請參閱 [Windows 8 和 Windows Server 2012 應用程式的效能工具](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)。  
 >   
->  程式碼剖析工具的命令列工具位於 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 安裝目錄的 \Team Tools\Performance Tools 子目錄中。 在 64 位元電腦上，64 位元和 32 位元版本的工具都可以使用。 若要使用程式碼剖析工具命令列工具，必須將工具路徑加入至命令提示字元視窗的 PATH 環境變數，或將它加入至命令本身。 如需詳細資訊，請參閱[指定命令列工具的路徑](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)。  
+> 程式碼剖析工具的命令列工具位於 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 安裝目錄的 \Team Tools\Performance Tools 子目錄中。 在 64 位元電腦上，64 位元和 32 位元版本的工具都可以使用。 若要使用程式碼剖析工具命令列工具，必須將工具路徑加入至命令提示字元視窗的 PATH 環境變數，或將它加入至命令本身。 如需詳細資訊，請參閱[指定命令列工具的路徑](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)。  
 >   
->  若要將階層互動資料加入至程式碼剖析回合中，則需要使用命令列程式碼剖析工具的特定程序。 請參閱[收集階層互動資料](../profiling/adding-tier-interaction-data-from-the-command-line.md)。  
+> 若要將階層互動資料加入至程式碼剖析回合中，則需要使用命令列程式碼剖析工具的特定程序。 請參閱[收集階層互動資料](../profiling/adding-tier-interaction-data-from-the-command-line.md)。  
 
  若要收集 .NET Framework 服務的效能資料，請使用 [VSPerfCLREnv.cmd](../profiling/vsperfclrenv.md) 工具來初始化適當的環境變數。 您必須接著重新啟動裝載服務的電腦，並設定該電腦進行分析。 接著將分析工具附加至服務處理序。 分析工具附加至服務時，您可以暫停和繼續收集資料。  
 
@@ -44,9 +44,9 @@ ms.locfileid: "54760174"
 
     **VSPerfClrEnv /globalsampleon** [**/samplelineoff**]  
 
-   -   **/globalsampleon** 會啟用取樣。  
+   - **/globalsampleon** 會啟用取樣。  
 
-   -   **/samplelineoff** 會停止將收集的資料指派給特定的原始程式碼行。 指定此選項時，資料只會指派給函式。  
+   - **/samplelineoff** 會停止將收集的資料指派給特定的原始程式碼行。 指定此選項時，資料只會指派給函式。  
 
 4. 重新啟動電腦。  
 
@@ -63,7 +63,7 @@ ms.locfileid: "54760174"
      您可以使用下列任一選項搭配 **/start:sample** 選項。  
 
    > [!NOTE]
-   >  **/User** 和 **/crosssession** 選項通常是服務的必要選項。  
+   > **/User** 和 **/crosssession** 選項通常是服務的必要選項。  
 
    |                                 選項                                  |                                                                                                                                          描述                                                                                                                                           |
    |-------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -72,7 +72,6 @@ ms.locfileid: "54760174"
    |    [/wincounter](../profiling/wincounter.md) **:** `WinCounterPath`     |                                                                                                           指定程式碼剖析期間要收集的 Windows 效能計數器。                                                                                                            |
    |         [/automark](../profiling/automark.md) **:** `Interval`          |                                                                         只能搭配 **/wincounter** 使用。 指定 Windows 效能計數器收集事件間隔的毫秒數。 預設值為 500 毫秒。                                                                          |
    |       [/events](../profiling/events-vsperfcmd.md) **:** `Config`        |                                                                            指定程式碼剖析期間要收集的 Windows 事件追蹤 (ETW) 事件。 ETW 事件會收集至個別的 (.etl) 檔案。                                                                            |
-
 
 7. 視需要啟動服務。  
 
@@ -91,14 +90,14 @@ ms.locfileid: "54760174"
    |[/sys](../profiling/sys-vsperfcmd.md)[`:``Interval`]|將取樣事件從處理器變更為作業系統核心的系統呼叫 (syscalls)。 如果指定 `Interval`，請設定樣本間的呼叫數。 預設值為 10。|  
    |[/counter](../profiling/counter.md) **:** `Config`|將取樣事件與間隔變更為 `Config` 中指定的處理器效能計數器與間隔。|  
 
-   -   **targetclr:** `Version` 指定當應用程式載入多個版本的執行階段時要分析的 Common Language Runtime (CLR) 版本。 選擇性。  
+   - **targetclr:** `Version` 指定當應用程式載入多個版本的執行階段時要分析的 Common Language Runtime (CLR) 版本。 選擇性。  
 
 ## <a name="controlling-data-collection"></a>控制資料收集  
  當服務執行時，您可以使用 **VSPerfCmd.exe** 選項開始和停止將資料寫入至分析工具資料檔案。 控制資料收集可讓您收集特定程式執行 (例如啟動或關閉應用程式) 的資料。  
 
 #### <a name="to-start-and-stop-data-collection"></a>開始和停止資料收集  
 
--   下列成對的 **VSPerfCmd** 選項會開始和停止資料收集。 請在個別的命令列上指定各個選項。 您可以多次開始和停止資料收集。  
+- 下列成對的 **VSPerfCmd** 選項會開始和停止資料收集。 請在個別的命令列上指定各個選項。 您可以多次開始和停止資料收集。  
 
     |選項|描述|  
     |------------|-----------------|  
@@ -113,24 +112,24 @@ ms.locfileid: "54760174"
 
 #### <a name="to-end-a-profiling-session"></a>結束程式碼剖析工作階段  
 
-1.  執行下列其中一項動作，以從目標應用程式中斷連結分析工具：  
+1. 執行下列其中一項動作，以從目標應用程式中斷連結分析工具：  
 
-    -   停止服務。  
+    - 停止服務。  
 
          -或-  
 
-    -   輸入 **VSPerfCmd /detach**  
+    - 輸入 **VSPerfCmd /detach**  
 
-2.  關閉分析工具。 類型：  
+2. 關閉分析工具。 類型：  
 
      **VSPerfCmd /shutdown**  
 
-3.  (選擇性) 清除程式碼剖析環境變數。 類型：  
+3. (選擇性) 清除程式碼剖析環境變數。 類型：  
 
      **VSPerfClrEnv /globaloff**  
 
-4.  重新啟動電腦。  
+4. 重新啟動電腦。  
 
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [分析服務](../profiling/command-line-profiling-of-services.md)   
  [取樣方法資料檢視](../profiling/profiler-sampling-method-data-views.md)

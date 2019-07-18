@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4179c23cefbf995242288c1e778f9e0413bfe28e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913963"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62993250"
 ---
 # <a name="assign-activity-designer"></a>Assign 活動設計工具
 
@@ -35,7 +35,7 @@ ms.locfileid: "55913963"
 
 下表顯示 <xref:System.Activities.Statements.Assign> 屬性，並且描述屬性在設計工具中的使用方式。 這些屬性可以在屬性方格中編輯，其中一些可以在工作流程設計工具介面上編輯。
 
-|屬性名稱|必要項|使用方式|
+|屬性名稱|必要|使用量|
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|<xref:System.Activities.Statements.Assign> 活動的易記名稱。 預設為 Assign。 雖然 <xref:System.Activities.Activity.DisplayName%2A> 值並非絕對必要，但建議您盡量使用。|
 |<xref:System.Activities.Statements.Assign.To%2A>|True|<xref:System.Activities.Statements.Assign.Value%2A> 指派至的變數或引數。 值必須是有效的 Visual Basic 識別項。 若要設定此屬性，輸入 在 Visual Basic 運算式**要**方塊**指派**活動設計工具上或在屬性方格中。|

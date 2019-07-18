@@ -5,17 +5,20 @@ ms.topic: reference
 helpviewer_keywords:
 - IDebugGenericParamField::GetOwner
 ms.assetid: c7f6d166-a69e-40c4-bd0b-1a1fdf9aaacf
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f31152aecb62a1491b58c33b73539426bc4e0464
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 9752dfa90250bd427cb7a3d18e6e73775f25efb9
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56694695"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66330293"
 ---
 # <a name="idebuggenericparamfieldgetowner"></a>IDebugGenericParamField::GetOwner
 擷取此泛型參數的型別或方法擁有者。
@@ -34,10 +37,9 @@ int GetOwner(
 );
 ```
 
-#### <a name="parameters"></a>參數
-`ppOwner`
-
- [out]傳回[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)擁有此泛型參數的物件。
+## <a name="parameters"></a>參數
+`ppOwner`\
+[out]傳回[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)擁有此泛型參數的物件。
 
 ## <a name="return-value"></a>傳回值
 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

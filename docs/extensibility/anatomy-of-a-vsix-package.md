@@ -7,17 +7,17 @@ helpviewer_keywords:
 - vsix
 - packages
 ms.assetid: 8b86d62f-c274-4e91-82e0-38cdb9a423d5
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 70563378ca3599c1e558cd9e359979383e10f78b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: d8f0b748e80726d69e5b826982596a0a32675bd7
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56721513"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66352268"
 ---
 # <a name="anatomy-of-a-vsix-package"></a>VSIX 封裝的結構
 VSIX 封裝 *.vsix*檔案，其中包含一或多個 Visual Studio 擴充功能，以及 Visual Studio 的中繼資料會使用分類，並安裝擴充功能。 該中繼資料會包含在 VSIX 資訊清單中， *[Content_Types].xml*檔案。 VSIX 封裝也包含一或多個*Extension.vsixlangpack*檔，以提供當地語系化設定文字，而且可能包含其他的 VSIX 套件，以安裝相依項目。
@@ -25,7 +25,7 @@ VSIX 封裝 *.vsix*檔案，其中包含一或多個 Visual Studio 擴充功能�
  VSIX 套件格式會遵循開放封裝慣例 (OPC) 標準。 封裝包含二進位檔和支援的檔案，並搭配 *[Content_Types].xml*檔案並 *.vsix*資訊清單檔案。 一個 VSIX 封裝可能包含多個專案或甚至是多個套件有自己的資訊清單的輸出。
 
 > [!NOTE]
->  VSIX 封裝中包含的檔案名稱不得包含空格，也不下定義的保留在統一資源識別元 (URI)，做為字元[ \[RFC2396\]](http://go.microsoft.com/fwlink/?LinkId=90339)。
+> VSIX 封裝中包含的檔案名稱不得包含空格，也不下定義的保留在統一資源識別元 (URI)，做為字元[ \[RFC2396\]](http://go.microsoft.com/fwlink/?LinkId=90339)。
 
 ## <a name="the-vsix-manifest"></a>VSIX 資訊清單
  VSIX 資訊清單包含要安裝的延伸模組和如下所示 VSX 結構描述的相關資訊。 如需詳細資訊，請參閱 < [VSIX 延伸結構描述 1.0 參考](https://msdn.microsoft.com/library/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)。 如需範例 VSIX 資訊清單中，請參閱 < [PackageManifest 項目 （根項目、 VSX 結構描述）](https://msdn.microsoft.com/library/f8ae42ba-775a-4d2b-976a-f556e147f187)。

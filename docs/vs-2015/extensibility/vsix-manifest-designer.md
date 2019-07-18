@@ -1,14 +1,9 @@
 ---
 title: VSIX 資訊清單設計工具 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 f1_keywords:
 - VS.Sdk.VsixManifestEditor
 helpviewer_keywords:
@@ -18,13 +13,13 @@ helpviewer_keywords:
 ms.assetid: 5a691e77-cf91-430d-90ea-361d9031ef83
 caps.latest.revision: 21
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 72639c3fbef6b8e297d9e81a7383b2ee8220d896
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 450d306718906c3b76bf05982594045e7fd215f0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51796437"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63387561"
 ---
 # <a name="vsix-manifest-designer"></a>VSIX 資訊清單設計工具
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +31,7 @@ ms.locfileid: "51796437"
  若要開啟 [ **VSIX 資訊清單設計工具**，找出 source.extension.vsixmanifest 檔案中的**方案總管] 中**，並開啟檔案。 如果檔案不包含有效的 XML，將無法開啟資訊清單設計工具。  
   
 > [!NOTE]
->  Source.extension.vsixmanifest 建置套件時 extension.vsixmanifest 的輸出。  
+> Source.extension.vsixmanifest 建置套件時 extension.vsixmanifest 的輸出。  
   
 ## <a name="uielement-list"></a>UIElement 清單  
  **VSIX 資訊清單設計工具**包含對應至結構描述的下列最上層元素的四個區段：  
@@ -57,7 +52,7 @@ ms.locfileid: "51796437"
   **產品識別碼**  
   指定此套件的唯一識別資訊。  
   
-  **作者**  
+  **Author**  
   指定延伸模組的作者名稱。  
   
   **版本**  
@@ -158,4 +153,3 @@ ms.locfileid: "51796437"
 ## <a name="see-also"></a>另請參閱  
  [VSIX 延伸結構描述 2.0 參考](../extensibility/vsix-extension-schema-2-0-reference.md)   
  [VSIX 封裝的結構](../extensibility/anatomy-of-a-vsix-package.md)
-

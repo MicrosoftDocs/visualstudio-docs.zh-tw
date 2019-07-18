@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 443c839c721198df8267e57bc6fb639a1fdae820
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: a1d09e4cba02e1b27ca84a1c678a439f451012ee
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56613514"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "64832870"
 ---
 # <a name="idiasymbolgetlexicalparentid"></a>IDiaSymbol::get_lexicalParentId
 擷取之符號的語彙的父識別碼。
@@ -39,10 +39,10 @@ HRESULT get_lexicalParentId ( 
  如果成功，則傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。
 
 > [!NOTE]
->  傳回值為`S_FALSE`表示此屬性不適用於符號。
+> 傳回值為`S_FALSE`表示此屬性不適用於符號。
 
 ## <a name="remarks"></a>備註
  識別碼是由 DIA SDK，將標示為唯一的所有符號的唯一值。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

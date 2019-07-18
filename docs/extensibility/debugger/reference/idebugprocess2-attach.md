@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProcess2::Attach
 ms.assetid: 40d78417-fde2-45c3-96c9-16e06bd9008d
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f700a6f6ff06fb37660419c46a394a0449d976bf
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 24a83c13d8953e3725a5fc5a4e55153b9ade88c4
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56706609"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66353254"
 ---
 # <a name="idebugprocess2attach"></a>IDebugProcess2::Attach
 將工作階段的偵錯管理員 (SDM) 附加至處理序。
@@ -42,22 +45,18 @@ int Attach( 
 );
 ```
 
-#### <a name="parameters"></a>參數
- `pCallback`
+## <a name="parameters"></a>參數
+`pCallback`\
+[in][IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)來進行偵錯事件通知的物件。
 
- [in][IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)來進行偵錯事件通知的物件。
+`rgguidSpecificEngines`\
+[in]用來偵錯的處理序中執行的程式偵錯引擎的 Guid 的陣列。 這個參數可以是 null 值。 如需詳細資訊，請參閱 < 備註 >。
 
- `rgguidSpecificEngines`
+`celtSpecificEngines`\
+[in]引擎中的偵錯的數字`rgguidSpecificEngines`陣列和大小`rghrEngineAttach`陣列。
 
- [in]用來偵錯的處理序中執行的程式偵錯引擎的 Guid 的陣列。 這個參數可以是 null 值。 如需詳細資訊，請參閱 < 備註 >。
-
- `celtSpecificEngines`
-
- [in]引擎中的偵錯的數字`rgguidSpecificEngines`陣列和大小`rghrEngineAttach`陣列。
-
- `rghrEngineAttach`
-
- [in、 out]偵錯引擎所傳回的 HRESULT 代碼的陣列。 這個陣列的大小以指定`celtSpecificEngines`參數。 每個程式碼通常是`S_OK`或`S_ATTACH_DEFERRED`。 後者表示 DE 目前已連結至任何程式。
+`rghrEngineAttach`\
+[in、 out]偵錯引擎所傳回的 HRESULT 代碼的陣列。 這個陣列的大小以指定`celtSpecificEngines`參數。 每個程式碼通常是`S_OK`或`S_ATTACH_DEFERRED`。 後者表示 DE 目前已連結至任何程式。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。 下表顯示其他可能的值。

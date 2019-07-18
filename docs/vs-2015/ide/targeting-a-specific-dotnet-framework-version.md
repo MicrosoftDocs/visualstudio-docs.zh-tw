@@ -14,12 +14,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 38a12f851bb99eb553856556608aaf029c91c40d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: a11658e8cfe96da9c56b7cc1a63839510ed3c829
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54755147"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65679144"
 ---
 # <a name="targeting-a-specific-net-framework-version"></a>以特定的 .NET Framework 版本為目標
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,11 +32,11 @@ ms.locfileid: "54755147"
  [Visual Studio 多目標概觀](../ide/visual-studio-multi-targeting-overview.md)  
  提供 Visual Studio 中多目標功能的概觀。  
   
- [如何：以 .NET Framework 版本為目標](../ide/how-to-target-a-version-of-the-dotnet-framework.md)  
+ [如何：以一個 .NET Framework 版本為目標](../ide/how-to-target-a-version-of-the-dotnet-framework.md)  
  詳細說明如何為 Visual Basic、Visual C# 或 Visual F# 專案指定特定的 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]。  
   
 ## <a name="related-sections"></a>相關章節  
- [ASP.NET Web 專案的 .NET Framework 多目標](http://msdn.microsoft.com/library/8b8145a9-62f6-4fc4-8a83-47b0487cbe76)  
+ [ASP.NET Web 專案的 .NET Framework 多目標](https://msdn.microsoft.com/library/8b8145a9-62f6-4fc4-8a83-47b0487cbe76)  
  說明如何使用這一版 Visual Studio 來開發在舊版 .NET Framework 下執行的 Web 應用程式。  
   
  [專案設計工具，應用程式頁面 (C#)](../ide/reference/application-page-project-designer-csharp.md)  
@@ -45,5 +45,5 @@ ms.locfileid: "54755147"
  [專案設計工具、應用程式頁面 (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)  
  描述 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 專案之 [專案設計工具] 中的 [目標 Framework] 控制項。  
   
- [如何：修改目標 Framework 和平台工具組](http://msdn.microsoft.com/library/031b1d54-e6e1-4da7-9868-3e75a87d9ffe)  
+ [如何：修改目標 Framework 和平台工具組](https://msdn.microsoft.com/library/031b1d54-e6e1-4da7-9868-3e75a87d9ffe)  
  說明如何變更 Visual C++ 專案的設定，來設定不同的 .NET Framework 目標版本以及使用不同的平台工具組。

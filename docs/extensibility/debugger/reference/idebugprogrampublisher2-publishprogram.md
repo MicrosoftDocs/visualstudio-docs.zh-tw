@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgramPublisher2::PublishProgram
 ms.assetid: 92ff63f0-e869-4040-b3ae-b2c899e708ff
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bb1553070f9afecf6ce60ac51b94ecb3f05d0eb9
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 5d4f0b279bafe5291679237efdaada7907ddc515
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56698764"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66343363"
 ---
 # <a name="idebugprogrampublisher2publishprogram"></a>IDebugProgramPublisher2::PublishProgram
 這個方法可供偵錯引擎 (DEs) 的程式和工作階段的偵錯管理員。
@@ -40,18 +43,15 @@ int PublishProgram(
 );
 ```
 
-#### <a name="parameters"></a>參數
- `Engines`
+## <a name="parameters"></a>參數
+`Engines`\
+[in]針對 DEs，可以啟動或附加至這個程式的 Guid 的陣列。
 
- [in]針對 DEs，可以啟動或附加至這個程式的 Guid 的陣列。
+`szFriendlyName`\
+[in]（這會出現在功能表或對話方塊向使用者顯示） 之程式的易記名稱。
 
- `szFriendlyName`
-
- [in]（這會出現在功能表或對話方塊向使用者顯示） 之程式的易記名稱。
-
- `pDebuggeeInterface`
-
- [in]`IUnknown`程式介面 （來唯一識別該程式使用此值作為 cookie; 此相同的值用來 「 取消發行 」 計畫）
+`pDebuggeeInterface`\
+[in]`IUnknown`程式介面 （來唯一識別該程式使用此值作為 cookie; 此相同的值用來 「 取消發行 」 計畫）
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

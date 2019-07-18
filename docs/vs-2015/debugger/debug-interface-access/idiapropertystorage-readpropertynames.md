@@ -1,14 +1,9 @@
 ---
 title: IDiaPropertyStorage::ReadPropertyNames |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: f8bcab77-afca-4a8f-8710-697842f8a518
 caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 8523dfb795f63abdecd9be1f08ec68371355fbde
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f3f6d3ac520a396b5207767a3fec0913c801c287
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51759559"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62537351"
 ---
 # <a name="idiapropertystoragereadpropertynames"></a>IDiaPropertyStorage::ReadPropertyNames
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -58,6 +53,3 @@ HRESULT ReadPropertyNames (
   
 ## <a name="see-also"></a>另請參閱  
  [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)
-
-
-

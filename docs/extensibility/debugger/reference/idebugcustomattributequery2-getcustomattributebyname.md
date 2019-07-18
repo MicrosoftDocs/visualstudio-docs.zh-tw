@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugCustomAttributeQuery2::GetCustomAttributeByName
 ms.assetid: 7428dfeb-8929-41b2-9b99-cb343a86c02d
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7e6275f67e07c88cb337c77bc672394af539b8e2
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 7d874a00c3c82108c224f18922f2b4853279beaa
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56693395"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66322207"
 ---
 # <a name="idebugcustomattributequery2getcustomattributebyname"></a>IDebugCustomAttributeQuery2::GetCustomAttributeByName
 取得指定欄位名稱的自訂屬性的自訂屬性位元組。
@@ -40,18 +43,15 @@ int GetCustomAttributeByName(
 );
 ```
 
-#### <a name="parameters"></a>參數
- `pszCustomAttributeName`
+## <a name="parameters"></a>參數
+`pszCustomAttributeName`\
+[in]字串，包含要尋找的自訂屬性的名稱。
 
- [in]字串，包含要尋找的自訂屬性的名稱。
+`ppBlob`\
+[in、 out]陣列，其中會填入自訂屬性的位元組。
 
- `ppBlob`
-
- [in、 out]陣列，其中會填入自訂屬性的位元組。
-
- `pdwLen`
-
- [in、 out]指定要傳回的位元組數目上限`ppBlob`陣列並傳回實際寫入至陣列的位元組數目。
+`pdwLen`\
+[in、 out]指定要傳回的位元組數目上限`ppBlob`陣列並傳回實際寫入至陣列的位元組數目。
 
 ## <a name="return-value"></a>傳回值
  如果成功，會傳回 S_OK，或如果沒有自訂屬性，則傳回 S_FALSE。 否則會傳回錯誤碼。

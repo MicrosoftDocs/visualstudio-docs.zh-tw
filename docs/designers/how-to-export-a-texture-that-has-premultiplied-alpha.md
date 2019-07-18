@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a228b3f69730eee5fb1672e07a6eea74d18c71e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 64c336db07eab794a6595cb2de9026c1269a33c4
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55946869"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62893376"
 ---
 # <a name="how-to-export-a-texture-that-has-premultiplied-alpha"></a>HOW TO：匯出包含預乘 Alpha 的紋理
 
@@ -21,20 +21,20 @@ ms.locfileid: "55946869"
 
 本文件示範下列活動︰
 
--   設定要由「影像內容管線」處理的來源影像。
+- 設定要由「影像內容管線」處理的來源影像。
 
--   設定影像內容管線以產生預乘 Alpha。
+- 設定影像內容管線以產生預乘 Alpha。
 
 ## <a name="premultiplied-alpha"></a>預乘 Alpha
  預乘 Alpha 提供了許多優於傳統非預乘 Alpha 的優點，因為它更能代表實體物質與真實世界光線的互動，方法是將材質的色彩比重 (它新增至場景的色彩) 與半透明性 (它允許透出來的基礎色彩量) 分開。 使用預乘 Alpha 的一些優點包括︰
 
--   使用預乘 Alpha 透明混色是關聯的作業。混用多種半透明材質的結果是相同的，而不論材質的混合順序。
+- 使用預乘 Alpha 透明混色是關聯的作業。混用多種半透明材質的結果是相同的，而不論材質的混合順序。
 
--   由於使用預乘 Alpha 透明混色的關聯本質，半透明物件的多階段呈現便簡化了。
+- 由於使用預乘 Alpha 透明混色的關聯本質，半透明物件的多階段呈現便簡化了。
 
--   藉由使用預乘 Alpha，純粹加色法透明混色 (將 Alpha 設定為零) 和線性插補透明混色可以同時達成。 比方說，在粒子系統中，加色法透明混色的火粒子可能會變成使用線性插補透明混色的半透明煙霧粒子。 若沒有預乘 Alpha，您將必須分別繪製火粒子與煙霧粒子，並修改繪製呼叫之間的呈現狀態。
+- 藉由使用預乘 Alpha，純粹加色法透明混色 (將 Alpha 設定為零) 和線性插補透明混色可以同時達成。 比方說，在粒子系統中，加色法透明混色的火粒子可能會變成使用線性插補透明混色的半透明煙霧粒子。 若沒有預乘 Alpha，您將必須分別繪製火粒子與煙霧粒子，並修改繪製呼叫之間的呈現狀態。
 
--   使用預乘 Alpha 的材質壓縮品質會比不使用的材質高，而且它們不會表現出變色的邊緣，或稱「光環效果」(當您將不使用預乘 Alpha 的材質透明混色時可能會產生此結果)。
+- 使用預乘 Alpha 的材質壓縮品質會比不使用的材質高，而且它們不會表現出變色的邊緣，或稱「光環效果」(當您將不使用預乘 Alpha 的材質透明混色時可能會產生此結果)。
 
 #### <a name="to-create-a-texture-that-uses-premultiplied-alpha"></a>建立使用預乘 Alpha 的材質
 

@@ -1,21 +1,17 @@
 ---
 title: 影像庫檢視器 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 9d9c7fbb-ebae-4b20-9dd8-3c9070c0d0d1
 caps.latest.revision: 7
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 6c0e277a123fe24da9824fae94b13eee686f5663
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 97d634f97eb7a13cfa54b2c0d326b19f31fb7d9d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51778016"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685493"
 ---
 # <a name="image-library-viewer"></a>影像庫檢視器
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -134,18 +130,18 @@ Visual Studio 影像庫檢視器工具可以載入，並搜尋映像資訊清單
 |||  
 |-|-|  
 |**屬性**|**定義**|  
-|URI|[必要]定義從何處可以載入映像的 URI。 它可以是下列其中一項：<br /><br /> -A [Pack URI](http://msdn.microsoft.com/library/aa970069\(v=vs.100\).aspx)使用應用程式: / / 授權單位<br /><br /> -絕對元件資源參考<br /><br /> -包含原生資源的檔案路徑|  
-|背景|[選用]指出哪些類型的來源要使用的背景。<br /><br /> 它可以是下列其中一項：<br /><br /> - *Light*： 淺色背景上可用的來源。<br /><br /> - *深色*: 來源可以使用深色背景上。<br /><br /> - *高對比*: 來源可以使用高對比模式中的任何背景上。<br /><br /> - *HighContrastLight*： 淺色背景高對比模式中使用的來源。<br /><br /> -*HighContrastDark*： 來源可用在高對比模式中使用深色背景上。<br /><br /> 如果**背景**省略屬性、 來源可以使用任何背景上。<br /><br /> 如果**背景**是*Light*，*深色*， *HighContrastLight*，或*HighContrastDark*，永遠不會反轉來源的色彩。 如果**背景**被省略或設為*高對比*，反轉的來源的色彩由映像的控制**AllowColorInversion**屬性。|  
+|URI|[必要]定義從何處可以載入映像的 URI。 它可以是下列其中一項：<br /><br /> -A [Pack URI](https://msdn.microsoft.com/library/aa970069\(v=vs.100\).aspx)使用應用程式: / / 授權單位<br /><br /> -絕對元件資源參考<br /><br /> -包含原生資源的檔案路徑|  
+|背景|[選用]指出哪些類型的來源要使用的背景。<br /><br /> 它可以是下列其中一項：<br /><br /> - *Light*:淺色背景上可用的來源。<br /><br /> - *深色*:來源可以使用深色背景上。<br /><br /> - *高對比*:高對比模式中的任何背景上可用的來源。<br /><br /> - *HighContrastLight*:高對比模式中的淺色背景上可用的來源。<br /><br /> -*HighContrastDark*:在高對比模式中使用深色背景上可用的來源。<br /><br /> 如果**背景**省略屬性、 來源可以使用任何背景上。<br /><br /> 如果**背景**是*Light*，*深色*， *HighContrastLight*，或*HighContrastDark*，永遠不會反轉來源的色彩。 如果**背景**被省略或設為*高對比*，反轉的來源的色彩由映像的控制**AllowColorInversion**屬性。|  
   
  A\<來源 > 項目可以有一個下列的選擇性子項目：  
   
 ||||  
 |-|-|-|  
 |**目**|**屬性 （全部所需）**|**定義**|  
-|\<大小 >|值|來源會使用指定的大小 （以裝置為單位） 的映像。 映像會正方形。|  
-|\<SizeRange >|MinSize、 MaxSize|來源將使用的映像從 MinSize 至大小上限 （以裝置為單位） （含）。 映像會正方形。|  
+|\<Size>|值|來源會使用指定的大小 （以裝置為單位） 的映像。 映像會正方形。|  
+|\<SizeRange>|MinSize, MaxSize|來源將使用的映像從 MinSize 至大小上限 （以裝置為單位） （含）。 映像會正方形。|  
 |\<維度 >|寬度高度|來源將使用指定的寬度和高度 （以裝置為單位） 的映像。|  
-|\<DimensionRange >|MinWidth 或 MinHeight<br /><br /> MaxWidth MaxHeight|來源將用於從最小寬度/高度的映像，以最大寬度/高度 （以裝置為單位） （含）。|  
+|\<DimensionRange>|MinWidth 或 MinHeight<br /><br /> MaxWidth MaxHeight|來源將用於從最小寬度/高度的映像，以最大寬度/高度 （以裝置為單位） （含）。|  
   
  A\<來源 > 項目也可以選擇性\<NativeResource > 子元素，定義\<來源 > 從原生組件，而不是 managed 組件載入的。  
   
@@ -228,10 +224,9 @@ Visual Studio 影像庫檢視器工具可以載入，並搜尋映像資訊清單
   
 ## <a name="notes"></a>注意  
   
--   根據預設，此工具會在數個 Visual Studio 安裝目錄中的映像資訊清單中提取。 只有一種具有公開可取用的 moniker 是**Microsoft.VisualStudio.ImageCatalog**資訊清單。 GUID: ae27a6b0-e345-4288-96df-5eaf394ee369 (請勿**不**覆寫此自訂資訊清單中的 GUID) 型別： KnownMonikers  
+- 根據預設，此工具會在數個 Visual Studio 安裝目錄中的映像資訊清單中提取。 只有一種具有公開可取用的 moniker 是**Microsoft.VisualStudio.ImageCatalog**資訊清單。 GUID: ae27a6b0-e345-4288-96df-5eaf394ee369 (請勿**不**覆寫此自訂資訊清單中的 GUID) 類型：KnownMonikers  
   
--   此工具會嘗試啟動時載入所有影像資訊清單，找到，因此它可能需要花費數秒鐘的時間來實際顯示應用程式。 載入資訊清單時，它可能也會變慢或無回應。  
+- 此工具會嘗試啟動時載入所有影像資訊清單，找到，因此它可能需要花費數秒鐘的時間來實際顯示應用程式。 載入資訊清單時，它可能也會變慢或無回應。  
   
 ## <a name="sample-output"></a>範例輸出  
  此工具不會產生任何輸出。
-

@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b08dab6be6a959b6a7ac37b243ff1bb94fbb4b1
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 1b4748cd71416ce4d3e9cce64826f1ec97ceef85
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55939615"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67692988"
 ---
 # <a name="extend-your-dsl-by-using-mef"></a>使用 MEF 擴充您的 DSL
 
@@ -24,7 +24,7 @@ ms.locfileid: "55939615"
 
 ### <a name="to-enable-your-dsl-to-be-extended-by-mef"></a>若要啟用以 MEF 擴充您的 DSL
 
-1.  建立新的資料夾，名為**MefExtension**內**DslPackage**專案。 將下列檔案新增至它：
+1. 建立新的資料夾，名為**MefExtension**內**DslPackage**專案。 將下列檔案新增至它：
 
      檔案名稱： `CommandExtensionVSCT.tt`
 
@@ -72,7 +72,7 @@ ms.locfileid: "55939615"
     <#@ include file="DslPackage\PackageExtensionEnablement.tt" #>
     ```
 
-2.  建立新的資料夾，名為**MefExtension**內**Dsl**專案。 將下列檔案新增至它：
+2. 建立新的資料夾，名為**MefExtension**內**Dsl**專案。 將下列檔案新增至它：
 
      檔案名稱： `DesignerExtensionMetaDataAttribute.tt`
 
@@ -95,7 +95,7 @@ ms.locfileid: "55939615"
     <#@ include file="Dsl\GestureExtensionController.tt" #>
     ```
 
-3.  將下行新增至現有的檔案，稱為**DslPackage\Commands.vsct**:
+3. 將下行新增至現有的檔案，稱為**DslPackage\Commands.vsct**:
 
     ```xml
     <Include href="MefExtension\CommandExtensionVSCT.vsct"/>
@@ -103,51 +103,51 @@ ms.locfileid: "55939615"
 
     在現有插入一行`<Include>`指示詞。
 
-4.  開啟*DslDefinition.dsl*。
+4. 開啟*DslDefinition.dsl*。
 
-5.  在 [DSL 總管] 中，選取**於**。
+5. 在 [DSL 總管] 中，選取**於**。
 
-6.  在 [屬性] 視窗中，請確定至少一個屬性名為**會使用**是`true`。
+6. 在 [屬性] 視窗中，請確定至少一個屬性名為**會使用**是`true`。
 
-7.  在 **方案總管**工具列上，按一下**轉換所有範本**。
+7. 在 **方案總管**工具列上，按一下**轉換所有範本**。
 
      分公司的檔案會出現下方每個您新增的檔案。
 
-8.  建置並執行解決方案，以驗證它仍然運作。
+8. 建置並執行解決方案，以驗證它仍然運作。
 
 您的 DSL 現在是 MEF 啟用。 您可以將功能表命令、 軌跡處理常式和驗證條件約束撰寫成 MEF 擴充功能中。 您可以在您的 DSL 方案，以及其他自訂程式碼中撰寫這些擴充功能。 此外，您或其他開發人員可以撰寫擴充您的 DSL 的個別 Visual Studio 擴充功能。
 
-## <a name="creating-an-extension-for-a-mef-enabled-dsl"></a>建立已啟用 MEF 的 DSL 延伸模組
+## <a name="create-an-extension-for-a-mef-enabled-dsl"></a>建立已啟用 MEF 的 DSL 延伸模組
 
 如果您有啟用 MEF 的 DSL，由自己還是他人的存取，您可以為它撰寫延伸模組。 擴充功能可用來加入功能表命令、 軌跡處理常式或驗證條件約束。 若要製作這些擴充功能，您可以使用 Visual Studio 擴充功能 (VSIX) 方案。 方案有兩個部分： 建置程式碼組件的類別庫專案和封裝組件的 VSIX 專案。
 
-#### <a name="to-create-a-dsl-extension-vsix"></a>若要建立的 DSL 延伸模組的 VSIX
+### <a name="to-create-a-dsl-extension-vsix"></a>若要建立的 DSL 延伸模組的 VSIX
 
-1. 建立新的類別庫專案。 若要這樣做，請在**新的專案**對話方塊中，選取**Visual Basic**或是**Visual C#** ，然後選取**類別庫**。
+1. 建立新的**類別庫**專案。
 
-2. 在新的類別庫專案，加入 DSL 的組件的參考。
+2. 在新的專案中，加入 DSL 的組件的參考。
 
    - 這個組件通常具有名稱的結尾 」。Dsl.dll"。
 
-   - 如果您有 DSL 專案的存取權，您可以找到組件檔案的目錄下**Dsl\bin\\\\***
+   - 如果您有 DSL 專案的存取權，您可以找到組件檔案的目錄下**Dsl\\bin\\\***
 
    - 如果您的 DSL 的 VSIX 檔案存取，您可以將 VSIX 檔案的副檔名變更為 「.zip 」 來尋找組件。 將解壓縮的.zip 檔案。
 
 3. 加入下列.NET 組件的參考：
 
-   -   Microsoft.VisualStudio.Modeling.Sdk.11.0.dll
+   - Microsoft.VisualStudio.Modeling.Sdk.11.0.dll
 
-   -   Microsoft.VisualStudio.Modeling.Sdk.Diagrams.11.0.dll
+   - Microsoft.VisualStudio.Modeling.Sdk.Diagrams.11.0.dll
 
-   -   Microsoft.VisualStudio.Modeling.Sdk.Shell.11.0.dll
+   - Microsoft.VisualStudio.Modeling.Sdk.Shell.11.0.dll
 
-   -   System.ComponentModel.Composition.dll
+   - System.ComponentModel.Composition.dll
 
-   -   System.Windows.Forms.dll
+   - System.Windows.Forms.dll
 
-4. 建立 VSIX 專案，在相同的方案。 若要這樣做，請在**新的專案**對話方塊方塊中，展開**Visual Basic**或**Visual C#**，按一下 **擴充性**，然後選取  **VSIX 專案**。
+4. 建立新**VSIX 專案**專案。
 
-5. 在 方案總管 中，以滑鼠右鍵按一下 VSIX 專案，並再按**設定為啟始專案**。
+5. 在 **方案總管**，以滑鼠右鍵按一下 VSIX 專案，然後選擇**設定為啟始專案**。
 
 6. 在新的專案中，開啟**source.extension.vsixmanifest**。
 
@@ -157,7 +157,7 @@ ms.locfileid: "55939615"
 
    1. 在  **source.extension.vsixmanifest**，按一下 **加入參考**
 
-   2. 在對話方塊中，按一下**新增裝載**，然後尋找 DSL 的 VSIX 檔案。 在 VSIX 檔案建置在 DSL 方案中，* * DslPackage\bin\\\\* * *。
+   2. 在對話方塊中，按一下**新增裝載**，然後尋找 DSL 的 VSIX 檔案。 在 VSIX 檔案建置在 DSL 方案中， **DslPackage\\bin\\\*** 。
 
        這可讓使用者安裝 DSL 和擴充功能，在相同的時間。 如果使用者已經安裝 DSL，將會安裝您的擴充。
 
@@ -247,7 +247,7 @@ namespace MyMefExtension
 
 軌跡處理常式可以處理拖曳至圖表，來源內的任何位置，或在 Visual Studio 外部的物件。 下列範例可讓使用者從 Windows 檔案總管將檔案拖曳到圖表上。 它會建立包含檔案名稱的項目。
 
-您可以撰寫處理常式來處理來自其他 DSL 模型和 UML 模型拖曳的。 如需詳細資訊，請參閱[＜How to：新增拖放處理常式](../modeling/how-to-add-a-drag-and-drop-handler.md)。
+您可以撰寫處理常式來處理來自其他 DSL 模型和 UML 模型拖曳的。 如需詳細資訊，請參閱[如何：新增拖放處理常式](../modeling/how-to-add-a-drag-and-drop-handler.md)。
 
 ```csharp
 using System.ComponentModel.Composition;

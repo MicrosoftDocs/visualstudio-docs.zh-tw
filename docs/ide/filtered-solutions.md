@@ -1,6 +1,6 @@
 ---
 title: 載入專案的子集
-ms.date: 12/04/2018
+ms.date: 04/22/2019
 ms.prod: visual-studio-dev16
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,16 +10,14 @@ author: gewarren
 ms.author: stsu
 manager: jillfra
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: 67ebbd94298c3325560b64945bed51c09db93833
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 2612770b760bec70ec9ee6c679c47804d4e69f42
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57983880"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439907"
 ---
 # <a name="filtered-solutions-in-visual-studio"></a>Visual Studio 中已篩選的方案
-
-**Visual Studio 2019 的新功能**
 
 大型開發團隊經常使用包含多個專案的單一大型方案來共同作業。 然而，個別開發人員通常只會負責這些專案中的一小部分。 為了改善開啟大型方案時的效能，Visual Studio 2019 引進「方案篩選」功能。 方案篩選可讓您開啟僅載入所選專案的方案。 在方案中載入專案的子集，可減少方案負載、組建和測試執行時間，並提供更聚焦的檢閱。
 
@@ -33,7 +31,11 @@ ms.locfileid: "57983880"
 
 ## <a name="open-a-filtered-solution"></a>開啟已篩選的方案
 
-若要開啟僅載入一部分專案的方案，請遵循下列步驟：
+您可以直接從 [開啟專案] 對話方塊或透過[命令列](#command-line)開啟方案，而無需載入其任何專案。
+
+### <a name="open-project-dialog"></a>[開啟專案] 對話方塊
+
+若要使用 [開啟專案] 對話方塊開啟方案而不載入其任何專案：
 
 1. 在功能表列上選擇 [檔案] > [開啟] > [專案/方案]。
 
@@ -51,19 +53,35 @@ ms.locfileid: "57983880"
 
    下次您在本機中開啟方案時，Visual Studio 會記住載入過哪些專案。
 
+### <a name="command-line"></a>命令列
+
+(Visual Studio 2019 16.1 版中的新功能。)
+
+若要在不從命令列載入其任何專案的情況下開啟方案，請使用 [`/donotloadprojects`](../ide/reference/donotloadprojects-devenv-exe.md) 參數，如下列範例所示：
+
+```cmd
+devenv /donotloadprojects MySln.sln
+```
+
 ## <a name="toggle-unloaded-project-visibility"></a>切換已卸載專案的可見性
 
 使用 [方案總管] 中的下列選擇之一，可讓您選擇要查看方案中的所有專案，或僅查看已載入的專案：
 
 - 以滑鼠右鍵按一下您的方案，並選取 [顯示已卸載專案] 或 [隱藏已卸載專案]。
 
-- 選取 [顯示所有檔案] 按鈕來切換已卸載專案的可見性。
+- 選取方案節點來啟用 [顯示所有檔案] 按鈕；然後，按一下按鈕來切換已卸載專案的可見性。
 
    ![Visual Studio [方案總管] 中的顯示所有檔案按鈕](media/filtered-solutions/show-all-files.PNG)
 
+## <a name="load-project-dependencies"></a>載入專案相依性
+
+在僅載入已選取專案的方案中，您可能沒有所有載入之專案的專案相依性。 使用 [載入專案相依性] 功能表選項，可確保任何專案仰賴的專案也會載入。 以滑鼠右鍵按一下 [方案總管] 中的一或多個載入的專案，然後選擇 [載入專案相依性]。
+
+![在 Visual Studio 2019 中載入專案相依性](media/filtered-solutions/load-project-dependencies.png)
+
 ## <a name="solution-filter-files"></a>方案篩選檔案
 
-如果您希望共用您的專案載入組態，或將其認可至原始檔控制，您可以建立方案篩選器檔案 (其副檔名為 *.slnf*)。 當您開啟方案篩選檔案時，方案會以載入指定專案並隱藏所有已卸載專案的方式，在 Visual Studio 中開啟。 您可以[切換](#toggle-unloaded-project-visibility)以檢視已卸載專案。
+如果您希望共用您的專案載入組態，或將其認可至原始程式碼控制，您可以建立方案篩選器檔案 (其副檔名為 *.slnf*)。 當您開啟方案篩選檔案時，方案會以載入指定專案並隱藏所有已卸載專案的方式，在 Visual Studio 中開啟。 您可以[切換](#toggle-unloaded-project-visibility)以檢視已卸載專案。
 
 [方案總管] 中方案旁邊圖示中額外的漏斗圖圖像，可用於在視覺上區別方案篩選檔案與一般方案檔案。 篩選名稱和已載入的專案數目也會顯示在方案名稱旁邊。
 

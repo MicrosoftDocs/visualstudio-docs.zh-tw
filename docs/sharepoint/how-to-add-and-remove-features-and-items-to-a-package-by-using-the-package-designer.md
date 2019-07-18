@@ -1,5 +1,5 @@
 ---
-title: HOW TO：新增和移除功能和項目加入封裝時，使用封裝設計工具 |Microsoft Docs
+title: 封裝設計工具：新增 / 移除功能和封裝的項目
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -14,14 +14,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f76abaaa1210320c14175be2bb47828b7bd06aa9
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: fbd44bbf3b337815c8c72cea66dd4d56fc645ade
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56608093"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401617"
 ---
-# <a name="how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer"></a>HOW TO：新增和移除功能和項目加入封裝時，使用封裝設計工具
+# <a name="how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer"></a>作法：新增和移除功能和項目加入封裝時，使用封裝設計工具
   當您建立 SharePoint 方案時，Visual Studio 會將預設的 SharePoint 功能加入方案中的套件。 最終的部署之前，您可以新增並移除 SharePoint 專案項目及修改 SharePoint 封裝的功能。
 
  或者，您可以使用 [封裝總管] 中新增和移除 SharePoint 專案項目。 您也可以檢視和變更的階層會放入套件 (.wsp) 的功能與 SharePoint 專案項目。 如需詳細資訊，請參閱[如何：新增和移除功能和項目加入封裝時，使用 [封裝總管] 中](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer.md)。
@@ -52,7 +52,7 @@ ms.locfileid: "56608093"
 
 #### <a name="to-remove-sharepoint-features-with-the-package-designer"></a>若要移除 SharePoint 功能與封裝設計工具
 
-1.  在 **封裝中的項目**清單中，選擇您想要移除此項目，然後選擇的項目**移除**(<) 按鈕，或選擇**全部移除**按鈕 (<<) 移除所有項目。
+1. 在 **封裝中的項目**清單中，選擇您想要移除此項目，然後選擇的項目**移除**(<) 按鈕，或選擇**全部移除**按鈕 (<<) 移除所有項目。
 
      SharePoint 項目會出現在**方案中的項目**清單。
 

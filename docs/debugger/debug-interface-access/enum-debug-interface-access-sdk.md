@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d40e0dd4f831ffa5a2da5e9143c907334eef8926
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56605662"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62554788"
 ---
 # <a name="enum-debug-interface-access-sdk"></a>Enum (偵錯介面存取 SDK)
 列舉型別由識別`SymTagEnum`符號。 每個列舉值會顯示為類別子系`SymTagConstant`標記。
@@ -26,7 +26,7 @@ ms.locfileid: "56605662"
 ## <a name="properties"></a>屬性
  下表顯示此符號類型的其他有效屬性。
 
-|屬性|資料類型|說明|
+|屬性|資料類型|描述|
 |--------------|---------------|-----------------|
 |[IDiaSymbol::get_baseType](../../debugger/debug-interface-access/idiasymbol-get-basetype.md)|`DWORD`|其中一個[BasicType 列舉](../../debugger/debug-interface-access/basictype.md)值。|
 |[IDiaSymbol::get_classParent](../../debugger/debug-interface-access/idiasymbol-get-classparent.md)|`IDiaSymbol*`|這個列舉型別，如果有任何類別父代。|
@@ -51,5 +51,5 @@ ms.locfileid: "56605662"
 |[IDiaSymbol::get_unalignedType](../../debugger/debug-interface-access/idiasymbol-get-unalignedtype.md)|`BOOL`|`TRUE` 如果列舉型別是未對齊。|
 |[IDiaSymbol::get_volatileType](../../debugger/debug-interface-access/idiasymbol-get-volatiletype.md)|`BOOL`|`TRUE` 如果列舉型別會標示為 volatile。|
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [符號類型的類別階層架構](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md)

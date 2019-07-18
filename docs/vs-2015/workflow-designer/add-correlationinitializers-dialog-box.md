@@ -1,11 +1,8 @@
 ---
 title: 新增 CorrelationInitializers 對話方塊 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - AddCorrelationInitializers.UI
@@ -13,13 +10,13 @@ ms.assetid: c0517467-d54a-4ee6-aef0-c19b96b6f395
 caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 4d4d69185bef36ab514c984716cc6606f6068fb4
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 0c90a2d0e0297a00454e38f428093a2f2db1e46d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49275687"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62977479"
 ---
 # <a name="add-correlationinitializers-dialog-box"></a>加入相互關聯初始設定式對話方塊
 **加入相互關聯初始設定式** 對話方塊會在[!INCLUDE[wfd1](../includes/wfd1-md.md)]若要設定**CorrelationInitializers**屬性<xref:System.ServiceModel.Activities.Send>， <xref:System.ServiceModel.Activities.Receive>， <xref:System.ServiceModel.Activities.SendReply>，及<xref:System.ServiceModel.Activities.ReceiveReply>活動。 [!INCLUDE[crabout](../includes/crabout-md.md)] 活動設計工具使用此方塊中，請參閱[傳送](../workflow-designer/send-activity-designer.md)，[接收](../workflow-designer/receive-activity-designer.md)， [ReceiveAndSendReply](../workflow-designer/receiveandsendreply-template-designer.md)，以及[SendAndReceiveReply](../workflow-designer/sendandreceivereply-template-designer.md)主題。  
@@ -40,5 +37,4 @@ ms.locfileid: "49275687"
  **接收**活動設計工具可以從拖曳**工具箱**，放入[!INCLUDE[wfd2](../includes/wfd2-md.md)]介面任一處通常用來放置活動。 這會建立一個 <xref:System.ServiceModel.Activities.Receive> 活動，具有 Receive 的預設 <xref:System.Activities.Activity.DisplayName%2A>。 選取 **接收**活動設計工具 和 （集合） 文字旁邊的省略符號按鈕的 click **CorrelationInitializers**屬性的屬性方格中**新增相互關聯初始設定式**出現的對話方塊。  
   
 ## <a name="see-also"></a>另請參閱  
- [加入相互關聯對話方塊](http://msdn.microsoft.com/en-us/9e41a149-e8ab-41b1-8886-ea06a63041b6)   
  [初始化相互關聯對話方塊](../workflow-designer/initialize-correlation-dialog-box.md)

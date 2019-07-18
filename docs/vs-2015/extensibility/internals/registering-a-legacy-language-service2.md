@@ -1,14 +1,9 @@
 ---
 title: 註冊舊版語言服務 2 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - registration, language services
 - language services, registry information
@@ -16,29 +11,29 @@ helpviewer_keywords:
 ms.assetid: ca312aa3-f9f1-4572-8553-89bf3a724deb
 caps.latest.revision: 25
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: c9077ca36a560c51ec8f8455cc04fb2fe9ba09eb
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 07d70bb1d77dc3022b06c4036317e31692307f98
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51803652"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68188842"
 ---
 # <a name="registering-a-legacy-language-service"></a>註冊舊版語言服務
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 下列各節提供的登錄項目清單的各種語言中可用的服務選項[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]。  
   
- 登錄項目下, 面*VS Reg 根*等於 hkey_local_machine\software\microsoft\visualstudio \\\*X.Y*，其中*X.Y*是[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]版本號碼。  
+ 登錄項目下, 面*VS Reg 根*等於 hkey_local_machine\software\microsoft\visualstudio \\*X.Y*，其中*X.Y*是[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]版本號碼。  
   
 ## <a name="registry-entries-for-language-service-options"></a>語言服務選項的登錄項目  
  *VS Reg 根*\Languages\Language Services\\*語言名稱*索引鍵可以包含下列值。  
   
-|名稱|類型|範圍|描述|  
+|名稱|類型|Range|說明|  
 |----------|----------|-----------|-----------------|  
-|(預設值)|REG_SZ|*\<GUID &GT;*|語言服務的 GUID。|  
+|(預設值)|REG_SZ|*\<GUID>*|語言服務的 GUID。|  
 |LangResID|REG_DWORD|0x0-0xffff|字串資源識別項 (ResID) 語言的當地語系化的文字名稱。|  
-|Package|REG_SZ|*\<GUID &GT;*|VSPackage 的 GUID。|  
+|套件|REG_SZ|*\<GUID>*|VSPackage 的 GUID。|  
 |ShowCompletion|REG_DWORD|0-1|指定是否**陳述式完成**中的選項**選項**對話方塊會啟用。|  
 |ShowSmartIndent|REG_DWORD|0-1|指定是否可以選取**智慧型**中的縮排**選項** 對話方塊中已啟用。|  
 |RequestStockColors|REG_DWORD|0-1|指定是否為自訂或預設的色彩來將色彩關鍵字。|  
@@ -71,7 +66,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 ## <a name="registry-entries-for-debugger-languages-options"></a>如需偵錯工具的語言選項的登錄項目  
  *VS Reg 根*\Languages\Language Services\\*語言名稱*\Debugger 語言\\*GUID*\ 索引鍵可以包含下列項目值。  
   
-|名稱|類型|範圍|描述|  
+|名稱|類型|Range|說明|  
 |----------|----------|-----------|-----------------|  
 |(預設值)|REG_SZ|文字|預設值可以用於文件的語言名稱。 此索引鍵的名稱會有對應的項目中的運算式評估工具的 GUID  *\<VS Reg 根 >* \AD7Metrics\Expression 評估工具。|  
   
@@ -90,10 +85,10 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 ## <a name="registry-entries-for-editor-tools-options"></a>編輯器工具選項的登錄項目  
  您可以新增 EditorToolsOptions 機碼下的登錄機碼的屬性頁和屬性節點。 這些索引鍵和其值會識別中的屬性頁**選項** 對話方塊中 (在**工具**功能表)，用來設定語言服務。 在下列範例中，*頁面名稱*的 屬性 頁面中，名稱並*節點名稱*位於樹狀結構中節點的名稱**選項** 對話方塊。 必須個別指定，分頁項目和節點的項目。  
   
-|名稱|類型|範圍|描述|  
+|名稱|類型|Range|描述|  
 |----------|----------|-----------|-----------------|  
 |(預設值)|REG_SZ|resID|此選項 頁面的當地語系化的顯示名稱。 名稱可以是常值文字或 #`nnn`，其中`nnn`附屬 DLL 的指定 VSPackage 中的字串資源 id。|  
-|Package|REG_SZ|*GUID*|實作此選項頁面的 VSPackage 的 GUID。|  
+|套件|REG_SZ|*GUID*|實作此選項頁面的 VSPackage 的 GUID。|  
 |頁面|REG_SZ|*GUID*|屬性頁的 GUID，藉由呼叫要求從 VSPackage<xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetPropertyPage%2A>方法。 如果此登錄項目不存在，將登錄機碼描述的節點，不是頁面。|  
   
 ### <a name="example"></a>範例  
@@ -124,7 +119,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 ## <a name="registry-entries-for-file-name-extension-options"></a>檔案名稱副檔名選項的登錄項目  
  副檔名的項目應該包含前置的句點，例如".myext 」。  
   
-|名稱|類型|範圍|描述|  
+|名稱|類型|Range|說明|  
 |----------|----------|-----------|-----------------|  
 |(預設值)|REG_SZ|*GUID*|此檔案名稱副檔名類型的預設語言服務的服務 GUID。|  
   
@@ -141,14 +136,14 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 ## <a name="registry-entries-for-editor-options"></a>編輯器選項的登錄項目  
  *VS Reg 根*\Editors 索引鍵可以包含下列值：  
   
-|名稱|類型|範圍|描述|  
+|名稱|類型|Range|說明|  
 |----------|----------|-----------|-----------------|  
 |(預設值)|REG_SZ|""|未使用;您可以將您的名稱如文件。|  
 |DefaultToolboxTab|REG_SZ|""|若要將預設值，當編輯器是使用中的 [工具箱] 索引標籤的名稱。|  
 |DisplayName|REG_SZ|resID|要在 [顯示名稱**開啟**] 對話方塊。 名稱為標準格式字串資源識別碼或名稱。|  
 |ExcludeDefTextEditor|REG_DWORD|0-1|用於**開啟**功能表命令。 如果您不要在清單中可用的編輯器清單的特定檔案類型的預設文字編輯器，設定此值為 1。|  
-|LinkedEditorGUID|REG_SZ|*\<GUID &GT;*|用於可以使用字碼頁支援開啟檔案的任何語言服務。 例如，當您開啟.txt 檔案使用**開啟**命令時，會提供使用原始程式碼編輯器，包含或不含編碼的選項。<br /><br /> 指定名稱之子機碼的 GUID 是字碼頁編輯器 factory;這個特定的登錄項目中指定的連結的 GUID 是一般編輯器 factory。 這個項目的是，如果在 IDE 不會使用預設的編輯器開啟檔案，IDE 會嘗試使用清單中的下一個編輯器。 這個下一步 的編輯器應該不會是字碼頁編輯器 factory，因為此編輯器 factory 基本上是編輯器 factory 失敗的相同。|  
-|Package|REG_SZ|*\<GUID &GT;*|顯示名稱的 ResID VSPackage 的 GUID。|  
+|LinkedEditorGUID|REG_SZ|*\<GUID>*|用於可以使用字碼頁支援開啟檔案的任何語言服務。 例如，當您開啟.txt 檔案使用**開啟**命令時，會提供使用原始程式碼編輯器，包含或不含編碼的選項。<br /><br /> 指定名稱之子機碼的 GUID 是字碼頁編輯器 factory;這個特定的登錄項目中指定的連結的 GUID 是一般編輯器 factory。 這個項目的是，如果在 IDE 不會使用預設的編輯器開啟檔案，IDE 會嘗試使用清單中的下一個編輯器。 這個下一步 的編輯器應該不會是字碼頁編輯器 factory，因為此編輯器 factory 基本上是編輯器 factory 失敗的相同。|  
+|套件|REG_SZ|*\<GUID>*|顯示名稱的 ResID VSPackage 的 GUID。|  
   
 ### <a name="example"></a>範例  
   
@@ -166,10 +161,10 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 ## <a name="registry-entries-for-logical-view-options"></a>如需邏輯檢視選項的登錄項目  
  *VS Reg 根*\Editors\\*編輯器 GUI >* \LogicalViews 索引鍵可以包含下列值。  
   
-|名稱|類型|範圍|描述|  
+|名稱|類型|Range|描述|  
 |----------|----------|-----------|-----------------|  
 |(預設值)|REG_SZ||未使用。|  
-|*\<GUID &GT;*|REG_SZ|""|若要支援的邏輯檢視的索引鍵。 視需要您可以有許多種。 登錄項目的名稱是什麼是重要的是，不是值，這一律是空字串。|  
+|*\<GUID>*|REG_SZ|""|若要支援的邏輯檢視的索引鍵。 視需要您可以有許多種。 登錄項目的名稱是什麼是重要的是，不是值，這一律是空字串。|  
   
 ### <a name="example"></a>範例  
   
@@ -188,10 +183,10 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 ## <a name="registry-entries-for-editor-extension-options"></a>如需編輯器延伸模組選項的登錄項目  
  *VS Reg 根*\Editors\\*編輯器 GUID*\Extensions 索引鍵可以包含下列值。 檔案名稱的副檔名不包括前置的句點。  
   
-|名稱|類型|範圍|描述|  
+|名稱|類型|Range|描述|  
 |----------|----------|-----------|-----------------|  
 |(預設值)|REG_SZ||未使用。|  
-|*\<ext >*|REG_DWORD|0-0xffffffff|擴充功能的相對優先權。 如果兩個或多個語言都共用同一個延伸模組，則會選擇較高優先順序的語言。|  
+|*\<ext>*|REG_DWORD|0-0xffffffff|擴充功能的相對優先權。 如果兩個或多個語言都共用同一個延伸模組，則會選擇較高優先順序的語言。|  
   
  此外，目前使用者的預設選項，編輯器會儲存在 HKEY_Current_User\Software\Microsoft\VisualStudio\\*X.Y*\Default 編輯器\\*ext*。選取的語言服務的 GUID 是自訂項目中。 這個選項的目前使用者的優先順序。  
   
@@ -214,7 +209,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\9.0\
   
  這些登錄項目透過存取<xref:Microsoft.VisualStudio.Package.LanguagePreferences>類別。  
   
-|名稱|類型|範圍|描述|  
+|名稱|類型|Range|說明|  
 |----------|----------|-----------|-----------------|  
 |CodeSense|REG_DWORD|0-1|IntelliSense 作業的支援。|  
 |MatchBraces|REG_DWORD|0-1|成對大括號、 括號和方括號等的語言支援。|  
@@ -246,4 +241,3 @@ ExampleHKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
   
 ## <a name="see-also"></a>另請參閱  
  [開發舊版語言服務](../../extensibility/internals/developing-a-legacy-language-service.md)
-

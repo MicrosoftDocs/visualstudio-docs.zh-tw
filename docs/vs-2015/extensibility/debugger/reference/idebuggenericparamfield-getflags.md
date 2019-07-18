@@ -1,27 +1,22 @@
 ---
 title: IDebugGenericParamField::GetFlags |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - GetFlags
 - IDebugGenericParamField::GetFlags
 ms.assetid: adcbbca1-8960-4c88-86b0-8b9467056c97
 caps.latest.revision: 10
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 76ae283854bd8326f506ae4880af157ca95fbdbe
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 1fb4ecc3f09e4ffa8a8811867c9957ac685c76ed
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51740703"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68180700"
 ---
 # <a name="idebuggenericparamfieldgetflags"></a>IDebugGenericParamField::GetFlags
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -75,4 +70,3 @@ Error:
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md)
-

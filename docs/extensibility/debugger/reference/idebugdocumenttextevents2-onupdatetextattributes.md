@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugDocumentTextEvents2::onUpdateTextAttributes
 ms.assetid: eb68d69a-1ad9-4ce4-84e1-40979ef16634
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7b3e76c1eaf82763f461eb1a0b198a7653465970
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 3a1eb8d6d9f14fcad5358b4a358673e08f3395ff
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56718868"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66351360"
 ---
 # <a name="idebugdocumenttextevents2onupdatetextattributes"></a>IDebugDocumentTextEvents2::onUpdateTextAttributes
 文件中，已更新文字屬性會告知偵錯封裝。
@@ -38,14 +41,12 @@ int onUpdateTextAttributes( 
 );
 ```
 
-#### <a name="parameters"></a>參數
- `pos`
+## <a name="parameters"></a>參數
+`pos`\
+[in]A [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)結構，表示文字屬性已更新的位置。
 
- [in]A [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)結構，表示文字屬性已更新的位置。
-
- `dwNumToUpdate`
-
- [in]指定文字的已更新的字元數目。
+`dwNumToUpdate`\
+[in]指定文字的已更新的字元數目。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

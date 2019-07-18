@@ -1,5 +1,5 @@
 ---
-title: 轉換對話方塊
+title: 專案轉換器
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,25 +14,17 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: beabf926eb0f6496857d7fc552fe4924202647de
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: f720e842bb1f13aa726773af0dec499d32bfcc2d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55927590"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62838785"
 ---
 # <a name="convert-dialog-box"></a>轉換對話方塊
 
-[轉換] 對話方塊可讓您選取轉換工具，以從舊的專案建立新的專案 (例如從 Visual Basic 6 專案建立 [!INCLUDE[vbprvblong](../../ide/reference/includes/vbprvblong_md.md)] 專案)。 您也可以使用 [Visual Studio Project Converter](https://github.com/ssvaidya/VSProjectConverter)，來升級舊版 Visual Studio 所建立的專案。
+用於舊版 Visual Studio 的 [轉換] 對話方塊目前已淘汰。
 
-## <a name="open-the-convert-dialog-box"></a>開啟轉換對話方塊
-
-1.  在功能表列上，依序選擇 [檔案] 、[開啟] 和 [轉換] 。
-
-     您會看到一份目前可用的程式碼轉換工具清單。
-
-2.  選取適合您應用程式的工具。
-
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [移植、移轉和升級 Visual Studio 專案](../../porting/port-migrate-and-upgrade-visual-studio-projects.md)

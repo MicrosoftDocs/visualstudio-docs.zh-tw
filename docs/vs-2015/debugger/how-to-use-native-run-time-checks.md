@@ -1,14 +1,9 @@
 ---
-title: 如何： 使用原生執行階段檢查 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：使用原生執行階段檢查 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - c.runtime.errorchecks
 dev_langs:
@@ -45,18 +40,18 @@ ms.assetid: dc7b2f1e-5ff6-42e0-89b3-dc9dead83ee1
 caps.latest.revision: 24
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 4efbb4e151ea47f655f0b28e19d2811d5541e944
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: b50dda3e31e27fa5d177c3b0ba2790babd2a660f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51798751"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685862"
 ---
-# <a name="how-to-use-native-run-time-checks"></a>如何：使用原生執行階段檢查
+# <a name="how-to-use-native-run-time-checks"></a>作法：使用原生執行階段檢查
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-您可以在 Visual C++ 中使用原生 [runtime_checks](http://msdn.microsoft.com/library/ae50b43f-f88d-47ad-a2db-3389e9e7df5b) 來攔截最常見的執行階段錯誤，例如：  
+您可以在 Visual C++ 中使用原生 [runtime_checks](https://msdn.microsoft.com/library/ae50b43f-f88d-47ad-a2db-3389e9e7df5b) 來攔截最常見的執行階段錯誤，例如：  
   
 - 堆疊指標損壞  
   
@@ -82,18 +77,13 @@ ms.locfileid: "51798751"
   
 ### <a name="to-enable-native-run-time-checks-in-a-debug-build"></a>在偵錯組建中啟用原生的執行階段檢查  
   
--   使用 **/RTC** 選項，並與 C 語言執行階段程式庫的偵錯版本建立連結 (例如 /MDd)。  
+- 使用 **/RTC** 選項，並與 C 語言執行階段程式庫的偵錯版本建立連結 (例如 /MDd)。  
   
 ### <a name="to-modify-native-run-time-check-behavior"></a>修改原生的執行階段檢查行為  
   
--   使用 `runtime_checks` Pragma。  
+- 使用 `runtime_checks` Pragma。  
   
 ## <a name="see-also"></a>另請參閱  
  [Visual Studio 偵錯](../debugger/debugging-in-visual-studio.md)   
- [runtime_checks](http://msdn.microsoft.com/library/ae50b43f-f88d-47ad-a2db-3389e9e7df5b)   
- [執行階段錯誤檢查](http://msdn.microsoft.com/library/c965dd01-57ad-4a3c-b1d6-5aa04f920501)
-
-
-
-
-
+ [runtime_checks](https://msdn.microsoft.com/library/ae50b43f-f88d-47ad-a2db-3389e9e7df5b)   
+ [執行階段錯誤檢查](https://msdn.microsoft.com/library/c965dd01-57ad-4a3c-b1d6-5aa04f920501)

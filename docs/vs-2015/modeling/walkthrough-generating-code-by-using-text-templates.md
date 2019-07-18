@@ -1,12 +1,9 @@
 ---
-title: 逐步解說： 使用文字範本產生程式碼 |Microsoft Docs
-ms.custom: ''
+title: 逐步解說：使用文字範本產生程式碼 |Microsoft Docs
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - walkthroughs [text templates], generating application code
 - walkthroughs [text templates]
@@ -14,13 +11,13 @@ ms.assetid: 24602ade-baca-425e-a6ce-be09a2c7f7e1
 caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: bd360e07ca555bb7cb2c482970ab9a202f7bb630
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 37abc4862b12ab11239b2dd8a24b8c18acab2a51
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49932546"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446697"
 ---
 # <a name="walkthrough-generating-code-by-using-text-templates"></a>逐步解說：使用文字範本產生程式碼
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +30,7 @@ ms.locfileid: "49932546"
  在此範例專案中，範本會讀取範例 XML 檔案，並產生對應到每個節點類型的類別。 在手動撰寫的程式碼中，您可以使用這些類別來巡覽 XML 檔案。 您也可以在使用相同節點類型的任何其他檔案上執行應用程式。 範例 XML 檔案的目的是要提供您想要應用程式處理之所有節點類型的範例。  
   
 > [!NOTE]
->  [隨附的應用程式](http://go.microsoft.com/fwlink/?LinkId=178765)xsd.exe [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]可以從 XML 檔案產生強類型類別。 這裡示範的範本僅當成範例使用。  
+> [隨附的應用程式](http://go.microsoft.com/fwlink/?LinkId=178765)xsd.exe [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]可以從 XML 檔案產生強類型類別。 這裡示範的範本僅當成範例使用。  
   
  以下是範例檔案：  
   
@@ -89,9 +86,9 @@ foreach (XmlNode artist in catalog.SelectNodes("artist"))
   
 ##### <a name="to-create-the-project"></a>若要建立專案  
   
-1.  在 [檔案]  功能表上，依序按一下 [新增]  和 [專案] 。  
+1. 在 [檔案]  功能表上，依序按一下 [新增]  和 [專案]  。  
   
-2.  按一下 []  節點，然後按一下 [範本]  窗格中的 [主控台應用程式]   
+2. 按一下 []  節點，然後按一下 [範本]  窗格中的 [主控台應用程式]   
   
 ### <a name="add-a-prototype-xml-file-to-the-project"></a>將原型 XML 檔案新增至專案  
  此檔案的目的是要提供您想要應用程式可讀取之 XML 節點類型的範例。 它可以是將用於測試應用程式的檔案。 範本會為此檔案中的每個節點類型產生 C# 類別。  
@@ -100,7 +97,7 @@ foreach (XmlNode artist in catalog.SelectNodes("artist"))
   
 ##### <a name="to-add-an-xml-file"></a>新增 XML 檔案  
   
-1. 在方案總管 中，以滑鼠右鍵按一下專案，並按一下 [加入]  ，然後按一下 [新增項目] 。  
+1. 在方案總管  中，以滑鼠右鍵按一下專案，並按一下 [加入]  ，然後按一下 [新增項目]  。  
   
 2. 在 [加入新項目]  對話方塊中，從 [範本]  窗格中選取 [XML 檔案]  。  
   
@@ -111,7 +108,7 @@ foreach (XmlNode artist in catalog.SelectNodes("artist"))
    .  
   
 ### <a name="add-a-test-code-file"></a>新增測試程式碼檔案  
- 將 C# 檔案新增至您的專案，並在其中撰寫您可撰寫的程式碼範例。 例如:   
+ 將 C# 檔案新增至您的專案，並在其中撰寫您可撰寫的程式碼範例。 例如:  
   
 ```  
 using System;  
@@ -140,12 +137,12 @@ namespace MyProject
   
 ##### <a name="to-add-a-text-template-file-to-your-project"></a>將文字範本檔案新增至專案  
   
-1. 在方案總管 中，以滑鼠右鍵按一下專案，並按一下 [加入] ，然後按一下 [新項目] 。  
+1. 在方案總管  中，以滑鼠右鍵按一下專案，並按一下 [加入]  ，然後按一下 [新項目]  。  
   
 2. 在 [加入新項目]  對話方塊中，從 [範本]  窗格中選取 [文字範本]  。  
   
    > [!NOTE]
-   >  請確定您新增的是「文字範本」，而非「前置處理過的文字範本」。  
+   > 請確定您新增的是「文字範本」，而非「前置處理過的文字範本」。  
   
 3. 在檔案的範本指示詞中，將 `hostspecific` 屬性變更為 `true`。  
   
@@ -408,7 +405,7 @@ namespace MyProject
 ## <a name="conclusion"></a>結論  
  本逐步解說示範數個技術以及程式碼產生的優點︰  
   
-- *「程式碼產生」* (code generation) 是從 *「模型」*(model) 建立應用程式之原始程式碼的各個部分。 此模型以適合應用程式網域的表單來包含資訊，而且可能會隨著應用程式的存留期變更。  
+- *「程式碼產生」* (code generation) 是從 *「模型」* (model) 建立應用程式之原始程式碼的各個部分。 此模型以適合應用程式網域的表單來包含資訊，而且可能會隨著應用程式的存留期變更。  
   
 - 強類型是程式碼產生的一個優點。 雖然此模型以更適合使用者的表單來呈現資訊，但是產生的程式碼可讓應用程式的其他部分使用一組類型資訊來處理資訊。  
   
@@ -421,11 +418,8 @@ namespace MyProject
   在此逐步解說中，實際上是從模型執行個體產生程式碼，這是應用程式將處理之 XML 檔案的代表性範例。 在更正式的方法中，XML 結構描述會是範本的輸入，而形式為 .xsd 檔案或網域特定語言定義。 該方法可讓範本更輕鬆地判斷特性 (例如關聯性的多重性)。  
   
 ## <a name="troubleshooting-the-text-template"></a>對文字範本進行疑難排解  
- 如果您在 [錯誤清單] 中看到範本轉換或編譯錯誤，或未正確地產生輸出檔案，則可以使用[使用 TextTransform 公用程式產生檔案](../modeling/generating-files-with-the-texttransform-utility.md)中所述的技術對文字範本進行疑難排解。  
+ 如果您在 [錯誤清單]  中看到範本轉換或編譯錯誤，或未正確地產生輸出檔案，則可以使用[使用 TextTransform 公用程式產生檔案](../modeling/generating-files-with-the-texttransform-utility.md)中所述的技術對文字範本進行疑難排解。  
   
 ## <a name="see-also"></a>另請參閱  
  [使用 T4 文字範本在設計階段產生程式碼](../modeling/design-time-code-generation-by-using-t4-text-templates.md)   
  [撰寫 T4 文字範本](../modeling/writing-a-t4-text-template.md)
-
-
-

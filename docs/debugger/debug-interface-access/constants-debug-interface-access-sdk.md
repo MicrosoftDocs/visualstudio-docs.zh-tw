@@ -14,17 +14,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ed505499efcabd7173fea9d668cd9afa5ed6d925
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56608574"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62555074"
 ---
 # <a name="constants-debug-interface-access-sdk"></a>常數 (偵錯介面存取 SDK)
 這些字串常數可用來識別不同的區段，透過 DIA SDK 的程式偵錯資料庫 (PDB) 檔。
 
 ## <a name="constants"></a>常數
-以下被宣告為 C/c + + 巨集。
+下列宣告為 C /C++巨集。
 
 |巨集|值|
 |-----------|-----------|
@@ -55,7 +55,7 @@ HRESULT GetSymbolTable(IDiaEnumTables *pEnumTables, IDiaTable **pTable)
 ## <a name="requirements"></a>需求
 標頭： dia2.h
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [參考資料](../../debugger/debug-interface-access/debug-interface-access-sdk-reference.md)
 - [列舉和結構](../../debugger/debug-interface-access/enumerations-and-structures.md)
 - [介面 (偵錯介面存取 SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)

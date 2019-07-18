@@ -8,17 +8,20 @@ helpviewer_keywords:
 - GetDocumentContext method
 - IDebugActivateDocumentEvent2::GetDocumentContext method
 ms.assetid: e7472069-7337-4ef4-8f8a-8c027a2e22f4
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 45923ef6d219e7f7dd79581856d0875b792130d2
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 8dcef9858b8b210dac6f64de713a1efff4a8d63c
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56720324"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66318019"
 ---
 # <a name="idebugactivatedocumentevent2getdocumentcontext"></a>IDebugActivateDocumentEvent2::GetDocumentContext
 取得文件內容，描述偵錯封裝成為作用中的文件中的位置。
@@ -37,10 +40,9 @@ int GetDocumentContext ( 
 );
 ```
 
-#### <a name="parameters"></a>參數
- `ppDocContext`
-
- [out]傳回[IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)物件，表示來源檔案的文件中的位置。
+## <a name="parameters"></a>參數
+`ppDocContext`\
+[out]傳回[IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)物件，表示來源檔案的文件中的位置。
 
 ## <a name="remarks"></a>備註
  若要顯示插入號，例如，可能會使用這個位置。

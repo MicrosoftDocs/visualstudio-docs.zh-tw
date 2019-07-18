@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - source control packages, about source control packages
 ms.assetid: 60b3326e-e7e2-4729-95fc-b682e7ad5c99
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: de43eaa56b4405c48be423f94b905cb845cc9843
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: ba0ac240c8b8a93b6afbf1ec7dd580090ee54fd9
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56628139"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66351615"
 ---
 # <a name="determine-whether-to-implement-a-source-control-vspackage"></a>判斷是否要實作原始檔控制 VSPackage
 本節中，將詳細說明選擇原始檔控制外掛程式和原始檔控制 Vspackage 擴充原始檔控制解決方案，並提供廣泛的指導方針選擇適合整合路徑的相關。
@@ -28,13 +28,13 @@ ms.locfileid: "56628139"
 
  如果您想要實作原始檔控制解決方案，可提供彈性和更能控制的原始檔控制邏輯和 UI，您可能偏好的原始檔控制套件整合路由。 您可以：
 
-1.  註冊您自己的原始檔控制 VSPackage (請參閱[註冊和選取](../../extensibility/internals/registration-and-selection-source-control-vspackage.md))。
+1. 註冊您自己的原始檔控制 VSPackage (請參閱[註冊和選取](../../extensibility/internals/registration-and-selection-source-control-vspackage.md))。
 
-2.  您的自訂 UI 以取代預設原始檔控制 UI (請參閱[自訂使用者介面](../../extensibility/internals/custom-user-interface-source-control-vspackage.md))。
+2. 您的自訂 UI 以取代預設原始檔控制 UI (請參閱[自訂使用者介面](../../extensibility/internals/custom-user-interface-source-control-vspackage.md))。
 
-3.  指定要使用，並處理方案總管 中的圖像 （glyph） 事件的圖像 （glyph） (請參閱[字符控制](../../extensibility/internals/glyph-control-source-control-vspackage.md))。
+3. 指定要使用，並處理方案總管 中的圖像 （glyph） 事件的圖像 （glyph） (請參閱[字符控制](../../extensibility/internals/glyph-control-source-control-vspackage.md))。
 
-4.  處理查詢編輯並查詢儲存的事件 (請參閱[查詢編輯查詢儲存](../../extensibility/internals/query-edit-query-save-source-control-vspackage.md))。
+4. 處理查詢編輯並查詢儲存的事件 (請參閱[查詢編輯查詢儲存](../../extensibility/internals/query-edit-query-save-source-control-vspackage.md))。
 
 ## <a name="see-also"></a>另請參閱
 - [建立原始檔控制外掛程式](../../extensibility/internals/creating-a-source-control-plug-in.md)

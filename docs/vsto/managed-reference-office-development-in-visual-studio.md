@@ -13,18 +13,18 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d6fa14bfffb500ab107523bc7444efa12f930e0c
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: f8ff9a196fb459359502e4c9f8599fbdeff3e1ce
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56646756"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438801"
 ---
 # <a name="managed-reference-office-development-in-visual-studio"></a>Managed 的參考 （在 Visual Studio 中的 Office 程式開發）
   本節包含命名空間的應用程式開發介面參考文件，和用在目標為 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 或 [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]之 Office 專案中的類型。 如需命名空間和類型的.NET Framework 3.5 為目標的 Office 專案所使用的 API 參考文件，請參閱 Visual Studio 文件中的下列參考章節： [ http://go.microsoft.com/fwlink/?LinkId=160658 ](http://go.microsoft.com/fwlink/?LinkId=160658)。
 
 > [!NOTE]
->  想要開發解決方案，擴充的 Office 體驗，跨[多個平台](https://dev.office.com/add-in-availability)嗎？ 查看新[Office 增益集模型](https://dev.office.com/docs/add-ins/overview/office-add-ins)。 Office 增益集較小的使用量，相較於 VSTO 增益集和解決方案，而且您可以使用幾乎任何 web 程式設計技術，例如 HTML5、 JavaScript、 CSS3、 以及 XML 來建置。
+> 想要開發解決方案，擴充的 Office 體驗，跨[多個平台](https://dev.office.com/add-in-availability)嗎？ 查看新[Office 增益集模型](https://dev.office.com/docs/add-ins/overview/office-add-ins)。 Office 增益集較小的使用量，相較於 VSTO 增益集和解決方案，而且您可以使用幾乎任何 web 程式設計技術，例如 HTML5、 JavaScript、 CSS3、 以及 XML 來建置。
 
 ## <a name="in-this-section"></a>本節內容
  <xref:Microsoft.Office.Tools>

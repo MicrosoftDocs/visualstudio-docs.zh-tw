@@ -1,27 +1,22 @@
 ---
 title: VSPackage 結構 (原始檔控制 VSPackage) |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - VSPackages, structure
 - source control packages, VSPackage overview
 ms.assetid: 92722be7-b397-48c3-a7a7-0b931a341961
 caps.latest.revision: 27
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 6eaad545d1c1b3fe96ecbad3a88cc7636b777a54
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 08bb0a296daca0de1c02b905a75fb10ce05f254e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51737985"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68206001"
 ---
 # <a name="vspackage-structure-source-control-vspackage"></a>VSPackage 結構 (原始檔控制 VSPackage)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -49,7 +44,7 @@ ms.locfileid: "51737985"
   
 - 方案  
   
-- Windows  
+- 視窗  
   
 - 執行中的文件表格  
   
@@ -82,4 +77,3 @@ ms.locfileid: "51737985"
 ## <a name="see-also"></a>另請參閱  
  [設計元素](../../extensibility/internals/source-control-vspackage-design-elements.md)   
  [相關的服務和介面](../../extensibility/internals/related-services-and-interfaces-source-control-vspackage.md)
-

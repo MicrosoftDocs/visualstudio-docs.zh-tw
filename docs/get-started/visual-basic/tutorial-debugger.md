@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dc450217dc6b0055a14cccd02c471329870a74ac
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
+ms.openlocfilehash: 070de03f56f6d9d10a9e6a41516ffcb67837e90e
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56155524"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65680301"
 ---
 # <a name="tutorial-learn-to-debug-visual-basic-code-using-visual-studio"></a>教學課程：了解如何使用 Visual Studio 對 Visual Basic 程式碼進行偵錯
 
@@ -36,25 +36,47 @@ ms.locfileid: "56155524"
 
 ## <a name="prerequisites"></a>必要條件
 
-* 您必須安裝 Visual Studio 2017 和 **.NET 桌面開發**工作負載。
+::: moniker range=">=vs-2019"
 
-    如果您尚未安裝 Visual Studio，請前往  [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) 頁面免費進行安裝。
+您必須安裝 Visual Studio 2019 和 **.NET 桌面開發**工作負載。
 
-    如果您需要安裝工作負載，但已擁有 Visual Studio，請在 [新增專案] 對話方塊 (選取 [檔案] > [新增] > [專案]) 的左窗格中，按一下 [開啟 Visual Studio 安裝程式]。 Visual Studio 安裝程式即會啟動。 選擇 [.NET 桌面開發] 工作負載，然後選擇 [修改]。
+::: moniker-end
+::: moniker range="vs-2017"
+
+您必須安裝 Visual Studio 2017 和 **.NET 桌面開發**工作負載。
+
+::: moniker-end
+
+::: moniker range="vs-2017"
+
+如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)頁面免費進行安裝。
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019)頁面免費進行安裝。
+
+::: moniker-end
+
+如果您需要安裝工作負載，但已安裝 Visual Studio，請移至 [工具] > [取得工具與功能...]，以開啟 Visual Studio 安裝程式。 Visual Studio 安裝程式即會啟動。 選擇 [.NET 桌面開發] 工作負載，然後選擇 [修改]。
 
 ## <a name="create-a-project"></a>建立專案
 
-1. 在 Visual Studio 中，選擇 [檔案] > [新增專案]。
+1. 開啟 Visual Studio。
 
-2. 在 [Visual Basic] 下方，選擇 [Windows 桌面]，然後在中間窗格中選擇 [主控台應用程式]。
+    ::: moniker range=">=vs-2019"
+    按 **Esc** 關閉開始視窗。 鍵入 **Ctrl + Q** 來開啟 [搜尋] 方塊，鍵入 **visual basic**，選擇 [範本]，然後選擇 [建立新的主控台應用程式 (.NET Framework) 專案]。 在出現的對話方塊中鍵入名稱，例如 **get-started-debugging**，然後選擇 [建立]。
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    從頂端功能表列中，選擇 [檔案] > [新增] > [專案]。 在 [新增專案] 對話方塊左窗格的 [Visual Basic] 下，選擇 [Windows Desktop]，然後在中間窗格中選擇 [主控台應用程式 (.NET Framework)]。 然後，鍵入 **get-started-debugging** 之類的名稱，並按一下 [確定]。
+    ::: moniker-end
 
-    如果您沒有看到 [主控台應用程式] 專案範本，請在 [新增專案] 對話方塊的左窗格中，按一下 [開啟 Visual Studio 安裝程式] 連結。 Visual Studio 安裝程式即會啟動。 選擇 [.NET 桌面開發] 工作負載，然後選擇 [修改]。
-
-3. 鍵入 **get-started-debugging** 之類的名稱，並按一下 [確定]。
+    如果您看不到 [主控台應用程式 (.NET Framework)] 專案範本，請移至 [工具] > [取得工具與功能...]，其會開啟 Visual Studio 安裝程式。 選擇 [.NET 桌面開發] 工作負載，然後選擇 [修改]。
 
     Visual Studio 會建立專案。
 
-4. 在 *Program.cs* 中，取代下列程式碼
+1. 在 *Module1.vb* 中，將下列程式碼
 
     ```vb
     Module Module1
@@ -325,7 +347,7 @@ ms.locfileid: "56155524"
 
     您可以按兩下某一行的程式碼來查看其原始程式碼，這也會變更偵錯工具所檢查的目前範圍。 此動作不會讓偵錯工具往前推進。
 
-    您也可以從 [呼叫堆疊] 視窗使用滑鼠右鍵功能表來執行其他動作。 例如，您可以在指定的函式中插入中斷點，使用 [執行至游標處] 讓偵錯工具往前推進，並檢查原始程式碼。 如需詳細資訊，請參閱[＜How to：檢查呼叫堆疊](../../debugger/how-to-use-the-call-stack-window.md)。
+    您也可以從 [呼叫堆疊] 視窗使用滑鼠右鍵功能表來執行其他動作。 例如，您可以在指定的函式中插入中斷點，使用 [執行至游標處] 讓偵錯工具往前推進，並檢查原始程式碼。 如需詳細資訊，請參閱[如何：檢查呼叫堆疊](../../debugger/how-to-use-the-call-stack-window.md)。
 
 ## <a name="change-the-execution-flow"></a>變更執行流程
 

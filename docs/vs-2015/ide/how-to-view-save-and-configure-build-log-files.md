@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6826a2f2618ee77944102245781a8df3b2a4596b
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 7bd8bae0213755b11c145c4bef9c312fe3990c4d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54760053"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432319"
 ---
 # <a name="how-to-view-save-and-configure-build-log-files"></a>如何：檢閱、儲存和設定建置記錄檔
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,25 +25,25 @@ ms.locfileid: "54760053"
   
 ### <a name="to-view-the-build-log-file-for-a-c-project"></a>檢視 C++ 專案的組建記錄檔  
   
-1.  在 Windows 檔案總管或檔案總管中，開啟下列檔案：\\...\Visual Studio <版本>\Projects\\<專案名稱>\\<專案名稱>\Debug\\<專案名稱>.txt  
+1. 在 Windows 檔案總管或檔案總管中，開啟下列檔案：\\...\Visual Studio <版本>\Projects\\<專案名稱>\\<專案名稱>\Debug\\<專案名稱>.txt  
   
 ### <a name="to-create-a-build-log-file-for-a-managed-code-project"></a>建立受控碼專案的組建記錄檔  
   
-1.  在功能表列上，選擇 [建置] 、[建置方案] 。  
+1. 在功能表列上，選擇 [建置] 、[建置方案] 。  
   
-2.  在 [輸出] 視窗中，反白顯示來自組建的資訊，然後將它複製到剪貼簿。  
+2. 在 [輸出] 視窗中，反白顯示來自組建的資訊，然後將它複製到剪貼簿。  
   
-3.  開啟文字編輯器，例如 [記事本]，將資訊貼到檔案中，然後儲存它。  
+3. 開啟文字編輯器，例如 [記事本]，將資訊貼到檔案中，然後儲存它。  
   
 ### <a name="to-change-the-amount-of-information-included-in-the-build-log"></a>變更組建記錄檔中包含的資訊量  
   
-1.  在功能表列上選擇 [工具] 、[選項] 。  
+1. 在功能表列上選擇 [工具] 、[選項] 。  
   
-2.  在 [專案和解決方案] 頁面上，選擇 [建置並執行] 頁面。  
+2. 在 [專案和解決方案] 頁面上，選擇 [建置並執行] 頁面。  
   
-3.  在 [MSBuild 專案建置輸出詳細資訊層級] 清單中，選擇下列其中一個值，然後選擇 [確定] 按鈕。  
+3. 在 [MSBuild 專案建置輸出詳細資訊層級] 清單中，選擇下列其中一個值，然後選擇 [確定] 按鈕。  
   
-    |詳細資訊層級|描述|  
+    |詳細資訊層級|說明|  
     |---------------------|-----------------|  
     |Quiet|只顯示組建摘要。|  
     |最小|顯示組建的摘要，及已分類為高重要性的錯誤、警告和訊息。|  
@@ -54,7 +54,7 @@ ms.locfileid: "54760053"
      如需詳細資訊，請參閱[選項對話方塊、專案和解決方案、建置並執行](../ide/reference/options-dialog-box-projects-and-solutions-build-and-run.md) 及 <xref:Microsoft.Build.Framework.LoggerVerbosity>。  
   
     > [!IMPORTANT]
-    >  您必須重建專案，您的變更才會在 [輸出] 視窗 (所有專案) 和 <專案名稱>.txt 檔案 C++ 專案) 中生效。  
+    > 您必須重建專案，您的變更才會在 [輸出] 視窗 (所有專案) 和 <專案名稱>.txt 檔案 C++ 專案) 中生效。  
   
 ## <a name="see-also"></a>請參閱  
  [取得組建記錄檔](../msbuild/obtaining-build-logs-with-msbuild.md)   

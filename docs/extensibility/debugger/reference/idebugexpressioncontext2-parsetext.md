@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugExpressionContext2::ParseText
 ms.assetid: f58575db-f926-4ac8-83ff-7b3b86ab61e2
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 14debc141236558090116ff40f3f515c189b70ef
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 170183924c31933f77903a89851c15c463c326e6
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56677952"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66325904"
 ---
 # <a name="idebugexpressioncontext2parsetext"></a>IDebugExpressionContext2::ParseText
 剖析文字格式，供稍後評估的運算式。
@@ -46,30 +49,24 @@ int ParseText(
 );
 ```
 
-#### <a name="parameters"></a>參數
-`pszCode`
+## <a name="parameters"></a>參數
+`pszCode`\
+[in]要剖析的運算式。
 
- [in]要剖析的運算式。
+`dwFlags`\
+[in]從旗標的組合[PARSEFLAGS](../../../extensibility/debugger/reference/parseflags.md)控制剖析的列舉型別。
 
-`dwFlags`
+`nRadix`\
+[in]要用於剖析中的任何數字資訊基數`pszCode`。
 
- [in]從旗標的組合[PARSEFLAGS](../../../extensibility/debugger/reference/parseflags.md)控制剖析的列舉型別。
+`ppExpr`\
+[out]傳回[IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md)物件，表示剖析的運算式，可供繫結和評估。
 
-`nRadix`
+`pbstrError`\
+[out]如果運算式包含錯誤，則傳回錯誤訊息。
 
- [in]要用於剖析中的任何數字資訊基數`pszCode`。
-
-`ppExpr`
-
- [out]傳回[IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md)物件，表示剖析的運算式，可供繫結和評估。
-
-`pbstrError`
-
- [out]如果運算式包含錯誤，則傳回錯誤訊息。
-
-`pichError`
-
- [out]傳回字元的索引中的錯誤`pszCode`如果運算式包含錯誤。
+`pichError`\
+[out]傳回字元的索引中的錯誤`pszCode`如果運算式包含錯誤。
 
 ## <a name="return-value"></a>傳回值
 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

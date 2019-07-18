@@ -1,27 +1,22 @@
 ---
 title: 自訂使用者介面 (原始檔控制 VSPackage) |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - user interface, source control packages
 - source control packages, user interface
 ms.assetid: f35ddb24-53bf-461e-b34f-7414f657c082
 caps.latest.revision: 29
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 237a79fe0225f54bd8be1f779f241bc54f13cd09
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f03713213ec2e54ed8d82d7528dae12cefab7ebc
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51728531"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68154982"
 ---
 # <a name="custom-user-interface-source-control-vspackage"></a>自訂使用者介面 (原始檔控制 VSPackage)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -56,7 +51,7 @@ VSPackage 透過 Visual Studio Command Table (.vsct) 檔案中宣告它的功能
   
   下表描述的特定詳細資料，關於如何[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]IDE 會隱藏不同的 UI 項目。  
   
-|UI 項目|描述|  
+|UI 項目|說明|  
 |-------------|-----------------|  
 |功能表與工具列|原始檔控制套件必須將初始的功能表和工具列可見性狀態設定為中的原始檔控制封裝識別碼[VisibilityConstraints](../../extensibility/visibilityconstraints-element.md) .vsct 檔的區段。 這可讓[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]IDE 載入 VSPackage 和呼叫的實作不正確設定功能表項目的狀態<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A>方法。|  
 |工具視窗|原始檔控制 VSPackage 會隱藏進行非作用中時，它擁有任何工具視窗。|  
@@ -69,4 +64,3 @@ VSPackage 透過 Visual Studio Command Table (.vsct) 檔案中宣告它的功能
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterScciProvider>   
  <xref:EnvDTE.Constants.vsContextNoSolution>   
  [管理 VSPackage](../../extensibility/managing-vspackages.md)
-

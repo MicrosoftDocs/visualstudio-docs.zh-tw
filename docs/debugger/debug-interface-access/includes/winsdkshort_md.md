@@ -13,11 +13,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.openlocfilehash: 9d245749a437213ba08c63e4ce7873809c6b08cb
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: d676f365b2a4f8afa163e1c625f48741044af3df
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38811936"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "68146805"
 ---
 Windows SDK

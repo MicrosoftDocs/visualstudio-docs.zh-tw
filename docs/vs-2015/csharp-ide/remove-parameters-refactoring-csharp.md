@@ -1,14 +1,9 @@
 ---
 title: 移除參數重構 (C#) |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - vs.csharp.refactoring.remove
 dev_langs:
@@ -21,13 +16,13 @@ ms.assetid: f4fc3265-0ef8-4398-a691-c338178697a6
 caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
-manager: wpickett
-ms.openlocfilehash: c9559deda5c5cdc60adc10246196fb66646cfee5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 40a884fe2ae6aaf73256d8edbcbd083a193b0342
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49284384"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444628"
 ---
 # <a name="remove-parameters-refactoring-c"></a>移除參數重構 (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,11 +32,11 @@ ms.locfileid: "49284384"
  您第一遊標定位在方法、 索引子或委派執行移除參數的作業。 在位置，叫用 移除資料指標時`Parameters`作業中，按一下**重構**功能表上，按下鍵盤快速鍵，或從快顯功能表選取命令。  
   
 > [!NOTE]
->  您無法擴充方法中移除第一個參數。  
+> 您無法擴充方法中移除第一個參數。  
   
 ### <a name="to-remove-parameters"></a>若要移除參數  
   
-1.  建立名為主控台應用程式`RemoveParameters`，然後取代`Program`為下列程式碼。  
+1. 建立名為主控台應用程式`RemoveParameters`，然後取代`Program`為下列程式碼。  
   
     ```csharp  
     class A  
@@ -60,25 +55,25 @@ ms.locfileid: "49284384"
     }  
     ```  
   
-2.  將游標放在方法上`A`，方法宣告或方法呼叫。  
+2. 將游標放在方法上`A`，方法宣告或方法呼叫。  
   
-3.  從**重構**功能表上，選取**移除參數**以顯示**移除參數** 對話方塊。  
+3. 從**重構**功能表上，選取**移除參數**以顯示**移除參數** 對話方塊。  
   
      您也可以輸入鍵盤快速鍵 CTRL + R、 V 以顯示**移除參數** 對話方塊。  
   
      您也可以以滑鼠右鍵按一下資料指標，指向**重構**，然後按一下**移除參數**以顯示**移除參數** 對話方塊。  
   
-4.  使用**參數**欄位中，將游標放在`int i`，然後按一下**移除**。  
+4. 使用**參數**欄位中，將游標放在`int i`，然後按一下**移除**。  
   
-5.  按一下 [確定 **Deploying Office Solutions**]。  
+5. 按一下 [確定] 。  
   
-6.  在 [**預覽變更--移除參數**] 對話方塊中，按一下**套用**。  
+6. 在 [**預覽變更--移除參數**] 對話方塊中，按一下**套用**。  
   
 ## <a name="remarks"></a>備註  
  您可以從方法宣告或方法呼叫，以移除參數。 將游標放在方法宣告或委派的名稱，然後叫用移除參數。  
   
 > [!CAUTION]
->  移除參數可讓您移除參考的參數內的成員，但它不會移除對該參數參考方法主體中。 這可能會發生建置錯誤導入您的程式碼。 不過，您可以使用**預覽變更**對話方塊，即可檢閱您的程式碼，然後再執行重構作業。  
+> 移除參數可讓您移除參考的參數內的成員，但它不會移除對該參數參考方法主體中。 這可能會發生建置錯誤導入您的程式碼。 不過，您可以使用**預覽變更**對話方塊，即可檢閱您的程式碼，然後再執行重構作業。  
   
  如果要移除的參數已修改的方法呼叫期間，移除參數也會移除所作的修改。 例如，如果呼叫的方法已從  
   

@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugFunctionObject::CreateStringObject method
 ms.assetid: fd6070ab-07d4-4ea1-8d71-b16592d6f1a7
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0dd79223d3b51195e9f45490cc8aa95c10aca8e8
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 620aef7474f7f669e22fcb44c7df2611dc50bafb
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56689898"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66313616"
 ---
 # <a name="idebugfunctionobjectcreatestringobject"></a>IDebugFunctionObject::CreateStringObject
 建立字串物件。
@@ -38,14 +41,12 @@ int CreateStringObject(
 );
 ```
 
-#### <a name="parameters"></a>參數
- `pcstrString`
+## <a name="parameters"></a>參數
+`pcstrString`\
+[in]字串物件的字串值。
 
- [in]字串物件的字串值。
-
- `ppObject`
-
- [out]傳回[IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)物件，表示新建立的字串物件。
+`ppObject`\
+[out]傳回[IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)物件，表示新建立的字串物件。
 
 ## <a name="return-value"></a>傳回值
  如果成功，會傳回 S_OK;否則，傳回錯誤碼。

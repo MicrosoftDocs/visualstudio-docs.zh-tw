@@ -12,11 +12,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: db8683534e449b2cdd8fcdb344c245d93da8fafc
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58144663"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62954963"
 ---
 # <a name="iactivescriptgarbagecollectorcollectgarbage"></a>IActiveScriptGarbageCollector::CollectGarbage
 動態指令碼主機會呼叫此方法以啟動記憶體回收。  

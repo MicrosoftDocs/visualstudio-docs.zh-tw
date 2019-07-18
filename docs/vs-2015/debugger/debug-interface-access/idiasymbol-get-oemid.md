@@ -1,14 +1,9 @@
 ---
-title: 'Idiasymbol:: Get_oemid |Microsoft Docs'
-ms.custom: ''
+title: IDiaSymbol::get_oemId | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: c472830f-c3eb-46ab-9498-cd637763d241
 caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: f95f86cdf05aa23c9c4623c58ca76d8242a8c9ed
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 406645893803094ce0ebdd4679d9809d7645401f
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51806733"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "64798064"
 ---
 # <a name="idiasymbolgetoemid"></a>IDiaSymbol::get_oemId
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -46,7 +41,7 @@ HRESULT get_oemId ( 
  如果成功，則傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。  
   
 > [!NOTE]
->  傳回值為`S_FALSE`表示屬性不是適用於符號。  
+> 傳回值為`S_FALSE`表示屬性不是適用於符號。  
   
 ## <a name="remarks"></a>備註  
  這個屬性只適用於具有符號[SymTagEnum 列舉](../../debugger/debug-interface-access/symtagenum.md)種`SymTagCustomType`。  
@@ -54,6 +49,3 @@ HRESULT get_oemId ( 
 ## <a name="see-also"></a>另請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [SymTagEnum 列舉](../../debugger/debug-interface-access/symtagenum.md)
-
-
-

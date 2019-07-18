@@ -7,21 +7,21 @@ f1_keywords:
 helpviewer_keywords:
 - IEEVisualizerServiceProvider interface
 ms.assetid: 859d1a51-1c65-4c8b-ae74-3b74b181ebcd
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 63e6893d407ebcb26a62aeb038b0cf670659f536
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 11f56758f6cfd8219e11dad9bd88bfa88c50dbd6
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56718354"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66310151"
 ---
 # <a name="ieevisualizerserviceprovider"></a>IEEVisualizerServiceProvider
 > [!IMPORTANT]
->  在 Visual Studio 2015 中，這種實作運算式評估工具已被取代。 如需實作 CLR 運算式評估工具的資訊，請參閱[CLR 運算式評估工具](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)並[Managed 運算式評估工具範例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。
+> 在 Visual Studio 2015 中，這種實作運算式評估工具已被取代。 如需實作 CLR 運算式評估工具的資訊，請參閱[CLR 運算式評估工具](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)並[Managed 運算式評估工具範例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。
 
  此介面可讓存取的方法，可以建立視覺化檢視服務，用來處理 IDE 類型視覺化檢視的工作。
 

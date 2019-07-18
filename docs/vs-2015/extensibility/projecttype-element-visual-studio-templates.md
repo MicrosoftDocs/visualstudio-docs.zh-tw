@@ -1,14 +1,9 @@
 ---
 title: ProjectType 項目 （Visual Studio 範本） |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#ProjectType
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: ccf9d83f-c7f3-49c7-a31f-e1f22bec004c
 caps.latest.revision: 20
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: d76962d5a8b90b5cc947721608aa1758193fe6c7
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: b01dd370fe5e3d7a5207363c5ab7ec4f2a0254c5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51721721"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63388397"
 ---
 # <a name="projecttype-element-visual-studio-templates"></a>ProjectType 項目 (Visual Studio 範本)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,11 +25,11 @@ ms.locfileid: "51721721"
 將分類的專案範本，使其出現在中指定的群組**新的專案**或**加入新項目** 對話方塊。  
   
 > [!WARNING]
->  啟動 Visual Studio 2012 中的 c + + 支援專案範本。 不支援在 Visual Studio 2010 和舊版的 c + +。  
+> 支援的專案範本C++開始在 Visual Studio 2012 中。 它們不支援C++在 Visual Studio 2010 和舊版中。  
   
- \<VSTemplate >  
- \<TemplateData >  
- \<ProjectType >  
+ \<VSTemplate>  
+ \<TemplateData>  
+ \<ProjectType>  
   
 ## <a name="syntax"></a>語法  
   
@@ -62,11 +57,11 @@ ms.locfileid: "51721721"
   
  這個值會指定的專案範本類型會建立，而且必須包含下列值之一：  
   
--   `CSharp`： 指定此範本會建立[!INCLUDE[csprcs](../includes/csprcs-md.md)]專案或項目。  
+- `CSharp`：指定此範本會建立[!INCLUDE[csprcs](../includes/csprcs-md.md)]專案或項目。  
   
--   `VisualBasic`： 指定此範本會建立[!INCLUDE[vbprvb](../includes/vbprvb-md.md)]專案或項目。  
+- `VisualBasic`：指定此範本會建立[!INCLUDE[vbprvb](../includes/vbprvb-md.md)]專案或項目。  
   
--   `Web`： 指定此範本會建立 Web 專案或項目。 如果`ProjectType`項目會包含此值，項目之專案的語言定義於[ProjectSubType 項目 （Visual Studio 範本）](../extensibility/projectsubtype-element-visual-studio-templates.md)。  
+- `Web`：指定此範本會建立 Web 專案或項目。 如果`ProjectType`項目會包含此值，項目之專案的語言定義於[ProjectSubType 項目 （Visual Studio 範本）](../extensibility/projectsubtype-element-visual-studio-templates.md)。  
   
 ## <a name="remarks"></a>備註  
  `ProjectType` 是 `TemplateData` 的必要子項目。  
@@ -106,4 +101,3 @@ ms.locfileid: "51721721"
  [Visual Studio 範本結構描述參考](../extensibility/visual-studio-template-schema-reference.md)   
  [建立專案和項目範本](../ide/creating-project-and-item-templates.md)   
  [ProjectSubType 元素 (Visual Studio 範本)](../extensibility/projectsubtype-element-visual-studio-templates.md)
-

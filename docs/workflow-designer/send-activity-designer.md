@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b984a404ed8a33f2b4f78bca8e5a85f4d11bd91
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 8d27bd9be1b769215dd77d1e906a5698e17bd18b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55908513"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63009125"
 ---
 # <a name="send-activity-designer"></a>Send 活動設計工具
 
@@ -23,7 +23,7 @@ ms.locfileid: "55908513"
 
 ## <a name="the-send-activity"></a>Send 活動
 
- <xref:System.ServiceModel.Activities.Send> 活動會用來傳送訊息至服務。 <xref:System.ServiceModel.Activities.ReceiveReply> 活動可以繫結至 <xref:System.ServiceModel.Activities.Send> 活動，而後者會接收用戶端上做為要求/回應訊息交換模式的一部分之訊息。
+ <xref:System.ServiceModel.Activities.Send> 活動會用來傳送訊息至服務。 <xref:System.ServiceModel.Activities.ReceiveReply> 活動可以繫結程序至 <xref:System.ServiceModel.Activities.Send> 活動，而後者會接收用戶端上做為要求/回應訊息交換模式的一部分之訊息。
 
 ### <a name="using-the-send-activity-designer"></a>使用 Send 活動設計工具
 
@@ -37,8 +37,7 @@ ms.locfileid: "55908513"
 
 下表顯示 <xref:System.ServiceModel.Activities.Send> 屬性，並且描述屬性在設計工具中的使用方式。 這些屬性可以在屬性方格中或在工作流程設計工具介面上編輯。
 
-
-| 屬性名稱 | 必要項 | 使用方式 |
+| 屬性名稱 | 必要 | 使用量 |
 |-|----------|-|
 | <xref:System.Activities.Activity.DisplayName%2A> | False | <xref:System.ServiceModel.Activities.Send> 活動的易記名稱。 預設為 Send。 雖然 <xref:System.Activities.Activity.DisplayName%2A> 並非絕對必要，但建議您盡量使用。 |
 | <xref:System.ServiceModel.Activities.Send.OperationName%2A> | True | 這個 <xref:System.ServiceModel.Activities.Send> 活動呼叫之服務作業的名稱。 這個屬性用來建構的預設值**動作**屬性若**動作**未明確設定屬性。 |

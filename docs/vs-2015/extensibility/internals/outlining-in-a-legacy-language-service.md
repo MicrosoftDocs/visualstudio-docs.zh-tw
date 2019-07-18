@@ -1,14 +1,9 @@
 ---
 title: 舊版語言服務中的大綱 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - outlining
 - language services [managed package framework], outlining
@@ -16,23 +11,23 @@ helpviewer_keywords:
 ms.assetid: 7b5578b4-a20a-4b94-ad4c-98687ac133b9
 caps.latest.revision: 16
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 356b3d49fa8eb74ef2352e6ba36597d1c39fecf4
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 6096f89a36cdd47d2dec68af5801a94dc77acb43
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51751536"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63408564"
 ---
 # <a name="outlining-in-a-legacy-language-service"></a>在舊版語言服務中製作大綱
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 大綱，讓能夠摺疊成概觀或外框的是複雜的程式。 例如，在 C# 中的所有方法可以摺都疊成一行，顯示方法簽章。 此外，結構和類別可以摺疊以顯示的結構和類別的名稱。 在單一方法中，複雜的邏輯可以摺疊來顯示整體流程這類顯示陳述式的第一行`foreach`， `if`，和`while`。  
   
- 舊版語言服務會實作成 VSPackage 的一部分，但實作語言服務功能的較新的方式是使用 MEF 擴充功能。 若要深入了解，請參閱[逐步解說︰ 大綱](../../extensibility/walkthrough-outlining.md)。  
+ 舊版語言服務會實作成 VSPackage 的一部分，但實作語言服務功能的較新的方式是使用 MEF 擴充功能。 若要深入了解，請參閱[逐步解說：大綱](../../extensibility/walkthrough-outlining.md)。  
   
 > [!NOTE]
->  我們建議您開始使用新的編輯器 API 盡。 這會改善您的語言服務的效能，並可讓您充分利用新編輯器功能。  
+> 我們建議您開始使用新的編輯器 API 盡。 這會改善您的語言服務的效能，並可讓您充分利用新編輯器功能。  
   
 ## <a name="enabling-support-for-outlining"></a>啟用支援，供製作大綱  
  `AutoOutlining`登錄項目設為 1 以啟用自動大綱。 檔案載入或變更以找出隱藏的區域和顯示大綱的圖像 （glyph） 時自動大綱設定剖析的完整的來源。 大綱也可以控制手動使用者。  
@@ -127,4 +122,3 @@ namespace MyLanguagePackage
 ## <a name="see-also"></a>另請參閱  
  [舊版語言服務功能](../../extensibility/internals/legacy-language-service-features1.md)   
  [註冊舊版語言服務](../../extensibility/internals/registering-a-legacy-language-service1.md)
-

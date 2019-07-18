@@ -1,14 +1,9 @@
 ---
-title: 'Idiaenumdebugstreamdata:: Get__newenum |Microsoft Docs'
-ms.custom: ''
+title: IDiaEnumDebugStreamData::get__NewEnum | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 023b3e31-0fc9-478d-88e8-af2ce762f322
 caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 49a3b0a13c95f5958aa4dde8987c52a16f70e74b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 0f98152cf680da4b3993a069957caa8c186d2912
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51808384"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68198542"
 ---
 # <a name="idiaenumdebugstreamdatagetnewenum"></a>IDiaEnumDebugStreamData::get__NewEnum
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -47,6 +42,3 @@ HRESULT get__NewEnum ( 
   
 ## <a name="see-also"></a>另請參閱  
  [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md)
-
-
-

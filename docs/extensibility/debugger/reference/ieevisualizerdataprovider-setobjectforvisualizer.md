@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEEVisualizerDataProvider::SetObjectForVisualizer method
 ms.assetid: 40dad2be-57ff-4f74-9d82-c48039c125c4
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a55328c4148aa911d86b8f2daf05ba84a50ff444
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 34fb0e8c4ae8b2b4371234e9cf09d9c21727dfdf
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56711537"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66350190"
 ---
 # <a name="ieevisualizerdataprovidersetobjectforvisualizer"></a>IEEVisualizerDataProvider::SetObjectForVisualizer
 這個方法會變更視覺化檢視表示的物件。
@@ -40,18 +43,15 @@ int SetObjectForVisualizer(
 );
 ```
 
-#### <a name="parameters"></a>參數
- `pNewObject`
+## <a name="parameters"></a>參數
+`pNewObject`\
+[in]要設定的物件。
 
- [in]要設定的物件。
+`error`\
+[out]如果將物件設定時發生錯誤，這個字串會保留錯誤訊息。
 
- `error`
-
- [out]如果將物件設定時發生錯誤，這個字串會保留錯誤訊息。
-
- `pException`
-
- [out]如果發生錯誤，此物件會保存的例外狀況資訊。
+`pException`\
+[out]如果發生錯誤，此物件會保存的例外狀況資訊。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

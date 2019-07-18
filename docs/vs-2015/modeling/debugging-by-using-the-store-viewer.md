@@ -1,12 +1,9 @@
 ---
 title: 使用存放區檢視進行偵錯 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, store viewer
 - Domain-Specific Language, store
@@ -14,13 +11,13 @@ ms.assetid: 0178db2e-ae99-4ed3-9b87-8620fa9fa8e4
 caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 78a7cad2db2efa8057f2b95d117f93c59cc328cb
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 1a76cd9b726e534271937cb67a8d3f946d4eb477
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49189070"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433201"
 ---
 # <a name="debugging-by-using-the-store-viewer"></a>使用存放區檢視進行偵錯
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,13 +32,13 @@ Microsoft.VisualStudio.Modeling.Diagnostics.StoreViewer.Show(mystore);
 ```  
   
 > [!NOTE]
->  您必須取代`mystore`存放區執行個體的名稱。 此外，如果您的命名空間新增至您的程式碼時，您可以輸入命令來顯示存放區檢視，而不需要完整的命名空間：  
+> 您必須取代`mystore`存放區執行個體的名稱。 此外，如果您的命名空間新增至您的程式碼時，您可以輸入命令來顯示存放區檢視，而不需要完整的命名空間：  
 >   
->  `using Microsoft.VisualStudio.Modeling.Diagnostics;`  
+> `using Microsoft.VisualStudio.Modeling.Diagnostics;`  
 >   
->  `…`  
+> `…`  
 >   
->  `StoreViewer.Show(mystore);`  
+> `StoreViewer.Show(mystore);`  
   
  `Show`方法有數個多載。 您可以指定存放區或分割區的執行個體做為參數。  
   
@@ -57,6 +54,3 @@ Microsoft.VisualStudio.Modeling.Diagnostics.StoreViewer.Show(mystore);
   
 ## <a name="see-also"></a>另請參閱  
  [巡覽及更新程式碼中的模型](../modeling/navigating-and-updating-a-model-in-program-code.md)
-
-
-

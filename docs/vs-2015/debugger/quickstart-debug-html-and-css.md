@@ -1,14 +1,9 @@
 ---
-title: 快速入門： 偵錯 HTML 和 CSS |Microsoft Docs
-ms.custom: ''
+title: 快速入門：偵錯 HTML 和 CSS |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - VS.WebClient.DomExplorer
 dev_langs:
@@ -25,13 +20,13 @@ ms.assetid: 6d156cff-36c6-425a-acf8-e1f02d4f7869
 caps.latest.revision: 104
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 710bafe2383d95358ba06a287a300d9aea7baf66
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: be85bd5c09d59df576d66cef6cf2d4e7e34876ab
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51729981"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687656"
 ---
 # <a name="quickstart-debug-html-and-css"></a>快速入門：偵錯 HTML 和 CSS
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,13 +55,13 @@ ms.locfileid: "51729981"
   
 - [偵錯 WebView 控制項](../debugger/debug-a-webview-control.md)  
   
-  如需其他 JavaScript 偵錯功能，例如使用 [JavaScript 主控台] 視窗，並設定中斷點，詳細資訊，請參閱[快速入門： 偵錯 JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)並[偵錯在 Visual Studio 中的應用程式](../debugger/debug-store-apps-in-visual-studio.md)。  
+  如需其他 JavaScript 偵錯功能，例如使用 [JavaScript 主控台] 視窗，並設定中斷點，詳細資訊，請參閱[快速入門：偵錯 JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)並[偵錯在 Visual Studio 中的應用程式](../debugger/debug-store-apps-in-visual-studio.md)。  
   
-##  <a name="InspectingDOM"></a> 檢查 Llive DOM  
+## <a name="InspectingDOM"></a> 檢查 Llive DOM  
  DOM 總管會顯示所呈現頁面的檢視，您可以使用 DOM 總管變更值並立即查看結果。 這讓您能測試變更，而不需要停止並重新開始偵錯工具。 當您以此方法與頁面互動時，專案中的原始程式碼並不會變更，因此當您找到所需的程式碼修正時，您可以對原始程式碼進行變更。  
   
 > [!TIP]
->  若要避免在對原始程式碼進行變更時停止再重新開始偵錯工具，您可以使用 [偵錯] 工具列上的 [重新整理 Windows 應用程式]  按鈕 (或按 F4)，重新整理應用程式。 如需詳細資訊，請參閱 <<c0> [ 重新整理應用程式 (JavaScript)](../debugger/refresh-an-app-javascript.md)。  
+> 若要避免在對原始程式碼進行變更時停止再重新開始偵錯工具，您可以使用 [偵錯] 工具列上的 [重新整理 Windows 應用程式]  按鈕 (或按 F4)，重新整理應用程式。 如需詳細資訊，請參閱 <<c0> [ 重新整理應用程式 (JavaScript)](../debugger/refresh-an-app-javascript.md)。  
   
  您可將 DOM 總管用於：  
   
@@ -76,15 +71,15 @@ ms.locfileid: "51729981"
   
 - 檢查 CSS 樣式套用到頁面項目的情形，並追蹤已套用的規則。  
   
-  偵錯應用程式時，您通常需要在 DOM 總管中選取項目。 當您選取項目時，DOM 總管右邊索引標籤上的值會自動更新，以反映 DOM 總管中選取的項目。 這些索引標籤如下：[樣式] 、[計算] 、[配置] 。 Windows 市集應用程式也支援 [事件]  和 [變更]  索引標籤。 如需選取項目的詳細資訊，請參閱 [Selecting elements](#SelectingElements)。  
+  偵錯應用程式時，您通常需要在 DOM 總管中選取項目。 當您選取項目時，DOM 總管右邊索引標籤上的值會自動更新，以反映 DOM 總管中選取的項目。 以下是 [] 索引標籤：**樣式**，**計算**，**版面配置**。 Windows 市集應用程式也支援 [事件]  和 [變更]  索引標籤。 如需選取項目的詳細資訊，請參閱 [Selecting elements](#SelectingElements)。  
   
 > [!TIP]
->  如果 [DOM 總管] 視窗已關閉，選擇 [偵錯] > >  即可重新開啟。 此視窗只有在指令碼偵錯工作階段期間才會顯示。  
+> 如果 [DOM 總管] 視窗已關閉，選擇 [偵錯] > >  即可重新開啟。 此視窗只有在指令碼偵錯工作階段期間才會顯示。  
   
  在接下來的程序中，我們將會經歷使用 DOM 總管以互動方式偵錯應用程式的過程。 我們將建立一個使用 `FlipView` 控制項的應用程式，然後對它進行偵錯。 應用程式包含幾個錯誤。  
   
 > [!WARNING]
->  下列範例應用程式是 Windows 市集應用程式。 針對 Cordova 支援相同的功能，但應用程式會不同。  
+> 下列範例應用程式是 Windows 市集應用程式。 針對 Cordova 支援相同的功能，但應用程式會不同。  
   
 #### <a name="to-debug-by-inspecting-the-live-dom"></a>藉由檢查 Live DOM 偵錯  
   
@@ -188,14 +183,14 @@ ms.locfileid: "51729981"
 10. 切換至 Visual Studio 並選擇 [ **DOM 總管** ] 索引標籤。  
   
     > [!TIP]
-    >  您可以按 Alt+Tab 或 F12，在 Visual Studio 和執行中應用程式之間切換。  
+    > 您可以按 Alt+Tab 或 F12，在 Visual Studio 和執行中應用程式之間切換。  
   
 11. 在 [DOM 總管] 視窗中，選取識別碼為 `"fView"`之區段的 DIV 項目。 使用方向鍵來檢視和選取正確的 DIV 項目 (向右鍵可讓您檢視項目的子系)。  
   
-     ![DOM 總管](../debugger/media/js-dom-explorer.png "JS_DOM_Explorer")  
+     ![DOM Explorer](../debugger/media/js-dom-explorer.png "JS_DOM_Explorer")  
   
     > [!TIP]
-    >  您也可以在 [JavaScript 主控台] 視窗的左下角，於 >> 輸入提示下輸入 `select(fView)`，然後按 ENTER 來選取 DIV 項目。  
+    > 您也可以在 [JavaScript 主控台] 視窗的左下角，於 >> 輸入提示下鍵入 `select(fView)`，然後按 ENTER 來選取 DIV 項目。  
   
      在 [DOM 總管] 視窗右邊索引標籤上的值會自動更新，以反映 DOM 總管中的目前項目。  
   
@@ -214,7 +209,7 @@ ms.locfileid: "51729981"
 15. 選取 `width: 100px;height: 100px;`然後按 Delete 鍵，再按 Enter。 在您按下 Enter 之後，新值就會立即反映在模擬器或 Phone 模擬器中，即使尚未停止偵錯工作階段也是如此。  
   
     > [!IMPORTANT]
-    >  您可以更新 [DOM 總管] 視窗中的屬性，也可以更新 [樣式] 、[計算] 和 [配置]  索引標籤中出現的值。 如需詳細資訊，請參閱 <<c0> [ 使用 DOM 總管偵錯 CSS 樣式](../debugger/debug-css-styles-using-dom-explorer.md)並[使用 DOM 總管偵錯配置](../debugger/debug-layout-using-dom-explorer.md)。  
+    > 您可以更新 [DOM 總管] 視窗中的屬性，也可以更新 [樣式] 、[計算] 和 [配置]  索引標籤中出現的值。 如需詳細資訊，請參閱 <<c0> [ 使用 DOM 總管偵錯 CSS 樣式](../debugger/debug-css-styles-using-dom-explorer.md)並[使用 DOM 總管偵錯配置](../debugger/debug-layout-using-dom-explorer.md)。  
   
 16. 藉由選取 [模擬器] 或 [Phone 模擬器] 或是使用 Alt+Tab，切換至應用程式。  
   
@@ -234,9 +229,9 @@ ms.locfileid: "51729981"
   
      在 [配置]  索引標籤中，您將看到下列值：  
   
-    - 適用於模擬器的是 320px (Offset) 和 320px (Margin)。  
+    - 模擬器：320px (Offset) 和 320px (Margin)。  
   
-    - 適用於 Phone 模擬器的是 100px (Offset) 和 100px (Margin)。  
+    - 適用於 Phone 模擬器中：100px (Offset) 和 100px (Margin)。  
   
       下圖顯示當我們使用 [Phone 模擬器] (100px 位移和邊界) 時的 [配置]  外觀。  
   
@@ -254,17 +249,17 @@ ms.locfileid: "51729981"
   
 #### <a name="to-refresh-your-app-while-debugging"></a>在偵錯時重新整理您的應用程式  
   
-1.  當應用程式仍在執行時，切換至 Visual Studio。  
+1. 當應用程式仍在執行時，切換至 Visual Studio。  
   
-2.  開啟 default.html，將 `"fView"` DIV 元素的高度和寬度變更為 100%，修改您的原始程式碼。  
+2. 開啟 default.html，將 `"fView"` DIV 元素的高度和寬度變更為 100%，修改您的原始程式碼。  
   
-3.  選擇 [偵錯] 工具列上的 [ **重新整理 Windows 應用程式** ] 按鈕 (或按 F4)。 按鈕看起來像這樣︰![重新整理 Windows 應用程式 按鈕](../debugger/media/js-refresh.png "JS_Refresh")。  
+3. 選擇 [偵錯] 工具列上的 [ **重新整理 Windows 應用程式** ] 按鈕 (或按 F4)。 按鈕看起來像這樣：![重新整理 Windows 應用程式 按鈕](../debugger/media/js-refresh.png "JS_Refresh")。  
   
      應用程式頁面會重新載入，模擬器或 Phone 模擬器會回到前景。  
   
      如需重新整理功能的詳細資訊，請參閱[重新整理應用程式 (JavaScript)](../debugger/refresh-an-app-javascript.md)。  
   
-##  <a name="SelectingElements"></a> Selecting elements  
+## <a name="SelectingElements"></a> Selecting elements  
  偵錯應用程式時，您可以使用三種方式選取 DOM 項目：  
   
 - 直接在 [DOM 總管] 視窗中按一下項目 (或使用方向鍵)。  
@@ -286,20 +281,20 @@ ms.locfileid: "51729981"
   當您選擇要醒目提示項目時，只要在模擬器中將滑鼠停留在任何項目上方，該項目就會醒目提示。 已反白顯示之元素的色彩，會與顯示在 [DOM 總管] 之 [ **配置** ] 索引標籤中的方塊模型相符。  
   
 > [!NOTE]
->  Windows Phone 模擬器僅部分支援藉由滑鼠游標停留來醒目提示示項目。  
+> Windows Phone 模擬器僅部分支援藉由滑鼠游標停留來醒目提示示項目。  
   
  如需範例，示範如何使用選取項目**選取項目**按鈕，請參閱[使用 DOM 總管偵錯 CSS 樣式](../debugger/debug-css-styles-using-dom-explorer.md)。  
   
-##  <a name="BrowserSupport"></a> 瀏覽器和平台支援  
+## <a name="BrowserSupport"></a> 瀏覽器和平台支援  
  下列平台都支援 Visual Studio Tools for JavaScript、DOM 總管和 [JavaScript 主控台] 視窗：  
   
 - 使用 JavaScript 和 HTML 的[!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 和 Windows Phone 市集應用程式  
   
-- 在 [!INCLUDE[win81](../includes/win81-md.md)] 上執行的 Internet Explorer 11  
+- 在 [!INCLUDE[win81](../includes/win81-md.md)]上執行的 Internet Explorer 11  
   
 - 在 [!INCLUDE[win8](../includes/win8-md.md)]上執行的 Internet Explorer 10  
   
-  移至 [這裡](http://go.microsoft.com/fwlink/?LinkID=232448) 下載 [!INCLUDE[win8](../includes/win8-md.md)] 和 Visual Studio。  
+  移至 [這裡](https://developer.microsoft.com/windows/downloads/sdk-archive) 下載 [!INCLUDE[win8](../includes/win8-md.md)] 和 Visual Studio。  
   
 ## <a name="see-also"></a>另請參閱  
  [Debug apps in Visual Studio](../debugger/debug-store-apps-in-visual-studio.md)   
@@ -310,8 +305,5 @@ ms.locfileid: "51729981"
  [偵錯 WebView 控制項](../debugger/debug-a-webview-control.md)   
  [鍵盤快速鍵](../debugger/keyboard-shortcuts-html-and-javascript.md)   
  [JavaScript Console commands](../debugger/javascript-console-commands.md)   
- [偵錯 HTML、 CSS 和 JavaScript 範例程式碼](../debugger/debug-html-css-and-javascript-sample-code.md)   
- [產品支援和協助工具](http://msdn.microsoft.com/library/tzbxw1af\(VS.120\).aspx)
-
-
-
+ [對 HTML、CSS 和 JavaScript 範例程式碼進行偵錯](../debugger/debug-html-css-and-javascript-sample-code.md)   
+ [產品支援和協助工具](https://msdn.microsoft.com/library/tzbxw1af\(VS.120\).aspx)

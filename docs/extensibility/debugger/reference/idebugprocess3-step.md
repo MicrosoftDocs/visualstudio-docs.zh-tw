@@ -7,23 +7,26 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProcess3::Step
 ms.assetid: 6ad9094c-27cc-4927-8a7c-1b4d97b2e436
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 686e8dfbd94fc3fddbc5e696fc6e943184357c02
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: dc3ffecf5a2760077c0a5da4f4508163a48ca1a4
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56711523"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66313885"
 ---
 # <a name="idebugprocess3step"></a>IDebugProcess3::Step
 讓逐步一指令或陳述式的處理序。
 
 > [!NOTE]
->  應該使用這個方法，而不是[步驟](../../../extensibility/debugger/reference/idebugprogram2-step.md)。
+> 應該使用這個方法，而不是[步驟](../../../extensibility/debugger/reference/idebugprogram2-step.md)。
 
 ## <a name="syntax"></a>語法
 
@@ -43,18 +46,15 @@ int Step(
 );
 ```
 
-#### <a name="parameters"></a>參數
- `pThread`
+## <a name="parameters"></a>參數
+`pThread`\
+[in][IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)物件，表示正在逐步執行的執行緒。
 
- [in][IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)物件，表示正在逐步執行的執行緒。
+`sk`\
+[in]其中一個[STEPKIND](../../../extensibility/debugger/reference/stepkind.md)值。
 
- `sk`
-
- [in]其中一個[STEPKIND](../../../extensibility/debugger/reference/stepkind.md)值。
-
- `step`
-
- [in]其中一個[STEPUNIT](../../../extensibility/debugger/reference/stepunit.md)值。
+`step`\
+[in]其中一個[STEPUNIT](../../../extensibility/debugger/reference/stepunit.md)值。
 
 ## <a name="return-value"></a>傳回值
  如果成功，會傳回 S_OK;否則會傳回錯誤碼。

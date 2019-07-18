@@ -1,5 +1,5 @@
 ---
-title: 逐步解說：將主機連接至產生的指示詞處理器
+title: 連接至產生的指示詞處理器的主機
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +13,12 @@ ms.workload:
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: a84b24dff387e0a93058c07e9f6d7b6cfe503d49
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 5cc45f3b2c83b9f54d1912ae7dbfa90a6b552bb3
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55935585"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66261874"
 ---
 # <a name="walkthrough-connect-a-host-to-a-generated-directive-processor"></a>逐步解說：將主機連線至產生的指示詞處理器
 
@@ -41,7 +41,6 @@ ms.locfileid: "55935585"
 
 若要定義 DSL，您必須已安裝下列元件：
 
-
 | | |
 |-|-|
 | Visual Studio | [http://go.microsoft.com/fwlink/?LinkId=185579](http://go.microsoft.com/fwlink/?LinkId=185579) |
@@ -58,22 +57,22 @@ ms.locfileid: "55935585"
 
 1. 建立特定領域語言解決方案，具有下列特性：
 
-   -   名稱：DSLMinimalTest
+   - 名稱：DSLMinimalTest
 
-   -   解決方案範本：最小語言
+   - 解決方案範本：最小語言
 
-   -   副檔名： 最小值
+   - 副檔名： 最小值
 
-   -   公司名稱：Fabrikam
+   - 公司名稱：Fabrikam
 
-   如需建立特定領域語言解決方案的詳細資訊，請參閱[How to:建立特定領域語言解決方案](../modeling/how-to-create-a-domain-specific-language-solution.md)。
+   如需建立特定領域語言解決方案的詳細資訊，請參閱[How to:建立特定領域語言方案](../modeling/how-to-create-a-domain-specific-language-solution.md)。
 
 2. 在 [ **建置** ] 功能表上，按一下 [ **建置方案**]。
 
    > [!IMPORTANT]
    > 此步驟會產生指示詞處理器，並將它的索引鍵，在登錄中。
 
-3. 按一下 [偵錯] 功能表上的 [開始偵錯]。
+3. 按一下 [偵錯]  功能表上的 [開始偵錯]  。
 
     Visual Studio 的第二個執行個體隨即開啟。
 
@@ -89,27 +88,27 @@ ms.locfileid: "55935585"
 
 產生指示詞處理器之後，連線指示詞處理器和您在建立自訂文字範本主機[逐步解說：建立自訂文字範本主機](../modeling/walkthrough-creating-a-custom-text-template-host.md)。
 
-1.  開啟 CustomHost 方案。
+1. 開啟 CustomHost 方案。
 
-2.  在 [專案] 功能表上，按一下 [新增參考]。
+2. 在 [專案]  功能表上，按一下 [新增參考]  。
 
      **加入參考** 對話方塊隨即開啟與 **.NET**顯示 索引標籤。
 
-3.  加入下列參考：
+3. 加入下列參考：
 
-    -   Microsoft.VisualStudio.Modeling.Sdk.11.0
+    - Microsoft.VisualStudio.Modeling.Sdk.11.0
 
-    -   Microsoft.VisualStudio.Modeling.Sdk.Diagrams.11.0
+    - Microsoft.VisualStudio.Modeling.Sdk.Diagrams.11.0
 
-    -   Microsoft.VisualStudio.TextTemplating.11.0
+    - Microsoft.VisualStudio.TextTemplating.11.0
 
-    -   Microsoft.VisualStudio.TextTemplating.Interfaces.11.0
+    - Microsoft.VisualStudio.TextTemplating.Interfaces.11.0
 
-    -   Microsoft.VisualStudio.TextTemplating.Modeling.11.0
+    - Microsoft.VisualStudio.TextTemplating.Modeling.11.0
 
-    -   Microsoft.VisualStudio.TextTemplating.VSHost.11.0
+    - Microsoft.VisualStudio.TextTemplating.VSHost.11.0
 
-4.  在 Program.cs 或 Module1.vb 頂端，新增下列程式碼行：
+4. 在 Program.cs 或 Module1.vb 頂端，新增下列程式碼行：
 
     ```csharp
     using Microsoft.Win32;
@@ -119,7 +118,7 @@ ms.locfileid: "55935585"
     Imports Microsoft.Win32
     ```
 
-5.  找出屬性的程式碼`StandardAssemblyReferences`，並將它取代為下列程式碼：
+5. 找出屬性的程式碼`StandardAssemblyReferences`，並將它取代為下列程式碼：
 
     > [!NOTE]
     > 在此步驟中，您可以新增所需的支援您的主機將會產生指示詞處理器的組件的參考。
@@ -155,7 +154,7 @@ ms.locfileid: "55935585"
     }
     ```
 
-6.  找出函式的程式碼`ResolveDirectiveProcessor`，並將它取代為下列程式碼：
+6. 找出函式的程式碼`ResolveDirectiveProcessor`，並將它取代為下列程式碼：
 
     > [!IMPORTANT]
     > 此程式碼包含硬式編碼的名稱，您要連接的產生指示詞處理器的參考。 您可以輕鬆地進行這更一般，在此情況下它會尋找所有的指示詞處理器的登錄中列出，並嘗試尋找相符項目。 在此情況下，主機會使用任何產生的指示詞處理器。
@@ -229,9 +228,9 @@ ms.locfileid: "55935585"
             }
     ```
 
-7.  在 [檔案] 功能表上按一下 [全部儲存]。
+7. 在 [檔案]  功能表上按一下 [全部儲存]  。
 
-8.  在 [ **建置** ] 功能表上，按一下 [ **建置方案**]。
+8. 在 [ **建置** ] 功能表上，按一下 [ **建置方案**]。
 
 ## <a name="test-the-custom-host-with-the-directive-processor"></a>測試自訂指示詞處理器主機
 
@@ -239,9 +238,9 @@ ms.locfileid: "55935585"
 
 ### <a name="create-a-text-template-to-test-the-custom-host"></a>建立文字範本以測試自訂主應用程式
 
-1.  建立文字檔案，並將它命名`TestTemplateWithDP.tt`。 您可以使用任何文字編輯器，例如 [記事本]，建立檔案。
+1. 建立文字檔案，並將它命名`TestTemplateWithDP.tt`。 您可以使用任何文字編輯器，例如 [記事本]，建立檔案。
 
-2.  將下列程式碼加入至此文字檔中：
+2. 將下列程式碼加入至此文字檔中：
 
     > [!NOTE]
     > 文字範本的程式設計語言不需要符合自訂主應用程式。
@@ -313,15 +312,15 @@ ms.locfileid: "55935585"
     #>
     ```
 
-3.  在程式碼，取代\<您的路徑 > 從您在第一個程序中建立的設計特定語言的 Sample.min 檔案的路徑。
+3. 在程式碼，取代\<您的路徑 > 從您在第一個程序中建立的設計特定語言的 Sample.min 檔案的路徑。
 
-4.  儲存並關閉檔案。
+4. 儲存並關閉檔案。
 
 ### <a name="test-the-custom-host"></a>測試自訂主應用程式
 
-1.  開啟 [命令提示字元] 視窗。
+1. 開啟 [命令提示字元] 視窗。
 
-2.  輸入自訂主應用程式可執行檔的路徑，但是還不要按 ENTER。
+2. 輸入自訂主應用程式可執行檔的路徑，但是還不要按 ENTER。
 
      例如，輸入：
 
@@ -330,9 +329,9 @@ ms.locfileid: "55935585"
     > [!NOTE]
     > 而不是輸入位址，您可以瀏覽至 CustomHost.exe 檔中**Windows 檔案總管**，然後將檔案拖曳到 [命令提示字元] 視窗。
 
-3.  輸入空格。
+3. 輸入空格。
 
-4.  輸入文字範本檔的路徑，然後按 ENTER。
+4. 輸入文字範本檔的路徑，然後按 ENTER。
 
      例如，輸入：
 
@@ -343,11 +342,11 @@ ms.locfileid: "55935585"
 
      自訂主應用程式執行，並啟動文字範本轉換流程。
 
-5.  在  **Windows 檔案總管**，瀏覽至包含 TestTemplateWithDP.txt 之檔案的資料夾。
+5. 在  **Windows 檔案總管**，瀏覽至包含 TestTemplateWithDP.txt 之檔案的資料夾。
 
      資料夾也包含檔案 TestTemplateWithDP1.txt。
 
-6.  開啟這個檔案來查看文字範本轉換的結果。
+6. 開啟這個檔案來查看文字範本轉換的結果。
 
      產生的文字輸出的結果會出現，而且應該看起來像這樣：
 
@@ -363,4 +362,4 @@ ms.locfileid: "55935585"
 
 ## <a name="see-also"></a>另請參閱
 
-- [逐步解說：建立自訂文字範本主機](../modeling/walkthrough-creating-a-custom-text-template-host.md)
+- [逐步解說：建立自訂文字範本主應用程式](../modeling/walkthrough-creating-a-custom-text-template-host.md)

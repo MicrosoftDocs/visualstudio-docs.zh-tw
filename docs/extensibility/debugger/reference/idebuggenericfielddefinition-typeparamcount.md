@@ -6,17 +6,20 @@ helpviewer_keywords:
 - TypeParamCount
 - IDebugGenericFieldDefinition::TypeParamCount
 ms.assetid: d41dd5ea-aa25-4bf3-bcfd-e0bf451ead49
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2e6334f727b0c40352b7e6ca9b9a199edd98a502
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: b753da4a418f13bb725ff5d7b0d2843fc314805b
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56690600"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66324448"
 ---
 # <a name="idebuggenericfielddefinitiontypeparamcount"></a>IDebugGenericFieldDefinition::TypeParamCount
 擷取一般欄位相關聯的型別參數數目。
@@ -35,10 +38,9 @@ int TypeParamCount(
 );
 ```
 
-#### <a name="parameters"></a>參數
- `pcParams`
-
- [in、 out]型別參數數目。
+## <a name="parameters"></a>參數
+`pcParams`\
+[in、 out]型別參數數目。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

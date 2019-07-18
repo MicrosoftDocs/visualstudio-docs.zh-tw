@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugObject2::GetICorDebugValue method
 ms.assetid: bcd4355d-3fbe-483f-bb23-a44348323c6a
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5f31436390225e022069ef69f1557f4752f8c208
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: edbacbaeac9a5172d8c3bb5b54ee38fff201a2bf
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56695358"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66317368"
 ---
 # <a name="idebugobject2geticordebugvalue"></a>IDebugObject2::GetICorDebugValue
 取得 managed 程式碼物件，表示與這個物件相關聯的值。
@@ -36,10 +39,9 @@ int GetICorDebugValue(
 );
 ```
 
-#### <a name="parameters"></a>參數
- `ppUnk`
-
- [out]`IUnknown`介面，表示此別名。 這個介面可以查詢`ICorDebugValue`介面。
+## <a name="parameters"></a>參數
+`ppUnk`\
+[out]`IUnknown`介面，表示此別名。 這個介面可以查詢`ICorDebugValue`介面。
 
 ## <a name="return-value"></a>傳回值
  如果成功，會傳回 S_OK;否則，傳回錯誤碼。

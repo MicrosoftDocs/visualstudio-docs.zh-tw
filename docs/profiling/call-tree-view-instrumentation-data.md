@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a838a511c5f37a00ed2331d2376b395f399e65d2
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56638097"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62777316"
 ---
 # <a name="call-tree-view---instrumentation-data"></a>呼叫樹狀圖檢視 - 檢測資料
 呼叫樹狀圖中的函式值，表示呼叫樹狀圖中父函式呼叫函式執行個體的時間。 百分比值的計算方式是比較在分析執行中函式執行個體的值與所有函式的總功能內含耗用 (Elapsed Inclusive) 時間。

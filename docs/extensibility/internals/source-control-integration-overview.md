@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK], about source control
 ms.assetid: 3a46e4eb-e677-49c3-8647-d927d035a19a
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8a5df1eebed8e59c994af88a0e3b21e02009c3f1
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 9dd54872325766b432af7e3104e7ab9f431b79d7
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56614879"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66322514"
 ---
 # <a name="source-control-integration-overview"></a>原始檔控制整合概觀
 本節將比較兩種方式，將整合到 Visual Studio 原始檔控制原始檔控制外掛程式和 VSPackage 所提供的原始檔控制解決方案，並反白顯示新的原始檔控制功能。 Visual Studio 可讓手動切換原始檔控制 Vspackage 和原始檔控制外掛程式，以及自動以解決方案為基礎的切換。
@@ -40,19 +40,19 @@ ms.locfileid: "56614879"
 
 ### <a name="drawbacks-to-implementing-a-source-control-plug-in"></a>若要實作原始檔控制外掛程式的缺點
 
--   如需進階的功能，使用者可能會看到兩個不同的樣式的介面，導致混淆。
+- 如需進階的功能，使用者可能會看到兩個不同的樣式的介面，導致混淆。
 
--   原始檔控制外掛程式會侷限於原始檔控制外掛程式 API 所隱含的原始檔控制模型。
+- 原始檔控制外掛程式會侷限於原始檔控制外掛程式 API 所隱含的原始檔控制模型。
 
--   原始檔控制外掛程式 API 可能會太嚴格，某些原始檔控制的案例。
+- 原始檔控制外掛程式 API 可能會太嚴格，某些原始檔控制的案例。
 
 ### <a name="advantages-to-implementing-a-source-control-plug-in"></a>若要實作原始檔控制外掛程式的優點
 
--   Visual Studio 會提供所有基本的原始檔控制作業的所有 UI，讓原始檔控制外掛程式不需要實作可能很複雜的 UI。
+- Visual Studio 會提供所有基本的原始檔控制作業的所有 UI，讓原始檔控制外掛程式不需要實作可能很複雜的 UI。
 
--   因為嚴格的 API，而原始檔控制外掛程式可以輕易地與外部來源控制程式互動以提供更廣泛的功能;Visual Studio 不在意太遠如何原始檔控制功能完成此動作，只根據原始檔控制外掛程式 API 來完成。
+- 因為嚴格的 API，而原始檔控制外掛程式可以輕易地與外部來源控制程式互動以提供更廣泛的功能;Visual Studio 不在意太遠如何原始檔控制功能完成此動作，只根據原始檔控制外掛程式 API 來完成。
 
--   很容易實作的原始檔控制外掛程式比原始檔控制 VSPackage。
+- 很容易實作的原始檔控制外掛程式比原始檔控制 VSPackage。
 
 ## <a name="source-control-vspackage"></a>原始檔控制 VSPackage
  [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] 用來與原始檔控制功能的完整控制權和完全取代 Visual Studio 提供的原始檔控制使用者介面的 Visual Studio 的深度整合。 原始檔控制 VSPackage 註冊使用 Visual Studio，並提供原始檔控制功能。 雖然可以使用 Visual Studio 註冊數個原始檔控制 Vspackage，其中只有一個可以作用一次。 原始檔控制 VSPackage 有 Visual Studio 中的原始檔控制功能和外觀的完整控制權，在作用中狀態。 所有其他原始檔控制 Vspackage 可能會在系統中註冊之非使用中且不會完全顯示任何 UI。
@@ -61,17 +61,17 @@ ms.locfileid: "56614879"
 
 ### <a name="drawbacks-to-implementing-a-source-control-vspackage"></a>若要實作原始檔控制 VSPackage 的缺點
 
--   VSPackage 必須實作許多複雜的介面，以便與 Visual Studio 成功整合。
+- VSPackage 必須實作許多複雜的介面，以便與 Visual Studio 成功整合。
 
--   VSPackage 必須提供所需的原始檔控制的所有 UIVisual Studio 會提供任何這方面的協助。
+- VSPackage 必須提供所需的原始檔控制的所有 UIVisual Studio 會提供任何這方面的協助。
 
--   原始檔控制 VSPackage 會緊密繫結至 Visual Studio，並與原始檔控制程式的外部版本無法輕易共用功能，因此無法使用獨立程式。
+- 原始檔控制 VSPackage 會緊密繫結至 Visual Studio，並與原始檔控制程式的外部版本無法輕易共用功能，因此無法使用獨立程式。
 
 ### <a name="advantages-to-implementing-a-source-control-vspackage"></a>若要實作原始檔控制 VSPackage 的優點
 
--   VSPackage 的原始檔控制 UI 的完整控制權和功能，因為使用者會看到原始檔控制的無縫式介面。
+- VSPackage 的原始檔控制 UI 的完整控制權和功能，因為使用者會看到原始檔控制的無縫式介面。
 
--   VSPackage 不會侷限於特定的來源控制模型中。
+- VSPackage 不會侷限於特定的來源控制模型中。
 
 ## <a name="see-also"></a>另請參閱
 - [原始檔控制](../../extensibility/internals/source-control.md)

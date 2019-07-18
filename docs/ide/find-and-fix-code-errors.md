@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b0f1f55f0e0ae9882154ed62ccbf323441070472
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: a43be698fd908737c96f9de3cf346b48e84f27fc
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223607"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62798782"
 ---
 # <a name="make-code-work-in-visual-studio"></a>讓程式碼在 Visual Studio 中運作
 
@@ -44,7 +44,7 @@ Visual Studio 提供一組強大的整合式專案建置和偵錯工具。 在�
 
 ![Visual Studio 輸出和錯誤清單](../ide/media/vs_ide_gs_debug_bad_build_error_list.png)
 
-在 [錯誤清單] 視窗中按一下錯誤行，跳至發生錯誤的行。 (或者，按一下右上方的 [快速啟動] 列，並鍵入「行號」，然後按 **Enter** 鍵，來開啟行號。 這是到達 [選項] 對話方塊的最快速方式，您可以在其中開啟行號。 了解如何使用 [快速啟動] 列，並且替您省下很多的 UI 點選！)
+在 [錯誤清單] 視窗中按一下錯誤行，跳至發生錯誤的行。 (或，按 **Ctrl**+**Q**，輸入**行號**，然後從結果中選擇 [開啟或關閉行號]。 這是到達 [選項] 對話方塊的最快速方式，您可以在其中開啟行號。)
 
 ![使用行號的 Visual Studio 編輯器](../ide/media/vs_ide_gs_debug_line_numbers.png)
 
@@ -156,6 +156,6 @@ Visual Studio 包含一組內建的 [.NET Compiler Platform 分析器](../code-q
 
 ## <a name="see-also"></a>另請參閱
 
-- [偵錯工具功能導覽](../debugger/debugger-feature-tour.md)
-- [深入了解使用偵錯工具](../debugger/debugger-feature-tour.md)
+- [偵錯工具簡介](../debugger/debugger-feature-tour.md)
+- [深入了解使用偵錯工具](../debugger/index.md)
 - [產生及修正程式碼](../ide/code-generation-in-visual-studio.md)

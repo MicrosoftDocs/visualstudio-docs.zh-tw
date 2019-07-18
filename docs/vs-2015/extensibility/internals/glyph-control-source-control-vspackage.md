@@ -1,27 +1,22 @@
 ---
 title: 字符控制 (原始檔控制 VSPackage) |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - glyphs, source control packages
 - source control packages, glyphs
 ms.assetid: b9413b08-b3c3-4fc3-a6e0-3dc0db3652d7
 caps.latest.revision: 21
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 820ffdd2578cc40f91d95bb489f13403c5cdecc5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: b0960209b67c8d2f111296840119807d95bb2e2d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51772348"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62538417"
 ---
 # <a name="glyph-control-source-control-vspackage"></a>字符控制 (原始檔控制 VSPackage)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -45,4 +40,3 @@ ms.locfileid: "51772348"
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccGlyphs>   
  <xref:Microsoft.VisualStudio.Shell.Interop.VsStateIcon>   
  <xref:Microsoft.VisualStudio.Shell.Interop.SVsSccManager>
-

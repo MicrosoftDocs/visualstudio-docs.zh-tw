@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - THREADSTATE enumeration
 ms.assetid: 62efdd7c-25b1-4fd3-9d06-ac1830a418a9
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 96eb95d39c60952c48e62c0e2e61edefeaa59783
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 50f487b3d44fc1b871b00348ec28693b36c49685
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56694370"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66316134"
 ---
 # <a name="threadstate"></a>THREADSTATE
 指定執行緒的狀態。
@@ -45,16 +48,21 @@ public enum enum_THREADSTATE { 
 };
 ```
 
-## <a name="members"></a>成員
- THREADSTATE_RUNNING 表示執行緒正在執行。
+## <a name="fields"></a>欄位
+ `THREADSTATE_RUNNING`\
+ 表示執行緒正在執行。
 
- THREADSTATE_STOPPED 表示執行緒已停止因為中斷點。
+ `THREADSTATE_STOPPED`\
+ 表示執行緒已停止因為中斷點。
 
- THREADSTATE_FRESH 表示執行緒已建立，但尚未執行的程式碼。
+ `THREADSTATE_FRESH`\
+ 表示執行緒已建立，但尚未執行的程式碼。
 
- THREADSTATE_DEAD 表示執行緒已無作用。
+ `THREADSTATE_DEAD`\
+ 表示執行緒已無作用。
 
- THREADSTATE_FROZEN 指出已凍結執行緒 （可以執行任何執行）。
+ `THREADSTATE_FROZEN`\
+ 表示已凍結執行緒 （可以執行任何執行）。
 
 ## <a name="remarks"></a>備註
  用於`dwThreadState`欄位[THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md)結構。

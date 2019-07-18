@@ -9,17 +9,17 @@ helpviewer_keywords:
 - Add New Project dialog box
 - registry, Add New Project dialog box
 ms.assetid: 6b909f93-d7f5-4aec-81c6-ee9ff0f31638
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ec6f2a8b25438d7909f47087b8f6a80e595e7cba
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 84beaf97bda8d94872be22c6f5d247a746d1ecd3
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56630518"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66319504"
 ---
 # <a name="registering-project-and-item-templates"></a>註冊專案和項目範本
 專案類型都必須註冊其專案和專案項目範本的所在位置的目錄。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 使用您的專案類型相關聯的註冊資訊來判斷要顯示在**加入新的專案**並**加入新項目**對話方塊。
@@ -41,7 +41,7 @@ ms.locfileid: "56630518"
 |----------|----------|-----------------|
 |@|REG_SZ|這種專案的預設名稱。|
 |DisplayName|REG_SZ|要從附屬 DLL 擷取的資源識別碼名稱的註冊套件。|
-|封裝|REG_SZ|註冊套件的套件的類別識別碼。|
+|套件|REG_SZ|註冊套件的套件的類別識別碼。|
 |ProjectTemplatesDir|REG_SZ|預設的專案範本檔案的路徑。 專案範本檔案會顯示**新的專案**範本。|
 
 ### <a name="registering-item-templates"></a>註冊項目範本
@@ -54,7 +54,6 @@ ms.locfileid: "56630518"
 "TemplatesLocalizedSubDir"="#10"
 "SortPriority"=dword:00000064
 ```
-
 
 | 名稱 | 類型 | 描述 |
 |--------------------------|-----------| - |
@@ -118,7 +117,8 @@ ms.locfileid: "56630518"
  \WizardFiles
 
 ## <a name="see-also"></a>另請參閱
+
 - [新增專案與專案項目範本](../../extensibility/internals/adding-project-and-project-item-templates.md)
 - [精靈](../../extensibility/internals/wizards.md)
-- [當地語系化應用程式](../../ide/localizing-applications.md)
+- [當地語系化應用程式](../../ide/globalizing-and-localizing-applications.md)
 - [通常用來擴充專案的物件 CATID](../../extensibility/internals/catids-for-objects-that-are-typically-used-to-extend-projects.md)

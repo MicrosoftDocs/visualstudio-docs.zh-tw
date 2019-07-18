@@ -1,14 +1,9 @@
 ---
 title: SccPopulateDirList 函式 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - SccPopulateDirList
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: dfff634b-b155-498b-a356-6eb252ac4fad
 caps.latest.revision: 12
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 4ebfe2e28eb020547c65afd603d1899ebde510a8
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 6078f0fd90855c432b333fd5967367460d0a364e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51755915"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68200019"
 ---
 # <a name="sccpopulatedirlist-function"></a>SccPopulateDirList 函式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,7 +53,7 @@ SCCRTN SccPopulateDirList(
  pvCallerData  
  [in]要傳遞的值不變之回呼函式。  
   
- Stored  
+ fOptions  
  [in]控制目錄的處理方式的值的組合 (請參閱 「 PopulateDirList 旗標 」 一節[特定的命令所使用的位元旗標](../extensibility/bitflags-used-by-specific-commands.md)可能的值)。  
   
 ## <a name="return-value"></a>傳回值  
@@ -77,4 +72,3 @@ SCCRTN SccPopulateDirList(
  [特定命令所使用的位元旗標](../extensibility/bitflags-used-by-specific-commands.md)   
  [POPDIRLISTFUNC](../extensibility/popdirlistfunc.md)   
  [錯誤碼](../extensibility/error-codes.md)
-

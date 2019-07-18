@@ -1,12 +1,9 @@
 ---
 title: 特定領域語言中的驗證 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, constraints
 - Domain-Specific Language, validation
@@ -14,13 +11,13 @@ ms.assetid: 65b93df8-af3c-462b-904c-60292f8ed381
 caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 30a29c9b8921d72f717aea21ed202766f0874389
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 19ba3b3ee9e68a7329c077567136697b3acbe502
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49950784"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437467"
 ---
 # <a name="validation-in-a-domain-specific-language"></a>網域指定的語言中的驗證
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +29,7 @@ ms.locfileid: "49950784"
  如果您要撰寫文字範本或其他工具來處理使用者的模型，驗證便特別重要。 驗證可確保模型滿足這些工具假設的前置條件。  
   
 > [!WARNING]
->  除了擴充功能的功能表命令和軌跡處理常式之外，您也可以將驗證條件約束定義為 DSL 的個別擴充功能。 當使用者安裝 DSL 時，可以另外選擇安裝這些擴充功能。 如需詳細資訊，請參閱 <<c0> [ 藉由使用 MEF 擴充您的 DSL](../modeling/extend-your-dsl-by-using-mef.md)。  
+> 除了擴充功能的功能表命令和軌跡處理常式之外，您也可以將驗證條件約束定義為 DSL 的個別擴充功能。 當使用者安裝 DSL 時，可以另外選擇安裝這些擴充功能。 如需詳細資訊，請參閱 <<c0> [ 藉由使用 MEF 擴充您的 DSL](../modeling/extend-your-dsl-by-using-mef.md)。  
   
 ## <a name="running-validation"></a>執行驗證  
  當使用者編輯模型 (亦即網域指定的語言執行個體) 時，下列動作會執行驗證：  
@@ -55,19 +52,19 @@ ms.locfileid: "49950784"
  每個驗證方法會報告找到的任何錯誤。  
   
 > [!NOTE]
->  驗證方法會報告錯誤，但不會變更模型。 如果您想要調整或避免特定變更，請參閱[驗證的替代方法](#alternatives)。  
+> 驗證方法會報告錯誤，但不會變更模型。 如果您想要調整或避免特定變更，請參閱[驗證的替代方法](#alternatives)。  
   
 #### <a name="to-define-a-validation-constraint"></a>定義驗證條件約束  
   
 1. 啟用中的驗證**於**節點：  
   
-   1.  開啟**Dsl\DslDefinition.dsl**。  
+   1. 開啟**Dsl\DslDefinition.dsl**。  
   
-   2.  在 [DSL 總管] 中，展開**編輯器**節點，然後選取**驗證**。  
+   2. 在 [DSL 總管] 中，展開**編輯器**節點，然後選取**驗證**。  
   
-   3.  在 [屬性] 視窗中，設定**會使用**屬性，以`true`。 最方便的做法是設定所有屬性。  
+   3. 在 [屬性] 視窗中，設定**會使用**屬性，以`true`。 最方便的做法是設定所有屬性。  
   
-   4.  按一下 **轉換所有範本**在 方案總管 工具列中。  
+   4. 按一下 **轉換所有範本**在 方案總管 工具列中。  
   
 2. 撰寫一個或多個網域類別或網域關聯性的部分類別定義。 新的程式碼檔案中撰寫這些定義**Dsl**專案。  
   
@@ -77,7 +74,7 @@ ms.locfileid: "49950784"
    [ValidationState(ValidationState.Enabled)]  
    ```  
   
-   -   根據預設，這個屬性也會啟用衍生類別的驗證。 如果您要停用特定衍生類別的驗證，您可以使用 `ValidationState.Disabled`。  
+   - 根據預設，這個屬性也會啟用衍生類別的驗證。 如果您要停用特定衍生類別的驗證，您可以使用 `ValidationState.Disabled`。  
   
 4. 將驗證方法加入至類別。 每個驗證方法可以命名為任何名稱，但只能有一個 <xref:Microsoft.VisualStudio.Modeling.Validation.ValidationContext> 類型的參數。  
   
@@ -89,7 +86,7 @@ ms.locfileid: "49950784"
   
     ValidationCategories 指定何時執行方法。  
   
-   例如：  
+   例如:   
   
 ```csharp  
 using Microsoft.VisualStudio.Modeling;  
@@ -185,7 +182,7 @@ public partial class Person
   
  其缺點在於合併的方法比較難管理，並且條件約束必須具有相同的 `ValidationCategories`。 因此，建議您盡可能以不同的方法來保留每個條件約束。  
   
- **您可以將值傳入內容快取。** 內容參數具有的字典，您可以在其中放置任意值。 在執行驗證期間都可以使用此字典。 例如，某個驗證方法可能會將錯誤計數保留在內容中，然後使用該內容以避免錯誤視窗中出現太多重複的訊息。 例如：  
+ **您可以將值傳入內容快取。** 內容參數具有的字典，您可以在其中放置任意值。 在執行驗證期間都可以使用此字典。 例如，某個驗證方法可能會將錯誤計數保留在內容中，然後使用該內容以避免錯誤視窗中出現太多重複的訊息。 例如:   
   
 ```csharp  
 List<ParentsHaveChildren> erroneousLinks;  
@@ -221,9 +218,9 @@ partial class MyLanguageCommandSet
   
 ```  
   
- 如需詳細資訊，請參閱 <<c0> [ 如何： 將命令加入至捷徑功能表](../modeling/how-to-add-a-command-to-the-shortcut-menu.md)。  
+ 如需詳細資訊，請參閱[如何：將命令加入至捷徑功能表](../modeling/how-to-add-a-command-to-the-shortcut-menu.md)。  
   
- 您也可以建立獨立的驗證控制器，自行管理錯誤。 例如：  
+ 您也可以建立獨立的驗證控制器，自行管理錯誤。 例如:   
   
 ```csharp  
 using Microsoft.VisualStudio.Modeling;  
@@ -307,7 +304,7 @@ namespace Company.FamilyTree
   
  在影響連結或項目的復原或取消復原作業之後，也會呼叫處理常式。  
   
-##  <a name="custom"></a> 自訂驗證分類  
+## <a name="custom"></a> 自訂驗證分類  
  除了標準驗證分類 (例如功能表和開啟) 之外，您還可以定義自己的分類。 您可以從程式碼叫用這些分類。 使用者無法直接叫用這些分類。  
   
  自訂分類的一般用法是，定義一個分類以測試模型是否滿足特定工具的前置條件。  
@@ -323,7 +320,7 @@ private void TestForCircularLinks(ValidationContext context)
 ```  
   
 > [!NOTE]
->  您可以視需要在方法前面加上任意數目的 `[ValidationMethod()]` 屬性。 您可以同時將一個方法加入至自訂分類和標準分類。  
+> 您可以視需要在方法前面加上任意數目的 `[ValidationMethod()]` 屬性。 您可以同時將一個方法加入至自訂分類和標準分類。  
   
  若要叫用自訂驗證：  
   
@@ -335,7 +332,7 @@ validationController.ValidateCustom
    "PreconditionsForGeneratePartsList");  
 ```  
   
-##  <a name="alternatives"></a> 驗證的替代方法  
+## <a name="alternatives"></a> 驗證的替代方法  
  驗證條件約束會報告錯誤，但不會變更模型。 如果您想避免模型無效，可以使用其他方法。  
   
  但是，不建議使用這些方法。 通常比較好的做法是，讓使用者決定如何修正無效的模型。  
@@ -345,11 +342,8 @@ validationController.ValidateCustom
  **回復交易如果嘗試無效的變更。** 您也可以針對此目的，來定義規則，但在某些情況下是可以覆寫屬性處理常式**onvaluechanging （)**，或覆寫某個方法時，這類`OnDeleted().`若要回復的交易，使用`this.Store.TransactionManager.CurrentTransaction.Rollback().`如需詳細資訊詳細資訊，請參閱[網域屬性值變更處理常式](../modeling/domain-property-value-change-handlers.md)。  
   
 > [!WARNING]
->  確定使用者知道已調整或已復原變更。 例如，使用 `System.Windows.Forms.MessageBox.Show("message").`  
+> 確定使用者知道已調整或已復原變更。 例如，使用 `System.Windows.Forms.MessageBox.Show("message").`  
   
 ## <a name="see-also"></a>另請參閱  
  [巡覽及更新程式碼中的模型](../modeling/navigating-and-updating-a-model-in-program-code.md)   
  [事件處理常式傳播模型外的變更](../modeling/event-handlers-propagate-changes-outside-the-model.md)
-
-
-

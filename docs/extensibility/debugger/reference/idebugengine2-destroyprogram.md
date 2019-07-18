@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEngine2::DestroyProgram
 ms.assetid: 0c9e2698-c70f-4770-a7bb-39650e9c3a1f
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f626005621604d367f5878e36899aa2ff46114ee
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: c20459329eeb9e61447c707ef6c95adf01945e5d
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56678445"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66330080"
 ---
 # <a name="idebugengine2destroyprogram"></a>IDebugEngine2::DestroyProgram
 告知偵錯引擎 (DE) 指定的程式已終止 4mb，DE 應該清除至程式的所有參考，並傳送程式損毀的事件。
@@ -36,10 +39,9 @@ int DestroyProgram( 
 );
 ```
 
-#### <a name="parameters"></a>參數
- `pProgram`
-
- [in][IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)物件，表示已 4mb 終止程式。
+## <a name="parameters"></a>參數
+`pProgram`\
+[in][IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)物件，表示已 4mb 終止程式。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

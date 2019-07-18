@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - BP_UNBOUND_REASON enumeration
 ms.assetid: 939b6f9c-113b-471d-9f30-b03871af6285
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 65393f6e162cb15ded7a0e598e360c7ce90bb3cd
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 9de6812f3a61feca8ca8e7153fb281369c3312bd
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56717659"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66350560"
 ---
 # <a name="bpunboundreason"></a>BP_UNBOUND_REASON
 提供中斷點已繫結的原因。
@@ -43,14 +46,18 @@ public enum enum_BP_UNBOUND_REASON {
 };
 ```
 
-## <a name="members"></a>成員
-BPUR_UNKNOWN 原因不明。
+## <a name="fields"></a>欄位
+`BPUR_UNKNOWN`\
+未知的原因。
 
-BPUR_CODE_UNLOADED 包含中斷點的程式碼已卸載。
+`BPUR_CODE_UNLOADED`\
+包含中斷點的程式碼已卸載。
 
-BPUR_BREAKPOINT_REBIND 已重新中斷點繫結至不同的位置。 這可以在下班之後編輯並繼續作業時的中斷點會移動，或當中斷點繫結至已不再有效的路徑與檔案。
+`BPUR_BREAKPOINT_REBIND`\
+中斷點具有已重新繫結至不同的位置中。 這可以在下班之後編輯並繼續作業時的中斷點會移動，或當中斷點繫結至已不再有效的路徑與檔案。
 
-BPUR_ BREAKPOINT_ERROR 中斷點會判斷它繫結之後會發生錯誤。 這是受管理的條件不再是有效的中斷點。
+`BPUR_ BREAKPOINT_ERROR`\
+中斷點會判斷它繫結之後會發生錯誤。 這是受管理的條件不再是有效的中斷點。
 
 ## <a name="remarks"></a>備註
 所傳回[GetReason](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2-getreason.md)方法。

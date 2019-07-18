@@ -1,25 +1,20 @@
 ---
-title: Init |Microsoft Docs
-ms.custom: ''
+title: Init | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: c55ddec8-9101-4673-979b-4109caca9146
 caps.latest.revision: 8
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: ed9bffdcd9f5e6a862197928f2a7369cd3643625
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: ea9f8a24d342668b3574c3798a32c58c124aca7b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51781292"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68185851"
 ---
 # <a name="init"></a>Init
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,6 +40,3 @@ void Init(
   
 ## <a name="see-also"></a>另請參閱  
  [UnInit](../debugger/init.md)
-
-
-

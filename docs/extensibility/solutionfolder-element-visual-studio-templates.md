@@ -9,19 +9,19 @@ helpviewer_keywords:
 - <SolutionFolder> element [Visual Studio Templates]
 - SolutionFolder element [Visual Studio Templates]
 ms.assetid: 963f0398-fb50-4d8e-879d-d48f8b7c6d80
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4343515ad96c28c971a1cf2969a3ff9886965950
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 4fd2ce948a3e18633f4c9875fa3ec0b064a91b35
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56722989"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66331999"
 ---
-# <a name="solutionfolder-element-visual-studio-templates"></a>SolutionFolder 元素 (Visual Studio 範本)
+# <a name="solutionfolder-element-visual-studio-templates"></a>SolutionFolder 項目 (Visual Studio 範本)
 將多專案範本中的專案分組。
 
  \<VSTemplate> \<TemplateContent> \<ProjectCollection> \<SolutionFolder>

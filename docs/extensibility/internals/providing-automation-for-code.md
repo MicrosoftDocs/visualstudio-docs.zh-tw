@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - CodeModel object
 ms.assetid: 21cb3e63-f25c-404b-bc1d-a32ad0fdd4d5
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b3a7f1bc0f3394f0b7c0d882657d926ce11259a0
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 7c7fa6836f3c396471e3b330d94b67d0978252e3
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56596278"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66341551"
 ---
 # <a name="providing-automation-for-code"></a>為程式碼提供自動化
 建立的自動化模型，讓您的程式碼不需要。 環境 SDK 不提供這項操作的範例。 如需深入的程式碼模型，請參閱<xref:EnvDTE.CodeModel>物件。

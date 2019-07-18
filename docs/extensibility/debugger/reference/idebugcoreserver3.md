@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugCoreServer3 interface
 ms.assetid: 51f5f41b-a5a4-4df0-a703-41f3d1811d7f
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 629e35e8756be1dfa6df9f21eda02624b4c363de
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 7f9a8e6e16aa9279bb7324f5d08f0da3035f2b85
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56691315"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66343987"
 ---
 # <a name="idebugcoreserver3"></a>IDebugCoreServer3
 此介面可讓的伺服器處理序正在執行中的相關資訊的存取。

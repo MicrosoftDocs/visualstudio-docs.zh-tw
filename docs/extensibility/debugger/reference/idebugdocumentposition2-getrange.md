@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugDocumentPosition2::GetRange
 ms.assetid: 91a06ee7-253a-4215-be22-04bf57305aa8
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ae9c160954ac7bfb6ff3d18d107a78366a19c96b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: c67828e2d9e1cb0c75d272b57e7c6b610a84fdd5
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56703340"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66326463"
 ---
 # <a name="idebugdocumentposition2getrange"></a>IDebugDocumentPosition2::GetRange
 取得此文件位置的範圍。
@@ -38,14 +41,12 @@ int GetRange( 
 );
 ```
 
-#### <a name="parameters"></a>參數
- `pBegPosition`
+## <a name="parameters"></a>參數
+`pBegPosition`\
+[in、 out]A [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)會填入的開始位置的結構。 如果不需要這項資訊，請將這個引數為 null 值。
 
- [in、 out]A [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)會填入的開始位置的結構。 如果不需要這項資訊，請將這個引數為 null 值。
-
- `pEndPosition`
-
- [in、 out]A [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)會填入結束位置的結構。 如果不需要這項資訊，請將這個引數為 null 值。
+`pEndPosition`\
+[in、 out]A [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)會填入結束位置的結構。 如果不需要這項資訊，請將這個引數為 null 值。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

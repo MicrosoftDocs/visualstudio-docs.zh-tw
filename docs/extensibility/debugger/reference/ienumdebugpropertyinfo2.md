@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugPropertyInfo2
 ms.assetid: fdea8262-40b8-473e-88ba-639e4c4648e6
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0fb43da8cf5d9ce361dd3eeff2a76b2ed092e67e
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: cbf6e2f5c644f340ca2c1ebba1d53fc026b0534b
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56714929"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66322701"
 ---
 # <a name="ienumdebugpropertyinfo2"></a>IEnumDebugPropertyInfo2
 此介面列舉[DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md)結構。

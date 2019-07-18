@@ -1,14 +1,9 @@
 ---
-title: CA1822： 將成員標記為靜態 |Microsoft Docs
-ms.custom: ''
+title: CA1822:將成員標記為靜態 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - MarkMembersAsStatic
 - CA1822
@@ -20,24 +15,24 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 7b85d12038d4c505f912dd2f9440829f2c80679c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 42c6f0d333d1f7ee3f657b9c57c4154e9f824128
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49183491"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68201685"
 ---
-# <a name="ca1822-mark-members-as-static"></a>CA1822：將成員標記為靜態
+# <a name="ca1822-mark-members-as-static"></a>CA1822:將成員標記為 static
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-如需 Visual Studio 2017 的最新文件，請參閱 < [CA1822： 將成員標記為靜態](https://docs.microsoft.com/visualstudio/code-quality/ca1822-mark-members-as-static)docs.microsoft.com 上。  
+如需 Visual Studio 的最新文件，請參閱[CA1822:將成員標記為靜態](https://docs.microsoft.com/visualstudio/code-quality/ca1822-mark-members-as-static)。  
   
 |||  
 |-|-|  
 |TypeName|MarkMembersAsStatic|  
 |CheckId|CA1822|  
 |分類|Microsoft.Performance|  
-|中斷變更|非中斷-成員不是組件外部可見不論有變更您進行。 非中斷-如果您只要變更成員的執行個體成員為`this`關鍵字。<br /><br /> 中斷-如果您將成員從執行個體成員變更為靜態成員，而且它是組件外部可見。|  
+|中斷變更|非中斷-成員不是組件外部可見不論有變更您進行。<br /><br /> 非中斷-如果您只要變更成員的執行個體成員為`this`關鍵字。<br /><br /> 中斷-如果您將成員從執行個體成員變更為靜態成員，而且它是組件外部可見。|  
   
 ## <a name="cause"></a>原因  
  不會存取執行個體資料成員未標記為 static (在中共用[!INCLUDE[vbprvb](../includes/vbprvb-md.md)])。  
@@ -52,9 +47,8 @@ ms.locfileid: "49183491"
  它可安全地隱藏此規則，先前隨附的程式碼修正會是一項重大變更的警告。  
   
 ## <a name="related-rules"></a>相關的規則  
- [CA1811：避免使用未呼叫的私用程式碼](../code-quality/ca1811-avoid-uncalled-private-code.md)  
+ [CA1811:避免使用未呼叫的私用程式碼](../code-quality/ca1811-avoid-uncalled-private-code.md)  
   
- [CA1812：避免使用未執行個體化的內部類別](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md)  
+ [CA1812:避免使用未執行個體化的內部類別](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md)  
   
- [CA1804：必須移除未使用的區域變數](../code-quality/ca1804-remove-unused-locals.md)
-
+ [CA1804： 必須移除未使用的區域變數](../code-quality/ca1804-remove-unused-locals.md)

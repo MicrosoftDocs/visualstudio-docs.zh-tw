@@ -1,14 +1,9 @@
 ---
-title: IDiaStackWalkHelper::put_registerValue |Microsoft Docs
-ms.custom: ''
+title: IDiaStackWalkHelper::put_registerValue | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 8f02ce54-ef59-455f-8aa6-dc26761c7aff
 caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 2fea0ac7d3c7124ce3b38da2a57fd291b6c7cf2b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 97494f2180d0aede2dfd8e1a539a0d957f9a0bcb
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51805641"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68150069"
 ---
 # <a name="idiastackwalkhelperputregistervalue"></a>IDiaStackWalkHelper::put_registerValue
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -55,6 +50,3 @@ HRESULT put_registerValue ( 
 ## <a name="see-also"></a>另請參閱  
  [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)   
  [CV_HREG_e 列舉](../../debugger/debug-interface-access/cv-hreg-e.md)
-
-
-

@@ -1,27 +1,22 @@
 ---
 title: 命令旗標項目 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - CommandFlag element (VSCT XML schema)
 - VSCT XML schema elements, CommandFlag
 ms.assetid: 5ef63399-d2db-4dc1-97ce-be1bd4ef4e39
 caps.latest.revision: 13
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 98140c90288d8a65d22996940300a82b5e070308
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 39b2377dd1599d58eac4ca967ca540d8ce0e6847
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51809918"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68184361"
 ---
 # <a name="command-flag-element"></a>Command Flag 項目
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +37,7 @@ ms.locfileid: "51809918"
   
 ### <a name="child-elements"></a>子元素  
   
-|值|描述|  
+|值|說明|  
 |-----------|-----------------|  
 |AllowParams|表示使用者可以輸入中的命令參數**命令**視窗中輸入命令的正式名稱時。<br /><br /> 適用於： `Button`|  
 |AlwaysCreate|功能表會建立，即使它有任何群組或按鈕。<br /><br /> 適用於： `Menu`|  
@@ -54,7 +49,7 @@ ms.locfileid: "51809918"
 |DontCache|在開發環境並不會快取`QueryStatus`方法的結果，此命令。<br /><br /> 為功能表中，這會告訴功能表控制器不是用來快取其功能表項目的文字。 當功能表包含動態項目或動態文字的項目時，請使用這個旗標。<br /><br /> 適用於： `Button`， `Menu`|  
 |DynamicItemStart|表示動態清單的開頭。 這可讓環境，以建立清單，藉由後續呼叫`QueryStatus`直到傳回 OLECMDERR_E_UNSUPPORTED 旗標的清單項目上的方法。 這適用於項目，例如最近使用的 (MRU) 清單及視窗清單。<br /><br /> 適用於： `Button`|  
 |DynamicVisibility|此命令的可見性可以透過變更`QueryStatus`方法或透過在內容中包含的 GUID`VisibilityConstraints`一節。<br /><br /> 適用於顯示功能表和工具視窗工具列中，而不是會出現在主視窗的最上層工具列上的命令。 最上層工具列項目可以停用，但並未隱藏，請從傳回 OLECMDF_INVISIBLE 旗標時`QueryStatus`方法。 出現在工作視窗工具列的工具列命令可以隱藏。<br /><br /> 在功能表上，這個旗標也會指出，它應該會自動隱藏其所有成員都隱藏時。 這個旗標通常會指派給子功能表，因為已經有最上層功能表的這個行為。<br /><br /> 這個旗標應該要結合`DefaultInvisible`旗標。<br /><br /> 適用於： `Button`， `Combo`， `Menu`|  
-|篩選鍵|請參閱底下的篩選索引鍵主題[Combo 元素](../extensibility/combo-element.md)。<br /><br /> 適用於： `Combo`|  
+|FilterKeys|請參閱底下的篩選索引鍵主題[Combo 元素](../extensibility/combo-element.md)。<br /><br /> 適用於： `Combo`|  
 |FixMenuController|如果此命令位於功能表控制器，此命令永遠是預設值;亦即，每當在選取功能表控制器按鈕本身，是所選取的命令。 功能表控制器是否`TextIsAnchorCommand`加上旗標集，則功能表控制器也會在它的文字的命令，從`FixMenuController`旗標。<br /><br /> 只有一個命令，功能表控制器上的應該有`FixMenuController`旗標。 如果如此標示一個以上的命令，在功能表中的最後一個命令會變成預設命令。<br /><br /> 適用於： `Button`|  
 |IconAndText|在功能表和工具列上顯示的圖示和文字。<br /><br /> 適用於： `Button`， `Combo`， `Menu`|  
 |NoAutoComplete|已停用自動完成功能。<br /><br /> 適用於： `Combo`|  
@@ -77,11 +72,10 @@ ms.locfileid: "51809918"
   
 ### <a name="parent-elements"></a>父項目  
   
-|項目|描述|  
+|項目|說明|  
 |-------------|-----------------|  
 |[Buttons 元素](../extensibility/buttons-element.md)|提供的群組[Button Element](../extensibility/button-element.md)項目。|  
 |[Menus 元素](../extensibility/menus-element.md)|定義實作 VSPackage 的所有功能表。|  
   
 ## <a name="see-also"></a>另請參閱  
  [Visual Studio 命令表檔案 (.Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
-

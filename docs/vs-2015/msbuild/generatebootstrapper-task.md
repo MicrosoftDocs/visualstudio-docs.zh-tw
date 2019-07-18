@@ -19,17 +19,16 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 85ea10b956069415198feb74be8c9e546ecc7ff8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 488caf02a20b4f0855df1ba2ef64c85e70e1a6a4
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54769219"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68149638"
 ---
 # <a name="generatebootstrapper-task"></a>GenerateBootstrapper 工作
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 提供自動化方式來偵測、下載及安裝應用程式及其必要條件。 它可用來做為單一安裝程式，針對組成應用程式的所有元件整合個別的安裝程式。  
   
 ## <a name="task-parameters"></a>工作參數  
@@ -96,11 +95,11 @@ ms.locfileid: "54769219"
   
    指定啟動載入器用來尋找要安裝之安裝必要條件的位置。 此參數的值如下：  
   
-  - `HomeSite`︰表示必要條件已由元件廠商所裝載。  
+  - `HomeSite`：表示必要條件已由元件廠商所裝載。  
   
-  - `Relative`︰表示必要條件位於應用程式的相同位置。  
+  - `Relative`：表示必要條件位於應用程式相同的位置。  
   
-  - `Absolute`︰表示可在集中式 URL 中找到所有元件。 此值應該與 `ComponentsUrl` 輸入參數搭配使用。  
+  - `Absolute`：表示可在集中式 URL 中找到所有元件。 此值應該與 `ComponentsUrl` 輸入參數搭配使用。  
   
     如果未指定 `ComponentsLocation`，預設會使用 `HomeSite`。  
   
@@ -179,6 +178,6 @@ ms.locfileid: "54769219"
 </Project>  
 ```  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [工作](../msbuild/msbuild-tasks.md)   
  [工作參考](../msbuild/msbuild-task-reference.md)

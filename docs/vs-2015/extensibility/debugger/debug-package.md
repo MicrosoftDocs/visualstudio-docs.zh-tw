@@ -1,26 +1,21 @@
 ---
 title: 偵錯封裝 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], packages
 ms.assetid: 99947fd4-fb87-4c69-b26c-65634e17d285
 caps.latest.revision: 10
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: cae13349dd234f46e1d9de1589fcb50f1e5b0aef
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: dda8b1ac6eaa2cd5352d441600ae720c3aac321c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51793447"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68181299"
 ---
 # <a name="debug-package"></a>偵錯套件
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -38,4 +33,3 @@ ms.locfileid: "51793447"
  [堆疊框架](../../extensibility/debugger/stack-frames.md)   
  [執行緒](../../extensibility/debugger/threads.md)   
  [偵錯工具元件](../../extensibility/debugger/debugger-components.md)
-

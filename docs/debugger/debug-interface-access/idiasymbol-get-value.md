@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0f7eee2acc1c131e146f115d75130eabbb5fd1a8
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56686362"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "62834541"
 ---
 # <a name="idiasymbolgetvalue"></a>IDiaSymbol::get_value
 擷取常數的值。
@@ -69,5 +69,5 @@ void ProcessValue2(IDiaSymbol *pSymbol)
 }
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -1,6 +1,6 @@
 ---
 title: 選項對話方塊、環境、匯入和匯出設定
-ms.date: 11/04/2016
+ms.date: 03/28/2019
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Environment.Profiles
@@ -10,16 +10,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f8cd7766bf51190a0b925c66d49ffc04a23cff1
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 312038f14da876fae91b8d65e47235adeb1d14ce
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55921038"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62778501"
 ---
-# <a name="import-and-export-settings-environment-options-dialog-box"></a>選項對話方塊、環境、匯入和匯出設定
+# <a name="options-dialog-box-environment--import-and-export-settings"></a>選項對話方塊：環境 \> 匯入和匯出設定
 
-您可以使用這個頁面，指定儲存使用者設定檔案的位置，以及是否要使用團隊設定檔案。 如需設定的詳細資訊，請參閱[將 Visual Studio IDE 個人化](../../ide/personalizing-the-visual-studio-ide.md)。
+您可以使用此頁面，指定儲存使用者設定檔案的位置。 如需設定的詳細資訊，請參閱[將 Visual Studio IDE 個人化](../../ide/personalizing-the-visual-studio-ide.md)。
 
 ### <a name="see-also"></a>另請參閱
 

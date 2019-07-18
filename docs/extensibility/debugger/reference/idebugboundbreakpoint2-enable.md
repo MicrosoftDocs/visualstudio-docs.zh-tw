@@ -8,17 +8,20 @@ helpviewer_keywords:
 - Enable method
 - IDebugBoundBreakpoint2::Enable method
 ms.assetid: 1b4e3f73-c94d-4aa3-9aa8-0d8cb8a6c5ca
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 267f7b3fed8df1a326bca9dd5c1ca8128330ee16
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 62ef11f8cdbdc106a69441bd470da1f979129456
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56705082"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66320573"
 ---
 # <a name="idebugboundbreakpoint2enable"></a>IDebugBoundBreakpoint2::Enable
 啟用或停用中斷點。
@@ -37,10 +40,9 @@ int Enable( 
 );
 ```
 
-#### <a name="parameters"></a>參數
-`fEnable`
-
- [in]設定為非零 (`TRUE`) 若要啟用，或為零 (`FALSE`) 若要停用中斷點。
+## <a name="parameters"></a>參數
+`fEnable`\
+[in]設定為非零 (`TRUE`) 若要啟用，或為零 (`FALSE`) 若要停用中斷點。
 
 ## <a name="return-value"></a>傳回值
 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。 傳回`E_BP_DELETED`如果繫結的中斷點物件的狀態設為`BPS_DELETED`(屬於[BP_STATE](../../../extensibility/debugger/reference/bp-state.md)列舉型別)。

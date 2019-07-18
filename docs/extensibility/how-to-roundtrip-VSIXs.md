@@ -4,18 +4,18 @@ ms.date: 06/25/2017
 ms.topic: conceptual
 ms.assetid: 2d6cf53c-011e-4c9e-9935-417edca8c486
 author: willbrown
-ms.author: gregvanl
+ms.author: madsk
 manager: justinclareburt
 ms.workload:
 - willbrown
-ms.openlocfilehash: 0b70d8f1692eed8dcd1ba339dc9bcbb361e60db0
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: 392a0157522f5baa8e8736d52c940b31c0a44cde
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57323811"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67826035"
 ---
-# <a name="how-to-make-extensions-compatible-with-visual-studio-2017-and-visual-studio-2015"></a>HOW TO：讓擴充功能與 Visual Studio 2017 和 Visual Studio 2015 相容
+# <a name="how-to-make-extensions-compatible-with-visual-studio-2017-and-visual-studio-2015"></a>作法：讓擴充功能與 Visual Studio 2017 和 Visual Studio 2015 相容
 
 本文件說明如何讓 Visual Studio 2015 和 Visual Studio 2017 之間反覆存取的擴充性專案。 完成這項升級之後, 的專案就可以開啟、 建置、 安裝及 Visual Studio 2015 和 Visual Studio 2017 中執行。 做為參考，可以反覆存取 Visual Studio 2015 和 Visual Studio 2017 之間的某些延伸模組可在[VS SDK 擴充性範例](https://github.com/Microsoft/VSSDK-Extensibility-Samples)。
 
@@ -51,14 +51,14 @@ ms.locfileid: "57323811"
 
 ## <a name="ensure-there-is-no-reference-to-projectjson"></a>請確定沒有任何以 project.json 參考
 
-在本文中，稍後我們會插入條件式匯入陳述式中的您 **.csproj*檔案。 如果您的 NuGet 參考會儲存在這將無法運作*project.json*。 因此，建議您移動所有 NuGet 參考*packages.config*檔案。
+在本文中，稍後我們會插入條件式匯入陳述式中的您 * *.csproj*檔案。 如果您的 NuGet 參考會儲存在這將無法運作*project.json*。 因此，建議您移動所有 NuGet 參考*packages.config*檔案。
 如果您的專案包含*project.json*檔案：
 
 * 請記下的在參考*project.json*。
 * 從**方案總管**，刪除*project.json*從專案的檔案。 這會刪除*project.json*檔案，並將它從專案移除。
 * 新增 NuGet 參考回至專案：
-    * 以滑鼠右鍵按一下**解決方案**，然後選擇**管理方案的 NuGet 套件**。
-    * Visual Studio 會自動建立*packages.config*為您的檔案。
+  * 以滑鼠右鍵按一下**解決方案**，然後選擇**管理方案的 NuGet 套件**。
+  * Visual Studio 會自動建立*packages.config*為您的檔案。
 
 > [!NOTE]
 > 如果您的專案包含 EnvDTE 套件，它們可能需要以滑鼠右鍵按一下要加入**參考**選取**將參考加入**並新增適當的參考。 使用 NuGet 套件，可能會嘗試建置專案時建立的錯誤。
@@ -95,7 +95,7 @@ Visual Studio 2017 | Microsoft.VSSDK.BuildTool
 
 ### <a name="2-adding-prerequisites-to-the-extensionvsixmanifest-file"></a>2.加入必要條件*extension.vsixmanifest*檔案
 
-必要條件是使用 Visual Studio 2017 的新功能。 在此案例中，我們需要 Visual Studio 核心編輯器做為必要條件。 因為 Visual Studio 2015 VSIX 設計工具不會處理新`Prerequisites` 區段中，您必須編輯此組件中的 XML 程式碼以手動方式。 或者，您可以開啟 Visual Studio 2017，並使用更新的資訊清單設計工具插入的必要條件。
+我們需要 Visual Studio 核心編輯器，做為必要條件。 開啟 Visual Studio，並使用更新的資訊清單設計工具插入的必要條件。
 
 若要以手動方式這樣：
 
@@ -112,7 +112,7 @@ Visual Studio 2017 | Microsoft.VSSDK.BuildTool
 * 儲存並關閉檔案。
 
 > [!NOTE]
-> 如果您選擇達成此目的使用 VSIX 設計工具，Visual Studio 2017 中，您必須手動編輯必要的版本，以確保它是與所有版本的 Visual Studio 2017 相容。 這是因為設計工具會為您目前版本的 Visual Studio (比方說，15.0.26208.0) 插入的最小版本。 不過，因為其他使用者可能會有較早版本，您會想要以手動方式編輯這個檔案為 15.0。
+> 您可能需要手動編輯必要的版本，以確保它是與所有版本的 Visual Studio 2017 相容。 這是因為設計工具會為您目前版本的 Visual Studio (比方說，15.0.26208.0) 插入的最小版本。 不過，因為其他使用者可能會有較早版本，您會想要以手動方式編輯這個檔案為 15.0。
 
 此時，您的資訊清單檔應看起來像這樣：
 
@@ -165,7 +165,7 @@ Visual Studio 2017 | Microsoft.VSSDK.BuildTool
 
 * 加入額外的條件式陳述式來`<import>`Microsoft.VSSDK.BuildTools 參考的標記。 插入`'$(VisualStudioVersion)' != '14.0' And`條件陳述式前面。 這些陳述式會出現在頁首和頁尾的 csproj 檔案。
 
-例如: 
+例如：
 
 ```xml
 <Import Project="packages\Microsoft.VSSDK.BuildTools.15.0.26201…" Condition="'$(VisualStudioVersion)' != '14.0' And Exists(…" />
@@ -173,7 +173,7 @@ Visual Studio 2017 | Microsoft.VSSDK.BuildTool
 
 * 加入額外的條件式陳述式來`<import>`Microsoft.VisualStudio.Sdk.BuildTasks.14.0 的標記。 插入`'$(VisualStudioVersion)' == '14.0' And`條件陳述式前面。 這些陳述式會出現在頁首和頁尾的 csproj 檔案。
 
-例如: 
+例如：
 
 ```xml
 <Import Project="packages\Microsoft.VisualStudio.Sdk.BuildTasks.14.0.14.0…" Condition="'$(VisualStudioVersion)' == '14.0' And Exists(…" />
@@ -181,7 +181,7 @@ Visual Studio 2017 | Microsoft.VSSDK.BuildTool
 
 * 加入額外的條件式陳述式來`<Error>`Microsoft.VSSDK.BuildTools 參考的標記。 執行這項操作，藉由插入`'$(VisualStudioVersion)' != '14.0' And`條件陳述式前面。 這些陳述式會出現在頁尾中的 csproj 檔案。
 
-例如: 
+例如：
 
 ```xml
 <Error Condition="'$(VisualStudioVersion)' != '14.0' And Exists('packages\Microsoft.VSSDK.BuildTools.15.0.26201…" />
@@ -189,7 +189,7 @@ Visual Studio 2017 | Microsoft.VSSDK.BuildTool
 
 * 加入額外的條件式陳述式來`<Error>`Microsoft.VisualStudio.Sdk.BuildTasks.14.0 的標記。 插入`'$(VisualStudioVersion)' == '14.0' And`條件陳述式前面。 這些陳述式會出現在頁尾中的 csproj 檔案。
 
-例如: 
+例如：
 
 ```xml
 <Error Condition="'$(VisualStudioVersion)' == '14.0' And Exists('packages\Microsoft.VisualStudio.Sdk.BuildTasks.14.0.14.0…" />

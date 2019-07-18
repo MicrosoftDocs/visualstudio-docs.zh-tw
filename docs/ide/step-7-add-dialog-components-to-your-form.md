@@ -8,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bab093c450a7913ea0f1d3e94b6d04e287c6c539
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: a1b4ef99f6b8e4dbe9d334fea0e8f5c34d5c6ffa
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55911074"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442059"
 ---
 # <a name="step-7-add-dialog-components-to-your-form"></a>步驟 7：將對話方塊元件新增至您的表單
 若要讓程式開啟圖片檔並選擇背景色彩，請在這個步驟中，將 <xref:System.Windows.Forms.OpenFileDialog> 元件和 <xref:System.Windows.Forms.ColorDialog> 元件新增至表單。
@@ -24,33 +24,33 @@ ms.locfileid: "55911074"
 
 ## <a name="to-add-dialog-components-to-your-form"></a>若要將對話方塊元件加入至您的表單
 
-1.  選擇 **Windows Forms 設計工具** (Form1.cs [設計] 或 Form1.vb [設計])，然後開啟 [工具箱] 中的 [對話方塊] 群組。
+1. 選擇 **Windows Forms 設計工具** (Form1.cs [設計] 或 Form1.vb [設計])，然後開啟 [工具箱] 中的 [對話方塊] 群組。
 
     > [!NOTE]
-    >  [工具箱] 中的 [對話方塊] 群組包含可開啟許多實用對話方塊的元件，您可用來開啟和儲存檔案、瀏覽資料夾及選擇字型和色彩。 您在本專案中會使用下列兩個對話方塊元件：OpenFileDialog 和 ColorDialog。
+    > [工具箱] 中的 [對話方塊] 群組包含可開啟許多實用對話方塊的元件，您可用來開啟和儲存檔案、瀏覽資料夾及選擇字型和色彩。 您在本專案中會使用下列兩個對話方塊元件：OpenFileDialog 和 ColorDialog。
 
-2.  若要將名稱為 **openFileDialog1** 的元件新增至表單，請按兩下 **OpenFileDialog**。 若要將名稱為 **colorDialog1** 的元件新增至表單，請按兩下 [工具箱] 中的 **ColorDialog**。 (您在下一個教學課程步驟中會用到該元件)。您應該會看到 **Windows Forms 設計工具** 底部 (在**圖片檢視器** 表單下方) 的區域，您在其中加入的兩個對話方塊元件各有一個圖示，如下圖所示。
+2. 若要將名稱為 **openFileDialog1** 的元件新增至表單，請按兩下 **OpenFileDialog**。 若要將名稱為 **colorDialog1** 的元件新增至表單，請按兩下 [工具箱] 中的 **ColorDialog**。 (您在下一個教學課程步驟中會用到該元件)。您應該會看到 **Windows Forms 設計工具** 底部 (在**圖片檢視器** 表單下方) 的區域，您在其中加入的兩個對話方塊元件各有一個圖示，如下圖所示。
 
      ![對話方塊元件](../ide/media/express_dialogsadded.png)
 **對話方塊**元件
 
-3.  選擇 **Windows Forms 設計工具**底部區域中的 **openFileDialog1** 圖示。 設定兩個屬性：
+3. 選擇 **Windows Forms 設計工具**底部區域中的 **openFileDialog1** 圖示。 設定兩個屬性：
 
-    -   將 [篩選條件] 屬性設定為下列值 (您可以複製並貼上)：
+    - 將 [篩選條件] 屬性設定為下列值 (您可以複製並貼上)：
 
         ```
         JPEG Files (*.jpg)|*.jpg|PNG Files (*.png)|*.png|BMP Files (*.bmp)|*.bmp|All files (*.*)|*.*
         ```
 
-    -   將 [標題] 屬性設定為下列值：[選取圖片檔案]
+    - 將 [標題] 屬性設定為下列值：[選取圖片檔案]
 
          [篩選條件] 屬性設定會指定要在 [選取圖片檔案] 對話方塊中顯示的檔案類型。
 
     > [!NOTE]
-    >  若要查看不同應用程式中的 [開啟檔案] 對話方塊範例，請開啟記事本或小畫家，並在功能表列上依序選擇 [檔案] > [開啟舊檔]。 請注意底部的 [檔案類型] 下拉式清單。 您剛才已使用 **OpenFileDialog** 元件的 [篩選條件] 屬性來設定此清單。 另外，請注意 [屬性] 視窗中的 [標題] 和 [篩選條件] 屬性都是粗體。 IDE 這樣做是為了讓您知道任何屬性已變更，而不再是預設值。
+    > 若要查看不同應用程式中的 [開啟檔案] 對話方塊範例，請開啟記事本或小畫家，並在功能表列上依序選擇 [檔案] > [開啟舊檔]。 請注意底部的 [檔案類型] 下拉式清單。 您剛才已使用 **OpenFileDialog** 元件的 [篩選條件] 屬性來設定此清單。 另外，請注意 [屬性] 視窗中的 [標題] 和 [篩選條件] 屬性都是粗體。 IDE 這樣做是為了讓您知道任何屬性已變更，而不再是預設值。
 
 ## <a name="to-continue-or-review"></a>若要繼續或檢視
 
--   若要前往下一個教學課程步驟，請參閱[步驟 8：為顯示圖片按鈕事件處理常式撰寫程式碼](../ide/step-8-write-code-for-the-show-a-picture-button-event-handler.md)。
+- 若要前往下一個教學課程步驟，請參閱[步驟 8：為顯示圖片按鈕事件處理常式撰寫程式碼](../ide/step-8-write-code-for-the-show-a-picture-button-event-handler.md)。
 
--   若要回到上一個教學課程步驟，請參閱[步驟 6：命名按鈕控制項](../ide/step-6-name-your-button-controls.md)。
+- 若要回到上一個教學課程步驟，請參閱[步驟 6：命名按鈕控制項](../ide/step-6-name-your-button-controls.md)。

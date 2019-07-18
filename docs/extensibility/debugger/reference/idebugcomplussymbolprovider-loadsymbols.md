@@ -6,17 +6,20 @@ helpviewer_keywords:
 - LoadSymbols
 - IDebugComPlusSymbolProvider::LoadSymbols
 ms.assetid: 3499680d-0b9a-4f20-8432-c89a41b29b87
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4c19070dce95a1f88398fe57d03e9d578086e9ae
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 5194b13a1e92b6d6f8ed4b688ea7956cb3ed876e
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56678198"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66308996"
 ---
 # <a name="idebugcomplussymbolproviderloadsymbols"></a>IDebugComPlusSymbolProvider::LoadSymbols
 載入記憶體中指定的偵錯符號。
@@ -45,30 +48,24 @@ int LoadSymbols(
 );
 ```
 
-#### <a name="parameters"></a>參數
-`ulAppDomainID`
+## <a name="parameters"></a>參數
+`ulAppDomainID`\
+[in]應用程式定義域的識別項。
 
- [in]應用程式定義域的識別項。
+`guidModule`\
+[in]Mondule 的唯一識別碼。
 
-`guidModule`
+`baseAddress`\
+[in]基底的記憶體位址。
 
- [in]Mondule 的唯一識別碼。
+`pUnkMetadataImport`\
+[in]包含符號的中繼資料的物件。
 
-`baseAddress`
+`bstrModuleName`\
+[in]模組的名稱。
 
- [in]基底的記憶體位址。
-
-`pUnkMetadataImport`
-
- [in]包含符號的中繼資料的物件。
-
-`bstrModuleName`
-
- [in]模組的名稱。
-
-`bstrSymSearchPath`
-
- [in]若要搜尋符號檔案的路徑。
+`bstrSymSearchPath`\
+[in]若要搜尋符號檔案的路徑。
 
 ## <a name="return-value"></a>傳回值
 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

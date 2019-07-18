@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugDocumentTextEvents2 interface
 ms.assetid: a10cbb6b-11a8-4056-b42a-2ecebf0e690d
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e24568d307db694d30a5e87630f47f764a036427
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 56ecf7c81c2be90b975785cc8f07f11af2aa2a7e
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56681721"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66351346"
 ---
 # <a name="idebugdocumenttextevents2"></a>IDebugDocumentTextEvents2
 此介面用來偵錯引擎所提供的來源文件變更的相關通知 Visual Studio。

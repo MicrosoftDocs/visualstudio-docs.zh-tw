@@ -20,12 +20,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 141bf63a3cf64cfb1e3576f76512351b496a2778
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 3a1e9a3abd6b16ae0365279a6eb9cb067bfeb225
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54755034"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430858"
 ---
 # <a name="microsoft-help-viewer"></a>Microsoft Help Viewer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,19 +33,19 @@ ms.locfileid: "54755034"
 您可以使用 Microsoft Help Viewer 在本機電腦上安裝及檢視各種產品和技術的內容。  
   
 > [!WARNING]
->  當您安裝 Visual Studio 時，您會取得說明檢視器。 若要在說明檢視器中開始讀取說明主題，而不要在 MSDN 下載網站上讀取，請在 Visual Studio 中移至 [說明] 功能表，選取 [設定說明偏好]，然後選取 [在說明檢視器中啟動]。 指定 Visual Studio 版本的離線說明主題僅於該版本的最終發行之後才可使用。  
+> 當您安裝 Visual Studio 時，您會取得說明檢視器。 若要在說明檢視器中開始讀取說明主題，而不要在 MSDN 下載網站上讀取，請在 Visual Studio 中移至 [說明] 功能表，選取 [設定說明偏好]，然後選取 [在說明檢視器中啟動]。 指定 Visual Studio 版本的離線說明主題僅於該版本的最終發行之後才可使用。  
   
  您可執行以下動作：  
   
--   尋找並下載內容集，這也稱為書籍。  
+- 尋找並下載內容集，這也稱為書籍。  
   
--   瀏覽和搜尋目錄，依標題尋找主題。  
+- 瀏覽和搜尋目錄，依標題尋找主題。  
   
--   查詢索引中的主旨。  
+- 查詢索引中的主旨。  
   
--   使用全文檢索搜尋來尋找資訊。  
+- 使用全文檢索搜尋來尋找資訊。  
   
--   檢視主題、將主題加入書籤以及列印。  
+- 檢視主題、將主題加入書籤以及列印。  
   
 ## <a name="navigating-the-help-viewer"></a>巡覽說明檢視器  
  您可以使用瀏覽索引標籤，尋找已安裝內容中的資訊，在主題索引標籤中檢視已安裝的內容，以及使用 [管理內容] 索引標籤來管理內容。也可以使用工具列上的按鈕來執行其他工作，並在視窗右下角中尋找其他資訊。  
@@ -74,7 +74,7 @@ ms.locfileid: "54755034"
   
   [說明檢視器] 視窗的下方區域包含暫止的下載總大小、所需磁碟空間量和可用的磁碟空間量之相關資訊。 如果有可用的更新，這個區域也包含可能發生的錯誤之相關資訊，以及一個連結，您可以選擇選擇此連結來重新整理已安裝的內容。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [說明檢視器系統管理員指南](../ide/help-viewer-administrator-guide.md)   
  [安裝與管理本機內容](../ide/install-and-manage-local-content.md)   
  [尋找資訊](../ide/locate-information.md)   

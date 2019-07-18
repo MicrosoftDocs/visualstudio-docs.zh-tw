@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e3d698732e1f2362fbb9a536dc4e5a8e4cc412db
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
-ms.translationtype: MTE95
+ms.openlocfilehash: 0ffbe0b8365948dc5a69edca390f308cb55ba5a3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227563"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62929430"
 ---
 # <a name="view-events-with-intellitrace-in-visual-studio-enterprise-c-visual-basic"></a>在 Visual Studio Enterprise 中檢視使用 IntelliTrace 的事件 (C#，Visual Basic)
 
@@ -53,7 +53,7 @@ ms.locfileid: "56227563"
 
 ## <a name="start-debugging-and-view-intellitrace-events"></a>開始偵錯，以及檢視 IntelliTrace 事件
 
-1. 照常開始偵錯 (按 **F5** 或按一下 [偵錯] > [開始偵錯])。
+1. 照常開始偵錯 (按 [F5]  或按一下 [偵錯] > [開始偵錯] )。
 
     > [!TIP]
     > 偵錯時，請保持 [區域變數] 和 [自動變數] 視窗開啟，以查看和記錄這些視窗中所顯示的值。

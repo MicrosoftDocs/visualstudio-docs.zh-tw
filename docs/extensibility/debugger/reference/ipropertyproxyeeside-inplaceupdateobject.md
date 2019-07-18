@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IPropertyProxyEESide::InPlaceUpdateObject
 ms.assetid: abf89411-1853-4f23-b244-d5e0afa197b1
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8617dd6f37d7e90d23c3ed454ef56122b36f6b75
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 6ce2826aa0bd75638d6f5ee8086cbcce96517ce7
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56688637"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66329414"
 ---
 # <a name="ipropertyproxyeesideinplaceupdateobject"></a>IPropertyProxyEESide::InPlaceUpdateObject
 使用指定的資料物件更新物件的資料，並傳回新的資料物件，表示物件的新資料。
@@ -38,14 +41,12 @@ int InPlaceUpdateObject(
 );
 ```
 
-#### <a name="parameters"></a>參數
- `dataIn`
+## <a name="parameters"></a>參數
+`dataIn`\
+[in][IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)物件，包含新的資料。
 
- [in][IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)物件，包含新的資料。
-
- `dataOut`
-
- [out]傳回新`IEEDataStorage`物件，其中包含被取代的資料。
+`dataOut`\
+[out]傳回新`IEEDataStorage`物件，其中包含被取代的資料。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

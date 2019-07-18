@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - GetTaskSchedulersForDebugger method, TaskScheduler class [.NET Framework debug engines]
 ms.assetid: 58aa236a-5ab8-4695-b303-89dffdbcd946
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d5df6dc3147a92f14d6858a82a6d997442dec30b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: c8d038c8c67731fe1bff9ec705b5ddf416807a57
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56702560"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66353712"
 ---
 # <a name="gettaskschedulersfordebugger-method"></a>GetTaskSchedulersForDebugger 方法
 擷取的所有陣列<xref:System.Threading.Tasks.TaskScheduler>目前使用中的物件。

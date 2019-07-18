@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - SccGetCommandOptions function
 ms.assetid: bbe4aa4e-b4b0-403e-b7a0-5dd6eb24e5a9
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f73eec788ee21c5e27514d373ad78b8dfc965fce
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 13e8bbae6ee16eb81fdb29f526a1f41e905fa504
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56681669"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66351889"
 ---
 # <a name="sccgetcommandoptions-function"></a>SccGetCommandOptions 函式
 此函數會提示使用者提供針對特定命令的進階選項。
@@ -77,7 +77,7 @@ SCCRTN SccGetCommandOptions(
  最後，當使用者按一下 **[確定]** 在 IDE 中**取得** 對話方塊中，IDE 會呼叫[SccGet](../extensibility/sccget-function.md)，傳遞結構中傳回`ppvOptions`包含進階的選項。
 
 > [!NOTE]
->  此命令`SCC_COMMAND_OPTIONS`IDE 會顯示時，會使用**選項**對話方塊，讓使用者設定控制整合的運作方式的喜好設定。 如果原始檔控制外掛程式想要提供自己的喜好設定 對話方塊中，它可以顯示從**進階**IDE 的 喜好設定 對話方塊中的按鈕。 外掛程式只負責取得並保存這項資訊;IDE 不會使用它，或修改它。
+> 此命令`SCC_COMMAND_OPTIONS`IDE 會顯示時，會使用**選項**對話方塊，讓使用者設定控制整合的運作方式的喜好設定。 如果原始檔控制外掛程式想要提供自己的喜好設定 對話方塊中，它可以顯示從**進階**IDE 的 喜好設定 對話方塊中的按鈕。 外掛程式只負責取得並保存這項資訊;IDE 不會使用它，或修改它。
 
 ## <a name="see-also"></a>另請參閱
 - [原始檔控制外掛程式 API 函式](../extensibility/source-control-plug-in-api-functions.md)

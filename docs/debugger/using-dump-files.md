@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b392cf5eddaab877af56ee952074cff646e10a59
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 2f0b7edf8ef2670b70dbee25b70cac7b0597490b
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56693447"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65676363"
 ---
 # <a name="dump-files-in-the-visual-studio-debugger"></a>在 Visual Studio 偵錯工具中的傾印檔案
 
@@ -39,27 +39,27 @@ ms.locfileid: "56693447"
 
 Visual Studio 偵錯工具可以儲存 Managed 程式碼或機器碼的傾印檔案。 它可以由 Visual Studio 或其他儲存在檔案的應用程式建立的傾印檔案進行偵錯*小型傾印*格式。
 
-##  <a name="BKMK_Requirements_and_limitations"></a> 需求和限制
+## <a name="BKMK_Requirements_and_limitations"></a> 需求和限制
 
--   偵錯傾印檔案的 64 位元電腦，您必須執行 Visual Studio，在 64 位元電腦上。
+- 偵錯傾印檔案的 64 位元電腦，您必須執行 Visual Studio，在 64 位元電腦上。
 
--   Visual Studio 可以對來自 ARM 裝置的原生應用程式傾印檔案進行偵錯。 它也可以偵錯傾印的受管理的應用程式，從 ARM 裝置，但僅限原生偵錯工具。
+- Visual Studio 可以對來自 ARM 裝置的原生應用程式傾印檔案進行偵錯。 它也可以偵錯傾印的受管理的應用程式，從 ARM 裝置，但僅限原生偵錯工具。
 
--   若要偵錯[核心模式](/windows-hardware/drivers/debugger/kernel-mode-dump-files)傾印檔案，或使用[SOS.dll](/dotnet/framework/tools/sos-dll-sos-debugging-extension)偵錯在 Visual Studio 中的延伸模組下載中的 Windows 偵錯工具[Windows Driver Kit (WDK)](/windows-hardware/drivers/download-the-wdk)。
+- 若要偵錯[核心模式](/windows-hardware/drivers/debugger/kernel-mode-dump-files)傾印檔案，或使用[SOS.dll](/dotnet/framework/tools/sos-dll-sos-debugging-extension)偵錯在 Visual Studio 中的延伸模組下載中的 Windows 偵錯工具[Windows Driver Kit (WDK)](/windows-hardware/drivers/download-the-wdk)。
 
--   Visual Studio 無法偵錯傾印檔案儲存在較舊[完整使用者模式傾印](/windows/desktop/wer/collecting-user-mode-dumps)格式。 完整的使用者模式傾印不包含堆積的傾印相同。
+- Visual Studio 無法偵錯傾印檔案儲存在較舊[完整使用者模式傾印](/windows/desktop/wer/collecting-user-mode-dumps)格式。 完整的使用者模式傾印不包含堆積的傾印相同。
 
--   對最佳化程式碼的傾印檔案進行偵錯可能會造成混淆。 例如，編譯器內嵌函式會造成未預期的呼叫堆疊，而其他最佳化可能會變更變數的存留期。
+- 對最佳化程式碼的傾印檔案進行偵錯可能會造成混淆。 例如，編譯器內嵌函式會造成未預期的呼叫堆疊，而其他最佳化可能會變更變數的存留期。
 
-##  <a name="BKMK_Dump_files__with_or_without_heaps"></a> 包含或不含堆積的傾印檔案
+## <a name="BKMK_Dump_files__with_or_without_heaps"></a> 包含或不含堆積的傾印檔案
 
 傾印檔案可能會或可能沒有堆積資訊。
 
--   **堆積的傾印檔案**包含應用程式的記憶體，包括變數的值，在傾印時的快照集。 Visual Studio 也會儲存已載入的原生模組二進位的檔可以讓您更容易偵錯堆積的傾印檔案中。 Visual Studio 可以從傾印檔案包含堆積，載入符號，即使找不到應用程式二進位。
+- **堆積的傾印檔案**包含應用程式的記憶體，包括變數的值，在傾印時的快照集。 Visual Studio 也會儲存已載入的原生模組二進位的檔可以讓您更容易偵錯堆積的傾印檔案中。 Visual Studio 可以從傾印檔案包含堆積，載入符號，即使找不到應用程式二進位。
 
--   **傾印檔案，不含堆積**會遠低於傾印的堆積，但偵錯工具必須載入的應用程式二進位檔，以尋找符號資訊。 載入的二進位檔必須完全符合傾印建立期間執行的項目。 不含堆積的傾印檔案儲存只有堆疊變數的值。
+- **傾印檔案，不含堆積**會遠低於傾印的堆積，但偵錯工具必須載入的應用程式二進位檔，以尋找符號資訊。 載入的二進位檔必須完全符合傾印建立期間執行的項目。 不含堆積的傾印檔案儲存只有堆疊變數的值。
 
-##  <a name="BKMK_Create_a_dump_file"></a> 建立傾印檔案
+## <a name="BKMK_Create_a_dump_file"></a> 建立傾印檔案
 
 雖然您正在偵錯在 Visual Studio 中的程序，您可以在偵錯工具停止於例外狀況或中斷點時儲存傾印。
 
@@ -74,9 +74,9 @@ Visual Studio 偵錯工具可以儲存 Managed 程式碼或機器碼的傾印檔
 1. 瀏覽路徑並選取傾印檔案的名稱，然後選取**儲存**。
 
 >[!NOTE]
->您可以使用任何支援 Windows 小型傾印格式的程式，以建立傾印檔案。 例如，[Windows Sysinternals](http://technet.microsoft.com/sysinternals/default) 提供的 **Procdump** 命令列公用程式可以根據觸發程序或視需要建立處理序損毀傾印檔案。 請參閱[需求和限制](../debugger/using-dump-files.md#BKMK_Requirements_and_limitations)如需使用其他工具建立傾印檔案的詳細資訊。
+>您可以使用任何支援 Windows 小型傾印格式的程式，以建立傾印檔案。 例如，[Windows Sysinternals](https://technet.microsoft.com/sysinternals/default) 提供的 **Procdump** 命令列公用程式可以根據觸發程序或視需要建立處理序損毀傾印檔案。 請參閱[需求和限制](../debugger/using-dump-files.md#BKMK_Requirements_and_limitations)如需使用其他工具建立傾印檔案的詳細資訊。
 
-##  <a name="BKMK_Open_a_dump_file"></a> 開啟傾印檔案
+## <a name="BKMK_Open_a_dump_file"></a> 開啟傾印檔案
 
 1. 在 Visual Studio 中，選取**檔案** > **Open** > **檔案**。
 
@@ -90,7 +90,7 @@ Visual Studio 偵錯工具可以儲存 Managed 程式碼或機器碼的傾印檔
    - 若要設定符號載入作業的位置，選取**設定符號路徑**。
    - 若要開始偵錯，請選取**使用 僅限 Managed 偵錯**，**與 僅限原生偵錯**，**混合進行偵錯**，或**偵錯 Managed 記憶體使用**。
 
-##  <a name="BKMK_Find_binaries__symbol___pdb__files__and_source_files"></a> 尋找.exe、.pdb 和原始程式檔
+## <a name="BKMK_Find_binaries__symbol___pdb__files__and_source_files"></a> 尋找.exe、.pdb 和原始程式檔
 
 若要使用完整偵錯功能在傾印檔案，Visual Studio 需要：
 

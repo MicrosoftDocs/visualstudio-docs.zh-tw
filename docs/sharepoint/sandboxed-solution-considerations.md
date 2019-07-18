@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c31fe758d9c1a9a99fb71144f93c7145ea466ad0
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 3f6345e7627549c672aa28fac8cba5f6d9658a23
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56621691"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435440"
 ---
 # <a name="sandboxed-solution-considerations"></a>沙箱化方案考量
   *沙箱化方案*是可讓網站集合的使用者上傳他們自己的自訂程式碼解決方案的 Microsoft SharePoint 2010 中的功能。 常見的沙箱化方案是上傳他們自己的 Web 組件的使用者。
@@ -34,7 +34,7 @@ ms.locfileid: "56621691"
  [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 支援透過布林值的專案屬性的沙箱化方案稱為*沙箱化方案*。 可以在專案中，隨時設定這個屬性，或者可以指定當您建立的專案中**SharePoint 自訂精靈**。
 
 > [!NOTE]
->  變更*沙箱化方案*專案建立後的屬性可能會造成驗證錯誤。
+> 變更*沙箱化方案*專案建立後的屬性可能會造成驗證錯誤。
 
  方案會視為陣列範圍的解決方案，如果*沙箱化方案*屬性設定為**false** ，或您選擇**部署為伺服陣列方案**選項。 不過，解決方案是以不同方式處理從伺服器陣列方案如果*沙箱化方案*屬性設定為 **，則為 true** ，或您選擇**部署為沙箱化方案**在精靈中的選項。
 

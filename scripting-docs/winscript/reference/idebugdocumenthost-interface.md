@@ -14,11 +14,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 226e2700b471cd34496682d233e57946e124ff3b
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58155663"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62939218"
 ---
 # <a name="idebugdocumenthost-interface"></a>IDebugDocumentHost 介面
 會公開主應用程式特有的功能，例如語法著色、 偵錯工具。 `IDebugDocumentHelper::SetDebugDocumentHost`方法會採用此介面做為引數。  

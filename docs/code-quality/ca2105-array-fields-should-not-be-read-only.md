@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eeadbd977b8c7d97af611a2054692a6071f21a36
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 9f8a02ae357dbf36cb4d3e4bd21aaad0fed3a320
+ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55928916"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67586578"
 ---
 # <a name="ca2105-array-fields-should-not-be-read-only"></a>CA2105:陣列欄位不應該為唯讀
 
@@ -44,7 +44,7 @@ ms.locfileid: "55928916"
 
 若要修正此規則所識別的安全性弱點，請勿依賴可公開存取的唯讀陣列的內容。 強烈建議使用下列程序的其中一個：
 
-- 無法變更的強類型集合取代陣列。 如需詳細資訊，請參閱<xref:System.Collections.ReadOnlyCollectionBase?displayProperty=fullName>。
+- 無法變更的強類型集合取代陣列。 如需詳細資訊，請參閱 <xref:System.Collections.ReadOnlyCollectionBase?displayProperty=fullName>。
 
 - 公用欄位取代為傳回的私用陣列複製品的方法。 因為您的程式碼不需要複製，不是可能如果修改的項目。
 
@@ -74,6 +74,10 @@ ms.locfileid: "55928916"
 Before tampering: Grades: 90, 90, 90 Private Grades: 90, 90, 90  Secure Grades, 90, 90, 90
 After tampering: Grades: 90, 555, 90 Private Grades: 90, 555, 90  Secure Grades, 90, 90, 90
 ```
+
+## <a name="related-rules"></a>相關的規則
+
+- [CA2104:不要宣告唯讀的可變動參考類型](../code-quality/ca2104-do-not-declare-read-only-mutable-reference-types.md)
 
 ## <a name="see-also"></a>另請參閱
 

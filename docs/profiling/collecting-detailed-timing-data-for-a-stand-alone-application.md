@@ -1,5 +1,5 @@
 ---
-title: 使用分析工具命令列收集獨立應用程式的詳細計時資料 | Microsoft Docs
+title: 分析工具命令列：獨立應用程式的計時詳細資料
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8bae9bbdff28312c36af91af57368d6b87028d44
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 13bc632d70b3d477b70f6e947e55d5c82c6ab064
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56603621"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66262883"
 ---
 # <a name="collect-detailed-timing-data-for-a-stand-alone-application-by-using-the-profiler-command-line"></a>使用分析工具命令列收集獨立應用程式的詳細計時資料
 本節說明從命令列使用檢測方法收集用戶端 (獨立) 元件之詳細效能資料的程序和選項。

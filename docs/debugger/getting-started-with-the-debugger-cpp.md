@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a9975d0c4a62b4ae4d2695a34eeab0d43ba4a424
-ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
+ms.openlocfilehash: 8cbcd4d4458de757cae5c20391f57c0708edbfd4
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57428774"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65679749"
 ---
 # <a name="tutorial-learn-to-debug-c-code-using-visual-studio"></a>教學課程：了解如何使用 Visual Studio 對 C++ 程式碼進行偵錯
 
@@ -37,32 +37,35 @@ ms.locfileid: "57428774"
 
 ::: moniker range=">=vs-2019"
 
-* 您必須安裝 Visual Studio 2019 和**使用 C++ 的桌面開發**工作負載。
+您必須安裝 Visual Studio 2019 和**使用 C++ 的桌面開發**工作負載。
 
 ::: moniker-end
 ::: moniker range="vs-2017"
 
-* 您必須安裝 Visual Studio 2017 和**使用 C++ 的桌面開發**工作負載。
+您必須安裝 Visual Studio 2017 和**使用 C++ 的桌面開發**工作負載。
 
 ::: moniker-end
 
-如果您尚未安裝 Visual Studio，請前往  [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) 頁面免費進行安裝。
+如果您尚未安裝 Visual Studio，請前往  [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) 頁面免費進行安裝。
 
-如果您需要安裝工作負載，但已擁有 Visual Studio，請在 [新增專案] 對話方塊 (選取 [檔案] > [新增] > [專案]) 的左窗格中，按一下 [開啟 Visual Studio 安裝程式]。 Visual Studio 安裝程式即會啟動。 選擇 [使用 C++ 的桌面開發] 工作負載，然後選擇 [修改] 按鈕。
+如果您需要安裝工作負載，但已安裝 Visual Studio，請移至 [工具] > [取得工具與功能...]，以開啟 Visual Studio 安裝程式。 Visual Studio 安裝程式即會啟動。 選擇 [使用 C++ 的桌面開發] 工作負載，然後選擇 [修改] 按鈕。
 
 ## <a name="create-a-project"></a>建立專案
 
-1. 在 Visual Studio 中，選擇 [檔案] > [新增專案]。
+1. 開啟 Visual Studio。
 
-2. 在 [Visual C++] 下方，選擇 [Windows 桌面]，然後在中間窗格中選擇 [Windows 主控台應用程式]。
+    ::: moniker range=">=vs-2019"
+    按 **Esc** 關閉開始視窗。 鍵入 **Ctrl + Q** 來開啟搜尋方塊，鍵入 **c++**，選擇 [範本]，然後選擇 [建立新的主控台應用程式專案]。 在出現的對話方塊中鍵入名稱，例如 **get-started-debugging**，然後選擇 [建立]。
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    從頂端功能表列中，選擇 [檔案] > [新增] > [專案]。 在 [新專案] 對話方塊的左窗格中，於 [Visual C++] 下選擇 [Windows Desktop]，然後在中間的窗格中選擇 [Windows 主控台應用程式]。 接著，輸入 **MyDbgApp** 之類的名稱，然後按一下 [確定]。
+    ::: moniker-end
 
-    如果您沒有看到 [Windows 主控台應用程式] 專案範本，請在 [新增專案] 對話方塊的左窗格中，按一下 [開啟 Visual Studio 安裝程式] 連結。 Visual Studio 安裝程式即會啟動。 選擇 [使用 C++ 的桌面開發] 工作負載，然後選擇 [修改] 按鈕。
-
-3. 鍵入 **get-started-debugging** 之類的名稱，並按一下 [確定]。
+    如果您看不到 **Windows 主控台應用程式**專案範本，請移至 [工具] > [取得工具與功能] 來開啟 Visual Studio 安裝程式。 Visual Studio 安裝程式即會啟動。 選擇 [使用 C++ 的桌面開發] 工作負載，然後選擇 [修改] 按鈕。
 
     Visual Studio 會建立專案。
 
-4. 在 *get-started-debugging.cpp* 中，取代下列程式碼
+1. 在 *get-started-debugging.cpp* 中，取代下列程式碼
 
     ```c++
     int main()

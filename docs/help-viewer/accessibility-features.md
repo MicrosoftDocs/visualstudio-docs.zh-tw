@@ -6,17 +6,17 @@ helpviewer_keywords:
 - accessibility features [Help Viewer]
 - Help Viewer, accessibility features
 ms.assetid: 94a3225c-d2cb-4565-8453-855d1cdc1acf
-author: gewarren
-ms.author: gewarren
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 808b3902747198697aa6a1147bd1c04c85dd96a6
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 34a5a2f07d17c2ebd607bfe102cc7e3db92d014a
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913693"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825138"
 ---
 # <a name="accessibility-features-of-the-help-viewer"></a>說明檢視器的協助工具功能
 Microsoft 致力於使其產品和服務對於每個人都更容易使用。 本主題包含功能、產品和服務的相關資訊，協助各類人士存取 Microsoft Help Viewer。

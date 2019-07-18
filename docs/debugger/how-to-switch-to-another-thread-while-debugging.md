@@ -16,14 +16,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7b6d90b820a2fd27b96c8b260480265166775bb1
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 31eb3427a441b4b79bbd57d9da9871118173b15c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56697698"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62849409"
 ---
-# <a name="how-to-switch-to-another-thread-while-debugging-in-visual-studio-c-visual-basic-c"></a>如何： 在 Visual Studio 中偵錯時切換到另一個執行緒 (C#，Visual Basic、 c + +)
+# <a name="how-to-switch-to-another-thread-while-debugging-in-visual-studio-c-visual-basic-c"></a>HOW TO：在 Visual Studio 中偵錯時切換到另一個執行緒 (C#，Visual Basic 中， C++)
 當您偵錯多執行緒應用程式時，您可以使用其中幾種方法，從您已使用另一個執行緒的執行緒切換。
 
 > [!NOTE]
@@ -33,19 +33,19 @@ ms.locfileid: "56697698"
 
 ### <a name="to-switch-to-any-thread-that-appears"></a>若要切換至出現的任何執行緒
 
--   在 [**執行緒**或是**平行監看式**] 視窗中，按兩下執行緒。
+- 在 [**執行緒**或是**平行監看式**] 視窗中，按兩下執行緒。
 
 ### <a name="to-switch-to-a-thread-in-a-source-window"></a>若要切換至來源視窗中的執行緒
 
--   在左側的裝訂邊上，以滑鼠右鍵按一下執行緒標記圖示![執行緒標記](../debugger/media/dbg-thread-marker.png "ThreadMarker")，指向**切換至**，然後按一下您要切換該執行緒的名稱. 捷徑功能表只會顯示該特定位置上的執行緒。
+- 在左側的裝訂邊上，以滑鼠右鍵按一下執行緒標記圖示![執行緒標記](../debugger/media/dbg-thread-marker.png "ThreadMarker")，指向**切換至**，然後按一下您要切換該執行緒的名稱. 捷徑功能表只會顯示該特定位置上的執行緒。
 
      如果不出現任何執行緒標記，以滑鼠右鍵按一下**執行緒** 視窗，並確認**在來源中顯示執行緒**已選取。
 
 ### <a name="to-switch-to-a-thread-in-the-debug-location-toolbar"></a>若要切換至偵錯位置工具列中的執行緒
 
-1.  在 **偵錯位置**工具列上，按一下**執行緒**清單。
+1. 在 **偵錯位置**工具列上，按一下**執行緒**清單。
 
-2.  在清單中，按一下您要切換至哪個執行緒。
+2. 在清單中，按一下您要切換至哪個執行緒。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [對多執行緒應用程式進行偵錯](../debugger/debug-multithreaded-applications-in-visual-studio.md)

@@ -1,28 +1,23 @@
 ---
-title: 逐步解說︰ 顯示 QuickInfo 工具提示 |Microsoft Docs
-ms.custom: ''
+title: 逐步解說：顯示 QuickInfo 工具提示 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - QuickInfo
 ms.assetid: 23fb8384-4f12-446f-977f-ce7910347947
 caps.latest.revision: 28
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 9cd0e331536c194acdde95bdd74e5f41668a23e1
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 79ce531d36b21ab26cf4c6e6dc76e8c4d98d8763
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51806278"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58943856"
 ---
-# <a name="walkthrough-displaying-quickinfo-tooltips"></a>逐步解說︰顯示 QuickInfo 工具提示
+# <a name="walkthrough-displaying-quickinfo-tooltips"></a>逐步解說：逐步解說︰顯示 QuickInfo 工具提示
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 QuickInfo 是 IntelliSense 功能，可顯示方法簽章，並說明當使用者將指標移方法名稱。 您可以實作語言為基礎的功能，例如 QuickInfo 定義您要提供 QuickInfo 描述的識別碼，然後再建立要顯示的內容中的工具提示。 您可以定義 QuickInfo 中的內容語言服務，或您可以定義您自己的檔案名稱擴充功能和內容類型，並顯示 QuickInfo，只要該類型，或對於現有的內容類型 （例如 「 文字 」），您可以顯示 QuickInfo。 本逐步解說示範如何顯示 QuickInfo"text"的內容類型。  
@@ -182,5 +177,4 @@ QuickInfo 是 IntelliSense 功能，可顯示方法簽章，並說明當使用�
 4.  將指標移到其中的項目之 [新增]。 簽章與描述`add`方法應該會顯示。  
   
 ## <a name="see-also"></a>另請參閱  
- [逐步解說︰將內容類型連結至副檔名](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
-
+ [逐步解說：將內容類型連結至副檔名](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

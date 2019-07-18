@@ -1,14 +1,9 @@
 ---
-title: IEnumDebugProcesses2 |Microsoft Docs
-ms.custom: ''
+title: IEnumDebugProcesses2 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IEnumDebugProcesses2
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 06a1368f-10f0-44eb-af61-e388c2327111
 caps.latest.revision: 14
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 76fdb4647945fea21412a8c2c0efa7f64f65e1cf
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: d56d284d08a1c6b55318300ef7e1db1e385d584e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51765724"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68178430"
 ---
 # <a name="ienumdebugprocesses2"></a>IEnumDebugProcesses2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -46,7 +41,7 @@ IEnumDebugProcesses : IUnknown
   
 |方法|描述|  
 |------------|-----------------|  
-|[下一步](../../../extensibility/debugger/reference/ienumdebugprocesses2-next.md)|擷取指定的數目的列舉型別序列中的程序。|  
+|[下一個](../../../extensibility/debugger/reference/ienumdebugprocesses2-next.md)|擷取指定的數目的列舉型別序列中的程序。|  
 |[Skip](../../../extensibility/debugger/reference/ienumdebugprocesses2-skip.md)|略過指定的數目的列舉型別序列中的程序。|  
 |[Reset](../../../extensibility/debugger/reference/ienumdebugprocesses2-reset.md)|將列舉型別序列重設到開頭。|  
 |[Clone](../../../extensibility/debugger/reference/ienumdebugprocesses2-clone.md)|建立列舉值，包含目前的列舉值相同的列舉型別狀態。|  
@@ -58,11 +53,10 @@ IEnumDebugProcesses : IUnknown
 ## <a name="requirements"></a>需求  
  標頭： msdbg.h  
   
- 命名空間： Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間：Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
  [核心介面](../../../extensibility/debugger/reference/core-interfaces.md)   
  [EnumProcesses](../../../extensibility/debugger/reference/idebugport2-enumprocesses.md)
-

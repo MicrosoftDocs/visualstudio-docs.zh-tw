@@ -1,28 +1,23 @@
 ---
 title: 變更檢視設定，以使用舊版 API |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - changing view settings
 ms.assetid: 12c9b300-0894-4124-96a1-764326176d77
 caps.latest.revision: 19
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: df84fa92cb0da8dd408b1cc8717628afa3d5ba19
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: a7d58d1477b9d7f58242f8cb4db7c3c360c248b9
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51730638"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68184470"
 ---
-# <a name="changing-view-settings-by-using-the-legacy-api"></a>變更檢視設定，以使用舊版 API
+# <a name="changing-view-settings-by-using-the-legacy-api"></a>使用舊版 API 變更檢視設定
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 設定核心編輯器功能，例如自動換行、 選取範圍邊界和虛擬空間，可以藉由使用者變更**選項** 對話方塊。 不過，您也可變更這些設定以程式設計的方式。  
@@ -32,13 +27,13 @@ ms.locfileid: "51730638"
   
  以下是變更檢視設定的核心編輯器執行個體的一般程序。  
   
-1.  呼叫`QueryInterface`上 (<xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView>) 的<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer>介面。  
+1. 呼叫`QueryInterface`上 (<xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView>) 的<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer>介面。  
   
-2.  呼叫<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer.GetPropertyCategory%2A>方法，並指定值的 GUID_EditPropCategory_View_MasterSettings`rguidCategory`參數。  
+2. 呼叫<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer.GetPropertyCategory%2A>方法，並指定值的 GUID_EditPropCategory_View_MasterSettings`rguidCategory`參數。  
   
      執行此動作將指標傳回至<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer>介面，其中包含一組檢視的強制屬性。 永遠強制在這個群組中的任何設定。 如果設定不屬於此群組中，則它會遵循指定的選項**選項**對話方塊或使用者的命令。  
   
-3.  呼叫<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer.SetProperty%2A>方法，並指定適當的設定值，在`idprop`參數。  
+3. 呼叫<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer.SetProperty%2A>方法，並指定適當的設定值，在`idprop`參數。  
   
      例如，若要強制自動換行，呼叫<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer.SetProperty%2A>及指定 VSEDITPROPID_ViewLangOpt_WordWrap，值`vt`如`idprop`參數。 在此呼叫中，`vt`是型別 VT_BOOL 的變化和`vt.boolVal`為 VARIANT_TRUE。  
   
@@ -53,4 +48,3 @@ ms.locfileid: "51730638"
  [在核心編輯器](../extensibility/inside-the-core-editor.md)   
  [使用舊版 API 存取 theText 檢視](../extensibility/accessing-thetext-view-by-using-the-legacy-api.md)   
  [選項對話方塊](../ide/reference/options-dialog-box-visual-studio.md)
-

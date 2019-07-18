@@ -1,30 +1,24 @@
 ---
 title: XML 結構描述設計工具 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: f413f208-696f-446a-bb78-7fc55cf96d6c
 caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: e69fdb617fc5ce6fd91bd89422561ab6a1c65d61
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 12c5e65f45200947c57a4d831611faa4443a0d55
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49233259"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68158548"
 ---
 # <a name="xml-schema-designer-tasks"></a>XML 結構描述設計工具
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 本章節描述如何使用 XML 結構描述設計工具完成一般工作。  
   
 ## <a name="in-this-section"></a>本節內容  
@@ -43,7 +37,7 @@ ms.locfileid: "49233259"
  [如何：將節點從 XML 結構描述總管新增至工作區](../xml-tools/how-to-add-nodes-to-the-workspace-from-the-xml-schema-explorer.md)  
  說明如何在 XML 結構描述總管中，將節點加入 XML 結構描述設計工具工作空間。  
   
- [如何：將節點從開始檢視新增至工作區](../xml-tools/how-to-add-nodes-to-the-workspace-from-the-start-view.md)  
+ [如何：將節點從 [開始] 檢視新增至工作區](../xml-tools/how-to-add-nodes-to-the-workspace-from-the-start-view.md)  
  說明如何在開始檢視中，將全域節點加入工作空間。  
   
  [如何：使用圖表檢視取得結構描述集合的概觀](../xml-tools/how-to-get-an-overview-of-a-schema-set-using-the-graph-view.md)  
@@ -63,6 +57,3 @@ ms.locfileid: "49233259"
   
 ## <a name="see-also"></a>另請參閱  
  [XML 結構描述設計工具](../xml-tools/xml-schema-designer.md)
-
-
-

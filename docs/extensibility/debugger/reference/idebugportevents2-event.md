@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPortEvents2::Event
 ms.assetid: 5cc813f7-04a1-4462-9ea7-fbddcf0e0143
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: da493c3d818cab1cb9a7e0ad82de3ca2fa9ef3ca
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 6ede9055f97a796e4e007914f68e370d4ff81420
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56704471"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66326751"
 ---
 # <a name="idebugportevents2event"></a>IDebugPortEvents2::Event
 這個方法會傳送事件，表示的建立和解構的處理序和連接埠上的程式。
@@ -46,26 +49,21 @@ int Event(
 );
 ```
 
-#### <a name="parameters"></a>參數
- `pMachine`
+## <a name="parameters"></a>參數
+`pMachine`\
+[in][IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md)表示偵錯伺服器物件 (一個針對每個執行個體[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]) 中發生的事件。
 
- [in][IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md)表示偵錯伺服器物件 (一個針對每個執行個體[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]) 中發生的事件。
+`pPort`\
+[in][IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)物件，表示發生事件的連接埠。
 
- `pPort`
+`pProcess`\
+[in][IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)物件，表示發生事件的程序。
 
- [in][IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)物件，表示發生事件的連接埠。
+`pProgram`\
+[in][IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)物件，表示發生事件的程式。
 
- `pProcess`
-
- [in][IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)物件，表示發生事件的程序。
-
- `pProgram`
-
- [in][IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)物件，表示發生事件的程式。
-
- `pEvent`
-
- [in][IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)可識別事件的物件。 可能的事件如下所示：
+`pEvent`\
+[in][IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)可識別事件的物件。 可能的事件如下所示：
 
 - [IDebugProcessCreateEvent2](../../../extensibility/debugger/reference/idebugprocesscreateevent2.md)
 
@@ -75,7 +73,8 @@ int Event(
 
 - [IDebugProgramDestroyEvent2](../../../extensibility/debugger/reference/idebugprogramdestroyevent2.md)
 
-  `riidEvent` [in]事件的 GUID。 因為事件轉換成[IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)之前呼叫這個方法，此識別碼可讓您更輕鬆地判斷哪些事件正在傳送。
+`riidEvent`\
+[in]事件的 GUID。 因為事件轉換成[IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)之前呼叫這個方法，此識別碼可讓您更輕鬆地判斷哪些事件正在傳送。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

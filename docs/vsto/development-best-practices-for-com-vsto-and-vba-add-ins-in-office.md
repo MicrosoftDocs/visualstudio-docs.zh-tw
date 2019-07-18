@@ -1,5 +1,5 @@
 ---
-title: COM、 VSTO 和 VBA 增益集 Office 的開發最佳作法
+title: 開發最佳做法：COM、 VSTO 及 VBA 增益集 Office
 ms.date: 07/25/2017
 ms.topic: conceptual
 dev_langs:
@@ -11,19 +11,19 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b81dec69d27cc32fa5e6848d358049d8b8e2c04e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 4689f14a6ce66f509a7af1f4a9a1d50a0f8d37cd
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56643570"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401426"
 ---
 # <a name="development-best-practices-for-com-vsto-and-vba-add-ins-in-office"></a>COM、 VSTO 和 VBA 增益集 Office 的開發最佳作法
   如果您正在適用於 Office 開發 COM、 VSTO 或 VBA 增益集，請遵循本文中所述的開發最佳作法。   這有助於確保：
 
--  您的增益集跨不同版本和部署的 Office 相容性。
--  降低您的使用者和 IT 系統管理員的增益集部署的複雜度。
--  不會發生非預期的安裝或執行階段失敗的增益集。
+- 您的增益集跨不同版本和部署的 Office 相容性。
+- 降低您的使用者和 IT 系統管理員的增益集部署的複雜度。
+- 不會發生非預期的安裝或執行階段失敗的增益集。
 
 >注意:使用[傳統型橋接器](/windows/uwp/porting/desktop-to-uwp-root)來準備您的 COM、 VSTO 或 VBA 增益集不支援 Windows 市集。 無法在 Windows 市集 」 或 「 Office 市集散發 COM、 VSTO 和 VBA 增益集。
 

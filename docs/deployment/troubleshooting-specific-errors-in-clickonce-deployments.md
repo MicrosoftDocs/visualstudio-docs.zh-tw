@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 43648fb87202e3f61342bcabfc3acb55541a9985
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 5c7a915301dabc0afcfae450c87a435d12e10d15
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56627970"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745658"
 ---
 # <a name="troubleshoot-specific-errors-in-clickonce-deployments"></a>針對 ClickOnce 部署的特定錯誤進行疑難排解
 本文列出當您在部署時，可能會發生下列常見的錯誤[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式，並提供解決每個問題的步驟。
@@ -36,7 +36,7 @@ ms.locfileid: "56627970"
 
  首先，請確定伺服器設定為產生關聯 *.application*內容類型 」 / x ms-應用程式。 」
 
- 如果伺服器已正確設定，請確認[!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)]安裝在您的電腦上。 如果[!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)]安裝時，您仍發現此問題，請解除安裝再重新安裝和[!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)]重新註冊用戶端上的內容類型。
+ 如果伺服器已正確設定，請檢查.NET Framework 2.0 安裝在電腦上。 如果已安裝.NET Framework 2.0，您仍發現此問題，請嘗試解除安裝再重新安裝.NET Framework 2.0，來重新註冊內容類型用戶端上。
 
 #### <a name="error-message-says-unable-to-retrieve-application-files-missing-in-deployment-or-application-download-has-been-interrupted-check-for-network-errors-and-try-again-later"></a>錯誤訊息指出，「 無法擷取應用程式。 在部署中遺失的檔案 」 或 「 已中斷下載應用程式、 檢查是否有網路錯誤稍後再試一 」
  此訊息表示所參考的一或多個檔案[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]無法下載資訊清單。 偵錯此錯誤的最簡單方式是嘗試將下載的 URL，[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]說它無法下載。 以下是一些可能的原因：
@@ -56,9 +56,9 @@ ms.locfileid: "56627970"
 
  您也必須設定內容類型 （也稱為 MIME 類型） 適當.application、.manifest，和.deploy 檔案。 如需詳細資訊，請參閱您的 Web 伺服器文件。
 
- 如需詳細資訊，請參閱 「 Windows Server 2003:: 之一內容類型 」 中[ClickOnce 部署中的伺服器和用戶端組態問題](../deployment/server-and-client-configuration-issues-in-clickonce-deployments.md)。
+ 如需詳細資訊，請參閱 「 Windows Server 2003:鎖定的內容類型 」 [ClickOnce 部署中的伺服器和用戶端組態問題](../deployment/server-and-client-configuration-issues-in-clickonce-deployments.md)。
 
-#### <a name="error-message-application-is-improperly-formatted-log-file-contains-xml-signature-is-invalid"></a>錯誤訊息: 「 應用程式格式不正確。 」記錄檔包含 「 XML 簽章無效 」
+#### <a name="error-message-application-is-improperly-formatted-log-file-contains-xml-signature-is-invalid"></a>錯誤訊息：「 應用程式格式不正確。 」記錄檔包含 「 XML 簽章無效 」
  請確定您已更新資訊清單檔案，並重新簽署它。 重新發佈應用程式使用[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]或使用 Mage 簽署應用程式一次。
 
 #### <a name="you-updated-your-application-on-the-server-but-the-client-does-not-download-the-update"></a>您已更新您的應用程式的伺服器上，但用戶端不會下載更新
@@ -70,20 +70,20 @@ ms.locfileid: "56627970"
 
 - 請嘗試再次啟動應用程式，在 [開始] 功能表上。 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 可能已在背景中，偵測更新，但會提示您安裝位元上的下一步 啟動。
 
-#### <a name="during-update-you-receive-an-error-that-has-the-following-log-entry-the-reference-in-the-deployment-does-not-match-the-identity-defined-in-the-application-manifest"></a>在更新期間，您收到錯誤，有下列記錄項目: 「 在部署中的參考不符合應用程式清單中所定義的身分識別 」
+#### <a name="during-update-you-receive-an-error-that-has-the-following-log-entry-the-reference-in-the-deployment-does-not-match-the-identity-defined-in-the-application-manifest"></a>在更新期間，您會收到錯誤，有下列記錄項目：「 在部署中的參考不符合應用程式清單中所定義的身分識別 」
  因為您已經手動編輯部署和應用程式資訊清單中，而導致的組件的識別描述其變得與其他同步處理的一個資訊清單中，可能會發生此錯誤。 組件的識別是由其名稱、 版本、 文化特性和公開金鑰 token 所組成。 檢查您的資訊清單中的識別描述，並更正任何差異。
 
 #### <a name="first-time-activation-from-local-disk-or-cd-rom-succeeds-but-subsequent-activation-from-start-menu-does-not-succeed"></a>第一次從本機磁碟或光碟片啟動成功，但後續從 [開始] 功能表啟動不成功
  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 您可以使用部署提供者 URL，接收應用程式的更新。 請確認 URL 所指向的位置正確無誤。
 
-#### <a name="error-cannot-start-the-application"></a>錯誤: 「 無法啟動應用程式 」
+#### <a name="error-cannot-start-the-application"></a>錯誤：[無法啟動應用程式]
  此錯誤訊息通常表示沒有安裝此應用程式時遇到問題[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]儲存。 應用程式有錯誤或存放區已損毀。 記錄檔可能會告訴您哪裡發生錯誤。
 
  您應該執行下列作業：
 
--   確認部署資訊清單的身分識別、 應用程式資訊清單中，身分識別和身分識別的主應用程式 EXE 都具有唯一性。
+- 確認部署資訊清單的身分識別、 應用程式資訊清單中，身分識別和身分識別的主應用程式 EXE 都具有唯一性。
 
--   請確認您的檔案路徑沒有超過 100 個字元。 如果您的應用程式包含檔案路徑太長，您可能會超過您可以將儲存的最大路徑限制。 請嘗試縮短路徑並重新安裝。
+- 請確認您的檔案路徑沒有超過 100 個字元。 如果您的應用程式包含檔案路徑太長，您可能會超過您可以將儲存的最大路徑限制。 請嘗試縮短路徑並重新安裝。
 
 #### <a name="privatepath-settings-in-application-config-file-are-not-honored"></a>不會遵守 Bin 的應用程式組態檔中的設定
  若要使用 Bin （Fusion 探查路徑），應用程式必須要求完全信任權限。 請嘗試變更應用程式資訊清單，來要求完全信任，並再試一次。
@@ -101,20 +101,20 @@ ms.locfileid: "56627970"
 
  如果您要發行的 url，請確定目的地電腦已啟用 FrontPage Server Extensions。
 
-#### <a name="error-message-unable-to-create-the-web-site-site-the-components-for-communicating-with-frontpage-server-extensions-are-not-installed"></a>錯誤訊息： 無法建立網站 '\<網站 >'。 使用 FrontPage Server Extensions 通訊的元件不會安裝。
+#### <a name="error-message-unable-to-create-the-web-site-site-the-components-for-communicating-with-frontpage-server-extensions-are-not-installed"></a>錯誤訊息：無法建立網站 '\<網站 >'。 使用 FrontPage Server Extensions 通訊的元件不會安裝。
  請確定您有 Microsoft Visual Studio 撰寫安裝 Web 元件，您從發行的機器上。 Express 使用者，預設不會安裝此元件。 如需詳細資訊，請參閱 [http://go.microsoft.com/fwlink/?LinkId=102310](http://go.microsoft.com/fwlink/?LinkId=102310)。
 
-#### <a name="error-message-could-not-find-file-microsoftwindowscommon-controls-version6000-culture-publickeytoken6595b64144ccf1df-processorarchitecture-typewin32"></a>錯誤訊息： 找不到檔案 ' Microsoft.Windows.Common-控制項，版本 = 6.0.0.0，文化特性 = *，PublicKeyToken = 6595b64144ccf1df，ProcessorArchitecture =\*，類型 = win32'
- 當您嘗試發行已啟用視覺化樣式的 WPF 應用程式時，就會出現此錯誤訊息。 若要解決此問題，請參閱[如何： 發行啟用視覺化樣式的 WPF 應用程式](../deployment/how-to-publish-a-wpf-application-with-visual-styles-enabled.md)。
+#### <a name="error-message-could-not-find-file-microsoftwindowscommon-controls-version6000-culture-publickeytoken6595b64144ccf1df-processorarchitecture-typewin32"></a>錯誤訊息：Could not find file 'Microsoft.Windows.Common-Controls, Version=6.0.0.0, Culture=*, PublicKeyToken=6595b64144ccf1df, ProcessorArchitecture=\*, Type=win32'
+ 當您嘗試發行已啟用視覺化樣式的 WPF 應用程式時，就會出現此錯誤訊息。 若要解決此問題，請參閱[How to:發行啟用視覺化樣式的 WPF 應用程式](../deployment/how-to-publish-a-wpf-application-with-visual-styles-enabled.md)。
 
 ## <a name="using-mage"></a>使用影像
 
 #### <a name="you-tried-to-sign-with-a-certificate-in-your-certificate-store-and-a-received-blank-message-box"></a>您嘗試使用您的憑證存放區和收到空白的訊息方塊中的憑證簽署
  在 [**簽署**] 對話方塊中，您必須：
 
--   選取 **預存憑證以簽署**，及
+- 選取 **預存憑證以簽署**，及
 
--   從清單中選取憑證第一個憑證不是預設選項。
+- 從清單中選取憑證第一個憑證不是預設選項。
 
 #### <a name="clicking-the-dont-sign-button-causes-an-exception"></a>按一下 「 不登 」 按鈕，會導致例外狀況
  這個問題是已知的 bug。 所有[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]資訊清單是必須簽署。 只選取其中一個的簽章的選項，然後按一下**確定**。
@@ -122,8 +122,7 @@ ms.locfileid: "56627970"
 ## <a name="additional-errors"></a>其他錯誤
  下表顯示一些常見的錯誤訊息，當使用者安裝，用戶端電腦使用者可能會收到[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式。 每個錯誤訊息會列出最可能的錯誤的原因的描述旁邊。
 
-
-| 錯誤訊息 | 說明 |
+| 錯誤訊息 | 描述 |
 | - | - |
 | 無法啟動應用程式。 請連絡應用程式發行者。<br /><br /> 無法啟動應用程式。 請連絡應用程式廠商尋求協助。 | 這些是無法啟動應用程式，而且可以找到其他特定原因時，會發生的一般錯誤訊息。 通常這表示，應用程式以某種方式損毀，或[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]存放區已損毀。 |
 | 無法繼續。 應用程式的格式不正確。 請連絡應用程式發行者尋求協助。<br /><br /> 應用程式驗證失敗。 無法繼續。<br /><br /> 無法擷取應用程式檔案。 在部署中的檔案損毀。 | 其中一個部署中的資訊清單檔案的語法無效，或包含無法對應的檔案和一致的雜湊。 這項錯誤也可能表示資訊清單內嵌在組件已損毀。 重新建立您的部署和重新編譯您的應用程式，或尋找及修正錯誤以手動方式在您的資訊清單中。 |

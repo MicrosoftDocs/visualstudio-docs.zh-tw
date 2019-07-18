@@ -1,30 +1,24 @@
 ---
-title: 如何： 從 XML 結構描述產生的 XML 程式碼片段 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：產生 XML 片段的 XML 結構描述 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: 2c128d2a-aaa6-4814-aa95-e07056afe338
 caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 6eb03fba400e20227155a2528b8aaf0b28f7761a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: b0e1ea270511a92df96fdb4cc38367074f224060
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49951466"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431006"
 ---
 # <a name="how-to-generate-an-xml-snippet-from-an-xml-schema"></a>HOW TO：從 XML 結構描述產生 XML 片段
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 XML 編輯器具有從 XML 結構描述定義語言 (XSD) 結構描述產生 XML 片段的功能。 例如，當您撰寫 XML 檔案且定位在項目名稱旁邊時，可以按 TAB 鍵，將從該項目之結構描述資訊產生的 XML 資料填入項目。  
   
  此功能僅可用於項目。 下列規則也適用：  
@@ -33,11 +27,11 @@ XML 編輯器具有從 XML 結構描述定義語言 (XSD) 結構描述產生 XML
   
 - 編輯器中目前的項目必須是空的，沒有屬性。 例如，下列內容全部有效  
   
-  -   `<Account`  
+  - `<Account`  
   
-  -   `<Account>`  
+  - `<Account>`  
   
-  -   `<Account></Account>`  
+  - `<Account></Account>`  
   
 - 游標必須緊接在項目名稱的右邊。  
   
@@ -53,35 +47,35 @@ XML 編輯器具有從 XML 結構描述定義語言 (XSD) 結構描述產生 XML
  本節中的步驟說明如何使用 XML 編輯器之結構描述產生的 XML 片段功能。  
   
 > [!NOTE]
->  先將結構描述檔案儲存到本機電腦上，再啟動這些程序。  
+> 先將結構描述檔案儲存到本機電腦上，再啟動這些程序。  
   
 #### <a name="to-create-a-new-xml-file-and-associate-it-with-an-xml-schema"></a>建立新的 XML 檔案，並將其與 XML 結構描述相關聯  
   
-1.  在上**檔案**功能表上，指向**新增**，然後按一下**檔案**。  
+1. 在上**檔案**功能表上，指向**新增**，然後按一下**檔案**。  
   
-2.  選取  **XML 檔案**中**範本**窗格，然後按一下 **開啟**。  
+2. 選取  **XML 檔案**中**範本**窗格，然後按一下 **開啟**。  
   
      編輯器中會開啟新的檔案。 檔案包含預設的 XML 宣告，`<?xml version="1.0" encoding="utf-8">`。  
   
-3.  在 文件屬性 視窗中，按一下 瀏覽按鈕 (**...**) 上**結構描述**欄位。  
+3. 在 文件屬性 視窗中，按一下 瀏覽按鈕 (**...**) 上**結構描述**欄位。  
   
      **XSD 結構描述**對話方塊隨即出現。  
   
-4.  按一下 [加入] 。  
+4. 按一下 [加入] 。  
   
      **開啟 XSD 結構描述**對話方塊隨即出現。  
   
-5.  選取的結構描述檔案，然後按一下**開啟**。  
+5. 選取的結構描述檔案，然後按一下**開啟**。  
   
-6.  按一下 [確定 **Deploying Office Solutions**]。  
+6. 按一下 [確定] 。  
   
      XML 結構描述現在已與 XML 文件相關聯。  
   
 #### <a name="to-generate-an-xml-snippet"></a>產生 XML 片段  
   
-1.  在編輯器窗格中鍵入 `<`。  
+1. 在編輯器窗格中鍵入 `<`。  
   
-2.  成員清單會顯示可能的項目：  
+2. 成員清單會顯示可能的項目：  
   
      **！-** 將註解。  
   
@@ -91,11 +85,11 @@ XML 編輯器具有從 XML 結構描述定義語言 (XSD) 結構描述產生 XML
   
      **請連絡**加入根項目。  
   
-3.  選取 **連絡人**從 成員 清單中，按下 ENTER。  
+3. 選取 **連絡人**從 成員 清單中，按下 ENTER。  
   
      編輯器會加入開始標記 `<Contact`，並將游標置於項目名稱之後。  
   
-4.  按 TAB 鍵，會根據 `Contact` 項目的結構描述資訊產生它的 XML 資料。  
+4. 按 TAB 鍵，會根據 `Contact` 項目的結構描述資訊產生它的 XML 資料。  
   
 ### <a name="input"></a>輸入  
  下列結構描述檔案由逐步教學使用。  
@@ -145,7 +139,7 @@ XML 編輯器具有從 XML 結構描述定義語言 (XSD) 結構描述產生 XML
 </xs:schema>  
 ```  
   
-### <a name="output"></a>輸出  
+### <a name="output"></a>Output  
  下列是根據與 `Contact` 項目相關聯的結構描述資訊產生的 XML 資料。 項目會標示為`bold`指定 XML 片段中可編輯的欄位。  
   
 ```  
@@ -161,7 +155,4 @@ XML 編輯器具有從 XML 結構描述定義語言 (XSD) 結構描述產生 XML
   
 ## <a name="see-also"></a>另請參閱  
  [XML 程式碼片段](../xml-tools/xml-snippets.md)   
- [如何：使用 XML 片段](../xml-tools/how-to-use-xml-snippets.md)
-
-
-
+ [如何：使用 XML 程式碼片段](../xml-tools/how-to-use-xml-snippets.md)

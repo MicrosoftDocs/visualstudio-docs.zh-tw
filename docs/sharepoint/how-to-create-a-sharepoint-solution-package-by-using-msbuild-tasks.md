@@ -1,5 +1,5 @@
 ---
-title: HOW TO：使用 MSBuild 工作建立 SharePoint 方案套件 |Microsoft Docs
+title: 建立 SharePoint 方案套件，使用 MSBuild 工作
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,25 +12,25 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6f6fd87a9c666e3373515cf8df59d7cd9fd7c717
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 432daff22616950e0a97164190a94082bf2db354
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56624395"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401489"
 ---
-# <a name="how-to-create-a-sharepoint-solution-package-by-using-msbuild-tasks"></a>HOW TO：使用 MSBuild 工作建立 SharePoint 方案套件
-  您可以建置、 清理及驗證 SharePoint 套件 (*.wsp*) 在開發電腦上使用命令列的 MSBuild 工作。 您也可以使用這些命令，來自動化建置程序使用 Team Foundation Server 組建電腦上。
+# <a name="how-to-create-a-sharepoint-solution-package-by-using-msbuild-tasks"></a>作法：使用 MSBuild 工作建立 SharePoint 方案套件
+  您可以建置、 清理及驗證 SharePoint 套件 ( *.wsp*) 在開發電腦上使用命令列的 MSBuild 工作。 您也可以使用這些命令，來自動化建置程序使用 Team Foundation Server 組建電腦上。
 
 ## <a name="build-a-sharepoint-package"></a>建置 SharePoint 封裝
 
 #### <a name="to-build-a-sharepoint-package"></a>若要建置 SharePoint 套件
 
-1.  在 Windows 上**開始**功能表上，選擇**所有程式** > **附屬應用程式** > **命令提示字元**。
+1. 在 Windows 上**開始**功能表上，選擇**所有程式** > **附屬應用程式** > **命令提示字元**。
 
-2.  切換至您的 SharePoint 專案所在的目錄。
+2. 切換至您的 SharePoint 專案所在的目錄。
 
-3.  輸入下列命令來建立專案的套件。 取代*ProjectFileName*專案的名稱。
+3. 輸入下列命令來建立專案的套件。 取代*ProjectFileName*專案的名稱。
 
     ```cmd
     msbuild /t:Package ProjectFileName
@@ -47,11 +47,11 @@ ms.locfileid: "56624395"
 
 #### <a name="to-clean-a-sharepoint-package"></a>清除 SharePoint 封裝
 
-1.  開啟 [命令提示字元] 視窗。
+1. 開啟 [命令提示字元] 視窗。
 
-2.  切換至您的 SharePoint 專案所在的目錄。
+2. 切換至您的 SharePoint 專案所在的目錄。
 
-3.  輸入下列命令以清除專案的套件。 取代*ProjectFileName*專案的名稱。
+3. 輸入下列命令以清除專案的套件。 取代*ProjectFileName*專案的名稱。
 
     ```cmd
     msbuild /t:CleanPackage ProjectFileName
@@ -68,11 +68,11 @@ ms.locfileid: "56624395"
 
 #### <a name="to-validate-a-sharepoint-package"></a>若要驗證 SharePoint 套件
 
-1.  開啟 [命令提示字元] 視窗。
+1. 開啟 [命令提示字元] 視窗。
 
-2.  切換至您的 SharePoint 專案所在的目錄。
+2. 切換至您的 SharePoint 專案所在的目錄。
 
-3.  輸入下列命令來驗證專案的套件。 取代*ProjectFileName*專案的名稱。
+3. 輸入下列命令來驗證專案的套件。 取代*ProjectFileName*專案的名稱。
 
     ```cmd
     msbuild /t:ValidatePackage ProjectFileName
@@ -89,11 +89,11 @@ ms.locfileid: "56624395"
 
 #### <a name="to-set-a-property-in-a-sharepoint-package"></a>在 SharePoint 封裝中設定屬性
 
-1.  開啟 [命令提示字元] 視窗。
+1. 開啟 [命令提示字元] 視窗。
 
-2.  切換至您的 SharePoint 專案所在的目錄。
+2. 切換至您的 SharePoint 專案所在的目錄。
 
-3.  輸入下列命令來設定專案的套件中的屬性。 取代*PropertyName*與您想要設定的屬性。
+3. 輸入下列命令來設定專案的套件中的屬性。 取代*PropertyName*與您想要設定的屬性。
 
     ```cmd
     msbuild /property:PropertyName=Value

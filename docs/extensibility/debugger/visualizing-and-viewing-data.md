@@ -6,17 +6,17 @@ helpviewer_keywords:
 - debugging [Debugging SDK], viewing data
 - debugging [Debugging SDK], visualizing data
 ms.assetid: 699dd0f5-7569-40b3-ade6-d0fe53e832bc
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 852616ac77096a5b31078d64051f67f6cbb3ecb6
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 8b29d1135df370232324edec9d1bd4a23397b17e
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56683372"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66348345"
 ---
 # <a name="visualizing-and-viewing-data"></a>視覺化及檢視資料
 類型視覺化檢視和自訂檢視器中的開發人員快速有意義的方式呈現的資料。 運算式評估工具 (EE) 可支援第三方類型視覺化檢視，以及提供它自己的自訂檢視器。

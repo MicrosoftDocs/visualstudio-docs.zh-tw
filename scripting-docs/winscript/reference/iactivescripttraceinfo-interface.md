@@ -12,11 +12,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 260ee42db6ae0fb743c170cf84aa0793721dffd5
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58147783"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62991218"
 ---
 # <a name="iactivescripttraceinfo-interface"></a>IActiveScriptTraceInfo 介面
 提供方法來啟動和停止追蹤。  

@@ -8,11 +8,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 70f39dd23851a2ebc0a48afd05da54b0d8deb24a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955670"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62934306"
 ---
 # <a name="vs-shell-deployment"></a>VS Shell 部署
 

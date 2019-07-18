@@ -1,14 +1,9 @@
 ---
-title: IDebugBinder3 |Microsoft Docs
-ms.custom: ''
+title: IDebugBinder3 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugBinder3
 helpviewer_keywords:
@@ -16,19 +11,19 @@ helpviewer_keywords:
 ms.assetid: 92353a74-dc74-4f93-8762-61d6b220478c
 caps.latest.revision: 13
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: c3d9f00ba0ecf19d6f1a4fa8bc21e3799511b179
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 3f23c2ad4aeaf911e45b28686584d741e5c4d22f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51809162"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704129"
 ---
 # <a name="idebugbinder3"></a>IDebugBinder3
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
 > [!IMPORTANT]
->  在 Visual Studio 2015 中，這種實作運算式評估工具已被取代。 如需實作 CLR 運算式評估工具的資訊，請參閱[CLR 運算式評估工具](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)並[Managed 運算式評估工具範例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。  
+> 在 Visual Studio 2015 中，這種實作運算式評估工具已被取代。 如需實作 CLR 運算式評估工具的資訊，請參閱[CLR 運算式評估工具](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)並[Managed 運算式評估工具範例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。  
   
  這個介面會提供存取型別、 別名和自訂視覺化檢視服務。  
   
@@ -42,7 +37,7 @@ IDebugBinder3 : IDebugBinder
  偵錯引擎會實作這個介面來支援別名、 自訂視覺化檢視服務和物件型別資訊的存取權。  
   
 ## <a name="notes-for-callers"></a>呼叫端資訊  
- [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)介面取得此介面使用[QueryInterface](http://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3)。  
+ [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)介面取得此介面使用[QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3)。  
   
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法  
  所提供的方法除了[IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)介面，這個介面會實作下列：  
@@ -61,11 +56,10 @@ IDebugBinder3 : IDebugBinder
 ## <a name="requirements"></a>需求  
  標頭： ee.h  
   
- 命名空間： Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間：Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
  [運算式評估介面](../../../extensibility/debugger/reference/expression-evaluation-interfaces.md)   
  [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)
-

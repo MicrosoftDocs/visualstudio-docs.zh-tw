@@ -11,12 +11,12 @@ caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b32644341130a47b3b95515545cc03f2fab06eb6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: f313865f892fb17b5c7e2c5f0ad7ecfc800be803
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54775724"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68145565"
 ---
 # <a name="tier-interaction-views"></a>階層互動檢視
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "54775724"
   
  **需求**  
   
--   [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)]  
   
 ## <a name="in-this-section"></a>本節內容  
  [階層互動檢視](../profiling/tier-interactions-view.md)

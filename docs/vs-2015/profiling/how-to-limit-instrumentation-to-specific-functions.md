@@ -1,5 +1,5 @@
 ---
-title: 如何：限制檢測特定函式 | Microsoft Docs
+title: HOW TO：限制檢測特定函式 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -11,14 +11,14 @@ caps.latest.revision: 24
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0c20918aab20b41a108242d91b20ec010be19bd9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 8923323a3aed96a9dd441a4a36b2084ffd8197e6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54795772"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432646"
 ---
-# <a name="how-to-limit-instrumentation-to-specific-functions"></a>如何：限制檢測特定函式
+# <a name="how-to-limit-instrumentation-to-specific-functions"></a>HOW TO：限制檢測特定函式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 您可以透過在 [效能工作階段] 或目標二進位檔屬性頁的 [進階] 頁面中設定選項，將檢測和資料收集限制在一或多個函式：  
@@ -30,7 +30,7 @@ ms.locfileid: "54795772"
   只有在選取了檢測程式碼剖析方法時，才能支援這種限制資料收集的方式。  
   
 > [!NOTE]
->  您也可以使用 [效能工作階段] 屬性頁的 [進階] 頁面，設定程式碼剖析工具 [VSInstr](../profiling/vsinstr.md) 命令列檢測工具可以使用的其他選項。  
+> 您也可以使用 [效能工作階段] 屬性頁的 [進階] 頁面，設定程式碼剖析工具 [VSInstr](../profiling/vsinstr.md) 命令列檢測工具可以使用的其他選項。  
   
 ### <a name="to-limit-instrumentation-to-specific-functions-in-a-performance-session"></a>限制檢測效能工作階段中的特定函式  
   
@@ -47,7 +47,7 @@ ms.locfileid: "54795772"
     `FuncSpec` 是命名空間和函式名稱。 其格式為 `Namespace`**::**`FunctionName`。 請使用分號來分隔多個函式。 使用星號 (\*) 指定代表一或多個字元的萬用字元。 例如，**/include:MyNS::\\*** 可指定 MyNS 命名空間中的所有函式。  
   
    > [!NOTE]
-   >  若要列出二進位檔中的函式，請在程式碼剖析工具安裝目錄 (通常是 [!INCLUDE[vsprvsts](../includes/vsprvsts-md.md)] 安裝目錄底下的 \Team Tools\Performance Tools 目錄) 中開啟命令提示字元視窗，然後輸入 **vsinstr /DumpFuncs**  
+   > 若要列出二進位檔中的函式，請在程式碼剖析工具安裝目錄 (通常是 [!INCLUDE[vsprvsts](../includes/vsprvsts-md.md)] 安裝目錄底下的 \Team Tools\Performance Tools 目錄) 中開啟命令提示字元視窗，然後輸入 **vsinstr /DumpFuncs**  
   
 ### <a name="to-limit-instrumentation-to-specific-functions-in-a-binary"></a>限制檢測二進位檔中的特定函式  
   
@@ -66,9 +66,9 @@ ms.locfileid: "54795772"
     `FuncSpec` 是命名空間和函式名稱。 其格式為 `Namespace`**::**`FunctionName`。 請使用分號來分隔多個函式。 使用星號 (\*) 指定代表一或多個字元的萬用字元。 例如，**/include:MyNS::\\*** 可指定 MyNS 命名空間中的所有函式。  
   
    > [!NOTE]
-   >  若要列出二進位檔中的函式，請在程式碼剖析工具安裝目錄 (通常是 [!INCLUDE[vsprvsts](../includes/vsprvsts-md.md)] 安裝目錄底下的 \Team Tools\Performance Tools 目錄) 中開啟命令提示字元視窗，然後輸入 **vsinstr /DumpFuncs**  
+   > 若要列出二進位檔中的函式，請在程式碼剖析工具安裝目錄 (通常是 [!INCLUDE[vsprvsts](../includes/vsprvsts-md.md)] 安裝目錄底下的 \Team Tools\Performance Tools 目錄) 中開啟命令提示字元視窗，然後輸入 **vsinstr /DumpFuncs**  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [控制資料收集](../profiling/controlling-data-collection.md)   
- [如何：限制檢測特定 DLL](../profiling/how-to-limit-instrumentation-to-specific-dlls.md)   
+ [如何：限制檢測特定 Dll](../profiling/how-to-limit-instrumentation-to-specific-dlls.md)   
  [如何：指定其他的檢測選項](../profiling/how-to-specify-additional-instrumentation-options.md)

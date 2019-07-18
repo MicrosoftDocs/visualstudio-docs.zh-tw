@@ -1,14 +1,9 @@
 ---
-title: IDiaLoadCallback2::RestrictDBGAccess |Microsoft Docs
-ms.custom: ''
+title: IDiaLoadCallback2::RestrictDBGAccess | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 63b67a93-2910-4fff-aa70-6b2eaa08e5c8
 caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 3e76862ce44a68c328aea73d8d47c98205b6186e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 3c40aca343821f26213ee9e609a341918b9a7ba9
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51739900"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68187312"
 ---
 # <a name="idialoadcallback2restrictdbgaccess"></a>IDiaLoadCallback2::RestrictDBGAccess
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -44,6 +39,3 @@ HRESULT RestrictDBGAccess();
   
 ## <a name="see-also"></a>另請參閱  
  [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md)
-
-
-

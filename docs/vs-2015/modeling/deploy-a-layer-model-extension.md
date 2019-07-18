@@ -1,12 +1,9 @@
 ---
 title: 部署圖層模型擴充功能 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - layer diagrams, deploying extensions
 - layer models, deploying extensions
@@ -14,13 +11,13 @@ ms.assetid: 00a4675b-d20e-487e-8fd5-be2b1e0ba238
 caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: a31413f5332ddfec8dc6021da85e2135d691f930
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: a58adf1be92655a6ca7846e8c1d7ea41515b7109
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51735114"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422668"
 ---
 # <a name="deploy-a-layer-model-extension"></a>部署圖層模型擴充功能
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,43 +39,40 @@ ms.locfileid: "51735114"
   
 #### <a name="to-uninstall-the-extension"></a>安裝擴充功能  
   
-1.  在 Visual Studio 中，在**工具**功能表上，按一下**擴充功能和更新**。  
+1. 在 Visual Studio 中，在**工具**功能表上，按一下**擴充功能和更新**。  
   
-2.  按一下 延伸模組的名稱，然後按一下**解除安裝**。  
+2. 按一下 延伸模組的名稱，然後按一下**解除安裝**。  
   
 ## <a name="installing-an-extension-on-a-team-foundation-build-server"></a>在 Team Foundation Build Server 上安裝擴充功能  
  [!INCLUDE[esprbuild](../includes/esprbuild-md.md)] 伺服器通常沒有安裝 Visual Studio，因此無法按兩下就安裝 VSIX。 安裝 [!INCLUDE[esprbuild](../includes/esprbuild-md.md)] 需有讓 VSIX 擴充功能執行的一些元件，但是這個擴充功能必須手動安裝。  
   
 #### <a name="to-install-your-layer-extension-on-a-includeesprbuildincludesesprbuild-mdmd-server"></a>在 [!INCLUDE[esprbuild](../includes/esprbuild-md.md)] 伺服器上安裝圖層擴充功能  
   
-1.  複製 **.vsix**檔案從開發電腦[!INCLUDE[esprbuild](../includes/esprbuild-md.md)]電腦。  
+1. 複製 **.vsix**檔案從開發電腦[!INCLUDE[esprbuild](../includes/esprbuild-md.md)]電腦。  
   
      將 VSIX 檔案放在下列一個位置：  
   
-    -   為所有的使用者和服務安裝：  
+    - 為所有的使用者和服務安裝：  
   
          %ProgramFiles%\Microsoft Visual Studio [版本]\Common7\IDE\Extensions\Microsoft  
   
-    -   只針對執行 [!INCLUDE[esprbuild](../includes/esprbuild-md.md)] 的網路服務安裝：  
+    - 只針對執行 [!INCLUDE[esprbuild](../includes/esprbuild-md.md)] 的網路服務安裝：  
   
          %WinDir%\ServiceProfiles\NetworkService\AppData\Local\Microsoft\VisualStudio\\[version]\Extensions\Microsoft  
   
-    -   如已設定 [!INCLUDE[esprbuild](../includes/esprbuild-md.md)] 以特定使用者身分在互動模式中執行，可以只針對該使用者安裝：  
+    - 如已設定 [!INCLUDE[esprbuild](../includes/esprbuild-md.md)] 以特定使用者身分在互動模式中執行，可以只針對該使用者安裝：  
   
          %LocalAppData%\Microsoft\VisualStudio\\[version]\Extensions\Microsoft  
   
         > [!NOTE]
-        >  %Localappdata%通常是*DriveName*： 使用者*UserName*AppDataLocal。  
+        > %Localappdata%通常是*DriveName*： 使用者*UserName*AppDataLocal。  
   
-2.  在相同位置的資料夾中展開每個 VSIX 檔案：  
+2. 在相同位置的資料夾中展開每個 VSIX 檔案：  
   
-    1.  變更從副檔名 **.vsix**要 **.zip**。  
+    1. 變更從副檔名 **.vsix**要 **.zip**。  
   
-    2.  將 .zip 檔案的內容解壓縮到資料夾。  
+    2. 將 .zip 檔案的內容解壓縮到資料夾。  
   
-    3.  刪除 .zip 檔案  
+    3. 刪除 .zip 檔案  
   
-3.  重新啟動 [!INCLUDE[esprbuild](../includes/esprbuild-md.md)]。
-
-
-
+3. 重新啟動 [!INCLUDE[esprbuild](../includes/esprbuild-md.md)]。

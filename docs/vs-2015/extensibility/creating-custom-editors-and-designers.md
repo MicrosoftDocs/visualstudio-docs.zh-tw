@@ -1,27 +1,22 @@
 ---
 title: 建立自訂編輯器和設計工具 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - designers [Visual Studio SDK]
 - editors [Visual Studio SDK], custom
 ms.assetid: b6a5e8b2-0ae1-4fc3-812d-09d40051b435
 caps.latest.revision: 32
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 324284a6cac44c995d652cce2f2e82a4c13702c1
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: dc94d11a5ed118f0133657ebf5b966623a199d64
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51753257"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68197418"
 ---
 # <a name="creating-custom-editors-and-designers"></a>建立自訂編輯器和設計工具
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,31 +51,31 @@ Visual Studio 整合式的開發環境 (IDE) 可裝載不同類型的編輯器�
 ## <a name="editor-design-decisions"></a>編輯器的設計決策  
  下列的設計問題將協助您選擇適合您的應用程式的最佳的編輯器類型：  
   
--   將您的應用程式儲存其資料檔案中或不嗎？ 當它會將其資料儲存在檔案中，將其自訂或標準的格式？  
+- 將您的應用程式儲存其資料檔案中或不嗎？ 當它會將其資料儲存在檔案中，將其自訂或標準的格式？  
   
      如果您使用標準檔案格式，除了您的專案以外的其他專案類型可以開啟和讀取/寫入資料到它們。 如果您使用自訂檔案格式，不過，只有您的專案類型能夠開啟和讀取/寫入資料到它們。  
   
      如果您的專案使用的檔案，您應該自訂的標準編輯器。 如果您的專案不會使用檔案，但使用資料庫或其他存放庫中的項目，您應該建立自訂編輯器。  
   
--   您的編輯器需要裝載 ActiveX 控制項嗎？  
+- 您的編輯器需要裝載 ActiveX 控制項嗎？  
   
      如果您的編輯器裝載 ActiveX 控制項，然後實作就地啟用編輯器，在中所述[就地啟用](../misc/in-place-activation.md)。 如果它不會裝載 ActiveX 控制項，然後使用簡化的內嵌編輯器中，或是自訂[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]預設編輯器。  
   
--   將您的編輯器支援多個檢視嗎？ 如果您想要顯示的預設編輯器同時編輯器的檢視，您必須支援多個檢視。  
+- 將您的編輯器支援多個檢視嗎？ 如果您想要顯示的預設編輯器同時編輯器的檢視，您必須支援多個檢視。  
   
      如果您的編輯器需要支援多個檢視，文件資料和編輯器的文件檢視物件必須是不同的物件。 如需詳細資訊，請參閱 <<c0> [ 支援多個文件檢視](../extensibility/supporting-multiple-document-views.md)。  
   
      如果您的編輯器支援多個檢視，您打算使用[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]核心編輯器的文字緩衝區實作 (<xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer>物件) 的文件資料物件？ 您想要支援您編輯器檢視所並存的即[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]核心編輯器嗎？ 若要這樣做的功能表單設計工具的基礎...  
   
--   如果您要裝載外部編輯器時，編輯器可內嵌在[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]嗎？  
+- 如果您要裝載外部編輯器時，編輯器可內嵌在[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]嗎？  
   
      如果它可以內嵌，您應該針對外部編輯器建立主視窗，然後呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.IsDocumentInProject%2A>方法和 set<xref:Microsoft.VisualStudio.Shell.Interop.VSDOCUMENTPRIORITY>列舉值，以`DP_External`。 如果編輯器無法內嵌，IDE 會自動為它建立另一個視窗。  
   
 ## <a name="in-this-section"></a>本節內容  
- [逐步解說︰建立自訂編輯器](../extensibility/walkthrough-creating-a-custom-editor.md)  
+ [逐步解說：建立自訂編輯器](../extensibility/walkthrough-creating-a-custom-editor.md)  
  說明如何建立自訂編輯器。  
   
- [逐步解說︰將功能加入至自訂編輯器](../extensibility/walkthrough-adding-features-to-a-custom-editor.md)  
+ [逐步解說：將功能新增至自訂編輯器](../extensibility/walkthrough-adding-features-to-a-custom-editor.md)  
  說明如何將功能加入至自訂編輯器。  
   
  [設計工具初始化和中繼資料組態](../extensibility/designer-initialization-and-metadata-configuration.md)  
@@ -107,4 +102,3 @@ Visual Studio 整合式的開發環境 (IDE) 可裝載不同類型的編輯器�
   
 ## <a name="see-also"></a>另請參閱  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory>
-

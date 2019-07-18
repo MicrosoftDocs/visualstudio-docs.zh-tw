@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0727709ce309ef35ca25896ff84a34577f1e7ef4
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 969945260ee453e84ae2aeec0f28559ca11933a0
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56609614"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62777007"
 ---
 # <a name="call-tree-view---contention-data"></a>呼叫樹狀圖檢視 - 爭用資料
 [呼叫樹狀圖] 檢視顯示在分析的應用程式中周遊的函式執行路徑。 樹狀圖的根是應用程式或元件的進入點。 每個函式節點都會列出它呼叫的所有函式，以及因函式與其他執行緒或處理序爭用資源而遭封鎖的次數和時間長度。
@@ -25,7 +25,7 @@ ms.locfileid: "56609614"
 ## <a name="highlight-the-execution-hot-path"></a>反白顯示執行最忙碌路徑
  [呼叫樹狀圖] 檢視可以展開並反白顯示建立了大部分爭用的處理序或函式的執行路徑。
 
--   若要顯示最常使用的路徑，以滑鼠右鍵按一下處理序或函式，然後按一下 [展開最忙碌路徑]。
+- 若要顯示最常使用的路徑，以滑鼠右鍵按一下處理序或函式，然後按一下 [展開最忙碌路徑]。
 
 ## <a name="set-the-call-tree-root-node"></a>設定呼叫樹狀圖根節點
  執行程式碼剖析期間的每個處理序都會顯示為根節點。 若要設定 [呼叫樹狀圖] 檢視的開始節點，以滑鼠右鍵按一下要設為開始節點的節點，然後按一下 [設定根目錄]。

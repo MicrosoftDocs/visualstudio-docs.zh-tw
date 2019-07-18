@@ -7,21 +7,21 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugBinder interface
 ms.assetid: d1f31e5b-c6e2-4e02-8959-b3e86041b29c
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 48c82abb170f5002c8c08f1e3010b18587f42678
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: bdcc5e9cc87bbe97a1ff9092e34c73b72274d775
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56716827"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66344347"
 ---
 # <a name="idebugbinder"></a>IDebugBinder
 > [!IMPORTANT]
->  在 Visual Studio 2015 中，這種實作運算式評估工具已被取代。 如需實作 CLR 運算式評估工具的資訊，請參閱[CLR 運算式評估工具](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)並[Managed 運算式評估工具範例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。
+> 在 Visual Studio 2015 中，這種實作運算式評估工具已被取代。 如需實作 CLR 運算式評估工具的資訊，請參閱[CLR 運算式評估工具](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)並[Managed 運算式評估工具範例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。
 
  這個介面會繫結 [符號] 欄位中，通常會傳回符號提供者，記憶體內容或包含符號的目前值的物件。
 

@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProcessEx2 interface
 ms.assetid: 44e309ba-1d6f-499b-aa7e-9b34858a6d57
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ef8fd848ed1a8298cc4ea8a5ce9d2c0463a2b779
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 5c27a03a09a6073ebab8d7a2dd5f60218066d474
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56693595"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66311595"
 ---
 # <a name="idebugprocessex2"></a>IDebugProcessEx2
 此介面可讓偵錯管理員 (SDM) 通知的程序，它會附加至或從處理序中斷連結的工作階段。
@@ -39,7 +39,7 @@ IDebugProcessEx2 : IUnknown
 
 ## <a name="notes-for-callers"></a>呼叫端資訊
 
--   SDM 呼叫[QueryInterface](/cpp/atl/queryinterface)上`IDebugProcess2`介面，以取得此介面。
+- SDM 呼叫[QueryInterface](/cpp/atl/queryinterface)上`IDebugProcess2`介面，以取得此介面。
 
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法
  下表顯示的方法`IDebugProcessEx2`。

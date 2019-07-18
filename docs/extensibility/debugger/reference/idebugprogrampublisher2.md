@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgramPublisher2 interface
 ms.assetid: b1d17f63-7146-4076-a588-034cfc6858b9
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4a7547639fb2f7f3068dd7f738b0c0d10ea926f0
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: f94e7ea830a49db5b95bae3d0d6c50f73e6d3d64
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56690301"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66343141"
 ---
 # <a name="idebugprogrampublisher2"></a>IDebugProgramPublisher2
 此介面可讓偵錯引擎 (DE) 或自訂的連接埠提供者註冊進行偵錯的程式。

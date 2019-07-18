@@ -1,14 +1,9 @@
 ---
 title: IPropertyProxyEESide::InPlaceUpdateObject |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IPropertyProxyEESide::InPlaceUpdateObject
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: abf89411-1853-4f23-b244-d5e0afa197b1
 caps.latest.revision: 12
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 5e7960aff461de7fcf9f41a86eb01de9bbf688d0
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: c91497815dd18dc138b2eadc462c43785830a033
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51721058"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68199511"
 ---
 # <a name="ipropertyproxyeesideinplaceupdateobject"></a>IPropertyProxyEESide::InPlaceUpdateObject
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -66,4 +61,3 @@ int InPlaceUpdateObject(
  [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)   
  [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)   
  [CreateReplacementObject](../../../extensibility/debugger/reference/ipropertyproxyeeside-createreplacementobject.md)
-

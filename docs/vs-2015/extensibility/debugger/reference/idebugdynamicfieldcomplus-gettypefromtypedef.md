@@ -1,69 +1,65 @@
 ---
-title: IDebugDynamicFieldCOMPlus::GetTypeFromTypeDef |Microsoft Docs
-ms.custom: ''
-ms.date: 11/15/2016
-ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+title: IDebugDynamicFieldCOMPlus::GetTypeFromTypeDef | Microsoft Docs
+ms.date: 11/04/2016
+ms.topic: reference
 helpviewer_keywords:
 - GetTypeFromTypeDef
 - IDebugDynamicFieldCOMPlus::GetTypeFromTypeDef
 ms.assetid: 7f6cd3d3-f4da-4893-be91-8dd104be8010
-caps.latest.revision: 9
+author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 6fcc45906ecc30c76ffc389c8e93da3072207804
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.workload:
+- vssdk
+ms.openlocfilehash: 239ecc56f6d86b24dcda4e2b2191c66e1553780f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51740860"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68142945"
 ---
 # <a name="idebugdynamicfieldcomplusgettypefromtypedef"></a>IDebugDynamicFieldCOMPlus::GetTypeFromTypeDef
-[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+擷取給定其語彙基元型別。
 
-擷取給定其語彙基元型別。  
-  
-## <a name="syntax"></a>語法  
-  
-```cpp#  
-HRESULT GetTypeFromTypeDef(  
-   ULONG32       ulAppDomainID,  
-   GUID          guidModule,  
-   _mdToken      tokClass,  
-   IDebugField** ppType  
-);  
-```  
-  
-```csharp  
-int GetTypeFromTypeDef(  
-   uint            ulAppDomainID,  
-   Guid            guidModule,  
-   int             tokClass,  
-   out IDebugField ppType  
-);  
-```  
-  
-#### <a name="parameters"></a>參數  
- `ulAppDomainID`  
- [in]應用程式定義域的識別項。  
-  
- `guidModule`  
- [in]模組的唯一識別碼。  
-  
- `tokClass`  
- [in]語彙基元，表示型別。  
-  
- `ppType`  
- [out]傳回[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)包含類型的物件。  
-  
-## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
-  
-## <a name="see-also"></a>另請參閱  
- [IDebugDynamicFieldCOMPlus](../../../extensibility/debugger/reference/idebugdynamicfieldcomplus.md)
+## <a name="syntax"></a>語法
 
+```cpp
+HRESULT GetTypeFromTypeDef(
+   ULONG32       ulAppDomainID,
+   GUID          guidModule,
+   _mdToken      tokClass,
+   IDebugField** ppType
+);
+```
+
+```csharp
+int GetTypeFromTypeDef(
+   uint            ulAppDomainID,
+   Guid            guidModule,
+   int             tokClass,
+   out IDebugField ppType
+);
+```
+
+#### <a name="parameters"></a>參數
+ `ulAppDomainID`
+
+ [in]應用程式定義域的識別項。
+
+ `guidModule`
+
+ [in]模組的唯一識別碼。
+
+ `tokClass`
+
+ [in]語彙基元，表示型別。
+
+ `ppType`
+
+ [out]傳回[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)包含類型的物件。
+
+## <a name="return-value"></a>傳回值
+ 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
+
+## <a name="see-also"></a>另請參閱
+- [IDebugDynamicFieldCOMPlus](../../../extensibility/debugger/reference/idebugdynamicfieldcomplus.md)

@@ -1,14 +1,9 @@
 ---
-title: IDebugObject |Microsoft Docs
-ms.custom: ''
+title: IDebugObject | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugObject
 helpviewer_keywords:
@@ -16,19 +11,19 @@ helpviewer_keywords:
 ms.assetid: 05cd8bf4-c9ee-4b49-b782-2263c33067d6
 caps.latest.revision: 15
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 67db4808b8f20ea759ad5847508307e9efff5620
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: c179a4443c23373fb92adf522ee0af34acb19c3f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51785675"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695264"
 ---
 # <a name="idebugobject"></a>IDebugObject
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
 > [!IMPORTANT]
->  在 Visual Studio 2015 中，這種實作運算式評估工具已被取代。 如需實作 CLR 運算式評估工具的資訊，請參閱[CLR 運算式評估工具](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)並[Managed 運算式評估工具範例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。  
+> 在 Visual Studio 2015 中，這種實作運算式評估工具已被取代。 如需實作 CLR 運算式評估工具的資訊，請參閱[CLR 運算式評估工具](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)並[Managed 運算式評估工具範例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。  
   
  這個介面表示繫結器建立封裝的符號和運算式值的物件。  
   
@@ -42,7 +37,7 @@ IDebugObject : IUnknown
  運算式評估工具會實作這個介面來代表的物件。  
   
 ## <a name="notes-for-callers"></a>呼叫端資訊  
- 這個介面是運算式評估工具會使用已剖析的運算式中的所有物件的基底類別。 它由呼叫[繫結](../../../extensibility/debugger/reference/idebugbinder-bind.md)方法。 [QueryInterface](http://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3)從這個介面取得更具特製化的介面。  
+ 這個介面是運算式評估工具會使用已剖析的運算式中的所有物件的基底類別。 它由呼叫[繫結](../../../extensibility/debugger/reference/idebugbinder-bind.md)方法。 [QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3)從這個介面取得更具特製化的介面。  
   
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法  
  下表顯示的方法`IDebugObject`。  
@@ -66,12 +61,11 @@ IDebugObject : IUnknown
 ## <a name="requirements"></a>需求  
  標頭： ee.h  
   
- 命名空間： Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間：Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
  [運算式評估介面](../../../extensibility/debugger/reference/expression-evaluation-interfaces.md)   
  [GetElement](../../../extensibility/debugger/reference/idebugarrayobject-getelement.md)   
  [Bind](../../../extensibility/debugger/reference/idebugbinder-bind.md)
-

@@ -32,12 +32,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 304b61a7e0e11cf3b714fcc6f43855f5ded35713
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: e5de89bdeade136577e05c700ec242a956a03455
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56641412"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63425841"
 ---
 # <a name="program-vsto-add-ins"></a>程式 VSTO 增益集
   當您建立 VSTO 增益集來擴充 Microsoft Office 應用程式時，會直接針對專案中的 `ThisAddIn` 類別撰寫程式碼。 您可以使用這個類別來執行工作，例如存取 Microsoft Office 主應用程式的物件模型、自訂應用程式的使用者介面 (UI)，以及將 VSTO 增益集中的物件公開給其他 Office 解決方案。
@@ -54,7 +54,7 @@ ms.locfileid: "56641412"
  `ThisAddIn` 類別有兩個預設事件處理常式。 若要在載入 VSTO 增益集時執行程式碼，請將程式碼加入 `ThisAddIn_Startup` 事件處理常式中。 若要在卸載 VSTO 增益集之前執行程式碼，請將程式碼加入 `ThisAddIn_Shutdown` 事件處理常式。 如需有關這些事件處理常式的詳細資訊，請參閱 < [Office 專案中的事件](../vsto/events-in-office-projects.md)。
 
 > [!NOTE]
->  在 Outlook 中，當卸載 VSTO 增益集時，預設不一定會呼叫 `ThisAddIn_Shutdown` 事件處理常式。 如需詳細資訊，請參閱 < [Office 專案中的事件](../vsto/events-in-office-projects.md)。
+> 在 Outlook 中，當卸載 VSTO 增益集時，預設不一定會呼叫 `ThisAddIn_Shutdown` 事件處理常式。 如需詳細資訊，請參閱 < [Office 專案中的事件](../vsto/events-in-office-projects.md)。
 
 ### <a name="access-the-object-model-of-the-host-application"></a>存取主應用程式的物件模型
  若要存取主應用程式的物件模型，請使用 `Application` 類別的 `ThisAddIn` 欄位。 這個欄位會傳回代表主應用程式之目前執行個體的物件。 下表列出每個 VSTO 增益集專案中 `Application` 欄位的傳回值類型。
@@ -91,21 +91,21 @@ Excel.Workbook newWorkbook = Globals.ThisAddIn.Application.Workbooks.Add(System.
 
  如需特定的 Microsoft Office 應用程式之物件模型的詳細資訊，請參閱下列主題：
 
--   [Excel 物件模型概觀](../vsto/excel-object-model-overview.md)
+- [Excel 物件模型概觀](../vsto/excel-object-model-overview.md)
 
--   [Word 物件模型概觀](../vsto/word-object-model-overview.md)
+- [Word 物件模型概觀](../vsto/word-object-model-overview.md)
 
--   [Outlook 物件模型概觀](../vsto/outlook-object-model-overview.md)
+- [Outlook 物件模型概觀](../vsto/outlook-object-model-overview.md)
 
--   [InfoPath 方案](../vsto/infopath-solutions.md)
+- [InfoPath 方案](../vsto/infopath-solutions.md)
 
--   [PowerPoint 方案](../vsto/powerpoint-solutions.md)
+- [PowerPoint 方案](../vsto/powerpoint-solutions.md)
 
--   [專案的方案](../vsto/project-solutions.md)
+- [專案的方案](../vsto/project-solutions.md)
 
--   [Visio 物件模型概觀](../vsto/visio-object-model-overview.md)
+- [Visio 物件模型概觀](../vsto/visio-object-model-overview.md)
 
-###  <a name="AccessingDocuments"></a> Office 應用程式啟動時存取文件
+### <a name="AccessingDocuments"></a> Office 應用程式啟動時存取文件
  當您啟動 [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)] 應用程式時，並非所有應用程式都會自動開啟文件；而當您啟動 [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] 應用程式時，所有應用程式都不會開啟文件。 因此，不將加入程式碼中的`ThisAdd-In_Startup`如果程式碼需要開啟的文件的事件處理常式。 相反地，請將程式碼加入 Office 應用程式在使用者建立或開啟文件時所引發的事件。 如此可確保程式碼對文件執行作業之前，該文件已處於開啟狀態。
 
  下列程式碼範例只有在使用者建立文件或開啟現有文件時，才適用於 Word 文件。

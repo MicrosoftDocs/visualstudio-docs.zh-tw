@@ -1,50 +1,41 @@
 ---
 title: 如何回報 Visual Studio 的問題
-titleSuffix: ''
-description: 了解如何將 Visual Studio 的問題回報給 Microsoft，以便我們診斷並修正問題。
+description: 了解如何回報 Visual Studio 的問題
 ms.date: 03/11/2018
-ms.custom: seodec18
 ms.topic: conceptual
 ms.assetid: bee01179-cde5-4419-9095-190ee0ba5902
-author: TerryGLee
-ms.author: tglee
+ms.author: seiyer
+author: seaniyer
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c9bfa7c772b2c194430273f8af0ac640c05171d
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: 2b130c321e57cdeea6b703b0e439d6b0f15a1a96
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56953647"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62947596"
 ---
-# <a name="how-to-report-a-problem-with-visual-studio"></a>如何回報 Visual Studio 的問題
-
-如果您在使用 Visual Studio 時發生問題，我們會想要進行了解。 以下說明如何向 [Developer Community](https://developercommunity.visualstudio.com/) 回報問題，讓我們加以診斷及修正。
+# <a name="how-to-report-a-problem-with-visual-studio-or-visual-studio-installer"></a>如何回報 Visual Studio 或 Visual Studio 安裝程式的問題
 
 > [!NOTE]
-> 本主題適用於 Windows 上的 Visual Studio。 針對 Visual Studio for Mac，請參閱[如何在 Visual Studio for Mac 中回報問題](/visualstudio/mac/report-a-problem)。
+> 針對 Visual Studio for Mac，請參閱[如何在 Visual Studio for Mac 中回報問題](/visualstudio/mac/report-a-problem)。
 
-## <a name="report-a-problem-by-using-visual-studio"></a>使用 Visual Studio 回報問題
+您可以使用 Visual Studio 或其安裝程式中所包含的意見反應工具來報告問題。 意見反應工具可讓您輕鬆地將診斷資訊納入您的意見反應中，並協助 Visual Studio 小組更有效率地診斷和修正問題。 以下是回報問題的步驟。
 
-若要回報 Visual Studio 的問題，您必須從 Visual Studio 或 Visual Studio 安裝程式進行回報。 請勿直接透過 [Developer Community](https://developercommunity.visualstudio.com/) 網站進行。 透過 Visual Studio 回報可讓診斷資訊自動包含在報告中。
+1. **在 Visual Studio 中**，選取右上角的意見反應圖示，然後選取 [回報問題]。 您也可以從功能表的 [說明] > [傳送意見反應] > [回報問題] 來存取意見反應工具。
+![Visual Studio 開發人員社群上的回報問題彈出視窗](media/vsfeedbackentry.png) 如果您無法安裝 Visual Studio 或無法在 Visual Studio 中存取意見反應工具，您也可以改為在 **Visual Studio 安裝程式**中回報問題。  在安裝程式中，選取右上角的意見反應圖示，然後選取 [回報問題]。
+![Visual Studio Developer Community 上的回報問題快顯](media/installer.png)
 
-![Visual Studio Developer Community 上的回報問題快顯](media/report-an-issue.png)
-
-1. 在 Visual Studio 中，選取 [說明] > [傳送意見反應] > [回報問題]。
-
-   > [!TIP]
-   > 若您無法完成 Visual Studio 安裝，或是無法存取 Visual Studio 中的意見反應工具，您可以使用 **Visual Studio 安裝程式**來回報問題。 若要這麼做，請在 **Visual Studio 安裝程式**中選擇右上角的意見反應圖示。
-
-1. 如果您尚未登入，請選取位於工具右邊的 [登入]，如以下螢幕擷取畫面所示。 依照畫面上的指示操作來登入。
+1. 如果尚未登入，請選取 [登入] 如下列螢幕擷取畫面所示。 依照畫面上的指示操作來登入。
 
    ![登入以回報問題](../ide/media/sign-in-new-ux.png)
 
-   當您登入時，可以回報您遇到的問題。 您也可以在您看到的其他任何問題貼文上投票或留言。
+   登入之後您不只可以回報問題，還可以對任何現有意見反應進行投票和評論。
 
 1. 登入後，就能在 [我追蹤的項目] 畫面中看到您的 [問題] 及 [活動]
 
-    ![我追蹤的項目](../ide/media/items-i-follow.png)
+   ![我追蹤的項目](../ide/media/items-i-follow.png)
 
 1. Visual Studio 提供一個介面，讓您搜尋自己的問題並看看其他人是否已回報過。 如果有人回報過，則請對它投票，讓我們知道。
    > [!NOTE]
@@ -125,7 +116,7 @@ ms.locfileid: "56953647"
 
 ## <a name="search-for-solutions-or-provide-feedback"></a>搜尋解決方案或提供意見反應
 
-如果您不想要或無法使用 Visual Studio 來回報問題，有可能那個問題已經回報過，而且解決方案已張貼於 [Visual Studio Developer Community 頁面](https://developercommunity.visualstudio.com/)。
+如果您不想要或無法使用 Visual Studio 來回報問題，有可能那個問題已經回報過，而且解決方案已張貼於 [Visual Studio 開發人員社群頁面](https://developercommunity.visualstudio.com/) \(英文\) 頁面。
 
 如果您沒有要回報的問題，但想要提出功能建議，也有管道可以這樣做。 如需詳細資訊，請參閱[提出功能建議](https://developercommunity.visualstudio.com/content/idea/post.html?space=8)頁面。
 

@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgram2::GetName
 ms.assetid: a54cbf13-b3e3-4c9f-8b8d-13573232dfb0
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a9ec8a234e46fade2b58454d3f4cf8c4ff669564
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 651c845e37ffb89461dfb8c9fe96e1db0b100d3f
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56698283"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66320782"
 ---
 # <a name="idebugprogram2getname"></a>IDebugProgram2::GetName
 取得程式的名稱。
@@ -36,10 +39,9 @@ int GetName( 
 );
 ```
 
-#### <a name="parameters"></a>參數
- `pbstrName`
-
- [out]傳回程式的名稱。
+## <a name="parameters"></a>參數
+`pbstrName`\
+[out]傳回程式的名稱。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

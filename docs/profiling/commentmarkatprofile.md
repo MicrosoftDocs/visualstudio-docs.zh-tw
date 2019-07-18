@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: af6789bc858a9281084523b2e99c7daca38c4159
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: e67f41bc4e30f0790e672a241dfe478a13ded9b7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56600497"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63407556"
 ---
 # <a name="commentmarkatprofile"></a>CommentMarkAtProfile
 `CommentMarkAtProfile` 方法會在 .*vsp* 檔案中插入時間戳記值、數字標記和註解字串。 時間戳記值可以用來同步處理外部事件。 針對要插入的標記和註解，包含 CommentMarkAtProfile 函式之執行緒的分析必須是 ON。
@@ -60,7 +60,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI CommentMarkAtProfile (
  使用 Mark 命令或 API 函式 (CommentMarkAtProfile、CommentMarkProfile 或 MarkProfile) 來插入標記和註解時，包含標記分析函式之執行緒的分析狀態必須設定為開啟。 分析標記屬於全域範圍。 例如，在一個執行緒中插入的分析標記，可用來標記 .vsp 檔案中任何執行緒之資料區段的開頭或結尾。
 
 > [!IMPORTANT]
->  CommentMarkAtProfile 方法只應該與檢測搭配使用。
+> CommentMarkAtProfile 方法只應該與檢測搭配使用。
 
 ## <a name="net-framework-equivalent"></a>.NET Framework 同等
  *Microsoft.VisualStudio.Profiler.dll*

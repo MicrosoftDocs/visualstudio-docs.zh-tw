@@ -14,17 +14,16 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: be51445940816f0feffcbc7ba0e542e94d0f0648
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: a05fe75aabaf2ce04010fe0c985a3cc1645ee696
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54791598"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446025"
 ---
 # <a name="log-command-window-output-command"></a>記錄命令視窗輸出命令
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 將來自 [命令] 視窗的所有輸入和輸出複製到檔案中。  
   
 ## <a name="syntax"></a>語法  
@@ -38,7 +37,7 @@ Tools.LogCommandWindowOutput [filename] [/on|/off] [/overwrite]
  選擇性。 記錄檔的名稱。 根據預設，檔案會建立在使用者的設定檔資料夾中。 如果檔案名稱已經存在，就會將記錄附加至現有的檔案結尾。 如果未指定任何檔案，則會使用最近指定的檔案。 如果沒有先前的檔案存在，會建立預設記錄檔，稱為 cmdline.log。  
   
 > [!TIP]
->  若要變更儲存記錄檔的位置，請輸入檔案的完整路徑，如果路徑包含任何空格則以引號括住。  
+> 若要變更儲存記錄檔的位置，請輸入檔案的完整路徑，如果路徑包含任何空格則以引號括住。  
   
 ## <a name="switches"></a>參數  
  /on  

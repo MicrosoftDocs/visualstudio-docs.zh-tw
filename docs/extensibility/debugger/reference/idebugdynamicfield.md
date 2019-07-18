@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugDynamicField interface
 ms.assetid: caffbd95-7596-4714-84b1-b964e89a78bb
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d94a685b9c79069a047e32155234f9bf6a50d5c5
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 58a4838afc0d52ab60ae0a11de419393d68dfc06
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56692013"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66351335"
 ---
 # <a name="idebugdynamicfield"></a>IDebugDynamicField
 此介面代表變數的類型。

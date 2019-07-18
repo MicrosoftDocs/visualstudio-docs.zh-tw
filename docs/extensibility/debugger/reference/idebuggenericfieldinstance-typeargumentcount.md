@@ -6,17 +6,20 @@ helpviewer_keywords:
 - TypeArgumentCount
 - IDebugGenericFieldInstance::TypeArgumentCount
 ms.assetid: e662c5ea-a5c1-478e-a268-5980dadffcd1
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b5a6b55d51cd2db25da1b51af84172d64c682245
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 89f1a92cc5e595bd2574174f0d0776c6605e42da
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56689937"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66337017"
 ---
 # <a name="idebuggenericfieldinstancetypeargumentcount"></a>IDebugGenericFieldInstance::TypeArgumentCount
 傳回類型的數目參數引數，這個執行個體。
@@ -35,10 +38,9 @@ int TypeArgumentCount(
 );
 ```
 
-#### <a name="parameters"></a>參數
- `pcArgs`
-
- [in、 out]這個執行個體的型別參數引數的數目。
+## <a name="parameters"></a>參數
+`pcArgs`\
+[in、 out]這個執行個體的型別參數引數的數目。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

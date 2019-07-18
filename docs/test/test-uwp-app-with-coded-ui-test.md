@@ -10,12 +10,12 @@ dev_langs:
 - VB
 ms.workload:
 - uwp
-ms.openlocfilehash: 1b07aa8559f331dd9416448f4a6b55aa8bdddb49
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: d50972ccb68ba43e8ebefa0d69fdfff8f7fc5be4
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55942254"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62430135"
 ---
 # <a name="create-a-coded-ui-test-to-test-a-uwp-app"></a>建立自動程式化 UI 測試來測試 UWP 應用程式
 
@@ -29,7 +29,11 @@ ms.locfileid: "55942254"
 
 1. 在 Visual Studio 中，使用適用於 Visual C# 或 Visual Basic 的 [空白應用程式 (通用 Windows)] 範本建立新的專案。
 
-     ![空白應用程式 (通用 Windows) 範本](../test/media/blank-uwp-app-template.png)
+   ::: moniker range="vs-2017"
+
+   ![空白應用程式 (通用 Windows) 範本](../test/media/blank-uwp-app-template.png)
+
+   ::: moniker-end
 
 1. 在 [新增通用 Windows 平台專案] 對話方塊中，選取 [確定] 以接受預設平台版本。
 
@@ -57,20 +61,24 @@ ms.locfileid: "55942254"
 
    ![含有按鈕和文字方塊的 UWP 應用程式](media/uwp-app.png)
 
-## <a name="create-a-coded-ui-test"></a>建立自動程式化 UI 測試
+## <a name="create-a-coded-ui-test"></a>建立自動程式碼 UI 測試
 
 1. 若要將測試專案新增至方案，請在 [方案總管] 中，以滑鼠右鍵按一下方案，並選擇 [新增] > [新增專案]。
 
-1. 在 [新增專案] 對話方塊中，選取 [自動程式化 UI 測試專案 (通用 Windows)] 範本。 您可以在 [Visual C#] 或 [Visual Basic] 底下的 [Windows 通用] 分類中找到此範本。
+1. 搜尋並選取 [自動程式化 UI 測試專案 (通用 Windows)] 範本。
 
-     ![新增自動程式化 UI 測試專案](../test/media/coded-ui-test-project-uwp-template.png)
+   ::: moniker range="vs-2017"
+
+   ![新增自動程式化 UI 測試專案](../test/media/coded-ui-test-project-uwp-template.png)
+
+   ::: moniker-end
 
    > [!NOTE]
    > 如果您沒有看到 [自動程式化 UI 測試專案 (通用 Windows)] 範本，則需要[安裝自動程式化 UI 測試元件](../test/use-ui-automation-to-test-your-code.md#install-the-coded-ui-test-component)。
 
 1. 在 [產生自動程式化 UI 測試的程式碼] 對話方塊中，選取 [手動編輯測試]。
 
-     ![[產生自動程式化 UI 測試的程式碼] 對話方塊](../test/media/manually-edit-the-test.png)
+   ![[產生自動程式化 UI 測試的程式碼] 對話方塊](../test/media/manually-edit-the-test.png)
 
 1. 如果 UWP 應用程式尚未執行，請按 **Ctrl**+**F5** 來啟動。
 
@@ -128,6 +136,7 @@ ms.locfileid: "55942254"
         Assert.AreEqual(Me.AssertMethod1ExpectedValues.UITextBoxEditText, uITextBoxEdit.Text, "Textbox value is unexpected.")
     End Sub
     ```
+
 1. 接下來，我們需要取得想要測試之 UWP [應用程式](#create-a-uwp-app-to-test)的 **AutomationId**。 開啟 Windows [開始] 功能表來查看應用程式磚。 然後，將交叉線工具 ![目標圖示](media/target-icon.png) 從 [自動程式化 UI 測試產生器] 對話方塊，拖曳至應用程式磚。 當藍色方塊圍繞著磚時，請放開滑鼠。
 
    ![交叉線工具](media/cross-hair-tool.png)

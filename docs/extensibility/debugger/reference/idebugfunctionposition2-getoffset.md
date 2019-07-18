@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugFunctionPosition2::GetOffset
 ms.assetid: 60943782-aec7-4be2-b222-1984ed53a543
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 705bda0fa8d9795b93d4633dba62d67e9f458587
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 891707f5937085f69bf037abdec81e6c36315fa0
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56680249"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66313314"
 ---
 # <a name="idebugfunctionposition2getoffset"></a>IDebugFunctionPosition2::GetOffset
 擷取函式的來源文件中的位置。
@@ -36,10 +39,9 @@ int GetOffset(
 );
 ```
 
-#### <a name="parameters"></a>參數
- `pPosition`
-
- [in、 out]A [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)結構，其中會填入函式的文件中的位置。
+## <a name="parameters"></a>參數
+`pPosition`\
+[in、 out]A [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)結構，其中會填入函式的文件中的位置。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

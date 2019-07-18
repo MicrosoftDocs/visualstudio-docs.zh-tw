@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProcess3::SetHostingProcessLanguage
 ms.assetid: e42f33ed-f29c-4e45-92ce-ab504b72d77c
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0e10c77fb7e4fd3e7a679e9954140760c282952b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 242f35dce9245406c3466784811d79ac1942c49f
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56723730"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66313916"
 ---
 # <a name="idebugprocess3sethostingprocesslanguage"></a>IDebugProcess3::SetHostingProcessLanguage
 這個方法會設定程序會裝載下的語言。 然後偵錯引擎 (DE) 載入適當的運算式評估工具使用此語言。
@@ -36,10 +39,9 @@ int SetHostingProcessLanguage(
 );
 ```
 
-#### <a name="parameters"></a>參數
- `guidLang`
-
- [in]`GUID` DE 應該使用的語言。 指定`GUID_NULL`（c + +） 或`Guid.Empty`(C#) 能夠使用預設的語言 DE。
+## <a name="parameters"></a>參數
+`guidLang`\
+[in]`GUID` DE 應該使用的語言。 指定`GUID_NULL`(C++) 或`Guid.Empty`(C#) 能夠使用預設的語言 DE。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`，否則會傳回錯誤碼。

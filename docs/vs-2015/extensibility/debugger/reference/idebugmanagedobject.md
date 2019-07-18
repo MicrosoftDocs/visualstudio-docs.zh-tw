@@ -1,14 +1,9 @@
 ---
-title: IDebugManagedObject |Microsoft Docs
-ms.custom: ''
+title: IDebugManagedObject | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugManagedObject
 helpviewer_keywords:
@@ -16,19 +11,19 @@ helpviewer_keywords:
 ms.assetid: 3ae09d34-112c-4285-80ee-9f7f8dc414d7
 caps.latest.revision: 12
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: eff42a7ba1b2fb3850e3751928d07cc3181d6fcd
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: be39e42de029b597d46fc775ef7df63c5d31c0c1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51783892"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439053"
 ---
 # <a name="idebugmanagedobject"></a>IDebugManagedObject
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
 > [!IMPORTANT]
->  在 Visual Studio 2015 中，這種實作運算式評估工具已被取代。 如需實作 CLR 運算式評估工具的資訊，請參閱[CLR 運算式評估工具](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)並[Managed 運算式評估工具範例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。  
+> 在 Visual Studio 2015 中，這種實作運算式評估工具已被取代。 如需實作 CLR 運算式評估工具的資訊，請參閱[CLR 運算式評估工具](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)並[Managed 運算式評估工具範例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。  
   
  此介面可讓運算式評估工具 (EE) 值的類別執行個體上呼叫屬性或方法 (例如`System.Decimal`)，並設定其值，而不會呼叫[Evaluate](../../../extensibility/debugger/reference/idebugfunctionobject-evaluate.md)正在偵錯的程式。  
   
@@ -58,11 +53,10 @@ IDebugManagedObject : IDebugObject
 ## <a name="requirements"></a>需求  
  標頭： ee.h  
   
- 命名空間： Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間：Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
  [運算式評估介面](../../../extensibility/debugger/reference/expression-evaluation-interfaces.md)   
  [Evaluate](../../../extensibility/debugger/reference/idebugfunctionobject-evaluate.md)
-

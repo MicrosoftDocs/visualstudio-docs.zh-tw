@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 0170c6ed655ce54e2dbadf57341dff56616186ec
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "68147222"
+---
 > [!WARNING]
 > 當您在現有角色上啟用診斷功能時，您已設定的任何擴充功能都會在部署套件時停用。 它們包括：
 >

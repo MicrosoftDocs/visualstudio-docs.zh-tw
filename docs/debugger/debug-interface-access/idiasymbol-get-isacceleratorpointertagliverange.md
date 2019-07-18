@@ -11,14 +11,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c8bf20f43fcc8da48a6e1ec1dfd0f65b14f8ad86
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56640242"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "62836898"
 ---
 # <a name="idiasymbolgetisacceleratorpointertagliverange"></a>IDiaSymbol::get_isAcceleratorPointerTagLiveRange
-擷取表示符號是否對應至的旗標*定義範圍符號*標記元件針對 c + + AMP 加速器所編譯的程式碼中的指標變數。 定義範圍符號是變數的位址範圍的位置。
+擷取表示符號是否對應至的旗標*定義範圍符號*標記元件之指標的程式碼中的變數編譯為C++AMP 加速器。 定義範圍符號是變數的位址範圍的位置。
 
 ## <a name="syntax"></a>語法
 
@@ -35,5 +35,5 @@ HRESULT get_isAcceleratorPointerTagLiveRange(
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -8,18 +8,18 @@ f1_keywords:
 helpviewer_keywords:
 - PromptForSaveOnCreation element [Visual Studio project templates]
 ms.assetid: 75174674-0c3c-4b57-b2fd-6ea8e817b67d
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 882465acd61f3f76d358f52ae75c9041c311dcd5
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 802bcd357fe82434f7cf5aaf835b2841e6dc8dc5
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57867278"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66335979"
 ---
 # <a name="promptforsaveoncreation-element-visual-studio-templates"></a>PromptForSaveOnCreation 項目 （Visual Studio 範本）
 

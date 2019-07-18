@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6ac35f506aadfcceebcbcf0dd4f6ec5b6dc33107
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56616920"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62552859"
 ---
 # <a name="create-basic-profiling-reports-from-the-command-line"></a>從命令列建立基本的分析報表
 本文描述基本的 VSPerfReport 命令，它們會從 .*vsp* 或 .*vsps* 分析資料檔案產生逗號分隔值 (.*csv*) 的報表。 如需所有報表選項的說明，請參閱 [VSPerfReport](../profiling/vsperfreport.md)。

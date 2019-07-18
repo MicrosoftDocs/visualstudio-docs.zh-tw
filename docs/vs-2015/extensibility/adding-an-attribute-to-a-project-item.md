@@ -1,26 +1,21 @@
 ---
 title: 將屬性加入至專案項目 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - attributes [Visual Studio], adding to a project item
 ms.assetid: 404a71d5-cce5-44e7-9eaf-d747c794fedb
 caps.latest.revision: 5
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 03faec8cdb79dcaf8bc074328da84af77d1cb17c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 1740ac4dfdeb64d5b4b2b0aab264845de9c186dd
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51766877"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68184824"
 ---
 # <a name="adding-an-attribute-to-a-project-item"></a>將屬性新增至專案項目
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +26,7 @@ ms.locfileid: "51766877"
   
 #### <a name="to-add-an-attribute-to-a-project-item"></a>若要將屬性加入專案項目  
   
--   下列程式碼會使用<xref:EnvDTE.DTE>automation 物件和<xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetItemAttribute%2A>方法，將屬性加入至專案項目。 專案項目 ID 被取自專案項目名稱"program.cs"。 屬性"MyAttribute"會加入至這個專案項目，而且 「 MyValue"的值。  
+- 下列程式碼會使用<xref:EnvDTE.DTE>automation 物件和<xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetItemAttribute%2A>方法，將屬性加入至專案項目。 專案項目 ID 被取自專案項目名稱"program.cs"。 屬性"MyAttribute"會加入至這個專案項目，而且 「 MyValue"的值。  
   
     ```  
     EnvDTE.DTE dte = (EnvDTE.DTE)Package.GetGlobalService(typeof(EnvDTE.DTE));  
@@ -55,4 +50,3 @@ ms.locfileid: "51766877"
   
 ## <a name="see-also"></a>另請參閱  
  [在 MSBuild 專案檔中保存資料](../extensibility/internals/persisting-data-in-the-msbuild-project-file.md)
-

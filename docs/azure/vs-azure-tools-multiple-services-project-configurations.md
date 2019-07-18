@@ -1,5 +1,5 @@
 ---
-title: 使用多個服務組態設定 Azure 專案 | Microsoft Docs
+title: 使用多個服務組態設定 Azure 專案
 description: 了解如何透過變更 ServiceDefinition.csdef、ServiceConfiguration.Local.cscfg 和 ServiceConfiguration.Cloud.cscfg 檔案來設定 Azure 雲端服務專案。
 author: ghogen
 manager: jillfra
@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2017
 ms.author: ghogen
-ms.openlocfilehash: b8930d288b5f37d59f3c14657aee045a6a95fb96
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: dfb58c9eabb135b69033c065fa606511043a2c8b
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55948091"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66260643"
 ---
 # <a name="configuring-your-azure-project-in-visual-studio-to-use-multiple-service-configurations"></a>在 Visual Studio 中設定 Azure 專案，以便使用多個服務組態
 
@@ -28,7 +28,6 @@ Visual Studio 中的 Azure 雲端服務專案包含三個組態檔：`ServiceDef
 ![VS_Solution_Explorer_Roles_Properties](./media/vs-azure-tools-multiple-services-project-configurations/IC784076.png)
 
 如需服務定義檔和服務組態檔的基礎結構描述相關資訊，請參閱 [.csdef XML Schema](/azure/cloud-services/schema-csdef-file)和 [.cscfg XML Schema](/azure/cloud-services/schema-cscfg-file)。 如需服務組態的詳細資訊，請參閱 [如何設定雲端服務](/azure/cloud-services/cloud-services-how-to-configure-portal)。
-
 
 ## <a name="configuration-page"></a>組態頁面
 

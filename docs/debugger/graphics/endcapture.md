@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0ae024f0d91c980fa8e787b21c93d32a6431203e
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56695527"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62895840"
 ---
 # <a name="endcapture"></a>EndCapture
 結束用來啟動在擷取間隔`BeginCapture`。
@@ -29,6 +29,6 @@ void EndCapture();
 
  若要擷取的間隔，您必須準備您的應用程式，來擷取和記錄的圖形資訊 — 也就是您必須先呼叫[Init](init.md)的執行個體透過`VsgDbg`類別在呼叫之前`BeginCapture`或`EndCapture`。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [BeginCapture](begincapture.md)
 - [CaptureCurrentFrame](capturecurrentframe.md)

@@ -10,12 +10,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2626734653381701680e85cbb190c028d92048a4
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 7442eebcd566470616382367fbdaad5cce774155
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55907681"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62950351"
 ---
 # <a name="template-parameters"></a>範本參數
 
@@ -47,18 +47,18 @@ ms.locfileid: "55907681"
 
 下表列出可用於任何範本的保留範本參數：
 
-|參數|描述|
+|參數|說明|
 |---------------|-----------------|
 |clrversion|通用語言執行平台 (CLR) 的最新版本。|
 |ext_*|將 `ext_` 前置詞新增至任何參數，以參考父代範本的變數。 例如，`ext_safeprojectname`。|
 |guid[1-10]|GUID；用來取代專案檔中的專案 GUID。 您最多可以指定 10 個唯一的 GUID (例如，`guid1`)。|
-|itemname|使用者在 [新增項目] 對話方塊中所提供的名稱。|
+|itemname|正在使用該參數的檔案名稱。|
 |machinename|目前的電腦名稱 (例如，Computer01)。|
-|projectname|使用者在 [新增專案] 對話方塊中所提供的名稱。|
+|projectname|建立專案時，使用者所提供的名稱。|
 |registeredorganization|來自 HKLM\Software\Microsoft\Windows NT\CurrentVersion\RegisteredOrganization 的登錄機碼值。|
 |rootnamespace|目前專案的根命名空間。 這個參數只適用於項目範本。|
-|safeitemname|使用者在 [新增項目] 對話方塊中所提供的名稱，其中已將所有 Unsafe 字元和空格移除。|
-|safeprojectname|使用者在 [新增專案] 對話方塊中所提供的名稱，其中已將所有 Unsafe 字元和空格移除。|
+|safeitemname|與 `itemname` 相同，但移除了所有不安全的字元和空格。|
+|safeprojectname|使用者在建立專案時時提供的名稱，但已移除所有不安全的字元和空格。|
 |時間|目前的時間，格式為 DD/MM/YYYY 00:00:00。|
 |SpecificSolutionName|方案名稱。 若已核取 [建立方案目錄]，則 `SpecificSolutionName` 具有方案名稱。 若未核取 [建立方案目錄]，`SpecificSolutionName` 則為空白。|
 |userdomain|目前的使用者網域。|

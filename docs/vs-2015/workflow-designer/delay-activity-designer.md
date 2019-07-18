@@ -1,11 +1,8 @@
 ---
 title: 延遲活動設計工具 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.Delay.UI
@@ -13,13 +10,13 @@ ms.assetid: f51742a8-2c9a-47d1-8a23-18459d03ae19
 caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: b861eb70315b2a734cdedb4346e0bcd9f2143678
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 528317a97a9b2582442dacfcf9ba8a35943736e8
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49282759"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62976707"
 ---
 # <a name="delay-activity-designer"></a>Delay 活動設計工具
 **延遲**活動設計工具會用來建立及設定<xref:System.Activities.Statements.Delay>活動。  
@@ -35,7 +32,7 @@ ms.locfileid: "49282759"
 ### <a name="the-delay-properties"></a>Delay 屬性  
  下表顯示 <xref:System.Activities.Statements.Delay> 屬性，並且描述屬性在設計工具中的使用方式。 這些屬性可以在屬性方格中進行編輯，其中有一些可以在 [!INCLUDE[wfd2](../includes/wfd2-md.md)] 設計工具介面上編輯。  
   
-|屬性名稱|必要項|使用方式|  
+|屬性名稱|必要|使用量|  
 |-------------------|--------------|-----------|  
 |<xref:System.Activities.Activity.DisplayName%2A>|False|<xref:System.Activities.Statements.Delay> 活動的易記名稱。 預設為 Delay。 雖然 <xref:System.Activities.Activity.DisplayName%2A> 值並非絕對必要，但建議您盡量使用。|  
 |<xref:System.Activities.Statements.Delay.Duration%2A>|True|延遲工作流程的時間長度。 這個屬性會在屬性方格中設定。 輸入常值 <xref:System.TimeSpan> (使用 00:00:00 格式) 或 Visual Basic 運算式，即可指定時間長度。|  

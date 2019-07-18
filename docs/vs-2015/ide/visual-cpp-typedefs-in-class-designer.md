@@ -14,12 +14,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 234b4252edc587ef52db57d3ec18eb98bb6b849b
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: fbf945459b0f0e2be041373da1db1cc419f776ed
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54778613"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65674102"
 ---
 # <a name="visual-c-typedefs-in-class-designer"></a>類別設計工具中的 Visual C++ Typedef
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,7 +50,7 @@ typedef class coord
 };  
 ```  
   
- 如需使用 `typedef` 類型的詳細資訊，請參閱 [(NOTINBUILD)typedef 規範](http://msdn.microsoft.com/cc96cf26-ba93-4179-951e-695d1f5fdcf1)。  
+ 如需使用 `typedef` 類型的詳細資訊，請參閱 [(NOTINBUILD)typedef 規範](https://msdn.microsoft.com/cc96cf26-ba93-4179-951e-695d1f5fdcf1)。  
   
  C++ typedef 圖形具有 typedef 中所指定類型的圖形。 例如，如果來源宣告 `typedef class`，則圖形具有圓角和標籤 **Class**。 針對 `typedef struct`，圖形會有方角和標籤「結構」。  
   
@@ -202,4 +202,4 @@ class A {
   
 ## <a name="see-also"></a>請參閱  
  [使用 Visual C++ 程式碼 (類別設計工具)](../ide/working-with-visual-cpp-code-class-designer.md)   
- [(NOTINBUILD)typedef 規範](http://msdn.microsoft.com/cc96cf26-ba93-4179-951e-695d1f5fdcf1)
+ [(NOTINBUILD)typedef 規範](https://msdn.microsoft.com/cc96cf26-ba93-4179-951e-695d1f5fdcf1)

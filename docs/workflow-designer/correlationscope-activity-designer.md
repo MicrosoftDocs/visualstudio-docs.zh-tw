@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b7ca5955cae8d9b2cb1012e97f034d497bbc79e9
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55953174"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62949810"
 ---
 # <a name="correlationscope-activity-designer"></a>CorrelationScope 活動設計工具
 
@@ -39,7 +39,7 @@ ms.locfileid: "55953174"
 
 下表顯示 <xref:System.ServiceModel.Activities.CorrelationScope> 屬性，並且描述屬性在設計工具中的使用方式。 這些屬性可以在編輯**屬性**視窗或在工作流程設計工具介面中，且經常在。
 
-|屬性名稱|必要項|使用方式|
+|屬性名稱|必要|使用量|
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|<xref:System.ServiceModel.Activities.InitializeCorrelation> 活動可選用的易記名稱。|
 |<xref:System.ServiceModel.Activities.CorrelationScope.CorrelatesWith%2A>|False|指定用來管理子系傳訊活動的 <xref:System.ServiceModel.Activities.CorrelationHandle>。 如果沒有設定這個屬性，<xref:System.ServiceModel.Activities.CorrelationScope> 會自動建立隱含 <xref:System.ServiceModel.Activities.CorrelationHandle>。|

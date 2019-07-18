@@ -1,14 +1,9 @@
 ---
 title: IDiaStackWalker::getEnumFrames |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: f9f09729-4c34-441c-989c-e0b7339ee32c
 caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 30af2457f5cc52c22dd30b023e0bf909e40548b2
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 8cbad02474af48ac4da72784659dd27007211e64
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51726332"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68144702"
 ---
 # <a name="idiastackwalkergetenumframes"></a>IDiaStackWalker::getEnumFrames
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -57,6 +52,3 @@ HRESULT getEnumFrames( 
  [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)   
  [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)   
  [IDiaStackWalker::getEnumFrames2](../../debugger/debug-interface-access/idiastackwalker-getenumframes2.md)
-
-
-

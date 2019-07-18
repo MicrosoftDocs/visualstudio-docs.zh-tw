@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - METADATA_ADDRESS_ARRAYELEM structure
 ms.assetid: 24321be5-7c17-4038-82a1-c20a2b68ff3c
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2b08d3d25912123d62de9a096b810f42d1418aa6
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: a0b5e24447c1f55242af6a6b549c5317f37818b2
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56707896"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66339176"
 ---
 # <a name="metadataaddressarrayelem"></a>METADATA_ADDRESS_ARRAYELEM
 
@@ -39,16 +42,14 @@ public struct METADATA_ADDRESS_ARRAYELEM {
 }
 ```
 
-## <a name="terms"></a>詞彙
+## <a name="members"></a>成員
 
-tokMethod
-
+`tokMethod`\
 識別碼陣列的這個項目是的一部分。
 
-[C + +]`_mdToken`已`typedef`適用於 32 位元`int`。
+[C++]`_mdToken`是`typedef`適用於 32 位元`int`。
 
-dwIndex
-
+`dwIndex`\
 陣列中這個項目的索引。
 
 ## <a name="remarks"></a>備註

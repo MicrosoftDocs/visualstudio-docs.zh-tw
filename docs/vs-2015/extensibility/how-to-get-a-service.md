@@ -1,28 +1,23 @@
 ---
-title: 如何： 取得服務 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：取得服務 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - services, consuming
 ms.assetid: 1f000020-8fb7-4e39-8e1e-2e38c7fec3d4
 caps.latest.revision: 21
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: ea5f3be4f5792213c5625e4c287195161eb1dd62
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 46ef86b8cde506aad3e00aa6b5dbc6470c0087de
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51785062"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68204180"
 ---
-# <a name="how-to-get-a-service"></a>如何： 取得服務
+# <a name="how-to-get-a-service"></a>HOW TO：取得服務
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 您通常需要取得 Visual Studio 服務，以存取不同的功能。 一般情況下，Visual Studio 服務提供您可以使用的一或多個介面。 您可以從 VSPackage 取得大部分的服務。  
@@ -33,11 +28,11 @@ ms.locfileid: "51785062"
   
 ## <a name="getting-a-service-from-an-initialized-vspackage"></a>從初始化的 VSPackage 中取得的服務  
   
-1.  每個 Visual Studio 擴充功能開始 VSIX 部署專案，以將包含的延伸模組資產。 建立[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]VSIX 專案，名為`GetServiceExtension`。 您可以找到在 VSIX 專案範本**新的專案**下方的對話方塊**Visual C# / 擴充性**。  
+1. 每個 Visual Studio 擴充功能開始 VSIX 部署專案，以將包含的延伸模組資產。 建立[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]VSIX 專案，名為`GetServiceExtension`。 您可以找到在 VSIX 專案範本**新的專案**下方的對話方塊**Visual C# / 擴充性**。  
   
-2.  現在將新增名為的自訂命令項目範本**GetServiceCommand**。 在 **加入新項目**對話方塊中，移至**Visual C# / 擴充性**，然後選取**自訂命令**。 在 **名稱**視窗的底部欄位中，將命令的檔案名稱變更為**GetServiceCommand.cs**。 如需有關如何建立自訂命令[建立擴充的功能表命令](../extensibility/creating-an-extension-with-a-menu-command.md)  
+2. 現在將新增名為的自訂命令項目範本**GetServiceCommand**。 在 **加入新項目**對話方塊中，移至**Visual C# / 擴充性**，然後選取**自訂命令**。 在 **名稱**視窗的底部欄位中，將命令的檔案名稱變更為**GetServiceCommand.cs**。 如需有關如何建立自訂命令[建立擴充的功能表命令](../extensibility/creating-an-extension-with-a-menu-command.md)  
   
-3.  在 GetServiceCommand.cs，移除 MenuItemCommand 方法的主體並新增下列程式碼：  
+3. 在 GetServiceCommand.cs，移除 MenuItemCommand 方法的主體並新增下列程式碼：  
   
     ```csharp  
     IVsActivityLog activityLog = ServiceProvider.GetService(typeof(SVsActivityLog)) as IVsActivityLog;  
@@ -46,18 +41,18 @@ ms.locfileid: "51785062"
   
     ```  
   
-     此程式碼取得 SVsActivityLog 服務，並將它轉換成<xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog>介面，可用來寫入活動記錄檔。 如需範例，請參閱[如何： 使用活動記錄](../extensibility/how-to-use-the-activity-log.md)。  
+     此程式碼取得 SVsActivityLog 服務，並將它轉換成<xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog>介面，可用來寫入活動記錄檔。 如需範例，請參閱[如何：使用活動記錄](../extensibility/how-to-use-the-activity-log.md)。  
   
-4.  建置此專案並開始偵錯。 實驗執行個體隨即出現。  
+4. 建置此專案並開始偵錯。 實驗執行個體隨即出現。  
   
-5.  在實驗執行個體的 工具 功能表上找到**叫用 GetServiceCommand**  按鈕。 當您按一下此按鈕時，您應該會看到出現訊息方塊，指出**找到 「 活動記錄 」 服務。**  
+5. 在實驗執行個體的 工具 功能表上找到**叫用 GetServiceCommand**  按鈕。 當您按一下此按鈕時，您應該會看到出現訊息方塊，指出**找到 「 活動記錄 」 服務。**  
   
 ## <a name="getting-a-service-from-a-tool-window-or-control-container"></a>從 工具視窗或控制項容器取得服務  
  有時候您可能需要從 工具視窗取得服務或控制未設置，否則就不知道您想要的服務的服務提供者已決定位置的容器。 比方說，您可能要從控制項內的活動記錄檔寫入。  
   
  靜態<xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A>方法會初始化任何 VSPackage 衍生自第一次的快取的服務提供者需仰賴<xref:Microsoft.VisualStudio.Shell.Package>設置。  
   
- 之前設置 VSPackage 呼叫 VSPackage 建構函式，因為全域服務都無法從 VSPackage 的建構函式通常使用。 請參閱[如何： 疑難排解服務](../extensibility/how-to-troubleshoot-services.md)的因應措施。  
+ 之前設置 VSPackage 呼叫 VSPackage 建構函式，因為全域服務都無法從 VSPackage 的建構函式通常使用。 請參閱[How to:疑難排解服務](../extensibility/how-to-troubleshoot-services.md)的因應措施。  
   
  以下是最好的工具視窗或其他非 VSPackage 項目中取得服務的範例。  
   
@@ -90,7 +85,6 @@ if (sp != null)
 ```  
   
 ## <a name="see-also"></a>另請參閱  
- [如何： 提供的服務](../extensibility/how-to-provide-a-service.md)   
+ [如何：提供服務](../extensibility/how-to-provide-a-service.md)   
  [使用和提供服務](../extensibility/using-and-providing-services.md)   
  [服務的基本資訊](../extensibility/internals/service-essentials.md)
-

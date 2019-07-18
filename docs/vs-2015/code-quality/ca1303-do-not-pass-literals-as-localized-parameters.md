@@ -1,14 +1,9 @@
 ---
-title: CA1303： 不要將傳遞常值為當地語系化的參數 |Microsoft Docs
-ms.custom: ''
+title: CA1303:請勿將傳遞常值為當地語系化的參數 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - Do not pass literals as localized parameters
 - DoNotPassLiteralsAsLocalizedParameters
@@ -21,14 +16,14 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: d900abe23dab4d950b5790798916fe728a44af4a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: fafcf113f5f40da3bcc4666778330865dcdfb84c
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49886556"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686801"
 ---
-# <a name="ca1303-do-not-pass-literals-as-localized-parameters"></a>CA1303：不要將常值當做已當地語系化的參數傳遞
+# <a name="ca1303-do-not-pass-literals-as-localized-parameters"></a>CA1303:不要將常值當作已當地語系化的參數傳遞
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -43,11 +38,11 @@ ms.locfileid: "49886556"
 
  字串常值當做值傳遞至參數或屬性，且在一或多個下列情況下，則為 true 時，會引發此警告：
 
--   <xref:System.ComponentModel.LocalizableAttribute>參數或屬性的屬性設定為 true。
+- <xref:System.ComponentModel.LocalizableAttribute>參數或屬性的屬性設定為 true。
 
--   參數或屬性名稱中包含 「 文字 」、 「 訊息 」，或 「 標題 」。
+- 參數或屬性名稱中包含 「 文字 」、 「 訊息 」，或 「 標題 」。
 
--   「 值 」 或"format"字串參數傳遞至 Console.Write 或 Console.WriteLine 方法的名稱。
+- 「 值 」 或"format"字串參數傳遞至 Console.Write 或 Console.WriteLine 方法的名稱。
 
 ## <a name="rule-description"></a>規則描述
  內嵌在原始程式碼中的字串常值很難進行當地語系化。
@@ -68,7 +63,4 @@ ms.locfileid: "49886556"
  [!code-vb[FxCop.Globalization.DoNotPassLiterals#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Globalization.DoNotPassLiterals/vb/FxCop.Globalization.DoNotPassLiterals.vb#1)]
 
 ## <a name="see-also"></a>另請參閱
- [桌面應用程式中的資源](http://msdn.microsoft.com/library/8ad495d4-2941-40cf-bf64-e82e85825890)
-
-
-
+ [桌面應用程式中的資源](https://msdn.microsoft.com/library/8ad495d4-2941-40cf-bf64-e82e85825890)

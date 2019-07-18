@@ -1,26 +1,21 @@
 ---
 title: IDebugSettingsCallback2::GetEEMetricDword |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - IDebugSettingsCallback2::GetEEMetricDword
 ms.assetid: c5f8f417-0ef0-4fd0-a779-b0a8ead4effe
 caps.latest.revision: 10
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 9d6ed9cbb4dccd29368ef08cd01c2077860dcf77
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 461371efdb6152fc8507f081a6d20ccece932d09
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51806395"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68155229"
 ---
 # <a name="idebugsettingscallback2geteemetricdword"></a>IDebugSettingsCallback2::GetEEMetricDword
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -65,4 +60,3 @@ private int GetEEMetricDword(
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugSettingsCallback2](../../../extensibility/debugger/reference/idebugsettingscallback2.md)
-

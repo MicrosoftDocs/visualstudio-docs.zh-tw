@@ -1,29 +1,24 @@
 ---
-title: 測試區域 8︰ 外掛程式切換 |Microsoft Docs
-ms.custom: ''
+title: 測試區域 8：外掛程式切換 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK], switching plug-ins
 - source control plug-ins, switching
 ms.assetid: 01370792-b5da-4e46-9ce2-7dd326587141
 caps.latest.revision: 10
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 103946f29cb893672b29d7671a74acf1c26bc50e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 90650b8b3c3432fce05b03a25033977e68f60fca
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51793811"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68203115"
 ---
-# <a name="test-area-8-plug-in-switching"></a>測試區域 8︰外掛程式切換
+# <a name="test-area-8-plug-in-switching"></a>測試區域 8：外掛程式切換
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]整合式的開發環境 (IDE) 有使用者介面 (UI) 來變更目前的原始檔控制外掛程式。 此測試區域會提供挑選的外掛程式用於原始檔控制方案的程序中的測試案例。  
@@ -31,9 +26,9 @@ ms.locfileid: "51793811"
 ## <a name="command-menu-access"></a>命令功能表存取  
  下列[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]與測試案例中使用整合式的開發環境功能表路徑。  
   
--   目前的原始檔控制外掛程式：**工具** -> **選項** -> **原始檔控制** -> **外掛程式選取範圍**.  
+- 目前的原始檔控制外掛程式：**工具** -> **選項** -> **原始檔控制** -> **外掛程式選擇**。  
   
--   變更原始檔控制繫結：**檔案** -> **原始檔控制** -> **變更原始檔控制**...  
+- 變更原始檔控制繫結：**檔案** -> **原始檔控制** -> **變更原始檔控制**...  
   
 ## <a name="common-expected-behavior"></a>常見的預期的行為  
  變更原始檔控制外掛程式的解決方案是可能不需要結束 Visual Studio，或重新載入方案。 此外，目前的原始檔控制外掛程式會自動變更為該方案載入時，解決方案所用的一個。  
@@ -41,7 +36,7 @@ ms.locfileid: "51793811"
 ## <a name="test-cases"></a>測試案例  
  以下是外掛程式切換的測試區域的特定測試案例。  
   
-### <a name="case-8a-automatic-change"></a>案例 8a： 自動變更  
+### <a name="case-8a-automatic-change"></a>案例 8a:自動變更  
   
 #### <a name="expected-behavior"></a>預期的行為  
  當使用者載入原始檔控制下的解決方案時，自動載入方案時，為目前選取適當的原始檔控制外掛程式。  
@@ -50,7 +45,7 @@ ms.locfileid: "51793811"
 |------------|----------------|--------------------------------|  
 |自動的原始檔控制外掛程式的變更|1.選取外掛程式下測試一樣新 (**工具** -> **選項** -> **原始檔控制** -> **外掛程式選取項目**。)<br />2.建立新的專案。<br />3.您可以將方案加入原始檔控制。<br />4.選取另一個外掛程式 (例如[!INCLUDE[vsvss](../../includes/vsvss-md.md)])。<br />5.接受卸載方案提示。<br />6.重新開啟方案，從磁碟。|開啟的方案。<br /><br /> 受測試的外掛程式是目前的原始檔控制外掛程式。|  
   
-### <a name="case-8b-solution-based-change"></a>案例 8b： 方案為基礎的變更  
+### <a name="case-8b-solution-based-change"></a>案例 8b:解決方案為基礎的變更  
   
 #### <a name="expected-behavior"></a>預期的行為  
  方案可以有與其關聯的原始檔控制外掛程式已變更。  
@@ -61,4 +56,3 @@ ms.locfileid: "51793811"
   
 ## <a name="see-also"></a>另請參閱  
  [原始檔控制外掛程式測試指南](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)
-

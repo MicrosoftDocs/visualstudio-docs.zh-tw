@@ -3,20 +3,20 @@ title: 適用於 Python 開發人員的 Visual Studio 概觀
 titleSuffix: ''
 ms.date: 03/13/2019
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 dev_langs:
 - Python
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 4868da71193519ceeb236349b8953a14189abaa7
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: d9c84e72551911135550c43da2b99ecb1357f9b6
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57983503"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62957431"
 ---
 # <a name="welcome-to-the-visual-studio-ide--python"></a>歡迎使用 Visual Studio IDE | Python
 
@@ -44,7 +44,7 @@ Visual Studio 整合式開發環境是支援 Python (和其他語言) 且創作�
 
 Visual Studio 適用於 Windows 及 Mac；但 Python 僅支援適用於 Windows 的 Visual Studio。
 
-Windows 上有推出三種 Visual Studio 2017 的版本：Community、Professional 及 Enterprise。 若要了解每個版本支援哪些功能，請參閱[比較 Visual Studio 2017 IDE](https://visualstudio.microsoft.com/vs/compare/)。
+Windows 有三種 Visual Studio 版本：Community、Professional 及 Enterprise。 若要了解每個版本支援哪些功能，請參閱[比較 Visual Studio IDE](https://visualstudio.microsoft.com/vs/compare/)。
 
 ## <a name="popular-productivity-features"></a>熱門的生產力功能
 
@@ -68,11 +68,11 @@ Visual Studio 的某些熱門功能可在您開發軟體時協助您提高生產
 
    ![操作功能表上 Python 專案的 PyLint 命令](media/code-pylint-command.png)
 
-- [快速啟動](../ide/reference/quick-launch-environment-options-dialog-box.md)
+- 搜尋方塊
 
-   Visual Studio 使用這麼多的功能表、選項和屬性，有時似乎讓人有壓迫感。 **快速啟動**搜尋方塊是一個可讓您在 Visual Studio 中快速找到所需項目的絕佳方式。 當您開始鍵入要尋找的項目名稱時，Visual Studio 會列出結果，將您引導至您確實想要去的地方。 如果您需要在 Visual Studio 中新增功能，例如新增對其他程式設計語言的支援，[快速啟動] 提供的結果可開啟 Visual Studio 安裝程式，安裝工作負載或個別元件。
+   Visual Studio 使用這麼多的功能表、選項和屬性，有時似乎讓人有壓迫感。 搜尋方塊是一個可讓您在 Visual Studio 中快速找到所需項目的絕佳方式。 當您開始鍵入要尋找的項目名稱時，Visual Studio 會列出結果，將您引導至您確實想要去的地方。 如果您需要在 Visual Studio 中新增功能，例如新增對其他程式設計語言的支援，搜尋方塊提供的結果可開啟 Visual Studio 安裝程式，安裝工作負載或個別元件。
 
-   ![Visual Studio 的 [快速啟動] 搜尋方塊](media/tour-ide-quick-launch.png)
+   ![Visual Studio 中的搜尋方塊](media/tour-ide-quick-launch.png)
 
 - 波浪線和[快速動作](../ide/quick-actions.md)
 

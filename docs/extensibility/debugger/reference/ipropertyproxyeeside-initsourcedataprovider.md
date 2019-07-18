@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IPropertyProxyEESide::InitSourceDataProvider
 ms.assetid: 5156f593-5052-4e3a-9d02-081916fb342d
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6fb0d2b960c2bafd1a2d502e41c8a435a5205d11
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 725ac07c85dd31edaf97200a7a8668ff3efd9ab9
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56687480"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66329530"
 ---
 # <a name="ipropertyproxyeesideinitsourcedataprovider"></a>IPropertyProxyEESide::InitSourceDataProvider
 初始化此物件的來源資料，並傳回物件，其中包含初始資料。
@@ -36,10 +39,9 @@ int InitSourceDataProvider(
 );
 ```
 
-#### <a name="parameters"></a>參數
- `dataOut`
-
- [out]傳回[IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)物件
+## <a name="parameters"></a>參數
+`dataOut`\
+[out]傳回[IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)物件
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

@@ -1,14 +1,9 @@
 ---
 title: Name 元素 （Visual Studio 範本） |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#Name
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 48788dbf-7da0-4443-8061-aab966fc22c8
 caps.latest.revision: 18
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 62964708e4211e0d845808de13c5f907c4dbd4f2
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: a3da08450df7edf9046aaa926d89c182c91d03a7
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51725834"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68194197"
 ---
 # <a name="name-element-visual-studio-templates"></a>名稱項目 (Visual Studio 範本)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,7 +45,7 @@ ms.locfileid: "51725834"
   
 |屬性|描述|  
 |---------------|-----------------|  
-|`Package`|選擇性屬性，為進階的使用者案例。<br /><br /> 指定 Visual Studio 套件的 GUID 識別碼。|  
+|`Package`|選擇性屬性，為進階的使用者案例。<br /><br /> 指定 Visual Studio 套件識別碼的 GUID。|  
 |`ID`|選擇性屬性，為進階的使用者案例。<br /><br /> 指定 Visual Studio 資源識別碼。|  
   
 ### <a name="child-elements"></a>子元素  
@@ -63,9 +58,9 @@ ms.locfileid: "51725834"
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|必要項目。<br /><br /> 將範本分類，並定義該範本在 [新增專案]  或 [加入新項目]  對話方塊中顯示的方式。|  
   
 ## <a name="text-value"></a>文字值  
- 需要的文字值，除非`Package`和`ID`屬性使用。  
+ 除非使用 `Package` 和 `ID` 屬性，否則需要文字值。  
   
- 文字提供範本的名稱。  
+ 文字能提供範本的名稱。  
   
 ## <a name="remarks"></a>備註  
  `Name` 是 `TemplateData` 的必要子項目。  
@@ -100,4 +95,3 @@ ms.locfileid: "51725834"
 ## <a name="see-also"></a>另請參閱  
  [Visual Studio 範本結構描述參考](../extensibility/visual-studio-template-schema-reference.md)   
  [建立專案和項目範本](../ide/creating-project-and-item-templates.md)
-

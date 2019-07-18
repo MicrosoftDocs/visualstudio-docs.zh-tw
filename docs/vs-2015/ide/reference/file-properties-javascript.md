@@ -26,20 +26,19 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e2586de5731aee916dfc877013269f8d08eb756d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 00527cf13d978da5a10e7745049df63f24e7a15c
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54780365"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65688758"
 ---
 # <a name="file-properties-javascript"></a>JavaScript、檔案屬性
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 您可以使用檔案屬性，指出專案系統應該對檔案執行哪些動作。 例如，您可以設定檔案屬性，指出是否應該將檔案新增至套件以作為資源檔。  
   
- 您可以在方案總管中選取任何檔案，然後在 [屬性] 視窗中檢查其屬性。 JavaScript 檔案有四個屬性：[複製到輸出目錄]、[套件動作]、[檔案名稱] 和 [檔案路徑]。  
+ 您可以在方案總管中選取任何檔案，然後在 [屬性] 視窗中檢查其屬性。 JavaScript 檔案具有四個屬性：[複製到輸出目錄]、[套件動作]、[檔案名稱] 和 [檔案路徑]。  
   
 ## <a name="file-properties"></a>檔案內容  
  此區段描述 JavaScript 檔案的共用屬性。  
@@ -96,5 +95,5 @@ ms.locfileid: "54780365"
 ### <a name="version"></a>版本  
  顯示參考的版本。  
   
-## <a name="see-also"></a>請參閱  
- [NIB： 專案屬性 (Visual Studio)](http://msdn.microsoft.com/eb4c97ed-f667-4850-98d0-6e2a4d21bbca)
+## <a name="see-also"></a>另請參閱  
+ [NIB：專案屬性 (Visual Studio)](https://msdn.microsoft.com/eb4c97ed-f667-4850-98d0-6e2a4d21bbca)

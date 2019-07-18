@@ -6,17 +6,17 @@ helpviewer_keywords:
 - project properties, supporting with Visual Studio SDK
 - configuration properties, supporting with Visual Studio SDK
 ms.assetid: 9fcfaa0f-7b41-4b68-82ec-7a151dca5d7e
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d98755912674670d614d4b063075500427c1d996
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: f0428e2af6e273e961815ec2521ae26afb5e844d
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56604674"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66322394"
 ---
 # <a name="support-for-project-and-configuration-properties"></a>支援專案和組態屬性
 **屬性** 視窗中的[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]整合式的開發環境 (IDE) 可以顯示專案和設定的屬性。 使用者可設定您的應用程式的屬性，您可以將屬性頁提供您自己的專案類型中。
@@ -51,7 +51,7 @@ ms.locfileid: "56604674"
  負責的專案，以保存專案和設定屬性的專案檔。
 
 > [!NOTE]
->  專案可以最佳化持續性保存其預設值不同的唯一屬性值。
+> 專案可以最佳化持續性保存其預設值不同的唯一屬性值。
 
 ## <a name="support-for-project-and-configuration-properties"></a>支援專案和組態屬性
  `Microsoft.VisualStudio.Package.SettingsPage`類別會實作專案] 和 [組態屬性頁。 預設實作`SettingsPage`泛型屬性方格中的使用者提供的公用屬性。 `Microsoft.VisualStudio.Package.HierarchyNode.GetPropertyPageGuids`方法會選取類別衍生自`SettingsPage`的專案屬性方格。 `Microsoft.VisualStudio.Package.ProjectNode.GetConfigPropertyPageGuids`方法會選取類別衍生自`SettingsPage`的組態屬性方格。 您的專案類型應該覆寫這些方法來選取適當的屬性頁面。
@@ -63,7 +63,7 @@ ms.locfileid: "56604674"
 - `Microsoft.VisualStudio.Package.SettingsPage.GetConfigProperty` 和`Microsoft.VisualStudio.Package.SettingsPage.SetConfigProperty`保存組態屬性。
 
   > [!NOTE]
-  >  實作`Microsoft.VisualStudio.Package.SettingsPage`並`Microsoft.VisualStudio.Package.ProjectNode`類別會使用`Microsoft.Build.BuildEngine`(MSBuild) 方法來取得和設定從專案檔的專案] 和 [組態屬性。
+  > 實作`Microsoft.VisualStudio.Package.SettingsPage`並`Microsoft.VisualStudio.Package.ProjectNode`類別會使用`Microsoft.Build.BuildEngine`(MSBuild) 方法來取得和設定從專案檔的專案] 和 [組態屬性。
 
   此類別衍生自`SettingsPage`必須實作`Microsoft.VisualStudio.Package.SettingsPage.ApplyChanges`和`Microsoft.VisualStudio.Package.SettingsPage.BindProperties`以保留的專案檔的專案] 或 [組態屬性。
 
@@ -81,7 +81,7 @@ ms.locfileid: "56604674"
  <xref:System.ComponentModel.CategoryAttribute>， <xref:System.ComponentModel.DisplayNameAttribute>，和<xref:System.ComponentModel.DescriptionAttribute>屬性會決定配置、 標記和一般屬性頁面中的專案和設定屬性的描述。 這些屬性決定的類別，分別顯示名稱和描述的選項。
 
 > [!NOTE]
->  對等的屬性、 SRCategory、 LocDisplayName，SRDescription，字串資源當地語系化，並使用定義於[專案-Visual Studio 2013 的 MPF](https://github.com/tunnelvisionlabs/MPFProj10)。
+> 對等的屬性、 SRCategory、 LocDisplayName，SRDescription，字串資源當地語系化，並使用定義於[專案-Visual Studio 2013 的 MPF](https://github.com/tunnelvisionlabs/MPFProj10)。
 
  請考慮下列程式碼片段：
 

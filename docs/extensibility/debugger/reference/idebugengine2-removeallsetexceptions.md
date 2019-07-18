@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEngine2::RemoveAllSetExceptions
 ms.assetid: 165fbe89-802d-4d99-85ca-c10fd6cccc09
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8f5eb2542fa16d86dd342ae0e2783ac03ca69ee4
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 17063a2c503535bc20b61ba8d9914fc54005cccc
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56703405"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66352608"
 ---
 # <a name="idebugengine2removeallsetexceptions"></a>IDebugEngine2::RemoveAllSetExceptions
 移除 IDE 已設定特定的執行階段架構或語言的例外狀況的清單。
@@ -36,10 +39,9 @@ int RemoveAllSetExceptions( 
 );
 ```
 
-#### <a name="parameters"></a>參數
- `guidType`
-
- [in]語言 GUID 或執行階段架構特有的偵錯引擎的 GUID。
+## <a name="parameters"></a>參數
+`guidType`\
+[in]語言 GUID 或執行階段架構特有的偵錯引擎的 GUID。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

@@ -6,17 +6,20 @@ helpviewer_keywords:
 - IDebugComPlusSymbolProvider2::IsAddressSequencePoint
 - IsAddressSequencePoint
 ms.assetid: 89b27c57-5295-428b-8229-a402500d8cd3
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dc56d0bda7d8b1797c29db6c2e72a5efc3d586d2
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: e6531bbb3d375eea30c6e863cdef905c82aa33ef
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56717971"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66334696"
 ---
 # <a name="idebugcomplussymbolprovider2isaddresssequencepoint"></a>IDebugComPlusSymbolProvider2::IsAddressSequencePoint
 判斷指定的偵錯位址為序列點。
@@ -35,10 +38,9 @@ int IsAddressSequencePoint(
 );
 ```
 
-#### <a name="parameters"></a>參數
-`pAddress`
-
- [in]偵錯所表示的地址[IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)介面。
+## <a name="parameters"></a>參數
+`pAddress`\
+[in]偵錯所表示的地址[IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)介面。
 
 ## <a name="return-value"></a>傳回值
 如果偵錯位址都是序列點，會傳回`S_OK`; 否則傳回`S_FALSE`。

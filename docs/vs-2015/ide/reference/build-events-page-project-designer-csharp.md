@@ -16,17 +16,16 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e55d9d34a4837e2c01d78cc1f52ae2a25f28da8d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: dc8fee5a01043a32061bfa711b7ad2009121b216
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54785780"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433729"
 ---
 # <a name="build-events-page-project-designer-c"></a>專案設計工具、建置事件 (C#)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 使用 [專案設計工具] 的 [建置事件] 頁面，以指定組建組態指示。 您也可以指定執行任何建置後事件的條件。 如需詳細資訊，請參閱[如何：指定建置事件 (C#)](../../ide/how-to-specify-build-events-csharp.md) 和[如何：指定建置事件 (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md)。  
   
 ## <a name="uielement-list"></a>UIElement 清單  
@@ -40,13 +39,13 @@ ms.locfileid: "54785780"
  指定要在建置開始前執行的任何命令。 若要鍵入長命令，請按一下 [建置前進行編輯] 顯示[建置前事件/建置後事件命令列對話方塊](../../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md)。  
   
 > [!NOTE]
->  如果專案是最新狀態，而且未觸發任何建置，則建置前事件不會執行。  
+> 如果專案是最新狀態，而且未觸發任何建置，則建置前事件不會執行。  
   
  **建置後事件命令列**  
  指定要在建置結束後執行的任何命令。 若要鍵入長命令，請按一下 [建置後進行編輯] 顯示 [建置前事件/建置後事件命令列] 對話方塊。  
   
 > [!NOTE]
->  在執行 .bat 檔案的所有建置命令前方，加入 `call` 陳述式。 例如，`call C:\MyFile.bat` 或 `call C:\MyFile.bat call C:\MyFile2.bat`。  
+> 在執行 .bat 檔案的所有建置命令前方，加入 `call` 陳述式。 例如，`call C:\MyFile.bat` 或 `call C:\MyFile.bat call C:\MyFile2.bat`。  
   
  **執行建置後事件**  
  指定要執行建置後事件的下列條件，如下表所示。  
@@ -57,7 +56,7 @@ ms.locfileid: "54785780"
 |**建置成功時**|如果建置成功，則會執行建置後事件。 因此，即使專案是最新狀態，但只要建置成功，就會執行事件。|  
 |**當組建更新專案輸出時**|只有在編譯器的輸出檔 (.exe 或 .dll) 與先前的編譯器輸出檔不同時，才會執行建置後事件。 因此，如果專案是最新狀態，就不會執行建置後事件。|  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [如何：指定建置事件 (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md)   
  [如何：指定建置事件 (C#)](../../ide/how-to-specify-build-events-csharp.md)   
  [專案屬性參考](../../ide/reference/project-properties-reference.md)   

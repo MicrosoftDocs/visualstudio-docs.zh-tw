@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugObject::SetReferenceValue method
 ms.assetid: 08c78a4e-98eb-41cb-8b75-02a6a43d49f7
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5cf00fc85a2b3f3dc09704227f84fa5b2e90ee6f
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: aaef4eb96942789bd3f574e6eeddcd3500ae6ee9
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56704497"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66349944"
 ---
 # <a name="idebugobjectsetreferencevalue"></a>IDebugObject::SetReferenceValue
 設定參考值，這個物件。
@@ -36,10 +39,9 @@ int SetReferenceValue(
 );
 ```
 
-#### <a name="parameters"></a>參數
- `pObject`
-
- [in][IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)物件，表示新的參考值。
+## <a name="parameters"></a>參數
+`pObject`\
+[in][IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)物件，表示新的參考值。
 
 ## <a name="return-value"></a>傳回值
  如果成功，會傳回 S_OK;否則，傳回錯誤碼。

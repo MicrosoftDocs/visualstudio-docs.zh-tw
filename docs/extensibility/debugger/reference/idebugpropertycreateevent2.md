@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPropertyCreateEvent2 interface
 ms.assetid: 33b3082b-a42e-488a-a1e4-dadf506f922c
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3c5afdd5b1c3c8eaf62f9cd15ab2ea9474f9c040
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 83a7e0aaae01e21c67a6d030caebb476779779f7
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56706154"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66348616"
 ---
 # <a name="idebugpropertycreateevent2"></a>IDebugPropertyCreateEvent2
 這個介面會傳送偵錯引擎 (DE) 工作階段的偵錯管理員 (SDM) 建立與特定文件相關聯的屬性時。

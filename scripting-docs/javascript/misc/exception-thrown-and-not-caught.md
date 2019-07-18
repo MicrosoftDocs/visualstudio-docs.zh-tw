@@ -14,23 +14,23 @@ ms.assetid: b5235490-a8e7-42e3-804e-d85235bc6f05
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e1e34be9f8eab5171af0e2553d5777b0958bf3c2
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: bae4ed0a335a9c12d16cb46208f77c4b66f12547
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56840866"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62946325"
 ---
 # <a name="exception-thrown-and-not-caught"></a>發生例外狀況而且未攔截
 您包含`throw`陳述式中您的程式碼，但不住**試**區塊中，或不相關聯**攔截**區塊來捕捉此錯誤。 內擲回例外狀況**嘗試**封鎖使用**擲回**陳述式，並已攔截外部**試**區塊**攔截**陳述式。  
   
 ### <a name="to-correct-this-error"></a>更正這個錯誤  
   
--   括住中擲回例外狀況的程式碼**嘗試**區塊中，並確保沒有相對應**攔截**區塊。  
+- 括住中擲回例外狀況的程式碼**嘗試**區塊中，並確保沒有相對應**攔截**區塊。  
   
--   請確定您的 catch 陳述式預期的例外狀況的正確格式。  
+- 請確定您的 catch 陳述式預期的例外狀況的正確格式。  
   
--   如果重新擲回例外狀況，請確定另一個對應的 catch 陳述式。  
+- 如果重新擲回例外狀況，請確定另一個對應的 catch 陳述式。  
   
 ## <a name="see-also"></a>另請參閱  
  [Error 物件](../../javascript/reference/error-object-javascript.md)   

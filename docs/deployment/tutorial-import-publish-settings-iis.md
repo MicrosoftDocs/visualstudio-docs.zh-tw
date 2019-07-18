@@ -10,16 +10,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cad2d1a83ed60cde4f3a410f8183e5ee6074321c
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 8e0c7309f52fbc8056f09e5a59afcfdefaa8d0bf
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57983906"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65680131"
 ---
 # <a name="publish-an-application-to-iis-by-importing-publish-settings-in-visual-studio"></a>在 Visual Studio 中匯入發行設定，即可將應用程式發行至 IIS
 
-您可以使用 [發行] 工具匯入發行設定，然後部署您的應用程式。 在此文章中，我們會使用 IIS 的發行設定，但您可以使用類似步驟匯入 [Azure App Service](../deployment/tutorial-import-publish-settings-azure.md) 的發行設定。 在某些情況下，使用發行設定的設定檔速度，比起針對每個 Visual Studio 安裝手動設定 IIS 部署還要快。
+您可以使用 [發行] 工具匯入發行設定，然後部署您的應用程式。 在本文中，我們會使用 IIS 的發行設定，但您可以使用類似步驟匯入 [Azure App Service](../deployment/tutorial-import-publish-settings-azure.md) 的發行設定。 在某些情況下，使用發行設定的設定檔速度，比起針對每個 Visual Studio 安裝手動設定 IIS 部署還要快。
 
 這些步驟適用於 Visual Studio 中的 ASP.NET、ASP.NET Core 和 .NET Core 應用程式。
 
@@ -56,9 +56,9 @@ ms.locfileid: "57983906"
 
 ## <a name="create-a-new-aspnet-project-in-visual-studio"></a>在 Visual Studio 中建立新的 ASP.NET 專案
 
-1. 在執行 Visual Studio 的電腦上，選擇 [檔案] > [新增專案]。
+1. 在執行 Visual Studio 的電腦上，建立新的專案。
 
-1. 在 [Visual C#] 或 [Visual Basic] 底下，選擇 [Web]，然後在中間窗格中選擇 [ASP.NET Web 應用程式 (.NET Framework)] 或 (僅限於 C#) [ASP.NET Core Web 應用程式]，然後按一下 [確定]。
+    選擇正確的範本。 在本範例中，選擇 [ASP.NET Web 應用程式 (.NET Framework)] 或 (僅限 C#) [ASP.NET Core Web 應用程式]，然後按一下 [確定]。
 
     如果您沒有看到特定的專案範本，請在 [新增專案] 對話方塊的左窗格中，按一下 [開啟 Visual Studio 安裝程式] 連結。 Visual Studio 安裝程式即會啟動。 安裝 **ASP.NET 和 Web 開發**工作負載。
 

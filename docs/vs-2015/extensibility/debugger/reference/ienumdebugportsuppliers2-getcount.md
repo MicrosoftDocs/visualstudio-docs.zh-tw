@@ -1,14 +1,9 @@
 ---
 title: IEnumDebugPortSuppliers2::GetCount |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IEnumDebugPortSuppliers2::GetCount
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 004f78dd-87d0-41a8-bcaa-f7fadbfeb8fc
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 7fba59952d86fb908e044810fad6577dc178c700
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 2efbfa218fabbfb5782fb28c9df5661f8c3c17d3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51720882"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68164730"
 ---
 # <a name="ienumdebugportsuppliers2getcount"></a>IEnumDebugPortSuppliers2::GetCount
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -55,4 +50,3 @@ int GetCount(
   
 ## <a name="see-also"></a>另請參閱  
  [IEnumDebugPortSuppliers2](../../../extensibility/debugger/reference/ienumdebugportsuppliers2.md)
-

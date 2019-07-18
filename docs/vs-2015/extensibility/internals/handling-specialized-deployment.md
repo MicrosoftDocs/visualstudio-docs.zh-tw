@@ -1,27 +1,22 @@
 ---
 title: 處理特製化的部署 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - deploying applications [Visual Studio SDK]
 - specialized deployment
 ms.assetid: de068b6a-e806-45f0-9dec-2458fbb486f7
 caps.latest.revision: 33
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 236acfbad0d5c49710f4c7eb8b20a7572b209212
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: bfd5d4d1a5a94662c2fe3fb9d406cc098014f6e6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51736776"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436277"
 ---
 # <a name="handling-specialized-deployment"></a>處理特製化的部署
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -52,7 +47,7 @@ ms.locfileid: "51736776"
   
 #### <a name="to-handle-a-specialized-deployment-by-a-subtype-project"></a>要處理的子類型專案的特製化的部署  
   
--   實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.AdviseDeployStatusCallback%2A>方法來註冊要接收通知的部署狀態事件的環境。  
+- 實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.AdviseDeployStatusCallback%2A>方法來註冊要接收通知的部署狀態事件的環境。  
   
     ```vb  
     Private adviseSink As Microsoft.VisualStudio.Shell.EventSinkCollection = New Microsoft.VisualStudio.Shell.EventSinkCollection()  
@@ -83,7 +78,7 @@ ms.locfileid: "51736776"
   
     ```  
   
--   實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.UnadviseDeployStatusCallback%2A>取消環境的登錄，以接收通知的部署狀態事件的方法。  
+- 實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.UnadviseDeployStatusCallback%2A>取消環境的登錄，以接收通知的部署狀態事件的方法。  
   
     ```vb  
     Public Function UnadviseDeployStatusCallback(ByVal dwCookie As UInteger) As Integer  
@@ -101,7 +96,7 @@ ms.locfileid: "51736776"
   
     ```  
   
--   實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.Commit%2A>方法，以執行您的應用程式特有的認可作業。  這個方法主要用於資料庫部署。  
+- 實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.Commit%2A>方法，以執行您的應用程式特有的認可作業。  這個方法主要用於資料庫部署。  
   
     ```vb  
     Public Function Commit(ByVal dwReserved As UInteger) As Integer  
@@ -119,7 +114,7 @@ ms.locfileid: "51736776"
   
     ```  
   
--   實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.Rollback%2A>方法，以執行復原作業。 當呼叫這個方法時，必須執行任何適合復原變更，部署專案，並將其還原專案的狀態。 這個方法主要用於資料庫部署。  
+- 實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.Rollback%2A>方法，以執行復原作業。 當呼叫這個方法時，必須執行任何適合復原變更，部署專案，並將其還原專案的狀態。 這個方法主要用於資料庫部署。  
   
     ```vb  
     Public Function Commit(ByVal dwReserved As UInteger) As Integer  
@@ -137,7 +132,7 @@ ms.locfileid: "51736776"
   
     ```  
   
--   實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.QueryStartDeploy%2A>方法來判斷專案是否為無法啟動部署作業。  
+- 實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.QueryStartDeploy%2A>方法來判斷專案是否為無法啟動部署作業。  
   
     ```vb  
     Public Function QueryStartDeploy(ByVal dwOptions As UInteger, ByVal pfSupported As Integer(), ByVal pfReady As Integer()) As Integer  
@@ -170,7 +165,7 @@ ms.locfileid: "51736776"
   
     ```  
   
--   實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.QueryStatusDeploy%2A>方法，以判斷是否已順利完成部署作業。  
+- 實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.QueryStatusDeploy%2A>方法，以判斷是否已順利完成部署作業。  
   
     ```vb  
     Public Function QueryStatusDeploy(ByRef pfDeployDone As Integer) As Integer  
@@ -193,7 +188,7 @@ ms.locfileid: "51736776"
   
     ```  
   
--   實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.StartDeploy%2A>方法來開始部署作業，在個別的執行緒。 將程式碼放在您的應用程式部署特定`Deploy`方法。  
+- 實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.StartDeploy%2A>方法來開始部署作業，在個別的執行緒。 將程式碼放在您的應用程式部署特定`Deploy`方法。  
   
     ```vb  
     Public Function StartDeploy(ByVal pIVsOutputWindowPane As IVsOutputWindowPane, ByVal dwOptions As UInteger) As Integer  
@@ -250,7 +245,7 @@ ms.locfileid: "51736776"
   
     ```  
   
--   實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.StopDeploy%2A>停止部署作業的方法。 當使用者按下時，會呼叫這個方法**取消**部署程序期間的按鈕。  
+- 實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.StopDeploy%2A>停止部署作業的方法。 當使用者按下時，會呼叫這個方法**取消**部署程序期間的按鈕。  
   
     ```vb  
     Public Function StopDeploy(ByVal fSync As Integer) As Integer  
@@ -296,8 +291,7 @@ ms.locfileid: "51736776"
     ```  
   
 > [!NOTE]
->  本主題所提供的所有程式碼範例是較大的範例中，部分[VSSDK 範例](../../misc/vssdk-samples.md)。  
+> 本主題所提供的所有程式碼範例是較大的範例中，部分[VSSDK 範例](../../misc/vssdk-samples.md)。  
   
 ## <a name="see-also"></a>另請參閱  
  [專案子類型](../../extensibility/internals/project-subtypes.md)
-

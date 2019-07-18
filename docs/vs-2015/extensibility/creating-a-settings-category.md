@@ -1,31 +1,26 @@
 ---
 title: Creating a Settings Category |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - profile settings, creating categories
 ms.assetid: 97c88693-05ff-499e-8c43-352ee073dcb7
 caps.latest.revision: 40
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 30d7b4c95a02d841723a4ddf1dcf51dd0ef011b4
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: d14e60ec28fb5f8ba80f9986c4316058539b35e6
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51730353"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695028"
 ---
 # <a name="creating-a-settings-category"></a>建立設定分類
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-在本逐步解說您可以建立 Visual Studio 設定類別目錄，並使用它來儲存值，並還原從設定檔的值。 設定類別是一組顯示為 「 自訂設定點; 」 的相關內容也就是為核取方塊**匯入和匯出設定**精靈。 (您可以上找到**工具**功能表。)設定會儲存或還原為類別，並個別設定不會顯示在精靈中。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
+在本逐步解說您可以建立 Visual Studio 設定類別目錄，並使用它來儲存值，並還原從設定檔的值。 設定類別是一組顯示為 「 自訂設定點; 」 的相關內容也就是為核取方塊**匯入和匯出設定**精靈。 (您可以上找到**工具**功能表。)設定會儲存或還原為類別，並個別設定不會顯示在精靈中。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
   
  您建立設定類別從<xref:Microsoft.VisualStudio.Shell.DialogPage>類別。  
   
@@ -39,9 +34,9 @@ ms.locfileid: "51730353"
   
 #### <a name="to-create-a-settings-category"></a>若要建立設定類別  
   
-1.  完成[建立選項頁](../extensibility/creating-an-options-page.md)。  
+1. 完成[建立選項頁](../extensibility/creating-an-options-page.md)。  
   
-2.  開啟 VSPackage.resx 檔案並新增下列三個字串資源：  
+2. 開啟 VSPackage.resx 檔案並新增下列三個字串資源：  
   
     |名稱|值|  
     |----------|-----------|  
@@ -52,9 +47,9 @@ ms.locfileid: "51730353"
      這會建立資源，該名稱"My Category"的類別、 物件"My Settings"和類別描述 「 OptionInteger 和 OptionFloat"。  
   
     > [!NOTE]
-    >  三者之中，只有類別名稱不會不會出現在 [匯入和匯出設定精靈]。  
+    > 三者之中，只有類別名稱不會不會出現在 [匯入和匯出設定精靈]。  
   
-3.  在 MyToolsOptionsPackage.cs，加入`float`名為屬性`OptionFloat`到`OptionPageGrid`類別，如下列範例所示。  
+3. 在 MyToolsOptionsPackage.cs，加入`float`名為屬性`OptionFloat`到`OptionPageGrid`類別，如下列範例所示。  
   
     ```csharp  
     public class OptionPageGrid : DialogPage  
@@ -82,41 +77,41 @@ ms.locfileid: "51730353"
     ```  
   
     > [!NOTE]
-    >  `OptionPageGrid`現在名為"My Category"類別目錄包含兩個屬性，`OptionInteger`和`OptionFloat`。  
+    > `OptionPageGrid`現在名為"My Category"類別目錄包含兩個屬性，`OptionInteger`和`OptionFloat`。  
   
-4.  新增<xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute>至`MyToolsOptionsPackage`類別並為它提供類別名稱"My Category"，讓它 ObjectName"My Settings"，再 isToolsOptionPage 設為 true。 設定 categoryResourceID、 objectNameResourceID 和 DescriptionResourceID 對應識別碼稍早建立的字串資源。  
+4. 新增<xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute>至`MyToolsOptionsPackage`類別並為它提供類別名稱"My Category"，讓它 ObjectName"My Settings"，再 isToolsOptionPage 設為 true。 設定 categoryResourceID、 objectNameResourceID 和 DescriptionResourceID 對應識別碼稍早建立的字串資源。  
   
     ```csharp  
     [ProvideProfileAttribute(typeof(OptionPageGrid),   
         "My Category", "My Settings", 106, 107, isToolsOptionPage:true, DescriptionResourceID = 108)]  
     ```  
   
-5.  建置此專案並開始偵錯。 在實驗執行個體您應該會看到**我的格線頁**現在有整數和浮點數的值。  
+5. 建置此專案並開始偵錯。 在實驗執行個體您應該會看到**我的格線頁**現在有整數和浮點數的值。  
   
 ## <a name="examining-the-settings-file"></a>檢查設定檔  
  在本節中，您可以匯出屬性類別目錄值設定檔。 您檢查檔案，並再將值匯入回屬性類別目錄。  
   
-1.  按 f5 鍵，以偵錯模式中啟動專案。 這會啟動實驗執行個體。  
+1. 按 f5 鍵，以偵錯模式中啟動專案。 這會啟動實驗執行個體。  
   
-2.  開啟**工具 / 選項**對話方塊。  
+2. 開啟**工具 / 選項**對話方塊。  
   
-3.  在樹狀檢視中的左窗格中，依序展開**My Category** ，然後按一下**我的格線頁**。  
+3. 在樹狀檢視中的左窗格中，依序展開**My Category** ，然後按一下**我的格線頁**。  
   
-4.  值變更**OptionFloat** 3.1416 到並**OptionInteger**到 12。 按一下 [確定 **Deploying Office Solutions**]。  
+4. 值變更**OptionFloat** 3.1416 到並**OptionInteger**到 12。 按一下 [確定] 。  
   
-5.  在 **工具**功能表上，按一下**匯入和匯出設定**。  
+5. 按一下 [工具] 功能表上的 [匯入和匯出設定]。  
   
      **匯入和匯出設定** 精靈隨即出現。  
   
-6.  請確定**匯出選取的環境設定**已選取，然後按一下**下一步**。  
+6. 請確定**匯出選取的環境設定**已選取，然後按一下**下一步**。  
   
      **選擇要匯出的設定**頁面隨即出現。  
   
-7.  按一下 **我的設定**。  
+7. 按一下 **我的設定**。  
   
      **描述**變更為**OptionInteger 和 OptionFloat**。  
   
-8.  請確定**My Settings**是唯一的類別，已選取，然後按一下**下一步**。  
+8. 請確定**My Settings**是唯一的類別，已選取，然後按一下**下一步**。  
   
      **名稱設定檔案**頁面隨即出現。  
   
@@ -143,7 +138,7 @@ ms.locfileid: "51730353"
   
 11. 關閉 設定檔，而不變更它。  
   
-12. 在上**工具**] 功能表中，按一下**選項**，展開**My Category**，按一下 [**我的格線頁**然後再將值變更**OptionFloat**為 1.0 和**OptionInteger**為 1。 按一下 [確定 **Deploying Office Solutions**]。  
+12. 在上**工具**] 功能表中，按一下**選項**，展開**My Category**，按一下 [**我的格線頁**然後再將值變更**OptionFloat**為 1.0 和**OptionInteger**為 1。 按一下 [確定] 。  
   
 13. 在上**工具** 功能表中，按一下**匯入和匯出設定**，選取**匯入選取的環境設定**，然後按一下**下一步**。  
   
@@ -160,4 +155,3 @@ ms.locfileid: "51730353"
 16. 請確定**My Settings**已選取，然後按一下**完成**。 當**匯入完整** 頁面出現時，按一下**關閉**。  
   
 17. 上**工具**功能表上，按一下**選項**，展開**My Category**，按一下 **我的格線頁**並確認屬性類別目錄值具有已還原。
-

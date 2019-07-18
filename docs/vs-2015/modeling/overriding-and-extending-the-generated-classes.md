@@ -1,25 +1,22 @@
 ---
 title: 覆寫及擴充產生的類別 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, providing overridable classes
 ms.assetid: 30baa60d-a8ea-4611-96c1-8fcc3317cf21
 caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: a5aef90403babfd7a30812cac59b8c0c5acff79f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: a7b9733a47b4763a0f28ee4b24b54fdfd44bf066
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49933426"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435009"
 ---
 # <a name="overriding-and-extending-the-generated-classes"></a>覆寫及擴充產生的類別
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +46,7 @@ ms.locfileid: "49933426"
  `} }`  
   
 > [!NOTE]
->  若要覆寫產生的類別中的方法，一律從產生的檔案分隔的檔案中撰寫程式碼。 一般而言，該檔案包含在名為 CustomCode 資料夾中。 如果您變更產生的程式碼時，它們將會遺失的情況，當您重新產生的 DSL 定義中的程式碼。  
+> 若要覆寫產生的類別中的方法，一律從產生的檔案分隔的檔案中撰寫程式碼。 一般而言，該檔案包含在名為 CustomCode 資料夾中。 如果您變更產生的程式碼時，它們將會遺失的情況，當您重新產生的 DSL 定義中的程式碼。  
   
  若要探索您可以覆寫哪些方法，請輸入**覆寫**在類別中後, 接空格。 IntelliSense 工具提示會告訴您哪些方法可以覆寫。  
   
@@ -91,9 +88,6 @@ ms.locfileid: "49933426"
 ### <a name="net-events"></a>.NET 事件  
  您可以在圖形上的某些事件訂閱。 例如，您可以接聽的圖形上的滑鼠點選。 您不必撰寫程式碼，每個物件的事件訂閱。 此程式碼可以寫入 InitializeInstanceResources() 覆寫中。  
   
- 某些事件會產生 ShapeFields，用來繪製圖形上的裝飾項目。 如需範例，請參閱[如何： 攔截圖案或 Decorator 上](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md)。  
+ 某些事件會產生 ShapeFields，用來繪製圖形上的裝飾項目。 如需範例，請參閱[如何：攔截圖案或 Decorator 上](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md)。  
   
  通常，這些事件不會發生於在交易內。 如果您想要在存放區中進行變更，您應該建立交易。
-
-
-

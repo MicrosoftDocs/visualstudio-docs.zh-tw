@@ -1,26 +1,21 @@
 ---
 title: Getting Started with 語言服務及編輯器擴充功能 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - extensions
 ms.assetid: 6b151891-c06d-40b1-9867-42298caa8492
 caps.latest.revision: 22
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: f09056d184256e2d62387af08c61186c6ff57c02
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 4c4278679cabb72e9d06f79c1668e7546f24194d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51735217"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65703752"
 ---
 # <a name="getting-started-with-language-service-and-editor-extensions"></a>開始使用語言服務及編輯器延伸模組
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,18 +25,18 @@ ms.locfileid: "51735217"
  若要開始撰寫編輯器延伸模組，使用已安裝 Visual Studio SDK 的一部分的編輯器專案範本。 Visual Studio SDK 是可下載的工具，可讓您更輕鬆地使用 Vspackage，或使用 Managed Extensibility Framework (MEF) 開發 Visual Studio 擴充功能，一組。  
   
 > [!NOTE]
->  如需有關 Visual Studio SDK 的詳細資訊，請參閱[Visual Studio SDK](../extensibility/visual-studio-sdk.md)。  
+> 如需有關 Visual Studio SDK 的詳細資訊，請參閱[Visual Studio SDK](../extensibility/visual-studio-sdk.md)。  
   
  我們建議您先了解下列概念和技術撰寫您自己的編輯器延伸模組之前。  
   
 ## <a name="the-windows-presentation-foundation-wpf-and-editor-extensions"></a>Windows Presentation Foundation (WPF) 及編輯器擴充功能  
- Visual Studio 編輯器使用者介面 (UI) 是使用 Windows Presentation Foundation (WPF) 來實作。 WPF 提供豐富的視覺效果和一致的程式設計模型與商務邏輯分隔的視覺效果，程式碼。 當您建立編輯器延伸模組時，您可以使用許多 WPF 項目和功能。 如需詳細資訊，請參閱 < [Windows Presentation Foundation](http://msdn.microsoft.com/library/f667bd15-2134-41e9-b4af-5ced6fafab5d)。  
+ Visual Studio 編輯器使用者介面 (UI) 是使用 Windows Presentation Foundation (WPF) 來實作。 WPF 提供豐富的視覺效果和一致的程式設計模型與商務邏輯分隔的視覺效果，程式碼。 當您建立編輯器延伸模組時，您可以使用許多 WPF 項目和功能。 如需詳細資訊，請參閱 < [Windows Presentation Foundation](https://msdn.microsoft.com/library/f667bd15-2134-41e9-b4af-5ced6fafab5d)。  
   
 ## <a name="the-managed-extensibility-framework-mef-and-editor-extensions"></a>Managed 的 Extensibility Framework (MEF) 及編輯器擴充功能  
  Visual Studio 編輯器會使用 Managed Extensibility Framework (MEF) 來管理其元件和延伸模組。 MEF 也可讓開發人員輕鬆地建立主應用程式，例如 Visual Studio 的擴充功能。 在此架構中，您可以定義根據 MEF 合約的延伸模組，並將它匯出為 MEF 元件組件。 主應用程式管理之元件部分，找到這些物件、 註冊，並確保它們會套用至正確的內容。  
   
 > [!NOTE]
->  如需在編輯器中的 MEF 的詳細資訊，請參閱[編輯器中的 Managed Extensibility Framework](../extensibility/managed-extensibility-framework-in-the-editor.md)。  
+> 如需在編輯器中的 MEF 的詳細資訊，請參閱[編輯器中的 Managed Extensibility Framework](../extensibility/managed-extensibility-framework-in-the-editor.md)。  
   
 ## <a name="visual-studio-editor-extension-points-and-extensions"></a>Visual Studio 編輯器擴充點以及擴充功能  
  編輯器擴充點的 MEF 元件部分，您可以自訂及擴充。 在某些情況下您會藉由實作介面，並將它匯出加上正確的中繼資料擴充擴充點。 在其他情況下，只是宣告的擴充功能，並將它匯出為特定類型。  
@@ -66,12 +61,12 @@ ms.locfileid: "51735217"
  當您在電腦上安裝擴充功能時，請在資料夾的子資料夾，也是以 Visual Studio 中包含的二進位檔和資訊清單。  
   
 > [!WARNING]
->  您不必擔心資訊清單和部署位置的詳細資料，如果您使用其中一個隨附於 Visual Studio 擴充性範本編輯器。 範本會包含所需登錄及部署擴充功能的所有項目。  
+> 您不必擔心資訊清單和部署位置的詳細資料，如果您使用其中一個隨附於 Visual Studio 擴充性範本編輯器。 範本會包含所需登錄及部署擴充功能的所有項目。  
   
 ## <a name="running-extensions-in-the-experimental-instance"></a>執行實驗的執行個體中的擴充功能  
  藉由部署 （在 Windows Vista 和 Windows 7） 的下列實驗性資料夾中儲存的遊戲開發擴充功能時，您可以隔離您的 Visual Studio 版本：  
   
- *%LOCALAPPDATA%* \VisualStudio\10.0Exp\Extensions\\*公司*\\*ExtensionID*  
+ *%LOCALAPPDATA%* \VisualStudio\10.0Exp\Extensions\\*Company*\\*ExtensionID*  
   
  其中 *%LOCALAPPDATA%* 的身分登入的使用者名稱*公司*是公司擁有的延伸模組的名稱並*ExtensionID*是擴充功能的識別碼。  
   
@@ -89,10 +84,9 @@ ms.locfileid: "51735217"
   
  您也可以建立編輯器的 MEF 元件從 Visual Studio 封裝擴充功能。 下列逐步解說，如需詳細資訊，請參閱：  
   
--   [逐步解說︰搭配編輯器擴充功能使用 Shell 命令](../extensibility/walkthrough-using-a-shell-command-with-an-editor-extension.md)  
+- [逐步解說：搭配編輯器延伸模組使用 Shell 命令](../extensibility/walkthrough-using-a-shell-command-with-an-editor-extension.md)  
   
--   [逐步解說︰搭配編輯器擴充功能使用快速鍵](../extensibility/walkthrough-using-a-shortcut-key-with-an-editor-extension.md)  
+- [逐步解說：在編輯器延伸模組中使用快速鍵](../extensibility/walkthrough-using-a-shortcut-key-with-an-editor-extension.md)  
   
 ## <a name="see-also"></a>另請參閱  
  [語言服務及編輯器擴充點](../extensibility/language-service-and-editor-extension-points.md)
-

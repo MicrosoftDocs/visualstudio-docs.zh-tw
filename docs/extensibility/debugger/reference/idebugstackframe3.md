@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugStackFrame3 interface
 ms.assetid: 39af2f57-0a01-42b8-b093-b7fbc61e2909
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ee9310ff6dff36e09b5d0db356659ada427dd3a1
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 0960f0f527d844afcc44947f1204db78d4d91a38
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56697399"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66352063"
 ---
 # <a name="idebugstackframe3"></a>IDebugStackFrame3
 這個介面會擴充[IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)處理攔截的例外狀況。
@@ -45,12 +45,12 @@ IDebugStackFrame3 : IDebugStackFrame2
 ## <a name="remarks"></a>備註
  攔截到例外狀況表示偵錯工具在執行階段所呼叫任何一般的例外狀況處理常式之前，可以處理例外狀況。 攔截例外狀況，基本上指的將假裝是例外狀況處理常式存在，即使沒有執行的階段。
 
-- [InterceptCurrentException](../../../extensibility/debugger/reference/idebugstackframe3-interceptcurrentexception.md)所有一般的例外狀況的回呼事件期間會呼叫 (唯一的例外是如果您正在偵錯混合模式的程式碼 （managed 和 unmanaged 程式碼），在此情況下期間無法攔截的例外狀況最後的機會獲得回呼）。 如果未實作 DE `IDebugStackFrame3`，或 DE 從 IDebugStackFrame3 傳回錯誤::`InterceptCurrentException` (這類`E_NOTIMPL`)，則偵錯工具正常處理例外狀況。
+- [InterceptCurrentException](../../../extensibility/debugger/reference/idebugstackframe3-interceptcurrentexception.md)所有一般的例外狀況的回呼事件期間會呼叫 (唯一的例外是如果您在偵錯混合模式的程式碼 （managed 和 unmanaged 程式碼），在此情況下期間無法攔截的例外狀況最後的機會獲得回呼）。 如果不實作 DE `IDebugStackFrame3`，或從 IDebugStackFrame3 DE 會傳回的錯誤::`InterceptCurrentException` (例如`E_NOTIMPL`)，則偵錯工具正常處理例外狀況。
 
  攔截例外狀況，偵錯工具可以允許使用者變更正在進行偵錯程式的狀態，然後繼續執行擲回的例外狀況之處。
 
 > [!NOTE]
->  攔截的例外狀況允許只在 managed 程式碼，也就是在 Common Language Runtime (CLR) 中執行的程式中。
+> 攔截的例外狀況允許只在 managed 程式碼，也就是在 Common Language Runtime (CLR) 中執行的程式中。
 
  偵錯引擎表示其支援攔截的例外狀況，方法是設定 「 metricExceptions"設為 1 的值在執行階段使用`SetMetric`函式。 如需詳細資訊，請參閱 <<c0> [ 進行偵錯的 SDK 協助程式](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)。
 

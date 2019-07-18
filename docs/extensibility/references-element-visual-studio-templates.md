@@ -9,17 +9,17 @@ helpviewer_keywords:
 - <References> element [Visual Studio Templates]
 - References element [Visual Studio Templates]
 ms.assetid: 1969146d-46bf-422d-8d46-0e9493925003
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3ae0ee308af1502a7c07766e790b79e51f692a96
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: e2ab5c3decc201958bd939a0a9d66dd65a5ef1c6
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56691055"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66334414"
 ---
 # <a name="references-element-visual-studio-templates"></a>References 項目 （Visual Studio 範本）
 群組的範本加入至專案的組件參考。

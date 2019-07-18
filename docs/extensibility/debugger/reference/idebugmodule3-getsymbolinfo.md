@@ -8,17 +8,20 @@ helpviewer_keywords:
 - GetSymbolInfo method
 - IDebugModule3::GetSymbolInfo method
 ms.assetid: dda5e8e1-6878-4aa9-9ee4-e7d0dcc11210
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c5fedebe6a8e411e09b527841bd0ded3854749ae
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: bd952242db8b7394fa8915319686ac431b84947d
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56717438"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66323942"
 ---
 # <a name="idebugmodule3getsymbolinfo"></a>IDebugModule3::GetSymbolInfo
 擷取符號，以及每個路徑中搜尋結果中搜尋的路徑的清單。
@@ -39,14 +42,12 @@ int GetSymbolInfo(
 );
 ```
 
-#### <a name="parameters"></a>參數
-`dwFields`
+## <a name="parameters"></a>參數
+`dwFields`\
+[in]從旗標的組合[SYMBOL_SEARCH_INFO_FIELDS](../../../extensibility/debugger/reference/symbol-search-info-fields.md)列舉型別指定的哪些欄位`pInfo`是要填入。
 
- [in]從旗標的組合[SYMBOL_SEARCH_INFO_FIELDS](../../../extensibility/debugger/reference/symbol-search-info-fields.md)列舉型別指定的哪些欄位`pInfo`是要填入。
-
-`pInfo`
-
- [out]A [MODULE_SYMBOL_SEARCH_INFO](../../../extensibility/debugger/reference/module-symbol-search-info.md)其成員的指定資訊填入的結構。 如果這會是 null 值，則這個方法會傳回`E_INVALIDARG`。
+`pInfo`\
+[out]A [MODULE_SYMBOL_SEARCH_INFO](../../../extensibility/debugger/reference/module-symbol-search-info.md)其成員的指定資訊填入的結構。 如果這會是 null 值，則這個方法會傳回`E_INVALIDARG`。
 
 ## <a name="return-value"></a>傳回值
 如果方法成功，它會傳回`S_OK`; 否則它會傳回錯誤碼。
@@ -84,8 +85,8 @@ void ShowSymbolSearchResults(IDebugModule3 *pIDebugModule3)
 ```
 
 **c:\symbols\user32.pdb...找不到的檔案。** 
- **c:\winnt\symbols\user32.pdb...版本不符。** 
- ** \\\symbols\symbols\user32.dll\0a8sd0ad8ad\user32.pdb...載入符號。**
+**c:\winnt\symbols\user32.pdb...版本不符。** 
+ **\\\symbols\symbols\user32.dll\0a8sd0ad8ad\user32.pdb...載入符號。**
 
 ## <a name="see-also"></a>另請參閱
 

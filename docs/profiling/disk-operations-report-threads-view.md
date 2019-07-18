@@ -12,35 +12,35 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c890ac9dbd3b542a400fc2a5b6db7ee2eb8f5db2
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 69cbef53bcca74cceba4f9409b578fca45a58806
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56613852"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62970066"
 ---
 # <a name="disk-operations-report-threads-view"></a>磁碟作業報告 (執行緒檢視)
 磁碟作業報告顯示磁碟通道中的磁碟 I/O 作業。
 
  代表在目前可見的時間範圍中正在進行程式碼剖析的處理序所發生每次磁碟存取，都會報告這項資訊︰
 
--   執行磁碟存取之處理序的名稱和 PID
+- 執行磁碟存取之處理序的名稱和 PID
 
--   存取磁碟的執行緒識別碼
+- 存取磁碟的執行緒識別碼
 
--   已存取的檔案名稱
+- 已存取的檔案名稱
 
--   每個檔案的讀取次數
+- 每個檔案的讀取次數
 
--   讀取的位元組數目
+- 讀取的位元組數目
 
--   讀取延遲 (以毫秒為單位)
+- 讀取延遲 (以毫秒為單位)
 
--   寫入次數
+- 寫入次數
 
--   寫入的位元組數目
+- 寫入的位元組數目
 
--   寫入延遲 (以毫秒為單位)
+- 寫入延遲 (以毫秒為單位)
 
 ## <a name="see-also"></a>另請參閱
 - [執行緒檢視](../profiling/threads-view-parallel-performance.md)

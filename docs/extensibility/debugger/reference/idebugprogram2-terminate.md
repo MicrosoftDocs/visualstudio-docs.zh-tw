@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgram2::Terminate
 ms.assetid: 4d3127d3-b1e9-4b28-ac22-2f2eea255f86
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9b80afe3f0061e016301b86229f2eacedf217a43
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 16a6d60173090642bda7d8fd940ecf0699e1d7ec
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56709300"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66331502"
 ---
 # <a name="idebugprogram2terminate"></a>IDebugProgram2::Terminate
 終止程式。

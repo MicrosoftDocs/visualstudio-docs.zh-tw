@@ -5,21 +5,21 @@ ms.topic: reference
 helpviewer_keywords:
 - IDebugFunctionObject2 interface
 ms.assetid: 56b2fdff-146d-4138-a34c-59a9c65a3ddd
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3df17c9b52a7660da20cb036ad4aad702e86d931
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: e231029fb37607464f5e183d531cad9ee5004a73
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56690717"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66313383"
 ---
 # <a name="idebugfunctionobject2"></a>IDebugFunctionObject2
 > [!IMPORTANT]
->  在 Visual Studio 2015 中，這種實作運算式評估工具已被取代。 如需實作 CLR 運算式評估工具的資訊，請參閱[CLR 運算式評估工具](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)並[Managed 運算式評估工具範例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。
+> 在 Visual Studio 2015 中，這種實作運算式評估工具已被取代。 如需實作 CLR 運算式評估工具的資訊，請參閱[CLR 運算式評估工具](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)並[Managed 運算式評估工具範例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。
 
  表示函式，並增強[IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md)介面。
 
@@ -35,11 +35,11 @@ IDebugFunctionObject2 : IUnknown
 ## <a name="notes-for-callers"></a>呼叫端資訊
  這個介面的方法，延後的**IDebugFunctionObject**如下：
 
--   **IDebugEvaluate**方法會採用旗標。
+- **IDebugEvaluate**方法會採用旗標。
 
--   **CreateObject**方法會採用旗標和逾時。
+- **CreateObject**方法會採用旗標和逾時。
 
--   **CreateStringObjectWithLength**方法會採用的長度。
+- **CreateStringObjectWithLength**方法會採用的長度。
 
 ## <a name="methods"></a>方法
  這個介面會實作下列方法：

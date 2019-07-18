@@ -19,23 +19,22 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e302480ea199835d52266d7b6f666a43ad529900
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 139d52963cfbb332fa084840c665efd3aeb8e88f
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54766082"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59648404"
 ---
 # <a name="makedir-task"></a>MakeDir 工作
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 建立目錄，以及任何父目錄 (如有必要)。  
   
 ## <a name="parameters"></a>參數  
  下表說明 `MakeDir` 工作的參數。  
   
-|參數|描述|  
+|參數|說明|  
 |---------------|-----------------|  
 |`Directories`|必要的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 要建立的目錄集合。|  
 |`DirectoriesCreated`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 輸出參數。<br /><br /> 這項工作所建立的目錄。 如果無法建立某些目錄，就可能未包含所有已傳入 `Directories` 參數的項目。|  

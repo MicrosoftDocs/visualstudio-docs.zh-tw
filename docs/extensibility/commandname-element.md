@@ -6,17 +6,17 @@ helpviewer_keywords:
 - CommandName element (VSCT XML schema)
 - VSCT XML schema elements, CommandName
 ms.assetid: a338b767-aa7e-4536-9908-e19a50ab60ac
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cc67cc9e50c73e5ab3c8579be8833648a01079c4
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 4b792e7bbe1efaa1158cc517cd96494049e2b9e2
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56681123"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66337261"
 ---
 # <a name="commandname-element"></a>CommandName 元素
 `CommandName`項目會指定在的 鍵盤 類別中所顯示的文字**選項** 對話方塊中，然後在**命令**清單中**自訂**對話方塊方塊。

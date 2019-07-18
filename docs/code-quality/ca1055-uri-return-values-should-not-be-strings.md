@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 5391c940cc6d9eef7a6541a855541bb05f60d1b2
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 4517fc0d0dbfedc59a5a621f894d7e1d77b35c38
+ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57867783"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65842176"
 ---
 # <a name="ca1055-uri-return-values-should-not-be-strings"></a>CA1055:URI 傳回值不應該為字串
 
@@ -56,7 +56,7 @@ ms.locfileid: "57867783"
 
 如果您執行這項規則，從[FxCop 分析器](install-fxcop-analyzers.md)（而不是透過靜態程式碼分析），您可以設定的哪些部分您程式碼基底上執行這項規則，根據其存取範圍。 比方說，若要指定執行規則時，應該只針對非公用 API 介面，將下列索引鍵 / 值組新增至專案中的.editorconfig 檔案：
 
-```
+```ini
 dotnet_code_quality.ca1055.api_surface = private, internal
 ```
 

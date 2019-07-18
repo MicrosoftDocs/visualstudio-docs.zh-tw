@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: ef4f8974f448ad9e2e81d4f1ba98aa02ed9da354
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: 0a875ea2690a2932a10ff3a16364dd9d362a7642
+ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58194599"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "67328848"
 ---
 # <a name="c-intellisense"></a>C# IntelliSense
 
@@ -78,7 +78,7 @@ IntelliSense 會利用篩選條件，將不必要的成員從完成名單中移�
 
 ### <a name="most-recently-used-members"></a>最近使用的成員
 
-IntelliSense 會記住您最近在 [[列出成員]](../ide/using-intellisense.md) 快顯方塊中選取的成員，自動完成物件名稱。 下次使用 [成員清單] 時，最近使用過的成員就會顯示在頂端。 會在每個 Visual Studio 工作階段之間，清除最近使用過的成員記錄。
+IntelliSense 會記住您最近在 [[列出成員]](../ide/using-intellisense.md) 快顯方塊中選取的成員，自動完成物件名稱。 下次使用 [成員清單]  時，最近使用過的成員就會顯示在頂端。 會在每個 Visual Studio 工作階段之間，清除最近使用過的成員記錄。
 
 ### <a name="override"></a>override
 
@@ -86,7 +86,7 @@ IntelliSense 會記住您最近在 [[列出成員]](../ide/using-intellisense.md
 
 ### <a name="ai-enhanced-intellisense"></a>由 AI 增強的 IntelliSense
 
-您可以安裝適用於 Visual Studio 的實驗性 [IntelliCode 延伸模組](/visualstudio/intellicode/intellicode-visual-studio)，它提供由人工智慧增強的 IntelliSense 自動完成清單。 此延伸模組可預測要使用哪個最可能正確的 API，而不僅僅是按字母順序排列來呈現成員清單。 它會使用您目前的程式碼內容和模式，以提供動態清單。
+[Visual Studio IntelliCode](/visualstudio/intellicode/intellicode-visual-studio) 提供由人工智慧增強的 IntelliSense 自動完成清單。 IntelliCode 可預測要使用哪個最可能正確的 API，而不僅僅是按字母順序排列來呈現成員清單。 它會使用您目前的程式碼內容和模式，以提供動態清單。
 
 ## <a name="automatic-code-generation"></a>自動產生程式碼
 
@@ -94,39 +94,39 @@ IntelliSense 會記住您最近在 [[列出成員]](../ide/using-intellisense.md
 
 **加入 using** IntelliSense 作業會自動將必要的 `using` 指示詞新增至程式碼檔案。 此功能可讓您專注在自己所撰寫的程式碼上，而不需要將焦點轉移到其他部分的程式碼。
 
-若要起始**新增 using** 作業，請將游標放在無法解析的類型參考上。 例如，當您建立主控台應用程式，然後將 `XmlReader` 新增至 `Main` 方法主體時，該行程式碼就會出現紅色波浪線，因為無法解析類型參考。 您可以接著透過 [快速動作] 叫用**新增 using**。 只有當游標停在未繫結的類型上時，才會顯示 [快速動作]。
+若要起始**新增 using** 作業，請將游標放在無法解析的類型參考上。 例如，當您建立主控台應用程式，然後將 `XmlReader` 新增至 `Main` 方法主體時，該行程式碼就會出現紅色波浪線，因為無法解析類型參考。 您可以接著透過 [快速動作]  叫用**新增 using**。 只有當游標停在未繫結的類型上時，才會顯示 [快速動作]  。
 
 ![新增 using，快速動作展開的影像](../ide/media/addusing-quickaction.png)
 
-按一下錯誤燈泡圖示，然後選擇 [using System.Xml;] 自動新增 using 指示詞。
+按一下錯誤燈泡圖示，然後選擇 [using System.Xml;]  自動新增 using 指示詞。
 
 ### <a name="remove-and-sort-usings"></a>移除和排序 Using
 
-[移除和排序 Using] 選項會排序並移除 `using` 和 `extern` 宣告，但不變更原始程式碼的行為。 不必要且缺乏組織的 `using` 指示詞會使原始程式碼隨著時間而變得繁雜難以閱讀。 [移除和排序 Using] 選項可移除未使用的 `using` 指示詞來精簡原始程式碼，並加以排序來改善可讀性。 在 [編輯] 功能表上，選擇 [IntelliSense]，然後選擇 [組合管理 Using]。
+[移除和排序 Using]  選項會排序並移除 `using` 和 `extern` 宣告，但不變更原始程式碼的行為。 不必要且缺乏組織的 `using` 指示詞會使原始程式碼隨著時間而變得繁雜難以閱讀。 [移除和排序 Using]  選項可移除未使用的 `using` 指示詞來精簡原始程式碼，並加以排序來改善可讀性。 在 [編輯]  功能表上，選擇 [IntelliSense]  ，然後選擇 [組合管理 Using]  。
 
 ### <a name="implement-interface"></a>實作介面
 
-在程式碼編輯器中工作時，IntelliSense 可提供協助您實作[介面](/dotnet/csharp/language-reference/keywords/interface)的選項。 一般來說，若要正確地實作介面，必須為類別中介面的每位成員建立方法宣告。 使用 IntelliSense 會在您於類別宣告中鍵入介面名稱後，顯示 [快速動作] 燈泡。 您可利用燈泡，選擇要使用明確或隱含命名的方式進行自動實作介面。 在明確命名下，方法宣告會帶有介面的名稱。 在隱含命名下，方法宣告不會指出其所屬介面。 明確命名的介面方法只可透過介面執行個體而不是透過類別執行個體加以存取。 如需詳細資訊，請參閱[明確介面實作](/dotnet/csharp/programming-guide/interfaces/explicit-interface-implementation)。
+在程式碼編輯器中工作時，IntelliSense 可提供協助您實作[介面](/dotnet/csharp/language-reference/keywords/interface)的選項。 一般來說，若要正確地實作介面，必須為類別中介面的每位成員建立方法宣告。 使用 IntelliSense 會在您於類別宣告中鍵入介面名稱後，顯示 [快速動作]  燈泡。 您可利用燈泡，選擇要使用明確或隱含命名的方式進行自動實作介面。 在明確命名下，方法宣告會帶有介面的名稱。 在隱含命名下，方法宣告不會指出其所屬介面。 明確命名的介面方法只可透過介面執行個體而不是透過類別執行個體加以存取。 如需詳細資訊，請參閱[明確介面實作](/dotnet/csharp/programming-guide/interfaces/explicit-interface-implementation)。
 
 實作介面將會產生滿足介面所需之方法虛設常式的數目下限。 如果基底類別實作部分的介面，則不會重新產生那些虛設常式。
 
 ### <a name="implement-abstract-base-class"></a>實作抽象基底類別
 
-在使用程式碼編輯器時，IntelliSense 提供您可自動實作抽象基底類別成員的選項。 一般而言，實作抽象基底類別的成員需要針對衍生類別中抽象基底類別的每個方法建立新的方法定義。 使用 IntelliSense，在類別宣告中輸入抽象基底類別的名稱後，就會顯示 [快速動作] 燈泡。 燈泡提供您自動實作基底類別方法的選項。
+在使用程式碼編輯器時，IntelliSense 提供您可自動實作抽象基底類別成員的選項。 一般而言，實作抽象基底類別的成員需要針對衍生類別中抽象基底類別的每個方法建立新的方法定義。 使用 IntelliSense，在類別宣告中輸入抽象基底類別的名稱後，就會顯示 [快速動作]  燈泡。 燈泡提供您自動實作基底類別方法的選項。
 
-[實作抽象基底類別] 功能所產生的方法虛設常式是由定義在 *MethodStub.snippet* 檔案中的程式碼片段所模式化。 程式碼片段是可以修改的。 如需詳細資訊，請參閱[逐步解說：建立程式碼片段](../ide/walkthrough-creating-a-code-snippet.md)。
+[實作抽象基底類別]  功能所產生的方法虛設常式是由定義在 *MethodStub.snippet* 檔案中的程式碼片段所模式化。 程式碼片段是可以修改的。 如需詳細資訊，請參閱[逐步解說：建立程式碼片段](../ide/walkthrough-creating-a-code-snippet.md)。
 
 ### <a name="generate-from-usage"></a>使用時產生
 
-[使用時產生] 功能可讓您直接使用類別和成員，而不需要先行定義。 您可以為任何想要使用但尚未定義的類別、建構函式、方法、屬性、欄位或列舉，產生虛設常式。 您可以產生新類型和成員，不用離開目前在程式碼中的位置。 這可將對工作流程的干擾降至最低。
+[使用時產生]  功能可讓您直接使用類別和成員，而不需要先行定義。 您可以為任何想要使用但尚未定義的類別、建構函式、方法、屬性、欄位或列舉，產生虛設常式。 您可以產生新類型和成員，不用離開目前在程式碼中的位置。 這可將對工作流程的干擾降至最低。
 
 每個未定義的識別碼下都會顯示紅色波浪底線。 當您將滑鼠指標放在識別碼時，工具提示中就會出現錯誤訊息。 若要顯示適當的選項，您可以使用下列其中一項程序：
 
-- 按一下未定義的識別碼。 [快速動作] 錯誤燈泡會出現在識別碼下。 按一下錯誤燈泡。
+- 按一下未定義的識別碼。 [快速動作]  錯誤燈泡會出現在識別碼下。 按一下錯誤燈泡。
 
-- 按一下未定義的識別碼，然後按 **Ctrl**+**.** (**Ctrl** + 句號)。
+- 按一下未定義的識別碼，然後按 **Ctrl**+ **.** (**Ctrl** + 句號)。
 
-- 以滑鼠右鍵按一下未定義的識別碼，然後按一下 [快速動作及重構]。
+- 以滑鼠右鍵按一下未定義的識別碼，然後按一下 [快速動作及重構]  。
 
 顯示的選項包括：
 
@@ -158,7 +158,7 @@ IntelliSense 會記住您最近在 [[列出成員]](../ide/using-intellisense.md
 如果按 **Tab** 鍵，IntelliSense 就會虛設出有正確簽章的方法，並將資料指標放在事件處理常式的主體中。
 
 > [!NOTE]
-> 使用 [檢視] 功能表上的 [向後巡覽] 命令 (**Ctrl**+**-**)，返回事件連結陳述式。
+> 使用 [檢視]  功能表上的 [向後巡覽]  命令 (**Ctrl**+ **-** )，返回事件連結陳述式。
 
 ## <a name="see-also"></a>另請參閱
 

@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 0726ddf0bb0798a5f989e902662ee5b4e26c6801
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: f0bd256f293cefc037a8950bdecd3615fad483f3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58152586"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62819560"
 ---
 # <a name="develop-apps-for-the-universal-windows-platform-uwp"></a>開發適用於通用 Windows 平台 (UWP) 的應用程式
 
@@ -38,11 +38,25 @@ ms.locfileid: "58152586"
 
 以下是您需要的軟體清單：
 
+::: moniker range="vs-2017"
+
 - [Windows 10](http://windows.microsoft.com/windows/downloads)。 Visual Studio 2017 只支援在 Windows 10 上開發 UWP。 如需詳細資料，請參閱 Visual Studio 的[平台目標](/visualstudio/productinfo/vs2017-compatibility-vs)和[系統需求](/visualstudio/productinfo/vs2017-system-requirements-vs)。
 
-- [Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017)。 您也需要選用的通用 Windows 平台開發工作負載。
+- [Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)。 您也需要選用的通用 Windows 平台開發工作負載。
 
      ![UWP 工作負載](media/uwp_workload.png)
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+- [Windows 10](http://windows.microsoft.com/windows/downloads)。 Visual Studio 2019 只支援在 Windows 10 上開發 UWP。 如需詳細資料，請參閱 Visual Studio 的[平台目標](/visualstudio/releases/2019/compatibility/)和[系統需求](/visualstudio/releases/2019/system-requirements/)。
+
+- [Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019)。 您也需要選用的通用 Windows 平台開發工作負載。
+
+     ![UWP 工作負載](media/uwp_workload.png)
+
+::: moniker-end
 
 安裝這個軟體之後，您需要啟用 Windows 10 裝置以進行開發。 請參閱[啟用您的裝置以用於開發](/windows/uwp/get-started/enable-your-device-for-development)。 您不再需要取得每部 Windows 10 裝置的開發人員授權。
 

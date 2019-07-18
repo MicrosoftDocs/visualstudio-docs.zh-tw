@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugAddresses interface
 ms.assetid: 5f6f6751-e6d8-4c5a-8e81-414b6e5d8cc5
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ac02ca2f22b95b35cc12a545debf081c4052d520
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 0f7871a223695632b5c2118377c9cfeb24d297e4
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56702664"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66329914"
 ---
 # <a name="ienumdebugaddresses"></a>IEnumDebugAddresses
 此介面代表實作的物件的集合[IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)介面。

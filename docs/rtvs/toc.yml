@@ -1,68 +1,64 @@
-items:
 - name: 總覽
   items:
-  - name: 適用於 Visual Studio 的 R 工具
-    href: index.md
-  - name: 資料科學與分析應用程式工作負載
-    href: ../python/data-science-and-analytical-applications-workload.md
+    - name: 適用於 Visual Studio 的 R 工具
+      href: index.md
+    - name: 資料科學與分析應用程式工作負載
+      href: ../python/data-science-and-analytical-applications-workload.md
 - name: 快速入門
   items:
-  - name: 安裝
-    href: installing-r-tools-for-visual-studio.md
-  - name: 取得協助
-    href: getting-started-help.md
+    - name: 安裝
+      href: installing-r-tools-for-visual-studio.md
+    - name: 取得協助
+      href: getting-started-help.md
 - name: 教學課程
   items:
-  - name: 開始使用 R
-    href: getting-started-with-r.md
+    - name: 開始使用 R
+      href: getting-started-with-r.md
 - name: 範例
   href: getting-started-samples.md
 - name: 作法指南
   items:
-  - name: R 專案
-    href: r-projects-in-visual-studio.md
-    items:
-    - name: 套件管理員
-      href: r-package-manager-in-visual-studio.md
-    - name: SQL Server 整合
-      href: integrating-sql-server-with-r.md
-  - name: 編輯程式碼
-    href: editing-r-code-in-visual-studio.md
-    items:
-    - name: IntelliSense
-      href: r-intellisense.md
-    - name: 進行 Lint 檢查
-      href: linting-r-code.md
-    - name: 程式碼片段
-      href: code-snippets-for-r.md
-  - name: 工作區 (本機和遠端)
-    href: r-workspaces-in-visual-studio.md
-    items:
-    - name: 設定遠端工作區
-      href: setting-up-remote-r-workspaces.md
-    - name: 適用於 Linux 的遠端 R 服務
-      href: setting-up-remote-r-service-on-linux.md
-    - name: 使用 Docker 容器
-      href: using-docker-containers-with-r.md
-  - name: R Markdown
-    href: rmarkdown-with-r-in-visual-studio.md
-  - name: 互動 REPL
-    href: interactive-repl-for-r-in-visual-studio.md
-  - name: 視覺化資料
-    href: visualizing-data-with-r-in-visual-studio.md
-  - name: 變數總管
-    href: variable-explorer.md
-  - name: 偵錯
-    href: debugging-r-in-visual-studio.md
+    - name: R 專案
+      items:
+        - name: R 專案
+          href: r-projects-in-visual-studio.md
+        - name: 套件管理員
+          href: r-package-manager-in-visual-studio.md
+        - name: SQL Server 整合
+          href: integrating-sql-server-with-r.md
+    - name: 編輯程式碼
+      items:
+        - name: 編輯程式碼
+          href: editing-r-code-in-visual-studio.md
+        - name: IntelliSense
+          href: r-intellisense.md
+        - name: 進行 Lint 檢查
+          href: linting-r-code.md
+        - name: 程式碼片段
+          href: code-snippets-for-r.md
+    - name: 工作區 (本機和遠端)
+      items:
+        - name: 工作區 (本機和遠端)
+          href: r-workspaces-in-visual-studio.md
+        - name: 設定遠端工作區
+          href: setting-up-remote-r-workspaces.md
+        - name: 適用於 Linux 的遠端 R 服務
+          href: setting-up-remote-r-service-on-linux.md
+        - name: 使用 Docker 容器
+          href: using-docker-containers-with-r.md
+    - name: R Markdown
+      href: rmarkdown-with-r-in-visual-studio.md
+    - name: 互動 REPL
+      href: interactive-repl-for-r-in-visual-studio.md
+    - name: 視覺化資料
+      href: visualizing-data-with-r-in-visual-studio.md
+    - name: 變數總管
+      href: variable-explorer.md
+    - name: 偵錯
+      href: debugging-r-in-visual-studio.md
 - name: 參考資料
   items:
-  - name: 選項
-    href: options-for-r-tools-in-visual-studio.md
-  - name: 常見問題集
-    href: faq.md
-ms.openlocfilehash: 7f8a7815b97ebcf590e4acc0acb219854212b131
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
-ms.translationtype: HT
-ms.contentlocale: zh-TW
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57323889"
+    - name: 選項
+      href: options-for-r-tools-in-visual-studio.md
+    - name: 常見問題集
+      href: faq.md

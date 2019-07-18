@@ -12,21 +12,20 @@ caps.latest.revision: 30
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a7ab53b2f8918760fcfccdf6086073b0c808b80b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: c88288a7bed453ca14e9c14fd43706b97be04044
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54771975"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430838"
 ---
 # <a name="obtaining-build-logs-with-msbuild"></a>使用 MSBuild 取得組建記錄檔
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 將 MSBuild 與參數搭配使用，您可以指定想要檢閱的組建資料量，以及是否要將組建資料儲存至一或多個檔案。 您也可以指定自訂記錄器來收集組建資料。 如需本主題未涵蓋的 MSBuild 命令列參數相關資訊，請參閱[命令列參考](../msbuild/msbuild-command-line-reference.md)。  
   
 > [!NOTE]
->  如果您使用 Visual Studio IDE 來建置專案，就能藉由檢視建置記錄檔來進行這些組建的疑難排解。 如需詳細資訊，請參閱[如何：檢閱、儲存和設定建置記錄檔](../ide/how-to-view-save-and-configure-build-log-files.md)。  
+> 如果您使用 Visual Studio IDE 來建置專案，就能藉由檢視建置記錄檔來進行這些組建的疑難排解。 如需詳細資訊，請參閱[如何：檢視、 儲存和設定組建記錄檔](../ide/how-to-view-save-and-configure-build-log-files.md)。  
   
 ## <a name="setting-the-level-of-detail"></a>設定詳細層級  
  當您使用 MSBuild 來建置專案，但未指定詳細資料層級時，即會在輸出記錄檔中顯示下列資訊：  
@@ -77,7 +76,7 @@ msbuild MyProject.proj /t:go /fl1 /fl2 /fl3 /flp2:logfile=JustErrors.log;errorso
   
  在 MSBuild 命令列中，您會使用 **/logger** 參數來指定自訂記錄器。 您也可以使用 **/noconsolelogger** 參數，來停用預設的主控台記錄器。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  <xref:Microsoft.Build.Framework.LoggerVerbosity>   
  [組建記錄器](../msbuild/build-loggers.md)   
  [在多處理器環境中記錄](../msbuild/logging-in-a-multi-processor-environment.md)   

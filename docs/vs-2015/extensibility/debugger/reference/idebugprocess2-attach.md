@@ -1,14 +1,9 @@
 ---
 title: IDebugProcess2::Attach |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugProcess2::Attach
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 40d78417-fde2-45c3-96c9-16e06bd9008d
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: e2b9c3e4bfbcc9604c5fe415a169cbce0a32a98e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 4d4664f164675c445510d8976f33577684dbd1d2
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51761860"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68188107"
 ---
 # <a name="idebugprocess2attach"></a>IDebugProcess2::Attach
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -65,7 +60,7 @@ int Attach( 
 ## <a name="return-value"></a>傳回值  
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。 下表顯示其他可能的值。  
   
-|值|描述|  
+|值|說明|  
 |-----------|-----------------|  
 |`E_ATTACH_DEBUGGER_ALREADY_ATTACHED`|指定的處理序已附加偵錯工具。|  
 |`E_ATTACH_DEBUGGEE_PROCESS_SECURITY_VIOLATION`|附加程序期間，發生安全性違規。|  
@@ -79,4 +74,3 @@ int Attach( 
 ## <a name="see-also"></a>另請參閱  
  [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)   
  [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)
-

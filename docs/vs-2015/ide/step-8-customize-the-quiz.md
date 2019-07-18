@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 413a0cb2f1445f166f1a5c9e541b2a4268ff2e31
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 75bde59c6e4b61c2775f188383fc9058a6c31242
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54776081"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68178555"
 ---
 # <a name="step-8-customize-the-quiz"></a>步驟 8：自訂測驗
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,14 +23,14 @@ ms.locfileid: "54776081"
   
 ### <a name="to-customize-the-quiz"></a>自訂測驗  
   
--   測驗只剩五秒時，請將 [timeLabel] 控制項轉換為紅色，方法是設定其 [BackColor] 屬性 (`timeLabel.BackColor = Color.Red;`)。 在測驗結束時重設色彩。  
+- 測驗只剩五秒時，請將 [timeLabel]  控制項轉換為紅色，方法是設定其 [BackColor]  屬性 (`timeLabel.BackColor = Color.Red;`)。 在測驗結束時重設色彩。  
   
--   在 NumericUpDown 控制項中輸入正確答案時，播放音效來提供受測者的提示 (您必須撰寫每個控制項之 `ValueChanged()` 事件的事件處理常式，而只要受測者變更控制項的值時就會引發該事件)。  
+- 在 NumericUpDown 控制項中輸入正確答案時，播放音效來提供受測者的提示 (您必須撰寫每個控制項之 `ValueChanged()` 事件的事件處理常式，而只要受測者變更控制項的值時就會引發該事件)。  
   
 ### <a name="to-continue-or-review"></a>若要繼續或檢視  
   
--   若要下載測驗的完整版，請參閱[Complete Math Quiz tutorial sample](http://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c)(完整的數學測驗教學課程範例)。  
+- 若要下載測驗的完整版，請參閱[Complete Math Quiz tutorial sample](http://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c)(完整的數學測驗教學課程範例)。  
   
--   若要移到下一個教學課程，請參閱[教學課程 3：建立配對遊戲](../ide/tutorial-3-create-a-matching-game.md)。  
+- 若要前往下一個教學課程，請參閱[教學課程 3：建立配對遊戲](../ide/tutorial-3-create-a-matching-game.md)。  
   
--   若要回到上一個教學課程步驟，請參閱[步驟 7：新增乘法和除法問題](../ide/step-7-add-multiplication-and-division-problems.md)。
+- 若要回到上一個教學課程步驟，請參閱[步驟 7：新增乘法和除法問題](../ide/step-7-add-multiplication-and-division-problems.md)。

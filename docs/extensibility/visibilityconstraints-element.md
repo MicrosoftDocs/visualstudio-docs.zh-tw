@@ -8,17 +8,17 @@ helpviewer_keywords:
 - VSCT XML schema elements, VisibilityConstraints
 - VisibilityConstraints element (VSCT XML schema)
 ms.assetid: d6dcd314-6fe4-4693-a189-91fa026c7b34
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6c567291f2b91e092afecb264c2b2e0ca1bfd108
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: ee64b4b8ccebe6e63b5c558df68e0a5625b37884
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56702573"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66310658"
 ---
 # <a name="visibilityconstraints-element"></a>VisibilityConstraints 元素
 VisibilityConstraints 元素會決定靜態群組的命令和工具列可見。 可見性會先受到[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]沒有載入 VSPackage 的整合式的開發環境 (IDE)。
@@ -27,9 +27,9 @@ VisibilityConstraints 元素會決定靜態群組的命令和工具列可見。 
 
 ```xml
 <VisibilityConstraints>
-  <VisibilityConstraint>... </VisibilityConstraint>
-  <VisibilityConstraint>... </VisibilityConstraint>
-</VisibilityConstraint>
+  <VisibilityItem />
+  <VisibilityItem />
+</VisibilityConstraints>
 ```
 
 ## <a name="attributes-and-elements"></a>屬性和元素

@@ -7,17 +7,17 @@ helpviewer_keywords:
 - toolbox
 - windows forms
 ms.assetid: 0be6ffc1-8afd-4d02-9a5d-e27dde05fde6
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a3c423361b860c5769d9555409b44973fdc25896
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: 3887a2d54f2744504f587b848bc1395090c3904c
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58194573"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66345416"
 ---
 # <a name="create-a-windows-forms-toolbox-control"></a>建立 Windows Forms 工具箱控制項
 
@@ -35,7 +35,7 @@ Windows Forms 工具箱控制項範本建立未定義的使用者控制項，並
 
 1. 建立 VSIX 專案，名為`MyWinFormsControl`。 您可以找到在 VSIX 專案範本**新的專案**對話方塊中的，藉由搜尋 「 vsix"。
 
-2. 當專案開啟時，新增**Windows Forms 工具箱控制項**名為的項目範本`Counter`。 在 **方案總管**，以滑鼠右鍵按一下專案節點，然後選取**新增** > **新項目**。 在 **加入新項目**對話方塊中，移至**Visual C#** > **擴充性**，然後選取**Windows Forms 工具箱控制項**
+2. 當專案開啟時，新增**Windows Forms 工具箱控制項**名為的項目範本`Counter`。 在 **方案總管**，以滑鼠右鍵按一下專案節點，然後選取**新增** > **新項目**。 在 **加入新項目**對話方塊中，移至**Visual C#**  > **擴充性**，然後選取**Windows Forms 工具箱控制項**
 
 3. 這會將使用者控制項，新增`ProvideToolboxControlAttribute`<xref:Microsoft.VisualStudio.Shell.RegistrationAttribute>要放置在控制項**工具箱**，和**Microsoft.VisualStudio.ToolboxControl**資產部署的 VSIX 資訊清單中的項目。
 
@@ -141,7 +141,7 @@ Windows Forms 工具箱控制項範本建立未定義的使用者控制項，並
 
     ```
 
-8. 在類別定義正上方的 `ProvideToolboxControl` 屬性宣告中，將第一個參數的值從 `"MyWinFormsControl.Counter"` 變更為 `"General"`。 這會設定主控 [工具箱] 控制項的項目群組名稱。
+8. 在類別定義正上方的 `ProvideToolboxControl` 屬性宣告中，將第一個參數的值從 `"MyWinFormsControl.Counter"` 變更為 `"General"`。 這會設定主控 [工具箱]  控制項的項目群組名稱。
 
     下列範例會顯示 `ProvideToolboxControl` 屬性和調整過的類別定義。
 
@@ -195,7 +195,7 @@ Windows Forms 工具箱控制項範本建立未定義的使用者控制項，並
 
     **計數：0**
 
-14. 按一下 [測試] 。
+14. 按一下 [測試]  。
 
     計數器遞增和 Visual Studio 會顯示訊息方塊。
 
@@ -207,7 +207,7 @@ Windows Forms 工具箱控制項範本建立未定義的使用者控制項，並
 
     **重設**按鈕隨即再度出現。
 
-17. 按一下 [重設] 。
+17. 按一下 [重設]  。
 
     此計數器會重設為**0**。
 

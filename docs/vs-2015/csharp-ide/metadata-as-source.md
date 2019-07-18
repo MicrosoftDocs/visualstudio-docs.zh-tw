@@ -1,14 +1,9 @@
 ---
 title: 中繼資料當做原始程式碼 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 dev_langs:
 - CSharp
 helpviewer_keywords:
@@ -19,13 +14,13 @@ ms.assetid: 4945a07f-b3be-4f05-a587-fc29058aa8fa
 caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
-manager: wpickett
-ms.openlocfilehash: 8bcac8071d0cc76c29a5b9d0478727fea0b59901
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 5883708d0ed32f636c5e229147676cf1545f8a47
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49232943"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444603"
 ---
 # <a name="metadata-as-source"></a>中繼資料當做原始碼
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +28,7 @@ ms.locfileid: "49232943"
 中繼資料當做原始程式碼，可讓您檢視在唯讀緩衝區中顯示為 C# 原始程式碼的中繼資料。 這會啟用類型和成員 (不含實作) 宣告的檢視。 針對專案或解決方案不提供原始程式碼的類型或成員執行 [移至定義]  命令，就可以檢視當做原始程式碼的中繼資料。  
   
 > [!NOTE]
->  當您嘗試對標記為內部的類型或成員執行 [移至定義]  命令時，整合式的開發環境 (IDE) 不會將它們的中繼資料顯示為原始程式碼，無論參考的組件是否為 Friend 組件。  
+> 當您嘗試對標記為內部的類型或成員執行 [移至定義]  命令時，整合式的開發環境 (IDE) 不會將它們的中繼資料顯示為原始程式碼，無論參考的組件是否為 Friend 組件。  
   
  您可以在程式碼編輯器或 [程式碼定義]  視窗中檢視當做原始程式碼的中繼資料。  
   

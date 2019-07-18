@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 13dc1f44e329f35ad9871fe5969a65d4ad46e770
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: MTE95
+ms.openlocfilehash: 02bfb1b4797973b3946405c38598409bf3247c70
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55043761"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62851737"
 ---
 # <a name="deploy-uwp-apps-from-visual-studio"></a>從 Visual Studio 部署 UWP 應用程式
 
@@ -28,7 +28,7 @@ Visual Studio 部署功能建置，並註冊的目標裝置使用 Visual Studio 
 
 - 目標是遠端裝置時，Visual Studio 會將必要檔案複製至遠端電腦，並在該裝置上註冊應用程式。
 
-當您使用偵錯您的應用程式，從 Visual Studio 部署便會自動**開始偵錯**選項 (鍵盤： F5) 或**啟動但不偵錯**選項 (鍵盤： CTRL + F5)。 您也可以手動部署應用程式。 手動部署適用於下列情況：
+當您使用偵錯您的應用程式，從 Visual Studio 部署便會自動**開始偵錯**選項 (鍵盤：F5) 或**啟動但不偵錯**選項 (鍵盤：CTRL + F5）。 您也可以手動部署應用程式。 手動部署適用於下列情況：
 
 - 本機或遠端電腦上進行臨機操作測試。
 
@@ -36,18 +36,18 @@ Visual Studio 部署功能建置，並註冊的目標裝置使用 Visual Studio 
 
 - 部署應用程式，以另一個應用程式或另一種方法啟動該應用程式時，對其進行偵錯。
 
-##  <a name="BKMK_How_to_deploy_a_Windows_Store_app"></a> 如何將 UWP 應用程式部署
+## <a name="BKMK_How_to_deploy_a_Windows_Store_app"></a> 如何將 UWP 應用程式部署
  手動部署應用程式是一個簡單的流程：
 
-1.  如果您部署至遠端裝置，請在應用程式啟始專案的屬性專案頁面中指定裝置的名稱或 IP 位址。 (本主題會進一步列出這項作業的步驟)。
+1. 如果您部署至遠端裝置，請在應用程式啟始專案的屬性專案頁面中指定裝置的名稱或 IP 位址。 (本主題會進一步列出這項作業的步驟)。
 
-2.  在偵錯工具 Visual Studio 工具列上，從 [開始偵錯]  按鈕旁邊的下拉式清單中選擇部署目標。
+2. 在偵錯工具 Visual Studio 工具列上，從 [開始偵錯]  按鈕旁邊的下拉式清單中選擇部署目標。
 
      ![在本機電腦上執行](../debugger/media/vsrun_f5_local.png "VSRUN_F5_Local")
 
-3.  在 [建置]  功能表上，選擇 [部署] 
+3. 在 [建置]  功能表上，選擇 [部署] 
 
-##  <a name="BKMK_How_to_specify_a_remote_device"></a> 如何指定遠端裝置
+## <a name="BKMK_How_to_specify_a_remote_device"></a> 如何指定遠端裝置
 
 **必要條件**
 
@@ -76,7 +76,7 @@ Visual Studio 部署功能建置，並註冊的目標裝置使用 Visual Studio 
 
     **遠端連線**對話方塊會顯示本機子網路和透過乙太網路纜線直接連接到 Visual Studio 電腦的任何裝置上的裝置。
 
-   **在 JavaScript 或 Visual C++ 專案頁面中指定遠端裝置**
+   **在 視覺效果中指定遠端裝置C++專案頁面**
 
    ![C&#43; &#43;的專案進行遠端偵錯的屬性](../debugger/media/vsrun_cpp_projprop_remote.png "VSRUN_CPP_ProjProp_Remote")
 
@@ -92,7 +92,7 @@ Visual Studio 部署功能建置，並註冊的目標裝置使用 Visual Studio 
 
 10. 在 [ **遠端電腦** ] 方塊中輸入遠端裝置的網路名稱，或按一下 [ **尋找** ]，從 [ **選取遠端偵錯工具連接** ] 對話方塊選擇裝置。
 
-##  <a name="BKMK_Deployment_options"></a> 部署選項
+## <a name="BKMK_Deployment_options"></a> 部署選項
 
 您可以在啟始專案的 [偵錯] 屬性頁上設定下列部署選項。
 
@@ -104,17 +104,17 @@ Visual Studio 部署功能建置，並註冊的目標裝置使用 Visual Studio 
 
 - 在C#和 Visual Basic 偵錯 屬性頁面上，清除**允許網路 Loopback**核取方塊。
 
-- 在 [JavaScript 偵錯] 屬性頁上，將 [允許網路回送]  值設定為 [否] 。
+- 在C++偵錯屬性頁，設定**允許網路 Loopback**值**No**。
 
-**不啟動，但啟動時，將我的程式碼進行偵錯 (C#和 Visual Basic) / 啟動應用程式 （JavaScript 和 c + +）**
+**不啟動，但啟動時，將我的程式碼進行偵錯 (C#和 Visual Basic) / 啟動應用程式 (C++)**
 
 設定部署在應用程式啟動時自動啟動偵錯工作階段：
 
 - 在C#和 Visual Basic 偵錯屬性頁上，檢查**不啟動，但啟動時，將我的程式碼進行偵錯**核取方塊。
 
-- 在 [JavaScript 偵錯] 屬性頁上，將 [啟動應用程式]  值設定為 [是] 。
+- 在C++偵錯屬性頁，設定**啟動應用程式**值**是**。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [進階遠端部署選項](/windows/uwp/debug-test-perf/deploying-and-debugging-uwp-apps#advanced-remote-deployment-options)
 - [對已安裝的應用程式套件進行偵錯](../debugger/debug-installed-app-package.md)

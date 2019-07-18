@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK], runtime details
 ms.assetid: 1acd30e0-f98c-4bde-b9cd-4076845887df
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3f7501a25596fc0a818277d164337bb0d4e4e077
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 1e84fd82c5da5deea2d718baf67799e5bf877131
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56618792"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66322554"
 ---
 # <a name="source-control-runtime-details"></a>原始檔控制的執行階段詳細資料
 當使用者將檔案加入專案中加入原始檔控制，或透過自動化控制站，例如精靈時，專案會加入原始檔控制。 專案未指定為其本身，是在原始檔控制它支援原始檔控制，但必須以手動方式新增至它。

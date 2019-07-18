@@ -8,17 +8,20 @@ helpviewer_keywords:
 - IDebugMemoryBytes2::WriteAt method
 - WriteAt method
 ms.assetid: 61cc3704-47fa-4d9b-aa62-bb4585ac8fb1
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d4e23ec439e352f6aa4e3b4d307bea76ebfdcf00
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 5eefaee08d64952681e91711cdf8347186123e57
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56714708"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66347140"
 ---
 # <a name="idebugmemorybytes2writeat"></a>IDebugMemoryBytes2::WriteAt
 寫入指定的記憶體，並指定位址開頭的位元組數目。
@@ -41,18 +44,15 @@ int WriteAt(
 );
 ```
 
-#### <a name="parameters"></a>參數
- `pStartContext`
+## <a name="parameters"></a>參數
+`pStartContext`\
+[in][IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)物件，指定要從何處開始寫入位元組。
 
- [in][IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)物件，指定要從何處開始寫入位元組。
+`dwCount`\
+[in]要寫入的位元組數目。
 
- `dwCount`
-
- [in]要寫入的位元組數目。
-
- `rgbMemory`
-
- [in]要寫入的位元組。 這個陣列會假設為至少`dwCount`個位元組大小。
+`rgbMemory`\
+[in]要寫入的位元組。 這個陣列會假設為至少`dwCount`個位元組大小。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回`S_FALSE`如果並非所有位元組無法寫入，或傳回錯誤碼 (通常`E_FAIL`)。

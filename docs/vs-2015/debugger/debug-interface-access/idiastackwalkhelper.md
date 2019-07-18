@@ -1,14 +1,9 @@
 ---
-title: IDiaStackWalkHelper |Microsoft Docs
-ms.custom: ''
+title: IDiaStackWalkHelper | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: d66e5c84-565d-494e-8486-f91db9a34548
 caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 357d4b9482fb8a5ba7f287ed305ff71083f97590
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 315af434271d57a8547963f2538ff1b799ef4fd3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51770049"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68150028"
 ---
 # <a name="idiastackwalkhelper"></a>IDiaStackWalkHelper
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -38,7 +33,7 @@ IDiaStackWalkHelper: IUnknown
   
 ```  
   
-## <a name="methods-in-vtable-order"></a>依照 VTable 順序的方法  
+## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法  
  下表顯示的方法`IDiaStackWalkHelper`:  
   
 |方法|描述|  
@@ -49,7 +44,7 @@ IDiaStackWalkHelper: IUnknown
 |[IDiaStackWalkHelper::searchForReturnAddress](../../debugger/debug-interface-access/idiastackwalkhelper-searchforreturnaddress.md)|搜尋指定的堆疊框架之最接近的函式傳回的位址。|  
 |[IDiaStackWalkHelper::searchForReturnAddressStart](../../debugger/debug-interface-access/idiastackwalkhelper-searchforreturnaddressstart.md)|搜尋指定的堆疊框架的地址，位於或接近指定的堆疊位址。|  
 |[IDiaStackWalkHelper::frameForVA](../../debugger/debug-interface-access/idiastackwalkhelper-frameforva.md)|擷取堆疊框架，其中包含指定的虛擬位址。|  
-|[IDiaStackWalkHelper::symbolForVA](../../debugger/debug-interface-access/idiastackwalkhelper-symbolforva.md)|擷取包含指定的虛擬位址的符號。 **注意：** 符號必須有型別`SymTagFunctionType`(取值[SymTagEnum 列舉](../../debugger/debug-interface-access/symtagenum.md)列舉型別)。|  
+|[IDiaStackWalkHelper::symbolForVA](../../debugger/debug-interface-access/idiastackwalkhelper-symbolforva.md)|擷取包含指定的虛擬位址的符號。 **注意：** 符號必須有類型`SymTagFunctionType`(取值[SymTagEnum 列舉](../../debugger/debug-interface-access/symtagenum.md)列舉型別)。|  
 |[IDiaStackWalkHelper::pdataForVA](../../debugger/debug-interface-access/idiastackwalkhelper-pdataforva.md)|傳回與指定的虛擬位址相關聯的 PDATA 資料區塊。|  
 |[IDiaStackWalkHelper::imageForVA](../../debugger/debug-interface-access/idiastackwalkhelper-imageforva.md)|擷取可執行檔，開始的虛擬位址的虛擬位址某處可執行檔的記憶體空間中。|  
   
@@ -60,18 +55,15 @@ IDiaStackWalkHelper: IUnknown
  用戶端應用程式會實作這個介面，以支援在程式執行期間查核堆疊。 此介面的執行個體傳遞給[IDiaStackWalker::getEnumFrames](../../debugger/debug-interface-access/idiastackwalker-getenumframes.md)或是[IDiaStackWalker::getEnumFrames2](../../debugger/debug-interface-access/idiastackwalker-getenumframes2.md)方法。  
   
 ## <a name="requirements"></a>需求  
- 標頭： Dia2.h  
+ 標頭：dia2.h  
   
  程式庫： diaguids.lib  
   
  DLL: msdia80.dll  
   
 ## <a name="see-also"></a>另請參閱  
- [介面 （偵錯介面存取 SDK）](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
+ [介面 (偵錯介面存取 SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
  [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)   
  [SymTagEnum 列舉](../../debugger/debug-interface-access/symtagenum.md)   
  [IDiaStackWalker::getEnumFrames](../../debugger/debug-interface-access/idiastackwalker-getenumframes.md)   
  [IDiaStackWalker::getEnumFrames2](../../debugger/debug-interface-access/idiastackwalker-getenumframes2.md)
-
-
-

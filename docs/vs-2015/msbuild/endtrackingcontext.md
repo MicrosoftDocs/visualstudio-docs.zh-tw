@@ -17,17 +17,16 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5c31753d5e5155156006d67d621490a8b2c4077a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 641c67c4830f4d882d2d81cb2f00599825ae5d9f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54772412"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68196564"
 ---
 # <a name="endtrackingcontext"></a>EndTrackingContext
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 結束目前追蹤內容。  
   
 ## <a name="syntax"></a>語法  
@@ -37,10 +36,10 @@ HRESULT WINAPI EndTrackingContext();
 ```  
   
 ## <a name="return-value"></a>傳回值  
- 如果已結束追蹤內容，則為已設定 [SUCCEEDED](<!-- TODO: review code entity reference <xref:assetId:///SUCCEEDED?qualifyHint=False&amp;autoUpgrade=True>  -->) 位元的 [HRESULT](<!-- TODO: review code entity reference <xref:assetId:///HRESULT?qualifyHint=False&amp;autoUpgrade=True>  -->)。  
+ [HRESULT] (<!-- TODO: review code entity reference <xref:assetId:///HRESULT?qualifyHint=False&amp;autoUpgrade=True>  -->) 以 [成功] （<!-- TODO: review code entity reference <xref:assetId:///SUCCEEDED?qualifyHint=False&amp;autoUpgrade=True>  -->) 位元集，如果已結束追蹤內容。  
   
 ## <a name="requirements"></a>需求  
  **標頭：** FileTracker.h  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [StartTrackingContext](../msbuild/starttrackingcontext.md)

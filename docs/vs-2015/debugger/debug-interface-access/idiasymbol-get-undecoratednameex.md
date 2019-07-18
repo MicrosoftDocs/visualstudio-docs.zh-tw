@@ -1,14 +1,9 @@
 ---
 title: 'Idiasymbol:: Get_undecoratednameex |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,18 +12,18 @@ ms.assetid: 579aed0b-c57d-41a1-a94a-3bf665fd4a9d
 caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: e1902c6300a35924e7fcd626d9b63f69bc5bbc2c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f9c50f5d352d8a52b0eb8b125992b2c325e48234
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51745401"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "64811858"
 ---
 # <a name="idiasymbolgetundecoratednameex"></a>IDiaSymbol::get_undecoratedNameEx
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-擷取部分或全部的 c + + 未裝飾名稱裝飾 （連結） 的名稱。  
+擷取部分或全部的未裝飾名稱的C++裝飾 （連結） 的名稱。  
   
 ## <a name="syntax"></a>語法  
   
@@ -44,19 +39,19 @@ HRESULT get_undecoratedNameEx( 
  [in]指定旗標的組合傳回該控制項。 請參閱 < 備註 > 一節的特定值，以及他們如何。  
   
  `pRetVal`  
- [out]傳回的未裝飾的名稱的 c + + 裝飾名稱。  
+ [out]傳回的未裝飾的名稱C++裝飾名稱。  
   
 ## <a name="return-value"></a>傳回值  
  如果成功，則傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。  
   
 > [!NOTE]
->  傳回值為`S_FALSE`表示此屬性不適用於符號。  
+> 傳回值為`S_FALSE`表示此屬性不適用於符號。  
   
 ## <a name="remarks"></a>備註  
  `undecorateOptions`可以是下列旗標的組合。  
   
 > [!NOTE]
->  旗標名稱未定義在 DIA SDK 中，因此您需要將宣告新增至您的程式碼，或使用原始值。  
+> 旗標名稱未定義在 DIA SDK 中，因此您需要將宣告新增至您的程式碼，或使用原始值。  
   
 |旗標|值|描述|  
 |----------|-----------|-----------------|  
@@ -83,6 +78,3 @@ HRESULT get_undecoratedNameEx( 
   
 ## <a name="see-also"></a>另請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
-
-
-

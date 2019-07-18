@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugClassField::GetDefaultIndexer method
 ms.assetid: 47ce4f45-3816-4b40-909c-5032d0692d75
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d884b8e066b539b925e50d4f49f65168ca6156c0
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 95387f65382c970ec2e9847e95ff49e139cf69b8
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56723561"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66350759"
 ---
 # <a name="idebugclassfieldgetdefaultindexer"></a>IDebugClassField::GetDefaultIndexer
 取得預設索引子名稱。
@@ -36,10 +39,8 @@ int GetDefaultIndexer(
 );
 ```
 
-#### <a name="parameters"></a>參數
- `pbstrIndexer`
-
- [out]傳回字串，包含預設索引子名稱。
+## <a name="parameters"></a>參數
+`pbstrIndexer` [out]傳回字串，包含預設索引子名稱。
 
 ## <a name="return-value"></a>傳回值
  如果成功，會傳回 S_OK，或如果沒有任何預設索引子，則傳回 S_FALSE。 否則會傳回錯誤碼。

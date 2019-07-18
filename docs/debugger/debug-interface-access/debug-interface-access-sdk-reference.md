@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6760e77fc59292c8d4bdeee02690ab65d5edf7f2
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56637292"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62555022"
 ---
 # <a name="debug-interface-access-sdk-reference"></a>偵錯介面存取 SDK 參考
 
@@ -45,6 +45,6 @@ DIA SDK 所提供之介面的所有完整的參考。
 
 描述符號是什麼，以及依類型的識別方式。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [偵錯介面存取 SDK](../../debugger/debug-interface-access/debug-interface-access-sdk.md)

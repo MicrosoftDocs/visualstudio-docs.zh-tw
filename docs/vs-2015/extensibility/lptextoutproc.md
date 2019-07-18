@@ -1,14 +1,9 @@
 ---
-title: LPTEXTOUTPROC |Microsoft Docs
-ms.custom: ''
+title: LPTEXTOUTPROC | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 f1_keywords:
 - LPTEXTOUTPROC
 helpviewer_keywords:
@@ -20,13 +15,13 @@ helpviewer_keywords:
 ms.assetid: 2025c969-e3c7-4cf4-a5c5-099d342895ea
 caps.latest.revision: 22
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 28a48c0d2dbc89295d6c1f8e900ce6219e2c9313
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f14942ffd59ce2c6eacf7da2d0d1ab252d58e2cb
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51750865"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68194453"
 ---
 # <a name="lptextoutproc"></a>LPTEXTOUTPROC
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,7 +54,7 @@ typedef LONG (*LPTEXTOUTPROC) (
 |`SCC_MSG_DOCANCEL`|不傳送任何訊息字串。|  
 |`SCC_MSG_STARTCANCEL`|開始顯示**取消** 按鈕。|  
 |`SCC_MSG_STOPCANCEL`|會停止顯示**取消** 按鈕。|  
-|`SCC_MSG_BACKGROUND_IS_CANCELLED`|要求 IDE 在背景作業是否要取消： 傳回 IDE`SCC_MSG_RTN_CANCEL`作業已取消; 否則會傳回`SCC_MSG_RTN_OK`。 `display_string`參數會轉換為[SccMsgDataIsCancelled](#LinkSccMsgDataIsCancelled)原始檔控制外掛程式所提供的結構。|  
+|`SCC_MSG_BACKGROUND_IS_CANCELLED`|如果背景作業已取消要求 IDE:傳回 IDE`SCC_MSG_RTN_CANCEL`作業已取消; 否則會傳回`SCC_MSG_RTN_OK`。 `display_string`參數會轉換為[SccMsgDataIsCancelled](#LinkSccMsgDataIsCancelled)原始檔控制外掛程式所提供的結構。|  
 |`SCC_MSG_BACKGROUND_ON_BEFORE_GET_FILE`|會指示 IDE 相關檔案，它會從版本控制之前。 `display_string`參數會轉換為[SccMsgDataOnBeforeGetFile](#LinkSccMsgDataOnBeforeGetFile)原始檔控制外掛程式所提供的結構。|  
 |`SCC_MSG_BACKGROUND_ON_AFTER_GET_FILE`|會指示 IDE 相關檔案之後擷取從版本控制。 `display_string`參數會轉換為[SccMsgDataOnAfterGetFile](#LinkSccMsgDataOnAfterGetFile)原始檔控制外掛程式所提供的結構。|  
 |`SCC_MSG_BACKGROUND_ON_MESSAGE`|會告訴 IDE 的背景作業的目前狀態。 `display_string`參數會轉換為[SccMsgDataOnMessage](#LinkSccMsgDataOnMessage)原始檔控制外掛程式所提供的結構。|  
@@ -76,7 +71,7 @@ typedef LONG (*LPTEXTOUTPROC) (
   
 ## <a name="structures"></a>結構  
   
-###  <a name="LinkSccMsgDataIsCancelled"></a> SccMsgDataIsCancelled  
+### <a name="LinkSccMsgDataIsCancelled"></a> SccMsgDataIsCancelled  
   
 ```cpp#  
 typedef struct {  
@@ -86,7 +81,7 @@ typedef struct {
   
  此結構會傳送具有`SCC_MSG_BACKGROUND_IS_CANCELLED`訊息。 它用來通訊已取消背景作業的識別碼。  
   
-###  <a name="LinkSccMsgDataOnBeforeGetFile"></a> SccMsgDataOnBeforeGetFile  
+### <a name="LinkSccMsgDataOnBeforeGetFile"></a> SccMsgDataOnBeforeGetFile  
   
 ```cpp#  
 typedef struct {  
@@ -97,7 +92,7 @@ typedef struct {
   
  此結構會傳送具有`SCC_MSG_BACKGROUND_ON_BEFORE_GET_FILE`訊息。 它用來傳達即將要擷取之檔案的名稱，以及擷取正在進行背景作業的識別碼。  
   
-###  <a name="LinkSccMsgDataOnAfterGetFile"></a> SccMsgDataOnAfterGetFile  
+### <a name="LinkSccMsgDataOnAfterGetFile"></a> SccMsgDataOnAfterGetFile  
   
 ```cpp#  
 typedef struct {  
@@ -109,7 +104,7 @@ typedef struct {
   
  此結構會傳送具有`SCC_MSG_BACKGROUND_ON_AFTER_GET_FILE`訊息。 它用來通訊的結果擷取指定的檔案，以及未擷取背景作業的識別碼。 請參閱的傳回值[SccGet](../extensibility/sccget-function.md)的項目可以如此一來提供。  
   
-###  <a name="LinkSccMsgDataOnMessage"></a> SccMsgDataOnMessage  
+### <a name="LinkSccMsgDataOnMessage"></a> SccMsgDataOnMessage  
  [C++]  
   
 ```  
@@ -147,4 +142,3 @@ LONG SendStatusMessage(
 ## <a name="see-also"></a>另請參閱  
  [IDE 所實作的回呼函式](../extensibility/callback-functions-implemented-by-the-ide.md)   
  [原始檔控制外掛程式](../extensibility/source-control-plug-ins.md)
-

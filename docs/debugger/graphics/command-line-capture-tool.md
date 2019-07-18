@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: be492ea3d9e61e25c28d8fc74ab870d7a6f959a5
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: c4d88e62b1520677ddac3ff66a6891eb805af30d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56717555"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63389698"
 ---
 # <a name="command-line-capture-tool"></a>命令列擷取工具
 DXCap.exe 是圖形診斷擷取及播放的命令列工具。 它支援 Direct3D 10 到 Direct3D 12 的所有功能層級。
@@ -63,7 +63,7 @@ DXCap.exe -info
  `-examine` `events` 在驗證模式下，`events` 指定會比較其立即結果的圖形事件集。 比方說，`-examine present,draw,copy,clear`限制只有屬於那些類別的事件比較。
 
 > [!TIP]
->  我們建議您從`-examine present,draw,copy,clear`因為這會顯示大部分的問題，但需要更少的時間比更廣泛的事件集。 如有必要，您可以指定較大或不同的事件集來驗證這些事件，並且顯示其他種類的問題。
+> 我們建議您從`-examine present,draw,copy,clear`因為這會顯示大部分的問題，但需要更少的時間比更廣泛的事件集。 如有必要，您可以指定較大或不同的事件集來驗證這些事件，並且顯示其他種類的問題。
 
  `-haltonfail` 在驗證模式下`-haltonfail`硬體和 WARP 轉譯器之間偵測到差異時，中止驗證。 按下按鍵之後，會繼續執行驗證。
 
@@ -114,7 +114,7 @@ DXCap.exe -c "C:\Program Files\Internet Explorer\iexplorer.exe" "www.fishgl.com"
  在上述範例中的命令會在檢視位於 www.fishgl.com 的網頁時，擷取 Internet Explorer 桌上型電腦版本的圖形資訊；該網頁使用 WebGL API 來呈現 3D 內容。
 
 > [!NOTE]
->  因為應用程式之後出現的命令列引數會傳遞給它，所以您必須指定適用於 DXCap.exe 的引數，然後才能使用 `-c` 選項。
+> 因為應用程式之後出現的命令列引數會傳遞給它，所以您必須指定適用於 DXCap.exe 的引數，然後才能使用 `-c` 選項。
 
 ### <a name="capture-graphics-information-from-a-uwp-app"></a>擷取圖形資訊從 UWP 應用程式。
  您可以擷取從 UWP 應用程式的圖形資訊。
@@ -137,7 +137,7 @@ DXCap.exe -e map
 
  上述命令會列舉符合"map"的 UWP 應用程式輸出如下：
 
- **封裝"Microsoft.BingMaps 」:** **installdirectory 出現： C:\Program Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe** **FullName: Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe** **UserSID: S-1-5-21-2127521184-1604012920-1887927527-5603533** **名稱： Microsoft.BingMaps** **發行者： CN = MicrosoftCorporation，O = Microsoft Corporation，L = Redmond，S = Washington，C = US** **版本： 2.1.2914.1734** **可啟動的應用程式：** **識別碼： AppexMaps****Exe: C:\Program Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe\Map.exe** **IsWWA: No** **AppSpec （以啟動）： DXCap.exe-cMicrosoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe,AppexMaps**每個列舉的應用程式的輸出的最後一行會顯示您可用來從其擷取圖形資訊的命令。
+ **Package "Microsoft.BingMaps":** **Installdirectory 出現：C:\Program Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe** **FullName         :Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe** **UserSID:S-1-5-21-2127521184-1604012920-1887927527-5603533** **名稱：Microsoft.BingMaps** **發行者：CN = Microsoft Corporation，O = Microsoft Corporation，L = Redmond，S = Washington，C = US** **版本：2.1.2914.1734** **可啟動的應用程式：** **識別碼：AppexMaps** **Exe:C:\Program Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe\Map.exe** **IsWWA:否** **AppSpec （以啟動）：DXCap.exe-c Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe,AppexMaps**每個列舉的應用程式的輸出的最後一行會顯示您可用來從其擷取圖形資訊的命令。
 
 ### <a name="capture-specific-frames-or-frames-between-specific-times"></a>擷取特定框架或特定時間之間的框架。
  使用`-frame`來指定您想要使用逗號和範圍擷取的框架：

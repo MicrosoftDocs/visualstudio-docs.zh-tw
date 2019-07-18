@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 monikerRange: vs-2017
-ms.openlocfilehash: 0353249712fefc0052a27469b075c52b9fdd5d06
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 718ef14fda76df87dc4627dc518e993058896471
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57982905"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62777980"
 ---
 # <a name="whats-new-in-msbuild-15"></a>MSBuild 15 中的新功能
 
@@ -24,7 +24,7 @@ MSBuild 現在已可當作 [.NET Core SDK](https://www.microsoft.com/net/downloa
 
  MSBuild 現已安裝在每個 Visual Studio 版本底下的資料夾中。 例如，*C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\MSBuild*。 您可以使用下列 PowerShell 模組找出 MSBuild：[vssetup.powershell](https://github.com/Microsoft/vssetup.powershell)。
 
- MSBuild 已不再安裝於「全域組件快取」。 若要以程式設計的方式參考 MSBuild，請使用 NuGet 套件。
+ MSBuild 已不再安裝於「全域組件快取」。 若要以程式設計的方式參考 MSBuild，請使用 NuGet 套件。 如需詳細資訊，請參閱 [MSBuild 15.0 的現有應用程式更新](../msbuild/updating-an-existing-application.md)。
 
 ## <a name="changed-properties"></a>已變更的屬性
 

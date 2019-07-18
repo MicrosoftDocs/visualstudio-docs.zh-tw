@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugDocumentContext2::GetDocument
 ms.assetid: c6d46c5d-ade8-4dc8-9862-8fc7876658c4
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1617bf6b2d2e50129998e61b2d05de593054d166
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 2ce07bd2274bc2a4881acd98fb73266fc90c7bd8
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56678004"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66341282"
 ---
 # <a name="idebugdocumentcontext2getdocument"></a>IDebugDocumentContext2::GetDocument
 取得包含這個文件內容的文件。
@@ -36,10 +39,9 @@ int GetDocument( 
 );
 ```
 
-#### <a name="parameters"></a>參數
- `ppDocument`
-
- [out]傳回[IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)物件，表示包含這個文件內容的文件。
+## <a name="parameters"></a>參數
+`ppDocument`\
+[out]傳回[IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)物件，表示包含這個文件內容的文件。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

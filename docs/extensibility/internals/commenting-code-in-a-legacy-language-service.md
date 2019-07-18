@@ -6,17 +6,17 @@ helpviewer_keywords:
 - comments, supporting in language services [managed package framework]
 - language services [managed package framework], commenting code
 ms.assetid: 9600d6f0-e2b6-4fe0-b935-fb32affb97a4
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9f6b7796ff4bd8f2b37e50e53d58de66f823ef8a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: ec42d81a2d472cec5f96cbeec416801c22465834
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56639657"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66342037"
 ---
 # <a name="comment-code-in-a-legacy-language-service"></a>舊版語言服務中的註解程式碼
 程式設計語言通常能用來標註或註解的程式碼。 註解是一段文字，提供程式碼的其他資訊，但會忽略期間編譯或解譯。
@@ -26,10 +26,9 @@ ms.locfileid: "56639657"
 ## <a name="comment-styles"></a>註解樣式
 有兩種一般的樣式的註解：
 
-1.  行註解，以單行註解的所在。
+1. 行註解，以單行註解的所在。
 
-2.  區塊註解，其中註解可能包含多行。
-
+2. 區塊註解，其中註解可能包含多行。
 
 行註解通常會有起始字元 （或字元），在區塊註解時有開頭和結尾字元。 例如，在 C# 中，行註解的開頭`//`，以及區塊註解的開頭`/*`，並結束`*/`。
 

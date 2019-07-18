@@ -10,11 +10,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: eae720bdd904c7b904c906022cea700512167617
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54799628"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62434224"
 ---
 # <a name="globalon-and-globaloff"></a>GlobalOn 和 GlobalOff
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,10 +60,10 @@ VSPerfCmd.exe {Launch:AppName|Attach:PID} /{GlobalOff|GlobalOn}[Options]
  **Attach:** `PID`  
  開始對指定的處理序進行分析。  
   
- {**ProcessOff**&#124;**ProcessOn**}**:**`PID`  
+ {**ProcessOff**&#124;**ProcessOn**} **:** `PID`  
  停止或開始對指定的處理序進行分析。  
   
- {**ThreadOff**&#124;**ThreadOn**}**:**`TID`  
+ {**ThreadOff**&#124;**ThreadOn**} **:** `TID`  
  停止或開始對指定的處理序進行分析 (僅檢測方法)。  
   
 ## <a name="example"></a>範例  

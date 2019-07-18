@@ -1,26 +1,21 @@
 ---
 title: 傳送事件 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], sending events
 ms.assetid: 064231e7-59b5-4437-8240-a23c0a7ec2a9
 caps.latest.revision: 8
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 9099cfe070f3c572823f8aa07a51e4456190f7b6
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 98247b894d2db628d508713875ba0ea7d0642729
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51749435"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68204738"
 ---
 # <a name="sending-events"></a>傳送事件
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -50,4 +45,3 @@ ms.locfileid: "51749435"
 ## <a name="related-sections"></a>相關章節  
  [建立自訂的偵錯引擎](../../extensibility/debugger/creating-a-custom-debug-engine.md)  
  說明 DE 解譯器或作業系統，提供偵錯服務的運作方式。
-

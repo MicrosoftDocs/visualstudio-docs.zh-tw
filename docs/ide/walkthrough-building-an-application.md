@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bcd805c420b636225bc12c31afd79d47c6732d28
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: c7f767f254119e1f9820c72a12e2aac7b4c141f1
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57323941"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62582940"
 ---
 # <a name="walkthrough-build-an-application"></a>逐步解說：建置應用程式
 
@@ -65,7 +65,7 @@ ms.locfileid: "57323941"
 
 ### <a name="build-the-solution"></a>建置方案
 
--   在功能表列上選擇 [建置] > [建置解決方案]。
+- 在功能表列上選擇 [建置] > [建置解決方案]。
 
     [輸出] 視窗顯示組建的結果。 組建成功。
 

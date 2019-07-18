@@ -15,67 +15,67 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f28de400b417011b127b76c8813024f9721cc375
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 18c2d5396b01c238213d494c1452e8919ea9cdd6
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843155"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62971325"
 ---
 # <a name="how-to-define-the-type-descriptor-of-a-parameter"></a>HOW TO：定義參數的型別描述元
   類型描述元包含描述參數資料類型的屬性。 類型描述元可以定義欄位、實體或實體集合。 如需詳細資訊，請參閱 < [TypeDescriptor](/previous-versions/office/developer/sharepoint-2007/ms543392\(v\=office.12\))。
 
 ### <a name="to-define-the-type-descriptor-of-a-parameter"></a>定義參數的類型描述元
 
-1.  在 [ **BDC 方法詳細資料**] 視窗中，選擇該參數的類型描述元。
+1. 在 [ **BDC 方法詳細資料**] 視窗中，選擇該參數的類型描述元。
 
-2.  在功能表列上選擇 [**檢視**，**屬性] 視窗**。
+2. 在功能表列上選擇 [**檢視**，**屬性] 視窗**。
 
-3.  在 [**屬性**] 視窗中，設定屬性的型別描述項。
+3. 在 [**屬性**] 視窗中，設定屬性的型別描述項。
 
      下列程序描述如何將類型描述元定義為欄位、實體或實體集合。
 
 ### <a name="to-define-a-field"></a>定義欄位
 
-1.  在**屬性**視窗中，將**名稱**屬性的型別描述項，表示實體的型別中的欄位名稱 (例如：**FirstName**)。
+1. 在**屬性**視窗中，將**名稱**屬性的型別描述項，表示實體的型別中的欄位名稱 (例如：**FirstName**)。
 
-2.  在清單中下一步**TypeName**屬性，選擇適當的資料類型 (例如**Int32**)。
+2. 在清單中下一步**TypeName**屬性，選擇適當的資料類型 (例如**Int32**)。
 
      如需其他選擇性參數資訊，請參閱[TypeDescriptor](/previous-versions/office/developer/sharepoint-2007/ms543392\(v\=office.12\))。
 
 ### <a name="to-define-an-entity"></a>定義實體
 
-1.  在 **屬性**視窗中，將**名稱**屬性來描述實體的名稱 (例如：**連絡**)。
+1. 在 **屬性**視窗中，將**名稱**屬性來描述實體的名稱 (例如：**連絡**)。
 
-2.  設定**TypeName**代表實體類型的完整名稱的屬性。 此類型可以是您專案中的類別、您在方案中所參考組件中定義的類型或 BDC 物件模型中定義的類型。
+2. 設定**TypeName**代表實體類型的完整名稱的屬性。 此類型可以是您專案中的類別、您在方案中所參考組件中定義的類型或 BDC 物件模型中定義的類型。
 
-    -   針對您的專案中的類別，選擇向下箭號旁**TypeName** ] 屬性中，選擇**目前專案**在對話方塊中，隨即出現，然後選擇 [在您的專案中的 [類別] 索引標籤。
+    - 針對您的專案中的類別，選擇向下箭號旁**TypeName** ] 屬性中，選擇**目前專案**在對話方塊中，隨即出現，然後選擇 [在您的專案中的 [類別] 索引標籤。
 
          完整名稱包含類別的命名空間和名稱，後面跟有 LOB 系統的名稱。 下列範例會設定的值**TypeName**屬性，以您的專案中的類別。
 
          `MyBDCNamespace.BdcModel1.Contact, BdcModel1`
 
-    -   若為位於您方案之組件中的類型，完整名稱包含類型的名稱、組件的名稱、版本號碼、文化特性和公開金鑰語彙基元。
+    - 若為位於您方案之組件中的類型，完整名稱包含類型的名稱、組件的名稱、版本號碼、文化特性和公開金鑰語彙基元。
 
          下列範例會設定的值**TypeName**您方案中參考的組件中定義的類型屬性。
 
          `MyNamespace.Contact, myAssemblyName, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089`
 
-    -   若為 BDC 物件模型中定義的類型，完整名稱包含該類型的命名空間和名稱。
+    - 若為 BDC 物件模型中定義的類型，完整名稱包含該類型的命名空間和名稱。
 
          下列範例會設定的值**TypeName**屬性設為 BDC 物件模型中的類型。
 
          `Microsoft.BusinessData.Runtime.DynamicType`
 
-3.  在 [ **BDC 方法詳細資料**] 視窗中，開啟類型描述元，出現的清單，然後選擇**編輯**。
+3. 在 [ **BDC 方法詳細資料**] 視窗中，開啟類型描述元，出現的清單，然後選擇**編輯**。
 
      **BDC 總管**視窗隨即開啟。
 
-4.  在  **BDC 總管**，開啟型別描述項的捷徑功能表，然後選擇**加入類型描述元**。
+4. 在  **BDC 總管**，開啟型別描述項的捷徑功能表，然後選擇**加入類型描述元**。
 
      新的類型描述元便會做為子類型描述元加入至實體類型描述元。 將此類型描述元設定為欄位。
 
-5.  重複步驟 4，為該實體的每個欄位加入子類型描述元。
+5. 重複步驟 4，為該實體的每個欄位加入子類型描述元。
 
 ### <a name="to-define-a-collection-of-entities"></a>定義實體集合
 

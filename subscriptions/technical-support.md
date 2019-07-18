@@ -6,13 +6,12 @@ manager: lank
 ms.date: 08/01/2018
 ms.topic: conceptual
 description: 了解 Visual Studio 訂用帳戶中包含的技術支援權益
-searchscope: VS Subscription
-ms.openlocfilehash: 50b6245be908bffc0d2abb9db7f74ed14f878224
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 6f16e2a23d193e25e2d1d324b0e249c87a9d1a9a
+ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56841490"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67784797"
 ---
 # <a name="technical-support-benefits-included-with-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶中包含的技術支援權益
 
@@ -29,6 +28,6 @@ ms.locfileid: "56841490"
 
 - [技術支援](vs-tech-support.md)：我們提供專業協助，協助您解決非生產環境中的協助修正問題。
 
-- [優先支援](vs-priority-support.md)：在精選論壇清單中詢問您的問題。 若開發人員社群未在兩天內回應問題，Microsoft 將會回應問題 (僅支援使用 Microsoft 帳戶)。
+- [開發人員社群論壇](vs-priority-support.md)：存取完整的開發人員網路論壇。 
 
 - [指引對談](vs-concierge-chat.md)：與我們交談來協助您尋找技術文件及產品資訊，或使用訂用帳戶權益的資訊。

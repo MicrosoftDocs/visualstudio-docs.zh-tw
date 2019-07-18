@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: de8c333391530cd86c6fc66a8e6c36ce8cfecd5f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56623862"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62829068"
 ---
 # <a name="idiaimagedatagetimagebase"></a>IDiaImageData::get_imageBase
 擷取以為基礎的映像的記憶體位置。
@@ -41,5 +41,5 @@ HRESULT get_imageBase ( 
 ## <a name="remarks"></a>備註
  映像基底的衝突，因為映像可能重定基底自動未使用的記憶體位置載入時。 這個方法會傳回已儲存在模組中，在編譯時期的基底提示 （建議的記憶體位置）。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [IDiaImageData](../../debugger/debug-interface-access/idiaimagedata.md)

@@ -1,35 +1,29 @@
 ---
-title: 逐步解說： 使用 XSLT IntelliSense |Microsoft Docs
-ms.custom: ''
+title: 逐步解說：使用 XSLT IntelliSense |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: 079d95ac-2eaf-4ae1-9cd3-2c81a961a942
 caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: ad8345f7a7dfd4d875dc33989b85ba74421ad04a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 45cb15a81f7f8f74ab17bf22ce52aca48a90aea9
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49266795"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68158613"
 ---
 # <a name="walkthrough-using-xslt-intellisense"></a>逐步解說：使用 XSLT IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 本逐步解說示範如何使用 XSLT IntelliSense 自動填入某些屬性的值。  
   
 ### <a name="to-use-intellisense-in-the-name-attribute-of-xslwith-param-and-xslcall-template-elements"></a>在 xsl:with-param 和 xsl:call-template 項目的名稱屬性中使用 IntelliSense  
   
-1.  建立新的 XSLT 檔案，並複製下列程式碼：  
+1. 建立新的 XSLT 檔案，並複製下列程式碼：  
   
     ```  
     <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">  
@@ -53,7 +47,7 @@ ms.locfileid: "49266795"
     </xsl:stylesheet>  
     ```  
   
-2.  在 `<xsl:template name="msg23" match="msg23">` 之後插入資料指標並按 ENTER。 接著開始輸入下列 `xsl:call-template` 項目：  
+2. 在 `<xsl:template name="msg23" match="msg23">` 之後插入資料指標並按 ENTER。 接著開始輸入下列 `xsl:call-template` 項目：  
   
     ```  
     <xsl:call-template name="localized-message">  
@@ -62,7 +56,7 @@ ms.locfileid: "49266795"
   
      當您輸入時，範本名稱的清單會出現在 `name=""` 項目的 `xsl:call-template` 屬性中。  
   
-3.  在 `<xsl:call-template name="localized-message">` 之後插入資料指標並按 ENTER。 接著開始輸入下列 `xsl:with-param` 項目：  
+3. 在 `<xsl:call-template name="localized-message">` 之後插入資料指標並按 ENTER。 接著開始輸入下列 `xsl:with-param` 項目：  
   
     ```  
     <xsl:with-param name="msgcode">msg23</xsl:with-param>  
@@ -72,7 +66,7 @@ ms.locfileid: "49266795"
   
 ### <a name="to-use-intellisense-in-the-mode-attribute-of-an-xslapply-templates-element"></a>在 xsl:apply-templates 項目的模式屬性中使用 IntelliSense  
   
-1.  建立新的 XSLT 檔案，並複製下列程式碼：  
+1. 建立新的 XSLT 檔案，並複製下列程式碼：  
   
     ```  
     <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">  
@@ -119,7 +113,7 @@ ms.locfileid: "49266795"
     </xsl:stylesheet>  
     ```  
   
-2.  在 `<xsl:apply-templates select="phone" />` 之後插入資料指標並按 ENTER。 接著開始輸入下列 `xsl: apply-templates` 項目：  
+2. 在 `<xsl:apply-templates select="phone" />` 之後插入資料指標並按 ENTER。 接著開始輸入下列 `xsl: apply-templates` 項目：  
   
     ```  
     <xsl:apply-templates select="phone"  mode="accountNumber">  
@@ -129,7 +123,7 @@ ms.locfileid: "49266795"
   
 ### <a name="to-use-intellisense-in-the-stylesheet-prefix-and-result-prefix-attributes-of-an-xslnamespace-alias-element"></a>在 xsl:namespace-alias 項目的 stylesheet-prefix 和 result-prefix 屬性中使用 IntelliSense  
   
-1.  建立新的 XSLT 檔案，並複製下列程式碼：  
+1. 建立新的 XSLT 檔案，並複製下列程式碼：  
   
     ```  
     <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:alt="http://www.w3.org/1999/XSL/Transform-alternate"  
@@ -160,7 +154,7 @@ ms.locfileid: "49266795"
     </xsl:stylesheet>  
     ```  
   
-2.  在 `<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:alt="http://www.w3.org/1999/XSL/Transform-alternate" version="1.0">` 之後插入資料指標並按 ENTER。 接著開始輸入下列 `xsl:namespace-alias` 項目：  
+2. 在 `<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:alt="http://www.w3.org/1999/XSL/Transform-alternate" version="1.0">` 之後插入資料指標並按 ENTER。 接著開始輸入下列 `xsl:namespace-alias` 項目：  
   
     ```  
     <xsl:namespace-alias stylesheet-prefix="alt" result-prefix="xsl"/>  
@@ -170,6 +164,3 @@ ms.locfileid: "49266795"
   
 ## <a name="see-also"></a>另請參閱  
  [XML 編輯器 IntelliSense 功能](../xml-tools/xml-editor-intellisense-features.md)
-
-
-

@@ -10,16 +10,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 38601f8d88b56c3957943b28be298ac24eb12c91
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: bd040b613a5b982050d651f341456c5fafc2954b
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57983919"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65679194"
 ---
 # <a name="publish-an-application-to-azure-app-service-by-importing-publish-settings-in-visual-studio"></a>在 Visual Studio 中匯入發行設定，即可將應用程式發行至 Azure App Service
 
-您可以使用 [發行] 工具匯入發行設定，然後部署您的應用程式。 在此文章中，我們會使用 Azure App Service 的發行設定，但您可以使用類似步驟從 [IIS](../deployment/tutorial-import-publish-settings-iis.md) 匯入發行設定。 在某些情況下，使用發行設定的設定檔速度，比起針對每個 Visual Studio 安裝手動設定服務部署還要快。
+您可以使用 [發行] 工具匯入發行設定，然後部署您的應用程式。 在本文中，我們會使用 Azure App Service 的發行設定，但您可以使用類似步驟從 [IIS](../deployment/tutorial-import-publish-settings-iis.md) 匯入發行設定。 在某些情況下，使用發行設定的設定檔速度，比起針對每個 Visual Studio 安裝手動設定服務部署還要快。
 
 這些步驟適用於 Visual Studio 中的 ASP.NET、ASP.NET Core 和 .NET Core 應用程式。 您也可以匯入 [Python](../python/publishing-python-web-applications-to-azure-from-visual-studio.md) 應用程式的發行設定。
 
@@ -55,9 +55,9 @@ ms.locfileid: "57983919"
 
 ## <a name="create-a-new-aspnet-project-in-visual-studio"></a>在 Visual Studio 中建立新的 ASP.NET 專案
 
-1. 在執行 Visual Studio 的電腦上，選擇 [檔案] > [新增專案]。
+1. 在執行 Visual Studio 的電腦上，建立新的專案。
 
-1. 在 [Visual C#] 或 [Visual Basic] 底下，選擇 [Web]，然後在中間窗格中選擇 [ASP.NET Web 應用程式 (.NET Framework)] 或 (僅限於 C#) [ASP.NET Core Web 應用程式]，然後按一下 [確定]。
+    選擇正確的範本。 在本範例中，選擇 [ASP.NET Web 應用程式 (.NET Framework)] 或 (僅限 C#) [ASP.NET Core Web 應用程式]，然後按一下 [確定]。
 
     如果您沒有看到特定的專案範本，請在 [新增專案] 對話方塊的左窗格中，按一下 [開啟 Visual Studio 安裝程式] 連結。 Visual Studio 安裝程式即會啟動。 安裝 **ASP.NET 和 Web 開發**工作負載。
 
@@ -100,6 +100,7 @@ ms.locfileid: "57983919"
       </publishProfile>
     </publishData>
     ```
+
     一般而言，上述的 *.publishsettings 檔案包含兩個您可以在 Visual Studio 中使用的發行設定檔，一個使用 Web Deploy 進行部署，另一個則使用 FTP 進行部署。 上述程式碼會顯示 Web Deploy 設定檔。 當您匯入設定檔時，稍後將匯入這兩個設定檔。
 
 ## <a name="import-the-publish-settings-in-visual-studio-and-deploy"></a>在 Visual Studio 中匯入發行設定並進行部署

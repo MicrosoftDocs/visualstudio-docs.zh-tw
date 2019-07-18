@@ -1,25 +1,20 @@
 ---
 title: 最佳做法和範例 (SAL) |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 ms.assetid: 666276fb-99c2-4dc9-8bac-d74861c203ea
 caps.latest.revision: 14
 author: mikeblome
 ms.author: mblome
-manager: ghogen
-ms.openlocfilehash: 9327ab850bb5f62158e48abc4c8445d3f9b6fe9b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 56e57d182a21429d73b8eae0b79f96532732ae7b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51743740"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62428569"
 ---
 # <a name="best-practices-and-examples-sal"></a>最佳作法和範例 (SAL)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -246,7 +241,7 @@ _Ret_maybenull_ void *MightReturnNullPtr2();
  在此範例中，`_Out_opt_`指出指標可能是 NULL，做為前置條件的一部分。 不過，前置條件無法套用至傳回值。 在此案例中，是正確的註解`_Ret_maybenull_`。  
   
 ## <a name="see-also"></a>另請參閱  
- [使用 SAL 註釋減少 C/c + + 程式碼的缺失](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)   
+ [使用 SAL 註釋減少 C /C++程式碼的缺失](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)   
  [了解 SAL](../code-quality/understanding-sal.md)   
  [註釋函式參數和傳回值](../code-quality/annotating-function-parameters-and-return-values.md)   
  [註釋函式行為](../code-quality/annotating-function-behavior.md)   
@@ -254,6 +249,3 @@ _Ret_maybenull_ void *MightReturnNullPtr2();
  [註釋鎖定行為](../code-quality/annotating-locking-behavior.md)   
  [指定套用註釋的時機和位置](../code-quality/specifying-when-and-where-an-annotation-applies.md)   
  [內建函式](../code-quality/intrinsic-functions.md)
-
-
-

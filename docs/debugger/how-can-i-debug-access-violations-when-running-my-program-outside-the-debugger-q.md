@@ -1,5 +1,5 @@
 ---
-title: 執行偵錯工具之外的應用程式時，偵錯存取違規 |Microsoft Docs
+title: 執行偵錯工具之外的應用程式時，偵錯存取違規
 ms.custom: seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 657d8730f923d144d0691afe921ad5eaf9337a42
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: d42dd206117885a23a6c1c15c712be4dc4cd8fe2
+ms.sourcegitcommit: 13ab9a5ab039b070b9cd9251d0b83dd216477203
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56690041"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66177671"
 ---
 # <a name="how-can-i-debug-access-violations-when-running-my-program-outside-the-debugger"></a>在偵錯工具外執行我的程式時，如何偵錯存取違規？
 
@@ -34,6 +34,6 @@ ms.locfileid: "56690041"
 ## <a name="solution"></a>方案
  設定 [ 偵錯](../debugger/just-in-time-debugging-in-visual-studio.md)選項並獨立執行您的程式，直到發生存取違規為止。 然後，在 [存取違規] 對話方塊中，您可以按一下 [取消] 來啟動偵錯工具。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [偵錯機器碼常見問題集](../debugger/debugging-native-code-faqs.md)
 - [偵錯機器碼](../debugger/debugging-native-code.md)

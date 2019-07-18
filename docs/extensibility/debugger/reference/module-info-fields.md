@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - MODULE_INFO_FIELDS enumeration
 ms.assetid: 8bed85f4-235f-4192-b58f-5fad7a4d7a78
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f4302a911e58a23bdcd58bb054c1fc90c389fed6
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 2ba419d0b10174e375cd15313fbc0770bf9d8cc0
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56708378"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66311381"
 ---
 # <a name="moduleinfofields"></a>MODULE_INFO_FIELDS
 指定偵錯模組資訊旗標。
@@ -61,32 +64,45 @@ public enum enum_MODULE_INFO_FIELDS { 
 };
 ```
 
-## <a name="members"></a>成員
- MIF_NONE 初始化/使用無結構中的欄位。
+## <a name="fields"></a>欄位
+ `MIF_NONE`\
+ 初始化/使用無結構中的欄位。
 
- 初始化/使用 MIF_NAME`m_bstrName`欄位中[MODULE_INFO](../../../extensibility/debugger/reference/module-info.md)結構。
+ `MIF_NAME`\
+ 初始化/使用`m_bstrName`欄位中[MODULE_INFO](../../../extensibility/debugger/reference/module-info.md)結構。
 
- 初始化/使用 MIF_URL`m_bstrUrl`欄位中`MODULE_INFO`結構。
+ `MIF_URL`\
+ 初始化/使用`m_bstrUrl`欄位中`MODULE_INFO`結構。
 
- 初始化/使用 MIF_VERSION`m_bstrVersion`欄位中`MODULE_INFO`結構。
+ `MIF_VERSION`\
+ 初始化/使用`m_bstrVersion`欄位中`MODULE_INFO`結構。
 
- 初始化/使用 MIF_DEBUGMESSAGE`m_bstrDebugMessage`欄位中`MODULE_INFO`結構。
+ `MIF_DEBUGMESSAGE`\
+ 初始化/使用`m_bstrDebugMessage`欄位中`MODULE_INFO`結構。
 
- 初始化/使用 MIF_LOADADDRESS`m_addrLoadAddress`欄位中`MODULE_INFO`結構。
+ `MIF_LOADADDRESS`\
+ 初始化/使用`m_addrLoadAddress`欄位中`MODULE_INFO`結構。
 
- 初始化/使用 MIF_PREFFEREDADDRESS`m_addrPreferredLoadAddress`欄位中`MODULE_INFO`結構。
+ `MIF_PREFFEREDADDRESS`\
+ 初始化/使用`m_addrPreferredLoadAddress`欄位中`MODULE_INFO`結構。
 
- 初始化/使用 MIF_SIZE`m_dwSize`欄位中`MODULE_INFO`結構。
+ `MIF_SIZE`\
+ 初始化/使用`m_dwSize`欄位中`MODULE_INFO`結構。
 
- 初始化/使用 MIF_LOADORDER`m_dwLoadOrder`欄位中`MODULE_INFO`結構。
+ `MIF_LOADORDER`\
+ 初始化/使用`m_dwLoadOrder`欄位中`MODULE_INFO`結構。
 
- 初始化/使用 MIF_TIMESTAMP`m_TimeStamp`欄位中`MODULE_INFO`結構。
+ `MIF_TIMESTAMP`\
+ 初始化/使用`m_TimeStamp`欄位中`MODULE_INFO`結構。
 
- 初始化/使用 MIF_URLSYMBOLLOCATION`m_bstrUrlSymbolLocation`欄位中`MODULE_INFO`結構。
+ `MIF_URLSYMBOLLOCATION`\
+ 初始化/使用`m_bstrUrlSymbolLocation`欄位中`MODULE_INFO`結構。
 
- 初始化/使用 MIF_FLAGS`m_dwModuleFlags`欄位中`MODULE_INFO`結構。
+ `MIF_FLAGS`\
+ 初始化/使用`m_dwModuleFlags`欄位中`MODULE_INFO`結構。
 
- MIF_ALLFIELDS 初始化/使用中的欄位的所有`MODULE_INFO`結構。
+ `MIF_ALLFIELDS`\
+ 初始化/使用中的欄位的所有`MODULE_INFO`結構。
 
 ## <a name="remarks"></a>備註
  這些值會傳遞做為引數[GetInfo](../../../extensibility/debugger/reference/idebugmodule2-getinfo.md)方法，以表示哪些欄位[MODULE_INFO](../../../extensibility/debugger/reference/module-info.md)結構會進行初始化。

@@ -6,17 +6,17 @@ helpviewer_keywords:
 - source control plug-ins, comparing versions
 - source control plug-ins, local project folders
 ms.assetid: 65217e8b-15a6-4446-92b0-4cff1c6220f5
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5ac710fd3994dca24d8e15e3d15c18d9f456a744
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: d675868e10a99a192681c52495ad3b37e384d390
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56614190"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66350695"
 ---
 # <a name="optional-comparison-of-local-project-folder-to-source-control-store"></a>本機專案資料夾與原始檔控制存放區的選擇性比較
 在原始檔控制外掛程式 API 1.2 本機專案資料夾與原始檔控制之間的比較作業透過使用函式[SccDirQueryInfo](../../extensibility/sccdirqueryinfo-function.md)並[SccDirDiff](../../extensibility/sccdirdiff-function.md)。
@@ -36,7 +36,7 @@ ms.locfileid: "56614190"
  `SccDirQueryInfo`函式之前，會呼叫`SccDirDiff`判斷是否為原始檔控制的工作目錄。 `SccDirDiff`函式會顯示目前的本機目錄與對應的原始檔控制資料夾之間的差異。 此命令會要求原始檔控制外掛程式，以顯示變更的清單目錄。 原始檔控制外掛程式提供它自己的 UI 來顯示差異。
 
 > [!NOTE]
->  此函式會使用相同的命令旗標，作為[SccDiff](../../extensibility/sccdiff-function.md)。 做為原始檔控制外掛程式提供者，您可以選擇不支援目錄的 「 快速 diff"作業。
+> 此函式會使用相同的命令旗標，作為[SccDiff](../../extensibility/sccdiff-function.md)。 做為原始檔控制外掛程式提供者，您可以選擇不支援目錄的 「 快速 diff"作業。
 
 ## <a name="see-also"></a>另請參閱
 - [原始檔控制外掛程式 API 版本 1.2 的新功能](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)

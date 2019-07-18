@@ -6,17 +6,20 @@ helpviewer_keywords:
 - CreatePointerToType
 - IDebugTypeFieldBuilder::CreatePointerToType
 ms.assetid: 73966e8a-b643-43e0-9b4e-0aa4b402ebbe
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 34c4f143f8726f8dc3d9a1d60e6c51a5de1976bb
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: b8947090c56376b03da83cfd81296604b6bd642a
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56693824"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66319900"
 ---
 # <a name="idebugtypefieldbuildercreatepointertotype"></a>IDebugTypeFieldBuilder::CreatePointerToType
 建立指定類型的指標。
@@ -37,14 +40,12 @@ int CreatePointerToType(
 );
 ```
 
-#### <a name="parameters"></a>參數
- `pTypeField`
+## <a name="parameters"></a>參數
+`pTypeField`\
+[in]指向的型別。 它由[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)介面。
 
- [in]指向的型別。 它由[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)介面。
-
- `pPtrToTypeField`
-
- [out]傳回新所表示的指標**IDebugField**物件。
+`pPtrToTypeField`\
+[out]傳回新所表示的指標**IDebugField**物件。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

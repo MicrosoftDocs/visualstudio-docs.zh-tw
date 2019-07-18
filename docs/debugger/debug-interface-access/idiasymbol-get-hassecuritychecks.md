@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e4c54c6523caf08e367f245dd92fb7b91470ae0d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: f5a760389f589dc14e8a768991323c0419dac527
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56624850"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "64808707"
 ---
 # <a name="idiasymbolgethassecuritychecks"></a>IDiaSymbol::get_hasSecurityChecks
 擷取指定的編譯模組或函式是否已編譯的緩衝區滿溢安全性檢查的旗標 (例如[/GS （緩衝區安全性檢查）](/cpp/build/reference/gs-buffer-security-check)編譯器參數)。
@@ -39,15 +39,15 @@ HRESULT get_hasSecurityChecks(
  如果成功，則傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。
 
 > [!NOTE]
->  傳回值為`S_FALSE`表示屬性不是適用於符號。
+> 傳回值為`S_FALSE`表示屬性不是適用於符號。
 
 ## <a name="requirements"></a>需求
 
-|需求|說明|
+|需求|描述|
 |-----------------|-----------------|
 |標頭：|dia2.h|
 |版本:|DIA SDK v8.0|
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
 - [/GS (緩衝區安全性檢查)](/cpp/build/reference/gs-buffer-security-check)

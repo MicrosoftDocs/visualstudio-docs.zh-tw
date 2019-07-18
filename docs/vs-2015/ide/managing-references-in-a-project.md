@@ -23,12 +23,12 @@ caps.latest.revision: 55
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 48d6849a6656f5914d11250e26681e208cdb7487
-ms.sourcegitcommit: b7f25ae08e45fcaa84a84276b588cf6799cc7620
+ms.openlocfilehash: a54df63d71eeb641aa16c5bf7d4a2cb0c8a8a292
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "57567211"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65675097"
 ---
 # <a name="managing-references-in-a-project"></a>管理專案中的參考
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,15 +41,15 @@ ms.locfileid: "57567211"
   
  您可以進行下列元件/服務類型的參考：  
   
--   Windows 市集應用程式參考  
+- Windows 市集應用程式參考  
   
--   .NET framework 類別庫或組件  
+- .NET framework 類別庫或組件  
   
--   COM 元件  
+- COM 元件  
   
--   其他組件或相同解決方案中專案的類別庫  
+- 其他組件或相同解決方案中專案的類別庫  
   
--   XML Web Service  
+- XML Web Service  
   
 ## <a name="windows-store-app-references"></a>Windows 市集應用程式參考  
   
@@ -63,38 +63,38 @@ ms.locfileid: "57567211"
   
  如果您判定不支援您的應用程式所參考的擴充功能 SDK，則需要執行下列步驟：  
   
-1.  查看造成錯誤的專案名稱。 您專案的目標平台加註在專案名稱旁邊的括號中。 例如，**MyProjectName (Windows 8.1)** 表示您的專案 **MyProjectName** 的目標平台版本為 [!INCLUDE[win81](../includes/win81-md.md)]。  
+1. 查看造成錯誤的專案名稱。 您專案的目標平台加註在專案名稱旁邊的括號中。 例如，**MyProjectName (Windows 8.1)** 表示您的專案 **MyProjectName** 的目標平台版本為 [!INCLUDE[win81](../includes/win81-md.md)]。  
   
-2.  移至擁有不受支援之擴充功能 SDK 的廠商網站，並安裝相依性與您專案的目標平台版本相容的擴充功能 SDK 版本。  
+2. 移至擁有不受支援之擴充功能 SDK 的廠商網站，並安裝相依性與您專案的目標平台版本相容的擴充功能 SDK 版本。  
   
     > [!NOTE]
-    >  若要找出擴充功能 SDK 是否具有其他擴充功能 SDK 的相依性，其中一個方法是重新啟動 Visual Studio，建立新的 C# Windows 市集專案，在專案按右鍵並選擇 [加入參考] ，移至 [Windows]  索引標籤，再移至 [擴充功能]  子索引標籤，選取擴充功能 SDK 並查看 [參考管理員] 的右窗格。 如果有相依性，則會在那裡列出。  
+    > 若要找出擴充功能 SDK 是否具有其他擴充功能 SDK 的相依性，其中一個方法是重新啟動 Visual Studio，建立新的 C# Windows 市集專案，在專案按右鍵並選擇 [加入參考] ，移至 [Windows]  索引標籤，再移至 [擴充功能]  子索引標籤，選取擴充功能 SDK 並查看 [參考管理員] 的右窗格。 如果有相依性，則會在那裡列出。  
   
     > [!IMPORTANT]
-    >  如果您的專案是以 Windows 10 為目標，且在先前步驟中安裝的擴充功能 SDK 相依於 Microsoft Visual C++ Runtime Package，則與 Windows 10 相容的 Microsoft Visual C++ Runtime Package 版本為 v14.0 ，並隨著 Visual Studio 2015 一起安裝。  
+    > 如果您的專案是以 Windows 10 為目標，且在先前步驟中安裝的擴充功能 SDK 相依於 Microsoft Visual C++ Runtime Package，則與 Windows 10 相容的 Microsoft Visual C++ Runtime Package 版本為 v14.0 ，並隨著 Visual Studio 2015 一起安裝。  
   
-3.  如果您在先前步驟中安裝的擴充功能 SDK 具有其他擴充功能 SDK 的相依性，請移至擁有相依性的廠商網站，並安裝與您專案的目標平台版本相容的這些相依性版本。  
+3. 如果您在先前步驟中安裝的擴充功能 SDK 具有其他擴充功能 SDK 的相依性，請移至擁有相依性的廠商網站，並安裝與您專案的目標平台版本相容的這些相依性版本。  
   
-4.  重新啟動 Visual Studio，然後開啟您的應用程式。  
+4. 重新啟動 Visual Studio，然後開啟您的應用程式。  
   
-5.  在導致錯誤專案中的 [參考]  節點上按右鍵，然後選擇 [加入參考]   
+5. 在導致錯誤專案中的 [參考]  節點上按右鍵，然後選擇 [加入參考]   
   
-6.  依序按一下 [Windows]  索引標籤和 [擴充功能]  子索引標籤，然後針對舊擴充功能 SDK 取消核取方塊，並核取新擴充功能 SDK 的核取方塊。 按一下 [確定] 。  
+6. 依序按一下 [Windows]  索引標籤和 [擴充功能]  子索引標籤，然後針對舊擴充功能 SDK 取消核取方塊，並核取新擴充功能 SDK 的核取方塊。 按一下 [確定] 。  
   
 ## <a name="adding-a-reference-at-design-time"></a>在設計階段加入參考  
  當您在專案中參考組件時，[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 會搜尋下列位置中的組件：  
   
--   目前專案目錄。 (您可以使用 [瀏覽]  索引標籤尋找這些組件)。  
+- 目前專案目錄。 (您可以使用 [瀏覽]  索引標籤尋找這些組件)。  
   
--   同一方案中的其他專案目錄。 (您可以使用 [專案]  索引標籤尋找這些組件。)  
+- 同一方案中的其他專案目錄。 (您可以使用 [專案]  索引標籤尋找這些組件。)  
   
 > [!NOTE]
->  所有專案都包含 mscorlib 的隱含參考。 Visual Basic 專案包含 `Microsoft.VisualBasic`的隱含參考。  
+> 所有專案都包含 mscorlib 的隱含參考。 Visual Basic 專案包含 `Microsoft.VisualBasic`的隱含參考。  
 >   
->  在 Visual Studio 中，所有專案都包含 `System.Core`的隱含參考，即使 `System.Core` 已從參考清單中移除也一樣。  
+> 在 Visual Studio 中，所有專案都包含 `System.Core`的隱含參考，即使 `System.Core` 已從參考清單中移除也一樣。  
   
 ## <a name="references-to-shared-components-at-run-time"></a>在執行階段參考共用元件  
- 在執行階段中，元件必須位於專案的輸出路徑或 [Global Assembly Cache](http://msdn.microsoft.com/library/cf5eacd0-d3ec-4879-b6da-5fd5e4372202) (GAC) 中。 如果專案包含不在這些位置其中之一的物件參考，您必須在建置專案時，將參考複製至專案的輸出路徑。 <xref:Microsoft.VisualStudio.VCProjectEngine.VCProjectReference.CopyLocal%2A> 屬性表示是否要進行此複製。 如果值為 **True**，則當您建置專案時，會將參考複製至專案目錄。 如果值為 **False**，則不會複製參考。  
+ 在執行階段中，元件必須位於專案的輸出路徑或 [Global Assembly Cache](https://msdn.microsoft.com/library/cf5eacd0-d3ec-4879-b6da-5fd5e4372202) (GAC) 中。 如果專案包含不在這些位置其中之一的物件參考，您必須在建置專案時，將參考複製至專案的輸出路徑。 <xref:Microsoft.VisualStudio.VCProjectEngine.VCProjectReference.CopyLocal%2A> 屬性表示是否要進行此複製。 如果值為 **True**，則當您建置專案時，會將參考複製至專案目錄。 如果值為 **False**，則不會複製參考。  
   
  如果您部署的應用程式中包含在 GAC 中已註冊自訂元件的參考，則不論 <xref:Microsoft.VisualStudio.VCProjectEngine.VCProjectReference.CopyLocal%2A> 設定為何，該元件都不會隨著應用程式一起部署。 在舊版的 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]中，您可以在參考上設定 <xref:Microsoft.VisualStudio.VCProjectEngine.VCProjectReference.CopyLocal%2A> 屬性以確保組件已部署。 現在，您必須手動將組件加入 \Bin 資料夾。 這會使所有自訂程式碼受到監督，降低您在不熟悉的情況下發行自訂程式碼的風險。  
   
@@ -111,12 +111,12 @@ ms.locfileid: "57567211"
  當您有會產生組件的專案時，您應該參考該專案，而不要使用檔案參考 (請參閱下文)。 專案對專案參考的優點是它會在組建系統中建立專案之間的相依性。 如果自上次建置的參考專案已變更，則將會建立相依專案。 檔案參考不會建立組建相依性，因此可以建置參考專案而不需建置相依專案，且參考可能會遭到淘汰。 (也就是專案可以參考先前建置的專案版本。)這會導致在 bin 目錄中需要單一 DLL 的數個版本，但這不可能達成。 發生這個衝突時，您會看到類似[警告：無法將專案 'project' 中的相依性 'file' 複製至執行目錄，因為它會覆寫參考 'file'](../misc/warning-the-dependency-file-in-project-project-cannot-be-copied.md) 的訊息。 如需詳細資訊，請參閱[針對中斷參考進行疑難排解](../ide/troubleshooting-broken-references.md)以及[如何：建立和移除專案相依性](../ide/how-to-create-and-remove-project-dependencies.md)。  
   
 > [!NOTE]
->  如果某個專案的 .NET Framework 目標版本為 4.5 版，而其他專案的目標版本為第 2 版、第 3 版、3.5 版或 4.0 版，則會建立檔案參考而非專案對專案參考。  
+> 如果某個專案的 .NET Framework 目標版本為 4.5 版，而其他專案的目標版本為第 2 版、第 3 版、3.5 版或 4.0 版，則會建立檔案參考而非專案對專案參考。  
   
 ## <a name="file-references"></a>檔案參考  
  檔案參考是 Visual Studio 專案內容外部之組件的直接參考；您可以使用 [參考管理員]  的 [瀏覽] 索引標籤建立檔案參考。 當您只有組件或元件，而且不需要會建立檔案參考做為輸出的專案時，請使用檔案參考。  
   
 ## <a name="see-also"></a>請參閱  
  [Troubleshooting Broken References](../ide/troubleshooting-broken-references.md)   
- [使用組件設計程式](http://msdn.microsoft.com/library/25918b15-701d-42c7-95fc-c290d08648d6)   
+ [使用組件設計程式](https://msdn.microsoft.com/library/25918b15-701d-42c7-95fc-c290d08648d6)   
  [How to: Add or Remove References By Using the Reference Manager](../ide/how-to-add-or-remove-references-by-using-the-reference-manager.md)

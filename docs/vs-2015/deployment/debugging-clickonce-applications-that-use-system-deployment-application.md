@@ -1,14 +1,9 @@
 ---
 title: 偵錯使用 System.Deployment.Application 的 ClickOnce 應用程式 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -22,13 +17,13 @@ ms.assetid: 86f31948-2ca8-47c0-8e8b-c2b817bbf79f
 caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 4a97fb2db4c252efcb2f980915062861933a242e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: c0b12faf451d3ed9bb70e2bb1ec6c8503cfb86d5
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49890298"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68187787"
 ---
 # <a name="debugging-clickonce-applications-that-use-systemdeploymentapplication"></a>偵錯使用 System.Deployment.Application 的 ClickOnce 應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -86,6 +81,3 @@ ms.locfileid: "49890298"
   
 ## <a name="see-also"></a>另請參閱  
  <xref:System.Deployment.Application>
-
-
-

@@ -11,14 +11,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7bf55f372b9beb0a4cb0feda0dc5869ee9eb7c5f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56613527"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "62827739"
 ---
 # <a name="idiasymbolfindsymbolsforacceleratorpointertag"></a>IDiaSymbol::findSymbolsForAcceleratorPointerTag
-虛設常式函式 c + + AMP 中傳回加速器指標標記的數目。
+傳回的加速器指標中的標記數目C++AMP 虛設常式的函式。
 
 ## <a name="syntax"></a>語法
 
@@ -40,6 +40,6 @@ HRESULT findSymbolsForAccleratorPointerTag (
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
 - [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)

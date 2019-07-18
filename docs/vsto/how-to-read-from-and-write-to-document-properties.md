@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 34c7ac8e496fedbff836eb118f60157c5f637117
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: ac0d81c9e42a5c3aa22a09d59f346e6127b1284f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56628867"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62961562"
 ---
 # <a name="how-to-read-from-and-write-to-document-properties"></a>HOW TO：讀取和寫入文件屬性
   文件屬性可與文件一起儲存。 Office 應用程式提供許多內建屬性，例如作者、標題和主旨。 本主題說明如何設定 Microsoft Office Excel 和 Microsoft Office Word 的文件屬性。
@@ -42,12 +42,12 @@ ms.locfileid: "56628867"
 
 ### <a name="to-change-the-revision-number-property-in-excel"></a>變更 Excel 的修訂編號屬性
 
-1.  將內建的文件屬性指派給變數。
+1. 將內建的文件屬性指派給變數。
 
      [!code-vb[Trin_VstcoreProgramming#7](../vsto/codesnippet/VisualBasic/Trin_VstcoreProgrammingExcelVB/ThisWorkbook.vb#7)]
      [!code-csharp[Trin_VstcoreProgramming#7](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingExcelCS/ThisWorkbook.cs#7)]
 
-2.  遞增 `Revision Number` 屬性，數目為一。
+2. 遞增 `Revision Number` 屬性，數目為一。
 
      [!code-vb[Trin_VstcoreProgramming#8](../vsto/codesnippet/VisualBasic/Trin_VstcoreProgrammingExcelVB/ThisWorkbook.vb#8)]
      [!code-csharp[Trin_VstcoreProgramming#8](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingExcelCS/ThisWorkbook.cs#8)]
@@ -65,12 +65,12 @@ ms.locfileid: "56628867"
 
 ### <a name="to-change-the-subject-property"></a>變更主旨屬性
 
-1.  將內建的文件屬性指派給變數。
+1. 將內建的文件屬性指派給變數。
 
      [!code-csharp[Trin_VstcoreProgrammingWord#1](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingWordCS/ThisDocument.cs#1)]
      [!code-vb[Trin_VstcoreProgrammingWord#1](../vsto/codesnippet/VisualBasic/Trin_VstcoreProgrammingWordVB/ThisDocument.vb#1)]
 
-2.  將 `Subject` 屬性變更成「白皮書」。
+2. 將 `Subject` 屬性變更成「白皮書」。
 
      [!code-csharp[Trin_VstcoreProgrammingWord#2](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingWordCS/ThisDocument.cs#2)]
      [!code-vb[Trin_VstcoreProgrammingWord#2](../vsto/codesnippet/VisualBasic/Trin_VstcoreProgrammingWordVB/ThisDocument.vb#2)]

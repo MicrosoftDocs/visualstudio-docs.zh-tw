@@ -1,14 +1,9 @@
 ---
 title: 偵錯工具基本概念 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - C++
 - CSharp
@@ -22,13 +17,13 @@ ms.assetid: 4da42a10-384d-44d7-b4dc-032202ff784b
 caps.latest.revision: 33
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 5bb755dd5e6936e030c1569edcdd065b8bef0547
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 1228b75b1e0e579012f0c2a04a100cb615ae1687
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51778653"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68145711"
 ---
 # <a name="debugger-basics"></a>偵錯工具基礎
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -67,6 +62,3 @@ Visual Studio 偵錯工具讓您能夠觀察程式的執行階段行為，並找
   
 ## <a name="see-also"></a>另請參閱  
  [Visual Studio 偵錯](../debugger/debugging-in-visual-studio.md)
-
-
-

@@ -6,17 +6,17 @@ helpviewer_keywords:
 - commands, context
 - menu items, visibility contexts
 ms.assetid: c74e3ccf-d771-48c8-a2f9-df323b166784
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ae72a9f8ed20840da958c3c9314c8f25aada801f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 5087e5f7958f9abe46e0caeb2eb03e21285e4da7
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56625617"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66338596"
 ---
 # <a name="command-availability"></a>命令可用性
 
@@ -44,11 +44,11 @@ Visual Studio 內容會決定哪些命令可供使用。 根據目前的專案�
 
 如果未定義的 GUID 不適當的命令內容中，您可以定義在 VSPackage 中，並再進行程式設計，讓它成為作用中或非使用中，視需要控制可見性，您的命令：
 
-1.  藉由呼叫註冊內容 Guid<xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.GetCmdUIContextCookie%2A>方法。
+1. 藉由呼叫註冊內容 Guid<xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.GetCmdUIContextCookie%2A>方法。
 
-2.  取得 GUID 的內容的狀態，藉由呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.IsCmdUIContextActive%2A>方法。
+2. 取得 GUID 的內容的狀態，藉由呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.IsCmdUIContextActive%2A>方法。
 
-3.  藉由呼叫開啟內容的 Guid 和關閉<xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.SetCmdUIContext%2A>方法。
+3. 藉由呼叫開啟內容的 Guid 和關閉<xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.SetCmdUIContext%2A>方法。
 
 > [!CAUTION]
 > 請確定，VSPackage 不會影響任何現有內容的 Guid 因為其他 Vspackage 可能取決於它們。

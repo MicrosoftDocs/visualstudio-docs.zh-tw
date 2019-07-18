@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5b4709a218f6586320e96f79ea8a9f423f537c7f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56635926"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62839650"
 ---
 # <a name="idiapropertystoragereaddword"></a>IDiaPropertyStorage::ReadDWORD
 讀取`DWORD`屬性集合中的值。
@@ -46,5 +46,5 @@ HRESULT ReadDWORD ( 
 ## <a name="remarks"></a>備註
  A`DWORD`由 Windows 與 32 位元不帶正負號的整數所定義。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)

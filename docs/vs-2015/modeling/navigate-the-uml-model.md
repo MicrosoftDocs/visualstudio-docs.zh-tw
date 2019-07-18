@@ -1,25 +1,22 @@
 ---
 title: 巡覽 UML 模型 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML API
 ms.assetid: 6d789b6d-2aa9-4ceb-92c4-84a300065a76
 caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 6f77e72c55c0984f66a6884b0582716e5529abd0
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: b61492d992d37d7377e73185202bfbdd97063195
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51727765"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68158998"
 ---
 # <a name="navigate-the-uml-model"></a>巡覽 UML 模型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,9 +30,9 @@ ms.locfileid: "51727765"
   
  IElement 以外的所有類型都繼承一或多個超級類型的屬性。  
   
--   如需模型類型的摘要，請參閱 < [UML 模型項目類型](../modeling/uml-model-element-types.md)。  
+- 如需模型類型的摘要，請參閱 < [UML 模型項目類型](../modeling/uml-model-element-types.md)。  
   
--   完整的 api 的詳細資訊，請參閱 < [UML 模型擴充性的 API 參考](../modeling/api-reference-for-uml-modeling-extensibility.md)。  
+- 完整的 api 的詳細資訊，請參閱 < [UML 模型擴充性的 API 參考](../modeling/api-reference-for-uml-modeling-extensibility.md)。  
   
 ### <a name="relationships"></a>關聯性  
  「UML 規格」中所定義的屬性和關聯性會實作為 .NET 屬性。  
@@ -48,7 +45,7 @@ ms.locfileid: "51727765"
   
  如果您從模型中刪除項目，則會自動刪除它參與的任何關聯性，並更新另一端的屬性。  
   
- 如果「UML 規格」將多重性 0..1 指派給屬性，則值可能是 `null`。 多重性的最大值大於 1，表示.NET 屬性類型： `IEnumerable<`*型別*`>`。  
+ 如果「UML 規格」將多重性 0..1 指派給屬性，則值可能是 `null`。 多重性的最大值大於 1，表示.NET 屬性類型：`IEnumerable<`*型別*`>`。  
   
  如需有關如何周遊關聯性的詳細資訊，請參閱 <<c0> [ 使用 UML API 巡覽關聯性](../modeling/navigate-relationships-with-the-uml-api.md)。  
   
@@ -61,7 +58,7 @@ ms.locfileid: "51727765"
   
  每個模型項目都會建立具有一個 Owner。 如需詳細資訊，請參閱 < [UML 模型中建立項目和關聯性](../modeling/create-elements-and-relationships-in-uml-models.md)。  
   
- ![類別圖表： 模型、 圖表、 圖形與項目](../modeling/media/uml-mm1.png "UML_MM1")  
+ ![類別圖表：模型、 圖表、 圖形與項目](../modeling/media/uml-mm1.png "UML_MM1")  
   
 ## <a name="shapes-and-diagrams"></a>圖案和圖表  
  UML 模型中的項目可以顯示在圖表上。 不同類型的圖表可以顯示不同的 IElement 子類型。  
@@ -125,15 +122,12 @@ foreach (IShape<IInterface> in
 ## <a name="accessing-another-model-or-diagrams"></a>存取另一個模型或圖表  
  您可以：  
   
--   使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 模型匯流排，來建立不同模型中項目之間的連結。 如需詳細資訊，請參閱 <<c0> [ 整合 UML 模型與其他模型及工具](../modeling/integrate-uml-models-with-other-models-and-tools.md)。  
+- 使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 模型匯流排，來建立不同模型中項目之間的連結。 如需詳細資訊，請參閱 <<c0> [ 整合 UML 模型與其他模型及工具](../modeling/integrate-uml-models-with-other-models-and-tools.md)。  
   
--   以唯讀模式載入模型專案和圖表，而不讓它顯示在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 使用者介面中。 如需詳細資訊，請參閱 <<c0> [ 讀取程式碼中的 UML 模型](../modeling/read-a-uml-model-in-program-code.md)。  
+- 以唯讀模式載入模型專案和圖表，而不讓它顯示在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 使用者介面中。 如需詳細資訊，請參閱 <<c0> [ 讀取程式碼中的 UML 模型](../modeling/read-a-uml-model-in-program-code.md)。  
   
--   在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中開啟模型專案和其圖表，然後存取內容。 如需詳細資訊，請參閱 <<c0> [ 使用 Visual Studio API 開啟 UML 模型](../modeling/open-a-uml-model-by-using-the-visual-studio-api.md)。  
+- 在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中開啟模型專案和其圖表，然後存取內容。 如需詳細資訊，請參閱 <<c0> [ 使用 Visual Studio API 開啟 UML 模型](../modeling/open-a-uml-model-by-using-the-visual-studio-api.md)。  
   
 ## <a name="see-also"></a>另請參閱  
  [擴充 UML 模型和圖表](../modeling/extend-uml-models-and-diagrams.md)   
  [使用 UML API 進行程式設計](../modeling/programming-with-the-uml-api.md)
-
-
-

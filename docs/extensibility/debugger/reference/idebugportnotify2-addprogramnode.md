@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPortNotify2::AddProgramNode
 ms.assetid: 34c0e949-1eb9-4108-9cb8-a3eb87fcf190
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 38ca78b16947d706d9297fa3045f0f5067f8ef86
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: f0afd0b2ae50555e29a75159edb8f52635730a56
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56716528"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66319470"
 ---
 # <a name="idebugportnotify2addprogramnode"></a>IDebugPortNotify2::AddProgramNode
 可以進行偵錯的程式會向其執行的連接埠。
@@ -36,10 +39,9 @@ int AddProgramNode( 
 );
 ```
 
-#### <a name="parameters"></a>參數
- `pProgramNode`
-
- [in][IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)物件，表示要登錄的程式。
+## <a name="parameters"></a>參數
+`pProgramNode`\
+[in][IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)物件，表示要登錄的程式。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

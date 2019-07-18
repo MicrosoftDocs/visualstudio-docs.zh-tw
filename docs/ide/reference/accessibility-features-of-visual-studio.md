@@ -12,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: abe8be0804877b4836a766f2c4fec37321534b5f
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 342d3288d647018af7faf42ab3e669bb8a62594f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318585"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62793153"
 ---
 # <a name="accessibility-features-of-visual-studio"></a>Visual Studio 的協助工具功能
 
@@ -26,15 +26,15 @@ ms.locfileid: "56318585"
 
 除了 Windows 中的協助工具功能和公用程式之外，下列功能可讓行動不便者更方便存取 Visual Studio：
 
--   工具列按鈕與文字放大
+- 工具列按鈕與文字放大
 
--   編輯器中的文字大小選項
+- 編輯器中的文字大小選項
 
--   編輯器中的色彩自訂
+- 編輯器中的色彩自訂
 
--   鍵盤快速鍵自訂
+- 鍵盤快速鍵自訂
 
--   自動完成方法和參數
+- 自動完成方法和參數
 
 > [!NOTE]
 > 本主題適用於 Windows 上的 Visual Studio。 針對 Visual Studio for Mac，請參閱 [Visual Studio for Mac 的協助工具](/visualstudio/mac/accessibility)。
@@ -44,15 +44,15 @@ ms.locfileid: "56318585"
 
 如需詳細資訊，請參閱下列主題：
 
--   [如何：設定 IDE 協助工具選項](../../ide/reference/how-to-set-ide-accessibility-options.md)
+- [如何：設定 IDE 協助工具選項](../../ide/reference/how-to-set-ide-accessibility-options.md)
 
--   [如何：以獨佔模式使用鍵盤](../../ide/reference/how-to-use-the-keyboard-exclusively.md)
+- [如何：以獨佔模式使用鍵盤](../../ide/reference/how-to-use-the-keyboard-exclusively.md)
 
--   [預設鍵盤快速鍵](../../ide/default-keyboard-shortcuts-in-visual-studio.md)
+- [預設鍵盤快速鍵](../../ide/default-keyboard-shortcuts-in-visual-studio.md)
 
--   [協助工具祕訣和訣竅](../../ide/reference/accessibility-tips-and-tricks.md)
+- [協助工具祕訣和訣竅](../../ide/reference/accessibility-tips-and-tricks.md)
 
--   [如何：變更字型與色彩](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)
+- [如何：變更字型與色彩](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)
 
 ## <a name="see-also"></a>另請參閱
 

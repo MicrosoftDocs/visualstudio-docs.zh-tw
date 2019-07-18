@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 131afbaf4fcbdf5456a6276a36c551a47b663eec
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55926134"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62897781"
 ---
 # <a name="how-to-create-a-basic-phong-shader"></a>HOW TO：建立基本 Phong 著色器
 

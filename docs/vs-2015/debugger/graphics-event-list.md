@@ -1,27 +1,22 @@
 ---
 title: 圖形事件清單 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.graphics.eventlist
 ms.assetid: a1252e19-b27d-4dc7-a16b-fdac894c1f0e
 caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 497ee3fe1c588c84195a544179d0d2955b1932b0
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 137f3f91922a16b0e3f2a7e459a72c4381162f2e
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51766219"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704615"
 ---
 # <a name="graphics-event-list"></a>圖形事件清單
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,7 +54,7 @@ ms.locfileid: "51766219"
   
 ##### <a name="to-change-the-event-list-view-mode"></a>變更事件清單檢視模式  
   
--   在 [圖形事件清單]  視窗的事件清單上方，找到 [檢視]  下拉式清單，並選擇 [時間軸]  檢視或 [繪製呼叫]  檢視。  
+- 在 [圖形事件清單]  視窗的事件清單上方，找到 [檢視]  下拉式清單，並選擇 [時間軸]  檢視或 [繪製呼叫]  檢視。  
   
 ### <a name="filtering-events"></a>篩選事件  
  您可以使用 [搜尋] 方塊 (位在 [圖形事件清單]  視窗右上角) 篩選事件清單，使清單只包括名稱包含特定關鍵字的事件。 如上圖所示，您可以指定單一關鍵字 (如 `Vertex`)，或使用以分號分隔清單指定多個關鍵字，例如 `Draw;Primitive`，其符合名稱中有 `Draw` 或 `Primitive` 的事件。 搜尋會受到空格影響；例如， `VSSet` 和 `VS Set` 是不同的搜尋，因此，請務必小心地建立搜尋。  
@@ -88,17 +83,17 @@ ms.locfileid: "51766219"
 ### <a name="user-defined-events-in-direct3d-12"></a>Direct3D 12 中的使用者定義事件  
  若要在 Direct3D 12 中建立群組和標記，請使用本節所述的 API。 下表總結根據您要標記命令佇列還是命令清單中的事件而可以使用的 API。  
   
-|API 描述|[ID3D12CommandQueue](https://msdn.microsoft.com/library/dn788627.aspx)|[ID3D12GraphicsCommandList](https://msdn.microsoft.com/library/dn903537.aspx)|  
+|API 描述|[ID3D12CommandQueue](/windows/desktop/api/d3d12/nn-d3d12-id3d12commandqueue)|[ID3D12GraphicsCommandList](/windows/desktop/api/d3d12/nn-d3d12-id3d12graphicscommandlist)|  
 |---------------------|----------------------------------------------------------------------------|-----------------------------------------------------------------------------------|  
-|檢查使用者定義事件可用性|[PIXGetStatus](http://msdn.microsoft.com/en-us/f7ebd985-fb5d-46d7-abec-099df4b9be0e)|[PIXGetStatus](http://msdn.microsoft.com/en-us/1046ac43-a0a3-42bf-bae8-14aa72fa7567)|  
-|開始事件群組|[PIXBeginEvent](http://msdn.microsoft.com/en-us/5f51fff7-f313-4558-965b-2a443653cd7b)|[PIXBeginEvent](http://msdn.microsoft.com/en-us/4ddb3311-b9b5-449a-bbfb-7634e0d56e87)|  
-|結束事件群組|[PIXEndEvent](http://msdn.microsoft.com/en-us/fb526bf2-c17d-4a2a-8665-3b577a0f7fba)|[PIXEndEvent](http://msdn.microsoft.com/en-us/a3cd34a9-9dd9-40e1-ae86-0214b25ff185)|  
-|建立事件標記|[PIXSetMarker](http://msdn.microsoft.com/en-us/0caf49ed-c99d-405e-89f4-0c887b8474ad)|[PIXSetMarker](http://msdn.microsoft.com/en-us/6610e5b9-a0c5-4236-b551-b6eb9fac64c1)|  
+|檢查使用者定義事件可用性|[PIXGetStatus](https://msdn.microsoft.com/f7ebd985-fb5d-46d7-abec-099df4b9be0e)|[PIXGetStatus](https://msdn.microsoft.com/1046ac43-a0a3-42bf-bae8-14aa72fa7567)|  
+|開始事件群組|[PIXBeginEvent](https://msdn.microsoft.com/5f51fff7-f313-4558-965b-2a443653cd7b)|[PIXBeginEvent](https://msdn.microsoft.com/4ddb3311-b9b5-449a-bbfb-7634e0d56e87)|  
+|結束事件群組|[PIXEndEvent](https://msdn.microsoft.com/fb526bf2-c17d-4a2a-8665-3b577a0f7fba)|[PIXEndEvent](https://msdn.microsoft.com/a3cd34a9-9dd9-40e1-ae86-0214b25ff185)|  
+|建立事件標記|[PIXSetMarker](https://msdn.microsoft.com/0caf49ed-c99d-405e-89f4-0c887b8474ad)|[PIXSetMarker](https://msdn.microsoft.com/6610e5b9-a0c5-4236-b551-b6eb9fac64c1)|  
   
 ### <a name="user-defined-events-in-direct3d-11-and-earlier"></a>Direct3D 11 和更早版本中的使用者定義事件  
  若要在 Direct3D 11 或更早版本中建立群組和標記，請使用本節所述的 API。 下表總結您可用於不同 Direct3D 11 版本和舊版 Direct3D 的 API。  
   
-|API 描述|[ID3D11DeviceContext2](http://msdn.microsoft.com/library/windows/desktop/dn280498.aspx) (Direct3D 11.2)|[ID3DUserDefinedAnnotation](http://go.microsoft.com/fwlink/p/?LinkID=250967) (Direct3D 11.1)|D3DPerf_ API 系列 (Direct3D 11.0 和更早版本)|  
+|API 描述|[ID3D11DeviceContext2](/windows/desktop/api/d3d11_2/nn-d3d11_2-id3d11devicecontext2) (Direct3D 11.2)|[ID3DUserDefinedAnnotation](http://go.microsoft.com/fwlink/p/?LinkID=250967) (Direct3D 11.1)|D3DPerf_ API 系列 (Direct3D 11.0 和更早版本)|  
 |---------------------|---------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------|--------------------------------------------------------|  
 |開始事件群組|`BeginEventInt`|`BeginEvent`|`D3DPerf_BeginEvent`|  
 |結束事件群組|`EndEventInt`|`EndEvent`|`D3DPerf_EndEvent`|  
@@ -108,6 +103,3 @@ ms.locfileid: "51766219"
   
 ## <a name="see-also"></a>另請參閱  
  [逐步解說：因裝置狀態而遺漏的物件](../debugger/walkthrough-missing-objects-due-to-device-state.md)
-
-
-

@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugObject2::GetAlias method
 ms.assetid: aa6824d5-c932-42ba-8713-950e7d1fb42f
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7d08d9108ed4a433bcbcb17d6d4587532542b303
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: db9156e01843e859a2279e43f73c00bee21b3e9c
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56719843"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66308734"
 ---
 # <a name="idebugobject2getalias"></a>IDebugObject2::GetAlias
 如果有的話，請取得與這個物件相關聯的別名。
@@ -36,10 +39,9 @@ int GetAlias(
 );
 ```
 
-#### <a name="parameters"></a>參數
- `ppAlias`
-
- [out]會傳回[IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md)物件，表示這個物件的別名，否則會傳回 null 值。
+## <a name="parameters"></a>參數
+`ppAlias`\
+[out]會傳回[IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md)物件，表示這個物件的別名，否則會傳回 null 值。
 
 ## <a name="return-value"></a>傳回值
  如果成功，會傳回 S_OK;否則，傳回錯誤碼。

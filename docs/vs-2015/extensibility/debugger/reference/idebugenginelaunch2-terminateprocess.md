@@ -1,14 +1,9 @@
 ---
-title: IDebugEngineLaunch2::TerminateProcess |Microsoft Docs
-ms.custom: ''
+title: IDebugEngineLaunch2::TerminateProcess | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugEngineLaunch2::TerminateProcess
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: f7039e7f-5f57-4222-9ad2-11a66b2da6e0
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 6967cf6a13e6dfdcefbec46371df75166dcff083
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: d5636d84a530f4cfa8cda9d9ef48a13cdca3567f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51767908"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62431494"
 ---
 # <a name="idebugenginelaunch2terminateprocess"></a>IDebugEngineLaunch2::TerminateProcess
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -57,4 +52,3 @@ int TerminateProcess ( 
  [IDebugEngineLaunch2](../../../extensibility/debugger/reference/idebugenginelaunch2.md)   
  [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)   
  [CanTerminateProcess](../../../extensibility/debugger/reference/idebugenginelaunch2-canterminateprocess.md)
-

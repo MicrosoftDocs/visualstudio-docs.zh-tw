@@ -1,14 +1,9 @@
 ---
 title: IDebugPendingBreakpoint2::Enable |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugPendingBreakpoint2::Enable
 helpviewer_keywords:
@@ -17,13 +12,13 @@ helpviewer_keywords:
 ms.assetid: 09e32d05-464b-40a6-a41d-76f2759cf2cd
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: f493f3eab0944e0bbf6d2cf7740662ef31acc425
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f5dc3c1e37a817c1c962d05745db33422008c550
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51761672"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68194485"
 ---
 # <a name="idebugpendingbreakpoint2enable"></a>IDebugPendingBreakpoint2::Enable
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -91,4 +86,3 @@ HRESULT CPendingBreakpoint::Enable(BOOL fEnable)
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)
-

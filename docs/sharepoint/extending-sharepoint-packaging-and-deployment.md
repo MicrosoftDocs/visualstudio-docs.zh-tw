@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1f18c88e72a40d3070d9a366e0c6c4e0f3888565
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 4bb98e2b1c83ff06570a77dc84ce6a7bf690f81d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56628386"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62967454"
 ---
 # <a name="extend-sharepoint-packaging-and-deployment"></a>擴充 SharePoint 封裝和部署
   您可以擴充 SharePoint 專案的封裝和部署程序。
@@ -35,9 +35,9 @@ ms.locfileid: "56628386"
 ## <a name="run-code-when-a-sharepoint-solution-is-deployed-or-retracted"></a>SharePoint 方案部署或撤銷時執行程式碼
  您可以處理事件，在部署或撤銷 SharePoint 方案時執行其他工作。 Visual Studio 會引發事件，您可以在下列情況下處理：
 
--   針對 SharePoint 專案項目，在每次部署前後執行步驟。 如需詳細資訊，請參閱[如何：執行部署步驟時執行程式碼](../sharepoint/how-to-run-code-when-deployment-steps-are-executed.md)。
+- 針對 SharePoint 專案項目，在每次部署前後執行步驟。 如需詳細資訊，請參閱[如何：執行部署步驟時執行程式碼](../sharepoint/how-to-run-code-when-deployment-steps-are-executed.md)。
 
--   在 SharePoint 專案部署或撤銷前後。 如需詳細資訊，請參閱[如何：SharePoint 專案部署或撤銷時執行程式碼](../sharepoint/how-to-run-code-when-a-sharepoint-project-is-deployed-or-retracted.md)。
+- 在 SharePoint 專案部署或撤銷前後。 如需詳細資訊，請參閱[如何：SharePoint 專案部署或撤銷時執行程式碼](../sharepoint/how-to-run-code-when-a-sharepoint-project-is-deployed-or-retracted.md)。
 
 ## <a name="handle-deployment-conflicts"></a>處理部署衝突
  某些類型的 SharePoint 專案項目 (包括模組、Web 組件、清單執行個體和內容類型) 提供內建的部署衝突解決方式。 當您部署包含其中一個專案項目的方案時，Visual Studio 會先檢查 SharePoint 網站上的檔案，與您正在部署的項目中檔案是否具有相同的名稱、URL 或 ID。 如果發生衝突，Visual Studio 可以自動解決衝突，或提示您決定是否要讓 Visual Studio 解決衝突或取消部署。 如需詳細資訊，請參閱 [Troubleshooting SharePoint Packaging and Deployment](../sharepoint/troubleshooting-sharepoint-packaging-and-deployment.md)。

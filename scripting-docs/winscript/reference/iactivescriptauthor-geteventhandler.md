@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 7bba60df6485ddaac0363a3416739efd7be69389
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58145638"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62935629"
 ---
 # <a name="iactivescriptauthorgeteventhandler"></a>IActiveScriptAuthor::GetEventHandler
 傳回含有指定的屬性程式碼片段。  

@@ -1,14 +1,9 @@
 ---
-title: 'Idiaimagedata:: Get_imagebase |Microsoft Docs'
-ms.custom: ''
+title: IDiaImageData::get_imageBase | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 4ba3d9e4-b205-4ee6-a41d-6996972f1f85
 caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: e09fb71294631f95b0d1d39ac6137c2e49b5bdea
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: a4a8ed3f52a6e4709aa9553b0d7cc906069c9bcd
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51801299"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68202575"
 ---
 # <a name="idiaimagedatagetimagebase"></a>IDiaImageData::get_imageBase
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -50,6 +45,3 @@ HRESULT get_imageBase ( 
   
 ## <a name="see-also"></a>另請參閱  
  [IDiaImageData](../../debugger/debug-interface-access/idiaimagedata.md)
-
-
-

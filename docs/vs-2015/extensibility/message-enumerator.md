@@ -1,27 +1,22 @@
 ---
 title: 訊息列舉值 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - message enumerator
 - source control plug-ins, message enumeration
 ms.assetid: 4a4faa0d-d352-40ea-a21d-c09ea286a8e1
 caps.latest.revision: 13
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 63e878a408f242d50f12fda311257da6fe50fd1f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 6bd42c825cd45068e13178856e524268b426ec53
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51766509"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68194345"
 ---
 # <a name="message-enumerator"></a>訊息列舉程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -77,4 +72,3 @@ enum { 
 ## <a name="see-also"></a>另請參閱  
  [原始檔控制外掛程式](../extensibility/source-control-plug-ins.md)   
  [LPTEXTOUTPROC](../extensibility/lptextoutproc.md)
-

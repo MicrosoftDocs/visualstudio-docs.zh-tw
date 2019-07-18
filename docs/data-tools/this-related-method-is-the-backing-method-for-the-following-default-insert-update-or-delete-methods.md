@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: cc83bc78aace73cedf186b5ec925dce0a509b91d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.openlocfilehash: a5ae70462079589ba2b63ee50cf0b7a0570e056a
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55945647"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65457832"
 ---
 # <a name="this-related-method-is-the-backing-method-for-the-following-default-insert-update-or-delete-methods"></a>此關聯方法是下列預設插入、更新或刪除方法的支援方法
 
@@ -33,5 +33,4 @@ ms.locfileid: "55945647"
 
 ## <a name="see-also"></a>另請參閱
 
-- [O/R 設計工具訊息](../data-tools/o-r-designer-messages.md)
 - [Visual Studio 中的 LINQ to SQL 工具](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: ea260a6286c8a923d56ab7a5088b55de57004489
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56645533"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62982242"
 ---
 # <a name="use-local-database-files-in-office-solutions-overview"></a>使用本機資料庫檔案，在 Office 方案概觀
   您可以包含資料庫檔案，例如 SQL Server Express (*.mdf*) 檔案或 Microsoft Office Access (*.mdb*) 檔案，請在您的 Office 解決方案。 這可讓使用者在其中維護集中式的資料庫不是必要項，例如在單一電腦使用本機的清查解決方案的情況下本機資料庫的維護。

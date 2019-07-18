@@ -8,23 +8,23 @@ f1_keywords:
 helpviewer_keywords:
 - ProjectType element [Visual Studio project templates]
 ms.assetid: ccf9d83f-c7f3-49c7-a31f-e1f22bec004c
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bd369d68ae8f0e340787fadb0dafd43301fe3e62
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 494f8d3ab204a599e8d3708d07a56c87658b97d4
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56686206"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66311917"
 ---
 # <a name="projecttype-element-visual-studio-templates"></a>ProjectType 項目 （Visual Studio 範本）
 將分類的專案範本，使其出現在中指定的群組**新的專案**或**加入新項目** 對話方塊。
 
 > [!WARNING]
->  啟動 Visual Studio 2012 中的 c + + 支援專案範本。 不支援在 Visual Studio 2010 和舊版的 c + +。
+> 支援的專案範本C++開始在 Visual Studio 2012 中。 它們不支援C++在 Visual Studio 2010 和舊版中。
 
  \<VSTemplate> \<TemplateData> \<ProjectType>
 

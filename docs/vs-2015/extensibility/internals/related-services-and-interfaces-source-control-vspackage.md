@@ -1,27 +1,22 @@
 ---
 title: 相關的服務和介面 (原始檔控制 VSPackage) |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - source control packages, interfaces
 - interfaces, source control packages
 ms.assetid: 3e96e838-5675-46bb-99cf-40d420086038
 caps.latest.revision: 27
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 8f308c0d8669bc8950578ffc615ebe64b91a4ea7
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 0c5b040a8c5d0cbe2daff07f279cfd6a78cbd2b7
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51764321"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68157397"
 ---
 # <a name="related-services-and-interfaces-source-control-vspackage"></a>相關的服務和介面 (原始檔控制 VSPackage)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -37,11 +32,11 @@ ms.locfileid: "51764321"
   
  介面包括：  
   
--   必要： 適當的實體 （原始檔控制 VSPackage，原始檔控制虛設常式，專案） 必須實作介面。  
+- 必要屬性：適當的實體 （原始檔控制 VSPackage，原始檔控制虛設常式，專案） 必須實作介面。  
   
--   建議： 實體應該實作這個介面;否則，原始檔控制功能可能有限。  
+- 建議使用：實體應該實作這個介面中;否則，原始檔控制功能可能有限。  
   
--   選擇性： 實體可以實作這個介面，以提供更豐富的功能集。  
+- 選擇性： 實體可以實作這個介面，以提供更豐富的功能集。  
   
 |介面|用途|藉由將|實作？|  
 |---------------|-------------|--------------------|----------------|  
@@ -56,8 +51,8 @@ ms.locfileid: "51764321"
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsSccEnlistmentPathTranslation>|這個介面提供登錄的管理支援 Web 專案。|原始檔控制 VSPackage|建議|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManagerTooltip>|此介面用來擷取工具提示的原始檔控制專案中的檔案。|原始檔控制 VSPackage|Optional|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsSccOpenFromSourceControl>|這個介面提供的命名空間延伸模組支援。|原始檔控制 VSPackage|Optional|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsSccControlNewSolution>|VSPackage 會使用這個介面整合到命名空間延伸模組**的新**，**開放**，或**儲存**對話方塊。 因此，專案會自動新增至原始檔控制在建立後，或加入原始檔控制時儲存作業就會生效。|原始檔控制 VSPackage|Optional|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsSccGlyphs>|VSPackage 會使用這個介面定義為原始檔控制圖像 （glyph） 節點中的其他字符**方案總管 中**。|原始檔控制 VSPackage|Optional|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsSccControlNewSolution>|VSPackage 會使用這個介面整合到命名空間延伸模組**的新**，**開放**，或**儲存**對話方塊。 因此，專案會自動新增至原始檔控制在建立後，或加入原始檔控制時儲存作業就會生效。|原始檔控制 VSPackage|選擇性|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsSccGlyphs>|VSPackage 會使用這個介面定義為原始檔控制圖像 （glyph） 節點中的其他字符**方案總管 中**。|原始檔控制 VSPackage|選擇性|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsSccAddWebProjectFromSourceControl>|**新增**Web 專案 對話方塊中會使用此介面。 它提供瀏覽的原始檔控制位置和開啟 Web 專案，在該位置的原始檔控制儲存機制中先前新增的方法。|原始檔控制 VSPackage|建議|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsAsynchOpenFromScc>|這個介面提供非同步 （背景） 載入，從原始檔控制專案的支援。|原始檔控制 VSPackage|Optional|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsAsynchOpenFromSccProjectEvents>|這個介面可讓專案，以查看所起始的非同步載入進度<xref:Microsoft.VisualStudio.Shell.Interop.IVsAsynchOpenFromScc>。|專案|Optional|  
@@ -70,4 +65,3 @@ ms.locfileid: "51764321"
   
 ## <a name="see-also"></a>另請參閱  
  [設計元素](../../extensibility/internals/source-control-vspackage-design-elements.md)
-

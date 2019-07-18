@@ -19,11 +19,11 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: cd22a228f0963e2bdc87df284402d119a0353c68
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55922513"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62788633"
 ---
 # <a name="ca1057-string-uri-overloads-call-systemuri-overloads"></a>CA1057:字串 URI 多載呼叫 System.Uri 多載
 

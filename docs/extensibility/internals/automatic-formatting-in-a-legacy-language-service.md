@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - language services, automatic formatting
 ms.assetid: c210fc94-77bd-4694-b312-045087d8a549
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 64fbf5b64b57425b1bdee3ae3475c234384db062
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: b69419e917a5ab5293af15b21822ca6473a9e292
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56626150"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66344926"
 ---
 # <a name="automatic-formatting-in-a-legacy-language-service"></a>舊版語言服務中的自動格式化
 使用自動格式設定中，語言服務會自動插入程式碼的片段，當使用者開始輸入已知的程式碼建構。

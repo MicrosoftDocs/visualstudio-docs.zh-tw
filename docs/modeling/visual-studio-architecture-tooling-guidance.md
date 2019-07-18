@@ -8,11 +8,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: da3b0d2829732b7b1765b082eb51b2b54832d1ef
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55946687"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62906866"
 ---
 # <a name="visual-studio-architecture-tooling-guidance"></a>Visual Studio 架構工具指南
 

@@ -1,12 +1,9 @@
 ---
 title: 針對分層圖擴充功能進行疑難排解 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: troubleshooting
 helpviewer_keywords:
 - layer diagrams, extension errors
 - layer diagrams, troubleshooting extensions
@@ -14,13 +11,13 @@ ms.assetid: 1fda4f8a-38b8-482b-87b8-eade1a4e5662
 caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 6361651672e72df6661f030a4b6c8e451fdaea89
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 38a459760dd66e1160bd8b197ee9883b617639b2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51738768"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439742"
 ---
 # <a name="troubleshoot-extensions-for-layer-diagrams"></a>分層圖擴充功能疑難排解
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,22 +39,19 @@ ms.locfileid: "51738768"
 2. 刪除下列資料夾： %LocalAppData%\Microsoft\VisualStudio\\[version] \ComponentModelCache  
   
    > [!NOTE]
-   >  %Localappdata%通常是*DriveName*: \Users\\*UserName*\AppData\Local。  
+   > %Localappdata%通常是*DriveName*: \Users\\*UserName*\AppData\Local。  
   
    如有必要，請繼續執行下一個程序。  
   
 #### <a name="an-old-version-of-my-validation-results-appears-or-my-validation-method-is-not-called"></a>出現的是舊版的驗證結果，或沒有呼叫我的驗證方法。  
   
-1.  在實驗執行個體[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]，請在**建置**功能表上，按一下 **清除方案**。 這會清除上一次驗證分析的快取結果。  
+1. 在實驗執行個體[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]，請在**建置**功能表上，按一下 **清除方案**。 這會清除上一次驗證分析的快取結果。  
   
-2.  請確定模型中的圖層與程式碼項目相關聯，而且模型中至少有一個相依性連結。 如果沒有要驗證的項目，就不會叫用驗證。  
+2. 請確定模型中的圖層與程式碼項目相關聯，而且模型中至少有一個相依性連結。 如果沒有要驗證的項目，就不會叫用驗證。  
   
-3.  一般的中斷點可能不會在驗證方法中運作，因為它是在不同的處理序中執行。 如果想要逐步執行您的方法，您必須插入對 `System.Diagnostics.Debugger.Launch()` 的呼叫。  
+3. 一般的中斷點可能不會在驗證方法中運作，因為它是在不同的處理序中執行。 如果想要逐步執行您的方法，您必須插入對 `System.Diagnostics.Debugger.Launch()` 的呼叫。  
   
-4.  在  **source.extension.vsixmanifest**在圖層驗證專案中，確定您已新增兩者**MEF 元件**項目和**自訂延伸模組類型**項目底下**內容**。  
+4. 在  **source.extension.vsixmanifest**在圖層驗證專案中，確定您已新增兩者**MEF 元件**項目和**自訂延伸模組類型**項目底下**內容**。  
   
 ## <a name="see-also"></a>另請參閱  
  [擴充分層圖](../modeling/extend-layer-diagrams.md)
-
-
-

@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 546ca45ed48f9fc247bd5706005153f41cf206e5
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.openlocfilehash: ca5161d0ddb73a72b88f36e85bda9206839aec3d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55926758"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62565856"
 ---
 # <a name="update-data-by-using-a-tableadapter"></a>使用 TableAdapter 更新資料
 
@@ -34,11 +34,11 @@ ms.locfileid: "55926758"
 
  更新資料來源的確切程序會根據商務需求而有所不同，但包含下列步驟：
 
-1.  呼叫的介面卡`Update`方法中的`try` / `catch`區塊。
+1. 呼叫的介面卡`Update`方法中的`try` / `catch`區塊。
 
-2.  如果攔截到例外狀況時，找出造成錯誤的資料列。
+2. 如果攔截到例外狀況時，找出造成錯誤的資料列。
 
-3.  調解這個問題，資料中的資料列 （如果可以，以程式設計方式或出示無效的資料列已修改的使用者），並再試一次更新 (<xref:System.Data.DataRow.HasErrors%2A>， <xref:System.Data.DataTable.GetErrors%2A>)。
+3. 調解這個問題，資料中的資料列 （如果可以，以程式設計方式或出示無效的資料列已修改的使用者），並再試一次更新 (<xref:System.Data.DataRow.HasErrors%2A>， <xref:System.Data.DataTable.GetErrors%2A>)。
 
 ## <a name="save-data-to-a-database"></a>將資料儲存至資料庫
 
@@ -46,7 +46,7 @@ ms.locfileid: "55926758"
 
 ### <a name="to-update-a-database-by-using-a-tableadapter"></a>使用 TableAdapter 更新資料庫
 
--   括住的 TableAdapter`Update`方法中的`try` / `catch`區塊。 下列範例示範如何更新的內容`Customers`資料表中`NorthwindDataSet`內在`try` / `catch`區塊。
+- 括住的 TableAdapter`Update`方法中的`try` / `catch`區塊。 下列範例示範如何更新的內容`Customers`資料表中`NorthwindDataSet`內在`try` / `catch`區塊。
 
      [!code-csharp[VbRaddataSaving#9](../data-tools/codesnippet/CSharp/update-data-by-using-a-tableadapter_1.cs)]
      [!code-vb[VbRaddataSaving#9](../data-tools/codesnippet/VisualBasic/update-data-by-using-a-tableadapter_1.vb)]

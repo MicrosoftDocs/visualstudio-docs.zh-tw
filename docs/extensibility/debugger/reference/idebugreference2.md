@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugReference2 interface
 ms.assetid: 3cfed312-f532-4bce-84a5-1677c14567d7
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d34b7a915f2eb2bd1ddf9440c543d652de8eb892
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 66d35b636516df1052ffa2a70c25da79851dd833
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56713330"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66329660"
 ---
 # <a name="idebugreference2"></a>IDebugReference2
 此介面代表堆疊框架屬性或其他某個屬性的參考。
 
 > [!NOTE]
->  `IDebugReference2` 保留供未來使用，和所有其方法應該傳回`E_NOTIMPL`。
+> `IDebugReference2` 保留供未來使用，和所有其方法應該傳回`E_NOTIMPL`。
 
 ## <a name="syntax"></a>語法
 
@@ -57,7 +57,7 @@ IDebugReference2 : IUnknown
 ## <a name="remarks"></a>備註
 
 > [!NOTE]
->  這種使用 「 屬性 」 不應混淆與表示類別的成員變數雖然`IDebugReference2`可以表示這個實體。
+> 這種使用 「 屬性 」 不應混淆與表示類別的成員變數雖然`IDebugReference2`可以表示這個實體。
 
 - [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)表示的屬性，而`IDebugReference2`代表屬性時，通常是正在偵錯程式中的物件參考的參考。
 

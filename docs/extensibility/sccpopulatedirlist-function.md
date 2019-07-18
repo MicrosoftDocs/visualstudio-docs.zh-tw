@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - SccPopulateDirList function
 ms.assetid: dfff634b-b155-498b-a356-6eb252ac4fad
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a74d6008db15cc8cd89daf4882d8952006dc547d
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 9a6508b8cfde2f08eb40201973fec899ee11956b
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56711588"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66353543"
 ---
 # <a name="sccpopulatedirlist-function"></a>SccPopulateDirList 函式
 此函式會判斷哪些目錄和 （選擇性） 檔案會儲存在原始檔控制，提供要檢查的目錄清單。

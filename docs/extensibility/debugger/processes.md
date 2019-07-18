@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], processes
 ms.assetid: a6a1efdc-b243-40c8-a778-6f69f6b018be
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1453aadebfaacb6ff4232f02eb22d4e69a94c840
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 5c45fc70fe61c7221a8042d275dd44d69eb5d11e
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56710925"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66351488"
 ---
 # <a name="processes"></a>處理序
 在偵錯工具架構中，*程序*:

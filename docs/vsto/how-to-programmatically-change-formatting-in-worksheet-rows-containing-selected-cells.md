@@ -1,5 +1,5 @@
 ---
-title: HOW TO：以程式設計方式變更包含選取儲存格的工作表列格式
+title: 變更包含選取儲存格，透過程式碼的資料列中的格式
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,14 +14,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 52b96ce077ed2f45c22679c1be798ae8b2197e0a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: e77f555728ee89d7d202a35a91c9dbddba6224f3
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56644987"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401372"
 ---
-# <a name="how-to-programmatically-change-formatting-in-worksheet-rows-containing-selected-cells"></a>HOW TO：以程式設計方式變更包含選取儲存格的工作表列格式
+# <a name="how-to-programmatically-change-formatting-in-worksheet-rows-containing-selected-cells"></a>作法：以程式設計方式變更包含選取儲存格的工作表列格式
   您可以變更包含選取的儲存格，讓文字是粗體的整個資料列的字型。
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]

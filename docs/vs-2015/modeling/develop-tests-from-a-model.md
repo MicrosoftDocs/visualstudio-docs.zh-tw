@@ -1,30 +1,27 @@
 ---
 title: 透過模型開發測試 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - tests and requirements
 ms.assetid: 40f87192-ba85-4552-8804-314a678261ae
 caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: c0613e43816e7ef7036c5e13b7abafe90b451b81
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 9ab0d9ae382f9410418a98fea606eebbb236b157
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51787181"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823335"
 ---
 # <a name="develop-tests-from-a-model"></a>透過模型開發測試
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-您可以使用需求和架構模型來協助您組織整理系統及其元件的測試。 這種做法有助於確保測試使用者和其他利害關係人的重要需求，並且可協助您在需求變更時快速更新測試。 如果您使用 [!INCLUDE[TCMext](../includes/tcmext-md.md)]，則也可以維護模型與測試之間的連結。  
+您可以使用需求和架構模型來協助您組織整理系統及其元件的測試。 這種做法可協助您確保測試對於使用者和其他專案關係人來說非常重要的需求，並可協助您在需求變更時快速地更新測試。 如果您使用 [!INCLUDE[TCMext](../includes/tcmext-md.md)]，則也可以維護模型與測試之間的連結。  
   
  若要查看哪些版本的 Visual Studio 支援這些功能，請參閱[architecture and modeling tools 的版本支援](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。  
   
@@ -39,36 +36,36 @@ ms.locfileid: "51787181"
   
  子系統測試會將相同的準則套用到系統的主要元件。 每個元件都會與其他元件分開進行測試。 子系統測試著重在元件使用者介面或 API 上可見的行為。  
   
- 如需如何執行測試的詳細資訊，請參閱[測試應用程式](http://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)。  
+ 如需如何執行測試的詳細資訊，請參閱[測試應用程式](https://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)。  
   
 ## <a name="deriving-system-tests-from-a-requirements-model"></a>從需求模型衍生系統測試  
  您可以建立和維護系統測試與需求模型之間的關聯性。 若要建立此關聯性，請撰寫與需求模型主要項目對應的測試。 Visual Studio 透過讓您建立測試與模型各部分之間的連結，以協助您維護該關聯性。 如需需求模型的詳細資訊，請參閱 <<c0> [ 模型使用者需求](../modeling/model-user-requirements.md)。  
   
 ### <a name="write-tests-for-each-use-case"></a>撰寫每個使用案例的測試  
- 如果您使用 [!INCLUDE[TCMext](../includes/tcmext-md.md)]，則可以為需求模型中所定義的每個使用案例建立一組測試。 例如，如果您有「點餐」(Order a Meal) 使用案例 (其中包括「建立訂單」(Create Order) 和「新增訂單項目」(Add Item to Order)，則可以建立這些使用案例整體和更特定部分的測試。 如需有關使用案例的詳細資訊，請參閱 < [UML 使用案例圖： 方針](../modeling/uml-use-case-diagrams-guidelines.md)。  
+ 如果您使用 [!INCLUDE[TCMext](../includes/tcmext-md.md)]，則可以為需求模型中所定義的每個使用案例建立一組測試。 例如，如果您有「點餐」(Order a Meal) 使用案例 (其中包括「建立訂單」(Create Order) 和「新增訂單項目」(Add Item to Order)，則可以建立這些使用案例整體和更特定部分的測試。 如需有關使用案例的詳細資訊，請參閱[UML 使用案例圖：指導方針](../modeling/uml-use-case-diagrams-guidelines.md)。  
   
  這些方針可能十分有用：  
   
--   針對主要路徑和例外結果，每個使用案例都應該有數個測試。  
+- 針對主要路徑和例外結果，每個使用案例都應該有數個測試。  
   
--   描述需求模型中的使用案例時，定義其後置條件 (即達成的目標) 比詳述使用者遵循以達成目標的程序更為重要。 例如，「點餐」(Order a Meal) 的後置條件可能是餐廳正在準備客人的餐點，並且客人已付費。 後置條件是您的測試應該驗證的條件。  
+- 描述需求模型中的使用案例時，定義其後置條件 (即達成的目標) 比詳述使用者遵循以達成目標的程序更為重要。 例如，「點餐」(Order a Meal) 的後置條件可能是餐廳正在準備客人的餐點，並且客人已付費。 後置條件是您的測試應該驗證的條件。  
   
--   不同的測試是以後置條件的不同子句為基礎。 例如，建立不同的測試來通知餐廳有此訂單，以及取得客人的付款。 這項區隔具有下列優點：  
+- 不同的測試是以後置條件的不同子句為基礎。 例如，建立不同的測試來通知餐廳有此訂單，以及取得客人的付款。 這項區隔具有下列優點：  
   
-    -   不同層面的需求變更經常會獨立發生。 透過此方式，將測試分成不同的層面，即可在需求變更時輕鬆地更新測試。  
+  - 不同層面的需求變更經常會獨立發生。 透過此方式，將測試分成不同的層面，即可在需求變更時輕鬆地更新測試。  
+
+  - 如果開發計劃先實作使用案例的其中一個層面，再實作另一個層面，則可以在進行開發時個別啟用測試。  
   
-    -   如果開發計劃先實作使用案例的其中一個層面，再實作另一個層面，則可以在進行開發時個別啟用測試。  
-  
--   設計測試時，請分開選擇測試資料與判斷是否達到後置條件的程式碼或指令碼。 例如，簡單算術函式的測試可能是：輸入 4；驗證輸出是 2。 而是將指令碼設計為：選擇輸入；將輸出乘上它自己，並驗證結果是原始輸入。 這個樣式可讓您有不同的測試輸入，而不變更測試的主體。  
+- 設計測試時，請分開選擇測試資料與判斷是否達到後置條件的程式碼或指令碼。 例如，簡單算術函式的測試可能是：輸入 4;確認輸出會是 2。 相反地，設計為指令碼：選擇輸入;乘以本身的輸出，並確認結果是原始的輸入。 這個樣式可讓您有不同的測試輸入，而不變更測試的主體。  
   
 #### <a name="linking-tests-to-use-cases"></a>將測試連結至使用案例  
  如果您使用[!INCLUDE[TCMlong](../includes/tcmlong-md.md)]來設計和執行測試，您可以組織您的測試需求、 使用案例或使用者劇本工作項目底下。 您可以將這些工作項目連結至模型中的使用案例。 這可讓您快速追蹤測試的需求變更，並協助您追蹤每個使用案例的進度。  
   
 ###### <a name="to-link-tests-to-a-use-case"></a>將測試連結至使用案例  
   
-1. 在 [!INCLUDE[TCMlong](../includes/tcmlong-md.md)] 中，建立需求，並以它為測試套件的基礎。 若要了解如何這麼做，請參閱[測試應用程式](http://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)。  
+1. 在 [!INCLUDE[TCMlong](../includes/tcmlong-md.md)] 中，建立需求，並以它為測試套件的基礎。 若要了解如何這麼做，請參閱[測試應用程式](https://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)。  
   
-    您所建立的需求是 [!INCLUDE[vstsTfsShort](../includes/vststfsshort-md.md)] 中的工作項目。 根據您的專案與 [!INCLUDE[esprfound](../includes/esprfound-md.md)] 搭配使用的流程範本，它可能是使用者劇本、需求或使用案例工作項目。 如需詳細資訊，請參閱 <<c0> [ 使用 Visual Studio Team Services 或 Team Foundation Server 追蹤工作](http://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503)。  
+    您所建立的需求是 [!INCLUDE[vstsTfsShort](../includes/vststfsshort-md.md)] 中的工作項目。 根據您的專案與 [!INCLUDE[esprfound](../includes/esprfound-md.md)] 搭配使用的流程範本，它可能是使用者劇本、需求或使用案例工作項目。 如需詳細資訊，請參閱 <<c0> [ 使用 Visual Studio Team Services 或 Team Foundation Server 追蹤工作](https://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503)。  
   
 2. 將需求工作項目連結至模型中的一個或多個使用案例。  
   
@@ -109,14 +106,14 @@ Assert (countAfter == countBefore = 1);
   
  許多存取子和更新程式都已經可以透過應用程式的一般 API 使用。 但是，可能需要撰寫一些額外函式，才能啟用測試。 這些額外的存取子和更新程式有時稱為「測試檢測」。 因為它們根據系統內部設計，所以系統開發人員負責提供它們，測試人員則根據需求模型撰寫測試的程式碼。  
   
- 撰寫自動化測試時，您可以使用一般測試來包裝存取子和更新程式。 如需詳細資訊，請參閱 <<c0> [ 可執行檔使用一般測試建立自動化測試的回合](http://msdn.microsoft.com/library/b8dadaf4-4473-49c5-a0d9-46eca9e65d52)。  
+ 撰寫自動化測試時，您可以使用一般測試來包裝存取子和更新程式。 如需詳細資訊，請參閱 <<c0> [ 可執行檔使用一般測試建立自動化測試的回合](https://msdn.microsoft.com/library/b8dadaf4-4473-49c5-a0d9-46eca9e65d52)。  
   
 ### <a name="tests-for-business-rules"></a>商務規則的測試  
  有些需求未與任何一個使用案例直接相關。 例如，DinnerNow 公司可讓客人從許多「菜單」( Menu) 中進行選擇，但是需要每筆「」 Order 中，所有選擇的「項目」(Item) 都應該來自單一「「菜單」( Menu)。 關於需求類別模型中「訂單」 (Order)、「菜單」(Menu) 與項目」(Item) 之間的關聯，這個商務規則可以表示為非變異。  
   
  這類非變異規則不只控管目前定義的所有使用案例，同時控管稍後定義的任何其他使用案例。 因此，適用於將它與任何使用案例分開撰寫，以及與使用案例分開進行測試。  
   
- 您可以將非變異商務規則撰寫為類別圖中的註解。 如需詳細資訊，請參閱 < [UML 類別圖： 方針](../modeling/uml-class-diagrams-guidelines.md)。  
+ 您可以將非變異商務規則撰寫為類別圖中的註解。 如需詳細資訊，請參閱 [UML 類別圖表：指導方針](../modeling/uml-class-diagrams-guidelines.md)。  
   
  將註解連結至需求或使用者劇本工作項目 (其可以連結至 [!INCLUDE[TCMlong](../includes/tcmlong-md.md)] 中的測試套件)，即可將測試連結至商務規則。 如需詳細資訊，請參閱 <<c0> [ 將測試案例附加至模型項目](#Attaching)。  
   
@@ -130,7 +127,7 @@ Assert (countAfter == countBefore = 1);
  嘗試在每個訊息或動作之後驗證系統的狀態。 這可能需要其他檢測。  
   
 ## <a name="deriving-subsystem-tests-from-models"></a>從模型衍生子系統測試  
- 在大型系統的高階設計中，您可以識別元件或子系統。 這些代表可個別設計或位於不同電腦的組件，或是可以使用許多方式重新合併的可重複使用模組。 如需詳細資訊，請參閱 < [UML 元件圖： 方針](../modeling/uml-component-diagrams-guidelines.md)。  
+ 在大型系統的高階設計中，您可以識別元件或子系統。 這些代表可個別設計或位於不同電腦的組件，或是可以使用許多方式重新合併的可重複使用模組。 如需詳細資訊，請參閱[UML 元件圖：指導方針](../modeling/uml-component-diagrams-guidelines.md)。  
   
  您可以將用於整個系統的相同準則套用至每個主要元件。 在大型專案中，每個元件都可以有它自己的需求模型。 在較小的專案中，可以建立架構模型或高階設計，以顯示主要元件和其互動。 如需詳細資訊，請參閱 <<c0> [ 您的應用程式架構模型](../modeling/model-your-app-s-architecture.md)。  
   
@@ -150,38 +147,35 @@ Assert (countAfter == countBefore = 1);
   
  從測試的觀點，需求模型可以視為測試的縮寫。 因此，務必維護測試與整個專案中模型之間的關聯性。  
   
-##  <a name="Attaching"></a> 將測試案例附加至模型項目  
+## <a name="Attaching"></a> 將測試案例附加至模型項目  
  如果您的專案使用 [!INCLUDE[TCMlong](../includes/tcmlong-md.md)]，則可以將測試連結至模型中的項目。 這可讓您快速找出需求中變更所影響的測試，並協助您追蹤已實現需求的範圍。  
   
  您可以將測試連結至所有類型的項目。 以下是一些範例：  
   
--   將使用案例連結至可執行它的測試。  
+- 將使用案例連結至可執行它的測試。  
   
--   在連結至使用案例的註解中撰寫使用案例後置條件的子句或目標，然後將測試連結至每個註解。  
+- 在連結至使用案例的註解中撰寫使用案例後置條件的子句或目標，然後將測試連結至每個註解。  
   
--   在類別圖或活動圖的註解中撰寫非變異規則，並將它們連結至測試。  
+- 在類別圖或活動圖的註解中撰寫非變異規則，並將它們連結至測試。  
   
--   將測試連結至活動圖或個別活動。  
+- 將測試連結至活動圖或個別活動。  
   
--   將測試套件連結至它所測試的元件或子系統。  
+- 將測試套件連結至它所測試的元件或子系統。  
   
 #### <a name="to-link-tests-to-a-model-element-or-relationship"></a>將測試連結至模型項目或關聯性  
   
-1.  在 [!INCLUDE[TCMlong](../includes/tcmlong-md.md)] 中，建立需求，並以它為測試套件的基礎。 若要了解如何這麼做，請參閱[測試應用程式](http://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)。  
+1. 在 [!INCLUDE[TCMlong](../includes/tcmlong-md.md)] 中，建立需求，並以它為測試套件的基礎。 若要了解如何這麼做，請參閱[測試應用程式](https://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)。  
   
-     您所建立的需求是 [!INCLUDE[vstsTfsShort](../includes/vststfsshort-md.md)] 中的工作項目。 根據您的專案與 [!INCLUDE[esprfound](../includes/esprfound-md.md)] 搭配使用的流程範本，它可能是使用者劇本、需求或使用案例工作項目。 如需詳細資訊，請參閱 <<c0> [ 使用 Visual Studio Team Services 或 Team Foundation Server 追蹤工作](http://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503)。  
+     您所建立的需求是 [!INCLUDE[vstsTfsShort](../includes/vststfsshort-md.md)] 中的工作項目。 根據您的專案與 [!INCLUDE[esprfound](../includes/esprfound-md.md)] 搭配使用的流程範本，它可能是使用者劇本、需求或使用案例工作項目。 如需詳細資訊，請參閱 <<c0> [ 使用 Visual Studio Team Services 或 Team Foundation Server 追蹤工作](https://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503)。  
   
-2.  將需求工作項目連結至模型中的一個或多個項目。  
+2. 將需求工作項目連結至模型中的一個或多個項目。  
   
      在模型圖中，以滑鼠右鍵按一下項目、 註解或關聯性，然後按一下**連結至工作項目**。 如需詳細資訊，請參閱 <<c0> [ 連結模型項目和工作項目](../modeling/link-model-elements-and-work-items.md)。  
   
-3.  加入測試套件 (驗證模型項目中所表示的需求的測試案例)。  
+3. 加入測試套件 (驗證模型項目中所表示的需求的測試案例)。  
   
 ## <a name="see-also"></a>另請參閱  
  [建立應用程式模型](../modeling/create-models-for-your-app.md)   
  [模型使用者需求](../modeling/model-user-requirements.md)   
  [您的應用程式架構模型](../modeling/model-your-app-s-architecture.md)   
  [分析架構並製作架構模型](../modeling/analyze-and-model-your-architecture.md)
-
-
-

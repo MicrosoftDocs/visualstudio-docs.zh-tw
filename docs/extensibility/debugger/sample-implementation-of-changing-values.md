@@ -6,36 +6,36 @@ helpviewer_keywords:
 - expression evaluation, local values
 - debugging [Debugging SDK], expression evaluation
 ms.assetid: ee2d955b-12ca-4f27-89aa-c2d0e768b6b6
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7f90ae35a002517c34af39cb53deec05a458f716
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: f500ecd327fd641af2bdf881a26e35024d2b856d
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56680525"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66315029"
 ---
 # <a name="sample-implementation-of-changing-values"></a>變更值的範例實作
 > [!IMPORTANT]
->  在 Visual Studio 2015 中，這種實作運算式評估工具已被取代。 實作 CLR 運算式評估工具的詳細資訊，請參閱[CLR 運算式評估工具](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)並[Managed 運算式評估工具範例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。
+> 在 Visual Studio 2015 中，這種實作運算式評估工具已被取代。 實作 CLR 運算式評估工具的詳細資訊，請參閱[CLR 運算式評估工具](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)並[Managed 運算式評估工具範例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。
 
  顯示在每次本機**區域變數**時段[IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md)與其相關聯的物件。 這`IDebugProperty2`物件包含區域的名稱、 值和型別。 當使用者變更區域變數的值時，Visual Studio 會呼叫[SetValueAsString](../../extensibility/debugger/reference/idebugproperty2-setvalueasstring.md)来更新的本機記憶體中的值。 在此範例中，表示本機`CFieldProperty`可實作類別`IDebugProperty2`介面。
 
 > [!NOTE]
->  針對**監看式**並**快速監看式**運算式，要變更的值由`CValueProperty`MyCEE 範例中的類別。 不過，實作`IDebugProperty2::SetValueAsString`相同如下所示。
+> 針對**監看式**並**快速監看式**運算式，要變更的值由`CValueProperty`MyCEE 範例中的類別。 不過，實作`IDebugProperty2::SetValueAsString`相同如下所示。
 
  實作`IDebugProperty2::SetValueAsString`會執行下列工作：
 
-1.  計算用來產生值的運算式。
+1. 計算用來產生值的運算式。
 
-2.  繫結相關聯[IDebugField](../../extensibility/debugger/reference/idebugfield.md)其記憶體位置和產生的物件[IDebugObject](../../extensibility/debugger/reference/idebugobject.md)物件。
+2. 繫結相關聯[IDebugField](../../extensibility/debugger/reference/idebugfield.md)其記憶體位置和產生的物件[IDebugObject](../../extensibility/debugger/reference/idebugobject.md)物件。
 
-3.  將值轉換成一系列的位元組。
+3. 將值轉換成一系列的位元組。
 
-4.  呼叫[SetValue](../../extensibility/debugger/reference/idebugobject-setvalue.md)在記憶體中儲存的位元組。
+4. 呼叫[SetValue](../../extensibility/debugger/reference/idebugobject-setvalue.md)在記憶體中儲存的位元組。
 
 ## <a name="managed-code"></a>Managed 程式碼
  下列程式碼是實作`IDebugProperty2::SetValueAsString`managed 程式碼中。

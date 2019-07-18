@@ -1,5 +1,5 @@
 ---
-title: HOW TO：建立多專案範本 |Microsoft Docs
+title: 作法：建立多專案範本 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -13,21 +13,21 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1059e4035e620d9feb0498bacf5516eed99b5ba3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 394c9adf6794ae6e6c547a46e1fe469e0c642ba8
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54755335"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68176688"
 ---
-# <a name="how-to-create-multi-project-templates"></a>如何：建立多專案的範本
+# <a name="how-to-create-multi-project-templates"></a>HOW TO：建立多專案範本
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-多專案範本是做為兩個以上專案的容器使用。 從 [新增專案] 對話方塊建立，根據多專案範本的專案時，範本中的每個專案都會新增至解決方案。  
+多專案範本是做為兩個以上專案的容器使用。 從 [新增專案]  對話方塊建立，根據多專案範本的專案時，範本中的每個專案都會新增至解決方案。  
   
  多專案範本必須包含下列項目，且壓縮成 .zip 檔案：  
   
-- 整個多專案範本的根 .vstemplate 檔案。 這個根 .vstemplate 檔案中包含 [新增專案] 對話方塊顯示的中繼資料，並指定何處可找到此範本中之專案的 .vstemplate 檔案。 這個檔案必須位於 .zip 檔案的根目錄。  
+- 整個多專案範本的根 .vstemplate 檔案。 這個根 .vstemplate 檔案中包含 [新增專案]  對話方塊顯示的中繼資料，並指定何處可找到此範本中之專案的 .vstemplate 檔案。 這個檔案必須位於 .zip 檔案的根目錄。  
   
 - 包含完整專案範本所需之檔案的一或多個資料夾。 這包括專案的所有程式碼檔案，以及專案的 .vstemplate 檔案。  
   
@@ -73,21 +73,21 @@ ms.locfileid: "54755335"
   
   多專案範本的行為也與一般範本不同。 多專案範本具有下列獨特的特性：  
   
-- 多專案範本中的個別專案不能由 [新增專案] 對話方塊來指派名稱。 請改用 `ProjectTemplateLink` 項目上的 `ProjectName` 屬性來指定每個專案的名稱。 如需詳細資訊，請參閱下節的第一個範例。  
+- 多專案範本中的個別專案不能由 [新增專案]  對話方塊來指派名稱。 請改用 `ProjectTemplateLink` 項目上的 `ProjectName` 屬性來指定每個專案的名稱。 如需詳細資訊，請參閱下節的第一個範例。  
   
 - 多專案範本可以包含以不同語言撰寫的專案，但整個範本本身只能使用 `ProjectType` 項目放在一個分類。  
   
 ### <a name="to-create-a-multi-project-template"></a>建立多專案範本  
   
-1.  建立要包含在多專案範本的專案。  
+1. 建立要包含在多專案範本的專案。  
   
-2.  建立每個專案的 .vstemplate 檔案。 如需詳細資訊，請參閱[如何：建立專案範本](../ide/how-to-create-project-templates.md)。  
+2. 建立每個專案的 .vstemplate 檔案。 如需詳細資訊，請參閱[如何：建立專案範本](../ide/how-to-create-project-templates.md)。  
   
-3.  建立根 .vstemplate 檔案來包含多專案範本的中繼資料。 如需詳細資訊，請參閱下節的第一個範例。  
+3. 建立根 .vstemplate 檔案來包含多專案範本的中繼資料。 如需詳細資訊，請參閱下節的第一個範例。  
   
-4.  選取要包含在範本中的檔案和資料夾，在選取項目上按一下滑鼠右鍵，按一下 [傳送到]，然後按一下 [壓縮的 (zipped) 資料夾]。 檔案和資料夾即會壓縮成 .zip 檔案。  
+4. 選取要包含在範本中的檔案和資料夾，在選取項目上按一下滑鼠右鍵，按一下 [傳送到]  ，然後按一下 [壓縮的 (zipped) 資料夾]  。 檔案和資料夾即會壓縮成 .zip 檔案。  
   
-5.  將 .zip 範本檔放在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 專案範本目錄。 此目錄預設為 \My Documents\Visual Studio <版本>\Templates\ProjectTemplates\\。  
+5. 將 .zip 範本檔放在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 專案範本目錄。 此目錄預設為 \My Documents\Visual Studio <版本>  \Templates\ProjectTemplates\\。  
   
 ## <a name="example"></a>範例  
  這個範例將示範基本的多專案根 .vstemplate 檔案。 在這個範例中，範本包含兩個專案 `My Windows Application` 和 `My Class Library`。 `ProjectName` 項目的 `ProjectTemplateLink` 屬性會設定 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的名稱，以指派此專案。 如果 `ProjectName` 屬性不存在，則 .vstemplate 檔案的名稱會做為專案名稱。  
@@ -149,7 +149,7 @@ ms.locfileid: "54755335"
 </VSTemplate>  
 ```  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [建立專案和項目範本](../ide/creating-project-and-item-templates.md)   
  [Visual Studio 範本結構描述參考](../extensibility/visual-studio-template-schema-reference.md)   
  [如何：建立專案範本](../ide/how-to-create-project-templates.md)   

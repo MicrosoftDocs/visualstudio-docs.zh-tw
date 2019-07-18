@@ -1,27 +1,22 @@
 ---
-title: 如何： 隱藏所產生的程式碼的程式碼分析警告 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：隱藏所產生的程式碼的程式碼分析警告 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 ms.assetid: 3a96434e-d419-43a7-81ba-95cccac835b8
 caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 07858183af427e2b67e1e0f63d1f8889caf72fbe
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+ms.openlocfilehash: 9949a72abc46f2212fe448e193a06cce90b6df7c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49293737"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438979"
 ---
-# <a name="how-to-suppress-code-analysis-warnings-for-generated-code"></a>如何：隱藏所產生程式碼的程式碼分析警告
+# <a name="how-to-suppress-code-analysis-warnings-for-generated-code"></a>HOW TO：隱藏所產生程式碼的程式碼分析警告
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Managed 程式碼編譯器通常會產生加入至專案，以協助快速的程式碼開發的程式碼。 此外，開發人員通常會使用第三方工具來幫助您快速開發應用程式。 這些工具也會產生程式碼加入至專案。  
@@ -31,15 +26,12 @@ Managed 程式碼編譯器通常會產生加入至專案，以協助快速的程
  **隱藏所產生的程式碼的結果**專案的程式碼分析屬性頁面上的核取方塊可讓您選取您是否想要看到從協力廠商工具所產生的程式碼的程式碼分析警告。  
   
 > [!NOTE]
->  此選項無法隱藏時的錯誤和警告會出現在表單和範本程式碼分析錯誤和警告，從產生的程式碼。 您可以同時檢視及維護表單或範本的原始程式碼。  
+> 此選項無法隱藏時的錯誤和警告會出現在表單和範本程式碼分析錯誤和警告，從產生的程式碼。 您可以同時檢視及維護表單或範本的原始程式碼。  
   
 ### <a name="to-suppress-warnings-for-generated-code-in-a-project"></a>若要隱藏的警告，請在專案中產生程式碼  
   
-1.  以滑鼠右鍵按一下方案總管 中的專案，然後按一下**屬性**。  
+1. 以滑鼠右鍵按一下方案總管 中的專案，然後按一下**屬性**。  
   
-2.  按一下 **程式碼分析**。  
+2. 按一下 **程式碼分析**。  
   
-3.  選取 [**隱藏所產生的程式碼的結果**] 核取方塊。
-
-
-
+3. 選取 [**隱藏所產生的程式碼的結果**] 核取方塊。

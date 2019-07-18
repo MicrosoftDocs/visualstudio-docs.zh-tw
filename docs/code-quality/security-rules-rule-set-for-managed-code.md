@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 52a7944de897d48322f78e4842756e4389e0026f
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 72182607369094781050b94b1003398479dfe2cb
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55911240"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65459139"
 ---
 # <a name="security-rules-rule-set-for-managed-code"></a>適用於 Managed 程式碼的安全性規則規則集
 您應該包含 Microsoft 安全性規則規則集以最大化所報告的潛在安全性問題數目。
@@ -63,3 +63,25 @@ ms.locfileid: "55911240"
 |[CA2147](../code-quality/ca2147-transparent-methods-may-not-use-security-asserts.md)|CA2147：透明方法不可以使用安全性判斷提示|
 |[CA2149](../code-quality/ca2149-transparent-methods-must-not-call-into-native-code.md)|透明方法不可以呼叫機器碼|
 |[CA2210](../code-quality/ca2210-assemblies-should-have-valid-strong-names.md)|組件應該具備有效的強式名稱|
+|[CA2300](ca2300-do-not-use-insecure-deserializer-binaryformatter.md)|請勿使用不安全的還原序列化程式 BinaryFormatter|
+|[CA2301](ca2301-do-not-call-binaryformatter-deserialize-without-first-setting-binaryformatter-binder.md)|未先設定 BinaryFormatter.Binder 之前，請勿呼叫 BinaryFormatter.Deserialize|
+|[CA2302](ca2302-ensure-binaryformatter-binder-is-set-before-calling-binaryformatter-deserialize.md)|呼叫 BinaryFormatter.Deserialize 之前，請務必先設定 BinaryFormatter.Binder|
+|[CA2305](ca2305-do-not-use-insecure-deserializer-losformatter.md)|請勿使用不安全的還原序列化程式 LosFormatter|
+|[CA2310](ca2310-do-not-use-insecure-deserializer-netdatacontractserializer.md)|請勿使用不安全的還原序列化程式 NetDataContractSerializer|
+|[CA2311](ca2311-do-not-deserialize-without-first-setting-netdatacontractserializer-binder.md)|無法還原序列化而不需要第一個設定 NetDataContractSerializer.Binder|
+|[CA2312](ca2312-ensure-netdatacontractserializer-binder-is-set-before-deserializing.md)|請確定 NetDataContractSerializer.Binder 設定後再進行還原序列化|
+|[CA2315](ca2315-do-not-use-insecure-deserializer-objectstateformatter.md)|請勿使用不安全的還原序列化程式 ObjectStateFormatter|
+|[CA2321](ca2321.md)|無法還原序列化使用 SimpleTypeResolver JavaScriptSerializer 與|
+|[CA2322](ca2322.md)|請確定 JavaScriptSerializer SimpleTypeResolver 使用未初始化之前還原序列化|
+|[CA3001](../code-quality/ca3001-review-code-for-sql-injection-vulnerabilities.md)|檢閱程式碼是否有 SQL 插入式攻擊弱點|
+|[CA3002](../code-quality/ca3002-review-code-for-xss-vulnerabilities.md)|檢閱程式碼是否有 XSS 弱點|
+|[CA3003](../code-quality/ca3003-review-code-for-file-path-injection-vulnerabilities.md)|檢閱程式碼是否有檔案路徑插入式攻擊弱點|
+|[CA3004](../code-quality/ca3004-review-code-for-information-disclosure-vulnerabilities.md)|檢閱程式碼是否有資訊洩漏弱點|
+|[CA3005](../code-quality/ca3005-review-code-for-ldap-injection-vulnerabilities.md)|檢閱程式碼是否有 LDAP 插入式攻擊弱點|
+|[CA3006](../code-quality/ca3006-review-code-for-process-command-injection-vulnerabilities.md)|檢閱程式碼是否有處理序命令插入式攻擊弱點|
+|[CA3007](../code-quality/ca3007-review-code-for-open-redirect-vulnerabilities.md)|檢閱程式碼是否有開放式重新導向弱點|
+|[CA3008](../code-quality/ca3008-review-code-for-xpath-injection-vulnerabilities.md)|檢閱程式碼是否有 XPath 插入式攻擊弱點|
+|[CA3009](../code-quality/ca3009-review-code-for-xml-injection-vulnerabilities.md)|檢閱程式碼是否有 XML 插入式攻擊弱點|
+|[CA3010](../code-quality/ca3010-review-code-for-xaml-injection-vulnerabilities.md)|檢閱程式碼是否有 XAML 插入式攻擊弱點|
+|[CA3011](../code-quality/ca3011-review-code-for-dll-injection-vulnerabilities.md)|檢閱程式碼是否有 DLL 插入式攻擊弱點|
+|[CA3012](../code-quality/ca3012-review-code-for-regex-injection-vulnerabilities.md)|檢閱程式碼是否有 regex 插入式攻擊弱點|

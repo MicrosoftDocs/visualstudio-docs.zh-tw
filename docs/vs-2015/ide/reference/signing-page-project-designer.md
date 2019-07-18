@@ -20,17 +20,16 @@ caps.latest.revision: 39
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 59f8cb15db6f93c76275fd1d8318ae04df998cf7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: ba55795e1f1b5f54b2a863ec0163a796111d9800
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54788722"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65689473"
 ---
 # <a name="signing-page-project-designer"></a>專案設計工具、簽署頁
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 使用 [專案設計工具]的 [簽署] 頁面可簽署應用程式和部署資訊清單，也可簽署組件 (強式名稱簽署)。  
   
  請注意，雖然簽署應用程式和部署資訊清單與簽署組件都是在 [簽署] 頁面上執行，但是這兩個工作的程序不同。  
@@ -41,7 +40,7 @@ ms.locfileid: "54788722"
   
 ## <a name="application-and-deployment-manifest-signing"></a>應用程式和部署資訊清單簽署  
  [簽署 ClickOnce 資訊清單] 核取方塊  
- 選取這個核取方塊，可使用公開/私密金鑰組來簽署應用程式和部署資訊清單。 如需做法的詳細資訊，請參閱[如何：簽署應用程式和部署資訊清單](../../ide/how-to-sign-application-and-deployment-manifests.md)。  
+ 選取這個核取方塊，可使用公開/私密金鑰組來簽署應用程式和部署資訊清單。 如需這個做法的詳細資訊，請參閱[如何：簽署應用程式與部署資訊清單](../../ide/how-to-sign-application-and-deployment-manifests.md)。  
   
  [從存放區選取] 按鈕  
  可讓您從目前使用者的個人憑證存放區中選取現有憑證。 您可以選取下列其中一個憑證來簽署您的應用程式和部署資訊清單。  
@@ -67,9 +66,9 @@ ms.locfileid: "54788722"
   
 ## <a name="assembly-signing"></a>組件簽署  
  [簽署組件] 核取方塊  
- 選取這個核取方塊可簽署組件並建立強式名稱金鑰檔。 如需使用 [專案設計工具] 簽署組件的詳細資訊，請參閱[如何：簽署組件 (Visual Studio)](http://msdn.microsoft.com/f468a7d3-234c-4353-924d-8e0ae5896564)。  
+ 選取這個核取方塊可簽署組件並建立強式名稱金鑰檔。 如需使用 [專案設計工具] 簽署組件的詳細資訊，請參閱[如何：簽署組件 (Visual Studio)](https://msdn.microsoft.com/f468a7d3-234c-4353-924d-8e0ae5896564)。  
   
- 這個選項會使用 [!INCLUDE[winsdklong](../../includes/winsdklong-md.md)] 所提供的 Al.exe 工具來簽署組件。 如需 Al.exe 的詳細資訊，請參閱[如何：使用強式名稱簽署組件](http://msdn.microsoft.com/library/2c30799a-a826-46b4-a25d-c584027a6c67)。  
+ 這個選項會使用 [!INCLUDE[winsdklong](../../includes/winsdklong-md.md)] 所提供的 Al.exe 工具來簽署組件。 如需 Al.exe 的詳細資訊，請參閱[如何：使用強式名稱簽署組件](https://msdn.microsoft.com/library/2c30799a-a826-46b4-a25d-c584027a6c67)。  
   
  [選擇強式名稱金鑰檔] 清單  
  可讓您指定用來簽署組件的新或現有強式名稱金鑰檔。 選取 [\<瀏覽...>]，以選取現有金鑰檔。  
@@ -84,16 +83,16 @@ ms.locfileid: "54788722"
  [僅延遲簽署] 核取方塊  
  選取這個核取方塊可啟用延遲簽署。  
   
- 請注意，延遲簽署專案將無法執行，也無法進行偵錯。 不過，您可以搭配使用 [Sn.exe (強式名稱工具)](http://msdn.microsoft.com/library/c1d2b532-1b8e-4c7a-8ac5-53b801135ec6) 與 `-Vr` 選項，以在開發期間略過驗證。  
+ 請注意，延遲簽署專案將無法執行，也無法進行偵錯。 不過，您可以搭配使用 [Sn.exe (強式名稱工具)](https://msdn.microsoft.com/library/c1d2b532-1b8e-4c7a-8ac5-53b801135ec6) 與 `-Vr` 選項，以在開發期間略過驗證。  
   
 > [!NOTE]
->  當您簽署組件時，不一定可以存取私密金鑰。 例如，組織可能會有開發人員無法每日存取的嚴密保護金鑰組。 公開金鑰可能可以使用，但只有少數人才能存取私密金鑰。 在這類情況下，您可以使用「延遲」或「部分簽署」提供公開金鑰，並將私密金鑰的新增延遲到交付組件時。  
+> 當您簽署組件時，不一定可以存取私密金鑰。 例如，組織可能會有開發人員無法每日存取的嚴密保護金鑰組。 公開金鑰可能可以使用，但只有少數人才能存取私密金鑰。 在這類情況下，您可以使用「延遲」或「部分簽署」提供公開金鑰，並將私密金鑰的新增延遲到交付組件時。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [專案屬性參考](../../ide/reference/project-properties-reference.md)   
  [管理組件和資訊清單簽署](../../ide/managing-assembly-and-manifest-signing.md)   
- [Managed 應用程式的強式名稱簽章](http://msdn.microsoft.com/5fef3490-c519-4363-94fd-8b1ad260dab5)   
+ [Managed 應用程式的強式名稱簽章](https://msdn.microsoft.com/5fef3490-c519-4363-94fd-8b1ad260dab5)   
  [如何：簽署應用程式和部署資訊清單](../../ide/how-to-sign-application-and-deployment-manifests.md)   
- [如何：簽署組件 (Visual Studio)](http://msdn.microsoft.com/f468a7d3-234c-4353-924d-8e0ae5896564)   
- [如何：使用強式名稱簽署組件](http://msdn.microsoft.com/library/2c30799a-a826-46b4-a25d-c584027a6c67)   
- [強式名稱的組件](http://msdn.microsoft.com/library/d4a80263-f3e0-4d81-9b61-f0cbeae3797b)
+ [如何：簽署組件 (Visual Studio)](https://msdn.microsoft.com/f468a7d3-234c-4353-924d-8e0ae5896564)   
+ [如何：簽署為強式名稱組件](https://msdn.microsoft.com/library/2c30799a-a826-46b4-a25d-c584027a6c67)   
+ [強式名稱的組件](https://msdn.microsoft.com/library/d4a80263-f3e0-4d81-9b61-f0cbeae3797b)

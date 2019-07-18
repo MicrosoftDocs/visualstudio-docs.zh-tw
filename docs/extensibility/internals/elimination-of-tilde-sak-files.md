@@ -7,17 +7,17 @@ helpviewer_keywords:
 - ~sak files
 - source control plug-ins, ~SAK files
 ms.assetid: 5277b5fa-073b-4bd1-8ba1-9dc913aa3c50
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 99d776e7d9891ca231fde4531b558de66568904f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: e409a08ba295bb55eb1fcfcd2a048a9bdb5ea7c9
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56641464"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66327529"
 ---
 # <a name="elimination-of-sak-files"></a>消除 ~ SAK 檔案
 在 原始檔控制外掛程式 API 1.2 *~ SAK*功能旗標已取代檔案和新函式來偵測是否原始檔控制外掛程式支援*MSSCCPRJ*檔案和共用簽出。
@@ -48,7 +48,7 @@ Visual Studio.NET 2003年建立暫存檔案前面加上 *~ SAK*。 這些檔案�
  **[HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl]DoNotCreateTemporaryFilesInSourceControl** = *dword:00000001*
 
 > [!NOTE]
->  如果此登錄機碼設為*dword:00000000*，它就相當於索引鍵不存在，正在 Visual Studio 仍會嘗試建立暫存檔案。 不過，如果登錄機碼設為*dword: 00000001*，Visual Studio 不會嘗試建立暫存檔案。 而是它會假設原始檔控制外掛程式不支援*MSSCCPRJ.SCC*檔案，並不支援共用簽出。
+> 如果此登錄機碼設為*dword:00000000*，它就相當於索引鍵不存在，正在 Visual Studio 仍會嘗試建立暫存檔案。 不過，如果登錄機碼設為*dword: 00000001*，Visual Studio 不會嘗試建立暫存檔案。 而是它會假設原始檔控制外掛程式不支援*MSSCCPRJ.SCC*檔案，並不支援共用簽出。
 
 ## <a name="see-also"></a>另請參閱
 - [原始檔控制外掛程式 API 版本 1.2 中最新消息](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)

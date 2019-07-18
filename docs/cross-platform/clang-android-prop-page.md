@@ -44,11 +44,11 @@ f1_keywords:
 ms.workload:
 - xplat-cplusplus
 ms.openlocfilehash: 055ec15deed2e5071c50d9903779d00030e07b02
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54956229"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62819912"
 ---
 # <a name="clang-project-properties-android-c"></a>Clang 專案屬性 (Android C++)
 

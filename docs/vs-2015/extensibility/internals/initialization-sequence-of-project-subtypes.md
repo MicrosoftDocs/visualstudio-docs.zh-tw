@@ -1,26 +1,21 @@
 ---
 title: 專案子類型的初始化順序 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - project subtypes, initialization sequence
 ms.assetid: f657f8c3-5e68-4308-9971-e81e3099ba29
 caps.latest.revision: 16
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 53c0a474a5a5caf887599bc50e623bd25e7be782
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: c5594d54c188c2f561dd66229e808e48068ba41a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51746516"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68192663"
 ---
 # <a name="initialization-sequence-of-project-subtypes"></a>專案子類型的初始化順序
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -36,7 +31,7 @@ ms.locfileid: "51746516"
   
     下列詳細資料的初始化步驟。  
   
-   1.  環境的實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsCreateAggregateProject.CreateAggregateProject%2A>方法呼叫 'HrCreateInnerProj' ' 和下列函式宣告的方法：  
+   1. 環境的實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsCreateAggregateProject.CreateAggregateProject%2A>方法呼叫 'HrCreateInnerProj' ' 和下列函式宣告的方法：  
   
        ```  
        HRESULT HrCreateInnerProj  
@@ -55,13 +50,13 @@ ms.locfileid: "51746516"
   
         當呼叫此函式是第一次，也就是最外層的專案子類型參數`pOuter`並`pOwner`會傳入`null`和函式會將最外層的專案子類型`IUnknown`來`pOuter`。  
   
-   2.  接下來會呼叫環境`HrCreateInnerProj`函式清單中的第二個專案類型 GUID。 此 GUID 對應至朝基底的專案中的彙總順序逐步執行的第二個內部專案子類型。  
+   2. 接下來會呼叫環境`HrCreateInnerProj`函式清單中的第二個專案類型 GUID。 此 GUID 對應至朝基底的專案中的彙總順序逐步執行的第二個內部專案子類型。  
   
-   3.  `pOuter`現在會指向`IUnknown`最外層的專案子類型的並`HrCreateInnerProj`呼叫您實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProjectFactory.PreCreateForOuter%2A>後面接著呼叫您實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProject.SetInnerProject%2A>。 在 <xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProjectFactory.PreCreateForOuter%2A>您傳入的控制的方法`IUnknown`最外層的專案子類型的`pOuter`。 擁有的專案 （內部專案子類型），就必須建立它的彙總的專案物件。 在 <xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProject.SetInnerProject%2A>方法實作您所傳遞的指標`IUnknown`內部專案正在彙總。 這兩種方法建立彙總物件，並將您的實作必須遵循 COM 彙總規則，以確保專案子類型不結束設定保存至其本身的參考計數。  
+   3. `pOuter`現在會指向`IUnknown`最外層的專案子類型的並`HrCreateInnerProj`呼叫您實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProjectFactory.PreCreateForOuter%2A>後面接著呼叫您實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProject.SetInnerProject%2A>。 在 <xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProjectFactory.PreCreateForOuter%2A>您傳入的控制的方法`IUnknown`最外層的專案子類型的`pOuter`。 擁有的專案 （內部專案子類型），就必須建立它的彙總的專案物件。 在 <xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProject.SetInnerProject%2A>方法實作您所傳遞的指標`IUnknown`內部專案正在彙總。 這兩種方法建立彙總物件，並將您的實作必須遵循 COM 彙總規則，以確保專案子類型不結束設定保存至其本身的參考計數。  
   
-   4.  `HrCreateInnerProj` 呼叫您實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProjectFactory.PreCreateForOuter%2A>。 在這種方法，專案子類型會會其初始化工作。 您可以比方說，註冊方案中的事件<xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProject.InitializeForOuter%2A>。  
+   4. `HrCreateInnerProj` 呼叫您實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProjectFactory.PreCreateForOuter%2A>。 在這種方法，專案子類型會會其初始化工作。 您可以比方說，註冊方案中的事件<xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProject.InitializeForOuter%2A>。  
   
-   5.  `HrCreateInnerProj` 被稱為遞迴運作，直到清單中的最後一個 GUID （基底的專案） 為止。 針對每個這些呼叫中，會重複執行步驟，c 到 d。 `pOuter` 最外層的專案子類型會指向`IUnknown`彙總的每個層級。  
+   5. `HrCreateInnerProj` 被稱為遞迴運作，直到清單中的最後一個 GUID （基底的專案） 為止。 針對每個這些呼叫中，會重複執行步驟，c 到 d。 `pOuter` 最外層的專案子類型會指向`IUnknown`彙總的每個層級。  
   
    下列範例詳細說明以程式設計方式的程序中的近似表示<xref:Microsoft.VisualStudio.Shell.Interop.IVsCreateAggregateProject.CreateAggregateProject%2A>方法，因為它藉由環境。 程式碼只是一個範例;它不是在編譯和錯誤的所有檢查已移除為了清楚起見。  
   
@@ -156,4 +151,3 @@ HRESULT HrCreateInnerProj
 ## <a name="see-also"></a>另請參閱  
  <xref:Microsoft.VisualStudio.Shell.Flavor>   
  [專案子類型](../../extensibility/internals/project-subtypes.md)
-

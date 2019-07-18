@@ -1,14 +1,9 @@
 ---
-title: CONTEXT_INFO_FIELDS |Microsoft Docs
-ms.custom: ''
+title: CONTEXT_INFO_FIELDS | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - CONTEXT_INFO_FIELDS
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: ef436bd3-738e-47e8-828c-8febce752439
 caps.latest.revision: 14
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 5169ff103b823067d64c58a3f6223220f67a3d52
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: fbfa24733644067b3f79fc7b6e8450df2130116d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51734217"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68179960"
 ---
 # <a name="contextinfofields"></a>CONTEXT_INFO_FIELDS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -85,12 +80,11 @@ public enum enum_CONTEXT_INFO_FIELDS {
 ## <a name="requirements"></a>需求  
  標頭： msdbg.h  
   
- 命名空間： Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間：Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
  [列舉型別](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md)   
  [GetInfo](../../../extensibility/debugger/reference/idebugmemorycontext2-getinfo.md)
-

@@ -9,23 +9,23 @@ helpviewer_keywords:
 - <ProjectItem> element [Visual Studio item templates]
 - ProjectItem element [Visual Studio item templates]
 ms.assetid: 9ed94112-0c38-49df-b728-0dd2d0d1eb47
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b1d09982b721e720301493fd062056cbf8d6cf8a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 30446b1aa32b31c640a8f56142dc60fcff4a5458
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56687974"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66336004"
 ---
 # <a name="projectitem-element-visual-studio-item-templates"></a>ProjectItem 項目 （Visual Studio 項目範本）
 指定項目範本中所包含的檔案。
 
 > [!NOTE]
->  `ProjectItem`元素接受不同的屬性，根據該範本是否為專案或項目。 本主題說明`ProjectItem`項目的項目。 如需說明`ProjectItem`項目專案範本，請參閱[ProjectItem 項目 （Visual Studio 專案範本）](../extensibility/projectitem-element-visual-studio-project-templates.md)。
+> `ProjectItem`元素接受不同的屬性，根據該範本是否為專案或項目。 本主題說明`ProjectItem`項目的項目。 如需說明`ProjectItem`項目專案範本，請參閱[ProjectItem 項目 （Visual Studio 專案範本）](../extensibility/projectitem-element-visual-studio-project-templates.md)。
 
  \<VSTemplate> \<TemplateContent> \<ProjectItem>
 

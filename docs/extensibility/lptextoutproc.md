@@ -11,17 +11,17 @@ helpviewer_keywords:
 - LPTEXTOUTPROC callback function
 - SccMsgDataOnAfterGetFile structure
 ms.assetid: 2025c969-e3c7-4cf4-a5c5-099d342895ea
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8cdfcec130897fc7014cb820e7efdcc4f3dcacb1
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: a990fc28ffcba4cffc199c1435fddb41bd896521
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56679875"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66309028"
 ---
 # <a name="lptextoutproc"></a>LPTEXTOUTPROC
 
@@ -73,7 +73,7 @@ mesg_type
 
 ## <a name="structures"></a>結構
 
-###  <a name="LinkSccMsgDataIsCancelled"></a> SccMsgDataIsCancelled
+### <a name="LinkSccMsgDataIsCancelled"></a> SccMsgDataIsCancelled
 
 ```cpp
 typedef struct {
@@ -83,7 +83,7 @@ typedef struct {
 
  此結構會傳送具有`SCC_MSG_BACKGROUND_IS_CANCELLED`訊息。 它用來通訊已取消背景作業的識別碼。
 
-###  <a name="LinkSccMsgDataOnBeforeGetFile"></a> SccMsgDataOnBeforeGetFile
+### <a name="LinkSccMsgDataOnBeforeGetFile"></a> SccMsgDataOnBeforeGetFile
 
 ```cpp
 typedef struct {
@@ -94,7 +94,7 @@ typedef struct {
 
  此結構會傳送具有`SCC_MSG_BACKGROUND_ON_BEFORE_GET_FILE`訊息。 它用來傳達即將要擷取之檔案的名稱，以及擷取正在進行背景作業的識別碼。
 
-###  <a name="LinkSccMsgDataOnAfterGetFile"></a> SccMsgDataOnAfterGetFile
+### <a name="LinkSccMsgDataOnAfterGetFile"></a> SccMsgDataOnAfterGetFile
 
 ```cpp
 typedef struct {
@@ -106,7 +106,7 @@ typedef struct {
 
  此結構會傳送具有`SCC_MSG_BACKGROUND_ON_AFTER_GET_FILE`訊息。 它用來通訊的結果擷取指定的檔案，以及未擷取背景作業的識別碼。 請參閱的傳回值[SccGet](../extensibility/sccget-function.md)的項目可以如此一來提供。
 
-###  <a name="LinkSccMsgDataOnMessage"></a> SccMsgDataOnMessage
+### <a name="LinkSccMsgDataOnMessage"></a> SccMsgDataOnMessage
 
 ```cpp
 typedef struct {

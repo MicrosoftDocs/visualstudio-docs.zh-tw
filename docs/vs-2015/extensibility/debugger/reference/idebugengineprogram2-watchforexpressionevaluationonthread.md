@@ -1,14 +1,9 @@
 ---
 title: IDebugEngineProgram2::WatchForExpressionEvaluationOnThread |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugEngineProgram2::WatchForExpressionEvaluationOnThread
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 01d05e77-8cac-4d1b-b19f-25756767ed27
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: d283005a4fee97502c160840c2330c9413fb3ac9
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: ebc513ead1ae911147217becd8f541cb11cd5585
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51772140"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62431468"
 ---
 # <a name="idebugengineprogram2watchforexpressionevaluationonthread"></a>IDebugEngineProgram2::WatchForExpressionEvaluationOnThread
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -80,4 +75,3 @@ int WatchForExpressionEvaluationOnThread( 
  [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md)   
  [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)   
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)
-

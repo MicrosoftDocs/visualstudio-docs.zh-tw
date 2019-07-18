@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEngine3 interface
 ms.assetid: 8bdf4bb7-3b5d-4991-8981-772d4f6bb656
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c043a05d2656dc1cc56377ad061854cd1aca9e7c
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 01f15e088635af30bd36919e3da46dee8b8c237b
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56709534"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66352448"
 ---
 # <a name="idebugengine3"></a>IDebugEngine3
 表示單一的偵錯引擎 (DE)，以控制一個或多個模組的偵錯。

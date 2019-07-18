@@ -1,8 +1,8 @@
 ---
-title: Publish-webapplicationvm |Microsoft Docs
-description: 了解如何部署虛擬機器的 web 應用程式。 如果不存在，此指令碼會建立所需的資源在您的 Azure 訂用帳戶中。
+title: Publish-WebApplicationVM | Microsoft Docs
+description: 了解如何將 Web 應用程式部署到虛擬機器。 此指令碼會在您的 Azure 訂用帳戶中建立所需的資源 (如果它們不存在)。
 author: ghogen
-manager: douge
+manager: jillfra
 assetId: de4cec95-f73f-44d9-babd-9f47f2633cdb
 ms.prod: visual-studio-dev14
 ms.technology: vs-azure
@@ -11,15 +11,15 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2016
 ms.author: ghogen
-ms.openlocfilehash: c2383e6d7b14d801a391a725f0482736fb926cd1
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
-ms.translationtype: MT
+ms.openlocfilehash: e35f5decee2a908a9d1075ff3f6365a1d358c7b2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51002045"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58941343"
 ---
 # <a name="publish-webapplicationvm-windows-powershell-script"></a>Publish-WebApplicationVM (Windows PowerShell 指令碼)
-Web 應用程式部署到虛擬機器。 如果不存在，指令碼會建立所需的資源在您的 Azure 訂用帳戶中。
+將 Web 應用程式部署到虛擬機器。 指令碼會在您的 Azure 訂用帳戶中建立所需的資源 (如果它們不存在)。
 
 ```
 Publish-WebApplicationVM
@@ -32,87 +32,87 @@ Publish-WebApplicationVM
 -Verbose
 ```
 
-### <a name="configuration"></a>組態
-描述部署的詳細資訊，JSON 組態檔路徑。
+### <a name="configuration"></a>Configuration
+描述部署詳細資訊的 JSON 組態檔路徑。
 
-| 別名 | 無 |
+| 別名 | none |
 | --- | --- |
 | 是否為必要項？ |true |
-| 位置 |具名 |
-| 預設值 |無 |
+| 位置 |已命名 |
+| 預設值 |none |
 | 接受管線輸入？ |False |
 | 接受萬用字元？ |False |
 
-### <a name="subscriptionname"></a>訂閱名稱
-您要建立虛擬機器的 Azure 訂用帳戶的名稱。
+### <a name="subscriptionname"></a>SubscriptionName
+要建立虛擬機器的 Azure 訂用帳戶名稱。
 
-| 別名 | 無 |
+| 別名 | none |
 | --- | --- |
 | 是否為必要項？ |False |
-| 位置 |具名 |
+| 位置 |已命名 |
 | 預設值 |使用訂用帳戶檔案中的第一個訂用帳戶 |
 | 接受管線輸入？ |False |
 | 接受萬用字元？ |False |
 
 ### <a name="webdeploypackage"></a>WebDeployPackage
-若要將發佈至虛擬機器的 web 部署套件路徑。 您可以使用 Visual Studio 中的 [發佈 Web] 精靈來建立此套件。 請參閱[如何： 在 Visual Studio 中建立 Web 部署套件](https://msdn.microsoft.com/library/dd465323.aspx)。
+要發佈至虛擬機器的 Web 部署封裝路徑。 您可以使用 Visual Studio 的 [發佈 Web] 精靈來建立此封裝。 請參閱[如何：在 Visual Studio 中建立 Web 部署套件](https://msdn.microsoft.com/library/dd465323.aspx)。
 
-| 別名 | 無 |
+| 別名 | none |
 | --- | --- |
 | 是否為必要項？ |False |
-| 位置 |具名 |
-| 預設值 |無 |
+| 位置 |已命名 |
+| 預設值 |none |
 | 接受管線輸入？ |False |
 | 接受萬用字元？ |False |
 
 ### <a name="allowuntrusted"></a>AllowUntrusted
-如果為 true，允許使用不受信任的根授權單位所簽署的憑證。
+如果為 true，允許使用未受信任的根授權單位所簽署的憑證。
 
-| 別名 | 無 |
+| 別名 | none |
 | --- | --- |
 | 是否為必要項？ |False |
-| 位置 |具名 |
+| 位置 |已命名 |
 | 預設值 |False |
 | 接受管線輸入？ |False |
 | 接受萬用字元？ |False |
 
 ### <a name="vmpassword"></a>VMPassword
-虛擬機器帳戶的認證。 範例:-VMPassword @{名稱 ="admin";密碼 ="password"}
+虛擬機器帳戶的認證。 範例：-VMPassword @{Name = "admin"; Password = "password"}
 
-| 別名 | 無 |
+| 別名 | none |
 | --- | --- |
 | 是否為必要項？ |False |
-| 位置 |具名 |
-| 預設值 |無 |
+| 位置 |已命名 |
+| 預設值 |none |
 | 接受管線輸入？ |False |
 | 接受萬用字元？ |False |
 
 ### <a name="databaseserverpassword"></a>DatabaseServerPassword
-在 Azure 中的 SQL 資料庫認證。 範例:-DatabaseServerPassword @{名稱 ="admin";密碼 ="password"}
+Azure 中的 SQL 資料庫認證。 範例：-DatabaseServerPassword @{Name = "admin"; Password = "password"}
 
-| 別名 | 無 |
+| 別名 | none |
 | --- | --- |
 | 是否為必要項？ |False |
-| 位置 |具名 |
-| 預設值 |無 |
+| 位置 |已命名 |
+| 預設值 |none |
 | 接受管線輸入？ |False |
 | 接受萬用字元？ |False |
 
 ### <a name="sendhostmessagestooutput"></a>SendHostMessagesToOutput
-如果為 true，列印訊息從指令碼輸出資料流。
+如果為 true，將訊息從指令碼列印至輸出資料流。
 
-| 別名 | 無 |
+| 別名 | none |
 | --- | --- |
 | 是否為必要項？ |False |
-| 位置 |具名 |
+| 位置 |已命名 |
 | 預設值 |False |
 | 接受管線輸入？ |False |
 | 接受萬用字元？ |False |
 
 ## <a name="remarks"></a>備註
-如需完整的說明，如何使用指令碼建立的開發和測試環境，請參閱[使用 Windows PowerShell 指令碼發佈至開發和測試環境](vs-azure-tools-publishing-using-powershell-scripts.md)。
+如需如何使用指令碼來建立開發和測試環境的完整說明，請參閱 [使用 Windows PowerShell 指令碼來發佈至開發和測試環境](vs-azure-tools-publishing-using-powershell-scripts.md)。
 
-JSON 組態檔中指定部署詳細的資料。 它包含您指定當您在建立專案，例如名稱、 同質群組、 VHD 映像和虛擬機器大小的資訊。 它也包含虛擬機器，以佈建時，資料庫上的端點，如果有的話，和 web 部署參數。 下列程式碼顯示範例 JSON 組態檔：
+JSON 組態檔會指定待部署項目的詳細資料。 它包含您在建立專案時所指定的資訊，例如名稱、同質群組、VHD 映像和虛擬機器的大小。 它也包含虛擬機器上的端點、要佈建的資料庫 (如有)，以及 Web 部署參數。 下列程式碼片段將顯示一個 JSON 組態檔範例：
 
 ```
 {
@@ -181,5 +181,4 @@ JSON 組態檔中指定部署詳細的資料。 它包含您指定當您在建�
 }
 ```
 
-您可以編輯 JSON 組態檔，來變更 什麼佈建。 虛擬機器和雲端服務是必要的但資料庫區段是選擇性的。
-
+您可以編輯 JSON 組態檔來變更佈建項目。 虛擬機器和雲端服務是必要的，但資料庫區段是選擇性的。

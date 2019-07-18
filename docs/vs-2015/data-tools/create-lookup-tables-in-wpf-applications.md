@@ -1,12 +1,9 @@
 ---
 title: 在 WPF 應用程式中建立查閱資料表 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -24,67 +21,66 @@ ms.assetid: 56a1fbff-c7e8-4187-a1c1-ffd17024bc1b
 caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 6ce3b1cb07256c35949591b4d6ea012f56e432c6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: cd92d75e297055b65d05bef42d497e65c2a996d6
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49303338"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697916"
 ---
 # <a name="create-lookup-tables-in-wpf-applications"></a>在 WPF 應用程式中建立查閱資料表
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 詞彙*查閱資料表*(有時也稱為*查閱繫結*) 描述會顯示資訊從一個資料表，根據另一個資料表中的外部索引鍵欄位值的控制項。 您可以藉由拖曳父資料表的主要節點建立查閱資料表或物件**Zdroje dat**視窗拖曳至已繫結至資料行或屬性相關的子資料表中的控制項。  
   
  例如，假設資料表的`Orders`銷售資料庫中。 在每一筆記錄`Orders`資料表包含`CustomerID`，指出哪些客戶下過訂單。 `CustomerID`中的客戶記錄會指向為外部索引鍵`Customers`資料表。 當您顯示一份訂單`Orders`資料表中，您可能想要顯示實際的客戶名稱，而不是`CustomerID`。 因為客戶名稱是在`Customers`資料表中，您需要建立查閱資料表，以顯示客戶名稱。 查閱資料表中使用`CustomerID`中的值`Orders`記錄巡覽關聯性，並傳回客戶名稱。  
   
 ## <a name="to-create-a-lookup-table"></a>若要建立查閱資料表  
   
-1.  將下列一種類型的相關資料的資料來源新增至您的專案：  
+1. 將下列一種類型的相關資料的資料來源新增至您的專案：  
   
-    -   資料集或實體資料模型。 如需詳細資訊，請參閱 [How to: Connect to Data in a Database](../data-tools/how-to-connect-to-data-in-a-database.md)。  
+    - 資料集或實體資料模型。
+
+    - WCF 資料服務，WCF 服務或 Web 服務。 如需詳細資訊，請參閱[如何：連線至服務中的資料](../data-tools/how-to-connect-to-data-in-a-service.md)。  
   
-    -   WCF 資料服務，WCF 服務或 Web 服務。 如需詳細資訊，請參閱 <<c0> [ 如何： 連接到服務中的資料](../data-tools/how-to-connect-to-data-in-a-service.md)。  
-  
-    -   物件。 如需詳細資訊，請參閱 <<c0> [ 如何： 連接到資料物件中](http://msdn.microsoft.com/library/862fd351-0f4d-4220-9743-6103b87dc24b)。  
+    - 物件。 如需詳細資訊，請參閱[如何：連接到資料物件中](https://msdn.microsoft.com/library/862fd351-0f4d-4220-9743-6103b87dc24b)。  
   
     > [!NOTE]
-    >  您可以建立查閱資料表之前，必須存在兩個相關的資料表或物件當做專案資料來源。  
+    > 您可以建立查閱資料表之前，必須存在兩個相關的資料表或物件當做專案資料來源。  
   
-2.  開啟**WPF 設計工具**，並確定設計工具會包含有效的置放目標中的項目容器**Zdroje dat**視窗。  
+2. 開啟**WPF 設計工具**，並確定設計工具會包含有效的置放目標中的項目容器**Zdroje dat**視窗。  
   
      如需有關有效置放目標的詳細資訊，請參閱 <<c0> [ 繫結 WPF 控制項新增至 Visual Studio 中的資料](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md)。  
   
-3.  上**資料**功能表上，按一下**顯示資料來源**以開啟**Zdroje dat**視窗。  
+3. 按一下 [資料] 功能表上的 [顯示資料來源]，以開啟 [資料來源] 視窗。  
   
-4.  展開中的節點**Zdroje dat**  視窗中，直到您可以看到父資料表或物件和關聯的子資料表或物件。  
+4. 展開中的節點**Zdroje dat**  視窗中，直到您可以看到父資料表或物件和關聯的子資料表或物件。  
   
     > [!NOTE]
-    >  會顯示為在父資料表或物件的可展開的子節點的節點是相關的子資料表或物件。  
+    > 會顯示為在父資料表或物件的可展開的子節點的節點是相關的子資料表或物件。  
   
-5.  按一下下拉式選單，子節點，然後選取**詳細資料**。  
+5. 按一下下拉式選單，子節點，然後選取**詳細資料**。  
   
-6.  展開子節點。  
+6. 展開子節點。  
   
-7.  子節點底下，按一下下拉式功能表與相關的子系和父資料的項目。 (在上述範例中，這是**CustomerID**節點。)選取下列一種類型的支援查閱繫結的控制項：  
+7. 子節點底下，按一下下拉式功能表與相關的子系和父資料的項目。 (在上述範例中，這是**CustomerID**節點。)選取下列一種類型的支援查閱繫結的控制項：  
   
-    -   **ComboBox**  
+    - **ComboBox**  
   
-    -   **ListBox**  
+    - **ListBox**  
   
-    -   **ListView**  
-  
-        > [!NOTE]
-        >  如果**ListBox**或是**ListView**控制項不會出現在清單中，您可以將這些控制項新增至清單。 如需資訊，請參閱[設定要從資料來源視窗拖曳時要建立的控制項](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)。  
-  
-    -   任何自訂控制項衍生自<xref:System.Windows.Controls.Primitives.Selector>。  
+    - **ListView**  
   
         > [!NOTE]
-        >  如何加入自訂控制項的控制項清單以您可以選取中的項目**資料來源** 視窗中，請參閱[將自訂控制項加入至資料來源視窗](../data-tools/add-custom-controls-to-the-data-sources-window.md)。  
+        > 如果**ListBox**或是**ListView**控制項不會出現在清單中，您可以將這些控制項新增至清單。 如需資訊，請參閱[設定要從資料來源視窗拖曳時要建立的控制項](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)。  
   
-8.  從 [子] 節點拖曳**Zdroje dat**視窗拖曳至 WPF 設計工具中的容器。 (在上述範例中，子節點是**訂單**節點。)  
+    - 任何自訂控制項衍生自<xref:System.Windows.Controls.Primitives.Selector>。  
+  
+        > [!NOTE]
+        > 如何加入自訂控制項的控制項清單以您可以選取中的項目**資料來源** 視窗中，請參閱[將自訂控制項加入至資料來源視窗](../data-tools/add-custom-controls-to-the-data-sources-window.md)。  
+  
+8. 從 [子] 節點拖曳**Zdroje dat**視窗拖曳至 WPF 設計工具中的容器。 (在上述範例中，子節點是**訂單**節點。)  
   
      Visual Studio 會產生每個您所拖曳的項目建立新的資料繫結控制項的 XAML。 XAML 也會加入新<xref:System.Windows.Data.CollectionViewSource>子資料表或物件的置放目標的資源。 對於某些資料來源，Visual Studio 也會產生程式碼，以將資料載入資料表或物件。 如需詳細資訊，請參閱 <<c0> [ 繫結 WPF 控制項新增至 Visual Studio 中的資料](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md)。  
   
@@ -103,5 +99,4 @@ ms.locfileid: "49303338"
  [將 WPF 控制項繫結至 Visual Studio 中的資料](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md)   
  [將 WPF 控制項繫結至 Visual Studio 中的資料](../data-tools/bind-wpf-controls-to-data-in-visual-studio2.md)   
  [WPF 應用程式中顯示相關的資料](../data-tools/display-related-data-in-wpf-applications.md)   
- [逐步解說：顯示 WPF 應用程式中的相關資料](../data-tools/walkthrough-displaying-related-data-in-a-wpf-application.md)
-
+ [逐步解說：在 WPF 應用程式中顯示相關的資料](../data-tools/walkthrough-displaying-related-data-in-a-wpf-application.md)

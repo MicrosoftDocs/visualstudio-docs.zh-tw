@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugContainerField::EnumFields method
 ms.assetid: 9e5e681b-ad49-4c62-bd95-4afa11d61a57
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0d770922203b92a533650a7eadf754effa3f24c6
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: a6d3edeb677af728b1a0fd0e9cf8685e7919d79e
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56718439"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66317936"
 ---
 # <a name="idebugcontainerfieldenumfields"></a>IDebugContainerField::EnumFields
 建立容器的欄位的列舉值。
@@ -44,26 +47,21 @@ int EnumFields(
 );
 ```
 
-#### <a name="parameters"></a>參數
- `dwKindFilter`
+## <a name="parameters"></a>參數
+`dwKindFilter`\
+[in]組合[FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md)常數，以選取要列舉的欄位。 欄位類型可以描述儲存體類型，例如類別或基本，或特定的資訊，例如本機、 參數或 「 this 」 指標。
 
- [in]組合[FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md)常數，以選取要列舉的欄位。 欄位類型可以描述儲存體類型，例如類別或基本，或特定的資訊，例如本機、 參數或 「 this 」 指標。
+`dwModifiersFilter`\
+[in]組合[FIELD_MODIFIERS](../../../extensibility/debugger/reference/field-modifiers.md)常數，以選取要列舉的欄位。 欄位修飾詞可以存取的權限，例如公用或私用或儲存體的資訊，例如虛擬、 靜態或最終。
 
- `dwModifiersFilter`
+`pszNameFilter`\
+[in]要列舉的欄位名稱。 如果所有欄位都都要傳回，這可以是 null 值。
 
- [in]組合[FIELD_MODIFIERS](../../../extensibility/debugger/reference/field-modifiers.md)常數，以選取要列舉的欄位。 欄位修飾詞可以存取的權限，例如公用或私用或儲存體的資訊，例如虛擬、 靜態或最終。
+`nameMatch`\
+[in]值，以從[NAME_MATCH](../../../extensibility/debugger/reference/name-match.md)列舉，用於控制是否搜尋是否區分大小寫。
 
- `pszNameFilter`
-
- [in]要列舉的欄位名稱。 如果所有欄位都都要傳回，這可以是 null 值。
-
- `nameMatch`
-
- [in]值，以從[NAME_MATCH](../../../extensibility/debugger/reference/name-match.md)列舉，用於控制是否搜尋是否區分大小寫。
-
- `ppEnum`
-
- [out]傳回[IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)物件，表示欄位的清單。 如果沒有任何欄位，則傳回 null 值。
+`ppEnum`\
+[out]傳回[IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)物件，表示欄位的清單。 如果沒有任何欄位，則傳回 null 值。
 
 ## <a name="return-value"></a>傳回值
  如果成功，傳回 S_OK 或 S_FALSE，如果沒有任何欄位。 否則會傳回錯誤碼。

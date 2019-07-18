@@ -11,16 +11,28 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: a48fe46b8f46c9ea3f6c14ebe44315eafa1c56d6
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: fd1841c406423147082a4dced9d0993d07efaca9
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58070317"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695860"
 ---
 # <a name="tutorial-create-a-nodejs-and-express-app-in-visual-studio"></a>教學課程：在 Visual Studio 中建立 Node.js 和 Express 應用程式
 
-在使用 Node.js 和 Express 進行 Visual Studio 開發的這個教學課程中，您將建立簡單的 Node.js Web 應用程式、新增一些程式碼、探索 IDE 的一些功能，以及執行應用程式。 如果您尚未安裝 Visual Studio，請在[這裡](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017)免費安裝它。
+在使用 Node.js 和 Express 進行 Visual Studio 開發的這個教學課程中，您將建立簡單的 Node.js Web 應用程式、新增一些程式碼、探索 IDE 的一些功能，以及執行應用程式。 
+
+::: moniker range="vs-2017"
+
+如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)頁面免費進行安裝。
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019)頁面免費進行安裝。
+
+::: moniker-end
 
 在本教學課程中，您將了解如何：
 > [!div class="checklist"]
@@ -75,15 +87,13 @@ Visual Studio 可在「專案」中管理單一應用程式的檔案。 專案�
 
 1. 開啟 Visual Studio。
 
-1. 從頂端功能表列中，選擇 [檔案] > [新增] > [專案]。
-
 1. 建立新的專案。
 
     ::: moniker range=">=vs-2019"
-    在 [建立新專案] 對話方塊中，於搜尋方塊中輸入 **javascript** 以篩選結果，然後依序選擇 [基本的 Azure Node.js Express 4 應用程式] 和 [下一步]。 接著，選擇 [建立]。
+    按 **Esc** 關閉開始視窗。 鍵入 **Ctrl + Q** 開啟 [搜尋] 方塊，鍵入 **Node.js**，然後選擇 [Create a new Basic Azure Node.js Express 4 application] \(建立新的基礎 Azure Node.js Express 4 應用程式\) (JavaScript)。 在出現的對話方塊中，選擇 [建立]。
     ::: moniker-end
     ::: moniker range="vs-2017"
-    在 [新增專案] 對話方塊的左窗格中，展開 [JavaScript]，然後選擇 [Node.js]。 在中間窗格中，選擇 [基本的 Azure Node.js Express 4 應用程式]，然後選擇 [確定]。
+    從頂端功能表列中，選擇 [檔案] > [新增] > [專案]。 在 [新增專案] 對話方塊的左窗格中，展開 **JavaScript**，然後選擇 **Node.js**。 在中間窗格中，選擇 [基本的 Azure Node.js Express 4 應用程式]，然後選擇 [確定]。
     ::: moniker-end
     如果您看不到 [基本的 Azure Node.js Express 4 應用程式] 專案範本，則必須新增 **Node.js 開發**工作負載。 如需詳細指示，請參閱[必要條件](#prerequisites)。
 
@@ -206,7 +216,12 @@ IntelliSense 是一種 Visual Studio 工具，可協助您撰寫程式碼。
 
 1. 在 [偵錯] 工具列中選取偵錯目標，例如 Microsoft Edge 或 Chrome。
 
+    ::: moniker range=">=vs-2019"
+    ![選取偵錯目標](../javascript/media/vs-2019/tutorial-nodejs-deploy-target.png)
+    ::: moniker-end
+    ::: moniker range="vs-2017"
     ![選取偵錯目標](../javascript/media/tutorial-nodejs-deploy-target.png)
+    ::: moniker-end
 
     如果您的電腦中有 Chrome 可供使用，但未顯示為選項，請從偵錯目標下拉式清單中選擇 [瀏覽方式]，並選取 Chrome 作為預設瀏覽器目標 (選擇 [設為預設值])。
 

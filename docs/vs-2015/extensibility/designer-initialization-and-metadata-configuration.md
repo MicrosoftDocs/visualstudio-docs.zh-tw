@@ -1,27 +1,22 @@
 ---
 title: 設計工具初始化和中繼資料組態 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - designers [Visual Studio SDK], initializing
 - designers [Visual Studio SDK], configuring metadata
 ms.assetid: f7fe9a7e-f669-4642-ad5d-186b2e6e6ec9
 caps.latest.revision: 17
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 8f5a4bbd24e571100dfc708d7c34f87b6c84adcf
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 2dec3937616c712c56b7012949e044702e6b11f2
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51736214"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65703074"
 ---
 # <a name="designer-initialization-and-metadata-configuration"></a>設計工具初始化和中繼資料組態
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,15 +31,15 @@ ms.locfileid: "51736214"
 ### <a name="customizing-initialization"></a>自訂初始設定  
  自訂設計工具、 元件或設計工具的介面，包括：  
   
-1.  修改設計工具的中繼資料，以及更有效地變更如何特定<xref:System.Type>是存取或轉換。  
+1. 修改設計工具的中繼資料，以及更有效地變更如何特定<xref:System.Type>是存取或轉換。  
   
      這通常透過<xref:System.Drawing.Design.UITypeEditor>或<xref:System.ComponentModel.TypeConverter>機制。  
   
      例如，當<xref:System.Windows.Forms>-根據設計工具都已初始化，[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]環境修改<xref:System.Drawing.Design.UITypeEditor>如<xref:System.Web.UI.WebControls.Image>與設計工具來使用資源管理員以取得點陣圖，而不是檔案系統的物件。  
   
-2.  整合環境，例如，藉由訂閱事件，或取得專案的組態資訊。 您可以取得專案的組態資訊，並取得訂閱事件<xref:System.ComponentModel.Design.ITypeResolutionService>介面。  
+2. 整合環境，例如，藉由訂閱事件，或取得專案的組態資訊。 您可以取得專案的組態資訊，並取得訂閱事件<xref:System.ComponentModel.Design.ITypeResolutionService>介面。  
   
-3.  藉由啟用適當的使用者環境修改**工具箱**類別目錄或藉由限制所套用的執行個體的設計工具的適用性<xref:System.ComponentModel.ToolboxItemFilterAttribute>類別設計工具。  
+3. 藉由啟用適當的使用者環境修改**工具箱**類別目錄或藉由限制所套用的執行個體的設計工具的適用性<xref:System.ComponentModel.ToolboxItemFilterAttribute>類別設計工具。  
   
 ### <a name="designer-initialization-by-a-vspackage"></a>VSPackage 的設計工具初始化  
  VSPackage 應該處理由設計工具初始化：  
@@ -52,7 +47,7 @@ ms.locfileid: "51736214"
 1. 建立物件，實作<xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension>類別。  
   
    > [!NOTE]
-   >  <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension>應該永遠不會在相同物件上實作類別<xref:Microsoft.VisualStudio.Shell.Package>類別。  
+   > <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension>應該永遠不會在相同物件上實作類別<xref:Microsoft.VisualStudio.Shell.Package>類別。  
   
 2. 註冊類別實作<xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension>做為 VSPackage 的設計工具擴充功能提供支援，藉由套用的執行個體<xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtensionAttribute>，<xref:Microsoft.VisualStudio.Shell.ProvideObjectAttribute>並<xref:Microsoft.VisualStudio.Shell.ProvideServiceAttribute>提供的 VSPackage 的實作類別<xref:Microsoft.VisualStudio.Shell.Package>.  
   
@@ -98,11 +93,10 @@ ms.locfileid: "51736214"
   `internal class MyPackage : Package {}`  
   
 > [!NOTE]
->  在現階段，設計介面僅支援建立的元件，因此只元件可以有本機中繼資料。 在上述範例中，我們已嘗試修改屬性，例如`Color`物件的屬性。 如果`false`為全域的旗標，傳入`CustomBrowser`永遠不會出現，因為設計工具不會實際建立的執行個體`Color`。 全域旗標設定為`false`適用於元件，例如控制項、 計時器和對話方塊。  
+> 在現階段，設計介面僅支援建立的元件，因此只元件可以有本機中繼資料。 在上述範例中，我們已嘗試修改屬性，例如`Color`物件的屬性。 如果`false`為全域的旗標，傳入`CustomBrowser`永遠不會出現，因為設計工具不會實際建立的執行個體`Color`。 全域旗標設定為`false`適用於元件，例如控制項、 計時器和對話方塊。  
   
 ## <a name="see-also"></a>另請參閱  
  <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension>   
  <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtensionAttribute>   
  <xref:System.ComponentModel.ToolboxItemFilterType>   
- [擴充設計階段支援](http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2)
-
+ [擴充設計階段支援](https://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2)

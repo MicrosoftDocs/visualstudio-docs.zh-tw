@@ -7,17 +7,17 @@ helpviewer_keywords:
 - buttons [Visual Studio], adding to Solution Explorer
 - Solution Explorer, adding buttons
 ms.assetid: f6411557-2f4b-4e9f-b02e-fce12a6ac7e9
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fff1187793350b52484bcac99021be7fc2845607
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 2cb5c0a8aac049b7d5ff0e79843724b87e4999e4
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56717789"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66313535"
 ---
 # <a name="add-a-command-to-the-solution-explorer-toolbar"></a>將命令加入至 [方案總管] 工具列
 本逐步解說示範如何加入一個按鈕來**方案總管 中**工具列。
@@ -27,7 +27,7 @@ ms.locfileid: "56717789"
  如需功能表、 工具列命令，並 *.vsct*檔，請參閱[命令、 功能表和工具列](../extensibility/internals/commands-menus-and-toolbars.md)。
 
 > [!NOTE]
->  使用 XML 命令資料表 (*.vsct*) 而非命令資料表設定的檔案 (*.ctc*) 檔案，用於定義在您的 Vspackage 中顯示功能表和命令的方式。 如需詳細資訊，請參閱[Visual Studio Command Table (。Vsct) 檔案](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)。
+> 使用 XML 命令資料表 ( *.vsct*) 而非命令資料表設定的檔案 ( *.ctc*) 檔案，用於定義在您的 Vspackage 中顯示功能表和命令的方式。 如需詳細資訊，請參閱[Visual Studio Command Table (。Vsct) 檔案](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)。
 
 ## <a name="prerequisites"></a>必要條件
  從 Visual Studio 2015 中，從下載中心取得未安裝 Visual Studio SDK。 包含為 Visual Studio 安裝程式的選用功能。 您也可以在稍後安裝 VS SDK。 如需詳細資訊，請參閱 <<c0> [ 安裝 Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md)。
@@ -38,13 +38,13 @@ ms.locfileid: "56717789"
 ## <a name="add-a-button-to-the-solution-explorer-toolbar"></a>將按鈕加入 [方案總管] 工具列
  本章節的逐步解說示範如何加入一個按鈕來**方案總管 中**工具列。 當按一下按鈕時，會執行的回呼方法中的程式碼。
 
-1.  在  *ToolbarButtonPackage.vsct*檔案中，移至`<Symbols>`一節。 `<GuidSymbol>`節點包含功能表群組和 [套件] 範本所產生的命令。 新增`<IDSymbol>`到這個節點，以宣告會保留您的命令群組的項目。
+1. 在  *ToolbarButtonPackage.vsct*檔案中，移至`<Symbols>`一節。 `<GuidSymbol>`節點包含功能表群組和 [套件] 範本所產生的命令。 新增`<IDSymbol>`到這個節點，以宣告會保留您的命令群組的項目。
 
     ```xml
     <IDSymbol name="SolutionToolbarGroup" value="0x0190"/>
     ```
 
-2.  在 [ `<Groups>` ] 區段中之後的現有的群組項目，, 定義您宣告的新群組在上一個步驟。
+2. 在 [ `<Groups>` ] 區段中之後的現有的群組項目，, 定義您宣告的新群組在上一個步驟。
 
     ```xml
     <Group guid="guidToolbarButtonPackageCmdSet"
@@ -55,7 +55,7 @@ ms.locfileid: "56717789"
 
      若要設定父系 guid: id 配對`guidSHLMainMenu`和`IDM_VS_TOOL_PROJWIN`會將此群組放**方案總管 中**工具列上，並設定高優先順序的值時將它放在其他的命令群組之後。
 
-3.  在 `<Buttons>`區段中，變更所產生的父識別碼`<Button>`項目，以反映您在上一個步驟中定義的群組。 已修改`<Button>`項目應該看起來像這樣：
+3. 在 `<Buttons>`區段中，變更所產生的父識別碼`<Button>`項目，以反映您在上一個步驟中定義的群組。 已修改`<Button>`項目應該看起來像這樣：
 
     ```xml
     <Button guid="guidToolbarButtonPackageCmdSet" id="ToolbarButtonId" priority="0x0100" type="Button">
@@ -67,11 +67,11 @@ ms.locfileid: "56717789"
     </Button>
     ```
 
-4.  建置此專案並開始偵錯。 實驗執行個體隨即出現。
+4. 建置此專案並開始偵錯。 實驗執行個體隨即出現。
 
      **方案總管] 中**工具列應該會顯示新的命令按鈕右邊的 [現有的按鈕。 按鈕圖示為加刪除線。
 
-5.  按一下 [新增] 按鈕。
+5. 按一下 [新增] 按鈕。
 
      訊息的對話方塊**ToolbarButtonPackage 內 SolutionToolbar.ToolbarButton.MenuItemCallback()** 應該會顯示。
 

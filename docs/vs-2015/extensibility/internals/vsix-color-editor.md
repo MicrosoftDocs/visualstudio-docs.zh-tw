@@ -1,21 +1,17 @@
 ---
 title: VSIX 色彩編輯器 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 70879c5d-e0f0-4845-993c-2f4229869706
 caps.latest.revision: 6
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 7ac81f039bf5357f9488aeba439c27814cdf7e3d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: fe8e54876f5b2ab3eda5c1bd8d35f0b0d0c788b2
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51727605"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68197310"
 ---
 # <a name="vsix-color-editor"></a>VSIX 色彩編輯器
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -32,13 +28,13 @@ Visual Studio 擴充功能色彩編輯器工具可以建立和編輯 Visual Stud
   
  色彩語彙基元是由四個項目組成：  
   
--   **類別名稱：** 邏輯群組的一組色彩。 如果已經有專屬於所需的 UI 項目或群組的 UI 元素的色彩，請使用現有的類別名稱。  
+- **類別名稱：** 一組色彩邏輯群組。 如果已經有專屬於所需的 UI 項目或群組的 UI 元素的色彩，請使用現有的類別名稱。  
   
--   **語彙基元名稱：** 的色彩語彙基元和語彙基元的集合的描述性名稱。 集包括背景和前景 （文字） 的語彙基元名稱，以及其所有的狀態，而且這些應該命名為，以便您輕鬆地識別成對和它們套用到的狀態。  
+- **權杖名稱：** 設定色彩的權杖和權杖的描述性名稱。 集包括背景和前景 （文字） 的語彙基元名稱，以及其所有的狀態，而且這些應該命名為，以便您輕鬆地識別成對和它們套用到的狀態。  
   
--   **色彩值 （或色調）：** 所需的每個彩色的佈景主題。 一律在背景和文字色彩值組。 色彩的背景/前景配對使文字 （前景） 色彩一律可讀取在其上繪製的背景色彩。 這些色彩的連結，並且會在 UI 中一起使用。 如果背景並不適用於與文字搭配使用，不會定義前景色彩。  
+- **色彩值 （或色調）：** 所需的每個彩色的佈景主題。 一律在背景和文字色彩值組。 色彩的背景/前景配對使文字 （前景） 色彩一律可讀取在其上繪製的背景色彩。 這些色彩的連結，並且會在 UI 中一起使用。 如果背景並不適用於與文字搭配使用，不會定義前景色彩。  
   
--   **系統色彩的名稱：** 用於高對比顯示。  
+- **系統色彩的名稱：** 用於在高對比顯示的資訊。  
   
 ## <a name="how-to-use-the-tool"></a>如何使用工具  
  最大的和現有的 Visual Studio 色彩適用時，應該重複使用而不是將新的。 不過，沒有適當的色彩定義的情況下，應該建立自訂色彩將延伸模組佈景主題相容。  
@@ -57,9 +53,9 @@ Visual Studio 擴充功能色彩編輯器工具可以建立和編輯 Visual Stud
   
 5. 在 Visual Studio 中測試的變更。  
   
-   **步驟 1︰ 決定使用的類別和新的色彩語彙基元的語彙基元名稱。**  
+   **步驟 1：判斷新的色彩語彙基元的分類和語彙基元名稱。**  
   
-   慣用的命名配置為 VSColor **[Category] [UI 型別] [State]**。 請勿 VSColor 名稱中使用"color"這個字，因為它是多餘。  
+   慣用的命名配置為 VSColor **[Category] [UI 型別] [State]** 。 請勿 VSColor 名稱中使用"color"這個字，因為它是多餘。  
   
    類別目錄名稱提供邏輯分組，並應定義為窄越好。 比方說，單一工具視窗的名稱可能是類別名稱，但不是整個商務單位或專案小組名稱。 群組項目類別，可協助避免混淆之間具有相同名稱的色彩。  
   
@@ -99,11 +95,11 @@ Visual Studio 擴充功能色彩編輯器工具可以建立和編輯 Visual Stud
   
 - ListItemDisabledBorder  
   
-  **步驟 2： 選擇 UI 項目高對比，會使用每個佈景主題和系統色彩的色調。**  
+  **步驟 2：選擇 UI 項目高對比，會使用每個佈景主題和系統色彩的色調。**  
   
   在選擇自訂色彩 ui 時，選取類似現有 UI 項目，做為基底並用其色彩。 內建的 UI 項目色彩有經過檢閱和測試，讓它們可以尋找適當和在所有佈景主題中正確運作。  
   
-  **步驟 3： 使用色彩編輯器來建立新的色彩語彙基元。**  
+  **步驟 3：您可以使用 色彩編輯器來建立新的色彩語彙基元。**  
   
   啟動色彩編輯器並開啟或建立新的自訂佈景主題色彩.xml 檔案。 選取 **編輯 > 新的色彩**從功能表。 這會開啟對話方塊，可指定分類和色彩項目，該類別內的一或多個名稱：  
   
@@ -129,11 +125,11 @@ Visual Studio 擴充功能色彩編輯器工具可以建立和編輯 Visual Stud
   
   針對不需要顯示文字的元件，輸入只有一種色彩值： 的背景色彩。 否則，請輸入的背景和文字的色彩，以正斜線分隔的值。  
   
-  當輸入值的高對比，請輸入有效的 Windows 系統色彩名稱。 請勿輸入硬式編碼的 ARGB 值。 您可以從色彩值下拉式清單中選取 「 背景:: 系統 」 或 「 前景:: 系統 」 來檢視有效的系統色彩名稱清單。 在建立時具有文字元件的項目，使用正確的背景/文字的系統色彩配對或文字可能無法讀取。  
+  當輸入值的高對比，請輸入有效的 Windows 系統色彩名稱。 請勿輸入硬式編碼的 ARGB 值。 您可以檢視有效的系統色彩名稱清單，選取 「 背景：系統 」 或 「 前景：系統 」 從色彩值下拉式功能表。 在建立時具有文字元件的項目，使用正確的背景/文字的系統色彩配對或文字可能無法讀取。  
   
   當您完成建立、 設定和編輯的色彩語彙基元時，請將它們儲存到所需的.xml 或.pkgdef 格式。 沒有背景的色彩語彙基元也會儲存為.xml 格式的空白色彩前景組，但捨棄.pkgdef 格式。 對話方塊會警告您遺失的色彩，如果您嘗試將空的色彩儲存至.pkgdef 檔。  
   
-  **步驟 4： 在 Visual Studio 擴充功能中使用的色彩。**  
+  **步驟 4：在 Visual Studio 擴充功能中使用的色彩。**  
   
   之後定義新的色彩語彙基元，在專案檔中包含.pkgdef 具有 [建置動作] 設定為 「 內容 」，而 」 包含在 VSIX"設定為"True"。  
   
@@ -183,7 +179,7 @@ namespace MyCustomColors
 </UserControl>  
 ```  
   
- **步驟 5： 在 Visual Studio 中測試的變更。**  
+ **步驟 5：在 Visual Studio 中測試的變更。**  
   
  色彩編輯器可以暫時將色彩語彙基元適用於 Visual Studio 來檢視即時變更色彩，而不需重建延伸模組套件的執行個體。 若要這樣做，請按一下位於每個佈景主題資料行標頭上的 [若要執行 Visual Studio 視窗中套用此佈景主題] 按鈕。 VSIX 色彩編輯器關閉後，此暫存的佈景主題就會消失運作。  
   
@@ -191,7 +187,7 @@ namespace MyCustomColors
   
  若要進行永久變更，重建並重新部署 Visual Studio 擴充功能之後將新的色彩加入至.pkgdef 檔和寫入將會使用這些色彩的程式碼。 重建 Visual Studio 擴充功能，將新的色彩的登錄值合併至佈景主題的其餘部分。 然後重新啟動 Visual Studio、 檢視 UI，並確認新的色彩，會如預期般出現。  
   
-## <a name="notes"></a>注意  
+## <a name="notes"></a>附註  
  此工具被要用來建立自訂的色彩，既有的 Visual Studio 佈景主題，或編輯自訂 Visual Studio 佈景主題色彩。 若要建立完整的自訂 Visual Studio 佈景主題，請下載[Visual Studio 色彩佈景主題編輯器延伸模組](http://visualstudiogallery.msdn.microsoft.com/6f4b51b6-5c6b-4a81-9cb5-f2daa560430b)從 Visual Studio 延伸模組組件庫。  
   
 ## <a name="sample-output"></a>範例輸出  
@@ -297,4 +293,3 @@ namespace MyNamespace
   <Color x:Key="{x:Static colors:MyColors.ColorName4TextColorKey}" A="255" R="255" G="255" B="255" />  
 </ResourceDictionary>  
 ```
-

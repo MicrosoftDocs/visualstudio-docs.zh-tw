@@ -1,11 +1,8 @@
 ---
 title: ParallelForEach&lt;T&gt;活動設計工具 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.ParallelForEach`1.UI
@@ -13,13 +10,13 @@ ms.assetid: e93a4843-aef2-4d3e-9a0a-a2d3d1411aa7
 caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: eb97ba6abb40c34d03e612c346e2c721719024de
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 825906f3de1b2d40d96dc19ed45d2a368d889994
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49216394"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63002302"
 ---
 # <a name="parallelforeachlttgt-activity-designer"></a>ParallelForEach&lt;T&gt;活動設計工具
 <xref:System.Activities.Statements.ParallelForEach%601> 活動會列舉集合的項目，並且平行執行集合中各個項目的內嵌陳述式，而這是同一個執行緒上的非同步處理。 如果預期此活動的子活動會進入閒置狀態，請使用這個流量控制活動代替 <xref:System.Activities.Statements.Sequence> 活動。  
@@ -41,7 +38,7 @@ ms.locfileid: "49216394"
 ### <a name="parallelforeacht-properties-in-the-workflow-designer"></a>ParallelForEach\<T > 中工作流程設計工具屬性  
  下表顯示最為實用的 <xref:System.Activities.Statements.ParallelForEach%601> 活動屬性，並且說明它們在設計工具中的使用方式。  
   
-|屬性名稱|必要項|使用方式|  
+|屬性名稱|必要|使用量|  
 |-------------------|--------------|-----------|  
 |<xref:System.Activities.Activity.DisplayName%2A>|False|指定活動設計工具在標頭中的易記顯示名稱。 預設值是**ParallelForEach\<Int32 >**。 值可以在中選擇性地編輯**屬性**方格或直接在活動設計工具標頭。|  
 |<xref:System.Activities.Statements.ParallelForEach%601.Body%2A>|False|集合中每個項目要執行的活動。 若要新增<xref:System.Activities.Statements.ParallelForEach%601.Body%2A>活動，請從工具箱拖曳到**主體**方塊**ParallelForEach\<T >** 活動設計工具提示文字 「 置放活動 」 與。|  

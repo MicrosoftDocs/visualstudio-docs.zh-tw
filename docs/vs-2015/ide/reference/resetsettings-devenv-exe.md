@@ -13,17 +13,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 60e0dd272bd22cce2367e59b16fdea7965cb50e7
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 1b35026140b424da0f7fa71cb9e70b72c3dba243
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54761585"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65689651"
 ---
 # <a name="resetsettings-devenvexe"></a>/ResetSettings (devenv.exe)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 還原 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 預設值，並自動啟動 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE。 選擇性地將設定重設為指定的 .vssettings 檔案。  
   
  第一次啟動 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 時，選取的設定檔即會決定預設值。  
@@ -51,5 +50,5 @@ Devenv.exe /ResetSettings "C:\My Files\MySettings.vssettings"
 ```  
   
 ## <a name="see-also"></a>請參閱  
- [在 Visual Studio 中自訂開發設定](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)   
+ [在 Visual Studio 中自訂開發設定](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)   
  [Devenv 命令列參數](../../ide/reference/devenv-command-line-switches.md)

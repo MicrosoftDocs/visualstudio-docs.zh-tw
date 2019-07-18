@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - TemplateContent element [Visual Studio project templates]
 ms.assetid: 90ae401c-b294-49ac-98da-e0d274f5bebb
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c27f9ce239d5d82dc972186912266cea0d4f1ddf
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 9a4ddbdeeaecdb832b2601992272de9d76f4bdcb
+ms.sourcegitcommit: d4920babfc3d24a3fe1d4bf446ed3fe73b344467
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55070496"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "67160000"
 ---
 # <a name="templatecontent-element-visual-studio-templates"></a>TemplateContent 項目 (Visual Studio 範本)
 
@@ -81,7 +81,7 @@ ms.locfileid: "55070496"
     </TemplateData>
     <TemplateContent>
         <Project File="MyStarterKit.csproj">
-            <ProjectItem>Form1.cs<ProjectItem>
+            <ProjectItem>Form1.cs</ProjectItem>
             <ProjectItem>Form1.Designer.cs</ProjectItem>
             <ProjectItem>Program.cs</ProjectItem>
             <ProjectItem>Properties\AssemblyInfo.cs</ProjectItem>

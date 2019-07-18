@@ -7,17 +7,17 @@ helpviewer_keywords:
 - debugging [Debugging SDK], expression evaluation
 - expression evaluation
 ms.assetid: f9381b2f-99aa-426c-aea0-d9c15f3c859b
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c33fff3d8b5bd30ecec1b566e550d14e4cb68c11
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: c9f990225cbff539281122d21d4773f6611f694f
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56679576"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66353752"
 ---
 # <a name="expression-evaluator"></a>運算式評估工具
 運算式評估工具 (EE) 檢查來剖析，並在執行階段評估變數和運算式語言的語法，讓 IDE 處於中斷模式時，使用者可以檢視。

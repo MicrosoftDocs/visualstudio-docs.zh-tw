@@ -1,14 +1,9 @@
 ---
 title: IDebugDocumentContext2::Compare |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugDocumentContext2::Compare
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 2327b1ba-52d0-42fb-a01e-63cb4b332d2f
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 3d440f585cca5b531fbd97cbbfe6b1ff852cec9d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 7f09684c5e9587c6e3bb631674e009d0b36f4fc5
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51744906"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68189405"
 ---
 # <a name="idebugdocumentcontext2compare"></a>IDebugDocumentContext2::Compare
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -63,7 +58,7 @@ int Compare( 
  [out]傳回索引至`rgpDocContextSet`符合比較的第一個文件內容的陣列。  
   
 ## <a name="return-value"></a>傳回值  
- 傳回`S_OK`如果找不到相符項目。 傳回`S_FALSE`如果找不到相符項目。 反之則傳回錯誤碼。  
+ 傳回`S_OK`如果找不到相符項目。 傳回`S_FALSE`如果找不到相符項目。 否則會傳回錯誤碼。  
   
 ## <a name="remarks"></a>備註  
  [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)陣列中傳遞的物件必須實作相同的偵錯引擎，可實作`IDebugDocumentContext2`物件所呼叫，否則比較無效。  
@@ -71,4 +66,3 @@ int Compare( 
 ## <a name="see-also"></a>另請參閱  
  [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)   
  [DOCCONTEXT_COMPARE](../../../extensibility/debugger/reference/doccontext-compare.md)
-

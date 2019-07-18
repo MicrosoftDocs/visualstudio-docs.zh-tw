@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 78ce8311e9504261399f22feefebb93fb9b3c64f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 6dadfff62502af59652e9113553e13b4942c540f
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56605948"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "64822632"
 ---
 # <a name="idiasymbolgetthunkordinal"></a>IDiaSymbol::get_thunkOrdinal
 擷取函式的 thunk 類型。
@@ -39,14 +39,14 @@ HRESULT get_thunkOrdinal ( 
  如果成功，則傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。
 
 > [!NOTE]
->  傳回值為`S_FALSE`表示此屬性不適用於符號。
+> 傳回值為`S_FALSE`表示此屬性不適用於符號。
 
 ## <a name="remarks"></a>備註
  這個屬性就有效才做為符號[SymTagEnum 列舉](../../debugger/debug-interface-access/symtagenum.md)的值`SymTagThunk`。
 
  「 Thunk 」 是一種轉換的 32 位元記憶體位址空間 （也就是一般的位址空間） 和 （又稱為分段的位址空間） 的 16 位元位址空間的程式碼。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
 - [THUNK_ORDINAL 列舉](../../debugger/debug-interface-access/thunk-ordinal.md)
 - [SymTagEnum 列舉](../../debugger/debug-interface-access/symtagenum.md)

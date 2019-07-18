@@ -6,29 +6,29 @@ helpviewer_keywords:
 - VSPackages, autoloading
 - VSPackages, loading
 ms.assetid: f4c3dcea-5051-4065-898f-601269649d92
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9878fea72c83cd6a466f2743f44d3eddca0bdba7
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 2c7c2a558abc928524813419df6b7848d34f0f3e
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56702053"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66309578"
 ---
 # <a name="load-vspackages"></a>載入 Vspackage
 Vspackage 會載入到 Visual Studio 中，只有需要其功能時，只有。 比方說，Visual Studio 使用專案 factory 或 VSPackage 實作的服務時，會載入 VSPackage。 這項功能稱為延遲的載入，這會盡可能以改善效能。
 
 > [!NOTE]
->  Visual Studio 可以判斷特定的 VSPackage 資訊，例如 VSPackage 提供，而不必載入 VSPackage 的命令。
+> Visual Studio 可以判斷特定的 VSPackage 資訊，例如 VSPackage 提供，而不必載入 VSPackage 的命令。
 
  Vspackage 可以例如設定自動載入在特定的使用者介面 (UI) 內容中，開啟方案時。 <xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute>屬性會設定此內容。
 
 ### <a name="autoload-a-vspackage-in-a-specific-context"></a>自動載入 VSPackage 中特定的內容
 
--   新增`ProvideAutoLoad`屬性加入 VSPackage 屬性：
+- 新增`ProvideAutoLoad`屬性加入 VSPackage 屬性：
 
     ```csharp
     [DefaultRegistryRoot(@"Software\Microsoft\VisualStudio\14.0")]
@@ -41,11 +41,11 @@ Vspackage 會載入到 Visual Studio 中，只有需要其功能時，只有。 
 
      請參閱列舉的欄位<xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids80>如 UI 內容和其 GUID 值的清單。
 
--   在設定的中斷點<xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A>方法。
+- 在設定的中斷點<xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A>方法。
 
--   建置 VSPackage，並開始偵錯。
+- 建置 VSPackage，並開始偵錯。
 
--   載入方案或建立一個。
+- 載入方案或建立一個。
 
      VSPackage 載入，並在中斷點停止。
 
@@ -54,7 +54,7 @@ Vspackage 會載入到 Visual Studio 中，只有需要其功能時，只有。 
 
  您可以使用<xref:Microsoft.VisualStudio.Shell.Interop.IVsShell.LoadPackage%2A>方法，以強制載入 VSPackage。
 
--   插入此程式碼<xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A>的 VSPackage，強制載入的另一個 VSPackage 的方法：
+- 插入此程式碼<xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A>的 VSPackage，強制載入的另一個 VSPackage 的方法：
 
     ```csharp
     IVsShell shell = GetService(typeof(SVsShell)) as IVsShell;

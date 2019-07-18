@@ -12,12 +12,12 @@ caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e5b15badb7b5e98c73ccadab41f67c64d60cb05e
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 720f37afbeea3c7440ad2ced9649039d671b1f1c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54779222"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63383401"
 ---
 # <a name="call-tree-view---sampling-data"></a>呼叫樹狀圖檢視 - 取樣資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "54779222"
 [呼叫樹狀圖] 檢視顯示在分析的應用程式中周遊的函式執行路徑。  
   
 > [!NOTE]
->  Windows 8 和 Windows Server 2012 增強式安全性功能需要的重大變更，會以 Visual Studio 分析工具在這些平台收集資料的方式表現。 Windows 市集應用程式也需要新的資料收集技術。 請參閱 [Windows 8 和 Windows Server 2012 應用程式的效能工具](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)。  
+> Windows 8 和 Windows Server 2012 增強式安全性功能需要的重大變更，會以 Visual Studio 分析工具在這些平台收集資料的方式表現。 Windows 市集應用程式也需要新的資料收集技術。 請參閱 [Windows 8 和 Windows Server 2012 應用程式的效能工具](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)。  
   
  樹狀圖的根是應用程式或元件的進入點。 每個函式節點會列出它所呼叫的所有函式，以及這些函式呼叫的相關效能資料。  
   
@@ -39,7 +39,7 @@ ms.locfileid: "54779222"
   
  設定根節點時，除了所選取節點的樹狀子目錄以外，請從檢視中排除所有其他的項目。 若要將根節點重設回原始節點，請在 [呼叫樹狀圖檢視] 視窗上按一下滑鼠右鍵，然後選取 [重設根目錄]。  
   
-|資料行|描述|  
+|資料行|說明|  
 |------------|-----------------|  
 |**處理序 ID**|分析執行的處理序 ID (PID)。|  
 |**處理序名稱**|處理序的名稱。|  

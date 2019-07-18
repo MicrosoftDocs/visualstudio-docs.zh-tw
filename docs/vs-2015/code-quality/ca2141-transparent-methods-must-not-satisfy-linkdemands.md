@@ -1,14 +1,9 @@
 ---
 title: CA2141： 透明方法不可以滿足 Linkdemand |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA2141
 ms.assetid: 2957f5f7-c511-4180-ba80-752034f10a77
@@ -16,12 +11,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 3e5e34f0b207bc89b4f8928bff999c71f5d6c403
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a7c54b472e91aa2be1d8e5bb1a9c32c26c0cb299
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49939309"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68142699"
 ---
 # <a name="ca2141transparent-methods-must-not-satisfy-linkdemands"></a>CA2141：透明方法不可以滿足 LinkDemand
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,6 +46,3 @@ ms.locfileid: "49939309"
  在此範例中，透明方法會嘗試呼叫具有 LinkDemand 的方法。 此規則會引發這段程式碼。
 
  [!code-csharp[FxCop.Security.CA2141.TransparentMethodsMustNotSatisfyLinkDemands#1](../snippets/csharp/VS_Snippets_CodeAnalysis/fxcop.security.ca2141.transparentmethodsmustnotsatisfylinkdemands/cs/ca2141 - transparentmethodsmustnotsatisfylinkdemands.cs#1)]
-
-
-

@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 88e4f63646883c8d48dbd62fbd03deaddff8b8e2
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 06432ac0e882df506e4379a2f2cbffcf52c79f42
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223737"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66332757"
 ---
 # <a name="how-to-add-class-diagrams-to-projects"></a>作法：將類別圖表新增至專案
 
@@ -28,13 +28,13 @@ ms.locfileid: "57223737"
 
 若您尚未安裝**類別設計工具**元件，請遵循下列步驟安裝。
 
-1. 從 Windows [開始] 功能表開啟 **Visual Studio 安裝程式**，或從 Visual Studio 的功能表列選取 [工具] > [取得工具與功能]。
+1. 從 Windows [開始] 功能表開啟 **Visual Studio 安裝程式**，或從 Visual Studio 的功能表列選取 [工具]   > [取得工具與功能]  。
 
    **Visual Studio 安裝程式**隨即開啟。
 
-1. 選取 [個別元件] 索引標籤，然後向下捲動到 [程式碼工具] 分類。
+1. 選取 [個別元件]  索引標籤，然後向下捲動到 [程式碼工具]  分類。
 
-1. 選取 [類別設計工具]，然後選取 [修改]。
+1. 選取 [類別設計工具]  ，然後選取 [修改]  。
 
    ![Visual Studio 安裝程式中的類別設計工具元件](media/class-designer-component.png)
 
@@ -42,35 +42,38 @@ ms.locfileid: "57223737"
 
 ## <a name="add-a-blank-class-diagram-to-a-project"></a>將空白類別圖表新增至專案
 
-1. 在**方案總管**中，以滑鼠右鍵按一下專案節點，然後選擇 [新增] > [新增項目]。 或者按 **Ctrl**+**Shift**+**A**。
+1. 在**方案總管**中，以滑鼠右鍵按一下專案節點，然後選擇 [新增]   > [新增項目]  。 或者按 **Ctrl**+**Shift**+**A**。
 
-   [新增項目] 對話方塊隨即開啟。
+   [新增項目]  對話方塊隨即開啟。
 
-2. 展開 [常用項目] > [一般]，然後從範本清單中選取 [類別圖表]。 若是 Visual C++ 專案，請在 [公用程式] 分類中尋找**類別圖表**範本。
+2. 展開 [常用項目]   > [一般]  ，然後從範本清單中選取 [類別圖表]  。 若是 Visual C++ 專案，請在 [公用程式]  分類中尋找**類別圖表**範本。
 
    > [!NOTE]
    > 若您沒有看到**類別圖表**範本，請[遵循這些步驟](#install-the-class-designer-component)安裝 Visual Studio 的**類別設計工具**元件。
 
-   類別圖表會在類別設計工具中開啟，並在**方案總管**中顯示為副檔名為 *.cd* 的檔案。 您可以從 [工具箱] 將圖形和線條拖曳到圖表。
+   類別圖表會在類別設計工具中開啟，並在**方案總管**中顯示為副檔名為 *.cd* 的檔案。 您可以從 [工具箱]  將圖形和線條拖曳到圖表。
 
 若要加入多個類別圖，請重複本程序的步驟。
 
 ## <a name="add-a-class-diagram-based-on-existing-types"></a>根據現有類型新增類別圖表
 
-在 [方案總管] 中，開啟類別檔案的快顯功能表 (以滑鼠右鍵按一下)，然後選擇 [檢視類別圖表]。
+在 [方案總管]  中，開啟類別檔案的快顯功能表 (以滑鼠右鍵按一下)，然後選擇 [檢視類別圖表]  。
 
 -或-
 
-在 [類別檢視] 中，開啟命名空間或類型操作功能表，然後選擇 [檢視類別圖表]。
+在 [類別檢視]  中，開啟命名空間或類型操作功能表，然後選擇 [檢視類別圖表]  。
 
 > [!TIP]
-> 如果未開啟 [類別檢視]，請從 [檢視] 功能表開啟 [類別檢視]。
+> 如果未開啟 [類別檢視]  ，請從 [檢視]  功能表開啟 [類別檢視]  。
 
 ## <a name="to-display-the-contents-of-a-complete-project-in-a-class-diagram"></a>在類別圖表中顯示完整專案的內容
 
-在 [方案總管] 或 [類別檢視] 中，在專案上按一下滑鼠右鍵並選擇 [檢視]，然後選擇 [類別圖表檢視]。
+在 [方案總管]  或 [類別檢視] 中，在專案上按一下滑鼠右鍵並選擇 [檢視]  ，然後選擇 [類別圖表檢視]  。
 
 就會建立會自動填入內容的類別圖表。
+
+> [!NOTE]
+> 類別設計工具尚無法於 .NET Core 專案中使用。
 
 ## <a name="see-also"></a>另請參閱
 

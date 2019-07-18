@@ -12,12 +12,12 @@ caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 20211a2526062a67a3e23896512f072edc6ae44d
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 35ef5e1033224969f4dae1e42036b860f89bbd8f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54791422"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63416656"
 ---
 # <a name="commentmarkatprofile"></a>CommentMarkAtProfile
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI CommentMarkAtProfile (
 ## <a name="property-valuereturn-value"></a>屬性值/傳回值  
  此函式會使用 **PROFILE_COMMAND_STATUS** 列舉來指出成功或失敗。 傳回值可以是下列其中一個：  
   
-|列舉值|描述|  
+|列舉值|說明|  
 |----------------|-----------------|  
 |MARK_ERROR_MARKER_RESERVED|參數小於或等於 0。 會保留這些值。 不會記錄標記和註解。|  
 |MARK_ERROR_MODE_NEVER|呼叫函式時，分析模式設定為 NEVER。 不會記錄標記和註解。|  
@@ -63,7 +63,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI CommentMarkAtProfile (
  使用 Mark 命令或 API 函式 (CommentMarkAtProfile、CommentMarkProfile 或 MarkProfile) 來插入標記和註解時，包含標記分析函式之執行緒的分析狀態必須設定為開啟。 分析標記屬於全域範圍。 例如，在一個執行緒中插入的分析標記，可用來標記 .vsp 檔案中任何執行緒之資料區段的開頭或結尾。  
   
 > [!IMPORTANT]
->  CommentMarkAtProfile 方法只應該與檢測搭配使用。  
+> CommentMarkAtProfile 方法只應該與檢測搭配使用。  
   
 ## <a name="net-framework-equivalent"></a>.NET Framework 同等  
  Microsoft.VisualStudio.Profiler.dll  

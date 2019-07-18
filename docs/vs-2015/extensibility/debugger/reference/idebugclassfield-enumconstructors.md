@@ -1,14 +1,9 @@
 ---
 title: IDebugClassField::EnumConstructors |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugClassField::EnumConstructors
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 66a250b2-75a0-45aa-8d58-40f91cc4bf7b
 caps.latest.revision: 10
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 58f8ad70612275ea1c68a712c0a6a6ce48200e05
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: cd93f4867221f0b42f91fe1f96b8a8b464bf5aa9
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51807358"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68191031"
 ---
 # <a name="idebugclassfieldenumconstructors"></a>IDebugClassField::EnumConstructors
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -53,7 +48,7 @@ int EnumConstructors(
  [out]傳回[IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)物件，表示建構函式的清單。 如果不有任何建構函式會傳回 null 值。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，會傳回 S_OK，或如果沒有任何建構函式，則傳回 S_FALSE。 反之則傳回錯誤碼。  
+ 如果成功，會傳回 S_OK，或如果沒有任何建構函式，則傳回 S_FALSE。 否則會傳回錯誤碼。  
   
 ## <a name="remarks"></a>備註  
  列舉型別的每個項目是[IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)物件，描述建構函式方法。  
@@ -65,4 +60,3 @@ int EnumConstructors(
  [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)   
  [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)   
  [CONSTRUCTOR_ENUM](../../../extensibility/debugger/reference/constructor-enum.md)
-

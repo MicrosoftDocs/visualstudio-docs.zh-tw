@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 43c825bd621ada3f3e81d76f09a1f4bf9e30a67e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56614723"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62839975"
 ---
 # <a name="idiaframedatagetfunctionstart"></a>IDiaFrameData::get_functionStart
 擷取指出區塊是否包含函式的進入點的旗標。
@@ -41,5 +41,5 @@ HRESULT get_functionStart ( 
 ## <a name="remarks"></a>備註
  可以針對不是函式開頭，因為畫面格代表內嵌方法或函式所插入的函式的堆疊框架。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)

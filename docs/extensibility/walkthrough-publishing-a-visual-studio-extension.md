@@ -6,17 +6,17 @@ helpviewer_keywords:
 - publishing web controls
 - web controls, publishing
 ms.assetid: a7816161-0490-4043-86f5-0f7331ed83b3
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 34a9a97e018642660d7424b0bfce2a1bbbc9c073
-ms.sourcegitcommit: 4c7a0c2d712eb24609216577a793e912a6083eaf
+ms.openlocfilehash: 86ed2455b19a3f7e56c92a37a9402b7d65bf70a3
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "57983516"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66337916"
 ---
 # <a name="walkthrough-publish-a-visual-studio-extension"></a>逐步解說：發行 Visual Studio 擴充功能
 
@@ -80,27 +80,27 @@ ms.locfileid: "57983516"
 
     * **VSIX 識別碼**是 Visual Studio 會使用您的擴充功能的唯一識別碼。 如果您想要自動更新您的延伸模組，這個識別碼是必要的。 這個識別碼是從自動填入*source.extension.vsixmanifest*檔案。
 
-   * **標誌**用於您的延伸模組。 此標誌是從自動填入*source.extension.vsixmanifest*檔案提供。
+    * **標誌**用於您的延伸模組。 此標誌是從自動填入*source.extension.vsixmanifest*檔案提供。
 
-     * **簡短描述**您的擴充功能的作用。 這項描述是從自動填入*source.extension.vsixmanifest*檔案。
+    * **簡短描述**您的擴充功能的作用。 這項描述是從自動填入*source.extension.vsixmanifest*檔案。
 
-     * **概觀**是包含螢幕擷取畫面以及您的擴充功能的詳細的資訊的好地方。
+    * **概觀**是包含螢幕擷取畫面以及您的擴充功能的詳細的資訊的好地方。
 
-     * **支援的 Visual Studio 版本**可讓您選擇哪一個版本的 Visual Studio 擴充功能將在上運作。 您的延伸模組只會安裝這些版本。
+    * **支援的 Visual Studio 版本**可讓您選擇哪一個版本的 Visual Studio 擴充功能將在上運作。 您的延伸模組只會安裝這些版本。
 
-     * * * 支援 Visual Studio 版本可讓您選擇哪些版本的 Visual Studio 會作用於您的延伸模組。 您的延伸模組只會安裝這些版本。
+    * * * 支援 Visual Studio 版本可讓您選擇哪些版本的 Visual Studio 會作用於您的延伸模組。 您的延伸模組只會安裝這些版本。
 
-     * **型別**： 最常見的延伸模組的類型是**工具**。
+    * **型別**： 最常見的延伸模組的類型是**工具**。
 
-     * **類別**。 挑選最多 3 是最適合您的延伸模組。
+    * **類別**。 挑選最多 3 是最適合您的延伸模組。
 
-     * **標記**是關鍵字，協助使用者尋找擴充功能。 標記可協助增加您的擴充功能，在 Marketplace 中搜尋相關性。
+    * **標記**是關鍵字，協助使用者尋找擴充功能。 標記可協助增加您的擴充功能，在 Marketplace 中搜尋相關性。
 
-     * **定價分類**就是您的擴充功能的成本。
+    * **定價分類**就是您的擴充功能的成本。
 
-     * **原始程式碼存放庫**可讓您與社群分享您的程式碼的連結。
+    * **原始程式碼存放庫**可讓您與社群分享您的程式碼的連結。
 
-     * **您的擴充功能可讓問與答**可讓使用者保留在您的延伸模組項目頁面上的問題。
+    * **您的擴充功能可讓問與答**可讓使用者保留在您的延伸模組項目頁面上的問題。
 
 9. 按一下 **儲存並上傳**。 如此的選項會讓您回到您的發行者管理頁面。 您的延伸模組尚未發佈。 若要發佈您的延伸模組，以滑鼠右鍵按一下您的延伸模組並選取**設為公用**。 您可以檢視您的延伸模組的外觀類似 Marketplace 上選取**檢視延伸模組**。 取得數字，按一下**報表**。 若要變更您的延伸模組，請按一下**編輯**。
 
@@ -150,7 +150,7 @@ Marketplace 可支援授與其他使用者的權限來存取和管理發佈者�
 
 2. 按一下右上角**發佈**延伸模組。 選取之發行者的您用來發行**TestPublish**。 列出**TestPublish**隨即出現。
 
-3. 延伸模組項目上按一下滑鼠右鍵，然後按一下 **移除**。 系統會要求您確認是否您想要移除擴充功能。 按一下 [確定] 。
+3. 延伸模組項目上按一下滑鼠右鍵，然後按一下 **移除**。 系統會要求您確認是否您想要移除擴充功能。 按一下 [確定]  。
 
 ### <a name="to-remove-the-extension-from-your-computer"></a>若要從電腦移除擴充功能
 

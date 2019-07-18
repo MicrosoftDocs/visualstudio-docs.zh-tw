@@ -3,17 +3,17 @@ title: 影像庫檢視器 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 9d9c7fbb-ebae-4b20-9dd8-3c9070c0d0d1
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5457c0b4e7b355c130fedbdbba456b550a35f1ee
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 1fbef0686671a504cd1a141b6f582d30043809af
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56633248"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66315704"
 ---
 # <a name="image-library-viewer"></a>影像庫檢視器
 Visual Studio 影像庫檢視器工具可以載入，並搜尋映像資訊清單，讓使用者能夠操作這些 Visual Studio 會的方式相同。 使用者可以改變背景、 大小、 DPI、 高對比和其他設定。 此工具也會顯示每個映像資訊清單的載入資訊，並會顯示映像資訊清單中的每個映像的來源資訊。 這項工具可用於：
@@ -224,9 +224,9 @@ Visual Studio 影像庫檢視器工具可以載入，並搜尋映像資訊清單
 
 ## <a name="notes"></a>注意
 
--   根據預設，此工具會在數個 Visual Studio 安裝目錄中的映像資訊清單中提取。 只有一種具有公開可取用的 moniker 是**Microsoft.VisualStudio.ImageCatalog**資訊清單。 GUID: ae27a6b0-e345-4288-96df-5eaf394ee369 (請勿**不**覆寫此自訂資訊清單中的 GUID) 類型：KnownMonikers
+- 根據預設，此工具會在數個 Visual Studio 安裝目錄中的映像資訊清單中提取。 只有一種具有公開可取用的 moniker 是**Microsoft.VisualStudio.ImageCatalog**資訊清單。 GUID: ae27a6b0-e345-4288-96df-5eaf394ee369 (請勿**不**覆寫此自訂資訊清單中的 GUID) 類型：KnownMonikers
 
--   此工具會嘗試啟動時載入所有影像資訊清單，找到，因此它可能需要花費數秒鐘的時間來實際顯示應用程式。 載入資訊清單時，它可能也會變慢或無回應。
+- 此工具會嘗試啟動時載入所有影像資訊清單，找到，因此它可能需要花費數秒鐘的時間來實際顯示應用程式。 載入資訊清單時，它可能也會變慢或無回應。
 
 ## <a name="sample-output"></a>範例輸出
  此工具不會產生任何輸出。

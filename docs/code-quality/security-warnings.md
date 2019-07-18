@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e8d2dadbb4bbd17b1ee1856dd896d78b0faef2cd
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: c52db730e471d845989b8fdfbadd259b5d166e8f
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58195082"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66715221"
 ---
 # <a name="security-warnings"></a>安全性警告
 
@@ -36,7 +36,7 @@ ms.locfileid: "58195082"
 |[CA2104:不要宣告唯讀的可變動參考類型](../code-quality/ca2104-do-not-declare-read-only-mutable-reference-types.md)|外部可見類型包含了可變動參考類型的外部可見唯讀欄位。 可變動類型是可以修改執行個體資料的類型。|
 |[CA2105:陣列欄位不應該為唯讀](../code-quality/ca2105-array-fields-should-not-be-read-only.md)|當您將唯讀 (在 Visual Basic 中為 ReadOnly) 修飾詞套用至包含陣列的欄位時，欄位就不能變更為參考不同的陣列。 但是，儲存在唯讀欄位的陣列元素則可以變更。|
 |[CA2106： 必須必須保護判斷提示](../code-quality/ca2106-secure-asserts.md)|方法會判斷提示使用權限，而且不會在呼叫端上執行安全性檢查。 判斷提示安全性權限但未執行任何安全性檢查，會在您的程式碼中留下可能遭利用的安全性弱點。|
-|[CA2107： 必須檢視 deny 和 permit only 的使用方式](../code-quality/ca2107-review-deny-and-permit-only-usage.md)|只有相當了解 .NET Framework 安全性的人員才能執行 PermitOnly 方法和 CodeAccessPermission.Deny 安全性動作。 而使用這些安全性動作的程式碼應該接受安全性檢閱。|
+|[CA2107： 必須檢視 deny 和 permit only 的使用方式](../code-quality/ca2107-review-deny-and-permit-only-usage.md)|使用 PermitOnly 方法和 CodeAccessPermission.Deny 安全性動作應只由所使用的.NET 安全性。 而使用這些安全性動作的程式碼應該接受安全性檢閱。|
 |[CA2108:必須檢閱實值型別上的宣告式安全性](../code-quality/ca2108-review-declarative-security-on-value-types.md)|公用或受保護的實值類型受到資料存取或連結要求保護。|
 |[CA2109:檢閱顯示的事件處理常式](../code-quality/ca2109-review-visible-event-handlers.md)|偵測到公用或保護的事件處理方法。 除非有絕對的必要性，否則不應該公開事件處理方法。|
 |[CA2111:指標不應該為可見](../code-quality/ca2111-pointers-should-not-be-visible.md)|指標不為私用、內部或唯讀。 惡意的程式碼可變更指標值，進而可能會允許存取記憶體中的任意位置，或是造成應用程式或系統失敗。|

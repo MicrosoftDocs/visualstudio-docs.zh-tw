@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProcessEx2::Attach method
 ms.assetid: f3334ed7-39bf-4d02-a338-36f567b9b287
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0a39f674744d0b1e97e815d33c2d9564f4a39c0d
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 5932535810f28e6f5da96ab69457f7364563d622
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56698608"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66325335"
 ---
 # <a name="idebugprocessex2attach"></a>IDebugProcessEx2::Attach
 這個方法會通知程序工作階段現在正在偵錯程序。
@@ -36,10 +39,9 @@ int Attach(
 );
 ```
 
-#### <a name="parameters"></a>參數
- `pSession`
-
- [in]值，這個值可唯一識別附加至此處理序的工作階段。
+## <a name="parameters"></a>參數
+`pSession`\
+[in]值，這個值可唯一識別附加至此處理序的工作階段。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

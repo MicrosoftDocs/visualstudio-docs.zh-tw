@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugLoadCompleteEvent2
 ms.assetid: 37eb7360-28e9-4273-862a-4c17f22af690
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 83bbeb7decda65602202813229315101843e0873
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 5fd66d3fc31c799bed1c14891c04000374b9a153
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56701000"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66333133"
 ---
 # <a name="idebugloadcompleteevent2"></a>IDebugLoadCompleteEvent2
 這個介面會傳送偵錯引擎 (DE) 工作階段的偵錯管理員 (SDM) 載入程式時，但在執行任何程式碼之前。

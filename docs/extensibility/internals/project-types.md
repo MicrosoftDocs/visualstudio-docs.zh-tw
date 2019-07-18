@@ -6,17 +6,17 @@ helpviewer_keywords:
 - project types, adding
 - projects [Visual Studio SDK], adding new types
 ms.assetid: 263a084f-f97a-4e09-add7-f0e8a6a27daf
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d28b0b015d5f75eac081b0409d4f8d4b9a4edb9a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: a8d41eb5b21dc22ca0345c9cbf93ce680354d0db
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56623628"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66318768"
 ---
 # <a name="project-types"></a>專案類型
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 包含語言的數種專案類型，例如[!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]和[!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 也可讓您建立您自己的專案類型。

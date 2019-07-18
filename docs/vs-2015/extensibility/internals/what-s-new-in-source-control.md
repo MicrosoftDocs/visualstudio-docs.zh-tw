@@ -1,29 +1,25 @@
 ---
-title: 什麼&#39;原始檔控制的新功能 |Microsoft Docs
-ms.custom: ''
+title: 原始檔控制的新功能
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - what's new [Visual Studio SDK], source control
 - source control [Visual Studio SDK], what's new
 ms.assetid: bcf85418-18fb-4824-9dae-d14bf3d56a77
 caps.latest.revision: 28
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 9a108acb2ae32b64292cd819c75de4726f067a00
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 31b55c57f47f25814eff24f13bcf91408468d0f4
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51752459"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68200945"
 ---
-# <a name="what39s-new-in-source-control"></a>什麼&#39;原始檔控制的新功能
+# <a name="what39s-new-in-source-control-in-visual-studio-2015"></a>什麼&#39;Visual Studio 2015 中的原始檔控制的新功能
+
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 在 [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)]您可以藉由實作原始檔控制 VSPackage 提供深入的整合式原始檔控制解決方案。 本節說明的原始檔控制 Vspackage 功能，並提供實作步驟的概觀。  
@@ -37,17 +33,17 @@ ms.locfileid: "51752459"
   
  下列步驟提供所需實作原始檔控制套件的一般概觀。 如需詳細資訊，請參閱 <<c0> [ 建立原始檔控制 VSPackage](../../extensibility/internals/creating-a-source-control-vspackage.md)。  
   
-1.  建立提供私用的原始檔控制服務的 VSPackage。  
+1. 建立提供私用的原始檔控制服務的 VSPackage。  
   
-2.  在原始檔控制相關服務，會提供實作介面[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)](例如<xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2>而<xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProvider>介面)。  
+2. 在原始檔控制相關服務，會提供實作介面[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)](例如<xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2>而<xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProvider>介面)。  
   
-3.  註冊您的原始檔控制 VSPackage。  
+3. 註冊您的原始檔控制 VSPackage。  
   
-4.  實作所有的原始檔控制 UI，包括功能表項目、 對話方塊、 工具列和快顯功能表。  
+4. 實作所有的原始檔控制 UI，包括功能表項目、 對話方塊、 工具列和快顯功能表。  
   
-5.  所有的原始檔控制相關事件會傳遞至原始檔控制 VSackage 中，當它為作用中且必須由您的 VSPackage。  
+5. 所有的原始檔控制相關事件會傳遞至原始檔控制 VSackage 中，當它為作用中且必須由您的 VSPackage。  
   
-6.  原始檔控制 VSPackage 必須接聽事件，例如實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3>介面及追蹤專案文件 (TPD) 事件 (由實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2>介面)，並採取必要動作。  
+6. 原始檔控制 VSPackage 必須接聽事件，例如實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3>介面及追蹤專案文件 (TPD) 事件 (由實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2>介面)，並採取必要動作。  
   
 ## <a name="see-also"></a>另請參閱  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2>   
@@ -56,4 +52,3 @@ ms.locfileid: "51752459"
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2>   
  [概觀](../../extensibility/internals/source-control-integration-overview.md)   
  [建立原始檔控制 VSPackage](../../extensibility/internals/creating-a-source-control-vspackage.md)
-

@@ -1,14 +1,9 @@
 ---
-title: IDebugProcess3::Continue |Microsoft Docs
-ms.custom: ''
+title: IDebugProcess3::Continue | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugProcess3::Continue
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 57506242-5763-4c08-adb9-8a78ce02cebb
 caps.latest.revision: 8
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: ae71aa79aba54b8954e309131f4b5e82357e1555
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 8e7167a5425566936c196960d5014fcf5d7c8709
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51817109"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63405850"
 ---
 # <a name="idebugprocess3continue"></a>IDebugProcess3::Continue
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -30,7 +25,7 @@ ms.locfileid: "51817109"
 會繼續執行此程序，從停止的狀態。 會保留任何先前的執行狀態 （例如在步驟），並在處理序啟動重新執行。  
   
 > [!NOTE]
->  應該使用這個方法，而不是[繼續](../../../extensibility/debugger/reference/idebugprogram2-continue.md)。  
+> 應該使用這個方法，而不是[繼續](../../../extensibility/debugger/reference/idebugprogram2-continue.md)。  
   
 ## <a name="syntax"></a>語法  
   
@@ -62,4 +57,3 @@ int Continue(
  [IDebugProcess3](../../../extensibility/debugger/reference/idebugprocess3.md)   
  [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)   
  [Event](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)
-

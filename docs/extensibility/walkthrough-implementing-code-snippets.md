@@ -3,17 +3,17 @@ title: 逐步解說：實作程式碼片段 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: adbc5382-d170-441c-9fd0-80faa1816478
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 377660b32f8edbb26e8a062d55ee152132f7f587
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 2e4b6d0346ce10c780254b26a4f2c710ed171ef5
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56707077"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66320742"
 ---
 # <a name="walkthrough-implement-code-snippets"></a>逐步解說：實作程式碼片段
 您可以建立程式碼片段，並將它們包含在編輯器擴充功能，以便延伸模組的使用者可以將它們加入自己的程式碼。
@@ -109,33 +109,33 @@ ms.locfileid: "56707077"
 
 ### <a name="to-register-code-snippets-for-a-specific-guid"></a>若要針對特定的 GUID 註冊程式碼片段
 
-1.  開啟**CompletionTest**專案。 如需有關如何建立此專案的資訊，請參閱[逐步解說：顯示陳述式完成](../extensibility/walkthrough-displaying-statement-completion.md)。
+1. 開啟**CompletionTest**專案。 如需有關如何建立此專案的資訊，請參閱[逐步解說：顯示陳述式完成](../extensibility/walkthrough-displaying-statement-completion.md)。
 
-2.  在專案中，新增下列組件的參考：
+2. 在專案中，新增下列組件的參考：
 
-    -   Microsoft.VisualStudio.TextManager.Interop
+    - Microsoft.VisualStudio.TextManager.Interop
 
-    -   Microsoft.VisualStudio.TextManager.Interop.8.0
+    - Microsoft.VisualStudio.TextManager.Interop.8.0
 
-    -   microsoft.msxml
+    - microsoft.msxml
 
-3.  在專案中，開啟**source.extension.vsixmanifest**檔案。
+3. 在專案中，開啟**source.extension.vsixmanifest**檔案。
 
-4.  請確定**資產**索引標籤包含**VsPackage**內容類型，以及**專案**設為專案的名稱。
+4. 請確定**資產**索引標籤包含**VsPackage**內容類型，以及**專案**設為專案的名稱。
 
-5.  選取 CompletionTest 專案，然後在 [屬性] 視窗中設定**產生 Pkgdef 檔案**要 **，則為 true**。 儲存專案。
+5. 選取 CompletionTest 專案，然後在 [屬性] 視窗中設定**產生 Pkgdef 檔案**要 **，則為 true**。 儲存專案。
 
-6.  新增靜態`SnippetUtilities`類別至專案。
+6. 新增靜態`SnippetUtilities`類別至專案。
 
      [!code-csharp[VSSDKCompletionTest#22](../extensibility/codesnippet/CSharp/walkthrough-implementing-code-snippets_1.cs)]
      [!code-vb[VSSDKCompletionTest#22](../extensibility/codesnippet/VisualBasic/walkthrough-implementing-code-snippets_1.vb)]
 
-7.  SnippetUtilities 類別中定義的 GUID，並指定其值用於*SnippetsIndex.xml*檔案。
+7. SnippetUtilities 類別中定義的 GUID，並指定其值用於*SnippetsIndex.xml*檔案。
 
      [!code-csharp[VSSDKCompletionTest#23](../extensibility/codesnippet/CSharp/walkthrough-implementing-code-snippets_2.cs)]
      [!code-vb[VSSDKCompletionTest#23](../extensibility/codesnippet/VisualBasic/walkthrough-implementing-code-snippets_2.vb)]
 
-8.  新增<xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute>至`TestCompletionHandler`類別。 這個屬性可以加入至專案中任何公用或內部 （非靜態） 類別。 (您可能需要新增`using`Microsoft.VisualStudio.Shell 命名空間陳述式。)
+8. 新增<xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute>至`TestCompletionHandler`類別。 這個屬性可以加入至專案中任何公用或內部 （非靜態） 類別。 (您可能需要新增`using`Microsoft.VisualStudio.Shell 命名空間陳述式。)
 
      [!code-csharp[VSSDKCompletionTest#24](../extensibility/codesnippet/CSharp/walkthrough-implementing-code-snippets_3.cs)]
      [!code-vb[VSSDKCompletionTest#24](../extensibility/codesnippet/VisualBasic/walkthrough-implementing-code-snippets_3.vb)]
@@ -147,17 +147,17 @@ ms.locfileid: "56707077"
 
 #### <a name="to-add-the-insert-snippet-command-to-the-shortcut-menu"></a>若要加入快顯功能表插入片段 命令
 
-1.  開啟`TestCompletionCommandHandler`類別檔案。
+1. 開啟`TestCompletionCommandHandler`類別檔案。
 
      因為這個類別會實作<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>，您可以啟用**插入程式碼片段**命令，在<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A>方法。 啟用此命令之前，請檢查，呼叫這個方法是不在 automation 函式因為時**插入程式碼片段**按一下命令時，它會顯示程式碼片段選擇器使用者介面 (UI)。
 
      [!code-csharp[VSSDKCompletionTest#25](../extensibility/codesnippet/CSharp/walkthrough-implementing-code-snippets_4.cs)]
      [!code-vb[VSSDKCompletionTest#25](../extensibility/codesnippet/VisualBasic/walkthrough-implementing-code-snippets_4.vb)]
 
-2.  建置並執行專案。 在實驗執行個體中，開啟檔案具有 *.zzz*檔案副檔名，然後再以滑鼠右鍵按一下任何位置中。 **插入程式碼片段**命令應該會出現快顯功能表。
+2. 建置並執行專案。 在實驗執行個體中，開啟檔案具有 *.zzz*檔案副檔名，然後再以滑鼠右鍵按一下任何位置中。 **插入程式碼片段**命令應該會出現快顯功能表。
 
 ## <a name="implement-snippet-expansion-in-the-snippet-picker-ui"></a>在程式碼片段選擇器 UI 中的實作程式碼片段展開
- 本節說明如何實作程式碼程式碼片段展開，使程式碼片段選擇器 UI 顯示何時**插入程式碼片段**快顯功能表上按一下。 使用者類型的程式碼片段捷徑，然後按下時，也會展開程式碼片段** 索引標籤**。
+ 本節說明如何實作程式碼程式碼片段展開，使程式碼片段選擇器 UI 顯示何時**插入程式碼片段**快顯功能表上按一下。 使用者類型的程式碼片段捷徑，然後按下時，也會展開程式碼片段 **索引標籤**。
 
  若要顯示程式碼片段選擇器 UI，並啟用導覽和接受後插入程式碼片段，使用<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A>方法。 插入本身由<xref:Microsoft.VisualStudio.TextManager.Interop.IVsExpansionClient.OnItemChosen%2A>方法。
 
@@ -165,42 +165,42 @@ ms.locfileid: "56707077"
 
 #### <a name="to-implement-snippet-expansion"></a>若要實作程式碼片段展開
 
-1.  要包含的檔案`TestCompletionCommandHandler`類別中，新增下列`using`陳述式。
+1. 要包含的檔案`TestCompletionCommandHandler`類別中，新增下列`using`陳述式。
 
      [!code-csharp[VSSDKCompletionTest#26](../extensibility/codesnippet/CSharp/walkthrough-implementing-code-snippets_5.cs)]
      [!code-vb[VSSDKCompletionTest#26](../extensibility/codesnippet/VisualBasic/walkthrough-implementing-code-snippets_5.vb)]
 
-2.  製作`TestCompletionCommandHandler`類別會實作<xref:Microsoft.VisualStudio.TextManager.Interop.IVsExpansionClient>介面。
+2. 製作`TestCompletionCommandHandler`類別會實作<xref:Microsoft.VisualStudio.TextManager.Interop.IVsExpansionClient>介面。
 
      [!code-csharp[VSSDKCompletionTest#27](../extensibility/codesnippet/CSharp/walkthrough-implementing-code-snippets_6.cs)]
      [!code-vb[VSSDKCompletionTest#27](../extensibility/codesnippet/VisualBasic/walkthrough-implementing-code-snippets_6.vb)]
 
-3.  在 `TestCompletionCommandHandlerProvider`類別中，匯入<xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService>。
+3. 在 `TestCompletionCommandHandlerProvider`類別中，匯入<xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService>。
 
      [!code-csharp[VSSDKCompletionTest#28](../extensibility/codesnippet/CSharp/walkthrough-implementing-code-snippets_7.cs)]
      [!code-vb[VSSDKCompletionTest#28](../extensibility/codesnippet/VisualBasic/walkthrough-implementing-code-snippets_7.vb)]
 
-4.  新增一些程式碼擴充介面的私用欄位和<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>。
+4. 新增一些程式碼擴充介面的私用欄位和<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>。
 
      [!code-csharp[VSSDKCompletionTest#29](../extensibility/codesnippet/CSharp/walkthrough-implementing-code-snippets_8.cs)]
      [!code-vb[VSSDKCompletionTest#29](../extensibility/codesnippet/VisualBasic/walkthrough-implementing-code-snippets_8.vb)]
 
-5.  建構函式中`TestCompletionCommandHandler`類別中，設定下列欄位。
+5. 建構函式中`TestCompletionCommandHandler`類別中，設定下列欄位。
 
      [!code-csharp[VSSDKCompletionTest#30](../extensibility/codesnippet/CSharp/walkthrough-implementing-code-snippets_9.cs)]
      [!code-vb[VSSDKCompletionTest#30](../extensibility/codesnippet/VisualBasic/walkthrough-implementing-code-snippets_9.vb)]
 
-6.  若要顯示的程式碼片段選擇器，當使用者按一下**插入程式碼片段**命令，新增下列程式碼<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A>方法。 (若要讓此說明更容易閱讀，`Exec()`不顯示用於陳述式完成的程式碼; 相反地，程式碼區塊會新增至現有的方法。)字元檢查的程式碼之後新增下列程式碼區塊。
+6. 若要顯示的程式碼片段選擇器，當使用者按一下**插入程式碼片段**命令，新增下列程式碼<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A>方法。 (若要讓此說明更容易閱讀，`Exec()`不顯示用於陳述式完成的程式碼; 相反地，程式碼區塊會新增至現有的方法。)字元檢查的程式碼之後新增下列程式碼區塊。
 
      [!code-csharp[VSSDKCompletionTest#31](../extensibility/codesnippet/CSharp/walkthrough-implementing-code-snippets_10.cs)]
      [!code-vb[VSSDKCompletionTest#31](../extensibility/codesnippet/VisualBasic/walkthrough-implementing-code-snippets_10.vb)]
 
-7.  如果程式碼片段會有可巡覽的欄位，擴充工作階段保持開啟直到明確接受擴充;如果程式碼片段會不有任何欄位，在工作階段已關閉，而且會當做傳回`null`由<xref:Microsoft.VisualStudio.TextManager.Interop.IVsExpansionManager.InvokeInsertionUI%2A>方法。 在 [<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A>方法，您在上一個步驟中，加入的 UI 程式碼片段選擇器之後加入下列程式碼來處理片段瀏覽 (當使用者按下**索引標籤**或**Shift** + **] 索引標籤**之後插入程式碼片段)。
+7. 如果程式碼片段會有可巡覽的欄位，擴充工作階段保持開啟直到明確接受擴充;如果程式碼片段會不有任何欄位，在工作階段已關閉，而且會當做傳回`null`由<xref:Microsoft.VisualStudio.TextManager.Interop.IVsExpansionManager.InvokeInsertionUI%2A>方法。 在 [<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A>方法，您在上一個步驟中，加入的 UI 程式碼片段選擇器之後加入下列程式碼來處理片段瀏覽 (當使用者按下**索引標籤**或**Shift** + **] 索引標籤**之後插入程式碼片段)。
 
      [!code-csharp[VSSDKCompletionTest#32](../extensibility/codesnippet/CSharp/walkthrough-implementing-code-snippets_11.cs)]
      [!code-vb[VSSDKCompletionTest#32](../extensibility/codesnippet/VisualBasic/walkthrough-implementing-code-snippets_11.vb)]
 
-8.  若要在使用者型別對應的捷徑，然後按下時插入程式碼片段** 索引標籤**，將程式碼加入<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A>方法。 私用方法，將程式碼片段會顯示在稍後的步驟。 您在上一個步驟中新增的瀏覽程式碼之後新增下列程式碼。
+8. 若要在使用者型別對應的捷徑，然後按下時插入程式碼片段 **索引標籤**，將程式碼加入<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A>方法。 私用方法，將程式碼片段會顯示在稍後的步驟。 您在上一個步驟中新增的瀏覽程式碼之後新增下列程式碼。
 
      [!code-csharp[VSSDKCompletionTest#33](../extensibility/codesnippet/CSharp/walkthrough-implementing-code-snippets_12.cs)]
      [!code-vb[VSSDKCompletionTest#33](../extensibility/codesnippet/VisualBasic/walkthrough-implementing-code-snippets_12.vb)]
@@ -223,13 +223,13 @@ ms.locfileid: "56707077"
 ## <a name="build-and-test-code-snippet-expansion"></a>建置和測試程式碼程式碼片段展開
  您可以測試是否在您專案中的程式碼片段展開運作。
 
-1.  建置方案。 當您執行此專案的偵錯工具時，會啟動 Visual Studio 的第二個執行個體。
+1. 建置方案。 當您執行此專案的偵錯工具時，會啟動 Visual Studio 的第二個執行個體。
 
-2.  開啟文字檔案，並輸入一些文字。
+2. 開啟文字檔案，並輸入一些文字。
 
-3.  在文字中的某處按一下滑鼠右鍵，然後按一下**插入程式碼片段**。
+3. 在文字中的某處按一下滑鼠右鍵，然後按一下**插入程式碼片段**。
 
-4.  UI 應會顯示與快顯視窗顯示程式碼片段選擇器**測試取代欄位**。 按兩下快顯視窗中。
+4. UI 應會顯示與快顯視窗顯示程式碼片段選擇器**測試取代欄位**。 按兩下快顯視窗中。
 
      應該插入下列程式碼片段。
 
@@ -240,10 +240,10 @@ ms.locfileid: "56707077"
 
      請勿按**Enter**或是**Esc**。
 
-5.  按下** 索引標籤**並**Shift**+**索引標籤**"first"和 「 秒 」 之間切換。
+5. 按下 **索引標籤**並**Shift**+**索引標籤**"first"和 「 秒 」 之間切換。
 
-6.  藉由按下其中一個接受插入**Enter**或是**Esc**。
+6. 藉由按下其中一個接受插入**Enter**或是**Esc**。
 
-7.  在文字的不同部分中，輸入 「 測試 」，然後按** 索引標籤**。由於 「 測試 」 程式碼片段捷徑，應該再次插入程式碼片段。
+7. 在文字的不同部分中，輸入 「 測試 」，然後按 **索引標籤**。由於 「 測試 」 程式碼片段捷徑，應該再次插入程式碼片段。
 
 ## <a name="next-steps"></a>後續步驟

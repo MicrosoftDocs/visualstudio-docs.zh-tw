@@ -1,5 +1,5 @@
 ---
-title: HOW TO：以程式設計方式保護文件和文件的部分
+title: 以程式設計方式保護文件和文件的部分
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,14 +14,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2c7d284e116f72b5f1c19017cf234ea42832c202
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 30cb3d0b9ad04a3a0195f3b58ba5856de94d09d4
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56613410"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66402179"
 ---
-# <a name="how-to-programmatically-protect-documents-and-parts-of-documents"></a>HOW TO：以程式設計方式保護文件和文件的部分
+# <a name="how-to-programmatically-protect-documents-and-parts-of-documents"></a>作法：以程式設計方式保護文件和文件的部分
   您可以在 Microsoft Office Word 文件加入保護，以防止使用者對文件進行任何編輯。
 
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "56613410"
  您也可以將文件的特定區域標記為例外狀況，讓指定的使用者只能編輯文件的那些區域。 例如，您可能想要保護除了特定書籤以外的整份文件。 您可以選擇性地加入密碼，除非使用者知道密碼，否則無法移除文件保護。
 
 > [!NOTE]
->  下列範例不會使用密碼保護。不過，您可以考慮在加入文件保護時使用密碼。 如需詳細資訊，請參閱文件保護裝置範例[Office 程式開發範例和逐步解說](../vsto/office-development-samples-and-walkthroughs.md)。
+> 下列範例不會使用密碼保護。不過，您可以考慮在加入文件保護時使用密碼。 如需詳細資訊，請參閱文件保護裝置範例[Office 程式開發範例和逐步解說](../vsto/office-development-samples-and-walkthroughs.md)。
 
  您也可以使用內容控制項保護文件的部分。 如需詳細資訊，請參閱[如何：使用內容控制項保護文件的部分](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md)。
 
@@ -37,19 +37,19 @@ ms.locfileid: "56613410"
 
 ### <a name="to-protect-a-document-that-is-part-of-a-document-level-customization"></a>保護屬於文件層級自訂一部分的文件
 
-1.  呼叫您專案中之 <xref:Microsoft.Office.Tools.Word.Document.Protect%2A> 類別的 `ThisDocument` 方法。
+1. 呼叫您專案中之 <xref:Microsoft.Office.Tools.Word.Document.Protect%2A> 類別的 `ThisDocument` 方法。
 
      [!code-vb[Trin_VstcoreWordAutomation#111](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#111)]
      [!code-csharp[Trin_VstcoreWordAutomation#111](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#111)]
 
 ### <a name="to-exclude-a-bookmark-control-from-document-protection"></a>從文件保護排除書籤控制項
 
-1.  使用 <xref:Microsoft.Office.Tools.Word.Document.Protect%2A> 方法保護整份文件。
+1. 使用 <xref:Microsoft.Office.Tools.Word.Document.Protect%2A> 方法保護整份文件。
 
      [!code-vb[Trin_VstcoreWordAutomation#111](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#111)]
      [!code-csharp[Trin_VstcoreWordAutomation#111](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#111)]
 
-2.  從文件保護排除 `Bookmark1` 。
+2. 從文件保護排除 `Bookmark1` 。
 
      [!code-vb[Trin_VstcoreWordAutomation#112](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#112)]
      [!code-csharp[Trin_VstcoreWordAutomation#112](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#112)]
@@ -61,7 +61,7 @@ ms.locfileid: "56613410"
 
 ### <a name="to-protect-a-document-by-using-an-application-level-vsto-add-in"></a>使用應用程式層級 VSTO 增益集來保護文件
 
-1.  呼叫您要保護之 <xref:Microsoft.Office.Interop.Word._Document.Protect%2A> 的 <xref:Microsoft.Office.Interop.Word.Document> 方法。
+1. 呼叫您要保護之 <xref:Microsoft.Office.Interop.Word._Document.Protect%2A> 的 <xref:Microsoft.Office.Interop.Word.Document> 方法。
 
      下列程式碼範例會保護使用中文件。 若要使用此程式碼範例，請從專案的 `ThisAddIn` 類別中執行它。
 

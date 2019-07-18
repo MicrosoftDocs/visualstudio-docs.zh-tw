@@ -17,23 +17,23 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 59d9179bb0a3c3c2f08bbccafbca5db0202208e3
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
-ms.translationtype: MT
+ms.openlocfilehash: 8b48335ccaa8bd21cf9f6e108d043ecf706903bb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54867950"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441874"
 ---
 # <a name="debug-office-projects"></a>偵錯 Office 專案
   您可以使用與偵錯其他 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 專案時所使用的相同 Microsoft [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 工具，來偵錯 Office 專案。 當您偵錯 Office 專案時，也可以使用[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 偵錯工具功能，例如可以插入中斷點，以及在 [區域變數]  視窗中檢視變數。 如需詳細資訊[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]偵錯工具，請參閱[Visual Studio 中偵錯](../debugger/debugging-in-visual-studio.md)。
 
 > [!TIP]
->  為了簡化偵錯，請關閉任何開啟的 Office 應用程式執行個體，再進行建置和偵錯。
+> 為了簡化偵錯，請關閉任何開啟的 Office 應用程式執行個體，再進行建置和偵錯。
 
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
 
 > [!NOTE]
->  想要開發解決方案，擴充的 Office 體驗，跨[多個平台](https://dev.office.com/add-in-availability)嗎？ 查看新[Office 增益集模型](https://dev.office.com/docs/add-ins/overview/office-add-ins)。 Office 增益集較小的使用量，相較於 VSTO 增益集和解決方案，而且您可以使用幾乎任何 web 程式設計技術，例如 HTML5、 JavaScript、 CSS3、 以及 XML 來建置。
+> 想要開發解決方案，擴充的 Office 體驗，跨[多個平台](https://dev.office.com/add-in-availability)嗎？ 查看新[Office 增益集模型](https://dev.office.com/docs/add-ins/overview/office-add-ins)。 Office 增益集較小的使用量，相較於 VSTO 增益集和解決方案，而且您可以使用幾乎任何 web 程式設計技術，例如 HTML5、 JavaScript、 CSS3、 以及 XML 來建置。
 
 ## <a name="start-and-stop-the-debugger"></a>啟動和停止偵錯工具
  您可以開始偵錯 Office 專案，就像您開始偵錯另[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]專案; 例如，您可以按下**F5**索引鍵。 當您啟動偵錯 VSTO 增益集專案時，目標的 Office 應用程式的新處理序已啟動並載入 VSTO 增益集。
@@ -49,7 +49,7 @@ ms.locfileid: "54867950"
 ### <a name="debug-office-2013-vsto-add-ins-by-using-either-office-2013-or-office-2016"></a>使用 Office 2013 或 Office 2016 偵錯 Office 2013 VSTO 增益集
  如果您使用 Visual Studio 2015 中，而且您有兩種安裝 Office 的並存版本，Visual Studio 會啟動 Office 2016。 如果您使用 Visual Studio 2013，Visual Studio 會啟動 Office 2013。
 
- 如果您想要使用不同的 Office 版本 (2013 或 2016) 偵錯 VSTO 增益集，請開啟 [專案設計工具] ，並在 [偵錯]  索引標籤中，選擇 [啟動外部程式]  選項按鈕。 然後，瀏覽至適當 Office 應用程式可執行檔的位置。
+ 如果您想要使用不同的 Office 版本 (2013 或 2016) 偵錯 VSTO 增益集，請開啟 [專案設計工具]  ，並在 [偵錯]  索引標籤中，選擇 [啟動外部程式]  選項按鈕。 然後，瀏覽至適當 Office 應用程式可執行檔的位置。
 
 ## <a name="f10-and-f11-behavior"></a>F10 和 F11 的行為
  當您啟動偵錯 Office 專案中， **F10**並**F11**沒有與當您啟動偵錯其他 Visual Basic 或 C# 專案相同的行為。 在 Visual Basic 或 C# 專案中，偵錯工具會在 main 函式上停止；在 Office 專案中，Visual Studio 並不能控制 Office 應用程式的 main 函式。 不過，在偵錯期間**F10**並**F11**沒有相同的函式，如同 Visual Basic 和 C# 專案。
@@ -73,7 +73,7 @@ ms.locfileid: "54867950"
  每次建置專案時，資料集會先清空再重新建立。 如果您想要偵錯快取資料集，您必須在 Visual Studio 外部開啟文件，然後再附加偵錯工具。
 
 ## <a name="debug-word-document-projects-based-on-the-word-97-2003-document-doc-format"></a>偵錯 Word 97-2003 文件為基礎的 Word 文件專案 (*.doc) 格式
- 若要偵錯 Word 97-2003 文件的 Word 文件專案 (*/*.doc *) 格式，您必須將受信任的資料夾清單中的專案資料夾。 如需有關如何執行這項操作的詳細資訊，請參閱 <<c0> [ 授與信任給文件](../vsto/granting-trust-to-documents.md)。
+ 若要偵錯 Word 97-2003 文件的 Word 文件專案 ( */* .doc *) 格式，您必須將受信任的資料夾清單中的專案資料夾。 如需有關如何執行這項操作的詳細資訊，請參閱 <<c0> [ 授與信任給文件](../vsto/granting-trust-to-documents.md)。
 
 ## <a name="debug-disabled-add-ins"></a>偵錯已停用增益集
  Microsoft Office 應用程式可以停用無法如預期般運作的 VSTO 增益集。 Microsoft Office 應用程式會停用 VSTO 增益集，以防止在每次應用程式啟動時載入有問題的程式碼。 不過，在進行一般偵錯時，也很容易會導致未預期的行為。 如需有關如何重新啟用 VSTO 增益集的資訊，請參閱[How to:重新啟用 VSTO 增益集已停用](../vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled.md)。

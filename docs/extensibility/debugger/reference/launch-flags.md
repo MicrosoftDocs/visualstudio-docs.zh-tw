@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - LAUNCH_FLAGS enumeration
 ms.assetid: f51aab02-d257-4302-bb79-b7d8ba9ac4e5
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 302c44b3d4947baa95554966246f15175841257d
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 27975f4055a433891251c675bff3aacaaa9f6bb3
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56680175"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66339360"
 ---
 # <a name="launchflags"></a>LAUNCH_FLAGS
 指定偵錯啟動旗標。
@@ -43,14 +46,18 @@ public enum enum_LAUNCH_FLAGS {
 };
 ```
 
-## <a name="members"></a>成員
-LAUNCH_DEBUG 會啟動偵錯的處理程序。
+## <a name="fields"></a>欄位
+`LAUNCH_DEBUG`\
+啟動偵錯的處理程序。
 
-LAUNCH_NODEBUG 啟動程序，但不偵錯它。
+`LAUNCH_NODEBUG`\
+啟動程序，但不偵錯它。
 
-LAUNCH_ENABLE_ENC 已被取代，請勿使用。
+`LAUNCH_ENABLE_ENC`\
+已被取代，請勿使用。
 
-LAUNCH_MERGE_ENV 啟動處理程序，並將合併啟動的主控件的環境。
+`LAUNCH_MERGE_ENV`\
+啟動處理程序，並將合併啟動的主控件的環境。
 
 ## <a name="remarks"></a>備註
 這些值會傳遞做為引數[LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md)方法。

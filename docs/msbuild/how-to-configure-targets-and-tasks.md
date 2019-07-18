@@ -9,13 +9,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f3f3b272808d0e24747cceb97e4d1339b5989339
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56603227"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62946660"
 ---
-# <a name="how-to-configure-targets-and-tasks"></a>作法：設定目標和工作
+# <a name="how-to-configure-targets-and-tasks"></a>HOW TO：設定目標和工作
 不論開發電腦的環境是哪一種，您都可以將選取的 MSBuild 工作設定為在所針對的環境中執行。 例如，當您使用 64 位元電腦來建置以 32 位元架構為目標的應用程式時，就會在 32 位元處理程序中執行選取的工作。
 
 > [!NOTE]

@@ -1,14 +1,9 @@
 ---
 title: 執行文件資料表 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - read locks
 - running document table (RDT), IVsDocumentLockHolder interface
@@ -18,13 +13,13 @@ helpviewer_keywords:
 ms.assetid: bbec74f3-dd8e-48ad-99c1-2df503c15f5a
 caps.latest.revision: 19
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: bd7b8cd44c72ea058f71575bdd1774efafa86731
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 7ea32df892efa47c91d8292bdc9065080318a059
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51746305"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68155550"
 ---
 # <a name="running-document-table"></a>執行中的文件資料表
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -34,7 +29,7 @@ IDE 會維護呼叫執行的文件資料表 (RDT) 的內部結構中所有目前
 ## <a name="elements-of-the-running-document-table"></a>執行文件表格的項目  
  執行文件資料表包含下列項目。  
   
-|元素|描述|  
+|項目|描述|  
 |-------------|-----------------|  
 |文件 moniker|字串，可唯一識別文件資料物件。 這會是可管理的檔案 (例如 C:\MyProject\MyFile) 的專案系統的絕對檔案路徑。 這個字串也會儲存在檔案系統，例如在資料庫中的預存程序以外的存放區中的專案。 在此情況下，專案系統可以發明的唯一字串，它可以辨識和可能剖析以判斷如何儲存文件。|  
 |階層擁有者|擁有文件，表示的階層物件<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>介面。|  
@@ -59,11 +54,10 @@ IDE 會維護呼叫執行的文件資料表 (RDT) 的內部結構中所有目前
   
  IDE 也使用 RDT resurface （提到最上層） 開啟的文件，如果使用者要求該文件。 如需詳細資訊，請參閱 <<c0> [ 使用 開啟檔案命令顯示檔案](../../extensibility/internals/displaying-files-by-using-the-open-file-command.md)。 若要判斷檔案是否為開啟 RDT 中，執行下列任一種。  
   
--   若要找出項目是否已開啟的文件 moniker （也就是完整的文件路徑） 的查詢。  
+- 若要找出項目是否已開啟的文件 moniker （也就是完整的文件路徑） 的查詢。  
   
--   使用階層或項目識別碼來要求專案系統的完整文件路徑，並接著 RDT 中查閱項目。  
+- 使用階層或項目識別碼來要求專案系統的完整文件路徑，並接著 RDT 中查閱項目。  
   
 ## <a name="see-also"></a>另請參閱  
  [RDT_ReadLock 使用方式](../../extensibility/internals/rdt-readlock-usage.md)   
  [持續性與執行中的文件資料表](../../extensibility/internals/persistence-and-the-running-document-table.md)
-

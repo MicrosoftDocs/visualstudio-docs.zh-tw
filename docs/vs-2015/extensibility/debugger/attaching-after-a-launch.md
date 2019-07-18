@@ -1,26 +1,21 @@
 ---
 title: 在啟動後附加 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - debug engines, attaching to programs
 ms.assetid: 5a3600a1-dc20-4e55-b2a4-809736a6ae65
 caps.latest.revision: 15
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 416c05a7592d9f036a76a5d96537b4be917a0651
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 693cf6d746f51862415f2f30e46d48a998047f14
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51774701"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437440"
 ---
 # <a name="attaching-after-a-launch"></a>在啟動後附加
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -30,12 +25,12 @@ ms.locfileid: "51774701"
 ## <a name="design-decisions"></a>設計決策  
  因為通訊是更容易在共用的位址空間內，您必須決定是否較為合理以便或之間偵錯工作階段和德國，DE 與程式之間的通訊。 選擇下列兩者之一：  
   
--   如果較為合理以便偵錯工作階段和裝置之間的通訊，偵錯工作階段就會同時建立 DE 檔案，並要求附加至程式 DE 中。 這可讓偵錯工作階段，以 DE 一起在一個位址空間的執行階段環境與程式一起放在另一個。  
+- 如果較為合理以便偵錯工作階段和裝置之間的通訊，偵錯工作階段就會同時建立 DE 檔案，並要求附加至程式 DE 中。 這可讓偵錯工作階段，以 DE 一起在一個位址空間的執行階段環境與程式一起放在另一個。  
   
--   如果較為合理促進 DE 與程式之間的通訊，然後執行階段環境共同建立 DE。 這會保留在一個位址空間中，SDM DE、 執行階段環境和程式一起放在另一個。 這是典型的規定與解譯器，以執行指令碼的語言實作。  
+- 如果較為合理促進 DE 與程式之間的通訊，然後執行階段環境共同建立 DE。 這會保留在一個位址空間中，SDM DE、 執行階段環境和程式一起放在另一個。 這是典型的規定與解譯器，以執行指令碼的語言實作。  
   
     > [!NOTE]
-    >  DE 將附加至程式的方式會視實作而定。 DE 與程式之間的通訊也會視實作而定。  
+    > DE 將附加至程式的方式會視實作而定。 DE 與程式之間的通訊也會視實作而定。  
   
 ## <a name="implementation"></a>實作  
  以程式設計的方式，當工作階段的偵錯管理員 (SDM) 先收到[IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md)物件，表示要啟動的程式，它會呼叫[附加](../../extensibility/debugger/reference/idebugprogram2-attach.md)方法，並傳遞它[IDebugEventCallback2](../../extensibility/debugger/reference/idebugeventcallback2.md)物件，也就是更新用來傳遞回到 SDM 的偵錯事件。 `IDebugProgram2::Attach`然後方法會呼叫[OnAttach](../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md)方法。 如需有關如何接收 SDM`IDebugProgram2`介面，請參閱 <<c2> [ 通知連接埠](../../extensibility/debugger/notifying-the-port.md)。  
@@ -62,4 +57,3 @@ ms.locfileid: "51774701"
  [IDebugProgramNodeAttach2](../../extensibility/debugger/reference/idebugprogramnodeattach2.md)   
  [OnAttach](../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md)   
  [Attach](../../extensibility/debugger/reference/idebugengine2-attach.md)
-

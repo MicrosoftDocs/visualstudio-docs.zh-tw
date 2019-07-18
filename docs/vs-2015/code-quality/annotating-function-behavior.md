@@ -1,14 +1,9 @@
 ---
 title: 註釋函式行為 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - _On_failure_
 - _Return_type_success_
@@ -25,13 +20,13 @@ ms.assetid: c0aa268d-6fa3-4ced-a8c6-f7652b152e61
 caps.latest.revision: 13
 author: mikeblome
 ms.author: mblome
-manager: ghogen
-ms.openlocfilehash: 88213e1cd8112aecac527f7d72d2d74dbf10c559
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 39edea3bfb299a49fde9cad14321caa6b4bf674a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51783125"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68157093"
 ---
 # <a name="annotating-function-behavior"></a>註釋函式行為
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +49,7 @@ ms.locfileid: "51783125"
 ## <a name="successfailure-annotations"></a>成功/失敗的註解  
  函式可能會失敗，當它失敗時，其結果可能不完整或與函式成功時的結果不同。  下列清單中的註釋提供了表示失敗行為的方式。  若要使用這些註釋，您必須啟用它們來判斷是否成功，因此必須有 `_Success_` 註釋。  請注意，`NTSTATUS` 和 `HRESULT` 已有內建的 `_Success_` 註釋。不過，如果您在 `_Success_` 或 `NTSTATUS` 上指定自己的 `HRESULT` 註釋，它就會覆寫內建註釋。  
   
-|註釋|描述|  
+|註釋|說明|  
 |----------------|-----------------|  
 |`_Always_(anno_list)`|相當於 `anno_list _On_failure_(anno_list)`，也就是說，無論函式是否成功，都會套用 `anno_list` 中的註釋。|  
 |`_On_failure_(anno_list)`|只有在同時使用 `_Success_` 標註函式時才使用，無論是明確使用，或是在 typedef 上透過 `_Return_type_success_` 隱含使用。 當 `_On_failure_` 註釋出現在函式參數或傳回值上時，在 `anno_list` (anno) 中每個註釋的行為就如同撰寫成 `_When_(!expr, anno)` 的程式碼，其中 `expr` 是所需 `_Success_` 註釋的參數。 這表示，對所有後置條件的 `_Success_` 的隱含用法不適用於 `_On_failure_`。|  
@@ -62,7 +57,7 @@ ms.locfileid: "51783125"
 |`_Success_(expr)`|`expr` 是產生右值的運算式。 當 `_Success_` 註釋出現在函式宣告或定義上時，函式上和後置條件中每個註釋 (`anno`) 的行為就如同撰寫為 `_When_(expr, anno)` 程式碼一樣。 `_Success_` 註釋只能在函式上使用，而不能在其參數或傳回型別上使用。 函式上最多只能有一個 `_Success_` 註釋，而且不能在任何 `_When_`、`_At_` 或 `_Group_` 中。 如需詳細資訊，請參閱 <<c0> [ 指定時，並在註釋套用](../code-quality/specifying-when-and-where-an-annotation-applies.md)。|  
   
 ## <a name="see-also"></a>另請參閱  
- [使用 SAL 註釋減少 C/c + + 程式碼的缺失](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)   
+ [使用 SAL 註釋減少 C /C++程式碼的缺失](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)   
  [了解 SAL](../code-quality/understanding-sal.md)   
  [註釋函式參數和傳回值](../code-quality/annotating-function-parameters-and-return-values.md)   
  [註釋結構和類別](../code-quality/annotating-structs-and-classes.md)   
@@ -70,6 +65,3 @@ ms.locfileid: "51783125"
  [指定套用註釋的時機和位置](../code-quality/specifying-when-and-where-an-annotation-applies.md)   
  [內建函式](../code-quality/intrinsic-functions.md)   
  [最佳做法和範例](../code-quality/best-practices-and-examples-sal.md)
-
-
-

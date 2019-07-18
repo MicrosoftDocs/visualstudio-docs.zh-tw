@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eed10c7535a08a299f43138774935f4c65eafffa
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 9a7514e3ff0c876a669f514a7e17bb02b73c19c2
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55924392"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62936845"
 ---
 # <a name="how-to-use-transactions-to-update-the-model"></a>HOW TO：使用異動更新模型
 交易確認至存放區所做的變更會被視為一個群組。 分組的變更可以認可或回復，當做單一單位。
@@ -57,9 +57,9 @@ catch (Exception ex)
 ## <a name="rolling-back-a-transaction"></a>復原交易
  若要確保會保留在存放區，或會還原為其交易前的狀態，您可以使用其中一個策略：
 
-1.  引發交易的範圍內沒有攔截到例外狀況。
+1. 引發交易的範圍內沒有攔截到例外狀況。
 
-2.  回復明確交易：
+2. 回復明確交易：
 
     ```csharp
     this.Store.TransactionManager.CurrentTransaction.Rollback();

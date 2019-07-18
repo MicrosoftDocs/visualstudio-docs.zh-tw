@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6e060f168ea301b898fe578ac0d5030a2ae7e774
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223698"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62937500"
 ---
 # <a name="map-dependencies-with-code-maps"></a>使用 code map 對應相依性
 
@@ -38,7 +38,7 @@ ms.locfileid: "57223698"
 
 - Visual C# 或 Visual Basic 中的方案或組件 (*.dll*或是 *.exe*)
 
-- 原生或 managed C 或 c + + 程式碼在 Visual c + + 專案中，標頭檔 (*.h*或`#include`)，或二進位檔
+- 原生或 managed C 或C++視覺效果程式碼C++專案，標頭檔 (*.h*或是`#include`)，或二進位檔
 
 - 由 .NET 模組製作的 Microsoft Dynamics AX X++ 專案和組件
 

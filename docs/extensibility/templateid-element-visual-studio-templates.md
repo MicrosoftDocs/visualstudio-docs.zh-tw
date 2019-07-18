@@ -9,17 +9,17 @@ helpviewer_keywords:
 - <TemplateID> element [Visual Studio Templates]
 - TemplateID element [Visual Studio Templates]
 ms.assetid: 6ca24b4e-0325-4a9e-855e-0cbbe7361d8f
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f1f992d9f501b965fc300b97613a3d6f3bd4e35d
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: e8207b72d7bb818a5d153abdd56914fd6b2a3f08
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56680577"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66316544"
 ---
 # <a name="templateid-element-visual-studio-templates"></a>TemplateID 項目 (Visual Studio 範本)
 指定分類的群組中的項目範本的項目範本的識別碼[TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md)項目。

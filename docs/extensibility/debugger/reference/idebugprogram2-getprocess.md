@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgram2::GetProcess
 ms.assetid: 1d602485-ebaf-451c-9165-f2e226f20a90
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e92dd0c3bf56710b387535f8b5e3984bff930186
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: b307fb7b4a25fc5a84b30eefd65e72b4f387a07d
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56701507"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66313770"
 ---
 # <a name="idebugprogram2getprocess"></a>IDebugProgram2::GetProcess
 取得此程式正在執行中的程序。
@@ -36,10 +39,9 @@ int GetProcess(
 );
 ```
 
-#### <a name="parameters"></a>參數
- `ppProcess`
-
- [out]傳回[IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)代表程序的介面。
+## <a name="parameters"></a>參數
+`ppProcess`\
+[out]傳回[IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)代表程序的介面。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

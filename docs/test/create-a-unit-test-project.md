@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 381f04b78e5cfc9ed61187e62e310a2d927eb0ce
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ca83689628f02a8c7a2e0166b390d5b277086c1d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55949430"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62965527"
 ---
 # <a name="create-a-unit-test-project"></a>建立單元測試專案
 
@@ -23,11 +23,23 @@ ms.locfileid: "55949430"
 
 ## <a name="to-create-a-unit-test-project"></a>建立單元測試專案
 
-1. 在 [檔案] 功能表上，選擇 [新增] 然後選擇 [專案]。 或者按 **Ctrl**+**Shift**+**N**。
+1. 在 [檔案] 功能表上，選擇 [新增] > [專案] 或按 **Crtl**+**Shift**+**N**。
+
+::: moniker range="vs-2017"
 
 2. 在 [新增專案] 對話方塊中，展開 [已安裝] 節點，選擇您想要用於測試專案的語言，然後選擇 [測試]。
 
 3. 若要使用其中一個 Microsoft 單元測試架構，請從專案範本清單中選擇 [單元測試專案]  。 否則，請選擇您所要使用單元測試架構的專案範本。 為專案命名，然後按一下 [確定]。
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+2. 在 [建立新專案] 頁面的 [搜尋] 方塊中鍵入**單元測試**。 搜尋 [單元測試專案 (.NET Framework)] 專案範本，然後按一下 [下一步]。
+
+3. 在 [設定新專案] 頁面上輸入您專案的名稱，然後按一下 [建立]。
+
+::: moniker-end
 
 4. 在單元測試專案中，加入受測程式碼的參考。 若要將參考新增至相同解決方案中的程式碼專案：
 

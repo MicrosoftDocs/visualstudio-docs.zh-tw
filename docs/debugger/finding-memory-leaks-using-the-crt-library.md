@@ -30,23 +30,23 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e7fdfedbb2f632bdb0fcaa05c7f0fb282a8fcd2b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56706024"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62849977"
 ---
 # <a name="find-memory-leaks-with-the-crt-library"></a>尋找 CRT 程式庫的記憶體流失問題
 
-記憶體流失是最細微和硬偵測錯誤 C/c + + 應用程式中。 記憶體流失結果失敗，無法正確解除配置先前配置的記憶體。 只有少許記憶體流失可能不會在一開始，注意到，但經過一段時間可能會導致舉凡損毀時記憶體不足所執行的應用程式的效能不佳的徵狀。 負責建立有關哪一個應用程式的混淆到遺漏的應用程式，會用完所有可用的記憶體可能會造成其他應用程式當機。 即使是無害的記憶體流失可能表示應該解決其他問題。
+記憶體流失是最細微和硬偵測的錯誤以 C /C++應用程式。 記憶體流失結果失敗，無法正確解除配置先前配置的記憶體。 只有少許記憶體流失可能不會在一開始，注意到，但經過一段時間可能會導致舉凡損毀時記憶體不足所執行的應用程式的效能不佳的徵狀。 負責建立有關哪一個應用程式的混淆到遺漏的應用程式，會用完所有可用的記憶體可能會造成其他應用程式當機。 即使是無害的記憶體流失可能表示應該解決其他問題。
 
  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]偵錯工具和 C 執行階段程式庫 (CRT) 可協助您偵測和找出記憶體流失。
 
 ## <a name="enable-memory-leak-detection"></a>啟用記憶體流失偵測
 
-偵測記憶體流失是 C/c + + 偵錯工具和 C 執行階段程式庫 (CRT) 的主要工具偵錯堆積函式。
+偵測記憶體流失的主要工具是 C /C++偵錯工具和 C 執行階段程式庫 (CRT) 偵錯堆積函式。
 
-若要啟用所有偵錯堆積函式，加入下列陳述式在 c + + 程式中，依下列順序：
+若要啟用所有偵錯堆積函式，包括下列的陳述式，在您C++程式中的，依下列順序：
 
 ```cpp
 #define _CRTDBG_MAP_ALLOC
@@ -117,7 +117,7 @@ Object dump complete.
 
 另外還有兩種絕對不會出現在記憶體流失報告中的記憶體區塊。 A*釋放的區塊*是已發行，因此依定義未流失的記憶體。 *忽略區塊*是您已明確標記為要從記憶體流失報告中排除的記憶體。
 
-上述的技術找出記憶體流失的記憶體配置以標準 crt`malloc`函式。 如果您的程式將使用 c + + 的記憶體`new`運算子，不過，您可能只會看到的檔名和行號所在`operator new`呼叫`_malloc_dbg`記憶體流失報告中。 若要建立更有用的記憶體流失報告，您可以撰寫如下所示的報告進行配置的那一行巨集：
+上述的技術找出記憶體流失的記憶體配置以標準 crt`malloc`函式。 如果您的程式可讓您配置的記憶體使用C++`new`運算子，不過，您可能只會看到的檔名和行號所在`operator new`呼叫`_malloc_dbg`記憶體流失報告中。 若要建立更有用的記憶體流失報告，您可以撰寫如下所示的報告進行配置的那一行巨集：
 
 ```cpp
 #ifdef _DEBUG

@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - MODULE_INFO_FLAGS enumeration
 ms.assetid: e22d3723-b4d4-4524-8a2f-3adb55bbd273
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6db802fba0d6cd6b6f9b91dd40f6046491fb1f2b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: d8cc60510e29cdf502b0a91b434966d1ea47860d
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56688871"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66346689"
 ---
 # <a name="moduleinfoflags"></a>MODULE_INFO_FLAGS
 指定模組的符號狀態。
@@ -37,8 +40,9 @@ public enum enum_MODULE_INFO_FLAGS {
 };
 ```
 
-## <a name="members"></a>成員
- MIF_SYMBOLS_LOADED 在載入模組的符號的最小一組 （否則已載入任何符號）。
+## <a name="fields"></a>欄位
+ `MIF_SYMBOLS_LOADED`\
+ 模組載入符號的至少一組 （否則已載入任何符號）。
 
 ## <a name="remarks"></a>備註
  這個值由[GetSymbolSearchInfo](../../../extensibility/debugger/reference/idebugsymbolsearchevent2-getsymbolsearchinfo.md)方法。

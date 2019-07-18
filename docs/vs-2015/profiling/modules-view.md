@@ -16,11 +16,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d396aec92b43aebca9b398c6d481962138354e0e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54785589"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68195603"
 ---
 # <a name="modules-view"></a>模組檢視
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,11 +29,11 @@ ms.locfileid: "54785589"
   
  請展開或摺疊模組名稱來顯示或關閉模組效能資料的檢視。  
   
- 若要新增或移除資料行，請以滑鼠右鍵按一下報表視窗，然後選取 [新增/移除資料行]。 您可以按一下資料行名稱來排序資料。 如需詳細資訊，請參閱[如何：自訂報表檢視資料行](../profiling/how-to-customize-report-view-columns.md)。  
+ 若要新增或移除資料行，請以滑鼠右鍵按一下報表視窗，然後選取 [新增/移除資料行]  。 您可以按一下資料行名稱來排序資料。 如需詳細資訊，請參閱[如何：自訂報表檢視資料行](../profiling/how-to-customize-report-view-columns.md)。  
   
  [模組] 檢視中可用的資料行取決於用來收集資料的分析方法 (取樣或檢測)，以及是否在分析回合中收集 .NET 記憶體資料。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [模組檢視](../profiling/modules-view-sampling-data.md)   
  [模組檢視](../profiling/modules-view-instrumentation-data.md)   
  [模組檢視 - 檢測](../profiling/modules-view-dotnet-memory-instrumentation-data.md)   

@@ -12,17 +12,16 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f1dd2cb3278357f05d5ed08031c8e385d45f1a35
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: ad081a4d6954d402aa295a94edae3f5bdf50ef4c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54800488"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445629"
 ---
 # <a name="walkthrough-creating-an-inline-task"></a>逐步解說：建立內嵌工作
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 MSBuild 工作通常是透過編譯實作 <xref:Microsoft.Build.Framework.ITask> 介面的類別來建立。 從 .NET Framework 4 版開始，您可以在專案檔中建立內嵌工作。 您不必建立個別的組件來裝載工作。 如需詳細資訊，請參閱[內嵌工作](../msbuild/msbuild-inline-tasks.md)。  
   
  本逐步解說示範如何建立並執行這些內嵌工作：  
@@ -48,15 +47,15 @@ MSBuild 工作通常是透過編譯實作 <xref:Microsoft.Build.Framework.ITask>
   
 #### <a name="to-create-and-modify-a-project-file"></a>建立並修改專案檔  
   
-1.  在 Visual Studio 的 [檔案] 功能表上，按一下 [新增]，然後按一下 [專案]。  
+1. 在 Visual Studio 的 [檔案] 功能表上，按一下 [新增]，然後按一下 [專案]。  
   
-2.  在 [新增專案] 對話方塊中，選取 Visual C# 專案類型，然後選取 [Windows Forms 應用程式] 範本。 在 [名稱]  方塊中，輸入 `InlineTasks`。 輸入方案的「位置」，例如 `D:\`。 確認 [為方案建立目錄] 已選取、[加入至原始檔控制] 已清除，且 [方案名稱] 為 `InlineTasks`。  
+2. 在 [新增專案] 對話方塊中，選取 Visual C# 專案類型，然後選取 [Windows Forms 應用程式] 範本。 在 [名稱]  方塊中，輸入 `InlineTasks`。 輸入方案的「位置」，例如 `D:\`。 確認 [為方案建立目錄] 已選取、[加入至原始檔控制] 已清除，且 [方案名稱] 為 `InlineTasks`。  
   
      按一下 [確定] 以建立專案檔。  
   
-3.  在 [方案總管] 中，以滑鼠右鍵按一下 [InlineTasks] 專案節點，然後按一下 [卸載專案]。  
+3. 在 [方案總管] 中，以滑鼠右鍵按一下 [InlineTasks] 專案節點，然後按一下 [卸載專案]。  
   
-4.  再次以滑鼠右鍵按一下專案節點，然後按一下 [編輯 InlineTasks.csproj]。  
+4. 再次以滑鼠右鍵按一下專案節點，然後按一下 [編輯 InlineTasks.csproj]。  
   
      該專案檔隨即出現在程式碼編輯器中。  
   
@@ -105,7 +104,7 @@ MSBuild 工作通常是透過編譯實作 <xref:Microsoft.Build.Framework.ITask>
     `Hello, world!`  
   
    > [!NOTE]
-   >  如果您沒有看到 hello 訊息，請嘗試重新儲存專案檔，然後執行 Hello 工作。  
+   > 如果您沒有看到 hello 訊息，請嘗試重新儲存專案檔，然後執行 Hello 工作。  
   
    藉由交替使用程式碼編輯器和「命令提示字元視窗」，您可以變更專案檔並快速查看結果。  
   

@@ -1,14 +1,9 @@
 ---
 title: CustomParameter 元素 （Visual Studio 範本） |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#CustomParameter
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 743c4489-74ac-403a-bbaa-eed7d785a3ac
 caps.latest.revision: 7
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 0d5de5d2265cfa59285f92e3426fefce3d770933
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 59bfec972750a4f893d1cb8b7cf08710bcca761a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51788611"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62555956"
 ---
 # <a name="customparameter-element-visual-studio-templates"></a>CustomParameter 項目 (Visual Studio 範本)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,8 +37,8 @@ ms.locfileid: "51788611"
   
 |屬性|描述|  
 |---------------|-----------------|  
-|`Name`|必要。 參數名稱。 參數的格式為 $*名稱*$。|  
-|`Value`|必要。 參數的取代值。|  
+|`Name`|必要項。 參數名稱。 參數的格式為 $*名稱*$。|  
+|`Value`|必要項。 參數的取代值。|  
   
 ### <a name="child-elements"></a>子元素  
  無。  
@@ -71,4 +66,3 @@ ms.locfileid: "51788611"
  [CustomParameters 項目 （Visual Studio 範本）](../extensibility/customparameters-element-visual-studio-templates.md)   
  [範本參數](../ide/template-parameters.md)   
  [Visual Studio 範本結構描述參考](../extensibility/visual-studio-template-schema-reference.md)
-

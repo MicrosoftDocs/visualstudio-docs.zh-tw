@@ -9,12 +9,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 66a25c56e50db0caecf4aa7a314be529e2caba12
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: dce20d3e1833659ebfec2e84e6bff7f86dff844e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54793430"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438437"
 ---
 # <a name="how-to-create-a-basic-texture-shader"></a>如何：建立基本材質著色器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,15 +23,15 @@ ms.locfileid: "54793430"
   
  本文件示範下列活動︰  
   
--   移除著色器圖形中的節點  
+- 移除著色器圖形中的節點  
   
--   將節點加入圖形  
+- 將節點加入圖形  
   
--   設定著色器參數  
+- 設定著色器參數  
   
--   設定參數可見度  
+- 設定參數可見度  
   
--   連接節點  
+- 連接節點  
   
 ## <a name="creating-a-basic-texture-shader"></a>建立基本材質著色器  
  您可以直接將材質範例的色彩與 Alpha 值直接寫入完稿輸出色彩，來實作基本的單一材質著色器。  
@@ -59,7 +59,7 @@ ms.locfileid: "54793430"
    下圖顯示完成的著色器圖形和套用至立方體的著色器預覽。  
   
 > [!NOTE]
->  在此圖中，使用一個平面當成預覽圖形，並已指定材質以更適當展現著色器的效果。  
+> 在此圖中，使用一個平面當成預覽圖形，並已指定材質以更適當展現著色器的效果。  
   
  ![著色器圖形和其效果預覽](../designers/media/digit-texture-effect.png "Digit-Texture-Effect")  
   

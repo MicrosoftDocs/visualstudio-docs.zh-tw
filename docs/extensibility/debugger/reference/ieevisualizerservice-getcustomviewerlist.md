@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEEVisualizerService::GetCustomViewerList method
 ms.assetid: 249d26ca-914f-43af-a400-8162477223f4
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 00a7928b203d00e0f9b43250a463a8fb272ce755
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 4fa71a731843f1deed1cfe9a464cc4ab716a8a43
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56694110"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66350174"
 ---
 # <a name="ieevisualizerservicegetcustomviewerlist"></a>IEEVisualizerService::GetCustomViewerList
 這個方法會傳回一份此服務所知的類型視覺化檢視。
@@ -42,22 +45,18 @@ int GetCustomViewerList(
 );
 ```
 
-#### <a name="parameters"></a>參數
- `celtSkip`
+## <a name="parameters"></a>參數
+`celtSkip`\
+[in]略過的視覺化檢視的數目。
 
- [in]略過的視覺化檢視的數目。
+`celRequested`\
+[in]要擷取的視覺化檢視的數目 (也會指定大小`rgViewers`陣列)。
 
- `celRequested`
+`rgViewers`\
+[in、 out]陣列[DEBUG_CUSTOM_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md)来填入結構。
 
- [in]要擷取的視覺化檢視的數目 (也會指定大小`rgViewers`陣列)。
-
- `rgViewers`
-
- [in、 out]陣列[DEBUG_CUSTOM_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md)来填入結構。
-
- `pceltFetched`
-
- [out]實際擷取的視覺化檢視的數目。
+`pceltFetched`\
+[out]實際擷取的視覺化檢視的數目。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

@@ -1,14 +1,9 @@
 ---
 title: DEBUGREF_INFO_FLAGS |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - DEBUGREF_INFO_FLAGS
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 1b043327-302a-4f6d-b51d-f94f9d7c7f9d
 caps.latest.revision: 12
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 0c30b8132ee86b06042ffc93c1a381f4a6db0acd
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 05a073b3663ff85fe3d68878999aaf1dfa9e0017
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51738038"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68198843"
 ---
 # <a name="debugrefinfoflags"></a>DEBUGREF_INFO_FLAGS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -98,13 +93,12 @@ public enum enum_DEBUGREF_INFO_FLAGS { 
 ## <a name="requirements"></a>需求  
  標頭： msdbg.h  
   
- 命名空間： Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間：Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
  [列舉型別](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md)   
  [EnumChildren](../../../extensibility/debugger/reference/idebugreference2-enumchildren.md)   
  [GetReferenceInfo](../../../extensibility/debugger/reference/idebugreference2-getreferenceinfo.md)
-

@@ -12,12 +12,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0266e14b3a03e6d8225e7ec9283fe727a9502e53
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 813094285557171e9c7f021f597d0d643356b5d4
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54785877"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65694416"
 ---
 # <a name="how-to-disable-the-hosting-process"></a>How to: Disable the Hosting Process
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,13 +38,13 @@ ms.locfileid: "54785877"
   
    一般情況下，停用裝載處理序時：  
   
--   開始偵錯 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 應用程式所需的時間會增加。  
+- 開始偵錯 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 應用程式所需的時間會增加。  
   
--   設計階段運算式評估無法使用。  
+- 設計階段運算式評估無法使用。  
   
--   部分信任偵錯無法使用。  
+- 部分信任偵錯無法使用。  
   
 ## <a name="see-also"></a>請參閱  
  [偵錯和裝載處理序](../debugger/debugging-and-the-hosting-process.md)   
  [裝載處理序 (vshost.exe)](../ide/hosting-process-vshost-exe.md)   
- [在應用程式開發期間建置](http://msdn.microsoft.com/c9497d62-3b7b-4449-88e8-cf27acc9efe6)
+ [在應用程式開發期間建置](https://msdn.microsoft.com/c9497d62-3b7b-4449-88e8-cf27acc9efe6)

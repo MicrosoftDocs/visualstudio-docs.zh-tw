@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e0f63555cbda069c3db0a3a1d5819292fc3cda14
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: b00f89b60c7e884bfaf71e971722530b44a78b4e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54799701"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445691"
 ---
 # <a name="help-viewer-administrator-guide"></a>說明檢視器系統管理員指南
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,7 +51,7 @@ ms.locfileid: "54799701"
 - 說明的預設來源仍處於線上。  
   
   > [!TIP]
-  >  您可以修改  HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\14.0\help\UseOnlineHelp 登錄機碼，變更說明的預設來源。 如需詳細資訊，請參閱 [Help Content Manager 覆寫設定](../ide/help-content-manager-overrides.md)。  
+  > 您可以修改  HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\14.0\help\UseOnlineHelp 登錄機碼，變更說明的預設來源。 如需詳細資訊，請參閱 [Help Content Manager 覆寫設定](../ide/help-content-manager-overrides.md)。  
   
 - 用戶端仍會提示您在第一次啟動 Visual studio 時安裝基本的說明內容。 您可以修改  HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\14.0\Help\DisableFirstRunHelpSelection 登錄機碼，以停用此提示。  
   
@@ -60,13 +60,13 @@ ms.locfileid: "54799701"
   
 ##### <a name="to-install-english-content-from-the-internet"></a>從網際網路安裝英文內容  
   
-1.  選擇 [開始]，然後選擇 [執行]。  
+1. 選擇 [開始]，然後選擇 [執行]。  
   
-2.  輸入下列命令：  
+2. 輸入下列命令：  
   
      C:\Program Files (x86)\Microsoft Help Viewer\v2.2\hlpctntmgr.exe /operation install /catalogname VisualStudio14 /locale en-us  
   
-3.  請按 ENTER 鍵。  
+3. 請按 ENTER 鍵。  
   
 ## <a name="deploying-pre-installed-local-help-content-on-client-computers"></a>部署用戶端電腦上預先安裝的本機說明內容  
  您可以從線上安裝一組內容到一部電腦上，並接著將該組已安裝的內容複製到其他電腦。  
@@ -78,7 +78,7 @@ ms.locfileid: "54799701"
 - 在安裝本機說明內容後，使用者必須擁有系統管理員權限，以更新、新增或移除本機說明內容。  
   
   > [!TIP]
-  >  如果使用者沒有系統管理員權限，建議您停用說明檢視器中的 [管理內容] 索引標籤。 如需詳細資訊，請參閱 [Help Content Manager 覆寫設定](../ide/help-content-manager-overrides.md)。  
+  > 如果使用者沒有系統管理員權限，建議您停用說明檢視器中的 [管理內容] 索引標籤。 如需詳細資訊，請參閱 [Help Content Manager 覆寫設定](../ide/help-content-manager-overrides.md)。  
   
   警告：  
   
@@ -117,15 +117,15 @@ ms.locfileid: "54799701"
   
 ##### <a name="to-package-the-content"></a>封裝內容  
   
-1.  建立複製內容的目標資料夾，以便稍後進行部署。  
+1. 建立複製內容的目標資料夾，以便稍後進行部署。  
   
      例如： c:\VS12Help。  
   
-2.  以系統管理員權限開啟 cmd.exe。  
+2. 以系統管理員權限開啟 cmd.exe。  
   
-3.  巡覽至您在步驟 1 中建立的資料夾。  
+3. 巡覽至您在步驟 1 中建立的資料夾。  
   
-4.  輸入下列命令：  
+4. 輸入下列命令：  
   
      Xcopy %SYSTEMDRIVE%\ProgramData\Microsoft\HelpLibrary2 \<資料夾名稱>\ /y /e /k /o  
   
@@ -135,13 +135,13 @@ ms.locfileid: "54799701"
   
 ##### <a name="to-deploy-the-content"></a>部署內容  
   
-1.  建立網路共用，並將這些說明內容複製到該位置。  
+1. 建立網路共用，並將這些說明內容複製到該位置。  
   
      例如，將 c:\VS12Help 中的內容複製到 \\\myserver\VS12Help。  
   
-2.  建立 .bat 檔案，以包含說明內容的部署指令碼。 由於用戶端在推送的部分過程中要刪除的檔案可能有讀取鎖定，您應該在推送更新之前關閉用戶端。  
+2. 建立 .bat 檔案，以包含說明內容的部署指令碼。 由於用戶端在推送的部分過程中要刪除的檔案可能有讀取鎖定，您應該在推送更新之前關閉用戶端。  
   
-     例如：  
+     例如:   
   
     ```  
     REM - copy pre-ripped content to ProgramData  
@@ -199,8 +199,8 @@ ms.locfileid: "54799701"
     :CONTINUE  
     ```  
   
-3.  在要安裝說明內容的本機電腦上執行批次檔。  
+3. 在要安裝說明內容的本機電腦上執行批次檔。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [Help Content Manager 的命令列引數](../ide/command-line-arguments-for-the-help-content-manager.md)   
  [Help Content Manager 覆寫設定](../ide/help-content-manager-overrides.md)

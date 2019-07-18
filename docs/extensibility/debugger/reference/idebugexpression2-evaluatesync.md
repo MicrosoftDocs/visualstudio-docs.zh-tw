@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugExpression2::EvaluateSync
 ms.assetid: 88964915-dce3-4005-b4f3-9f37415e41e4
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 158e24a57838d7f7a1c7221fc243455b5a4bd2bc
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 77fb52dd140ee58eeb202e88026fb57764d549c8
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56678549"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66325944"
 ---
 # <a name="idebugexpression2evaluatesync"></a>IDebugExpression2::EvaluateSync
 這個方法會以同步方式評估的運算式。
@@ -42,22 +45,18 @@ int EvaluateSync(
 );
 ```
 
-#### <a name="parameters"></a>參數
-`dwFlags`
+## <a name="parameters"></a>參數
+`dwFlags`\
+[in]從旗標的組合[EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md)控制運算式評估的列舉型別。
 
- [in]從旗標的組合[EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md)控制運算式評估的列舉型別。
+`dwTimeout`\
+[in]最大時間 （毫秒），這個方法返回之前等候。 使用`INFINITE`無限期等候。
 
-`dwTimeout`
+`pExprCallback`\
+[in]此參數一律為 null 值。
 
- [in]最大時間 （毫秒），這個方法返回之前等候。 使用`INFINITE`無限期等候。
-
-`pExprCallback`
-
- [in]此參數一律為 null 值。
-
-`ppResult`
-
- [out]傳回[IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)物件，其中包含的運算式評估結果。
+`ppResult`\
+[out]傳回[IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)物件，其中包含的運算式評估結果。
 
 ## <a name="return-value"></a>傳回值
 如果成功，則傳回`S_OK`; 否則會傳回錯誤碼。 一些典型的錯誤碼為：

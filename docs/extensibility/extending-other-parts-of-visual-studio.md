@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - user interfaces
 ms.assetid: 27d2f1e1-2503-4aca-9cfc-707abd07ccf0
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 34771bd005b298f73bcc2ee13e2d4cf9a123f1a9
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 31cbad96f52b3c29c417c3d380c39dd4cc610dd6
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56683044"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66341083"
 ---
 # <a name="extend-other-parts-of-visual-studio"></a>擴充 Visual Studio 的其他部分
 
@@ -29,9 +29,9 @@ Visual Studio 擴充性的基本建置組塊是 Vspackage。  了解如何加入
 
 了解如何將新控制項和其他項目新增至 [工具箱] 中，以及如何使用 [工具箱] 的功能：
 
--   [建立 WPF 工具箱控制項](../extensibility/creating-a-wpf-toolbox-control.md)
+- [建立 WPF 工具箱控制項](../extensibility/creating-a-wpf-toolbox-control.md)
 
--   [建立 Windows Forms 工具箱控制項](../extensibility/creating-a-windows-forms-toolbox-control.md)
+- [建立 Windows Forms 工具箱控制項](../extensibility/creating-a-windows-forms-toolbox-control.md)
 
 ## <a name="extend-the-status-bar"></a>擴充狀態列
 

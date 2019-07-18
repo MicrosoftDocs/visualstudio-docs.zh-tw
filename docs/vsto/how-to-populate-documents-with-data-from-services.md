@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 137755ae4e1bfab97cbaec063a29a95caa1d9cd6
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 6239bc351872dc7a945c3fbff8ad1ed13817c3ef
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54865017"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62967780"
 ---
 # <a name="how-to-populate-documents-with-data-from-services"></a>HOW TO：服務中的資料填入文件
 
@@ -33,21 +33,21 @@ ms.locfileid: "54865017"
 
 ## <a name="to-populate-a-document-level-project-with-data-from-a-web-service"></a>若要填入的文件層級專案與 web 服務的資料
 
-1.  開啟 [資料來源]  視窗並為您的專案建立服務資料來源。 如需詳細資訊，請參閱[新增資料來源](../data-tools/add-new-data-sources.md)。
+1. 開啟 [資料來源]  視窗並為您的專案建立服務資料來源。 如需詳細資訊，請參閱[新增資料來源](../data-tools/add-new-data-sources.md)。
 
-2.  將想要的資料表或欄位從 [資料來源]  視窗拖曳至您的文件。
+2. 將想要的資料表或欄位從 [資料來源]  視窗拖曳至您的文件。
 
      即會在文件中建立控制項，並建立 <xref:System.Windows.Forms.BindingSource> 以繫結至專案中的物件類別，然後再產生該服務的類別。
 
-3.  在您的程式碼中，建立您在步驟 1 中連接到 web 服務類別的執行個體。
+3. 在您的程式碼中，建立您在步驟 1 中連接到 web 服務類別的執行個體。
 
-4.  如果有與 web 服務通訊所需的屬性，建立這些屬性的執行個體。
+4. 如果有與 web 服務通訊所需的屬性，建立這些屬性的執行個體。
 
-5.  使用 Web 服務所公開的方法以及您在步驟 4 建立的任何屬性執行個體，建立並傳送資料要求。
+5. 使用 Web 服務所公開的方法以及您在步驟 4 建立的任何屬性執行個體，建立並傳送資料要求。
 
      您所使用的方法取決於 web 服務提供。
 
-6.  從 web 服務，以指定的資料回應<xref:System.Windows.Forms.BindingSource.DataSource%2A>屬性<xref:System.Windows.Forms.BindingSource>。
+6. 從 web 服務，以指定的資料回應<xref:System.Windows.Forms.BindingSource.DataSource%2A>屬性<xref:System.Windows.Forms.BindingSource>。
 
 當您執行專案時，控制項會顯示資料來源中的第一筆記錄。 您可以使用 <xref:System.Windows.Forms.BindingSource>中的物件處理貨幣事件，啟用捲動記錄的功能。
 

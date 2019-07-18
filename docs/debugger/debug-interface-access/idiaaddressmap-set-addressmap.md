@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 963ee64b639780bae60a4c2655db8b666d87c702
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56641869"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62554244"
 ---
 # <a name="idiaaddressmapsetaddressmap"></a>IDiaAddressMap::set_addressMap
 提供支援映像的版面配置轉譯對應的位址。
@@ -51,7 +51,7 @@ HRESULT set_addressMap ( 
 ## <a name="remarks"></a>備註
  通常，DIA 會將位址轉譯對應擷取程式資料庫 (.pdb) 檔案中。 如果這些值遺失，則[idiaaddressmap:: Set_imageheaders](../../debugger/debug-interface-access/idiaaddressmap-set-imageheaders.md)方法呼叫兩次，一次使用`imagetoSymbols`參數設定為`TRUE`並一次使用`imagetoSymbols`參數設為`FALSE`。 無法使用啟用位址對應翻譯[idiaaddressmap:: Put_addressmapenabled](../../debugger/debug-interface-access/idiaaddressmap-put-addressmapenabled.md)方法，因此除非兩個轉譯對應所提供。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [DiaAddressMapEntry 結構](../../debugger/debug-interface-access/diaaddressmapentry.md)
 - [IDiaAddressMap](../../debugger/debug-interface-access/idiaaddressmap.md)
 - [IDiaAddressMap::put_addressMapEnabled](../../debugger/debug-interface-access/idiaaddressmap-put-addressmapenabled.md)

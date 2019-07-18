@@ -1,5 +1,5 @@
 ---
-title: 步驟 5：新增 NumericUpDown 控制項的 Enter 事件處理常式
+title: 步驟 5：針對 NumericUpDown 控制項新增 Enter 事件處理常式
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 45a99a5d-c881-4298-b74d-adb481dec5ee
@@ -11,12 +11,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 194988a3d21078ebb712afee52d9106659b65b14
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 8a2687c423f6b2facaa2fa1c3504888c65345888
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55952326"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263104"
 ---
 # <a name="step-5-add-enter-event-handlers-for-the-numericupdown-controls"></a>步驟 5：新增 NumericUpDown 控制項的 Enter 事件處理常式
 

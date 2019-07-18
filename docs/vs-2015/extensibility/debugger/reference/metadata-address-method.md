@@ -1,14 +1,9 @@
 ---
-title: METADATA_ADDRESS_METHOD |Microsoft Docs
-ms.custom: ''
+title: METADATA_ADDRESS_METHOD | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - METADATA_ADDRESS_METHOD
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: fc0e5370-1b4f-4867-837f-0d63c4b9dd09
 caps.latest.revision: 7
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 1286592d087e0b27c7e1900ef292aa1c0eac4e21
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 08a70bc02268e5814982f76cd91dc5d2e2e1cac2
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51764867"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62547087"
 ---
 # <a name="metadataaddressmethod"></a>METADATA_ADDRESS_METHOD
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -51,7 +46,7 @@ public struct METADATA_ADDRESS_METHOD {
  tokMethod  
  方法的識別碼。  
   
- [C + +]`_mdToken`已`typedef`適用於 32 位元`int`。  
+ [C++]`_mdToken`是`typedef`適用於 32 位元`int`。  
   
  dwOffset  
  從類別的位移開始 （可以代表位移 vtable） 此方法。  
@@ -65,12 +60,11 @@ public struct METADATA_ADDRESS_METHOD {
 ## <a name="requirements"></a>需求  
  標頭： sh.h  
   
- 命名空間： Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間：Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
  [結構和等位](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)   
  [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)
-

@@ -1,5 +1,5 @@
 ---
-title: 如何：在組建中使用環境變數 | Microsoft Docs
+title: HOW TO：在組建中使用環境變數 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: msbuild
@@ -13,24 +13,23 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: cf043fbaac2e718b108920a61026378545fa5a95
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 72d810f998b111aa2ec08a5874498ed8ee23a3be
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54780969"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437883"
 ---
-# <a name="how-to-use-environment-variables-in-a-build"></a>如何：在組建中使用環境變數
+# <a name="how-to-use-environment-variables-in-a-build"></a>HOW TO：在組建中使用環境變數
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 當您建置專案時，通常需要使用專案檔或構成專案之檔案中沒有的資源來設定組建選項。 此資訊通常會儲存於環境變數中。  
   
 ## <a name="referencing-environment-variables"></a>參考環境變數  
  所有環境變數都可供 [!INCLUDE[vstecmsbuildengine](../includes/vstecmsbuildengine-md.md)] ([!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]) 專案檔用來做為屬性。  
   
 > [!NOTE]
->  如果專案檔包含與環境變數相同名稱之專案的明確定義，則專案檔中的屬性會覆寫環境變數的值。  
+> 如果專案檔包含與環境變數相同名稱之專案的明確定義，則專案檔中的屬性會覆寫環境變數的值。  
   
 #### <a name="to-use-an-environment-variable-in-an-msbuild-project"></a>在 MSBuild 專案中使用環境變數  
   
@@ -42,12 +41,12 @@ ms.locfileid: "54780969"
   
 #### <a name="to-provide-a-default-value-for-a-property"></a>提供屬性的預設值  
   
--   只有當屬性 (Property) 沒有任何值，才能在屬性 (Property) 上使用 `Condition` 屬性 (Attribute) 來設定值。 例如，下列程式碼只有在未設定 `ToolsPath` 環境變數時，才會將 `ToolsPath` 屬性設為 c:\tools：  
+- 只有當屬性 (Property) 沒有任何值，才能在屬性 (Property) 上使用 `Condition` 屬性 (Attribute) 來設定值。 例如，下列程式碼只有在未設定 `ToolsPath` 環境變數時，才會將 `ToolsPath` 屬性設為 c:\tools：  
   
      `<ToolsPath Condition="'$(TOOLSPATH)' == ''">c:\tools</ToolsPath>`  
   
     > [!NOTE]
-    >  屬性名稱是不區分大小寫的，因此 `$(ToolsPath)` 和 `$(TOOLSPATH)` 會參考相同的屬性或環境變數。  
+    > 屬性名稱是不區分大小寫的，因此 `$(ToolsPath)` 和 `$(TOOLSPATH)` 會參考相同的屬性或環境變數。  
   
 ## <a name="example"></a>範例  
  下列專案檔會使用環境變數來指定目錄位置。  
@@ -66,10 +65,10 @@ ms.locfileid: "54780969"
 </Project>  
 ```  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
 
 [MSBuild](msbuild.md)
 
 [MSBuild 屬性](../msbuild/msbuild-properties1.md)
 
-[如何：使用不同選項來建置相同的原始程式檔](../msbuild/how-to-build-the-same-source-files-with-different-options.md)
+[如何：使用不同選項建置相同的來源檔案](../msbuild/how-to-build-the-same-source-files-with-different-options.md)

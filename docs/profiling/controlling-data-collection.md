@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 250ec5623a02f962a0d56d7f469ed37afee097ab
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56630323"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62553275"
 ---
 # <a name="control-data-collection"></a>控制資料收集
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具可讓您控制在效能工作階段期間收集分析資料的時間，並指定分析的函式。 本節說明如何從 [效能總管] 和 [資料收集控制] 視窗啟動和停止資料收集，以及如何限制要收集其分析資料的物件。

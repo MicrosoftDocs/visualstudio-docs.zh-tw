@@ -6,17 +6,17 @@ helpviewer_keywords:
 - Combos element (VSCT XML schema)
 - VSCT XML schema elements, Combos
 ms.assetid: ef48d2d2-0c47-4f93-8cfe-52026b6c463e
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 15e4623c423924a248660370f722e9fc09e21c2b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 7e0d4c15a5255a621268b239cb2cde4439b4c02b
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56700103"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66334894"
 ---
 # <a name="combos-element"></a>Combos 元素
 群組[Combo 元素](../extensibility/combo-element.md)項目。

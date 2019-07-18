@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugThreads2::Next
 ms.assetid: bcffd954-3c67-4867-96f3-041ddb3e34d4
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2cdc06c8517442047778f2cc023478ede70b2a60
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: d41639733ad4a496c10a245723e03800aa20b67a
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56700935"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66350833"
 ---
 # <a name="ienumdebugthreads2next"></a>IEnumDebugThreads2::Next
 從列舉中傳回下的一個項目集。
@@ -40,18 +43,15 @@ int Next(
 );
 ```
 
-#### <a name="parameters"></a>參數
- `celt`
+## <a name="parameters"></a>參數
+`celt`\
+[in]若要擷取的元素數目。 也會指定的大小上限`rgelt`陣列。
 
- [in]若要擷取的元素數目。 也會指定的大小上限`rgelt`陣列。
+`rgelt`\
+[in、 out]陣列[IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)来填入的項目。
 
- `rgelt`
-
- [in、 out]陣列[IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)来填入的項目。
-
- `pceltFetched`
-
- [out]傳回的項目數中實際傳回`rgelt`。
+`pceltFetched`\
+[out]傳回的項目數中實際傳回`rgelt`。
 
 ## <a name="return-value"></a>傳回值
  如果成功，會傳回 `S_OK`。 傳回`S_FALSE`更少的項目要求的數目可能會傳回; 否則會傳回錯誤碼。

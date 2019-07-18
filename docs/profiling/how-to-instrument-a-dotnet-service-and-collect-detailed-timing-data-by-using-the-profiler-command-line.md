@@ -1,5 +1,5 @@
 ---
-title: 作法：使用分析工具命令列檢測 .NET 服務並收集詳細計時資料 | Microsoft Docs
+title: 分析工具命令列：檢測 .NET 服務，取得計時詳細資料
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: mikejo5000
@@ -7,16 +7,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 57cc289b64db3cd4f22fd549ea9b28046f7f652b
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 4f3e03a35719e6dd1cbfa7514a304539dc4f0ca1
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56638981"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67032055"
 ---
 # <a name="how-to-instrument-a-net-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line"></a>作法：使用分析工具命令列以檢測 .NET 服務並收集詳細計時資料
 
-本文描述如何使用 Visual Studio 分析工具命令列工具來檢測 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 服務，並收集詳細的計時資料。
+本文描述如何使用 Visual Studio 分析工具命令列工具來檢測 .NET Framework 服務，並收集詳細的計時資料。
 
 > [!NOTE]
 > 如果某項服務無法在電腦啟動後重新啟動 (這類服務只會在作業系統啟動時啟動)，則無法使用檢測方法來分析服務。
@@ -25,7 +25,7 @@ ms.locfileid: "56638981"
 >
 > 若要將階層互動資料新增至分析回合中，則需要使用命令列分析工具的特定程序。 請參閱[收集階層互動資料](../profiling/adding-tier-interaction-data-from-the-command-line.md)。
 
-若要使用檢測方法從 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 服務收集詳細的計時資料，您可使用 [VSInstr.exe](../profiling/vsinstr.md) 工具產生已檢測的元件版本。 然後以檢測過的版本取代未經檢測的服務版本，確認服務設定為手動啟動。 使用 [VSPerfCLREnv.cmd](../profiling/vsperfclrenv.md) 工具初始化全域分析環境變數，然後重新啟動主機電腦。 然後啟動分析工具。
+若要使用檢測方法從 .NET Framework 服務收集詳細的計時資料，您可使用 [VSInstr.exe](../profiling/vsinstr.md) 工具產生已檢測的元件版本。 然後以檢測過的版本取代未經檢測的服務版本，確認服務設定為手動啟動。 使用 [VSPerfCLREnv.cmd](../profiling/vsperfclrenv.md) 工具初始化全域分析環境變數，然後重新啟動主機電腦。 然後啟動分析工具。
 
 啟動服務後，計時資料會自動收集到資料檔案。 程式碼剖析工作階段期間，您可以暫停和繼續資料收集。
 
@@ -35,11 +35,11 @@ ms.locfileid: "56638981"
 
 1. 開啟 [命令提示字元] 視窗。
 
-2. 使用 [VSInstr] 工具產生服務二進位檔的已檢測版本。
+2. 使用 [VSInstr]  工具產生服務二進位檔的已檢測版本。
 
 3. 以檢測過的版本取代原始二進位檔。 在 Windows 服務控制管理員中，確定服務的啟動類型設定為 [手動]。
 
-4. 初始化 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 分析環境變數。 類型：
+4. 初始化 .NET Framework 程式碼剖析環境變數。 類型：
 
      **VSPerfClrEnv /globaltraceon**
 
@@ -51,9 +51,9 @@ ms.locfileid: "56638981"
 
      **VSPerfCmd /start:trace /output:** `OutputFile` [`Options`]
 
-   - [/start](../profiling/start.md)**:trace** 選項會初始化程式碼剖析工具。
+   - [/start](../profiling/start.md) **:trace** 選項會初始化程式碼剖析工具。
 
-   - [/output](../profiling/output.md)**:**`OutputFile` 選項必須搭配 **/start** 使用。 `OutputFile` 指定分析資料 (.*vsp*) 檔案的名稱和位置。
+   - [/output](../profiling/output.md) **:** `OutputFile` 選項必須搭配 **/start** 使用。 `OutputFile` 指定分析資料 (.*vsp*) 檔案的名稱和位置。
 
      您可以使用下列任一選項搭配 **/start:trace** 選項。
 
@@ -62,15 +62,14 @@ ms.locfileid: "56638981"
 
      | 選項 | 說明 |
      | - | - |
-     | [/user](../profiling/user-vsperfcmd.md) **:**[`Domain`**\\**]`UserName` | 指定擁有程式碼剖析處理序之帳戶的網域和使用者名稱。 只有在以登入的使用者之外的使用者身分執行處理序時，才需要這個選項。 處理序擁有者會列在 [Windows 工作管理員] [處理序] 索引標籤上的 [使用者名稱] 資料行。 |
-     | [/crosssession](../profiling/crosssession.md) | 在其他工作階段啟用處理序程式碼剖析。 如果應用程式在不同的工作階段中執行，則需要這個選項。 工作階段識別碼會列在 [Windows 工作管理員] 之 [處理程序] 索引標籤上的 [工作階段識別碼] 資料行中。 **/crosssession** 可縮寫成 **/CS**。 |
-     | [/waitstart](../profiling/waitstart.md)[**:**`Interval`] | 指定在分析工具傳回錯誤之前，等候它初始化的秒數。 如果未指定 `Interval`，分析工具會無限期等候。 根據預設，**/start** 會立即傳回。 |
+     | [/user](../profiling/user-vsperfcmd.md) **:** [`Domain` **\\** ]`UserName` | 指定擁有程式碼剖析處理序之帳戶的網域和使用者名稱。 只有在以登入的使用者之外的使用者身分執行處理序時，才需要這個選項。 處理序擁有者會列在 [Windows 工作管理員] [處理序]  索引標籤上的 [使用者名稱]  資料行。 |
+     | [/crosssession](../profiling/crosssession.md) | 在其他工作階段啟用處理序程式碼剖析。 如果應用程式在不同的工作階段中執行，則需要這個選項。 工作階段識別碼會列在 [Windows 工作管理員] 之 [處理程序]  索引標籤上的 [工作階段識別碼]  資料行中。 **/crosssession** 可縮寫成 **/CS**。 |
+     | [/waitstart](../profiling/waitstart.md)[ **:** `Interval`] | 指定在分析工具傳回錯誤之前，等候它初始化的秒數。 如果未指定 `Interval`，分析工具會無限期等候。 根據預設， **/start** 會立即傳回。 |
      | [/globaloff](../profiling/globalon-and-globaloff.md) | 若要啟動暫停資料收集的程式碼剖析工具，請將 **/globaloff** 選項新增到 **/start** 命令列。 使用 **/globalon** 以繼續程式碼剖析。 |
      | [/counter](../profiling/counter.md) **:** `Config` | 從 Config 中指定的處理器效能計數器收集資訊。計數器資訊會新增至在每個分析事件收集的資料。 |
      | [/wincounter](../profiling/wincounter.md) **:** `WinCounterPath` | 指定程式碼剖析期間要收集的 Windows 效能計數器。 |
      | [/automark](../profiling/automark.md) **:** `Interval` | 只能搭配 **/wincounter** 使用。 指定 Windows 效能計數器收集事件間隔的毫秒數。 預設值為 500 毫秒。 |
      | [/events](../profiling/events-vsperfcmd.md) **:** `Config` | 指定程式碼剖析期間要收集的 Windows 事件追蹤 (ETW) 事件。 ETW 事件會收集至個別的 (.*etl*) 檔案。 |
-
 
 8. 從 Windows 服務控制管理員啟動服務。
 
@@ -82,9 +81,9 @@ ms.locfileid: "56638981"
 
     |選項|說明|
     |------------|-----------------|
-    |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|開始 (**/globalon**) 或停止 (**/globaloff**) 所有處理序的資料收集。|
-    |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|開始 (**/processon**) 或停止 (**/processoff**) 處理序 ID (`PID`) 指定的處理序資料收集。|
-    |[/threadon](../profiling/threadon-and-threadoff.md) **:** `TID` [/threadoff](../profiling/threadon-and-threadoff.md) **:** `TID`|開始 (**/threadon**) 或停止 (**/threadoff**) 執行緒識別碼 (`TID`) 所指定執行緒的資料收集。|
+    |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|開始 ( **/globalon**) 或停止 ( **/globaloff**) 所有處理序的資料收集。|
+    |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|開始 ( **/processon**) 或停止 ( **/processoff**) 處理序 ID (`PID`) 指定的處理序資料收集。|
+    |[/threadon](../profiling/threadon-and-threadoff.md) **:** `TID` [/threadoff](../profiling/threadon-and-threadoff.md) **:** `TID`|開始 ( **/threadon**) 或停止 ( **/threadoff**) 執行緒識別碼 (`TID`) 所指定執行緒的資料收集。|
 
 ## <a name="end-the-profiling-session"></a>結束程式碼剖析工作階段
 

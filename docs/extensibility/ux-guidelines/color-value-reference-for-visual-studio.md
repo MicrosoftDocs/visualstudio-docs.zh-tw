@@ -3,18 +3,18 @@ title: 色彩值參考
 description: 參考：建立新的 Visual Studio 色彩語彙基元的十六進位碼
 keywords: 色彩的十六進位碼、 色調、 佈景主題 UI、 佈景主題
 author: brickgeorge
-ms.author: gregvanl
+ms.author: madsk
 ms.date: 08/04/2017
 ms.topic: conceptual
 ms.assetid: 694ffb31-132c-4d63-b930-8254e7c50c25
 ms.reviewer: Jamie.Young
 manager: jillfra
-ms.openlocfilehash: 20fbe41bef16527ee66d0e87de8456ed1c65b865
-ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
+ms.openlocfilehash: ea37231dd31667389d9f08872eadbfdf26375bb2
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57428826"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66338006"
 ---
 # <a name="color-value-reference-for-visual-studio"></a>Visual Studio 的色彩值參考
 
@@ -26,13 +26,13 @@ ms.locfileid: "57428826"
 
 當使用此參考指南，請記住：
 
--   **一律在一起複製前景和背景的色調。** 不要從一個 UI 項目和從另一個背景選擇前景，只因為您喜歡的色調。
+- **一律在一起複製前景和背景的色調。** 不要從一個 UI 項目和從另一個背景選擇前景，只因為您喜歡的色調。
 
--   **這些是十六進位碼，而不是色彩語彙基元。** 由於您無法控制如何權杖可能會變更在未來，您無法使用的實際色彩語彙基元名稱，這些 UI 項目。 相反地，建立您自己的類別內的語彙基元，並使用表格所示的色調值。 可以找到現有的 UI 中的色彩語彙基元[適用於 Visual Studio 共用色彩](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md)。
+- **這些是十六進位碼，而不是色彩語彙基元。** 由於您無法控制如何權杖可能會變更在未來，您無法使用的實際色彩語彙基元名稱，這些 UI 項目。 相反地，建立您自己的類別內的語彙基元，並使用表格所示的色調值。 可以找到現有的 UI 中的色彩語彙基元[適用於 Visual Studio 共用色彩](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md)。
 
 - **比較只會顯示高對比樣本。** 使用系統色彩名稱用於高對比的使用者介面，並請勿使用滴管] 或 [色彩選擇器上這些樣本。 本主題中的高對比樣本會反映在 Windows 中的高對比 #1 佈景主題。 看起來不同，在其他高對比佈景主題色彩。
 
--   **為了獲得最佳結果，對色彩設定 ui 類似範例。**
+- **為了獲得最佳結果，對色彩設定 ui 類似範例。**
 
 ## <a name="properties-window"></a>屬性視窗
 
@@ -96,7 +96,7 @@ ms.locfileid: "57428826"
 | 前景： 暫留 | ![#FF1E1E1E 色樣](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E 樣本")<br />`#FF1E1E1E` | ![#FFF1F1F1 色樣](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 樣本")<br />`#FFF1F1F1` | ![#FF1E1E1E 色樣](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E 樣本")<br />`#FF1E1E1E` | ![HighlightText 色樣](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText 樣本")<br />`HighlightText` |
 | 背景 | ![#FFEEEEF2 色樣](../../extensibility/ux-guidelines/media/EEEEF2.png "#FFEEEEF2 樣本")<br />`#FFEEEEF2` | ![#FF292929 swatch](../../extensibility/ux-guidelines/media/292929.png "#FF292929 swatch")<br />`#FF292929` | ![#FFEEEEF2 色樣](../../extensibility/ux-guidelines/media/EEEEF2.png "#FFEEEEF2 樣本")<br />`#FFEEEEF2` | ![控制色樣](../../extensibility/ux-guidelines/media/HCControl.png "控制項樣本")<br />`Control` |
 | 背景： 暫留 | ![#FFC9DEF5 swatch](../../extensibility/ux-guidelines/media/C9DEF5.png "#FFC9DEF5 swatch")<br />`#FFC9DEF5` | ![#FF3E3E40 色樣](../../extensibility/ux-guidelines/media/3E3E40.png "#FF3E3E40 樣本")<br />`#FF3E3E40` | ![#FFFFFCF4 色樣](../../extensibility/ux-guidelines/media/FFFCF4.png "#FFFFFCF4 樣本")<br />`#FFFFFCF4` | ![反白顯示樣本](../../extensibility/ux-guidelines/media/HCHighlight.png "反白顯示樣本")<br />`Highlight` |
-| Border | 無 | 無 | 無 | 無 |
+| Border | None | None | None | None |
 | 框線： 暫留 | ![#FFC9DEF5 swatch](../../extensibility/ux-guidelines/media/C9DEF5.png "#FFC9DEF5 swatch")<br />`#FFC9DEF5` | ![#FF3E3E40 色樣](../../extensibility/ux-guidelines/media/3E3E40.png "#FF3E3E40 樣本")<br />`#FF3E3E40` | ![#FFE5C365 swatch](../../extensibility/ux-guidelines/media/E5C365.png "##FFE5C365 swatch")<br />`#FFE5C365` | ![WindowFrame 色樣](../../extensibility/ux-guidelines/media/HCWindowFrame.png "WindowFrame 樣本")<br />`WindowFrame` |
 
 ### <a name="category-group"></a>類別目錄群組
@@ -182,7 +182,7 @@ ms.locfileid: "57428826"
 | 背景： 選取時，未取得焦點 | ![#FFEEEEF2 色樣](../../extensibility/ux-guidelines/media/EEEEF2.png "#FFEEEEF2 樣本")<br />`#FFEEEEF2` | ![#FF2D2D30 色樣](../../extensibility/ux-guidelines/media/2D2D30.png "#FF2D2D30 樣本")<br />`#FF2D2D30` | ![#FFEEEEF2 色樣](../../extensibility/ux-guidelines/media/EEEEF2.png "#FFEEEEF2 樣本")<br />`#FFEEEEF2` | ![ControlDark 色樣](../../extensibility/ux-guidelines/media/HCControlDark.png "ControlDark 樣本")<br />`ControlDark` |
 | 分割線 | ![#FFEEEEF2 色樣](../../extensibility/ux-guidelines/media/EEEEF2.png "#FFEEEEF2 樣本")<br />`#FFEEEEF2` | ![#FF2D2D30 色樣](../../extensibility/ux-guidelines/media/2D2D30.png "#FF2D2D30 樣本")<br />`#FF2D2D30` | ![#FFEEEEF2 色樣](../../extensibility/ux-guidelines/media/EEEEF2.png "#FFEEEEF2 樣本")<br />`#FFEEEEF2` | ![ControlDark 色樣](../../extensibility/ux-guidelines/media/HCControlDark.png "ControlDark 樣本")<br />`ControlDark` |
 
-### <a name="header"></a>頁首
+### <a name="header"></a>標頭
 
 | | 淺色佈景主題 | 暗色調佈景主題 | 藍色佈景主題 | 高對比 |
 | --- | :---: | :---: | :---: | :---: |

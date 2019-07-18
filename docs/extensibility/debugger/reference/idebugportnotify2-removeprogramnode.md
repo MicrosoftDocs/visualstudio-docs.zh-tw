@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPortNotify2::RemoveProgramNode
 ms.assetid: 3668157b-66d2-416e-a359-fc04dcd18a48
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c09c7ccfcfee13f667091e96a638c17be2c9616d
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 05565005838fb47c3ad798464ee9382ae1168905
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56687389"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66314234"
 ---
 # <a name="idebugportnotify2removeprogramnode"></a>IDebugPortNotify2::RemoveProgramNode
 取消註冊才能進行偵錯連接埠上執行的程式。
@@ -36,10 +39,9 @@ int RemoveProgramNode( 
 );
 ```
 
-#### <a name="parameters"></a>參數
- `pProgramNode`
-
- [in][IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)物件，表示要取消註冊計劃。
+## <a name="parameters"></a>參數
+`pProgramNode`\
+[in][IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)物件，表示要取消註冊計劃。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

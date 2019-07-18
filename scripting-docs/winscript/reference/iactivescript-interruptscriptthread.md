@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: aa46bc95087b3defaf739cc3473c58e29a93071c
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58155926"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62935504"
 ---
 # <a name="iactivescriptinterruptscriptthread"></a>IActiveScript::InterruptScriptThread
 中斷執行指令碼中的執行緒 （事件接收器、 立即執行或的巨集引動過程） 的執行。 這個方法可用來終止卡 （例如，在無限迴圈） 的指令碼。 可以從非基底執行緒中呼叫不會導致主機物件或非基底圖說[IActiveScriptSite](../../winscript/reference/iactivescriptsite.md)方法。  

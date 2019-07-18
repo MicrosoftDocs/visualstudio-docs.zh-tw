@@ -6,17 +6,17 @@ helpviewer_keywords:
 - debug engines, launching
 - debug engines, attaching to programs
 ms.assetid: 362f00ac-1909-4a3a-bacb-c0ceb5549816
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f4a967b48f7c904ecc22d0b3ea077ae5cecd2625
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 638eaea19b4f21e749fbd3db845f18eb573420f2
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56718959"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66344151"
 ---
 # <a name="launch-based-attachment"></a>啟動時附加
 啟動時附加至程式便會自動的。 當裝載程式的處理序由 SDM 啟動時，啟動時附加會遵循的路徑類似於手動附件方法。 如需資訊，請參閱[附加至程式](../../extensibility/debugger/attaching-to-the-program.md)。
@@ -24,13 +24,13 @@ ms.locfileid: "56718959"
 ## <a name="the-attaching-process"></a>附加的處理程序
  主要差異在於下列事件的順序**附加**呼叫，如下所示：
 
-1.  傳送**IDebugEngineCreateEvent2** SDM 事件物件。 如需詳細資訊，請參閱 <<c0> [ 將事件傳送](../../extensibility/debugger/sending-events.md)。
+1. 傳送**IDebugEngineCreateEvent2** SDM 事件物件。 如需詳細資訊，請參閱 <<c0> [ 將事件傳送](../../extensibility/debugger/sending-events.md)。
 
-2.  呼叫`IDebugProgram2::GetProgramId`方法**IDebugProgram2**介面傳遞給**附加**方法。
+2. 呼叫`IDebugProgram2::GetProgramId`方法**IDebugProgram2**介面傳遞給**附加**方法。
 
-3.  傳送**IDebugProgramCreateEvent2**通知 SDM 事件物件的本機**IDebugProgram2**以 DE 代表程式建立物件。
+3. 傳送**IDebugProgramCreateEvent2**通知 SDM 事件物件的本機**IDebugProgram2**以 DE 代表程式建立物件。
 
-4.  傳送[IDebugThreadCreateEvent2](../../extensibility/debugger/reference/idebugthreadcreateevent2.md)事件物件，以通知 SDM 啟動的處理序會建立一個新的執行緒。
+4. 傳送[IDebugThreadCreateEvent2](../../extensibility/debugger/reference/idebugthreadcreateevent2.md)事件物件，以通知 SDM 啟動的處理序會建立一個新的執行緒。
 
 ## <a name="see-also"></a>另請參閱
 - [傳送所需的事件](../../extensibility/debugger/sending-the-required-events.md)

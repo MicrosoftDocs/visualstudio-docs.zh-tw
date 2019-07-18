@@ -1,27 +1,22 @@
 ---
 title: 使用 Project Factory 建立專案執行個體 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - project factories
 - projects [Visual Studio SDK], project factories
 ms.assetid: 94c90012-8669-459c-af8e-307ac242c8c4
 caps.latest.revision: 14
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 358c13bdc8bc312a479b9c316fa516ad68b10630
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f26b11aaf74b73535c82ebcd6422f3be0bba3f22
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51736251"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697208"
 ---
 # <a name="creating-project-instances-by-using-project-factories"></a>使用專案 Factory 建立專案執行個體
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -32,7 +27,7 @@ ms.locfileid: "51736251"
   
  您可以實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory>中您的專案中的類別介面。 一般而言，它位於自己的模組。  
   
- 如需實作的範例`IVsProjectFactory`介面，請參閱包含在 PrjFac.cpp[基本專案](http://msdn.microsoft.com/en-us/385fd2a3-d9f1-4808-87c2-a3f05a91fc36)範例目錄。  
+ 如需實作的範例`IVsProjectFactory`介面，請參閱包含在 PrjFac.cpp[基本專案](https://msdn.microsoft.com/385fd2a3-d9f1-4808-87c2-a3f05a91fc36)範例目錄。  
   
  專案，支援彙總的擁有者必須保存在其專案檔中的擁有者金鑰。 當<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CreateProject%2A>專案呼叫方法，是將它與擁有者索引鍵，擁有的專案會將其擁有者索引鍵轉換成 GUID 然後呼叫專案 factory`CreateProject`要實際建立此專案處理站的方法。  
   
@@ -57,5 +52,4 @@ ms.locfileid: "51736251"
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsOwnedProjectFactory>   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory>   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterProjectTypes>   
- [檢查清單︰建立新的專案類型](../../extensibility/internals/checklist-creating-new-project-types.md)
-
+ [檢查清單：建立新的專案類型](../../extensibility/internals/checklist-creating-new-project-types.md)

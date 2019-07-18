@@ -1,5 +1,5 @@
 ---
-title: 安全性、 版本設定和 ClickOnce 部署中的資訊清單問題 |Microsoft Docs
+title: 在 ClickOnce 部署資訊清單的安全性/版本設定問題
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c87fc29b24b3c5ab4bd59d9cca25113f82895ff4
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: bb2ec5229132265feb1095c9ee921d73a1568dd2
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56631259"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745598"
 ---
 # <a name="security-versioning-and-manifest-issues-in-clickonce-deployments"></a>ClickOnce 部署中的安全性、版本控制和資訊清單問題
 
@@ -59,7 +59,7 @@ ms.locfileid: "56631259"
 
 ## <a name="specify-individual-net-framework-assemblies-in-the-manifest"></a>指定個別的.NET Framework 組件資訊清單中
 
-您的應用程式將無法載入，如果您已經手動編輯[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]參考較舊版本的部署[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]組件。 例如，如果您新增之版本的 System.Net 組件的參考[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]之前指定資訊清單中的版本，則會發生錯誤。 一般情況下，您不應該嘗試指定個別的參考[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]版本的組件，[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]對執行應用程式指定為應用程式資訊清單中的相依性。
+您的應用程式將無法載入，如果您已經手動編輯[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]參考較舊版本的.NET Framework 組件的部署。 比方說，如果您加入資訊清單中指定的版本之前的.NET framework 版本的 System.Net 組件的參考，則會發生錯誤。 一般情況下，您應該嘗試指定個別的.NET Framework 組件的參考，針對您的應用程式執行的.NET framework 的版本指定為應用程式資訊清單中的相依性。
 
 ## <a name="manifest-parsing-issues"></a>資訊清單剖析問題
 
@@ -97,5 +97,5 @@ ms.locfileid: "56631259"
 ## <a name="see-also"></a>另請參閱
 
 [疑難排解 ClickOnce 部署](../deployment/troubleshooting-clickonce-deployments.md)
-[Securw ClickOnce 應用程式](../deployment/securing-clickonce-applications.md)
+[保護 ClickOnce 應用程式](../deployment/securing-clickonce-applications.md)
 [選擇 ClickOnce 部署策略](../deployment/choosing-a-clickonce-deployment-strategy.md)

@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 137329e48f6cb36e36f0196fa226303468eec88a
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58151803"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62946748"
 ---
 # <a name="idebugdocumenttexteventsondestroy"></a>IDebugDocumentTextEvents::onDestroy
 表示基礎的文件已終結，而且已不再有效。  

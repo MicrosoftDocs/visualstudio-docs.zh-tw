@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - EXCEPTION_INFO structure
 ms.assetid: d046957a-b97d-420b-b46b-c67cbaef709e
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4c5863c9ebb790ebcbc267f62cc2a0a1fd14603c
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 5c4fc29aee8d14e9c73dcf5665eff3ea611985d1
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56686258"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66337786"
 ---
 # <a name="exceptioninfo"></a>EXCEPTION_INFO
 描述例外狀況或擲回的正在偵錯之程式的執行階段錯誤。
@@ -47,17 +50,23 @@ public struct EXCEPTION_INFO {
 ```
 
 ## <a name="members"></a>成員
-pProgram [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)物件，表示的程式發生例外狀況。
+`pProgram`\
+[IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)物件，表示的程式發生例外狀況。
 
-bstrProgramName 程式的名稱中發生例外狀況。
+`bstrProgramName`\
+發生例外狀況的程式名稱。
 
-bstrExceptionName 例外狀況的名稱。
+`bstrExceptionName`\
+例外狀況的名稱。
 
-dwCode 例外狀況或執行階段錯誤的識別程式碼。
+`dwCode`\
+例外狀況或執行階段錯誤的識別碼。
 
-dwState 的值從[EXCEPTION_STATE](../../../extensibility/debugger/reference/exception-state.md)列舉型別，定義例外狀況的狀態。
+`dwState`\
+值，以從[EXCEPTION_STATE](../../../extensibility/debugger/reference/exception-state.md)列舉型別，定義例外狀況的狀態。
 
-guidType GUID 的語言識別項、 任一`guidLang`或`guidEng`。
+`guidType`\
+GUID 的語言識別項、 任一`guidLang`或`guidEng`。
 
 ## <a name="remarks"></a>備註
 此結構會做為參數傳遞[SetException](../../../extensibility/debugger/reference/idebugengine2-setexception.md)並[RemoveSetException](../../../extensibility/debugger/reference/idebugengine2-removesetexception.md)方法。 此結構也會傳遞至[GetException](../../../extensibility/debugger/reference/idebugexceptionevent2-getexception.md)来填入的方法。

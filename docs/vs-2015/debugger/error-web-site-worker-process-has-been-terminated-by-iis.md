@@ -1,14 +1,9 @@
 ---
-title: 錯誤： 網站背景工作處理序已被 IIS 終止 |Microsoft Docs
-ms.custom: ''
+title: 錯誤：網站背景工作處理序已被 IIS 終止 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 f1_keywords:
 - vs.debug.error.web_server_process_terminated
 dev_langs:
@@ -20,13 +15,13 @@ ms.assetid: 5707b972-71a6-4cc6-ab99-c7c00ca8628c
 caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 93271bcba524054a2289b078b0e92fde115eaf23
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 787785909cd980176fd9220f58198ae6cc272ea8
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51789053"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68185469"
 ---
 # <a name="error-web-site-worker-process-has-been-terminated-by-iis"></a>錯誤：網站背景工作處理序已被 IIS 終止
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,36 +32,33 @@ ms.locfileid: "51789053"
   
 ### <a name="to-configure-iis-7-to-allow-the-worker-process-to-continue"></a>若要設定 IIS 7 允許背景工作處理序繼續進行  
   
-1. 開啟**系統管理工具**視窗。  
+1. 開啟 [系統管理工具]  視窗。  
   
-   1.  按一下 **開始**，然後選擇**控制台**。  
+   1. 按一下 [開始]  ，然後選擇 [控制台]  。  
   
-   2.  在**控制台中**，選擇**切換至傳統檢視**，如有必要，然後按兩下**系統管理工具**。  
+   2. 在 [控制台]  中依需要選擇 [切換到傳統檢視]  ，然後按兩下 [系統管理工具]  。  
   
-2. 在 [**系統管理工具**] 視窗中，按兩下**Internet Information Services (IIS) 管理員**。  
+2. 在 [系統管理工具]  視窗中，按兩下 [Internet Information Services (IIS) 管理員]  。  
   
     [IIS 管理員] 隨即開啟。  
   
-3. 在 **連線**窗格中，展開\<電腦名稱 > 如有必要的節點。  
+3. 在 [連線]  窗格中，展開 [\<電腦名稱>] 節點 (如有需要)。  
   
-4. 底下\<電腦名稱 > 節點，按一下**應用程式集區**。  
+4. 按一下 [\<電腦名稱>] 節點下的 [應用程式集區]  。  
   
-5. 在 **應用程式集區**清單中，以滑鼠右鍵按一下 集區中，執行應用程式的名稱，然後按一下**進階設定**。  
+5. 在 [應用程式集區]  清單內，以滑鼠右鍵按一下應用程式執行位置所在的集區名稱，然後按一下 [進階設定]  。  
   
-6. 在 [**進階設定]** 對話方塊方塊中，找出**處理序模型**區段，然後執行下列動作之一：  
+6. 在 [進階設定]  對話方塊中，找出 [處理模型]  區段，並執行下列其中一個動作：  
   
-   - 設定**已啟用 Ping**要**False**。  
+   - 將 [已啟用 Ping]  設定為 [False]  。  
   
-   - 設定**Ping 回應時間上限**大於 90 秒的值。  
+   - 將 [Ping 回應時間上限]  設定為大於 90 秒的值。  
   
-     設定**已啟用 Ping**要**False** IIS 停止檢查背景工作處理序是否仍在執行，並讓背景工作處理序保持運作，直到您停止您偵錯的處理序。 設定**Ping 回應時間上限**大的值可讓 IIS 繼續監視背景工作處理序。  
+     將 [已啟用 Ping]  設定為 [False]  ，可使 IIS 停止檢查背景工作處理序是否仍在執行，並使背景工作處理序保持為執行狀態，直到停止已偵錯的處理序為止。 將 [Ping 回應時間上限]  設定為大數值，可讓 IIS 繼續監視背景工作處理序。  
   
-7. 按一下 [ **[確定]** 以關閉**進階設定**] 對話方塊。  
+7. 按一下 [確定]  ，關閉 [進階設定]  對話方塊。  
   
-8. 關閉 IIS 管理員和**系統管理工具**視窗。  
+8. 關閉 [IIS 管理員] 和 [系統管理工具]  視窗。  
   
 ## <a name="see-also"></a>另請參閱  
  [遠端偵錯錯誤和疑難排解](../debugger/remote-debugging-errors-and-troubleshooting.md)
-
-
-

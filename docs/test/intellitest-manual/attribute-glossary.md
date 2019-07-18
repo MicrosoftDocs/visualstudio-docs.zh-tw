@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 0f5e18bb1a63b7d7630ebc1b7ce2812432dedda9
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: aada3c1053ed30521d8c7116c887061650a083dc
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55916917"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825319"
 ---
 # <a name="attribute-glossary"></a>屬性字彙
 
@@ -25,17 +25,17 @@ ms.locfileid: "55916917"
   * [PexClass](#pexclass)
   * [PexGenericArguments](#pexgenericarguments)
   * [PexMethod](#pexmethod)
-     - [PexExplorationAttributeBase](#pexexplorationattributebase)<p />
+    * [PexExplorationAttributeBase](#pexexplorationattributebase)
 
 * **Microsoft.Pex.Framework.Settings**
-  * [PexAssemblySettings](#pexassemblysettings)<p />
+  * [PexAssemblySettings](#pexassemblysettings)
 
 * **Microsoft.Pex.Framework.Instrumentation**
   * [PexAssemblyUnderTest](#pexassemblyundertest)
-  * [PexInstrumentAssembly](#pexinstrumentassemblyattribute)<p />
+  * [PexInstrumentAssembly](#pexinstrumentassemblyattribute)
 
 * **Microsoft.Pex.Framework.Using**
-  * [PexUseType](#pexusetype)<p />
+  * [PexUseType](#pexusetype)
 
 * **Microsoft.Pex.Framework.Validation**
   * [PexAllowedException](#pexallowedexception)
@@ -79,9 +79,9 @@ ms.locfileid: "55916917"
 <a name="pexclass"></a>
 ## <a name="pexclass"></a>PexClass
 
-此屬性會標示包含「探索」的類別。 它相當於 MSTest **TestClassAttribute** (或 NUnit **TestFixtureAttribute**)。 這是一個選擇性的屬性。
+此屬性會標示包含「探索」  的類別。 它相當於 MSTest **TestClassAttribute** (或 NUnit **TestFixtureAttribute**)。 這是一個選擇性的屬性。
 
-使用 [PexClass](#pexclass) 所標示的類別必須是「預設可建構的」：
+使用 [PexClass](#pexclass) 所標示的類別必須是「預設可建構的」  ：
 
 * 公開匯出的類型
 * 預設建構函式
@@ -152,7 +152,7 @@ public partial class MyTests {
 ```csharp
 using Microsoft.Pex.Framework;
 // overriding the test framework selection
-[assembly: PexAssemblySettings(TestFramework = "Naked")]
+[assembly: PexAssemblySettings(TestFramework = "MSTestv2")]
 ```
 
 <a name="pexassemblyundertest"></a>

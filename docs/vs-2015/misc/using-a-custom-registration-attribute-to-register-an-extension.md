@@ -1,23 +1,18 @@
 ---
 title: 使用自訂註冊屬性來登錄延伸模組 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 ms.assetid: 98068fa7-bda1-4922-b3f6-28680de58c3d
 caps.latest.revision: 3
-manager: douge
-ms.openlocfilehash: 251c31efcbb8a72efac51f246e644a30a79ed999
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: a619c5d418df3b9b85ab09cf9b907617ebd81b67
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49279834"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62935780"
 ---
 # <a name="using-a-custom-registration-attribute-to-register-an-extension"></a>使用自訂註冊屬性來登錄延伸模組
 在某些情況下，您可能需要建立新的註冊屬性，您的擴充功能。 若要加入新的登錄機碼，或將新的值加入至現有的索引鍵，您可以使用註冊屬性。 新的屬性必須衍生自<xref:Microsoft.VisualStudio.Shell.RegistrationAttribute>，而且它必須覆寫<xref:Microsoft.VisualStudio.Shell.RegistrationAttribute.Register%2A>和<xref:Microsoft.VisualStudio.Shell.RegistrationAttribute.Unregister%2A>方法。  

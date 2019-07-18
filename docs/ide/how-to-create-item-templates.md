@@ -7,18 +7,18 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 88f6061d959167163c8502899813dc4c6db88f10
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: a861843da139701c23e38df11c7ad380c047a846
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57222083"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62823917"
 ---
-# <a name="how-to-create-item-templates"></a>作法：建立項目範本
+# <a name="how-to-create-item-templates"></a>HOW TO：建立項目範本
 
 本文會向您示範如何使用 [匯出範本精靈] 建立項目範本。 如果您的範本中包含多個檔案，請參閱[如何：建立多檔案項目範本](../ide/how-to-create-multi-file-item-templates.md)。
 
-## <a name="to-add-a-user-item-template-to-the-add-new-item-dialog-box"></a>將使用者項目範本新增至 [新增項目] 對話方塊
+## <a name="add-an-item-template-to-the-add-new-item-dialog-box"></a>將項目範本新增至 [新增項目] 對話方塊
 
 1. 在 Visual Studio 中建立或開啟專案。
 
@@ -46,7 +46,7 @@ ms.locfileid: "57222083"
 
    項目範本會出現在 [新增項目] 對話方塊中。 如已在 [匯出範本精靈] 中新增描述，該描述會出現在對話方塊的右邊。
 
-## <a name="to-enable-the-item-template-to-be-used-in-a-universal-windows-app-project"></a>讓項目範本能在通用 Windows 應用程式專案中使用
+## <a name="enable-the-item-template-to-be-used-in-a-universal-windows-app-project"></a>讓項目範本能在通用 Windows 應用程式專案中使用
 
 此精靈為建立基本範本執行許多工作，但在許多情況下，您需要在匯出範本之後手動修改 *.vstemplate* 檔案。 例如，如果您希望項目出現在通用 Windows 應用程式專案的 [新增項目] 對話方塊中，您必須執行一些額外的步驟。
 
@@ -68,7 +68,7 @@ ms.locfileid: "57222083"
 
 您現在可以根據此範本，從 [新增項目] 對話方塊將項目新增至通用 Windows 專案。
 
-## <a name="to-enable-templates-for-specific-project-subtypes"></a>啟用特定專案子類型的範本
+## <a name="enable-templates-for-specific-project-subtypes"></a>啟用特定專案子類型的範本
 
 您可以指定範本只針對特定的專案子類型顯示，例如 Windows、Office、資料庫或 Web。
 
@@ -103,7 +103,7 @@ ms.locfileid: "57222083"
 </VSTemplate>
 ```
 
-## <a name="to-manually-create-an-item-template-without-using-the-export-template-wizard"></a>若要手動建立項目範本而不使用 [匯出範本] 精靈
+## <a name="manually-create-an-item-template"></a>手動建立項目範本
 
 在某些情況下，您可能想要從頭開始手動建立項目範本。
 

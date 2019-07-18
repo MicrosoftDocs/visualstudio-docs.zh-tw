@@ -1,14 +1,9 @@
 ---
-title: CA2133： 委派必須繫結至方法具有一致透明度 |Microsoft Docs
-ms.custom: ''
+title: CA2133:必須將方法委派繫結具有一致透明度 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA2133
 ms.assetid: a09672e2-63cb-4abd-9e8f-dff515e101ce
@@ -16,14 +11,14 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 16e766979e71b36f816e1265ef5da520c16d85b4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: a8a19a84336cc6452f663eb65429326b52268728
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49909694"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63386947"
 ---
-# <a name="ca2133-delegates-must-bind-to-methods-with-consistent-transparency"></a>CA2133：委派必須繫結至透明度一致的方法
+# <a name="ca2133-delegates-must-bind-to-methods-with-consistent-transparency"></a>CA2133:委派必須繫結至具有一致透明度的方法
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -34,7 +29,7 @@ ms.locfileid: "49909694"
 |中斷變更|中斷|
 
 > [!NOTE]
->  這個警告只會套用至執行 CoreCLR （CLR 的 Silverlight Web 應用程式特定的版本） 的程式碼中。
+> 這個警告只會套用至執行 CoreCLR （CLR 的 Silverlight Web 應用程式特定的版本） 的程式碼中。
 
 ## <a name="cause"></a>原因
  這個警告會以標記的委派繫結的方法，就會引發<xref:System.Security.SecurityCriticalAttribute>方法，它是透明或標記著<xref:System.Security.SecuritySafeCriticalAttribute>。 此警告也會引發將透明或安全關鍵性的委派繫結至關鍵方法的方法。
@@ -50,6 +45,3 @@ ms.locfileid: "49909694"
 
 ### <a name="code"></a>程式碼
  [!code-csharp[FxCop.Security.CA2133.DelegatesMustBindWithConsistentTransparency#1](../snippets/csharp/VS_Snippets_CodeAnalysis/fxcop.security.ca2133.delegatesmustbindwithconsistenttransparency/cs/ca2133 - delegatesmustbindwithconsistenttransparency.cs#1)]
-
-
-

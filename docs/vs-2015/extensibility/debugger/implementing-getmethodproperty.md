@@ -1,45 +1,40 @@
 ---
 title: 實作 GetMethodProperty |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - GetMethodProperty method
 - IDebugExpressionEvaluator2 property
 ms.assetid: 6305874f-a2c4-4432-834c-07530ea84bff
 caps.latest.revision: 12
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: dbc302523aeb48453be53aa1fea05f2759c9db20
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: f125db668d240200e94539167381931898c75135
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51730712"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430312"
 ---
 # <a name="implementing-getmethodproperty"></a>實作 GetMethodProperty
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 > [!IMPORTANT]
->  在 Visual Studio 2015 中，這種實作運算式評估工具已被取代。 如需實作 CLR 運算式評估工具的資訊，請參閱[CLR 運算式評估工具](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)並[Managed 運算式評估工具範例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。  
+> 在 Visual Studio 2015 中，這種實作運算式評估工具已被取代。 如需實作 CLR 運算式評估工具的資訊，請參閱[CLR 運算式評估工具](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)並[Managed 運算式評估工具範例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。  
   
  Visual Studio 會呼叫偵錯引擎 (DE) [GetDebugProperty](../../extensibility/debugger/reference/idebugstackframe2-getdebugproperty.md)，接著呼叫[GetMethodProperty](../../extensibility/debugger/reference/idebugexpressionevaluator-getmethodproperty.md)取得堆疊框架上目前方法的相關資訊。  
   
  這個實作`IDebugExpressionEvaluator::GetMethodProperty`會執行下列工作：  
   
-1.  呼叫[GetContainerField](../../extensibility/debugger/reference/idebugsymbolprovider-getcontainerfield.md)，並傳入[IDebugAddress](../../extensibility/debugger/reference/idebugaddress.md)物件。 符號提供者 (SP) 會傳回[IDebugContainerField](../../extensibility/debugger/reference/idebugcontainerfield.md)代表包含指定的位址的方法。  
+1. 呼叫[GetContainerField](../../extensibility/debugger/reference/idebugsymbolprovider-getcontainerfield.md)，並傳入[IDebugAddress](../../extensibility/debugger/reference/idebugaddress.md)物件。 符號提供者 (SP) 會傳回[IDebugContainerField](../../extensibility/debugger/reference/idebugcontainerfield.md)代表包含指定的位址的方法。  
   
-2.  取得[IDebugMethodField](../../extensibility/debugger/reference/idebugmethodfield.md)從`IDebugContainerField`。  
+2. 取得[IDebugMethodField](../../extensibility/debugger/reference/idebugmethodfield.md)從`IDebugContainerField`。  
   
-3.  具現化類別 (稱為`CFieldProperty`在此範例中) 可實[IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md)介面，並包含`IDebugMethodField`TECHED-SERVICES 從傳回的物件  
+3. 具現化類別 (稱為`CFieldProperty`在此範例中) 可實[IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md)介面，並包含`IDebugMethodField`TECHED-SERVICES 從傳回的物件  
   
-4.  傳回`IDebugProperty2`介面從`CFieldProperty`物件。  
+4. 傳回`IDebugProperty2`介面從`CFieldProperty`物件。  
   
 ## <a name="managed-code"></a>Managed 程式碼  
  此範例示範如何實作`IDebugExpressionEvaluator::GetMethodProperty`managed 程式碼中。  
@@ -133,4 +128,3 @@ STDMETHODIMP CExpressionEvaluator::GetMethodProperty(
   
 ## <a name="see-also"></a>另請參閱  
  [區域變數的範例實作](../../extensibility/debugger/sample-implementation-of-locals.md)
-

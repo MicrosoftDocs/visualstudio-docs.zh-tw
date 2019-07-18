@@ -1,14 +1,9 @@
 ---
 title: SccRename 函式 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - SccRename
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: b467ade6-a1db-4c0b-b60f-7850ec4f79eb
 caps.latest.revision: 13
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 929eff85a5dddb96ad518593a955950052dbced7
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: e78975acab0bf30f1f188cdd7b6454fd6e74ce6f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51731309"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68143713"
 ---
 # <a name="sccrename-function"></a>SccRename 函式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,7 +51,7 @@ SCCRTN SccRename(
 ## <a name="return-value"></a>傳回值  
  此函式的原始檔控制外掛程式實作應該會傳回下列值之一：  
   
-|值|描述|  
+|值|說明|  
 |-----------|-----------------|  
 |SCC_OK|重新命名作業已順利完成。|  
 |SCC_E_PROJNOTOPEN|無法開啟原始檔控制下的專案。|  
@@ -72,4 +67,3 @@ SCCRTN SccRename(
   
 ## <a name="see-also"></a>另請參閱  
  [原始檔控制外掛程式 API 函式](../extensibility/source-control-plug-in-api-functions.md)
-

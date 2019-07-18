@@ -1,14 +1,9 @@
 ---
 title: CustomType |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 1b66bc0a-7979-416f-bf7f-e5df91584c91
 caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 4d0cbf7a82cf2af95b052628ebaf0b4b87dc4094
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: d5caaceecdd2d88622c5922e4d40a9a8829bf7f2
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51722591"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68164414"
 ---
 # <a name="customtype"></a>CustomType
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +28,7 @@ ms.locfileid: "51722591"
 ## <a name="properties"></a>屬性  
  下表顯示此符號類型的其他有效屬性。  
   
-|屬性|資料類型|描述|  
+|屬性|資料類型|說明|  
 |--------------|---------------|-----------------|  
 |[IDiaSymbol::get_oemId](../../debugger/debug-interface-access/idiasymbol-get-oemid.md)|`DWORD`|OEM 的識別項。|  
 |[IDiaSymbol::get_oemSymbolId](../../debugger/debug-interface-access/idiasymbol-get-oemsymbolid.md)|`DWORD`|OEM 的內部識別碼。|  
@@ -45,6 +40,3 @@ ms.locfileid: "51722591"
   
 ## <a name="see-also"></a>另請參閱  
  [符號類型的類別階層架構](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md)
-
-
-

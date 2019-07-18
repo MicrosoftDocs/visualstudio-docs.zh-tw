@@ -1,27 +1,24 @@
 ---
 title: 新增連線 |Microsoft Docs
-ms.custom: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-data-tools
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 8a93c287-2834-4a83-a590-bdc3fe8d293f
 caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 03407962b4ea8160d492971367f121835fa39aae
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: ff1ec43d6faec329db6138598d84e47db009113e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49218501"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68192544"
 ---
 # <a name="add-new-connections"></a>新增連線
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 您可以測試您的連線到資料庫或服務，並瀏覽資料庫內容和結構描述，使用**伺服器總管**， **Cloud Explorer**，或**SQL Server 物件總管**. 這些視窗的功能重疊在某個程度。 基本差異如下：  
   
  伺服器總管  
@@ -47,7 +44,7 @@ ms.locfileid: "49218501"
   
  ![變更 AD0.NET 資料提供者](../data-tools/media/raddata-change-ad0-net-data-provider.png "raddata 變更 AD0.NET 資料提供者")  
   
-## <a name="test-the-connection"></a>測試連接  
+## <a name="test-the-connection"></a>測試連線  
  您已選擇資料來源之後，請按一下**測試連接**。 如果不成功，您必須疑難排解根據廠商的文件。  
   
  ![測試連線](../data-tools/media/raddata-test-connection.png "raddata 測試連接")  
@@ -56,4 +53,3 @@ ms.locfileid: "49218501"
   
 ## <a name="see-also"></a>另請參閱  
  [適用於 .NET 的 Visual Studio Data Tools](../data-tools/visual-studio-data-tools-for-dotnet.md)
-

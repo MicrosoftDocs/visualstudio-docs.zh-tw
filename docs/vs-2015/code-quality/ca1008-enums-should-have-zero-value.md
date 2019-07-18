@@ -1,14 +1,9 @@
 ---
-title: CA1008： 列舉應該要有零的值 |Microsoft Docs
-ms.custom: ''
+title: CA1008:列舉應該有值為零 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1008
 - EnumsShouldHaveZeroValue
@@ -20,14 +15,14 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 69e60b0f2ee8106b04507722f1b3094e1bbdbbc8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e9b607c3a3fd7992bf8947c003d240d3d5b1d312
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49874822"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68182620"
 ---
-# <a name="ca1008-enums-should-have-zero-value"></a>CA1008：列舉值中應該要有值為零的成員
+# <a name="ca1008-enums-should-have-zero-value"></a>CA1008:列舉值中應該要有值為零的成員
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -59,18 +54,15 @@ ms.locfileid: "49874822"
  [!code-vb[FxCop.Design.EnumsZeroValue#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Design.EnumsZeroValue/vb/FxCop.Design.EnumsZeroValue.vb#1)]
 
 ## <a name="related-rules"></a>相關的規則
- [CA2217：不要以 FlagsAttribute 標記列舉](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)
+ [CA2217:不以 FlagsAttribute 標記列舉](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)
 
- [CA1700：不要在列舉值名稱中包含 'Reserved'](../code-quality/ca1700-do-not-name-enum-values-reserved.md)
+ [CA1700:未命名的列舉值 'Reserved'](../code-quality/ca1700-do-not-name-enum-values-reserved.md)
 
- [CA1712：不要使用類型名稱做為列舉值的前置字元](../code-quality/ca1712-do-not-prefix-enum-values-with-type-name.md)
+ [CA1712:不要使用型別名稱的列舉值的前置字元](../code-quality/ca1712-do-not-prefix-enum-values-with-type-name.md)
 
- [CA1028：列舉儲存區應該是 Int32](../code-quality/ca1028-enum-storage-should-be-int32.md)
+ [CA1028:列舉儲存區應該是 Int32](../code-quality/ca1028-enum-storage-should-be-int32.md)
 
- [CA1027：必須以 FlagsAttribute 標記列舉](../code-quality/ca1027-mark-enums-with-flagsattribute.md)
+ [CA1027:以 FlagsAttribute 標記列舉](../code-quality/ca1027-mark-enums-with-flagsattribute.md)
 
 ## <a name="see-also"></a>另請參閱
  <xref:System.Enum?displayProperty=fullName>
-
-
-

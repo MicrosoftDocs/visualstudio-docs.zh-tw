@@ -1,26 +1,21 @@
 ---
 title: 提供給加入新項目對話方塊 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Add New Item dialog box, contributing to
 ms.assetid: b2e53175-9372-4d17-8c2b-9264c9e51e9c
 caps.latest.revision: 19
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: eb4db6bb361a47ca7c4d974950a99f4f1e9f395b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: d288f2d007fd0f923021847179326069959d3698
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51766569"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68197020"
 ---
 # <a name="contributing-to-the-add-new-item-dialog-box"></a>參與新增項目對話方塊
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -51,4 +46,3 @@ ms.locfileid: "51766569"
 ## <a name="see-also"></a>另請參閱  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsFilterAddProjectItemDlg2>   
  [通常用來擴充專案的物件 CATID](../../extensibility/internals/catids-for-objects-that-are-typically-used-to-extend-projects.md)
-

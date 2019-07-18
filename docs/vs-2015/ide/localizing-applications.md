@@ -15,12 +15,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a412016f2e51415456ee1a86a1b65fccf4d70a9b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 3d735544e034c397a06ba50e04160323c536b3d4
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54800542"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65674984"
 ---
 # <a name="localizing-applications"></a>當地語系化應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,11 +44,11 @@ ms.locfileid: "54800542"
  [以 .NET Framework 為基礎的國際應用程式簡介](../ide/introduction-to-international-applications-based-on-the-dotnet-framework.md)  
  探討使用 Visual Basic 或 Visual C# 開發國際市場軟體的基本概念。  
   
- [全球化 Windows Forms](http://msdn.microsoft.com/library/72f6cd92-83be-45ec-aa37-9cb8e3ebc3c5)  
+ [全球化 Windows Forms](https://msdn.microsoft.com/library/72f6cd92-83be-45ec-aa37-9cb8e3ebc3c5)  
  提供建立支援多種文化特性之 Windows 應用程式的相關頁面連結。  
   
- [全球化和當地語系化](http://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d)  
+ [全球化和當地語系化](https://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d)  
  提供建立支援多種文化特性之 Web 應用程式的相關頁面連結。  
   
- [開發世界性的應用程式的最佳做法](http://msdn.microsoft.com/library/f08169c7-aad8-4ec3-9a21-9ebd3b89986c)  
+ [開發世界性的應用程式的最佳做法](https://msdn.microsoft.com/library/f08169c7-aad8-4ec3-9a21-9ebd3b89986c)  
  提供適用於國際對象的程式設計相關資訊，例如設計問題和技術。

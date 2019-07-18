@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgram2::CanDetach
 ms.assetid: dcd9ab6c-49e5-447e-aa7c-89f571f4a052
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fc95cee8a463337564ddfec5322ab074e3485bc1
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 6bc8f7ac644a893049592420ad8435ac896a62b0
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56693591"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66311489"
 ---
 # <a name="idebugprogram2candetach"></a>IDebugProgram2::CanDetach
 決定偵錯引擎 (DE) 可以中斷連結程式。

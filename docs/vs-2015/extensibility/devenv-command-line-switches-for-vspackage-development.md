@@ -1,14 +1,9 @@
 ---
 title: 適用於 VSPackage 開發的 Devenv 命令列參數 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - /setup command line switch
 - /resetskippkgs command line switch
@@ -21,13 +16,13 @@ helpviewer_keywords:
 ms.assetid: d65d2c04-dd84-42b0-b956-555b11f5a645
 caps.latest.revision: 17
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 97900d5d23fae8f097ce5f2951f9fb13866f2a1e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 97ce429a7140d7b95393c2dcb8b34491b3adfefa
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51749128"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68185284"
 ---
 # <a name="devenv-command-line-switches-for-vspackage-development"></a>適用於 VSPackage 開發的 Devenv 命令列參數
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,11 +31,11 @@ ms.locfileid: "51749128"
   
  工作包括：  
   
--   在部署應用程式從 IDE 外的預先設計好組態。  
+- 在部署應用程式從 IDE 外的預先設計好組態。  
   
--   自動建置專案使用預設組建設定，或偵錯組態。  
+- 自動建置專案使用預設組建設定，或偵錯組態。  
   
--   在 IDE 外部，全部從載入在特定組態中，IDE。 此外，您可以自訂啟動 IDE。  
+- 在 IDE 外部，全部從載入在特定組態中，IDE。 此外，您可以自訂啟動 IDE。  
   
 ## <a name="guidelines-for-switches"></a>參數的指導方針  
  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 文件會說明使用者層級 devenv 命令列參數。 如需詳細資訊，請參閱 < [Devenv 命令列參數](../ide/reference/devenv-command-line-switches.md)。 Devenv 也支援搭配 VSPackage 開發、 部署和偵錯時非常實用的其他命令列參數。  
@@ -55,4 +50,3 @@ ms.locfileid: "51749128"
 ## <a name="see-also"></a>另請參閱  
  [加入命令列參數](../extensibility/adding-command-line-switches.md)   
  [Devenv 命令列參數](../ide/reference/devenv-command-line-switches.md)
-

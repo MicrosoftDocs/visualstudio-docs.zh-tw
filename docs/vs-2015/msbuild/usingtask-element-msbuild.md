@@ -19,17 +19,16 @@ caps.latest.revision: 27
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: be3b993034ef9ab8d39b254cf3f4be1fdebbb106
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: bf2882120f2e4c27e33b105585ba56261122055d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54769122"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445650"
 ---
 # <a name="usingtask-element-msbuild"></a>UsingTask 項目 (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 將 [Task](../msbuild/task-element-msbuild.md) 元素中參考的工作對應至包含工作實作的組件。  
   
  \<Project>  
@@ -49,7 +48,7 @@ ms.locfileid: "54769122"
   
 ### <a name="attributes"></a>屬性  
   
-|屬性|描述|  
+|屬性|說明|  
 |---------------|-----------------|  
 |`AssemblyName`|需要 `AssemblyName` 屬性或 `AssemblyFile` 屬性。<br /><br /> 要載入之組件的名稱。 `AssemblyName` 屬性接受強式名稱組件，雖然不需要強式名稱。 使用這個屬性就相當於使用 .NET 中的 <xref:System.Reflection.Assembly.Load%2A> 方法載入組件。<br /><br /> 如果使用 `AssemblyFile` 屬性，則您無法使用這個屬性。|  
 |`AssemblyFile`|需要 `AssemblyName` 或 `AssemblyFile` 屬性。<br /><br /> 組件的檔案路徑。 此屬性接受完整路徑或相對路徑。 相對路徑相對於專案檔案或目標檔案的目錄位置，其中會宣告 `UsingTask` 項目。 使用這個屬性就相當於使用 .NET 中的 <xref:System.Reflection.Assembly.LoadFrom%2A> 方法載入組件。<br /><br /> 如果使用 `AssemblyName` 屬性，則您無法使用這個屬性。|  
@@ -59,14 +58,14 @@ ms.locfileid: "54769122"
   
 ### <a name="child-elements"></a>子元素  
   
-|元素|描述|  
+|元素|說明|  
 |-------------|-----------------|  
 |[ParameterGroup](../msbuild/parametergroup-element.md)|在指定的 `TaskFactory` 產生之工作上顯示的參數集。|  
 |[Task](../msbuild/task-element-msbuild.md)|傳遞至 `TaskFactory` 以產生工作之執行個體的資料。|  
   
 ### <a name="parent-elements"></a>父項目  
   
-|元素|描述|  
+|元素|說明|  
 |-------------|-----------------|  
 |[專案](../msbuild/project-element-msbuild.md)|[!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 專案檔案的必要根項目。|  
   
@@ -74,7 +73,7 @@ ms.locfileid: "54769122"
  如果明確或透過匯入的專案檔案出現在專案檔案中，則可以在 `UsingTask` 項目的任何位置參考環境變數、命令列屬性和專案層級屬性。 如需詳細資訊，請參閱[工作](../msbuild/msbuild-tasks.md)。  
   
 > [!NOTE]
->  如果 `UsingTask` 項目來自全域註冊 MSBuild 引擎的其中一個 .tasks 檔案，則專案層級屬性沒有任何意義。 專案層級屬性對於 MSBuild 而言不是全域的。  
+> 如果 `UsingTask` 項目來自全域註冊 MSBuild 引擎的其中一個 .tasks 檔案，則專案層級屬性沒有任何意義。 專案層級屬性對於 MSBuild 而言不是全域的。  
   
  在 MSBuild 4.0 中，可以從 .overridetask 檔案載入使用的工作。  
   

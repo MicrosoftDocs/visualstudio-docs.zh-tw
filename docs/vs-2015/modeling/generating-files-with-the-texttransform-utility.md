@@ -1,12 +1,9 @@
 ---
 title: 使用 TextTransform 公用程式產生檔案 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - text templates, TextTransform utility
 - TextTransform.exe
@@ -14,13 +11,13 @@ ms.assetid: 06a48235-fe02-403e-a1cf-2ae70b4db62f
 caps.latest.revision: 43
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: e7dbe189c9b46c10dc7bac5da4b87457d7c6ecbf
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 607eda7550819e4150f026a0671ed744ba9c10a7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49227444"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63427049"
 ---
 # <a name="generating-files-with-the-texttransform-utility"></a>使用 TextTransform 公用程式產生檔案
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +25,7 @@ ms.locfileid: "49227444"
 TextTransform.exe 是命令列工具，可用來轉換文字範本。 當您呼叫 TextTransform.exe 時，您可以指定文字範本檔案的名稱做為引數。 TextTransform.exe 呼叫文字轉換引擎，並處理文字範本。 TextTransform.exe 通常會從指令碼呼叫。 不過，它通常不需要，因為在 Visual Studio 中或在建置流程中，您可以執行文字轉換。  
   
 > [!NOTE]
->  如果您想要執行建置程序的一部分的文字轉換，請考慮使用 MSBuild 的文字轉換工作。 如需詳細資訊，請參閱 <<c0> [ 建置流程中的程式碼產生](../modeling/code-generation-in-a-build-process.md)。 中的電腦上[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]已安裝，您也可以撰寫應用程式或[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]可以轉換文字範本的延伸模組。 如需詳細資訊，請參閱 <<c0> [ 藉由使用自訂主機處理文字範本](../modeling/processing-text-templates-by-using-a-custom-host.md)。  
+> 如果您想要執行建置程序的一部分的文字轉換，請考慮使用 MSBuild 的文字轉換工作。 如需詳細資訊，請參閱 <<c0> [ 建置流程中的程式碼產生](../modeling/code-generation-in-a-build-process.md)。 中的電腦上[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]已安裝，您也可以撰寫應用程式或[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]可以轉換文字範本的延伸模組。 如需詳細資訊，請參閱 <<c0> [ 藉由使用自訂主機處理文字範本](../modeling/processing-text-templates-by-using-a-custom-host.md)。  
   
  TextTransform.exe 位於下列目錄：  
   
@@ -64,6 +61,3 @@ TextTransform [<options>] <templateName>
 |在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 方案中產生檔案。|[使用 T4 文字範本在設計階段產生程式碼](../modeling/design-time-code-generation-by-using-t4-text-templates.md)|  
 |撰寫指示詞處理器，以轉換您專屬的資料來源。|[自訂 T4 文字轉換](../modeling/customizing-t4-text-transformation.md)|  
 |撰寫文字範本化主應用程式，可讓您叫用您自己的應用程式從文字範本。|[使用自訂主機處理文字範本](../modeling/processing-text-templates-by-using-a-custom-host.md)|
-
-
-

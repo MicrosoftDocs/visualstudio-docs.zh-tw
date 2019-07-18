@@ -1,14 +1,9 @@
 ---
-title: CA1823： 避免包含未使用的私用欄位 |Microsoft Docs
-ms.custom: ''
+title: CA1823:避免未使用的私用欄位 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - AvoidUnusedPrivateFields
 - CA1823
@@ -20,14 +15,14 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: e729bb95f6b36afb4910ac6d03636c239994ae34
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 32bf1596e4994f3cfdb2df179bb5d7f1a743f289
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49813488"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68201647"
 ---
-# <a name="ca1823-avoid-unused-private-fields"></a>CA1823：避免包含未使用的私用欄位
+# <a name="ca1823-avoid-unused-private-fields"></a>CA1823:避免包含未使用的私用欄位
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -50,13 +45,10 @@ ms.locfileid: "49813488"
  它可安全地隱藏此規則的警告。
 
 ## <a name="related-rules"></a>相關的規則
- [CA1812：避免使用未執行個體化的內部類別](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md)
+ [CA1812:避免使用未執行個體化的內部類別](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md)
 
- [CA1801：必須檢閱未使用的參數](../code-quality/ca1801-review-unused-parameters.md)
+ [CA1801： 必須檢閱未使用的參數](../code-quality/ca1801-review-unused-parameters.md)
 
- [CA1804：必須移除未使用的區域變數](../code-quality/ca1804-remove-unused-locals.md)
+ [CA1804： 必須移除未使用的區域變數](../code-quality/ca1804-remove-unused-locals.md)
 
- [CA1811：避免使用未呼叫的私用程式碼](../code-quality/ca1811-avoid-uncalled-private-code.md)
-
-
-
+ [CA1811:避免使用未呼叫的私用程式碼](../code-quality/ca1811-avoid-uncalled-private-code.md)

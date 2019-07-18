@@ -1,11 +1,8 @@
 ---
 title: 主題組態對話方塊 （舊版） |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - System.Workflow.ComponentModel.Design.ThemeConfigurationDialog.UI
@@ -16,13 +13,13 @@ ms.assetid: 9e6d182a-c4d9-4e71-b2b9-02f675fc2b29
 caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: d8cd8427bf239b1f99d339f822800c8e9c3f5003
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 825ccbf0750c1b8ac07fe02ea87ae6eddee4f455
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49223948"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62976744"
 ---
 # <a name="theme-configuration-dialog-box-legacy"></a>主題組態對話方塊 (舊版)
 本主題描述如何使用**konfigurace Motivu**對話方塊中，在舊版[!INCLUDE[wfd1](../includes/wfd1-md.md)]。 當您需要以 [!INCLUDE[wfd2](../includes/wfd2-md.md)] 或 [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] 為目標時，請使用舊版 [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)]。  
@@ -38,7 +35,7 @@ ms.locfileid: "49223948"
 |**佈景主題名稱：**|識別在佈景主題的名稱[佈景主題，工作流程設計工具、 選項對話方塊 （舊版）](../workflow-designer/themes-workflow-designer-options-dialog-box-legacy.md)。 為新主題產生可變更的名稱。|  
 |**主題位置：**|主題檔案的檔案名稱和路徑。 根據已產生的主題名稱為新主題產生可變更的檔案名稱。 如果您變更已產生的主題名稱，可能需要變更檔案名稱以配合主題名稱。|  
 |**...**|按一下可選取儲存工作流程主題檔案的位置，副檔名為 .wtm。 中會顯示選取的路徑**佈景主題位置**文字方塊。|  
-|**選取設計工具，並設定屬性：**|左窗格會列出可自訂其主題的活動樹狀檢閱。 在樹狀檢視中選取活動後，會在樹狀檢視窗格右側的屬性窗格中顯示活動的主題屬性。 按一下屬性可變更其值。|  
+|**選取設計工具，並設定屬性：**|左窗格會列出可自訂其主題的活動樹狀檢視。 在樹狀檢閱中選取活動後，會在樹狀檢閱窗格右側的屬性窗格中顯示活動的主題屬性。 按一下屬性可變更其值。|  
 |**預覽**|按一下會顯示可預覽屬性變更效果的視窗。|  
   
 ## <a name="see-also"></a>另請參閱  

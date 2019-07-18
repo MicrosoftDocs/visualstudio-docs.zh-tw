@@ -1,14 +1,9 @@
 ---
 title: SccDiff 函式 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - SccDiff
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: d49bc8c5-f631-4153-9d3c-feb3564da305
 caps.latest.revision: 17
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: ed4ca5cefa45f041e4285b00d7a2d9682e6565a0
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: aa5ea0a269cdbfe678328dc652b4177bdc667b99
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51795748"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432470"
 ---
 # <a name="sccdiff-function"></a>SccDiff 函式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,7 +46,7 @@ SCCRTN SccDiff(
  lpFileName  
  [in]差異要求的檔案名稱。  
   
- Stored  
+ fOptions  
  [in]命令的旗標。 如需詳細資訊，請參閱 < 備註 >。  
   
  pvOptions  
@@ -79,7 +74,7 @@ SCCRTN SccDiff(
  當做效能最佳化，原始檔控制外掛程式可能會使用總和檢查碼或而不是呼叫的逐位元組比較時間戳記為基礎的替代方案`SCC_DIFF_CONTENTS`： 這些形式的比較會很明顯地更快但較不可靠。 並非所有的原始檔控制系統可能會支援這些替代的比較方法，而外掛程式可能切換回內容比較。 所有的原始檔控制外掛程式至少必須支援的內容比較。  
   
 > [!NOTE]
->  快速差異旗標互斥。 能夠傳遞任何旗標，但同時傳遞多個無效。 `SCC_DIFF_QUICK_DIFF`這結合了所有的旗標的遮罩可以用來測試，但它應該永遠不會做為參數傳遞。  
+> 快速差異旗標互斥。 能夠傳遞任何旗標，但同時傳遞多個無效。 `SCC_DIFF_QUICK_DIFF`這結合了所有的旗標的遮罩可以用來測試，但它應該永遠不會做為參數傳遞。  
   
 |`fOption`|意義|  
 |---------------|-------------|  
@@ -91,4 +86,3 @@ SCCRTN SccDiff(
   
 ## <a name="see-also"></a>另請參閱  
  [原始檔控制外掛程式 API 函式](../extensibility/source-control-plug-in-api-functions.md)
-

@@ -1,14 +1,9 @@
 ---
 title: 提供可用命令 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - menus [Visual Studio SDK], commands
 - best practices, menu and toolbar commands
@@ -17,22 +12,22 @@ helpviewer_keywords:
 ms.assetid: 3ffc4312-c6db-4759-a946-a4bb85f4a17a
 caps.latest.revision: 36
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 00ed8231641718b6d0dce8d535b0c43e40b83dd8
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: cab4244fbf9173895159a4b104260006fc93f0c2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51783034"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436254"
 ---
 # <a name="making-commands-available"></a>提供可用的命令
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 當多個 Vspackage 加入至 Visual Studio 時，使用者介面 (UI) 可能會變得過擁擠，使用命令。 您可以設計您的套件，以協助減少此問題，如下：  
   
--   程式封裝，讓它在使用者時才會載入需要它。  
+- 程式封裝，讓它在使用者時才會載入需要它。  
   
--   程式封裝，使其命令才會顯示它們可能需要整合式的開發環境 (IDE) 的目前狀態的內容中。  
+- 程式封裝，使其命令才會顯示它們可能需要整合式的開發環境 (IDE) 的目前狀態的內容中。  
   
 ## <a name="delayed-loading"></a>延遲載入  
  若要啟用的一般方式延遲載入是設計的 VSPackage，讓其命令會顯示在 UI 中，但直到使用者按一下其中一個命令，將不載入封裝本身。 若要這麼做，在.vsct 檔案中，建立不有任何命令旗標的命令。  
@@ -99,14 +94,14 @@ ms.locfileid: "51783034"
 ### <a name="custom-context-guids"></a>自訂內容的 Guid  
  如果未定義的 GUID 不適當的命令內容中，您可以定義在 VSPackage 中，並再進行程式設計，讓它成為作用中或非使用中，視需要控制命令的可見性。 使用<xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection>服務：  
   
--   註冊內容的 Guid (藉由呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.GetCmdUIContextCookie%2A>方法)。  
+- 註冊內容的 Guid (藉由呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.GetCmdUIContextCookie%2A>方法)。  
   
--   取得內容的狀態`GUID`(藉由呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.IsCmdUIContextActive%2A>方法)。  
+- 取得內容的狀態`GUID`(藉由呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.IsCmdUIContextActive%2A>方法)。  
   
--   開啟內容`GUID`s 開啟和關閉 (藉由呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.SetCmdUIContext%2A>方法)。  
+- 開啟內容`GUID`s 開啟和關閉 (藉由呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.SetCmdUIContext%2A>方法)。  
   
     > [!CAUTION]
-    >  請確定，VSPackage 不會影響任何現有內容 GUID 的狀態因為其他 Vspackage 可能取決於它們。  
+    > 請確定，VSPackage 不會影響任何現有內容 GUID 的狀態因為其他 Vspackage 可能取決於它們。  
   
 ## <a name="example"></a>範例  
  VSPackage 命令的下列範例會示範動態可視性由命令內容管理，而不必載入 VSPackage 的命令。  
@@ -156,4 +151,3 @@ ms.locfileid: "51783034"
  [Vspackage 如何新增使用者介面項目](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
  [在 Vspackage 中路由傳送命令](../../extensibility/internals/command-routing-in-vspackages.md)   
  [以動態方式加入功能表項目](../../extensibility/dynamically-adding-menu-items.md)
-

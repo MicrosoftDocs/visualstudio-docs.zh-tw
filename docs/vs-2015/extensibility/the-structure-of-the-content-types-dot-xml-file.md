@@ -1,14 +1,9 @@
 ---
 title: 結構的 [Content_types].xml 檔案 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - content_types
 - content types
@@ -17,13 +12,13 @@ helpviewer_keywords:
 ms.assetid: 9c399598-b9fa-4da7-84b5-defbf82e9335
 caps.latest.revision: 9
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: d5892ab545c41f7d58f0d097f3d27c90c090f0ff
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: e94e8cd065908671446486d2ec00e167d8fb4f4e
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51736582"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697101"
 ---
 # <a name="the-structure-of-the-contenttypesxml-file"></a>結構的 [Content_types].xml 檔案
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,14 +26,14 @@ ms.locfileid: "51736582"
 包含在 VSIX 封裝的內容類型的相關資訊。 Visual Studio 安裝套件，請使用 [Content_Types].xml 檔案，但它不會安裝檔案本身。  
   
 > [!NOTE]
->  雖然本主題只適用於 VSIX 封裝中所使用的 [有效].xml 檔案，但是 [Content_Types].xml 檔案類型會是一部分*開放封裝慣例 (OPC)* 標準。 如需詳細資訊，請參閱 < [OPC: 新標準的封裝資料](http://go.microsoft.com/fwlink/?LinkID=148207)MSDN 網站上。  
+> 雖然本主題只適用於 VSIX 封裝中所使用的 [有效].xml 檔案，但是 [Content_Types].xml 檔案類型會是一部分*開放封裝慣例 (OPC)* 標準。 如需詳細資訊，請參閱[OPC:新標準的封裝您的資料](http://go.microsoft.com/fwlink/?LinkID=148207)MSDN 網站上。  
   
 ## <a name="attributes-and-elements"></a>屬性和項目  
  下列各節描述的根項目和其屬性和子項目。  
   
 ### <a name="root-element"></a>根項目  
   
-|元素|描述|  
+|項目|描述|  
 |-------------|-----------------|  
 |`Types`|包含列舉 VSIX 封裝中的檔案類型的子項目。|  
   
@@ -57,7 +52,7 @@ ms.locfileid: "51736582"
 ### <a name="child-elements"></a>子元素  
  `Types`項目可以包含任意數目的`Default`項目。  
   
-|元素|描述|  
+|項目|描述|  
 |-------------|-----------------|  
 |`Default`|描述 VSIX 封裝中的內容類型。 在封裝中的每個檔案類型必須有它自己`Default`項目。|  
   
@@ -78,10 +73,10 @@ ms.locfileid: "51736582"
 |xml|text/xml|  
 |vsixmanifest|text/xml|  
 |htm 或 html|text/html|  
-|rtf|應用程式 /rtf|  
-|pdf|應用程式/pdf|  
+|rtf|application/rtf|  
+|pdf|application/pdf|  
 |gif|image/gif|  
-|jpg 或 jpeg|映像/jpg|  
+|jpg 或 jpeg|image/jpg|  
 |Tiff|tiff 影像 /|  
 |vsix|應用程式/郵遞區號|  
 |zip|應用程式/郵遞區號|  
@@ -108,6 +103,5 @@ ms.locfileid: "51736582"
   
 ## <a name="see-also"></a>另請參閱  
  [VSIX 封裝的結構](../extensibility/anatomy-of-a-vsix-package.md)   
- [VSIX 延伸結構描述 1.0 參考](http://msdn.microsoft.com/en-us/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)   
- [OPC： 新的標準封裝資料](http://go.microsoft.com/fwlink/?LinkID=148207)
-
+ [VSIX 延伸結構描述 1.0 參考](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)   
+ [OPC:新的標準封裝資料](http://go.microsoft.com/fwlink/?LinkID=148207)

@@ -1,13 +1,8 @@
 ---
 title: 偵錯工具中的運算式 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.expressions
@@ -31,13 +26,13 @@ ms.assetid: 70f9b531-44c7-4d77-980d-5eddbf2bff41
 caps.latest.revision: 30
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: cf75965a9be7c8e2a9a09cc43fa6eec632d6bf90
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 3999737a2fad04c9b513722ae11608574a72c410
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51722231"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68158488"
 ---
 # <a name="expressions-in-the-debugger"></a>偵錯工具中的運算式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -99,7 +94,7 @@ int main()
   
 ```  
   
-###  <a name="BKMK_Using_debugger_intrinisic_functions_to_maintain_state"></a> 使用偵錯工具內建函式維持狀態  
+### <a name="BKMK_Using_debugger_intrinisic_functions_to_maintain_state"></a> 使用偵錯工具內建函式維持狀態  
  偵錯工具內建函式可讓您呼叫運算式中的某些 C/C++ 函式，而不需要變更應用程式的狀態。  
   
  偵錯工具內建函式：  
@@ -123,36 +118,36 @@ int main()
   
 ## <a name="ccli---unsupported-expressions"></a>C++/CLI - 不支援的運算式  
   
--   不支援包含指標的轉換 (cast)，或使用者定義的轉換。  
+- 不支援包含指標的轉換 (cast)，或使用者定義的轉換。  
   
--   不支援物件比較和指派。  
+- 不支援物件比較和指派。  
   
--   不支援多載的運算子和多載函式。  
+- 不支援多載的運算子和多載函式。  
   
--   不支援 Boxing 和 unboxing。  
+- 不支援 Boxing 和 unboxing。  
   
--   不支援`Sizeof` 運算子。  
+- 不支援`Sizeof` 運算子。  
   
-## <a name="c---unsupported-expressions"></a>c# - 不支援的運算式  
+## <a name="c---unsupported-expressions"></a>C# - 不支援的運算式  
   
 ### <a name="dynamic-objects"></a>動態物件  
  您可以在偵錯工具運算式中使用靜態設定類型為動態的變數。 在 [監看式] 視窗中評估實作 <xref:System.Dynamic.IDynamicMetaObjectProvider> 的物件時，會加入 [動態檢視] 節點。 [動態檢視] 節點會顯示物件成員，但不允許編輯成員的值。  
   
  以下是不支援的動態物件功能：  
   
--   複合運算子 `+=`、 `-=`、 `%=`、 `/=`和 `*=`  
+- 複合運算子 `+=`、 `-=`、 `%=`、 `/=`和 `*=`  
   
--   多種轉型，包括數值轉型和類型引數轉型  
+- 多種轉型，包括數值轉型和類型引數轉型  
   
--   具兩個以上引數的方法呼叫  
+- 具兩個以上引數的方法呼叫  
   
--   具有兩個以上引數的 getter 屬性  
+- 具有兩個以上引數的 getter 屬性  
   
--   具有引數的 setter 屬性  
+- 具有引數的 setter 屬性  
   
--   指派給索引子  
+- 指派給索引子  
   
--   布林運算子 `&&` 和 `||`  
+- 布林運算子 `&&` 和 `||`  
   
 ### <a name="anonymous-methods"></a>匿名方法  
  不支援建立新的匿名方法。  
@@ -164,19 +159,19 @@ int main()
   
  以下是不支援的動態物件功能：  
   
--   複合運算子 `+=`、 `-=`、 `%=`、 `/=`和 `*=`  
+- 複合運算子 `+=`、 `-=`、 `%=`、 `/=`和 `*=`  
   
--   多種轉型，包括數值轉型和類型引數轉型  
+- 多種轉型，包括數值轉型和類型引數轉型  
   
--   具兩個以上引數的方法呼叫  
+- 具兩個以上引數的方法呼叫  
   
--   具有兩個以上引數的 getter 屬性  
+- 具有兩個以上引數的 getter 屬性  
   
--   具有引數的 setter 屬性  
+- 具有引數的 setter 屬性  
   
--   指派給索引子  
+- 指派給索引子  
   
--   布林運算子 `&&` 和 `||`  
+- 布林運算子 `&&` 和 `||`  
   
 ### <a name="local-constants"></a>區域常數  
  不支援區域常數。  
@@ -189,43 +184,38 @@ int main()
   
 ### <a name="unsupported-keywords"></a>不支援的關鍵字  
   
--   `AddressOf`  
+- `AddressOf`  
   
--   `End`  
+- `End`  
   
--   `Error`  
+- `Error`  
   
--   `Exit`  
+- `Exit`  
   
--   `Goto`  
+- `Goto`  
   
--   `On Error`  
+- `On Error`  
   
--   `Resume`  
+- `Resume`  
   
--   `Return`  
+- `Return`  
   
--   `Select/Case`  
+- `Select/Case`  
   
--   `Stop`  
+- `Stop`  
   
--   `SyncLock`  
+- `SyncLock`  
   
--   `Throw`  
+- `Throw`  
   
--   `Try/Catch/Finally`  
+- `Try/Catch/Finally`  
   
--   `With`  
+- `With`  
   
--   命名空間或模組層級關鍵字，例如 `End Sub` 或 `Module`。  
+- 命名空間或模組層級關鍵字，例如 `End Sub` 或 `Module`。  
   
 ## <a name="see-also"></a>另請參閱  
- [C + + 中的格式規範](../debugger/format-specifiers-in-cpp.md)   
+ [C++ 中的格式規範](../debugger/format-specifiers-in-cpp.md)   
  [Context Operator (C++)](../debugger/context-operator-cpp.md)   
  [C# 中的格式規範](../debugger/format-specifiers-in-csharp.md)   
  [虛擬變數](../debugger/pseudovariables.md)
-
-
-
-
-

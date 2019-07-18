@@ -8,17 +8,17 @@ helpviewer_keywords:
 - SccStatus enumerator
 - file status code enumerator
 ms.assetid: 5c37876b-c83c-4ca1-837b-57cd465a879a
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 50312caddf0ce2b5c64d1ec83e1707e2e0ee086e
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 94bd9ff93872139fc056c4c8bb7a59191616919e
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56713473"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66342694"
 ---
 # <a name="file-status-code-enumerator"></a>檔案狀態碼列舉值
 `SccStatus`列舉值包含具名的常數值會指定在原始檔控制系統中的檔案的狀態。 這個列舉型別由[SccQueryInfo](../extensibility/sccqueryinfo-function.md)並`POPLISTFUNC`回呼函式 (請參閱[POPLISTFUNC](../extensibility/poplistfunc.md)如需詳細資訊)。

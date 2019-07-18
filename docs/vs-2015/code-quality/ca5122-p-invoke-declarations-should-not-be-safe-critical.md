@@ -1,25 +1,20 @@
 ---
 title: CA5122 P-invoke 宣告不可為安全關鍵 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 ms.assetid: f2581a6d-2a0e-40c1-b600-f5dc70909200
 caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: ad12cf02ebe237d690e0f10696840267d90d9070
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: eff316ac6f5d73e157e3dbef5126195bd0d62878
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49904450"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68201481"
 ---
 # <a name="ca5122-pinvoke-declarations-should-not-be-safe-critical"></a>CA5122 P/Invoke 宣告不可為安全關鍵
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -73,6 +68,3 @@ class C
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
  請勿隱藏此規則的警告。
-
-
-

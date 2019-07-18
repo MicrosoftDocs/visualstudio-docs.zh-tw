@@ -6,17 +6,20 @@ helpviewer_keywords:
 - GetEngineFilter
 - IDebugProcess3::GetEngineFilter
 ms.assetid: ccb7ecb0-f189-4e80-b5b2-221a095e01f5
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 30dfd7b9605cf26f5cc562e6768d1f035f6b484e
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: e2b468f28e50b77edf4b35fbb7274767f773bd56
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56714305"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66313921"
 ---
 # <a name="idebugprocess3getenginefilter"></a>IDebugProcess3::GetEngineFilter
 擷取可用的偵錯引擎的唯一識別碼的陣列。
@@ -35,10 +38,9 @@ public int GetEngineFilter(
 );
 ```
 
-#### <a name="parameters"></a>參數
- `pEngineArray`
-
- [out]參考結構，其中包含偵錯引擎的唯一識別碼。
+## <a name="parameters"></a>參數
+`pEngineArray`\
+[out]參考結構，其中包含偵錯引擎的唯一識別碼。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

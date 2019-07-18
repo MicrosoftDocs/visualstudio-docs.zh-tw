@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumCodePaths2::GetCount
 ms.assetid: 988c5092-fcc5-43a1-a94c-c261edd56ebf
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9059a080d9d128517f636b00a7a8b285c5be1dc9
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 9356b58131e8478840d68a3965d0f6fabf314a55
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56688494"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66310062"
 ---
 # <a name="ienumcodepaths2getcount"></a>IEnumCodePaths2::GetCount
 列舉中傳回的項目數。
@@ -36,10 +39,9 @@ int GetCount(
 );
 ```
 
-#### <a name="parameters"></a>參數
- `pcelt`
-
- [out]列舉中傳回的項目數。
+## <a name="parameters"></a>參數
+`pcelt`\
+[out]列舉中傳回的項目數。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

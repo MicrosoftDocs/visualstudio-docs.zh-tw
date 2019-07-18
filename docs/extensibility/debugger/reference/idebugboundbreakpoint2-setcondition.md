@@ -8,17 +8,20 @@ helpviewer_keywords:
 - SetCondition method
 - IDebugBoundBreakpoint2::SetCondition method
 ms.assetid: 5d366876-efed-43d0-8ea1-dfdb009cbfac
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1dcec65b22c728384fb199eecf461ec61317e348
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 93109204a02b808c69bed242665bb6e373d6fe7d
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56691679"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66337437"
 ---
 # <a name="idebugboundbreakpoint2setcondition"></a>IDebugBoundBreakpoint2::SetCondition
 設定或變更與此繫結中斷點相關聯的條件。
@@ -37,10 +40,9 @@ int SetCondition( 
 );
 ```
 
-#### <a name="parameters"></a>參數
- `bpCondition`
-
- [in]值，以從[BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md)列舉，描述此狀況。
+## <a name="parameters"></a>參數
+`bpCondition`\
+[in]值，以從[BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md)列舉，描述此狀況。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。 傳回`E_BP_DELETED`如果繫結的中斷點物件的狀態設為`BPS_DELETED`(屬於[BP_STATE](../../../extensibility/debugger/reference/bp-state.md)列舉型別)。

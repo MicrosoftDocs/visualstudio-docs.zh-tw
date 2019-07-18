@@ -1,12 +1,9 @@
 ---
-title: 逐步解說： 建立自訂文字範本主應用程式 |Microsoft Docs
-ms.custom: ''
+title: 逐步解說：建立自訂文字範本主機 |Microsoft Docs
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - walkthroughs [text templates], custom host
 - text templates, custom host walkthrough
@@ -14,15 +11,15 @@ ms.assetid: d00bc366-65ed-4229-885a-196ef9625f05
 caps.latest.revision: 53
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: ee1a6ebfdcad2f9ec50c5a76d5c14cd44028eeb7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 1aaff1fa5d31fe22c8a0b079498ffc07a11b9a7e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49817271"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446739"
 ---
-# <a name="walkthrough-creating-a-custom-text-template-host"></a>逐步解說：建立自訂文字範本主機
+# <a name="walkthrough-creating-a-custom-text-template-host"></a>逐步解說：建立自訂文字範本主應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 A*文字範本*<em>主機</em>提供的環境，可讓*文字範本轉換引擎*執行。 這個主應用程式負責管理引擎與檔案系統之間的互動。 引擎或*指示詞處理器*，需要檔案或組件可以從主應用程式要求資源。 主機便會搜尋目錄和全域組件快取來找出要求的資源。 如需詳細資訊，請參閱 <<c0> [ 文字範本轉換流程](../modeling/the-text-template-transformation-process.md)。  
@@ -30,35 +27,35 @@ A*文字範本*<em>主機</em>提供的環境，可讓*文字範本轉換引擎*
  您可以撰寫自訂主應用程式如果您想要使用*文字範本轉換*以外的功能[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]或如果您想要將該功能整合到自訂工具。 若要建立自訂主機，您必須建立一個繼承自 <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost> 的類別。 如需個別方法的說明文件，請參閱 <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>。  
   
 > [!WARNING]
->  如果您要撰寫 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 擴充功能或封裝，請考慮使用文字範本化服務，而不是建立自己的主應用程式。 如需詳細資訊，請參閱 <<c0> [ 叫用 VS 擴充功能中的文字轉換](../modeling/invoking-text-transformation-in-a-vs-extension.md)。  
+> 如果您要撰寫 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 擴充功能或封裝，請考慮使用文字範本化服務，而不是建立自己的主應用程式。 如需詳細資訊，請參閱 <<c0> [ 叫用 VS 擴充功能中的文字轉換](../modeling/invoking-text-transformation-in-a-vs-extension.md)。  
   
  本逐步解說所述的工作包括下列各項：  
   
--   建立自訂文字範本主應用程式。  
+- 建立自訂文字範本主應用程式。  
   
--   測試自訂主應用程式。  
+- 測試自訂主應用程式。  
   
 ## <a name="prerequisites"></a>必要條件  
  若要完成這個逐步解說，您必須具有下列各項：  
   
--   Visual Studio 2010 (含) 以後版本  
+- Visual Studio 2010 (含) 以後版本  
   
--   Visual Studio SDK  
+- Visual Studio SDK  
   
 ## <a name="creating-a-custom-text-template-host"></a>建立自訂文字範本主應用程式  
  在本逐步解說中，您將會在可從命令列呼叫執行的應用程式 (Application) 中建立自訂主應用程式 (Custom Host)。 此應用程式會接受文字範本檔做為引數、讀取範本、呼叫引擎以轉換範本，然後在命令提示字元視窗中顯示發生的任何錯誤。  
   
 #### <a name="to-create-a-custom-host"></a>若要建立自訂主應用程式  
   
-1.  在 Visual Studio 中建立新的 Visual Basic 或 C# 主控台應用程式，並命名為 CustomHost。  
+1. 在 Visual Studio 中建立新的 Visual Basic 或 C# 主控台應用程式，並命名為 CustomHost。  
   
-2.  加入下列組件的參考：  
+2. 加入下列組件的參考：  
   
-    -   **Microsoft.VisualStudio.TextTemplating.\*.0**  
+    - **Microsoft.VisualStudio.TextTemplating.\*.0**  
   
-    -   **Microsoft.visualstudio.texttemplating.interfaces.10.0 （含） 及更新版本**  
+    - **Microsoft.visualstudio.texttemplating.interfaces.10.0 （含） 及更新版本**  
   
-3.  以下列程式碼取代 Program.cs 或 Module1.vb 檔案中的程式碼：  
+3. 以下列程式碼取代 Program.cs 或 Module1.vb 檔案中的程式碼：  
   
     ```csharp  
     using System;  
@@ -717,25 +714,25 @@ A*文字範本*<em>主機</em>提供的環境，可讓*文字範本轉換引擎*
     End Namespace  
     ```  
   
-4.  針對[!INCLUDE[vbprvb](../includes/vbprvb-md.md)]，開啟**專案**功能表，然後按一下**CustomHost 屬性**。 在 **啟始物件**清單中，按一下**CustomHost.Program**。  
+4. 針對[!INCLUDE[vbprvb](../includes/vbprvb-md.md)]，開啟**專案**功能表，然後按一下**CustomHost 屬性**。 在 **啟始物件**清單中，按一下**CustomHost.Program**。  
   
-5.  按一下 [ **檔案** ] 功能表上的 [ **全部儲存**]。  
+5. 在 [檔案] 功能表上按一下 [全部儲存]。  
   
-6.  在 [ **建置** ] 功能表上，按一下 [ **建置方案**]。  
+6. 在 [ **建置** ] 功能表上，按一下 [ **建置方案**]。  
   
 ## <a name="testing-the-custom-host"></a>測試自訂主應用程式  
  若要測試自訂主應用程式，請先撰寫文字範本，接著執行自訂主應用程式、將文字範本的名稱傳遞給這個主應用程式，然後確認已轉換該範本。  
   
 #### <a name="to-create-a-text-template-to-test-the-custom-host"></a>若要建立文字範本以測試自訂主應用程式  
   
-1.  建立文字檔案，並將它命名`TestTemplate.tt`。  
+1. 建立文字檔案，並將它命名`TestTemplate.tt`。  
   
      您可以使用任何文字編輯器 (例如 [記事本]) 來建立檔案。  
   
-2.  將下列內容加入至檔案中：  
+2. 將下列內容加入至檔案中：  
   
     > [!NOTE]
-    >  文字範本的程式語言與自訂主應用程式的語言不一定要相符。  
+    > 文字範本的程式語言與自訂主應用程式的語言不一定要相符。  
   
     ```csharp  
     Text Template Host Test  
@@ -775,39 +772,39 @@ A*文字範本*<em>主機</em>提供的環境，可讓*文字範本轉換引擎*
   
     ```  
   
-3.  儲存並關閉檔案。  
+3. 儲存並關閉檔案。  
   
 #### <a name="to-test-the-custom-host"></a>若要測試自訂主應用程式  
   
-1.  開啟 [命令提示字元] 視窗。  
+1. 開啟 [命令提示字元] 視窗。  
   
-2.  輸入自訂主應用程式可執行檔的路徑，但是還不要按 ENTER。  
+2. 輸入自訂主應用程式可執行檔的路徑，但是還不要按 ENTER。  
   
      例如，輸入：  
   
      `<YOUR PATH>CustomHost\bin\Debug\CustomHost.exe`  
   
     > [!NOTE]
-    >  而不是輸入位址，您可以瀏覽至 CustomHost.exe 檔中**Windows 檔案總管**然後將檔案拖曳到 [命令提示字元] 視窗。  
+    > 而不是輸入位址，您可以瀏覽至 CustomHost.exe 檔中**Windows 檔案總管**然後將檔案拖曳到 [命令提示字元] 視窗。  
   
-3.  輸入空格。  
+3. 輸入空格。  
   
-4.  輸入文字範本檔的路徑，然後按 ENTER。  
+4. 輸入文字範本檔的路徑，然後按 ENTER。  
   
      例如，輸入：  
   
      `C:\<YOUR PATH>TestTemplate.tt`  
   
     > [!NOTE]
-    >  而不是輸入位址，您可以瀏覽至 testtemplate.tt 中**Windows 檔案總管**然後將檔案拖曳到 [命令提示字元] 視窗。  
+    > 而不是輸入位址，您可以瀏覽至 testtemplate.tt 中**Windows 檔案總管**然後將檔案拖曳到 [命令提示字元] 視窗。  
   
      自訂主應用程式隨即執行並完成文字範本轉換流程。  
   
-5.  在  **Windows 檔案總管**，瀏覽至包含檔案 TestTemplate.tt 的資料夾。  
+5. 在  **Windows 檔案總管**，瀏覽至包含檔案 TestTemplate.tt 的資料夾。  
   
      該資料夾也會包含 TestTemplate1.txt 檔。  
   
-6.  開啟這個檔案來查看文字範本轉換的結果。  
+6. 開啟這個檔案來查看文字範本轉換的結果。  
   
      產生的文字輸出隨即出現，看起來如下所示：  
   
@@ -820,10 +817,7 @@ A*文字範本*<em>主機</em>提供的環境，可讓*文字範本轉換引擎*
     ```  
   
 ## <a name="next-steps"></a>後續步驟  
- 在本逐步解說中，您已經建立支援基本轉換功能的文字範本轉換主應用程式。 您可以擴充這個主應用程式，支援呼叫自訂或產生之指示詞處理器的文字範本。 如需詳細資訊，請參閱 <<c0> [ 逐步解說： 將主機連接至產生的指示詞處理器](../modeling/walkthrough-connecting-a-host-to-a-generated-directive-processor.md)。  
+ 在本逐步解說中，您已經建立支援基本轉換功能的文字範本轉換主應用程式。 您可以擴充這個主應用程式，支援呼叫自訂或產生之指示詞處理器的文字範本。 如需詳細資訊，請參閱[逐步解說：將主機連接至產生的指示詞處理器](../modeling/walkthrough-connecting-a-host-to-a-generated-directive-processor.md)。  
   
 ## <a name="see-also"></a>另請參閱  
  <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>
-
-
-

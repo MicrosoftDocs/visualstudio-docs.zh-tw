@@ -13,12 +13,12 @@ caps.latest.revision: 19
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: cebba40ee1c438e7be8ea97dcfc7050491511039
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 8058995c8ae45c40f202aaa1e788891da3eb985d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54780730"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60086783"
 ---
 # <a name="cpu-utilization-graph"></a>CPU 使用率圖形
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,13 +27,13 @@ CPU 使用率圖形顯示應用程式經過一段時間的使用率等級。 X �
   
 ## <a name="cpu-utilization-graph-colors"></a>CPU 使用率圖形色彩  
   
--   綠色表示系統中目前處理序的邏輯核心使用率。  
+- 綠色表示系統中目前處理序的邏輯核心使用率。  
   
--   淺灰色表示系統中其他處理序的邏輯核心使用率。 CPU 圖形中高百分比的淺灰色表示系統因為其他處理序而負載過重，而且您的處理序很可能會被它們先佔。 若要減少其他處理序的邏輯核心耗用量，請減少系統上執行的其他處理序數目。  
+- 淺灰色表示系統中其他處理序的邏輯核心使用率。 CPU 圖形中高百分比的淺灰色表示系統因為其他處理序而負載過重，而且您的處理序很可能會被它們先佔。 若要減少其他處理序的邏輯核心耗用量，請減少系統上執行的其他處理序數目。  
   
--   深灰色表示系統處理序的邏輯核心耗用量。 您無法直接控制這個值，但可以知道發生的時間，因為這會影響您的處理序是否能使用邏輯核心。  
+- 深灰色表示系統處理序的邏輯核心耗用量。 您無法直接控制這個值，但可以知道發生的時間，因為這會影響您的處理序是否能使用邏輯核心。  
   
--   白色表示系統上未使用的邏輯核心可用性。 如果您可以找到更多平行處理的機會，您的處理序就可以使用這些核心。  
+- 白色表示系統上未使用的邏輯核心可用性。 如果您可以找到更多平行處理的機會，您的處理序就可以使用這些核心。  
   
 ## <a name="see-also"></a>請參閱  
  [使用率檢視](../profiling/utilization-view.md)   

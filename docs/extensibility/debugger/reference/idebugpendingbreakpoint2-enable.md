@@ -8,17 +8,20 @@ helpviewer_keywords:
 - IDebugPendingBreakpoint2::Enable method
 - Enable method
 ms.assetid: 09e32d05-464b-40a6-a41d-76f2759cf2cd
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3d6498ffbad5fef4d387139b41cefc3d54468245
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: f05424cfb9e3188c3b4306ad961de24f6757e807
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56720818"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66311672"
 ---
 # <a name="idebugpendingbreakpoint2enable"></a>IDebugPendingBreakpoint2::Enable
 切換暫止中斷點的啟用的狀態。
@@ -37,10 +40,9 @@ int Enable(
 );
 ```
 
-#### <a name="parameters"></a>參數
-`fEnable`
-
- [in]設定為非零 (`TRUE`) 若要啟用暫止中斷點的行，或為零 (`FALSE`) 若要停用。
+## <a name="parameters"></a>參數
+`fEnable`\
+[in]設定為非零 (`TRUE`) 若要啟用暫止中斷點的行，或為零 (`FALSE`) 若要停用。
 
 ## <a name="return-value"></a>傳回值
 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。 傳回`E_BP_DELETED`如果中斷點已遭刪除。

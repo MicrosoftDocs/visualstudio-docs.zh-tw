@@ -8,26 +8,26 @@ ms.assetid: 0c86918b-cd63-4468-8f49-6d547a1276dc
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cdaa86e2eb7562f4a3347c942e193da22a9e256e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c378cea12ba749ee9131d13130fdbb7def84ea66
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55948832"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62823011"
 ---
 # <a name="collect-diagnostic-information-using-test-settings"></a>使用測試設定收集診斷資訊
 
-您可以在 Visual Studio 中使用「測試設定」，在執行測試時收集額外的資料。 例如，您可能想要在執行測試時錄製視訊。 診斷資料配接器可用來：
+您可以在 Visual Studio 中使用「測試設定」  ，在執行測試時收集額外的資料。 例如，您可能想要在執行測試時錄製視訊。 診斷資料配接器可用來：
 
--   收集文字格式的每個 UI 動作步驟
+- 收集文字格式的每個 UI 動作步驟
 
--   記錄每個 UI 動作以供播放之用
+- 記錄每個 UI 動作以供播放之用
 
--   收集系統資訊
+- 收集系統資訊
 
--   收集事件記錄檔資料
+- 收集事件記錄檔資料
 
--   收集 IntelliTrace 資料，協助找出無法重現的 Bug
+- 收集 IntelliTrace 資料，協助找出無法重現的 Bug
 
 診斷資料配接器也可用來變更測試電腦的行為。 例如，透過 Visual Studio 中的測試設定就可以模擬各種不同的網路拓撲瓶頸，以評估小組應用程式的效能。
 
@@ -35,7 +35,7 @@ ms.locfileid: "55948832"
 
 ## <a name="use-test-settings-with-visual-studio"></a>使用 Visual Studio 的測試設定
 
-若要使用 Visual Studio 執行您的單元測試、自動程式化 UI 測試、Web 效能測試或負載測試，您可以加入、設定及選取要在執行測試時使用的測試設定。 若要從遠端執行測試、收集資料或影響測試電腦，您必須指定要在測試設定中使用的測試控制器。 測試控制器將具有可用於測試設定中每一個角色的代理程式。
+若要使用 Visual Studio 執行您的單元測試、自動程式碼 UI 測試、Web 效能測試或負載測試，您可以加入、設定及選取要在執行測試時使用的測試設定。 若要從遠端執行測試、收集資料或影響測試電腦，您必須指定要在測試設定中使用的測試控制器。 測試控制器將具有可用於測試設定中每一個角色的代理程式。
 
 ## <a name="diagnostic-data-adapter-details"></a>診斷資料配接器詳細資料
 

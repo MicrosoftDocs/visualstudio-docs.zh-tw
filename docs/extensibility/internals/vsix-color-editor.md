@@ -3,17 +3,17 @@ title: VSIX 色彩編輯器 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 70879c5d-e0f0-4845-993c-2f4229869706
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4417761767f9796da54ea4d742646efe6eea3ac0
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 6f9c6dbcc47e4bbac4203d7ec49f563f2a85ba32
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56598306"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66332922"
 ---
 # <a name="vsix-color-editor"></a>VSIX 色彩編輯器
 Visual Studio 擴充功能色彩編輯器工具可以建立和編輯 Visual Studio 自訂色彩。 如此可以在程式碼中使用的色彩，此工具也可以產生佈景主題資源的索引鍵。 這項工具可用於讓 Visual Studio 延伸模組支援佈景主題色彩。 這項工具可以開啟.pkgdef 和.xml 檔案。 Visual Studio 佈景主題 （.vstheme 檔案） 可供使用 Visual Studio 擴充功能色彩編輯器將副檔名變更為.xml。 此外，您還可以.vstheme 檔案匯入目前的.xml 檔案。
@@ -28,13 +28,13 @@ Visual Studio 擴充功能色彩編輯器工具可以建立和編輯 Visual Stud
 
  色彩語彙基元是由四個項目組成：
 
--   **類別名稱：** 一組色彩邏輯群組。 如果已經有專屬於所需的 UI 項目或群組的 UI 元素的色彩，請使用現有的類別名稱。
+- **類別名稱：** 一組色彩邏輯群組。 如果已經有專屬於所需的 UI 項目或群組的 UI 元素的色彩，請使用現有的類別名稱。
 
--   **權杖名稱：** 設定色彩的權杖和權杖的描述性名稱。 集包括背景和前景 （文字） 的語彙基元名稱，以及其所有的狀態，而且這些應該命名為，以便您輕鬆地識別成對和它們套用到的狀態。
+- **權杖名稱：** 設定色彩的權杖和權杖的描述性名稱。 集包括背景和前景 （文字） 的語彙基元名稱，以及其所有的狀態，而且這些應該命名為，以便您輕鬆地識別成對和它們套用到的狀態。
 
--   **色彩值 （或色調）：** 所需的每個彩色的佈景主題。 一律在背景和文字色彩值組。 色彩的背景/前景配對使文字 （前景） 色彩一律可讀取在其上繪製的背景色彩。 這些色彩的連結，並且會在 UI 中一起使用。 如果背景並不適用於與文字搭配使用，不會定義前景色彩。
+- **色彩值 （或色調）：** 所需的每個彩色的佈景主題。 一律在背景和文字色彩值組。 色彩的背景/前景配對使文字 （前景） 色彩一律可讀取在其上繪製的背景色彩。 這些色彩的連結，並且會在 UI 中一起使用。 如果背景並不適用於與文字搭配使用，不會定義前景色彩。
 
--   **系統色彩的名稱：** 用於在高對比顯示的資訊。
+- **系統色彩的名稱：** 用於在高對比顯示的資訊。
 
 ## <a name="how-to-use-the-tool"></a>如何使用工具
  最大的和現有的 Visual Studio 色彩適用時，應該重複使用而不是將新的。 不過，沒有適當的色彩定義的情況下，應該建立自訂色彩將延伸模組佈景主題相容。
@@ -55,7 +55,7 @@ Visual Studio 擴充功能色彩編輯器工具可以建立和編輯 Visual Stud
 
    **步驟 1：判斷新的色彩語彙基元的分類和語彙基元名稱。**
 
-   慣用的命名配置為 VSColor **[Category] [UI 型別] [State]**。 請勿 VSColor 名稱中使用"color"這個字，因為它是多餘。
+   慣用的命名配置為 VSColor **[Category] [UI 型別] [State]** 。 請勿 VSColor 名稱中使用"color"這個字，因為它是多餘。
 
    類別目錄名稱提供邏輯分組，並應定義為窄越好。 比方說，單一工具視窗的名稱可能是類別名稱，但不是整個商務單位或專案小組名稱。 群組項目類別，可協助避免混淆之間具有相同名稱的色彩。
 

@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d1f07b293447a10a7d39e24ef42b1faedc27c7d6
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55934858"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62892399"
 ---
 # <a name="work-with-shaders"></a>使用著色器
 
@@ -35,7 +35,7 @@ ms.locfileid: "55934858"
 
 ## <a name="related-topics"></a>相關主題
 
-|標題|描述|
+|標題|說明|
 |-----------|-----------------|
 |[著色器設計工具](../designers/shader-designer.md)|描述如何使用 Visual Studio 著色器設計工具，搭配著色器一起運作。|
 |[著色器設計工具節點](../designers/shader-designer-nodes.md)|探討您可用來達成圖形效果的「著色器設計工具」節點類型。|

@@ -5,17 +5,20 @@ ms.topic: reference
 helpviewer_keywords:
 - IDebugExpressionEvaluator3::Parse2
 ms.assetid: 78099628-d600-4f76-b7c8-ee07c864af1e
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 626911d4eb9f23655ad2808e1e79ec6635cb8b00
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 308ef67bab1d91ace71a5e741a1ed998037a9868
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56678601"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66352740"
 ---
 # <a name="idebugexpressionevaluator3parse2"></a>IDebugExpressionEvaluator3::Parse2
 要剖析的運算式，指定的符號提供者和鑑定框架的位址，將轉換的運算式字串。
@@ -48,38 +51,30 @@ HRESULT Parse2 (
 );
 ```
 
-#### <a name="parameters"></a>參數
-`upstrExpression`
+## <a name="parameters"></a>參數
+`upstrExpression`\
+[in]要剖析的運算式字串。
 
- [in]要剖析的運算式字串。
+`dwFlags`\
+[in]集合[PARSEFLAGS](../../../extensibility/debugger/reference/parseflags.md)常數，以判斷要如何剖析運算式。
 
-`dwFlags`
+`nRadix`\
+[in]用來解譯任何數字資訊的基數。
 
- [in]集合[PARSEFLAGS](../../../extensibility/debugger/reference/parseflags.md)常數，以判斷要如何剖析運算式。
+`pSymbolProvider`\
+[in]符號提供者的介面。
 
-`nRadix`
+`pAddress`\
+[in]評估的畫面格的位址。
 
- [in]用來解譯任何數字資訊的基數。
+`pbstrError`\
+[out]以人類看得懂的文字，會傳回錯誤。
 
-`pSymbolProvider`
+`pichError`\
+[out]傳回字元位置開始的錯誤中的運算式字串。
 
- [in]符號提供者的介面。
-
-`pAddress`
-
- [in]評估的畫面格的位址。
-
-`pbstrError`
-
- [out]以人類看得懂的文字，會傳回錯誤。
-
-`pichError`
-
- [out]傳回字元位置開始的錯誤中的運算式字串。
-
-`ppParsedExpression`
-
- [out]在剖析的運算式會傳回[IDebugParsedExpression](../../../extensibility/debugger/reference/idebugparsedexpression.md)物件。
+`ppParsedExpression`\
+[out]在剖析的運算式會傳回[IDebugParsedExpression](../../../extensibility/debugger/reference/idebugparsedexpression.md)物件。
 
 ## <a name="return-value"></a>傳回值
 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

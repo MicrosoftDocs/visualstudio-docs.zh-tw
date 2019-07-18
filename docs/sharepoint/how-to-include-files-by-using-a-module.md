@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: cf5a7c3f7587869a30ca2f367915fba1a42ec262
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 5813a6f89062bf53f7f8c0b57b4ed3a8ef9c4edf
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56642972"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62813640"
 ---
 # <a name="how-to-include-files-by-using-a-module"></a>HOW TO：使用模組中包含的檔案
   *模組*(不到與混淆[!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)]模組) 是可讓您部署到 SharePoint 的檔案，例如 ASPX 主版頁面、 文字檔案或映像的容器。
@@ -29,31 +29,31 @@ ms.locfileid: "56642972"
 
 #### <a name="to-add-a-module"></a>若要新增模組
 
-1.  在 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 中開啟或建立 SharePoint 專案。
+1. 在 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 中開啟或建立 SharePoint 專案。
 
      如需詳細資訊，請參閱 < [SharePoint 專案和專案項目範本](../sharepoint/sharepoint-project-and-project-item-templates.md)。
 
-2.  在 **方案總管**，選擇專案節點，然後在功能表列上選擇 **專案** > **加入新項目**。
+2. 在 **方案總管**，選擇專案節點，然後在功能表列上選擇 **專案** > **加入新項目**。
 
      [新增項目] 對話方塊隨即開啟。
 
-3.  在 SharePoint 範本清單中，選擇**模組**範本，然後選擇**新增** 按鈕。
+3. 在 SharePoint 範本清單中，選擇**模組**範本，然後選擇**新增** 按鈕。
 
      這個步驟會在名為 Module1 的專案中建立一個節點。
 
-4.  在 module1 底下，刪除*Sample.txt*檔案。
+4. 在 module1 底下，刪除*Sample.txt*檔案。
 
      Sample.txt 納入所有新的模組，例如用途，且不需要。 (請注意，刪除該檔案也會移除其項目從模組*Elements.xml*檔案。)
 
-5.  如果您想要將檔案部署到 SharePoint 中的特定資料夾結構下, 建立這些資料夾中的 Module1[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]藉由選擇 Module1 節點，然後在功能表列選擇**專案**，**新增資料夾**。
+5. 如果您想要將檔案部署到 SharePoint 中的特定資料夾結構下, 建立這些資料夾中的 Module1[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]藉由選擇 Module1 節點，然後在功能表列選擇**專案**，**新增資料夾**。
 
-6.  選擇您要新增檔案，然後，在功能表列上選擇的資料夾**專案**，**加入現有項目**。
+6. 選擇您要新增檔案，然後，在功能表列上選擇的資料夾**專案**，**加入現有項目**。
 
-7.  選擇您想要部署至 SharePoint，然後選擇的一或多個檔案**新增** 按鈕。
+7. 選擇您想要部署至 SharePoint，然後選擇的一或多個檔案**新增** 按鈕。
 
      當您將檔案加入專案時，它的項目會自動加入至模組的 Elements.xml 檔案中。 部署專案時，檔案會複製到 SharePoint 伺服器上，相對於專案的根目錄，即可指定此種**檔案**項目的**Url**屬性，例如`Url="Module1/New Folder/SomeFile.doc`。 如果您想要變更檔案的部署位置，請將它移到另一個資料夾中**方案總管**或變更其**Url**設定。
 
-8.  對於您想要出現在文件庫中的任何檔案，將附加`Type="GhostableInLibrary"`屬性中其項目*Elements.xml*。 例如，套用至物件的
+8. 對於您想要出現在文件庫中的任何檔案，將附加`Type="GhostableInLibrary"`屬性中其項目*Elements.xml*。 例如，套用至物件的
 
     ```xml
     <File Path="Module1\Some Folder\SomePage.aspx" Url="Module1/Some Folder/SomePage.aspx" Type="GhostableInLibrary" />

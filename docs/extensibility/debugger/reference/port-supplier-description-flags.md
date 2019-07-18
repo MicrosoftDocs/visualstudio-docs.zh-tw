@@ -5,17 +5,20 @@ ms.topic: reference
 helpviewer_keywords:
 - PORT_SUPPLIER_DESCRIPTION_FLAGS enumeration
 ms.assetid: 5acee0ee-3a20-41c9-a7dc-0dadae6a5ba5
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1ca6f9dc8c2801a36cab5e90227df201f50d3d93
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 01cf70b473d2c430741df2021d27b3047e782b79
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56704211"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66309476"
 ---
 # <a name="portsupplierdescriptionflags"></a>PORT_SUPPLIER_DESCRIPTION_FLAGS
 
@@ -38,10 +41,9 @@ public enum enum_PORT_SUPPLIER_DESCRIPTION_FLAGS
 };
 ```
 
-## <a name="terms"></a>詞彙
+## <a name="fields"></a>欄位
 
-`PSDFLAG_SHOW_WARNING_ICON`
-
+`PSDFLAG_SHOW_WARNING_ICON`\
 如果選取，警告圖示將會顯示在 UI 中。
 
 ## <a name="remarks"></a>備註

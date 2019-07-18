@@ -11,11 +11,11 @@ ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
 ms.openlocfilehash: 1690db12318a347ac7446fb094d02308e5aa46d5
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "58160998"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "68176839"
 ---
 ## <a name="test-controller"></a>測試控制器
 

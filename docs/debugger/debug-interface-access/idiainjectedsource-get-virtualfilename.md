@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4ad241532454cf1a086f8e85c4f2e16c29c76b26
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56618649"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62828409"
 ---
 # <a name="idiainjectedsourcegetvirtualfilename"></a>IDiaInjectedSource::get_virtualFilename
 擷取指定給非檔案來源的程式碼; 的名稱也就是插入的程式碼。
@@ -38,5 +38,5 @@ HRESULT get_virtualFilename ( 
 ## <a name="return-value"></a>傳回值
  如果成功，會傳回 `S_OK`。 傳回`S_FALSE`不支援這個屬性，則為。 否則會傳回錯誤碼。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)

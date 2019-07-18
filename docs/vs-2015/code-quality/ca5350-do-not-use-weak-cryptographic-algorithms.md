@@ -1,26 +1,21 @@
 ---
-title: CA5350： 請勿使用弱式密碼編譯演算法 |Microsoft Docs
-ms.custom: ''
+title: CA5350：請勿使用弱式密碼編譯演算法 |Microsoft Docs
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 ms.assetid: 4c51bb8a-fcfa-46aa-ab61-634be84c4a7a
 caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: c22c10467c620d41e0cc73ab763a260f278f8a34
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+ms.openlocfilehash: 004b09c471ea163a17391a8ad51abcc0aefee1ed
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49234218"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430715"
 ---
-# <a name="ca5350-do-not-use-weak-cryptographic-algorithms"></a>CA5350: 請勿使用弱式密碼編譯演算法
+# <a name="ca5350-do-not-use-weak-cryptographic-algorithms"></a>CA5350：請勿使用弱式密碼編譯演算法
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||  
@@ -31,7 +26,7 @@ ms.locfileid: "49234218"
 |中斷變更|非中斷|  
   
 > [!NOTE]
->  上次於 2015 年 11 月更新此警告。  
+> 上次於 2015 年 11 月更新此警告。  
   
 ## <a name="cause"></a>原因  
  例如 <xref:System.Security.Cryptography.TripleDES> 的加密演算法，和例如 <xref:System.Security.Cryptography.SHA1> 及 <xref:System.Security.Cryptography.RIPEMD160> 的雜湊演算法，被視為弱式。  
@@ -46,9 +41,9 @@ ms.locfileid: "49234218"
 ## <a name="how-to-fix-violations"></a>如何修正違規  
  使用密碼編譯較強的選項：  
   
--   若為 TripleDES 加密，請使用 <xref:System.Security.Cryptography.Aes> 加密。  
+- 若為 TripleDES 加密，請使用 <xref:System.Security.Cryptography.Aes> 加密。  
   
--   若為 SHA1 或 RIPEMD160 雜湊函式，請使用 [SHA-2](https://msdn.microsoft.com/en-us/library/windows/desktop/aa382459.aspx) 系列 (例如 <xref:System.Security.Cryptography.SHA512>、 <xref:System.Security.Cryptography.SHA384>、 <xref:System.Security.Cryptography.SHA256>)。  
+- 若為 SHA1 或 RIPEMD160 雜湊函式，請使用 [SHA-2](https://msdn.microsoft.com/library/windows/desktop/aa382459.aspx) 系列 (例如 <xref:System.Security.Cryptography.SHA512>、 <xref:System.Security.Cryptography.SHA384>、 <xref:System.Security.Cryptography.SHA256>)。  
   
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機  
  當資料所需的保護層級不需要安全性保證時，隱藏此規則的警告。  

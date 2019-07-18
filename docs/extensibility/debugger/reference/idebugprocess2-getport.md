@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProcess2::GetPort
 ms.assetid: e39b6e5a-64eb-48cf-a53d-da4fdb968e2d
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 753a384d4873aa6b78b06853213c57a1d540a5e3
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 5e2e425cdb1663b2636769037de12001bb0d4594
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56694071"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66331579"
 ---
 # <a name="idebugprocess2getport"></a>IDebugProcess2::GetPort
 取得處理程序執行的連接埠。
@@ -36,10 +39,9 @@ int GetPort( 
 );
 ```
 
-#### <a name="parameters"></a>參數
- `ppPort`
-
- [out]傳回[IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)物件，表示處理序已啟動，在其的連接埠。
+## <a name="parameters"></a>參數
+`ppPort`\
+[out]傳回[IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)物件，表示處理序已啟動，在其的連接埠。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

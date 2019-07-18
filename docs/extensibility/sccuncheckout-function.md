@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - SccUncheckout function
 ms.assetid: 6d498b70-29c7-44b7-ae1c-7e99e488bb09
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6362025f63e4e4f470a7fe107365a59ef99e1e17
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 4d50b321f96b6759d95a6d923222e5e0a92b2ee3
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56717412"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66338464"
 ---
 # <a name="sccuncheckout-function"></a>SccUncheckout 函式
 此函式會復原先前的簽出作業，藉此將選取的檔案或檔案的內容還原到之前簽出的狀態。 對檔案進行簽出之後的所有變更都都會遺失。

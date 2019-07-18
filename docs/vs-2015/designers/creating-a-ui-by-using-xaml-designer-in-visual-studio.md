@@ -14,12 +14,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c928d9f939db96ae302620952bbb6bbdedc396a3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 039e6d5ae21059692aecc05de51bc2b311436334
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54795165"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695635"
 ---
 # <a name="creating-a-ui-by-using-xaml-designer-in-visual-studio"></a>在 Visual Studio 中使用 XAML 設計工具建立 UI
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ Visual Studio 中的 XAML 設計工具提供視覺化介面，協助您設計以
 
  **對齊線**：對齊線是當控制項邊緣對齊時，或文字基線對齊時顯示為紅色虛線的「對齊界限」。 只有在啟用 [貼齊至對齊線]  時才會顯示對齊界限。
 
- **格線滑軌**：`Grid` 滑軌可用來管理 [[格線]](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.grid.aspx) 面板中的資料列和資料行。 您可以建立及刪除列和欄，以及調整其相對寬度和高度。 出現在畫板左邊的垂直 Grid 滑軌適用於列，而出現在頂端的水平線則適用於欄。
+ **格線滑軌**：`Grid` 滑軌可用來管理 [[格線]](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.grid.aspx) 面板中的資料列和資料行。 您可以建立及刪除列和欄，以及調整其相對寬度和高度。 出現在畫板左邊的垂直 Grid 滑軌適用於列，而出現在頂端的水平線則適用於欄。
 
  **格線提示**：`Grid` 提示會顯示為 `Grid` 滑軌上已附加垂直或水平線的三角形。 當您拖曳 `Grid` 裝飾項時，相鄰欄或列的寬度或高度會在您移動滑鼠時更新。
 
@@ -50,7 +50,7 @@ Visual Studio 中的 XAML 設計工具提供視覺化介面，協助您設計以
 
  **調整控點大小**：調整控點大小會出現在選取的控制項上，讓您調整控制項的大小。 當您調整控制項的大小時，通常會出現寬度和高度值，協助您調整控制項的大小。 如需在 [設計] 檢視中操作控制項的詳細資訊，請參閱 [Working with elements in XAML Designer](../designers/working-with-elements-in-xaml-designer.md)。
 
- **邊界**：邊界代表控制項邊緣與其容器邊緣之間的固定間距。 您可以使用 [屬性] 視窗中 **[版面配置]** 底下的 [Margin](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.frameworkelement.margin.aspx) 屬性設定控制項的邊界。
+ **邊界**：邊界代表控制項邊緣與其容器邊緣之間的固定間距。 您可以使用 [屬性] 視窗中 [[版面配置]](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.frameworkelement.margin.aspx) 底下的 **Margin** 屬性設定控制項的邊界。
 
  **邊界提示**：您可以使用邊界裝飾項來變更項目相對於其版面配置容器的邊界。 當邊界裝飾項呈開啟狀態時，則未設定邊界且邊界裝飾項會顯示中斷的鏈結。 如果未設定邊界，則在執行階段調整版面配置容器的大小時，項目的位置維持不變。 當邊界裝飾項呈關閉狀態時，邊界裝飾項會顯示不中斷的鏈結，而且在執行階段調整版面配置容器的大小時，項目會隨著邊界移動 (邊界會保持固定)。
 
@@ -87,9 +87,9 @@ Visual Studio 中的 XAML 設計工具提供視覺化介面，協助您設計以
 
  **顯示**：為應用程式指定不同的顯示大小和解析度。
 
- **方向**：為應用程式指定不同的方向：[橫向] 或 [直向]。
+ **方向**指定不同的方向，應用程式：[橫向] 或 [直向]。
 
- **邊緣** ：為應用程式指定不同的邊緣對齊方式：[兩者]、[靠左]、[靠右] 或 [無]。
+ **Edge**指定不同的邊緣對齊方式，您的應用程式：[兩者]、[靠左]、[靠右] 或 [無]。
 
  **高對比**：根據選取的對比設定，預覽應用程式。 當您將這個設定設為 [ **預設**] 以外的值，就會覆寫 App.xaml 中設定的 `RequestedTheme` 屬性。
 
@@ -137,5 +137,5 @@ Visual Studio 中的 XAML 設計工具提供視覺化介面，協助您設計以
 
  每個屬性值的右邊是顯示為方塊符號的 *「屬性標記」* (Property Marker)。 屬性標記的有無表示屬性是否已套用資料繫結或資源。 例如，白色方塊符號表示預設值，黑色方塊符號通常表示已套用本機資源，而橙色方塊通常表示已套用資料繫結。 當您按一下屬性標記時，您可以巡覽至樣式定義、開啟資料繫結產生器，或開啟資源選擇器。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
  [使用 XAML 設計工具中的項目](../designers/working-with-elements-in-xaml-designer.md)[如何建立和套用資源](../designers/how-to-create-and-apply-a-resource.md)[逐步解說：在 XAML 設計工具中繫結至資料](../designers/walkthrough-binding-to-data-in-xaml-designer.md)

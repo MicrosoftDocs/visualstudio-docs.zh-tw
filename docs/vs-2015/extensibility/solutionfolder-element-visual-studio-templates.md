@@ -1,14 +1,9 @@
 ---
 title: SolutionFolder 元素 （Visual Studio 範本） |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#SolutionFolder
 helpviewer_keywords:
@@ -17,23 +12,23 @@ helpviewer_keywords:
 ms.assetid: 963f0398-fb50-4d8e-879d-d48f8b7c6d80
 caps.latest.revision: 10
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 2fd41144605b37368fe57aa00cdc2bbc8f8a0da0
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 84d0c1765a14f60363b71fcdec182d448cb4f112
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51809723"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68205539"
 ---
-# <a name="solutionfolder-element-visual-studio-templates"></a>SolutionFolder 元素 (Visual Studio 範本)
+# <a name="solutionfolder-element-visual-studio-templates"></a>SolutionFolder 項目 (Visual Studio 範本)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 將多專案範本中的專案分組。  
   
  \<VSTemplate >  
- \<TemplateContent >  
- \<ProjectCollection >  
- \<SolutionFolder >  
+ \<TemplateContent>  
+ \<ProjectCollection>  
+ \<SolutionFolder>  
   
 ## <a name="syntax"></a>語法  
   
@@ -48,7 +43,7 @@ ms.locfileid: "51809723"
   
 ### <a name="attributes"></a>屬性  
   
-|屬性|描述|  
+|屬性|說明|  
 |---------------|-----------------|  
 |`Name`|必要屬性。<br /><br /> 方案資料夾的名稱。|  
   
@@ -67,7 +62,7 @@ ms.locfileid: "51809723"
 |`SolutionFolder`|將多專案範本中的專案分組。|  
   
 ## <a name="remarks"></a>備註  
- 多專案範本是做為兩個以上專案的容器使用。 `SolutionFolder` 項目可將範本中的專案分成群組。 由 `SolutionFolder` 項目所指定的資料夾會建立為 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 之專案中的方案資料夾。 如需有關多專案範本的詳細資訊，請參閱 <<c0> [ 如何： 建立多專案範本](../ide/how-to-create-multi-project-templates.md)。  
+ 多專案範本是做為兩個以上專案的容器使用。 `SolutionFolder` 項目可將範本中的專案分成群組。 由 `SolutionFolder` 項目所指定的資料夾會建立為 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 之專案中的方案資料夾。 如需有關多專案範本的詳細資訊，請參閱[How to:建立多專案範本](../ide/how-to-create-multi-project-templates.md)。  
   
 ## <a name="example"></a>範例  
  這個範例會使用 `SolutionFolder` 項目將多專案範本分成兩個群組，也就是 `Math Classes` 和 `Graphics Classes`。 範本包含四個專案，每個方案資料夾各包含兩個專案。  
@@ -107,5 +102,4 @@ ms.locfileid: "51809723"
 ## <a name="see-also"></a>另請參閱  
  [Visual Studio 範本結構描述參考](../extensibility/visual-studio-template-schema-reference.md)   
  [建立專案和項目範本](../ide/creating-project-and-item-templates.md)   
- [如何：建立多專案的範本](../ide/how-to-create-multi-project-templates.md)
-
+ [如何：建立多專案範本](../ide/how-to-create-multi-project-templates.md)

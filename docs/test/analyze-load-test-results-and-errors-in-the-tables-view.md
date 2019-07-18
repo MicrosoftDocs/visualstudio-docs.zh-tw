@@ -22,11 +22,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 98e54e8e1bec7502e7401dc6a13a639e92c1a881
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55941305"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62823037"
 ---
 # <a name="analyze-load-test-results-and-errors-in-the-tables-view-of-the-load-test-analyzer"></a>在負載測試分析器的資料表檢視中分析負載測試結果和錯誤
 
@@ -50,10 +50,10 @@ ms.locfileid: "55941305"
 
 下列表格列出可用於分析負載測試回合的資料表。
 
-|資料表名稱|描述|
+|資料表名稱|說明|
 |-|-|
 |錯誤|顯示負載測試回合期間發生的錯誤清單。 如需詳細資訊，請參閱本主題中的[錯誤資料表](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#the-errors-table)和[分析負載測試結果](../test/analyze-load-test-results-using-the-load-test-analyzer.md)。|
-|頁面|顯示負載測試回合期間存取的頁面清單。 本資料表中的部分資料只有在負載測試完成後才可用。 如需詳細資訊，請參閱[＜How to：檢視網頁回應](../test/how-to-view-web-page-response-time-in-a-load-test.md)。|
+|頁面|顯示負載測試回合期間存取的頁面清單。 本資料表中的部分資料只有在負載測試完成後才可用。 如需詳細資訊，請參閱[如何：檢視網頁回應](../test/how-to-view-web-page-response-time-in-a-load-test.md)。|
 |要求|顯示負載測試期間所發佈個別要求的詳細資料。 這包含所有 HTTP 要求，以及相依要求 (例如影像)。 如需詳細資訊，請參閱本主題中的[要求資料表](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#the-requests-table)。|
 |SQL 追蹤|顯示 SQL 追蹤的結果。 此資料表只有在負載測試完成後，且測試期間有使用 SQL 追蹤時才可用。 如需詳細資訊，請參閱本主題中的 [SQL 追蹤資料表](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#the-sql-trace-data-table)。|
 |測試|顯示負載測試期間個別測試回合的詳細資料。 如需詳細資訊，請參閱本主題中的[測試資料表](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#the-tests-table)。|
@@ -64,7 +64,7 @@ ms.locfileid: "55941305"
 
 ## <a name="collect-percentile-data"></a>收集百分位數資料
 
- 有些負載測試資料表可以包含額外的資料行，其中包含百分位數資料與按照網路模擬而分為群組的回應時間。 根據預設並未收集這個資料。 只有將結果儲存至資料庫時才能使用百分位數資料，在本機儲存時則無法使用。 如需詳細資訊，請參閱[管理負載測試結果存放庫中的負載測試結果](../test/manage-load-test-results-in-the-load-test-results-repository.md)。 此外，若要收集此資料，請在 [負載測試編輯器] 的 [回合設定] 節點下，選取要變更的特定回合設定節點。 在 [屬性] 視窗中的 [計時詳細資料儲存區] 屬性，選取 [僅限統計資料] 或 [所有個別細節]。 如需詳細資訊，請參閱[＜How to：檢視網頁回應](../test/how-to-view-web-page-response-time-in-a-load-test.md)。
+ 有些負載測試資料表可以包含額外的資料行，其中包含百分位數資料與按照網路模擬而分為群組的回應時間。 根據預設並未收集這個資料。 只有將結果儲存至資料庫時才能使用百分位數資料，在本機儲存時則無法使用。 如需詳細資訊，請參閱[管理負載測試結果存放庫中的負載測試結果](../test/manage-load-test-results-in-the-load-test-results-repository.md)。 此外，若要收集此資料，請在 [負載測試編輯器] 的 [回合設定] 節點下，選取要變更的特定回合設定節點。 在 [屬性] 視窗中的 [計時詳細資料儲存區] 屬性，選取 [僅限統計資料] 或 [所有個別細節]。 如需詳細資訊，請參閱[如何：檢視網頁回應](../test/how-to-view-web-page-response-time-in-a-load-test.md)。
 
 ## <a name="the-requests-table"></a>要求資料表
 
@@ -72,7 +72,7 @@ ms.locfileid: "55941305"
 
  下表列出 [要求] 資料表中的資料行：
 
-|資料行|描述|預設為可見|
+|資料行|說明|預設為可見|
 |-|-|-|
 |**要求**|要求的 URL。 例如：*home.html* 或 *orange-arrow.gif*。|是|
 |**案例**|情節的名稱。|是|
@@ -94,7 +94,7 @@ ms.locfileid: "55941305"
 
  下表列出 [測試] 資料表中的資料行。
 
-|資料行|描述|預設為可見|
+|資料行|說明|預設為可見|
 |-|-|-|
 |**測試**|測試的名稱。|是|
 |**案例**|情節的名稱。|是|
@@ -111,14 +111,14 @@ ms.locfileid: "55941305"
 
 ## <a name="the-transactions-table"></a>異動資料表
 
- [異動] 資料表顯示負載測試回合期間發生的異動清單。 異動是指 Web 效能測試中定義的異動，或是單元測試中定義的計時器。 異動不是指資料庫異動。
+ [異動] 資料表顯示負載測試回合期間發生的異動清單。 異動是指 Web 效能測試中定義的異動，或是單元測試中定義的計時器。 異動不是指資料庫交易。
 
  下表列出 [異動] 資料表中的資料行。
 
 > [!NOTE]
-> 若要檢視所有資料行，您必須啟用與使用中之回合設定相關聯的 [計時詳細資料儲存區] 屬性。 如需詳細資訊，請參閱[＜How to：指定 [計時詳細資料儲存區] 屬性](../test/how-to-specify-the-timing-details-storage-property-for-a-load-test.md)。
+> 若要檢視所有資料行，您必須啟用與使用中之回合設定相關聯的 [計時詳細資料儲存區] 屬性。 如需詳細資訊，請參閱[如何：指定 [計時詳細資料儲存區] 屬性](../test/how-to-specify-the-timing-details-storage-property-for-a-load-test.md)。
 
-|資料行|描述|可見 (不含計時詳細資料)|
+|資料行|說明|可見 (不含計時詳細資料)|
 |-|-|-|
 |**異動**|異動的名稱。|是|
 |**案例**|情節的名稱。|是|
@@ -144,7 +144,7 @@ ms.locfileid: "55941305"
 
  錯誤資料表包含下列資料行：
 
-|資料行|描述|預設為可見|
+|資料行|說明|預設為可見|
 |-|-|-|
 |類型|錯誤的類型。 例如，HttpError。|是|
 |子類型|錯誤的子類型。 例如，LoadTestException。|是|
@@ -162,7 +162,7 @@ ms.locfileid: "55941305"
 
 [負載測試錯誤] 資料表包含下列資料行：
 
-|資料行|描述|
+|資料行|說明|
 |-|-|
 |**時間**|負載測試期間發生錯誤的時間。|
 |**代理程式**|發生錯誤之代理程式電腦的名稱。 這在您使用測試控制器和測試代理程式執行負載測試時相當重要。 如需詳細資訊，請參閱[安裝和設定測試代理程式](../test/lab-management/install-configure-test-agents.md)。|

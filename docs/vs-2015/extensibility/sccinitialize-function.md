@@ -1,14 +1,9 @@
 ---
 title: SccInitialize 函式 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - SccInitialize
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 5bc0d28b-2c68-4d43-9e51-541506a8f76e
 caps.latest.revision: 15
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 9febcc2eecea4533f1c37a0068e2d94ab66ff2af
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: ce52b65d028f82d75d4890b0b1298b4d13b7eafa
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51750714"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68200031"
 ---
 # <a name="sccinitialize-function"></a>SccInitialize 函式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -72,7 +67,7 @@ SCCRTN SccInitialize (
 ## <a name="return-value"></a>傳回值  
  此函式的原始檔控制外掛程式實作應該會傳回下列值之一：  
   
-|值|描述|  
+|值|說明|  
 |-----------|-----------------|  
 |SCC_OK|原始檔控制初始化成功。|  
 |SCC_E_INITIALIZEFAILED|系統無法初始化。|  
@@ -95,4 +90,3 @@ SCCRTN SccInitialize (
  [SccUninitialize](../extensibility/sccuninitialize-function.md)   
  [SccOpenProject](../extensibility/sccopenproject-function.md)   
  [功能旗標](../extensibility/capability-flags.md)
-

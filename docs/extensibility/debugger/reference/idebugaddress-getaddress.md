@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugAddress:GetAddress method
 ms.assetid: 2590387b-5d36-4116-9a75-737957b8898e
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1cff380759163a38129b92f07752e72904f6bbaf
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: f787f041c6c39b8120a768f9288efe86649bb227
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56684451"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66317999"
 ---
 # <a name="idebugaddressgetaddress"></a>IDebugAddress::GetAddress
 傳回描述物件和它的位置，其範圍或容器內的結構。
@@ -36,10 +39,9 @@ int GetAddress(
 );
 ```
 
-#### <a name="parameters"></a>參數
- `pAddress`
-
- [in、 out]A [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md)結構，這個方法會填入。
+## <a name="parameters"></a>參數
+`pAddress`\
+[in、 out]A [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md)結構，這個方法會填入。
 
 ## <a name="return-value"></a>傳回值
  如果成功，會傳回 S_OK;否則，傳回錯誤碼。

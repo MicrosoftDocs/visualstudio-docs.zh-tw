@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProperty3::GetCustomViewerCount
 ms.assetid: dc5bb3e4-dc85-46e4-98fa-c6be8583b985
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4067fc314889e7aa991407c99ba949564b547087
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 99abfc65027bb43cafcd96c39da39ad40c5607ab
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56709144"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66348881"
 ---
 # <a name="idebugproperty3getcustomviewercount"></a>IDebugProperty3::GetCustomViewerCount
 取得可供這個屬性的自訂檢視器的數目。
@@ -36,10 +39,9 @@ int GetCustomViewerCount(
 );
 ```
 
-#### <a name="parameters"></a>參數
-`pcelt`
-
- [out]適用於此屬性的自訂檢視器的數目。
+## <a name="parameters"></a>參數
+`pcelt`\
+[out]適用於此屬性的自訂檢視器的數目。
 
 ## <a name="return-value"></a>傳回值
 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

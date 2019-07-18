@@ -1,14 +1,9 @@
 ---
 title: LocationField 項目 （Visual Studio 專案範本） |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#LocationField
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 6aaaa155-6ce0-4f7f-aa50-8d63d7a7c992
 caps.latest.revision: 14
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 9d7d1abef8213ea06e04d35c05b38295e0b01bd9
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: b28fe0e696b23724758bd877b6031287290f879e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51778640"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68194458"
 ---
 # <a name="locationfield-element-visual-studio-project-templates"></a>LocationField 項目 (Visual Studio 專案範本)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,14 +54,14 @@ ms.locfileid: "51778640"
   
  有效的文字值如下：  
   
--   `Enabled`其中指定**位置**的方塊**新的專案** 對話方塊中已啟用。  
+- `Enabled`其中指定**位置**的方塊**新的專案** 對話方塊中已啟用。  
   
--   `Disabled`其中指定**位置**的方塊**新的專案** 對話方塊中已停用。  
+- `Disabled`其中指定**位置**的方塊**新的專案** 對話方塊中已停用。  
   
--   `Hidden`其中指定**位置**的方塊**新的專案**隱藏的對話方塊。  
+- `Hidden`其中指定**位置**的方塊**新的專案**隱藏的對話方塊。  
   
 ## <a name="remarks"></a>備註  
- 預設值是 `Enabled`。  
+ 預設值為 `Enabled`。  
   
  **位置**中的文字方塊**新的專案**對話方塊可讓使用者能夠變更已儲存新專案的預設目錄。  
   
@@ -103,4 +98,3 @@ ms.locfileid: "51778640"
 ## <a name="see-also"></a>另請參閱  
  [Visual Studio 範本結構描述參考](../extensibility/visual-studio-template-schema-reference.md)   
  [建立專案和項目範本](../ide/creating-project-and-item-templates.md)
-

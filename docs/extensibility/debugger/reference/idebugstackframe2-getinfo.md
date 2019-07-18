@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugStackFrame2::GetInfo
 ms.assetid: 19c6870b-b94e-453c-bf19-82ce95b79d26
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d0aeb888b2cc81dac6157ef0944703227799e61e
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: ad560386991a0545510e1b74a140d17cc35fcbe3
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56721013"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66352118"
 ---
 # <a name="idebugstackframe2getinfo"></a>IDebugStackFrame2::GetInfo
 取得堆疊框架的描述。
@@ -40,18 +43,15 @@ int GetInfo ( 
 );
 ```
 
-#### <a name="parameters"></a>參數
- `dwFieldSpec`
+## <a name="parameters"></a>參數
+`dwFieldSpec`\
+[in]從旗標的組合[FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md)列舉，指定哪些欄位`pFrameInfo`參數是要填入。
 
- [in]從旗標的組合[FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md)列舉，指定哪些欄位`pFrameInfo`參數是要填入。
+`nRadix`\
+[in]要用於格式化數字的任何資訊基數。
 
- `nRadix`
-
- [in]要用於格式化數字的任何資訊基數。
-
- `pFrameInfo`
-
- [out]A [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md)結構，其中會填入的堆疊框架的描述。
+`pFrameInfo`\
+[out]A [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md)結構，其中會填入的堆疊框架的描述。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

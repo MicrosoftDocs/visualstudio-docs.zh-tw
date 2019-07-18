@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c5c021e74c758b6409d42deae6a7e6831368367e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56611538"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62829806"
 ---
 # <a name="idiaenumsegmentsgetnewenum"></a>IDiaEnumSegments::get__NewEnum
 擷取<xref:System.Runtime.InteropServices.ComTypes.IEnumVARIANT>這個列舉值的版本。
@@ -38,5 +38,5 @@ HRESULT get__NewEnum ( 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [IDiaEnumSegments](../../debugger/debug-interface-access/idiaenumsegments.md)

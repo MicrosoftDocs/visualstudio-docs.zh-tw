@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: a8df3d39e44bf1d40f3abfd4d6218d2c9a72b690
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55935676"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62567802"
 ---
 # <a name="data-class-inheritance-or-designer"></a>資料類別繼承 (O/R 設計工具)
 
@@ -44,6 +44,6 @@ ms.locfileid: "55935676"
 ## <a name="see-also"></a>另請參閱
 
 - [Visual Studio 中的 LINQ to SQL 工具](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
-- [逐步解說：建立 LINQ to SQL 類別 (O-R 設計工具)](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)
+- [逐步解說：建立 LINQ to SQL 類別 （O-R 設計工具）](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)
 - [逐步解說：使用單一資料表繼承建立 LINQ to SQL 類別 (O/R 設計工具)](../data-tools/walkthrough-creating-linq-to-sql-classes-by-using-single-table-inheritance-o-r-designer.md)
 - [快速入門](/dotnet/framework/data/adonet/sql/linq/getting-started)

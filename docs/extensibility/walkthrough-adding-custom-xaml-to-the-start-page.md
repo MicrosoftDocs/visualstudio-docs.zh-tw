@@ -6,18 +6,18 @@ helpviewer_keywords:
 - custom start page
 - xaml start page
 ms.assetid: 9af4d5f9-1cfc-4221-aea7-c8cd3f7571a6
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: f6f9f2ad3d9eb1e9aca68250c2d9e0702027f687
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 543faf9cf122e77cce6242f95008b777cd5666b2
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57867322"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66322771"
 ---
 # <a name="walkthrough-add-custom-xaml-to-the-start-page"></a>逐步解說：將自訂的 XAML 加入至 [開始] 頁面
 
@@ -25,11 +25,11 @@ ms.locfileid: "57867322"
 
 ## <a name="add-custom-xaml"></a>新增自訂的 XAML
 
-1.  依照中的指示，建立起始頁[建立自訂起始頁](../extensibility/creating-a-custom-start-page.md)。
+1. 依照中的指示，建立起始頁[建立自訂起始頁](../extensibility/creating-a-custom-start-page.md)。
 
-2.  在  *MainWindow.xaml*檔案中，尋找\<方格 > 一節。
+2. 在  *MainWindow.xaml*檔案中，尋找\<方格 > 一節。
 
-3.  新增\<TabControl > 項目和\<TabItem > 內\<方格 > 項目，如下列範例所示。
+3. 新增\<TabControl > 項目和\<TabItem > 內\<方格 > 項目，如下列範例所示。
 
     ```xml
     <Grid>
@@ -41,7 +41,7 @@ ms.locfileid: "57867322"
     </Grid>
     ```
 
-4.  新增第二\<TabItem >，使用\<按鈕 > 項目，開啟新的專案：
+4. 新增第二\<TabItem >，使用\<按鈕 > 項目，開啟新的專案：
 
     ```xml
     <Grid>
@@ -61,25 +61,25 @@ ms.locfileid: "57867322"
 
 ## <a name="test-the-custom-start-page"></a>測試自訂起始頁
 
-1.  請按 **F5**。
+1. 請按 **F5**。
 
      Visual Studio 的實驗執行個體隨即開啟，並已安裝但不是選取自訂起始頁。
 
-2.  在 Visual Studio 的實驗性執行個體，開啟**工具 /Options / 環境**頁面。
+2. 在 Visual Studio 的實驗性執行個體，開啟**工具 /Options / 環境**頁面。
 
-3.  選取 **啟動**。 在 **自訂起始頁**清單中，選取您 *.xaml*檔案，然後按一下**確定**。
+3. 選取 **啟動**。 在 **自訂起始頁**清單中，選取您 *.xaml*檔案，然後按一下**確定**。
 
-4.  在 [檢視]  功能表上，按一下 [起始頁] 。
+4. 在 [檢視]  功能表上，按一下 [起始頁]  。
 
-5.  按一下 [ **Bing** ] 索引標籤。
+5. 按一下 [ **Bing** ] 索引標籤。
 
      您應該會看到 Bing 網頁。
 
-6.  按一下 [ **MyButton** ] 索引標籤。
+6. 按一下 [ **MyButton** ] 索引標籤。
 
      您應該會看到**MyProject**按鈕，這會開啟**新的專案**對話方塊。
 
-7.  關閉實驗執行個體。
+7. 關閉實驗執行個體。
 
 若要套用自訂起始頁中，在**工具** > **選項** > **環境**，選取**啟動**。 在 **自訂起始頁**清單中，選取您 *.xaml*檔案，然後按一下**確定**。
 

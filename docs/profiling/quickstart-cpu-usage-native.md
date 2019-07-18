@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8245c8a3decdd9e9576d3a24b37df4971dbb9284
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 73f8b69b120b1c21de92a8706eab0dbbcbb6e38e
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56633703"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65703854"
 ---
 # <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-c"></a>快速入門：在 Visual Studio 中分析 CPU 使用量資料 (C++)
 
@@ -115,26 +115,26 @@ Windows 8 及更新版本必須執行附有偵錯工具的分析工具 ([診斷�
 
 ## <a name="step-1-collect-profiling-data"></a>步驟 1：收集分析資料
 
-1.  首先，在 `main` 函式的這行程式碼上，於應用程式中設定中斷點：
+1. 首先，在 `main` 函式的這行程式碼上，於應用程式中設定中斷點：
 
     `for (int i = 0; i < 10; ++i) {`
 
     按一下程式碼行左側的裝訂邊，以設定中斷點。
 
-2.  接下來，在 `main` 函式結尾的右大括弧上，設定第二個中斷點：
+2. 接下來，在 `main` 函式結尾的右大括弧上，設定第二個中斷點：
 
      ![設定中斷點進行分析](../profiling/media/quickstart-cpu-usage-breakpoints-cplusplus.png "設定中斷點進行分析")
 
     > [!TIP]
     > 藉由設定兩個中斷點，您可以將資料收集的範圍限制在您想分析的程式碼部分。
 
-3.  除非您關閉 [診斷工具] 視窗，否則該視窗已出現。 如需再次顯示視窗，請按一下 [偵錯] > [Windows] > [顯示診斷工具]。
+3. 除非您關閉 [診斷工具] 視窗，否則該視窗已出現。 如需再次顯示視窗，請按一下 [偵錯] > [Windows] > [顯示診斷工具]。
 
-4.  按一下 [偵錯] > [開始偵錯] (或工具列上的 [開始] 或 **F5**)。
+4. 按一下 [偵錯] > [開始偵錯] (或工具列上的 [開始] 或 **F5**)。
 
      應用程式完成載入時，會出現 [診斷工具] 的 [摘要] 檢視。
 
-5.  當偵錯工具暫停時，請啟用 CPU 使用量資料的收集，方法是選擇 [記錄 CPU 分析]，然後開啟 [CPU 使用量] 索引標籤。
+5. 當偵錯工具暫停時，請啟用 CPU 使用量資料的收集，方法是選擇 [記錄 CPU 分析]，然後開啟 [CPU 使用量] 索引標籤。
 
      ![診斷工具啟用 CPU 分析](../profiling/media/quickstart-cpu-usage-summary.png "診斷工具啟用 CPU 分析")
 
@@ -142,7 +142,7 @@ Windows 8 及更新版本必須執行附有偵錯工具的分析工具 ([診斷�
 
      當您選擇 [記錄 CPU 分析] 時，Visual Studio 就會開始錄製您的函式以及它們所需的執行時間，也會提供您可以用來專注於取樣工作階段特定區段的時間軸圖表。只有在應用程式於中斷點停止時，您才能檢視這個收集的資料。
 
-6.  按 F5 使應用程式執行至第二個中斷點。
+6. 按 F5 使應用程式執行至第二個中斷點。
 
      現在，您擁有在兩個中斷點之間執行的程式碼區域專屬的應用程式效能資料。
 

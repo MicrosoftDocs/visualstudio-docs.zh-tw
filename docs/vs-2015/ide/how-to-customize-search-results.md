@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: aa56b6c1dbb79cf3d6c59283856e763c2cf7a958
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: d7add45e5dc2aac66eaf023eabcf2a1f7cdf189e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54799781"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63416836"
 ---
 # <a name="how-to-customize-search-results"></a>如何：自訂搜尋結果
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,25 +29,25 @@ ms.locfileid: "54799781"
   
 #### <a name="to-change-the-number-of-topics-displayed-at-a-time"></a>變更一次顯示的主題數目  
   
-1.  在 [工具列] 上，選擇 [檢視器選項]。  
+1. 在 [工具列] 上，選擇 [檢視器選項]。  
   
      [檢視器選項] 對話方塊隨即出現。  
   
-2.  在 [搜尋結果上限] 清單中，選擇 25、50、100 或 200。  
+2. 在 [搜尋結果上限] 清單中，選擇 25、50、100 或 200。  
   
 ## <a name="search-for-content-by-language"></a>依語言搜尋內容  
  文件可能包含英文以外的語言的內容。 您可以將搜尋結果範圍縮小為特定語言的內容。 您也可以包含符合您搜尋查詢的任何英文內容。  
   
 > [!WARNING]
->  只有在已安裝內容的主要語言不是英文時，才會啟用此功能。  
+> 只有在已安裝內容的主要語言不是英文時，才會啟用此功能。  
   
 #### <a name="to-include-english-content-alongside-content-in-another-language"></a>包含英文內容與另一種語言的內容  
   
-1.  在 [工具列] 上，選擇 [檢視器選項]。  
+1. 在 [工具列] 上，選擇 [檢視器選項]。  
   
      [檢視器選項] 對話方塊隨即出現。  
   
-2.  選取 [將英文內容包含在所有巡覽索引標籤和 F1 要求中] 核取方塊。  
+2. 選取 [將英文內容包含在所有巡覽索引標籤和 F1 要求中] 核取方塊。  
   
 ## <a name="see-also"></a>請參閱  
  [全文檢索搜尋提示](../ide/full-text-search-tips.md)

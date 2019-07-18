@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgramEngines2::SetEngine
 ms.assetid: c05857ee-89cf-455e-8f1e-300cce4a2eab
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 78755a75582ed3e61784b8e7762f7f9f6390a34c
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 1a8c48de1a068300bb514d10528592cc518004db
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56697451"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66343452"
 ---
 # <a name="idebugprogramengines2setengine"></a>IDebugProgramEngines2::SetEngine
 會告訴程式節點的程式的偵錯引擎 (DE) 使用偵錯此程式。
@@ -36,10 +39,9 @@ int SetEngine( 
 );
 ```
 
-#### <a name="parameters"></a>參數
- `guidEngine`
-
- [in]DE GUID。
+## <a name="parameters"></a>參數
+`guidEngine`\
+[in]DE GUID。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

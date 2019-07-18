@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugDocumentPosition2::IsPositionInDocument
 ms.assetid: d5cf57cb-b93b-4e1d-bec9-185f4fe8668d
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e5701df9085de7a63e7f09ea37c28244897122b7
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: ab4792427a98f97fcd50d4b39c2bb332527a0942
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56678913"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66333416"
 ---
 # <a name="idebugdocumentposition2ispositionindocument"></a>IDebugDocumentPosition2::IsPositionInDocument
 判斷文件位置是否包含指定的文件中。
@@ -36,10 +39,9 @@ int IsPositionInDocument( 
 );
 ```
 
-#### <a name="parameters"></a>參數
- `pDoc`
-
- [in][IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)物件，表示包含文件候選項目。
+## <a name="parameters"></a>參數
+`pDoc`\
+[in][IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)物件，表示包含文件候選項目。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

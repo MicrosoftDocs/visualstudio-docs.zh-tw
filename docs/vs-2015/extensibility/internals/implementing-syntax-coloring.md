@@ -1,14 +1,9 @@
 ---
 title: 實作語法著色 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - syntax coloring, implementing
 - editors [Visual Studio SDK], colorizing text
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 96e762ca-efd0-41e7-8958-fda4897c8c7a
 caps.latest.revision: 21
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 30a53b1fc04bd08835ccf0ff0b0edb2e5d117fcb
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 90ff340efb4cbdbe6e2ac43b5b459642120cc099
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51775026"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63447272"
 ---
 # <a name="implementing-syntax-coloring"></a>實作語法著色
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -31,47 +26,46 @@ ms.locfileid: "51775026"
   
  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 未指定剖析器介面，和剖析器實作是完全由您決定。 不過，Visual Studio 語言套件專案提供預設的剖析器實作。 Managed 程式碼，managed 的封裝架構 (MPF) 提供了完整支援以色彩標示文字。  
   
- 舊版語言服務會實作成 VSPackage 的一部分，但實作語言服務功能的較新的方式是使用 MEF 擴充功能。 若要深入了解實作語法著色的新方式，請參閱[逐步解說︰ 反白顯示的文字](../../extensibility/walkthrough-highlighting-text.md)。  
+ 舊版語言服務會實作成 VSPackage 的一部分，但實作語言服務功能的較新的方式是使用 MEF 擴充功能。 若要深入了解實作語法著色的新方式，請參閱[逐步解說：反白顯示文字](../../extensibility/walkthrough-highlighting-text.md)。  
   
 > [!NOTE]
->  我們建議您開始使用新的編輯器 API 盡。 這會改善您的語言服務的效能，並可讓您充分利用新編輯器功能。  
+> 我們建議您開始使用新的編輯器 API 盡。 這會改善您的語言服務的效能，並可讓您充分利用新編輯器功能。  
   
 ## <a name="steps-followed-by-an-editor-to-colorize-text"></a>若要以色彩標示文字編輯器所遵循步驟  
   
-1.  編輯器取得色彩標示器藉由呼叫<xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo.GetColorizer%2A>方法<xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo>物件。  
+1. 編輯器取得色彩標示器藉由呼叫<xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo.GetColorizer%2A>方法<xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo>物件。  
   
-2.  編輯器呼叫<xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.GetStateMaintenanceFlag%2A>方法，以判斷色彩標示器是否需要在每個線條的色彩標示器外部維護的狀態。  
+2. 編輯器呼叫<xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.GetStateMaintenanceFlag%2A>方法，以判斷色彩標示器是否需要在每個線條的色彩標示器外部維護的狀態。  
   
-3.  如果色彩標示器需要外部的色彩標示器維護狀態，編輯器便會呼叫<xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.GetStartState%2A>方法來取得狀態的第一行。  
+3. 如果色彩標示器需要外部的色彩標示器維護狀態，編輯器便會呼叫<xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.GetStartState%2A>方法來取得狀態的第一行。  
   
-4.  緩衝區中每一行，編輯器會呼叫<xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A>方法，執行下列步驟：  
+4. 緩衝區中每一行，編輯器會呼叫<xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A>方法，執行下列步驟：  
   
-    1.  文字的一行會傳遞至掃描器，將文字轉換成語彙基元。 每個語彙基元指定權杖的文字與語彙基元的型別。  
+    1. 文字的一行會傳遞至掃描器，將文字轉換成語彙基元。 每個語彙基元指定權杖的文字與語彙基元的型別。  
   
-    2.  語彙基元的型別會轉換成可設定色彩的項目 清單中的索引。  
+    2. 語彙基元的型別會轉換成可設定色彩的項目 清單中的索引。  
   
-    3.  權杖的資訊用來填入陣列，陣列的每個項目對應至的行中的字元。 儲存在陣列中的值是可設定色彩的項目清單索引。  
+    3. 權杖的資訊用來填入陣列，陣列的每個項目對應至的行中的字元。 儲存在陣列中的值是可設定色彩的項目清單索引。  
   
-    4.  在行結尾處的狀態就會傳回每一行。  
+    4. 在行結尾處的狀態就會傳回每一行。  
   
-5.  如果色彩標示器需要維護狀態，編輯器會快取該線路的狀態。  
+5. 如果色彩標示器需要維護狀態，編輯器會快取該線路的狀態。  
   
-6.  編輯器會呈現的文字時，使用從傳回的資訊列<xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A>方法。 此時，您需要進行下列步驟：  
+6. 編輯器會呈現的文字時，使用從傳回的資訊列<xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A>方法。 此時，您需要進行下列步驟：  
   
-    1.  取得行中每個字元，可設定色彩的項目索引。  
+    1. 取得行中每個字元，可設定色彩的項目索引。  
   
-    2.  如果使用的預設色彩的項目，來存取編輯器色彩的項目清單。  
+    2. 如果使用的預設色彩的項目，來存取編輯器色彩的項目清單。  
   
-    3.  否則，呼叫的語言服務的<xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems.GetColorableItem%2A>方法，以取得可設定色彩的項目。  
+    3. 否則，呼叫的語言服務的<xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems.GetColorableItem%2A>方法，以取得可設定色彩的項目。  
   
-    4.  使用可設定色彩的項目中的資訊來呈現文字的顯示畫面。  
+    4. 使用可設定色彩的項目中的資訊來呈現文字的顯示畫面。  
   
 ## <a name="managed-package-framework-colorizer"></a>Managed 的 Package Framework 色彩標示器  
  Managed 的 package framework (MPF) 提供實作的色彩標示器所需的所有類別。 您的語言服務類別應該繼承<xref:Microsoft.VisualStudio.Package.LanguageService>類別並實作所需的方法。 您必須提供掃描器和剖析器藉由實作<xref:Microsoft.VisualStudio.Package.IScanner>介面，並傳回該介面的執行個體<xref:Microsoft.VisualStudio.Package.LanguageService.GetScanner%2A>方法 (其中一個方法必須實作在<xref:Microsoft.VisualStudio.Package.LanguageService>類別)。 如需詳細資訊，請參閱 <<c0> [ 舊版語言服務中的語法上色](../../extensibility/internals/syntax-colorizing-in-a-legacy-language-service.md)。  
   
 ## <a name="see-also"></a>另請參閱  
- [如何： 使用內建可設定色彩的項目](../../extensibility/internals/how-to-use-built-in-colorable-items.md)   
+ [如何：使用內建可設定色彩的項目](../../extensibility/internals/how-to-use-built-in-colorable-items.md)   
  [自訂色彩的項目](../../extensibility/internals/custom-colorable-items.md)   
  [開發舊版語言服務](../../extensibility/internals/developing-a-legacy-language-service.md)   
  [舊版語言服務中的語法上色](../../extensibility/internals/syntax-colorizing-in-a-legacy-language-service.md)
-

@@ -1,14 +1,9 @@
 ---
-title: 如何： 撰寫執行階段錯誤報告函式 |Microsoft Docs
-ms.custom: ''
+title: 作法：撰寫報告函式的執行階段錯誤 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -25,15 +20,15 @@ ms.assetid: 989bf312-5038-44f3-805f-39a34d18760e
 caps.latest.revision: 20
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: e5d7c9e3d87f7b73ccfad822ef0e7800baaa5b44
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 6468e14e3ed588386440e992d9a570e735123bab
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51771513"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65678898"
 ---
-# <a name="how-to-write-a-run-time-error-reporting-function"></a>如何：撰寫執行階段錯誤報告函式
+# <a name="how-to-write-a-run-time-error-reporting-function"></a>作法：撰寫執行階段錯誤報告函式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 執行階段錯誤的自訂報告函式，它必須具有與 `_CrtDbgReportW` 相同的宣告。 它應該向偵錯工具傳回值 1。  
@@ -72,7 +67,7 @@ int MyErrorFunc(int errorType, const wchar_t *filename,
 ```  
   
 ## <a name="example"></a>範例  
- 下列範例顯示更複雜的自訂報告函式。 在這個範例中，switch 陳述式會處理由 `reportType` 的 `_CrtDbgReportW` 參數所定義的各種錯誤類型。 因為您要正在取代 `_CrtDbgReportW`，所以無法使用 `_CrtSetReportMode`。 您的函式必須處理輸出。 這個函式中的第一個變數引數會接受一個執行階段錯誤碼。 如需詳細資訊，請參閱 < [_RTC_SetErrorType](http://msdn.microsoft.com/library/f5f99be7-d357-4b11-b8f5-ddd3428f2b06)。  
+ 下列範例顯示更複雜的自訂報告函式。 在這個範例中，switch 陳述式會處理由 `reportType` 的 `_CrtDbgReportW` 參數所定義的各種錯誤類型。 因為您要正在取代 `_CrtDbgReportW`，所以無法使用 `_CrtSetReportMode`。 您的函式必須處理輸出。 這個函式中的第一個變數引數會接受一個執行階段錯誤碼。 如需詳細資訊，請參閱 < [_RTC_SetErrorType](https://msdn.microsoft.com/library/f5f99be7-d357-4b11-b8f5-ddd3428f2b06)。  
   
 ```  
 #include <windows.h>  
@@ -117,7 +112,7 @@ int Catch_RTC_Failure(int errType, const wchar_t *file, int line,
 ```  
   
 ## <a name="example"></a>範例  
- 您可以使用 `_RTC_SetErrorFuncW` 來安裝用來代替 `_CrtDbgReportW` 的自訂函式。 如需詳細資訊，請參閱 < [_RTC_SetErrorFuncW](http://msdn.microsoft.com/library/b3e0d71f-1bd3-4c37-9ede-2f638eb3c81a)。 `_RTC_SetErrorFuncW` 傳回值是先前的報告函式，必要時您可以儲存後再還原。  
+ 您可以使用 `_RTC_SetErrorFuncW` 來安裝用來代替 `_CrtDbgReportW` 的自訂函式。 如需詳細資訊，請參閱 [_RTC_SetErrorFuncW](https://msdn.microsoft.com/library/b3e0d71f-1bd3-4c37-9ede-2f638eb3c81a)。 `_RTC_SetErrorFuncW` 傳回值是先前的報告函式，必要時您可以儲存後再還原。  
   
 ```  
 #include <rtcapi.h>  
@@ -134,8 +129,3 @@ int main()
   
 ## <a name="see-also"></a>另請參閱  
  [自訂原生執行階段檢查](../debugger/native-run-time-checks-customization.md)
-
-
-
-
-

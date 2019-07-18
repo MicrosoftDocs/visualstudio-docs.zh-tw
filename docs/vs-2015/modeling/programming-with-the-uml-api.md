@@ -1,12 +1,9 @@
 ---
 title: 使用 UML API 進行程式設計 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML model, API
 - UML model, extending
@@ -14,13 +11,13 @@ ms.assetid: c5937139-49d0-4439-8a9f-89f5e0474618
 caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: d5670b0c0806d59119e1a1af87bae5642255c5a9
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: e85fc0add84f6f6097355d1fc7a58cc954c8e538
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51793174"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68158886"
 ---
 # <a name="programming-with-the-uml-api"></a>Programming with the UML API
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +28,7 @@ UML API 的 Visual Studio 可讓您撰寫程式碼來建立、 讀取和更新 U
   
 |主題|描述的範例類型和方法|描述的功能|  
 |-----------|-----------------------------------------|------------------------|  
-|[使用 UML API 巡覽關聯性](../modeling/navigate-relationships-with-the-uml-api.md)|UML 項目及其屬性和關聯。 例如，IElement 及其子系，包含：IClass、IActivity、IUseCase、IComponent、IInteraction、IModel、IPackage|在 Visual Studio 的 UML 模型符合 UML 規格版本 2.1.2，可在取得[UML 資源頁](http://go.microsoft.com/fwlink/?LinkId=160796)。 每一個類型都是一個介面，此介面的名稱與 UML 類型相同，且包含前置詞 "I"。|  
+|[使用 UML API 巡覽關聯性](../modeling/navigate-relationships-with-the-uml-api.md)|UML 項目及其屬性和關聯。 例如，IElement 及其子系，包括：IClass、 IActivity、 IUseCase、 IComponent、 IInteraction、 IModel、 IPackage|在 Visual Studio 的 UML 模型符合 UML 規格版本 2.1.2，可在取得[UML 資源頁](http://go.microsoft.com/fwlink/?LinkId=160796)。 每一個類型都是一個介面，此介面的名稱與 UML 類型相同，且包含前置詞 "I"。|  
 |[在 UML 模型中建立項目和關聯性](../modeling/create-elements-and-relationships-in-uml-models.md)|IPackage.CreateClass()<br /><br /> IClass.CreateOperation()|每一個項目類型都有建立其子項目的方法。|  
 |[在圖表上顯示 UML 模型](../modeling/display-a-uml-model-on-diagrams.md)|IShape、IDiagram<br /><br /> IShape.Move()|模型中的每一個項目都可做為圖表上的圖形表示。 在某些情況下，您可以為每一個物件建立新圖形。 您可以移動圖形、調整圖形大小、為圖形上色，以及摺疊或展開這些圖形。|  
 |[巡覽 UML 模型](../modeling/navigate-the-uml-model.md)|IModelStore<br /><br /> IDiagramContext|「模型存放區」可儲存模型。<br /><br /> 「圖表內容」可讓您存取目前的圖表和存放區。|  
@@ -47,14 +44,14 @@ UML API 的 Visual Studio 可讓您撰寫程式碼來建立、 讀取和更新 U
   
  來自該平台的類型會顯示在可供您參考以撰寫 UML 擴充功能的某些組件上。 雖然您可以存取 [!INCLUDE[dsl](../includes/dsl-md.md)] 應用程式開發介面以擴充 UML 工具，但您應注意下列事項：  
   
--   您可能會發現有些明顯的簡單變更會導致不一致的情況與未預期的影響。  
+- 您可能會發現有些明顯的簡單變更會導致不一致的情況與未預期的影響。  
   
--   實作方式日後可能會有所變更，而使您透過 [!INCLUDE[dsl](../includes/dsl-md.md)] 應用程式開發介面所做的修改不再適用。  
+- 實作方式日後可能會有所變更，而使您透過 [!INCLUDE[dsl](../includes/dsl-md.md)] 應用程式開發介面所做的修改不再適用。  
   
 ## <a name="the-api-assemblies"></a>應用程式開發介面組件  
  下表摘錄了可為 UML 工具提供擴充性的組件，以及建議您使用的命名空間。  
   
-|組件|命名空間|提供存取權給：|  
+|Assembly|命名空間|提供存取權給：|  
 |--------------|----------------|-------------------------|  
 |Microsoft.VisualStudio.Uml.Interfaces|(全部)|UML 類型。|  
 |Microsoft.VisualStudio.ArchitectureTools.Extensibility|<xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Uml>|[建立方法](../modeling/create-elements-and-relationships-in-uml-models.md)|  
@@ -74,6 +71,3 @@ UML API 的 Visual Studio 可讓您撰寫程式碼來建立、 讀取和更新 U
 ## <a name="see-also"></a>另請參閱  
  [擴充 UML 模型和圖表](../modeling/extend-uml-models-and-diagrams.md)   
  [UML 模型擴充性的 API 參考](../modeling/api-reference-for-uml-modeling-extensibility.md)
-
-
-

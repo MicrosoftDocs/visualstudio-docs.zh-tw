@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2ee29b677096e46d965e8191cf26a829587471dd
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56622978"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62969624"
 ---
 # <a name="globalon-and-globaloff"></a>GlobalOn 和 GlobalOff
 *VSPerfCmd.exe* **GlobalOff** 和 **GlobalOn** 選項可暫停和繼續對命令列分析工作階段中的所有處理序和執行緒進行分析。
@@ -48,15 +48,15 @@ VSPerfCmd.exe {Launch:AppName|Attach:PID} /{GlobalOff|GlobalOn}[Options]
 ## <a name="valid-options"></a>有效選項
  您可以在也包含下列選項的命令列上指定 **GlobalOn** 和 **GlobalOff**。
 
- **Start:**`Method` 初始化命令列分析工具工作階段，並設定指定的分析方法。
+ **Start:** `Method` 初始化命令列分析工具工作階段，並設定指定的分析方法。
 
- **Launch:**`AppName` 啟動指定的應用程式，並使用取樣方法開始分析。
+ **Launch:** `AppName` 啟動指定的應用程式，並使用取樣方法開始分析。
 
- **Attach：**`PID` 開始對指定的處理序進行分析。
+ **Attach：** `PID` 開始對指定的處理序進行分析。
 
- {**ProcessOff**&#124;**ProcessOn**}**:**`PID`停止或開始對指定的處理序進行分析。
+ {**ProcessOff**&#124;**ProcessOn**} **:** `PID`停止或開始對指定的處理序進行分析。
 
- {**ThreadOff**&#124;**ThreadOn**}**:**`TID`停止或開始對指定的處理序進行分析 (僅檢測方法)。
+ {**ThreadOff**&#124;**ThreadOn**} **:** `TID`停止或開始對指定的處理序進行分析 (僅檢測方法)。
 
 ## <a name="example"></a>範例
  在此範例中，可使用 **GlobalOff** 和 **GlobalOn** 選項，避免收集應用程式啟動和關閉的分析資料。

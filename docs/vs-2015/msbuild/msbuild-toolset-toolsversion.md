@@ -14,17 +14,16 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f2f570252a5bf87d0949bcda04ba312fe8092704
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: bd65f12c065ee1d96934c6790779c8b4ca87b393
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54773034"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63426308"
 ---
 # <a name="msbuild-toolset-toolsversion"></a>MSBuild Toolset (ToolsVersion)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 MSBuild 使用工作、目標和工具的工具組建置應用程式。 一般而言，MSBuild 工具組包括 microsoft.common.tasks 檔案、microsoft.common.targets 檔案和編譯器，例如 csc.exe 和 vbc.exe。 大部分的工具組都可用來將應用程式編譯為多個版本的 .NET Framework 和多個系統平台。 不過，MSBuild 2.0 工具組僅能以 .NET Framework 2.0 為使用目標。  
   
 ## <a name="toolsversion-attribute"></a>ToolsVersion 屬性  
@@ -72,7 +71,7 @@ MSBuild 使用工作、目標和工具的工具組建置應用程式。 一般�
   
 - 透過使用 <xref:Microsoft.Build.Utilities.ToolLocationHelper> 方法  
   
-  工具組屬性會指定工具的路徑。 MSBuild 會使用專案檔中的 `ToolsVersion` 屬性值，以尋找對應的登錄機碼，然後使用登錄機碼中的資訊設定工具組屬性。 例如，如果 `ToolsVersion` 的值為 `12.0`，MSBuild 會根據以下登錄機碼，來設定工具組屬性：HKLM\Software\Microsoft\MSBuild\ToolsVersions\12.0。  
+  工具組屬性會指定工具的路徑。 MSBuild 會使用專案檔中的 `ToolsVersion` 屬性值，以尋找對應的登錄機碼，然後使用登錄機碼中的資訊設定工具組屬性。 例如，如果 `ToolsVersion` 的值為 `12.0`，MSBuild 會根據以下登錄機碼設定工具組屬性：HKLM\Software\Microsoft\MSBuild\ToolsVersions\12.0.  
   
   以下為工具組屬性：  
   
@@ -98,7 +97,7 @@ MSBuild 使用工作、目標和工具的工具組建置應用程式。 一般�
  如本主題先前所述，MSBuild 會使用登錄機碼指定基本工具的路徑。 如果機碼具有子機碼，MSBuild 會使用它指定包含其他工具之子工具組的路徑。 在此情況下，該工具組的定義方式為組合在兩個機碼中定義的屬性定義。  
   
 > [!NOTE]
->  如果工具組屬性名稱衝突，為子機碼路徑定義的值會覆寫為根機碼路徑定義的值。  
+> 如果工具組屬性名稱衝突，為子機碼路徑定義的值會覆寫為根機碼路徑定義的值。  
   
  如果 `VisualStudioVersion` 建置屬性存在，子工具組會變為使用中。 此屬性會採用下列其中一個值：  
   
@@ -116,6 +115,6 @@ MSBuild 使用工作、目標和工具的工具組建置應用程式。 一般�
   
   子工具組已引進 .NET Framework 4.5。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [標準和自訂工具組的組態](../msbuild/standard-and-custom-toolset-configurations.md)   
  [多目標](../msbuild/msbuild-multitargeting-overview.md)

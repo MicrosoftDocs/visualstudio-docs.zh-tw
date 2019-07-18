@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d3c90d955ba412a75005ab47627c1901df57891
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 9aa4f39fb54617ae1dbf048a1e13f009c8df5185
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55936976"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62814233"
 ---
 # <a name="override-and-extend-the-generated-classes"></a>覆寫及擴充產生的類別
 
@@ -54,9 +54,9 @@ public partial class Book
 
 例如，在範例 Library.dsl，`CirculationBook`網域類別具有`Generates``Double Derived`屬性設定為`true`。 產生的程式碼，該網域類別包含兩個類別：
 
--   `CirculationBookBase`其為抽象，而且其中包含所有的方法和屬性。
+- `CirculationBookBase`其為抽象，而且其中包含所有的方法和屬性。
 
--   `CirculationBook`其係衍生自`CirculationBookBase`。 它是空的除了其建構函式。
+- `CirculationBook`其係衍生自`CirculationBookBase`。 它是空的除了其建構函式。
 
 若要覆寫任何方法，您建立衍生類別的部分定義這類`CirculationBook`。 您可以覆寫產生的方法及繼承自模型化架構的方法。
 

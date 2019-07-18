@@ -1,14 +1,9 @@
 ---
-title: 'Idiaenumdebugstreams:: Item |Microsoft Docs'
-ms.custom: ''
+title: IDiaEnumDebugStreams::Item | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 6b388fe1-eabc-4720-9d59-dc09b0ceaeac
 caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 0f3bf23ae2bce1c0fac1017fdd732a0b03c69b8e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: e7559ffe33c5e53ef882962d04e0e6f69b49a6e6
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51774441"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68182574"
 ---
 # <a name="idiaenumdebugstreamsitem"></a>IDiaEnumDebugStreams::Item
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -78,6 +73,3 @@ IDiaEnumDebugStreamData *GetStreamData(IDiaEnumDebugStreams *pStreamList,
 ## <a name="see-also"></a>另請參閱  
  [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md)   
  [IDiaEnumDebugStreams](../../debugger/debug-interface-access/idiaenumdebugstreams.md)
-
-
-

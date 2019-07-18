@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - MODULE_FLAGS enumeration
 ms.assetid: 0e555b42-b846-4dbb-812e-8e3d11c85b2d
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c3ec96c5ba806e6eff735edc8093868b19ebaf5b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 4b8080710b3225f025c329e0c5cb42331e1a059f
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56681396"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66346797"
 ---
 # <a name="moduleflags"></a>MODULE_FLAGS
 用來描述模組。
@@ -47,18 +50,24 @@ public enum enum_MODULE_FLAGS { 
 };
 ```
 
-## <a name="members"></a>成員
- MODULE_FLAG_NONE 指定沒有模組。
+## <a name="fields"></a>欄位
+ `MODULE_FLAG_NONE`\
+ 指定沒有模組。
 
- MODULE_FLAG_SYSTEM 指定系統模組。
+ `MODULE_FLAG_SYSTEM`\
+ 指定系統模組。
 
- MODULE_FLAG_SYMBOLS 指定符號的模組。
+ `MODULE_FLAG_SYMBOLS`\
+ 指定符號的模組。
 
- MODULE_FLAG_64BIT 指定 64 位元模組。
+ `MODULE_FLAG_64BIT`\
+ 指定 64 位元模組。
 
- MODULE_FLAG_OPTIMIZED 指定了模組已經過最佳化。 此狀態會反映在**模組**視窗。
+ `MODULE_FLAG_OPTIMIZED`\
+ 指定模組已經過最佳化。 此狀態會反映在**模組**視窗。
 
- MODULE_FLAG_UNOPTIMIZED 指定了模組尚未經過最佳化。 此狀態會反映在**模組**視窗。 這是預設狀態。
+ `MODULE_FLAG_UNOPTIMIZED`\
+ 指定模組尚未經過最佳化。 此狀態會反映在**模組**視窗。 這是預設狀態。
 
 ## <a name="remarks"></a>備註
  用於`m_dwModuleFlags`隸屬[MODULE_INFO](../../../extensibility/debugger/reference/module-info.md)結構。

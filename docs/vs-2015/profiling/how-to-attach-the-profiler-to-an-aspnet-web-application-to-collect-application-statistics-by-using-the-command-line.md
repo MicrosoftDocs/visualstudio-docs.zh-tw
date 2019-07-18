@@ -9,24 +9,24 @@ caps.latest.revision: 38
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 82d873d166e2275e68231dfd0e7f6edbffd04ab1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 5c60e63384ab6f391cee1151c8ee20d39ae2e1b2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54781097"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432860"
 ---
-# <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-application-statistics-by-using-the-command-line"></a>如何：使用命令列將程式碼剖析工具附加至 ASP.NET Web 應用程式以收集應用程式統計資料
+# <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-application-statistics-by-using-the-command-line"></a>HOW TO：附加至 ASP.NET Web 應用程式以收集應用程式統計資料，請使用命令列的 Profiler
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 本主題描述如何使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 分析工具命令列工具將分析工具附加至 ASP.NET Web 應用程式，並使用取樣方法收集效能統計資料。  
 
 > [!NOTE]
->  Windows 8 和 Windows Server 2012 增強式安全性功能需要的重大變更，會以 Visual Studio 分析工具在這些平台收集資料的方式表現。 Windows 市集應用程式也需要新的資料收集技術。 請參閱 [Windows 8 和 Windows Server 2012 應用程式的效能工具](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)。  
+> Windows 8 和 Windows Server 2012 增強式安全性功能需要的重大變更，會以 Visual Studio 分析工具在這些平台收集資料的方式表現。 Windows 市集應用程式也需要新的資料收集技術。 請參閱 [Windows 8 和 Windows Server 2012 應用程式的效能工具](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)。  
 >   
->  若要將階層互動資料加入至程式碼剖析回合中，則需要使用命令列程式碼剖析工具的特定程序。 請參閱[收集階層互動資料](../profiling/adding-tier-interaction-data-from-the-command-line.md)。  
+> 若要將階層互動資料加入至程式碼剖析回合中，則需要使用命令列程式碼剖析工具的特定程序。 請參閱[收集階層互動資料](../profiling/adding-tier-interaction-data-from-the-command-line.md)。  
 >   
->  程式碼剖析工具的命令列工具位於 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 安裝目錄的 \Team Tools\Performance Tools 子目錄中。 在 64 位元電腦上，64 位元和 32 位元版本的工具都可以使用。 若要使用分析工具命令列工具，必須將工具路徑新增至命令提示字元視窗的 PATH 環境變數，或將它新增至命令本身。 如需詳細資訊，請參閱[指定命令列工具的路徑](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)。  
+> 程式碼剖析工具的命令列工具位於 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 安裝目錄的 \Team Tools\Performance Tools 子目錄中。 在 64 位元電腦上，64 位元和 32 位元版本的工具都可以使用。 若要使用分析工具命令列工具，必須將工具路徑新增至命令提示字元視窗的 PATH 環境變數，或將它新增至命令本身。 如需詳細資訊，請參閱[指定命令列工具的路徑](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)。  
 
  若要收集 ASP.NET Web 應用程式的效能資料，必須初始化適當的環境變數，而且裝載 ASP.NET Web 應用程式的電腦必須重新啟動，才能設定網頁伺服器進行分析。  
 
@@ -44,9 +44,9 @@ ms.locfileid: "54781097"
 
     **VSPerfClrEnv /globalsampleon** [**/samplelineoff**]  
 
-   -   **/globalsampleon** 會啟用取樣。  
+   - **/globalsampleon** 會啟用取樣。  
 
-   -   **/samplelineoff** 會停止將收集的資料指派給特定的原始程式碼行。 指定此選項時，資料只會指派給函式。  
+   - **/samplelineoff** 會停止將收集的資料指派給特定的原始程式碼行。 指定此選項時，資料只會指派給函式。  
 
 3. 重新啟動電腦。  
 
@@ -59,7 +59,7 @@ ms.locfileid: "54781097"
      您可以使用下列任一選項搭配 **/start:sample** 選項。  
 
    > [!NOTE]
-   >  **/user** 和 **/crosssession** 選項通常是 ASP.NET 應用程式的必要選項。  
+   > **/user** 和 **/crosssession** 選項通常是 ASP.NET 應用程式的必要選項。  
 
    |                                 選項                                  |                                                                                                                                                        描述                                                                                                                                                        |
    |-------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -69,14 +69,13 @@ ms.locfileid: "54781097"
    |         [/automark](../profiling/automark.md) **:** `Interval`          |                                                                                       只能搭配 **/wincounter** 使用。 指定 Windows 效能計數器收集事件間隔的毫秒數。 預設值為 500 毫秒。                                                                                       |
    |       [/events](../profiling/events-vsperfcmd.md) **:** `Config`        |                                                                                         指定程式碼剖析期間要收集的 Windows 事件追蹤 (ETW) 事件。 ETW 事件會收集至個別的 (.etl) 檔案。                                                                                          |
 
-
 5. 以一般方式啟動 ASP.NET Web 應用程式。  
 
 6. 將分析工具附加至 ASP.NET 背景工作處理序。 鍵入：**VSPerfCmd** [/attach](../profiling/attach.md)**:**{`PID`&#124;`ProcName`} [`Sample Event`] [[/targetclr](../profiling/targetclr.md)**:**`Version`]  
 
-   -   `PID` 會指定 ASP.NET 背景工作處理序的處理序識別碼；`ProcName` 會指定背景工作處理序的名稱。 您可以在 [Windows 工作管理員] 中檢視所有執行中處理序的處理序識別碼和名稱。  
+   - `PID` 會指定 ASP.NET 背景工作處理序的處理序識別碼；`ProcName` 會指定背景工作處理序的名稱。 您可以在 [Windows 工作管理員] 中檢視所有執行中處理序的處理序識別碼和名稱。  
 
-   -   根據預設，每經過 10,000,000 個未暫止處理器時脈週期，會取樣一次效能資料。 這在 1GH 處理器上大約是每秒 100 次。 您可以指定下列 **VSPerfCmd** 選項之一來變更時脈週期間隔，或指定不同的取樣事件。  
+   - 根據預設，每經過 10,000,000 個未暫止處理器時脈週期，會取樣一次效能資料。 這在 1GH 處理器上大約是每秒 100 次。 您可以指定下列 **VSPerfCmd** 選項之一來變更時脈週期間隔，或指定不同的取樣事件。  
 
    |取樣事件|描述|  
    |------------------|-----------------|  
@@ -86,14 +85,14 @@ ms.locfileid: "54781097"
    |[/counter](../profiling/counter.md) **:** `Config`|將取樣事件與間隔變更為 `Config` 中指定的處理器效能計數器與間隔。|  
    |[/targetclr](../profiling/targetclr.md) **:** `Version`|指定當應用程式載入多個版本的執行階段時要分析的 Common Language Runtime (CLR) 版本。|  
 
-   -   **targetclr:** `Version` 指定當應用程式載入多個版本的執行階段時要分析的 CLR 版本。 選擇性。  
+   - **targetclr:** `Version` 指定當應用程式載入多個版本的執行階段時要分析的 CLR 版本。 選擇性。  
 
 ## <a name="controlling-data-collection"></a>控制資料收集  
  當應用程式執行時，您可以使用 **VSPerfCmd.exe** 選項開始和停止將資料寫入至檔案，以控制資料收集。 控制資料收集可讓您收集特定程式執行 (例如啟動或關閉應用程式) 的資料。  
 
 #### <a name="to-start-and-stop-data-collection"></a>開始和停止資料收集  
 
--   下列成對的 **VSPerfCmd** 選項會開始和停止資料收集。 請在個別的命令列上指定各個選項。 您可以多次開始和停止資料收集。  
+- 下列成對的 **VSPerfCmd** 選項會開始和停止資料收集。 請在個別的命令列上指定各個選項。 您可以多次開始和停止資料收集。  
 
     |選項|描述|  
     |------------|-----------------|  
@@ -110,22 +109,22 @@ ms.locfileid: "54781097"
 
 #### <a name="to-end-a-profiling-session"></a>結束程式碼剖析工作階段  
 
-1.  執行下列其中一項動作，以從目標應用程式中斷連結分析工具：  
+1. 執行下列其中一項動作，以從目標應用程式中斷連結分析工具：  
 
-    -   輸入 **VSPerfCmd /detach**  
+    - 輸入 **VSPerfCmd /detach**  
 
          -或-  
 
-    -   關閉 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 背景工作處理序。  
+    - 關閉 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 背景工作處理序。  
 
-2.  關閉分析工具。 鍵入：**VSPerfCmd** [/shutdown](../profiling/shutdown.md)  
+2. 關閉分析工具。 鍵入：**VSPerfCmd** [/shutdown](../profiling/shutdown.md)  
 
-3.  (選擇性) 清除程式碼剖析環境變數。 類型：  
+3. (選擇性) 清除程式碼剖析環境變數。 類型：  
 
      **VSPerfCmd /globaloff**  
 
-4.  重新啟動電腦。  
+4. 重新啟動電腦。  
 
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [對 ASP.NET Web 應用程式進行程式碼剖析](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
  [取樣方法資料檢視](../profiling/profiler-sampling-method-data-views.md)

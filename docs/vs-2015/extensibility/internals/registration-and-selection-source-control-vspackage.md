@@ -1,27 +1,22 @@
 ---
 title: 註冊和選取 (原始檔控制 VSPackage) |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - registration, source control packages
 - source control packages, registration
 ms.assetid: 7d21fe48-489a-4f55-acb5-73da64c4e155
 caps.latest.revision: 35
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 636e70357c23059a505d657af0078653de413976
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 692f2a9f34edd41839179f7229e079ec8e791800
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51764466"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68185826"
 ---
 # <a name="registration-and-selection-source-control-vspackage"></a>註冊和選取 (原始檔控制 VSPackage)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -31,25 +26,25 @@ ms.locfileid: "51764466"
 ## <a name="registering-a-source-control-package"></a>將原始檔控制套件註冊  
  原始檔控制套件註冊以便[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]環境可以找到它，並查詢其支援的功能。 這是根據其功能的命令所需或明確要求時，才，建立封裝的執行個體的延遲載入配置。  
   
- Vspackage 會將資訊放入特定版本的登錄機碼 hkey_local_machine\software\microsoft\visualstudio \\\*X.Y*，其中*X*是主要版本號碼和*Y*是次要版本號碼。 這種做法讓您能夠支援多個版本的並排顯示安裝[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]。  
+ Vspackage 會將資訊放入特定版本的登錄機碼 hkey_local_machine\software\microsoft\visualstudio \\*X.Y*，其中*X*是主要版本號碼和*Y*是次要版本號碼。 這種做法讓您能夠支援多個版本的並排顯示安裝[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]。  
   
  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]使用者介面 (UI) 以及原始檔控制 Vspackage 支援從多個原始檔控制外掛程式 （透過原始檔控制配接器套件） 中的選取範圍。 可以有一個作用中的原始檔控制外掛程式或 VSPackage 一次。 不過，如下所述，IDE 會允許透過自動解決方案為根據封裝交換機制切換原始檔控制外掛程式和 Vspackage。 有部分的原始檔控制 VSPackage 一些需求，以啟用此工作階段機制。  
   
 ### <a name="registry-entries"></a>登錄項目  
  原始檔控制套件需要三個私用的 Guid:  
   
-- 套件 GUID： 這是包含來源控制項實作 （在這一節中稱為 ID_Package） 封裝的主要 GUID。  
+- 套件 GUID:這是包含來源控制項實作 （在這一節中稱為 ID_Package） 封裝的主要 GUID。  
   
-- 原始檔控制 GUID： 這是原始檔控制 VSPackage 用來向 Visual Studio 原始檔控制虛設常式的 GUID，也會做為命令的 UI 內容的 GUID。 原始檔控制服務的 GUID 會註冊在原始檔控制的 GUID。 在此範例中，原始檔控制 GUID 稱為 ID_SccProvider。  
+- 原始檔控制 GUID:這是原始檔控制 VSPackage 用來向 Visual Studio 原始檔控制虛設常式的 GUID，並也會做為命令的 UI 內容的 GUID。 原始檔控制服務的 GUID 會註冊在原始檔控制的 GUID。 在此範例中，原始檔控制 GUID 稱為 ID_SccProvider。  
   
-- 原始檔控制服務的 GUID： 這是私用的服務 （這一節中稱為 SID_SccPkgService） 的 Visual Studio 所使用的 GUID。 此外，原始檔控制套件需要定義其他的 Guid，適用於 Vspackage，工具視窗等等。  
+- 原始檔控制服務的 GUID:這是私用的服務 （這一節中稱為 SID_SccPkgService） 的 Visual Studio 所使用的 GUID。 此外，原始檔控制套件需要定義其他的 Guid，適用於 Vspackage，工具視窗等等。  
   
   原始檔控制 VSPackage 必須進行下列登錄項目：  
   
 |機碼名稱|項目|  
 |--------------|-------------|  
 |`HKEY_LOCAL_MACHINE\   SOFTWARE\     Microsoft\       VisualStudio\         X.Y\           SourceControlProviders\`|（預設值） = rg_sz: {ID_SccProvider}|  
-|`HKEY_LOCAL_MACHINE\   SOFTWARE\     Microsoft\       VisualStudio\         X.Y\           SourceControlProviders\             {ID_SccProvider}\`|（預設值） = rg_sz:\<封裝的好記名稱 ><br /><br /> 服務 = rg_sz: {SID_SccPkgService}|  
+|`HKEY_LOCAL_MACHINE\   SOFTWARE\     Microsoft\       VisualStudio\         X.Y\           SourceControlProviders\             {ID_SccProvider}\`|（預設值） = rg_sz:\<封裝的好記名稱 ><br /><br /> Service = rg_sz:{SID_SccPkgService}|  
 |`HKEY_LOCAL_MACHINE\   SOFTWARE\     Microsoft\       VisualStudio\         X.Y\           SourceControlProviders\             {ID_SccProvider}\               Name\`|（預設值） = rg_sz: #\<當地語系化名稱的資源識別碼 ><br /><br /> 封裝 = rg_sz: {ID_Package}|  
 |`HKEY_LOCAL_MACHINE\   SOFTWARE\     Microsoft\       VisualStudio\         X.Y\           SolutionPersistence\             <PackageName>\`<br /><br /> (請注意，索引鍵的名稱， `SourceCodeControl`，已由[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]並不是可用的選擇\<PackageName >。)|（預設值） = rg_sz: {ID_Package}|  
   
@@ -91,4 +86,3 @@ ms.locfileid: "51764466"
  [功能](../../extensibility/internals/source-control-vspackage-features.md)   
  [建立原始檔控制外掛程式](../../extensibility/internals/creating-a-source-control-plug-in.md)   
  [VSPackage](../../extensibility/internals/vspackages.md)
-

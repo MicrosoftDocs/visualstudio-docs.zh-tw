@@ -6,17 +6,20 @@ helpviewer_keywords:
 - IDebugComPlusSymbolProvider::GetSymUnmanagedReader
 - GetSymUnmanagedReader
 ms.assetid: 8f1c1627-217f-4405-8141-7a2eb80310a5
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3651b48217274f1b408c10831f78daa245ff1471
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 0ebb8d92e552ef9052ad4878802ded05f5bb62dc
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56701286"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66336754"
 ---
 # <a name="idebugcomplussymbolprovidergetsymunmanagedreader"></a>IDebugComPlusSymbolProvider::GetSymUnmanagedReader
 擷取以供 unmanaged 程式碼的符號讀取器。
@@ -39,18 +42,15 @@ int GetSymUnmanagedReader(
 );
 ```
 
-#### <a name="parameters"></a>參數
-`ulAppDomainID`
+## <a name="parameters"></a>參數
+`ulAppDomainID`\
+[in]應用程式定義域的識別項。
 
- [in]應用程式定義域的識別項。
+`guidModule`\
+[in]模組的唯一識別碼。
 
-`guidModule`
-
- [in]模組的唯一識別碼。
-
-`ppSymUnmanagedReader`
-
- [out]傳回表示的符號讀取器的物件。
+`ppSymUnmanagedReader`\
+[out]傳回表示的符號讀取器的物件。
 
 ## <a name="return-value"></a>傳回值
 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

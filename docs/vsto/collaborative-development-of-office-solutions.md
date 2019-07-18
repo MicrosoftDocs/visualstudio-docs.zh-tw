@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 76c26a110d88d3dee8bf7540647ea0bfde4e7c4f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56635055"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62949483"
 ---
 # <a name="collaborative-development-of-office-solutions"></a>Office 方案的共同開發
   多位開發人員可以使用 Office 專案中相同的方式，他們在其他 Visual Studio 專案上共同作業。 Visual Studio 正確找出每一部做為 Microsoft Office 安裝，即使 Office 會安裝在不同的位置。 不過，有一些重要的考量来留意。

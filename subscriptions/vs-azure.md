@@ -6,13 +6,12 @@ manager: evelynp
 ms.date: 12/19/2018
 ms.topic: conceptual
 description: 了解如何啟用 Visual Studio 訂用帳戶所含的 Azure 權益。
-searchscope: VS Subscription
-ms.openlocfilehash: 5ef69bbaeeeed7de66e1cf206182bb83f4f42ff2
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 542f460e6c228564e05affd9467f6deaaf2b0506
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843204"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823751"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>在 Visual Studio 訂用帳戶中使用 Microsoft Azure
 
@@ -30,7 +29,6 @@ ms.locfileid: "56843204"
 |              Visual Studio Professional 每月              |        無法使用        |                                                             |
 |                    Visual Studio Test Pro                    |     每月信用點數 $50 美元      |                             是                             |
 |                        MSDN 平台                        |     每月信用點數 $100 美元     |                             是                             |
-|                 Visual Studio Dev Essentials                 | 免費服務 + 信用點數 200 美元 | 免費服務為永久制。  信用點數 $200 美元僅限一次。 |
 |               Visual Studio Enterprise - NFR\*               |     每月信用點數 $150 美元     |                             是                             |
 |                Visual Studio Enterprise - FTE                |     每月信用點數 $150 美元     |                             是                             |
 |     Visual Studio Enterprise - Microsoft 合作夥伴網路     |     每月信用點數 $150 美元     |                             是                             |
@@ -43,10 +41,8 @@ ms.locfileid: "56843204"
 
 *包括禁止轉售 (NFR)、最有價值專家 (MVP)、區域經理 (RD)、Visual Studio 產業夥伴 (VSIP)
 
-
 > [!NOTE]
 > Microsoft 不再於雲端訂用帳戶中提供 Visual Studio Professional 年度訂用帳戶和 Visual Studio Enterprise 年度訂用帳戶。 現有的客戶體驗，以及更新、增加、減少或取消其訂用帳戶的能力將不會改變。 我們鼓勵新的客戶移至 [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) 來探索 Visual Studio 的不同購買選項。
-
 
 不確定您使用哪一個訂用帳戶？  連線到 [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) 以查看指派給您的電子郵件地址的所有訂用帳戶。 若沒有看到您的所有訂用帳戶，可能有一或多個訂用帳戶是指派到不同的電子郵件地址。  您必須以該電子郵件地址登入才能查看對應的訂用帳戶。
 
@@ -54,11 +50,11 @@ ms.locfileid: "56843204"
 
 1. 登入 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)。
 
-2. 在 [權益] 頁面的 [工具] 區段中找到 Azure 磚，並按一下權益磚底部的 [啟用] 連結。
+2. 在 [權益] 頁面的 [工具] 區段中找到 Azure 磚，並按一下權益磚底部的 [啟用]  連結。
    > [!div class="mx-imgBorder"]
    > ![Azure 磚](_img/vs-azure/vs-azure-tile.png)
 
-3. 填入建立 Azure 訂用帳戶所需的資訊，按一下核取方塊以接受條款和條件，然後按一下 [註冊]：
+3. 填入建立 Azure 訂用帳戶所需的資訊，按一下核取方塊以接受條款和條件，然後按一下 [註冊]  ：
    > [!div class="mx-imgBorder"]
    > ![Azure 註冊](_img/vs-azure/vs-azure-sign-up-cropped.png)
 
@@ -92,10 +88,9 @@ ms.locfileid: "56843204"
 
 如果您的小組或組織中的人員代表您購買訂用帳戶，請連絡您組織的 Visual Studio 系統管理員，並要求可讓您取得所需 Azure 每月信用額度數量的 Visual Studio 訂用帳戶。   請要求系統管理員將新的訂用帳戶指派給您的上一個訂用帳戶所指派的相同使用者識別碼，讓您不必擔心移轉您的 Azure 訂用帳戶。
 
-
 如果您可以直接購買訂用帳戶，請執行下列其中一個動作：
-1.  透過 Visual Studio Marketplace 購買年度 Visual Studio [Enterprise](https://marketplace.visualstudio.com/items?itemName=ms.vs-enterprise-annual) 或 [Professional](https://marketplace.visualstudio.com/items?itemName=ms.vs-professional-annual) 雲端訂用帳戶。
-2.  透過 [Microsoft Store](https://www.microsoft.com/en-us/search/result.aspx?q=visual+studio+subscription) 為目前的訂用帳戶續約，來充分利用 50% 或更高的折扣。
+1. 透過 Visual Studio Marketplace 購買年度 Visual Studio [Enterprise](https://marketplace.visualstudio.com/items?itemName=ms.vs-enterprise-annual) 或 [Professional](https://marketplace.visualstudio.com/items?itemName=ms.vs-professional-annual) 雲端訂用帳戶。
+2. 透過 [Microsoft Store](https://www.microsoft.com/en-us/search/result.aspx?q=visual+studio+subscription) 為目前的訂用帳戶續約，來充分利用 50% 或更高的折扣。
 
 比較所有的[訂用帳戶及其權益](https://visualstudio.microsoft.com/vs/pricing/)。
 
@@ -103,16 +98,16 @@ ms.locfileid: "56843204"
 
 如果您在 Microsoft 帳戶下有另一個**不同**訂用帳戶層級的有效 Visual Studio 訂用帳戶，請連絡 [Azure 支援](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade)以取得協助。
 
-如果您的訂用帳戶具有消費限制，而您在它過期之前未採取任何動作，則會停用您的 Azure 訂用帳戶。 若要將它轉換為預付型供應項目並繼續使用它，請新增付款方式並[移除您的消費限制](/azure/billing/billing-spending-limit/)。
+如果您的訂用帳戶具有消費限制，而您在它過期之前未採取任何動作，則會停用您的 Azure 訂用帳戶。 若要將它轉換為隨用隨付供應項目並繼續使用它，請新增付款方式並[移除您的消費限制](/azure/billing/billing-spending-limit/)。
 
-如果您不想繼續此 Visual Studio Azure 訂用帳戶，便可以將您的資源 (例如虛擬機器和資料庫) 移轉到另一個 Azure 訂用帳戶，並可隨時[取消](http://azure.microsoft.com/support/cancel-account/)此訂用帳戶。
+如果您不想繼續此 Visual Studio Azure 訂用帳戶，便可以將您的資源 (例如虛擬機器和資料庫) 移轉到另一個 Azure 訂用帳戶，並可隨時[取消](https://azure.microsoft.com/support/cancel-account/)此訂用帳戶。
 
 如果您確信不應該收到這封電子郵件，請連絡 [Azure 客戶支援](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade)。
 
 ## <a name="support-resources"></a>支援資源
 
--  需要使用 Azure 的說明嗎？  請參閱這些資源：
-    - 技術支援：[https://azure.microsoft.com/support/options/](https://azure.microsoft.com/support/options/)
-    - [Azure 文件](/azure/)
--  如需 Visual Studio 訂用帳戶有關銷售、訂閱、帳戶與計費的協助，請聯繫 Visual Studio [訂用帳戶支援](https://visualstudio.microsoft.com/subscriptions/support/)。
--  是否有關於 Visual Studio IDE、Azure DevOps Services 或其他 Visual Studio 產品或服務的問題？  前往 [Visual Studio 支援](https://visualstudio.microsoft.com/support/)
+- 需要使用 Azure 的說明嗎？  請參閱這些資源：
+  - 技術支援：[https://azure.microsoft.com/support/options/](https://azure.microsoft.com/support/options/)
+  - [Azure 文件](/azure/)
+- 如需 Visual Studio 訂用帳戶有關銷售、訂閱、帳戶與計費的協助，請聯繫 Visual Studio [訂用帳戶支援](https://visualstudio.microsoft.com/subscriptions/support/)。
+- 是否有關於 Visual Studio IDE、Azure DevOps Services 或其他 Visual Studio 產品或服務的問題？  前往 [Visual Studio 支援](https://visualstudio.microsoft.com/support/)

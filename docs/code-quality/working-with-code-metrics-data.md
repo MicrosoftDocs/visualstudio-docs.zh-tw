@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8bcaa3688486831f83712dc0cf0ee3e4a17c4a22
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: bbe2c216a9293ddc8c5c1212957c2987924d14e1
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55918373"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62825067"
 ---
 # <a name="use-the-code-metrics-results-window"></a>使用程式碼度量結果視窗
 
@@ -48,15 +48,15 @@ ms.locfileid: "55918373"
 
 ### <a name="to-filter-the-code-metrics-results"></a>若要篩選程式碼度量結果
 
-1.  從**篩選**清單中，選取資料行名稱。
+1. 從**篩選**清單中，選取資料行名稱。
 
-2.  在  **Min**，輸入要顯示的最小值。
+2. 在  **Min**，輸入要顯示的最小值。
 
-3.  在  **Max**，輸入要顯示的最大值。
+3. 在  **Max**，輸入要顯示的最大值。
 
-4.  按一下 [**套用篩選條件**] 按鈕。
+4. 按一下 [**套用篩選條件**] 按鈕。
 
-5.  若要查看的結果詳細資料，請展開階層樹狀結構。
+5. 若要查看的結果詳細資料，請展開階層樹狀結構。
 
 ## <a name="add-remove-and-rearrange-data-columns"></a>新增、 移除和重新排列資料行
 
@@ -88,23 +88,23 @@ ms.locfileid: "55918373"
 
 ### <a name="to-create-a-work-item-based-on-a-result"></a>若要建立根據結果的工作項目
 
-1.  以滑鼠右鍵按一下結果。
+1. 以滑鼠右鍵按一下結果。
 
-2.  指向**建立工作項目**，然後按一下您想要建立的工作項目類型 (**Bug**，**工作**，依此類推)。
+2. 指向**建立工作項目**，然後按一下您想要建立的工作項目類型 (**Bug**，**工作**，依此類推)。
 
-3.  填寫所有必要欄位，以完成工作項目表單。
+3. 填寫所有必要欄位，以完成工作項目表單。
 
-4.  在 **檔案**功能表上，按一下**全部儲存**儲存工作項目。
+4. 在 **檔案**功能表上，按一下**全部儲存**儲存工作項目。
 
 ### <a name="to-create-a-bug-based-on-a-result"></a>若要建立根據結果的 bug
 
-1.  按一下以選取它的結果。
+1. 按一下以選取它的結果。
 
-2.  按一下 [**建立工作項目**] 按鈕。
+2. 按一下 [**建立工作項目**] 按鈕。
 
-3.  填寫所有必要欄位，以完成工作項目表單。
+3. 填寫所有必要欄位，以完成工作項目表單。
 
-4.  在 **檔案**功能表上，按一下**全部儲存**儲存工作項目。
+4. 在 **檔案**功能表上，按一下**全部儲存**儲存工作項目。
 
 ## <a name="see-also"></a>另請參閱
 

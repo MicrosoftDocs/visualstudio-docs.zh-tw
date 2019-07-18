@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - UNMANAGED_ADDRESS_PHYSICAL structure
 ms.assetid: fed09686-caa6-4efc-851e-a0432019e9d0
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a3b1feed9c32746c662131ba613fa19ca1aac0ae
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 93f6d1094a490041cd04a47fa073d2e75b8d2e23
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56679225"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66316113"
 ---
 # <a name="unmanagedaddressphysical"></a>UNMANAGED_ADDRESS_PHYSICAL
 此結構表示的實體位址。
@@ -36,8 +39,9 @@ public struct UNMANAGED_ADDRESS_PHYSICAL {
 }
 ```
 
-## <a name="terms"></a>詞彙
- 位移的 64 位元的實體位址空間中的位移。
+## <a name="members"></a>成員
+ `offset`\
+ 實體的位址空間，以 64 位元位移。
 
 ## <a name="remarks"></a>備註
  此結構是中的等位的一部分[DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)結構的時機`dwKind`欄位`DEBUG_ADDRESS_UNION`結構設定為`ADDRESS_KIND_UNMANAGED_PHYSICAL`(中的值[ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)列舉型別）。

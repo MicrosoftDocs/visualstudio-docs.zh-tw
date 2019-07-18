@@ -1,14 +1,9 @@
 ---
-title: IDiaEnumSymbolsByAddr |Microsoft Docs
-ms.custom: ''
+title: IDiaEnumSymbolsByAddr | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 37d3dcdf-e4fa-4354-b5e1-8843566b52ac
 caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: f394e0fa3f2c6c6697db5b81eca16f4020f314d7
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 5a4b36b27c43beaa0f975adc5ddfa0a4feb9c069
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51753771"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68194860"
 ---
 # <a name="idiaenumsymbolsbyaddr"></a>IDiaEnumSymbolsByAddr
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -39,7 +34,7 @@ IDiaEnumSymbolsByAddr : IUnknown
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法  
  下表顯示的方法`IDiaEnumSymbolsByAddr`。  
   
-|方法|描述|  
+|方法|說明|  
 |------------|-----------------|  
 |[IDiaEnumSymbolsByAddr::symbolByAddr](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr-symbolbyaddr.md)|將列舉值中執行查閱的區段和位移。|  
 |[IDiaEnumSymbolsByAddr::symbolByRVA](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr-symbolbyrva.md)|將列舉值，依相對虛擬位址 (RVA) 中執行查閱。|  
@@ -102,16 +97,13 @@ void ShowSymbolsByAddress(IDiaSession *pSession)
 ```  
   
 ## <a name="requirements"></a>需求  
- 標頭： Dia2.h  
+ 標頭：dia2.h  
   
  程式庫： diaguids.lib  
   
  DLL: msdia80.dll  
   
 ## <a name="see-also"></a>另請參閱  
- [介面 （偵錯介面存取 SDK）](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
- [Idiasession:: Getsymbolsbyaddr](../../debugger/debug-interface-access/idiasession-getsymbolsbyaddr.md)   
+ [介面 (偵錯介面存取 SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
+ [IDiaSession::getSymbolsByAddr](../../debugger/debug-interface-access/idiasession-getsymbolsbyaddr.md)   
  [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)
-
-
-

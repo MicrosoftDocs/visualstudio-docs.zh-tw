@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fcdd4e2253652246e3d0cb3fcd829c8e5d7786bf
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
-ms.translationtype: MT
+ms.openlocfilehash: 2b3138e148ea44371c7bd9b5fb82c583cd00e832
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57869911"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436418"
 ---
 # <a name="create-sharepoint-solutions"></a>建立 SharePoint 方案
   除了在 SharePoint Designer 中建立 SharePoint 應用程式之外，您也可以在 Visual Studio 中建立 SharePoint 應用程式。 Visual Studio 提供進階偵錯工具、IntelliSense、陳述式完成和專案範本等功能，可加速開發 SharePoint。 Visual Studio 也利用進階 .NET Framework 工具和語言。 您可以使用 Visual Basic 或 Visual C# 開發 SharePoint 專案，並且可以使用 JavaScript 開發 SharePoint 專案的應用程式。
@@ -25,7 +25,7 @@ ms.locfileid: "57869911"
  如需 SharePoint 2013 與 SharePoint 增益集的相關資訊，請參閱 [SharePoint 2013](https://products.office.com/previous-versions/microsoft-sharepoint-2013) 與 [為 SharePoint 建置應用程式](/sharepoint/dev/sp-add-ins/sharepoint-add-ins)。
 
 > [!NOTE]
->  了解如何使用新的 [SharePoint 增益集模型](/sharepoint/dev/sp-add-ins/sharepoint-add-ins) ，以擴充使用者的 SharePoint 體驗。 相較於 SharePoint 解決方案，這些增益集的使用量非常小，而且幾乎可以使用 HTML5、JavaScript、CSS3 和 XML 等任何 Web 程式設計技術來建置。
+> 了解如何使用新的 [SharePoint 增益集模型](/sharepoint/dev/sp-add-ins/sharepoint-add-ins) ，以擴充使用者的 SharePoint 體驗。 相較於 SharePoint 解決方案，這些增益集的使用量非常小，而且幾乎可以使用 HTML5、JavaScript、CSS3 和 XML 等任何 Web 程式設計技術來建置。
 
 |||
 |-|-|

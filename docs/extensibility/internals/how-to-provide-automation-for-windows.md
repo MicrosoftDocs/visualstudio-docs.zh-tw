@@ -1,24 +1,24 @@
 ---
-title: HOW TO：提供的 Windows 自動化 |Microsoft Docs
+title: 作法：提供的 Windows 自動化 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - automation [Visual Studio SDK], tool windows
 - tool windows, automation
 ms.assetid: 512ab2a4-7987-4912-8f40-8804bf66f829
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 190372e44f068296f7fea14819a3520803b89406
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 547ace3b093aa8c5f21b0bcbdbafda5a1452dd23
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843128"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66351049"
 ---
-# <a name="how-to-provide-automation-for-windows"></a>HOW TO：提供適用於 windows 的自動化
+# <a name="how-to-provide-automation-for-windows"></a>作法：提供適用於 windows 的自動化
 
 您可以提供文件和工具視窗的自動化。 提供自動化是建議的每當您想要在視窗中，提供 automation 物件和環境已不提供現成的自動化物件，其方式就如同使用 工作清單。
 
@@ -26,13 +26,13 @@ ms.locfileid: "56843128"
 
 環境所傳回的標準工具視窗上提供自動化<xref:EnvDTE.Window>物件中的下列程序所述：
 
-1.  呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.GetProperty%2A>方法的環境透過[__VSFPROPID。VSFPROPID_ExtWindowObject](<xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID.VSFPROPID_ExtWindowObject>)作為`VSFPROPID`參數，以取得`Window`物件。
+1. 呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.GetProperty%2A>方法的環境透過[__VSFPROPID。VSFPROPID_ExtWindowObject](<xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID.VSFPROPID_ExtWindowObject>)作為`VSFPROPID`參數，以取得`Window`物件。
 
-2.  當呼叫端要求 VSPackage 特有的自動化物件，為您的工具視窗，透過<xref:EnvDTE.Window.Object%2A>，此環境會呼叫`QueryInterface`如`IExtensibleObject`， <xref:Microsoft.VisualStudio.Shell.Interop.IVsExtensibleObject>，或`IDispatch`介面。 兩者`IExtensibleObject`並`IVsExtensibleObject`提供<xref:Microsoft.VisualStudio.Shell.Interop.IVsExtensibleObject.GetAutomationObject%2A>方法。
+2. 當呼叫端要求 VSPackage 特有的自動化物件，為您的工具視窗，透過<xref:EnvDTE.Window.Object%2A>，此環境會呼叫`QueryInterface`如`IExtensibleObject`， <xref:Microsoft.VisualStudio.Shell.Interop.IVsExtensibleObject>，或`IDispatch`介面。 兩者`IExtensibleObject`並`IVsExtensibleObject`提供<xref:Microsoft.VisualStudio.Shell.Interop.IVsExtensibleObject.GetAutomationObject%2A>方法。
 
-3.  當環境然後呼叫`GetAutomationObject`方法並傳遞`NULL`，回應傳遞回您 VSPackage 所指定的物件。
+3. 當環境然後呼叫`GetAutomationObject`方法並傳遞`NULL`，回應傳遞回您 VSPackage 所指定的物件。
 
-4.  如果呼叫`QueryInterface`for`IExtensibleObject`並`IVsExtensibleObject`失敗，則環境會呼叫`QueryInterface`如`IDispatch`。
+4. 如果呼叫`QueryInterface`for`IExtensibleObject`並`IVsExtensibleObject`失敗，則環境會呼叫`QueryInterface`如`IDispatch`。
 
 ## <a name="automation-for-document-windows"></a>自動化文件視窗
 

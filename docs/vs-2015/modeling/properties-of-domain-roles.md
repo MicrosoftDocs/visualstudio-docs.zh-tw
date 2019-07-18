@@ -1,23 +1,20 @@
 ---
 title: 網域角色的屬性 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: reference
 ms.assetid: 5a7bb18c-638e-45e8-9d79-9aa6a9e14b0e
 caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 51149979544c19b0a887ad77e80a26284051778b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: b78c409a761a98439cbbbfdf088e052eca745f32
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49244084"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444461"
 ---
 # <a name="properties-of-domain-roles"></a>網域角色的屬性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +24,7 @@ ms.locfileid: "49244084"
 |屬性|描述|預設|  
 |--------------|-----------------|-------------|  
 |集合類型|如果此角色的多重性是 0..* 或 1..\*，這個屬性自訂泛型型別是用來儲存連結的集合。|`(none)` - <xref:Microsoft.VisualStudio.Modeling.LinkedElementCollection%601> 使用|  
-|自訂屬性|您在此處指定的屬性會加入做為屬性，產生的程式碼類別。|\<無 >|  
+|自訂屬性|您在此處指定的屬性會加入做為屬性，產生的程式碼類別。|\<無>|  
 |是可瀏覽屬性嗎|如果`True`，以及角色屬性關聯性的多重性是 0..1 或 1..1，如果可在使用者瀏覽**屬性**視窗。 屬性會顯示在另一端的關聯性連結項目的名稱。|`True`|  
 |是屬性產生器|如果`True`，對於此角色，您可以使用來周遊關聯性中的程式碼會產生角色屬性。 如果您設定為 false，您可以比較沒有效率的方式周遊關聯性，使用的網域關聯性的靜態方法。|`True`|  
 |屬性 Getter 存取修飾詞|產生的屬性 getter 的存取修飾詞 (`public`， `internal`， `private`， `protected`，或`protected internal`)。|`public`|  
@@ -38,18 +35,15 @@ ms.locfileid: "49244084"
 |傳播刪除|`True` 若要刪除的項目刪除相關聯的連結時，扮演此角色。|`True` 內嵌角色的目標。<br /><br /> `False` 其他角色。<br /><br /> 如需詳細資訊，請參閱 <<c0> [ 自訂刪除行為](../modeling/customizing-deletion-behavior.md)。|  
 |屬性名稱|角色扮演者的程式碼中產生的屬性名稱。 此名稱不能包含空白字元。|如果此角色擁有零對一的相反角色的名稱或一對一的多重性;否則，複數化相反角色的名稱。|  
 |角色扮演者|關聯性中扮演此角色的項目網域類別。 這個屬性是唯讀的。|此角色的角色扮演者的網域類別。|  
-|注意|網域角色相關聯的非正式附註。|\<無 >|  
-|分類|產生的屬性出現在類別目錄**屬性**中產生的設計工具視窗。 如果這個屬性是空的則產生的屬性會出現**Misc**類別|\<無 >|  
+|注意|網域角色相關聯的非正式附註。|\<無>|  
+|分類|產生的屬性出現在類別目錄**屬性**中產生的設計工具視窗。 如果這個屬性是空的則產生的屬性會出現**Misc**類別|\<無>|  
 |描述|描述用來記錄程式碼，並會在產生的設計工具的 UI。<br /><br /> 描述會出現在角色扮演者類別的產生屬性的 Intellisense 工具提示。|`Description for` *角色的完整名稱*|  
 |顯示名稱|網域角色產生的設計工具中顯示名稱。|[名稱] 屬性調整過的值。|  
-|說明關鍵字|選擇性的關鍵字是用來編製索引的網域角色的 F1 說明。|\<無 >|  
+|說明關鍵字|選擇性的關鍵字是用來編製索引的網域角色的 F1 說明。|\<無>|  
 |內容顯示名稱|會顯示在產生的設計工具產生的角色屬性名稱。|屬性名稱屬性調整過的值。|  
   
 > [!NOTE]
->  顯示名稱的預設值根據相關聯的屬性值中，插入小寫字元前面，和另一個大寫字元之後沒有接著，每個大寫字元前的加上空格。  
+> 顯示名稱的預設值根據相關聯的屬性值中，插入小寫字元前面，和另一個大寫字元之後沒有接著，每個大寫字元前的加上空格。  
   
 ## <a name="see-also"></a>另請參閱  
  [網域關聯性的屬性](../modeling/properties-of-domain-relationships.md)
-
-
-

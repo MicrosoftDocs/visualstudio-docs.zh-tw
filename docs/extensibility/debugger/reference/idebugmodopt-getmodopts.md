@@ -6,17 +6,20 @@ helpviewer_keywords:
 - IDebugModOpt::GetModOpts
 - GetModOpts
 ms.assetid: cb513fa9-d521-4a65-b968-f55f53a368df
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4cd6042219e03d9e3ca3b6192b49ccfda6881416
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: f5ebced053b80af8dce81d41e6614e89e4ffbf3a
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56689690"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66324014"
 ---
 # <a name="idebugmodoptgetmodopts"></a>IDebugModOpt::GetModOpts
 擷取一份選擇性修飾詞。
@@ -39,18 +42,15 @@ int GetModOpts(
 );
 ```
 
-#### <a name="parameters"></a>參數
- `celt`
+## <a name="parameters"></a>參數
+`celt`\
+[in]要傳回的項目數目。
 
- [in]要傳回的項目數目。
+`rgelt`\
+[out]傳回陣列，其中包含的選項。
 
- `rgelt`
-
- [out]傳回陣列，其中包含的選項。
-
- `pceltFetched`
-
- [in、 out]在傳回的項目數`rgelt`陣列。
+`pceltFetched`\
+[in、 out]在傳回的項目數`rgelt`陣列。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

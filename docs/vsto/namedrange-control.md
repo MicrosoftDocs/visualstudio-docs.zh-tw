@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a35630000c92e88c77039114313799b000d5ebbd
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 8dd8627c4e9baaa790a5d97a8021220a820356fb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56604115"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442441"
 ---
 # <a name="namedrange-control"></a>NamedRange 控制項
   <xref:Microsoft.Office.Tools.Excel.NamedRange> 控制項是具有唯一名稱、可公開事件及繫結至資料的範圍。 如需詳細資訊，請參閱 < [Excel 物件模型概觀](../vsto/excel-object-model-overview.md)。
@@ -35,7 +35,7 @@ ms.locfileid: "56604115"
  在 VSTO 增益集中，您可以在執行階段將 <xref:Microsoft.Office.Tools.Excel.NamedRange> 控制項加入工作表。 如需詳細資訊，請參閱[如何：將 NamedRange 控制項加入工作表](../vsto/how-to-add-namedrange-controls-to-worksheets.md)。
 
 > [!NOTE]
->  根據預設，當工作表關閉時，動態建立的具名範圍不會保存為工作表中的主控制項。 如需詳細資訊，請參閱 <<c0> [ 將控制項加入 Office 文件，在執行階段](../vsto/adding-controls-to-office-documents-at-run-time.md)。
+> 根據預設，當工作表關閉時，動態建立的具名範圍不會保存為工作表中的主控制項。 如需詳細資訊，請參閱 <<c0> [ 將控制項加入 Office 文件，在執行階段](../vsto/adding-controls-to-office-documents-at-run-time.md)。
 
  <xref:Microsoft.Office.Tools.Excel.NamedRange> 控制項只能包含特定工作表上的範圍。 <xref:Microsoft.Office.Tools.Excel.NamedRange> 控制項不可以具有適用於所有工作表的相對名稱，也不可以包含在活頁簿中合併兩個 (含) 以上工作表的範圍 (3-D 範圍)。
 
@@ -55,21 +55,21 @@ ms.locfileid: "56604115"
 ## <a name="events"></a>事件
  下列事件適用於 <xref:Microsoft.Office.Tools.Excel.NamedRange> 控制項：
 
--   <xref:Microsoft.Office.Tools.Excel.NamedRange.BeforeDoubleClick>
+- <xref:Microsoft.Office.Tools.Excel.NamedRange.BeforeDoubleClick>
 
--   <xref:Microsoft.Office.Tools.Excel.NamedRange.BeforeRightClick>
+- <xref:Microsoft.Office.Tools.Excel.NamedRange.BeforeRightClick>
 
--   <xref:Microsoft.Office.Tools.Excel.NamedRange.BindingContextChanged>
+- <xref:Microsoft.Office.Tools.Excel.NamedRange.BindingContextChanged>
 
--   <xref:Microsoft.Office.Tools.Excel.NamedRange.Change>
+- <xref:Microsoft.Office.Tools.Excel.NamedRange.Change>
 
--   <xref:Microsoft.Office.Tools.Excel.NamedRange.Deselected>
+- <xref:Microsoft.Office.Tools.Excel.NamedRange.Deselected>
 
--   <xref:System.ComponentModel.Component.Disposed>
+- <xref:System.ComponentModel.Component.Disposed>
 
--   <xref:Microsoft.Office.Tools.Excel.NamedRange.Selected>
+- <xref:Microsoft.Office.Tools.Excel.NamedRange.Selected>
 
--   <xref:Microsoft.Office.Tools.Excel.NamedRange.SelectionChange>
+- <xref:Microsoft.Office.Tools.Excel.NamedRange.SelectionChange>
 
 ## <a name="see-also"></a>另請參閱
 - [使用擴充的物件自動化 Excel](../vsto/automating-excel-by-using-extended-objects.md)

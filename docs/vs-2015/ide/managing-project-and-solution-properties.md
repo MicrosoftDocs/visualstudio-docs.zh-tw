@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f3e9ff4acbfd6df1980a3882311b3d3c4611e064
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: dc27bd0cb93ab142d2a82758c72b27d14032d04e
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54758117"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65674970"
 ---
 # <a name="managing-project-and-solution-properties"></a>管理專案和方案屬性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ ms.locfileid: "54758117"
  ![方案總管樹狀結構中的 [屬性] 節點](../ide/media/vs2015-props-se.png "VS2015_Props_SE")  
   
 > [!TIP]
->  方案有一些屬性，專案項目也有；您可以在 [[屬性視窗]](../ide/reference/properties-window.md) 中存取這些屬性，而非 [專案設計工具]。  
+> 方案有一些屬性，專案項目也有；您可以在 [[屬性視窗]](../ide/reference/properties-window.md) 中存取這些屬性，而非 [專案設計工具]。  
   
 ## <a name="project-properties"></a>專案屬性  
  [專案屬性] 會組織成群組，而且每個群組都具有其專屬屬性頁，並且頁面可能會因語言和專案類型不同而不同。  
@@ -45,7 +45,7 @@ ms.locfileid: "54758117"
   
  ![Visual C&#43;&#43; 專案屬性](../ide/media/vs2015-projprops-cpp.png "VS2015_ProjProps_cpp")  
   
- 如需 C++ 專案屬性的資訊，請參閱[使用專案屬性](http://msdn.microsoft.com/library/9b0d6f8b-7d4e-4e61-aa75-7d14944816cd)。 如需 JavaScript 屬性的詳細資訊，請參閱 [JavaScript、屬性頁](../ide/reference/property-pages-javascript.md)。  
+ 如需 C++ 專案屬性的資訊，請參閱[使用專案屬性](https://msdn.microsoft.com/library/9b0d6f8b-7d4e-4e61-aa75-7d14944816cd)。 如需 JavaScript 屬性的詳細資訊，請參閱 [JavaScript、屬性頁](../ide/reference/property-pages-javascript.md)。  
   
 ## <a name="solution-properties"></a>方案屬性  
  若要存取方案上的屬性，請以滑鼠右鍵按一下方案總管中的方案節點，然後選擇 [屬性]。 在對話方塊中，您可以設定偵錯或發行組建的專案組態、在按 F5 時選擇哪些專案應該要當成啟始專案，以及設定程式碼分析選項。  

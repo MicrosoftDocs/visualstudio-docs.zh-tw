@@ -1,26 +1,21 @@
 ---
-title: IDebugBreakpointChecksumRequest2 |Microsoft Docs
-ms.custom: ''
+title: IDebugBreakpointChecksumRequest2 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - IDebugBreakpointChecksumRequest2 interface
 ms.assetid: 9cfdbca5-052c-48e9-8411-e2e9e4065d00
 caps.latest.revision: 8
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 0cb4c9de41f53c2bcbf7cc329f5537c2633aa6f5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 9d06656ba05c3356d9f2a148045adbf4538c5ae5
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51765443"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62431604"
 ---
 # <a name="idebugbreakpointchecksumrequest2"></a>IDebugBreakpointChecksumRequest2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -45,9 +40,8 @@ IDebugBreakpointChecksumRequest2 : IUnknown
 |[IsChecksumEnabled](../../../extensibility/debugger/reference/idebugbreakpointchecksumrequest2-ischecksumenabled.md)|判斷是否已啟用這份文件的總和檢查碼。|  
   
 ## <a name="requirements"></a>需求  
- 標頭： Msdbg.h  
+ 標頭：Msdbg.h  
   
- 命名空間： Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間：Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
-
+ 組件︰Microsoft.VisualStudio.Debugger.Interop.dll

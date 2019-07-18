@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5627cd0f5ad37a7f92408e887b87d5eda14706eb
-ms.sourcegitcommit: 612f8c21d1448f1a013c30100cdecfbec5ddb24f
+ms.openlocfilehash: bcf17504f5ae057e68544d26e071bb74cc7b83bf
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/01/2019
-ms.locfileid: "55571223"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263528"
 ---
 # <a name="deploy-an-app-to-a-local-folder-using-visual-studio"></a>使用 Visual Studio 將應用程式部署到本機資料夾
 
@@ -24,7 +24,7 @@ ms.locfileid: "55571223"
 [!INCLUDE [quickstart-prereqs](includes/quickstart-prereqs.md)]
 
 > [!NOTE]
-> 如果您需要將 Windows 桌面應用程式發行至本機資料夾，請參閱[使用 ClickOnce 部署桌面應用程式](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) (C# 或 Visual Basic)。 針對 C++/CLR，請參閱[使用 ClickOnce 部署原生應用程式](/cpp/ide/clickonce-deployment-for-visual-cpp-applications)，針對 C/C++，請參閱[使用安裝專案部署原生應用程式](/cpp/ide/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project)。
+> 如果您需要將 Windows 桌面應用程式發行至本機資料夾，請參閱[使用 ClickOnce 部署桌面應用程式](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) (C# 或 Visual Basic)。 針對 C++/CLR，請參閱[使用 ClickOnce 部署原生應用程式](/cpp/windows/clickonce-deployment-for-visual-cpp-applications)，針對 C/C++，請參閱[使用安裝專案部署原生應用程式](/cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project)。
 
 ## <a name="deploy-to-a-local-folder"></a>部署到本機資料夾
 

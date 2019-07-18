@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9d5999febf6e926ef8e9beb365728a3b150e1a38
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56647055"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62839263"
 ---
 # <a name="idiasessionfindlinesbylinenum"></a>IDiaSession::findLinesByLinenum
 判斷的編譯原始程式檔中指定的行號位於或接近的行號。
@@ -101,7 +101,7 @@ void ShowLinesInCompilands(IDiaSession *pSession, LPCOLESTR filename)
 }
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)
 - [IDiaSession](../../debugger/debug-interface-access/idiasession.md)
 - [IDiaSession::findLinesByAddr](../../debugger/debug-interface-access/idiasession-findlinesbyaddr.md)

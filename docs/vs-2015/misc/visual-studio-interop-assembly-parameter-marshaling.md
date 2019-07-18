@@ -1,30 +1,25 @@
 ---
 title: Visual Studio Interop 組件參數封送處理 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 helpviewer_keywords:
 - troubleshooting Visual Studio SDK interop assemblies
 - interop assemblies, parameter marshaling
 - interop assemblies, troubleshooting
 ms.assetid: 89123eae-0fef-46d5-bd36-3d2a166b14e3
 caps.latest.revision: 24
-manager: douge
-ms.openlocfilehash: e18667adb48f565f73acc14f5012f9c96283efe9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: ac95c40b356c542da323a3ea3744827087f2d840
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49195010"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686917"
 ---
 # <a name="visual-studio-interop-assembly-parameter-marshaling"></a>Visual Studio Interop 組件參數封送處理
-Vspackage 以 managed 程式碼撰寫，可能必須呼叫或 unmanaged 的 COM 程式碼所呼叫。 一般而言，方法引數轉換，或由封送處理，會自動 interop 封送處理器。 不過，有時候引數無法轉換以直接的方式。 在這些情況下，interop 組件方法的原型參數來儘可能密集地符合 COM 函式參數。 如需詳細資訊，請參閱 < [Interop 封送處理](http://msdn.microsoft.com/library/115f7a2f-d422-4605-ab36-13a8dd28142a)。  
+Vspackage 以 managed 程式碼撰寫，可能必須呼叫或 unmanaged 的 COM 程式碼所呼叫。 一般而言，方法引數轉換，或由封送處理，會自動 interop 封送處理器。 不過，有時候引數無法轉換以直接的方式。 在這些情況下，interop 組件方法的原型參數來儘可能密集地符合 COM 函式參數。 如需詳細資訊，請參閱 < [Interop 封送處理](https://msdn.microsoft.com/library/115f7a2f-d422-4605-ab36-13a8dd28142a)。  
   
 ## <a name="general-suggestions"></a>一般建議  
   
@@ -33,11 +28,11 @@ Vspackage 以 managed 程式碼撰寫，可能必須呼叫或 unmanaged 的 COM 
   
  每個方法的參考文件包含三個相關的區段：  
   
--   [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] COM 函式原型。  
+- [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] COM 函式原型。  
   
--   Interop 組件的方法原型。  
+- Interop 組件的方法原型。  
   
--   COM 參數清單和每個的簡短描述。  
+- COM 參數清單和每個的簡短描述。  
   
 ##### <a name="look-for-differences-between-the-two-prototypes"></a>尋找兩個原型之間的差異  
  大部分的互通性問題是衍生自 COM 介面中的特定類型的定義中相同類型的定義之間的不符[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]interop 組件。 例如，請考慮在能夠傳遞的差異`null`以 [out] 參數的值。 您必須尋找兩個原型之間的差異，並考慮他們所傳遞之資料的後果。  
@@ -51,7 +46,7 @@ Vspackage 以 managed 程式碼撰寫，可能必須呼叫或 unmanaged 的 COM 
  某些情況下，會產生 COM 介面`IUnknown`物件，並在 COM 介面然後將它傳遞做為類型`void **`。 這些介面是特別重要因為如果變數定義為 [out] 中的 IDL 中，則`IUnknown`物件是使用參考計數`AddRef`方法。 如果物件未正確地處理，就會發生記憶體流失。  
   
 > [!NOTE]
->  `IUnknown`未明確地釋放時建立的 COM 介面，並在 [out] 的變數中傳回的物件會造成記憶體流失。  
+> `IUnknown`未明確地釋放時建立的 COM 介面，並在 [out] 的變數中傳回的物件會造成記憶體流失。  
   
  處理這類物件的 managed 的方法應該視為<xref:System.IntPtr>為指標`IUnknown`物件，然後呼叫<xref:System.Runtime.InteropServices.Marshal.GetObjectForIUnknown%2A>方法，以取得物件。 呼叫端應該再將傳回值轉換成任何類型的適用。 當不再需要物件時，呼叫<xref:System.Runtime.InteropServices.Marshal.Release%2A>釋放它。  
   
@@ -82,19 +77,19 @@ else
 ```  
   
 > [!NOTE]
->  下列方法將已知`IUnknown`做為類型的物件指標<xref:System.IntPtr>。 在本節中所述，請處理它們。  
+> 下列方法將已知`IUnknown`做為類型的物件指標<xref:System.IntPtr>。 在本節中所述，請處理它們。  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CreateProject%2A>  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CreateProject%2A>  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsOwnedProjectFactory.InitializeForOwner%2A>  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsOwnedProjectFactory.InitializeForOwner%2A>  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetNestedHierarchy%2A>  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetNestedHierarchy%2A>  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.CreateProject%2A>  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.CreateProject%2A>  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.QueryViewInterface%2A>  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.QueryViewInterface%2A>  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg2.get_CfgType%2A>  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg2.get_CfgType%2A>  
   
 ### <a name="optional-out-parameters"></a>[Out] 參數的選擇性  
  尋找定義為 [out] 參數資料類型 (`int`，`object`等等) 在 COM 介面，但定義為在相同的資料類型的陣列[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]interop 組件的方法原型。  
@@ -128,7 +123,7 @@ else
  呼叫此類型的介面的 managed 的方法應該提取從 [out] 陣列的第一個項目。 這個項目可以視為，就好像`retval`自對應的 COM 介面傳回的值。  
   
 ## <a name="see-also"></a>另請參閱  
- [Interop 封送處理](http://msdn.microsoft.com/en-us/a95fdb76-7c0d-409e-a77e-0349b1ea1490)   
- [Interop 封送處理](http://msdn.microsoft.com/library/115f7a2f-d422-4605-ab36-13a8dd28142a)   
- [互通性的疑難排解](http://msdn.microsoft.com/library/b324cc1e-b03c-4f39-aea6-6a6d5bfd0e37)   
+ [Interop 封送處理](https://msdn.microsoft.com/a95fdb76-7c0d-409e-a77e-0349b1ea1490)   
+ [Interop 封送處理](https://msdn.microsoft.com/library/115f7a2f-d422-4605-ab36-13a8dd28142a)   
+ [互通性的疑難排解](https://msdn.microsoft.com/library/b324cc1e-b03c-4f39-aea6-6a6d5bfd0e37)   
  [Managed VSPackages](../misc/managed-vspackages.md)

@@ -8,17 +8,17 @@ helpviewer_keywords:
 - IVsAppCommandLine::GetOption method
 - command line, switches
 ms.assetid: 8bbbd87e-76fe-4fb5-8ef9-65f5e31967cf
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 376dcee6f23ec2633efe1b23f77552ebf33341f2
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: de0044544a97134380900d3e55f54c8fb34431fd
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56722599"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66352341"
 ---
 # <a name="add-command-line-switches"></a>新增命令列參數
 您可以新增套用至 VSPackage 的命令列參數時*devenv.exe*執行。 使用<xref:Microsoft.VisualStudio.Shell.ProvideAppCommandLineAttribute>宣告的參數和其屬性的名稱。 在此範例中，加入名為 VSPackage 的子類別 myswitch 之交換器**AddCommandSwitchPackage**搭配任何引數與自動載入 VSPackage。
@@ -34,7 +34,7 @@ ms.locfileid: "56722599"
 | 參數 | 描述|
 | 引數 | 參數的引數數目。 可以是 「 * 」，或引數清單。 |
 | DemandLoad | 如果這設定為 1，否則設為 0，如果要自動載入 VSPackage。 |
-| HelpString | 說明字串或資源識別碼的字串來顯示具有**devenv /？**。 |
+| HelpString | 說明字串或資源識別碼的字串來顯示具有**devenv /？** 。 |
 | 名稱 | 此參數。 |
 | PackageGuid | 封裝的 GUID。 |
 

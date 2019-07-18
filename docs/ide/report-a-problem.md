@@ -9,12 +9,12 @@ ms.author: seiyer
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 23ed63846eb11fd8eba95219aecaae3210e161fd
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
+ms.openlocfilehash: 840c8af686783a365608c1fe01661569e345add1
+ms.sourcegitcommit: 16bcaca215de75479695738d3c2d703c78c3500e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56800527"
+ms.lasthandoff: 06/21/2019
+ms.locfileid: "67309804"
 ---
 # <a name="overview-report-a-problem"></a>概觀：回報問題
 
@@ -28,43 +28,43 @@ ms.locfileid: "56800527"
 
 ![問題回報在開發人員社群上的 [新增] 狀態](../ide/media/ProblemStates/New.jpg)
 
-[新增] 表示新回報的 Bug 或問題，而且尚未對其採取任何動作。
+[新增]  表示新回報的 Bug 或問題，而且尚未對其採取任何動作。
 
 - - -
 
 ![問題回報在開發人員社群上的 [已分級] 狀態](../ide/media/ProblemStates/Triaged.jpg)
 
-[已分級] 表示已完成初步執行步驟，例如仲裁、轉譯，以及初始檢查重複項目。 您的票證已路由給適當的工程小組以進行考量。
+[已分級]  表示已完成初步執行步驟，例如仲裁、轉譯，以及初始檢查重複項目。 您的票證已路由給適當的工程小組以進行考量。
 
 - - -
 
 ![問題回報在開發人員社群上的 [考量中] 狀態](../ide/media/ProblemStates/UnderConsideration.jpg)
 
-[考量中] 表示 Microsoft 正在檢閱問題的社群影響，並據以設定其優先順序。 如果社群影響還不明確或不重要，我們將持續監視處於這個狀態的問題。
+[考量中]  表示 Microsoft 正在檢閱問題的社群影響，並據以設定其優先順序。 如果社群影響還不明確或不重要，我們將持續監視處於這個狀態的問題。
 
 - - -
 
 ![問題回報在開發人員社群上的 [調查中] 狀態](../ide/media/ProblemStates/UnderInvestigation.jpg)
 
-[調查中] 表示工程師正在積極調查您的問題以尋找解決方法。
+[調查中]  表示工程師正在積極調查您的問題以尋找解決方法。
 
 - - -
 
 ![問題回報在開發人員社群上的 [需要更多資訊] 狀態](../ide/media/ProblemStates/NeedMoreInfo.jpg)
 
-[需要更多資訊] 表示我們需要您提供更多診斷資訊，讓我們能夠繼續進行調查。  [了解如何回應「需要更多資訊」要求。](./how-to-report-a-problem-with-visual-studio.md#when-further-information-is-needed-need-more-info)
+[需要更多資訊]  表示我們需要您提供更多診斷資訊，讓我們能夠繼續進行調查。  [了解如何回應「需要更多資訊」要求。](./how-to-report-a-problem-with-visual-studio.md#when-further-information-is-needed-need-more-info)
 
 - - -
 
 ![問題回報在開發人員社群上的 [已修正 - 等待發行] 狀態](../ide/media/ProblemStates/FixedPendingRelease.jpg)
 
-[已修正 - 等待發行] 表示我們擁有此問題的修正程式，並且會在即將推出的預覽版或版本中提供。  當修正程式在預覽版中可供使用時，問題會以指定預覽版本的「在...中修正」標籤來進行標記。
+[已修正 - 等待發行]  表示我們擁有此問題的修正程式，並且會在即將推出的預覽版或版本中提供。  當修正程式在預覽版中可供使用時，問題會以指定預覽版本的「在...中修正」標籤來進行標記。
 
 - - -
 
 ![問題回報在開發人員社群上的 [已關閉 - 已修正] 狀態](../ide/media/ProblemStates/ClosedFixed.jpg)
 
-[已關閉 - 已修正] 表示我們已發行問題的修正程式。 問題現在也會以指定發行版本的「在...中修正」標籤來進行標記。
+[已關閉 - 已修正]  表示我們已發行問題的修正程式。 問題現在也會以指定發行版本的「在...中修正」標籤來進行標記。
 
 - - -
 
@@ -76,31 +76,31 @@ ms.locfileid: "56800527"
 
 ![問題回報在開發人員社群上的 [已關閉 - 優先順序較低] 狀態](../ide/media/ProblemStates/ClosedLowerPriority.jpg)
 
-[已關閉 - 優先順序較低] 為了讓你們每個人在開發人員社群中獲得最大價值，我們會優先考慮具有最高客戶影響的問題。 雖然我們此時無法解決此特定問題，但可保證您的所有意見反應都極具價值並有助於改善 Visual Studio。
+[已關閉 - 優先順序較低]  為了讓你們每個人在開發人員社群中獲得最大價值，我們會優先考慮具有最高客戶影響的問題。 雖然我們此時無法解決此特定問題，但可保證您的所有意見反應都極具價值並有助於改善 Visual Studio。
 
 - - -
 
-![問題回報在開發人員社群上的 [已關閉 - 不是 Bug] 狀態](../ide/media/ProblemStates/ClosedNotaBug.jpg)
+![問題回報在開發人員社群上的 [已關閉 - 不是 Bug] 狀態](../ide/media/ProblemStates/ClosedNotABug.jpg)
 
-[已關閉 - 不是 Bug] 表示我們已判定所回報功能是依照目前設計的結果。
+[已關閉 - 不是 Bug]  表示我們已判定所回報功能是依照目前設計的結果。
 
 - - -
 
 ![問題回報在開發人員社群上的 [已關閉 - 資訊不足] 狀態](../ide/media/ProblemStates/ClosedNotEnoughInfo.jpg)
 
-[已關閉 - 資訊不足] 表示我們沒有足夠的資訊來為您調查此問題。 我們很樂意在取得所需的資訊之後，重新考慮意見反應。
+[已關閉 - 資訊不足]  表示我們沒有足夠的資訊來為您調查此問題。 我們很樂意在取得所需的資訊之後，重新考慮意見反應。
 
 - - -
 
 ![問題回報在開發人員社群上的 [已關閉 - 其他產品] 狀態](../ide/media/ProblemStates/ClosedOtherProduct.jpg)
 
-[已關閉 - 其他產品] 表示我們已判定您的問題適用於另一個產品。 如需外部產品及任何相關連結，請參閱 Microsoft 的評論。
+[已關閉 - 其他產品]  表示我們已判定您的問題適用於另一個產品。 如需外部產品及任何相關連結，請參閱 Microsoft 的評論。
 
 - - -
 
 ![問題回報在開發人員社群上的 [已關閉 - 不予修正] 狀態](../ide/media/ProblemStates/ClosedWontFix.jpg)
 
-[已關閉 - 不予修正] 表示由於缺乏產品方向調整或社群影響等因素，我們並未處理此問題。 為求更清楚明瞭，請參閱 Microsoft 的評論。  雖然我們無法解決此特定問題，但可保證您的所有意見都極具價值並有助於改善 Visual Studio。
+[已關閉 - 不予修正]  表示由於缺乏產品方向調整或社群影響等因素，我們並未處理此問題。 為求更清楚明瞭，請參閱 Microsoft 的評論。  雖然我們無法解決此特定問題，但可保證您的所有意見都極具價值並有助於改善 Visual Studio。
 
 - - -
 

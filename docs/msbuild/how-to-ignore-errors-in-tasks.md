@@ -1,5 +1,5 @@
 ---
-title: 作法：忽略工作中的錯誤 | Microsoft Docs
+title: HOW TO：忽略工作中的錯誤 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,11 +10,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 062edb5e7b76b3d3d308046ea1d541c543a6324f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56610420"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63000300"
 ---
 # <a name="how-to-ignore-errors-in-tasks"></a>HOW TO：忽略工作中的錯誤
 有時您會希望組建能夠容忍某些工作中的錯誤。 如果這些非關鍵性的工作失敗，您會想要讓組建繼續執行，因為它仍然可以產生所需的輸出。 例如，如果專案使用 `SendMail` 工作，在建置每個元件之後傳送電子郵件訊息，您可能會考慮，即使郵件伺服器無法使用且無法傳送狀態訊息，還是能夠接受組建繼續完成。 或者，例如，如果通常會在建置期間刪除中繼資料檔案，您可能會考慮，即使無法刪除這些檔案，還是能夠接受組建繼續完成。

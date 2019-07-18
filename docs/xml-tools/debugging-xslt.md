@@ -9,12 +9,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 23e108e476bfa9cb3ce699a16c77eb3520ed4785
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: 67ea95e3c52daed03acfe451f353edc039e1fecb
+ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526382"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67043530"
 ---
 # <a name="debugging-xslt"></a>偵錯 XSLT
 
@@ -25,7 +25,7 @@ ms.locfileid: "57526382"
 開始偵錯後，XSLT 偵錯工具會開啟視窗，以顯示輸入文件與 XSLT 輸出。
 
 > [!NOTE]
-> 只有 Enterprise 版的 Visual Studio 中使用 XSLT 偵錯工具。
+> XSLT 偵錯工具僅供以 Visual Studio Professional 和 Enterprise 版本。
 
 ## <a name="debug-from-the-xml-editor"></a>從 XML 編輯器進行偵錯
 

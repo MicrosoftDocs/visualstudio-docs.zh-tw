@@ -1,27 +1,22 @@
 ---
 title: 樣式索引標籤，視窗屬性對話方塊 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Window Properties dialog box, Styles Tab
 ms.assetid: 4ac1eae8-d6ce-4f05-98f0-a29065f471d4
 caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 05fe3c26f5015dcef12b998553127da8e8cb309c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 6ddde5bdb6064b7012157c04d156ed225b5763a2
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51769069"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68197488"
 ---
 # <a name="styles-tab-window-properties-dialog-box"></a>視窗屬性對話方塊、樣式索引標籤
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +28,4 @@ ms.locfileid: "51769069"
 |進入|描述|  
 |-----------|-----------------|  
 |**視窗樣式**|組合的視窗樣式程式碼，並控制樣式，如果適用的話。|  
-|**延伸的樣式**|延伸的視窗樣式代碼的組合。|
-
-
-
+|**擴充樣式**|延伸的視窗樣式代碼的組合。|

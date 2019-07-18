@@ -25,12 +25,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: be4cd6555e358be763a8837444332affced44a94
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MTE95
+ms.openlocfilehash: 3f2cd5345de8dfe62e56722a8e36713c6062b3cb
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58154802"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67693037"
 ---
 # <a name="mfc-debugging-techniques"></a>MFC 偵錯技術
 如果您正在偵錯 MFC 程式，這些偵錯技術可能很有幫助。
@@ -97,7 +97,7 @@ TRACE( "x = %d and y = %d\n", x, y );
 TRACE( "x = %d and y = %x and z = %f\n", x, y, z );
 ```
 
-TRACE 巨集會適當處理 char* 和 wchar_t\* 這兩種參數。 下列範例示範搭配不同類型的字串參數來使用 TRACE 巨集。
+TRACE 巨集適當地處理這兩個 char\*和 wchar_t\*參數。 下列範例示範搭配不同類型的字串參數來使用 TRACE 巨集。
 
 ```cpp
 TRACE( "This is a test of the TRACE macro that uses an ANSI string: %s %d\n", "The number is:", 2);
@@ -140,7 +140,7 @@ MFC 架構的偵錯版本會自動使用 `DEBUG_NEW` ，但是您的程式碼不
 
 - 如果您要更準確地控制記憶體診斷功能，您可以設定 MFC 全域變數 [afxMemDF](https://msdn.microsoft.com/Library/cf117501-5446-4fce-81b3-f7194bc95086)值，選擇性地開啟和關閉各個記憶體診斷功能。 這個變數可以有下列的值，如同列舉類型 **afxMemDF**所指定。
 
-  |值|說明|
+  |值|描述|
   |-----------|-----------------|
   |**allocMemDF**|開啟診斷記憶體配置器 (預設)。|
   |**delayFreeMemDF**|呼叫 `delete` 或 `free` 時會延遲釋放記憶體，直到程式結束。 這會造成程式配置可能的最大記憶體量。|
@@ -358,7 +358,7 @@ Phone #: 581-0215
 #### <a name="BKMK_Customizing_object_dumps"></a> 自訂物件傾印
 當您從 [CObject](/cpp/mfc/reference/cobject-class)衍生類別時，您可在使用 `Dump` DumpAllObjectsSince [來傾印物件至](/cpp/mfc/reference/cmemorystate-structure#dumpallobjectssince) 輸出視窗 [時，覆寫](../ide/reference/output-window.md)成員函式以提供額外的資訊。
 
-`Dump` 函式將物件的成員變數的文字表示寫入傾印內容 ([CDumpContext](/cpp/mfc/reference/cdumpcontext-class))。 傾印內容類似 I/O 資料流。 您可以使用附加運算子 (**<<**) 將資料傳送至 `CDumpContext`。
+`Dump` 函式將物件的成員變數的文字表示寫入傾印內容 ([CDumpContext](/cpp/mfc/reference/cdumpcontext-class))。 傾印內容類似 I/O 資料流。 您可以使用附加運算子 ( **<<** ) 將資料傳送至 `CDumpContext`。
 
 當您覆寫 `Dump` 函式時，您應該先呼叫 `Dump` 的基底類別版本來傾印基底類別物件的內容。 接著輸出衍生類別中每個成員變數的文字說明和值。
 
@@ -430,9 +430,9 @@ pMyPerson->Dump( afxDump );
 
 3. 首先，您要建立新專案組態。
 
-   1. 在 [\<專案> 屬性頁] 對話方塊中，按一下 [組態管理員] 按鈕。
+   1. 在 [\<專案> 屬性頁]  對話方塊中，按一下 [組態管理員]  按鈕。
 
-   2. 在 [組態管理員對話方塊](/previous-versions/visualstudio/visual-studio-2010/t1hy4dhz(v=vs.100))裡，在方格中尋找專案。 在 [組態] 一欄中，選取 [\<新增...>]。
+   2. 在 [組態管理員對話方塊](/previous-versions/visualstudio/visual-studio-2010/t1hy4dhz(v=vs.100))裡，在方格中尋找專案。 在 [組態]  一欄中，選取 [\<新增...>]  。
 
    3. 在 [新增專案組態對話方塊](/previous-versions/visualstudio/visual-studio-2010/0eh8w4cf(v=vs.100))裡，於 [ **專案組態名稱** ] 方塊內輸入新組態的名稱，例如「部分偵錯」。
 
@@ -468,11 +468,11 @@ pMyPerson->Dump( afxDump );
 
    4. 在 [ **屬性頁** ] 對話方塊的 [ **組態設定** ] 資料夾底下，開啟 [ **C/C++** ] 資料夾，然後選取 [ **一般** ] 分類。
 
-   5. 在屬性方格中，尋找 [偵錯資訊格式]。
+   5. 在屬性方格中，尋找 [偵錯資訊格式]。 
 
    6. 按一下 [ **偵錯資訊格式** ] 設定並且選取偵錯資訊需要的選項 (通常是 [ **/ZI**])。
 
-   7. 如果您要使用應用程式精靈所產生的應用程式，或者您有先行編譯的標頭，則必須關閉先行編譯的標頭，或在編譯其他模組之前重新編譯這些標頭。 否則，您會收到警告 C4650 和錯誤訊息 C2855。 若要關閉先行編譯標頭檔，可以變更 [\<專案> 屬性] 對話方塊中的 [建立/使用先行編譯標頭檔] 設定 (依序選取 [組態屬性] 資料夾、[C/C++] 子資料夾、[先行編譯標頭檔] 分類)。
+   7. 如果您要使用應用程式精靈所產生的應用程式，或者您有先行編譯的標頭，則必須關閉先行編譯的標頭，或在編譯其他模組之前重新編譯這些標頭。 否則，您會收到警告 C4650 和錯誤訊息 C2855。 若要關閉先行編譯標頭檔，可以變更 [\<專案> 屬性]  對話方塊中的 [建立/使用先行編譯標頭檔]  設定 (依序選取 [組態屬性]  資料夾、[C/C++]  子資料夾、[先行編譯標頭檔]  分類)。
 
 7. 從 [ **建置** ] 功能表，選取 [ **建置** ] 來重建過期的專案檔案。
 
@@ -480,5 +480,5 @@ pMyPerson->Dump( afxDump );
 
    [本主題內容](#BKMK_In_this_topic)
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 [偵錯 Visual C++](../debugger/debugging-native-code.md)

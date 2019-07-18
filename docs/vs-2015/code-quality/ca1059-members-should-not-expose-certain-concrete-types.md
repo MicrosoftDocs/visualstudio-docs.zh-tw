@@ -1,14 +1,9 @@
 ---
-title: CA1059： 成員不應該公開特定的具象類型 |Microsoft Docs
-ms.custom: ''
+title: CA1059:成員不應該公開特定的具象類型 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1059
 - MembersShouldNotExposeCertainConcreteTypes
@@ -20,14 +15,14 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 894b4c22aaab2b0cce81053e6466b791a50b089a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a78125645dc6369811b4b9e1d7101b7bb4cbba76
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49816881"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68200498"
 ---
-# <a name="ca1059-members-should-not-expose-certain-concrete-types"></a>CA1059：成員不應該公開特定的具象類型
+# <a name="ca1059-members-should-not-expose-certain-concrete-types"></a>CA1059:成員不應該公開特定的具象類型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -40,7 +35,7 @@ ms.locfileid: "49816881"
 ## <a name="cause"></a>原因
  外部可見成員是特定的具象類型，或公開特定的具象類型，透過其中一個參數或傳回值。 目前，此規則會回報下列的具象類型的曝光度：
 
--   型別衍生自<xref:System.Xml.XmlNode?displayProperty=fullName>。
+- 型別衍生自<xref:System.Xml.XmlNode?displayProperty=fullName>。
 
 ## <a name="rule-description"></a>規則描述
  具象類型就是具有完整實作 (Implementation) 且因此能加以具現化 (Instantiated) 的類型。 若要允許廣泛使用的成員，用為建議的介面來取代具象型別。 這可讓成員接受任何實作介面的型別，或是使用實作介面的型別所預期的位置。
@@ -58,7 +53,4 @@ ms.locfileid: "49816881"
  它會安全地隱藏此規則的訊息，如果需要特定的具象類型所提供的功能。
 
 ## <a name="related-rules"></a>相關的規則
- [CA1011：建議將基底類型當做參數傳遞](../code-quality/ca1011-consider-passing-base-types-as-parameters.md)
-
-
-
+ [CA1011:請考慮將基底類型當做參數傳遞](../code-quality/ca1011-consider-passing-base-types-as-parameters.md)

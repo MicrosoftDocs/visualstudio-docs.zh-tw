@@ -1,5 +1,5 @@
 ---
-title: HOW TO：以程式設計方式填入 Word 表格文件屬性
+title: 以程式設計方式填入 Word 表格文件屬性
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,14 +13,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e8a7e87268b021d8bc8a14b1b5d99f3331c0f431
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: e296a63c208bc1c3316f89b7b4003f16daf3c93e
+ms.sourcegitcommit: 13ab9a5ab039b070b9cd9251d0b83dd216477203
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56631584"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66177780"
 ---
-# <a name="how-to-programmatically-populate-word-tables-with-document-properties"></a>HOW TO：以程式設計方式填入 Word 表格文件屬性
+# <a name="how-to-programmatically-populate-word-tables-with-document-properties"></a>作法：以程式設計方式填入 Word 表格文件屬性
   下列範例會在文件的頂端建立 Microsoft Office Word 表格，並用主文件的屬性填入這個表格。
 
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]

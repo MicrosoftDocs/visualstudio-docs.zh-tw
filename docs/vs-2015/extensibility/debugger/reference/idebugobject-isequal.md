@@ -1,14 +1,9 @@
 ---
 title: IDebugObject::IsEqual |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugObject::IsEqual
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 4b76e663-ef2e-41ff-9be1-bf26d666a34a
 caps.latest.revision: 10
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 877318c231cfb2ec06839c70b942940ca8ca6e39
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 85252cdaf9fb076ebd4f8000115bcea576531bb1
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51720991"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68159114"
 ---
 # <a name="idebugobjectisequal"></a>IDebugObject::IsEqual
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -60,4 +55,3 @@ int IsEqual(
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)
-

@@ -13,25 +13,25 @@ caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4ac39a776cb7e6c2c9cbce648c0b3ca3ebc86783
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 0291cfe93492c357401ce371d58683c6815aa12b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54770741"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60052814"
 ---
 # <a name="empty-timeline-segment"></a>空白時間表區段
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 在並行視覺化檢視中，時間表區段空白 (具有白色背景) 的原因取決於通道的類型。  
   
--   如為 CPU 執行緒通道，表示執行緒在時間表的這個部分不存在。 如果您對執行緒感興趣，您可以使用縮放控制項或水平捲動來尋找其執行區段。  
+- 如為 CPU 執行緒通道，表示執行緒在時間表的這個部分不存在。 如果您對執行緒感興趣，您可以使用縮放控制項或水平捲動來尋找其執行區段。  
   
--   如為 I/O 通道，表示該時間點沒有代表目標處理序的磁碟存取發生。  
+- 如為 I/O 通道，表示該時間點沒有代表目標處理序的磁碟存取發生。  
   
--   如為 DirectX 通道，表示在時間表的這個部分沒有代表目標處理序執行的 GPU 工作。  
+- 如為 DirectX 通道，表示在時間表的這個部分沒有代表目標處理序執行的 GPU 工作。  
   
--   如為標記通道，表示未產生任何標記。  
+- 如為標記通道，表示未產生任何標記。  
   
 ## <a name="see-also"></a>請參閱  
  [執行緒檢視](../profiling/threads-view-parallel-performance.md)   

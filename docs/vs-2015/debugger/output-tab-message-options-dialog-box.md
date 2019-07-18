@@ -1,27 +1,22 @@
 ---
 title: 輸出索引標籤，訊息選項對話方塊 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - message options, Output
 ms.assetid: 22dd48c2-6d17-41b1-b84c-9ddeaef68411
 caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 1f4589f29f0c52ed82c829c68c2fc9347dfc68c7
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 1fa4494ccff03fa71e25b32a4814a98a9e06dc28
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51787857"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68185132"
 ---
 # <a name="output-tab-message-options-dialog-box"></a>訊息選項對話方塊、輸出索引標籤
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,16 +31,16 @@ ms.locfileid: "51787857"
  **訊息巢狀層級**  
  前置詞與一個句號，每個層級的巢狀的訊息。  
   
- **未經處理的訊息參數**  
+ [原始訊息參數]   
  顯示十六進位**wParam**並**lParam**值。  
   
- **已解碼的訊息參數**  
+ [已解碼的訊息參數]   
  顯示結果的特定訊息的解碼**wParam**並**lParam**值。  
   
  **未經處理的傳回值**  
  顯示十六進位**lResult**傳回值。  
   
- **已解碼的傳回值**  
+ [已解碼的傳回值]   
  顯示結果的特定訊息的解碼**lResult**傳回值。  
   
  **訊息來源時間**  
@@ -54,14 +49,11 @@ ms.locfileid: "51787857"
  **訊息滑鼠位置**  
  （適用於僅限張貼訊息） 公佈訊息時的滑鼠螢幕座標。  
   
- **最大行數**  
+ [最大行數]   
  限制會保留在目前選取的 [訊息] 檢視中的行數。  
   
  **也可將訊息記錄至檔案**  
  指定的訊息記錄檔的輸出檔。 此輸出檔案會同時寫入與訊息記錄視窗。  
   
- **將設定儲存為預設值**  
+ [將設定另存成預設]   
  儲存新的訊息資料流 windows 上述設定。 當您結束 Spy + + 時，會儲存這些設定。
-
-
-

@@ -1,14 +1,9 @@
 ---
-title: IDebugActivateDocumentEvent2 |Microsoft Docs
-ms.custom: ''
+title: IDebugActivateDocumentEvent2 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugActivateDocumentEvent2
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 6f37edd7-a48c-4b41-b160-dff9be63a284
 caps.latest.revision: 12
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: cb3e9e8e70b3713091c791b3fba505edfb5540ee
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: c2087cb8f1b9a4b89448f3bf07f869d16ed44dc8
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51782995"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65673683"
 ---
 # <a name="idebugactivatedocumentevent2"></a>IDebugActivateDocumentEvent2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -36,7 +31,7 @@ IDebugActivateDocumentEvent2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>實作者的附註  
- 需要開啟原始程式檔時，DE 會實作這個介面。 只偵錯引擎使用，或屬於指令碼解譯器會實作這個介面。 [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)介面必須實作此介面的相同物件上 (使用 SDM [QueryInterface](http://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3)若要存取`IDebugEvent2`介面)。  
+ 需要開啟原始程式檔時，DE 會實作這個介面。 只偵錯引擎使用，或屬於指令碼解譯器會實作這個介面。 [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)介面必須實作此介面的相同物件上 (使用 SDM [QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3)若要存取`IDebugEvent2`介面)。  
   
 ## <a name="notes-for-callers"></a>呼叫端資訊  
  DE 建立，並需要開啟的原始程式檔時，會傳送這個事件的物件。 事件會使用傳送[IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)它附加到正在偵錯程式時，在 SDM 所提供的回呼函式。  
@@ -55,12 +50,11 @@ IDebugActivateDocumentEvent2 : IUnknown
 ## <a name="requirements"></a>需求  
  標頭： msdbg.h  
   
- 命名空間： Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間：Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)   
  [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)   
  [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)
-

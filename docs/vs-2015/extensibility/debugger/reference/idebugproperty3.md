@@ -1,14 +1,9 @@
 ---
-title: IDebugProperty3 |Microsoft Docs
-ms.custom: ''
+title: IDebugProperty3 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugProperty3
 helpviewer_keywords:
@@ -16,26 +11,26 @@ helpviewer_keywords:
 ms.assetid: 8f9be68d-4490-4eca-8f6b-8a10ed77e226
 caps.latest.revision: 13
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: e209c41df5b9994d206fb07f47909cf8523364bf
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 479827cc83486d6bb9c68d0749b8870cd6c41861
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51817278"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65694768"
 ---
 # <a name="idebugproperty3"></a>IDebugProperty3
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
 此介面可讓您：  
   
--   擷取與屬性相關聯的任意長度字串。  
+- 擷取與屬性相關聯的任意長度字串。  
   
--   關聯之屬性的唯一識別碼。  
+- 關聯之屬性的唯一識別碼。  
   
--   擷取屬性的自訂檢視器的清單。  
+- 擷取屬性的自訂檢視器的清單。  
   
--   設定屬性的值能夠報告任何產生的錯誤  
+- 設定屬性的值能夠報告任何產生的錯誤  
   
 ## <a name="syntax"></a>語法  
   
@@ -47,7 +42,7 @@ IDebugProperty3 : IDebugProperty2
  偵錯引擎 (DE) 實作的相同物件上實作這個介面[IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)長字串、 屬性識別碼和自訂檢視器提供支援。  
   
 ## <a name="notes-for-callers"></a>呼叫端資訊  
- 呼叫[QueryInterface](http://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3)上`IDebugProperty2`介面，以取得此介面。  
+ 呼叫[QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3)上`IDebugProperty2`介面，以取得此介面。  
   
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法  
  除了繼承自方法`IDebugProperty2`，則`IDebugProperty3`介面會公開下列方法。  
@@ -68,12 +63,11 @@ IDebugProperty3 : IDebugProperty2
 ## <a name="requirements"></a>需求  
  標頭： msdbg.h  
   
- 命名空間： Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間：Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
  [核心介面](../../../extensibility/debugger/reference/core-interfaces.md)   
  [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)   
  [IDebugCustomViewer](../../../extensibility/debugger/reference/idebugcustomviewer.md)
-

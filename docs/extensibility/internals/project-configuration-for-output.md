@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - project configurations, output
 ms.assetid: a4517f73-45af-4745-9d7f-9fddf887b636
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d030b4a59f2140b99df19e141f2d872c1e8fc394
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 5f1fa63a0e3143be6f8133b2a8ae3a57fe6857a9
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56616452"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66328386"
 ---
 # <a name="project-configuration-for-output"></a>輸出的專案組態
 每個設定可以支援一組產生輸出項目，例如可執行檔或資源檔案的建置程序。 這些輸出項目都是私用使用者，並可以放在連結相關的類型的輸出，例如可執行檔 （.exe、.dll、.lib） 和原始程式檔 （.idl，.h 檔案） 的群組。
@@ -25,7 +25,7 @@ ms.locfileid: "56616452"
  藉由實作所開發的建構`IVsOutputGroup`可讓專案群組輸出，根據使用方式。 比方說，DLL 可能會分組成與它的程式資料庫 (PDB)。
 
 > [!NOTE]
->  PDB 檔案包含偵錯資訊，並建置.dll 或.exe 時指定 [產生偵錯資訊] 選項時，它會建立。 .Pdb 檔案通常會產生為只偵錯專案的組態。
+> PDB 檔案包含偵錯資訊，並建置.dll 或.exe 時指定 [產生偵錯資訊] 選項時，它會建立。 .Pdb 檔案通常會產生為只偵錯專案的組態。
 
  專案必須傳回相同數目的支援，每個組態的群組，即使群組內所包含的輸出數目可能會不同組態設定。 例如，專案 Matt 的 DLL 可能會包含 mattd.dll 和 mattd.pdb 的偵錯組態，但只包含零售組態中的 matt.dll。
 

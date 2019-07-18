@@ -3,37 +3,37 @@ title: 通知和適用於 Visual Studio 的進度 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: f0ef65e9-0f1f-45f4-9f25-6e2398691168
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 694146672659d0a4370431040e84089088464f81
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: c5ca3f02c37a76e31ad76f6875110487dffefd49
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56683164"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66310890"
 ---
 # <a name="notifications-and-progress-for-visual-studio"></a>通知和適用於 Visual Studio 的進度
-##  <a name="BKMK_NotificationSystems"></a> 通知系統
+## <a name="BKMK_NotificationSystems"></a> 通知系統
 
 ### <a name="overview"></a>總覽
  有數種方式可以通知使用者發生的事情在 Visual Studio 中有關其軟體開發工作。
 
  當實作任何一種通知：
 
--   **保留的最小值的通知數目**有效的數字。 通知訊息應該適用於大部分的 Visual Studio 使用者或特定功能/功能區域的使用者。 過度使用的通知可能 sidetrack 使用者，或降低認知的系統的使用便利性。
+- **保留的最小值的通知數目**有效的數字。 通知訊息應該適用於大部分的 Visual Studio 使用者或特定功能/功能區域的使用者。 過度使用的通知可能 sidetrack 使用者，或降低認知的系統的使用便利性。
 
--   **請確定您是要呈現清楚、 可採取動作的訊息**使用者可用來叫用適當的內容，進行更複雜的選擇和採取進一步動作。
+- **請確定您是要呈現清楚、 可採取動作的訊息**使用者可用來叫用適當的內容，進行更複雜的選擇和採取進一步動作。
 
--   **適當地提供同步和非同步的訊息。** 同步通知表示需要立即處理，例如 web 服務的當機或程式碼擲回例外狀況。 立即的方式強制回應對話方塊中，例如需要他們的意見，這些情況下，應通知使用者。 非同步通知是使用者應該了解，但不需要採取動作立即執行，例如 web 站台部署或建置作業完成時完成。 這些訊息應該更環境並不會中斷使用者的工作流程。
+- **適當地提供同步和非同步的訊息。** 同步通知表示需要立即處理，例如 web 服務的當機或程式碼擲回例外狀況。 立即的方式強制回應對話方塊中，例如需要他們的意見，這些情況下，應通知使用者。 非同步通知是使用者應該了解，但不需要採取動作立即執行，例如 web 站台部署或建置作業完成時完成。 這些訊息應該更環境並不會中斷使用者的工作流程。
 
--   **使用強制回應對話方塊時所需採取進一步動作時，防止使用者，才**之前認可訊息或對話方塊中來決定。
+- **使用強制回應對話方塊時所需採取進一步動作時，防止使用者，才**之前認可訊息或對話方塊中來決定。
 
--   **已不再有效時，請移除環境的通知。** 不需要使用者關閉通知，如果他們已經採取來解決的問題所收到的動作。
+- **已不再有效時，請移除環境的通知。** 不需要使用者關閉通知，如果他們已經採取來解決的問題所收到的動作。
 
--   **請注意通知，可能會導致錯誤的關聯。** 使用者可能會認為，一或多個其動作已觸發通知時實際上有沒有因果關係。 要清除的通知訊息中有關內容、 觸發程序和通知的來源。
+- **請注意通知，可能會導致錯誤的關聯。** 使用者可能會認為，一或多個其動作已觸發通知時實際上有沒有因果關係。 要清除的通知訊息中有關內容、 觸發程序和通知的來源。
 
 ### <a name="choosing-the-right-method"></a>選擇正確方法
  您可以使用此表格來協助您選擇正確的方法，來通知訊息的使用者。
@@ -55,14 +55,14 @@ ms.locfileid: "56683164"
 
 ### <a name="notification-methods"></a>通知方法
 
-####  <a name="BKMK_ModalErrorMessageDialogs"></a> 強制回應的錯誤訊息對話方塊
+#### <a name="BKMK_ModalErrorMessageDialogs"></a> 強制回應的錯誤訊息對話方塊
  強制回應的錯誤訊息對話方塊用來顯示錯誤訊息，要求使用者確認或動作。
 
  ![強制回應的錯誤訊息](../../extensibility/ux-guidelines/media/0901-01_modalerrormessage.png "0901年 01_ModalErrorMessage")
 
  **警示無效的連接字串至資料庫的使用者強制回應的錯誤訊息對話方塊**
 
-####  <a name="BKMK_IDEStatusBar"></a> IDE 狀態列
+#### <a name="BKMK_IDEStatusBar"></a> IDE 狀態列
  使用者注意到狀態列文字的可能性相互關聯全能電腦體驗來與 Windows 平台特定的體驗。 Visual Studio 客戶群，通常會在這兩個區域中，有經驗，但即使是經驗豐富的 Windows 使用者可能會遺漏在狀態列中的變更。 因此，[狀態] 列最適合僅供參考之用，或做為備援提示的資訊顯示在其他位置。 在對話方塊中，或通知工具視窗中，應提供任何一種使用者必須立即解決的重要資訊。
 
  Visual Studio 的 [狀態] 列被設計來提供要顯示的數種類型的資訊。 它被劃分成的意見反應、 設計工具、 進度列、 動畫和用戶端區域。
@@ -75,24 +75,24 @@ ms.locfileid: "56683164"
 
  **IDE 狀態列色彩**
 
-####  <a name="BKMK_EmbeddedInfobar"></a> 內嵌資訊列
+#### <a name="BKMK_EmbeddedInfobar"></a> 內嵌資訊列
  資訊列可以使用頂端的文件視窗或工具視窗，向使用者提示的狀態或條件。 它也可以提供命令，讓使用者可以有一個方法可以輕鬆地採取動作。 資訊列是標準的 shell 控制項。 請避免建立您自己，會採取行動，並會出現與其他人在 IDE 中不一致。 請參閱[資訊列](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_Infobars)實作詳細資料和使用指引。
 
  ![內嵌資訊列](../../extensibility/ux-guidelines/media/0901-03_embeddedinfobar.png "0901年 03_EmbeddedInfobar")
 
  **資訊列會內嵌在文件視窗中，警示的使用者，IDE 會在 歷程偵錯模式中，並如同在標準偵錯模式中，編輯器不會在相同的方式回應。**
 
-####  <a name="BKMK_MouseCursorChanges"></a> 滑鼠游標會變更
+#### <a name="BKMK_MouseCursorChanges"></a> 滑鼠游標會變更
  將滑鼠游標變更，當使用繫結至 VSColor service，並已與資料指標相關聯的色彩。 游標會變更可用於指出進行中作業，以及叫用使用者停留所在可以拖曳、 置放，或用來選取物件的目標區域。
 
  前提是必須保留的作業，來表示任何進一步的輸入時，防止使用者的所有可用的 CPU 時間，請使用忙碌/等候滑鼠資料指標。 在大部分情況下，撰寫完善的應用程式使用多執行緒處理，當使用者將無法執行其他作業的時間應該很少見。
 
  請注意，游標會變更有很有用，因為多餘的資訊提示會顯示其他位置。 請勿依賴資料指標變更為至關重要的使用者必須解決的唯一方式與使用者通訊，尤其是要傳達的項目。
 
-####  <a name="BKMK_NotSysProgressIndicators"></a> 進度指標
+#### <a name="BKMK_NotSysProgressIndicators"></a> 進度指標
  進度指標需要超過幾秒鐘的時間才能完成的處理程序期間提供的使用者意見反應至關重要。 可顯示進度指標就地 （附近的啟動點的動作進行中），在內嵌的狀態列中、 在強制回應對話方塊中，或在 Visual Studio 的 [狀態] 列中。 請依照下列中的指導方針[進度指標](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_ProgressIndicators)關於其使用與實作。
 
-####  <a name="BKMK_VSNotificationsToolWindow"></a> Visual Studio 通知視窗
+#### <a name="BKMK_VSNotificationsToolWindow"></a> Visual Studio 通知視窗
  Visual Studio 通知視窗通知關於授權、 環境 (Visual Studio)，擴充功能和更新的開發人員。 使用者可以關閉個別的通知，或可以選擇忽略特定類型的通知。 在管理清單中，已忽略的通知**工具 > 選項**頁面。
 
  [通知] 視窗不是目前可延伸的。
@@ -101,33 +101,33 @@ ms.locfileid: "56683164"
 
  **Visual Studio 通知工具視窗**
 
-####  <a name="BKMK_ErrorList"></a> 錯誤清單
+#### <a name="BKMK_ErrorList"></a> 錯誤清單
  錯誤清單中的通知會指出錯誤和警告發生在編譯期間，或建置程序，並可讓使用者瀏覽至該特定程式碼錯誤的程式碼中。
 
  ![錯誤清單](../../extensibility/ux-guidelines/media/0901-08_errorlist.png "0901年 08_ErrorList")
 
  **在 Visual Studio 中的錯誤清單**
 
-####  <a name="BKMK_EmbeddedStatusBars"></a> 內嵌的狀態列
+#### <a name="BKMK_EmbeddedStatusBars"></a> 內嵌的狀態列
  IDE 狀態列為動態磁碟，以設定為使用中的文件視窗和資訊更新使用者的內容和/或系統回應其用戶端區域內容，因為很難維護資訊以持續顯示，或提供長期狀態非同步處理序。 比方說，IDE 狀態列不適當的多個執行及/或立即採取行動的項目選取項目執行的測試結果的通知。 請務必保留使用者進行選取，或啟動的處理序之文件或工具 視窗的內容中的這類狀態資訊。
 
  ![Embedded status bar](../../extensibility/ux-guidelines/media/0901-09_embeddedstatusbar.png "0901-09_EmbeddedStatusBar")
 
  **在 Visual Studio 中的內嵌的狀態列**
 
-####  <a name="BKMK_WindowsTray"></a> Windows 系統匣通知
+#### <a name="BKMK_WindowsTray"></a> Windows 系統匣通知
  Windows 通知區域位於旁邊系統時鐘在 Windows 工作列上。 許多公用程式和軟體元件提供此區域中的圖示，讓使用者可以取得整個系統的工作，例如變更螢幕解析度，或取得軟體更新的內容功能表。
 
  應該在 Visual Studio 通知中樞，而不 Windows 通知區域中提出環境層級通知。
 
-####  <a name="BKMK_NotificationBubbles"></a> 通知泡泡
+#### <a name="BKMK_NotificationBubbles"></a> 通知泡泡
  通知泡泡可以顯示成編輯器/設計工具內的參考用訊息，或做為 Windows 通知區域的一部分。 使用者視為這些泡泡它們之後，就可以解決的問題即非關鍵的通知的權益。 泡泡會適當的使用者就必須立即解決的重要資訊。 如果您在 Visual Studio 中使用通知泡泡，請遵循[通知泡泡的 Windows 桌面指引](/windows/desktop/uxguide/mess-notif)。
 
  ![通知泡泡](../../extensibility/ux-guidelines/media/0901-07_notificationbubbles.png "0901年 07_NotificationBubbles")
 
  **使用適用於 Visual Studio 的 Windows 通知區域中的通知泡泡**
 
-##  <a name="BKMK_ProgressIndicators"></a> 進度指標
+## <a name="BKMK_ProgressIndicators"></a> 進度指標
 
 ### <a name="overview"></a>總覽
  進度指示器都是提供使用者意見反應的通知系統很重要的一部分。 它們會告知使用者何時完成處理程序和作業。 熟悉的指標類型包括進度列、 旋轉的資料指標和動畫的圖示。 型別和進度列指示器的位置取決於內容，包括報告的內容和多久程序或作業才會完成。
@@ -135,17 +135,17 @@ ms.locfileid: "56683164"
 #### <a name="factors"></a>因素
  為了判斷適合哪一個指標類型，您必須判斷下列因素。
 
-1.  **執行時間：** 作業所花的時間長度
+1. **執行時間：** 作業所花的時間長度
 
-2.  **強制回應性：** 作業是強制性的環境 （鎖定 UI 程序完成之前）
+2. **強制回應性：** 作業是強制性的環境 （鎖定 UI 程序完成之前）
 
-3.  **永續/暫時性：** 是否必須是時間較晚的報告及/或檢視進度的最終結果
+3. **永續/暫時性：** 是否必須是時間較晚的報告及/或檢視進度的最終結果
 
-4.  **確定/未定：** 是否可以計算作業結束時間和進度
+4. **確定/未定：** 是否可以計算作業結束時間和進度
 
-5.  **圖形/Textual 位置：** 進度或處理程序是否擷取的內嵌訊息時或特定的控制項，例如樹狀結構控制項中的主體
+5. **圖形/Textual 位置：** 進度或處理程序是否擷取的內嵌訊息時或特定的控制項，例如樹狀結構控制項中的主體
 
-6.  **鄰近：** 進度應位於鄰近性與其相關的 UI。 （比方說，它可以在 [狀態] 列，可能會很遠的位置，或沒有要附近的按鈕，啟動處理序嗎？）
+6. **鄰近：** 進度應位於鄰近性與其相關的 UI。 （比方說，它可以在 [狀態] 列，可能會很遠的位置，或沒有要附近的按鈕，啟動處理序嗎？）
 
 #### <a name="determinate-progress"></a>確定的進度
 
@@ -281,7 +281,7 @@ ms.locfileid: "56683164"
 
  **進行中的處理序狀態與輸出視窗，並等候訊息**
 
-##  <a name="BKMK_Infobars"></a> 資訊列
+## <a name="BKMK_Infobars"></a> 資訊列
 
 ### <a name="overview"></a>總覽
  資訊列提供使用者注意點接近指標，並使用共用的資訊列控制項可確保一致的視覺外觀和互動。
@@ -292,31 +292,31 @@ ms.locfileid: "56683164"
 
 #### <a name="appropriate-uses-for-an-infobar"></a>適當使用資訊列
 
--   若要授與使用者目前的內容相關的非封鎖式但重要訊息
+- 若要授與使用者目前的內容相關的非封鎖式但重要訊息
 
--   若要表示 UI 處於特定狀態或條件，會帶來一些互動的影響，例如歷程偵錯
+- 若要表示 UI 處於特定狀態或條件，會帶來一些互動的影響，例如歷程偵錯
 
--   若要通知使用者系統已偵測到的問題，例如當擴充功能造成效能問題
+- 若要通知使用者系統已偵測到的問題，例如當擴充功能造成效能問題
 
--   若要提供使用者一個可以輕鬆地採取動作，例如當編輯器偵測到的檔案有混合的定位點和空格
+- 若要提供使用者一個可以輕鬆地採取動作，例如當編輯器偵測到的檔案有混合的定位點和空格
 
 ##### <a name="do"></a>執行動作：
 
--   簡單地說，點，請保留資訊列訊息文字。
+- 簡單地說，點，請保留資訊列訊息文字。
 
--   保持簡潔的上連結和按鈕的文字。
+- 保持簡潔的上連結和按鈕的文字。
 
--   請確定您提供給使用者的 「 動作 」 選項很低，顯示必要的動作。
+- 請確定您提供給使用者的 「 動作 」 選項很低，顯示必要的動作。
 
 ##### <a name="dont"></a>沒有此項目：
 
--   您可以使用資訊列，提供標準應放在工具列中的命令。
+- 您可以使用資訊列，提供標準應放在工具列中的命令。
 
--   使用資訊列來強制回應對話方塊取代。
+- 使用資訊列來強制回應對話方塊取代。
 
--   建立浮動視窗外部訊息。
+- 建立浮動視窗外部訊息。
 
--   在相同的視窗內的數個位置中使用多個資訊列。
+- 在相同的視窗內的數個位置中使用多個資訊列。
 
 #### <a name="can-multiple-infobars-show-at-the-same-time"></a>可以將多個資訊列顯示在相同的時間
  是，可以顯示多個資訊列，在相同的時間。 它們會與第一個顯示以下的上方和其他資訊列顯示的資訊列顯示，以先服務的順序。
@@ -326,13 +326,13 @@ ms.locfileid: "56683164"
 ### <a name="creating-an-infobar"></a>建立資訊列
  資訊列已從左到右的四個區段：
 
--   **圖示：** 這是您可以在其中加入的任何圖示要顯示的資訊列，例如警告圖示。
+- **圖示：** 這是您可以在其中加入的任何圖示要顯示的資訊列，例如警告圖示。
 
--   **文字：** 如有需要，您可以新增的文字描述的案例/情況使用者是，以及在的文字中的連結。 請務必保持簡潔的文字。
+- **文字：** 如有需要，您可以新增的文字描述的案例/情況使用者是，以及在的文字中的連結。 請務必保持簡潔的文字。
 
--   **動作：** 此區段應該包含連結和按鈕，使用者可以在您的資訊列中採取的動作。
+- **動作：** 此區段應該包含連結和按鈕，使用者可以在您的資訊列中採取的動作。
 
--   **[關閉] 按鈕：** 右邊的最後一節中可以有 [關閉] 按鈕。
+- **[關閉] 按鈕：** 右邊的最後一節中可以有 [關閉] 按鈕。
 
 #### <a name="creating-a-standard-infobar-in-managed-code"></a>在 managed 程式碼中建立標準的資訊列
  InfoBarModel 類別可用來建立資料來源的資訊列。 使用其中一個這些四個建構函式：
@@ -412,12 +412,12 @@ private bool TryCreateInfoBarUI(IVsInfoBar infoBar, out IVsInfoBarUIElement uiEl
 ### <a name="placement"></a>放置
  可以顯示資訊列，在一或多個下列位置：
 
--   工具視窗
+- 工具視窗
 
--   內文件索引標籤
+- 內文件索引標籤
 
 > [!IMPORTANT]
->  可以定位資訊列提供給全域內容的相關訊息。 工具列和文件區域之間會出現此選項。 這因為這會導致 「 跳和 jerk 」 的問題不建議使用的 IDE，應該加以避免，除非絕對必要且適當。
+> 可以定位資訊列提供給全域內容的相關訊息。 工具列和文件區域之間會出現此選項。 這因為這會導致 「 跳和 jerk 」 的問題不建議使用的 IDE，應該加以避免，除非絕對必要且適當。
 
 #### <a name="placing-an-infobar-in-a-toolwindowpane"></a>資訊列置於 ToolWindowPane
  ToolWindowPane.AddInfoBar(IVsInfoBar) 方法可用來加入工具視窗中的資訊列。 此 API 可以將新增的 IVsInfoBar （哪些 InfoBarModel 為預設的實作），或 IVsUIElement。
@@ -470,7 +470,7 @@ public interface IVsInfoBarUIEvents
 
 ```
 
-##  <a name="BKMK_ErrorValidation"></a> 驗證錯誤
+## <a name="BKMK_ErrorValidation"></a> 驗證錯誤
  當使用者輸入不是可接受的例如必要的欄位就會略過或輸入資料格式不正確的資訊時，最好是使用控制驗證或意見反應，而不是使用封鎖的快顯錯誤對話方塊在控制項旁邊。
 
 ### <a name="field-validation"></a>欄位驗證
@@ -478,7 +478,7 @@ public interface IVsInfoBarUIEvents
 
  ![欄位驗證&#40;空白&#41;](../../extensibility/ux-guidelines/media/0905-01_fieldvalidation.png "0905年 01_FieldValidation")
 
- 如果欄位是必要的應該要有加上浮水印文字指出**\<必要 >** 且欄位背景應指示燈黃色 (VSColor: `Environment.ControlEditRequiredBackground`) 和前景應為灰色 (VSColor: `Environment.ControlEditRequiredHintText`):
+ 如果欄位是必要的應該要有加上浮水印文字指出 **\<必要>** 且欄位背景應指示燈黃色 (VSColor: `Environment.ControlEditRequiredBackground`) 和前景應為灰色 (VSColor: `Environment.ControlEditRequiredHintText`):
 
  ![欄位與 [必要] 標籤的驗證](../../extensibility/ux-guidelines/media/0905-02_fieldvalidationrequired.png "0905年 02_FieldValidationRequired")
 

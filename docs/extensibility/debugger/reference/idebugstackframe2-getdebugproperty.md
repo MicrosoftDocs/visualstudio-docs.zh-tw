@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugStackFrame2::GetDebugProperty
 ms.assetid: 02c2fa04-1424-4bca-9936-feaecd2afab6
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 930f3d7ec2500adaaf9b499e4e327aedabaf8d52
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 4c520482d78b8630c639088ca98d66782f2e2d75
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56691926"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66321809"
 ---
 # <a name="idebugstackframe2getdebugproperty"></a>IDebugStackFrame2::GetDebugProperty
 取得堆疊框架的屬性的描述。
@@ -36,10 +39,9 @@ int GetDebugProperty ( 
 );
 ```
 
-#### <a name="parameters"></a>參數
- `ppDebugProp`
-
- [out]傳回[IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)物件，描述此堆疊框架的內容。
+## <a name="parameters"></a>參數
+`ppDebugProp`\
+[out]傳回[IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)物件，描述此堆疊框架的內容。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

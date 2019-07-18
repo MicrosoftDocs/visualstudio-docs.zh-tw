@@ -1,14 +1,9 @@
 ---
-title: IDebugObject2 |Microsoft Docs
-ms.custom: ''
+title: IDebugObject2 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugObject2
 helpviewer_keywords:
@@ -16,19 +11,19 @@ helpviewer_keywords:
 ms.assetid: ef640967-8adb-4793-994d-ae1736510891
 caps.latest.revision: 16
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: c8ef125f955c8d6e4d7f1fdb9e58f088ba4b56f7
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 979ede5601f1f31ca972bb9067b626954b1296f7
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51744963"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695202"
 ---
 # <a name="idebugobject2"></a>IDebugObject2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
 > [!IMPORTANT]
->  在 Visual Studio 2015 中，這種實作運算式評估工具已被取代。 如需實作 CLR 運算式評估工具的資訊，請參閱[CLR 運算式評估工具](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)並[Managed 運算式評估工具範例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。  
+> 在 Visual Studio 2015 中，這種實作運算式評估工具已被取代。 如需實作 CLR 運算式評估工具的資訊，請參閱[CLR 運算式評估工具](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)並[Managed 運算式評估工具範例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。  
   
  這個介面會提供物件的其他資訊。  
   
@@ -42,7 +37,7 @@ IDebugObject2 : IDebugObject
  運算式評估工具會實作這個介面來提供支援的別名以及存取物件的相關資訊。  
   
 ## <a name="notes-for-callers"></a>呼叫端資訊  
- [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)介面可以使用，取得這個介面[QueryInterface](http://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3)。 此外， [GetObject](../../../extensibility/debugger/reference/idebugalias-getobject.md)傳回此介面。  
+ [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)介面可以使用，取得這個介面[QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3)。 此外， [GetObject](../../../extensibility/debugger/reference/idebugalias-getobject.md)傳回此介面。  
   
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法  
  上的方法除了[IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)介面，`IDebugObject2`實作下列介面：  
@@ -63,13 +58,12 @@ IDebugObject2 : IDebugObject
 ## <a name="requirements"></a>需求  
  標頭： ee.h  
   
- 命名空間： Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間：Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
  [運算式評估介面](../../../extensibility/debugger/reference/expression-evaluation-interfaces.md)   
  [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)   
  [IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md)   
  [GetObject](../../../extensibility/debugger/reference/idebugalias-getobject.md)
-

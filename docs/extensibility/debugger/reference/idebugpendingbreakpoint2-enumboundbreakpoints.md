@@ -8,17 +8,20 @@ helpviewer_keywords:
 - EnumBoundBreakpoints method
 - IDebugPendingBreakpoint2::EnumBoundBreakpoints method
 ms.assetid: 179c7c54-8446-462d-b099-e0f9cf06dc52
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e1024ecc5c1676a7873f11ac7b6866b0e181fde6
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 017981e2762ec8246a1898f224700c3b689552b0
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56719297"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66333772"
 ---
 # <a name="idebugpendingbreakpoint2enumboundbreakpoints"></a>IDebugPendingBreakpoint2::EnumBoundBreakpoints
 列舉所有繫結從這個暫止中斷點的中斷點。
@@ -37,10 +40,9 @@ int EnumBoundBreakpoints( 
 );
 ```
 
-#### <a name="parameters"></a>參數
- `ppEnum`
-
- [out]傳回[IEnumDebugBoundBreakpoints2](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2.md)列舉繫結的中斷點的物件。
+## <a name="parameters"></a>參數
+`ppEnum`\
+[out]傳回[IEnumDebugBoundBreakpoints2](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2.md)列舉繫結的中斷點的物件。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。 傳回`E_BP_DELETED`如果中斷點已遭刪除。

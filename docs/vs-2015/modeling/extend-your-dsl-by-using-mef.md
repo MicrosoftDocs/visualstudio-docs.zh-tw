@@ -1,23 +1,20 @@
 ---
 title: 使用 MEF 擴充您的 DSL |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: 3e7be79a-53ab-4d79-863a-bef8d27839bd
 caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: fd5e4727c4352ca27d905bad608c4a1c17284f9b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: a1b90f37dcdadc53b6f2a81b9b4e9a860dd6a529
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49930633"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67692525"
 ---
 # <a name="extend-your-dsl-by-using-mef"></a>使用 MEF 擴充您的 DSL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +23,7 @@ ms.locfileid: "49930633"
   
  此外，當您啟用 MEF DSL 中，它可以是您更輕鬆地撰寫您的 DSL 的功能即使它們皆已內建與 DSL。  
   
- 如需 MEF 的詳細資訊，請參閱[Managed Extensibility Framework (MEF)](http://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde)。  
+ 如需 MEF 的詳細資訊，請參閱[Managed Extensibility Framework (MEF)](https://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde)。  
   
 ### <a name="to-enable-your-dsl-to-be-extended-by-mef"></a>若要啟用以 MEF 擴充您的 DSL  
   
@@ -35,7 +32,7 @@ ms.locfileid: "49930633"
     檔案名稱： `CommandExtensionVSCT.tt`  
   
    > [!IMPORTANT]
-   >  設定在這個檔案是定義於 DslPackage\GeneratedCode\Constants.tt GUID CommandSetId 相同的 GUID  
+   > 設定在這個檔案是定義於 DslPackage\GeneratedCode\Constants.tt GUID CommandSetId 相同的 GUID  
   
    ```  
    <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>  
@@ -134,23 +131,23 @@ ms.locfileid: "49930633"
   
    - 這個組件通常具有名稱的結尾 」。Dsl.dll"。  
   
-   - 如果您有 DSL 專案的存取權，您可以找到組件檔案的目錄下**Dsl\bin\\\\***  
+   - 如果您有 DSL 專案的存取權，您可以找到組件檔案的目錄下**Dsl\\bin\\\***  
   
    - 如果您的 DSL 的 VSIX 檔案存取，您可以將 VSIX 檔案的副檔名變更為 「.zip 」 來尋找組件。 將解壓縮的.zip 檔案。  
   
 3. 加入下列.NET 組件的參考：  
   
-   -   Microsoft.VisualStudio.Modeling.Sdk.11.0.dll  
+   - Microsoft.VisualStudio.Modeling.Sdk.11.0.dll  
   
-   -   Microsoft.VisualStudio.Modeling.Sdk.Diagrams.11.0.dll  
+   - Microsoft.VisualStudio.Modeling.Sdk.Diagrams.11.0.dll  
   
-   -   Microsoft.VisualStudio.Modeling.Sdk.Shell.11.0.dll  
+   - Microsoft.VisualStudio.Modeling.Sdk.Shell.11.0.dll  
   
-   -   System.ComponentModel.Composition.dll  
+   - System.ComponentModel.Composition.dll  
   
-   -   System.Windows.Forms.dll  
+   - System.Windows.Forms.dll  
   
-4. 建立 VSIX 專案，在相同的方案。 若要這樣做，請在**新的專案**對話方塊方塊中，展開**Visual Basic**或**Visual C#**，按一下 **擴充性**，然後選取  **VSIX 專案**。  
+4. 建立 VSIX 專案，在相同的方案。 若要這樣做，請在**新的專案**對話方塊方塊中，展開**Visual Basic**或**Visual C#** ，按一下 **擴充性**，然後選取  **VSIX 專案**。  
   
 5. 在 方案總管 中，以滑鼠右鍵按一下 VSIX 專案，並再按**設定為啟始專案**。  
   
@@ -162,7 +159,7 @@ ms.locfileid: "49930633"
   
    1. 在  **source.extension.vsixmanifest**，按一下 **加入參考**  
   
-   2. 在對話方塊中，按一下**新增裝載**，然後尋找 DSL 的 VSIX 檔案。 在 VSIX 檔案建置在 DSL 方案中，* * DslPackage\bin\\\\* * *。  
+   2. 在對話方塊中，按一下**新增裝載**，然後尋找 DSL 的 VSIX 檔案。 在 VSIX 檔案建置在 DSL 方案中， **DslPackage\\bin\\\*** 。  
   
        這可讓使用者安裝 DSL 和擴充功能，在相同的時間。 如果使用者已經安裝 DSL，將會安裝您的擴充。  
   
@@ -250,7 +247,7 @@ namespace MyMefExtension
 ### <a name="gesture-handlers"></a>軌跡處理常式  
  軌跡處理常式可以處理物件的內部或外部，拖曳到圖表上從任何地方， [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。 下列範例可讓使用者從 Windows 檔案總管將檔案拖曳到圖表上。 它會建立包含檔案名稱的項目。  
   
- 您可以撰寫處理常式來處理來自其他 DSL 模型和 UML 模型拖曳的。 如需詳細資訊，請參閱 <<c0> [ 如何： 加入拖放處理常式](../modeling/how-to-add-a-drag-and-drop-handler.md)。  
+ 您可以撰寫處理常式來處理來自其他 DSL 模型和 UML 模型拖曳的。 如需詳細資訊，請參閱[如何：新增拖放處理常式](../modeling/how-to-add-a-drag-and-drop-handler.md)。  
   
 ```  
   
@@ -379,9 +376,6 @@ namespace MefExtension
   
 ## <a name="see-also"></a>另請參閱  
  [推出 Visual Studio 擴充功能](../extensibility/shipping-visual-studio-extensions.md)   
- [Managed 的 Extensibility Framework (MEF)](http://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde)   
- [如何： 加入拖放處理常式](../modeling/how-to-add-a-drag-and-drop-handler.md)   
+ [Managed 的 Extensibility Framework (MEF)](https://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde)   
+ [如何：新增拖放處理常式](../modeling/how-to-add-a-drag-and-drop-handler.md)   
  [特定領域語言中的驗證](../modeling/validation-in-a-domain-specific-language.md)
-
-
-

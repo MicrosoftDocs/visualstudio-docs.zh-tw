@@ -1,6 +1,6 @@
 ---
 title: 選項對話方塊、環境、一般
-ms.date: 11/04/2016
+ms.date: 03/28/2019
 ms.topic: reference
 f1_keywords:
 - VS.Message.0x800a002e
@@ -24,14 +24,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4faae6f061da675efdecdea5f8c4a0e606d486b8
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: a2f860293669ddab035ddd1c53e09dbb9962df01
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56710834"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62790131"
 ---
-# <a name="general-environment-options-dialog-box"></a>選項對話方塊、環境、一般
+# <a name="options-dialog-box-environment--general"></a>選項對話方塊：環境 \> 一般
 
 使用此頁面來變更整合式開發環境 (IDE) 之色彩佈景主題、狀態列設定和副檔名關聯等其他選項。 開啟 [工具] 功能表，並選擇 [選項]，然後開啟 [環境] 資料夾，再選擇 [一般] 頁面，即可存取 [選項] 對話方塊。 如果此頁面未出現在清單中，請在 [選項] 對話方塊中選取 [顯示所有設定] 核取方塊。
 
@@ -39,17 +39,36 @@ ms.locfileid: "56710834"
 
 **色彩佈景主題**
 
-選擇 IDE 的 [藍色]、[淺色] 或 [深色] 色彩佈景主題。
+選擇 IDE 的 [藍色]、[淺色]、[深色] 或 [藍色 (更高對比)] 色彩佈景主題。
 
 您可以從 [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.VisualStudio2017ColorThemeEditor) 下載和安裝 **Visual Studio 色彩佈景主題編輯器**，以安裝其他預先定義的佈景主題，以及建立自訂佈景主題。 安裝此工具之後，其他色彩佈景主題會出現在 [色彩佈景主題] 清單方塊中。
 
-**將字首大寫套用至功能表列**
+**將標題大寫樣式套用至功能表列**
 
-功能表預設會使用 [字首大寫]。 取消核取此選項，藉此設為 [全部大寫]。
+功能表預設會使用標題大寫樣式。 取消選取此選項，改為使用所有大寫樣式。
+
+::: moniker range=">=vs-2019"
+
+**為不同像素密度的螢幕最佳化呈現方式 (需要重新啟動)**
+
+此選項可啟用或停用個別監視器 DPI (每英吋的點數) 感知 (或 *PMA*)。 當 PMA 啟用時，使用任何監視器顯示比例與 DPI 設定都能清晰顯示 Visual Studio 使用者介面，包括跨多個監視器顯示時。 若要啟用 PMA，您需要 Windows 10 2018 4 月更新或更新版本和 .NET Framework 4.8 或更新版本。 (如果不符合這兩個必要條件，這個選項會呈現灰色。)
+
+> [!TIP]
+> - Windows 10 有設定顯示為 [讓 Windows 嘗試修正應用程式，讓他們不會模糊不清]。 如果您選取 [為不同像素密度的螢幕將呈現方式最佳化] 選項，則**開啟**該 Windows 設定會有顯著效果。
+> - Windows 10 也包含 [程式相容性疑難排解員]。 我們不建議您嘗試使用該疑難排解工具來修正 Visual Studio 的外觀。
+
+::: moniker-end
 
 **自動根據用戶端效能調整視覺效果**
 
 指定 Visual Studio 自動將調整設定為視覺效果還是明確地設定調整。 這項調整可能會將色彩顯示從漸層變更為單色，也可能會限制在功能表或快顯視窗中使用動畫。
+
+::: moniker range="vs-2017"
+
+> [!TIP]
+> Windows 10 有設定顯示為 [讓 Windows 嘗試修正應用程式，讓他們不會模糊不清]。 如果 Visual Studio 在您的監視器上顯示模糊，建議您**開啟**該設定。 請考慮升級至 [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019)，因為它是感知個別監視器 DPI 的應用程式，能大幅改善顯示清晰度。
+
+::: moniker-end
 
 **啟用豐富的用戶端效果**
 
@@ -61,13 +80,13 @@ ms.locfileid: "56710834"
 
 ## <a name="other"></a>其他
 
-**個項目顯示在 [視窗] 功能表中**
+**要在 Windows 功能表中顯示的項目**
 
-自訂 [視窗] 功能表之 [視窗] 清單中顯示的視窗數目。 輸入 1 與 24 之間的數字。 數字預設為 10。
+自訂 [視窗] 功能表之 [視窗] 清單中顯示的視窗數目。 輸入 1 和 24 之間的數字。 預設值為 10。
 
 **顯示在最近使用的清單中的項目數**
 
-自訂出現在 [檔案] 功能表上的最近使用的專案和檔案數目。 輸入 1 與 24 之間的數字。 數字預設為 10。 這是擷取最近使用的專案和檔案的簡單方法。
+自訂出現在 [檔案] 功能表上的最近使用的專案和檔案數目。 輸入 1 和 24 之間的數字。 預設值為 10。 這是擷取最近使用的專案和檔案的簡單方法。
 
 **顯示狀態列**
 

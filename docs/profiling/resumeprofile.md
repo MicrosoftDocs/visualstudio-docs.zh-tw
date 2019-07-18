@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7e0d9db4660936629c1e9dd6a5b7ff9704a7e7e8
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56636472"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62814094"
 ---
 # <a name="resumeprofile"></a>ResumeProfile
 `ResumeProfile` 方法會遞減指定分析層級的暫止/繼續計數器。

@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a8592bdbe08c70df96cf553ff5548a87704837a8
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 21ca64f6661c4f0d7182bf20887ff8bdf754a6fc
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56596330"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440320"
 ---
 # <a name="chart-control"></a>圖表控制項
   <xref:Microsoft.Office.Tools.Excel.Chart> 控制項是一個會公開事件的圖表物件。 當您將圖表加入工作表時，Visual Studio 會建立 <xref:Microsoft.Office.Tools.Excel.Chart> 物件，以便您直接對這個物件進行程式設計，而不必周遊 Microsoft Office Excel 物件模型。
@@ -34,7 +34,7 @@ ms.locfileid: "56596330"
  您可以新增<xref:Microsoft.Office.Tools.Excel.Chart>控制項加入工作表，在執行階段中的 VSTO 增益集。 如需詳細資訊，請參閱[如何：將圖表控制項加入工作表](../vsto/how-to-add-chart-controls-to-worksheets.md)。
 
 > [!NOTE]
->  當工作表關閉時，動態建立的圖表物件不會保存為工作表中的主控制項。 如需詳細資訊，請參閱 <<c0> [ 將控制項加入 Office 文件，在執行階段](../vsto/adding-controls-to-office-documents-at-run-time.md)。
+> 當工作表關閉時，動態建立的圖表物件不會保存為工作表中的主控制項。 如需詳細資訊，請參閱 <<c0> [ 將控制項加入 Office 文件，在執行階段](../vsto/adding-controls-to-office-documents-at-run-time.md)。
 
 ## <a name="formatting"></a>格式化
  可套用至 <xref:Microsoft.Office.Interop.Excel.Chart> 的任何格式，皆可套用至 <xref:Microsoft.Office.Tools.Excel.Chart> 控制項。 其包括框線、字型、圖表類型、格線、圖例和資料標籤。
@@ -42,35 +42,35 @@ ms.locfileid: "56596330"
 ## <a name="events"></a>事件
  下列事件適用於 <xref:Microsoft.Office.Tools.Excel.Chart> 控制項：
 
--   <xref:Microsoft.Office.Tools.Excel.Chart.ActivateEvent>
+- <xref:Microsoft.Office.Tools.Excel.Chart.ActivateEvent>
 
--   <xref:Microsoft.Office.Tools.Excel.Chart.BeforeDoubleClick>
+- <xref:Microsoft.Office.Tools.Excel.Chart.BeforeDoubleClick>
 
--   <xref:Microsoft.Office.Tools.Excel.Chart.BeforeRightClick>
+- <xref:Microsoft.Office.Tools.Excel.Chart.BeforeRightClick>
 
--   <xref:Microsoft.Office.Tools.Excel.Chart.BindingContextChanged>
+- <xref:Microsoft.Office.Tools.Excel.Chart.BindingContextChanged>
 
--   <xref:Microsoft.Office.Tools.Excel.Chart.Calculate>
+- <xref:Microsoft.Office.Tools.Excel.Chart.Calculate>
 
--   <xref:Microsoft.Office.Tools.Excel.Chart.Deactivate>
+- <xref:Microsoft.Office.Tools.Excel.Chart.Deactivate>
 
--   <xref:System.ComponentModel.Component.Disposed>
+- <xref:System.ComponentModel.Component.Disposed>
 
--   <xref:Microsoft.Office.Tools.Excel.Chart.DragOver>
+- <xref:Microsoft.Office.Tools.Excel.Chart.DragOver>
 
--   <xref:Microsoft.Office.Tools.Excel.Chart.DragPlot>
+- <xref:Microsoft.Office.Tools.Excel.Chart.DragPlot>
 
--   <xref:Microsoft.Office.Tools.Excel.Chart.MouseDown>
+- <xref:Microsoft.Office.Tools.Excel.Chart.MouseDown>
 
--   <xref:Microsoft.Office.Tools.Excel.Chart.MouseMove>
+- <xref:Microsoft.Office.Tools.Excel.Chart.MouseMove>
 
--   <xref:Microsoft.Office.Tools.Excel.Chart.MouseUp>
+- <xref:Microsoft.Office.Tools.Excel.Chart.MouseUp>
 
--   <xref:Microsoft.Office.Tools.Excel.Chart.Resize>
+- <xref:Microsoft.Office.Tools.Excel.Chart.Resize>
 
--   <xref:Microsoft.Office.Tools.Excel.Chart.SelectEvent>
+- <xref:Microsoft.Office.Tools.Excel.Chart.SelectEvent>
 
--   <xref:Microsoft.Office.Tools.Excel.Chart.SeriesChange>
+- <xref:Microsoft.Office.Tools.Excel.Chart.SeriesChange>
 
 ## <a name="see-also"></a>另請參閱
 - [Office 程式開發範例和逐步解說](../vsto/office-development-samples-and-walkthroughs.md)

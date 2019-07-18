@@ -1,27 +1,22 @@
 ---
 title: 舊版語言服務剖析器和掃描器 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - parsers, language services [managed package framework]
 - language services [managed package framework], Parsers
 ms.assetid: 1ac3de27-a23b-438d-9593-389e45839cfa
 caps.latest.revision: 21
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: fd419c569a298afd37548fd7b85a23cad733e371
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 64f9a9f4d0785f033191ab527084f0dddb1ff104
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51786392"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434369"
 ---
 # <a name="legacy-language-service-parser-and-scanner"></a>舊版語言服務的剖析器和掃描器
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -73,7 +68,7 @@ namespace MyNamespace
  與做為一部分 （語彙基元會轉換為某種形式的可執行程式碼） 編譯器的剖析器，不同的語言服務剖析器可以呼叫許多不同的原因，然後在許多不同的內容。 在這種方法的實作方式<xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A>方法中的<xref:Microsoft.VisualStudio.Package.LanguageService>類別是由您決定。 請務必記住，<xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A>可能會在背景執行緒上呼叫方法。  
   
 > [!CAUTION]
->  <xref:Microsoft.VisualStudio.Package.ParseRequest>結構包含參考<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>物件。 這<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>物件不能在背景執行緒。 事實上，許多基底的 MPF 類別不能在背景執行緒。 其中包括<xref:Microsoft.VisualStudio.Package.Source>， <xref:Microsoft.VisualStudio.Package.ViewFilter>，<xref:Microsoft.VisualStudio.Package.CodeWindowManager>類別，以及檢視與通訊的直接或間接的任何其他類別。  
+> <xref:Microsoft.VisualStudio.Package.ParseRequest>結構包含參考<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>物件。 這<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>物件不能在背景執行緒。 事實上，許多基底的 MPF 類別不能在背景執行緒。 其中包括<xref:Microsoft.VisualStudio.Package.Source>， <xref:Microsoft.VisualStudio.Package.ViewFilter>，<xref:Microsoft.VisualStudio.Package.CodeWindowManager>類別，以及檢視與通訊的直接或間接的任何其他類別。  
   
  此剖析器通常會剖析整個來源檔案的第一個時間呼叫它，或當剖析原因值<xref:Microsoft.VisualStudio.Package.ParseReason>指定。 後續呼叫<xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A>方法處理剖析程式碼的一小部分，而且可以使用前一個完整的剖析作業的結果更快速地執行。 <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A>方法進行通訊的剖析作業中透過結果<xref:Microsoft.VisualStudio.Package.AuthoringSink>和<xref:Microsoft.VisualStudio.Package.AuthoringScope>物件。 <xref:Microsoft.VisualStudio.Package.AuthoringSink>物件用來收集特定的剖析原因，例如，範圍的資訊比對括號或有參數清單的方法簽章的資訊。 <xref:Microsoft.VisualStudio.Package.AuthoringScope>提供的宣告和方法簽章以及支援的集合移至進階的編輯選項 (**移至定義**，**移至宣告**，**移至參考**)。  
   
@@ -87,29 +82,29 @@ namespace MyNamespace
   
  假設語言服務支援對稱的括號。  
   
-1.  使用者會輸入右大括號 （}）。  
+1. 使用者會輸入右大括號 （}）。  
   
-2.  在原始程式檔中的資料指標插入的大括號和資料指標一個進階。  
+2. 在原始程式檔中的資料指標插入的大括號和資料指標一個進階。  
   
-3.  <xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A>方法中的<xref:Microsoft.VisualStudio.Package.Source>類別稱為 「 以具類型的右括號。  
+3. <xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A>方法中的<xref:Microsoft.VisualStudio.Package.Source>類別稱為 「 以具類型的右括號。  
   
-4.  <xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A>方法呼叫<xref:Microsoft.VisualStudio.Package.Source.GetTokenInfo%2A>方法中的<xref:Microsoft.VisualStudio.Package.Source>類別來取得目前的游標位置之前位置的語彙基元。 這個語彙基元對應至具類型的右大括號）。  
+4. <xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A>方法呼叫<xref:Microsoft.VisualStudio.Package.Source.GetTokenInfo%2A>方法中的<xref:Microsoft.VisualStudio.Package.Source>類別來取得目前的游標位置之前位置的語彙基元。 這個語彙基元對應至具類型的右大括號）。  
   
-    1.  <xref:Microsoft.VisualStudio.Package.Source.GetTokenInfo%2A>方法呼叫<xref:Microsoft.VisualStudio.Package.Colorizer.GetLineInfo%2A>方法<xref:Microsoft.VisualStudio.Package.Colorizer>物件來取得目前的行上的所有權杖。  
+    1. <xref:Microsoft.VisualStudio.Package.Source.GetTokenInfo%2A>方法呼叫<xref:Microsoft.VisualStudio.Package.Colorizer.GetLineInfo%2A>方法<xref:Microsoft.VisualStudio.Package.Colorizer>物件來取得目前的行上的所有權杖。  
   
-    2.  <xref:Microsoft.VisualStudio.Package.Colorizer.GetLineInfo%2A>方法呼叫<xref:Microsoft.VisualStudio.Package.IScanner.SetSource%2A>方法<xref:Microsoft.VisualStudio.Package.IScanner>目前這一行文字的物件。  
+    2. <xref:Microsoft.VisualStudio.Package.Colorizer.GetLineInfo%2A>方法呼叫<xref:Microsoft.VisualStudio.Package.IScanner.SetSource%2A>方法<xref:Microsoft.VisualStudio.Package.IScanner>目前這一行文字的物件。  
   
-    3.  <xref:Microsoft.VisualStudio.Package.Colorizer.GetLineInfo%2A>方法會重複呼叫<xref:Microsoft.VisualStudio.Package.IScanner.ScanTokenAndProvideInfoAboutIt%2A>方法<xref:Microsoft.VisualStudio.Package.IScanner>物件來收集所有語彙基元從目前這一行。  
+    3. <xref:Microsoft.VisualStudio.Package.Colorizer.GetLineInfo%2A>方法會重複呼叫<xref:Microsoft.VisualStudio.Package.IScanner.ScanTokenAndProvideInfoAboutIt%2A>方法<xref:Microsoft.VisualStudio.Package.IScanner>物件來收集所有語彙基元從目前這一行。  
   
-    4.  <xref:Microsoft.VisualStudio.Package.Source.GetTokenInfo%2A>方法呼叫的私用方法<xref:Microsoft.VisualStudio.Package.Source>類別來取得權杖，其中包含所要的位置，並傳入的語彙基元清單取自<xref:Microsoft.VisualStudio.Package.Colorizer.GetLineInfo%2A>方法。  
+    4. <xref:Microsoft.VisualStudio.Package.Source.GetTokenInfo%2A>方法呼叫的私用方法<xref:Microsoft.VisualStudio.Package.Source>類別來取得權杖，其中包含所要的位置，並傳入的語彙基元清單取自<xref:Microsoft.VisualStudio.Package.Colorizer.GetLineInfo%2A>方法。  
   
-5.  <xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A>方法會尋找語彙基元的觸發程序旗標<xref:Microsoft.VisualStudio.Package.TokenTriggers>從傳回的權杖上<xref:Microsoft.VisualStudio.Package.Source.GetTokenInfo%2A>方法，也就是右大括號表示語彙基元)。  
+5. <xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A>方法會尋找語彙基元的觸發程序旗標<xref:Microsoft.VisualStudio.Package.TokenTriggers>從傳回的權杖上<xref:Microsoft.VisualStudio.Package.Source.GetTokenInfo%2A>方法，也就是右大括號表示語彙基元)。  
   
-6.  如果觸發程序旗標<xref:Microsoft.VisualStudio.Package.TokenTriggers>找到，則<xref:Microsoft.VisualStudio.Package.Source.MatchBraces%2A>方法中的<xref:Microsoft.VisualStudio.Package.Source>類別稱為。  
+6. 如果觸發程序旗標<xref:Microsoft.VisualStudio.Package.TokenTriggers>找到，則<xref:Microsoft.VisualStudio.Package.Source.MatchBraces%2A>方法中的<xref:Microsoft.VisualStudio.Package.Source>類別稱為。  
   
-7.  <xref:Microsoft.VisualStudio.Package.Source.MatchBraces%2A>方法的剖析作業開頭的剖析原因值<xref:Microsoft.VisualStudio.Package.ParseReason>。 這項作業最後會呼叫<xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A>方法<xref:Microsoft.VisualStudio.Package.LanguageService>類別。 如果已啟用非同步剖析，此呼叫<xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A>方法，就會發生在背景執行緒上。  
+7. <xref:Microsoft.VisualStudio.Package.Source.MatchBraces%2A>方法的剖析作業開頭的剖析原因值<xref:Microsoft.VisualStudio.Package.ParseReason>。 這項作業最後會呼叫<xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A>方法<xref:Microsoft.VisualStudio.Package.LanguageService>類別。 如果已啟用非同步剖析，此呼叫<xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A>方法，就會發生在背景執行緒上。  
   
-8.  當剖析的作業完成時，名為內部的完成處理常式 （也稱為回呼方法）`HandleMatchBracesResponse`中稱為<xref:Microsoft.VisualStudio.Package.Source>類別。 自動進行此呼叫<xref:Microsoft.VisualStudio.Package.LanguageService>基底類別不是由剖析器。  
+8. 當剖析的作業完成時，名為內部的完成處理常式 （也稱為回呼方法）`HandleMatchBracesResponse`中稱為<xref:Microsoft.VisualStudio.Package.Source>類別。 自動進行此呼叫<xref:Microsoft.VisualStudio.Package.LanguageService>基底類別不是由剖析器。  
   
 9. `HandleMatchBracesResponse`方法會取得一份範圍，從<xref:Microsoft.VisualStudio.Package.AuthoringSink>物件，會儲存在<xref:Microsoft.VisualStudio.Package.ParseRequest>物件。 (範圍是<xref:Microsoft.VisualStudio.TextManager.Interop.TextSpan>結構，指定原始程式檔中的一系列的線條及字元。)這份清單的範圍通常包含兩個範圍，其中每個左和右大括號。  
   
@@ -120,7 +115,7 @@ namespace MyNamespace
 12. 完成此項目。  
   
 ### <a name="summary"></a>總結  
- 比對的大括號作業僅限於通常簡單組的語言項目。 更複雜的項目，例如比對三合一 ("`if(…)`"，"`{`"和"`}`"，或 「`else`"，"`{`"和"`}`」)，可以反白顯示文字自動完成作業的一部分。 例如，"else"word 完成時，比對"`if`」 陳述式可以反白顯示。 如果有一系列`if` / `else if`陳述式中，所有人都可以使用相同的機制，做為對稱的括號反白顯示。 <xref:Microsoft.VisualStudio.Package.Source>基底類別已經支援此做法，，如下所示： 掃描器必須傳回語彙基元的觸發程序的值<xref:Microsoft.VisualStudio.Package.TokenTriggers>結合觸發程序值<xref:Microsoft.VisualStudio.Package.TokenTriggers>游標位置之前的語彙基元。  
+ 比對的大括號作業僅限於通常簡單組的語言項目。 更複雜的項目，例如比對三合一 ("`if(…)`"，"`{`"和"`}`"，或 「`else`"，"`{`"和"`}`」)，可以反白顯示文字自動完成作業的一部分。 例如，"else"word 完成時，比對"`if`」 陳述式可以反白顯示。 如果有一系列`if` / `else if`陳述式中，所有人都可以使用相同的機制，做為對稱的括號反白顯示。 <xref:Microsoft.VisualStudio.Package.Source>基底類別已經支援此做法，，如下所示：掃描器必須傳回的語彙基元的觸發程序值<xref:Microsoft.VisualStudio.Package.TokenTriggers>結合的觸發程序值<xref:Microsoft.VisualStudio.Package.TokenTriggers>游標位置之前的語彙基元。  
   
  如需詳細資訊，請參閱 <<c0> [ 舊版語言服務中的大括號比對](../../extensibility/internals/brace-matching-in-a-legacy-language-service.md)。  
   
@@ -143,4 +138,3 @@ namespace MyNamespace
  [舊版語言服務概觀](../../extensibility/internals/legacy-language-service-overview.md)   
  [舊版語言服務中的語法上色](../../extensibility/internals/syntax-colorizing-in-a-legacy-language-service.md)   
  [舊版語言服務中的括號對稱](../../extensibility/internals/brace-matching-in-a-legacy-language-service.md)
-

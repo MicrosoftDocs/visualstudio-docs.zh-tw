@@ -1,7 +1,7 @@
 ---
 title: 使用回應檔自動化安裝
 description: 了解如何建立可協助您自動化 Visual Studio 安裝的 JSON 回應檔
-ms.date: 08/14/2017
+ms.date: 03/30/2019
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,12 +14,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7547a6bb4670640733a64e7a60bfc92076df1460
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.prod: visual-studio-windows
+ms.technology: vs-installation
+ms.openlocfilehash: eb822a275f55b8c0f833f0c284aba2fd663a27fd
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57982970"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62974445"
 ---
 # <a name="how-to-define-settings-in-a-response-file"></a>如何在回應檔中定義設定
 
@@ -48,6 +50,8 @@ vs_enterprise.exe --in customInstall.json
 
 配置中的基底 `response.json` 檔案應該與下列範例類似，差異在於它會包含您想要安裝之產品和通道的值：
 
+::: moniker range="vs-2017"
+
 ```json
 {
   "installChannelUri": ".\\ChannelManifest.json",
@@ -58,11 +62,29 @@ vs_enterprise.exe --in customInstall.json
 }
 ```
 
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+```json
+{
+  "installChannelUri": ".\\ChannelManifest.json",
+  "channelUri": "https://aka.ms/vs/16/release/channel",
+  "installCatalogUri": ".\\Catalog.json",
+  "channelId": "VisualStudio.16.Release",
+  "productId": "Microsoft.VisualStudio.Product.Enterprise"
+}
+```
+
+::: moniker-end
+
 當您建立或更新配置時，也會建立 response.template.json 檔案。  這個檔案會包含可使用的所有工作負載、元件和語言識別碼。  針對自訂安裝中可以包含的所有項目，會提供此檔案作為範本。  系統管理員可以使用這個檔案作為自訂回應檔的起點。  只需要移除您不想要安裝之項目的識別碼，並將它儲存在您自己的回應檔中。  請不要自訂 response.template.json 檔案，否則，只要更新配置，您的變更就會遺失。
 
 ## <a name="example-layout-response-file-content"></a>範例配置回應檔的內容
 
 下列範例會安裝 Visual Studio Enterprise 與六個常見的工作負載和元件，以及英文和法文 UI 語言。 您可以使用這個範例作為範本；只需要將工作負載和元件變更為您想要安裝的工作負載和元件：
+
+::: moniker range="vs-2017"
 
 ```json
 {
@@ -94,6 +116,43 @@ vs_enterprise.exe --in customInstall.json
     ]
 }
 ```
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+```json
+{
+  "installChannelUri": ".\\ChannelManifest.json",
+  "channelUri": "https://aka.ms/vs/16/release/channel",
+  "installCatalogUri": ".\\Catalog.json",
+  "channelId": "VisualStudio.16.Release",
+  "productId": "Microsoft.VisualStudio.Product.Enterprise",
+
+  "installPath": "C:\\VS2019",
+  "quiet": false,
+  "passive": false,
+  "includeRecommended": true,
+  "norestart": false,
+
+  "addProductLang": [
+    "en-US",
+    "fr-FR"
+    ],
+
+    "add": [
+        "Microsoft.VisualStudio.Workload.ManagedDesktop",
+        "Microsoft.VisualStudio.Workload.Data",
+        "Microsoft.VisualStudio.Workload.NativeDesktop",
+        "Microsoft.VisualStudio.Workload.NetWeb",
+        "Microsoft.VisualStudio.Workload.Office",
+        "Microsoft.VisualStudio.Workload.Universal",
+        "Component.GitHub.VisualStudio"
+    ]
+}
+```
+
+::: moniker-end
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

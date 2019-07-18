@@ -1,5 +1,5 @@
 ---
-title: 逐步解說：建立 SharePoint 專案的自訂部署步驟 |Microsoft Docs
+title: 建立 SharePoint 專案的自訂部署步驟
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ece85279e4ecff20eff0a79c75f4f316de1a54cf
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 4b209fad02cdcb3da230143a2c13ff4eaa648d76
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56609393"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825627"
 ---
 # <a name="walkthrough-create-a-custom-deployment-step-for-sharepoint-projects"></a>逐步解說：建立 SharePoint 專案的自訂部署步驟
   當您部署 SharePoint 專案時，Visual Studio 會以特定順序執行一系列的部署步驟。 Visual Studio 包含許多的內建的部署步驟，但您也可以建立您自己。
@@ -27,17 +27,17 @@ ms.locfileid: "56609393"
 
  本逐步解說將示範下列工作：
 
--   建立 Visual Studio 擴充功能可執行兩項主要工作：
+- 建立 Visual Studio 擴充功能可執行兩項主要工作：
 
-    -   延伸模組會定義以升級 SharePoint 方案的自訂部署步驟。
+  - 延伸模組會定義以升級 SharePoint 方案的自訂部署步驟。
 
-    -   延伸模組建立專案延伸模組，可定義新的部署設定，這是一組會針對指定的專案執行的部署步驟。 新的部署組態包括自訂部署步驟和數個內建的部署步驟。
+  - 延伸模組建立專案延伸模組，可定義新的部署設定，這是一組會針對指定的專案執行的部署步驟。 新的部署組態包括自訂部署步驟和數個內建的部署步驟。
 
--   建立兩個延伸模組組件呼叫的自訂 SharePoint 命令。 SharePoint 命令是使用伺服器物件模型中的 Api，適用於 SharePoint 的延伸模組組件可以呼叫的方法。 如需詳細資訊，請參閱 <<c0> [ 呼叫 SharePoint 物件模型](../sharepoint/calling-into-the-sharepoint-object-models.md)。
+- 建立兩個延伸模組組件呼叫的自訂 SharePoint 命令。 SharePoint 命令是使用伺服器物件模型中的 Api，適用於 SharePoint 的延伸模組組件可以呼叫的方法。 如需詳細資訊，請參閱 <<c0> [ 呼叫 SharePoint 物件模型](../sharepoint/calling-into-the-sharepoint-object-models.md)。
 
--   建置 Visual Studio 擴充功能 (VSIX) 封裝來部署這兩個組件。
+- 建置 Visual Studio 擴充功能 (VSIX) 封裝來部署這兩個組件。
 
--   測試新的部署步驟。
+- 測試新的部署步驟。
 
 ## <a name="prerequisites"></a>必要條件
  您需要完成這個逐步解說在開發電腦上的下列元件：
@@ -67,87 +67,87 @@ ms.locfileid: "56609393"
 
 #### <a name="to-create-the-vsix-project"></a>若要建立 VSIX 專案
 
-1.  啟動 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。
+1. 啟動 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。
 
-2.  在功能表列上，選擇 [檔案] > [新增] > [專案]。
+2. 在功能表列上，選擇 [檔案]   > [新增]   > [專案]  。
 
-3.  中**新的專案**對話方塊方塊中，展開**Visual C#** 或**Visual Basic**節點，然後選擇**擴充性**節點。
+3. 中**新的專案**對話方塊方塊中，展開**Visual C#** 或**Visual Basic**節點，然後選擇**擴充性**節點。
 
     > [!NOTE]
-    >  **擴充性**節點才會提供您安裝 Visual Studio SDK。 如需詳細資訊，請參閱稍早在本主題中的必要條件 > 一節。
+    > **擴充性**節點才會提供您安裝 Visual Studio SDK。 如需詳細資訊，請參閱稍早在本主題中的必要條件 > 一節。
 
-4.  在對話方塊頂端，選擇 **.NET Framework 4.5**清單中的.NET Framework 版本。
+4. 在對話方塊頂端，選擇 **.NET Framework 4.5**清單中的.NET Framework 版本。
 
-5.  選擇**VSIX 專案**範本，將專案命名為**UpgradeDeploymentStep**，然後選擇**確定** 按鈕。
+5. 選擇**VSIX 專案**範本，將專案命名為**UpgradeDeploymentStep**，然後選擇**確定** 按鈕。
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 新增**UpgradeDeploymentStep**專案加入**方案總管 中**。
 
 #### <a name="to-create-the-extension-project"></a>若要建立擴充功能專案
 
-1.  中**方案總管**，開啟 UpgradeDeploymentStep 方案節點的捷徑功能表，選擇**新增**，然後選擇**新專案**。
+1. 中**方案總管**，開啟 UpgradeDeploymentStep 方案節點的捷徑功能表，選擇**新增**，然後選擇**新專案**。
 
-2.  中**新的專案**對話方塊方塊中，展開**Visual C#** 或**Visual Basic**節點，然後選擇**Windows**節點。
+2. 中**新的專案**對話方塊方塊中，展開**Visual C#** 或**Visual Basic**節點，然後選擇**Windows**節點。
 
-3.  在對話方塊頂端，選擇 **.NET Framework 4.5**清單中的.NET Framework 版本。
+3. 在對話方塊頂端，選擇 **.NET Framework 4.5**清單中的.NET Framework 版本。
 
-4.  選擇**類別庫**專案範本，請將專案命名**DeploymentStepExtension**，然後選擇**確定** 按鈕。
+4. 選擇**類別庫**專案範本，請將專案命名**DeploymentStepExtension**，然後選擇**確定** 按鈕。
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 新增**DeploymentStepExtension**專案加入方案，並開啟預設 Class1 的程式碼檔案。
 
-5.  從專案刪除 Class1 的程式碼檔案。
+5. 從專案刪除 Class1 的程式碼檔案。
 
 #### <a name="to-create-the-sharepoint-command-project"></a>若要建立 SharePoint 命令專案
 
-1.  中**方案總管**，開啟 UpgradeDeploymentStep 方案節點的捷徑功能表，選擇**新增**，然後選擇**新專案**。
+1. 中**方案總管**，開啟 UpgradeDeploymentStep 方案節點的捷徑功能表，選擇**新增**，然後選擇**新專案**。
 
-2.  在**新的專案**對話方塊方塊中，展開**Visual C#** 或**Visual Basic**，然後選擇**Windows**節點。
+2. 在**新的專案**對話方塊方塊中，展開**Visual C#** 或**Visual Basic**，然後選擇**Windows**節點。
 
-3.  在對話方塊頂端，選擇 **.NET Framework 3.5**清單中的.NET Framework 版本。
+3. 在對話方塊頂端，選擇 **.NET Framework 3.5**清單中的.NET Framework 版本。
 
-4.  選擇**類別庫**專案範本，請將專案命名**SharePointCommands**，然後選擇**確定** 按鈕。
+4. 選擇**類別庫**專案範本，請將專案命名**SharePointCommands**，然後選擇**確定** 按鈕。
 
      Visual Studio 會加入**SharePointCommands**專案加入方案，並開啟預設 Class1 的程式碼檔案。
 
-5.  從專案刪除 Class1 的程式碼檔案。
+5. 從專案刪除 Class1 的程式碼檔案。
 
 ## <a name="configure-the-projects"></a>將專案設定
  您撰寫程式碼來建立自訂部署步驟之前，您必須新增程式碼檔案和組件參考，而且您必須設定專案。
 
 #### <a name="to-configure-the-deploymentstepextension-project"></a>若要設定 DeploymentStepExtension 專案
 
-1.  在  **DeploymentStepExtension**專案中，加入兩個具有下列名稱的程式碼檔案：
+1. 在  **DeploymentStepExtension**專案中，加入兩個具有下列名稱的程式碼檔案：
 
-    -   UpgradeStep
+    - UpgradeStep
 
-    -   DeploymentConfigurationExtension
+    - DeploymentConfigurationExtension
 
-2.  開啟 DeploymentStepExtension 專案的捷徑功能表，然後選擇**加入參考**。
+2. 開啟 DeploymentStepExtension 專案的捷徑功能表，然後選擇**加入參考**。
 
-3.  在  **Framework**索引標籤上，選取核取方塊，針對 System.ComponentModel.Composition 組件。
+3. 在  **Framework**索引標籤上，選取核取方塊，針對 System.ComponentModel.Composition 組件。
 
-4.  在 [**延伸模組**索引標籤上的 Microsoft.VisualStudio.SharePoint 組件中，選取核取方塊，然後選擇**確定**] 按鈕。
+4. 在 [**延伸模組**索引標籤上的 Microsoft.VisualStudio.SharePoint 組件中，選取核取方塊，然後選擇**確定**] 按鈕。
 
 #### <a name="to-configure-the-sharepointcommands-project"></a>若要設定 SharePointCommands 專案
 
-1.  在  **SharePointCommands**專案中，加入名為命令的程式碼檔案。
+1. 在  **SharePointCommands**專案中，加入名為命令的程式碼檔案。
 
-2.  在 [**方案總管] 中**，開啟捷徑功能表上**SharePointCommands**專案節點，然後選擇**加入參考**。
+2. 在 [**方案總管] 中**，開啟捷徑功能表上**SharePointCommands**專案節點，然後選擇**加入參考**。
 
-3.  在 **延伸模組**索引標籤上，選取下列組件中，核取方塊，然後按一下 選擇**確定**按鈕
+3. 在 **延伸模組**索引標籤上，選取下列組件中，核取方塊，然後按一下 選擇**確定**按鈕
 
-    -   Microsoft.SharePoint
+    - Microsoft.SharePoint
 
-    -   Microsoft.VisualStudio.SharePoint.Commands
+    - Microsoft.VisualStudio.SharePoint.Commands
 
 ## <a name="define-the-custom-deployment-step"></a>定義自訂部署步驟
  建立一個類別來定義升級的部署步驟。 若要定義部署步驟，此類別會實作<xref:Microsoft.VisualStudio.SharePoint.Deployment.IDeploymentStep>介面。 每當您想要定義的自訂部署步驟，請實作這個介面。
 
 #### <a name="to-define-the-custom-deployment-step"></a>若要定義自訂部署步驟
 
-1.  在  **DeploymentStepExtension**專案，開啟 UpgradeStep 程式碼檔案，然後將下列程式碼貼到它。
+1. 在  **DeploymentStepExtension**專案，開啟 UpgradeStep 程式碼檔案，然後將下列程式碼貼到它。
 
     > [!NOTE]
-    >  新增下列程式碼，專案會有某些編譯錯誤，但它們就會消失之後當您加入程式碼在稍後的步驟。
+    > 新增下列程式碼，專案會有某些編譯錯誤，但它們就會消失之後當您加入程式碼在稍後的步驟。
 
      [!code-csharp[SPExtensibility.ProjectExtension.UpgradeDeploymentStep#1](../sharepoint/codesnippet/CSharp/UpgradeDeploymentStep/deploymentstepextension/upgradestep.cs#1)]
      [!code-vb[SPExtensibility.ProjectExtension.UpgradeDeploymentStep#1](../sharepoint/codesnippet/VisualBasic/upgradedeploymentstep/deploymentstepextension/upgradestep.vb#1)]
@@ -159,7 +159,7 @@ ms.locfileid: "56609393"
 
 #### <a name="to-create-the-deployment-configuration"></a>若要建立的部署組態
 
-1.  在  **DeploymentStepExtension**專案，開啟 DeploymentConfigurationExtension 程式碼檔案，然後將下列程式碼貼到它。
+1. 在  **DeploymentStepExtension**專案，開啟 DeploymentConfigurationExtension 程式碼檔案，然後將下列程式碼貼到它。
 
      [!code-csharp[SPExtensibility.ProjectExtension.UpgradeDeploymentStep#2](../sharepoint/codesnippet/CSharp/UpgradeDeploymentStep/deploymentstepextension/deploymentconfigurationextension.cs#2)]
      [!code-vb[SPExtensibility.ProjectExtension.UpgradeDeploymentStep#2](../sharepoint/codesnippet/VisualBasic/upgradedeploymentstep/deploymentstepextension/deploymentconfigurationextension.vb#2)]
@@ -169,7 +169,7 @@ ms.locfileid: "56609393"
 
 #### <a name="to-define-the-sharepoint-commands"></a>若要定義的 SharePoint 命令
 
-1.  在  **SharePointCommands**專案，開啟指令碼檔案，然後將下列程式碼貼到它。
+1. 在  **SharePointCommands**專案，開啟指令碼檔案，然後將下列程式碼貼到它。
 
      [!code-csharp[SPExtensibility.ProjectExtension.UpgradeDeploymentStep#4](../sharepoint/codesnippet/CSharp/UpgradeDeploymentStep/SharePointCommands/Commands.cs#4)]
      [!code-vb[SPExtensibility.ProjectExtension.UpgradeDeploymentStep#4](../sharepoint/codesnippet/VisualBasic/upgradedeploymentstep/sharepointcommands/commands.vb#4)]
@@ -179,37 +179,37 @@ ms.locfileid: "56609393"
 
 #### <a name="to-build-the-projects"></a>若要建置的專案
 
-1.  在 [**方案總管] 中**，開啟捷徑功能表**DeploymentStepExtension**專案，，然後選擇**建置**。
+1. 在 [**方案總管] 中**，開啟捷徑功能表**DeploymentStepExtension**專案，，然後選擇**建置**。
 
-2.  開啟捷徑功能表**SharePointCommands**專案，，然後選擇**建置**。
+2. 開啟捷徑功能表**SharePointCommands**專案，，然後選擇**建置**。
 
 ## <a name="create-a-vsix-package-to-deploy-the-extension"></a>建立 VSIX 封裝，來部署擴充功能
  若要建立 VSIX 封裝部署擴充功能，請在解決方案中使用 VSIX 專案。 首先，設定 VSIX 套件藉由修改 source.extension.vsixmanifest 檔案中的，在 VSIX 專案。 建立方案，然後建立 VSIX 封裝。
 
 #### <a name="to-configure-and-create-the-vsix-package"></a>若要設定及建立 VSIX 封裝
 
-1.  在 **方案總管 中**下方**UpgradeDeploymentStep**專案中，開啟捷徑功能表**source.extension.vsixmanifest**檔案，然後再選擇  **開啟**。
+1. 在 **方案總管 中**下方**UpgradeDeploymentStep**專案中，開啟捷徑功能表**source.extension.vsixmanifest**檔案，然後再選擇  **開啟**。
 
      Visual Studio 會在資訊清單編輯器中開啟檔案。 Source.extension.vsixmanifest 檔案中會是所有的 VSIX 套件需要 extension.vsixmanifest 檔案的基礎。 如需有關這個檔案的詳細資訊，請參閱 < [VSIX 延伸結構描述 1.0 參考](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)。
 
-2.  在  **Product Name**方塊中，輸入**升級 SharePoint 專案的部署步驟**。
+2. 在  **Product Name**方塊中，輸入**升級 SharePoint 專案的部署步驟**。
 
-3.  在 **作者**方塊中，輸入**Contoso**。
+3. 在 **作者**方塊中，輸入**Contoso**。
 
-4.  在 **描述**方塊中，輸入**提供可用在 SharePoint 專案的自訂升級的部署步驟**。
+4. 在 **描述**方塊中，輸入**提供可用在 SharePoint 專案的自訂升級的部署步驟**。
 
-5.  在 **資產** 索引標籤的編輯器中，選擇**新增** 按鈕。
+5. 在 **資產** 索引標籤的編輯器中，選擇**新增** 按鈕。
 
      **加入新資產** 對話方塊隨即出現。
 
-6.  在 **型別**清單中，選擇**Microsoft.VisualStudio.MefComponent**。
+6. 在 **型別**清單中，選擇**Microsoft.VisualStudio.MefComponent**。
 
     > [!NOTE]
-    >  這個值會對應到`MefComponent`extension.vsixmanifest 檔案中的項目。 這個元素會指定在 VSIX 封裝中的延伸模組組件名稱。 如需詳細資訊，請參閱 < [MEFComponent 項目 （VSX 結構描述）](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\))。
+    > 這個值會對應到`MefComponent`extension.vsixmanifest 檔案中的項目。 這個元素會指定在 VSIX 封裝中的延伸模組組件名稱。 如需詳細資訊，請參閱 < [MEFComponent 項目 （VSX 結構描述）](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\))。
 
-7.  在 **來源**清單中，選擇**目前方案中的專案**。
+7. 在 **來源**清單中，選擇**目前方案中的專案**。
 
-8.  在 [**專案**清單中，選擇**DeploymentStepExtension**，然後選擇 **[確定]** ] 按鈕。
+8. 在 [**專案**清單中，選擇**DeploymentStepExtension**，然後選擇 **[確定]** ] 按鈕。
 
 9. 在資訊清單編輯器中，選擇**新增**按鈕一次。
 
@@ -218,7 +218,7 @@ ms.locfileid: "56609393"
 10. 在 **型別**清單中，輸入**SharePoint.Commands.v4**。
 
     > [!NOTE]
-    >  這個元素會指定您想要包含在 Visual Studio 擴充功能的自訂延伸模組。 如需詳細資訊，請參閱 <<c0> [ 資產項目 （VSX 結構描述）](https://msdn.microsoft.com/9fcfc098-edc7-484b-9d4c-acd17829d737)。
+    > 這個元素會指定您想要包含在 Visual Studio 擴充功能的自訂延伸模組。 如需詳細資訊，請參閱 <<c0> [ 資產項目 （VSX 結構描述）](https://msdn.microsoft.com/9fcfc098-edc7-484b-9d4c-acd17829d737)。
 
 11. 在 **來源**清單中，選擇**目前方案中的專案**。
 
@@ -237,13 +237,13 @@ ms.locfileid: "56609393"
 
 #### <a name="to-start-debugging-the-extension"></a>若要開始偵錯擴充功能
 
-1.  使用系統管理認證，重新啟動 Visual Studio，然後開啟 UpgradeDeploymentStep 解決方案。
+1. 使用系統管理認證，重新啟動 Visual Studio，然後開啟 UpgradeDeploymentStep 解決方案。
 
-2.  在 DeploymentStepExtension 專案中，開啟 UpgradeStep 程式碼檔案，然後加入中斷點至第一行中的程式碼`CanExecute`和`Execute`方法。
+2. 在 DeploymentStepExtension 專案中，開啟 UpgradeStep 程式碼檔案，然後加入中斷點至第一行中的程式碼`CanExecute`和`Execute`方法。
 
-3.  開始偵錯選擇**F5**金鑰或，功能表列選擇**偵錯** > **開始偵錯**。
+3. 開始偵錯選擇**F5**金鑰或，功能表列選擇**偵錯** > **開始偵錯**。
 
-4.  Visual Studio 會 SharePoint Projects\1.0 %UserProfile%\AppData\Local\Microsoft\VisualStudio\11.0Exp\Extensions\Contoso\Upgrade 部署步驟安裝擴充功能，並啟動 Visual Studio 的實驗執行個體。 您將在 Visual Studio 這個執行個體中測試升級的部署步驟。
+4. Visual Studio 會 SharePoint Projects\1.0 %UserProfile%\AppData\Local\Microsoft\VisualStudio\11.0Exp\Extensions\Contoso\Upgrade 部署步驟安裝擴充功能，並啟動 Visual Studio 的實驗執行個體。 您將在 Visual Studio 這個執行個體中測試升級的部署步驟。
 
 #### <a name="to-create-a-sharepoint-project-with-a-list-definition-and-a-list-instance"></a>若要使用的清單定義和清單執行個體中建立 SharePoint 專案
 
@@ -262,7 +262,7 @@ ms.locfileid: "56609393"
 6. 底下**此 SharePoint 方案的信任層級為何**，選擇**部署為伺服陣列方案**選項按鈕。
 
    > [!NOTE]
-   >  升級的部署步驟不支援沙箱化方案。
+   > 升級的部署步驟不支援沙箱化方案。
 
 7. 選擇**完成** 按鈕。
 
@@ -288,13 +288,13 @@ ms.locfileid: "56609393"
 
 12. 在清單設計工具中上,**資料行**索引標籤上，選擇**新的或現有的資料行名稱**資料列，，，然後加入下列中的資料行**資料行的顯示名稱**清單：
 
-    1.  名字
+    1. 名字
 
-    2.  公司
+    2. 公司
 
-    3.  公司電話
+    3. 公司電話
 
-    4.  電子郵件
+    4. 電子郵件
 
 13. 儲存所有檔案，然後再關閉 清單設計工具。
 
@@ -335,21 +335,21 @@ ms.locfileid: "56609393"
 
 #### <a name="to-deploy-the-list-definition-and-list-instance"></a>若要部署的清單定義和清單執行個體
 
-1.  在 **方案總管**，選擇**EmployeesListDefinition**專案節點。
+1. 在 **方案總管**，選擇**EmployeesListDefinition**專案節點。
 
-2.  在 [**屬性**] 視窗中，請確定**現用部署組態**屬性設定為**預設**。
+2. 在 [**屬性**] 視窗中，請確定**現用部署組態**屬性設定為**預設**。
 
-3.  選擇**F5**鍵，或在功能表列上選擇 **偵錯** > **開始偵錯**。
+3. 選擇**F5**鍵，或在功能表列上選擇 **偵錯** > **開始偵錯**。
 
-4.  確認專案建置成功，網頁瀏覽器會開啟 SharePoint 網站，**列出**快速啟動 列中的項目會包含新**員工**清單中，而且**員工**Jim 宗翰清單包含項目。
+4. 確認專案建置成功，網頁瀏覽器會開啟 SharePoint 網站，**列出**快速啟動 列中的項目會包含新**員工**清單中，而且**員工**Jim 宗翰清單包含項目。
 
-5.  關閉網頁瀏覽器。
+5. 關閉網頁瀏覽器。
 
 #### <a name="to-modify-the-list-definition-and-list-instance-and-redeploy-them"></a>若要修改的清單定義和清單執行個體，並重新部署
 
-1.  在 EmployeesListDefinition 專案中，開啟*Elements.xml*子系的檔案**員工清單執行個體**專案項目。
+1. 在 EmployeesListDefinition 專案中，開啟*Elements.xml*子系的檔案**員工清單執行個體**專案項目。
 
-2.  移除`Data`元素和其子系的 Jim 宗翰中移除項目，從清單中。
+2. 移除`Data`元素和其子系的 Jim 宗翰中移除項目，從清單中。
 
      當您完成時，此檔案應包含下列 XML 程式碼。
 
@@ -365,19 +365,19 @@ ms.locfileid: "56609393"
     </Elements>
     ```
 
-3.  儲存並關閉*Elements.xml*檔案。
+3. 儲存並關閉*Elements.xml*檔案。
 
-4.  開啟捷徑功能表**員工清單**項目時，專案，然後選擇**開放**或是**屬性**。
+4. 開啟捷徑功能表**員工清單**項目時，專案，然後選擇**開放**或是**屬性**。
 
-5.  在清單設計工具中，選擇**檢視** 索引標籤。
+5. 在清單設計工具中，選擇**檢視** 索引標籤。
 
-6.  在**選取的資料行**清單中，選擇**附件**，然後選擇 < 鍵來移至該資料行**可用的資料行**清單。
+6. 在**選取的資料行**清單中，選擇**附件**，然後選擇 < 鍵來移至該資料行**可用的資料行**清單。
 
-7.  重複上述步驟來移動**公司電話**資料行**選取的資料行**若要列出**可用的資料行**清單。
+7. 重複上述步驟來移動**公司電話**資料行**選取的資料行**若要列出**可用的資料行**清單。
 
      此動作會移除的預設檢視中的這些欄位**員工**SharePoint 網站上的清單。
 
-8.  開始偵錯選擇**F5**金鑰或，功能表列選擇**偵錯** > **開始偵錯**。
+8. 開始偵錯選擇**F5**金鑰或，功能表列選擇**偵錯** > **開始偵錯**。
 
 9. 確認**部署衝突** 對話方塊隨即出現。
 
@@ -389,28 +389,28 @@ ms.locfileid: "56609393"
 
 11. 在 **列出**區段的 快速啟動 列中，選擇**員工**清單，並確認下列詳細資料：
 
-    -   **附件**並**住家電話**資料行不會出現在這個檢視的清單。
+    - **附件**並**住家電話**資料行不會出現在這個檢視的清單。
 
-    -   清單是空的。 當您使用**預設**要重新部署解決方案，部署組態**員工**清單取代專案中新的空白清單。
+    - 清單是空的。 當您使用**預設**要重新部署解決方案，部署組態**員工**清單取代專案中新的空白清單。
 
 ## <a name="test-the-deployment-step"></a>測試部署步驟
  您現在已準備好測試升級的部署步驟。 首先，在 SharePoint 中的清單執行個體中新增項目。 然後將變更的清單定義和清單執行個體中，將它們升級 SharePoint 網站，並確認升級的部署步驟不會覆寫新的項目。
 
 #### <a name="to-manually-add-an-item-to-the-list"></a>若要以手動方式將項目加入清單
 
-1.  SharePoint 網站，在功能區下方**清單工具**索引標籤上，選擇**項目** 索引標籤。
+1. SharePoint 網站，在功能區下方**清單工具**索引標籤上，選擇**項目** 索引標籤。
 
-2.  在 **的新**群組中，選擇**新項目**。
+2. 在 **的新**群組中，選擇**新項目**。
 
      或者，您可以選擇**加入新項目**本身的項目清單中的連結。
 
-3.  在 [**員工-新的項目**] 視窗，請在**標題**方塊中，輸入**設備經理**。
+3. 在 [**員工-新的項目**] 視窗，請在**標題**方塊中，輸入**設備經理**。
 
-4.  在 **名字**方塊中，輸入**Andy**。
+4. 在 **名字**方塊中，輸入**Andy**。
 
-5.  在 **公司**方塊中，輸入**Contoso**。
+5. 在 **公司**方塊中，輸入**Contoso**。
 
-6.  選擇**儲存**按鈕，確認新的項目出現在清單中，然後再關閉 web 瀏覽器。
+6. 選擇**儲存**按鈕，確認新的項目出現在清單中，然後再關閉 web 瀏覽器。
 
      稍後在本逐步解說中，您將使用此項目，若要確認升級的部署步驟不會覆寫此清單的內容。
 
@@ -428,7 +428,7 @@ ms.locfileid: "56609393"
 
     屬性編輯器/設計工具隨即開啟。
 
-4. 上**檢視**索引標籤上，選擇**電子郵件**資料行，然後選擇**<** 將從該資料行的索引鍵**選取的資料行**清單**可用的資料行**清單。
+4. 上**檢視**索引標籤上，選擇**電子郵件**資料行，然後選擇 **<** 將從該資料行的索引鍵**選取的資料行**清單**可用的資料行**清單。
 
     此動作會移除的預設檢視中的這些欄位**員工**SharePoint 網站上的清單。
 
@@ -457,31 +457,31 @@ ms.locfileid: "56609393"
 
 #### <a name="to-remove-the-list-instance-from-the-sharepoint-site"></a>若要從 SharePoint 網站中移除的清單執行個體
 
-1.  開啟**員工**列出 SharePoint 網站上，如果清單尚未開啟。
+1. 開啟**員工**列出 SharePoint 網站上，如果清單尚未開啟。
 
-2.  在功能區中的 SharePoint 網站上，選擇**清單工具**索引標籤，然後選擇**清單** 索引標籤。
+2. 在功能區中的 SharePoint 網站上，選擇**清單工具**索引標籤，然後選擇**清單** 索引標籤。
 
-3.  在 **設定**群組中，選擇**清單設定**項目。
+3. 在 **設定**群組中，選擇**清單設定**項目。
 
-4.  底下**權限與管理**，選擇**刪除這份清單**命令中，選擇 [**確定**以確認您要將清單傳送至資源回收筒]，然後關閉 web瀏覽器。
+4. 底下**權限與管理**，選擇**刪除這份清單**命令中，選擇 [**確定**以確認您要將清單傳送至資源回收筒]，然後關閉 web瀏覽器。
 
 #### <a name="to-remove-the-list-definition-from-the-sharepoint-site"></a>若要移除的 SharePoint 網站的清單定義
 
-1.  在實驗性 Visual Studio 執行個體，在功能表列上，選擇**建置** > **Retract**。
+1. 在實驗性 Visual Studio 執行個體，在功能表列上，選擇**建置** > **Retract**。
 
      Visual Studio 會撤銷從 SharePoint 網站的清單定義。
 
 #### <a name="to-uninstall-the-extension"></a>安裝擴充功能
 
-1.  在實驗性 Visual Studio 執行個體，在功能表列上，選擇**工具** > **擴充功能和更新**。
+1. 在實驗性 Visual Studio 執行個體，在功能表列上，選擇**工具** > **擴充功能和更新**。
 
-     [擴充功能和更新] 對話方塊隨即開啟。
+     [擴充功能和更新]  對話方塊隨即開啟。
 
-2.  在延伸模組清單中，選擇**升級 SharePoint 專案的部署步驟**，然後選擇**解除安裝**命令。
+2. 在延伸模組清單中，選擇**升級 SharePoint 專案的部署步驟**，然後選擇**解除安裝**命令。
 
-3.  在出現的對話方塊中，選擇 **[是]** 以確認您想要解除安裝延伸模組，然後選擇**立即重新啟動**完成解除安裝。
+3. 在出現的對話方塊中，選擇 **[是]** 以確認您想要解除安裝延伸模組，然後選擇**立即重新啟動**完成解除安裝。
 
-4.  關閉 Visual Studio （實驗性執行個體和 UpgradeDeploymentStep 方案已開啟的 Visual Studio 執行個體） 的兩個執行個體。
+4. 關閉 Visual Studio （實驗性執行個體和 UpgradeDeploymentStep 方案已開啟的 Visual Studio 執行個體） 的兩個執行個體。
 
 ## <a name="see-also"></a>另請參閱
 - [擴充 SharePoint 封裝和部署](../sharepoint/extending-sharepoint-packaging-and-deployment.md)

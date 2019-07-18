@@ -1,14 +1,9 @@
 ---
-title: IEnumDebugPrograms2 |Microsoft Docs
-ms.custom: ''
+title: IEnumDebugPrograms2 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IEnumDebugPrograms2
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 7fbb8fb7-db64-4546-a364-dc668430c8af
 caps.latest.revision: 12
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 4a39fd4c6fa6621ac00e3bfe98060229509cb750
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 8d9d1030616fa8d7f3a1bfc6b533c4ed8433ea89
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51726150"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65703895"
 ---
 # <a name="ienumdebugprograms2"></a>IEnumDebugPrograms2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -55,23 +50,22 @@ IEnumDebugPrograms2 : IUnknown
 ## <a name="remarks"></a>備註  
  Visual Studio 會使用此介面，以便：  
   
--   填入**模組** 視窗 (透過呼叫[EnumPrograms](../../../extensibility/debugger/reference/idebugprocess2-enumprograms.md) ，然後再呼叫[EnumModules](../../../extensibility/debugger/reference/idebugprogram2-enummodules.md)上每個程式)。  
+- 填入**模組** 視窗 (透過呼叫[EnumPrograms](../../../extensibility/debugger/reference/idebugprocess2-enumprograms.md) ，然後再呼叫[EnumModules](../../../extensibility/debugger/reference/idebugprogram2-enummodules.md)上每個程式)。  
   
--   填入**připojit k procesu**清單中 (藉由呼叫`IDebugProcess2::EnumPrograms`然後呼叫[QueryInterface](http://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3)每個[IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)介面，以取得[IDebugEngineProgram2](../../../extensibility/debugger/reference/idebugengineprogram2.md)介面)。  
+- 填入**připojit k procesu**清單中 (藉由呼叫`IDebugProcess2::EnumPrograms`然後呼叫[QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3)每個[IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)介面，以取得[IDebugEngineProgram2](../../../extensibility/debugger/reference/idebugengineprogram2.md)介面)。  
   
--   產生一份可以偵錯程序中的每個程式的 DEs (使用[GetEngineInfo](../../../extensibility/debugger/reference/idebugprogram2-getengineinfo.md))。  
+- 產生一份可以偵錯程序中的每個程式的 DEs (使用[GetEngineInfo](../../../extensibility/debugger/reference/idebugprogram2-getengineinfo.md))。  
   
--   將編輯後繼續 (ENC) 更新套用至每個程式 (透過呼叫 IDebugProcess2::EnumPrograms 並接著呼叫[GetENCUpdate](../../../extensibility/debugger/reference/idebugprogram2-getencupdate.md))。  
+- 將編輯後繼續 (ENC) 更新套用至每個程式 (透過呼叫 IDebugProcess2::EnumPrograms 並接著呼叫[GetENCUpdate](../../../extensibility/debugger/reference/idebugprogram2-getencupdate.md))。  
   
 ## <a name="requirements"></a>需求  
  標頭： msdbg.h  
   
- 命名空間： Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間：Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
  [核心介面](../../../extensibility/debugger/reference/core-interfaces.md)   
  [EnumPrograms](../../../extensibility/debugger/reference/idebugengine2-enumprograms.md)   
  [EnumPrograms](../../../extensibility/debugger/reference/idebugprocess2-enumprograms.md)
-

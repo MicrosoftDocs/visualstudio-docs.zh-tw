@@ -1,27 +1,22 @@
 ---
 title: 本機專案資料夾與來源控制存放區的選擇性比較 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, comparing versions
 - source control plug-ins, local project folders
 ms.assetid: 65217e8b-15a6-4446-92b0-4cff1c6220f5
 caps.latest.revision: 15
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 359b5e0e2eb3b2a90e3860bdd2664641580971d2
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: be26b4195e0db7b3b78fcc2223ff2a6f8bde47d3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51784100"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438944"
 ---
 # <a name="optional-comparison-of-local-project-folder-to-source-control-store"></a>本機專案資料夾與原始檔控制存放區的選擇性比較
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -43,8 +38,7 @@ ms.locfileid: "51784100"
  `SccDirQueryInfo`函式之前，會呼叫`SccDirDiff`判斷是否為原始檔控制的工作目錄。 `SccDirDiff`函式會顯示目前的本機目錄與對應的原始檔控制資料夾之間的差異。 此命令會要求原始檔控制外掛程式，以顯示變更的清單目錄。 原始檔控制外掛程式提供它自己的 UI 來顯示差異。  
   
 > [!NOTE]
->  此函式會使用相同的命令旗標，作為[SccDiff](../../extensibility/sccdiff-function.md)。 做為原始檔控制外掛程式提供者，您可以選擇不支援目錄的 「 快速 diff"作業。  
+> 此函式會使用相同的命令旗標，作為[SccDiff](../../extensibility/sccdiff-function.md)。 做為原始檔控制外掛程式提供者，您可以選擇不支援目錄的 「 快速 diff"作業。  
   
 ## <a name="see-also"></a>另請參閱  
  [原始檔控制外掛程式 API 版本 1.2 的新功能](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)
-

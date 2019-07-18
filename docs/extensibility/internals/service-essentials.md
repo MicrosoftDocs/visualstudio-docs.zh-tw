@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - services, essentials
 ms.assetid: fbe84ad9-efe1-48b1-aba3-b50b90424d47
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ff3fc897c0b413d6882584671f9cebe1ef73d316
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 8817ca48ff0a3f44a973986a173e647ce89c662c
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335307"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66318694"
 ---
 # <a name="service-essentials"></a>服務的基本資訊
 服務是兩個的 Vspackage 之間的合約。 一個 VSPackage 提供一組特定的介面使用的另一個 VSPackage。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 本身是提供服務給其他 Vspackage 的 Vspackage 集合。
@@ -68,15 +68,15 @@ ms.locfileid: "56335307"
 
 幸運的是，<xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A>適用於大部分的情況。
 
--   如果 VSPackage 提供另一個 VSPackage 才知道的服務，服務要求 VSPackage 設置之前 VSPackage 提供已載入該服務。
+- 如果 VSPackage 提供另一個 VSPackage 才知道的服務，服務要求 VSPackage 設置之前 VSPackage 提供已載入該服務。
 
--   如果 VSPackage 建立工具視窗時，建立工具視窗之前設置 VSPackage。
+- 如果 VSPackage 建立工具視窗時，建立工具視窗之前設置 VSPackage。
 
--   如果控制項容器由建立 VSPackage 的工具視窗，在建立控制項容器之前設置 VSPackage。
+- 如果控制項容器由建立 VSPackage 的工具視窗，在建立控制項容器之前設置 VSPackage。
 
 ### <a name="to-get-a-service-from-within-a-tool-window-or-control-container"></a>若要取得的工具視窗或控制項的容器內的服務
 
--   插入此程式碼中建構函式、 工具視窗或控制項容器：
+- 插入此程式碼中建構函式、 工具視窗或控制項容器：
 
     ```csharp
     IVsActivityLog log = Package.GetGlobalService(typeof(SVsActivityLog)) as IVsActivityLog;

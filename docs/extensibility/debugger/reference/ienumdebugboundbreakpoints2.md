@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugBoundBreakpoints2
 ms.assetid: ea03e7e1-28d6-40b7-8097-bbb61d3b7caa
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 40097fab8a45a08ce11c9f58fa22f4464174ef32
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 5d81d97cfed8f02973b062367a50d7864f7ed3a8
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56680200"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66322770"
 ---
 # <a name="ienumdebugboundbreakpoints2"></a>IEnumDebugBoundBreakpoints2
 此介面列舉暫止中斷點相關聯的繫結的中斷點或中斷點繫結的事件。
@@ -34,11 +34,11 @@ IEnumDebugBoundBreakpoints2 : IUnknown
 ## <a name="notes-for-callers"></a>呼叫端資訊
  Visual Studio 會呼叫：
 
--   [EnumBreakpoints](../../../extensibility/debugger/reference/idebugbreakpointevent2-enumbreakpoints.md)來取得這個介面，表示所觸發的所有中斷點的清單。
+- [EnumBreakpoints](../../../extensibility/debugger/reference/idebugbreakpointevent2-enumbreakpoints.md)來取得這個介面，表示所觸發的所有中斷點的清單。
 
--   [EnumBoundBreakpoints](../../../extensibility/debugger/reference/idebugbreakpointboundevent2-enumboundbreakpoints.md)來取得這個介面，表示已繫結的所有中斷點的清單。
+- [EnumBoundBreakpoints](../../../extensibility/debugger/reference/idebugbreakpointboundevent2-enumboundbreakpoints.md)來取得這個介面，表示已繫結的所有中斷點的清單。
 
--   [EnumBoundBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumboundbreakpoints.md)來取得這個介面，表示所有中斷點繫結至該暫止中斷點的清單。
+- [EnumBoundBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumboundbreakpoints.md)來取得這個介面，表示所有中斷點繫結至該暫止中斷點的清單。
 
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法
  下表顯示的方法`IEnumDebugBoundBreakpoints2`。

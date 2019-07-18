@@ -1,14 +1,9 @@
 ---
-title: IDebugProcessEx2 |Microsoft Docs
-ms.custom: ''
+title: IDebugProcessEx2 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugProcessEx2
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 44e309ba-1d6f-499b-aa7e-9b34858a6d57
 caps.latest.revision: 22
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 0b6b98d6b1f95171d4efb1e0d4bed040d9c1482d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: d2b036bd68aca126675f26b9823d2c786a0ae652
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51721491"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65675321"
 ---
 # <a name="idebugprocessex2"></a>IDebugProcessEx2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -46,7 +41,7 @@ IDebugProcessEx2 : IUnknown
   
 ## <a name="notes-for-callers"></a>呼叫端資訊  
   
--   SDM 呼叫[QueryInterface](http://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3)上`IDebugProcess2`介面，以取得此介面。  
+- SDM 呼叫[QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3)上`IDebugProcess2`介面，以取得此介面。  
   
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法  
  下表顯示的方法`IDebugProcessEx2`。  
@@ -61,13 +56,12 @@ IDebugProcessEx2 : IUnknown
  這個介面是 SDM 和處理序之間的私用。  
   
 ## <a name="requirements"></a>需求  
- 標頭： Portpriv.h  
+ 標頭：Portpriv.h  
   
- 命名空間： Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間：Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
  [核心介面](../../../extensibility/debugger/reference/core-interfaces.md)   
  [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)
-

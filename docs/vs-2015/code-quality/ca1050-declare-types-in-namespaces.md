@@ -1,14 +1,9 @@
 ---
-title: CA1050： 宣告命名空間中的型別 |Microsoft Docs
-ms.custom: ''
+title: CA1050:宣告命名空間中的型別 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1050
 - DeclareTypesInNamespaces
@@ -20,14 +15,14 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: acc8e574c94bf5b9e5d58899526b1b791006cd30
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f13684df70db7026e874bc8edb6282faca2cf98d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49878592"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68200549"
 ---
-# <a name="ca1050-declare-types-in-namespaces"></a>CA1050：在命名空間中宣告類型
+# <a name="ca1050-declare-types-in-namespaces"></a>CA1050:類型必須在命名空間中宣告
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -60,6 +55,3 @@ ms.locfileid: "49878592"
 
  [!code-csharp[FxCop.Design.TestTypesLive#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.TestTypesLive/cs/FxCop.Design.TestTypesLive.cs#1)]
  [!code-vb[FxCop.Design.TestTypesLive#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Design.TestTypesLive/vb/FxCop.Design.TestTypesLive.vb#1)]
-
-
-

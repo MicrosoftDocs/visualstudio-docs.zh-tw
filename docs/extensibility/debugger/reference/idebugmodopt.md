@@ -5,17 +5,17 @@ ms.topic: reference
 helpviewer_keywords:
 - IDebugModOpt interface
 ms.assetid: ebd525e3-d140-4071-9d8c-41871de4125e
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c1bbfbc6b6e567e0e56aa369f9c0d1f13a4cbe34
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: d9f8fa5e496056eac2a30114f4062f635775350b
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56690925"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66324056"
 ---
 # <a name="idebugmodopt"></a>IDebugModOpt
 表示偵錯的選擇性修飾詞。

@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugExpressionContext2 interface
 ms.assetid: 577fdaae-4b2d-4112-9839-ab899535fa6f
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 559115358910fe3445ab12000d1e113167c7da82
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 3ad9c3d6bb1b0a5baccbcf5bf47eb02a8bb5efa5
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56717984"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66325860"
 ---
 # <a name="idebugexpressioncontext2"></a>IDebugExpressionContext2
 此介面代表運算式評估的內容

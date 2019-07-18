@@ -1,14 +1,9 @@
 ---
-title: Ca2000： 必須在超出範圍前處置物件 |Microsoft Docs
-ms.custom: ''
+title: CA2000:範圍前處置物件 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA2000
 - Dispose objects before losing scope
@@ -21,14 +16,14 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: ce258af87dc9a7732200b410113ee778e0bfbccb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 975e1eee68911f8d9d0942e73275fcf521979772
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49857857"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65681508"
 ---
-# <a name="ca2000-dispose-objects-before-losing-scope"></a>CA2000：必須在超出範圍前處置物件
+# <a name="ca2000-dispose-objects-before-losing-scope"></a>CA2000:必須在超出範圍前處置物件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||  
@@ -51,11 +46,11 @@ ms.locfileid: "49857857"
   
  以下是某些情況下，使用陳述式尚不足以保護 IDisposable 物件，並導致 ca2000 必須在超出發生。  
   
--   傳回可處置的物件需要建構物件時，是在 try/finally 區塊外部使用區塊。  
+- 傳回可處置的物件需要建構物件時，是在 try/finally 區塊外部使用區塊。  
   
--   初始化可處置物件的成員不應該在執行中的建構函式的 using 陳述式。  
+- 初始化可處置物件的成員不應該在執行中的建構函式的 using 陳述式。  
   
--   巢狀只能有一個例外狀況處理常式所保護的建構函式。 例如，套用至物件的  
+- 巢狀只能有一個例外狀況處理常式所保護的建構函式。 例如，套用至物件的  
   
     ```  
     using (StreamReader sr = new StreamReader(new FileStream("C:\myfile.txt", FileMode.Create)))  
@@ -64,7 +59,7 @@ ms.locfileid: "49857857"
   
      會導致 ca2000 必須在超出發生，因為在 StreamReader 物件建構失敗可能會導致永遠不會關閉 FileStream 物件。  
   
--   動態物件應該實作 Dispose 模式的 IDisposable 物件使用陰影物件。  
+- 動態物件應該實作 Dispose 模式的 IDisposable 物件使用陰影物件。  
   
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機  
  除非您已在呼叫 `Dispose` 的物件上呼叫方法，例如 <xref:System.IO.Stream.Close%2A>，或是引發警告的方法傳回的 IDisposable 物件會包裝您的物件，否則請勿隱藏這項規則的警告。  
@@ -72,7 +67,7 @@ ms.locfileid: "49857857"
 ## <a name="related-rules"></a>相關的規則  
  [CA2213：可處置的欄位應該受到處置](../code-quality/ca2213-disposable-fields-should-be-disposed.md)  
   
- [CA2202：不要多次處置物件](../code-quality/ca2202-do-not-dispose-objects-multiple-times.md)  
+ [CA2202:不要多次處置物件](../code-quality/ca2202-do-not-dispose-objects-multiple-times.md)  
   
 ## <a name="example"></a>範例  
  如果您要實作的方法，傳回可處置的物件，使用 try/finally 區塊沒有 catch 區塊，藉此確定物件已處置。 藉由使用 try/finally 區塊，您可以允許在錯誤點引發，並確定在處置該物件的例外狀況。  
@@ -104,4 +99,4 @@ ms.locfileid: "49857857"
   
 ## <a name="see-also"></a>另請參閱  
  <xref:System.IDisposable>   
- [Dispose 模式](http://msdn.microsoft.com/library/31a6c13b-d6a2-492b-9a9f-e5238c983bcb)
+ [Dispose 模式](https://msdn.microsoft.com/library/31a6c13b-d6a2-492b-9a9f-e5238c983bcb)

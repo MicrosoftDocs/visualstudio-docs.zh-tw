@@ -6,22 +6,22 @@ helpviewer_keywords:
 - source control plug-ins, callback functions
 - callback functions, source control plug-ins
 ms.assetid: 4a8833f0-6ac0-4ea7-9400-8275aa991468
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fc3b4423b54975c773de743b093f882f1fd9c42c
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: dff6ee0a81472ea556aaca478a2ff33db93fe871
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56697555"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66321179"
 ---
 # <a name="callback-functions-implemented-by-the-ide"></a>IDE 所實作的回呼函式
 若要與整合做越好，並提供統一的使用者體驗，無縫整合式的開發環境 (IDE) 的原始檔控制外掛程式可以使用由 IDE 所實作的回呼函式。 此外掛程式可以呼叫這些函式在適當的時間期間將資訊傳遞給在 IDE 中; 的原始檔控制作業IDE 可以做為內嵌的項目在其原生 UI 中顯示這項資訊。 使用者會有較分散的體驗，在此案例中比若外掛程式採用自己的 UI。
 
- 必要標頭檔*scc.h*。 預設位置是 *\Program Files\VSIP 8.0\EnvSDK\common\inc\\*。 它也會有的原始檔控制外掛程式範例的 VSIP 資料夾處於 *\Program Files\VSIP 8.0\MSSCCI\\*。
+ 必要標頭檔*scc.h*。 預設位置是 *\Program Files\VSIP 8.0\EnvSDK\common\inc\\* 。 它也會有的原始檔控制外掛程式範例的 VSIP 資料夾處於 *\Program Files\VSIP 8.0\MSSCCI\\* 。
 
 ## <a name="in-this-section"></a>本節內容
 - [LPTEXTOUTPROC](../extensibility/lptextoutproc.md)描述的回呼函式，以供[SccOpenProject](../extensibility/sccopenproject-function.md)顯示從原始檔控制外掛程式，透過 IDE 的訊息。

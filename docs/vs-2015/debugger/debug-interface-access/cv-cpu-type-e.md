@@ -1,14 +1,9 @@
 ---
-title: CV_CPU_TYPE_e |Microsoft Docs
-ms.custom: ''
+title: CV_CPU_TYPE_e | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: df470a7e-1d04-448e-b920-c731189514fa
 caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 76298e6de69489706fde543d036470dd44812b3d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 6821b6a6504fd82e0e6180149120b71bc2daf47c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51728554"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444486"
 ---
 # <a name="cvcputypee"></a>CV_CPU_TYPE_e
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -31,7 +26,7 @@ ms.locfileid: "51728554"
 指定目標處理器。  
   
 > [!NOTE]
->  之後的列舉型別項目中已識別的處理器`CV_CFL_*`前置詞。  
+> 之後的列舉型別項目中已識別的處理器`CV_CFL_*`前置詞。  
   
 ## <a name="syntax"></a>語法  
   
@@ -111,6 +106,3 @@ typedef enum CV_CPU_TYPE_e { 
 ## <a name="see-also"></a>另請參閱  
  [列舉和結構](../../debugger/debug-interface-access/enumerations-and-structures.md)   
  [IDiaSymbol::get_platform](../../debugger/debug-interface-access/idiasymbol-get-platform.md)
-
-
-

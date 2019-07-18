@@ -1,14 +1,9 @@
 ---
-title: CA1806： 不要忽略方法的結果 |Microsoft Docs
-ms.custom: ''
+title: CA1806:不要忽略方法的結果 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1806
 - DoNotIgnoreMethodResults
@@ -20,14 +15,14 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 9e6b7bdd99500f0be29c8101ef9993b565914300
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 117e26fca367c8cf00604bebe01a00f4df58a0ee
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49830583"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437389"
 ---
-# <a name="ca1806-do-not-ignore-method-results"></a>CA1806：不要忽略方法的結果
+# <a name="ca1806-do-not-ignore-method-results"></a>CA1806:不要忽略方法的結果
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||  
@@ -78,7 +73,7 @@ ms.locfileid: "49830583"
  下列範例會示範不會使用它所建立物件的方法。  
   
 > [!NOTE]
->  無法在 Visual Basic 中重現此違規。  
+> 無法在 Visual Basic 中重現此違規。  
   
  [!code-cpp[FxCop.Usage.DoNotIgnoreMethodResults3#1](../snippets/cpp/VS_Snippets_CodeAnalysis/FxCop.Usage.DoNotIgnoreMethodResults3/cpp/FxCop.Usage.DoNotIgnoreMethodResults3.cpp#1)]
  [!code-csharp[FxCop.Usage.DoNotIgnoreMethodResults3#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.DoNotIgnoreMethodResults3/cs/FxCop.Usage.DoNotIgnoreMethodResults3.cs#1)]

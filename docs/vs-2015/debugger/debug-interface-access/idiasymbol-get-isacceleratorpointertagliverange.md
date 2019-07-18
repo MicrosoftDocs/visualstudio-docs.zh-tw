@@ -1,32 +1,27 @@
 ---
-title: IDiaSymbol::get_isAcceleratorPointerTagLiveRange |Microsoft Docs
-ms.custom: ''
+title: IDiaSymbol::get_isAcceleratorPointerTagLiveRange | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 ms.assetid: d195aec4-6d3c-42e0-88a5-3d463539f0b8
 caps.latest.revision: 6
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 7bbfa079e3944162fbf67e3a2c14f21149e6b785
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 5a53faf8c9395867b570909ac4d34cf329da12c6
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51766859"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "68149450"
 ---
 # <a name="idiasymbolgetisacceleratorpointertagliverange"></a>IDiaSymbol::get_isAcceleratorPointerTagLiveRange
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-擷取表示符號是否對應至的旗標*定義範圍符號*標記元件針對 c + + AMP 加速器所編譯的程式碼中的指標變數。 定義範圍符號是變數的位址範圍的位置。  
+擷取表示符號是否對應至的旗標*定義範圍符號*標記元件之指標的程式碼中的變數編譯為C++AMP 加速器。 定義範圍符號是變數的位址範圍的位置。  
   
 ## <a name="syntax"></a>語法  
   
@@ -44,6 +39,3 @@ HRESULT get_isAcceleratorPointerTagLiveRange(
   
 ## <a name="see-also"></a>另請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
-
-
-

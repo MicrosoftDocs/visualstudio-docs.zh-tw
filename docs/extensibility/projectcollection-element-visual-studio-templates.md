@@ -9,17 +9,17 @@ helpviewer_keywords:
 - <ProjectCollection> element [Visual Studio Templates]
 - ProjectCollection element [Visual Studio Templates]
 ms.assetid: deb27180-2035-49ed-b835-c47bb3cd2f8f
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 902c2d3bf841537808317be8f196f52d23a4a64c
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 5fe67217acfa4c3612d1feea45b5267402955481
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56691627"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66336031"
 ---
 # <a name="projectcollection-element-visual-studio-templates"></a>ProjectCollection 項目 （Visual Studio 範本）
 指定多專案範本的組織和內容。

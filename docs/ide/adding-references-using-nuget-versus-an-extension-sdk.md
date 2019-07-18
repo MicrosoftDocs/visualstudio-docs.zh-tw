@@ -8,11 +8,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 857cb1757919925c8ca28e3b07904450b1264277
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55935910"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62975767"
 ---
 # <a name="adding-references-using-nuget-versus-an-extension-sdk"></a>使用 NuGet 和延伸模組 SDK 新增參考的比較
 

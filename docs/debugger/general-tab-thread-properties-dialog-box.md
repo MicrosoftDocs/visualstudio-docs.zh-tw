@@ -12,18 +12,18 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1e8604c2d31f6bb50e9e77efbf6423f56ed719c0
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56714812"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62896361"
 ---
 # <a name="general-tab-thread-properties-dialog-box"></a>執行緒屬性對話方塊、一般索引標籤
 使用此對話方塊中，若要深入了解特定的執行緒。 若要顯示此對話方塊中，焦點移至[執行緒檢視](../debugger/threads-view.md)視窗中或開啟[訊息檢視](../debugger/messages-view.md)展開一則訊息。 在樹狀目錄中，選取執行緒的任何節點，然後選擇**屬性**從**檢視**功能表。
 
  **Thread Properties**  對話方塊包含一個窗格中，**一般** 索引標籤。可用的設定如下：
 
-|進入|說明|
+|進入|描述|
 |-----------|-----------------|
 |**模組名稱**|模組的名稱。|
 |**執行緒 ID**|此執行緒的唯一識別碼。 請注意，會重複使用的執行緒識別碼;它們可以識別執行緒只會針對該執行緒的存留期。|

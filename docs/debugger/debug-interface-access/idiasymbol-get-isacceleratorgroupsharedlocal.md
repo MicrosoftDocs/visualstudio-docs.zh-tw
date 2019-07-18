@@ -11,14 +11,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6ac6a7582c6fa59665390cfdb6b613fff6e36709
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56644675"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "62836832"
 ---
 # <a name="idiasymbolgetisacceleratorgroupsharedlocal"></a>IDiaSymbol::get_isAcceleratorGroupSharedLocal
-擷取表示符號是否對應至共用本機群組的變數在編譯 c + + AMP 加速器的程式碼的旗標。
+擷取表示符號是否對應至共用本機群組的變數在編譯的程式碼的旗標C++AMP 加速器。
 
 ## <a name="syntax"></a>語法
 
@@ -30,12 +30,12 @@ HRESULT get_isAcceleratorGroupSharedLocal(
 #### <a name="parameters"></a>參數
  `pFlag`
 
-[out]指標`BOOL`表示符號是否對應至共用本機群組的變數在編譯 c + + AMP 加速器的程式碼。 如果`TRUE`，則`get_baseDataSlot`和`get_baseDataOffset`方法可用來取得變數的儲存體位置資訊。
+[out]指標`BOOL`表示符號是否對應至共用本機群組的變數在編譯的程式碼C++AMP 加速器。 如果`TRUE`，則`get_baseDataSlot`和`get_baseDataOffset`方法可用來取得變數的儲存體位置資訊。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
 - [IDiaSymbol::get_baseDataSlot](../../debugger/debug-interface-access/idiasymbol-get-basedataslot.md)
 - [IDiaSymbol::get_baseDataOffset](../../debugger/debug-interface-access/idiasymbol-get-basedataoffset.md)

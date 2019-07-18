@@ -8,12 +8,12 @@ ms.assetid: ed6ff546-acfa-4dd8-b3a2-6e7455930ca4
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 768695338f77943e44d5e1883ce5da9d9a6bc307
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 12582aa4c1aa41aa0a38f652cf4841ba1f9953e1
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55916683"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62949938"
 ---
 # <a name="how-to-select-the-active-run-setting-for-a-load-test"></a>HOW TO：選取負載測試的使用中回合設定
 
@@ -32,11 +32,11 @@ ms.locfileid: "55916683"
 
 ## <a name="select-the-active-run-setting"></a>選取使用中的回合設定
 
-1.  開啟負載測試。
+1. 開啟負載測試。
 
-2.  展開 [回合設定] 資料夾。
+2. 展開 [回合設定] 資料夾。
 
-3.  以滑鼠右鍵按一下您要設為使用中節點的回合設定節點，然後選擇 [設定為使用中]。
+3. 以滑鼠右鍵按一下您要設為使用中節點的回合設定節點，然後選擇 [設定為使用中]。
 
      在 [負載測試編輯器] 中，受影響的回合設定節點會更新成含有 "[Active]" 後置字元。
 

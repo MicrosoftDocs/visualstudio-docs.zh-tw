@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugThread2::GetProgram
 ms.assetid: 8c9c5ea1-2031-472e-bc8f-30e22e754566
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d25c438e7779c3589ab2deda5ea78cad9799dd5f
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: bc803d08e26780712dbec6318a928022c3ce862e
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56714106"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66320251"
 ---
 # <a name="idebugthread2getprogram"></a>IDebugThread2::GetProgram
 取得執行緒正在執行的程式。
@@ -36,10 +39,9 @@ int GetProgram ( 
 );
 ```
 
-#### <a name="parameters"></a>參數
- `ppProgram`
-
- [out]傳回[IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)物件，表示這個執行緒正在執行中的程式。
+## <a name="parameters"></a>參數
+`ppProgram`\
+[out]傳回[IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)物件，表示這個執行緒正在執行中的程式。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

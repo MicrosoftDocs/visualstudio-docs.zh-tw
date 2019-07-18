@@ -1,14 +1,9 @@
 ---
-title: IDebugStackFrame3::GetUnwindCodeContext |Microsoft Docs
-ms.custom: ''
+title: IDebugStackFrame3::GetUnwindCodeContext | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugStackFrame3::GetUnwindCodeContext
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: b25f7e7d-2b24-48e4-93b3-829e61d73ebf
 caps.latest.revision: 7
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: ea8e79cec9920a7286b914c89b2c09fbe6cef8c4
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: c5a3fdaf9ca21841a43041f0ad5c1dc7b1507085
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51757056"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62546885"
 ---
 # <a name="idebugstackframe3getunwindcodecontext"></a>IDebugStackFrame3::GetUnwindCodeContext
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -56,4 +51,3 @@ int GetUnwindCodeContext(
 ## <a name="see-also"></a>另請參閱  
  [IDebugStackFrame3](../../../extensibility/debugger/reference/idebugstackframe3.md)   
  [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)
-

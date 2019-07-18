@@ -1,24 +1,19 @@
 ---
 title: RequiredPlatformVersion 元素 （Visual Studio 範本） |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 ms.assetid: 6f0e4986-3157-4bba-aed3-c28413ebe976
 caps.latest.revision: 7
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: d2854cd8f10725ed884c27c2c78a4d107054a5bd
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 2e5ba8cfef6674b5603cf03c73619f686338af3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51763981"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68159282"
 ---
 # <a name="requiredplatformversion-element-visual-studio-templates"></a>RequiredPlatformVersion 項目 (Visual Studio 樣板)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +26,7 @@ ms.locfileid: "51763981"
   
  VSTemplate  
 TemplateData  
-...TargetPlatformName  
+…..TargetPlatformName  
 RequiredPlatformVersion  
   
 ## <a name="syntax"></a>語法  
@@ -81,4 +76,3 @@ RequiredPlatformVersion
  [TargetPlatformName 元素 （Visual Studio 範本）](../extensibility/targetplatformname-element-visual-studio-templates.md)   
  [建立專案和項目範本](../ide/creating-project-and-item-templates.md)   
  [Visual Studio 範本結構描述參考](../extensibility/visual-studio-template-schema-reference.md)
-

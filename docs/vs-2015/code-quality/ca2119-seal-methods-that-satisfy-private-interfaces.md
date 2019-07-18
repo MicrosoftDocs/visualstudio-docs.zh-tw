@@ -1,14 +1,9 @@
 ---
-title: CA2119： 密封方法以滿足私用介面 |Microsoft Docs
-ms.custom: ''
+title: CA2119:密封方法以滿足私用介面 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - SealMethodsThatSatisfyPrivateInterfaces
 - CA2119
@@ -20,14 +15,14 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: c6d3e102cde1fc010f777006d629fa2d19add894
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 56b08d1b842e65e1c1c29a7409813c314cbf014d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49825386"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687269"
 ---
-# <a name="ca2119-seal-methods-that-satisfy-private-interfaces"></a>CA2119：密封方法以滿足私用介面的要求
+# <a name="ca2119-seal-methods-that-satisfy-private-interfaces"></a>CA2119:密封方法以滿足私用介面的要求
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -46,15 +41,15 @@ ms.locfileid: "49825386"
 ## <a name="how-to-fix-violations"></a>如何修正違規
  若要修正此規則的違規情形，防止方法遭到覆寫外部組件使用下列其中一項：
 
--   請宣告的型別`sealed`(`NotInheritable` Visual Basic 中)。
+- 請宣告的型別`sealed`(`NotInheritable` Visual Basic 中)。
 
--   變更要宣告型別的存取範圍`internal`(`Friend` Visual Basic 中)。
+- 變更要宣告型別的存取範圍`internal`(`Friend` Visual Basic 中)。
 
--   移除的宣告型別中的所有公用建構函式。
+- 移除的宣告型別中的所有公用建構函式。
 
--   實作方法，而不需使用`virtual`修飾詞。
+- 實作方法，而不需使用`virtual`修飾詞。
 
--   明確實作的方法。
+- 明確實作的方法。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
  它可安全地隱藏這個警告規則在仔細檢閱之後, 沒有安全性問題存在，可能是如果在組件外覆寫此方法可利用來攻擊。
@@ -74,7 +69,4 @@ ms.locfileid: "49825386"
  [!code-vb[FxCop.Security.SealMethods2#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Security.SealMethods2/vb/FxCop.Security.SealMethods2.vb#1)]
 
 ## <a name="see-also"></a>另請參閱
- [介面](http://msdn.microsoft.com/library/2feda177-ce11-432d-81b4-d50f5f35fd37)[介面](http://msdn.microsoft.com/library/61b06674-12c9-430b-be68-cc67ecee1f5b)
-
-
-
+ [介面](https://msdn.microsoft.com/library/2feda177-ce11-432d-81b4-d50f5f35fd37)[介面](https://msdn.microsoft.com/library/61b06674-12c9-430b-be68-cc67ecee1f5b)

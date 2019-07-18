@@ -29,12 +29,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a7bcf7b57c6cdc7e0ff4ff5a851397b7c96b345
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 986c52a365abcb1780b741af61414bfc758413db
+ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55930229"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65531912"
 ---
 # <a name="options-text-editor-general"></a>一般、文字編輯器、選項
 
@@ -96,5 +96,5 @@ ms.locfileid: "55930229"
 - [索引標籤、所有語言、文字編輯器、選項](../../ide/reference/options-text-editor-all-languages-tabs.md)
 - [副檔名、文字編輯器、選項](../../ide/reference/options-text-editor-file-extension.md)
 - [識別及自訂鍵盤快速鍵](../../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)
-- [自訂編輯器](../../ide/customizing-the-editor.md)
+- [自訂編輯器](../how-to-change-text-case-in-the-editor.md)
 - [使用 IntelliSense](../../ide/using-intellisense.md)

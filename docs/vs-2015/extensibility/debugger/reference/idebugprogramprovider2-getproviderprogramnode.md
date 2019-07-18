@@ -1,14 +1,9 @@
 ---
 title: IDebugProgramProvider2::GetProviderProgramNode |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugProgramProvider2::GetProviderProgramNode
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: e62e8e83-acbb-4c52-aedf-ffbd4670db29
 caps.latest.revision: 14
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: f35b1822c2185080bb150aeaf4352135a61d2ef9
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 5fa9f4db6aa71e9bba1f456b13ba52abd24ab966
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51741479"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68198721"
 ---
 # <a name="idebugprogramprovider2getproviderprogramnode"></a>IDebugProgramProvider2::GetProviderProgramNode
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -57,7 +52,7 @@ int GetProviderProgramNode(
  `Flags`  
  [in]從旗標的組合[PROVIDER_FLAGS](../../../extensibility/debugger/reference/provider-flags.md)列舉型別。 此呼叫一般會在下列旗標：  
   
-|旗標|描述|  
+|旗標|說明|  
 |----------|-----------------|  
 |`PFLAG_REMOTE_PORT`|呼叫端在遠端電腦上執行。|  
 |`PFLAG_DEBUGGEE`|呼叫端目前正在偵錯 （每個節點會傳回封送處理的其他資訊）。|  
@@ -87,4 +82,3 @@ int GetProviderProgramNode(
  [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md)   
  [IDebugDefaultPort2](../../../extensibility/debugger/reference/idebugdefaultport2.md)   
  [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)
-

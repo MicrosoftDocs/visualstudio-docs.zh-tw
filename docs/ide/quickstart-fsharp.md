@@ -11,18 +11,28 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: b4b6a9bcc9828d0fdeb76f3f74732d8d5496e59c
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: c24803f3817aa8461f9445e390fe44853d2d27c5
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58069758"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62953314"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-service-in-f"></a>快速入門：使用 Visual Studio 以 F\# 建立您的第一個 ASP.NET Core Web 服務
 
 在 Visual Studio 中 F# 的這個 5-10 分鐘簡介中，您將建立 F# ASP.NET Core Web 應用程式。
 
-如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017)頁面免費進行安裝。
+::: moniker range="vs-2017"
+
+如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)頁面免費進行安裝。
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019)頁面免費進行安裝。
+
+::: moniker-end
 
 ## <a name="create-a-project"></a>建立專案
 

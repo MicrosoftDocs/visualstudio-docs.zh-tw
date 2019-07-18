@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 327a53a28e5b37d33d44375653c1bffa56c7ddd2
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56616088"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62829027"
 ---
 # <a name="idialinenumber"></a>IDiaLineNumber
 描述對應到來源檔案行號的位元組的映像文字區塊的程序的存取資訊。
@@ -31,7 +31,7 @@ IDiaLineNumber : IUnknown
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法
 下表顯示的方法`IDiaLineNumber`。
 
-|方法|說明|
+|方法|描述|
 |------------|-----------------|
 |[IDiaLineNumber::get_compiland](../../debugger/debug-interface-access/idialinenumber-get-compiland.md)|擷取提供映像文字的位元組數將編譯模組符號的參考。|
 |[IDiaLineNumber::get_sourceFile](../../debugger/debug-interface-access/idialinenumber-get-sourcefile.md)|擷取來源檔案物件的參考。|
@@ -135,13 +135,13 @@ void dumpFunctionLines( IDiaSymbol* pSymbol, IDiaSession* pSession )
 ```
 
 ## <a name="requirements"></a>需求
-標頭： Dia2.h
+標頭：dia2.h
 
 程式庫： diaguids.lib
 
 DLL: msdia80.dll
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [介面 (偵錯介面存取 SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
 - [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)
 - [IDiaEnumLineNumbers::Item](../../debugger/debug-interface-access/idiaenumlinenumbers-item.md)

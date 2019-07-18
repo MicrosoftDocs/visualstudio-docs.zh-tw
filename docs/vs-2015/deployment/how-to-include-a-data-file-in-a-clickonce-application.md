@@ -1,14 +1,9 @@
 ---
-title: 'How to: Include a Data File in a ClickOnce Application |Microsoft Docs'
-ms.custom: ''
+title: 作法：Include a Data File in a ClickOnce Application |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -21,15 +16,15 @@ ms.assetid: 89ee46ef-bc8c-4ab0-a2ac-1220f9da06fc
 caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 6e4d5be3628cd9653bfc713caea426c91a205419
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 9120a5b3cb60f6c607ed97ab2df24bb157c72371
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49884910"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68153774"
 ---
-# <a name="how-to-include-a-data-file-in-a-clickonce-application"></a>How to: Include a Data File in a ClickOnce Application
+# <a name="how-to-include-a-data-file-in-a-clickonce-application"></a>作法：在 ClickOnce 應用程式中納入資料檔案
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 每個[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]您安裝的應用程式已指派應用程式可在其中管理它自己的資料的目的地電腦的本機磁碟上的資料目錄。 資料檔案可以包含任何類型的檔案： 文字檔、 XML 檔案或甚至是 Microsoft Access 資料庫 (.mdb) 檔案。 下列程序會示範如何新增到任何類型的資料檔案您[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]應用程式。  
@@ -42,7 +37,7 @@ ms.locfileid: "49884910"
   
 2. 清單的資料檔中更新您的應用程式資訊清單。  
   
-    **mage-u v1.0.0.0\Application.manifest-FromDirectory v1.0.0.0**  
+    **mage -u v1.0.0.0\Application.manifest -FromDirectory v1.0.0.0**  
   
     執行此工作會重新建立您的應用程式資訊清單中的檔案清單，而且也會自動產生的雜湊簽章。  
   
@@ -70,30 +65,27 @@ ms.locfileid: "49884910"
   
 ### <a name="to-include-a-data-file-by-using-mageuiexe"></a>若要使用 MageUI.exe 中納入資料檔案  
   
-1.  將資料檔案新增至您的應用程式目錄，與您的應用程式檔案的其餘部分。  
+1. 將資料檔案新增至您的應用程式目錄，與您的應用程式檔案的其餘部分。  
   
-2.  一般而言，您的應用程式的目錄會加上部署的目前版本的目錄，例如 v1.0.0.0。  
+2. 一般而言，您的應用程式的目錄會加上部署的目前版本的目錄，例如 v1.0.0.0。  
   
-3.  在 [**檔案**] 功能表中，按一下**開啟**開啟您的應用程式資訊清單。  
+3. 在 [**檔案**] 功能表中，按一下**開啟**開啟您的應用程式資訊清單。  
   
-4.  選取 [**檔案**] 索引標籤。  
+4. 選取 [**檔案**] 索引標籤。  
   
-5.  在頂端的 [] 索引標籤的 [文字] 方塊中，輸入包含您的應用程式檔案的目錄，然後按一下**填入**。  
+5. 在頂端的 [] 索引標籤的 [文字] 方塊中，輸入包含您的應用程式檔案的目錄，然後按一下**填入**。  
   
      您的資料檔案會出現在方格中。  
   
-6.  設定**檔案類型**值的資料檔**資料**。  
+6. 設定**檔案類型**值的資料檔**資料**。  
   
-7.  儲存應用程式資訊清單，並重新簽署檔案。  
+7. 儲存應用程式資訊清單，並重新簽署檔案。  
   
      MageUI.exe 會提示您重新登入的檔案。  
   
-8.  重新簽署部署資訊清單  
+8. 重新簽署部署資訊清單  
   
      您必須重新簽署部署資訊清單，因為它的應用程式資訊清單的雜湊已變更。  
   
 ## <a name="see-also"></a>另請參閱  
  [在 ClickOnce 應用程式中存取本機和遠端資料](../deployment/accessing-local-and-remote-data-in-clickonce-applications.md)
-
-
-

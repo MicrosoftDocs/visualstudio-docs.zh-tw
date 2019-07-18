@@ -11,12 +11,12 @@ caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 47860775a6351cab83cd43975e94373c3558305a
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 43b6115c45f9583b90711ef030834da662106f08
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54795343"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704357"
 ---
 # <a name="concurrency-visualizer-markers"></a>並行視覺化檢視中的標記
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,11 +26,11 @@ ms.locfileid: "54795343"
 ## <a name="kinds-of-markers"></a>標記類型  
  並行視覺化檢視使用三種類型的標記來表示應用程式事件︰旗標、訊息和範圍。  
   
-1.  使用*旗標*可指出應用程式中有趣的時間點。  例如，您可以使用旗標來表示變數值已達到特定的閾值或表示擲回例外狀況。  
+1. 使用*旗標*可指出應用程式中有趣的時間點。  例如，您可以使用旗標來表示變數值已達到特定的閾值或表示擲回例外狀況。  
   
-2.  *訊息*也可標記時間點，但是您可以使用它追蹤記錄檔樣式。  例如，您現在可以在訊息呼叫中包裝傾印到記錄檔的內容以便追蹤，並在並行視覺化檢視中檢視。 您也可以使用並行視覺化檢視將此資料匯出至 CSV 檔案。  
+2. *訊息*也可標記時間點，但是您可以使用它追蹤記錄檔樣式。  例如，您現在可以在訊息呼叫中包裝傾印到記錄檔的內容以便追蹤，並在並行視覺化檢視中檢視。 您也可以使用並行視覺化檢視將此資料匯出至 CSV 檔案。  
   
-3.  *範圍*代表應用程式中一個時間間隔，例如其中一個階段。  
+3. *範圍*代表應用程式中一個時間間隔，例如其中一個階段。  
   
 ## <a name="marker-linkage-to-threads"></a>執行緒標記連結  
  產生標記的每個執行緒都有不同的時間軸通道。  負責產生標記事件的執行緒識別碼會顯示在標記通道的描述旁邊。  標記通道左邊顯示的識別碼符合目前處理序中另一個執行緒的 ID。  
@@ -46,17 +46,17 @@ ms.locfileid: "54795343"
   
 - [並行視覺化檢視 SDK](../profiling/concurrency-visualizer-sdk.md)  
   
-- [工作平行程式庫 (TPL)](http://msdn.microsoft.com/library/b8f99f43-9104-45fd-9bff-385a20488a23)  
+- [工作平行程式庫 (TPL)](https://msdn.microsoft.com/library/b8f99f43-9104-45fd-9bff-385a20488a23)  
   
-- [資料流程](http://msdn.microsoft.com/library/643575d0-d26d-4c35-8de7-a9c403e97dd6)  
+- [資料流程](https://msdn.microsoft.com/library/643575d0-d26d-4c35-8de7-a9c403e97dd6)  
   
-- [平行 LINQ (PLINQ)](http://msdn.microsoft.com/library/3d4d0cd3-bde4-490b-99e7-f4e41be96455)  
+- [平行 LINQ (PLINQ)](https://msdn.microsoft.com/library/3d4d0cd3-bde4-490b-99e7-f4e41be96455)  
   
-- [並行執行階段](http://msdn.microsoft.com/library/874bc58f-8dce-483e-a3a1-4dcc9e52ed2c)  
+- [並行執行階段](https://msdn.microsoft.com/library/874bc58f-8dce-483e-a3a1-4dcc9e52ed2c)  
   
-- [情節標記支援](http://msdn.microsoft.com/e3b55bc2-b451-4214-ae00-0c7f5a5baec8)  
+- [情節標記支援](https://msdn.microsoft.com/e3b55bc2-b451-4214-ae00-0c7f5a5baec8)  
   
-- [C++ AMP (C++ Accelerated Massive Parallelism)](http://msdn.microsoft.com/library/e27824cb-3167-409b-8c3f-a0e476d8f349)  
+- [C++ AMP (C++ Accelerated Massive Parallelism)](https://msdn.microsoft.com/library/e27824cb-3167-409b-8c3f-a0e476d8f349)  
   
   您可以使用 [[進階設定](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md)] 對話方塊中的 [標記] 索引標籤，控制各種來源的標記是否顯示在並行視覺化檢視中，您可以依照重要性和類別篩選標記。  
   

@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f5a1532b67fdaeb2a44663db77cfc8a1056004e4
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 24a412161d9f91830486378d4e8228386cfd3fb7
+ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57867796"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65841906"
 ---
 # <a name="ca1714-flags-enums-should-have-plural-names"></a>CA1714:旗標列舉應該使用複數名稱
 
@@ -54,7 +54,7 @@ ms.locfileid: "57867796"
 
 如果您執行這項規則，從[FxCop 分析器](install-fxcop-analyzers.md)（而不是透過靜態程式碼分析），您可以設定的哪些部分您程式碼基底上執行這項規則，根據其存取範圍。 比方說，若要指定執行規則時，應該只針對非公用 API 介面，將下列索引鍵 / 值組新增至專案中的.editorconfig 檔案：
 
-```
+```ini
 dotnet_code_quality.ca1714.api_surface = private, internal
 ```
 

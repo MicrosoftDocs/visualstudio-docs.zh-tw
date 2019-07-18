@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], startup events
 ms.assetid: 306ea0b4-6d9e-4871-8d8d-a4032d422940
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4c9363270593f1d492ec57d119f9a70f8371b0ac
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 5fa11dbf4ff05cc9fec033a083925b9c4f0b7e0f
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56685894"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66315002"
 ---
 # <a name="send-startup-events-after-a-launch"></a>在啟動後傳送啟動事件
 在偵錯引擎 (DE) 附加至程式中，它會將一系列的啟動事件送回偵錯工作階段中。
@@ -31,7 +31,7 @@ ms.locfileid: "56685894"
 - 載入完成事件，傳送程式碼時載入並準備好執行之前執行任何程式碼。
 
   > [!NOTE]
-  >  當此事件繼續時，會初始化全域變數，並啟動程序執行。
+  > 當此事件繼續時，會初始化全域變數，並啟動程序執行。
 
 - 可能的其他執行緒建立和模組載入事件。
 

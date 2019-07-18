@@ -1,14 +1,9 @@
 ---
 title: 選取項目及在 IDE 中的貨幣 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - currency, Visual Studio IDE
 - IDE, selection
@@ -17,27 +12,27 @@ helpviewer_keywords:
 ms.assetid: 2f6f18d1-acd8-454d-a856-9a4d81155052
 caps.latest.revision: 15
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 45fc57bf2d5763527f9f8c2c6d8d22ca1d6369f8
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: d0a0b999a1a6e6ed2364060031f68378e7222ec0
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51786739"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68155813"
 ---
 # <a name="selection-and-currency-in-the-ide"></a>IDE 中的選取項目和貨幣
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]整合式的開發環境 (IDE) 會維護使用選取之使用者的相關資訊目前選取的物件*內容*。 使用選取項目內容中，Vspackage 可以參與貨幣追蹤有兩種：  
   
--   傳播 ide Vspackage 的貨幣資訊。  
+- 傳播 ide Vspackage 的貨幣資訊。  
   
--   藉由監視使用者在 IDE 中的目前作用中選取項目。  
+- 藉由監視使用者在 IDE 中的目前作用中選取項目。  
   
 ## <a name="selection-context"></a>選取項目內容  
  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE 全域追蹤的 IDE 貨幣，在它自己的全域選擇內容物件。 下表顯示的項目組成的選取項目內容。  
   
-|元素|描述|  
+|項目|描述|  
 |-------------|-----------------|  
 |目前的階層|通常是目前的專案;NULL 目前的階層表示整個方案是最新。|  
 |目前的項目識別碼|在目前的階層架構中，選取的項目在 [專案] 視窗中的多個選取項目時，可以有多個目前的項目。|  
@@ -45,9 +40,9 @@ ms.locfileid: "51786739"
   
  此外，環境會維護兩個全域清單：  
   
--   使用 UI 命令識別碼的清單  
+- 使用 UI 命令識別碼的清單  
   
--   目前使用中的項目型別的清單。  
+- 目前使用中的項目型別的清單。  
   
 ### <a name="window-types-and-selection"></a>視窗類型和選取範圍  
  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE 會將 windows 組織成兩種一般類型：  
@@ -65,11 +60,10 @@ ms.locfileid: "51786739"
 ### <a name="events-and-currency"></a>事件和貨幣  
  兩種類型的事件可能會發生影響環境的概念的貨幣：  
   
--   會傳播到全域層級，而變更視窗框架的選取項目內容的事件。 這類事件的範例包括開啟，全域工具視窗開啟或開啟一個專案類型的工具視窗的 MDI 子視窗。  
+- 會傳播到全域層級，而變更視窗框架的選取項目內容的事件。 這類事件的範例包括開啟，全域工具視窗開啟或開啟一個專案類型的工具視窗的 MDI 子視窗。  
   
--   追蹤視窗框架的選取項目內容中的項目進行變更的事件。 範例包括變更選取項目內 DocObject 或變更專案類型 視窗中的選取項目。  
+- 追蹤視窗框架的選取項目內容中的項目進行變更的事件。 範例包括變更選取項目內 DocObject 或變更專案類型 視窗中的選取項目。  
   
 ## <a name="see-also"></a>另請參閱  
  [選取內容物件](../../extensibility/internals/selection-context-objects.md)   
  [使用者的意見反應](../../extensibility/internals/feedback-to-the-user.md)
-

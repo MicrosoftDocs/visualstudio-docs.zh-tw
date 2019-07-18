@@ -13,11 +13,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.openlocfilehash: 7728a826f385539d457cc37f807a1e174582d356
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 73fbcbb81ec3ec35459a259289a0f2ff494374f7
+ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38945929"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67254265"
 ---
 Team Foundation

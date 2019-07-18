@@ -1,14 +1,9 @@
 ---
-title: IDebugBinder |Microsoft Docs
-ms.custom: ''
+title: IDebugBinder | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugBinder
 helpviewer_keywords:
@@ -16,19 +11,19 @@ helpviewer_keywords:
 ms.assetid: d1f31e5b-c6e2-4e02-8959-b3e86041b29c
 caps.latest.revision: 17
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 30f4ae83134ae1ac2dceea991fe65b0d1ae191f2
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: dc00c50e3c340ab0685ab1010c6e924e77a18a09
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51788260"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431699"
 ---
 # <a name="idebugbinder"></a>IDebugBinder
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
 > [!IMPORTANT]
->  在 Visual Studio 2015 中，這種實作運算式評估工具已被取代。 如需實作 CLR 運算式評估工具的資訊，請參閱[CLR 運算式評估工具](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)並[Managed 運算式評估工具範例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。  
+> 在 Visual Studio 2015 中，這種實作運算式評估工具已被取代。 如需實作 CLR 運算式評估工具的資訊，請參閱[CLR 運算式評估工具](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)並[Managed 運算式評估工具範例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。  
   
  這個介面會繫結 [符號] 欄位中，通常會傳回符號提供者，記憶體內容或包含符號的目前值的物件。  
   
@@ -61,13 +56,12 @@ IDebugBinder : IUnknown
 ## <a name="requirements"></a>需求  
  標頭： ee.h  
   
- 命名空間： Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間：Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
  [運算式評估介面](../../../extensibility/debugger/reference/expression-evaluation-interfaces.md)   
  [EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md)   
  [EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md)   
  [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md)
-

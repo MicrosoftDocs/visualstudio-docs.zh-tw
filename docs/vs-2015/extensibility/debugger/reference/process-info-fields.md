@@ -1,14 +1,9 @@
 ---
 title: PROCESS_INFO_FIELDS |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - PROCESS_INFO_FIELDS
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 0d9cc345-3d3a-44d8-ae15-a67acb97a828
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: d4349a4a2ad55c53886ab281652ff990aa608682
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 7700670774dcb38b054cf28275f64c0c3046f741
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51807734"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68205033"
 ---
 # <a name="processinfofields"></a>PROCESS_INFO_FIELDS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -98,11 +93,10 @@ public enum enum_PROCESS_INFO_FIELDS { 
 ## <a name="requirements"></a>需求  
  標頭： msdbg.h  
   
- 命名空間： Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間：Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
  [列舉型別](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md)
-

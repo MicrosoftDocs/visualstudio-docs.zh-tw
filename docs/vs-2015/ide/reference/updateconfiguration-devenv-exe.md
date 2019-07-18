@@ -13,17 +13,16 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9e058d18c0a7c6d1d3b26a5b379c308d26f790ca
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 2f20463cd91148143a1d3fb7f7de5cc1649d683c
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54783157"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65689343"
 ---
 # <a name="updateconfiguration-devenvexe"></a>/Updateconfiguration (devenv.exe)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 通知 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 合併系統上的 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 套件，並檢查 MEF 快取中的任何變更。  
   
 ## <a name="syntax"></a>語法  
@@ -43,5 +42,5 @@ Devenv.exe /updateconfiguration
 ```  
   
 ## <a name="see-also"></a>請參閱  
- [在 Visual Studio 中自訂開發設定](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)   
+ [在 Visual Studio 中自訂開發設定](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)   
  [Devenv 命令列參數](../../ide/reference/devenv-command-line-switches.md)

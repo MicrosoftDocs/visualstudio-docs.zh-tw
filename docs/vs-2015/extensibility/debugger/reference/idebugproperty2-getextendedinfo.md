@@ -1,14 +1,9 @@
 ---
 title: IDebugProperty2::GetExtendedInfo |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugProperty2::GetExtendedInfo
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 0c9c0b2b-7540-4424-adb5-fce7aa37a026
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 9f6fd711a70c050a6f490a27a56eb860c84de867
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 74810aab2f47a36c716891fd45b7424eb737b142
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51726953"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68164982"
 ---
 # <a name="idebugproperty2getextendedinfo"></a>IDebugProperty2::GetExtendedInfo
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -50,7 +45,7 @@ int GetExtendedInfo ( 
  [in]決定要擷取的擴充資訊的類型的 GUID。 如需詳細資訊，請參閱 < 備註 >。  
   
  `pExtendedInfo`  
- [out]傳回`VARIANT`（c + +） 或物件 (C#)，可用來擷取擴充的屬性的資訊。 比方說，這個參數可能會傳回`IUnknown`介面，可以查詢[IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md)介面。 如需詳細資訊，請參閱 < 備註 >。  
+ [out]傳回`VARIANT`(C++) 或物件 (C#)，可用來擷取擴充的屬性的資訊。 比方說，這個參數可能會傳回`IUnknown`介面，可以查詢[IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md)介面。 如需詳細資訊，請參閱 < 備註 >。  
   
 ## <a name="return-value"></a>傳回值  
  如果成功，則傳回`S_OK`; 否則會傳回錯誤碼。 傳回`S_GETEXTENDEDINFO_NO_EXTENDEDINFO`如果擷取沒有延伸資訊。  
@@ -60,10 +55,10 @@ int GetExtendedInfo ( 
   
  （因為不提供任何組件名稱，GUID 值會指定 C#） 此方法通常可辨識下列的 Guid。 供內部使用，可以建立額外的 Guid。  
   
-|名稱|GUID|描述|  
+|名稱|GUID|說明|  
 |----------|----------|-----------------|  
 |guidDocument|{3f98de84-fee9-11d0-b47f-00a0244a1dd2}|傳回`IUnknown`文件的介面。 通常[IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md)介面可以從此`IUnknown`介面。|  
-|guidCodeContext|{e2fc65e-56ce-11 d 1-b528-00aax004a8797}|傳回`IUnknown`的文件內容的介面。 通常[IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)介面可以從此`IUnknown`介面。|  
+|guidCodeContext|{e2fc65e-56ce-11d1-b528-00aax004a8797}|傳回`IUnknown`的文件內容的介面。 通常[IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)介面可以從此`IUnknown`介面。|  
 |guidCustomViewerSupported|{d9c9da31-ffbe-4eeb-9186-23121e3c088c}|傳回字串，包含 CLSID 的自訂檢視器，通常由運算式評估工具進行實作。|  
 |guidExtendedInfoSlot|{6df235ad-82c6-4292-9c97-7389770bc42f}|傳回代表所要的位置數目，如果這個屬性表示 managed 程式碼的本機位址的 32 位元數字。|  
 |guidExtendedInfoSignature|{b5fb6d46-f805-417f-96a3-8ba737073ffd}|傳回字串，包含與屬性物件相關聯的變數簽章。|  
@@ -72,4 +67,3 @@ int GetExtendedInfo ( 
  [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)   
  [IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md)   
  [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)
-

@@ -6,17 +6,17 @@ helpviewer_keywords:
 - Buttons element (VSCT XML schema)
 - VSCT XML schema elements, Buttons
 ms.assetid: 9f2cf94d-dec5-4776-a836-9a89c75f0c87
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f30ce24d720ff849b4c3959780facc8115b0fb23
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 2150ec240880987bc63bb3c2adf33682ebf34580
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56697048"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66321167"
 ---
 # <a name="buttons-element"></a>Buttons 元素
 群組[ 按鈕](../extensibility/button-element.md)項目，表示個別的命令。

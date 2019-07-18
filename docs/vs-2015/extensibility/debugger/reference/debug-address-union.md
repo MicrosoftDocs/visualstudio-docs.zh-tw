@@ -1,14 +1,9 @@
 ---
 title: DEBUG_ADDRESS_UNION |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - DEBUG_ADDRESS_UNION
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: e3d11aab-de0d-4109-b5dc-11e07e64382d
 caps.latest.revision: 10
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 0bff5235224b0bc93ebe63b7b77b812bb54e0845
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: b500bcb49e9072c3d31ea5ac3f77bda606c23b78
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51754859"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68179184"
 ---
 # <a name="debugaddressunion"></a>DEBUG_ADDRESS_UNION
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -61,37 +56,37 @@ public struct DEBUG_ADDRESS_UNION {
  值，以從[ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)列舉，指定如何解譯聯集。  
   
  addr.addrNative  
- [只有 c + +]包含[NATIVE_ADDRESS](../../../extensibility/debugger/reference/native-address.md)結構，如果`dwKind`= ADDRESS_KIND_NATIVE。  
+ [C++只]包含[NATIVE_ADDRESS](../../../extensibility/debugger/reference/native-address.md)結構，如果`dwKind`= ADDRESS_KIND_NATIVE。  
   
  addr.addrThisRel  
- [只有 c + +]包含[UNMANAGED_ADDRESS_THIS_RELATIVE](../../../extensibility/debugger/reference/unmanaged-address-this-relative.md)結構，如果`dwKind`= ADDRESS_KIND_UNMANAGED_THIS_RELATIVE。  
+ [C++只]包含[UNMANAGED_ADDRESS_THIS_RELATIVE](../../../extensibility/debugger/reference/unmanaged-address-this-relative.md)結構，如果`dwKind`= ADDRESS_KIND_UNMANAGED_THIS_RELATIVE。  
   
  addr.addUPhysical  
- [只有 c + +]包含[UNMANAGED_ADDRESS_PHYSICAL](../../../extensibility/debugger/reference/unmanaged-address-physical.md)結構，如果`dwKind`= ADDRESS_KIND_UNMANAGED_PHYSICAL。  
+ [C++只]包含[UNMANAGED_ADDRESS_PHYSICAL](../../../extensibility/debugger/reference/unmanaged-address-physical.md)結構，如果`dwKind`= ADDRESS_KIND_UNMANAGED_PHYSICAL。  
   
  addr.addrMethod  
- [只有 c + +]包含[METADATA_ADDRESS_METHOD](../../../extensibility/debugger/reference/metadata-address-method.md)結構，如果`dwKind`= ADDRESS_KIND_METHOD。  
+ [C++只]包含[METADATA_ADDRESS_METHOD](../../../extensibility/debugger/reference/metadata-address-method.md)結構，如果`dwKind`= ADDRESS_KIND_METHOD。  
   
  addr.addrField  
- [只有 c + +]包含[METADATA_ADDRESS_FIELD](../../../extensibility/debugger/reference/metadata-address-field.md)結構，如果`dwKind`= ADDRESS_KIND_FIELD。  
+ [C++只]包含[METADATA_ADDRESS_FIELD](../../../extensibility/debugger/reference/metadata-address-field.md)結構，如果`dwKind`= ADDRESS_KIND_FIELD。  
   
  addr.addrLocal  
- [只有 c + +]包含[METADATA_ADDRESS_LOCAL](../../../extensibility/debugger/reference/metadata-address-local.md)結構，如果`dwKind`= ADDRESS_KIND_LOCAL。  
+ [C++只]包含[METADATA_ADDRESS_LOCAL](../../../extensibility/debugger/reference/metadata-address-local.md)結構，如果`dwKind`= ADDRESS_KIND_LOCAL。  
   
  addr.addrParam  
- [只有 c + +]包含[METADATA_ADDRESS_PARAM](../../../extensibility/debugger/reference/metadata-address-param.md)結構，如果`dwKind`= ADDRESS_KIND_PARAM。  
+ [C++只]包含[METADATA_ADDRESS_PARAM](../../../extensibility/debugger/reference/metadata-address-param.md)結構，如果`dwKind`= ADDRESS_KIND_PARAM。  
   
  addr.addrArrayElem  
- [只有 c + +]包含[METADATA_ADDRESS_ARRAYELEM](../../../extensibility/debugger/reference/metadata-address-arrayelem.md)結構，如果`dwKind`= ADDRESS_KIND_ARRAYELEM。  
+ [C++只]包含[METADATA_ADDRESS_ARRAYELEM](../../../extensibility/debugger/reference/metadata-address-arrayelem.md)結構，如果`dwKind`= ADDRESS_KIND_ARRAYELEM。  
   
  addr.addrRetVal  
- [只有 c + +]包含[METADATA_ADDRESS_RETVAL](../../../extensibility/debugger/reference/metadata-address-retval.md)結構，如果`dwKind`= ADDRESS_KIND_RETVAL。  
+ [C++只]包含[METADATA_ADDRESS_RETVAL](../../../extensibility/debugger/reference/metadata-address-retval.md)結構，如果`dwKind`= ADDRESS_KIND_RETVAL。  
   
  addr.unused  
- [只有 c + +] 邊框距離。  
+ [C++只] 填補。  
   
  Addr  
- [只有 c + +]聯集的名稱。  
+ [C++只]聯集的名稱。  
   
  unionmember  
  [C#只]此值必須根據適當的結構類型封送處理`dwKind`。 如之間的關聯，請參閱 < 備註 > 一`dwKind`和等位的解譯。  
@@ -141,13 +136,12 @@ namespace MyPackage
 ## <a name="requirements"></a>需求  
  標頭： sh.h  
   
- 命名空間： Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間：Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
  [結構和等位](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md)   
  [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)   
  [GetAddress](../../../extensibility/debugger/reference/idebugaddress-getaddress.md)
-

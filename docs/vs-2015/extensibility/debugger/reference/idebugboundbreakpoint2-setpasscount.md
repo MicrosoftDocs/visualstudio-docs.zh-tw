@@ -1,14 +1,9 @@
 ---
 title: IDebugBoundBreakpoint2::SetPassCount |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugBoundBreakpoint2::SetPassCount
 helpviewer_keywords:
@@ -17,13 +12,13 @@ helpviewer_keywords:
 ms.assetid: b32c12f9-b34d-43bd-a1b9-61af6cf8e51b
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 804be8c41fdd775111e79c572fc421edb891ff81
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 9711ae6d9048b1de953d8a090b8e11b22c640345
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51765218"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68156183"
 ---
 # <a name="idebugboundbreakpoint2setpasscount"></a>IDebugBoundBreakpoint2::SetPassCount
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -61,4 +56,3 @@ int SetPassCount( 
  [GetHitCount](../../../extensibility/debugger/reference/idebugboundbreakpoint2-gethitcount.md)   
  [BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md)   
  [BP_STATE](../../../extensibility/debugger/reference/bp-state.md)
-

@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 39156994caa9e6ec073a05b0d8d04edab40e11e7
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 323286555bf1ed932b85ed6da84a344787fae265
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56609380"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438781"
 ---
 # <a name="listobject-control"></a>ListObject 控制項
   <xref:Microsoft.Office.Tools.Excel.ListObject> 控制項是可公開事件及繫結至資料的清單。 當您將清單加入工作表時，Visual Studio 會建立 <xref:Microsoft.Office.Tools.Excel.ListObject> 控制項，以便您直接對這個控制項進行程式設計，而不必周遊 Microsoft Office Excel 物件模型。
@@ -34,13 +34,13 @@ ms.locfileid: "56609380"
  在文件層級專案中，您可以於設計階段或執行階段，將 <xref:Microsoft.Office.Tools.Excel.ListObject> 控制項加入工作表。 在 VSTO 增益集專案中，您可以新增<xref:Microsoft.Office.Tools.Excel.ListObject>控制項加入工作表，只能在執行階段。 如需詳細資訊，請參閱[如何：將 ListObject 控制項加入工作表](../vsto/how-to-add-listobject-controls-to-worksheets.md)。
 
 > [!NOTE]
->  根據預設，當工作表關閉時，動態建立的清單物件不會保存為工作表中的主控制項。 如需詳細資訊，請參閱 <<c0> [ 將控制項加入 Office 文件，在執行階段](../vsto/adding-controls-to-office-documents-at-run-time.md)。
+> 根據預設，當工作表關閉時，動態建立的清單物件不會保存為工作表中的主控制項。 如需詳細資訊，請參閱 <<c0> [ 將控制項加入 Office 文件，在執行階段](../vsto/adding-controls-to-office-documents-at-run-time.md)。
 
 ## <a name="bind-data-to-the-control"></a>將資料繫結至控制項
  <xref:Microsoft.Office.Tools.Excel.ListObject> 控制項支援簡單和複雜資料繫結。 <xref:Microsoft.Office.Tools.Excel.ListObject>可以使用資料來源控制項繫結<xref:Microsoft.Office.Tools.Excel.ListObject.DataSource%2A>並<xref:Microsoft.Office.Tools.Excel.ListObject.DataMember%2A>在設計階段屬性或<xref:Microsoft.Office.Tools.Excel.ListObject.SetDataBinding%2A>方法在執行階段。
 
 > [!NOTE]
->  如果將 <xref:Microsoft.Office.Tools.Excel.ListObject> 繫結至資料變更時會引發事件的資料來源 (例如 <xref:System.Data.DataTable>)，它會自動進行更新。 如果將 <xref:Microsoft.Office.Tools.Excel.ListObject> 繫結至資料變更時不會引發事件的資料來源，則必須呼叫 <xref:Microsoft.Office.Tools.Excel.ListObject.RefreshDataRow%2A> 或 <xref:Microsoft.Office.Tools.Excel.ListObject.RefreshDataRows%2A> 方法以更新 <xref:Microsoft.Office.Tools.Excel.ListObject>。
+> 如果將 <xref:Microsoft.Office.Tools.Excel.ListObject> 繫結至資料變更時會引發事件的資料來源 (例如 <xref:System.Data.DataTable>)，它會自動進行更新。 如果將 <xref:Microsoft.Office.Tools.Excel.ListObject> 繫結至資料變更時不會引發事件的資料來源，則必須呼叫 <xref:Microsoft.Office.Tools.Excel.ListObject.RefreshDataRow%2A> 或 <xref:Microsoft.Office.Tools.Excel.ListObject.RefreshDataRows%2A> 方法以更新 <xref:Microsoft.Office.Tools.Excel.ListObject>。
 
  當您將重複的結構描述項目對應至工作表儲存格，藉此將 <xref:Microsoft.Office.Tools.Excel.ListObject> 加入該儲存格時，Visual Studio 會自動將 <xref:Microsoft.Office.Tools.Excel.ListObject> 對應至產生的資料集。 不過， <xref:Microsoft.Office.Tools.Excel.ListObject> 不會自動繫結至資料。 您可以採取步驟來繫結<xref:Microsoft.Office.Tools.Excel.ListObject>來在設計階段或在執行階段在文件層級專案中的資料集。 您可以透過程式設計方式繫結<xref:Microsoft.Office.Tools.Excel.ListObject>至在執行階段在 VSTO 增益集中的資料集。
 
@@ -49,7 +49,7 @@ ms.locfileid: "56609380"
  您可以將 <xref:Microsoft.Office.Tools.Excel.ListObject> 繫結至資料來源，以快速填入 <xref:Microsoft.Office.Tools.Excel.ListObject> 控制項。 如果您在繫結至資料的 <xref:Microsoft.Office.Tools.Excel.ListObject>中編輯資料，資料來源中也會自動進行這些變更。 如果您想要填入 <xref:Microsoft.Office.Tools.Excel.ListObject> ，再讓使用者變更 <xref:Microsoft.Office.Tools.Excel.ListObject> 中的資料，卻又不想要修改資料來源，則可以使用 <xref:Microsoft.Office.Tools.Excel.ListObject.Disconnect%2A> 方法將 <xref:Microsoft.Office.Tools.Excel.ListObject> 與資料來源中斷連結。 如需詳細資訊，請參閱[如何：使用資料填入 ListObject 控制項](../vsto/how-to-fill-listobject-controls-with-data.md)。
 
 > [!NOTE]
->  重疊的 <xref:Microsoft.Office.Tools.Excel.ListObject> 控制項不支援資料繫結。
+> 重疊的 <xref:Microsoft.Office.Tools.Excel.ListObject> 控制項不支援資料繫結。
 
 ### <a name="improve-performance-in-listobject-controls"></a>提升 ListObject 控制項中的效能
  如果先繫結控制項，再呼叫 <xref:Microsoft.Office.Tools.Excel.ListObject> 填入資料集，通常會使 XML 檔案讀入繫結至資料之 <xref:System.Data.DataSet.ReadXml%2A> 控制項的速度變慢。 若要提升效能，請先呼叫 <xref:System.Data.DataSet.ReadXml%2A> 再繫結控制項。
@@ -79,33 +79,33 @@ ms.locfileid: "56609380"
 ## <a name="events"></a>事件
  下列事件適用於 <xref:Microsoft.Office.Tools.Excel.ListObject> 控制項：
 
--   <xref:Microsoft.Office.Tools.Excel.ListObject.BeforeAddDataBoundRow>
+- <xref:Microsoft.Office.Tools.Excel.ListObject.BeforeAddDataBoundRow>
 
--   <xref:Microsoft.Office.Tools.Excel.ListObject.BeforeDoubleClick>
+- <xref:Microsoft.Office.Tools.Excel.ListObject.BeforeDoubleClick>
 
--   <xref:Microsoft.Office.Tools.Excel.ListObject.BeforeRightClick>
+- <xref:Microsoft.Office.Tools.Excel.ListObject.BeforeRightClick>
 
--   <xref:Microsoft.Office.Tools.Excel.ListObject.BindingContextChanged>
+- <xref:Microsoft.Office.Tools.Excel.ListObject.BindingContextChanged>
 
--   <xref:Microsoft.Office.Tools.Excel.ListObject.Change>
+- <xref:Microsoft.Office.Tools.Excel.ListObject.Change>
 
--   <xref:Microsoft.Office.Tools.Excel.ListObject.DataBindingFailure>
+- <xref:Microsoft.Office.Tools.Excel.ListObject.DataBindingFailure>
 
--   <xref:Microsoft.Office.Tools.Excel.ListObject.DataMemberChanged>
+- <xref:Microsoft.Office.Tools.Excel.ListObject.DataMemberChanged>
 
--   <xref:Microsoft.Office.Tools.Excel.ListObject.DataSourceChanged>
+- <xref:Microsoft.Office.Tools.Excel.ListObject.DataSourceChanged>
 
--   <xref:Microsoft.Office.Tools.Excel.ListObject.Deselected>
+- <xref:Microsoft.Office.Tools.Excel.ListObject.Deselected>
 
--   <xref:Microsoft.Office.Tools.Excel.ListObject.ErrorAddDataBoundRow>
+- <xref:Microsoft.Office.Tools.Excel.ListObject.ErrorAddDataBoundRow>
 
--   <xref:Microsoft.Office.Tools.Excel.ListObject.OriginalDataRestored>
+- <xref:Microsoft.Office.Tools.Excel.ListObject.OriginalDataRestored>
 
--   <xref:Microsoft.Office.Tools.Excel.ListObject.Selected>
+- <xref:Microsoft.Office.Tools.Excel.ListObject.Selected>
 
--   <xref:Microsoft.Office.Tools.Excel.ListObject.SelectedIndexChanged>
+- <xref:Microsoft.Office.Tools.Excel.ListObject.SelectedIndexChanged>
 
--   <xref:Microsoft.Office.Tools.Excel.ListObject.SelectionChange>
+- <xref:Microsoft.Office.Tools.Excel.ListObject.SelectionChange>
 
 ## <a name="see-also"></a>另請參閱
 - [使用擴充的物件自動化 Excel](../vsto/automating-excel-by-using-extended-objects.md)

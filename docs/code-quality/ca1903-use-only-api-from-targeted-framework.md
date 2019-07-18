@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 086c4546d72042d2b2c7c1789cdf1695bc54b81d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 2e57607cdfa8790c9b9fd4e692956f7bb823981a
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955384"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66744862"
 ---
 # <a name="ca1903-use-only-api-from-targeted-framework"></a>CA1903:只使用來自目標架構的 API
 
@@ -46,7 +46,7 @@ ms.locfileid: "55955384"
 |.NET Framework 3.5|.NET Framework 3.5 SP1|
 |.NET Framework 4|N/A|
 
- 若要變更專案的目標架構，請參閱[特定的.NET Framework 版本為目標](../ide/visual-studio-multi-targeting-overview.md)。
+ 若要變更專案的目標架構，請參閱[How to:目標的.NET 版本](../ide/how-to-target-a-version-of-the-dotnet-framework.md)。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
  若要移除的相依性的 service pack，請移除新的成員或類型的所有使用方式。 如果這是刻意的相依性時，隱藏警告，或關閉這項規則。
@@ -67,4 +67,4 @@ ms.locfileid: "55955384"
 ## <a name="see-also"></a>另請參閱
 
 - [Portability Warnings](../code-quality/portability-warnings.md)
-- [以特定的 .NET Framework 版本為目標](../ide/visual-studio-multi-targeting-overview.md)
+- [Framework 目標概觀](../ide/visual-studio-multi-targeting-overview.md)

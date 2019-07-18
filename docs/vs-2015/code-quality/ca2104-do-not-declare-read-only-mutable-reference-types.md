@@ -1,14 +1,9 @@
 ---
-title: CA2104： 不要宣告唯讀的可變動參考類型 |Microsoft Docs
-ms.custom: ''
+title: CA2104:不要宣告唯讀的可變動參考類型 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - DoNotDeclareReadOnlyMutableReferenceTypes
 - CA2104
@@ -20,14 +15,14 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 66248e6920c879932204ddb25a40820720adfd84
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a4c6619bc5803c1b44e1c6b0516987c3110bbd30
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49877435"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687422"
 ---
-# <a name="ca2104-do-not-declare-read-only-mutable-reference-types"></a>CA2104：不要宣告唯讀的可變動參考類型
+# <a name="ca2104-do-not-declare-read-only-mutable-reference-types"></a>CA2104:不要宣告唯讀的可變動參考類型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -43,9 +38,9 @@ ms.locfileid: "49877435"
 ## <a name="rule-description"></a>規則描述
  可變動類型是可以修改執行個體資料的類型。 <xref:System.Text.StringBuilder?displayProperty=fullName>類別是可變動參考類型的範例。 它包含成員可以變更類別的執行個體的值。 不可變的參考類型的範例是<xref:System.String?displayProperty=fullName>類別。 已執行個體化之後，可以永遠不會變更其值。
 
- 唯讀修飾詞 ([readonly](http://msdn.microsoft.com/library/2f8081f6-0de2-4903-898d-99696c48d2f4)在 C# 中， [ReadOnly](http://msdn.microsoft.com/library/e868185d-6142-4359-a2fd-a7965cadfce8)中[!INCLUDE[vbprvb](../includes/vbprvb-md.md)]，和[const](http://msdn.microsoft.com/library/b21c0271-1ad0-40a0-b21c-5e812bba0318) c + + 中) 的參考類型欄位 （c + + 中的指標） 可防止欄位取代為另一個執行個體的參考型別。 不過，修飾詞不會防止執行個體資料的欄位正在修改透過參考類型。
+ 唯讀修飾詞 ([readonly](https://msdn.microsoft.com/library/2f8081f6-0de2-4903-898d-99696c48d2f4)中C#， [ReadOnly](https://msdn.microsoft.com/library/e868185d-6142-4359-a2fd-a7965cadfce8)中[!INCLUDE[vbprvb](../includes/vbprvb-md.md)]，和[const](https://msdn.microsoft.com/library/b21c0271-1ad0-40a0-b21c-5e812bba0318)在C++) 的參考類型欄位 (將指標移C++)防止欄位的參考類型的不同執行個體取代。 不過，修飾詞不會防止執行個體資料的欄位正在修改透過參考類型。
 
- 唯讀陣列欄位免套用此規則，但改為導致違反[CA2105： 陣列欄位不應該為唯讀](../code-quality/ca2105-array-fields-should-not-be-read-only.md)規則。
+ 唯讀陣列欄位免套用此規則，但改為導致違反[CA2105:陣列欄位不應該為唯讀](../code-quality/ca2105-array-fields-should-not-be-read-only.md)規則。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
  若要修正此規則的違規情形，移除唯讀修飾詞，或是否可接受的重大變更，請使用不可變的類型取代欄位。
@@ -59,6 +54,3 @@ ms.locfileid: "49877435"
  [!code-cpp[FxCop.Security.MutableReferenceTypes#1](../snippets/cpp/VS_Snippets_CodeAnalysis/FxCop.Security.MutableReferenceTypes/cpp/FxCop.Security.MutableReferenceTypes.cpp#1)]
  [!code-csharp[FxCop.Security.MutableReferenceTypes#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Security.MutableReferenceTypes/cs/FxCop.Security.MutableReferenceTypes.cs#1)]
  [!code-vb[FxCop.Security.MutableReferenceTypes#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Security.MutableReferenceTypes/vb/FxCop.Security.MutableReferenceTypes.vb#1)]
-
-
-

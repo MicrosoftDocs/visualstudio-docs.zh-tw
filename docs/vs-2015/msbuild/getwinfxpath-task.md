@@ -19,22 +19,21 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3587cb1308c5d85cebc57f759ab488cb205cddf0
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: da32f0bfce9edf652e19df6b68bc51ed92624d80
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54778895"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65699030"
 ---
 # <a name="getwinfxpath-task"></a>GetWinFXPath 工作
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 <xref:Microsoft.Build.Tasks.Windows.GetWinFXPath> 工作會傳回目前 [!INCLUDE[TLA#tla_winfx](../includes/tlasharptla-winfx-md.md)] 執行階段的目錄。  
   
 ## <a name="task-parameters"></a>工作參數  
   
-|參數|描述|  
+|參數|說明|  
 |---------------|-----------------|  
 |`WinFXPath`|選擇性的 **String** 輸出參數。<br /><br /> 指定 [!INCLUDE[TLA2#tla_winfx](../includes/tla2sharptla-winfx-md.md)] 執行階段的實際路徑。|  
 |`WinFXNativePath`|必要的 **String** 參數。<br /><br /> 指定原生 [!INCLUDE[TLA2#tla_titlewinfx](../includes/tla2sharptla-titlewinfx-md.md)] 執行階段的路徑。|  
@@ -65,4 +64,4 @@ ms.locfileid: "54778895"
  [工作參考](../msbuild/wpf-msbuild-task-reference.md)   
  [MSBuild 參考](../msbuild/msbuild-reference.md)   
  [工作參考](../msbuild/msbuild-task-reference.md)   
- [建置 WPF 應用程式 (WPF)](http://msdn.microsoft.com/library/a58696fd-bdad-4b55-9759-136dfdf8b91c)
+ [建置 WPF 應用程式 (WPF)](https://msdn.microsoft.com/library/a58696fd-bdad-4b55-9759-136dfdf8b91c)

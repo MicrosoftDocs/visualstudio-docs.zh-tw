@@ -5,20 +5,20 @@ ms.topic: conceptual
 helpviewer_keywords:
 - VSCT files, designing
 ms.assetid: bb87a322-bac4-4258-92bc-9a876f05d653
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a833478a8dec3b9fe82b22295482fed6f5562d14
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: bc088ac5c534e77de2aae919019396ccf2c344e2
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56641542"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66312109"
 ---
 # <a name="design-xml-command-table-vsct-files"></a>設計 XML 命令表檔案 (.vsct)
-XML 命令資料表 (*.vsct*) 檔案描述的版面配置和外觀 VSPackage 的命令項目。 命令的項目包括按鈕、 下拉式方塊、 功能表、 工具列和命令項目的群組。 本文說明 XML 命令表檔案、 它們如何影響命令的項目和功能表，以及如何加以建立。
+XML 命令資料表 ( *.vsct*) 檔案描述的版面配置和外觀 VSPackage 的命令項目。 命令的項目包括按鈕、 下拉式方塊、 功能表、 工具列和命令項目的群組。 本文說明 XML 命令表檔案、 它們如何影響命令的項目和功能表，以及如何加以建立。
 
 ## <a name="commands-menus-groups-and-the-vsct-file"></a>命令、 功能表、 群組和.vsct 檔
  *.Vsct*周圍命令、 功能表和命令群組來組織檔案。 在 XML 標記 *.vsct*檔案的代表每個項目，以及其他相關聯的項目，例如命令按鈕、 命令位置與點陣圖。
@@ -30,13 +30,13 @@ XML 命令資料表 (*.vsct*) 檔案描述的版面配置和外觀 VSPackage 的
 ## <a name="differences-between-ctc-and-vsct-files"></a>.Ctc 和.vsct 檔之間的差異
  雖然在標記的 XML 背後的意義 *.vsct*檔案會與這些標記中現在已被取代相同 *.ctc*檔案格式，其實作會有點不同：
 
-- 新 **\<extern >** 標記是您參考其他 *.h*檔案進行編譯，例如那些檔案進行[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]工具列。
+- 新 **\<extern>** 標記是您參考其他 *.h*檔案進行編譯，例如那些檔案進行[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]工具列。
 
-- 雖然 *.vsct*檔案支援 **/include**陳述式，作為 *.ctc*檔案，也提供新**\<匯入 >** 項目。 差異在於， **/include**帶入*所有*的資訊，而**\<匯入 >** 帶入只有名稱。
+- 雖然 *.vsct*檔案支援 **/include**陳述式，作為 *.ctc*檔案，也提供新 **\<匯入>** 項目。 差異在於， **/include**帶入*所有*的資訊，而 **\<匯入>** 帶入只有名稱。
 
-- 雖然 *.ctc*檔案需要您在其中定義您的前置處理器指示詞的標頭檔，並不需要 *.vsct*檔案。 相反地，將您的指示詞放在符號表中，位於**\<符號 >** 項目，位於底部 *.vsct*檔案。
+- 雖然 *.ctc*檔案需要您在其中定義您的前置處理器指示詞的標頭檔，並不需要 *.vsct*檔案。 相反地，將您的指示詞放在符號表中，位於 **\<符號>** 項目，位於底部 *.vsct*檔案。
 
-- *.vsct*檔案的功能**\<註釋 >** 標記，可讓您內嵌任何您喜歡，例如資訊或甚至是圖片的資訊。
+- *.vsct*檔案的功能 **\<註釋>** 標記，可讓您內嵌任何您喜歡，例如資訊或甚至是圖片的資訊。
 
 - 值會儲存為項目上的屬性。
 
@@ -98,19 +98,19 @@ XML 命令資料表 (*.vsct*) 檔案描述的版面配置和外觀 VSPackage 的
 ## <a name="vsct-file-design-guidelines"></a>.vsct 檔的設計指導方針
  已成功設計 *.vsct*檔案，請遵循下列指導方針。
 
--   命令可以放置群組中僅限、 群組只能置於功能表和功能表可以放置只在群組中。 只有功能表會實際顯示在 IDE 中，群組和命令不是。
+- 命令可以放置群組中僅限、 群組只能置於功能表和功能表可以放置只在群組中。 只有功能表會實際顯示在 IDE 中，群組和命令不是。
 
--   子功能表不能直接指派至 功能表中，但必須指派給群組，依序指派給一個功能表。
+- 子功能表不能直接指派至 功能表中，但必須指派給群組，依序指派給一個功能表。
 
--   命令的子功能表和群組，都可以指派給一個父群組或使用其定義的指示詞的父欄位的功能表。
+- 命令的子功能表和群組，都可以指派給一個父群組或使用其定義的指示詞的父欄位的功能表。
 
--   組織只會透過指示詞中的父欄位的命令資料表有相當大的限制。 定義物件的指示詞可以採用只有一個父引數。
+- 組織只會透過指示詞中的父欄位的命令資料表有相當大的限制。 定義物件的指示詞可以採用只有一個父引數。
 
--   重複使用的命令、 群組或子功能表需要使用新的指示詞，以建立物件的新執行個體有其專屬`GUID:ID`組。
+- 重複使用的命令、 群組或子功能表需要使用新的指示詞，以建立物件的新執行個體有其專屬`GUID:ID`組。
 
--   每個`GUID:ID`組必須是唯一的。 重複使用的命令，例如放在功能表上，工具列，或在內容功能表上，由<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>介面。
+- 每個`GUID:ID`組必須是唯一的。 重複使用的命令，例如放在功能表上，工具列，或在內容功能表上，由<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>介面。
 
--   命令和子功能表也可以指派多個群組，並使用多個功能表指派給群組[Commands 元素](../../extensibility/commands-element.md)。
+- 命令和子功能表也可以指派多個群組，並使用多個功能表指派給群組[Commands 元素](../../extensibility/commands-element.md)。
 
 ## <a name="vsct-file-notes"></a>.vsct 檔案資訊
  如果您進行任何變更 *.vsct*檔案您同時進行編譯，並且將它放在原生的附屬 DLL 之後，您應該執行**devenv.exe /setup /nosetupvstemplates**。 執行是強制的實驗性的登錄，以可重新讀取和描述的內部資料庫中指定的 VSPackage 資源[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]重建。

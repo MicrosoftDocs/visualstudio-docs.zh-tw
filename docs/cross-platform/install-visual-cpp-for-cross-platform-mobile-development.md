@@ -12,12 +12,12 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: f24e3460cb1298a36d0365781aa82cf55d8478d3
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 261d26307a212fa44506b21caadf4b7351453e06
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57983321"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66261086"
 ---
 # <a name="install-cross-platform-mobile-development-with-c"></a>使用 C++ 來安裝跨平台行動裝置應用程式開發
 
@@ -74,7 +74,7 @@ Visual Studio Community、Professional 及 Enterprise 版本中都有提供「�
 1. 開啟 Visual Studio。
 
 > [!NOTE]
-> 如果您使用 Visual Studio 2015，請參閱[安裝適用於跨平台行動裝置應用程式開發的 Visual C++ (Visual Studio 2015)](/cross-platform/install-visual-cpp-for-cross-platform-mobile-development?view=vs-2015)
+> 如果您使用 Visual Studio 2015，請參閱[安裝適用於跨平台行動裝置應用程式開發的 Visual C++ (Visual Studio 2015)](install-visual-cpp-for-cross-platform-mobile-development.md?view=vs-2015)
 
 ## <a name="install-tools-for-ios"></a>Install tools for iOS
 

@@ -1,14 +1,9 @@
 ---
-title: DataKind |Microsoft Docs
-ms.custom: ''
+title: DataKind | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: b64be708-22d6-4360-99e7-8f4e6b196de7
 caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 93c67b0199524072bf45558dc1713c760567495c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: a6a72d1093bc8acd9aae788ff357aee2efeb9e52
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51760475"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68197627"
 ---
 # <a name="datakind"></a>DataKind
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -87,6 +82,3 @@ enum DataKind { 
 ## <a name="see-also"></a>另請參閱  
  [列舉和結構](../../debugger/debug-interface-access/enumerations-and-structures.md)   
  [IDiaSymbol::get_dataKind](../../debugger/debug-interface-access/idiasymbol-get-datakind.md)
-
-
-

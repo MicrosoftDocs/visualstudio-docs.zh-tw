@@ -14,17 +14,16 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b1a04dce73dbf2551b51f2395b3512e62daf3766
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 537b3f45dcf22dcc766b9902d20bf97af24b3c9d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54788186"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65675503"
 ---
 # <a name="watch-command"></a>Watch 命令
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 建立並開啟 [監看式]  視窗的指定執行個體。 您可以使用 [監看式] 視窗來計算變數、運算式和暫存器的值，以編輯這些值，以及儲存結果。  
   
 ## <a name="syntax"></a>語法  
@@ -48,8 +47,8 @@ Debug.Watch[index]
   
 ## <a name="see-also"></a>請參閱  
  [[自動變數] 和 [區域變數] 視窗](../../debugger/autos-and-locals-windows.md)   
- [如何：編輯變數視窗中的值](http://msdn.microsoft.com/library/36f464ab-c900-4c0b-9ab3-557b3d9cdab5)   
- [如何：使用快速監看式對話方塊](http://msdn.microsoft.com/library/ffaee1dd-e5ce-4ef2-9401-d28329398867)   
+ [如何：編輯變數視窗中的值](https://msdn.microsoft.com/library/36f464ab-c900-4c0b-9ab3-557b3d9cdab5)   
+ [如何：使用快速監看式對話方塊](https://msdn.microsoft.com/library/ffaee1dd-e5ce-4ef2-9401-d28329398867)   
  [Visual Studio 命令](../../ide/reference/visual-studio-commands.md)   
  [命令視窗](../../ide/reference/command-window.md)   
  [尋找/命令方塊](../../ide/find-command-box.md)   

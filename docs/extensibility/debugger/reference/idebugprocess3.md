@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProcess3 interface
 ms.assetid: 7bd6b952-cf34-4e66-b8f6-d472dac3748f
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 979ca1b0422cf3a333164570aec0a0b0dee39960
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 8db169a06864fad24ef7e6ce4c2d188e2a88ef1d
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56693642"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66313851"
 ---
 # <a name="idebugprocess3"></a>IDebugProcess3
 這個介面會表示執行中處理序和其程式。 這個介面是否存在，在數種方法來取代[IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)介面。 它可讓控制程序中的所有程式。
 
 > [!NOTE]
->  [繼續](../../../extensibility/debugger/reference/idebugprogram2-continue.md)， [Execute](../../../extensibility/debugger/reference/idebugprogram2-execute.md)，以及[步驟](../../../extensibility/debugger/reference/idebugprogram2-step.md)方法已被取代，並且無法再使用。 使用上的對應方法`IDebugProcess3`改為介面。
+> [繼續](../../../extensibility/debugger/reference/idebugprogram2-continue.md)， [Execute](../../../extensibility/debugger/reference/idebugprogram2-execute.md)，以及[步驟](../../../extensibility/debugger/reference/idebugprogram2-step.md)方法已被取代，並且無法再使用。 使用上的對應方法`IDebugProcess3`改為介面。
 
 ## <a name="syntax"></a>語法
 

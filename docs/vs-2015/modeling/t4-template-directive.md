@@ -1,23 +1,20 @@
 ---
 title: T4 範本指示詞 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: 2b0a8e04-6fee-4c6c-b086-e49fc728a3ed
 caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: dcd11416bc067acaab8855b51969c7e1068e2c97
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 38831d0f647ce423dc62fb51823a6757a1ac0872
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49248218"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695882"
 ---
 # <a name="t4-template-directive"></a>T4 範本指示詞
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +36,7 @@ ms.locfileid: "49248218"
  `compilerOptions="optimize+"`  
   
  有效值：  
- 任何有效的編譯器選項。 如需詳細資訊，請參閱 < [C# 編譯器選項依分類列出](http://msdn.microsoft.com/library/96437ecc-6502-4cd3-b070-e9386a298e83)並[Visual Basic 編譯器依分類列出的選項](http://msdn.microsoft.com/library/fbe36f7a-7cfa-4f77-a8d4-2be5958568e3)。  
+ 任何有效的編譯器選項。 如需詳細資訊，請參閱 < [C# 編譯器選項依分類列出](https://msdn.microsoft.com/library/96437ecc-6502-4cd3-b070-e9386a298e83)並[Visual Basic 編譯器依分類列出的選項](https://msdn.microsoft.com/library/fbe36f7a-7cfa-4f77-a8d4-2be5958568e3)。  
   
  忽略執行階段 (前置處理過的) 範本。  
   
@@ -52,13 +49,14 @@ ms.locfileid: "49248218"
  有效值：  
  "" (不因文化特性而異)，此為預設值。  
   
- 以 xx-XX 字串形式表示的文化特性。 例如，en-US、ja-JP、de-CH、de-DE。 如需詳細資訊，請參閱<xref:System.Globalization.CultureInfo?displayProperty=fullName>。  
+ 以 xx-XX 字串形式表示的文化特性。 例如，en-US、ja-JP、de-CH、de-DE。 如需詳細資訊，請參閱 <xref:System.Globalization.CultureInfo?displayProperty=fullName>。  
   
  culture 屬性會指定當運算式區塊轉換為文字時所要使用的文化特性。  
   
 ## <a name="debug-attribute"></a>debug 屬性  
  範例：  
- ```  
+
+```  
 debug="true"  
 ```  
   
@@ -73,7 +71,8 @@ debug="true"
   
 ## <a name="hostspecific-attribute"></a>hostspecific 屬性  
  範例：  
- ```  
+
+```  
 hostspecific="true"  
 ```  
   
@@ -84,7 +83,7 @@ hostspecific="true"
   
  由於這個屬性的類型依主應用程式的類型而定，因此只有在撰寫僅限搭配特定主應用程式使用的文字範本時才有用處。 它會適用於[設計階段範本](../modeling/design-time-code-generation-by-using-t4-text-templates.md)，而非[執行階段範本](../modeling/run-time-text-generation-with-t4-text-templates.md)。  
   
- 當 `hostspecific` 為 `true` 且您正在使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 時，可以將 `this.Host` 的類型轉換為 IServiceProvider 來存取 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的功能。 您也可以使用 `Host.ResolvePath(filename)` 取得專案中檔案的絕對路徑。 例如:   
+ 當 `hostspecific` 為 `true` 且您正在使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 時，可以將 `this.Host` 的類型轉換為 IServiceProvider 來存取 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的功能。 您也可以使用 `Host.ResolvePath(filename)` 取得專案中檔案的絕對路徑。 例如：  
   
 ```csharp  
 <#@ template debug="false" hostspecific="true" language="C#" #>  
@@ -113,13 +112,13 @@ Content of myFile is:
  `language="VB"`  
   
  有效值：  
- `C#` (預設值)  
+ `C#` (預設)  
   
  `VB`  
   
  [語言] 屬性指定的語言 ([!INCLUDE[vbprvb](../includes/vbprvb-md.md)]或[!INCLUDE[csprcs](../includes/csprcs-md.md)]) 要用於陳述式和運算式區塊中的原始程式碼。 從中產生輸出的中繼程式碼檔會使用這個語言。 這個語言與範本產生的語言無關，它可以是任何種類的文字。  
   
- 例如:   
+ 例如：  
   
 ```vb  
 <#@ template language="VB" #>  
@@ -147,7 +146,8 @@ Squares of numbers:
  更典型的是，您會將另一個前置處理過的範本指定為基底類別。 基底範本提供通用的文字區塊，可以與衍生之範本的文字相互交錯。 您可以使用 `<#+ ... #>` 類別功能區塊，以定義包含文字片段的方法。 例如，您可以在基底範本中放置輸出文字的架構，提供可在衍生之範本中被覆寫的虛擬方法：  
   
  執行階段 (前置處理過的) 文字範本 BaseTemplate.tt：  
- ```scr  
+
+```scr  
 This is the common header.  
 <#   
   SpecificFragment1();   
@@ -166,7 +166,8 @@ This is the common footer.
 ```  
   
  執行階段 (前置處理過的) 文字範本 DerivedTemplate1.tt：  
- ```csharp  
+
+```csharp  
 <#@ template language="C#" inherits="BaseTemplate" #>  
 <#   
   // Run the base template:  
@@ -191,12 +192,14 @@ protected override void SpecificFragment2()
 ```  
   
  用來叫用 DerivedTemplate1 的應用程式程式碼：  
- ```csharp  
+
+```csharp  
 Console.WriteLine(new DerivedTemplate().TransformText());  
 ```  
   
  產生的輸出：  
- ```  
+
+```  
 This is the common header.  
    Fragment 1 for DerivedTemplate1  
 A common central text.  
@@ -209,7 +212,7 @@ This is the common footer.
  您也可以將一般手寫的類別當做基底類別。 基底類別必須提供衍生類別所用的方法。  
   
 > [!WARNING]
->  如果您同時使用 `inherits` 和 `hostspecific` 屬性，請在衍生類別中指定 hostspecific="trueFromBase"，在基底類別中指定 host="true"。 這可避免在產生的程式碼中出現 `Host` 屬性的雙重定義。  
+> 如果您同時使用 `inherits` 和 `hostspecific` 屬性，請在衍生類別中指定 hostspecific="trueFromBase"，在基底類別中指定 host="true"。 這可避免在產生的程式碼中出現 `Host` 屬性的雙重定義。  
   
 ### <a name="inheritance-in-a-design-time-text-template"></a>設計階段文字範本中的繼承  
  設計階段文字範本時的檔案，即**自訂工具**設為**TextTemplatingFileGenerator**。 這種範本會為形成 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 專案之一部分的程式碼或文字產生輸出檔。 為產生輸出檔，會先將範本轉譯為中繼程式碼檔，後者通常不會顯示出來。 `inherits` 屬性會為這個中繼程式碼指定基底類別。  
@@ -223,7 +226,7 @@ This is the common footer.
  `linePragmas="false"`  
   
  有效值：  
- `true` (預設值)  
+ `true` (預設)  
   
  `false`  
   
@@ -236,11 +239,8 @@ This is the common footer.
  `visibility="internal"`  
   
  有效值：  
- `public` (預設值)  
+ `public` (預設)  
   
  `internal`  
   
  在執行階段文字範本中，這個屬性會設定所產生之類別的可視性屬性。 根據預設，類別是您的程式碼公開 API 的一部分，不過，您可以藉由設定 `visibility="internal"` 來確認只有您的程式碼可以使用文字產生的類別。
-
-
-

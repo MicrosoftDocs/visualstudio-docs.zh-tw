@@ -2,15 +2,15 @@
 title: 已連線的服務
 description: 從 Visual Studio for Mac 內將 Azure 資料儲存體、驗證及推播通知新增至行動應用程式
 ms.assetid: 41CB62FF-0F39-4CE8-8917-6A77F058719F
-author: conceptdev
-ms.author: crdun
+author: sayedihashimi
+ms.author: sayedha
 ms.date: 11/06/2018
-ms.openlocfilehash: 7f3cf8ce9e82310a8fe2f6ab9542d3d575a30f5b
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: 34a4344be0e48d41829a7bf7df660a91d4f897b6
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56953978"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67693081"
 ---
 # <a name="connected-services-walkthrough"></a>已連線的服務逐步解說
 
@@ -18,13 +18,13 @@ ms.locfileid: "56953978"
 
 本逐步解說將示範如何新增 Azure 後端服務，以將雲端資料儲存體、驗證及推播通知新增至跨平台 Xamarin.Forms 可攜式類別庫 (PCL) 應用程式。
 
-1. 從按兩下方案中的 [已連線的服務] 節點開始著手，這會顯示 [服務資源庫]。
-  這是一份應用程式類型可用的所有服務清單。 按一下某個服務 (例如 [採用 Azure App Service 的行動後端]) 來選取該服務。
+1. 從按兩下方案中的 [已連線的服務]  節點開始著手，這會顯示 [服務資源庫]  。
+  這是一份應用程式類型可用的所有服務清單。 按一下某個服務 (例如 [採用 Azure App Service 的行動後端]  ) 來選取該服務。
 
     [![Visual Studio for Mac 中的 已連線的服務 節點](media/connected-services-image001-sml.png "Visual Studio for Mac 中的 [已連線的服務] 節點")](media/connected-services-image001.png#lightbox)
 
 2. [服務詳細資料] 頁面會有該服務的描述，以及要安裝的相依性。
-  按一下 [新增] 按鈕以將相依性新增至應用程式：
+  按一下 [新增]  按鈕以將相依性新增至應用程式：
 
     [![採用 Azure 的行動後端](media/connected-services-image002-sml.png "採用 Azure 的行動後端")](media/connected-services-image002.png#lightbox)
 
@@ -33,7 +33,7 @@ ms.locfileid: "56953978"
 
     [![勾選所有應該參考服務的專案](media/connected-services-image003-sml.png "勾選所有應該參考服務的專案")](media/connected-services-image003.png#lightbox)
 
-4. 在 NuGet 的 [接受授權] 對話方塊上，選擇 [接受]。
+4. 在 NuGet 的 [接受授權]  對話方塊上，選擇 [接受]  。
   可能有兩個要接受的對話方塊，一個用於 MobileClient 和相依性，另一個用於離線資料同步處理所需的 SQLiteStore：
 
     [![接受授權合約](media/connected-services-image004-sml.png "接受授權合約")](media/connected-services-image004.png#lightbox)
@@ -47,7 +47,7 @@ ms.locfileid: "56953978"
 
     [![從清單中選取應用程式服務](media/connected-services-image006-sml.png "從清單中選取應用程式服務")](media/connected-services-image006.png#lightbox)
 
-    如果沒有列出任何服務，請按一下 [新增] 按鈕 (請參閱步驟 9)。
+    如果沒有列出任何服務，請按一下 [新增]  按鈕 (請參閱步驟 9)。
 
 7. 將 `MobileServiceClient` 的範本程式碼複製到 PCL。 在只有一個檔案執行個體的情況下，檔案位置不重要。
   建議的方法是建立一個 `AzureService` 類別來處理所有 Azure 互動和使用 `MobileServiceClient`：
@@ -59,7 +59,7 @@ ms.locfileid: "56953978"
     [![檢閱後續步驟指示](media/connected-services-image008-sml.png "檢閱後續步驟指示")](media/connected-services-image008.png#lightbox)
 
 9. 如果您沒有任何現有的應用程式服務，則可以從 Visual Studio for Mac 內建立新的服務。
-  按一下服務清單左下角的 [新增] 按鈕，以開啟 [新增 App Service] 對話方塊：
+  按一下服務清單左下角的 [新增]  按鈕，以開啟 [新增 App Service]  對話方塊：
 
     [![在 Visual Studio for Mac 中建立新的應用程式服務](media/connected-services-image009-sml.png "在 Visual Studio for Mac 中建立新的應用程式服務")](media/connected-services-image009.png#lightbox)
 

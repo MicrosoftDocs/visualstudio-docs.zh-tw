@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 457051fa9701aac81c92389d6d33e125f5064f1e
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: bbe62c830b7cd3454adbde8b1d3081af11ef1a6b
+ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57873408"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65841655"
 ---
 # <a name="ca1725-parameter-names-should-match-base-declaration"></a>CA1725:參數名稱應該符合基底類型的宣告
 
@@ -52,7 +52,7 @@ ms.locfileid: "57873408"
 
 如果您執行這項規則，從[FxCop 分析器](install-fxcop-analyzers.md)（而不是透過靜態程式碼分析），您可以設定的哪些部分您程式碼基底上執行這項規則，根據其存取範圍。 比方說，若要指定執行規則時，應該只針對非公用 API 介面，將下列索引鍵 / 值組新增至專案中的.editorconfig 檔案：
 
-```
+```ini
 dotnet_code_quality.ca1725.api_surface = private, internal
 ```
 

@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEngine3::SetSymbolPath
 ms.assetid: 47b48f84-8a96-401f-84df-0baa8a96d26e
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3799043b82a4e0d0993e7de255f69592c6b89534
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: da2318e9e2e30ea4cf0dce4bef6abd03aef2b0d0
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56702196"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66352464"
 ---
 # <a name="idebugengine3setsymbolpath"></a>IDebugEngine3::SetSymbolPath
 設定要搜尋偵錯符號的路徑。
@@ -40,13 +43,16 @@ int SetSymbolPath(
 );
 ```
 
-#### <a name="parameters"></a>參數
+## <a name="parameters"></a>參數
 
-|參數|描述|
-|---------------|-----------------|
-|`szSymbolSearchPath`|[in]包含的符號搜尋路徑的字串。 如需詳細資訊，請參閱 < 備註 >。 不可以是 null。|
-|`szSymbolCachePath`|[in]字串，包含可快取符號的本機路徑。 不可以是 null。|
-|`Flags`|[in]不使用;一律設為 0。|
+`szSymbolSearchPath`\
+[in]包含的符號搜尋路徑的字串。 如需詳細資訊，請參閱 < 備註 >。 不可以是 null。
+
+`szSymbolCachePath`\
+[in]字串，包含可快取符號的本機路徑。 不可以是 null。
+
+`Flags`\
+[in]不使用;一律設為 0。
 
 ## <a name="return-value"></a>傳回值
  如果成功，會傳回 S_OK;否則會傳回錯誤碼。

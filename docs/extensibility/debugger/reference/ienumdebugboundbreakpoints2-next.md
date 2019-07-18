@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugBoundBreakpoints2::Next
 ms.assetid: cb3a249f-2282-4bdc-b6d8-a4ee4bfb8365
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 542acd97b39813633c1207d90217498dd6fa77b4
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 92de3edb5e0720654714555f6073c19561450c3c
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56690210"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66314180"
 ---
 # <a name="ienumdebugboundbreakpoints2next"></a>IEnumDebugBoundBreakpoints2::Next
 從列舉中傳回下的一個項目集。
@@ -40,18 +43,15 @@ int Next(
 );
 ```
 
-#### <a name="parameters"></a>參數
- `celt`
+## <a name="parameters"></a>參數
+`celt`\
+[in]若要擷取的元素數目。 也會指定的大小上限`rgelt`陣列。
 
- [in]若要擷取的元素數目。 也會指定的大小上限`rgelt`陣列。
+`rgelt`\
+[in、 out]陣列[IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)来填入的項目。
 
- `rgelt`
-
- [in、 out]陣列[IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)来填入的項目。
-
- `pceltFetched`
-
- [out]傳回的項目數中實際傳回`rgelt`。
+`pceltFetched`\
+[out]傳回的項目數中實際傳回`rgelt`。
 
 ## <a name="return-value"></a>傳回值
  如果成功，會傳回 `S_OK`。 傳回`S_FALSE`更少的項目要求的數目可能會傳回; 否則會傳回錯誤碼。

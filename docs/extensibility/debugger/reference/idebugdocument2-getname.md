@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugDocument2::GetName
 ms.assetid: 6f09ff09-b0cf-4472-8fc8-143991f0ceb1
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3f1ef243afd607a565e2c7a8e6f557f0b9906c86
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 31eddcc07adc181e179c3f3edba669fff85fa565
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56701013"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66310271"
 ---
 # <a name="idebugdocument2getname"></a>IDebugDocument2::GetName
 取得數種形式之一的文件的名稱。
@@ -38,14 +41,12 @@ int GetName( 
 );
 ```
 
-#### <a name="parameters"></a>參數
- `gnType`
+## <a name="parameters"></a>參數
+`gnType`\
+[in]值，以從[GETNAME_TYPE](../../../extensibility/debugger/reference/getname-type.md)列舉，決定要傳回名稱的類型。
 
- [in]值，以從[GETNAME_TYPE](../../../extensibility/debugger/reference/getname-type.md)列舉，決定要傳回名稱的類型。
-
- `pbstrFileName`
-
- [out]傳回字串，包含文件名稱。
+`pbstrFileName`\
+[out]傳回字串，包含文件名稱。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

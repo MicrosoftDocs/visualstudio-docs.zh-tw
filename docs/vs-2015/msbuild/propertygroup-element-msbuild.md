@@ -19,17 +19,16 @@ caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: fb3ae2ba566c42ef1cde10e4a758fe8f9698ed13
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 6590464b78d6b5452ce266d701aefc0f739185b3
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54772523"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59648153"
 ---
 # <a name="propertygroup-element-msbuild"></a>PropertyGroup 項目 (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 包含一組使用者定義的 [Property](../msbuild/property-element-msbuild.md) 項目。 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 專案中使用的每個 `Property` 項目都必須是 `PropertyGroup` 項目的子系。  
   
  \<Project>  
@@ -49,19 +48,19 @@ ms.locfileid: "54772523"
   
 ### <a name="attributes"></a>屬性  
   
-|屬性|描述|  
+|屬性|說明|  
 |---------------|-----------------|  
 |條件|選擇性屬性。<br /><br /> 要評估的條件。 如需詳細資訊，請參閱[條件](../msbuild/msbuild-conditions.md)。|  
   
 ### <a name="child-elements"></a>子元素  
   
-|元素|描述|  
+|元素|說明|  
 |-------------|-----------------|  
 |[Property](../msbuild/property-element-msbuild.md)|選擇性項目。<br /><br /> 使用者定義的屬性名稱，其中包含屬性值。 `PropertyGroup` 項目中可能有零或多個 *Property* 項目。|  
   
 ### <a name="parent-elements"></a>父項目  
   
-|元素|描述|  
+|元素|說明|  
 |-------------|-----------------|  
 |[專案](../msbuild/project-element-msbuild.md)|[!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 專案檔案的必要根項目。|  
   

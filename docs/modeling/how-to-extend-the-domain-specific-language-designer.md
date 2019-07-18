@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9fad34e853aee65f32d87145d1d0300495e07b9c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 85a4356837180d13428acf34636f28cca668a423
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55953993"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62993159"
 ---
 # <a name="how-to-extend-the-domain-specific-language-designer"></a>HOW TO：擴充特定領域語言設計工具
 
@@ -26,25 +26,23 @@ ms.locfileid: "55953993"
 
 ### <a name="to-create-a-dsl-designer-extension-solution"></a>若要建立的 DSL 設計工具擴充功能方案
 
-1.  建立新的專案使用類別庫專案範本。 在 **新的專案** 對話方塊中，按一下**Visual C#** ，然後在中間視窗中的，按一下 **類別庫**。
+1. 建立新的專案使用**類別庫**專案範本。 這個專案會包含您的擴充功能的程式碼。
 
-     這個專案會包含您的擴充功能的程式碼。
-
-2.  建立新的專案使用 VSIX 專案範本。 在 **新的專案**對話方塊方塊中，展開**Visual C#**，按一下**擴充性**，，然後在中間視窗中選取**VSIX 專案**。
+2. 建立新**VSIX 專案**專案。
 
      選取 **加入至方案**。
 
-     在 VSIX 資訊清單編輯器中，開啟 Source.extension.vsixmanifest。
+     *Source.extension.vsixmanifest* VSIX 資訊清單編輯器中開啟。
 
-3.  上方的 [內容] 欄位中，按一下**加入內容**。
+3. 上方的 [內容] 欄位中，按一下**加入內容**。
 
-4.  中**加入內容** 對話方塊中，將**內容類型選取**來**MEF 元件**，並將**專案**您類別庫專案。
+4. 中**加入內容** 對話方塊中，將**內容類型選取**來**MEF 元件**，並將**專案**您類別庫專案。
 
-5.  按一下 **選取版本**並確定**Visual Studio Enterprise**已核取。
+5. 按一下 **選取版本**並確定**Visual Studio Enterprise**已核取。
 
-6.  請確定 VSIX 專案方案的啟始專案。
+6. 請確定 VSIX 專案方案的啟始專案。
 
-7.  在類別庫專案中，加入下列組件的參考：
+7. 在類別庫專案中，加入下列組件的參考：
 
      Microsoft.VisualStudio.CoreUtility
 
@@ -70,17 +68,17 @@ ms.locfileid: "55953993"
 
 若要為主要的 Visual Studio 中，以及其他電腦，請部署延伸模組，請遵循下列步驟：
 
-1.  VSIX 安裝檔案，尋找 VSIX 專案中分類收納\\*\*\\\*.vsix
+1. VSIX 安裝檔案，尋找 VSIX 專案中分類收納\\*\*\\\*.vsix
 
-2.  這個檔案複製到目標電腦，並在 Windows 檔案總管 （或檔案總管） 中，按兩下它。
+2. 這個檔案複製到目標電腦，並在 Windows 檔案總管 （或檔案總管） 中，按兩下它。
 
      若要確認延伸模組已安裝 Visual Studio 延伸模組管理員隨即開啟。
 
 若要解除安裝擴充功能，請遵循下列步驟：
 
-1.  在 Visual Studio 中，在**工具**功能表上，按一下**延伸模組管理員**。
+1. 在 Visual Studio 中，在**工具**功能表上，按一下**延伸模組管理員**。
 
-2.  選取擴充功能，並將它刪除。
+2. 選取擴充功能，並將它刪除。
 
 ## <a name="add-a-shortcut-menu-command"></a>加入快顯功能表命令
 

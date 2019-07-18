@@ -1,25 +1,20 @@
 ---
-title: 逐步解說： 擷取圖形資訊 |Microsoft Docs
-ms.custom: ''
+title: 逐步解說：擷取圖形資訊 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 48f12f6e-57b4-48ec-a145-89fa71a42424
 caps.latest.revision: 22
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 2f419e80cec27807ba3bd7ac98f7fb7108a49377
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 9ebd0453347084d1662c6bc7837fc1e96f498fbd
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51802131"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68151463"
 ---
 # <a name="walkthrough-capturing-graphics-information"></a>逐步解說：擷取圖形資訊
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,24 +23,24 @@ ms.locfileid: "51802131"
   
  本逐步解說將說明下列工作：  
   
--   將圖形診斷連結至您的應用程式  
+- 將圖形診斷連結至您的應用程式  
   
--   擷取圖形資訊  
+- 擷取圖形資訊  
   
 ## <a name="capturing-graphics-information"></a>擷取圖形資訊  
  若要使用圖形診斷工具，您需要先擷取它所依賴的圖形資訊。 若要啟用擷取，請在應用程式啟動時，使用 [開始診斷]  命令將圖形診斷連結至您的應用程式。  
   
 #### <a name="to-enable-the-capture-of-graphics-information-after-a-project-or-solution-is-loaded"></a>允許在載入專案或方案後擷取圖形資訊  
   
-1.  在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]中，載入您要從中擷取圖形資訊之應用程式的專案或方案檔。  
+1. 在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]中，載入您要從中擷取圖形資訊之應用程式的專案或方案檔。  
   
-2.  在 [圖形診斷] 工具列上，選擇 [開始診斷] 。  
+2. 在 [圖形診斷] 工具列上，選擇 [開始診斷]  。  
   
 #### <a name="to-enable-the-capture-of-graphics-information-without-loading-a-project-or-solution"></a>允許在不載入專案或方案的情況下擷取圖形資訊  
   
-1. 在功能表列上，依序選擇 [檔案] 、[開啟舊檔] 及 [專案/方案] 。 [開啟專案]  對話方塊隨即出現。  
+1. 在功能表列上，依序選擇 [檔案]  、[開啟舊檔]  及 [專案/方案]  。 [開啟專案]  對話方塊隨即出現。  
   
-2. 指定您要從中擷取圖形資訊之應用程式的可執行檔 (而不是專案或方案檔)，然後選擇 [開啟] 。  
+2. 指定您要從中擷取圖形資訊之應用程式的可執行檔 (而不是專案或方案檔)，然後選擇 [開啟]  。  
   
 3. 在功能表列上，選擇 [ **偵錯**]、[ **圖形**]、[ **開始診斷**]。  
   
@@ -64,10 +59,7 @@ ms.locfileid: "51802131"
 ## <a name="next-steps"></a>後續步驟  
  本逐步解說示範如何手動擷取圖形資訊。 下一步是考慮此選項：  
   
--   了解如何使用圖形診斷工具分析擷取到的圖形資訊。 請參閱[概觀](../debugger/overview-of-visual-studio-graphics-diagnostics.md)。  
+- 了解如何使用圖形診斷工具分析擷取到的圖形資訊。 請參閱[概觀](../debugger/overview-of-visual-studio-graphics-diagnostics.md)。  
   
 ## <a name="see-also"></a>另請參閱  
  [Capturing Graphics Information](../debugger/capturing-graphics-information.md)
-
-
-

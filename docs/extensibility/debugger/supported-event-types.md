@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], supported events
 ms.assetid: a3c0386d-551e-4734-9a0c-368d1c2e6671
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d74448479fc71af493ef720586541d92d614b24f
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 9c4ee45e1a3a7efeb990fcb6f9073420a99dbe7c
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56696294"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66351097"
 ---
 # <a name="supported-event-types"></a>支援的事件類型
 Visual Studio 偵錯目前支援下列事件類型：
@@ -43,7 +43,7 @@ Visual Studio 偵錯目前支援下列事件類型：
     介面[IDebugBreakpointEvent2](../../extensibility/debugger/reference/idebugbreakpointevent2.md)並[IDebugExceptionEvent2](../../extensibility/debugger/reference/idebugexceptionevent2.md)會停止事件的範例。
 
   > [!NOTE]
-  >  不支援非同步停止事件。 它是傳送非同步停止事件中的錯誤。
+  > 不支援非同步停止事件。 它是傳送非同步停止事件中的錯誤。
 
 ## <a name="discussion"></a>討論
  事件的實際實作取決於您的德國的設計。 傳送每個事件的型別取決於其屬性，當您設計 DE 時設定。 比方說，可能會傳送一個 DE [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md)當做非同步事件，而另一個可能會將它傳送為停止事件。
@@ -51,7 +51,7 @@ Visual Studio 偵錯目前支援下列事件類型：
  下表指定哪些程式和執行緒的參數所需的事件，以及事件類型。 任何事件可以是同步的。 不必須要同步的任何事件。
 
 > [!NOTE]
->  [IDebugEngine2](../../extensibility/debugger/reference/idebugengine2.md)介面是必要的所有事件。
+> [IDebugEngine2](../../extensibility/debugger/reference/idebugengine2.md)介面是必要的所有事件。
 
 |Event - 事件|IDebugProgram2|IDebugThread2|停止事件|
 |-----------|--------------------|-------------------|---------------------|

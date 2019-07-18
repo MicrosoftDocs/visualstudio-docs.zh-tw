@@ -12,21 +12,32 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: a9b03a1d78e929ed3e21be086ea78ab09c334da6
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 5abd287533f2489346b41cdbae5526ed946aa746
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58069667"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62971065"
 ---
 # <a name="learn-to-use-the-code-editor"></a>了解如何使用程式碼編輯器
 
 在這個 10 分鐘的 Visual Studio 程式碼編輯器簡介中，我們會將程式碼新增至檔案，以了解 Visual Studio 讓撰寫、導覽和了解程式碼更加輕鬆的一些方式。
 
-> [!TIP]
-> 如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017)頁面免費進行安裝。
+::: moniker range="vs-2017"
 
-此文章假設您已熟悉 C#。 如果您不熟悉 C#，我們建議您先瀏覽教學課程 (例如[開始使用 Visual Studio 中的 C# 和 ASP.NET Core](tutorial-aspnet-core.md))。
+> [!TIP]
+> 如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)頁面免費進行安裝。
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+> [!TIP]
+> 如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019)頁面免費進行安裝。
+
+::: moniker-end
+
+本文假設您已熟悉 C#。 如果您不熟悉 C#，我們建議您先瀏覽教學課程 (例如[開始使用 Visual Studio 中的 C# 和 ASP.NET Core](tutorial-aspnet-core.md))。
 
 > [!TIP]
 > 若要繼續遵循這篇文章，請確定您已為 Visual Studio 選取 C# 設定。 如需選取整合式開發環境 (IDE) 的設定資訊，請參閱[選取環境設定](visual-studio-ide.md#select-environment-settings)。

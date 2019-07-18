@@ -19,17 +19,16 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 244c4009c69dfaf66116dd0e9d5acf3258fd6eb5
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 642a4996b9b7cb24ead5b58e8f3f98b8abf7657c
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54758590"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59650605"
 ---
 # <a name="choose-element-msbuild"></a>Choose 項目 (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 評估子項目，以選取一組要評估的 `ItemGroup` 項目和/或 `PropertyGroup` 項目。  
   
  \<Project>  
@@ -58,14 +57,14 @@ ms.locfileid: "54758590"
   
 ### <a name="child-elements"></a>子元素  
   
-|元素|描述|  
+|元素|說明|  
 |-------------|-----------------|  
 |[Otherwise](../msbuild/otherwise-element-msbuild.md)|選擇性項目。<br /><br /> 指定只有當所有 `When` 項目的條件評估為 `false` 時，才需評估的程式碼 `PropertyGroup` 和 `ItemGroup` 項目的區塊。 `Choose` 項目中可能有零或一個 `Otherwise` 項目，而且它必須是最後一個項目。|  
 |[When](../msbuild/when-element-msbuild.md)|必要項目。<br /><br /> 指定 `Choose` 項目可能要選取的程式碼區塊。 `Choose` 項目中可能有一或多個 `When` 項目。|  
   
 ### <a name="parent-elements"></a>父項目  
   
-|元素|描述|  
+|元素|說明|  
 |-------------|-----------------|  
 |[Otherwise](../msbuild/otherwise-element-msbuild.md)|指定如果所有 `When` 項目的條件評估為 `false`，才需執行的程式碼區塊。|  
 |[Project](../msbuild/project-element-msbuild.md)|[!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 專案檔案的必要根項目。|  

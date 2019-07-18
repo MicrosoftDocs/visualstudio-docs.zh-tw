@@ -12,12 +12,12 @@ ms.assetid: 3c4f7874-081a-4ec4-9510-4d6d7d863a11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 896a493701f0fff2c5ecf6057831e9092cd28a1d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 8444fa5910658ab92643b2110483efc059560674
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55925488"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62990661"
 ---
 # <a name="specify-virtual-network-types-in-a-load-test-scenario"></a>在負載測試情節中指定虛擬網路類型
 
@@ -41,17 +41,17 @@ ms.locfileid: "55925488"
 
 Visual Studio 會針對所有測試類型 (包括負載測試) 使用軟體實際網路模擬。 實際網路模擬會藉由直接操作網路封包，來模擬網路狀況。 實際網路模擬器可以使用可靠的實體連結 (如乙太網路)，來同時模擬有線和無線網路。 下列網路屬性會納入實際網路模擬中：
 
--   網路的來回時間 (延遲)
+- 網路的來回時間 (延遲)
 
--   可用的頻寬量
+- 可用的頻寬量
 
--   佇列行為
+- 佇列行為
 
--   封包遺失
+- 封包遺失
 
--   封包重新排序
+- 封包重新排序
 
--   錯誤傳用
+- 錯誤傳用
 
 實際網路模擬在根據 IP 位址或 TCP、UDP 和 ICMP 之類通訊協定來篩選網路封包上，也提供了相當的彈性。
 
@@ -59,30 +59,30 @@ Visual Studio 會針對所有測試類型 (包括負載測試) 使用軟體實�
 
 ## <a name="to-add-new-networks-to-a-scenario"></a>將新網路加入至情節
 
-1.  在針對情節指定網路混合的過程中，選擇 [新增]。
+1. 在針對情節指定網路混合的過程中，選擇 [新增]。
 
      新的網路項目就會加入至方格。
 
     > [!NOTE]
     > 若要顯示 [編輯網路混合] 對話方塊，請以滑鼠右鍵按一下現有情節，然後選擇 [編輯網路混合]。
 
-2.  在 [網路類型] 資料行中，選擇新項目的箭號。 選擇所需的網路類型。
+2. 在 [網路類型] 資料行中，選擇新項目的箭號。 選擇所需的網路類型。
 
-3.  (選擇性) 調整混合控制項以指定測試分佈。 如需詳細資訊，請參閱[關於混合控制項](../test/specify-virtual-network-types-in-a-load-test-scenario.md)。
+3. (選擇性) 調整混合控制項以指定測試分佈。 如需詳細資訊，請參閱[關於混合控制項](../test/specify-virtual-network-types-in-a-load-test-scenario.md)。
 
-4.  完成新增網路時，選擇 [確定]。
+4. 完成新增網路時，選擇 [確定]。
 
 ## <a name="to-remove-networks-from-a-scenario"></a>從情節移除網路
 
-1.  開啟負載測試。
+1. 開啟負載測試。
 
-2.  以滑鼠右鍵按一下您要移除網路的情節，並選擇 [編輯網路混合]。 [編輯網路混合] 對話方塊隨即顯示。
+2. 以滑鼠右鍵按一下您要移除網路的情節，並選擇 [編輯網路混合]。 [編輯網路混合] 對話方塊隨即顯示。
 
-3.  在方格中選取網路，然後選擇 [移除]。
+3. 在方格中選取網路，然後選擇 [移除]。
 
-4.  (選擇性) 調整混合控制項以指定測試分佈。 如需詳細資訊，請參閱[關於混合控制項](../test/specify-virtual-network-types-in-a-load-test-scenario.md)。
+4. (選擇性) 調整混合控制項以指定測試分佈。 如需詳細資訊，請參閱[關於混合控制項](../test/specify-virtual-network-types-in-a-load-test-scenario.md)。
 
-5.  完成移除網路後，選擇 [確定]。
+5. 完成移除網路後，選擇 [確定]。
 
 ## <a name="about-the-mix-control"></a>關於混合控制項
 

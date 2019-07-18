@@ -1,14 +1,9 @@
 ---
-title: IDebugProcessEx2::Attach |Microsoft Docs
-ms.custom: ''
+title: IDebugProcessEx2::Attach | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugProcessEx2::Attach
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: f3334ed7-39bf-4d02-a338-36f567b9b287
 caps.latest.revision: 16
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: daeef787ff380a17da2d5afa9c0f806f807b8598
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 1a62f21a6606466d5a5976a031b3c4cb6452206f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51745223"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68202811"
 ---
 # <a name="idebugprocessex2attach"></a>IDebugProcessEx2::Attach
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -55,4 +50,3 @@ int Attach(
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugProcessEx2](../../../extensibility/debugger/reference/idebugprocessex2.md)
-

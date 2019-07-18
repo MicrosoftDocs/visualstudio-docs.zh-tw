@@ -11,18 +11,18 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6bdfc2740094c807818922f09ca3fef0a21c9e1a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56705342"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62931284"
 ---
 # <a name="memory-tab-process-properties-dialog-box"></a>處理序屬性對話方塊、記憶體索引標籤
 使用**記憶體** 索引標籤以顯示處理程序如何使用記憶體。 若要顯示[處理序屬性對話方塊](../debugger/process-properties-dialog-box.md)，焦點移至[處理序檢視](../debugger/processes-view.md)視窗。 在樹狀目錄中，選取任何處理序節點，然後選擇**屬性**從**檢視**功能表。
 
  下列設定位於**記憶體** 索引標籤：
 
-|進入|說明|
+|進入|描述|
 |-----------|-----------------|
 |**虛擬位元組**|處理序正在使用虛擬位址空間的目前大小 （以位元組為單位）。 使用虛擬位址空間不一定表示對應使用到磁碟或主記憶體分頁。 不過，虛擬空間是有限的而且使用太多可能會限制程序能夠載入程式庫。|
 |**尖峰虛擬位元組**|最大的虛擬位址空間的程序的位元組數已使用一次。|

@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - MODULE_INFO structure
 ms.assetid: f2e06180-1ab3-4eb5-a428-7994cceb61b6
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0e3a11e368b6260d00f3f6ed0b19d94aa26bd31a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: db67710fd7ee71cddf1e7dbee030cb208a1de86c
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56683606"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66339114"
 ---
 # <a name="moduleinfo"></a>MODULE_INFO
 描述特定模組 （DLL、 EXE 或組件）。
@@ -59,29 +62,41 @@ public struct MODULE_INFO { 
 ```
 
 ## <a name="members"></a>成員
- dwValidFields A 中的旗標的組合[MODULE_INFO_FIELDS](../../../extensibility/debugger/reference/module-info-fields.md)列舉，指定哪些欄位都已填寫。
+ `dwValidFields`\
+ 從旗標的組合[MODULE_INFO_FIELDS](../../../extensibility/debugger/reference/module-info-fields.md)列舉，指定哪些欄位都已填寫。
 
- m_bstrName 模組名稱。
+ `m_bstrName`\
+ 模組名稱。
 
- m_bstrUrl 模組 URL。
+ `m_bstrUrl`\
+ 模組的 URL。
 
- m_bstrVersion 模組版本。
+ `m_bstrVersion`\
+ 模組版本。
 
- m_bstrDebugMessage 是選擇性的訊息相關模組，比方說，「 無法載入符號。 」
+ `m_bstrDebugMessage`\
+ 是選擇性的訊息相關模組，比方說，「 無法載入符號。 」
 
- m_addrLoadAddress 模組的載入位址。
+ `m_addrLoadAddress`\
+ 模組載入地址。
 
- m_addrPreferredLoadAddress 模組的慣用的載入位址。
+ `m_addrPreferredLoadAddress`\
+ 模組的慣用的載入位址。
 
- m_dwSize 模組大小。
+ `m_dwSize`\
+ 模組大小。
 
- m_dwLoadOrder 模組載入順序。
+ `m_dwLoadOrder`\
+ 模組的載入順序。
 
- m_TimeStamp 符號檔案上次修改時間。
+ `m_TimeStamp`\
+ 符號檔案上次修改時間。
 
- m_bstrUrlSymbolLocation 符號檔的位置 (例如，"。\\") 指定模組中。 用做為起始的位置來尋找符號的模組。
+ `m_bstrUrlSymbolLocation`\
+ 符號檔的位置 (例如，"。\\") 指定模組中。 用做為起始的位置來尋找符號的模組。
 
- m_dwModuleFlags A 中的旗標的組合[MODULE_FLAGS](../../../extensibility/debugger/reference/module-flags.md)說明模組的列舉型別。
+ `m_dwModuleFlags`\
+ 從旗標的組合[MODULE_FLAGS](../../../extensibility/debugger/reference/module-flags.md)說明模組的列舉型別。
 
 ## <a name="remarks"></a>備註
  此結構會傳遞至[GetInfo](../../../extensibility/debugger/reference/idebugmodule2-getinfo.md)填滿其中的方法。

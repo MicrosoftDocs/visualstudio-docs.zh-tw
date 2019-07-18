@@ -18,18 +18,18 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4a3fa4013a5fa9b3fb6ec17ee07277f5e4b7d996
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 58f4dd6df35b9101ed3cd2a45943efc8078229f8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56645143"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444357"
 ---
 # <a name="import-items-from-an-existing-sharepoint-site"></a>從現有的 SharePoint 網站匯入項目
   匯入 SharePoint 方案套件專案範本可讓您在新的 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint 方案中，重複使用來自現有 SharePoint 網站的項目，例如內容類型和欄位。 雖然您可以執行大部分匯入的方案而不需修改，仍有特定限制和問題需要考量，特別是您在匯入後修改任何項目的話。
 
 > [!NOTE]
->  若要匯入可重複使用的工作流程，請使用「匯入可重複使用的工作流程」專案範本。 [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)] [匯入可重複使用的工作流程的指導方針](../sharepoint/guidelines-for-importing-reusable-workflows.md)。
+> 若要匯入可重複使用的工作流程，請使用「匯入可重複使用的工作流程」專案範本。 [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)] [匯入可重複使用的工作流程的指導方針](../sharepoint/guidelines-for-importing-reusable-workflows.md)。
 
 ## <a name="supported-sharepoint-solutions"></a>支援的 SharePoint 方案
  [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)] 完全支援匯入在 [!INCLUDE[wss_14_short](../sharepoint/includes/wss-14-short-md.md)] 和 [!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)]中建立的方案。
@@ -119,9 +119,9 @@ ms.locfileid: "56645143"
 
  當您收到這個錯誤時，不會建立項目。 匯入的模組最常發生此問題。 若要避免這個問題，請執行下列作業：
 
--   當您在 **[加入新的專案]** 對話方塊輸入時，請使用專案的簡短名稱。
+- 當您在 **[加入新的專案]** 對話方塊輸入時，請使用專案的簡短名稱。
 
--   建立專案時，位置盡可能接近根資料夾，以縮短路徑。
+- 建立專案時，位置盡可能接近根資料夾，以縮短路徑。
 
 ## <a name="the-sharepointproductversion-attribute"></a>SharePointProductVersion 屬性
  如果您匯入在舊版 SharePoint 例如 [!INCLUDE[winshare3](../sharepoint/includes/winshare3-md.md)] 或 [!INCLUDE[offshare7](../sharepoint/includes/offshare7-md.md)]中建立的方案，請將封裝資訊清單中的 SharePointProductVersion 屬性值變更為 12.0，或是將指令碼管理員控制項插入所有匯入的網頁中，並保留 SharePointProductVersion 設為 14.0。 否則，匯入的 Web 表單不會顯示在 SharePoint 中。

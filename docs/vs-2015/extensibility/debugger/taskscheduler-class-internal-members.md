@@ -1,27 +1,22 @@
 ---
 title: TaskScheduler 類別-內部成員 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - TaskScheduler class [.NET Framework debug engines]
 - debug engines, TaskScheduler class [.NET Framework]
 ms.assetid: 87f1c969-0217-4464-8907-7609c1bf61d3
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 3a0f1306463abc9b8f025453f8b259014ba5de10
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 427a84b3dcda0471f5ec9d71883a5a8e859bb92d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51774896"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68176692"
 ---
 # <a name="taskscheduler-class---internal-members"></a>TaskScheduler 類別 - 內部成員
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -45,7 +40,7 @@ ms.locfileid: "51774896"
   
 ### <a name="methods"></a>方法  
   
-|名稱|描述|  
+|名稱|說明|  
 |----------|-----------------|  
 |[GetScheduledTasksForDebugger](../../extensibility/debugger/getscheduledtasksfordebugger-method.md)|擷取所有排定工作的陣列。|  
 |[GetTaskSchedulersForDebugger](../../extensibility/debugger/gettaskschedulersfordebugger-method.md)|擷取的所有陣列<xref:System.Threading.Tasks.TaskScheduler>目前使用中的物件。|  
@@ -55,4 +50,3 @@ ms.locfileid: "51774896"
 ## <a name="see-also"></a>另請參閱  
  <xref:System.Threading.Tasks.TaskScheduler?displayProperty=fullName>   
  [.NET Framework 適用的平行擴充內部資訊](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)
-

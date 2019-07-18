@@ -19,11 +19,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 287f906ab947f549748865899a5ced52e0c53562
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56693044"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62852753"
 ---
 # <a name="debugger-settings-and-preparation"></a>偵錯設定及準備
 本章節說明與偵錯工具相關的屬性設定，以及使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 偵錯工具偵錯程式時所需的準備。 如果您是在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中使用專案範本建立程式，這些設定會正確設定在偵錯組態中。
@@ -37,13 +37,13 @@ ms.locfileid: "56693044"
 
  [主控台專案](../debugger/debugging-preparation-console-projects.md)提供有關如何設定主控台專案偵錯的指示。
 
- [如何： 偵錯可執行檔不屬於 Visual Studio 方案](../debugger/how-to-debug-an-executable-not-part-of-a-visual-studio-solution.md)說明如何偵錯的可執行檔不會建立為 Visual Studio 專案的一部分。
+ [如何：偵錯可執行檔不屬於 Visual Studio 方案](../debugger/how-to-debug-an-executable-not-part-of-a-visual-studio-solution.md)說明如何偵錯的可執行檔不會建立為 Visual Studio 專案的一部分。
 
  [偵錯 64 位元應用程式](../debugger/debug-64-bit-applications.md)描述如何偵錯 64 位元應用程式。
 
- [如何： 指定.NET Framework 版本的偵錯](../debugger/how-to-specify-a-dotnet-framework-version-for-debugging.md)描述如何設定登錄機碼，指出偵錯工具要使用的版本。
+ [如何：指定.NET Framework 版本的偵錯](../debugger/how-to-specify-a-dotnet-framework-version-for-debugging.md)描述如何設定登錄機碼，指出偵錯工具要使用的版本。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [偵錯工具安全性](../debugger/debugger-security.md)
 - [Visual Studio 偵錯](../debugger/index.md)
 - [偵錯工具簡介](../debugger/debugger-feature-tour.md)

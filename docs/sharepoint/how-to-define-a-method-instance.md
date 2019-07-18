@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2f879f8367ad1b992300c9e5b1c8a2887e89205b
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 318744ec1a1a9214ce0385fc56fb1c0cf340339b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56608004"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62814107"
 ---
 # <a name="how-to-define-a-method-instance"></a>HOW TO：定義方法執行個體
   在模型中，您必須定義至少一個方法執行個體，針對每個方法。
@@ -29,15 +29,15 @@ ms.locfileid: "56608004"
 
 ### <a name="to-define-a-method-instance"></a>若要定義方法執行個體
 
-1.  在 [ **BDC 方法詳細資料**] 視窗中，展開方法的節點，然後再展開**執行個體**節點。
+1. 在 [ **BDC 方法詳細資料**] 視窗中，展開方法的節點，然後再展開**執行個體**節點。
 
-2.  在 **新增方法執行個體**清單中，選擇**建立搜尋執行個體**。
+2. 在 **新增方法執行個體**清單中，選擇**建立搜尋執行個體**。
 
      新的方法執行個體隨即出現在下方**執行個體**節點。
 
-3.  在功能表列上選擇 [**檢視** > **屬性] 視窗**。
+3. 在功能表列上選擇 [**檢視** > **屬性] 視窗**。
 
-4.  在 **屬性**視窗中，將方法執行個體的屬性。 如需有關每一個屬性的詳細資訊，請參閱 < [MethodInstance](http://go.microsoft.com/fwlink/?LinkID=169282)。
+4. 在 **屬性**視窗中，將方法執行個體的屬性。 如需有關每一個屬性的詳細資訊，請參閱 < [MethodInstance](http://go.microsoft.com/fwlink/?LinkID=169282)。
 
 ## <a name="see-also"></a>另請參閱
 - [BDC 模型設計工具概觀](../sharepoint/bdc-model-design-tools-overview.md)

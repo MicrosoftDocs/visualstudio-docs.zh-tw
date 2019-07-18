@@ -3,17 +3,17 @@ title: VSIX v3 中的 Ngen 支援 |Microsoft Docs
 ms.date: 11/09/2016
 ms.topic: conceptual
 ms.assetid: 1472e884-c74e-4c23-9d4a-6d8bdcac043b
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: eafa07afa26744e3c5be3e1fe3d588b2a43ebfd8
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 24f1b0a26875bbbf8dfc4ac7db1049f7309d9aa2
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56693293"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67891110"
 ---
 # <a name="ngen-support-in-vsix-v3"></a>VSIX v3 中的 Ngen 支援
 
@@ -37,7 +37,7 @@ ms.locfileid: "56693293"
 
 1. **Ngen** （布林值）-如果為 true，Visual Studio 安裝程式會 「 ngen"組件。
 2. **Ngen 應用程式**（字串）-Ngen 提供使用的應用程式的機會*app.config*檔案以解析組件相依性。 此值應該設定為應用程式其*app.config*您想要使用 （相對於 Visual Studio 安裝目錄中）。
-3. **Ngen 架構**（列舉）-原生方式編譯您的組件的架構。 選項包括：。 NotSpecified b。 X86 c. X64 d。 全部
+3. **Ngen 架構**（列舉）-原生方式編譯您的組件的架構。 選項包括：。 NotSpecified b。 X86 c。 X64 d。 All
 4. **Ngen 優先順序**（1 到 3 之間的整數）-Ngen 優先權層級已記錄在[Ngen.exe 優先權等級](/dotnet/framework/tools/ngen-exe-native-image-generator#priority-levels)。
 
 以下就來看看**屬性**作用中的視窗：
@@ -55,9 +55,10 @@ ms.locfileid: "56693293"
     <NgenArchitecture>X86</NgenArchitecture>
     <NgenPriority>2</NgenPriority>
 </ProjectReference>
- ```
+```
 
- >**注意：** 如果您想，您可以直接編輯.csproj 檔案。
+> [!NOTE]
+> 如果您想，您可以直接編輯.csproj 檔案。
 
 ## <a name="extra-information"></a>額外的資訊
 

@@ -1,6 +1,6 @@
 ---
 title: MSBuild 特殊字元 | Microsoft Docs
-ms.date: 11/04/2016
+ms.date: 06/12/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - escape characters
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8ad150a2eb9e27a9b2ce1e2e293d84ed956d8a7d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: cf312c1b73dbed58cc261c77a74555d00b0b04ba
+ms.sourcegitcommit: fd5a5b057df3d733f5224c305096907989811f85
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56603309"
+ms.lasthandoff: 06/18/2019
+ms.locfileid: "67195067"
 ---
 # <a name="msbuild-special-characters"></a>MSBuild 特殊字元
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 保留一些針對特定內容中特殊用法的字元。 如果您想要在保留這些字元的內容中按字面使用這些字元，只需要將其逸出即可。 比方說，星號僅在項目定義的 `Include` 和 `Exclude` 屬性，以及 `CreateItem` 呼叫中具有特殊意義。 如果您想要將這些內容之一的星號顯示為星號，則必須將其逸出。 而在其他內容中，您只要在想要顯示的位置鍵入星號即可。

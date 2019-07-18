@@ -1,14 +1,9 @@
 ---
 title: IDebugDocumentTextEvents2::onUpdateDocumentAttributes |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugDocumentTextEvents2::OnUpdateDocumentAttributes
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 31b7d151-9ce2-438e-b405-f8cc46b9f537
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 4a53149d6ec05834a7ca783dbd66b3baa03179a4
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 21d0a0f7edb669610e48d16f72ec730b3d204889
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51788235"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68148760"
 ---
 # <a name="idebugdocumenttextevents2onupdatedocumentattributes"></a>IDebugDocumentTextEvents2::onUpdateDocumentAttributes
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -53,4 +48,3 @@ int onUpdateDocumentAttributes( 
 ## <a name="see-also"></a>另請參閱  
  [IDebugDocumentTextEvents2](../../../extensibility/debugger/reference/idebugdocumenttextevents2.md)   
  [TEXT_DOC_ATTR_2](../../../extensibility/debugger/reference/text-doc-attr-2.md)
-

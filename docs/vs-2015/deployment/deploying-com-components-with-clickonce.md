@@ -1,14 +1,9 @@
 ---
 title: 使用 ClickOnce 部署 COM 元件 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -23,22 +18,22 @@ ms.assetid: 1a4c7f4c-7a41-45f2-9af4-8b1666469b89
 caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 8f4412c067ffd43a14a62cc722cf60ca1a883d9f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 282945f473f2799b92b24321383190ca38557cbc
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49820287"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422781"
 ---
 # <a name="deploying-com-components-with-clickonce"></a>使用 ClickOnce 部署 COM 元件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 部署舊版的 COM 元件一直是困難的工作。 元件必須全域註冊，因此可能會導致非預期的副作用之間重疊的應用程式。 這種情況通常不是問題在.NET Framework 應用程式中的因為都是完全隔離的應用程式或元件並排顯示相容。 Visual Studio 可讓您部署隔離的 COM 元件，在 Windows XP 或更高版本的作業系統上。  
   
- [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 提供簡單而安全的機制，可部署您的.NET 應用程式。 不過，如果您的應用程式會使用傳統的 COM 元件，您必須採取額外的步驟，才能將其部署。 本主題描述如何部署隔離的 COM 元件，並參考原生元件 （例如，從 Visual Basic 6.0 或 Visual c + +）。  
+ [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 提供簡單而安全的機制，可部署您的.NET 應用程式。 不過，如果您的應用程式會使用傳統的 COM 元件，您必須採取額外的步驟，才能將其部署。 本主題描述如何部署隔離的 COM 元件，並參考原生元件 (例如，從 Visual Basic 6.0 或視覺效果C++)。  
   
- 如需有關如何部署隔離的 COM 元件的詳細資訊，請參閱 「 使用簡化應用程式部署[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]和免註冊的 COM 」 在[ http://msdn.microsoft.com/msdnmag/issues/05/04/RegFreeCOM/default.aspx ](http://msdn.microsoft.com/msdnmag/issues/05/04/RegFreeCOM/default.aspx)。  
+ 如需有關如何部署隔離的 COM 元件的詳細資訊，請參閱 「 使用簡化應用程式部署[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]和免註冊的 COM 」 在[ https://msdn.microsoft.com/magazine/msdn-magazine-issues.aspx ](https://msdn.microsoft.com/magazine/msdn-magazine-issues.aspx)。  
   
 ## <a name="registration-free-com"></a>免註冊 COM  
  免註冊 COM 是一種新的技術來部署和啟動獨立的 COM 元件。 其運作方式是將所有元件的型別程式庫和註冊資訊通常安裝在系統登錄中的資訊清單的 XML 檔案放在與應用程式相同的資料夾中儲存。  
@@ -54,9 +49,9 @@ ms.locfileid: "49820287"
   
  有兩種方式，[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]部署 COM 元件：  
   
--   使用啟動載入器來部署您的 COM 元件;這適用於所有支援的平台。  
+- 使用啟動載入器來部署您的 COM 元件;這適用於所有支援的平台。  
   
--   使用原生元件隔離 (也稱為免註冊 COM) 部署。 不過，這會只適用於 Windows XP 或更高版本的作業系統。  
+- 使用原生元件隔離 (也稱為免註冊 COM) 部署。 不過，這會只適用於 Windows XP 或更高版本的作業系統。  
   
 ### <a name="example-of-isolating-and-deploying-a-simple-com-component"></a>隔離和部署簡單的 COM 元件的範例  
  為了示範免註冊 COM 元件的部署，此範例會參考使用 Visual Basic 6.0 中，建立外掛式原生 COM 元件的 Visual Basic 中建立以 Windows 為基礎的應用程式，並將它使用部署[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]。  
@@ -65,16 +60,16 @@ ms.locfileid: "49820287"
   
 ##### <a name="to-create-a-native-com-component"></a>若要建立原生的 COM 元件  
   
-1.  從使用 Visual Basic 6.0**檔案**功能表上，按一下**新增**，然後**專案**。  
+1. 從使用 Visual Basic 6.0**檔案**功能表上，按一下**新增**，然後**專案**。  
   
-2.  在 **新的專案**對話方塊中，選取**Visual Basic**節點，然後選取**ActiveX DLL**專案。 在 [名稱]  方塊中，輸入 `VB6Hello`。  
+2. 在 **新的專案**對話方塊中，選取**Visual Basic**節點，然後選取**ActiveX DLL**專案。 在 [名稱] 方塊中，輸入 `VB6Hello`。  
   
     > [!NOTE]
-    >  只有 ActiveX DLL 和 ActiveX 控制項的專案類型所支援的免註冊 COM;不支援 ActiveX EXE 和 ActiveX 文件的專案類型。  
+    > 只有 ActiveX DLL 和 ActiveX 控制項的專案類型所支援的免註冊 COM;不支援 ActiveX EXE 和 ActiveX 文件的專案類型。  
   
-3.  在 [**方案總管] 中**，按兩下**Class1.vb**開啟文字編輯器。  
+3. 在 [**方案總管] 中**，按兩下**Class1.vb**開啟文字編輯器。  
   
-4.  Class1.vb 中新增下列程式碼之後產生的程式碼`New`方法：  
+4. Class1.vb 中新增下列程式碼之後產生的程式碼`New`方法：  
   
     ```  
     Public Sub SayHello()  
@@ -82,10 +77,10 @@ ms.locfileid: "49820287"
     End Sub  
     ```  
   
-5.  建置元件。 從**建置**功能表上，按一下**建置方案**。  
+5. 建置元件。 從**建置**功能表上，按一下**建置方案**。  
   
 > [!NOTE]
->  免註冊 COM 支援只 Dll 和 COM 控制項專案類型。 您無法使用 Exe 免註冊 com。  
+> 免註冊 COM 支援只 Dll 和 COM 控制項專案類型。 您無法使用 Exe 免註冊 com。  
   
  現在您可以建立以 Windows 為基礎的應用程式，並加入 COM 元件的參考。  
   
@@ -93,7 +88,7 @@ ms.locfileid: "49820287"
   
 1. 使用 Visual Basic 中，從**檔案**功能表上，按一下**新增**，然後**專案**。  
   
-2. 在 **新的專案**對話方塊中，選取**Visual Basic**節點，然後選取**Windows 應用程式**。 在 [名稱]  方塊中，輸入 `RegFreeComDemo`。  
+2. 在 **新的專案**對話方塊中，選取**Visual Basic**節點，然後選取**Windows 應用程式**。 在 [名稱] 方塊中，輸入 `RegFreeComDemo`。  
   
 3. 在 **方案總管 中**，按一下**顯示所有檔案** 按鈕以顯示專案參考。  
   
@@ -133,7 +128,7 @@ ms.locfileid: "49820287"
    現在，您按下 f5 鍵，應用程式如預期般運作，，但是現在正在免註冊 com。 為了證明這點，請嘗試取消註冊 VB6Hello.dll 元件，並執行 Visual Studio IDE 外部 RegFreeComDemo1.exe。 按一下按鈕時，這次它仍能運作。 如果您暫時重新命名應用程式資訊清單，它會一次失敗。  
   
 > [!NOTE]
->  您可以暫時將它取消登錄，以模擬 COM 元件不存在。 開啟命令提示字元中，移至您的系統資料夾中，輸入`cd /d %windir%\system32`，然後輸入，以取消註冊元件`regsvr32 /u VB6Hello.dll`。 您可以再次註冊輸入`regsvr32 VB6Hello.dll`。  
+> 您可以暫時將它取消登錄，以模擬 COM 元件不存在。 開啟命令提示字元中，移至您的系統資料夾中，輸入`cd /d %windir%\system32`，然後輸入，以取消註冊元件`regsvr32 /u VB6Hello.dll`。 您可以再次註冊輸入`regsvr32 VB6Hello.dll`。  
   
  最後一個步驟是發佈應用程式使用[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]:  
   
@@ -145,12 +140,12 @@ ms.locfileid: "49820287"
   
 2. 在 [發行精靈] 中，請在本機電腦的磁碟，您可以在此存取，並檢查已發行的檔案中指定的位置。  
   
-3. 按一下 **完成**發行應用程式。  
+3. 按一下 [完成] 發佈應用程式。  
   
    如果您檢查已發行的檔案時，您會發現 sysmon.ocx 檔案包含。 控制項是控制項的完全隔離，此應用程式，這表示，如果終端使用者的電腦上有另一個應用程式使用不同版本，它不會干擾此應用程式。  
   
 ## <a name="referencing-native-assemblies"></a>參考原生組件  
- Visual Studio 支援原生的 Visual Basic 6.0 或 c + + 組件的參考這類參考，會呼叫原生參考。 您可以分辨是否參考為原生驗證其**檔案類型**屬性設定為**原生**或是**ActiveX**。  
+ Visual Studio 支援原生的 Visual Basic 6.0 的參考或C++組件;這類參考，會呼叫原生參考。 您可以分辨是否參考為原生驗證其**檔案類型**屬性設定為**原生**或是**ActiveX**。  
   
  若要新增的原生的參考，請使用**加入參考**命令，然後瀏覽至資訊清單。 某些元件會放置在 DLL 內的資訊清單。 在此情況下，您可以只選擇該 DLL 本身，而且 Visual Studio 會將它新增為原生參考如果它偵測到此元件包含內嵌的資訊清單。 Visual Studio 也會自動將任何相依的檔案或組件資訊清單中所列，如果它們是在與參考的元件相同的資料夾。  
   
@@ -171,7 +166,7 @@ ms.locfileid: "49820287"
   
 - 元件會管理系統，例如，列印多工緩衝處理器的裝置驅動程式的實體或虛擬裝置。  
   
-- 元件為資料存取可轉散發套件。 資料應用程式通常需要不同資料存取的可轉散發套件才能執行安裝。 您不應該嘗試隔離元件，例如 Microsoft ADO 資料控制項、 Microsoft OLE DB 或 Microsoft Data Access Components (MDAC)。 相反地，如果您的應用程式使用 MDAC 或 SQL Server Express，您應該將它們設為必要條件。請參閱[如何： 使用 ClickOnce 應用程式的安裝必要條件](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)。  
+- 元件為資料存取可轉散發套件。 資料應用程式通常需要不同資料存取的可轉散發套件才能執行安裝。 您不應該嘗試隔離元件，例如 Microsoft ADO 資料控制項、 Microsoft OLE DB 或 Microsoft Data Access Components (MDAC)。 相反地，如果您的應用程式使用 MDAC 或 SQL Server Express，您應該將它們設為必要條件。請參閱[How to:使用 ClickOnce 應用程式安裝必要條件](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)。  
   
   在某些情況下，它可能會重新設計免註冊 COM 元件的開發人員 如果這不可行，但您仍會建置，並發佈應用程式，透過使用啟動載入器的標準註冊配置相依於這些。 如需詳細資訊，請參閱 <<c0> [ 建立啟動載入器套件](../deployment/creating-bootstrapper-packages.md)。  
   
@@ -181,6 +176,3 @@ ms.locfileid: "49820287"
   
 ## <a name="see-also"></a>另請參閱  
  [ClickOnce 安全性和部署](../deployment/clickonce-security-and-deployment.md)
-
-
-

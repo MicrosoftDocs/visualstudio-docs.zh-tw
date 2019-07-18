@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugDisassemblyStream2::GetDocument
 ms.assetid: 3d039a44-ebaa-4413-ac18-7cfd92c408bd
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cfc50f104c5fc942794c2e421f5aee508662ea3b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: a043d5462ad206395cb7d70d28152c19a7df6460
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56709326"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66310424"
 ---
 # <a name="idebugdisassemblystream2getdocument"></a>IDebugDisassemblyStream2::GetDocument
 取得與這個輸入資料流相關聯的來源文件。
@@ -38,14 +41,12 @@ int GetDocument( 
 );
 ```
 
-#### <a name="parameters"></a>參數
- `bstrDocumentUrl`
+## <a name="parameters"></a>參數
+`bstrDocumentUrl`\
+[in]文件 URL。
 
- [in]文件 URL。
-
- `ppDocument`
-
- [out]傳回[IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)物件，表示文件。
+`ppDocument`\
+[out]傳回[IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)物件，表示文件。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

@@ -6,17 +6,17 @@ helpviewer_keywords:
 - properties, adding to a project item
 - project items, adding properties
 ms.assetid: d7a0f2b0-d427-4d49-9536-54edfb37c0f3
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a8d2a359d49102daf4c221632fd275f9ef06e324
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 02055e4e9f25f98193e8b27d42326589aef47762
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54963979"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66336110"
 ---
 # <a name="persist-the-property-of-a-project-item"></a>保存專案項目的屬性
 若要保存的屬性，您將新增至專案項目，例如來源檔案的作者。 您可以將屬性儲存在專案檔來執行這項操作。
@@ -27,7 +27,7 @@ ms.locfileid: "54963979"
 
 ## <a name="to-obtain-the-project-hierarchy-with-the-dte-object"></a>若要取得 DTE 物件的專案階層
 
-1.  下列程式碼加入 VSPackage 中：
+1. 下列程式碼加入 VSPackage 中：
 
     ```csharp
     EnvDTE.DTE dte = (EnvDTE.DTE)Package.GetGlobalService(typeof(EnvDTE.DTE));
@@ -41,7 +41,7 @@ ms.locfileid: "54963979"
 
 ## <a name="to-persist-the-project-item-property-with-the-dte-object"></a>保存專案項目屬性，與 DTE 物件
 
-1.  先前的程序中的方法所提供的程式碼中加入下列程式碼：
+1. 先前的程序中的方法所提供的程式碼中加入下列程式碼：
 
     ```csharp
     IVsBuildPropertyStorage buildPropertyStorage =
@@ -58,7 +58,7 @@ ms.locfileid: "54963979"
 
 ## <a name="to-obtain-the-project-hierarchy-using-ivsmonitorselection"></a>若要取得使用 IVsMonitorSelection 專案階層架構
 
-1.  下列程式碼加入 VSPackage 中：
+1. 下列程式碼加入 VSPackage 中：
 
     ```csharp
     IVsHierarchy hierarchy = null;
@@ -102,7 +102,7 @@ ms.locfileid: "54963979"
 
 ## <a name="to-persist-the-selected-project-item-property-given-the-project-hierarchy"></a>若要保存選取的專案項目屬性，指定的專案階層架構
 
-1.  先前的程序中的方法所提供的程式碼中加入下列程式碼：
+1. 先前的程序中的方法所提供的程式碼中加入下列程式碼：
 
     ```csharp
     IVsBuildPropertyStorage buildPropertyStorage =

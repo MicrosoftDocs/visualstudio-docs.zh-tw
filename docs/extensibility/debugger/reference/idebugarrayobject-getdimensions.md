@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugArrayObject::GetDimensions method
 ms.assetid: 113e0aff-9028-49d6-b104-9fe7be4772d7
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 96079e3f82fccc958cc4b9123f8af4227393845f
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 781da7eadce78d5332befe91231131f02341574b
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56697022"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66318998"
 ---
 # <a name="idebugarrayobjectgetdimensions"></a>IDebugArrayObject::GetDimensions
 取得陣列維度。
@@ -38,14 +38,12 @@ int GetDimensions(
 );
 ```
 
-#### <a name="parameters"></a>參數
- `dwCount`
+## <a name="parameters"></a>參數
+`dwCount`\
+[in]要擷取的維度數目。
 
- [in]要擷取的維度數目。
-
- `dwDimensions`
-
- [in、 out]陣列，其中會填入每個維度大小。 `dwCount` 指定的大小上限`dwDimensions`陣列。
+`dwDimensions`\
+[in、 out]陣列，其中會填入每個維度大小。 `dwCount` 指定的大小上限`dwDimensions`陣列。
 
 ## <a name="return-value"></a>傳回值
  如果成功，會傳回 S_OK;否則，傳回錯誤碼。

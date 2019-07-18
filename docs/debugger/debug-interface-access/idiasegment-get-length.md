@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e7f559c76bdaf4ca363a374566f4f820cc47dc14
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56621769"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62839481"
 ---
 # <a name="idiasegmentgetlength"></a>IDiaSegment::get_length
 擷取區段中的位元組的數目。
@@ -38,5 +38,5 @@ HRESULT get_ length ( 
 ## <a name="return-value"></a>傳回值
  如果成功，會傳回 `S_OK`。 傳回`S_FALSE`不支援這個屬性，則為。 否則會傳回錯誤碼。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md)

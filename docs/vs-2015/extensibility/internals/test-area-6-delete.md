@@ -1,29 +1,24 @@
 ---
-title: 測試區域 6︰ 刪除 |Microsoft Docs
-ms.custom: ''
+title: 測試區域 6：刪除 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK], deleting items
 - source control plug-ins, deleting items
 ms.assetid: 6f2e872c-5ba2-4303-9f50-a90cef9a6225
 caps.latest.revision: 13
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 1498566e1afeaf1517b7ae3bd62297444c828888
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 3ffe786b5bc5f6d0bb0233fbb431988e0145611d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51766313"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68155925"
 ---
-# <a name="test-area-6-delete"></a>測試區域 6︰刪除
+# <a name="test-area-6-delete"></a>測試區域 6：刪除
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 此原始檔控制外掛程式的測試區域涵蓋刪除動作。  
@@ -43,13 +38,13 @@ ms.locfileid: "51766313"
 ## <a name="expected-behavior"></a>預期的行為  
  刪除測試區域中的測試案例的預期的行為是：  
   
--   已刪除的項目已不再顯示內**方案總管 中**。  
+- 已刪除的項目已不再顯示內**方案總管 中**。  
   
--   已刪除的專案或項目的父代已簽出，視需要 （可能是使用提示。）  
+- 已刪除的專案或項目的父代已簽出，視需要 （可能是使用提示。）  
   
--   在出刪除已選取，或新增項目之後，它不會顯示在**暫止簽入**視窗。  
+- 在出刪除已選取，或新增項目之後，它不會顯示在**暫止簽入**視窗。  
   
--   項目仍存在於原始檔控制存放區中，內，即使已經刪除，並必須以手動方式清除。  
+- 項目仍存在於原始檔控制存放區中，內，即使已經刪除，並必須以手動方式清除。  
   
 |動作|測試步驟|若要確認預期的結果|  
 |------------|----------------|--------------------------------|  
@@ -61,4 +56,3 @@ ms.locfileid: "51766313"
   
 ## <a name="see-also"></a>另請參閱  
  [原始檔控制外掛程式測試指南](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)
-

@@ -1,14 +1,9 @@
 ---
 title: IDebugProperty2::GetMemoryContext |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugProperty2::GetMemoryContext
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 91793d25-790f-4881-a5c0-d0458e534514
 caps.latest.revision: 14
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 26152b017663f23bc780008cbf734891e1556072
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: a3ad83bfe36f468dd0e2d7d040c188fd69970a82
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51775221"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68193488"
 ---
 # <a name="idebugproperty2getmemorycontext"></a>IDebugProperty2::GetMemoryContext
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -53,4 +48,3 @@ int GetMemoryContext(
 ## <a name="see-also"></a>另請參閱  
  [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)   
  [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)
-

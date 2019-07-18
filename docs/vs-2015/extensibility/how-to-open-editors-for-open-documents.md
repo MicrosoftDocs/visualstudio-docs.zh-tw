@@ -1,28 +1,23 @@
 ---
-title: 如何： 開啟編輯器開啟的文件 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：開啟編輯器開啟的文件 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], opening for open documents
 ms.assetid: 1a0fa49c-efa4-4dcc-bdc0-299b7052acdc
 caps.latest.revision: 14
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 4bb21def7e9d283c287c375bd9b8b4cc6bd30c3c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: ae6e565e026ca49825a7b00a82e4e5c62a2f6c3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51750986"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68204139"
 ---
-# <a name="how-to-open-editors-for-open-documents"></a>如何： 開啟編輯器開啟的文件
+# <a name="how-to-open-editors-for-open-documents"></a>HOW TO：針對開啟的文件開啟編輯器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 開啟的文件視窗的專案之前，專案首先必須決定檔案是否已開啟另一個編輯器的文件視窗中。 檔案可以在專案特定的編輯器中，請開啟，或其中一個標準編輯器向[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。  
@@ -53,14 +48,13 @@ ms.locfileid: "51750986"
   
 #### <a name="to-open-a-standard-editor-for-an-open-file"></a>若要開啟 開啟檔案的標準編輯器  
   
-1.  呼叫 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A>。  
+1. 呼叫 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A>。  
   
      這個方法會先確認，文件尚未開啟藉由呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.IsDocumentOpen%2A>。 如果已開啟文件，則被 resurfaced 其編輯器視窗。  
   
-2.  如果文件尚未開啟，然後完成中的步驟[如何： 開啟標準編輯器](../extensibility/how-to-open-standard-editors.md)。  
+2. 如果文件尚未開啟，然後完成中的步驟[How to:開啟標準編輯器](../extensibility/how-to-open-standard-editors.md)。  
   
 ## <a name="see-also"></a>另請參閱  
  [開啟和儲存專案項目](../extensibility/internals/opening-and-saving-project-items.md)   
- [如何： 開啟專案特定的編輯器](../extensibility/how-to-open-project-specific-editors.md)   
- [如何︰開啟標準編輯器](../extensibility/how-to-open-standard-editors.md)
-
+ [如何：開啟專案特定的編輯器](../extensibility/how-to-open-project-specific-editors.md)   
+ [如何：開啟標準編輯器](../extensibility/how-to-open-standard-editors.md)

@@ -6,17 +6,20 @@ helpviewer_keywords:
 - GetBaseIndices
 - IDebugArrayObject2::GetBaseIndices
 ms.assetid: 882951a2-3da0-49bf-8d1e-7daedd13ffe6
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5355e85007c04e523efa4030ca0603a01cf88c68
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 04252ed40cd0ac2c0e5f41bc1104104aeee302c4
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56704055"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66317565"
 ---
 # <a name="idebugarrayobject2getbaseindices"></a>IDebugArrayObject2::GetBaseIndices
 擷取陣列中指定的維度數目的每個索引的基底的索引 （下限）。
@@ -37,14 +40,12 @@ int GetBaseIndices (
 );
 ```
 
-#### <a name="parameters"></a>參數
- `dwRank`
+## <a name="parameters"></a>參數
+`dwRank`\
+[in]陣列的維度 （陣序） 數目。
 
- [in]陣列的維度 （陣序） 數目。
-
- `dwIndices`
-
- [out]陣列基底索引 （下限）。
+`dwIndices`\
+[out]陣列基底索引 （下限）。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

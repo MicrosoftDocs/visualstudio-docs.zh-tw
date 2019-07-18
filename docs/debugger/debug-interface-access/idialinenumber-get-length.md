@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 896e26075780c0cbd7bf0b1762da141d5ba7d2d1
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56639904"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62828464"
 ---
 # <a name="idialinenumbergetlength"></a>IDiaLineNumber::get_length
 擷取在區塊中的位元組數目。
@@ -41,5 +41,5 @@ HRESULT get_length ( 
 ## <a name="remarks"></a>備註
  區塊是該行的原始碼的長度表示的[IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)物件。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)

@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, bitflags used by specific commands
 ms.assetid: 37969977-6f7d-45c9-ba03-1306ae71f5d1
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3adf4a26563560803f820d70ef6c6d5171e791d5
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 47dd3b1c75ab7ff206714509a82449d744a02952
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56703210"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66333528"
 ---
 # <a name="bitflags-used-by-specific-commands"></a>特定命令所使用的位元旗標
 設定為單一值的一個或多個位元，可以修改多個原始檔控制外掛程式 API 中的函式的行為。 這些值稱為位元旗標。 原始檔控制外掛程式 API 所使用的位元各種的旗標的詳細資訊，依使用這些函式。
@@ -43,7 +43,7 @@ ms.locfileid: "56703210"
 |旗標|值|描述|
 |----------|-----------|-----------------|
 |`SCC_DIFF_IGNORECASE`|0x0002|忽略大小寫差異。|
-|`SCC_DIFF_IGNORESPACE`|0x0004|忽略空白字元的差異。 **注意：**`SCC_DIFF_IGNORECASE`和`SCC_DIFF_IGNORESPACE`旗標是選擇性的位元旗標。|
+|`SCC_DIFF_IGNORESPACE`|0x0004|忽略空白字元的差異。 **注意：** `SCC_DIFF_IGNORECASE`和`SCC_DIFF_IGNORESPACE`旗標是選擇性的位元旗標。|
 |`SCC_DIFF_QD_CONTENTS`|0x0010|QD 藉由比較整個檔案內容。|
 |`SCC_DIFF_QD_CHECKSUM`|0x0020|QD 透過總和檢查碼。|
 |`SCC_DIFF_QD_TIME`|0x0040|QD 檔案的日期/時間戳記。|

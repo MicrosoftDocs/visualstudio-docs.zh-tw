@@ -1,14 +1,9 @@
 ---
 title: 'Idiaaddressmap:: Set_imageheaders |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: a46b9d0e-43e6-433f-b2c7-aa203981e4e4
 caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: f3e2504030d3e8f28c1a41dea1c053c7e1deb1bf
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 18fa69929f78d5ae661169a09db97697d98f4d94
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51810230"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68198646"
 ---
 # <a name="idiaaddressmapsetimageheaders"></a>IDiaAddressMap::set_imageHeaders
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -44,7 +39,7 @@ HRESULT set_imageHeaders ( 
  cbData  
  [in]標頭資料的位元組數目。 必須是`n*sizeof(IMAGE_SECTION_HEADER)`其中`n`是可執行檔中區段標頭數目。  
   
- [資料]  
+ data[]  
  [in]陣列`IMAGE_SECTION_HEADER`結構，以用作映像標頭。  
   
  originalHeaders  
@@ -60,9 +55,6 @@ HRESULT set_imageHeaders ( 
   
 ## <a name="see-also"></a>另請參閱  
  [IDiaAddressMap](../../debugger/debug-interface-access/idiaaddressmap.md)   
- [Idiaaddressmap:: Set_addressmap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md)   
- [Idiaaddressmap:: Get_relativevirtualaddressenabled](../../debugger/debug-interface-access/idiaaddressmap-get-relativevirtualaddressenabled.md)   
+ [IDiaAddressMap::set_addressMap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md)   
+ [IDiaAddressMap::get_relativeVirtualAddressEnabled](../../debugger/debug-interface-access/idiaaddressmap-get-relativevirtualaddressenabled.md)   
  [IDiaAddressMap::put_relativeVirtualAddressEnabled](../../debugger/debug-interface-access/idiaaddressmap-put-relativevirtualaddressenabled.md)
-
-
-

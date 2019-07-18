@@ -1,14 +1,9 @@
 ---
 title: 'Idiasession:: Findsymbolbytoken |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 3c92149c-6eef-454f-86be-66e89557b9e6
 caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: e0c04fcf55dc11887a872b1d3f47ae88f693a546
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: d42be946db927603412670d30e2f4c9a1cab43fd
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51791227"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68144766"
 ---
 # <a name="idiasessionfindsymbolbytoken"></a>IDiaSession::findSymbolByToken
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -64,6 +59,3 @@ pSession->findSymbolByToken( token, SymTagFunction, &pFunc );
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [SymTagEnum 列舉](../../debugger/debug-interface-access/symtagenum.md)
-
-
-

@@ -1,14 +1,9 @@
 ---
 title: 舊版語言服務的基本資訊 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - languages, integrating into Visual Studio
 - language services, integrating programming languages
@@ -17,13 +12,13 @@ helpviewer_keywords:
 ms.assetid: c15e0ccb-e7c5-4dbb-affb-fe3d3244debe
 caps.latest.revision: 22
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 7c878c4fe124d0443ab5f926a03a378b5b4af014
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: a3926ff84f3b2e6415df1ca7333409c05d839685
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51753638"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436269"
 ---
 # <a name="legacy-language-service-essentials"></a>舊版語言服務的基本資訊
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +28,7 @@ ms.locfileid: "51753638"
  舊版語言服務會實作成 VSPackage 的一部分，但實作語言服務功能的較新的方式是使用 MEF 擴充功能。 若要深入了解實作語言服務的新方式，請參閱[編輯器和語言服務延伸模組](../../extensibility/editor-and-language-service-extensions.md)。  
   
 > [!NOTE]
->  我們建議您開始使用新的編輯器 API 盡。 這會改善您的語言服務的效能，並可讓您充分利用新編輯器功能。  
+> 我們建議您開始使用新的編輯器 API 盡。 這會改善您的語言服務的效能，並可讓您充分利用新編輯器功能。  
   
  舊版語言服務提供下列功能：  
   
@@ -53,4 +48,3 @@ ms.locfileid: "51753638"
 |-------------|-----------------|  
 |運算式評估工具|支援[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]透過驗證中斷點，並提供一份運算式的偵錯工具，顯示在 **[自動變數]** 偵錯視窗。<br /><br /> 如需詳細資訊，請參閱 <<c0> [ 偵錯的語言服務支援](../../extensibility/internals/language-service-support-for-debugging.md)。|  
 |符號瀏覽工具|支援**物件瀏覽器**，**類別檢視**，**呼叫瀏覽器**，以及**尋找符號結果**。|
-

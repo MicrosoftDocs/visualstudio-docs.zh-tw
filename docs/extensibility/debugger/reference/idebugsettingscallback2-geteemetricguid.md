@@ -5,17 +5,20 @@ ms.topic: reference
 helpviewer_keywords:
 - IDebugSettingsCallback2::GetEEMetricGuid
 ms.assetid: 3d70c19a-595d-44f1-a7b3-a0cf8f15e371
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f2bffa499d24bc38008982c990efd19205e95f6f
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: ca64245a4f0ce3436dce3e5623099b0d82669676
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56692069"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66322095"
 ---
 # <a name="idebugsettingscallback2geteemetricguid"></a>IDebugSettingsCallback2::GetEEMetricGuid
 擷取指定其名稱的運算式評估工具計量的唯一識別碼。
@@ -40,22 +43,18 @@ HRESULT GetEEMetricGuid(
 );
 ```
 
-#### <a name="parameters"></a>參數
- `guidLang`
+## <a name="parameters"></a>參數
+`guidLang`\
+[in]程式設計語言的唯一識別碼。
 
- [in]程式設計語言的唯一識別碼。
+`guidVendor`\
+[in]供應商的唯一識別碼。
 
- `guidVendor`
+`pszMetric`\
+[in]計量名稱。
 
- [in]供應商的唯一識別碼。
-
- `pszMetric`
-
- [in]計量名稱。
-
- `pguidValue`
-
- [out]傳回度量的唯一識別碼。
+`pguidValue`\
+[out]傳回度量的唯一識別碼。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

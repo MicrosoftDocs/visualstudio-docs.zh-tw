@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - MODULE_SYMBOL_SEARCH_INFO structure
 ms.assetid: 432aff03-08a5-4c5a-b2d5-e212090fc70a
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6886373e521c411c3823b9f15138c8f798a373f4
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: c521ebe321813013b83a951d4d2aa5f60fd1646d
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56681812"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66346621"
 ---
 # <a name="modulesymbolsearchinfo"></a>MODULE_SYMBOL_SEARCH_INFO
 
@@ -40,14 +43,12 @@ public struct MODULE_SYMBOL_SEARCH_INFO {
 }
 ```
 
-## <a name="parameters"></a>參數
+## <a name="members"></a>成員
 
-`dwValidFields`
-
+`dwValidFields`\
 從旗標的組合[SYMBOL_SEARCH_INFO_FIELDS](../../../extensibility/debugger/reference/symbol-search-info-fields.md)指定此結構中所述的搜尋資訊類型的列舉型別。
 
-`bstrVerboseSearchInfo`
-
+`bstrVerboseSearchInfo`\
 搜尋路徑，而且結果串連成單一字串。
 
 ## <a name="remarks"></a>備註

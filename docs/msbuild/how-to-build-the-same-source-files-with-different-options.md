@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8cb678a05b9301982b4842d272c3032cafa46a87
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56610121"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62977329"
 ---
 # <a name="how-to-build-the-same-source-files-with-different-options"></a>HOW TO：使用不同選項來建置相同的來源檔案
 當您建置專案時，經常會以不同的組建選項編譯相同的元件。 例如，您可以建立含有符號資訊的偵錯組建，或是不含符號資訊但已啟用最佳化的發行組建。 或者，您可以建置要在特定平台上執行的專案，例如 x86 或 [!INCLUDE[vcprx64](../extensibility/internals/includes/vcprx64_md.md)]。 在這些情況下，大部分的建置選項都會保持不變。只會變更某些選項來控制組建組態。 透過 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]，您可以使用屬性和條件來建立不同的建置組態。

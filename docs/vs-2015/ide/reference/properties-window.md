@@ -21,17 +21,16 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: bd437be1dd61e05259bc13501d7b9b9aaa06e285
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 582905042938d79a1885279bd19c18f48b49bb84
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54753528"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438038"
 ---
 # <a name="properties-window"></a>屬性視窗
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 使用這個視窗來檢視和變更設計階段屬性，以及位於編輯器和設計工具中的選定物件的事件。 您也可以使用 [屬性] 視窗來編輯和檢視檔案、專案和解決方案屬性。 您可以在 [檢視] 功能表上找到 [屬性] 視窗。 您也可以按 F4 或在 [快速啟動] 視窗中鍵入 **Properties** 來開啟它。  
   
  [屬性] 視窗會顯示不同類型的編輯欄位，根據特定屬性的需求而定。 這些編輯欄位包含自訂編輯器對話方塊用的編輯方塊、下拉式清單和連結。 以灰色顯示的屬性為唯讀。  
@@ -59,25 +58,25 @@ ms.locfileid: "54753528"
  顯示物件的事件。  
   
 > [!NOTE]
->  這個 [屬性] 視窗工具列控制項，只有在表單或控制項設計工具在 [!INCLUDE[csprcs](../../includes/csprcs-md.md)] 專案的內容使用中時才可使用。 編輯 XAML 檔案時，事件會出現在 [屬性] 視窗的個別索引標籤。  
+> 這個 [屬性] 視窗工具列控制項，只有在表單或控制項設計工具在 [!INCLUDE[csprcs](../../includes/csprcs-md.md)] 專案的內容使用中時才可使用。 編輯 XAML 檔案時，事件會出現在 [屬性] 視窗的個別索引標籤。  
   
  訊息  
  列出所有 Windows 訊息。 可讓您新增或刪除為所選類別提供之訊息的指定處理常式函式。  
   
 > [!NOTE]
->  這個 [屬性] 視窗工具列控制項，只有在 [類別檢視] 是 [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] 專案內容的使用中視窗時才可使用。  
+> 這個 [屬性] 視窗工具列控制項，只有在 [類別檢視] 是 [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] 專案內容的使用中視窗時才可使用。  
   
  Overrides  
  列出所選類別的所有虛擬函式，並可讓您新增或刪除覆寫的函式。  
   
 > [!NOTE]
->  這個 [屬性] 視窗工具列控制項，只有在 [類別檢視] 是 [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] 專案內容的使用中視窗時才可使用。  
+> 這個 [屬性] 視窗工具列控制項，只有在 [類別檢視] 是 [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] 專案內容的使用中視窗時才可使用。  
   
  描述窗格  
  顯示屬性類型和屬性的簡短描述。 您可以使用捷徑功能表上使用 [描述] 命令，關閉及開啟屬性的描述。  
   
 > [!NOTE]
->  這個 [屬性] 視窗工具列控制項，在設計工具裡編輯 XAML 檔案時無法使用。  
+> 這個 [屬性] 視窗工具列控制項，在設計工具裡編輯 XAML 檔案時無法使用。  
   
  縮圖檢視  
  在設計工具中編輯 XAML 檔案時，顯示目前選取項目的視覺表示法。  

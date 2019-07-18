@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugReference2::GetParent
 ms.assetid: e3061665-ad3e-4c1b-b33f-82755fa21be3
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 985a9b15c61099548ace4ba20d8ea2706506fc17
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: ddef1d78d64f0e034aed9d48b59bf3e46ccba24f
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56697633"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66339802"
 ---
 # <a name="idebugreference2getparent"></a>IDebugReference2::GetParent
 取得參考的父代參考。 保留供未來使用。
@@ -36,10 +39,9 @@ int GetParent ( 
 );
 ```
 
-#### <a name="parameters"></a>參數
- `ppParent`
-
- [out]傳回[IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)物件，表示此屬性的父代。
+## <a name="parameters"></a>參數
+`ppParent`\
+[out]傳回[IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)物件，表示此屬性的父代。
 
 ## <a name="return-value"></a>傳回值
  一律傳回 `E_NOTIMPL`。

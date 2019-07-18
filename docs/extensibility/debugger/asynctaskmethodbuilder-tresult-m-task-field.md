@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - m_task field, AsyncTaskMethodBuilder<TResult> structure [.NET Framework debug engines]
 ms.assetid: 649abf0e-0fec-49d9-93b2-8953521f7ba5
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9f4f2fd84a818df43c62d60cf7fd2183e714eaa6
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 1586ee30941750c321bb59aa5f12056f27265911
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56705894"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66321755"
 ---
 # <a name="asynctaskmethodbuilderlttresultgtmtask-field"></a>AsyncTaskMethodBuilder&lt;TResult&gt;.m_task 欄位
 表示延遲初始化建置工作。

@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgramProvider2::WatchForProviderEvents
 ms.assetid: 2eb93653-b5fb-45b6-b136-56008c5d25ef
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e76baf1330ec63d1032b69fa6cfddce4776742a9
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: eb0968f96300ab62e4b4ee4b34b3e7f574f4b0fc
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56698621"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66343437"
 ---
 # <a name="idebugprogramprovider2watchforproviderevents"></a>IDebugProgramProvider2::WatchForProviderEvents
 允許的連接埠事件通知程序。
@@ -46,10 +49,9 @@ int WatchForProviderEvents(
 );
 ```
 
-#### <a name="parameters"></a>參數
- `Flags`
-
- [in]從旗標的組合[PROVIDER_FLAGS](../../../extensibility/debugger/reference/provider-flags.md)列舉型別。 此呼叫一般會在下列旗標：
+## <a name="parameters"></a>參數
+`Flags`\
+[in]從旗標的組合[PROVIDER_FLAGS](../../../extensibility/debugger/reference/provider-flags.md)列舉型別。 此呼叫一般會在下列旗標：
 
 |旗標|描述|
 |----------|-----------------|
@@ -58,25 +60,20 @@ int WatchForProviderEvents(
 |`PFLAG_ATTACHED_TO_DEBUGGEE`|已附加至呼叫端，但不是啟動偵錯工具。|
 |`PFLAG_REASON_WATCH`|呼叫端想要監看事件。 如果未設定此旗標。 然後會移除回呼事件和呼叫端不會再收到通知。|
 
- `pPort`
+`pPort`\
+[in]呼叫處理序的連接埠上執行。
 
- [in]呼叫處理序的連接埠上執行。
+`processId`\
+[in][AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md)結構包含該程式處理序的識別碼有問題。
 
- `processId`
+`EngineFilter`\
+[in]偵錯引擎處理序相關聯的 Guid 的陣列。
 
- [in][AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md)結構包含該程式處理序的識別碼有問題。
+`guidLaunchingEngine`\
+[in]（如果有的話），請啟動此程序的偵錯引擎的 GUID。
 
- `EngineFilter`
-
- [in]偵錯引擎處理序相關聯的 Guid 的陣列。
-
- `guidLaunchingEngine`
-
- [in]（如果有的話），請啟動此程序的偵錯引擎的 GUID。
-
- `pEventCallback`
-
- [in][IDebugPortNotify2](../../../extensibility/debugger/reference/idebugportnotify2.md)接收事件通知的物件。
+`pEventCallback`\
+[in][IDebugPortNotify2](../../../extensibility/debugger/reference/idebugportnotify2.md)接收事件通知的物件。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

@@ -1,20 +1,20 @@
 ---
-title: HOW TO：使用 Visual Studio 擴充功能的規則為基礎的 UI 內容 |Microsoft Docs
+title: 作法：使用 Visual Studio 擴充功能的規則為基礎的 UI 內容 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 8dd2cd1d-d8ba-49b9-870a-45acf3a3259d
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4f78753afdf8d0ded233b2451db42dee73c41de0
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: c3075ca5092dd1b8a69aa4b34c0e507505cf7123
+ms.sourcegitcommit: 16bcaca215de75479695738d3c2d703c78c3500e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56682189"
+ms.lasthandoff: 06/21/2019
+ms.locfileid: "67309684"
 ---
-# <a name="how-to-use-rule-based-ui-context-for-visual-studio-extensions"></a>HOW TO：使用 Visual Studio 擴充功能的規則為基礎的 UI 內容
+# <a name="how-to-use-rule-based-ui-context-for-visual-studio-extensions"></a>作法：使用 Visual Studio 擴充功能的規則為基礎的 UI 內容
 
 Visual Studio 可讓載入 Vspackage 時有特定已知<xref:Microsoft.VisualStudio.Shell.UIContext>s 會啟動。 不過，這些 UI 內容不正常精細，延伸模組作者，讓任何選擇，但選擇可用的 UI 內容，就會啟動點之前，他們其實想要載入 VSPackage。 如需已知的 UI 內容，請參閱<xref:Microsoft.VisualStudio.Shell.KnownUIContexts>。
 
@@ -70,14 +70,14 @@ Visual Studio 可讓載入 Vspackage 時有特定已知<xref:Microsoft.VisualStu
 
    ```xml
    <VisibilityConstraints>
-       <VisibilityItem guid="guidTestPackageCmdSet" id="TestId"  context="guidTestUIContext"/>
+       <VisibilityItem guid="guidTestPackageCmdSet" id="TestId"  context="UIContextGuid"/>
    </VisibilityConstraints>
    ```
 
 4. 在 [符號] 區段中，新增 ui 內容的定義：
 
    ```xml
-   <GuidSymbol name="guidTestUIContext" value="{8B40D5E2-5626-42AE-99EF-3DD1EFF46E7B}" />
+   <GuidSymbol name="UIContextGuid" value="{8B40D5E2-5626-42AE-99EF-3DD1EFF46E7B}" />
    ```
 
     現在，內容功能表命令 *\*.config*檔案將會顯示在 [方案總管] 中選取的項目時才 *.config*檔案和套件將不會載入之前的其中之一選取命令。
@@ -140,6 +140,10 @@ Visual Studio 可讓載入 Vspackage 時有特定已知<xref:Microsoft.VisualStu
 |ActiveProjectCapability:\<Expression>|作用中的專案功能符合提供的運算式時，則為 true 的詞彙。 運算式可以是 VB 類似&#124;CSharp。|
 |SolutionHasProjectCapability:\<Expression>|當方案中有任何比對運算式的載入的專案時，與上述類似，但是一詞是如此。|
 |SolutionHasProjectFlavor:\<projectTypeGuid>|解決方案具備特色 （彙總） 的專案，並比對指定的專案類型 GUID 類別時，將會是 true 一詞。|
+|ProjectAddedItem:\<pattern>| 比對 「 模式 」 的檔案新增至開啟 soluion 中的專案時，一詞是如此。|
+|ActiveProjectOutputType:\<outputType>|詞彙是，則為 true 時輸出類型使用中的專案會確實比對。  OutputType 可能是整數或<xref:Microsoft.VisualStudio.Shell.Interop.__VSPROJOUTPUTTYPE>型別。|
+|ActiveProjectBuildProperty:\<buildProperty>=\<regex>|現用專案有指定的組建屬性和屬性值符合所提供的 regex 篩選條件時，一詞是如此。 請參閱[MSBuild 專案檔中的保存資料](internals/persisting-data-in-the-msbuild-project-file.md)更多有關建置屬性。|
+|SolutionHasProjectBuildProperty:\<buildProperty>=\<regex>|解決方案已載入的專案，以指定的組建屬性和屬性值符合所提供的 regex 篩選條件時，一詞是如此。|
 
 ## <a name="compatibility-with-cross-version-extension"></a>副檔名為跨版本相容性
 

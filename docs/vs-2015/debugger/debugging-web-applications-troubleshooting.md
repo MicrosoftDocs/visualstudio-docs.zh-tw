@@ -1,14 +1,9 @@
 ---
-title: 偵錯 Web 應用程式： 疑難排解 |Microsoft Docs
-ms.custom: ''
+title: 偵錯 Web 應用程式：疑難排解 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: troubleshooting
 dev_langs:
 - FSharp
 - VB
@@ -22,13 +17,13 @@ ms.assetid: 1624e4af-018e-4b7c-9a00-063bfe97fb7d
 caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: a68adce6e44885b216c053abbd5f8b58d66dd9e8
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: ac45b72b97a759e79a984f62421997125c5f1a0b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51788884"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68152867"
 ---
 # <a name="debugging-web-applications-troubleshooting"></a>偵錯 Web 應用程式：疑難排解
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,6 +40,3 @@ ms.locfileid: "51788884"
   
  [偵錯 Web 應用程式和指令碼](../debugger/debugging-web-applications-and-script.md)  
  偵錯像是 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]、XML Web Service 和 ATL Server 專案的 Web 應用程式概觀。
-
-
-

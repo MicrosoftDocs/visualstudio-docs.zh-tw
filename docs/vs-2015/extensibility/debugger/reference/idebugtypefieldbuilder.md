@@ -1,26 +1,21 @@
 ---
 title: IDebugTypeFieldBuilder |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - IDebugTypeFieldBuilder interface
 ms.assetid: 2dfed0be-6972-4bec-baec-f0b78df9ef97
 caps.latest.revision: 7
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 8d0c4809eb1a108dad581c110940e933f37174e2
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 84a4da6bcd306e409582077f66fab1a40b7d7942
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51795293"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68199707"
 ---
 # <a name="idebugtypefieldbuilder"></a>IDebugTypeFieldBuilder
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -39,15 +34,14 @@ IDebugTypeFieldBuilder : IUnknown
 ## <a name="methods"></a>方法  
  這個介面會實作下列方法：  
   
-|方法|描述|  
+|方法|說明|  
 |------------|-----------------|  
 |[CreatePrimitive](../../../extensibility/debugger/reference/idebugtypefieldbuilder-createprimitive.md)|建立表示基本類型的物件。|  
 |[CreatePointerToType](../../../extensibility/debugger/reference/idebugtypefieldbuilder-createpointertotype.md)|建立指定類型的指標。|  
   
 ## <a name="requirements"></a>需求  
- 標頭： Sh.h  
+ 標頭：Sh.h  
   
- 命名空間： Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間：Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
-
+ 組件︰Microsoft.VisualStudio.Debugger.Interop.dll

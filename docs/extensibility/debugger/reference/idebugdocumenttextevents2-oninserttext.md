@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugDocumentTextEvents2::onInsertText
 ms.assetid: 6040181f-7288-4a42-953c-d23f74200431
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a8eee7a9225a54bb5ca965845b66aaa9adcdbe05
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: e0185e4f6c3accc4225dbfb9be4ce9311f8d7115
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56700506"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66330531"
 ---
 # <a name="idebugdocumenttextevents2oninserttext"></a>IDebugDocumentTextEvents2::onInsertText
 已插入文件插入文字會告知偵錯封裝。
@@ -38,14 +41,12 @@ int onInsert( 
 );
 ```
 
-#### <a name="parameters"></a>參數
- `pos`
+## <a name="parameters"></a>參數
+`pos`\
+[in]A [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)結構，表示文字插入的位置。
 
- [in]A [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)結構，表示文字插入的位置。
-
- `dwNumToInsert`
-
- [in]指定的文字插入的字元數目。
+`dwNumToInsert`\
+[in]指定的文字插入的字元數目。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

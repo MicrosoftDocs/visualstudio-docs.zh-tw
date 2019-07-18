@@ -19,24 +19,23 @@ caps.latest.revision: 39
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3f5c7c2f587f4c2fb44ab56223dafa2f988c6103
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 1eb56d1334eb18dd5872457d032e5780a3f75eb3
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54758461"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65698712"
 ---
 # <a name="common-msbuild-project-properties"></a>一般 MSBuild 專案屬性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 下表列出 Visual Studio 專案檔中所定義或 MSBuild 提供的 .targets 檔案中所包含的最常用屬性。  
   
  Visual Studio 中的專案檔 (.csproj、.vbproj、vcxproj 及其他) 包含 MSBuild XML 程式碼，該程式碼會在您使用 IDE 建置專案時執行。 專案通常會匯入一個或多個 .targets 檔案，用於定義其建置流程。 如需詳細資訊，請參閱 [.Targets 檔案](../msbuild/msbuild-dot-targets-files.md)。  
   
 ## <a name="list-of-common-properties-and-parameters"></a>通用屬性和參數的清單  
   
-|屬性或參數名稱|描述|  
+|屬性或參數名稱|說明|  
 |--------------------------------|-----------------|  
 |AdditionalLibPaths|指定其他資料夾，編譯器會在這些資料夾中尋找參考組件。|  
 |AddModules|讓編譯器將所指定檔案的類型資訊全部提供給您正在編譯的專案。 這個屬性相當於 `/addModules` 編譯器參數。|  
@@ -115,7 +114,7 @@ ms.locfileid: "54758461"
 |Satellite_Version|指定附屬組件的版本資訊。|  
 |Satellite_Win32Icon|將 .ico 圖示檔插入附屬組件。|  
 |Satellite_Win32Resource|將 Win32 資源 (.res 檔) 插入附屬組件。|  
-|SubsystemVersion|指定所產生的可執行檔能夠使用的最低子系統版本。 這個屬性相當於 `/subsystemversion` 編譯器參數。 如需這個屬性之預設值的資訊，請參閱 [/subsystemversion (Visual Basic)](http://msdn.microsoft.com/library/08be22b2-f447-4cd3-8203-120b1b920b54) 或 [/subsystemversion (C# 編譯器選項)](http://msdn.microsoft.com/library/a99fce81-9d92-4813-9874-bee777041445)。|  
+|SubsystemVersion|指定所產生的可執行檔能夠使用的最低子系統版本。 這個屬性相當於 `/subsystemversion` 編譯器參數。 如需這個屬性之預設值的資訊，請參閱 [/subsystemversion (Visual Basic)](https://msdn.microsoft.com/library/08be22b2-f447-4cd3-8203-120b1b920b54) 或 [/subsystemversion (C# 編譯器選項)](https://msdn.microsoft.com/library/a99fce81-9d92-4813-9874-bee777041445)。|  
 |TargetCompactFramework|執行您建置之應用程式所需的 .NET Compact Framework 版本。 指定這個屬性可讓您參考無法以其他方式參考的某些 Framework 組件。|  
 |TargetFrameworkVersion|執行您建置之應用程式所需的 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 版本。 指定這個屬性可讓您參考無法以其他方式參考的某些 Framework 組件。|  
 |TreatWarningsAsErrors|布林值參數，如果為 `true`，表示會將所有警告視為錯誤。 這個參數 (Parameter) 相當於 `/nowarn` 編譯器參數 (Switch)。|  

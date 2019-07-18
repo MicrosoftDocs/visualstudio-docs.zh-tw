@@ -1,25 +1,20 @@
 ---
 title: 建立自訂程式碼分析規則集 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 ms.assetid: 88db3a0a-1b92-496d-9fae-b2bb980f5933
 caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: c0dabe89c47e42eee57803475abf5274a74ec651
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f6d848c2f32f51a14c03d8b321f05b6b60143a87
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49273581"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68142333"
 ---
 # <a name="creating-custom-code-analysis-rule-sets"></a>建立自訂程式碼分析規則集
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,6 +34,3 @@ ms.locfileid: "49273581"
  [程式碼分析規則集參考](../code-quality/code-analysis-rule-set-reference.md)   
  [分析 Managed 程式碼品質](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)   
  [使用程式碼分析進行 C/C++ 程式碼品質分析](../code-quality/analyzing-c-cpp-code-quality-by-using-code-analysis.md)
-
-
-

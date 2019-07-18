@@ -1,30 +1,27 @@
 ---
 title: 定義圖案和接點 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: 1fae548d-9288-4dd5-a24f-ff0d69c73628
 caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 61cd27b307b4761e3f7773f91583965466892285
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 761e0e77a0fe9f6f32f08045d81f6eab815801dd
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49812942"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68181889"
 ---
 # <a name="defining-shapes-and-connectors"></a>定義圖案和連接器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 您可以使用數種基本圖形類型，來顯示網域指定的語言 (DSL) 圖表上的資訊。  
   
-##  <a name="shapeTypes"></a> 基本類型的圖案和接點  
+## <a name="shapeTypes"></a> 基本類型的圖案和接點  
  DSL 圖表顯示的集合*圖案*shape 由線條或*連接器*。  一般而言 (但並非絕對)：  
   
 - 圖形是模型項目的視覺表示。  
@@ -48,8 +45,5 @@ ms.locfileid: "49812942"
 |區隔線|區隔線會將圖表分割成水平或垂直區段。 區隔線一律會保持在圖表上的其他圖形下方。<br /><br /> 一般而言，區隔線的模型項目會做為模型根的父項，而其他項目則會做為其父項。 例如，從「工作流程」方案範本中建立 DSL。|  
 |連接器|在通常表示參考關聯性的圖形之間繪製的線條。 您可以設定選項，將連接器設定為直線或直線形，以及具有不同的箭頭類型。|  
   
-##  <a name="shapeInheritance"></a> 圖形繼承  
+## <a name="shapeInheritance"></a> 圖形繼承  
  某個圖形可以繼承自另一個圖形。 不過，這兩個圖形必須屬於相同類型。 例如，只有幾何圖形可以繼承自另一個幾何圖形。 繼承的圖形具有其基底圖形的區間和裝飾項目。 連接器可以繼承自其他連接器。
-
-
-

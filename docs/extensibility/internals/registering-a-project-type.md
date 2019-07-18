@@ -7,17 +7,17 @@ helpviewer_keywords:
 - registry, new project types
 - registration, new project types
 ms.assetid: dfc0e231-6b4e-447d-9d64-0e66dea3394a
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2be0a0e62942c369d47947582bf746332e201577
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: b950ea6dde73ecb7f20ef45e945106e8711aefb0
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56623810"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66353355"
 ---
 # <a name="registering-a-project-type"></a>註冊專案類型
 當您建立新的專案類型時，您必須建立登錄項目，以便[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]辨識，並使用您的專案類型。 您通常會使用登錄指令碼 (.rgs) 檔案中建立這些登錄項目。
@@ -25,7 +25,7 @@ ms.locfileid: "56623810"
  在下列範例中，從登錄的陳述式提供預設路徑和資料如果適用的話，後面的資料表包含每個陳述式的登錄指令碼中的項目。 資料表提供的指令碼項目和陳述式的其他資訊。
 
 > [!NOTE]
->  下列的登錄資訊被要當做類型的範例和用途，您會撰寫以註冊您的專案類型的登錄指令碼中的項目。 您實際的項目和其用法可能會因您的專案類型的特定需求。 您應該檢閱可用來尋找接近您正在開發，專案類型的其中一個範例，然後檢閱 登錄指令碼，該範例。
+> 下列的登錄資訊被要當做類型的範例和用途，您會撰寫以註冊您的專案類型的登錄指令碼中的項目。 您實際的項目和其用法可能會因您的專案類型的特定需求。 您應該檢閱可用來尋找接近您正在開發，專案類型的其中一個範例，然後檢閱 登錄指令碼，該範例。
 
  下列範例會從 HKEY_CLASSES_ROOT。
 
@@ -193,7 +193,7 @@ ms.locfileid: "56623810"
 
 |名稱|類型|資料|描述|
 |----------|----------|----------|-----------------|
-|`@`|REG_SZ|無|預設值，指出下列項目會針對其他檔案專案項目。|
+|`@`|REG_SZ|None|預設值，指出下列項目會針對其他檔案專案項目。|
 |`@`|REG_SZ|`#%IDS_ADDITEM_TEMPLATES_ENTRY%`|加入新項目範本檔案的資源 ID 值。|
 |`TemplatesDir`|REG_SZ|`%TEMPLATE_PATH%\FigPrjProjectItems`|預設路徑，將會顯示在項目的**加入新項目** 對話方塊。|
 |`SortPriority`|REG_DWORD|`100 (vcprx64)`|建立的樹狀節點顯示的排序次序**加入新項目** 對話方塊。|

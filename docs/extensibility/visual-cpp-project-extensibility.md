@@ -1,6 +1,6 @@
 ---
-title: Visual c + + 專案擴充性
-ms.date: 01/25/2019
+title: 視覺化C++專案擴充性
+ms.date: 04/23/2019
 ms.technology: vs-ide-mobile
 ms.topic: conceptual
 dev_langs:
@@ -10,18 +10,18 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a524d242f5c3fb146f3446cd0c020b01e130277c
-ms.sourcegitcommit: 5af29226aef0a3b4a506b69a08a97cfd21049521
+ms.openlocfilehash: 10869ad290b0b8df614d25d792d0b3ed1e88eb17
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "58268722"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825560"
 ---
-# <a name="visual-studio-c-project-system-extensibility-and-toolset-integration"></a>Visual Studio c + + 專案系統擴充性和工具組之間的整合
+# <a name="visual-studio-c-project-system-extensibility-and-toolset-integration"></a>Visual StudioC++專案系統擴充性和工具組整合
 
-Visual c + + 專案系統用於.vcxproj 檔案。 它根據[Visual Studio 通用專案系統 (CPS)](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/Index.md) ，並提供其他 c + + 特定的擴充性點的新工具組，建置架構，以及平台為目標的輕鬆整合。
+視覺效果C++專案系統會用於.vcxproj 檔案。 它根據[Visual Studio 通用專案系統 (CPS)](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/Index.md) ，並提供其他C++特定的擴充性點，新的工具集，整合更容易建置架構，以及平台為目標。
 
-## <a name="c-msbuild-targets-structure"></a>C + + MSBuild 目標結構
+## <a name="c-msbuild-targets-structure"></a>C++MSBuild 目標結構
 
 所有的.vcxproj 檔案匯入這些檔案：
 
@@ -55,11 +55,24 @@ Visual c + + 專案系統用於.vcxproj 檔案。 它根據[Visual Studio 通用
 
 這些屬性值會指定下的資料夾名稱`$(VCTargetsPath)`根資料夾：
 
-`$(VCTargetsPath)`\\ &nbsp;&nbsp;&nbsp;&nbsp;*應用程式類型*\\ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; `$(ApplicationType)` \\ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(ApplicationTypeRevision)`\\ &nbsp;&nbsp;&nbsp;&nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; *平台*\\ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(Platform)`\\ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;*PlatformToolsets* \\ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(PlatformToolset)` &nbsp;&nbsp;&nbsp;&nbsp;平台\\&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;（對於Windows桌面項目，當 `$(ApplicationType)` 為空時使用） &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(Platform)`\\&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*PlatformToolsets*\\ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(PlatformToolset)`
+> `$(VCTargetsPath)`\\ \
+&nbsp;&nbsp;&nbsp;&nbsp;*應用程式類型*\\ \
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(ApplicationType)`\\ \
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(ApplicationTypeRevision)`\\ \
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*平台*\\ \
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(Platform)`\\ \
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*PlatformToolsets*\\ \
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(PlatformToolset)` \
+&nbsp;&nbsp;&nbsp;&nbsp;*平台*\\ \
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(Platform)`\\ \
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*PlatformToolsets*\\ \
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(PlatformToolset)`
+
+`$(VCTargetsPath)` \\*平台*\\會使用資料夾時`$(ApplicationType)`是空的 Windows 桌面專案。
 
 ### <a name="add-a-new-platform-toolset"></a>加入新的平台工具組
 
-若要新增新的工具組，例如，"MyToolset 」 針對現有的 Win32 平台，建立*MyToolset*下方的資料夾`$(VCTargetsPath)` *\\平台\\Win32\\PlatformToolsets\\*，然後建立*Toolset.props*並*Toolset.targets*檔案。
+若要新增新的工具組，例如，"MyToolset 」 針對現有的 Win32 平台，建立*MyToolset*下方的資料夾`$(VCTargetsPath)` *\\平台\\Win32\\PlatformToolsets\\* ，然後建立*Toolset.props*並*Toolset.targets*檔案。
 
 在每個資料夾名稱*PlatformToolsets*會出現在**專案屬性**為 可用的對話方塊**平台工具組**針對指定的平台，如下所示：
 
@@ -69,7 +82,7 @@ Visual c + + 專案系統用於.vcxproj 檔案。 它根據[Visual Studio 通用
 
 ### <a name="add-a-new-platform"></a>加入新的平台
 
-若要新增新的平台，例如，"MyPlatform，「 建立*MyPlatform*下方的資料夾`$(VCTargetsPath)` *\\平台\\*，並建立*Platform.default.props*， *Platform.props*，以及*Platform.targets*檔案。 也會建立`$(VCTargetsPath)` *\\平台\\*<strong><em>MyPlatform</em></strong>*\\PlatformToolsets\\*資料夾，並在其中建立至少一個工具組。
+若要新增新的平台，例如，"MyPlatform，「 建立*MyPlatform*下方的資料夾`$(VCTargetsPath)` *\\平台\\* ，並建立*Platform.default.props*， *Platform.props*，以及*Platform.targets*檔案。 也會建立`$(VCTargetsPath)` *\\平台\\* <strong><em>MyPlatform</em></strong> *\\PlatformToolsets\\* 資料夾，並在其中建立至少一個工具組。
 
 下的所有資料夾名稱*平台*每個資料夾`$(ApplicationType)`並`$(ApplicationTypeRevision)`會出現在 IDE 中為可用的**平台**專案的選項。
 
@@ -83,31 +96,52 @@ Visual c + + 專案系統用於.vcxproj 檔案。 它根據[Visual Studio 通用
 
 ## <a name="the-vcxproj-import-tree"></a>.Vcxproj 匯入樹狀目錄
 
-簡化的 Microsoft c + + 的 props 和目標檔案匯入樹狀結構看起來像：
+簡化的樹狀目錄中，匯入 microsoft C++ props 和目標檔案看起來像：
 
-`$(VCTargetsPath)`\\*Microsoft.Cpp.Default.props* &nbsp; &nbsp; &nbsp; &nbsp; `$(MSBuildExtensionsPath)` \\ `$(MSBuildToolsVersion)` \\ *Microsoft.Common.props*&nbsp; &nbsp; &nbsp; &nbsp; `$(VCTargetsPath)` \\ *ImportBefore*\\*預設*\\\*.*props* &nbsp; &nbsp; &nbsp; &nbsp; `$(VCTargetsPath)` \\*應用程式類型*\\ `$(ApplicationType)`\\ *Default.props* &nbsp; &nbsp; &nbsp; &nbsp; `$(VCTargetsPath)` \\*應用程式類型*\\`$(ApplicationType)` \\ `$(ApplicationTypeRevision)` \\ *Default.props* &nbsp; &nbsp; &nbsp; &nbsp; `$(VCTargetsPath)`\\*應用程式類型*\\`$(ApplicationType)`\\`$(ApplicationTypeRevision)`\\*平台*\\ `$(Platform)` \\ *Platform.default.props* &nbsp; &nbsp; &nbsp; &nbsp; `$(VCTargetsPath)` \\*ImportAfter*\\*預設*\\\*。*屬性*
+> `$(VCTargetsPath)`\\*Microsoft.Cpp.Default.props* \
+&nbsp;&nbsp;&nbsp;&nbsp;`$(MSBuildExtensionsPath)`\\`$(MSBuildToolsVersion)`\\*Microsoft.Common.props* \
+&nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*ImportBefore*\\*預設*\\\*。*屬性* \
+&nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*應用程式類型*\\`$(ApplicationType)`\\*Default.props* \
+&nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*應用程式類型*\\`$(ApplicationType)`\\`$(ApplicationTypeRevision)`\\*Default.props* \
+&nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*應用程式類型*\\`$(ApplicationType)`\\`$(ApplicationTypeRevision)`\\*平台*\\ `$(Platform)` \\ *Platform.default.props* \
+&nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*ImportAfter*\\*預設*\\\*。*屬性*
 
 Windows 桌面專案未定義`$(ApplicationType)`，因此它們只匯入
 
-`$(VCTargetsPath)`\\*Microsoft.Cpp.Default.props* &nbsp; &nbsp; &nbsp; &nbsp; `$(MSBuildExtensionsPath)` \\ `$(MSBuildToolsVersion)` \\ *Microsoft.Common.props*&nbsp; &nbsp; &nbsp; &nbsp; `$(VCTargetsPath)` \\ *ImportBefore*\\*預設*\\\*.*props* &nbsp; &nbsp; &nbsp; &nbsp; `$(VCTargetsPath)` \\*平台*\\ `$(Platform)` \\*Platform.default.props* &nbsp; &nbsp; &nbsp; &nbsp; `$(VCTargetsPath)` \\ *ImportAfter* \\ *預設值*\\\*。*屬性*
+> `$(VCTargetsPath)`\\*Microsoft.Cpp.Default.props* \
+&nbsp;&nbsp;&nbsp;&nbsp;`$(MSBuildExtensionsPath)`\\`$(MSBuildToolsVersion)`\\*Microsoft.Common.props* \
+&nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*ImportBefore*\\*預設*\\\*。*屬性* \
+&nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*Platforms*\\`$(Platform)`\\*Platform.default.props* \
+&nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*ImportAfter*\\*預設*\\\*。*屬性*
 
 我們將使用`$(_PlatformFolder)`屬性來保留`$(Platform)`平台資料夾位置。 這個屬性
 
-`$(VCTargetsPath)`\\*平台*\\`$(Platform)`
+> `$(VCTargetsPath)`\\*平台*\\`$(Platform)`
 
 Windows 傳統型應用程式，以及
 
-`$(VCTargetsPath)`\\*應用程式類型*\\`$(ApplicationType)`\\`$(ApplicationTypeRevision)`\\*平台*\\`$(Platform)`
+> `$(VCTargetsPath)`\\*應用程式類型*\\`$(ApplicationType)`\\`$(ApplicationTypeRevision)`\\*平台*\\`$(Platform)`
 
 至於其他項目。
 
 Props 檔案匯入順序如下：
 
-`$(VCTargetsPath)`\\*Microsoft.Cpp.props* &nbsp; &nbsp; &nbsp; &nbsp; `$(_PlatformFolder)` \\ *Platform.props* &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; `$(VCTargetsPath)` \\ *Microsoft.Cpp.Platform.props* &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; `$(_PlatformFolder)` \\ *ImportBefore*\\\*.*props* &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; `$(_PlatformFolder)` \\ *PlatformToolsets*\\`$(PlatformToolset)`\\*Toolset.props* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(_PlatformFolder)`\\ *</c152>ImportAfter<spanclass="notranslate">*\\\*。*屬性</span>*
+> `$(VCTargetsPath)`\\*Microsoft.Cpp.props* \
+&nbsp;&nbsp;&nbsp;&nbsp;`$(_PlatformFolder)`\\*Platform.props* \
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*Microsoft.Cpp.Platform.props* \
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(_PlatformFolder)`\\*ImportBefore*\\\*.*props* \
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(_PlatformFolder)`\\*PlatformToolsets*\\`$(PlatformToolset)`\\*Toolset.props* \
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(_PlatformFolder)`\\*ImportAfter*\\\*。*屬性*
 
 目標檔案匯入順序如下：
 
-`$(VCTargetsPath)`\\*Microsoft.Cpp.targets* &nbsp; &nbsp; &nbsp; &nbsp; `$(VCTargetsPath)` \\ *Microsoft.Cpp.Current.targets* &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; `$(_PlatformFolder)` \\ *Platform.targets* &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; `$(VCTargetsPath)` \\ *Microsoft.Cpp.Platform.targets* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</c102><spanclass="notranslate">&nbsp;`$(_PlatformFolder)`\\*ImportBefore*\\\*。*目標* &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; `$(_PlatformFolder)` \\ *PlatformToolsets* \\ `$(PlatformToolset)` \\ *Toolset.target* &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; `$(_PlatformFolder)` \\ *ImportAfter*\\\*.*目標</span>*
+> `$(VCTargetsPath)`\\*Microsoft.Cpp.targets* \
+&nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*Microsoft.Cpp.Current.targets* \
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(_PlatformFolder)`\\*Platform.targets* \
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*Microsoft.Cpp.Platform.targets* \
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(_PlatformFolder)`\\*ImportBefore*\\\*。*目標* \
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(_PlatformFolder)`\\*PlatformToolsets*\\`$(PlatformToolset)`\\*Toolset.target* \
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(_PlatformFolder)`\\*ImportAfter*\\\*。*目標*
 
 如果您需要定義一些預設屬性，您的工具組，您可以將檔案新增到適當的 ImportBefore 和 ImportAfter 資料夾。
 
@@ -119,13 +153,13 @@ Props 檔案匯入順序如下：
 
 - `$(VCTargetsPath)`\\*Microsoft.CppCommon.targets*
 
-   此檔案會定義原生組建程序的主要部分，並也會匯入：
+  此檔案會定義原生組建程序的主要部分，並也會匯入：
 
-   - `$(VCTargetsPath)`\\*Microsoft.CppBuild.targets*
+  - `$(VCTargetsPath)`\\*Microsoft.CppBuild.targets*
 
-   - `$(VCTargetsPath)`\\*Microsoft.BuildSteps.targets*
+  - `$(VCTargetsPath)`\\*Microsoft.BuildSteps.targets*
 
-   - `$(MSBuildToolsPath)`\\*Microsoft.Common.Targets*
+  - `$(MSBuildToolsPath)`\\*Microsoft.Common.Targets*
 
 - `$(VCTargetsPath)`\\*Microsoft.Cpp.Common.props*
 
@@ -135,11 +169,11 @@ Props 檔案匯入順序如下：
 
    這個檔案會決定 Windows SDK 的位置，並定義一些重要的屬性，用於以 Windows 為目標的應用程式。
 
-### <a name="integrate-toolset-specific-targets-with-the-default-c-build-process"></a>以預設的 c + + 建置程序整合工具組特定目標
+### <a name="integrate-toolset-specific-targets-with-the-default-c-build-process"></a>整合工具組特定目標的預設值C++建置程序
 
-預設的 c + + 建置程序定義於*Microsoft.CppCommon.targets*。 那里的目標不要呼叫任何特定的建置工具;它們會指定主要建置步驟、 順序和相依性。
+預設值C++中所定義的建置程序*Microsoft.CppCommon.targets*。 那里的目標不要呼叫任何特定的建置工具;它們會指定主要建置步驟、 順序和相依性。
 
-C + + 建置具有三個主要的步驟，由下列目標：
+C++組建有三個主要的步驟，由下列目標：
 
 - `BuildGenerateSources`
 
@@ -263,7 +297,7 @@ Microsoft.Cpp.Common.Tasks.dll 會實作下列工作：
 
 目標會使用預設的 MSBuild 累加建置`Inputs`和`Outputs`屬性。 如果您指定它們，MSBuild 就會呼叫目標只能在任何輸入有較新的時間戳記，於所有輸出。 原始程式檔通常包含或匯入其他檔案，並建置工具產生不同的工具選項而定的輸出，因為它很難指定所有可能的輸入和輸出中的 MSBuild 目標。
 
-若要管理此問題，c + + 建置會使用不同的技巧，來支援累加建置。 大部分的目標不指定輸入和輸出，並如此一來，一律會在建置期間執行。 呼叫目標的工作撰寫所有的相關資訊輸入，並輸出到*tlog*副檔名的.tlog 檔案。 用來檢查項目已變更且需要重建的更新版本組建的.tlog 檔案，以及為何保持最新狀態。 .tlog 檔案也是預設的組建保持最新狀態檢查在 IDE 中的唯一來源。
+若要管理這個問題，請C++建置使用不同的技術來支援累加建置。 大部分的目標不指定輸入和輸出，並如此一來，一律會在建置期間執行。 呼叫目標的工作撰寫所有的相關資訊輸入，並輸出到*tlog*副檔名的.tlog 檔案。 用來檢查項目已變更且需要重建的更新版本組建的.tlog 檔案，以及為何保持最新狀態。 .tlog 檔案也是預設的組建保持最新狀態檢查在 IDE 中的唯一來源。
 
 若要判斷所有輸入和輸出，原生工具工作會使用 tracker.exe 並[FileTracker](/dotnet/api/microsoft.build.utilities.filetracker) MSBuild 所提供的類別。
 
@@ -286,12 +320,11 @@ MSBuild 會提供這些協助程式類別，來讀取和寫入.tlog 檔案：
 
 命令列的.tlog 檔案包含在組建中使用命令列的相關資訊。 它們只會用於累加建置，而不是最新的檢查，所以內部的格式取決於它們所產生的 MSBuild 工作。
 
-
 ### <a name="read-tlog-format"></a>閱讀.tlog 格式
 
 *讀取*.tlog 檔案。 (\*.read。\*。tlog) 包含原始程式檔和其相依性的相關資訊。
 
-插入號 (**^**) 開頭的一條線表示一個或多個來源。 共用相同的相依性的來源以分隔號分隔 (**\|**)。
+插入號 ( **^** ) 開頭的一條線表示一個或多個來源。 共用相同的相依性的來源以分隔號分隔 ( **\|** )。
 
 在來源中，每個的那一行之後，會列出相依性檔案。 所有的檔案名稱都是完整路徑。
 
@@ -316,7 +349,7 @@ F:\TEST\CONSOLEAPPLICATION1\CONSOLEAPPLICATION1\CLASS1.H
 
 *撰寫*.tlog (\*.write。\*。tlog) 檔案會在來源和輸出連線。
 
-插入號 (**^**) 開頭的一條線表示一個或多個來源。 多個來源以分隔號分隔 (**\|**)。
+插入號 ( **^** ) 開頭的一條線表示一個或多個來源。 多個來源以分隔號分隔 ( **\|** )。
 
 在來源中，每個的那一行之後，應該會列出從來源建置的輸出檔案。 所有的檔案名稱必須是完整路徑。
 
@@ -333,9 +366,9 @@ F:\TEST\CONSOLEAPPLICATION1\DEBUG\CONSOLEAPPLICATION1.PDB
 
 在 IDE 中，.vcxproj 專案會使用一組的 MSBuild 目標，以從專案取得其他資訊，以及重新產生輸出檔案。 這些目標的一些只適用於設計階段組建，但其中大部分用於定期執行組建和設計階段組建。
 
-如需設計階段組建的一般資訊，請參閱的 CPS 文件[設計階段建置](https://github.com/dotnet/project-system/blob/master/docs/design-time-builds.md)。 這份文件只是部分適用於 Visual c + + 專案。
+如需設計階段組建的一般資訊，請參閱的 CPS 文件[設計階段建置](https://github.com/dotnet/project-system/blob/master/docs/design-time-builds.md)。 這份文件才對視覺效果部分適用C++專案。
 
-`CompileDesignTime`和`Compile`設計階段中所述的目標建置從未執行.vcxproj 專案的文件。 Visual c + +.vcxproj 專案會使用不同的設計階段目標來取得 IntelliSense 資訊。
+`CompileDesignTime`和`Compile`設計階段中所述的目標建置從未執行.vcxproj 專案的文件。 視覺化C++.vcxproj 專案使用不同的設計階段目標來取得 IntelliSense 資訊。
 
 ### <a name="design-time-targets-for-intellisense-information"></a>IntelliSense 資訊的設計階段目標
 
@@ -410,15 +443,15 @@ msbuild /p:SolutionDir=*solution-directory-with-trailing-backslash*;Configuratio
 @="{83046B3F-8984-444B-A5D2-8029DEE2DB70}"
 ```
 
-## <a name="visual-c-project-extensibility-in-the-visual-studio-ide"></a>Visual Studio IDE 中的 visual c + + 專案擴充性
+## <a name="visual-c-project-extensibility-in-the-visual-studio-ide"></a>視覺化C++專案在 Visual Studio IDE 中的擴充性
 
-Visual c + + 專案系統根據[VS 專案系統](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/Index.md)，並使用其擴充性點。 不過，專案階層架構實作是特定 Visual c + +，而且不會根據 CPS，階層擴充性受限於專案項目。
+視覺效果C++專案系統以基礎[VS 專案系統](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/Index.md)，並使用其擴充性點。 不過，特定視覺效果專案階層架構實作是C++而不根據 CPS，所以階層架構的擴充性會限制為專案項目。
 
 ### <a name="project-property-pages"></a>專案屬性頁
 
 一般設計資訊，請參閱[VC + + 專案的 Framework 多目標](https://devblogs.microsoft.com/visualstudio/framework-multi-targeting-for-vc-projects/)。
 
-簡單地說，屬性頁 所示**專案屬性**所定義的 c + + 專案 對話方塊*規則*檔案。 規則檔案指定要顯示在 [屬性] 頁面上，以及如何在它們應儲存在專案和檔案屬性的集。 規則檔案是使用 Xaml 格式的.xml 檔案。 用來序列化它們的型別所述[Microsoft.Build.Framework.XamlTypes](/dotnet/api/microsoft.build.framework.xamltypes)。 如需有關使用的專案中的規則檔案，請參閱[屬性頁面 XML 規則檔案](/cpp/build/reference/property-page-xml-files)。
+簡單地說，屬性頁 所示**專案屬性** 對話方塊的C++專案所定義*規則*檔案。 規則檔案指定要顯示在 [屬性] 頁面上，以及如何在它們應儲存在專案和檔案屬性的集。 規則檔案是使用 Xaml 格式的.xml 檔案。 用來序列化它們的型別所述[Microsoft.Build.Framework.XamlTypes](/dotnet/api/microsoft.build.framework.xamltypes)。 如需有關使用的專案中的規則檔案，請參閱[屬性頁面 XML 規則檔案](/cpp/build/reference/property-page-xml-files)。
 
 規則檔案必須新增至`PropertyPageSchema`項目群組：
 
@@ -435,9 +468,9 @@ Visual c + + 專案系統根據[VS 專案系統](https://github.com/Microsoft/VS
 
 `Project` | `File` | `PropertySheet`
 
-CPS 支援內容類型，使用其他值，但不會用在 Visual c + + 專案中。
+CPS 會支援其他值的內容型別，但不會用在視覺效果C++專案。
 
-如果規則應該顯示在一個以上的內容，請使用分號 (**;**) 來分隔內容值，如下所示：
+如果規則應該顯示在一個以上的內容，請使用分號 ( **;** ) 來分隔內容值，如下所示：
 
 ```xml
 <PropertyPageSchema Include="$(MyFolder)\MyRule.xml">
@@ -479,7 +512,7 @@ CPS 支援內容類型，使用其他值，但不會用在 Visual c + + 專案�
 
 #### <a name="override-a-rule"></a>覆寫規則
 
-或許您想要您的工具組使用大部分的專案預設規則，但取代其中一個或幾個。 例如，假設您只想要變更 C/c + + 規則，以顯示不同的編譯器參數。 您可以提供新的規則具有相同名稱和顯示名稱與現有的規則，並將它併入`PropertyPageSchema`之後匯入的預設 cpp 目標項目群組。 只有一個具有指定名稱的規則會在專案中，和最後一個納入`PropertyPageSchema`項目群組 wins。
+或許您想要您的工具組使用大部分的專案預設規則，但取代其中一個或幾個。 例如，假設您只想要變更 C /C++規則，以顯示不同的編譯器參數。 您可以提供新的規則具有相同名稱和顯示名稱與現有的規則，並將它併入`PropertyPageSchema`之後匯入的預設 cpp 目標項目群組。 只有一個具有指定名稱的規則會在專案中，和最後一個納入`PropertyPageSchema`項目群組 wins。
 
 #### <a name="project-items"></a>專案項目
 
@@ -555,7 +588,7 @@ Visual Studio 中的偵錯服務支援的偵錯引擎的擴充性。 如需詳�
 
 1. 屬性`_UpgradePlatformToolsetFor_<safe_toolset_name>`定義目前的工具組，且其值不等於目前的工具組。
 
-   在這些屬性名稱 中，  *\<safe_toolset_name >* 由底線取代所有的非英數字元與代表的工具組的名稱 (**\_**)。
+   在這些屬性名稱 中，  *\<safe_toolset_name >* 由底線取代所有的非英數字元與代表的工具組的名稱 ( **\_** )。
 
 當可以升級專案時，它所參與*重定方案目標*。 如需詳細資訊，請參閱 < [IVsTrackProjectRetargeting2](/dotnet/api/microsoft.visualstudio.shell.interop.ivstrackprojectretargeting2)。
 
@@ -614,7 +647,7 @@ internal class MyProjectUpgrader: IProjectRetargetHandler
 
 ## <a name="project-cache-and-extensibility"></a>專案快取和擴充性
 
-若要改善效能，使用在 Visual Studio 2017 中，大型 c + + 方案時[專案快取](https://devblogs.microsoft.com/cppblog/faster-c-solution-load-with-vs-15/)引進。 它會實作為 SQLite 資料庫填入專案資料，以及用來載入專案而不需要載入記憶體中的 MSBuild 或 CPS 專案。
+若要改善效能，使用 大型時C++在 Visual Studio 2017 中，解決方案[專案快取](https://devblogs.microsoft.com/cppblog/faster-c-solution-load-with-vs-15/)導入。 它會實作為 SQLite 資料庫填入專案資料，以及用來載入專案而不需要載入記憶體中的 MSBuild 或 CPS 專案。
 
 因為沒有 CPS 物件從快取載入的.vcxproj 專案存在，擴充功能的 MEF 元件，匯入`UnconfiguredProject`或`ConfiguredProject`無法建立。 若要支援擴充性，Visual Studio 會偵測是否專案會使用 （或可能會使用） MEF 擴充功能時，不使用專案快取。
 
@@ -636,8 +669,8 @@ internal class MyProjectUpgrader: IProjectRetargetHandler
 
 ## <a name="additional-resources"></a>其他資源
 
-Microsoft 建置系統 ([MSBuild](../msbuild/msbuild.md)) 提供的專案檔建置引擎和可延伸的 XML 格式。 您應該先熟悉與 basic [MSBuild 概念](../msbuild/msbuild-concepts.md)與如何[Visual c + + 的 MSBuild](/cpp/build/reference/msbuild-visual-cpp-overview)運作，以擴充 Visual c + + 專案系統。
+Microsoft 建置系統 ([MSBuild](../msbuild/msbuild.md)) 提供的專案檔建置引擎和可延伸的 XML 格式。 您應該先熟悉與 basic [MSBuild 概念](../msbuild/msbuild-concepts.md)與如何[視覺效果的 MSBuild C++ ](/cpp/build/reference/msbuild-visual-cpp-overview)為了擴充視覺效果的運作方式C++專案系統。
 
-Managed Extensibility Framework ([MEF](/dotnet/framework/mef/)) 提供延伸模組 CPS 和 Visual c + + 專案系統所使用的 Api。 CPS 如何使用 MEF 的概觀，請參閱[CPS 和 MEF](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/overview/mef.md#cps-and-mef)中[VSProjectSystem MEF 概觀](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/overview/mef.md)。
+Managed Extensibility Framework ([MEF](/dotnet/framework/mef/)) 提供延伸模組 CPS 和視覺效果所使用的 ApiC++專案系統。 CPS 如何使用 MEF 的概觀，請參閱[CPS 和 MEF](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/overview/mef.md#cps-and-mef)中[VSProjectSystem MEF 概觀](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/overview/mef.md)。
 
-您可以自訂現有的建置系統，以新增建置步驟或新的檔案類型。 如需詳細資訊，請參閱 < [MSBuild （Visual c + +） 概觀](/cpp/build/reference/msbuild-visual-cpp-overview)並[使用專案屬性](/cpp/build/working-with-project-properties)。
+您可以自訂現有的建置系統，以新增建置步驟或新的檔案類型。 如需詳細資訊，請參閱 < [MSBuild (Visual C++) 概觀](/cpp/build/reference/msbuild-visual-cpp-overview)並[使用專案屬性](/cpp/build/working-with-project-properties)。

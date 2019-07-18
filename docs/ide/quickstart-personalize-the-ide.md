@@ -7,18 +7,28 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 504b33ee897ac59b7fe55625a67a01b8dca8ff32
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: eccbc834f4038ec18c2f84244488b81a59ecbfbf
+ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57869327"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65531564"
 ---
-# <a name="quickstart-personalize-the-visual-studio-ide-and-editor"></a>快速入門：個人化 Visual Studio 整合式開發環境 (IDE) 及編輯器
+# <a name="personalize-the-visual-studio-ide-and-editor"></a>個人化 Visual Studio 整合式開發環境 (IDE) 及編輯器
 
-在這段 5-10 分鐘的快速入門中，我們會選取深色佈景主題，來自訂 Visual Studio 色彩佈景主題。 我們還會為文字編輯器中的兩種不同文字自訂色彩。
+在這段 5-10 分鐘的教學課程中，我們會選取深色佈景主題，來自訂 Visual Studio 色彩佈景主題。 我們還會為文字編輯器中的兩種不同文字自訂色彩。
 
-如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017)頁面免費進行安裝。
+::: moniker range="vs-2017"
+
+如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)頁面免費進行安裝。
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019)頁面免費進行安裝。
+
+::: moniker-end
 
 ## <a name="set-the-color-theme"></a>設定色彩佈景主題
 
@@ -28,9 +38,19 @@ Visual Studio 使用者介面的預設色彩佈景主題為 [藍色]。 讓我�
 
 1. 在 [環境] > [一般] 選項頁面上，將 [色彩佈景主題] 選項變更為 [深色]，然後選擇 [確定]。
 
-   完整的 Visual Studio 開發環境 (IDE) 色彩佈景主題變更為 [深色]。
+   整個 Visual Studio 開發環境 (IDE) 色彩佈景主題變更為 [深色]。
 
-   ![深色佈景主題的 VS](media/quickstart-personalize-dark-theme.png)
+   ::: moniker range="vs-2017"
+
+   ![深色佈景主題的 Visual Studio 2017](media/quickstart-personalize-dark-theme.png)
+
+   ::: moniker-end
+
+   ::: moniker range="vs-2019"
+
+   ![深色佈景主題的 Visual Studio 2019](media/vs-2019/dark-theme.png)
+
+   ::: moniker-end
 
 > [!TIP]
 > 您可以從 [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.VisualStudio2017ColorThemeEditor) \(英文\) 安裝 **Visual Studio 色彩佈景主題編輯器**，以安裝額外的預先定義佈景主題。 安裝此工具之後，[色彩佈景主題] 下拉式清單中便會出現額外的色彩佈景主題。
@@ -97,5 +117,5 @@ Visual Studio 使用者介面的預設色彩佈景主題為 [藍色]。 讓我�
 
 ## <a name="see-also"></a>另請參閱
 
-- [自訂編輯器](../ide/customizing-the-editor.md)
+- [自訂編輯器](../ide/how-to-change-text-case-in-the-editor.md)
 - [Visual Studio IDE 概觀](../get-started/visual-studio-ide.md)

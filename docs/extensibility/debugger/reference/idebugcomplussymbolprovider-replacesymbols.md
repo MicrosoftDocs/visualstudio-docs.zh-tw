@@ -6,17 +6,20 @@ helpviewer_keywords:
 - ReplaceSymbols
 - IDebugComPlusSymbolProvider::ReplaceSymbols
 ms.assetid: 82fbc8db-c4b1-432f-bec9-1a9dc09570be
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e863d6af1ed78fc0fe3c4d683386826708c39708
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 15af82459df5b2c8406280287115fbe345a63788
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56679963"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66352826"
 ---
 # <a name="idebugcomplussymbolproviderreplacesymbols"></a>IDebugComPlusSymbolProvider::ReplaceSymbols
 目前的偵錯符號取代指定的資料流中。
@@ -39,18 +42,15 @@ int ReplaceSymbols(
 );
 ```
 
-#### <a name="parameters"></a>參數
-`ulAppDomainID`
+## <a name="parameters"></a>參數
+`ulAppDomainID`\
+[in]應用程式定義域的識別項。
 
- [in]應用程式定義域的識別項。
+`guidModule`\
+[in]模組的唯一識別碼。
 
-`guidModule`
-
- [in]模組的唯一識別碼。
-
-`pStream`
-
- [in]資料流，其中包含新的符號。
+`pStream`\
+[in]資料流，其中包含新的符號。
 
 ## <a name="return-value"></a>傳回值
 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

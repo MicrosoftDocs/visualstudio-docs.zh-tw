@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d44c9a4a5c59907c527c47523c6c758adaf7ee51
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 7dd2945ec12ac398f2887d20d3d0cb6156f4ed3c
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55938029"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66745218"
 ---
 # <a name="performance-warnings"></a>效能警告
 效能警告支援高效能程式庫和應用程式。
@@ -38,7 +38,7 @@ ms.locfileid: "55938029"
 | [CA1810:初始化參考類型的靜態欄位內嵌](../code-quality/ca1810-initialize-reference-type-static-fields-inline.md) | 當類型宣告明確的靜態建構函式時，Just-In-Time (JIT) 編譯器會將檢查加入至類型的每個靜態方法和執行個體建構函式，確保之前已呼叫該靜態建構函式。 靜態建構函式檢查會降低效能。 |
 | [CA1811:避免使用未呼叫的私用程式碼](../code-quality/ca1811-avoid-uncalled-private-code.md) | 私用或內部 （組件層級） 成員並沒有呼叫端組件中、 無法叫用 common language runtime 中，和不叫用的委派。 |
 | [CA1812:避免使用未執行個體化的內部類別](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md) | 組件層級類型的執行個體不是由組件中的程式碼所建立。 |
-| [CA1813:避免使用非密封的屬性](../code-quality/ca1813-avoid-unsealed-attributes.md) | .NET Framework 類別庫會提供方法來擷取自訂屬性。 根據預設，這些方法會搜尋屬性繼承階層架構。 密封屬性會減少對整個繼承階層架構的搜尋，並且可以改進效能。 |
+| [CA1813:避免使用非密封的屬性](../code-quality/ca1813-avoid-unsealed-attributes.md) | .NET 提供方法來擷取自訂屬性。 根據預設，這些方法會搜尋屬性繼承階層架構。 密封屬性會減少對整個繼承階層架構的搜尋，並且可以改進效能。 |
 | [CA1814:建議使用不規則陣列取代多維](../code-quality/ca1814-prefer-jagged-arrays-over-multidimensional.md) | 不規則陣列是一種陣列，其元素也是陣列。 產生的項目陣列可以是不同的大小，可能會導致某些資料集而言較不會浪費空間。 |
 | [CA1815:覆寫實值型別上的 Equals 和等號比較運算子](../code-quality/ca1815-override-equals-and-operator-equals-on-value-types.md) | 對於實值類型而言，Equals 的繼承實作會使用 Reflection 程式庫，並比較所有欄位的內容。 但是 Reflection 相當耗費運算資源，而且可能不需要比較每個欄位是否相等。 如果希望使用者比較或排序執行個體，或是使用執行個體做為雜湊資料表索引鍵，則您的實值類型應實作 Equals。 |
 | [CA1816:呼叫 GC。SuppressFinalize 正確](../code-quality/ca1816-call-gc-suppressfinalize-correctly.md) | Dispose 實作的方法不會呼叫 GC。SuppressFinalize 或不是實作 Dispose 方法呼叫 GC。SuppressFinalize 或方法呼叫 GC。SuppressFinalize，並傳遞此以外的項目 (我在[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)])。 |

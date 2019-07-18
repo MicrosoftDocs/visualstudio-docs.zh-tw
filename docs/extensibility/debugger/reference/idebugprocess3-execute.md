@@ -7,23 +7,26 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProcess3::Execute
 ms.assetid: d831cd81-d7bf-4172-8517-aa699867791f
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 295db356ea11bb24eb8e121aca0fe54c015ef5e9
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 6b4b854c752bc7b1f66687074fbfe86286fc48fb
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56721949"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66314007"
 ---
 # <a name="idebugprocess3execute"></a>IDebugProcess3::Execute
 會繼續執行此程序，從停止的狀態。 在清除任何先前的執行狀態 （例如在步驟），並在處理序啟動重新執行。
 
 > [!NOTE]
->  應該使用這個方法，而不是[Execute](../../../extensibility/debugger/reference/idebugprogram2-execute.md)。
+> 應該使用這個方法，而不是[Execute](../../../extensibility/debugger/reference/idebugprogram2-execute.md)。
 
 ## <a name="syntax"></a>語法
 
@@ -39,10 +42,9 @@ int Execute(
 );
 ```
 
-#### <a name="parameters"></a>參數
- `pThread`
-
- [in][IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)物件，表示要執行的執行緒。
+## <a name="parameters"></a>參數
+`pThread`\
+[in][IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)物件，表示要執行的執行緒。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`，否則會傳回錯誤碼。
@@ -51,7 +53,7 @@ int Execute(
  當使用者從某些其他處理序的執行緒處於停止狀態，開始執行時，對此程序會呼叫這個方法。 當使用者選取時，也會呼叫此方法**開始**命令**偵錯**在 IDE 中的功能表。 此方法的實作可能會非常簡單，像是呼叫[Resume](../../../extensibility/debugger/reference/idebugthread2-resume.md)程序中目前的執行緒上的方法。
 
 > [!WARNING]
->  不會傳送停止事件或即時 （同步） 事件[事件](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)時處理這個呼叫; 否則為偵錯工具可能會停止回應。
+> 不會傳送停止事件或即時 （同步） 事件[事件](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)時處理這個呼叫; 否則為偵錯工具可能會停止回應。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugProcess3](../../../extensibility/debugger/reference/idebugprocess3.md)

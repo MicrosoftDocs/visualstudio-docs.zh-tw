@@ -1,32 +1,32 @@
 ---
-title: HOW TO：使用活動記錄檔 |Microsoft Docs
+title: 作法：使用活動記錄檔 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - VSPackages, debugging
 - VSPackages, troubleshooting
 ms.assetid: bb3d3322-0e5e-4dd5-b93a-24d5fbcd2ffd
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5cb2453d42517982cc1dd1e2a2f5c51814496392
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: 53888f85a41fdd5bef3985c4da986609a032e377
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57324009"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66309357"
 ---
 # <a name="how-to-use-the-activity-log"></a>HOW TO：使用活動記錄
 Vspackage 可以將訊息寫入活動記錄檔。 這項功能是對於在零售環境中偵錯 Vspackage 特別有用。
 
 > [!TIP]
->  永遠開啟活動記錄檔。 Visual Studio 會保留最近 100 個項目，以及具有一般的設定資訊的前 10 個項目一個循環緩衝區。
+> 永遠開啟活動記錄檔。 Visual Studio 會保留最近 100 個項目，以及具有一般的設定資訊的前 10 個項目一個循環緩衝區。
 
 ## <a name="to-write-an-entry-to-the-activity-log"></a>若要將項目寫入活動記錄檔
 
-1.  插入這個程式碼的<xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A>方法或任何其他方法，就只是 VSPackage 建構函式：
+1. 插入這個程式碼的<xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A>方法或任何其他方法，就只是 VSPackage 建構函式：
 
     ```csharp
     IVsActivityLog log = GetService(typeof(SVsActivityLog)) as IVsActivityLog;
@@ -40,7 +40,7 @@ Vspackage 可以將訊息寫入活動記錄檔。 這項功能是對於在零售
 
      這個程式碼取得<xref:Microsoft.VisualStudio.Shell.Interop.SVsActivityLog>服務，並將它轉換成<xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog>介面。 <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog.LogEntry%2A> 寫入至活動記錄使用目前的文化特性內容的參考項目。
 
-2.  當載入 VSPackage 時 （通常當叫用命令，或在開啟的視窗） 時，活動記錄檔寫入文字。
+2. 當載入 VSPackage 時 （通常當叫用命令，或在開啟的視窗） 時，活動記錄檔寫入文字。
 
 ## <a name="to-examine-the-activity-log"></a>若要查看活動記錄檔
 
@@ -48,7 +48,7 @@ Vspackage 可以將訊息寫入活動記錄檔。 這項功能是對於在零售
 
 2. 關閉 Visual Studio 之後, 找到活動記錄檔的子資料夾中的 Visual Studio 的資料：
 
-   <em>*%AppData%</em>\Microsoft\VisualStudio\\\<version>\ActivityLog.xml*.
+   <em> *%AppData%</em>\Microsoft\VisualStudio\\\<version>\ActivityLog.xml*.
 
 3. 使用任何文字編輯器中開啟活動記錄檔。 以下是典型的項目：
 

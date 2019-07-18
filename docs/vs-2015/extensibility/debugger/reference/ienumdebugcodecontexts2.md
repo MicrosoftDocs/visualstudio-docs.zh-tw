@@ -1,14 +1,9 @@
 ---
-title: IEnumDebugCodeContexts2 |Microsoft Docs
-ms.custom: ''
+title: IEnumDebugCodeContexts2 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IEnumDebugCodeContexts2
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 72915146-215f-4c99-a034-131b2b474e0e
 caps.latest.revision: 14
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 484ad1b1a084d40fe86c3ba36c90fdbc5cc4effa
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f36da19e6bc47d70010dd96a26256537803ccb29
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51773830"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62551614"
 ---
 # <a name="ienumdebugcodecontexts2"></a>IEnumDebugCodeContexts2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -55,17 +50,16 @@ IEnumDebugCodeContexts2 : IUnknown
 |[GetCount](../../../extensibility/debugger/reference/ienumdebugcodecontexts2-getcount.md)|取得列舉值中的程式碼內容的數目。|  
   
 ## <a name="remarks"></a>備註  
- Visual Studio 呼叫[EnumCodeContexts](../../../extensibility/debugger/reference/idebugprogram2-enumcodecontexts.md)來填入清單的程式碼內容的使用者可以選擇從時設定下一個陳述式，或顯示反組譯的原始程式檔。 比方說，多個程式碼內容可以發生的 c + + 樣式範本的多個執行個體時。  
+ Visual Studio 呼叫[EnumCodeContexts](../../../extensibility/debugger/reference/idebugprogram2-enumcodecontexts.md)來填入清單的程式碼內容的使用者可以選擇從時設定下一個陳述式，或顯示反組譯的原始程式檔。 多個程式碼內容時可能發生，例如，有多個執行個體C++-樣式範本。  
   
 ## <a name="requirements"></a>需求  
  標頭： msdbg.h  
   
- 命名空間： Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間：Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
  [核心介面](../../../extensibility/debugger/reference/core-interfaces.md)   
  [EnumCodeContexts](../../../extensibility/debugger/reference/idebugprogram2-enumcodecontexts.md)   
  [EnumCodeContexts](../../../extensibility/debugger/reference/idebugdocumentcontext2-enumcodecontexts.md)
-

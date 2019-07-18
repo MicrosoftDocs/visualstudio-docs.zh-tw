@@ -1,14 +1,9 @@
 ---
 title: 編輯後繼續錯誤和警告 (C#) |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 f1_keywords:
 - vs.csharp.enc.error_4001
 - vs.csharp.enc.error_4034
@@ -65,13 +60,13 @@ helpviewer_keywords:
 ms.assetid: c0e12b0a-8009-4a4a-979f-c804a91a5d9b
 caps.latest.revision: 11
 ms.author: mikejo
-manager: douge
-ms.openlocfilehash: ca47a7b7ea5a330176b6f75862819a4c0a5c64d9
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f83f421203b25edbbccf767c0661ece709dd63c4
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51793317"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62822949"
 ---
 # <a name="edit-and-continue-errors-and-warnings-c"></a>編輯後繼續的錯誤和警告 (C#)
 您對程式碼中某個區段進行的編輯，是 Visual C# [編輯後繼續] 不允許的編輯動作。  
@@ -84,11 +79,11 @@ ms.locfileid: "51793317"
   
 ### <a name="to-correct-this-error"></a>更正這個錯誤  
   
-1.  從 [ **偵錯** ] 功能表上選擇 [ **復原** ]，復原變更。  
+1. 從 [ **偵錯** ] 功能表上選擇 [ **復原** ]，復原變更。  
   
      -或-  
   
-2.  停止偵錯工作階段，進行編輯，然後開始新的偵錯工作階段。  
+2. 停止偵錯工作階段，進行編輯，然後開始新的偵錯工作階段。  
   
 ## <a name="see-also"></a>另請參閱  
  [編輯後繼續 (Visual C#)](../debugger/edit-and-continue-visual-csharp.md)

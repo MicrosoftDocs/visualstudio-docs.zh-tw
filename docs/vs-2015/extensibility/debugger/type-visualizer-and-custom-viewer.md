@@ -1,27 +1,22 @@
 ---
 title: 類型視覺化檢視和自訂檢視器 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], custom viewer
 - debugging [Debugging SDK], type visualizer
 ms.assetid: fd3691e6-9c78-4767-846f-43f85ada4375
 caps.latest.revision: 14
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 5319721d57212f4fc853ca99c1544a51d4af878c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: a85be2978abe35e91096b55fba5ec5281be25fbe
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51732141"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68185319"
 ---
 # <a name="type-visualizer-and-custom-viewer"></a>類型視覺化檢視和自訂檢視器
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -43,4 +38,3 @@ ms.locfileid: "51732141"
  [IDebugCustomViewer](../../extensibility/debugger/reference/idebugcustomviewer.md)   
  [IEEVisualizerService](../../extensibility/debugger/reference/ieevisualizerservice.md)   
  [IEEVisualizerDataProvider](../../extensibility/debugger/reference/ieevisualizerdataprovider.md)
-

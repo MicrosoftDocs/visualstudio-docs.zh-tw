@@ -6,17 +6,20 @@ helpviewer_keywords:
 - IDebugComPlusSymbolProvider::LoadSymbolsFromStream
 - LoadSymbolsFromStream
 ms.assetid: 1de272f0-24f4-4548-8b70-a205cddd4727
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4fb22dfdfb92b4955624a587a340d9f57eb2d59c
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 10b7eb21bd075e27aebb2b96e07b88363bc0f862
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56717945"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66352797"
 ---
 # <a name="idebugcomplussymbolproviderloadsymbolsfromstream"></a>IDebugComPlusSymbolProvider::LoadSymbolsFromStream
 載入偵錯符號的資料流。
@@ -43,26 +46,21 @@ int LoadSymbolsFromStream(
 );
 ```
 
-#### <a name="parameters"></a>參數
-`ulAppDomainID`
+## <a name="parameters"></a>參數
+`ulAppDomainID`\
+[in]應用程式定義域的識別項。
 
- [in]應用程式定義域的識別項。
+`guidModule`\
+[in]模組的唯一識別碼。
 
-`guidModule`
+`baseAddress`\
+[in]基底的記憶體位址。
 
- [in]模組的唯一識別碼。
+`pUnkMetadataImport`\
+[in]包含符號的中繼資料的物件。
 
-`baseAddress`
-
- [in]基底的記憶體位址。
-
-`pUnkMetadataImport`
-
- [in]包含符號的中繼資料的物件。
-
-`pStream`
-
- [in]包含符號的資料流。
+`pStream`\
+[in]包含符號的資料流。
 
 ## <a name="return-value"></a>傳回值
 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

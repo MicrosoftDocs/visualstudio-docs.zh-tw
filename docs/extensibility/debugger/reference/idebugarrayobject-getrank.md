@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugArrayObject::GetRank method
 ms.assetid: 9948551a-e334-4ff6-979c-08dab633b9b6
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a0391030e77e5959fdc28c94f63e099e5c505d77
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 9a733baf1be2e5a249c214547b31465bb2464ed6
+ms.sourcegitcommit: 6f7a740750b2cd17ea2275c3d046caebc9782917
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56683892"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "66351774"
 ---
 # <a name="idebugarrayobjectgetrank"></a>IDebugArrayObject::GetRank
 取得陣列，也就是維度數目的順位。
@@ -36,10 +39,9 @@ int GetRank(
 );
 ```
 
-#### <a name="parameters"></a>參數
- `pdwRank`
-
- [out]傳回順位。
+## <a name="parameters"></a>參數
+`pdwRank`\
+[out]傳回順位。
 
 ## <a name="return-value"></a>傳回值
  如果成功，會傳回 S_OK;否則，傳回錯誤碼。

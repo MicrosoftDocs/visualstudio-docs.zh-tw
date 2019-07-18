@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 673ca8137244fed933df0be3fa0221115951a9c1
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56618103"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "62838993"
 ---
 # <a name="idiasymbolfindsymbolsbyrvaforacceleratorpointertag"></a>IDiaSymbol::findSymbolsByRVAForAcceleratorPointerTag
 指定對應的標記值，這個方法會傳回此虛設常式函式，在指定的相對虛擬位址中所包含的符號的列舉。
@@ -48,6 +48,6 @@ HRESULT findSymbolsByRVAForAcceleratorPointerTag (
 ## <a name="remarks"></a>備註
  只有在呼叫這個方法`IDiaSymbol`加速器虛設常式函式對應的介面。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
 - [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)

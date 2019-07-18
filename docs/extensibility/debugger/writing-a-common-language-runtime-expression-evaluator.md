@@ -7,21 +7,21 @@ helpviewer_keywords:
 - expression evaluation, samples
 - debugging [Debugging SDK], expression evaluators tutorial
 ms.assetid: bd79d57f-8e0a-4e14-a417-0b1de28fa1b2
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b7621508c069d21e7d90d7477254fe03468b0ea3
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: c295fcd881ed5348842355846c37af95b725f17e
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56722521"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66348238"
 ---
 # <a name="writing-a-common-language-runtime-expression-evaluator"></a>撰寫 common language runtime 運算式評估工具
 > [!IMPORTANT]
->  在 Visual Studio 2015 中，這種實作運算式評估工具已被取代。 實作 CLR 運算式評估工具的詳細資訊，請參閱[CLR 運算式評估工具](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)並[Managed 運算式評估工具範例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。
+> 在 Visual Studio 2015 中，這種實作運算式評估工具已被取代。 實作 CLR 運算式評估工具的詳細資訊，請參閱[CLR 運算式評估工具](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)並[Managed 運算式評估工具範例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。
 
  運算式評估工具 (EE) 是偵錯引擎 (DE) 處理語法的一部分，並產生程式碼進行偵錯的程式語言的語意。 運算式必須評估內容中的一種程式設計語言。 比方說，在某些語言中，"A + B"的運算式表示"總和 A 和 b。 」 在其他語言中，相同的運算式可能表示 「 A 或 B 」 因此，個別 EE 必須寫入針對每個 Visual Studio IDE 中產生物件来進行偵錯的程式碼的程式設計語言。
 

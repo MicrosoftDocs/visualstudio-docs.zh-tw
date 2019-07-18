@@ -9,12 +9,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7ac13299a8b727a3ef8e717e3d0a4c2c9f3738cf
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 1ed80454f6a87047de9e338d26c749d3c27a98ea
+ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223056"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67258128"
 ---
 # <a name="live-unit-testing-frequently-asked-questions"></a>Live Unit Testing 常見問題集
 
@@ -30,32 +30,15 @@ ms.locfileid: "57223056"
 
 Live Unit Testing 適用於下表所列的三種熱門單元測試架構。 其配接器與架構所支援的最小版本也列於表格中。 單元測試架構全都可從 NuGet.org 取得。
 
-<table>
-<tr>
-   <th>測試架構</th>
-   <th>Visual Studio 配接器最小版本</th>
-   <th>架構最小版本</th>
-</tr>
-<tr>
-   <td>xUnit.net</td>
-   <td> xunit.runner.visualstudio 版本 2.2.0-beta3-build1187</td>
-   <td>xunit 1.9.2</td>
-</tr>
-<tr>
-   <td>NUnit</td>
-   <td>NUnit3TestAdapter 版本 3.5.1</td>
-   <td>NUnit 版本 3.5.0</td>
-</tr>
-<tr>
-   <td>MSTest</td>
-   <td>MSTest.TestAdapter 1.1.4-preview</td>
-   <td>MSTest.TestFramework 1.0.5-preview</td>
-</tr>
-</table>
+|測試架構  |Visual Studio 配接器最小版本  |架構最小版本  |
+|---------|---------|---------|
+|xUnit.net |xunit.runner.visualstudio 版本 2.2.0-beta3-build1187 |xunit 1.9.2 |
+|NUnit |NUnit3TestAdapter 版本 3.7.0 |NUnit 版本 3.5.0 |
+|MSTest |MSTest.TestAdapter 1.1.4-preview |MSTest.TestFramework 1.0.5-preview |
 
 如果您的舊型 MSTest 測試專案參考 `Microsoft.VisualStudio.QualityTools.UnitTestFramework`，但您不想要移至新版 MSTest NuGet 套件，請升級至 Visual Studio 2017 15.4 版或更新版本。
 
-在某些情況下，您可能需要明確地還原方案中的專案所參考的 NuGet 封裝，才能使 Live Unit Testing 運作。 若要還原套件，您可以在啟用 Living Unit Testing 之前，明確地建置方案 (從最上層的 Visual Studio 功能表中依序選取 [建置] 和 [重建方案])，或是以滑鼠右鍵按一下方案，然後選取 [還原 NuGet 套件])。
+在某些情況下，您可能需要明確地還原方案中的專案所參考的 NuGet 封裝，才能使 Live Unit Testing 運作。 若要還原套件，您可以在啟用 Living Unit Testing 之前，明確地建置方案 (從最上層的 Visual Studio 功能表中依序選取 [建置]  和 [重建方案]  )，或是以滑鼠右鍵按一下方案，然後選取 [還原 NuGet 套件]  )。
 
 ## <a name="net-core-support"></a>.NET Core 支援
 
@@ -67,7 +50,7 @@ Live Unit Testing 適用於下表所列的三種熱門單元測試架構。 其�
 
 **當我開啟 Live Unit Testing 時，為什麼它不會運作？**
 
-[輸出] 視窗 (選取 Live Unit Testing 下拉式清單時) 應該會說明 Live Unit Testing 為何無法運作。 Live Unit Testing 不會運作的可能原因如下：
+[輸出]  視窗 (選取 Live Unit Testing 下拉式清單時) 應該會說明 Live Unit Testing 為何無法運作。 Live Unit Testing 不會運作的可能原因如下：
 
 - 如果方案中之專案所參考的 NuGet 封裝尚未還原，Live Unit Testing 將不會運作。 在開啟 Live Unit Testing 之前明確地建置方案，或是還原方案中的 NuGet 套件，應該就能解決此問題。
 
@@ -152,15 +135,15 @@ Live Unit Testing 適用於下表所列的三種熱門單元測試架構。 其�
 
 差異如下：
 
-- 從 [測試總管] 視窗針對測試進行執行或偵錯會執行一般的二進位檔，而 Live Unit Testing 會執行已檢測的二進位檔。 如果您想要偵錯已檢測的二進位檔，在您的測試方法中新增 [Debugger.Launch](xref:System.Diagnostics.Debugger.Launch) 方法呼叫會導致偵錯工具在每次執行該方法時 (包括 Live Unit Testing 執行該方法時) 啟動，您接著便可以附加已檢測的二進位檔，並對它進行偵錯。 不過，我們希望檢測設備在大部分的使用者案例中對您而言是透明的，且您不會需要對已檢測的二進位檔進行偵錯。
+- 從 [測試總管]  視窗針對測試進行執行或偵錯會執行一般的二進位檔，而 Live Unit Testing 會執行已檢測的二進位檔。 如果您想要偵錯已檢測的二進位檔，在您的測試方法中新增 [Debugger.Launch](xref:System.Diagnostics.Debugger.Launch) 方法呼叫會導致偵錯工具在每次執行該方法時 (包括 Live Unit Testing 執行該方法時) 啟動，您接著便可以附加已檢測的二進位檔，並對它進行偵錯。 不過，我們希望檢測設備在大部分的使用者案例中對您而言是透明的，且您不會需要對已檢測的二進位檔進行偵錯。
 
-- Live Unit Testing 不會建立新的應用程式定義域來執行測試，但從 [測試總管] 視窗中執行的測試會建立新的應用程式定義域。
+- Live Unit Testing 不會建立新的應用程式定義域來執行測試，但從 [測試總管]  視窗中執行的測試會建立新的應用程式定義域。
 
-- Live Unit Testing 會循序執行每個測試組件中的測試，然而，如果您從 [測試總管] 視窗執行多個測試，並選取 [平行執行測試] 按鈕，測試將會平行執行。
+- Live Unit Testing 會循序執行每個測試組件中的測試，然而，如果您從 [測試總管]  視窗執行多個測試，並選取 [平行執行測試]  按鈕，測試將會平行執行。
 
-- 在 Live Unit Testing 中探索和執行測試會使用 `TestPlatform` 的第 2 版，而 [測試總管] 視窗則會使用第 1 版。 儘管如此，您在大多數情況下不會注意到任何差異。
+- 在 Live Unit Testing 中探索和執行測試會使用 `TestPlatform` 的第 2 版，而 [測試總管]  視窗則會使用第 1 版。 儘管如此，您在大多數情況下不會注意到任何差異。
 
-- 根據預設，[測試總管] 目前會在單一執行緒 Apartment (STA) 中執行測試，而 Live Unit Testing 會在多執行緒 Apartment (MTA) 中執行測試。 若要在 Live Unit Testing 於 STA 中執行 MSTest 測試，請利用可在 `MSTest.STAExtensions 1.0.3-beta` NuGet 封裝中找到的 `<STATestMethod>` 或 `<STATestClass>` 屬性，來裝飾測試方法或包含類別。 針對 NUnit，請使用 `<RequiresThread(ApartmentState.STA)>` 屬性來裝飾測試方法，而針對 xUnit，請使用 `<STAFact>` 屬性。
+- 根據預設，[測試總管]  目前會在單一執行緒 Apartment (STA) 中執行測試，而 Live Unit Testing 會在多執行緒 Apartment (MTA) 中執行測試。 若要在 Live Unit Testing 於 STA 中執行 MSTest 測試，請利用可在 `MSTest.STAExtensions 1.0.3-beta` NuGet 封裝中找到的 `<STATestMethod>` 或 `<STATestClass>` 屬性，來裝飾測試方法或包含類別。 針對 NUnit，請使用 `<RequiresThread(ApartmentState.STA)>` 屬性來裝飾測試方法，而針對 xUnit，請使用 `<STAFact>` 屬性。
 
 ## <a name="exclude-tests"></a>排除測試
 
@@ -215,15 +198,6 @@ public class Class1
 
 每當 Live Unit Testing 偵測到原始程式檔已變更時，即會開始建置。 由於您方案的組建會產生原始程式檔，Live Unit Testing 將陷入無限的建置迴圈。 不過，如果在 Live Unit Testing 開始第二個組建時 (從上一個組建中偵測到新產生的原始程式檔之後) 檢查目標的輸入和輸出，它就會脫離該建置迴圈，因為輸入和輸出檢查將指出一切均為最新狀態。  
 
-## <a name="lightweight-solution-load"></a>輕量型解決方案載入
-
-**Live Unit Testing 如何與輕量型解決方案載入功能搭配運作？**
-
-Live Unit Testing 目前無法與輕量型解決方案載入功能良好搭配。 它只有在載入至少一個測試專案之後才會運作。 在那之前，它將不會運作，因為 Live Unit Testing 相依於至少一個參考所載入測試配接器 (MSTest、xUnit 或 NUnit) 的測試專案。
-
-> [!NOTE]
-> Visual Studio 2017 15.5 版和更新版本不再提供輕量型解決方案載入。 在 Visual Studio 2017 15.5 版和更新版本中，即便不使用輕量型解決方案載入，含有受控碼之大型解決方案的載入速度也比過去更快。
-
 ## <a name="new-process-coverage"></a>新的程序涵蓋範圍
 
 **為什麼 Live Unit Testing 無法從測試所建立的新程序中擷取涵蓋範圍？**
@@ -250,13 +224,13 @@ Live Unit Testing 目前無法與輕量型解決方案載入功能良好搭配�
 
 您可以執行數個動作來收集更詳細的記錄：
 
-- 移至 [工具] > [選項] > [Live Unit Testing]，然後將記錄選項變更為 [詳細資訊]。 詳細資訊記錄會使 [輸出] 視窗顯示更詳細的記錄。
+- 移至 [工具]   > [選項]   > [Live Unit Testing]  ，然後將記錄選項變更為 [詳細資訊]  。 詳細資訊記錄會使 [輸出]  視窗顯示更詳細的記錄。
 
 - 將 `LiveUnitTesting_BuildLog` 使用者環境變數設為您想要用來擷取 MSBuild 記錄的檔案名稱。 然後就能從該檔案中擷取來自 Live Unit Testing 組建的詳細 MSBuild 記錄訊息。
 
 - 將 `LiveUnitTesting_TestPlatformLog` 使用者環境變數設成 `1` 以擷取測試平台記錄檔。 然後就能從該 `[Solution Root]\.vs\[Solution Name]\log\[VisualStudio Process ID]` 中擷取來自即時單元測試回合的詳細測試平台記錄訊息。
 
-- 建立名為 `VS_UTE_DIAGNOSTICS` 的使用者層級環境變數，並將它設為 1 (或任何值)，然後重新啟動 Visual Studio。 現在您應該會在 Visual Studio 的 [輸出 - 測試] 索引標籤中看見許多記錄。
+- 建立名為 `VS_UTE_DIAGNOSTICS` 的使用者層級環境變數，並將它設為 1 (或任何值)，然後重新啟動 Visual Studio。 現在您應該會在 Visual Studio 的 [輸出 - 測試]  索引標籤中看見許多記錄。
 
 ## <a name="see-also"></a>另請參閱
 

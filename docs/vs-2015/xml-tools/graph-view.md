@@ -1,30 +1,24 @@
 ---
 title: 圖形檢視 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: 5881afde-3f24-4eb9-bff8-6cb3fc8aade7
 caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: d1c0bbe55f2e63c1d86d71556392d57d1330c6b4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 3e2b51128e851252d3949e6cfde122a52a09af6e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49813618"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68198258"
 ---
 # <a name="graph-view"></a>圖形檢視
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 圖表檢視會以圖形表示全域結構描述節點以及節點之間的關聯性。 請注意，圖表檢視無法讓您在設計介面上改變結構描述集的配置。 圖表檢視還包含 XML 結構描述設計工具工具列和階層連結列。  
   
  下圖顯示的設計介面中包含六個全域節點的圖表檢視。  
@@ -42,12 +36,12 @@ ms.locfileid: "49813618"
   
  ![XSD 設計工具;圖表檢視](../xml-tools/media/xsdgraphviewwatermark.gif "XSDGraphViewWatermark")  
   
- 如果結構描述集發生錯誤，清單結尾會顯示以下文字：「使用錯誤清單檢視與修正結構描述集中的錯誤」。  
+ 如果結構描述集發生錯誤，將下列文字會顯示在清單結尾處：「 檢視與修正的錯誤集合中使用 錯誤清單 」。  
   
 ## <a name="breadcrumb-bar"></a>階層連結列  
  圖表檢視底部的階層連結列會顯示所選節點在結構描述集的位置。 如果選取多個項目，階層連結列會是空白的。  
   
-## <a name="context-menu"></a>內容功能表  
+## <a name="context-menu"></a>操作功能表  
  下表描述圖表檢視設計介面上所有節點的可用選項。  
   
 |選項|描述|  
@@ -104,16 +98,16 @@ ms.locfileid: "49813618"
   
 |選項|描述|  
 |------------|-----------------|  
-|**顯示開始檢視**|若要切換[啟動檢視](../xml-tools/start-view.md)。 這個檢視可以使用鍵盤快速鍵存取： **CTRL + 1**。|  
-|**顯示內容模型檢視**|若要切換[內容模型檢視](../xml-tools/content-model-view.md)。 這個檢視可以使用鍵盤快速鍵存取： **CTRL + 2**。|  
-|**顯示圖表檢視**|若要切換[圖形檢視](../xml-tools/graph-view.md)。 這個檢視可以使用鍵盤快速鍵存取： **CTRL + 3**。|  
+|**顯示開始檢視**|若要切換[啟動檢視](../xml-tools/start-view.md)。 這個檢視可以使用鍵盤快速鍵存取：**CTRL + 1**。|  
+|**顯示內容模型檢視**|若要切換[內容模型檢視](../xml-tools/content-model-view.md)。 這個檢視可以使用鍵盤快速鍵存取：**CTRL + 2**。|  
+|**顯示圖表檢視**|若要切換[圖形檢視](../xml-tools/graph-view.md)。 這個檢視可以使用鍵盤快速鍵存取：**CTRL + 3**。|  
 |**清除工作區**|清除工作空間和設計介面。|  
 |**移除工作區**|從工作空間和設計介面移除選取的節點。|  
 |**全部移除，但從工作區的選取範圍**|從工作空間和設計介面移除未選取的節點。 內容模型檢視和圖表檢視會啟用此選項。|  
-|**從左到右**|將圖表檢視中的配置變更為從左至右以階層表示節點。 這個選項可以使用鍵盤快速鍵存取： **Alt + 向右鍵**。|  
-|**由右至左**|將圖表檢視中的配置變更為從右至左以階層表示節點。 這個選項可以使用鍵盤快速鍵存取： **Alt + 向左鍵**。|  
-|**由上而下**|將圖表檢視中的配置變更為從上至下以階層表示節點。 這個選項可以使用鍵盤快速鍵存取： **Alt + 向下箭號**。|  
-|**由下至上**|將圖表檢視中的配置變更為從下至上以階層表示節點。 這個選項可以使用鍵盤快速鍵存取： **Alt + 向上鍵**。|  
+|**從左到右**|將圖表檢視中的配置變更為從左至右以階層表示節點。 這個選項可以使用鍵盤快速鍵存取：**Alt + 向右鍵**。|  
+|**由右至左**|將圖表檢視中的配置變更為從右至左以階層表示節點。 這個選項可以使用鍵盤快速鍵存取：**Alt + 向左鍵**。|  
+|**由上而下**|將圖表檢視中的配置變更為從上至下以階層表示節點。 這個選項可以使用鍵盤快速鍵存取：**Alt + 向下箭號**。|  
+|**由下至上**|將圖表檢視中的配置變更為從下至上以階層表示節點。 這個選項可以使用鍵盤快速鍵存取：**Alt + 向上鍵**。|  
   
 ## <a name="panscroll"></a>移動瀏覽/捲動  
  您可以使用捲軸，或是在按一下並拖曳滑鼠時按住 CTRL 鍵不放，移動瀏覽設計介面。 您當使用按一下並拖曳方式移動瀏覽設計介面時，游標將變更成 4 個交叉的箭頭指向 4 個方向。  
@@ -121,11 +115,11 @@ ms.locfileid: "49813618"
 ## <a name="undoredo"></a>復原/取消復原  
  在圖表檢視中啟用的復原/取消復原功能可執行下列動作：  
   
--   透過拖放方式加入單一節點。  
+- 透過拖放方式加入單一節點。  
   
--   從結構描述總管或開始檢視查詢中的搜尋結果加入多個節點。  
+- 從結構描述總管或開始檢視查詢中的搜尋結果加入多個節點。  
   
--   刪除單一或多個節點。  
+- 刪除單一或多個節點。  
   
 ## <a name="zoom"></a>縮放  
  縮放位於圖表模型檢視的右下角。  
@@ -139,12 +133,9 @@ ms.locfileid: "49813618"
   當您選取縮放滑桿、將滑鼠停留於滑桿上方、或使用 CTRL 搭配滑鼠滾輪進行縮放時，滑桿會呈不透明狀，其他所有時間則呈透明狀。  
   
 ## <a name="xml-editor-integration"></a>XML 編輯器整合  
- 您可以按一下節點並使用 [檢視程式碼] 內容功能表，在圖表檢視和 XML 編輯器之間來回切換。  
+ 您可以按一下節點並使用 [檢視程式碼] 操作功能表，在圖表檢視和 XML 編輯器之間來回切換。  
   
  如果您在 XML 編輯器中變更結構描述集，圖表檢閱也會同步進行變更。 如需詳細資訊，請參閱 <<c0> [ 使用 XML 編輯器整合](../xml-tools/integration-with-xml-editor.md)。  
   
 ## <a name="see-also"></a>另請參閱  
  [設計介面](../xml-tools/xml-schema-designer-workspace.md)
-
-
-

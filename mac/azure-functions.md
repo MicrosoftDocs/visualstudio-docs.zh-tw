@@ -1,18 +1,18 @@
 ---
 title: Azure Functions 簡介
 description: 在 Visual Studio for Mac 使用 Azure 函式。
-author: conceptdev
-ms.author: crdun
-ms.date: 05/06/2018
+author: sayedihashimi
+ms.author: sayedha
+ms.date: 04/02/2019
 ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 25CD47A4-5B32-4734-8EF3-E24A02AABF29
-ms.openlocfilehash: eaf6f82cdc40b174dcd1ca8deb12c412fe675d70
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: ca5c3133e3f03d4e68449156b35d6643c637a11b
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295939"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825557"
 ---
 # <a name="introduction-to-azure-functions"></a>Azure Functions 簡介
 
@@ -20,20 +20,24 @@ Azure 函式是一種不必明確佈建或管理基礎結構，就能在雲端�
 
 ## <a name="requirements"></a>需求
 
-Azure 函式工具隨附於 **Visual Studio for Mac 7.5**。
+Azure 函式工具隨附於 **Visual Studio for Mac 7.5** 和更新版本。
 
 若要建立和部署函式，您還需要 Azure 訂用帳戶，這可從 [https://azure.com/free](https://azure.com/free) 免費取得。
 
 ## <a name="creating-your-first-azure-functions-project"></a>建立您的第一個 Azure Functions 專案
 
-1. 在 Visual Studio for Mac 中，選取 [檔案] > [新增方案]。
-2. 從 [新增專案] 對話方塊，選取 [雲端] > [一般] 下的 Azure Functions 範本，然後按一下 [下一步]：
+1. 在 Visual Studio for Mac 中，選取 [檔案] > [新增方案]  。
+2. 從 [新增專案] 對話方塊，選取 [雲端] > [一般]  下的 Azure Functions 範本，然後按一下 [下一步]  ：
 
     ![顯示 Azure 函式選項的 [新增專案] 對話方塊](media/azure-functions-image1.png)
 
-3. 選取您想要使用的初始 Azure Functions 範本，並輸入您的函數名稱，然後按 [下一步]。
+3. 選取您想要使用的初始 Azure Functions 範本，並輸入您的函數名稱，然後按 [下一步]  。
 
     ![顯示 Azure Functions 範本的 [新增專案] 對話方塊](media/azure-functions-image2.png)
+
+    > [!TIP]
+    > 即使配套的 Azure Functions 執行階段和範本 (CLI) 盡可能保持在最新，也無可避免會過時。 建立新的 Functions 專案時，Visual Studio for Mac 會檢查是否有 CLI 更新並通知您，如下圖所示。 只要按一下按鈕即可下載更新的範本。
+    > ![顯示有可用 Azure Functions 更新的 [新增專案] 對話方塊](media/azure-functions-update.png)
 
     根據您選取的函數類型，下一頁將會提示您鍵入詳細資料 (例如存取權限)，如下圖所示：
 
@@ -41,7 +45,7 @@ Azure 函式工具隨附於 **Visual Studio for Mac 7.5**。
 
     如需不同類型之 Azure Functions 範本以及設定每個範本所需之繫結屬性的詳細資訊，請參閱[可用函數範本](#available-function-templates)一節。 在此範例中，我們將使用存取權限設為匿名的 Http 觸發程序。
 
-4. 在您設定參數之後，請選擇專案的位置，然後按一下 [建立]。
+4. 在您設定參數之後，請選擇專案的位置，然後按一下 [建立]  。
 
 Visual Studio for Mac 會建立包含預設函數的 .NET Standard 專案。 其中也包含多種 **AzureWebJobs** 套件以及 **Newtonsoft.Json** 套件的 NuGet 參考。
 
@@ -77,11 +81,11 @@ Visual Studio for Mac 會建立包含預設函數的 .NET Standard 專案。 其
 
 函式範本讓您能夠使用最常見的觸發程序和範本快速建立新函式。 若要建立其他類型的函式，請執行下方作業：
 
-1. 若要新增函式，請在專案名稱按一下滑鼠右鍵，然後選取 [新增] > [新增函式...]：
+1. 若要新增函式，請在專案名稱按一下滑鼠右鍵，然後選取 [新增] > [新增函式...]  ：
 
     ![新增函式的內容動作](media/azure-functions-addnew.png)
 
-2. 從 [新增 Azure 函式] 對話方塊選取您要的函式：
+2. 從 [新增 Azure 函式]  對話方塊選取您要的函式：
 
     ![新增 Azure 函式對話方塊](media/azure-functions-image4.png)
 
@@ -91,43 +95,37 @@ Visual Studio for Mac 會建立包含預設函數的 .NET Standard 專案。 其
 
 ## <a name="publish-to-azure"></a>發佈至 Azure
 
-1. 以滑鼠右鍵按一下專案名稱，然後選取 [發行] > [發行至 Azure]：![[發行至 Azure] 功能表選項](media/azure-functions-image5.png)
+1. 以滑鼠右鍵按一下專案名稱，然後選取 [發佈] > [發佈至 Azure]  ：![[發佈至 Azure] 功能表選項](media/azure-functions-image5.png)
 2. 如果您已將 Azure 帳戶連線至 Visual  Studio for Mac，則會顯示可用的應用程式服務清單。 如果您尚未登入，則系統會提示您這麼做。
-3. 從 [Publish to Azure App Service] \(發行至 Azure App Service\) 對話方塊中，您可以選取現有應用程式服務，或按一下 [新增] 來建立新的應用程式服務。
-4. 在 [建立新的 App Service] 對話方塊中，輸入您的設定：![[發行至 Azure] 功能表選項](media/azure-functions-image7.png)
+3. 從 [Publish to Azure App Service] \(發行至 Azure App Service\)  對話方塊中，您可以選取現有應用程式服務，或按一下 [新增]  來建立新的應用程式服務。
+4. 在 [建立新的 App Service]  對話方塊中，輸入您的設定：![[發佈至 Azure] 功能表選項](media/azure-functions-image7.png)
 
-    |設定  |描述  |
+    |設定  |說明  |
     |---------|---------|
     |**App Service 名稱**|識別新函數應用程式的全域唯一名稱。|
     |**訂用帳戶**|要使用的 Azure 訂用帳戶。|
     |**[資源群組](/azure/azure-resource-manager/resource-group-overview)**|在其中建立函數應用程式的資源群組名稱。 選擇 **+** 來建立新的資源群組。|
     |**[服務方案](/azure/azure-functions/functions-scale)**|選擇現有方案，或建立自訂方案。 選擇區域中接近您或接近您函數所存取之其他服務的位置。|
 
-    > [!CAUTION]
-    > Visual Studio for Mac 7.6 版中有一個 Bug，如果您嘗試建立 [定價] 設定為 [使用] 的自訂服務方案，則會導致包含佈建錯誤的發行失敗。 下一個服務版本會修正此問題。
-
-5. 按 [下一步] 來建立儲存體帳戶。 函數執行階段所需的 Azure 儲存體帳戶。 按一下 [自訂] 來建立一般用途儲存體帳戶，或使用現有儲存體帳戶：
+5. 按 [下一步]  來建立儲存體帳戶。 函數執行階段所需的 Azure 儲存體帳戶。 按一下 [自訂]  來建立一般用途儲存體帳戶，或使用現有儲存體帳戶：
 
     ![[發行至 Azure] 功能表選項](media/azure-functions-image8.png)
 
-6. 按一下 [建立]，以在 Azure 中使用這些設定來建立函數應用程式和相關資源，以及部署您的函數專案程式碼。
+6. 按一下 [建立]  ，以在 Azure 中使用這些設定來建立函數應用程式和相關資源，以及部署您的函數專案程式碼。
 
-7. 系統可能會在發行期間使用對話方塊提示您，通知您「更新 Azure 上的函數版本」。 按一下 [是]：
+7. 系統可能會在發行期間使用對話方塊提示您，通知您「更新 Azure 上的函數版本」。 按一下 [是]  ：
 
     ![[發行至 Azure] 功能表選項](media/azure-functions-image12.png)
-
-> [!CAUTION]
-> Visual Studio for Mac 7.6 版中有 `FUNCTIONS_EXTENSION_VERSION` 未正確設定為 "beta" 的 Bug，表示您的函數可能未執行。 若要修正此問題，請前往您的[函數應用程式設定](#function-app-settings)，並將 `FUNCTIONS_EXTENSION_VERSION` 從 "-1" 設定為 "beta"。
 
 ## <a name="function-app-settings"></a>函數應用程式設定
 
 您在 local.settings.json 中新增的任何設定也必須新增至 Azure 中的函數應用程式。 當您發行專案時，不會自動上傳這些設定。
 
-若要存取您的應用程式設定，請前往 Azure 入口網站，網址為：[https://ms.portal.azure.com/](https://ms.portal.azure.com/)。 在 [函數應用程式] 下，選取 [函數應用程式]，並反白顯示您的函數名稱：
+若要存取您的應用程式設定，請前往 Azure 入口網站，網址為：[https://ms.portal.azure.com/](https://ms.portal.azure.com/)。 在 [函數應用程式]  下，選取 [函數應用程式]  ，並反白顯示您的函數名稱：
 
 ![Azure 函數功能表](media/azure-functions-image9.png)
 
-從 [概觀] 索引標籤中，選取 [已設定的功能] 下的 [應用程式設定]：
+從 [概觀]  索引標籤中，選取 [已設定的功能]  下的 [應用程式設定]  ：
 
 ![透過 Azure 函數的索引標籤](media/azure-functions-image10.png)
 
@@ -140,18 +138,16 @@ Visual Studio for Mac 會建立包含預設函數的 .NET Standard 專案。 其
 ## <a name="available-function-templates"></a>可用的函式範本
 
 - **GitHub 觸發程序** - 回應您的 GitHub 存放庫中發生的事件。 如需詳細資訊，請參閱[有關 GitHub 的 Azure Functions 文章](/azure/azure-functions/functions-create-github-webhook-triggered-function)
-    - GitHub 註解工具 - 這個函式會在收到問題或提取要求的 GitHub Webhook 時執行，並新增註解。
-    - GitHub WebHook - 此函數會在收到 GitHub Webhook 時執行。
+  - GitHub 註解工具 - 這個函式會在收到問題或提取要求的 GitHub Webhook 時執行，並新增註解。
+  - GitHub WebHook - 此函數會在收到 GitHub Webhook 時執行。
 
 - **HTTP** - 使用 HTTP 要求來觸發程式碼執行。 下列 HTTP 觸發程序有明確的範本：
-    - Http 觸發程序
-    - Http GET CRUD
-    - Http POST CRUD
-    - 含有參數的 Http 觸發程序
-
+  - Http 觸發程序
+  - Http GET CRUD
+  - Http POST CRUD
+  - 含有參數的 Http 觸發程序
 
 - **計時器** - 依預先定義的排程執行清理或其他批次工作。 這個範本採用兩個欄位：名稱和排程，即六個欄位的 CRON 運算式。 如需詳細資訊，請參閱[有關時間的 Azure 函式文章](/azure/azure-functions/functions-create-scheduled-function)
-
 
 - **佇列觸發程序** - 這是會在訊息抵達 Azure 儲存體佇列時予以回應的函式。 除了函式名稱之外，這個範本也接受**路徑** (會從中讀取訊息的佇列名稱) 和儲存體帳戶**連線** (包含儲存體帳戶連接字串的應用程式設定名稱)。 如需詳細資訊，請參閱[有關佇列儲存體的 Azure 函式文章](/azure/azure-functions/functions-create-storage-queue-triggered-function)。
 

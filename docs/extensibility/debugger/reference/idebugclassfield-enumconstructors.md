@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugClassField::EnumConstructors method
 ms.assetid: 66a250b2-75a0-45aa-8d58-40f91cc4bf7b
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5ecc2e2fba9dbddc12a58866c7edcde51b148af1
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 94a73b5f46e3e6319fef0ac2134966c4a4944279
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56719095"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66349631"
 ---
 # <a name="idebugclassfieldenumconstructors"></a>IDebugClassField::EnumConstructors
 建立這個類別的建構函式的列舉值。
@@ -38,14 +41,12 @@ int EnumConstructors(
 );
 ```
 
-#### <a name="parameters"></a>參數
- `cMatch`
+## <a name="parameters"></a>參數
+`cMatch`\
+[in]值，以從[CONSTRUCTOR_ENUM](../../../extensibility/debugger/reference/constructor-enum.md)列舉，指定列舉型別建構函式的型別。
 
- [in]值，以從[CONSTRUCTOR_ENUM](../../../extensibility/debugger/reference/constructor-enum.md)列舉，指定列舉型別建構函式的型別。
-
- `ppEnum`
-
- [out]傳回[IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)物件，表示建構函式的清單。 如果不有任何建構函式會傳回 null 值。
+`ppEnum`\
+[out]傳回[IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)物件，表示建構函式的清單。 如果不有任何建構函式會傳回 null 值。
 
 ## <a name="return-value"></a>傳回值
  如果成功，會傳回 S_OK，或如果沒有任何建構函式，則傳回 S_FALSE。 否則會傳回錯誤碼。

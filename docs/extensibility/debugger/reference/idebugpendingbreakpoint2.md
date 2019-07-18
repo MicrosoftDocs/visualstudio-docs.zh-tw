@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPendingBreakpoint2 interface
 ms.assetid: d416b095-917e-475e-b796-ec0a03ffb8da
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 816fad53554675e7f29cef838d4ea24e154dca8c
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 1581620d2a26b8717a1c84399e43463b9312a96d
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56713304"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66308788"
 ---
 # <a name="idebugpendingbreakpoint2"></a>IDebugPendingBreakpoint2
 此介面表示中斷點已繫結至程式碼位置。
@@ -54,7 +54,7 @@ IDebugPendingBreakpoint2 : IUnknown
 ## <a name="remarks"></a>備註
  `IDebugPendingBreakpoint2` 可以視為將中斷點繫結至可套用至一或多個程式的程式碼所需的所有必要資訊的提供者。
 
- 暫止中斷點可能會產生一個以上的繫結的中斷點。 例如，c + + 樣式範本中的中斷點可能會產生每個唯一的執行個體，該範本的繫結的中斷點。
+ 暫止中斷點可能會產生一個以上的繫結的中斷點。 例如，在中斷點C++-樣式範本可能會產生每個唯一的執行個體，該範本的繫結的中斷點。
 
 ## <a name="requirements"></a>需求
  標頭： msdbg.h

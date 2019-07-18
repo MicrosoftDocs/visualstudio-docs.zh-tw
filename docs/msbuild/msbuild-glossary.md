@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f074bf7b5c7077b1c4808d7d3035be0c6366d526
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56642712"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62842470"
 ---
 # <a name="msbuild-glossary"></a>MSBuild 字彙表
 這些詞彙可用來說明 Microsoft Build Engine (MSBuild) 及其元件。

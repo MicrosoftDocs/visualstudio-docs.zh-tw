@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugSymbolProvider::GetNextAddress method
 ms.assetid: 704eeb94-cb13-49d1-82b6-7d83ed0f19c0
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 574111db390388ee1d0c572a3a8825c3a2ae9469
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: f358abe84987b9c7c1a5a1df36fdf480f62ee64b
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56722755"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66347534"
 ---
 # <a name="idebugsymbolprovidergetnextaddress"></a>IDebugSymbolProvider::GetNextAddress
 取得會遵循在方法中的指定偵錯位址的偵錯位址。
@@ -40,18 +43,15 @@ int GetNextAddress( 
 );
 ```
 
-#### <a name="parameters"></a>參數
- `pAddress`
+## <a name="parameters"></a>參數
+`pAddress`\
+[in]指定偵錯位址。
 
- [in]指定偵錯位址。
+`fStatementOnly`\
+[in]如果為 TRUE，會限制單一陳述式的偵錯位址。
 
- `fStatementOnly`
-
- [in]如果為 TRUE，會限制單一陳述式的偵錯位址。
-
- `ppAddress`
-
- [out]傳回下一個偵錯位址。
+`ppAddress`\
+[out]傳回下一個偵錯位址。
 
 ## <a name="return-value"></a>傳回值
  會傳回有效`HRESULT`，通常是 S_OK。

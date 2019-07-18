@@ -18,12 +18,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e4ce804664f78bd4ec329f7e4e66008053291c77
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: e4b039f514c7d43e768becca8532a05fb14785b3
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54799768"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65680368"
 ---
 # <a name="how-to-create-and-remove-project-dependencies"></a>如何：建立和移除專案相依性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ ms.locfileid: "54799768"
     [專案相依性] 對話方塊隨即開啟。  
   
    > [!NOTE]
-   >  [專案相依性] 選項只適用於具有多個專案的方案。  
+   > [專案相依性] 選項只適用於具有多個專案的方案。  
   
 3. 在 [相依性] 索引標籤上，選取 [專案] 下拉式功能表中的專案。  
   
@@ -49,21 +49,21 @@ ms.locfileid: "54799768"
   
 ### <a name="to-remove-dependencies-from-projects"></a>若要從專案移除相依性  
   
-1.  在 [方案總管] 中選取專案。  
+1. 在 [方案總管] 中選取專案。  
   
-2.  在 [專案] 功能表上，選擇 [專案相依性]。  
+2. 在 [專案] 功能表上，選擇 [專案相依性]。  
   
      [專案相依性] 對話方塊隨即開啟。  
   
     > [!NOTE]
-    >  [專案相依性] 選項只適用於具有多個專案的方案。  
+    > [專案相依性] 選項只適用於具有多個專案的方案。  
   
-3.  在 [相依性] 索引標籤上，選取 [專案] 下拉式功能表中的專案。  
+3. 在 [相依性] 索引標籤上，選取 [專案] 下拉式功能表中的專案。  
   
-4.  如果任何其他專案不再與此專案具有相依性，請在 [相依於] 欄位中，清除這些專案旁的核取方塊。  
+4. 如果任何其他專案不再與此專案具有相依性，請在 [相依於] 欄位中，清除這些專案旁的核取方塊。  
   
 ## <a name="see-also"></a>請參閱  
  [在 Visual Studio 中建置和清除專案與方案](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)   
  [編譯和建置](../ide/compiling-and-building-in-visual-studio.md)   
  [了解組建組態](../ide/understanding-build-configurations.md)   
- [NIB 如何：修改專案屬性和組態設定](http://msdn.microsoft.com/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67)
+ [NIB 如何：修改專案屬性和組態設定](https://msdn.microsoft.com/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67)

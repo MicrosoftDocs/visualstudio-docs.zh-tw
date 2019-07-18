@@ -11,11 +11,11 @@ ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
 ms.openlocfilehash: 1e9ac9e8371c1dab482fd16ce4d10e8982ba1aee
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "58161114"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "68177660"
 ---
 ## <a name="visual-studio-core-editor-included-with-visual-studio-enterprise-2017"></a>Visual Studio 核心編輯器 (隨附於 Visual Studio Enterprise 2017)
 

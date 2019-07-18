@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugArrayField::GetNumberOfElements method
 ms.assetid: a1961ef3-d69d-4022-b8c9-b9cfb9811345
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 86cd2b227926db38c5bd50fa0457688a023bc7e3
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 7e8576c7f7365f8f87f8b31a90e414b75000026d
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56704107"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66321743"
 ---
 # <a name="idebugarrayfieldgetnumberofelements"></a>IDebugArrayField::GetNumberOfElements
 取得陣列中的項目數。
@@ -36,10 +39,9 @@ int GetNumberOfElements(
 );
 ```
 
-#### <a name="parameters"></a>參數
- `pdwNumElements`
-
- [out]傳回陣列中的項目數目。
+## <a name="parameters"></a>參數
+`pdwNumElements`\
+[out]傳回陣列中的項目數目。
 
 ## <a name="return-value"></a>傳回值
  如果成功，會傳回 S_OK;否則，傳回錯誤碼。

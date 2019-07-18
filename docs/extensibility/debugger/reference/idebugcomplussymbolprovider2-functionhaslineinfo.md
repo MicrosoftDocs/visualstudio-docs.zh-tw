@@ -6,17 +6,20 @@ helpviewer_keywords:
 - FunctionHasLineInfo
 - IDebugComPlusSymbolProvider2::FunctionHasLineInfo
 ms.assetid: e1b508f1-6521-492f-b110-ab957744a037
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a2276c017646f9ac0b1028a4a5433d0e3cf2d84a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 7a6c64c77e6d8fedaf6e61f397e5dcd2a3ae577f
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56717672"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66352710"
 ---
 # <a name="idebugcomplussymbolprovider2functionhaslineinfo"></a>IDebugComPlusSymbolProvider2::FunctionHasLineInfo
 判斷指定的方法是否具有行資訊。
@@ -35,10 +38,9 @@ int FunctionHasLineInfo(
 );
 ```
 
-#### <a name="parameters"></a>參數
-`pAddress`
-
- [in]所表示的偵錯位址[IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)介面。 此位址必須是 METHOD_ADDRESS。
+## <a name="parameters"></a>參數
+`pAddress`\
+[in]所表示的偵錯位址[IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)介面。 此位址必須是 METHOD_ADDRESS。
 
 ## <a name="return-value"></a>傳回值
 如果成功，則傳回`S_OK`; 否則傳回`S_FALSE`。

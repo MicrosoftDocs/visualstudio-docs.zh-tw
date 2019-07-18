@@ -1,14 +1,9 @@
 ---
 title: IDebugClassField::GetDefaultIndexer |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugClassField::GetDefaultIndexer
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 47ce4f45-3816-4b40-909c-5032d0692d75
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: b01f6a8267feb0aaad7a513cf5927edfaf8889e2
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 6be0a1925a1e5d48941c1c0e13ac1b4789687229
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51796073"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68191029"
 ---
 # <a name="idebugclassfieldgetdefaultindexer"></a>IDebugClassField::GetDefaultIndexer
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -48,7 +43,7 @@ int GetDefaultIndexer(
  [out]傳回字串，包含預設索引子名稱。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，會傳回 S_OK，或如果沒有任何預設索引子，則傳回 S_FALSE。 反之則傳回錯誤碼。  
+ 如果成功，會傳回 S_OK，或如果沒有任何預設索引子，則傳回 S_FALSE。 否則會傳回錯誤碼。  
   
 ## <a name="remarks"></a>備註  
  類別的預設索引子是標示為屬性`Default`陣列存取的屬性。 這是特定於[!INCLUDE[vbprvb](../../../includes/vbprvb-md.md)]。 以下是範例中所宣告的預設索引子的[!INCLUDE[vbprvb](../../../includes/vbprvb-md.md)]和使用方式。  
@@ -85,4 +80,3 @@ End Function
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)
-

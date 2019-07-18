@@ -1,40 +1,35 @@
 ---
-title: 逐步解說： 遺漏的物件因端點著色而 |Microsoft Docs
-ms.custom: ''
+title: 逐步解說：遺漏的物件因端點著色而 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: e42b54a0-8092-455c-945b-9ecafb129d93
 caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 2ecff22d99eb995f0dbe70e93783460f4343d74f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: d54fdce78528f348e99436c3a58d15e1cbe861b7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51745930"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444277"
 ---
-# <a name="walkthrough-missing-objects-due-to-vertex-shading"></a>逐步解說：因端點著色而遺漏的物件
+# <a name="walkthrough-missing-objects-due-to-vertex-shading"></a>逐步解說：因頂點著色而遺漏的物件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 本逐步解說示範如何使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 圖形診斷工具來調查因為端點著色器階段發生的錯誤而遺漏的物件。  
   
  本逐步解說將說明下列工作：  
   
--   使用 [圖形事件清單]  找出潛在的問題來源。  
+- 使用 [圖形事件清單]  找出潛在的問題來源。  
   
--   使用 [圖形管線階段]  視窗來檢查 `DrawIndexed` Direct3D API 呼叫的效果。  
+- 使用 [圖形管線階段]  視窗來檢查 `DrawIndexed` Direct3D API 呼叫的效果。  
   
--   使用 [HLSL 偵錯工具]  來檢查端點著色器。  
+- 使用 [HLSL 偵錯工具]  來檢查端點著色器。  
   
--   使用 [圖形事件呼叫堆疊]  協助找出無效 HLSL 常數的來源。  
+- 使用 [圖形事件呼叫堆疊]  協助找出無效 HLSL 常數的來源。  
   
 ## <a name="scenario"></a>情節  
  3D 應用程式遺漏物件最常見的其中一個原因，發生於端點著色器以不正確或非預期方式轉換物件的頂點時；例如，物件可能縮到非常小，或是經轉換後出現在觀景窗後面而非前面。  
@@ -69,7 +64,7 @@ ms.locfileid: "51745930"
     在 [圖形管線階段]  視窗中， **輸入組合語言** 階段會在物件轉換前顯示其幾何， **端點著色器** 階段則會顯示轉換後的相同物件。 在此情節中，當遺漏物件顯示在 **輸入組合語言** 階段中，而沒有任何項目顯示在 **端點著色器** 階段時，您就會知道找到了遺漏物件。  
   
    > [!NOTE]
-   >  若有其他幾何階段 (例如輪廓著色器、網域著色器或幾何著色器階段) 在處理物件，則其都可能是問題的原因。 一般而言，問題與初期階段相關，在該階段中不會顯示結果，或者會以非預期的方式顯示結果。  
+   > 若有其他幾何階段 (例如輪廓著色器、網域著色器或幾何著色器階段) 在處理物件，則其都可能是問題的原因。 一般而言，問題與初期階段相關，在該階段中不會顯示結果，或者會以非預期的方式顯示結果。  
   
 4. 在到達對應至遺漏物件的繪製呼叫時停止。 在此情節中，[圖形管線階段]  視窗表示幾何已發給 GPU (由輸入組合語言縮圖表示)，但未在轉譯目標中出現，因為在端點著色器階段 (由端點著色器縮圖表示) 發生錯誤：  
   
@@ -112,9 +107,9 @@ ms.locfileid: "51745930"
     ![設定物件的常數緩衝區的程式碼](../debugger/media/gfx-diag-demo-missing-object-shader-step-7.png "gfx_diag_demo_missing_object_shader_step_7")  
   
    > [!TIP]
-   >  如果您同時偵錯應用程式，您可以在這個位置上設定中斷點，當轉譯下一個畫面格時就會叫用該中斷點。 您可以接著檢查 `m_marbleConstantBufferData` 的成員，確認 `projection` 成員的值在填滿常數緩衝區時會設定為全部為零。  
+   > 如果您同時偵錯應用程式，您可以在這個位置上設定中斷點，當轉譯下一個畫面格時就會叫用該中斷點。 您可以接著檢查 `m_marbleConstantBufferData` 的成員，確認 `projection` 成員的值在填滿常數緩衝區時會設定為全部為零。  
   
-   您發現常數緩衝區是否填入其中的位置，而發現其值來自於變數之後`m_marbleConstantBufferData`下, 一步是找出從何處`m_marbleConstantBufferData.projection`成員設定為全部為零。 您可以使用 [尋找所有參考]  快速掃描變更 `m_marbleConstantBufferData.projection`值的程式碼。  
+   在您找到填入常數緩衝區的位置，並發現其值來自於變數 `m_marbleConstantBufferData` 之後，下一個步驟就是查明 `m_marbleConstantBufferData.projection` 成員設定為全部為零的位置。 您可以使用 [尋找所有參考]  快速掃描變更 `m_marbleConstantBufferData.projection`值的程式碼。  
   
 #### <a name="to-find-where-the-projection-member-is-set-in-your-apps-source-code"></a>在應用程式原始程式碼中尋找設定 projection 成員的位置  
   
@@ -133,6 +128,3 @@ ms.locfileid: "51745930"
    修正程式碼之後，您可以加以重新建置並再次執行應用程式，以確認轉譯問題已解決：  
   
    ![現在物件已顯示。](../debugger/media/gfx-diag-demo-missing-object-shader-resolution.png "gfx_diag_demo_missing_object_shader_resolution")
-
-
-

@@ -1,14 +1,9 @@
 ---
-title: Ca1801： 必須檢閱未使用的參數 |Microsoft Docs
-ms.custom: ''
+title: CA1801:檢閱未使用的參數 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - AvoidUnusedParameters
 - CA1801
@@ -21,39 +16,39 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: b0946e315aef0c333207d49eb14820d287a9b361
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0efbec121e08d026145d8762b574847fbd4a2b88
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49269681"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68143132"
 ---
-# <a name="ca1801-review-unused-parameters"></a>CA1801：必須檢閱未使用的參數
+# <a name="ca1801-review-unused-parameters"></a>CA1801:必須檢閱未使用的參數
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-如需 Visual Studio 2017 的最新文件，請參閱 < [ca1801 必須： 檢閱未使用的參數](https://docs.microsoft.com/visualstudio/code-quality/ca1801-review-unused-parameters)docs.microsoft.com 上。  
+如需 Visual Studio 的最新文件，請參閱[ca1801 必須：檢閱未使用的參數](https://docs.microsoft.com/visualstudio/code-quality/ca1801-review-unused-parameters)。  
   
 |||  
 |-|-|  
 |TypeName|ReviewUnusedParameters|  
 |CheckId|CA1801|  
 |分類|Microsoft.Usage|  
-|中斷變更|非中斷-成員不是組件，不論您所做的變更外部可見。<br /><br /> 非中斷-如果您變更要使用的參數，其主體中的成員。<br /><br /> 中斷-如果您移除參數，而且它是組件外部可見。|  
+|中斷變更|非中斷-成員不是組件外部可見不論有變更您進行。<br /><br /> 非分行-如果您變更要使用的參數，其主體中的成員。<br /><br /> 中斷-如果您移除參數，而且它是組件外部可見。|  
   
 ## <a name="cause"></a>原因  
  方法簽章包括不用於方法主體中的參數； 此規則不會檢查下列方法：  
   
--   委派所參考的方法。  
+- 委派所參考的方法。  
   
--   做為事件處理常式的方法。  
+- 做為事件處理常式的方法。  
   
--   方法宣告`abstract`(`MustOverride` Visual Basic 中) 修飾詞。  
+- 方法宣告`abstract`(`MustOverride` Visual Basic 中) 修飾詞。  
   
--   方法宣告`virtual`(`Overridable` Visual Basic 中) 修飾詞。  
+- 方法宣告`virtual`(`Overridable` Visual Basic 中) 修飾詞。  
   
--   方法宣告`override`(`Overrides` Visual Basic 中) 修飾詞。  
+- 方法宣告`override`(`Overrides` Visual Basic 中) 修飾詞。  
   
--   方法宣告`extern`(`Declare` Visual Basic 中的陳述式) 修飾詞。  
+- 方法宣告`extern`(`Declare` Visual Basic 中的陳述式) 修飾詞。  
   
 ## <a name="rule-description"></a>規則描述  
  檢閱中不會在方法主體中以確定解決無法存取它們的不正確性存在的非虛擬方法的參數。 未使用的參數會產生維護與效能的費用。  
@@ -72,9 +67,8 @@ ms.locfileid: "49269681"
  [!code-csharp[FxCop.Usage.ReviewUnusedParameters#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.ReviewUnusedParameters/cs/FxCop.Usage.ReviewUnusedPerameters.cs#1)]  
   
 ## <a name="related-rules"></a>相關的規則  
- [CA1811：避免使用未呼叫的私用程式碼](../code-quality/ca1811-avoid-uncalled-private-code.md)  
+ [CA1811:避免使用未呼叫的私用程式碼](../code-quality/ca1811-avoid-uncalled-private-code.md)  
   
- [CA1812：避免使用未執行個體化的內部類別](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md)  
+ [CA1812:避免使用未執行個體化的內部類別](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md)  
   
- [CA1804：必須移除未使用的區域變數](../code-quality/ca1804-remove-unused-locals.md)
-
+ [CA1804： 必須移除未使用的區域變數](../code-quality/ca1804-remove-unused-locals.md)

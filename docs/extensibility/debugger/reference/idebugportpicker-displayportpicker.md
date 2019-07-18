@@ -6,17 +6,20 @@ helpviewer_keywords:
 - DisplayPortPicker
 - IDebugPortPicker::DisplayPortPicker
 ms.assetid: 08511ef5-be64-4069-b169-a569cc94bc64
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8e115c4e45784b2072bf626d90ebab0d980491e4
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 815b44735e36489991da84216e2fcc6db8e6fab4
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56687350"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66308750"
 ---
 # <a name="idebugportpickerdisplayportpicker"></a>IDebugPortPicker::DisplayPortPicker
 顯示指定的對話方塊中，可讓使用者選取一個連接埠。
@@ -37,14 +40,12 @@ public int DisplayPortPicker(
 );
 ```
 
-#### <a name="parameters"></a>參數
- `hwndParentDialog`
+## <a name="parameters"></a>參數
+`hwndParentDialog`\
+[in]父對話方塊中的控制代碼。
 
- [in]父對話方塊中的控制代碼。
-
- `pbstrPortId`
-
- [out]連接埠識別碼字串。
+`pbstrPortId`\
+[out]連接埠識別碼字串。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。 傳回值`S_FALSE`(或傳回值`S_OK`具有`BSTR`設定為`NULL`) 指出使用者已按下**取消**。

@@ -1,27 +1,22 @@
 ---
 title: 記憶體索引標籤，處理序屬性對話方塊 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Process properties for Windows NT
 ms.assetid: a70785f2-5997-40ec-a90f-80a52449768b
 caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 92718a20f5deb19890a58d68af85e7f897f2440a
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: b70c5a982da866cbeb9e9907859ad4d270d79bd9
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51785140"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68203298"
 ---
 # <a name="memory-tab-process-properties-dialog-box"></a>處理序屬性對話方塊、記憶體索引標籤
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,8 +36,5 @@ ms.locfileid: "51785140"
 |**私用位元組**|目前的此程序已配置的位元組數目不能與其他處理序共用。|  
 |**可用位元組**|此處理序的總未使用的虛擬位址空間。|  
 |**保留的位元組**|保留供日後使用此程序的虛擬記憶體總數。|  
-|**可用影像位元組**|未使用或保留此處理序內的映像的虛擬位址空間數量。|  
-|**保留的影像位元組**|執行此處理序內的影像所保留的所有虛擬記憶體的總和。|
-
-
-
+|**可用映像位元組**|未使用或保留此處理序內的映像的虛擬位址空間數量。|  
+|**保留的映像位元組**|執行此處理序內的影像所保留的所有虛擬記憶體的總和。|

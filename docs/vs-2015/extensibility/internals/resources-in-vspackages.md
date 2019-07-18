@@ -1,14 +1,9 @@
 ---
 title: 在 Vspackage 中的資源 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - managed VSPackages, resources in
 - resources, managed VSPackages
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: cc8c17a6-b190-4856-b001-0c1104f104b2
 caps.latest.revision: 24
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 9f6330055eb3e7b410cc71dc7bab9bc55769c4fd
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 90674d17cdc3fb8956fd6eedeb3acb27226620cb
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51725321"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696094"
 ---
 # <a name="resources-in-vspackages"></a>VSPackage 中的資源
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -95,6 +90,5 @@ type="System.Resources.ResXFileRef,System.Windows.Forms">
 ## <a name="see-also"></a>另請參閱  
  [Managed 的 Vspackage](../../misc/managed-vspackages.md)   
  [管理 Vspackage](../../extensibility/managing-vspackages.md)   
- [MFC 應用程式中的當地語系化資源： 附屬 Dll](http://msdn.microsoft.com/library/3a1100ae-a9c8-47b5-adbd-cbedef5992ef)   
+ [MFC 應用程式中的當地語系化資源：附屬 Dll](https://msdn.microsoft.com/library/3a1100ae-a9c8-47b5-adbd-cbedef5992ef)   
  [Managed VSPackages](../../misc/managed-vspackages.md)
-

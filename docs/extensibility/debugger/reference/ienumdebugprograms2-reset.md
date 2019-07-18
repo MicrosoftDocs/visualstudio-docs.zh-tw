@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugPrograms2::Reset
 ms.assetid: b289242b-24ea-4df3-a811-20b0c8a903d6
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9afa0ce84ab2233f87fad1cb5f83a1a0c0caa33e
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: f2f3f7b96b6176ac4df098993c7126a93a9dc618
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56698504"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66317030"
 ---
 # <a name="ienumdebugprograms2reset"></a>IEnumDebugPrograms2::Reset
 將列舉重設第一個項目。

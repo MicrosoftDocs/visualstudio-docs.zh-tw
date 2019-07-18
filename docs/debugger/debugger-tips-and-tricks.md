@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fe676731170b0e643e00b1ab5e10aa768f256434
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
-ms.translationtype: MTE95
+ms.openlocfilehash: db966d2c0ac048bd650500ed6ab191e6bc867e36
+ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526356"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67043299"
 ---
 # <a name="learn-productivity-tips-and-tricks-for-the-debugger-in-visual-studio"></a>了解 Visual Studio 中偵錯工具的產能的秘訣和訣竅
 
@@ -31,7 +31,7 @@ ms.locfileid: "57526356"
 
 ![固定資料提示](../debugger/media/dbg-tips-data-tips-pinned.png "PinningDataTip")
 
-## <a name="edit-your-code-and-continue-debugging-c-vb-c"></a>編輯您的程式碼，並繼續偵錯 (C#、 VB、 c + +)
+## <a name="edit-your-code-and-continue-debugging-c-vb-c"></a>編輯您的程式碼，並繼續偵錯 (C#，VB， C++)
 
 在大部分的語言支援的 Visual Studio 中，您可以編輯您的程式碼在偵錯工作階段中央，並繼續偵錯。 若要使用這項功能，可按一下以進入您的程式碼，將游標暫停偵錯工具，請編輯，然後按下時使用**F5**， **F10**，或**F11**繼續偵錯。
 
@@ -53,6 +53,10 @@ ms.locfileid: "57526356"
 
 3. 如果您有興趣在另一種條件，請選取**篩選條件**而不是**條件運算式**中**中斷點設定**對話方塊，然後再依照篩選器的秘訣。
 
+## <a name="configure-the-data-to-show-in-the-debugger"></a>設定要在偵錯工具中顯示的資料
+
+針對C#，Visual Basic 和C++(C++僅限 /CLI 程式碼)，您可以告知偵錯工具来示範如何使用資訊[DebuggerDisplay](../debugger/using-the-debuggerdisplay-attribute.md)屬性。 針對C++程式碼中，您可以執行相同的 using [Natvis 視覺化](create-custom-views-of-native-objects.md)。
+
 ## <a name="change-the-execution-flow"></a>變更執行流程
 
 偵錯工具暫停程式碼行上，使用滑鼠按住左邊的黃色箭號指標。 黃色箭號將指標移至程式碼執行路徑中的不同點。 然後您會使用 F5 或逐步執行 命令，以繼續執行應用程式。
@@ -64,23 +68,23 @@ ms.locfileid: "57526356"
 > [!WARNING]
 > 您通常需要謹慎使用這項功能，您會在工具提示中看到一則警告。 也可能會看到其他警告。 將指標移無法還原成先前的應用程式狀態的應用程式。
 
-## <a name="track-an-out-of-scope-object-c-visual-basic"></a>追蹤的範圍外的物件 (C#，Visual Basic)
+## <a name="track-an-out-of-scope-object-c-visual-basic"></a>追蹤範圍外的物件 （C#、 Visual Basic）
 
 就可以輕鬆地檢視變數使用偵錯工具視窗，例如**監看式**視窗。 不過，當變數超出範圍內**監看式** 視窗中，您可能會注意到，它會呈現灰色。在某些應用程式案例中，即使變數超出範圍，以及要密切，可能會變更變數的值 （例如，變數可能會收到回收）。 您可以在建立物件識別碼來追蹤變數**監看式**視窗。
 
 #### <a name="to-create-an-object-id"></a>若要建立的物件識別碼
 
-1.  設定中斷點，靠近您想要追蹤的變數。
+1. 設定中斷點，靠近您想要追蹤的變數。
 
-2.  開始偵錯工具 (**F5**)，並在中斷點停止。
+2. 開始偵錯工具 (**F5**)，並在中斷點停止。
 
 3. 尋找在變數**區域變數** 視窗 (**偵錯 > Windows > 區域變數**)，以滑鼠右鍵按一下變數，然後選取**設定物件 ID**。
 
     ![建立物件 ID](../debugger/media/dbg-tips-watch-create-object-id.png "CreateObjectID")
 
-4.  您應該會看到 [區域變數] **$** 視窗中顯示 **$** 視窗中設定中斷點，在進行呼叫的函式返回的指令或程式行位置中斷執行。 此變數是物件識別碼。
+4. 您應該會看到 [區域變數] **$** 視窗中顯示 **$** 視窗中設定中斷點，在進行呼叫的函式返回的指令或程式行位置中斷執行。 此變數是物件識別碼。
 
-5.  以滑鼠右鍵按一下 物件識別碼變數，然後選擇 **新增監看式**。
+5. 以滑鼠右鍵按一下 物件識別碼變數，然後選擇 **新增監看式**。
 
 如需詳細資訊，請參閱 <<c0> [ 建立物件 ID](../debugger/watch-and-quickwatch-windows.md#bkmk_objectIds)。
 
@@ -106,7 +110,7 @@ ms.locfileid: "57526356"
 
 ![JSON 字串視覺化檢視](../debugger/media/dbg-tips-string-visualizer-json.png "JSONStringVisualizer")
 
-例如偵錯工具視窗中顯示的 WPF 物件其他一些類型，您也可以開啟視覺化檢視。
+例如會出現在偵錯工具視窗的 DataSet 和 DataTable 物件其他一些類型，您也可以開啟內建的視覺化檢視。
 
 ## <a name="break-into-code-on-handled-exceptions"></a>中斷程式碼上處理的例外狀況
 
@@ -122,19 +126,19 @@ ms.locfileid: "57526356"
 
 #### <a name="to-show-threads-in-your-source-code"></a>若要在您的原始程式碼中顯示執行緒
 
-1.  偵錯時，按一下**在來源中顯示執行緒** 按鈕![在來源中顯示執行緒](../debugger/media/dbg-multithreaded-show-threads.png "ThreadMarker")中**偵錯**工具列。
+1. 偵錯時，按一下**在來源中顯示執行緒** 按鈕![在來源中顯示執行緒](../debugger/media/dbg-multithreaded-show-threads.png "ThreadMarker")中**偵錯**工具列。
 
-2.  查看來源視窗左邊的裝訂邊。 在這一行，您會看到*執行緒標記*圖示![執行緒標記](../debugger/media/dbg-thread-marker.png "ThreadMarker") ，類似於兩條布條。 執行緒標記表示執行緒會停在這個位置上。
+2. 查看來源視窗左邊的裝訂邊。 在這一行，您會看到*執行緒標記*圖示![執行緒標記](../debugger/media/dbg-thread-marker.png "ThreadMarker") ，類似於兩條布條。 執行緒標記表示執行緒會停在這個位置上。
 
     請注意，可能會在中斷點部分隱藏執行緒標記。
 
-3.  將指標移到執行緒標記上。 資料提示方塊就會出現。 資料提示方塊會指出每個已停止的執行緒的名稱和執行緒 ID 編號。
+3. 將指標移到執行緒標記上。 資料提示方塊就會出現。 資料提示方塊會指出每個已停止的執行緒的名稱和執行緒 ID 編號。
 
     您也可以檢視的位置中的執行緒[平行堆疊 視窗](../debugger/get-started-debugging-multithreaded-apps.md)。
 
 ## <a name="examine-payloads-for-web-services-and-network-resources-uwp"></a>檢查裝載 web 服務和網路資源 (UWP)
 
-在 UWP 應用程式，您可以分析執行使用的網路作業`Windows.Web.Http`API。 您可以使用這項工具，以協助偵錯 web 服務和網路資源。 若要使用的工具，請選取**偵錯 > 效能 Profiler**。 選取 **網路**，然後選擇**開始**。 在應用程式中，完整瀏覽使用 `Windows.Web.Http` 的案例，然後選擇 [停止收集] 以產生報表。
+在 UWP 應用程式，您可以分析執行使用的網路作業`Windows.Web.Http`API。 您可以使用這項工具，以協助偵錯 web 服務和網路資源。 若要使用的工具，請選取**偵錯 > 效能 Profiler**。 選取 **網路**，然後選擇**開始**。 在應用程式中，完整瀏覽使用 `Windows.Web.Http` 的案例，然後選擇 [停止收集]  以產生報表。
 
 ![網路使用量分析工具](../profiling/media/prof-tour-network-usage.png "NetworkUsageProfTool")
 
@@ -144,11 +148,11 @@ ms.locfileid: "57526356"
 
 如需詳細資訊，請參閱[網路使用量](../profiling/network-usage.md)。
 
-## <a name="modules_window"></a> 更熟悉的偵錯工具會將附加至您的應用程式 (C#，c + +、 Visual Basic 中， F#)
+## <a name="modules_window"></a> 更熟悉的偵錯工具會將附加至您的應用程式 (C#， C++，Visual Basic 中， F#)
 
 若要附加至您執行的應用程式，偵錯工具會載入針對您嘗試偵錯的應用程式的完全相同的組建產生的符號 (.pdb) 檔。 在某些情況下，符號檔的一些知識可以很有幫助。 您可以檢查 Visual Studio 會使用的符號檔的載入**模組**視窗。
 
-開啟**模組**視窗中的選取偵錯時**偵錯 > Windows > 模組**。 **模組**] 視窗可以告訴您哪些模組偵錯工具會視為使用者程式碼，或[ *My Code*](../debugger/just-my-code.md)，和符號載入模組的狀態。 在大部分情況下，偵錯工具會自動尋找符號檔的使用者程式碼，但如果您想要逐步執行 （或偵錯）.NET framework 程式碼、 系統程式碼或協力廠商程式庫程式碼，需要額外的步驟，以取得正確的符號檔。
+開啟**模組**視窗中的選取偵錯時**偵錯 > Windows > 模組**。 **模組**視窗可以告訴您哪些模組偵錯工具會視為使用者程式碼，或[ *My Code*](../debugger/just-my-code.md)，和符號載入模組的狀態。 在大部分情況下，偵錯工具會自動尋找符號檔的使用者程式碼，但如果您想要逐步執行 （或偵錯）.NET framework 程式碼、 系統程式碼或協力廠商程式庫程式碼，需要額外的步驟，以取得正確的符號檔。
 
 ![在 [模組] 視窗中檢視符號資訊](../debugger/media/dbg-tips-modules-window.png "ViewSymbolInformation")
 
@@ -165,5 +169,6 @@ ms.locfileid: "57526356"
 - [在 Visual Studio 中偵錯的較小者已知的駭客 7](https://devblogs.microsoft.com/visualstudio/7-lesser-known-hacks-for-debugging-in-visual-studio/)
 - [在 Visual Studio 中隱藏的寶藏 7](https://devblogs.microsoft.com/visualstudio/7-hidden-gems-in-visual-studio-2017/)
 
-## <a name="see-also"></a>請參閱
-[鍵盤快速鍵](../ide/tips-and-tricks-for-visual-studio.md)
+## <a name="see-also"></a>另請參閱
+
+[鍵盤快速鍵](../ide/productivity-shortcuts.md)

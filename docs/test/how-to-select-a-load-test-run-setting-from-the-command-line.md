@@ -9,12 +9,12 @@ ms.assetid: 175d1d58-f09a-4449-b132-a29a394a7c8e
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e022eec099682581f244ad426500a512c63035d4
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 466ea9a7e0b877af55219be497eefde963e80853
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55936157"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62949847"
 ---
 # <a name="how-to-select-a-load-test-run-setting-to-use-from-the-command-line"></a>HOW TO：從命令列中選取要使用的負載測試回合設定
 
@@ -26,11 +26,11 @@ ms.locfileid: "55936157"
 
 ## <a name="to-change-the-run-setting-from-the-command-line"></a>從命令列變更回合設定
 
-1.  如果您想要從命令列使用不同的回合設定來運用內容參數策略，請使用下列命令：
+1. 如果您想要從命令列使用不同的回合設定來運用內容參數策略，請使用下列命令：
 
     `Set Test.UseRunSetting= CorporateStagingWebServer`
 
-2.  使用 mstest 執行負載測試：
+2. 使用 mstest 執行負載測試：
 
     `mstest /testcontainer:loadtest1.loadtest`
 

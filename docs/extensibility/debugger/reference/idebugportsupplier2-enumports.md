@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPortSupplier2::EnumPorts
 ms.assetid: 88b57fd2-eba1-44fa-bd34-cf2ad2b1ff87
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5b814c8097e001badafb93c27370ba5982eda48c
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: d2e1774df8439adaf7aaaeebf8965b74bf728bb7
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56703147"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66340203"
 ---
 # <a name="idebugportsupplier2enumports"></a>IDebugPortSupplier2::EnumPorts
 擷取一份連接埠提供者所提供的所有連接埠。
@@ -36,10 +39,9 @@ int EnumPorts( 
 );
 ```
 
-#### <a name="parameters"></a>參數
- `ppEnum`
-
- [out]傳回[IEnumDebugPorts2](../../../extensibility/debugger/reference/ienumdebugports2.md)物件，其中包含提供的連接埠清單。
+## <a name="parameters"></a>參數
+`ppEnum`\
+[out]傳回[IEnumDebugPorts2](../../../extensibility/debugger/reference/ienumdebugports2.md)物件，其中包含提供的連接埠清單。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

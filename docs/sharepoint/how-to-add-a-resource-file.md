@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2fd519b396f5120b7b0acca8d2e6144e363ab1f0
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: e7b8394d0c21ed5a45639e4dad5fe3695aaccc27
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56633053"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439994"
 ---
 # <a name="how-to-add-a-resource-file"></a>HOW TO：加入資源檔
   方案節點，然後在 [方案總管] 中的功能節點的捷徑功能表上，是將資源檔的命令。 如需詳細資訊，請參閱 <<c0> [ 當地語系化 SharePoint 方案](../sharepoint/localizing-sharepoint-solutions.md)。
@@ -32,7 +32,7 @@ ms.locfileid: "56633053"
 3. 中**加入新項目**對話方塊方塊中，選擇**全域資源檔**範本，然後選擇**新增** 按鈕。
 
    > [!NOTE]
-   >  只有在選取 SharePoint 專案項目時，會出現全域資源檔案的專案項目範本。
+   > 只有在選取 SharePoint 專案項目時，會出現全域資源檔案的專案項目範本。
 
 4. 在 **加入資源**對話方塊方塊中，選擇資源檔案，例如英文 （美國） 文化特性。
 
@@ -42,13 +42,13 @@ ms.locfileid: "56633053"
 
 ### <a name="to-add-a-feature-resource-file-to-a-sharepoint-feature"></a>若要將功能資源檔新增至 SharePoint 功能
 
-1.  如果尚未在中開啟 SharePoint 方案[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]，開啟方案。
+1. 如果尚未在中開啟 SharePoint 方案[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]，開啟方案。
 
-2.  在**方案總管 中**，開啟下的功能名稱的捷徑功能表**功能**節點，然後選擇**加入功能資源**。
+2. 在**方案總管 中**，開啟下的功能名稱的捷徑功能表**功能**節點，然後選擇**加入功能資源**。
 
      這個步驟會加入資源檔格式的功能_ResourceFileName_**。**_文化特性_**.resx**，例如*Feature1.en US.resx*。
 
-3.  當**資源編輯器**以開啟[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]，將資源新增至資源檔。
+3. 當**資源編輯器**以開啟[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]，將資源新增至資源檔。
 
 ## <a name="see-also"></a>另請參閱
 - [開發 SharePoint 方案](../sharepoint/developing-sharepoint-solutions.md)

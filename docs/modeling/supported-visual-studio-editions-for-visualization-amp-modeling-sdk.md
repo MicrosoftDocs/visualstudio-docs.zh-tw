@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f73ebb646c152509be9a7fbdd3287f2673ddadb
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 1e5898a95f10875f0880e4b4799f17b78aa8e79b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55907512"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63003423"
 ---
 # <a name="supported-visual-studio-editions-for-visualization--modeling-sdk"></a>支援的 Visual Studio Visualization & Modeling SDK 版本
 
@@ -37,13 +37,13 @@ ms.locfileid: "55907512"
 
 [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] 支援用於部署您建置之網域指定的語言的下列組態：
 
--   Visual Studio 企業版
+- Visual Studio 企業版
 
--   Visual Studio Professional
+- Visual Studio Professional
 
--   Visual Studio Shell （整合模式） 可轉散發套件可轉散發套件
+- Visual Studio Shell （整合模式） 可轉散發套件可轉散發套件
 
--   Visual Studio Shell (隔離模式) 可轉散發套件
+- Visual Studio Shell (隔離模式) 可轉散發套件
 
 > [!NOTE]
 > 若要讓 DSL 能夠在 Shell 產品上執行，您必須設定**支援的 VS 版本**延伸模組資訊清單中的欄位。 如需詳細資訊，請參閱 <<c0> [ 部署特定領域語言方案](../modeling/deploying-domain-specific-language-solutions.md)。

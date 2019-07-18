@@ -9,12 +9,12 @@ caps.latest.revision: 20
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c13472fc1322701fefada53ee3e94156f35e8072
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: cb77271c37b02104a0e1695d5495ff085518acad
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54757966"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65675274"
 ---
 # <a name="performance-tools-on-windows-8-and-windows-server-2012-applications"></a>Windows 8 和 Windows Server 2012 應用程式的效能工具
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,9 +22,9 @@ ms.locfileid: "54757966"
 Windows 8 和 Windows Server 2012 增強式安全性功能需要的重大變更，是 Visual Studio 效能工具在這些平台收集資料的方式。 Windows 市集應用程式也需要新的資料收集技術。 本主題描述 Windows 8 和 Windows Server 2012 平台上的效能工具變更。  
   
 > [!NOTE]
->  其他支援的 Windows 版本 (Windows 7、Windows Server 2008 R2) 的效能工具並未變更。  
+> 其他支援的 Windows 版本 (Windows 7、Windows Server 2008 R2) 的效能工具並未變更。  
   
-##  <a name="BKMK_In_this_topic"></a>本主題內容  
+## <a name="BKMK_In_this_topic"></a>本主題內容  
  [從 Visual Studio IDE 收集 Windows 市集應用程式資料](#BKMK_Profiling_Windows_Store_apps_from_the_Visual_Studio_IDE)  
   
  [從 Visual Studio IDE 收集 Windows 8 桌面或 Windows Server 2012 上所執行應用程式的資料](#BKMK_Profiling_apps_running_on_the_Windows_8_desktop_or_on_Windows_Server_2012_from_the_Visual_Studio_IDE)  
@@ -35,7 +35,7 @@ Windows 8 和 Windows Server 2012 增強式安全性功能需要的重大變更�
   
   [收集階層互動 (TIP) 資料](#BKMK_Collecting_tier_interaction__TIP__data)  
   
-##  <a name="BKMK_Profiling_Windows_Store_apps_from_the_Visual_Studio_IDE"></a>從 Visual Studio IDE 收集 Windows 市集應用程式資料  
+## <a name="BKMK_Profiling_Windows_Store_apps_from_the_Visual_Studio_IDE"></a>從 Visual Studio IDE 收集 Windows 市集應用程式資料  
  當您剖析以 JavaScript 和 HTML 5 撰寫的 Windows 市集應用程式的程式碼時，要收集 JavaScript 程式碼的檢測資料。 當您剖析以 Visual C++、Visual C# 或 Visual Basic 撰寫的 Windows 市集應用程式或元件的程式碼時，要收集機器碼和 Managed 程式碼的取樣資料。 您可以在本機或遠端電腦上剖析應用程式的程式碼。  
   
  剖析 Windows 市集應用程式的程式碼時，不支援這些程式碼剖析的功能和選項：  
@@ -60,35 +60,35 @@ Windows 8 和 Windows Server 2012 增強式安全性功能需要的重大變更�
   
   [在遠端電腦上執行 Windows 市集應用程式](../debugger/run-windows-store-apps-on-a-remote-machine.md)  
   
-  [分析應用程式效能](http://msdn.microsoft.com/library/58acb30b-8428-41a6-b195-b0fdedb89575)  
+  [分析應用程式效能](https://msdn.microsoft.com/library/58acb30b-8428-41a6-b195-b0fdedb89575)  
   
-- [JavaScript 函式計時](http://msdn.microsoft.com/library/b2bf49fc-aea7-4d9c-8fcf-cff8b8dd0c03)  
+- [JavaScript 函式計時](https://msdn.microsoft.com/library/b2bf49fc-aea7-4d9c-8fcf-cff8b8dd0c03)  
   
-- [在遠端裝置上的 JavaScript 函式計時](http://msdn.microsoft.com/library/d78812b6-a97e-46dc-8d99-e724d1d725d8)  
+- [在遠端裝置上的 JavaScript 函式計時](https://msdn.microsoft.com/library/d78812b6-a97e-46dc-8d99-e724d1d725d8)  
   
-- [分析 JavaScript 函式計時資料](http://msdn.microsoft.com/library/b5aea8d8-36df-47ba-a7ca-95406700ca9b)  
+- [分析 JavaScript 函式計時資料](https://msdn.microsoft.com/library/b5aea8d8-36df-47ba-a7ca-95406700ca9b)  
   
-- [剖析本機電腦上 Windows 市集應用程式中的 Visual C++、Visual C# 和 Visual Basic 程式碼](http://msdn.microsoft.com/2d0c939e-0bac-48c5-b727-46f6c6113060)  
+- [剖析本機電腦上 Windows 市集應用程式中的 Visual C++、Visual C# 和 Visual Basic 程式碼](https://msdn.microsoft.com/2d0c939e-0bac-48c5-b727-46f6c6113060)  
   
-- [在遠端裝置上分析 Windows 市集應用程式中的 Visual C++、Visual C# 和 Visual Basic 程式碼](http://msdn.microsoft.com/b932a2be-11b0-40fd-b996-75c6b6a79d22)  
+- [在遠端裝置上分析 Windows 市集應用程式中的 Visual C++、Visual C# 和 Visual Basic 程式碼](https://msdn.microsoft.com/b932a2be-11b0-40fd-b996-75c6b6a79d22)  
   
-- [分析 Windows 市集應用程式中 Visual C++、Visual C# 和 Visual Basic 程式碼的效能資料](http://msdn.microsoft.com/5de4a413-d924-425f-afc4-e1ecfb0fca18)  
+- [分析 Windows 市集應用程式中 Visual C++、Visual C# 和 Visual Basic 程式碼的效能資料](https://msdn.microsoft.com/5de4a413-d924-425f-afc4-e1ecfb0fca18)  
   
   [本主題內容](#BKMK_In_this_topic)  
   
-##  <a name="BKMK_Profiling_apps_running_on_the_Windows_8_desktop_or_on_Windows_Server_2012_from_the_Visual_Studio_IDE"></a>從 Visual Studio IDE 收集 Windows 8 桌面或 Windows Server 2012 上所執行應用程式的資料  
+## <a name="BKMK_Profiling_apps_running_on_the_Windows_8_desktop_or_on_Windows_Server_2012_from_the_Visual_Studio_IDE"></a>從 Visual Studio IDE 收集 Windows 8 桌面或 Windows Server 2012 上所執行應用程式的資料  
  Windows 8 尚未變更使用檢測方法進行程式碼剖析。  
   
  階層互動分析 (TIP) 不支援使用取樣方法。  
   
-###  <a name="BKMK_Profiling_apps_running_on_the_Windows_8_desktop_or_on_Windows_Server_2012_by_using_sampling_from_the_Visual_Studio_IDE"></a>使用來自 Visual Studio IDE 的取樣，收集 Windows 8 桌面或 Windows Server 2012 上所執行應用程式的資料  
+### <a name="BKMK_Profiling_apps_running_on_the_Windows_8_desktop_or_on_Windows_Server_2012_by_using_sampling_from_the_Visual_Studio_IDE"></a>使用來自 Visual Studio IDE 的取樣，收集 Windows 8 桌面或 Windows Server 2012 上所執行應用程式的資料  
  使用取樣方法剖析 Windows 8 桌面應用程式或 Windows Server 2012 應用程式時，不支援這些程式碼剖析功能和選項：  
   
--   階層互動分析 (TIP)。 使用檢測支援收集 TIP 資料。  
+- 階層互動分析 (TIP)。 使用檢測支援收集 TIP 資料。  
   
--   取樣選項，例如設定取樣事件和逾時間隔，或收集其他效能計數器資料。  
+- 取樣選項，例如設定取樣事件和逾時間隔，或收集其他效能計數器資料。  
   
-##  <a name="BKMK_Profiling_from_the_command_line"></a> 從命令列進行程式碼剖析  
+## <a name="BKMK_Profiling_from_the_command_line"></a> 從命令列進行程式碼剖析  
  您使用兩種命令列工具在 Windows 8 和 Windows Server 2012 的裝置上收集程式碼剖析資料，包括沒有安裝 Visual Studio 的裝置：  
   
 |工具名稱|描述|  
@@ -100,22 +100,22 @@ Windows 8 和 Windows Server 2012 增強式安全性功能需要的重大變更�
   
  若要在沒有安裝 Visual Studio 的裝置上剖析應用程式，請執行下列任一作業：  
   
--   從 [MSDN 網站](http://go.microsoft.com/fwlink/?LinkID=219549)下載工具當做 Visual studio 遠端工具的一部分。  
+- 從 [MSDN 網站](http://go.microsoft.com/fwlink/?LinkID=219549)下載工具當做 Visual studio 遠端工具的一部分。  
   
--   從您的 Visual Studio 電腦複製並執行獨立的分析工具安裝程式。 安裝程式位在 *%VSInstallDir%* **\Team Tools\Performance Tools\Setups** 資料夾。 選擇遠端電腦的作業系統 (x86/x64) 安裝程式。  
+- 從您的 Visual Studio 電腦複製並執行獨立的分析工具安裝程式。 安裝程式位在 *%VSInstallDir%* **\Team Tools\Performance Tools\Setups** 資料夾。 選擇遠端電腦的作業系統 (x86/x64) 安裝程式。  
   
 > [!NOTE]
->  若要收集 TIP 程式碼剖析資料，您必須從遠端電腦的 Visual Studio 電腦安裝獨立分析工具。  
+> 若要收集 TIP 程式碼剖析資料，您必須從遠端電腦的 Visual Studio 電腦安裝獨立分析工具。  
   
  從命令列剖析 Windows 8 和 Windows Server 2012 應用程式時，不支援這些程式碼剖析功能和選項：  
   
--   使用取樣模式和 [VSPerfASPNetCmd](../profiling/vsperfaspnetcmd.md)，從 Windows 8 和 Windows Server 2012 Web 應用程式收集資料。  
+- 使用取樣模式和 [VSPerfASPNetCmd](../profiling/vsperfaspnetcmd.md)，從 Windows 8 和 Windows Server 2012 Web 應用程式收集資料。  
   
--   使用 VsPerfCmd.exe 收集取樣資料。  
+- 使用 VsPerfCmd.exe 收集取樣資料。  
   
--   取樣選項，例如設定取樣事件和逾時間隔，或收集其他效能計數器資料。  
+- 取樣選項，例如設定取樣事件和逾時間隔，或收集其他效能計數器資料。  
   
-##  <a name="BKMK_Collecting_tier_interaction__TIP__data"></a> 收集階層互動 (TIP) 資料  
+## <a name="BKMK_Collecting_tier_interaction__TIP__data"></a> 收集階層互動 (TIP) 資料  
  階層互動分析提供透過 ADO.NET 服務與資料庫通訊之多介層應用程式函式執行時間的其他資訊。 只針對同步函式呼叫收集資料。  
   
  **Visual Studio 版本**  
@@ -136,7 +136,7 @@ Windows 8 和 Windows Server 2012 增強式安全性功能需要的重大變更�
   
    **在遠端電腦上收集 TIP 資料**  
   
-   若要在遠端電腦上收集階層互動資料，您必須從 Visual Studio 電腦的 _%VSInstallDir%_**\Team Tools\Performance Tools\Setups** 資料夾中，將 **vs\_profiler\_**_\<平台>_**\_**_\<語言>_**.exe** 檔案複製到遠端電腦並加以安裝。 您無法使用 [Visual Studio 遠端工具](http://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c) 下載封裝的程式碼剖析工具。  
+   若要在遠端電腦上收集階層互動資料，您必須從 Visual Studio 電腦的 _%VSInstallDir%_**\Team Tools\Performance Tools\Setups** 資料夾中，將 **vs\_profiler\_**_\<平台>_**\_**_\<語言>_**.exe** 檔案複製到遠端電腦並加以安裝。 您無法使用 [Visual Studio 遠端工具](https://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c) 下載封裝的程式碼剖析工具。  
   
    您可以使用 [VSPerfCmd](../profiling/vsperfcmd.md) 或 [VSPerfASPNetCmd](../profiling/vsperfaspnetcmd.md) 收集程式碼剖析資料。  
   
@@ -144,7 +144,7 @@ Windows 8 和 Windows Server 2012 增強式安全性功能需要的重大變更�
   
    階層互動資料只能在 [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)] 或 [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)] IDE 中檢視。 不提供透過 [VSPerfReport](../profiling/vsperfreport.md) 的檔案型階層互動報告。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [效能總管](../profiling/performance-explorer.md)   
  [設定效能工作階段](../profiling/configuring-performance-sessions.md)   
  [從命令列進行程式碼剖析](../profiling/using-the-profiling-tools-from-the-command-line.md)

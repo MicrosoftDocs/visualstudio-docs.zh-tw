@@ -9,17 +9,17 @@ helpviewer_keywords:
 - <ShowByDefault> element [Visual Studio Templates]
 - ShowByDefault element [Visual Studio Templates]
 ms.assetid: 7be783f6-0ef6-42bc-924a-df9a2eba7781
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 435ff11f7e70bb198ed57db35c7f56acea0610c8
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: c211f45423ce0f2166bbf8aa189d35ab386a7fee
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56679277"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66331975"
 ---
 # <a name="showbydefault-element-visual-studio-templates"></a>ShowByDefault 項目 （Visual Studio 範本）
 如果`false`，指定範本只會顯示在指定[TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md)。

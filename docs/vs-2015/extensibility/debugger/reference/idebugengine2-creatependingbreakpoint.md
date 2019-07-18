@@ -1,14 +1,9 @@
 ---
 title: IDebugEngine2::CreatePendingBreakpoint |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugEngine2::CreatePendingBreakpoint
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 92e85b90-a931-48d9-89a7-a6edcb83ae5a
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 28123ed555cc54d8ca307cca020fe7b101f73087
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 84c36d08c7ad907006eb9f41d2f6e2c9cd77e7bf
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51777223"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68196036"
 ---
 # <a name="idebugengine2creatependingbreakpoint"></a>IDebugEngine2::CreatePendingBreakpoint
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -82,4 +77,3 @@ HRESULT CProgram::CreatePendingBreakpoint(IDebugBreakpointRequest2* pBPRequest, 
  [繫結](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md)   
  [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md)   
  [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)
-

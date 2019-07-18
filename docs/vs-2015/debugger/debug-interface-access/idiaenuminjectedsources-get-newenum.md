@@ -1,14 +1,9 @@
 ---
-title: 'Idiaenuminjectedsources:: Get__newenum |Microsoft Docs'
-ms.custom: ''
+title: IDiaEnumInjectedSources::get__NewEnum | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: f56cdcdb-dc71-43c7-82fe-e2500986f5bc
 caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: e0adfad330ff3bf637558781ad244e407da6ef02
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 1b6919fa260a40ad349c9084010e7b3f02752063
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51766209"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68202635"
 ---
 # <a name="idiaenuminjectedsourcesgetnewenum"></a>IDiaEnumInjectedSources::get__NewEnum
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -47,6 +42,3 @@ HRESULT get__NewEnum ( 
   
 ## <a name="see-also"></a>另請參閱  
  [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md)
-
-
-

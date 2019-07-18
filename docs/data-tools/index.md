@@ -1,13 +1,19 @@
 ---
 title: 開發資料解決方案
-description: 了解用來在 Visual Studio 中開發資料解決方案的不同工具，包括 .NET Framework 工具、SQL Server Data Tools、Azure Data Lake、Azure HDInsight 及 Azure 串流分析。
+description: 了解用來在 Visual Studio 中開發資料解決方案的不同工具，包括 .NET 工具、SQL Server Data Tools、Azure Data Lake、Azure HDInsight 與 Azure 串流分析。
 layout: LandingPage
 ms.date: 01/01/2018
 author: gewarren
 ms.author: gewarren
 ms.topic: landing-page
 ms.workload:
-  - data-storage
+- data-storage
+ms.openlocfilehash: 768d3d1f130c3ef7b81da9706559e9d6b5f159ee
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66715050"
 ---
 # <a name="use-data-tools-in-visual-studio-to-develop-data-solutions"></a>使用 Visual Studio 中的資料工具來開發資料解決方案
 
@@ -23,11 +29,11 @@ ms.workload:
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="../data-tools/media/logo_VS.svg" alt="Use Visual Studio and .NET framework tooling to develop your data applications" />
+                            <img src="../data-tools/media/logo_VS.svg" alt="Use Visual Studio and .NET tooling to develop your data applications" />
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>了解 Visual Studio 與 .NET Framework 針對開發資料應用程式的工具與 API 支援</h3>
+                        <h3>了解 Visual Studio 與 .NET 針對開發資料應用程式的工具與 API 支援</h3>
                     </div>
                 </div>
             </div>

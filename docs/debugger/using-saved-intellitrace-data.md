@@ -15,59 +15,58 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 39a31a7eca86daa390ed1bb4ad32ab5e8859b2d7
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MTE95
+ms.openlocfilehash: b9217031866a53e229cb03838b1be835019b62ba
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57873472"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825606"
 ---
-# <a name="using-saved-intellitrace-data-c-visual-basic-c"></a>使用儲存的 IntelliTrace 資料 (C#，Visual Basic、 c + +)
+# <a name="using-saved-intellitrace-data-c-visual-basic-c"></a>使用儲存的 IntelliTrace 資料 (C#，Visual Basic 中， C++)
 
 當您從 IntelliTrace (.iTrace) 記錄檔開始進行偵錯時，請移至您的應用程式執行中的特定點。 這個檔案可能會包含 IntelliTrace 在 App 執行時所記錄的效能事件、例外狀況、執行緒、測試步驟、模組及其他系統資訊。
 
  請確定您已符合下列條件：
 
--   配對應用程式程式碼的原始程式檔和符號檔 (.pdb)。 否則，Visual Studio 無法解析來源位置並會顯示「找不到符號」的訊息。 請參閱[指定符號 (.pdb) 和原始程式檔](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)並[於部署後診斷問題](../debugger/diagnose-problems-after-deployment.md)。
+- 配對應用程式程式碼的原始程式檔和符號檔 (.pdb)。 否則，Visual Studio 無法解析來源位置並會顯示「找不到符號」的訊息。 請參閱[指定符號 (.pdb) 和原始程式檔](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)並[於部署後診斷問題](../debugger/diagnose-problems-after-deployment.md)。
 
--   在開發電腦或另一部要開啟 .iTrace 檔案的電腦上已安裝 Visual Studio Enterprise (但不能是 Professional 或 Community 版本)
+- 在開發電腦或另一部要開啟 .iTrace 檔案的電腦上已安裝 Visual Studio Enterprise (但不能是 Professional 或 Community 版本)
 
--   來自下列其中一個來源的 .iTrace 檔案：
+- 來自下列其中一個來源的 .iTrace 檔案：
 
     |**來源**|**請參閱**|
     |----------------|-------------|
     |在 Visual Studio Enterprise (但不是 Professional 或 Community 版本) 中的 IntelliTrace 工作階段|[IntelliTrace 功能](../debugger/intellitrace-features.md)|
-    |Microsoft Test Manager 中的測試工作階段。 這會將 .iTrace 檔案附加至 Team Foundation Server 工作項目。|[在手動測試中收集更多診斷資料](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)|
     |如果是在部署中執行的 ASP.NET Web App 和 SharePoint 應用程式，則來源為 Microsoft Monitoring Agent (獨立執行或搭配 System Center 2012 R2 Operations Manager 運作)|-   [於部署後診斷問題](../debugger/diagnose-problems-after-deployment.md)<br />-   [System Center 2012 R2 Operations Manager 的新功能](/previous-versions/system-center/system-center-2012-R2/dn249700(v=sc.12))|
 
-##  <a name="GetStarted"></a> 請您指定選項。
+## <a name="GetStarted"></a> 請您指定選項。
 
--   [開啟 IntelliTrace 記錄檔](#Open)
+- [開啟 IntelliTrace 記錄檔](#Open)
 
--   [了解 IntelliTrace 記錄檔](#Understand)
+- [了解 IntelliTrace 記錄檔](#Understand)
 
--   [從 IntelliTrace 記錄檔開始偵錯](#StartDebugging)
+- [從 IntelliTrace 記錄檔開始偵錯](#StartDebugging)
 
-##  <a name="Open"></a> 開啟 IntelliTrace 記錄檔
+## <a name="Open"></a> 開啟 IntelliTrace 記錄檔
  在安裝了 Visual Studio Enterprise 的電腦上，開啟 .iTrace 檔案。
 
--   在 Visual Studio 外部按兩下 .iTrace 檔案，或從 Visual Studio 內開啟該檔案。
+- 在 Visual Studio 外部按兩下 .iTrace 檔案，或從 Visual Studio 內開啟該檔案。
 
      \-或-
 
--   如果 .iTrace 檔案是附加至 Team Foundation Server 工作項目，請在工作項目中依照下列步驟執行：
+- 如果 .iTrace 檔案是附加至 Team Foundation Server 工作項目，請在工作項目中依照下列步驟執行：
 
-    -   在 [所有連結] 下方找出 .iTrace 檔案。 開啟該檔案。
+  - 在 [所有連結]  下方找出 .iTrace 檔案。 開啟該檔案。
 
-         \-或-
+    \-或-
 
-    -   在 [重新產生步驟] 底下，選擇 [IntelliTrace]  連結。
+  - 在 [重新產生步驟]  底下，選擇 [IntelliTrace]  連結。
 
 > [!TIP]
->  如果您在偵錯期間關閉了 IntelliTrace 檔案，您可以輕易地重新開啟它。 移至 [偵錯]  功能表，選擇 [IntelliTrace] 、[顯示記錄檔摘要] 。 您也可以選取 [IntelliTrace]  視窗中的 [顯示記錄檔摘要]  。 只有在使用 IntelliTrace 偵錯時，才能使用這個選項。
+> 如果您在偵錯期間關閉了 IntelliTrace 檔案，您可以輕易地重新開啟它。 移至 [偵錯]  功能表，選擇 [IntelliTrace]  、[顯示記錄檔摘要]  。 您也可以選取 [IntelliTrace]  視窗中的 [顯示記錄檔摘要]  。 只有在使用 IntelliTrace 偵錯時，才能使用這個選項。
 
-##  <a name="Understand"></a> 了解 IntelliTrace 記錄檔
- .iTrace 檔案中的下列某些區段，只有在您從特定來源 (例如，從 Test Manager 或 SharePoint 應用程式) 收集資料時才會出現。
+## <a name="Understand"></a> 了解 IntelliTrace 記錄檔
+ 某些.iTrace 檔中的下列區段才會出現您收集的資料來自特定來源，例如，從 SharePoint 應用程式。
 
 |**區段**|**包含**|**資料收集來源**|
 |-----------------|------------------|---------------------------|
@@ -76,40 +75,39 @@ ms.locfileid: "57873472"
 |[分析](#Analysis)|僅適用於 SharePoint 2010 和 SharePoint 2013 應用程式。 診斷 IntelliTrace 和 SharePoint 事件，例如偵錯工具事件、ULS 事件、未處理的例外狀況，以及 Microsoft Monitoring Agent 所記錄的其他資料。|Microsoft 監視代理程式，可能是獨立收集器或搭配 System Center 2012 R2 Operations Manager|
 |[系統資訊](#SystemInfo)|主機系統的設定和規格|所有來源|
 |[執行緒清單](#ThreadsList)|在收集期間執行的執行緒|所有來源|
-|[測試資料](#TestData)|測試工作階段的測試步驟和結果|測試管理員|
 |[模組](#Modules)|目標處理序所載入的模組，以載入的順序排列顯示。|所有來源|
 |[Web 要求](#Modules)|實際執行 IIS 的 web 要求資料的 web 應用程式和 SharePoint 2010 和 SharePoint 2013|Microsoft Monitoring Agent 並獨立收集器|
 
  這裡有一些秘訣可幫助您尋找每個區段中的資訊：
 
--   選擇資料行標頭來排序資料。
+- 選擇資料行標頭來排序資料。
 
--   使用搜尋方塊來篩選資料。 純文字搜尋適用於所有資料行 (除了時間資料行以外)。 您也可以每個資料行使用一個篩選條件，將要篩選的搜尋範圍限定在某特定資料行。 輸入不含空格的資料行名稱、冒號 (**:**) 和搜尋值。 後面要接著輸入分號 (**;**)，才能加入另一個資料行和搜尋值。
+- 使用搜尋方塊來篩選資料。 純文字搜尋適用於所有資料行 (除了時間資料行以外)。 您也可以每個資料行使用一個篩選條件，將要篩選的搜尋範圍限定在某特定資料行。 輸入不含空格的資料行名稱、冒號 ( **:** ) 和搜尋值。 後面要接著輸入分號 ( **;** )，才能加入另一個資料行和搜尋值。
 
      例如，若要在 [Description]  資料行中尋找含有 "slow" 這個字的效能事件，請輸入：
 
      `Description:slow`
 
-##  <a name="StartDebugging"></a> 從 IntelliTrace 記錄檔開始偵錯
+## <a name="StartDebugging"></a> 從 IntelliTrace 記錄檔開始偵錯
 
-###  <a name="Performance"></a> 效能違規
+### <a name="Performance"></a> 效能違規
  檢閱針對您的 App 所記錄的效能事件。 您可以隱藏不常發生的事件。
 
 ##### <a name="to-start-debugging-from-a-performance-event"></a>從效能事件開始偵錯
 
-1.  在 [效能違規] 下，檢閱所記錄的效能事件、它們的總執行時間和其他事件資訊。 然後更深入發掘在特定的效能事件期間所呼叫的方法。
+1. 在 [效能違規]  下，檢閱所記錄的效能事件、它們的總執行時間和其他事件資訊。 然後更深入發掘在特定的效能事件期間所呼叫的方法。
 
      ![檢視效能事件詳細資料](../debugger/media/ffr_itsummarypageperformance.png "FFR_ITSummaryPagePerformance")
 
      您也可以直接按兩下事件。
 
-2.  在事件頁面上，檢閱這些呼叫的執行時間。 在執行樹狀結構中尋找速度緩慢的呼叫。
+2. 在事件頁面上，檢閱這些呼叫的執行時間。 在執行樹狀結構中尋找速度緩慢的呼叫。
 
      當您有多個呼叫 (不論是巢狀或其他形式) 時，最慢的呼叫會顯示在其專有的區段中。
 
-3.  展開該呼叫，以檢閱該時間點所記錄的所有巢狀呼叫和參數值。
+3. 展開該呼叫，以檢閱該時間點所記錄的所有巢狀呼叫和參數值。
 
-     (鍵盤：若要顯示或隱藏巢狀呼叫，請分別按下 **向右鍵** 或 **向左鍵** 。 若要顯示和隱藏巢狀呼叫的參數值，請按 **空格鍵** )
+     (鍵盤：若要顯示或隱藏巢狀的呼叫，請按**向右箭號**或是**向左鍵**分別。 若要顯示和隱藏巢狀呼叫的參數值，請按 **空格鍵** )
 
      從該呼叫開始偵錯。
 
@@ -119,42 +117,42 @@ ms.locfileid: "57873472"
 
      如果該方法是位於您的應用程式程式碼中，Visual Studio 就會移至該方法。
 
-     ![移至應用程式程式碼在效能事件](../debugger/media/ffr_itsummarypageperformancegotocode.png "FFR_ITSummaryPagePerformanceGoToCode")
+     ![從效能事件移至應用程式程式碼](../debugger/media/ffr_itsummarypageperformancegotocode.png "FFR_ITSummaryPagePerformanceGoToCode")
 
      現在您可以檢閱其他記錄值、呼叫堆疊、逐步執行程式碼，或使用 [IntelliTrace]  視窗 [在「時間」中向後或向前移動至其他方法](../debugger/intellitrace.md) (這些方法是在此效能事件期間呼叫的)。
 
-###  <a name="ExceptionData"></a> 例外狀況資料
+### <a name="ExceptionData"></a> 例外狀況資料
  檢閱針對您的 App 所記錄的擲回之例外狀況。 您可以將具有相同類型和呼叫堆疊的例外狀況群組在一起，這樣就可以只看到最新的例外狀況。
 
 ##### <a name="to-start-debugging-from-an-exception"></a>從例外狀況開始偵錯
 
-1.  在 [例外狀況資料] 下，檢閱記錄的例外狀況事件、其類型、訊息，以及發生例外狀況的時間。 若要更深入發掘程式碼，請從例外狀況群組中最近發生的事件開始偵錯。
+1. 在 [例外狀況資料]  下，檢閱記錄的例外狀況事件、其類型、訊息，以及發生例外狀況的時間。 若要更深入發掘程式碼，請從例外狀況群組中最近發生的事件開始偵錯。
 
      ![從例外狀況事件開始偵錯](../debugger/media/ffr_itsummarypageexception.png "FFR_ITSummaryPageException")
 
-     您也可以直接按兩下事件。 如果事件沒有組成群組，請選取 [偵錯這個事件] 。
+     您也可以直接按兩下事件。 如果事件沒有組成群組，請選取 [偵錯這個事件]  。
 
      如果例外狀況是發生在您的應用程式程式碼中，Visual Studio 會移至發生例外狀況的位置。
 
-     ![移至應用程式程式碼在例外狀況事件](../debugger/media/ffr_itsummarypageexceptiongotocode.png "FFR_ITSummaryPageExceptionGoToCode")
+     ![從例外狀況事件移至應用程式程式碼](../debugger/media/ffr_itsummarypageexceptiongotocode.png "FFR_ITSummaryPageExceptionGoToCode")
 
      現在您可以檢閱其他記錄值、呼叫堆疊，或使用 [IntelliTrace]  視窗 [在「時間」中向後或向前移動至其他記錄的事件](../debugger/intellitrace.md)、相關程式碼以及在這些時間點上記錄的值。
 
     |**資料行**|**顯示的內容**|
     |----------------|-------------------|
     |**類型**|例外狀況的 .NET 類型|
-    |如果是組成群組的例外狀況，則為 [最新的訊息] ；如果是沒有組成群組的例外狀況，則為 [訊息]  |例外狀況所提供的訊息|
+    |如果是組成群組的例外狀況，則為 [最新的訊息]  ；如果是沒有組成群組的例外狀況，則為 [訊息] |例外狀況所提供的訊息|
     |如果是組成群組的例外狀況，則為 [計數] |例外狀況的擲回次數|
     |如果是沒有組成群組的例外狀況，則為 [執行緒 ID] |擲回例外狀況之執行緒的 ID|
     | 或 |擲回例外狀況時所記錄的時間戳記|
     |**呼叫堆疊**|例外狀況的呼叫堆疊。<br /><br /> 若要查看呼叫堆疊，請選取清單中的某個例外狀況。 呼叫堆疊會顯示在例外狀況清單的下方。|
 
-###  <a name="Analysis"></a> 分析
+### <a name="Analysis"></a> 分析
  藉由使用 SharePoint 相互關聯識別碼或檢閱 Microsoft Monitoring Agent 所找到的任何未處理的例外狀況，來診斷 SharePoint 2010 和 SharePoint 2013 應用程式的問題。
 
--   使用 SharePoint 相互關聯識別碼來尋找其相符的 Web 要求和事件。 請選擇某個事件，然後在事件發生的位置和時間點上開始偵錯。
+- 使用 SharePoint 相互關聯識別碼來尋找其相符的 Web 要求和事件。 請選擇某個事件，然後在事件發生的位置和時間點上開始偵錯。
 
--   如果 Microsoft Monitoring Agent 找到未處理的例外狀況，請選擇某個例外狀況，然後在例外狀況發生的位置和時間點上開始偵錯。
+- 如果 Microsoft Monitoring Agent 找到未處理的例外狀況，請選擇某個例外狀況，然後在例外狀況發生的位置和時間點上開始偵錯。
 
 ##### <a name="start-debugging-with-a-sharepoint-correlation-id"></a>使用 SharePoint 相互關聯識別碼開始偵錯
 
@@ -168,7 +166,7 @@ ms.locfileid: "57873472"
 
     ![IntelliTrace 記錄檔&#45;輸入 SharePoint 相互關聯識別碼](../debugger/media/entersharepointcorrelationid.png "EnterSharePointCorrelationID")
 
-3. 在 [要求事件] 下方，檢查事件。 事件會依其發生順序從最上方開始顯示。
+3. 在 [要求事件]  下方，檢查事件。 事件會依其發生順序從最上方開始顯示。
 
    1. 選擇要查看其詳細資料的事件。
 
@@ -178,11 +176,11 @@ ms.locfileid: "57873472"
 
    您可以一併查看下面這些類型的 SharePoint 事件和 IntelliTrace 事件：
 
--   **使用者設定檔事件**
+- **使用者設定檔事件**
 
      這些事件會在 SharePoint 載入使用者設定檔時，以及在讀取或變更使用者設定檔屬性時發生。
 
--   **統一登入系統 (ULS) 事件**
+- **統一登入系統 (ULS) 事件**
 
      Microsoft Monitoring Agent 會記錄 SharePoint ULS 事件的子集以及下面這些欄位：
 
@@ -206,18 +204,18 @@ ms.locfileid: "57873472"
 
     ![IntelliTrace 記錄檔&#45;SharePoint 未處理例外狀況](../debugger/media/sharepointunhandledexceptions_intellitrace.png "SharePointUnhandledExceptions_IntelliTrace")
 
-   如需逐步解說，請參閱 <<c0> [ 逐步解說： 偵錯 SharePoint 應用程式所使用 IntelliTrace](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md)。 代理程式記錄，請參閱資料種類[IntelliTrace 功能](../debugger/intellitrace-features.md)。
+   如需逐步解說，請參閱[逐步解說：使用 IntelliTrace 偵錯 SharePoint 應用程式](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md)。 代理程式記錄，請參閱資料種類[IntelliTrace 功能](../debugger/intellitrace-features.md)。
 
-###  <a name="ThreadsList"></a> 執行緒清單
+### <a name="ThreadsList"></a> 執行緒清單
  檢查在目標處理序中執行的已記錄執行緒。 您可以從所選取之執行緒中的第一個有效 IntelliTrace 事件開始進行偵錯。
 
 ##### <a name="to-start-debugging-from-a-specific-thread"></a>若要從特定執行緒開始偵錯
 
-1. 在 [執行緒清單] 底下，選擇執行緒。
+1. 在 [執行緒清單]  底下，選擇執行緒。
 
-2. 在 [執行緒清單] 下方，選取 [開始偵錯] 。 您也可以按兩下執行緒。
+2. 在 [執行緒清單]  下方，選取 [開始偵錯]  。 您也可以按兩下執行緒。
 
-    若要從 App 的開頭處開始偵錯，請按兩下 [主執行緒] 。 請參閱[IntelliTrace 功能](../debugger/intellitrace-features.md)。
+    若要從 App 的開頭處開始偵錯，請按兩下 [主執行緒]  。 請參閱[IntelliTrace 功能](../debugger/intellitrace-features.md)。
 
    使用者建立的執行緒資料，可能會比伺服器針對 IIS 裝載的 Web App 所建立及管理的執行緒還要有用。
 
@@ -228,14 +226,11 @@ ms.locfileid: "57873472"
 |**開始時間**|執行緒的建立時間|
 |**結束時間**|執行緒的完成時間|
 
-###  <a name="TestData"></a> 測試資料
- 檢查 Test Manager 在測試您的 App 時所記錄的 IntelliTrace 資料。
-
 ##### <a name="to-start-debugging-from-a-specific-test-step"></a>從特定測試步驟開始偵錯
 
-1.  展開 [測試步驟格線] 。 選取某個測試步驟。
+1. 展開 [測試步驟格線]  。 選取某個測試步驟。
 
-2.  在 [測試步驟格線] 下方，選取 [開始偵錯] 。 您也可以按兩下測試步驟。
+2. 在 [測試步驟格線]  下方，選取 [開始偵錯]  。 您也可以按兩下測試步驟。
 
      這會從所選取測試步驟之後的第一個有效的 IntelliTrace 事件開始偵錯。
 
@@ -247,10 +242,10 @@ ms.locfileid: "57873472"
 |**測試案例**|來自所選取測試工作階段的測試案例。 如果測試資料是使用手動探勘測試所建立的，則這份清單是空的。|
 |**測試步驟格線**|所記錄的測試步驟，具有成功或失敗的測試結果|
 
-###  <a name="SystemInfo"></a> 系統資訊
+### <a name="SystemInfo"></a> 系統資訊
  這個區段會顯示有關裝載 App 之系統的詳細資訊，例如硬體、作業系統，以及和環境與處理序有關的特定資訊。
 
-###  <a name="Modules"></a> 模組
+### <a name="Modules"></a> 模組
  這個區段會顯示目標處理序所載入的模組。 模組會依載入的順序排列顯示。
 
 |**資料行**|**顯示的內容**|
@@ -272,4 +267,4 @@ ms.locfileid: "57873472"
  [Visual Studio 偵錯工具](http://go.microsoft.com/fwlink/?LinkId=262263)
 
 #### <a name="guidance"></a>指引
- [使用 Visual Studio 2012 測試持續傳遞 - 第 6 章：測試工具箱](http://go.microsoft.com/fwlink/?LinkID=255203)
+ [測試 for Continuous Delivery with Visual Studio 2012-第 6 章：測試工具箱](http://go.microsoft.com/fwlink/?LinkID=255203)

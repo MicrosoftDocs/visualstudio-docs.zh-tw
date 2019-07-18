@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: aa12fdc3eea5c353071fb4a80e2c99f2f9e060c2
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 9d831cb629665e641394d011bd11eb74481c4f94
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56629946"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62826440"
 ---
 # <a name="how-to-add-a-dialog-box-launcher-to-a-ribbon-group"></a>HOW TO：在功能區群組中新增對話方塊啟動器
   您可以加入功能區上的任何群組的對話方塊啟動器。 對話方塊啟動器是群組中顯示的小圖示。 使用者按一下此圖示以開啟相關的對話方塊或提供更多的選項與群組相關的工作窗格。
@@ -27,11 +27,11 @@ ms.locfileid: "56629946"
 
 ### <a name="to-add-a-dialog-box-launcher-to-a-ribbon-group"></a>若要在功能區群組中新增對話方塊啟動器
 
-1.  選取 [功能區程式碼檔案 (*.vb*或是 *.cs*檔案) 中**方案總管] 中**。
+1. 選取 [功能區程式碼檔案 (*.vb*或是 *.cs*檔案) 中**方案總管] 中**。
 
-2.  在 **檢視**功能表上，按一下**設計師**。
+2. 在 **檢視**功能表上，按一下**設計師**。
 
-3.  在 功能區設計工具中，以滑鼠右鍵按一下任何群組，然後**加入 DialogBoxLauncher**。
+3. 在 功能區設計工具中，以滑鼠右鍵按一下任何群組，然後**加入 DialogBoxLauncher**。
 
      將程式碼加入<xref:Microsoft.Office.Tools.Ribbon.RibbonGroup.DialogLauncherClick>的群組，以開啟 自訂或內建的對話方塊中的事件。
 

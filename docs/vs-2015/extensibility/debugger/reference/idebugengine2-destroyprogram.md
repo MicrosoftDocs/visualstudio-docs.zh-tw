@@ -1,14 +1,9 @@
 ---
 title: IDebugEngine2::DestroyProgram |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugEngine2::DestroyProgram
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 0c9e2698-c70f-4770-a7bb-39650e9c3a1f
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: f303fb7e5afbca1822d2bb735d161cfad7a5d3c8
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 9faacd80b036282a088b006a15eb9500e8606c5e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51816329"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68196032"
 ---
 # <a name="idebugengine2destroyprogram"></a>IDebugEngine2::DestroyProgram
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -59,4 +54,3 @@ int DestroyProgram( 
  [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)   
  [IDebugProgramDestroyEvent2](../../../extensibility/debugger/reference/idebugprogramdestroyevent2.md)   
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)
-

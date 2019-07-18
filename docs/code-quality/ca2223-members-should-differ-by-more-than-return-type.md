@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3e4e7aa59d273242bd8b97fd4f2777b7edcb5990
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55915861"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62806663"
 ---
 # <a name="ca2223-members-should-differ-by-more-than-return-type"></a>CA2223:成員不應該只有在傳回類型上不同
 

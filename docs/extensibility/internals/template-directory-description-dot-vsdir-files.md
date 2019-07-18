@@ -7,17 +7,17 @@ helpviewer_keywords:
 - VSDIR files
 - template directory description files
 ms.assetid: 9df51800-190e-4662-b685-fdaafcff1400
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a51deb24a2ba0088db8ed9a7acc1f8324f1fa92b
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: ad06428905f924e0e339882057ee4e657da47e8a
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56605688"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66331107"
 ---
 # <a name="template-directory-description-vsdir-files"></a>範本目錄描述檔 (.Vsdir)
 範本目錄描述檔 (.vsdir) 是文字檔案，可讓整合式的開發環境 (IDE)，以顯示資料夾、 精靈.vsz 檔案，以及您在對話方塊中的專案相關聯的範本檔案。 內容包括每個檔案或資料夾的一筆記錄。 參考的位置中的所有.vsdir 檔案會都合併，雖然只有一個.vsdir 檔案通常提供來描述多個資料夾、 精靈、 或範本檔案。
@@ -36,7 +36,6 @@ SourceFile.cpp|{E59935A1-6156-11d1-87A6-00A0C91E2A46}|#122|110|#123|0|0|0|#124
 ## <a name="fields"></a>欄位
  下表列出每一筆記錄指定的欄位。
 
-
 | 欄位 | 描述 |
 | - | - |
 | 相對路徑名稱 (RelPathName) | 資料夾、 範本或.vsz 檔案，例如 HeaderFile.h 或 MyWizard.vsz 的名稱。 這個欄位也可以用來表示資料夾的名稱。 |
@@ -51,17 +50,17 @@ SourceFile.cpp|{E59935A1-6156-11d1-87A6-00A0C91E2A46}|#122|110|#123|0|0|0|#124
 
  當您建立精靈檔案時，您也應該考慮下列問題。
 
--   任何有意義的資料是任何非必要的欄位應包含 0 （零），做為預留位置。
+- 任何有意義的資料是任何非必要的欄位應包含 0 （零），做為預留位置。
 
--   如果不提供任何當地語系化的名稱，則相對路徑名稱會使用精靈檔案中。
+- 如果不提供任何當地語系化的名稱，則相對路徑名稱會使用精靈檔案中。
 
--   DLLPath 會覆寫 clsidPackage 圖示位置。
+- DLLPath 會覆寫 clsidPackage 圖示位置。
 
--   如果沒有定義圖示，IDE 會取代該擴充功能的檔案的預設圖示。
+- 如果沒有定義圖示，IDE 會取代該擴充功能的檔案的預設圖示。
 
--   如果不提供任何建議的基底名稱，則會使用 'Project'。
+- 如果不提供任何建議的基底名稱，則會使用 'Project'。
 
--   如果您刪除.vsz 檔案、 資料夾或範本檔案，您也必須從.vsdir 檔案來移除其相關聯的記錄。
+- 如果您刪除.vsz 檔案、 資料夾或範本檔案，您也必須從.vsdir 檔案來移除其相關聯的記錄。
 
 ## <a name="see-also"></a>另請參閱
 - [精靈](../../extensibility/internals/wizards.md)

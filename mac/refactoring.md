@@ -1,17 +1,17 @@
 ---
 title: 重構程式碼
-description: 使用來源分析，可讓在 Visual Studio for Mac 中重新組織程式碼更為簡單。
-author: conceptdev
-ms.author: crdun
-ms.date: 05/06/2018
+description: 使用 Visual Studio for Mac 和快速動作來細分程式碼。
+author: cobey
+ms.author: cobey
+ms.date: 03/29/2019
 ms.assetid: C7782BF3-016F-4B41-8A81-85FC540A1A8F
 ms.custom: video
-ms.openlocfilehash: d7df01e2d2c6e4acb347b40cb82a04bee9394fe1
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 5a87b87f3a14462daec1e069fe222164818d2a19
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335385"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67691290"
 ---
 # <a name="refactoring"></a>重構
 
@@ -23,77 +23,59 @@ Visual Studio for Mac 與 Roslyn (Microsoft 的開放原始碼 .NET 編譯器平
 
 ## <a name="renaming"></a>重新命名
 
-[重新命名] 重構命令可以用於任何程式碼識別碼 (例如，類別名稱、屬性名稱等等)，以尋找該識別碼的所有出現項目並進行變更。 若要重新命名符號，請以滑鼠右鍵按一下它，然後選擇 [重構] > [重新命名]，或 **Cmd + R** 按鍵繫結關係：
+[重新命名]  重構命令可以用於任何程式碼識別碼 (例如，類別名稱、屬性名稱等等)，以尋找該識別碼的所有出現項目並進行變更。 若要重新命名符號，請以滑鼠右鍵按一下它，然後選擇 [重新命名]  ，或使用 **Cmd (⌘) + R** 按鍵繫結關係：
 
 ![重新命名功能表項目](media/refactoring-renaming1.png)
 
-這將醒目提示符號和其任何參考。 當您開始鍵入新名稱時，將自動變更您程式碼中的所有參考，並藉由按 **Enter** 以發出重新命名完成的訊號：
+這將醒目提示符號和其任何參考。 當您開始鍵入新名稱時，您程式碼中的所有參考都會自動變更，您可以按 **Enter** 認可變更：
 
 ![重新命名和識別碼](media/refactoring-renaming2.png)
 
-## <a name="context-actions"></a>內容動作
+## <a name="quick-actions"></a>快速動作
 
-內容動作可讓您檢查任何 C# 程式碼，並查看所有可能的重構選項。
+快速動作可讓您輕鬆地重構、產生或用其他方式以單一動作修改程式碼。
 
-[解析] 和 [重構] 內容項目會合併至可提供所有可用內容動作的單一 [快速檢修] 項目：
+快速動作可用於：
+
+* 針對程式碼分析器規則的違規情況套用程式碼修正
+* 隱藏程式碼分析器規則的違規情況
+* 套用重構作業 (例如，內嵌暫存變數)
+* 產生程式碼 (例如，引進區域變數)
+
+您可以使用燈泡 ![燈泡圖示](media/quick-actions-light-bulb-icon.png) 或螺絲起子 ![螺絲起子圖示](media/quick-actions-screwdriver-icon.png) 圖示，或當游標位於有可用動作的程式碼行時按 **Option (⌥)** +**Enter** 來套用快速動作。 如果有紅色波浪線指出錯誤，而且 Visual Studio 有該錯誤可用的修正程式，您就會看到錯誤燈泡 ![錯誤燈泡圖示](media/quick-actions-error-light-bulb-icon.png)。
+
+好比說，協力廠商可以針對任何語言，在 SDK 當中提供自訂診斷和建議，而 Visual Studio 燈泡會依據這些規則亮燈。
+
+### <a name="quick-action-icons"></a>快速動作圖示
+當有快速動作可用時，顯示的圖示會指出可用的修正或重構類型。 「螺絲起子」  ![螺絲起子圖示](media/quick-actions-screwdriver-icon.png)圖示表示有可變更程式碼的動作，但不一定要使用。 「黃色燈泡」  ![燈泡圖示](media/quick-actions-light-bulb-icon.png)圖示表示有「應」  執行的動作，以改善程式碼。 「錯誤燈泡」  ![錯誤燈泡圖示](media/quick-actions-error-light-bulb-icon.png)圖示表示有動作可修正您程式碼中的錯誤。
+
+### <a name="to-see-a-light-bulb-or-screwdriver"></a>顯示燈泡或螺絲起子
+
+- 如果有可用的修正，燈泡會在您將滑鼠暫留於錯誤位置的同時顯示。
+
+   ![當滑鼠游標暫留時的燈泡](media/refactoring-lightbulb-hover.png)
+
+- 燈泡和螺絲起子會在您將游標移到可使用快速動作的程式碼上時，顯示在編輯器的左側邊界。
+
+- 在程式碼行任意處按 **Option (⌥)** +**Enter**，即可看到可用快速動作與重構的清單。
 
 ![顯示內容項目](media/refactoring-context-action.png)
 
 將滑鼠游標移至任何內容動作上方，會提供從程式碼所新增或移除項目的預覽。
 
-或者，您可以在程式碼中的任何位置按 **Option + Enter**：
-
 ![選項輸入內容項目](media/refactoring-image2a.png)
 
-若要啟用這些選項，您必須選取 [Visual Studio for Mac] > [喜好設定] > [文字編輯器] > [來源分析] 選項中的 [啟用開啟檔案的來源分析]：
+若要啟用這些選項，您必須選取 [Visual Studio for Mac] > [喜好設定] > [文字編輯器] > [來源分析]  選項中的 [啟用開啟檔案的來源分析]  ：
 
 ![啟用來源分析](media/refactoring-options.png)
 
-可建議超過 100 個可能的動作，其啟用或停用方式是瀏覽至 [Visual Studio for Mac] > [喜好設定] > [來源分析] > [C#] > [程式碼動作]，並選取或取消選取動作旁的方塊：
+可建議超過 100 個可能的動作，其啟用或停用方式是瀏覽至 [Visual Studio for Mac] > [喜好設定] > [來源分析] > [C#] > [程式碼動作]  ，並選取或取消選取動作旁的方塊：
 
 ![C# 來源分析動作](media/refactoring-image3a.png)
 
-### <a name="common-context-actions"></a>一般內容動作
+### <a name="common-quick-actions"></a>一般快速動作
 
-下面將說明一些最常用內容動作。
-
-#### <a name="extract-method"></a>擷取方法
-
-擷取方法重構作業可讓您擷取現有成員中的程式碼選取項目來建立新的方法。 此動作將會執行兩個作業：
-
-* 建立包含所選取程式碼的新方法
-* 在所選取程式碼所在的位置中，呼叫新方法。
-
-##### <a name="example"></a>範例
-
-1. 加入下列程式碼：
-
-```csharp
-    class MainClass
-    {
-
-        double CalculatePyramidVolume(double baseArea, double height)
-        {
-
-            double volume = (baseArea * height) / 3;
-
-            return volume;
-        }
-    }
-```
-
-2. 反白顯示 `double volume = (baseArea * height) / 3;` 這行，並以滑鼠右鍵按一下它，然後選取 [重構] > [擷取方法]。
-
-3. 使用方向鍵來選取新方法在程式碼中的位置。
-
-#### <a name="encapsulate-field"></a>封裝欄位
-
-[封裝欄位] 作業可讓您從現有欄位建立屬性，並更新您的程式碼以參考新建立的屬性。 建立可封裝您欄位的屬性，即會禁止直接存取您的公用欄位，這表示其他物件無法修改它。
-
-此動作將會執行下列作業：
-
-* 將存取修飾詞變更為私用。
-* 產生欄位的 getter 和 setter (除非欄位為唯讀，在此情況下，它只會建立 getter)。
+您可以在[一般快速動作](/visualstudio/ide/common-quick-actions)一文章深入了解一般快速動作。
 
 ## <a name="source-analysis"></a>來源分析
 

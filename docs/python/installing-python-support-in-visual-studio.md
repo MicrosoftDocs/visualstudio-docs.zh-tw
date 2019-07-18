@@ -3,19 +3,19 @@ title: 安裝 Python 支援
 description: 如何在 Visual Studio 2017、2015、2013、2012 和 2010 中安裝「適用於 Visual Studio 的 Python 工具」(PTVS)，包括選項和安裝位置。
 ms.date: 03/13/2019
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 790d6d866619b19a81bd0e92ecb043385736eaac
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 53408ba2345c1bb7b3fc3f99939736c7a697d2df
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57983301"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446632"
 ---
 # <a name="how-to-install-python-support-in-visual-studio-on-windows"></a>如何在 Windows 上的 Visual Studio 中安裝 Python 支援
 
@@ -50,14 +50,15 @@ ms.locfileid: "57983301"
 
     ::: moniker range="vs-2017"
     選擇性：如果您要使用資料科學，也請考慮 [資料科學與分析應用程式] 工作負載。 此工作負載支援 Python、R 以及 F# 語言。 如需詳細資訊，請參閱[資料科學與分析應用程式工作負載](data-science-and-analytical-applications-workload.md)。
+
+    > [!Note]
+    > 只有 Visual Studio 2017 15.2 版和更新版本才提供 Python 和「資料科學」工作負載。
+
     ::: moniker-end
 
     ::: moniker range=">=vs-2019"
     選擇性：如果您要使用資料科學，也請考慮 [資料科學與分析應用程式] 工作負載。 此工作負載支援 Python 以及 F# 語言。 如需詳細資訊，請參閱[資料科學與分析應用程式工作負載](data-science-and-analytical-applications-workload.md)。
     ::: moniker-end
-
-    > [!Note]
-    > 只有 Visual Studio 2017 15.2 版和更新版本才提供 Python 和「資料科學」工作負載。
 
 1. 在安裝程式右側，視需要選擇其他選項。 跳過此步驟，以接受預設選項。
 

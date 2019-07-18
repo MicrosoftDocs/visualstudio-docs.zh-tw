@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 0c4b19322a15e92adcf2609c479af6b21e2078bd
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58145170"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62788136"
 ---
 # <a name="iremotedebugapplicationthreadsetnextstatement"></a>IRemoteDebugApplicationThread::SetNextStatement
 強制才能繼續執行至指定的程式碼內容，盡量靠近指定框架的內容中。  

@@ -1,14 +1,9 @@
 ---
 title: IDebugProgramHost2::GetHostName |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugProgramHost2::GetHostName
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 48bbb089-e59a-471a-9965-24b42a8dabf3
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 1d19901134de6cf33d0b15f6fe65cc379662ec58
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: cb7ceae40282115dc455691789c3882a1620e829
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51807451"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68165120"
 ---
 # <a name="idebugprogramhost2gethostname"></a>IDebugProgramHost2::GetHostName
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -61,4 +56,3 @@ int GetHostName( 
 ## <a name="see-also"></a>另請參閱  
  [IDebugProgramHost2](../../../extensibility/debugger/reference/idebugprogramhost2.md)   
  [GetHostName](../../../extensibility/debugger/reference/idebugprogramnode2-gethostname.md)
-

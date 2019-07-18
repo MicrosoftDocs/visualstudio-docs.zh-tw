@@ -1,26 +1,21 @@
 ---
 title: 原始檔控制 VSPackage 功能 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - source control packages, features
 ms.assetid: 26c3ffda-22b8-4345-9fb6-2883f37699aa
 caps.latest.revision: 16
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 5fd7365cb819da2132b6d77fea31abd767661895
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: aa3963a394deab1b8f3f12df33067fc78dc3f055
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51772335"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68155673"
 ---
 # <a name="source-control-vspackage-features"></a>原始檔控制 VSPackage 功能
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -43,4 +38,3 @@ ms.locfileid: "51772335"
 ## <a name="related-sections"></a>相關章節  
  [建立原始檔控制 VSPackage](../../extensibility/internals/creating-a-source-control-vspackage.md)  
  討論如何建立原始檔控制 VSPackage，不僅提供原始檔控制功能，但可以用來自訂[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]原始檔控制 UI。
-

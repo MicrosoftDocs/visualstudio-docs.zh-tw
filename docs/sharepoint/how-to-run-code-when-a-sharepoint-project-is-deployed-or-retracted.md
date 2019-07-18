@@ -1,5 +1,5 @@
 ---
-title: HOW TO：執行程式碼時在 SharePoint 專案是部署或撤銷 |Microsoft Docs
+title: 當您部署或撤回 SharePoint 專案時執行程式碼
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,25 +12,25 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 30ea6f9e3c5bfb907b1dc75b28edf7a56a0e86d1
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 9e3f46ff9d2e83307f745180288e69839a0d336e
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56639865"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401768"
 ---
-# <a name="how-to-run-code-when-a-sharepoint-project-is-deployed-or-retracted"></a>HOW TO：SharePoint 專案部署或撤銷時執行程式碼
+# <a name="how-to-run-code-when-a-sharepoint-project-is-deployed-or-retracted"></a>作法：SharePoint 專案部署或撤銷時執行程式碼
   如果您想要部署或撤回 SharePoint 專案時執行其他工作，您可以處理由 Visual Studio 所引發的事件。 如需詳細資訊，請參閱 <<c0> [ 擴充 SharePoint 封裝和部署](../sharepoint/extending-sharepoint-packaging-and-deployment.md)。
 
 ### <a name="to-run-code-when-a-sharepoint-project-is-deployed-or-retracted"></a>若要執行的程式碼時的 SharePoint 專案部署或撤銷
 
 1. 建立專案項目延伸模組、 專案擴充功能或新的專案項目類型定義。 如需詳細資訊，請參閱下列主題：
 
-   -   [如何：建立 SharePoint 專案項目擴充功能](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md)
+   - [如何：建立 SharePoint 專案項目擴充功能](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md)
 
-   -   [如何：建立 SharePoint 專案擴充功能](../sharepoint/how-to-create-a-sharepoint-project-extension.md)
+   - [如何：建立 SharePoint 專案擴充功能](../sharepoint/how-to-create-a-sharepoint-project-extension.md)
 
-   -   [如何：定義 SharePoint 專案項目類型](../sharepoint/how-to-define-a-sharepoint-project-item-type.md)
+   - [如何：定義 SharePoint 專案項目類型](../sharepoint/how-to-define-a-sharepoint-project-item-type.md)
 
 2. 在 擴充功能，存取<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService>物件。 如需詳細資訊，請參閱[如何：擷取 SharePoint 專案服務](../sharepoint/how-to-retrieve-the-sharepoint-project-service.md)。
 
@@ -46,9 +46,9 @@ ms.locfileid: "56639865"
 ## <a name="compile-the-code"></a>編譯程式碼
  這個範例需要參考下列組件：
 
--   Microsoft.VisualStudio.SharePoint
+- Microsoft.VisualStudio.SharePoint
 
--   System.ComponentModel.Composition
+- System.ComponentModel.Composition
 
 ## <a name="deploy-the-extension"></a>部署擴充功能
  若要部署的延伸模組，建立[!include[vsprvs](../sharepoint/includes/vsprvs-md.md)]擴充功能 (VSIX) 封裝組件和任何其他您想要將副檔名的檔案。 如需詳細資訊，請參閱 <<c0> [ 部署適用於 Visual Studio 中 SharePoint 工具擴充功能](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)。

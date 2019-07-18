@@ -14,17 +14,16 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f08baa8c27debf6493ca090a2a5e80f02b3da982
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: c334f52ba080329ef5cbd6dfde1e3e3beed1dc70
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54774451"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62551269"
 ---
 # <a name="start-command"></a>Start 命令
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 開始偵錯啟始專案。  
   
 ## <a name="syntax"></a>語法  

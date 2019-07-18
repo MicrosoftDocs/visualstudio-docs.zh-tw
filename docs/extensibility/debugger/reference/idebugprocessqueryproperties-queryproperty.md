@@ -5,17 +5,20 @@ ms.topic: reference
 helpviewer_keywords:
 - IDebugProcessQueryProperties::QueryProperty
 ms.assetid: 9a91707d-a590-44ef-b122-69d9816a7a79
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 22cb633865a6f370c77b9ade7e9d737acdbe4c61
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: b1a5a57cb0aa2e5173886b36a58da19a70aae707
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56701780"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66311579"
 ---
 # <a name="idebugprocessquerypropertiesqueryproperty"></a>IDebugProcessQueryProperties::QueryProperty
 這個方法會查詢指定的屬性值的偵錯程序。
@@ -34,10 +37,9 @@ int QueryProperty(
    out object                 pvarPropValue);
 ```
 
-#### <a name="parameters"></a>參數
- `dwPropType`
-
- [in]查詢屬性的定義。 這些值包括：
+## <a name="parameters"></a>參數
+`dwPropType`\
+[in]查詢屬性的定義。 這些值包括：
 
 - PROCESS_PROPERTY_COMMAND_LINE = 1
 
@@ -45,7 +47,8 @@ int QueryProperty(
 
 - PROCESS_PROPERTY_ENVIRONMENT_VARIABLES = 3
 
-  `pvarPropValue` [out]屬性的值。
+`pvarPropValue`\
+[out]屬性的值。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

@@ -1,27 +1,22 @@
 ---
 title: 註冊單一檔案產生器 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - registration, custom tools
 - custom tools, defining registry settings
 ms.assetid: db7592c0-1273-4843-9617-6e2ddabb6ca8
 caps.latest.revision: 17
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 8e601b3fcf8bd702c1bc6cde427766d0f107e6bd
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 6afcd708ac50a46ceb3359f0d2c0821e3b788f47
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51780980"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696095"
 ---
 # <a name="registering-single-file-generators"></a>註冊單一檔案產生器
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -30,7 +25,7 @@ ms.locfileid: "51780980"
   
 ### <a name="to-register-a-custom-tool"></a>若要註冊自訂的工具  
   
-1.  請註冊自訂的工具 DLL 中[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]本機登錄或在系統登錄中，HKEY_CLASSES_ROOT 之下。  
+1. 請註冊自訂的工具 DLL 中[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]本機登錄或在系統登錄中，HKEY_CLASSES_ROOT 之下。  
   
      例如，以下是受管理 MSDataSetGenerator 自訂工具，隨附的註冊資訊[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]:  
   
@@ -43,22 +38,22 @@ ms.locfileid: "51780980"
     "Assembly"="Microsoft.VSDesigner, Version=14.0.0.0, Culture=Neutral, PublicKeyToken=b03f5f7f11d50a3a"  
     ```  
   
-2.  建立以所需的登錄機碼[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]產生器下的 hive\\*GUID*位置*GUID*由特定語言的專案系統或服務所定義的 GUID。 索引鍵的名稱會變成您的自訂工具的程式設計名稱。 自訂工具的索引鍵具有下列值：  
+2. 建立以所需的登錄機碼[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]產生器下的 hive\\*GUID*位置*GUID*由特定語言的專案系統或服務所定義的 GUID。 索引鍵的名稱會變成您的自訂工具的程式設計名稱。 自訂工具的索引鍵具有下列值：  
   
-    -   (預設值)  
+    - (預設值)  
   
          選擇性。 提供自訂工具的使用者易記描述。 這個參數是選擇性的但建議使用。  
   
-    -   CLSID  
+    - CLSID  
   
-         必要。 指定識別碼的 COM 元件實作的類別庫<xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator>。  
+         必要項。 指定識別碼的 COM 元件實作的類別庫<xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator>。  
   
-    -   GeneratesDesignTimeSource  
+    - GeneratesDesignTimeSource  
   
-         必要。 指出是否從這個自訂的工具所產生的檔案類型都會提供給視覺化設計工具。 此參數的值必須是 （零） 針對至視覺化設計工具無法使用的類型為 0 或 （一） 1 類型可用來視覺化設計工具。  
+         必要項。 指出是否從這個自訂的工具所產生的檔案類型都會提供給視覺化設計工具。 此參數的值必須是 （零） 針對至視覺化設計工具無法使用的類型為 0 或 （一） 1 類型可用來視覺化設計工具。  
   
     > [!NOTE]
-    >  您必須註冊自訂的工具，分別為每個您想要自訂的工具，使其可用的語言。  
+    > 您必須註冊自訂的工具，分別為每個您想要自訂的工具，使其可用的語言。  
   
      比方說，MSDataSetGenerator 將本身註冊一次針對每種語言：  
   
@@ -84,5 +79,4 @@ ms.locfileid: "51780980"
  [實作單一檔案產生器](../../extensibility/internals/implementing-single-file-generators.md)   
  [判斷專案的預設命名空間](../../misc/determining-the-default-namespace-of-a-project.md)   
  [將類型公開至視覺化設計工具](../../extensibility/internals/exposing-types-to-visual-designers.md)   
- [BuildManager 物件簡介](http://msdn.microsoft.com/en-us/50080ec2-c1c9-412c-98ef-18d7f895e7fa)
-
+ [BuildManager 物件簡介](https://msdn.microsoft.com/50080ec2-c1c9-412c-98ef-18d7f895e7fa)

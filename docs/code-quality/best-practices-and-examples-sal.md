@@ -8,11 +8,11 @@ manager: wpickett
 ms.workload:
 - multiple
 ms.openlocfilehash: 28d17301d81ee5b206feb0c3afefba35e50615cd
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55940577"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62560029"
 ---
 # <a name="best-practices-and-examples-sal"></a>最佳作法和範例 (SAL)
 以下是從來源的程式碼註釋語言 (SAL) 的最大，並避免的一些常見問題的一些方法。
@@ -238,7 +238,7 @@ _Ret_maybenull_ void *MightReturnNullPtr2();
 
 ## <a name="see-also"></a>另請參閱
 
-[使用 SAL 註釋減少 C/c + + 程式碼缺失](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)
+[使用 SAL 註釋減少 C /C++程式碼的缺失](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)
 [了解 SAL](../code-quality/understanding-sal.md)
 [註釋函式參數和傳回值](../code-quality/annotating-function-parameters-and-return-values.md)
 [註釋函式行為](../code-quality/annotating-function-behavior.md)

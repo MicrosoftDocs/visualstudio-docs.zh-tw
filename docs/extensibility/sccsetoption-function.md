@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - SccSetOption function
 ms.assetid: 4b5e6666-c24c-438a-a9df-9c52f58f8175
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 825aba3c77d4986d9187b147f90725eda4d6e5aa
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: bf9d700facfedc83d9eb12e96b854de7d4e9c181
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56682605"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66338574"
 ---
 # <a name="sccsetoption-function"></a>SccSetOption 函式
 此函式會設定控制行為的原始檔控制外掛程式的選項。

@@ -9,8 +9,6 @@ dev_langs:
 - VB
 - FSharp
 - C++
-- JScript
-- SQL
 helpviewer_keywords:
 - datasets [Visual Studio], Dataset Visualizer dialog box
 - visualizers, Dataset Visualizer dialog box
@@ -21,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 251e6ca5d1d9985defc8dff1dc6be95f3a088bbe
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: e4086c473270befcf2213f003e516128b45c4227
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56626319"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62563542"
 ---
 # <a name="dataset-visualizer-dialog-box"></a>資料集視覺化檢視對話方塊
 [資料集視覺化檢視] 可讓您檢視 DataSet、DataTable、DataView 或 DataViewManager 物件的內容。 在偵錯工具變數視窗或 DataTip 中，按一下每一個物件的 [值] 旁邊出現的放大鏡圖示，就可以存取這個視覺化檢視。
@@ -36,7 +34,7 @@ ms.locfileid: "56626319"
 ## <a name="uielement-list"></a>UIElement 清單
  資料表會使用這個下拉式清單方塊，即可選取您想要視覺化之資料集內的資料表。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [偵錯工具安全性](../debugger/debugger-security.md)
 - [建立自訂視覺化檢視](../debugger/create-custom-visualizers-of-data.md)

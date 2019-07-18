@@ -1,14 +1,9 @@
 ---
-title: BP_PASSCOUNT |Microsoft Docs
-ms.custom: ''
+title: BP_PASSCOUNT | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - BP_PASSCOUNT
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 791ac175-b897-4c70-873e-240da7e0ac89
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 343c082beb339a6ce0223232252f476041327a32
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: b99cbd777755a9a48869299b5cea523ecacbb4a4
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51803665"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68153383"
 ---
 # <a name="bppasscount"></a>BP_PASSCOUNT
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -60,9 +55,9 @@ public struct BP_PASSCOUNT { 
 ## <a name="requirements"></a>需求  
  標頭： msdbg.h  
   
- 命名空間： Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間：Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
  [結構和等位](../../../extensibility/debugger/reference/structures-and-unions.md)   
@@ -70,4 +65,3 @@ public struct BP_PASSCOUNT { 
  [SetPassCount](../../../extensibility/debugger/reference/idebugboundbreakpoint2-setpasscount.md)   
  [SetPassCount](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-setpasscount.md)   
  [BP_PASSCOUNT_STYLE](../../../extensibility/debugger/reference/bp-passcount-style.md)
-

@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 501a054ddb1d3ab20a10f99bb30a0c3439004eb3
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56705582"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62848688"
 ---
 # <a name="dontsavevsglogtotemp"></a>DONT_SAVE_VSGLOG_TO_TEMP
 出現時，定義圖形記錄檔是否儲存到使用者的暫存檔目錄。
@@ -43,5 +43,5 @@ ms.locfileid: "56705582"
 #include <vsgcapture.h>
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [VSG_DEFAULT_RUN_FILENAME](vsg-default-run-filename.md)

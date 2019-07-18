@@ -1,14 +1,9 @@
 ---
 title: IDebugFunctionObject::CreateObjectNoConstructor |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugFunctionObject::CreateObjectNoConstructor
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 4e2bd6d5-f4bd-4c10-a998-3db451c9a0c8
 caps.latest.revision: 10
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 13e081de229157aefbc0648699e09a921af5a40a
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 0ea00035eb220ccd08590ceaea6db98944f4657a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51748949"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68179465"
 ---
 # <a name="idebugfunctionobjectcreateobjectnoconstructor"></a>IDebugFunctionObject::CreateObjectNoConstructor
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -64,4 +59,3 @@ int CreateObjectNoConstructor(
  [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)   
  [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md)   
  [CreateObject](../../../extensibility/debugger/reference/idebugfunctionobject-createobject.md)
-

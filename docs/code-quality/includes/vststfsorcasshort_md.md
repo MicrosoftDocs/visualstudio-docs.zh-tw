@@ -13,10 +13,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.openlocfilehash: d803aad13e814c0ee4b713f9a683eacc44447c09
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: a17561d4fc5c247bb179c4640d1c66c03802bfc8
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "68147025"
 ---
 Team System 2008 Team Foundation Server

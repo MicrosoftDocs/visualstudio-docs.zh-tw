@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0a457ba0dcc6fb7f8a95a982b6dabd93f9d0207e
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: c2c9a8b15b5095ac346ba047d6668aada7647a31
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58150097"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63412429"
 ---
 # <a name="idebugapplicationhandleruntimeerror"></a>IDebugApplication::HandleRuntimeError
 讓目前的執行緒封鎖，並將錯誤的通知傳送至偵錯工具 IDE。  
@@ -66,7 +66,7 @@ HRESULT HandleRuntimeError(
  語言引擎會呼叫這個方法會導致執行階段錯誤的執行緒內容中。 這個方法會導致目前的執行緒可封鎖，並傳送錯誤通知傳送至偵錯工具 IDE。 當偵錯工具 IDE 恢復應用程式時，這個方法會傳回與所要採取的動作。  
   
 > [!NOTE]
->  在 執行階段錯誤，語言引擎可能呼叫的執行緒來執行這類工作，因為列舉堆疊框架，或評估運算式。  
+> 在 執行階段錯誤，語言引擎可能呼叫的執行緒來執行這類工作，因為列舉堆疊框架，或評估運算式。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugApplication 介面](../../winscript/reference/idebugapplication-interface.md)   

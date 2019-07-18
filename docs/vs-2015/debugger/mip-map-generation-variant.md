@@ -1,25 +1,20 @@
 ---
 title: Mip-map 產生變異 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 3b4b3583-0b01-4f5d-aacb-3f96d19111d9
 caps.latest.revision: 9
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: c567f68abb5b67022bb2decd64ed23e35bf6d5d3
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 3ac567677776c225008a581cc4d5de85ec2c882d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51723096"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63383967"
 ---
 # <a name="mip-map-generation-variant"></a>Mip-map 產生變異
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,7 +46,7 @@ ms.locfileid: "51723096"
   如果已自動產生紋理的 MIP 對應，則會在播放期間修改 `ID3D11Device::CreateShaderResourceView` 呼叫，以在紋理取樣期間使用 MIP 鏈結。  
   
 ## <a name="example"></a>範例  
- **Mip 對應產生**即可重現變體，請使用如下的程式碼：  
+ 使用與下列類似的程式碼，即可重現 **Mip 對應產生**變異：  
   
 ```  
 D3D11_TEXTURE2D_DESC texture_description;  
@@ -75,10 +70,7 @@ d3d_device->CreateTexture2D(&texture_description, initial_data.data(), &texture)
  請記住，當您將初始資料提供給 `CreateTexture2D` 時，必須提供每個 MIP 層級的 D3D11_SUBRESOURCE_DATA 物件。  
   
 > [!NOTE]
->  如果您想要提供您的 MIP 層級內容，而不是自動產生該內容，則必須使用可支援經過 MIP 對應之紋理的影像編輯器來建立紋理，然後載入檔案，並將 MIP 層級傳遞給 `CreateTexture2D`。  
+> 如果您想要提供您的 MIP 層級內容，而不是自動產生該內容，則必須使用可支援經過 MIP 對應之紋理的影像編輯器來建立紋理，然後載入檔案，並將 MIP 層級傳遞給 `CreateTexture2D`。  
   
 ## <a name="see-also"></a>另請參閱  
  [二分之一/四分之一紋理維度變化](../debugger/half-quarter-texture-dimensions-variant.md)
-
-
-

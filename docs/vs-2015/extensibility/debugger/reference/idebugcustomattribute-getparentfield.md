@@ -1,14 +1,9 @@
 ---
 title: IDebugCustomAttribute::GetParentField |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugCustomAttribute::GetParentField
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: bcdfdf37-bfcf-4988-a7b8-4c731d0af1b0
 caps.latest.revision: 10
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 91b9f94bc40f76c6ff7a0fe4090bca5c89dbd816
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 7b6d6ceadc8ee0dc6099d6463a75f1c792837e81
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51721123"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62569572"
 ---
 # <a name="idebugcustomattributegetparentfield"></a>IDebugCustomAttribute::GetParentField
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -56,4 +51,3 @@ int GetParentField(
 ## <a name="see-also"></a>另請參閱  
  [IDebugCustomAttribute](../../../extensibility/debugger/reference/idebugcustomattribute.md)   
  [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)
-

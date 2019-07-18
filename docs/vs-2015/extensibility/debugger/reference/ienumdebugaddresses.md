@@ -1,14 +1,9 @@
 ---
-title: IEnumDebugAddresses |Microsoft Docs
-ms.custom: ''
+title: IEnumDebugAddresses | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IEnumDebugAddresses
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 5f6f6751-e6d8-4c5a-8e81-414b6e5d8cc5
 caps.latest.revision: 7
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: cc819d678edb8739ca897dd461a5b8a2c1d90922
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 2373a26da1f6c3b327bea3a6f2402beb7d8bce45
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51810257"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68196146"
 ---
 # <a name="ienumdebugaddresses"></a>IEnumDebugAddresses
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -46,7 +41,7 @@ IEnumDebugAdresses : IUnknown
   
 |方法|描述|  
 |------------|-----------------|  
-|[下一步](../../../extensibility/debugger/reference/ienumdebugaddresses-next.md)|擷取下的一組[IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)列舉中的物件。|  
+|[下一個](../../../extensibility/debugger/reference/ienumdebugaddresses-next.md)|擷取下的一組[IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)列舉中的物件。|  
 |[Skip](../../../extensibility/debugger/reference/ienumdebugaddresses-skip.md)|略過指定的數目的項目。|  
 |[Reset](../../../extensibility/debugger/reference/ienumdebugaddresses-reset.md)|將列舉重設第一個項目中。|  
 |[Clone](../../../extensibility/debugger/reference/ienumdebugaddresses-clone.md)|擷取一份目前的列舉型別。|  
@@ -58,13 +53,12 @@ IEnumDebugAdresses : IUnknown
 ## <a name="requirements"></a>需求  
  標頭： sh.h  
   
- 命名空間： Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間：Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
  [符號提供者介面](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)   
  [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)   
  [GetAddressesFromContext](../../../extensibility/debugger/reference/idebugsymbolprovider-getaddressesfromcontext.md)   
  [GetAddressesFromPosition](../../../extensibility/debugger/reference/idebugsymbolprovider-getaddressesfromposition.md)
-

@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugExpression2::EvaluateAsync
 ms.assetid: 848fe6cb-0759-42f2-890b-d2b551c527d6
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2212738a2d2d14ec454cfd42db44f812f72a035a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: dd5c0c6c056dc72f3db49a9d666d6f2ba6295791
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56684438"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66326008"
 ---
 # <a name="idebugexpression2evaluateasync"></a>IDebugExpression2::EvaluateAsync
 這個方法會以非同步方式評估的運算式。
@@ -38,14 +41,12 @@ int EvaluateAsync(
 );
 ```
 
-#### <a name="parameters"></a>參數
-`dwFlags`
+## <a name="parameters"></a>參數
+`dwFlags`\
+[in]從旗標的組合[EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md)控制運算式評估的列舉型別。
 
- [in]從旗標的組合[EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md)控制運算式評估的列舉型別。
-
-`pExprCallback`
-
- [in]此參數一律為 null 值。
+`pExprCallback`\
+[in]此參數一律為 null 值。
 
 ## <a name="return-value"></a>傳回值
 如果成功，則傳回`S_OK`; 否則會傳回錯誤碼。 典型的錯誤碼是：

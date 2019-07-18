@@ -15,23 +15,23 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: be8d02837f0abd7bfed0407ce31fe9cbeecd76a4
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.openlocfilehash: 4fdeef3a21407b4473ed412019e936d7b30389c5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55940317"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63402884"
 ---
 # <a name="add-validation-to-an-n-tier-dataset"></a>將驗證新增至多層式架構 (N-Tier) 資料集
 將驗證新增至資料集分割為多層式架構方案基本上是將驗證新增至單一檔案的資料集 （必須在單一專案中的資料集） 相同。 在資料上執行驗證的建議的位置是期間<xref:System.Data.DataTable.ColumnChanging>及/或<xref:System.Data.DataTable.RowChanging>事件資料表的資料。
 
- 資料集提供功能，以建立部分類別，您可以新增使用者程式碼的資料表在資料集中的資料行和資料列變更事件。 如需有關如何將程式碼新增至多層式架構方案中的資料集的詳細資訊，請參閱[程式碼加入 n-tier 應用程式中的資料集](../data-tools/add-code-to-datasets-in-n-tier-applications.md)，並[程式碼加入多層式架構應用程式中的 Tableadapter](../data-tools/add-code-to-tableadapters-in-n-tier-applications.md)。 如需部分類別的詳細資訊，請參閱[如何： 將類別分割成部分類別 （類別設計工具）](../ide/class-designer/how-to-split-a-class-into-partial-classes.md)或是[部分類別和方法](/dotnet/csharp/programming-guide/classes-and-structs/partial-classes-and-methods)。
+ 資料集提供功能，以建立部分類別，您可以新增使用者程式碼的資料表在資料集中的資料行和資料列變更事件。 如需有關如何將程式碼新增至多層式架構方案中的資料集的詳細資訊，請參閱[程式碼加入 n-tier 應用程式中的資料集](../data-tools/add-code-to-datasets-in-n-tier-applications.md)，並[程式碼加入多層式架構應用程式中的 Tableadapter](../data-tools/add-code-to-tableadapters-in-n-tier-applications.md)。 如需部分類別的詳細資訊，請參閱[How to:將類別分割成部分類別 （類別設計工具）](../ide/class-designer/how-to-split-a-class-into-partial-classes.md)或是[部分類別和方法](/dotnet/csharp/programming-guide/classes-and-structs/partial-classes-and-methods)。
 
 > [!NOTE]
->  當您分隔資料集與 Tableadapter 時 (藉由設定**資料集 Project**屬性)，將不會自動移動專案中的現有部份資料集類別。 現有的部分資料集類別必須手動將移至資料集專案。
+> 當您分隔資料集與 Tableadapter 時 (藉由設定**資料集 Project**屬性)，將不會自動移動專案中的現有部份資料集類別。 現有的部分資料集類別必須手動將移至資料集專案。
 
 > [!NOTE]
->  資料集設計工具不會自動建立事件處理常式，在C#針對<xref:System.Data.DataTable.ColumnChanging>並<xref:System.Data.DataTable.RowChanging>事件。 您必須手動建立事件處理常式，並連結事件處理常式，基礎事件。 下列程序描述如何在這兩個 Visual Basic 中建立所需的事件處理常式和C#。
+> 資料集設計工具不會自動建立事件處理常式中的 C#<xref:System.Data.DataTable.ColumnChanging>和<xref:System.Data.DataTable.RowChanging>事件。 您必須手動建立事件處理常式，並連結事件處理常式，基礎事件。 下列程序說明如何在 Visual Basic 和 C# 中建立所需的事件處理常式。
 
 ## <a name="validate-changes-to-individual-columns"></a>驗證個別的資料行的變更
  驗證個別資料行中的值，藉由處理<xref:System.Data.DataTable.ColumnChanging>事件。 <xref:System.Data.DataTable.ColumnChanging>修改資料行的值時，會引發事件。 建立事件處理常式<xref:System.Data.DataTable.ColumnChanging>按兩下所要的資料行上的事件**Dataset 設計工具**。
@@ -47,20 +47,20 @@ End Sub
 ```
 
 > [!NOTE]
->  在C#專案中，Dataset 設計工具只會建立資料集和個別資料表的部分類別中的資料集。 Dataset 設計工具不會自動建立的事件處理常式<xref:System.Data.DataTable.ColumnChanging>並<xref:System.Data.DataTable.RowChanging>事件C#Visual Basic 中所顯示的一樣。 在C#專案中，您必須以手動方式建構來處理事件，並將方法連結至基礎事件的方法。 下列程序提供這兩個 Visual Basic 中建立所需的事件處理常式的步驟和C#。
+> 在 C# 專案中，Dataset 設計工具只會建立資料集和資料集內的個別資料表的部分類別。 Dataset 設計工具不會自動建立的事件處理常式<xref:System.Data.DataTable.ColumnChanging>和<xref:System.Data.DataTable.RowChanging>事件在 C# 在 Visual Basic 中所顯示的一樣。 在 C# 專案中，您必須以手動方式建構來處理事件，並將方法連結至基礎事件的方法。 下列程序提供在 Visual Basic 和 C# 中建立所需的事件處理常式的步驟。
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 
 #### <a name="to-add-validation-during-changes-to-individual-column-values"></a>若要在變更期間驗證加入個別的資料行值
 
-1.  按兩下以開啟資料集 *.xsd*中的檔案**方案總管 中**。 如需詳細資訊，請參閱 <<c0> [ 逐步解說： 以 Dataset 設計工具建立資料集](walkthrough-creating-a-dataset-with-the-dataset-designer.md)。
+1. 按兩下以開啟資料集 *.xsd*中的檔案**方案總管 中**。 如需詳細資訊，請參閱[逐步解說：在 Dataset 設計工具中建立資料集](walkthrough-creating-a-dataset-with-the-dataset-designer.md)。
 
-2.  按兩下您想要驗證的資料行。 這個動作會建立<xref:System.Data.DataTable.ColumnChanging>事件處理常式。
+2. 按兩下您想要驗證的資料行。 這個動作會建立<xref:System.Data.DataTable.ColumnChanging>事件處理常式。
 
     > [!NOTE]
-    >  Dataset 設計工具不會自動建立的事件處理常式C#事件。 處理中的事件所需的程式碼，C#包含在下一節。 `SampleColumnChangingEvent` 建立並繫結最多<xref:System.Data.DataTable.ColumnChanging>中的事件<xref:System.Data.DataTable.EndInit%2A>方法。
+    > Dataset 設計工具不會自動建立 C# 事件的事件處理常式。 C# 中處理事件所需的程式碼會包含在下一節。 `SampleColumnChangingEvent` 建立並繫結最多<xref:System.Data.DataTable.ColumnChanging>中的事件<xref:System.Data.DataTable.EndInit%2A>方法。
 
-3.  加入程式碼來確認`e.ProposedValue`包含符合您的應用程式的資料。 如果無法接受建議的值，表示它包含錯誤資料行的設定。
+3. 加入程式碼來確認`e.ProposedValue`包含符合您的應用程式的資料。 如果無法接受建議的值，表示它包含錯誤資料行的設定。
 
      下列程式碼範例會驗證**Quantity**資料行包含大於 0 的值。 如果**Quantity**小於或等於 0，資料行會設定為錯誤。 `Else`子句會清除錯誤，如果**Quantity**大於 0。 中的資料行變更的事件處理常式的程式碼應該如下所示：
 
@@ -73,6 +73,7 @@ End Sub
         End If
     End If
     ```
+
     ```csharp
     // Add this code to the DataTable partial class.
 
@@ -109,18 +110,18 @@ End Sub
 
 #### <a name="to-add-validation-during-changes-to-whole-rows"></a>將變更期間驗證新增至整個資料列
 
-1.  按兩下以開啟資料集 *.xsd*中的檔案**方案總管 中**。 如需詳細資訊，請參閱 <<c0> [ 逐步解說： 以 Dataset 設計工具建立資料集](walkthrough-creating-a-dataset-with-the-dataset-designer.md)。
+1. 按兩下以開啟資料集 *.xsd*中的檔案**方案總管 中**。 如需詳細資訊，請參閱[逐步解說：在 Dataset 設計工具中建立資料集](walkthrough-creating-a-dataset-with-the-dataset-designer.md)。
 
-2.  按兩下標題列的資料表設計工具上。
+2. 按兩下標題列的資料表設計工具上。
 
      部分類別會透過`RowChanging`事件處理常式，並在程式碼編輯器中開啟。
 
     > [!NOTE]
-    >  Dataset 設計工具不會自動建立的事件處理常式<xref:System.Data.DataTable.RowChanging>中的事件C#專案。 您必須建立方法以處理<xref:System.Data.DataTable.RowChanging>事件和執行程式碼，然後將連結資料表的初始設定方法中的事件。
+    > Dataset 設計工具不會自動建立的事件處理常式<xref:System.Data.DataTable.RowChanging>C# 專案中的事件。 您必須建立方法以處理<xref:System.Data.DataTable.RowChanging>事件和執行程式碼，然後將連結資料表的初始設定方法中的事件。
 
-3.  加入部分類別宣告內的使用者程式碼。
+3. 加入部分類別宣告內的使用者程式碼。
 
-4.  下列程式碼示範如何加入使用者程式碼，以驗證期間<xref:System.Data.DataTable.RowChanging>事件。 C#範例也會包含最多可連結事件處理常式方法的程式碼`OrdersRowChanging`事件。
+4. 下列程式碼示範如何加入使用者程式碼，以驗證期間<xref:System.Data.DataTable.RowChanging>事件。 C# 範例也會包含最多可連結事件處理常式方法的程式碼`OrdersRowChanging`事件。
 
     ```vb
     Partial Class OrdersDataTable
@@ -136,6 +137,7 @@ End Sub
         End Sub
     End Class
     ```
+
     ```csharp
     partial class OrdersDataTable
     {

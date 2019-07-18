@@ -1,14 +1,9 @@
 ---
 title: 將類型公開至視覺化設計工具 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - types [Visual Studio SDK], exposing to visual designers
 - designers [Visual Studio SDK], exposing types
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: a7a32ad4-3a0a-4eb8-a6ac-491c42885639
 caps.latest.revision: 12
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: c19fe00713bd328574e5a05cc6f6f3a60f18ddf9
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f4d6c0e163b751f1873fdb941e85c273dcc4fde5
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51791549"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65691196"
 ---
 # <a name="exposing-types-to-visual-designers"></a>將類型公開至視覺化設計工具
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -34,25 +29,24 @@ ms.locfileid: "51791549"
  專案系統的變更追蹤輸出檔的自訂工具，提供完整支援，前提是這些變更是執行自訂工具的結果。 每次執行自訂工具時，會產生新的 temporary PE，並適當的通知傳送給設計工具。  
   
 > [!NOTE]
->  臨時程式可執行檔的產生檔案會在背景執行，因為沒有任何錯誤會回報給使用者，如果編譯失敗。  
+> 臨時程式可執行檔的產生檔案會在背景執行，因為沒有任何錯誤會回報給使用者，如果編譯失敗。  
   
  利用暫時的 PE 支援的自訂工具必須遵循下列規則：  
   
--   `GeneratesDesignTimeSource` 必須設定為 1 的登錄中。  
+- `GeneratesDesignTimeSource` 必須設定為 1 的登錄中。  
   
      不程式可執行檔會進行編譯而不需要這項設定。  
   
--   產生的程式碼必須位於相同的通用專案設定的語言。  
+- 產生的程式碼必須位於相同的通用專案設定的語言。  
   
      不論什麼自訂工具會回報為要求的擴充功能，在編譯 temporary PE<xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.DefaultExtension%2A>前提`GeneratesDesignTimeSource`在登錄中設定為 1。 擴充功能不需要是.vb、.cs 或.jsl;它可以是任何擴充功能。  
   
--   自訂工具產生的程式碼必須有效，且它必須編譯時間在它自己使用只存在於專案中參考的組<xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.Generate%2A>完成執行。  
+- 自訂工具產生的程式碼必須有效，且它必須編譯時間在它自己使用只存在於專案中參考的組<xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.Generate%2A>完成執行。  
   
      Temporary PE 編譯時，只提供給編譯器的原始程式檔就會是自訂工具輸出。 因此，使用暫存的 PE 的自訂工具必須產生可以獨立於其他檔案專案中編譯的輸出檔。  
   
 ## <a name="see-also"></a>另請參閱  
- [BuildManager 物件簡介](http://msdn.microsoft.com/en-us/50080ec2-c1c9-412c-98ef-18d7f895e7fa)   
+ [BuildManager 物件簡介](https://msdn.microsoft.com/50080ec2-c1c9-412c-98ef-18d7f895e7fa)   
  [實作單一檔案產生器](../../extensibility/internals/implementing-single-file-generators.md)   
  [判斷專案的預設命名空間](../../misc/determining-the-default-namespace-of-a-project.md)   
  [註冊單一檔案產生器](../../extensibility/internals/registering-single-file-generators.md)
-

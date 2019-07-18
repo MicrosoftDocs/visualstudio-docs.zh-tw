@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugThread2::Resume
 ms.assetid: 36aad682-b0b9-40a2-b3fc-f0e61d41cdbc
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4997b8c711a67a3bb45529627e81e70b786acf00
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: a312b18fead71b343fd1b9beafcf36c904bf1b24
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56702066"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66320140"
 ---
 # <a name="idebugthread2resume"></a>IDebugThread2::Resume
 繼續執行的執行緒。
@@ -36,10 +39,9 @@ int Resume ( 
 );
 ```
 
-#### <a name="parameters"></a>參數
- `pdwSuspendCount`
-
- [out]在繼續作業之後，傳回的暫停計數。
+## <a name="parameters"></a>參數
+`pdwSuspendCount`\
+[out]在繼續作業之後，傳回的暫停計數。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

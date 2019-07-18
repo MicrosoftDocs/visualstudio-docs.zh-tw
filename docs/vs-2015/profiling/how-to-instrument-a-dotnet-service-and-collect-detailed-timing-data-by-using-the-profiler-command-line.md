@@ -1,5 +1,5 @@
 ---
-title: 如何：使用分析工具命令列檢測 .NET 服務並收集詳細計時資料 | Microsoft Docs
+title: HOW TO：使用分析工具命令列檢測 .NET 服務並收集詳細計時資料 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -9,24 +9,24 @@ caps.latest.revision: 32
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7931341080fbb2d2a98b695e5a864365c7bf6784
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: b438cac78aa863eab4f04e250ed768d54a2fbc4c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54766428"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432691"
 ---
-# <a name="how-to-instrument-a-net-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line"></a>如何：使用程式碼剖析工具命令列以檢測 .NET 服務並收集詳細計時資料
+# <a name="how-to-instrument-a-net-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line"></a>HOW TO：檢測.NET 服務並收集詳細的計時資料，使用 Profiler 命令列
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 本主題描述如何使用 [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] 分析工具命令列工具來檢測 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 服務，並收集詳細的計時資料。  
 
 > [!NOTE]
->  如果某項服務無法在電腦啟動後重新啟動 (這類服務只會在作業系統啟動時啟動)，則無法使用檢測方法來分析服務。  
+> 如果某項服務無法在電腦啟動後重新啟動 (這類服務只會在作業系統啟動時啟動)，則無法使用檢測方法來分析服務。  
 >   
->  程式碼剖析工具的命令列工具位於 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 安裝目錄的 \Team Tools\Performance Tools 子目錄中。 在 64 位元電腦上，64 位元和 32 位元版本的工具都可以使用。 若要使用程式碼剖析工具命令列工具，必須將工具路徑加入至命令提示字元視窗的 PATH 環境變數，或將它加入至命令本身。 如需詳細資訊，請參閱[指定命令列工具的路徑](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)。  
+> 程式碼剖析工具的命令列工具位於 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 安裝目錄的 \Team Tools\Performance Tools 子目錄中。 在 64 位元電腦上，64 位元和 32 位元版本的工具都可以使用。 若要使用程式碼剖析工具命令列工具，必須將工具路徑加入至命令提示字元視窗的 PATH 環境變數，或將它加入至命令本身。 如需詳細資訊，請參閱[指定命令列工具的路徑](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)。  
 >   
->  若要將階層互動資料加入至程式碼剖析回合中，則需要使用命令列程式碼剖析工具的特定程序。 請參閱[收集階層互動資料](../profiling/adding-tier-interaction-data-from-the-command-line.md)。  
+> 若要將階層互動資料加入至程式碼剖析回合中，則需要使用命令列程式碼剖析工具的特定程序。 請參閱[收集階層互動資料](../profiling/adding-tier-interaction-data-from-the-command-line.md)。  
 
  若要使用檢測方法從 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 服務收集詳細的計時資料，您可使用 [VSInstr.exe](../profiling/vsinstr.md) 工具產生已檢測的元件版本。 然後以檢測過的版本取代未經檢測的服務版本，確認服務設定為手動啟動。 使用 [VSPerfCLREnv.cmd](../profiling/vsperfclrenv.md) 工具初始化全域分析環境變數，然後重新啟動主機電腦。 然後啟動分析工具。  
 
@@ -63,7 +63,7 @@ ms.locfileid: "54766428"
      您可以使用下列任一選項搭配 **/start:trace** 選項。  
 
    > [!NOTE]
-   >  **/user** 和 **/crosssession** 選項通常是分析服務的必要選項。  
+   > **/user** 和 **/crosssession** 選項通常是分析服務的必要選項。  
 
    |                                 選項                                  |                                                                                                                                            描述                                                                                                                                             |
    |-------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -76,7 +76,6 @@ ms.locfileid: "54766428"
    |         [/automark](../profiling/automark.md) **:** `Interval`          |                                                                           只能搭配 **/wincounter** 使用。 指定 Windows 效能計數器收集事件間隔的毫秒數。 預設值為 500 毫秒。                                                                            |
    |       [/events](../profiling/events-vsperfcmd.md) **:** `Config`        |                                                                              指定程式碼剖析期間要收集的 Windows 事件追蹤 (ETW) 事件。 ETW 事件會收集至個別的 (.etl) 檔案。                                                                              |
 
-
 8. 從 Windows 服務控制管理員啟動服務。  
 
 ## <a name="controlling-data-collection"></a>控制資料收集  
@@ -84,7 +83,7 @@ ms.locfileid: "54766428"
 
 #### <a name="to-start-and-stop-data-collection"></a>開始和停止資料收集  
 
--   下列成對的 **VSPerfCmd** 選項會開始和停止資料收集。 請在個別的命令列上指定各個選項。 您可以多次開始和停止資料收集。  
+- 下列成對的 **VSPerfCmd** 選項會開始和停止資料收集。 請在個別的命令列上指定各個選項。 您可以多次開始和停止資料收集。  
 
     |選項|描述|  
     |------------|-----------------|  
@@ -99,20 +98,20 @@ ms.locfileid: "54766428"
 
 #### <a name="to-end-a-profiling-session"></a>結束程式碼剖析工作階段  
 
-1.  從服務控制管理員停止服務。  
+1. 從服務控制管理員停止服務。  
 
-2.  關閉分析工具。 類型：  
+2. 關閉分析工具。 類型：  
 
      **VSPerfCmd /shutdown**  
 
-3.  當您完成所有分析時，請清除分析環境變數。 類型：  
+3. 當您完成所有分析時，請清除分析環境變數。 類型：  
 
      **VSPerfClrEnv /globaloff**  
 
-4.  以原始模組取代檢測過的模組。 如有必要，請重新設定服務的啟動類型。  
+4. 以原始模組取代檢測過的模組。 如有必要，請重新設定服務的啟動類型。  
 
-5.  重新啟動電腦。  
+5. 重新啟動電腦。  
 
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [分析服務](../profiling/command-line-profiling-of-services.md)   
  [檢測方法資料檢視](../profiling/instrumentation-method-data-views.md)

@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - m_children field, ContingentProperties class [.NET Framework debug engines]
 ms.assetid: 0a3b5653-7bc0-4a7a-8963-9020bc52b9cb
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fefeaf07c923a5fefa282efcd96948b2d907cca1
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: ab6446b18350fe1f11e0b164d9eb4bff39035ddb
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56704640"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66330884"
 ---
 # <a name="mchildren-field"></a>m_children field
 使用這項工作中註冊的子工作的清單。

@@ -1,30 +1,24 @@
 ---
 title: 操作功能表 （XML 結構描述總管） |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: 42ab17ca-b8c1-40d7-beda-d033f66fe874
 caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 854ea473f2f606b28052b093978253372b4fec59
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: d6c14a268ef58dec31f65fe73e176eac8f690d9c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49294609"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68157751"
 ---
-# <a name="context-menus-xml-schema-explorer"></a>操作功能表 (XML 結構描述總管)
+# <a name="context-menus-xml-schema-explorer"></a>內容功能表 (XML 結構描述總管)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 下列操作功能表項目用於執行結構描述特定搜尋和其他作業。  
   
 ## <a name="node-type-schema-set"></a>節點型別：結構描述設定  
@@ -51,7 +45,7 @@ ms.locfileid: "49294609"
 ## <a name="node-type-file"></a>節點型別：檔案  
  下表描述檔案節點可用的選項。  
   
-|選項|描述|  
+|選項|說明|  
 |------------|-----------------|  
 |**顯示所有對內的參考**|尋找並反白顯示在 include 和 import 陳述式之 `schemaLocation` 屬性中指定選取檔案的所有檔案。|  
 |**顯示所有對外參考**|尋找並反白顯示下列項目：<br /><br /> -所有命名空間中的所有命名空間屬性指定匯入陳述式沒有`schemaLocation`屬性。<br />-所有檔案中指定`schemaLocation`屬性之所有 import 和 include 陳述式。|  
@@ -71,9 +65,9 @@ ms.locfileid: "49294609"
 |**屬性視窗**|會開啟**屬性**視窗 （如果它尚未開啟）。 這個視窗會顯示與節點有關的資訊。|  
   
 ## <a name="node-type-element"></a>節點型別：項目  
- 除了上述的全域節點選項外，項目節點的內容功能表還包含下列選項：  
+ 除了上述的全域節點選項外，項目節點的操作功能表還包含下列選項：  
   
-|選項|描述|  
+|選項|說明|  
 |------------|-----------------|  
 |**移至型別定義**|瀏覽至選取之項目的型別定義。 當用於此項目的型別是全域型別時，這個選項就會適用。|  
 |**請移至原始項目**|針對項目參考，瀏覽至此項目的實際定義。|  
@@ -83,9 +77,9 @@ ms.locfileid: "49294609"
 |**產生範例 XML**|僅適用於全域項目。 針對全域項目產生範例 XML 檔案。|  
   
 ## <a name="node-type-global-types"></a>節點型別：全域型別  
- 除了上述的全域節點選項外，全域型別節點的內容功能表還有下列選項：  
+ 除了上述的全域節點選項外，全域型別節點的操作功能表還有下列選項：  
   
-|選項|描述|  
+|選項|說明|  
 |------------|-----------------|  
 |**顯示基底類型**|如果選取的型別衍生自全域型別，就會瀏覽至選取之型別的基底型別。|  
 |**顯示所有參考**|尋找並反白顯示選取之型別的所有參考。 這包括選取的型別以及衍生自選取型別之型別的項目和屬性。|  
@@ -102,7 +96,7 @@ ms.locfileid: "49294609"
 |**顯示所有參考**|針對全域屬性，尋找並反白顯示所選屬性的所有參考 (其他具有 `ref="selectedAttribute"` 的屬性)。|  
   
 ## <a name="node-type-attribute-group"></a>節點型別：屬性群組  
- 除了上述的全域節點選項外，屬性群組節點的內容功能表還包含下列選項：  
+ 除了上述的全域節點選項外，屬性群組節點的操作功能表還包含下列選項：  
   
 |選項|描述|  
 |------------|-----------------|  
@@ -110,8 +104,8 @@ ms.locfileid: "49294609"
 |**顯示所有成員**|尋找並反白顯示屬性群組的所有成員。|  
 |**顯示所有參考**|尋找並反白顯示所選屬性群組的所有參考 (具有 `ref="selectedAttributeGroup"` 的屬性群組)。|  
   
-## <a name="node-type-named-group"></a>節點型別：具名群組  
- 除了上述的全域節點選項外，具名群組節點的內容功能表還包含下列選項：  
+## <a name="node-type-named-group"></a>節點型別：具名的群組  
+ 除了上述的全域節點選項外，具名群組節點的操作功能表還包含下列選項：  
   
 |選項|描述|  
 |------------|-----------------|  
@@ -122,6 +116,3 @@ ms.locfileid: "49294609"
 ## <a name="see-also"></a>另請參閱  
  [XML 結構描述總管](../xml-tools/xml-schema-explorer.md)   
  [搜尋結構描述集合](../xml-tools/searching-the-schema-set.md)
-
-
-

@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPointerObject::GetBytes method
 ms.assetid: e986c188-87fb-4b51-86e9-ee6a0035bdab
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7a2c93e032175ce556d5504ed8b3f57dcf619a61
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 247e1ff4c934ae581c7a0224c8f8cba8d4e9d946
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56677626"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66308873"
 ---
 # <a name="idebugpointerobjectgetbytes"></a>IDebugPointerObject::GetBytes
 取得指向為一系列的連續位元組的值。
@@ -42,22 +45,18 @@ int GetBytes(
 );
 ```
 
-#### <a name="parameters"></a>參數
- `dwStart`
+## <a name="parameters"></a>參數
+`dwStart`\
+[in]以位元組為單位，從所指向之物件的開始位移。
 
- [in]以位元組為單位，從所指向之物件的開始位移。
+`dwCount`\
+[in]要擷取的位元組數目。
 
- `dwCount`
+`pBytes`\
+[in、 out]指向會填入值以一系列的連續的位元組陣列，從物件的指定位移處開始。
 
- [in]要擷取的位元組數目。
-
- `pBytes`
-
- [in、 out]指向會填入值以一系列的連續的位元組陣列，從物件的指定位移處開始。
-
- `pdwBytes`
-
- [out]傳回實際擷取的位元組的數目。
+`pdwBytes`\
+[out]傳回實際擷取的位元組的數目。
 
 ## <a name="return-value"></a>傳回值
  如果成功，會傳回 S_OK;否則，傳回錯誤碼。

@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEnumField::GetValueFromString method
 ms.assetid: 1ef8ac5e-a3e0-4078-b876-7f5615aedcbb
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e714e6b2028605eb9c820f904cedf9ed4c23eab8
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 81b74ecc780e2fd9df3cad5516c25f8a1fa657ec
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56716021"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66345126"
 ---
 # <a name="idebugenumfieldgetvaluefromstring"></a>IDebugEnumField::GetValueFromString
 這個方法傳回的列舉常數名稱相關聯的值。
@@ -38,14 +41,12 @@ int GetValueFromString(
 );
 ```
 
-#### <a name="parameters"></a>參數
- `pszValue`
+## <a name="parameters"></a>參數
+`pszValue`\
+[in]字串，指定要取值的名稱。 請注意，針對C++，這是寬字元字串。
 
- [in]字串，指定要取值的名稱。 請注意，對於 c + +，這是寬字元字串。
-
- `pValue`
-
- [out]傳回相關聯的數值。
+`pValue`\
+[out]傳回相關聯的數值。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回`S_FALSE`，如果名稱不屬於列舉型別，則為錯誤碼。

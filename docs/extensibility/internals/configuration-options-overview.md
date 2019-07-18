@@ -6,17 +6,17 @@ helpviewer_keywords:
 - project configurations
 - configuration options, about configuration options
 ms.assetid: f4ad4dd3-b39e-42df-ad89-d403cdf24a2b
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c1ce45aea2f39751822a3dda6f388bd2d8095775
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: b27df2b9b93276ade06f97c9e80fd0c0483ef963
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56605090"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66309990"
 ---
 # <a name="configuration-options-overview"></a>組態選項概觀
 中的專案[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]可支援多個可以建置、 偵錯、 執行，及/或已部署的組態。 組態是一組具名屬性、 通常編譯器參數和檔案位置的描述組建類型。 根據預設，新的方案包含兩個設定，*偵錯*並*發行*。 使用預設值，或修改以符合您特定的解決方案和/或專案需求，可以套用這些設定。 有些封裝可以建立兩種方式： 做為 ActiveX 編輯器，或為就地元件。 若要支援多個組態，但不需要專案。 如果沒有可用的只有一個組態，該組態會對應到所有的方案組態。
@@ -36,7 +36,7 @@ ms.locfileid: "56605090"
 |*MyConfig*|N/A|\<MyConfig Win64 設定 >|
 
 > [!NOTE]
->  您無法建立*MyConfig*排除 Win32 平台，除非您的目標專案的方案組態不支援 Win32。
+> 您無法建立*MyConfig*排除 Win32 平台，除非您的目標專案的方案組態不支援 Win32。
 
  變更解決方案的作用中設定該方案中選取是建置、 執行、 偵錯，或部署的專案組態的設定。 比方說，如果您變更使用中的方案組態從*Release*要*偵錯*，該方案中的所有專案會自動都建置專案的組態所示方案的偵錯組態。 也稱為專案的組態*偵錯*除非使用者已手動變更環境的 Configuration Manager 中的流程範本。
 

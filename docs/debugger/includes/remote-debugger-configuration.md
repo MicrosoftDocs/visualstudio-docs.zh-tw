@@ -13,18 +13,18 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.openlocfilehash: d89dbc0b752c2b8c538ec53769c166b6edbd802f
-ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
+ms.openlocfilehash: 2e5782c49f26925d9eda81f04653b1a20666c6b1
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50915123"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "68149207"
 ---
 1. 在遠端電腦中，尋找並啟動**遠端偵錯工具**從**開始**功能表。 
    
    如果您在遠端電腦上沒有系統管理權限，以滑鼠右鍵按一下**遠端偵錯工具**應用程式並選取**系統管理員身分執行**。 否則，只是它以正常方式啟動。
 
-   可能有不同版本的*msvsmon.exe*中*x64*， *x32*，或其他資料夾。 請確定在開始您需要偵錯您的應用程式的版本。 
+   如果您打算將附加至處理序執行身為管理員，或執行在不同的使用者帳戶 （例如 IIS)、 以滑鼠右鍵按一下**遠端偵錯工具**應用程式並選取**以系統管理員身分**. 如需詳細資訊，請參閱 <<c0> [ 系統管理員身分執行遠端偵錯工具](../remote-debugging-errors-and-troubleshooting.md#run-the-remote-debugger-as-an-administrator)。
    
 1. 第一次啟動遠端偵錯工具 （或之前，您已設定它），**遠端偵錯組態** 對話方塊隨即出現。  
   

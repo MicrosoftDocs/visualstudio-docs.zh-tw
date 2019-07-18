@@ -1,14 +1,9 @@
 ---
-title: 如何： 撰寫視覺化檢視 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：撰寫視覺化檢視 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -25,27 +20,27 @@ ms.assetid: 625a0d4f-abcc-43f2-9f8c-31c131a4378e
 caps.latest.revision: 27
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 2c7f1fa96bba40e5e56ca7f054b683b3243de65b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: ce50276e4e83a1a055294c8e2b6e09cd0f93d54d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51724890"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440158"
 ---
-# <a name="how-to-write-a-visualizer"></a>如何：撰寫視覺化檢視
+# <a name="how-to-write-a-visualizer"></a>HOW TO：撰寫視覺化檢視
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 您可以為任何 Managed 類別的物件撰寫自訂視覺化檢視，除了 <xref:System.Object> 或 <xref:System.Array> 以外。  
   
 > [!NOTE]
->  在 **存放區**應用程式，僅限標準的文字，支援 HTML、 XML 及 JSON 視覺化檢視。 不支援自訂 (使用者建立的) 視覺化檢視。  
+> 在 **存放區**應用程式，僅限標準的文字，支援 HTML、 XML 及 JSON 視覺化檢視。 不支援自訂 (使用者建立的) 視覺化檢視。  
   
  偵錯工具視覺化檢視的架構分為兩部分：  
   
-- *偵錯工具端*Visual Studio 偵錯工具內執行。 偵錯工具端的程式碼會建立並顯示視覺化檢視的使用者介面。  
+- 「偵錯工具端」(*debugger side*) 會在 Visual Studio 偵錯工具中執行。 偵錯工具端的程式碼會建立並顯示視覺化檢視的使用者介面。  
   
-- *偵錯項目端*Visual Studio 偵錯處理序內執行 (*偵錯項目*)。  
+- 「偵錯項目端」會在 Visual Studio 正在偵錯的處理序 (亦即「偵錯項目」) 中執行。  
   
   您要進行視覺化的資料物件 (例如，String 物件) 會存在於偵錯項目處理序中。 因此，偵錯項目端必須將該資料物件傳送至偵錯工具端，然後偵錯工具端才能使用您建立的使用者介面顯示這個資料物件。  
   
@@ -63,29 +58,26 @@ ms.locfileid: "51724890"
   
   自訂視覺化檢視會有安全性考量。 請參閱[視覺化檢視安全性考量](../debugger/visualizer-security-considerations.md)。  
   
-  下列程序提供在建立視覺化檢視時所需的概觀。 如需詳細的說明，請參閱[逐步解說： 在 C# 中撰寫視覺化檢視](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)。  
+  下列程序提供在建立視覺化檢視時所需的概觀。 如需詳細的說明，請參閱[逐步解說：撰寫視覺化檢視C# ](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)。  
   
 ### <a name="to-create-the-debugger-side"></a>若要建立偵錯工具端  
   
-1.  請使用 <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider> 方法，取得偵錯工具端的視覺化物件。  
+1. 請使用 <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider> 方法，取得偵錯工具端的視覺化物件。  
   
-2.  建立繼承自 <xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer> 的類別。  
+2. 建立繼承自 <xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer> 的類別。  
   
-3.  覆寫 <xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer.Show%2A?displayProperty=fullName> 方法以顯示介面。 使用 <xref:Microsoft.VisualStudio.DebuggerVisualizers.IDialogVisualizerService> 方法以將 Windows Form、對話方塊和控制項顯示為介面的一部分。  
+3. 覆寫 <xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer.Show%2A?displayProperty=fullName> 方法以顯示介面。 使用 <xref:Microsoft.VisualStudio.DebuggerVisualizers.IDialogVisualizerService> 方法以將 Windows Form、對話方塊和控制項顯示為介面的一部分。  
   
-4.  套用 <xref:System.Diagnostics.DebuggerVisualizerAttribute>，並賦予它一個視覺化檢視 (<xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer>)。  
+4. 套用 <xref:System.Diagnostics.DebuggerVisualizerAttribute>，並賦予它一個視覺化檢視 (<xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer>)。  
   
 ### <a name="to-create-the-debuggee-side"></a>若要建立偵錯項目端  
   
-1.  套用 <xref:System.Diagnostics.DebuggerVisualizerAttribute>，並賦予它一個視覺化檢視 (<xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer>) 和物件來源 (<xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource>)。 如果您忽略了物件來源，將使用預設的物件來源。  
+1. 套用 <xref:System.Diagnostics.DebuggerVisualizerAttribute>，並賦予它一個視覺化檢視 (<xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer>) 和物件來源 (<xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource>)。 如果您忽略了物件來源，將使用預設的物件來源。  
   
-2.  如果您希望視覺化檢視能夠編輯和顯示資料物件，您必須從 `TransferData` 覆寫 `CreateReplacementObject` 或 <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource> 方法。  
+2. 如果您希望視覺化檢視能夠編輯和顯示資料物件，您必須從 `TransferData` 覆寫 `CreateReplacementObject` 或 <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource> 方法。  
   
 ## <a name="see-also"></a>另請參閱  
  [建立自訂視覺化檢視](../debugger/create-custom-visualizers-of-data.md)   
- [如何： 安裝視覺化檢視](../debugger/how-to-install-a-visualizer.md)   
- [如何： 測試和偵錯視覺化檢視](../debugger/how-to-test-and-debug-a-visualizer.md)   
+ [如何：安裝視覺化檢視](../debugger/how-to-install-a-visualizer.md)   
+ [如何：測試和偵錯視覺化檢視](../debugger/how-to-test-and-debug-a-visualizer.md)   
  [視覺化檢視安全性考量](../debugger/visualizer-security-considerations.md)
-
-
-

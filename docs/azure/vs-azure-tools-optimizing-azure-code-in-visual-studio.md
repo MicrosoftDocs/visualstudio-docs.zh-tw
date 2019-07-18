@@ -9,12 +9,12 @@ ms.custom: seodec18
 ms.workload: azure-vs
 ms.date: 11/11/2016
 ms.author: ghogen
-ms.openlocfilehash: 1c341345005795b2a4a1f95ef80a6ed2eb045c1b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 5422d8cb56a9df1fad40857f6802e55ebd11b2ed
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55948078"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65675502"
 ---
 # <a name="optimizing-your-azure-code"></a>最佳化您的 Azure 程式碼
 當您在撰寫使用 Microsoft Azure 的應用程式時，請遵循某些程式碼撰寫實務，以避免應用程式在雲端環境中發生延展性、行為和效能方面的問題。 Microsoft 有提供 Azure Code Analysis 工具，可辨識並找出許多常見問題，並幫助您解決這些問題。 您可以在 Visual Studio 中透過 NuGet 下載此工具。
@@ -71,7 +71,7 @@ public async Task RunAsync()
 
     HttpClient client = new HttpClient();
 
-    Task<string> urlString = client.GetStringAsync("http://msdn.microsoft.com");
+    Task<string> urlString = client.GetStringAsync("https://msdn.microsoft.com");
 
     while (true)
     {
@@ -214,6 +214,7 @@ while (true)
    }
 }
 ```
+
 ## <a name="consider-using-asynchronous-service-bus-methods"></a>考慮使用非同步服務匯流排方法
 ### <a name="id"></a>識別碼
 AP2003

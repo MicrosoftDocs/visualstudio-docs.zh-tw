@@ -1,28 +1,23 @@
 ---
 title: 工具在登錄中的 Windows |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - tool windows, registering
 ms.assetid: c4bb8add-7148-49e4-a377-01d059fd5524
 caps.latest.revision: 13
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: f24c51b3cf1a4930fa0cc496e12ffd31170389b0
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 8cedb95ccd98c3d5bd5e05086cfd1b53b0f97cd9
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51781903"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68186376"
 ---
-# <a name="tool-windows-in-the-registry"></a>在登錄中的工具 Windows
+# <a name="tool-windows-in-the-registry"></a>登錄中的工具視窗
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 提供的工具視窗的 Vspackage 必須向[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]做為工具視窗提供者。 使用 Visual Studio Package 範本所建立的工具視窗會依預設此進行。 工具視窗提供者都有系統的登錄機碼指定可見性屬性，例如工具視窗的預設大小和位置，做為工具視窗窗格中，並停駐樣式的視窗的 GUID。  
@@ -49,4 +44,3 @@ ms.locfileid: "51781903"
   
 ## <a name="see-also"></a>另請參閱  
  [VSPackage 基本資訊](../misc/vspackage-essentials.md)
-

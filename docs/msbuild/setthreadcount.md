@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 656e491e683c7ec2de23ea7e49938e833af3a295
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56709612"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62945730"
 ---
 # <a name="setthreadcount"></a>SetThreadCount
 設定全域執行緒計數，並將該計數指派給目前的執行緒。
@@ -40,4 +40,4 @@ HRESULT WINAPI SetThreadCount(int threadCount);
  如已更新執行緒計數，則為 **HRESULT** 和已設定的 **SUCCEEDED** 位元。
 
 ## <a name="requirements"></a>需求
- **標頭：***FileTracker.h*
+ **標頭：** *FileTracker.h*

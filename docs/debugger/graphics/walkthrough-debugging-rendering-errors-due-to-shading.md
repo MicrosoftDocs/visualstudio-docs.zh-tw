@@ -1,5 +1,5 @@
 ---
-title: 逐步解說： 偵錯因著色而產生的錯誤 |Microsoft Docs
+title: 逐步解說：偵錯因著色而產生的錯誤 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 01875b05-cc7b-4add-afba-f2b776f86974
@@ -8,23 +8,23 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d2e70fb88a9dd3c51a5e280e1e778bd18220985f
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 44e542bcbb801ee4035ba501b50bad81b53e8bdf
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56688364"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62849282"
 ---
-# <a name="walkthrough-debugging-rendering-errors-due-to-shading"></a>逐步解說：偵錯因著色而產生的顯示錯誤
+# <a name="walkthrough-debugging-rendering-errors-due-to-shading"></a>逐步解說：對因著色而產生的顯示錯誤進行偵錯
 本逐步解說示範如何使用[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]圖形診斷來調查因為著色器錯誤而著色不正確的物件。
 
  本逐步解說示範如何：
 
--   檢查圖形記錄文件來識別顯示問題的像素。
+- 檢查圖形記錄文件來識別顯示問題的像素。
 
--   使用 [圖形像素歷史記錄]  視窗更仔細地檢查像素狀態。
+- 使用 [圖形像素歷史記錄]  視窗更仔細地檢查像素狀態。
 
--   使用 [HLSL 偵錯工具]  來檢查像素和端點著色器。
+- 使用 [HLSL 偵錯工具]  來檢查像素和端點著色器。
 
 ## <a name="scenario"></a>情節
  物件著色不正確通常是因為端點著色器將不正確或不完整的資訊傳遞給像素著色器。

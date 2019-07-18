@@ -1,14 +1,9 @@
 ---
 title: 匿名方法和程式碼分析 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 helpviewer_keywords:
 - methods, anonymous
 - code analysis, anonymous methods
@@ -18,12 +13,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 73ff8dfca29f1ed9896462725886baa87e729100
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b8b3f64a0b5f70067367e98d7e1d1471fc670099
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49280159"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68157068"
 ---
 # <a name="anonymous-methods-and-code-analysis"></a>匿名方法和程式碼分析
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -113,7 +108,7 @@ class Class
   
  類別可以包含內嵌匿名方法，將值指派給具有多個建構函式的欄位。 在此情況下，警告和計量是相關聯的所有建構函式除非該建構函式鏈結到相同的類別中的另一個建構函式。  
   
- 例如，在下列類別中，找到的宣告中的任何警告**anonymousMethod**應該針對引發**Class(int)** 並**Class(string)** 但不是針對**Class()**。  
+ 例如，在下列類別中，找到的宣告中的任何警告**anonymousMethod**應該針對引發**Class(int)** 並**Class(string)** 但不是針對**Class()** 。  
   
 ```vb  
   
@@ -159,6 +154,3 @@ class Class
   
 ## <a name="see-also"></a>另請參閱  
  [分析 Managed 程式碼品質](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)
-
-
-

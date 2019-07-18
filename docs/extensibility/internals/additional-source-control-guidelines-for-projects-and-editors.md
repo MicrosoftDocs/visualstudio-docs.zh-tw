@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK], guidelines for projects and editors
 ms.assetid: 2483cce5-321c-4d3c-9c5c-ee8385263f74
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3566709819d2023dfd6e38e40f88a454de83e3e6
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: a9c04623ed276bf10784ccdf895c5abb1c6e9903
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56626098"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66315861"
 ---
 # <a name="additional-source-control-guidelines-for-projects-and-editors"></a>專案和編輯器適用的其他原始檔控制指導方針
 有幾個的專案和編輯器應符合以支援原始檔控制的指導方針。
@@ -23,7 +23,7 @@ ms.locfileid: "56626098"
 ## <a name="guidelines"></a>方針
  您的專案或編輯器應該也會執行以下動作來支援原始檔控制：
 
-|區域圖|專案|編輯器|詳細資料|
+|區域|專案|編輯器|詳細資料|
 |----------|-------------|------------|-------------|
 |私用檔案的複本|X||環境支援檔案的私用的複本。 也就是登錄在專案中每個人都他/她自己的私用複本，該專案中的檔案。|
 |ANSI/Unicode 持續性|X|X|如果您撰寫持續性程式碼時，保存 ANSI 格式的檔案，因為大部分的原始檔控制程式目前不支援 Unicode。|

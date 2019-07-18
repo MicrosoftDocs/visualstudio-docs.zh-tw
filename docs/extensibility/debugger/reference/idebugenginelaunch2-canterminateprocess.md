@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEngineLaunch2::CanTerminateProcess
 ms.assetid: 7973454d-c957-4123-a0ee-80ebcdbbd2d1
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6b4468af7b2b0cfd08e551839a9ab9c606c25df2
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 2d8f401ae49edb2f77d35104de68280be322a63d
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56678082"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66337215"
 ---
 # <a name="idebugenginelaunch2canterminateprocess"></a>IDebugEngineLaunch2::CanTerminateProcess
 決定是否會終止處理程序。
@@ -36,10 +39,9 @@ int CanTerminateProcess ( 
 );
 ```
 
-#### <a name="parameters"></a>參數
- `pProcess`
-
- [in][IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)物件，表示終止程序。
+## <a name="parameters"></a>參數
+`pProcess`\
+[in][IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)物件，表示終止程序。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則會傳回錯誤碼。 傳回`S_FALSE`如果引擎無法終止處理序，比方說，因為存取被拒。

@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: b6cc01c6506c4a3fca85029a8dcaf08607427ea4
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56596707"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62956201"
 ---
 # <a name="document-protection-in-document-level-solutions"></a>在文件層級方案中的文件保護
   您可以使用文件層級專案中的 Microsoft Office Word 和 Microsoft Office Excel 的保護功能。 這些功能會封鎖未經授權的使用者對受保護的文件的組件中的變更。
@@ -40,7 +40,7 @@ ms.locfileid: "56596707"
 
  不過，如果您建立使用已啟用保護的現有 Word 文件的專案，文件受到在設計工具中開啟。 您無法編輯文件中，受保護的部分，但您仍然可以撰寫程式碼來自動化文件中的程式碼編輯器。 您也無法建置專案如果 Visual Studio 中開啟文件時，會啟用保護。
 
- 您可以關閉保護文件時在設計工具中開啟，以便您可以編輯文件，並建置專案。 您無法關閉設計工具中複製的保護時進行偵錯;在偵錯期間開啟的文件是從設計工具中開啟另一個複本 (輸出複本會儲存在*\bin* Visual Basic 中，目錄並*\bin\debug*目錄C#).
+ 您可以關閉保護文件時在設計工具中開啟，以便您可以編輯文件，並建置專案。 您無法關閉設計工具中複製的保護時進行偵錯;在偵錯期間開啟的文件是從設計工具中開啟另一個複本 (輸出複本會儲存在 *\bin* Visual Basic 中，目錄並 *\bin\debug*目錄C#).
 
  您可以啟用保護複本會在設計工具中開啟關閉 Visual Studio 中的專案，開啟位於專案目錄中，文件的複本，然後開啟保護的文件。
 

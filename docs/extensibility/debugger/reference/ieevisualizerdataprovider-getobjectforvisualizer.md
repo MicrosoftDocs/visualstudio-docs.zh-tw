@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEEVisualizerDataProvider::GetObjectForVisualizer method
 ms.assetid: bd5376fc-13b4-40b7-9a5d-7ba8289f1b24
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f73b08d4a8a5380fb72cdd64db3865afafefda87
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: a10630ee8c74af333958e7115c660872ac26f78f
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56706661"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66350215"
 ---
 # <a name="ieevisualizerdataprovidergetobjectforvisualizer"></a>IEEVisualizerDataProvider::GetObjectForVisualizer
 這個方法會取得這個視覺化檢視表示的物件。
@@ -36,10 +39,9 @@ int GetObjectForVisualizer(
 );
 ```
 
-#### <a name="parameters"></a>參數
- `ppObject`
-
- [out]這個視覺化檢視所要表示的物件
+## <a name="parameters"></a>參數
+`ppObject`\
+[out]這個視覺化檢視所要表示的物件
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

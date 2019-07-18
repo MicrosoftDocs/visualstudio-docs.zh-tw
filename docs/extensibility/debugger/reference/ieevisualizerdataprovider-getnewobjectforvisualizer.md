@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEEVisualizerDataProvider::GetNewObjectForVisualizer method
 ms.assetid: a898d549-4898-4fde-aad1-e8bb89129652
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: edfc3a2e5a89216a1bd50500ac29e21ed5842503
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 322e18132050bca6803dac04a5cfbe3fd92f3106
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56693720"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66335591"
 ---
 # <a name="ieevisualizerdataprovidergetnewobjectforvisualizer"></a>IEEVisualizerDataProvider::GetNewObjectForVisualizer
 這個方法會取得新物件的視覺化檢視。 這個方法一律會建立新的物件，從現有的物件。
@@ -36,10 +39,9 @@ int GetNewObjectForVisualizer(
 );
 ```
 
-#### <a name="parameters"></a>參數
- `ppObject`
-
- [out]新的物件。
+## <a name="parameters"></a>參數
+`ppObject`\
+[out]新的物件。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

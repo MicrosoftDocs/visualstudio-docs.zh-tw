@@ -5,17 +5,17 @@ ms.topic: reference
 helpviewer_keywords:
 - IDebugPrimitiveTypeField interface
 ms.assetid: 73a428fd-797e-4ceb-8392-ba16f1c5226b
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 25af7b2126be79901ceb97d6c93786d59111bfe1
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 4012b919cffc5e16433567fac283ac731d4d215c
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56703509"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66353271"
 ---
 # <a name="idebugprimitivetypefield"></a>IDebugPrimitiveTypeField
 表示基本類型列舉值從[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)介面。

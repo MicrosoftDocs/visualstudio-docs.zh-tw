@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugModule3 interface
 ms.assetid: 44f8e96e-9c59-4ffc-9a08-9c908a0e4de7
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 98b506c11ef126d0179b198336e8d969c4eec267
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 582c6fa887062986ccd1b66c7f3466b89407bcca
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56721286"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66323746"
 ---
 # <a name="idebugmodule3"></a>IDebugModule3
 這個介面會表示支援的符號和 JustMyCode 狀態的替代位置的模組。

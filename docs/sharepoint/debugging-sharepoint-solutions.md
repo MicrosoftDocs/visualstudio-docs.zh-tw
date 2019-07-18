@@ -15,27 +15,27 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 57133b97ede20c0ed28eecbec6e3cea964f9558a
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
-ms.translationtype: MT
+ms.openlocfilehash: 60aa38d5042625393132ffceb3cc226f44e67645
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57873106"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443495"
 ---
 # <a name="debug-sharepoint-solutions"></a>偵錯 SharePoint 方案
   您可以使用偵錯 SharePoint 方案[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]偵錯工具。 當您啟動偵錯，[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]專案會將檔案部署到 SharePoint 伺服器，然後開啟 網頁瀏覽器中的 SharePoint 網站的執行個體。 下列各節將說明如何偵錯 SharePoint 應用程式[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。
 
--   [啟用偵錯](#enable-debugging)
+- [啟用偵錯](#enable-debugging)
 
--   [F5 偵錯和部署程序](#f5-debug-and-deployment-process)
+- [F5 偵錯和部署程序](#f5-debug-and-deployment-process)
 
--   [SharePoint 專案功能](#sharepoint-project-features)
+- [SharePoint 專案功能](#sharepoint-project-features)
 
--   [偵錯工作流程](#debug-workflows)
+- [偵錯工作流程](#debug-workflows)
 
--   [偵錯功能事件接收器](#debug-feature-event-receivers)
+- [偵錯功能事件接收器](#debug-feature-event-receivers)
 
--   [啟用 ehanced 偵錯資訊](#enable-enhanced-debugging-information)
+- [啟用 ehanced 偵錯資訊](#enable-enhanced-debugging-information)
 
 ## <a name="enable-debugging"></a>啟用偵錯
  當您第一次偵錯 SharePoint 方案中的[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]，對話方塊中，系統會通知您，web.config 檔案未設定為啟用偵錯。 （當您安裝 SharePoint server 時，會建立 web.config 檔案。 如需詳細資訊，請參閱 <<c0> [ 處理 Web.config 檔案](http://go.microsoft.com/fwlink/?LinkID=149266)。)對話方塊可讓您選擇執行專案但不偵錯，或修改的 web.config 檔案，以啟用偵錯。 如果您選擇第一個選項，專案將會正常執行。 如果您選擇第二個選項，則 web.config 檔案會設定為：
@@ -77,11 +77,11 @@ ms.locfileid: "57873106"
 
  若要反向變更，並停用偵錯，變更下列[!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]web.config 檔案中：
 
--   關閉 呼叫堆疊 (`CallStack="false"`)
+- 關閉 呼叫堆疊 (`CallStack="false"`)
 
--   啟用自訂錯誤[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)](`<customErrors mode="On" />`)
+- 啟用自訂錯誤[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)](`<customErrors mode="On" />`)
 
--   停用編譯偵錯 (`<compilation debug="false">`)
+- 停用編譯偵錯 (`<compilation debug="false">`)
 
 ## <a name="f5-debug-and-deployment-process"></a>F5 偵錯和部署程序
  當您在偵錯模式中執行您的 SharePoint 專案時，在 SharePoint 部署程序會執行下列工作：
@@ -103,7 +103,7 @@ ms.locfileid: "57873106"
 8. 工作流程，將關聯工作流程，與 SharePoint 文件庫、 清單中或您在選取的站台**SharePoint 自訂精靈**。
 
    > [!NOTE]
-   >  只有當您選取，就會發生此關聯**自動關聯工作流程**精靈中。
+   > 只有當您選取，就會發生此關聯**自動關聯工作流程**精靈中。
 
 9. 執行可自訂的部署後命令。
 
@@ -126,7 +126,7 @@ ms.locfileid: "57873106"
  當您偵錯工作流程專案[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]至程式庫或清單加入工作流程範本 （取決於其型別）。 您可以接著啟動工作流程範本，以手動方式或藉由新增或更新項目。 您可以接著使用[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]偵錯工作流程。
 
 > [!NOTE]
->  如果您加入其他組件的參考，請確定這些組件會安裝在全域組件快取 ( [!INCLUDE[TLA2#tla_gac](../sharepoint/includes/tla2sharptla-gac-md.md)])。 否則，工作流程解決方案將會失敗。 如需有關如何安裝組件的資訊，請參閱 <<c0> [ 手動開始文件或項目上的 工作流程](https://support.office.com/article/Manually-start-a-workflow-on-a-document-or-item-5C106E0E-6FF2-4A75-AF99-F01653BC7963)。
+> 如果您加入其他組件的參考，請確定這些組件會安裝在全域組件快取 ( [!INCLUDE[TLA2#tla_gac](../sharepoint/includes/tla2sharptla-gac-md.md)])。 否則，工作流程解決方案將會失敗。 如需有關如何安裝組件的資訊，請參閱 <<c0> [ 手動開始文件或項目上的 工作流程](https://support.office.com/article/Manually-start-a-workflow-on-a-document-or-item-5C106E0E-6FF2-4A75-AF99-F01653BC7963)。
 
  不過，部署程序無法啟動工作流程。 您必須從 SharePoint 網站啟動工作流程。 使用 Microsoft Office Word 2010 中，用戶端應用程式，或使用不同的伺服器端程式碼，您也可以啟動工作流程。 使用其中一種方法中指定**SharePoint 自訂精靈**。
 

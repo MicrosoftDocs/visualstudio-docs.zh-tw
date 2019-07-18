@@ -1,5 +1,5 @@
 ---
-title: C + + 靜態程式碼分析市集應用程式
+title: C++靜態程式碼分析市集應用程式
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-test
@@ -11,12 +11,12 @@ caps.latest.revision: 15
 author: alexhomer1
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9194da6803f04f3bf4cc56696d01a68a3e27d67d
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MTE95
+ms.openlocfilehash: 799e75dff8202ef041399cc6e0fcfb791dc7e868
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57873239"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686539"
 ---
 # <a name="analyze-c-code-quality-of-store-apps-using-visual-studio-static-code-analysis"></a>使用 Visual Studio 靜態程式碼分析，分析市集應用程式的 C++ 程式碼品質
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,9 +26,9 @@ ms.locfileid: "57873239"
  Visual Studio Express Edition 中的程式碼分析工具會檢查您的程式碼是否有常見的問題，以及是否違反良好的程式設計作法。 程式碼分析警告與編譯器錯誤和警告不同，因為程式碼分析會搜尋有效的特定程式碼模式，但仍然可以為您或使用您程式碼的其他人建立問題。 程式碼分析也可以尋找難以透過測試發現的程式碼缺失。 在開發過程中定期執行程式碼分析工具，可以提升已完成應用程式的品質。
 
 > [!NOTE]
-> 在 Visual Studio Ultimate、Visual Studio Premium 及 Visual Studio Professional 中，您可以使用程式碼分析工具的完整功能。 請參閱 MSDN Library 中的[使用程式碼分析工具進行應用程式品質分析](http://msdn.microsoft.com/library/dd264897.aspx)。
+> 在 Visual Studio Ultimate、Visual Studio Premium 及 Visual Studio Professional 中，您可以使用程式碼分析工具的完整功能。 請參閱 MSDN Library 中的[使用程式碼分析工具進行應用程式品質分析](https://msdn.microsoft.com/library/dd264897.aspx)。
 
-##  <a name="BKMK_Run"></a> 執行程式碼分析
+## <a name="BKMK_Run"></a> 執行程式碼分析
  在您的 Visual Studio 方案中執行程式碼分析：
 
 - 在 [建置] 功能表上，選擇 [針對方案執行程式碼分析]。
@@ -43,7 +43,7 @@ ms.locfileid: "57873239"
 
    ![[程式碼分析] 視窗](../test/media/ca-cpp-collapsed.png "CA_CPP_Collapsed")
 
-##  <a name="BKMK_Analyze"></a> 分析和解決程式碼分析警告
+## <a name="BKMK_Analyze"></a> 分析和解決程式碼分析警告
  若要分析特定警告，請在 [程式碼分析] 視窗中選擇警告的標題。 展開警告以顯示問題的詳細資訊。 如果情況允許，程式碼分析會顯示導致發出警告的行號和分析邏輯。
 
  ![展開的程式碼分析警告](../test/media/ca-cpp-expanded-callout.png "CA_CPP_Expanded_Callout")
@@ -55,9 +55,9 @@ ms.locfileid: "57873239"
  在您了解問題之後，就可以在程式碼中解決問題。 然後重新執行程式碼分析來確定 [程式碼分析] 視窗中不會再次出現警告，且您的修正尚未引發新的警告。
 
 > [!TIP]
->  您可以從 [程式碼分析] 視窗重新執行程式碼分析。 選擇 [分析] 按鈕，然後選擇要分析的範圍。 您可以在整個方案或選取的專案上重新執行分析。
+> 您可以從 [程式碼分析] 視窗重新執行程式碼分析。 選擇 [分析] 按鈕，然後選擇要分析的範圍。 您可以在整個方案或選取的專案上重新執行分析。
 
-##  <a name="BKMK_Suppress"></a> 隱藏程式碼分析警告
+## <a name="BKMK_Suppress"></a> 隱藏程式碼分析警告
  有時候您可能決定不修正程式碼分析警告。 您可能會判斷解決這項警告需要太多重新編碼，而在任何實際實作程式碼時會有問題發生的可能性。 或是，您可能會認為警告中使用的分析對於特定內容是不適當的。 您可以隱藏個別的警告，使之不再出現於 [程式碼分析] 視窗中。
 
  隱藏警告：
@@ -70,16 +70,15 @@ ms.locfileid: "57873239"
 
    隱藏訊息時會插入可隱藏該程式碼行警告的 `#pragma(warning:`*WarningId*`)`。
 
-##  <a name="BKMK_Search"></a> 搜尋和篩選程式碼分析結果
+## <a name="BKMK_Search"></a> 搜尋和篩選程式碼分析結果
  您可以在多專案方案中搜尋警告訊息的詳細清單，以及篩選警告。
 
  ![搜尋和篩選程式碼分析視窗](../test/media/ca-searchfilter.png "CA_SearchFilter")
 
-##  <a name="Warnings"></a> C++ 程式碼分析警告
+## <a name="Warnings"></a> C++ 程式碼分析警告
  程式碼分析引發下列 C++ 程式碼警告：
 
-
-|                                      規則                                      |                                                  說明                                                  |
+|                                      規則                                      |                                                  描述                                                  |
 |--------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------|
 |                       [C6001](../code-quality/c6001.md)                        |                                          使用尚未初始化的記憶體                                           |
 |                       [C6011](../code-quality/c6011.md)                        |                                          取值的指標為 NULL                                           |
@@ -117,7 +116,7 @@ ms.locfileid: "57873239"
 |                       [C6504](../code-quality/c6504.md)                        |                                              非指標上的 Null                                              |
 |                       [C6505](../code-quality/c6505.md)                        |                                               Void 上的 MustCheck                                               |
 |                       [C6506](../code-quality/c6506.md)                        |                                      非指標或陣列上的緩衝區大小                                      |
-| [C6507](http://msdn.microsoft.com/18f88cd1-d035-4403-a6a4-12dd0affcf21)        |                                       取值零時的 Null 不符                                       |
+| [C6507](https://msdn.microsoft.com/18f88cd1-d035-4403-a6a4-12dd0affcf21)        |                                       取值零時的 Null 不符                                       |
 |                       [C6508](../code-quality/c6508.md)                        |                                           寫入存取常數                                            |
 |                       [C6509](../code-quality/c6509.md)                        |                                          先前的條件所用的 Return                                          |
 |                       [C6510](../code-quality/c6510.md)                        |                                        非指標上的 Null Terminated                                         |
@@ -128,12 +127,12 @@ ms.locfileid: "57873239"
 |                       [C6516](../code-quality/c6516.md)                        |                                          屬性 (Attribute) 上沒有屬性 (Property)                                           |
 |                       [C6517](../code-quality/c6517.md)                        |                                       不能讀取的緩衝區上的有效大小                                       |
 |                       [C6518](../code-quality/c6518.md)                        |                                     不能寫入的緩衝區上的可寫入大小                                      |
-| [C6521](http://msdn.microsoft.com/e98d0ae3-6f13-47b2-9a15-15d4055af9ef)  |                                        無效的大小字串取值                                        |
+| [C6521](https://msdn.microsoft.com/e98d0ae3-6f13-47b2-9a15-15d4055af9ef)  |                                        無效的大小字串取值                                        |
 |                       [C6522](../code-quality/c6522.md)                        |                                           無效的大小字串類型                                            |
-| [C6523](http://msdn.microsoft.com/11397a31-b224-46b0-afb7-d49ca576a3bb)  |                                         無效的大小字串參數                                         |
+| [C6523](https://msdn.microsoft.com/11397a31-b224-46b0-afb7-d49ca576a3bb)  |                                         無效的大小字串參數                                         |
 |                       [C6525](../code-quality/c6525.md)                        |                                   無效的大小字串不可能執行到的位置                                    |
-| [C6526](http://msdn.microsoft.com/59c590c7-0098-4166-a1ac-87f324596002)  |                                        無效的大小字串緩衝區類型                                        |
-|                       [C6527](../code-quality/c6527.md)                        |              無效的註釋：'NeedsRelease' 屬性不能用於 void 類型的值               |
+| [C6526](https://msdn.microsoft.com/59c590c7-0098-4166-a1ac-87f324596002)  |                                        無效的大小字串緩衝區類型                                        |
+|                       [C6527](../code-quality/c6527.md)                        |              無效的附註：'NeedsRelease' 屬性不能用於 void 類型的值               |
 |                       [C6530](../code-quality/c6530.md)                        |                                       無法辨認的格式字串樣式                                        |
 |                       [C6540](../code-quality/c6540.md)                        | 在這個函式上使用屬性註釋會使其所有現有的 __declspec 註釋無效。  |
 |                       [C6551](../code-quality/c6551.md)                        |                              無效的大小規格: 無法剖析運算式                              |
@@ -204,7 +203,7 @@ ms.locfileid: "57873239"
 |                      [C28286](../code-quality/c28286.md)                       |                                    對於函式，結尾附近發生語法錯誤                                    |
 |                      [C28287](../code-quality/c28287.md)                       |                函式的 \_At\_() 註釋中有語法錯誤 (無法辨認的參數名稱)                |
 |                      [C28288](../code-quality/c28288.md)                       |                  函式的 \_At\_() 註釋中有語法錯誤 (無效的參數名稱)                   |
-|                      [C28289](../code-quality/c28289.md)                       |                對於函式：ReadableTo 或 WritableTo 沒有有限的規格做為參數                |
+|                      [C28289](../code-quality/c28289.md)                       |                函式：ReadableTo 或 WritableTo 沒有規格做為參數                |
 |                      [C28290](../code-quality/c28290.md)                       |           函式的註釋包含比實際參數數目還多的外部            |
 |                      [C28291](../code-quality/c28291.md)                       |                        位於 deref 層級 0 的 post null/notnull 對函式是無意義的。                        |
 |                      [C28300](../code-quality/c28300.md)                       |                            運算子的運算式運算元類型不相容                             |

@@ -1,5 +1,5 @@
 ---
-title: HOW TO：取得伺服器總管 中的內建 SharePoint 節點的資料 |Microsoft Docs
+title: 取得伺服器總管 中的內建 SharePoint 節點資料
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a51c64b2caf8520385a5334d7bbd3ad6c14d93f0
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: b90582c9b8d352f95d3d5abb3bbb7fb69283b06b
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56633456"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401431"
 ---
 # <a name="how-to-get-data-for-a-built-in-sharepoint-node-in-server-explorer"></a>HOW TO：取得伺服器總管 中的內建 SharePoint 節點資料
   在每個內建 SharePoint 節點**伺服器總管**，您可以取得資料為基礎的 SharePoint 元件節點所表示。 如需詳細資訊，請參閱 <<c0> [ 擴充 SharePoint 連線節點，在 伺服器總管](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)。
@@ -36,13 +36,13 @@ ms.locfileid: "56633456"
 ## <a name="compile-the-code"></a>編譯程式碼
  這個範例需要參考下列組件：
 
--   EnvDTE
+- EnvDTE
 
--   Microsoft.VisualStudio.SharePoint
+- Microsoft.VisualStudio.SharePoint
 
--   Microsoft.VisualStudio.SharePoint.Explorer.Extensions
+- Microsoft.VisualStudio.SharePoint.Explorer.Extensions
 
--   System.ComponentModel.Composition
+- System.ComponentModel.Composition
 
 ## <a name="deploy-the-extension"></a>部署擴充功能
  若要部署**伺服器總管**延伸模組，建立[!include[vsprvs](../sharepoint/includes/vsprvs-md.md)]擴充功能 (VSIX) 封裝組件和任何其他您想要將副檔名的檔案。 如需詳細資訊，請參閱 <<c0> [ 部署適用於 Visual Studio 中 SharePoint 工具擴充功能](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)。

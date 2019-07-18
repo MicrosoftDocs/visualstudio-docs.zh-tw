@@ -8,17 +8,17 @@ helpviewer_keywords:
 - IntelliSense, IntellisenseHostFlags enumeration
 - IntellisenseHostFlags enumeration
 ms.assetid: 0930640b-eb84-48ef-a8f7-d4268f55c99c
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 882410d68c671a83b13bd14026e5bea4c31cb37e
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 6d0e66f70b91985882df5691d05175995b4f6ca8
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56683554"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66328083"
 ---
 # <a name="intellisensehostflags"></a>IntelliSenseHostFlags
 指定 IntelliSense 主機旗標。

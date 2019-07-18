@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugBreakpointUnboundEvent2::GetReason
 ms.assetid: 0f8a4fec-d3eb-417d-8516-4f7b51904033
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fe963923494d5dc68eb2ab3b6fd768036d1c5400
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 5b3c15b25ec6f4f2d7ddc56efc163ec2eb6b81c0
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56719090"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66352827"
 ---
 # <a name="idebugbreakpointunboundevent2getreason"></a>IDebugBreakpointUnboundEvent2::GetReason
 取得中斷點已繫結的原因。
@@ -36,10 +39,9 @@ int GetReason(
 );
 ```
 
-#### <a name="parameters"></a>參數
-`pdwUnboundReason`
-
- [out]傳回值，以從[BP_UNBOUND_REASON](../../../extensibility/debugger/reference/bp-unbound-reason.md)指定中斷點已繫結的原因的列舉類型。
+## <a name="parameters"></a>參數
+`pdwUnboundReason`\
+[out]傳回值，以從[BP_UNBOUND_REASON](../../../extensibility/debugger/reference/bp-unbound-reason.md)指定中斷點已繫結的原因的列舉類型。
 
 ## <a name="return-value"></a>傳回值
 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

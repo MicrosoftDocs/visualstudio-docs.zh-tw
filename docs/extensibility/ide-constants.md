@@ -11,17 +11,17 @@ helpviewer_keywords:
 - IDE, constants
 - physical views
 ms.assetid: 5030e70a-241d-474a-ba8c-e3b1cf947ff0
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cbe90c182ada4d7e69313ff570b2f7d26087170c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: d16b758a34eb1b9f48e912f75c4eec144a07ce4a
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54929548"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66311321"
 ---
 # <a name="ide-constants"></a>IDE 常數
 

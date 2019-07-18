@@ -1,27 +1,22 @@
 ---
 title: Visual Studio SDK 參考 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - Visual Studio SDK, reference
 - reference, Visual Studio SDK
 ms.assetid: a6930db5-a112-4651-8de3-e520df851f82
 caps.latest.revision: 32
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: e4d5774c65be586a8183fe4a511a3ed21e79c38a
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 85eed4abd07e63c2d997a6068744e91e6f1ac047
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51727155"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65690911"
 ---
 # <a name="visual-studio-sdk-reference"></a>Visual Studio SDK 參考
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,10 +25,10 @@ ms.locfileid: "51727155"
   
 ## <a name="in-this-section"></a>本節內容
 
- [設定組態](http://msdn.microsoft.com/en-us/faa4ed55-66ce-4792-939f-a5b093f13a2e)  
+ [設定組態](https://msdn.microsoft.com/library/faa4ed55-66ce-4792-939f-a5b093f13a2e)  
  探索 Visual Studio 2017 的執行個體，安裝程式組態 API。
 
- [開啟資料夾擴充性](http://msdn.microsoft.com/en-us/0897ae3d-6a09-4d26-90c9-7f3d0b8e5c5d)  
+ [開啟資料夾擴充性](https://msdn.microsoft.com/library/0897ae3d-6a09-4d26-90c9-7f3d0b8e5c5d)  
  Visual Studio 2017 中開啟資料夾的工作區 API。
  
  <xref:Microsoft.VisualStudio.TextManager.Interop>  
@@ -193,13 +188,13 @@ ms.locfileid: "51727155"
  使用 Visual Studio 自動化。  
   
  <xref:Microsoft.VisualStudio.VCCodeModel>  
- 使用 Visual c + + 專案自動化。  
+ 視覺效果使用C++專案自動化。  
   
  <xref:Microsoft.VisualStudio.VCProject>  
- 使用 Visual c + + 專案自動化的類別。  
+ 視覺效果使用的類別C++專案自動化。  
   
  <xref:Microsoft.VisualStudio.VCProjectEngine>  
- 使用 Visual c + + 專案自動化。  
+ 視覺效果使用C++專案自動化。  
   
  <xref:Microsoft.VisualStudio.VsWizard>  
  使用 Visual Studio 精靈。  
@@ -314,4 +309,3 @@ ms.locfileid: "51727155"
 ## <a name="related-sections"></a>相關章節  
  [Visual Studio SDK](../extensibility/visual-studio-sdk.md)  
  包含文件、 範例和程式碼，以協助您開發與 Visual Studio 整合的產品。
-

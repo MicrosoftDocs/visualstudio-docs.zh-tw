@@ -6,23 +6,24 @@ helpviewer_keywords:
 - reformatting code, supporting in language services [managed package framework]
 - language services [managed package framework], reformatting code
 ms.assetid: 08bb3375-8fef-4f4e-9efa-0d7333bab0eb
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3bf93a2c8f64763c38e21ef094a9992df225f8e0
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 16130191eb6a4d8b6d7703a05aaf3271f8c739f5
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56602114"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67891127"
 ---
 # <a name="reformatting-code-in-a-legacy-language-service"></a>在舊版語言服務中將程式碼重新格式化
 
 在 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]原始程式碼可能被重新格式化的正規化使用縮排和空格。 這可以包括插入或移除空格或在每一行開頭的索引標籤、 新增線條之間的新行或取代空格與定位點或空格的索引標籤。
 
->**注意：** 插入或刪除新行字元可能會影響標記，例如中斷點和書籤，但新增或移除空格或定位點不會影響標記。
+> [!NOTE]
+> 插入或刪除新行字元可能會影響標記，例如中斷點和書籤，但新增或移除空格或定位點不會影響標記。
 
 使用者可以選取啟動重新格式化作業**格式化選取範圍**或是**格式化文件**從**進階**功能表上的**編輯**功能表。 插入程式碼片段或特定的字元時，也會觸發重新格式化作業。 例如，當您輸入右括號，在 C# 中，相符的左大括號和右大括號之間的所有項目會自動縮排到適當的層級。
 

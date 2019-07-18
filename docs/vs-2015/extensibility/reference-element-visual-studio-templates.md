@@ -1,14 +1,9 @@
 ---
 title: 參考項目 （Visual Studio 範本） |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#Reference
 helpviewer_keywords:
@@ -17,13 +12,13 @@ helpviewer_keywords:
 ms.assetid: 852772ea-c324-42e9-8c8a-6d565414a109
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: b6f0d4dc2d73d62c9a223d92f353093206e2aab1
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: c3d67fd19122e160159a6f636516dbca582fe31d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51725938"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68193840"
 ---
 # <a name="reference-element-visual-studio-templates"></a>參考項目 (Visual Studio 範本)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +26,7 @@ ms.locfileid: "51725938"
 指定項目加入專案時要加入的組件參考。  
   
  \<VSTemplate >  
- \<TemplateContent >  
+ \<TemplateContent>  
  \<參考 >  
  \<參考 >  
   
@@ -51,13 +46,13 @@ ms.locfileid: "51725938"
   
 ### <a name="child-elements"></a>子元素  
   
-|項目|描述|  
+|項目|說明|  
 |-------------|-----------------|  
 |[Assembly](../extensibility/assembly-element-visual-studio-templates.md)|必要項目。<br /><br /> 指定的範本會使用該組件的參考加入至專案的組件的相關資訊。 必須有一個`Assembly`中的項目每個`Reference`項目。|  
   
 ### <a name="parent-elements"></a>父項目  
   
-|項目|描述|  
+|項目|說明|  
 |-------------|-----------------|  
 |[參考](../extensibility/references-element-visual-studio-templates.md)|群組的範本加入至專案的組件參考。|  
   
@@ -90,4 +85,3 @@ ms.locfileid: "51725938"
 ## <a name="see-also"></a>另請參閱  
  [Visual Studio 範本結構描述參考](../extensibility/visual-studio-template-schema-reference.md)   
  [建立專案和項目範本](../ide/creating-project-and-item-templates.md)
-

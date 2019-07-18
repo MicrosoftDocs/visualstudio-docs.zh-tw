@@ -14,19 +14,19 @@ helpviewer_keywords:
 - MSBuild (Visual C++), CustomBuild task
 - CustomBuild task (MSBuild (Visual C++))
 author: mikeblome
-ms.author: Michael.Blome
+ms.author: mblome
 ms.workload:
 - multiple
-ms.openlocfilehash: 183cdefbca29db486b84cb61f90501507e298838
-ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
+ms.openlocfilehash: 04f33f3852f051e1f492cb2b6dca44fcdb260e11
+ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "58070375"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67587010"
 ---
 # <a name="custombuild-task"></a>CustomBuild 工作
 
-包裝 Visual C++ 編譯器工具 (cmd.exe)。
+包裝 Visual C++ 編譯器工具 (cmd.exe)。 此類別衍生自 [TrackedVCToolTask](../msbuild/trackedvctooltask-base-class.md)，但不會使用檔案追蹤功能來探索檔案相依性。 所有的相依性應該明確指定為 AdditionalDependencies，以確保累加建置運作正常。
 
 ## <a name="parameters"></a>參數
 

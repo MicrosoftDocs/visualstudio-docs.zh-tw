@@ -1,23 +1,20 @@
 ---
 title: 撰寫 T4 文字範本的指導方針 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: 04dd3fc4-10e8-488a-bdea-4d615f50f063
 caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: c3ed1415572dc00509abf36e7cb84311f95e4805
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: f88666d15293e6900ae99cecdc39853cda8e2f9e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49812738"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62546605"
 ---
 # <a name="guidelines-for-writing-t4-text-templates"></a>撰寫 T4 文字範本的方針
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,7 +54,7 @@ ms.locfileid: "49812738"
   將常見的資料移入 include 檔或執行階段範本  
   若要避免重複類似的文字和多個範本中的程式碼的區塊，使用`<#@ include #>`指示詞。 如需詳細資訊，請參閱 < [T4 包含指示詞](../modeling/t4-include-directive.md)。  
   
-  您可以也建置在個別的專案中，執行階段文字範本，，然後將它們呼叫從設計階段範本。 若要這樣做，請使用`<#@ assembly #>`指示詞，以存取個別的專案。 如需範例，請參閱[「 繼承在文字範本 」 Gareth Jones 部落格中](http://go.microsoft.com/fwlink/?LinkId=208373)。  
+  您可以也建置在個別的專案中，執行階段文字範本，，然後將它們呼叫從設計階段範本。 若要這樣做，請使用`<#@ assembly #>`指示詞，以存取個別的專案。
   
   請考慮移到不同的組件的大型區塊的程式碼。  
   如果您有大型的程式碼區塊和類別功能區塊，它可能有助於將有些程式碼移至您在個別的專案編譯的方法。 您可以使用`<#@ assembly #>`指示詞，以存取範本中的程式碼。 如需詳細資訊，請參閱 < [T4 組件指示詞](../modeling/t4-assembly-directive.md)。  
@@ -160,6 +157,3 @@ Team Members:
 ## <a name="see-also"></a>另請參閱  
  [使用 T4 文字範本在設計階段產生程式碼](../modeling/design-time-code-generation-by-using-t4-text-templates.md)   
  [使用 T4 文字範本在執行階段產生文字](../modeling/run-time-text-generation-with-t4-text-templates.md)
-
-
-

@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEEVisualizerService::GetPropertyProxy method
 ms.assetid: 748750f4-76e7-4580-9da2-afba07681b37
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 543d05e9d0917305f9f898cdae8e7add2c5949fb
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 117cffcaffc44b37f977aa0d2a195047449edb02
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56714331"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66350126"
 ---
 # <a name="ieevisualizerservicegetpropertyproxy"></a>IEEVisualizerService::GetPropertyProxy
 這個方法傳回的屬性物件的 proxy。
@@ -38,14 +41,12 @@ int GetPropertyProxy(
 );
 ```
 
-#### <a name="parameters"></a>參數
- `dwID`
+## <a name="parameters"></a>參數
+`dwID`\
+[in]要擷取的屬性 proxy 的識別碼。
 
- [in]要擷取的屬性 proxy 的識別碼。
-
- `proxy`
-
- [out]需要 proxy 中實作[IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)介面。
+`proxy`\
+[out]需要 proxy 中實作[IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)介面。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

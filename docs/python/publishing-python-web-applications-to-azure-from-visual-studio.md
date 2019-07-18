@@ -3,20 +3,20 @@ title: 將 Python 應用程式發佈到 Azure App Service
 description: 適用於將 Python 應用程式發佈到 Azure App Service 的選項，包括 Git 部署及 Linux 的容器，以及部署到 IIS。
 ms.date: 03/13/2019
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 1f6d202bf51a31273eb4571bc6ff8ca497ec9a68
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: c3c8d6c16f2f7e432b6b5e988bf63521f3dfc8c0
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58159188"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62784111"
 ---
 # <a name="publish-to-azure-app-service"></a>發佈至 Azure App Service
 

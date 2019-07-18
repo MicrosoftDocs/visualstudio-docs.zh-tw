@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 36824d78b2a4da68586b4ff3b39046bff936ff7f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 8d94058f1f14f1da644cff672d73cd77e0840c68
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56643765"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63006791"
 ---
 # <a name="item-element-msbuild"></a>Item 項目 (MSBuild)
 包含使用者定義的項目及其中繼資料。 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 專案中使用的每個項目，都必須指定為 `ItemGroup` 項目的子系。
@@ -107,6 +107,7 @@ ms.locfileid: "56643765"
     </CSFile>
 </ItemGroup>
 ```
+
 下列程式碼範例示範如何使用 `Update` 屬性，修改透過 Glob 隨附之 *somefile.cs* 檔案的中繼資料。 (僅適用於 Visual Studio 2017 或更新版本的 .NET Core 專案)。
 
 ```xml

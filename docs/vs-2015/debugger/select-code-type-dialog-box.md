@@ -1,14 +1,9 @@
 ---
 title: 選取程式碼類型對話方塊 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.selectengines
 dev_langs:
@@ -29,28 +24,25 @@ ms.assetid: 932269fe-94e3-43cb-8931-078f31afd177
 caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: d24f20741ee3934a5835aeac852a279ac6cb2e77
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 21e678df1fa3dc9ca237e9a8cb4e377fb27b0aaf
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51801806"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68148136"
 ---
 # <a name="select-code-type-dialog-box"></a>選取程式碼類型對話方塊
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-若要開啟此對話方塊中，開啟**připojit k procesu**對話方塊，然後再按一下**選取** 按鈕。  
+若要開啟這個對話方塊，請開啟 [附加至處理序]  對話方塊，然後按一下 [選取]  按鈕。  
   
- **自動判斷要偵錯程式碼的類型**  
+ **自動判斷要偵錯的程式碼類型**  
  將依據正在執行的程式碼類型，選取適當的偵錯工具。  
   
- **偵錯這些程式碼類型：**  
+ **對這些程式碼類型進行偵錯：**  
  從提供的清單選擇要進行偵錯的程式碼類型。  
   
 ## <a name="see-also"></a>另請參閱  
  [偵錯工具安全性](../debugger/debugger-security.md)   
  [附加到執行中的處理序](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)
-
-
-

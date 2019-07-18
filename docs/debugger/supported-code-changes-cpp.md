@@ -1,5 +1,5 @@
 ---
-title: 支援程式碼變更 （c + +） |Microsoft Docs
+title: 支援的程式碼變更 (C++) |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -20,19 +20,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c41b589ed19e547d03e0ce7336d6a2f2c5efedb7
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MTE95
+ms.openlocfilehash: 7d029d5cb3deb886faa4423d24ae8d5282f80e6a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57873527"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62901957"
 ---
 # <a name="supported-code-changes-c"></a>支援的程式碼變更 (C++)
 Visual C++ 的 [編輯後繼續] 可處理大多數的程式碼變更類型。 不過，有些變更無法在程式執行期間套用。 若要套用這些變更，您必須停止執行，並建置新版的程式碼。
 
  如需在 Visual Studio 中使用 C++ 的 [編輯後繼續] 的相關資訊，請參閱 [Edit and Continue (Visual C++)](../debugger/edit-and-continue-visual-cpp.md) 。
 
-##  <a name="BKMK_Unsupported_changes"></a> 不支援的變更
+## <a name="BKMK_Unsupported_changes"></a> 不支援的變更
  偵錯工作階段期間不能套用下列 C/C++ 變更：
 
 - 大部分全域或靜態資料的變更。
@@ -61,51 +61,51 @@ Visual C++ 的 [編輯後繼續] 可處理大多數的程式碼變更類型。 �
 
 - [編輯後繼續] 不會更新靜態程式庫。 如果您變更靜態程式庫，執行仍會使用舊版繼續進行，而且不會發出任何警告。
 
-##  <a name="BKMK_Unsupported_scenarios"></a> 不支援的情節
+## <a name="BKMK_Unsupported_scenarios"></a> 不支援的情節
  C/C++ 的 [編輯後繼續] 無法用於下列偵錯案例中：
 
--   偵錯以 [/Zo (增強最佳化偵錯)](/cpp/build/reference/zo-enhance-optimized-debugging)編譯的原生應用程式
+- 偵錯以 [/Zo (增強最佳化偵錯)](/cpp/build/reference/zo-enhance-optimized-debugging)編譯的原生應用程式
 
--   在 Visual Studio 2015 Update 1，偵錯 UWP 應用程式或元件之前的 Visual Studio 版本。 從 Visual Studio 2015 Update 1 開始，您可以使用 編輯後繼續中 UWP c + + 應用程式和 DirectX 應用程式，因為它現在支援`/ZI`編譯器參數和`/bigobj`切換。 您也可以搭配以 `/FASTLINK` 參數。
+- 在 Visual Studio 2015 Update 1，偵錯 UWP 應用程式或元件之前的 Visual Studio 版本。 從 Visual Studio 2015 Update 1 中，您可以使用 編輯後繼續在 UWP 中C++應用程式和 DirectX 應用程式，因為它現在支援`/ZI`編譯器參數和`/bigobj`切換。 您也可以搭配以 `/FASTLINK` 參數。
 
--   在 Windows 98 上偵錯。
+- 在 Windows 98 上偵錯。
 
--   混合模式 (原生/Managed) 偵錯。
+- 混合模式 (原生/Managed) 偵錯。
 
--   Javascript 偵錯。
+- Javascript 偵錯。
 
--   SQL 偵錯
+- SQL 偵錯
 
--   對傾印檔偵錯。
+- 對傾印檔偵錯。
 
--   在未選取 [ **發生未處理的例外狀況時回溯呼叫堆疊** ] 選項的情況下，於發生未處理的例外狀況後編輯程式碼。
+- 在未選取 [ **發生未處理的例外狀況時回溯呼叫堆疊** ] 選項的情況下，於發生未處理的例外狀況後編輯程式碼。
 
--   使用 [附加至]  來進行應用程式偵錯，而不要選擇 [偵錯]  功能表上的 [啟動]  來執行應用程式。
+- 使用 [附加至]  來進行應用程式偵錯，而不要選擇 [偵錯]  功能表上的 [啟動]  來執行應用程式。
 
--   偵錯最佳化程式碼
+- 偵錯最佳化程式碼
 
--   由於建置錯誤以致新版本建置失敗之後，對舊版程式碼進行偵錯。
+- 由於建置錯誤以致新版本建置失敗之後，對舊版程式碼進行偵錯。
 
-##  <a name="BKMK_Linking_limitations"></a> 連結的限制
+## <a name="BKMK_Linking_limitations"></a> 連結的限制
 
-###  <a name="BKMK_Linker_options_that_disable_Edit_and_Continue"></a> 停用 [編輯後繼續] 的連結器選項
+### <a name="BKMK_Linker_options_that_disable_Edit_and_Continue"></a> 停用 [編輯後繼續] 的連結器選項
  下列連結器選項停用 [編輯後繼續]：
 
--   設定 **/OPT:REF**、 **/OPT:ICF**，或 **/INCREMENTAL:NO** 會停用 [編輯後繼續]，並且產生下列警告：
+- 設定 **/OPT:REF**、 **/OPT:ICF**，或 **/INCREMENTAL:NO** 會停用 [編輯後繼續]，並且產生下列警告：
 
      連結：警告 LNK4075：由於 /OPT 而忽略 /EDITANDCONTINUE
 
      規格
 
--   設定 **/ORDER**、 **/RELEASE**或 **/FORCE** ，會停用 [編輯後繼續] 並且產生這則警告：
+- 設定 **/ORDER**、 **/RELEASE**或 **/FORCE** ，會停用 [編輯後繼續] 並且產生這則警告：
 
      連結：警告 LNK4075：由於 /option 而忽略 /INCREMENTAL
 
      規格
 
--   設定任何能夠防止建立程式資料庫 (.PDB) 檔的選項，即可停用 [編輯後繼續] 並且不顯示任何特定警告。
+- 設定任何能夠防止建立程式資料庫 (.PDB) 檔的選項，即可停用 [編輯後繼續] 並且不顯示任何特定警告。
 
-###  <a name="BKMK_Auto_relinking_limitations"></a> 自動重新連結的限制
+### <a name="BKMK_Auto_relinking_limitations"></a> 自動重新連結的限制
  根據預設，[編輯後繼續] 會在偵錯工作階段結束後重新連結程式，建立最新的執行檔。
 
  如果您不是在原來的組建位置上偵錯，[編輯後繼續] 無法重新連結您的程式。 會有一則訊息告訴您必須手動重建。
@@ -116,25 +116,25 @@ Visual C++ 的 [編輯後繼續] 可處理大多數的程式碼變更類型。 �
 
  **若要在編輯後繼續後停用重新連結**
 
-1.  在 [ **偵錯** ] 功能表上選擇 [ **選項和設定**]。
+1. 在 [ **偵錯** ] 功能表上選擇 [ **選項和設定**]。
 
-2.  在 [選項]  對話方塊的 [偵錯]  節點下，選取 [編輯後繼續]  節點。
+2. 在 [選項]  對話方塊的 [偵錯]  節點下，選取 [編輯後繼續]  節點。
 
-3.  清除 [ **偵錯後重新連結程式碼變更** ] 核取方塊。
+3. 清除 [ **偵錯後重新連結程式碼變更** ] 核取方塊。
 
-##  <a name="BKMK_Precompiled_Header_Limitations"></a> 先行編譯標頭的限制
+## <a name="BKMK_Precompiled_Header_Limitations"></a> 先行編譯標頭的限制
  根據預設，[編輯後繼續] 會在背景載入並處理預先編譯的標頭，以加速程式碼變更的處理。 載入預先編譯的標頭檔須配置實體記憶體，如果您是在一部 RAM 不足的電腦上進行編譯，這可能會是個問題。 您可以在偵錯時，使用 [Windows 工作管理員] 判斷可用的實體記憶體數量，來判斷這樣是否會發生問題。 如果此一數量大於預先編譯的標頭檔的大小，[編輯後繼續] 應該不會有問題。 如果數量小於您先行編譯的標頭大小，您可以防止 [編輯後繼續] 在背景中載入先行編譯的標頭。
 
  **若要停用編輯後繼續的先行編譯標頭的背景載入**
 
-1.  在 [ **偵錯** ] 功能表上選擇 [ **選項和設定**]。
+1. 在 [ **偵錯** ] 功能表上選擇 [ **選項和設定**]。
 
-2.  在 [選項]  對話方塊的 [偵錯]  節點下，選取 [編輯後繼續]  節點。
+2. 在 [選項]  對話方塊的 [偵錯]  節點下，選取 [編輯後繼續]  節點。
 
-3.  清除 [ **允許先行編譯** ] 核取方塊。
+3. 清除 [ **允許先行編譯** ] 核取方塊。
 
-##  <a name="BKMK_IDL_Attribute_Limitations"></a> IDL 屬性的限制
+## <a name="BKMK_IDL_Attribute_Limitations"></a> IDL 屬性的限制
  [編輯後繼續] 不會重新產生介面定義 (IDL) 檔， 所以您偵錯時並不會反映出 IDL 屬性的變更。 若要看到 IDL 屬性的變更結果，就必須停止偵錯並重建應用程式。 如果 IDL 屬性有所變更，[編輯後繼續] 並不會產生錯誤或警告。 如需詳細資訊，請參閱 [IDL 屬性](/cpp/windows/idl-attributes)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [Edit and Continue (Visual C++)](../debugger/edit-and-continue-visual-cpp.md)

@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugObject::SetValue method
 ms.assetid: d652e09c-cdc1-4519-8116-d7c743f5679b
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ccfea65f7f24b3d48fc5ec5d68028c72b9b4eece
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: a9c6590c45027eb3dce28e2dbac182a967e87d59
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56692643"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66318943"
 ---
 # <a name="idebugobjectsetvalue"></a>IDebugObject::SetValue
 設定物件的值從一系列連續的位元組。
@@ -38,14 +41,12 @@ int SetValue(
 );
 ```
 
-#### <a name="parameters"></a>參數
- `pValue`
+## <a name="parameters"></a>參數
+`pValue`\
+[in]代表新值的位元組陣列。
 
- [in]代表新值的位元組陣列。
-
- `nSize`
-
- [in]值，以位元組為單位的大小。
+`nSize`\
+[in]值，以位元組為單位的大小。
 
 ## <a name="return-value"></a>傳回值
  如果成功，會傳回 S_OK;否則，傳回錯誤碼。

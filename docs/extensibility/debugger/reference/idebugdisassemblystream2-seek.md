@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugDisassemblyStream2::Seek
 ms.assetid: afec3008-b1e0-4803-ad24-195dbfb6497e
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f0763a4191f011748c6c5145a250459c4b9b4cf8
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: e97da5b4b65b18c9d4c745dea2cb5f0915862731
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56691133"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66310360"
 ---
 # <a name="idebugdisassemblystream2seek"></a>IDebugDisassemblyStream2::Seek
 反組譯碼資料流指定數目的相對於指定位置的指示中移動讀取的指標。
@@ -42,22 +45,18 @@ int Seek( 
 );
 ```
 
-#### <a name="parameters"></a>參數
- `dwSeekStart`
+## <a name="parameters"></a>參數
+`dwSeekStart`\
+[in]值，以從[SEEK_START](../../../extensibility/debugger/reference/seek-start.md)列舉，指定 開始搜尋程序的相對位置。
 
- [in]值，以從[SEEK_START](../../../extensibility/debugger/reference/seek-start.md)列舉，指定 開始搜尋程序的相對位置。
+`pCodeContext`\
+[in][IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)物件，表示相對於搜尋作業的程式碼內容。 使用這個參數才`dwSeekStart`  =  `SEEK_START_CODECONTEXT`，否則會忽略此參數，而且可以是 null 的值。
 
- `pCodeContext`
+`uCodeLocationId`\
+[in]搜尋作業的相對之程式碼位置識別碼。 如果使用這個參數`dwSeekStart`  =  `SEEK_START_CODELOCID`，否則會忽略這個參數，而且可以設定為 0。 請參閱 < 備註 > 一節[GetCodeLocationId](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodelocationid.md)方法的程式碼的位置識別項的描述。
 
- [in][IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)物件，表示相對於搜尋作業的程式碼內容。 使用這個參數才`dwSeekStart`  =  `SEEK_START_CODECONTEXT`，否則會忽略此參數，而且可以是 null 的值。
-
- `uCodeLocationId`
-
- [in]搜尋作業的相對之程式碼位置識別碼。 如果使用這個參數`dwSeekStart`  =  `SEEK_START_CODELOCID`，否則會忽略這個參數，而且可以設定為 0。 請參閱 < 備註 > 一節[GetCodeLocationId](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodelocationid.md)方法的程式碼的位置識別項的描述。
-
- `iInstructions`
-
- [in]將相對於位置中指定的指令數目`dwSeekStart`。 這個值可以是負數以向後移動。
+`iInstructions`\
+[in]將相對於位置中指定的指令數目`dwSeekStart`。 這個值可以是負數以向後移動。
 
 ## <a name="return-value"></a>傳回值
  如果成功，會傳回 `S_OK`。 傳回`S_FALSE`如果搜尋位置是要提供的指示清單以外的點。 否則會傳回錯誤碼。

@@ -1,30 +1,24 @@
 ---
 title: XML 文件驗證 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: abb353bd-6c4a-4978-b03b-a8c245bbfb55
 caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 4b765efcfc01384a14bba6eb46cbaadd915e7752
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: bde8d47c7437700d43339bf614f48a571997dfd7
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49914264"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68158588"
 ---
 # <a name="xml-document-validation"></a>XML 文件驗證
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 XML 編輯器可檢查 XML 1.0 語法，並在您輸入時執行資料驗證。 該編輯器可使用文件類型定義 (DTD) 或結構描述進行驗證。 紅色波浪底線可反白顯示任何 XML 1.0 格式正確錯誤。 藍色波浪底線可依據 DTD 或結構描述驗證，顯示語意錯誤。 每個錯誤在錯誤清單中都有相關聯的項目。 您亦可讓滑鼠暫停在波浪底線上，以檢視錯誤訊息。  
   
  藉由將已編譯結構描述的 `targetNamespace` 與該項目的 xmlns 宣告相比對，可找到驗證中所使用的結構描述。 已編譯的結構描述會從下列其中一個位置載入，並以優先順序列出：  
@@ -53,6 +47,3 @@ XML 編輯器可檢查 XML 1.0 語法，並在您輸入時執行資料驗證。 
   
 ## <a name="see-also"></a>另請參閱  
  [XML 編輯器](../xml-tools/xml-editor.md)
-
-
-

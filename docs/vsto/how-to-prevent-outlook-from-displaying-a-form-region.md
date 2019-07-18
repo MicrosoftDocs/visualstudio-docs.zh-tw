@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: ad17041650324e597fb76925f521bb7fc2e9ce93
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56629179"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62967653"
 ---
 # <a name="how-to-prevent-outlook-from-displaying-a-form-region"></a>HOW TO：防止 Outlook 顯示表單區域
   可能有不想要顯示特定項目的表單區域的 Microsoft Office Outlook 中的情況。 例如，如果連絡人項目沒有商務地址，您就可以防止表單區域，使其不出現對應中會顯示企業的位置。

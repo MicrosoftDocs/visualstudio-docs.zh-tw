@@ -1,31 +1,36 @@
 ---
 title: 選取並安裝 Python 解譯器
 description: Visual Studio 中所支援 Python 解譯器的完整清單，其中包含在何處找到其安裝程式的簡要說明。
-ms.date: 03/13/2019
+ms.date: 06/05/2019
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: c8c2d96aeb24b9311998528d0360b1c3eac38e5f
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: 16c8773e87784c43b4203b6837fb7c58ba5adce5
+ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58194174"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67043489"
 ---
 # <a name="install-python-interpreters"></a>安裝 Python 解譯器
 
 根據預設，會在 Visual Studio 2017 中安裝 Python 開發工作負載，之後也會安裝 Python 3 (64 位元)。 如[安裝](installing-python-support-in-visual-studio.md)中所述，您可以選擇安裝 32 位元和 64 位元版本的 Python 2 與 Python 3，以及 Miniconda (Visual Studio 2019) 或 Anaconda 2/Anaconda 3 (Visual Studio 2017)。
 
 ::: moniker range=">=vs-2019"
-或者，可以從 [新增環境] 對話方塊安裝標準 Python 解譯器。 在 [Python 環境] 視窗或 Python 工具列中選取 [新增環境] 命令，選取 [Python 安裝] 索引標籤，指出要安裝哪一個解譯器，然後選取 [安裝]。
+或者，可以從 [新增環境]  對話方塊安裝標準 Python 解譯器。 在 [Python 環境]  視窗或 Python 工具列中選取 [新增環境]  命令，選取 [Python 安裝]  索引標籤，指出要安裝哪一個解譯器，然後選取 [安裝]  。
 ::: moniker-end
 
 您也可以手動安裝下表所列出 Visual Studio 安裝程式以外的任何解譯器。 例如，如果您在安裝 Visual Studio 前已經安裝了 Anaconda 3，就不需透過 Visual Studio 安裝程式再次安裝。 如果可用的新版本未出現在 Visual Studio 安裝程式中，您也可以手動安裝解譯器。
+
+::: moniker range=">=vs-2019"
+> [!Note]
+> Visual Studio 支援 Python 2.7 版，以及 3.5 版及更新版本。 雖然您可能可以使用 Visual Studio 來編輯以其他 Python 版本所撰寫的程式碼，那些版本並非正式支援的版本，因此 IntelliSense 和偵錯之類的功能可能會無法運作。
+::: moniker-end
 
 針對 **Visual Studio 2015 及更早版本**，您必須安裝其中一個解譯器。
 
@@ -33,7 +38,7 @@ Visual Studio (所有版本) 會根據 [PEP 514 - Python registration in the Win
 
 如果 Visual Studio 偵測不到安裝的環境，請參閱[手動識別現有的環境](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment)。
 
-Visual Studio 會在 [[Python 環境]](managing-python-environments-in-visual-studio.md#the-python-environments-window) 視窗中顯示所有已知的環境，並自動偵測現有解譯器的更新。
+Visual Studio 會在 [[Python 環境]  ](managing-python-environments-in-visual-studio.md#the-python-environments-window) 視窗中顯示所有已知的環境，並自動偵測現有解譯器的更新。
 
 | 解譯器 | 說明 |
 | --- | --- |
@@ -49,7 +54,7 @@ Visual Studio 會在 [[Python 環境]](managing-python-environments-in-visual-st
 
 如果您使用檔案系統將現有的解譯器移至新的位置，則 Visual Studio 不會自動偵測變更。
 
-- 如果您原本透過 [Python 環境] 視窗指定解譯器的位置，請使用該視窗中的 [設定] 索引標籤來編輯其環境，以便識別新的位置。 請參閱[手動識別現有的環境](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment)。
+- 如果您原本透過 [Python 環境]  視窗指定解譯器的位置，請使用該視窗中的 [設定]  索引標籤來編輯其環境，以便識別新的位置。 請參閱[手動識別現有的環境](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment)。
 
 - 如果您已使用安裝程式安裝解譯器，則請使用下列步驟在新的位置中重新安裝解譯器：
 

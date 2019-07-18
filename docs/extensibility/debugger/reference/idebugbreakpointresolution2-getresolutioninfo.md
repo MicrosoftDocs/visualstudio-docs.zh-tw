@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugBreakpointResolution2::GetResolutionInfo
 ms.assetid: 828cbdf6-b87d-4c45-be87-d87087b04a60
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d1b82921c2d08ed74ba05bb2ccf8ecfb642fa9cc
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 6e5b847590a066f10580eeaaa3d600089b70a2e0
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56701105"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66352853"
 ---
 # <a name="idebugbreakpointresolution2getresolutioninfo"></a>IDebugBreakpointResolution2::GetResolutionInfo
 取得描述此中斷點的中斷點解析資訊。
@@ -38,14 +41,12 @@ int GetResolutionInfo( 
 );
 ```
 
-#### <a name="parameters"></a>參數
- `dwFields`
+## <a name="parameters"></a>參數
+`dwFields`\
+[in]從旗標的組合[BPRESI_FIELDS](../../../extensibility/debugger/reference/bpresi-fields.md)列舉型別，判斷哪些欄位`pBPResolutionInfo`參數都必須填寫。
 
- [in]從旗標的組合[BPRESI_FIELDS](../../../extensibility/debugger/reference/bpresi-fields.md)列舉型別，判斷哪些欄位`pBPResolutionInfo`參數都必須填寫。
-
- `pBPResolutionInfo`
-
- [out][BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md)結構以填入此中斷點的相關資訊。
+`pBPResolutionInfo`\
+[out][BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md)結構以填入此中斷點的相關資訊。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則會傳回錯誤碼。

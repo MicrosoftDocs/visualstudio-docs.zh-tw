@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPort2::EnumProcesses
 ms.assetid: aafb32c5-5790-4807-a448-878a80256438
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0a57768a1e4a6176fc5485971bc6a2ad32701ec7
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 5c1b5b43007e43a5cee368622d808d20ad5b83b5
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56694058"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66343805"
 ---
 # <a name="idebugport2enumprocesses"></a>IDebugPort2::EnumProcesses
 傳回一份連接埠上執行的所有處理程序。
@@ -36,10 +39,9 @@ int EnumProcesses( 
 );
 ```
 
-#### <a name="parameters"></a>參數
- `ppEnum`
-
- [out]傳回[IEnumDebugProcesses2](../../../extensibility/debugger/reference/ienumdebugprocesses2.md)物件，其中包含一份連接埠上執行的所有處理程序。
+## <a name="parameters"></a>參數
+`ppEnum`\
+[out]傳回[IEnumDebugProcesses2](../../../extensibility/debugger/reference/ienumdebugprocesses2.md)物件，其中包含一份連接埠上執行的所有處理程序。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

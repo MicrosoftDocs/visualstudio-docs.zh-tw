@@ -3,25 +3,25 @@ title: 語言伺服器通訊協定概觀 |Microsoft Docs
 ms.date: 11/14/2017
 ms.topic: conceptual
 ms.assetid: 6a7d93c2-31ea-4bae-8b29-6988a567ddf2
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6d3fb814fa202e8a5211ab9db3cb1d71923ccac6
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 8f6f114d7165b85051092234ea33dfc7f73e1487
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56679095"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66309629"
 ---
 # <a name="language-server-protocol"></a>語言伺服器通訊協定
 
 ## <a name="what-is-the-language-server-protocol"></a>什麼是語言伺服器通訊協定？
 
-支援豐富的編輯功能像來源的程式碼自動完成選項或**移至定義**編輯器或 IDE 中的程式語言是傳統上非常困難又耗時。 通常需要撰寫的編輯器或 IDE 的程式設計語言中的網域模型 （掃描器、 剖析器、 型別檢查、 產生器等等）。 例如，支援 C/c + + 在 Eclipse IDE 的 Eclipse CDT 外掛程式是以 Java 撰寫因為 Eclipse IDE 本身以 Java 撰寫。 此方法之後，它表示在 C# 中實作 C/c + + 中的網域模型 TypeScript for Visual Studio Code，以及一個個別的網域模型，適用於 Visual Studio。
+支援豐富的編輯功能像來源的程式碼自動完成選項或**移至定義**編輯器或 IDE 中的程式語言是傳統上非常困難又耗時。 通常需要撰寫的編輯器或 IDE 的程式設計語言中的網域模型 （掃描器、 剖析器、 型別檢查、 產生器等等）。 比方說，Eclipse CDT 外掛程式，可提供適用於 C 的支援 /C++在 Eclipse IDE 中以 Java 撰寫因為 Eclipse IDE 本身以 Java 撰寫。 此方法之後，它會表示實作的 C /C++ TypeScript for Visual Studio Code 中的網域模型和不同的網域模型中C#適用於 Visual Studio。
 
-建立語言特定的網域模型也是一種開發工具，可以重複使用現有的特定語言程式庫的更加容易。 不過，這些程式庫通常會實作在程式語言本身 （比方說，好 C/c + + 網域模型以 C/c + + 實作）。 C/c + + 程式庫整合以 TypeScript 撰寫編輯器技術上是可行的但不困難。
+建立語言特定的網域模型也是一種開發工具，可以重複使用現有的特定語言程式庫的更加容易。 不過，這些程式庫通常會實作本身的程式設計語言 (例如，很好的 C /C++在 C 中實作領域模型 /C++)。 整合 C /C++以 TypeScript 撰寫在編輯器的程式庫就技術上而言是可行的但不困難。
 
 ### <a name="language-servers"></a>語言伺服器
 
@@ -49,17 +49,17 @@ LSP 已發展一段時間，目前已在 3.0 版。 它啟動時的語言伺服�
 
 ![lsp 流程圖](media/lsp-flow-diagram.png)
 
-* **使用者在工具中開啟檔案 （稱為文件）**:此工具會告知語言伺服器已開啟的文件 (' textDocument/didOpen ')。 從現在起，文件內容的真相不再位於檔案系統，但保留在記憶體中的工具。
+* **使用者在工具中開啟檔案 （稱為文件）** :此工具會告知語言伺服器已開啟的文件 (' textDocument/didOpen ')。 從現在起，文件內容的真相不再位於檔案系統，但保留在記憶體中的工具。
 
 * **使用者可編輯**:此工具會通知伺服器與變更相關的文件 (' textDocument/didChange ') 和程式的語意資訊會由語言伺服器更新。 發生這種情況，語言伺服器會分析這項資訊，並通知使用偵測到的錯誤和警告 (' textDocument/publishDiagnostics ') 的工具。
 
 * **如果使用者在執行 移至定義 」 編輯器中的符號**:此工具會傳送兩個參數的 'textDocument/定義' 要求：（1） 的文件 URI，其中 移至定義要求已起始到伺服器 （2） 的文字位置。 伺服器會回應文件 URI 和內文件的符號定義的位置。
 
-* **在使用者關閉文件 （檔案）**:從工具，通知文件是現在不再記憶體，且目前的內容是現在最新的檔案系統上的語言伺服器會傳送 'textDocument/didClose' 通知。
+* **在使用者關閉文件 （檔案）** :從工具，通知文件是現在不再記憶體，且目前的內容是現在最新的檔案系統上的語言伺服器會傳送 'textDocument/didClose' 通知。
 
 此範例說明通訊協定與層級的編輯器功能，例如 [移至定義]，[尋找所有參考] 的語言伺服器通訊的方式。 通訊協定所使用的資料類型是編輯器或 IDE '資料類型' 目前開啟的文字文件等資料指標的位置。 資料類型不是層級的程式設計語言領域模型通常提供抽象語法樹狀結構和編譯器符號 （例如，解析型別，命名空間，...）。這可大幅簡化的通訊協定。
 
-現在讓我們看看 'textDocument/定義' 要求在更多詳細資料。 以下是用戶端工具和 c + + 文件中的 移至定義 」 要求的語言伺服器之間的裝載。
+現在讓我們看看 'textDocument/定義' 要求在更多詳細資料。 以下是用戶端工具和中的 移至定義 」 要求的語言伺服器之間的裝載C++文件。
 
 這是要求：
 

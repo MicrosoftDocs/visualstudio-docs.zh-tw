@@ -1,14 +1,9 @@
 ---
-title: 如何： 產生程式碼度量資料 |Microsoft Docs
-ms.custom: ''
+title: 作法：產生程式碼度量資料 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 helpviewer_keywords:
 - code metrics results, generate
 - code metrics results
@@ -17,15 +12,15 @@ ms.assetid: 7bd2c906-ee9c-484a-9550-4cddecc8f042
 caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 0e2b09b81f6b5197c8edd0a501395199f4b57ec9
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: aeba6a777dd060f310f9cbb8801b2405cd76f6b2
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51759072"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68201330"
 ---
-# <a name="how-to-generate-code-metrics-data"></a>如何：產生程式碼度量資料
+# <a name="how-to-generate-code-metrics-data"></a>作法：產生程式碼度量資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 您可以決定產生整個方案或選取的專案程式碼度量結果。  
@@ -36,15 +31,15 @@ ms.locfileid: "51759072"
   
 ### <a name="to-generate-code-metrics-results-for-an-entire-solution"></a>若要產生整個方案的程式碼度量結果  
   
--   按一下 [**分析] 功能表**，然後按一下**方案的 CalculateCode 度量**。  
+- 按一下 [**分析] 功能表**，然後按一下**方案的 CalculateCode 度量**。  
   
      \-或-  
   
--   在 **方案總管**，以滑鼠右鍵按一下方案，然後按一下**CalculateCode 計量**。  
+- 在 **方案總管**，以滑鼠右鍵按一下方案，然後按一下**CalculateCode 計量**。  
   
      \-或-  
   
--   在**程式碼度量結果** 視窗中，按一下**方案的 CalculateCode 度量** 按鈕。  
+- 在**程式碼度量結果** 視窗中，按一下**方案的 CalculateCode 度量** 按鈕。  
   
      就會產生結果和**程式碼度量結果** 視窗隨即顯示。  
   
@@ -62,10 +57,7 @@ ms.locfileid: "51759072"
   
 ### <a name="to-view-the-results-details"></a>若要檢視結果詳細資料  
   
--   展開樹狀目錄中的**階層**資料行。  
+- 展開樹狀目錄中的**階層**資料行。  
   
 ## <a name="see-also"></a>另請參閱  
  [測量 Managed 程式碼的複雜度和維護性](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)
-
-
-

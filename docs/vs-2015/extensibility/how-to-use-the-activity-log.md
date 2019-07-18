@@ -1,39 +1,34 @@
 ---
-title: 如何： 使用活動記錄檔 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：使用活動記錄檔 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - VSPackages, debugging
 - VSPackages, troubleshooting
 ms.assetid: bb3d3322-0e5e-4dd5-b93a-24d5fbcd2ffd
 caps.latest.revision: 30
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 5c6b9c312fec6d11369b198e215d27cfc004c1d8
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: d450e02d23159f186fd85bf1b687a2fb2c18e82a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51798302"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432567"
 ---
-# <a name="how-to-use-the-activity-log"></a>如何： 使用活動記錄
+# <a name="how-to-use-the-activity-log"></a>HOW TO：使用活動記錄
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Vspackage 可以將訊息寫入活動記錄檔。 這項功能是對於在零售環境中偵錯 Vspackage 特別有用。  
   
 > [!TIP]
->  永遠開啟活動記錄檔。 Visual Studio 會保留上次一百個項目，以及具有一般的設定資訊的前十個項目一個循環緩衝區。  
+> 永遠開啟活動記錄檔。 Visual Studio 會保留上次一百個項目，以及具有一般的設定資訊的前十個項目一個循環緩衝區。  
   
 ### <a name="to-write-an-entry-to-the-activity-log"></a>若要將項目寫入活動記錄檔  
   
-1.  插入這個程式碼的<xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A>方法或任何其他方法，就只是 VSPackage 建構函式：  
+1. 插入這個程式碼的<xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A>方法或任何其他方法，就只是 VSPackage 建構函式：  
   
     ```csharp  
     IVsActivityLog log = GetService(typeof(SVsActivityLog)) as IVsActivityLog;  
@@ -47,13 +42,13 @@ Vspackage 可以將訊息寫入活動記錄檔。 這項功能是對於在零售
   
      這個程式碼取得<xref:Microsoft.VisualStudio.Shell.Interop.SVsActivityLog>服務，並將它轉換成<xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog>介面。 <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog.LogEntry%2A> 寫入至活動記錄使用目前的文化特性內容的參考項目。  
   
-2.  當載入 VSPackage 時 （通常當叫用命令，或在開啟的視窗） 時，活動記錄檔寫入文字。  
+2. 當載入 VSPackage 時 （通常當叫用命令，或在開啟的視窗） 時，活動記錄檔寫入文字。  
   
 ### <a name="to-examine-the-activity-log"></a>若要查看活動記錄檔  
   
-1.  活動記錄檔的子資料夾中尋找 Visual Studio 資料： *%appdata%* \Microsoft\VisualStudio\14.0\ActivityLog.XML...  
+1. 活動記錄檔的子資料夾中尋找 Visual Studio 資料： *%appdata%* \Microsoft\VisualStudio\14.0\ActivityLog.XML...  
   
-2.  使用任何文字編輯器中開啟活動記錄檔。 以下是典型的項目：  
+2. 使用任何文字編輯器中開啟活動記錄檔。 以下是典型的項目：  
   
     ```  
     Called for: Company.MyApp.MyAppPackage ...  
@@ -69,4 +64,3 @@ Vspackage 可以將訊息寫入活動記錄檔。 這項功能是對於在零售
  <xref:Microsoft.VisualStudio.Shell.Interop.__ACTIVITYLOG_ENTRYTYPE>   
  [針對 Vspackage 進行疑難排解](../extensibility/troubleshooting-vspackages.md)   
  [VSPackage](../extensibility/internals/vspackages.md)
-

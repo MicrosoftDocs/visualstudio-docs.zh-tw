@@ -1,14 +1,9 @@
 ---
-title: IDiaSession |Microsoft Docs
-ms.custom: ''
+title: IDiaSession | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 69dab9bf-2c68-4f70-9678-3b50fba3e6fa
 caps.latest.revision: 22
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: c2baa4b026fd9856625ce25be283c2c969f79a99
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 002e7198210e123fc2461f712bb8db442b9f25c8
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51799622"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68190712"
 ---
 # <a name="idiasession"></a>IDiaSession
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -42,7 +37,7 @@ IDiaSession : IUnknown
 |方法|描述|  
 |------------|-----------------|  
 |[IDiaSession::get_loadAddress](../../debugger/debug-interface-access/idiasession-get-loadaddress.md)|擷取對應至這個符號存放區中的符號的可執行檔載入位址。 這是相同的值傳遞給`put_loadAddress`方法。|  
-|[IDiaSession::put_loadAddress](../../debugger/debug-interface-access/idiasession-put-loadaddress.md)|符號設定對應的可執行檔載入位址，此符號存放區中。 **注意︰** 務必要呼叫這個方法，當您取得`IDiaSession`物件，並開始使用物件之前。|  
+|[IDiaSession::put_loadAddress](../../debugger/debug-interface-access/idiasession-put-loadaddress.md)|符號設定對應的可執行檔載入位址，此符號存放區中。 **注意：** 請務必呼叫這個方法，當您取得`IDiaSession`物件，並開始使用物件之前。|  
 |[IDiaSession::get_globalScope](../../debugger/debug-interface-access/idiasession-get-globalscope.md)|擷取至全域範圍的參考。|  
 |[IDiaSession::getEnumTables](../../debugger/debug-interface-access/idiasession-getenumtables.md)|擷取包含在符號存放區中的所有資料表的列舉值。|  
 |[IDiaSession::getSymbolsByAddr](../../debugger/debug-interface-access/idiasession-getsymbolsbyaddr.md)|擷取靜態位置的所有具名符號的列舉值。|  
@@ -118,21 +113,18 @@ void InitializeDIA(const char *szFilename)
 ```  
   
 ## <a name="requirements"></a>需求  
- 標頭： Dia2.h  
+ 標頭：dia2.h  
   
  程式庫： diaguids.lib  
   
  DLL: msdia80.dll  
   
 ## <a name="see-also"></a>另請參閱  
- [介面 （偵錯介面存取 SDK）](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
+ [介面 (偵錯介面存取 SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
  [概觀](../../debugger/debug-interface-access/overview-debug-interface-access-sdk.md)   
- [exe](../../debugger/debug-interface-access/exe.md)   
+ [Exe](../../debugger/debug-interface-access/exe.md)   
  [IDiaAddressMap](../../debugger/debug-interface-access/idiaaddressmap.md)   
  [IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md)   
- [Idiadatasource:: Opensession](../../debugger/debug-interface-access/idiadatasource-opensession.md)   
- [Idiasymbol:: Findchildren](../../debugger/debug-interface-access/idiasymbol-findchildren.md)   
+ [IDiaDataSource::openSession](../../debugger/debug-interface-access/idiadatasource-opensession.md)   
+ [IDiaSymbol::findChildren](../../debugger/debug-interface-access/idiasymbol-findchildren.md)   
  [查詢 .Pdb 檔案](../../debugger/debug-interface-access/querying-the-dot-pdb-file.md)
-
-
-

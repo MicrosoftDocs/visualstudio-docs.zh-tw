@@ -13,10 +13,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.openlocfilehash: 485c2d56fe12136fa13d97b6bef1e2a2a542d947
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 9c6abe234a01184af8de434de07631443040afc1
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "68147011"
 ---
 Visual Studio Team System 2008 Team Foundation Server

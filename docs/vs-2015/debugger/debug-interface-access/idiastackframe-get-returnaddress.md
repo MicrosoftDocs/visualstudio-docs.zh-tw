@@ -1,14 +1,9 @@
 ---
-title: 'Idiastackframe:: Get_returnaddress |Microsoft Docs'
-ms.custom: ''
+title: IDiaStackFrame::get_returnAddress | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 0df91981-919f-48ed-9c70-4121567d645b
 caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 7ed69647d904711840ae03598a1db24d5548ef06
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: b3cd04bb730d58d90cfd85a801ba1c34201843ce
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51817847"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62573044"
 ---
 # <a name="idiastackframegetreturnaddress"></a>IDiaStackFrame::get_returnAddress
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -43,10 +38,7 @@ HRESULT get_returnAddress ( 
  [out]傳回框架的傳回位址。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`。 傳回`S_FALSE`不支援的屬性。 反之則傳回錯誤碼。  
+ 如果成功，會傳回 `S_OK`。 傳回`S_FALSE`不支援的屬性。 否則會傳回錯誤碼。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)
-
-
-

@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugCodeContexts2
 ms.assetid: 72915146-215f-4c99-a034-131b2b474e0e
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 282dd2db7048a9cd69ecf38839338ae29015f3f9
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: dae1261adca25162b5bb81cc3ae8b006ce7ef283
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56710730"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66350881"
 ---
 # <a name="ienumdebugcodecontexts2"></a>IEnumDebugCodeContexts2
 此介面列舉與偵錯工作階段中，或特定的程式或文件相關聯的程式碼內容。
@@ -48,7 +48,7 @@ IEnumDebugCodeContexts2 : IUnknown
 |[GetCount](../../../extensibility/debugger/reference/ienumdebugcodecontexts2-getcount.md)|取得列舉值中的程式碼內容的數目。|
 
 ## <a name="remarks"></a>備註
- Visual Studio 呼叫[EnumCodeContexts](../../../extensibility/debugger/reference/idebugprogram2-enumcodecontexts.md)來填入清單的程式碼內容的使用者可以選擇從時設定下一個陳述式，或顯示反組譯的原始程式檔。 比方說，多個程式碼內容可以發生的 c + + 樣式範本的多個執行個體時。
+ Visual Studio 呼叫[EnumCodeContexts](../../../extensibility/debugger/reference/idebugprogram2-enumcodecontexts.md)來填入清單的程式碼內容的使用者可以選擇從時設定下一個陳述式，或顯示反組譯的原始程式檔。 多個程式碼內容時可能發生，例如，有多個執行個體C++-樣式範本。
 
 ## <a name="requirements"></a>需求
  標頭： msdbg.h

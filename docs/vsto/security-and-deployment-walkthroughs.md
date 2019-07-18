@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 4c1325ebb49e500c3afa40ee074be1f9b859100e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56653927"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62978428"
 ---
 # <a name="security-and-deployment-walkthroughs"></a>安全性和部署的逐步解說
   下列主題示範如何設定安全性原則，讓您的解決方案，若要執行，以及如何部署 Office 方案。

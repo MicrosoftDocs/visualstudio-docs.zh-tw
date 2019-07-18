@@ -8,17 +8,20 @@ helpviewer_keywords:
 - SetPassCount method
 - IDebugPendingBreakpoint2::SetPassCount method
 ms.assetid: 08ddd328-57eb-42e0-baa9-8424dcd1bf04
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c1301c3ecde243e212bdeed3c8aca1a56f1cbc15
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 5af01702c20b4841c5d737bef2c3be7f885cc31e
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56688884"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66340558"
 ---
 # <a name="idebugpendingbreakpoint2setpasscount"></a>IDebugPendingBreakpoint2::SetPassCount
 設定或變更暫止中斷點相關聯的傳遞計數。
@@ -37,10 +40,9 @@ int SetPassCount( 
 );
 ```
 
-#### <a name="parameters"></a>參數
- `bpPassCount`
-
- [in]A [BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md)結構，其中包含傳遞計數。
+## <a name="parameters"></a>參數
+`bpPassCount`\
+[in]A [BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md)結構，其中包含傳遞計數。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。 傳回`E_BP_DELETED`如果中斷點已遭刪除。

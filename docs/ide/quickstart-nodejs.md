@@ -13,12 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 17bd74a9c5a484d7e3539e787f4ae05d078aa80b
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 000d5f3cccdfda10ef90f5c752ec49ba29681435
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57867008"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62953447"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-nodejs-app"></a>快速入門：使用 Visual Studio 建立您的第一個 Node.js 應用程式
 
@@ -29,10 +29,10 @@ ms.locfileid: "57867008"
 * 您必須安裝 Visual Studio 和 Node.js 開發工作負載。
 
     ::: moniker range=">=vs-2019"
-    如果您尚未安裝 Visual Studio 2019，請前往  [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/) 頁面免費進行安裝。
+    如果您尚未安裝 Visual Studio 2019，請前往  [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) 頁面免費進行安裝。
     ::: moniker-end
     ::: moniker range="vs-2017"
-    如果您尚未安裝 Visual Studio 2017，請前往  [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/) 頁面免費進行安裝。
+    如果您尚未安裝 Visual Studio 2017，請前往  [Visual Studio 下載](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) 頁面免費進行安裝。
     ::: moniker-end
 
     如果您需要安裝工作負載，但已安裝 Visual Studio，請移至 [工具] > [取得工具與功能...]，以開啟 Visual Studio 安裝程式。 選擇 [Node.js 開發] 工作負載，然後選擇 [修改]。
@@ -53,15 +53,13 @@ ms.locfileid: "57867008"
 
 1. 開啟 Visual Studio。
 
-1. 從頂端功能表列中，選擇 [檔案] > [新增] > [專案]。
-
 1. 建立新的專案。
 
     ::: moniker range=">=vs-2019"
-    在 [建立新專案] 對話方塊中，於搜尋方塊中輸入 **javascript** 以篩選結果，然後依序選擇 [空白的 Node.js Web 應用程式] 和 [下一步]。 接著，選擇 [建立]。
+    按 **Esc** 來關閉開始視窗。 鍵入 **Ctrl + Q** 開啟 [搜尋] 方塊，鍵入 **Node.js**，然後選擇 [Create new Blank Node.js Web application project] \(建立新的空白 Node.js Web 應用程式專案\) (JavaScript)。 在出現的對話方塊中，選擇 [建立]。
     ::: moniker-end
     ::: moniker range="vs-2017"
-    在 [新增專案] 對話方塊的左窗格中，展開 [JavaScript]，然後選擇 [Node.js]。 在中間窗格中，選擇 [Blank Node.js Web application] (空白的 Node.js Web 應用程式)，然後選擇 [確定]。
+    從頂端功能表列中，選擇 [檔案] > [新增] > [專案]。 在 [新增專案] 對話方塊的左窗格中，展開 **JavaScript**，然後選擇 **Node.js**。 在中間窗格中，選擇 [Blank Node.js Web application] (空白的 Node.js Web 應用程式)，然後選擇 [確定]。
     ::: moniker-end
     如果您看不到 [空白的 Node.js Web 應用程式] 專案範本，則必須新增 **Node.js 開發**工作負載。 如需詳細指示，請參閱[必要條件](#prerequisites)。
 

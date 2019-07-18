@@ -1,27 +1,22 @@
 ---
 title: 什麼&#39;的新功能的原始檔控制外掛程式 API 版本 1.2 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, what's new in API v1.2
 - what's new [Visual Studio SDK], source control plug-ins
 ms.assetid: 7c5fa471-456e-4f95-8309-5750ec4e5e85
 caps.latest.revision: 15
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: ffaaef58ce9cf35126098558292ddde1deff5808
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 7c3b06c9517110cf7d5d6b8a1310e88d419da126
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51749206"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68200937"
 ---
 # <a name="what39s-new-in-the-source-control-plug-in-api-version-12"></a>什麼&#39;的新功能的原始檔控制外掛程式 API 版本 1.2
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -46,4 +41,3 @@ ms.locfileid: "51749206"
   
 ## <a name="see-also"></a>另請參閱  
  [快速入門](../../extensibility/internals/getting-started-with-source-control-plug-ins.md)
-

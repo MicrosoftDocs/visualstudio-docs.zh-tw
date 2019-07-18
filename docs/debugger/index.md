@@ -7,6 +7,12 @@ ms.topic: landing-page
 ms.author: mikejo
 author: mikejo5000
 manager: jillfra
+ms.openlocfilehash: f3bf5cc1dd11e0062ca849f16fb806fa756e2203
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62846350"
 ---
 # <a name="debugging-in-visual-studio"></a>Visual Studio 偵錯
 

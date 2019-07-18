@@ -6,17 +6,17 @@ helpviewer_keywords:
 - project subtypes, extended methods
 - project subtypes, extended properties
 ms.assetid: 2b9833bf-8551-4ae1-93db-197ba645c65e
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9b944d493e8c7668d331a2db12302cea709df239
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: b6435e5e767d76594efb22af107ce0f5fac88fd2
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56628490"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66311037"
 ---
 # <a name="properties-and-methods-extended-by-project-subtypes"></a>專案子類型所擴充的屬性和方法
 專案子類型都有大量的電力來影響專案的行為，因為它會建構為彙總工具的基底的專案。 本節摘要說明的一些功能可增強或修改專案子類型。

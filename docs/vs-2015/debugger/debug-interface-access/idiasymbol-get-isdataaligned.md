@@ -1,14 +1,9 @@
 ---
 title: 'Idiasymbol:: Get_isdataaligned |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: ddd11a41-6c00-4829-acf4-aa1ace8c21a7
 caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: ffe9f5501887d1d0f0ca416a06527a56346a2016
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 86c701765f9c8a67f7b95368d02febc1d254c696
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51766484"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "64810724"
 ---
 # <a name="idiasymbolgetisdataaligned"></a>IDiaSymbol::get_isDataAligned
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -46,20 +41,17 @@ HRESULT get_isDataAligned(
  如果成功，則傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。  
   
 > [!NOTE]
->  傳回值為`S_FALSE`表示屬性不是適用於符號。  
+> 傳回值為`S_FALSE`表示屬性不是適用於符號。  
   
 ## <a name="remarks"></a>備註  
- 使用非預設資料對齊編譯可執行檔時，會通常會設定這個屬性。 例如，Microsoft c + + 編譯器可以變更使用命令列選項時，資料對齊 /Zp<em>#</em>，其中*#* 是位元組值。  
+ 使用非預設資料對齊編譯可執行檔時，會通常會設定這個屬性。 例如，Microsoft c + + 編譯器可以變更使用命令列選項時，資料對齊 /Zp<em>#</em>，其中 *#* 是位元組值。  
   
 ## <a name="requirements"></a>需求  
   
 |需求|描述|  
 |-----------------|-----------------|  
 |標頭：|dia2.h|  
-|版本:|DIA SDK 8.0 版|  
+|版本:|DIA SDK v8.0|  
   
 ## <a name="see-also"></a>另請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
-
-
-

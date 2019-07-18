@@ -1,14 +1,9 @@
 ---
-title: CA2147： 透明方法不可以使用安全性判斷提示 |Microsoft Docs
-ms.custom: ''
+title: CA2147:透明方法不可以使用安全性判斷提示 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - SecurityTransparentCodeShouldNotAssert
 - CA2147
@@ -21,14 +16,14 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 6542a2063d076cb57750015039f413b2faf4bca4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3e8ac2e907e3c13a019e5f534faf86ae425ae30a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49921628"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68142633"
 ---
-# <a name="ca2147-transparent-methods-may-not-use-security-asserts"></a>CA2147：透明的方法不可以使用安全性判斷提示
+# <a name="ca2147-transparent-methods-may-not-use-security-asserts"></a>CA2147:CA2147：透明方法不可以使用安全性判斷提示
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -70,6 +65,3 @@ ms.locfileid: "49921628"
 
 ## <a name="see-also"></a>另請參閱
  [安全性警告](../code-quality/security-warnings.md)
-
-
-

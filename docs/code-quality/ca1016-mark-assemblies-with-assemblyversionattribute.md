@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: a00c8e30e981794e69d4572e0a924438514780c7
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 85e09a670ac85d37bc2c0297201db93462f64ca1
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55917775"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66714466"
 ---
 # <a name="ca1016-mark-assemblies-with-assemblyversionattribute"></a>CA1016:組件必須標記 AssemblyVersionAttribute
 
@@ -50,20 +50,23 @@ ms.locfileid: "55917775"
 
 - 強式名稱組件的公開金鑰。
 
-.NET Framework 使用的版本號碼，來唯一識別組件，並繫結至強式名稱組件中的類型。 版本號碼會與版本和發行者 (Publisher) 原則一起使用。 應用程式預設只會與建置它們的組件版本一起執行。
+.NET 使用的版本號碼，來唯一識別組件，並繫結至強式名稱組件中的類型。 版本號碼會與版本和發行者 (Publisher) 原則一起使用。 應用程式預設只會與建置它們的組件版本一起執行。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
- 若要修正此規則的違規情形，加入版本號碼組件使用<xref:System.Reflection.AssemblyVersionAttribute?displayProperty=fullName>屬性。 請參閱下列範例。
+
+若要修正此規則的違規情形，加入版本號碼組件使用<xref:System.Reflection.AssemblyVersionAttribute?displayProperty=fullName>屬性。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
- 請勿隱藏此規則的警告可由協力廠商或在生產環境中的組件。
+
+請勿隱藏此規則的警告可由第三方或生產環境中的組件。
 
 ## <a name="example"></a>範例
- 下列範例示範具有組件<xref:System.Reflection.AssemblyVersionAttribute>套用的屬性。
 
- [!code-csharp[FxCop.Design.AssembliesVersion#1](../code-quality/codesnippet/CSharp/ca1016-mark-assemblies-with-assemblyversionattribute_1.cs)]
- [!code-vb[FxCop.Design.AssembliesVersion#1](../code-quality/codesnippet/VisualBasic/ca1016-mark-assemblies-with-assemblyversionattribute_1.vb)]
- [!code-cpp[FxCop.Design.AssembliesVersion#1](../code-quality/codesnippet/CPP/ca1016-mark-assemblies-with-assemblyversionattribute_1.cpp)]
+下列範例示範具有組件<xref:System.Reflection.AssemblyVersionAttribute>套用的屬性。
+
+[!code-csharp[FxCop.Design.AssembliesVersion#1](../code-quality/codesnippet/CSharp/ca1016-mark-assemblies-with-assemblyversionattribute_1.cs)]
+[!code-vb[FxCop.Design.AssembliesVersion#1](../code-quality/codesnippet/VisualBasic/ca1016-mark-assemblies-with-assemblyversionattribute_1.vb)]
+[!code-cpp[FxCop.Design.AssembliesVersion#1](../code-quality/codesnippet/CPP/ca1016-mark-assemblies-with-assemblyversionattribute_1.cpp)]
 
 ## <a name="see-also"></a>另請參閱
 

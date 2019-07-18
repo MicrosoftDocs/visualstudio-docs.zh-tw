@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugErrorBreakpoints2::GetCount
 ms.assetid: 56f7bb70-d55b-471c-8c65-09a9e7f4938e
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 37fde752695758d2b6fca54ff61f451dfc1996a6
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 36bbaa079e88332f6cbca5aa0dd6705db307a3ec
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56681682"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66336460"
 ---
 # <a name="ienumdebugerrorbreakpoints2getcount"></a>IEnumDebugErrorBreakpoints2::GetCount
 列舉中傳回的項目數。
@@ -36,10 +39,9 @@ int GetCount(
 );
 ```
 
-#### <a name="parameters"></a>參數
- `pcelt`
-
- [out]列舉中傳回的項目數。
+## <a name="parameters"></a>參數
+`pcelt`\
+[out]列舉中傳回的項目數。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

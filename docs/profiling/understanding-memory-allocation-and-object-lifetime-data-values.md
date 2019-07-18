@@ -1,5 +1,5 @@
 ---
-title: 了解記憶體配置和物件存留期資料值 | Microsoft Docs
+title: 了解記憶體配置與物件存留期資料值
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9fc9dd62c3d264d3b502845cb4d0f3e9c2a8fa78
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: b652ac052b26054c85955a144d4414d4fe43c005
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56615139"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263811"
 ---
 # <a name="understand-memory-allocation-and-object-lifetime-data-values"></a>了解記憶體配置和物件存留期資料值
 

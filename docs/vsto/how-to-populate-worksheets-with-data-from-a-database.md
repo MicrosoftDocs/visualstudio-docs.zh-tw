@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1169ea54ffbc0d0437204ed4491e2b8cc68a4a04
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 67c12843d00bf8d5af51fa7af3175077527afa58
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54865615"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62967757"
 ---
 # <a name="how-to-populate-worksheets-with-data-from-a-database"></a>HOW TO：從資料庫的資料填入工作表
 
@@ -35,17 +35,17 @@ ms.locfileid: "54865615"
 
 ### <a name="to-populate-a-worksheet-with-data-from-a-database"></a>若要填入資料庫中的資料在工作表
 
-1.  在設計工具中開啟工作表，在 Visual Studio 中，開啟 Excel 文件層級專案。
+1. 在設計工具中開啟工作表，在 Visual Studio 中，開啟 Excel 文件層級專案。
 
-2.  開啟 [資料來源]  視窗並為您的專案建立資料來源。 如需詳細資訊，請參閱 <<c0> [ 新增連線](../data-tools/add-new-connections.md)。
+2. 開啟 [資料來源]  視窗並為您的專案建立資料來源。 如需詳細資訊，請參閱 <<c0> [ 新增連線](../data-tools/add-new-connections.md)。
 
-3.  將欄位或您想從資料表拖曳**Zdroje dat**視窗加入工作表。
+3. 將欄位或您想從資料表拖曳**Zdroje dat**視窗加入工作表。
 
 工作表上建立下列控制項的其中一個：
 
--   如果您拖曳欄位，<xref:Microsoft.Office.Tools.Excel.NamedRange>工作表上建立控制項。 如需詳細資訊，請參閱 < [NamedRange 控制項](../vsto/namedrange-control.md)。
+- 如果您拖曳欄位，<xref:Microsoft.Office.Tools.Excel.NamedRange>工作表上建立控制項。 如需詳細資訊，請參閱 < [NamedRange 控制項](../vsto/namedrange-control.md)。
 
--   如果您拖曳資料表，<xref:Microsoft.Office.Tools.Excel.ListObject>工作表上建立控制項。 如需詳細資訊，請參閱 < [ListObject 控制項](../vsto/listobject-control.md)。
+- 如果您拖曳資料表，<xref:Microsoft.Office.Tools.Excel.ListObject>工作表上建立控制項。 如需詳細資訊，請參閱 < [ListObject 控制項](../vsto/listobject-control.md)。
 
 您可以加入不同的控制項選取資料表或欄位**Zdroje dat**視窗，然後從下拉式清單中選擇不同的控制項。
 
@@ -53,19 +53,19 @@ ms.locfileid: "54865615"
 
 除了控制項之外，下列與資料相關的物件會自動加入專案：
 
--   封裝連接到資料庫之資料表的具類型資料集。 如需詳細資訊，請參閱 < [Visual Studio 中的資料集工具](../data-tools/dataset-tools-in-visual-studio.md)。
+- 封裝連接到資料庫之資料表的具類型資料集。 如需詳細資訊，請參閱 < [Visual Studio 中的資料集工具](../data-tools/dataset-tools-in-visual-studio.md)。
 
--   將控制項連接至具類型資料集的 <xref:System.Windows.Forms.BindingSource>。 如需詳細資訊，請參閱 < [BindingSource 元件概觀](/dotnet/framework/winforms/controls/bindingsource-component-overview)。
+- 將控制項連接至具類型資料集的 <xref:System.Windows.Forms.BindingSource>。 如需詳細資訊，請參閱 < [BindingSource 元件概觀](/dotnet/framework/winforms/controls/bindingsource-component-overview)。
 
--   連接至資料庫的具類型資料集的 TableAdapter。 如需詳細資訊，請參閱 < [TableAdapter 概觀](../data-tools/fill-datasets-by-using-tableadapters.md#tableadapter-overview)。
+- 連接至資料庫的具類型資料集的 TableAdapter。 如需詳細資訊，請參閱 < [TableAdapter 概觀](../data-tools/fill-datasets-by-using-tableadapters.md#tableadapter-overview)。
 
--   TableAdapterManager，這用來協調資料集內若要啟用階層式更新的資料表配置器。 如需詳細資訊，請參閱 <<c0> [ 階層式更新](../data-tools/hierarchical-update.md)並[TableAdapterManager 參考](../data-tools/fill-datasets-by-using-tableadapters.md#tableadaptermanager-reference)。
+- TableAdapterManager，這用來協調資料集內若要啟用階層式更新的資料表配置器。 如需詳細資訊，請參閱 <<c0> [ 階層式更新](../data-tools/hierarchical-update.md)並[TableAdapterManager 參考](../data-tools/fill-datasets-by-using-tableadapters.md#tableadaptermanager-reference)。
 
 當您執行專案時，控制項會顯示資料來源中的第一筆記錄。 您可以使用 <xref:System.Windows.Forms.BindingSource>，讓使用者捲動資料列。
 
 ### <a name="to-scroll-through-the-records"></a>捲動資料列
 
--   使用 <xref:System.Windows.Forms.BindingSource> 方法，如 <xref:System.Windows.Forms.BindingSource.MoveNext%2A> 和 <xref:System.Windows.Forms.BindingSource.MovePrevious%2A>。
+- 使用 <xref:System.Windows.Forms.BindingSource> 方法，如 <xref:System.Windows.Forms.BindingSource.MoveNext%2A> 和 <xref:System.Windows.Forms.BindingSource.MovePrevious%2A>。
 
 如需有關如何將更新傳送至具類型資料集和資料庫的資訊，請參閱[How to:從主控制項的資料更新資料來源](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)。
 

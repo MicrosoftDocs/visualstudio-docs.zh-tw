@@ -11,17 +11,16 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b12406af6894c8478c6f142c98edf064f2c58280
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 0cef64ae0b1aa5c6fee6422675e10b65c4713d2c
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54770862"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65703246"
 ---
 # <a name="msbuild-concepts"></a>MSBuild 概念
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 提供基本的 XML 結構描述，讓您可用來控制組建平台建置軟體的方式。 若要指定組建中的元件以及建置它們的方式，請使用下列這四個 MSBuild 組件︰屬性、項目、工作和目標。  
   
 ## <a name="related-topics"></a>相關主題  
@@ -34,7 +33,7 @@ ms.locfileid: "54770862"
 |[工作](../msbuild/msbuild-tasks.md)|顯示如何建立 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 可用來執行原子建置作業的可執行程式碼單元。|  
 |[比較屬性和項目](../msbuild/comparing-properties-and-items.md)|比較 MSBuild 屬性和項目。 這兩者都可用來將資訊傳遞至工作、評估條件，以及儲存可在整個專案檔中參考的值。|  
 |[MSBuild 特殊字元](../msbuild/msbuild-special-characters.md)|說明如何逸出某些 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 特別保留來在特定內容中使用的字元。|  
-|[逐步解說：從頭開始建立 MSBuild 專案檔案](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md)|顯示如何僅使用文字編輯器來累加建立基本專案檔。|  
+|[逐步解說：從頭開始建立 MSBuild 專案檔](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md)|顯示如何僅使用文字編輯器來累加建立基本專案檔。|  
 |[逐步解說：使用 MSBuild](../msbuild/walkthrough-using-msbuild.md)|介紹 MSBuild 的建置區塊，以及示範如何在不關閉 Visual Studio 整合式開發環境 (IDE) 的情況下，撰寫和管理 MSBuild 專案及進行偵錯。|  
 |[MSBuild 參考](../msbuild/msbuild-reference.md)|包含參考資訊的文件連結。|  
-|[MSBuild](http://msdn.microsoft.com/e39f13f7-1e1d-4435-95ca-0c222bca071c)|提供了專案檔的 XML 結構描述概觀，並示範如何控制建置軟體的程序。|
+|[MSBuild](https://msdn.microsoft.com/e39f13f7-1e1d-4435-95ca-0c222bca071c)|提供了專案檔的 XML 結構描述概觀，並示範如何控制建置軟體的程序。|

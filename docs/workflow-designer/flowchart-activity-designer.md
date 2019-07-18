@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ad02dea2dcab30d65aaefecc5a5e54804c9baaff
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55941123"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62949652"
 ---
 # <a name="flowchart-activity-designer"></a>Flowchart 活動設計工具
 
@@ -39,7 +39,7 @@ ms.locfileid: "55941123"
 
 下表顯示 <xref:System.Activities.Statements.Flowchart> 屬性，並且描述屬性在設計工具中的使用方式。 這些屬性可以在屬性方格中或在設計工具介面上編輯。
 
-|屬性名稱|必要項|使用方式|
+|屬性名稱|必要|使用量|
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|指定活動設計工具在標頭中的顯示名稱。 預設值為 Flowchart。 值可以在中編輯**屬性**視窗或直接在活動設計工具標頭。<br /><br /> 雖然 <xref:System.Activities.Activity.DisplayName%2A> 並非絕對必要，但建議您盡量使用。|
 |<xref:System.Activities.Statements.Flowchart.Variables%2A>|False|設定至這個 <xref:System.Activities.Statements.Flowchart> 的範圍內，使其子活動都有共同狀態之變數的集合。|

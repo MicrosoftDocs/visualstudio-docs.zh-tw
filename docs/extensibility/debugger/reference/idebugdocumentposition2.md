@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugDocumentPosition2 interface
 ms.assetid: 0e838ced-12bb-4efc-b811-2b7c034b77b0
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4339be57479b54d9d3f040670e9ce161f7cd4715
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 36c2fbce0154a5ebefd04ea3614d16db16799510
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56683177"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66333427"
 ---
 # <a name="idebugdocumentposition2"></a>IDebugDocumentPosition2
 此介面代表原始程式檔中的抽象位置。

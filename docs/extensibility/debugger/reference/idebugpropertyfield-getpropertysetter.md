@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPropertyField::GetPropertySetter method
 ms.assetid: 744d76fd-2bcc-4917-a040-ce4cc714ef61
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a661fb9bea0f04b8fc0114473ccedc46e1e478ce
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 29772ad76df6538ec5093d2fb34427a7fa89c5ff
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56717061"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66345685"
 ---
 # <a name="idebugpropertyfieldgetpropertysetter"></a>IDebugPropertyField::GetPropertySetter
 取得設定屬性的方法。
@@ -36,10 +39,9 @@ int GetPropertySetter(
 );
 ```
 
-#### <a name="parameters"></a>參數
- `ppField`
-
- [out]傳回[IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)物件，表示設定屬性的方法。
+## <a name="parameters"></a>參數
+`ppField`\
+[out]傳回[IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)物件，表示設定屬性的方法。
 
 ## <a name="return-value"></a>傳回值
  如果成功，會傳回 S_OK;否則會傳回錯誤碼。

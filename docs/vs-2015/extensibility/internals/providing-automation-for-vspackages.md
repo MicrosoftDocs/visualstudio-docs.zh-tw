@@ -1,27 +1,22 @@
 ---
 title: 為 Vspackage 提供自動化 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - VSPackages, automation [Visual Studio SDK]
 - automation [Visual Studio SDK], VSPackages
 ms.assetid: 104c4c55-78b8-42f4-b6b0-9a334101aaea
 caps.latest.revision: 16
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: fc6eb16d1873c7986d9fac556440f24eb007396f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: c6eb76eba76567f2966323d4058c9e752cb6fb69
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51774168"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68200974"
 ---
 # <a name="providing-automation-for-vspackages"></a>為 VSPackage 提供自動化
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -40,7 +35,7 @@ ms.locfileid: "51774168"
  環境的事件架構提供讓您附加您自己的 VSPackage 特定物件的另一個位置。 例如，藉由建立您自己的獨特事件的物件，您可以擴充專案的環境的事件模型。 您可能想要提供您自己的新項目新增至您自己的專案類型時的事件。 如需詳細資訊，請參閱 <<c0> [ 公開事件](../../extensibility/internals/exposing-events-in-the-visual-studio-sdk.md)。  
   
 #### <a name="window-objects"></a>視窗物件  
- Windows 可以回 VSPackage 特定自動化將物件傳遞回呼叫時的環境。 實作物件衍生自<xref:Microsoft.VisualStudio.Shell.Interop.IVsExtensibleObject>，<xref:EnvDTE.IExtensibleObject>或`IDispatch`，傳遞回擴充中設置視窗物件的屬性。 例如，您可以使用這種方法可讓設置在視窗框架的控制項。 此物件及它可能會延長的任何其他物件的語意都是您要設計的。 如需詳細資訊，請參閱 <<c0> [ 如何： 針對 Windows 提供自動化](../../extensibility/internals/how-to-provide-automation-for-windows.md)。  
+ Windows 可以回 VSPackage 特定自動化將物件傳遞回呼叫時的環境。 實作物件衍生自<xref:Microsoft.VisualStudio.Shell.Interop.IVsExtensibleObject>，<xref:EnvDTE.IExtensibleObject>或`IDispatch`，傳遞回擴充中設置視窗物件的屬性。 例如，您可以使用這種方法可讓設置在視窗框架的控制項。 此物件及它可能會延長的任何其他物件的語意都是您要設計的。 如需詳細資訊，請參閱[如何：提供的 Windows 自動化](../../extensibility/internals/how-to-provide-automation-for-windows.md)。  
   
 #### <a name="options-pages-on-the-tools-menu"></a>在 [工具] 功能表上的 [選項] 頁面  
  您可以建立頁面，來擴充 工具、 選項 automation 模型，透過實作分頁，並將資訊新增至登錄，以建立您自己的選項。 然後可以透過環境物件模型，例如任何其他選項頁面呼叫頁面。 如果您要新增至 Vspackage 透過環境功能的設計需要選項 頁面，您應該新增的自動化支援。 如需詳細資訊，請參閱 <<c0> [ 選項頁的自動化支援](../../extensibility/internals/automation-support-for-options-pages.md)。  
@@ -49,4 +44,3 @@ ms.locfileid: "51774168"
  若要擴充的專案自動化，您也實作標準 automation 物件 (衍生自`IDispatch`)，就能除外的其他專案物件，並實作標準方法和屬性。 標準物件的範例包括專案的物件，例如插入解決方案階層`Projects`， `Project`， `ProjectItem`，和`ProjectItems`。 每個新的專案型別應該實作這些物件 （而且可能是語意根據您專案的其他項目）。  
   
  在某方面來說，這些物件會提供 VSPackage 特定專案物件的相對優點。 標準自動化物件可以讓您使用一般化的方式，例如支援相同物件的任何其他專案的專案。 因此，增益集撰寫針對一般`Project`和`ProjectItem`物件可以針對任何類型的專案運作。 如需詳細資訊，請參閱 <<c0> [ 專案模型化](../../extensibility/internals/project-modeling.md)。
-

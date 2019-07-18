@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: bcd48f421dcae74e82b0d9249a958f2a834f0a45
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56603283"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62831677"
 ---
 # <a name="command-line-profiling-of-stand-alone-applications"></a>獨立應用程式的命令列分析
 本節說明從命令列使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具收集獨立 (用戶端) 應用程式之效能資料的程序和選項。

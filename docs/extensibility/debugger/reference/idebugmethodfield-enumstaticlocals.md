@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugMethodField::EnumStaticLocals method
 ms.assetid: e0c522c4-f759-4c32-ae87-7abcb573e77d
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4fb50271801d895ca73dbbc915ff95320183d032
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 006f1975c18aa7464531654d9b71fd857953afc9
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56680263"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66324249"
 ---
 # <a name="idebugmethodfieldenumstaticlocals"></a>IDebugMethodField::EnumStaticLocals
 建立方法的靜態區域變數的列舉值。
@@ -36,10 +39,9 @@ int EnumStaticLocals(
 );
 ```
 
-#### <a name="parameters"></a>參數
- `ppLocals`
-
- [out]傳回[IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)物件，代表靜態區域變數的清單。 如果沒有任何靜態區域變數，則傳回 null 值。
+## <a name="parameters"></a>參數
+`ppLocals`\
+[out]傳回[IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)物件，代表靜態區域變數的清單。 如果沒有任何靜態區域變數，則傳回 null 值。
 
 ## <a name="return-value"></a>傳回值
  如果成功，會傳回 S_OK，或如果沒有任何靜態區域變數，則傳回 S_FALSE。 否則會傳回錯誤碼。

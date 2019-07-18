@@ -1,14 +1,9 @@
 ---
-title: CA1812： 避免使用未執行個體化的內部類別 |Microsoft Docs
-ms.custom: ''
+title: CA1812:避免使用未執行個體化的內部類別 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1812
 - AvoidUninstantiatedInternalClasses
@@ -20,14 +15,14 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 5236fd2dd4635b88ce82b993ebbc15a25e767df1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f44dcb010dd9c62d130913efd590a4c1b651de50
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49899782"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68157985"
 ---
-# <a name="ca1812-avoid-uninstantiated-internal-classes"></a>CA1812：避免使用未執行個體化的內部類別
+# <a name="ca1812-avoid-uninstantiated-internal-classes"></a>CA1812:避免使用未執行個體化的內部類別
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -64,9 +59,9 @@ ms.locfileid: "49899782"
 ## <a name="how-to-fix-violations"></a>如何修正違規
  若要修正此規則的違規情形，移除類型，或加入程式碼使用它。 如果型別只包含靜態方法，請加入下列其中一種類型，以避免編譯器發出的預設公用執行個體建構函式：
 
--   私用建構函式的類型為目標[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]1.0 和 1.1 版。
+- 私用建構函式的類型為目標[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]1.0 和 1.1 版。
 
--   `static` (`Shared` Visual Basic 中) 修飾詞的類型為目標[!INCLUDE[dnprdnlong](../includes/dnprdnlong-md.md)]。
+- `static` (`Shared` Visual Basic 中) 修飾詞的類型為目標[!INCLUDE[dnprdnlong](../includes/dnprdnlong-md.md)]。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
  它可安全地隱藏此規則的警告。 我們建議您隱藏這個警告，在下列情況：
@@ -99,11 +94,8 @@ ms.locfileid: "49899782"
   在這些情況下，我們建議您隱藏這個警告。
 
 ## <a name="related-rules"></a>相關的規則
- [CA1811：避免使用未呼叫的私用程式碼](../code-quality/ca1811-avoid-uncalled-private-code.md)
+ [CA1811:避免使用未呼叫的私用程式碼](../code-quality/ca1811-avoid-uncalled-private-code.md)
 
- [CA1801：必須檢閱未使用的參數](../code-quality/ca1801-review-unused-parameters.md)
+ [CA1801： 必須檢閱未使用的參數](../code-quality/ca1801-review-unused-parameters.md)
 
- [CA1804：必須移除未使用的區域變數](../code-quality/ca1804-remove-unused-locals.md)
-
-
-
+ [CA1804： 必須移除未使用的區域變數](../code-quality/ca1804-remove-unused-locals.md)

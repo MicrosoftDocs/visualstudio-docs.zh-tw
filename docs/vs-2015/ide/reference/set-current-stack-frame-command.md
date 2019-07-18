@@ -14,17 +14,16 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7b3edf01a604e4b6f6a506b7ef26f503611f84fd
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 87d830e492420844de72a2cd34dbea336e365dfd
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54755195"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59660446"
 ---
 # <a name="set-current-stack-frame-command"></a>設定目前堆疊框架命令
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 可讓您設定特定堆疊框架。  
   
 ## <a name="syntax"></a>語法  

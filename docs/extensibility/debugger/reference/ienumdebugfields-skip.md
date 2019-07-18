@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugFields::Skip method
 ms.assetid: b3bc51c4-21ae-4913-800c-c2ca9dc18443
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 03a3070ecfbc5db48c78506cb2fefab7b3f8c4fa
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 4d33910f3b0ed81d5d861323da170dc72d2fa248
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56680993"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66350384"
 ---
 # <a name="ienumdebugfieldsskip"></a>IEnumDebugFields::Skip
 這個方法會略過指定的元素數目。
@@ -36,10 +39,9 @@ int Skip(
 );
 ```
 
-#### <a name="parameters"></a>參數
- `celt`
-
- [in]略過的項目數目。
+## <a name="parameters"></a>參數
+`celt`\
+[in]略過的項目數目。
 
 ## <a name="return-value"></a>傳回值
  如果成功，會傳回 `S_OK`。 會傳回`S_FALSE`如果`celt`大於其餘項目數目，否則會傳回錯誤碼。

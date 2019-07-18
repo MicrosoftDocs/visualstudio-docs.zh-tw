@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 87a7924a8a1239da61553c50dc7c7ba8cea547d2
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c8aec1862424be0182e99285ac3772cc9c4bb19f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55918321"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62792227"
 ---
 # <a name="advanced-compiler-settings-dialog-box-visual-basic"></a>進階編譯器設定對話方塊 (Visual Basic)
 
@@ -25,13 +25,13 @@ ms.locfileid: "55918321"
 
 ## <a name="to-access-this-dialog-box"></a>若要存取此對話方塊
 
-1.  在方案總管中，選擇專案節點 (而不是 [方案] 節點)。
+1. 在方案總管中，選擇專案節點 (而不是 [方案] 節點)。
 
-2.  在 [專案] 功能表上，按一下 [屬性]。 [專案設計工具] 出現時，請按一下 [編譯] 索引標籤。
+2. 在 [專案] 功能表上，按一下 [屬性]。 [專案設計工具] 出現時，請按一下 [編譯] 索引標籤。
 
-3.  在[專案設計工具、編譯頁 (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md)，選取 [設定] 和 [平台]。 在簡化的組建設定中，不會顯示 [設定] 和 [平台] 清單。 如需詳細資訊，請參閱[＜How to：設定偵錯和版本組態](../../debugger/how-to-set-debug-and-release-configurations.md)。
+3. 在[專案設計工具、編譯頁 (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md)，選取 [設定] 和 [平台]。 在簡化的組建設定中，不會顯示 [設定] 和 [平台] 清單。 如需詳細資訊，請參閱[如何：設定偵錯和版本組態](../../debugger/how-to-set-debug-and-release-configurations.md)。
 
-4.  按一下 [進階編譯選項]。
+4. 按一下 [進階編譯選項]。
 
 [!INCLUDE[note_settings_general](../../data-tools/includes/note_settings_general_md.md)]
 

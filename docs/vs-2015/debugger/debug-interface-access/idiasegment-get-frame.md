@@ -1,14 +1,9 @@
 ---
-title: 'Idiasegment:: Get_frame |Microsoft Docs'
-ms.custom: ''
+title: IDiaSegment::get_frame | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 9fece9c7-064a-4d6b-9cef-fc387f322205
 caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: d4328091aa1af561e24c8f983e3895ea838e6130
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: a19a303b2fd884fa11df7e13a24b5a450ff5fc09
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51785179"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68151805"
 ---
 # <a name="idiasegmentgetframe"></a>IDiaSegment::get_frame
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -43,10 +38,7 @@ HRESULT get_frame ( 
  [out]傳回區段數目。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`。 傳回`S_FALSE`不支援這個屬性，則為。 反之則傳回錯誤碼。  
+ 如果成功，會傳回 `S_OK`。 傳回`S_FALSE`不支援這個屬性，則為。 否則會傳回錯誤碼。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md)
-
-
-

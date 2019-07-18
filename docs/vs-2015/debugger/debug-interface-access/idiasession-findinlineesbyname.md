@@ -1,27 +1,22 @@
 ---
-title: IDiaSession::findInlineesByName |Microsoft Docs
-ms.custom: ''
+title: IDiaSession::findInlineesByName | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 ms.assetid: 9860336d-f703-4ecb-bfc4-3f5beb175a76
 caps.latest.revision: 6
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: cd23d7b6dbf80e65433380975334f583f298ac2c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 6c2b540303c3f31f7f6088f2ab9721b1237efbac
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51750756"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68151681"
 ---
 # <a name="idiasessionfindinlineesbyname"></a>IDiaSession::findInlineesByName
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -57,6 +52,3 @@ HRESULT findInlineesByName ( 
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [SymTagEnum 列舉](../../debugger/debug-interface-access/symtagenum.md)   
  [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)
-
-
-

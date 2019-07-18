@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5f0a63cfca8e06d999c585793fabdce627d4896d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56634288"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62968037"
 ---
 # <a name="sys-vsperfcmd"></a>Sys (VSPerfCmd)
 *VSPerfCmd.exe* **Sys** 選項會設定對系統呼叫事件取樣的分析事件 (從已分析應用程式到作業系統的函式呼叫)，並選擇性變更取樣間隔中的系統呼叫數目 (預設值為 10)。

@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c5cc189283d6e9910b0b01d3d3e1ca28165bf500
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56596343"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62839689"
 ---
 # <a name="idiapropertystoragereadbool"></a>IDiaPropertyStorage::ReadBOOL
 讀取`BOOL`屬性集合中的值。
@@ -46,5 +46,5 @@ HRESULT ReadBOOL ( 
 ## <a name="remarks"></a>備註
  取得一致的結果，解譯`BOOL`值，以讓非零的值為`TRUE`為零，而且`FALSE`。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)

@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d614a991de46552c34ca5ab8c797f6dd92954180
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: d435ff9970748e8debe5edfd15514cde4f531b86
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56708611"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63389702"
 ---
 # <a name="capturing-graphics-information"></a>擷取圖形資訊
 從 DirectX 應用程式擷取圖形資訊，以使用 Visual Studio 圖形分析器來診斷轉譯問題和效能問題。
@@ -27,7 +27,7 @@ ms.locfileid: "56708611"
 
 ### <a name="to-run-your-app-under-graphics-diagnostics"></a>在圖形診斷下執行您的應用程式
 
-- 在功能表列上選擇 **偵錯**，**圖形**，**開始圖形偵錯**。 (鍵盤：按 Alt+F5)
+- 在功能表列上選擇 **偵錯**，**圖形**，**開始圖形偵錯**。 (鍵盤：按下 Alt + F5）
 
 - 在 [**圖形**工具列上，選擇**開始圖形偵錯**] 按鈕。
 
@@ -40,7 +40,7 @@ ms.locfileid: "56708611"
 - 在鍵盤上按 Print Screen 鍵。
 
   > [!NOTE]
-  >  當應用程式在 [圖形診斷] 下執行時，PRINT SCREEN 鍵只能用來擷取圖形資訊的框架，而不會執行其一般功能。 此種狀況在停止擷取圖形資訊 (通常會藉由停止偵錯或正常結束) 之前都會保持有效狀態，即是程式焦點是在另一個應用程式上亦是如此。
+  > 當應用程式在 [圖形診斷] 下執行時，PRINT SCREEN 鍵只能用來擷取圖形資訊的框架，而不會執行其一般功能。 此種狀況在停止擷取圖形資訊 (通常會藉由停止偵錯或正常結束) 之前都會保持有效狀態，即是程式焦點是在另一個應用程式上亦是如此。
 
 - 在 Visual Studio 擷取介面中，選擇位於 [診斷工作階段] 時間軸下的 [擷取畫面格] 按鈕，或選擇位於 [每秒畫面格數] 泳道下方且位於先前擷取之任一畫面格右邊的大型 [擷取畫面格] 按鈕。 下面的影像中會將這兩個按鈕反白顯示。
 
@@ -57,9 +57,9 @@ ms.locfileid: "56708611"
 
 #### <a name="to-configure-graphics-diagnostics-capture-options"></a>設定圖形診斷擷取選項
 
-1.  在功能表列上選擇 [工具]、[選項]。 [選項] 對話方塊隨即出現。
+1. 在功能表列上選擇 [工具]、[選項]。 [選項] 對話方塊隨即出現。
 
-2.  在左邊的選項分類清單中，選擇 [圖形診斷]，然後設定您想要的 [圖形診斷] 選項。
+2. 在左邊的選項分類清單中，選擇 [圖形診斷]，然後設定您想要的 [圖形診斷] 選項。
 
      **收集擷取期間的呼叫堆疊 （會使擷取速度變慢）** 核取此方塊可收集呼叫堆疊。 根據預設，不會收集呼叫堆疊。 若要擷取呼叫堆疊，請確定 [收集擷取期間的呼叫堆疊 (會使擷取速度變慢)] 核取方塊設定為啟用收集，然後設定 [針對繪製、分派、簡報及效能標記] 選項 (預設) 只收集最重要的呼叫堆疊，或 [針對所有項目] 選項收集所有呼叫堆疊。 若稍後要停止收集呼叫堆疊，請清除 [收集擷取期間的呼叫堆疊 (會使擷取速度變慢)] 核取方塊。
 
@@ -74,10 +74,10 @@ ms.locfileid: "56708611"
 
  如何將專案設定為從遠端偵錯，取決於您所開發的應用程式種類，以及您所使用的程式語言。 如需有關如何設定遠端偵錯的 UWP 應用程式的資訊，請參閱 <<c0> [ 在遠端電腦上的執行 UWP app](../run-windows-store-apps-on-a-remote-machine.md)。 如需有關如何設定遠端偵錯 Windows 傳統型應用程式的資訊，請參閱[遠端偵錯](../remote-debugging.md)。
 
- 之後，您就可以使用遠端電腦或裝置播放圖形資訊，而不管是從何處擷取的資訊。 如需詳細資訊，請參閱 [How to: Change the Graphics Diagnostics Playback Machine](how-to-change-the-graphics-diagnostics-playback-machine.md) (如何：變更圖形診斷播放電腦)。
+ 之後，您就可以使用遠端電腦或裝置播放圖形資訊，而不管是從何處擷取的資訊。 如需詳細資訊，請參閱[如何：變更圖形診斷播放電腦](how-to-change-the-graphics-diagnostics-playback-machine.md)。
 
 ## <a name="capturing-graphics-information-from-the-command-line"></a>從命令列擷取圖形資訊
  您可以使用命令列工具，從應用程式擷取圖形資訊。 這個 DXCap.exe 工具可以快速擷取及播放圖形資訊，而不需使用 Visual Studio 或以程式設計方式擷取。 特別是，您可以使用 DXCap.exe 進行自動化，或是在測試環境中使用。 如需 DXCap.exe 的詳細資訊，請參閱[命令列擷取工具](command-line-capture-tool.md)
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [逐步解說：擷取圖形資訊](walkthrough-capturing-graphics-information.md)

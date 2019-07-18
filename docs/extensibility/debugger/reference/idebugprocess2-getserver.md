@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProcess2::GetServer
 ms.assetid: 8f73c530-cceb-4f1f-8c63-1cc0ccd4a310
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 33f9b513bcf336cac68af7d915880af0652b0954
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 20eed8cb3689ac58b1303f4dec7359d75d0c0f40
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56719318"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66343644"
 ---
 # <a name="idebugprocess2getserver"></a>IDebugProcess2::GetServer
 取得伺服器上執行此程序。
@@ -36,10 +39,9 @@ int GetServer( 
 );
 ```
 
-#### <a name="parameters"></a>參數
- `ppServer`
-
- [out]傳回[IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md)物件，表示此程序執行所在的伺服器。
+## <a name="parameters"></a>參數
+`ppServer`\
+[out]傳回[IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md)物件，表示此程序執行所在的伺服器。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

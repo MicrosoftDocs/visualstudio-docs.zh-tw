@@ -17,17 +17,16 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d048edd60d41c3f08a8bd0b731beddb3619a1887
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 398d92065b1ff1b5447017c7a21fc0def1e0da52
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54776065"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60093133"
 ---
 # <a name="project-devenvexe"></a>/Project (devenv.exe)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 識別所指定方案組態內要建置、清除、重建或部署的單一專案。  
   
 ## <a name="syntax"></a>語法  
@@ -64,11 +63,11 @@ devenv SolutionName {/build|/clean|/rebuild|/deploy} SolnConfigName
   
 ## <a name="remarks"></a>備註  
   
--   必須是 `devenv /build`、/`clean`、`/rebuild` 或 `/deploy` 命令的已使用部分。  
+- 必須是 `devenv /build`、/`clean`、`/rebuild` 或 `/deploy` 命令的已使用部分。  
   
--   請以雙引號括住包含空格的字串。  
+- 請以雙引號括住包含空格的字串。  
   
--   組建的摘要資訊 (包括錯誤) 可顯示在 [命令] 視窗中，或使用 `/out` 參數指定的任何記錄檔中。  
+- 組建的摘要資訊 (包括錯誤) 可顯示在 [命令] 視窗中，或使用 `/out` 參數指定的任何記錄檔中。  
   
 ## <a name="example"></a>範例  
  此範例使用 `MySolution` 的 `Debug` 方案組態中的 `Debug` 專案組建組態，來建置專案 `CSharpConsoleApp`。  

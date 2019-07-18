@@ -1,42 +1,37 @@
 ---
-title: 檢查清單︰ 建立舊版語言服務 |Microsoft Docs
-ms.custom: ''
+title: 檢查清單：建立舊版語言服務 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - language services
 - language services, native code
 ms.assetid: 8b73b341-a33a-4ab5-9390-178c9e563d2d
 caps.latest.revision: 10
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 330270b34d55e88c883b9d8a6270b4abad02d9c1
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 3b79afe64aafac473d4fe5d22464998d0c2f0537
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51782982"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437618"
 ---
-# <a name="checklist-creating-a-legacy-language-service"></a>檢查清單︰建立舊版語言服務
+# <a name="checklist-creating-a-legacy-language-service"></a>檢查清單：建立舊版語言服務
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 下列檢查清單摘要說明您必須採取才能建立語言服務的基本步驟[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]核心編輯器。 若要整合到您的語言服務[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]，您必須建立偵錯運算式評估工具。 如需詳細資訊，請參閱 <<c0> [ 撰寫 CLR 運算式評估工具](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)中[Visual Studio 偵錯工具擴充性](../../extensibility/debugger/visual-studio-debugger-extensibility.md)。  
   
 ## <a name="steps-for-creating-a-language-service"></a>建立語言服務的步驟  
   
-1.  實作 <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage> 介面。  
+1. 實作 <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage> 介面。  
   
-    -   在 VSPackage，實作<xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider>介面，以提供語言服務。  
+    - 在 VSPackage，實作<xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider>介面，以提供語言服務。  
   
-    -   提供整合式的開發環境 (IDE)，以在您的語言服務您<xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A>實作。  
+    - 提供整合式的開發環境 (IDE)，以在您的語言服務您<xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A>實作。  
   
-2.  實作<xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo>主要語言服務類別中的介面。  
+2. 實作<xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo>主要語言服務類別中的介面。  
   
      <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo>介面是核心編輯器和語言服務之間互動的起點。  
   
@@ -68,7 +63,7 @@ ms.locfileid: "51782982"
     必須處理的命令取決於所提供的服務。 如需詳細資訊，請參閱 <<c0> [ 語言服務篩選器的重要命令](../../extensibility/internals/important-commands-for-language-service-filters.md)。  
   
   > [!NOTE]
-  >  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewFilter>介面必須實作的相同物件上<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>介面。  
+  > <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewFilter>介面必須實作的相同物件上<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>介面。  
   
 - 陳述式完成  
   
@@ -116,7 +111,7 @@ ms.locfileid: "51782982"
   
 - 大綱  
   
-   有數個選項，以支援大綱。 例如，您可以支援**摺疊至定義**命令，請提供編輯器控制項的大綱區域，或支援用戶端控制的區域。 如需詳細資訊，請參閱 <<c0> [ 如何： 提供展開大綱中的支援舊版語言服務](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md)。  
+   有數個選項，以支援大綱。 例如，您可以支援**摺疊至定義**命令，請提供編輯器控制項的大綱區域，或支援用戶端控制的區域。 如需詳細資訊，請參閱[如何：提供展開大綱的支援，在舊版語言服務](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md)。  
   
 - 語言服務登錄  
   
@@ -126,11 +121,10 @@ ms.locfileid: "51782982"
   
    提供至編輯器的內容，在下列方面：  
   
-  -   提供文字標記的內容，方法是實作<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerContextProvider>介面。  
+  - 提供文字標記的內容，方法是實作<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerContextProvider>介面。  
   
   提供所有的使用者內容，方法是實作<xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageContextProvider>介面。  
   
 ## <a name="see-also"></a>另請參閱  
  [開發舊版語言服務](../../extensibility/internals/developing-a-legacy-language-service.md)   
  [撰寫 CLR 運算式評估工具](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)
-

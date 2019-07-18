@@ -1,14 +1,9 @@
 ---
 title: 判斷哪一個編輯器在專案中開啟檔案 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], determining which editor opens a file
 - projects [Visual Studio SDK], determining which editor opens file
@@ -17,13 +12,13 @@ helpviewer_keywords:
 ms.assetid: acbcf4d8-a53a-4727-9043-696a47369479
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 832fd838246c075087700494b09757184be687a7
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 1c79860f770a6b04a17786cfb281fc3c0e4dffda
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51741609"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68196764"
 ---
 # <a name="determining-which-editor-opens-a-file-in-a-project"></a>決定要開啟專案中檔案的編輯器
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -34,7 +29,7 @@ ms.locfileid: "51741609"
   
  其他檔案專案宣告不宣告的其他專案的所有檔案。 如此一來，自訂編輯器可以開啟文件之前標準編輯器開啟它們。 如果其他檔案專案中宣告的檔案，環境會呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A>方法，以使用標準編輯器開啟檔案。 環境會檢查其內部處理.rtf 檔案的其中一個已註冊的編輯器清單。 此清單位於登錄中的下列機碼：  
   
- [Hkey_local_machine\software\microsoft\visualstudio \\\<`version`> \Editors\\{<`editor factory guid`>} \Extensions]  
+ [HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\\<`version`>\Editors\\{<`editor factory guid`>}\Extensions]  
   
  環境也會檢查任何物件具有子機碼的 DocObject HKEY_CLASSES_ROOT\CLSID 機碼中的類別識別碼。 如果那里找到檔案的副檔名，則內嵌的應用程式，例如 Microsoft Word 版本是就地建立 Visual Studio 中。 這些文件物件必須實作的複合檔案<xref:Microsoft.VisualStudio.OLE.Interop.IPersistStorage>介面或物件必須實作<xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat>介面。  
   
@@ -53,4 +48,3 @@ ms.locfileid: "51741609"
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.IsDocumentInProject%2A>   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.OpenItem%2A>   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A>
-

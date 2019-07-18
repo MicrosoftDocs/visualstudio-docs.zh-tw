@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProcess2::GetPhysicalProcessId
 ms.assetid: 77da6e10-75af-4308-97dd-c44416ca52d7
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2f8a822932479cab7b62be52951c83c6d016fcc2
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 5c4dd794d3de4d61750813bd0e6542946120e4b6
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56720771"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66311710"
 ---
 # <a name="idebugprocess2getphysicalprocessid"></a>IDebugProcess2::GetPhysicalProcessId
 取得系統處理序識別碼。
@@ -36,10 +39,9 @@ int GetPhysicalProcessId(
 );
 ```
 
-#### <a name="parameters"></a>參數
- `pdwProcessId`
-
- [out][AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md)會填入系統處理序識別碼資訊的結構。
+## <a name="parameters"></a>參數
+`pdwProcessId`\
+[out][AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md)會填入系統處理序識別碼資訊的結構。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

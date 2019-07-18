@@ -1,14 +1,9 @@
 ---
 title: 精靈 (。在 Vsz) 檔案 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - .vsz files
 - vsz files
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 72e1d0f3-eef1-455e-b803-96827f030f50
 caps.latest.revision: 10
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 428a2faf85180b9239f128dde5a9dadca04139af
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: ab1adde4c7018f136f47769e16a8ce2fedf72c93
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51786429"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687670"
 ---
 # <a name="wizard-vsz-file"></a>精靈檔 (.Vsz)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -48,7 +43,7 @@ Param="WIZARDUI = FALSE"
 |精靈|此欄位會包含 OLE ProgID 的精靈中，或者 cocreated ide 在精靈的 CLSID 的 GUID 字串表示。|  
 |參數|這些組件是選擇性的。 您可以新增所需數目。|  
   
- 參數可讓將額外的自訂參數傳遞給精靈.vsz 檔案。 每個值被當做 variant 的陣列中的字串項目精靈。 如需詳細資訊，請參閱 <<c0> [ 自訂參數](../../extensibility/internals/custom-parameters.md)。 如需如何使用在開發自訂精靈.vsz 檔案資訊，請參閱[。在 Vsz 檔案 （專案控制）](http://msdn.microsoft.com/library/b8678fee-6795-46d1-9338-48b22d5e9207)  
+ 參數可讓將額外的自訂參數傳遞給精靈.vsz 檔案。 每個值被當做 variant 的陣列中的字串項目精靈。 如需詳細資訊，請參閱 <<c0> [ 自訂參數](../../extensibility/internals/custom-parameters.md)。 如需如何使用在開發自訂精靈.vsz 檔案資訊，請參閱[。在 Vsz 檔案 （專案控制）](https://msdn.microsoft.com/library/b8678fee-6795-46d1-9338-48b22d5e9207)  
   
  若要加入.vsz 檔案中的預設地區設定識別碼，請指定`FALLBACK_LCID`= 的 xxxx，其中 xxxx 會是地區設定識別碼，例如，1033，代表英文。 當`FALLBACK_LCID`參數定義中，精靈會使用提供的後援地區設定識別碼，如果找不到目前的識別碼。  
   
@@ -56,4 +51,3 @@ Param="WIZARDUI = FALSE"
  [自訂參數](../../extensibility/internals/custom-parameters.md)   
  [精靈](../../extensibility/internals/wizards.md)   
  [範本目錄描述檔 (.Vsdir)](../../extensibility/internals/template-directory-description-dot-vsdir-files.md)
-

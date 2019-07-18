@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 47fb195a2292f04c5dc2dd40ecdf94564a3b16bb
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58158262"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62787921"
 ---
 # <a name="iremotedebugapplicationthreadexenumglobalcontexts"></a>IRemoteDebugApplicationThreadEx:EnumGlobalContexts
 列舉在此執行緒中執行的所有語言通用的運算式內容。  

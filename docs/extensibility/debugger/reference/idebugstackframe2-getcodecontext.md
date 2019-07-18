@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugStackFrame2::GetCodeContext
 ms.assetid: 93d66159-a41d-49ef-982f-91bb4d073b74
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: de112b3bba0ca649e333cc990a50284c29b92239
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 9a9013435f0793361ddcc1759a14f39ec87655e3
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56703951"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66321901"
 ---
 # <a name="idebugstackframe2getcodecontext"></a>IDebugStackFrame2::GetCodeContext
 取得此堆疊框架的程式碼內容。
@@ -36,10 +39,9 @@ int GetCodeContext ( 
 );
 ```
 
-#### <a name="parameters"></a>參數
- `ppCodeCxt`
-
- [out]傳回[IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)物件，代表目前指令指標在此堆疊框架。
+## <a name="parameters"></a>參數
+`ppCodeCxt`\
+[out]傳回[IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)物件，代表目前指令指標在此堆疊框架。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

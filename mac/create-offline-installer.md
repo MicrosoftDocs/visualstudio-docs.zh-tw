@@ -1,17 +1,17 @@
 ---
 title: 建立 Visual Studio for Mac 的離線安裝程式
 description: ''
-author: conceptdev
-ms.author: crdun
+author: asb3993
+ms.author: amburns
 ms.date: 11/06/2018
 ms.technology: vs-ide-install
 ms.assetid: 5CA4B8C1-2D01-46EA-A6B2-8573B324509B
-ms.openlocfilehash: 12151a4aaaae1226678eb77ad029f1d4cf17ec1e
-ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
+ms.openlocfilehash: 168aad3aac59037c8f16be614db1ea4af847de2f
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "51948084"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67693041"
 ---
 # <a name="create-an-offline-installer-for-visual-studio-for-mac"></a>建立 Visual Studio for Mac 的離線安裝程式
 

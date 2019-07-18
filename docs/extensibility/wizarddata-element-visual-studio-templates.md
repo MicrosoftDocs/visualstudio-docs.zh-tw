@@ -9,17 +9,17 @@ helpviewer_keywords:
 - WizardData element [Visual Studio Templates]
 - <WizardData> element [Visual Studio Templates]
 ms.assetid: d0403a16-5d07-4fe5-b474-19ae3d9fd3ab
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c6b61c62e8a3b69963bd56129fd3e7168271fc07
-ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
+ms.openlocfilehash: ad5ae7e2e83cb0f8db6cf0b2482547e66ab89497
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "55231580"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66350772"
 ---
 # <a name="wizarddata-element-visual-studio-templates"></a>WizardData 項目 (Visual Studio 範本)
 
@@ -109,4 +109,4 @@ ms.locfileid: "55231580"
 - [Visual Studio 範本結構描述參考](../extensibility/visual-studio-template-schema-reference.md)
 - [建立專案和項目範本](../ide/creating-project-and-item-templates.md)
 - [WizardExtension 元素 (Visual Studio 範本)](../extensibility/wizardextension-element-visual-studio-templates.md)
-- [如何：使用精靈與專案範本](../extensibility/how-to-use-wizards-with-project-templates.md)
+- [如何：搭配專案範本使用精靈](../extensibility/how-to-use-wizards-with-project-templates.md)

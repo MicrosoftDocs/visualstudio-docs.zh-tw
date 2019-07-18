@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugErrorBreakpoints2::Skip
 ms.assetid: a5a02b38-4e3a-4f0e-b529-f770c3485c8b
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 92e6ca702dd812f4b8dc2a0c24d184da524c781e
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 0f73b1faae3e26a88a523c0f8c46bbca43454295
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56682702"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66336355"
 ---
 # <a name="ienumdebugerrorbreakpoints2skip"></a>IEnumDebugErrorBreakpoints2::Skip
 略過指定的元素數目。
@@ -36,10 +39,9 @@ int Skip(
 );
 ```
 
-#### <a name="parameters"></a>參數
- `celt`
-
- [in]略過的項目數目。
+## <a name="parameters"></a>參數
+`celt`\
+[in]略過的項目數目。
 
 ## <a name="return-value"></a>傳回值
  如果成功，會傳回 `S_OK`。 會傳回`S_FALSE`如果`celt`大於其餘項目數目，否則會傳回錯誤碼。

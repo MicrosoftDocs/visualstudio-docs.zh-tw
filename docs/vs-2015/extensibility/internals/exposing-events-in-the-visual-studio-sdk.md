@@ -1,27 +1,22 @@
 ---
 title: Visual Studio SDK 中公開事件 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - events [Visual Studio], exposing
 - automation [Visual Studio SDK], exposing events
 ms.assetid: 70bbc258-c221-44f8-b0d7-94087d83b8fe
 caps.latest.revision: 17
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 4c65220114328f1630ef9c9457a3c971b730957b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 7056497c505bbb355287416e468e411b4e5a2a62
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51761487"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68196695"
 ---
 # <a name="exposing-events-in-the-visual-studio-sdk"></a>在 Visual Studio SDK 中公開事件
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -53,13 +48,13 @@ ms.locfileid: "51761487"
 ## <a name="registry-entries-from-the-basic-project-sample"></a>從基本的專案範例的登錄項目  
  本節說明如何將自動化事件值新增至登錄。  
   
- [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0\Packages\\< PkgGUID\>\AutomationEvents]  
+ [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0\Packages\\<PkgGUID\>\AutomationEvents]  
   
  「 AutomationProjectEvents"="傳回 AutomationProjectEvents 物件 」  
   
  「 AutomationProjectItemEvents"="傳回 AutomationProjectItemsEvents 物件 」  
   
-|名稱|類型|範圍|描述|  
+|名稱|類型|Range|描述|  
 |----------|----------|-----------|-----------------|  
 |預設值 (@)|REG_SZ|未使用|未使用。 如需文件，您可以使用 [資料] 欄位。|  
 |AutomationProjectsEvents|REG_SZ|事件物件的名稱。|索引鍵的名稱是相關項目。 如需文件，您可以使用 [資料] 欄位。<br /><br /> 此範例中，來自於基本的專案範例。|  
@@ -76,7 +71,7 @@ ms.locfileid: "51761487"
   
  AutomationEvents.h 和 AutomationEvents.cpp 包含宣告和下表中的類別的實作。  
   
-|類別|描述|  
+|類別|說明|  
 |-----------|-----------------|  
 |`CAutomationEvents`|實作事件的根物件，擷取自`DTE.Events`物件。|  
 |`CProjectsEventsContainer` 和 `CProjectItemsEventsContainer`|實作會引發對應的事件的事件來源物件。|  
@@ -119,4 +114,3 @@ STDMETHODIMP CVsPackage::GetAutomationObject(
 ## <a name="see-also"></a>另請參閱  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A>   
  [VSSDK 範例](../../misc/vssdk-samples.md)
-

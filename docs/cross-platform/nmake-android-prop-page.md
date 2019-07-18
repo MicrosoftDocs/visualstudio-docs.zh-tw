@@ -19,11 +19,11 @@ f1_keywords:
 ms.workload:
 - xplat-cplusplus
 ms.openlocfilehash: ba13da583e5ea5dd6cc625e165902bbf6c408f28
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54949230"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62815710"
 ---
 # <a name="nmake-properties-android-c"></a>NMake 屬性 (Android C++)
 
@@ -32,7 +32,7 @@ ms.locfileid: "54949230"
 Build 命令列 | 指定執行 'Build' 命令的命令列。
 Rebuild All 命令列 | 指定執行 'Rebuild All' 命令的命令列。
 Clean 命令列 | 指定執行 'Clean' 命令的命令列。
-輸出 | 指定要產生的輸出檔。
+Output | 指定要產生的輸出檔。
 前置處理器定義 | 指定來源檔案所使用的前置處理器定義。
 Include 搜尋路徑 | 指定 Include 搜尋路徑以解析包含的檔案。
 強制內含 | 指定要強制內含的檔案。

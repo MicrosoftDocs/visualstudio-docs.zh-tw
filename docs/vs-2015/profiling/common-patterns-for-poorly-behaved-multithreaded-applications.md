@@ -13,12 +13,12 @@ caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: fc126d8283562f84cabfaae7df1001c832553568
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: f2c1a799663d33e61977c5416ad199bce8bce545
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54778950"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62420378"
 ---
 # <a name="common-patterns-for-poorly-behaved-multithreaded-applications"></a>行為錯誤之多執行緒應用程式的一般模式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "54778950"
   
  如下圖所示，並行視覺化檢視也可以在 [CPU 使用率檢視] 中顯示出這個徵兆，檢視中雖然有多個執行緒，但是應用程式還是只使用一個邏輯核心。  
   
- 如需詳細資訊，請參閱 Hazim Shafi 在 MSDN 部落格網站上的 [Windows 的平行效能工具](http://go.microsoft.com/fwlink/?LinkID=160569)中發表的＜效能模式 1：識別鎖定爭用＞(英文)。  
+ 如需詳細資訊，請參閱 「 效能模式 1:用來識別鎖定爭用 」 中 Hazim Shafi[平行效能工具為 Windows](http://go.microsoft.com/fwlink/?LinkID=160569) MSDN 部落格網站上的部落格。  
   
  ![鎖定爭用](../profiling/media/lockcontention-2.png "LockContention_2")  
   
@@ -52,9 +52,9 @@ ms.locfileid: "54778950"
   
  當您評估此問題時，應該考慮下列事項：  
   
--   整體系統可能過度訂閱。 考慮系統上的其他處理序可能先佔住了您的執行緒。 當您在執行緒檢視中暫停在先佔區段上方時，工具提示會識別執行緒和先佔執行緒的處理序。 此處理序不一定是您的處理序被先佔時整個期間執行的處理序，但提供對您的處理序造成先佔壓力的相關提示。  
+- 整體系統可能過度訂閱。 考慮系統上的其他處理序可能先佔住了您的執行緒。 當您在執行緒檢視中暫停在先佔區段上方時，工具提示會識別執行緒和先佔執行緒的處理序。 此處理序不一定是您的處理序被先佔時整個期間執行的處理序，但提供對您的處理序造成先佔壓力的相關提示。  
   
--   評估您的處理序如何判斷在此工作階段期間執行的適當執行緒數目。 如果您的處理序直接計算作用中的平行執行緒數目，請考慮修改該演算法，能夠更正確地計算系統上可用的邏輯核心數目。 如果您使用並行執行階段、工作平行程式庫或 PLINQ，這些程式庫會執行計算執行緒數目的工作。  
+- 評估您的處理序如何判斷在此工作階段期間執行的適當執行緒數目。 如果您的處理序直接計算作用中的平行執行緒數目，請考慮修改該演算法，能夠更正確地計算系統上可用的邏輯核心數目。 如果您使用並行執行階段、工作平行程式庫或 PLINQ，這些程式庫會執行計算執行緒數目的工作。  
   
 ## <a name="inefficient-io"></a>無效率 I/O  
  ![無效率 I/O](../profiling/media/inefficient-io.png "Inefficient_IO")  
@@ -66,5 +66,5 @@ ms.locfileid: "54778950"
   
  當應用程式以先到先服務的順序取得鎖定時，以及當鎖定的抵達速率高於取得速率時，就會發生鎖定護送。 這兩項條件的組合會導致鎖定的要求開始堵塞。 解決這個問題的一個方法是使用「不公平」的鎖定，或使用能提供第一個執行緒存取權以找出處於未鎖定狀態之鎖定的鎖定。 上圖顯示這個護送行為。 若要解決這個問題，請嘗試減少同步處理物件的爭用，並嘗試使用不公平的鎖定。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [執行緒檢視](../profiling/threads-view-parallel-performance.md)

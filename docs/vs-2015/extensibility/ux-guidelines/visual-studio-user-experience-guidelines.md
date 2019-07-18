@@ -1,24 +1,19 @@
 ---
 title: Visual Studio 使用者經驗指導方針 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: 3abbe495-cbbc-4982-a809-38bda34553a7
 caps.latest.revision: 4
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 0042fd8ef7aee9431a3268a33eece0ed2c3dbcad
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 02b01c2c1262d6c48f51f9c1867094913b8cd715
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51802430"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62584927"
 ---
 # <a name="visual-studio-user-experience-guidelines"></a>Visual Studio 使用者體驗方針
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -31,7 +26,6 @@ Visual Studio 使用者經驗指導方針適用於 Visual studio 中設計的新
   
 - 這些 Visual Studio 的指導方針，也就是取代的一般 Windows 指導方針，不論是適合我們的環境中的應用程式平台特定指導方針。  
   
-- [模式和 Windows 市集應用程式的指南](https://dev.windows.com/design/interaction-ux)是新興的模式，可用於 Visual Studio 中的某些執行個體的參考。  
+- [控制項和 UWP 應用程式模式](/windows/uwp/design/controls-and-patterns)是新興的模式，可用於 Visual Studio 中的某些執行個體的參考。  
   
   這些指導方針提供您的 Visual Studio 中，在設計時，該怎麼辦的相關資訊，並會在某些情況下也包含有關如何執行此動作的資訊。 如需詳細的實作資訊，並了解特定的應用程式開發介面 (Api) 可讓您撰寫程式碼整合到 Visual Studio 整合式的開發環境 (IDE) 的解決方案，請使用[Visual Studio 軟體開發套件 (SDK)](https://msdn.microsoft.com/library/bb166441.aspx)。
-

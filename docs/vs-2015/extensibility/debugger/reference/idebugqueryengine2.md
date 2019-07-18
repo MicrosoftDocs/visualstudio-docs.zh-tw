@@ -1,14 +1,9 @@
 ---
-title: IDebugQueryEngine2 |Microsoft Docs
-ms.custom: ''
+title: IDebugQueryEngine2 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugQueryEngine2
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 8f0e1838-a818-4459-9138-a3dceb7408de
 caps.latest.revision: 12
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 284cae38309938d51f6ad5c58a89fc0297d8a10a
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 7274d621e47c9c705cc0ce6bc4ad49f24e144f59
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51735242"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65683286"
 ---
 # <a name="idebugqueryengine2"></a>IDebugQueryEngine2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -39,7 +34,7 @@ IDebugQueryEngine2 : IUnknown
  DE 實作此介面上實作的最常見的 DE 介面的物件 (例如[IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)， [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)，並[IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)) 中若要允許存取的順序[IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md) DE 本身的介面。  
   
 ## <a name="notes-for-callers"></a>呼叫端資訊  
- 呼叫[QueryInterface](http://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3)典型的 DE 介面，以取得此介面上。  
+ 呼叫[QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3)典型的 DE 介面，以取得此介面上。  
   
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法  
  下表顯示的方法`IDebugQueryEngine2`。  
@@ -54,9 +49,9 @@ IDebugQueryEngine2 : IUnknown
 ## <a name="requirements"></a>需求  
  標頭： msdbg.h  
   
- 命名空間： Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間：Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
  [核心介面](../../../extensibility/debugger/reference/core-interfaces.md)   
@@ -64,4 +59,3 @@ IDebugQueryEngine2 : IUnknown
  [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)   
  [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)   
  [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)
-

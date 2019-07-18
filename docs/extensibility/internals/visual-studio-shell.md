@@ -6,17 +6,17 @@ helpviewer_keywords:
 - shell, Visual Studio
 - Visual Studio, shell
 ms.assetid: cb124ef4-1a6b-4bfe-bfbf-295ef9c07f36
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b1428b4c5a54b901ca3e21ffc2b23d71763e7804
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 8a147abd4655c923604dd9ca6696e97aac4944ec
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56613280"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66332880"
 ---
 # <a name="visual-studio-shell"></a>Visual Studio Shell
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Shell 是主要的代理程式中整合[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。 此命令介面提供必要的功能，可讓 Vspackage 共用通用的服務。 因為架構的目標[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]是背心主要功能，在 Vspackage 中，命令介面是一個架構，可提供基本功能，並且支援 Vspackage 及其元件之間的跨通訊。
@@ -34,21 +34,21 @@ ms.locfileid: "56613280"
 
 - 管理特定的共用服務，例如<xref:Microsoft.VisualStudio.Shell.Interop.SVsShell>，它提供了基本的殼層功能和<xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell>，提供基本視窗化功能。
 
-- 管理方案 (.sln) 檔案。 解決方案包含群組的相關專案，類似於在 Visual c + + 6.0 的工作區 (.dsw) 檔案。
+- 管理方案 (.sln) 檔案。 解決方案包含相關的專案，類似於 視覺效果中的工作區 (.dsw) 檔案群組C++6.0。
 
 - 追蹤整個殼層的選取項目、 內容和貨幣。 殼層會追蹤下列項目類型：
 
-  -   目前的專案
+  - 目前的專案
 
-  -   目前的專案項目或項目目前的識別碼。 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>
+  - 目前的專案項目或項目目前的識別碼。 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>
 
-  -   目前的選取範圍，如**屬性**視窗或 `SelectionContainer`
+  - 目前的選取範圍，如**屬性**視窗或 `SelectionContainer`
 
-  -   Id 或控制的可見性命令、 功能表和工具列的 CmdUIGuids UI 內容
+  - Id 或控制的可見性命令、 功能表和工具列的 CmdUIGuids UI 內容
 
-  -   目前使用中的項目，例如使用中視窗、 文件，並復原管理員
+  - 目前使用中的項目，例如使用中視窗、 文件，並復原管理員
 
-  -   使用者內容屬性動態說明該磁碟機
+  - 使用者內容屬性動態說明該磁碟機
 
   殼層也會調解在已安裝的 Vspackage 和目前的服務間的通訊。 它支援的殼層的核心功能，並使其可供所有的 vspackage 中整合[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。 這些核心功能包括下列項目：
 

@@ -1,24 +1,19 @@
 ---
 title: 延遲載入文件 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: fb07b8e2-a4e3-4cb0-b04f-8eb11c491f35
 caps.latest.revision: 7
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 94d79af00fced81dc7da38f323598ade926d26f4
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 5565749a21614bb0b882beab8c83ed63bc839229
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51755480"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68196863"
 ---
 # <a name="delayed-document-loading"></a>已延遲載入文件
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -34,21 +29,21 @@ ms.locfileid: "51755480"
   
 - 視窗框架的 GetProperty 方法<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.GetProperty%2A>任何下列屬性：  
   
-  -   <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID>  
+  - <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID>  
   
-  -   <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID>  
+  - <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID>  
   
-  -   <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID>  
+  - <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID>  
   
-  -   <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID>  
+  - <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID>  
   
-  -   <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID>  
+  - <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID>  
   
-  -   <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID>  
+  - <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID>  
   
   如果您的延伸模組會使用 managed 程式碼，您不應該呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.GetDocumentInfo%2A>除非您確定文件不是處於暫止的初始化狀態，或您想要完全初始化的文件... 這是因為此方法一律會傳回文件資料物件，如有必要，請建立它。 相反地，您應該將其中一個方法呼叫 IVsRunningDocumentTable4 介面上。  
   
-  如果您的延伸模組會使用 c + +，您可以傳遞`null`您不想要的參數。  
+  如果您的延伸模組會使用C++，您可以傳遞`null`您不想要的參數。  
   
   您可以呼叫下列方法之一，然後再要求相關的屬性，以避免不必要的文件載入： 您有要求其他屬性之前。  
   
@@ -69,5 +64,4 @@ ms.locfileid: "51755480"
 ## <a name="testing-extensions-to-see-if-they-force-initialization"></a>測試以查看它們強制執行初始化的延伸模組  
  沒有任何可見的提示來指出是否已初始化文件，因此它可能難以找出初始化時，是否要強制您的延伸模組。 您可以設定登錄機碼，更輕鬆驗證，因為這會導致文字並未完全初始化每個文件的標題`[Stub]`標題中。  
   
- 在 [ **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0\BackgroundSolutionLoad]**，將**StubTabTitleFormatString**來 **{0} [Stub]**。
-
+ 在 [ **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0\BackgroundSolutionLoad]** ，將**StubTabTitleFormatString**來 **{0} [Stub]** 。

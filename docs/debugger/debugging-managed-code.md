@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 384b5dca1da11a430036cce2536e6859f3e98f94
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MTE95
+ms.openlocfilehash: a5cf348b06bca6127690c7b5a7301881bdf75078
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57868087"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62851883"
 ---
 # <a name="debugging-managed-code"></a>偵錯 Managed 程式碼
 
@@ -47,7 +47,7 @@ ms.locfileid: "57868087"
 [混合模式偵錯](../debugger/debugging-mixed-mode-applications.md)\
 說明偵錯混合模式應用程式的方法。 也就是結合機器碼和 Managed 程式碼的任何應用程式。
 
-[錯誤：無法進行偵錯，因為系統上已啟用核心偵錯工具](../debugger/error-debugging-isn-t-possible-because-a-kernel-debugger-is-enabled-on-the-system.md)\
+[錯誤：無法進行偵錯，系統會啟動核心偵錯](../debugger/error-debugging-isn-t-possible-because-a-kernel-debugger-is-enabled-on-the-system.md)\
 描述如果您嘗試在以偵錯模式啟動且執行 [!INCLUDE[win7](../debugger/includes/win7_md.md)]、[!INCLUDE[wiprlhext](../debugger/includes/wiprlhext_md.md)]、[!INCLUDE[winxp](../code-quality/includes/winxp_md.md)]、[!INCLUDE[Win2kFamily](../code-quality/includes/win2kfamily_md.md)] 或 Windows NT 的系統上，對 Managed 程式碼進行偵錯時會產生的錯誤訊息。
 
 \[JIT 最佳化和偵錯](../debugger/jit-optimization-and-debugging.md)
@@ -56,7 +56,7 @@ ms.locfileid: "57868087"
 [針對 LINQ 和 DLINQ 進行偵錯](../debugger/debugging-linq.md)\
 討論對 LINQ 查詢進行偵錯的技術。
 
-[逐步解說：針對平行應用程式進行偵錯](../debugger/walkthrough-debugging-a-parallel-application.md)\6
+[逐步解說：偵錯平行應用程式](../debugger/walkthrough-debugging-a-parallel-application.md)\
 描述如何使用 [平行工作] 和 [平行堆疊] 工具視窗來偵錯平行應用程式。
 
 ## <a name="related-sections"></a>相關章節
@@ -79,12 +79,9 @@ ms.locfileid: "57868087"
 [針對指令碼和 Web 應用程式進行偵錯](/visualstudio/debugger/how-to-enable-debugging-for-aspnet-applications)\
 描述您在偵錯指令碼和 Web 應用程式時會遇到的一般偵錯問題和技術。
 
-[偵錯首頁](../debugger/debugger-feature-tour.md)\
-提供偵錯相關文件的主要連結。 這些資訊包括偵錯工具的新功能、設定和準備、中斷點、例外狀況處理、編輯後繼續、Managed 程式碼的偵錯、Visual C++ 專案的偵錯、COM 和 ActiveX 的偵錯、DLL 偵錯、SQL 偵錯，以及使用者介面的參考。
-
 ## <a name="see-also"></a>另請參閱
 
-- [逐步解說： 在設計階段偵錯自訂的 Windows Form 控制項](/dotnet/framework/winforms/controls/walkthrough-debugging-custom-windows-forms-controls-at-design-time)
+- [逐步解說：在設計階段偵錯自訂的 Windows Form 控制項](/dotnet/framework/winforms/controls/walkthrough-debugging-custom-windows-forms-controls-at-design-time)
 - [偵錯工具安全性](../debugger/debugger-security.md)
 - [Visual Studio 偵錯](../debugger/index.md)
 - [偵錯工具簡介](../debugger/debugger-feature-tour.md)

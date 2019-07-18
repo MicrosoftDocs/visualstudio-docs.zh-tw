@@ -1,14 +1,9 @@
 ---
-title: '時發生錯誤: 只有在使用 Microsoft.NET Framework 2.0 或更新版本，混合的模式偵錯支援 |Microsoft Docs'
-ms.custom: ''
+title: 錯誤：只有在使用 Microsoft.NET Framework 2.0 或更新混合的模式偵錯支援 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 f1_keywords:
 - vs.debug.error.interop_unsupported_to_old
 dev_langs:
@@ -20,25 +15,22 @@ ms.assetid: e67fbf78-f037-4be4-a65f-ff72230b03e1
 caps.latest.revision: 9
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 61cf7b0d7ccb5fa6e1d56c6ad4a0dfd0dc05f5c7
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 0bf0557db3fd4ecc58e81d2b88e8c700c2f3bae0
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51792225"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697407"
 ---
 # <a name="error-mixed-mode-debugging-is-supported-only-when-using-microsoft-net-framework-20-or-greater"></a>錯誤：只有使用 Microsoft .NET Framework 2.0 或更新版本時才支援混合模式偵錯
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-若要混合偵錯機器碼和 Managed 程式碼，您必須要有 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 2.0、3.0、 3.5 或 4 版。 混合模式偵錯與舊版[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]不支援。  
+若要混合偵錯機器碼和 Managed 程式碼，您必須要有 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 2.0、3.0、 3.5 或 4 版。 不支援以更舊版本的 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 進行混合模式偵錯。  
   
 ### <a name="to-correct-this-error"></a>更正這個錯誤  
   
--   將 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 升級為 2.0、3.0、3.5 或 4 版。  
+- 將 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 升級為 2.0、3.0、3.5 或 4 版。  
   
 ## <a name="see-also"></a>另請參閱  
- [在裝置上設定遠端工具](http://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c)
-
-
-
+ [在裝置上設定遠端工具](https://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c)

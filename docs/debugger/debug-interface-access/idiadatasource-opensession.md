@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 393abb3b1e1872a416865cbfee5c142bef98ce78
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56637070"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62838450"
 ---
 # <a name="idiadatasourceopensession"></a>IDiaDataSource::openSession
 開啟查詢符號的工作階段。
@@ -38,7 +38,7 @@ ppSession
 ## <a name="return-value"></a>傳回值
 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。 下表顯示可能的傳回值，這個方法。
 
-|值|說明|
+|值|描述|
 |-----------|-----------------|
 |E_UNEXPECTED|[IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md)物件先前尚未初始化符號的來源。|
 |E_INVALIDARG|無效的 `ppSession` 參數。|
@@ -60,7 +60,7 @@ if (FAILED(hr))
 }
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md)
 - [概觀](../../debugger/debug-interface-access/overview-debug-interface-access-sdk.md)
 - [IDiaSession](../../debugger/debug-interface-access/idiasession.md)

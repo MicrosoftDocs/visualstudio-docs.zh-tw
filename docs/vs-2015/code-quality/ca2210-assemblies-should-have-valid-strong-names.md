@@ -1,14 +1,9 @@
 ---
-title: CA2210： 組件應該具備有效的強式名稱 |Microsoft Docs
-ms.custom: ''
+title: CA2210:組件應該具備有效的強式名稱 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - AssembliesShouldHaveValidStrongNames
 - CA2210
@@ -20,14 +15,14 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 1551cccb11fc33a21503e7030cfd671c953ee17d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f94183c6051ed0c2603bbfe35484fabb83a2160f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49865813"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697992"
 ---
-# <a name="ca2210-assemblies-should-have-valid-strong-names"></a>CA2210：組件應包含有效的強式名稱
+# <a name="ca2210-assemblies-should-have-valid-strong-names"></a>CA2210:組件應該具備有效的強式名稱
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -72,7 +67,7 @@ ms.locfileid: "49865813"
 
 - 針對[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]v1.0 或 v1.1，使用任何一種<xref:System.Reflection.AssemblyKeyFileAttribute?displayProperty=fullName>或<xref:System.Reflection.AssemblyKeyNameAttribute?displayProperty=fullName>屬性。
 
-- 針對[!INCLUDE[dnprdnlong](../includes/dnprdnlong-md.md)]，使用任何一種`/keyfile`或是`/keycontainer`編譯器選項[/KEYFILE （指定金鑰或金鑰組以簽署組件）](http://msdn.microsoft.com/library/9b71f8c0-541c-4fe5-a0c7-9364f42ecb06)或[/KEYCONTAINER （指定金鑰容器以簽署組件）](http://msdn.microsoft.com/library/94882d12-b77a-49c7-96d0-18a31aee001e) c + + 中的連結器選項)。
+- 針對[!INCLUDE[dnprdnlong](../includes/dnprdnlong-md.md)]，使用任何一種`/keyfile`或是`/keycontainer`編譯器選項[/KEYFILE （指定金鑰或金鑰組以簽署組件）](https://msdn.microsoft.com/library/9b71f8c0-541c-4fe5-a0c7-9364f42ecb06)或[/KEYCONTAINER （指定金鑰容器以簽署組件）](https://msdn.microsoft.com/library/94882d12-b77a-49c7-96d0-18a31aee001e)中的連結器選項C++)。
 
   **若要在 Visual Studio 中以強式名稱組件簽章**
 
@@ -94,14 +89,11 @@ ms.locfileid: "49865813"
 
    **若要簽署為強式名稱，Visual Studio 外部組件**
 
--   使用強式名稱工具 (Sn.exe) 所提供的[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]SDK。 如需詳細資訊，請參閱 [Sn.exe (強式名稱工具)](http://msdn.microsoft.com/library/c1d2b532-1b8e-4c7a-8ac5-53b801135ec6)。
+- 使用強式名稱工具 (Sn.exe) 所提供的[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]SDK。 如需詳細資訊，請參閱 [Sn.exe (強式名稱工具)](https://msdn.microsoft.com/library/c1d2b532-1b8e-4c7a-8ac5-53b801135ec6)。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
  只有隱藏此規則的警告，如果環境中使用組件位置竄改內容不是問題。
 
 ## <a name="see-also"></a>另請參閱
  <xref:System.Reflection.AssemblyKeyFileAttribute?displayProperty=fullName> <xref:System.Reflection.AssemblyKeyNameAttribute?displayProperty=fullName>
- [如何： 簽署為強式名稱組件](http://msdn.microsoft.com/library/2c30799a-a826-46b4-a25d-c584027a6c67) [Sn.exe （強式名稱工具）](http://msdn.microsoft.com/library/c1d2b532-1b8e-4c7a-8ac5-53b801135ec6)
-
-
-
+ [如何：簽署為強式名稱組件](https://msdn.microsoft.com/library/2c30799a-a826-46b4-a25d-c584027a6c67) [Sn.exe （強式名稱工具）](https://msdn.microsoft.com/library/c1d2b532-1b8e-4c7a-8ac5-53b801135ec6)

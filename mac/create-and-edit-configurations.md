@@ -1,17 +1,17 @@
 ---
 title: 建立和編輯組建組態
 description: 本文描述如何在 Visual Studio for Mac 中建立組建組態
-author: conceptdev
-ms.author: crdun
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 05/06/2018
 ms.assetid: CC1B72D6-12FF-4CCC-A9D4-00F2DC14589F
 ms.custom: video
-ms.openlocfilehash: 14a9ed8423779ad878fb5c304bbb6d28e1945a91
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: 09591cb4feee4e9dc673f925bf3917eb3d07319b
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853322"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67693079"
 ---
 # <a name="creating-and-editing-build-configurations"></a>建立和編輯組建組態
 
@@ -23,15 +23,15 @@ ms.locfileid: "55853322"
 
 若要建立專案組建組態，請採取下列步驟：
 
-1. 以滑鼠右鍵按一下專案節點，然後選取 [選項]。
+1. 以滑鼠右鍵按一下專案節點，然後選取 [選項]  。
 
-2. 在專案選項對話方塊中，選取 [組建] > [組態]：
+2. 在專案選項對話方塊中，選取 [組建] > [組態]  ：
 
     ![專案選項中的組態管理員](media/create-and-edit-configurations-image2.png)
 
-3. 若要建立新的組態，請選取 [新增]。 或者，您可以複製其中一個現有的組態。
+3. 若要建立新的組態，請選取 [新增]  。 或者，您可以複製其中一個現有的組態。
 
-建立組態之後，您可以使用專案選項中的 [組建] 區段，調整屬性使其適用於您的組態：
+建立組態之後，您可以使用專案選項中的 [組建]  區段，調整屬性使其適用於您的組態：
 
 ![設定組建選項](media/create-and-edit-configurations-image3.png)
 
@@ -39,15 +39,15 @@ ms.locfileid: "55853322"
 
 若要建立方案組建組態，請採取下列步驟：
 
-1. 以滑鼠右鍵按一下方案節點，然後選取 [選項]。
+1. 以滑鼠右鍵按一下方案節點，然後選取 [選項]  。
 
-2. 在 [方案選項] 對話方塊中，選取 [組建] > [組態]：
+2. 在 [方案選項] 對話方塊中，選取 [組建] > [組態]  ：
 
     ![方案選項中的組態管理員](media/create-and-edit-configurations-image1.png)
 
-3. 若要建立新的組態，請選取 [新增]。 或者，您可以複製其中一個現有的組態。
+3. 若要建立新的組態，請選取 [新增]  。 或者，您可以複製其中一個現有的組態。
 
-建立組態之後，您可以使用每個專案選項中的 [組建] 區段，調整屬性使其適用於您的組態：
+建立組態之後，您可以使用每個專案選項中的 [組建]  區段，調整屬性使其適用於您的組態：
 
 ![設定組建選項](media/create-and-edit-configurations-image3.png)
 
@@ -57,7 +57,7 @@ ms.locfileid: "55853322"
 
 ![組態清單](media/create-and-edit-configurations-image4.png)
 
-選取 [重新命名] 按鈕。
+選取 [重新命名]  按鈕。
 
 ![重新命名對話方塊](media/create-and-edit-configurations-image5.png)
 

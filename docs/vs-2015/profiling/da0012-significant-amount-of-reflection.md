@@ -1,5 +1,5 @@
 ---
-title: DA0012：大量的反映 | Microsoft Docs
+title: DA0012：大量的反射 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -15,17 +15,17 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ae0f361d4bbfe48b3133e50c360f66387d555814
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54770769"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68187871"
 ---
 # <a name="da0012-significant-amount-of-reflection"></a>DA0012：大量的反射
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 規則 Id |DA0012 |  
-|類別目錄 |。.NET Framework 使用方式 |  
+|類別目錄 |.NET Framework 使用方式 |  
 |程式碼剖析方法 |取樣 |  
 |訊息 |您可能會過度使用反映。 這是很消耗資源的作業。|  
 |規則類型 |警告 |  

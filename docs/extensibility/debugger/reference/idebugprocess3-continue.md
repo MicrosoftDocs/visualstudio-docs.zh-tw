@@ -7,23 +7,26 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProcess3::Continue
 ms.assetid: 57506242-5763-4c08-adb9-8a78ce02cebb
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fefbbbced72a53566ffb726c9ea900e037ee4639
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: a7d20a375644cbbac975f62db216377f271a2675
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56719336"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66314050"
 ---
 # <a name="idebugprocess3continue"></a>IDebugProcess3::Continue
 會繼續執行此程序，從停止的狀態。 會保留任何先前的執行狀態 （例如在步驟），並在處理序啟動重新執行。
 
 > [!NOTE]
->  應該使用這個方法，而不是[繼續](../../../extensibility/debugger/reference/idebugprogram2-continue.md)。
+> 應該使用這個方法，而不是[繼續](../../../extensibility/debugger/reference/idebugprogram2-continue.md)。
 
 ## <a name="syntax"></a>語法
 
@@ -39,10 +42,9 @@ int Continue(
 );
 ```
 
-#### <a name="parameters"></a>參數
- `pThread`
-
- [in][IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)物件，代表要繼續執行的執行緒。
+## <a name="parameters"></a>參數
+`pThread`\
+[in][IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)物件，代表要繼續執行的執行緒。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`，否則會傳回錯誤碼。

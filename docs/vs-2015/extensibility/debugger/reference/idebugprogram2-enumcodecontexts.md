@@ -1,14 +1,9 @@
 ---
 title: IDebugProgram2::EnumCodeContexts |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugProgram2::EnumCodeContexts
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 478e06a2-07bb-4841-8887-deab0f42ebd0
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 5b1cfc604ca16b95195fa72e5046264abe5611ab
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 26bd68764b94aadccb796f33d127ba159e9c3727
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51786648"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68202758"
 ---
 # <a name="idebugprogram2enumcodecontexts"></a>IDebugProgram2::EnumCodeContexts
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -56,10 +51,9 @@ int EnumCodeContexts( 
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
   
 ## <a name="remarks"></a>備註  
- 這個方法可讓偵錯工作階段管理員 (SDM) 或對應到的程式碼指定位置的來源檔案位置的 IDE。 如果來源所產生的程式碼 （例如，c + + 範本） 的多個區塊，則會傳回一個以上的程式碼內容。  
+ 這個方法可讓偵錯工作階段管理員 (SDM) 或對應到的程式碼指定位置的來源檔案位置的 IDE。 如果來源所產生的程式碼的多個區塊，則會傳回一個以上的程式碼內容 (例如，C++範本)。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)   
  [IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md)   
  [IEnumDebugCodeContexts2](../../../extensibility/debugger/reference/ienumdebugcodecontexts2.md)
-

@@ -1,14 +1,9 @@
 ---
-title: CA1041： 提供 ObsoleteAttribute 訊息 |Microsoft Docs
-ms.custom: ''
+title: CA1041:提供 ObsoleteAttribute 訊息 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1041
 - ProvideObsoleteAttributeMessage
@@ -20,14 +15,14 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: f67bbd93816da3bcae389493b74623f0cf4776c0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: fe14ca0c0e917896a2ed5a31a03a8c1a7057d613
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49914719"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62559821"
 ---
-# <a name="ca1041-provide-obsoleteattribute-message"></a>CA1041：提供 ObsoleteAttribute 訊息
+# <a name="ca1041-provide-obsoleteattribute-message"></a>CA1041:必須提供 ObsoleteAttribute 訊息
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -58,6 +53,3 @@ ms.locfileid: "49914719"
 
 ## <a name="see-also"></a>另請參閱
  <xref:System.ObsoleteAttribute?displayProperty=fullName>
-
-
-

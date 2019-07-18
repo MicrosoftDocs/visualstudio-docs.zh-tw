@@ -1,26 +1,21 @@
 ---
 title: 編輯器匯入 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - services
 ms.assetid: 8d096de3-33b4-427a-a122-4aeff8a72da0
 caps.latest.revision: 20
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 8f82815871f59dfcf4d384157a9461388e96d05e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 1fc32d0126d912acab104ecefe3cb62d80b8513f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51759033"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65690310"
 ---
 # <a name="editor-imports"></a>編輯器匯入
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +25,7 @@ ms.locfileid: "51759033"
  若要使用的編輯器匯入，您它匯入為欄位或屬性的匯出 Managed Extensibility Framework 元件組件的類別。  
   
 > [!NOTE]
->  如需有關 Managed Extensibility Framework 的詳細資訊，請參閱[Managed Extensibility Framework (MEF)](http://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde)。  
+> 如需有關 Managed Extensibility Framework 的詳細資訊，請參閱[Managed Extensibility Framework (MEF)](https://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde)。  
   
 ## <a name="import-syntax"></a>匯入語法  
  下列範例顯示如何匯入編輯器選項 factory 服務。  
@@ -51,13 +46,13 @@ internal IEditorOptionsFactoryService m_editorOptions = null;
   
  [逐步解說：建立邊界字符](../extensibility/walkthrough-creating-a-margin-glyph.md)  
   
- [逐步解說︰自訂文字檢視](../extensibility/walkthrough-customizing-the-text-view.md)  
+ [逐步解說：自訂文字檢視](../extensibility/walkthrough-customizing-the-text-view.md)  
   
- [逐步解說︰反白顯示文字](../extensibility/walkthrough-highlighting-text.md)  
+ [逐步解說：反白顯示文字](../extensibility/walkthrough-highlighting-text.md)  
   
- [逐步解說︰顯示 QuickInfo 工具提示](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)  
+ [逐步解說：顯示 QuickInfo 工具提示](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)  
   
- [逐步解說︰顯示簽章說明](../extensibility/walkthrough-displaying-signature-help.md)  
+ [逐步解說：顯示簽章說明](../extensibility/walkthrough-displaying-signature-help.md)  
   
  [逐步解說：顯示陳述式完成](../extensibility/walkthrough-displaying-statement-completion.md)  
   
@@ -71,7 +66,7 @@ internal IEditorOptionsFactoryService m_editorOptions = null;
 internal SVsServiceProvider ServiceProvider = null;   
 ```  
   
- 請參閱[逐步解說： 從編輯器擴充功能存取 DTE 物件](../extensibility/walkthrough-accessing-the-dte-object-from-an-editor-extension.md)如需詳細資訊。  
+ 請參閱[逐步解說：從編輯器擴充功能存取 DTE 物件](../extensibility/walkthrough-accessing-the-dte-object-from-an-editor-extension.md)如需詳細資訊。  
   
 ## <a name="services"></a>服務  
  編輯器服務是提供服務和多個元件之間共用的通常單一實體。  
@@ -129,4 +124,3 @@ internal SVsServiceProvider ServiceProvider = null;
   
 ## <a name="see-also"></a>另請參閱  
  [語言服務及編輯器擴充點](../extensibility/language-service-and-editor-extension-points.md)
-

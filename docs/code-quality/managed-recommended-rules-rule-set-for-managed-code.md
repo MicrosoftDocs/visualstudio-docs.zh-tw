@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: c07471290756acc74289a552fcafde746c020e71
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55918386"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62823539"
 ---
 # <a name="managed-recommended-rules-rule-set-for-managed-code"></a>適用於 Managed 程式碼的 Managed 建議規則規則集
 您可以使用 Microsoft 受控建議規則規則集將焦點放在最關鍵的問題，在 managed 程式碼，包括潛在的安全性漏洞、 應用程式當機，以及其他重要的邏輯和設計錯誤。 您應該包含這個規則集在您的專案建立的任何自訂規則集。

@@ -1,14 +1,9 @@
 ---
 title: 'Idiaenumsymbols:: Next |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: bfe5fe27-6a84-4392-910f-e325146d7552
 caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 5fcb55a6d6dab2f6c8646909c62fff6d3ec002b2
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: cdea32ece50e83c046a67399a0d5f36410edb9a1
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51767469"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68189696"
 ---
 # <a name="idiaenumsymbolsnext"></a>IDiaEnumSymbols::Next
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -51,7 +46,7 @@ HRESULT Next ( 
  [out]擷取列舉值中傳回符號的數。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`。 傳回`S_FALSE`有沒有更多的符號。 反之則傳回錯誤碼。  
+ 如果成功，則傳回 `S_OK`。 傳回`S_FALSE`有沒有更多的符號。 否則會傳回錯誤碼。  
   
 ## <a name="example"></a>範例  
   
@@ -64,8 +59,5 @@ pEnum->Next( 1, &pSym, &celt );
   
 ## <a name="see-also"></a>另請參閱  
  [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)   
- [Idiasession:: Findlinesbylinenum](../../debugger/debug-interface-access/idiasession-findlinesbylinenum.md)   
+ [IDiaSession::findLinesByLinenum](../../debugger/debug-interface-access/idiasession-findlinesbylinenum.md)   
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
-
-
-

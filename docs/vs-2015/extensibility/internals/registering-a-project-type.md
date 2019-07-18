@@ -1,14 +1,9 @@
 ---
 title: 註冊專案類型 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio SDK], new project registry entries
 - registry, new project types
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: dfc0e231-6b4e-447d-9d64-0e66dea3394a
 caps.latest.revision: 22
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 38848e54f95cc3d78cf3bae2f32bd9827e98c5ac
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 63e0140b752adda02aba6126580ec08ee1f7536a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51785322"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436623"
 ---
 # <a name="registering-a-project-type"></a>註冊專案類型
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -32,7 +27,7 @@ ms.locfileid: "51785322"
  在下列範例中，從登錄的陳述式提供預設路徑和資料如果適用的話，後面的資料表包含每個陳述式的登錄指令碼中的項目。 資料表提供的指令碼項目和陳述式的其他資訊。  
   
 > [!NOTE]
->  下列的登錄資訊被要當做類型的範例和用途，您會撰寫以註冊您的專案類型的登錄指令碼中的項目。 您實際的項目和其用法可能會因您的專案類型的特定需求。 您應該檢閱可用來尋找接近您正在開發，專案類型的其中一個範例，然後檢閱 登錄指令碼，該範例。  
+> 下列的登錄資訊被要當做類型的範例和用途，您會撰寫以註冊您的專案類型的登錄指令碼中的項目。 您實際的項目和其用法可能會因您的專案類型的特定需求。 您應該檢閱可用來尋找接近您正在開發，專案類型的其中一個範例，然後檢閱 登錄指令碼，該範例。  
   
  下列範例會從 HKEY_CLASSES_ROOT。  
   
@@ -200,7 +195,7 @@ ms.locfileid: "51785322"
   
 |名稱|類型|資料|描述|  
 |----------|----------|----------|-----------------|  
-|`@`|REG_SZ|無|預設值，指出下列項目會針對其他檔案專案項目。|  
+|`@`|REG_SZ|None|預設值，指出下列項目會針對其他檔案專案項目。|  
 |`@`|REG_SZ|`#%IDS_ADDITEM_TEMPLATES_ENTRY%`|加入新項目範本檔案的資源 ID 值。|  
 |`TemplatesDir`|REG_SZ|`%TEMPLATE_PATH%\FigPrjProjectItems`|預設路徑，將會顯示在項目的**加入新項目** 對話方塊。|  
 |`SortPriority`|REG_DWORD|`100 (vcprx64)`|建立的樹狀節點顯示的排序次序**加入新項目** 對話方塊。|  
@@ -229,7 +224,7 @@ ms.locfileid: "51785322"
   
 |名稱|類型|資料|描述|  
 |----------|----------|----------|-----------------|  
-|%Clsid_package%|REG_SZ|`,1000,1`|要擷取的功能表資訊的資源。|  
+|%CLSID_Package%|REG_SZ|`,1000,1`|要擷取的功能表資訊的資源。|  
   
  下列所有範例都位於 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\9.0Exp\NewProjectTemplates] 機碼下登錄。  
   
@@ -272,7 +267,6 @@ ms.locfileid: "51785322"
  這表示如果您包含 PROJECT_TYPE = EF 在.vsz 檔案中，您的.vsz 檔案先前指定的 ProductDir 目錄中環境找到的項目。  
   
 ## <a name="see-also"></a>另請參閱  
- [檢查清單： 建立新的專案類型](../../extensibility/internals/checklist-creating-new-project-types.md)   
+ [檢查清單：建立新的專案類型](../../extensibility/internals/checklist-creating-new-project-types.md)   
  [專案模型的項目](../../extensibility/internals/elements-of-a-project-model.md)   
  [使用 Project Factory 建立專案執行個體](../../extensibility/internals/creating-project-instances-by-using-project-factories.md)
-

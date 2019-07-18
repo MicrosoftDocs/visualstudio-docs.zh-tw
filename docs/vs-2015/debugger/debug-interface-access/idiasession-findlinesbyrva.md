@@ -1,14 +1,9 @@
 ---
-title: 'Idiasession:: Findlinesbyrva |Microsoft Docs'
-ms.custom: ''
+title: IDiaSession::findLinesByRVA | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 06f53b0b-b5b4-42cf-9252-dcee0dbe2d71
 caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 3ad9f60ea3c13a77a7f4e57b37a595bbb1c78354
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 8c066e183d60a1f7d967cafa1114d6241b28caa4
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51810100"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68165492"
 ---
 # <a name="idiasessionfindlinesbyrva"></a>IDiaSession::findLinesByRVA
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -75,6 +70,3 @@ IDiaEnumLineNumbers* GetLineNumbersByRVA(IDiaSymbol *pFunc, IDiaSession *pSessio
 ## <a name="see-also"></a>另請參閱  
  [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)   
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)
-
-
-

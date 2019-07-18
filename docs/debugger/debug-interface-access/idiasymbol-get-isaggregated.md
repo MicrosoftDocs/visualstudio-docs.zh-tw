@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ac588314b69c6be8b31cc5719a4be8add3cad33
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: db6c2e47d9f316f758b854e5ce40dfc19acb592b
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56611031"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "64830553"
 ---
 # <a name="idiasymbolgetisaggregated"></a>IDiaSymbol::get_isAggregated
 擷取指定資料符號是否為彙總或符號; 集合的一部分的旗標編譯器會視為個別的實體的彙總的符號，但它們其實是單一的較大符號的一部分。
@@ -39,7 +39,7 @@ HRESULT get_isAggregated(
  如果成功，則傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。
 
 > [!NOTE]
->  傳回值為`S_FALSE`表示此屬性不適用於符號。
+> 傳回值為`S_FALSE`表示此屬性不適用於符號。
 
 ## <a name="remarks"></a>備註
  [Idiasymbol:: Get_issplitted](../../debugger/debug-interface-access/idiasymbol-get-issplitted.md)方法是`TRUE`父系的彙總的符號的符號。
@@ -51,6 +51,6 @@ HRESULT get_isAggregated(
 |標頭：|dia2.h|
 |版本:|DIA SDK v8.0|
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
 - [IDiaSymbol::get_isSplitted](../../debugger/debug-interface-access/idiasymbol-get-issplitted.md)

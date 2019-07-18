@@ -1,14 +1,9 @@
 ---
-title: CA1304： 指定 CultureInfo |Microsoft Docs
-ms.custom: ''
+title: CA1304:指定 CultureInfo |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - SpecifyCultureInfo
 - CA1304
@@ -20,14 +15,14 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 0078309f1c87e4bd1feb9a8c82d7c654185c13df
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f5d4333508d6faec3df81f860f5b5b2b526be324
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49948774"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65692088"
 ---
-# <a name="ca1304-specify-cultureinfo"></a>CA1304：指定 CultureInfo
+# <a name="ca1304-specify-cultureinfo"></a>CA1304:必須指定 CultureInfo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -40,11 +35,11 @@ ms.locfileid: "49948774"
 ## <a name="cause"></a>原因
  方法或建構函式呼叫可接受的多載成員<xref:System.Globalization.CultureInfo?displayProperty=fullName>參數的方法或建構函式不會呼叫多載，<xref:System.Globalization.CultureInfo>參數。 此規則會忽略呼叫下列方法：
 
--   <xref:System.Activator.CreateInstance%2A?displayProperty=fullName>
+- <xref:System.Activator.CreateInstance%2A?displayProperty=fullName>
 
--   <xref:System.Resources.ResourceManager.GetObject%2A?displayProperty=fullName>
+- <xref:System.Resources.ResourceManager.GetObject%2A?displayProperty=fullName>
 
--   <xref:System.Resources.ResourceManager.GetString%2A?displayProperty=fullName>
+- <xref:System.Resources.ResourceManager.GetString%2A?displayProperty=fullName>
 
 ## <a name="rule-description"></a>規則描述
  當<xref:System.Globalization.CultureInfo>或<xref:System.IFormatProvider?displayProperty=fullName>未提供物件，多載成員所提供的預設值可能沒有您想要以所有地區設定的效果。 此外，[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]成員選擇預設文化特性及格式設定為基礎的假設，可能不正確的程式碼。 為了確保程式碼的運作如預期般運作，您的案例，您應該提供特定文化特性資訊，根據下列指導方針：
@@ -80,10 +75,7 @@ ms.locfileid: "49948774"
  **1900 年 6 月 4 日下午 12:15:12**
 **1900 年 06 月 04 日 12:15:12**
 ## <a name="related-rules"></a>相關的規則
- [CA1305：指定 IFormatProvider](../code-quality/ca1305-specify-iformatprovider.md)
+ [CA1305:指定 IFormatProvider](../code-quality/ca1305-specify-iformatprovider.md)
 
 ## <a name="see-also"></a>另請參閱
- [NIB： 使用 CultureInfo 類別](http://msdn.microsoft.com/en-us/d4329e34-64c3-4d1e-8c73-5b0ee626ba7a)
-
-
-
+ [NIB：使用 CultureInfo 類別](https://msdn.microsoft.com/d4329e34-64c3-4d1e-8c73-5b0ee626ba7a)

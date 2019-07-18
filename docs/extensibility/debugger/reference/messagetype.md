@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - MESSAGETYPE enumeration
 ms.assetid: 800cc77d-3c27-4763-a9df-552a9384bd49
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 16d2b9ae9c446d4c8082a8c35c9e4d1810233b95
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 8c17860bb47f493031e6db1134aec498611b07f1
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56687506"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66339198"
 ---
 # <a name="messagetype"></a>MESSAGETYPE
 指定訊息類型和原因。
@@ -47,18 +50,24 @@ public enum enum_MESSAGETYPE { 
 };
 ```
 
-## <a name="members"></a>成員
- MT_OUTPUTSTRING 表示訊息應傳送至輸出視窗。 這是從互斥`MT_MESSAGEBOX`。
+## <a name="fields"></a>欄位
+ `MT_OUTPUTSTRING`\
+ 表示訊息應傳送至輸出視窗。 這是從互斥`MT_MESSAGEBOX`。
 
- MT_MESSAGEBOX 指示訊息應該顯示在訊息方塊。 這是從互斥`MT_OUTPUTSTRING`。
+ `MT_MESSAGEBOX`\
+ 指示訊息應該會顯示訊息方塊。 這是從互斥`MT_OUTPUTSTRING`。
 
- 若要找出訊息的目的地 MT_TYPE_MASK 的遮罩值。
+ `MT_TYPE_MASK`\
+ 要找出訊息的目的地的遮罩值。
 
- MT_REASON_EXCEPTION 指出訊息方塊顯示在發生例外狀況。 這是從互斥`MT_REASON_TRACEPOINT`。
+ `MT_REASON_EXCEPTION`\
+ 表示在發生例外狀況，正在顯示訊息方塊。 這是從互斥`MT_REASON_TRACEPOINT`。
 
- MT_REASON_TRACEPOINT 指出訊息方塊顯示因為叫用追蹤點。 這是互斥`MT_REASON_EXCEPTION`。
+ `MT_REASON_TRACEPOINT`\
+ 表示顯示訊息方塊的結果叫用追蹤點。 這是互斥`MT_REASON_EXCEPTION`。
 
- 若要找出所顯示的訊息的原因 MT_REASON_MASK 的遮罩值。
+ `MT_REASON_MASK`\
+ 要找出所顯示的訊息的原因的遮罩值。
 
 ## <a name="remarks"></a>備註
  會傳回這些值從[GetMessage](../../../extensibility/debugger/reference/idebugmessageevent2-getmessage.md)並[GetErrorMessage](../../../extensibility/debugger/reference/idebugerrorevent2-geterrormessage.md)方法。

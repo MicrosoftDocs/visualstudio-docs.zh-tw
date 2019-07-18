@@ -1,14 +1,9 @@
 ---
 title: ProvideDefaultName 項目 （Visual Studio 範本） |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#ProvideDefaultName
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 7b0e7b20-fd6b-42e2-81d0-e5100cea0528
 caps.latest.revision: 13
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: eec34681d4ebfede8fb811af149e5bbeca081aad
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 0bd18dd979436b02cc12a4dab5439bdb5f371e2d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51767802"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68193884"
 ---
 # <a name="providedefaultname-element-visual-studio-templates"></a>ProvideDefaultName 項目 (Visual Studio 範本)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +26,7 @@ ms.locfileid: "51767802"
   
  \<VSTemplate >  
  \<TemplateData >  
- \<ProvideDefaultName >  
+ \<ProvideDefaultName>  
   
 ## <a name="syntax"></a>語法  
   
@@ -60,7 +55,7 @@ ms.locfileid: "51767802"
  文字必須是`true`或`false`，指出是否要產生的範本中的預設名稱**加入新項目**或是**新專案** 對話方塊。  
   
 ## <a name="remarks"></a>備註  
- `ProvideDefaultName` 是選擇性項目。 預設值是 `true`。  
+ `ProvideDefaultName` 是選擇性項目。 預設值為 `true`。  
   
  如果`ProvideDefaultName`項目是`false`，則**名稱**的方塊**加入新項目**並**新專案**對話方塊會包含值`<Enter_name>`。  
   
@@ -88,4 +83,3 @@ ms.locfileid: "51767802"
 ## <a name="see-also"></a>另請參閱  
  [Visual Studio 範本結構描述參考](../extensibility/visual-studio-template-schema-reference.md)   
  [建立專案和項目範本](../ide/creating-project-and-item-templates.md)
-

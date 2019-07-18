@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - debug engines, attaching to programs
 ms.assetid: 5a3600a1-dc20-4e55-b2a4-809736a6ae65
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 54284b9e1e55e4e3a3ba8b8237b9420cbf195089
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: d7a1ff749d340110707296c9d4958d13a3faa952
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56704042"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66350924"
 ---
 # <a name="attach-after-a-launch"></a>在啟動後附加
 程式啟動之後，偵錯工作階段已附加偵錯引擎 (DE) 至前述的程式。
@@ -23,12 +23,12 @@ ms.locfileid: "56704042"
 ## <a name="design-decisions"></a>設計決策
  因為通訊是更容易在共用的位址空間內，您必須選擇兩種設計方法： 設定偵錯工作階段和裝置之間的通訊。 或者，設定 DE 與程式之間的通訊。 選擇下列兩者之一：
 
--   如果較為合理設為偵錯工作階段和裝置之間的通訊，偵錯工作階段 DE 會同時建立，並要求將附加至程式 DE。 這項設計會保留偵錯工作階段，以 DE 一起在一個位址空間的執行階段環境與程式一起放在另一個。
+- 如果較為合理設為偵錯工作階段和裝置之間的通訊，偵錯工作階段 DE 會同時建立，並要求將附加至程式 DE。 這項設計會保留偵錯工作階段，以 DE 一起在一個位址空間的執行階段環境與程式一起放在另一個。
 
--   如果較為合理設為德國與程式之間的通訊，執行階段環境會同時建立 DE。 這項設計會留下一個位址空間和 DE、 執行階段環境，以及計劃中的 SDM 一起放在另一個。 這項設計是典型的規定與解譯器，以執行指令碼的語言實作的。
+- 如果較為合理設為德國與程式之間的通訊，執行階段環境會同時建立 DE。 這項設計會留下一個位址空間和 DE、 執行階段環境，以及計劃中的 SDM 一起放在另一個。 這項設計是典型的規定與解譯器，以執行指令碼的語言實作的。
 
     > [!NOTE]
-    >  DE 將附加至程式的方式會視實作而定。 DE 與程式之間的通訊也會視實作而定。
+    > DE 將附加至程式的方式會視實作而定。 DE 與程式之間的通訊也會視實作而定。
 
 ## <a name="implementation"></a>實作
  以程式設計的方式，當工作階段的偵錯管理員 (SDM) 先收到[IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md)物件，表示要啟動的程式，它會呼叫[附加](../../extensibility/debugger/reference/idebugprogram2-attach.md)方法，並傳遞它[IDebugEventCallback2](../../extensibility/debugger/reference/idebugeventcallback2.md)物件，也就是更新用來傳遞回到 SDM 的偵錯事件。 `IDebugProgram2::Attach`然後方法會呼叫[OnAttach](../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md)方法。 如需有關如何接收 SDM`IDebugProgram2`介面，請參閱 <<c2> [ 通知連接埠](../../extensibility/debugger/notifying-the-port.md)。

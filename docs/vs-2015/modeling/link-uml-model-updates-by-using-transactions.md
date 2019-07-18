@@ -1,25 +1,22 @@
 ---
 title: 使用異動連結 UML 模型更新 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML API, transactions
 ms.assetid: a1df6c38-a3d1-4a3f-82bc-c8f363ab916e
 caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: fb8bb5dfd5238871324b786f120d618d70f14b43
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f938e08d2bc9363be5e3f9e1ac247dea36f25a80
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51800402"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68191717"
 ---
 # <a name="link-uml-model-updates-by-using-transactions"></a>使用異動連結 UML 模型更新
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +32,7 @@ ms.locfileid: "51800402"
 ## <a name="to-group-changes-into-a-single-transaction"></a>將變更群組為單一異動  
  請確保您的專案參考包含這個 .NET 組件：  
   
- **Microsoft.VisualStudio.Modeling.Sdk。[version].dll**  
+ **Microsoft.VisualStudio.Modeling.Sdk.[version].dll**  
   
  請在您的類別中宣告具有 <xref:Microsoft.VisualStudio.Modeling.ExtensionEnablement.ILinkedUndoContext> 類型的已匯入屬性：  
   
@@ -65,15 +62,15 @@ ms.locfileid: "51800402"
   
  請注意以下各點：  
   
--   您必須一律將 `Commit()` 包含於此異動的結尾。 如果在沒有得到認可的情況下處置異動，則會復原該異動。 也就是說，該模型會還原至此異動開始時的狀態。  
+- 您必須一律將 `Commit()` 包含於此異動的結尾。 如果在沒有得到認可的情況下處置異動，則會復原該異動。 也就是說，該模型會還原至此異動開始時的狀態。  
   
--   如果異動內沒有攔截到的例外狀況發生，則會復原該異動。 常見的模式是將異動的 `using` 區塊置於 `try…catch` 區塊內。  
+- 如果異動內沒有攔截到的例外狀況發生，則會復原該異動。 常見的模式是將異動的 `using` 區塊置於 `try…catch` 區塊內。  
   
--   您可以進行巢狀異動。  
+- 您可以進行巢狀異動。  
   
--   您可以為 `BeginTransaction()` 提供任何非空白名稱。  
+- 您可以為 `BeginTransaction()` 提供任何非空白名稱。  
   
--   只有該「UML 模型存放區」會受這些異動影響。 模型異動並不會影響變數、外部存放區 (例如檔案和資料庫)、分層圖和程式碼模型。  
+- 只有該「UML 模型存放區」會受這些異動影響。 模型異動並不會影響變數、外部存放區 (例如檔案和資料庫)、分層圖和程式碼模型。  
   
 ## <a name="example"></a>範例  
   
@@ -115,6 +112,3 @@ ms.locfileid: "51800402"
  [使用 UML API 進行程式設計](../modeling/programming-with-the-uml-api.md)   
  [在模型圖上定義功能表命令](../modeling/define-a-menu-command-on-a-modeling-diagram.md)   
  [擴充 UML 模型和圖表](../modeling/extend-uml-models-and-diagrams.md)
-
-
-

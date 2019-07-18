@@ -14,12 +14,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b88170e1fe1aa5154616c95c29d0585fc74ba34c
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: 1c6cdfc62885133d82911c7336d011804e9a322d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56954318"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62817593"
 ---
 # <a name="options-text-editor-cc-advanced"></a>進階、C/C++、文字編輯器、選項
 
@@ -29,7 +29,6 @@ ms.locfileid: "56954318"
 
 > [!NOTE]
 > 在下列指示的某些 Visual Studio 使用者介面項目中，您的電腦可能會顯示不同的名稱或位置。 您所擁有的 Visual Studio 版本以及使用的設定會決定這些項目。 請參閱[將 Visual Studio IDE 個人化](../../ide/personalizing-the-visual-studio-ide.md)。
-
 
 ## <a name="browsingnavigation"></a>瀏覽/巡覽
 

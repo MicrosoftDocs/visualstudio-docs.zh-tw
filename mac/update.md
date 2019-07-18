@@ -1,32 +1,32 @@
 ---
 title: 更新 Visual Studio for Mac
 description: 更新 Visual Studio for Mac 以及存取預覽版本的指示。
-author: conceptdev
-ms.author: crdun
-ms.date: 05/06/2018
+author: asb3993
+ms.author: amburns
+ms.date: 04/02/2019
 ms.technology: vs-ide-install
 ms.assetid: DB8DC9FE-FF21-4061-8A96-3F9FC08A4F8F
-ms.openlocfilehash: 6f60b32b66dc2c33a0ecbcd71f80fd613d273b64
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 7aef66e53fee6578707afa60b6ebcf2b7892207b
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51294399"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67691847"
 ---
 # <a name="update-visual-studio-for-mac"></a>更新 Visual Studio for Mac
 
 Visual Studio for Mac 會定期散發 IDE 和已支援架構的更新。 這些更新可能為新功能、改善和 Bug 修正的形式。
 
-Visual Studio for Mac 提供三個通道來取得這些最新版本：
+Visual Studio for Mac 提供兩個通道來取得這些最新版本：
 
 * **穩定** - 提供完整測試過的更新。 建議使用此通道，獲得最佳開發體驗。
-* **搶鮮版 (Beta)** / **Alpha** - 早期存取本身為穩定通道中發行候選的更新。 這些版本可能不適合日常使用。
+* **預覽版** - 優先存取更新，也就是有機會在穩定通道中發行的候選更新。 這些版本可能不適合日常使用。
 
 ## <a name="checking-for-updates"></a>檢查更新
 
-您可以使用 [Visual Studio 更新程式] 方塊檢查新更新、變更通道，以及下載並安裝更新。
+您可以使用 [Visual Studio 更新程式]  方塊檢查新更新、變更通道，以及下載並安裝更新。
 
-若要開啟 [Visual Studio 更新程式]，請瀏覽至 [Visual Studio] > [檢查更新]：
+若要開啟 [Visual Studio 更新程式]  ，請瀏覽至 [Visual Studio] > [檢查更新]  ：
 
 ![檢查更新選項](media/update-image1.png)
 
@@ -36,7 +36,7 @@ Visual Studio for Mac 提供三個通道來取得這些最新版本：
 
 ## <a name="changing-the-updater-channel"></a>變更更新程式通道
 
-若要變更通道，請從通道下拉式清單中選取它，然後按 [Switch Channel] (切換通道) 按鈕：
+若要變更通道，請從通道下拉式清單中選取它，然後按 [Switch Channel] (切換通道)  按鈕：
 
 ![Change Channel (變更通道) 下拉式清單](media/update-image3.png)
 
@@ -44,13 +44,17 @@ Visual Studio for Mac 提供三個通道來取得這些最新版本：
 
 切換通道會自動啟動新更新的下載程序。
 
-如果您已選取 [自動檢查] 選項，則在開啟 Visual Studio for Mac 時會顯示更新程式方塊，讓您知道有新的更新可用。 它也可讓您選擇開始進行下載。
+如果您已選取 [自動檢查]  選項，則在開啟 Visual Studio for Mac 時會顯示更新程式方塊，讓您知道有新的更新可用。 它也可讓您選擇開始進行下載。
 
-若要開始安裝更新，請選取 [重新啟動和安裝更新] 按鈕：
+若要開始安裝更新，請選取 [重新啟動和安裝更新]  按鈕：
 
 ![開始安裝更新的按鈕](media/update-image4.png)
 
 根據需要安裝的元件，您可能需要接受額外的授權或輸入您電腦的系統管理員使用者名稱和密碼。
+
+## <a name="troubleshooting"></a>疑難排解
+
+如果您遇到更新程式的問題，請嘗試遵循[更新程式疑難排解](updater-troubleshooting.md)指南中的步驟。
 
 ## <a name="see-also"></a>另請參閱
 

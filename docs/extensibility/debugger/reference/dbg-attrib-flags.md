@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - DBGPROP_ATTRIB_FLAGS enumerations
 ms.assetid: 2f13e601-dadc-476e-a8ec-01c4515082e7
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 831d1326d88e70ffaba2cc0c242c55d7325be705
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: fde7ac384a6b2de293fc9baf0075438c9c609236
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56689326"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66346289"
 ---
 # <a name="dbgattribflags"></a>DBG_ATTRIB_FLAGS
 描述各種屬性，如[IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)該[IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)介面。 成員[DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md)結構。
@@ -163,98 +166,142 @@ public const int DBG_ATTRIB_MULTI_CUSTOM_VIEWERS = 0x0001000000000000
 ```
 
 ## <a name="members"></a>成員
- DBG_ATTRIB_NONE 表示沒有屬性。
+ `DBG_ATTRIB_NONE`\
+ 表示沒有屬性。
 
- DBG_ATTRIB_ALL 表示所有屬性。
+ `DBG_ATTRIB_ALL`\
+ 表示所有屬性。
 
- DBG_ATTRIB_OBJ_IS_EXPANDABLE 表示參考或屬性具有子系。
+ `DBG_ATTRIB_OBJ_IS_EXPANDABLE`\
+ 表示參考或屬性具有子系。
 
- DBG_ATTRIB_OBJ_HAS_ID 指出已建立此物件的識別碼。
+ `DBG_ATTRIB_OBJ_HAS_ID`\
+ 表示已建立此物件的識別碼。
 
- DBG_ATTRIB_OBJ_CAN_HAVE_ID 表示，可以建立此物件的識別碼。
+ `DBG_ATTRIB_OBJ_CAN_HAVE_ID`\
+ 表示可以建立此物件的識別碼。
 
- DBG_ATTRIB_VALUE_READONLY 表示值是唯讀的。
+ `DBG_ATTRIB_VALUE_READONLY`\
+ 表示值是唯讀值。
 
- DBG_ATTRIB_VALUE_ERROR 表示值，會產生錯誤。
+ `DBG_ATTRIB_VALUE_ERROR`\
+ 表示值，會產生錯誤。
 
- DBG_ATTRIB_VALUE_SIDE_EFFECT 表示評估有副作用。
+ `DBG_ATTRIB_VALUE_SIDE_EFFECT`\
+ 表示評估有副作用。
 
- DBG_ATTRIB_OVERLOADED_CONTAINER 表示此屬性實際上是多載的容器。
+ `DBG_ATTRIB_OVERLOADED_CONTAINER`\
+ 表示此屬性實際上是多載的容器。
 
- DBG_ATTRIB_VALUE_BOOLEAN 表示中的值`DEBUG_PROPERTY_INFO::bstrValue`是布林值。
+ `DBG_ATTRIB_VALUE_BOOLEAN`\
+ 表示中的值`DEBUG_PROPERTY_INFO::bstrValue`是布林值。
 
- DBG_ATTRIB_VALUE_BOOLEAN_TRUE 表示中的值`DEBUG_PROPERTY_INFO::bstrValue`是布林值和`TRUE`。
+ `DBG_ATTRIB_VALUE_BOOLEAN_TRUE`\
+ 表示中的值`DEBUG_PROPERTY_INFO::bstrValue`是布林值和`TRUE`。
 
- DBG_ATTRIB_VALUE_INVALID 表示中的值`DEBUG_PROPERTY_INFO::bstrValue`無效。
+ `DBG_ATTRIB_VALUE_INVALID`\
+ 表示 `DEBUG_PROPERTY_INFO::bstrValue` 中的值無效。
 
- DBG_ATTRIB_VALUE_NAT 表示中的值`DEBUG_PROPERTY_INFO::bstrValue`是 「*不是一個東西*」 (NAT)。 NAT 描述 Intel 64 位元處理器暫存器旗標，指出延後的推測性例外狀況。
+ `DBG_ATTRIB_VALUE_NAT`\
+ 表示中的值`DEBUG_PROPERTY_INFO::bstrValue`是 「*不是一個東西*」 (NAT)。 NAT 描述 Intel 64 位元處理器暫存器旗標，指出延後的推測性例外狀況。
 
- DBG_ATTRIB_VALUE_AUTOEXPANDED 表示中的值`DEBUG_PROPERTY_INFO::bstrValue`可能已自動展開。
+ `DBG_ATTRIB_VALUE_AUTOEXPANDED`\
+ 表示中的值`DEBUG_PROPERTY_INFO::bstrValue`可能已自動展開。
 
- DBG_ATTRIB_VALUE_TIMEOUT 表示評估已逾時。
+ `DBG_ATTRIB_VALUE_TIMEOUT`\
+ 表示，評估已逾時。
 
- DBG_ATTRIB_VALUE_RAW_STRING 表示中的值`DEBUG_PROPERTY_INFO::bstrValue`可以由原始字串。
+ `DBG_ATTRIB_VALUE_RAW_STRING`\
+ 表示中的值`DEBUG_PROPERTY_INFO::bstrValue`可以由原始字串。
 
- DBG_ATTRIB_VALUE_CUSTOM_VIEWER 表示此屬性具有至少一個與其相關聯的自訂檢視器。
+ `DBG_ATTRIB_VALUE_CUSTOM_VIEWER`\
+ 表示此屬性具有至少一個與其相關聯的自訂檢視器。
 
- DBG_ATTRIB_ACCESS_NONE 表示沒有物件`public`， `private`，也不`protected`輸入存取。
+ `DBG_ATTRIB_ACCESS_NONE`\
+ 表示物件沒有`public`， `private`，也不`protected`輸入存取。
 
- DBG_ATTRIB_ACCESS_PUBLIC 表示具有公用存取的物件。
+ `DBG_ATTRIB_ACCESS_PUBLIC`\
+ 表示具有公用存取的物件。
 
- DBG_ATTRIB_ACCESS_PRIVATE 表示具有私用存取的物件。
+ `DBG_ATTRIB_ACCESS_PRIVATE`\
+ 表示具有私用存取的物件。
 
- DBG_ATTRIB_ACCESS_PROTECTED 表示具有保護存取的物件。
+ `DBG_ATTRIB_ACCESS_PROTECTED`\
+ 表示具有保護存取的物件。
 
- DBG_ATTRIB_ACCESS_FINAL 表示具有最終存取的物件。
+ `DBG_ATTRIB_ACCESS_FINAL`\
+ 表示具有最終存取的物件。
 
- 要擷取的存取權的 DBG_ATTRIB_ACCESS_ALL 遮罩屬性從`DBG_ATTRIB_FLAGS`。
+ `DBG_ATTRIB_ACCESS_ALL`\
+ 若要擷取的存取屬性的遮罩`DBG_ATTRIB_FLAGS`。
 
- DBG_ATTRIB_STORAGE_NONE 表示沒有指定任何儲存體類型。
+ `DBG_ATTRIB_STORAGE_NONE`\
+ 表示沒有指定的儲存體類型。
 
- DBG_ATTRIB_STORAGE_GLOBAL 表示全域儲存體。
+ `DBG_ATTRIB_STORAGE_GLOBAL`\
+ 表示全域儲存體。
 
- DBG_ATTRIB_STORAGE_STATIC 表示靜態儲存體。
+ `DBG_ATTRIB_STORAGE_STATIC`\
+ 表示靜態儲存體。
 
- 在登錄中 DBG_ATTRIB_STORAGE_REGISTER 指出的儲存體。
+ `DBG_ATTRIB_STORAGE_REGISTER`\
+ 表示在暫存器中的儲存體。
 
- 要擷取儲存體的 DBG_ATTRIB_STORAGE_ALL 遮罩屬性從`DBG_ATTRIB_FLAGS`。
+ `DBG_ATTRIB_STORAGE_ALL`\
+ 遮罩，以擷取儲存體屬性，從`DBG_ATTRIB_FLAGS`。
 
- DBG_ATTRIB_TYPE_NONE 表示沒有任何型別修飾詞。
+ `DBG_ATTRIB_TYPE_NONE`\
+ 表示沒有任何型別修飾詞。
 
- DBG_ATTRIB_TYPE_VIRTUAL 表示物件的型別是虛擬。
+ `DBG_ATTRIB_TYPE_VIRTUAL`\
+ 表示物件的型別是虛擬。
 
- DBG_ATTRIB_TYPE_CONSTANT 表示物件的類型是常數。
+ `DBG_ATTRIB_TYPE_CONSTANT`\
+ 表示物件類型是常數。
 
- DBG_ATTRIB_TYPE_SYNCHRONIZED 表示的物件類型同步處理。
+ `DBG_ATTRIB_TYPE_SYNCHRONIZED`\
+ 表示物件的型別同步處理。
 
- DBG_ATTRIB_TYPE_VOLATILE 表示物件的型別為 volatile。
+ `DBG_ATTRIB_TYPE_VOLATILE`\
+ 表示物件的型別為 volatile。
 
- 擷取型別 DBG_ATTRIB_TYPE_ALL 遮罩屬性從`DBG_ATTRIB_FLAGS`。
+ `DBG_ATTRIB_TYPE_ALL`\
+ 若要擷取的型別屬性的遮罩`DBG_ATTRIB_FLAGS`。
 
- DBG_ATTRIB_DATA 表示這個物件是資料欄位。
+ `DBG_ATTRIB_DATA`\
+ 此物件表示資料欄位。
 
- DBG_ATTRIB_METHOD 表示此物件是一種方法。
+ `DBG_ATTRIB_METHOD`\
+ 表示這個物件是一種方法。
 
- DBG_ATTRIB_PROPERTY 表示此物件的屬性。
+ `DBG_ATTRIB_PROPERTY`\
+ 表示此物件的屬性。
 
- DBG_ATTRIB_CLASS 表示此物件的類別。
+ `DBG_ATTRIB_CLASS`\
+ 表示此物件的類別。
 
- DBG_ATTRIB_BASECLASS 表示此物件的基底類別。
+ `DBG_ATTRIB_BASECLASS`\
+ 表示這個物件是基底類別。
 
- DBG_ATTRIB_INTERFACE 表示此物件是一種介面。
+ `DBG_ATTRIB_INTERFACE`\
+ 表示這個物件是一種介面。
 
- DBG_ATTRIB_INNERCLASS 表示這個物件是內部的類別。
+ `DBG_ATTRIB_INNERCLASS`\
+ 表示這個物件是內部的類別。
 
- DBG_ATTRIB_MOSTDERIVED 表示此物件為 '*最高衍生性*'。 詞彙 」*最高衍生性*"表示的實際類型的物件，而不是其參考的類型。
+ `DBG_ATTRIB_MOSTDERIVED`\
+ 表示此物件是 '*最高衍生性*'。 詞彙 」*最高衍生性*"表示的實際類型的物件，而不是其參考的類型。
 
- DBG_ATTRIB_CHILD_ALL 表示遮罩`DBG_ATTRIB_DATA`透過`DBG_ATTRIB_MOSTDERIVED`。
+ `DBG_ATTRIB_CHILD_ALL`\
+ 表示遮罩`DBG_ATTRIB_DATA`透過`DBG_ATTRIB_MOSTDERIVED`。
 
- DBG_ATTRIB_MULTI_CUSTOM_VIEWERS 表示的物件具有與其相關聯的多個自訂檢視器。
+ `DBG_ATTRIB_MULTI_CUSTOM_VIEWERS`\
+ 指出物件具有與它相關聯的多個自訂檢視器。
 
 ## <a name="remarks"></a>備註
 
 > [!NOTE]
->  適用於 C# 組件中未實際定義這個列舉型別中的值。 相反地，您必須將定義複製到原始程式檔中。
+> 適用於 C# 組件中未實際定義這個列舉型別中的值。 相反地，您必須將定義複製到原始程式檔中。
 
  這些旗標也可用來做為引數傳遞時，篩選的物件，例如，子系[EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md)。 值可能會結合的位元`OR`。
 

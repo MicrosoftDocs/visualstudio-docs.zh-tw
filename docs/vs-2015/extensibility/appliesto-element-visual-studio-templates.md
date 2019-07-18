@@ -1,24 +1,19 @@
 ---
 title: AppliesTo 元素 （Visual Studio 範本） |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 ms.assetid: 8fb1334b-d78c-405f-98b4-786e9f6b58d7
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 6f789a574b7db1c30dceea32e5d2c0d4ef9afb7f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f6622c4774be5188aced606ce4b73dffe544aea1
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51788559"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65698931"
 ---
 # <a name="appliesto-element-visual-studio-templates"></a>AppliesTo 項目 (Visual Studio 樣板)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,11 +22,11 @@ ms.locfileid: "51788559"
   
  這是選擇性的項目。 一個範本檔最多只能有一個執行個體。 這個項目只會根據目前選取的現用專案，讓項目範本加入成為適用的範本。 它不能用來讓項目範本變成不適用。 如果 `AppliesTo` 不存在或運算式未成功選擇加入，則會使用 `TemplateID` 或 `TemplateGroupID` 讓範本成為適用，就如舊版產品一樣。  
   
- 已在 Visual Studio 2013 Update 2 中引入。 若要參考正確的版本，請參閱[參考組件提供在 Visual Studio 2013 SDK Update 2](http://msdn.microsoft.com/en-us/42b65c3e-e42b-4c39-98c8-bea285f25ffb)。  
+ 已在 Visual Studio 2013 Update 2 中引入。 若要參考正確的版本，請參閱[參考組件提供在 Visual Studio 2013 SDK Update 2](https://msdn.microsoft.com/42b65c3e-e42b-4c39-98c8-bea285f25ffb)。  
   
- \<VSTemplate >  
- \<TemplateData >  
- \<AppliesTo >  
+ \<VSTemplate>  
+ \<TemplateData>  
+ \<AppliesTo>  
   
 ## <a name="syntax"></a>語法  
   
@@ -59,19 +54,19 @@ ms.locfileid: "51788559"
   
  有效的運算式語法定義如下：  
   
--   功能運算式，例如"(VisualC &#124; CSharp) + (MSTest &#124; NUnit)"。  
+- 功能運算式，例如"(VisualC &#124; CSharp) + (MSTest &#124; NUnit)"。  
   
--   「&#124;"是 OR 運算子。  
+- 「&#124;"是 OR 運算子。  
   
--   "&" 和 "+" 字元都是 AND 運算子。  
+- "&"和"+"字元都是 AND 運算子。  
   
--   "!" 字元是 NOT 運算子。  
+- "!" 字元是 NOT 運算子。  
   
--   括號會強制執行評估優先順序。  
+- 括號會強制執行評估優先順序。  
   
--   Null 或空白運算式會判斷值為相符項目。  
+- Null 或空白運算式會判斷值為相符項目。  
   
--   專案功能可以是下列這些保留字元以外的任何字元:"':;,+-*/\\！ ~&#124;& %$@^() ={}[] <> 嗎？ \t\b\n\r  
+- 專案功能可以是下列這些保留字元以外的任何字元:"':;,+-*/\\！ ~&#124;& %$@^() ={}[] <> 嗎？ \t\b\n\r  
   
 ## <a name="example"></a>範例  
  下列範例將示範三個不同的範本。 `Template1` 適用於所有 C# 專案類型，或是任何支援 `WindowsAppContainer` 功能的其他專案類型。 `Template2` 適用於任何類型的所有 C# 專案。 `Template3` 適用於不是 `WindowsAppContainer` 專案的 C# 專案。  
@@ -106,4 +101,3 @@ ms.locfileid: "51788559"
 ## <a name="see-also"></a>另請參閱  
  [Visual Studio 範本結構描述參考](../extensibility/visual-studio-template-schema-reference.md)   
  [建立專案和項目範本](../ide/creating-project-and-item-templates.md)
-

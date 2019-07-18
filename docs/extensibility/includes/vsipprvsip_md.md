@@ -13,10 +13,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.openlocfilehash: 401c53630a6d7fd280f8f25aff62987fa6c6fa3f
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 9f5fdd524591a2c1da144886226bd0b48f08021f
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "68143365"
 ---
 Visual Studio 產業夥伴 (VSIP) 計劃

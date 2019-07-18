@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5f6e9bea3d45249d847f2dccfe522f832d6a07b5
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: c231aac3b78ddb5100cc06600059045fdc463e51
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56644519"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62826741"
 ---
 # <a name="how-to-cache-data-in-a-password-protected-document"></a>HOW TO：在受密碼保護的文件中的快取資料
   如果您將資料加入文件或密碼保護的活頁簿中的資料快取時，會不會自動儲存變更快取的資料。 您可以藉由覆寫專案中的兩個方法，來快取的資料儲存變更。
@@ -30,13 +30,13 @@ ms.locfileid: "56644519"
 
 ### <a name="to-cache-data-in-a-word-document-that-is-protected-with-a-password"></a>以密碼保護的 Word 文件中的快取資料
 
-1.  在 `ThisDocument`類別，並將標示將公用欄位或快取的屬性。 如需詳細資訊，請參閱 <<c0> [ 快取資料](../vsto/caching-data.md)。
+1. 在 `ThisDocument`類別，並將標示將公用欄位或快取的屬性。 如需詳細資訊，請參閱 <<c0> [ 快取資料](../vsto/caching-data.md)。
 
-2.  覆寫<xref:Microsoft.Office.Tools.Word.DocumentBase.UnprotectDocument%2A>方法中的`ThisDocument`類別，並從文件移除保護。
+2. 覆寫<xref:Microsoft.Office.Tools.Word.DocumentBase.UnprotectDocument%2A>方法中的`ThisDocument`類別，並從文件移除保護。
 
      儲存文件時，[!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]呼叫這個方法，讓您有機會取消保護文件。 這可讓快取的資料儲存的變更。
 
-3.  覆寫<xref:Microsoft.Office.Tools.Word.DocumentBase.ProtectDocument%2A>方法中的`ThisDocument`類別，並保護重新套用至文件。
+3. 覆寫<xref:Microsoft.Office.Tools.Word.DocumentBase.ProtectDocument%2A>方法中的`ThisDocument`類別，並保護重新套用至文件。
 
      在儲存文件之後，[!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]呼叫這個方法，讓您有機會保護重新套用至文件。
 
@@ -54,13 +54,13 @@ ms.locfileid: "56644519"
 
 ### <a name="to-cache-data-in-an-excel-workbook-that-is-protected-with-a-password"></a>以密碼保護的 Excel 活頁簿中的快取資料
 
-1.  在 `ThisWorkbook`類別或其中一個`Sheet` *n*類別，將標記，將公用欄位或快取的屬性。 如需詳細資訊，請參閱 <<c0> [ 快取資料](../vsto/caching-data.md)。
+1. 在 `ThisWorkbook`類別或其中一個`Sheet` *n*類別，將標記，將公用欄位或快取的屬性。 如需詳細資訊，請參閱 <<c0> [ 快取資料](../vsto/caching-data.md)。
 
-2.  覆寫<xref:Microsoft.Office.Tools.Excel.WorkbookBase.UnprotectDocument%2A>方法中的`ThisWorkbook`類別，並移除活頁簿中的保護。
+2. 覆寫<xref:Microsoft.Office.Tools.Excel.WorkbookBase.UnprotectDocument%2A>方法中的`ThisWorkbook`類別，並移除活頁簿中的保護。
 
      儲存活頁簿時，[!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]呼叫這個方法，讓您有機會取消保護活頁簿。 這可讓快取的資料儲存的變更。
 
-3.  覆寫<xref:Microsoft.Office.Tools.Excel.WorkbookBase.ProtectDocument%2A>方法中的`ThisWorkbook`類別，並保護重新套用至文件。
+3. 覆寫<xref:Microsoft.Office.Tools.Excel.WorkbookBase.ProtectDocument%2A>方法中的`ThisWorkbook`類別，並保護重新套用至文件。
 
      儲存活頁簿之後，[!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]呼叫這個方法，讓您有機會保護重新套用至活頁簿。
 

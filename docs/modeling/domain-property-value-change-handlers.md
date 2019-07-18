@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9ccce6d63e1cb96d4f4027bd13a4a4095e0e4248
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 9fcad439c7f0633f75d2a7364e2d0d3bfb142f89
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55951484"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62994636"
 ---
 # <a name="domain-property-value-change-handlers"></a>網域屬性值變更處理常式
 
@@ -52,15 +52,15 @@ public partial class Comment
 
 請注意有關屬性處理常式的下列重點：
 
--   當使用者變更網域屬性時，以及當程式碼指派不同的值給屬性時，都會呼叫屬性處理常式方法。
+- 當使用者變更網域屬性時，以及當程式碼指派不同的值給屬性時，都會呼叫屬性處理常式方法。
 
--   只有在值實際變更時，才會呼叫方法。 如果程式碼指派的值與目前的值相同，則不會叫用處理常式。
+- 只有在值實際變更時，才會呼叫方法。 如果程式碼指派的值與目前的值相同，則不會叫用處理常式。
 
--   計算和自訂儲存網域屬性沒有 OnValueChanged 和 OnValueChanging 方法。
+- 計算和自訂儲存網域屬性沒有 OnValueChanged 和 OnValueChanging 方法。
 
--   您無法使用變更處理常式來修改新值。 如果您要這樣做 (例如將值限制在特定範圍內)，請定義 `ChangeRule`。
+- 您無法使用變更處理常式來修改新值。 如果您要這樣做 (例如將值限制在特定範圍內)，請定義 `ChangeRule`。
 
--   您無法將變更處理常式加入至代表關聯性角色的屬性。 請改為定義關聯性類別上的 `AddRule` 和 `DeleteRule`。 建立或變更連結時，即會觸發這些規則。 如需詳細資訊，請參閱 <<c0> [ 規則傳播變更內模型](../modeling/rules-propagate-changes-within-the-model.md)。
+- 您無法將變更處理常式加入至代表關聯性角色的屬性。 請改為定義關聯性類別上的 `AddRule` 和 `DeleteRule`。 建立或變更連結時，即會觸發這些規則。 如需詳細資訊，請參閱 <<c0> [ 規則傳播變更內模型](../modeling/rules-propagate-changes-within-the-model.md)。
 
 ### <a name="changes-in-and-out-of-the-store"></a>存放區內外的變更
 

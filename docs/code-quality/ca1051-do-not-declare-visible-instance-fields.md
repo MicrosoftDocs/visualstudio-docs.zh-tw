@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7b7a2165b9b921865ce1fd45017c996e48917d12
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 6c77678b1f09b1cf51a63f260252ddeaf9321fd5
+ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57872812"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65842077"
 ---
 # <a name="ca1051-do-not-declare-visible-instance-fields"></a>CA1051:不要宣告可見的執行個體欄位
 
@@ -54,7 +54,7 @@ ms.locfileid: "57872812"
 
 如果您執行這項規則，從[FxCop 分析器](install-fxcop-analyzers.md)（而不是透過靜態程式碼分析），您可以設定的哪些部分您程式碼基底上執行這項規則，根據其存取範圍。 比方說，若要指定執行規則時，應該只針對非公用 API 介面，將下列索引鍵 / 值組新增至專案中的.editorconfig 檔案：
 
-```
+```ini
 dotnet_code_quality.ca1051.api_surface = private, internal
 ```
 

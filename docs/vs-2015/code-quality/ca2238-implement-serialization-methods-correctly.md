@@ -1,14 +1,9 @@
 ---
-title: Ca2238： 必須正確實作序列化方法 |Microsoft Docs
-ms.custom: ''
+title: CA2238:正確實作序列化方法 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - ImplementSerializationMethodsCorrectly
 - CA2238
@@ -20,24 +15,24 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 3222deaeac97df8b954853f21eaff40a8244d8ca
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: cff617adf2b31ef773de3bc41db7245346795bee
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49864279"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68142376"
 ---
-# <a name="ca2238-implement-serialization-methods-correctly"></a>CA2238：請正確實作序列化方法
+# <a name="ca2238-implement-serialization-methods-correctly"></a>CA2238:必須正確實作序列化方法
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-如需 Visual Studio 2017 的最新文件，請參閱 < [CA2238： 必須正確實作序列化方法](https://docs.microsoft.com/visualstudio/code-quality/ca2238-implement-serialization-methods-correctly)docs.microsoft.com 上。  
+如需 Visual Studio 的最新文件，請參閱[CA2238:正確實作序列化方法](https://docs.microsoft.com/visualstudio/code-quality/ca2238-implement-serialization-methods-correctly)。  
   
 |||  
 |-|-|  
 |TypeName|ImplementSerializationMethodsCorrectly|  
 |CheckId|CA2238|  
 |分類|Microsoft.Usage|  
-|中斷變更|中斷-如果組件外部可見方法。<br /><br /> 非中斷-如果方法不是組件外部可見。|  
+|中斷變更|中斷-如果組件外部可見方法。<br /><br /> 非分行-如果方法不是組件外部可見。|  
   
 ## <a name="cause"></a>原因  
  處理序列化事件的方法沒有正確的簽章、傳回型別或可視性。  
@@ -68,17 +63,16 @@ ms.locfileid: "49864279"
  [!code-vb[FxCop.Usage.SerializationEventHandlers#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Usage.SerializationEventHandlers/vb/FxCop.Usage.SerializationEventHandlers.vb#1)]  
   
 ## <a name="related-rules"></a>相關的規則  
- [CA2236：必須呼叫 ISerializable 類型上的基底類別方法](../code-quality/ca2236-call-base-class-methods-on-iserializable-types.md)  
+ [CA2236： 必須ISerializable 類型上呼叫基底類別方法](../code-quality/ca2236-call-base-class-methods-on-iserializable-types.md)  
   
- [CA2240：必須正確實作 ISerializable](../code-quality/ca2240-implement-iserializable-correctly.md)  
+ [CA2240:必須正確實作 ISerializable](../code-quality/ca2240-implement-iserializable-correctly.md)  
   
  [CA2229：必須實作序列化建構函式](../code-quality/ca2229-implement-serialization-constructors.md)  
   
  [CA2235：必須標記所有不可序列化的欄位](../code-quality/ca2235-mark-all-non-serializable-fields.md)  
   
- [CA2237：ISerializable 類型必須標記 SerializableAttribute](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md)  
+ [CA2237：Serializableattribute 標記 ISerializable 類型](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md)  
   
- [CA2239：必須為選擇性欄位提供還原序列化方法](../code-quality/ca2239-provide-deserialization-methods-for-optional-fields.md)  
+ [CA2239： 必須提供選擇性欄位的還原序列化方法](../code-quality/ca2239-provide-deserialization-methods-for-optional-fields.md)  
   
- [CA2120：必須保護序列化建構函式](../code-quality/ca2120-secure-serialization-constructors.md)
-
+ [CA2120： 必須保護序列化建構函式](../code-quality/ca2120-secure-serialization-constructors.md)

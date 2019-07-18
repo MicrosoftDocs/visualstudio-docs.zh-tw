@@ -1,5 +1,5 @@
 ---
-title: URL 選擇器對話方塊 （Visual Studio 中的 SharePoint 程式開發） |Microsoft Docs
+title: URL 選擇器對話方塊 （SharePoint 程式開發）
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8d8f193e50053b5cdf0b89cf41b09471c513ee9d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 991693c3379e008a2a907efd3127290c7e804c22
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56635172"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66261949"
 ---
 # <a name="url-picker-dialog-box-sharepoint-development-in-visual-studio"></a>URL 選擇器對話方塊 （Visual Studio 中的 SharePoint 程式開發）
   在 [URL 選擇器] 對話方塊中，您可以選擇位於您的專案中或執行 SharePoint 的本機伺服器中的檔案，例如主版頁面檔案或影像檔。

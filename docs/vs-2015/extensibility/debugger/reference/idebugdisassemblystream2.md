@@ -1,14 +1,9 @@
 ---
 title: IDebugDisassemblyStream2 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugDisassemblyStream2
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: b03cab0c-3f0b-4cc6-88dc-acb3b48c567a
 caps.latest.revision: 13
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: ef0720d0faf3286580142525e499c9e0009a36d2
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 5b5126758c60262564390f84b6278300a41660f5
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51786622"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68187184"
 ---
 # <a name="idebugdisassemblystream2"></a>IDebugDisassemblyStream2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -44,7 +39,7 @@ IDebugDisassemblyStream2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法  
  下表顯示的方法`IDebugDisassemblyStream2`。  
   
-|方法|描述|  
+|方法|說明|  
 |------------|-----------------|  
 |[Read](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md)|讀取從目前的位置，在反組譯碼資料流中的指示。|  
 |[Seek](../../../extensibility/debugger/reference/idebugdisassemblystream2-seek.md)|反組譯碼資料流指定數目的相對於指定位置的指示中移動讀取的指標。|  
@@ -61,12 +56,11 @@ IDebugDisassemblyStream2 : IUnknown
 ## <a name="requirements"></a>需求  
  標頭： msdbg.h  
   
- 命名空間： Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間：Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
  [核心介面](../../../extensibility/debugger/reference/core-interfaces.md)   
  [GetDisassemblyStream](../../../extensibility/debugger/reference/idebugprogram2-getdisassemblystream.md)   
  [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md)
-

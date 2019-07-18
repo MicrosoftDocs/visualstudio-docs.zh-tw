@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - m_builder field, AsyncTaskMethodBuilder structure [.NET Framework debug engines]
 ms.assetid: bfaf25a2-0f08-413f-b474-9ce0d97c0eeb
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c069ce3781d246f4eb736f72462627d457a92a28
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 61a4f761671c67ee1fe77883534b585f4f2f3715
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56722807"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66322301"
 ---
 # <a name="asynctaskmethodbuildermbuilder-field"></a>AsyncTaskMethodBuilder.m_builder 欄位
 表示這個非泛型執行個體將委派的泛型的產生器物件。

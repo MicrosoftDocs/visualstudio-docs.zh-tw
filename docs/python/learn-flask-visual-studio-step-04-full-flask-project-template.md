@@ -4,19 +4,19 @@ titleSuffix: ''
 description: 逐步解說 Visual Studio 專案內容中的 Flask 基本知識，特別是「Flask Web 專案」和「Flask/Jade Web 專案」範本所提供的功能。
 ms.date: 01/07/2019
 ms.topic: tutorial
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b17400aae5386a2d86cc13d0b81293bd2ef068fb
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 9f4c165f3e882cea71ee4aaff9f2358c27ce6a2b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55908916"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62957227"
 ---
 # <a name="step-4-use-the-full-flask-web-project-template"></a>步驟 4：使用完整的 Flask Web 專案範本
 
@@ -169,6 +169,7 @@ def about():
 ```python
 app.jinja_env.add_extension('pyjade.ext.jinja.PyJadeExtension')
 ```
+
 在 *templates* 資料夾中，您會看到 *.jade* 檔案而不是 *.html* 範本，而 *views.py* 中的檢視會在其對 `flask.render_template` 的呼叫中參考這些檔案。 除此之外，檢視程式碼都相同。
 
 開啟其中一個 *.jade* 檔案時，您將可看到以更簡潔方式表達的範本。 例如，以下是「Flask/Jade Web 專案」所建立 *templates/layout.jade* 的內容：

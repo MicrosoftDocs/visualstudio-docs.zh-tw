@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: e5ee5d3e05af407f3011111e1dcad84487dd81fe
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ffa6908fe759f33ad1e82f2fd44975d6731cdf16
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55952355"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62978545"
 ---
 # <a name="exploration-bounds"></a>探索界限
 
@@ -29,17 +29,17 @@ public partial class FooTest {...}
 
 * **條件約束求解界限**
   * [MaxConstraintSolverTime](#maxconstraintsolvertime) - [條件約束規劃求解](input-generation.md#constraint-solver)必須探索輸入的秒數，這將導致依循不同的新執行路徑。
-  * [MaxConstraintSolverMemory](#maxconstraintsolvermemory) - [條件約束規劃求解](input-generation.md#constraint-solver)可能用來探索輸入的大小，以 MB 為單位。<p />
+  * [MaxConstraintSolverMemory](#maxconstraintsolvermemory) - [條件約束規劃求解](input-generation.md#constraint-solver)可能用來探索輸入的大小，以 MB 為單位。
 * **探索路徑界限**
   * [MaxBranches](#maxbranches) - 可以在單一執行路徑中採用的分支數上限。
   * [MaxCalls](#maxcalls) - 可以在單一執行路徑期間發出的呼叫數上限。
   * [MaxStack](#maxstack) - 堆疊在單一執行路徑期間任何時候的大小上限，以使用中呼叫框架數來測量。
-  * [MaxConditions](#maxconditions) - 單一執行路徑期間可以對輸入進行檢查的條件數上限。<p />
+  * [MaxConditions](#maxconditions) - 單一執行路徑期間可以對輸入進行檢查的條件數上限。
 * **探索界限**
   * [MaxRuns](#maxruns) - 探索期間將嘗試的執行數上限。
   * [MaxRunsWithoutNewTests](#maxrunswithoutnewtests) - 不發出新測試的連續執行數上限。
   * [MaxRunsWithUniquePaths](#maxrunswithuniquepaths) - 探索期間將嘗試唯一執行路徑的執行數上限。
-  * [MaxExceptions](#maxexceptions) - 所有探索到之執行路徑的組合可找到的例外狀況數目上限。<p />
+  * [MaxExceptions](#maxexceptions) - 所有探索到之執行路徑的組合可找到的例外狀況數目上限。
 * **測試套件程式碼產生設定**
   * [TestExcludePathBoundsExceeded](#testexcludepathboundsexceeded) - 設定為 true 時，會忽略超過任何路徑界限 ([MaxCalls](#maxcalls)、[MaxBranches](#maxbranches)、[MaxStack](#maxstack)、[MaxConditions](#maxconditions)) 的執行路徑。
   * [TestEmissionFilter](#testemissionfilter) - 指出 IntelliTest 應該在哪些情況下發出測試。

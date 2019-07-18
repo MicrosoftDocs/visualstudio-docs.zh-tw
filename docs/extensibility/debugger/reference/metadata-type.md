@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - METADATA_TYPE structure
 ms.assetid: 2d8b78f6-0aef-4d79-809a-cff9b2c24659
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0a39ce54d1cb1fb1a3773b4241be35214421f08a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 3d608e4e9bf9987eb1dd430a9e22660c1da6a90a
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56709989"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746690"
 ---
 # <a name="metadatatype"></a>METADATA_TYPE
 此結構會指定取自中繼資料的欄位類型的相關資訊。
@@ -40,25 +43,22 @@ public struct METADATA_TYPE {
 };
 ```
 
-#### <a name="parameters"></a>參數
- ulAppDomainID
-
+## <a name="parameters"></a>參數
+ `ulAppDomainID`\
  符號所來自的應用程式的識別碼。 這用來唯一識別應用程式的執行個體。
 
- guidModule
-
+ `guidModule`\
  模組包含此欄位的 GUID。
 
- tokClass
-
+ `tokClass`\
  此類型的中繼資料語彙基元的識別碼。
 
- [C + +]`_mdToken`已`typedef`適用於 32 位元`int`。
+ [C++]`_mdToken`是`typedef`適用於 32 位元`int`。
 
 ## <a name="remarks"></a>備註
  此結構會顯示為中的等位的一部分[TYPE_INFO](../../../extensibility/debugger/reference/type-info.md)結構時`dwKind`欄位`TYPE_INFO`結構設定為`TYPE_KIND_METADATA`(值[dwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md)列舉型別）。
 
- `tokClass`值是唯一識別類型的中繼資料語彙基元。 如需有關如何解譯較高的位元的中繼資料語彙基元 ID 的詳細資訊，請參閱 < `CorTokenType` corhdr.h 檔案中的列舉型別[!INCLUDE[dnprdnshort](../../../code-quality/includes/dnprdnshort_md.md)]SDK。
+ `tokClass`值是唯一識別類型的中繼資料語彙基元。 如需有關如何解譯較高的位元的中繼資料語彙基元 ID 的詳細資訊，請參閱`CorTokenType`列舉型別在 corhdr.h 檔案中在.NET Framework SDK。
 
 ## <a name="requirements"></a>需求
  標頭： sh.h

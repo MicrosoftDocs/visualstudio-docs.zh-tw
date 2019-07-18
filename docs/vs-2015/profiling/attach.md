@@ -9,12 +9,12 @@ caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 26c956255aba9a4ca67249a6e540a7899e0da28a
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 6b9adb5a0a47c1ee98e0e390cfaf8b3a6dc78146
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54794182"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433799"
 ---
 # <a name="attach"></a>附加
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ VSPerfCmd.exe **Attach** 選項會開始處理序識別碼 (PID) 所指定之執
  若要使用 **Attach** 選項，您必須在 Start 選項中指定 **Sample** 選項。  
   
 > [!NOTE]
->  如果指定 **Start** 選項和 **Crosssession** 選項，則任何 **VSPerfCmd /Attach** 或 **VSPerfCmd /Detach** 呼叫也必須指定 **Crosssession**。  
+> 如果指定 **Start** 選項和 **Crosssession** 選項，則任何 **VSPerfCmd /Attach** 或 **VSPerfCmd /Detach** 呼叫也必須指定 **Crosssession**。  
   
 ## <a name="syntax"></a>語法  
   
@@ -60,13 +60,13 @@ VSPerfCmd.exe /Attach:ProcessID [Options]
  **Timer**[**:**`Cycles`]**PF**[**:**`Events`]**Sys**[<strong>:</strong>Events]**Counter**[**:**`Name`,`Reload`,`FriendlyName`]  
  指定取樣間隔的數目和類型。  
   
--   **Timer** - 每 `Cycles` 個處理器時脈週期取樣一次。 如果未指定 `Cycles`，會使用 10,000,000 個週期。  
+- **Timer** - 每 `Cycles` 個處理器時脈週期取樣一次。 如果未指定 `Cycles`，會使用 10,000,000 個週期。  
   
--   **PF** - 每 `Events` 個分頁錯誤取樣一次。 如果未指定 `Events`，則會使用 10 個分頁錯誤。  
+- **PF** - 每 `Events` 個分頁錯誤取樣一次。 如果未指定 `Events`，則會使用 10 個分頁錯誤。  
   
--   **Sys** - 對作業系統每呼叫 `Events` 次取樣一次。 如果未指定 `Events`，則會使用 10 次系統呼叫。  
+- **Sys** - 對作業系統每呼叫 `Events` 次取樣一次。 如果未指定 `Events`，則會使用 10 次系統呼叫。  
   
--   **Counter** - `Name` 所指定的 CPU 效能計數器每 `Reload` 個數目就取樣一次。 選擇性，`FriendlyName` 可以指定要作為分析工具報表中資料行標頭的字串。  
+- **Counter** - `Name` 所指定的 CPU 效能計數器每 `Reload` 個數目就取樣一次。 選擇性，`FriendlyName` 可以指定要作為分析工具報表中資料行標頭的字串。  
   
 ## <a name="example"></a>範例  
  此範例示範如何附加至處理序識別碼為 12345 的執行中應用程式執行個體。  

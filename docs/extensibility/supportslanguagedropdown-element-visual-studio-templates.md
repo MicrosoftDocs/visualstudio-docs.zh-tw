@@ -9,17 +9,17 @@ helpviewer_keywords:
 - SupportsLanguageDropDown element [Visual Studio Templates]
 - <SupportsLanguageDropDown> element [Visual Studio Templates]
 ms.assetid: 641197d5-f724-4c06-bc47-2e22dad3fbfb
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f8f94036a20d6c1b6963b39aa3d2b13e17a6e256
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: b6dbc2c5cae40078f033fa0fb85c6fda032e8ec4
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56678069"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66316805"
 ---
 # <a name="supportslanguagedropdown-element-visual-studio-templates"></a>SupportsLanguageDropDown 項目 (Visual Studio 範本)
 指定是否 Web 項目範本是相同的多種語言，以及是否**語言**上，已啟用**加入新項目** 對話方塊。

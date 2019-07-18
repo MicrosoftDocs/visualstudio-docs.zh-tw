@@ -1,35 +1,30 @@
 ---
 title: 在編輯器中的舊版介面 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy
 ms.assetid: 741d45f5-0ea3-4614-972a-8728fe054e07
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 45c3de943a1716877fcf33af4d16fd163721d04b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 8483068ae03c9a57fc67b528393e5d6830c3ec33
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51737510"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68180283"
 ---
-# <a name="legacy-interfaces-in-the-editor"></a>在編輯器中的舊版介面
+# <a name="legacy-interfaces-in-the-editor"></a>編輯器中的舊版介面
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 您可以從舊版的介面來存取 Visual Studio 編輯器。 Visual Studio SDK 包含配接器稱為*填充碼*，可讓這些新的編輯器與互動的介面。 不過，我們建議您更新您舊版的程式碼，以使用新的編輯器 API。 您的程式碼會比較好，而且您可以使用新的技術，例如 Windows Presentation Foundation (WPF) 和 Managed Extensibility Framework (MEF)。  
   
 ## <a name="related-topics"></a>相關主題  
   
-|標題|描述|  
+|標題|說明|  
 |-----------|-----------------|  
 |[使舊版程式碼配合編輯器](../extensibility/adapting-legacy-code-to-the-editor.md)|說明如何調整到新的編輯器程式碼。|  
 |[編輯器配接器的新行為或變更行為](../extensibility/new-or-changed-behavior-with-editor-adapters.md)|說明如何編輯器配接器的行為不同於舊版的編輯器。|  
@@ -52,4 +47,3 @@ ms.locfileid: "51737510"
 |[建立自訂編輯器和設計工具](../extensibility/creating-custom-editors-and-designers.md)|說明如何建立自訂編輯器和設計工具。|  
 |[開發舊版語言服務](../extensibility/internals/developing-a-legacy-language-service.md)|提供功能，以提供自訂功能的相關文件的連結[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]藉由新增語言服務支援的核心編輯器。|  
 |[使用字型和色彩](../extensibility/using-fonts-and-colors.md)|說明如何使用舊版的介面中的字型和色彩。|
-

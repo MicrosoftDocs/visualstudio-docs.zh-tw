@@ -1,14 +1,9 @@
 ---
-title: IDebugProperty2 |Microsoft Docs
-ms.custom: ''
+title: IDebugProperty2 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugProperty2
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: a7d5c70f-a1a5-4120-9f70-184e01c25bff
 caps.latest.revision: 12
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: cc5e780bb5e211b8900a22b181749e0376c6f242
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 1f72a66e6dbfe2749910019760c16f6363498785
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51742606"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63403278"
 ---
 # <a name="idebugproperty2"></a>IDebugProperty2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -30,7 +25,7 @@ ms.locfileid: "51742606"
 此介面代表堆疊框架屬性、 程式文件屬性或某些其他屬性。 屬性通常是運算式評估的結果。  
   
 > [!NOTE]
->  這種使用 「 屬性 」 不應混淆與表示類別的成員變數雖然`IDebugProperty2`可以表示這個實體。  
+> 這種使用 「 屬性 」 不應混淆與表示類別的成員變數雖然`IDebugProperty2`可以表示這個實體。  
   
 ## <a name="syntax"></a>語法  
   
@@ -79,12 +74,11 @@ IDebugProperty2 : IUnknown
 ## <a name="requirements"></a>需求  
  標頭： msdbg.h  
   
- 命名空間： Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間：Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
  [核心介面](../../../extensibility/debugger/reference/core-interfaces.md)   
  [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md)   
  [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)
-

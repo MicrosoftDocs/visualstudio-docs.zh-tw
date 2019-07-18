@@ -7,21 +7,21 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugManagedObject interface
 ms.assetid: 3ae09d34-112c-4285-80ee-9f7f8dc414d7
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 295e1829f51ff983e66c11e8f2ae2e5886ee7741
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 6744ae98a0210a6832bce1bdb0cd68f08145f3eb
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56707963"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66349420"
 ---
 # <a name="idebugmanagedobject"></a>IDebugManagedObject
 > [!IMPORTANT]
->  在 Visual Studio 2015 中，這種實作運算式評估工具已被取代。 如需實作 CLR 運算式評估工具的資訊，請參閱[CLR 運算式評估工具](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)並[Managed 運算式評估工具範例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。
+> 在 Visual Studio 2015 中，這種實作運算式評估工具已被取代。 如需實作 CLR 運算式評估工具的資訊，請參閱[CLR 運算式評估工具](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)並[Managed 運算式評估工具範例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。
 
  此介面可讓運算式評估工具 (EE) 值的類別執行個體上呼叫屬性或方法 (例如`System.Decimal`)，並設定其值，而不會呼叫[Evaluate](../../../extensibility/debugger/reference/idebugfunctionobject-evaluate.md)正在偵錯的程式。
 

@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], custom - document locking
 ms.assetid: fa1ce513-eb7d-42bc-b6e8-cb2433d051d5
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a1d0a9c94488ef5b34971faff7327cef4dc7ee05
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 122c62728840e725713c57d31616b978e43bd220
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335359"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66347926"
 ---
 # <a name="document-lock-holder-management"></a>文件鎖定持有者管理
 

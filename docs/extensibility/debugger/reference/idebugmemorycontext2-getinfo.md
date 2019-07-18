@@ -8,17 +8,20 @@ helpviewer_keywords:
 - GetInfo method
 - IDebugMemoryContext2::GetInfo method
 ms.assetid: 08c7f091-1816-4d64-8834-f9ecaac5c58d
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a42c16b260d9d4a0170cf20f9cab3b23682cf825
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: f349ef2f923dd18feeb2a201ef59e9d3489271ab
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56718569"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66347054"
 ---
 # <a name="idebugmemorycontext2getinfo"></a>IDebugMemoryContext2::GetInfo
 擷取[CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md)結構描述內容。
@@ -39,14 +42,12 @@ int GetInfo(
 );
 ```
 
-#### <a name="parameters"></a>參數
- `dwFields`
+## <a name="parameters"></a>參數
+`dwFields`\
+[in]從旗標的組合[CONTEXT_INFO_FIELDS](../../../extensibility/debugger/reference/context-info-fields.md)列舉，指出欄位[CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md)結構要填寫。
 
- [in]從旗標的組合[CONTEXT_INFO_FIELDS](../../../extensibility/debugger/reference/context-info-fields.md)列舉，指出欄位[CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md)結構要填寫。
-
- `pInfo`
-
- [in、 out]`CONTEXT_INFO`會填入的結構。
+`pInfo`\
+[in、 out]`CONTEXT_INFO`會填入的結構。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

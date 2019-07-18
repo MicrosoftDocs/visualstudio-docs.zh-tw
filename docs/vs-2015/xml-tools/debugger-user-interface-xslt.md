@@ -1,25 +1,20 @@
 ---
 title: 偵錯工具使用者介面 (XSLT) |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: 846fdabd-e5c3-4688-9b0d-a93fbeea1b96
 caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 02ba962a3410b2e964e7653fcb6308b9209def44
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: f7ffc67bd1175a84bf5708c613661a169c093dbd
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49891845"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697018"
 ---
 # <a name="debugger-user-interface-xslt"></a>偵錯工具使用者介面 (XSLT)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +43,7 @@ ms.locfileid: "49891845"
 |`position()`|內容節點的位置或索引編號 (相對於內容大小)。|  
 |`self::node()`|內容節點的值。|  
   
- 如需詳細資訊，請參閱 <<c0> [ 如何： 變更偵錯工具內容](http://msdn.microsoft.com/library/8a69ea63-2ef0-4b4f-9521-cf8ad2e3ec5e)。  
+ 如需詳細資訊，請參閱[如何：變更偵錯工具內容](https://msdn.microsoft.com/library/8a69ea63-2ef0-4b4f-9521-cf8ad2e3ec5e)。  
   
 ## <a name="output-window"></a>輸出視窗  
  [輸出] 視窗會顯示偵錯時發生的任何錯誤訊息或安全性例外狀況。  
@@ -61,7 +56,7 @@ ms.locfileid: "49891845"
  [工作清單] 包括 XSLT 檔之指令碼區塊中發生的所有錯誤。  
   
 > [!NOTE]
->  XSLT 偵錯工具沒有警告，所以它們永不會顯示於 [工作清單] 中。  
+> XSLT 偵錯工具沒有警告，所以它們永不會顯示於 [工作清單] 中。  
   
 ## <a name="breakpoints-window"></a>中斷點視窗  
  [中斷點] 視窗會顯示目前專案中的所有中斷點。 當視窗在檢視表中時如果加入中斷點，則視窗會自動更新以顯示新中斷點。  
@@ -96,15 +91,14 @@ ms.locfileid: "49891845"
   
 - 不允許使用者定義函式。  
   
-  如需詳細資訊，請參閱 <<c0> [ 如何： 評估 XPath 運算式](../xml-tools/how-to-evaluate-an-xpath-expression.md)。  
+  如需詳細資訊，請參閱[如何：評估 XPath 運算式](../xml-tools/how-to-evaluate-an-xpath-expression.md)。  
   
 ## <a name="disassembly-window"></a>反組譯碼視窗  
  [反組譯碼] 視窗會顯示由 XSLT 編譯器產生的組譯程式碼。 此視窗的使用方式可以與所有其他 Visual Studio 反組譯碼視窗相同。  
   
- 如需詳細資訊，[如何： 使用反組譯碼視窗](../debugger/how-to-use-the-disassembly-window.md)。  
+ 如需詳細資訊， [How to:使用反組譯碼視窗](../debugger/how-to-use-the-disassembly-window.md)。  
   
 ## <a name="see-also"></a>另請參閱  
  [偵錯 XSLT](../xml-tools/debugging-xslt.md)   
  [偵錯工具基礎](../debugger/debugger-basics.md)   
- [變數的 Windows](http://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)
-
+ [變數視窗](https://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)

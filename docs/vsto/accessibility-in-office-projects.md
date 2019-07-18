@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e35819371a751aa8047adbacd77f55ea257831a1
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: a54c9d5322b35092d635edd00e3b200ee67997a9
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55944971"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62945215"
 ---
 # <a name="accessibility-in-office-projects"></a>Office 專案中的協助工具
 
@@ -40,21 +40,21 @@ Microsoft Visual Studio 和 Microsoft Office 包含許多協助工具功能可�
 
 #### <a name="to-view-shortcut-keys-for-ribbon-tabs-and-controls-in-the-designer"></a>若要檢視設計工具中的功能區索引標籤和控制項的快速鍵
 
-1.  在 Visual Studio 中，在**工具**功能表上，按一下**選項**。
+1. 在 Visual Studio 中，在**工具**功能表上，按一下**選項**。
 
-2.  依序展開**Office Tools**節點，然後選取**Microsoft Office Excel 鍵盤**或是**Microsoft Office Word 鍵盤**視需要。
+2. 依序展開**Office Tools**節點，然後選取**Microsoft Office Excel 鍵盤**或是**Microsoft Office Word 鍵盤**視需要。
 
-3.  選取 **動態鍵盤配置**。
+3. 選取 **動態鍵盤配置**。
 
      此時會出現訊息指出您必須重新啟動 Visual Studio，變更才會生效。
 
-4.  按一下 [確定] 。
+4. 按一下 [確定] 。
 
-5.  重新啟動 Visual Studio，並重新開啟您的專案。
+5. 重新啟動 Visual Studio，並重新開啟您的專案。
 
-6.  開啟您專案的文件或活頁簿設計工具。
+6. 開啟您專案的文件或活頁簿設計工具。
 
-7.  按下**F6**功能區顯示的快速鍵。
+7. 按下**F6**功能區顯示的快速鍵。
 
 ## <a name="accessibility-at-runtime"></a>在執行階段的協助工具
 

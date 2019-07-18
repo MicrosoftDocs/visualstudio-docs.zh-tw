@@ -1,27 +1,22 @@
 ---
 title: IDebugComPlusSymbolProvider::UnloadSymbols |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - UnloadSymbols
 - IDebugComPlusSymbolProvider::UnloadSymbols
 ms.assetid: 53e3ddc1-ab47-4097-8fef-b26e5504b37a
 caps.latest.revision: 10
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 52b73cf27639d2ce73e592993d88b7a165409863
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: ad78f1b569180a93b195f6a4076cc7396dcf8e53
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51744759"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68176772"
 ---
 # <a name="idebugcomplussymbolproviderunloadsymbols"></a>IDebugComPlusSymbolProvider::UnloadSymbols
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -98,4 +93,3 @@ Error:
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)
-

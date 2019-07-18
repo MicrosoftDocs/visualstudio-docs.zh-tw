@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, reference
 ms.assetid: 964980ca-21c5-4706-8535-6ea23e1c9cc9
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a717fdb885669ae4893dc4234c58233dec2957be
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 01e7a0ca8a509d430a0794a2cedb4b2e9d869585
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56691653"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66331821"
 ---
 # <a name="source-control-plug-ins"></a>原始檔控制外掛程式
 原始檔控制外掛程式 SDK 參考章節包含可讓與整合的原始檔控制系統的完整介面規格[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。 語法和語意的原始檔控制外掛程式必須實作介面以各種函式和資料類型，它會指定[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]整合式的開發環境 (IDE)。

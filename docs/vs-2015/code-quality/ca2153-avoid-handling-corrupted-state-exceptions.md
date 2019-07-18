@@ -1,26 +1,21 @@
 ---
-title: CA2153： 避免處理損毀狀態例外狀況 |Microsoft Docs
-ms.custom: ''
+title: CA2153:避免處理損毀狀態例外狀況 |Microsoft Docs
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 ms.assetid: 418cc9cb-68ad-47e9-a6c8-a48b9c35db45
 caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 00e475fa90e0a9976105e4c9c645746427366f32
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f8999c2e4622505526524f2a09a5f33259955974
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49869947"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68142580"
 ---
-# <a name="ca2153-avoid-handling-corrupted-state-exceptions"></a>CA2153：避免處理損毀狀態例外狀況
+# <a name="ca2153-avoid-handling-corrupted-state-exceptions"></a>CA2153:避免處理損毀狀態例外狀況
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -132,6 +127,3 @@ void TestMethod1()
     }
 }
 ```
-
-
-

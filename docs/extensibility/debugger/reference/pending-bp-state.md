@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - PENDING_BP_STATE enumeration
 ms.assetid: ac04ad72-fa92-4a15-ade2-0d0bbbadfc7f
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6ab1e9345cf599c4336b202d32fb71a9097fe629
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 6707c09e409e2a04d7afec0322b575a70cea33cf
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56688535"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66349863"
 ---
 # <a name="pendingbpstate"></a>PENDING_BP_STATE
 指定的暫止中斷點 （具有尚未已繫結中斷點） 的狀態。
@@ -43,14 +46,18 @@ public enum enum_PENDING_BP_STATE { 
 };
 ```
 
-## <a name="members"></a>成員
- PBPS_NONE 零預留位置。 永遠不會傳回此值。
+## <a name="fields"></a>欄位
+ `PBPS_NONE`\
+ 零的預留位置。 永遠不會傳回此值。
 
- PBPS_DELETED 指出已刪除暫止中斷點。
+ `PBPS_DELETED`\
+ 表示已刪除暫止中斷點。
 
- PBPS_DISABLED 表示暫止中斷點已停用。
+ `PBPS_DISABLED`\
+ 表示暫止中斷點已停用。
 
- PBPS_ENABLED 指出已啟用 暫止中斷點。
+ `PBPS_ENABLED`\
+ 指出已啟用 暫止中斷點。
 
 ## <a name="remarks"></a>備註
  用作`state`隸屬[PENDING_BP_STATE_INFO](../../../extensibility/debugger/reference/pending-bp-state-info.md)結構。

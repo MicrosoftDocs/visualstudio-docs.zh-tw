@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], custom - multiple document views
 ms.assetid: c7ec2366-91c4-477f-908d-e89068bdb3e3
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bdd976c4710754d446c6b63e628427c42bf7da17
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 93d4e2a307a6bdd8f06b928103c38337497b7a95
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56682410"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66353473"
 ---
 # <a name="supporting-multiple-document-views"></a>支援多個文件檢視
 您可以為您的編輯器建立個別的文件資料和文件檢視物件，以提供文件的多個檢視。 一些其他的文件檢視會很有用的案例如下：

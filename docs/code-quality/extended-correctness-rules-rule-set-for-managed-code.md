@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 19dec66e4f281af37a0ef66a114b9c26b48ce163
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55930580"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62816630"
 ---
 # <a name="extended-correctness-rules-rule-set-for-managed-code"></a>適用於 Managed 程式碼的擴充正確性規則規則集
 Microsoft 擴充正確性規則規則集最大化的邏輯和 framework 使用錯誤報告的程式碼分析。 額外的重點會放在特定的案例，例如 COM 互通性和行動應用程式。 您應該考慮包含這個規則集如果任一這些案例適用於您的專案或您的專案中找出其他問題。

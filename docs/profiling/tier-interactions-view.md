@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8a3bf4f5fd7ab18efb13e1c52847daf647e908b7
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56640840"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62968772"
 ---
 # <a name="tier-interactions-view"></a>階層互動檢視
 

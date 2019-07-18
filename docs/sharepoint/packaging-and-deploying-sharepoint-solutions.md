@@ -14,25 +14,25 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 297fefddd45b080af236da0b4fe53649e7d630cf
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 4c187865518c9556d63d9e5e632ec5c658fc3e0f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57867560"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62953500"
 ---
 # <a name="package-and-deploy-sharepoint-solutions"></a>封裝和部署 SharePoint 方案
   一般而言，SharePoint 解決方案會使用方案套件 (.wsp) 檔案部署到 SharePoint 伺服器。 若要將您的 SharePoint 專案項目組織成功能，並建立要部署您的 SharePoint 功能的套件，您可以使用 Visual Studio。
 
  本主題提供下列資訊：
 
--   [建立功能和封裝](#create-features-and-packages)
+- [建立功能和封裝](#create-features-and-packages)
 
--   [功能和封裝工具支援](#feature-and-packaging-tool-support)
+- [功能和封裝工具支援](#feature-and-packaging-tool-support)
 
--   [部署 SharePoint 方案](#deploy-sharepoint-solutions)
+- [部署 SharePoint 方案](#deploy-sharepoint-solutions)
 
--   [部署 SharePoint 方案中的檔案](#deploy-files-in-sharepoint-solutions)
+- [部署 SharePoint 方案中的檔案](#deploy-files-in-sharepoint-solutions)
 
 ## <a name="create-features-and-packages"></a>建立功能和封裝
  您可以使用 Visual Studio 來分組到相關的 SharePoint 項目*功能*。 比方說，在連絡人清單定義一項功能可能包括清單執行個體和清單定義。 您可以將這兩個元素合併成單一的功能進行部署。 如需有關功能的詳細資訊，請參閱[建置組塊：功能](http://go.microsoft.com/fwlink/?LinkID=169183)。
@@ -42,11 +42,11 @@ ms.locfileid: "57867560"
 ## <a name="feature-and-packaging-tool-support"></a>功能和封裝工具支援
  您可以使用 Visual Studio 中的 SharePoint 開發工具，快速將您的 SharePoint 檔案組織成功能和更容易部署的方案套件。 若要設定的功能和方案套件，您可以使用下列工具。
 
--   功能設計工具和封裝設計工具。
+- 功能設計工具和封裝設計工具。
 
--   封裝總管 中，工具視窗。
+- 封裝總管 中，工具視窗。
 
--   方案總管 中。
+- 方案總管 中。
 
 ### <a name="feature-designer-and-package-designer"></a>功能設計工具] 和 [封裝設計工具
  您可以建立功能、 設定範圍，並標示為相依性的其他功能，使用功能設計工具。 設計工具也會顯示描述每項功能的最終 XML 檔案。 如需詳細資訊，請參閱 <<c0> [ 建立的 SharePoint 功能](../sharepoint/creating-sharepoint-features.md)。

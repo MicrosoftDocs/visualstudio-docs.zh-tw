@@ -3,31 +3,31 @@ title: 快速入門 - 開啟 Python 程式碼資料夾
 description: 您可以在此快速入門中，從資料夾開啟並執行 Python 程式碼，不需使用 Visual Studio 專案 (僅限 Visual Studio 2019)。
 ms.date: 03/12/2019
 ms.topic: quickstart
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: 6cf4e15ec464b1d438245cd7bfe254d9464ad2a6
-ms.sourcegitcommit: 4c7a0c2d712eb24609216577a793e912a6083eaf
+ms.openlocfilehash: ab234d9482cf9cbab49c15167ea45aff9ac2c7e6
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "57987042"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62431066"
 ---
 # <a name="quickstart-open-and-run-python-code-in-a-folder"></a>快速入門：在資料夾中開啟及執行 Python 程式碼
 
 [在 Visual Studio 2019 中安裝 Python 支援](installing-python-support-in-visual-studio.md)之後，就可以很容易地在 Visual Studio 2019 中執行現有的 Python 程式碼，不需要建立 Visual Studio 專案。
 
 > [!Note]
-> Visual Studio 2017 及更早版本會要求您建立 Visual Studio 專案以執行 Python 程式碼，不過可以輕鬆地使用內建專案範本來執行。 請參閱[快速入門：從現有程式碼建立 Python 專案](quickstart-01-python-in-visual-studio-project-from-existing-code.md)
+> Visual Studio 2017 及舊版會要求您建立 Visual Studio 專案以執行 Python 程式碼，使用內建專案範本即可輕鬆執行。 請參閱[快速入門：從現有程式碼建立 Python 專案](quickstart-01-python-in-visual-studio-project-from-existing-code.md)
 
 1. 您可以在此逐步解說中，使用包含所需 Python 程式碼的任何資料夾。 若要依照這裡的範例進行，請使用命令 `git clone https://github.com/gregmalcolm/python_koans` 將 gregmalcolm/python_koans GitHub 存放庫複製到您的電腦的適當資料夾中。
 
-1. 啟動 Visual Studio 2019，並在開始畫面中，選取 [開始使用] 資料行底部的 [開啟]。 或者，如果您已經在執行 Visual Studio，請改為選取 [檔案] > [開啟] > [資料夾] 命令。
+1. 啟動 Visual Studio 2019，並在 [開始] 視窗中，選取 [開始使用] 資料行底部的 [開啟]。 或者，如果您已經在執行 Visual Studio，請改為選取 [檔案] > [開啟] > [資料夾] 命令。
 
     ![Visual Studio 啟動畫面](media/quickstart-open-folder/01-open-local-folder.png)
 

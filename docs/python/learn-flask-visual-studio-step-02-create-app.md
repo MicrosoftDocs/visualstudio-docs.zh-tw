@@ -4,19 +4,19 @@ titleSuffix: ''
 description: 逐步解說 Visual Studio 專案內容中的 Flask 基本知識，特別是建立應用程式及使用檢視與範本的步驟。
 ms.date: 01/07/2019
 ms.topic: tutorial
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b3a333482590e284c5cbbc1ec44093a835c76db0
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 188865b715c7c071222f7132c6f9bdd9b3dc596a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55912792"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62961727"
 ---
 # <a name="step-2-create-a-flask-app-with-views-and-page-templates"></a>步驟 2：使用檢視與頁面範本來建立 Flask 應用程式
 
@@ -77,6 +77,7 @@ ms.locfileid: "55912792"
 
         app.run(HOST, PORT)
     ```
+
 6. 您的專案結構應該看起來如下圖：
 
     ![重構程式碼後的專案結構](media/flask/step02-project-structure.png)

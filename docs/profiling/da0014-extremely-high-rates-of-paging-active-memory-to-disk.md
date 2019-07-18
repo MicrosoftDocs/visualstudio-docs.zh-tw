@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f6486fc204942553a58e437d56fc7d0ffee548b
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 40ebd26b4732399ac53ba1796fcb3c05bf370599
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56630388"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63425470"
 ---
 # <a name="da0014-extremely-high-rates-of-paging-active-memory-to-disk"></a>DA0014：極高比率的使用中記憶體分頁到磁碟
 
@@ -41,7 +41,7 @@ ms.locfileid: "56630388"
  分頁經常以大量分頁作業從磁碟讀取或寫入磁碟。 例如，Pages Output/sec 數經常遠比 Page Writes/sec 數還大。 因為 Pages Output/sec 還包含系統檔案快取的變更資料頁。 不過，不一定可以輕鬆地判斷哪些處理序直接負責分頁或原因。
 
 > [!NOTE]
->  當使用中記憶體的分頁程度達到非常高的比率時，就會引發這個規則。 當分頁程度很高但不是極高時，則會改為引發資訊性規則 [DA0017：高比率的使用中記憶體分頁到磁碟](../profiling/da0017-high-rates-of-paging-active-memory-to-disk.md)。
+> 當使用中記憶體的分頁程度達到非常高的比率時，就會引發這個規則。 當分頁程度很高但不是極高時，則會改為引發資訊性規則 [DA0017：高比率的使用中記憶體分頁到磁碟](../profiling/da0017-high-rates-of-paging-active-memory-to-disk.md)。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
  按兩下 [錯誤清單] 視窗中的訊息，瀏覽至[標記](../profiling/marks-view.md)檢視。 尋找 **Memory\Pages/sec** 欄。 判斷是否有特定的程式執行階段，當中的分頁 IO 活動比其他階段更繁重。

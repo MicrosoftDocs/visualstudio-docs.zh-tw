@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a2a1ddeb2b12d592c93bb0e5b88ba76c1b01c3c3
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56625318"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62936549"
 ---
 # <a name="da0010-expensive-gethashcode"></a>DA0010：GetHashCode 高度耗費資源
 

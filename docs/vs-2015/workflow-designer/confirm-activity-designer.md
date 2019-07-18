@@ -1,11 +1,8 @@
 ---
 title: Confirm 活動設計工具 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.Confirm.UI
@@ -13,13 +10,13 @@ ms.assetid: c753b67b-b0e7-462a-bb4e-ba8db04a078d
 caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: df1943314163ab71925620a2f8a2f8431a8033d7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 29635044eb4cca558d631ab959b1b4f5480dbdbe
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49237727"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62977388"
 ---
 # <a name="confirm-activity-designer"></a>Confirm 活動設計工具
 **Confirm**活動設計工具會用來建立及設定<xref:System.Activities.Statements.Confirm>活動。  
@@ -37,7 +34,7 @@ ms.locfileid: "49237727"
 ### <a name="the-confirm-properties"></a>Confirm 屬性  
  下表顯示 <xref:System.Activities.Statements.Confirm> 屬性，並且描述屬性在設計工具中的使用方式。 <xref:System.Activities.Activity.DisplayName%2A> 屬性可以在屬性方格中或在 [!INCLUDE[wfd2](../includes/wfd2-md.md)] 介面上編輯，但 <xref:System.Activities.Statements.Confirm.Target%2A> 屬性必須在屬性方格中編輯。  
   
-|屬性名稱|必要項|使用方式|  
+|屬性名稱|必要|使用量|  
 |-------------------|--------------|-----------|  
 |<xref:System.Activities.Activity.DisplayName%2A>|False|指定 <xref:System.Activities.Statements.CancellationScope> 活動選用的易記名稱。 預設為 Confirm。|  
 |<xref:System.Activities.Statements.Confirm.Target%2A>|True|指定 <xref:System.Activities.InArgument%601>，其中包含此 <xref:System.Activities.Statements.CompensationToken> 活動的 <xref:System.Activities.Statements.Confirm>。|  

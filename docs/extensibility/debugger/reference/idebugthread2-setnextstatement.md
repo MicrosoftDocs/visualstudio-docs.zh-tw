@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugThread2::SetNextStatement
 ms.assetid: 9e2834dd-4ecf-45af-8e6c-f9318ebdac06
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 896167d3655c5234f56f3b70e4369706250973c5
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 87a5ba19eed0c0ee4d78feeb755b50db428d77d9
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56719570"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66320080"
 ---
 # <a name="idebugthread2setnextstatement"></a>IDebugThread2::SetNextStatement
 設定目前的指令指標至指定的程式碼內容。
@@ -38,12 +41,12 @@ int SetNextStatement ( 
 );
 ```
 
-#### <a name="parameters"></a>參數
- `pStackFrame` 保留供未來使用;設定為 null 的值。
+## <a name="parameters"></a>參數
+`pStackFrame`\
+保留供未來使用;設定為 null 的值。
 
- `pCodeContext`
-
- [in][IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)描述將要執行的程式碼位置的物件和其內容。
+`pCodeContext`\
+[in][IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)描述將要執行的程式碼位置的物件和其內容。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。 下表顯示其他可能的值。

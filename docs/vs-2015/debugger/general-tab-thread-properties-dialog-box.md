@@ -1,14 +1,9 @@
 ---
 title: 執行緒屬性對話方塊、 一般索引標籤 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - threading [Visual Studio], thread properties
 - thread properties
@@ -16,13 +11,13 @@ ms.assetid: 46b6c668-6786-456e-97dc-337bcac0d812
 caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 2777096e13ef649f2a340d3b3cae92d050d9531f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: b1a8e6fd583f6035fc84f0c86adcee059562235d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51728973"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68159948"
 ---
 # <a name="general-tab-thread-properties-dialog-box"></a>執行緒屬性對話方塊、一般索引標籤
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +26,7 @@ ms.locfileid: "51728973"
   
  **Thread Properties**  對話方塊包含一個窗格中，**一般** 索引標籤。可用的設定如下：  
   
-|進入|描述|  
+|進入|說明|  
 |-----------|-----------------|  
 |**模組名稱**|模組的名稱。|  
 |**執行緒 ID**|此執行緒的唯一識別碼。 請注意，會重複使用的執行緒識別碼;它們可以識別執行緒只會針對該執行緒的存留期。|  
@@ -40,13 +35,10 @@ ms.locfileid: "51728973"
 |**等候原因**|這只有在執行緒處於等候狀態時，才適用。 事件配對用來與受保護的子系統進行通訊。|  
 |**CPU 時間**|在此程序和其執行緒所花費的總 CPU 時間。 等於使用者時間加上特殊權限的時間。|  
 |**使用者時間**|這個執行緒已花費在使用者模式中執行的程式碼的總時間。 使用者模式中的應用程式執行，因為執行 「 視窗管理員 」 等圖形引擎的子系統。|  
-|**特殊權限的時間**|這個執行緒已花在特權模式下執行的程式碼的總時間。 呼叫 Windows 系統服務時，服務通常會在取得存取權系統私用資料的特殊權限模式執行。 這類資料會受到在使用者模式中執行的執行緒存取。 對系統的呼叫可能是明確的或者可能是隱含的例如分頁錯誤或中斷發生時。|  
+|**授權的時間**|這個執行緒已花在特權模式下執行的程式碼的總時間。 呼叫 Windows 系統服務時，服務通常會在取得存取權系統私用資料的特殊權限模式執行。 這類資料會受到在使用者模式中執行的執行緒存取。 對系統的呼叫可能是明確的或者可能是隱含的例如分頁錯誤或中斷發生時。|  
 |**已耗用時間**|這個執行緒已執行總經過時間 （以秒為單位）。|  
 |**目前優先順序**|此執行緒的目前動態的優先權。 在處理序中的執行緒可以引發，並降低其自己的基礎優先權，相對於處理程序的基本優先順序。|  
-|**基本優先順序**|此執行緒的目前的基礎優先權。|  
+|**基礎優先順序**|此執行緒的目前的基礎優先權。|  
 |**起始位址**|這個執行緒開始的虛擬位址。|  
 |**使用者電腦**|執行緒使用者程式計數器。|  
-|**內容切換**|從一個執行緒切換為另一個數目。 在單一處理序內或跨處理序，可能會發生執行緒切換。 要求的詳細資訊，另一個執行緒或被優先佔用當高優先順序的執行緒會成為準備好要執行的執行緒，可能被造成執行緒進行切換。|
-
-
-
+|**環境切換**|從一個執行緒切換為另一個數目。 在單一處理序內或跨處理序，可能會發生執行緒切換。 要求的詳細資訊，另一個執行緒或被優先佔用當高優先順序的執行緒會成為準備好要執行的執行緒，可能被造成執行緒進行切換。|

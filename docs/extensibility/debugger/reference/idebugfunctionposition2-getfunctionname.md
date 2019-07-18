@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugFunctionPosition2::GetFunctionName
 ms.assetid: eb7a348e-a7f5-4f25-be68-80482d5482a8
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b98b1f2bcb8324544d88a9b002995ff472dec35d
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: a3bef8ebf82786212552421ebb608e26a6708623
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56716450"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66313348"
 ---
 # <a name="idebugfunctionposition2getfunctionname"></a>IDebugFunctionPosition2::GetFunctionName
 取得此位置指向函式的名稱。
@@ -36,10 +39,9 @@ int GetFunctionName(
 );
 ```
 
-#### <a name="parameters"></a>參數
- `pbstrFunctionName`
-
- [out]傳回的函式名稱。
+## <a name="parameters"></a>參數
+`pbstrFunctionName`\
+[out]傳回的函式名稱。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

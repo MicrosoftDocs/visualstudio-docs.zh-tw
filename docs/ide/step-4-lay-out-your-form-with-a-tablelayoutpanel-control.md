@@ -8,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7083a8874b699716d834ea69ba88c30225acec88
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 94e0c5999f8d8e6bdfbc96a24a1a51b7c093aca1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55926108"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431469"
 ---
 # <a name="step-4-lay-out-your-form-with-a-tablelayoutpanel-control"></a>步驟 4：使用 TableLayoutPanel 控制項來配置表單
 在此步驟中，您會將 <xref:System.Windows.Forms.TableLayoutPanel> 控制項新增至表單。 TableLayoutPanel 有助於正確對齊稍後加入至表單中的控制項。
@@ -22,46 +22,46 @@ ms.locfileid: "55926108"
 
 ## <a name="to-lay-out-your-form-with-a-tablelayoutpanel-control"></a>若要使用 TableLayoutPanel 控制項來配置您的表單
 
-1.  在 Visual Studio IDE 左側，找到 [工具箱] 索引標籤。選擇 [工具箱] 索引標籤，然後 [工具箱] 隨即出現。 (或者，在功能表列上依序選擇 [檢視] > [工具箱])。
+1. 在 Visual Studio IDE 左側，找到 [工具箱] 索引標籤。選擇 [工具箱] 索引標籤，然後 [工具箱] 隨即出現。 (或者，在功能表列上依序選擇 [檢視] > [工具箱])。
 
-2.  選擇 [容器] 群組旁的小三角形符號開啟它，如下圖所示。
+2. 選擇 [容器] 群組旁的小三角形符號開啟它，如下圖所示。
 
      ![[容器] 群組](../ide/media/express_toolbox.png)
 [容器]**** 群組
 
-3.  您可以將控制項 (例如按鈕、核取方塊和標籤) 加入至表單。 按兩下 [工具箱] 中的 TableLayoutPanel 控制項。 (或者，可以從工具箱將控制項拖曳到表單)。這樣做時，IDE 會將 TableLayoutPanel 控制項加入至表單，如下列圖片所示。
+3. 您可以將控制項 (例如按鈕、核取方塊和標籤) 加入至表單。 按兩下 [工具箱] 中的 TableLayoutPanel 控制項。 (或者，可以從工具箱將控制項拖曳到表單)。這樣做時，IDE 會將 TableLayoutPanel 控制項加入至表單，如下列圖片所示。
 
      ![TableLayoutPanel 控制項](../ide/media/express_formtablelayout.png)
 **TableLayoutPanel** 控制項
 
     > [!NOTE]
-    >  新增 TableLayoutPanel 之後，如果表單內出現標題為 [TableLayoutPanel 工作] 的視窗，請選擇表單內的任何位置以關閉它。 稍後在教學課程中，您將深入了解此視窗。
+    > 新增 TableLayoutPanel 之後，如果表單內出現標題為 [TableLayoutPanel 工作] 的視窗，請選擇表單內的任何位置以關閉它。 稍後在教學課程中，您將深入了解此視窗。
 
      請注意 [工具箱] 在您選擇索引標籤時會展開以包含您的表單，當您選擇其外部任何地方時就會關閉。 這就是 IDE 的自動隱藏功能。 您可以藉著選擇視窗右上角的圖釘圖示，開啟或關閉任何視窗的此功能，以便切換自動隱藏並鎖定視窗。 圖釘圖示顯示如下。
 
      ![圖釘圖示](../ide/media/express_pushpintoolbox.png)
 **圖釘**圖示
 
-4.  選擇 TableLayoutPanel 以確定選取它。 您可以查看 [屬性] 視窗頂端的下拉式清單，以驗證已選取哪一個控制項，如下圖所示。
+4. 選擇 TableLayoutPanel 以確定選取它。 您可以查看 [屬性] 視窗頂端的下拉式清單，以驗證已選取哪一個控制項，如下圖所示。
 
      ![顯示 TableLayoutPanel 控制項的 [屬性] 視窗](../ide/media/express_controlspropwin.png)
 顯示 **TableLayoutPanel** 控制項的 [屬性]**** 視窗
 
-5.  在 [屬性] 視窗的工具列上，選擇 [字母順序] 按鈕。 這會造成 [屬性] 視窗中的屬性清單以字母順序顯示，可讓您輕鬆地找到本教學課程中的屬性。
+5. 在 [屬性] 視窗的工具列上，選擇 [字母順序] 按鈕。 這會造成 [屬性] 視窗中的屬性清單以字母順序顯示，可讓您輕鬆地找到本教學課程中的屬性。
 
-6.  控制項選取器是 [屬性] 視窗頂端的下拉式清單。 在此範例中，它顯示已選取一個稱為 `tableLayoutPanel1` 的控制項。 您可以從 **Windows Forms 設計工具**或從控制項選取器中選擇區域，即可選控制項。 現在已選取 TableLayoutPanel ，請尋找 [停駐] 屬性並選擇 [停駐]，此屬性應該設定為 [無]。 請注意，值旁邊會出現下拉箭號。 選擇箭號，然後選取 [填滿] 按鈕 (中間的大型按鈕)，如下圖所示。
+6. 控制項選取器是 [屬性] 視窗頂端的下拉式清單。 在此範例中，它顯示已選取一個稱為 `tableLayoutPanel1` 的控制項。 您可以從 **Windows Forms 設計工具**或從控制項選取器中選擇區域，即可選控制項。 現在已選取 TableLayoutPanel ，請尋找 [停駐] 屬性並選擇 [停駐]，此屬性應該設定為 [無]。 請注意，值旁邊會出現下拉箭號。 選擇箭號，然後選取 [填滿] 按鈕 (中間的大型按鈕)，如下圖所示。
 
      ![選取 [填滿] 的 [屬性] 視窗](../ide/media/express_docktable.png)
 選取 [填滿]**** 的 [屬性]**** 視窗
 
      Visual Studio 中的「停駐」是指在 IDE 中，將視窗附加至另一個視窗或區域。 例如，[屬性] 視窗可以浮動，也就是未連接，可在 Visual Studio 內自由浮動，也可以停駐於**方案總管**。
 
-7.  將 TableLayoutPanel **Dock** 屬性設定為 [Fill] 之後，面板會填滿整個表單。 如果您再次調整表單的大小，TableLayoutPanel 會停駐不動，並調整大小來填滿表單。
+7. 將 TableLayoutPanel **Dock** 屬性設定為 [Fill] 之後，面板會填滿整個表單。 如果您再次調整表單的大小，TableLayoutPanel 會停駐不動，並調整大小來填滿表單。
 
     > [!NOTE]
-    >  TableLayoutPanel 如同 Microsoft Office Word 中的表格：它具有列和欄，且單一儲存格可以跨越多個列和欄。 每一個儲存格中放置一個控制項 (例如按鈕、核取方塊或標籤)。 您的 TableLayoutPanel 將具有一個橫跨整個上方資料列的 <xref:System.Windows.Forms.PictureBox> 控制項、在左下方儲存格有一個 <xref:System.Windows.Forms.CheckBox> 控制項，以及在右下方儲存格中則有四個 <xref:System.Windows.Forms.Button> 控制項。
+    > TableLayoutPanel 如同 Microsoft Office Word 中的表格：它具有列和欄，且單一儲存格可以跨越多個列和欄。 每一個儲存格中放置一個控制項 (例如按鈕、核取方塊或標籤)。 您的 TableLayoutPanel 將具有一個橫跨整個上方資料列的 <xref:System.Windows.Forms.PictureBox> 控制項、在左下方儲存格有一個 <xref:System.Windows.Forms.CheckBox> 控制項，以及在右下方儲存格中則有四個 <xref:System.Windows.Forms.Button> 控制項。
 
-8.  目前，TableLayoutPanel 具有兩個大小相等的資料列和兩個大小相等的資料行。 您需要對它們調整大小，使上方資料列和右邊資料行都變得更大。 在 **Windows Forms 設計工具**中，選取 [TableLayoutPanel]。 右上角有一個黑色的小型三角形按鈕，如下所示。
+8. 目前，TableLayoutPanel 具有兩個大小相等的資料列和兩個大小相等的資料行。 您需要對它們調整大小，使上方資料列和右邊資料行都變得更大。 在 **Windows Forms 設計工具**中，選取 [TableLayoutPanel]。 右上角有一個黑色的小型三角形按鈕，如下所示。
 
      ![三角形按鈕](../ide/media/express_iconblacktriangle.gif)
 **三角形**按鈕
@@ -87,6 +87,6 @@ ms.locfileid: "55926108"
 
 ## <a name="to-continue-or-review"></a>若要繼續或檢視
 
--   若要前往下一個教學課程步驟，請參閱[步驟 5：將控制項新增至表單](../ide/step-5-add-controls-to-your-form.md)。
+- 若要前往下一個教學課程步驟，請參閱[步驟 5：將控制項新增至表單](../ide/step-5-add-controls-to-your-form.md)。
 
--   若要回到上一個教學課程步驟，請參閱[步驟 3：設定表單屬性](../ide/step-3-set-your-form-properties.md)。
+- 若要回到上一個教學課程步驟，請參閱[步驟 3：設定表單屬性](../ide/step-3-set-your-form-properties.md)。

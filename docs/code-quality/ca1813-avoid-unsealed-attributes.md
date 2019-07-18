@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d7236b77a7dd0a81f8a7846c0eba28e3b520cdd
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: a17c5bdc9e21bdf877206b1dc28596c251049455
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55931815"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66714744"
 ---
 # <a name="ca1813-avoid-unsealed-attributes"></a>CA1813:避免使用非密封屬性
 
@@ -39,7 +39,7 @@ ms.locfileid: "55931815"
 
 ## <a name="rule-description"></a>規則描述
 
-.NET Framework 類別庫會提供方法來擷取自訂屬性。 根據預設，這些方法會搜尋屬性繼承階層架構。 比方說，<xref:System.Attribute.GetCustomAttribute%2A?displayProperty=fullName>搜尋指定的屬性型別或任何延伸指定的屬性類型的屬性類型。 密封屬性排除整個繼承階層架構中，搜尋，並可改善效能。
+.NET 提供方法來擷取自訂屬性。 根據預設，這些方法會搜尋屬性繼承階層架構。 比方說，<xref:System.Attribute.GetCustomAttribute%2A?displayProperty=fullName>搜尋指定的屬性型別或任何延伸指定的屬性類型的屬性類型。 密封屬性排除整個繼承階層架構中，搜尋，並可改善效能。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
 

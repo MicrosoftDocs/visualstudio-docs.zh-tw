@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugReference2::GetReferenceInfo
 ms.assetid: ae611714-f114-4cf2-b5bb-37461e6ff289
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d0e6db00c6c09b52e635e141d9e9a18ff3df6466
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: c1ad9a3f23037a4413811e0d98304ceedf0620ac
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56720963"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66345650"
 ---
 # <a name="idebugreference2getreferenceinfo"></a>IDebugReference2::GetReferenceInfo
 取得[DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md)結構描述的參考。 保留供未來使用。
@@ -46,30 +49,24 @@ int GetReferenceInfo ( 
 );
 ```
 
-#### <a name="parameters"></a>參數
- `dwFields`
+## <a name="parameters"></a>參數
+`dwFields`\
+[in]從旗標的組合[DEBUGREF_INFO_FLAGS](../../../extensibility/debugger/reference/debugref-info-flags.md)決定填寫欄位的列舉型別[DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md)結構。
 
- [in]從旗標的組合[DEBUGREF_INFO_FLAGS](../../../extensibility/debugger/reference/debugref-info-flags.md)決定填寫欄位的列舉型別[DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md)結構。
+`nRadix`\
+[in]要用於格式化數字的任何資訊基數。
 
- `nRadix`
+`dwTimeout`\
+[in]最大時間 （毫秒），這個方法返回之前等候。 使用`INFINITE`無限期等候。
 
- [in]要用於格式化數字的任何資訊基數。
+`rgpArgs`\
+[in]陣列[IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)物件。 保留供未來使用;設定為 null 的值。
 
- `dwTimeout`
+`dwArgCount`\
+[in]中的參考引數數目`rgpArgs`陣列。 保留供未來使用;設定為 0。
 
- [in]最大時間 （毫秒），這個方法返回之前等候。 使用`INFINITE`無限期等候。
-
- `rgpArgs`
-
- [in]陣列[IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)物件。 保留供未來使用;設定為 null 的值。
-
- `dwArgCount`
-
- [in]中的參考引數數目`rgpArgs`陣列。 保留供未來使用;設定為 0。
-
- `pReferenceInfo`
-
- [out]A [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md)會填入的屬性描述的結構。
+`pReferenceInfo`\
+[out]A [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md)會填入的屬性描述的結構。
 
 ## <a name="return-value"></a>傳回值
  一律傳回 `E_NOTIMPL`。

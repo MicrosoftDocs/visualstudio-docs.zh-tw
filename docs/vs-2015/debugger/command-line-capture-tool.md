@@ -1,25 +1,20 @@
 ---
 title: 命令列擷取工具 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: db75b3a7-80b2-4a74-91d2-fd6e0f73b45d
 caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: d4cafc8c066025f87d233d8b6db8a97be1aa16f5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 208ff7f9bbfc2d07669a8b485edffc8dfc4cd54f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51770694"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437792"
 ---
 # <a name="command-line-capture-tool"></a>命令列擷取工具
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -84,7 +79,7 @@ DXCap.exe –info
  在驗證模式下，`events` 指定會比較其立即結果的圖形事件集。 比方說，`-examine present,draw,copy,clear`限制只有屬於那些類別的事件比較。  
   
 > [!TIP]
->  我們建議您從`-examine present,draw,copy,clear`因為這會顯示大部分的問題，但需要更少的時間比更廣泛的事件集。 如有必要，您可以指定較大或不同的事件集來驗證這些事件，並且顯示其他種類的問題。  
+> 我們建議您從`-examine present,draw,copy,clear`因為這會顯示大部分的問題，但需要更少的時間比更廣泛的事件集。 如有必要，您可以指定較大或不同的事件集來驗證這些事件，並且顯示其他種類的問題。  
   
  `-haltonfail`  
  在驗證模式下`-haltonfail`硬體和 WARP 轉譯器之間偵測到差異時，中止驗證。 按下按鍵之後，會繼續執行驗證。  
@@ -142,10 +137,10 @@ DXCap.exe –file regression_test_12.vsglog –c BasicHLSL11.exe
 DXCap.exe –c "C:\Program Files\Internet Explorer\iexplorer.exe" "www.fishgl.com"  
 ```  
   
- 在上述範例中的命令會擷取桌面版本的 Internet Explorer 檢視網頁位於 www.fishgl.com 使用 WebGL API 來呈現 3d 內容時的圖形資訊。  
+ 在上述範例中的命令會在檢視位於 www.fishgl.com 的網頁時，擷取 Internet Explorer 桌上型電腦版本的圖形資訊；該網頁使用 WebGL API 來呈現 3D 內容。  
   
 > [!NOTE]
->  因為應用程式之後，會出現的命令列引數會傳遞給它，您必須指定使用之前用於 DXCap.exe 的引數`–c`選項。  
+> 因為應用程式之後出現的命令列引數會傳遞給它，所以您必須指定適用於 DXCap.exe 的引數，然後才能使用 `–c` 選項。  
   
 ### <a name="capture-graphics-information-from-a-windows-store-app"></a>擷取來自 Windows 市集應用程式的圖形資訊。  
  您可以擷取來自 Windows 市集應用程式的圖形資訊。  
@@ -168,18 +163,18 @@ DXCap.exe –e map
   
  上述命令會列舉符合 "map" 的 Windows 市集應用程式。輸出如下：  
   
- **封裝"Microsoft.BingMaps 」:**  
- **Installdirectory 出現： C:\Program Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe**  
- **FullName: Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe**  
- **UserSID: S-1-5-21-2127521184-1604012920-1887927527-5603533**  
- **名稱： Microsoft.BingMaps**  
- **發行者： CN = Microsoft Corporation，O = Microsoft Corporation，L = Redmond，S = Washington，C = US**  
- **版本： 2.1.2914.1734**  
- **可啟動的應用程式：**  
- **識別碼： AppexMaps**  
- **Exe: C:\Program Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe\Map.exe**  
- **IsWWA： 否**  
- **AppSpec （以啟動）： DXCap.exe-c Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe,AppexMaps**每個列舉的應用程式的輸出的最後一行會顯示您可用來從其擷取圖形資訊的命令。  
+ **Package "Microsoft.BingMaps":**  
+ **Installdirectory 出現：C:\Program Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe**  
+ **完整名稱         :Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe**  
+ **UserSID:S-1-5-21-2127521184-1604012920-1887927527-5603533**  
+ **名稱             :Microsoft.BingMaps**  
+ **發行者           :CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US**  
+ **Version          :2.1.2914.1734**  
+ **Launchable Applications:**  
+ **識別碼：AppexMaps**  
+ **Exe:C:\Program Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe\Map.exe**  
+ **IsWWA:否**  
+ **AppSpec （以啟動）：DXCap.exe-c Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe,AppexMaps**每個列舉的應用程式的輸出的最後一行會顯示您可用來從其擷取圖形資訊的命令。  
   
 ### <a name="capture-specific-frames-or-frames-between-specific-times"></a>擷取特定框架或特定時間之間的框架。  
  使用`–frame`來指定您想要使用逗號和範圍擷取的框架：  
@@ -302,6 +297,3 @@ DXCap.exe –p regression_test_12.vsglog –toXML temp.xml
 ```  
   
 ## <a name="requirements"></a>需求
-
-
-

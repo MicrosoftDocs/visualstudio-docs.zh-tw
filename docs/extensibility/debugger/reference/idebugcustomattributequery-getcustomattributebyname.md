@@ -6,17 +6,20 @@ helpviewer_keywords:
 - IDebugCustomAttributeQuery::GetCustomAttributeByName
 - GetCustomAttributeByName
 ms.assetid: 6779727c-d10a-4abe-9acd-d0a1eb0737e7
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 60341aa39a61f7179d0b913ec78aca10fae5b84c
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: df4dfa880104b9989e49761beb823c960de85391
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56725017"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66346062"
 ---
 # <a name="idebugcustomattributequerygetcustomattributebyname"></a>IDebugCustomAttributeQuery::GetCustomAttributeByName
 擷取自訂屬性，指定其名稱。
@@ -39,18 +42,15 @@ int GetCustomAttributeByName(
 );
 ```
 
-#### <a name="parameters"></a>參數
-`pszCustomAttributeName`
+## <a name="parameters"></a>參數
+`pszCustomAttributeName`\
+[in]自訂屬性的名稱。
 
- [in]自訂屬性的名稱。
-
-`ppBlob`
-
+`ppBlob`\
 [in、 out]包含自訂屬性資料的位元組陣列。
 
-`pdwLen`
-
- [out]以位元組為單位的長度`ppBlob`參數。
+`pdwLen`\
+[out]以位元組為單位的長度`ppBlob`參數。
 
 ## <a name="return-value"></a>傳回值
 如果成功，會傳回 `S_OK`。 如果自訂屬性不存在，就會傳回`S_FALSE`。 否則會傳回錯誤碼。

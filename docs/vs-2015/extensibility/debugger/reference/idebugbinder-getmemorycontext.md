@@ -1,14 +1,9 @@
 ---
-title: IDebugBinder::GetMemoryContext |Microsoft Docs
-ms.custom: ''
+title: IDebugBinder::GetMemoryContext | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugBinder::GetMemoryContext
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 801c5b60-acff-4822-b23d-e9c7bbca8a0f
 caps.latest.revision: 13
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: f63db8b2c8073861280c9cd663282b5c0b50b6d9
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: db8d8d820c43d17194feda0bf228227a279dccc6
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51793564"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62423409"
 ---
 # <a name="idebugbindergetmemorycontext"></a>IDebugBinder::GetMemoryContext
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -64,4 +59,3 @@ int GetMemoryContext(
  [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)   
  [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)   
  [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)
-

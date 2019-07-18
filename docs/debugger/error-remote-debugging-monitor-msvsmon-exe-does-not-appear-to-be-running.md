@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 40210832f06a328ec2fc785a2543eb3bbce9f6ba
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MTE95
+ms.openlocfilehash: 5dcd45cb64656b926b9c59efd7b6af14d2ec4c53
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57867990"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62850647"
 ---
 # <a name="error-the-microsoft-visual-studio-remote-debugging-monitor-msvsmonexe-does-not-appear-to-be-running-on-the-remote-computer"></a>錯誤：Microsoft Visual Studio 遠端偵錯監視 (MSVSMON.EXE) 似乎沒有在遠端電腦上執行。
 這個錯誤訊息表示 Visual Studio 無法在遠端電腦上找到正確的 Visual Studio 遠端偵錯監視執行個體。 必須安裝 Visual Studio 遠端偵錯監視，才能執行遠端偵錯。 如需下載和設定遠端偵錯工具的資訊，請參閱[遠端偵錯](../debugger/remote-debugging.md)。
@@ -30,7 +30,7 @@ ms.locfileid: "57867990"
 > 如果您認為您已經收到此訊息，因為產品錯誤，請[向 Visual Studio 報告這個問題](../ide/how-to-report-a-problem-with-visual-studio.md)。 如果您需要更多協助，請參閱 [Talk to Us](../ide/talk-to-us.md) 與 Microsoft 連絡。
 
 ## <a name="i-got-this-message-while-i-was-debugging-in-visual-studio-2010-or-earlier"></a>我在 Visual Studio 2010 或更早版本中偵錯時收到這則訊息
- 如果您使用的 Visual Studio 版本是 Visual Studio 2010 或更早版本，在未啟用檔案或印表機共用時，也可能會收到這個錯誤。 若要深入了解這個問題，請參閱本文件的 Visual Studio 2010 版本：[Error: The Microsoft Visual Studio Remote Debugging Monitor (MSVSMON.EXE) does not appear to be running on the remote computer. - Visual Studio 2010](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/ms164726(v=vs.100)) (錯誤：Microsoft Visual Studio 遠端偵錯監視 (MSVSMON.EXE) 似乎沒有在遠端電腦上執行。- Visual Studio 2010)
+ 如果您使用的 Visual Studio 版本是 Visual Studio 2010 或更早版本，在未啟用檔案或印表機共用時，也可能會收到這個錯誤。 若要深入了解此問題，請參閱此文件的 Visual Studio 2010 版本：[錯誤：Microsoft Visual Studio 遠端偵錯監視 (MSVSMON。若要在遠端電腦上執行不 EXE)。-Visual Studio 2010](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/ms164726(v=vs.100))
 
 ## <a name="i-got-this-message-while-i-was-debugging-locally"></a>我在本機偵錯時收到這則訊息
  如果您是在本機偵錯時收到這則訊息，可能要歸責於您的防毒軟體或協力廠商防火牆。 Visual Studio 是 32 位元的應用程式，所以使用 64 位元版本的遠端偵錯工具偵錯 64 位元的應用程式。 這兩種處理序使用本機電腦內的區域網路進行通訊。 雖然沒有流量離開電腦，但協力廠商的安全性軟體很可能會封鎖通訊。
@@ -49,13 +49,13 @@ ms.locfileid: "57867990"
 ## <a name="the-remote-debugger-is-running-under-a-different-user-account"></a>遠端偵錯工具在不同的使用者帳戶下執行
  您可以使用下列方式的其中之一解決這個問題：
 
--   您可以停止遠端偵錯工具，再以使用的本機電腦帳戶重新啟動它。
+- 您可以停止遠端偵錯工具，再以使用的本機電腦帳戶重新啟動它。
 
--   您可以從命令列使用 **/allow \<使用者名稱>** 參數：`msvsmon /allow <username@computer>` 啟動遠端偵錯工具
+- 您可以從命令列使用 **/allow \<使用者名稱>** 參數：`msvsmon /allow <username@computer>` 啟動遠端偵錯工具
 
--   您可以將使用者新增至遠端偵錯工具的權限 (在遠端偵錯工具視窗：[工具] > [權限])。
+- 您可以將使用者新增至遠端偵錯工具的權限 (在遠端偵錯工具視窗：[工具] > [權限])。
 
--   如果無法使用前述步驟中的方法，您可以允許任何使用者執行遠端偵錯。 在遠端偵錯工具視窗中，移至 [工具] > [選項] 對話方塊。 當您選取 [無驗證]   時，可以接著選取 [允許任何使用者執行偵錯] 。 不過，您應該只有在沒有任何選擇或在私人網路上，才使用這個選項。
+- 如果無法使用前述步驟中的方法，您可以允許任何使用者執行遠端偵錯。 在遠端偵錯工具視窗中，移至 [工具] > [選項] 對話方塊。 當您選取 [無驗證]   時，可以接著選取 [允許任何使用者執行偵錯] 。 不過，您應該只有在沒有任何選擇或在私人網路上，才使用這個選項。
 
 ## <a name="the-firewall-on-the-remote-machine-doesnt-allow-incoming-connections-to-the-remote-debugger"></a>遠端電腦上的防火牆不允許連入連線至遠端偵錯工具
  Visual Studio 電腦上的防火牆和遠端電腦上的防火牆必須設定為允許 Visual Studio 和遠端偵錯工具之間的通訊。 如需遠端偵錯工具所用連接埠的相關資訊，請參閱 [Remote Debugger Port Assignments](../debugger/remote-debugger-port-assignments.md)。 如需設定 Windows 防火牆的相關資訊，請參閱 [Configure the Windows Firewall for Remote Debugging](../debugger/configure-the-windows-firewall-for-remote-debugging.md)。
@@ -74,5 +74,5 @@ ms.locfileid: "57867990"
 
  res: / /*\<Visual Studio 安裝目錄 >* \Common7\IDE\Remote%20Debugger\x64\msvsmon.exe/help.htm
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [遠端偵錯錯誤和疑難排解](../debugger/remote-debugging-errors-and-troubleshooting.md)

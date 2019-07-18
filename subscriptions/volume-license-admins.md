@@ -6,13 +6,12 @@ manager: evelynp
 ms.date: 03/14/2018
 ms.topic: conceptual
 description: 了解訂用帳戶管理員可以如何存取系統管理入口網站，並管理透過大量授權 (VL) 取得的訂閱
-searchscope: VS Subscription
-ms.openlocfilehash: 6c8a68a1a25e99018e7f41fedbfc9d01b191e2e7
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: 765f33b59c89dbc99772c5ccd8df43a9fcbd0b0f
+ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56953256"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67784732"
 ---
 # <a name="accessing-the-portal-and-managing-administrators---for-subscriptions-acquired-through-volume-licensing-vl"></a>存取入口網站與管理系統管理員 - 適用於透過大量授權 (VL) 取得的訂閱
 
@@ -37,7 +36,7 @@ ms.locfileid: "56953256"
 
      b. 若要取得完整的 PCN，主要連絡人需要登入 VLSC。 [尋找 PCN 的指示](find-pcn.md)
 
-     c.  取得 PCN 之後，他們需要選取提示他們登入的唯一連結。 他們可以使用工作/學校帳戶 (如果您的組織在 AAD 中) 或 Microsoft 帳戶 (MSA) 登入，如果您的組織不在 AAD 中。
+     c. 取得 PCN 之後，他們需要選取提示他們登入的唯一連結。 他們可以使用工作/學校帳戶 (如果您的組織在 AAD 中) 或 Microsoft 帳戶 (MSA) 登入，如果您的組織不在 AAD 中。
 
      d. 接下來，他們需要輸入 PCN。
 

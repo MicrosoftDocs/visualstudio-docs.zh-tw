@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 408b13892d24689fb163aea0105a47028defad59
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: efadc6917f565f5449a76b6a8b91b309356a00bb
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56622068"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62797918"
 ---
 # <a name="resource-contentions-view---contention-data"></a>資源爭用檢視 - 爭用資料
 資源爭用檢視列出爭用事件來源的資源爭用資料。 因為另一個執行緒中的函式已取得資源的獨佔存取權，所以會強制執行緒中的函式等候存取資源，而發生爭用事件。 每項資源都是呼叫樹狀圖的根節點，會顯示導致爭用事件的函式執行路徑。
@@ -30,9 +30,9 @@ ms.locfileid: "56622068"
 ### <a name="function-values"></a>函式值
  函式值是根據在呼叫樹狀圖中顯示的執行路徑中發生的函式執行個體。
 
--   專有值是根據在執行自身函式主體中的陳述式時所發生的事件。 專有值中不包括由函式呼叫的函式中所發生的事件。
+- 專有值是根據在執行自身函式主體中的陳述式時所發生的事件。 專有值中不包括由函式呼叫的函式中所發生的事件。
 
--   內含值是根據在執行函式或由函式呼叫的函式時所發生的事件。
+- 內含值是根據在執行函式或由函式呼叫的函式時所發生的事件。
 
 ### <a name="percentage-values"></a>百分比值
  百分比值是根據程式碼剖析資料中的總時間或爭用事件。 如果已篩選報表或程式碼剖析執行檢視，只有已篩選資料中的封鎖時間和爭用情況，才能當做總計值使用。

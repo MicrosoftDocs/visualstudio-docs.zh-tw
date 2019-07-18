@@ -9,25 +9,25 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 15bf6243fc6e39a4cd7817bdfe964943ab16a3d1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 227c9c84022e3c3340b4821df9dbd2dbe9465a03
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54792004"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63414678"
 ---
-# <a name="how-to-create-a-basic-lambert-shader"></a>如何：建立基本 Lambert 著色器
+# <a name="how-to-create-a-basic-lambert-shader"></a>HOW TO：建立基本 Lambert 著色器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 本文件將示範如何使用著色器設計工具和有向圖著色器語言 (DGSL) 來建立光源的著色器，實作傳統的 Lambert 光源模型。  
   
  本文件示範下列活動︰  
   
--   將節點加入著色器圖形  
+- 將節點加入著色器圖形  
   
--   中斷和節點的連接  
+- 中斷和節點的連接  
   
--   連接節點  
+- 連接節點  
   
 ## <a name="the-lambert-lighting-model"></a>Lambert 光源模型  
  Lambert 光源模型結合環境與定向光源來為 3D 場景中的物件加陰影。 環境元件提供 3D 場景中的基本照明度。 方向元件提供來自定向 (遠處) 光源的額外照明。 環境照明對場景中的所有表面有同樣的影響，不論其方向為何。 對於指定的表面，其是表面的環境色彩和場景中環境光源色彩與濃度的產物。 定向光源對場景中的每個表面會有不同影響，根據相對於光源方向的表面方向而定。 其為表面的擴散色彩和方向以及光源的色彩、濃度和方向的產物。 正對著光源的表面會得到最大比重，而背對光源的表面則不會得到任何比重。 在 Lambert 光源模型下，可結合環境元件和一或多個方向元件，來決定物件上各點的總擴散色彩比重。  
@@ -49,7 +49,7 @@ ms.locfileid: "54792004"
    下圖顯示完成的著色器圖形和套用至茶壺模型的著色器預覽。  
   
 > [!NOTE]
->  為了更適當展現此圖中的著色器效果，已使用著色器的 **MaterialDiffuse** 參數來指定橘色。 遊戲或應用程式可以使用這個參數為每個物件提供獨特的色彩值。 如需材質參數的詳細資訊，請參閱[著色器設計工具](../designers/shader-designer.md)中的＜預覽著色器＞一節。  
+> 為了更適當展現此圖中的著色器效果，已使用著色器的 **MaterialDiffuse** 參數來指定橘色。 遊戲或應用程式可以使用這個參數為每個物件提供獨特的色彩值。 如需材質參數的詳細資訊，請參閱[著色器設計工具](../designers/shader-designer.md)中的＜預覽著色器＞一節。  
   
  ![著色器圖形和其效果預覽。](../designers/media/digit-lambert-effect-graph.png "Digit-Lambert-Effect-Graph")  
   
@@ -61,7 +61,7 @@ ms.locfileid: "54792004"
   
  如需如何將著色器套用至 3d 模型的詳細資訊，請參閱[How to:將著色器套用至 3d 模型](../designers/how-to-apply-a-shader-to-a-3-d-model.md)。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [如何：將著色器套用至 3d 模型](../designers/how-to-apply-a-shader-to-a-3-d-model.md)   
  [如何：匯出著色器](../designers/how-to-export-a-shader.md)   
  [如何：建立基本 Phong 著色器](../designers/how-to-create-a-basic-phong-shader.md)   

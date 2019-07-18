@@ -1,14 +1,9 @@
 ---
-title: 'Idiaframedata:: Get_functionparent |Microsoft Docs'
-ms.custom: ''
+title: IDiaFrameData::get_functionParent | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: f00b9ab1-d4da-4818-973a-58f8f0e66769
 caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 8a18aa7292dc349156d0aa7533a2742442d9e737
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 218a1df4f700ad33aa0af0aa453de84cbdae1752
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51806259"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68203642"
 ---
 # <a name="idiaframedatagetfunctionparent"></a>IDiaFrameData::get_functionParent
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -47,6 +42,3 @@ HRESULT get_functionParent ( 
   
 ## <a name="see-also"></a>另請參閱  
  [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)
-
-
-

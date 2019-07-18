@@ -4,19 +4,19 @@ titleSuffix: ''
 description: 在 Visual Studio 中 Python 核心逐步解說的步驟 6，涵蓋 Visual Studio 的 Git 相關功能。
 ms.date: 01/28/2019
 ms.topic: tutorial
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 386821867b1f7290fd195322a699eb161536a06b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 8d71f9e145d78d1d1bf7f6e9bb132e9fc084afd0
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55919855"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62810464"
 ---
 # <a name="step-6-work-with-git"></a>步驟 6：使用 Git
 

@@ -1,11 +1,8 @@
 ---
 title: Pick 活動設計工具 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.Pick.UI
@@ -13,13 +10,13 @@ ms.assetid: 642c0a47-1b47-45de-a19a-ca0606cedd7a
 caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: f0a3d5487d60a796f8bf9727c07df1afc959de5c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 15320289c3f668f2bc0a84d9653110d02536a32e
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49221516"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65694504"
 ---
 # <a name="pick-activity-designer"></a>Pick 活動設計工具
 <xref:System.Activities.Statements.Pick> 活動會提供以事件為主的控制流程。 活動會執行若干分支的其中一個，以回應觸發的事件。  
@@ -37,11 +34,11 @@ ms.locfileid: "49221516"
 ### <a name="pick-activity-properties-in-the-workflow-designer"></a>工作流程設計工具中的 Pick 活動屬性  
  下表顯示 <xref:System.Activities.Statements.Pick> 屬性，並且描述屬性在設計工具中的使用方式。 這些屬性可以在屬性方格中或在設計工具介面上編輯。  
   
-|屬性名稱|必要項|使用方式|  
+|屬性名稱|必要|使用量|  
 |-------------------|--------------|-----------|  
 |<xref:System.Activities.Activity.DisplayName%2A>|False|指定 <xref:System.Activities.Statements.Pick> 活動設計工具在標頭中的易記名稱。 預設值為 Pick。 此值可在屬性方格中編輯，或是直接在活動設計工具的標頭上編輯。<br /><br /> 雖然 <xref:System.Activities.Activity.DisplayName%2A> 並非絕對必要，但建議您盡量使用。|  
   
 ## <a name="see-also"></a>另請參閱  
  [控制流程](../workflow-designer/control-flow-activity-designers.md)   
- [Pick 活動](http://msdn.microsoft.com/library/b3e49b7f-0285-4720-8c09-11ae18f0d53e)   
- [使用 Pick 活動](http://msdn.microsoft.com/library/b89be812-a247-4025-b0e3-ffb20db027a6)
+ [Pick 活動](https://msdn.microsoft.com/library/b3e49b7f-0285-4720-8c09-11ae18f0d53e)   
+ [使用 Pick 活動](https://msdn.microsoft.com/library/b89be812-a247-4025-b0e3-ffb20db027a6)

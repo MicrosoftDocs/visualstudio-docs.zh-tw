@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0fad2851be48c0b3dfc3546794d5b9907f55918a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 80a19924aaf4fa0afe8e809006ada7fada0288f3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56637369"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63428107"
 ---
 # <a name="how-to-map-schemas-to-worksheets-inside-visual-studio"></a>HOW TO：將結構描述對應至 Visual Studio 內的工作表
   Visual Studio 中開啟工作表時，您可以將 XML 結構描述對應至工作表中。 您使用 Visual Studio 外部開啟活頁簿時，您所使用的相同 Microsoft Office Excel 工具。 是否將結構描述對應至工作表之前，或建立您的 Excel 解決方案之後，Office 專案就會建立相同的物件。
@@ -30,32 +30,32 @@ ms.locfileid: "56637369"
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]
 
 > [!NOTE]
->  您無法在 Excel 方案中使用多部分的 XML 結構描述。
+> 您無法在 Excel 方案中使用多部分的 XML 結構描述。
 
 ## <a name="to-map-an-xml-schema-to-an-excel-worksheet-in-visual-studio"></a>若要將 XML 結構描述對應至 Visual Studio 中的 Excel 工作表
 
-1.  開啟 Visual Studio 內的 Excel 活頁簿或範本專案。
+1. 開啟 Visual Studio 內的 Excel 活頁簿或範本專案。
 
-2.  按一下要將焦點移至設計工具的工作表中。
+2. 按一下要將焦點移至設計工具的工作表中。
 
-3.  按一下 [功能區] 上的 [開發人員]  索引標籤。
+3. 按一下 [功能區] 上的 [開發人員]  索引標籤。
 
     > [!NOTE]
-    >  如果 [開發人員]  索引標籤沒有顯示，您必須先使其顯示。 如需詳細資訊，請參閱[如何：在功能區顯示開發人員索引標籤](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)。
+    > 如果 [開發人員]  索引標籤沒有顯示，您必須先使其顯示。 如需詳細資訊，請參閱[如何：在功能區顯示開發人員索引標籤](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)。
 
-4.  在  **XML**群組中，按一下**來源**。
+4. 在  **XML**群組中，按一下**來源**。
 
      **XML 來源**視窗隨即開啟。
 
-5.  在 [ **XML 來源**] 視窗中，按一下**XML 對應**。
+5. 在 [ **XML 來源**] 視窗中，按一下**XML 對應**。
 
      **XML 對應**對話方塊隨即開啟。
 
-6.  在 [ **XML 對應**] 對話方塊中，按一下**新增**。
+6. 在 [ **XML 對應**] 對話方塊中，按一下**新增**。
 
-7.  瀏覽至您的結構描述檔案，加以選取，然後按一下 **開啟**。
+7. 瀏覽至您的結構描述檔案，加以選取，然後按一下 **開啟**。
 
-8.  按一下 [確定] 。
+8. 按一下 [確定] 。
 
      結構描述會以表示**XML 來源**視窗。 在專案中，具型別<xref:System.Data.DataSet>會根據結構描述，產生和<xref:System.Windows.Forms.BindingSource>建立。
 

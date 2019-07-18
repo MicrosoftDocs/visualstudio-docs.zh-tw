@@ -15,23 +15,22 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8c734e6bd41e91ba208a13e36c06f04111cac5ba
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: a17931b9d7ccb8ef60158d6ea6d22e8b2f27b031
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54790093"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697169"
 ---
 # <a name="options-text-editor-cc-advanced"></a>進階、C/C++、文字編輯器、選項
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 藉由變更這些選項，您可以變更進行 C 或 C++ 程式設計時之 IntelliSense 和瀏覽資料庫的相關行為。  
   
  若要存取這個頁面，請在 [選項] 對話方塊的左窗格中依序展開 [文字編輯器] 和 [C/C++]，然後選擇 [進階]。  
   
 > [!NOTE]
->  在下列指示的某些 Visual Studio 使用者介面項目中，您的電腦可能會顯示不同的名稱或位置。 您所擁有的 Visual Studio 版本以及使用的設定會決定這些項目。 請參閱 [在 Visual Studio 中自訂開發設定](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。  
+> 在下列指示的某些 Visual Studio 使用者介面項目中，您的電腦可能會顯示不同的名稱或位置。 您所擁有的 Visual Studio 版本以及使用的設定會決定這些項目。 請參閱 [在 Visual Studio 中自訂開發設定](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。  
   
 ## <a name="browsingnavigation"></a>瀏覽/巡覽  
  在方案太大此種極少數情況之外，您應該永遠不要選擇這些選項，因為資料庫活動會耗用無法接受的系統資源量。  
@@ -74,19 +73,19 @@ ms.locfileid: "54790093"
   
  使用下列任何選項的總和來設定︰  
   
--   0 - 無  
+- 0 - 無  
   
--   1 - 一般  
+- 1 - 一般  
   
--   2 - 閒置  
+- 2 - 閒置  
   
--   4 - WorkItem  
+- 4 - WorkItem  
   
--   8 - IntelliSense  
+- 8 - IntelliSense  
   
--   16 - ACPerf  
+- 16 - ACPerf  
   
--   32 - ClassView  
+- 32 - ClassView  
   
 ## <a name="fallback-location"></a>後援位置  
  未使用主要位置 (與方案相同的目錄) 時，後援位置是放置 SDF 和 IntelliSense 支援檔案 (例如，iPCH) 的位置。 如果使用者沒有寫入方案目錄的權限，或方案目錄位於慢速裝置，則會發生此方案。 預設後援位置是在使用者的 temp 目錄中。  
@@ -125,7 +124,7 @@ ms.locfileid: "54790093"
  **最大快取轉譯單位數目**  
  每次發出 IntelliSense 要求時將保持使用中的最大轉譯單位數目。 您指定的值必須介於 2 與 15 之間。 此數字與將執行的最大 VCPkgSrv.exe 處理序數目直接相關 (針對指定的 Visual Studio 執行個體)。 預設值為 2，但是，如果您有可用的記憶體，則可以增加此值，而且在 IntelliSense 上可能會有略佳的效能。  
   
- 如需轉譯單位的詳細資訊，請參閱[轉譯階段](http://msdn.microsoft.com/library/a7f7a8c9-e8ba-4321-9e50-ebfbbdcce9db)。  
+ 如需轉譯單位的詳細資訊，請參閱[轉譯階段](https://msdn.microsoft.com/library/a7f7a8c9-e8ba-4321-9e50-ebfbbdcce9db)。  
   
  **停用主動成員清單**  
  輸入類型或變數的名稱時，不會出現成員清單。 只有在輸入 [成員清單認可字元] 選項中所定義的其中一個認可字元之後，才會顯示清單。  
@@ -157,5 +156,5 @@ ms.locfileid: "54790093"
   
  **停用反白顯示參考**  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [設定語言特定編輯器選項](../../ide/reference/setting-language-specific-editor-options.md)

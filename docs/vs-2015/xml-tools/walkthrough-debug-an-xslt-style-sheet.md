@@ -1,25 +1,20 @@
 ---
-title: 逐步解說： 偵錯 XSLT 樣式表 |Microsoft Docs
-ms.custom: ''
+title: 逐步解說：偵錯 XSLT 樣式表 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: 3db9fa5a-f619-4cb6-86e7-64b364e58e5d
 caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 10dad7382a30800675c257a4e2c8219d20e5b18b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 5e685e77dafe00b8cadd9b273ccc61c8e5d9e1e4
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49887686"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68158633"
 ---
 # <a name="walkthrough-debug-an-xslt-style-sheet"></a>逐步解說：偵錯 XSLT 樣式表
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,9 +23,9 @@ ms.locfileid: "49887686"
   
 ### <a name="to-prepare-for-this-walkthrough"></a>準備此逐步教學  
   
-1.  關閉任何開啟的解決方案。  
+1. 關閉任何開啟的解決方案。  
   
-2.  將兩個範例檔案複製到本機電腦。  
+2. 將兩個範例檔案複製到本機電腦。  
   
 ## <a name="start-debugging"></a>開始偵錯  
   
@@ -42,7 +37,7 @@ ms.locfileid: "49887686"
   
     樣式表會在 XML 編輯器中開啟。  
   
-3. 按一下 瀏覽按鈕 (**...**) 上**輸入**文件的 屬性 視窗的欄位。  
+3. 按一下 瀏覽按鈕 ( **...** ) 上**輸入**文件的 屬性 視窗的欄位。  
   
 4. 找出 books.xml 檔案，然後按一下**開啟**。  
   
@@ -64,19 +59,19 @@ ms.locfileid: "49887686"
   
 #### <a name="to-use-the-watch-window"></a>使用 [監看式] 視窗  
   
-1.  從**偵錯**功能表上，指向**Windows**，指向**監看式**，然後按一下**監看式 1**。  
+1. 從**偵錯**功能表上，指向**Windows**，指向**監看式**，然後按一下**監看式 1**。  
   
      這樣可讓 [監看式 1] 視窗可見。  
   
-2.  型別`$bookAverage`中**名稱**欄位，然後按 ENTER 鍵。  
+2. 型別`$bookAverage`中**名稱**欄位，然後按 ENTER 鍵。  
   
      `$bookAverage` 變數的值會顯示於視窗中。  
   
-3.  型別`self::node()`中**名稱**欄位，然後按 ENTER 鍵。  
+3. 型別`self::node()`中**名稱**欄位，然後按 ENTER 鍵。  
   
      `self::node()` 是一種 XPath 運算式，可評估目前的內容節點。 `self::node()` XPath 運算式的值為第一個書籍節點。 它會隨著轉換的進行而變更。  
   
-4.  展開 `self::node()` 節點，然後展開 `price` 節點。  
+4. 展開 `self::node()` 節點，然後展開 `price` 節點。  
   
      這樣可讓您查看書籍價格的值，而且可以輕鬆將其與 `$bookAverage` 值進行比較。 因為書籍價格低於平均值，所以 `xsl:if` 條件應該會成功。  
   
@@ -85,19 +80,19 @@ ms.locfileid: "49887686"
   
 #### <a name="to-step-through-the-code"></a>逐步執行程式碼  
   
-1.  按 **F5** 繼續。  
+1. 按 **F5** 繼續。  
   
      因為第一個書籍節點滿足 `xsl:if` 條件，所以會將該書籍節點加入至 [XSL 輸出視窗]。 偵錯工具繼續執行，直到其再次定位於樣式表的 `xsl:if` 項目上為止。 偵錯工具現在定位於 books.xml 檔的第二個書籍節點上。  
   
      在 Watch1 視窗中，`self::node()` 值會變更為第二個書籍節點。 藉由檢查價格項目的值，您可以確定價格高於平均值，因此 `xsl:if` 條件應該會失敗。  
   
-2.  按 **F5** 繼續。  
+2. 按 **F5** 繼續。  
   
      因為第二個書籍節點與 `xsl:if` 條件不符，所以不會將該書籍節點加入至 [XSL 輸出視窗]。 偵錯工具繼續執行，直到其再次定位於樣式表的 `xsl:if` 項目上為止。 偵錯工具現在定位於 books.xml 檔的第三個 `book` 節點上。  
   
      在 Watch1 視窗中，`self::node()` 值會變更為第三個書籍節點。 藉由檢查 `price` 項目的值，您可以確定價格低於平均值，因此 `xsl:if` 條件應該會成功。  
   
-3.  按 **F5** 繼續。  
+3. 按 **F5** 繼續。  
   
      因為已滿足 `xsl:if` 條件，所以會將第三本書加入至 [XSL 輸出] 視窗。 當處理過 XML 文件中的所有書籍後，偵錯工具會停止。  
   
@@ -161,4 +156,3 @@ ms.locfileid: "49887686"
   
 ## <a name="see-also"></a>另請參閱  
  [偵錯 XSLT](../xml-tools/debugging-xslt.md)
-

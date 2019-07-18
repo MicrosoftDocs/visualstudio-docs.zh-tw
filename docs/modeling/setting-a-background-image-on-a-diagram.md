@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c4b559b80613197dae62bc6246bd7ef1532d7071
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e79a7fd37bd5f2d5298bda6dca7568c6ba4db6ce
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55941162"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62823953"
 ---
 # <a name="setting-a-background-image-on-a-diagram"></a>設定圖表上的背景影像
 在 Visual Studio Visualization and Modeling SDK，您可以使用自訂程式碼產生的設計工具設定背景影像。
@@ -21,21 +21,21 @@ ms.locfileid: "55941162"
 
 #### <a name="to-set-a-background-image-for-a-generated-designer"></a>為產生的設計工具設定背景影像
 
-1.  將您要用來做為圖表背景的影像檔複製到目前專案的 Dsl\Resources 目錄中。
+1. 將您要用來做為圖表背景的影像檔複製到目前專案的 Dsl\Resources 目錄中。
 
-2.  在 **方案總管 中**，以滑鼠右鍵按一下 Dsl\Resources 資料夾，指向**新增**，然後按一下 **現有項目**。
+2. 在 **方案總管 中**，以滑鼠右鍵按一下 Dsl\Resources 資料夾，指向**新增**，然後按一下 **現有項目**。
 
-3.  在 [**加入現有項目**] 對話方塊中，瀏覽至 Dsl\Resources 資料夾。
+3. 在 [**加入現有項目**] 對話方塊中，瀏覽至 Dsl\Resources 資料夾。
 
-4.  在 **類型的檔案**清單中，按一下**影像檔**。
+4. 在 **類型的檔案**清單中，按一下**影像檔**。
 
-5.  按一下您複製到目錄中，映像檔，然後按一下**新增**。
+5. 按一下您複製到目錄中，映像檔，然後按一下**新增**。
 
-6.  以滑鼠右鍵按一下 Dsl，然後按一下 **屬性**開啟 Dsl 專案的屬性。
+6. 以滑鼠右鍵按一下 Dsl，然後按一下 **屬性**開啟 Dsl 專案的屬性。
 
-7.  在**資源**索引標籤上，按一下 **這個專案未包含預設的資源檔若要建立一個，請按一下這裡。**
+7. 在**資源**索引標籤上，按一下 **這個專案未包含預設的資源檔若要建立一個，請按一下這裡。**
 
-8.  加入資源檔中的映像檔，藉由拖曳從圖片**方案總管 中**到資源視窗。
+8. 加入資源檔中的映像檔，藉由拖曳從圖片**方案總管 中**到資源視窗。
 
 9. 開啟 [檔案] 功能表，然後按一下選項以儲存專案屬性。
 

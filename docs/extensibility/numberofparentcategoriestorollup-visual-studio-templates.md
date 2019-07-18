@@ -1,5 +1,5 @@
 ---
-title: NumberOfParentCategoriesToRollUp 項目 （Visual Studio 範本）
+title: NumberOfParentCategoriesToRollUp 項目 （樣板）
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -9,17 +9,17 @@ helpviewer_keywords:
 - NumberOfParentCategoriesToRollUp element [Visual Studio Templates]
 - <NumberOfParentCategoriesToRollUp> element [Visual Studio Templates]
 ms.assetid: 6f9d36f5-ae23-4a92-8132-b11799e2c21a
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b733b65a62db3cb39197fbdbed4c471651eae49a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 65787aef175052eb69c6dedfff2e095f16c81ef1
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56687941"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66336334"
 ---
 # <a name="numberofparentcategoriestorollup-element-visual-studio-templates"></a>NumberOfParentCategoriesToRollUp 項目 （Visual Studio 範本）
 指定的數目會顯示在範本的父類別**新的專案** 對話方塊。

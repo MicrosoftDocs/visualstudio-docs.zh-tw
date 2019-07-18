@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d8572ecf95790fdc5f6e73ce0b137e5532c44bdc
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MT
+ms.openlocfilehash: fcc08f9af3452289b3e0e76fe6970e75e8f854db
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55911815"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63414818"
 ---
 # <a name="customizing-copy-behavior"></a>自訂複製行為
 在使用 Visual Studio Visualization and Modeling SDK 建立特定領域語言 (DSL)，您可能會改變使用者複製及貼上項目時，會發生什麼事。
@@ -232,7 +232,7 @@ partial class MyDslClipboardCommandSet // EDIT NAME
  DSL 的行為方面複製、 貼上、 建立和刪除物件的各個層面的執行個體所控管<xref:Microsoft.VisualStudio.Modeling.ElementOperations>合併至圖表。 您可以修改您的 DSL 行為衍生您自己的類別，從<xref:Microsoft.VisualStudio.Modeling.ElementOperations>，並覆寫<xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram.ElementOperations%2A>圖表類別的屬性。
 
 > [!TIP]
->  如需有關如何使用程式碼自訂模型的詳細資訊，請參閱 <<c0> [ 巡覽及更新程式碼中的模型](../modeling/navigating-and-updating-a-model-in-program-code.md)。
+> 如需有關如何使用程式碼自訂模型的詳細資訊，請參閱 <<c0> [ 巡覽及更新程式碼中的模型](../modeling/navigating-and-updating-a-model-in-program-code.md)。
 
  ![複製作業的順序圖表](../modeling/media/dslcopyseqdiagram.png)
 
@@ -284,9 +284,9 @@ using Microsoft.VisualStudio.Modeling.Diagrams.ExtensionEnablement;
 
  在您的 ElementOperations 類別中定義兩個方法：
 
--   `CanMerge(ModelElement targetElement, System.Windows.Forms.IDataObject data)`，決定是否可以將來源項目拖曳至目標圖形、連接線或圖表上。
+- `CanMerge(ModelElement targetElement, System.Windows.Forms.IDataObject data)`，決定是否可以將來源項目拖曳至目標圖形、連接線或圖表上。
 
--   `MergeElementGroupPrototype(ModelElement targetElement, ElementGroupPrototype sourcePrototype)`，將來源項目結合成目標。
+- `MergeElementGroupPrototype(ModelElement targetElement, ElementGroupPrototype sourcePrototype)`，將來源項目結合成目標。
 
 ### <a name="canmerge"></a>CanMerge()
  呼叫 `CanMerge()` 可決定當滑鼠移過圖表時，應提供給使用者的意見。 此方法的參數包括滑鼠停留的項目，以及有關執行拖曳作業之來源的資料。 使用者可以從畫面上的任何位置拖曳。 因此，來源物件可以是許多不同類型，並可以不同的格式進行序列化。 如果來源為 DSL 或 UML 模型，資料參數是 <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype> 的序列化。 拖曳、複製和工具箱作業使用 ElementGroupPrototypes 代表模型片段。
@@ -556,7 +556,6 @@ namespace Company.MyDsl
 
 - [自訂項目的建立和移動](../modeling/customizing-element-creation-and-movement.md)
 - [如何：新增拖放處理常式](../modeling/how-to-add-a-drag-and-drop-handler.md)
-- [自訂刪除行為](../modeling/customizing-deletion-behavior.md)
 - [範例：VMSDK 電路圖表範例](http://go.microsoft.com/fwlink/?LinkId=213879)
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]

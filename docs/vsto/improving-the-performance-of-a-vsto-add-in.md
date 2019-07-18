@@ -10,12 +10,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a06022075086ad4792d35761c3af0e14f8f96e56
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
-ms.translationtype: MT
+ms.openlocfilehash: 2add0dfced6a3b8e8263dafe133ee3a2f86637f5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54867464"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63420942"
 ---
 # <a name="improve-the-performance-of-a-vsto-add-in"></a>提升 VSTO 增益集的效能
   最佳化您為 Office 應用程式建立的 VSTO 增益集，您可以提供使用者更好的體驗，讓他們快速地啟動、關閉、開啟項目及執行其他工作。 如果是 Outlook 適用的 VSTO 增益集，您還可以減少 VSTO 增益集因為效能不佳而停用的機率。 實作下列策略可以提升 VSTO 增益集的效能：
@@ -30,7 +30,7 @@ ms.locfileid: "54867464"
 
   如需如何最佳化 Outlook VSTO 增益集的詳細資訊，請參閱[保持 VSTO 增益集已啟用的效能準則](http://go.microsoft.com/fwlink/?LinkID=266503)。
 
-##  <a name="Load"></a> 視需要載入 VSTO 增益集
+## <a name="Load"></a> 視需要載入 VSTO 增益集
  您可以設定只在下列情況下才載入 VSTO 增益集：
 
 - 安裝 VSTO 增益集後，使用者第一次啟動應用程式。
@@ -41,23 +41,23 @@ ms.locfileid: "54867464"
 
 ### <a name="to-configure-a-clickonce-solution-to-load-vsto-add-ins-on-demand"></a>設定 ClickOnce 方案視需要載入 VSTO 增益集
 
-1.  在 [ **方案總管**] 中選擇專案節點。
+1. 在 [ **方案總管**] 中選擇專案節點。
 
-2.  在功能表列上選擇 [檢視 ] > [屬性頁]。
+2. 在功能表列上選擇 [檢視 ] > [屬性頁]。
 
-3.  在 [發行]  索引標籤上，選擇 [選項]  按鈕。
+3. 在 [發行]  索引標籤上，選擇 [選項]  按鈕。
 
-4.  在 [發行選項]  對話方塊中，依序選擇 [Office 設定]  清單項目、[視需要載入]  選項，然後再選擇 [確定]  按鈕。
+4. 在 [發行選項]  對話方塊中，依序選擇 [Office 設定]  清單項目、[視需要載入]  選項，然後再選擇 [確定]  按鈕。
 
 ### <a name="to-configure-a-windows-installer-solution-to-load-vsto-add-ins-on-demand"></a>設定 Windows Installer 方案視需要載入 VSTO 增益集
 
-1.  在登錄中，設定`LoadBehavior`項目 **_根_\Software\Microsoft\Office\\_ApplicationName_\Addins\\ _增益集 ID_** 機碼**0x10**。
+1. 在登錄中，設定`LoadBehavior`項目 **_根_\Software\Microsoft\Office\\_ApplicationName_\Addins\\ _增益集 ID_** 機碼**0x10**。
 
      如需詳細資訊，請參閱 < [VSTO 增益集的登錄項目](../vsto/registry-entries-for-vsto-add-ins.md)。
 
 ### <a name="to-configure-a-solution-to-load-vsto-add-ins-on-demand-while-you-debug-the-solution"></a>設定方案，在偵錯方案時視需要載入 VSTO 增益集
 
-1.  建立設定的指令碼`LoadBehavior`項目 **_根_\Software\Microsoft\Office\\_ApplicationName_\Addins\\ _增益集 ID_** 機碼**0x10**。
+1. 建立設定的指令碼`LoadBehavior`項目 **_根_\Software\Microsoft\Office\\_ApplicationName_\Addins\\ _增益集 ID_** 機碼**0x10**。
 
      下列程式碼顯示此指令碼範例。
 
@@ -70,7 +70,7 @@ ms.locfileid: "54867464"
 
     ```
 
-2.  建立使用指令碼更新登錄的建置後事件。
+2. 建立使用指令碼更新登錄的建置後事件。
 
      下列程式碼顯示的命令字串範例，您可能會加入建置後事件。
 
@@ -83,7 +83,7 @@ ms.locfileid: "54867464"
 
      如需如何在 Visual Basic 專案中建立建置後事件的資訊，請參閱[How to:指定建置事件&#40;Visual Basic&#41;](../ide/how-to-specify-build-events-visual-basic.md)。
 
-##  <a name="Publish"></a> 使用 Windows Installer 發行 Office 方案
+## <a name="Publish"></a> 使用 Windows Installer 發行 Office 方案
  如果您使用 Windows Installer 發行方案，Visual Studio 2010 Tools for Office 執行階段略過下列步驟，VSTO 增益集載入時也一樣。
 
 - 正在驗證資訊清單結構描述。
@@ -93,11 +93,11 @@ ms.locfileid: "54867464"
 - 驗證部署資訊清單的數位簽章。
 
   > [!NOTE]
-  >  這個方法如果不需要將您 VSTO 增益集部署至使用者的電腦上的安全位置。
+  > 這個方法如果不需要將您 VSTO 增益集部署至使用者的電腦上的安全位置。
 
   如需詳細資訊，請參閱 <<c0> [ 使用 Windows Installer 部署 Office 方案](../vsto/deploying-an-office-solution-by-using-windows-installer.md)。
 
-##  <a name="Bypass"></a> 略過功能區反映
+## <a name="Bypass"></a> 略過功能區反映
  如果您使用建置解決方案[!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)]，確保您的使用者已安裝最新版的 Visual Studio 2010 Tools for Office 執行階段，當您部署的解決方案。 較舊版本的執行階段會反映到方案組件，找出功能區自訂項目。 此程序會使得 VSTO 增益集載入的速度更加緩慢。
 
  或者，您可以防止任何版本的 Visual Studio 2010 Tools for Office runtime 使用反映來識別功能區自訂項目。 若要遵循此策略，覆寫`CreateRibbonExtensibility`方法，並明確傳回功能區物件。 如果您 VSTO 增益集未包含任何功能區自訂項目，傳回`null`方法內。
@@ -107,11 +107,11 @@ ms.locfileid: "54867464"
  [!code-vb[Trin_Ribbon_Choose_Ribbon#1](../vsto/codesnippet/VisualBasic/trin_ribbon_choose_ribbon_4/ThisWorkbook.vb#1)]
  [!code-csharp[Trin_Ribbon_Choose_Ribbon#1](../vsto/codesnippet/CSharp/trin_ribbon_choose_ribbon_4/ThisWorkbook.cs#1)]
 
-##  <a name="Perform"></a> 在個別執行緒中執行耗費資源的作業
+## <a name="Perform"></a> 在個別執行緒中執行耗費資源的作業
  請考慮在不同的執行緒中執行耗時的工作 (例如需長時間執行的工作、資料庫連接或其他類型的網路呼叫)。 如需詳細資訊，請參閱 < [Office 中的執行緒支援](../vsto/threading-support-in-office.md)。
 
 > [!NOTE]
->  所有呼叫 Office 物件模型的程式碼，都必須在主執行緒中執行。
+> 所有呼叫 Office 物件模型的程式碼，都必須在主執行緒中執行。
 
 ## <a name="see-also"></a>另請參閱
 

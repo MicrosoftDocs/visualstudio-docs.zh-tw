@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugMethodField::EnumAllLocals method
 ms.assetid: 0bc7cc13-2628-4bd8-8c06-4d2aa6755ea8
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bbbc610dad6ab5915efe07718ad9a80592af4034
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: bd0bc879cccf2bc806d73bfac47bc4795749e0cf
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56708182"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66346939"
 ---
 # <a name="idebugmethodfieldenumalllocals"></a>IDebugMethodField::EnumAllLocals
 建立方法，包括由編譯器在內部產生的所有區域變數的列舉值。
@@ -38,14 +41,12 @@ int EnumAllLocals(
 );
 ```
 
-#### <a name="parameters"></a>參數
- `pAddress`
+## <a name="parameters"></a>參數
+`pAddress`\
+[in][IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)物件，表示在方法中，指向特定範圍或內容的偵錯位址。
 
- [in][IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)物件，表示在方法中，指向特定範圍或內容的偵錯位址。
-
- `ppLocals`
-
- [out]會傳回[IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)物件，表示指定之範圍中的所有區域變數的清單; 否則會傳回 null 值，指出無區域變數。
+`ppLocals`\
+[out]會傳回[IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)物件，表示指定之範圍中的所有區域變數的清單; 否則會傳回 null 值，指出無區域變數。
 
 ## <a name="return-value"></a>傳回值
  如果成功，會傳回 S_OK，或如果沒有任何區域變數，則傳回 S_FALSE。 否則會傳回錯誤碼。

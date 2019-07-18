@@ -1,14 +1,9 @@
 ---
-title: IDebugDocumentTextEvents2 |Microsoft Docs
-ms.custom: ''
+title: IDebugDocumentTextEvents2 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugDocumentTextEvents2
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: a10cbb6b-11a8-4056-b42a-2ecebf0e690d
 caps.latest.revision: 15
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 6d7fb3c64c1cdbd0e52753b6cd7ec4da197d22f4
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: b574ae45dafed11ed28047859676524054951512
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51797282"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65678961"
 ---
 # <a name="idebugdocumenttextevents2"></a>IDebugDocumentTextEvents2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -39,7 +34,7 @@ IDebugDocumentTextEvents2 : IUnknown
  DE 會實作這個介面，以支援的原始程式碼進行變更。 通常會實作這個介面上相同的物件會實作[IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)介面。  
   
 ## <a name="notes-for-callers"></a>呼叫端資訊  
- [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] 取得這個介面，透過呼叫<xref:System.Runtime.InteropServices.ComTypes.IConnectionPoint.Advise%2A>方法。 <xref:System.Runtime.InteropServices.ComTypes.IConnectionPoint>介面取自呼叫<xref:System.Runtime.InteropServices.ComTypes.IConnectionPointContainer.EnumConnectionPoints%2A>方法。 <xref:System.Runtime.InteropServices.ComTypes.IConnectionPointContainer>介面由呼叫[QueryInterface](http://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3)方法[IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)介面。  
+ [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] 取得這個介面，透過呼叫<xref:System.Runtime.InteropServices.ComTypes.IConnectionPoint.Advise%2A>方法。 <xref:System.Runtime.InteropServices.ComTypes.IConnectionPoint>介面取自呼叫<xref:System.Runtime.InteropServices.ComTypes.IConnectionPointContainer.EnumConnectionPoints%2A>方法。 <xref:System.Runtime.InteropServices.ComTypes.IConnectionPointContainer>介面由呼叫[QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3)方法[IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)介面。  
   
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法  
  下表顯示的方法`IDebugDocumentTextEvents2`。  
@@ -59,11 +54,10 @@ IDebugDocumentTextEvents2 : IUnknown
 ## <a name="requirements"></a>需求  
  標頭： msdbg.h  
   
- 命名空間： Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間：Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md)   
  [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)
-

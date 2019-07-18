@@ -1,12 +1,9 @@
 ---
 title: 屬性的作業，在 UML 類別圖 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: reference
 f1_keywords:
 - vs.teamarch.logicalclassdiagram.operation.properties
 helpviewer_keywords:
@@ -15,13 +12,13 @@ ms.assetid: 4128f3e2-3a51-4edf-b3e4-b7f170a32f6b
 caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 7a5a2e18c41f99462231da2a11dc80a0ae01e99e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f98a3211bebf832009b84fac0fc1305a4162c610
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51804459"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68154826"
 ---
 # <a name="properties-of-operations-on-uml-class-diagrams"></a>UML 類別圖上作業的屬性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +32,7 @@ ms.locfileid: "51804459"
 ## <a name="signature-of-an-operation"></a>作業的簽章  
  作業的簽章是文字行，可在 UML 類別圖的類別或介面中代表它。 其形式如下：  
 
- \+ OperationName (parameter1: Type1 [*]，...): ReturnType [\*]  
+ \+ OperationName (parameter1:Type1 [*]...):ReturnType [\*]  
 
  \+ 表示公用可視性。 其他允許的值是 - (private)、# (protected)、~ (package)。  
 
@@ -43,7 +40,7 @@ ms.locfileid: "51804459"
 
  如果未定義傳回類型，則會省略 `: ReturnType`。  
 
- `[*]` 表示參數或傳回類型的多重性。 如果多重性是 1，則會予以省略。  
+ `[*]` 表示參數或傳回類型的多重性。 如果多重性為 1，則會予以省略。  
 
  如需這些屬性的完整描述，請參閱下一節。  
 
@@ -52,12 +49,11 @@ ms.locfileid: "51804459"
 
  若要查看作業的屬性，以滑鼠右鍵按一下類別或介面中的作業，即可在圖表中，然後**屬性**。 屬性會出現在**屬性**視窗。  
 
-
 |      屬性       |   預設值    |                                                                                                                                                                                 描述                                                                                                                                                                                 |
 |---------------------|--------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |      **名稱**       | (新名稱) |                                                                                                                                                                在包含類型內應該是唯一的。                                                                                                                                                                 |
-|   **參數**    |    (無)    |      具有表單的清單<em>名稱</em>**:**<em>型別</em>**，** <em>名稱</em>**:** <em>型別</em>**，...** 按一下  **[...]** 以編輯的清單。<br /><br /> 類型可以是基本類型或是模型中所定義的類型。 如果您在這個屬性中輸入新類型的名稱，系統會將類型加入 UML 模型總管的 [未指定的類型]  區段。      |
-|   **傳回型別**   |    (無)    |                                                                               **（無）**，或基本類型或模型中所定義的類型。 如果您在這個屬性中輸入新類型的名稱，系統會將類型加入 UML 模型總管的 [未指定的類型]  區段。                                                                                |
+|   **參數**    |    (無)    |      具有表單的清單<em>名稱</em> **:** <em>型別</em> **，** <em>名稱</em> **:** <em>型別</em> **，...** 按一下  **[...]** 以編輯的清單。<br /><br /> 類型可以是基本類型或是模型中所定義的類型。 如果您在這個屬性中輸入新類型的名稱，系統會將類型加入 UML 模型總管的 [未指定的類型]  區段。      |
+|   **傳回型別**   |    (無)    |                                                                               **（無）** ，或基本類型或模型中所定義的類型。 如果您在這個屬性中輸入新類型的名稱，系統會將類型加入 UML 模型總管的 [未指定的類型]  區段。                                                                                |
 | **後置條件**  |    (無)    |                                                                                                                         選擇性條件，指定作業執行前後之系統狀態間的關聯性。                                                                                                                         |
 |  **前置條件**  |    (無)    |                                                                                                                            選擇性條件，指定作業開始執行前之系統狀態的假設。                                                                                                                            |
 | **主體條件** |    (無)    |                                                                                                                                                       作業所傳回值的選擇性條件約束。                                                                                                                                                       |
@@ -74,11 +70,8 @@ ms.locfileid: "51804459"
 |    **是唯一的**    |    False     |                                                                                                                                         如果為 true，則集合中沒有重複值。 針對**多重性**1 個以上。                                                                                                                                         |
 
 ## <a name="see-also"></a>另請參閱  
- [UML 類別圖： 參考](../modeling/uml-class-diagrams-reference.md)   
+ [UML 類別圖表：參考](../modeling/uml-class-diagrams-reference.md)   
  [UML 類別圖上的類型屬性](../modeling/properties-of-types-on-uml-class-diagrams.md)   
  [在 UML 類別圖上的屬性的屬性](../modeling/properties-of-attributes-on-uml-class-diagrams.md)   
  [在 UML 類別圖上的關聯性的屬性](../modeling/properties-of-associations-on-uml-class-diagrams.md)   
  [UML 類別圖表：方針](../modeling/uml-class-diagrams-guidelines.md)
-
-
-

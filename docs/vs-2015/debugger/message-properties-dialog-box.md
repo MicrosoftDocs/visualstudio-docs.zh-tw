@@ -1,14 +1,9 @@
 ---
 title: 訊息屬性對話方塊 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - message options
 - message options, General
@@ -16,13 +11,13 @@ ms.assetid: 58e9dc24-baf6-4ab8-916c-aea28b72e3b0
 caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 57f9768d8d0e809f1b5d17cf295210c3aaf22a61
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 672bc439a91f0b49c1d198ea666789a6fdcab07e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51776040"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68198163"
 ---
 # <a name="message-properties-dialog-box"></a>訊息屬性對話方塊
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +32,7 @@ ms.locfileid: "51776040"
  **巢狀層級**  
  此訊息，其中 0 是無巢狀的巢狀深度。  
   
- **訊息**  
+ **Message**  
  數字、 狀態，以及選取的 windows 訊息的名稱。  
   
  **lResult**  
@@ -70,6 +65,3 @@ ms.locfileid: "51776040"
   
  [使用 Spy++](../debugger/using-spy-increment.md)  
  介紹 Spy + + 工具，並說明如何使用它。
-
-
-

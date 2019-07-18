@@ -13,17 +13,16 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 8efc470db346e4de9036a5869c0118b68ea76f81
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 0d2eaf41ac66cd1bdf680145bef43b17cc29a505
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54802285"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63425874"
 ---
 # <a name="writing-multi-processor-aware-loggers"></a>撰寫能夠辨識多處理器的記錄器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 雖能夠使用多個處理器來大幅縮短專案建置時間，但同時也增加了建置事件記錄的複雜性。 在單一處理器環境中，事件、訊息、警告和錯誤是以可預測的循序方式傳入記錄器。 不過，在多處理器環境中，不同來源的事件可能會同時或不依順序傳入。 為解決這個問題，[!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 提供了能夠辨識多處理器的記錄器以及新的記錄模型，可讓您建立自訂的「轉送記錄器」。  
   
 ## <a name="multi-processor-logging-challenges"></a>多處理器記錄挑戰  
@@ -82,7 +81,7 @@ msbuild.exe myproj.proj/distributedlogger:XMLCentralLogger,MyLogger,Version=1.0.
 ```  
   
 > [!NOTE]
->  `/dl` 參數中必須使用星號 (*) 分隔兩個記錄器名稱。  
+> `/dl` 參數中必須使用星號 (*) 分隔兩個記錄器名稱。  
   
  使用 ConfigurableForwardingLogger 和使用任何其他記錄器一樣 (如[取得組建記錄檔](../msbuild/obtaining-build-logs-with-msbuild.md)中所述)，不同之處為附加 ConfigurableForwardingLogger 記錄器，而不是一般的 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 記錄器，而且要將您讓 ConfigurableForwardingLogger 傳遞給中央節點的事件，指定為參數。  
   

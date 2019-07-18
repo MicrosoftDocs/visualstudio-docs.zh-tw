@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], custom - document data and document view
 ms.assetid: 71eea623-f566-4feb-84cd-ca1ba71bc493
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6470b7ddb8a28c2aa22a23a55976f1f8831c4363
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 7574fad343e2966ab9a8782d472a0491bd29767b
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56683736"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66348093"
 ---
 # <a name="document-data-and-document-view-in-custom-editors"></a>文件資料和自訂編輯器中的文件檢視
 自訂編輯器是由兩個部分所組成： 文件資料物件和文件檢視物件。 如名稱所示，文件資料物件會表示要顯示的文字資料。 同樣地，文件檢視物件 （或 「 檢視 」） 表示要在其中顯示文件資料物件的一或多個 windows。

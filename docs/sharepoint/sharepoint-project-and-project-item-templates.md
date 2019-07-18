@@ -20,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6250577a5a1b6793001b1d4b732c3b3101690aad
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
-ms.translationtype: MT
+ms.openlocfilehash: 245a6c994d87ecfa9c5ef877563b70100e5eef6f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57867869"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439000"
 ---
 # <a name="sharepoint-project-and-project-item-templates"></a>SharePoint 專案與專案項目範本
   下列各節說明可用的 SharePoint 專案和專案項目範本，以及如何使用它們。
@@ -41,17 +41,17 @@ ms.locfileid: "57867869"
 ### <a name="sharepoint-2010-project"></a>SharePoint 2010 專案
  內容*SharePoint 2010 專案*包含在每個 SharePoint 專案範本。 SharePoint 2010 專案包含：
 
--   專案檔。
+- 專案檔。
 
--   專案屬性 頁面中。
+- 專案屬性 頁面中。
 
--   A**參考**資料夾列出所有在專案中的組件參考。
+- A**參考**資料夾列出所有在專案中的組件參考。
 
--   A**功能**所在的資料夾 *.feature*組態檔，用來將功能部署到 SharePoint 伺服器。
+- A**功能**所在的資料夾 *.feature*組態檔，用來將功能部署到 SharePoint 伺服器。
 
--   A**封裝**所在的資料夾*封裝*用來將方案部署到 SharePoint 的檔案。
+- A**封裝**所在的資料夾*封裝*用來將方案部署到 SharePoint 的檔案。
 
--   Key.snk （強式名稱金鑰） 檔案用來簽署以強式名稱，組件的增強式安全性。
+- Key.snk （強式名稱金鑰） 檔案用來簽署以強式名稱，組件的增強式安全性。
 
 ### <a name="sharepoint-2010-silverlight-web-part"></a>SharePoint 2010 Silverlight web 組件
  *SharePoint 2010 Silverlight Web 組件*專案可讓您建立的 web 組件 for SharePoint，以便顯示 Silverlight 應用程式。 當您建立此專案時，您可以指定要新增新的 Silverlight 應用程式，它還是參考現有的帳戶。 如需詳細資訊，請參閱 <<c0> [ 建立適用於 SharePoint 的 web 組件](../sharepoint/creating-web-parts-for-sharepoint.md)和[逐步解說：建立顯示 SharePoint 之 OData 的 Silverlight web 組件](../sharepoint/walkthrough-creating-a-silverlight-web-part-that-displays-odata-for-sharepoint.md)。
@@ -80,7 +80,7 @@ ms.locfileid: "57867869"
  *內容類型*項目可讓您建立文件、 通知、 或工作等現有的 （基底） 內容類型為基礎的自訂內容類型。 自訂內容類型會提供相同的屬性和欄位做為基底內容類型以及您定義任何站台資料行 （欄位）。 例如，您可以建立自訂的 Contact 內容類型為基礎的基底的連絡人內容類型出現在 SharePoint 中。 您可以藉由變更現有的網站欄或多個站台資料行加入已包含在基底內容類型的自訂內容類型。
 
 > [!NOTE]
->  由於 SharePoint 的限制，您無法建立沙箱化方案的內容類型為基礎的伺服器陣列的方案內容類型。
+> 由於 SharePoint 的限制，您無法建立沙箱化方案的內容類型為基礎的伺服器陣列的方案內容類型。
 
  如需詳細資訊，請參閱[逐步解說：建立 SharePoint 網站資料行、 內容類型和清單](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md)和[建置組塊：內容類型](http://go.microsoft.com/fwlink/?LinkId=179413)。
 

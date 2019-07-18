@@ -1,17 +1,17 @@
 ---
 title: 偵錯 - 資料視覺效果
 description: 偵錯是程式設計中常見且必要的一部分。 Visual Studio for Mac 包含整個套件的功能，可讓偵錯變容易。 本篇文章探討在偵錯工具中檢查物件時，可檢視的不同資料視覺效果。
-author: conceptdev
-ms.author: crdun
+author: jmatthiesen
+ms.author: jomatthi
 ms.date: 05/06/2018
 ms.technology: vs-ide-debug
 ms.assetid: 527E6BEC-EF15-4002-ACB5-62AE1C16F6B7
-ms.openlocfilehash: 0b9ec63855eff0b69f5523b1905b79d360509e67
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: 14696040160dfc33f89b7647fb73b116b41afa16
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56953443"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67691736"
 ---
 # <a name="data-visualizations"></a>資料視覺效果
 
@@ -78,7 +78,7 @@ Rectangle/RectangleF 或 iOS 和 Mac 的 CGRect 會顯示尺寸和原點。 與�
 
 ## <a name="ienumerable"></a>IEnumerable
 
-IEnumerable 會列舉所有值；透過按一下 [顯示值] 按鈕，即可檢視每個 IEnumerable 的值。 IEnumerable 選項不會顯示物件 (例如 `Array`、`ArrayList`、`List<>`、`Dictionary<,>`) 的值，因為它們具有自己的偵錯工具視覺化檢視。
+IEnumerable 會列舉所有值；透過按一下 [顯示值]  按鈕，即可檢視每個 IEnumerable 的值。 IEnumerable 選項不會顯示物件 (例如 `Array`、`ArrayList`、`List<>`、`Dictionary<,>`) 的值，因為它們具有自己的偵錯工具視覺化檢視。
 
 ![IEnumerable 視覺效果](media/data-visualizations-image22.png)
 

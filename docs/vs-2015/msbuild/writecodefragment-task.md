@@ -17,23 +17,22 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ee0b819d0387ecbd0bec3a460bf3c63d3122b269
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: fa9882d30a8483937f77da21bb4700d4899a68a6
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54796937"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62555474"
 ---
 # <a name="writecodefragment-task"></a>WriteCodeFragment 工作
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 從指定產生的程式碼片段來產生暫存程式碼檔。 不會刪除該檔案。  
   
 ## <a name="parameters"></a>參數  
  下表說明 `WriteCodeFragment` 工作的參數。  
   
-|參數|描述|  
+|參數|說明|  
 |---------------|-----------------|  
 |`AssemblyAttributes`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 要撰寫之屬性的描述。 項目 `Include` 值是屬性的完整類型名稱，例如，"System.AssemblyVersionAttribute"。<br /><br /> 每個中繼資料都是參數的名稱/值組，其必須為類型 `String`。 有些屬性只允許位置建構函式引數。 不過，您可以在任何屬性中使用這類引數。 若要設定位置建構函式屬性，請使用與 "_Parameter1"、"_Parameter2" 等等類似的中繼資料名稱。<br /><br /> 參數索引不能予以跳過。|  
 |`Language`|必要的 `String` 參數。<br /><br /> 指定要產生之程式碼的語言。<br /><br /> `Language` 可以是 CodeDom 提供者所提供的任何語言 (例如 "C#" 或 "VisualBasic")。 發出的檔案會具有該語言的預設副檔名。|  

@@ -1,27 +1,22 @@
 ---
-title: IDebugSymbolProviderDirect::GetCurrentModulesInfo |Microsoft Docs
-ms.custom: ''
+title: IDebugSymbolProviderDirect::GetCurrentModulesInfo | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - IDebugSymbolProviderDirect::GetCurrentModulesInfo
 - GetCurrentModulesInfo
 ms.assetid: b3b45ed2-ea4e-4389-b78a-11fc9796a6c1
 caps.latest.revision: 10
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: bca8c1ee258c14f3114a9a62e791a7d6a3bade68
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 4ce4473fca76424f3b737d530997f766da7b219d
+ms.sourcegitcommit: da4079f5b6ec884baf3108cbd0519d20cb64c70b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51767893"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "62421911"
 ---
 # <a name="idebugsymbolproviderdirectgetcurrentmodulesinfo"></a>IDebugSymbolProviderDirect::GetCurrentModulesInfo
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -71,4 +66,3 @@ int GetCurrentModulesInfo(
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugSymbolProviderDirect](../../../extensibility/debugger/reference/idebugsymbolproviderdirect.md)
-

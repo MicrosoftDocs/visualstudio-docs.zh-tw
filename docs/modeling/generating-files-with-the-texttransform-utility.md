@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7c7a33f7510eb862ed6af1f1d5337d8d3e2743ba
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55939498"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62993756"
 ---
 # <a name="generate-files-with-the-texttransform-utility"></a>產生使用 TextTransform 公用程式的檔案
 

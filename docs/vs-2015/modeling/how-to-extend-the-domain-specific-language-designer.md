@@ -1,25 +1,22 @@
 ---
-title: 如何： 擴充特定領域語言設計工具 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：擴充特定領域語言設計工具 |Microsoft Docs
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: fa807f1b-2780-491e-925b-abbfd31b2bfa
 caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 434b9c5a575ab19530ca3c5c3e0d6536235b9f88
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 8c02dbf550ca1621a17d2b674a522e1e4f4bcc1c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49878553"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62546937"
 ---
-# <a name="how-to-extend-the-domain-specific-language-designer"></a>如何：擴充網域指定的語言設計工具
+# <a name="how-to-extend-the-domain-specific-language-designer"></a>HOW TO：擴充特定領域語言設計工具
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 您可以對您用來編輯在 DSL 定義設計工具的延伸模組。 類型的擴充功能，可讓您加入功能表命令加入處理常式，如拖曳，然後按兩下筆勢和特定類型的值或關聯性變更時觸發的規則。 延伸模組可以封裝成 Visual Studio 整合擴充功能 (VSIX)，並散發給其他使用者。  
@@ -31,25 +28,25 @@ ms.locfileid: "49878553"
   
 #### <a name="to-create-a-dsl-designer-extension-solution"></a>若要建立的 DSL 設計工具擴充功能方案  
   
-1.  建立新的專案使用類別庫專案範本。 在 **新的專案** 對話方塊中，按一下**Visual C#** ，然後在中間視窗中的，按一下 **類別庫**。  
+1. 建立新的專案使用類別庫專案範本。 在 **新的專案** 對話方塊中，按一下**Visual C#** ，然後在中間視窗中的，按一下 **類別庫**。  
   
      這個專案會包含您的擴充功能的程式碼。  
   
-2.  建立新的專案使用 VSIX 專案範本。 在 **新的專案**對話方塊方塊中，展開**Visual C#**，按一下**擴充性**，，然後在中間視窗中選取**VSIX 專案**。  
+2. 建立新的專案使用 VSIX 專案範本。 在 **新的專案**對話方塊方塊中，展開**Visual C#**，按一下**擴充性**，，然後在中間視窗中選取**VSIX 專案**。  
   
      選取 **加入至方案**。  
   
      在 VSIX 資訊清單編輯器中，開啟 Source.extension.vsixmanifest。  
   
-3.  上方的 [內容] 欄位中，按一下**加入內容**。  
+3. 上方的 [內容] 欄位中，按一下**加入內容**。  
   
-4.  中**加入內容** 對話方塊中，將**內容類型選取**來**MEF 元件**，並將**專案**您類別庫專案。  
+4. 中**加入內容** 對話方塊中，將**內容類型選取**來**MEF 元件**，並將**專案**您類別庫專案。  
   
-5.  按一下 **選取版本**並確定**Visual Studio Enterprise**已核取。  
+5. 按一下 **選取版本**並確定**Visual Studio Enterprise**已核取。  
   
-6.  請確定 VSIX 專案方案的啟始專案。  
+6. 請確定 VSIX 專案方案的啟始專案。  
   
-7.  在類別庫專案中，加入下列組件的參考：  
+7. 在類別庫專案中，加入下列組件的參考：  
   
      Microsoft.VisualStudio.CoreUtility  
   
@@ -317,4 +314,3 @@ namespace Fabrikam.SimpleDslDesignerExtension
     }  
 }  
 ```
-

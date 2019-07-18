@@ -5,17 +5,20 @@ ms.topic: reference
 helpviewer_keywords:
 - IDebugBreakpointChecksumRequest2::GetChecksum
 ms.assetid: ec434882-e5c0-4d76-a58b-22c260d8626e
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8d3c85d949f9547897b924bea86fe0cf9d438768
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: a266a827e3dc73ea1c3cc5b3fb28cbb99acba1a7
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56685660"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66314338"
 ---
 # <a name="idebugbreakpointchecksumrequest2getchecksum"></a>IDebugBreakpointChecksumRequest2::GetChecksum
 擷取的中斷點要求指定總和檢查碼演算法的唯一識別項使用的文件總和檢查碼。
@@ -36,14 +39,12 @@ public int GetChecksum(
 );
 ```
 
-#### <a name="parameters"></a>參數
-`guidAlgorithm`
+## <a name="parameters"></a>參數
+`guidAlgorithm`\
+[in]總和檢查碼演算法的唯一識別碼。
 
- [in]總和檢查碼演算法的唯一識別碼。
-
-`pChecksumData`
-
- [out]用中斷點要求的文件總和檢查碼。
+`pChecksumData`\
+[out]用中斷點要求的文件總和檢查碼。
 
 ## <a name="return-value"></a>傳回值
 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

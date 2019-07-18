@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugPortSuppliers2::Next
 ms.assetid: f69cbacf-da9d-4b22-b8a2-abd9b8c131f2
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e756c6e08693339b51bf4b27d23873285b2aefe0
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: d2813e019e9d071ffba14fb581ff0797f4cb2622
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56706791"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66326323"
 ---
 # <a name="ienumdebugportsuppliers2reset"></a>IEnumDebugPortSuppliers2::Reset
 將列舉重設第一個項目。

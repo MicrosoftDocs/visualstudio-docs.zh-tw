@@ -21,26 +21,25 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c89154cef2325da8b8073ded264afeb8f765302a
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 6d3a031c8e7837d76b5d2c7ab91c5702f59598a0
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54800800"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65693741"
 ---
 # <a name="options-text-editor-all-languages-tabs"></a>索引標籤、所有語言、文字編輯器、選項
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 編輯樣式表時，這個對話方塊可讓您變更程式碼編輯器的預設行為。 這些設定也適用於以程式碼編輯器為基礎的其他編輯器，例如 HTML 設計工具的來源檢視。 若要顯示這些選項，請從 [工具] 功能表選取 [選項]。 在 [文字編輯器] 資料夾內，展開 [所有語言] 子資料夾，然後選擇 [定位點]。  
   
 > [!CAUTION]
->  此頁面會設定所有開發語言的預設選項。 請記住，重設此對話方塊中的選項，會將所有語言中的 [定位點] 選項重設為此處所選的選項。 若只要變更單一語言的文字編輯器選項，請展開該語言的子資料夾，然後選取其選項頁面。  
+> 此頁面會設定所有開發語言的預設選項。 請記住，重設此對話方塊中的選項，會將所有語言中的 [定位點] 選項重設為此處所選的選項。 若只要變更單一語言的文字編輯器選項，請展開該語言的子資料夾，然後選取其選項頁面。  
   
  如果在特定程式設計語言的 [定位點] 頁面上選取不同的設定，則針對不同的 [縮排] 選項會顯示「個別文字格式的縮排設定彼此衝突」訊息，並且針對不同的 [定位點] 選項會顯示「個別文字格式的定位點設定彼此衝突」訊息。 例如，如果針對 Visual Basic 選取了 [智慧縮排] 選項，但針對 Visual C++ 選取 [區塊縮排]。  
   
 > [!NOTE]
->  根據您目前使用的設定或版本，您所看到的對話方塊與功能表命令可能會與 [說明] 中描述的不同。 若要變更設定，請從 [ **工具** ] 功能表中選取 [ **匯入和匯出設定** ]。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
+> 根據您目前使用的設定或版本，您所看到的對話方塊與功能表命令可能會與 [說明] 中描述的不同。 若要變更設定，請從 [ **工具** ] 功能表中選取 [ **匯入和匯出設定** ]。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
   
 ## <a name="indenting"></a>縮排  
  無  

@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProcess2::GetName
 ms.assetid: a2f66ab5-53e5-4cdc-a1b5-3b8afa8ee646
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: acaa43d4a9afe1084502c44f5221bc8518a9bd3e
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: d869f041bee3d187e4cd980328819505e667114e
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56713317"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66339025"
 ---
 # <a name="idebugprocess2getname"></a>IDebugProcess2::GetName
 取得標題、 易記名稱或處理序檔案名稱。
@@ -38,14 +41,12 @@ int GetName( 
 );
 ```
 
-#### <a name="parameters"></a>參數
- `gnType`
+## <a name="parameters"></a>參數
+`gnType`\
+[in]值，以從[GETNAME_TYPE](../../../extensibility/debugger/reference/getname-type.md)列舉，指定要傳回名稱的類型。
 
- [in]值，以從[GETNAME_TYPE](../../../extensibility/debugger/reference/getname-type.md)列舉，指定要傳回名稱的類型。
-
- `pbstrName`
-
- [out]傳回處理序的名稱。
+`pbstrName`\
+[out]傳回處理序的名稱。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

@@ -1,25 +1,20 @@
 ---
 title: VsgDbg 類別 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 6722263c-ccef-40c7-a0ae-87a863fbab00
 caps.latest.revision: 8
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 0fb4a830c6cc3af49dcb3e26c6711af1a014c9c1
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 053647d48324f056148375bae9268b997ba8721f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51724910"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68145698"
 ---
 # <a name="vsgdbg-class"></a>VsgDbg 類別
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,6 +52,3 @@ class VsgDbg;
   
 ## <a name="remarks"></a>備註  
  `VsgDbg`類別代表的介面，可用來以程式設計方式控制圖形診斷功能。 您可以使用某些功能，即使您未主動擷取並記錄圖形資訊;這包括`AddMessage`成員函式和`ToggleHUD`成員函式。 其他成員函式會準備圖形診斷來啟動或停止作用中的擷取圖形資訊的應用程式元件，或主動擷取及記錄到圖形記錄檔的圖形資訊的應用程式時，必須呼叫。
-
-
-

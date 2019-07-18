@@ -1,27 +1,22 @@
 ---
 title: 實作自訂類別和顯示項目 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - font and color control [Visual Studio SDK], categories
 - custom categories
 ms.assetid: 99311a93-d642-4344-bbf9-ff6e7fa5bf7f
 caps.latest.revision: 26
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 394f8f99539ab49c1201fa61ce612aee22ff2064
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 474d5c66507b56bea609568b6acfe9f5eff75e9c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51769119"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63414611"
 ---
 # <a name="implementing-custom-categories-and-display-items"></a>實作自訂類別和顯示項目
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -61,7 +56,7 @@ VSPackage 可以提供控制項的字型和色彩，其文字的[!INCLUDE[vsprvs
   |名稱|類型|資料|描述|  
   |----------|----------|----------|-----------------|  
   |分類|REG_SZ|GUID|若要識別類別，建立 GUID。|  
-  |Package|REG_SZ|GUID|VSPackage 服務，可支援分類的 GUID。|  
+  |套件|REG_SZ|GUID|VSPackage 服務，可支援分類的 GUID。|  
   
   在登錄中指定的服務必須提供實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults>對應分類。  
   
@@ -76,7 +71,7 @@ VSPackage 可以提供控制項的字型和色彩，其文字的[!INCLUDE[vsprvs
   |名稱|類型|資料|描述|  
   |----------|----------|----------|-----------------|  
   |分類|REG_SZ|GUID|建立識別群組的 GUID。|  
-  |Package|REG_SZ|GUID|支援的類別目錄服務的 GUID。|  
+  |套件|REG_SZ|GUID|支援的類別目錄服務的 GUID。|  
   
   在登錄中指定的服務必須提供實作`T:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup`對應的群組。  
   
@@ -88,24 +83,24 @@ VSPackage 可以提供控制項的字型和色彩，其文字的[!INCLUDE[vsprvs
   
 - 透過實作方法<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults>必須提供具有的 IDE:  
   
-  -   清單**顯示的項目**在**類別目錄。**  
+  - 清單**顯示的項目**在**類別目錄。**  
   
-  -   可當地語系化的名稱，如**顯示的項目**。  
+  - 可當地語系化的名稱，如**顯示的項目**。  
   
-  -   顯示針對每個成員的資訊**分類**。  
+  - 顯示針對每個成員的資訊**分類**。  
   
   > [!NOTE]
-  >  每隔**分類**必須包含至少一個**顯示項目**。  
+  > 每隔**分類**必須包含至少一個**顯示項目**。  
   
 - IDE 使用`T:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup`介面來定義數個類別的聯集。  
   
    它的實作提供的 IDE:  
   
-  -   一份**分類**組成特定的群組。  
+  - 一份**分類**組成特定的群組。  
   
-  -   存取的執行個體<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults>支援每個**分類**群組內。  
+  - 存取的執行個體<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults>支援每個**分類**群組內。  
   
-  -   可當地語系化的群組名稱。  
+  - 可當地語系化的群組名稱。  
   
 - 正在更新 IDE:  
   
@@ -116,18 +111,18 @@ VSPackage 可以提供控制項的字型和色彩，其文字的[!INCLUDE[vsprvs
 ## <a name="to-handle-font-and-color-changes"></a>若要處理的字型和色彩的變更  
  若要正確支援 VSPackage 顯示文字的顏色標示，支援 VSPackage 的顏色標示服務必須回應使用者起始所做的變更透過**字型和色彩**屬性頁面。 VSPackage 的做法是：  
   
--   藉由實作處理 IDE 所產生的事件<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents>介面。  
+- 藉由實作處理 IDE 所產生的事件<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents>介面。  
   
      IDE 呼叫適當的方法遵循使用者修改**字型和色彩**頁面。 比方說，它會呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents.OnFontChanged%2A>方法如果在選取新的字型。  
   
      -或-  
   
--   輪詢變更的 IDE。  
+- 輪詢變更的 IDE。  
   
      這可透過系統實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage>介面。 主要目的是為了支援持續性，雖然<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.GetItem%2A>方法可用來取得字型和色彩資訊**顯示項目**。 如需詳細資訊，請參閱 <<c0> [ 存取儲存的字型和色彩設定](../extensibility/accessing-stored-font-and-color-settings.md)。  
   
     > [!NOTE]
-    >  為了確保透過輪詢所得到的結果正確無誤，它可能會使用<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorCacheManager>介面，以決定在呼叫的擷取方法之前是否需要快取排清和更新<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage>介面。  
+    > 為了確保透過輪詢所得到的結果正確無誤，它可能會使用<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorCacheManager>介面，以決定在呼叫的擷取方法之前是否需要快取排清和更新<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage>介面。  
   
 ## <a name="see-also"></a>另請參閱  
  <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider.QueryService%2A>   
@@ -138,6 +133,5 @@ VSPackage 可以提供控制項的字型和色彩，其文字的[!INCLUDE[vsprvs
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider>   
  [取得字型和色彩資訊文字的顏色標示](../extensibility/getting-font-and-color-information-for-text-colorization.md)   
  [存取預存的字型和色彩設定](../extensibility/accessing-stored-font-and-color-settings.md)   
- [如何： 存取的內建的字型和色彩配置](../extensibility/how-to-access-the-built-in-fonts-and-color-scheme.md)   
+ [如何：存取的內建的字型和色彩配置](../extensibility/how-to-access-the-built-in-fonts-and-color-scheme.md)   
  [字型和色彩概觀](../extensibility/font-and-color-overview.md)
-

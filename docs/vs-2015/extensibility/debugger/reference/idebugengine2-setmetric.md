@@ -1,14 +1,9 @@
 ---
 title: IDebugEngine2::SetMetric |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugEngine2:::SetMetric
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: dcda4972-c32e-4693-a0e1-25d5c58b9782
 caps.latest.revision: 16
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: a8b2b8eff691767b47c83f4ef248c08b2d5a1a80
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 3371925894a32bfe954979d1554d96d3d5bbb140
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51743685"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68182236"
 ---
 # <a name="idebugengine2setmetric"></a>IDebugEngine2::SetMetric
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -61,4 +56,3 @@ int SetMetric(
 ## <a name="see-also"></a>另請參閱  
  [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)   
  [適用於偵錯的 SDK 協助程式](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)
-

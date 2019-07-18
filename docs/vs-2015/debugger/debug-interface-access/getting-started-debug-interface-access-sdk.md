@@ -1,14 +1,9 @@
 ---
 title: 使用者入門 （偵錯介面存取 SDK） |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -18,22 +13,22 @@ ms.assetid: cb3d040a-2846-40d7-bdbc-8a5beb5dd2f6
 caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 4b5b04868bac6e27e5badd690d84cdc21722c723
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 54f83f00ed2e99d1541e15092cb3ee0ce9e08952
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51753095"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68164178"
 ---
 # <a name="getting-started-debug-interface-access-sdk"></a>使用者入門 (偵錯介面存取 SDK)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-偵錯介面存取 (DIA) SDK 會提供您指示文件與說明如何使用 DIA API 的範例。 使用介面和方法在 DIA SDK 開發自訂的應用程式所開啟的.pdb 和.dbg 檔案，並搜尋其內容的符號、 值、 屬性、 位址和其他偵錯資訊。 此 SDK 也提供適用於 c + + 應用程式中找到的符號相關聯的屬性參考表格。  
+偵錯介面存取 (DIA) SDK 會提供您指示文件與說明如何使用 DIA API 的範例。 使用介面和方法在 DIA SDK 開發自訂的應用程式所開啟的.pdb 和.dbg 檔案，並搜尋其內容的符號、 值、 屬性、 位址和其他偵錯資訊。 此 SDK 也提供參考資料表中找到與符號相關聯的屬性C++應用程式。  
   
  若要最佳方式使用 DIA SDK，您應該先熟悉下列項目：  
   
-- C + + 程式設計語言  
+- C++程式設計語言  
   
 - COM 程式設計  
   
@@ -45,9 +40,9 @@ ms.locfileid: "51753095"
   
   程式庫： lib\diaguids.lib  
   
-  DLL: bin\msdia80.dll  
+  DLL：bin\msdia80.dll  
   
-  IDL: idl\dia2.idl  
+  IDL：idl\dia2.idl  
   
 ## <a name="in-this-section"></a>本節內容  
  [概觀](../../debugger/debug-interface-access/overview-debug-interface-access-sdk.md)  
@@ -58,6 +53,3 @@ ms.locfileid: "51753095"
   
 ## <a name="see-also"></a>另請參閱  
  [偵錯介面存取 SDK](../../debugger/debug-interface-access/debug-interface-access-sdk.md)
-
-
-

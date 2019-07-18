@@ -3,19 +3,19 @@ title: 管理 Python 應用程式專案
 description: Visual Studio 中的專案會管理檔案之間的相依性，以及應用程式中的關聯性複雜度。
 ms.date: 03/18/2019
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: fb9682f46913aec0bfd7d91d5cd8d535410470bb
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: 2ee3b0d82251d01e8ede22be238dc1bca5a4e092
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58194337"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62536278"
 ---
 # <a name="python-projects-in-visual-studio"></a>Visual Studio 中的 Python 專案
 
@@ -75,7 +75,7 @@ Visual Studio 提供您一些方法來建立 Python 專案，不論是從頭開�
 
 ![含有 Python 範本的 [新增專案] 對話方塊](media/projects-new-project-dialog.png)
 
-下表摘要說明 Visual Studio 2017 中可用的範本 (並非所有範本在所有舊版中都有提供)：
+下表摘要說明 Visual Studio 2017 和更新版本中可用的範本 (並非所有範本在所有舊版中都有提供)：
 
 | 範本 | 說明 |
 | --- | --- |
@@ -88,7 +88,7 @@ Visual Studio 提供您一些方法來建立 Python 專案，不論是從頭開�
 | **IronPython Silverlight 網頁** | 一種使用 Silverlight 在瀏覽器中執行的 IronPython 專案。 應用程式的 Python 程式碼會以指令碼的形式包含在網頁中。 重複使用指令碼標記會向下拖曳出一些 JavaScript 程式碼，這些程式碼會將在 Silverlight 內部執行的 IronPython 初始化，而您的 Python 程式碼便可從中與 DOM 互動。 |
 | **IronPython Windows Forms 應用程式** | 一種使用 IronPython 的專案結構，其中是使用程式碼搭配 Windows Forms 來建立 UI。 應用程式會在不顯示主控台的情況下執行。 |
 | **背景應用程式 (IoT)** | 支援將 Python 專案部署成在裝置上以背景服務的形式執行。 如需詳細資訊，請瀏覽 [Windows IoT 開發人員中心](https://dev.windows.com/en-us/iot)。 |
-| **Python 延伸模組** | 如果您已在 Visual Studio 2017 中搭配 Python 工作負載安裝「Python 原生開發工具」(請參閱[安裝](installing-python-support-in-visual-studio.md))，此範本會出現在 Visual C++ 底下。 它提供的 C++ 延伸模組 DLL 的核心結構，類似於[建立適用於 Python 的 C++ 延伸模組](working-with-c-cpp-python-in-visual-studio.md)中所述。 |
+| **Python 延伸模組** | 如果您已在 Visual Studio 2017 或更新版本中安裝 **Python 原生開發工具**與 Python 工作負載 (請參閱[安裝](installing-python-support-in-visual-studio.md))，此範本會出現在 Visual C++ 下。 它提供的 C++ 延伸模組 DLL 的核心結構，類似於[建立適用於 Python 的 C++ 延伸模組](working-with-c-cpp-python-in-visual-studio.md)中所述。 |
 
 > [!Note]
 > 因為 Python 是解譯式語言，所以 Visual Studio 中的 Python 專案不會產生其他編譯式語言專案 (例如 C#) 所產生的獨立式可執行檔。 如需詳細資訊，請參閱[問與答](overview-of-python-tools-for-visual-studio.md#questions-and-answers)。

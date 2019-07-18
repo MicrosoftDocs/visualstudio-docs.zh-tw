@@ -5,17 +5,20 @@ ms.topic: reference
 helpviewer_keywords:
 - IDebugProcessQueryProperties::QueryProperties
 ms.assetid: 976a9962-b689-45bb-afb6-16b2c5dbc3b8
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e3644a8d8b8834056e5cf61fc8647d5c47056208
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: a26cbb1781561b6fb4d54da3cfaea9a9fbae7699
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56701455"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66311587"
 ---
 # <a name="idebugprocessquerypropertiesqueryproperties"></a>IDebugProcessQueryProperties::QueryProperties
 這個方法會查詢偵錯的處理程序的指定的屬性值。
@@ -36,14 +39,12 @@ int QueryProperties(
    out object[ ]              rgtPropValues);
 ```
 
-#### <a name="parameters"></a>參數
- `celt`
+## <a name="parameters"></a>參數
+`celt`\
+[in]包含的屬性定義與屬性值的陣列的大小。
 
- [in]包含的屬性定義與屬性值的陣列的大小。
-
- `dwPropType`
-
- [in]陣列，其中包含定義之查詢的屬性。 可能值為：
+`dwPropType`\
+[in]陣列，其中包含定義之查詢的屬性。 可能值為：
 
 - PROCESS_PROPERTY_COMMAND_LINE = 1
 
@@ -51,7 +52,8 @@ int QueryProperties(
 
 - PROCESS_PROPERTY_ENVIRONMENT_VARIABLES = 3
 
-  `pvarPropValue` [out]包含屬性值的陣列。
+`pvarPropValue`\
+[out]包含屬性值的陣列。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

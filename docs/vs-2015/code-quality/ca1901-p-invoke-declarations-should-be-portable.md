@@ -1,14 +1,9 @@
 ---
 title: CA1901:-Invoke 宣告應該為可移植 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1901
 - PInvokeDeclarationsShouldBePortable
@@ -20,14 +15,14 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: a44e439ecafaa2e89df8cc93c131dbf2abe2dc30
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ccbbc3178a9f65c15d11a27dee1a625cca729240
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49948131"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68203072"
 ---
-# <a name="ca1901-pinvoke-declarations-should-be-portable"></a>CA1901：P/Invoke 宣告應該是可移植的
+# <a name="ca1901-pinvoke-declarations-should-be-portable"></a>CA1901:P/Invoke 宣告應該為可移植的
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -43,9 +38,9 @@ ms.locfileid: "49948131"
 ## <a name="rule-description"></a>規則描述
  下列案例其中一種方法違反此規則就會發生：
 
--   傳回值或參數的型別為固定大小的整數時應該鍵入為`IntPtr`。
+- 傳回值或參數的型別為固定大小的整數時應該鍵入為`IntPtr`。
 
--   傳回值或參數的型別為`IntPtr`時它應該鍵入為固定大小的整數。
+- 傳回值或參數的型別為`IntPtr`時它應該鍵入為固定大小的整數。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
  您可以使用，以修正此違規`IntPtr`或是`UIntPtr`來表示控制代碼，而不是`Int32`或`UInt32`。
@@ -85,6 +80,3 @@ internal class NativeMethods{
 
 ## <a name="see-also"></a>另請參閱
  [Portability Warnings](../code-quality/portability-warnings.md)
-
-
-

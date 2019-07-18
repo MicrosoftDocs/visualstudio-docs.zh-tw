@@ -1,14 +1,9 @@
 ---
 title: ClickOnce 部署範例和逐步解說 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -22,13 +17,13 @@ ms.assetid: 3973276b-7b11-4692-a0a2-32bebf0b9c2a
 caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: cc16747838347810e12e293d718b355f492a158e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: d7a7663a2e365f800b754b771bffca4f539cee51
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49207216"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65675427"
 ---
 # <a name="clickonce-deployment-samples-and-walkthroughs"></a>ClickOnce 部署範例和逐步解說
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,8 +41,5 @@ ms.locfileid: "49207216"
 |[依需求使用設計工具以 ClickOnce 部署 API 下載組件](../deployment/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer.md)|說明如何只有在應用程式第一次使用應用程式組件時，才下載這些組件。|  
   
 ## <a name="see-also"></a>另請參閱  
- [Visual Studio 逐步解說](http://msdn.microsoft.com/en-us/f5399a1f-2d3d-42fb-b989-134ccda2159f)   
+ [Visual Studio 逐步解說](https://msdn.microsoft.com/f5399a1f-2d3d-42fb-b989-134ccda2159f)   
  [Visual Studio 範例](../ide/visual-studio-samples.md)
-
-
-

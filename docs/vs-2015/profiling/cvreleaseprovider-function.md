@@ -14,11 +14,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 7d5e611c2a964fcbb78a387a09989436e672ecd6
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54758302"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62551230"
 ---
 # <a name="cvreleaseprovider-function"></a>CvReleaseProvider 函式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

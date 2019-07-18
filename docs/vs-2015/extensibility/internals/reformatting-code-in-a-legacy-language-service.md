@@ -1,27 +1,22 @@
 ---
 title: 舊版語言服務中的程式碼重新格式化 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - reformatting code, supporting in language services [managed package framework]
 - language services [managed package framework], reformatting code
 ms.assetid: 08bb3375-8fef-4f4e-9efa-0d7333bab0eb
 caps.latest.revision: 13
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 95b878448904c194bd758d266e67599369502fe6
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: eb0dac5e1282d544df9c04bf4c12303fb391739d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51779264"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436635"
 ---
 # <a name="reformatting-code-in-a-legacy-language-service"></a>在舊版語言服務中將程式碼重新格式化
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -29,7 +24,7 @@ ms.locfileid: "51779264"
 在 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]原始程式碼可能被重新格式化的正規化使用縮排和空格。 這可以包括插入或移除空格或在每一行開頭的索引標籤、 新增線條之間的新行或取代空格與定位點或空格的索引標籤。  
   
 > [!NOTE]
->  **請注意**插入或刪除新行字元可能會影響標記，例如中斷點和書籤，但新增或移除空格或定位點不會影響標記。  
+> **請注意**插入或刪除新行字元可能會影響標記，例如中斷點和書籤，但新增或移除空格或定位點不會影響標記。  
   
  使用者可以選取啟動重新格式化作業**格式化選取範圍**或是**格式化文件**從**進階**功能表上的**編輯**功能表。 插入程式碼片段或特定的字元時，也會觸發重新格式化作業。 例如，當您輸入右括號，在 C# 中，相符的左大括號和右大括號之間的所有項目會自動縮排到適當的層級。  
   
@@ -186,4 +181,3 @@ namespace MyLanguagePackage
   
 ## <a name="see-also"></a>另請參閱  
  [舊版語言服務功能](../../extensibility/internals/legacy-language-service-features1.md)
-

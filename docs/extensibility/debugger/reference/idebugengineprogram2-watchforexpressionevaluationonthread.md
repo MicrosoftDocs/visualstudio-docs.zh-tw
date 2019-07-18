@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEngineProgram2::WatchForExpressionEvaluationOnThread
 ms.assetid: 01d05e77-8cac-4d1b-b19f-25756767ed27
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4c0572bfa8ebe1b70548483b17c58d08c8a0f9ca
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: e72292f403b28c66cddbcee623f27ddfcbe5c3aa
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56686947"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66345171"
 ---
 # <a name="idebugengineprogram2watchforexpressionevaluationonthread"></a>IDebugEngineProgram2::WatchForExpressionEvaluationOnThread
 允許 （或不允許） 發生在指定的執行緒上，即使該程式已停止的運算式評估。
@@ -44,26 +47,21 @@ int WatchForExpressionEvaluationOnThread( 
 );
 ```
 
-#### <a name="parameters"></a>參數
- `pOriginatingProgram`
+## <a name="parameters"></a>參數
+`pOriginatingProgram`\
+[in][IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)物件，表示已評估運算式的程式。
 
- [in][IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)物件，表示已評估運算式的程式。
+`dwTid`\
+[in]指定執行緒的識別碼。
 
- `dwTid`
+`dwEvalFlags`\
+[in]從旗標的組合[EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md)列舉，指定要如何進行評估。
 
- [in]指定執行緒的識別碼。
+`pExprCallback`\
+[in][IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)用來傳送在運算式評估期間發生的偵錯事件的物件。
 
- `dwEvalFlags`
-
- [in]從旗標的組合[EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md)列舉，指定要如何進行評估。
-
- `pExprCallback`
-
- [in][IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)用來傳送在運算式評估期間發生的偵錯事件的物件。
-
- `fWatch`
-
- [in]如果不是零 (`TRUE`)，讓運算式評估所識別的執行緒上`dwTid`; 否則為零 (`FALSE`) 不允許在該執行緒上的運算式評估。
+`fWatch`\
+[in]如果不是零 (`TRUE`)，讓運算式評估所識別的執行緒上`dwTid`; 否則為零 (`FALSE`) 不允許在該執行緒上的運算式評估。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

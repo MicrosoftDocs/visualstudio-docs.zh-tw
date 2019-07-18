@@ -1,11 +1,8 @@
 ---
 title: 鍵盤快速鍵，在工作流程設計工具 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - WFDKeyboardShortcuts.UI
@@ -13,13 +10,13 @@ ms.assetid: 9be75438-a4a3-4781-94e5-45b7ec082358
 caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 409a39dc889970ee7ad0eff3354fa43de15b7dbe
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: b1a03463d292fa1d4d980c62daa74b291d6a8cb1
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49895336"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62951953"
 ---
 # <a name="keyboard-shortcuts-in-the-workflow-designer"></a>工作流程設計中的鍵盤快速鍵
 [!INCLUDE[wfd1](../includes/wfd1-md.md)] 的所有核心功能都可以利用鍵盤存取。  
@@ -57,13 +54,13 @@ ms.locfileid: "49895336"
   
 - 若要連接活動：  
   
-  1.  使用 Tab 鍵選取來源活動。  
+  1. 使用 Tab 鍵選取來源活動。  
   
-  2.  視需要按幾次 CTRL+E、M，將鍵盤焦點移至目的地活動。  
+  2. 視需要按幾次 CTRL+E、M，將鍵盤焦點移至目的地活動。  
   
-  3.  按 CTRL+E、S 將目的地活動加入至選取範圍。  
+  3. 按 CTRL+E、S 將目的地活動加入至選取範圍。  
   
-  4.  按 CTRL+E、F 加入從來源到目的地的連接線。  
+  4. 按 CTRL+E、F 加入從來源到目的地的連接線。  
   
   有關使用鍵盤連接活動的附註：  
   
@@ -76,18 +73,18 @@ ms.locfileid: "49895336"
 ### <a name="expression-editing"></a>運算式編輯  
  根據預設，[!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 文字編輯的預設快速鍵適用於 [!INCLUDE[wfd2](../includes/wfd2-md.md)] 中的運算式編輯器內部，並有下列限制：  
   
--   下列命令的快速鍵重新對應將不會有任何作用。 編輯運算式時，您只能使用預設的快速鍵存取這些命令。  
+- 下列命令的快速鍵重新對應將不會有任何作用。 編輯運算式時，您只能使用預設的快速鍵存取這些命令。  
   
-    1.  剪下  
+    1. 剪下  
   
-    2.  複製  
+    2. 複製  
   
-    3.  貼上  
+    3. 貼上  
   
-    4.  全選  
+    4. 全選  
   
-    5.  復原  
+    5. 復原  
   
-    6.  取消復原  
+    6. 取消復原  
   
--   若要重新對應 [!INCLUDE[wfd2](../includes/wfd2-md.md)] 中 [!INCLUDE[vs2010](../includes/vs2010-md.md)] 內部的運算式編輯命令快速鍵，請在 [!INCLUDE[wfd2](../includes/wfd2-md.md)] 範圍內編輯快速鍵。 在 [文字編輯器] 範圍內所做的變更，不會自動套用到 [!INCLUDE[wfd2](../includes/wfd2-md.md)]。 如果兩個地方的快速鍵都要重新對應，您必須套用這些變更兩次 (兩個範圍各一次)。
+- 若要重新對應 [!INCLUDE[wfd2](../includes/wfd2-md.md)] 中 [!INCLUDE[vs2010](../includes/vs2010-md.md)] 內部的運算式編輯命令快速鍵，請在 [!INCLUDE[wfd2](../includes/wfd2-md.md)] 範圍內編輯快速鍵。 在 [文字編輯器] 範圍內所做的變更，不會自動套用到 [!INCLUDE[wfd2](../includes/wfd2-md.md)]。 如果兩個地方的快速鍵都要重新對應，您必須套用這些變更兩次 (兩個範圍各一次)。

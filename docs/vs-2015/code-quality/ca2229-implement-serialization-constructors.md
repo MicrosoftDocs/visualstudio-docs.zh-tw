@@ -1,14 +1,9 @@
 ---
-title: CA2229： 實作序列化建構函式 |Microsoft Docs
-ms.custom: ''
+title: CA2229:實作序列化建構函式 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA2229
 - ImplementSerializationConstructors
@@ -20,14 +15,14 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 45a7c9d74c5574b0e39f77f1b29fad15d9f19dbe
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 41e296a979557a42a96c2f57ce49610d88b98a40
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49858377"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68201571"
 ---
-# <a name="ca2229-implement-serialization-constructors"></a>CA2229：請實作序列化建構函式
+# <a name="ca2229-implement-serialization-constructors"></a>CA2229:必須實作序列化建構函式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -40,11 +35,11 @@ ms.locfileid: "49858377"
 ## <a name="cause"></a>原因
  型別實作<xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName>介面，不是委派或介面，其中下列條件成立：
 
--   類型不需要的建構函式<xref:System.Runtime.Serialization.SerializationInfo?displayProperty=fullName>物件和<xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName>物件 （序列化建構函式的簽章）。
+- 類型不需要的建構函式<xref:System.Runtime.Serialization.SerializationInfo?displayProperty=fullName>物件和<xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName>物件 （序列化建構函式的簽章）。
 
--   型別是密封和其序列化建構函式的存取修飾詞不是受保護 （系列）。
+- 型別是密封和其序列化建構函式的存取修飾詞不是受保護 （系列）。
 
--   型別密封格式，其序列化建構函式的存取修飾詞不是私用。
+- 型別密封格式，其序列化建構函式的存取修飾詞不是私用。
 
 ## <a name="rule-description"></a>規則描述
  此規則是關於支援自訂序列化的類型。 類型支援的自訂序列化，如果它會實作<xref:System.Runtime.Serialization.ISerializable>介面。 序列化建構函式，才能還原序列化，或重新建立使用已序列化的物件<xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A?displayProperty=fullName>方法。
@@ -61,11 +56,8 @@ ms.locfileid: "49858377"
  [!code-csharp[FxCop.Usage.ISerializableCtor#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.ISerializableCtor/cs/FxCop.Usage.ISerializableCtor.cs#1)]
 
 ## <a name="related-rules"></a>相關的規則
- [CA2237：ISerializable 類型必須標記 SerializableAttribute](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md)
+ [CA2237：Serializableattribute 標記 ISerializable 類型](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md)
 
 ## <a name="see-also"></a>另請參閱
  <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName> <xref:System.Runtime.Serialization.SerializationInfo?displayProperty=fullName>
  <xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName>
-
-
-

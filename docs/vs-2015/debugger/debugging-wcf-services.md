@@ -1,14 +1,9 @@
 ---
 title: 偵錯 WCF 服務 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -21,13 +16,13 @@ ms.assetid: 6c8974d0-2c15-4d9f-a7f3-cabd4b204cda
 caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 177261a3a3b842fcf9a1d2376d4f8dfcd142692e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 13202f8eb266c82cdd57c227ed4c480a0c871cf7
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51796151"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68141990"
 ---
 # <a name="debugging-wcf-services"></a>偵錯 WCF 服務
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,12 +34,9 @@ ms.locfileid: "51796151"
  [如何：逐步執行 WCF 服務](../debugger/how-to-step-into-wcf-services.md)  
  說明逐步執行 WCF 服務的偵錯工具支援。  
   
- [如何：偵錯自我裝載的 WCF 服務](../debugger/how-to-debug-a-self-hosted-wcf-service.md)  
+ [如何：針對自我裝載的 WCF 服務進行偵錯](../debugger/how-to-debug-a-self-hosted-wcf-service.md)  
  說明如何對在 IIS 或 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 程式開發伺服器外執行的 WCF 服務進行偵錯。  
   
 ## <a name="see-also"></a>另請參閱  
  [偵錯工具安全性](../debugger/debugger-security.md)   
  [Visual Studio 偵錯](../debugger/debugging-in-visual-studio.md)
-
-
-

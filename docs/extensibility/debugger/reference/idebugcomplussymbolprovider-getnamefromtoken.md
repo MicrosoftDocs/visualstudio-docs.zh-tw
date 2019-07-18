@@ -6,17 +6,20 @@ helpviewer_keywords:
 - IDebugComPlusSymbolProvider::GetNameFromToken
 - GetNameFromToken
 ms.assetid: 6e8cf468-5fd1-4655-93ed-88828d6068b7
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6122e134fda4b7704385609fec8fa7cd25665968
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 778a6f90dcc20ad19e310fb6ddd7680318dc3c98
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56682527"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66336725"
 ---
 # <a name="idebugcomplussymbolprovidergetnamefromtoken"></a>IDebugComPlusSymbolProvider::GetNameFromToken
 傳回與指定的語彙基元指定它的中繼資料物件相關聯的名稱。
@@ -39,18 +42,15 @@ int GetNameFromToken (
 );
 ```
 
-#### <a name="parameters"></a>參數
-`pMetadataImport`
+## <a name="parameters"></a>參數
+`pMetadataImport`\
+[in]包含中繼資料資訊的物件。
 
- [in]包含中繼資料資訊的物件。
+`dwToken`\
+[in]要命名為語彙基元。
 
-`dwToken`
-
- [in]要命名為語彙基元。
-
-`pbstrName`
-
- [out]對應至權杖的名稱。
+`pbstrName`\
+[out]對應至權杖的名稱。
 
 ## <a name="return-value"></a>傳回值
 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

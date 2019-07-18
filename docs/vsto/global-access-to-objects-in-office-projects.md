@@ -30,12 +30,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5dbe3c5810de40e19ab5abc3698a791388508283
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
-ms.translationtype: MT
+ms.openlocfilehash: 7266e7fa26574332bcb343b552eea2b707a8672b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57525193"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63427950"
 ---
 # <a name="global-access-to-objects-in-office-projects"></a>全域存取 Office 專案中的物件
   當您建立 Office 專案時，Visual Studio 會在專案中自動產生名為 `Globals` 的類別。 您可以使用 `Globals` 類別，在執行階段從專案的任何程式碼存取數個不同的專案項目。
@@ -57,13 +57,13 @@ ms.locfileid: "57525193"
 
 - Factory 物件，可讓您在執行階段於 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 或 [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]目標專案中建立功能區控制項和主項目。 您可以使用 `Globals.Factory` 屬性來存取這個物件。 這個物件是可實作下列其中一個介面的類別執行個體：
 
-  -   <xref:Microsoft.Office.Tools.Factory>
+  - <xref:Microsoft.Office.Tools.Factory>
 
-  -   <xref:Microsoft.Office.Tools.Excel.Factory>
+  - <xref:Microsoft.Office.Tools.Excel.Factory>
 
-  -   <xref:Microsoft.Office.Tools.Outlook.Factory>
+  - <xref:Microsoft.Office.Tools.Outlook.Factory>
 
-  -   <xref:Microsoft.Office.Tools.Word.Factory>
+  - <xref:Microsoft.Office.Tools.Word.Factory>
 
   例如，您可以使用 `Globals.Sheet1` 屬性在使用者按一下 Excel 文件層級專案中執行窗格上的按鈕時，將文字插入 <xref:Microsoft.Office.Tools.Excel.NamedRange> 上的 `Sheet1` 控制項。
 
@@ -74,7 +74,7 @@ ms.locfileid: "57525193"
  嘗試使用的程式碼`Globals`類別的文件或 VSTO 增益集初始化之前可能會擲回執行的階段例外狀況。 例如，在宣告類別層級變數時使用 `Globals` 可能會失敗，因為 `Globals` 類別可能不會在宣告的物件具現化之前，使用所有主項目的參考進行初始化。
 
 > [!NOTE]
->  雖然 `Globals` 類別絕對不會在設計階段初始化，但是設計工具卻會建立控制項執行個體。 這表示，如果您建立使用者控制項所使用的屬性`Globals`類別從使用者控制項類別中，您必須檢查屬性是否會傳回**null**您嘗試使用傳回的物件之前。
+> 雖然 `Globals` 類別絕對不會在設計階段初始化，但是設計工具卻會建立控制項執行個體。 這表示，如果您建立使用者控制項所使用的屬性`Globals`類別從使用者控制項類別中，您必須檢查屬性是否會傳回**null**您嘗試使用傳回的物件之前。
 
 ## <a name="see-also"></a>另請參閱
 - [在執行階段功能區的存取](../vsto/accessing-the-ribbon-at-run-time.md)

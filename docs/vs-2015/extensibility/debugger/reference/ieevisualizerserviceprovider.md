@@ -1,14 +1,9 @@
 ---
-title: IEEVisualizerServiceProvider |Microsoft Docs
-ms.custom: ''
+title: IEEVisualizerServiceProvider | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IEEVisualizerServiceProvider
 helpviewer_keywords:
@@ -16,19 +11,19 @@ helpviewer_keywords:
 ms.assetid: 859d1a51-1c65-4c8b-ae74-3b74b181ebcd
 caps.latest.revision: 18
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: aa8428a770f3e3c5f06ea9484d7ff43535d449c2
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: c9ba7c7216c590f773f1054a1f06cd3412ff6b20
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51807253"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432149"
 ---
 # <a name="ieevisualizerserviceprovider"></a>IEEVisualizerServiceProvider
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
 > [!IMPORTANT]
->  在 Visual Studio 2015 中，這種實作運算式評估工具已被取代。 如需實作 CLR 運算式評估工具的資訊，請參閱[CLR 運算式評估工具](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)並[Managed 運算式評估工具範例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。  
+> 在 Visual Studio 2015 中，這種實作運算式評估工具已被取代。 如需實作 CLR 運算式評估工具的資訊，請參閱[CLR 運算式評估工具](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)並[Managed 運算式評估工具範例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。  
   
  此介面可讓存取的方法，可以建立視覺化檢視服務，用來處理 IDE 類型視覺化檢視的工作。  
   
@@ -58,9 +53,9 @@ IEEVisualizerServiceProvider : IUnknown
 ## <a name="requirements"></a>需求  
  標頭： ee.h  
   
- 命名空間： Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間：Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
  [運算式評估介面](../../../extensibility/debugger/reference/expression-evaluation-interfaces.md)   
@@ -69,4 +64,3 @@ IEEVisualizerServiceProvider : IUnknown
  [GetEEService](../../../extensibility/debugger/reference/idebugbinder3-geteeservice.md)   
  [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)   
  [視覺化及檢視資料](../../../extensibility/debugger/visualizing-and-viewing-data.md)
-

@@ -1,14 +1,9 @@
 ---
 title: QUERYCHANGESFUNC |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 f1_keywords:
 - QUERYCHANGESFUNC
 helpviewer_keywords:
@@ -17,13 +12,13 @@ helpviewer_keywords:
 ms.assetid: 9d383e2c-eee1-4996-973a-0652d4c5951c
 caps.latest.revision: 17
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: b9a0bbf3c26f797ec1bbf67ad8439e5f5ba05b11
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 42f901fa31b3b682c7e19c98f5707adb3b4fb3f3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51764213"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68193845"
 ---
 # <a name="querychangesfunc"></a>QUERYCHANGESFUNC
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,13 +46,13 @@ typedef BOOL (*QUERYCHANGESFUNC)(
 ## <a name="return-value"></a>傳回值  
  IDE 會傳回適當的錯誤程式碼：  
   
-|值|描述|  
+|值|說明|  
 |-----------|-----------------|  
 |SCC_OK|繼續處理。|  
 |SCC_I_OPERATIONCANCELED|停止處理。|  
 |SCC_E_xxx|任何適當的 SCC 錯誤應該停止處理。|  
   
-##  <a name="LinkQUERYCHANGESDATA"></a> QUERYCHANGESDATA 結構  
+## <a name="LinkQUERYCHANGESDATA"></a> QUERYCHANGESDATA 結構  
  傳入的每個檔案結構看起來如下所示：  
   
 ```cpp#  
@@ -89,7 +84,7 @@ struct QUERYCHANGESDATA_W
  dwChangeType  
  指出檔案的狀態碼：  
   
-|程式碼|描述|  
+|程式碼|說明|  
 |----------|-----------------|  
 |`SCC_CHANGE_UNKNOWN`|不知道有哪些變更。|  
 |`SCC_CHANGE_UNCHANGED`|此檔案的名稱並無任何變更。|  
@@ -109,4 +104,3 @@ struct QUERYCHANGESDATA_W
  [IDE 所實作的回呼函式](../extensibility/callback-functions-implemented-by-the-ide.md)   
  [SccQueryChanges](../extensibility/sccquerychanges-function.md)   
  [錯誤碼](../extensibility/error-codes.md)
-

@@ -11,16 +11,16 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7c61dc9e752dccee909baa742e4c8d677df865a8
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56693330"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62929807"
 ---
 # <a name="search-menu-commands"></a>搜尋功能表命令
 **搜尋**功能表會提供要搜尋特定的 windows 的命令。
 
- **尋找視窗/處理序/執行緒/訊息**會開啟**視窗**/**程序**/**執行緒**/ **MessageSearch**對話方塊中，您可以使用**FinderTool**或指定搜尋準則。
+ **尋找視窗/處理序/執行緒/訊息**會開啟**視窗**/**程序**/**執行緒**/**MessageSearch**對話方塊中，您可以使用**FinderTool**或指定搜尋準則。
 
  **找下一個**搜尋目前的檢視中的下一個相符的視窗、 程序、 執行緒或訊息。 不是唯一有效的搜尋結果時，此功能表項目 （和相關的工具列按鈕） 是可用。
 

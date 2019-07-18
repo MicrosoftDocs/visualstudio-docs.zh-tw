@@ -1,14 +1,9 @@
 ---
 title: 將功能表控制器加入至工具列 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - toolbars [Visual Studio], adding menu controllers
 - menus, adding menu controllers to toolbars
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 6af9b0b4-037f-404c-bb40-aaa1970768ea
 caps.latest.revision: 39
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 13dec4b907b52e35b5b2377aafa511e50dc5cc48
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 3c63f6c98153c9f7a9fab171b3caddd57df717cc
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51771539"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68184902"
 ---
 # <a name="adding-a-menu-controller-to-a-toolbar"></a>將功能表控制器新增至工具列
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -119,7 +114,7 @@ ms.locfileid: "51771539"
   
 ## <a name="implementing-the-menu-controller-commands"></a>實作功能表控制器命令  
   
-1.  在 TWTestCommandPackageGuids.cs，加入命令 Id 為這三個功能表項目之後的現有命令識別碼。  
+1. 在 TWTestCommandPackageGuids.cs，加入命令 Id 為這三個功能表項目之後的現有命令識別碼。  
   
     ```csharp  
     public const int cmdidMCItem1 = 0x130;  
@@ -127,13 +122,13 @@ ms.locfileid: "51771539"
     public const int cmdidMCItem3 = 0x132;  
     ```  
   
-2.  在 TWTestCommand.cs，加入下列程式碼頂端的 TWTestCommand 類別。  
+2. 在 TWTestCommand.cs，加入下列程式碼頂端的 TWTestCommand 類別。  
   
     ```csharp  
     private int currentMCCommand; // The currently selected menu controller command  
     ```  
   
-3.  在 TWTestCommand 建構函式的最後一個呼叫之後`AddCommand`方法，加入程式碼以將每個命令，透過相同的處理常式的事件路由。  
+3. 在 TWTestCommand 建構函式的最後一個呼叫之後`AddCommand`方法，加入程式碼以將每個命令，透過相同的處理常式的事件路由。  
   
     ```csharp  
     for (int i = TWTestCommandPackageGuids.cmdidMCItem1; i <=  
@@ -154,7 +149,7 @@ ms.locfileid: "51771539"
     }  
     ```  
   
-4.  將事件處理常式加入 TWTestCommand 類別標示為已檢查選取的命令。  
+4. 將事件處理常式加入 TWTestCommand 類別標示為已檢查選取的命令。  
   
     ```csharp  
     private void OnMCItemQueryStatus(object sender, EventArgs e)  
@@ -167,7 +162,7 @@ ms.locfileid: "51771539"
     }  
     ```  
   
-5.  加入事件處理常式，會顯示 MessageBox，當使用者選取功能表控制站上的命令：  
+5. 加入事件處理常式，會顯示 MessageBox，當使用者選取功能表控制站上的命令：  
   
     ```csharp  
     private void OnMCItemClicked(object sender, EventArgs e)  
@@ -219,13 +214,13 @@ ms.locfileid: "51771539"
   
 ## <a name="testing-the-menu-controller"></a>測試功能表控制器  
   
-1.  建置此專案並開始偵錯。 您應該會看到的實驗執行個體。  
+1. 建置此專案並開始偵錯。 您應該會看到的實驗執行個體。  
   
-2.  開啟**測試 ToolWindow**上**檢視 / 其他 Windows**功能表。  
+2. 開啟**測試 ToolWindow**上**檢視 / 其他 Windows**功能表。  
   
      功能表控制器顯示工具視窗的工具列中，並顯示**MC 項目 1**。  
   
-3.  按一下功能表控制器按鈕左邊的箭號。  
+3. 按一下功能表控制器按鈕左邊的箭號。  
   
      您應該會看到三個項目，其中第一個已選取，且具有反白顯示方塊周圍的圖示。 按一下  **MC 項目 3**。  
   
@@ -234,4 +229,3 @@ ms.locfileid: "51771539"
 ## <a name="see-also"></a>另請參閱  
  [新增工具列加入工具視窗](../extensibility/adding-a-toolbar-to-a-tool-window.md)   
  [加入工具列](../extensibility/adding-a-toolbar.md)
-

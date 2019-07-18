@@ -1,14 +1,9 @@
 ---
 title: 使用 CRT 程式庫尋找記憶體遺漏 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -34,13 +29,13 @@ ms.assetid: cf6dc7a6-cd12-4283-b1b6-ea53915f7ed1
 caps.latest.revision: 33
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: eca7af1cb572714214f264cac35b488fba993bdd
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 831cae8d83bc26e05b80d6948a3168a6e6a387c4
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51726566"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65682428"
 ---
 # <a name="finding-memory-leaks-using-the-crt-library"></a>使用 CRT 程式庫尋找記憶體遺漏
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,7 +57,7 @@ ms.locfileid: "51726566"
   
  為了讓 CRT 功能正常運作， `#include` 陳述式必須遵循此處的順序。  
   
- 加入 crtdbg.h 會將 `malloc` 和 [free](http://msdn.microsoft.com/library/74ded9cf-1863-432e-9306-327a42080bb8) 函式對應至其偵錯版本 ( [_malloc_dbg](http://msdn.microsoft.com/library/c97eca51-140b-4461-8bd2-28965b49ecdb) 和 `free`)，這些偵錯版本的函式會追蹤記憶體配置和解除配置。 這種對應只會發生在偵錯組建 (具有 `_DEBUG`) 中。 發行的組建使用一般的 `malloc` 和 `free` 函式。  
+ 加入 crtdbg.h 會將 `malloc` 和 [free](https://msdn.microsoft.com/library/74ded9cf-1863-432e-9306-327a42080bb8) 函式對應至其偵錯版本 ( [_malloc_dbg](https://msdn.microsoft.com/library/c97eca51-140b-4461-8bd2-28965b49ecdb) 和 `free`)，這些偵錯版本的函式會追蹤記憶體配置和解除配置。 這種對應只會發生在偵錯組建 (具有 `_DEBUG`) 中。 發行的組建使用一般的 `malloc` 和 `free` 函式。  
   
  `#define` 陳述式會將 CRT 堆積函式的基底版本對應到偵錯版本。 如果省略 `#define` 陳述式，記憶體流失傾印就不會提供那麼詳細的資料。  
   
@@ -72,7 +67,7 @@ ms.locfileid: "51726566"
 _CrtDumpMemoryLeaks();  
 ```  
   
- 如果您的應用程式有多個結束點，您不需要在每個結束點手動加上 [_CrtDumpMemoryLeaks](http://msdn.microsoft.com/library/71b2eab4-7f55-44e8-a55a-bfea4f32d34c) 呼叫。 只要在應用程式開頭加上 `_CrtSetDbgFlag` 呼叫，就會自動在每個結束點呼叫 `_CrtDumpMemoryLeaks` 。 您必須設定兩個位元欄位，如下所示：  
+ 如果您的應用程式有多個結束點，您不需要在每個結束點手動加上 [_CrtDumpMemoryLeaks](https://msdn.microsoft.com/library/71b2eab4-7f55-44e8-a55a-bfea4f32d34c) 呼叫。 只要在應用程式開頭加上 `_CrtSetDbgFlag` 呼叫，就會自動在每個結束點呼叫 `_CrtDumpMemoryLeaks` 。 您必須設定兩個位元欄位，如下所示：  
   
 ```  
 _CrtSetDbgFlag ( _CRTDBG_ALLOC_MEM_DF | _CRTDBG_LEAK_CHECK_DF );  
@@ -87,7 +82,7 @@ _CrtSetReportMode( _CRT_ERROR, _CRTDBG_MODE_DEBUG );
 ```  
   
 ## <a name="interpreting-the-memory-leak-report"></a>解讀記憶體流失報告  
- 如果您的應用程式未定義 `_CRTDBG_MAP_ALLOC`， [_CrtDumpMemoryLeaks](http://msdn.microsoft.com/library/71b2eab4-7f55-44e8-a55a-bfea4f32d34c) 會顯示類似如下的記憶體流失報告：  
+ 如果您的應用程式未定義 `_CRTDBG_MAP_ALLOC`， [_CrtDumpMemoryLeaks](https://msdn.microsoft.com/library/71b2eab4-7f55-44e8-a55a-bfea4f32d34c) 會顯示類似如下的記憶體流失報告：  
   
 ```  
 Detected memory leaks!  
@@ -114,7 +109,7 @@ Object dump complete.
   
 - 記憶體配置編號，在此範例中為 `18`  
   
-- [區塊類型](http://msdn.microsoft.com/en-us/e2f42faf-0687-49e7-aa1f-916038354f97)，在此範例中為 `normal` 。  
+- [區塊類型](https://msdn.microsoft.com/e2f42faf-0687-49e7-aa1f-916038354f97)，在此範例中為 `normal` 。  
   
 - 十六進位記憶體位置，在此範例中為 `0x00780E80` 。  
   
@@ -126,7 +121,7 @@ Object dump complete.
   
   另外還有兩種絕對不會出現在記憶體流失報告中的記憶體區塊。 *「可用區塊」* (Free Block) 是已經釋放的記憶體。 按照定義，這種記憶體本身就沒有流失的問題。 *「忽略區塊」* (Ignore Block) 是您已明確標記為要從記憶體流失報告中排除的區塊。  
   
-  上述方式適用於以標準 CRT `malloc` 函式配置的記憶體。 如果您的程式將使用 c + + 的記憶體`new`運算子，不過，您可能只會看到的檔案和行號位置的通用實作`operator new`呼叫`_malloc_dbg`記憶體流失報告中。 由於該行為不是很有用，您可以變更它，以回報使用看起來像這樣的巨集時，所配置的那一行： 
+  上述方式適用於以標準 CRT `malloc` 函式配置的記憶體。 如果您的程式可讓您配置的記憶體使用C++`new`運算子，不過，您可能只會看到的檔案和行號位置的通用實作`operator new`呼叫`_malloc_dbg`記憶體流失報告中。 由於該行為不是很有用，您可以變更它，以回報使用看起來像這樣的巨集時，所配置的那一行： 
  
 ```cpp  
 #ifdef _DEBUG
@@ -206,7 +201,7 @@ Object dump complete.
   
    在物件上設定資料中斷點可能也很有用。 如需詳細資訊，請參閱 [Using Breakpoints](../debugger/using-breakpoints.md)。  
   
-   您也可以在程式碼中設定記憶體配置中斷點。 執行這項作業的方法有兩種：  
+   您也可以在程式碼中設定記憶體配置中斷點。 執行此作業的方法有兩種：  
   
 ```  
 _crtBreakAlloc = 18;  
@@ -271,6 +266,3 @@ if ( _CrtMemDifference( &s3, &s1, &s2) )
  [CRT 偵錯堆積詳細資料](../debugger/crt-debug-heap-details.md)   
  [偵錯工具安全性](../debugger/debugger-security.md)   
  [偵錯機器碼](../debugger/debugging-native-code.md)
-
-
-

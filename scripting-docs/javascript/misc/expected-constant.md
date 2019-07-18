@@ -14,21 +14,21 @@ ms.assetid: 8da7485f-7050-4559-97c3-ccfa782cdff3
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a449faa9d74e96406bd8fb18bbb63f61d2d53bdc
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 10564f34683fec5c38ae069f2fb0c51fb0c8902a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843238"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62935090"
 ---
 # <a name="expected-constant"></a>必須是常數
 您嘗試使用條件式編譯測試陳述式中的 （非條件式編譯） 變數。 條件式編譯測試陳述式必須評估為常數。  
   
 ### <a name="to-correct-this-error"></a>更正這個錯誤  
   
--   將變數取代常值。  
+- 將變數取代常值。  
   
--   取代的條件式編譯變數中的變數。  
+- 取代的條件式編譯變數中的變數。  
   
 ## <a name="see-also"></a>另請參閱  
  [條件式編譯](../../javascript/advanced/conditional-compilation-javascript.md)   

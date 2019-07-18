@@ -20,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 610ee5e18054b6da35a3098b851d1585c70b6bc3
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: d5cb4bf5788e1d30933a807e2e97e064118fc076
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54863538"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823413"
 ---
 # <a name="limitations-of-windows-forms-controls-on-office-documents"></a>Office 文件上的 Windows Form 控制項的限制
 
@@ -41,24 +41,24 @@ ms.locfileid: "54863538"
 
 - 不支援的 Excel 控制項的屬性：
 
-    - <xref:System.Windows.Forms.Control.Anchor>
-    - <xref:System.Windows.Forms.Control.Dock>
-    - <xref:System.Windows.Forms.Control.Location>
-    - <xref:System.Windows.Forms.Control.TabIndex>
-    - <xref:System.Windows.Forms.Control.TabStop>
-    - <xref:System.Windows.Forms.Control.TopLevelControl>
+  - <xref:System.Windows.Forms.Control.Anchor>
+  - <xref:System.Windows.Forms.Control.Dock>
+  - <xref:System.Windows.Forms.Control.Location>
+  - <xref:System.Windows.Forms.Control.TabIndex>
+  - <xref:System.Windows.Forms.Control.TabStop>
+  - <xref:System.Windows.Forms.Control.TopLevelControl>
 
 - 不支援的方法和屬性的 Word 控制項：
 
-    - <xref:System.Windows.Forms.Control.Hide%2A>
-    - <xref:System.Windows.Forms.Control.Show%2A>
-    - <xref:System.Windows.Forms.Control.Anchor>
-    - <xref:System.Windows.Forms.Control.Dock>
-    - <xref:System.Windows.Forms.Control.Location>
-    - <xref:System.Windows.Forms.Control.TabIndex>
-    - <xref:System.Windows.Forms.Control.TabStop>
-    - <xref:System.Windows.Forms.Control.TopLevelControl>
-    - <xref:System.Windows.Forms.Control.Visible>
+  - <xref:System.Windows.Forms.Control.Hide%2A>
+  - <xref:System.Windows.Forms.Control.Show%2A>
+  - <xref:System.Windows.Forms.Control.Anchor>
+  - <xref:System.Windows.Forms.Control.Dock>
+  - <xref:System.Windows.Forms.Control.Location>
+  - <xref:System.Windows.Forms.Control.TabIndex>
+  - <xref:System.Windows.Forms.Control.TabStop>
+  - <xref:System.Windows.Forms.Control.TopLevelControl>
+  - <xref:System.Windows.Forms.Control.Visible>
 
 您也無法設定<xref:System.Windows.Forms.Control.Left>或<xref:System.Windows.Forms.Control.Top>與 Word 文件上的文字對齊的 Windows Form 控制項的屬性。 Windows Form 控制項加入與下列案例中的文字對齊：
 
@@ -74,7 +74,7 @@ Windows Form 控制項通常會對相同的行為 Office 文件上 Windows 表�
 |-------------------|----------------|
 |控制項定位順序|您無法透過在 Excel 工作表或 Word 文件上放置控制項的索引標籤。|
 |控制項群組|您無法使用<xref:System.Windows.Forms.GroupBox>包含 Office 文件上的其他控制項的控制項。 當您將多個選項按鈕直接加入文件時，不是互斥的選項按鈕。 您可以撰寫程式碼，讓選項按鈕是互斥的;不過，慣用的方法是新增至使用者控制項的選項按鈕，然後將使用者控制項加入文件。 如需詳細資訊，請參閱 Word 控制項範例或 Excel 控制項範例： [Office 程式開發範例和逐步解說](../vsto/office-development-samples-and-walkthroughs.md)。|
-|控制項類型|文件上使用的 Windows Form 控制項中所提供的類別包裝[!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]的 Excel 工作表或 Word 文件提供的控制項特定的其他功能。 例如，如果您有** 按鈕**控制項上的 Excel 工作表，請務必將類型指定為<xref:Microsoft.Office.Tools.Excel.Controls.Button>而非<xref:System.Windows.Forms.Button>參考，或將物件轉型時。|
+|控制項類型|文件上使用的 Windows Form 控制項中所提供的類別包裝[!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]的 Excel 工作表或 Word 文件提供的控制項特定的其他功能。 例如，如果您有 **按鈕** 控制項上的 Excel 工作表，請務必將類型指定為<xref:Microsoft.Office.Tools.Excel.Controls.Button>而非<xref:System.Windows.Forms.Button>參考，或將物件轉型時。|
 |控制項位置和大小|大小和控制項的位置取決於屬性屬於的 ActiveX 控制項的容器。 ActiveX 控制項的屬性會採用不同的值，比 Windows Forms 控制項的對等的屬性。 當您設定`Top`， `Left`， `Height`，或`Width`控制項的屬性，其測量單位是點，而不是像素為單位。|
 |Word 文件上的控制項位置|如果您將控制項加入流程為基礎的版面配置時，請記住，控制項會使用內容流動內容的變更。 您無法控制項錨定至段落時您將它從拖曳**工具箱**因為控制項加入 Word 文件，與文字對齊。 如果您使用另一種方法來新增控制項，例如按兩下控制項，會將控制項插入根據您已設定為插入圖片的 [Word] 選項。<br /><br /> 您無法設定`Left`或`Top`是內嵌於文字控制項的屬性。<br /><br /> 您無法將控制項放在頁首或頁尾中，或在子文件。|
 |控制項事件|選取控制項時，它會引發事件，以下列順序：<br /><br /> 1.  `Enter`<br />2.  `GotFocus`<br /><br /> 取消選取控制項，它會引發事件，以下列順序：<br /><br /> 1.  `Leave`<br />2.  `Validating`<br />3.  `Validated`<br />4.  `LostFocus`|

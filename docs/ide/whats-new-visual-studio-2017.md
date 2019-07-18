@@ -12,16 +12,18 @@ ms.assetid: 7307e180-ba28-4774-8a43-cbb980085a71
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.prod: visual-studio-dev15
+ms.prod: visual-studio-windows
+ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: c87bba495353bec059c6edc7a394f991e81b39bc
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+monikerRange: vs-2017
+ms.openlocfilehash: eabfb7ffd365ab377bc80997138a4f3368db488d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58195056"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62583352"
 ---
 # <a name="whats-new-in-visual-studio-2017"></a>Visual Studio 2017 的新功能
 
@@ -30,7 +32,7 @@ ms.locfileid: "58195056"
 想要從舊版 Visual Studio 升級嗎？ 以下是 Visual Studio 2017 能為您提供的內容：適用於任何開發人員、任何應用程式及任何平台的卓越生產力。 您可使用 Visual Studio 2017 來開發適用於 Android、iOS、Windows、Linux、Web 及雲端的應用程式。 快速編碼、輕鬆偵錯及診斷、頻繁測試，然後自信地發行。 您也可以建置自己的擴充功能來擴充和自訂 Visual Studio 。 使用版本控制、變得敏捷、使用這個版本有效率地共同作業！
 
 >[!div class="button"]
->[下載 Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)
+>[下載 Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)
 
 以下是自舊版 Visual Studio 2015 以來，我們所做變更的高階回顧：
 
@@ -369,9 +371,11 @@ Visual Studio 正在移動其擴充功能 (同時也在處理協力廠商擴充�
 
 想深入了解 Visual Studio 2017 中還包含哪些內容嗎？ 請參閱 [Visual Studio 路程圖](/visualstudio/productinfo/vs2018-roadmap)頁面。
 
+而且別忘了查看最新版本中， [Visual Studio 2019](whats-new-visual-studio-2019.md)。
+
 ## <a name="contact-us"></a>與我們連絡
 
- 為什麼要傳送意見反應給 Visual Studio 小組？ 我們極為重視客戶的意見反應。 它們是我們進步的動力。
+為什麼要傳送意見反應給 Visual Studio 小組？ 我們極為重視客戶的意見反應。 它們是我們進步的動力。
 
 如果您想為我們提供改善 Visual Studio 的建議，或是深入了解產品支援選項，請參閱 [[告訴我們]](talk-to-us.md) 頁面。
 

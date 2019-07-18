@@ -13,11 +13,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.openlocfilehash: ad181171bf56ef5c0591f86115419003e005a235
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 945743c430bf2cd39e08db691c97d78dd7af1899
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38943310"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "68146663"
 ---
 XAML

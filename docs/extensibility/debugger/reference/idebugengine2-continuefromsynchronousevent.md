@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEngine2::ContinueFromSynchronousEvent
 ms.assetid: 9a57dfcd-df8e-4be5-b1fe-bd853e3c6bb2
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 87b484a1f8e2a116bd6cae288be7cc295c1a93e5
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 32dc338f2f2ff99d6aaff6dbd728fa3dd7fc9b84
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56711835"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66330154"
 ---
 # <a name="idebugengine2continuefromsynchronousevent"></a>IDebugEngine2::ContinueFromSynchronousEvent
 工作階段的偵錯管理員 (SDM)，表示同步的偵錯事件，先前傳送給 SDM，偵錯引擎 (DE) 已收到並處理呼叫。
@@ -36,10 +39,9 @@ HRESULT ContinueFromSynchronousEvent(
 );
 ```
 
-#### <a name="parameters"></a>參數
-`pEvent`
-
- [in][IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)物件，代表從中偵錯工具現在應該會繼續先前傳送同步事件。
+## <a name="parameters"></a>參數
+`pEvent`\
+[in][IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)物件，代表從中偵錯工具現在應該會繼續先前傳送同步事件。
 
 ## <a name="return-value"></a>傳回值
 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

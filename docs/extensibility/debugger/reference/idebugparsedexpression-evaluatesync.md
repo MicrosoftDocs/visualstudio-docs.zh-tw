@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugParsedExpression::EvaluateSync method
 ms.assetid: 0ea04cfa-de87-4b6c-897e-4572c1a28942
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ea659b847149a6abb2c3a5ba7cc947a59c7ae41c
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: aac58831224a6bebadd625dad72177f2aec3fc76
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56709638"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66311817"
 ---
 # <a name="idebugparsedexpressionevaluatesync"></a>IDebugParsedExpression::EvaluateSync
 這個方法會評估剖析的運算式，並選擇性地將轉換成另一個資料類型的結果。
@@ -48,34 +51,27 @@ int EvaluateSync(
 );
 ```
 
-#### <a name="parameters"></a>參數
- `dwEvalFlags`
+## <a name="parameters"></a>參數
+`dwEvalFlags`\
+[in]組合[EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md)控制要如何評估運算式的常數。
 
- [in]組合[EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md)控制要如何評估運算式的常數。
+`dwTimeout`\
+[in]指定的時間上限，以毫秒為單位，從這個方法返回之前等候。 使用`INFINITE`無限期等候。
 
- `dwTimeout`
+`pSymbolProvider`\
+[in]符號提供者，以表示[IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)介面。
 
- [in]指定的時間上限，以毫秒為單位，從這個方法返回之前等候。 使用`INFINITE`無限期等候。
+`pAddress`\
+[in]在方法中，以表示目前的執行位置[IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)介面。
 
- `pSymbolProvider`
+`pBinder`\
+[in]繫結器，以表示[IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)介面。
 
- [in]符號提供者，以表示[IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)介面。
+`bstrResultType`\
+[in]結果的類型應該轉換成。 這個引數可以是 null 值。
 
- `pAddress`
-
- [in]在方法中，以表示目前的執行位置[IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)介面。
-
- `pBinder`
-
- [in]繫結器，以表示[IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)介面。
-
- `bstrResultType`
-
- [in]結果的類型應該轉換成。 這個引數可以是 null 值。
-
- `ppResult`
-
- [out]傳回[IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)介面，表示評估的結果。
+`ppResult`\
+[out]傳回[IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)介面，表示評估的結果。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

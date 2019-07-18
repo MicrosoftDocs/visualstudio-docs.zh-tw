@@ -1,14 +1,9 @@
 ---
-title: 程式碼分析應用程式錯誤 |Microsoft Docs
-ms.custom: ''
+title: 程式碼分析應用程式錯誤
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 helpviewer_keywords:
 - errors [Visual Studio ALM], code analysis
 - code analysis, errors
@@ -18,13 +13,13 @@ ms.assetid: d8fd9475-ac9b-4085-b5a3-b0c807922cac
 caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
-manager: wpickett
-ms.openlocfilehash: 66d611903c71cc526c01c1062c85ceef2e7975f5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 1af00ebc2f6fdc1bc32a5a6784b88068d4e3ffb2
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49225013"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65693388"
 ---
 # <a name="code-analysis-application-errors"></a>程式碼分析應用程式錯誤
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +44,7 @@ ms.locfileid: "49225013"
 |[CA0062](ca0062.md)|規則 '*RuleId*'中的規則集所參考的'*RuleSetName*' 找不到。|
 |[CA0063](ca0063.md)|無法載入規則集檔案或其相依的規則集檔案。|
 |[CA0064](ca0064.md)|不執行任何分析，因為指定的規則集未包含任何 FxCop 規則。|
-|[CA0065](ca0065.md)|不支援的中繼資料建構： 類型 '*TypeName*'包含的屬性和具有相同名稱的欄位'*PropertyFieldName*'|
+|[CA0065](ca0065.md)|不支援的中繼資料建構：類型 '*TypeName*'包含的屬性和具有相同名稱的欄位'*PropertyFieldName*'|
 |[CA0066](ca0066.md)|值 '*VersionID*' 提供給 **/targetframeworkversion**不是可辨識的版本。|
 |[CA0067](ca0067.md)|找不到目錄。|
 |[CA0068](ca0068.md)|偵錯目標組件，找不到資訊 *'AssemblyName'*。|
@@ -57,14 +52,13 @@ ms.locfileid: "49225013"
 |[CA0070](ca0070.md)|無法載入組件或類型，因為安全性權限。|
 |[CA0501](ca0501.md)|無法讀取輸出報告。|
 |[CA0502](ca0502.md)|不支援的語言。|
-|[CA0503](ca0503.md))|Deprectated 屬性。 使用 superceding 屬性|
+|[CA0503](ca0503.md)|屬性已被取代。 使用 superceding 屬性|
 |[CA0504](ca0504.md)|已忽略規則目錄，因為它不存在|
-|[CA0505](ca0505.md)|Deprectated 屬性。 使用 superceding 屬性|
+|[CA0505](ca0505.md)|屬性已被取代。 使用 superceding 屬性|
 |[FxCopCmd 錯誤](fxcopcmd-errors.md)|Managed 程式碼分析錯誤。|
-|[Code Analysis Policy Errors](../code-quality/code-analysis-policy-errors.md)|程式碼分析簽入原則錯誤。|
 
 ## <a name="related-sections"></a>相關章節
 
-- [撰寫安全程式碼的指導方針](http://msdn.microsoft.com/en-us/9892fd19-45cd-44b6-9fa8-10f1b5cb6ea4)
+- [撰寫安全程式碼的指導方針](https://msdn.microsoft.com/9892fd19-45cd-44b6-9fa8-10f1b5cb6ea4)
 - [分析 Managed 程式碼品質](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)
-- [應用程式生命週期管理工具 中的錯誤疑難排解資源](http://msdn.microsoft.com/library/76ca8f76-1e2d-4b55-89e2-bd59e4abe74c)
+- [應用程式生命週期管理工具 中的錯誤疑難排解資源](https://msdn.microsoft.com/library/76ca8f76-1e2d-4b55-89e2-bd59e4abe74c)

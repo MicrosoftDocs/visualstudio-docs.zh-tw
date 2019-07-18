@@ -1,14 +1,9 @@
 ---
-title: CA1010： 集合應該實作泛型介面 |Microsoft Docs
-ms.custom: ''
+title: CA1010:集合應該實作泛型介面 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1010
 - CollectionsShouldImplementGenericInterface
@@ -20,14 +15,14 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 80cd80e1bd86d3cee0c943e387e3ecb4e82b1943
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 930e80530b10449c0a2e0d740d97e20f4b0cc5b5
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49939159"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704283"
 ---
-# <a name="ca1010-collections-should-implement-generic-interface"></a>CA1010：集合應該實作泛型介面
+# <a name="ca1010-collections-should-implement-generic-interface"></a>CA1010:集合應該實作泛型介面
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -43,20 +38,20 @@ ms.locfileid: "49939159"
 ## <a name="rule-description"></a>規則描述
  若要放寬集合的可用性，請實作其中一個泛型集合介面。 之後可以使用集合填入泛型集合類型，如下所示：
 
--   <xref:System.Collections.Generic.List%601?displayProperty=fullName>
+- <xref:System.Collections.Generic.List%601?displayProperty=fullName>
 
--   <xref:System.Collections.Generic.Queue%601?displayProperty=fullName>
+- <xref:System.Collections.Generic.Queue%601?displayProperty=fullName>
 
--   <xref:System.Collections.Generic.Stack%601?displayProperty=fullName>
+- <xref:System.Collections.Generic.Stack%601?displayProperty=fullName>
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
  若要修正此規則的違規情形，請實作其中一個下列的泛型集合介面：
 
--   <xref:System.Collections.Generic.IEnumerable%601?displayProperty=fullName>
+- <xref:System.Collections.Generic.IEnumerable%601?displayProperty=fullName>
 
--   <xref:System.Collections.Generic.ICollection%601?displayProperty=fullName>
+- <xref:System.Collections.Generic.ICollection%601?displayProperty=fullName>
 
--   <xref:System.Collections.Generic.IList%601?displayProperty=fullName>
+- <xref:System.Collections.Generic.IList%601?displayProperty=fullName>
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
  安全地隱藏的警告，這項規則;不過，集合會有更多限制的使用。
@@ -92,22 +87,19 @@ ms.locfileid: "49939159"
  [!code-csharp[FxCop.Design.CollectionsGenericInterface#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.CollectionsGenericInterface/cs/FxCop.Design.CollectionsGenericInterface.cs#1)]
 
 ## <a name="related-rules"></a>相關的規則
- [CA1005：避免在泛型型別上包含過多參數](../code-quality/ca1005-avoid-excessive-parameters-on-generic-types.md)
+ [CA1005:避免在泛型類型上的過多參數](../code-quality/ca1005-avoid-excessive-parameters-on-generic-types.md)
 
- [CA1000：不要在泛型型別上宣告靜態成員](../code-quality/ca1000-do-not-declare-static-members-on-generic-types.md)
+ [CA1000:不要在泛型類型上宣告靜態成員](../code-quality/ca1000-do-not-declare-static-members-on-generic-types.md)
 
- [CA1002：不要公開泛型清單](../code-quality/ca1002-do-not-expose-generic-lists.md)
+ [CA1002:不要公開泛型清單](../code-quality/ca1002-do-not-expose-generic-lists.md)
 
- [CA1006：不要在成員簽章中巢狀化泛型類型](../code-quality/ca1006-do-not-nest-generic-types-in-member-signatures.md)
+ [CA1006:無法建立巢狀成員簽章中的泛型型別](../code-quality/ca1006-do-not-nest-generic-types-in-member-signatures.md)
 
- [CA1004：泛型方法應該提供類型參數](../code-quality/ca1004-generic-methods-should-provide-type-parameter.md)
+ [CA1004:泛型方法應該提供型別參數](../code-quality/ca1004-generic-methods-should-provide-type-parameter.md)
 
- [CA1003：必須使用一般事件處理常式執行個體](../code-quality/ca1003-use-generic-event-handler-instances.md)
+ [CA1003： 必須使用一般事件處理常式執行個體](../code-quality/ca1003-use-generic-event-handler-instances.md)
 
- [CA1007：建議在適當時使用泛型](../code-quality/ca1007-use-generics-where-appropriate.md)
+ [CA1007:在適當時使用泛型](../code-quality/ca1007-use-generics-where-appropriate.md)
 
 ## <a name="see-also"></a>另請參閱
- [泛型](http://msdn.microsoft.com/library/75ea8509-a4ea-4e7a-a2b3-cf72482e9282)
-
-
-
+ [泛型](https://msdn.microsoft.com/library/75ea8509-a4ea-4e7a-a2b3-cf72482e9282)

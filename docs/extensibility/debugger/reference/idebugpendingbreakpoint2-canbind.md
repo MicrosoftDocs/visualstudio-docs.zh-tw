@@ -8,17 +8,20 @@ helpviewer_keywords:
 - IDebugPendingBreakpoint2::CanBind method
 - CanBind method
 ms.assetid: 84a2b189-ccf1-467e-8fab-0c0da68f0b91
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 23c0db65c257547bd57e6382e6da806a852ea367
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: c9325d8a0c8ee39aec6f8ceccb5bbb894eef2163
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56694032"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66311725"
 ---
 # <a name="idebugpendingbreakpoint2canbind"></a>IDebugPendingBreakpoint2::CanBind
 判斷這個暫止中斷點可以繫結到程式碼的位置。
@@ -37,10 +40,9 @@ int CanBind ( 
 );
 ```
 
-#### <a name="parameters"></a>參數
- `ppErrorEnum`
-
- [out]傳回[IEnumDebugErrorBreakpoints2](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2.md)物件，其中包含一份[IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md)物件 如果可能有錯誤。
+## <a name="parameters"></a>參數
+`ppErrorEnum`\
+[out]傳回[IEnumDebugErrorBreakpoints2](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2.md)物件，其中包含一份[IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md)物件 如果可能有錯誤。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK.`會傳回`S_FALSE`中斷點無法繫結，如果在此情況下會傳回的錯誤`ppErrorEnum`參數。 否則會傳回錯誤碼。 傳回`E_BP_DELETED`如果中斷點已遭刪除。

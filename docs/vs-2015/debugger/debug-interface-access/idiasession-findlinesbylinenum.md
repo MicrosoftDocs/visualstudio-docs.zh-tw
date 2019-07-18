@@ -1,14 +1,9 @@
 ---
-title: 'Idiasession:: Findlinesbylinenum |Microsoft Docs'
-ms.custom: ''
+title: IDiaSession::findLinesByLinenum | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 76d5622d-9a91-4c2a-a98f-263af5d1daef
 caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 5e3210dc974914779a8bff032ead3159c72535b0
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: d7ef4ab516bffbc13f47616c2f20fdd71cac38b0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51787571"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63418343"
 ---
 # <a name="idiasessionfindlinesbylinenum"></a>IDiaSession::findLinesByLinenum
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -44,16 +39,16 @@ HRESULT findLinesByLinenum ( 
   
 #### <a name="parameters"></a>參數  
  `compiland`  
- [in][IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)物件，表示要在其中搜尋的行號編譯模組。 此參數不得為`NULL`。  
+ [in][IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)物件，表示要在其中搜尋的行號編譯模組。 這個參數不可以是 `NULL`。  
   
  `file`  
- [in][IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)物件，表示要搜尋原始程式檔。 此參數不得為`NULL`。  
+ [in][IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)物件，表示要搜尋原始程式檔。 這個參數不可以是 `NULL`。  
   
  `linenum`  
  [in]指定以一為基的行號。  
   
 > [!NOTE]
->  您無法使用零來指定所有行 (使用[idiasession:: Findlines](../../debugger/debug-interface-access/idiasession-findlines.md)方法來尋找所有行)。  
+> 您無法使用零來指定所有行 (使用[idiasession:: Findlines](../../debugger/debug-interface-access/idiasession-findlines.md)方法來尋找所有行)。  
   
  `column`  
  [in]指定的資料行編號。 使用指定的所有資料行的零。 資料行是一條線的位元組位移。  
@@ -107,9 +102,6 @@ void ShowLinesInCompilands(IDiaSession *pSession, LPCOLESTR filename)
 ## <a name="see-also"></a>另請參閱  
  [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)   
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
- [Idiasession:: Findlinesbyaddr](../../debugger/debug-interface-access/idiasession-findlinesbyaddr.md)   
+ [IDiaSession::findLinesByAddr](../../debugger/debug-interface-access/idiasession-findlinesbyaddr.md)   
  [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)   
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
-
-
-

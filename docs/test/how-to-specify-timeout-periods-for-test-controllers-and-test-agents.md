@@ -11,12 +11,12 @@ ms.assetid: 777d0db5-0073-458a-a2a3-58b1c1f24c60
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5d05ed422f5d08a1a8c7d4f1b2444d9b751aafaf
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 5e703ca3e1770d92a2dc01402acaaba0b4988e92
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55929228"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62970626"
 ---
 # <a name="how-to-specify-timeout-periods-for-test-controllers-and-test-agents"></a>HOW TO：指定測試控制器和測試代理程式的逾時期間
 
@@ -26,18 +26,18 @@ ms.locfileid: "55929228"
 
 若要編輯測試控制器或測試代理程式的各種逾時設定，請使用下表中的機碼名稱和值修改下列組態檔：
 
--   測試控制器：*QTController.exe.config*
+- 測試控制器：*QTController.exe.config*
 
-    |機碼名稱|描述|值|
+    |機碼名稱|說明|值|
     |-|-----------------|-|
     |AgentConnectionTimeoutInSeconds|在連接被視為遺失之前候代理程式 Ping 要求的秒數。|"n" 秒。|
     |AgentSyncTimeoutInSeconds|當您啟動同步處理的測試回合時，在中止回合之前等候所有代理程式同步的秒數。|"n" 秒。|
     |AgentInitializeTimeout|在中止測試回合之前，等候所有代理程式及其資料收集器於測試回合開始時初始化的秒數。 如果使用資料收集器，這個值應該適度大。|"n" 秒。 預設："120" (兩分鐘)。|
     |AgentCleanupTimeout|在完成測試回合之前等候所有代理程式及其資料收集器清除的秒數。 如果使用資料收集器，這個值應該適度大。|"n" 秒。 預設："120" (2 分鐘)。|
 
--   測試代理程式：*QTAgentService.exe.config*
+- 測試代理程式：*QTAgentService.exe.config*
 
-    |機碼名稱|描述|值|
+    |機碼名稱|說明|值|
     |-|-----------------|-|
     |ControllerConnectionPeriodInSeconds|對控制器之連接嘗試的相隔秒數。|"n" 秒。 預設："30" (30 秒)。|
     |RemotingTimeoutSeconds|遠端呼叫可存留的最大時間 (以秒為單位)。|"n" 秒。 預設："600" (10 分鐘)。|
@@ -117,5 +117,4 @@ ms.locfileid: "55929228"
 - [安裝和設定測試代理程式](../test/lab-management/install-configure-test-agents.md)
 - [修改負載測試記錄設定](../test/modify-load-test-logging-settings.md)
 - [設定測試控制器和測試代理程式的連接埠](../test/configure-ports-for-test-controllers-and-test-agents.md)
-- [如何：指定記錄檔的大小上限](../test/how-to-specify-the-maximum-size-for-the-log-file.md)
 - [如何：將測試控制器或測試代理程式繫結至網路介面卡](../test/how-to-bind-a-test-controller-or-test-agent-to-a-network-adapter.md)

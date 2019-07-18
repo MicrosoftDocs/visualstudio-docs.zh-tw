@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: fa965caf63dad6e81e2aeabbc93e97c7aa4b7a80
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ef7b693a881aaa1457004c84968ebc80936fc2b2
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55910866"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66714855"
 ---
 # <a name="ca1403-auto-layout-types-should-not-be-com-visible"></a>CA1403:自動配置類型不應該是 COM 可見
 
@@ -39,7 +39,7 @@ ms.locfileid: "55910866"
 
 ## <a name="rule-description"></a>規則描述
 
-<xref:System.Runtime.InteropServices.LayoutKind> 配置類型是由通用語言執行平台管理。 這些類型的配置可以變更版本之間的.NET Framework 中，這會中斷 COM 用戶端預期特定的版面配置。 如果<xref:System.Runtime.InteropServices.StructLayoutAttribute>未指定屬性，指定 C#、 Visual Basic 和 c + + 編譯器[實](<xref:System.Runtime.InteropServices.LayoutKind.Auto>)實值型別。
+<xref:System.Runtime.InteropServices.LayoutKind> 配置類型是由通用語言執行平台管理。 這些類型的配置可以變更版本之間的.NET，而中斷 COM 用戶端預期特定的版面配置。 如果<xref:System.Runtime.InteropServices.StructLayoutAttribute>未指定屬性，則C#，Visual Basic 中，和C++指定編譯器[實](<xref:System.Runtime.InteropServices.LayoutKind.Auto>)實值型別。
 
 除非已標記，否則所有的公用、 非泛型型別為 COM 可見，而所有的非公用和泛型型別看不到 com。 不過，以減少誤判，此規則需要明確指示類型的 COM 的可視性。 包含組件必須標記為<xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName>設定為`false`且型別必須標示有<xref:System.Runtime.InteropServices.ComVisibleAttribute>設定為`true`。
 

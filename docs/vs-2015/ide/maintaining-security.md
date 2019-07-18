@@ -17,11 +17,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: b99db8a9e1f34bc724059ff9cbf2a065df39e78f
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57872825"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68186097"
 ---
 # <a name="maintaining-security"></a>維護安全性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

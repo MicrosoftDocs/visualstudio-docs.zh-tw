@@ -11,18 +11,18 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c5160c79e2c8dae474927e6af7ebdc9e371e9edc
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56703223"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62849556"
 ---
 # <a name="general-tab-window-properties-dialog-box"></a>視窗屬性對話方塊、一般索引標籤
 使用**一般**索引標籤，以顯示選取的視窗的相關資訊。 若要顯示[視窗中 [屬性] 對話方塊中](../debugger/window-properties-dialog-box.md)，焦點移至[Windows 檢視](../debugger/windows-view.md)視窗。 在樹狀目錄中，選取視窗的任何節點，然後選擇**屬性**從**檢視**功能表。
 
  下列設定位於**一般** 索引標籤：
 
-|進入|說明|
+|進入|描述|
 |-----------|-----------------|
 |[視窗標題]|文字在視窗的標題或包含在一個視窗中，如果它是控制項的文字。|
 |[視窗控制代碼]|此視窗的唯一識別碼。 視窗控制代碼數字會重複使用;它們可以識別視窗只會針對該視窗的存留期。|

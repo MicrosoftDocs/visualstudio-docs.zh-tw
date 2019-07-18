@@ -20,12 +20,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: d568434e8820ef11e0f2b75ba2409d7b643cc011
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.openlocfilehash: 9aca29de7e9c5a01e0c2caad2c42015cd31b3f75
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955904"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62565182"
 ---
 # <a name="turn-off-constraints-while-filling-a-dataset"></a>填入資料集時關閉條件約束
 
@@ -38,16 +38,16 @@ ms.locfileid: "55955904"
 
 ## <a name="to-suspend-update-constraints-programmatically"></a>若要以程式設計方式暫停更新條件約束
 
--   下列範例示範如何暫時關閉條件約束檢查的資料集：
+- 下列範例示範如何暫時關閉條件約束檢查的資料集：
 
      [!code-csharp[VbRaddataEditing#10](../data-tools/codesnippet/CSharp/turn-off-constraints-while-filling-a-dataset_1.cs)]
      [!code-vb[VbRaddataEditing#10](../data-tools/codesnippet/VisualBasic/turn-off-constraints-while-filling-a-dataset_1.vb)]
 
 ## <a name="to-suspend-update-constraints-using-the-dataset-designer"></a>若要暫停使用 Dataset 設計工具的更新條件約束
 
-1.  在 **DataSet 設計工具**中開啟資料集。 如需詳細資訊，請參閱 <<c0> [ 逐步解說： 以 Dataset 設計工具建立資料集](walkthrough-creating-a-dataset-with-the-dataset-designer.md)。
+1. 在 **DataSet 設計工具**中開啟資料集。 如需詳細資訊，請參閱[逐步解說：在 Dataset 設計工具中建立資料集](walkthrough-creating-a-dataset-with-the-dataset-designer.md)。
 
-2.  在 [屬性]  視窗中，將 <xref:System.Data.DataSet.EnforceConstraints%2A> 屬性設定為 `false`。
+2. 在 [屬性]  視窗中，將 <xref:System.Data.DataSet.EnforceConstraints%2A> 屬性設定為 `false`。
 
 ## <a name="see-also"></a>另請參閱
 

@@ -1,12 +1,9 @@
 ---
 title: 偵錯 T4 文字範本 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - text templates, troubleshooting
 - text templates, debugging
@@ -14,13 +11,13 @@ ms.assetid: 0877fdf2-20bf-42da-b3cc-4c5856b80821
 caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: f299b89f7f59cbfc043bb77e6e56c3e5fac22d16
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 08e74dbb5fefcdaa0959690c7eb1633bca2a8bc6
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49298905"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68164570"
 ---
 # <a name="debugging-a-t4-text-template"></a>偵錯 T4 文字範本
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,7 +53,7 @@ ms.locfileid: "49298905"
 ## <a name="warning-descriptions-and-fixes"></a>警告的說明和修正程式  
  如果有的話下, 表將列出最常見的警告，以及修正。  
   
-|警告訊息|描述|方案|  
+|警告訊息|說明|方案|  
 |---------------------|-----------------|--------------|  
 |載入 include 檔 '{0}' 傳回 null 或空字串。|如果包含的文字範本檔案是空白，就會發生。 此訊息會提供包含檔案的檔案名稱。|移除 include 指示詞，或確定檔案有一些內容。|  
 |正在編譯轉換：|前面加上此字串，以所有的錯誤或編譯的轉換時，來自編譯器的警告。 這個字串表示，編譯器會擲回錯誤或警告。|如果您有問題，找出 DLL 時，您可能需要提供的完整路徑或完整的強式名稱，如果 DLL 是在 GAC 中。|  
@@ -84,6 +81,3 @@ ms.locfileid: "49298905"
 |處理指示詞時擲回的例外狀況 '{0}'。|指示詞處理器在處理指示詞時，會擲回例外狀況時發生。|請務必指示詞處理器的參數正確無誤。|  
 |主應用程式擲回例外狀況，正在嘗試解析組件參考 '{0}'。|發生於主應用程式在嘗試解析組件參考時，會擲回例外狀況。 此訊息會提供組件參考的字串。|組件參考來自\<@# assembly #> 指示詞和指示詞處理器。 請務必在組件參數中提供的 'name' 參數正確無誤。|  
 |嘗試將指定不支援{1}的值 '{0}' 指示詞 {2}|發生 RequiresProvidesDirectiveProcessor （全部從它衍生我們產生的指示詞處理器），當您提供不支援要求和提供引數。|請務必，name = 中的名稱 'value' 組中提供要求，並提供參數是否正確。|
-
-
-

@@ -1,14 +1,9 @@
 ---
 title: 'Idiaenumsymbols:: Skip |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: e601fbc9-b10b-41c7-8180-959e57efabe8
 caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 30f8c8e52212a94d5897b0e3ee8a5d85ed94a988
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: e7a6a3f06572392cad2edbf125d0ff6491b508c9
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51738515"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62563698"
 ---
 # <a name="idiaenumsymbolsskip"></a>IDiaEnumSymbols::Skip
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -47,6 +42,3 @@ HRESULT Skip ( 
   
 ## <a name="see-also"></a>另請參閱  
  [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)
-
-
-

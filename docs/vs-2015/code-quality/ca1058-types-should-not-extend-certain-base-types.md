@@ -1,14 +1,9 @@
 ---
-title: CA1058： 類型不應該擴充特定基底類型 |Microsoft Docs
-ms.custom: ''
+title: CA1058:類型不應該擴充特定基底類型 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - TypesShouldNotExtendCertainBaseTypes
 - CA1058
@@ -20,14 +15,14 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 0a4ffbe3b359f2c58f8e301b9176981a2037c17f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1ce67a70b6cbe955ef13bf6475a672bcbb687d95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49912431"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68200455"
 ---
-# <a name="ca1058-types-should-not-extend-certain-base-types"></a>CA1058：類型不應該擴充特定的基底類型
+# <a name="ca1058-types-should-not-extend-certain-base-types"></a>CA1058:類型不應該擴充特定基底類型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -40,21 +35,21 @@ ms.locfileid: "49912431"
 ## <a name="cause"></a>原因
  外部可見的類型會延伸某些基底類型 (Base Type)。 目前，此規則會回報衍生自下列類型的類型：
 
--   <xref:System.ApplicationException?displayProperty=fullName>
+- <xref:System.ApplicationException?displayProperty=fullName>
 
--   <xref:System.Xml.XmlDocument?displayProperty=fullName>
+- <xref:System.Xml.XmlDocument?displayProperty=fullName>
 
--   <xref:System.Collections.CollectionBase?displayProperty=fullName>
+- <xref:System.Collections.CollectionBase?displayProperty=fullName>
 
--   <xref:System.Collections.DictionaryBase?displayProperty=fullName>
+- <xref:System.Collections.DictionaryBase?displayProperty=fullName>
 
--   <xref:System.Collections.Queue?displayProperty=fullName>
+- <xref:System.Collections.Queue?displayProperty=fullName>
 
--   <xref:System.Collections.ReadOnlyCollectionBase?displayProperty=fullName>
+- <xref:System.Collections.ReadOnlyCollectionBase?displayProperty=fullName>
 
--   <xref:System.Collections.SortedList?displayProperty=fullName>
+- <xref:System.Collections.SortedList?displayProperty=fullName>
 
--   <xref:System.Collections.Stack?displayProperty=fullName>
+- <xref:System.Collections.Stack?displayProperty=fullName>
 
 ## <a name="rule-description"></a>規則描述
  針對[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]第 1 版中，會建議衍生新的例外狀況，從<xref:System.ApplicationException>。 建議變更和新的例外狀況應該衍生自<xref:System.Exception?displayProperty=fullName>或其中一個子類別中<xref:System>命名空間。
@@ -93,6 +88,3 @@ public class MyReadOnlyCollection : ReadOnlyCollection<T>
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
  請勿隱藏這項規則違規警告有關<xref:System.ApplicationException>。 安全地隱藏這項規則違規警告有關<xref:System.Xml.XmlDocument>。 它可安全地隱藏非泛型集合有關的警告，如果先前發行的程式碼。
-
-
-

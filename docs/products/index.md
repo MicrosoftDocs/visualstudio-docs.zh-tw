@@ -4,7 +4,14 @@ hide_bc: true
 title: Visual Studio 產品 | Microsoft Docs
 description: 探索 Visual Studio 產品系列。
 ms.topic: landing-page
+ms.date: 07/02/2019
 searchScope: []
+ms.openlocfilehash: 41dd59cf67be1a476707a7ed3a18a263132fbfca
+ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67586779"
 ---
 <!-- markdownlint-disable MD033 -->
 <div id="main" class="v2">
@@ -24,7 +31,7 @@ searchScope: []
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img data-scaleimage="./images/vs-ide.svg" src="./images/vs-ide.svg" alt="" />
+                                                        <img data-scaleimage="./images/vs-ide-2019.svg" src="./images/vs-ide-2019.svg" alt="Visual Studio 2019 logo" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -43,12 +50,12 @@ searchScope: []
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img data-scaleimage="./images/vs-mac.svg" src="./images/vs-mac.svg" alt="" />
+                                                        <img data-scaleimage="./images/vs-mac-2019.svg" src="./images/vs-mac-2019.svg" alt="Visual Studio for Mac" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Visual Studio for Mac</h3>
-                                                    <p>使用 Mac 為雲端、iOS、Android、macOS 與穿戴式裝置建置應用程式和遊戲。</p>
+                                                    <p>使用 .NET 開發適用於 iOS、Android、電腦、和 Web 的應用程式與遊戲。</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -61,8 +68,8 @@ searchScope: []
                                         <div class="cardPadding">
                                             <div class="card">
                                                 <div class="cardImageOuter">
-                                                    <div class="cardImage">
-                                                        <img data-scaleimage="./images/vs-code.svg" src="./images/vs-code.svg" alt="" />
+                                                    <div class="cardImage"> 
+                                                        <img data-scaleimage="./images/vs-code-logo.svg" src="./images/vs-code-logo.svg" alt="Visual Studio Code" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -81,7 +88,7 @@ searchScope: []
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img data-scaleimage="./images/vs-mobile-center.svg" src="./images/vs-mobile-center.svg" alt="" />
+                                                        <img data-scaleimage="./images/vs-mobile-center.svg" src="./images/vs-mobile-center.svg" alt="Visual Studio App Center" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -100,7 +107,7 @@ searchScope: []
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img data-scaleimage="./images/vs-subscription-temp.svg" src="./images/vs-subscription-temp.svg" alt="" />
+                                                        <img data-scaleimage="./images/vs-subscription-temp.svg" src="./images/vs-subscription-temp.svg" alt="Visual Studio Subscriptions" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -119,7 +126,7 @@ searchScope: []
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img data-scaleimage="./images/vs-team-services.svg" src="./images/vs-team-services.svg" alt="" />
+                                                        <img data-scaleimage="./images/vs-team-services.svg" src="./images/vs-team-services.svg" alt="Azure DevOps Services - formerly Visual Studio Team Services (VSTS)" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -138,7 +145,7 @@ searchScope: []
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img data-scaleimage="./images/vs-team-services.svg" src="./images/vs-team-services.svg" alt="" />
+                                                        <img data-scaleimage="./images/vs-team-services.svg" src="./images/vs-team-services.svg" alt="Azure DevOps Server - formerly Team Foundation Server (TFS)" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">

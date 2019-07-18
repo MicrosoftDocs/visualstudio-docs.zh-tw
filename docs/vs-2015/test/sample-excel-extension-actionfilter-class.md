@@ -9,11 +9,11 @@ caps.latest.revision: 13
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 86c1dda46ed0e62649a576a12c9f9e48561ec891
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54767840"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68158169"
 ---
 # <a name="sample-excel-extension-actionfilter-class"></a>範例 Excel 延伸模組：ActionFilter 類別
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "54767840"
 ## <a name="private-methods"></a>私用方法  
  `IsLeftClick` 方法會判斷提供的動作是否代表按下滑鼠左鍵。 `AreActionsOnSameExcelCell` 方法會判斷兩個提供的動作是否在 Excel 中的同一個儲存格上執行。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter>   
  <xref:Microsoft.VisualStudio.TestTools.UITest.Common.IUITestActionStack>   
  [擴充自動程式化 UI 測試和動作記錄以支援 Microsoft Excel](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md)

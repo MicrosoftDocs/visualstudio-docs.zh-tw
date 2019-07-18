@@ -1,5 +1,5 @@
 ---
-title: 工作流程設計工具-工作流程設計工具中的鍵盤快速鍵
+title: 工作流程設計工具：鍵盤快速鍵
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c8d86c206eca3ecb1e1fc43e9540485cd83f93a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b2026c61d05425f0f0d48a9fb722c62f760fcba2
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55918425"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825515"
 ---
 # <a name="keyboard-shortcuts-in-the-workflow-designer"></a>工作流程設計中的鍵盤快速鍵
 
@@ -57,13 +57,13 @@ ms.locfileid: "55918425"
 
 - 若要連接活動：
 
-    1.  使用 Tab 鍵選取來源活動。
+    1. 使用 Tab 鍵選取來源活動。
 
-    2.  視需要按幾次 CTRL+E、M，將鍵盤焦點移至目的地活動。
+    2. 視需要按幾次 CTRL+E、M，將鍵盤焦點移至目的地活動。
 
-    3.  按 CTRL+E、S 將目的地活動加入至選取範圍。
+    3. 按 CTRL+E、S 將目的地活動加入至選取範圍。
 
-    4.  按 CTRL+E、F 加入從來源到目的地的連接線。
+    4. 按 CTRL+E、F 加入從來源到目的地的連接線。
 
 有關使用鍵盤連接活動的附註：
 
@@ -79,11 +79,11 @@ ms.locfileid: "55918425"
 
 - 下列命令的快速鍵重新對應將不會有任何作用。 編輯運算式時，您只能使用預設的快速鍵存取這些命令。
 
-   - 剪下
-   - 複製
-   - 貼上
-   - 全選
-   - 復原
-   - 取消復原
+  - 剪下
+  - 複製
+  - 貼上
+  - 全選
+  - 復原
+  - 取消復原
 
 - 若要重新對應 Visual Studio 中的工作流程設計工具中的運算式編輯命令的鍵盤快速鍵，編輯工作流程設計工具的範圍中的快速鍵。 在 [文字編輯器] 範圍內所做的變更會自動不適用於工作流程設計工具。 如果兩個地方的快速鍵都要重新對應，您必須套用這些變更兩次 (兩個範圍各一次)。

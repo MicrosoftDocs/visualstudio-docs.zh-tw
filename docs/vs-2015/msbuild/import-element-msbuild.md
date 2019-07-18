@@ -19,17 +19,16 @@ caps.latest.revision: 32
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b7aee698498fa59c4dc6fee66f89b496f8b21f34
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 9f8edefc8e097f7ada67041b807231f594774548
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54804036"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433548"
 ---
 # <a name="import-element-msbuild"></a>Import 項目 (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 將某個專案檔的內容匯入至另一個專案檔。  
   
  \<Project>  
@@ -53,11 +52,11 @@ ms.locfileid: "54804036"
 |`Condition`|選擇性屬性。<br /><br /> 要評估的條件。 如需詳細資訊，請參閱[條件](../msbuild/msbuild-conditions.md)。|  
   
 ### <a name="child-elements"></a>子元素  
- 無  
+ None  
   
 ### <a name="parent-elements"></a>父項目  
   
-|元素|描述|  
+|項目|描述|  
 |-------------|-----------------|  
 |[專案](../msbuild/project-element-msbuild.md)|[!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 專案檔案的必要根項目。|  
 |[ImportGroup](../msbuild/importgroup-element.md)|包含群組在選擇性條件下方的 `Import` 項目集合。|  
@@ -76,9 +75,9 @@ ms.locfileid: "54804036"
  匯入之專案的結構描述與標準專案的結構描述完全相同。 雖然 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 可能可以建置匯入的專案，但是無法達成，因為匯入的專案通常不會包含要設定之屬性或目標執行順序的相關資訊。 匯入的專案取決於匯入它以提供該資訊的專案。  
   
 > [!NOTE]
->  雖然條件式匯入陳述式可在命令列 MSBuilds 中運作，但是在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 整合式開發環境 (IDE) 中無法與 MSBuild 搭配運作。 條件式匯入是使用載入專案時所設定的組態與平台值進行評估。 如果後續變更需要重新評估專案檔中的條件 (例如，變更平台)，則 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 會重新評估屬性和項目的條件，但匯入時不會重新評估。 因為不會重新評估條件式匯入，所以會略過匯入。  
+> 雖然條件式匯入陳述式可在命令列 MSBuilds 中運作，但是在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 整合式開發環境 (IDE) 中無法與 MSBuild 搭配運作。 條件式匯入是使用載入專案時所設定的組態與平台值進行評估。 如果後續變更需要重新評估專案檔中的條件 (例如，變更平台)，則 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 會重新評估屬性和項目的條件，但匯入時不會重新評估。 因為不會重新評估條件式匯入，所以會略過匯入。  
 >   
->  若要解決這個問題，請將條件式匯入放到 .targets 檔案中，或將程式碼放到條件式區塊中 (例如 [Choose Element (MSBuild)](../msbuild/choose-element-msbuild.md) 區塊)。  
+> 若要解決這個問題，請將條件式匯入放到 .targets 檔案中，或將程式碼放到條件式區塊中 (例如 [Choose Element (MSBuild)](../msbuild/choose-element-msbuild.md) 區塊)。  
   
 ## <a name="wildcards"></a>萬用字元  
  在 .NET Framework 4 中，MSBuild 允許在 Project 屬性中使用萬用字元。 有萬用字元時，會排序所有找到的相符項目 (適用於重現性)，然後依該順序進行匯入，就像已明確設定順序一樣。  
@@ -115,6 +114,6 @@ ms.locfileid: "54804036"
 </Project>  
 ```  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [專案檔案結構描述參考](../msbuild/msbuild-project-file-schema-reference.md)   
- [如何：使用多個專案檔內相同的目標](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md)
+ [如何：在多個專案檔中使用相同的目標](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md)

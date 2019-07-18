@@ -1,14 +1,9 @@
 ---
-title: CA2233： 運算應該不發生溢位 |Microsoft Docs
-ms.custom: ''
+title: CA2233:運算不應該發生溢位 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - OperationsShouldNotOverflow
 - CA2233
@@ -20,14 +15,14 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 5f6690f6577d936757ae3bbe8b725b4434b6bee1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0531a739ec00c3e6224ef5caa7b1c0bf71f0e4e4
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49836654"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697942"
 ---
-# <a name="ca2233-operations-should-not-overflow"></a>CA2233：運算不應該發生溢位
+# <a name="ca2233-operations-should-not-overflow"></a>CA2233:運算不應該發生溢位
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -82,7 +77,7 @@ Public Shared Sub Main()
 End Sub
 ```
 
-### <a name="output"></a>輸出
+### <a name="output"></a>Output
 
 ```
 2147483647
@@ -112,14 +107,11 @@ End Sub
 
  **若要開啟 檢查算術溢位/反向溢位在 C#**
 
-1.  在 **方案總管**，以滑鼠右鍵按一下您的專案，然後選擇**屬性**。
+1. 在 **方案總管**，以滑鼠右鍵按一下您的專案，然後選擇**屬性**。
 
-2.  選取 [建置] 索引標籤，然後按一下 [進階]。
+2. 選取 [建置] 索引標籤，然後按一下 [進階]。
 
-3.  選取 **檢查算術溢位/反向溢位**然後按一下**確定**。
+3. 選取 **檢查算術溢位/反向溢位**然後按一下**確定**。
 
 ## <a name="see-also"></a>另請參閱
- <xref:System.OverflowException?displayProperty=fullName> [C# 運算子](http://msdn.microsoft.com/library/0301e31f-22ad-49af-ac3c-d5eae7f0ac43) [Checked 與 Unchecked](http://msdn.microsoft.com/library/a84bc877-2c7f-4396-8735-1ce97c42f35e)
-
-
-
+ <xref:System.OverflowException?displayProperty=fullName> [C# 運算子](https://msdn.microsoft.com/library/0301e31f-22ad-49af-ac3c-d5eae7f0ac43) [Checked 與 Unchecked](https://msdn.microsoft.com/library/a84bc877-2c7f-4396-8735-1ce97c42f35e)

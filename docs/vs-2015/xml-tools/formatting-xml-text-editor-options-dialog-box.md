@@ -1,41 +1,35 @@
 ---
 title: 格式、 XML、 文字編輯器、 選項對話方塊 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: bb539b3a-027c-4b2f-906e-403e0e22ba8d
 caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 5c8379393dd5327359789f8621cf67ed55e89209
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 588bf415a801a9244cd9a046e0c503c0b238db58
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49256668"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63417408"
 ---
 # <a name="formatting-xml-text-editor-options-dialog-box"></a>格式化、XML、文字編輯器 (選項對話方塊)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 此對話方塊可讓您指定 XML 編輯器的格式化設定。 您可以存取**選項**對話方塊中，從**工具**功能表。  
   
 > [!NOTE]
->  這些設定都是當您選取**文字編輯器**資料夾中， **XML**資料夾，然後**格式化**選項**選項**  對話方塊。  
+> 這些設定都是當您選取**文字編輯器**資料夾中， **XML**資料夾，然後**格式化**選項**選項**  對話方塊。  
   
 ## <a name="attributes"></a>屬性  
- **保留手動屬性格式化**  
+ **保留手動屬性的格式**  
  不重新格式化屬性。 這是預設值。  
   
 > [!NOTE]
->  如果屬性跨多行，則編輯器會將屬性的每一行縮排，以符合父項目的縮排。  
+> 如果屬性跨多行，則編輯器會將屬性的每一行縮排，以符合父項目的縮排。  
   
  **將每個屬性在各自的行上對齊**  
  垂直對齊第二個屬性及後續屬性，使其符合第一個屬性的縮排。 下列 XML 文字為如何對齊屬性的範例。  
@@ -51,7 +45,7 @@ ms.locfileid: "49256668"
  **從剪貼簿貼上**  
  重新格式化從剪貼簿貼上的 XML 文字。  
   
- **結束標記完成時**  
+ **結束標記完成**  
  結束標記完成時重新格式化項目。  
   
 ## <a name="mixed-content"></a>混合內容  
@@ -70,6 +64,3 @@ ms.locfileid: "49256668"
 ## <a name="see-also"></a>另請參閱  
  [屬性視窗、 XML 文件屬性](../xml-tools/xml-document-properties-properties-window.md)   
  [XML 編輯器元件](../xml-tools/xml-editor-components.md)
-
-
-

@@ -17,17 +17,16 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9a5d07c374e75bd7f042f466f13fc5727241e252
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: eae8a32d4587b71f238c023d08a1328ce83ba37d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54780998"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431383"
 ---
 # <a name="how-to-reference-the-name-or-location-of-the-project-file"></a>如何：參考專案檔的名稱或位置
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 您可以在專案檔中使用專案的名稱或位置，而不需建立自己的屬性。 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 提供保留的屬性，來參考專案檔的名稱和其他專案相關的屬性。 如需保留屬性的詳細資訊，請參閱 [MSBuild 保留和已知屬性](../msbuild/msbuild-reserved-and-well-known-properties.md)。  
   
 ## <a name="using-the-msbuildprojectname-property"></a>使用 MSBuildProjectName 屬性  
@@ -46,7 +45,7 @@ ms.locfileid: "54780998"
   使用保留屬性的一個優點是，會自動併入對專案檔名所做的任何變更。 當您下一次建置專案時，輸出檔將具備新名稱，而您不需採取任何進一步動作。  
   
 > [!NOTE]
->  您無法在專案檔中重新定義保留的屬性。  
+> 您無法在專案檔中重新定義保留的屬性。  
   
 ## <a name="example"></a>範例  
  下列範例專案檔會參考專案名稱做為保留的屬性，來指定輸出的名稱。  

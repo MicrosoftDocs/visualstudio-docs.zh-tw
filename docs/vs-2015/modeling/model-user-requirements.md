@@ -1,12 +1,9 @@
 ---
 title: 模型使用者需求 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - requirements
 - stories
@@ -15,18 +12,18 @@ ms.assetid: 359900f8-6d69-493d-bfdf-2c9069c74a26
 caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: ab92a08aa7359aa4393b3356384a4ccc352afb27
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 8b1d3a5209490c253f4646210d4eeeda9d807155
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51776482"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63417806"
 ---
 # <a name="model-user-requirements"></a>模型使用者需求
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio 透過繪製使用者活動的圖表，以及系統協助他們達到其目標所扮演的角色，幫助您了解、討論和溝通使用者需求。 需求模型是這些圖表的其中一組，各著重於使用者需求的不同層面。 如需視訊示範，請參閱︰ [Modeling the Business Domain](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-3-Modeling-the-Business-Domain/)(模型化商務網域)。  
+Visual Studio 透過繪製使用者活動的圖表，以及系統協助他們達到其目標所扮演的角色，幫助您了解、討論和溝通使用者需求。 需求模型是這些圖表的其中一組，各著重於使用者需求的不同層面。 如需影片示範，請參閱：[模型化商務網域](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-3-Modeling-the-Business-Domain/)。  
   
  若要查看支援各類型之模型的 Visual Studio 版本，請參閱 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。  
   
@@ -49,7 +46,7 @@ Visual Studio 透過繪製使用者活動的圖表，以及系統協助他們達
   如果您使用需求模型來聚焦與使用者或其業務人員的討論，並在每次重複的開頭重新瀏覽該討論，則需求模型提供最大的好處。 撰寫程式碼之前，您不需要詳細地完成它。 局部運作的應用程式 (即使極為簡化) 通常會構成使用者需求討論的最生動基礎。 模型是彙總這些討論結果的有效方法。 如需詳細資訊，請參閱 <<c0> [ 在開發程序中使用模型](../modeling/use-models-in-your-development-process.md)。  
   
 > [!NOTE]
->  在這些主題中，「系統」表示您正在開發的系統或應用程式。 它可能是許多軟體和硬體元件的大型集合、單一應用程式或較大系統內的軟體元件。 在每種情況下，需求模型都會描述可在系統外部看到的行為 (不論是透過使用者介面或 API)。  
+> 在這些主題中，「系統」表示您正在開發的系統或應用程式。 它可能是許多軟體和硬體元件的大型集合、單一應用程式或較大系統內的軟體元件。 在每種情況下，需求模型都會描述可在系統外部看到的行為 (不論是透過使用者介面或 API)。  
   
 ## <a name="common-tasks"></a>一般工作  
  您可以建立數個不同的使用者需求檢視。  每個檢視都提供特定類型的資訊。  建立這些檢視時，最好經常切換使用不同的檢視。 您可以從任何檢視開始。  
@@ -65,7 +62,7 @@ Visual Studio 透過繪製使用者活動的圖表，以及系統協助他們達
   
  請注意，大部分的圖表類型都可以用於其他用途。 如需圖表類型的概觀，請參閱 <<c0> [ 建立應用程式模型](../modeling/create-models-for-your-app.md)。 如需繪製圖表的基本資訊，請參閱[編輯 UML 模型和圖表](../modeling/edit-uml-models-and-diagrams.md)。  
   
-##  <a name="UseCases"></a> 描述如何使用您的系統  
+## <a name="UseCases"></a> 描述如何使用您的系統  
  建立使用案例圖，以描述系統使用者和其系統用途。 使用案例代表系統使用者的目標，以及他們執行以達到目標的程序。  
   
  例如，線上餐點銷售系統必須允許客人從菜單選擇品項，而且必須允許供應餐廳更新菜單。 您可以在使用案例圖中彙整這項資訊：  
@@ -92,11 +89,11 @@ Visual Studio 透過繪製使用者活動的圖表，以及系統協助他們達
   
 |深入了解|讀取|  
 |--------------------|----------|  
-|如何建立使用案例的更多詳細資訊|[UML 使用案例圖：方針](../modeling/uml-use-case-diagrams-guidelines.md)|  
-|使用案例圖上的項目|[UML 使用案例圖：參考](../modeling/uml-use-case-diagrams-reference.md)|  
+|如何建立使用案例的更多詳細資訊|[UML 使用案例圖表：方針](../modeling/uml-use-case-diagrams-guidelines.md)|  
+|使用案例圖上的項目|[UML 使用案例圖表：參考](../modeling/uml-use-case-diagrams-reference.md)|  
 |如何透過使用案例開發程式碼|[建立應用程式架構的模型](../modeling/model-your-app-s-architecture.md)|  
   
-##  <a name="RequirementsClasses"></a> 定義用來描述需求的詞彙  
+## <a name="RequirementsClasses"></a> 定義用來描述需求的詞彙  
  您可以使用 UML 類別圖，協助您開發用於下列用途之商務概念的一致詞彙：  
   
 - 由使用者自行討論系統運作的商務。  
@@ -141,9 +138,9 @@ Visual Studio 透過繪製使用者活動的圖表，以及系統協助他們達
 |概念性類別圖上的項目|[UML 類別圖表：參考](../modeling/uml-class-diagrams-reference.md)|  
 |如何透過概念性類別開發程式碼|[建立應用程式架構的模型](../modeling/model-your-app-s-architecture.md)|  
   
- 在概念性類別圖中，通常不適合將箭號放在關聯上來代表巡覽性。 原因是圖表不代表實作。 關聯代表真實世界物件之間的關聯性。 下列 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 擴充功能會將非方向性箭號設為預設值： [Sample: UML Domain Modeling features](http://go.microsoft.com/fwlink/?LinkId=213849)(範例：UML 網域模型功能)。  
+ 在概念性類別圖中，通常不適合將箭號放在關聯上來代表巡覽性。 原因是圖表不代表實作。 關聯代表真實世界物件之間的關聯性。 下列[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]延伸模組會將非方向性箭號的預設值：[範例：UML 網域模型功能](http://go.microsoft.com/fwlink/?LinkId=213849)。  
   
-##  <a name="BusinessRules"></a> Showing Business Rules  
+## <a name="BusinessRules"></a> Showing Business Rules  
  商務規則是未與特定使用案例相關聯的需求，而且應該會在系統中觀察到。  
   
  許多商務規則是概念性類別間之關聯性的條件約束。 您可以撰寫這些*靜態商務規則*做為概念性類別圖上的相關類別相關聯的註解。 例如:   
@@ -164,7 +161,7 @@ Visual Studio 透過繪製使用者活動的圖表，以及系統協助他們達
 |概念性類別圖上的項目|[UML 類別圖表：參考](../modeling/uml-class-diagrams-reference.md)|  
 |如何開發遵守商務規則的程式碼|[建立應用程式架構的模型](../modeling/model-your-app-s-architecture.md)|  
   
-##  <a name="QoSRequirements"></a> Describing Quality of Service Requirements  
+## <a name="QoSRequirements"></a> Describing Quality of Service Requirements  
  有數種類別的服務需求品質。 包括下列各項：  
   
 - 效能  
@@ -185,11 +182,10 @@ Visual Studio 透過繪製使用者活動的圖表，以及系統協助他們達
   
 |深入了解|讀取|  
 |--------------------|----------|  
-|記錄服務品質需求的更多詳細資訊|[定義服務需求品質的方針](http://msdn.microsoft.com/en-us/9677a437-c2cb-4ac4-8c2d-4e3350005f06)|  
 |將其他文件附加至使用案例|[將使用案例連結到文件與圖表](../modeling/link-a-use-case-to-documents-and-diagrams.md)|  
 |如何開發遵守服務需求品質的程式碼|[建立應用程式架構的模型](../modeling/model-your-app-s-architecture.md)|  
   
-##  <a name="Workflow"></a> 顯示使用者與系統之間的工作流程  
+## <a name="Workflow"></a> 顯示使用者與系統之間的工作流程  
  您可以使用活動圖示範不同使用案例之間的工作流程。 繪製示範使用者在系統內外部所執行之主要工作的活動圖，這十分適用於開始需求模型。  
   
  例如:   
@@ -210,7 +206,7 @@ Visual Studio 透過繪製使用者活動的圖表，以及系統協助他們達
 |活動圖上的項目|[UML 活動圖表：參考](../modeling/uml-activity-diagrams-reference.md)|  
 |如何透過活動圖開發程式碼|[建立應用程式架構的模型](../modeling/model-your-app-s-architecture.md)|  
   
-##  <a name="Sequences"></a> 顯示使用者與系統之間的互動  
+## <a name="Sequences"></a> 顯示使用者與系統之間的互動  
  您可以使用循序圖來示範系統與外部行動之間或系統不同組件之間的訊息交換。 這提供極清楚顯示互動序列的使用案例中步驟的檢視。 在使用案例中有數個互動方以及系統具有 API 的情況下，循序圖特別有用。  
   
  例如:   
@@ -247,11 +243,8 @@ Visual Studio 透過繪製使用者活動的圖表，以及系統協助他們達
  [透過模型開發測試](../modeling/develop-tests-from-a-model.md)   
  [在您的開發程序中使用模型](../modeling/use-models-in-your-development-process.md)   
  [您的應用程式架構模型](../modeling/model-your-app-s-architecture.md)   
- [範例 VS 擴充功能︰ UML 網域模型功能](http://go.microsoft.com/fwlink/?LinkId=213849)   
- [範例 VS 擴充功能： 依據造型色彩 UML 項目](http://go.microsoft.com/fwlink/?LinkID=213841)   
- [範例 VS 擴充功能︰ UML 項目連結至圖表、 檔案和其他項目](http://go.microsoft.com/fwlink/?LinkID=213813)   
- [範例 VS 擴充功能： 對齊 UML 圖表上的圖形](http://go.microsoft.com/fwlink/?LinkID=213809)   
- [視訊︰ 模型化商務網域](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-3-Modeling-the-Business-Domain/)
-
-
-
+ [範例 VS 擴充功能：UML 網域模型功能](http://go.microsoft.com/fwlink/?LinkId=213849)   
+ [範例 VS 擴充功能：色彩依據造型將 UML 項目](http://go.microsoft.com/fwlink/?LinkID=213841)   
+ [範例 VS 擴充功能：UML 項目連結至圖表、 檔案和其他項目](http://go.microsoft.com/fwlink/?LinkID=213813)   
+ [範例 VS 擴充功能：UML 圖表上對齊圖形](http://go.microsoft.com/fwlink/?LinkID=213809)   
+ [影片：模型化商務網域](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-3-Modeling-the-Business-Domain/)

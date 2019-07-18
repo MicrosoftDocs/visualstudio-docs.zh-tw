@@ -1,26 +1,21 @@
 ---
-title: CA3076： 不安全的 XSLT 指令碼執行 |Microsoft Docs
-ms.custom: ''
+title: CA3076:不安全的 XSLT 指令碼執行 |Microsoft Docs
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 ms.assetid: 53cb7a46-c564-488f-bc51-0e210a7853c9
 caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 39aebc0e7681b139e021c48c12a87d4b060cc7af
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0a6b1efa5b5ee84092531a67421d03583afc3578
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49911469"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65680724"
 ---
-# <a name="ca3076-insecure-xslt-script-execution"></a>CA3076：不安全的 XSLT 指令碼執行
+# <a name="ca3076-insecure-xslt-script-execution"></a>CA3076:不安全的 XSLT 指令碼執行
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -31,18 +26,18 @@ ms.locfileid: "49911469"
 |中斷變更|非中斷|
 
 ## <a name="cause"></a>原因
- 如果您在 .NET 應用程式中以不安全的方式執行 [Extensible Stylesheets Language Transformations (XSLT) (可延伸樣式表語言轉換 (XSLT))](https://support.microsoft.com/en-us/kb/313997) ，處理器可能會 [解析不受信任的 URI 參考](http://msdn.microsoft.com/en-us/ba3e4d4f-1ee7-4226-a51a-78a1f1b5bd8a) ，而這些參考可能會將機密資訊洩漏給攻擊者，導致拒絕服務和跨網站攻擊。
+ 如果您在 .NET 應用程式中以不安全的方式執行 [Extensible Stylesheets Language Transformations (XSLT) (可延伸樣式表語言轉換 (XSLT))](https://support.microsoft.com/kb/313997) ，處理器可能會 [解析不受信任的 URI 參考](https://msdn.microsoft.com/ba3e4d4f-1ee7-4226-a51a-78a1f1b5bd8a) ，而這些參考可能會將機密資訊洩漏給攻擊者，導致拒絕服務和跨網站攻擊。
 
 ## <a name="rule-description"></a>規則描述
- [XSLT](http://msdn.microsoft.com/en-us/6377ce5f-3c45-42a6-b7a9-ec8da588b60c) 是全球資訊網協會 (W3C) 針對 XML 資料轉換的一項標準。 XSLT 通常用來撰寫可將 XML 資料轉換為其他格式的樣式表，例如 HTML、固定長度的文字、以逗號分隔的文字或不同的 XML 格式。 雖然預設為禁止使用，您仍可以針對專案選擇啟用此項目。
+ [XSLT](https://msdn.microsoft.com/6377ce5f-3c45-42a6-b7a9-ec8da588b60c) 是全球資訊網協會 (W3C) 針對 XML 資料轉換的一項標準。 XSLT 通常用來撰寫可將 XML 資料轉換為其他格式的樣式表，例如 HTML、固定長度的文字、以逗號分隔的文字或不同的 XML 格式。 雖然預設為禁止使用，您仍可以針對專案選擇啟用此項目。
 
  若要確保您不會公開受攻擊面，此規則會觸發每當 XslCompiledTransform。<xref:System.Xml.Xsl.XslCompiledTransform.Load%2A> 接收的不安全組合執行個體<xref:System.Xml.Xsl.XsltSettings>和<xref:System.Xml.XmlResolver>，可讓惡意指令碼處理。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
 
--   不安全的 XsltSettings 引數取代為 XsltSettings。<xref:System.Xml.Xsl.XsltSettings.Default%2A> 或執行個體的已停用文件函式和指令碼執行。
+- 不安全的 XsltSettings 引數取代為 XsltSettings。<xref:System.Xml.Xsl.XsltSettings.Default%2A> 或執行個體的已停用文件函式和指令碼執行。
 
--   將 <xref:System.Xml.XmlResolver> 引數取代為 null 或 <xref:System.Xml.XmlSecureResolver> 執行個體。
+- 將 <xref:System.Xml.XmlResolver> 引數取代為 null 或 <xref:System.Xml.XmlSecureResolver> 執行個體。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
  如果您無法確定輸入是否來自受信任的來源，請不要隱藏這個警告的規則。
@@ -142,6 +137,3 @@ namespace TestNamespace
     }
 }
 ```
-
-
-

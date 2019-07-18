@@ -3,19 +3,19 @@ title: 編輯 Python 程式碼
 description: 對於 Python，Visual Studio 可提供豐富的 IntelliSense、程式碼片段及導覽功能，還有格式設定、Linting 和重構。
 ms.date: 03/13/2019
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 0c7091a55487f83c88323d68ae8075630d39d471
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: b111d3b0fe2f4af9098186aff3ef661045215473
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58155520"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62959140"
 ---
 # <a name="edit-python-code"></a>編輯 Python 程式碼
 
@@ -31,9 +31,9 @@ ms.locfileid: "58155520"
 
 IntelliSense 提供[自動完成](#completions)、[簽章說明](#signature-help)、[快速諮詢](#quick-info)和[程式碼著色](#code-coloring)。 Visual Studio 2017 15.7 版和更新版本也支援[類型提示](#type-hints)。
 
-為了改善效能，**Visual Studio 2017 15.5 版**及較早版本中的 IntelliSense 會仰賴為您專案中的每個 Python 環境所產生的完成資料庫。 如果新增、移除或更新套件，資料庫可能需要重新整理。 資料庫狀態會顯示在 [IntelliSense] 索引標籤上的 [Python 環境] 視窗中 ([方案總管] 的同層級) (請參閱[環境視窗參考](python-environments-window-tab-reference.md#intellisense-tab))。
+為了改善效能，Visual Studio 2017 15.5 版及較舊版本中之 IntelliSense 會仰賴為您專案中每個 Python 環境所產生的完成資料庫。 如果新增、移除或更新套件，資料庫可能需要重新整理。 資料庫狀態會顯示在 [IntelliSense] 索引標籤上的 [Python 環境] 視窗中 ([方案總管] 的同層級) (請參閱[環境視窗參考](python-environments-window-tab-reference.md#intellisense-tab))。
 
-**Visual Studio 2017 15.6 版**及更新版本會使用不同的方式，來在不仰賴資料庫的情況下為 IntelliSense 提供完成。
+Visual Studio 2017 15.6 版及更新版本會使用不同的方式，在不仰賴資料庫的情況下為 IntelliSense 提供完成。
 
 ### <a name="completions"></a>自動完成
 

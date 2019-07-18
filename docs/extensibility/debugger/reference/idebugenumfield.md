@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEnumField interface
 ms.assetid: 42f685bf-0f39-47f4-98b0-6022efe2bf97
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4e2bcb8f8562b5b20231879d46c64eb73af027f0
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 14ea4834619d9e28d4b8a15206b3ea9411f50017
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56679992"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66345113"
 ---
 # <a name="idebugenumfield"></a>IDebugEnumField
 這個介面表示列舉型別。

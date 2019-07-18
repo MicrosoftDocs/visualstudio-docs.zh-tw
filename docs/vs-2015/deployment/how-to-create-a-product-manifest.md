@@ -1,14 +1,9 @@
 ---
-title: 如何： 建立產品資訊清單 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：建立產品資訊清單 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -23,30 +18,30 @@ ms.assetid: 2d316aaa-8bc0-4ce5-90ab-23b3eac0b5dd
 caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: fc5662763e7932cc024169969801c9c321343e32
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 73e2c3f2c9736fd762a9e763827ed641ea5069f7
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49270084"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68153818"
 ---
-# <a name="how-to-create-a-product-manifest"></a>如何：建立產品資訊清單
+# <a name="how-to-create-a-product-manifest"></a>作法：建立產品資訊清單
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 若要部署您的應用程式的必要條件，您可以建立啟動載入器套件。 啟動載入器套件會包含單一產品資訊清單檔案的套件資訊清單但每個地區設定。 封裝資訊清單包含您的套件的當地語系化特定層面。 這包括字串、 使用者授權合約和語言套件。  
   
- 如需有關產品資訊清單的詳細資訊，請參閱[How to: Create a Package Manifest](../deployment/how-to-create-a-package-manifest.md)。  
+ 如需有關產品資訊清單的詳細資訊，請參閱[How to:建立封裝資訊清單](../deployment/how-to-create-a-package-manifest.md)。  
   
 ## <a name="creating-the-product-manifest"></a>建立產品資訊清單  
   
 #### <a name="to-create-the-product-manifest"></a>若要建立產品資訊清單  
   
-1.  建立啟動載入器套件目錄。 此範例使用 C:\package。  
+1. 建立啟動載入器套件目錄。 此範例使用 C:\package。  
   
-2.  在 Visual Studio 中建立新的 XML 檔案，稱為`product.xml`，並將它儲存到 C:\package 資料夾。  
+2. 在 Visual Studio 中建立新的 XML 檔案，稱為`product.xml`，並將它儲存到 C:\package 資料夾。  
   
-3.  新增下列 XML 來描述封裝的 XML 命名空間與產品程式碼。 產品程式碼取代封裝的唯一識別碼。  
+3. 新增下列 XML 來描述封裝的 XML 命名空間與產品程式碼。 產品程式碼取代封裝的唯一識別碼。  
   
     ```  
     <Product  
@@ -54,7 +49,7 @@ ms.locfileid: "49270084"
     ProductCode="Custom.Bootstrapper.Package">  
     ```  
   
-4.  加入指定的套件具有相依性的 XML。 此範例會使用相依性，Microsoft Windows Installer 3.1。  
+4. 加入指定的套件具有相依性的 XML。 此範例會使用相依性，Microsoft Windows Installer 3.1。  
   
     ```  
     <RelatedProducts>  
@@ -62,7 +57,7 @@ ms.locfileid: "49270084"
       </RelatedProducts>  
     ```  
   
-5.  加入 XML 以列出啟動載入器套件中的所有檔案。 此範例會使用封裝檔案名稱 CorePackage.msi。  
+5. 加入 XML 以列出啟動載入器套件中的所有檔案。 此範例會使用封裝檔案名稱 CorePackage.msi。  
   
     ```  
     <PackageFiles>  
@@ -70,16 +65,16 @@ ms.locfileid: "49270084"
     </PackageFiles>  
     ```  
   
-6.  檔案複製或移動 CorePackage.msi C:\package 資料夾。  
+6. 檔案複製或移動 CorePackage.msi C:\package 資料夾。  
   
-7.  加入 XML 以使用啟動載入器命令安裝套件。 啟動載入器會自動加入 **/qn**到.msi 檔中，將會以無訊息方式安裝的旗標。 如果是.exe 檔案，啟動載入器會使用殼層來執行.exe 檔案。 下列 XML 顯示 CorePackage.msi，沒有引數，但您可以將命令列引數放入引數屬性。  
+7. 加入 XML 以使用啟動載入器命令安裝套件。 啟動載入器會自動加入 **/qn**到.msi 檔中，將會以無訊息方式安裝的旗標。 如果是.exe 檔案，啟動載入器會使用殼層來執行.exe 檔案。 下列 XML 顯示 CorePackage.msi，沒有引數，但您可以將命令列引數放入引數屬性。  
   
     ```  
     <Commands>  
         <Command PackageFile="CorePackage.msi" Arguments="">  
     ```  
   
-8.  新增下列 XML 來檢查是否已安裝此啟動載入器套件。 產品程式碼取代為可轉散發元件的 GUID。  
+8. 新增下列 XML 來檢查是否已安裝此啟動載入器套件。 產品程式碼取代為可轉散發元件的 GUID。  
   
     ```  
     <InstallChecks>  
@@ -168,6 +163,3 @@ ms.locfileid: "49270084"
   
 ## <a name="see-also"></a>另請參閱  
  [產品和封裝結構描述參考](../deployment/product-and-package-schema-reference.md)
-
-
-

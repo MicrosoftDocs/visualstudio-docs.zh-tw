@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6bf47871b8b1c2e6f8e4f67bf26ba5f73ca078c7
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56625370"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62970014"
 ---
 # <a name="net-framework-usage-performance-rules"></a>.NET Framework 使用效能規則
 .Net Framework 使用類別中的效能規則會識別可最佳化的特定方法，也會識別較一般的使用模式 (例如記憶體回收和鎖定爭用)，以用於效能問題調查。

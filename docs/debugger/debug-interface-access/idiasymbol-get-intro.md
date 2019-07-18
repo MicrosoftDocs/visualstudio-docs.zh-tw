@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 153daa1f43ba4945a5eb32aea82c5d58ff57c5f6
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56613579"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "62836796"
 ---
 # <a name="idiasymbolgetintro"></a>IDiaSymbol::get_intro
 擷取指定函數是否為簡介的虛擬函式的旗標。
@@ -61,5 +61,5 @@ class B : public A {
 |標頭：|dia2.h|
 |版本:|DIA SDK v7.0|
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

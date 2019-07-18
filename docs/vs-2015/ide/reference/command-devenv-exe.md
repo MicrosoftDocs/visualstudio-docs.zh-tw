@@ -12,17 +12,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 317103b514a04ca149940513e4e70c2799037e62
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: a87be2f0b60b02588b5ba73e5837caca1b4bd8ab
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54775897"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685850"
 ---
 # <a name="command-devenvexe"></a>/Command (devenv.exe)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 在啟動 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 整合式開發環境 (IDE) 之後，執行指定的命令。  
   
 ## <a name="syntax"></a>語法  
@@ -38,7 +37,7 @@ devenv /command CommandName
 ## <a name="remarks"></a>備註  
  啟動完成後，IDE 會執行具名命令。 如果您使用此參數，IDE 在啟動時就不會顯示 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 起始頁。  
   
- 如果增益集公開某個命令，則可從命令列中使用此參數啟動增益集。 如需詳細資訊，請參閱[如何：使用增益集管理員來控制增益集](http://msdn.microsoft.com/library/4f60444a-cb48-4cdb-8df4-941f6419aeeb)。  
+ 如果增益集公開某個命令，則可從命令列中使用此參數啟動增益集。 如需詳細資訊，請參閱[如何：使用增益集管理員來控制增益集](https://msdn.microsoft.com/library/4f60444a-cb48-4cdb-8df4-941f6419aeeb)。  
   
 ## <a name="example"></a>範例  
  此範例會啟動 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 並自動執行巨集 Open Favorite Files。  

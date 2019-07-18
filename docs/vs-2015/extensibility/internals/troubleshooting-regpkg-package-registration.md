@@ -1,32 +1,27 @@
 ---
 title: RegPkg 封裝註冊進行疑難排解 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: troubleshooting
 helpviewer_keywords:
 - RegPkg
 ms.assetid: f33f822f-697a-4bad-9c10-554b4c8f6246
 caps.latest.revision: 16
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 936cfbcdf64ae678626668fd5b20dc4de56d0107
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 241975e475252a18d5e5a91c6e8c4fb40c067a95
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51722068"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441172"
 ---
 # <a name="troubleshooting-regpkg-package-registration"></a>針對 RegPkg 套件註冊進行疑難排解
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 > [!NOTE]
->  Visual Studio 中註冊套件的慣用的方法是使用.pkgdef 檔案。 這可讓擴充功能部署而不需要存取系統登錄。 使用建立 Pkgdef 檔案[CreatePkgDef 公用程式](../../extensibility/internals/createpkgdef-utility.md)。  
+> Visual Studio 中註冊套件的慣用的方法是使用.pkgdef 檔案。 這可讓擴充功能部署而不需要存取系統登錄。 使用建立 Pkgdef 檔案[CreatePkgDef 公用程式](../../extensibility/internals/createpkgdef-utility.md)。  
   
  使用中的 RegPkg 註冊封裝[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]，您必須使用 RegPkg 適用於您的套件版本。  
   
@@ -45,4 +40,3 @@ ms.locfileid: "51722068"
   
 ## <a name="see-also"></a>另請參閱  
  [發行產品](../../misc/releasing-a-visual-studio-integration-product.md)
-

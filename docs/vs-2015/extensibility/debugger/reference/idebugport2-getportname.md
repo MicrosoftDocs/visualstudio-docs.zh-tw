@@ -1,14 +1,9 @@
 ---
 title: IDebugPort2::GetPortName |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugPort2::GetPortName
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 4478b3d5-aa30-4105-8d05-e3bae2f8917a
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 6554401c010f66207841f757ec353fc66fcf7e2f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 25952355f77acb30587b7aab9820dfc1bed36507
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51727945"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68202906"
 ---
 # <a name="idebugport2getportname"></a>IDebugPort2::GetPortName
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -52,4 +47,3 @@ int GetPortName( 
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)
-

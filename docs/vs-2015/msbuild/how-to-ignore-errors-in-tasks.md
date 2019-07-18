@@ -12,17 +12,16 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4bac63523829c47b17821ff5905687bd76bbc57e
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 5025cc3e9dc0e13c3ae4658d129f5d0ac94f6fd6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54777027"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60062135"
 ---
 # <a name="how-to-ignore-errors-in-tasks"></a>如何：忽略工作中的錯誤
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 有時您會希望組建能夠容忍某些工作中的錯誤。 如果這些非關鍵性的工作失敗，您會想要讓組建繼續執行，因為它仍然可以產生所需的輸出。 例如，如果專案使用 `SendMail` 工作，在建置每個元件之後傳送電子郵件訊息，您可能會考慮，即使郵件伺服器無法使用且無法傳送狀態訊息，還是能夠接受組建繼續完成。 或者，例如，如果通常會在建置期間刪除中繼資料檔案，您可能會考慮，即使無法刪除這些檔案，還是能夠接受組建繼續完成。  
   
 ## <a name="using-the-continueonerror-attribute"></a>使用 ContinueOnError 屬性  
@@ -42,7 +41,7 @@ ms.locfileid: "54777027"
   
 #### <a name="to-ignore-an-error-in-a-task"></a>忽略工作中的錯誤  
   
--   使用工作的 `ContinueOnError` 屬性。 例如：  
+- 使用工作的 `ContinueOnError` 屬性。 例如：  
   
      `<Delete Files="@(Files)" ContinueOnError="WarnAndContinue"/>`  
   

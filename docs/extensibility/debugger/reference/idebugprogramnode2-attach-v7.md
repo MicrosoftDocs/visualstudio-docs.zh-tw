@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgramNode2::Attach_V7
 - IDebugProgramNode2::Attach
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 02022a4276da39fb863ccfed8ed02aa9d20f9c5c
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: a90b162476872700ee0ec69a3bb9e6e575e7862a
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56689963"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66351177"
 ---
 # <a name="idebugprogramnode2attachv7"></a>IDebugProgramNode2::Attach_V7
 
@@ -42,19 +45,16 @@ int Attach_V7 (
 );
 ```
 
-#### <a name="parameters"></a>參數
+## <a name="parameters"></a>參數
 
-`pMDMProgram`
+`pMDMProgram`\
+[in][IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)代表要附加至程式的介面。
 
- [in][IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)代表要附加至程式的介面。
+`pCallback`\
+[in][IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)介面，以用來將偵錯事件傳送到 SDM。
 
- `pCallback`
-
- [in][IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)介面，以用來將偵錯事件傳送到 SDM。
-
- `dwReason`
-
- [in]值，以從[ATTACH_REASON](../../../extensibility/debugger/reference/attach-reason.md)列舉，指定將附加的原因。
+`dwReason`\
+[in]值，以從[ATTACH_REASON](../../../extensibility/debugger/reference/attach-reason.md)列舉，指定將附加的原因。
 
 ## <a name="return-value"></a>傳回值
 

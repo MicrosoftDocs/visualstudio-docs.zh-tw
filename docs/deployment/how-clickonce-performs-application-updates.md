@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9217558c68d47ef8f2bf34b10db16463ee76f857
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56601274"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62900015"
 ---
 # <a name="how-clickonce-performs-application-updates"></a>ClickOnce 執行應用程式更新的方式
 ClickOnce 會使用應用程式的部署資訊清單中指定的檔案版本資訊，決定是否要更新應用程式的檔案。 更新開始之後，ClickOnce 使用一種叫做*修補檔案*以避免重複下載應用程式檔案。

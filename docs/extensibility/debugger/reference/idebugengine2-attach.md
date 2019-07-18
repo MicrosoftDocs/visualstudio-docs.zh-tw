@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEngine2::Attach
 ms.assetid: 173dcbda-5019-4c5e-bca9-a071838b5739
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ab1ea05511369d36b881afcaf7c161f796fd4925
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: bc70b27793e722db4a07107d419b383a76207322
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56678250"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66330161"
 ---
 # <a name="idebugengine2attach"></a>IDebugEngine2::Attach
 將偵錯引擎 (DE) 附加至程式或程式。 執行同處理序以 SDM DE 時，由工作階段的偵錯管理員 (SDM) 呼叫。
@@ -44,26 +47,21 @@ int Attach( 
 );
 ```
 
-#### <a name="parameters"></a>參數
- `pProgram`
+## <a name="parameters"></a>參數
+`pProgram`\
+[in]陣列[IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)代表要附加至程式的物件。 這些是連接埠的程式。
 
- [in]陣列[IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)代表要附加至程式的物件。 這些是連接埠的程式。
+`rgpProgramNodes`\
+[in]陣列[IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)代表程式節點，一個用於每個程式的物件。 此陣列中的程式節點代表相同的程式中`pProgram`。 程式節點會提供，以供 DE 識別所要附加至的程式。
 
- `rgpProgramNodes`
+`celtPrograms`\
+[in]程式和/或程式中的節點數目`pProgram`和`rgpProgramNodes`陣列。
 
- [in]陣列[IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)代表程式節點，一個用於每個程式的物件。 此陣列中的程式節點代表相同的程式中`pProgram`。 程式節點會提供，以供 DE 識別所要附加至的程式。
+`pCallback`\
+[in][IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)来用來將偵錯事件傳送到 SDM 物件。
 
- `celtPrograms`
-
- [in]程式和/或程式中的節點數目`pProgram`和`rgpProgramNodes`陣列。
-
- `pCallback`
-
- [in][IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)来用來將偵錯事件傳送到 SDM 物件。
-
- `dwReason`
-
- [in]值，以從[ATTACH_REASON](../../../extensibility/debugger/reference/attach-reason.md)列舉，指定附加這些程式的原因。 如需詳細資訊，請參閱＜備註＞一節。
+`dwReason`\
+[in]值，以從[ATTACH_REASON](../../../extensibility/debugger/reference/attach-reason.md)列舉，指定附加這些程式的原因。 如需詳細資訊，請參閱＜備註＞一節。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

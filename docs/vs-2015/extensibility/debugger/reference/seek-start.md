@@ -1,14 +1,9 @@
 ---
 title: SEEK_START |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - SEEK_START
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 55bd8901-626e-428b-a263-23b14417f4c6
 caps.latest.revision: 10
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 791bc722484519dec88bf40c1207de16cd15c516
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 45e664b153c4d643d8fbe8f1cefb207e0a76e18e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51773245"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68204883"
 ---
 # <a name="seekstart"></a>SEEK_START
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -74,12 +69,11 @@ public enum enum_SEEK_START { 
 ## <a name="requirements"></a>需求  
  標頭： msdbg.h  
   
- 命名空間： Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間：Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
  [列舉型別](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [搜尋](../../../extensibility/debugger/reference/idebugdisassemblystream2-seek.md)   
  [GetCurrentLocation](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcurrentlocation.md)
-

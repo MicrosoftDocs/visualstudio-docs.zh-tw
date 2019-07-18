@@ -1,27 +1,22 @@
 ---
-title: IDiaSymbol::get_samplerSlot |Microsoft Docs
-ms.custom: ''
+title: IDiaSymbol::get_samplerSlot | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 ms.assetid: 41c751ba-81be-4bd3-838f-8373fc146157
 caps.latest.revision: 6
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 94bf1b55fc389c4cc114aca55d811ba19e5d3805
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 5f63272f3824c801deb71f974f144e692b673cf6
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51775988"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "62431390"
 ---
 # <a name="idiasymbolgetsamplerslot"></a>IDiaSymbol::get_samplerSlot
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -44,6 +39,3 @@ HRESULT get_samplerSlot(
   
 ## <a name="see-also"></a>另請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
-
-
-

@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProperty2::GetExtendedInfo
 ms.assetid: 0c9c0b2b-7540-4424-adb5-fce7aa37a026
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cfe4b81f455f9efb5ee03b9c3db5f189cf19e176
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: acf070d6f00dcb4e775662a6fdc8c4c3d589ae85
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56681643"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66343170"
 ---
 # <a name="idebugproperty2getextendedinfo"></a>IDebugProperty2::GetExtendedInfo
 取得擴充屬性的資訊。
@@ -38,14 +41,12 @@ int GetExtendedInfo ( 
 );
 ```
 
-#### <a name="parameters"></a>參數
- `guidExtendedInfo`
+## <a name="parameters"></a>參數
+`guidExtendedInfo`\
+[in]決定要擷取的擴充資訊的類型的 GUID。 如需詳細資訊，請參閱 < 備註 >。
 
- [in]決定要擷取的擴充資訊的類型的 GUID。 如需詳細資訊，請參閱 < 備註 >。
-
- `pExtendedInfo`
-
- [out]傳回`VARIANT`（c + +） 或物件 (C#)，可用來擷取擴充的屬性的資訊。 比方說，這個參數可能會傳回`IUnknown`介面，可以查詢[IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md)介面。 如需詳細資訊，請參閱 < 備註 >。
+`pExtendedInfo`\
+[out]傳回`VARIANT`(C++) 或物件 (C#)，可用來擷取擴充的屬性的資訊。 比方說，這個參數可能會傳回`IUnknown`介面，可以查詢[IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md)介面。 如需詳細資訊，請參閱 < 備註 >。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則會傳回錯誤碼。 傳回`S_GETEXTENDEDINFO_NO_EXTENDEDINFO`如果擷取沒有延伸資訊。

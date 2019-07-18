@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - LocationField element [Visual Studio project templates]
 ms.assetid: 6aaaa155-6ce0-4f7f-aa50-8d63d7a7c992
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6dba30926b3afafae6cb32e159a98d4155438c08
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: b440595207cee6a146e6d85ee5e9f7c492ee3eee
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56679950"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66309175"
 ---
 # <a name="locationfield-element-visual-studio-project-templates"></a>LocationField 項目 （Visual Studio 專案範本）
 指定是否**位置**中的文字方塊**新的專案** 對話方塊中已啟用、 停用，或隱藏專案範本。
@@ -51,11 +51,11 @@ ms.locfileid: "56679950"
 
  有效的文字值如下：
 
--   `Enabled`其中指定**位置**的方塊**新的專案** 對話方塊中已啟用。
+- `Enabled`其中指定**位置**的方塊**新的專案** 對話方塊中已啟用。
 
--   `Disabled`其中指定**位置**的方塊**新的專案** 對話方塊中已停用。
+- `Disabled`其中指定**位置**的方塊**新的專案** 對話方塊中已停用。
 
--   `Hidden`其中指定**位置**的方塊**新的專案**隱藏的對話方塊。
+- `Hidden`其中指定**位置**的方塊**新的專案**隱藏的對話方塊。
 
 ## <a name="remarks"></a>備註
  預設值為 `Enabled`。

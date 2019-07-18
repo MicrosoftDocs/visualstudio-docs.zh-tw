@@ -1,7 +1,7 @@
 ---
 title: 撰寫視覺化檢視C#|Microsoft Docs
 ms.custom: seodec18
-ms.date: 08/01/2018
+ms.date: 04/12/2019
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -14,20 +14,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 45c80500e216041a444b1f6232d8c939132e413d
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
-ms.translationtype: MTE95
+ms.openlocfilehash: 4e99e0d3e8f212b2fdab52188b8c765610d9ac2f
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57323367"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67890929"
 ---
-# <a name="walkthrough-writing-a-visualizer-in-c"></a>逐步解說：在 C\# 中撰寫視覺化檢視
+# <a name="walkthrough-writing-a-visualizer-in-c"></a>逐步解說：在 C 中撰寫視覺化檢視\#
 本逐步解說顯示如何使用 C# 撰寫簡易的視覺化檢視。 您在本逐步解說中建立的視覺化檢視會使用 Windows 表單訊息方塊來顯示字串內容。 這個簡易字串視覺化檢視不是特別適用於本身，但它會顯示建立更有用的視覺化檢視，其他資料類型時，所必須遵循的基本步驟。
 
 > [!NOTE]
 > 根據目前使用的設定與版本，您所看到的對話方塊與功能表命令可能會與 [說明] 中所描述的不同。 若要變更您的設定，請前往**工具**功能表，然後選擇**匯入和匯出設定**。 如需詳細資訊，請參閱[重設設定](../ide/environment-settings.md#reset-settings)。
 
-視覺化檢視程式碼必須放置在 DLL 中，將讀取偵錯工具中。 因此，第一個步驟是為 DLL 建立類別庫專案。
+視覺化檢視程式碼必須放置在 DLL 中，將讀取偵錯工具。 因此，第一個步驟是為 DLL 建立類別庫專案。
 
 ## <a name="create-a-visualizer-manually"></a>手動建立視覺化檢視
 
@@ -35,15 +35,16 @@ ms.locfileid: "57323367"
 
 ### <a name="to-create-a-class-library-project"></a>若要建立類別庫專案
 
-1. 在 [檔案] 功能表上，選擇 [新增] > [專案]。
+1. 建立新的類別庫專案。
 
-2. 在 **新的專案**對話方塊的  **Visual C#** ，然後選取 **.NET Standard**。
+    ::: moniker range=">=vs-2019"
+    按 **Esc** 關閉開始視窗。 型別**Ctrl + Q**來開啟 搜尋 方塊中，輸入**類別庫**，選擇 **範本**，然後選擇 **建立新的類別庫 (.NET Standard)** . 在出現的對話方塊中選擇 [建立]  。
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    從頂端功能表列中，選擇 [檔案]   > [新增]   > [專案]  。 在左窗格中**新的專案**對話方塊的 **視覺化C#** ，選擇 **.NET Standard**，然後在中間窗格選擇**類別庫 (。NET Standard)** 。
+    ::: moniker-end
 
-3. 在中間窗格中，選擇**類別庫**。
-
-4. 在 [名稱] 方塊中，為該類別庫鍵入適當的名稱，例如 MyFirstVisualizer。
-
-5. 按一下 [確定 **Deploying Office Solutions**]。
+2. 輸入適當的名稱，為類別庫，例如`MyFirstVisualizer`，然後按一下**建立**或是**確定**。
 
    建立類別庫之後，必須新增 Microsoft.VisualStudio.DebuggerVisualizers.DLL 的參考，如此您才能使用於該處定義的類別。 加入參考之前，不過，您必須重新命名一些類別，使得它們具有有意義的名稱。
 
@@ -58,9 +59,11 @@ ms.locfileid: "57323367"
 
 3. 在 **方案總管 中**，以滑鼠右鍵按一下**參考**，然後選擇 **加入參考**快顯功能表上。
 
-4. 在 **加入參考**對話方塊的  **.NET**索引標籤上，選擇 Microsoft.VisualStudio.DebuggerVisualizers.DLL。
+4. 在 **加入參考**對話方塊的 **瀏覽**索引標籤上，選取**瀏覽**並尋找 Microsoft.VisualStudio.DebuggerVisualizers.DLL。
 
-5. 按一下 [確定 **Deploying Office Solutions**]。
+    您可以找到在 DLL  *\<Visual Studio 安裝目錄 > \Common7\IDE\PublicAssemblies* Visual Studio 的安裝目錄的子目錄。
+
+5. 按一下 [確定]  。
 
 6. 在 DebuggerSide.cs 中，將下列陳述式加入至 `using` 陳述式：
 
@@ -102,7 +105,9 @@ ms.locfileid: "57323367"
 
 1. 在 **方案總管 中**，以滑鼠右鍵按一下**參考**，然後選擇 **加入參考**快顯功能表上。
 
-2. 在 **加入參考**對話方塊的  **.NET**索引標籤上，選擇 System.Windows.Forms.DLL。
+2. 在 **加入參考**對話方塊的 **瀏覽**索引標籤上，選取**瀏覽**，並尋找 System.Windows.Forms.DLL。
+
+    您可以找到在 DLL *C:\Windows\Microsoft.NET\Framework\v4.0.30319*。
 
 3. 按一下 [確定 **Deploying Office Solutions**]。
 
@@ -162,13 +167,16 @@ ms.locfileid: "57323367"
 
 ### <a name="to-add-a-console-application-project-to-the-solution"></a>若要將主控台應用程式專案加入至方案
 
-1. 在上**檔案**功能表上，選擇**新增**，然後按一下 **新專案**。
+1. 在 [方案總管] 中，以滑鼠右鍵按一下方案，選擇**新增**，然後按一下**新的專案**。
 
-2. 在**加入新的專案**對話方塊方塊中，選擇**Visual C#**   >  **Windows 桌面**，然後選擇  **的主控台應用程式**.
+    ::: moniker range=">=vs-2019"
+    在 [搜尋] 方塊中，輸入**主控台應用程式**，選擇**範本**，然後選擇**建立新的主控台應用程式 (.NET Framework)** 。 在出現的對話方塊中選擇 [建立]  。
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    從頂端功能表列中，選擇 [檔案]   > [新增]   > [專案]  。 在 [新增專案]  對話方塊左窗格的 [Visual C#]  下，選擇 [Windows Desktop]  ，然後在中間窗格中選擇 [主控台應用程式 (.NET Framework)]  。
+    ::: moniker-end
 
-3. 在 **名稱**方塊中，輸入有意義的名稱，為主控台應用程式，例如`MyTestConsole`。
-
-4. 按一下 [確定 **Deploying Office Solutions**]。
+2. 輸入適當的名稱，為類別庫，例如`MyTestConsole`，然後按一下**建立**或是**確定**。
 
    此時，你必須加入必要的參考，如此 MyTestConsole 才能呼叫 MyFirstVisualizer。
 
@@ -176,7 +184,7 @@ ms.locfileid: "57323367"
 
 1. 在 **方案總管 中**，以滑鼠右鍵按一下**MyTestConsole** ，然後選擇 **加入參考**快顯功能表上。
 
-2. 在 **加入參考** 對話方塊中， **.NET**索引標籤上，選擇 Microsoft.VisualStudio.DebuggerVisualizers.DLL。
+2. 在 **加入參考** 對話方塊中，**瀏覽**索引標籤上，選擇 Microsoft.VisualStudio.DebuggerVisualizers.DLL。
 
 3. 按一下 [確定 **Deploying Office Solutions**]。
 
@@ -194,7 +202,8 @@ ms.locfileid: "57323367"
 
 2. 編輯 Program.cs 中的名稱，以更有意義的名稱，例如 TestConsole.cs。
 
-    **附註**[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]會自動變更 TestConsole.cs 以符合新的檔案名稱中的類別宣告。
+    > [!NOTE]
+    > [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 會自動變更 TestConsole.cs 以符合新的檔案名稱中的類別宣告。
 
 3. 在 TestConsole.cs，加入下列程式碼`using`陳述式：
 
@@ -215,13 +224,13 @@ ms.locfileid: "57323367"
 
 1. 在 **方案總管 中**，以滑鼠右鍵按一下**MyTestConsole** ，然後選擇 **設定為啟始專案**快顯功能表上。
 
-2. 在 [偵錯] 功能表上選擇 [啟動]。
+2. 在 [偵錯]  功能表上選擇 [啟動]  。
 
     在主控台應用程式啟動和視覺化檢視會出現並顯示的字串"Hello，World"。
 
    恭喜您！ 您已完成建置和測試第一個視覺化檢視。
 
-   如果您想在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中使用視覺化檢閱，而不只是從測試控管中進行呼叫，就必須安裝該視覺化檢閱。 如需詳細資訊，請參閱 <<c0> [ 如何： 安裝視覺化檢視](../debugger/how-to-install-a-visualizer.md)。
+   如果您想在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中使用視覺化檢閱，而不只是從測試控管中進行呼叫，就必須安裝該視覺化檢閱。 如需詳細資訊，請參閱[如何：安裝視覺化檢視](../debugger/how-to-install-a-visualizer.md)。
 
 ## <a name="create-a-visualizer-using-the-visualizer-item-template"></a>建立使用視覺化檢視項目範本視覺化檢視
 
@@ -231,15 +240,15 @@ ms.locfileid: "57323367"
 
 ### <a name="to-create-a-new-class-library"></a>若要建立新的類別庫
 
-1. 在 [檔案] 功能表上，選擇 [新增] > [專案]。
+1. 在 [檔案]  功能表上，選擇 [新增] > [專案]  。
 
-2. 在 **新的專案**對話方塊的 **視覺化C#** ，選取 **.NET Standard**。
+2. 在 **新的專案**對話方塊的  **Visual C#** ，選取 **.NET Standard**。
 
 3. 在中間窗格中，選擇**類別庫**。
 
 4. 在 **名稱**方塊中，輸入適當的類別程式庫，例如 MySecondVisualizer 名稱。
 
-5. 按一下 [確定 **Deploying Office Solutions**]。
+5. 按一下 [確定]  。
 
    現在，您可以將視覺化檢視項目加入它：
 
@@ -249,11 +258,11 @@ ms.locfileid: "57323367"
 
 2. 在捷徑功能表，選擇**新增**，然後按一下**新項目**。
 
-3. 在 **加入新項目**對話方塊的 **視覺化C#項目**，選取**偵錯工具視覺化檢視**。
+3. 在 **加入新項目**對話方塊的  **Visual C# 項目**，選取**偵錯工具視覺化檢視**。
 
 4. 在 **名稱**方塊中，輸入適當的名稱，例如 SecondVisualizer.cs。
 
-5. 按一下 [加入] 。
+5. 按一下 [加入]  。
 
    這就是這麼簡單。 SecondVisualizer.cs 的檔案，並檢視範本新增為您的程式碼。 請繼續並實驗程式碼。 既然您已經知道的基本概念，就可以建立您自己的更複雜且實用的視覺化檢視。
 

@@ -17,14 +17,14 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8a1126427a1454ec09f0460cb9da1eb65fb72b31
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 2d152ce38c445955988ec76a2e328691eac152ca
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54764794"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63416944"
 ---
-# <a name="how-to-create-associations-between-types-class-designer"></a>如何：建立類型之間的關聯 (類別設計工具)
+# <a name="how-to-create-associations-between-types-class-designer"></a>HOW TO：建立類型之間的關聯 (類別設計工具)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 [類別設計工具] 中的關聯線會顯示圖表中類別的關聯性。 關聯線表示某類別為專案中其他類別的屬性或欄位的類型。 關聯線通常是用來說明專案中類別之間最重要的關係。  
@@ -32,13 +32,13 @@ ms.locfileid: "54764794"
  雖然您可以將所有欄位或屬性顯示為關聯，但是針對要在圖表上突顯的部分而只將重要成員顯示為關聯才更具意義  (您可以隱藏次要成員或將其顯示為一般成員)。  
   
 > [!NOTE]
->  [類別設計工具] 只支援單向關聯。  
+> [類別設計工具] 只支援單向關聯。  
   
 ### <a name="to-define-an-association-line-in-the-class-diagram"></a>若要在類別圖中定義關聯線  
   
-1.  在 [類別設計工具] 下方的 [工具箱] 選取 [關聯]。  
+1. 在 [類別設計工具] 下方的 [工具箱] 選取 [關聯]。  
   
-2.  在您要以關聯連結的兩個圖案之間繪製一條線。  
+2. 在您要以關聯連結的兩個圖案之間繪製一條線。  
   
      第一個類別中就會建立新的屬性。 這個屬性會以預設名稱顯示為關聯線 (而不是圖案區間中的屬性)。 關聯線所指的圖案即為其類型。  
   
@@ -48,13 +48,13 @@ ms.locfileid: "54764794"
   
   \-或-  
   
-1.  按一下其內含屬性顯示為關聯的圖案。  
+1. 按一下其內含屬性顯示為關聯的圖案。  
   
      該圖案就會取得焦點，而且其成員會顯示於 [類別細節] 視窗和 [屬性] 視窗中。  
   
-2.  在 [類別細節] 視窗或 [屬性] 視窗中編輯該屬性的 [名稱] 欄位，然後按 Enter 鍵。  
+2. 在 [類別細節] 視窗或 [屬性] 視窗中編輯該屬性的 [名稱] 欄位，然後按 Enter 鍵。  
   
      [類別細節] 視窗、關聯線、[屬性] 視窗和程式碼中的名稱會隨之變更。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [如何：在成員標記法和關聯標記法之間變更 (類別設計工具)](../ide/how-to-change-between-member-notation-and-association-notation-class-designer.md)

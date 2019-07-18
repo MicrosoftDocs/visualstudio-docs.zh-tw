@@ -1,14 +1,9 @@
 ---
 title: JIT 最佳化和偵錯 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -21,13 +16,13 @@ ms.assetid: 19bfabf3-1a2e-49dc-8819-a813982e86fd
 caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: ab86e023b99f524651b56bbca4ddea2d613448e2
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 56b010a01ccd7e40e696653e13dd7c972c97a9cb
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51770734"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65690543"
 ---
 # <a name="jit-optimization-and-debugging"></a>JIT 最佳化和偵錯
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,8 +40,5 @@ ms.locfileid: "51770734"
 ## <a name="see-also"></a>另請參閱  
  [偵錯 Managed 程式碼](../debugger/debugging-managed-code.md)   
  [使用偵錯工具巡覽程式碼](../debugger/navigating-through-code-with-the-debugger.md)   
- [附加至執行中處理程序](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)   
- [Managed 執行程序](http://msdn.microsoft.com/library/476b03dc-2b12-49a7-b067-41caeaa2f533)
-
-
-
+ [附加到執行中的處理序](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)   
+ [Managed 執行程序](https://msdn.microsoft.com/library/476b03dc-2b12-49a7-b067-41caeaa2f533)

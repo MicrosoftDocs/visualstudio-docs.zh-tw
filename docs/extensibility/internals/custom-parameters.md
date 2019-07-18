@@ -6,17 +6,17 @@ helpviewer_keywords:
 - wizards, custom parameters
 - custom parameters
 ms.assetid: ba5c364b-66e6-47ea-9760-a0b70de8f0a0
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9e86c2f48365f93c924b15ae8d696d53d3f4bb16
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: a879c7a842bdabff396fa2df31d0aa7326b19c50
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56596656"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66312205"
 ---
 # <a name="custom-parameters"></a>自訂參數
 啟動精靈之後自訂參數可控制精靈的作業。 相關 *.vsz*檔案提供整合式的開發環境 (IDE) 封裝並啟動精靈時，傳遞給精靈的字串陣列作為使用者定義的參數陣列。 精靈接著會剖析的字串陣列，並使用的資訊，來控制精靈 的實際作業。 如此一來，精靈可以自訂功能，視內容而定 *.vsz*檔案。

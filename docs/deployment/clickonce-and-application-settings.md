@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 153df515fc762b7262dce81d8c1d1c4fe617ad61
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56608418"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62900607"
 ---
 # <a name="clickonce-and-application-settings"></a>ClickOnce 和應用程式設定
 Windows Forms 的應用程式設定可讓您輕鬆地建立、 儲存及維護自訂應用程式和用戶端上的使用者喜好設定。 下列文件會描述應用程式設定檔在 ClickOnce 應用程式中的運作方式，以及 ClickOnce 如何移轉設定，當使用者升級至下一個版本。
@@ -29,9 +29,9 @@ Windows Forms 的應用程式設定可讓您輕鬆地建立、 儲存及維護�
 ## <a name="application-settings-files"></a>應用程式設定檔
  應用程式設定會使用兩個檔案： *\<應用程式 >。 .exe.config*並*user.config*，其中*應用程式*是 Windows Forms 應用程式的名稱。 *user.config*建立在您的應用程式會儲存使用者範圍設定用戶端第一次。 *\<應用程式 >。 .exe.config*，相較之下，將會在部署之前如果存在定義設定的預設值。 Visual Studio 會自動包含此檔案，當您使用其**發佈**命令。 如果您建立 ClickOnce 應用程式使用*Mage.exe*或是*MageUI.exe*，您必須先確定此檔案是包含應用程式的其他檔案，當您填入您的應用程式資訊清單。
 
- 不使用 ClickOnce 部署，應用程式的 Windows Forms 應用程式中*\<應用程式 >。 .exe.config*檔案會儲存在應用程式目錄中，雖然*user.config*儲存檔案在使用者的**Documents and Settings**資料夾。 在 ClickOnce 應用程式中， *\<應用程式 >。 .exe.config*居住在 ClickOnce 應用程式快取內的應用程式目錄並*user.config*位於 ClickOnce 資料目錄該應用程式。
+ 不使用 ClickOnce 部署，應用程式的 Windows Forms 應用程式中 *\<應用程式 >。 .exe.config*檔案會儲存在應用程式目錄中，雖然*user.config*儲存檔案在使用者的**Documents and Settings**資料夾。 在 ClickOnce 應用程式中， *\<應用程式 >。 .exe.config*居住在 ClickOnce 應用程式快取內的應用程式目錄並*user.config*位於 ClickOnce 資料目錄該應用程式。
 
- 不論您如何部署您的應用程式，應用程式設定可確保安全的讀取存取權*\<應用程式 >。 .exe.config*，和安全的讀取/寫入存取權*user.config*。
+ 不論您如何部署您的應用程式，應用程式設定可確保安全的讀取存取權 *\<應用程式 >。 .exe.config*，和安全的讀取/寫入存取權*user.config*。
 
  在 ClickOnce 應用程式中使用的應用程式設定的組態檔的大小會受到 ClickOnce 快取大小。 如需詳細資訊，請參閱 < [ClickOnce 快取概觀](../deployment/clickonce-cache-overview.md)。
 
@@ -42,8 +42,8 @@ Windows Forms 的應用程式設定可讓您輕鬆地建立、 儲存及維護�
 
 |變更類型|升級動作|
 |--------------------|--------------------|
-|設定新增至*\<應用程式 >。 .exe.config*|新的設定會合併到目前的版本*\<應用程式 >。 .exe.config*|
-|設定移除了*\<應用程式 >。 .exe.config*|目前的版本中移除舊的設定*\<應用程式 >。 .exe.config*|
+|設定新增至 *\<應用程式 >。 .exe.config*|新的設定會合併到目前的版本 *\<應用程式 >。 .exe.config*|
+|設定移除了 *\<應用程式 >。 .exe.config*|目前的版本中移除舊的設定 *\<應用程式 >。 .exe.config*|
 |設定的預設值已變更;中的原始預設值仍然設定本機設定*user.config*|此設定會合併到目前的版本*user.config*與新的預設值，做為值|
 |設定的預設值已變更;設定中的非預設*user.config*|此設定會合併到目前的版本*user.config*保留為非預設值|
 

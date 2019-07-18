@@ -1,45 +1,40 @@
 ---
 title: 核心編輯器內 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - core editor
 ms.assetid: 8265f31c-c45b-4858-882c-6d9f1e3b9083
 caps.latest.revision: 22
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 9aca4bb8ad55dbd4cac0a6f899731711ccb6db8f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: cf9bc42aec3aac5acc996487f99c7e1f29ca252c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51798543"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68203958"
 ---
-# <a name="inside-the-core-editor"></a>在核心編輯器
+# <a name="inside-the-core-editor"></a>深入探索核心編輯器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]核心編輯器是一份數個元件可讓您修改及查詢文字的資訊。 如果您已自訂核心編輯器使用舊版的 API，您可以繼續使用這些自訂項目，將會透過編輯器配接器進行路由。 不過，它會建議您調整您的自訂 API 的新編輯器。  
   
  下列區域為核心編輯器的一些重要特性：  
   
--   文字緩衝區  
+- 文字緩衝區  
   
--   文字檢視  
+- 文字檢視  
   
--   程式碼視窗  
+- 程式碼視窗  
   
--   文字標記  
+- 文字標記  
   
--   文字管理員  
+- 文字管理員  
   
--   與語言服務整合  
+- 與語言服務整合  
   
 ## <a name="in-this-section"></a>本節內容  
  [使用舊版 API 將核心編輯器具現化](../extensibility/instantiating-the-core-editor-by-using-the-legacy-api.md)  
@@ -84,4 +79,3 @@ ms.locfileid: "51798543"
   
  [如何：建立自訂文字標記](../extensibility/how-to-create-custom-text-markers.md)  
  提供有關如何建立自訂文字標記，以及如何提供標記類型做為服務的逐步指示。
-

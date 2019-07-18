@@ -1,14 +1,9 @@
 ---
-title: 'Idiasymbol:: Get_udtkind |Microsoft Docs'
-ms.custom: ''
+title: IDiaSymbol::get_udtKind | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 4002f887-aea6-4475-b302-67c57079fe0a
 caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 8a519f124e83b4cde9d05e6846b6be5d4802e153
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 6fb58bec19460a78839ded86c9b7d194e838cb09
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51739009"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "64809622"
 ---
 # <a name="idiasymbolgetudtkind"></a>IDiaSymbol::get_udtKind
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -46,11 +41,8 @@ HRESULT get_udtKind ( 
  如果成功，則傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。  
   
 > [!NOTE]
->  傳回值為`S_FALSE`表示此屬性不適用於符號。  
+> 傳回值為`S_FALSE`表示此屬性不適用於符號。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [UdtKind 列舉](../../debugger/debug-interface-access/udtkind.md)
-
-
-

@@ -8,11 +8,11 @@ ms.topic: conceptual
 ms.workload:
 - multiple
 ms.openlocfilehash: 8990252f78a9e89b9bdaa825d5443e4d38d2ae89
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843295"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62548208"
 ---
 # <a name="browse-storage-to-upload-data-or-download-models-and-logs"></a>瀏覽儲存體以上傳資料或下載模型和記錄檔
 

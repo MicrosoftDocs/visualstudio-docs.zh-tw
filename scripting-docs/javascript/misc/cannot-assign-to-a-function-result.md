@@ -14,12 +14,12 @@ ms.assetid: ee8ffb3a-1451-4cb3-99bf-5e9cf8b77d79
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 38cf04b388eaea8ad85f0399978f914feb937c0a
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 226056f139e45f432d757aff8f8774b013742de3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56844009"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62946598"
 ---
 # <a name="cannot-assign-to-a-function-result"></a>無法指派給函式結果
 您嘗試指派值給函式的結果。 函式的結果可以指派給變數，但它不能做為變數。 如果您想要將新的值指派給函式本身，省略括號 （函式呼叫運算子）。 下列範例示範用來產生這個錯誤的情況。  
@@ -30,13 +30,13 @@ myFunction() = 42;  // Attempting to assign the value 42 to the result of the fu
   
 ### <a name="to-correct-this-error"></a>更正這個錯誤  
   
--   請勿使用函式呼叫結果的值作為項目即可*指派給*。 您可以指派函式呼叫的結果*變數*雖然。  
+- 請勿使用函式呼叫結果的值作為項目即可*指派給*。 您可以指派函式呼叫的結果*變數*雖然。  
   
     ```JavaScript  
     myVar = myFunction(42);  
     ```  
   
--   或者，您可以指派函式本身 （而非其傳回的值），此變數。  
+- 或者，您可以指派函式本身 （而非其傳回的值），此變數。  
   
     ```JavaScript  
     myFunction = new Function("return 42;");  

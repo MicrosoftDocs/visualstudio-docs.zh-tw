@@ -1,14 +1,9 @@
 ---
-title: 如何： 為 C-C + + 專案設定程式碼分析屬性 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：設定程式碼分析屬性-C++專案 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.propertypages.native
 - VC.Project.VCCLCompilerTool.EnablePrefast
@@ -23,15 +18,15 @@ ms.assetid: 7af52097-6d44-4785-9b9f-43b7a7d447d7
 caps.latest.revision: 19
 author: mikeblome
 ms.author: mblome
-manager: ghogen
-ms.openlocfilehash: 447bb9dfedc93594c6af014b830bfabc1b7ecf39
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 4ebed266924861dac4bfc9e316a56907dbd11534
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51752652"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68201309"
 ---
-# <a name="how-to-set-code-analysis-properties-for-cc-projects"></a>如何：為 C/C++ 專案設定程式碼分析屬性
+# <a name="how-to-set-code-analysis-properties-for-cc-projects"></a>HOW TO：為 C/C++ 專案設定程式碼分析屬性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 您可以設定程式碼分析工具用來分析專案的每個組態中的程式碼的規則。 此外，您可以將程式碼分析，以隱藏來自產生並由第三方工具加入至專案的程式碼的警告。  
@@ -43,7 +38,7 @@ ms.locfileid: "51752652"
  **組態**清單並**平台**清單可讓您將不同的程式碼分析設定套用至不同的專案組態與平台的組合。 例如，您可以將程式碼分析，以將一組規則套用至您的專案進行偵錯組建和一組不同的發行組建。  
   
 ## <a name="enabling-code-analysis"></a>啟用程式碼分析  
- 您可以決定是否要選取以啟用您專案的程式碼分析**啟用程式碼分析的 C/c + + 建置**。 結合**組態** 清單中，您可以比方說，決定停用偵錯組建，並啟用發行的程式碼分析。  
+ 您可以決定是否要選取以啟用您專案的程式碼分析**啟用程式碼分析適用於 C /C++上建置**。 結合**組態** 清單中，您可以比方說，決定停用偵錯組建，並啟用發行的程式碼分析。  
   
  如果您的專案包含 managed 程式碼，您可以決定是否要啟用或停用選取的程式碼分析**建置時啟用程式碼分析**。  
   
@@ -60,6 +55,3 @@ ms.locfileid: "51752652"
 ## <a name="see-also"></a>另請參閱  
  [分析 Managed 程式碼品質](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)   
  [C/C++ 程式碼分析警告](../code-quality/code-analysis-for-c-cpp-warnings.md)
-
-
-

@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3ba8f58d13d3e0c9e360796092a8d522f54d0384
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 0c4639b5e2edcfebd05dcc6511102c0369b4b3e1
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55939537"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62960433"
 ---
 # <a name="add-custom-properties-to-dependency-diagrams"></a>將自訂屬性新增至相依性圖表
 
@@ -22,7 +22,7 @@ ms.locfileid: "55939537"
 
 ## <a name="non-visible-properties"></a>不可見的屬性
 
-如果您只想您的程式碼，將值附加至任何相依性圖表中的項目，您不需要定義 MEF 元件。 `Properties` 中有一個名為 <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayerElement> 的資料夾。 只要將可封送處理的值加入至任何圖層項目的字典中即可。 它們會儲存為的相依性圖表的一部分。 如需詳細資訊，請參閱 <<c0> [ 瀏覽和更新圖層的程式碼中的模型](../modeling/navigate-and-update-layer-models-in-program-code.md)。
+如果您只想您的程式碼，將值附加至任何相依性圖表中的項目，您不需要定義 MEF 元件。 `Properties` 中有一個名為 <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayerElement> 的資料夾。 只要將可封送處理的值加入至任何圖層項目的字典中即可。 它們會儲存為的相依性圖表的一部分。
 
 ## <a name="editable-properties"></a>可編輯屬性
 
@@ -37,6 +37,7 @@ ms.locfileid: "55939537"
 >     ```xml
 >     <MefComponent>Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.Provider.dll</MefComponent>
 >     ```
+>
 > 3. 底下**Visual Studio Tools**區段的 [Visual Studio 應用程式開始] 功能表開啟**開發人員命令提示字元**。 輸入：
 >
 >      `devenv /rootSuffix /updateConfiguration`
@@ -62,15 +63,15 @@ public class MyProperty : PropertyExtension<ILayerElement>
 
 您可以在 <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayerElement> 上或任何它的衍生類別上定義屬性，包括：
 
--   `ILayerModel` - 模型
+- `ILayerModel` - 模型
 
--   `ILayer` - 每個圖層
+- `ILayer` - 每個圖層
 
--   `ILayerDependencyLink` - 圖層之間的連結
+- `ILayerDependencyLink` - 圖層之間的連結
 
--   `ILayerComment`
+- `ILayerComment`
 
--   `ILayerCommentLink`
+- `ILayerCommentLink`
 
 ## <a name="example"></a>範例
 

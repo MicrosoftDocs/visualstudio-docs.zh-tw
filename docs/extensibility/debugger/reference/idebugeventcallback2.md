@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEventCallback2
 ms.assetid: 2c935ee0-2e22-4be0-a852-73736f33c8c9
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d8d05ea232513a161b3123e08a20bc0f5b312b89
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: e3d76c3e41159e9bc200acdb788c13ad5f995cc3
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56686921"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66310518"
 ---
 # <a name="idebugeventcallback2"></a>IDebugEventCallback2
 這個介面用於偵錯引擎 (DE) 傳送偵錯事件工作階段的偵錯管理員 (SDM)。

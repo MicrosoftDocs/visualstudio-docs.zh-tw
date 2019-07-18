@@ -1,14 +1,9 @@
 ---
 title: Enum （偵錯介面存取 SDK） |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -18,13 +13,13 @@ ms.assetid: c777e2e6-88be-435b-b632-8d43f42b0b49
 caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: d65eb291c49bbbc29759d38b68bfde7a1d6ee94b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: eeafdbb36cd1bba22b1f00eca3ae66b704316df3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51751558"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68164362"
 ---
 # <a name="enum-debug-interface-access-sdk"></a>Enum (偵錯介面存取 SDK)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -34,7 +29,7 @@ ms.locfileid: "51751558"
 ## <a name="properties"></a>屬性  
  下表顯示此符號類型的其他有效屬性。  
   
-|屬性|資料類型|描述|  
+|屬性|資料類型|說明|  
 |--------------|---------------|-----------------|  
 |[IDiaSymbol::get_baseType](../../debugger/debug-interface-access/idiasymbol-get-basetype.md)|`DWORD`|其中一個[BasicType 列舉](../../debugger/debug-interface-access/basictype.md)值。|  
 |[IDiaSymbol::get_classParent](../../debugger/debug-interface-access/idiasymbol-get-classparent.md)|`IDiaSymbol*`|這個列舉型別，如果有任何類別父代。|  
@@ -61,6 +56,3 @@ ms.locfileid: "51751558"
   
 ## <a name="see-also"></a>另請參閱  
  [符號類型的類別階層架構](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md)
-
-
-

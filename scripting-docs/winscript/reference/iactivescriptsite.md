@@ -14,11 +14,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 67e16e2825f03c9ae452e639d6a086bee584ac95
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58152638"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62992559"
 ---
 # <a name="iactivescriptsite"></a>IActiveScriptSite
 若要建立 Windows 指令碼引擎的網站主機所實作。 通常，此站台會顯示指令碼 （例如，ActiveX 控制項） 的所有物件的容器相關聯。 一般而言，此容器會對應至文件或頁面檢視。 例如，Microsoft Internet Explorer 中，會建立顯示每個 HTML 網頁這類的容器。 每個 ActiveX 控制項 （或其他自動化物件） 頁面中，與指令碼引擎本身，會列舉此容器中。  

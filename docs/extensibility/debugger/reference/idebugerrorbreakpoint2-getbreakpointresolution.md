@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugErrorBreakpoint2::GetBreakpointResolution
 ms.assetid: 1c2324ed-2a11-4e63-8f3a-f420c7a4018b
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1b1ba346a24c22a01039736b53568a89684af92c
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 88109cce680852549bbbfda9c30cd0f809f9e723
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56702365"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66344949"
 ---
 # <a name="idebugerrorbreakpoint2getbreakpointresolution"></a>IDebugErrorBreakpoint2::GetBreakpointResolution
 取得描述錯誤的中斷點錯誤解決方式。
@@ -36,10 +39,9 @@ int GetBreakpointResolution( 
 );
 ```
 
-#### <a name="parameters"></a>參數
- `ppErrorResolution`
-
- [out]傳回[IDebugErrorBreakpointResolution2](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2.md)描述錯誤的物件。
+## <a name="parameters"></a>參數
+`ppErrorResolution`\
+[out]傳回[IDebugErrorBreakpointResolution2](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2.md)描述錯誤的物件。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

@@ -1,28 +1,23 @@
 ---
 title: 編輯器 Factory |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - editor factories
 ms.assetid: cf4e8164-3546-441d-b465-e8a836ae7216
 caps.latest.revision: 21
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 74ea8d296db643e74654f9016c1f5bff4f34c6d8
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 2de1fc8440bd33a526da62dbb4c7937800484aaa
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51809450"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68197756"
 ---
-# <a name="editor-factories"></a>編輯器 Factory
+# <a name="editor-factories"></a>Editor Factory
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 編輯器 factory 建立編輯器的物件，並將它們放在視窗框架內，又稱為實體的檢視。 它會建立文件資料及建立編輯器和設計工具所需的文件檢視物件。 編輯器 factory，才能建立 Visual Studio 核心編輯器和任何標準的編輯器。 也可以使用編輯器 factory 來建立自訂編輯器。  
@@ -50,15 +45,14 @@ ms.locfileid: "51809450"
 ## <a name="the-editor-factory-registration-process"></a>編輯器 Factory 註冊程序  
  Visual Studio 會載入您使用編輯器 factory 的編輯器時，就會發生下列處理程序：  
   
-1.  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]專案系統呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A>。  
+1. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]專案系統呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A>。  
   
-2.  這個方法會傳回編輯器 factory。 Visual Studio 延遲載入編輯器的封裝，不過，直到實際需要的專案系統的編輯器。  
+2. 這個方法會傳回編輯器 factory。 Visual Studio 延遲載入編輯器的封裝，不過，直到實際需要的專案系統的編輯器。  
   
-3.  當專案系統需要編輯器時，Visual Studio 會呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A>，傳回的文件檢視和文件資料物件的特定的方法。  
+3. 當專案系統需要編輯器時，Visual Studio 會呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A>，傳回的文件檢視和文件資料物件的特定的方法。  
   
-4.  如果呼叫由 Visual Studio 編輯器 factory 使用<xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A>傳回文件資料物件和文件檢視物件、 Visual Studio 然後建立文件視窗中，置於文件檢視物件，並執行文件的項目資料表 (RDT) 文件資料物件。  
+4. 如果呼叫由 Visual Studio 編輯器 factory 使用<xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A>傳回文件資料物件和文件檢視物件、 Visual Studio 然後建立文件視窗中，置於文件檢視物件，並執行文件的項目資料表 (RDT) 文件資料物件。  
   
 ## <a name="see-also"></a>另請參閱  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory>   
  [執行中的文件資料表](../extensibility/internals/running-document-table.md)
-

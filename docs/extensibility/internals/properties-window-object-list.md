@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - Properties window, object list
 ms.assetid: 6c159c9d-345d-4b23-8ddd-9839d338b62f
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: eccc7cfc432918a80723251a7b9a87ec4e13450d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 751339d0e9f8d4dd6d43a1f786e08b57d0ac7555
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56619767"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66347804"
 ---
 # <a name="properties-window-object-list"></a>屬性視窗的物件清單
 在 [物件] 清單**屬性**視窗是下拉式清單，可讓您將選取範圍變更一或多個選取的 windows 中可用的其他物件。 選取這份清單內的不同物件從觸發程序呼叫<xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer.SelectObjects%2A>通知環境已選取新的物件。 中顯示的資訊**屬性**視窗再變更為顯示新選取的物件相關聯的屬性。

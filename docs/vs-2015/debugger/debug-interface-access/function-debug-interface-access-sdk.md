@@ -1,14 +1,9 @@
 ---
 title: 函式 （偵錯介面存取 SDK） |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 458dc91c-b78b-4427-84f4-615d89e26760
 caps.latest.revision: 25
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 21b618a01cd439c1176cea65d14dcc0c270f37d7
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 6fb1355dfebaad4230c349c0c7b30ae400ecdaa1
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51741573"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65692177"
 ---
 # <a name="function-debug-interface-access-sdk"></a>函式 (偵錯介面存取 SDK)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -44,17 +39,17 @@ ms.locfileid: "51741573"
 |[IDiaSymbol::get_customCallingConvention](../../debugger/debug-interface-access/idiasymbol-get-customcallingconvention.md)|`BOOL`|`TRUE` 如果此函數會使用自訂的呼叫慣例 （只在 DIA SDK 8.0 版或更新版本）。|  
 |[IDiaSymbol::get_farReturn](../../debugger/debug-interface-access/idiasymbol-get-farreturn.md)|`BOOL`|`TRUE` 如果函式會執行目前傳回 （只在 DIA SDK 8.0 版或更新版本）。|  
 |[IDiaSymbol::get_hasAlloca](../../debugger/debug-interface-access/idiasymbol-get-hasalloca.md)|`BOOL`|`TRUE` 如果此函數會使用配置的記憶體函式 (uinnder DIA SDK 8.0 版或更新版本)。|  
-|[IDiaSymbol::get_hasEH](../../debugger/debug-interface-access/idiasymbol-get-haseh.md)|`BOOL`|`TRUE` 如果函式包含 c + + 樣式例外狀況處理 （只在 DIA SDK 8.0 版或更新版本）。|  
+|[IDiaSymbol::get_hasEH](../../debugger/debug-interface-access/idiasymbol-get-haseh.md)|`BOOL`|`TRUE` 如果函式包含C++-樣式例外狀況處理 （只在 DIA SDK 8.0 版或更新版本）。|  
 |[IDiaSymbol::get_hasEHa](../../debugger/debug-interface-access/idiasymbol-get-haseha.md)|`BOOL`|`TRUE` 如果函式包含非同步例外狀況處理 （只在 DIA SDK 8.0 版或更新版本）。|  
 |[IDiaSymbol::get_hasInlAsm](../../debugger/debug-interface-access/idiasymbol-get-hasinlasm.md)|`BOOL`|`TRUE` 如果函式中包含內嵌組譯碼 （只在 DIA SDK 8.0 版或更新版本）。|  
-|[IDiaSymbol::get_hasLongJump](../../debugger/debug-interface-access/idiasymbol-get-haslongjump.md)|`BOOL`|`TRUE` 如果函式包含[longjmp](http://msdn.microsoft.com/library/0e13670a-5130-45c1-ad69-6862505b7a2f)呼叫 （僅在 DIA SDK 8.0 版或更新版本）。|  
+|[IDiaSymbol::get_hasLongJump](../../debugger/debug-interface-access/idiasymbol-get-haslongjump.md)|`BOOL`|`TRUE` 如果函式包含[longjmp](https://msdn.microsoft.com/library/0e13670a-5130-45c1-ad69-6862505b7a2f)呼叫 （僅在 DIA SDK 8.0 版或更新版本）。|  
 |[IDiaSymbol::get_hasSecurityChecks](../../debugger/debug-interface-access/idiasymbol-get-hassecuritychecks.md)|`BOOL`|`TRUE` 如果函式包含 （只在 DIA SDK 8.0 版或更新版本） 的安全性檢查。|  
 |[IDiaSymbol::get_hasSEH](../../debugger/debug-interface-access/idiasymbol-get-hasseh.md)|`BOOL`|`TRUE` 如果函式包含 Win32 樣式結構化例外狀況處理 （只在 DIA SDK 8.0 版或更新版本）。|  
-|[IDiaSymbol::get_hasSetJump](../../debugger/debug-interface-access/idiasymbol-get-hassetjump.md)|`BOOL`|`TRUE` 如果函式包含[setjmp](http://msdn.microsoft.com/library/684a8b27-e8eb-455b-b4a8-733ca1cbd7d2)呼叫 （僅在 DIA SDK 8.0 版或更新版本）。|  
+|[IDiaSymbol::get_hasSetJump](../../debugger/debug-interface-access/idiasymbol-get-hassetjump.md)|`BOOL`|`TRUE` 如果函式包含[setjmp](https://msdn.microsoft.com/library/684a8b27-e8eb-455b-b4a8-733ca1cbd7d2)呼叫 （僅在 DIA SDK 8.0 版或更新版本）。|  
 |[IDiaSymbol::get_interruptReturn](../../debugger/debug-interface-access/idiasymbol-get-interruptreturn.md)|`BOOL`|`TRUE` 如果函式傳回插斷 （只在 DIA SDK 8.0 版或更新版本）。|  
 |[IDiaSymbol::get_intro](../../debugger/debug-interface-access/idiasymbol-get-intro.md)|`BOOL`|`TRUE` 如果函式是虛擬的簡介。|  
 |[IDiaSymbol::get_InlSpec](../../debugger/debug-interface-access/idiasymbol-get-inlspec.md)|`BOOL`|`TRUE` 如果函式已使用其中一個標示[inline、 __inline、 \__forceinline](../../misc/inline-inline-forceinline.md)屬性。|  
-|[IDiaSymbol::get_isNaked](../../debugger/debug-interface-access/idiasymbol-get-isnaked.md)|`BOOL`|`TRUE` 如果函式標記著[naked](http://msdn.microsoft.com/library/69723241-05e1-439b-868e-20a83a16ab6d) （只在 DIA SDK 8.0 版或更新版本） 的屬性。|  
+|[IDiaSymbol::get_isNaked](../../debugger/debug-interface-access/idiasymbol-get-isnaked.md)|`BOOL`|`TRUE` 如果函式標記著[naked](https://msdn.microsoft.com/library/69723241-05e1-439b-868e-20a83a16ab6d) （只在 DIA SDK 8.0 版或更新版本） 的屬性。|  
 |[IDiaSymbol::get_isStatic](../../debugger/debug-interface-access/idiasymbol-get-isstatic.md)|`BOOL`|`TRUE` 如果函式是靜態的 （只在 DIA SDK 8.0 版或更新版本）。|  
 |[IDiaSymbol::get_length](../../debugger/debug-interface-access/idiasymbol-get-length.md)|`ULONGLONG`|函式程式碼，從位置開始的位元組數目。|  
 |[IDiaSymbol::get_lexicalParent](../../debugger/debug-interface-access/idiasymbol-get-lexicalparent.md)|`IDiaSymbol*`|封入的編譯模組的符號。|  
@@ -83,9 +78,6 @@ ms.locfileid: "51741573"
   
 ## <a name="see-also"></a>另請參閱  
  [CV_access_e 列舉](../../debugger/debug-interface-access/cv-access-e.md)   
- [符號類型的語彙階層架構](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md)   
+ [符號類型的語彙階層](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md)   
  [LocationType 列舉](../../debugger/debug-interface-access/locationtype.md)   
  [符號位置](../../debugger/debug-interface-access/symbol-locations.md)
-
-
-

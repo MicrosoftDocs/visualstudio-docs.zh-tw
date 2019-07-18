@@ -1,14 +1,9 @@
 ---
-title: ： Ca1810 必須初始化參考類型的靜態欄位 |Microsoft Docs
-ms.custom: ''
+title: CA1810:初始化參考類型的靜態欄位內嵌 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - InitializeReferenceTypeStaticFieldsInline
 - CA1810
@@ -20,14 +15,14 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: e4d7ffbe4fc821ffd70b0bb299b2a4738d63873b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: dd0372ca3264bedd6fbb17ef3c8326471cb6e99f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49862680"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62538911"
 ---
-# <a name="ca1810-initialize-reference-type-static-fields-inline"></a>CA1810：必須初始化參考類型內部的靜態欄位
+# <a name="ca1810-initialize-reference-type-static-fields-inline"></a>CA1810:必須將參考類型內部的靜態欄位初始化
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -47,9 +42,9 @@ ms.locfileid: "49862680"
 
  靜態建構函式檢查會降低效能。 通常會使用靜態建構函式，只是用來初始化靜態欄位的第一次存取之前發生在哪個情況下，您必須只確定靜態初始設定的靜態欄位。 `beforefieldinit`行為是適用於這些和其他大部分的類型。 當靜態初始設定會影響全域狀態，而且下列其中一項條件成立時才不適用：
 
--   全域狀態上的效果很昂貴，而且不需要，如果未使用的型別。
+- 全域狀態上的效果很昂貴，而且不需要，如果未使用的型別。
 
--   全域狀態效果可以存取而不需存取類型的任何靜態欄位。
+- 全域狀態效果可以存取而不需存取類型的任何靜態欄位。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
  若要修正此規則的違規情形，請在宣告所有靜態資料時將靜態資料初始化，並移除靜態建構函式。
@@ -72,7 +67,4 @@ ms.locfileid: "49862680"
  **{**
  **} / / 的 NoStaticConstructor 類別**
 ## <a name="related-rules"></a>相關的規則
- [CA2207：必須初始化實值型別的靜態欄位內嵌](../code-quality/ca2207-initialize-value-type-static-fields-inline.md)
-
-
-
+ [CA2207:初始化實值類型的靜態欄位內嵌](../code-quality/ca2207-initialize-value-type-static-fields-inline.md)

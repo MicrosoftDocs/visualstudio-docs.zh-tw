@@ -1,14 +1,9 @@
 ---
 title: 編譯模組 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -18,13 +13,13 @@ ms.assetid: c798eb2b-664a-41ec-ae90-5e9d292507ca
 caps.latest.revision: 20
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 8fd4620fcd2a1ff6f8c1b167035bf4032da176eb
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 579ac6a70b379364870425e78cee41ac0840a214
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51810321"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68164002"
 ---
 # <a name="compiland"></a>編譯模組
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -34,7 +29,7 @@ ms.locfileid: "51810321"
 ## <a name="properties"></a>屬性  
  下表顯示適用於此符號類型的屬性。  
   
-|屬性|資料類型|描述|  
+|屬性|資料類型|說明|  
 |--------------|---------------|-----------------|  
 |[IDiaSymbol::get_editAndContinueEnabled](../../debugger/debug-interface-access/idiasymbol-get-editandcontinueenabled.md)|`BOOL`|`TRUE` 如果在編譯時啟用編輯後繼續。|  
 |[IDiaSymbol::get_lexicalParent](../../debugger/debug-interface-access/idiasymbol-get-lexicalparent.md)|`IDiaSymbol*`|.Exe 檔案的符號。|  
@@ -49,6 +44,3 @@ ms.locfileid: "51810321"
  [CompilandDetails](../../debugger/debug-interface-access/compilanddetails.md)   
  [CompilandEnv](../../debugger/debug-interface-access/compilandenv.md)   
  [符號類型的語彙階層架構](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md)
-
-
-

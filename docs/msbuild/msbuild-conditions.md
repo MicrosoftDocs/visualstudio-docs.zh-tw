@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b1070483e492bbbf6cc9f6e9f4a8f4b225f2b74b
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56617622"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62842457"
 ---
 # <a name="msbuild-conditions"></a>MSBuild 條件
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 支援一組只要允許 `Condition` 屬性就能套用的特定條件。 下表說明這些條件。

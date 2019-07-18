@@ -1,14 +1,9 @@
 ---
-title: CA2240： 實作 ISerializable 正確 |Microsoft Docs
-ms.custom: ''
+title: CA2240:必須正確實作 ISerializable |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA2240
 - ImplementISerializableCorrectly
@@ -20,14 +15,14 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: bf9578d12a9d89a5c328cf15c1c5a7becef12cd7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 37f84bff4802c703bb61b36e9c1933a31cd6c5e3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49888918"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68142371"
 ---
-# <a name="ca2240-implement-iserializable-correctly"></a>CA2240：必須正確實作 ISerializable
+# <a name="ca2240-implement-iserializable-correctly"></a>CA2240:必須正確實作 ISerializable
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -40,9 +35,9 @@ ms.locfileid: "49888918"
 ## <a name="cause"></a>原因
  外部可見的類型是指派給<xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName>介面以及其中一個下列條件成立：
 
--   型別繼承，但不覆寫<xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A?displayProperty=fullName>方法和型別宣告與未標記的執行個體欄位<xref:System.NonSerializedAttribute?displayProperty=fullName>屬性。
+- 型別繼承，但不覆寫<xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A?displayProperty=fullName>方法和型別宣告與未標記的執行個體欄位<xref:System.NonSerializedAttribute?displayProperty=fullName>屬性。
 
--   不密封型別和型別實作<xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A>不是外部可見和可覆寫的方法。
+- 不密封型別和型別實作<xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A>不是外部可見和可覆寫的方法。
 
 ## <a name="rule-description"></a>規則描述
  執行個體在繼承的類型中宣告的欄位<xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName>介面不會自動包含在序列化程序。 若要加入的欄位，類型必須實作<xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A>方法和序列化建構函式。 如果欄位不應該序列化，套用<xref:System.NonSerializedAttribute>屬性設為明確指出決策的欄位。
@@ -63,26 +58,23 @@ ms.locfileid: "49888918"
  [!code-vb[FxCop.Usage.ImplementISerializableCorrectly#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Usage.ImplementISerializableCorrectly/vb/FxCop.Usage.ImplementISerializableCorrectly.vb#1)]
 
 ## <a name="example"></a>範例
- 下列範例會藉由提供可覆寫 [ISerializable.GetObjectData] 實作修正的兩個先前的違規情事 (<!-- TODO: review code entity reference <xref:assetId:///ISerializable.GetObjectData?qualifyHint=False&amp;autoUpgrade=False>  -->) 上的活頁簿類別並提供的實作<!-- TODO: review code entity reference <xref:assetId:///ISerializable.GetObjectData?qualifyHint=False&amp;autoUpgrade=False>  -->程式庫類別上。
+ 下列範例會藉由提供的 [ISerializable.GetObjectData] （可以覆寫實作修正兩個先前的違規情形<!-- TODO: review code entity reference <xref:assetId:///ISerializable.GetObjectData?qualifyHint=False&amp;autoUpgrade=False>  -->) 上的活頁簿類別並提供的實作 <!-- TODO: review code entity reference <xref:assetId:///ISerializable.GetObjectData?qualifyHint=False&amp;autoUpgrade=False>  --> 在 程式庫類別中。
 
  [!code-cpp[FxCop.Usage.ImplementISerializableCorrectly2#1](../snippets/cpp/VS_Snippets_CodeAnalysis/FxCop.Usage.ImplementISerializableCorrectly2/cpp/FxCop.Usage.ImplementISerializableCorrectly2.cpp#1)]
  [!code-csharp[FxCop.Usage.ImplementISerializableCorrectly2#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.ImplementISerializableCorrectly2/cs/FxCop.Usage.ImplementISerializableCorrectly2.cs#1)]
  [!code-vb[FxCop.Usage.ImplementISerializableCorrectly2#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Usage.ImplementISerializableCorrectly2/vb/FxCop.Usage.ImplementISerializableCorrectly2.vb#1)]
 
 ## <a name="related-rules"></a>相關的規則
- [CA2236：必須呼叫 ISerializable 類型上的基底類別方法](../code-quality/ca2236-call-base-class-methods-on-iserializable-types.md)
+ [CA2236： 必須ISerializable 類型上呼叫基底類別方法](../code-quality/ca2236-call-base-class-methods-on-iserializable-types.md)
 
  [CA2229：必須實作序列化建構函式](../code-quality/ca2229-implement-serialization-constructors.md)
 
- [CA2238：必須正確實作序列化方法](../code-quality/ca2238-implement-serialization-methods-correctly.md)
+ [CA2238： 請正確實作序列化方法](../code-quality/ca2238-implement-serialization-methods-correctly.md)
 
  [CA2235：必須標記所有不可序列化的欄位](../code-quality/ca2235-mark-all-non-serializable-fields.md)
 
- [CA2237：ISerializable 類型必須標記 SerializableAttribute](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md)
+ [CA2237：Serializableattribute 標記 ISerializable 類型](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md)
 
- [CA2239：必須為選擇性欄位提供還原序列化方法](../code-quality/ca2239-provide-deserialization-methods-for-optional-fields.md)
+ [CA2239： 必須提供選擇性欄位的還原序列化方法](../code-quality/ca2239-provide-deserialization-methods-for-optional-fields.md)
 
- [CA2120：必須保護序列化建構函式](../code-quality/ca2120-secure-serialization-constructors.md)
-
-
-
+ [CA2120： 必須保護序列化建構函式](../code-quality/ca2120-secure-serialization-constructors.md)

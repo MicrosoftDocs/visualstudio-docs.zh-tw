@@ -12,12 +12,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 66d6aa6a11ef0ce308c5ba2b089aaa8170b6441f
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 30a33a434540fded8daab0628d0bd6dd7fb0ff38
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54760066"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63412272"
 ---
 # <a name="logical-operators-in-search-expressions"></a>搜尋運算式中的邏輯運算子
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "54760066"
 使用邏輯運算子，即可從較簡單的搜尋運算式建立更複雜的搜尋運算式來精簡搜尋內容。 如下表所示，邏輯運算子指定應該如何在搜尋查詢中合併多個搜尋詞彙。  
   
 > [!IMPORTANT]
->  您必須輸入全部大寫的邏輯運算子，搜尋引擎才能辨識它們。  
+> 您必須輸入全部大寫的邏輯運算子，搜尋引擎才能辨識它們。  
   
 |搜尋|使用|範例|結果|  
 |-------------------|---------|-------------|------------|  

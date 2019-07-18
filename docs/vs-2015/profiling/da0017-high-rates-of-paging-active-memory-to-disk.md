@@ -13,14 +13,14 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 136a8489ed3eac621543cb40b004052c2c9d3324
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 00df8bf8757b9dba35537942716c37f66675bf32
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54803484"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435856"
 ---
-# <a name="da0017-high-rates-of-paging-active-memory-to-disk"></a>DA0017：作用中的記憶體分頁至磁碟的比率很高
+# <a name="da0017-high-rates-of-paging-active-memory-to-disk"></a>DA0017：高比率的使用中記憶體分頁到磁碟
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 規則 Id |DA0017 |  
@@ -37,7 +37,7 @@ ms.locfileid: "54803484"
 ## <a name="rule-description"></a>規則描述  
   
 > [!NOTE]
->  當使用中記憶體的分頁程度達到很高的量時，就會引發這個資訊性規則。 在發生極高的分頁程度時，則會引發警告規則 [DA0014︰極高比率的使用中記憶體分頁到磁碟](../profiling/da0014-extremely-high-rates-of-paging-active-memory-to-disk.md)。  
+> 當使用中記憶體的分頁程度達到很高的量時，就會引發這個資訊性規則。 在發生極高的分頁程度時，就會引發警告規則 [DA0014：極高比率的使用中記憶體分頁到磁碟](../profiling/da0014-extremely-high-rates-of-paging-active-memory-to-disk.md)。  
   
  過度分頁至磁碟可能是因為實體記憶體不足。 如果分頁作業控制使用分頁檔案所在的實體磁碟，則可能降低相同磁碟上其他應用程式導向之磁碟作業的速度。  
   

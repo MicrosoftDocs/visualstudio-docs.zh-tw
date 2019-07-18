@@ -8,17 +8,20 @@ helpviewer_keywords:
 - IDebugMemoryContext2::Compare method
 - Compare method
 ms.assetid: c51b5128-848e-4d8e-b2e9-1161339763c3
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ed8f7f778e0dfd55e9db175c4e279c92b72e427e
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 9994f99759d570780729fe1c62e6604786e4eb90
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56721885"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66347035"
 ---
 # <a name="idebugmemorycontext2compare"></a>IDebugMemoryContext2::Compare
 比較每個內容中的比較旗標，傳回的第一個符合之內容的索引所指示的方式在給定陣列中的記憶體內容。
@@ -43,22 +46,18 @@ int Compare(
 );
 ```
 
-#### <a name="parameters"></a>參數
- `compare`
+## <a name="parameters"></a>參數
+`compare`\
+[in]值，以從[CONTEXT_COMPARE](../../../extensibility/debugger/reference/context-compare.md)決定比較類型的列舉型別。
 
- [in]值，以從[CONTEXT_COMPARE](../../../extensibility/debugger/reference/context-compare.md)決定比較類型的列舉型別。
+`rgpMemoryContextSet`\
+[in]若要參考的陣列[IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)要比較的物件。
 
- `rgpMemoryContextSet`
+`dwMemoryContextSetLen`\
+[in]中的內容數目`rgpMemoryContextSet`陣列。
 
- [in]若要參考的陣列[IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)要比較的物件。
-
- `dwMemoryContextSetLen`
-
- [in]中的內容數目`rgpMemoryContextSet`陣列。
-
- `pdwMemoryContext`
-
- [out]傳回符合比較的第一個記憶體內容的索引。
+`pdwMemoryContext`\
+[out]傳回符合比較的第一個記憶體內容的索引。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。 傳回`E_COMPARE_CANNOT_COMPARE`如果無法比較兩個內容。

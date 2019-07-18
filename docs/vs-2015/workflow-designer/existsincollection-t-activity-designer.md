@@ -1,11 +1,8 @@
 ---
 title: ExistsInCollection&lt;T&gt;活動設計工具 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.ExistsInCollection`1.UI
@@ -13,13 +10,13 @@ ms.assetid: 0acf9a13-caf5-4bb4-ba22-ec37d2b7267a
 caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: fa4de7e599e2707e1b949536c1d94e32e3eb33e1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 263bbf16c72bab5a42dc0ba1465d4c7062333071
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49177719"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62952823"
 ---
 # <a name="existsincollectionlttgt-activity-designer"></a>ExistsInCollection&lt;T&gt;活動設計工具
 **ExistsInCollection\<T >** 活動設計工具會用來建立及設定<xref:System.Activities.Statements.ExistsInCollection%601>活動。  
@@ -35,7 +32,7 @@ ms.locfileid: "49177719"
 ### <a name="the-existsincollectiont-properties"></a>ExistsInCollection\<T > 屬性  
  下表顯示 <xref:System.Activities.Statements.ExistsInCollection%601> 屬性，並且描述屬性在設計工具中的使用方式。  
   
-|屬性名稱|必要項|使用方式|  
+|屬性名稱|必要|使用量|  
 |-------------------|--------------|-----------|  
 |<xref:System.Activities.Activity.DisplayName%2A>|False|<xref:System.Activities.Statements.ExistsInCollection%601> 活動的易記名稱。 預設值是 ExistsInCollection\<Int32 >。 雖然 <xref:System.Activities.Activity.DisplayName%2A> 值並非絕對必要，但建議您盡量使用。|  
 |<xref:System.Activities.Statements.ExistsInCollection%601.Item%2A>|True|要加入至集合的項目\<T >。 此項目屬於類型*T*別的*TypeArgument*。 若要指定項目，請在屬性方格中輸入 Visual Basic 運算式。|  
@@ -45,6 +42,6 @@ ms.locfileid: "49177719"
   
 ## <a name="see-also"></a>另請參閱  
  [集合](../workflow-designer/collection-activity-designers.md)   
- [AddToCollection\<T >](../workflow-designer/addtocollection-t-activity-designer.md)   
- [ClearCollection\<T >](../workflow-designer/clearcollection-t-activity-designer.md)   
+ [AddToCollection\<T>](../workflow-designer/addtocollection-t-activity-designer.md)   
+ [ClearCollection\<T>](../workflow-designer/clearcollection-t-activity-designer.md)   
  [RemoveFromCollection\<T>](../workflow-designer/removefromcollection-t-activity-designer.md)

@@ -1,14 +1,9 @@
 ---
 title: DOCCONTEXT_COMPARE |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - DOCCONTEXT_COMPARE
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: ed947c34-b07e-4b69-8381-b6e7cb842862
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 0598fd3848623bdbef39f0c1cfec145399fbdc04
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 6d0fd8cff2f352c8ede674be64062a738c1f3d02
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51758164"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68198790"
 ---
 # <a name="doccontextcompare"></a>DOCCONTEXT_COMPARE
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -71,11 +66,10 @@ enum enum_DOCCONTEXT_COMPARE { 
 ## <a name="requirements"></a>需求  
  標頭： msdbg.h  
   
- 命名空間： Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間：Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
  [列舉型別](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [Compare](../../../extensibility/debugger/reference/idebugdocumentcontext2-compare.md)
-

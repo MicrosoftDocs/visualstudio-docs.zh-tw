@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8dbfc8081f980b7b9e978da782f1627a88a716a3
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55941279"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62809404"
 ---
 # <a name="ca1704-identifiers-should-be-spelled-correctly"></a>CA1704:識別項應該使用正確的拼字
 
@@ -46,7 +46,7 @@ ms.locfileid: "55941279"
 
 - 表示權杖結尾底線，且會移除。 比方說，Hello_world 會語彙基元化為"Hello"，"world"。
 
-- 會移除內嵌的連字號。 例如，for&mat 會語彙基元化為 "format"。
+- 會移除內嵌的連字號。 例如，對於 & for&mat 會語彙基元化為"format"。
 
 ## <a name="language"></a>語言
 

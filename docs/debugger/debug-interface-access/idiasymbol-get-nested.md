@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1b4e44cb63129e79e993d57f3dbd49b2b63f8913
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 864a57b7adb8c77c342367ad5652fb2d839861de
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56644623"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "64796098"
 ---
 # <a name="idiasymbolgetnested"></a>IDiaSymbol::get_nested
 擷取指定的使用者定義資料類型巢狀結構的旗標。
@@ -39,7 +39,7 @@ HRESULT get_nested ( 
  如果成功，則傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。
 
 > [!NOTE]
->  傳回值為`S_FALSE`表示屬性不是適用於符號。
+> 傳回值為`S_FALSE`表示屬性不是適用於符號。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

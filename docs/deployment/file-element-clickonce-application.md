@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b4152482f404596e1d97a94a12890b4c5b298794
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 9345f3f094e1c48204892cd40cca71a7e28eba7c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56604219"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62900267"
 ---
 # <a name="ltfilegt-element-clickonce-application"></a>&lt;檔案&gt;項目 （ClickOnce 應用程式）
 識別所有的非組件檔案下載，並由應用程式。
@@ -86,7 +86,7 @@ ms.locfileid: "56604219"
 ## <a name="elements-and-attributes"></a>元素和屬性
  `file` 項目是選擇性的。 此元素具有下列屬性。
 
-|屬性|說明|
+|屬性|描述|
 |---------------|-----------------|
 |`name`|必要項。 識別檔案的名稱。|
 |`size`|必要項。 指定的大小，以位元組為單位的檔案。|
@@ -97,7 +97,7 @@ ms.locfileid: "56604219"
 ## <a name="typelib"></a>typelib
  `typelib`項目是選擇性檔案項目的子系。 元素會描述屬於 COM 元件的類型程式庫。 此元素具有下列屬性。
 
-|屬性|說明|
+|屬性|描述|
 |---------------|-----------------|
 |`tlbid`|必要項。 指派給類型程式庫的 GUID。|
 |`version`|必要項。 型別程式庫版本號碼。|
@@ -108,7 +108,7 @@ ms.locfileid: "56604219"
 ## <a name="comclass"></a>comClass
  `comClass`項目是選用的子系`file`項目，但如果，則需要[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式包含想要使用免註冊 COM 部署的 COM 元件 此元素具有下列屬性。
 
-|屬性|說明|
+|屬性|描述|
 |---------------|-----------------|
 |`clsid`|必要項。 表示做為 GUID 的 COM 元件類別識別碼。|
 |`description`|選擇性。 類別名稱。|
@@ -124,7 +124,7 @@ ms.locfileid: "56604219"
 ## <a name="cominterfaceexternalproxystub"></a>comInterfaceExternalProxyStub
  `comInterfaceExternalProxyStub`項目是選用的子系`file`項目，但如果可能需要[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式包含想要使用免註冊 COM 部署的 COM 元件 元素包含下列屬性。
 
-|屬性|說明|
+|屬性|描述|
 |---------------|-----------------|
 |`iid`|必要項。 介面識別碼 (IID) 這由這個 proxy。 IID 必須包含在括號括住它。|
 |`baseInterface`|選擇性。 從其介面則是所參考之介面的 IID`iid`衍生。|
@@ -136,7 +136,7 @@ ms.locfileid: "56604219"
 ## <a name="cominterfaceproxystub"></a>comInterfaceProxyStub
  `comInterfaceProxyStub`項目是選用的子系`file`項目，但如果可能需要[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式包含想要使用免註冊 COM 部署的 COM 元件 元素包含下列屬性。
 
-|屬性|說明|
+|屬性|描述|
 |---------------|-----------------|
 |`iid`|必要項。 介面識別碼 (IID) 這由這個 proxy。 IID 必須包含在括號括住它。|
 |`baseInterface`|選擇性。 從其介面則是所參考之介面的 IID`iid`衍生。|
@@ -149,7 +149,7 @@ ms.locfileid: "56604219"
 ## <a name="windowclass"></a>windowClass
  `windowClass`項目是選用的子系`file`項目，但如果可能需要[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式包含想要使用免註冊 COM 部署的 COM 元件 此元素會參考 COM 元件，必須套用至該版本所定義的視窗類別。 元素包含下列屬性。
 
-|屬性|說明|
+|屬性|描述|
 |---------------|-----------------|
 |`versioned`|選擇性。 控制項的內部視窗類別名稱註冊使用的是否包含含有視窗類別的組件的版本。 此屬性的值可以是`yes`或`no`。 預設為 `yes`。 值`no`只應在相同的視窗類別由並排顯示元件和定義對等的非---並存元件，而且您想將它們視為相同的視窗類別。 請注意，視窗類別註冊的一般規則適用 — 只有註冊視窗類別的第一個元件，才能夠註冊，因為它不能套用至它的版本。|
 
@@ -166,16 +166,14 @@ ms.locfileid: "56604219"
 ## <a name="dsigtransform"></a>dsig:Transform
  `dsig:Transform`項目是必要的子系`dsig:Transforms`項目。 `dsig:Transform` 項目具有下列屬性。
 
-
-| 屬性 | 說明 |
+| 屬性 | 描述 |
 |-------------| - |
 | `Algorithm` | 用來計算此檔案的摘要演算法。 目前所使用的唯一值[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]是`urn:schemas-microsoft-com:HashTransforms.Identity`。 |
 
 ## <a name="dsigdigestmethod"></a>dsig:DigestMethod
  `dsig:DigestMethod`項目是必要的子系`hash`項目。 `dsig:DigestMethod` 項目具有下列屬性。
 
-
-| 屬性 | 說明 |
+| 屬性 | 描述 |
 |-------------| - |
 | `Algorithm` | 用來計算此檔案的摘要演算法。 目前所使用的唯一值[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]是`http://www.w3.org/2000/09/xmldsig#sha1`。 |
 

@@ -1,14 +1,9 @@
 ---
 title: IDebugProperty2::SetValueAsReference |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugProperty2::SetValueAsReference
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 341b1b89-4ab8-4e1c-abe2-fb955df5c6b0
 caps.latest.revision: 10
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: f116d2ab53df42a080ab90b6dbecf2ec985fa08a
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: a94e3767ee05e39e847af27dc5999fa8bbbe2d44
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51773739"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68193448"
 ---
 # <a name="idebugproperty2setvalueasreference"></a>IDebugProperty2::SetValueAsReference
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -65,7 +60,7 @@ int SetValueAsReference(
 ## <a name="return-value"></a>傳回值  
  如果成功，則傳回`S_OK`; 否則傳回錯誤程式碼，通常是下列其中之一：  
   
-|錯誤|描述|  
+|Error|說明|  
 |-----------|-----------------|  
 |`E_SETVALUEASREFERENCE_NOTSUPPORTED`|不支援從參考中設定的值。|  
 |`E_SETVALUE_VALUE_CANNOT_BE_SET`|無法設定值，因為這個屬性所參考的方法。|  
@@ -75,4 +70,3 @@ int SetValueAsReference(
 ## <a name="see-also"></a>另請參閱  
  [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)   
  [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)
-

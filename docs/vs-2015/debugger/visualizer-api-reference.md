@@ -1,14 +1,9 @@
 ---
 title: 視覺化檢視 API 參考 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - FSharp
 - VB
@@ -22,13 +17,13 @@ ms.assetid: b9ff4ed0-9e80-49df-9016-a81189319afd
 caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: f55e347b08f3813c21b651a1733c6c6a32597e9f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: ef86bcca5e7b8b6fa8f2b6c5e7a0efe86ab5ba17
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51799102"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68197456"
 ---
 # <a name="visualizer-api-reference"></a>視覺化檢視 API 參考
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,20 +32,17 @@ ms.locfileid: "51799102"
   
 ## <a name="in-this-section"></a>本節內容  
   
--   <xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer?displayProperty=fullName>  
+- <xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer?displayProperty=fullName>  
   
--   <xref:Microsoft.VisualStudio.DebuggerVisualizers.IDialogVisualizerService?displayProperty=fullName>  
+- <xref:Microsoft.VisualStudio.DebuggerVisualizers.IDialogVisualizerService?displayProperty=fullName>  
   
--   <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider?displayProperty=fullName>  
+- <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider?displayProperty=fullName>  
   
--   <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerDevelopmentHost?displayProperty=fullName>  
+- <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerDevelopmentHost?displayProperty=fullName>  
   
--   <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource?displayProperty=fullName>  
+- <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource?displayProperty=fullName>  
   
 ## <a name="see-also"></a>另請參閱  
- [逐步解說： 在 C# 中撰寫視覺化檢視](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)   
- [如何： 撰寫視覺化檢視](../debugger/how-to-write-a-visualizer.md)   
+ [逐步解說：使用 C# 撰寫視覺化檢視](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)   
+ [如何：撰寫視覺化檢視](../debugger/how-to-write-a-visualizer.md)   
  [建立自訂視覺化檢視](../debugger/create-custom-visualizers-of-data.md)
-
-
-

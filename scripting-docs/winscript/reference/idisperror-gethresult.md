@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 161c29d4be70c388003ffc80ec5d885b9bcc632b
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: 6eb4518e39fdab432590601d91b462d869c38e1a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58157824"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446896"
 ---
 # <a name="idisperrorgethresult"></a>IDispError::GetHresult
 擷取的錯誤程式碼`IDispError`物件。  
@@ -50,7 +50,7 @@ HRESULT GetHresult(
  這個方法會擷取來自錯誤碼`IDispError`物件。  
   
 > [!NOTE]
->  這個方法尚未實作。  
+> 這個方法尚未實作。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDispError 介面](../../winscript/reference/idisperror-interface.md)

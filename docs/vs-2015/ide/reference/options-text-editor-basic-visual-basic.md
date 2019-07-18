@@ -18,21 +18,20 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 244c7224d0008c21250da68b518c1a0a55755545
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 461af4c3c8e811c989bc296b6f8f55f398bc5bd5
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54800707"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65674502"
 ---
 # <a name="options-text-editor-basic-visual-basic"></a>基本 (Visual Basic)、文字編輯器、選項
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 位於 [選項] ([工具] 功能表) 對話方塊上 [文字編輯器] 資料夾的[基本] 資料夾中的 [VB 專用] 屬性頁面包含下列屬性：  
   
  **自動插入 End 建構**  
- 在您鍵入程序宣告的第一行 (例如 `Sub Main—`) 並按 ENTER 時，文字編輯器會新增對稱的 `End Sub` 行。 同樣地，如果新增 [For](http://msdn.microsoft.com/library/f5fc0d51-67ce-4c36-9f09-31c9a91c94e9) 迴圈，則文字編輯器會新增對稱的 `Next` 陳述式。 選取此選項後，程式碼編輯器會自動新增 End 建構。  
+ 在您鍵入程序宣告的第一行 (例如 `Sub Main—`) 並按 ENTER 時，文字編輯器會新增對稱的 `End Sub` 行。 同樣地，如果新增 [For](https://msdn.microsoft.com/library/f5fc0d51-67ce-4c36-9f09-31c9a91c94e9) 迴圈，則文字編輯器會新增對稱的 `Next` 陳述式。 選取此選項後，程式碼編輯器會自動新增 End 建構。  
   
  **程式碼美化排列 (重新格式化)**  
  文字編輯器會適當地重新格式化您的程式碼。 選取此選項後，程式碼編輯器將會：  

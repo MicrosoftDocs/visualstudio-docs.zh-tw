@@ -1,14 +1,9 @@
 ---
-title: IDebugPortSupplier3 |Microsoft Docs
-ms.custom: ''
+title: IDebugPortSupplier3 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugPortSupplier3
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: e458cd02-2370-4435-8953-17d7a60ce152
 caps.latest.revision: 9
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: f42485b84aea9eaa4d08dec9b2d5539cb4646cba
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: e4ece720cf6880bba528dee99cdbdeb25c10087a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51791779"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65674136"
 ---
 # <a name="idebugportsupplier3"></a>IDebugPortSupplier3
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -39,7 +34,7 @@ IDebugPortSupplier3 : IDebugPortSupplier2
  自訂的連接埠提供者會實作此介面支援保存或儲存至磁碟的連接埠資訊。 必須為相同的物件上實作這個介面[IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md)介面。  
   
 ## <a name="notes-for-callers"></a>呼叫端資訊  
- 呼叫[QueryInterface](http://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3)上`IDebugPortSupplier2`介面，以取得此介面。  
+ 呼叫[QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3)上`IDebugPortSupplier2`介面，以取得此介面。  
   
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法  
  除了繼承自方法[IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md)介面，此介面支援下列：  
@@ -57,11 +52,10 @@ IDebugPortSupplier3 : IDebugPortSupplier2
 ## <a name="requirements"></a>需求  
  標頭： msdbg.h  
   
- 命名空間： Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間：Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
  [核心介面](../../../extensibility/debugger/reference/core-interfaces.md)   
  [IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md)
-

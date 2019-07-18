@@ -7,17 +7,17 @@ helpviewer_keywords:
 - text, menus
 - commands, changing text
 ms.assetid: 5cb676a0-c6e2-47e5-bd2b-133dc8842e46
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 92e06345164b9ad147c6ba204773efaa7180b943
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 6ba19a6536be7f0f5855ee9035e80989c105cbf7
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56315855"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66321115"
 ---
 # <a name="change-the-text-of-a-menu-command"></a>變更功能表命令的文字
 下列步驟示範如何使用變更功能表命令的文字標籤<xref:System.ComponentModel.Design.IMenuCommandService>服務。

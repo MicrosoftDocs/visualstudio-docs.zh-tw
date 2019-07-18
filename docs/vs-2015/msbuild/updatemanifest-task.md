@@ -17,23 +17,22 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 54364f40c25deb4a32431c42f74d76bbdd42b155
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 5e2ec8a0cd854a04c338add22c3f90daf0bf14ba
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54802143"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59656995"
 ---
 # <a name="updatemanifest-task"></a>UpdateManifest 工作
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 更新資訊清單中選取的屬性，並重新簽署。  
   
 ## <a name="parameters"></a>參數  
  下表說明 `UpdateManifest` 工作的參數。  
   
-|參數|描述|  
+|參數|說明|  
 |---------------|-----------------|  
 |`ApplicationManifest`|必要的 <xref:Microsoft.Build.Framework.ITaskItem> 參數。<br /><br /> 指定應用程式資訊清單。|  
 |`ApplicationPath`|必要的 `String` 參數。<br /><br /> 指定應用程式資訊清單的路徑。|  

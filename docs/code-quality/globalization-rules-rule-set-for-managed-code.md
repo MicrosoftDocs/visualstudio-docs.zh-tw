@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 28199eb9fa09e2096939ffa8e678eb9812a61b1f
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55940473"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62816396"
 ---
 # <a name="globalization-rules-rule-set-for-managed-code"></a>適用於 Managed 程式碼的全球化規則規則集
 您可以使用 Microsoft 全球化規則規則集將焦點放在可能會導致資料不會正確出現在不同的語言、 地區設定中和文化特性的應用程式中的問題。 您應該包含這個規則集如果當地語系化您的應用程式，全球化，或兩者。

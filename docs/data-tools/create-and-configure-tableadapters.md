@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: d4243bcedea1699ba02b3c3715cab7f61ba62281
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.openlocfilehash: 026b670deb5beff42c927894ee9851ddb3ccc3ad
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55950015"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62567519"
 ---
 # <a name="create-and-configure-tableadapters"></a>建立和設定 TableAdapter
 
@@ -80,16 +80,16 @@ Tableadapter 的簡介，請參閱 <<c0> [ 使用 Tableadapter 填入資料集](
 
 ### <a name="to-start-the-tableadapter-query-configuration-wizard-with-a-new-query"></a>若要開始使用新的查詢的 TableAdapter 查詢組態精靈
 
-1.  在 **DataSet 設計工具**中開啟資料集。
+1. 在 **DataSet 設計工具**中開啟資料集。
 
-2.  如果您要建立新的查詢，拖曳**查詢**物件**資料集**索引標籤**工具箱**拖曳至<xref:System.Data.DataTable>，或選取**加入查詢**TableAdapter 的快顯功能表中。 您也可以拖曳**查詢**物件上的空白區域**Dataset 設計工具**，這會建立有關聯的 TableAdapter <xref:System.Data.DataTable>。 這些查詢只能傳回單一 （純量） 值或執行的更新、 插入或刪除對資料庫的命令。
+2. 如果您要建立新的查詢，拖曳**查詢**物件**資料集**索引標籤**工具箱**拖曳至<xref:System.Data.DataTable>，或選取**加入查詢**TableAdapter 的快顯功能表中。 您也可以拖曳**查詢**物件上的空白區域**Dataset 設計工具**，這會建立有關聯的 TableAdapter <xref:System.Data.DataTable>。 這些查詢只能傳回單一 （純量） 值或執行的更新、 插入或刪除對資料庫的命令。
 
-3.  在 **選擇資料連接**畫面上，選取或建立查詢將使用的連接。
+3. 在 **選擇資料連接**畫面上，選取或建立查詢將使用的連接。
 
     > [!NOTE]
     > 設計工具無法判斷適當的連接，若要使用，或沒有連線可供使用時，才會出現此畫面。
 
-4.  在 **選擇命令類型**畫面上，選取從資料庫擷取資料的下列方法：
+4. 在 **選擇命令類型**畫面上，選取從資料庫擷取資料的下列方法：
 
     - **使用 SQL 陳述式**可讓您輸入 SQL 陳述式，從您的資料庫選取的資料。
 

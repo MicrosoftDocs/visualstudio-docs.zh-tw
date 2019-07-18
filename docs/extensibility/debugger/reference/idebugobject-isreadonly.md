@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugObject::IsReadOnly method
 ms.assetid: c460f772-d08a-4b36-81f3-dff6a51a93fd
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bef21a491a175e7f1a7f93cd7c8d9d70a5ec6279
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 21c8a21f3cc85247f1cef4131768984f99fff764
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56682618"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66349943"
 ---
 # <a name="idebugobjectisreadonly"></a>IDebugObject::IsReadOnly
 判斷這個物件是否為唯讀。
@@ -36,10 +39,9 @@ int IsReadOnly(
 );
 ```
 
-#### <a name="parameters"></a>參數
- `pfIsReadOnly`
-
- [out]會傳回非零 (`TRUE`) 如果此物件是唯讀的; 否則會傳回零 (`FALSE`)。
+## <a name="parameters"></a>參數
+`pfIsReadOnly`\
+[out]會傳回非零 (`TRUE`) 如果此物件是唯讀的; 否則會傳回零 (`FALSE`)。
 
 ## <a name="return-value"></a>傳回值
  如果成功，會傳回 S_OK;否則，傳回錯誤碼。

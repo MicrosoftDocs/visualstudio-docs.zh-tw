@@ -1,14 +1,9 @@
 ---
 title: IDebugObject2::GetBackingFieldForProperty |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugObject2::GetBackingFieldForProperty
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: e72c6338-5573-4fad-8075-f3ade3435424
 caps.latest.revision: 8
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 750a881fe6a73ef1bf43f928c8aa11d9b6a5643a
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 5eadbed61638ff1442c4ed7033426e245abf930a
+ms.sourcegitcommit: 0cd282a7584b9bfd4df7882f8fdf3ad8a270e219
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51752307"
+ms.lasthandoff: 07/01/2019
+ms.locfileid: "62536382"
 ---
 # <a name="idebugobject2getbackingfieldforproperty"></a>IDebugObject2::GetBackingFieldForProperty
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -55,4 +50,3 @@ int GetBackingFieldForProperty(
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md)
-

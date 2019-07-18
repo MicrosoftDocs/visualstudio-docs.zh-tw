@@ -1,14 +1,9 @@
 ---
-title: CA1813： 避免使用非密封的屬性 |Microsoft Docs
-ms.custom: ''
+title: CA1813:避免使用非密封的屬性 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1813
 - AvoidUnsealedAttributes
@@ -20,14 +15,14 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 97eeacdb0753b0e1b3c42ba83245ba6ace9734d7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0624ff6ed890b6f0c14f3a03fe774c422334737d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49830544"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65690284"
 ---
-# <a name="ca1813-avoid-unsealed-attributes"></a>CA1813：避免使用非密封屬性
+# <a name="ca1813-avoid-unsealed-attributes"></a>CA1813:避免使用非密封屬性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -56,12 +51,9 @@ ms.locfileid: "49830544"
  [!code-vb[FxCop.Performance.AttributesSealed#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Performance.AttributesSealed/vb/FxCop.Performance.AttributesSealed.vb#1)]
 
 ## <a name="related-rules"></a>相關的規則
- [CA1019：必須定義屬性引數的存取子](../code-quality/ca1019-define-accessors-for-attribute-arguments.md)
+ [CA1019： 必須定義存取子屬性引數](../code-quality/ca1019-define-accessors-for-attribute-arguments.md)
 
- [CA1018：必須以 AttributeUsageAttribute 標記屬性](../code-quality/ca1018-mark-attributes-with-attributeusageattribute.md)
+ [CA1018:以 AttributeUsageAttribute 標記屬性](../code-quality/ca1018-mark-attributes-with-attributeusageattribute.md)
 
 ## <a name="see-also"></a>另請參閱
- [屬性](http://msdn.microsoft.com/library/ee0038ef-b247-4747-a650-3c5c5cd58d8b)
-
-
-
+ [屬性](https://msdn.microsoft.com/library/ee0038ef-b247-4747-a650-3c5c5cd58d8b)

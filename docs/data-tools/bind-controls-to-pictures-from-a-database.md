@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5afabf877fbd1a34bc579d81a137abbd5771fed5
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.openlocfilehash: 4e41cb7bf747a1c083dc1728d7ea26f47ad8fa48
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55944061"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62818159"
 ---
 # <a name="bind-controls-to-pictures-from-a-database"></a>從資料庫將控制項繫結至圖片
 
@@ -34,14 +34,14 @@ ms.locfileid: "55944061"
 
 ## <a name="to-bind-a-picture-in-a-database-to-a-control"></a>在資料庫中將圖片繫結至控制項
 
-1.  請確定您想要將控制項加入設計介面是在 WPF 設計工具或 Windows Form 設計工具中開啟。
+1. 請確定您想要將控制項加入設計介面是在 WPF 設計工具或 Windows Form 設計工具中開啟。
 
-2.  在 [ **Zdroje dat** ] 視窗中，展開所需的資料表，或要顯示其資料行或屬性的物件。
+2. 在 [ **Zdroje dat** ] 視窗中，展開所需的資料表，或要顯示其資料行或屬性的物件。
 
    > [!TIP]
    > 如果**資料來源** 視窗未開啟，請開啟所選取**檢視** > **其他 Windows** > **Zdroje dat**.
 
-3.  選取的資料行或屬性，其中包含影像資料，並從下拉式清單控制項清單中選取其中一個下列控制項：
+3. 選取的資料行或屬性，其中包含影像資料，並從下拉式清單控制項清單中選取其中一個下列控制項：
 
     - 如果 WPF 設計工具開啟，請選取**映像**。
 

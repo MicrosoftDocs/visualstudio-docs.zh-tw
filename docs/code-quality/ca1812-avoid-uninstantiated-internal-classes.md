@@ -1,6 +1,6 @@
 ---
 title: CA1812:避免使用未執行個體化的內部類別
-ms.date: 11/04/2016
+ms.date: 05/16/2019
 ms.topic: reference
 f1_keywords:
 - CA1812
@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 08d8b907e4a211b0735f07377c21dec1c0a982c9
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 6946434708e38bde7f6efcfc8404da14f91b41ee
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55950743"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66744707"
 ---
 # <a name="ca1812-avoid-uninstantiated-internal-classes"></a>CA1812:避免使用未執行個體化的內部類別
 
@@ -32,11 +32,11 @@ ms.locfileid: "55950743"
 
 ## <a name="cause"></a>原因
 
-組件層級類型的執行個體不是由組件中的程式碼所建立。
+內部 （組件層級） 型別永遠不會具現化。
 
 ## <a name="rule-description"></a>規則描述
 
-此規則會嘗試找出其中的型別，建構函式的呼叫，並報告違規情形，如果不找到任何呼叫。
+此規則會嘗試找出其中的型別建構函式的呼叫，並報告違規情形，如果不找到任何呼叫。
 
 此規則就不會檢查下列類型：
 
@@ -50,19 +50,17 @@ ms.locfileid: "55950743"
 
 - 編譯器發出的陣列類型
 
-- 類型，無法具現化，並定義`static`(`Shared` Visual Basic 中) 只方法。
+- 類型，無法具現化，並只定義[ `static` ](/dotnet/csharp/language-reference/keywords/static) ([ `Shared`在 Visual Basic 中](/dotnet/visual-basic/language-reference/modifiers/shared)) 方法。
 
-如果您套用<xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute?displayProperty=fullName>正在分析之組件，此規則不會發生在標示為任何建構函式`internal`因為您不知道欄位是否正由另一個`friend`組件。
-
-即使您不能解決這項限制，在 Visual Studio 程式碼分析，外部的獨立 FxCop 會內部建構函式上每個`friend`組件會出現在分析中。
+如果您套用<xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute?displayProperty=fullName>正在分析之組件，此規則會不加上旗標標示為的型別[ `internal` ](/dotnet/csharp/language-reference/keywords/internal) ([ `Friend`在 Visual Basic 中](/dotnet/visual-basic/language-reference/modifiers/friend)) 欄位可能是因為使用 friend 組件。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
 
-若要修正此規則的違規情形，移除類型，或加入程式碼使用它。 如果型別只包含靜態方法，請加入下列其中一種類型，以避免編譯器發出的預設公用執行個體建構函式：
+若要修正此規則的違規情形，移除類型，或加入程式碼使用它。 如果型別只包含`static`方法，加入下列其中一種類型，以避免編譯器發出的預設公用執行個體建構函式：
+
+- `static`修飾詞C#.NET Framework 2.0 或更新版本為目標的類型。
 
 - 私用建構函式以.NET Framework 1.0 和 1.1 版為目標的類型。
-
-- `static` (`Shared` Visual Basic 中) 修飾詞的類型為目標[!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)]。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
 
@@ -70,9 +68,9 @@ ms.locfileid: "55950743"
 
 - 這類的類別建立透過晚期繫結反映方法<xref:System.Activator.CreateInstance%2A?displayProperty=fullName>。
 
-- 執行階段所自動建立類別或[!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]。 例如，類別實作<xref:System.Configuration.IConfigurationSectionHandler?displayProperty=fullName>或<xref:System.Web.IHttpHandler?displayProperty=fullName>。
+- 類別會自動建立，藉由執行階段或 ASP.NET。 自動建立類別的一些範例包括實作<xref:System.Configuration.IConfigurationSectionHandler?displayProperty=fullName>或<xref:System.Web.IHttpHandler?displayProperty=fullName>。
 
-- 類別會當做有新的條件約束的泛型類型參數傳遞。 例如，下列範例將會引發此規則。
+- 類別會當做有類型參數傳遞[`new`條件約束](/dotnet/csharp/language-reference/keywords/new-constraint)。 下列範例會標示規則 CA1812:
 
     ```csharp
     internal class MyClass
@@ -88,17 +86,13 @@ ms.locfileid: "55950743"
             return new T();
         }
     }
-    // [...]
+
     MyGeneric<MyClass> mc = new MyGeneric<MyClass>();
     mc.Create();
     ```
 
-  在這些情況下，我們建議您隱藏這個警告。
-
 ## <a name="related-rules"></a>相關的規則
 
-[CA1811:避免使用未呼叫的私用程式碼](../code-quality/ca1811-avoid-uncalled-private-code.md)
-
-[CA1801： 必須檢閱未使用的參數](../code-quality/ca1801-review-unused-parameters.md)
-
-[CA1804： 必須移除未使用的區域變數](../code-quality/ca1804-remove-unused-locals.md)
+- [CA1811:避免使用未呼叫的私用程式碼](../code-quality/ca1811-avoid-uncalled-private-code.md)
+- [CA1801： 必須檢閱未使用的參數](../code-quality/ca1801-review-unused-parameters.md)
+- [CA1804： 必須移除未使用的區域變數](../code-quality/ca1804-remove-unused-locals.md)

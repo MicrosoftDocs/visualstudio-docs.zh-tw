@@ -15,17 +15,16 @@ caps.latest.revision: 68
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 21f94323fbfa7369e3fef93b0f95a8db2ea46ce2
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 9979283258611b38e894c08446352082bcc7134e
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54774856"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65688099"
 ---
 # <a name="application-page-project-designer-visual-basic"></a>Application Page, Project Designer (Visual Basic)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 使用 [專案設計工具] 的 [應用程式] 頁面來指定專案的應用程式設定和屬性。  
   
  若要存取 [應用程式] 頁面，請在方案總管中選擇專案節點 (而不是 [方案] 節點)。 然後選擇功能表列上的 [專案]、[屬性]。 [專案設計工具] 出現時，請按一下 [應用程式] 索引標籤。  
@@ -36,7 +35,7 @@ ms.locfileid: "54774856"
  下列選項可讓您設定應用程式的一般設定。  
   
  **組件名稱**  
- 指定將包含組件資訊清單之輸出檔的名稱。 如果您變更此屬性，也會變更 [輸出名稱] 屬性。 您也可以在命令提示字元使用 [/out (Visual Basic)](http://msdn.microsoft.com/library/9f148c15-0909-4cb8-a2db-777f8a8b45ae) 進行這項變更。 如需如何以程式設計方式存取此屬性的資訊，請參閱 <xref:VSLangProj.ProjectProperties.AssemblyName%2A>。  
+ 指定將包含組件資訊清單之輸出檔的名稱。 如果您變更此屬性，也會變更 [輸出名稱] 屬性。 您也可以在命令提示字元使用 [/out (Visual Basic)](https://msdn.microsoft.com/library/9f148c15-0909-4cb8-a2db-777f8a8b45ae) 進行這項變更。 如需如何以程式設計方式存取此屬性的資訊，請參閱 <xref:VSLangProj.ProjectProperties.AssemblyName%2A>。  
   
  **根命名空間**  
  指定專案中所有檔案的基底命名空間。 例如，如果您將 [根命名空間] 設為 `Project1`，而且您程式碼的任何命名空間外部有 `Class1`，則其命名空間為 `Project1.Class1`。 如果程式碼的命名空間 `Order` 中有 `Class2`，則其命名空間為 `Project1.Order.Class2`。  
@@ -44,11 +43,11 @@ ms.locfileid: "54774856"
  如果您清除 [根命名空間]，則可以在程式碼中指定專案的命名空間結構。  
   
 > [!NOTE]
->  如果您在 [Namespace 陳述式](http://msdn.microsoft.com/library/a31fbd95-9ace-4c3d-bbb1-51222a2272b2)中使用 Global 關鍵字，則可以從專案的根命名空間定義一個命名空間。 如果您清除 [根命名空間]，`Global` 會成為最上層命名空間，因此 `Namespace` 陳述式中不需要 `Global` 關鍵字。 如需詳細資訊，請參閱 [Visual Basic 中的命名空間](http://msdn.microsoft.com/library/cffac744-ab8c-4f1f-ba50-732c22ab4b88)中的＜Namespace 陳述式中的 Global 關鍵字＞。  
+> 如果您在 [Namespace 陳述式](https://msdn.microsoft.com/library/a31fbd95-9ace-4c3d-bbb1-51222a2272b2)中使用 Global 關鍵字，則可以從專案的根命名空間定義一個命名空間。 如果您清除 [根命名空間]，`Global` 會成為最上層命名空間，因此 `Namespace` 陳述式中不需要 `Global` 關鍵字。 如需詳細資訊，請參閱 [Visual Basic 中的命名空間](https://msdn.microsoft.com/library/cffac744-ab8c-4f1f-ba50-732c22ab4b88)中的＜Namespace 陳述式中的 Global 關鍵字＞。  
   
- 如需如何在程式碼中建立命名空間的資訊，請參閱 [Namespace 陳述式](http://msdn.microsoft.com/library/a31fbd95-9ace-4c3d-bbb1-51222a2272b2)。  
+ 如需如何在程式碼中建立命名空間的資訊，請參閱 [Namespace 陳述式](https://msdn.microsoft.com/library/a31fbd95-9ace-4c3d-bbb1-51222a2272b2)。  
   
- 如需根命名空間屬性的詳細資訊，請參閱 [/rootnamespace](http://msdn.microsoft.com/library/e9245edf-6bef-420d-a7c7-324117752783)。  
+ 如需根命名空間屬性的詳細資訊，請參閱 [/rootnamespace](https://msdn.microsoft.com/library/e9245edf-6bef-420d-a7c7-324117752783)。  
   
  如需如何以程式設計方式存取此屬性的資訊，請參閱 <xref:VSLangProj.ProjectProperties.RootNamespace%2A>。  
   
@@ -58,7 +57,7 @@ ms.locfileid: "54774856"
  預設值會符合您在 [新增專案] 對話方塊中指定的目標架構。  
   
 > [!NOTE]
->  第一次開啟該對話方塊時，會自動設定[必要條件對話方塊](../../ide/reference/prerequisites-dialog-box.md)中所列的必要條件套件。 如果您接著變更專案的目標架構，就必須手動指定必要條件以符合新的目標架構。  
+> 第一次開啟該對話方塊時，會自動設定[必要條件對話方塊](../../ide/reference/prerequisites-dialog-box.md)中所列的必要條件套件。 如果您接著變更專案的目標架構，就必須手動指定必要條件以符合新的目標架構。  
   
  如需詳細資訊，請參閱[如何：以 .NET Framework 版本為目標](../../ide/how-to-target-a-version-of-the-dotnet-framework.md)和 [Visual Studio 多目標概觀](../../ide/visual-studio-multi-targeting-overview.md)。  
   
@@ -70,12 +69,12 @@ ms.locfileid: "54774856"
  如果您指定 [WinMD 檔案] 選項，則類型可以投影至任何 Windows 執行階段程式設計語言。 將專案的輸出封裝為 WinMD 檔案，即可使用多種語言來撰寫應用程式，並讓程式碼交互操作，如同您使用相同的語言來撰寫程式碼一樣。 您可以針對以 Windows 執行階段程式庫為目標的方案使用 [WinMD 檔案]選項，包括 [!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)] 應用程式。 如需詳細資訊，請參閱[在 C++ 和 Visual Basic 中建立 Windows 執行階段元件](http://go.microsoft.com/fwlink/?LinkId=231895)。  
   
 > [!NOTE]
->  Windows 執行階段可以投影類型，以使用它們的語言顯示為原生物件。 例如，與 Windows 執行階段互動的 JavaScript 應用程式會使用它作為一組 JavaScript 物件，而且 C# 應用程式會使用該程式庫作為 .NET 物件集合。 將專案的輸出封裝為 WinMD 檔案，即可利用 Windows 執行階段所使用的相同技術。  
+> Windows 執行階段可以投影類型，以使用它們的語言顯示為原生物件。 例如，與 Windows 執行階段互動的 JavaScript 應用程式會使用它作為一組 JavaScript 物件，而且 C# 應用程式會使用該程式庫作為 .NET 物件集合。 將專案的輸出封裝為 WinMD 檔案，即可利用 Windows 執行階段所使用的相同技術。  
   
- 如需 [應用程式類型] 屬性的詳細資訊，請參閱 [/target (Visual Basic)](http://msdn.microsoft.com/library/e0954147-548b-461f-9c4b-a8f88845616c)。 如需如何以程式設計方式存取該屬性的資訊，請參閱 <xref:VSLangProj.ProjectProperties.OutputType%2A>。  
+ 如需 [應用程式類型] 屬性的詳細資訊，請參閱 [/target (Visual Basic)](https://msdn.microsoft.com/library/e0954147-548b-461f-9c4b-a8f88845616c)。 如需如何以程式設計方式存取該屬性的資訊，請參閱 <xref:VSLangProj.ProjectProperties.OutputType%2A>。  
   
  **圖示**  
- 設定想要用來當作程式圖示的 .ico 檔案。 選取 [\<瀏覽...>]，以瀏覽現有圖形。 如需詳細資訊，請參閱 [/win32icon](http://msdn.microsoft.com/library/aecaab01-9353-46c5-941c-6edabd4eff92) (或 [/win32icon (C# 編譯器選項)](http://msdn.microsoft.com/library/756d9b6d-ab07-41b7-ba58-5bd88f711138))。 若要以程式設計方式存取此屬性，請參閱 <xref:VSLangProj.ProjectProperties.ApplicationIcon%2A>。  
+ 設定想要用來當作程式圖示的 .ico 檔案。 選取 [\<瀏覽...>]，以瀏覽現有圖形。 如需詳細資訊，請參閱 [/win32icon](https://msdn.microsoft.com/library/aecaab01-9353-46c5-941c-6edabd4eff92) (或 [/win32icon (C# 編譯器選項)](https://msdn.microsoft.com/library/756d9b6d-ab07-41b7-ba58-5bd88f711138))。 若要以程式設計方式存取此屬性，請參閱 <xref:VSLangProj.ProjectProperties.ApplicationIcon%2A>。  
   
  **啟動表單/啟始物件/啟動 URI**  
  指定應用程式的啟動表單或進入點。  
@@ -86,7 +85,7 @@ ms.locfileid: "54774856"
   
  如果清除 [啟用應用程式架構]，此清單會成為 [啟始物件]，並顯示具有 `Sub Main` 的表單和類別或模組。  
   
- [啟始物件] 定義要在應用程式載入時呼叫的進入點。 通常，這會設定成您應用程式中的主要表單，或應該在應用程式啟動時執行的 `Sub Main` 處理序。 因為類別庫沒有進入點，所以這個屬性的唯一選項是 [(無)]。 如需詳細資訊，請參閱 [/main](http://msdn.microsoft.com/library/83fc339d-6652-415d-b205-b5133319b5b0)。 若要以程式設計方式存取此屬性，請參閱 <xref:VSLangProj.ProjectProperties.StartupObject%2A>。  
+ [啟始物件] 定義要在應用程式載入時呼叫的進入點。 通常，這會設定成您應用程式中的主要表單，或應該在應用程式啟動時執行的 `Sub Main` 處理序。 因為類別庫沒有進入點，所以這個屬性的唯一選項是 [(無)]。 如需詳細資訊，請參閱 [/main](https://msdn.microsoft.com/library/83fc339d-6652-415d-b205-b5133319b5b0)。 若要以程式設計方式存取此屬性，請參閱 <xref:VSLangProj.ProjectProperties.StartupObject%2A>。  
   
  **組件資訊**  
  按一下此按鈕，以顯示[組件資訊對話方塊](../../ide/reference/assembly-information-dialog-box.md)。  
@@ -111,7 +110,7 @@ ms.locfileid: "54774856"
  [Windows 應用程式架構屬性] 區段中具有下列設定。 只有在選取 [啟用應用程式架構] 核取方塊時，才能使用這些選項。 後續區段描述 Windows Presentation Foundation (WPF) 應用程式的 [Windows 應用程式架構屬性] 設定。  
   
  **啟用 XP 視覺化樣式**  
- 啟用或停用 Windows XP 視覺化樣式，也稱為 [Windows XP 佈景主題]。 例如，Windows XP 視覺化樣式會啟用具有圓角和動態色彩的控制項。 會啟用預設值。 如需 Windows XP 視覺化樣式的詳細資訊，請參閱 [Windows XP 功能和 Windows Form 控制項](http://msdn.microsoft.com/bc7fab94-fce9-4bf1-a8ad-a5837c91c3c0))。  
+ 啟用或停用 Windows XP 視覺化樣式，也稱為 [Windows XP 佈景主題]。 例如，Windows XP 視覺化樣式會啟用具有圓角和動態色彩的控制項。 會啟用預設值。 如需 Windows XP 視覺化樣式的詳細資訊，請參閱 [Windows XP 功能和 Windows Form 控制項](https://msdn.microsoft.com/bc7fab94-fce9-4bf1-a8ad-a5837c91c3c0))。  
   
  **建立單一執行個體應用程式**  
  選取此核取方塊，來防止使用者執行應用程式的多個執行個體。 此核取方塊的預設設定會予以清除。 此設定允許執行應用程式的多個執行個體。  
@@ -160,4 +159,4 @@ ms.locfileid: "54774856"
  特定應用程式狀態變更時 (例如，應用程式啟動或關機時)，<xref:System.Windows.Application> 物件會引發事件。 如需此類別所公開的完整事件清單，請參閱 <xref:System.Windows.Application>。 這些事件是在 `Application` 部分類別的使用者程式碼區段中處理。  
   
 ## <a name="see-also"></a>請參閱  
-[管理應用程式屬性](../../ide/application-properties.md)[撰寫 Office 方案中的程式碼](http://msdn.microsoft.com/library/2d4d8fd0-e881-4829-976f-0d1a9221dec0)
+[管理應用程式屬性](../../ide/application-properties.md)[撰寫 Office 方案中的程式碼](https://msdn.microsoft.com/library/2d4d8fd0-e881-4829-976f-0d1a9221dec0)

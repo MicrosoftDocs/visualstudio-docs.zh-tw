@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8fdae06137586f11de1a30a73894c46c7fb18fa6
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955345"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62546280"
 ---
 # <a name="ca1701-resource-string-compound-words-should-be-cased-correctly"></a>CA1701:資源字串複合字應該使用正確的大小寫
 
@@ -58,7 +58,7 @@ ms.locfileid: "55955345"
 
 它可安全地隱藏此規則的警告，如果拼字檢查字典所辨識的複合字的兩個部分，且其目的是要使用兩個字。
 
-您也可以新增至拼字檢查程式的自訂字典的複合字。 自訂字典中的文字不會導致違規。 如需詳細資訊，請參閱[＜How to：自訂程式碼分析字典](../code-quality/how-to-customize-the-code-analysis-dictionary.md)。
+您也可以新增至拼字檢查程式的自訂字典的複合字。 自訂字典中的文字不會導致違規。 如需詳細資訊，請參閱[如何：自訂程式碼分析字典](../code-quality/how-to-customize-the-code-analysis-dictionary.md)。
 
 ## <a name="related-rules"></a>相關的規則
 

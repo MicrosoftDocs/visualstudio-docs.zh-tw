@@ -1,27 +1,22 @@
 ---
 title: IDebugGenericFieldDefinition::GetFormalTypeParams |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - GetFormalTypeParams
 - IDebugGenericFieldDefinition::GetFormalTypeParams
 ms.assetid: cadbd6a1-bc7c-4aff-8777-5396b7a23c3e
 caps.latest.revision: 10
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 9792c856a5ae048fc09c713ca7d31955196daa6f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 2e4595cd8a93c266d0eb70e91b8ab8ca8aeb8cb5
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51720592"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68180844"
 ---
 # <a name="idebuggenericfielddefinitiongetformaltypeparams"></a>IDebugGenericFieldDefinition::GetFormalTypeParams
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -64,4 +59,3 @@ int GetFormalTypeParams(
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugGenericFieldDefinition](../../../extensibility/debugger/reference/idebuggenericfielddefinition.md)
-

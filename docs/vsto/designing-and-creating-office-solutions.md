@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b939640b0676ae34eedeed96c8a4b6b21a5a37e4
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 6ea209b380948196ee20cc4e2085fa46fab76efc
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56599515"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441835"
 ---
 # <a name="design-and-create-office-solutions"></a>設計和建立 Office 方案
 
@@ -54,7 +54,7 @@ Visual Studio 提供您可用來建立幾種不同類型之 Office 方案的專�
   如果 Visual Studio 會變更您的專案的目標.NET Framework，而且您使用 ClickOnce 來部署您的解決方案，請確定也選取對應中的.NET Framework 版本**必要條件** 對話方塊。 當您為專案變更此目標 Framework 時，選取此選項並不會自動變更。 如需詳細資訊，請參閱[如何：安裝必要條件來執行 Office 方案的使用者電腦上](https://msdn.microsoft.com/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98)。
 
 > [!NOTE]
->  在使用 [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] 建立的 Office 專案中，您無法以 .NET Framework 3.5 或更早版本為目標。 您使用 [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] 建立的 Office 專案需要 [!INCLUDE[net_client_v40_long](../vsto/includes/net-client-v40-long-md.md)] 中首次推出的功能。
+> 在使用 [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] 建立的 Office 專案中，您無法以 .NET Framework 3.5 或更早版本為目標。 您使用 [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] 建立的 Office 專案需要 [!INCLUDE[net_client_v40_long](../vsto/includes/net-client-v40-long-md.md)] 中首次推出的功能。
 
 ### <a name="understand-when-the-office-pias-are-required-on-end-user-computers"></a>了解使用者電腦上需要 Office Pia 時
  根據預設，Office 主要 interop 組件 (Pia) 不需要安裝在使用者電腦上，如果**內嵌 Interop 類型**專案中的每個 Office PIA 參考的屬性設定為 **，則為 True**，這是預設值。 在此情節中，您的方案所使用的 PIA 類型的類型資訊會在建置專案時嵌入至方案組件。 在執行階段，內嵌的類型資訊用而非使用 Pia，來呼叫 Office 應用程式的 COM 架構物件模型。 如需 Pia 類型如何內嵌至您的解決方案的詳細資訊，請參閱[類型等價和內嵌 interop 類型](/dotnet/framework/interop/type-equivalence-and-embedded-interop-types)。

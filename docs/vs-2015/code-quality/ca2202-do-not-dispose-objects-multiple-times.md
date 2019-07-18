@@ -1,14 +1,9 @@
 ---
-title: CA2202： 不要處置物件多次 |Microsoft Docs
-ms.custom: ''
+title: CA2202:不要多次處置物件 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA2202
 - Do not dispose objects multiple times
@@ -20,14 +15,14 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: de3bc29e6d843532e4c15db1e33673d4f63c5179
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3dfe606e3083c937db3ba3d1e6cd49d34bace853
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49830713"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697975"
 ---
-# <a name="ca2202-do-not-dispose-objects-multiple-times"></a>CA2202：不要多次處置物件
+# <a name="ca2202-do-not-dispose-objects-multiple-times"></a>CA2202:不要多次處置物件的 Dispose 方法
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -44,7 +39,7 @@ ms.locfileid: "49830713"
  正確實作的<xref:System.IDisposable.Dispose%2A>方法可以多次呼叫而不擲回例外狀況。 不過，這不保證，以避免產生<xref:System.ObjectDisposedException?displayProperty=fullName>您不應該呼叫<xref:System.IDisposable.Dispose%2A>一次以上的物件。
 
 ## <a name="related-rules"></a>相關的規則
- [CA2000：必須在超出範圍前處置物件](../code-quality/ca2000-dispose-objects-before-losing-scope.md)
+ [CA2000： 必須在超出範圍前處置物件](../code-quality/ca2000-dispose-objects-before-losing-scope.md)
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
  若要修正此規則的違規情形，請變更程式碼路徑中，因此，不論實作<xref:System.IDisposable.Dispose%2A>呼叫物件一次。
@@ -89,7 +84,4 @@ finally
 ```
 
 ## <a name="see-also"></a>另請參閱
- <xref:System.IDisposable?displayProperty=fullName> [處置模式](http://msdn.microsoft.com/library/31a6c13b-d6a2-492b-9a9f-e5238c983bcb)
-
-
-
+ <xref:System.IDisposable?displayProperty=fullName> [處置模式](https://msdn.microsoft.com/library/31a6c13b-d6a2-492b-9a9f-e5238c983bcb)

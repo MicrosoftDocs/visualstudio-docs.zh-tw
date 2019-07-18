@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProperty3::GetCustomViewerList
 ms.assetid: 74490fd8-6f44-4618-beea-dab64961bb8a
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7bf31379f99c9cde8b0050b080797f3a4e70acea
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 5d8a439863f577237699950b3d70eb15d75ec77a
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56722729"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66348863"
 ---
 # <a name="idebugproperty3getcustomviewerlist"></a>IDebugProperty3::GetCustomViewerList
 取得與這個屬性相關聯的自訂檢視器的清單。
@@ -42,22 +45,18 @@ int GetCustomViewerList(
 );
 ```
 
-#### <a name="parameters"></a>參數
-`celtSkip`
+## <a name="parameters"></a>參數
+`celtSkip`\
+[in]略過的檢視器的數目。
 
- [in]略過的檢視器的數目。
+`celtRequested`\
+[in]若要擷取的檢視器的數目 (也會指定的大小`rgViewers`陣列)。
 
-`celtRequested`
+`rgViewers`\
+[in、 out]陣列[DEBUG_CUSTOM_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md)来填入結構。
 
- [in]若要擷取的檢視器的數目 (也會指定的大小`rgViewers`陣列)。
-
-`rgViewers`
-
- [in、 out]陣列[DEBUG_CUSTOM_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md)来填入結構。
-
-`pceltFetched`
-
- [out]傳回的檢視器的實際數目。
+`pceltFetched`\
+[out]傳回的檢視器的實際數目。
 
 ## <a name="return-value"></a>傳回值
 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

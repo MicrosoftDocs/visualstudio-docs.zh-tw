@@ -1,12 +1,9 @@
 ---
 title: UML 模型的標準造型 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML, stereotypes
 - UML diagrams, stereotypes
@@ -14,13 +11,13 @@ ms.assetid: 8a8c2321-1cae-4ba8-bb9e-23495c3404d8
 caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 1fcc876a847429c0de9600a5a727b19334819119
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 822676baf9f0c599fd1383f1841c8f85136be879
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51763234"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63411741"
 ---
 # <a name="standard-stereotypes-for-uml-models"></a>UML 模型的標準造型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,37 +41,37 @@ ms.locfileid: "51763234"
   
 #### <a name="to-link-a-profile-to-a-model-or-a-package"></a>將設定檔連結至模型或套件  
   
-1.  開啟**UML 模型總管**。 在 [**架構**功能表上，指向**Windows**，然後按一下**UML 模型總管]**。  
+1. 開啟**UML 模型總管**。 在 [**架構**功能表上，指向**Windows**，然後按一下**UML 模型總管]**。  
   
-2.  找出套件或模型，其中包含您想要在設定檔中套用造型的所有項目。  
+2. 找出套件或模型，其中包含您想要在設定檔中套用造型的所有項目。  
   
-3.  以滑鼠右鍵按一下封裝或模型，然後按一下**屬性**。  
+3. 以滑鼠右鍵按一下封裝或模型，然後按一下**屬性**。  
   
-4.  在 **屬性**視窗中，將**設定檔**屬性，以您想要的設定檔。  
+4. 在 **屬性**視窗中，將**設定檔**屬性，以您想要的設定檔。  
   
 #### <a name="to-remove-the-link-between-a-profile-and-a-model-or-package"></a>移除設定檔與模型或套件之間的連結  
   
-1.  在 UML 模型總管 中，模型或套件上按一下滑鼠右鍵，然後按一下**屬性**。  
+1. 在 UML 模型總管 中，模型或套件上按一下滑鼠右鍵，然後按一下**屬性**。  
   
-2.  在 [屬性] 視窗中，設定**設定檔**屬性為空白。  
+2. 在 [屬性] 視窗中，設定**設定檔**屬性為空白。  
   
     > [!NOTE]
-    >  只有當所有模型或套件中的項目都未使用該設定檔造型，才能取消設定檔的連結。  
+    > 只有當所有模型或套件中的項目都未使用該設定檔造型，才能取消設定檔的連結。  
   
 #### <a name="to-apply-a-stereotype-to-a-model-element"></a>將造型套用至模型項目  
   
-1.  以滑鼠右鍵按一下模型項目在圖表上或在**UML 模型總管**，然後按一下**屬性**。  
+1. 以滑鼠右鍵按一下模型項目在圖表上或在**UML 模型總管**，然後按一下**屬性**。  
   
-2.  按一下 **造型**屬性，並選取您想要套用的造型。  
+2. 按一下 **造型**屬性，並選取您想要套用的造型。  
   
      對大部分種類的項目而言，所選造型會顯示在模型項目的 «＞ 形箭號» 中。  
   
     > [!NOTE]
-    >  如果您看**造型**屬性，或如果您想要的造型未出現，請確認模型項目位於套件或模型，適當的設定檔連結。  
+    > 如果您看**造型**屬性，或如果您想要的造型未出現，請確認模型項目位於套件或模型，適當的設定檔連結。  
   
-3.  有些造型可讓您設定模型項目其他屬性的值。 若要查看這些屬性，依序展開**造型**屬性。  
+3. 有些造型可讓您設定模型項目其他屬性的值。 若要查看這些屬性，依序展開**造型**屬性。  
   
-###  <a name="L2"></a> UML 標準設定檔 L2  
+### <a name="L2"></a> UML 標準設定檔 L2  
  下列造型可以用來特製化的 UML 模型項目的意義，除非設定檔的連結從模型中移除。  
   
  這些造型的確切意義是由您自己的本機慣例以及您可能會用來處理模型的任何工具來判斷。  
@@ -93,13 +90,13 @@ ms.locfileid: "51763234"
 |可執行檔|成品|可執行檔 «檔案»。|  
 |檔案|成品|實體檔案。|  
 |焦點|類別|定義核心商務邏輯的類別，由數個 «輔助» 類別支援。|  
-|架構|Package|此套件會定義可重複使用的設計模式。|  
+|架構|套件|此套件會定義可重複使用的設計模式。|  
 |實作|元件|«規格» 的實作。|  
 |implementationClass|類別|此類別描述實作，並且每個執行階段執行個體都有一個固定的實作類別。 與 «類型» 對照。|  
 |執行個體化|相依性|用戶端會建立供應商的執行個體。|  
 |程式庫|成品|程式庫 «檔案»。|  
 |metaclass|類別|此類別的執行個體也是類別。|  
-|modelLibrary|Package|包含以匯入套件方式要重複使用的模型項目。 通常定義為設定檔，並且由設定檔的應用程式自動匯入。|  
+|modelLibrary|套件|包含以匯入套件方式要重複使用的模型項目。 通常定義為設定檔，並且由設定檔的應用程式自動匯入。|  
 |處理序|元件|以交易為基礎的元件，或攜帶執行緒的元件。|  
 |實現|類別、介面、元件|描述實作。|  
 |精簡|相依性|用戶端類別、元件或套件提供比供應商更多的規格或設計詳細資訊。|  
@@ -114,7 +111,7 @@ ms.locfileid: "51763234"
 |類型|類別|指定物件的行為，而不陳述實作的方式。 物件如果符合規格，則會是類型的成員。|  
 |utility|類別|靜態函式的集合 此類別沒有執行個體。|  
   
-###  <a name="L3"></a> UML 標準設定檔 L3  
+### <a name="L3"></a> UML 標準設定檔 L3  
  下列造型可以用來特製化 UML 模型項目的意義，除非設定檔的連結從模型取消。  
   
  這些造型的確切意義是由您自己的本機慣例以及您可能會用來處理模型的任何工具來判斷。  
@@ -122,10 +119,10 @@ ms.locfileid: "51763234"
 |造型|適用於|描述|  
 |----------------|----------------|-----------------|  
 |buildComponent|元件|用來定義組建的元素集合。|  
-|metamodel|模型|定義模型語言 (例如 UML 的變數) 或網域的特定語言。|  
-|systemModel|模型|一個模型，是套用至相同系統之模型的集合，例如規格、實現和兩者之間的追蹤關聯性。|  
+|metamodel|型號|定義模型語言 (例如 UML 的變數) 或網域的特定語言。|  
+|systemModel|型號|一個模型，是套用至相同系統之模型的集合，例如規格、實現和兩者之間的追蹤關聯性。|  
   
-##  <a name="NetProfile"></a> C# 設定檔  
+## <a name="NetProfile"></a> C# Profile  
  在此設定檔中定義的造型，可讓您表示模型項目是用於轉譯成程式碼。 每個造型都會定義您可以在模型項目設定的其他屬性。  
   
  若要讓這些造型可用，請將模型或套件連結到 C# 設定檔。 然後，您就可以將造型套用至該模型或套件中的模型項目。  
@@ -145,6 +142,3 @@ ms.locfileid: "51763234"
  [將造型加入 UML 模型項目](../modeling/add-stereotypes-to-uml-model-elements.md)   
  [自訂您的模型，使用設定檔和造型](../modeling/customize-your-model-with-profiles-and-stereotypes.md)   
  [定義要擴充 UML 的設定檔](../modeling/define-a-profile-to-extend-uml.md)
-
-
-

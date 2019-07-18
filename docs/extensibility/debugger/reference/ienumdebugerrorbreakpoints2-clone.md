@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugErrorBreakpoints2::Clone
 ms.assetid: f6fb4985-8dd6-4a9b-98e0-15dbc64cc9ec
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ce1b25c032dcdd7b2b9d1b2908904d1eaee6cd9e
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 4955048f82d14c56e832ce7312e630b647d6b32d
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56698530"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66336530"
 ---
 # <a name="ienumdebugerrorbreakpoints2clone"></a>IEnumDebugErrorBreakpoints2::Clone
 傳回一份目前的列舉，為個別的物件。
@@ -36,10 +39,9 @@ int Clone(
 );
 ```
 
-#### <a name="parameters"></a>參數
- `ppEnum`
-
- [out]傳回這個列舉型別為個別物件的複本。
+## <a name="parameters"></a>參數
+`ppEnum`\
+[out]傳回這個列舉型別為個別物件的複本。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b284a53d930fc7882b9a2a9a3bde8d5334ea13ff
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56638724"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62798437"
 ---
 # <a name="resource-contention-data-views"></a>資源爭用資料檢視
 本節包含程式碼剖析工具資料檔案的檢視與報告，而此檔案含有執行緒爭用分析資料。

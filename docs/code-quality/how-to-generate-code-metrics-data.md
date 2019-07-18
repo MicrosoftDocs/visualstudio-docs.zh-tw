@@ -11,20 +11,66 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eb65f2a1de54cd21ff212443c004dc011d5b3222
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 4275e92b21289c5cf1e3243b2bc782a9e0821fde
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223724"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62823578"
 ---
 # <a name="how-to-generate-code-metrics-data"></a>HOW TO：產生程式碼度量資料
 
-您可以產生一或多個專案或整個解決方案的程式碼度量資訊結果。 程式碼度量可供 Visual Studio 互動式開發環境 (IDE) 內，以及針對C#和 Visual Basic 專案，在命令列。
+您可以透過三種方式產生程式碼計量資料：
 
-此外，您可以安裝[NuGet 套件](https://dotnet.myget.org/feed/roslyn-analyzers/package/nuget/Microsoft.CodeAnalysis.FxCopAnalyzers/2.6.2-beta2-63202-01)包含四個程式碼度量[分析器](roslyn-analyzers-overview.md)規則：CA1501、 CA1502、 ca1505 應及 CA1506。 根據預設，會停用這些規則，但您也可以將它們從啟用**方案總管**或是在[規則集](using-rule-sets-to-group-code-analysis-rules.md)檔案。
+- 藉由安裝[FxCop 分析器](#fxcop-analyzers-code-metrics-rules)並讓它包含四個程式碼度量 （可維護性） 規則。
 
-## <a name="visual-studio-ide-code-metrics"></a>Visual Studio IDE 的程式碼度量
+- 藉由選擇[**分析** > **計算程式碼度量**](#calculate-code-metrics-menu-command) Visual Studio 中的功能表命令。
+
+- 從[命令列](#command-line-code-metrics)的C#和 Visual Basic 專案。
+
+## <a name="fxcop-analyzers-code-metrics-rules"></a>FxCop 分析器，程式碼計量規則
+
+[FxCopAnalyzers NuGet 套件](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers)包含數個程式碼度量[分析器](roslyn-analyzers-overview.md)規則：
+
+- [CA1501](ca1501-avoid-excessive-inheritance.md)
+- [CA1502](ca1502-avoid-excessive-complexity.md)
+- [CA1505](ca1505-avoid-unmaintainable-code.md)
+- [CA1506](ca1506-avoid-excessive-class-coupling.md)
+
+預設會停用這些規則，但您也可以將它們從啟用[**方案總管**](use-roslyn-analyzers.md#set-rule-severity-from-solution-explorer)或在[規則集](using-rule-sets-to-group-code-analysis-rules.md)檔案。 例如，若要啟用規則 CA1502 為警告，.ruleset 檔案會包含下列項目：
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<RuleSet Name="Rules" Description="Rules" ToolsVersion="16.0">
+  <Rules AnalyzerId="Microsoft.CodeQuality.Analyzers" RuleNamespace="Microsoft.CodeQuality.Analyzers">
+    <Rule Id="CA1502" Action="Warning" />
+  </Rules>
+</RuleSet>
+```
+
+### <a name="configuration"></a>組態
+
+您可以設定的 FxCop 分析器中的程式碼度量規則封裝火災的臨界值。
+
+1. 建立文字檔 例如，您可以將它命名*CodeMetricsConfig.txt*。
+
+2. 以下列格式的文字檔案中加入想要的閾值：
+
+   ```txt
+   CA1502: 10
+   ```
+
+   在此範例中，規則[CA1502](ca1502-avoid-excessive-complexity.md)設定方法的循環複雜度大於 10 時引發。
+
+3. 在 **屬性**視窗的 Visual Studio，或在專案檔中，標示為組態檔的建置動作[ **AdditionalFiles**](../ide/build-actions.md#build-action-values)。 例如: 
+
+   ```xml
+   <ItemGroup>
+     <AdditionalFiles Include="CodeMetricsConfig.txt" />
+   </ItemGroup>
+   ```
+
+## <a name="calculate-code-metrics-menu-command"></a>計算程式碼度量功能表命令
 
 使用在 IDE 中產生的一個或所有開啟的專案程式碼度量**分析** > **計算程式碼度量**功能表。
 
@@ -54,7 +100,8 @@ ms.locfileid: "57223724"
 > **計算程式碼度量**命令不適用於.NET Core 和.NET Standard 專案。 若要計算的.NET Core 或.NET Standard 專案的程式碼度量，您可以：
 >
 > - 計算從程式碼度量[命令列](#command-line-code-metrics)改為
-> - 升級至 Visual Studio 2019
+>
+> - 升級至[Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019)
 
 ::: moniker-end
 
@@ -64,7 +111,7 @@ ms.locfileid: "57223724"
 
 ### <a name="microsoftcodeanalysismetrics-nuget-package"></a>Microsoft.CodeAnalysis.Metrics NuGet 套件
 
-若要從命令列產生程式碼度量資料的最簡單方式是安裝[Microsoft.CodeAnalysis.Metrics](https://www.nuget.org/packages/Microsoft.CodeAnalysis.Metrics/) NuGet 套件。 您已安裝封裝之後，執行`msbuild /t:Metrics`從包含您的專案檔的目錄。 例如: 
+若要從命令列產生程式碼度量資料的最簡單方式是安裝[Microsoft.CodeAnalysis.Metrics](https://www.nuget.org/packages/Microsoft.CodeAnalysis.Metrics/) NuGet 套件。 您已安裝封裝之後，執行`msbuild /t:Metrics`從包含您的專案檔的目錄。 例如：
 
 ```shell
 C:\source\repos\ClassLibrary3\ClassLibrary3>msbuild /t:Metrics

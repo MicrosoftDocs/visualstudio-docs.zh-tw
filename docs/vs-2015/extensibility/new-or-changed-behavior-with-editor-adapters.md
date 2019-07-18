@@ -1,28 +1,23 @@
 ---
 title: 新增或變更的行為，與編輯器的介面卡 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - adapter behavior
 ms.assetid: 5555b116-cfdb-4773-ba62-af80fda64abd
 caps.latest.revision: 13
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: cac26a6aeca6985546bcd21aec6cf45d72164e8a
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: fc7ddaf7ec67a1e33248d5ce424868849200d3e6
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51817395"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68194183"
 ---
-# <a name="new-or-changed-behavior-with-editor-adapters"></a>新增或變更的行為，與編輯器的介面卡
+# <a name="new-or-changed-behavior-with-editor-adapters"></a>編輯器配接器的新行為或變更行為
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 如果您要更新舊版的 Visual Studio 核心編輯器中，針對已撰寫的程式碼，而且您想要使用的編輯器介面卡 （或填充碼），而不是使用新的 API，您應留意下列差異編輯器配接器的行為相對於前一個核心編輯器中。  
@@ -90,32 +85,32 @@ ms.locfileid: "51817395"
   
  受影響的方法包括 （清單未全部列出）：  
   
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.CenterLines%2A>  
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.CenterLines%2A>  
   
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.GetCaretPos%2A>  
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.GetCaretPos%2A>  
   
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.GetLineAndColumn%2A>  
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.GetLineAndColumn%2A>  
   
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.GetNearestPosition%2A>  
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.GetNearestPosition%2A>  
   
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.GetPointOfLineColumn%2A>  
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.GetPointOfLineColumn%2A>  
   
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.GetTextStream%2A>  
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.GetTextStream%2A>  
   
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.GetWordExtent%2A>  
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.GetWordExtent%2A>  
   
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.PositionCaretForEditing%2A>  
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.PositionCaretForEditing%2A>  
   
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.ReplaceTextOnLine%2A>  
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.ReplaceTextOnLine%2A>  
   
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.SetCaretPos%2A>  
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.SetCaretPos%2A>  
   
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.SetSelection%2A>  
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.SetSelection%2A>  
   
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.SetTopLine%2A>  
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.SetTopLine%2A>  
   
 #### <a name="outlining"></a>大綱  
- 用戶端<xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession>將會看到只有那些使用新增的大綱區域<xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession.AddHiddenRegions%2A>或<xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSessionEx.AddHiddenRegionsEx%2A>。 因為它們不會新增透過編輯器配接器，它們不會看到臨機操作的區域。 同樣地，這些用戶端將不會看到大綱區域新增的語言 （包括 C# 和 c + +），使用新的編輯器程式碼，而不是編輯器介面卡。  
+ 用戶端<xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession>將會看到只有那些使用新增的大綱區域<xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession.AddHiddenRegions%2A>或<xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSessionEx.AddHiddenRegionsEx%2A>。 因為它們不會新增透過編輯器配接器，它們不會看到臨機操作的區域。 同樣地，這些用戶端將不會看到大綱區域新增的語言 (包括C#和C++)，使用新的編輯器程式碼，而不是編輯器介面卡。  
   
 #### <a name="line-heights"></a>線條高度  
  在新的編輯器中，文字行可以有不同的高度，根據字型大小和可能的線條轉換，可能會移動相對於其他行的行。 例如，由方法傳回的行高<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.GetLineHeight%2A>套用的任何行 」 轉換中使用的預設字型大小之線條的高度。 此高度可能，也不一定能反映實際的檢視中的資料行的高度。  
@@ -125,9 +120,9 @@ ms.locfileid: "51817395"
   
 #### <a name="intellisense"></a>IntelliSense  
   
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.UpdateTipWindow%2A>方法將會失敗，如果您在不實作的類別中傳遞<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextTipWindow2>或<xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow3>。 不再支援主控描繪快顯的自訂 Win32。  
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.UpdateTipWindow%2A>方法將會失敗，如果您在不實作的類別中傳遞<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextTipWindow2>或<xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow3>。 不再支援主控描繪快顯的自訂 Win32。  
   
-#### <a name="smarttags"></a>智慧標籤  
+#### <a name="smarttags"></a>SmartTags  
  智慧標籤，以建立任何配接器支援<xref:Microsoft.VisualStudio.TextManager.Interop.IVsSmartTagData>， <xref:Microsoft.VisualStudio.TextManager.Interop.IVsSmartTagTipWindow>，和<xref:Microsoft.VisualStudio.TextManager.Interop.IVsSmartTagTipWindow2>介面。  
   
 #### <a name="dte"></a>DTE  
@@ -150,4 +145,3 @@ ms.locfileid: "51817395"
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost>|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.AfterCompletorCommit%2A><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.BeforeCompletorCommit%2A><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.Exec%2A><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.GetContextLocation%2A><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.GetServiceProvider%2A><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.GetSmartTagRect%2A><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.GetSubjectCaretPos%2A><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.GetSubjectSelection%2A><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.GetSubjectText%2A><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.QueryStatus%2A><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.ReplaceSubjectTextSpan%2A><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.SetSubjectCaretPos%2A><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.SetSubjectSelection%2A><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.UpdateSmartTagWindow%2A>|  
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewIntellisenseHost>|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewIntellisenseHost.SetSubjectFromPrimaryBuffer%2A> 實作的介面卡，但忽略大綱的 ui。|  
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenRegionEx>|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenRegionEx.GetBannerAttr%2A> 實作的介面卡，但忽略大綱的 ui。|
-

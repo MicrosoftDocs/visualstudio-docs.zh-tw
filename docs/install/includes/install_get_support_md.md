@@ -6,11 +6,11 @@ ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
 ms.openlocfilehash: c8f916c1c1ca96ee04c38ee4f3a4d723582960d0
-ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
+ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57457790"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67259780"
 ---
 ## <a name="get-support"></a>取得支援
 

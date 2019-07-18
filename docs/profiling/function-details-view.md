@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3ebcb58f1bbab478f60f446527dad1611b295996
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56603439"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62969754"
 ---
 # <a name="function-details-view"></a>函式詳細資料檢視
 [函式詳細資料檢視] 視窗會顯示下列資訊︰

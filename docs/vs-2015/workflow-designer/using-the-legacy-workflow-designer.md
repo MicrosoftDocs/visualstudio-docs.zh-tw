@@ -1,11 +1,8 @@
 ---
 title: 使用舊版工作流程設計工具 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 helpviewer_keywords:
 - Visual Studio 2005 Extensions for Windows Workflow Foundation, about
@@ -13,13 +10,13 @@ ms.assetid: 7af53077-afd7-465f-9c1d-b387e9d4f216
 caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 012be918b415d863d9f3b2c08fdd1e0636a5da5a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 899f0b81055f67c323c2efb60a07280368dad321
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49306198"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62855827"
 ---
 # <a name="using-the-legacy-workflow-designer"></a>使用舊版工作流程設計工具
 [!INCLUDE[wfd2](../includes/wfd2-md.md)] 提供的舊版 [!INCLUDE[vs2010](../includes/vs2010-md.md)] 可用來以 [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] 或 [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] 為目標。  

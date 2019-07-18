@@ -1,26 +1,21 @@
 ---
 title: 實作的命令處理巢狀專案 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - nested projects, implementing command handling
 ms.assetid: 48a9d66e-d51c-4376-a95a-15796643a9f2
 caps.latest.revision: 14
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 113cc2c061b008892921aac348f3eb56a7bef0d3
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 2fbce80b2e8c337eddf0d34954a7fd70b895d891
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51742565"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445444"
 ---
 # <a name="implementing-command-handling-for-nested-projects"></a>實作巢狀專案的命令處理
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -28,7 +23,7 @@ ms.locfileid: "51742565"
 IDE 可以傳遞命令，會傳遞<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy>而<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>巢狀的專案，或父專案的介面可以篩選或覆寫命令。  
   
 > [!NOTE]
->  您可以篩選通常由父專案的命令。 命令，例如**建置**並**部署**，都由 IDE 無法進行篩選。  
+> 您可以篩選通常由父專案的命令。 命令，例如**建置**並**部署**，都由 IDE 無法進行篩選。  
   
  下列步驟描述實作命令處理的程序。  
   
@@ -62,4 +57,3 @@ IDE 可以傳遞命令，會傳遞<xref:Microsoft.VisualStudio.Shell.Interop.IVs
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy>   
  [命令、 功能表和工具列](../../extensibility/internals/commands-menus-and-toolbars.md)   
  [巢狀專案](../../extensibility/internals/nesting-projects.md)
-

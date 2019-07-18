@@ -6,17 +6,17 @@ helpviewer_keywords:
 - setup, VSPackages
 - launch conditions
 ms.assetid: 0ba94acf-bf0b-4bb3-8cca-aaac1b5d6737
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 719ced495580bd8ec16eec7e3f422e3ae1f1ccc3
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 1ef76bc111fc48a717605f1beea74c4b91d0f2b4
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56643583"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66351635"
 ---
 # <a name="detect-system-requirements"></a>偵測系統需求
 VSPackage 才能運作，除非已安裝 Visual Studio。 當您使用 Microsoft Windows Installer 管理 VSPackage 的安裝時，您可以設定以偵測是否已安裝 Visual Studio 安裝程式。 您也可以設定以檢查系統有任何其他需求，例如，特定版本的 Windows 或特定的 RAM 數量。
@@ -24,16 +24,16 @@ VSPackage 才能運作，除非已安裝 Visual Studio。 當您使用 Microsoft
 ## <a name="detect-visual-studio-editions"></a>偵測到 Visual Studio 版本
  若要判斷是否已安裝的 Visual Studio 版本，請確認的值**安裝**登錄機碼已 *(REG_DWORD) 1*與下表中列出的適當資料夾中。 請注意，Visual Studio 版本的階層：
 
-1.  企業
+1. 企業
 
-2.  Professional
+2. Professional
 
-3.  社群
+3. 社群
 
 安裝較新版本時，該版本的登錄機碼會與較早版本也加入。 也就是，如果安裝 Enterprise edition，則**安裝**金鑰設為*1*企業的需求，以及 Professional 及 Community 版。 因此，您需要只會檢查您所需要的最新版本。
 
 > [!NOTE]
->  在登錄編輯程式的 64 位元版本，32 位元的金鑰會顯示下**HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\\**。 Visual Studio 金鑰受到**HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\DevDiv\vs\Servicing\\**。
+> 在登錄編輯程式的 64 位元版本，32 位元的金鑰會顯示下**HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\\** 。 Visual Studio 金鑰受到**HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\DevDiv\vs\Servicing\\** 。
 
 |產品|Key|
 |-------------|---------|

@@ -1,382 +1,412 @@
-items:
 - name: 建立 SharePoint 方案
-  href: create-sharepoint-solutions.md
   items:
-  - name: SharePoint 程式開發的使用者入門
-    href: getting-started-sharepoint-development-in-visual-studio.md
-    items:
-    - name: SharePoint 錯誤的其他相關資訊
-      href: additional-information-for-sharepoint-errors.md
-  - name: 開發 SharePoint 方案
-    href: developing-sharepoint-solutions.md
-    items:
-    - name: SharePoint 專案與專案項目範本
-      href: sharepoint-project-and-project-item-templates.md
-    - name: 將項目新增至 SharePoint 專案
-      href: how-to-add-items-to-a-sharepoint-project.md
-    - name: 建立 SharePoint 的網站資料行、內容類型和清單
-      href: creating-site-columns-content-types-and-lists-for-sharepoint.md
+    - name: 建立 SharePoint 方案
+      href: create-sharepoint-solutions.md
+    - name: SharePoint 程式開發的使用者入門
       items:
-      - name: 逐步解說：建立 SharePoint 的網站資料行、內容類型和清單
-        href: walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md
-    - name: 建立事件接收器
-      href: how-to-create-an-event-receiver.md
-    - name: 為特定的清單執行個體建立事件接收器
-      href: how-to-create-an-event-receiver-for-a-specific-list-instance.md
-    - name: 建立 SharePoint 工作流程方案
-      href: creating-sharepoint-workflow-solutions.md
+        - name: SharePoint 程式開發的使用者入門
+          href: getting-started-sharepoint-development-in-visual-studio.md
+        - name: SharePoint 錯誤的其他相關資訊
+          href: additional-information-for-sharepoint-errors.md
+    - name: 開發 SharePoint 方案
       items:
-      - name: 工作流程中的表單支援
-        href: form-support-in-workflows.md
-      - name: 逐步解說：建立並偵錯 SharePoint 工作流程方案
-        href: walkthrough-creating-and-debugging-a-sharepoint-workflow-solution.md
-      - name: 逐步解說：使用關聯與初始化表單建立工作流程
-        href: walkthrough-creating-a-workflow-with-association-and-initiation-forms.md
-      - name: 逐步解說：將應用程式頁面新增到工作流程
-        href: walkthrough-add-an-application-page-to-a-workflow.md
-      - name: 逐步解說：建立自訂站台工作流程活動
-        href: walkthrough-create-a-custom-site-workflow-activity.md
-      - name: 逐步解說：將 SharePoint Designer 可重複使用的工作流程匯入 Visual Studio
-        href: walkthrough-import-a-sharepoint-designer-reusable-workflow-into-visual-studio.md
-    - name: 建立 SharePoint 的網頁
-      href: creating-pages-for-sharepoint.md
+        - name: 開發 SharePoint 方案
+          href: developing-sharepoint-solutions.md
+        - name: SharePoint 專案與專案項目範本
+          href: sharepoint-project-and-project-item-templates.md
+        - name: 將項目新增至 SharePoint 專案
+          href: how-to-add-items-to-a-sharepoint-project.md
+        - name: 建立 SharePoint 的網站資料行、內容類型和清單
+          items:
+            - name: 建立 SharePoint 的網站資料行、內容類型和清單
+              href: creating-site-columns-content-types-and-lists-for-sharepoint.md
+            - name: 逐步解說：建立 SharePoint 的網站資料行、內容類型和清單
+              href: walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md
+        - name: 建立事件接收器
+          href: how-to-create-an-event-receiver.md
+        - name: 為特定的清單執行個體建立事件接收器
+          href: how-to-create-an-event-receiver-for-a-specific-list-instance.md
+        - name: 建立 SharePoint 工作流程方案
+          items:
+            - name: 建立 SharePoint 工作流程方案
+              href: creating-sharepoint-workflow-solutions.md
+            - name: 工作流程中的表單支援
+              href: form-support-in-workflows.md
+            - name: 逐步解說：建立 SharePoint 工作流程解決方案及進行偵錯
+              href: walkthrough-creating-and-debugging-a-sharepoint-workflow-solution.md
+            - name: 逐步解說：使用關聯與初始表單建立工作流程
+              href: walkthrough-creating-a-workflow-with-association-and-initiation-forms.md
+            - name: 逐步解說：將應用程式頁面新增到工作流程
+              href: walkthrough-add-an-application-page-to-a-workflow.md
+            - name: 逐步解說：建立自訂網站工作流程活動
+              href: walkthrough-create-a-custom-site-workflow-activity.md
+            - name: 逐步解說：將 SharePoint Designer 可重複使用的工作流程匯入 Visual Studio
+              href: walkthrough-import-a-sharepoint-designer-reusable-workflow-into-visual-studio.md
+        - name: 建立 SharePoint 的網頁
+          items:
+            - name: 建立 SharePoint 的網頁
+              href: creating-pages-for-sharepoint.md
+            - name: 建立 SharePoint 的應用程式頁面
+              href: creating-application-pages-for-sharepoint.md
+            - name: 建立應用程式頁面
+              href: how-to-create-an-application-page.md
+            - name: 逐步解說：建立 SharePoint 應用程式頁面
+              href: walkthrough-creating-a-sharepoint-application-page.md
+        - name: 建立 SharePoint 的 Web 組件
+          items:
+            - name: 建立 SharePoint 的 Web 組件
+              href: creating-web-parts-for-sharepoint.md
+            - name: 建立 SharePoint Web 組件
+              href: how-to-create-a-sharepoint-web-part.md
+            - name: 使用設計工具建立 SharePoint Web 組件
+              href: how-to-create-a-sharepoint-web-part-by-using-a-designer.md
+            - name: 逐步解說：建立 SharePoint 的網頁組件
+              href: walkthrough-creating-a-web-part-for-sharepoint.md
+            - name: 逐步解說：使用設計工具建立 SharePoint 的網頁組件
+              href: walkthrough-creating-a-web-part-for-sharepoint-by-using-a-designer.md
+            - name: 逐步解說：建立可顯示 SharePoint 之 OData 的 Silverlight Web 組件
+              href: walkthrough-creating-a-silverlight-web-part-that-displays-odata-for-sharepoint.md
+        - name: 為 Web 組件或應用程式頁面建立可重複使用的控制項
+          items:
+            - name: 為 Web 組件或應用程式頁面建立可重複使用的控制項
+              href: creating-reusable-controls-for-web-parts-or-application-pages.md
+            - name: 為 SharePoint 應用程式頁面或 Web 組件建立使用者控制項
+              href: how-to-create-a-user-control-for-a-sharepoint-application-page-or-web-part.md
+        - name: 將商業資料整合至 SharePoint
+          items:
+            - name: 將商業資料整合至 SharePoint
+              href: integrating-business-data-into-sharepoint.md
+            - name: 建立商務資料連接模型
+              items:
+                - name: 建立商務資料連接模型
+                  href: creating-a-business-data-connectivity-model.md
+                - name: 建立 BDC 模型
+                  href: how-to-create-a-bdc-model.md
+                - name: 將現有的 BDC 模型檔案新增至 SharePoint 專案
+                  href: how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project.md
+                - name: 使用資源檔來指定當地語系化的名稱、屬性和權限
+                  href: how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions.md
+                - name: 在 BDC 功能中包含自訂組件
+                  href: how-to-include-a-custom-assembly-in-a-bdc-feature.md
+            - name: 設計商務資料連接模型
+              items:
+                - name: 設計商務資料連接模型
+                  href: designing-a-business-data-connectivity-model.md
+                - name: BDC 模型設計工具概觀
+                  href: bdc-model-design-tools-overview.md
+                - name: 將實體新增至模型
+                  href: how-to-add-an-entity-to-a-model.md
+                - name: 新增搜尋工具方法
+                  href: how-to-add-a-finder-method.md
+                - name: 新增特定搜尋工具方法
+                  href: how-to-add-a-specific-finder-method.md
+                - name: 新增建立者方法
+                  href: how-to-add-a-creator-method.md
+                - name: 新增刪除者方法
+                  href: how-to-add-a-deleter-method.md
+                - name: 新增更新者方法
+                  href: how-to-add-an-updater-method.md
+                - name: 將參數新增至方法
+                  href: how-to-add-a-parameter-to-a-method.md
+                - name: 定義參數的類型描述元
+                  href: how-to-define-the-type-descriptor-of-a-parameter.md
+                - name: 定義方法執行個體
+                  href: how-to-define-a-method-instance.md
+                - name: 新增自訂屬性
+                  href: how-to-add-a-custom-property.md
+                - name: 將篩選描述元新增至搜尋工具方法
+                  href: how-to-add-a-filter-descriptor-to-a-finder-method.md
+                - name: 建立實體之間的關聯
+                  href: creating-an-association-between-entities.md
+                - name: 建立實體之間的關聯
+                  href: how-to-create-an-association-between-entities.md
+                - name: 逐步解說：使用商務資料在 SharePoint 中建立外部清單
+                  href: walkthrough-creating-an-external-list-in-sharepoint-by-using-business-data.md
+        - name: 建立 SharePoint 的站台定義
+          items:
+            - name: 建立 SharePoint 的站台定義
+              href: creating-site-definitions-for-sharepoint.md
+            - name: 逐步解說：建立基本網站定義專案
+              href: walkthrough-create-a-basic-site-definition-project.md
+        - name: 從現有的 SharePoint 網站匯入項目
+          items:
+            - name: 從現有的 SharePoint 網站匯入項目
+              href: importing-items-from-an-existing-sharepoint-site.md
+            - name: 逐步解說：從現有的 SharePoint 網站匯入項目
+              href: walkthrough-import-items-from-an-existing-sharepoint-site.md
+            - name: offshare7
+              href: guidelines-for-importing-reusable-workflows.md
+            - name: 匯入主版頁面或佈景主題
+              href: how-to-import-a-master-page-or-theme.md
+            - name: 逐步解說：匯入自訂主版頁面及包含影像的網站頁面
+              href: walkthrough-import-a-custom-master-page-and-site-page-with-an-image.md
+        - name: 使用模組來包含方案中的檔案
+          items:
+            - name: 使用模組來包含方案中的檔案
+              href: using-modules-to-include-files-in-the-solution.md
+            - name: 使用模組來包含檔案
+              href: how-to-include-files-by-using-a-module.md
+        - name: 使用伺服器總管瀏覽 SharePoint 連線
+          items:
+            - name: 使用伺服器總管瀏覽 SharePoint 連線
+              href: browsing-sharepoint-connections-using-server-explorer.md
+            - name: 新增或移除 SharePoint 連線
+              href: how-to-add-or-remove-sharepoint-connections.md
+        - name: Providing Packaging and Deployment Information in Project Items
+          items:
+            - name: Providing Packaging and Deployment Information in Project Items
+              href: providing-packaging-and-deployment-information-in-project-items.md
+            - name: 將控制項標記為安全控制項
+              href: how-to-mark-controls-as-safe-controls.md
+            - name: 新增專案輸出參考
+              href: how-to-add-a-project-output-reference.md
+        - name: 新增與移除對應的資料夾
+          href: how-to-add-and-remove-mapped-folders.md
+        - name: Sandboxed Solution Considerations
+          href: sandboxed-solution-considerations.md
+        - name: SharePoint 方案的安全性
+          href: security-for-sharepoint-solutions.md
+        - name: URL 選擇器對話方塊
+          href: url-picker-dialog-box-sharepoint-development-in-visual-studio.md
+    - name: 當地語系化 SharePoint 方案
       items:
-      - name: 建立 SharePoint 的應用程式頁面
-        href: creating-application-pages-for-sharepoint.md
-      - name: 建立應用程式頁面
-        href: how-to-create-an-application-page.md
-      - name: 逐步解說：建立 SharePoint 應用程式頁面
-        href: walkthrough-creating-a-sharepoint-application-page.md
-    - name: 建立 SharePoint 的 Web 組件
-      href: creating-web-parts-for-sharepoint.md
+        - name: 當地語系化 SharePoint 方案
+          href: localizing-sharepoint-solutions.md
+        - name: 新增資源檔
+          href: how-to-add-a-resource-file.md
+        - name: 將功能當地語系化
+          href: how-to-localize-a-feature.md
+        - name: 將 ASPX 標記當地語系化
+          href: how-to-localize-aspx-markup.md
+        - name: 將程式碼當地語系化
+          href: how-to-localize-code.md
+    - name: 建置和偵錯 SharePoint 方案
       items:
-      - name: 建立 SharePoint Web 組件
-        href: how-to-create-a-sharepoint-web-part.md
-      - name: 使用設計工具建立 SharePoint Web 組件
-        href: how-to-create-a-sharepoint-web-part-by-using-a-designer.md
-      - name: 逐步解說：建立 SharePoint 的 Web 組件
-        href: walkthrough-creating-a-web-part-for-sharepoint.md
-      - name: 逐步解說：使用設計工具建立 SharePoint 的 Web 組件
-        href: walkthrough-creating-a-web-part-for-sharepoint-by-using-a-designer.md
-      - name: 逐步解說：建立可顯示 SharePoint 之 OData 的 Silverlight Web 組件
-        href: walkthrough-creating-a-silverlight-web-part-that-displays-odata-for-sharepoint.md
-    - name: 為 Web 組件或應用程式頁面建立可重複使用的控制項
-      href: creating-reusable-controls-for-web-parts-or-application-pages.md
+        - name: 建置和偵錯 SharePoint 方案
+          href: building-and-debugging-sharepoint-solutions.md
+        - name: 建置 SharePoint 方案
+          href: how-to-build-sharepoint-solutions.md
+        - name: 對 SharePoint 方案進行偵錯
+          href: debugging-sharepoint-solutions.md
+        - name: 驗證及偵錯 SharePoint 程式碼
+          items:
+            - name: 驗證及偵錯 SharePoint 程式碼
+              href: verifying-and-debugging-sharepoint-code.md
+            - name: 逐步解說：使用 IntelliTrace 針對 SharePoint 應用程式進行偵錯
+              href: walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md
+        - name: 剖析 SharePoint 應用程式的效能
+          items:
+            - name: 剖析 SharePoint 應用程式的效能
+              href: profiling-the-performance-of-sharepoint-applications.md
+            - name: 逐步解說：分析 SharePoint 應用程式
+              href: walkthrough-profiling-a-sharepoint-application.md
+        - name: 沙箱化方案與伺服器陣列方案之間的差異
+          href: differences-between-sandboxed-and-farm-solutions.md
+        - name: SharePoint 支援的 MSBuild 屬性
+          href: msbuild-properties-supported-by-sharepoint.md
+        - name: SharePoint 方案疑難排解
+          href: troubleshooting-sharepoint-solutions.md
+    - name: 封裝和部署 SharePoint 方案
       items:
-      - name: 為 SharePoint 應用程式頁面或 Web 組件建立使用者控制項
-        href: how-to-create-a-user-control-for-a-sharepoint-application-page-or-web-part.md
-    - name: 將商業資料整合至 SharePoint
-      href: integrating-business-data-into-sharepoint.md
+        - name: 封裝和部署 SharePoint 方案
+          href: packaging-and-deploying-sharepoint-solutions.md
+        - name: 建立 SharePoint 功能
+          items:
+            - name: 建立 SharePoint 功能
+              href: creating-sharepoint-features.md
+            - name: 將功能新增至 SharePoint 方案
+              href: how-to-add-a-feature-to-sharepoint-solutions.md
+            - name: 自訂 SharePoint 功能
+              href: how-to-customize-a-sharepoint-feature.md
+            - name: 新增與移除 SharePoint 功能中的項目
+              href: how-to-add-and-remove-items-to-sharepoint-features.md
+            - name: 新增與移除功能相依性
+              href: how-to-add-and-remove-feature-dependencies.md
+            - name: 逐步解說：新增功能事件接收器
+              href: walkthrough-add-feature-event-receivers.md
+        - name: 建立 SharePoint 方案套件
+          items:
+            - name: 建立 SharePoint 方案套件
+              href: creating-sharepoint-solution-packages.md
+            - name: 自訂 SharePoint 方案套件
+              href: how-to-customize-a-sharepoint-solution-package.md
+            - name: 使用套件設計工具在套件中新增與移除功能和項目
+              href: how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer.md
+            - name: 使用封裝總管在套件中新增與移除功能和項目
+              href: how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer.md
+            - name: 新增與移除其他組件
+              href: how-to-add-and-remove-additional-assemblies.md
+            - name: 使用 MSBuild 工作建立 SharePoint 方案套件
+              href: how-to-create-a-sharepoint-solution-package-by-using-msbuild-tasks.md
+            - name: 使用 MSBuild 目標自訂 SharePoint 方案套件
+              href: how-to-customize-a-sharepoint-solution-package-by-using-msbuild-targets.md
+        - name: 部署、發行和升級 SharePoint 方案套件
+          items:
+            - name: 部署、發行和升級 SharePoint 方案套件
+              href: deploying-publishing-and-upgrading-sharepoint-solution-packages.md
+            - name: 將 SharePoint 方案部署和發行至本機 SharePoint 網站
+              href: how-to-deploy-and-publish-a-sharepoint-solution-to-a-local-sharepoint-site.md
+            - name: 在遠端伺服器部署、發行和升級 SharePoint 方案
+              href: how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server.md
+            - name: 設定 SharePoint 部署命令
+              href: how-to-set-sharepoint-deployment-commands.md
+            - name: 編輯 SharePoint 部署組態
+              href: how-to-edit-a-sharepoint-deployment-configuration.md
+            - name: 逐步解說：部署專案工作清單定義
+              href: walkthrough-deploying-a-project-task-list-definition.md
+        - name: 可置換的參數
+          href: replaceable-parameters.md
+        - name: SharePoint 封裝和部署疑難排解
+          href: troubleshooting-sharepoint-packaging-and-deployment.md
+        - name: 合併功能和封裝資訊清單中的 XML
+          href: merging-xml-in-feature-and-package-manifests.md
+    - name: SharePoint 程式開發範例和逐步解說
       items:
-      - name: 建立商務資料連接模型
-        href: creating-a-business-data-connectivity-model.md
-        items:
-        - name: 建立 BDC 模型
-          href: how-to-create-a-bdc-model.md
-        - name: 將現有的 BDC 模型檔案新增至 SharePoint 專案
-          href: how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project.md
-        - name: 使用資源檔來指定當地語系化的名稱、屬性和權限
-          href: how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions.md
-        - name: 在 BDC 功能中包含自訂組件
-          href: how-to-include-a-custom-assembly-in-a-bdc-feature.md
-      - name: 設計商務資料連接模型
-        href: designing-a-business-data-connectivity-model.md
-        items:
-        - name: BDC 模型設計工具概觀
-          href: bdc-model-design-tools-overview.md
-        - name: 將實體新增至模型
-          href: how-to-add-an-entity-to-a-model.md
-        - name: 新增搜尋工具方法
-          href: how-to-add-a-finder-method.md
-        - name: 新增特定搜尋工具方法
-          href: how-to-add-a-specific-finder-method.md
-        - name: 新增建立者方法
-          href: how-to-add-a-creator-method.md
-        - name: 新增刪除者方法
-          href: how-to-add-a-deleter-method.md
-        - name: 新增更新者方法
-          href: how-to-add-an-updater-method.md
-        - name: 將參數新增至方法
-          href: how-to-add-a-parameter-to-a-method.md
-        - name: 定義參數的類型描述元
-          href: how-to-define-the-type-descriptor-of-a-parameter.md
-        - name: 定義方法執行個體
-          href: how-to-define-a-method-instance.md
-        - name: 新增自訂屬性
-          href: how-to-add-a-custom-property.md
-        - name: 將篩選描述元新增至搜尋工具方法
-          href: how-to-add-a-filter-descriptor-to-a-finder-method.md
-        - name: 建立實體之間的關聯
-          href: creating-an-association-between-entities.md
-        - name: 建立實體之間的關聯
-          href: how-to-create-an-association-between-entities.md
-        - name: 逐步解說：使用商務資料在 SharePoint 中建立外部清單
-          href: walkthrough-creating-an-external-list-in-sharepoint-by-using-business-data.md
-    - name: 建立 SharePoint 的站台定義
-      href: creating-site-definitions-for-sharepoint.md
+        - name: SharePoint 程式開發範例和逐步解說
+          href: sharepoint-development-samples-and-walkthroughs.md
+        - name: SharePoint 程式開發範例
+          href: sharepoint-development-samples.md
+        - name: SharePoint 程式開發的逐步解說
+          href: sharepoint-development-walkthroughs.md
+    - name: 擴充 Visual Studio 中的 SharePoint 工具
       items:
-      - name: 逐步解說：建立基本網站定義專案
-        href: walkthrough-create-a-basic-site-definition-project.md
-    - name: 從現有的 SharePoint 網站匯入項目
-      href: importing-items-from-an-existing-sharepoint-site.md
-      items:
-      - name: 逐步解說：從現有的 SharePoint 網站匯入項目
-        href: walkthrough-import-items-from-an-existing-sharepoint-site.md
-      - name: offshare7
-        href: guidelines-for-importing-reusable-workflows.md
-      - name: 匯入主版頁面或佈景主題
-        href: how-to-import-a-master-page-or-theme.md
-      - name: 逐步解說：匯入自訂主版頁面及包含影像的網站頁面
-        href: walkthrough-import-a-custom-master-page-and-site-page-with-an-image.md
-    - name: 使用模組來包含方案中的檔案
-      href: using-modules-to-include-files-in-the-solution.md
-      items:
-      - name: 使用模組來包含檔案
-        href: how-to-include-files-by-using-a-module.md
-    - name: 使用伺服器總管瀏覽 SharePoint 連線
-      href: browsing-sharepoint-connections-using-server-explorer.md
-      items:
-      - name: 新增或移除 SharePoint 連線
-        href: how-to-add-or-remove-sharepoint-connections.md
-    - name: Providing Packaging and Deployment Information in Project Items
-      href: providing-packaging-and-deployment-information-in-project-items.md
-      items:
-      - name: 將控制項標記為安全控制項
-        href: how-to-mark-controls-as-safe-controls.md
-      - name: 新增專案輸出參考
-        href: how-to-add-a-project-output-reference.md
-    - name: 新增與移除對應的資料夾
-      href: how-to-add-and-remove-mapped-folders.md
-    - name: Sandboxed Solution Considerations
-      href: sandboxed-solution-considerations.md
-    - name: SharePoint 方案的安全性
-      href: security-for-sharepoint-solutions.md
-    - name: URL 選擇器對話方塊
-      href: url-picker-dialog-box-sharepoint-development-in-visual-studio.md
-  - name: 當地語系化 SharePoint 方案
-    href: localizing-sharepoint-solutions.md
-    items:
-    - name: 新增資源檔
-      href: how-to-add-a-resource-file.md
-    - name: 將功能當地語系化
-      href: how-to-localize-a-feature.md
-    - name: 將 ASPX 標記當地語系化
-      href: how-to-localize-aspx-markup.md
-    - name: 將程式碼當地語系化
-      href: how-to-localize-code.md
-  - name: 建置和偵錯 SharePoint 方案
-    href: building-and-debugging-sharepoint-solutions.md
-    items:
-    - name: 建置 SharePoint 方案
-      href: how-to-build-sharepoint-solutions.md
-    - name: 對 SharePoint 方案進行偵錯
-      href: debugging-sharepoint-solutions.md
-    - name: 驗證及偵錯 SharePoint 程式碼
-      href: verifying-and-debugging-sharepoint-code.md
-      items:
-      - name: 逐步解說：使用 IntelliTrace 偵錯 SharePoint 應用程式
-        href: walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md
-    - name: 剖析 SharePoint 應用程式的效能
-      href: profiling-the-performance-of-sharepoint-applications.md
-      items:
-      - name: 逐步解說：剖析 SharePoint 應用程式
-        href: walkthrough-profiling-a-sharepoint-application.md
-    - name: 沙箱化方案與伺服器陣列方案之間的差異
-      href: differences-between-sandboxed-and-farm-solutions.md
-    - name: SharePoint 支援的 MSBuild 屬性
-      href: msbuild-properties-supported-by-sharepoint.md
-    - name: SharePoint 方案疑難排解
-      href: troubleshooting-sharepoint-solutions.md
-  - name: 封裝和部署 SharePoint 方案
-    href: packaging-and-deploying-sharepoint-solutions.md
-    items:
-    - name: 建立 SharePoint 功能
-      href: creating-sharepoint-features.md
-      items:
-      - name: 將功能新增至 SharePoint 方案
-        href: how-to-add-a-feature-to-sharepoint-solutions.md
-      - name: 自訂 SharePoint 功能
-        href: how-to-customize-a-sharepoint-feature.md
-      - name: 新增與移除 SharePoint 功能中的項目
-        href: how-to-add-and-remove-items-to-sharepoint-features.md
-      - name: 新增與移除功能相依性
-        href: how-to-add-and-remove-feature-dependencies.md
-      - name: 逐步解說：新增功能事件接收器
-        href: walkthrough-add-feature-event-receivers.md
-    - name: 建立 SharePoint 方案套件
-      href: creating-sharepoint-solution-packages.md
-      items:
-      - name: 自訂 SharePoint 方案套件
-        href: how-to-customize-a-sharepoint-solution-package.md
-      - name: 使用套件設計工具在套件中新增與移除功能和項目
-        href: how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer.md
-      - name: 使用封裝總管在套件中新增與移除功能和項目
-        href: how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer.md
-      - name: 新增與移除其他組件
-        href: how-to-add-and-remove-additional-assemblies.md
-      - name: 使用 MSBuild 工作建立 SharePoint 方案套件
-        href: how-to-create-a-sharepoint-solution-package-by-using-msbuild-tasks.md
-      - name: 使用 MSBuild 目標自訂 SharePoint 方案套件
-        href: how-to-customize-a-sharepoint-solution-package-by-using-msbuild-targets.md
-    - name: 部署、發行和升級 SharePoint 方案套件
-      href: deploying-publishing-and-upgrading-sharepoint-solution-packages.md
-      items:
-      - name: 將 SharePoint 方案部署和發行至本機 SharePoint 網站
-        href: how-to-deploy-and-publish-a-sharepoint-solution-to-a-local-sharepoint-site.md
-      - name: 在遠端伺服器部署、發行和升級 SharePoint 方案
-        href: how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server.md
-      - name: 設定 SharePoint 部署命令
-        href: how-to-set-sharepoint-deployment-commands.md
-      - name: 編輯 SharePoint 部署組態
-        href: how-to-edit-a-sharepoint-deployment-configuration.md
-      - name: 逐步解說：部署專案工作清單定義
-        href: walkthrough-deploying-a-project-task-list-definition.md
-    - name: 可置換的參數
-      href: replaceable-parameters.md
-    - name: SharePoint 封裝和部署疑難排解
-      href: troubleshooting-sharepoint-packaging-and-deployment.md
-    - name: 合併功能和封裝資訊清單中的 XML
-      href: merging-xml-in-feature-and-package-manifests.md
-  - name: SharePoint 程式開發範例和逐步解說
-    href: sharepoint-development-samples-and-walkthroughs.md
-    items:
-    - name: SharePoint 程式開發範例
-      href: sharepoint-development-samples.md
-    - name: SharePoint 程式開發的逐步解說
-      href: sharepoint-development-walkthroughs.md
-  - name: 擴充 Visual Studio 中的 SharePoint 工具
-    href: extending-the-sharepoint-tools-in-visual-studio.md
-    items:
-    - name: SharePoint 工具擴充功能的程式撰寫模型概觀
-      href: overview-of-the-programming-model-of-sharepoint-tools-extensions.md
-    - name: 擴充 SharePoint 專案系統
-      href: extending-the-sharepoint-project-system.md
-      items:
-      - name: 定義自訂 SharePoint 專案項目類型
-        href: defining-custom-sharepoint-project-item-types.md
-        items:
-        - name: 定義 SharePoint 專案項目類型
-          href: how-to-define-a-sharepoint-project-item-type.md
-        - name: 將捷徑功能表項目新增至自訂 SharePoint 專案項目類型
-          href: how-to-add-a-shortcut-menu-item-to-a-custom-sharepoint-project-item-type.md
-        - name: 將屬性新增至自訂 SharePoint 專案項目類型
-          href: how-to-add-a-property-to-a-custom-sharepoint-project-item-type.md
-        - name: 為 SharePoint 專案項目建立項目範本和專案範本
-          href: creating-item-templates-and-project-templates-for-sharepoint-project-items.md
-        - name: 逐步解說：使用項目範本建立自訂動作專案項目 (第 1 部分)
-          href: walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md
-        - name: 逐步解說：使用項目範本建立自訂動作專案項目 (第 2 部分)
-          href: walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md
-        - name: 逐步解說：使用專案範本建立網站欄專案項目 (第 1 部分)
-          href: walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md
-        - name: 逐步解說：使用專案範本建立網站資料行專案項目 (第 2 部分)
-          href: walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md
-      - name: 擴充 SharePoint 專案項目
-        href: extending-sharepoint-project-items.md
-        items:
-        - name: 建立 SharePoint 專案項目延伸模組
-          href: how-to-create-a-sharepoint-project-item-extension.md
-        - name: 將捷徑功能表項目新增至 SharePoint 專案項目延伸模組
-          href: how-to-add-a-shortcut-menu-item-to-a-sharepoint-project-item-extension.md
-        - name: 將屬性新增至 SharePoint 專案項目延伸模組
-          href: how-to-add-a-property-to-a-sharepoint-project-item-extension.md
-        - name: 逐步解說：擴充 SharePoint 專案項目類型
-          href: walkthrough-extending-a-sharepoint-project-item-type.md
-      - name: 擴充 SharePoint 專案
-        href: extending-sharepoint-projects.md
-        items:
-        - name: 建立 SharePoint 專案延伸模組
-          href: how-to-create-a-sharepoint-project-extension.md
-        - name: 將捷徑功能表項目新增至 SharePoint 專案
-          href: how-to-add-a-shortcut-menu-item-to-sharepoint-projects.md
-        - name: 將屬性新增至 SharePoint 專案
-          href: how-to-add-a-property-to-sharepoint-projects.md
-        - name: 逐步解說：建立 SharePoint 專案擴充功能
-          href: walkthrough-creating-a-sharepoint-project-extension.md
-      - name: 擴充 SharePoint 封裝和部署
-        href: extending-sharepoint-packaging-and-deployment.md
-        items:
-        - name: 在執行部署步驟時執行程式碼
-          href: how-to-run-code-when-deployment-steps-are-executed.md
-        - name: 在 SharePoint 專案部署或撤銷時執行程式碼
-          href: how-to-run-code-when-a-sharepoint-project-is-deployed-or-retracted.md
-        - name: 處理部署衝突
-          href: how-to-handle-deployment-conflicts.md
-        - name: 逐步解說：建立 SharePoint 專案的自訂部署步驟
-          href: walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md
-        - name: 建立 SharePoint 方案的自訂功能和套件驗證規則
-          href: how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md
-      - name: 儲存 SharePoint 專案系統擴充功能的資料
-        href: saving-data-in-extensions-of-the-sharepoint-project-system.md
-      - name: 在 SharePoint 專案系統類型與其他 Visual Studio 專案類型之間轉換
-        href: converting-between-sharepoint-project-system-types-and-other-visual-studio-project-types.md
-    - name: 在伺服器總管中擴充 SharePoint 連線節點
-      href: extending-the-sharepoint-connections-node-in-server-explorer.md
-      items:
-      - name: 在伺服器總管中擴充 SharePoint 節點
-        href: how-to-extend-a-sharepoint-node-in-server-explorer.md
-      - name: 在伺服器總管中新增自訂 SharePoint 節點
-        href: how-to-add-a-custom-sharepoint-node-to-server-explorer.md
-      - name: 取得伺服器總管的內建 SharePoint 節點資料
-        href: how-to-get-data-for-a-built-in-sharepoint-node-in-server-explorer.md
-      - name: 逐步解說：擴充伺服器總管以顯示 Web 組件
-        href: walkthrough-extending-server-explorer-to-display-web-parts.md
-    - name: SharePoint 工具擴充功能的程式設計概念和功能
-      href: programming-concepts-and-features-for-sharepoint-tools-extensions.md
-      items:
-      - name: 呼叫 SharePoint 物件模型
-        href: calling-into-the-sharepoint-object-models.md
-        items:
-        - name: 建立 SharePoint 命令
-          href: how-to-create-a-sharepoint-command.md
-        - name: 執行 SharePoint 命令
-          href: how-to-execute-a-sharepoint-command.md
-        - name: 逐步解說：在伺服器總管擴充功能中呼叫 SharePoint 用戶端物件模型
-          href: walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md
-      - name: 使用 SharePoint 專案服務
-        href: using-the-sharepoint-project-service.md
-        items:
-        - name: 擷取 SharePoint 專案服務
-          href: how-to-retrieve-the-sharepoint-project-service.md
-      - name: 讓自訂資料與 SharePoint 工具擴充功能產生關聯
-        href: associating-custom-data-with-sharepoint-tools-extensions.md
-    - name: 偵錯 Visual Studio 中 SharePoint 工具的擴充功能
-      href: debugging-extensions-for-the-sharepoint-tools-in-visual-studio.md
-    - name: 部署 Visual Studio 中 SharePoint 工具的擴充功能
-      href: deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md
-    - name: 參考資料
-      href: reference-sharepoint-tools-extensibility.md
-      items:
-      - name: SharePoint 專案項目結構描述參考
-        href: sharepoint-project-item-schema-reference.md
-        items:
-        - name: ExtensionData 項目
-          href: extensiondata-element.md
-        - name: ExtensionDataItem 項目
-          href: extensiondataitem-element.md
-        - name: FeatureProperties 項目
-          href: featureproperties-element.md
-        - name: FeatureProperty 項目
-          href: featureproperty-element.md
-        - name: Files 項目
-          href: files-element.md
-        - name: ProjectItem 項目
-          href: projectitem-element.md
-        - name: ProjectItemFile 項目
-          href: projectitemfile-element.md
-        - name: ProjectItemFolder 項目
-          href: projectitemfolder-element.md
-        - name: ProjectOutputFile 項目
-          href: projectoutputfile-element.md
-        - name: SafeControl 項目
-          href: safecontrol-element.md
-        - name: SafeControls 項目
-          href: safecontrols-element.md
-      - name: 應用程式開發介面參考
-        href: api-reference-sharepoint-tools-extensibility.md
-ms.openlocfilehash: 66550d094a6b411cc3e06c2f9f6b5bfb5b9aa0e4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
-ms.translationtype: HT
-ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42635212"
+        - name: 擴充 Visual Studio 中的 SharePoint 工具
+          href: extending-the-sharepoint-tools-in-visual-studio.md
+        - name: SharePoint 工具擴充功能的程式撰寫模型概觀
+          href: overview-of-the-programming-model-of-sharepoint-tools-extensions.md
+        - name: 擴充 SharePoint 專案系統
+          items:
+            - name: 擴充 SharePoint 專案系統
+              href: extending-the-sharepoint-project-system.md
+            - name: 定義自訂 SharePoint 專案項目類型
+              items:
+                - name: 定義自訂 SharePoint 專案項目類型
+                  href: defining-custom-sharepoint-project-item-types.md
+                - name: 定義 SharePoint 專案項目類型
+                  href: how-to-define-a-sharepoint-project-item-type.md
+                - name: 將捷徑功能表項目新增至自訂 SharePoint 專案項目類型
+                  href: how-to-add-a-shortcut-menu-item-to-a-custom-sharepoint-project-item-type.md
+                - name: 將屬性新增至自訂 SharePoint 專案項目類型
+                  href: how-to-add-a-property-to-a-custom-sharepoint-project-item-type.md
+                - name: 為 SharePoint 專案項目建立項目範本和專案範本
+                  href: creating-item-templates-and-project-templates-for-sharepoint-project-items.md
+                - name: 逐步解說：使用項目範本建立自訂動作專案項目 (第 1 部分)
+                  href: walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md
+                - name: 逐步解說：使用項目範本建立自訂動作專案項目 (第 2 部分)
+                  href: walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md
+                - name: 逐步解說：使用專案範本建立網站欄專案項目 (第 1 部分)
+                  href: walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md
+                - name: 逐步解說：使用專案範本建立網站欄專案項目 (第 2 部分)
+                  href: walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md
+            - name: 擴充 SharePoint 專案項目
+              items:
+                - name: 擴充 SharePoint 專案項目
+                  href: extending-sharepoint-project-items.md
+                - name: 建立 SharePoint 專案項目延伸模組
+                  href: how-to-create-a-sharepoint-project-item-extension.md
+                - name: 將捷徑功能表項目新增至 SharePoint 專案項目延伸模組
+                  href: how-to-add-a-shortcut-menu-item-to-a-sharepoint-project-item-extension.md
+                - name: 將屬性新增至 SharePoint 專案項目延伸模組
+                  href: how-to-add-a-property-to-a-sharepoint-project-item-extension.md
+                - name: 逐步解說：擴充 SharePoint 專案項目類型
+                  href: walkthrough-extending-a-sharepoint-project-item-type.md
+            - name: 擴充 SharePoint 專案
+              items:
+                - name: 擴充 SharePoint 專案
+                  href: extending-sharepoint-projects.md
+                - name: 建立 SharePoint 專案延伸模組
+                  href: how-to-create-a-sharepoint-project-extension.md
+                - name: 將捷徑功能表項目新增至 SharePoint 專案
+                  href: how-to-add-a-shortcut-menu-item-to-sharepoint-projects.md
+                - name: 將屬性新增至 SharePoint 專案
+                  href: how-to-add-a-property-to-sharepoint-projects.md
+                - name: 逐步解說：建立 SharePoint 專案延伸模組
+                  href: walkthrough-creating-a-sharepoint-project-extension.md
+            - name: 擴充 SharePoint 封裝和部署
+              items:
+                - name: 擴充 SharePoint 封裝和部署
+                  href: extending-sharepoint-packaging-and-deployment.md
+                - name: 在執行部署步驟時執行程式碼
+                  href: how-to-run-code-when-deployment-steps-are-executed.md
+                - name: 在 SharePoint 專案部署或撤銷時執行程式碼
+                  href: how-to-run-code-when-a-sharepoint-project-is-deployed-or-retracted.md
+                - name: 處理部署衝突
+                  href: how-to-handle-deployment-conflicts.md
+                - name: 逐步解說：建立 SharePoint 專案的自訂部署步驟
+                  href: walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md
+                - name: 建立 SharePoint 方案的自訂功能和套件驗證規則
+                  href: how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md
+            - name: 儲存 SharePoint 專案系統擴充功能的資料
+              href: saving-data-in-extensions-of-the-sharepoint-project-system.md
+            - name: 在 SharePoint 專案系統類型與其他 Visual Studio 專案類型之間轉換
+              href: converting-between-sharepoint-project-system-types-and-other-visual-studio-project-types.md
+        - name: 在伺服器總管中擴充 SharePoint 連線節點
+          items:
+            - name: 在伺服器總管中擴充 SharePoint 連線節點
+              href: extending-the-sharepoint-connections-node-in-server-explorer.md
+            - name: 在伺服器總管中擴充 SharePoint 節點
+              href: how-to-extend-a-sharepoint-node-in-server-explorer.md
+            - name: 在伺服器總管中新增自訂 SharePoint 節點
+              href: how-to-add-a-custom-sharepoint-node-to-server-explorer.md
+            - name: 取得伺服器總管的內建 SharePoint 節點資料
+              href: how-to-get-data-for-a-built-in-sharepoint-node-in-server-explorer.md
+            - name: 逐步解說：擴充伺服器總管以顯示 Web 組件
+              href: walkthrough-extending-server-explorer-to-display-web-parts.md
+        - name: SharePoint 工具擴充功能的程式設計概念和功能
+          items:
+            - name: SharePoint 工具擴充功能的程式設計概念和功能
+              href: programming-concepts-and-features-for-sharepoint-tools-extensions.md
+            - name: 呼叫 SharePoint 物件模型
+              items:
+                - name: 呼叫 SharePoint 物件模型
+                  href: calling-into-the-sharepoint-object-models.md
+                - name: 建立 SharePoint 命令
+                  href: how-to-create-a-sharepoint-command.md
+                - name: 執行 SharePoint 命令
+                  href: how-to-execute-a-sharepoint-command.md
+                - name: 逐步解說：在伺服器總管擴充功能中呼叫 SharePoint 用戶端物件模型
+                  href: walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md
+            - name: 使用 SharePoint 專案服務
+              items:
+                - name: 使用 SharePoint 專案服務
+                  href: using-the-sharepoint-project-service.md
+                - name: 擷取 SharePoint 專案服務
+                  href: how-to-retrieve-the-sharepoint-project-service.md
+            - name: 讓自訂資料與 SharePoint 工具擴充功能產生關聯
+              href: associating-custom-data-with-sharepoint-tools-extensions.md
+        - name: 偵錯 Visual Studio 中 SharePoint 工具的擴充功能
+          href: debugging-extensions-for-the-sharepoint-tools-in-visual-studio.md
+        - name: 部署 Visual Studio 中 SharePoint 工具的擴充功能
+          href: deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md
+        - name: 參考資料
+          items:
+            - name: 參考資料
+              href: reference-sharepoint-tools-extensibility.md
+            - name: SharePoint 專案項目結構描述參考
+              items:
+                - name: SharePoint 專案項目結構描述參考
+                  href: sharepoint-project-item-schema-reference.md
+                - name: ExtensionData 項目
+                  href: extensiondata-element.md
+                - name: ExtensionDataItem 項目
+                  href: extensiondataitem-element.md
+                - name: FeatureProperties 項目
+                  href: featureproperties-element.md
+                - name: FeatureProperty 項目
+                  href: featureproperty-element.md
+                - name: Files 項目
+                  href: files-element.md
+                - name: ProjectItem 項目
+                  href: projectitem-element.md
+                - name: ProjectItemFile 項目
+                  href: projectitemfile-element.md
+                - name: ProjectItemFolder 項目
+                  href: projectitemfolder-element.md
+                - name: ProjectOutputFile 項目
+                  href: projectoutputfile-element.md
+                - name: SafeControl 項目
+                  href: safecontrol-element.md
+                - name: SafeControls 項目
+                  href: safecontrols-element.md
+            - name: 應用程式開發介面參考
+              href: api-reference-sharepoint-tools-extensibility.md

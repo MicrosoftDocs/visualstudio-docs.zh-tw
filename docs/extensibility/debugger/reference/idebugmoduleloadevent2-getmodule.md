@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugModuleLoadEvent2::GetModule
 ms.assetid: c86482bb-9ce5-4e63-bbe0-969b50169424
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b17636d5f346475018e27c72562807b44b39460c
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 6ee91686051440fe44efd1f4e4f9ba933f3e0c99
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56718465"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66323705"
 ---
 # <a name="idebugmoduleloadevent2getmodule"></a>IDebugModuleLoadEvent2::GetModule
 取得模組，正在載入或卸載。
@@ -40,18 +43,15 @@ int GetModule( 
 );
 ```
 
-#### <a name="parameters"></a>參數
- `pModule`
+## <a name="parameters"></a>參數
+`pModule`\
+[out]傳回[IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md)物件，表示已載入或卸載模組。
 
- [out]傳回[IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md)物件，表示已載入或卸載模組。
+`pbstrDebugMessage`\
+[in、 out]傳回描述此事件是選擇性的訊息。 如果此參數為 null 的值，則會不要求任何訊息。
 
- `pbstrDebugMessage`
-
- [in、 out]傳回描述此事件是選擇性的訊息。 如果此參數為 null 的值，則會不要求任何訊息。
-
- `pbLoad`
-
- [in、 out]非零值 (`TRUE`) 如果模組已載入與零 (`FALSE`) 如果正在卸載模組。 如果此參數為 null 的值，就會無狀態要求。
+`pbLoad`\
+[in、 out]非零值 (`TRUE`) 如果模組已載入與零 (`FALSE`) 如果正在卸載模組。 如果此參數為 null 的值，就會無狀態要求。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugAlias::GetObject method
 ms.assetid: 97bc3af6-6e55-4940-8a6d-692c61257806
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b2c32061ee330d4e8054e20971890d7d0d93a799
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 92d2265a6b3a17b632716729be12d92c96b65f03
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56704120"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66338141"
 ---
 # <a name="idebugaliasgetobject"></a>IDebugAlias::GetObject
 取得這個別名所針對的物件。
@@ -36,10 +39,9 @@ int GetObject(
 )
 ```
 
-#### <a name="parameters"></a>參數
- `ppObject`
-
- [out][IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md)代表此別名。
+## <a name="parameters"></a>參數
+`ppObject`\
+[out][IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md)代表此別名。
 
 ## <a name="return-value"></a>傳回值
  如果成功，會傳回 S_OK;否則，傳回錯誤碼。

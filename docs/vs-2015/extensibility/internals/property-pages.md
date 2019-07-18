@@ -1,14 +1,9 @@
 ---
 title: 屬性頁 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - configuration options, changing properties
 - property pages
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: b9b3e6e8-1e30-4c89-9862-330265dcf38c
 caps.latest.revision: 13
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 74da0df2939b08615f3a659dfca70b1cea0e495d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: a45e4a98326fe829b8f87a4ecfce669118cd9d0e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51759864"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68205745"
 ---
 # <a name="property-pages"></a>屬性頁
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -91,4 +86,3 @@ ms.locfileid: "51759864"
  [管理組態選項](../../extensibility/internals/managing-configuration-options.md)   
  [專案組態物件](../../extensibility/internals/project-configuration-object.md)   
  [方案組態](../../extensibility/internals/solution-configuration.md)
-

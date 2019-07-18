@@ -1,14 +1,9 @@
 ---
-title: CA1305： 指定 IFormatProvider |Microsoft Docs
-ms.custom: ''
+title: CA1305:指定 IFormatProvider |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - SpecifyIFormatProvider
 - CA1305
@@ -20,14 +15,14 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 084fd28106a3ac5af9a40d46cf687d4982f53690
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 93bf7f17f77008ce8e9898c1871926edf2e8439f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49834294"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65694777"
 ---
-# <a name="ca1305-specify-iformatprovider"></a>CA1305：指定 IFormatProvider
+# <a name="ca1305-specify-iformatprovider"></a>CA1305:必須指定 IFormatProvider
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -40,11 +35,11 @@ ms.locfileid: "49834294"
 ## <a name="cause"></a>原因
  方法或建構函式會呼叫具有多載，接受的一或多個成員<xref:System.IFormatProvider?displayProperty=fullName>參數的方法或建構函式不會呼叫多載，<xref:System.IFormatProvider>參數。 此規則會忽略呼叫[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]記載為略過的方法<xref:System.IFormatProvider>參數，此外下列方法：
 
--   <xref:System.Activator.CreateInstance%2A?displayProperty=fullName>
+- <xref:System.Activator.CreateInstance%2A?displayProperty=fullName>
 
--   <xref:System.Resources.ResourceManager.GetObject%2A?displayProperty=fullName>
+- <xref:System.Resources.ResourceManager.GetObject%2A?displayProperty=fullName>
 
--   <xref:System.Resources.ResourceManager.GetString%2A?displayProperty=fullName>
+- <xref:System.Resources.ResourceManager.GetString%2A?displayProperty=fullName>
 
 ## <a name="rule-description"></a>規則描述
  當<xref:System.Globalization.CultureInfo?displayProperty=fullName>或<xref:System.IFormatProvider>未提供物件，多載成員所提供的預設值可能沒有您想要以所有地區設定的效果。 此外，[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]成員選擇預設文化特性及格式設定為基礎的假設，可能不正確的程式碼。 若要確定程式碼運作如預期般運作，您的案例，您應該提供特定文化特性資訊，根據下列方針：
@@ -80,10 +75,7 @@ ms.locfileid: "49834294"
  **1900 年 6 月 4 日下午 12:15:12**
 **1900 年 06 月 04 日 12:15:12**
 ## <a name="related-rules"></a>相關的規則
- [CA1304：必須指定 CultureInfo](../code-quality/ca1304-specify-cultureinfo.md)
+ [CA1304:指定 CultureInfo](../code-quality/ca1304-specify-cultureinfo.md)
 
 ## <a name="see-also"></a>另請參閱
- [NIB： 使用 CultureInfo 類別](http://msdn.microsoft.com/en-us/d4329e34-64c3-4d1e-8c73-5b0ee626ba7a)
-
-
-
+ [NIB：使用 CultureInfo 類別](https://msdn.microsoft.com/d4329e34-64c3-4d1e-8c73-5b0ee626ba7a)

@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugThread2 interface
 ms.assetid: 221b4b1b-4a26-466e-bc29-5eff800fab13
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9dcb50f732d4c7aae94cf32036cd17340d636dd9
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: df63bc6484905249adc1756ce701b3ee91f45015
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56693694"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66319971"
 ---
 # <a name="idebugthread2"></a>IDebugThread2
 這個介面表示在程式中執行的執行緒。

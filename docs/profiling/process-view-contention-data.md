@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 79f9330733a0d32faeb9980813f170f52a6f7121
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56643908"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62965631"
 ---
 # <a name="process-view---contention-data"></a>處理序檢視 - 爭用資料
 處理序檢視顯示程式碼剖析執行期間所執行處理序和執行緒的爭用資料。

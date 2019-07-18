@@ -1,14 +1,9 @@
 ---
-title: 'Idiasymbol:: Get_hasseh |Microsoft Docs'
-ms.custom: ''
+title: IDiaSymbol::get_hasSEH | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,18 +12,18 @@ ms.assetid: 1a709ded-22c8-464c-97be-eba5e464210c
 caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: b4d373246b2ee0142f7592bd0d8a833ab5965661
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 72e8d428df4796c34c5ac20447e7bf8121f259d2
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51738605"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "65703773"
 ---
 # <a name="idiasymbolgethasseh"></a>IDiaSymbol::get_hasSEH
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-擷取指定的函式是否包含任何的旗標[Structured Exception Handling （C/c + +）](http://msdn.microsoft.com/library/dd3b647d-c269-43a8-aab9-ad1458712976) (例如 __try /\__except 區塊)。  
+擷取指定的函式是否包含任何的旗標[Structured Exception Handling (C /C++)](https://msdn.microsoft.com/library/dd3b647d-c269-43a8-aab9-ad1458712976) (例如 __try /\__except 區塊)。  
   
 ## <a name="syntax"></a>語法  
   
@@ -46,18 +41,15 @@ HRESULT get_hasSEH(
  如果成功，則傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。  
   
 > [!NOTE]
->  傳回值為`S_FALSE`表示此屬性不適用於符號。  
+> 傳回值為`S_FALSE`表示此屬性不適用於符號。  
   
 ## <a name="requirements"></a>需求  
   
-|需求|描述|  
+|需求|說明|  
 |-----------------|-----------------|  
 |標頭：|dia2.h|  
-|版本:|DIA SDK 8.0 版|  
+|版本:|DIA SDK v8.0|  
   
 ## <a name="see-also"></a>另請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [結構化例外狀況處理 (C/C++)](http://msdn.microsoft.com/library/dd3b647d-c269-43a8-aab9-ad1458712976)
-
-
-
+ [結構化例外狀況處理 (C/C++)](https://msdn.microsoft.com/library/dd3b647d-c269-43a8-aab9-ad1458712976)

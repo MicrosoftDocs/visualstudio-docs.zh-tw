@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - architecture
 ms.assetid: 822cbb8d-7ab4-40ee-bd12-44016ebcce81
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 803fd69df06ae820e39d7edcfa54e56e59717a1c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 155d760ee546b1e35b733a00ac9a67722742f9b5
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54963108"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66340795"
 ---
 # <a name="inside-the-editor"></a>在編輯器內
 
@@ -108,7 +108,7 @@ A<xref:Microsoft.VisualStudio.Text.SnapshotPoint>表示快照集內的字元位�
 
 #### <a name="spans-and-normalizedspancollections"></a>範圍和 NormalizedSpanCollections
 
-A<xref:Microsoft.VisualStudio.Text.Span>間隔會套用至一段文字快照集內的文字。 快照集位置都以零起始，因此範圍可以包含零的任何位置。 `End`範圍的屬性的總和等於其`Start`屬性並將其`Length`屬性。 A`Span`不包含由編製索引的字元`End`屬性。 例如，具有的起始範圍 = 5 且長度 = 3 的結束 = 8，而且它包含在位置 5、 6 和 7 個字元。 此範圍標記法是 5..8）。
+A<xref:Microsoft.VisualStudio.Text.Span>間隔會套用至一段文字快照集內的文字。 快照集位置都以零起始，因此範圍可以包含零的任何位置。 `End`範圍的屬性的總和等於其`Start`屬性並將其`Length`屬性。 A`Span`不包含由編製索引的字元`End`屬性。 例如，具有的起始範圍 = 5 且長度 = 3 的結束 = 8，而且它包含在位置 5、 6 和 7 個字元。 此範圍標記法是 [5..8)。
 
 兩個範圍有交集，如果其共有任何位置，包括結尾的位置。 因此，交集的 [3, 5) 和 [2, 7) 是 [3, 5) 和交集的 [3, 5) 和 [5, 7) 為 [5，5）。 (請注意，[5，5) 是空的範圍。)
 
@@ -202,19 +202,19 @@ abXefYj
 
 編輯器的功能被設計，此功能的定義是不同於其的實作。 編輯器包含下列功能：
 
--   標記和分類器
+- 標記和分類器
 
--   裝飾
+- 裝飾
 
--   Projection
+- Projection
 
--   大綱
+- 大綱
 
--   滑鼠和索引鍵繫結
+- 滑鼠和索引鍵繫結
 
--   作業和基本項目
+- 作業和基本項目
 
--   IntelliSense
+- IntelliSense
 
 ### <a name="tags-and-classifiers"></a>標記和分類器
 
@@ -262,7 +262,7 @@ C# 分類器可能會標記為註解，整個範圍和英文語言分類可能�
 
 快顯裝飾會出現在上述 [文字] 檢視中，例如工具提示的小視窗的圖形。
 
-###  <a name="projection"></a> 投影
+### <a name="projection"></a> 投影
 
 投射是一種技術來建構不同種類的文字緩衝區，不會實際儲存的文字，但改為結合其他文字緩衝區中的文字。 比方說，串連兩個其他緩衝區中的文字，並呈現結果，它是在只有一個緩衝區，或隱藏一個緩衝區中的文字部分，可以使用投影緩衝區。 投影緩衝區可以做為另一個投影緩衝區的來源緩衝區。 可以建構一組相關的投影的緩衝區，以許多不同的方式重新排列的文字。 (這類集合，也就是*緩衝區圖形*。)Visual Studio 文字大綱功能藉由使用投影緩衝區來隱藏摺疊的文字，並適用於 ASP.NET 網頁的 Visual Studio 編輯器使用投影來支援內嵌的 Visual Basic 和 C# 等語言。
 

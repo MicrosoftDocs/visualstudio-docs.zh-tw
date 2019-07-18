@@ -13,15 +13,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 10683f2bd740a92b41c0063da15d093248396bd5
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 24a365ba239e4d87e179bfecd664aa31aef0f359
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56619390"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62574907"
 ---
 # <a name="how-to-programmatically-create-word-tables"></a>HOW TO：以程式設計方式建立 Word 表格
-  <xref:Microsoft.Office.Interop.Word.Tables> 集合是 <xref:Microsoft.Office.Interop.Word.Document>、<xref:Microsoft.Office.Tools.Word.Document>、<xref:Microsoft.Office.Interop.Word.Selection> 及 <xref:Microsoft.Office.Interop.Word.Range> 類別的成員，表示您可以在其中任何一個內容中建立資料表。 您使用 <xref:Microsoft.Office.Interop.Word.Tables> 集合的 <xref:Microsoft.Office.Interop.Word.Tables.Add%2A> 方法，加入指定範圍的表格。
+   <xref:Microsoft.Office.Interop.Word.Tables> 集合是 <xref:Microsoft.Office.Interop.Word.Document>、<xref:Microsoft.Office.Tools.Word.Document>、<xref:Microsoft.Office.Interop.Word.Selection> 及 <xref:Microsoft.Office.Interop.Word.Range> 類別的成員，表示您可以在其中任何一個內容中建立資料表。 您使用 <xref:Microsoft.Office.Interop.Word.Tables> 集合的 <xref:Microsoft.Office.Interop.Word.Tables.Add%2A> 方法，加入指定範圍的表格。
 
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
 
@@ -51,7 +51,7 @@ ms.locfileid: "56619390"
 
 ### <a name="to-apply-a-style-to-a-table"></a>將樣式套用到表格
 
-1.  使用 <xref:Microsoft.Office.Interop.Word.Table.Style%2A> 屬性，將任一種 Word 內建樣式套用到表格。
+1. 使用 <xref:Microsoft.Office.Interop.Word.Table.Style%2A> 屬性，將任一種 Word 內建樣式套用到表格。
 
      若要使用下列程式碼範例，請從專案的 `ThisDocument` 類別中執行此範例。
 
@@ -84,7 +84,7 @@ ms.locfileid: "56619390"
 
 ### <a name="to-apply-a-style-to-a-table"></a>將樣式套用到表格
 
-1.  使用 <xref:Microsoft.Office.Interop.Word.Table.Style%2A> 屬性，將任一種 Word 內建樣式套用到表格。
+1. 使用 <xref:Microsoft.Office.Interop.Word.Table.Style%2A> 屬性，將任一種 Word 內建樣式套用到表格。
 
      下列程式碼範例會使用使用中的文件。 若要使用此範例，請從專案的 `ThisAddIn` 類別中執行。
 

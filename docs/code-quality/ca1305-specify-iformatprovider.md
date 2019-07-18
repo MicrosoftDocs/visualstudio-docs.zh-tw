@@ -16,12 +16,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: b96ca08b51bb5145357ef921bde753e133062203
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: eda86085a5a2b8ba8e42116005890d2bda0b1dca
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57868004"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66714684"
 ---
 # <a name="ca1305-specify-iformatprovider"></a>CA1305:必須指定 IFormatProvider
 
@@ -36,7 +36,7 @@ ms.locfileid: "57868004"
 
 方法或建構函式會呼叫具有多載，接受的一或多個成員<xref:System.IFormatProvider?displayProperty=fullName>參數的方法或建構函式不會呼叫多載，<xref:System.IFormatProvider>參數。
 
-此規則會忽略會記載為略過的.NET Framework 方法的呼叫<xref:System.IFormatProvider>參數。 此規則也會忽略下列方法：
+此規則會忽略會記載為略過的.NET 方法的呼叫<xref:System.IFormatProvider>參數。 此規則也會忽略下列方法：
 
 - <xref:System.Activator.CreateInstance%2A?displayProperty=nameWithType>
 - <xref:System.Resources.ResourceManager.GetObject%2A?displayProperty=nameWithType>
@@ -44,7 +44,7 @@ ms.locfileid: "57868004"
 
 ## <a name="rule-description"></a>規則描述
 
-當<xref:System.Globalization.CultureInfo?displayProperty=nameWithType>或<xref:System.IFormatProvider>未提供物件，多載成員所提供的預設值可能沒有您想要以所有地區設定的效果。 此外，.NET Framework 成員選擇預設文化特性，而且格式為基礎的假設，可能不正確的程式碼。 若要確定程式碼運作如預期般運作，您的案例，您應該提供特定文化特性資訊，根據下列方針：
+當<xref:System.Globalization.CultureInfo?displayProperty=nameWithType>或<xref:System.IFormatProvider>未提供物件，多載成員所提供的預設值可能沒有您想要以所有地區設定的效果。 此外，.NET 成員選擇預設文化特性，而且格式為基礎的假設，可能不正確的程式碼。 若要確定程式碼運作如預期般運作，您的案例，您應該提供特定文化特性資訊，根據下列方針：
 
 - 如果此值會顯示給使用者，使用目前文化特性。 請參閱 <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=nameWithType>。
 

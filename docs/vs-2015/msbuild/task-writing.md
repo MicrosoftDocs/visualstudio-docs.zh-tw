@@ -13,17 +13,16 @@ caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ef637126c75dd05eea2e8bfca76f0fe0bd13ac75
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: eaf927b1049709a04d8a883615d1997e9316599e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54794278"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445384"
 ---
 # <a name="task-writing"></a>工作撰寫
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 提供在建置流程期間執行之程式碼的工作。 工作是包含在目標中。 一般工作程式庫會隨附於[!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]，您也可以建立自己的工作。 如需隨附於 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 的工作程式庫詳細資訊，請參閱[工作參考](../msbuild/msbuild-task-reference.md)。  
   
 ## <a name="tasks"></a>工作  
@@ -106,7 +105,7 @@ namespace MyTasks
  [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 檔案 Microsoft.Common.Tasks 是專案檔案，包含 `UsingTask` 元素清單，這些元素會註冊所有隨附於 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 的工作。 組建每個專案時，都會自動包含此檔案。 如果在 Microsoft.Common.Tasks 中註冊的工作也在目前的專案檔中註冊，則目前的專案檔有優先順序，亦即您可以使用自己的同名工作覆寫預設工作。  
   
 > [!TIP]
->  檢視 Microsoft.Common.Tasks 的內容即可以查看 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 所附的工作清單。  
+> 檢視 Microsoft.Common.Tasks 的內容即可以查看 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 所附的工作清單。  
   
 ## <a name="raising-events-from-a-task"></a>從工作引發事件  
  如果您的工作衍生自 <xref:Microsoft.Build.Utilities.Task> 協助程式類別，您可以對 <xref:Microsoft.Build.Utilities.Task> 類別使用下列任一 helper 方法，引發要被攔截且由任何已註冊記錄器顯示的事件：  
@@ -163,7 +162,7 @@ public string RequiredProperty
   
 ## <a name="example"></a>範例  
   
-### <a name="description"></a>描述  
+### <a name="description"></a>說明  
  以下 [!INCLUDE[csprcs](../includes/csprcs-md.md)] 類別會示範衍生自 <xref:Microsoft.Build.Utilities.Task> 協助程式類別的工作。 此工作會傳回 `true`，指出是否成功。  
   
 ### <a name="code"></a>程式碼  
@@ -187,7 +186,7 @@ namespace SimpleTask1
   
 ## <a name="example"></a>範例  
   
-### <a name="description"></a>描述  
+### <a name="description"></a>說明  
  以下 [!INCLUDE[csprcs](../includes/csprcs-md.md)] 類別會示範實作 <xref:Microsoft.Build.Framework.ITask> 介面的工作。 此工作會傳回 `true`，指出是否成功。  
   
 ### <a name="code"></a>程式碼  
@@ -245,7 +244,7 @@ namespace SimpleTask2
   
 ## <a name="example"></a>範例  
   
-### <a name="description"></a>描述  
+### <a name="description"></a>說明  
  此 [!INCLUDE[csprcs](../includes/csprcs-md.md)] 類別會示範衍生自 <xref:Microsoft.Build.Utilities.Task> 協助程式類別的工作。 它具有必要的字串屬性，會引發所有已註冊記錄器顯示的事件。  
   
 ### <a name="code"></a>程式碼  
@@ -253,7 +252,7 @@ namespace SimpleTask2
   
 ## <a name="example"></a>範例  
   
-### <a name="description"></a>描述  
+### <a name="description"></a>說明  
  下例示範的專案檔會叫用前一個範例的工作：SimpleTask3。  
   
 ### <a name="code"></a>程式碼  

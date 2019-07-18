@@ -6,17 +6,20 @@ helpviewer_keywords:
 - GetMetaDataImport
 - IDebugSymbolProviderDirect::GetMetaDataImport
 ms.assetid: b51a492c-af00-4b08-93fb-6c19ee4916aa
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a68e6e0a8153aa3b1c97e4bc1f2c401e9ccbe550
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 4a2cd79581487e7e407cc409c4b8496abc53bfa7
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56695072"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66347295"
 ---
 # <a name="idebugsymbolproviderdirectgetmetadataimport"></a>IDebugSymbolProviderDirect::GetMetaDataImport
 擷取中繼資料匯入資訊。
@@ -39,18 +42,15 @@ int GetMetaDataImport (
 );
 ```
 
-#### <a name="parameters"></a>參數
- `guid`
+## <a name="parameters"></a>參數
+`guid`\
+[in]模組的唯一識別碼。
 
- [in]模組的唯一識別碼。
+`appID`\
+[in]應用程式定義域的識別項。
 
- `appID`
-
- [in]應用程式定義域的識別項。
-
- `ppImport`
-
- [out]傳回物件，包含中繼資料匯入資訊。
+`ppImport`\
+[out]傳回物件，包含中繼資料匯入資訊。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

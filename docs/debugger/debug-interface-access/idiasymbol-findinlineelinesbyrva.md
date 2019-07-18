@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: bdcb85db51a3fcfca434af9d39bc88587a0e5cdc
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56611187"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "62831753"
 ---
 # <a name="idiasymbolfindinlineelinesbyrva"></a>IDiaSymbol::findInlineeLinesByRVA
 擷取列舉型別，可讓用戶端來逐一查看位於內嵌的直接或間接指定相對的虛擬位址 (RVA) 內這個符號的所有函式的行號資訊。
@@ -44,7 +44,7 @@ HRESULT findInlineeLinesByRVA (    DWORD                 rva,   DWORD          
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [IDiaSession](../../debugger/debug-interface-access/idiasession.md)
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
 - [SymTagEnum 列舉](../../debugger/debug-interface-access/symtagenum.md)

@@ -1,14 +1,9 @@
 ---
-title: CA2218： 覆寫 GetHashCode 覆寫 Equals |Microsoft Docs
-ms.custom: ''
+title: CA2218:覆寫 GetHashCode，equals |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA2218
 - OverrideGetHashCodeOnOverridingEquals
@@ -20,14 +15,14 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: bc9e72639e123e0a99c4423b460bc4122995971c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1019ef8aceecdbc8cabab6a745d9853dc2d60304
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49881900"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685228"
 ---
-# <a name="ca2218-override-gethashcode-on-overriding-equals"></a>CA2218：覆寫 Equals 時必須一併覆寫 GetHashCode
+# <a name="ca2218-override-gethashcode-on-overriding-equals"></a>CA2218:覆寫 Equals 時必須一併覆寫 GetHashCode
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -43,23 +38,23 @@ ms.locfileid: "49881900"
 ## <a name="rule-description"></a>規則描述
  <xref:System.Object.GetHashCode%2A> 傳回值，根據目前的執行個體、 適用於雜湊演算法和資料結構，例如雜湊表。 相同的型別而且相等的兩個物件必須傳回相同的雜湊程式碼，以確保下列類型的執行個體，可正確運作：
 
--   <xref:System.Collections.Hashtable?displayProperty=fullName>
+- <xref:System.Collections.Hashtable?displayProperty=fullName>
 
--   <xref:System.Collections.SortedList?displayProperty=fullName>
+- <xref:System.Collections.SortedList?displayProperty=fullName>
 
--   <xref:System.Collections.Generic.Dictionary%602?displayProperty=fullName>
+- <xref:System.Collections.Generic.Dictionary%602?displayProperty=fullName>
 
--   <xref:System.Collections.Generic.SortedDictionary%602?displayProperty=fullName>
+- <xref:System.Collections.Generic.SortedDictionary%602?displayProperty=fullName>
 
--   <xref:System.Collections.Generic.SortedList%602?displayProperty=fullName>
+- <xref:System.Collections.Generic.SortedList%602?displayProperty=fullName>
 
--   <xref:System.Collections.Specialized.HybridDictionary?displayProperty=fullName>
+- <xref:System.Collections.Specialized.HybridDictionary?displayProperty=fullName>
 
--   <xref:System.Collections.Specialized.ListDictionary?displayProperty=fullName>
+- <xref:System.Collections.Specialized.ListDictionary?displayProperty=fullName>
 
--   <xref:System.Collections.Specialized.OrderedDictionary?displayProperty=fullName>
+- <xref:System.Collections.Specialized.OrderedDictionary?displayProperty=fullName>
 
--   實作的型別 <xref:System.Collections.Generic.IEqualityComparer%601?displayProperty=fullName>
+- 實作的型別 <xref:System.Collections.Generic.IEqualityComparer%601?displayProperty=fullName>
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
  若要修正此規則的違規情形，提供實作<xref:System.Object.GetHashCode%2A>。 一組相同類型的物件中，您必須確定實作會傳回相同的值，如果您實作<xref:System.Object.Equals%2A>傳回`true`配對。
@@ -96,19 +91,19 @@ ms.locfileid: "49881900"
  [!code-csharp[FxCop.Usage.GetHashCodeFixedStruct#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.GetHashCodeFixedStruct/cs/FxCop.Usage.GetHashCodeFixedStruct.cs#1)]
 
 ## <a name="related-rules"></a>相關的規則
- [CA1046：請勿多載參考類型上的等號比較運算子](../code-quality/ca1046-do-not-overload-operator-equals-on-reference-types.md)
+ [CA1046:不要多載參考類型上的等號比較運算子](../code-quality/ca1046-do-not-overload-operator-equals-on-reference-types.md)
 
- [CA2225：運算子多載必須有具名的替代方法](../code-quality/ca2225-operator-overloads-have-named-alternates.md)
+ [CA2225:運算子多載必須有具名的替代項目](../code-quality/ca2225-operator-overloads-have-named-alternates.md)
 
- [CA2226：運算子應該有對稱的多載](../code-quality/ca2226-operators-should-have-symmetrical-overloads.md)
+ [CA2226:運算子應該有對稱的多載](../code-quality/ca2226-operators-should-have-symmetrical-overloads.md)
 
- [CA2224：多載等號比較運算子時必須一併覆寫 Equals](../code-quality/ca2224-override-equals-on-overloading-operator-equals.md)
+ [CA2224:覆寫等於多載等號比較運算子](../code-quality/ca2224-override-equals-on-overloading-operator-equals.md)
 
- [CA2231：覆寫 ValueType.Equals 時必須一併多載等號比較運算子](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md)
+ [CA2231：在覆寫 ValueType.Equals 上多載等號運算子](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md)
 
 ## <a name="see-also"></a>另請參閱
 
 - <xref:System.Object.Equals%2A?displayProperty=fullName>
 - <xref:System.Object.GetHashCode%2A?displayProperty=fullName>
 - <xref:System.Collections.Hashtable?displayProperty=fullName>
-- [等號比較運算子](http://msdn.microsoft.com/library/bc496a91-fefb-4ce0-ab4c-61f09964119a)
+- [等號比較運算子](https://msdn.microsoft.com/library/bc496a91-fefb-4ce0-ab4c-61f09964119a)

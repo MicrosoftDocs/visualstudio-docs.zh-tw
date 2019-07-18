@@ -8,42 +8,42 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fa5206ea42385cb716c522504648e1d8fd5879ae
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: d4ba0106a1494c7e7e8d56c3e902a3436f657712
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57525114"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62783326"
 ---
-# <a name="how-to-create-an-xml-document-based-on-an-xsd-schema"></a>HOW TO：建立根據 XSD 結構描述的 XML 文件
+# <a name="how-to-create-an-xml-document-based-on-an-xsd-schema"></a>HOW TO：根據 XSD 結構描述建立 XML 文件
 
 **產生範例 XML**功能會產生範例 XML 檔案，根據 XML 結構描述 (XSD) 檔案。
 
  您可以針對下列案例使用此選項：
 
--   了解結構描述中各種建構的使用方式。
+- 了解結構描述中各種建構的使用方式。
 
--   確認結構描述進行預期的作業。
+- 確認結構描述進行預期的作業。
 
 **產生範例 XML**功能僅可用於全域項目，而且需要有效的 XML 結構描述設定。
 
 這項功能通常會產生有效的 XML 文件。 不過，如果結構描述包含下列其中一個或多個項目，範例可能就會無效：
 
--   `xs:key`、`xs:keyref` 和 `xs:unique` 識別條件約束。
+- `xs:key`、`xs:keyref` 和 `xs:unique` 識別條件約束。
 
--   `xs:pattern` Facet。
+- `xs:pattern` Facet。
 
--   `xs:QName` 型別的列舉型別 (Enumeration)。
+- `xs:QName` 型別的列舉型別 (Enumeration)。
 
--   `xs:ENTITY`、`xs:ENTITIES` 和 `xs:NOTATION` 型別。
+- `xs:ENTITY`、`xs:ENTITIES` 和 `xs:NOTATION` 型別。
 
 此外，請注意，只有當列舉型別出現在 `xs:base64Binary` 的結構描述時，系統才會產生該型別的內容。
 
 ## <a name="to-generate-an-xml-instance-document-based-on-the-xsd-file"></a>根據 XSD 檔案產生 XML 執行個體文件
 
-1.  請依照下列中的步驟[How to:建立和編輯 XSD 結構描述檔案](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md)。
+1. 請依照下列中的步驟[How to:建立和編輯 XSD 結構描述檔案](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md)。
 
-2.  在  [XML 結構描述總管](../xml-tools/xml-schema-explorer.md)，以滑鼠右鍵按一下`PurchaseOrder`全域項目。 選取 **產生範例 XML**。
+2. 在  [XML 結構描述總管](../xml-tools/xml-schema-explorer.md)，以滑鼠右鍵按一下`PurchaseOrder`全域項目。 選取 **產生範例 XML**。
 
      當您選取此選項時，PurchaseOrder。*xml*使用下列的範例 XML 內容的檔案會產生，並在 XML 編輯器中開啟：
 

@@ -1,23 +1,20 @@
 ---
 title: T4 組件指示詞 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: 44949749-ce3c-4fb5-8690-a17f1564ac2f
 caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 97e28347ba6985d99386647219f92aac9a221398
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 164f049b5ed1133acfd1f4e66f805b1510d29d5d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49873574"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63411494"
 ---
 # <a name="t4-assembly-directive"></a>T4 組件指示詞
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +24,7 @@ ms.locfileid: "49873574"
  撰寫文字範本的一般概觀，請參閱 <<c0> [ 撰寫 T4 文字範本](../modeling/writing-a-t4-text-template.md)。  
   
 > [!NOTE]
->  在執行階段 (前置處理過的) 文字範本中，不需要 `assembly` 指示詞。 相反地，將必要的組件，加入**參考**的您[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]專案。  
+> 在執行階段 (前置處理過的) 文字範本中，不需要 `assembly` 指示詞。 相反地，將必要的組件，加入**參考**的您[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]專案。  
   
 ## <a name="using-the-assembly-directive"></a>使用組件指示詞  
  指示詞的語法如下：  
@@ -69,7 +66,7 @@ ms.locfileid: "49873574"
   
 - 包含 DSL 的組件。  
   
-##  <a name="msbuild"></a> 使用 MSBuild 和 Visual Studio 中的專案屬性  
+## <a name="msbuild"></a> 使用 MSBuild 和 Visual Studio 中的專案屬性  
  Visual Studio 巨集 (如 $(SolutionDir)) 在 MSBuild 中無法運作。 如果想要轉換組建電腦中的範本，您必須改用專案屬性。  
   
  編輯您的 .csproj 或 .vbproj 檔案以定義專案屬性。 這個範例會定義名為 `myLibFolder` 的屬性：  
@@ -97,6 +94,3 @@ ms.locfileid: "49873574"
   
 ## <a name="see-also"></a>另請參閱  
  [T4 包含指示詞](../modeling/t4-include-directive.md)
-
-
-

@@ -1,26 +1,21 @@
 ---
 title: FxCopCmd 錯誤 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 helpviewer_keywords:
 - FxCopCmd errors
 ms.assetid: bb614ed0-1b7c-4b56-99ae-da50ef6cfef9
 caps.latest.revision: 12
 ms.author: mikejo
-manager: douge
-ms.openlocfilehash: 828805e0746fb985ea310b755cdaaa252e215a07
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 3e0770654f564c57cf576666dcd9575f47d9ce1c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51751723"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432284"
 ---
 # <a name="fxcopcmd-errors"></a>FxCopCmd 錯誤
 FxCopCmd 不會考慮所有的錯誤，是嚴重的錯誤。 如果 FxCopCmd 有足夠的資訊來執行部分的分析，它會執行分析和報告所發生的錯誤。 錯誤的程式碼，也就是 32 位元整數，包含對應至錯誤的數字值的位元組合。  
@@ -45,16 +40,16 @@ FxCopCmd 不會考慮所有的錯誤，是嚴重的錯誤。 如果 FxCopCmd 有
   
  分析錯誤會傳回嚴重錯誤。 表示無法完成分析。 適用時，錯誤程式碼也會包含嚴重錯誤的根本原因。 在下列情況會產生嚴重的錯誤：  
   
--   分析無法執行輸入不足所造成。  
+- 分析無法執行輸入不足所造成。  
   
--   分析會擲回 FxCopCmd 未處理的例外狀況。  
+- 分析會擲回 FxCopCmd 未處理的例外狀況。  
   
--   找不到指定的專案檔，或已損毀。  
+- 找不到指定的專案檔，或已損毀。  
   
--   未指定輸出選項，或無法寫入檔案。  
+- 未指定輸出選項，或無法寫入檔案。  
   
     > [!NOTE]
-    >  FxCopCmd 傳回碼 「 組件參考錯誤 」 0x200 本身是警告，而不是錯誤。 此傳回碼指出遺漏的間接參考找不到，但 FxCopCmd 無法處理它們。 它會警告是，某些分析結果可能被盜用的可能性。 它結合任何其他傳回碼時，則您可以視為錯誤 「 組件參考錯誤 」 的傳回碼。  
+    > FxCopCmd 傳回碼 「 組件參考錯誤 」 0x200 本身是警告，而不是錯誤。 此傳回碼指出遺漏的間接參考找不到，但 FxCopCmd 無法處理它們。 它會警告是，某些分析結果可能被盜用的可能性。 它結合任何其他傳回碼時，則您可以視為錯誤 「 組件參考錯誤 」 的傳回碼。  
   
 ## <a name="see-also"></a>另請參閱  
  [程式碼分析應用程式錯誤](../code-quality/code-analysis-application-errors.md)

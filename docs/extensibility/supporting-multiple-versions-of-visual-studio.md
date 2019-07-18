@@ -6,17 +6,17 @@ helpviewer_keywords:
 - Visual Studio, supporting multiple versions
 - VSPackages, side-by-side compatibility
 ms.assetid: 0047aa90-1ed4-40d3-8772-622b2719a4b1
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b9927a4aea836da753fc0df7d67a46cf74f466dd
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: f7212445cd507a0d7d185bbd73fa2292e5b783f4
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56679435"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745997"
 ---
 # <a name="supporting-multiple-versions-of-visual-studio"></a>支援多個 Visual Studio 版本
 詞彙*並排顯示*表示您可以用來安裝，並維護多個版本的同一部電腦上的產品。 適用於 Vspackage，也就是說，使用者可以擁有數個相同的電腦上安裝的 Visual Studio 版本。 不過，您不能有並排顯示 Vspackage 載入單一版本的 Visual Studio 版本。
@@ -36,7 +36,7 @@ ms.locfileid: "56679435"
    如需詳細資訊，請參閱 <<c0> [ 使用 Windows Installer 安裝 Vspackage](../extensibility/internals/installing-vspackages-with-windows-installer.md)也[元件管理](../extensibility/internals/component-management.md)。
 
   > [!NOTE]
-  >  安裝新版 Visual Studio 也會安裝對應的版本[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]。 例如，在相同電腦上安裝 Visual Studio 2010 和 Visual Studio 2012 也會安裝 4.0 和 4.5 版[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]分別。
+  > 安裝 Visual Studio 的版本時，也會安裝對應的.NET framework 版本。 例如，在相同電腦上安裝 Visual Studio 2010 和 Visual Studio 2012 也會安裝 4.0 和.NET framework 4.5 版分別。
 
 ## <a name="in-this-section"></a>本節內容
 - [選擇之間共用和建立版本的 Vspackage](../extensibility/choosing-between-shared-and-versioned-vspackages.md)說明如何解決在 VSPackage 中的並排顯示問題。

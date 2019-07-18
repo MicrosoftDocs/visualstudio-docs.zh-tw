@@ -1,27 +1,22 @@
 ---
 title: 可用服務清單 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - services, Visual Studio
 - Visual Studio, services
 ms.assetid: 724eb24b-b87c-4971-a2e7-adee7afc03b2
 caps.latest.revision: 50
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 0363aba508ff1a00fcca34f4b0b7a857aa15fc4f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: d67d0300d99cf43165446458414cc2244c6ede0c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51730699"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68203817"
 ---
 # <a name="list-of-available-services"></a>可用服務清單
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -35,7 +30,7 @@ ms.locfileid: "51730699"
 |服務|介面|Visual Studio|Visual Studio 2005|描述|  
 |-------------|---------------|-------------------|------------------------|-----------------|  
 |<xref:Microsoft.VisualStudio.OLE.Interop.SBindHost>|<xref:Microsoft.VisualStudio.OLE.Interop.IBindHost>|是|是|用來取得 Vspackage<xref:Microsoft.VisualStudio.OLE.Interop.IBindHost>從 ActiveX 控制項來加速非同步資料傳輸的介面。|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.SDTE>|<xref:EnvDTE.DTE>|否|是|取得用來自動化的設計階段擴充性 (DTE) 物件。<br /><br /> C/C + + 識別碼： SID_SDTE|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.SDTE>|<xref:EnvDTE.DTE>|否|是|取得用來自動化的設計階段擴充性 (DTE) 物件。<br /><br /> C /C++識別碼：SID_SDTE|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.SCodeNavigate>|<xref:Microsoft.VisualStudio.Shell.Interop.ICodeNavigate>|是|是|若要顯示控制項的預設事件處理常式的表單設計工具來實作。|  
 |<xref:Microsoft.VisualStudio.OLE.Interop.SContainerDispatch>|IDispatch|是|是|可讓 VSPackage 也可以存取另一個 VSPackage 或控制項的自動化介面。|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.SExtendedTypeLib>|<xref:Microsoft.VisualStudio.Shell.Interop.IExtendedTypeLib>|是|是|可讓 VSPackage 也可以加入或建立擴充的型別程式庫。|  
@@ -165,6 +160,5 @@ ms.locfileid: "51730699"
 |<xref:Microsoft.VisualStudio.Shell.Interop.SVsXMLMemberIndexService>|<xref:Microsoft.VisualStudio.Shell.Interop.IVsXMLMemberIndexService>|是|是|提供特定的中繼資料檔案與相關聯的 XML 格式的文件檔案的存取權。|  
   
 ## <a name="see-also"></a>另請參閱  
- [COM 和受管理的服務](http://msdn.microsoft.com/en-us/6c5808b4-ad87-48d7-ae06-33a81e7052af)   
+ [COM 和受管理的服務](/java/api/overview/partnercenter/managedservices?view=partnercenter-1.8.1)   
  [使用和提供服務](../../extensibility/using-and-providing-services.md)
-

@@ -19,11 +19,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ec05565bb43d4b592515c9c4b41c969a3e677e0e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56645000"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62954761"
 ---
 # <a name="unregisterassembly-task"></a>UnregisterAssembly 工作
 針對 COM Interop 用途將指定的組件取消註冊。 與 [RegisterAssembly 工作](../msbuild/registerassembly-task.md)執行的方式相反。

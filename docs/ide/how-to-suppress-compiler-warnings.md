@@ -8,14 +8,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b228bbacb69449803847847932163a05f3cf5310
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: 2d3f207190fed7c01dd851d809e12e6032549ff3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57323970"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62549287"
 ---
-# <a name="how-to-suppress-compiler-warnings"></a>作法：隱藏編譯器警告
+# <a name="how-to-suppress-compiler-warnings"></a>HOW TO：隱藏編譯器警告
 
 您可以簡化組建記錄檔，方法是篩選掉一或多個類型的編譯器警告。 例如，您可能只想檢閱當您將組建記錄檔詳細等級設定為 [一般]、[詳細資料] 或 [診斷] 時所產生的部分輸出。 如需詳細資訊層級的詳細資訊，請參閱[如何：檢視、儲存及設定組建記錄檔](../ide/how-to-view-save-and-configure-build-log-files.md)。
 
@@ -63,7 +63,7 @@ ms.locfileid: "57323970"
 
 1. 在功能表列上，依序選擇 [專案] > [卸載專案]。
 
-1. 在**方案總管**中，以滑鼠右鍵按一下開啟專案的捷徑功能表，然後選擇 [編輯 <ProjectName>.vbproj]。
+1. 在 [方案總管] 中，以滑鼠右鍵按一下開啟專案的捷徑功能表，然後選擇 [編輯 \<專案名稱>.vbproj]。
 
     隨即在程式碼編輯器中開啟 XML 專案檔。
 

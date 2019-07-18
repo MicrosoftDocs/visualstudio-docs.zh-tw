@@ -10,11 +10,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: aced2be4d584fb2ede58527a1d541f24089f220d
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56315803"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62907275"
 ---
 # <a name="use-models-in-your-development-process"></a>在開發程序中使用模型
 

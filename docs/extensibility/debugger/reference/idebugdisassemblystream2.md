@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugDisassemblyStream2 interface
 ms.assetid: b03cab0c-3f0b-4cc6-88dc-acb3b48c567a
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 352d0c71151a7c99822f5ad9f15250c47541fb19
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: cf91235b1321b13571505c51af077643c606c4a7
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56705816"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66310303"
 ---
 # <a name="idebugdisassemblystream2"></a>IDebugDisassemblyStream2
 這個介面會表示指令資料流。

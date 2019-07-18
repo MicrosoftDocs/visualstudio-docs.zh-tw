@@ -6,17 +6,17 @@ helpviewer_keywords:
 - ButtonText element (VSCT XML schema)
 - VSCT XML schema elements, ButtonText
 ms.assetid: 56aba884-0356-4894-ae4e-32d3938f6865
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 519ba206b334ef9c955245c152fb14663366472b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: fe2440258e95ad0d61998b24dae54b731a998c47
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56698829"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66321219"
 ---
 # <a name="buttontext-element"></a>ButtonText 元素
 此欄位可讓您指定各種功能表所顯示的文字。 根據預設，`ButtonText`元素會出現在功能表控制站。 `ButtonText`項目也會成為預設值，如果其他的文字欄位為空白。 `ButtonText`元素不可為空白，即使指定的其他文字欄位。

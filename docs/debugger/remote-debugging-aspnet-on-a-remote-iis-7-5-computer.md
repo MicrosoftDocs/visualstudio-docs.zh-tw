@@ -11,27 +11,36 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: ee7ab155a24b52916d6b8d53f412e8c71cab8db4
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
-ms.translationtype: MTE95
+ms.openlocfilehash: ba255d1d1e906e8fe7bacd05d1f4afd4b7bf413b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58194201"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63407848"
 ---
 # <a name="remote-debug-aspnet-on-a-remote-iis-computer"></a>在執行 IIS 的遠端電腦上對 ASP.NET 進行遠端偵錯
 偵錯已部署至 IIS 的 ASP.NET 應用程式，安裝並部署您的應用程式的所在的電腦上執行遠端工具，然後連結至您執行的應用程式從 Visual Studio。
 
 ![遠端偵錯工具元件](../debugger/media/remote-debugger-aspnet.png "Remote_debugger_components")
 
-本指南說明如何安裝和設定 Visual Studio 2017 ASP.NET MVC 4.5.2 應用程式、 將它部署至 IIS，並從 Visual Studio 附加遠端偵錯工具。
+本指南說明如何安裝和設定 Visual Studio ASP.NET MVC 4.5.2 應用程式、 將它部署至 IIS，並從 Visual Studio 附加遠端偵錯工具。
 
 > [!NOTE]
 > 若要遠端改為偵錯 ASP.NET Core，請參閱[遠端偵錯 ASP.NET Core 在 IIS 電腦上](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md)。 針對 Azure App Service，您可以輕鬆地部署和偵錯的 IIS 使用的預先設定的執行個體上[快照集偵錯工具](../debugger/debug-live-azure-applications.md)(.NET 4.6.1 所需) 或由[從 伺服器總管附加偵錯工具](../debugger/remote-debugging-azure.md)。
 
+## <a name="prerequisites"></a>必要條件
+
+::: moniker range=">=vs-2019"
+Visual Studio 2019，才能遵循本文中所示的步驟。
+::: moniker-end
+::: moniker range="vs-2017"
+Visual Studio 2017，才能遵循本文中所示的步驟。
+::: moniker-end
+
 這些伺服器設定過這些程序：
 * Windows Server 2012 R2 和 IIS 8 （Windows Server 2008 R2，伺服器的步驟並不等於）
 
-## <a name="requirements"></a>需求
+## <a name="network-requirements"></a>網路需求
 
 從 Windows Server 2008 Service Pack 2 的 Windows Server 支援遠端偵錯工具。 需求的完整清單，請參閱 <<c0> [ 需求](../debugger/remote-debugging.md#requirements_msvsmon)。
 
@@ -48,7 +57,14 @@ ms.locfileid: "58194201"
 
 ## <a name="create-the-aspnet-452-application-on-the-visual-studio-computer"></a>建立 ASP.NET 4.5.2 Visual Studio 電腦上的應用程式
 
-1. 建立新的 MVC ASP.NET 應用程式。 (**檔案 > 新增 > 專案**，然後選取<strong>視覺化C#> Web > ASP.NET Web 應用程式。在 [ASP.NET 4.5.2]</strong> 範本區段中選取 **[MVC]**。 請確定**啟用 Docker 支援**未選取且**驗證**設定為**不需要驗證**。 將專案命名為**MyASPApp**。)
+1. 建立新的 MVC ASP.NET 應用程式。
+
+    ::: moniker range=">=vs-2019"
+    在 Visual Studio 2019，輸入**Ctrl + Q**來開啟 搜尋 方塊中，輸入**asp.net**，選擇 **範本**，然後選擇 **建立新 ASP.NET Web 應用程式 (.NETFramework)** 。 在出現的對話方塊中，為專案名稱**MyASPApp**，然後選擇**建立**。 選取  **MVC** ，然後選擇**建立**。
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    若要在 Visual Studio 2017 中這樣做，請選擇**檔案 > 新增 > 專案**，然後選取**視覺化C#> Web > ASP.NET Web 應用程式**。 在 [ASP.NET 4.5.2]  範本區段中選取 [MVC]  。 請確定**啟用 Docker 支援**未選取且**驗證**設定為**不需要驗證**。 將專案命名為**MyASPApp**。)
+    ::: moniker-end
 
 2. 開啟 HomeController.cs 檔案，並在 `About()` 方法中設定中斷點。
 
@@ -71,7 +87,7 @@ ms.locfileid: "58194201"
 
 如果您想要在 IIS 上安裝 ASP.NET 的詳細的資訊，請參閱[IIS 8.0 使用 ASP.NET 3.5 和 ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45)。
 
-1. 在左窗格的 伺服器管理員中，選取**IIS**。 以滑鼠右鍵按一下伺服器，然後選取 [Internet Information Services (IIS) 管理員]。
+1. 在左窗格的 伺服器管理員中，選取**IIS**。 以滑鼠右鍵按一下伺服器，然後選取 [Internet Information Services (IIS) 管理員]  。
 
 1. 使用 Web Platform Installer (WebPI) 安裝 ASP.NET 4.5 (從 [Windows Server 2012 R2 中的 [伺服器] 節點中，選擇**取得新的 Web 平台元件**]，然後搜尋適用於 ASP.NET)
 
@@ -128,13 +144,13 @@ ms.locfileid: "58194201"
 
 1. 開啟 Windows 檔案總管，並建立新的資料夾中， **C:\Publish**將稍後部署 ASP.NET 專案。
 
-2. 如果它尚未開啟，開啟**Internet Information Services (IIS) 管理員**。 (在左窗格的 伺服器管理員中，選取**IIS**。 以滑鼠右鍵按一下伺服器，然後選取 [Internet Information Services (IIS) 管理員]。)
+2. 如果它尚未開啟，開啟**Internet Information Services (IIS) 管理員**。 (在左窗格的 伺服器管理員中，選取**IIS**。 以滑鼠右鍵按一下伺服器，然後選取 [Internet Information Services (IIS) 管理員]  。)
 
 3. 底下**連線**在左窗格中，移至**站台**。
 
 4. 選取  **Default Web Site**，選擇**基本設定**，並將**實體路徑**至**C:\Publish**。
 
-5. 以滑鼠右鍵按一下 [預設的網站]  節點，並選取 [加入應用程式] 。
+5. 以滑鼠右鍵按一下 [預設的網站]  節點，並選取 [加入應用程式]  。
 
 6. 設定**別名**欄位設為**MyASPApp**，接受預設的應用程式集區 (**DefaultAppPool**)，並將**實體路徑**至**C:\Publish**。
 
@@ -165,7 +181,7 @@ ms.locfileid: "58194201"
 
 ## <a name="BKMK_msvsmon"></a> 下載並安裝 Windows Server 上的遠端工具
 
-在本教學課程中，我們會使用 Visual Studio 2017。
+下載符合您的 Visual Studio 版本的遠端工具版本。
 
 [!INCLUDE [remote-debugger-download](../debugger/includes/remote-debugger-download.md)]
 
@@ -184,29 +200,48 @@ ms.locfileid: "58194201"
 2. 在 Visual Studio 中，按一下**偵錯 > připojit k procesu** （Ctrl + Alt + P）。
 
     > [!TIP]
-    > 在 Visual Studio 2017 和更新版本中，您可以重新附加至您先前附加到使用相同的程序**偵錯 > 重新附加至處理序...** Shift+Alt+P
+    > 在 Visual Studio 2017 和更新版本中，您可以重新附加至您先前附加到使用相同的程序**偵錯 > 重新附加至處理序...** (Shift + Alt + P)。
 
-3. 將 [限定詞] 欄位設定為 **\<遠端電腦名稱>:4022**。
-4. 按一下 [重新整理]。
+3. [限定詞] 欄位設定為 **\<遠端電腦名稱>** 按下**Enter**。
+
+    確認，Visual Studio 會將所需的連接埠新增至 電腦名稱，就會出現在格式： **\<遠端電腦名稱 >： 連接埠**
+
+    ::: moniker range=">=vs-2019"
+    在 Visual Studio 2019，您應該會看到 **\<遠端電腦名稱>: 4024**
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    在 Visual Studio 2017，您應該會看到 **\<遠端電腦名稱>: 4022**
+    ::: moniker-end
+    需要連接埠。 如果您沒有看到連接埠號碼，請手動新增。
+
+4. 按一下 [重新整理]  。
     您應該會看到有些處理程序會出現在 [可使用的處理序]  視窗。
 
     如果您沒有看到任何處理程序，請嘗試使用的 IP 位址，而不 （連接埠是必要的） 遠端電腦名稱。 您可以使用`ipconfig`取得 IPv4 位址的命令列。
 
-5. 核取 [顯示所有使用者的處理序]  。
+5. 核取 [顯示所有使用者的處理序]   。
+
 6. 輸入以快速找出處理序名稱的第一個字母**w3wp.exe**針對 ASP.NET 4.5。
 
-    ![RemoteDBG_AttachToProcess](../debugger/media/remotedbg_attachtoprocess.png "RemoteDBG_AttachToProcess")
+    如果您有多個處理序顯示**w3wp.exe**，檢查**使用者名**資料行。 在某些情況下，**使用者名**資料行中顯示您應用程式集區的名稱，例如**IIS APPPOOL\DefaultAppPool**。 如果您會看到應用程式集區，輕鬆地找出正確的處理序是建立新應用程式集區命名為應用程式執行個體，您要偵錯，然後您可以找到它輕鬆地在**使用者名**資料行。
 
-7. 按一下 [附加]
+    ::: moniker range=">=vs-2019"
+    ![RemoteDBG_AttachToProcess](../debugger/media/vs-2019/remotedbg-attachtoprocess.png "RemoteDBG_AttachToProcess")
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    ![RemoteDBG_AttachToProcess](../debugger/media/remotedbg-attachtoprocess.png "RemoteDBG_AttachToProcess")
+    ::: moniker-end
 
-8. 開啟遠端電腦的網站。 在瀏覽器中，移至 **http://\<遠端電腦名稱>**。
+7. 按一下 [附加] 
+
+8. 開啟遠端電腦的網站。 在瀏覽器中，移至 **http://\<遠端電腦名稱>** 。
 
     您應該會看到 ASP.NET 網頁。
 9. 執行的 ASP.NET 應用程式中，按一下 連結**關於**頁面。
 
     應該在 Visual Studio 中叫用中斷點。
 
-## <a name="bkmk_openports"></a> 疑難排解在 Windows Server 上開啟必要的連接埠
+## <a name="bkmk_openports"></a> 疑難排解：在 Windows Server 上開啟必要的連接埠
 
 在大部分的配置，所需的連接埠已開啟 ASP.NET 和遠端偵錯工具的安裝。 不過，您可能需要確認已開啟連接埠。
 
@@ -215,10 +250,14 @@ ms.locfileid: "58194201"
 
 必要的連接埠：
 
-- 80-所需的 IIS
-- 8172-（選擇性） 所需的 Web Deploy 來部署應用程式從 Visual Studio
-- 4022-所需的 Visual Studio 2017 的遠端偵錯 (請參閱[Remote Debugger Port Assignments](../debugger/remote-debugger-port-assignments.md)如需詳細資訊。
-- UDP 3702-（選擇性） 探索連接埠即可**尋找**按鈕附加至 Visual Studio 中的遠端偵錯工具時。
+* 80-所需的 IIS
+::: moniker range=">=vs-2019"
+* 4024-所需的 Visual Studio 2019 的遠端偵錯 (請參閱[Remote Debugger Port Assignments](../debugger/remote-debugger-port-assignments.md)如需詳細資訊)。
+::: moniker-end
+::: moniker range="vs-2017"
+* 4022-所需的 Visual Studio 2017 的遠端偵錯 (請參閱[Remote Debugger Port Assignments](../debugger/remote-debugger-port-assignments.md)如需詳細資訊)。
+::: moniker-end
+* UDP 3702-（選擇性） 探索連接埠即可**尋找**按鈕附加至 Visual Studio 中的遠端偵錯工具時。
 
 1. 若要開啟 Windows Server 上的連接埠，請開啟**開始**功能表中，搜尋**具有進階安全性的 Windows 防火牆**。
 

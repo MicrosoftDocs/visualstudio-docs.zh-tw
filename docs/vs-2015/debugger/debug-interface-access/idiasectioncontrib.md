@@ -1,14 +1,9 @@
 ---
-title: IDiaSectionContrib |Microsoft Docs
-ms.custom: ''
+title: IDiaSectionContrib | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 371d40f6-ca0e-4d7e-9210-64d3768996c6
 caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: c15e3fa37eb53f5ef01134b1a8a8c7f078455231
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: fc263d7238166f4f381bac35f0482ca2433f7b33
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51817824"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68150483"
 ---
 # <a name="idiasectioncontrib"></a>IDiaSectionContrib
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -39,7 +34,7 @@ IDiaSectionContrib : IUnknown
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法  
  下表顯示的方法`IDiaSectionContrib`。  
   
-|方法|描述|  
+|方法|說明|  
 |------------|-----------------|  
 |[IDiaSectionContrib::get_compiland](../../debugger/debug-interface-access/idiasectioncontrib-get-compiland.md)|擷取提供這一節的編譯模組符號的參考。|  
 |[IDiaSectionContrib::get_addressSection](../../debugger/debug-interface-access/idiasectioncontrib-get-addresssection.md)|擷取所佔比重的地址中區段的一部分。|  
@@ -135,17 +130,14 @@ void PrintSectionContrib(IDiaSectionContrib* pSecContrib, IDiaSession* pSession)
 ```  
   
 ## <a name="requirements"></a>需求  
- 標頭： Dia2.h  
+ 標頭：dia2.h  
   
  程式庫： diaguids.lib  
   
  DLL: msdia80.dll  
   
 ## <a name="see-also"></a>另請參閱  
- [介面 （偵錯介面存取 SDK）](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
+ [介面 (偵錯介面存取 SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
  [IDiaEnumSectionContribs](../../debugger/debug-interface-access/idiaenumsectioncontribs.md)   
- [Idiaenumsectioncontribs:: Item](../../debugger/debug-interface-access/idiaenumsectioncontribs-item.md)   
+ [IDiaEnumSectionContribs::Item](../../debugger/debug-interface-access/idiaenumsectioncontribs-item.md)   
  [IDiaEnumSectionContribs::Next](../../debugger/debug-interface-access/idiaenumsectioncontribs-next.md)
-
-
-

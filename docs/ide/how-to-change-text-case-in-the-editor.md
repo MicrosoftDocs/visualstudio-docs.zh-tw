@@ -11,14 +11,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 04922b703fd2c1158a98fc4574ad217cccd5016e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 33d4f0cce0699c27068152827382eb7d8627b715
+ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55907447"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65531954"
 ---
-# <a name="how-to-change-text-case-in-the-editor"></a>HOW TO：變更編輯器中的文字大小寫
+# <a name="how-to-change-text-case-in-the-editor"></a>作法：變更編輯器中的文字大小寫
 
 您可以使用功能表命令或鍵盤快速鍵，將所選取文字的大小寫轉換成全部大寫或全部小寫。
 
@@ -27,11 +27,11 @@ ms.locfileid: "55907447"
 
 ## <a name="to-switch-text-to-upper-case"></a>將文字轉換成大寫
 
-1.  選取您想要轉換的文字。
+1. 選取您想要轉換的文字。
 
-2.  在 [編輯] 功能表上，選取 [進階]。
+2. 在 [編輯] 功能表上，選取 [進階]。
 
-3.  若要將文字轉換成全部大寫，請選擇 [設成大寫]，或按 **Ctrl**+**Shift**+**U**。
+3. 若要將文字轉換成全部大寫，請選擇 [設成大寫]，或按 **Ctrl**+**Shift**+**U**。
 
     — 或 —
 
@@ -42,6 +42,5 @@ ms.locfileid: "55907447"
 
 ## <a name="see-also"></a>另請參閱
 
-- [自訂編輯器](../ide/customizing-the-editor.md)
 - [文字編輯器選項對話方塊](../ide/reference/text-editor-options-dialog-box.md)
 - [程式碼編輯器的功能](../ide/writing-code-in-the-code-and-text-editor.md)

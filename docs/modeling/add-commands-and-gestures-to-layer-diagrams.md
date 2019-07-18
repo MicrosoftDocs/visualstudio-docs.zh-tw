@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b29735eeb8b35b2d674f3574343b19665c87fa19
-ms.sourcegitcommit: 4c7a0c2d712eb24609216577a793e912a6083eaf
+ms.openlocfilehash: ea106d98dbd18f224e7f2a9d95734eff591dfc2b
+ms.sourcegitcommit: 6a19c5ece38a70731496a38f2ef20676ff18f8a4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "57983841"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65476661"
 ---
 # <a name="add-commands-and-gestures-to-dependency-diagrams"></a>將命令和軌跡新增至相依性圖表
 
@@ -28,27 +28,23 @@ ms.locfileid: "57983841"
 
 ## <a name="requirements"></a>需求
 
-請參閱 [需求](../modeling/extend-layer-diagrams.md#prereqs)。
+請參閱 [需求](../modeling/extend-layer-diagrams.md#requirements)。
 
-## <a name="defining-a-command-or-gesture-in-a-new-vsix"></a>在新的 VSIX 中定義命令或軌跡
+## <a name="define-a-command-or-gesture-in-a-new-vsix"></a>在新的 VSIX 中定義的命令或軌跡
 
 建立擴充功能最快速的方法是使用專案範本。 這樣做會將程式碼和 VSIX 資訊清單放入相同的專案中。
 
-### <a name="to-define-an-extension-by-using-a-project-template"></a>使用專案範本定義擴充功能
+1. 建立新**圖層設計工具命令擴充功能**或是**層設計工具軌跡擴充功能**專案。
 
-1. 使用 [檔案]  功能表上的 [新增專案]  命令，在新的方案中建立專案。
+   此範本隨即建立包含小型工作範例的專案。
 
-2. 在 [新增專案]  對話方塊的 [模型專案] 底下，選取 [圖層設計工具命令擴充功能]  或 [圖層設計工具軌跡擴充功能] 。
-
-    此範本隨即建立包含小型工作範例的專案。
-
-3. 若要測試此擴充功能，請按**Ctrl**+**F5**或是**F5**。
+2. 若要測試此擴充功能，請按**Ctrl**+**F5**或是**F5**。
 
     啟動 Visual Studio 的實驗性執行個體。 在此情況下，建立相依性圖表。 您的命令或軌跡擴充功能應該會在此圖表中運作。
 
-4. 關閉此實驗執行個體並修改此範例程式碼。 如需詳細資訊，請參閱 <<c0> [ 瀏覽和更新圖層的程式碼中的模型](../modeling/navigate-and-update-layer-models-in-program-code.md)。
+3. 關閉此實驗執行個體並修改此範例程式碼。
 
-5. 您可以將其他命令或軌跡處理常式加入相同的專案。 如需詳細資訊，請參閱下列其中一節：
+4. 您可以將其他命令或軌跡處理常式加入相同的專案。 如需詳細資訊，請參閱下列其中一節：
 
     [定義功能表命令](#command)
 
@@ -56,46 +52,40 @@ ms.locfileid: "57983841"
 
 ::: moniker range="vs-2017"
 
-6. 若要安裝延伸模組，Visual Studio 中，或在另一部電腦上的主要執行個體，尋找 *.vsix*中的檔案*bin*目錄。 將它複製到您要安裝它的電腦上，然後按兩下該檔案。 若要解除安裝它，請選擇**擴充功能和更新**上**工具**功能表。
+5. 若要安裝延伸模組，Visual Studio 中，或在另一部電腦上的主要執行個體，尋找 *.vsix*中的檔案*bin*目錄。 將它複製到您要安裝它的電腦上，然後按兩下該檔案。 若要解除安裝它，請選擇**擴充功能和更新**上**工具**功能表。
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-6. 若要安裝延伸模組，Visual Studio 中，或在另一部電腦上的主要執行個體，尋找 *.vsix*中的檔案*bin*目錄。 將它複製到您要安裝它的電腦上，然後按兩下該檔案。 若要解除安裝它，請選擇**管理延伸模組**上**延伸模組**功能表。
+5. 若要安裝延伸模組，Visual Studio 中，或在另一部電腦上的主要執行個體，尋找 *.vsix*中的檔案*bin*目錄。 將它複製到您要安裝它的電腦上，然後按兩下該檔案。 若要解除安裝它，請選擇**管理延伸模組**上**延伸模組**功能表。
 
 ::: moniker-end
 
-## <a name="adding-a-command-or-gesture-to-a-separate-vsix"></a>將命令或軌跡加入個別 VSIX
+## <a name="add-a-command-or-gesture-to-a-separate-vsix"></a>命令或軌跡加入個別 VSIX
 
 如果您想要建立包含命令、圖層驗證程式和其他擴充功能的單一 VSIX，建議您應建立單一專案來定義此 VSIX，並且針對此處理常式建立個別專案。
 
-### <a name="to-add-layer-extensions-to-a-separate-vsix"></a>將圖層擴充功能加入個別 VSIX
+1. 建立新的**類別庫**專案。 這個專案將會包含命令或軌跡處理常式類別。
 
-1.  在新的或現有的 Visual Studio 方案中建立類別庫專案。 在 [新增專案]  對話方塊中，按一下 [Visual C#]  ，然後按一下 [類別庫] 。 這個專案將會包含命令或軌跡處理常式類別。
+   > [!NOTE]
+   > 雖然您可以在單一類別庫中定義多個命令或軌跡處理常式類別，不過您應該在個別的類別庫中定義圖層驗證類別。
 
-    > [!NOTE]
-    > 雖然您可以在單一類別庫中定義多個命令或軌跡處理常式類別，不過您應該在個別的類別庫中定義圖層驗證類別。
+2. 新增，或在方案中建立 VSIX 專案。 VSIX 專案包含的檔案，稱為**source.extension.vsixmanifest**。
 
-2.  在您的方案中識別或建立 VSIX 專案。 VSIX 專案會包含名為 **source.extension.vsixmanifest**的檔案。 若要加入 VSIX 專案：
+3. 在 **方案總管**，以滑鼠右鍵按一下 VSIX 專案，然後選擇**設定為啟始專案**。
 
-    1.  在 [新增專案]  對話方塊中，展開 [Visual C#] 、按一下 [擴充性] ，然後按一下 [VSIX 專案] 。
+4. 在 **source.extension.vsixmanifest**的 [資產]  底下，加入命令或軌跡處理常式專案做為 MEF 元件。
 
-    2.  在 [方案總管] 中，以滑鼠右鍵按一下此 VSIX 專案，然後按一下 [設定為啟始專案] 。
+    1. 在 [資產]  索引標籤中，選擇 [新增]  。
 
-    3.  按一下 [選取版本]  並確定已核取 [Visual Studio]  。
+    2. 在 [類型]  選取 [Microsoft.VisualStudio.MefComponent]  。
 
-3.  在 **source.extension.vsixmanifest**的 [資產] 底下，加入命令或軌跡處理常式專案做為 MEF 元件。
+    3. 在 [來源]  選取 [目前方案中的專案]  ，然後選取命令或軌跡處理常式專案的名稱。
 
-    1.  在 [資產] 索引標籤中，選擇 [新增] 。
+    4. 儲存檔案。
 
-    2.  在 [類型] 選取 [Microsoft.VisualStudio.MefComponent] 。
-
-    3.  在 [來源] 選取 [目前方案中的專案]  ，然後選取命令或軌跡處理常式專案的名稱。
-
-    4.  儲存檔案。
-
-4.  返回命令或軌跡處理常式專案，然後加入下列專案參考：
+5. 返回命令或軌跡處理常式專案，並加入下列專案參考：
 
    |**參考資料**|**這可讓您執行**|
    |-|-|
@@ -106,19 +96,19 @@ ms.locfileid: "57983841"
    |Microsoft.VisualStudio.Modeling.Sdk.[版本]|定義模型擴充功能|
    |Microsoft.VisualStudio.Modeling.Sdk.Diagrams.[版本]|更新圖形和圖表|
 
-5.  編輯 C# 類別庫專案中的類別檔案，以便包含擴充功能的程式碼。 如需詳細資訊，請參閱下列其中一節：
+6. 編輯 C# 類別庫專案中的類別檔案，以便包含擴充功能的程式碼。 如需詳細資訊，請參閱下列其中一節：
 
      [定義功能表命令](#command)
 
      [定義軌跡處理常式](#gesture)
 
-     另請參閱[瀏覽和更新圖層的程式碼中的模型](../modeling/navigate-and-update-layer-models-in-program-code.md)。
+7. 若要測試此功能，請按**Ctrl**+**F5**或是**F5**。
 
-6.  若要測試此功能，請按**Ctrl**+**F5**或是**F5**。 Visual Studio 的實驗執行個體隨即開啟。 在此情況下，建立或開啟相依性圖表。
+   Visual Studio 的實驗執行個體隨即開啟。 在此情況下，建立或開啟相依性圖表。
 
-7.  若要安裝 VSIX 的 Visual Studio，或在另一部電腦上的主要執行個體中，尋找 **.vsix**中的檔案**bin** VSIX 專案的目錄。 將它複製到您想要安裝 VSIX 的電腦。 在 Windows 檔案總管中按兩下 VSIX 檔案。
+8. 若要安裝 VSIX 的 Visual Studio，或在另一部電腦上的主要執行個體中，尋找 **.vsix**中的檔案**bin** VSIX 專案的目錄。 將它複製到您想要安裝 VSIX 的電腦。 按兩下 VSIX 檔案，檔案總管 中。
 
-##  <a name="command"></a> 定義功能表命令
+## <a name="command"></a> 定義功能表命令
 
 您可以將其他功能表命令定義加入現有的軌跡或命令專案。 每個命令都由具有下列特性的類別加以定義：
 
@@ -134,11 +124,11 @@ ms.locfileid: "57983841"
 
 - 實作 `ICommandExtension` 的方法如下：
 
-  -   `string Text {get;}` - 出現在此功能表中的標籤。
+  - `string Text {get;}` - 出現在此功能表中的標籤。
 
-  -   `void QueryStatus(IMenuCommand command)` - 當使用者以滑鼠右鍵按一下此圖表時會被呼叫，並且判斷是否應該針對使用者的目前選取範圍顯示並啟用此命令。
+  - `void QueryStatus(IMenuCommand command)` - 當使用者以滑鼠右鍵按一下此圖表時會被呼叫，並且判斷是否應該針對使用者的目前選取範圍顯示並啟用此命令。
 
-  -   `void Execute(IMenuCommand command)` - 當使用者選取此命令時會被呼叫。
+  - `void Execute(IMenuCommand command)` - 當使用者選取此命令時會被呼叫。
 
 - 若要判斷目前選取範圍，您可以匯入 `IDiagramContext`：
 
@@ -149,8 +139,6 @@ ms.locfileid: "57983841"
    `...`
 
    `DiagramContext.CurrentDiagram.SelectedShapes.Count()...`
-
-如需詳細資訊，請參閱 <<c0> [ 瀏覽和更新圖層的程式碼中的模型](../modeling/navigate-and-update-layer-models-in-program-code.md)。
 
 若要加入新的命令，請建立包含下列範例的新程式碼檔案。 然後，測試並編輯此檔案。
 
@@ -224,7 +212,7 @@ namespace MyLayerExtension // Change to your preference.
 }
 ```
 
-##  <a name="gesture"></a> 定義軌跡處理常式
+## <a name="gesture"></a> 定義軌跡處理常式
 
 軌跡處理常式會回應和當使用者拖曳項目拖曳至相依性圖表中，當使用者按兩下圖表中的任何位置。
 
@@ -250,7 +238,7 @@ namespace MyLayerExtensions // change to your preference
 
 請注意下列有關軌跡處理常式的重點：
 
--   `IGestureExtension` 的成員如下：
+- `IGestureExtension` 的成員如下：
 
      **OnDoubleClick** - 當使用者在圖表上的任何位置按兩下時受呼叫。
 
@@ -258,7 +246,7 @@ namespace MyLayerExtensions // change to your preference
 
      **OnDragDrop** - 當使用者將項目置放到此圖表上時受呼叫。
 
--   每個方法的第一個引數是 `IShape`，您可以從這裡取得此圖層項目。 例如：
+- 每個方法的第一個引數是 `IShape`，您可以從這裡取得此圖層項目。 例如：
 
     ```csharp
     public void OnDragDrop(IShape target, IDataObject data)
@@ -271,9 +259,8 @@ namespace MyLayerExtensions // change to your preference
     }
     ```
 
--   針對某些拖曳項目類型的處理常式早已受到定義。 比方說，使用者可以將項目從 [方案總管] 拖曳至相依性圖表。 您無法針對這些項目類型定義拖曳處理常式。 在這些情況下，不會叫用您的 `DragDrop` 方法。
+- 針對某些拖曳項目類型的處理常式早已受到定義。 比方說，使用者可以將項目從 [方案總管] 拖曳至相依性圖表。 您無法針對這些項目類型定義拖曳處理常式。 在這些情況下，不會叫用您的 `DragDrop` 方法。
 
 ## <a name="see-also"></a>另請參閱
 
-- [巡覽及更新程式碼中的圖層模型](../modeling/navigate-and-update-layer-models-in-program-code.md)
 - [將自訂架構驗證加入至相依性圖表](../modeling/add-custom-architecture-validation-to-layer-diagrams.md)

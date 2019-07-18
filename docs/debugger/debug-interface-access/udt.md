@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: bdc7642911dfe73df86f5107966f101778aec742
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56644558"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62853896"
 ---
 # <a name="udt"></a>UDT
 每個類別、 結構和等位由`SymTagUDT`符號。 每個成員、 函式、 資料或巢狀的類型，以及每個基底類別，會顯示為類別的子系使用者定義的型別 (UDT)。
@@ -29,7 +29,7 @@ ms.locfileid: "56644558"
 ## <a name="properties"></a>屬性
  下表顯示此符號類型的其他有效屬性。
 
-|屬性|資料類型|說明|
+|屬性|資料類型|描述|
 |--------------|---------------|-----------------|
 |[IDiaSymbol::get_classParent](../../debugger/debug-interface-access/idiasymbol-get-classparent.md)|`IDiaSymbol*`|類別父代，如果有任何符號。|
 |[IDiaSymbol::get_classParentId](../../debugger/debug-interface-access/idiasymbol-get-classparentid.md)|`DWORD`|類別父符號的識別碼。|
@@ -54,5 +54,5 @@ ms.locfileid: "56644558"
 |[IDiaSymbol::get_virtualTableShapeId](../../debugger/debug-interface-access/idiasymbol-get-virtualtableshapeid.md)|`DWORD`|虛擬資料表圖形符號的識別碼。|
 |[IDiaSymbol::get_volatileType](../../debugger/debug-interface-access/idiasymbol-get-volatiletype.md)|`BOOL`|`TRUE` 如果 UDT 標示為 volatile。|
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [符號類型的類別階層架構](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md)

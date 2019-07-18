@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgramProvider2::GetProviderProcessData
 ms.assetid: 90cf7b7f-53d2-487e-b793-94501a6e24dd
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 385ef2aaaadc8d1f66eaf245f06dbfd299638fa5
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: bee54c3876c2de1be0754a74b429e6d24b80b738
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56683796"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66325032"
 ---
 # <a name="idebugprogramprovider2getproviderprocessdata"></a>IDebugProgramProvider2::GetProviderProcessData
 擷取從指定的處理序中執行程式的清單。
@@ -44,10 +47,9 @@ int GetProviderProcessData(
 );
 ```
 
-#### <a name="parameters"></a>參數
- `Flags`
-
- [in]從旗標的組合[PROVIDER_FLAGS](../../../extensibility/debugger/reference/provider-flags.md)列舉型別。 此呼叫一般會在下列旗標：
+## <a name="parameters"></a>參數
+`Flags`\
+[in]從旗標的組合[PROVIDER_FLAGS](../../../extensibility/debugger/reference/provider-flags.md)列舉型別。 此呼叫一般會在下列旗標：
 
 |旗標|描述|
 |----------|-----------------|
@@ -56,21 +58,17 @@ int GetProviderProcessData(
 |`PFLAG_ATTACHED_TO_DEBUGGEE`|已附加至呼叫端，但不是啟動偵錯工具。|
 |`PFLAG_GET_PROGRAM_NODES`|呼叫端要求輸入程式節點的清單傳回。|
 
- `pPort`
+`pPort`\
+[in]呼叫處理序的連接埠上執行。
 
- [in]呼叫處理序的連接埠上執行。
+`processId`\
+[in][AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md)結構包含該程式處理序的識別碼有問題。
 
- `processId`
+`EngineFilter`\
+[in]指派給此程序 （這些會用來篩選實際上還會傳回根據提供的引擎的支援; 如果未不指定任何引擎，則會傳回所有程式的程式） 進行偵錯的偵錯引擎 Guid 的陣列。
 
- [in][AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md)結構包含該程式處理序的識別碼有問題。
-
- `EngineFilter`
-
- [in]指派給此程序 （這些會用來篩選實際上還會傳回根據提供的引擎的支援; 如果未不指定任何引擎，則會傳回所有程式的程式） 進行偵錯的偵錯引擎 Guid 的陣列。
-
- `pProcess`
-
- [out]A [PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md)結構，其中會填入所要求的資訊。
+`pProcess`\
+[out]A [PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md)結構，其中會填入所要求的資訊。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

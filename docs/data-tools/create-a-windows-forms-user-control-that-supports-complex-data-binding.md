@@ -14,16 +14,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: e9e36363743ac1509fb37c9070085656c34b91f9
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.openlocfilehash: 9e9f80f55aa3059cbe5c9af3b5510915f768ea20
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55936659"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62567633"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-complex-data-binding"></a>建立支援複雜資料繫結的 Windows Forms 使用者控制項
 
-在 Windows 應用程式的表單上顯示資料時，您可以從 [工具箱] 中選擇現有控制項；或者，如果應用程式需要標準控制項中未提供的功能，您也可以撰寫自訂控制項。 這個逐步解說顯示如何建立可實作 <xref:System.ComponentModel.ComplexBindingPropertiesAttribute> 的控制項。 可實作 <xref:System.ComponentModel.ComplexBindingPropertiesAttribute> 的控制項包含可繫結至資料的 `DataSource` 和 `DataMember` 屬性。 這類控制項類似 <xref:System.Windows.Forms.DataGridView> 或 <xref:System.Windows.Forms.ListBox>。
+在 Windows 應用程式的表單上顯示資料，您可以選擇從現有的控制項**工具箱**。 或者，如果您的應用程式需要標準控制項中沒有的功能，您可以編寫自訂控制項。 這個逐步解說顯示如何建立可實作 <xref:System.ComponentModel.ComplexBindingPropertiesAttribute> 的控制項。 可實作 <xref:System.ComponentModel.ComplexBindingPropertiesAttribute> 的控制項包含可繫結至資料的 `DataSource` 和 `DataMember` 屬性。 這類控制項類似 <xref:System.Windows.Forms.DataGridView> 或 <xref:System.Windows.Forms.ListBox>。
 
 如需控制項製作的詳細資訊，請參閱[開發 Windows Form 控制項在設計階段](/dotnet/framework/winforms/controls/developing-windows-forms-controls-at-design-time)。
 
@@ -35,11 +35,9 @@ ms.locfileid: "55936659"
 |對顯示資料之清單 (或資料表) 的控制項 (如 <xref:System.ComponentModel.ComplexBindingPropertiesAttribute>)，實作 <xref:System.Windows.Forms.DataGridView> (這個逐步解說頁面會描述此流程)。|
 |對顯示資料之清單 (或資料表) 但也需要呈現單一資料行或屬性的控制項 (如 <xref:System.ComponentModel.LookupBindingPropertiesAttribute>)，實作 <xref:System.Windows.Forms.ComboBox>。 如需詳細資訊，請參閱 <<c0> [ 建立支援查閱資料繫結 Windows Forms 使用者控制項](../data-tools/create-a-windows-forms-user-control-that-supports-lookup-data-binding.md)。|
 
-這個逐步解說會建立顯示資料表中資料列的複雜控制項。 此範例使用 Northwind 範例資料庫的 `Customers` 資料表。 複雜使用者控制項將會在自訂控制項的 <xref:System.Windows.Forms.DataGridView> 中顯示 customers 資料表。
+這個逐步解說會建立顯示資料表中資料列的複雜控制項。 此範例使用 Northwind 範例資料庫中的 `Customers` 資料表。 複雜使用者控制項將會在自訂控制項的 <xref:System.Windows.Forms.DataGridView> 中顯示 customers 資料表。
 
-在這個逐步解說期間，您將了解如何：
-
-- 建立新的 **Windows Forms 應用程式**。
+在這個逐步解說中，您將了解如何：
 
 - 將新 [使用者控制項] 新增至您的專案。
 
@@ -71,19 +69,9 @@ ms.locfileid: "55936659"
 
        短時間之後，查詢完成執行，並建立 Northwind 資料庫。
 
-## <a name="create-a-windows-forms-application"></a>建立 Windows Forms 應用程式
+## <a name="create-a-windows-forms-app-project"></a>建立 Windows Forms 應用程式專案
 
-第一個步驟是建立**Windows Forms 應用程式**:
-
-1. 在 Visual Studio 中，在**檔案**功能表上，選取**新增** > **專案**。
-
-1. 展開  **Visual C#** 或是**Visual Basic**左窗格中，然後選取**Windows Desktop**。
-
-1. 在中間窗格中，選取**Windows Forms 應用程式**專案類型。
-
-1. 將專案命名為**ComplexControlWalkthrough**，然後選擇**確定**。
-
-    隨即建立 **ComplexControlWalkthrough** 專案，並將它新增至 [方案總管]。
+第一個步驟是建立**Windows Forms 應用程式**專案，或C#或 Visual Basic。 將專案命名為**ComplexControlWalkthrough**。
 
 ## <a name="add-a-user-control-to-the-project"></a>將使用者控制項新增至專案
 
@@ -103,7 +91,7 @@ ms.locfileid: "55936659"
 
 針對支援資料繫結的複雜控制項，您可以實作 <xref:System.ComponentModel.ComplexBindingPropertiesAttribute>：
 
-1. 將 [ComplexDataGridView] 控制項切換至程式碼檢視  (在 [檢視] 功能表上，選取 [程式碼])。
+1. 將 [ComplexDataGridView] 控制項切換至程式碼檢視 (在 [檢視] 功能表上，選取 [程式碼])。
 
 1. 將 `ComplexDataGridView` 中的程式碼取代為下列內容：
 
@@ -116,27 +104,27 @@ ms.locfileid: "55936659"
 
 使用**資料來源組態**精靈來建立資料來源基礎`Customers`Northwind 範例資料庫中的資料表：
 
-1.  若要開啟 **資料來源** 視窗，請在**資料**功能表上，按一下 **顯示資料來源**。
+1. 若要開啟 **資料來源** 視窗，請在**資料**功能表上，按一下 **顯示資料來源**。
 
-2.  在 [資料來源] 視窗中，選取 [新增新資料來源]，以啟動 [資料來源組態精靈]。
+2. 在 [資料來源] 視窗中，選取 [新增新資料來源]，以啟動 [資料來源組態精靈]。
 
-3.  請選取 [ **選擇資料來源類型** ] 頁面上的 [ **資料庫** ]，再按 [ **下一步**]。
+3. 請選取 [ **選擇資料來源類型** ] 頁面上的 [ **資料庫** ]，再按 [ **下一步**]。
 
-4.  在 [選擇您的資料連線] 頁面上，執行下列其中一項：
+4. 在 [選擇您的資料連線] 頁面上，執行下列其中一項：
 
-    - 如果下拉式清單中有提供 Northwind 範例資料庫的資料連接，請選取這個資料連接。
+   - 如果下拉式清單中有提供 Northwind 範例資料庫的資料連接，請選取這個資料連接。
 
-    - 選取 [新增連線] 啟動 [新增/修改連線] 對話方塊。
+   - 選取 [新增連線] 啟動 [新增/修改連線] 對話方塊。
 
-5.  如果資料庫需要密碼，請選取選項來加入敏感性資料，然後按一下 [下一步]。
+5. 如果資料庫需要密碼，請選取選項來加入敏感性資料，然後按一下 [下一步]。
 
-6.  在 [**將連接字串儲存到應用程式組態檔**頁面上，按一下**下一步]**。
+6. 在 [**將連接字串儲存到應用程式組態檔**頁面上，按一下**下一步]**。
 
-7.  展開 [選擇您的資料庫物件] 頁面上的 [資料表] 節點。
+7. 展開 [選擇您的資料庫物件] 頁面上的 [資料表] 節點。
 
-8.  選取 `Customers` 資料表，然後按一下 [完成]。
+8. 選取 `Customers` 資料表，然後按一下 [完成]。
 
-    **NorthwindDataSet** 會新增至您的專案，且 `Customers` 資料表會出現在 [資料來源] 視窗中。
+   **NorthwindDataSet** 會新增至您的專案，且 `Customers` 資料表會出現在 [資料來源] 視窗中。
 
 ## <a name="set-the-customers-table-to-use-the-complexdatagridview-control"></a>設定 Customers 資料表使用 ComplexDataGridView 控制項
 

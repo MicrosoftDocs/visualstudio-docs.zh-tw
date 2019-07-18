@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: b049f55d9361b409504cd798b7c878efb5c79ee6
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 99d53296ad72aef1910a39299be64c7cb03dd49a
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55950210"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66714726"
 ---
 # <a name="ca2205-use-managed-equivalents-of-win32-api"></a>CA2205:必須使用 Win32 API 的受控對應項
 
@@ -35,7 +35,7 @@ ms.locfileid: "55950210"
 
 ## <a name="cause"></a>原因
 
-平台叫用方法定義，且具有對等功能的方法存在於.NET Framework 類別庫。
+平台叫用方法定義，且具有對等功能的方法存在於.NET。
 
 ## <a name="rule-description"></a>規則描述
 

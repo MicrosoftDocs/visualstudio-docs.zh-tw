@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e9f1c8caa9e658cfca4e4b2ede8a38b57fcf8713
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 2c85288902d1a8c75b067bec0c77242e9a246561
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56624616"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "64808240"
 ---
 # <a name="idiasymbolgetliverangelength"></a>IDiaSymbol::get_liveRangeLength
 傳回本機符號無效的位址範圍的長度。
@@ -39,16 +39,16 @@ HRESULT get_liveRangeLength ( 
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
 
 > [!NOTE]
->  傳回的錯誤碼表示符號沒有即時範圍資訊。
+> 傳回的錯誤碼表示符號沒有即時範圍資訊。
 
 ## <a name="remarks"></a>備註
 
 ## <a name="requirements"></a>需求
- 標頭： Dia2.h
+ 標頭：dia2.h
 
  程式庫： diaguids.lib
 
  DLL: msdia100.dll
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

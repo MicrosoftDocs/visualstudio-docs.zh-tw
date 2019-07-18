@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e9f39c45382fc55144f8200c3951fb4a229b7a43
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: fa5c02fc28e7ffec4765d94758c838ab149e7ac3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57867367"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62960481"
 ---
 # <a name="add-extensions-to-dsl-definitions"></a>在 DSL 定義中新增延伸模組
 
@@ -20,15 +20,15 @@ DSL 定義延伸模組可讓您建立的特定領域語言 (DSL) 延伸模組套
 
 DSL 延伸模組可以包含下列功能：
 
--   模型和呈現項目的屬性
+- 模型和呈現項目的屬性
 
--   圖案和接點的裝飾項目
+- 圖案和接點的裝飾項目
 
--   類別、 關聯性、 圖形和連接器
+- 類別、 關聯性、 圖形和連接器
 
--   驗證條件約束
+- 驗證條件約束
 
--   工具箱項目和索引標籤
+- 工具箱項目和索引標籤
 
 擴充 DSL 的使用者可以建立及儲存模型，包含其他功能的執行個體。 已安裝適當的延伸模組的其他使用者可以讀取模型。 尚未安裝擴充功能的使用者無法使用額外的功能，但是它們可以更新，並儲存模型，而不會遺失的其他功能。
 

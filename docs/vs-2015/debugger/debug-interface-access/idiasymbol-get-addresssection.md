@@ -1,14 +1,9 @@
 ---
-title: 'Idiasymbol:: Get_addresssection |Microsoft Docs'
-ms.custom: ''
+title: IDiaSymbol::get_addressSection | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: fe80d479-3bb5-4f55-9b62-1bd58d0a60ce
 caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 8e85f8a33a4edce6a396d3076784b13cdb3538c6
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 85e6ffac13f25e79f51af13ac134cf538e6af5af
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51771230"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "64782516"
 ---
 # <a name="idiasymbolgetaddresssection"></a>IDiaSymbol::get_addressSection
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -46,7 +41,7 @@ HRESULT get_addressSection ( 
  如果成功，則傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。  
   
 > [!NOTE]
->  傳回值為`S_FALSE`表示屬性不是適用於符號。  
+> 傳回值為`S_FALSE`表示屬性不是適用於符號。  
   
 ## <a name="remarks"></a>備註  
  位於外部的 DLL 中的靜態成員，這個方法所傳回的區段可能是 0，因為這個方法依賴於取得之成員的虛擬位址。 虛擬位址的有效期才[idiasession:: Put_loadaddress](../../debugger/debug-interface-access/idiasession-put-loadaddress.md)方法中的[IDiaSession](../../debugger/debug-interface-access/idiasession.md)已呼叫具有非零參數指定的 dll 載入位址的介面。  
@@ -55,7 +50,7 @@ HRESULT get_addressSection ( 
   
 ## <a name="requirements"></a>需求  
   
-|需求|描述|  
+|需求|說明|  
 |-----------------|-----------------|  
 |標頭：|dia2.h|  
 |版本:|DIA SDK v7.0|  
@@ -63,6 +58,3 @@ HRESULT get_addressSection ( 
 ## <a name="see-also"></a>另請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [LocationType 列舉](../../debugger/debug-interface-access/locationtype.md)
-
-
-

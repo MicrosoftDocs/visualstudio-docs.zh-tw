@@ -14,17 +14,17 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 06e723fc30bfde69344218beaca4e1c0b3c5d742
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 86d41a2717eb3ef7bd49f8d34b85198a55e5101c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54804159"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68158654"
 ---
 # <a name="da0011-expensive-compareto"></a>DA0011：CompareTo 高度耗費資源
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-如需 Visual Studio 2017 的最新文件，請參閱[DA0011:高度耗費資源](https://docs.microsoft.com/visualstudio/profiling/da0011-expensive-compareto)docs.microsoft.com 上。  
+如需 Visual Studio 的最新文件，請參閱[DA0011:高度耗費資源](https://docs.microsoft.com/visualstudio/profiling/da0011-expensive-compareto)。  
   
 |||  
 |-|-|  

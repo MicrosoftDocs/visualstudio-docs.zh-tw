@@ -1,32 +1,27 @@
 ---
 title: 運算式評估介面 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - expression evaluation, interfaces
 ms.assetid: 2d259f60-2cd7-460e-b02d-24a8fb202850
 caps.latest.revision: 14
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 1c7365e17749d69d0dc36e06c3d11d053a44e94d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 8a710019390120768b665cf3b27174831a67f0cc
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51774831"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435037"
 ---
 # <a name="expression-evaluation-interfaces"></a>Expression Evaluation Interfaces
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
 > [!IMPORTANT]
->  在 Visual Studio 2015 中，這種實作運算式評估工具已被取代。 如需實作 CLR 運算式評估工具的資訊，請參閱[CLR 運算式評估工具](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)並[Managed 運算式評估工具範例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。  
+> 在 Visual Studio 2015 中，這種實作運算式評估工具已被取代。 如需實作 CLR 運算式評估工具的資訊，請參閱[CLR 運算式評估工具](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)並[Managed 運算式評估工具範例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。  
   
  以下是針對的運算式評估介面[!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)]偵錯 sdk 》。  
   
@@ -35,11 +30,11 @@ ms.locfileid: "51774831"
   
  在資料表中的每個介面會顯示可以實作下列清單中的元件：  
   
--   偵錯引擎 (DE)  
+- 偵錯引擎 (DE)  
   
--   運算式評估工具 (EE)  
+- 運算式評估工具 (EE)  
   
--   Visual Studio (VS)  
+- Visual Studio (VS)  
   
 |介面|藉由將|描述|  
 |---------------|--------------------|-----------------|  
@@ -70,4 +65,3 @@ ms.locfileid: "51774831"
  [API 參考](../../../extensibility/debugger/reference/api-reference-visual-studio-debugging.md)   
  [撰寫 CLR 運算式評估工具](../../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)   
  [類型視覺化檢視和自訂檢視器](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md)
-

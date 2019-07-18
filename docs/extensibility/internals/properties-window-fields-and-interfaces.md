@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - Properties window, fields and interfaces
 ms.assetid: 0328f0e5-2380-4a7a-a872-b547cb775050
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a252a719e800e828275b8f3575c5073ae185e10b
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 379eaa6e154b77d10463514a63978708bf2b89d0
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335437"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66347874"
 ---
 # <a name="properties-window-fields-and-interfaces"></a>Properties Window Fields and Interfaces
 若要判斷哪些資訊會顯示在選取的模型**屬性**視窗根據在 IDE 中具有焦點的視窗。 每個視窗中，然後選取視窗內的物件可以有其推送至全域範圍內容的選取項目內容物件。 該視窗具有焦點時，環境會更新全域選取範圍內容視窗框架的值。 當焦點變更時，因此會選取範圍內容。
@@ -50,29 +50,29 @@ ms.locfileid: "56335437"
 
 #### <a name="to-update-property-values-using-the-ivsuishell-interface"></a>使用 IVsUIShell 介面更新屬性值
 
-1.  隨時呼叫 VSPackage、專案或編輯器建立或列舉工具或文件視窗時所需的 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell> (透過 <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell> 服務)。
+1. 隨時呼叫 VSPackage、專案或編輯器建立或列舉工具或文件視窗時所需的 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell> (透過 <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell> 服務)。
 
-2.  實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.RefreshPropertyBrowser%2A>保持**屬性**視窗與專案的屬性變更同步 (或所瀏覽的任何其他所選物件**屬性**視窗) 而不需要實作<xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer>以及引發<xref:Microsoft.VisualStudio.OLE.Interop.IPropertyNotifySink.OnChanged%2A>事件。
+2. 實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.RefreshPropertyBrowser%2A>保持**屬性**視窗與專案的屬性變更同步 (或所瀏覽的任何其他所選物件**屬性**視窗) 而不需要實作<xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer>以及引發<xref:Microsoft.VisualStudio.OLE.Interop.IPropertyNotifySink.OnChanged%2A>事件。
 
-3.  實作 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> 方法 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.AdviseHierarchyEvents%2A> 和 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.UnadviseHierarchyEvents%2A>，分別建立和停用用戶端階層事件通知，而不需要階層實作 <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer>。
+3. 實作 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> 方法 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.AdviseHierarchyEvents%2A> 和 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.UnadviseHierarchyEvents%2A>，分別建立和停用用戶端階層事件通知，而不需要階層實作 <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer>。
 
 ### <a name="updating-property-values-using-iconnection"></a>使用 IConnection 更新屬性值
  第二種讓 [屬性]  視窗與屬性值變更同步的方法是在可連接物件上實作 `IConnection` ，表示輸出介面是否存在。 如果您想要當地語系化屬性名稱，請從 <xref:System.ComponentModel.ICustomTypeDescriptor> 衍生您的物件。 <xref:System.ComponentModel.ICustomTypeDescriptor> 實作可以修改它所傳回的屬性描述元，以及變更屬性的名稱。 若要當地語系化描述，請建立衍生自 <xref:System.ComponentModel.DescriptionAttribute> 的屬性，並覆寫 [描述] 屬性。
 
 #### <a name="considerations-in-implementing-the-iconnection-interface"></a>實作 IConnection 介面的考量
 
-1.  `IConnection` 可使用 <xref:Microsoft.VisualStudio.OLE.Interop.IEnumConnectionPoints> 介面來存取列舉值子物件。 它也可存取所有連接點子物件，而所有連接點子物件都實作 <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint> 介面。
+1. `IConnection` 可使用 <xref:Microsoft.VisualStudio.OLE.Interop.IEnumConnectionPoints> 介面來存取列舉值子物件。 它也可存取所有連接點子物件，而所有連接點子物件都實作 <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint> 介面。
 
-2.  所有瀏覽物件都負責實作 <xref:Microsoft.VisualStudio.OLE.Interop.IPropertyNotifySink> 事件。 [屬性]  視窗將建議透過 `IConnection`所設定的事件。
+2. 所有瀏覽物件都負責實作 <xref:Microsoft.VisualStudio.OLE.Interop.IPropertyNotifySink> 事件。 [屬性]  視窗將建議透過 `IConnection`所設定的事件。
 
-3.  連接點可控制其 <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint.Advise%2A> 實作中所允許的連線數目 (一個或多個)。 僅允許一個介面的連接點可以從 <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint.EnumConnections%2A> 方法傳回 <xref:Microsoft.VisualStudio.VSConstants.E_NOTIMPL>。
+3. 連接點可控制其 <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint.Advise%2A> 實作中所允許的連線數目 (一個或多個)。 僅允許一個介面的連接點可以從 <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint.EnumConnections%2A> 方法傳回 <xref:Microsoft.VisualStudio.VSConstants.E_NOTIMPL>。
 
-4.  用戶端可以呼叫 `IConnection` 介面，以使用 <xref:Microsoft.VisualStudio.OLE.Interop.IEnumConnectionPoints> 介面來存取列舉值子物件。 之後可以呼叫 <xref:Microsoft.VisualStudio.OLE.Interop.IEnumConnectionPoints> 介面來列舉每個輸出介面識別碼 (IID) 的連接點。
+4. 用戶端可以呼叫 `IConnection` 介面，以使用 <xref:Microsoft.VisualStudio.OLE.Interop.IEnumConnectionPoints> 介面來存取列舉值子物件。 之後可以呼叫 <xref:Microsoft.VisualStudio.OLE.Interop.IEnumConnectionPoints> 介面來列舉每個輸出介面識別碼 (IID) 的連接點。
 
-5.  也可以呼叫 `IConnection`，以使用 <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint> 介面來存取每個輸出 IID 的連接點子物件。 透過 <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint> 介面，用戶端可使用可連接物件和用戶端自己的同步處理來啟動或終止諮詢迴圈。用戶端也可以呼叫 <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint> 介面以使用 <xref:Microsoft.VisualStudio.OLE.Interop.IEnumConnections> 介面來取得列舉值物件，以列舉它所知道的連線。
+5. 也可以呼叫 `IConnection`，以使用 <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint> 介面來存取每個輸出 IID 的連接點子物件。 透過 <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint> 介面，用戶端可使用可連接物件和用戶端自己的同步處理來啟動或終止諮詢迴圈。用戶端也可以呼叫 <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint> 介面以使用 <xref:Microsoft.VisualStudio.OLE.Interop.IEnumConnections> 介面來取得列舉值物件，以列舉它所知道的連線。
 
 ## <a name="getting-field-descriptions-from-the-properties-window"></a> 從 [屬性] 視窗中取得欄位描述
-在 [屬性]  視窗底部的描述區域會顯示選取的屬性欄位相關資訊。 這項功能預設為開啟。 如果想要隱藏描述欄位，請以滑鼠右鍵按一下 [屬性]  視窗，然後按一下 [描述] 。 這樣也會移除功能表視窗之 [描述]  標題旁的核取記號。 只要依照相同的步驟切換 [描述]  ，就可以再次顯示欄位。
+在 [屬性]  視窗底部的描述區域會顯示選取的屬性欄位相關資訊。 這項功能預設為開啟。 如果想要隱藏描述欄位，請以滑鼠右鍵按一下 [屬性]  視窗，然後按一下 [描述]  。 這樣也會移除功能表視窗之 [描述]  標題旁的核取記號。 只要依照相同的步驟切換 [描述]  ，就可以再次顯示欄位。
 
  描述欄位中的資訊出自 <xref:Microsoft.VisualStudio.OLE.Interop.ITypeInfo>。 每個方法、介面、coclass 等在類型程式庫中都可以有未當地語系化的 `helpstring` 屬性。 **屬性**視窗中擷取的字串<xref:Microsoft.VisualStudio.OLE.Interop.ITypeInfo.GetDocumentation%2A>。
 
@@ -81,7 +81,7 @@ ms.locfileid: "56335437"
 1. 請將 `helpstringdll` 屬性加入類型程式庫 (`typelib`) 的 library 陳述式。
 
    > [!NOTE]
-   >  如果類型程式庫位於物件程式庫 (.olb) 檔案中，這個步驟就是選擇性的。
+   > 如果類型程式庫位於物件程式庫 (.olb) 檔案中，這個步驟就是選擇性的。
 
 2. 為字串指定 `helpstringcontext` 屬性。 您也可以指定 `helpstring` 屬性。
 
@@ -102,7 +102,7 @@ STDAPI DLLGetDocumentation
 );
 ```
 
- `DLLGetDocumentation` 函式必須是 .def 檔案中為 DLL 定義的匯出。
+  `DLLGetDocumentation` 函式必須是 .def 檔案中為 DLL 定義的匯出。
 
  對內建立的 .olb 檔案，其實是個 DLL。 這個 DLL 包含一項資源、類型程式庫 (.tlb) 檔案，以及匯出的函式 `DLLGetDocumentation`。
 

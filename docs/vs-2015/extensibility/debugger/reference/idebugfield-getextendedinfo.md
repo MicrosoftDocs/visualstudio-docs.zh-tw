@@ -1,14 +1,9 @@
 ---
-title: IDebugField::GetExtendedInfo |Microsoft Docs
-ms.custom: ''
+title: IDebugField::GetExtendedInfo | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugField::GetExtendedInfo
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 46c0dd4d-4fd5-4efd-a908-71e4248e8e8d
 caps.latest.revision: 14
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: fde5bb8f05b9aed9170c7e800634af96ccb795fd
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 3de21bc984a36db87f8ce1567f4ff7d97212c40e
+ms.sourcegitcommit: 0cd282a7584b9bfd4df7882f8fdf3ad8a270e219
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51788637"
+ms.lasthandoff: 07/01/2019
+ms.locfileid: "62547555"
 ---
 # <a name="idebugfieldgetextendedinfo"></a>IDebugField::GetExtendedInfo
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -66,8 +61,7 @@ int GetExtendedInfo(
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
   
 ## <a name="remarks"></a>備註  
- 目前，這個方法只會傳回型別或常數的值。 呼叫端必須釋放中傳回的緩衝區`prgBuffer`藉由呼叫 COM 的`CoTaskMemFree`函式 （c + +） 或<xref:System.Runtime.InteropServices.Marshal.FreeCoTaskMem%2A>(C#)。  
+ 目前，這個方法只會傳回型別或常數的值。 呼叫端必須釋放中傳回的緩衝區`prgBuffer`藉由呼叫 COM 的`CoTaskMemFree`函式 (C++) 或<xref:System.Runtime.InteropServices.Marshal.FreeCoTaskMem%2A>(C#)。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)
-

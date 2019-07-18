@@ -11,17 +11,17 @@ ms.assetid: ffc89814-a7df-44fc-aef5-dd3dfeb28a9b
 caps.latest.revision: 49
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1b419568490e41b135c2c7c801154f6550c546e9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 6132da236498867865717ccc7d1f470e2b990a86
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54771460"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695122"
 ---
 # <a name="unit-tests-for-generic-methods"></a>泛型方法的單元測試
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-您可以產生泛型方法的單元測試跟您一樣的其他方法，如中所述[How to:建立和執行單元測試](http://msdn.microsoft.com/5e0f43cf-5e51-48e2-9c98-0eb9324bdc48)。 下列章節提供建立泛型方法之單元測試的相關資訊與範例。  
+您可以產生泛型方法的單元測試跟您一樣的其他方法，如中所述[How to:建立和執行單元測試](https://msdn.microsoft.com/5e0f43cf-5e51-48e2-9c98-0eb9324bdc48)。 下列章節提供建立泛型方法之單元測試的相關資訊與範例。  
   
 ## <a name="type-arguments-and-type-constraints"></a>類型引數和類型條件約束  
  在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 產生泛型類別 (例如 `MyList<T>`) 的單元測試時，會產生兩個方法：一個泛型協助程式方法和一個測試方法。 如果 `MyList<T>` 具有一個或多個類型條件約束，則此類型引數必須滿足所有類型條件約束。 為了確定待測泛型程式碼是否如預期般適用於允許的所有輸入，測試方法會使用您想測試的所有條件約束來呼叫泛型協助程式方法。  
@@ -29,20 +29,20 @@ ms.locfileid: "54771460"
 ## <a name="examples"></a>範例  
  下列範例說明泛型的單元測試：  
   
--   [編輯產生的測試程式碼](#EditingGeneratedTestCode)。 本範例包含「產生的測試程式碼」和「編輯的測試程式碼」兩節。 其示範如何將由泛型方法產生之未經處理的測試程式碼，編輯成有用的測試方法。  
+- [編輯產生的測試程式碼](#EditingGeneratedTestCode)。 本範例包含「產生的測試程式碼」和「編輯的測試程式碼」兩節。 其示範如何將由泛型方法產生之未經處理的測試程式碼，編輯成有用的測試方法。  
   
--   [使用類型條件約束](#TypeConstraintNotSatisfied)。 本範例示範的單元測試適用於使用類型條件約束的泛型方法。 本範例中並未滿足類型條件約束。  
+- [使用類型條件約束](#TypeConstraintNotSatisfied)。 本範例示範的單元測試適用於使用類型條件約束的泛型方法。 本範例中並未滿足類型條件約束。  
   
-###  <a name="EditingGeneratedTestCode"></a>範例 1：編輯產生的測試程式碼  
+### <a name="EditingGeneratedTestCode"></a> 範例 1：編輯產生的測試程式碼  
  此區段中的測試程式碼測試的是名稱為 `SizeOfLinkedList()` 的待測程式碼方法。 這個方法會傳回指定連結清單中節點數目的整數。  
   
  〈產生的測試程式碼〉一節中的第一個程式碼範例顯示 Visual Studio Enterprise 所產生之未編輯的測試程式碼。 〈編輯的測試程式碼〉一節中的第二個程式碼範例，則顯示如何針對 `int` 和 `char` 兩種不同的資料類型來測試 SizeOfLinkedList 方法的運作狀況。  
   
  此程式碼說明兩種方法：  
   
--   測試協助程式方法，`SizeOfLinkedListTestHelper<T>()`。 根據預設，測試協助程式方法的名稱中包含 "TestHelper" 字串。  
+- 測試協助程式方法，`SizeOfLinkedListTestHelper<T>()`。 根據預設，測試協助程式方法的名稱中包含 "TestHelper" 字串。  
   
--   測試方法，`SizeOfLinkedListTest()`。 每個測試方法都會以 TestMethod 屬性標示。  
+- 測試方法，`SizeOfLinkedListTest()`。 每個測試方法都會以 TestMethod 屬性標示。  
   
 #### <a name="generated-test-code"></a>產生的測試程式碼  
  下列測試程式碼是從 `SizeOfLinkedList()` 方法產生。 因為這項產生的測試尚未經過編輯，所以您必須修改它才能正確測試 SizeOfLinkedList 方法。  
@@ -74,22 +74,22 @@ public void SizeOfLinkedListTest()
 ##### <a name="test-helper-method"></a>測試協助程式方法  
  測試協助程式方法會執行下列步驟，而這些步驟與程式碼中標記為步驟 1 到步驟 5 的各行相對應。  
   
-1.  建立泛型連結清單。  
+1. 建立泛型連結清單。  
   
-2.  將四個節點附加到此連結清單。 這些節點中有資料類型未知的內容。  
+2. 將四個節點附加到此連結清單。 這些節點中有資料類型未知的內容。  
   
-3.  將預期的連結清單大小指派給變數 `expected`。   
+3. 將預期的連結清單大小指派給變數 `expected`。   
   
-4.  計算此連結清單的實際大小，並將它指派給變數 `actual`。  
+4. 計算此連結清單的實際大小，並將它指派給變數 `actual`。  
   
-5.  比較 Assert 陳述式中的 `actual` 與 `expected`。 如果 actual 不等於 expected，測試便會失敗。  
+5. 比較 Assert 陳述式中的 `actual` 與 `expected`。 如果 actual 不等於 expected，測試便會失敗。  
   
 ##### <a name="test-method"></a>測試方法  
  測試方法會編譯到您在執行名為 SizeOfLinkedListTest 之測試時所呼叫的程式碼中。 它會執行下列步驟，而這些步驟與程式碼中標記為步驟 6 和步驟 7 的各行相對應。  
   
-1.  在呼叫測試協助程式方法時指定 `<int>`，以驗證此測試是否適用於 `integer` 變數。  
+1. 在呼叫測試協助程式方法時指定 `<int>`，以驗證此測試是否適用於 `integer` 變數。  
   
-2.  在呼叫測試協助程式方法時指定 `<char>`，以驗證此測試是否適用於 `char` 變數。  
+2. 在呼叫測試協助程式方法時指定 `<char>`，以驗證此測試是否適用於 `char` 變數。  
   
 ```  
   
@@ -117,9 +117,9 @@ public void SizeOfLinkedListTest()
 ```  
   
 > [!NOTE]
->  每次 SizeOfLinkedListTest 測試執行時，都會呼叫其 TestHelper 方法兩次。 Assert 陳述式的計算結果每次都必須為 true，測試才會通過。 如果測試失敗，可能無法確定造成失敗的是指定 `<int>` 的呼叫，還是指定 `<char>` 的呼叫。 如果要找出答案，您可以檢查呼叫堆疊，也可以在測試方法中設定中斷點，然後在執行測試時同時進行偵錯。 如需詳細資訊，請參閱[如何：在 ASP.NET 方案中執行測試時偵錯](http://msdn.microsoft.com/library/de4d7aa1-4a1e-467e-a19b-4a85ec245b8b)。  
+> 每次 SizeOfLinkedListTest 測試執行時，都會呼叫其 TestHelper 方法兩次。 Assert 陳述式的計算結果每次都必須為 true，測試才會通過。 如果測試失敗，可能無法確定造成失敗的是指定 `<int>` 的呼叫，還是指定 `<char>` 的呼叫。 如果要找出答案，您可以檢查呼叫堆疊，也可以在測試方法中設定中斷點，然後在執行測試時同時進行偵錯。 如需詳細資訊，請參閱[如何：在 ASP.NET 方案中執行測試時偵錯](https://msdn.microsoft.com/library/de4d7aa1-4a1e-467e-a19b-4a85ec245b8b)。  
   
-###  <a name="TypeConstraintNotSatisfied"></a>範例 2：使用類型條件約束  
+### <a name="TypeConstraintNotSatisfied"></a> 範例 2：使用類型條件約束  
  本範例示範泛型方法的單元測試，而該泛型方法使用了未能滿足的類型條件約束。 第一個區段顯示來自待測程式碼專案的程式碼。 其中的類型條件約束以反白顯示。  
   
  第二個區段顯示來自測試專案的程式碼。  
@@ -197,6 +197,6 @@ namespace ClassLibrary2
 }  
 ```  
   
-## <a name="see-also"></a>請參閱  
- [單元測試的結構](http://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144)   
+## <a name="see-also"></a>另請參閱  
+ [單元測試的結構](https://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144)   
  [對程式碼進行單元測試](../test/unit-test-your-code.md)

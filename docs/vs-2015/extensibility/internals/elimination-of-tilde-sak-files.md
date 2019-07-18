@@ -1,14 +1,9 @@
 ---
 title: 消除 ~ SAK 檔案 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - temporary files
 - ~sak files
@@ -16,20 +11,20 @@ helpviewer_keywords:
 ms.assetid: 5277b5fa-073b-4bd1-8ba1-9dc913aa3c50
 caps.latest.revision: 16
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 930ee0690e14431298461f50387a94dd4bb0ce7d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 751acf4e5f56b7b477f05ab71571e0becd566649
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51780460"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436331"
 ---
 # <a name="elimination-of-sak-files"></a>消除 ~SAK 檔案
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 在 原始檔控制外掛程式 API 1.2，~ SAK 檔案已由功能旗標和偵測原始檔控制外掛程式支援 MSSCCPRJ 檔案，並在共用簽出的新函式取代。  
   
-## <a name="sak-files"></a>~ SAK 檔案  
+## <a name="sak-files"></a>~SAK Files  
  Visual Studio.NET 2003年建立暫存檔案前面加上 ~ SAK。 這些檔案用來判斷是否要支援原始檔控制外掛程式：  
   
 - MSSCCPRJ。SCC 檔案。  
@@ -55,8 +50,7 @@ ms.locfileid: "51780460"
  [HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl]「 DoNotCreateTemporaryFilesInSourceControl"= dword: 00000001  
   
 > [!NOTE]
->  如果此登錄機碼設定為 dword:00000000，它就相當於在不存在，金鑰和 Visual Studio 仍會嘗試建立暫存檔案。 不過，如果登錄機碼設定為 dword: 00000001，Visual Studio 不會嘗試建立暫存檔案。 而是會假設原始檔控制外掛程式不支援 MSSCCPRJ。SCC 檔案，而且不支援共用簽出。  
+> 如果此登錄機碼設定為 dword:00000000，它就相當於在不存在，金鑰和 Visual Studio 仍會嘗試建立暫存檔案。 不過，如果登錄機碼設定為 dword: 00000001，Visual Studio 不會嘗試建立暫存檔案。 而是會假設原始檔控制外掛程式不支援 MSSCCPRJ。SCC 檔案，而且不支援共用簽出。  
   
 ## <a name="see-also"></a>另請參閱  
  [原始檔控制外掛程式 API 版本 1.2 的新功能](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)
-

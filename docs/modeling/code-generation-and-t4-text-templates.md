@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 125ddff4bded1a58a7e68e6c8058d24ff16b2be1
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55951328"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62423081"
 ---
 # <a name="code-generation-and-t4-text-templates"></a>程式碼產生和 T4 文字範本
 
@@ -42,7 +42,7 @@ ms.locfileid: "55951328"
 
 此外，範本也包含程式碼片段。 您可以使用這些片段來重複文字區段、建立條件式區段，以及顯示應用程式的資料。
 
-為產生輸出，應用程式會呼叫範本所產生的函式。 例如: 
+為產生輸出，應用程式會呼叫範本所產生的函式。 例如：
 
 ```csharp
 string webResponseText = new MyTemplate().TransformText();

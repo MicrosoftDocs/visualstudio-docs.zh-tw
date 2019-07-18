@@ -7,17 +7,17 @@ helpviewer_keywords:
 - projects [Visual Studio SDK], saving standard documents
 - persistence, saving standard documents
 ms.assetid: d692fedf-b46e-4d60-84bd-578635042235
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8ced873db6c1a3c9adbe40625ed44817eb6703d9
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 4f46d63e9f1145711bd3a32f6fd24e7b61814922
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56614892"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66318669"
 ---
 # <a name="saving-a-standard-document"></a>儲存標準文件
 環境會處理儲存、 另存新檔，並儲存所有命令。 當使用者選取**儲存**，**另存新檔**，或**全部儲存**從**檔案**功能表或關閉方案，因而導致**全部儲存**，執行下列程序。
@@ -50,11 +50,11 @@ ms.locfileid: "56614892"
 
 #### <a name="to-change-file-ownership-to-the-miscellaneous-files-project"></a>若要將檔案擁有權變更為其他檔案專案
 
-1.  查詢服務<xref:Microsoft.VisualStudio.Shell.Interop.SVsExternalFilesManager>介面。
+1. 查詢服務<xref:Microsoft.VisualStudio.Shell.Interop.SVsExternalFilesManager>介面。
 
      指標<xref:Microsoft.VisualStudio.Shell.Interop.IVsExternalFilesManager2>會傳回。
 
-2.  呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsExternalFilesManager2.TransferDocument%2A>(`pszMkDocumentNew`， `punkWindowFrame`) 方法，以將文件傳送至新的階層。 執行 [另存新檔] 命令的階層架構會呼叫這個方法。
+2. 呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsExternalFilesManager2.TransferDocument%2A>(`pszMkDocumentNew`， `punkWindowFrame`) 方法，以將文件傳送至新的階層。 執行 [另存新檔] 命令的階層架構會呼叫這個方法。
 
 ## <a name="see-also"></a>另請參閱
 - <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>

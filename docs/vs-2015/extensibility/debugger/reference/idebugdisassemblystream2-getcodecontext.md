@@ -1,14 +1,9 @@
 ---
 title: IDebugDisassemblyStream2::GetCodeContext |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugDisassemblyStream2::GetCodeContext
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: a6d0ae82-7617-4915-9713-369abe3e2e53
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: d5ee0aaa2511a85135ad1346fa1e3eea0067dd0f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: a98840982d44c2ee2348ca5c321d08cc6c46ffc2
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51797711"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68196238"
 ---
 # <a name="idebugdisassemblystream2getcodecontext"></a>IDebugDisassemblyStream2::GetCodeContext
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -66,4 +61,3 @@ int GetCodeContext( 
  [GetCodeLocationId](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodelocationid.md)   
  [GetCurrentLocation](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcurrentlocation.md)   
  [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md)
-

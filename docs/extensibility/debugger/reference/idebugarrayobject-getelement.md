@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugArrayObject::GetElement method
 ms.assetid: 08b44341-7bf1-4a8c-8b79-98ae5785b195
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 735b92bb649344c055f7a645b961925e3cbd4d6e
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 527302a2e6d6fc2884107e3773402adc56b881c7
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56684620"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66322224"
 ---
 # <a name="idebugarrayobjectgetelement"></a>IDebugArrayObject::GetElement
 取得陣列的項目。
@@ -38,14 +41,12 @@ int GetElement(
 );
 ```
 
-#### <a name="parameters"></a>參數
- `dwIndex`
+## <a name="parameters"></a>參數
+`dwIndex`\
+[in]項目索引。
 
- [in]項目索引。
-
- `ppElement`
-
- [out]傳回[IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)介面，表示項目。
+`ppElement`\
+[out]傳回[IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)介面，表示項目。
 
 ## <a name="return-value"></a>傳回值
  如果成功，會傳回 S_OK;否則，傳回錯誤碼。

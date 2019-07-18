@@ -1,14 +1,9 @@
 ---
-title: IEnumDebugErrorBreakpoints2::Clone |Microsoft Docs
-ms.custom: ''
+title: IEnumDebugErrorBreakpoints2::Clone | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IEnumDebugErrorBreakpoints2::Clone
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: f6fb4985-8dd6-4a9b-98e0-15dbc64cc9ec
 caps.latest.revision: 10
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 0c3cdc31ce0a935c0d4140830a1bf59f92615983
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 8bf01e8007e742c12a46a185c4b6339161c5359c
+ms.sourcegitcommit: da4079f5b6ec884baf3108cbd0519d20cb64c70b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51720630"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "62561662"
 ---
 # <a name="ienumdebugerrorbreakpoints2clone"></a>IEnumDebugErrorBreakpoints2::Clone
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -55,4 +50,3 @@ int Clone(
   
 ## <a name="see-also"></a>另請參閱  
  [IEnumDebugErrorBreakpoints2](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2.md)
-

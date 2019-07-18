@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d0a24301f7571225ed1002ce4e331f29fd4d77c
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 3ace83b86b3b1772cd111a36b5f011d023189501
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57873867"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824513"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>案例：使用視覺化和模型製作工具變更設計
 
@@ -51,7 +51,7 @@ ms.locfileid: "57873867"
 
 - [視覺化程式碼](../modeling/visualize-code.md)
 
-## <a name="scenario-overview"></a>案例概觀
+## <a name="scenario-overview"></a>情節概觀
 
 此案例中描述的兩家虛構公司的軟體開發生命週期事件：Dinner Now 及 Lucerne 發行。 Dinner Now 在西雅圖提供網站架構的餐點外送服務。 客戶可以訂餐並付款 Dinner Now 網站上。 然後訂單便會傳送到合適的當地餐廳以準備外送。 Lucerne Publishing 是一家位在紐約的公司，營業項目涵蓋幾項網路與非網路服務。 比方說，它們會執行的網站，客戶可以在其中張貼餐廳的評論。
 
@@ -95,7 +95,7 @@ Lucerne 則維持一個相當大型且複雜的系統集合，其中有些系統
 
 - [對應方案之間的相依性](../modeling/map-dependencies-across-your-solutions.md)
 
-- [如何：將類別圖表新增至專案 （類別設計工具）](../ide/class-designer/how-to-add-class-diagrams-to-projects.md)
+- [如何：將類別圖表新增至專案 (類別設計工具)](../ide/class-designer/how-to-add-class-diagrams-to-projects.md)
 
 - [Modeling SDK for Visual Studio - 特定領域語言](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)
 
@@ -116,7 +116,7 @@ Lucerne 則維持一個相當大型且複雜的系統集合，其中有些系統
 
 Visual Studio 模型圖表並沒有規定使用順序，所以您可以依需求或方法來加以使用。 小組在整個專案進行期間，通常會頻繁地反覆重新審視其模型。 每個圖表都具有特定優勢，可協助您了解、描述及溝通開發中系統的不同層面。
 
-Dinner Now 及 Lucerne 在彼此溝通以及與專案關係人溝通時，會使用圖表作為其共同語言。 例如，Dinner Now 會使用圖表執行這些工作：
+Dinner Now 及 Lucerne 溝通與彼此及與專案關係人會使用圖表作為其共同語言。 例如，Dinner Now 會使用圖表執行這些工作：
 
 - 將現有程式碼視覺化。
 
@@ -145,7 +145,7 @@ Dinner Now 必須評估符合新需求所需的成本。 這有一部分取決�
 |**地圖或圖表**|**顯示**|
 |-|-|
 |*Code Map*<br /><br /> 請參閱：<br /><br /> - [對應方案之間的相依性](../modeling/map-dependencies-across-your-solutions.md)<br />- [瀏覽和重新排列 code map](../modeling/browse-and-rearrange-code-maps.md)<br />- [藉由編輯 DGML 檔案自訂 code map](../modeling/customize-code-maps-by-editing-the-dgml-files.md)|程式碼中的相依性及其他關聯性<br /><br /> 例如，Dinner Now 可能一開始會檢閱組件 Code Map，以取得組件及其相依性的概觀。 他們可以深入研究此地圖，以探索這些組件中的命名空間及類別。<br /><br /> Dinner Now 也可以建立地圖，以探索程式碼中的特定區域及其他種類的關聯性。 他們可以使用 [方案總管] 來尋找並選取其感興趣的區域及關聯性。|
-|*以程式碼為基礎的類別圖表*<br /><br /> 請參閱[如何：將類別圖表新增至專案 （類別設計工具）](../ide/class-designer/how-to-add-class-diagrams-to-projects.md)。|程式碼中的現有類別|
+|*以程式碼為基礎的類別圖表*<br /><br /> 請參閱[How to:將類別圖表新增至專案 （類別設計工具）](../ide/class-designer/how-to-add-class-diagrams-to-projects.md)。|程式碼中的現有類別|
 
  例如，開發人員建立了 Code Map。 接著調整其範圍以便將焦點放在新情節會影響的區域。 這些區域在地圖上會處於選取及醒目提示的狀態：
 
@@ -165,18 +165,18 @@ Dinner Now 必須評估符合新需求所需的成本。 這有一部分取決�
 
 |**圖表**|**描述**|
 |-|-|
-|*以程式碼為基礎的類別圖表*<br /><br /> 請參閱[如何：將類別圖表新增至專案 （類別設計工具）](../ide/class-designer/how-to-add-class-diagrams-to-projects.md)。|程式碼中的現有類別。|
+|*以程式碼為基礎的類別圖表*<br /><br /> 請參閱[How to:將類別圖表新增至專案 （類別設計工具）](../ide/class-designer/how-to-add-class-diagrams-to-projects.md)。|程式碼中的現有類別。|
 
 ### <a name="ValidatingCode"></a> 保留程式碼與設計一致
  Dinner Now 必須確定已更新的程式碼與設計保持一致。 他們建立相依性圖表，描述系統中的層級的功能，請指定允許與這些圖層的方式，以及關聯的方案成品之間的相依性。
 
 |**圖表**|**描述**|
 |-|-|
-|*相依性圖表*<br /><br /> 請參閱：<br /><br /> - [從您的程式碼建立相依性圖表](../modeling/create-layer-diagrams-from-your-code.md)<br />- [相依性圖表中：參考](../modeling/layer-diagrams-reference.md)<br />- [相依性圖表中：方針](../modeling/layer-diagrams-guidelines.md)<br />- [使用相依性圖表驗證程式碼](../modeling/validate-code-with-layer-diagrams.md)|程式碼的邏輯架構。<br /><br /> 相依性圖表會組織，並將對應至擷取群組，稱為 Visual Studio 方案中的成品*層*。 這些圖層可識別這些成品在系統中執行的角色、工作或功能。<br /><br /> 分層圖有助於說明系統的預定設計，以及根據該設計來驗證不斷演變的程式碼。<br /><br /> 若要建立圖層，請從 [方案總管]、[Code Map]、[類別檢視] 以及 [物件瀏覽器] 拖曳項目。 若要繪製新圖層，請使用工具箱或以滑鼠右鍵按一下圖表介面。<br /><br /> 若要檢視現有相依性，請以滑鼠右鍵按一下分層圖介面，然後按一下 [產生相依性] 。 若要指定預定的相依性，請繪製新相依性。|
+|*相依性圖表*<br /><br /> 請參閱：<br /><br /> - [從您的程式碼建立相依性圖表](../modeling/create-layer-diagrams-from-your-code.md)<br />- [相依性圖表中：參考](../modeling/layer-diagrams-reference.md)<br />- [相依性圖表中：方針](../modeling/layer-diagrams-guidelines.md)<br />- [使用相依性圖表驗證程式碼](../modeling/validate-code-with-layer-diagrams.md)|程式碼的邏輯架構。<br /><br /> 相依性圖表會組織，並將對應至擷取群組，稱為 Visual Studio 方案中的成品*層*。 這些圖層可識別這些成品在系統中執行的角色、工作或功能。<br /><br /> 相依性圖表適合用來描述系統的預定的設計和驗證不斷演變的程式碼，根據該設計。<br /><br /> 若要建立圖層，請從 [方案總管]、[Code Map]、[類別檢視] 以及 [物件瀏覽器] 拖曳項目。 若要繪製新圖層，請使用工具箱或以滑鼠右鍵按一下圖表介面。<br /><br /> 若要檢視現有相依性，以滑鼠右鍵按一下 相依性圖表介面，然後**產生相依性**。 若要指定預定的相依性，請繪製新相依性。|
 
- 例如，下列相依性圖表描述圖層與每個圖層相關聯的成品數目之間的相依性：
+例如，下列相依性圖表描述圖層與每個圖層相關聯的成品數目之間的相依性：
 
- ![整合式的付款系統的相依性圖表](../modeling/media/layer_integrated_dnlucerne.png)
+![整合式的付款系統的相依性圖表](../modeling/media/layer_integrated_dnlucerne.png)
 
  **相依性圖表**
 
@@ -194,7 +194,7 @@ Dinner Now 必須評估符合新需求所需的成本。 這有一部分取決�
 
 - 大部分的圖表是由以線條連結之節點所組成。 針對每個圖表類型，工具箱會提供不同種類的節點及線條。
 
-     若要開啟工具箱，請在 [檢視]  功能表上按一下 [工具箱] 。
+   若要開啟工具箱，請在 [檢視]  功能表上按一下 [工具箱]  。
 
 - 若要建立節點，請將其從工具箱拖曳到圖表。 特定種類的節點必須拖曳到現有節點上。 例如，在元件圖表上，必須將新連接埠加入現有元件中。
 
@@ -206,11 +206,11 @@ Visual Studio 模型圖表已經與 Team Foundation Server 整合，以便您可
 
 當工作進行時，小組會更新工作項目以反映實際花在工作上的時間。 他們也會使用下列 Team Foundation Server 功能來監視及報告工作狀態：
 
-- 每日 *「待執行工作報表」* (Burndown Report)，此報表會顯示他們是否會在預定時間內完成計劃的工作。 他們會從 Team Foundation Server 產生其他類似的報表來追蹤 Bug 進度。
+- 每日*待執行工作報表*，顯示他們是否會完成規劃的工作，預定時間內。 他們會從 Team Foundation Server 產生其他類似的報表來追蹤 Bug 進度。
 
-- *「反覆項目工作表」* (Iteration Worksheet)，此工作表使用 Microsoft Excel 協助小組監視及平衡小組成員間的工作量。 此工作表連結到 Team Foundation Server，並在定期進度會議中提供討論重點。
+-           *「反覆項目工作表」* (Iteration Worksheet)，此工作表使用 Microsoft Excel 協助小組監視及平衡小組成員間的工作量。 此工作表連結到 Team Foundation Server，並在定期進度會議中提供討論重點。
 
-- *「開發儀表板」* (Development Dashboard)，此儀表板使用 Office Project 讓小組隨時獲知重要的專案資訊。
+-           *「開發儀表板」* (Development Dashboard)，此儀表板使用 Office Project 讓小組隨時獲知重要的專案資訊。
 
 請參閱：
 
@@ -264,7 +264,7 @@ Lucerne 及 Dinner Now 必須整合其付款系統。 下列各節將示範 Visu
 
 ### <a name="VisualizeCode"></a> 視覺化現有程式碼：Code Map
 
-Code Map 顯示程式碼的目前組織及關聯性。 項目在地圖上是以 *「節點」* (Node) 來代表，關聯性則是以 *「連結」*(Link) 來代表。 Code Map 可協助您執行下列種類的工作：
+Code Map 顯示程式碼的目前組織及關聯性。 項目在地圖上是以 *「節點」* (Node) 來代表，關聯性則是以 *「連結」* (Link) 來代表。 Code Map 可協助您執行下列種類的工作：
 
 - 探索不熟悉的程式碼。
 
@@ -306,7 +306,7 @@ Code Map 顯示程式碼的目前組織及關聯性。 項目在地圖上是以 
 
 - 如需快速取得原始程式碼的概觀，請遵循這些步驟來產生 Code Map：
 
-     在 [架構]  功能表上，按一下 [產生方案的 Code Map] 。
+     在 [架構]  功能表上，按一下 [產生方案的 Code Map]  。
 
      若要快速取得已編譯程式碼的概觀，請建立空白的 Code Map，然後將組件檔或二進位檔拖曳到地圖介面上。
 
@@ -329,8 +329,8 @@ Code Map 顯示程式碼的目前組織及關聯性。 項目在地圖上是以 
 
 |**圖表**|**描述**|
 |-|-|
-|相依性圖表|系統的邏輯架構。 您可以使用相依性驗證以確定程式碼保持與設計一致。<br /><br /> 若要易於識別現有 dependencys 或預期的 dependencys，請建立 code map 並群組相關的項目。 若要建立相依性圖表，請參閱：<br /><br /> - [從您的程式碼建立相依性圖表](../modeling/create-layer-diagrams-from-your-code.md)<br />- [相依性圖表中：方針](../modeling/layer-diagrams-guidelines.md)|
-|類別圖表 (以程式碼為基礎)|特定專案程式碼中的現有類別。<br /><br /> 若要修改程式碼中的現有類別並將其視覺化，請使用 [類別設計工具]。<br /><br /> 請參閱[如何：將類別圖表新增至專案 （類別設計工具）](../ide/class-designer/how-to-add-class-diagrams-to-projects.md)。|
+|相依性圖表|系統的邏輯架構。 您可以使用相依性驗證以確定程式碼保持與設計一致。<br /><br /> 若要易於識別現有的相依性或預期的相依性，請建立 code map 並群組相關的項目。 若要建立相依性圖表，請參閱：<br /><br /> - [從您的程式碼建立相依性圖表](../modeling/create-layer-diagrams-from-your-code.md)<br />- [相依性圖表中：方針](../modeling/layer-diagrams-guidelines.md)|
+|類別圖表 (以程式碼為基礎)|特定專案程式碼中的現有類別。<br /><br /> 若要修改程式碼中的現有類別並將其視覺化，請使用 [類別設計工具]。<br /><br /> 請參閱[How to:將類別圖表新增至專案 （類別設計工具）](../ide/class-designer/how-to-add-class-diagrams-to-projects.md)。|
 
 ### <a name="DefineClasses"></a> 定義類型的詞彙：類別圖表
  類別圖表定義參與系統的實體、詞彙或概念，以及彼此的關聯性。 例如，您可以在開發期間使用這些圖表來描述每個類別的屬性及作業，不論其實作語言或樣式為何。
@@ -355,35 +355,35 @@ Code Map 顯示程式碼的目前組織及關聯性。 項目在地圖上是以 
 
 - 類型，例如類別、介面及列舉：
 
-    - *「類別」* (Class) 是物件的定義，而這些物件共用特定的結構或行為特性。
+  -           *「類別」* (Class) 是物件的定義，而這些物件共用特定的結構或行為特性。
 
-    - *「介面」* (Interface) 會定義物件外部可見行為的一部分。
+  -           *「介面」* (Interface) 會定義物件外部可見行為的一部分。
 
-    - *「列舉」* (Enumeration) 是包含常值清單的分類器。
+  -           *「列舉」* (Enumeration) 是包含常值清單的分類器。
 
-- *「屬性」* (Attribute) 是特定類型的值，其描述 *「分類器」*(Classifier) 的每個執行個體。 分類器是類型、元件、使用案例的一般名稱，甚至是執行者的一般名稱。
+- *「屬性」* (Attribute) 是特定類型的值，其描述 *「分類器」* (Classifier) 的每個執行個體。 分類器是類型、元件、使用案例的一般名稱，甚至是執行者的一般名稱。
 
 - *「作業」* (Operation) 是分類器執行個體可以執行的方法或函式。
 
-- *「關聯」* (Association) 表示兩個分類器之間的某種關聯性。
+-           *「關聯」* (Association) 表示兩個分類器之間的某種關聯性。
 
-  - *「彙總」* (Aggregation) 是一種關聯，表示兩個分類器之間的共用擁有權。
+  -           *「彙總」* (Aggregation) 是一種關聯，表示兩個分類器之間的共用擁有權。
 
-  - *「組合」* (Composition) 是一種關聯，表示兩個分類器之間的整體-部分關聯性。
+  -           *「組合」* (Composition) 是一種關聯，表示兩個分類器之間的整體-部分關聯性。
 
     若要顯示彙總或組合，請在關聯上設定 **彙總** 屬性。 **共用** 顯示彙總， **組合** 則顯示組合。
 
-- *「相依性」* (Dependency) 表示若變更某個分類器的定義，可能會變更另一個分類器的定義。
+-           *「相依性」* (Dependency) 表示若變更某個分類器的定義，可能會變更另一個分類器的定義。
 
-- *「一般化」* (Generalization) 表示特定分類器的部分定義繼承自一般分類器。 *「實現」* (Realization) 表示類別實作介面提供的作業及屬性。
+-           *「一般化」* (Generalization) 表示特定分類器的部分定義繼承自一般分類器。           *「實現」* (Realization) 表示類別實作介面提供的作業及屬性。
 
-     若要建立這些關聯性，請使用 [繼承]  工具。 另外，實現可以用 *「棒棒糖符號」*(Lollipop) 表示。
+     若要建立這些關聯性，請使用 [繼承]  工具。 另外，實現可以用 *「棒棒糖符號」* (Lollipop) 表示。
 
 - *「封裝」* (Package) 是分類器、關聯、生命線、元件及其他封裝的群組。 *「匯入」* (Import) 關聯性表示某個封裝包含另一個封裝的所有定義。
 
 您可以使用 [類別設計工具] 從程式碼建立類別圖，來開始探索及討論現有類別。
 
-- [如何：將類別圖表新增至專案 （類別設計工具）](../ide/class-designer/how-to-add-class-diagrams-to-projects.md)
+- [如何：將類別圖表新增至專案 (類別設計工具)](../ide/class-designer/how-to-add-class-diagrams-to-projects.md)
 
 #### <a name="summary-strengths-of-class-diagrams"></a>摘要: 類別圖表的優勢
  類別圖表可協助您定義下列項目：
@@ -410,7 +410,7 @@ Code Map 顯示程式碼的目前組織及關聯性。 項目在地圖上是以 
 
  **描述 Dinner now 與 Lucerne 整合的相依性圖表**
 
- 這個圖表上的圖層會連結到對應的 Dinner Now 及 Lucerne 方案成品。 例如，商務圖層會連結到 DinnerNow.Business 命名空間及其成員，其目前已包含 PaymentApprover 類別。 資源存取圖層會連結到 DinnerNow.Data 命名空間。 箭號 (也就是 *「相依性」*(Dependency)) 會指定只有商務圖層可以使用位於資源存取圖層中的功能。 小組在更新程式碼時，圖層驗證會定期執行，以便在發生衝突時加以攔截，並協助小組立即解決衝突。
+ 這個圖表上的圖層會連結到對應的 Dinner Now 及 Lucerne 方案成品。 例如，商務圖層會連結到 DinnerNow.Business 命名空間及其成員，其目前已包含 PaymentApprover 類別。 資源存取圖層會連結到 DinnerNow.Data 命名空間。 箭號 (也就是 *「相依性」* (Dependency)) 會指定只有商務圖層可以使用位於資源存取圖層中的功能。 小組在更新程式碼時，圖層驗證會定期執行，以便在發生衝突時加以攔截，並協助小組立即解決衝突。
 
  小組共同合作，以逐步進行整合並測試這兩個系統。 他們首先確定 PaymentApprover 與 Dinner Now 其餘部分彼此可順利運作，才會處理 PaymentProcessing。
 
@@ -432,7 +432,7 @@ Code Map 顯示程式碼的目前組織及關聯性。 項目在地圖上是以 
 
 - *「圖層」* (Layer) 描述成品的邏輯群組。
 
-- *「連結」* (Link) 是圖層與成品之間的關聯。
+-           *「連結」* (Link) 是圖層與成品之間的關聯。
 
      若要從成品建立圖層，請從 [方案總管]、[Code Map]、[類別檢視] 或 [物件瀏覽器] 拖曳項目。 若要繪製新圖層再連結到成品，請使用工具箱或以滑鼠右鍵按一下圖表介面以建立圖層，然後將項目拖曳到這些圖層。
 
@@ -446,7 +446,7 @@ Code Map 顯示程式碼的目前組織及關聯性。 項目在地圖上是以 
 
     若要查看已連結至圖層的成品，以滑鼠右鍵按一下 相依性，然後**檢視連結**來開啟**圖層總管**。
 
-- *「相依性」* (Dependency) 表示某個圖層可以使用另一個圖層中的功能，但反過來則不行。 *「雙向相依性」* (Bidirectional Dependency) 表示某個圖層可以使用另一個圖層中的功能，反之亦然。
+-           *「相依性」* (Dependency) 表示某個圖層可以使用另一個圖層中的功能，但反過來則不行。           *「雙向相依性」* (Bidirectional Dependency) 表示某個圖層可以使用另一個圖層中的功能，反之亦然。
 
      要在相依性圖表中顯示現有相依性，以滑鼠右鍵按一下圖表介面，然後**產生相依性**。 若要描述預定的相依性，請繪製新的相依性。
 

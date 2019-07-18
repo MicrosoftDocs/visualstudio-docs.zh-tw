@@ -1,27 +1,22 @@
 ---
 title: 實作連接埠提供者 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], implementing port suppliers
 - port suppliers, implementing
 ms.assetid: 6b8579df-58df-4c7f-8112-6015993e8765
 caps.latest.revision: 12
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 0596809ceccd3d528e3276f2ed310a4835c836eb
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: ffa6daa20c08bd236657c88e762b2f453554cb74
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51738767"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68152685"
 ---
 # <a name="implementing-a-port-supplier"></a>實作連接埠提供者
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -43,4 +38,3 @@ ms.locfileid: "51738767"
   
 ## <a name="see-also"></a>另請參閱  
  [Visual Studio 偵錯工具的擴充性](../../extensibility/debugger/visual-studio-debugger-extensibility.md)
-

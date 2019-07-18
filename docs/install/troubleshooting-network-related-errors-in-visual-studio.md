@@ -1,7 +1,7 @@
 ---
 title: 針對網路或 Proxy 錯誤進行疑難排解
 description: 針對您在使用防火牆或 Proxy 伺服器的情況下安裝或使用 Visual Studio 時可能會遇到的網路或 Proxy 相關錯誤，尋找解決方案。
-ms.date: 02/23/2018
+ms.date: 05/22/2019
 ms.topic: troubleshooting
 helpviewer_keywords:
 - network installation, Visual Studio
@@ -15,12 +15,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 94fcaab3c02524584df5349d481e59067a7253aa
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.prod: visual-studio-windows
+ms.technology: vs-installation
+ms.openlocfilehash: 27364bd028d9fb493da354d3bff7f11efe5f459d
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57982658"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825713"
 ---
 # <a name="troubleshooting-network-related-errors-when-you-install-or-use-visual-studio"></a>對安裝或使用 Visual Studio 時所發生的網路相關錯誤進行疑難排解
 
@@ -34,23 +36,25 @@ ms.locfileid: "57982658"
 
 - 重新啟動 Visual Studio。 應該會出現 [Proxy 驗證] 對話方塊。 在對話方塊中依提示輸入您的認證。
 
-- 如果重新啟動 Visual Studio 無法解決問題，這可能是因為您的 Proxy 伺服器並未提示輸入 http:&#47;&#47;go.microsoft.com 位址的認證，而是提示輸入 &#42;.visualStudio.com 位址的認證。 對於這些伺服器，請考慮將下列 URL 列於白名單上，以解除封鎖 Visual Studio 中的所有登入案例：
+- 如果重新啟動 Visual Studio 無法解決問題，這可能是因為您的 Proxy 伺服器並未提示輸入 http:&#47;&#47;go.microsoft.com 位址的認證，而是提示輸入 &#42;.visualStudio.microsoft.com 位址的認證。 針對這些伺服器，請考慮將下列 URL 新增至允許清單上，以解除封鎖 Visual Studio 中的所有登入案例：
 
-    - &#42;.windows.net
+  - &#42;.windows.net
 
-    - &#42;.microsoftonline.com
+  - &#42;.microsoftonline.com
 
-    - &#42;.visualstudio.com
+  - &#42;.visualstudio.microsoft.com
 
-    - &#42;.microsoft.com
+  - &#42;.microsoft.com
 
-    - &#42;.live.com
+  - &#42;.live.com
 
-- 否則您可以從白清單中移除 http:&#47;&#47;go.microsoft.com 位址，這樣 Proxy 驗證對話方塊在 Visual Studio 重新啟動時，就會同時針對 http:&#47;&#47;go.microsoft.com 位址及伺服器端點顯示。
+- 您也可以從允許清單中移除 http:&#47;&#47;go.microsoft.com 位址，如此一來，當 Visual Studio 重新啟動時，就會同時針對 http:&#47;&#47;go.microsoft.com 位址及伺服器端點顯示 Proxy 驗證對話方塊。
 
   -或-
 
 - 如果您想要將您的預設認證用於 Proxy，您可以執行下列動作：
+
+::: moniker range="vs-2017"
 
   1. 在 **%ProgramFiles%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE** 或 **%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE** 中尋找 **devenv.exe.config** (devenv.exe 設定檔)。
 
@@ -65,11 +69,28 @@ ms.locfileid: "57982658"
       您必須在 `proxyaddress="<http://<yourproxy:port#>` 中插入您的網路的正確 Proxy 位址。
 
      > [!NOTE]
-     > 如需詳細資訊，請參閱 [&lt;defaultProxy&gt; 項目 (網路設定)](/dotnet/framework/configure-apps/file-schema/network/defaultproxy-element-network-settings) 和 [&lt;proxy&gt; 項目 (網路設定)](/dotnet/framework/configure-apps/file-schema/network/proxy-element-network-settings) 頁面。
+     > 如需詳細資訊，請參閱 [&lt;defaultProxy&gt; 項目 (網路設定)](/dotnet/framework/configure-apps/file-schema/network/defaultproxy-element-network-settings/) 和 [&lt;proxy&gt; 項目 (網路設定)](/dotnet/framework/configure-apps/file-schema/network/proxy-element-network-settings) 頁面。
 
-  -或-
+::: moniker-end
 
-- 您也可以遵循[如何透過驗證的 Web Proxy 進行連線](https://blogs.msdn.microsoft.com/rido/2010/05/06/how-to-connect-to-tfs-through-authenticated-web-proxy/) \(英文\) 部落格文章中的指示，該文章能示範如何新增可讓您使用 Proxy 的程式碼。
+::: moniker range="vs-2019"
+
+  1. 在下列位置尋找 **devenv.exe.config** (devenv.exe configuration 檔案)： **%ProgramFiles%\Microsoft Visual Studio\2019\Enterprise\Common7\IDE** 或 **%ProgramFiles(x86)%\Microsoft Visual Studio\2019\Enterprise\Common7\IDE**。
+
+  2. 在設定檔中，找出 `<system.net>` 區塊，並加入下列程式碼：
+
+      ```xml
+      <defaultProxy enabled="true" useDefaultCredentials="true">
+          <proxy bypassonlocal="True" proxyaddress="http://<yourproxy:port#>"/>
+      </defaultProxy>
+      ```
+
+      您必須在 `proxyaddress="<http://<yourproxy:port#>` 中插入您的網路的正確 Proxy 位址。
+
+     > [!NOTE]
+     > 如需詳細資訊，請參閱 [&lt;defaultProxy&gt; 項目 (網路設定)](/dotnet/framework/configure-apps/file-schema/network/defaultproxy-element-network-settings/) 和 [&lt;proxy&gt; 項目 (網路設定)](/dotnet/framework/configure-apps/file-schema/network/proxy-element-network-settings) 頁面。
+
+::: moniker-end
 
 ## <a name="error-the-underlying-connection-was-closed"></a>錯誤：「基礎連線已關閉」
 
@@ -99,7 +120,7 @@ Visual Studio 使用傳輸層安全性 (TLS) 1.2 通訊協定連線到網路資�
 
 - &#42;.azurewebsites.net (適用於 Azure 連線)
 
-- &#42;.visualstudio.com
+- &#42;.visualstudio.microsoft.com
 
 - cdn.vsassets.io (主機內容傳遞網路 (又稱 CDN) 內容)
 

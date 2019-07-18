@@ -1,21 +1,21 @@
 ---
-title: HOW TO：提供服務 |Microsoft Docs
+title: 作法：提供服務 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - services, providing
 ms.assetid: 12bc1f12-47b1-44f6-b8db-862aa88d50d1
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2c38f28ae99c2fb70f811b9d6b85e3c771512b17
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: a752e05e5a7c91e0e9f3d3c21f8542014a053245
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56723743"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66324971"
 ---
 # <a name="how-to-provide-a-service"></a>HOW TO：提供服務
 VSPackage 可以提供其他的 Vspackage 可以使用的服務。 若要提供服務，VSPackage 必須向 Visual Studio 中的服務，然後加入服務。
@@ -25,7 +25,7 @@ VSPackage 可以提供其他的 Vspackage 可以使用的服務。 若要提供�
  如需有關服務的詳細資訊，請參閱 <<c0> [ 服務 essentials](../extensibility/internals/service-essentials.md) 。
 
 > [!NOTE]
->  即將卸載 VSPackage 時，Visual Studio 會等候直到已傳遞 VSPackage 提供的服務的所有要求。 它不允許這些服務的新要求。 您應該明確地呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IProfferService.RevokeService%2A>卸載時，撤銷服務的方法。
+> 即將卸載 VSPackage 時，Visual Studio 會等候直到已傳遞 VSPackage 提供的服務的所有要求。 它不允許這些服務的新要求。 您應該明確地呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IProfferService.RevokeService%2A>卸載時，撤銷服務的方法。
 
 ## <a name="implement-a-service"></a>實作服務
 
@@ -76,7 +76,7 @@ VSPackage 可以提供其他的 Vspackage 可以使用的服務。 若要提供�
 
 ### <a name="register-a-service"></a>註冊服務
 
-1.  若要註冊的服務，將新增<xref:Microsoft.VisualStudio.Shell.ProvideServiceAttribute>來提供服務的 VSPackage。 請看以下範例：
+1. 若要註冊的服務，將新增<xref:Microsoft.VisualStudio.Shell.ProvideServiceAttribute>來提供服務的 VSPackage。 請看以下範例：
 
     ```csharp
     [ProvideService(typeof(SMyService))]
@@ -89,11 +89,11 @@ VSPackage 可以提供其他的 Vspackage 可以使用的服務。 若要提供�
      這個屬性會註冊`SMyService`使用 Visual Studio。
 
     > [!NOTE]
-    >  若要註冊以相同的名稱取代另一個服務的服務，使用<xref:Microsoft.VisualStudio.Shell.ProvideServiceOverrideAttribute>。 請注意在允許的服務只有一個覆寫。
+    > 若要註冊以相同的名稱取代另一個服務的服務，使用<xref:Microsoft.VisualStudio.Shell.ProvideServiceOverrideAttribute>。 請注意在允許的服務只有一個覆寫。
 
 ### <a name="add-a-service"></a>新增服務
 
-1.  VSPackage 初始設定式中新增服務以及建立服務的回呼方法。 以下是要對變更<xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A>方法：
+1. VSPackage 初始設定式中新增服務以及建立服務的回呼方法。 以下是要對變更<xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A>方法：
 
     ```csharp
     protected override void Initialize()
@@ -105,7 +105,7 @@ VSPackage 可以提供其他的 Vspackage 可以使用的服務。 若要提供�
     }
     ```
 
-2.  實作回呼方法，應該建立並傳回服務，或如果無法建立，則為 null。
+2. 實作回呼方法，應該建立並傳回服務，或如果無法建立，則為 null。
 
     ```csharp
     private object CreateService(IServiceContainer container, Type serviceType)
@@ -117,9 +117,9 @@ VSPackage 可以提供其他的 Vspackage 可以使用的服務。 若要提供�
     ```
 
     > [!NOTE]
-    >  Visual Studio 可以拒絕的要求提供服務。 如果另一個 VSPackage 已提供服務，它可以這麼做。
+    > Visual Studio 可以拒絕的要求提供服務。 如果另一個 VSPackage 已提供服務，它可以這麼做。
 
-3.  現在您可以取得服務，並使用它的方法。 下列範例示範使用初始設定式中的服務，但您可以取得任何地方您要使用服務的服務。
+3. 現在您可以取得服務，並使用它的方法。 下列範例示範使用初始設定式中的服務，但您可以取得任何地方您要使用服務的服務。
 
     ```csharp
     protected override void Initialize()

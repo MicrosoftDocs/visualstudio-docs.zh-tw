@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9575effa2740620c585e1dddc64bb67a1d919d2f
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 1bcada6718501594e0dc33880aa0fbbd8c575631
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55939667"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65457174"
 ---
 # <a name="keyboard-shortcuts-and-modifier-keys-in-blend"></a>Blend 中的鍵盤快速鍵和輔助按鍵
 
@@ -31,14 +31,14 @@ ms.locfileid: "55939667"
 
    ![範例快速鍵](../designers/media/f147fc85-9fc5-4e8a-8039-bead80a3e595.png)
 
-如需協助工具和功能的詳細資訊，請參閱 [Accessibility at Microsoft](http://go.microsoft.com/fwlink/?LinkId=75069) (Microsoft 協助工具)。
+如需協助工具和功能的詳細資訊，請參閱 [Accessibility at Microsoft](https://www.microsoft.com/accessibility/) (Microsoft 協助工具)。
 
 ## <a name="modifier-keys"></a>輔助按鍵
 
 某些鍵盤快速鍵沒有相關的功能表項目，這代表您不能使用 [!INCLUDE[blend_subs](../debugger/includes/blend_subs_md.md)] 使用者介面來找出它們。 下列主題列出可修改工具行為或修改動作 (如調整物件大小) 的快速鍵：
 
--   [畫板輔助按鍵](../designers/artboard-modifier-keys-in-blend.md)
+- [畫板輔助按鍵](../designers/artboard-modifier-keys-in-blend.md)
 
--   [畫筆工具輔助按鍵](../designers/pen-tool-modifier-keys-in-blend.md)
+- [畫筆工具輔助按鍵](../designers/pen-tool-modifier-keys-in-blend.md)
 
--   [直接選取工具輔助按鍵](../designers/direct-selection-tool-modifier-keys-in-blend.md)
+- [直接選取工具輔助按鍵](../designers/direct-selection-tool-modifier-keys-in-blend.md)

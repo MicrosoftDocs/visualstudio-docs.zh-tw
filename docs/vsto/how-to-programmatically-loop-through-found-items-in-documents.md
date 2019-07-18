@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bcd549a6b7939e27460e9c9362e71f2bb333b079
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 22f8035cc7c1b09e7fd54f3c10842237ee6273b9
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56628672"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62812406"
 ---
 # <a name="how-to-programmatically-loop-through-found-items-in-documents"></a>HOW TO：以程式設計方式在文件中找到項目執行迴圈
   <xref:Microsoft.Office.Interop.Word.Find>類別具有<xref:Microsoft.Office.Interop.Word.Find.Found%2A>屬性，會傳回 **，則為 true**每當找到搜尋的項目。 您可以使用 <xref:Microsoft.Office.Interop.Word.Range> 方法在 <xref:Microsoft.Office.Interop.Word.Find.Execute%2A> 中找到的所有執行個體間執行迴圈。
@@ -56,7 +56,7 @@ ms.locfileid: "56628672"
 
 ### <a name="to-loop-through-items-in-a-document-level-customization"></a>在文件層級自訂的項目間執行迴圈
 
-1.  下列範例顯示文件層級自訂的完整程式碼。 若要使用此程式碼，請從專案的 `ThisDocument` 類別中執行它。
+1. 下列範例顯示文件層級自訂的完整程式碼。 若要使用此程式碼，請從專案的 `ThisDocument` 類別中執行它。
 
      [!code-vb[Trin_VstcoreWordAutomation#78](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#78)]
      [!code-csharp[Trin_VstcoreWordAutomation#78](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#78)]
@@ -65,7 +65,7 @@ ms.locfileid: "56628672"
 
 ### <a name="to-loop-through-items-in-a-vsto-add-in"></a>若要在 VSTO 增益集中的項目執行迴圈
 
-1.  下列範例顯示 VSTO 增益集的完整程式碼。 若要使用此程式碼，請從專案的 `ThisAddIn` 類別中執行它。
+1. 下列範例顯示 VSTO 增益集的完整程式碼。 若要使用此程式碼，請從專案的 `ThisAddIn` 類別中執行它。
 
      [!code-vb[Trin_VstcoreWordAutomationAddIn#78](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#78)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#78](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#78)]

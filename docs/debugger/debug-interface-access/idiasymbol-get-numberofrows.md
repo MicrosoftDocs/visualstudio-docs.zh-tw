@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c9d87445592db3cc566744151ea207bbb64c4906
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56622055"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "62836067"
 ---
 # <a name="idiasymbolgetnumberofrows"></a>IDiaSymbol::get_numberOfRows
 擷取在矩陣中的資料列數目。
@@ -35,5 +35,5 @@ HRESULT get_numberOfRows(
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPort2::GetPortName
 ms.assetid: 4478b3d5-aa30-4105-8d05-e3bae2f8917a
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 412e1565c62a623e20c250b6d0937cd8ff58d67f
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: a2b058466608597656641a013a4dea0c1bc5716f
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56704419"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66343755"
 ---
 # <a name="idebugport2getportname"></a>IDebugPort2::GetPortName
 取得的連接埠名稱。
@@ -36,10 +39,9 @@ int GetPortName( 
 );
 ```
 
-#### <a name="parameters"></a>參數
- `pbstrName`
-
- [out]傳回的連接埠的名稱。
+## <a name="parameters"></a>參數
+`pbstrName`\
+[out]傳回的連接埠的名稱。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

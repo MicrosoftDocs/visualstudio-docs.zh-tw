@@ -1,6 +1,6 @@
 ---
 title: 建立資料驅動的單元測試
-ms.date: 11/04/2016
+ms.date: 05/08/2019
 ms.topic: conceptual
 f1_keywords:
 - vs.test.testresults.unittest.datadriven
@@ -14,42 +14,42 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: dc5c4b68b5713ba8831d840decea7f2ea25704f4
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 5960c84e2cb389580f2d7b0f476da2a456e62585
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55931438"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745861"
 ---
-# <a name="how-to-create-a-data-driven-unit-test"></a>HOW TO：建立資料驅動的單元測試
+# <a name="how-to-create-a-data-driven-unit-test"></a>作法：建立資料驅動的單元測試
 
-使用適用於 Managed 程式碼的 Microsoft 單元測試架構，您就可以設定單元測試方法，從資料來源擷取用於測試方法中的值。 這個方法會針對資料來源中每個資料列依序執行，讓您輕鬆地用單一方法來測試各種輸入。
+使用適用於受控碼的 Microsoft 單元測試架構，設定單元測試方法來從資料來源擷取值。 這個方法會針對資料來源中每個資料列依序執行，讓您輕鬆地用單一方法來測試各種輸入。
 
 建立資料驅動型單元測試包含下列步驟︰
 
-1.  建立資料來源，其中包含您在測試方法中使用的值。 資料來源可以是已註冊在執行測試之電腦上的任何類型。
+1. 建立資料來源，其中包含您在測試方法中使用的值。 資料來源可以是已註冊在執行測試之電腦上的任何類型。
 
-2.  將私用 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext> 欄位和公用 `TestContext` 屬性新增至測試類別。
+2. 將私用 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext> 欄位和公用 `TestContext` 屬性新增至測試類別。
 
-3.  建立單元測試方法，並在其中新增 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute> 屬性。
+3. 建立單元測試方法，並在其中新增 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute> 屬性。
 
-4.  使用 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.DataRow%2A> 索引子屬性，以擷取您在測試中使用的值。
+4. 使用 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.DataRow%2A> 索引子屬性，以擷取您在測試中使用的值。
 
 ## <a name="the-method-under-test"></a>受測方法
 
 例如，假設我們具有：
 
-1.  名為 `MyBank` 的方案，可接受並處理不同帳戶類型的交易。
+1. 名為 `MyBank` 的方案，可接受並處理不同帳戶類型的交易。
 
-2.  在 `MyBank` 中名為 `BankDb` 的專案，負責管理帳戶的交易。
+2. 在 `MyBank` 中名為 `BankDb` 的專案，負責管理帳戶的交易。
 
-3.  `DbBank` 專案中名為 `Maths` 的類別，可執行數學函式以確保所有交易都是對銀行有利的。
+3. `BankDb` 專案中名為 `Maths` 的類別，可執行數學函式以確保所有交易都是對銀行有利的。
 
-4.  名為 `BankDbTests` 的單元測試專案，用來測試 `BankDb` 元件的行為。
+4. 名為 `BankDbTests` 的單元測試專案，用來測試 `BankDb` 元件的行為。
 
-5.  名為 `MathsTests` 的單元測試類別，用來驗證 `Maths` 類別的行為。
+5. 名為 `MathsTests` 的單元測試類別，用來驗證 `Maths` 類別的行為。
 
-我們要測試 `Maths` 中的一個方法，它會使用迴圈加入兩個整數：
+我們將會測試 `Maths` 中的一個方法，該方法會使用迴圈新增兩個整數：
 
 ```csharp
 public int AddIntegers(int first, int second)
@@ -88,6 +88,9 @@ public TestContext TestContext
 
 在測試方法中，您可以透過 `TestContext` 的 `DataRow` 索引子屬性來存取資料。
 
+> [!NOTE]
+> .NET Core 不支援 [DataSource](xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute) 屬性。 若您嘗試在 .NET Core 或 UWP 單元測試專案中透過此方式存取測試資料，您將會看到與以下內容相似的錯誤： **"'TestContext' 沒有包含 'DataRow' 的定義，也找不到接受型別為 'TextContext' 第一個引數的可存取擴充方法 (您是否遺漏使用指示詞或組件參考？)"** 。
+
 ## <a name="write-the-test-method"></a>撰寫測試方法
 
 `AddIntegers` 的測試方法相當簡單。 針對資料來源中的每個資料列，請使用 **FirstNumber** 和 **SecondNumber** 資料行值作為參數呼叫 `AddIntegers`，並針對 **Sum** 資料行值驗證傳回值：
@@ -110,7 +113,7 @@ public void AddIntegers_FromDataSourceTest()
 }
 ```
 
-`Assert` 方法包含顯示失敗之反覆項目的 `x`和 `y` 值。 根據預設，判斷提示的值 `expected` 和 `actual` 已經包含在失敗測試的詳細資料中。
+`Assert` 方法包含顯示失敗之反覆項目的 `x`和 `y` 值。 根據預設，判斷提示的值 (`expected` 和 `actual`) 都已包含在失敗的測試詳細資料中。
 
 ### <a name="specify-the-datasourceattribute"></a>指定 DataSourceAttribute
 
@@ -157,16 +160,16 @@ int x = Convert.ToInt32(TestContext.DataRow["FirstNumber"]);
 
 ## <a name="run-the-test-and-view-results"></a>執行測試並檢視結果
 
-當您完成撰寫測試方法後，就可建置測試專案。 測試方法會顯示於 [測試總管] 中的 [未執行的測試] 群組。 當您執行、撰寫及重新執行測試時，[測試總管] 會將結果顯示在 [失敗的測試]、[通過的測試] 和 [未執行的測試] 等群組中。 您可以選擇 [全部執行]  以執行所有測試，或選擇 [執行]  以選擇要執行的一小組測試。
+當您完成撰寫測試方法後，就可建置測試專案。 測試方法會顯示於 [測試總管]  中的 [未執行的測試]  群組。 當您執行、撰寫及重新執行測試時，[測試總管]  會將結果顯示在 [失敗的測試]  、[通過的測試]  和 [未執行的測試]  等群組中。 您可以選擇 [全部執行]  以執行所有測試，或選擇 [執行]  以選擇要執行的一小組測試。
 
-[測試總管] 頂端的測試結果列會隨您的測試回合產生動畫效果。 在測試回合結束時，如果所有的測試都通過，狀態列會變成綠色，如果有任何測試失敗則變成紅色。 測試回合摘要會顯示在 [測試總管] 視窗底部的詳細資料窗格中。 在底部窗格中選取某個測試以檢視該測試的詳細資料。
+[測試總管]  頂端的測試結果列會隨您的測試回合產生動畫效果。 在測試回合結束時，如果所有的測試都通過，狀態列會變成綠色，如果有任何測試失敗則變成紅色。 測試回合摘要會顯示在 [測試總管]  視窗底部的詳細資料窗格中。 在底部窗格中選取某個測試以檢視該測試的詳細資料。
 
 > [!NOTE]
 > 每個資料的資料列都會有結果，也會有一個摘要結果。 如果資料的每個資料列都測試通過，執行的摘要會顯示為**通過**。 如果有任何資料列測試失敗，執行的摘要會顯示為**失敗**。
 
-如果您執行我們範例中的 `AddIntegers_FromDataSourceTest` 方法，結果列會變成紅色，而測試方法會移至 [失敗的測試]。 如果來自資料來源的任何反覆執行方法失敗，資料驅動的測試將會失敗。 當您在 [測試總管] 視窗中選擇失敗的資料驅動型測試時，詳細資料窗格會顯示每個反覆項目的結果，各反覆項目是以資料列索引識別。 在本範例中，它會顯示 `AddIntegers` 演算法並未正確處理負數值。
+如果您執行我們範例中的 `AddIntegers_FromDataSourceTest` 方法，結果列會變成紅色，而測試方法會移至 [失敗的測試]  。 如果來自資料來源的任何反覆執行方法失敗，資料驅動的測試將會失敗。 當您在 [測試總管]  視窗中選擇失敗的資料驅動型測試時，詳細資料窗格會顯示每個反覆項目的結果，各反覆項目是以資料列索引識別。 在本範例中，它會顯示 `AddIntegers` 演算法並未正確處理負數值。
 
-當受測方法已修正並重新執行測試時，結果列會變成綠色，且測試方法會移動到 [通過的測試] 群組。
+當受測方法已修正並重新執行測試時，結果列會變成綠色，且測試方法會移動到 [通過的測試]  群組。
 
 ## <a name="see-also"></a>另請參閱
 
@@ -176,4 +179,4 @@ int x = Convert.ToInt32(TestContext.DataRow["FirstNumber"]);
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert?displayProperty=fullName>
 - [對程式碼進行單元測試](../test/unit-test-your-code.md)
 - [使用測試總管執行單元測試](../test/run-unit-tests-with-test-explorer.md)
-- [使用適用於受控程式碼的 Microsoft 單元測試架構撰寫適用於 .NET Framework 的單元測試](../test/unit-test-your-code.md)
+- [使用 Microsoft 單元測試架構撰寫適用於 .NET 的單元測試](../test/unit-test-your-code.md)

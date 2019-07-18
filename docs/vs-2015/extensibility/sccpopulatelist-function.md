@@ -1,14 +1,9 @@
 ---
 title: SccPopulateList 函式 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - SccPopulateList
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 7416e781-c571-4a7f-8af3-a089ce8be662
 caps.latest.revision: 14
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: fccf5ba354a99eaef6968c5d5027e8540762af75
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 5efdddc448dc8e04ee963eaa1b342a93666d9b62
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51798894"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446787"
 ---
 # <a name="sccpopulatelist-function"></a>SccPopulateList 函式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -66,7 +61,7 @@ SCCRTN SccPopulateList (
  lpStatus  
  [in、 out]原始檔控制外掛程式傳回每個檔案的狀態旗標的陣列。  
   
- Stored  
+ fOptions  
  [in]命令旗標 (請參閱 「 PopulateList 旗標 」 一節[特定的命令所使用的位元旗標](../extensibility/bitflags-used-by-specific-commands.md)如需詳細資訊)。  
   
 ## <a name="return-value"></a>傳回值  
@@ -86,7 +81,7 @@ SCCRTN SccPopulateList (
  若要呼叫的外掛程式會繼續`pfnPopulate`函式，可新增和刪除檔案，直到它已完成，並接著會傳回從`SccPopulateList`函式。 然後，IDE 可以顯示其清單。 `lpStatus`陣列都表示原始 IDE 所傳入的清單中的所有檔案。 在所有這些檔案除了使狀態中外掛程式的填滿使用的回呼函式。  
   
 > [!NOTE]
->  原始檔控制外掛程式一律可以選擇只會立即傳回從此函式，因為它是保留的清單。 如果外掛程式實作此函式，可能表示這藉由設定`SCC_CAP_POPULATELIST`中的第一個呼叫的功能位元旗標[SccInitialize](../extensibility/sccinitialize-function.md)。 根據預設，外掛程式應該永遠假設傳入的所有項目是檔案。 不過，如果設定 IDE`SCC_PL_DIR`加上旗標在`fOptions`參數，傳入的所有項目都視為目錄。 外掛程式應該在目錄中新增所屬的所有檔案。 IDE 永遠不會將傳入檔案和目錄的混合。  
+> 原始檔控制外掛程式一律可以選擇只會立即傳回從此函式，因為它是保留的清單。 如果外掛程式實作此函式，可能表示這藉由設定`SCC_CAP_POPULATELIST`中的第一個呼叫的功能位元旗標[SccInitialize](../extensibility/sccinitialize-function.md)。 根據預設，外掛程式應該永遠假設傳入的所有項目是檔案。 不過，如果設定 IDE`SCC_PL_DIR`加上旗標在`fOptions`參數，傳入的所有項目都視為目錄。 外掛程式應該在目錄中新增所屬的所有檔案。 IDE 永遠不會將傳入檔案和目錄的混合。  
   
 ## <a name="see-also"></a>另請參閱  
  [原始檔控制外掛程式 API 函式](../extensibility/source-control-plug-in-api-functions.md)   
@@ -94,4 +89,3 @@ SCCRTN SccPopulateList (
  [POPLISTFUNC](../extensibility/poplistfunc.md)   
  [特定命令所使用的位元旗標](../extensibility/bitflags-used-by-specific-commands.md)   
  [命令碼](../extensibility/command-code-enumerator.md)
-

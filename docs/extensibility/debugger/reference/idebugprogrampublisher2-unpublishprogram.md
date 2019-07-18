@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgramPublisher2::UnpublishProgram
 ms.assetid: 627e7d38-b2ac-4873-9a40-37ff7f47cd1d
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0f633b7cd41a9e19179ba5daf22fdd66e9749ad5
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 0bc394623731679a1172e85a499b1567e15042e5
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56698647"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66343246"
 ---
 # <a name="idebugprogrampublisher2unpublishprogram"></a>IDebugProgramPublisher2::UnpublishProgram
 可讓無法用來進行偵錯的程式。
@@ -36,10 +39,9 @@ int UnpublishProgram(
 );
 ```
 
-#### <a name="parameters"></a>參數
- `pDebuggeeInterface`
-
- [in]`IUnknown`程式的介面。 這是相同的值提供給[PublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md)方法和唯一識別要移除的程式 （也就是它會使用以 cookie）。
+## <a name="parameters"></a>參數
+`pDebuggeeInterface`\
+[in]`IUnknown`程式的介面。 這是相同的值提供給[PublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md)方法和唯一識別要移除的程式 （也就是它會使用以 cookie）。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

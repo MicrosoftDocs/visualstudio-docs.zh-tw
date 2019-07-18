@@ -6,17 +6,20 @@ helpviewer_keywords:
 - GetArrayTypeFromAddress
 - IDebugComPlusSymbolProvider::GetArrayTypeFromAddress
 ms.assetid: cc0c53f1-8c0f-49fa-8dbe-bc155e9ce0ef
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d5d6e06a30d6c76cc36bf7a7d64f97016bc60803
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: dff0080dbdbe0c312f82ce66a3556ed50f9220a6
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56712732"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66338683"
 ---
 # <a name="idebugcomplussymbolprovidergetarraytypefromaddress"></a>IDebugComPlusSymbolProvider::GetArrayTypeFromAddress
 擷取的型別指定的陣列，指定其偵錯位址的相關資訊。
@@ -41,22 +44,18 @@ int GetArrayTypeFromAddress(
 );
 ```
 
-#### <a name="parameters"></a>參數
-`pAddress`
+## <a name="parameters"></a>參數
+`pAddress`\
+[in]所表示的偵錯位址[IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)介面。
 
- [in]所表示的偵錯位址[IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)介面。
+`pSig`\
+[in]要檢查的陣列。
 
-`pSig`
+`dwSigLength`\
+[in]以位元組為單位的長度`pSig`陣列。
 
- [in]要檢查的陣列。
-
-`dwSigLength`
-
- [in]以位元組為單位的長度`pSig`陣列。
-
-`ppField`
-
- [out]傳回由陣列型別[IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)介面。
+`ppField`\
+[out]傳回由陣列型別[IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)介面。
 
 ## <a name="return-value"></a>傳回值
 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

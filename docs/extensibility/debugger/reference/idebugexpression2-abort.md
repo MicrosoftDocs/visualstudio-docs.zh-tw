@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugExpression2::Abort
 ms.assetid: 4fcb712e-1bdb-4b75-a440-35cc79ee147e
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 490c131820cbe16b8e18be649ad5439c024ad3c9
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: c85a746ab4c916a0aae81b40dd3539264c5572f6
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56677884"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66326029"
 ---
 # <a name="idebugexpression2abort"></a>IDebugExpression2::Abort
 這個方法會取消非同步運算式評估為已啟動，藉由呼叫[EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md)方法。

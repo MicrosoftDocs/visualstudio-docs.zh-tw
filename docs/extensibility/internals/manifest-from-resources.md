@@ -3,17 +3,17 @@ title: 從 資源資訊清單 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 0234109b-5dcb-4d9d-acb9-a63f8bd5699c
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d35f8486ae85f0933d30b9587f2fc59652071a85
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 917397003d0e14bc9b5ff707926adf5f04f73baa
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56626722"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66328625"
 ---
 # <a name="manifest-from-resources"></a>來自資源的資訊清單
 從 [資源] 工具的資訊清單是根據影像資源 （.png 或.xaml 檔案） 的清單，並產生.imagemanifest 檔案，讓這些映像來搭配 Visual Studio 映像服務的主控台應用程式。 此外，此工具可用來將影像新增至現有的.imagemanifest。 這項工具可用於新增高 DPI 和佈景主題的 Visual Studio 延伸模組的映像的支援。 產生的.imagemanifest 檔案應包含在和 Visual Studio 擴充功能 (.vsix) 的一部分部署。
@@ -43,25 +43,25 @@ ms.locfileid: "56626722"
 
  **範例**
 
--   ManifestFromResources /resources:D:\Images                       /assembly:My.Assembly.Name                       /isNative
+- ManifestFromResources /resources:D:\Images                       /assembly:My.Assembly.Name                       /isNative
 
--   ManifestFromResources /resources:D:\Images\Image1.png;D:\Images\Image1.xaml                       /assembly:My.Assembly.Name                       /manifest:MyImageManifest.imagemanifest
+- ManifestFromResources /resources:D:\Images\Image1.png;D:\Images\Image1.xaml                       /assembly:My.Assembly.Name                       /manifest:MyImageManifest.imagemanifest
 
--   ManifestFromResources /resources:D:\Images\Image1.png;D:\Images\Image1.xaml /assembly:My.Assembly.Name /guidName:MyImages /newGuids /newIds
+- ManifestFromResources /resources:D:\Images\Image1.png;D:\Images\Image1.xaml /assembly:My.Assembly.Name /guidName:MyImages /newGuids /newIds
 
 ## <a name="notes"></a>注意
 
--   此工具僅支援.png 和.xaml 檔案。 將會忽略任何其他映像或檔案類型。 所有不受支援的類型，剖析的資源時，會產生警告。 如果不支援映像會找到此工具完成時剖析的資源，將會產生錯誤
+- 此工具僅支援.png 和.xaml 檔案。 將會忽略任何其他映像或檔案類型。 所有不受支援的類型，剖析的資源時，會產生警告。 如果不支援映像會找到此工具完成時剖析的資源，將會產生錯誤
 
--   藉由遵循建議的格式為.png 影像，此工具將會設定.png 大小/維度值的格式指定的大小，即使其不同於映像的實際大小。
+- 藉由遵循建議的格式為.png 影像，此工具將會設定.png 大小/維度值的格式指定的大小，即使其不同於映像的實際大小。
 
--   .Png 映像，則可以省略的寬度/高度的格式，但此工具會讀取映像的實際寬度/高度，並使用這些映像的大小/維度值。
+- .Png 映像，則可以省略的寬度/高度的格式，但此工具會讀取映像的實際寬度/高度，並使用這些映像的大小/維度值。
 
--   針對相同.imagemanifest 多次相同的影像區域上執行此工具將會導致重複的資訊清單項目，因為此工具會嘗試將影像區域分割成獨立映像，並將它們新增至現有的資訊清單。
+- 針對相同.imagemanifest 多次相同的影像區域上執行此工具將會導致重複的資訊清單項目，因為此工具會嘗試將影像區域分割成獨立映像，並將它們新增至現有的資訊清單。
 
--   合併 （省略 /newGuids 或 /newIds），才應該執行工具所產生資訊清單。 自訂或透過其他方式所產生的資訊清單可能不正確地合併。
+- 合併 （省略 /newGuids 或 /newIds），才應該執行工具所產生資訊清單。 自訂或透過其他方式所產生的資訊清單可能不正確地合併。
 
--   針對原生組件所產生資訊清單可能需要透過手動編輯產生進行比對的資源識別碼，從原生組件的.rc 檔的 ID 符號之後。
+- 針對原生組件所產生資訊清單可能需要透過手動編輯產生進行比對的資源識別碼，從原生組件的.rc 檔的 ID 符號之後。
 
 ## <a name="sample-output"></a>範例輸出
  **簡單的映像資訊清單**

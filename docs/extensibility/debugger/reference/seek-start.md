@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - SEEK_START enumeration
 ms.assetid: 55bd8901-626e-428b-a263-23b14417f4c6
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e003b74faeb7c6ed165c43380a7c4c6b0520ea0c
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: de4aa0214ab97c330ddfb689076a2c378c4d227a
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56677991"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66329301"
 ---
 # <a name="seekstart"></a>SEEK_START
 指定要啟動的反組譯碼資料流中搜尋的位置。
@@ -45,16 +48,21 @@ public enum enum_SEEK_START { 
 };
 ```
 
-## <a name="members"></a>成員
- SEEK_START_BEGIN 開始搜尋目前文件的開頭。
+## <a name="fields"></a>欄位
+ `SEEK_START_BEGIN`\
+ 搜尋目前文件的開頭開始。
 
- SEEK_START_END 開始搜尋目前文件的結尾。
+ `SEEK_START_END`\
+ 啟動搜尋目前文件的結尾。
 
- SEEK_START_CURRENT 開始搜尋目前文件目前的位置。
+ `SEEK_START_CURRENT`\
+ 啟動搜尋目前文件目前的位置。
 
- SEEK_START_CODECONTEXT 開始搜尋在目前文件指定的程式碼內容。
+ `SEEK_START_CODECONTEXT`\
+ 開始搜尋在目前文件指定的程式碼內容。
 
- SEEK_START_CODELOCID 開始搜尋在指定的程式碼位置識別碼。 透過呼叫所取得的程式碼位置識別項[GetCurrentLocation](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcurrentlocation.md)。
+ `SEEK_START_CODELOCID`\
+ 開始搜尋在指定的程式碼位置識別碼。 透過呼叫所取得的程式碼位置識別項[GetCurrentLocation](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcurrentlocation.md)。
 
 ## <a name="remarks"></a>備註
  作為引數[搜尋](../../../extensibility/debugger/reference/idebugdisassemblystream2-seek.md)方法。

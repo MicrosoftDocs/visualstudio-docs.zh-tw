@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3133c3f37a7ce899575e4e6b0798ce8037b33929
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55954176"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62951247"
 ---
 # <a name="working-with-the-dsl-definition-diagram"></a>使用 DSL 定義圖表
 圖表[!INCLUDE[dsl](../modeling/includes/dsl_md.md)]定義是定義特定領域語言的重要工具。 您可以將項目加入至網域模型，並定義圖表上的關聯性；也可以修改圖表配置，讓圖表更容易讀取。
@@ -64,7 +64,7 @@ ms.locfileid: "55954176"
 ### <a name="bring-tree-here"></a>Bring Tree Here
  您可以合併圖表，以滑鼠右鍵按一下預留位置網域類別，然後按一下**此處將樹狀結構**。 預留位置網域類別會成為定義項目，並顯示繼承和關聯性樹狀結構。 如果先前的定義項目是關聯性目標或繼承關聯性中的子項，該項目會成為預留位置項目；否則該項目不會出現。
 
-### <a name="split-tree"></a>Split Tree
+### <a name="split-tree"></a>分割樹狀結構
  您可以中斷 out 繼承或關聯性樹狀結構顯示網域類別定義上按一下滑鼠右鍵，然後按一下**分割樹狀結構**。 定義項目會成為預留位置項目，而定義網域類別現在會與其繼承和關聯性樹狀結構一起顯示在分割區底部。
 
 ### <a name="show-as-class"></a>Show As Class
@@ -72,4 +72,4 @@ ms.locfileid: "55954176"
 
 ## <a name="see-also"></a>另請參閱
 
-- [特定領域語言工具字彙](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [Domain-Specific Language Tools Glossary](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa) (特定領域語言工具字彙表)

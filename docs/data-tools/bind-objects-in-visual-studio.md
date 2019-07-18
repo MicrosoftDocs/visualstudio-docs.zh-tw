@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: f35aaf5b36da2bf40420bd4461f7d2fa880575e4
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.openlocfilehash: 4fb5a8c7a54871c7d948a458768c5551dbb5d550
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55937496"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62824360"
 ---
 # <a name="bind-objects-as-data-sources-in-visual-studio"></a>將物件繫結做為 Visual Studio 中的資料來源
 
@@ -40,25 +40,25 @@ Visual Studio 會提供設計階段工具，為您的應用程式中的資料來
 
 雖然有無數的方式來實作您的應用程式邏輯，做為資料來源處理物件時，sql，資料庫有會是可簡化使用 Visual Studio 產生的 TableAdapter 物件的一些標準作業。 此頁面說明如何實作這些標準的程序，使用 Tableadapter。 它不是做為指南建立您的自訂物件。 例如，您通常會執行下列標準作業，不論特定實作的物件或應用程式的邏輯：
 
--   將資料載入物件 （通常是從資料庫中）。
+- 將資料載入物件 （通常是從資料庫中）。
 
--   建立物件的類型的集合。
+- 建立物件的類型的集合。
 
--   將物件新增至，並移除集合中的物件。
+- 將物件新增至，並移除集合中的物件。
 
--   使用者在表單上顯示的物件資料。
+- 使用者在表單上顯示的物件資料。
 
--   變更/編輯資料物件中。
+- 變更/編輯資料物件中。
 
--   將資料從物件儲存回資料庫。
+- 將資料從物件儲存回資料庫。
 
 ### <a name="load-data-into-objects"></a>將資料載入物件
 
 例如，您將資料載入您的物件使用 Tableadapter。 根據預設，Tableadapter 會建立具有兩種方法，從資料庫擷取資料並填入資料的資料表。
 
--   `TableAdapter.Fill`方法傳回的資料填入現有的資料表。
+- `TableAdapter.Fill`方法傳回的資料填入現有的資料表。
 
--   `TableAdapter.GetData`方法會傳回新的資料資料表填入資料。
+- `TableAdapter.GetData`方法會傳回新的資料資料表填入資料。
 
 載入您的自訂物件的資料最簡單方式是呼叫`TableAdapter.GetData`方法，傳回的資料表中的資料列集合執行迴圈，並將填入每個物件中每個資料列的值。 您可以建立`GetData`傳回填入的資料的資料表加入至 TableAdapter 的任何查詢的方法。
 

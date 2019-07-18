@@ -1,14 +1,9 @@
 ---
-title: CA1065： 不要引發例外狀況中的非預期的位置 |Microsoft Docs
-ms.custom: ''
+title: CA1065:不會引發非預期的位置中的例外狀況 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1065
 - DoNotRaiseExceptionsInUnexpectedLocations
@@ -20,14 +15,14 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 142322360d4ba1ffed6ef893bf02254548ee2705
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6c5a393c32d7f7182fc3226689e24d20a4cae1ac
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49887587"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68200395"
 ---
-# <a name="ca1065-do-not-raise-exceptions-in-unexpected-locations"></a>CA1065：不要在非預期的位置中引發例外狀況
+# <a name="ca1065-do-not-raise-exceptions-in-unexpected-locations"></a>CA1065:不要在非預期的位置中引發例外狀況
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -70,24 +65,24 @@ ms.locfileid: "49887587"
 
  允許從屬性的 get 方法會擲回下列例外狀況：
 
--   <xref:System.InvalidOperationException?displayProperty=fullName> 所有的衍生項目 (包括<xref:System.ObjectDisposedException?displayProperty=fullName>)
+- <xref:System.InvalidOperationException?displayProperty=fullName> 所有的衍生項目 (包括<xref:System.ObjectDisposedException?displayProperty=fullName>)
 
--   <xref:System.NotSupportedException?displayProperty=fullName> 所有的衍生項目
+- <xref:System.NotSupportedException?displayProperty=fullName> 所有的衍生項目
 
--   <xref:System.ArgumentException?displayProperty=fullName> （只能從索引的 get)
+- <xref:System.ArgumentException?displayProperty=fullName> （只能從索引的 get)
 
--   <xref:System.Collections.Generic.KeyNotFoundException> （只能從索引的 get)
+- <xref:System.Collections.Generic.KeyNotFoundException> （只能從索引的 get)
 
 ### <a name="event-accessor-methods"></a>事件存取子方法
  事件存取子都應該是簡單的作業不會擲回例外狀況。 當您嘗試新增或移除事件處理常式時，事件不應該擲回例外狀況。
 
  允許事件存取從擲回下列例外狀況：
 
--   <xref:System.InvalidOperationException?displayProperty=fullName> 所有的衍生項目 (包括<xref:System.ObjectDisposedException?displayProperty=fullName>)
+- <xref:System.InvalidOperationException?displayProperty=fullName> 所有的衍生項目 (包括<xref:System.ObjectDisposedException?displayProperty=fullName>)
 
--   <xref:System.NotSupportedException?displayProperty=fullName> 所有的衍生項目
+- <xref:System.NotSupportedException?displayProperty=fullName> 所有的衍生項目
 
--   <xref:System.ArgumentException> 衍生項目
+- <xref:System.ArgumentException> 衍生項目
 
 ### <a name="equals-methods"></a>Equals 方法
  下列**等於**方法不應該擲回例外狀況：
@@ -138,10 +133,7 @@ ms.locfileid: "49887587"
  它可安全地隱藏此規則的警告，如果違規所造成的例外狀況宣告，而不是擲回的例外狀況。
 
 ## <a name="related-rules"></a>相關的規則
- [CA2219：不要在 exception 子句中引發例外狀況](../code-quality/ca2219-do-not-raise-exceptions-in-exception-clauses.md)
+ [CA2219:不會引發在 exception 子句中的例外狀況](../code-quality/ca2219-do-not-raise-exceptions-in-exception-clauses.md)
 
 ## <a name="see-also"></a>另請參閱
  [設計警告](../code-quality/design-warnings.md)
-
-
-

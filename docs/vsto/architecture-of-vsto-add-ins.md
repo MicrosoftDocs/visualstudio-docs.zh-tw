@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 04f4fff68720b456ac8ac2b8e121d9194019060c
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 401ce9b8421cd636fc72c59dcd6641ff4e05d968
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56633105"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440341"
 ---
 # <a name="architecture-of-vsto-add-ins"></a>VSTO 增益集的架構
   使用 Visual Studio 中 Office Developer Tools 建立的 VSTO 增益集具有同時強調穩定性和安全性的架構功能，這些功能可讓其與 Microsoft Office 密切合作。 本主題描述 VSTO 增益集的下列層面：
@@ -36,7 +36,7 @@ ms.locfileid: "56633105"
 
   如需建立 VSTO 增益集的一般資訊，請參閱 < [Office 方案開發概觀&#40;VSTO&#41; ](../vsto/office-solutions-development-overview-vsto.md)並[開始著手程式設計 VSTO 增益集](../vsto/getting-started-programming-vsto-add-ins.md)。
 
-##  <a name="UnderstandingAddIns"></a> 了解 VSTO 增益集
+## <a name="UnderstandingAddIns"></a> 了解 VSTO 增益集
  當您在 Visual Studio 中使用的 Office developer tools 建置 VSTO 增益集時，您會建立 Microsoft Office 應用程式所載入的 managed 程式碼組件。 載入此組件之後，VSTO 該增益集就能回應應用程式所引發的事件 (例如，當使用者按一下功能表項目時)。 VSTO 增益集還可呼叫物件模型以自動化並擴充應用程式，而且它可以使用 [!INCLUDE[dnprdnshort](../sharepoint/includes/dnprdnshort-md.md)]中的任何類別。
 
  組件會透過應用程式的主要 Interop 組件與應用程式的 COM 元件進行通訊。 如需詳細資訊，請參閱 < [Office 主要 interop 組件](../vsto/office-primary-interop-assemblies.md)並[Office 方案開發概觀&#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)。
@@ -44,9 +44,9 @@ ms.locfileid: "56633105"
  如果針對應用程式安裝多個 VSTO 增益集，則每一個 VSTO 增益集會在不同的應用程式定義域中載入。 這表示如果某個 VSTO 增益集運作失常，並不會導致其他 VSTO 增益集失敗。 此外，這樣有助於確保應用程式關閉後，所有 VSTO 增益集組件都會從記憶體中卸載。 如需有關應用程式定義域的詳細資訊，請參閱 <<c0> [ 應用程式定義域](/dotnet/framework/app-domains/application-domains)。
 
 > [!NOTE]
->  您使用 Visual Studio 中的 Office Developer Tools 建立的 VSTO 增益集，是設計為只在使用者啟動 Microsoft Office 主應用程式時使用。 如果是以程式設計的方式啟動應用程式 (例如，使用 Automation)，則該 VSTO 增益集可能無法如預期般運作。
+> 您使用 Visual Studio 中的 Office Developer Tools 建立的 VSTO 增益集，是設計為只在使用者啟動 Microsoft Office 主應用程式時使用。 如果是以程式設計的方式啟動應用程式 (例如，使用 Automation)，則該 VSTO 增益集可能無法如預期般運作。
 
-##  <a name="AddinComponents"></a> VSTO 增益集的元件
+## <a name="AddinComponents"></a> VSTO 增益集的元件
  雖然 VSTO 增益集組件為主要元件，但還有其他數個元件在 Microsoft Office 應用程式探索和載入 VSTO 增益集的方式中扮演重要角色。
 
 ### <a name="registry-entries"></a>登錄項目
@@ -64,32 +64,32 @@ ms.locfileid: "56633105"
 
  如需詳細資訊，請參閱 < [Visual Studio Tools for Office runtime 概觀](../vsto/visual-studio-tools-for-office-runtime-overview.md)。
 
-##  <a name="HowAddinsWork"></a> 與 Microsoft Office 應用程式的 VSTO 增益集運作方式
+## <a name="HowAddinsWork"></a> 與 Microsoft Office 應用程式的 VSTO 增益集運作方式
  當使用者啟動 Microsoft Office 應用程式時，該應用程式會使用部署資訊清單和應用程式資訊清單來尋找並載入最新版的 VSTO 增益集組件。 下圖顯示這些 VSTO 增益集的基本架構。
 
  ![2007 office 增益集架構](../vsto/media/office07addin.png "2007 Office 增益集架構")
 
 > [!NOTE]
->  在以 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 或 [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]為目標的 Office 方案中，方案會使用內嵌於方案組件中的 PIA 類型資訊來呼叫主應用程式的物件模型，而不是直接呼叫 PIA。 如需詳細資訊，請參閱 <<c0> [ 設計和建立 Office 方案](../vsto/designing-and-creating-office-solutions.md)。
+> 在以 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 或 [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]為目標的 Office 方案中，方案會使用內嵌於方案組件中的 PIA 類型資訊來呼叫主應用程式的物件模型，而不是直接呼叫 PIA。 如需詳細資訊，請參閱 <<c0> [ 設計和建立 Office 方案](../vsto/designing-and-creating-office-solutions.md)。
 
 ### <a name="loading-process"></a>載入程序
  當使用者啟動應用程式，就會執行下列步驟：
 
-1.  應用程式會檢查可識別使用 Visual Studio 中的 Office Developer Tools 所建立之 VSTO 增益集的登錄項目。
+1. 應用程式會檢查可識別使用 Visual Studio 中的 Office Developer Tools 所建立之 VSTO 增益集的登錄項目。
 
-2.  如果應用程式找到這些登錄項目，則會載入 VSTOEE.dll，而 VSTOEE.dll 會載入 VSTOLoader.dll。 這些都是 Visual Studio 2010 Tools for Office Runtime 載入器元件的 Unmanaged DLL。 如需詳細資訊，請參閱 < [Visual Studio Tools for Office runtime 概觀](../vsto/visual-studio-tools-for-office-runtime-overview.md)。
+2. 如果應用程式找到這些登錄項目，則會載入 VSTOEE.dll，而 VSTOEE.dll 會載入 VSTOLoader.dll。 這些都是 Visual Studio 2010 Tools for Office Runtime 載入器元件的 Unmanaged DLL。 如需詳細資訊，請參閱 < [Visual Studio Tools for Office runtime 概觀](../vsto/visual-studio-tools-for-office-runtime-overview.md)。
 
-3.  *VSTOLoader.dll*載入[!INCLUDE[dnprdnshort](../sharepoint/includes/dnprdnshort-md.md)]並啟動的 managed 的部分[!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]。
+3. *VSTOLoader.dll*載入[!INCLUDE[dnprdnshort](../sharepoint/includes/dnprdnshort-md.md)]並啟動的 managed 的部分[!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]。
 
-4.  [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 會檢查資訊清單更新，然後下載最新的應用程式和部署資訊清單。
+4. [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 會檢查資訊清單更新，然後下載最新的應用程式和部署資訊清單。
 
-5.  [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 會執行一系列的安全性檢查。 如需詳細資訊，請參閱 <<c0> [ 保護的 Office 方案](../vsto/securing-office-solutions.md)。
+5. [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 會執行一系列的安全性檢查。 如需詳細資訊，請參閱 <<c0> [ 保護的 Office 方案](../vsto/securing-office-solutions.md)。
 
-6.  如果 VSTO 增益集受信任而得以執行，則 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 會使用部署資訊清單和應用程式資訊清單來檢查組件更新。 如果有新版的組件可用，執行階段就會將新版的組件下載至用戶端電腦上的 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] 快取。 如需詳細資訊，請參閱 <<c0> [ 部署 Office 方案](../vsto/deploying-an-office-solution.md)。
+6. 如果 VSTO 增益集受信任而得以執行，則 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 會使用部署資訊清單和應用程式資訊清單來檢查組件更新。 如果有新版的組件可用，執行階段就會將新版的組件下載至用戶端電腦上的 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] 快取。 如需詳細資訊，請參閱 <<c0> [ 部署 Office 方案](../vsto/deploying-an-office-solution.md)。
 
-7.  [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 會建立新的應用程式定義域，以便載入 VSTO 增益集組件。
+7. [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 會建立新的應用程式定義域，以便載入 VSTO 增益集組件。
 
-8.  [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 會將 VSTO 增益集組件載入至此應用程式定義域中。
+8. [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 會將 VSTO 增益集組件載入至此應用程式定義域中。
 
 9. 如果您已覆寫 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 方法，則 <xref:Microsoft.Office.Tools.AddInBase.RequestComAddInAutomationService%2A> 會在您的 VSTO 增益集中呼叫此方法。
 
@@ -100,7 +100,7 @@ ms.locfileid: "56633105"
      您可以選擇覆寫這個方法，傳回實作擴充性介面的物件以擴充 Microsoft Office 功能。 如需詳細資訊，請參閱 <<c0> [ 使用擴充性介面自訂 UI 功能](../vsto/customizing-ui-features-by-using-extensibility-interfaces.md)。
 
     > [!NOTE]
-    >  [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 會針對主應用程式支援的每個擴充性介面，個別呼叫 <xref:Microsoft.Office.Tools.AddInBase.RequestService%2A> 方法。 雖然第一次呼叫 <xref:Microsoft.Office.Tools.AddInBase.RequestService%2A> 方法通常發生於呼叫 `ThisAddIn_Startup` 方法之前，但 VSTO 增益集不得假設何時將會呼叫 <xref:Microsoft.Office.Tools.AddInBase.RequestService%2A> 方法，或將會呼叫的次數。
+    > [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 會針對主應用程式支援的每個擴充性介面，個別呼叫 <xref:Microsoft.Office.Tools.AddInBase.RequestService%2A> 方法。 雖然第一次呼叫 <xref:Microsoft.Office.Tools.AddInBase.RequestService%2A> 方法通常發生於呼叫 `ThisAddIn_Startup` 方法之前，但 VSTO 增益集不得假設何時將會呼叫 <xref:Microsoft.Office.Tools.AddInBase.RequestService%2A> 方法，或將會呼叫的次數。
 
 11. [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 會在 VSTO 增益集中呼叫 `ThisAddIn_Startup` 方法。 這個方法是 <xref:Microsoft.Office.Tools.AddInBase.Startup> 事件的預設事件處理常式。 如需詳細資訊，請參閱 < [Office 專案中的事件](../vsto/events-in-office-projects.md)。
 

@@ -12,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: cdead60fbde711ac9b219a6bbcb635e329d51a0a
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 8890bac11a37d64c2ace4ea23b92a6ad20a6cbb0
+ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57983192"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65531697"
 ---
 # <a name="extract-an-interface-refactoring"></a>擷取介面重構
 
@@ -58,13 +58,11 @@ ms.locfileid: "57983192"
 
    ![擷取介面](media/extractinterface-dialog-same-file.png)
 
-
    | 欄位 | 說明 |
    | - | - |
    | **新介面名稱** | 要建立的介面名稱。 名稱會預設為 I*ClassName*，其中 *ClassName* 是您在上方選取的類別名稱。 |
    | **新檔名** | 產生的檔案名稱，該檔案會包含介面。 與介面名稱一樣，此名稱會預設為 I*ClassName*，其中 *ClassName* 是您在上方選取的類別名稱。 您也可以選取 [Add to current file] \(新增至目前的檔案\) 選項。 |
    | **選取公用成員以形成介面** | 要擷取到介面中的項目。 您可以視需要選取所需數量的項目。 |
-
 
 4. 選擇 [確定] 。
 
@@ -73,18 +71,16 @@ ms.locfileid: "57983192"
    - C#: 
 
       ![產生的類別 - C#](media/extractinterface-class-cs.png)
-      
-      
+
       ![產生的介面 - C#](media/extractinterface-interface-cs.png)
 
    - Visual Basic：
 
       ![產生的類別 - Visual Basic](media/extractinterface-class-vb.png)
-      
-      
+
       ![產生的介面 - Visual Basic](media/extractinterface-interface-vb.png)
 
 ## <a name="see-also"></a>另請參閱
 
 - [重構](../refactoring-in-visual-studio.md)
-- [.NET 開發人員的秘訣](../../ide/visual-studio-2017-for-dotnet-developers.md)
+- [.NET 開發人員的秘訣](../csharp-developer-productivity.md)

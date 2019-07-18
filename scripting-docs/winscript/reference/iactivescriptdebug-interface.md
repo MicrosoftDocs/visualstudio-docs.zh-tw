@@ -14,11 +14,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 6341b5c3763d6e4c836b3bdc0539552fcbe7f980
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58151020"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62955025"
 ---
 # <a name="iactivescriptdebug-interface"></a>IActiveScriptDebug 介面
 指令碼引擎來實作該支援偵錯。 一般而言，該物件會實作`IActiveScriptDebug`介面也會實作`IActiveScript`介面。 如果發生這種情況，呼叫`IActiveScript::QueryInterface`方法，以取得`IActiveScriptDebug`介面。  

@@ -26,28 +26,27 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2406a802b0992b0fffe8a41d99ed600a9e1fc2b3
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: f75d2b73946a006057945b1e68f018a358e38279
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54800759"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65674191"
 ---
 # <a name="options-text-editor-c-formatting"></a>格式、C#、文字編輯器、選項
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 使用 [格式] 屬性頁對話方塊，設定程式碼編輯器中的程式碼格式化選項。 若要存取這個對話方塊，請按一下 [工具] 功能表上的 [選項]，並依序展開 [文字編輯器] 和 [C#]，然後按一下 [格式化]。  
   
 > [!NOTE]
->  根據您目前使用的設定或版本，您所看到的對話方塊與功能表命令可能會與 [說明] 中描述的不同。 若要變更設定，請從 [ **工具** ] 功能表中選取 [ **匯入和匯出設定** ]。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
+> 根據您目前使用的設定或版本，您所看到的對話方塊與功能表命令可能會與 [說明] 中描述的不同。 若要變更設定，請從 [ **工具** ] 功能表中選取 [ **匯入和匯出設定** ]。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
   
 ## <a name="general-settings"></a>一般設定  
  一般設定會影響程式碼編輯器將格式化選項套用至程式碼的方式。  
   
 ## <a name="uielement-list"></a>UIElement 清單  
   
-|標籤|描述|  
+|標籤|說明|  
 |-----------|-----------------|  
 |**遇到 ; 字元時自動格式化完成的陳述式**|選取時，系統會在陳述式完成時，根據程式碼編輯器選取的格式化選項來格式化陳述式。 如果您不希望程式碼編輯器修改陳述式，請清除此方塊。|  
 |**遇到 } 字元時自動格式化完成的區塊**|選取時，系統會在您完成程式碼區塊時，根據程式碼編輯器選取的格式化選項來格式化程式碼區塊。 如果您不希望程式碼編輯器修改區塊，請清除此方塊。|  

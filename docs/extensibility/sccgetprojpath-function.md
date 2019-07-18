@@ -7,26 +7,26 @@ f1_keywords:
 helpviewer_keywords:
 - SccGetProjPath function
 ms.assetid: 1079847e-d45f-4cb8-9d92-1e01ce5d08f6
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d3090048482d698c1678a80f2d3066569dcc243f
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: b31a17e89003967aef6a423dda87572b4a07c387
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56721781"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66353672"
 ---
 # <a name="sccgetprojpath-function"></a>SccGetProjPath 函式
 此函數會提示使用者輸入專案路徑，也就是只對原始檔控制外掛程式有意義的字串。 使用者時，它會呼叫：
 
--   建立新的專案
+- 建立新的專案
 
--   將現有專案加入至版本控制
+- 將現有專案加入至版本控制
 
--   嘗試尋找現有的版本控制專案
+- 嘗試尋找現有的版本控制專案
 
 ## <a name="syntax"></a>語法
 
@@ -105,13 +105,13 @@ SCCRTN SccGetProjPath (
  針對`lpUser`、 IDE 可能會傳入使用者名稱，或它可能只需傳入指標設為空字串。 如果沒有使用者名稱，則原始檔控制外掛程式應該使用它做為預設值。 不過，如果沒有名稱傳遞，或具有指定名稱的登入失敗，外掛程式應該會提示使用者輸入登入和傳遞回名稱`lpUser`當它收到有效的登入。 因為外掛程式可能會變更此字串，IDE 一律會配置大小的緩衝區 (`SCC_USER_LEN`+ 1)。
 
 > [!NOTE]
->  IDE 會執行的第一個動作可能會呼叫`SccOpenProject`函式或`SccGetProjPath`函式。 因此，這兩者有相同`lpUser`參數，可讓原始檔控制外掛程式，以將使用者登入兩次。 即使從函式傳回指出失敗，外掛程式必須填妥此使用有效的登入名稱的字串。
+> IDE 會執行的第一個動作可能會呼叫`SccOpenProject`函式或`SccGetProjPath`函式。 因此，這兩者有相同`lpUser`參數，可讓原始檔控制外掛程式，以將使用者登入兩次。 即使從函式傳回指出失敗，外掛程式必須填妥此使用有效的登入名稱的字串。
 
  `lpLocalPath` 是，使用者會將專案的目錄。 它可能是空字串。 如果沒有目前定義的 （若為嘗試從原始檔控制系統下載之專案的使用者） 的目錄，而且如果`bAllowChangePath`是`TRUE`，原始檔控制外掛程式可以提示使用者輸入，或使用其他方法，將其擁有字串`lpLocalPath`。 如果`bAllowChangePath`是`FALSE`，外掛程式不應該變更字串，因為使用者已使用指定的目錄中。
 
  如果使用者建立新的專案，將原始檔控制下，原始檔控制外掛程式可能無法實際建立它在原始檔控制系統中時`SccGetProjPath`呼叫。 相反地，它會傳遞回非零的值給字串`pbNew`，指出將會在原始檔控制系統中建立專案。
 
- 例如，如果中的使用者**新的專案**Visual Studio 中的精靈會將他或她的專案加入至原始檔控制、 Visual Studio 會呼叫此函式，和外掛程式判斷它是否可以在 原始檔控制系統，以建立新的專案包含 Visual Studio 專案。 如果使用者按一下**取消**之前完成精靈，永遠不會建立專案。 如果使用者按一下 **[確定]**，Visual Studio 會呼叫`SccOpenProject`，並傳入`SCC_OPT_CREATEIFNEW`，並在該時間建立原始檔控制專案。
+ 例如，如果中的使用者**新的專案**Visual Studio 中的精靈會將他或她的專案加入至原始檔控制、 Visual Studio 會呼叫此函式，和外掛程式判斷它是否可以在 原始檔控制系統，以建立新的專案包含 Visual Studio 專案。 如果使用者按一下**取消**之前完成精靈，永遠不會建立專案。 如果使用者按一下 **[確定]** ，Visual Studio 會呼叫`SccOpenProject`，並傳入`SCC_OPT_CREATEIFNEW`，並在該時間建立原始檔控制專案。
 
 ## <a name="see-also"></a>另請參閱
 - [原始檔控制外掛程式 API 函式](../extensibility/source-control-plug-in-api-functions.md)

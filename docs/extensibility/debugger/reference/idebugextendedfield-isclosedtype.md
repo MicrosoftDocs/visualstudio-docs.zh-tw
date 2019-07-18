@@ -6,17 +6,20 @@ helpviewer_keywords:
 - IsClosedType
 - IDebugExtendedField::IsClosedType
 ms.assetid: 9136fc57-74ff-4fe4-a6e2-b137cb9d5b08
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9056a3543de27b26bc32eec5840248c337ea11fa
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 0ea8e501d338de24a49b04a61b46652c062a027a
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56678328"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66352692"
 ---
 # <a name="idebugextendedfieldisclosedtype"></a>IDebugExtendedField::IsClosedType
 決定是否表示封閉式的型別欄位。

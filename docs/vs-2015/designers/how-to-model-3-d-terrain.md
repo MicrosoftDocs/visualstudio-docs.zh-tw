@@ -9,12 +9,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7935176505e535c35b1c864e56cd314a75e7897c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 90a24ef7b5bff321d460834a8fdde24e3e6cfd75
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54764112"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434445"
 ---
 # <a name="how-to-model-3-d-terrain"></a>HOW TO：模型的 3d 地形模型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,15 +23,15 @@ ms.locfileid: "54764112"
   
  本文件示範下列活動︰  
   
--   將物件加入場景  
+- 將物件加入場景  
   
--   選取表面和點  
+- 選取表面和點  
   
--   轉譯選取項目  
+- 轉譯選取項目  
   
--   使用 [細分表面] 工具  
+- 使用 [細分表面] 工具  
   
--   框架處理設計介面中的物件  
+- 框架處理設計介面中的物件  
   
 ## <a name="creating-a-3-d-terrain-model"></a>建立 3D 地形模型  
  您可以細分平面建立額外的表面，然後操控其頂點以建立想要的地形特徵來建立 3D 地形。  
@@ -49,7 +49,7 @@ ms.locfileid: "54764112"
 2. 將平面加入場景。 在 [工具箱] 的 [形狀] 下，選取 [平面]，並將其移至設計介面。  
   
    > [!TIP]
-   >  您可以在設計介面中框架處理平面物件，使其更容易使用。 在 [選取] 模式中，選取平面物件，然後在 [模型編輯器] 工具列上，選擇 [框架物件] 按鈕。  
+   > 您可以在設計介面中框架處理平面物件，使其更容易使用。 在 [選取] 模式中，選取平面物件，然後在 [模型編輯器] 工具列上，選擇 [框架物件] 按鈕。  
   
 3. 進入表面選取模式。 在 [模型編輯器] 工具列上，選擇 [選取表面]。  
   
@@ -62,13 +62,13 @@ ms.locfileid: "54764112"
 7. 修改點以建立地形特徵。 在點選取模式，選取其中一點，然後在 [模型編輯器] 工具列上，選擇 [平移] 工具。 設計介面上隨即出現代表該點的方塊。 您可以使用綠色箭頭來移動方塊，並藉此修改點的高度。 對不同點重複此步驟，來建立想要的地形特徵。  
   
    > [!TIP]
-   >  您可以一次選取數個點來統一修改。  
+   > 您可以一次選取數個點來統一修改。  
   
    完成地形模型。 以下顯示套用 Phong 網底的最終模型︰  
   
    ![顯示地形模型的 3D 場景](../designers/media/digit-terrain-model.png "Digit-Terrain-Model")  
   
-   您可以使用此地形模型來展現漸層著色器的效果，如[如何：建立以幾何為基礎的漸層著色器](../designers/how-to-create-a-geometry-based-gradient-shader.md)中所述。  
+   您可以使用此地形模型來展現漸層著色器的效果，如[如何：建立以幾何為基礎的漸層著色器](../designers/how-to-create-a-geometry-based-gradient-shader.md)。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [模型編輯器](../designers/model-editor.md)

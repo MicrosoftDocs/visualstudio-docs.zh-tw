@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEvent2::GetAttributes
 ms.assetid: 2ac5b5fb-da17-43f7-811a-313f677e60d7
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 140b47af958e8f4623dd5921aa6046926737cf38
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 3f85cccb01a31232cccc39e44fae7accbfa4f954
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56677678"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66327592"
 ---
 # <a name="idebugevent2getattributes"></a>IDebugEvent2::GetAttributes
 取得這個偵錯事件的屬性。
@@ -36,10 +39,9 @@ int GetAttribute( 
 );
 ```
 
-#### <a name="parameters"></a>參數
- `pdwAttrib`
-
- [out]從旗標的組合[EVENTATTRIBUTES](../../../extensibility/debugger/reference/eventattributes.md)列舉型別。
+## <a name="parameters"></a>參數
+`pdwAttrib`\
+[out]從旗標的組合[EVENTATTRIBUTES](../../../extensibility/debugger/reference/eventattributes.md)列舉型別。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

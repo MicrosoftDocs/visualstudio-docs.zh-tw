@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugReference2::GetMemoryContext
 ms.assetid: 47fc3827-07a0-4eee-b7f4-fc1c62e6b25c
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fd4494b21d4b5b3aa3f73cbabed771f2fac7280c
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: f4178b14ca128fb7b0e5511f18fd2c9a5fdb3661
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56705316"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66329838"
 ---
 # <a name="idebugreference2getmemorycontext"></a>IDebugReference2::GetMemoryContext
 取得參考的記憶體內容。 保留供未來使用。
@@ -36,10 +39,9 @@ int GetMemoryContext ( 
 );
 ```
 
-#### <a name="parameters"></a>參數
- `ppMemory`
-
- [out]傳回[IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)物件，表示參考的值相關聯的記憶體。
+## <a name="parameters"></a>參數
+`ppMemory`\
+[out]傳回[IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)物件，表示參考的值相關聯的記憶體。
 
 ## <a name="return-value"></a>傳回值
  一律傳回 `E_NOTIMPL`。

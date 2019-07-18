@@ -11,12 +11,12 @@ caps.latest.revision: 3
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 824d60ef0f17012524f9d0150a90ccd9efcfb3a9
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: b87971e1fd2e484aa54ff4de56ee56e00b19b1e6
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58150955"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62991201"
 ---
 # <a name="iactivescripttraceinfostartscripttracing-method"></a>IActiveScriptTraceInfo::StartScriptTracing 方法
 啟動指令碼追蹤。  
@@ -37,8 +37,8 @@ HRESULT StartScriptTracing(     [in] IActiveScriptSiteTraceInfo * pSiteTraceInfo
 ## <a name="return-value"></a>傳回值  
  可能的傳回值，這個方法，如下所示：  
   
-1.  S_OK:成功。  
+1. S_OK:成功。  
   
-2.  E_POINTER:`pSiteTraceInfo`為 NULL 指標。  
+2. E_POINTER:`pSiteTraceInfo`為 NULL 指標。  
   
-3.  E_NOTIMPL:未實作。
+3. E_NOTIMPL:未實作。

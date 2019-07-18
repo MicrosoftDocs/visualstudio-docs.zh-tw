@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugManagedObject::GetManagedObject method
 ms.assetid: 6abe1402-6aad-41e6-8ec1-ae12d5945992
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a6df3a4f69c62e7681eade705186c802a225f060
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 75e0367aaddb28e2af2703904fd77b4e4f9f6322
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56720767"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66349402"
 ---
 # <a name="idebugmanagedobjectgetmanagedobject"></a>IDebugManagedObject::GetManagedObject
 傳回代表受管理的物件的介面。
@@ -36,10 +39,9 @@ int GetManagedObject(
 );
 ```
 
-#### <a name="parameters"></a>參數
- `ppManagedObject`
-
- [out]傳回代表受管理的物件的介面。
+## <a name="parameters"></a>參數
+`ppManagedObject`\
+[out]傳回代表受管理的物件的介面。
 
 ## <a name="return-value"></a>傳回值
  如果成功，會傳回 S_OK;否則，傳回錯誤碼。

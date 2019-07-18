@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugCoreServer3::GetServerFriendlyName
 ms.assetid: 7035b904-b3d7-4d9b-98d9-65714b8a8b9f
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0dec32c47354f43cee33077985c122c92aaebc6f
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: ba0675038a495a91755794d7e43ad57cfc7d438a
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56718114"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66326945"
 ---
 # <a name="idebugcoreserver3getserverfriendlyname"></a>IDebugCoreServer3::GetServerFriendlyName
 擷取伺服器的易記名稱。
@@ -36,13 +39,12 @@ int GetServerFriendlyName(
 );
 ```
 
-#### <a name="parameters"></a>參數
- `pbstrName`
-
- [out]傳回伺服器的易記名稱。
+## <a name="parameters"></a>參數
+`pbstrName`\
+[out]傳回伺服器的易記名稱。
 
 > [!NOTE]
->  呼叫端負責釋放字串。
+> 呼叫端負責釋放字串。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`，否則會傳回錯誤碼。

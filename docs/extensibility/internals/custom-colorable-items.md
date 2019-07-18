@@ -6,17 +6,17 @@ helpviewer_keywords:
 - colorable items
 - language services, custom colorable items
 ms.assetid: b4d0ddee-c04b-48dc-ba82-f6068570cef0
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 95ebf093b8ed761f39cc3cac290a99708b7f417f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: fd1d18a6fe142a3b405742dd9e74c1376e713687
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56641529"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66312908"
 ---
 # <a name="custom-colorable-items"></a>自訂色彩的項目
 您可以覆寫型別的清單標示色彩，例如關鍵字和註解，以及在您的語言服務中實作自訂色彩的項目。
@@ -28,11 +28,11 @@ ms.locfileid: "56641529"
  因為 IDE 會處理的可設定色彩的項目中的使用者覆寫**字型和色彩**對話方塊，您需要只提供每個自訂色彩項目的名稱。 這個名稱是在顯示的內容**顯示的項目**清單。 可設定色彩的項目會依字母順序顯示。 若要將您的語言服務的自訂色彩項目，就可以使用您語言的名稱，每個名稱，例如**NewLanguage-註解**並**NewLanguage-關鍵字**。
 
 > [!CAUTION]
->  您應該避免與現有的色彩項目的名稱發生衝突的色彩項目的名稱包含語言名稱。 如果您變更其中一個您可設定色彩的項目名稱，在開發期間，您必須重設快取建立第一次存取您可設定色彩的項目。 您可以重設實驗性的快取**CreateExpInstance**工具，它會隨 Visual Studio SDK，通常在目錄中：
+> 您應該避免與現有的色彩項目的名稱發生衝突的色彩項目的名稱包含語言名稱。 如果您變更其中一個您可設定色彩的項目名稱，在開發期間，您必須重設快取建立第一次存取您可設定色彩的項目。 您可以重設實驗性的快取**CreateExpInstance**工具，它會隨 Visual Studio SDK，通常在目錄中：
 >
->  *C:\Program Files (x86)\Microsoft Visual Studio 14.0\VSSDK\VisualStudioIntegration\Tools\Bin*
+> *C:\Program Files (x86)\Microsoft Visual Studio 14.0\VSSDK\VisualStudioIntegration\Tools\Bin*
 >
->  若要重設快取，請輸入**CreateExpInstance /Reset**。 如需詳細資訊**CreateExpInstance**，請參閱[CreateExpInstance utility](../../extensibility/internals/createexpinstance-utility.md)。
+> 若要重設快取，請輸入**CreateExpInstance /Reset**。 如需詳細資訊**CreateExpInstance**，請參閱[CreateExpInstance utility](../../extensibility/internals/createexpinstance-utility.md)。
 
  永遠不會參考可設定色彩的項目清單中第一個項目。 第一個項目對應至 0，色彩項目的索引和[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]一律會提供預設文字色彩和該項目的屬性。 此未參考的項目處理的最簡單的方式是提供為第一個項目清單中的預留位置色彩項目。
 

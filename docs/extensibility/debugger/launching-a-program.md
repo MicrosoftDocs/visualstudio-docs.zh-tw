@@ -6,17 +6,17 @@ helpviewer_keywords:
 - debug engines, launching
 - programs, launching
 ms.assetid: 6857e9c6-e44a-468a-afa4-f7c4a0b77844
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 46d35961e1db1acf11d544b7523a264470340de0
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: d9488c002e78828471374b954550843e16ff0e6b
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56710873"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66344079"
 ---
 # <a name="launch-a-program"></a>啟動程式
 想要偵錯程式的使用者可以按下**F5**從 IDE 執行偵錯工具。 這樣就會開始一系列的最終會導致 IDE 連接到偵錯引擎 (DE)，依序連接，或附加，給程式，如下所示的事件：
@@ -30,12 +30,12 @@ ms.locfileid: "56710873"
     如果未指定規定，連接埠就會呼叫啟動程式，這會導致載入程式的執行階段環境的作業系統。
 
    > [!NOTE]
-   >  如果使用規定來啟動程式，很可能相同 DE，會附加至程式。
+   > 如果使用規定來啟動程式，很可能相同 DE，會附加至程式。
 
 3. 根據是否 DE 或連接埠啟動程式，DE 或執行階段環境建立計劃的描述或節點，然後通知程式正在執行中的連接埠。
 
    > [!NOTE]
-   >  建議的執行階段環境，建立程式 節點中，因為程式的節點是可偵錯之程式的輕量型表示法。 就不需要載入整個 DE 就來建立及註冊程式 節點。 如果是 DE 執行 IDE，但沒有 IDE 的過程中實際執行，需要有一個元件，可以將程式節點加入至連接埠。
+   > 建議的執行階段環境，建立程式 節點中，因為程式的節點是可偵錯之程式的輕量型表示法。 就不需要載入整個 DE 就來建立及註冊程式 節點。 如果是 DE 執行 IDE，但沒有 IDE 的過程中實際執行，需要有一個元件，可以將程式節點加入至連接埠。
 
    新建立的程式，以及任何其他程式相關或不相關、 啟動或附加至相同的 IDE 中，從撰寫偵錯工作階段。
 

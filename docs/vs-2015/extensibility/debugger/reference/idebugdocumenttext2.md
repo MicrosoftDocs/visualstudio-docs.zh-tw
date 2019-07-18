@@ -1,14 +1,9 @@
 ---
 title: IDebugDocumentText2 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugDocumentText2
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: e85f50a3-211c-4220-a9f4-789950ba2782
 caps.latest.revision: 13
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 85b5d9e78af9e4e49b3a985ca00ffad102e6b53d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 2e81aaccd3af692f4a7e0f708685dbea4a44d5c6
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51728843"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68200164"
 ---
 # <a name="idebugdocumenttext2"></a>IDebugDocumentText2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -55,11 +50,10 @@ IDebugDocumentText2 : IDebugDocument2
 ## <a name="requirements"></a>需求  
  標頭： msdbg.h  
   
- 命名空間： Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間：Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)   
  [IDebugDocumentTextEvents2](../../../extensibility/debugger/reference/idebugdocumenttextevents2.md)
-

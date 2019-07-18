@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: bb1502c875c04955578686113d8ad491311e800d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56632559"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62554127"
 ---
 # <a name="idiaenuminjectedsourcesclone"></a>IDiaEnumInjectedSources::Clone
 建立列舉值，包含目前的列舉值相同的列舉型別狀態。
@@ -38,5 +38,5 @@ HRESULT Clone ( 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md)

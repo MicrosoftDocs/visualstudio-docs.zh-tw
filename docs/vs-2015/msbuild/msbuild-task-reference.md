@@ -16,17 +16,16 @@ caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5bd6df873bf1aadbec4b12763369c60f127819c0
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
-ms.translationtype: MTE95
+ms.openlocfilehash: 19fe581985ec173099790311517c0442a9c29c2f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54834419"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68154112"
 ---
 # <a name="msbuild-task-reference"></a>MSBuild 工作參考
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 提供在建置流程期間執行之程式碼的工作。 下列清單的工作包含於 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 中。 若已安裝 [!INCLUDE[vcprvc](../includes/vcprvc-md.md)]，將提供可用來建置 [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] 專案的其他工作。 如需詳細資訊，請參閱 [Visual C++ 工作](../msbuild/msbuild-tasks-specific-to-visual-cpp.md)。  
   
  除了本節中主題所列的參數之外，每個工作也會有下列參數：  
@@ -224,9 +223,9 @@ ms.locfileid: "54834419"
  將 XPath 查詢所指定的值設定至 XML 檔案。  
   
  [XslTransformation 工作](../msbuild/xsltransformation-task.md)  
- 使用「可延伸樣式表語言轉換」(XSLT) 或編譯的 XSLT 轉換 XML 輸入，並輸出到輸出裝置或檔案。  
+ 使用「可延伸樣式表語言轉換」  (XSLT) 或編譯的 XSLT 轉換 XML 輸入，並輸出到輸出裝置或檔案。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [MSBuild 參考](../msbuild/msbuild-reference.md)   
  [工作撰寫](../msbuild/task-writing.md)   
  [工作](../msbuild/msbuild-tasks.md)

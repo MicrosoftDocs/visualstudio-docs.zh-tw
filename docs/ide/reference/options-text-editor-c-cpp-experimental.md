@@ -11,12 +11,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ee70d3cf580caaea4207f1d830ef1500f18942ff
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 088359aeabc45966aed927693ecbab75751eca2a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57221391"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62817919"
 ---
 # <a name="options-text-editor-cc-experimental"></a>選項、文字編輯器、C/C++、實驗
 
@@ -28,7 +28,7 @@ ms.locfileid: "57221391"
 
 ::: moniker-end
 
-若要存取本屬性頁面，請按 **Control** + **Q** 啟動 `Quick Launch`，然後鍵入 "experimental"。 鍵入前幾個字母之後，快速啟動就會找到頁面。 您也可以選擇 [工具] > [選項]，並依序展開 [文字編輯器] 和 [C/C++]，然後選擇 [實驗性]，即可到達頁面。
+若要存取本屬性頁面，請按 **Control**+**Q** 以啟動搜尋方塊，然後鍵入 **experimental**。 鍵入前幾個字母之後，搜尋就會找到頁面。 您也可以選擇 [工具] > [選項]，並依序展開 [文字編輯器] 和 [C/C++]，然後選擇 [實驗性]，即可到達頁面。
 
 這些功能可在 Visual Studio 安裝中使用。
 
@@ -37,7 +37,7 @@ ms.locfileid: "57221391"
 
 ## <a name="enable-predictive-intellisense"></a>啟用預測性 IntelliSense
 
-預測性 IntelliSense 會限制顯示在 IntelliSense 下拉式清單中的結果數，讓您只看到內容相關的結果。 例如，如果您鍵入 <code>int x =</code> 並叫用 IntelliSense 下拉式清單，則只會看到整數或傳回整數的函式。 根據預設，會關閉預測性 IntelliSense。
+預測性 IntelliSense 會限制顯示在 IntelliSense 下拉式清單中的結果數，讓您只看到內容相關的結果。 例如，如果您鍵入 `int x =` 並叫用 IntelliSense 下拉式清單，則只會看到整數或傳回整數的函式。 根據預設，會關閉預測性 IntelliSense。
 
 ::: moniker range="vs-2017"
 

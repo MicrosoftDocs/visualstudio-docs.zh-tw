@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 36e5e8f59474a9a2fcbfef7a1c6b3d75febe3086
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 62f2d98777f1fe87b67bdb28e6302f29f752f27f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56708767"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62953292"
 ---
 # <a name="personalize-the-visual-studio-ide"></a>將 Visual Studio IDE 個人化
 
@@ -31,20 +31,20 @@ ms.locfileid: "56708767"
 
 - 在功能表列上，選擇 [工具] > [選項]，如果尚未展開，請展開 [環境] 節點。
 
-- 在 [快速啟動] 方塊中鍵入 `environment`，然後從結果清單選擇 [環境] --> [一般]。
+- 按 **Ctrl**+**Q**，在搜尋方塊中輸入 **environment**，然後從清單中選擇 [環境] --> [一般]。
 
-   > [!TIP]
-   > 當對話方塊出現時，您可以在該頁面上按 **F1**，以取得各種不同設定的說明。
+> [!TIP]
+> 當 [選項] 對話方塊出現時，您可以在該頁面上按 **F1**，以取得各種不同設定的說明。
 
 ## <a name="environment-color-themes"></a>環境色彩佈景主題
 
-若要在亮色、暗色及藍色的色彩佈景主題之間變更，請在 [快速啟動] 方塊中鍵入 `environment`，然後選擇 [環境] --> [一般]。 在 [選項] 對話方塊中，變更 [色彩佈景主題] 選項。
+若要在亮色、暗色及藍色的色彩佈景主題之間變更，請在搜尋方塊中輸入 **environment**，然後選擇 [環境] --> [一般]。 在 [選項] 對話方塊中，變更 [色彩佈景主題] 選項。
 
-若要變更編輯器中的顏色標示選項，請在 [快速啟動] 方塊中鍵入 `environment`，然後選擇 [環境] --> [字型和色彩]。 請參閱[如何：變更字型與色彩](../ide/how-to-change-fonts-and-colors-in-visual-studio.md)。
+若要變更編輯器中的顏色標示選項，請在搜尋方塊中輸入 **environment**，然後選擇 [環境] --> [字型和色彩]。 請參閱[如何：變更字型與色彩](../ide/how-to-change-fonts-and-colors-in-visual-studio.md)。
 
 ### <a name="main-menu-casing"></a>主功能表大小寫
 
-您可以變更主功能表的下列兩種大小寫設定：[字首大寫] ("File") 與 [全部大寫] ("FILE")。 在 [快速啟動] 方塊中鍵入 `environment`，選取 [環境] --> [一般]，然後變更 [將標題大寫樣式套用至功能表列] 選項。
+您可以變更主功能表的下列兩種大小寫設定：[字首大寫] ("File") 與 [全部大寫] ("FILE")。 在搜尋方塊中輸入 **environment**，選擇 [環境] --> [一般]，然後變更 [將標題大寫樣式套用至功能表列] 選項。
 
 ### <a name="customize-menus-and-toolbars"></a>自訂功能表與工具列
 

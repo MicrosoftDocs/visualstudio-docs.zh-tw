@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPortEvents2 interface
 ms.assetid: 2c017094-3ba2-4067-83f9-147df1d96bce
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fb6a13b47013153de284ad1997a484efb3be1c98
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 5690108aaeede2cf15cc5fac927a3dc5ab3855ab
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56712459"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66326735"
 ---
 # <a name="idebugportevents2"></a>IDebugPortEvents2
 這個介面會通知程序和程式的建立和解構的特定連接埠上接聽的程式 （通常是工作階段偵錯管理員 [SDM] 或偵錯引擎）。 這項資訊可用來呈現的程序和連接埠上執行程式的即時檢視。

@@ -1,27 +1,22 @@
 ---
 title: 處理序搜尋對話方塊 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Process Search
 ms.assetid: 518e8153-eec2-4db9-a6f7-416ec11d8e09
 caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 844906e9342ae295063788a8d0d4b638c893294d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: eae6321cdc8d94b1f1344f36a1332aa0eee0bdb6
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51748516"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68198124"
 ---
 # <a name="process-search-dialog-box"></a>處理序搜尋對話方塊
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,6 +52,3 @@ ms.locfileid: "51748516"
   
  [Spy++ 參考](../debugger/spy-increment-reference.md)  
  包含描述每個 Spy + + 功能表和對話方塊方塊中的區段。
-
-
-

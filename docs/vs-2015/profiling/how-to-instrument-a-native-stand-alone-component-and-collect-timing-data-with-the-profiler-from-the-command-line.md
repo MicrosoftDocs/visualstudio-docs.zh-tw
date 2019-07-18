@@ -1,5 +1,5 @@
 ---
-title: 如何：從命令列使用分析工具以檢測原生獨立元件並收集計時資料 | Microsoft Docs
+title: HOW TO：從命令列使用分析工具以檢測原生獨立元件並收集計時資料 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -9,20 +9,20 @@ caps.latest.revision: 30
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 13245f28ac758685c95acdc11bbe92489724f5e4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 39773bbf821a4b7cec416ff726bf84cbb46935f9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54757104"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432662"
 ---
-# <a name="how-to-instrument-a-native-stand-alone-component-and-collect-timing-data-with-the-profiler-from-the-command-line"></a>如何：從命令列使用程式碼剖析工具以檢測原生獨立元件並收集計時資料
+# <a name="how-to-instrument-a-native-stand-alone-component-and-collect-timing-data-with-the-profiler-from-the-command-line"></a>HOW TO：檢測的原生獨立元件並收集計時資料，以從命令列 Profiler
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 本主題描述如何使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 分析工具命令列工具來檢測原生元件，例如 C++ .exe 或 .dll 檔案，並收集詳細的計時資料。  
 
 > [!NOTE]
->  程式碼剖析工具的命令列工具位於 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 安裝目錄的 \Team Tools\Performance Tools 子目錄中。 在 64 位元電腦上，64 位元和 32 位元版本的工具都可以使用。 若要使用程式碼剖析工具命令列工具，必須將工具路徑加入至命令提示字元視窗的 PATH 環境變數，或將它加入至命令本身。 如需詳細資訊，請參閱[指定命令列工具的路徑](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)。  
+> 程式碼剖析工具的命令列工具位於 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 安裝目錄的 \Team Tools\Performance Tools 子目錄中。 在 64 位元電腦上，64 位元和 32 位元版本的工具都可以使用。 若要使用程式碼剖析工具命令列工具，必須將工具路徑加入至命令提示字元視窗的 PATH 環境變數，或將它加入至命令本身。 如需詳細資訊，請參閱[指定命令列工具的路徑](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)。  
 
  若要使用檢測方法從元件收集詳細的計時資料，您可使用 [VSInstr.exe](../profiling/vsinstr.md) 工具產生已檢測的元件版本。 然後啟動分析工具。 執行已檢測的元件時，計時資料會自動收集到資料檔案。 程式碼剖析工作階段期間，您可以暫停和繼續資料收集。  
 
@@ -56,7 +56,6 @@ ms.locfileid: "54757104"
    |         [/automark](../profiling/automark.md) **:** `Interval`          |                                                                                只能搭配 **/wincounter** 使用。 指定 Windows 效能計數器收集事件間隔的毫秒數。 預設值為 500 毫秒。                                                                                |
    |       [/events](../profiling/events-vsperfcmd.md) **:** `Config`        |                                                                                  指定程式碼剖析期間要收集的 Windows 事件追蹤 (ETW) 事件。 ETW 事件會收集至個別的 (.etl) 檔案。                                                                                   |
 
-
 4. 以一般方式啟動目標應用程式。  
 
 ## <a name="controlling-data-collection"></a>控制資料收集  
@@ -64,7 +63,7 @@ ms.locfileid: "54757104"
 
 #### <a name="to-start-and-stop-data-collection"></a>開始和停止資料收集  
 
--   下列成對的選項會開始和停止資料收集。 請在個別的命令列上指定各個選項。 您可以多次開始和停止資料收集。  
+- 下列成對的選項會開始和停止資料收集。 請在個別的命令列上指定各個選項。 您可以多次開始和停止資料收集。  
 
     |選項|描述|  
     |------------|-----------------|  
@@ -77,12 +76,12 @@ ms.locfileid: "54757104"
 
 #### <a name="to-end-a-profiling-session"></a>結束程式碼剖析工作階段  
 
-1.  關閉目標應用程式。  
+1. 關閉目標應用程式。  
 
-2.  關閉分析工具。 類型：  
+2. 關閉分析工具。 類型：  
 
      **VSPerfCmd /shutdown**  
 
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [對獨立應用程式進行程式碼剖析](../profiling/command-line-profiling-of-stand-alone-applications.md)   
  [檢測方法資料檢視](../profiling/instrumentation-method-data-views.md)

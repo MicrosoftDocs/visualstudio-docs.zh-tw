@@ -19,24 +19,23 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1d5d697cecfb30bc52f3386411a32a05718b0662
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 65115be12d00f335272c65083be4a323a604b646
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54783125"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65689357"
 ---
 # <a name="vc-project-settings-projects-and-solutions-options-dialog-box"></a>選項對話方塊、專案和方案、VC++ 專案設定
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 此對話方塊可讓您定義與建置記錄及支援檔案類型相關的 [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] 專案設定。  
   
 ### <a name="to-access-this-dialog-box"></a>若要存取此對話方塊  
   
-1.  在 [ **工具** ] 功能表上按一下 [ **選項**]。  
+1. 在 [ **工具** ] 功能表上按一下 [ **選項**]。  
   
-2.  選取 [專案和方案]，然後選取 [VC++ 專案設定]。  
+2. 選取 [專案和方案]，然後選取 [VC++ 專案設定]。  
   
 ## <a name="build-customization-search-path"></a>建置自訂搜尋路徑  
  指定包含 .rules 檔案的目錄清單，以協助您定義專案的建置規則。  
@@ -79,5 +78,5 @@ ms.locfileid: "54783125"
  將方案總管設定為顯示專案中的檔案，以及專案資料夾中磁碟上的檔案。  
   
 ## <a name="see-also"></a>請參閱  
- [建置 C/C++ 程式](http://msdn.microsoft.com/library/fa6ed4ff-334a-4d99-b5e2-a1f83d2b3008)   
- [C/C++ 建置參考](http://msdn.microsoft.com/library/100b4ccf-572c-4d1f-970c-fa0bc0cc0d2d)
+ [建置 C/C++ 程式](https://msdn.microsoft.com/library/fa6ed4ff-334a-4d99-b5e2-a1f83d2b3008)   
+ [C/C++ 建置參考](https://msdn.microsoft.com/library/100b4ccf-572c-4d1f-970c-fa0bc0cc0d2d)

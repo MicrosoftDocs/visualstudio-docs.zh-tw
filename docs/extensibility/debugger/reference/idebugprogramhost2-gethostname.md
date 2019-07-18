@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgramHost2::GetHostName
 ms.assetid: 48bbb089-e59a-471a-9965-24b42a8dabf3
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 45919c6c9fafceecca2cb53fa9c2c9f43b68e382
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 851905a9ca642f029444a2f6c1adfdfe543fdf70
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56707415"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66351278"
 ---
 # <a name="idebugprogramhost2gethostname"></a>IDebugProgramHost2::GetHostName
 取得標題、 易記名稱或此程式的裝載處理序的檔案名稱。
@@ -38,14 +41,12 @@ int GetHostName( 
 );
 ```
 
-#### <a name="parameters"></a>參數
- `dwType`
+## <a name="parameters"></a>參數
+`dwType`\
+[in]值，以從[GETHOSTNAME_TYPE](../../../extensibility/debugger/reference/gethostname-type.md)列舉型別。
 
- [in]值，以從[GETHOSTNAME_TYPE](../../../extensibility/debugger/reference/gethostname-type.md)列舉型別。
-
- `pbstrHostName`
-
- [out]傳回要求的裝載處理序的名稱。
+`pbstrHostName`\
+[out]傳回要求的裝載處理序的名稱。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

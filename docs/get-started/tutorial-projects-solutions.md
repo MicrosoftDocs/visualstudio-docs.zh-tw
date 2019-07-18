@@ -9,18 +9,28 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 487597c160a294c935f3f7670410e82927a86210
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: 498f52a85f52206bf5c12a2d591ce169eb0775fc
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58194641"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62943735"
 ---
 # <a name="learn-about-projects-and-solutions"></a>了解專案與解決方案
 
 在這篇簡介文章中，我們將探討在 Visual Studio 中建立「解決方案」和「專案」的意義。 解決方案是用來組織一或多個相關程式碼專案的容器，例如類別庫專案和對應的測試專案。 我們會查看專案的屬性以及它可包含的一些檔案。 我們也會建立兩個專案之間的參考。
 
-如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017)頁面免費進行安裝。
+::: moniker range="vs-2017"
+
+如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)頁面免費進行安裝。
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019)頁面免費進行安裝。
+
+::: moniker-end
 
 我們將會從頭建構方案和專案，作為教育練習以了解專案的概念。 在 Visual Studio 的一般使用中，您可能在建立新專案時使用 Visual Studio 所提供的一些各種專案「範本」。
 

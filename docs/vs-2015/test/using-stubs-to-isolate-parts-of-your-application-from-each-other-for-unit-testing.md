@@ -8,12 +8,12 @@ ms.assetid: 73519dd9-f3d5-49b6-a634-38881b459ea4
 caps.latest.revision: 19
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7d0165c0a774ba53e5ce4798cdcd4bc4755d1ebd
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MTE95
+ms.openlocfilehash: 5ed075cbc5bdc49159024a81cfcf1c3afb04cc6a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58145157"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68185702"
 ---
 # <a name="using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing"></a>使用虛設常式隔離應用程式的各個組件，方便進行單元測試
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,11 +32,11 @@ ms.locfileid: "58145157"
   
  **需求**  
   
--   Visual Studio 企業版
+- Visual Studio 企業版
   
-##  <a name="How"></a> 如何使用虛設常式  
+## <a name="How"></a> 如何使用虛設常式  
   
-###  <a name="Dependency"></a> 相依性插入的設計  
+### <a name="Dependency"></a> 相依性插入的設計  
  若要使用虛設常式，必須將應用程式設計為不同元件各自獨立，不會彼此相依，而只相依於介面定義。 元件不會在編譯時期結合，而是在執行階段連接。 這個模式有助於強化軟體，而且易於更新，因為變更散佈範圍通常不會超出元件界限。 即便您不使用虛設常式仍建議您採用這種方式。 如果您在撰寫新程式碼，也可以輕鬆地遵循[相依性插入](http://en.wikipedia.org/wiki/Dependency_injection)模式。 如果您在為現有的軟體撰寫測試，可能必須重新建構。 如果重新建構不實用，您可以考慮使用填充碼。  
   
  接下來開始討論圖表中的激勵範例。 StockAnalyzer 類別會讀取股票價格並產生一些有趣的結果。 我們想要測試其中一些公用方法。 為避免複雜，我們只看其中一個方法，這個方法會報告特定股票的現價，是非常簡單的方法。 我們要撰寫該方法的單元測試。 以下是測試的第一份草稿：  
@@ -144,7 +144,7 @@ analyzer = new StockAnalyzer(new StockFeed())
   
  還有更多彈性的方式可以執行此連接作業。 例如，StockAnalyzer 可以接受能在不同條件下具現化不同 IStockFeed 實作的 Factory 物件。  
   
-###  <a name="GeneratingStubs"></a> 產生虛設常式  
+### <a name="GeneratingStubs"></a> 產生虛設常式  
  您已分離您要測試的類別與它所使用的其他元件。 除了能夠強化應用程式及加強其安全性外，分離作業還能讓您連接待測的元件與介面的虛設常式實作以進行測試。  
   
  您只要按照一般方式撰寫虛設常式類別即可。 但是，Microsoft Fakes 讓您能以更靈活的方式為每個測試建立最適當的虛設常式。  
@@ -153,15 +153,15 @@ analyzer = new StockAnalyzer(new StockFeed())
   
 ##### <a name="adding-a-fakes-assembly"></a>加入 Fakes 組件  
   
-1.  在方案總管中，展開單元測試專案的 [參考]。  
+1. 在方案總管中，展開單元測試專案的 [參考]  。  
   
-    -   如果您在 Visual Basic 中工作，必須先選取方案總管工具列中的 [顯示所有檔案]，才能看見 [參考] 清單。  
+    - 如果您在 Visual Basic 中工作，必須先選取方案總管工具列中的 [顯示所有檔案]  ，才能看見 [參考] 清單。  
   
-2.  選取包含您要用於建立虛設常式之介面定義的組件。  
+2. 選取包含您要用於建立虛設常式之介面定義的組件。  
   
-3.  在捷徑功能表上，選擇 [新增 Fakes 組件]。  
+3. 在捷徑功能表上，選擇 [新增 Fakes 組件]  。  
   
-###  <a name="WriteTest"></a> 撰寫含虛設常式的測試  
+### <a name="WriteTest"></a> 撰寫含虛設常式的測試  
   
 ```csharp  
 [TestClass]  
@@ -223,7 +223,7 @@ End Class
   
  另外也會為屬性、事件及泛型方法的 getter 及 setter 產生虛設常式。  
   
-###  <a name="mocks"></a> 驗證參數值  
+### <a name="mocks"></a> 驗證參數值  
  您可以驗證當您的元件呼叫另一個元件時，是否會傳遞正確的值。 您可以在虛設常式中加入判斷提示，也可以將值儲存在測試主體中並進行驗證。 例如：  
   
 ```csharp  
@@ -301,9 +301,9 @@ Class TestMyComponent
 End Class  
 ```  
   
-##  <a name="BKMK_Stub_basics"></a> 不同類型成員類型的虛設常式  
+## <a name="BKMK_Stub_basics"></a> 不同類型成員類型的虛設常式  
   
-###  <a name="BKMK_Methods"></a> 方法  
+### <a name="BKMK_Methods"></a> 方法  
  如本範例所說明，在虛設常式類別執行個體附加委派，即可為方法加上虛設常式。 虛設常式類型的名稱衍生自方法名稱及參數。 例如，針對下列 `IMyInterface` 介面和方法 `MyMethod`：  
   
 ```csharp  
@@ -325,7 +325,7 @@ interface IMyInterface
   
  如果您未提供函式的虛設常式，Fakes 所產生的函式會傳回傳回類型的預設值。 如果是數字，預設值為 0，若是類別類型，則為 `null` (C#) 或 `Nothing` (Visual Basic)。  
   
-###  <a name="BKMK_Properties"></a> 屬性  
+### <a name="BKMK_Properties"></a> 屬性  
  屬性 getter 和 setter 會公開為不同的委派，而且可以分別附加虛設常式。 例如，請考慮 `Value` 的 `IMyInterface` 屬性：  
   
 ```csharp  
@@ -350,7 +350,7 @@ stub.ValueSet = (value) => i = value;
   
  如果您未提供 setter 或屬性的 getter 的虛設常式方法，Fakes 產生的虛設常式會儲存值，因此虛設常式屬性的作用就像簡單變數一樣。  
   
-###  <a name="BKMK_Events"></a> 事件  
+### <a name="BKMK_Events"></a> 事件  
  事件會公開為委派欄位。 因此，只要叫用事件支援欄位就能引發任何附加虛設常式的事件。 請考慮下列虛設常式介面：  
   
 ```csharp  
@@ -371,7 +371,7 @@ interface IWithEvents
   
 ```  
   
-###  <a name="BKMK_Generic_methods"></a> 泛型方法  
+### <a name="BKMK_Generic_methods"></a> 泛型方法  
  只要為每個所需的方法具現化提供委派，即可虛設常式泛型方法。 例如，若是下列包含泛型方法的介面：  
   
 ```csharp  
@@ -399,7 +399,7 @@ public void TestGetValue()
   
  如果程式碼是呼叫有任何其他具現化的 `GetValue<T>`，虛設常式會呼叫該行為。  
   
-###  <a name="BKMK_Partial_stubs"></a> 虛擬類別的虛設常式  
+### <a name="BKMK_Partial_stubs"></a> 虛擬類別的虛設常式  
  在上述範例中，虛設常式是從介面產生。 您也可以從具有虛擬或抽象成員的類別產生虛設常式。 例如：  
   
 ```csharp  
@@ -438,16 +438,16 @@ stub.CallBase = true;
 Assert.AreEqual(43,stub.DoVirtual(1));  
 ```  
   
-##  <a name="BKMK_Debugging_stubs"></a> 偵錯虛設常式  
+## <a name="BKMK_Debugging_stubs"></a> 偵錯虛設常式  
  虛設常式類型的目的在於順利偵錯。 根據預設，偵錯工具會在所產生的任何程式碼中逐步執行指令，因此，應該會直接執行附加至虛設常式的自訂成員實作。  
   
-##  <a name="BKMK_Stub_limitation"></a> 虛設常式限制  
+## <a name="BKMK_Stub_limitation"></a> 虛設常式限制  
   
-1.  不支援使用指標的方法簽章。  
+1. 不支援使用指標的方法簽章。  
   
-2.  虛設常式類型依賴虛擬方法分派，因此不能虛設常式密封類別或靜態方法。 在這類情況下，使用[使用填充碼將應用程式與其他組件隔離，方便進行單元測試](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md)中所述的填充碼類型。  
+2. 虛設常式類型依賴虛擬方法分派，因此不能虛設常式密封類別或靜態方法。 在這類情況下，使用[使用填充碼將應用程式與其他組件隔離，方便進行單元測試](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md)中所述的填充碼類型。  
   
-##  <a name="BKMK_Changing_the_default_behavior_of_stubs"></a> 變更虛設常式的預設行為  
+## <a name="BKMK_Changing_the_default_behavior_of_stubs"></a> 變更虛設常式的預設行為  
  每個產生的虛設常式類別均會保留一個 `IStubBehavior` 介面的執行個體 (透過 `IStub.InstanceBehavior` 屬性)。 只要用戶端呼叫成員時沒有附加自訂委派，就會呼叫行為。 如果尚未設定行為，則會使用 `StubsBehaviors.Current` 屬性所傳回的執行個體。 根據預設，這個屬性傳回的行為會擲回 `NotImplementedException` 例外狀況。  
   
  您隨時可以設定任何虛設常式執行個體的 `InstanceBehavior` 屬性，藉以變更行為。 例如，下列程式碼片段會改變沒有任何動作或傳回 `default(T)` 傳回類型之預設值的行為：  
@@ -472,7 +472,7 @@ StubBehaviors.Current =
 ## <a name="external-resources"></a>外部資源  
   
 ### <a name="guidance"></a>指引  
- [使用 Visual Studio 2012 測試持續傳遞 - 第 2 章：單元測試：測試內部](http://go.microsoft.com/fwlink/?LinkID=255188)  
+ [測試 for Continuous Delivery with Visual Studio 2012 – 第 2 章：單元測試：測試內部](http://go.microsoft.com/fwlink/?LinkID=255188)  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [使用 Microsoft Fakes 在測試期間隔離程式碼](../test/isolating-code-under-test-with-microsoft-fakes.md)

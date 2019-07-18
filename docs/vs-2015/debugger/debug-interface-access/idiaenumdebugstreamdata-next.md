@@ -1,14 +1,9 @@
 ---
 title: 'Idiaenumdebugstreamdata:: Next |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 114171dd-38fd-4bd7-a702-8ff887ffc99b
 caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 46fc321dac1d8e750e1b5eb23516a4ea0a3e9a1e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 4bdbf58321426890bffd45a08818dc5341bdfc3d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51750506"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68187390"
 ---
 # <a name="idiaenumdebugstreamdatanext"></a>IDiaEnumDebugStreamData::Next
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -52,18 +47,15 @@ HRESULT Next ( 
  pcbData  
  [out]傳回動作傳回的位元組的數目。 如果`data`是 NULL，則`pcbData`所有要求的記錄包含的可用資料的位元組總數。  
   
- [資料]  
+ data[]  
  [out]要填滿偵錯資料流記錄資料的緩衝區。  
   
  pceltFetched  
  [in、 out]傳回的記錄數目`data`。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`。 傳回`S_FALSE`如果沒有更多的記錄。 反之則傳回錯誤碼。  
+ 如果成功，會傳回 `S_OK`。 傳回`S_FALSE`如果沒有更多的記錄。 否則會傳回錯誤碼。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md)   
  [IDiaEnumDebugStreams::Next](../../debugger/debug-interface-access/idiaenumdebugstreams-next.md)
-
-
-

@@ -12,14 +12,14 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e67d4a5df03f128285de45473c933761d6c7eb04
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 7457b5be3a6c1cbf2c2b6a1c6f66f9fb89e8d225
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54785822"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62584307"
 ---
-# <a name="how-to-configure-projects-to-target-multiple-platforms"></a>如何：將專案設定成以多重平台為目標
+# <a name="how-to-configure-projects-to-target-multiple-platforms"></a>HOW TO：將專案設定到多重目標平台
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 提供方式，讓方案一次以數個不同 CPU 架構或平台為目標。 要設定這些項目的屬性是透過 [組態管理員] 對話方塊所存取。  
@@ -29,31 +29,31 @@ ms.locfileid: "54785822"
   
 #### <a name="to-set-your-configuration-to-target-a-different-platform"></a>設定組態以將不同的平台設為目標  
   
-1.  在 [建置] 功能表上，按一下 [組態管理員]。  
+1. 在 [建置] 功能表上，按一下 [組態管理員]。  
   
-2.  在 [使用中的方案平台] 方塊中，選取您想要設為方案目標的平台，或選取 [\<新增>] 建立新的平台。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 將編譯您的應用程式，以將 [組態管理員] 對話方塊中設為使用中平台的平台設為目標。  
+2. 在 [使用中的方案平台] 方塊中，選取您想要設為方案目標的平台，或選取 [\<新增>] 建立新的平台。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 將編譯您的應用程式，以將 [組態管理員] 對話方塊中設為使用中平台的平台設為目標。  
   
 ## <a name="removing-a-platform"></a>移除平台  
  如果您發現平台並不需要，則可以使用 [組態管理員] 對話方塊予以移除。 這會移除您針對該組態和目標組合所設定的所有方案和專案設定。  
   
 #### <a name="to-remove-a-platform"></a>移除平台  
   
-1.  在 [建置] 功能表上，按一下 [組態管理員]。  
+1. 在 [建置] 功能表上，按一下 [組態管理員]。  
   
-2.  在 [使用中的方案平台] 方塊中，選取 [\<編輯>]。 [編輯方案平台] 對話方塊隨即開啟。  
+2. 在 [使用中的方案平台] 方塊中，選取 [\<編輯>]。 [編輯方案平台] 對話方塊隨即開啟。  
   
-3.  按一下您想要移除的平台，然後按一下 [移除]。  
+3. 按一下您想要移除的平台，然後按一下 [移除]。  
   
 ## <a name="targeting-multiple-platforms-with-one-solution"></a>使用一個方案將多重平台設為目標  
  因為您可以根據組態與平台設定組合來變更設定，所以可以設定將多重平台設為目標的方案。  
   
 #### <a name="to-target-multiple-platforms"></a>以多重平台為目標  
   
-1.  使用 [組態管理員] 為方案至少新增兩個目標平台。  
+1. 使用 [組態管理員] 為方案至少新增兩個目標平台。  
   
-2.  從 [使用中的方案平台] 清單中，選取您想要設為目標的平台。  
+2. 從 [使用中的方案平台] 清單中，選取您想要設為目標的平台。  
   
-3.  建置方案。  
+3. 建置方案。  
   
 #### <a name="to-build-multiple-solution-configurations-at-once"></a>一次建置多個方案組態  
   
@@ -63,7 +63,7 @@ ms.locfileid: "54785822"
   
    例如，可能會將方案層級平台設為 [!INCLUDE[vcprx64](../includes/vcprx64-md.md)]，而且以相同平台為目標的這個方案內沒有專案。 您的方案也可能有多個檔案，而且每個檔案都以不同的平台為目標。 建議，如果您有上述其中一種情況，則建立具有描述性名稱的新組態，以避免產生混淆。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [如何：建立和編輯組態](../ide/how-to-create-and-edit-configurations.md)   
  [了解組建組態](../ide/understanding-build-configurations.md)   
  [在 Visual Studio 中建置和清除專案與方案](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)

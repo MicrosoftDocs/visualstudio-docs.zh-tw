@@ -9,25 +9,26 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2016
 ms.author: ghogen
-ms.openlocfilehash: dacc30785fc26e2f07bf5265eda8490d24333154
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 1ad49cc9efd97fbd51159a0527ee1dc7aa2e25b6
+ms.sourcegitcommit: 3cc73e74921a9ceb622542e0e263abeebc455c00
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913544"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "67623966"
 ---
 # <a name="publish-webapplicationwebsite-windows-powershell-script"></a>Publish-WebApplicationWebSite (Windows PowerShell 指令碼)
 ## <a name="syntax"></a>語法
 將 Web 專案發佈至 Azure 網站。 指令碼會在您的 Azure 訂用帳戶中建立所需的資源 (如果它們不存在)。
 
-    Publish-WebApplicationWebSite
-    –Configuration <configuration>
-    -SubscriptionName <subscriptionName>
-    -WebDeployPackage <packageName>
-    -DatabaseServerPassword @{Name = "name"; Password = "password"}
-    -SendHostMessagesToOutput
-    -Verbose
-
+```
+Publish-WebApplicationWebSite
+–Configuration <configuration>
+-SubscriptionName <subscriptionName>
+-WebDeployPackage <packageName>
+-DatabaseServerPassword @{Name = "name"; Password = "password"}
+-SendHostMessagesToOutput
+-Verbose
+```
 
 ## <a name="configuration"></a>Configuration
 描述部署詳細資訊的 JSON 組態檔路徑。
@@ -94,27 +95,29 @@ ms.locfileid: "55913544"
 
 JSON 組態檔會指定待部署項目的詳細資料。 它會包含您在建立專案時所指定的資訊，例如網站的名稱和使用者名稱。 它還包含要佈建的資料庫 (如果有的話)。 下列程式碼片段將顯示一個 JSON 組態檔範例：
 
-    {
-        "environmentSettings": {
-            "webSite": {
-                "name": "WebApplication10554",
+```json
+{
+    "environmentSettings": {
+        "webSite": {
+            "name": "WebApplication10554",
+            "location": "West US"
+        },
+        "databases": [
+            {
+                "connectionStringName": "DefaultConnection",
+                "databaseName": "WebApplication10554_db",
+                "serverName": "iss00brc88",
+                "user": "sqluser2",
+                "password": "",
+                "edition": "",
+                "size": "",
+                "collation": "",
                 "location": "West US"
-            },
-            "databases": [
-                {
-                    "connectionStringName": "DefaultConnection",
-                    "databaseName": "WebApplication10554_db",
-                    "serverName": "iss00brc88",
-                    "user": "sqluser2",
-                    "password": "",
-                    "edition": "",
-                    "size": "",
-                    "collation": "",
-                    "location": "West US"
-                }
-            ]
-        }
+            }
+        ]
     }
+}
+```
 
 您可以編輯 JSON 組態檔來變更部署項目。 [網站] 區段是必要項目，但 [資料庫] 區段是選用項目。
 

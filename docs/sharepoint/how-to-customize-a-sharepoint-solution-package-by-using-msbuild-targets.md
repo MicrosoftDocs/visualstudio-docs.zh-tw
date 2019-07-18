@@ -1,5 +1,5 @@
 ---
-title: HOW TO：使用 MSBuild 目標自訂 SharePoint 方案套件 |Microsoft Docs
+title: 自訂 SharePoint 方案套件，使用 MSBuild 目標
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 80c29cab77cffcb46da8913ccd6e050ec4181c54
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 71665f6ccf22ace264ff39831521538a335aed93
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56639553"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401514"
 ---
-# <a name="how-to-customize-a-sharepoint-solution-package-by-using-msbuild-targets"></a>HOW TO：使用 MSBuild 目標自訂 SharePoint 方案套件
-  藉由在命令提示字元使用 MSBuild 目標，您可以自訂 Visual Studio 建立 SharePoint 封裝檔案的方式 (*.wsp*)。 例如，您可以自訂變更封裝中繼目錄的 MSBuild 屬性，以及自訂指定列舉檔案的 MSBuild 項目群組。
+# <a name="how-to-customize-a-sharepoint-solution-package-by-using-msbuild-targets"></a>作法：使用 MSBuild 目標自訂 SharePoint 方案套件
+  藉由在命令提示字元使用 MSBuild 目標，您可以自訂 Visual Studio 建立 SharePoint 封裝檔案的方式 ( *.wsp*)。 例如，您可以自訂變更封裝中繼目錄的 MSBuild 屬性，以及自訂指定列舉檔案的 MSBuild 項目群組。
 
 ## <a name="customize-and-run-msbuild-targets"></a>自訂及執行 MSBuild 目標
  如果您自訂 BeforeLayout 和 AfterLayout 目標，就可以在套件配置之前執行工作，例如加入、移除或修改將要封裝的檔案。
@@ -43,7 +43,7 @@ ms.locfileid: "56639553"
 
 3. 開啟專案，開啟其捷徑功能表，然後選擇**卸載專案**。
 
-4. 在 **方案總管**，開啟專案的捷徑功能表，然後選擇**編輯** *\<專案名稱 >.vbproj*或**編輯***\<專案名稱 >.csproj*。
+4. 在 **方案總管**，開啟專案的捷徑功能表，然後選擇**編輯** *\<專案名稱 >.vbproj*或**編輯** *\<專案名稱 >.csproj*。
 
 5. 在專案檔結尾附近的 `Import` 這行後面，加入下列程式碼。
 

@@ -13,11 +13,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.openlocfilehash: 64135fea9e046897fb0beb546507f788ec92d25b
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 1a5f26c8fc34e7cea7c6c5d938053b468cd45ba1
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38942867"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "68143348"
 ---
 .NET Compact Framework

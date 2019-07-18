@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: cb1521623880712211ea04e5c572c7cf4bd85133
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56627684"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62960156"
 ---
 # <a name="zoom-control-threads-view"></a>縮放控制 (執行緒檢視)
 縮放控制是可以放大和縮小時間軸的滑桿，讓您能專注在特別感興趣的區域。 此控制項會從時間軸檢視的中央放大，因此請先將感興趣的區域置中再放大。

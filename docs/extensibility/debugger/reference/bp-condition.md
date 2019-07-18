@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - BP_CONDITION structure
 ms.assetid: 407f87a3-2878-429b-8c65-b68feb36622a
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9c37699e965698b4f5700bc1994ba25c8c0bbbd5
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: e20db594fcc00f641634bfaae8d5342d4b520d7f
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56722313"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66337430"
 ---
 # <a name="bpcondition"></a>BP_CONDITION
 描述用以引發中斷點的條件。
@@ -45,15 +48,20 @@ public struct BP_CONDITION {
 ```
 
 ## <a name="members"></a>成員
-`pThread` [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)物件，表示包含中斷點的應用程式的使用中執行緒。
+`pThread`\
+[IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)物件，表示包含中斷點的應用程式的使用中執行緒。
 
-`styleCondition` 值，以從[BP_COND_STYLE](../../../extensibility/debugger/reference/bp-cond-style.md)列舉型別描述此中斷點條件的樣式。
+`styleCondition`\
+值，以從[BP_COND_STYLE](../../../extensibility/debugger/reference/bp-cond-style.md)列舉型別描述此中斷點條件的樣式。
 
-`bstrContext` 中斷點的位置。
+`bstrContext`\
+中斷點的位置。
 
-`bstrCondition` 引發中斷點的條件。
+`bstrCondition`\
+引發中斷點的條件。
 
-`nRadix` 用來評估數字的任何資訊的基數。
+`nRadix`\
+用來評估數字的任何資訊的基數。
 
 ## <a name="remarks"></a>備註
 此結構是隸屬[BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)並[BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md)結構。

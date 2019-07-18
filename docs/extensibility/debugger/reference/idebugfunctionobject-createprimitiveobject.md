@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugFunctionObject::CreatePrimitiveObject method
 ms.assetid: 6e9dc8b6-b4e1-4abf-b6e0-e885910775bc
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 185466d8bb89b504d7b6f8df4b624390205d3944
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: d47f3edfffadc74791d6d6b2267a37319a053d7d
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56685283"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66320832"
 ---
 # <a name="idebugfunctionobjectcreateprimitiveobject"></a>IDebugFunctionObject::CreatePrimitiveObject
 建立基本資料物件，例如簡單的整數。
@@ -38,14 +41,12 @@ int CreatePrimitiveObject(
 );
 ```
 
-#### <a name="parameters"></a>參數
- `ot`
+## <a name="parameters"></a>參數
+`ot`\
+[in]值，以從[OBJECT_TYPE](../../../extensibility/debugger/reference/object-type.md)列舉型別表示來建立基本的型別。
 
- [in]值，以從[OBJECT_TYPE](../../../extensibility/debugger/reference/object-type.md)列舉型別表示來建立基本的型別。
-
- `ppObject`
-
- [out]傳回[IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)代表新建立的物件。
+`ppObject`\
+[out]傳回[IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)代表新建立的物件。
 
 ## <a name="return-value"></a>傳回值
  如果成功，會傳回 S_OK;否則，傳回錯誤碼。

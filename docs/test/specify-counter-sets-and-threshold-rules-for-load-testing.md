@@ -14,11 +14,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 79140e61844ce450db86ba3bd0b0d6577dec3531
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55946505"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62431322"
 ---
 # <a name="specify-counter-sets-and-threshold-rules-for-computers-in-a-load-test"></a>在負載測試中指定電腦的計數器集合與臨界值規則
 
@@ -46,7 +46,7 @@ ms.locfileid: "55946505"
 
 ## <a name="use-counter-sets"></a>使用計數器集合
 
-負載測試工具會持續利用計數器收集效能資料，並以圖形來表示這些資料。 在執行負載測試期間，計數器資料是依照使用者定義間隔收集的。 如需詳細資訊，請參閱[＜How to：指定採樣速率](../test/how-to-specify-the-sample-rate-for-a-load-test.md)。 您可以使用「負載測試分析器」在執行階段檢視計數器，或在負載測試回合之後檢視。
+負載測試工具會持續利用計數器收集效能資料，並以圖形來表示這些資料。 在執行負載測試期間，計數器資料是依照使用者定義間隔收集的。 如需詳細資訊，請參閱[如何：指定採樣速率](../test/how-to-specify-the-sample-rate-for-a-load-test.md)。 您可以使用「負載測試分析器」在執行階段檢視計數器，或在負載測試回合之後檢視。
 
 計數器資料是在伺服器和任何執行測試的電腦上收集而來的。 如果您已經設定了一組要執行測試的代理程式電腦，則也會在那些電腦上收集計數器。
 
@@ -56,13 +56,13 @@ ms.locfileid: "55946505"
 
 執行測試的電腦會報告個別 HTTP 要求的效能資料。 例如，代理程式電腦。 對於要求，您可以監視諸如收到第一個位元組的平均時間、回應時間和每秒要求數等資料。
 
-為了讓您輕鬆收集 Web 伺服器上的效能資料，Visual Studio Enterprise 也以負載測試中使用的技術做為基礎，提供了預先定義的具名計數器集合。 當您分析執行 IIS、ASP.NET 或 SQL Server 的伺服器時，這些集合會有所幫助。 至於預設計數器集合中未提供的計數器，則可以利用負載測試編輯器來新增。 請務必將受測試的電腦或伺服器加入至負載測試，以確保您可以監視這些電腦上的資源使用情況。 如需詳細資訊，請參閱[＜How to：管理計數器集合](../test/how-to-manage-counter-sets-using-the-load-test-editor.md)。
+為了讓您輕鬆收集 Web 伺服器上的效能資料，Visual Studio Enterprise 也以負載測試中使用的技術做為基礎，提供了預先定義的具名計數器集合。 當您分析執行 IIS、ASP.NET 或 SQL Server 的伺服器時，這些集合會有所幫助。 至於預設計數器集合中未提供的計數器，則可以利用負載測試編輯器來新增。 請務必將受測試的電腦或伺服器加入至負載測試，以確保您可以監視這些電腦上的資源使用情況。 如需詳細資訊，請參閱[如何：管理計數器集合](../test/how-to-manage-counter-sets-using-the-load-test-editor.md)。
 
 為了了解要收集哪些資料、在何處設定臨界值規則，以及如何在度量反映應用程式中的特定問題時發出通知，負載回合的結果分析通常需要特定的定義域知識。 如需詳細資訊，請參閱[關於臨界值規則](#about-threshold-rules)。
 
 ### <a name="performance-counter-sampling-interval-considerations"></a>效能計數器取樣間隔考量
 
-根據負載測試的長度，為負載測試回合設定中的 [採樣速率] 屬性選取適當的值。 較小的取樣率 (例如五秒的預設值) 會在負載測試結果資料庫中佔用較多空間。 若為較長的負載測試，增加取樣率會降低所收集的資料量。 如需詳細資訊，請參閱[＜How to：指定採樣速率](../test/how-to-specify-the-sample-rate-for-a-load-test.md)。
+根據負載測試的長度，為負載測試回合設定中的 [採樣速率] 屬性選取適當的值。 較小的取樣率 (例如五秒的預設值) 會在負載測試結果資料庫中佔用較多空間。 若為較長的負載測試，增加取樣率會降低所收集的資料量。 如需詳細資訊，請參閱[如何：指定採樣速率](../test/how-to-specify-the-sample-rate-for-a-load-test.md)。
 
 以下是一些取樣率的方針。
 

@@ -5,17 +5,20 @@ ms.topic: reference
 helpviewer_keywords:
 - IDebugPortSupplierEx2::SetServer
 ms.assetid: 0e8ef194-3a4f-4abf-8382-4607ab3005d1
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ca63b2941fc0c607af93772c21ca874b3d6b9031
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 2fda8acbf2c757478b838c11a88b21324420173b
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56706830"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66353336"
 ---
 # <a name="idebugportsupplierex2setserver"></a>IDebugPortSupplierEx2::SetServer
 設定核心伺服器連接埠提供者。
@@ -34,8 +37,9 @@ int SetServer(
 );
 ```
 
-#### <a name="parameters"></a>參數
- `pServer` 若要設定連接埠提供者的核心伺服器。
+## <a name="parameters"></a>參數
+`pServer`\
+若要設定連接埠提供者的核心伺服器。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

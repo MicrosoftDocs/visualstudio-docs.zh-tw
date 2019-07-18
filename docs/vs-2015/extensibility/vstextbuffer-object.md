@@ -1,14 +1,9 @@
 ---
 title: VSTextBuffer 物件 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 f1_keywords:
 - VSTextBuffer
 helpviewer_keywords:
@@ -17,13 +12,13 @@ helpviewer_keywords:
 ms.assetid: c5f94b45-7249-4e1f-a53d-1d2a1c61e0ef
 caps.latest.revision: 10
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 987514f20746b8480391a35d7a9c9a9d3663cac2
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 5b68d443e542b6bd707aacc2b22d0efc1064152c
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51728778"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65690647"
 ---
 # <a name="vstextbuffer-object"></a>VSTextBuffer 物件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,9 +29,9 @@ ms.locfileid: "51728778"
   
 |方法|描述|  
 |------------|-----------------|  
-|[IOleCommandTarget](http://msdn.microsoft.com/library/windows/desktop/ms683797)|標準的 OLE 介面。 主要用於處理緩衝區中的復原/取消復原。|  
-|[IPersistFile](http://msdn.microsoft.com/library/windows/desktop/ms687223)|標準的 OLE 介面。|  
-|[IPersistStream](http://msdn.microsoft.com/library/windows/desktop/ms690091)|標準的 OLE 介面。|  
+|[IOleCommandTarget](/windows/desktop/api/docobj/nn-docobj-iolecommandtarget)|標準的 OLE 介面。 主要用於處理緩衝區中的復原/取消復原。|  
+|[IPersistFile](/windows/desktop/api/objidl/nn-objidl-ipersistfile)|標準的 OLE 介面。|  
+|[IPersistStream](/windows/desktop/api/objidl/nn-objidl-ipersiststream)|標準的 OLE 介面。|  
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompoundAction>|讓您能夠建立化合物動作 （也就是動作會分組放入單一復原/取消復原單位）。|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData>|可讓受管理的文字緩衝的文件資料的持續性。|  
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer>|提供基本的服務;許多用戶端使用。|  
@@ -53,5 +48,4 @@ ms.locfileid: "51728778"
 ## <a name="see-also"></a>另請參閱  
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer>   
  <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView>   
- [圖形編輯](http://msdn.microsoft.com/en-us/f08872bd-fd9c-4e36-8cf2-a2a2622ef986)
-
+ [圖形編輯](https://msdn.microsoft.com/f08872bd-fd9c-4e36-8cf2-a2a2622ef986)

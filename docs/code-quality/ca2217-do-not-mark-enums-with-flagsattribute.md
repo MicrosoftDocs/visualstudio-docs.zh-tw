@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 94666390cc49f365b9f036b076bcd97d68d4edb9
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: abe9b53a02f5a2c12b734c793557c69868a973e8
+ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57872284"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65841507"
 ---
 # <a name="ca2217-do-not-mark-enums-with-flagsattribute"></a>CA2217:不要以 FlagsAttribute 標記列舉
 
@@ -56,7 +56,7 @@ ms.locfileid: "57872284"
 
 如果您執行這項規則，從[FxCop 分析器](install-fxcop-analyzers.md)（而不是透過靜態程式碼分析），您可以設定的哪些部分您程式碼基底上執行這項規則，根據其存取範圍。 比方說，若要指定執行規則時，應該只針對非公用 API 介面，將下列索引鍵 / 值組新增至專案中的.editorconfig 檔案：
 
-```
+```ini
 dotnet_code_quality.ca2217.api_surface = private, internal
 ```
 

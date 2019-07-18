@@ -3,12 +3,18 @@ title: IntelliTest 參考手冊 | Microsoft 開發人員測試工具
 ms.date: 05/02/2017
 ms.topic: conceptual
 helpviewer_keywords:
-  - 'IntelliTest Reference Manual, IntelliTest'
+- IntelliTest Reference Manual, IntelliTest
 ms.author: gewarren
 manager: jillfra
 ms.workload:
-  - multiple
+- multiple
 author: gewarren
+ms.openlocfilehash: d7258549b242091737e14e00980447eb48d5e78b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62551589"
 ---
 # <a name="intellitest-reference-manual"></a>IntelliTest 參考手冊
 

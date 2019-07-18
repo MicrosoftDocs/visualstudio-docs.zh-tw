@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d43319899f62d92fcdf9ebca44c239d5b82a4719
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 0df1be486da0b4a199c642e2318c0ed08f2b1eb8
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56605545"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "64825072"
 ---
 # <a name="idiasymbolgetconsttype"></a>IDiaSymbol::get_constType
 擷取指定的使用者定義資料類型是否為常數的旗標。
@@ -39,7 +39,7 @@ HRESULT get_constType ( 
  如果成功，則傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。
 
 > [!NOTE]
->  傳回值為`S_FALSE`表示此屬性不適用於符號。
+> 傳回值為`S_FALSE`表示此屬性不適用於符號。
 
 ## <a name="requirements"></a>需求
 
@@ -48,5 +48,5 @@ HRESULT get_constType ( 
 |標頭：|dia2.h|
 |版本:|DIA SDK v7.0|
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

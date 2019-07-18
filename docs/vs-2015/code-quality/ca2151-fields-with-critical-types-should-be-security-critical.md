@@ -1,27 +1,22 @@
 ---
-title: CA2151： 具有關鍵類型的欄位應為安全性關鍵 |Microsoft Docs
-ms.custom: ''
+title: CA2151:具有關鍵類型的欄位應為安全性關鍵 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 ms.assetid: 09db9d25-7d58-4725-a252-4a07baadf046
 caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: bbd3e62d58717b5c7d617960afe1d6f490dd2b44
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6c707efcc4c945e80ea0206cc5f30a647e83d231
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49951362"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68142582"
 ---
-# <a name="ca2151-fields-with-critical-types-should-be-security-critical"></a>CA2151：具有關鍵類型的欄位應為安全性關鍵
+# <a name="ca2151-fields-with-critical-types-should-be-security-critical"></a>CA2151:具有關鍵類型的欄位應為安全性關鍵
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -32,7 +27,7 @@ ms.locfileid: "49951362"
 |中斷變更|中斷|
 
 ## <a name="cause"></a>原因
- 已宣告安全性透明欄位或安全性關鍵欄位。 它的指定類型為安全性關鍵類型。 例如: 
+ 已宣告安全性透明欄位或安全性關鍵欄位。 它的指定類型為安全性關鍵類型。 例如：
 
 ```csharp
 [assembly: AllowPartiallyTrustedCallers]
@@ -86,6 +81,3 @@ ms.locfileid: "49951362"
  [!code-csharp[FxCop.Security.CA2145.TransparentMethodsShouldNotUseSuppressUnmanagedCodeSecurity#1](../snippets/csharp/VS_Snippets_CodeAnalysis/fxcop.security.ca2145.transparentmethodsshouldnotusesuppressunmanagedcodesecurity/cs/ca2145.cs#1)]
 
 ### <a name="comments"></a>註解
-
-
-

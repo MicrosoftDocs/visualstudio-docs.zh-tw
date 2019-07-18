@@ -4,17 +4,18 @@ ms.date: 03/02/2017
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.XAMLDesigner
+- VS.ToolsOptionsPages.XAML_Designer.General
 author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: f56b6405935bd46c7f1e225ce587ed3d13e5fd34
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 4e2f38d4b5e8dd674dcc762219051c820b426a6c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55954707"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62788963"
 ---
 # <a name="xaml-designer-options-page"></a>XAML 設計工具選項頁面
 

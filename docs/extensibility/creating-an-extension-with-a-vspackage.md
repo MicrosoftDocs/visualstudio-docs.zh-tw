@@ -3,17 +3,17 @@ title: Creating an Extension with VSPackage |Microsoft Docs
 ms.date: 3/16/2019
 ms.topic: conceptual
 ms.assetid: c0cc5e08-4897-44f2-8309-e3478f1f999e
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a0d76e0055c4bae6df270a304364c80cd945f4a1
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: 6b66aef72d9af1ef40a061d1a82d18161a416586
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58194531"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66345353"
 ---
 # <a name="create-an-extension-with-a-vspackage"></a>使用 VSPackage 建立擴充功能
 
@@ -27,7 +27,7 @@ ms.locfileid: "58194531"
 
 1. 建立 VSIX 專案，名為**FirstPackage**。 您可以找到在 VSIX 專案範本**新的專案**藉由搜尋 「 vsix 」 的對話方塊。
 
-2. 當專案開啟時，新增名為 Visual Studio 封裝項目範本**FirstPackage**。 在 **方案總管**，以滑鼠右鍵按一下專案節點，然後選取**新增** > **新項目**。 在 **加入新項目**對話方塊中，移至**Visual C#** > **擴充性**，然後選取**Visual Studio Package**。 在 **名稱**視窗的底部欄位中，將命令的檔案名稱變更為*FirstPackage.cs*。
+2. 當專案開啟時，新增名為 Visual Studio 封裝項目範本**FirstPackage**。 在 **方案總管**，以滑鼠右鍵按一下專案節點，然後選取**新增** > **新項目**。 在 **加入新項目**對話方塊中，移至**Visual C#**  > **擴充性**，然後選取**Visual Studio Package**。 在 **名稱**視窗的底部欄位中，將命令的檔案名稱變更為*FirstPackage.cs*。
 
 3. 建置此專案並開始偵錯。
 
@@ -76,4 +76,4 @@ ms.locfileid: "58194531"
 
 3. 建置此專案並開始偵錯。 實驗執行個體隨即出現。
 
-4. 在實驗執行個體中開啟方案。 您應該會看到出現訊息方塊，指出**第一個套件內 initialize （)**。
+4. 在實驗執行個體中開啟方案。 您應該會看到出現訊息方塊，指出**第一個套件內 initialize （)** 。

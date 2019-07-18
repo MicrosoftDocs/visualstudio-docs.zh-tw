@@ -12,16 +12,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a668e64f6b8a10cf22e08575ca9c2df385131666
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 908f79b40b17eba5c0e3f518e6d7f2f3ae58e9c7
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55930453"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745017"
 ---
 # <a name="advanced-build-settings-dialog-box-c"></a>進階建置設定對話方塊 (C#)
 
-使用 [專案設計工具] 的 [進階建置設定] 對話方塊，以指定專案的進階組建組態屬性。 此對話方塊只適用於 [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] 專案。
+使用 [專案設計工具]  的 [進階建置設定]  對話方塊，以指定專案的進階組建組態屬性。 此對話方塊只適用於 [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] 專案。
 
 ## <a name="general"></a>一般
 
@@ -45,7 +45,7 @@ ms.locfileid: "55930453"
 
 **報告內部編譯器錯誤**
 
-指定是否要向 Microsoft 報告編譯器錯誤。 如果設定為 [提示]\(預設值)，您會在發生內部編譯器錯誤時收到提示，讓您選擇以電子方式將錯誤報告傳送給 Microsoft。 如果設定為 [傳送]，則會自動傳送錯誤報告。 如果設定為 [佇列]，則會將錯誤報告排入佇列。 如果設定為 [無]，則會以編譯器的文字輸出報告錯誤。 如需詳細資訊，請參閱 [/errorreport (C# 編譯器選項)](/dotnet/csharp/language-reference/compiler-options/errorreport-compiler-option)。
+指定是否要向 Microsoft 報告編譯器錯誤。 如果設定為 [提示]  \(預設值)，您會在發生內部編譯器錯誤時收到提示，讓您選擇以電子方式將錯誤報告傳送給 Microsoft。 如果設定為 [傳送]  ，則會自動傳送錯誤報告。 如果設定為 [佇列]  ，則會將錯誤報告排入佇列。 如果設定為 [無]  ，則會以編譯器的文字輸出報告錯誤。 如需詳細資訊，請參閱 [/errorreport (C# 編譯器選項)](/dotnet/csharp/language-reference/compiler-options/errorreport-compiler-option)。
 
 **檢查算術溢位/反向溢位**
 
@@ -55,7 +55,7 @@ ms.locfileid: "55930453"
 
 指定是否要將 mscorlib.dll 匯入您的程式，並定義整個 <xref:System> 命名空間。 如果您想要定義或建立自己的 <xref:System> 命名空間和物件，請核取此方塊。 如需詳細資訊，請參閱 [/nostdlib (C# 編譯器選項)](/dotnet/csharp/language-reference/compiler-options/nostdlib-compiler-option)。
 
-## <a name="output"></a>輸出
+## <a name="output"></a>Output
 
 下列選項可讓您指定進階輸出選項。
 
@@ -75,7 +75,7 @@ ms.locfileid: "55930453"
 
    讓原始程式碼在偵錯工具中啟動程式時進行偵錯，但只有在將執行中的程式附加到偵錯工具時，才會顯示組譯工具。
 
--  **portable**
+- **portable**
 
    產生 .PDB 檔案，這是非平台特定可攜式符號檔，可將主要可執行檔中項目的資訊和其產生方式提供給其他工具 (特別是偵錯工具)。 如需詳細資訊，請參閱 [Portable PDB](https://github.com/dotnet/core/blob/master/Documentation/diagnostics/portable_pdb.md) (可攜式 PDB)。
 
@@ -91,7 +91,7 @@ ms.locfileid: "55930453"
 
 **程式庫基底位址**
 
-指定載入 DLL 時慣用的基底位址。 DLL 的預設基底位址是由 [!INCLUDE[dnprdnshort](../../code-quality/includes/dnprdnshort_md.md)] 通用語言執行平台所設定。 如需詳細資訊，請參閱 [/baseaddress (C# 編譯器選項)](/dotnet/csharp/language-reference/compiler-options/baseaddress-compiler-option)。
+指定載入 DLL 時慣用的基底位址。 DLL 的預設基底位址是由 .NET Framework Common Language Runtime 所設定。 如需詳細資訊，請參閱 [/baseaddress (C# 編譯器選項)](/dotnet/csharp/language-reference/compiler-options/baseaddress-compiler-option)。
 
 ## <a name="see-also"></a>請參閱
 

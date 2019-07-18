@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: ad693014a7f6c16484f03c2d2f746c8159cf160e
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 354d1d2fe99fa55bba7f8a00bf3e9f760ff1dbaf
+ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57873077"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65842179"
 ---
 # <a name="ca1041-provide-obsoleteattribute-message"></a>CA1041:必須提供 ObsoleteAttribute 訊息
 
@@ -56,7 +56,7 @@ ms.locfileid: "57873077"
 
 如果您執行這項規則，從[FxCop 分析器](install-fxcop-analyzers.md)（而不是透過靜態程式碼分析），您可以設定的哪些部分您程式碼基底上執行這項規則，根據其存取範圍。 比方說，若要指定執行規則時，應該只針對非公用 API 介面，將下列索引鍵 / 值組新增至專案中的.editorconfig 檔案：
 
-```
+```ini
 dotnet_code_quality.ca1041.api_surface = private, internal
 ```
 

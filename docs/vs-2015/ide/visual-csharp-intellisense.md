@@ -13,12 +13,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f0d67cc907155f3f5c6bc4b0f132f9045f7d698a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 6b1af6a2900a579e7490f47f2e8ee4983310e19e
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54800871"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65698212"
 ---
 # <a name="visual-c-intellisense"></a>Visual C# IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,17 +40,17 @@ ms.locfileid: "54800871"
   
   C# 中的完成清單也十分聰明，可以篩選掉不相關的語彙基元，並根據內容預先選取語彙基元。 如需詳細資訊，請參閱 [C# 中已篩選的完成清單](../misc/filtered-completion-lists-in-csharp.md)和 [C# 中預先選取的完成清單項目](../misc/pre-selected-completion-list-items-in-csharp.md)。  
   
-###  <a name="CodeSnippets"></a> 完成清單中的程式碼片段  
- Visual C# 完成清單包含程式碼片段，可以協助您在程式中輕鬆地插入預先定義的程式碼主體。 在完成清單中，程式碼片段會顯示為片段的 [Shortcut 項目 (IntelliSense 程式碼片段)](http://msdn.microsoft.com/052cc97a-5c70-42f8-b398-4c3adf670cfa)。  如需 Visual C# 中所提供之預設程式碼片段的詳細資訊，請參閱 [Visual C# 程式碼片段](../ide/visual-csharp-code-snippets.md)。  
+### <a name="CodeSnippets"></a> 完成清單中的程式碼片段  
+ Visual C# 完成清單包含程式碼片段，可以協助您在程式中輕鬆地插入預先定義的程式碼主體。 在完成清單中，程式碼片段會顯示為片段的 [Shortcut 項目 (IntelliSense 程式碼片段)](https://msdn.microsoft.com/052cc97a-5c70-42f8-b398-4c3adf670cfa)。  如需 Visual C# 中所提供之預設程式碼片段的詳細資訊，請參閱 [Visual C# 程式碼片段](../ide/visual-csharp-code-snippets.md)。  
   
-###  <a name="Keywords"></a> 完成清單中的語言關鍵字  
- Visual C# 的完成清單也包含語言關鍵字。 如需 C# 語言關鍵字的詳細資訊，請參閱 [C# 關鍵字](http://msdn.microsoft.com/library/e929b0f2-4b92-4d37-8060-23d323b098ad)。  
+### <a name="Keywords"></a> 完成清單中的語言關鍵字  
+ Visual C# 的完成清單也包含語言關鍵字。 如需 C# 語言關鍵字的詳細資訊，請參閱 [C# 關鍵字](https://msdn.microsoft.com/library/e929b0f2-4b92-4d37-8060-23d323b098ad)。  
   
-###  <a name="ExtensionMethods"></a> 完成清單中的擴充方法  
+### <a name="ExtensionMethods"></a> 完成清單中的擴充方法  
  Visual C# 的完成清單包含範圍內的擴充方法。  
   
 > [!NOTE]
->  完成清單不會顯示 <xref:System.String> 物件的所有擴充方法 。  
+> 完成清單不會顯示 <xref:System.String> 物件的所有擴充方法 。  
   
  擴充方法與執行個體方法使用不同的圖示。 如需清單圖示的清單，請參閱[類別檢視和物件瀏覽器圖示](../ide/class-view-and-object-browser-icons.md)。 當同名的執行個體方法與擴充方法都在範圍中時，完成清單會顯示擴充方法圖示。  
   
@@ -59,29 +59,29 @@ ms.locfileid: "54800871"
   
  Visual C# 會篩選針對下列項目所顯示的完成清單：  
   
--   **介面與基底類別。** 在類別宣告基底和介面清單與條件約束清單中，IntelliSense 都會自動從介面和基底類別的完成清單移除項目。 例如，列舉不會出現在基底類別的完成清單中，因為列舉不能使用於基底類別。 基底類別的完成清單只包含介面和命名空間。 如果您在清單中選取一個項目，然後輸入一個逗號，IntelliSense 會將基底類別從清單中移除，因為 Visual C# 不支援多重繼承。 相同的行為也會發生在條件約束子句。  
+- **介面與基底類別。** 在類別宣告基底和介面清單與條件約束清單中，IntelliSense 都會自動從介面和基底類別的完成清單移除項目。 例如，列舉不會出現在基底類別的完成清單中，因為列舉不能使用於基底類別。 基底類別的完成清單只包含介面和命名空間。 如果您在清單中選取一個項目，然後輸入一個逗號，IntelliSense 會將基底類別從清單中移除，因為 Visual C# 不支援多重繼承。 相同的行為也會發生在條件約束子句。  
   
--   **屬性**：當您將屬性套用至類型時，完成清單會經過篩選，讓清單只包括從含有這些類型的命名空間繼承而來之類型，例如 <xref:System.Attribute>。  
+- **屬性**：當您將屬性套用至類型，完成清單會經過篩選，讓清單只包括從含有這些類型的命名空間繼承而來之類型，例如 <xref:System.Attribute>。  
   
--   `as` 及 `is` 運算子。  
+- `as` 及 `is` 運算子。  
   
--   **Catch 子句。**  
+- **Catch 子句。**  
   
--   **物件初始設定式**：只有能夠初始化的成員會出現在完成清單中。  
+- **物件初始設定式：** 只有能夠初始化的成員會出現在完成清單中。  
   
--   **new 關鍵字**：當您鍵入 `new` 然後按下空格鍵，完成清單隨即出現。 清單會根據您的程式碼內容，自動選取一個項目。 例如，完成清單中的項目會針對宣告及方法中的 return 陳述式自動選取項目。  
+- **新關鍵字**：當您輸入 `new` 後按空格鍵，完成清單會隨即出現。 清單會根據您的程式碼內容，自動選取一個項目。 例如，完成清單中的項目會針對宣告及方法中的 return 陳述式自動選取項目。  
   
--   **as 及 is 運算子**：當您鍵入 `as` 或 `is` 關鍵字後按空格鍵，即會自動顯示篩選後的完成清單。  
+- **為和 is 運算子：** 當您輸入 `as` 或 `is` 關鍵字後按空格鍵，會顯示篩選後的完成清單。  
   
--   Event：當您輸入關鍵字 `event`，完成清單僅包含委派類型。  
+- 事件：當您鍵入 `event` 關鍵字時，完成清單僅會包含委派類型。  
   
--   參數會自動排序到符合您所輸入之參數的第一個方法多載。 如有多個方法多載，您可以使用向上鍵與向下鍵巡覽至清單中下一個可能的多載。  
+- 參數會自動排序到符合您所輸入之參數的第一個方法多載。 如有多個方法多載，您可以使用向上鍵與向下鍵巡覽至清單中下一個可能的多載。  
   
 ## <a name="most-recently-used-members"></a>最近使用的成員  
  IntelliSense 會記住您最近在 [[列出成員]](../ide/using-intellisense.md) 快顯方塊中選取的成員，自動完成物件名稱。 下次使用 [成員] 清單時，最近使用過的成員就會顯示在頂端。 IDE 會在每個工作階段之間，清除最近使用過的成員記錄。  
   
 ## <a name="override"></a>override  
- 當您鍵入 [override](http://msdn.microsoft.com/library/dd1907a8-acf8-46d3-80b9-c2ca4febada8)，然後按下空格鍵時，IntelliSense 即會在快顯清單方塊中顯示所有您可以覆寫的有效基底類別成員。 在 `override` 之後輸入方法的傳回類型，可提示 IntelliSense 僅顯示會傳回相同類型的方法。 當 IntelliSense 找不到任何相符項目時，它會顯示所有基底類別成員。  
+ 當您鍵入 [override](https://msdn.microsoft.com/library/dd1907a8-acf8-46d3-80b9-c2ca4febada8)，然後按下空格鍵時，IntelliSense 即會在快顯清單方塊中顯示所有您可以覆寫的有效基底類別成員。 在 `override` 之後輸入方法的傳回類型，可提示 IntelliSense 僅顯示會傳回相同類型的方法。 當 IntelliSense 找不到任何相符項目時，它會顯示所有基底類別成員。  
   
 ## <a name="automatic-code-generation"></a>自動產生程式碼  
   
@@ -102,7 +102,7 @@ ms.locfileid: "54800871"
  若要查看 Visual Studio IDE 中的可用選項，請在 [編輯] 功能表上，指向 [IntelliSense]，然後指向 [組合管理 Using]。 IDE 提供下列選項來組合管理和移除 `usings` 指示詞：  
   
 ### <a name="implement-interface"></a>實作介面  
- 在程式碼編輯器中工作時，IntelliSense 可提供協助您實作[介面](http://msdn.microsoft.com/library/7da38e81-4f99-4bc5-b07d-c986b687eeba)的選項。 一般來說，若要正確地實作介面，必須為類別中介面的每位成員建立方法宣告。 使用 IntelliSense 會在您於類別宣告中輸入介面名稱後，顯示智慧標籤。 您可利用智慧標籤，選擇要使用明確或隱含命名的方式進行自動實作介面。 在明確命名的情況下，方法宣告會使用介面的名稱; 而在隱含命名的情況下，方法宣告則不會指出其所屬的介面。 明確命名的介面方法只可透過介面執行個體而不是透過類別執行個體加以存取。 如需詳細資訊，請參閱[明確介面實作](http://msdn.microsoft.com/library/181c901f-0d4c-4f29-97fc-895079617bf2)。  
+ 在程式碼編輯器中工作時，IntelliSense 可提供協助您實作[介面](https://msdn.microsoft.com/library/7da38e81-4f99-4bc5-b07d-c986b687eeba)的選項。 一般來說，若要正確地實作介面，必須為類別中介面的每位成員建立方法宣告。 使用 IntelliSense 會在您於類別宣告中輸入介面名稱後，顯示智慧標籤。 您可利用智慧標籤，選擇要使用明確或隱含命名的方式進行自動實作介面。 在明確命名的情況下，方法宣告會使用介面的名稱; 而在隱含命名的情況下，方法宣告則不會指出其所屬的介面。 明確命名的介面方法只可透過介面執行個體而不是透過類別執行個體加以存取。 如需詳細資訊，請參閱[明確介面實作](https://msdn.microsoft.com/library/181c901f-0d4c-4f29-97fc-895079617bf2)。  
   
  實作介面將會產生最少數目的滿足介面之方法虛設常式。 如果基礎類別實作部分的介面，則不會重新產生這些虛設常式。  
   
@@ -148,14 +148,14 @@ ms.locfileid: "54800871"
  ![產生事件處理常式](../ide/media/vxgenerateeventhandler.gif "vxGenerateEventHandler")  
   
 > [!NOTE]
->  如果 IntelliSense 建立的新委派，參考的是現有的事件處理常式，IntelliSense 就會在工具提示中傳達這項資訊。 接著您就可以修改此參考，程式碼編輯器中已選取該文字。 否則，自動事件連結即於此刻完成。  
+> 如果 IntelliSense 建立的新委派，參考的是現有的事件處理常式，IntelliSense 就會在工具提示中傳達這項資訊。 接著您就可以修改此參考，程式碼編輯器中已選取該文字。 否則，自動事件連結即於此刻完成。  
   
  如果按下 TAB，IntelliSense 就會虛設出有正確簽章的方法，並將游標放在事件處理常式的主體中。  
   
 > [!NOTE]
->  使用 [檢視] 功能表上的 [向後巡覽] 命令 (CTRL+-)，返回事件連結陳述式。  
+> 使用 [檢視] 功能表上的 [向後巡覽] 命令 (CTRL+-)，返回事件連結陳述式。  
   
  下列工作示範 IntelliSense 如何自動連結名為 `button1_Click` 的事件處理常式和名為 `button1.Click` 的事件欄位。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [Visual Studio IDE](../ide/visual-studio-ide.md)

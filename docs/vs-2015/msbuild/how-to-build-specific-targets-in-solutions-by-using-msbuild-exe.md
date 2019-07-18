@@ -13,24 +13,23 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 85c8f3dcb9364c2837cd4d10f163de3795821ce7
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: 8bfef86b8ea82077ba7fe3f753f9835c06c3380a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58194226"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60097345"
 ---
 # <a name="how-to-build-specific-targets-in-solutions-by-using-msbuildexe"></a>如何：使用 MSBuild.exe 在方案中建置特定目標
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 您可以使用 MSBuild.exe，在方案中建置特定專案的特定目標。  
   
 ### <a name="to-build-a-specific-target-of-a-specific-project-in-a-solution"></a>在方案中建置特定專案的特定目標  
   
-1.  在命令列中，輸入 `MSBuild.exe <SolutionName>.sln`，其中 `<SolutionName>` 會對應至包含您想要執行之目標的方案檔案名稱。  
+1. 在命令列中，輸入 `MSBuild.exe <SolutionName>.sln`，其中 `<SolutionName>` 會對應至包含您想要執行之目標的方案檔案名稱。  
   
-2.  以 *ProjectName*:*TargetName* 格式，在 **/t** 參數之後指定目標。  
+2. 以 *ProjectName*:*TargetName* 格式，在 **/t** 參數之後指定目標。  
   
 ## <a name="example"></a>範例  
  下列範例會執行 `NotInSlnFolder` 專案的 `Rebuild` 目標，然後執行 `InSolutionFolder` 專案的 `Clean` 目標，其位於 `NewFolder` 方案資料夾中。  

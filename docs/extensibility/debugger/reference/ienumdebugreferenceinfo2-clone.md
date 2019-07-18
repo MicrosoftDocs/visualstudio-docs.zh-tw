@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugReferenceInfo2::Clone
 ms.assetid: 49c5a301-a33a-428f-b83b-e734c71af4ef
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 85c531f0629eecc73befe3732c540e93d8d1d575
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 6520516c8a8d7251e87166a64367fc1163f446fc
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56721572"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66322679"
 ---
 # <a name="ienumdebugreferenceinfo2clone"></a>IEnumDebugReferenceInfo2::Clone
 傳回一份目前的列舉，為個別的物件。
@@ -36,10 +39,9 @@ int Clone(
 );
 ```
 
-#### <a name="parameters"></a>參數
- `ppEnum`
-
- [out]傳回這個列舉型別為個別物件的複本。
+## <a name="parameters"></a>參數
+`ppEnum`\
+[out]傳回這個列舉型別為個別物件的複本。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

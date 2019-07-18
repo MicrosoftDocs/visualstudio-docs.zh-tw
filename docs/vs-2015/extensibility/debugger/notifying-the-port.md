@@ -1,26 +1,21 @@
 ---
 title: 通知連接埠 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - ports, notification
 ms.assetid: f9fce48e-7d4e-4627-a0fb-77b75428146a
 caps.latest.revision: 10
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: c3cfcc4ee357301aa0e38468b13b983c3d5ca55a
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 8cf3969dda783882f24d02a748f345cdb66fe413
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51763365"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63410064"
 ---
 # <a name="notifying-the-port"></a>通知連接埠
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -38,12 +33,12 @@ ms.locfileid: "51763365"
    以程式設計的方式，當連接埠先接收新的方案節點，它會建立[IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md)介面代表程式。  
   
 > [!NOTE]
->  這不應該混淆與`IDebugProgram2`稍後由偵錯引擎 (DE) 的介面。  
+> 這不應該混淆與`IDebugProgram2`稍後由偵錯引擎 (DE) 的介面。  
   
  連接埠傳送[IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md)程式建立事件回到工作階段偵錯管理員 (SDM) 透過 COM`IConnectionPoint`介面。  
   
 > [!NOTE]
->  這不應該混淆與`IDebugProgramCreateEvent2`DE 稍後傳送的介面。  
+> 這不應該混淆與`IDebugProgramCreateEvent2`DE 稍後傳送的介面。  
   
  事件介面本身，以及傳送連接埠[IDebugPort2](../../extensibility/debugger/reference/idebugport2.md)， [IDebugProcess2](../../extensibility/debugger/reference/idebugprocess2.md)，和[IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md)介面，代表此連接埠，處理，以及程式，分別。 SDM 呼叫[IDebugProgram2::GetEngineInfo](../../extensibility/debugger/reference/idebugprogram2-getengineinfo.md)取得可以偵錯程式 DE 的 GUID。 原本取自 GUID [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md)介面。  
   
@@ -55,4 +50,3 @@ ms.locfileid: "51763365"
  [啟動程式](../../extensibility/debugger/launching-a-program.md)   
  [在啟動後附加](../../extensibility/debugger/attaching-after-a-launch.md)   
  [偵錯工作](../../extensibility/debugger/debugging-tasks.md)
-

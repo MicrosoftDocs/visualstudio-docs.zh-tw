@@ -6,17 +6,20 @@ helpviewer_keywords:
 - IDebugExpressionEvaluator2::SetCallback
 - SetCallback
 ms.assetid: 31e3a99e-e784-44a3-8b19-cc5ef31ed546
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d758d6c34563a2915e295514380cf07c847d86c4
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: f347b687066578d5572a89a6e057fd2cb3b79e0b
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56686791"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66325492"
 ---
 # <a name="idebugexpressionevaluator2setcallback"></a>IDebugExpressionEvaluator2::SetCallback
 可讓運算式評估工具 (EE)，指定偵錯工具引擎 (DE) 將用來讀取計量設定的回呼介面。
@@ -35,10 +38,9 @@ int SetCallback (
 );
 ```
 
-#### <a name="parameters"></a>參數
-`pCallback`
-
- [in]要用於設定回呼介面。
+## <a name="parameters"></a>參數
+`pCallback`\
+[in]要用於設定回呼介面。
 
 ## <a name="return-value"></a>傳回值
 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

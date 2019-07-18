@@ -11,18 +11,19 @@ ms.assetid: 51893967-98c8-4141-ba40-03646f221760
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f5ec540fe2454c0e5b31c93002c099f7a54388a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 10fda5038ab1c69a27e79406167c69adcc560658
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56697763"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62563470"
 ---
 # <a name="debug-html-and-css-sample-code"></a>對 HTML 和 CSS 範例程式碼進行偵錯
 
-本主題中的程式碼是範例檔案[快速入門： 偵錯 HTML 和 CSS](../debugger/quickstart-debug-html-and-css.md)。 快速入門在設計上出現的錯誤，會在此版本的程式碼中修正。
+本主題中的程式碼是範例檔案[快速入門：偵錯 HTML 和 CSS](../debugger/quickstart-debug-html-and-css.md)。 快速入門在設計上出現的錯誤，會在此版本的程式碼中修正。
 
 ## <a name="sample-code"></a>程式碼範例
 下列 HTML 程式碼用於快速入門的 \<body> 標籤中。
@@ -100,5 +101,5 @@ ms.locfileid: "56697763"
 })();
 ```
 
-## <a name="see-also"></a>請參閱
-- [快速入門：偵錯 HTML 和 CSS](../debugger/quickstart-debug-html-and-css.md)
+## <a name="see-also"></a>另請參閱
+- [快速入門：對 HTML 和 CSS 進行偵錯](../debugger/quickstart-debug-html-and-css.md)

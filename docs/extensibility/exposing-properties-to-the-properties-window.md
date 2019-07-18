@@ -7,17 +7,17 @@ helpviewer_keywords:
 - properties [Visual Studio SDK]
 - Property Browser, exposing properties
 ms.assetid: 47f295b5-1ca5-4e7b-bb52-7b926b136622
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4cad9d1cb12358de57c1d64678e45cf3d75ed5de
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: 2cd1f44342199c26506cceb4c77378b13aefd566
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58194907"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66341218"
 ---
 # <a name="expose-properties-to-the-properties-window"></a>公開屬性，以 [屬性] 視窗
 

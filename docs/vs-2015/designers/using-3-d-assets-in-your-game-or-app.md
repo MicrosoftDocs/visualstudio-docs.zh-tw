@@ -16,12 +16,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0ca0150b44bbed9f411af25c5ce3805e553e8272
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 20076e4f8cc05ad971a1cbe710c95f444b80938b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54775107"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63386881"
 ---
 # <a name="using-3-d-assets-in-your-game-or-app"></a>在遊戲或應用程式中使用 3D 資產
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,9 +35,9 @@ ms.locfileid: "54775107"
   
 #### <a name="to-add-the-build-customizations-to-your-project"></a>將組建自訂加入至專案  
   
-1.  在方案總管中，開啟專案的捷徑功能表，然後依序選擇 [組建相依性] 和 [組建自訂]。 [Visual C++ 組建自訂檔] 對話方塊隨即顯示。  
+1. 在方案總管中，開啟專案的捷徑功能表，然後依序選擇 [組建相依性] 和 [組建自訂]。 [Visual C++ 組建自訂檔] 對話方塊隨即顯示。  
   
-2.  在 [可用的組建自訂檔] 下，選取對應至您要用於專案之資產類型的核取方塊，如此表格所述：  
+2. 在 [可用的組建自訂檔] 下，選取對應至您要用於專案之資產類型的核取方塊，如此表格所述：  
   
     |資產類型|組建自訂名稱|  
     |----------------|------------------------------|  
@@ -45,7 +45,7 @@ ms.locfileid: "54775107"
     |3-D 模型|**MeshContentTask(.targets、.props)**|  
     |著色器|**ShaderGraphContentTask(.targets、.props)**|  
   
-3.  選擇 [確定]  按鈕。  
+3. 選擇 [確定]  按鈕。  
   
 ## <a name="including-assets-in-your-build"></a>在組建中包括資產  
  現在，您的專案知道您要使用的不同類型的 3-D 資產，下一步是告訴它哪些檔案是 3-D 資產，以及它們是哪些類型的資產。  
@@ -59,7 +59,7 @@ ms.locfileid: "54775107"
 3. 在 [組態屬性] 下，選擇 [一般]，然後在屬性格線的 [一般] 下，將 [項目類型] 屬性設定為適當的內容管線項目類型。 例如，針對影像或紋理檔，選擇 [影像內容管線]。  
   
    > [!IMPORTANT]
-   >  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 預設會假設應該使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 內建的**影像**項目類型來分類多種類型的影像檔。 因此，您需要變更想要由影像內容管線處理之每個影像的 [項目類型] 屬性。 3D 模型和視覺著色器圖形的其他類型內容管線來源檔，預設為正確的 [項目類型]。  
+   > [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 預設會假設應該使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 內建的**影像**項目類型來分類多種類型的影像檔。 因此，您需要變更想要由影像內容管線處理之每個影像的 [項目類型] 屬性。 3D 模型和視覺著色器圖形的其他類型內容管線來源檔，預設為正確的 [項目類型]。  
   
 4. 選擇 [確定]  按鈕。  
   
@@ -76,13 +76,13 @@ ms.locfileid: "54775107"
   
 #### <a name="to-configure-content-pipeline-properties"></a>設定內容管線屬性  
   
-1.  在方案總管中，於專案中，開啟資產檔案的捷徑功能表，然後選擇 [屬性]。 資產的 [屬性頁] 對話方塊隨即顯示。  
+1. 在方案總管中，於專案中，開啟資產檔案的捷徑功能表，然後選擇 [屬性]。 資產的 [屬性頁] 對話方塊隨即顯示。  
   
-2.  請確定 [組態] 和 [平台] 屬性設定為您要套用變更的值。  
+2. 請確定 [組態] 和 [平台] 屬性設定為您要套用變更的值。  
   
-3.  在 [組態屬性] 下，選擇內容管線節點 (例如，紋理和影像資產的 [影像內容管線])，然後在屬性格線中，將屬性設定為適當的值。 例如，若要在建置時產生紋理資產的 MIP 對應，請將 [產生 Mips] 屬性設定為 [是]。  
+3. 在 [組態屬性] 下，選擇內容管線節點 (例如，紋理和影像資產的 [影像內容管線])，然後在屬性格線中，將屬性設定為適當的值。 例如，若要在建置時產生紋理資產的 MIP 對應，請將 [產生 Mips] 屬性設定為 [是]。  
   
-4.  選擇 [確定]  按鈕。  
+4. 選擇 [確定]  按鈕。  
   
 ### <a name="image-content-pipeline-configuration"></a>影像內容管線組態  
  當您使用影像內容管線工具建置紋理資產時，可以使用各種方式壓縮紋理，以及指出是否應該在建置時產生 MIP 層級，還可以變更輸出檔案的名稱。  
@@ -92,26 +92,26 @@ ms.locfileid: "54775107"
 |**壓縮**|指定用於輸出檔案的壓縮類型。<br /><br /> 可用的選項如下：<br /><br /> -   **不壓縮**<br />-   **BC1_UNORM 壓縮**<br />-   **BC1_UNORM_SRGB 壓縮**<br />-   **BC2_UNORM 壓縮**<br />-   **BC2_UNORM_SRGB 壓縮**<br />-   **BC3_UNORM 壓縮**<br />-   **BC3_UNORM_SRGB 壓縮**<br />-   **BC4_UNORM 壓縮**<br />-   **BC4_SNORM 壓縮**<br />-   **BC5_UNORM 壓縮**<br />-   **BC5_SNORM 壓縮**<br />-   **BC6H_UF16 壓縮**<br />-   **BC6H_SF16 壓縮**<br />-   **BC7_UNORM 壓縮**<br />-   **BC7_UNORM_SRGB 壓縮**<br /><br /> 如需不同 DirectX 版本所支援壓縮格式的資訊，請參閱 [DXGI 程式設計指南](http://go.microsoft.com/fwlink/p/?LinkId=246265)。|  
 |轉換成預乘的 Alpha 格式|[是] 在輸出檔案中將影像轉換成預乘的 Alpha 格式，否則為 [否]。 只會變更輸出檔案，來源影像並不會變更。|  
 |**產生 Mips**|[是] 在建置時產生完整 MIP 鏈結，並將它併入輸出檔案中；否則為 [否]。 如果為 [否]，而且原始程式檔已包含 MIP 對應鏈結，則輸出檔案會有 MIP 鏈結；否則，輸出檔案沒有 MIP 鏈結。|  
-|**內容輸出**|指定輸出檔案的名稱。 **重要事項：** 變更輸出檔案的副檔名並不會影響其檔案格式。|  
+|**內容輸出**|指定輸出檔案的名稱。 **重要：** 變更輸出檔案的副檔名並不會影響其檔案格式。|  
   
 ### <a name="mesh-content-pipeline-configuration"></a>網狀內容管線組態  
  當您使用網狀內容管線工具建置網狀資產時，可以變更輸出檔案的名稱。  
   
 |屬性|描述|  
 |--------------|-----------------|  
-|**內容輸出**|指定輸出檔案的名稱。 **重要事項：** 變更輸出檔案的副檔名並不會影響其檔案格式。|  
+|**內容輸出**|指定輸出檔案的名稱。 **重要：** 變更輸出檔案的副檔名並不會影響其檔案格式。|  
   
 ### <a name="shader-content-pipeline-configuration"></a>著色器內容管線組態  
  當您使用著色器內容管線工具建置著色器資產時，可以變更輸出檔案的名稱。  
   
 |屬性|描述|  
 |--------------|-----------------|  
-|**內容輸出**|指定輸出檔案的名稱。 **重要事項：** 變更輸出檔案的副檔名並不會影響其檔案格式。|  
+|**內容輸出**|指定輸出檔案的名稱。 **重要：** 變更輸出檔案的副檔名並不會影響其檔案格式。|  
   
 ## <a name="loading-and-using-3-d-assets-at-run-time"></a>在執行階段載入和使用 3-D 資產  
   
 ### <a name="using-textures-and-images"></a>使用紋理和影像  
- Direct3D 提供用於建立紋理資源的函式。 在 Direct3D 11 中，D3DX11 公用程式庫提供其他直接從影像檔建立紋理資源和資源檢視的函式。 如需如何在 Direct3D 11 中建立紋理資源的詳細資訊，請參閱[紋理](http://go.microsoft.com/fwlink/p/?LinkID=246267)。 如需如何使用 D3DX11 程式庫從影像檔建立紋理資源或資源檢視的詳細資訊，請參閱[如何從檔案初始化紋理](http://go.microsoft.com/fwlink/p/?LinkId=246268)。  
+ Direct3D 提供用於建立紋理資源的函式。 在 Direct3D 11 中，D3DX11 公用程式庫提供其他直接從影像檔建立紋理資源和資源檢視的函式。 如需如何在 Direct3D 11 中建立紋理資源的詳細資訊，請參閱[紋理](http://go.microsoft.com/fwlink/p/?LinkID=246267)。 如需如何使用 D3DX11 程式庫從影像檔建立紋理資源或資源檢視的詳細資訊，請參閱 [How to:初始化材質的來源檔案](http://go.microsoft.com/fwlink/p/?LinkId=246268)。  
   
 ### <a name="using-3-d-models"></a>使用 3-D 模型  
  Direct3D 11 未提供用於從 3-D 模型建立資源的函式。 而是，您需要撰寫程式碼，來讀取 3-D 模型檔案，並建立代表 3-D 模型的端點和索引緩衝區，以及模型所需的任何資源 (例如，紋理或著色器)。  
@@ -200,10 +200,10 @@ cbuffer MiscVars : register(b3)
   
 ## <a name="related-topics"></a>相關主題  
   
-|標題|描述|  
+|標題|說明|  
 |-----------|-----------------|  
-|[如何：匯出包含 Mipmap 的材質](../designers/how-to-export-a-texture-that-contains-mipmaps.md)|描述如何使用影像內容管線，匯出含有預先計算之 MIP 對應的紋理。|  
-|[如何：匯出包含預乘 Alpha 的材質](../designers/how-to-export-a-texture-that-has-premultiplied-alpha.md)|描述如何使用影像內容管線，匯出含有預乘的 Alpha 值的紋理。|  
-|[如何：匯出材質以搭配 Direct2D 或 Javascipt 應用程式使用](../designers/how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps.md)|描述如何使用影像內容管線，匯出可用於 Direct2D 或 JavaScript 應用程式的紋理。|  
+|[如何：匯出包含 Mipmap 的紋理](../designers/how-to-export-a-texture-that-contains-mipmaps.md)|描述如何使用影像內容管線，匯出含有預先計算之 MIP 對應的紋理。|  
+|[如何：匯出包含預乘 Alpha 的紋理](../designers/how-to-export-a-texture-that-has-premultiplied-alpha.md)|描述如何使用影像內容管線，匯出含有預乘的 Alpha 值的紋理。|  
+|[如何：匯出紋理以與 Direct2D 或 JavaScript 應用程式搭配使用](../designers/how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps.md)|描述如何使用影像內容管線，匯出可用於 Direct2D 或 JavaScript 應用程式的紋理。|  
 |[使用 3D 資產來打造遊戲和應用程式](../designers/working-with-3-d-assets-for-games-and-apps.md)|描述 Visual Studio 提供用於建立和管理 3-D 資產 (包括紋理和影像)、3-D 模型和著色器的編輯工具。|  
 |[如何：匯出著色器](../designers/how-to-export-a-shader.md)|描述如何從著色器設計工具匯出著色器。|

@@ -1,23 +1,20 @@
 ---
 title: 設定圖表上的背景影像 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: e334a24c-8521-4072-b50f-e59158dde145
 caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: fd9d5ca21dbe1b0444c650a127fc0184dfb640f1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 28e2358b92080bd56cfda9d395f87e5c188da221
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49240548"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68189396"
 ---
 # <a name="setting-a-background-image-on-a-diagram"></a>設定圖表上的背景影像
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,21 +25,21 @@ ms.locfileid: "49240548"
   
 #### <a name="to-set-a-background-image-for-a-generated-designer"></a>為產生的設計工具設定背景影像  
   
-1.  將您要用來做為圖表背景的影像檔複製到目前專案的 Dsl\Resources 目錄中。  
+1. 將您要用來做為圖表背景的影像檔複製到目前專案的 Dsl\Resources 目錄中。  
   
-2.  在 **方案總管 中**，以滑鼠右鍵按一下 Dsl\Resources 資料夾，指向**新增**，然後按一下 **現有項目**。  
+2. 在 **方案總管 中**，以滑鼠右鍵按一下 Dsl\Resources 資料夾，指向**新增**，然後按一下 **現有項目**。  
   
-3.  在 [**加入現有項目**] 對話方塊中，瀏覽至 Dsl\Resources 資料夾。  
+3. 在 [**加入現有項目**] 對話方塊中，瀏覽至 Dsl\Resources 資料夾。  
   
-4.  在 **類型的檔案**清單中，按一下**影像檔**。  
+4. 在 **類型的檔案**清單中，按一下**影像檔**。  
   
-5.  按一下您複製到目錄中，映像檔，然後按一下**新增**。  
+5. 按一下您複製到目錄中，映像檔，然後按一下**新增**。  
   
-6.  以滑鼠右鍵按一下 Dsl，然後按一下 **屬性**開啟 Dsl 專案的屬性。  
+6. 以滑鼠右鍵按一下 Dsl，然後按一下 **屬性**開啟 Dsl 專案的屬性。  
   
-7.  在**資源**索引標籤上，按一下 **這個專案未包含預設的資源檔若要建立一個，請按一下這裡。**  
+7. 在**資源**索引標籤上，按一下 **這個專案未包含預設的資源檔若要建立一個，請按一下這裡。**  
   
-8.  加入資源檔中的映像檔，藉由拖曳從圖片**方案總管 中**到資源視窗。  
+8. 加入資源檔中的映像檔，藉由拖曳從圖片**方案總管 中**到資源視窗。  
   
 9. 開啟 [檔案] 功能表，然後按一下選項以儲存專案屬性。  
   
@@ -112,6 +109,3 @@ ms.locfileid: "49240548"
  [自訂文字和影像欄位](../modeling/customizing-text-and-image-fields.md)   
  [巡覽及更新程式碼中的模型](../modeling/navigating-and-updating-a-model-in-program-code.md)   
  [撰寫程式碼來自訂特定領域語言](../modeling/writing-code-to-customise-a-domain-specific-language.md)
-
-
-

@@ -15,17 +15,16 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2fba7e236dee275048d27c8377c819873f2fbad0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: a35e1498c4f2e6a10f56f1ab7687bd8516eb6808
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54782277"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63416704"
 ---
 # <a name="quick-launch-environment-options-dialog-box"></a>選項對話方塊、環境、快速啟動
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 您可以使用 [快速啟動] 快速搜尋選項、範本、功能表這類 IDE 資產，並對其執行動作。 但無法使用 [快速啟動] 來搜尋程式碼和符號。 [快速啟動] 搜尋方塊位於功能表列的右上角，而且選擇 Ctrl+Q 鍵即可存取。 只要在方塊中輸入搜尋字串即可。 若要搜尋包含 @ 的字串，請使用 ”@@”。  
   
  當您安裝 Visual Studio 時，預設會啟用 [快速啟動]。 您可以在功能表列上顯示或隱藏 [快速啟動]，方法是依序選擇 [工具] 和 [選項]。 展開 [環境] 節點，然後選擇 [快速啟動]。 選取或清除 [啟用快速啟動] 核取方塊。 您也可以啟用或停用這個頁面上的搜尋分類。  
@@ -37,19 +36,19 @@ ms.locfileid: "54782277"
   
 |分類|快速鍵|快速鍵描述|  
 |--------------|--------------|--------------------------|  
-|最近使用|@mru<br /><br /> 例如：`@mru font`|最多顯示您 [最近用過的函式] 的五個項目。|  
-|Menus|@menu<br /><br /> 例如：`@menu font`|限制搜尋功能表項目。|  
-|選項|@opt<br /><br /> 例如：`@opt font`|限制搜尋 [選項] 對話方塊中的設定。|  
-|文件|@doc<br /><br /> 例如：`@doc font`|限制搜尋符合搜尋準則之開啟文件的檔案名稱和路徑，但不會搜尋檔案本身內的文字。|  
+|最近使用|@mru<br /><br /> 例如： `@mru font` |最多顯示您 [最近用過的函式] 的五個項目。|  
+|Menus|@menu<br /><br /> 例如： `@menu font` |限制搜尋功能表項目。|  
+|選項|@opt<br /><br /> 例如： `@opt font` |限制搜尋 [選項] 對話方塊中的設定。|  
+|文件|@doc<br /><br /> 例如： `@doc font` |限制搜尋符合搜尋準則之開啟文件的檔案名稱和路徑，但不會搜尋檔案本身內的文字。|  
   
 > [!NOTE]
->  您可以在 [選項] 對話方塊的 [一般] 和 [鍵盤] 頁面上，變更快速鍵。  
+> 您可以在 [選項] 對話方塊的 [一般] 和 [鍵盤] 頁面上，變更快速鍵。  
   
 ## <a name="show-previous-results"></a>顯示先前的結果  
  根據預設，您輸入的搜尋字詞不會在搜尋工作階段之間保留。 如果您搜尋某個字詞，然後將游標移出 [快速啟動] 區域再移回，則會清除搜尋字串。 若要保留搜尋結果，請移至 [選項] 對話方塊，並選擇 [快速啟動]，然後選取 [啟用快速啟動時顯示前一個搜尋的搜尋結果]。 核取方塊。 下次您執行搜尋、離開 [快速啟動] 區域並返回時，[快速啟動] 將會保留上次使用的搜尋字詞，也會顯示搜尋結果。  
   
  如需使用 [快速啟動] 的最新祕訣和訣竅，請參閱 [Visual Studio 部落格](http://go.microsoft.com/fwlink/?LinkId=236054)。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [一般使用者介面項目 (Visual Studio)](../../ide/reference/general-user-interface-elements-visual-studio.md)   
  [環境選項對話方塊](../../ide/reference/environment-options-dialog-box.md)

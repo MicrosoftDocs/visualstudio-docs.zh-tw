@@ -20,11 +20,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 86593ca3ac437b9a36fb671694898a7d80434eba
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56626618"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63003632"
 ---
 # <a name="generateapplicationmanifest-task"></a>GenerateApplicationManifest 工作
 產生 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式資訊清單或原生資訊清單。 原生資訊清單在描述元件時，會定義元件的唯一身分識別，並識別組成元件的所有組件和檔案。 透過指出應用程式的進入點並指定應用程式的安全性層級之後，[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式資訊清單就可以擴充原生資訊清單。

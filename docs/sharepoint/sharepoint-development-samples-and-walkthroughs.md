@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: f2c8894c5e2573c61ff54e38fa41ea0ed1cd3f77
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56599593"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62976250"
 ---
 # <a name="sharepoint-development-samples-and-walkthroughs"></a>SharePoint 程式開發範例和逐步解說
   本章節包含範例應用程式、 程式碼範例和逐步解說，說明語法、 結構和用來建置 SharePoint 解決方案的技術。

@@ -1,5 +1,5 @@
 ---
-title: HOW TO：新增拖放處理常式
+title: 作法：新增拖放處理常式
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: gewarren
@@ -7,14 +7,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 43a147db40ef8e604a3ae7fd8a72f9eb6a704e63
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: b15e0d305140e6e04464091df59432a2cd261796
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57867744"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821933"
 ---
-# <a name="how-to-add-a-drag-and-drop-handler"></a>HOW TO：新增拖放處理常式
+# <a name="how-to-add-a-drag-and-drop-handler"></a>作法：新增拖放處理常式
 
 讓使用者可以將項目拖曳到圖表從其他圖表或 Visual Studio 的其他部分，您可以拖放事件的處理常式新增至您的 DSL。 您也可以加入按兩下等事件的處理常式。 拖放和按兩下處理常式稱為共同*軌跡處理常式*。
 
@@ -34,7 +34,7 @@ using System.Linq;
 
 在新檔案中，針對應該回應拖曳作業的圖形或圖表類別定義部分類別。 覆寫下列方法：
 
--   <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDragOver%2A>- 當滑鼠指標在拖曳作業期間進入圖形時，會呼叫這個方法。 您的方法應該會檢查使用者拖曳的項目，並設定 Effect 屬性，指出使用者是否可將項目放在此圖形上。 Effect 屬性決定游標移至此圖形上的外觀，並決定當使用者放開滑鼠按鈕時，是否呼叫 `OnDragDrop()`。
+- <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDragOver%2A>- 當滑鼠指標在拖曳作業期間進入圖形時，會呼叫這個方法。 您的方法應該會檢查使用者拖曳的項目，並設定 Effect 屬性，指出使用者是否可將項目放在此圖形上。 Effect 屬性決定游標移至此圖形上的外觀，並決定當使用者放開滑鼠按鈕時，是否呼叫 `OnDragDrop()`。
 
     ```csharp
     partial class MyShape // MyShape generated from DSL Definition.
@@ -50,7 +50,7 @@ using System.Linq;
         }
     ```
 
--   <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDragDrop%2A> -此方法稱為，如果使用者放開滑鼠按鈕時，滑鼠指標停留在此圖形或圖表中，如果`OnDragOver(DiagramDragEventArgs e)`之前設定過`e.Effect`以外的值來`None`。
+- <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDragDrop%2A> -此方法稱為，如果使用者放開滑鼠按鈕時，滑鼠指標停留在此圖形或圖表中，如果`OnDragOver(DiagramDragEventArgs e)`之前設定過`e.Effect`以外的值來`None`。
 
     ```csharp
     public override void OnDragDrop(DiagramDragEventArgs e)
@@ -66,7 +66,7 @@ using System.Linq;
     }
     ```
 
--   <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDoubleClick%2A> -當使用者按兩下的圖形或圖表時，會呼叫此方法。
+- <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDoubleClick%2A> -當使用者按兩下的圖形或圖表時，會呼叫此方法。
 
      如需詳細資訊，請參閱[如何：攔截圖案或 Decorator 上](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md)。
 
@@ -80,9 +80,9 @@ MEF (Managed Extensibility Framework) 可讓您定義使用最小組態安裝的
 
 ### <a name="to-define-a-mef-gesture-handler"></a>定義 MEF 軌跡處理常式
 
-1.  將新增至您**Dsl**並**DslPackage**專案**MefExtension**所述的檔案[使用 MEF 擴充您的 DSL](../modeling/extend-your-dsl-by-using-mef.md)。
+1. 將新增至您**Dsl**並**DslPackage**專案**MefExtension**所述的檔案[使用 MEF 擴充您的 DSL](../modeling/extend-your-dsl-by-using-mef.md)。
 
-2.  您現在可以將軌跡處理常式定義為 MEF 元件：
+2. 您現在可以將軌跡處理常式定義為 MEF 元件：
 
     ```csharp
     // This attribute is defined in the generated file
@@ -114,7 +114,7 @@ MEF (Managed Extensibility Framework) 可讓您定義使用最小組態安裝的
 
      您可以建立多個軌跡處理常式元件，例如當您有不同類型的拖曳物件時。
 
-3.  加入目標圖形、連接線或圖表類別的部分類別定義，並定義 `IsAcceptableDropItem()` 和 `ProcessDragDropItem()` 方法。 這些方法一開始必須先從事件引數擷取拖曳的項目。 如需詳細資訊，請參閱 <<c0> [ 如何取得拖曳項目的參考](#to-send-an-object-from-a-source-dsl)。
+3. 加入目標圖形、連接線或圖表類別的部分類別定義，並定義 `IsAcceptableDropItem()` 和 `ProcessDragDropItem()` 方法。 這些方法一開始必須先從事件引數擷取拖曳的項目。 如需詳細資訊，請參閱 <<c0> [ 如何取得拖曳項目的參考](#to-send-an-object-from-a-source-dsl)。
 
 ## <a name="how-to-decode-the-dragged-item"></a>如何解碼拖曳的項目
 
@@ -124,17 +124,17 @@ MEF (Managed Extensibility Framework) 可讓您定義使用最小組態安裝的
 
 若要探索拖曳來源資訊的可用格式，請在偵錯模式中執行程式碼，並在 `OnDragOver()` 或 `CanDragDrop()` 的進入點設定中斷點。 檢查 `DiagramDragEventArgs` 參數的值。 這項資訊提供下列兩種格式：
 
--   <xref:System.Windows.Forms.IDataObject>  `Data` -這個屬性包含來源物件的序列化的版本通常會以一個以上的格式。 其最有用的函式包括：
+- <xref:System.Windows.Forms.IDataObject>  `Data` -這個屬性包含來源物件的序列化的版本通常會以一個以上的格式。 其最有用的函式包括：
 
-    -   diagrameventargs.data.getdataformats （）-列出您可以在其中解碼的拖曳的物件的格式。 例如，如果使用者從桌面拖曳檔案，可用的格式包括檔案名稱 ("`FileNameW`")。
+  - diagrameventargs.data.getdataformats （）-列出您可以在其中解碼的拖曳的物件的格式。 例如，如果使用者從桌面拖曳檔案，可用的格式包括檔案名稱 ("`FileNameW`")。
 
-    -   `diagramEventArgs.Data.GetData(format)` -將解碼的拖曳的物件中指定的格式。 將物件轉換成適當的類型。 例如：
+  - `diagramEventArgs.Data.GetData(format)` -將解碼的拖曳的物件中指定的格式。 將物件轉換成適當的類型。 例如：
 
-         `string fileName = diagramEventArgs.Data.GetData("FileNameW") as string;`
+    `string fileName = diagramEventArgs.Data.GetData("FileNameW") as string;`
 
-         您也可以從使用您的自訂格式的來源傳輸模型匯流排參考等物件。 如需詳細資訊，請參閱 <<c0> [ 傳送模型匯流排參考中拖曳和置放如何](#to-send-an-object-from-a-source-dsl)。
+    您也可以從使用您的自訂格式的來源傳輸模型匯流排參考等物件。 如需詳細資訊，請參閱 <<c0> [ 傳送模型匯流排參考中拖曳和置放如何](#to-send-an-object-from-a-source-dsl)。
 
--   <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype> `Prototype` -如果您想讓使用者從 DSL 或 UML 模型拖曳項目，請使用這個屬性。 項目群組原型包含一個或多個物件、連結及其屬性值。 這個屬性也可用於貼上作業及加入工具箱中的項目時。 在原型中，物件及其類型會由 GUID 識別。 例如，下列程式碼允許使用者從 UML 圖表或 [UML 模型總管] 拖曳類別項目：
+- <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype> `Prototype` -如果您想讓使用者從 DSL 或 UML 模型拖曳項目，請使用這個屬性。 項目群組原型包含一個或多個物件、連結及其屬性值。 這個屬性也可用於貼上作業及加入工具箱中的項目時。 在原型中，物件及其類型會由 GUID 識別。 例如，下列程式碼允許使用者從 UML 圖表或 [UML 模型總管] 拖曳類別項目：
 
     ```csharp
     private bool IsAcceptableDropItem(DiagramDragEventArgs e)
@@ -158,17 +158,17 @@ MEF (Managed Extensibility Framework) 可讓您定義使用最小組態安裝的
 
 ### <a name="to-prepare-a-dsl-project-for-model-bus"></a>為模型匯流排準備 DSL 專案
 
-1.  進行來源 DSL 的 Visual Studio 模型匯流排存取：
+進行來源 DSL 的 Visual Studio 模型匯流排存取：
 
-    1.  如果尚未安裝 Visual Studio 模型匯流排擴充功能，請下載並進行安裝。 如需詳細資訊，請參閱 < [Visualization and Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=185579)。
+1. 如果尚未安裝 Visual Studio 模型匯流排擴充功能，請下載並進行安裝。 如需詳細資訊，請參閱 < [Visualization and Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=185579)。
 
-    2.  在 [DSL 設計工具] 中，開啟來源 DSL 的 DSL 定義檔。 以滑鼠右鍵按一下設計介面，然後按一下**啟用 Modelbus**。 在對話方塊中，選擇其中一個或兩個選項。  按一下 [確定] 。 新專案 "ModelBus" 會隨即加入至 DSL 方案。
+2. 在 [DSL 設計工具] 中，開啟來源 DSL 的 DSL 定義檔。 以滑鼠右鍵按一下設計介面，然後按一下**啟用 Modelbus**。 在對話方塊中，選擇其中一個或兩個選項。  按一下 [確定 **Deploying Office Solutions**]。 新專案 "ModelBus" 會隨即加入至 DSL 方案。
 
-    3.  按一下 **轉換所有範本**並重建方案。
+3. 按一下 **轉換所有範本**並重建方案。
 
 ### <a name="to-send-an-object-from-a-source-dsl"></a>從來源 DSL 傳送物件
 
-1.  在您的 ElementOperations 子類別中，覆寫 `Copy()`，將模型匯流排參考 (MBR) 編碼成 IDataObject。 當使用者從來源圖表開始拖曳時，會呼叫這個方法。 接著在使用者放入目標圖表中時，IDataObject 中會提供編碼的 MBR。
+1. 在您的 ElementOperations 子類別中，覆寫 `Copy()`，將模型匯流排參考 (MBR) 編碼成 IDataObject。 當使用者從來源圖表開始拖曳時，會呼叫這個方法。 接著在使用者放入目標圖表中時，IDataObject 中會提供編碼的 MBR。
 
     ```csharp
     using Microsoft.VisualStudio.Modeling;
@@ -208,13 +208,13 @@ MEF (Managed Extensibility Framework) 可讓您定義使用最小組態安裝的
 
 ### <a name="to-receive-a-model-bus-reference-from-a-dsl-in-a-target-dsl-or-uml-project"></a>從目標 DSL 或 UML 專案中的 DSL 接收模型匯流排參考
 
-1.  在目標 DSL 專案中，將專案參考加入至：
+1. 在目標 DSL 專案中，將專案參考加入至：
 
-    -   來源 DSL 專案。
+    - 來源 DSL 專案。
 
-    -   來源 ModelBus 專案。
+    - 來源 ModelBus 專案。
 
-2.  在軌跡處理常式的程式碼檔案中，加入下列命名空間參考：
+2. 在軌跡處理常式的程式碼檔案中，加入下列命名空間參考：
 
     ```csharp
     using Microsoft.VisualStudio.Modeling;
@@ -226,7 +226,7 @@ MEF (Managed Extensibility Framework) 可讓您定義使用最小組態安裝的
     using SourceDslNamespace.ModelBusAdapters;
     ```
 
-3.  下列範例說明如何取得來源模型項目的存取權：
+3. 下列範例說明如何取得來源模型項目的存取權：
 
     ```csharp
     partial class MyTargetShape // or diagram or connector
@@ -273,7 +273,7 @@ MEF (Managed Extensibility Framework) 可讓您定義使用最小組態安裝的
 
 ### <a name="to-accept-an-element-sourced-from-a-uml-model"></a>接受源自 UML 模型的項目
 
--   下列程式碼範例接受從 UML 圖表放置的物件。
+- 下列程式碼範例接受從 UML 圖表放置的物件。
 
     ```csharp
     using Microsoft.VisualStudio.ArchitectureTools.Extensibility;
@@ -574,6 +574,6 @@ namespace Company.CompartmentDrag  // EDIT.
 ## <a name="see-also"></a>另請參閱
 
 - [自訂複製行為](../modeling/customizing-copy-behavior.md)
-- [部署特定領域語言方案](../modeling/deploying-domain-specific-language-solutions.md)
+- [部署特定領域語言方案](msi-and-vsix-deployment-of-a-dsl.md)
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]

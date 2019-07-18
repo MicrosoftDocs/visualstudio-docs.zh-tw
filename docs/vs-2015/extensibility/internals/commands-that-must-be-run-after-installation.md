@@ -1,26 +1,21 @@
 ---
 title: 必須在安裝後執行的命令 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - post-install commands
 ms.assetid: c9601f2e-2c6e-4da9-9a6e-e707319b39e2
 caps.latest.revision: 23
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 90ce272270ffd511ee3b0efe8a711730ccdb92b5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 158119759f8e90161e1f3b5267be498dfc1c9b38
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51724190"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441532"
 ---
 # <a name="commands-that-must-be-run-after-installation"></a>必須在安裝後執行的命令
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -28,7 +23,7 @@ ms.locfileid: "51724190"
 如果您部署您的延伸模組，透過.msi 檔案，您必須執行`devenv /setup`為了讓探索您的擴充功能的 Visual Studio 安裝的一部分。  
   
 > [!NOTE]
->  本主題資訊適用於尋找 DevEnv 使用 Visual Studio 2008 和更早版本。 如需如何探索 DevEnv 與更新版本的 Visual Studio 的詳細資訊，請參閱[偵測系統需求](../../extensibility/internals/detecting-system-requirements.md)。  
+> 本主題資訊適用於尋找 DevEnv 使用 Visual Studio 2008 和更早版本。 如需如何探索 DevEnv 與更新版本的 Visual Studio 的詳細資訊，請參閱[偵測系統需求](../../extensibility/internals/detecting-system-requirements.md)。  
   
 ## <a name="finding-devenvexe"></a>尋找 devenv.exe  
  您可以找出每個版本的 devenv.exe 從登錄值[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]撰寫安裝程式，使用 RegLocator 資料表和 AppSearch 資料表來儲存為屬性的登錄值。 如需詳細資訊，請參閱 <<c0> [ 偵測系統需求](../../extensibility/internals/detecting-system-requirements.md)。  
@@ -64,7 +59,7 @@ ms.locfileid: "51724190"
   
 ### <a name="customaction-table-rows-to-run-devenvexe"></a>若要執行 devenv.exe CustomAction 資料表的資料列  
   
-|動作|類型|原始程式檔|目標|  
+|動作|類型|Source|Target|  
 |------------|----------|------------|------------|  
 |CA_RunDevenv2002|1586|DEVENV_EXE_2002|/setup|  
 |CA_RunDevenv2003|1586|DEVENV_EXE_2003|/setup|  
@@ -74,7 +69,7 @@ ms.locfileid: "51724190"
  自訂動作必須編寫至 InstallExecuteSequence 資料表，以排程為在安裝期間執行。 使用條件資料行的每個資料列中對應的屬性，以防止若執行自訂動作版本[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]系統上未安裝。  
   
 > [!NOTE]
->  `Null` 屬性評估為`False`時條件中使用。  
+> `Null` 屬性評估為`False`時條件中使用。  
   
  針對每個自訂動作 [順序] 欄的值取決於 Windows 安裝程式套件中的其他順序值。 序列值應為使得 devenv.exe 自訂動作以執行盡可能接近之前 installfinalize 發生標準動作。  
   
@@ -89,4 +84,3 @@ ms.locfileid: "51724190"
   
 ## <a name="see-also"></a>另請參閱  
  [使用 Windows Installer 安裝 VSPackage](../../extensibility/internals/installing-vspackages-with-windows-installer.md)
-

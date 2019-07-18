@@ -1,25 +1,25 @@
 ---
-title: HOW TO：建立。Vsct 檔案 |Microsoft Docs
+title: 作法：建立。Vsct 檔案 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - VSCT files, creating
 ms.assetid: b955f51c-f9f9-49c3-a8e4-63b6eb0e0341
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d8dd2e677cae2e54a8dff716aef72f1d6abc6b40
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 95b085975a86db248517751fde7bd88c8bc2e35e
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56602802"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66328752"
 ---
-# <a name="how-to-create-a-vsct-file"></a>HOW TO：建立.vsct 檔
+# <a name="how-to-create-a-vsct-file"></a>作法：建立.vsct 檔
 
-有數種方式可建立以 XML 為基礎的 Visual Studio 命令資料表設定 (*.vsct*) 檔案。
+有數種方式可建立以 XML 為基礎的 Visual Studio 命令資料表設定 ( *.vsct*) 檔案。
 
 - 您可以建立新的 VSPackage 中[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]封裝範本。
 
@@ -45,7 +45,7 @@ ms.locfileid: "56602802"
 
 6. 在 XSD 結構描述的清單中，選取*vsct.xsd*結構描述。 如果它不在清單中，按一下**新增**，然後尋找 本機磁碟機上的檔案。 按一下 **確定**完畢時。
 
-7. 在 XML 檔案中，輸入 *< CommandTable* ，然後按** 索引標籤**。輸入關閉標記*>*。
+7. 在 XML 檔案中，輸入 *< CommandTable* ，然後按 **索引標籤**。輸入關閉標記 *>* 。
 
     此動作會建立基本 *.vsct*檔案。
 
@@ -53,7 +53,7 @@ ms.locfileid: "56602802"
 
 <a name="how-to-create-a-dot-vsct-file-from-an-existing-dot-ctc-file"></a>
 
-## <a name="how-to-create-a-vsct-file-from-an-existing-ctc-file"></a>HOW TO：從現有的.ctc 檔建立.vsct 檔
+## <a name="how-to-create-a-vsct-file-from-an-existing-ctc-file"></a>作法：從現有的.ctc 檔建立.vsct 檔
 
 您可以建立以 XML 為基礎 *.vsct*現有命令資料表中的檔案 *.ctc*原始程式檔。 這樣做，您可以充分利用新的 XML [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 命令資料表 (VSCT) 編譯器格式。
 
@@ -80,7 +80,7 @@ ms.locfileid: "56602802"
     這個動作會建立新 *.vsct* XML 命令資料表原始程式檔。 您可以使用來編譯檔案*Vsct.exe*，使用 VSCT 編譯器，當您針對任何其他 *.vsct*檔案。
 
    > [!NOTE]
-   >  您可以改善可讀性 *.vsct*藉由重新格式化 XML 註解的檔案。
+   > 您可以改善可讀性 *.vsct*藉由重新格式化 XML 註解的檔案。
 
 <a name="how-to-create-a-dot-vsct-file-from-an-existing-dot-cto-file"></a>
 
@@ -90,13 +90,13 @@ ms.locfileid: "56602802"
 
 ### <a name="to-create-a-vsct-file-from-a-cto-file"></a>從 .cto 檔建立 .vsct 檔
 
-1.  取得的複本 *.cto*檔案和其對應 *.ctsym*檔案。
+1. 取得的複本 *.cto*檔案和其對應 *.ctsym*檔案。
 
-2.  將檔案放置在相同的目錄*vsct.exe*編譯器。
+2. 將檔案放置在相同的目錄*vsct.exe*編譯器。
 
-3.  在 Visual Studio 命令提示字元中，請移至 包含的目錄 *.cto*並 *.ctsym*檔案。
+3. 在 Visual Studio 命令提示字元中，請移至 包含的目錄 *.cto*並 *.ctsym*檔案。
 
-4.  類型
+4. 類型
 
     ```
     vsct.exe <ctofilename>.cto <vsctfilename>.vsct -S<symfilename>.ctsym
@@ -111,9 +111,9 @@ ms.locfileid: "56602802"
 
 ### <a name="to-add-a-vsct-file-to-project-compilation"></a>將專案編譯中加入.vsct 檔
 
-1.  在編輯器中開啟您的專案檔。 如果載入專案時，您必須先卸載它。
+1. 在編輯器中開啟您的專案檔。 如果載入專案時，您必須先卸載它。
 
-2.  新增[ItemGroup 項目](../../msbuild/itemgroup-element-msbuild.md)包含`VSCTCompile`項目，如下列範例所示。
+2. 新增[ItemGroup 項目](../../msbuild/itemgroup-element-msbuild.md)包含`VSCTCompile`項目，如下列範例所示。
 
     ```xml
     <ItemGroup>
@@ -126,7 +126,7 @@ ms.locfileid: "56602802"
 
      `ResourceName`元素應永遠設定為`Menus.ctmenu`。
 
-3.  如果您的專案包含 *.resx*檔案中，新增`EmbeddedResource`包含的項目`MergeWithCTO`項目，如下列範例所示：
+3. 如果您的專案包含 *.resx*檔案中，新增`EmbeddedResource`包含的項目`MergeWithCTO`項目，如下列範例所示：
 
     ```xml
     <EmbeddedResource Include="VSPackage.resx">
@@ -138,9 +138,9 @@ ms.locfileid: "56602802"
 
      此標記應該進入`ItemGroup`包含內嵌的資源的項目。
 
-4.  開啟封裝檔案，通常名為 *\<ProjectName\>Package.cs*或是 *\<ProjectName\>Package.vb*，在編輯器中。
+4. 開啟封裝檔案，通常名為 *\<ProjectName\>Package.cs*或是 *\<ProjectName\>Package.vb*，在編輯器中。
 
-5.  新增`ProvideMenuResource`屬性加入該套件類別，如下列範例所示。
+5. 新增`ProvideMenuResource`屬性加入該套件類別，如下列範例所示。
 
     ```csharp
     [ProvideMenuResource("Menus.ctmenu", 1)]

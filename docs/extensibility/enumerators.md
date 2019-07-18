@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, enumerators
 ms.assetid: a60030c5-e1d1-47e1-84bb-cbfe838ab479
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 37f469ecc0ae097592a128b30a6a6f189d58d94b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 2d3a0876dfd3a9d7b9cc86b18f6e9a6ba3b780d3
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56689742"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66334501"
 ---
 # <a name="enumerators"></a>列舉程式
 此區段會列出原始檔控制外掛程式必須了解原始檔控制外掛程式 API 中的列舉值資料類型。

@@ -17,26 +17,26 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 202640fbe484fc9b384e3e50484a1b4fee63bc4a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 00271d77cb5b172fbbbf02682eb7e23c6246ca23
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55914223"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62939330"
 ---
 # <a name="bookmark-control"></a>書籤控制項
   <xref:Microsoft.Office.Tools.Word.Bookmark> 控制項是具有唯一名稱、可公開事件及繫結至資料的書籤。 書籤可以做為預留位置，以標記 Microsoft Office Word 文件中的項目或位置。 <xref:Microsoft.Office.Tools.Word.Bookmark> 控制項是 <xref:Microsoft.Office.Interop.Word.Bookmark> 物件和 <xref:Microsoft.Office.Interop.Word.Range> 物件的組合。
 
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
 
- 在文件層級專案中，您可以新增<xref:Microsoft.Office.Tools.Word.Bookmark>控制項加入文件在設計階段或執行階段。 在 VSTO 增益集專案中，您可以新增<xref:Microsoft.Office.Tools.Word.Bookmark>控制項加入任何開啟的文件，在執行階段。 如需詳細資訊，請參閱[＜How to：將書籤控制項加入 Word 文件](../vsto/how-to-add-bookmark-controls-to-word-documents.md)。
+ 在文件層級專案中，您可以新增<xref:Microsoft.Office.Tools.Word.Bookmark>控制項加入文件在設計階段或執行階段。 在 VSTO 增益集專案中，您可以新增<xref:Microsoft.Office.Tools.Word.Bookmark>控制項加入任何開啟的文件，在執行階段。 如需詳細資訊，請參閱[如何：將書籤控制項加入 Word 文件](../vsto/how-to-add-bookmark-controls-to-word-documents.md)。
 
 ## <a name="bind-data-to-the-control"></a>將資料繫結至控制項
  <xref:Microsoft.Office.Tools.Word.Bookmark> 控制項支援簡單資料繫結。 書籤應該使用 <xref:System.Windows.Forms.IBindableComponent.DataBindings%2A> 屬性繫結至資料來源。 書籤的預設資料繫結屬性是 <xref:Microsoft.Office.Tools.Word.Bookmark.Text%2A> 屬性。
 
  如果更新繫結資料集中的資料，<xref:Microsoft.Office.Tools.Word.Bookmark>控制項會顯示所做的變更。
 
- 在文件層級專案中，您也可以使用 [資料來源]  視窗，將資料繫結至書籤。 如需詳細資訊，請參閱[＜How to：物件的資料填入文件](../vsto/how-to-populate-documents-with-data-from-objects.md)。
+ 在文件層級專案中，您也可以使用 [資料來源]  視窗，將資料繫結至書籤。 如需詳細資訊，請參閱[如何：物件的資料填入文件](../vsto/how-to-populate-documents-with-data-from-objects.md)。
 
 ## <a name="formatting"></a>格式化
  可套用至 <xref:Microsoft.Office.Interop.Word.Bookmark> 的格式，也可套用至 <xref:Microsoft.Office.Tools.Word.Bookmark> 控制項。 此格式設定，包括字型、 縮排、 間距、 編號、 和樣式。
@@ -95,19 +95,19 @@ ms.locfileid: "55914223"
 
 下列事件適用於 <xref:Microsoft.Office.Tools.Word.Bookmark> 控制項：
 
--   <xref:Microsoft.Office.Tools.Word.Bookmark.BeforeDoubleClick>
+- <xref:Microsoft.Office.Tools.Word.Bookmark.BeforeDoubleClick>
 
--   <xref:Microsoft.Office.Tools.Word.Bookmark.BeforeRightClick>
+- <xref:Microsoft.Office.Tools.Word.Bookmark.BeforeRightClick>
 
--   <xref:Microsoft.Office.Tools.Word.Bookmark.BindingContextChanged>
+- <xref:Microsoft.Office.Tools.Word.Bookmark.BindingContextChanged>
 
--   <xref:Microsoft.Office.Tools.Word.Bookmark.Deselected>
+- <xref:Microsoft.Office.Tools.Word.Bookmark.Deselected>
 
--   <xref:System.ComponentModel.IComponent.Disposed>
+- <xref:System.ComponentModel.IComponent.Disposed>
 
--   <xref:Microsoft.Office.Tools.Word.Bookmark.Selected>
+- <xref:Microsoft.Office.Tools.Word.Bookmark.Selected>
 
--   <xref:Microsoft.Office.Tools.Word.Bookmark.SelectionChange>
+- <xref:Microsoft.Office.Tools.Word.Bookmark.SelectionChange>
 
 ## <a name="see-also"></a>另請參閱
 

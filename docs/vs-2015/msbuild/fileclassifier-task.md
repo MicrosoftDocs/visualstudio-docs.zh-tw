@@ -18,22 +18,21 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 58d81e5553fe4fd4f08bb30f5108e411b2d71c7d
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 2077b1df6d6362c924527e296d36c041e7bd9929
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54803812"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65693790"
 ---
 # <a name="fileclassifier-task"></a>FileClassifier 工作
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 <xref:Microsoft.Build.Tasks.Windows.FileClassifier> 工作會將一組來源資源分類為將內嵌至組件的來源資源。 如果無法將資源當地語系化，即會將它內嵌至主應用程式組件；否則，會將它內嵌至附屬組件。  
   
 ## <a name="task-parameters"></a>工作參數  
   
-|參數|描述|  
+|參數|說明|  
 |---------------|-----------------|  
 |`CLREmbeddedResource`|未使用。|  
 |`CLRResourceFiles`|未使用。|  
@@ -72,4 +71,4 @@ ms.locfileid: "54803812"
  [工作參考](../msbuild/wpf-msbuild-task-reference.md)   
  [MSBuild 參考](../msbuild/msbuild-reference.md)   
  [工作參考](../msbuild/msbuild-task-reference.md)   
- [建置 WPF 應用程式 (WPF)](http://msdn.microsoft.com/library/a58696fd-bdad-4b55-9759-136dfdf8b91c)
+ [建置 WPF 應用程式 (WPF)](https://msdn.microsoft.com/library/a58696fd-bdad-4b55-9759-136dfdf8b91c)

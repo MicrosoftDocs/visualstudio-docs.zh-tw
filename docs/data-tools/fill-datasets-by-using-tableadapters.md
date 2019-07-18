@@ -19,19 +19,19 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: eb1fdf57be1630468ee3990028a417565a914639
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.openlocfilehash: f0047ee38a6fda4738c773c36a85e14cba1e37fe
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55937990"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745533"
 ---
 # <a name="fill-datasets-by-using-tableadapters"></a>使用 TableAdapter 填入資料集
 
 TableAdapter 元件會填入資料庫，並根據一或多個查詢或您指定的預存程序的資料的資料集。 也可以執行 Tableadapter 加入、 更新和刪除資料庫保存您對資料集的變更。 您也可以發出全域不到任何特定資料表相關的命令。
 
 > [!NOTE]
-> Visual Studio 設計工具會產生 TableAdapters。 如果您要以程式設計方式建立資料集，然後使用資料配接器，也就是.NET Framework 類別。
+> Visual Studio 設計工具會產生 TableAdapters。 如果您要以程式設計方式建立資料集，然後使用資料配接器，也就是一個.NET 類別。
 
 如需 TableAdapter 作業的詳細資訊，您可以直接跳到其中一個主題：
 
@@ -52,7 +52,7 @@ Tableadapter 會連接到資料庫、 執行的查詢或預存程序，並使用
 
 ![用戶端應用程式中的資料流程](../data-tools/media/clientdatadiagram.gif)
 
-雖然 TableAdapters 的設計是以**Dataset 設計工具**，做為巢狀類別的不會產生的 TableAdapter 類別<xref:System.Data.DataSet>。 它們位於不同的命名空間專屬於每個資料集。 比方說，如果您擁有名為資料集`NorthwindDataSet`，相關聯的 TableAdapters<xref:System.Data.DataTable>中的 s`NorthwindDataSet`會在`NorthwindDataSetTableAdapters`命名空間。 若要以程式設計方式存取特定的 TableAdapter，您必須宣告 TableAdapter 的新執行個體。 例如：
+雖然 TableAdapters 的設計是以**Dataset 設計工具**，做為巢狀類別的不會產生的 TableAdapter 類別<xref:System.Data.DataSet>。 它們位於不同的命名空間專屬於每個資料集。 比方說，如果您擁有名為資料集`NorthwindDataSet`，相關聯的 TableAdapters<xref:System.Data.DataTable>中的 s`NorthwindDataSet`會在`NorthwindDataSetTableAdapters`命名空間。 若要以程式設計方式存取特定的 TableAdapter，您必須宣告 TableAdapter 的新執行個體。 例如:
 
 [!code-csharp[VbRaddataTableAdapters#7](../data-tools/codesnippet/CSharp/fill-datasets-by-using-tableadapters_1.cs)]
 [!code-vb[VbRaddataTableAdapters#7](../data-tools/codesnippet/VisualBasic/fill-datasets-by-using-tableadapters_1.vb)]
@@ -85,7 +85,7 @@ Tableadapter 會擴充功能的標準資料配接器藉由將封裝設定<xref:S
 
 ## <a name="tableadapter-methods-and-properties"></a>TableAdapter 方法和屬性
 
-TableAdapter 類別不是屬於[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]。 這表示您無法進行查詢文件中的**物件瀏覽器**。 它會建立在設計階段，當您使用其中一個先前所述精靈。 當您在建立時指派給 TableAdapter 的名稱根據您正在使用之資料表的名稱。 例如，當您建立名為資料庫中的資料表為基礎的 TableAdapter `Orders`，名為 TableAdapter `OrdersTableAdapter`。 可以使用變更類別名稱的 TableAdapter**名稱**中的屬性**Dataset 設計工具**。
+TableAdapter 類別不是.NET 類型。 這表示您無法進行查詢文件中的**物件瀏覽器**。 它會建立在設計階段，當您使用其中一個先前所述精靈。 當您在建立時指派給 TableAdapter 的名稱根據您正在使用之資料表的名稱。 例如，當您建立名為資料庫中的資料表為基礎的 TableAdapter `Orders`，名為 TableAdapter `OrdersTableAdapter`。 可以使用變更類別名稱的 TableAdapter**名稱**中的屬性**Dataset 設計工具**。
 
 以下是常用的方法和 Tableadapter 的屬性：
 
@@ -114,7 +114,7 @@ Tableadapter 會使用資料命令，來讀取和寫入資料庫中。 使用 Ta
 
 ## <a name="tableadapter-support-for-nullable-types"></a>TableAdapter 支援可為 null 的型別
 
-Tableadapter 支援可為 null 的型別`Nullable(Of T)`和`T?`。 如需 Visual Basic 可為 Null 型別的詳細資訊，請參閱[可為 Null 的實值類型](/dotnet/visual-basic/programming-guide/language-features/data-types/nullable-value-types)。 如需有關可為 null 的類型，在C#，請參閱[使用可為 null 的型別](/dotnet/csharp/programming-guide/nullable-types/using-nullable-types)。
+Tableadapter 支援可為 null 的型別`Nullable(Of T)`和`T?`。 如需 Visual Basic 可為 Null 型別的詳細資訊，請參閱[可為 Null 的實值類型](/dotnet/visual-basic/programming-guide/language-features/data-types/nullable-value-types)。 如需 C# 中的可為 null 類型的詳細資訊，請參閱[使用可為 null 的型別](/dotnet/csharp/programming-guide/nullable-types/using-nullable-types)。
 
 <a name="tableadaptermanager-reference"></a>
 
@@ -122,7 +122,7 @@ Tableadapter 支援可為 null 的型別`Nullable(Of T)`和`T?`。 如需 Visual
 
 根據預設，當您建立包含相關的資料表的資料集時，會產生 TableAdapterManager 類別。 若要防止產生的類別，將變更的值`Hierarchical Update`屬性為 false 的資料集。 當您拖曳到設計介面上的 Windows Form 或 WPF 頁面產生關聯的資料表時，Visual Studio 會宣告類別成員變數。 如果您不使用資料繫結，您必須以手動方式將變數宣告。
 
-TableAdapterManager 類別不是屬於[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]。 因此，您無法查詢文件中。 它會建立在設計階段資料集的建立程序的一部分。
+TableAdapterManager 類別不是.NET 類型。 因此，您無法查詢文件中。 它會建立在設計階段資料集的建立程序的一部分。
 
 以下是常用的方法和屬性`TableAdapterManager`類別：
 

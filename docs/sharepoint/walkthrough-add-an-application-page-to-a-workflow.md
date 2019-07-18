@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 930252a509466fa65a7cbdf2eabac35cfeb25081
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
-ms.translationtype: MT
+ms.openlocfilehash: 032447051bc03b037abba2920d48473f0d73935f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54865824"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63409552"
 ---
 # <a name="walkthrough-add-an-application-page-to-a-workflow"></a>逐步解說：將應用程式頁面加入至工作流程
   本逐步解說示範如何新增應用程式頁面，以顯示衍生自工作流程在工作流程專案的資料。 本文是根據本主題所述之專案[逐步解說：建立工作流程關聯與初始表單](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md)。
@@ -38,22 +38,22 @@ ms.locfileid: "54865824"
 ## <a name="prerequisites"></a>必要條件
  您需要下列元件才能完成此逐步解說：
 
--   支援的版本[!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)]和 SharePoint。
+- 支援的版本[!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)]和 SharePoint。
 
--   Visual Studio。
+- Visual Studio。
 
--   您也必須完成主題中的專案[逐步解說：建立工作流程關聯與初始表單](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md)。
+- 您也必須完成主題中的專案[逐步解說：建立工作流程關聯與初始表單](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md)。
 
 ## <a name="ammend-the-workflow-code"></a>Ammend 工作流程程式碼
  首先，新增一行程式碼來設定結果資料行值的經費支出報表數量的工作流程。 此值稍後用於經費支出報表摘要計算。
 
 #### <a name="to-set-the-value-of-the-outcome-column-in-the-workflow"></a>若要設定工作流程中的結果資料行的值
 
-1.  載入已完成的專案從主題[逐步解說：使用關聯與初始化表單建立工作流程](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md)成[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。
+1. 載入已完成的專案從主題[逐步解說：使用關聯與初始化表單建立工作流程](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md)成[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。
 
-2.  開啟的程式碼*Workflow1.cs*或是*workflow1.cs* （取決於您的程式語言）。
+2. 開啟的程式碼*Workflow1.cs*或是*workflow1.cs* （取決於您的程式語言）。
 
-3.  底部`createTask1_MethodInvoking`方法中，新增下列程式碼：
+3. 底部`createTask1_MethodInvoking`方法中，新增下列程式碼：
 
     ```vb
     createTask1_TaskProperties1.ExtendedProperties("Outcome") =
@@ -70,11 +70,11 @@ ms.locfileid: "54865824"
 
 #### <a name="to-add-an-application-page-to-the-project"></a>若要將應用程式頁面加入至專案
 
-1.  選擇 ExpenseReport 專案，，然後在功能表列上選擇 **專案** > **加入新項目**。
+1. 選擇 ExpenseReport 專案，，然後在功能表列上選擇 **專案** > **加入新項目**。
 
-2.  在**範本**窗格中，選擇**應用程式頁面**範本，使用專案項目的預設名稱 (**ApplicationPage1.aspx**)，然後選擇 [ **新增**] 按鈕。
+2. 在**範本**窗格中，選擇**應用程式頁面**範本，使用專案項目的預設名稱 (**ApplicationPage1.aspx**)，然後選擇 [ **新增**] 按鈕。
 
-3.  在  [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] ApplicationPage1.aspx 的取代`PlaceHolderMain`有下列區段：
+3. 在  [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] ApplicationPage1.aspx 的取代`PlaceHolderMain`有下列區段：
 
     ```aspx-csharp
     <asp:Content ID="Main" ContentPlaceHolderID="PlaceHolderMain" runat="server">
@@ -88,7 +88,7 @@ ms.locfileid: "54865824"
 
      此程式碼會將資料表加入至標題與頁面。
 
-4.  新增應用程式頁面的標題取代`PlaceHolderPageTitleInTitleArea`有下列區段：
+4. 新增應用程式頁面的標題取代`PlaceHolderPageTitleInTitleArea`有下列區段：
 
     ```aspx-csharp
     <asp:Content ID="PageTitleInTitleArea" ContentPlaceHolderID="PlaceHolderPageTitleInTitleArea" runat="server" >
@@ -101,9 +101,9 @@ ms.locfileid: "54865824"
 
 #### <a name="to-code-the-application-page"></a>程式碼應用程式頁面
 
-1.  選擇**ApplicationPage1.aspx**節點，然後在功能表列上選擇 **檢視** > **程式碼**來顯示應用程式頁面背後的程式碼。
+1. 選擇**ApplicationPage1.aspx**節點，然後在功能表列上選擇 **檢視** > **程式碼**來顯示應用程式頁面背後的程式碼。
 
-2.  取代**使用**或是**匯入**（取決於您的程式語言） 陳述式取代為下列類別的頂端：
+2. 取代**使用**或是**匯入**（取決於您的程式語言） 陳述式取代為下列類別的頂端：
 
     ```vb
     Imports System
@@ -131,7 +131,7 @@ ms.locfileid: "54865824"
     using Microsoft.SharePoint.Navigation;
     ```
 
-3.  將下列程式碼加入 `Page_Load` 方法：
+3. 將下列程式碼加入 `Page_Load` 方法：
 
     ```vb
     Try
@@ -295,7 +295,7 @@ ms.locfileid: "54865824"
     ```
 
     > [!WARNING]
-    >  請務必在程式碼中的 「 TestServer"取代的有效執行 SharePoint 的伺服器名稱。
+    > 請務必在程式碼中的 「 TestServer"取代的有效執行 SharePoint 的伺服器名稱。
 
 ## <a name="test-the-application-page"></a>測試應用程式頁面
  接下來，判斷是否應用程式頁面上可正確顯示費用的資料。
@@ -343,9 +343,9 @@ ms.locfileid: "54865824"
 
  您可以進一步了解如何使用 Visual Studio 中的 Visual Web 設計工具，從下列主題來設計 SharePoint 頁面內容：
 
--   [建立 SharePoint web 組件](../sharepoint/creating-web-parts-for-sharepoint.md)。
+- [建立 SharePoint web 組件](../sharepoint/creating-web-parts-for-sharepoint.md)。
 
--   [建立可重複使用的控制項，為 web 組件或應用程式頁面](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)。
+- [建立可重複使用的控制項，為 web 組件或應用程式頁面](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)。
 
 ## <a name="see-also"></a>另請參閱
 

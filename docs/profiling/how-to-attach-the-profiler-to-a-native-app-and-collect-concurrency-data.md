@@ -9,18 +9,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a16aa073583c62577f6a40fb24aac69c7e95b93e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 180c520b3bec53610f539ecb8ac21f86b5c5aa38
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56624369"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66261436"
 ---
 # <a name="how-to-attach-the-profiler-to-a-native-stand-alone-application-and-collect-concurrency-data-by-using-the-command-line"></a>作法：使用命令列將分析工具附加至原生獨立應用程式並收集並行資料
 本文描述如何使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具命令列工具將分析工具附加至執行中的原生 (C/C++) 獨立應用程式，並收集執行緒爭用資料。
 
 > [!NOTE]
->  若要取得分析工具的路徑，請參閱[指定命令列工具的路徑](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)。 在 64 位元電腦上，64 位元和 32 位元版本的工具都可以使用。 若要使用程式碼剖析工具命令列工具，必須將工具路徑加入至命令提示字元視窗的 PATH 環境變數，或將它加入至命令本身。
+> 若要取得分析工具的路徑，請參閱[指定命令列工具的路徑](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)。 在 64 位元電腦上，64 位元和 32 位元版本的工具都可以使用。 若要使用程式碼剖析工具命令列工具，必須將工具路徑加入至命令提示字元視窗的 PATH 環境變數，或將它加入至命令本身。
 
  程式碼剖析工具附加至應用程式時，您可以暫停和繼續收集資料。 若要結束程式碼剖析工作階段，程式碼剖析工具不得再附加至應用程式，而且必須明確地關閉程式碼剖析工具。
 
@@ -28,7 +28,7 @@ ms.locfileid: "56624369"
 
 #### <a name="to-attach-the-profiler-to-a-running-native-application"></a>將分析工具附加至執行中的原生應用程式
 
-1.  在命令提示字元中，輸入下列命令：
+1. 在命令提示字元中，輸入下列命令：
 
      [VSPerfCmd](../profiling/vsperfcmd.md) **/start:concurrency**
 
@@ -42,7 +42,7 @@ ms.locfileid: "56624369"
     |[/automark](../profiling/automark.md) **:** `Interval`|只能搭配 **/wincounter** 使用。 指定 Windows 效能計數器收集事件間隔的毫秒數。 預設值為 500。|
     |[/events](../profiling/events-vsperfcmd.md) **:** `Config`|指定程式碼剖析期間要收集的 Windows 事件追蹤 (ETW) 事件。 ETW 事件會收集至個別的 (.etl) 檔案。|
 
-2.  輸入下列命令，將程式碼剖析工具附加至目標應用程式︰
+2. 輸入下列命令，將程式碼剖析工具附加至目標應用程式︰
 
      **VSPerfCmd**  [/attach](../profiling/attach.md) **:**{`PID`&#124;`ProcName`}
 
@@ -53,7 +53,7 @@ ms.locfileid: "56624369"
 
 #### <a name="to-start-and-stop-data-collection"></a>開始和停止資料收集
 
--   下表中成對的選項會開始和停止資料收集。 請在個別的命令列上指定各個選項。 您可以多次開始和停止資料收集。
+- 下表中成對的選項會開始和停止資料收集。 請在個別的命令列上指定各個選項。 您可以多次開始和停止資料收集。
 
     |選項|說明|
     |------------|-----------------|
@@ -66,10 +66,10 @@ ms.locfileid: "56624369"
 
 #### <a name="to-end-a-profiling-session"></a>結束程式碼剖析工作階段
 
-1.  關閉目標應用程式或輸入下列命令，以將程式碼剖析工具從目標應用程式中斷連結︰
+1. 關閉目標應用程式或輸入下列命令，以將程式碼剖析工具從目標應用程式中斷連結︰
 
      **VSPerfCmd /detach**
 
-2.  輸入下列命令以關閉程式碼剖析工具︰
+2. 輸入下列命令以關閉程式碼剖析工具︰
 
      **VSPerfCmd**  [/shutdown](../profiling/shutdown.md)

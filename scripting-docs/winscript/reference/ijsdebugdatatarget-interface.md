@@ -12,11 +12,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 3cbb4b0b54fb9a3821d3033ef0e65fd0bafbc246
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58159281"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62582494"
 ---
 # <a name="ijsdebugdatatarget-interface"></a>IJsDebugDataTarget 介面
 藉由偵錯工具提供功能來存取及變更目標偵錯工具處理序的狀態。  

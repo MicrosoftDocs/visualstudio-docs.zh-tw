@@ -1,27 +1,22 @@
 ---
 title: 使用 Interop 組件判斷命令狀態 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - interop assemblies, determining command status
 - command handling with interop assemblies, status
 ms.assetid: 2f5104d1-7b4c-4ca0-a626-50530a8f7f5c
 caps.latest.revision: 19
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 1983f66158c00e5812823bbbf36eeea3aa139ea8
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: fc67123e082258932ab5df6613941f869d6049a6
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51789300"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68196781"
 ---
 # <a name="determining-command-status-by-using-interop-assemblies"></a>使用 Interop 組件判斷命令狀態
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -43,4 +38,3 @@ VSPackage 必須追蹤的狀態，它可以處理的命令。 VSPackage 中處�
 ## <a name="see-also"></a>另請參閱  
  [Vspackage 如何新增使用者介面項目](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
  [實作](../../extensibility/internals/command-implementation.md)
-

@@ -1,27 +1,22 @@
 ---
 title: 啟動程式 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - debug engines, launching
 - programs, launching
 ms.assetid: 6857e9c6-e44a-468a-afa4-f7c4a0b77844
 caps.latest.revision: 22
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: c3af2c1f571287a4a33c1dd57340e2a66197bd59
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: b54250a54960f346f60c5d668755fb5d28ab376e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51753954"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430202"
 ---
 # <a name="launching-a-program"></a>啟動程式
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -37,12 +32,12 @@ ms.locfileid: "51753954"
     如果未指定規定，連接埠就會呼叫啟動程式，這會導致要載入程式的執行階段環境的作業系統。  
   
    > [!NOTE]
-   >  如果使用規定來啟動程式，很可能相同 DE，會附加至程式。  
+   > 如果使用規定來啟動程式，很可能相同 DE，會附加至程式。  
   
 3. 根據是否 DE 或連接埠啟動程式，DE 或執行階段環境建立計劃的描述或節點，然後通知程式正在執行中的連接埠。  
   
    > [!NOTE]
-   >  建議的執行階段環境，建立程式 節點中，因為程式的節點是可偵錯之程式的輕量型表示法。 就不需要載入整個 DE 就來建立及註冊程式 節點。 如果是 DE 執行 IDE，但沒有 IDE 的過程中實際執行，需要有一個元件，可以將程式節點加入至連接埠。  
+   > 建議的執行階段環境，建立程式 節點中，因為程式的節點是可偵錯之程式的輕量型表示法。 就不需要載入整個 DE 就來建立及註冊程式 節點。 如果是 DE 執行 IDE，但沒有 IDE 的過程中實際執行，需要有一個元件，可以將程式節點加入至連接埠。  
   
    新建立的程式，以及任何其他程式相關或不相關、 啟動或附加至相同的 IDE 中，從撰寫偵錯工作階段。  
   
@@ -66,4 +61,3 @@ ms.locfileid: "51753954"
 ## <a name="related-sections"></a>相關章節  
  [偵錯工作](../../extensibility/debugger/debugging-tasks.md)  
  包含各種不同的偵錯工作，例如啟動程式，以及評估運算式的連結。
-

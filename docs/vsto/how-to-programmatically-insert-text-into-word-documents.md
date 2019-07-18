@@ -16,24 +16,24 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d2c81a0da3c60bc9b3cfaec357dab0fe2bb33706
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 3e04f3b4420cc8f3b56eee304ae199cf87fa4a3a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56654018"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63412579"
 ---
 # <a name="how-to-programmatically-insert-text-into-word-documents"></a>HOW TO：以程式設計方式將文字插入 Word 文件
   在 Microsoft Office Word 文件中插入文字的方式主要有三種：
 
--   在範圍中插入文字。
+- 在範圍中插入文字。
 
--   以新文字取代範圍中的文字。
+- 以新文字取代範圍中的文字。
 
--   使用 <xref:Microsoft.Office.Interop.Word.Selection.TypeText%2A> 物件的 <xref:Microsoft.Office.Interop.Word.Selection> 方法將文字插入游標或選取範圍。
+- 使用 <xref:Microsoft.Office.Interop.Word.Selection.TypeText%2A> 物件的 <xref:Microsoft.Office.Interop.Word.Selection> 方法將文字插入游標或選取範圍。
 
 > [!NOTE]
->  您也可以將文字插入內容控制項與書籤中。 如需詳細資訊，請參閱 <<c0> [ 內容控制項](../vsto/content-controls.md)並[書籤控制項](../vsto/bookmark-control.md)。
+> 您也可以將文字插入內容控制項與書籤中。 如需詳細資訊，請參閱 <<c0> [ 內容控制項](../vsto/content-controls.md)並[書籤控制項](../vsto/bookmark-control.md)。
 
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
 
@@ -42,7 +42,7 @@ ms.locfileid: "56654018"
 
 ### <a name="to-insert-text-in-a-range"></a>若要在範圍中插入文字
 
-1.  在文件的開頭指定範圍，並插入文字 **New Text**。
+1. 在文件的開頭指定範圍，並插入文字 **New Text**。
 
      下列程式碼範例可用於文件層級自訂。
 
@@ -54,7 +54,7 @@ ms.locfileid: "56654018"
      [!code-vb[Trin_VstcoreWordAutomationAddIn#51](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#51)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#51](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#51)]
 
-2.  選取 <xref:Microsoft.Office.Interop.Word.Range> 物件，這時物件已從一個字元擴展為所插入文字的長度。
+2. 選取 <xref:Microsoft.Office.Interop.Word.Range> 物件，這時物件已從一個字元擴展為所插入文字的長度。
 
      [!code-vb[Trin_VstcoreWordAutomation#52](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#52)]
      [!code-csharp[Trin_VstcoreWordAutomation#52](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#52)]
@@ -64,7 +64,7 @@ ms.locfileid: "56654018"
 
 ### <a name="to-replace-text-in-a-range"></a>若要取代範圍中的文字
 
-1.  建立一個包含文件中前 12 個字元的 <xref:Microsoft.Office.Interop.Word.Range> 物件。
+1. 建立一個包含文件中前 12 個字元的 <xref:Microsoft.Office.Interop.Word.Range> 物件。
 
      下列程式碼範例可用於文件層級自訂。
 
@@ -76,12 +76,12 @@ ms.locfileid: "56654018"
      [!code-vb[Trin_VstcoreWordAutomationAddIn#53](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#53)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#53](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#53)]
 
-2.  以 **New Text**字串取代這些字元。
+2. 以 **New Text**字串取代這些字元。
 
      [!code-vb[Trin_VstcoreWordAutomation#54](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#54)]
      [!code-csharp[Trin_VstcoreWordAutomation#54](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#54)]
 
-3.  選取範圍。
+3. 選取範圍。
 
      [!code-vb[Trin_VstcoreWordAutomation#55](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#55)]
      [!code-csharp[Trin_VstcoreWordAutomation#55](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#55)]

@@ -1,14 +1,9 @@
 ---
-title: CA1047： 不要宣告在密封類型中的受保護的成員 |Microsoft Docs
-ms.custom: ''
+title: CA1047:不要宣告在密封類型中的受保護的成員 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - DoNotDeclareProtectedMembersInSealedTypes
 - CA1047
@@ -20,14 +15,14 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: e9325fa9251d0bb6a5ffeebd755fa21cd049fec5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6d949a756dfe3ff22ba43d172078d35bfe706e14
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49873177"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62536087"
 ---
-# <a name="ca1047-do-not-declare-protected-members-in-sealed-types"></a>CA1047：不要在密封類型中宣告 protected 成員
+# <a name="ca1047-do-not-declare-protected-members-in-sealed-types"></a>CA1047:不要在密封類型中宣告 protected 成員
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -56,6 +51,3 @@ ms.locfileid: "49873177"
 
  [!code-csharp[FxCop.Design.SealedNoProtected#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.SealedNoProtected/cs/FxCop.Design.SealedNoProtected.cs#1)]
  [!code-vb[FxCop.Design.SealedNoProtected#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Design.SealedNoProtected/vb/FxCop.Design.SealedNoProtected.vb#1)]
-
-
-

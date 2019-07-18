@@ -1,25 +1,20 @@
 ---
 title: 參考 （程式設計擷取） |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 ms.assetid: ef60eb8d-1ac2-4e3a-9b4b-f6da0bdd9da8
 caps.latest.revision: 8
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 66e80d02ac41d78f2c79e7b2accb11388d456ad8
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 8cebeb7eb651c11b5f560b981df30213fc726c66
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51744278"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68162253"
 ---
 # <a name="reference-programmatic-capture"></a>參考 (程式設計擷取)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,10 +39,7 @@ ms.locfileid: "51744278"
   
 ## <a name="related-articles"></a>相關文章  
   
-|標題|描述|  
+|標題|說明|  
 |-----------|-----------------|  
 |[Capturing Graphics Information](../debugger/capturing-graphics-information.md)|示範如何從 DirectX 應用程式擷取圖形資訊，以便使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 圖形診斷工具來診斷轉譯問題。|  
 |[概觀](../debugger/overview-of-visual-studio-graphics-diagnostics.md)|示範圖形診斷如何協助您偵錯 DirectX 遊戲和應用程式的轉譯錯誤。|
-
-
-

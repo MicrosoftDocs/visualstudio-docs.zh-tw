@@ -1,14 +1,9 @@
 ---
 title: 其他檔案專案 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - files, adding existing files to solutions
 - Miscellaneous Files project
@@ -17,13 +12,13 @@ helpviewer_keywords:
 ms.assetid: 93a278a8-d4f4-400b-8945-4f1b0a2b5bac
 caps.latest.revision: 14
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: e5786eb21813125237a35ed185542b5f73bdc839
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 9c128475ad9f5cb71b98325bbece4e524507a08b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51777886"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68179792"
 ---
 # <a name="miscellaneous-files-project"></a>其他檔案專案
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -32,7 +27,7 @@ ms.locfileid: "51777886"
   
  專案會扮演重要的角色，在決定當使用者開啟的專案項目，使用哪一個編輯器。 在設計專案時，可能使用的專案特定的編輯器或標準編輯器開啟特定檔案。  
   
- 專案特定編輯器通常會需要使用者具有專業知識，或使用特殊的介面，從專案。 如需詳細資訊，請參閱 <<c0> [ 如何： 開啟專案特定的編輯器](../../extensibility/how-to-open-project-specific-editors.md)。  
+ 專案特定編輯器通常會需要使用者具有專業知識，或使用特殊的介面，從專案。 如需詳細資訊，請參閱[如何：開啟專案特定的編輯器](../../extensibility/how-to-open-project-specific-editors.md)。  
   
  標準編輯器可以開啟任何專案中的特定延伸模組的任何檔案。 使用者可以自訂某些標準的編輯器，例如[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]文字編輯器 中的，針對專案，但仍會保留其公用的字元。 標準編輯器藉由使用<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A>方法。  
   
@@ -46,8 +41,7 @@ ms.locfileid: "51777886"
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3>   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument>   
  <xref:Microsoft.VisualStudio.Shell.Interop.VSDOCUMENTPRIORITY>   
- [如何： 開啟專案特定的編輯器](../../extensibility/how-to-open-project-specific-editors.md)   
- [如何： 開啟標準編輯器](../../extensibility/how-to-open-standard-editors.md)   
+ [如何：開啟專案特定的編輯器](../../extensibility/how-to-open-project-specific-editors.md)   
+ [如何：開啟標準編輯器](../../extensibility/how-to-open-standard-editors.md)   
  [新增專案與專案項目範本](../../extensibility/internals/adding-project-and-project-item-templates.md)   
  [新增專案與專案項目範本](../../extensibility/internals/adding-project-and-project-item-templates.md)
-

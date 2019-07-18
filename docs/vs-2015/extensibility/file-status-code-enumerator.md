@@ -1,14 +1,9 @@
 ---
 title: 檔案狀態碼列舉值 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - named constants, SccStatus enumerator
 - source control plug-ins, file status enumeration
@@ -17,13 +12,13 @@ helpviewer_keywords:
 ms.assetid: 5c37876b-c83c-4ca1-837b-57cd465a879a
 caps.latest.revision: 16
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: d3b7847efba2a185590c63cba19392e2ae87390d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 1b6e74caa9eedd42e25339d62f5837ccfe82d001
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51732293"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68204373"
 ---
 # <a name="file-status-code-enumerator"></a>檔案狀態碼列舉程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -114,4 +109,3 @@ enum SccStatus {
  [原始檔控制外掛程式](../extensibility/source-control-plug-ins.md)   
  [SccQueryInfo](../extensibility/sccqueryinfo-function.md)   
  [POPLISTFUNC](../extensibility/poplistfunc.md)
-

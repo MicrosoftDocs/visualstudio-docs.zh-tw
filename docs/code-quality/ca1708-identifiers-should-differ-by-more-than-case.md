@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 32ac2e430abdc068070457dcf362e39dcbc0b398
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 059770b28b9e885608769f3844f91097a16d66cf
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57867540"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66714250"
 ---
 # <a name="ca1708-identifiers-should-differ-by-more-than-case"></a>CA1708:識別項名稱不應該只靠大小寫區別
 
@@ -48,13 +48,13 @@ ms.locfileid: "57867540"
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
 
-請勿隱藏此規則的警告。 程式庫可能無法使用.NET Framework 中的所有可用語言。
+請勿隱藏此規則的警告。 程式庫可能無法使用在.NET 中的所有可用語言。
 
 ## <a name="configurability"></a>設定功能
 
 如果您執行這項規則，從[FxCop 分析器](install-fxcop-analyzers.md)（而不是透過靜態程式碼分析），您可以設定的哪些部分您程式碼基底上執行這項規則，根據其存取範圍。 比方說，若要指定執行規則時，應該只針對非公用 API 介面，將下列索引鍵 / 值組新增至專案中的.editorconfig 檔案：
 
-```
+```ini
 dotnet_code_quality.ca1708.api_surface = private, internal
 ```
 

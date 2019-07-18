@@ -13,11 +13,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.openlocfilehash: 2bf76fea98cb30b0b32ede245be3bbd774699b58
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 60310ede905c5926f205af0f91565c1bbfb098f7
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38942393"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "68146645"
 ---
 MSBuild

@@ -1,14 +1,9 @@
 ---
 title: IDebugContainerField::EnumFields |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugContainerField::EnumFields
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 9e5e681b-ad49-4c62-bd95-4afa11d61a57
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: b2fe706892b5f80b4793ccd1c09517485f1b3733
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 485de4bdc9ff5b17c056c0db4e2930f5c6986fe7
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51755000"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68205308"
 ---
 # <a name="idebugcontainerfieldenumfields"></a>IDebugContainerField::EnumFields
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -68,7 +63,7 @@ int EnumFields(
  [out]傳回[IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)物件，表示欄位的清單。 如果沒有任何欄位，則傳回 null 值。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，傳回 S_OK 或 S_FALSE，如果沒有任何欄位。 反之則傳回錯誤碼。  
+ 如果成功，傳回 S_OK 或 S_FALSE，如果沒有任何欄位。 否則會傳回錯誤碼。  
   
 ## <a name="remarks"></a>備註  
  `dwKindFilter`， `dwModifiersFilter`，和`pszNameFilter`參數可以結合，例如，若要選取所有公開的虛擬方法，名為 「 MyMethod 」。  
@@ -79,4 +74,3 @@ int EnumFields(
  [FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md)   
  [FIELD_MODIFIERS](../../../extensibility/debugger/reference/field-modifiers.md)   
  [NAME_MATCH](../../../extensibility/debugger/reference/name-match.md)
-

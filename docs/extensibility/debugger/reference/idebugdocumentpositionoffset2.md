@@ -5,17 +5,17 @@ ms.topic: reference
 helpviewer_keywords:
 - IDebugDocumentPositionOffset2 interface
 ms.assetid: f1b05db3-50d8-453f-a72f-e68b239236a4
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cf713ea542901cbde588600d40f144f0fae843e2
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 3793d54249fca1dc867cfe4072326245a67852cb
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56718842"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66333264"
 ---
 # <a name="idebugdocumentpositionoffset2"></a>IDebugDocumentPositionOffset2
 表示原始程式檔中的字元位移的位置。

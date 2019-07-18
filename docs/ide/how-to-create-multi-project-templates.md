@@ -1,6 +1,6 @@
 ---
 title: 建立多重專案範本
-ms.date: 01/02/2018
+ms.date: 04/17/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio templates, creating multi-project
@@ -9,28 +9,28 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5a596d37d4446332461709cb6737d4f526e9b02e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: f24a7c0d07c804ca45bb31058061cda714ef6a51
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55970877"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62430493"
 ---
 # <a name="how-to-create-multi-project-templates"></a>HOW TO：建立多重專案範本
 
-多專案範本是做為兩個以上專案的容器使用。 當您根據多專案範本從 [新增專案] 對話方塊建立專案時，範本中的每個專案都會新增至解決方案。
+多專案範本是做為兩個以上專案的容器使用。 當您根據多專案範本建立專案時，範本中的每個專案都會新增至方案。
 
 多專案範本有兩個或更多的專案範本，以及一個 **ProjectGroup** 類型的根範本。
 
 多專案範本的行為與單一專案範本不同。 它們具有下列獨特的特性：
 
-- 多專案範本中的個別專案不能在 [新增專案] 對話方塊中指派名稱。 相反地，在 vstemplate 檔案的 **ProjectTemplateLink** 項目上使用 **ProjectName** 屬性，指定每個專案的名稱。
+- 當範本用於建立新專案時，多專案範本中的個別專案不能指派名稱。 相反地，在 vstemplate 檔案的 **ProjectTemplateLink** 項目上使用 **ProjectName** 屬性，指定每個專案的名稱。
 
 - 多專案範本可以包含不同語言的專案，但整個範本本身只能放在一個類別中。 在 vstemplate 檔案的 **ProjectType** 項目中指定範本類別。
 
 多專案範本必須包含下列項目，且壓縮成 *.zip* 檔案：
 
-- 整個多專案範本的根 *vstemplate* 檔案。 這個根 *vstemplate* 檔案中包含 [新增專案] 對話方塊顯示的中繼資料，並指定何處可找到此範本中專案的 *.vstemplate* 檔案。 這個檔案必須位於 *.zip* 檔案的根目錄。
+- 整個多專案範本的根 *vstemplate* 檔案。 此根 *vstemplate* 檔案包含您建立新專案所在之對話方塊中顯示的中繼資料。 也會指定何處可找到範本中專案的 *vstemplate* 檔案。 這個檔案必須位於 *.zip* 檔案的根目錄。
 
 - 包含完整專案範本所需之檔案的兩個或多個資料夾。 資料夾包括專案的所有程式碼檔案，以及專案的 *vstemplate* 檔案。
 
@@ -68,41 +68,58 @@ ms.locfileid: "55970877"
     </TemplateContent>
     ```
 
+> [!TIP]
+> 如果您只希望多專案範本顯示在新的 [專案] 對話方塊中而不是它包含的個別專案中，請將內部範本標記為 [[隱藏]](../extensibility/hidden-element-visual-studio-templates.md)。 例如：
+>
+> ```xml
+> <VSTemplate Type="Project" ... >
+>     <TemplateData>
+>         ...
+>         <Hidden>true</Hidden>
+>     </TemplateData>
+>     ...
+> </VSTemplate>
+> ```
+
 ## <a name="create-a-multi-project-template-from-an-existing-solution"></a>從現有的解決方案中建立多專案範本
 
 1. 建立解決方案並新增兩個或多個專案。
 
-1. 自訂專案，直到它們可以匯出成範本為止。
+2. 自訂專案，直到它們可以匯出成範本為止。
 
    > [!TIP]
-   > 如果您使用[範本參數](template-parameters.md)且您想要從父代範本參考變數，請在參數名稱加上前置詞 `ext_`。 例如，`$ext_safeprojectname$`。
+   > 如果您使用[範本參數](template-parameters.md)且您想要從父代範本參考變數，請在參數名稱加上前置詞 `ext_`。 例如，`$ext_safeprojectname$`。 此外，請將 **ProjectTemplateLink** 元素的 **CopyParameters** 屬性設定為 **true**。
+   >
+   > ```xml
+   > <ProjectTemplateLink ProjectName="MyProject" CopyParameters="true">...</ProjectTemplateLink>
+   > ```
 
-1. 選擇 [專案] 功能表上的 [匯出範本]。
+3. 選擇 [專案] 功能表上的 [匯出範本]。
 
    [匯出範本精靈] 隨即開啟。
 
-1. 在 [選擇範本類型] 頁面上，選取 [專案範本]。 選取其中一個您想要匯出至範本的專案，然後選擇 [下一步]。 (對解決方案中的每個專案重複這些步驟)。
+4. 在 [選擇範本類型] 頁面上，選取 [專案範本]。 選取其中一個您想要匯出至範本的專案，然後選擇 [下一步]。 (對解決方案中的每個專案重複這些步驟)。
 
-1. 在 [選取範本選項] 頁面上，輸入範本的名稱和選擇性描述、圖示和預覽影像。 選擇 [完成]。
+5. 在 [選取範本選項] 頁面上，輸入範本的名稱和選擇性描述、圖示和預覽影像。 選擇 [完成]。
 
    專案會匯出為 *.zip* 檔案，放在指定的輸出位置。
 
    > [!NOTE]
    > 每個專案必須分別匯出成範本，所以請在解決方案中為每個專案重複上述的這些步驟。
 
-1. 建立範本目錄，每個專案都有子目錄。
+6. 建立範本目錄，每個專案都有子目錄。
 
-1. 將每個專案的 *.zip* 檔案內容解壓縮至您建立的對應子目錄。
+7. 將每個專案的 *.zip* 檔案內容解壓縮至您建立的對應子目錄。
 
-1. 在基底目錄中，建立檔案副檔名為 *.vstemplate* 的 XML 檔案。 此檔案包含多專案範本的中繼資料。 請參閱接下來的檔案結構範例。 請務必指定每個專案的 *vstemplate* 檔案相對路徑。
+8. 在基底目錄中，建立檔案副檔名為 *.vstemplate* 的 XML 檔案。 此檔案包含多專案範本的中繼資料。 請參閱接下來的檔案結構範例。 請務必指定每個專案的 *vstemplate* 檔案相對路徑。
 
-1. 選取基底目錄中的所有檔案，然後從滑鼠右鍵操作功能表或操作功能表中選擇 [傳送至] > [壓縮的 (zipped) 資料夾]。
+9. 選取基底目錄中的所有檔案，然後從滑鼠右鍵操作功能表或操作功能表中選擇 [傳送至] > [壓縮的 (zipped) 資料夾]。
 
    檔案和資料夾即會壓縮成 *.zip* 檔案。
 
-1. 將 *.zip* 檔案複製到使用者專案範本目錄中。 此目錄預設為 *%USERPROFILE%\Documents\Visual Studio \<版本\>\Templates\ProjectTemplates*。
+10. 將 *.zip* 檔案複製到使用者專案範本目錄中。 此目錄預設為 *%USERPROFILE%\Documents\Visual Studio \<版本\>\Templates\ProjectTemplates*。
 
-1. 在 Visual Studio 中開啟 [新增專案] 對話方塊，確認範本是否出現。
+11. 在 Visual Studio，選擇 [檔案] > [新增] > [專案] ，確認範本是否出現。
 
 ## <a name="two-project-example"></a>雙專案範例
 

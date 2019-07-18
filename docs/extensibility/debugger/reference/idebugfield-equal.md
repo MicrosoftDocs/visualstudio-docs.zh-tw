@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugField::Equal method
 ms.assetid: 75369fe6-ddd3-497d-80d1-2488e6100e9f
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ed978355aa752730cfb43390b3e4b6f80d327f83
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 8af316c9669b00ae8316888c6a7072d4737dd23d
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56693941"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66352670"
 ---
 # <a name="idebugfieldequal"></a>IDebugField::Equal
 這個方法會比較此欄位與指定欄位相等。
@@ -36,10 +39,9 @@ int Equal(
 );
 ```
 
-#### <a name="parameters"></a>參數
- `pField`
-
- [in]要與這個比較的欄位。
+## <a name="parameters"></a>參數
+`pField`\
+[in]要與這個比較的欄位。
 
 ## <a name="return-value"></a>傳回值
  如果欄位是相同時，會傳回`S_OK`。 如果欄位不相同，就會傳回`S_FALSE.`否則會傳回錯誤碼。

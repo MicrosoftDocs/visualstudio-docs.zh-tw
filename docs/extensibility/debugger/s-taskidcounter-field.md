@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - m_taskIdCounter field, Task class [.NET Framework debug engines]
 ms.assetid: 7e5a1907-c652-4046-b207-d2f1ef7b8029
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cdd8619592a1f9201402e8d987b0a0f129d08edb
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: dca3e82b3adef44fd3d9473ba5eff0164bb12c8d
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56684880"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66318914"
 ---
 # <a name="staskidcounter-field"></a>s_taskIdCounter 欄位
 下一個可用的識別項，如<xref:System.Threading.Tasks.Task>物件。

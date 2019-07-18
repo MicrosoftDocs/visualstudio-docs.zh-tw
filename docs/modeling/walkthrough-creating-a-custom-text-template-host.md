@@ -13,12 +13,12 @@ ms.workload:
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: bd488230fc6b88feb60ceeb0556385b99e823de9
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 71b72b677e9735edb3254290055815885e543fa9
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55951588"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62961985"
 ---
 # <a name="walkthrough-create-a-custom-text-template-host"></a>逐步解說：建立自訂文字範本主機
 
@@ -31,17 +31,17 @@ A*文字範本主機*提供的環境，可讓*文字範本轉換引擎*執行。
 
 這個逐步解說將說明下列工作：
 
--   建立自訂文字範本主應用程式。
+- 建立自訂文字範本主應用程式。
 
--   測試自訂主應用程式。
+- 測試自訂主應用程式。
 
 ## <a name="prerequisites"></a>必要條件
 
 若要完成這個逐步解說，您必須具有下列各項：
 
--   Visual Studio 2010 (含) 以後版本
+- Visual Studio 2010 (含) 以後版本
 
--   Visual Studio SDK
+- Visual Studio SDK
 
 ## <a name="create-a-custom-text-template-host"></a>建立自訂文字範本主機
 
@@ -51,9 +51,9 @@ A*文字範本主機*提供的環境，可讓*文字範本轉換引擎*執行。
 
 2. 加入下列組件的參考：
 
-   -   **Microsoft.VisualStudio.TextTemplating.\*.0**
+   - **Microsoft.VisualStudio.TextTemplating.\*.0**
 
-   -   **Microsoft.visualstudio.texttemplating.interfaces.10.0 （含） 及更新版本**
+   - **Microsoft.visualstudio.texttemplating.interfaces.10.0 （含） 及更新版本**
 
 3. 以下列程式碼取代 Program.cs 或 Module1.vb 檔案中的程式碼：
 
@@ -726,11 +726,11 @@ A*文字範本主機*提供的環境，可讓*文字範本轉換引擎*執行。
 
 ### <a name="to-create-a-text-template-to-test-the-custom-host"></a>若要建立文字範本以測試自訂主應用程式
 
-1.  建立文字檔案，並將它命名`TestTemplate.tt`。
+1. 建立文字檔案，並將它命名`TestTemplate.tt`。
 
      您可以使用任何文字編輯器 (例如 [記事本]) 來建立檔案。
 
-2.  將下列內容加入至檔案中：
+2. 將下列內容加入至檔案中：
 
     > [!NOTE]
     > 文字範本的程式語言與自訂主應用程式的語言不一定要相符。
@@ -773,13 +773,13 @@ A*文字範本主機*提供的環境，可讓*文字範本轉換引擎*執行。
 
     ```
 
-3.  儲存並關閉檔案。
+3. 儲存並關閉檔案。
 
 ### <a name="to-test-the-custom-host"></a>若要測試自訂主應用程式
 
-1.  開啟 [命令提示字元] 視窗。
+1. 開啟 [命令提示字元] 視窗。
 
-2.  輸入自訂主應用程式可執行檔的路徑，但是還不要按 ENTER。
+2. 輸入自訂主應用程式可執行檔的路徑，但是還不要按 ENTER。
 
      例如，輸入：
 
@@ -788,9 +788,9 @@ A*文字範本主機*提供的環境，可讓*文字範本轉換引擎*執行。
     > [!NOTE]
     > 而不是輸入位址，您可以瀏覽至 CustomHost.exe 檔中**Windows 檔案總管**然後將檔案拖曳到 [命令提示字元] 視窗。
 
-3.  輸入空格。
+3. 輸入空格。
 
-4.  輸入文字範本檔的路徑，然後按 ENTER。
+4. 輸入文字範本檔的路徑，然後按 ENTER。
 
      例如，輸入：
 
@@ -801,11 +801,11 @@ A*文字範本主機*提供的環境，可讓*文字範本轉換引擎*執行。
 
      自訂主應用程式隨即執行並完成文字範本轉換流程。
 
-5.  在  **Windows 檔案總管**，瀏覽至包含檔案 TestTemplate.tt 的資料夾。
+5. 在  **Windows 檔案總管**，瀏覽至包含檔案 TestTemplate.tt 的資料夾。
 
      該資料夾也會包含 TestTemplate1.txt 檔。
 
-6.  開啟這個檔案來查看文字範本轉換的結果。
+6. 開啟這個檔案來查看文字範本轉換的結果。
 
      產生的文字輸出隨即出現，看起來如下所示：
 

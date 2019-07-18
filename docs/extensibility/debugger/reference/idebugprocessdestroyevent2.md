@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProcessDestroyEvent2
 ms.assetid: 1b8e0528-95bc-48fa-9653-2cea66c8dc3a
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2fd96396f73b5f33a2a8944e56fb5c8c5fece54a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 8a0e0c854a611f222958361ef429fddf09f0cf5e
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56687545"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66348904"
 ---
 # <a name="idebugprocessdestroyevent2"></a>IDebugProcessDestroyEvent2
 處理程序終止，結束 4mb，或從中斷連結時，會傳送這個介面。

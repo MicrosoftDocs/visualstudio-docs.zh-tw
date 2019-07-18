@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugBoundBreakpoints2::Reset
 ms.assetid: 0f0522a5-6a97-4c4e-859b-cc4476e6c527
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a9cd41a82497f232792148a3096b2296db03c834
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 1e02de3bced4f0e47b150d56003bba470d92c1b2
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56698413"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66351120"
 ---
 # <a name="ienumdebugboundbreakpoints2reset"></a>IEnumDebugBoundBreakpoints2::Reset
 將列舉重設第一個項目。

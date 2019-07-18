@@ -13,11 +13,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.openlocfilehash: beea89316d09ecbbb6b74fd384f79b5fc77307ff
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 76dd06d1e451b7e655a8aee42925105e3e94d1b0
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38945865"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "68146868"
 ---
 Entity Framework

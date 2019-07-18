@@ -1,14 +1,9 @@
 ---
 title: IDebugCustomAttributeQuery2::IsCustomAttributeDefined |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugCustomAttributeQuery2::IsCustomAttributeDefined
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 5c07cc52-6d2d-42df-9d76-9f1f769641db
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 9ce7130cf5b6aff96e4950aa0ef73e775bb8dabf
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 6ef6a04d263e322d408bb7d7c95da1929d89010c
+ms.sourcegitcommit: da4079f5b6ec884baf3108cbd0519d20cb64c70b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51772972"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "62569315"
 ---
 # <a name="idebugcustomattributequery2iscustomattributedefined"></a>IDebugCustomAttributeQuery2::IsCustomAttributeDefined
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -55,4 +50,3 @@ int IsCustomAttributeDefined(
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugCustomAttributeQuery2](../../../extensibility/debugger/reference/idebugcustomattributequery2.md)
-

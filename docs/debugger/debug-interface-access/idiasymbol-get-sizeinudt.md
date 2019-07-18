@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b0fa2172d1a56fb7b4730a51959c0b73bdfc9461
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56626358"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "62835901"
 ---
 # <a name="idiasymbolgetsizeinudt"></a>IDiaSymbol::get_sizeInUdt
 擷取的使用者定義型別之成員的大小。
@@ -35,5 +35,5 @@ HRESULT get_sizeInUdt(
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -1,14 +1,9 @@
 ---
 title: IDiaSymbol::get_liveRangeLength |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: ffcce3cc-085c-44eb-8145-46e3819c54f9
 caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 5ba77608499260e4d50f12a71ed8f1782a987a04
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 33f56615334b7d33516c6c967f165dac3942b5f8
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51728868"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "64825235"
 ---
 # <a name="idiasymbolgetliverangelength"></a>IDiaSymbol::get_liveRangeLength
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -46,12 +41,12 @@ HRESULT get_liveRangeLength ( 
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
   
 > [!NOTE]
->  傳回的錯誤碼表示符號沒有即時範圍資訊。  
+> 傳回的錯誤碼表示符號沒有即時範圍資訊。  
   
 ## <a name="remarks"></a>備註  
   
 ## <a name="requirements"></a>需求  
- 標頭： Dia2.h  
+ 標頭：dia2.h  
   
  程式庫： diaguids.lib  
   
@@ -59,6 +54,3 @@ HRESULT get_liveRangeLength ( 
   
 ## <a name="see-also"></a>另請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
-
-
-

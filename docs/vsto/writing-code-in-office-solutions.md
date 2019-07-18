@@ -33,12 +33,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1e47e8bea173298761e2a5170382ef2c4b32c6c5
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 2c5163de342415113321b6bd2337cd75ff528f6c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54864068"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62810772"
 ---
 # <a name="write-code-in-office-solutions"></a>在 Office 方案中撰寫程式碼
   在 Office 專案中撰寫程式碼，在某些方面不同於撰寫 Visual Studio 中其他類型專案的程式碼。 其中有許多差異的原因與將 Office 物件模型公開給 Managed 程式碼的方式相關。 其他差異則與 Office 專案的設計相關。
@@ -51,7 +51,7 @@ ms.locfileid: "54864068"
 ### <a name="understand-primary-interop-assemblies"></a>了解主要 interop 組件
  Microsoft Office 應用程式將其許多功能公開給自動化。 不過，您無法直接使用 Managed 程式碼 (例如 Visual Basic 或 C#) 來自動化 Office 應用程式。 若要使用 Managed 程式碼自動化 Office 應用程式，您必須使用 Office 主要 Interop 組件 (PIA)。 主要 Interop 組件可讓 Managed 程式碼與 Office 應用程式的 COM 物件模型互動。
 
- 每個 Microsoft Office 應用程式都有 PIA。 當您在 Visual Studio 中建立 Office 專案時，適當的 PIA 的參考會自動加入專案。 若要自動化專案中的其他 Office 應用程式功能，您必須手動加入適當的 PIA 的參考。 如需詳細資訊，請參閱[＜How to：目標 Office 應用程式可以透過主要 interop 組件](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)。
+ 每個 Microsoft Office 應用程式都有 PIA。 當您在 Visual Studio 中建立 Office 專案時，適當的 PIA 的參考會自動加入專案。 若要自動化專案中的其他 Office 應用程式功能，您必須手動加入適當的 PIA 的參考。 如需詳細資訊，請參閱[如何：目標 Office 應用程式可以透過主要 interop 組件](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)。
 
 ### <a name="use-primary-interop-assemblies-at-design-time-and-runtime"></a>在設計階段與執行階段使用主要 interop 組件
  您必須在開發電腦的全域組件快取內安裝並註冊 Office PIA，才能執行大部分的開發工作。 如需詳細資訊，請參閱 <<c0> [ 設定電腦以開發 Office 方案](../vsto/configuring-a-computer-to-develop-office-solutions.md)。
@@ -63,9 +63,9 @@ ms.locfileid: "54864068"
 
  由於 Office PIA 中的類型對應到以 COM 為基礎的物件模型中的類型，您使用這些類型的方式通常與其他 Managed 類型不同。 比方說，您呼叫在 Office 主要 Interop 組件中有選擇性參數之方法的方式，取決於您在專案中所使用的程式設計語言。 如需詳細資訊，請參閱下列主題：
 
--   [Office 方案中的選擇性參數](../vsto/optional-parameters-in-office-solutions.md)。
+- [Office 方案中的選擇性參數](../vsto/optional-parameters-in-office-solutions.md)。
 
--   [晚期繫結在 Office 方案中](../vsto/late-binding-in-office-solutions.md)。
+- [晚期繫結在 Office 方案中](../vsto/late-binding-in-office-solutions.md)。
 
 ## <a name="program-model-of-office-projects"></a>Office 專案的程式模型
  所有的 Office 專案包含一個或多個產生的類別，它們提供您程式碼的進入點。 這些類別也會提供對主應用程式物件模型的存取，以及對執行窗格和自訂工作窗格等功能的存取。
@@ -91,7 +91,7 @@ ms.locfileid: "54864068"
  若要變更 Visual C# Office 專案中的主項目命名空間，請使用 [主項目命名空間]  屬性。 如需詳細資訊，請參閱 < [Office 專案中的屬性](../vsto/properties-in-office-projects.md)。
 
 ## <a name="supported-programming-languages-in-office-projects"></a>Office 專案中支援的程式設計語言
- Visual Studio 中的 Office 專案範本只支援 Visual Basic 和 Visual C# 程式設計語言。 因此，這些專案範本只位於 **中，[新增專案]** **對話方塊的 [Visual Basic]** **和 [Visual C#]** [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]節點。 如需詳細資訊，請參閱[＜How to：在 Visual Studio 中建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)。
+ Visual Studio 中的 Office 專案範本只支援 Visual Basic 和 Visual C# 程式設計語言。 因此，這些專案範本只位於 **中，[新增專案]** **對話方塊的 [Visual Basic]** **和 [Visual C#]** [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]節點。 如需詳細資訊，請參閱[如何：在 Visual Studio 中建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)。
 
 ## <a name="language-choice-and-office-programming"></a>語言選擇與 Office 程式設計
  Microsoft Office 和 Visual Basic for Applications (VBA) 是開發來協同運作以最佳化應用程式自訂的工作流程。 Visual Basic 繼承了一些開發。 例如，Visual Basic 支援選擇性參數，這表示在呼叫 Microsoft Office 主要 Interop 組件中的一些方法時，您可以比使用 Visual C# 撰寫較少程式碼。
@@ -99,8 +99,11 @@ ms.locfileid: "54864068"
 ## <a name="program-with-visual-basic-vs-visual-c-in-office-solutions"></a>使用 Visual Basic 與程式。Visual C# Office 方案中
  您可以使用 Visual Basic 或 Visual C# 來建立 Office 方案。 由於 Microsoft Office 物件模型的設計是要搭配 Microsoft Visual Basic for Applications (VBA) 使用，因此 Visual Basic 開發人員可以輕鬆使用 Microsoft Office 應用程式所公開的物件。 Visual C# 開發人員可以與 Visual Basic 開發人員使用大部分相同的功能，但有某些情況下，他們必須撰寫額外程式碼以使用 Office 物件模型。 Office 程式開發中的基本程式設計功能與以 Visual Basic 和 C# 撰寫的 Managed 程式碼之間也有一些差異。
 
+<!-- markdownlint-disable MD003 MD020 -->
 ## <a name="key-differences-between-visual-basic-and-visual-c"></a>Visual Basic 和 Visual C# 之間的主要差異
- 下表顯示 Office 程式開發中的 Visual Basic 和 Visual C# 之間的主要差異。
+<!-- markdownlint-enable MD003 MD020 -->
+
+下表顯示 Office 程式開發中的 Visual Basic 和 Visual C# 之間的主要差異。
 
 |功能|描述|Visual Basic 支援|Visual C# 支援|
 |-------------|-----------------|--------------------------|------------------------|

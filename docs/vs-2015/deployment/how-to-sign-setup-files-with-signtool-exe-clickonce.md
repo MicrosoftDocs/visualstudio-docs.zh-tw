@@ -1,14 +1,9 @@
 ---
-title: 如何： 簽署安裝程式檔案使用 SignTool.exe (ClickOnce) |Microsoft Docs
-ms.custom: ''
+title: 作法：簽署安裝程式檔案使用 SignTool.exe (ClickOnce) |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -23,15 +18,15 @@ ms.assetid: 545a4005-d283-4110-9821-c78a9833c250
 caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: f6975fb9c3c3e1abeeaebe23b4a85f41833e421e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 67dc8e858a8ee87ee9e1fef9d99bf24ea4994960
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49179305"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68202175"
 ---
-# <a name="how-to-sign-setup-files-with-signtoolexe-clickonce"></a>如何：使用 SignTool.exe 簽署安裝程式檔案 (ClickOnce)
+# <a name="how-to-sign-setup-files-with-signtoolexe-clickonce"></a>HOW TO：使用 SignTool.exe 簽署安裝程式檔案 (ClickOnce)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 您可以使用 SignTool.exe 簽署安裝程式 (setup.exe)。 這項程序有助於確保不會在使用者電腦上安裝遭到修改的檔案。  
@@ -42,27 +37,27 @@ ms.locfileid: "49179305"
   
 ### <a name="to-generate-an-unsigned-setup-program-and-sign-later"></a>產生未簽署的安裝程式並在稍後簽署  
   
-1.  在開發電腦上，安裝您要用來簽署資訊清單的憑證。  
+1. 在開發電腦上，安裝您要用來簽署資訊清單的憑證。  
   
-2.  在 [方案總管] 中選取專案。  
+2. 在 [方案總管]  中選取專案。  
   
-3.  在 **專案**功能表上，按一下*ProjectName* **屬性**。  
+3. 在 [專案]  功能表上，按一下[*ProjectName* 屬性]  。  
   
-4.  在  **Signing**頁面上，清除**簽署 ClickOnce 資訊清單**。  
+4. 在 [簽署]  頁面上，清除的 [簽署 ClickOnce 資訊清單]  。  
   
-5.  在 **發佈**頁面上，按一下**必要條件**。  
+5. 在 [發佈]  頁面上，按一下 [必要條件]  。  
   
-6.  確認所有必要條件都已選取，然後按一下 **確定**。  
+6. 確定已選取所有必要條件，然後按一下 [確定]  。  
   
-7.  在 **發佈**頁面上，確認發行設定，然後按一下**立即發佈**。  
+7. 在 [發佈]  頁面上，確認發佈設定，然後按一下 [立即發佈]  。  
   
      方案隨即將未簽署的應用程式資訊清單、未簽署的部署資訊清單、版本特定檔案，以及未簽署的安裝程式發行至發行資料夾位置。  
   
-8.  在 **發佈**頁面上，按一下**必要條件**。  
+8. 在 [發佈]  頁面上，按一下 [必要條件]  。  
   
-9. 在 **必要條件**對話方塊中，清除**建立安裝程式以安裝必要條件元件**。  
+9. 在 [必要條件]  對話方塊中，清除 [建立安裝程式以安裝必要條件元件]  。  
   
-10. 在 **發佈**頁面上，確認發行設定，然後按一下**立即發佈**。  
+10. 在 [發佈]  頁面上，確認發佈設定，然後按一下 [立即發佈]  。  
   
      方案隨即將已簽署的應用程式資訊清單、已簽署的部署資訊清單，以及版本特定檔案發行至發行資料夾位置。 發行流程不會覆寫未簽署的安裝程式。  
   
@@ -86,6 +81,3 @@ ms.locfileid: "49179305"
   
 ## <a name="see-also"></a>另請參閱  
  [如何：重新簽署應用程式和部署資訊清單](../deployment/how-to-re-sign-application-and-deployment-manifests.md)
-
-
-

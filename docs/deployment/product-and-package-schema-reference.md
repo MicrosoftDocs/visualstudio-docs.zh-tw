@@ -25,27 +25,27 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 489415eba929a73c25b8aea7262c3e930a5d90cd
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 1570aa3d4ea72dc1d133ce3096e1726fa1ffb782
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56598982"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745619"
 ---
 # <a name="product-and-package-schema-reference"></a>產品和封裝結構描述參考
-A*產品檔案*會描述所有所需的外部相依性的 XML 資訊清單[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式。 外部相依性的範例包括[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]和 Microsoft Data Access Components (MDAC)。 封裝檔案與產品檔案類似，但用來安裝相依性，例如當地語系化組件、 授權合約，以及文件的文化特性相依元件。
+A*產品檔案*會描述所有所需的外部相依性的 XML 資訊清單[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式。 外部相依性的範例包括.NET Framework 和 Microsoft Data Access Components (MDAC)。 封裝檔案與產品檔案類似，但用來安裝相依性，例如當地語系化組件、 授權合約，以及文件的文化特性相依元件。
 
  產品和套件檔案包含的其中一個最上層`Product`或`Package`項目，每個均包含下列項目。
 
-|元素|說明|屬性|
+|項目|描述|屬性|
 |-------------|-----------------|----------------|
-|[\<產品 > 項目](../deployment/product-element-bootstrapper.md)|產品檔案的必要項最上層項目。|無|
-|[\<封裝 > 項目](../deployment/package-element-bootstrapper.md)|必要的封裝檔案的最上層項目。|`Culture`<br /><br /> `Name`<br /><br /> `EULA`|
-|[\<RelatedProducts > 項目](../deployment/relatedproducts-element-bootstrapper.md)|產品檔案的選擇性元素。 其他產品，這項產品安裝，或相依。|無|
-|[\<InstallChecks > 項目](../deployment/installchecks-element-bootstrapper.md)|必要項目。 列出在安裝期間，在本機電腦上執行的相依性檢查。|無|
-|[\<命令 > 項目](../deployment/commands-element-bootstrapper.md)|必要項目。  如所述，執行一或多個安裝檢查`InstallChecks`，代表要安裝哪一個套件應該檢查失敗。|無|
-|[\<請為 PackageFiles > 項目](../deployment/packagefiles-element-bootstrapper.md)|必要項目。 列出此安裝程序可能安裝的套件。|無|
-|[\<字串 > 項目](../deployment/strings-element-bootstrapper.md)|必要項目。 存放區的當地語系化版本的產品名稱和錯誤字串。|無|
+|[\<Product> 元素](../deployment/product-element-bootstrapper.md)|產品檔案的必要項最上層項目。|None|
+|[\<Package> 元素](../deployment/package-element-bootstrapper.md)|必要的封裝檔案的最上層項目。|`Culture`<br /><br /> `Name`<br /><br /> `EULA`|
+|[\<RelatedProducts> 元素](../deployment/relatedproducts-element-bootstrapper.md)|產品檔案的選擇性元素。 其他產品，這項產品安裝，或相依。|None|
+|[\<InstallChecks> 元素](../deployment/installchecks-element-bootstrapper.md)|必要項目。 列出在安裝期間，在本機電腦上執行的相依性檢查。|None|
+|[\<Commands> 元素](../deployment/commands-element-bootstrapper.md)|必要項目。  如所述，執行一或多個安裝檢查`InstallChecks`，代表要安裝哪一個套件應該檢查失敗。|None|
+|[\<PackageFiles> 元素](../deployment/packagefiles-element-bootstrapper.md)|必要項目。 列出此安裝程序可能安裝的套件。|None|
+|[\<Strings> 元素](../deployment/strings-element-bootstrapper.md)|必要項目。 存放區的當地語系化版本的產品名稱和錯誤字串。|None|
 
 ## <a name="remarks"></a>備註
  封裝結構描述由*Setup.exe*，啟動工作，其中包含一些硬式編碼的邏輯，它自己的 MS 組建所產生的虛設常式程式。 結構描述驅動的安裝程序的各個層面。
@@ -53,7 +53,7 @@ A*產品檔案*會描述所有所需的外部相依性的 XML 資訊清單[!INCL
  `InstallChecks` 測試該 setup.exe 應該執行給定的封裝存在。 `PackageFiles` 列出所有封裝的安裝程序可能必須安裝，應該指定的測試失敗。 每個命令項目，在命令執行測試所描述的其中一個`InstallChecks`，並指定其`PackageFile`執行測試失敗。 您可以使用`Strings`產品名稱和當地語系化錯誤訊息，以便您可以使用一個單一的安裝二進位檔來安裝各種語言的應用程式的項目。
 
 ## <a name="example"></a>範例
- 下列程式碼範例示範如何安裝完整的產品檔案[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]。
+ 下列程式碼範例示範完整的產品檔案安裝.NET Framework。
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>

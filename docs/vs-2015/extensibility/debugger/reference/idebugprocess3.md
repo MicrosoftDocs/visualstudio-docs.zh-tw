@@ -1,14 +1,9 @@
 ---
-title: IDebugProcess3 |Microsoft Docs
-ms.custom: ''
+title: IDebugProcess3 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugProcess3
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 7bd6b952-cf34-4e66-b8f6-d472dac3748f
 caps.latest.revision: 25
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 5b6c81634b89eb4c722e09a2449efbeb993fd8bf
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 490d1e5f8048188e442f0113f8cf91bafe2344ed
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51753106"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65675394"
 ---
 # <a name="idebugprocess3"></a>IDebugProcess3
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -30,7 +25,7 @@ ms.locfileid: "51753106"
 這個介面會表示執行中處理序和其程式。 這個介面是否存在，在數種方法來取代[IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)介面。 它可讓控制程序中的所有程式。  
   
 > [!NOTE]
->  [繼續](../../../extensibility/debugger/reference/idebugprogram2-continue.md)， [Execute](../../../extensibility/debugger/reference/idebugprogram2-execute.md)，以及[步驟](../../../extensibility/debugger/reference/idebugprogram2-step.md)方法已被取代，並且無法再使用。 使用上的對應方法`IDebugProcess3`改為介面。  
+> [繼續](../../../extensibility/debugger/reference/idebugprogram2-continue.md)， [Execute](../../../extensibility/debugger/reference/idebugprogram2-execute.md)，以及[步驟](../../../extensibility/debugger/reference/idebugprogram2-step.md)方法已被取代，並且無法再使用。 使用上的對應方法`IDebugProcess3`改為介面。  
   
 ## <a name="syntax"></a>語法  
   
@@ -44,7 +39,7 @@ IDebugProcess3 : IDebugProcess2
 ## <a name="notes-for-callers"></a>呼叫端資訊  
  此介面稱為主要是由工作階段的偵錯管理員 (SDM) 來進行互動的程式識別在這個程序中的群組。  
   
- 呼叫[QueryInterface](http://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3)上[IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)介面，以取得此介面。  
+ 呼叫[QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3)上[IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)介面，以取得此介面。  
   
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法  
  除了繼承自方法[IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)，`IDebugProcess3`實作下列方法。  
@@ -62,14 +57,13 @@ IDebugProcess3 : IDebugProcess2
 |[GetEngineFilter](../../../extensibility/debugger/reference/idebugprocess3-getenginefilter.md)|擷取可用的偵錯引擎的唯一識別碼的陣列。|  
   
 ## <a name="requirements"></a>需求  
- 標頭： Msdbg.h  
+ 標頭：Msdbg.h  
   
- 命名空間： Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間：Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
  [核心介面](../../../extensibility/debugger/reference/core-interfaces.md)   
  [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)   
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)
-

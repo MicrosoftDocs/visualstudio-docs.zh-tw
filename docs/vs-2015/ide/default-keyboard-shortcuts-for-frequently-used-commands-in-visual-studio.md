@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1d1b7b2ed25c5712f548266955aae5e94866ad0e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 7c64207f6ab26c78492db9feae80698b0af5679d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54770491"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437514"
 ---
 # <a name="default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio"></a>Visual Studio 中常用命令的預設鍵盤快速鍵
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "54770491"
 您可以選擇這些預設鍵盤快速鍵以存取 Visual Studio 中的常用命令。 如需內含預設快速鍵命令的完整清單，請參閱[預設鍵盤快速鍵](../ide/default-keyboard-shortcuts-in-visual-studio.md)。
 
 > [!NOTE]
->  您可以開啟 [選項] 對話方塊，展開 [環境] 節點，然後選擇 [鍵盤]，查閱命令的捷徑。
+> 您可以開啟 [選項] 對話方塊，展開 [環境] 節點，然後選擇 [鍵盤]，查閱命令的捷徑。
 
  **本主題內容**
 
@@ -31,7 +31,7 @@ ms.locfileid: "54770491"
 |[建置](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_build)|[編輯](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_edit)|[Project](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_project)|[工具](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_tools)|[視窗](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_window)|
 |[偵錯](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_debug)|[檔案](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_file)|[重構](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_refactor)|[檢視](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_view)||
 
-##  <a name="bkmk_build"></a> 建置
+## <a name="bkmk_build"></a> 建置
 
 |命令|鍵盤快速鍵 [內容]|
 |--------------|-------------------------------------|
@@ -40,7 +40,7 @@ ms.locfileid: "54770491"
 |Build.Compile|Ctrl+F7 [全域]|
 |Build.RunCodeAnalysisonSolution|Alt+F11 [全域]|
 
-##  <a name="bkmk_debug"></a> 偵錯
+## <a name="bkmk_debug"></a> 偵錯
 
 |命令|鍵盤快速鍵 [內容]|
 |--------------|-------------------------------------|
@@ -60,7 +60,7 @@ ms.locfileid: "54770491"
 |Debug.StopDebugging|Shift+F5 [全域]|
 |Debug.ToggleBreakpoint|F9 [全域]|
 
-##  <a name="bkmk_edit"></a> 編輯
+## <a name="bkmk_edit"></a> 編輯
 
 |命令|鍵盤快速鍵 [內容]|
 |--------------|-------------------------------------|
@@ -111,7 +111,7 @@ dit.SurroundWith|Ctrl+K、Ctrl+S [全域]|
 |Edit.WordDeleteToEnd|Ctrl+Delete [文字編輯器]|
 |Edit.WordDeleteToStart|Ctrl+退格鍵 [文字編輯器]|
 
-##  <a name="bkmk_file"></a> 檔案
+## <a name="bkmk_file"></a> 檔案
 
 |命令|鍵盤快速鍵 [內容]|
 |--------------|-------------------------------------|
@@ -127,26 +127,26 @@ dit.SurroundWith|Ctrl+K、Ctrl+S [全域]|
 |File.SaveSelectedItems|Ctrl+S [全域]|
 |File.ViewinBrowser|Ctrl+Shift+W [全域]|
 
-##  <a name="bkmk_project"></a> 專案
+## <a name="bkmk_project"></a> 專案
 
 |命令|鍵盤快速鍵 [內容]|
 |--------------|-------------------------------------|
 |Project.AddExistingItem|Shift+Alt+A [全域]|
 |Project.AddNewItem|Ctrl+Shift+A [全域]|
 
-##  <a name="bkmk_refactor"></a> 重構
+## <a name="bkmk_refactor"></a> 重構
 
 |命令|鍵盤快速鍵 [內容]|
 |-------------|-----------------------------------|
 |Refactor.ExtractMethod|Ctrl+R、Ctrl+M [全域]|
 
-##  <a name="bkmk_tools"></a> 工具
+## <a name="bkmk_tools"></a> 工具
 
 |命令|鍵盤快速鍵 [內容]|
 |-------------|-----------------------------------|
 |Tools.AttachtoProcess|Ctrl+Alt+P [全域]|
 
-##  <a name="bkmk_view"></a> 檢視
+## <a name="bkmk_view"></a> 檢視
 
 |命令|鍵盤快速鍵 [內容]|
 |--------------|-------------------------------------|
@@ -167,7 +167,7 @@ iew.TfsTeamExplorer|Ctrl+\\、Ctrl+M [全域]|
 |View.ViewCode|Enter [類別圖]<br /><br /> 或 F7 [設定設計工具]|
 |View.ViewDesigner|Shift+F7 [HTML 編輯器原始碼檢視]|
 
-##  <a name="bkmk_window"></a> Window
+## <a name="bkmk_window"></a> Window
 
 |命令|鍵盤快速鍵 [內容]|
 |--------------|-------------------------------------|

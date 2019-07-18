@@ -11,28 +11,28 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 4ae0d3390be709dfe07f174bbb9754b986cdafc5
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c7eb15c6d19ab40df6913dd67466dc20012492b7
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913688"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62950366"
 ---
 # <a name="how-to-add-comments-to-a-workflow-in-the-workflow-designer"></a>HOW TO：將註解新增至工作流程設計工具中的工作流程
 
 為了方便建立更大型且更複雜的工作流程，.NET Framework 4.5 可讓開發人員將註解加入至下列類型的設計工具中的項目：
 
--   <xref:System.Activities.Activity>
+- <xref:System.Activities.Activity>
 
--   <xref:System.Activities.Statements.State>
+- <xref:System.Activities.Statements.State>
 
--   <xref:System.Activities.Statements.Transition>
+- <xref:System.Activities.Statements.Transition>
 
--   衍生自 <xref:System.Activities.Statements.FlowNode> 的類別
+- 衍生自 <xref:System.Activities.Statements.FlowNode> 的類別
 
--   <xref:System.Activities.Variable>
+- <xref:System.Activities.Variable>
 
--   <xref:System.Activities.Argument>
+- <xref:System.Activities.Argument>
 
 > [!IMPORTANT]
 > 註釋的內容會以純文字的格式儲存在與工作流程相關聯 XAML 檔中，並有可能被其他人讀取。 將敏感資訊輸入至註釋時要謹慎。

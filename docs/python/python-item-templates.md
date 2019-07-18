@@ -3,19 +3,19 @@ title: Python 專案的項目範本
 description: Python 專案項目範本的參考清單可在 Visual Studio 中透過 [加入] > [新項目] 對話方塊取得。
 ms.date: 12/06/2018
 ms.topic: tutorial
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 119ce4b4221995bdbe3225c895defd5d471377d9
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c093dad1364fd5209f51c8e87e3fb99b3c1d3c4a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55924691"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62430326"
 ---
 # <a name="python-item-templates"></a>Python 項目範本
 

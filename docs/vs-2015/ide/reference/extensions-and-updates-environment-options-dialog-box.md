@@ -11,17 +11,16 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8eaf16ac81f5b8347955e97d71f82e37e7feff38
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 16b8d2214d9f81115d183eb1b4e6765dcd33d37e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54756331"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68199358"
 ---
 # <a name="extensions-and-updates-environment-options-dialog-box"></a>選項對話方塊、環境、擴充功能和更新
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 您可以使用這個頁面，設定有關 Visual Studio 如何執行更新，以及如何更新和探索擴充功能的選項。  
   
 ### <a name="automatically-check-for-updates"></a>自動檢查更新  
@@ -36,5 +35,5 @@ ms.locfileid: "54756331"
 ### <a name="additional-extension-galleries"></a>其他擴充組件庫  
  這個企業版功能可支援專屬擴充功能的組件庫。 如需詳細資訊，請參閱[私用組件庫](../../extensibility/private-galleries.md)。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [環境選項對話方塊](../../ide/reference/environment-options-dialog-box.md)

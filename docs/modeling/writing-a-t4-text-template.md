@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9ae4a99fd1473ea25667887701198efee23b1356
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MT
+ms.openlocfilehash: 2549ad27f0f05d3425dd6625e9d48fdfab4db3a6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55970799"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63386072"
 ---
 # <a name="writing-a-t4-text-template"></a>撰寫 T4 文字範本
 文字範本包含將透過它產生的文字。 例如，建立網頁的範本會包含"\<html >...」 和所有其他標準部分 HTML 網頁。 插入範本中所*控制區塊*，這是一個片段的程式碼。 控制區塊提供不同的值，並允許文字的各部分成為條件式和重複。
@@ -25,11 +25,11 @@ ms.locfileid: "55970799"
 
  文字範本是由下列部分組成：
 
--   **指示詞**-控制範本處理方式的項目。
+- **指示詞**-控制範本處理方式的項目。
 
--   **文字區塊**-內容複製到輸出直接。
+- **文字區塊**-內容複製到輸出直接。
 
--   **控制區塊**-程式碼，將變數值插入至文字，並控制文字的條件式或重複部分。
+- **控制區塊**-程式碼，將變數值插入至文字，並控制文字的條件式或重複部分。
 
 若要嘗試本主題中的範例，將其複製到範本檔案中所述[使用 T4 文字範本在設計階段的程式碼產生](../modeling/design-time-code-generation-by-using-t4-text-templates.md)。 編輯範本檔案之後，並儲存它，然後檢查輸出 **.txt**檔案。
 
@@ -94,7 +94,7 @@ Hello!
  只要程式碼中允許 `Write();` 陳述式的位置，就可以插入文字區塊。
 
 > [!NOTE]
->  當您內嵌文字區塊，例如迴圈或條件式複合陳述式內時，一律使用大括號 {...} 若要包含文字區塊。
+> 當您內嵌文字區塊，例如迴圈或條件式複合陳述式內時，一律使用大括號 {...} 若要包含文字區塊。
 
 ### <a name="expression-control-blocks"></a>運算式控制區塊
  運算式控制區塊會評估運算式，並將它轉換為字串。 這會插入至輸出檔案。
@@ -107,7 +107,7 @@ Hello!
 <#= 2 + 3 #>
 ```
 
- 請注意，開啟符號有三個字元 "<#="。
+ 請注意，開啟符號有三個字元"< #="。
 
  運算式可以包括範圍內的任何變數。 例如，此區塊會列印含有數字的行：
 
@@ -155,7 +155,7 @@ private int Square(int i)
  如需有關控制區塊的詳細資訊，請參閱[文字範本控制區塊](../modeling/text-template-control-blocks.md)。
 
 ### <a name="class-feature-blocks-can-contain-text-blocks"></a>類別功能區塊可以包含文字區塊。
- 您可以撰寫可產生文字的方法。 例如：
+ 您可以撰寫可產生文字的方法。 例如: 
 
 ```
 List of Squares:
@@ -185,7 +185,7 @@ private void WriteSquareLine(int i)
 <#@ assembly name="System.Xml" #>
 ```
 
- 您應該使用絕對路徑名稱，或在路徑名稱中使用標準巨集名稱。 例如: 
+ 您應該使用絕對路徑名稱，或在路徑名稱中使用標準巨集名稱。 例如：
 
 ```
 <#@ assembly name="$(SolutionDir)library\MyAssembly.dll" #>

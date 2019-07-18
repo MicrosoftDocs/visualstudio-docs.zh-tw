@@ -1,33 +1,28 @@
 ---
 title: RegPkg 公用程式 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - regpkg, registration utility
 - registration, regpkg utility
 ms.assetid: 1683ee18-59d1-4bab-a674-dd00dd960de3
 caps.latest.revision: 13
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: da637b365eec260a7c1c34bbe7ba96c785cc18fc
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 1895d3b57e5109f824728021cb1d64f0c527384b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51781279"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436591"
 ---
 # <a name="regpkg-utility"></a>RegPkg 公用程式
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 > [!NOTE]
->  Visual Studio 中註冊套件的慣用的方法是使用.pkgdef 檔案。 這可讓擴充功能部署而不需要存取系統登錄，也就是 VSIX 部署的需求。 使用建立 Pkgdef 檔案[CreatePkgDef 公用程式](../../extensibility/internals/createpkgdef-utility.md)。 如需有關 Visual Studio 封裝部署的詳細資訊，請參閱[傳送 Visual Studio 擴充功能](../../extensibility/shipping-visual-studio-extensions.md)。  
+> Visual Studio 中註冊套件的慣用的方法是使用.pkgdef 檔案。 這可讓擴充功能部署而不需要存取系統登錄，也就是 VSIX 部署的需求。 使用建立 Pkgdef 檔案[CreatePkgDef 公用程式](../../extensibility/internals/createpkgdef-utility.md)。 如需有關 Visual Studio 封裝部署的詳細資訊，請參閱[傳送 Visual Studio 擴充功能](../../extensibility/shipping-visual-studio-extensions.md)。  
   
  RegPkg.exe 公用程式註冊使用 VSPackage[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]並準備好進行部署。 VSPackage 開發期間，此公用程式會在幕後使用的。 它會執行建置程序的一部分，讓您可以建置和執行在實驗登錄區中的 VSPackage。  
   
@@ -65,7 +60,7 @@ RegPkg [/root:<root>] [/regfile:<regfile>] [/rgsfile:<rgsfile> [/rgm]] [/vrgfile
  /assembly  
  強制使用組件，而不是程式碼基底的註冊。  
   
- / 取消註冊  
+ /unregister  
  取消註冊此套件。  無法使用  
   
  /regfile 或 /vrgfile 或 /rgsfile 或 /wixfile。  
@@ -73,4 +68,3 @@ RegPkg [/root:<root>] [/regfile:<regfile>] [/rgsfile:<rgsfile> [/rgm]] [/vrgfile
 ## <a name="see-also"></a>另請參閱  
  [發行產品](../../misc/releasing-a-visual-studio-integration-product.md)   
  [對 RegPkg 封裝註冊進行疑難排解](../../extensibility/internals/troubleshooting-regpkg-package-registration.md)
-

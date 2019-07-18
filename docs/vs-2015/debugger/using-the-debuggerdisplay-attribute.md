@@ -1,14 +1,9 @@
 ---
 title: 使用 DebuggerDisplay 屬性 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -22,13 +17,13 @@ ms.assetid: f4eb7c76-af4e-493b-9ab6-9cb05949d9b3
 caps.latest.revision: 50
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 9637bd2d2a057615fd758ecec80a914931822b64
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: aba6feb17a4e7bd4cabfe40bd45480a0f7a9f552
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51736876"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65683929"
 ---
 # <a name="using-the-debuggerdisplay-attribute"></a>使用 DebuggerDisplay 屬性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +37,7 @@ ms.locfileid: "51736876"
  偵錯工具是否評估這個隱含 `ToString()` 呼叫，是取決於 [工具 / 選項 / 偵錯]  對話方塊中的使用者設定。 Visual Basic 並未實作這個隱含 `ToString()` 評估。  
   
 > [!IMPORTANT]
->  如果已核取 [工具/選項 / 偵錯]  對話方塊中的 [在變數視窗中顯示物件的原始結構]  核取方塊，即忽略 `DebuggerDisplay` 屬性。  
+> 如果已核取 [工具/選項 / 偵錯]  對話方塊中的 [在變數視窗中顯示物件的原始結構]  核取方塊，即忽略 `DebuggerDisplay` 屬性。  
   
  下表說明 `DebuggerDisplay` 屬性的一些可能用法和範例輸出。  
   
@@ -185,7 +180,4 @@ class MyHashtable
 ```  
   
 ## <a name="see-also"></a>另請參閱  
- [使用 DebuggerTypeProxy 屬性](../debugger/using-debuggertypeproxy-attribute.md)[增強偵錯功能，使用偵錯工具顯示屬性](http://msdn.microsoft.com/library/72bb7aa9-459b-42c4-9163-9312fab4c410)
-
-
-
+ [使用 DebuggerTypeProxy 屬性](../debugger/using-debuggertypeproxy-attribute.md)[增強偵錯功能，使用偵錯工具顯示屬性](https://msdn.microsoft.com/library/72bb7aa9-459b-42c4-9163-9312fab4c410)

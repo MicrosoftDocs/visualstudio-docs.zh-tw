@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugBreakpointRequest3::GetRequestInfo2
 ms.assetid: 33942e4a-0a0a-49e8-a693-004954f6d38a
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 06458649d091be104c5509e37aa35029a119c84f
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 86e687a02e434c12c6386df57462cdb578250cdd
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56697139"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66324201"
 ---
 # <a name="idebugbreakpointrequest3getrequestinfo2"></a>IDebugBreakpointRequest3::GetRequestInfo2
 這個方法會取得描述此中斷點要求的中斷點要求資訊。
@@ -38,14 +41,12 @@ int GetRequestInfo2(
 );
 ```
 
-#### <a name="parameters"></a>參數
- `dwFields`
+## <a name="parameters"></a>參數
+`dwFields`\
+[in]從旗標的組合[BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md)列舉型別，判斷哪些欄位`pBPRequestInfo`是要填入。
 
- [in]從旗標的組合[BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md)列舉型別，判斷哪些欄位`pBPRequestInfo`是要填入。
-
- `bBPRequestInfo`
-
- [out][BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md)来填入結構。
+`bBPRequestInfo`\
+[out][BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md)来填入結構。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`，否則會傳回錯誤碼。

@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d318ed0b033e4e423ee947a3b72fc317e98e432
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: ed872bd0cf90bef4433e3430ea8a7557213cbb4c
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56611304"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "64809005"
 ---
 # <a name="idiasymbolgetname"></a>IDiaSymbol::get_name
 擷取的符號名稱。
@@ -39,7 +39,7 @@ HRESULT get_name ( 
  如果成功，則傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。
 
 > [!NOTE]
->  傳回值為`S_FALSE`表示此屬性不適用於符號。
+> 傳回值為`S_FALSE`表示此屬性不適用於符號。
 
 ## <a name="example"></a>範例
 
@@ -49,5 +49,5 @@ BSTR        name;
 pType->get_name( &name );
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -1,14 +1,9 @@
 ---
 title: 使用偵錯工具管理例外狀況 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.exceptions
 - vs.debug.exceptions.find
@@ -37,13 +32,13 @@ ms.assetid: 43a77fa8-37d0-4c98-a334-0134dbca4ece
 caps.latest.revision: 40
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: bdb648e7a29b3ed5d9a444e203ddbdcd6b0e73dc
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: be15b683a6e173d813ea13eaa0cc400a40e68206
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51770001"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65690513"
 ---
 # <a name="managing-exceptions-with-the-debugger"></a>使用偵錯工具管理例外狀況
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,17 +47,17 @@ ms.locfileid: "51770001"
   
  發生例外狀況時，偵錯工具都會將例外狀況訊息寫入至 [輸出] 視窗。 在下列情況下，它可能會中斷執行：  
   
--   當例外狀況已擲回且未處理。  
+- 當例外狀況已擲回且未處理。  
   
--   當偵錯工具設定為在叫用任何處理常式之前就已擲回例外狀況時，立即中斷執行。  
+- 當偵錯工具設定為在叫用任何處理常式之前就已擲回例外狀況時，立即中斷執行。  
   
--   如果您曾設定 [Just My Code](../debugger/just-my-code.md)，且偵錯工具設定為在非由使用者程式碼所處理的任何例外狀況時中斷。  
-  
-> [!NOTE]
->  ASP.NET 具有最上層例外狀況處理常式，這會在瀏覽器中顯示錯誤頁面。 它不會中斷執行，除非 [Just My Code]  已開啟。 如需範例，請參閱下列 [Setting the debugger to continue on user-unhandled exceptions](../debugger/managing-exceptions-with-the-debugger.md#BKMK_UserUnhandled) 。  
+- 如果您曾設定 [Just My Code](../debugger/just-my-code.md)，且偵錯工具設定為在非由使用者程式碼所處理的任何例外狀況時中斷。  
   
 > [!NOTE]
->  在 Visual Basic 應用程式中，即使使用 On Error 樣式的錯誤處理常式，偵錯工具還是會將所有錯誤都當成例外狀況管理。  
+> ASP.NET 具有最上層例外狀況處理常式，這會在瀏覽器中顯示錯誤頁面。 它不會中斷執行，除非 [Just My Code]  已開啟。 如需範例，請參閱下列 [Setting the debugger to continue on user-unhandled exceptions](../debugger/managing-exceptions-with-the-debugger.md#BKMK_UserUnhandled) 。  
+  
+> [!NOTE]
+> 在 Visual Basic 應用程式中，即使使用 On Error 樣式的錯誤處理常式，偵錯工具還是會將所有錯誤都當成例外狀況管理。  
   
 ## <a name="managing-exceptions-with-the-exception-settings-window"></a>藉由 [例外狀況設定] 視窗管理例外狀況  
  您可以使用 [例外狀況設定]  視窗來指定哪些例外狀況 (或例外狀況的集合) 會導致偵錯工具中斷，並指定在哪個點上您會想要中斷。 您可以新增或刪除例外狀況，或指定要中斷的例外狀況。 在經由 [偵錯] / [Windows] / [例外狀況設定] 開啟方案時，此視窗隨即開啟。  
@@ -146,7 +141,7 @@ ms.locfileid: "51770001"
   
    ![還原在例外狀況設定的預設值](../debugger/media/restoredefaultexceptions.png "RestoreDefaultExceptions")  
   
-###  <a name="BKMK_UserUnhandled"></a> 設定要在使用者未處理的例外狀況繼續偵錯工具  
+### <a name="BKMK_UserUnhandled"></a> 設定要在使用者未處理的例外狀況繼續偵錯工具  
  如果您正在偵錯具有 [Just My Code](../debugger/just-my-code.md)的 .NET 或 JavaScript 程式碼，則可以告知偵錯工具不中斷使用者程式碼中未處理，但在其他地方處理的例外狀況。  
   
 1. 在 [例外狀況設定]  視窗中，開啟內容功能表，方法是在視窗中按一下滑鼠右鍵，然後選取 [顯示行] 。 (如果您關閉了 [Just My Code] ，您就不會看到這個命令。)  
@@ -167,7 +162,7 @@ ms.locfileid: "51770001"
  如果您想要將例外狀況加入 [GPU 記憶體存取例外狀況]、[JavaScript 執行階段例外狀況] 或 [Win32 例外狀況] 類別，您需要包含此錯誤碼和描述。  
   
 > [!TIP]
->  請檢查您的拼字！ [例外狀況設定]  視窗並不會檢查加入的例外狀況是否存在。 因此如果您輸入 **Sytem.UriTemplateMatchException**，您會得到針對該例外狀況的項目 (而非針對 **System.UriTemplateMatchException**)。  
+> 請檢查您的拼字！ [例外狀況設定]  視窗並不會檢查加入的例外狀況是否存在。 因此如果您輸入 **Sytem.UriTemplateMatchException**，您會得到針對該例外狀況的項目 (而非針對 **System.UriTemplateMatchException**)。  
   
  例外狀況設定會保存在此方案的 .suo 檔案中，因此可套用至特定的方案中。 您無法在不同方案間重複使用特定的例外狀況設定。 此時，會保存已加入的例外狀況；但已刪除的例外狀況除外。 換句話說，您可以加入例外狀況，關閉並重新開啟方案，然後該例外狀況仍不會消失。 但是，如果您刪除例外狀況，然後關閉/重新開啟此方案，則該例外狀況會重新出現。  
   
@@ -188,13 +183,8 @@ public class GenericException<T> : Exception
   
 ## <a name="see-also"></a>另請參閱  
  [例外狀況之後繼續執行](../debugger/continuing-execution-after-an-exception.md)   
- [如何： 在例外狀況後檢查系統程式碼](../debugger/how-to-examine-system-code-after-an-exception.md)   
- [如何： 使用原生執行階段檢查](../debugger/how-to-use-native-run-time-checks.md)   
+ [如何：在 例外狀況後檢查系統程式碼](../debugger/how-to-examine-system-code-after-an-exception.md)   
+ [如何：使用原生執行階段檢查](../debugger/how-to-use-native-run-time-checks.md)   
  [使用執行階段檢查時不使用 C 執行階段程式庫](../debugger/using-run-time-checks-without-the-c-run-time-library.md)   
- [例外狀況助理](http://msdn.microsoft.com/library/992892ac-9d52-44cc-bf09-b44bfc5befeb)   
+ [例外狀況助理](https://msdn.microsoft.com/library/992892ac-9d52-44cc-bf09-b44bfc5befeb)   
  [偵錯工具基礎](../debugger/debugger-basics.md)
-
-
-
-
-

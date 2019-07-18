@@ -12,11 +12,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: dacca8e8bf161b6f3a84dc216596673d5df8258c
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58146431"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62992897"
 ---
 # <a name="iactivescriptprofilercontrol5-interface"></a>IActiveScriptProfilerControl5 介面
 提供方法來列舉與指令碼引擎相關聯的 GC 堆積物件。  

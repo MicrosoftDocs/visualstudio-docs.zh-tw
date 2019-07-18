@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK], supporting
 ms.assetid: 567acde3-354e-4f39-8d99-0ef86c103396
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 35fb66927272435e773dbaee44019103892b028d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 2b4f12790de00cc835f7268830bf6d9a4734b839
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56616985"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66331234"
 ---
 # <a name="supporting-source-control"></a>支援原始檔控制
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 支援檔案簽出、 簽入，並為您的專案或編輯器的其他原始檔控制作業。 原始檔控制用戶端，作為[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]設計成與原始檔控制封裝時，這類互動[!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)]，可保存、 版本控制，與以動態方式定義的一組檔案的控制等機能。

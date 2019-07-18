@@ -6,17 +6,17 @@ helpviewer_keywords:
 - persistence, projects
 - projects [Visual Studio SDK], persistance
 ms.assetid: 42907bcf-4e27-46bd-a8cb-01c2ccd2bde5
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a5c195697a94462ce1239318a309160220117b8e
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 5c0f81d3cb4cc1e3404087f6ad4b8ecac34b9ec0
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58146522"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66328330"
 ---
 # <a name="project-persistence"></a>專案持續性
 持續性是重要的設計考量，為您的專案。 大部分的專案使用的專案項目代表檔案;[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]也支援其中的資料為非檔案型的專案。 這兩個專案和專案檔案所擁有的檔案必須被 persisted。 IDE 會指示專案，以儲存本身或專案項目。
@@ -25,9 +25,9 @@ ms.locfileid: "58146522"
 
  專案項目可以是檔案為基礎，或非檔案型：
 
--   檔案為基礎的項目可以是本機或遠端。 在 C# 中的 Web 專案，比方說，連線到遠端系統上的檔案保存在本機，而檔案本身會保存在遠端系統上。
+- 檔案為基礎的項目可以是本機或遠端。 在 C# 中的 Web 專案，比方說，連線到遠端系統上的檔案保存在本機，而檔案本身會保存在遠端系統上。
 
--   非檔案型的項目可以將項目儲存到資料庫或儲存機制。
+- 非檔案型的項目可以將項目儲存到資料庫或儲存機制。
 
 ## <a name="commit-models"></a>認可模型
  決定專案項目位於何處之後, 您必須選擇適當的認可模型。 例如，在具有本機檔案的檔案為基礎的模型，每個專案可以儲存自主。 在儲存機制模型中，您可以儲存在單一交易中的數個項目。 如需詳細資訊，請參閱 <<c0> [ 專案類型的設計決策](../../extensibility/internals/project-type-design-decisions.md)。

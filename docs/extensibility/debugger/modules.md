@@ -6,26 +6,26 @@ helpviewer_keywords:
 - modules
 - debugging [Debugging SDK], modules
 ms.assetid: c4cf2809-dbdb-4e75-9273-b3d3d77b67d0
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1f31e3760a0697be8c9fc80eb811c99df79d32b1
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: b231ee1eb84f41115a0892cda42a8b7e781e5e53
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56718907"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66350670"
 ---
 # <a name="modules"></a>模組
 偵錯工具就架構而言，*模組*:
 
--   是一個實體容器的程式碼，例如可執行檔或 DLL。
+- 是一個實體容器的程式碼，例如可執行檔或 DLL。
 
--   可以重新載入其符號，並描述本身。 模組描述會顯示在 IDE 的 [模組] 視窗中。
+- 可以重新載入其符號，並描述本身。 模組描述會顯示在 IDE 的 [模組] 視窗中。
 
--   由[IDebugModule2](../../extensibility/debugger/reference/idebugmodule2.md)來描述模組的偵錯引擎所建立的介面。
+- 由[IDebugModule2](../../extensibility/debugger/reference/idebugmodule2.md)來描述模組的偵錯引擎所建立的介面。
 
 ## <a name="see-also"></a>另請參閱
 - [偵錯工具概念](../../extensibility/debugger/debugger-concepts.md)

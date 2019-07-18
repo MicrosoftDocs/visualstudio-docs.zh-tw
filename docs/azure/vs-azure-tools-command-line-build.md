@@ -10,11 +10,11 @@ ms.topic: conceptual
 ms.date: 03/05/2017
 ms.author: ghogen
 ms.openlocfilehash: bc65d64f4dad2ac38c1f0c64ce6c7297d3c37d3a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55945257"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62572418"
 ---
 # <a name="building-azure-projects-from-the-command-line"></a>從命令列建置 Azure 專案
 使用 Microsoft Build Engine (MSBuild) 時，您可以在未安裝 Visual Studio 的測試版環境中建置產品。 MSBuild 的專案檔案會採用可擴充且 Microsoft 完全支援的 XML 格式。 使用 MSBuild 檔案格式時，您可以說明針對一或多個平台和組態所必須建置的項目。

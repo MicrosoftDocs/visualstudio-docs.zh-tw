@@ -1,14 +1,9 @@
 ---
 title: IDebugStackFrame2::EnumProperties |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugStackFrame2::EnumProperties
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 334bb95e-c7e0-4008-9f06-8c3999e47ee8
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 5144a96c5bcf5b73cad98816059d1023ed61ca2b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f92db2c2fbafcd5be991281d7da4f594dcfb2c85
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51748374"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68164808"
 ---
 # <a name="idebugstackframe2enumproperties"></a>IDebugStackFrame2::EnumProperties
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -85,4 +80,3 @@ int EnumProperties ( 
  [GetCount](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2-getcount.md)   
  [GetDebugProperty](../../../extensibility/debugger/reference/idebugstackframe2-getdebugproperty.md)   
  [EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md)
-

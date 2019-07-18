@@ -1,5 +1,5 @@
 ---
-title: 逐步解說： 遺漏的物件因裝置狀態而 |Microsoft Docs
+title: 逐步解說：遺漏的物件因裝置狀態而 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 1b0d2bbd-0729-4aa5-8308-70c5bf1468c5
@@ -8,25 +8,25 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6e42e1ce4cc1ccc0a01905046b33e4587964f8ce
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 0e85aa8fc5af3f32f117b112e8624962a49d90c6
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56712069"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62895440"
 ---
 # <a name="walkthrough-missing-objects-due-to-device-state"></a>逐步解說：因裝置狀態而遺漏的物件
 本逐步解說示範如何使用 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 圖形診斷來調查因為裝置狀態設定不正確而遺漏的物件。
 
  本逐步解說示範如何：
 
--   使用 [圖形事件清單]  找出潛在的問題來源。
+- 使用 [圖形事件清單]  找出潛在的問題來源。
 
--   使用 [圖形管線階段]  視窗來檢查 `DrawIndexed` Direct3D API 呼叫的效果。
+- 使用 [圖形管線階段]  視窗來檢查 `DrawIndexed` Direct3D API 呼叫的效果。
 
--   使用 [圖形像素歷史記錄]  視窗更明確地找出問題。
+- 使用 [圖形像素歷史記錄]  視窗更明確地找出問題。
 
--   檢查裝置狀態以找出潛在問題或錯誤組態。
+- 檢查裝置狀態以找出潛在問題或錯誤組態。
 
 ## <a name="scenario"></a>情節
  在 3D 應用程式中，物件可能不會如預期出現的其中一個原因是圖形裝置組態不正確，這造成物件在轉譯中遭到排除，例如，當捲繞順序導致三角形揀選錯誤時，或是當深度測試功能造成物件中的所有像素遭拒時。

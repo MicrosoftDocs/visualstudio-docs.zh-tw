@@ -1,12 +1,9 @@
 ---
 title: 在資料集中的關聯性 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 f1_keywords:
 - vbData.Microsoft.VSDesigner.DataSource.DesignRelation
 - vbdata.Microsoft.VSDesigner.DataSource.DesignRelation
@@ -23,18 +20,17 @@ ms.assetid: cfe274f0-71fe-40f6-994e-7c7f6273c9ba
 caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 0b138b9ad49a0fd1a406e698aafd121478e95f4a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 7f6aba4076f7532d5eab5d47515b734c4c312b99
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49935402"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65692521"
 ---
 # <a name="relationships-in-datasets"></a>在資料集中的關聯性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 包含相關的資料的資料集資料表會使用<xref:System.Data.DataRelation>物件代表資料表之間的父子式關聯性，以及從另一個傳回相關的記錄。 相關的資料表加入資料集，使用**資料來源組態精靈**，或有**Dataset 設計工具**，建立以及設定<xref:System.Data.DataRelation>為您的物件。  
   
  <xref:System.Data.DataRelation>物件會執行兩個函式：  
@@ -70,7 +66,7 @@ ms.locfileid: "49935402"
 |外部索引鍵條件約束規則|動作|  
 |----------------------------------|------------|  
 |<xref:System.Data.Rule>|父記錄所做的變更 （更新或刪除） 也會在子資料表中的相關記錄。|  
-|<xref:System.Data.Rule>|不會刪除子記錄，但是子記錄的外部索引鍵設定為<xref:System.DBNull>。 使用此設定，子記錄可保持為 「 孤立 」 — 也就是它們有沒有父資料錄的關聯性。 **注意：** 使用這項規則時，可能導致子資料表中有無效的資料。|  
+|<xref:System.Data.Rule>|不會刪除子記錄，但是子記錄的外部索引鍵設定為<xref:System.DBNull>。 使用此設定，子記錄可保持為 「 孤立 」 — 也就是它們有沒有父資料錄的關聯性。 **注意：** 使用這項規則，可能會導致子資料表中有無效的資料。|  
 |<xref:System.Data.Rule>|相關的子記錄的外部索引鍵設為其預設值 (由資料行建立<xref:System.Data.DataColumn.DefaultValue%2A>屬性)。|  
 |<xref:System.Data.Rule>|不會變更相關的子記錄。 使用此設定，子記錄可包含無效的父記錄的參考。|  
   
@@ -80,7 +76,7 @@ ms.locfileid: "49935402"
  當您建立<xref:System.Data.DataRelation>物件，您必須指定，將關聯只能用來強制執行條件約束的選項，也就是，它將不也可用來存取相關的記錄。 您可以使用此選項來產生資料集，這是較具效率，並包含較少的方法比具有相關記錄功能。 不過，您將無法存取相關的記錄。 例如，僅條件約束的關聯可防止您刪除仍具有子記錄的父記錄，而您無法透過父系存取子記錄。  
   
 ## <a name="manually-creating-a-data-relation-in-the-dataset-designer"></a>以手動方式在 Dataset 設計工具中建立的資料關聯  
- 當您在 Visual Studio 中使用資料設計工具建立資料的資料表時，會自動建立關聯性如果可以從您的資料來源收集的資訊。 如果您手動新增從資料表**資料集**索引標籤**工具箱**，您可能要手動建立關聯性。 如需建立資訊<xref:System.Data.DataRelation>物件以程式設計的方式，請參閱[新增 Datarelation](http://msdn.microsoft.com/library/a4a564fb-c1c4-4135-b6c2-b030e51195e4)。  
+ 當您在 Visual Studio 中使用資料設計工具建立資料的資料表時，會自動建立關聯性如果可以從您的資料來源收集的資訊。 如果您手動新增從資料表**資料集**索引標籤**工具箱**，您可能要手動建立關聯性。 如需建立資訊<xref:System.Data.DataRelation>物件以程式設計的方式，請參閱[新增 Datarelation](https://msdn.microsoft.com/library/a4a564fb-c1c4-4135-b6c2-b030e51195e4)。  
   
  資料表之間的關聯性會顯示為中的線條**Dataset 設計工具**，以描述關聯性的一對多層面的索引鍵和無限大圖像。 根據預設，relationshipCommentEnd 識別碼名稱 = '1c8c78e19b7fa441' 未出現在設計介面。  
   
@@ -88,31 +84,30 @@ ms.locfileid: "49935402"
   
 #### <a name="to-create-a-relationship-between-two-data-tables"></a>若要建立兩個資料表之間的關聯性  
   
-1.  開啟您的資料集，在**Dataset 設計工具**。 如需詳細資訊，請參閱 <<c0> [ 如何： 以 Dataset 設計工具中開啟資料集](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3)。  
+1. 在 **DataSet 設計工具**中開啟資料集。 如需詳細資訊，請參閱[如何：在 Dataset 設計工具中開啟資料集](https://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3)。  
   
-2.  拖曳**關聯**物件**DataSet**工具箱拖曳到關聯性中的子資料表。  
+2. 拖曳**關聯**物件**DataSet**工具箱拖曳到關聯性中的子資料表。  
   
      **關聯** 對話方塊隨即開啟，填入**子資料表**方塊，與您拖曳資料表**關聯**物件。  
   
-3.  選取從父資料表**父資料表** 方塊中。 父資料表包含一對多關聯性的 「 一 」 端上的記錄。  
+3. 選取從父資料表**父資料表** 方塊中。 父資料表包含一對多關聯性的 「 一 」 端上的記錄。  
   
-4.  確認正確的子資料表會顯示在**子資料表** 方塊中。 子資料表包含一對多關聯性的 「 多 」 端上的記錄。  
+4. 確認正確的子資料表會顯示在**子資料表** 方塊中。 子資料表包含一對多關聯性的 「 多 」 端上的記錄。  
   
-5.  輸入的名稱中的關聯性**名稱**方塊中，或保留預設名稱，根據選取的資料表。 這是實際名稱<xref:System.Data.DataRelation>在程式碼中的物件。  
+5. 輸入的名稱中的關聯性**名稱**方塊中，或保留預設名稱，根據選取的資料表。 這是實際名稱<xref:System.Data.DataRelation>在程式碼中的物件。  
   
-6.  選取聯結的資料表中的資料行**索引鍵資料行**並**外部索引鍵資料行**列出。  
+6. 選取聯結的資料表中的資料行**索引鍵資料行**並**外部索引鍵資料行**列出。  
   
-7.  選取是否要建立關聯性、 條件約束，或兩者。 如需資訊，請參閱[DataRelation 物件簡介](http://msdn.microsoft.com/library/89d8a881-8265-41f2-a88b-61311ab06192)。  
+7. 選取是否要建立關聯性、 條件約束，或兩者。 如需資訊，請參閱[DataRelation 物件簡介](https://msdn.microsoft.com/library/89d8a881-8265-41f2-a88b-61311ab06192)。  
   
-8.  選取或清除**巢狀關聯** 方塊中。 選取這個選項會設定<xref:System.Data.DataRelation.Nested%2A>屬性，以`true`，這會使子資料列時寫為 XML 資料或與同步處理這些資料列的父資料行內巢狀關聯性的<xref:System.Xml.XmlDataDocument>。 如需詳細資訊，請參閱 <<c0> [ 巢狀 Datarelation](http://msdn.microsoft.com/library/9530f9c9-dd98-4b93-8cdb-40d7f1e8d0ab)。  
+8. 選取或清除**巢狀關聯** 方塊中。 選取這個選項會設定<xref:System.Data.DataRelation.Nested%2A>屬性，以`true`，這會使子資料列時寫為 XML 資料或與同步處理這些資料列的父資料行內巢狀關聯性的<xref:System.Xml.XmlDataDocument>。 如需詳細資訊，請參閱 <<c0> [ 巢狀 Datarelation](https://msdn.microsoft.com/library/9530f9c9-dd98-4b93-8cdb-40d7f1e8d0ab)。  
   
-9. 設定您要對這些資料表中的記錄進行變更時強制執行規則。 如需詳細資訊，請參閱<xref:System.Data.Rule>。  
+9. 設定您要對這些資料表中的記錄進行變更時強制執行規則。 如需詳細資訊，請參閱 <xref:System.Data.Rule>。  
   
 10. 按一下 **確定**建立關聯性。 關聯線會顯示兩個資料表之間的設計工具上。  
   
 #### <a name="to-display-a-relation-name-in-the-dataset-designer"></a>若要在 Dataset 設計工具中顯示關聯性名稱  
   
-1.  開啟您的資料集，在**Dataset 設計工具**。 如需詳細資訊，請參閱 <<c0> [ 如何： 以 Dataset 設計工具中開啟資料集](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3)。  
+1. 在 **DataSet 設計工具**中開啟資料集。 如需詳細資訊，請參閱[如何：在 Dataset 設計工具中開啟資料集](https://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3)。  
   
-2.  從**資料**功能表上，選取**顯示關聯性標籤**命令，以顯示關聯性名稱。 清除該命令可以隱藏的關聯性名稱。
-
+2. 從**資料**功能表上，選取**顯示關聯性標籤**命令，以顯示關聯性名稱。 清除該命令可以隱藏的關聯性名稱。

@@ -6,23 +6,23 @@ helpviewer_keywords:
 - projects [Visual Studio SDK], managed-code
 - projects [Visual Studio SDK], aggregator
 ms.assetid: 7f132f67-8589-464c-90dc-0d57ae02aa8f
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 958628194e4ea768de5a47dc66476345bff6c4f3
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: ac03682fa1158f5da9c694cf1be5282717c07b55
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56625331"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66312170"
 ---
 # <a name="deploy-project-types"></a>部署專案類型
 [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] 安裝新的專案類型彙總工具 (*ProjectAggregator2.dll*) 和也進行轉散發的 Windows Installer 套件 (*ProjectAggregator2.msi*)。 您必須使用新的彙總工具適用於 managed 程式碼專案類型。 ProjectAggregator2 可解決限制[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]專案正常運作時，防止 managed 程式碼專案類型的彙總工具。 下列步驟說明如何變更您 VSPackage 也可以使用新的彙總工具。
 
-1.  從您的方案移除 NativeHierarchyWrapper 專案。
+1. 從您的方案移除 NativeHierarchyWrapper 專案。
 
-2.  移除任何 NativeHierarchyWrapper 二進位檔從您的設定。
+2. 移除任何 NativeHierarchyWrapper 二進位檔從您的設定。
 
-3.  新增*ProjectAggregator2.msi*至您的安裝。
+3. 新增*ProjectAggregator2.msi*至您的安裝。

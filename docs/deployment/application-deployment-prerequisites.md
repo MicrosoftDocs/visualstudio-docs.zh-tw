@@ -19,20 +19,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5dfc0bccd0b5b8ae55f5e4df6aec1a85254e2220
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 8206e199acc3ccb76cf89603d48bed0173129218
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56600484"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746065"
 ---
 # <a name="application-deployment-prerequisites"></a>應用程式部署必要條件
 
-若要順利安裝及執行您應用程式，請先安裝您的應用程式是相依到目標電腦上的所有元件。 例如，大部分的應用程式使用所建立[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]有相依性[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]。 在此情況下，通用語言執行平台的正確版本必須先存在於目的地電腦上已安裝的應用程式。
+若要順利安裝及執行您應用程式，請先安裝您的應用程式是相依到目標電腦上的所有元件。 例如，大部分的應用程式使用建立[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]有相依性 .NET Framework。 在此情況下，通用語言執行平台的正確版本必須先存在於目的地電腦上已安裝的應用程式。
 
- 您可以選取這些先決條件**Prerequisites Dialog Box**和安裝.NET Framework，以及任何其他可轉散發套件安裝的一部分。 這個做法稱為啟動載入。 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 會產生名為 Windows 可執行程式*Setup.exe*也稱為*啟動載入器*。 啟動載入器負責在應用程式執行前安裝這些必要條件。 如需有關如何選取這些必要條件的詳細資訊，請參閱 <<c0> [ 必要條件對話方塊](../ide/reference/prerequisites-dialog-box.md)。
+ 您可以選取這些先決條件**Prerequisites Dialog Box**和安裝.NET Framework，以及任何其他可轉散發套件安裝的一部分。 這個做法稱為啟動載入  。 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 會產生名為 Windows 可執行程式*Setup.exe*也稱為*啟動載入器*。 啟動載入器負責在應用程式執行前安裝這些必要條件。 如需有關如何選取這些必要條件的詳細資訊，請參閱 <<c0> [ 必要條件對話方塊](../ide/reference/prerequisites-dialog-box.md)。
 
- 每個必要條件都是啟動載入器套件。 啟動載入器套件是一組目錄和內含描述必要條件的安裝方式的資訊清單檔案的檔案。 如果 [必要條件] 對話方塊中未列出您應用程式的必要條件，您可以建立自訂啟動載入器套件並將必要條件新增至 Visual Studio。 然後即可在 [必要條件] 對話方塊中選取必要條件。 如需詳細資訊，請參閱 <<c0> [ 建立啟動載入器套件](../deployment/creating-bootstrapper-packages.md)。
+ 每個必要條件都是啟動載入器套件。 啟動載入器套件是一組目錄和內含描述必要條件的安裝方式的資訊清單檔案的檔案。 如果 [必要條件]  對話方塊中未列出您應用程式的必要條件，您可以建立自訂啟動載入器套件並將必要條件新增至 Visual Studio。 然後即可在 [必要條件]  對話方塊中選取必要條件。 如需詳細資訊，請參閱 <<c0> [ 建立啟動載入器套件](../deployment/creating-bootstrapper-packages.md)。
 
  ClickOnce 部署預設會啟用啟動載入。 針對 ClickOnce 部署產生的啟動載入器會經過簽署。 您可以停用的元件，啟動程序，但只有當確定所有目標電腦上已安裝正確版本的元件。
 
@@ -45,12 +45,12 @@ ms.locfileid: "56600484"
 
 - 必須預先安裝在全域組件快取 (GAC) 中，組件資訊清單中的組件相依性宣告所指定的所有組件的最小版本。
 
-  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 可以偵測遺漏的必要條件，然後您可以使用啟動載入器，以便安裝必要條件。 如需詳細資訊，請參閱 <<c0> [ 如何： 使用 ClickOnce 應用程式安裝必要條件](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)。
+  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 可以偵測遺漏的必要條件，然後您可以使用啟動載入器，以便安裝必要條件。 如需詳細資訊，請參閱[如何：隨著 ClickOnce 應用程式安裝必要軟體](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)。
 
 > [!NOTE]
->  若要變更 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 和 *MageUI.exe* 等工具所產生資訊清單中的值，您必須在文字編輯器中編輯應用程式資訊清單，然後重新簽署應用程式資訊清單和部署資訊清單。 如需詳細資訊，請參閱[如何：重新簽署應用程式和部署資訊清單](../deployment/how-to-re-sign-application-and-deployment-manifests.md)。
+> 若要變更 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 和 *MageUI.exe* 等工具所產生資訊清單中的值，您必須在文字編輯器中編輯應用程式資訊清單，然後重新簽署應用程式資訊清單和部署資訊清單。 如需詳細資訊，請參閱[如何：重新簽署應用程式和部署資訊清單](../deployment/how-to-re-sign-application-and-deployment-manifests.md)。
 
- 如果您使用 Visual Studio 和 ClickOnce 部署應用程式，預設會根據方案中的 .NET Framework 版本來選取啟動載入器套件。 但是，如果您變更目標 .NET Framework 版本，則必須手動更新 [必要條件] 對話方塊中的選項。
+ 如果您使用 Visual Studio 和 ClickOnce 部署應用程式，預設會根據方案中的 .NET Framework 版本來選取啟動載入器套件。 但是，如果您變更目標 .NET Framework 版本，則必須手動更新 [必要條件]  對話方塊中的選項。
 
 |目標 .NET Framework|選取的啟動載入器套件|
 |---------------------------|------------------------------------|
@@ -71,13 +71,12 @@ ms.locfileid: "56600484"
 
  如果您變更任何啟動載入器的選項，您就必須變更不帶正負號的啟動載入器，然後稍後再簽署啟動載入器檔案。
 
-
-| 命令列引數 | 說明 |
+| 命令列引數 | 描述 |
 | - | - |
 | **-?, -h, -help** | 顯示 [說明] 對話方塊。 |
 | **-url, -componentsurl** | 顯示此安裝程式的儲存 URL 和元件 URL。 |
 | **-url=** `location` | 設定 *Setup.exe* 將在其中尋找 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式的 URL。 |
-| **-componentsurl=** `location` | 設定 *Setup.exe* 將在其中尋找相依性的 URL，例如 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]。 |
+| **-componentsurl=** `location` | 設定 URL，其中*Setup.exe*會尋找相依性，例如.NET Framework。 |
 | **-homesite=** `true` **&#124;** `false` | 當`true`，從廠商網站上的偏好位置下載的相依性。 此設定會覆寫 **-componentsurl**設定。 當`false`，從所指定的 URL 下載的相依性 **-componentsurl**。 |
 
 ## <a name="operating-system-support"></a>作業系統支援

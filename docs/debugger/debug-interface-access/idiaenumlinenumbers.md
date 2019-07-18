@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 49257aa3b9b51a1e8b62c867ced030b853deae9c
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56634431"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62833504"
 ---
 # <a name="idiaenumlinenumbers"></a>IDiaEnumLineNumbers
 列舉各種資料來源中包含的行號。
@@ -31,7 +31,7 @@ IDiaEnumLineNumbers : IUnknown
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法
 下表顯示的方法`IDiaEnumLineNumbers`。
 
-|方法|說明|
+|方法|描述|
 |------------|-----------------|
 |[IDiaEnumLineNumbers::get__NewEnum](../../debugger/debug-interface-access/idiaenumlinenumbers-get-newenum.md)|擷取[IEnumVARIANT 介面](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-ienumvariant)這個列舉值的版本。|
 |[IDiaEnumLineNumbers::get_Count](../../debugger/debug-interface-access/idiaenumlinenumbers-get-count.md)|擷取線數字數目。|
@@ -86,13 +86,13 @@ void dumpFunctionLines( IDiaSymbol* pSymbol, IDiaSession* pSession )
 ```
 
 ## <a name="requirements"></a>需求
-標頭： Dia2.h
+標頭：dia2.h
 
 程式庫： diaguids.lib
 
 DLL: msdia80.dll
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [介面 (偵錯介面存取 SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
 - [IDiaSession](../../debugger/debug-interface-access/idiasession.md)
 - [IDiaSession::findLinesByLinenum](../../debugger/debug-interface-access/idiasession-findlinesbylinenum.md)

@@ -1,14 +1,9 @@
 ---
-title: 如何： 偵錯 ASP.NET 例外狀況 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：偵錯 ASP.NET 例外狀況 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -22,38 +17,35 @@ ms.assetid: 1810096e-de8c-435e-be3d-f365d0cd0a6a
 caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 3d505e67018c24f659e88401b565011a4c7bea96
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 1ccd8c399bd92bd98307d44aff913c30390033c7
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51789209"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68205430"
 ---
-# <a name="how-to-debug-aspnet-exceptions"></a>如何：偵錯 ASP.NET 例外狀況
+# <a name="how-to-debug-aspnet-exceptions"></a>HOW TO：針對 ASP.NET 例外狀況進行偵錯
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-偵錯例外狀況是很重要的一部分，開發強固的[!INCLUDE[vstecasp](../includes/vstecasp-md.md)]應用程式。 如何偵錯例外狀況的一般資訊位於[偵錯工具管理例外狀況](../debugger/managing-exceptions-with-the-debugger.md)。  
+在開發強固的 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 應用程式時，針對例外狀況進行偵錯是很重要的部分。 如何偵錯例外狀況的一般資訊位於[偵錯工具管理例外狀況](../debugger/managing-exceptions-with-the-debugger.md)。  
   
- 若要偵錯未處理的[!INCLUDE[vstecasp](../includes/vstecasp-md.md)]例外狀況，您必須確定偵錯工具停止它們。 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 執行階段擁有最上層例外狀況處理常式。 因此，偵錯工具預設為絕不會在未處理的例外狀況中斷。 若要擲回例外狀況時，偵錯工具中斷，您必須選取**例外狀況時中斷： 擲回**設定在該特定例外狀況**例外狀況** 對話方塊。  
+ 若要對未處理的 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 例外狀況進行偵錯，則必須確定偵錯工具是否會因為這些例外狀況而停止。 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 執行階段擁有最上層例外狀況處理常式。 因此，偵錯工具預設為絕不會在未處理的例外狀況中斷。 若要擲回例外狀況時，偵錯工具中斷，您必須選取**例外狀況時中斷：擲回**設定為在該特定例外狀況**例外狀況** 對話方塊。  
   
- 如果您已啟用 Just My Code**例外狀況時中斷： 擲回**不會造成偵錯工具立即中斷，如果.NET Framework 方法或其他系統程式碼中擲回例外狀況。 而是直到偵錯工具叫用非系統程式碼後才會停止執行。 因此，您不需要在發生例外狀況時，逐步執行系統程式碼。  
+ 如果您已啟用 Just My Code，**例外狀況時中斷：擲回**不會造成偵錯工具立即中斷，如果.NET Framework 方法或其他系統程式碼中擲回例外狀況。 而是直到偵錯工具叫用非系統程式碼後才會停止執行。 因此，您不需要在發生例外狀況時，逐步執行系統程式碼。  
   
- Just My Code 可讓您更有用的另一個選項：**例外狀況時中斷： user-unhandled**。 如果為例外狀況選擇這個設定，偵錯工具則會在使用者程式碼中斷執行 (但是只有在使用者程式碼並未攔截和處理例外狀況時)。 因為這個處理常式是在非使用者程式碼中，所以這個設定會取消最上層 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 例外狀況處理常式的效果。  
+ Just My Code 會提供更有用的另一個選項：**例外狀況時中斷：使用者未處理**。 如果為例外狀況選擇這個設定，偵錯工具則會在使用者程式碼中斷執行 (但是只有在使用者程式碼並未攔截和處理例外狀況時)。 因為這個處理常式是在非使用者程式碼中，所以這個設定會取消最上層 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 例外狀況處理常式的效果。  
   
 ### <a name="to-enable-debugging-of-aspnet-exceptions-with-just-my-code"></a>若要使用 Just My Code 啟用 ASP.NET 例外狀況的偵錯  
   
-1.  在 **偵錯**功能表上，按一下**例外狀況**。  
+1. 在 [偵錯]  功能表上，按一下 [例外狀況]  。  
   
-     **例外狀況** 對話方塊隨即出現。  
+     [例外狀況]  對話方塊隨即出現。  
   
-2.  在上**Common Language Runtime 例外狀況**列中選取**擲回**或是**user-unhandled**。  
+2. 在 [Common Language Runtime 例外狀況]  資料列中，選取 [擲回]  或 [使用者未處理]  。  
   
-     若要使用**user-unhandled**設定，請**Just My Code**必須啟用...  
+     若要使用 [使用者未處理]  設定，則必須啟用 [Just My Code]  。  
   
 ### <a name="to-use-best-practices-for-aspnet-exception-handling"></a>若要使用 ASP.NET 例外狀況處理的最佳作法  
   
--   對於您可以預期會發生例外狀況並知道如何處理的程式碼，請將 `try … catch` 區塊置於此程式碼周圍。 例如，如果應用程式正在呼叫 XML Web Service 或直接在 SQL Server，該程式碼應該在**try...catch**封鎖，因為有許多可能會發生的例外狀況。
-
-
-
+- 對於您可以預期會發生例外狀況並知道如何處理的程式碼，請將 `try … catch` 區塊置於此程式碼周圍。 例如，如果應用程式正在呼叫 XML Web Service 或直接在 SQL Server，該程式碼應該在**try...catch**封鎖，因為有許多可能會發生的例外狀況。

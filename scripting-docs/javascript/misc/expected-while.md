@@ -14,19 +14,19 @@ ms.assetid: 867c10d0-7df6-4ba3-bbe6-7d5b3900cb22
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0c05f2fffeabdfbeccd68259c3648aceac862d80
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 4ec06ea25a6a6486a444d430e3ef15b888760650
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56840295"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62433758"
 ---
 # <a name="expected-while"></a>必須是 'while'
 您未包含`while`狀況`do...while`迴圈。 A**請勿**陳述式必須有對應`while`測試的程式碼區塊的結尾。  
   
 ### <a name="to-correct-this-error"></a>更正這個錯誤  
   
--   包含`while`測試右大括號之後的陳述式。  
+- 包含`while`測試右大括號之後的陳述式。  
   
 ## <a name="see-also"></a>另請參閱  
  [while 陳述式](../../javascript/reference/while-statement-javascript.md)   

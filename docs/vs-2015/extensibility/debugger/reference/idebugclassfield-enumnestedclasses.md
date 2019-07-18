@@ -1,14 +1,9 @@
 ---
 title: IDebugClassField::EnumNestedClasses |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugClassField::EnumNestedClasses
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 2ba5ef0c-395e-4006-9e3c-9b06e1d711d0
 caps.latest.revision: 10
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: eb9224d3694d7e86cde76ffcd85a9e3805a01e42
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 7745eea3f5b3264016a25defd696a9b85f2e9fb4
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51732580"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68191081"
 ---
 # <a name="idebugclassfieldenumnestedclasses"></a>IDebugClassField::EnumNestedClasses
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -48,12 +43,12 @@ int EnumNestedClasses(
  [out]傳回[IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)物件，表示巢狀類別的清單。 如果沒有巢狀的類別，則傳回 null 值。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，會傳回 S_OK，或如果沒有巢狀的類別，則傳回 S_FALSE。 反之則傳回錯誤碼。  
+ 如果成功，會傳回 S_OK，或如果沒有巢狀的類別，則傳回 S_FALSE。 否則會傳回錯誤碼。  
   
 ## <a name="remarks"></a>備註  
  列舉型別的每個項目是[IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)描述巢狀的類別的物件。  
   
- 巢狀的類別是定義在另一個類別的類別。 例如:   
+ 巢狀的類別是定義在另一個類別的類別。 例如：  
   
 ```  
 class RootClass {  
@@ -66,4 +61,3 @@ class RootClass {
 ## <a name="see-also"></a>另請參閱  
  [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)   
  [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)
-

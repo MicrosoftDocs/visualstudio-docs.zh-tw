@@ -13,12 +13,12 @@ caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5a33e1d4f2ddecdb467929edaae9ba184bfae920
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 3fb723097a3b61508d9f9023d3a2ea1dcdb5f8f6
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54763229"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65701423"
 ---
 # <a name="configuring-warnings-in-visual-basic"></a>Configuring Warnings in Visual Basic
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -67,63 +67,63 @@ ms.locfileid: "54763229"
 ### <a name="implicit-conversion-warning"></a>隱含轉換的警告  
  當出現隱含轉換時，就會產生此警告。 不包括使用 `&` 運算子從內建數值類型隱含轉換成字串。 新專案的預設值為關閉。  
   
- 識別碼：42016  
+ 識別碼:42016  
   
 ### <a name="late-bound-method-invocation-and-overload-resolution-warning"></a>晚期繫結方法引動過程和多載解析的警告  
  當出現晚期繫結時，就會產生此警告。 新專案的預設值為關閉。  
   
- 識別碼︰42017  
+ 識別碼:42017  
   
 ### <a name="operands-of-type-object-warnings"></a>Object 類型運算元的警告  
  當出現 `Object` 類型的運算元時，就會產生此警告，此情況在 `Option Strict On` 下會發生錯誤。 新專案的預設值為開啟。  
   
- 識別碼︰42018 和 42019  
+ 識別碼:42018 和 42019  
   
 ### <a name="declarations-require-as-clause-warnings"></a>宣告需要 'As' 子句的警告  
  當變數、函式或屬性宣告缺少 `As` 子句時，就會產生此警告，此情況在 `Option Strict On` 下會發生錯誤。 未指派類型的變數會假設為 `Object` 類型。 新專案的預設值為開啟。  
   
- 識別碼︰42020 (變數宣告)、42021 (函式宣告) 和 42022 (屬性宣告)。  
+ 識別碼:42020 (變數宣告)、42021 (函式宣告) 和 42022 (屬性宣告)。  
   
 ### <a name="possible-null-reference-exception-warnings"></a>可能的 Null 參考例外狀況的警告  
  當變數在未指派值前便已使用時，就會產生此警告。 新專案的預設值為開啟。  
   
- 識別碼：42104、42030  
+ 識別碼:42104、42030  
   
 ### <a name="unused-local-variable-warning"></a>未使用之區域變數的警告  
  當宣告了某個區域變數但從未參考到此變數時，就會產生此警告。 預設為開啟。  
   
- 識別碼︰42024  
+ 識別碼:42024  
   
 ### <a name="access-of-shared-member-through-instance-variable-warning"></a>透過執行個體變數存取共用成員的警告  
  當透過可能有副作用的執行個體存取共用成員時，或是當透過不在運算式右邊或當作參數傳入的執行個體變數存取共用成員時，就會產生此警告。 新專案的預設值為開啟。  
   
- 識別碼︰42025  
+ 識別碼:42025  
   
 ### <a name="recursive-operator-or-property-access-warnings"></a>遞迴運算子或屬性存取的警告  
  當常式的主體所使用的運算子或屬性是用來定義它的相同運算子或屬性時，就會產生此警告。 新專案的預設值為開啟。  
   
- 識別碼：42004 (運算子)、42026 (屬性)  
+ 識別碼:42004 (運算子)、42026 (屬性)  
   
 ### <a name="function-or-operator-without-return-value-warning"></a>函式或運算子沒有傳回值的警告  
  當函式或運算子未指定傳回值時，就會產生此警告。 對與函式同名的隱含區域變數省略 `Set` 的情形也包含在內。 新專案的預設值為開啟。  
   
- 識別碼：42105 (函式)、42016 (運算子)  
+ 識別碼:42105 (函式)、42016 (運算子)  
   
 ### <a name="overloads-modifier-used-in-a-module-warning"></a>Overloads 修飾詞用於模組的警告  
  當 `Overloads` 用於`Module`時，就會產生此警告。 新專案的預設值為開啟。  
   
- 識別碼︰42028  
+ 識別碼:42028  
   
 ### <a name="duplicate-or-overlapping-catch-blocks-warnings"></a>Catch 區塊重複或重疊的警告  
  當 `Catch` 區塊由於未定義與其他 `Catch` 區塊的關聯而從未到達時，就會產生此警告。 新專案的預設值為開啟。  
   
- 識別碼：42029、42031  
+ 識別碼:42029、42031  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [例外狀況助理對話方塊](../debugger/exception-assistant-dialog-box.md)   
- [錯誤類型](http://msdn.microsoft.com/library/3048aabf-8c97-4e13-9150-853769cb5f6f)   
- [Try...Catch...Finally 陳述式](http://msdn.microsoft.com/library/d6488026-ccb3-42b8-a810-0d97b9d6472b)   
- [/nowarn](http://msdn.microsoft.com/library/7ebf2106-0652-4fdc-bf60-70fc86465d83)   
- [/warnaserror (Visual Basic)](http://msdn.microsoft.com/library/49819f1d-a1bd-4201-affe-5afe6d9712e1)   
+ [錯誤類型](https://msdn.microsoft.com/library/3048aabf-8c97-4e13-9150-853769cb5f6f)   
+ [Try...Catch...Finally 陳述式](https://msdn.microsoft.com/library/d6488026-ccb3-42b8-a810-0d97b9d6472b)   
+ [/nowarn](https://msdn.microsoft.com/library/7ebf2106-0652-4fdc-bf60-70fc86465d83)   
+ [/warnaserror (Visual Basic)](https://msdn.microsoft.com/library/49819f1d-a1bd-4201-affe-5afe6d9712e1)   
  [專案設計工具、編譯頁 (Visual Basic)](../ide/reference/compile-page-project-designer-visual-basic.md)   
- [預設為關閉的編譯器警告](http://msdn.microsoft.com/library/69809cfb-a38a-4035-b154-283a61938df8)
+ [預設為關閉的編譯器警告](https://msdn.microsoft.com/library/69809cfb-a38a-4035-b154-283a61938df8)

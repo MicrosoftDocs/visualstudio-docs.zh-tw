@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugObject2::GetField method
 ms.assetid: add6a6b5-e752-47dd-9613-29206ea809b0
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 797a18b678e815411b7ea7860e44ea6159caa2b5
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: e491d98219f1cbb105af653dee15f25bb246c2d7
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56708195"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66317318"
 ---
 # <a name="idebugobject2getfield"></a>IDebugObject2::GetField
 取得這個物件的型別。
@@ -36,10 +39,9 @@ int GetField(
 );
 ```
 
-#### <a name="parameters"></a>參數
- `ppField`
-
- [out]傳回[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)物件如果不是 null 值。
+## <a name="parameters"></a>參數
+`ppField`\
+[out]傳回[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)物件如果不是 null 值。
 
 ## <a name="return-value"></a>傳回值
  如果成功，會傳回 S_OK;否則，傳回錯誤碼。

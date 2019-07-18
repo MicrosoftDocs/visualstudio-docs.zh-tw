@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - SccBeginBatch function
 ms.assetid: 33968183-2e15-4e0d-955b-ca12212d1c25
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5fd571f967e478b3a03347d6151deb9fc88f62ef
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 6bb145358184117046e14b7b598ce6d4bb4586b0
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56721325"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66333890"
 ---
 # <a name="sccbeginbatch-function"></a>SccBeginBatch 函式
 此函式會啟動批次一連串的原始檔控制作業。 [SccEndBatch](../extensibility/sccendbatch-function.md)將被呼叫來結束批次。 這些批次可能不是巢狀。

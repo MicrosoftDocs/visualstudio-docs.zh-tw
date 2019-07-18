@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugModules2
 ms.assetid: 4fe28074-a960-41ad-b74d-b57f04c0c0ad
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c92a7f47f088a92a898e6cc5acbffe3522d9fec4
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: bd6d7dc2cba76443d409feef4f2fe9dd0cd04e33
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56700701"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66339648"
 ---
 # <a name="ienumdebugmodules2"></a>IEnumDebugModules2
 此介面列舉模組的清單。

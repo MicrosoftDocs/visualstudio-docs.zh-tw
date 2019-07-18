@@ -1,23 +1,23 @@
 ---
 ms.openlocfilehash: 69f4f4c2b55670d510652b44a203b9f0eafcc53a
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MTE95
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57874486"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "68143526"
 ---
 
 1. 關閉並重新開啟 IIS 管理主控台，以在 UI 中顯示更新的組態選項。
 
-2. 在 IIS 中，以滑鼠右鍵按一下 [預設的網站]，然後選擇 [部署] > [設定 Web Deploy 發行]。
+2. 在 IIS 中，以滑鼠右鍵按一下 [預設的網站]  ，然後選擇 [部署]   > [設定 Web Deploy 發行]  。
 
     ![設定 Web Deploy 組態](../../deployment/media/tutorial-configure-web-deploy-publishing.png)
 
-3. 查看 [設定 Web Deploy 發行] 對話方塊中的設定。
+3. 查看 [設定 Web Deploy 發行]  對話方塊中的設定。
 
-4. 按一下 [設定]。
+4. 按一下 [設定]  。
 
-    在 [結果] 面板中，輸出顯示會將存取權限授與指定的使用者，並已在對話方塊顯示的位置中產生副檔名為 *.publishsettings* 的檔案。
+    在 [結果]  面板中，輸出顯示會將存取權限授與指定的使用者，並已在對話方塊顯示的位置中產生副檔名為 *.publishsettings* 的檔案。
 
     ```xml
     <?xml version="1.0" encoding="utf-8"?>

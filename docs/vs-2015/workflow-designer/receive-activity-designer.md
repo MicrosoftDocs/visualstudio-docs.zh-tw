@@ -1,11 +1,8 @@
 ---
 title: Receive 活動設計工具 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - System.ServiceModel.Activities.Receive.UI
@@ -13,19 +10,19 @@ ms.assetid: f58d3c70-944d-4bb4-90a7-e68c103caddc
 caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 73d897b1e6835d56a3f590356a9588c6742e6add
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 05dc1643ecd05277baeba50bb00320d2f3a89abe
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49828048"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62971260"
 ---
 # <a name="receive-activity-designer"></a>Receive 活動設計工具
 **接收**活動設計工具會用來建立及設定<xref:System.ServiceModel.Activities.Receive>活動。 <xref:System.ServiceModel.Activities.Receive> 活動是接收訊息的活動，該訊息可能是內建的型別 (例如 <xref:System.ServiceModel.Channels.Message>、<xref:System.IO.Stream> 或 <xref:System.Xml.Linq.XElement>)，或是應用程式定義的資料合約、訊息合約或可序列化的 XML 類別。  
 
 ## <a name="the-receive-activity"></a>Receive 活動  
- <xref:System.ServiceModel.Activities.Receive> 活動可以接收單一項目或多個項目，視所使用的接收內容型別而定。 <xref:System.ServiceModel.Activities.SendReply> 活動可以繫結至 <xref:System.ServiceModel.Activities.Receive> 活動，而後者會接收服務上做為要求/回應訊息交換模式的一部分之訊息。  
+ <xref:System.ServiceModel.Activities.Receive> 活動可以接收單一項目或多個項目，視所使用的接收內容型別而定。 <xref:System.ServiceModel.Activities.SendReply> 活動可以繫結程序至 <xref:System.ServiceModel.Activities.Receive> 活動，而後者會接收服務上做為要求/回應訊息交換模式的一部分之訊息。  
 
 ### <a name="using-the-receive-activity-designer"></a>使用 Receive 活動設計工具  
  **接收**活動設計工具可在**Messaging**分類**工具箱**，即可存取的哪一個**工具箱**索引標籤上[!INCLUDE[wfd2](../includes/wfd2-md.md)](或者，選取**工具列**從**檢視**功能表或 CTRL + ALT + X。)  
@@ -39,15 +36,14 @@ ms.locfileid: "49828048"
 ### <a name="the-receive-activity-properties"></a>Receive 活動屬性  
  下表顯示 <xref:System.ServiceModel.Activities.Receive> 屬性，並且描述屬性在設計工具中的使用方式。 這些屬性可以在屬性方格中或在 [!INCLUDE[wfd2](../includes/wfd2-md.md)] 介面上編輯。 唯一必要的屬性是 <xref:System.ServiceModel.Activities.Receive.OperationName%2A> 屬性。  
 
-
-|                              屬性名稱                               | 必要項 |                                                                                                                                                                                                                                                                                                                                                                                         使用方式                                                                                                                                                                                                                                                                                                                                                                                         |
+|                              屬性名稱                               | 必要 |                                                                                                                                                                                                                                                                                                                                                                                         使用量                                                                                                                                                                                                                                                                                                                                                                                         |
 |--------------------------------------------------------------------------|----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |             <xref:System.Activities.Activity.DisplayName%2A>             |  False   |                                                                                                                                                                                                                                  指定 <xref:System.ServiceModel.Activities.Receive> 活動的易記名稱。 預設值是 Receive。<br /><br /> 雖然不是必須使用非預設值做為易記 <xref:System.Activities.Activity.DisplayName%2A>，但建議您盡量使用這類型的值。                                                                                                                                                                                                                                  |
 |      <xref:System.ServiceModel.Activities.Receive.OperationName%2A>      |   True   |                                                                                                                                                                                                                                                              指定這個 <xref:System.ServiceModel.Activities.Receive> 活動實作之服務作業的名稱。 這個屬性用來建構的預設值**動作**屬性若**動作**未明確設定屬性。                                                                                                                                                                                                                                                               |
 |   <xref:System.ServiceModel.Activities.Receive.ServiceContractName%2A>   |  False   |                                                                                                                                                                        指定服務合約的名稱。 這個屬性會用於將服務作業群組為個別的服務合約。 具有相同 <xref:System.ServiceModel.Activities.Receive> 的所有 <xref:System.ServiceModel.Activities.Receive.ServiceContractName%2A> 活動，都會分組歸類到同一個服務合約 (WSDL 連接埠類型)。 預設值是最上層 (根) 活動的完整 CLR 名稱。                                                                                                                                                                         |
 |         <xref:System.ServiceModel.Activities.Receive.Content%2A>         |  False   |                                                         指定要接收的訊息或參數內容。 這可以是 <xref:System.ServiceModel.Activities.ReceiveMessageContent> 活動或 <xref:System.ServiceModel.Activities.ReceiveParametersContent> 活動。 編輯這個屬性旁邊的橢圓形按鈕，即可**內容**欄位中屬性方格，或按一下**定義...** 按鈕旁邊**內容**標籤上**接收**活動設計工具介面。 兩者都顯示**內容定義**對話方塊。 [!INCLUDE[crabout](../includes/crabout-md.md)] 如何使用此方塊，請參閱[內容定義對話方塊](../workflow-designer/content-definition-dialog-box.md)主題。                                                          |
 |      <xref:System.ServiceModel.Activities.Receive.CorrelatesOn%2A>       |  False   |                                                                                                          指定某個具有 <xref:System.ServiceModel.Activities.Receive> 物件之工作流程的服務作業中，不同 <xref:System.ServiceModel.MessageQuerySet> 活動之間的相互關聯。 按一下省略符號按鈕旁<xref:System.ServiceModel.Activities.Receive.CorrelatesOn%2A>以開啟 屬性 方格中的屬性**CorrelatesOn 定義** 對話方塊。 [!INCLUDE[crabout](../includes/crabout-md.md)] 使用此對話方塊中，請參閱[內容定義對話方塊](../workflow-designer/content-definition-dialog-box.md)主題。                                                                                                           |
-|     <xref:System.ServiceModel.Activities.Receive.CorrelatesWith%2A>      |  False   |                                                                                                                             指定用來路由訊息到適當工作流程執行個體的 <xref:System.ServiceModel.Activities.CorrelationHandle>。<br /><br /> 按一下省略符號按鈕旁<xref:System.ServiceModel.Activities.Receive.CorrelatesWith%2A>以開啟 屬性 方格中的屬性**運算式編輯器** 對話方塊。 [!INCLUDE[crabout](../includes/crabout-md.md)] 使用此對話方塊中，請參閱[如何： 使用 「 運算式編輯器](../workflow-designer/how-to-use-the-expression-editor.md)主題。                                                                                                                             |
+|     <xref:System.ServiceModel.Activities.Receive.CorrelatesWith%2A>      |  False   |                                                                                                                             指定用來路由訊息到適當工作流程執行個體的 <xref:System.ServiceModel.Activities.CorrelationHandle>。<br /><br /> 按一下省略符號按鈕旁<xref:System.ServiceModel.Activities.Receive.CorrelatesWith%2A>以開啟 屬性 方格中的屬性**運算式編輯器** 對話方塊。 [!INCLUDE[crabout](../includes/crabout-md.md)] 使用此對話方塊中，請參閱[How to:使用 「 運算式編輯器](../workflow-designer/how-to-use-the-expression-editor.md)主題。                                                                                                                             |
 | <xref:System.ServiceModel.Activities.Receive.CorrelationInitializers%2A> |  False   |                                               指定 <xref:System.ServiceModel.Activities.CorrelationInitializer> 物件的集合，這些物件會初始化多個 <xref:System.ServiceModel.Activities.CorrelationHandle> 物件，用來設定工作流程內的這個 <xref:System.ServiceModel.Activities.Receive> 活動。 按一下省略符號按鈕旁<xref:System.ServiceModel.Activities.Receive.CorrelationInitializers%2A>以開啟 屬性 方格中的屬性**加入相互關聯初始設定式** 對話方塊。 [!INCLUDE[crabout](../includes/crabout-md.md)] 使用此方塊中，請參閱[加入 CorrelationInitializers 對話方塊](../workflow-designer/add-correlationinitializers-dialog-box.md)主題。                                                |
 |    <xref:System.ServiceModel.Activities.Receive.CanCreateInstance%2A>    |  False   |                                                                                                                                                                                                                       指定值，這個值會判斷如果訊息與現有的工作流程執行個體之間不具有相互關聯，是否要建立新的工作流程執行個體來處理該訊息。 如果值設定為 **，則為 true**，來處理訊息，訊息不會與現有的工作流程執行個體相互關聯時建立新的工作流程執行個體。                                                                                                                                                                                                                       |
 |       <xref:System.ServiceModel.Activities.Receive.KnownTypes%2A>        |  False   | 指定這個 <xref:System.ServiceModel.Activities.Receive> 活動實作服務作業之已知型別的集合。 這個屬性應該搭配 <xref:System.ServiceModel.Activities.Receive.SerializerOption%2A> 屬性 (設定為 <xref:System.Runtime.Serialization.DataContractSerializer>) 使用。 如果使用 <xref:System.Xml.Serialization.XmlSerializer>，則會忽略此項。<br /><br /> 按一下旁邊的省略符號按鈕**KnownTypes**欄位中顯示的屬性方格**型別集合編輯器**對話方塊中，您可以加入相關型別。 [!INCLUDE[crabout](../includes/crabout-md.md)] 使用此方塊中，請參閱[型別集合編輯器對話方塊](../workflow-designer/type-collection-editor-dialog-box.md)主題。 |

@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6322e860cb45cecc3db5d5060e1322c41d57e695
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 24378a9aa5bb78fdc2ae18a2793dafcf87be2605
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56634223"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443143"
 ---
 # <a name="write-multi-processor-aware-loggers"></a>撰寫能夠辨識多處理器的記錄器
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 雖能夠使用多個處理器來大幅縮短專案建置時間，但同時也增加了建置事件記錄的複雜性。 在單一處理器環境中，事件、訊息、警告和錯誤是以可預測的循序方式傳入記錄器。 不過，在多處理器環境中，不同來源的事件可能會同時或不依順序傳入。 為解決這個問題，[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 提供了能夠辨識多處理器的記錄器以及新的記錄模型，可讓您建立自訂的「轉送記錄器」。
@@ -62,9 +62,9 @@ public interface INodeLogger: ILogger
 
  使用分散式記錄的方式有兩種，如下所示：
 
--   自訂預先製作的 <xref:Microsoft.Build.BuildEngine.ConfigurableForwardingLogger> 轉送記錄器。
+- 自訂預先製作的 <xref:Microsoft.Build.BuildEngine.ConfigurableForwardingLogger> 轉送記錄器。
 
--   撰寫您自己的自訂轉送記錄器。
+- 撰寫您自己的自訂轉送記錄器。
 
 您可以修改 ConfigurableForwardingLogger 使符合您的需求。 若要這樣做，請使用 *MSBuild.exe* 在命令列上呼叫記錄器，並列出您想要記錄器轉送到中央節點的組建事件。
 
@@ -78,7 +78,7 @@ msbuild.exe myproj.proj -distributedlogger:XMLCentralLogger,MyLogger,Version=1.0
 ```
 
 > [!NOTE]
->  `-dl` 參數中必須使用星號 (*) 分隔兩個記錄器名稱。
+> `-dl` 參數中必須使用星號 (*) 分隔兩個記錄器名稱。
 
  使用 ConfigurableForwardingLogger 和使用任何其他記錄器一樣 (如[取得組建記錄檔](../msbuild/obtaining-build-logs-with-msbuild.md)中所述)，不同之處為附加 ConfigurableForwardingLogger 記錄器，而不是一般的 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 記錄器，而且要將您讓 ConfigurableForwardingLogger 傳遞給中央節點的事件，指定為參數。
 

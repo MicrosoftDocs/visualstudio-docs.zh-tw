@@ -8,23 +8,23 @@ helpviewer_keywords:
 - Help Viewer, Viewer Options
 - Viewer Options [Help Viewer]
 ms.assetid: 9c0bc950-7323-4f0f-8de2-0b0af9a42b85
-author: gewarren
-ms.author: gewarren
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e416a0dc91cfd4bd77983f1e0e5d215a85ee1f27
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 8edcdee8ffe4c2b8a97f4ed65ae86f925db42b1c
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55914655"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825018"
 ---
 # <a name="customize-the-help-viewer"></a>自訂說明檢視器
 您可以自訂說明檢視器視窗的版面配置，以及其他選項，例如字型大小、結果數目上限，以及是否要包含英文內容。
 
 ## <a name="customizing-window-layout"></a>自訂視窗版面配置
-您可以自訂說明檢視器的視窗配置。 若要將說明檢視器視窗還原為其預設配置，請開啟 [檢視器選項] 對話方塊，然後選擇 [重設] 按鈕。
+您可以自訂說明檢視器的視窗配置。 若要將說明檢視器視窗還原為其預設配置，請開啟 [檢視器選項]  對話方塊，然後選擇 [重設]  按鈕。
 
 ### <a name="docking-tabs"></a>固定索引標籤
 說明檢視器支援標準固定功能。 預設會固定說明檢視器中的所有索引標籤，但您可以移動它們、調整其大小、將它們固定到其他位置，以及讓它們「浮動」，使其顯示為獨立的子視窗。
@@ -36,14 +36,14 @@ ms.locfileid: "55914655"
 藉由選擇巡覽索引標籤的釘選圖示，建立更多空間來檢視主題。 當這些索引標籤最小化時，只有其標籤會出現在視窗的最接近邊緣上。 若要還原索引標籤，請選擇任何索引標籤的標籤，然後再次選擇釘選圖示。
 
 ## <a name="changing-settings-in-viewer-options"></a>變更 [檢視器選項] 中的設定
-請藉由選擇工具列上的 [檢視器選項] 按鈕來開啟 [檢視器選項] 對話方塊。
+請藉由選擇工具列上的 [檢視器選項]  按鈕來開啟 [檢視器選項]  對話方塊。
 
 |若要執行此工作：|請採取此步驟：|
 | - | - |
-|變更文字顥示的字型大小|選擇 [文字大小] 清單中的大小。|
-|變更 [搜尋] 索引標籤中顯示的搜尋結果數目上限|在 [搜尋結果上限] 清單中選擇值。|
-|變更[我的最愛] 視窗中顯示的記錄項目數目上限|在 [儲存的記錄項目上限] 清單中選擇值。|
-|當您檢視非英文版產品的內容時，請包含或排除英文內容。|選取或清除 [將英文內容包含在所有巡覽索引標籤和 F1 要求中] 核取方塊。 **注意：** 這項功能也會控制您是否可以在 [管理內容] 索引標籤中下載英文內容。|
+|變更文字顥示的字型大小|選擇 [文字大小]  清單中的大小。|
+|變更 [搜尋]  索引標籤中顯示的搜尋結果數目上限|在 [搜尋結果上限]  清單中選擇值。|
+|變更[我的最愛]  視窗中顯示的記錄項目數目上限|在 [儲存的記錄項目上限]  清單中選擇值。|
+|當您檢視非英文版產品的內容時，請包含或排除英文內容。|選取或清除 [將英文內容包含在所有巡覽索引標籤和 F1 要求中]  核取方塊。 **注意：** 這項功能也會控制您是否可以在 [管理內容]  索引標籤中下載英文內容。|
 
 ## <a name="see-also"></a>另請參閱
 

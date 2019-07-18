@@ -1,5 +1,5 @@
 ---
-title: 如何：收集 CPU 計數器資料 | Microsoft Docs
+title: HOW TO：收集 CPU 計數器資料 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,21 +14,21 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2a774ce8b36ceddb4d4b53f90c63bec30acc0273
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 76dac6e20cc85eeb5784b0b6e29ee8d1b23fbd92
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54762928"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432803"
 ---
-# <a name="how-to-collect-cpu-counter-data"></a>如何：收集 CPU 計數器資料
+# <a name="how-to-collect-cpu-counter-data"></a>HOW TO：收集 CPU 計數器資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 CPU 事件計數器可用來收集硬體特定的效能資料。 本主題說明當您使用檢測分析方法時要如何收集事件計數器資料。  
   
  **需求**  
   
-- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)]、[!INCLUDE[vsPreLong](../includes/vsprelong-md.md)]、[!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
   有兩種類型的 CPU 計數器事件會發生︰  
   
@@ -54,18 +54,18 @@ CPU 事件計數器可用來收集硬體特定的效能資料。 本主題說明
   
 ### <a name="to-collect-cpu-performance-counter-data-when-you-profile-by-instrumentation"></a>透過檢測分析時收集 CPU 效能計數器資料  
   
-1.  在效能工作階段 [屬性頁] 上，按一下 [CPU 計數器]。  
+1. 在效能工作階段 [屬性頁] 上，按一下 [CPU 計數器]。  
   
-2.  選取 [收集 CPU 計數器] 核取方塊。  
+2. 選取 [收集 CPU 計數器] 核取方塊。  
   
-3.  展開 [可用的效能計數器] 樹狀結構，直到您找到想要收集的取樣事件為止。  
+3. 展開 [可用的效能計數器] 樹狀結構，直到您找到想要收集的取樣事件為止。  
   
-4.  針對每個您想收集的事件，選取事件，然後按一下向右鍵以將事件加入至 [選取的計數器] 清單。  
+4. 針對每個您想收集的事件，選取事件，然後按一下向右鍵以將事件加入至 [選取的計數器] 清單。  
   
     > [!NOTE]
-    >  只有在您選取 [收集 CPU 計數器] 核取方塊時，才會啟用 [可用的效能計數器]。  
+    > 只有在您選取 [收集 CPU 計數器] 核取方塊時，才會啟用 [可用的效能計數器]。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [設定效能工作階段](../profiling/configuring-performance-sessions.md)   
  [效能工作階段屬性](../profiling/performance-session-properties.md)   
  [CPU 和 Windows 計數器](../profiling/cpu-and-windows-counters.md)   

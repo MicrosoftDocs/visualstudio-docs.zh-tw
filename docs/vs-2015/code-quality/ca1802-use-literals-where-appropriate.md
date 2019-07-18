@@ -1,14 +1,9 @@
 ---
-title: CA1802： 在適當時使用常值 |Microsoft Docs
-ms.custom: ''
+title: CA1802:在適當時使用常值 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - UseLiteralsWhereAppropriate
 - CA1802
@@ -20,14 +15,14 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 25b9c521d55b16cef885c50138bff84c3000e1b3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5990d8ea3720098651d3ed696f6ee5ff907b82f3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49940082"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68143141"
 ---
-# <a name="ca1802-use-literals-where-appropriate"></a>CA1802：建議在適當時使用常值
+# <a name="ca1802-use-literals-where-appropriate"></a>CA1802:建議在適當時使用常值
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -58,6 +53,3 @@ ms.locfileid: "49940082"
 
  [!code-csharp[FxCop.Performance.UseLiterals#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Performance.UseLiterals/cs/FxCop.Performance.UseLiterals.cs#1)]
  [!code-vb[FxCop.Performance.UseLiterals#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Performance.UseLiterals/vb/FxCop.Performance.UseLiterals.vb#1)]
-
-
-

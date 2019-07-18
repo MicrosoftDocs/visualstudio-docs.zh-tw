@@ -5,23 +5,23 @@ ms.topic: conceptual
 helpviewer_keywords:
 - post-install commands
 ms.assetid: c9601f2e-2c6e-4da9-9a6e-e707319b39e2
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d336e4a65178ff09f5db01dffeb5bedd3b5b946e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: d8a59e1a6613936c586c5529dcfc6a56a957112c
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56631389"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66341996"
 ---
 # <a name="commands-that-must-be-run-after-installation"></a>必須在安裝後執行的命令
 如果您部署您的延伸模組，透過 *.msi*檔案中，您必須執行**devenv /setup**為了讓探索您的擴充功能的 Visual Studio 安裝的一部分。
 
 > [!NOTE]
->  本主題資訊適用於尋找*devenv.exe*使用 Visual Studio 2008 和更早版本。 如需如何探索*devenv.exe*使用較新版 Visual Studio 的詳細資訊，請參閱[偵測系統需求](../../extensibility/internals/detecting-system-requirements.md)。
+> 本主題資訊適用於尋找*devenv.exe*使用 Visual Studio 2008 和更早版本。 如需如何探索*devenv.exe*使用較新版 Visual Studio 的詳細資訊，請參閱[偵測系統需求](../../extensibility/internals/detecting-system-requirements.md)。
 
 ## <a name="find-devenvexe"></a>找到 devenv.exe
  您可以找出每個版本*devenv.exe*從登錄值[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]撰寫安裝程式，使用 RegLocator 資料表和 AppSearch 資料表來儲存為屬性的登錄值。 如需詳細資訊，請參閱 <<c0> [ 偵測系統需求](../../extensibility/internals/detecting-system-requirements.md)。
@@ -58,7 +58,7 @@ ms.locfileid: "56631389"
 
 ### <a name="customaction-table-rows-to-run-devenvexe"></a>若要執行 devenv.exe CustomAction 資料表的資料列
 
-|動作|類型|原始程式檔|目標|
+|動作|類型|Source|Target|
 |------------|----------|------------|------------|
 |CA_RunDevenv2002|1586|DEVENV_EXE_2002|/setup|
 |CA_RunDevenv2003|1586|DEVENV_EXE_2003|/setup|
@@ -68,7 +68,7 @@ ms.locfileid: "56631389"
  自訂動作必須編寫至 InstallExecuteSequence 資料表，以排程為在安裝期間執行。 使用條件資料行的每個資料列中對應的屬性，以防止若執行自訂動作版本[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]系統上未安裝。
 
 > [!NOTE]
->  Null 值的屬性評估為`False`時條件中使用。
+> Null 值的屬性評估為`False`時條件中使用。
 
  針對每個自訂動作 [順序] 欄的值取決於 Windows 安裝程式套件中的其他順序值。 序列值應該是使得*devenv.exe*以執行自訂動作盡可能接近之前 installfinalize 發生標準動作。
 

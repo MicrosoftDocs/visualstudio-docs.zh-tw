@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: dbd197082174bcd23ab6b47d64eb4eb0f7944ca2
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55909111"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62845538"
 ---
 # <a name="element-xelement-dynamic-property"></a>Element (XElement 動態屬性)
 

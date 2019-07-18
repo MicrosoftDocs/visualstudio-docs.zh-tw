@@ -15,46 +15,46 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: d6728ce1f83c53a406512c75d89368dbcdd87c3e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 105efab7a28f0a21bd7567262ff8ec214715b8ae
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54777429"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704570"
 ---
 # <a name="analyze-cpu-usage-in-a-windows-universal-app"></a>分析 Windows 通用 App 中的 CPU 使用量
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 適用於 Windows 和 Windows Phone] (../Image/windows_and_phone_content.png"windows_and_phone_content")  
   
- 當您需要調查應用程式的效能問題時，了解應用程式如何使用 CPU 是不錯的起點。 [CPU 使用量]  工具顯示 CPU 花時間執行程式碼的地方。 若要聚焦於特定情況，在單一診斷工作階段中，CPU 使用率可以與 [XAML UI 回應性](http://msdn.microsoft.com/library/4ff84cd1-4e63-4fda-b34f-3ef862a6e480)工具和/或[能源消耗](../profiling/analyze-energy-use-in-store-apps.md)工具搭配執行。  
+ 當您需要調查應用程式的效能問題時，了解應用程式如何使用 CPU 是不錯的起點。 [CPU 使用量]  工具顯示 CPU 花時間執行程式碼的地方。 若要聚焦於特定情況，在單一診斷工作階段中，CPU 使用率可以與 [XAML UI 回應性](https://msdn.microsoft.com/library/4ff84cd1-4e63-4fda-b34f-3ef862a6e480)工具和/或[能源消耗](../profiling/analyze-energy-use-in-store-apps.md)工具搭配執行。  
   
 > [!NOTE]
->  **CPU 使用量**工具不得與 Windows Phone Silverlight 8.1 應用程式搭配使用。  
+> **CPU 使用量**工具不得與 Windows Phone Silverlight 8.1 應用程式搭配使用。  
   
  此逐步解說會帶領您收集和分析簡單 Windows 通用 XAML app 的 CPU 使用量。  
   
-##  <a name="BKMK_Create_the_CpuUseDemo_project"></a>建立 CpuUseDemo 專案  
+## <a name="BKMK_Create_the_CpuUseDemo_project"></a>建立 CpuUseDemo 專案  
  **CpuUseDemo** 是專為示範如何收集和分析 CPU 使用量資料所建立的應用程式。 這些按鈕會呼叫可從函式的多次呼叫中選取最大值的方法，來產生數字。 呼叫的函式會建立極大量的隨機值，然後傳回最後一個隨機值。 資料會以文字方塊的形式顯示。  
   
-1.  使用 **BlankApp** 範本，建立名稱為 **CpuUseDemo** 的新 C# Windows 通用 app 專案。  
+1. 使用 **BlankApp** 範本，建立名稱為 **CpuUseDemo** 的新 C# Windows 通用 app 專案。  
   
      ![建立 CpuUseDemoProject](../profiling/media/cpu-use-newproject.png "CPU_USE_NewProject")  
   
-2.  以[此程式碼](#BKMK_MainPage_xaml)取代 MainPage.xaml。  
+2. 以[此程式碼](#BKMK_MainPage_xaml)取代 MainPage.xaml。  
   
-3.  以[此程式碼](#BKMK_MainPage_xaml_cs)取代 MainPage.xaml.cs。  
+3. 以[此程式碼](#BKMK_MainPage_xaml_cs)取代 MainPage.xaml.cs。  
   
-4.  建置並試用應用程式。這是簡單的應用程式，足以顯示 CPU 使用量資料分析的一些常見情況。  
+4. 建置並試用應用程式。這是簡單的應用程式，足以顯示 CPU 使用量資料分析的一些常見情況。  
   
-##  <a name="BKMK_Collect_CPU_usage_data"></a> 收集 CPU 使用量資料  
+## <a name="BKMK_Collect_CPU_usage_data"></a> 收集 CPU 使用量資料  
  ![在模擬器中執行應用程式的發行組建](../profiling/media/cpu-use-wt-setsimulatorandretail.png "CPU_USE_WT_SetSimulatorAndRetail")  
   
 1. 在 Visual Studio 中，將部署目標設定為 [Simulator (模擬器)]，並將方案組態設定為 [Release (發行)]。  
   
-   -   在模擬器中執行應用程式，可讓您輕鬆地切換應用程式與 Visual Studio IDE。  
+   - 在模擬器中執行應用程式，可讓您輕鬆地切換應用程式與 Visual Studio IDE。  
   
-   -   在 [Release (發行)] 模式中執行此應用程式，可讓您更適當地檢視應用程式的實際效能。  
+   - 在 [Release (發行)] 模式中執行此應用程式，可讓您更適當地檢視應用程式的實際效能。  
   
 2. 在 [偵錯]  功能表上選擇 [效能分析工具...] 。  
   
@@ -72,14 +72,14 @@ ms.locfileid: "54777429"
   
    ![CpuUsage 報表](../profiling/media/cpu-use-wt-report.png "CPU_USE_WT_Report")  
   
-##  <a name="BKMK_Analyze_the_CPU_Usage_report"></a>分析 CPU 使用量報告  
+## <a name="BKMK_Analyze_the_CPU_Usage_report"></a>分析 CPU 使用量報告  
   
-###  <a name="BKMK_CPU_utilization_timeline_graph"></a>CPU 使用率時間軸圖形  
+### <a name="BKMK_CPU_utilization_timeline_graph"></a>CPU 使用率時間軸圖形  
  ![CPU 使用率 &#40;%&#41; 時間軸圖形](../profiling/media/cpu-use-wt-timelinegraph.png "CPU_USE_WT_TimelineGraph")  
   
  CPU 使用率圖形顯示應用程式的 CPU 活動 (以裝置上所有處理器核心之所有 CPU 時間的百分比表示)。 這份報告的資料收集自雙核心電腦。 兩個大型高峰代表兩個按鈕按一下的 CPU 活動。 `GetMaxNumberButton_Click` 在單一核心上同步執行，因此方法的圖形高度絕不會超出 50%。 `GetMaxNumberAsycButton_Click` 跨兩個核心非同步執行，讓其高峰更接近以使用兩個核心上的所有 CPU 資源。  
   
-####  <a name="BKMK_Select_timeline_segments_to_view_details"></a>選取時間軸區段以檢視詳細資料  
+#### <a name="BKMK_Select_timeline_segments_to_view_details"></a>選取時間軸區段以檢視詳細資料  
  使用 [Diagnostic session (診斷工作階段)] 時間軸上的選取列，聚焦於 GetMaxNumberButton_Click 資料：  
   
  ![已選取 GetMaxNumberButton&#95;Click](../profiling/media/cpu-use-wt-getmaxnumberreport.png "CPU_USE_WT_GetMaxNumberReport")  
@@ -92,10 +92,10 @@ ms.locfileid: "54777429"
   
  此方法完成的速度大約比 `GetMaxNumberButton_Click` 快 1 秒，但是呼叫樹狀圖項目的意義較不明顯。  
   
-###  <a name="BKMK_The_CPU_Usage_call_tree"></a> CPU 使用量呼叫樹狀圖  
+### <a name="BKMK_The_CPU_Usage_call_tree"></a> CPU 使用量呼叫樹狀圖  
  若要開始了解呼叫樹狀圖資訊，請重新選取 `GetMaxNumberButton_Click` 區段，然後查看呼叫樹狀圖詳細資料。  
   
-####  <a name="BKMK_Call_tree_structure"></a> 呼叫樹狀圖結構  
+#### <a name="BKMK_Call_tree_structure"></a> 呼叫樹狀圖結構  
  ![GetMaxNumberButton&#95;Click 呼叫樹狀圖](../profiling/media/cpu-use-wt-getmaxnumbercalltree-annotated.png "CPU_USE_WT_GetMaxNumberCallTree_annotated")  
   
 |||  
@@ -105,7 +105,7 @@ ms.locfileid: "54777429"
 |![步驟 3](../profiling/media/procguid-3.png "ProcGuid_3")|第二層節點的子系是第二層系統和 Framework 程式碼所呼叫或建立的使用者程式碼方法和非同步常式。|  
 |![步驟 4](../profiling/media/procguid-4.png "ProcGuid_4")|某個方法的子節點只包含父系方法呼叫的資料。 停用 [顯示外部程式碼]  時，應用程式方法也可包含 [外部程式碼]  節點。|  
   
-####  <a name="BKMK_External_Code"></a> 外部程式碼  
+#### <a name="BKMK_External_Code"></a> 外部程式碼  
  外部程式碼包含在系統和架構元件中由您撰寫之程式碼所執行的函式。 外部程式碼包含啟動和停止應用程式、繪製 UI、控制執行緒，以及將其他低階服務提供給應用程式的函式。 在大多數情況下，您對外部程式碼並不感興趣，因此 [CPU 使用量] 呼叫樹狀圖會將使用者方法的外部函式，收集成一個 [外部程式碼]  節點。  
   
  當您想要檢視外部程式碼的呼叫路徑時，請從 [篩選檢視]  清單中選擇 [顯示外部程式碼]  ，然後選擇 [套用] 。  
@@ -120,7 +120,7 @@ ms.locfileid: "54777429"
   
  ![搜尋巢狀外部程式碼](../profiling/media/cpu-use-wt-showexternalcodetoowide-found.png "CPU_USE_WT_ShowExternalCodeTooWide_Found")  
   
-###  <a name="BKMK_Call_tree_data_columns"></a> 呼叫樹狀圖資料行  
+### <a name="BKMK_Call_tree_data_columns"></a> 呼叫樹狀圖資料行  
   
 |||  
 |-|-|  
@@ -130,7 +130,7 @@ ms.locfileid: "54777429"
 |**自我 CPU (毫秒)**|在選取的時間範圍內，函式的呼叫和該函式所呼叫的函式所花費的毫秒數。|  
 |**模組**|內含函式的模組名稱，或內含 [外部程式碼] 節點中的函式的模組數目。|  
   
-###  <a name="BKMK_Asynchronous_functions_in_the_CPU_Usage_call_tree"></a> CPU 使用量呼叫樹狀圖中的非同步函式  
+### <a name="BKMK_Asynchronous_functions_in_the_CPU_Usage_call_tree"></a> CPU 使用量呼叫樹狀圖中的非同步函式  
  當編譯器發現非同步方法時，它會建立隱藏的類別來控制方法的執行。 就概念而言，這個類別是包含編譯器所產生之函式清單的狀態機器，這些函式會以非同步方式呼叫原始方法的作業，以及正常運作所需的回呼、排程器和 Iterator。 父方法呼叫原始方法時，執行階段會從父系的執行內容中移除該方法，並在可控制應用程式執行的系統和 Framework 程式碼內容中執行隱藏類別的方法。 非同步方法通常 (但不一定永遠) 會在一個或多個不同的執行緒上執行。 這段程式碼會在 [CPU 使用量] 呼叫樹狀圖中，顯示為樹狀圖最上層節點正下方之 [外部程式碼]  節點的子系。  
   
  若要在範例中查看此情況，請重新選取時間軸中的 `GetMaxNumberAsyncButton_Click` 區段。  
@@ -141,22 +141,22 @@ ms.locfileid: "54777429"
   
  ![展開的 GetMaxNumberAsyncButton&#95;Click 呼叫樹狀圖](../profiling/media/cpu-use-wt-getmaxnumberasync-expandedcalltree.png "CPU_USE_WT_GetMaxNumberAsync_ExpandedCallTree")  
   
--   `MainPage::GetMaxNumberAsyncButton_Click` 的功能很有限；它會管理工作值清單、計算結果的最大值，並顯示輸出。  
+- `MainPage::GetMaxNumberAsyncButton_Click` 的功能很有限；它會管理工作值清單、計算結果的最大值，並顯示輸出。  
   
--   `MainPage+<GetMaxNumberAsyncButton_Click>d__3::MoveNext` 會顯示排程和啟動將呼叫包裝至 `GetNumberAsync`之 48 項工作所需的活動。  
+- `MainPage+<GetMaxNumberAsyncButton_Click>d__3::MoveNext` 會顯示排程和啟動將呼叫包裝至 `GetNumberAsync`之 48 項工作所需的活動。  
   
--   `MainPage::<GetNumberAsync>b__b` 會顯示呼叫 `GetNumber` 之所有工作的活動。  
+- `MainPage::<GetNumberAsync>b__b` 會顯示呼叫 `GetNumber` 之所有工作的活動。  
   
-##  <a name="BKMK_Next_steps"></a> 後續步驟  
+## <a name="BKMK_Next_steps"></a> 後續步驟  
  CpuUseDemo 應用程式不是最出色的應用程式，但是您可以使用它試驗非同步作業以擴充其公用程式，以及效能和診斷中樞中的其他工具。  
   
--   請注意，`MainPage::<GetNumberAsync>b__b` 在 [外部程式碼] 中花費的時間多於執行 GetNumber 方法。 此時間大部分都是非同步作業的額外負荷。 請嘗試增加工作數目 (設定於 MainPage.xaml.cs 的 `NUM_TASKS` 常數中)，並減少 `GetNumber` 中的反覆項目數 (變更 `MIN_ITERATIONS` 值)。 執行收集案例，並比較 `MainPage::<GetNumberAsync>b__b`的 CPU 活動與原始 CPU 使用量診斷工作階段中的 CPU 活動。 嘗試減少工作並增加反覆項目。  
+- 請注意，`MainPage::<GetNumberAsync>b__b` 在 [外部程式碼] 中花費的時間多於執行 GetNumber 方法。 此時間大部分都是非同步作業的額外負荷。 請嘗試增加工作數目 (設定於 MainPage.xaml.cs 的 `NUM_TASKS` 常數中)，並減少 `GetNumber` 中的反覆項目數 (變更 `MIN_ITERATIONS` 值)。 執行收集案例，並比較 `MainPage::<GetNumberAsync>b__b`的 CPU 活動與原始 CPU 使用量診斷工作階段中的 CPU 活動。 嘗試減少工作並增加反覆項目。  
   
--   使用者通常不在意您應用程式的實際效能，而是在意察覺到的應用程式效能和回應性。 XAML UI 回應性工具顯示 UI 執行緒上影響察覺到回應性的活動詳細資料。  
+- 使用者通常不在意您應用程式的實際效能，而是在意察覺到的應用程式效能和回應性。 XAML UI 回應性工具顯示 UI 執行緒上影響察覺到回應性的活動詳細資料。  
   
      在診斷和效能中樞中建立新的工作階段，並加入 XAML UI 回應性工具和 CPU 使用量工具。 執行收集案例。 如果您閱讀到此，報告可能未告訴您任何尚未了解的內容，除了兩種方法的 [UI 執行緒使用率] 時間軸圖形差異十分驚人以外。 在複雜的實際應用程式中，合併使用這些工具會十分有用。  
   
-##  <a name="BKMK_MainPage_xaml"></a> MainPage.xaml  
+## <a name="BKMK_MainPage_xaml"></a> MainPage.xaml  
   
 ```csharp  
 <Page  
@@ -191,7 +191,7 @@ ms.locfileid: "54777429"
   
 ```  
   
-##  <a name="BKMK_MainPage_xaml_cs"></a> MainPage.xaml.cs  
+## <a name="BKMK_MainPage_xaml_cs"></a> MainPage.xaml.cs  
   
 ```csharp  
 using System;  

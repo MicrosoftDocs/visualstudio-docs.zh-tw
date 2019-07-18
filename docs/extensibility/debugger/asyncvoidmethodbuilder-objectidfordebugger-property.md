@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - ObjectIdForDbugger property, AsyncVoidMethodBuilder structure [.NET Framework debug engines]
 ms.assetid: 97c48c49-3fb2-4778-accd-8585fa4feabf
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 63446ad31f57c63650076e42d31226d7728e1e15
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: d0f4e7fe2a61d2277884920045e3bfce80dd26be
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56716918"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66350956"
 ---
 # <a name="asyncvoidmethodbuilderobjectidfordebugger-property"></a>AsyncVoidMethodBuilder.ObjectIdForDebugger 屬性
 取得物件，可用來唯一識別這個產生器偵錯工具。

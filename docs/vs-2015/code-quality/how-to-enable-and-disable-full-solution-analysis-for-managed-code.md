@@ -1,12 +1,9 @@
 ---
-title: 如何： 啟用和停用 Managed 程式碼的完整解決方案分析 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：啟用和停用 Managed 程式碼的完整解決方案分析 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 helpviewer_keywords:
 - full solution analysis
 ms.assetid: 04315147-5792-47f0-8b5f-9ac8413c6a57
@@ -14,18 +11,18 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: af0aae4020182f6414d44a2004f98a6fc0df23ca
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+ms.openlocfilehash: df06a17ecc093cf24a64e7c3aa11a096a61ee44f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49221867"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436831"
 ---
-# <a name="how-to-enable-and-disable-full-solution-analysis-for-managed-code"></a>如何： 啟用和停用 Managed 程式碼的完整解決方案分析
+# <a name="how-to-enable-and-disable-full-solution-analysis-for-managed-code"></a>HOW TO：啟用和停用 Managed 程式碼的完整解決方案分析
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-附註]
->  本主題只適用於 Visual Studio 2015 Update 3 RC 和更新版本。  
+注意]
+> 本主題只適用於 Visual Studio 2015 Update 3 RC 和更新版本。  
   
  *完整解決方案分析*是一種 Visual Studio 功能，可讓您選擇您是否看到只在開啟 Visual C# 或 Visual Basic 檔案在您的方案，或開啟和關閉 Visual C# 或 Visual Basic 檔案中您方案中的程式碼分析問題。  
   
@@ -33,11 +30,11 @@ ms.locfileid: "49221867"
   
 #### <a name="to-toggle-full-solution-analysis"></a>若要切換完整解決方案分析  
   
-1.  在 在 Visual Studio 主功能表中，選擇**工具** &#124; **選項**檢視**選項**對話方塊。  
+1. 在 在 Visual Studio 主功能表中，選擇**工具** &#124; **選項**檢視**選項**對話方塊。  
   
-2.  在 **選項**對話方塊方塊中，選擇**文字編輯器** &#124; **C#** 或**基本** &#124; **進階**.  
+2. 在 **選項**對話方塊方塊中，選擇**文字編輯器** &#124; **C#** 或**基本** &#124; **進階**.  
   
-3.  選取 **啟用完整解決方案分析**核取方塊以啟用完整解決方案分析，或清除此方塊可停用它。 選擇**確定**按鈕，當您完成時。  
+3. 選取 **啟用完整解決方案分析**核取方塊以啟用完整解決方案分析，或清除此方塊可停用它。 選擇**確定**按鈕，當您完成時。  
   
      ![啟用完整解決方案分析 核取方塊。](../code-quality/media/fsa-toolsoptions.png "FSA_ToolsOptions")  
   
@@ -59,6 +56,3 @@ ms.locfileid: "49221867"
  根據預設，是針對 Visual Basic 啟用完整解決方案分析，並將其停用 Visual C# 中。  
   
  Visual Studio Update 3 RC 包含增強的程式碼分析師診斷 v2 引擎，大幅降低記憶體使用量，並減少 CPU 時間閒置，即使已啟用完整解決方案分析。
-
-
-

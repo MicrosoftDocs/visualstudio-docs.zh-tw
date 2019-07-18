@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d6b203fcfbe5de92787ae5d2dcaba1b7d9b9454e
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: bab7f45824def7a4b5a385381a4789b7adc276d0
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54870619"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63008077"
 ---
 # <a name="troubleshoot-sharepoint-solutions"></a>SharePoint 方案進行疑難排解
   當您使用偵錯 SharePoint 方案時，則可能會發生下列問題或警示[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]偵錯工具。 如需詳細資訊，請參閱 <<c0> [ 偵錯 SharePoint 2007 工作流程方案](https://msdn.microsoft.com/3a5392f3-66f3-48be-956e-02de23fa6247)。
@@ -115,9 +115,9 @@ ms.locfileid: "54870619"
 
 ##### <a name="to-reenter-the-workflow-wizard"></a>若要重新輸入工作流程精靈
 
-1.  在 [**方案總管] 中**，選擇 [流程] 節點。
+1. 在 [**方案總管] 中**，選擇 [流程] 節點。
 
-2.  在 [**屬性**] 視窗中，選擇省略符號 （...） 按鈕，在任何具有省略符號按鈕的屬性。
+2. 在 [**屬性**] 視窗中，選擇省略符號 （...） 按鈕，在任何具有省略符號按鈕的屬性。
 
 ## <a name="user-must-refresh-application-page-in-browser-while-debugging-to-view-updated-image"></a>使用者必須重新整理瀏覽器中的應用程式頁面來檢視更新的映像偵錯時
  如果您正在偵錯 SharePoint 方案，其中包含應用程式頁面會顯示映像，例如控制[!INCLUDE[TLA2#tla_html](../sharepoint/includes/tla2sharptla-html-md.md)]影像控制項，您必須重新整理頁面，在瀏覽器中顯示映像所做的任何變更。
@@ -127,13 +127,13 @@ ms.locfileid: "54870619"
 
 ### <a name="error-message"></a>錯誤訊息
 
--   SharePoint 站台位置不是有效的。
+- SharePoint 站台位置不是有效的。
 
 ### <a name="resolution"></a>解決方式
 
--   安裝 [!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)]。
+- 安裝 [!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)]。
 
--   請確定您需要 SharePoint 網站的系統管理員存取權。 如需詳細資訊，請參閱 <<c0> [!INCLUDE[TLA2#tla_office](../sharepoint/includes/tla2sharptla-office-md.md)] 線上文章[指派或移除服務應用程式的系統管理員在 SharePoint Server](https://docs.microsoft.com/sharepoint/administration/assign-or-remove-administrators-of-service-applications)。
+- 請確定您需要 SharePoint 網站的系統管理員存取權。 如需詳細資訊，請參閱 <<c0> [!INCLUDE[TLA2#tla_office](../sharepoint/includes/tla2sharptla-office-md.md)] 線上文章[指派或移除服務應用程式的系統管理員在 SharePoint Server](https://docs.microsoft.com/sharepoint/administration/assign-or-remove-administrators-of-service-applications)。
 
 ## <a name="site-deletion-web-event-does-not-occur-in-event-receiver-project"></a>站台刪除網頁事件不會發生在事件接收器專案
  當您建立事件接收器專案時，您選取特定 Web 事件，例如"正在刪除站台 」 時永遠不會發生這個事件。
@@ -156,46 +156,46 @@ ms.locfileid: "54870619"
 
 ##### <a name="to-change-the-feature-scope-of-the-event-receiver"></a>若要變更的功能範圍的事件接收器
 
-1.  在**方案總管 中**，開啟事件接收器 *.feature*中的檔案**功能設計工具**藉由按兩下檔案，或開啟其捷徑功能表，然後選擇**開啟**。
+1. 在**方案總管 中**，開啟事件接收器 *.feature*中的檔案**功能設計工具**藉由按兩下檔案，或開啟其捷徑功能表，然後選擇**開啟**。
 
-2.  選擇箭號旁**範圍**，然後選擇**站台**中出現的清單。
+2. 選擇箭號旁**範圍**，然後選擇**站台**中出現的清單。
 
 ## <a name="deployment-error-appears-after-the-name-of-an-identifier-in-a-business-data-connectivity-model-project-is-changed"></a>商務資料連接模型專案中的識別項名稱變更之後，就會出現部署錯誤
  如果您變更商務資料連接 (BDC) 模型中實體的識別項名稱，然後再嘗試部署方案，就會發生這個問題。
 
 ### <a name="error-messages"></a>錯誤訊息
 
--   \<*模型名稱*> 具有下列的外部內容類型啟用錯誤...
+- \<*模型名稱*> 具有下列的外部內容類型啟用錯誤...
 
--   IMetadataObject 名稱 '\<*模型名稱*>' 中欄位 'name' 是複製其值...
+- IMetadataObject 名稱 '\<*模型名稱*>' 中欄位 'name' 是複製其值...
 
 ### <a name="resolution"></a>解決方式
  若要解決此問題，以手動的方式，刪除模型，並再重新部署解決方案。  您可以使用下列工具來刪除模型：
 
--   SharePoint 2010 管理中心。 如需詳細資訊，請參閱 < [BDC 模型管理](http://go.microsoft.com/fwlink/?LinkID=181472)Microsoft TechNet 網站上。
+- SharePoint 2010 管理中心。 如需詳細資訊，請參閱 < [BDC 模型管理](http://go.microsoft.com/fwlink/?LinkID=181472)Microsoft TechNet 網站上。
 
--   Windows PowerShell 您可以在命令提示字元中輸入下列命令來刪除模型：**移除 SPBusinessDataCatalogModel**。 如需詳細資訊，請參閱 <<c0> [ 一般 cmdlet (SharePoint Server 2010)](http://go.microsoft.com/fwlink/?LinkID=182375) Microsoft TechNet 網站上。
+- Windows PowerShell 您可以在命令提示字元中輸入下列命令來刪除模型：**移除 SPBusinessDataCatalogModel**。 如需詳細資訊，請參閱 <<c0> [ 一般 cmdlet (SharePoint Server 2010)](http://go.microsoft.com/fwlink/?LinkID=182375) Microsoft TechNet 網站上。
 
 ## <a name="an-error-appears-when-you-try-to-view-a-visual-web-part-in-sharepoint"></a>當您嘗試檢視 SharePoint 中的視覺 web 組件時，就會出現錯誤
  發生此問題時**路徑**使用者控制項屬性的開頭不是字串"CONTROLTEMPLATES\\"。
 
 ### <a name="error-messages"></a>錯誤訊息
 
--   檔案 ' /_CONTROLTEMPLATES/*\<專案名稱 >*/*\<Web 組件名稱 >*/*\<使用者控制項名稱 >*.ascx' 不存在。
+- 檔案 ' /_CONTROLTEMPLATES/*\<專案名稱 >*/*\<Web 組件名稱 >*/*\<使用者控制項名稱 >*.ascx' 不存在。
 
--   '/' 應用程式中的伺服器錯誤。
+- '/' 應用程式中的伺服器錯誤。
 
 ### <a name="resolution"></a>解決方式
 
 ##### <a name="to-resolve-this-issue"></a>若要解決此問題
 
-1.  在 **方案總管**，選擇使用者控制項檔案，其副檔名 *.ascx*。
+1. 在 **方案總管**，選擇使用者控制項檔案，其副檔名 *.ascx*。
 
-2.  在功能表列上選擇 [**檢視** > **屬性] 視窗**。
+2. 在功能表列上選擇 [**檢視** > **屬性] 視窗**。
 
-3.  在 [**屬性**] 視窗中，展開**部署位置**節點。
+3. 在 [**屬性**] 視窗中，展開**部署位置**節點。
 
-4.  請確認的值**路徑**屬性開頭為字串"CONTROLTEMPLATES\\"。
+4. 請確認的值**路徑**屬性開頭為字串"CONTROLTEMPLATES\\"。
 
 ## <a name="error-appears-when-an-imported-reusable-workflow-that-contains-a-task-form-field-is-run"></a>包含工作表單欄位的匯入可重複使用工作流程執行時，就會出現錯誤
  如果您匯入包含一份工作表單，有一個欄位，工作流程，然後執行從中您將它匯入相同的系統上的 新的工作流程，就會發生此問題。
@@ -230,26 +230,26 @@ ms.locfileid: "54870619"
 
 ##### <a name="to-access-the-iis-app-pool-settings"></a>若要存取 IIS 應用程式集區設定
 
-1.  開啟 [IIS Manager]。
+1. 開啟 [IIS Manager]。
 
-2.  在 **連線**窗格中，展開 SharePoint 伺服器節點，，然後選擇**應用程式集區**節點。
+2. 在 **連線**窗格中，展開 SharePoint 伺服器節點，，然後選擇**應用程式集區**節點。
 
-3.  在 **應用程式集區**頁面上，選擇 SharePoint 應用程式集區 (通常是"SharePoint-80")，然後在**動作**窗格中，選擇**進階設定**連結。
+3. 在 **應用程式集區**頁面上，選擇 SharePoint 應用程式集區 (通常是"SharePoint-80")，然後在**動作**窗格中，選擇**進階設定**連結。
 
-4.  若要增加 IIS 逾時之前的等待時間，變更的值**Ping 回應時間上限 （秒）** 大於 90 秒的值。
+4. 若要增加 IIS 逾時之前的等待時間，變更的值**Ping 回應時間上限 （秒）** 大於 90 秒的值。
 
-5.  若要停用 IIS ping，請設定**已啟用 Ping**要**False**。
+5. 若要停用 IIS ping，請設定**已啟用 Ping**要**False**。
 
 ## <a name="auto-retract-leaves-orphaned-list-instance-in-sharepoint"></a>在 SharePoint 中會自動撤銷保留被遺棄的清單執行個體
  如果您執行下列步驟，就會發生這個問題。
 
-1.  建立的清單定義中包含的清單執行個體[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。
+1. 建立的清單定義中包含的清單執行個體[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。
 
-2.  選擇**F5**鍵執行方案。
+2. 選擇**F5**鍵執行方案。
 
-3.  停止偵錯，或關閉 SharePoint 網站。
+3. 停止偵錯，或關閉 SharePoint 網站。
 
-4.  重新開啟 SharePoint 網站，然後開啟的清單執行個體。
+4. 重新開啟 SharePoint 網站，然後開啟的清單執行個體。
 
 ### <a name="error-message"></a>錯誤訊息
  '/' 應用程式中的伺服器錯誤。

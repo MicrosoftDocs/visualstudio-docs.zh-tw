@@ -1,14 +1,9 @@
 ---
-title: 'CA2215: Dispose 方法應該呼叫基底類別處置 |Microsoft Docs'
-ms.custom: ''
+title: CA2215:方法應該呼叫基底類別處置 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA2215
 - DisposeMethodsShouldCallBaseClassDispose
@@ -21,14 +16,14 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: e5b09c17ef8e12908e4f230cff8fea36caabce23
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: bc934afd9289a6bce425084f3588a7e912baf9b9
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49852111"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65681184"
 ---
-# <a name="ca2215-dispose-methods-should-call-base-class-dispose"></a>CA2215：Dispose 方法應該呼叫基底類別處置
+# <a name="ca2215-dispose-methods-should-call-base-class-dispose"></a>CA2215:Dispose 方法應該呼叫基底類別處置
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -61,7 +56,4 @@ ms.locfileid: "49852111"
  [!code-vb[FxCop.Usage.IDisposableBaseCalled#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Usage.IDisposableBaseCalled/vb/FxCop.Usage.IDisposableBaseCalled.vb#1)]
 
 ## <a name="see-also"></a>另請參閱
- <xref:System.IDisposable?displayProperty=fullName> [處置模式](http://msdn.microsoft.com/library/31a6c13b-d6a2-492b-9a9f-e5238c983bcb)
-
-
-
+ <xref:System.IDisposable?displayProperty=fullName> [處置模式](https://msdn.microsoft.com/library/31a6c13b-d6a2-492b-9a9f-e5238c983bcb)

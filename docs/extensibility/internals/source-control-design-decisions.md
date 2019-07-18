@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK], design decisions
 ms.assetid: 5f60ec1a-5a74-4362-8293-817a4dd73872
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8378bf0a95ca9a844de4985f7403f04978607dcd
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: bb09884511c8a2070e49e12d38084c12a2907b19
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56615269"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66322569"
 ---
 # <a name="source-control-design-decisions"></a>原始檔控制的設計決策
 實作原始檔控制時，下列設計決策應該視為專案。
@@ -28,11 +28,11 @@ ms.locfileid: "56615269"
 ## <a name="will-the-project-include-special-files"></a>專案包含特殊的檔案？
  另一個重要的設計決策是您的專案結構是否使用特殊的檔案。 特殊的檔案是隱藏的檔案為基礎所顯示在 [方案總管] 中，並在簽入和簽出對話方塊的檔案。 如果您使用特殊的檔案，請遵循這些指導方針：
 
-1.  請勿將特殊的檔案關聯的專案根節點 — 也就是與專案檔案本身。 您的專案檔必須是單一檔案。
+1. 請勿將特殊的檔案關聯的專案根節點 — 也就是與專案檔案本身。 您的專案檔必須是單一檔案。
 
-2.  當新增、 移除或重新命名專案中，適當的特殊檔案<xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocumentsEvents2>設定旗標，指出檔案是特殊的檔案，必須引發事件。 回應呼叫適當的專案中的環境會呼叫這些事件<xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2>方法。
+2. 當新增、 移除或重新命名專案中，適當的特殊檔案<xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocumentsEvents2>設定旗標，指出檔案是特殊的檔案，必須引發事件。 回應呼叫適當的專案中的環境會呼叫這些事件<xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2>方法。
 
-3.  當您的專案或編輯器呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A>檔案，該檔案相關聯的特殊檔案不會自動簽出。中的特殊檔案與一起傳遞的父檔案。 環境會偵測傳入的所有檔案之間的關聯性，並適當地隱藏在 UI 中簽出的特殊檔案。
+3. 當您的專案或編輯器呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A>檔案，該檔案相關聯的特殊檔案不會自動簽出。中的特殊檔案與一起傳遞的父檔案。 環境會偵測傳入的所有檔案之間的關聯性，並適當地隱藏在 UI 中簽出的特殊檔案。
 
 ## <a name="see-also"></a>另請參閱
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A>

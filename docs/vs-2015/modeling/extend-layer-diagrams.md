@@ -1,14 +1,9 @@
 ---
 title: 擴充分層圖 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-techdebt
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - layer diagrams, creating extensions
 - layer models
@@ -16,13 +11,13 @@ ms.assetid: 83fca301-b008-485a-87eb-218050e71451
 caps.latest.revision: 41
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 20d84c91ef30ae549b8fa59893d439a06467ed33
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: af191c929b88f1bda76896061359b7315517beb5
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51766920"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68182885"
 ---
 # <a name="extend-layer-diagrams"></a>Extend layer diagrams
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,15 +26,15 @@ ms.locfileid: "51766920"
   
  如需分層圖的詳細資訊，請參閱：  
   
--   [分層圖：參考](../modeling/layer-diagrams-reference.md)  
+- [圖層圖表：參考](../modeling/layer-diagrams-reference.md)  
   
--   [分層圖：方針](../modeling/layer-diagrams-guidelines.md)  
+- [圖層圖表：方針](../modeling/layer-diagrams-guidelines.md)  
   
--   [從程式碼建立分層圖](../modeling/create-layer-diagrams-from-your-code.md)  
+- [從程式碼建立分層圖](../modeling/create-layer-diagrams-from-your-code.md)  
   
--   [使用分層圖驗證程式碼](../modeling/validate-code-with-layer-diagrams.md)  
+- [使用分層圖驗證程式碼](../modeling/validate-code-with-layer-diagrams.md)  
   
-##  <a name="prereqs"></a> 需求  
+## <a name="prereqs"></a> 需求  
  您必須在想要開發圖層擴充功能的電腦上安裝下列項目：  
   
 - Visual Studio  
@@ -67,12 +62,9 @@ ms.locfileid: "51766920"
   
 ## <a name="see-also"></a>另請參閱  
  [定義與安裝模型擴充功能](../modeling/define-and-install-a-modeling-extension.md)   
- [分層圖： 參考](../modeling/layer-diagrams-reference.md)   
- [分層圖： 方針](../modeling/layer-diagrams-guidelines.md)   
+ [圖層圖表：參考](../modeling/layer-diagrams-reference.md)   
+ [圖層圖表：指導方針](../modeling/layer-diagrams-guidelines.md)   
  [從您的程式碼建立分層圖](../modeling/create-layer-diagrams-from-your-code.md)   
  [使用分層圖驗證程式碼](../modeling/validate-code-with-layer-diagrams.md)   
  [從 UML 模型產生檔案](../modeling/generate-files-from-a-uml-model.md)   
  [使用 Visual Studio API 開啟 UML 模型](../modeling/open-a-uml-model-by-using-the-visual-studio-api.md)
-
-
-

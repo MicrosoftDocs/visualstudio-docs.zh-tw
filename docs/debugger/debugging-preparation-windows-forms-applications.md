@@ -21,11 +21,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5cc06e33b3549bda9bdc9fe04073ca4cf0d9e9a5
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56679940"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62851775"
 ---
 # <a name="debugging-preparation-windows-forms-applications"></a>偵錯準備：Windows Forms 應用程式
 Windows Form 專案範本會建立 Windows Forms 應用程式。 在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中可以直接偵錯這種類型的應用程式。 如需詳細資訊，請參閱 <<c0> [ 建立 Windows 應用程式專案](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/42wc9kk5(v=vs.100))。
@@ -64,7 +64,7 @@ Windows Form 專案範本會建立 Windows Forms 應用程式。 在 [!INCLUDE[v
 
 4. 使用所述的技巧進行偵錯[第一次查看偵錯工具](../debugger/debugger-feature-tour.md)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [偵錯 Managed 程式碼](../debugger/debugging-managed-code.md)
 - [C#、F# 和 Visual Basic 專案類型](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)
 - [如何：設定偵錯和發行組態](../debugger/how-to-set-debug-and-release-configurations.md)

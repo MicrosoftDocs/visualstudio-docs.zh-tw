@@ -1,46 +1,41 @@
 ---
 title: 程式控制項 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], control of execution
 ms.assetid: 6be80904-e66c-4cae-8891-1113b799fb01
 caps.latest.revision: 10
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 9a833c8ba19ef71d7bf09e304b49853dd0b90274
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 8102bc488d5c74f751fb93584016aa6904fbe2d9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51759233"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438090"
 ---
 # <a name="program-control"></a>程式控制
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 在 Visual Studio 中偵錯時，所有下列的逐步執行，並且繼續常式會執行的程式層級：  
   
--   設定下一個陳述式，也就設為您的電腦在特定畫面格的環境中執行的下一個指令  
+- 設定下一個陳述式，也就設為您的電腦在特定畫面格的環境中執行的下一個指令  
   
--   結束 逐步執行模式執行，也就繼續  
+- 結束 逐步執行模式執行，也就繼續  
   
--   逐步執行至下一個指令  
+- 逐步執行至下一個指令  
   
--   繼續進行目前的逐步執行模式  
+- 繼續進行目前的逐步執行模式  
   
--   暫止程式所包含的執行緒  
+- 暫止程式所包含的執行緒  
   
--   繼續執行程式所包含的執行緒  
+- 繼續執行程式所包含的執行緒  
   
 > [!NOTE]
->  檢視呼叫堆疊被實作在執行緒層級上。 若要列舉的畫面格的資訊，檢視執行緒的呼叫堆疊時，您必須實作的所有方法[IEnumDebugFrameInfo2](../../extensibility/debugger/reference/ienumdebugframeinfo2.md)介面。  
+> 檢視呼叫堆疊被實作在執行緒層級上。 若要列舉的畫面格的資訊，檢視執行緒的呼叫堆疊時，您必須實作的所有方法[IEnumDebugFrameInfo2](../../extensibility/debugger/reference/ienumdebugframeinfo2.md)介面。  
   
 ## <a name="methods-of-program-control"></a>程式控制項的方法  
  下表顯示的方法[IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md) ，必須實作功能最小的偵錯引擎 (DE) 和執行控制。  
@@ -55,4 +50,3 @@ ms.locfileid: "51759233"
   
 ## <a name="see-also"></a>另請參閱  
  [執行控制和狀態評估](../../extensibility/debugger/execution-control-and-state-evaluation.md)
-

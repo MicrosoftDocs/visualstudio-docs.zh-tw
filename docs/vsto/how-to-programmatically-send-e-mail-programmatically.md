@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 280b4f526bad3e0ba646058b3e2410a98ca910fe
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 4def747f4077d7b847e7e87082dc4b0b96cf04c9
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56646001"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62961884"
 ---
 # <a name="how-to-programmatically-send-email"></a>HOW TO：以程式設計方式傳送電子郵件
   此範例會將電子郵件訊息傳送至擁有的網域名稱的連絡人**example.com**中電子郵件地址。
@@ -33,7 +33,7 @@ ms.locfileid: "56646001"
 ## <a name="compile-the-code"></a>編譯程式碼
  這個範例需要：
 
--   擁有的網域名稱的連絡人**example.com**中電子郵件地址。
+- 擁有的網域名稱的連絡人**example.com**中電子郵件地址。
 
 ## <a name="robust-programming"></a>穩固程式設計
  請勿移除網域名稱的搜尋篩選條件程式碼**example.com**。 您的解決方案會傳送電子郵件給所有的連絡人，如果您移除篩選。

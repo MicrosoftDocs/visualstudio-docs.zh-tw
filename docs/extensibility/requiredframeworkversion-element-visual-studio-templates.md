@@ -7,17 +7,17 @@ helpviewer_keywords:
 - <RequiredFrameworkVersion> (Visual Studio Templates)
 - RequiredFrameworkVersion (Visual Studio Templates)
 ms.assetid: 08a4f609-51a5-4723-b89f-99277fb18871
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 40eefc62eef318bcd9c52a1cbbb966377b3616f8
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 0550fc1d286c04c61a1c0b2503326a002fde729e
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54946993"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66744748"
 ---
 # <a name="requiredframeworkversion-element-visual-studio-templates"></a>RequiredFrameworkVersion 元素 （Visual Studio 範本）
 
@@ -86,4 +86,4 @@ ms.locfileid: "54946993"
 
 - [Visual Studio 範本結構描述參考](../extensibility/visual-studio-template-schema-reference.md)
 - [建立專案與項目範本](../ide/creating-project-and-item-templates.md)
-- [以特定的.NET Framework 版本為目標](../ide/visual-studio-multi-targeting-overview.md)
+- [Framework 目標概觀](../ide/visual-studio-multi-targeting-overview.md)

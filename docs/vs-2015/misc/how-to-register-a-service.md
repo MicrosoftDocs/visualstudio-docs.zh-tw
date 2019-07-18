@@ -1,27 +1,22 @@
 ---
-title: 如何： 註冊服務 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：註冊服務 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 helpviewer_keywords:
 - services, registering
 ms.assetid: d086be78-ec3c-43cc-b799-5180a71e19f1
 caps.latest.revision: 16
-manager: douge
-ms.openlocfilehash: a1f8026a648b2a0809af17664d4399f815c329be
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: f41578f2522487f746a469933a2269a621390f3c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49206254"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63408417"
 ---
-# <a name="how-to-register-a-service"></a>如何：註冊服務
+# <a name="how-to-register-a-service"></a>HOW TO：註冊服務
 Managed Package Framework (MPF) 提供屬性以控制受管理服務的註冊。 RegPkg 公用程式使用這些屬性，向 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]註冊服務。  
   
 ## <a name="example"></a>範例  
@@ -43,8 +38,8 @@ Managed Package Framework (MPF) 提供屬性以控制受管理服務的註冊。
  需要有 <xref:System.Runtime.InteropServices.ComVisibleAttribute>才能透過 Unmanaged 程式碼取得介面。  
   
 > [!NOTE]
->  雖然您可以針對服務和介面使用相同的類型或 GUID，但是建議您使用不同的類型或 GUID，因為服務可以公開不同的介面。  
+> 雖然您可以針對服務和介面使用相同的類型或 GUID，但是建議您使用不同的類型或 GUID，因為服務可以公開不同的介面。  
   
 ## <a name="see-also"></a>另請參閱  
- [註冊 Vspackage](http://msdn.microsoft.com/en-us/31e6050f-1457-4849-944a-a3c36b76f3dd)   
+ [註冊 Vspackage](../extensibility/internals/registering-vspackages.md)   
  [服務的基本資訊](../extensibility/internals/service-essentials.md)

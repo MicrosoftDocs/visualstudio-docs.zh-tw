@@ -1,5 +1,5 @@
 ---
-title: 如何：設定效能資料檔案名稱選項 | Microsoft Docs
+title: HOW TO：設定效能資料檔案名稱選項 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -9,14 +9,14 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f3d513010b94c61e09f8bda6a9fb3074ba949bdd
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: faaa78d34c71d1f0b436b861ccb1ac4892267e9b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54760410"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68205791"
 ---
-# <a name="how-to-set-performance-data-file-name-options"></a>如何：設定效能資料檔案名稱選項
+# <a name="how-to-set-performance-data-file-name-options"></a>HOW TO：設定效能資料檔案名稱選項
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 根據預設，您要使用下列語法來儲存程式碼剖析資料 (.vsp) 檔案：  
@@ -27,7 +27,7 @@ ms.locfileid: "54760410"
   
  **需求**  
   
--   [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)]、[!INCLUDE[vsPreLong](../includes/vsprelong-md.md)]、[!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
 |||  
 |-|-|  
@@ -38,11 +38,11 @@ ms.locfileid: "54760410"
   
 ### <a name="to-change-the-naming-syntax-of-the-profiling-data-files-of-a-performance-session"></a>變更效能工作階段之程式碼剖析資料檔案的命名語法  
   
-1.  在 [效能總管] 中，以滑鼠右鍵按一下效能工作階段的名稱，然後按一下 [屬性]。  
+1. 在 [效能總管]  中，以滑鼠右鍵按一下效能工作階段的名稱，然後按一下 [屬性]  。  
   
-2.  按一下 [一般]。  
+2. 按一下 [一般]  。  
   
-3.  變更 [報告] 中的下列設定：  
+3. 變更 [報告]  中的下列設定：  
   
     |||  
     |-|-|  

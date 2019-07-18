@@ -4,19 +4,19 @@ titleSuffix: ''
 description: Visual Studio 專案內容中 Flask 基本概念的逐步解說，包括先決條件、Git 和虛擬環境。
 ms.date: 01/07/2019
 ms.topic: tutorial
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: cad792adaaebb6c446d071aca0edd57932605375
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: d0ad3ac3c4efa6be136fa85ee0c8abbe3632e53f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55920099"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62958448"
 ---
 # <a name="tutorial-get-started-with-the-flask-web-framework-in-visual-studio"></a>教學課程：開始使用 Visual Studio 中的 Flask Web 架構
 
@@ -40,7 +40,7 @@ Flask 被稱為「微」架構，因為它並不直接提供表單驗證、資�
 
 ## <a name="prerequisites"></a>必要條件
 
-- 含下列選項的 Windows 上 Visual Studio 2017：
+- Windows 上具有下列選項的 Visual Studio 2017 或更新版本：
   - **Python 開發** 工作負載 (安裝程式的 [工作負載] 索引標籤)。 如需相關指示，請參閱[在 Visual Studio 中安裝 Python 支援](installing-python-support-in-visual-studio.md)。
   - [程式碼工具] 下 [個別元件] 索引標籤上的 [Git for Windows] 和 [Visual Studio 的 GitHub 擴充]。
 
@@ -60,7 +60,7 @@ Visual Studio for Mac 目前不支援 Python 開發。 在 Mac 和 Linux 上，�
     - **位置**：指定要在其中建立 Visual Studio 解決方案和專案的位置。
     - **方案名稱**：設定為 **LearningFlask**，這適用於本教學課程中作為多專案容器的解決方案。
     - **建立解決方案的目錄**：維持在設定狀態 (預設)。
-    - **建立新的 Git 存放庫**：選取此選項 (預設為清除)，以便 Visual Studio 在建立解決方案時一併建立本機 Git 存放庫。 若您沒有看到此選項，請執行 Visual Studio 2017 安裝工具，並在 [程式碼工具] 下的 [個別元件] 索引標籤上新增 **Git for Windows** 和 **GitHub Extension for Visual Studio**。
+    - **建立新的 Git 存放庫**：選取此選項 (預設為清除)，以便 Visual Studio 在建立解決方案時一併建立本機 Git 存放庫。 若您沒有看到此選項，請執行 Visual Studio 安裝工具，並在 [程式碼工具] 下的 [個別元件] 索引標籤上新增 **Git for Windows** 和 **Visual Studio 的 GitHub 延伸模組**。
 
 1. 隨後 Visual Studio 會以對話方塊提示您，指出**此專案需要外部套件** (如下所示)。 之所以會出現此對話方塊，是因為範本包含參考最新 Flask 1.x 套件的 *requirements.txt* 檔案。 (選取 [顯示必要套件] 來查看確切相依性)。
 

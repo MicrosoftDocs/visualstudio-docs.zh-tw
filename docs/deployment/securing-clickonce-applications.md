@@ -1,5 +1,5 @@
 ---
-title: 保護 ClickOnce 應用程式 |Microsoft Docs
+title: 設定 ClickOnce 應用程式的安全性 | Microsoft Docs
 ms.date: 02/17/2017
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a307221e4e585ab3cb8ee6f1ad3e71057afaf671
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 2b23e10dfd00f4e1b9bde8520ef50aa60cd18b35
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56605311"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63406744"
 ---
 # <a name="secure-clickonce-applications"></a>保護 ClickOnce 應用程式
 在 .NET Framework 中，[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式受到程式碼存取安全性條件約束的限制，因此能夠協助限制程式碼對受保護之資源和作業的存取。 因此，很重要的是您必須了解程式碼存取安全性的含意，照著撰寫 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式。 您的應用程式可以使用完全信任或部分信任區域 (例如網際網路和內部網路區域) 以限制存取。
@@ -38,14 +38,14 @@ ms.locfileid: "56605311"
 |從網路檔案共用安裝|近端內部網路區域|
 |從 CD-ROM 安裝|完全信任|
 
- 預設的使用權限是根據應用程式原始版本的部署位置而定，此應用程式的更新仍會繼承這些使用權限。 如果將應用程式設定為從 Web 或網路位置檢查是否有更新，且發現有新版本可用時，原始安裝程序可能會取得網際網路或內部網路區域的使用權限，而非「完全信任」使用權限。 若要避免使用者看到提示，系統管理員可以指定 ClickOnce 部署原則，將特定的應用程式發行者定義為受信任的來源。 在部署此原則的電腦上，會自動授與使用權限，因此使用者就不會看到提示。 如需詳細資訊，請參閱 [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md)。 若要設定信任的應用程式部署，可以在電腦或企業層級安裝憑證。 如需詳細資訊，請參閱 [How to: Add a Trusted Publisher to a Client Computer for ClickOnce Applications](../deployment/how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications.md)。
+ 預設的使用權限是根據應用程式原始版本的部署位置而定，此應用程式的更新仍會繼承這些使用權限。 如果將應用程式設定為從 Web 或網路位置檢查是否有更新，且發現有新版本可用時，原始安裝程序可能會取得網際網路或內部網路區域的使用權限，而非「完全信任」使用權限。 若要避免使用者看到提示，系統管理員可以指定 ClickOnce 部署原則，將特定的應用程式發行者定義為受信任的來源。 在部署此原則的電腦上，會自動授與使用權限，因此使用者就不會看到提示。 如需詳細資訊，請參閱 [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md)。 若要設定信任的應用程式部署，可以在電腦或企業層級安裝憑證。 如需詳細資訊，請參閱[如何：將信任發行者新增到 ClickOnce 應用程式的用戶端電腦](../deployment/how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications.md)。
 
 ## <a name="code-access-security-policies"></a>程式碼存取安全性原則
- 應用程式的權限取決於中的設定[ \<trustInfo > 項目](../deployment/trustinfo-element-clickonce-application.md)應用程式資訊清單的項目。 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 會根據專案的 [安全性]  屬性頁設定，自動產生此資訊。 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式只能取得它所要求的特定權限， 例如，假設檔案存取需要「完全信任」權限，如果應用程式要求「檔案存取」權限，那麼它只能取得「檔案存取」權限，而不是「完全信任」權限。 當您開發 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式時，應該確定只要求應用程式所需的特定權限。 在大部分情況下，您可以使用 [網際網路] 或 [近端內部網路] 區域將應用程式限制為部分信任。 如需詳細資訊，請參閱 [How to: Set a security zone for a ClickOnce application](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md) (如何：設定 ClickOnce 應用程式的安全性區域)。 如果應用程式需要自訂權限，您可以建立自訂區域。 如需詳細資訊，請參閱 [How to: Set custom permissions for a ClickOnce application](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md) (如何：設定 ClickOnce 應用程式的自訂權限)。
+ 應用程式的權限取決於應用程式資訊清單 [\<trustInfo> Element](../deployment/trustinfo-element-clickonce-application.md)元素中的設定。 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 會根據專案的 [安全性]  屬性頁設定，自動產生此資訊。 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式只能取得它所要求的特定權限， 例如，假設檔案存取需要「完全信任」權限，如果應用程式要求「檔案存取」權限，那麼它只能取得「檔案存取」權限，而不是「完全信任」權限。 當您開發 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式時，應該確定只要求應用程式所需的特定權限。 在大部分情況下，您可以使用 [網際網路] 或 [近端內部網路] 區域將應用程式限制為部分信任。 如需詳細資訊，請參閱[如何：為 ClickOnce 應用程式設定安全性區域](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)。 如果應用程式需要自訂權限，您可以建立自訂區域。 如需詳細資訊，請參閱[如何：為 ClickOnce 應用程式設定自訂權限](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)。
 
  若包含部署應用程式的區域預設權限以外的權限，在安裝或更新期間，將會造成提示使用者授權。 若要避免使用者看到提示，系統管理員可以指定 ClickOnce 部署原則，將特定的應用程式發行者定義為受信任的來源。 在部署此原則的電腦上，使用權限會自動授與，因此使用者就不會看到提示。
 
- 身為開發人員，您有責任確保您的應用程式能以適當的使用權限執行。 如果應用時間在執行階段要求區域外的權限，可能會發生安全性例外狀況。 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 可讓您在目標安全性區域中偵錯應用程式， 並於開發安全應用程式時提供協助。 如需詳細資訊，請參閱 [How to: Debug a ClickOnce application with restricted permissions](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md) (如何：以限制的權限對 ClickOnce 應用程式進行偵錯)。
+ 身為開發人員，您有責任確保您的應用程式能以適當的使用權限執行。 如果應用時間在執行階段要求區域外的權限，可能會發生安全性例外狀況。 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 可讓您在目標安全性區域中偵錯應用程式， 並於開發安全應用程式時提供協助。 如需詳細資訊，請參閱[如何：以受限制的權限針對 ClickOnce 應用程式進行偵錯](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)。
 
  如需關於程式碼存取安全性以及 ClickOnce 的詳細資訊，請參閱 [程式碼存取 ClickOnce 應用程式的安全性](../deployment/code-access-security-for-clickonce-applications.md)。
 
@@ -66,15 +66,15 @@ ms.locfileid: "56605311"
 
  `http://servername.adatum.com/WindowsApp1.application?username=joeuser`
 
- 查詢字串引數預設是停用狀態。 若要啟用查詢字串引數，必須在應用程式的部署資訊清單中設定 `trustUrlParameters` 屬性 (Attribute)。 這個值可以從 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 和 MageUI.exe 進行設定。 如需詳細步驟，如何啟用傳遞查詢字串，請參閱 <<c0> [ 如何： 擷取在線上 ClickOnce 應用程式中的查詢字串資訊](../deployment/how-to-retrieve-query-string-information-in-an-online-clickonce-application.md)。
+ 查詢字串引數預設是停用狀態。 若要啟用查詢字串引數，必須在應用程式的部署資訊清單中設定 `trustUrlParameters` 屬性 (Attribute)。 這個值可以從 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 和 MageUI.exe 進行設定。 如需詳細步驟，如何啟用傳遞查詢字串，請參閱[How to:在線上 ClickOnce 應用程式中擷取查詢字串資訊](../deployment/how-to-retrieve-query-string-information-in-an-online-clickonce-application.md)。
 
  請絕對不要將透過查詢字串擷取的引數傳遞給資料庫或命令列，而沒有檢查這些引數來確定其是否安全。 不安全的引數為包含資料庫或命令列逸出字元 (Escape Character) 的引數，這些引數可讓惡意使用者操縱您的應用程式來執行任意命令。
 
 > [!NOTE]
->  查詢字串引數是在啟動 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式時傳遞引數給它的唯一方法； 您不能從命令列傳遞引數給 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式。
+> 查詢字串引數是在啟動 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式時傳遞引數給它的唯一方法； 您不能從命令列傳遞引數給 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式。
 
 ## <a name="deploying-obfuscated-assemblies"></a>部署模糊化組件
- Visual Studio 包含免費[PreEmptive Protection-Dotfuscator Community Edition](../ide/dotfuscator/index.md)，可用來保護您的 ClickOnce 應用程式，透過程式碼混淆和作用中的保護措施。  如需詳細資訊，請參閱[Dotfuscator Community Edition 使用者指南的 ClickOnce 區段](https://www.preemptive.com/dotfuscator/ce/docs/help/5.27/advanced_clickonce.html)。
+ Visual Studio 包含免費的 [PreEmptive Protection-Dotfuscator Community](../ide/dotfuscator/index.md)，可用來透過程式碼混淆和作用中的保護措施，保護您的 ClickOnce 應用程式。  如需詳細資訊，請參閱 [Dotfuscator Community 使用者指南的 ClickOnce 一節](https://www.preemptive.com/dotfuscator/ce/docs/help/5.27/advanced_clickonce.html)。
 
 ## <a name="see-also"></a>另請參閱
 - [ClickOnce 安全性和部署](../deployment/clickonce-security-and-deployment.md)

@@ -1,14 +1,9 @@
 ---
 title: IDebugCustomAttribute::GetName |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugCustomAttribute::GetName
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: ba509cc5-5816-4925-a094-4c72d88c360c
 caps.latest.revision: 10
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 6a5c7b33b0bcfdc9a7211b94b40a50d111c68edd
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 4463fc4f9d321b26487e885255843a7acd945f76
+ms.sourcegitcommit: da4079f5b6ec884baf3108cbd0519d20cb64c70b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51803184"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "62569266"
 ---
 # <a name="idebugcustomattributegetname"></a>IDebugCustomAttribute::GetName
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -55,4 +50,3 @@ int GetName(
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugCustomAttribute](../../../extensibility/debugger/reference/idebugcustomattribute.md)
-

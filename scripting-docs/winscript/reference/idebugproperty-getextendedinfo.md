@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 707474f786a8f88c0e08d887f2c2b09c8aaedc8e
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58144858"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62979119"
 ---
 # <a name="idebugpropertygetextendedinfo"></a>IDebugProperty::GetExtendedInfo
 取得擴充屬性的資訊。  

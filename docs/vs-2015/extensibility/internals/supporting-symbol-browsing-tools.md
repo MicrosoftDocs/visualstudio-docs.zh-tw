@@ -1,14 +1,9 @@
 ---
 title: 支援符號瀏覽工具 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - symbols, symbol-browsing tools
 - browsers, symbol browsers
@@ -22,13 +17,13 @@ helpviewer_keywords:
 ms.assetid: 70d8c9e5-4b0b-4a69-b3b3-90f36debe880
 caps.latest.revision: 27
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 4c4cf9f711990f5b3f1f064aa6311a8b33b64fef
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 5b85e8bf500364587af4c3891d7d39f069af9953
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51757684"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441223"
 ---
 # <a name="supporting-symbol-browsing-tools"></a>支援符號瀏覽工具
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -53,10 +48,9 @@ ms.locfileid: "51757684"
  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]物件管理員呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetExpandable3%2A>方法，以判斷指定的清單項目是可展開且有子系的項目。 UI 會傳送要求以展開項目，如果物件管理員會藉由呼叫要求符號的子清單<xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetList2%2A>方法。 視所建立的樹狀結構的不同部分的程序繼續執行。  
   
 > [!NOTE]
->  若要實作的原生程式碼符號提供者，請使用<xref:Microsoft.VisualStudio.Shell.Interop.IVsLibrary2>和<xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectList2>介面。  
+> 若要實作的原生程式碼符號提供者，請使用<xref:Microsoft.VisualStudio.Shell.Interop.IVsLibrary2>和<xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectList2>介面。  
   
 ## <a name="see-also"></a>另請參閱  
- [如何： 使用物件管理員註冊程式庫](../../extensibility/internals/how-to-register-a-library-with-the-object-manager.md)   
- [如何： 公開 （expose) 的程式庫提供對物件管理員中的符號清單](../../extensibility/internals/how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager.md)   
- [如何︰識別程式庫中的符號](../../extensibility/internals/how-to-identify-symbols-in-a-library.md)
-
+ [如何：使用物件管理員註冊程式庫](../../extensibility/internals/how-to-register-a-library-with-the-object-manager.md)   
+ [如何：公開 （expose) 程式庫提供對物件管理員中的符號的清單](../../extensibility/internals/how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager.md)   
+ [如何：識別程式庫中的符號](../../extensibility/internals/how-to-identify-symbols-in-a-library.md)

@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f9d8ab4be67ffd84406869c956f9046a53d6ec79
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: facf3cbeb6635324e74244983fcb33138ad64cfe
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56611889"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62812370"
 ---
 # <a name="how-to-programmatically-open-workbooks"></a>HOW TO：以程式設計方式開啟活頁簿
   <xref:Microsoft.Office.Interop.Excel.Workbooks> Microsoft Office Excel 中的集合就可以使用 所有開啟的活頁簿，並開啟活頁簿。
@@ -27,7 +27,7 @@ ms.locfileid: "56611889"
 
 ## <a name="to-open-an-existing-workbook"></a>若要開啟現有的活頁簿
 
-1.  使用<xref:Microsoft.Office.Interop.Excel.Workbooks.Open%2A>方法的<xref:Microsoft.Office.Interop.Excel.Workbooks>集合，將路徑傳遞給活頁簿。
+1. 使用<xref:Microsoft.Office.Interop.Excel.Workbooks.Open%2A>方法的<xref:Microsoft.Office.Interop.Excel.Workbooks>集合，將路徑傳遞給活頁簿。
 
      [!code-csharp[Trin_VstcoreExcelAutomation#2](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#2)]
      [!code-vb[Trin_VstcoreExcelAutomation#2](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#2)]
@@ -35,7 +35,7 @@ ms.locfileid: "56611889"
 ## <a name="compile-the-code"></a>編譯程式碼
  這個程式碼範例需要下列項目：
 
--   名為活頁簿`YourWorkbook.xls`必須存在於名為`Test`上磁碟機 c。
+- 名為活頁簿`YourWorkbook.xls`必須存在於名為`Test`上磁碟機 c。
 
 ## <a name="see-also"></a>另請參閱
 - [使用活頁簿](../vsto/working-with-workbooks.md)

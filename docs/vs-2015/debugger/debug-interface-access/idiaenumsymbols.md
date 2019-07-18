@@ -1,14 +1,9 @@
 ---
 title: IDiaEnumSymbols |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 649f7bfd-86ac-49a5-8533-aff77e1bc62e
 caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 84cc5b9de04d101c211117e75c916f653be8f5e8
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: fae39270cfbbbb93b106de65b3b01210ffc61d29
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51727405"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440818"
 ---
 # <a name="idiaenumsymbols"></a>IDiaEnumSymbols
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -55,17 +50,17 @@ IDiaEnumSymbols : IUnknown
 ## <a name="notes-for-callers"></a>呼叫端資訊  
  取得這個介面，藉由呼叫下列方法：  
   
--   [IDiaSession::findChildren](../../debugger/debug-interface-access/idiasession-findchildren.md)  
+- [IDiaSession::findChildren](../../debugger/debug-interface-access/idiasession-findchildren.md)  
   
--   [IDiaSymbol::findChildren](../../debugger/debug-interface-access/idiasymbol-findchildren.md)  
+- [IDiaSymbol::findChildren](../../debugger/debug-interface-access/idiasymbol-findchildren.md)  
   
--   [IDiaSourceFile::get_compilands](../../debugger/debug-interface-access/idiasourcefile-get-compilands.md)  
+- [IDiaSourceFile::get_compilands](../../debugger/debug-interface-access/idiasourcefile-get-compilands.md)  
   
 ## <a name="example"></a>範例  
  此範例示範如何取得`IDiaEnumSymbols`介面，然後再使用該清單使用者定義型別 (Udt) 來列舉。  
   
 > [!NOTE]
->  `CDiaBSTR` 是一個類別，包裝`BSTR`並可自動處理具現化超出範圍時釋出的字串。  
+> `CDiaBSTR` 是一個類別，包裝`BSTR`並可自動處理具現化超出範圍時釋出的字串。  
   
 ```cpp#  
 void ShowUDTs(IDiaSymbol *pGlobals)  
@@ -94,17 +89,14 @@ void ShowUDTs(IDiaSymbol *pGlobals)
 ```  
   
 ## <a name="requirements"></a>需求  
- 標頭： Dia2.h  
+ 標頭：dia2.h  
   
  程式庫： diaguids.lib  
   
  DLL: msdia80.dll  
   
 ## <a name="see-also"></a>另請參閱  
- [介面 （偵錯介面存取 SDK）](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
- [Idiasession:: Findchildren](../../debugger/debug-interface-access/idiasession-findchildren.md)   
- [Idiasourcefile:: Get_compilands](../../debugger/debug-interface-access/idiasourcefile-get-compilands.md)   
+ [介面 (偵錯介面存取 SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
+ [IDiaSession::findChildren](../../debugger/debug-interface-access/idiasession-findchildren.md)   
+ [IDiaSourceFile::get_compilands](../../debugger/debug-interface-access/idiasourcefile-get-compilands.md)   
  [IDiaSymbol::findChildren](../../debugger/debug-interface-access/idiasymbol-findchildren.md)
-
-
-

@@ -1,14 +1,9 @@
 ---
-title: CA1018： 以 AttributeUsageAttribute 標記屬性 |Microsoft Docs
-ms.custom: ''
+title: CA1018:以 AttributeUsageAttribute 標記屬性 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1018
 - MarkAttributesWithAttributeUsage
@@ -20,14 +15,14 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 277a9ff1db0001613bbd8c389b286c130ab17748
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a8b7cea6ea74b336c862cfe44f90e3e1ec54b2c2
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49906139"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704222"
 ---
-# <a name="ca1018-mark-attributes-with-attributeusageattribute"></a>CA1018：以 AttributeUsageAttribute 標記屬性
+# <a name="ca1018-mark-attributes-with-attributeusageattribute"></a>CA1018:必須以 AttributeUsageAttribute 標記屬性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -52,18 +47,15 @@ ms.locfileid: "49906139"
  您應該修正而非訊息但不包括此規則的違規情形。 即使屬性繼承<xref:System.AttributeUsageAttribute>，此屬性應該會出現以簡化程式碼維護。
 
 ## <a name="example"></a>範例
- 下列範例會定義兩個屬性。 `BadCodeMaintainerAttribute` 不正確地省略<xref:System.AttributeUsageAttribute>陳述式，和`GoodCodeMaintainerAttribute`會正確地實作本節稍早說明的屬性。 請注意，屬性`DeveloperName`所設計規則[ca1019 必須： 定義存取子屬性引數](../code-quality/ca1019-define-accessors-for-attribute-arguments.md)，並包含為求完整性。
+ 下列範例會定義兩個屬性。 `BadCodeMaintainerAttribute` 不正確地省略<xref:System.AttributeUsageAttribute>陳述式，和`GoodCodeMaintainerAttribute`會正確地實作本節稍早說明的屬性。 請注意，屬性`DeveloperName`所設計規則[ca1019 必須：定義存取子屬性引數](../code-quality/ca1019-define-accessors-for-attribute-arguments.md)，並包含為求完整性。
 
  [!code-csharp[FxCop.Design.AttributeUsage#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.AttributeUsage/cs/FxCop.Design.AttributeUsage.cs#1)]
  [!code-vb[FxCop.Design.AttributeUsage#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Design.AttributeUsage/vb/FxCop.Design.AttributeUsage.vb#1)]
 
 ## <a name="related-rules"></a>相關的規則
- [CA1019：必須定義屬性引數的存取子](../code-quality/ca1019-define-accessors-for-attribute-arguments.md)
+ [CA1019： 必須定義存取子屬性引數](../code-quality/ca1019-define-accessors-for-attribute-arguments.md)
 
- [CA1813：避免使用非密封屬性](../code-quality/ca1813-avoid-unsealed-attributes.md)
+ [CA1813:避免使用非密封的屬性](../code-quality/ca1813-avoid-unsealed-attributes.md)
 
 ## <a name="see-also"></a>另請參閱
- [屬性](http://msdn.microsoft.com/library/ee0038ef-b247-4747-a650-3c5c5cd58d8b)
-
-
-
+ [屬性](https://msdn.microsoft.com/library/ee0038ef-b247-4747-a650-3c5c5cd58d8b)

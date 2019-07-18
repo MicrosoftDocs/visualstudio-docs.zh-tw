@@ -24,17 +24,16 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 94f0fc19c84a5e86dbfff27a88b179f6a9bfb566
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 0d24556be75547a4944ad1faca47c4545f8812ba
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54795480"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63410041"
 ---
 # <a name="task-list-environment-options-dialog-box"></a>選項對話方塊、環境、工作清單
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 此 [選項] 頁面可讓您新增、刪除和變更產生 [工作清單] 提醒的註解語彙基元。 若要顯示這些設定，請從 [工具] 功能表中選取 [選項]，並展開 [環境] 資料夾，然後選擇 [工作清單]。  
   
 ## <a name="task-list-options"></a>工作清單選項  
@@ -42,7 +41,7 @@ ms.locfileid: "54795480"
  選取時，每當從 [工作清單] 刪除使用者工作時都會顯示訊息方塊，以讓您確認刪除。 預設會選取這個選項。  
   
 > [!NOTE]
->  若要刪除工作註解，請使用連結尋找註解，然後從程式碼加以移除。  
+> 若要刪除工作註解，請使用連結尋找註解，然後從程式碼加以移除。  
   
  只顯示檔名  
  選取時，[工作清單] 的 [檔案] 資料行只會顯示要編輯的檔案名稱，而不會顯示其完整路徑。  
@@ -54,7 +53,7 @@ ms.locfileid: "54795480"
  顯示語彙基元清單，並讓您加入或移除自訂語彙基元。 註解語彙基元在 Visual C# 和 Visual C++ 中是區分大小寫的，但在 Visual Basic 中則不區分。  
   
 > [!NOTE]
->  如果您鍵入的語彙基元未與 [工作清單] 中所顯示的語彙基元完全相符，則註解工作將不會顯示在 [工作清單] 中。  
+> 如果您鍵入的語彙基元未與 [工作清單] 中所顯示的語彙基元完全相符，則註解工作將不會顯示在 [工作清單] 中。  
   
  優先權  
  設定使用所選取語彙基元的工作優先權。 以此語彙基元開頭的工作註解會在 [工作清單] 中自動獲指派指定的優先權。  
@@ -72,7 +71,7 @@ ms.locfileid: "54795480"
  按一下可使用 [名稱] 和 [優先權] 欄位中所輸入的值，來變更現有的語彙基元。  
   
 > [!NOTE]
->  您無法重新命名或刪除預設的註解語彙基元，但可以變更其優先權層級。  
+> 您無法重新命名或刪除預設的註解語彙基元，但可以變更其優先權層級。  
   
 ## <a name="see-also"></a>請參閱  
  [使用工作清單](../../ide/using-the-task-list.md)   

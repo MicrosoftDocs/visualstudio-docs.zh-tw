@@ -1,14 +1,9 @@
 ---
-title: MACHINE_INFO_FIELDS |Microsoft Docs
-ms.custom: ''
+title: MACHINE_INFO_FIELDS | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - MACHINE_INFO_FIELDS
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 2d61d206-7d40-4df1-8c88-1b3c9c78821e
 caps.latest.revision: 12
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: efedc30b1e58388438127776a69b41ebb7b480ca
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 8cce5300a795922162f2e0b979e553f4235ceacc
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51763670"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68147443"
 ---
 # <a name="machineinfofields"></a>MACHINE_INFO_FIELDS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -68,12 +63,11 @@ public enum enum_MACHINE_INFO_FIELDS { 
 ## <a name="requirements"></a>需求  
  標頭： msdbg.h  
   
- 命名空間： Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間：Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
  [列舉型別](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [MACHINE_INFO](../../../extensibility/debugger/reference/machine-info.md)   
  [GetMachineInfo](../../../extensibility/debugger/reference/idebugcoreserver2-getmachineinfo.md)
-

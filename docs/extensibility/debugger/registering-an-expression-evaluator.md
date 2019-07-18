@@ -6,21 +6,21 @@ helpviewer_keywords:
 - debugging [Debugging SDK], expression evaluation
 - expression evaluators, registering
 ms.assetid: 236be234-e05f-4ad8-9200-24ce51768ecf
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a2b30a3b1ee02a6ac64c66aa7d80a35dc45a683a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 6dff4c7d6abe9ea372657865278f27b10c661aa4
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56715306"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66316042"
 ---
 # <a name="register-an-expression-evaluator"></a>註冊運算式評估工具
 > [!IMPORTANT]
->  在 Visual Studio 2015 中，這種實作運算式評估工具已被取代。 實作 CLR 運算式評估工具的詳細資訊，請參閱[CLR 運算式評估工具](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)並[Managed 運算式評估工具範例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。
+> 在 Visual Studio 2015 中，這種實作運算式評估工具已被取代。 實作 CLR 運算式評估工具的詳細資訊，請參閱[CLR 運算式評估工具](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)並[Managed 運算式評估工具範例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。
 
  運算式評估工具 (EE) 必須將自己做為使用 Windows COM 環境和 Visual Studio 的 class factory 登錄。 EE 會設為 DLL，因此它會將其插入偵錯引擎 (DE) 位址空間或 Visual Studio 的位址空間，視實體會具現化 EE。
 
@@ -101,14 +101,14 @@ namespace EEMC
  EE DLL 實作`DllRegisterServer`向 COM 環境，以及 Visual Studio 的函式。
 
 > [!NOTE]
->  您可以在檔案中找到 MyCEE 程式碼範例登錄機碼*dllentry.cpp*，位於 EnVSDK\MyCPkgs\MyCEE 在 VSIP 安裝。
+> 您可以在檔案中找到 MyCEE 程式碼範例登錄機碼*dllentry.cpp*，位於 EnVSDK\MyCPkgs\MyCEE 在 VSIP 安裝。
 
 ### <a name="dll-server-process"></a>DLL 伺服器處理序
  當註冊 EE，DLL 伺服器：
 
-1.  其 class factory 註冊`CLSID`根據一般的 COM 慣例。
+1. 其 class factory 註冊`CLSID`根據一般的 COM 慣例。
 
-2.  呼叫 helper 函式`SetEEMetric`向 Visual Studio 下表所示的 EE 度量。 此函式`SetEEMetric`和指定，如下所示的計量是的一部分*dbgmetric.lib*程式庫。 請參閱[進行偵錯的 SDK 協助程式](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)如需詳細資訊。
+2. 呼叫 helper 函式`SetEEMetric`向 Visual Studio 下表所示的 EE 度量。 此函式`SetEEMetric`和指定，如下所示的計量是的一部分*dbgmetric.lib*程式庫。 請參閱[進行偵錯的 SDK 協助程式](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)如需詳細資訊。
 
     |度量|描述|
     |------------|-----------------|
@@ -118,12 +118,12 @@ namespace EEMC
     |`metricEngine`|`GUID`s 的偵錯引擎 (DE) 可搭配此 EE|
 
     > [!NOTE]
-    >  `metricLanguage``GUID`識別的語言名稱，但它是`guidLang`引數`SetEEMetric`選取語言。 當編譯器產生偵錯資訊檔案時，它應該寫入適當`guidLang`，讓裝置知道要使用哪一個 EE。 DE 通常會符號提供者要求此語言`GUID`，儲存在偵錯資訊檔案。
+    > `metricLanguage``GUID`識別的語言名稱，但它是`guidLang`引數`SetEEMetric`選取語言。 當編譯器產生偵錯資訊檔案時，它應該寫入適當`guidLang`，讓裝置知道要使用哪一個 EE。 DE 通常會符號提供者要求此語言`GUID`，儲存在偵錯資訊檔案。
 
-3.  藉由建立 hkey_local_machine\software\microsoft\visualstudio \ 底下的機碼會向 Visual Studio\\*X.Y*，其中*X.Y*是向 Visual Studio 的版本。
+3. 藉由建立 hkey_local_machine\software\microsoft\visualstudio \ 底下的機碼會向 Visual Studio\\*X.Y*，其中*X.Y*是向 Visual Studio 的版本。
 
 ### <a name="example"></a>範例
- 下列函式會顯示未受管理的程式碼 （c + +） EE 如何註冊，並使用 Visual Studio 自動取消登錄。
+ 下列函式會顯示如何 unmanaged 程式碼 (C++) EE 註冊，並使用 Visual Studio 自動取消登錄。
 
 ```cpp
 /*---------------------------------------------------------

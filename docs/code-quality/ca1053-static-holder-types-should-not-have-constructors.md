@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: da5edc8f31510fa01d2132735ede502ad7f6ad6a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MT
+ms.openlocfilehash: 52f04355a266f87a039b8197675c2f5377b840ee
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55922598"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63388320"
 ---
 # <a name="ca1053-static-holder-types-should-not-have-constructors"></a>CA1053:靜態預留位置類型不應該包含建構函式
 
@@ -40,7 +40,7 @@ ms.locfileid: "55922598"
  若要修正此規則的違規情形，請移除預設建構函式，或設為私用。
 
 > [!NOTE]
->  某些編譯器會自動建立的公用預設建構函式，如果類型沒有定義任何建構函式。 如果這是您的型別，則新增私用的預設建構函式，來排除此違規情形。
+> 某些編譯器會自動建立的公用預設建構函式，如果類型沒有定義任何建構函式。 如果這是您的型別，則新增私用的預設建構函式，來排除此違規情形。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
  請勿隱藏此規則的警告。 建構函式的存在會建議類型不是靜態型別。

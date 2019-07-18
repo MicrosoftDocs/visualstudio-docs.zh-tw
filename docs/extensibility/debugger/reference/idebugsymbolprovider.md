@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugSymbolProvider interface
 ms.assetid: df5f095f-1dee-46f9-84cf-92417c71d5fb
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: db4e5592fac73f629aba69fa23d1a7163c794875
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 6275cc68ac7bd9948416046f851e778ee51a83dd
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56693434"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66347474"
 ---
 # <a name="idebugsymbolprovider"></a>IDebugSymbolProvider
 這個介面會表示提供符號和類型，將其傳回做為欄位的符號提供者。

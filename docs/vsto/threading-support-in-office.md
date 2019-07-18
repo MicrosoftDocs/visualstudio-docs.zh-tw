@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 3218a12add86739c76cd50f82fdda5d845e2b069
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56620326"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62978763"
 ---
 # <a name="threading-support-in-office"></a>Office 中的執行緒支援
   本文提供 Microsoft Office 物件模型中的執行緒支援方式的相關資訊。 Office 物件模型不是安全執行緒，但是仍可以使用 Office 方案中的多個執行緒。 Office 應用程式都是元件物件模型 (COM) 伺服器。 COM 可讓用戶端在任意的執行緒上呼叫 COM 伺服器。 不是安全執行緒的 COM 伺服器，COM 會提供一個機制來序列化，以便在任何時間只能有一個邏輯執行緒會執行伺服器上的並行呼叫。 這項機制稱為單一執行緒 apartment (STA) 模型。 因為呼叫已序列化，則呼叫端可能會封鎖，有一段時間伺服器忙碌中或正在處理其他背景執行緒上的呼叫時。

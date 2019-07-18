@@ -8,16 +8,18 @@ author: gewarren
 ms.author: gewarren
 ms.workload:
 - multiple
-ms.openlocfilehash: fb052312f83ff0542d2e659646b281e27e649ac0
-ms.sourcegitcommit: b7f25ae08e45fcaa84a84276b588cf6799cc7620
+ms.openlocfilehash: d18ca688c1eac02fc2b24c3f8cb0f9551e4939ae
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "57567195"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62430291"
 ---
 # <a name="write-and-manage-code-using-visual-studio"></a>使用 Visual Studio 來撰寫和管理程式碼
 
 了解如何使用 Visual Studio 中的程式碼編輯器和其他工具來撰寫、瀏覽、管理及改善您的程式碼。
+
+<!-- markdownlint-disable MD033 -->
 
 <ul class="panelContent cardsFTitle">
     <li>

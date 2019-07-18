@@ -1,28 +1,23 @@
 ---
 title: 調整至編輯器的舊版程式碼 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - adapters
 ms.assetid: a208d38e-9bea-41c9-9fe2-38bd86a359cb
 caps.latest.revision: 26
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 660ce81898750851f3b1b3f0c89fadc262a154ba
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 0bb90723a72c10dbf6cfda5edd4aa68f71f1c6b9
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51740651"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68184911"
 ---
-# <a name="adapting-legacy-code-to-the-editor"></a>調整至編輯器的舊版程式碼
+# <a name="adapting-legacy-code-to-the-editor"></a>使舊版程式碼配合編輯器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Visual Studio 編輯器中有許多功能，您可以從現有的程式碼元件存取。 下列指示說明如何調整非 MEF 元件，例如，VSPackage，使用編輯器功能。 指示也會說明如何使用配接器在 managed 和 unmanaged 程式碼中取得編輯器的服務。  
@@ -80,9 +75,9 @@ VsLocalCreateInstance(CLSID_VsTextBuffer, NULL, CLSCTX_INPROC_SERVER, IID_IVsTex
   
 #### <a name="to-create-an-adapter-for-ivstextview"></a>若要建立用於 IVsTextView 配接器  
   
-1.  加入 Microsoft.VisualStudio.Editor.dll 的參考。 請確定`CopyLocal`設為`false`。  
+1. 加入 Microsoft.VisualStudio.Editor.dll 的參考。 請確定`CopyLocal`設為`false`。  
   
-2.  具現化<xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService>、，如下所示。  
+2. 具現化<xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService>、，如下所示。  
   
     ```  
     using Microsoft.VisualStudio.Editor;  
@@ -90,7 +85,7 @@ VsLocalCreateInstance(CLSID_VsTextBuffer, NULL, CLSCTX_INPROC_SERVER, IID_IVsTex
     IVsEditorAdaptersFactoryService adapterFactoryService = ComponentModel.GetService<IVsEditorAdaptersFactoryService>();  
     ```  
   
-3.  呼叫 `CreateX()` 方法。  
+3. 呼叫 `CreateX()` 方法。  
   
     ```  
     adapterFactoryService.CreateTextViewAdapter(textView);  
@@ -101,9 +96,9 @@ VsLocalCreateInstance(CLSID_VsTextBuffer, NULL, CLSCTX_INPROC_SERVER, IID_IVsTex
   
 #### <a name="to-get-an-ivxtextbuffer"></a>若要取得 IVxTextBuffer  
   
-1.  IVx * 介面的定義位於 VSEditor.h 檔案...Visual Studio SDK 安裝 \VisualStudioIntegration\Common\Inc\ 資料夾。  
+1. IVx * 介面的定義位於 VSEditor.h 檔案...Visual Studio SDK 安裝 \VisualStudioIntegration\Common\Inc\ 資料夾。  
   
-2.  下列程式碼會具現化的文字緩衝區使用`IVsUserData->GetData()`方法。 下列程式碼中，`pData`是一個指向`IVsUserData`物件。  
+2. 下列程式碼會具現化的文字緩衝區使用`IVsUserData->GetData()`方法。 下列程式碼中，`pData`是一個指向`IVsUserData`物件。  
   
     ```  
     #include <textmgr.h>  
@@ -130,9 +125,9 @@ VsLocalCreateInstance(CLSID_VsTextBuffer, NULL, CLSCTX_INPROC_SERVER, IID_IVsTex
   
 #### <a name="to-consume-visual-studio-editor-components-from-a-non-mef-component"></a>若要使用 Visual Studio 編輯器元件，從非 MEF 元件  
   
-1.  加入 Microsoft.VisualStudio.ComponentModelHost.dll 組件中的參考...Visual Studio 安裝 \Common7\IDE\ 資料夾。 請確定`CopyLocal`設為`false`。  
+1. 加入 Microsoft.VisualStudio.ComponentModelHost.dll 組件中的參考...Visual Studio 安裝 \Common7\IDE\ 資料夾。 請確定`CopyLocal`設為`false`。  
   
-2.  新增私用`IComponentModel`您要使用 Visual Studio 編輯器服務，如下所示的類別的成員。  
+2. 新增私用`IComponentModel`您要使用 Visual Studio 編輯器服務，如下所示的類別的成員。  
   
     ```  
     using Microsoft.VisualStudio.ComponentModelHost;  
@@ -140,17 +135,16 @@ VsLocalCreateInstance(CLSID_VsTextBuffer, NULL, CLSCTX_INPROC_SERVER, IID_IVsTex
     private IComponentModel componentModel;  
     ```  
   
-3.  具現化元件模型，您的元件的初始化方法中。  
+3. 具現化元件模型，您的元件的初始化方法中。  
   
     ```  
     componentModel =  
      (IComponentModel)Package.GetGlobalService(typeof(SComponentModel));  
     ```  
   
-4.  在此之後，您可以取得任何其中一個 Visual Studio 編輯器服務藉由呼叫`IComponentModel.GetService<T>()`您想要服務的方法。  
+4. 在此之後，您可以取得任何其中一個 Visual Studio 編輯器服務藉由呼叫`IComponentModel.GetService<T>()`您想要服務的方法。  
   
     ```  
     textBufferFactoryService =  
          componentModel.GetService<ITextBufferFactoryService>();     
     ```
-

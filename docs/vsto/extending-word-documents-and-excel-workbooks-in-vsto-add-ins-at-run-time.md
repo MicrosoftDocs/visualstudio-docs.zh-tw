@@ -1,5 +1,5 @@
 ---
-title: 擴充 Word 文件和 Excel 活頁簿，VSTO 增益集在執行階段
+title: 擴充 Word 文件在 VSTO 增益集在執行階段中的 Excel 活頁簿
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 62b952d604ce095ef24ef427c98a74e60f25ba4e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 2058029bfc188cd3284768e3d1782f7cda96c5c1
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56643817"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66402112"
 ---
 # <a name="extend-word-documents-and-excel-workbooks-in-vsto-add-ins-at-runtime"></a>擴充 Word 文件和 Excel 活頁簿，在 VSTO 增益集在執行階段
   您可以使用 VSTO 增益集，以下列方式自訂 Word 文件和 Excel 活頁簿：
@@ -39,7 +39,7 @@ ms.locfileid: "56643817"
   **適用於：** 這篇文章中的資訊適用於下列應用程式的 VSTO 增益集專案：Excel 和 Word。 如需詳細資訊，請參閱 <<c0> [ 依 Office 應用程式和專案類型提供的功能](../vsto/features-available-by-office-application-and-project-type.md)。
 
 ## <a name="generate-extended-objects-in-vsto-add-ins"></a>在 VSTO 增益集產生擴充的物件
- *「擴充物件」* (Extended Object) 是 Visual Studio Tools for Office Runtime 所提供的類型執行個體，可為原本存在於 Word 或 Excel 物件模型中的物件 (稱為 *「原生 Office 物件」*(Native Office Object)) 新增功能。 若要產生 Word 或 Excel 物件的擴充物件，請使用 `GetVstoObject` 方法。 第一次呼叫`GetVstoObject`方法指定的 Word 或 Excel 物件，它會傳回可擴充指定的物件的新物件。 每次呼叫方法並指定相同的 Word 或 Excel 物件時，都會傳回相同的擴充物件。
+ *「擴充物件」* (Extended Object) 是 Visual Studio Tools for Office Runtime 所提供的類型執行個體，可為原本存在於 Word 或 Excel 物件模型中的物件 (稱為 *「原生 Office 物件」* (Native Office Object)) 新增功能。 若要產生 Word 或 Excel 物件的擴充物件，請使用 `GetVstoObject` 方法。 第一次呼叫`GetVstoObject`方法指定的 Word 或 Excel 物件，它會傳回可擴充指定的物件的新物件。 每次呼叫方法並指定相同的 Word 或 Excel 物件時，都會傳回相同的擴充物件。
 
  擴充物件的類型具有與原生 Office 物件類型相同的名稱，但是該類型是在 <xref:Microsoft.Office.Tools.Excel> 或 <xref:Microsoft.Office.Tools.Word> 命名空間中定義的。 例如，如果您呼叫 `GetVstoObject` 方法以擴充 <xref:Microsoft.Office.Interop.Word.Document> 物件，該方法會傳回 <xref:Microsoft.Office.Tools.Word.Document> 物件。
 
@@ -54,21 +54,21 @@ ms.locfileid: "56643817"
 
 #### <a name="to-generate-a-host-item-for-a-word-document"></a>產生 Word 文件的主項目
 
--   下列程式碼範例示範如何產生現用文件的主項目。
+- 下列程式碼範例示範如何產生現用文件的主項目。
 
      [!code-vb[Trin_WordAddInDynamicControls#8](../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb#8)]
      [!code-csharp[Trin_WordAddInDynamicControls#8](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs#8)]
 
 #### <a name="to-generate-a-host-item-for-an-excel-workbook"></a>產生 Excel 活頁簿的主項目
 
--   下列程式碼範例示範如何產生現用活頁簿的主項目。
+- 下列程式碼範例示範如何產生現用活頁簿的主項目。
 
      [!code-vb[Trin_ExcelAddInDynamicControls#2](../vsto/codesnippet/VisualBasic/trin_exceladdindynamiccontrols4/ThisAddIn.vb#2)]
      [!code-csharp[Trin_ExcelAddInDynamicControls#2](../vsto/codesnippet/CSharp/trin_exceladdindynamiccontrols4/ThisAddIn.cs#2)]
 
 #### <a name="to-generate-a-host-item-for-an-excel-worksheet"></a>產生 Excel 工作表的主項目
 
--   下列程式碼範例示範如何產生專案中現用工作表的主項目。
+- 下列程式碼範例示範如何產生專案中現用工作表的主項目。
 
      [!code-vb[Trin_ExcelAddInDynamicControls#1](../vsto/codesnippet/VisualBasic/trin_exceladdindynamiccontrols4/ThisAddIn.vb#1)]
      [!code-csharp[Trin_ExcelAddInDynamicControls#1](../vsto/codesnippet/CSharp/trin_exceladdindynamiccontrols4/ThisAddIn.cs#1)]
@@ -78,18 +78,18 @@ ms.locfileid: "56643817"
 
 #### <a name="to-generate-a-host-control-for-a-listobject"></a>產生 ListObject 的主控制項
 
--   下列程式碼範例示範如何為專案之現用工作表中的第一個 <xref:Microsoft.Office.Tools.Excel.ListObject> 產生 <xref:Microsoft.Office.Interop.Excel.ListObject> 。
+- 下列程式碼範例示範如何為專案之現用工作表中的第一個 <xref:Microsoft.Office.Tools.Excel.ListObject> 產生 <xref:Microsoft.Office.Interop.Excel.ListObject> 。
 
      [!code-vb[Trin_ExcelAddInDynamicControls#3](../vsto/codesnippet/VisualBasic/trin_exceladdindynamiccontrols4/ThisAddIn.vb#3)]
      [!code-csharp[Trin_ExcelAddInDynamicControls#3](../vsto/codesnippet/CSharp/trin_exceladdindynamiccontrols4/ThisAddIn.cs#3)]
 
-###  <a name="AddControls"></a> 將 managed 的控制項加入文件和工作表
+### <a name="AddControls"></a> 將 managed 的控制項加入文件和工作表
  在您產生 <xref:Microsoft.Office.Tools.Word.Document> 或 <xref:Microsoft.Office.Tools.Excel.Worksheet>之後，即可將控制項加入這些擴充物件所代表的文件或工作表。 若要加入控制項，請使用`Controls`的屬性<xref:Microsoft.Office.Tools.Word.Document>或<xref:Microsoft.Office.Tools.Excel.Worksheet>。 如需詳細資訊，請參閱 <<c0> [ 將控制項加入 Office 文件，在執行階段](../vsto/adding-controls-to-office-documents-at-run-time.md)。
 
- 您可以加入 Windows Form 控制項或 *「主控制項」*(Host Control)。 主控制項是 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 所提供的控制項，可包裝 Word 或 Excel 主要 Interop 組件中的對應控制項。 主控制項公開的所有基礎原生 Office 物件的行為。 它也會引發事件，並可以使用 Windows Form 資料繫結模型繫結至資料。 如需詳細資訊，請參閱 <<c0> [ 主項目和裝載控制項概觀](../vsto/host-items-and-host-controls-overview.md)。
+ 您可以加入 Windows Form 控制項或 *「主控制項」* (Host Control)。 主控制項是 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 所提供的控制項，可包裝 Word 或 Excel 主要 Interop 組件中的對應控制項。 主控制項公開的所有基礎原生 Office 物件的行為。 它也會引發事件，並可以使用 Windows Form 資料繫結模型繫結至資料。 如需詳細資訊，請參閱 <<c0> [ 主項目和裝載控制項概觀](../vsto/host-items-and-host-controls-overview.md)。
 
 > [!NOTE]
->  您無法使用 VSTO 增益集將 <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> 控制項加入工作表，或者將 <xref:Microsoft.Office.Tools.Word.XMLNode> 或 <xref:Microsoft.Office.Tools.Word.XMLNodes> 控制項加入文件。 這些主控制項無法以程式設計方式加入。 如需詳細資訊，請參閱 <<c0> [ 主項目和主控制項的程式設計限制](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)。
+> 您無法使用 VSTO 增益集將 <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> 控制項加入工作表，或者將 <xref:Microsoft.Office.Tools.Word.XMLNode> 或 <xref:Microsoft.Office.Tools.Word.XMLNodes> 控制項加入文件。 這些主控制項無法以程式設計方式加入。 如需詳細資訊，請參閱 <<c0> [ 主項目和主控制項的程式設計限制](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)。
 
 ### <a name="persist-and-remove-controls"></a>保存和移除控制項
  將 Managed 控制項加入文件或工作表並在儲存與關閉文件時，將無法保存這些控制項。 所有主控制項都會被移除，只留下基礎原生 Office 物件。 例如， <xref:Microsoft.Office.Tools.Excel.ListObject> 會變成 <xref:Microsoft.Office.Interop.Excel.ListObject>。 所有 Windows Form 控制項也會被移除，但控制項的 ActiveX 包裝函式會留在文件中。 您必須在 VSTO 增益集中包含程式碼，以清除控制項，或在下次開啟文件時重新建立控制項。 如需詳細資訊，請參閱 <<c0> [ 保存動態控制項中的 Office 文件](../vsto/persisting-dynamic-controls-in-office-documents.md)。
@@ -113,7 +113,7 @@ ms.locfileid: "56643817"
  [!code-vb[Trin_WordAddInDynamicControls #13](../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb#13)]
  [!code-csharp[Trin_WordAddInDynamicControls#13](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs#13)]
 
-##  <a name="HasVstoObject"></a> 判斷是否已擴充 Office 物件
+## <a name="HasVstoObject"></a> 判斷是否已擴充 Office 物件
  若要判斷是否已為特定原生 Office 物件產生擴充物件，請使用 `HasVstoObject` 方法。 這個方法會傳回 **，則為 true**如果已產生擴充的物件。
 
  請使用 `Globals.Factory.HasVstoMethod` 方法。 傳入您要針對擴充物件測試的原生 Word 或 Excel 物件，例如 <xref:Microsoft.Office.Interop.Word.Document> 或 <xref:Microsoft.Office.Interop.Excel.Worksheet>。

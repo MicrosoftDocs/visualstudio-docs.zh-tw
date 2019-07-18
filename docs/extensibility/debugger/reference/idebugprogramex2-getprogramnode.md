@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgramEx2::Attach
 ms.assetid: 1545ffbf-1422-4b5d-9bb9-314ba8665041
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e01e73b3f68247d3193d50acb87a96074f72ce3f
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 163c5e543c031d706c0a9922a5f6cfc19e540888
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56691224"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66325163"
 ---
 # <a name="idebugprogramex2getprogramnode"></a>IDebugProgramEx2::GetProgramNode
 取得與程式相關聯的方案節點。
@@ -36,10 +39,9 @@ int GetProgramNode( 
 );
 ```
 
-#### <a name="parameters"></a>參數
- `ppProgramNode`
-
- [out]傳回[IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)物件，表示與此方案相關聯的 [程式] 節點。
+## <a name="parameters"></a>參數
+`ppProgramNode`\
+[out]傳回[IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)物件，表示與此方案相關聯的 [程式] 節點。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

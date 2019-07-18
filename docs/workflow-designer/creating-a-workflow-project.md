@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cf4013f1302ff4952fa34c689801978b9116e549
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: e19ec88a4dec7a13ecc3d77e5d4fc1f04bb114bd
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57222450"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747806"
 ---
 # <a name="workflow-project-templates"></a>工作流程專案範本
 
@@ -36,20 +36,14 @@ Visual Studio 提供四個不同的工作流程專案範本：
 
 若要存取這些範本，請先安裝**Windows Workflow Foundation** Visual Studio 的元件。 如需詳細指示，請參閱 <<c0> [ 安裝的 Windows Workflow Foundation](developing-applications-with-the-workflow-designer.md#install-windows-workflow-foundation)。
 
-1. 安裝之後**Windows Workflow Foundation**元件，開啟**新增專案**對話方塊中的選取**檔案** > **新增** > **專案**。
+1. 安裝之後**Windows Workflow Foundation**元件，選取**檔案** > **新增** > **專案**.
 
-1. 在左側窗格中，選取**Visual C#** > **工作流程**類別目錄 (或**Visual Basic** > **工作流程**如果您偏好 Visual Basic)。
+1. 搜尋並選取工作流程專案範本，比方說，則**工作流程主控台應用程式**範本。
 
-1. 在中間窗格中，選取專案範本，例如**工作流程主控台應用程式**。
-
-1. 在 **名稱**方塊中，輸入您的專案，讓您輕鬆地識別的描述性名稱。
-
-1. 在 **位置**方塊中，輸入您要儲存您的專案，或選取的目錄**瀏覽**來巡覽找到它。
-
-1. 在 **解決方案**方塊中，輸入新方案的名稱。 選取 **確定**建立應用程式。
+1. 若要建立專案，以繼續執行。
 
    > [!NOTE]
-   > 如果您想要將新的專案新增至現有的方案，在 Visual Studio 中開啟該方案，以滑鼠右鍵按一下方案中的**方案總管**，然後選取**新增** > **新增專案**以開啟**新的專案** 對話方塊。
+   > 如果您想要將新的專案新增至現有的方案，在 Visual Studio 中開啟該方案，以滑鼠右鍵按一下方案中的**方案總管**，然後選取**新增** > **新增專案**。
 
 ## <a name="workflow-console-app"></a>工作流程主控台應用程式
 
@@ -73,7 +67,7 @@ Visual Studio 提供四個不同的工作流程專案範本：
 如需如何實作自訂活動設計工具的範例，請參閱[How to:建立自訂活動設計工具](/dotnet/framework/windows-workflow-foundation/how-to-create-a-custom-activity-designer)。
 
 > [!NOTE]
-> 可用於自訂活動設計工具，自訂活動和用於預設.NET Framework 的活動。
+> 可用於自訂活動設計工具，自訂活動和用於預設.NET 活動。
 
 ## <a name="see-also"></a>另請參閱
 

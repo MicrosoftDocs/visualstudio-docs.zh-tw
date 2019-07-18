@@ -5,17 +5,20 @@ ms.topic: reference
 helpviewer_keywords:
 - IDebugProcessQueryProperties
 ms.assetid: ce29a248-81a0-42c0-99a7-1606e8c548ec
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e54c51e4012bf129e7f8a8ad44fac8dca3e888c1
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 2ddb98c2d7e63fc27ad1469dfbfc76eaaee38582
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56693668"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66353107"
 ---
 # <a name="idebugprocessqueryproperties"></a>IDebugProcessQueryProperties
 這個介面是藉由將延伸模組介面[IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)實作者。 它可讓實作者，以取得有關偵錯的處理序環境。

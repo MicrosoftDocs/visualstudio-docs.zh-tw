@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 168441c5037a7c326f0426e428fba6e58c1e5f30
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 826dbefea0a2eb7fa9758631abaf6e5da84d6862
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56617375"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443408"
 ---
 # <a name="msbuild-inline-tasks-with-roslyncodetaskfactory"></a>具有 RoslynCodeTaskFactory 的 MSBuild 內嵌工作
 類似於 [CodeTaskFactory](../msbuild/msbuild-inline-tasks.md)，RoslynCodeTaskFactory 使用跨平台 Roslyn 編譯器來產生用於作為內嵌工作的記憶體中工作組件。  RoslynCodeTaskFactory 工作以 .NET Standard 為目標，並且可以使用 .NET Framework 和 .NET Core 執行階段，以及 Linux 和 Mac OS 等其他平台。
@@ -46,26 +46,26 @@ ms.locfileid: "56617375"
 
  範例中的 `UsingTask` 項目具有三個描述工作的屬性，以及編譯工作的內嵌工作 Factory。
 
--   `TaskName` 屬性會為工作命名，在此案例中為 `DoNothing`。
+- `TaskName` 屬性會為工作命名，在此案例中為 `DoNothing`。
 
--   `TaskFactory` 屬性會為實作內嵌工作 Factory 的類別命名。
+- `TaskFactory` 屬性會為實作內嵌工作 Factory 的類別命名。
 
--   `AssemblyFile` 屬性會提供內嵌工作 Factory 的位置。 或者，您可以使用 `AssemblyName` 屬性來指定內嵌工作 Factory 類別的完整名稱，通常位於全域組件快取 (GAC) 中。
+- `AssemblyFile` 屬性會提供內嵌工作 Factory 的位置。 或者，您可以使用 `AssemblyName` 屬性來指定內嵌工作 Factory 類別的完整名稱，通常位於全域組件快取 (GAC) 中。
 
 `DoNothing` 工作的其餘項目是空的，它們的用途是用來說明內嵌工作的順序和結構。 本主題後續內容中將提供更強固的範例。
 
--   `ParameterGroup` 項目是選擇性的。 指定時，它將會宣告工作的參數。 如需輸入和輸出參數的詳細資訊，請參閱本主題稍後的[輸入和輸出參數](#input-and-output-parameters)。
+- `ParameterGroup` 項目是選擇性的。 指定時，它將會宣告工作的參數。 如需輸入和輸出參數的詳細資訊，請參閱本主題稍後的[輸入和輸出參數](#input-and-output-parameters)。
 
--   `Task` 項目會描述並包含工作原始程式碼。
+- `Task` 項目會描述並包含工作原始程式碼。
 
--   `Reference` 項目會指定您在程式碼中使用的 .NET 組件參考。 這相當於在 Visual Studio 中加入專案的參考。 `Include` 屬性會指定參考組件的路徑。
+- `Reference` 項目會指定您在程式碼中使用的 .NET 組件參考。 這相當於在 Visual Studio 中加入專案的參考。 `Include` 屬性會指定參考組件的路徑。
 
--   `Using` 項目會列出您想要存取的命名空間。 這類似於 Visual C# 中的 `Using` 陳述式。 `Namespace` 屬性會指定要包含的命名空間。
+- `Using` 項目會列出您想要存取的命名空間。 這類似於 Visual C# 中的 `Using` 陳述式。 `Namespace` 屬性會指定要包含的命名空間。
 
 `Reference` 和 `Using` 項目與語言無關。 內嵌工作可以使用任何一種受支援的 .NET CodeDom 語言來撰寫，例如：Visual Basic 或 Visual C#。
 
 > [!NOTE]
->  `Task` 項目包含的項目皆為工作 Factory (在此案例中為程式碼工作 Factory) 特定。
+> `Task` 項目包含的項目皆為工作 Factory (在此案例中為程式碼工作 Factory) 特定。
 
 ### <a name="code-element"></a>程式碼項目
 `Task` 項目內顯示的最後一個子項目是 `Code` 項目。 `Code` 項目會包含或尋找您想要編譯為工作的程式碼。 您放入 `Code` 項目的內容取決於您要撰寫工作的方式。
@@ -74,18 +74,18 @@ ms.locfileid: "56617375"
 
 `Type` 屬性會指定可在 `Code` 項目中找到的程式碼類型。
 
--   如果 `Type` 的值是 `Class`，則 `Code` 元素會包含衍生自 <xref:Microsoft.Build.Framework.ITask> 介面的類別程式碼。
+- 如果 `Type` 的值是 `Class`，則 `Code` 元素會包含衍生自 <xref:Microsoft.Build.Framework.ITask> 介面的類別程式碼。
 
--   如果 `Type` 的值是 `Method`，則程式碼會定義 <xref:Microsoft.Build.Framework.ITask> 介面之 `Execute` 方法的覆寫。
+- 如果 `Type` 的值是 `Method`，則程式碼會定義 <xref:Microsoft.Build.Framework.ITask> 介面之 `Execute` 方法的覆寫。
 
--   如果 `Type` 的值是 `Fragment`，則程式碼會定義 `Execute` 方法的內容，但不會定義簽章或 `return` 陳述式。
+- 如果 `Type` 的值是 `Fragment`，則程式碼會定義 `Execute` 方法的內容，但不會定義簽章或 `return` 陳述式。
 
 程式碼本身通常會出現在 `<![CDATA[` 標記和 `]]>` 標記之間。 因為此程式碼是在 CDATA 區段中，所以您不必擔心逸出保留的字元，如 "\<" 或 ">"。
 
 或者，您可以使用 `Code` 項目的 `Source` 屬性，來指定包含您工作程式碼的檔案位置。 原始程式檔中的程式碼必須是 `Type` 屬性所指定的類型。 如果 `Source` 屬性存在，`Type` 的預設值為 `Class`。 如果 `Source` 不存在，預設值為 `Fragment`。
 
 > [!NOTE]
->  在原始程式檔中定義工作類別時，類別名稱必須與對應的 [UsingTask](../msbuild/usingtask-element-msbuild.md) 項目的 `TaskName` 屬性相符。
+> 在原始程式檔中定義工作類別時，類別名稱必須與對應的 [UsingTask](../msbuild/usingtask-element-msbuild.md) 項目的 `TaskName` 屬性相符。
 
 ## <a name="hello-world"></a>Hello World
  以下是具有 RoslynCodeTaskFactory 的更強大內嵌工作。 HelloWorld 工作會在預設的錯誤記錄裝置上顯示 "Hello, world!"， 此裝置通常是系統主控台或 Visual Studio 的 [輸出] 視窗。 範例所包含的 `Reference` 項目僅供說明之用。
@@ -135,11 +135,11 @@ Log.LogError("Hello, world!");
 
 參數可能具備下列其中一或多個屬性：
 
--   `Required` 是選擇性屬性，預設值為 `false`。 如果是 `true`，則為必要參數，必須為它提供值，才能呼叫工作。
+- `Required` 是選擇性屬性，預設值為 `false`。 如果是 `true`，則為必要參數，必須為它提供值，才能呼叫工作。
 
--   `ParameterType` 是選擇性屬性，預設值為 `System.String`。 它可能會設定為任何完整的類型，這種類型是可使用 System.Convert.ChangeType 從字串轉換或轉換自字串的項目或值。 (換句話說，就是可傳遞到外部工作或從外部工作傳入的任何類型)。
+- `ParameterType` 是選擇性屬性，預設值為 `System.String`。 它可能會設定為任何完整的類型，這種類型是可使用 System.Convert.ChangeType 從字串轉換或轉換自字串的項目或值。 (換句話說，就是可傳遞到外部工作或從外部工作傳入的任何類型)。
 
--   `Output` 是選擇性屬性，預設值為 `false`。 如果是 `true`，則必須為參數提供值，才能從 Execute 方法傳回。
+- `Output` 是選擇性屬性，預設值為 `false`。 如果是 `true`，則必須為參數提供值，才能從 Execute 方法傳回。
 
 例如，套用至物件的
 
@@ -153,11 +153,11 @@ Log.LogError("Hello, world!");
 
 定義下列三個參數：
 
--   `Expression` 是 System.String 類型的必要輸入參數。
+- `Expression` 是 System.String 類型的必要輸入參數。
 
--   `Files` 是必要的項目清單輸入參數。
+- `Files` 是必要的項目清單輸入參數。
 
--   `Tally` 是 System.Int32 類型的輸出參數。
+- `Tally` 是 System.Int32 類型的輸出參數。
 
 如果 `Code` 項目具有 `Fragment` 或 `Method` 的 `Type` 屬性，則會自動為每個參數建立屬性。 否則，必須在工作原始程式碼中明確宣告屬性，而且屬性必須完全符合它們的參數定義。
 

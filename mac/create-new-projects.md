@@ -1,42 +1,55 @@
 ---
 title: 建立新的專案和方案
 description: 本文描述如何在 Visual Studio for Mac 中建立專案和方案
-author: conceptdev
-ms.author: crdun
-ms.date: 05/06/2018
+author: heiligerdankgesang
+ms.author: dominicn
+ms.date: 05/23/2019
 ms.assetid: 5880BB10-0A12-47E2-8A82-7A2D59C4D579
-ms.openlocfilehash: b6f355dbe10cf250ec397cb817643984b438a92e
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: dbfc0d951524bb9ffbbd4a2366679cfc6ae41925
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51294262"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67693057"
 ---
-# <a name="creating-new-projects-and-solutions"></a>建立新的專案和方案
+# <a name="creating-a-new-project"></a>建立新專案
 
-## <a name="creating-new-projects-and-solutions-from-a-template"></a>從範本建立新的專案和方案
+## <a name="opening-the-project-creation-dialog"></a>開啟專案建立對話方塊
 
-可以隨時使用預先定義的範本來建立方案。 若要以此方式建立方案，請瀏覽至 [檔案] > [新增方案] ****，選取所需的平台，然後選取所需的範本：
+有幾種方式可在 Visual Studio for Mac 中建立新的專案。 當您第一次開啟 Visual Studio for Mac 時，系統將會顯示歡迎畫面。 從這裡，您可以選擇 [新增]  ，這將會帶您前往專案建立畫面。
 
-![建立新的方案](media/projects-and-solutions-image0.png)
+> [!TIP]
+> 此外，您也可以從歡迎畫面開啟及搜尋最近的專案和解決方案。 您也可以移至功能表列並選擇 [檔案] > [最近使用的解決方案] 
 
-這會建立一個方案，視選擇的範本類型而定，其中可包含一或多個專案。
+![顯示建立新專案選項的歡迎畫面](media/first-run-project.png)
 
-透過使用內容動作或功能表列，即可巡覽 [方案總管]。
+如果 Visual Studio for Mac 已經開啟並載入解決方案，您可以移至功能表列並選擇 [檔案] > [新增解決方案]  來建立新的解決方案。 以此方式建立新的解決方案將會關閉已經載入的解決方案。
 
-若要將新的專案加入方案，請以滑鼠右鍵按一下方案名稱，然後選取 [新增] > [新增專案] 以顯示 [新增專案] 對話方塊：
+## <a name="creating-a-new-project-from-a-template"></a>從範本建立新專案
 
-![新增專案](media/projects-and-solutions-image4.png)
+[新增專案]  對話方塊預設會顯示您最近使用的範本，並依「最近用過的順序」  排序。
 
-您可以使用這個新增專案的方法來利用 Xamarin 程式碼共用功能。 在現有的方案中新增共用專案或可攜式程式庫範本，可用來包含能夠在方案的所有其他專案中使用的任何跨平台邏輯。 如需建置跨平台應用程式的詳細資訊，請參閱[相關指南](https://developer.xamarin.com/guides/cross-platform/application_fundamentals/code-sharing/)。
+如果您不想要使用最近用過的範本，您可以從對話方塊左側的類別中選擇。 每個類別都包含數個專案範本供您選擇。 按一下專案類型可讓您在畫面右側查看描述。
 
-## <a name="opening-recent-solutions"></a>開啟最近使用的方案。
+![新增專案畫面](media/project-creation-screen.png)
 
-Visual Studio 的登陸頁面會顯示您最近使用的專案清單：
+## <a name="configuring-your-new-project"></a>設定您的新專案
 
-![歡迎頁面上的最新解決方案部分](media/create-new-projects-recent.png)
+在您選擇專案範本之後，後續畫面將會引導您完成設定該專案所需的任何設定步驟；這些步驟可能會因專案類型而有所不同。
 
-您可以使用 [篩選] 方塊篩選這份清單，或從清單中移除個別項目。
+所有專案都需要新的專案，以及儲存檔案的位置。 如果該專案是新解決方案的一部分，而不是要將它加入至現有的解決方案，則也會需要提供解決方案名稱。
+
+在此階段您也可以選擇設定 Git 原始檔控制選項。 下圖是某個 .NET Core 專案最終設定步驟的範例：
+
+![設定新專案](media/configure-new-project.png)
+
+## <a name="adding-additional-projects-to-a-solution"></a>將其他專案新增至解決方案
+
+您可以滑鼠右鍵按一下 Solution Pad 中的解決方案，並選擇 [新增] > [加入新的專案]  或 [新增] > [加入現有專案]  來加入其他專案。
+
+加入新專案將會引導您完成專案建立程序，如[設定您的新專案](#configuring-your-new-project)中所示。
+
+選擇加入現有專案將可讓您瀏覽電腦上的現有專案，並將它加入至解決方案。
 
 ## <a name="see-also"></a>另請參閱
 

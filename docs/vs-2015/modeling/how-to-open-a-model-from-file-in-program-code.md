@@ -1,25 +1,22 @@
 ---
-title: 如何： 從程式碼中的檔案中開啟模型 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：從程式碼中的檔案中開啟模型 |Microsoft Docs
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: d7d68697-5418-4263-bdb2-48401924ea71
 caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 5c084e756492a03abc86f7281728222632e12ec1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: c788a9ae126530484efc5f693505fc34c2793768
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49940862"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824228"
 ---
-# <a name="how-to-open-a-model-from-file-in-program-code"></a>如何：在程式碼中開啟檔案的模型
+# <a name="how-to-open-a-model-from-file-in-program-code"></a>HOW TO：在程式碼中開啟檔案的模型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 您可以在任何應用程式中開啟 DSL 模型。  
@@ -31,34 +28,34 @@ ms.locfileid: "49940862"
   
 #### <a name="to-set-the-target-framework"></a>若要設定的目標 framework  
   
-1.  開啟[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]應用程式，您要讀取的 DSL 模型專案。  
+1. 開啟[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]應用程式，您要讀取的 DSL 模型專案。  
   
-2.  在 **方案總管**，以滑鼠右鍵按一下專案，然後按一下**屬性**。  
+2. 在 **方案總管**，以滑鼠右鍵按一下專案，然後按一下**屬性**。  
   
-3.  在 [專案屬性] 視窗中，在**應用程式**索引標籤上，設定**目標 framework**欄位 **.NET Framework 4**。  
+3. 在 [專案屬性] 視窗中，在**應用程式**索引標籤上，設定**目標 framework**欄位 **.NET Framework 4**。  
   
 > [!NOTE]
->  您可能需要這樣做，即使您選取 **.NET Framework 4**專案的 [建立] 對話方塊中。 目標 framework 不應 **.NET Framework 4 Client Profile**。  
+> 您可能需要這樣做，即使您選取 **.NET Framework 4**專案的 [建立] 對話方塊中。 目標 framework 不應 **.NET Framework 4 Client Profile**。  
   
 ## <a name="references"></a>參考  
  您必須將這些參考您[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]應用程式專案：  
   
--   `Microsoft.VisualStudio.Modeling.Sdk.11.0`  
+- `Microsoft.VisualStudio.Modeling.Sdk.11.0`  
   
-    -   如果您沒有看到下 **.NET**索引標籤中**的 加入參考** 對話方塊中，按一下 **瀏覽**索引標籤，然後瀏覽至`%Program Files%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Common\Assemblies\`。  
+  - 如果您沒有看到下 **.NET**索引標籤中**的 加入參考** 對話方塊中，按一下 **瀏覽**索引標籤，然後瀏覽至`%Program Files%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Common\Assemblies\`。  
   
--   您 DSL 的組件，您會在 [bin] 資料夾下找到您的 DSL 專案。 格式通常是它的名稱： *YourCompany*。*YourProject*`.Dsl.dll`。  
+- 您 DSL 的組件，您會在 [bin] 資料夾下找到您的 DSL 專案。 其名稱通常屬於表單：*YourCompany*。*YourProject*`.Dsl.dll`。  
   
 ## <a name="important-classes-in-the-dsl"></a>在 DSL 中的重要類別  
  您可以撰寫會讀取您的 DSL 程式碼之前，您應該知道部分 DSL 產生之類別的名稱。 在 DSL 方案中，開啟**Dsl**專案，並查看**GeneratedCode**資料夾。 或者，按兩下 在您的專案中的 DSL 組件**參考**，然後開啟中的 DSL 命名空間**物件瀏覽器**。  
   
  以下是您應該識別的類別：  
   
--   *YourDslRootClass* -這是中的根類別名稱您`DslDefinition.dsl`。  
+- *YourDslRootClass* -這是中的根類別名稱您`DslDefinition.dsl`。  
   
--   *YourDslName* `SerializationHelper` -此類別定義於`SerializationHelper.cs`DSL 專案中。  
+- *YourDslName* `SerializationHelper` -此類別定義於`SerializationHelper.cs`DSL 專案中。  
   
--   *YourDslName* `DomainModel` -此類別定義於`DomainModel.cs`DSL 專案中。  
+- *YourDslName* `DomainModel` -此類別定義於`DomainModel.cs`DSL 專案中。  
   
 ## <a name="reading-from-a-file"></a>從檔案讀取  
  下列範例被設計來讀取的 DSL 中的重要類別，如下所示：  
@@ -141,6 +138,3 @@ try
 catch (System.IO.IOException ex)  
 { ... }  
 ```
-
-
-

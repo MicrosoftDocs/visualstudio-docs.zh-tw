@@ -6,17 +6,17 @@ helpviewer_keywords:
 - registration, source control packages
 - source control packages, registration
 ms.assetid: 7d21fe48-489a-4f55-acb5-73da64c4e155
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 98f246f68b4f22dfeb4ba1899edd79495aff37fe
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: f9bb993f6acaa7cd1cf3980e128e869a643d028c
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58146730"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66310917"
 ---
 # <a name="registration-and-selection-source-control-vspackage"></a>註冊和選取 (原始檔控制 VSPackage)
 原始檔控制 VSPackage 必須註冊要公開至[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。 如果多個原始檔控制 VSPackage 註冊，使用者可以選取要在適當的時間載入的 VSPackage。 請參閱[Vspackage](../../extensibility/internals/vspackages.md)如需詳細資訊的 Vspackage，以及如何加以註冊。

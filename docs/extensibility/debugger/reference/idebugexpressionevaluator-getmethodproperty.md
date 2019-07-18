@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugExpressionEvaluator::GetMethodProperty method
 ms.assetid: c394fe4d-eeb6-4feb-828c-098d84a6f1ba
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fd13939a4c469c41d1d0726bb60aa443ab8fb9e6
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 0d965161f6f0a6aadd8aab89a3001e56c2e807fa
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56678485"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66325699"
 ---
 # <a name="idebugexpressionevaluatorgetmethodproperty"></a>IDebugExpressionEvaluator::GetMethodProperty
 這個方法會取得屬性的物件，其中包含 區域變數、 引數和 其他屬性的方法。
@@ -44,26 +47,21 @@ int GetMethodProperty(
 );
 ```
 
-#### <a name="parameters"></a>參數
- `pSymbolProvider`
+## <a name="parameters"></a>參數
+`pSymbolProvider`\
+[in]符號提供者使用，以表示[IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)物件。
 
- [in]符號提供者使用，以表示[IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)物件。
+`pAddress`\
+[in]在程式碼，以表示中的地址[IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)物件應該是解析成最接近包含函式。
 
- `pAddress`
+`pBinder`\
+[in]要使用的繫結器表示為[IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)物件。
 
- [in]在程式碼，以表示中的地址[IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)物件應該是解析成最接近包含函式。
+`fIncludeHiddenLocals`\
+[in]非零值 (`TRUE`) 表示要包含隱藏的區域變數; 零 (`FALSE`) 表示保留隱藏 [區域變數]
 
- `pBinder`
-
- [in]要使用的繫結器表示為[IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)物件。
-
- `fIncludeHiddenLocals`
-
- [in]非零值 (`TRUE`) 表示要包含隱藏的區域變數; 零 (`FALSE`) 表示保留隱藏 [區域變數]
-
- `ppProperty`
-
- [out]傳回[IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)物件，表示的方法。
+`ppProperty`\
+[out]傳回[IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)物件，表示的方法。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

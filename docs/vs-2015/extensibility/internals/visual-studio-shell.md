@@ -1,27 +1,22 @@
 ---
 title: Visual Studio Shell |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - shell, Visual Studio
 - Visual Studio, shell
 ms.assetid: cb124ef4-1a6b-4bfe-bfbf-295ef9c07f36
 caps.latest.revision: 15
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 7ebe79d8ee93206e8d7950112386793a65812d38
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 2ec79aab58e167ff2c935317897ba10a042a2e5a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51748910"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68180360"
 ---
 # <a name="visual-studio-shell"></a>Visual Studio Shell
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -41,21 +36,21 @@ ms.locfileid: "51748910"
   
 - 管理特定的共用服務，例如<xref:Microsoft.VisualStudio.Shell.Interop.SVsShell>，它提供了基本的殼層功能和<xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell>，提供基本視窗化功能。  
   
-- 管理方案 (.sln) 檔案。 解決方案包含群組的相關專案，類似於在 Visual c + + 6.0 的工作區 (.dsw) 檔案。  
+- 管理方案 (.sln) 檔案。 解決方案包含相關的專案，類似於 視覺效果中的工作區 (.dsw) 檔案群組C++6.0。  
   
 - 追蹤整個殼層的選取項目、 內容和貨幣。 殼層會追蹤下列項目類型：  
   
-  -   目前的專案  
+  - 目前的專案  
   
-  -   目前的專案項目或項目目前的識別碼。 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>  
+  - 目前的專案項目或項目目前的識別碼。 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>  
   
-  -   目前的選取範圍，如**屬性**視窗或 `SelectionContainer`  
+  - 目前的選取範圍，如**屬性**視窗或 `SelectionContainer`  
   
-  -   Id 或控制的可見性命令、 功能表和工具列的 CmdUIGuids UI 內容  
+  - Id 或控制的可見性命令、 功能表和工具列的 CmdUIGuids UI 內容  
   
-  -   目前使用中的項目，例如使用中視窗、 文件，並復原管理員  
+  - 目前使用中的項目，例如使用中視窗、 文件，並復原管理員  
   
-  -   使用者內容屬性動態說明該磁碟機  
+  - 使用者內容屬性動態說明該磁碟機  
   
   殼層也會調解在已安裝的 Vspackage 和目前的服務間的通訊。 它支援的殼層的核心功能，並使其可供所有的 vspackage 中整合[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]。 這些核心功能包括下列項目：  
   
@@ -91,4 +86,3 @@ ms.locfileid: "51748910"
  <xref:Microsoft.VisualStudio.Shell.Interop.SVsShell>   
  <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell>   
  [VSPackage](../../extensibility/internals/vspackages.md)
-

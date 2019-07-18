@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugBinder::Bind method
 ms.assetid: 15a11ad7-0fcc-4e80-ae34-8a7dd7bae3c3
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bcb3535a2ace5818664a34a5d7b818d7dfd8b025
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 00d7e63b8a521ee25d2c7d378aeb82d064358ec9
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56704939"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66344498"
 ---
 # <a name="idebugbinderbind"></a>IDebugBinder::Bind
 這個方法會取得的記憶體內容或包含符號的目前值的物件。
@@ -40,18 +43,15 @@ int Bind(
 );
 ```
 
-#### <a name="parameters"></a>參數
- `pContainer`
+## <a name="parameters"></a>參數
+`pContainer`\
+[in][IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)包含所參考的子系`pField`。
 
- [in][IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)包含所參考的子系`pField`。
+`pField`\
+[in][IDebugField](../../../extensibility/debugger/reference/idebugfield.md)表示符號。
 
- `pField`
-
- [in][IDebugField](../../../extensibility/debugger/reference/idebugfield.md)表示符號。
-
- `ppObject`
-
- [out]傳回`IDebugObject`表示符號的執行個體。
+`ppObject`\
+[out]傳回`IDebugObject`表示符號的執行個體。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

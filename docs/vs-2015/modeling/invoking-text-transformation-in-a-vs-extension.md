@@ -1,28 +1,25 @@
 ---
 title: 叫用 VS 擴充功能中的文字轉換 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: 64674976-841f-43cb-8e61-0645c8a89eec
 caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 0751229e778e13375698f591d789edfd318b3ffc
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: bcd32aef240732b67a2c490e3738c9b3d2921ffc
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49298619"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65698046"
 ---
 # <a name="invoking-text-transformation-in-a-vs-extension"></a>叫用 VS 擴充功能中的文字轉換
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-如果您正在撰寫[Visual Studio 擴充功能](http://msdn.microsoft.com/library/5b1b5db3-6005-44cf-83b0-e608d7764d14)例如功能表命令或[定義域專屬語言](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)，您可以使用文字範本化服務來轉換文字範本。 取得 <xref:Microsoft.VisualStudio.TextTemplating.VSHost.STextTemplating> 服務並將它轉換成  <xref:Microsoft.VisualStudio.TextTemplating.VSHost.ITextTemplating>。  
+如果您正在撰寫[Visual Studio 擴充功能](https://msdn.microsoft.com/library/5b1b5db3-6005-44cf-83b0-e608d7764d14)例如功能表命令或[定義域專屬語言](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)，您可以使用文字範本化服務來轉換文字範本。 取得 <xref:Microsoft.VisualStudio.TextTemplating.VSHost.STextTemplating> 服務並將它轉換成  <xref:Microsoft.VisualStudio.TextTemplating.VSHost.ITextTemplating>。  
   
 ## <a name="getting-the-text-templating-service"></a>取得文字範本化服務  
   
@@ -150,7 +147,4 @@ Sample text.
  定義自訂主應用程式。 如需詳細資訊，請參閱 <<c0> [ 藉由使用自訂主機處理文字範本](../modeling/processing-text-templates-by-using-a-custom-host.md)。  
   
  若要產生可在之後編譯及執行的原始程式碼：  
- 呼叫 `t4.PreprocessTemplate()` 的 <xref:Microsoft.VisualStudio.TextTemplating.VSHost.ITextTemplating> 方法。
-
-
-
+ 呼叫 `t4.PreprocessTemplate()` 的 <xref:Microsoft.VisualStudio.TextTemplating.VSHost.ITextTemplating>方法。

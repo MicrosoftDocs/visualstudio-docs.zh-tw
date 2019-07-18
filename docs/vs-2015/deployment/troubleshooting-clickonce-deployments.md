@@ -1,14 +1,9 @@
 ---
 title: 疑難排解 ClickOnce 部署 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: troubleshooting
 dev_langs:
 - VB
 - CSharp
@@ -23,13 +18,13 @@ ms.assetid: 58e90012-f68b-4852-8ae9-58e361cbcc32
 caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 20a162a8280854954a58fb0447957a3894325cea
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 26bf92a2401b0355ed149e6b9de20614969812e2
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49284748"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62422857"
 ---
 # <a name="troubleshooting-clickonce-deployments"></a>疑難排解 ClickOnce 部署
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,6 +54,3 @@ ms.locfileid: "49284748"
 ## <a name="see-also"></a>另請參閱  
  [ClickOnce 部署資訊清單](../deployment/clickonce-deployment-manifest.md)   
  [ndptecclick](../deployment/clickonce-application-manifest.md)
-
-
-

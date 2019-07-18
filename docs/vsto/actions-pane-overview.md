@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7f6ca07ebf8489dd62d6cfbe232f2522ac0f448a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 7c088078ce594ab1333eb4ec2316e120cc153ced
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56608808"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440390"
 ---
 # <a name="actions-pane-overview"></a>執行窗格概觀
   執行窗格是可自訂**文件動作**附加至特定的 Microsoft Office Word 文件或 Microsoft Office Excel 活頁簿的工作窗格。 動作 窗格位於 Office 工作窗格，以及其他內建的工作 窗格中，這類**XML 來源**在 Excel 中的工作窗格或**樣式與格式**在 Word 中的工作窗格。 您可以使用 Windows Form 控制項或 WPF 控制項，設計執行窗格使用者介面。
@@ -30,7 +30,7 @@ ms.locfileid: "56608808"
  您可以只為 Word 或 Excel 建立文件層級自訂的執行窗格。 您無法在 VSTO 增益集中建立執行窗格。 如需詳細資訊，請參閱 <<c0> [ 依 Office 應用程式和專案類型提供的功能](../vsto/features-available-by-office-application-and-project-type.md)。
 
 > [!NOTE]
->  執行窗格與自訂工作窗格不同。 自訂工作窗格是與應用程式相關聯，而非特定的文件。 您可以為某些 Microsoft Office 應用程式，在 VSTO 增益集中建立自訂工作窗格。 如需詳細資訊，請參閱 <<c0> [ 自訂工作窗格](../vsto/custom-task-panes.md)。
+> 執行窗格與自訂工作窗格不同。 自訂工作窗格是與應用程式相關聯，而非特定的文件。 您可以為某些 Microsoft Office 應用程式，在 VSTO 增益集中建立自訂工作窗格。 如需詳細資訊，請參閱 <<c0> [ 自訂工作窗格](../vsto/custom-task-panes.md)。
 
  ![影片連結](../vsto/media/playvideo.gif "影片連結")如需相關的影片示範，請參閱[How do i:使用 Excel 執行窗格內的 WPF 控制項？](http://go.microsoft.com/fwlink/?LinkId=132763).
 
@@ -50,7 +50,7 @@ ms.locfileid: "56608808"
 2. 使用設計工具或撰寫程式碼，將 Windows Form 控制項加入 <xref:System.Windows.Forms.UserControl>。
 
    > [!NOTE]
-   >  您也可以藉由將 WPF <xref:System.Windows.Controls.UserControl> 加入 Windows Form <xref:System.Windows.Forms.UserControl>，在執行窗格中加入 WPF 控制項。 如需詳細資訊，請參閱 <<c0> [ 使用 WPF 控制項在 Office 方案中](../vsto/using-wpf-controls-in-office-solutions.md)。
+   > 您也可以藉由將 WPF <xref:System.Windows.Controls.UserControl> 加入 Windows Form <xref:System.Windows.Forms.UserControl>，在執行窗格中加入 WPF 控制項。 如需詳細資訊，請參閱 <<c0> [ 使用 WPF 控制項在 Office 方案中](../vsto/using-wpf-controls-in-office-solutions.md)。
 
 3. 在專案的 `ThisWorkbook` (Excel) 或 `ThisDocument` (Word) 類別 `ActionsPane` 欄位所包含的控制項中，加入自訂使用者控制項的執行個體。
 
@@ -61,17 +61,17 @@ ms.locfileid: "56608808"
 
  若要隱藏解決方案中的工作窗格，您有數個選項：
 
--   對於 Word，設定<xref:Microsoft.Office.Interop.Word.TaskPane.Visible%2A>的屬性<xref:Microsoft.Office.Interop.Word.TaskPane>物件，表示文件動作 工作窗格，來**false**。 下列程式碼範例宜從專案的 `ThisDocument` 類別執行。
+- 對於 Word，設定<xref:Microsoft.Office.Interop.Word.TaskPane.Visible%2A>的屬性<xref:Microsoft.Office.Interop.Word.TaskPane>物件，表示文件動作 工作窗格，來**false**。 下列程式碼範例宜從專案的 `ThisDocument` 類別執行。
 
      [!code-csharp[Trin_VstcoreActionsPaneWord#34](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#34)]
      [!code-vb[Trin_VstcoreActionsPaneWord#34](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#34)]
 
--   對於 Excel，請設定<xref:Microsoft.Office.Interop.Excel._Application.DisplayDocumentActionTaskPane%2A>的屬性<xref:Microsoft.Office.Tools.Excel.Workbook.Application%2A>物件**false**。 下列程式碼範例宜從專案的 `ThisWorkbook` 類別執行。
+- 對於 Excel，請設定<xref:Microsoft.Office.Interop.Excel._Application.DisplayDocumentActionTaskPane%2A>的屬性<xref:Microsoft.Office.Tools.Excel.Workbook.Application%2A>物件**false**。 下列程式碼範例宜從專案的 `ThisWorkbook` 類別執行。
 
      [!code-csharp[Trin_VstcoreActionsPaneExcel#11](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneExcelCS/ThisWorkbook.cs#11)]
      [!code-vb[Trin_VstcoreActionsPaneExcel#11](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneExcelVB/ThisWorkbook.vb#11)]
 
--   對於 Word 或 Excel，您可以另外設定<xref:Microsoft.Office.Core.CommandBar.Visible%2A>代表工作窗格的命令列屬性**false**。 下列程式碼範例宜從專案的 `ThisDocument` 或 `ThisWorkbook` 類別執行。
+- 對於 Word 或 Excel，您可以另外設定<xref:Microsoft.Office.Core.CommandBar.Visible%2A>代表工作窗格的命令列屬性**false**。 下列程式碼範例宜從專案的 `ThisDocument` 或 `ThisWorkbook` 類別執行。
 
      [!code-csharp[Trin_VstcoreActionsPaneExcel#9](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneExcelCS/ThisWorkbook.cs#9)]
      [!code-vb[Trin_VstcoreActionsPaneExcel#9](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneExcelVB/ThisWorkbook.vb#9)]
@@ -80,15 +80,15 @@ ms.locfileid: "56608808"
  當使用者儲存文件，[動作] 窗格可見時，[動作] 窗格會顯示每次開啟文件時，不論 [動作] 窗格包含任何控制項。 如果想要控制其出現時機，請呼叫 `ThisDocument` 或 `ThisWorkbook` 的 `Startup` 事件處理常式中 `ActionsPane` 欄位的 <xref:Microsoft.Office.Tools.ActionsPane.Clear%2A> 方法，以確保文件開啟時不顯示執行窗格。
 
 ### <a name="determine-when-the-actions-pane-is-closed"></a>判斷當關閉 [動作] 窗格
- 執行窗格關閉時未引發任何事件。 雖然 <xref:Microsoft.Office.Tools.ActionsPane> 類別具有 <xref:Microsoft.Office.Tools.ActionsPane.VisibleChanged> 事件，但當終端使用者關閉執行窗格時並未引發這個事件。 藉由呼叫隱藏 [動作] 窗格上的控制項時，相反地，引發這個事件<xref:Microsoft.Office.Tools.ActionsPane.Hide%2A>方法或藉由設定<xref:Microsoft.Office.Tools.ActionsPane.Visible%2A>屬性設**false**。
+ 執行窗格關閉時未引發任何事件。 雖然 <xref:Microsoft.Office.Tools.ActionsPane> 類別具有 <xref:Microsoft.Office.Tools.ActionsPane.VisibleChanged> 事件，但當使用者關閉執行窗格時並未引發這個事件。 藉由呼叫隱藏 [動作] 窗格上的控制項時，相反地，引發這個事件<xref:Microsoft.Office.Tools.ActionsPane.Hide%2A>方法或藉由設定<xref:Microsoft.Office.Tools.ActionsPane.Visible%2A>屬性設**false**。
 
  當使用者關閉動作 窗格中時，使用者可以重新顯示藉由執行下列程序的其中一個應用程式的使用者介面 (UI) 中。
 
 ##### <a name="to-display-the-actions-pane-by-using-the-ui-of-word-or-excel"></a>使用 Word 或 Excel 的 UI 顯示執行窗格
 
-1.  在功能區中，按一下**檢視** 索引標籤。
+1. 在功能區中，按一下**檢視** 索引標籤。
 
-2.  在 **顯示/隱藏**群組中，按一下**文件動作**切換按鈕。
+2. 在 **顯示/隱藏**群組中，按一下**文件動作**切換按鈕。
 
 ## <a name="program-actions-pane-events"></a>程式執行窗格事件
  您可以將多個使用者控制項加入執行窗格，然後撰寫程式碼顯示和隱藏使用者控制項，來回應文件上的事件。 如果您將 XML 結構描述元素對應至文件，每當插入點位於其中一個 XML 元素內時，即可在執行窗格中顯示特定的使用者控制項。 如需詳細資訊，請參閱[如何：將結構描述對應至 Word 文件，在 Visual Studio 內](../vsto/how-to-map-schemas-to-word-documents-inside-visual-studio.md)和[How to:將結構描述對應至 Visual Studio 內的工作表](../vsto/how-to-map-schemas-to-worksheets-inside-visual-studio.md)。
@@ -114,7 +114,7 @@ ms.locfileid: "56608808"
 |FromLeft|從執行窗格左邊堆疊。|
 |FromRight|從執行窗格右邊堆疊。|
 |FromTop|從執行窗格頂端堆疊。|
-|無|未定義堆疊順序，順序由開發人員控制。|
+|None|未定義堆疊順序，順序由開發人員控制。|
 
  下列程式碼設定 <xref:Microsoft.Office.Tools.ActionsPane.StackOrder%2A> 屬性從執行窗格頂端開始堆疊使用者控制項。
 
@@ -141,7 +141,7 @@ ms.locfileid: "56608808"
  [!code-vb[Trin_VstcoreActionsPaneWord#100](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#100)]
 
 > [!NOTE]
->  終端使用者可以隨時手動重新置放工作窗格。 沒有任何方式可以確保工作窗格會一直停駐在您以程式設計方式指定的位置上。 不過，您可以檢查方向的變更，確保執行窗格上的控制項依正確的方向堆疊。 如需詳細資訊，請參閱[如何：管理執行窗格控制項配置](../vsto/how-to-manage-control-layout-on-actions-panes.md)。
+> 使用者可以隨時手動重新置放工作窗格。 沒有任何方式可以確保工作窗格會一直停駐在您以程式設計方式指定的位置上。 不過，您可以檢查方向的變更，確保執行窗格上的控制項依正確的方向堆疊。 如需詳細資訊，請參閱[如何：管理執行窗格控制項配置](../vsto/how-to-manage-control-layout-on-actions-panes.md)。
 
  設定<xref:Microsoft.Office.Tools.ActionsPane.Top%2A>並<xref:Microsoft.Office.Tools.ActionsPane.Left%2A>的屬性<xref:Microsoft.Office.Tools.ActionsPane>不會變更其位置，因為<xref:Microsoft.Office.Tools.ActionsPane>物件內嵌在工作窗格。
 

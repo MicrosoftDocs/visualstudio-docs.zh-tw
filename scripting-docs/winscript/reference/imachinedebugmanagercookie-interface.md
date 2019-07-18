@@ -14,11 +14,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: fdc02498360f2e3900012166474c5d1e35abd6ee
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58151046"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62977678"
 ---
 # <a name="imachinedebugmanagercookie-interface"></a>IMachineDebugManagerCookie 介面
 類似於`IMachineDebugManager`介面，`IMachineDebugManagerCookie`介面支援偵錯 cookie。  

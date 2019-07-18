@@ -6,13 +6,12 @@ manager: evelynp
 ms.date: 12/29/2017
 ms.topic: conceptual
 description: 了解如何尋找我的「公開客戶號碼」(PCN) 或「授權編號」
-searchscope: VS Subscription
-ms.openlocfilehash: b24654828cb0e44d6e064c01825feaaaff4558b0
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: ed9604d31a52aab8fa52a48ec627fc7ae7ec3288
+ms.sourcegitcommit: f369ff7e84b0216f01570a486c7be80ca6d0e61a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56844343"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68250684"
 ---
 # <a name="how-do-i-locate-my-public-customer-number-pcn-or-authorization-number"></a>如何尋找我的「公開客戶號碼」(PCN) 或「授權編號」？
 
@@ -22,7 +21,7 @@ ms.locfileid: "56844343"
 
 大量授權服務中心不再提供您 PCN 的存取權。  若要獲得該存取權，請連絡 Visual Studio 訂閱支援。
 1. 瀏覽 https://visualstudio.microsoft.com/subscriptions/support/#talktous
-2. 點選 [帳戶、訂閱及計費支援] 按鈕。
+2. 點選 [帳戶、訂閱及計費支援]  按鈕。
     > [!div class="mx-imgBorder"]
     > ![選擇訂閱支援](_img/vlsc/vlsc-pcn.png)
 3. 從下拉式清單中選擇您的國家/地區。

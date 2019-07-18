@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugExpressionEvaluationCompleteEvent2
 ms.assetid: d538fc19-55bf-4231-9595-eb01e84fd1d8
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8b5b58a5be5321c2f867daa5b46a7671dbae5d8e
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 5af187e04096fdd16dc5a371f49953fae2e61621
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56700571"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66325722"
 ---
 # <a name="idebugexpressionevaluationcompleteevent2"></a>IDebugExpressionEvaluationCompleteEvent2
 這個介面會傳送偵錯引擎 (DE) 工作階段的偵錯管理員 (SDM) 非同步運算式評估完成時。

@@ -14,15 +14,15 @@ helpviewer_keywords:
 - MSBuild (Visual C++), MultiToolTask task
 - MultiToolTask task (MSBuild (Visual C++))
 author: mikeblome
-ms.author: Michael.Blome
+ms.author: mblome
 ms.workload:
 - multiple
-ms.openlocfilehash: bd0c5510c754043a0a55b305c671ce9487cabb49
-ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
+ms.openlocfilehash: a16a61c06bf80bef3fbb78f155cd8b41905a8d72
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "58070388"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62963906"
 ---
 # <a name="multitooltask-task"></a>MultiToolTask 工作
 

@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugObject::IsEqual method
 ms.assetid: 4b76e663-ef2e-41ff-9be1-bf26d666a34a
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 49d909dc0896bcc1b130ce908699c04ad9543c73
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: cf592fa83a18c47bf676b84073c0be0e4cb476e8
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56691107"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66323577"
 ---
 # <a name="idebugobjectisequal"></a>IDebugObject::IsEqual
 比較物件與這個物件。
@@ -38,14 +41,12 @@ int IsEqual(
 );
 ```
 
-#### <a name="parameters"></a>參數
- `pObject`
+## <a name="parameters"></a>參數
+`pObject`\
+[in][IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)物件，表示要比較的物件。
 
- [in][IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)物件，表示要比較的物件。
-
- `pfIsEqual`
-
- [out]會傳回非零 (`TRUE`) 如果物件的值相等，否則會傳回零 (`FALSE`)。
+`pfIsEqual`\
+[out]會傳回非零 (`TRUE`) 如果物件的值相等，否則會傳回零 (`FALSE`)。
 
 ## <a name="return-value"></a>傳回值
  如果成功，會傳回 S_OK;否則，傳回錯誤碼。

@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugThread2::CanSetNextStatement
 ms.assetid: 7014af80-ff4f-4790-a34b-0528918d1fa3
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 43ec2c5d157832834f76834f7b93e193629b66d8
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 111ace07edf163fa978a3c54628878af51cb7d02
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56703041"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66320288"
 ---
 # <a name="idebugthread2cansetnextstatement"></a>IDebugThread2::CanSetNextStatement
 判斷目前指令指標是否可以設定特定的堆疊框架。
@@ -38,12 +41,12 @@ int CanSetNextStatement ( 
 );
 ```
 
-#### <a name="parameters"></a>參數
- `pStackFrame` 保留供未來使用;設定為 null 的值。 如果這是 null 值時，使用目前的堆疊框架。
+## <a name="parameters"></a>參數
+`pStackFrame`\
+保留供未來使用;設定為 null 的值。 如果這是 null 值時，使用目前的堆疊框架。
 
- `pCodeContext`
-
- [in][IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)描述將要執行的程式碼位置的物件和其內容。
+`pCodeContext`\
+[in][IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)描述將要執行的程式碼位置的物件和其內容。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

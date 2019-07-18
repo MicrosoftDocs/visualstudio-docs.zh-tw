@@ -7,12 +7,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 03353225507dca8700daa71b5dd0331c782e78ae
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: cf1c226fceff6ea17a7f83d750a93d6406a31c7d
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57984036"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263716"
 ---
 # <a name="update-an-existing-application-for-msbuild-15"></a>MSBuild 15 的現有應用程式更新
 
@@ -49,7 +49,7 @@ MSBuild 套件的主要和次要版本，必須小於或等於您要支援的 Vi
 ```xml
 <ItemGroup>
   <PackageReference Include="Microsoft.Build" Version="15.1.548" ExcludeAssets="runtime" />
-  <PackageReference Include="Microsoft.Build.Utilities" Version="15.1.548" ExcludeAssets="runtime" />
+  <PackageReference Include="Microsoft.Build.Utilities.Core" Version="15.1.548" ExcludeAssets="runtime" />
 </ItemGroup>
 ```
 
@@ -71,15 +71,17 @@ MSBuild 套件的主要和次要版本，必須小於或等於您要支援的 Vi
 
 建置您的專案，並檢查輸出目錄，以確定其中不含任何非在下一個步驟中新增之 *Microsoft.Build.Locator.dll* 的 *Microsoft.Build.\*.dll* 組件。
 
-### <a name="add-package-reference"></a>新增套件參考
+### <a name="add-package-reference-for-microsoftbuildlocator"></a>針對 Microsoft.Build.Locator 新增套件參考
 
-新增 NuGet 套件參考至 [Microsoft.Build.Locator](https://www.nuget.org/packages/Microsoft.Build.Locator/)。
+針對 [Microsoft.Build.Locator](https://www.nuget.org/packages/Microsoft.Build.Locator/) \(英文\) 新增 NuGet 套件參考。
 
 ```xml
     <PackageReference Include="Microsoft.Build.Locator">
       <Version>1.1.2</Version>
     </PackageReference>
 ```
+
+請勿針對 Microsoft.Build.Locator 套件指定 `ExcludeAssets=runtime`。
 
 ### <a name="register-instance-before-calling-msbuild"></a>註冊執行個體，然後呼叫 MSBuild
 

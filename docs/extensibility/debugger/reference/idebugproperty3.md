@@ -7,28 +7,28 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProperty3 interface
 ms.assetid: 8f9be68d-4490-4eca-8f6b-8a10ed77e226
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4cbce619e15006736a2f36bf1d3ab360f6b964a2
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 8581e8163ab95eac7d49c5deca70c339804aac64
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56705920"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66348693"
 ---
 # <a name="idebugproperty3"></a>IDebugProperty3
 此介面可讓您：
 
--   擷取與屬性相關聯的任意長度字串。
+- 擷取與屬性相關聯的任意長度字串。
 
--   關聯之屬性的唯一識別碼。
+- 關聯之屬性的唯一識別碼。
 
--   擷取屬性的自訂檢視器的清單。
+- 擷取屬性的自訂檢視器的清單。
 
--   設定屬性的值能夠報告任何產生的錯誤
+- 設定屬性的值能夠報告任何產生的錯誤
 
 ## <a name="syntax"></a>語法
 

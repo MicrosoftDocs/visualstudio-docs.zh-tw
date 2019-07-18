@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 960f5a3d51ee4bad60126c124edd6ba659ba391d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.openlocfilehash: b270290c948807ff0f66d3d142312245475cd33c
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55914629"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65460612"
 ---
 # <a name="the-connection-string-contains-credentials-with-a-clear-text-password-and-is-not-using-integrated-security"></a>連接字串包含具有純文字密碼的認證，並且不使用整合式安全性
 
@@ -36,5 +36,4 @@ ms.locfileid: "55914629"
 
 ## <a name="see-also"></a>另請參閱
 
-- [O/R 設計工具訊息](../data-tools/o-r-designer-messages.md)
 - [Visual Studio 中的 LINQ to SQL 工具](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

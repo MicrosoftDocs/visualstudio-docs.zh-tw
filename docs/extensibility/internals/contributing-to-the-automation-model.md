@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - automation [Visual Studio SDK]
 ms.assetid: 44de482d-93c8-41a4-843c-cefda995a03e
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2ebe9a3d1c314a8e3b15ae7588f38abfd50518d4
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 47e6686c82dcb0272fa9b3b3c4d3b7c73afe4475
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56636265"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66335437"
 ---
 # <a name="contribute-to-the-automation-model"></a>參與 automation 模型
 Visual Studio 會提供一組自動化介面的自訂環境。 Automation 模型是可讓使用者建立 Visual Studio 增益集和擴充功能的物件模型。

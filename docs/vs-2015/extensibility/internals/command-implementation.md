@@ -1,26 +1,21 @@
 ---
 title: 命令實作 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - commands, implementation
 ms.assetid: c782175c-cce4-4bd0-8374-4a897ceb1b3d
 caps.latest.revision: 25
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: be1bcecb740fb0c375d0f461639a8b0d5e40669a
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: a208fabd3d205793763698cde0f6fe367c7bb8b5
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51765208"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68195064"
 ---
 # <a name="command-implementation"></a>命令實作
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -74,23 +69,23 @@ if ( null != mcs )
   
 - 如果這兩種方法的實作會辨識 GUID 和命令，則方法應該設定的每個命令的命令旗標 欄位 (在`prgCmds`參數) 使用下列旗標：  
   
-  -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> 如果支援該命令。  
+  - <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> 如果支援該命令。  
   
-  -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> 如果命令不應該為可見的。  
+  - <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> 如果命令不應該為可見的。  
   
-  -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> 如果命令切換開啟，而且似乎已檢查。  
+  - <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> 如果命令切換開啟，而且似乎已檢查。  
   
-  -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> 如果此命令會啟用。  
+  - <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> 如果此命令會啟用。  
   
-  -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> 如果應該隱藏命令，如果出現在捷徑功能表。  
+  - <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> 如果應該隱藏命令，如果出現在捷徑功能表。  
   
-  -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> 如果命令功能表控制器，且未啟用，但它的下拉式選單清單不是空的以及仍然可用。 （這個旗標是很少使用）。  
+  - <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> 如果命令功能表控制器，且未啟用，但它的下拉式選單清單不是空的以及仍然可用。 （這個旗標是很少使用）。  
   
 - 如果命令已定義在.vsct 檔案中以`TextChanges`旗標，請設定下列參數：  
   
-  -   設定`rgwz`項目`pCmdText`新命令文字的參數。  
+  - 設定`rgwz`項目`pCmdText`新命令文字的參數。  
   
-  -   設定`cwActual`項目`pCmdText`命令字串的大小參數。  
+  - 設定`cwActual`項目`pCmdText`命令字串的大小參數。  
   
   也請確定目前的內容不是自動化函式中，除非處理自動化函式，而且特別適合您的命令。  
   
@@ -144,4 +139,3 @@ public int Exec(ref Guid pguidCmdGroup, uint nCmdID, uint nCmdexecopt, IntPtr pv
   
 ## <a name="see-also"></a>另請參閱  
  [VSPackage 如何新增使用者介面元素](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)
-

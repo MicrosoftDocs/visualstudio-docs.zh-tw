@@ -5,26 +5,26 @@ ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], contexts
 ms.assetid: b59d739c-7572-427f-a70d-4e5df63d02c1
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2f025ca2d73e98f8191969510f866cb7eb1d0eea
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: fecc50de842f628c54878af5fc91b5aeb3adefa4
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56695947"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66345728"
 ---
 # <a name="document-position"></a>文件位置
 在 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]偵錯*文件位置*:
 
--   為已知的 ide，請提供抽象的原始程式檔中的位置。 大部分語言的現在，文件位置可以視為的原始程式檔中的位置。
+- 為已知的 ide，請提供抽象的原始程式檔中的位置。 大部分語言的現在，文件位置可以視為的原始程式檔中的位置。
 
--   描述偵錯引擎來源文件中的位置。
+- 描述偵錯引擎來源文件中的位置。
 
--   由實作[IDebugDocumentPosition2](../../extensibility/debugger/reference/idebugdocumentposition2.md)介面。
+- 由實作[IDebugDocumentPosition2](../../extensibility/debugger/reference/idebugdocumentposition2.md)介面。
 
 ## <a name="see-also"></a>另請參閱
 - [程式碼內容](../../extensibility/debugger/code-context.md)

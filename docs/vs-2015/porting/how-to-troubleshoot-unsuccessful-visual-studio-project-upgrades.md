@@ -1,5 +1,5 @@
 ---
-title: HOW TO：不成功的專案升級疑難排解 |Microsoft Docs
+title: 作法：不成功的專案升級疑難排解 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -18,12 +18,12 @@ caps.latest.revision: 31
 author: kraigb
 ms.author: kraigb
 manager: jillfra
-ms.openlocfilehash: 7d5c30c9b61707f9ac4a32d49613b46416a8d881
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 1fe975fedb8237762d7dadffceff22203dcb899e
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54804259"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696384"
 ---
 # <a name="how-to-troubleshoot-unsuccessful-visual-studio-project-upgrades"></a>HOW TO：不成功的 Visual Studio 專案升級疑難排解
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,11 +35,11 @@ ms.locfileid: "54804259"
 
 #### <a name="to-resolve-incorrect-file-paths"></a>若要解決不正確的檔案路徑
 
-1.  在文字編輯器中開啟您的專案檔。
+1. 在文字編輯器中開啟您的專案檔。
 
-2.  掃描的檔案路徑可能不正確，尤其是那些包含[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]版本號碼。
+2. 掃描的檔案路徑可能不正確，尤其是那些包含[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]版本號碼。
 
-3.  修改不正確的檔案路徑，使其指向新的目標。
+3. 修改不正確的檔案路徑，使其指向新的目標。
 
 ## <a name="the-project-does-not-build-because-references-are-not-valid"></a>專案未建置，因為參考無效
  當您升級[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]，您可能也會升級[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]版本。 如果您的專案會包含已停用在較新的參考[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]版本中，它們可能無法正確解析。 這是特別的參考，例如，包含版本號碼可能`Microsoft.VisualStudio.Shell.Interop.8.0`。
@@ -56,5 +56,5 @@ ms.locfileid: "54804259"
 
    如果您要在升級中執行專案[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]版本中，您必須更新專案的參考，以及更新任何`Imports`或`Using`呼叫參考的陳述式。 如果您的專案載入在 IDE 中，您可以使用更新的參考**方案總管**或**參考管理員** 對話方塊。
 
-## <a name="see-also"></a>請參閱
- [/ 升級 (devenv.exe)](../ide/reference/upgrade-devenv-exe.md) [轉換至 ASP.NET 4](http://msdn.microsoft.com/library/790147c6-36c1-41b5-a52d-30b9ccd2bd10)
+## <a name="see-also"></a>另請參閱
+ [/ 升級 (devenv.exe)](../ide/reference/upgrade-devenv-exe.md) [轉換至 ASP.NET 4](https://msdn.microsoft.com/library/790147c6-36c1-41b5-a52d-30b9ccd2bd10)

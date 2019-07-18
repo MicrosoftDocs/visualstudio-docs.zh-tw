@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: dac53bc06cb06200dd61adca27fa4894c3c4d8dc
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 3b20b10a37908e2c9744aeac63bb3eda091da478
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56598176"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62826401"
 ---
 # <a name="how-to-add-commands-to-shortcut-menus"></a>HOW TO：將命令加入至捷徑功能表
   本主題示範如何使用 VSTO 增益集將命令加入 Office 應用程式中的捷徑功能表。
@@ -27,26 +27,26 @@ ms.locfileid: "56598176"
 
 ### <a name="to-add-commands-to-shortcut-menus-in-office"></a>將命令加入 Office 的捷徑功能表
 
-1.  將 **功能區 XML** 項目加入文件層級或 VSTO 增益集專案。 如需詳細資訊，請參閱[如何：開始自訂功能區](../vsto/how-to-get-started-customizing-the-ribbon.md)。 In
+1. 將 **功能區 XML** 項目加入文件層級或 VSTO 增益集專案。 如需詳細資訊，請參閱[如何：開始自訂功能區](../vsto/how-to-get-started-customizing-the-ribbon.md)。 In
 
-2.  在方案總管中，選取 **ThisAddin.cs** 或 **ThisAddin.vb**。
+2. 在方案總管中，選取 **ThisAddin.cs** 或 **ThisAddin.vb**。
 
-3.  在功能表列上依序選擇 [檢視] > [程式碼]。
+3. 在功能表列上依序選擇 [檢視] > [程式碼]。
 
      **ThisAddin** 類別隨即在程式碼編輯器中開啟。
 
-4.  將下列程式碼加入 **ThisAddin** 類別中。 此程式碼會覆寫 `CreateRibbonExtensibilityObject` 方法，並將功能區 XML 類別傳回 Office 應用程式。
+4. 將下列程式碼加入 **ThisAddin** 類別中。 此程式碼會覆寫 `CreateRibbonExtensibilityObject` 方法，並將功能區 XML 類別傳回 Office 應用程式。
 
      [!code-csharp[Trin_WordAddIn_Menus#1](../vsto/codesnippet/CSharp/trin_wordaddin_menus.cs/thisaddin.cs#1)]
      [!code-vb[Trin_WordAddIn_Menus#1](../vsto/codesnippet/VisualBasic/trin_wordaddin_menus.vb/thisaddin.vb#1)]
 
-5.  在方案總管 中選取功能區 XML 檔案。 根據預設，名為功能區 XML 檔案*Ribbon1.xml*。
+5. 在方案總管 中選取功能區 XML 檔案。 根據預設，名為功能區 XML 檔案*Ribbon1.xml*。
 
-6.  在功能表列上依序選擇 [檢視] > [程式碼]。
+6. 在功能表列上依序選擇 [檢視] > [程式碼]。
 
      功能區 XML 檔案隨即在程式碼編輯器中開啟。
 
-7.  在程式碼編輯器中，加入描述捷徑功能表以及您想要加入捷徑功能表之控制項的 XML。
+7. 在程式碼編輯器中，加入描述捷徑功能表以及您想要加入捷徑功能表之控制項的 XML。
 
      下列範例會將按鈕、功能表和圖庫控制項加入 Word 文件的捷徑功能表。 這個捷徑功能表的控制項 ID 是 ContextMenuText。 如需完整的 Office 2010 捷徑控制項 ID，請參閱[Office 2010 說明檔：Office fluent 使用者介面控制項識別碼](http://go.microsoft.com/fwlink/?LinkID=181052)。
 
@@ -70,7 +70,7 @@ ms.locfileid: "56598176"
     </customUI>
     ```
 
-8.  在方案總管 中，選擇 **MyRibbon.cs** 或 **MyRibbon.vb**。
+8. 在方案總管 中，選擇 **MyRibbon.cs** 或 **MyRibbon.vb**。
 
 9. 將回呼方法加入`Ribbon1`您想要處理的每個控制項的類別。
 

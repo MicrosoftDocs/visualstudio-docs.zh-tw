@@ -1,14 +1,9 @@
 ---
 title: 使用 DebuggerTypeProxy 屬性 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -22,18 +17,18 @@ ms.assetid: 943f3bb1-993e-4800-a47e-0af78b063014
 caps.latest.revision: 27
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 14e42546245aad8e5e5071a843da87f23a038149
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f6e349dd5bea4e0d89c31864960a5438d1e2b13f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51754332"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65684078"
 ---
 # <a name="using-debuggertypeproxy-attribute"></a>使用 DebuggerTypeProxy 屬性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-DebuggerTypeProxyAttribute] (assetId:///T:System.Diagnostics.DebuggerTypeProxyAttribute?qualifyHint=False & c e autoUpgrade = True) 會指定 proxy，或偵錯工具視窗中顯示的替代品，並且變更類型的方式。 當您檢視有 proxy 的變數時，proxy 會替代中的原始型別**顯示**。 偵錯工具變數視窗只會顯示 proxy 型別的 Public 成員。 私用成員不會顯示。  
+DebuggerTypeProxyAttribute] (assetId:///T:System.Diagnostics.DebuggerTypeProxyAttribute?qualifyHint=False & c e autoUpgrade = True) 會指定 proxy，或偵錯工具視窗中顯示的替代品，並且變更類型的方式。 當您檢視有 Proxy 的變數時，Proxy 會替代 [顯示] 中的原始類型。 偵錯工具變數視窗只會顯示 proxy 型別的 Public 成員。 私用成員不會顯示。  
   
  這個屬性可以套用至：  
   
@@ -62,7 +57,7 @@ DebuggerTypeProxyAttribute] (assetId:///T:System.Diagnostics.DebuggerTypeProxyAt
   
  如果您在 `DebuggerTypeProxy` 中使用泛型類型做為目標，就必須使用此語法。 `DebuggerTypeProxy` 機制會自動推斷型別參數。  
   
- 如需 C# 中的開放型和封閉類型詳細資訊，請參閱[C# 語言規格](http://msdn.microsoft.com/library/e5d5a5cc-636b-4bff-b9c8-a8edc6207c22)，區段 20.5.2 開啟和封閉類型。  
+ 如需 C# 中的開放型和封閉類型詳細資訊，請參閱[C# 語言規格](https://msdn.microsoft.com/library/e5d5a5cc-636b-4bff-b9c8-a8edc6207c22)，區段 20.5.2 開啟和封閉類型。  
   
  Visual Basic 沒有開放類型語法，因此無法在 Visual Basic 中執行相同的動作。 您必須改用開放類型名稱的字串表示。  
   
@@ -70,7 +65,4 @@ DebuggerTypeProxyAttribute] (assetId:///T:System.Diagnostics.DebuggerTypeProxyAt
   
 ## <a name="see-also"></a>另請參閱  
  [使用 DebuggerDisplay 屬性](../debugger/using-the-debuggerdisplay-attribute.md)   
-  [使用偵錯工具顯示屬性增強偵錯功能](http://msdn.microsoft.com/library/72bb7aa9-459b-42c4-9163-9312fab4c410)
-
-
-
+  [使用偵錯工具顯示屬性增強偵錯功能](https://msdn.microsoft.com/library/72bb7aa9-459b-42c4-9163-9312fab4c410)

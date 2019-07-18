@@ -3,19 +3,19 @@ title: 測量 Python 程式碼的效能
 description: 在使用 CPython 型解譯器時，以 Visual Studio 分析工具來檢查 Python 程式碼的效能。
 ms.date: 11/12/2018
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 840ebd6d5341bd38fb8961f4ead15fe5181e1ca3
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: e31286a9b0ea3852ad1fe788d4ff6c4c66e7e4f0
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58149623"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62784261"
 ---
 # <a name="profile-python-code"></a>分析 Python 程式碼
 

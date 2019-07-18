@@ -1,14 +1,9 @@
 ---
-title: FRAMEINFO_FLAGS |Microsoft Docs
-ms.custom: ''
+title: FRAMEINFO_FLAGS | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - FRAMEINFO_FLAGS
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 41578062-8455-412a-9d8b-1e1e9dc8d52e
 caps.latest.revision: 13
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: f6b6406bb48ee7ca544d1983f4d6e483833b49d8
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: e5a930e81ff1105ba93ce3c3cff10ee8bff2f7e5
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51760866"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62538430"
 ---
 # <a name="frameinfoflags"></a>FRAMEINFO_FLAGS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -206,13 +201,12 @@ public enum enum_FRAMEINFO_FLAGS {
 ## <a name="requirements"></a>需求  
  標頭： msdbg.h  
   
- 命名空間： Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間：Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
  [列舉型別](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md)   
  [EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md)   
  [GetInfo](../../../extensibility/debugger/reference/idebugstackframe2-getinfo.md)
-

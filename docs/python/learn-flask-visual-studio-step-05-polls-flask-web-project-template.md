@@ -4,19 +4,19 @@ titleSuffix: ''
 description: 逐步解說 Visual Studio 專案內容中的 Flask 基本知識，特別是「投票 Flask Web 專案」和「投票 Flask/Jade Web 專案」範本的功能。
 ms.date: 01/07/2019
 ms.topic: tutorial
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 77c33bc24162af0aacba9e86108a4301cdb882e6
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: 734a192a00ee0c509ed16e71a8629837155888ae
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58195186"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62957008"
 ---
 # <a name="step-5-use-the-polls-flask-web-project-template"></a>步驟 5：使用 Polls Flask Web 專案範本
 
@@ -52,7 +52,7 @@ Visual Studio 也提供「投票 Flask/Jade Web 專案」範本，此範本會�
 
     ![「投票 Flask Web 專案」應用程式的完整檢視](media/flask/step06-full-app-view.png)
 
-1. 在首頁上，[Create Sample Polls] \(建立範例投票項目\) 按鈕會以 *models/samples.json* 頁面所述的三種不同投票將應用程式資料存放區初始化。 此應用程式預設會使用記憶體內部資料庫 (如 [About] \(關於\) 頁面所示)，每次重新啟動應用程式時都會重設此資料庫。 此應用程式也包含與「Azure 儲存體」和 Mongo DB 搭配運作的程式碼，如此文章稍後所述。
+1. 在首頁上，[Create Sample Polls] \(建立範例投票項目\) 按鈕會以 *models/samples.json* 頁面所述的三種不同投票將應用程式資料存放區初始化。 此應用程式預設會使用記憶體內部資料庫 (如 [About] \(關於\) 頁面所示)，每次重新啟動應用程式時都會重設此資料庫。 此應用程式也包含與「Azure 儲存體」和 Mongo DB 搭配運作的程式碼，如本文稍後所述。
 
 1. 在您將資料存放區初始化之後，即可在不同的投票項目中進行投票，如首頁所示 (為了簡潔起見，已省略導覽列和頁尾)：
 
@@ -72,7 +72,7 @@ Visual Studio 也提供「投票 Flask/Jade Web 專案」範本，此範本會�
 
 ### <a name="examine-the-project-contents"></a>檢查專案內容
 
-如前文所述， 如果您已瀏覽 Visual Studio 中的其他專案範本，則對於從「投票 Flask Web 專案」範本建立的專案內容，應該會相當熟悉。 此文章中的其他步驟會歸納更重大的修改和增添，也就是資料模型和其他檢視。
+如前文所述， 如果您已瀏覽 Visual Studio 中的其他專案範本，則對於從「投票 Flask Web 專案」範本建立的專案內容，應該會相當熟悉。 本文章中的其他步驟會歸納更重大的修改和增添，也就是資料模型和其他檢視。
 
 ## <a name="step-5-2-understand-the-data-models"></a>步驟 5-2：了解資料模型
 

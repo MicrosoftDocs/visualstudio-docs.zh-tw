@@ -1,14 +1,9 @@
 ---
 title: IDebugMemoryContext2::Add |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugMemoryContext2::Add
 helpviewer_keywords:
@@ -17,13 +12,13 @@ helpviewer_keywords:
 ms.assetid: 3c47e646-ce9e-4dd3-8f1a-6dbd3827d407
 caps.latest.revision: 13
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 4136d17552b2f903857ba090ebf9e9f1045ebd5b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 2b1b4b236b438d5ff94120c00952d5cd3adfd590
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51797529"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68164089"
 ---
 # <a name="idebugmemorycontext2add"></a>IDebugMemoryContext2::Add
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -63,4 +58,3 @@ int Add(
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)
-

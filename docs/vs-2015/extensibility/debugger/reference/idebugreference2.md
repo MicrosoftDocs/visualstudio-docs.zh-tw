@@ -1,14 +1,9 @@
 ---
-title: IDebugReference2 |Microsoft Docs
-ms.custom: ''
+title: IDebugReference2 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugReference2
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 3cfed312-f532-4bce-84a5-1677c14567d7
 caps.latest.revision: 12
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 1cc7c944fc65adcade14c43a7d158431e9d5578b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: ac7e825bd33c184d580ada96843366f6d1627f22
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51736141"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438973"
 ---
 # <a name="idebugreference2"></a>IDebugReference2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -30,7 +25,7 @@ ms.locfileid: "51736141"
 此介面代表堆疊框架屬性或其他某個屬性的參考。  
   
 > [!NOTE]
->  `IDebugReference2` 保留供未來使用，和所有其方法應該傳回`E_NOTIMPL`。  
+> `IDebugReference2` 保留供未來使用，和所有其方法應該傳回`E_NOTIMPL`。  
   
 ## <a name="syntax"></a>語法  
   
@@ -64,7 +59,7 @@ IDebugReference2 : IUnknown
 ## <a name="remarks"></a>備註  
   
 > [!NOTE]
->  這種使用 「 屬性 」 不應混淆與表示類別的成員變數雖然`IDebugReference2`可以表示這個實體。  
+> 這種使用 「 屬性 」 不應混淆與表示類別的成員變數雖然`IDebugReference2`可以表示這個實體。  
   
  [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)表示的屬性，而`IDebugReference2`代表屬性時，通常是正在偵錯程式中的物件參考的參考。  
   
@@ -75,13 +70,12 @@ IDebugReference2 : IUnknown
 ## <a name="requirements"></a>需求  
  標頭： msdbg.h  
   
- 命名空間： Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間：Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
  [核心介面](../../../extensibility/debugger/reference/core-interfaces.md)   
  [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md)   
  [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)   
  [GetReference](../../../extensibility/debugger/reference/idebugproperty2-getreference.md)
-

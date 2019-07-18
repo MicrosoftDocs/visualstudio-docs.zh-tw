@@ -1,26 +1,21 @@
 ---
 title: 原始檔控制外掛程式架構 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, architecture
 ms.assetid: 35351d4c-9414-409b-98fc-f2023e2426b7
 caps.latest.revision: 25
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: c7ded33f6296d9ddb0b87a3d2916a95249169f82
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 370f88ce4d8fc372ce31e1e85e88d5379f4e1ba5
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51805204"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68183392"
 ---
 # <a name="source-control-plug-in-architecture"></a>原始檔控制外掛程式架構
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -28,7 +23,7 @@ ms.locfileid: "51805204"
 您可以加入至原始檔控制支援[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]藉由實作和附加的原始檔控制外掛程式的整合式的開發環境 (IDE)。 IDE 會連接到原始檔控制外掛程式，透過定義完善的原始檔控制外掛程式 API。 IDE 會提供工具列和功能表命令所組成的使用者介面 (UI)，以顯示原始檔控制系統的版本控制功能。 原始檔控制外掛程式會實作原始檔控制功能。  
   
 ## <a name="source-control-plug-in-resources"></a>原始檔控制外掛程式資源  
- 原始檔控制外掛程式提供可協助建立並連線到應用程式版本設定資源[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]IDE。 原始檔控制外掛程式含有 API 規格，必須實作原始檔控制外掛程式，讓它可以整合到[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]IDE。 它也包含實作的基本架構的原始檔控制外掛程式示範實作必要的功能與原始檔控制外掛程式 API 相容的程式碼範例 （c + + 中撰寫）。  
+ 原始檔控制外掛程式提供可協助建立並連線到應用程式版本設定資源[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]IDE。 原始檔控制外掛程式含有 API 規格，必須實作原始檔控制外掛程式，讓它可以整合到[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]IDE。 它也包含程式碼範例 (以C++) 實作的基本架構的原始檔控制外掛程式示範實作必要的功能與原始檔控制外掛程式 API 相容。  
   
  原始檔控制外掛程式 API 規格可讓您使用您選擇的任何原始檔控制系統，如果您建立一組必要根據原始檔控制外掛程式 API 所實作的函式的原始檔控制 DLL。  
   
@@ -48,4 +43,3 @@ ms.locfileid: "51805204"
  [原始檔控制外掛程式](../../extensibility/source-control-plug-ins.md)   
  [詞彙](../../extensibility/source-control-plug-in-glossary.md)   
  [建立原始檔控制外掛程式](../../extensibility/internals/creating-a-source-control-plug-in.md)
-

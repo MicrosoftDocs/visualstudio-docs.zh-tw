@@ -1,23 +1,20 @@
 ---
 title: T4 包含指示詞 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: 8c3de9f3-755a-47c5-a30a-65717dcaaac2
 caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: e8de721b7f26152cd4e7f5df1ee7eb4d04770511
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 6b475b8e5c2138c909133aee0440f0dcaea99e13
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49835939"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68163640"
 ---
 # <a name="t4-include-directive"></a>T4 包含指示詞
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +33,7 @@ ms.locfileid: "49835939"
   
    這些額外的 Include 資料夾可能相依於納入的檔案其副檔名。 例如，只有當納入的檔案其副檔名為 `.tt` 時才能使用 DSL 工具的 Include 資料夾  
   
-- `filePath` 可以包含以 "%" 分隔的環境變數。 例如:   
+- `filePath` 可以包含以 "%" 分隔的環境變數。 例如：  
   
   ```  
   <#@ include file="%HOMEPATH%\MyIncludeFile.t4" #>  
@@ -115,7 +112,7 @@ Output message 5 (from top template).
   
 ```  
   
-##  <a name="msbuild"></a> 使用 MSBuild 和 Visual Studio 中的專案屬性  
+## <a name="msbuild"></a> 使用 MSBuild 和 Visual Studio 中的專案屬性  
  雖然您可以在 include 指示詞中使用如 $(SolutionDir) 的 Visual Studio 巨集，它們在 MSBuild 中並無法運作。 如果想要轉換組建電腦中的範本，您必須改用專案屬性。  
   
  編輯您的 .csproj 或 .vbproj 檔案以定義專案屬性。 這個範例會定義名為 `myIncludeFolder` 的屬性：  
@@ -140,6 +137,3 @@ Output message 5 (from top template).
 ```  
 <#@ include file="$(myIncludeFolder)\defs.tt" #>  
 ```
-
-
-

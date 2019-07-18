@@ -1,14 +1,9 @@
 ---
 title: ClickOnce 部署資訊清單 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -20,13 +15,13 @@ ms.assetid: 8457e615-e3b6-4990-8dcf-11bc590e4e9b
 caps.latest.revision: 25
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 96ce7d873c20b8c29e5586a54c577a5d744b0caa
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: a5d1fe2191dadd0972dcde6f38b9697e29f05ab8
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49306783"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68190465"
 ---
 # <a name="clickonce-deployment-manifest"></a>ClickOnce 部署資訊清單
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,17 +30,17 @@ ms.locfileid: "49306783"
   
  部署資訊清單具有下列項目和屬性。  
   
-|元素|描述|屬性|  
+|項目|描述|屬性|  
 |-------------|-----------------|----------------|  
-|[\<組件 > 項目](../deployment/assembly-element-clickonce-deployment.md)|必要。 最上層項目。|`manifestVersion`|  
-|[\<組件識別 > 項目](../deployment/assemblyidentity-element-clickonce-deployment.md)|必要。 識別此 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 應用程式的應用程式資訊清單。|`name`<br /><br /> `version`<br /><br /> `publicKeyToken`<br /><br /> `processorArchitecture`<br /><br /> `culture`|  
-|[\<描述 > 項目](../deployment/description-element-clickonce-deployment.md)|必要。 識別用來建立 shell 的存在的應用程式資訊和**新增或移除程式**控制台 中的項目。|`publisher`<br /><br /> `product`<br /><br /> `supportUrl`|  
-|[\<部署 > 項目](../deployment/deployment-element-clickonce-deployment.md)|選擇性。 識別用於更新部署及公開至系統的屬性。|`install`<br /><br /> `minimumRequiredVersion`<br /><br /> `mapFileExtensions`<br /><br /> `disallowUrlActivation`<br /><br /> `trustUrlParameters`|  
-|[\<compatibleFrameworks > 項目](../deployment/compatibleframeworks-element-clickonce-deployment.md)|必要。 識別安裝及執行此應用程式所需的 .NET Framework 版本。|`SupportUrl`|  
-|[\<相依性 > 項目](../deployment/dependency-element-clickonce-deployment.md)|必要。 識別部署所要安裝的應用程式版本，以及應用程式資訊清單的位置。|`preRequisite`<br /><br /> `visible`<br /><br /> `dependencyType`<br /><br /> `codebase`<br /><br /> `size`|  
-|[\<publisherIdentity > 項目](../deployment/publisheridentity-element-clickonce-deployment.md)|簽署資訊清單的必要項。 包含簽署此部署資訊清單之發行者的資訊。|`Name`<br /><br /> `issuerKeyHash`|  
-|[\<簽章 > 項目](../deployment/signature-element-clickonce-deployment.md)|選擇性。 包含對此部署資訊清單進行數位簽章時所需的資訊。|無|  
-|[\<customErrorReporting > 項目](../deployment/customerrorreporting-element-clickonce-deployment.md)|選擇性。 指定要在錯誤發生時顯示的 URI。|URI|  
+|[\<assembly> 元素](../deployment/assembly-element-clickonce-deployment.md)|必要項。 最上層項目。|`manifestVersion`|  
+|[\<assemblyIdentity> 元素](../deployment/assemblyidentity-element-clickonce-deployment.md)|必要項。 識別此 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 應用程式的應用程式資訊清單。|`name`<br /><br /> `version`<br /><br /> `publicKeyToken`<br /><br /> `processorArchitecture`<br /><br /> `culture`|  
+|[\<description> 元素](../deployment/description-element-clickonce-deployment.md)|必要項。 識別應用程式資訊，這些資訊用於建立殼層的存在和 [控制台] 中的 [新增或移除程式]  項目。|`publisher`<br /><br /> `product`<br /><br /> `supportUrl`|  
+|[\<deployment> 元素](../deployment/deployment-element-clickonce-deployment.md)|選擇性。 識別用於更新部署及公開至系統的屬性。|`install`<br /><br /> `minimumRequiredVersion`<br /><br /> `mapFileExtensions`<br /><br /> `disallowUrlActivation`<br /><br /> `trustUrlParameters`|  
+|[\<compatibleFrameworks> 元素](../deployment/compatibleframeworks-element-clickonce-deployment.md)|必要項。 識別安裝及執行此應用程式所需的 .NET Framework 版本。|`SupportUrl`|  
+|[\<dependency> 元素](../deployment/dependency-element-clickonce-deployment.md)|必要項。 識別部署所要安裝的應用程式版本，以及應用程式資訊清單的位置。|`preRequisite`<br /><br /> `visible`<br /><br /> `dependencyType`<br /><br /> `codebase`<br /><br /> `size`|  
+|[\<publisherIdentity> 元素](../deployment/publisheridentity-element-clickonce-deployment.md)|簽署資訊清單的必要項。 包含簽署此部署資訊清單之發行者的資訊。|`Name`<br /><br /> `issuerKeyHash`|  
+|[\<Signature> 元素](../deployment/signature-element-clickonce-deployment.md)|選擇性。 包含對此部署資訊清單進行數位簽章時所需的資訊。|無|  
+|[\<customErrorReporting> 元素](../deployment/customerrorreporting-element-clickonce-deployment.md)|選擇性。 指定要在錯誤發生時顯示的 URI。|URI|  
   
 ## <a name="remarks"></a>備註  
  部署資訊清單檔會識別 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 應用程式部署，包含目前的版本與其他部署設定。 這會參考應用程式資訊清單，其中描述此應用程式的目前版本和部署內包含的所有檔案。  
@@ -127,6 +122,3 @@ ms.locfileid: "49306783"
   
 ## <a name="see-also"></a>另請參閱  
  [發行 ClickOnce 應用程式](../deployment/publishing-clickonce-applications.md)
-
-
-

@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, strings used for finding
 ms.assetid: c1e31f76-42a1-4c3d-afb2-664044ef12fd
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3233bfbfa379fac7be7214431e7a09844b7d65ec
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 31c2b30fb41976cdbbab13fa22d438c63bddbbef
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56704601"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66331708"
 ---
 # <a name="strings-used-as-keys-for-finding-a-source-control-plug-in"></a>用作索引鍵以尋找原始檔控制外掛程式的字串
 下列字串是索引鍵來存取此登錄來尋找資訊的原始檔控制外掛程式。
@@ -48,5 +48,5 @@ ms.locfileid: "56704601"
 
 ## <a name="see-also"></a>另請參閱
 - [原始檔控制外掛程式](../extensibility/source-control-plug-ins.md)
-- [如何：安裝原始檔控制外掛程式](../extensibility/internals/how-to-install-a-source-control-plug-in.md)
+- [如何：安裝原始程式碼控制外掛程式](../extensibility/internals/how-to-install-a-source-control-plug-in.md)
 - [MSSCCPRJ.SCC 檔案](../extensibility/mssccprj-scc-file.md)

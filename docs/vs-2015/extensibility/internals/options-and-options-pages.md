@@ -1,14 +1,9 @@
 ---
 title: 選項和選項頁 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Tools Options pages [Visual Studio SDK], managed package framework support
 - managed package framework, Tools Options pages support
@@ -18,13 +13,13 @@ helpviewer_keywords:
 ms.assetid: e6c0e636-5ec3-450e-b395-fc4bb9d75918
 caps.latest.revision: 35
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 005aeceb328a24c8c90994b6b274dbddc6b874f8
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 643ffd8dc48eb6b0fc35ea035c8c599efbea85c6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51783268"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438949"
 ---
 # <a name="options-and-options-pages"></a>選項和選項頁
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -66,7 +61,7 @@ ms.locfileid: "51783268"
 - <xref:System.ComponentModel.DescriptionAttribute> 決定選項的描述。  
   
   > [!NOTE]
-  >  對等的屬性、 SRCategory、 LocDisplayName，SRDescription，字串資源當地語系化，並使用定義於[受管理的專案範例](http://go.microsoft.com/fwlink/?LinkId=122774)。  
+  > 對等的屬性、 SRCategory、 LocDisplayName，SRDescription，字串資源當地語系化，並使用定義於[受管理的專案範例](http://go.microsoft.com/fwlink/?LinkId=122774)。  
   
   請考慮下列程式碼片段：  
   
@@ -91,5 +86,4 @@ ms.locfileid: "51783268"
  自動化屬性的登錄路徑由合併<xref:Microsoft.VisualStudio.Shell.Package.ApplicationRegistryRoot%2A>，word、 AutomationProperties，以及選項頁面上的分類和名稱。 例如，如果 [選項] 頁面有 [我的類別目錄] 類別中，我的格線頁名稱，而<xref:Microsoft.VisualStudio.Shell.Package.ApplicationRegistryRoot%2A>，HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp，則 [自動化] 屬性已登錄機碼，這是 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\AutomationProperties\My Category\My 格線頁。  
   
 > [!NOTE]
->  正式名稱，也就是我的 Category.My 格線頁中，是這個機碼名稱子機碼的值。
-
+> 正式名稱，也就是我的 Category.My 格線頁中，是這個機碼名稱子機碼的值。

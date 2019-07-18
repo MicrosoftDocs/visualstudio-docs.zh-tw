@@ -6,17 +6,17 @@ helpviewer_keywords:
 - projects [Visual Studio SDK], configuration for building
 - project configurations, building
 ms.assetid: 2c83615d-fa4d-4b9f-b315-7a69b3000da0
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 179192e5935f3a97f38dc3a1b78dd1bd760c303d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: fd9464105d777c0d488175ad67e1481022caa2d1
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56636773"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66328530"
 ---
 # <a name="project-configuration-for-building"></a>建置的專案組態
 給定方案的方案組態的清單是由 [方案組態] 對話方塊中管理。
@@ -26,7 +26,7 @@ ms.locfileid: "56636773"
  如果使用者建立新的方案組態，名為 MyConfig2，Project1 預設繫結其偵錯組態的方案組態。 Project2 也預設會繫結其 MyConfig2 組態的方案組態。
 
 > [!NOTE]
->  繫結是不區分大小寫。
+> 繫結是不區分大小寫。
 
  當使用者選取**多重選取**項目在 [組態] 下拉式清單中，環境會顯示對話方塊，來提供可用的組態清單。
 
@@ -43,7 +43,7 @@ ms.locfileid: "56636773"
  專案相依性會決定專案建置的順序。 使用對話方塊上的建置順序 索引標籤，來檢視專案的方案中建置及修改的建置順序使用 相依性 索引標籤的正確順序。
 
 > [!NOTE]
->  由於明確的相依性所指定的環境已新增專案清單中的選取其核取方塊，但呈現暗灰色<xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildDependency>或<xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployDependency>介面，而且無法變更。 例如，將專案參考從[!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]到另一個專案的專案會自動將會移除它必須刪除參考的組建相依性。 無法選取其核取方塊已清除，而且會呈現暗灰色的專案，因為這樣會建立相依性迴圈 （比方說，會相依於 Project2 Project1 和 Project2 會相依於 Project1），這會停止組建。
+> 由於明確的相依性所指定的環境已新增專案清單中的選取其核取方塊，但呈現暗灰色<xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildDependency>或<xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployDependency>介面，而且無法變更。 例如，將專案參考從[!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]到另一個專案的專案會自動將會移除它必須刪除參考的組建相依性。 無法選取其核取方塊已清除，而且會呈現暗灰色的專案，因為這樣會建立相依性迴圈 （比方說，會相依於 Project2 Project1 和 Project2 會相依於 Project1），這會停止組建。
 
  [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 建置程序包含一般的編譯和連結作業使用單一組建命令叫用。 也可支援兩個其他組建程序： 若要刪除所有輸出項目從某一個組建和最新的檢查，以判斷是否有變更輸出中的項目設定的清除作業。
 

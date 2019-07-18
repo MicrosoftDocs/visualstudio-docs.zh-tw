@@ -9,12 +9,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: fc14a07557b3ae46a84f506bc0fa9007efface63
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: d61e79055b2158115b459e643a36170304b7f655
+ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55921300"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67261721"
 ---
 # <a name="refactoring-to-convert-between-a-for-loop-and-a-foreach-statement"></a>重構以在 for 迴圈與 foreach 陳述式之間轉換
 
@@ -29,13 +29,13 @@ ms.locfileid: "55921300"
 - C#
 
 > [!NOTE]
-> [轉換為 foreach] 快速動作重構僅適用於包含下列所有三個組件的 [for](/dotnet/csharp/language-reference/keywords/for) 迴圈：初始設定式、條件及迭代器。
+> [轉換為 foreach]  快速動作重構僅適用於包含下列所有三個組件的 [for](/dotnet/csharp/language-reference/keywords/for) 迴圈：初始設定式、條件及迭代器。
 
 ### <a name="why-convert"></a>轉換的理由
 
 將 [for](/dotnet/csharp/language-reference/keywords/for) 迴圈轉換為 [foreach](/dotnet/csharp/language-reference/keywords/foreach-in) 陳述式的理由包括：
 
-- 除了當作用來存取項目的索引之外，您不會在迴圈內使用本機迴圈變數。
+- 除了當作用來存取項目的索引之外，您不會在迴圈內使用區域迴圈變數。
 
 - 您想要簡化程式碼，以及降低初始設定式、條件及迭代器區段中發生邏輯錯誤的可能性。
 
@@ -43,11 +43,11 @@ ms.locfileid: "55921300"
 
 1. 將插入號放在 `for` 關鍵字中。
 
-1. 在字行任何地方按 **Ctrl**+**.**， 或按一下程式碼檔案邊界的螺絲起子 ![螺絲起子圖示](../media/screwdriver-icon.png) 圖示。
+1. 在字行任何地方按 **Ctrl**+ **.** ， 或按一下程式碼檔案邊界的螺絲起子 ![螺絲起子圖示](../media/screwdriver-icon.png) 圖示。
 
    ![轉換為 foreach 功能表](media/convert-to-foreach.png)
 
-1. 選取 [轉換為 'foreach']。 或選取 [預覽變更] 以開啟 [[預覽變更]](../../ide/preview-changes.md) 對話方塊，然後選取 [套用]。
+1. 選取 [轉換為 'foreach']  。 或選取 [預覽變更]  以開啟 [[預覽變更]](../../ide/preview-changes.md) 對話方塊，然後選取 [套用]  。
 
 ## <a name="convert-a-foreach-statement-to-a-for-loop"></a>將 foreach 陳述式轉換成 for 迴圈
 
@@ -63,24 +63,24 @@ ms.locfileid: "55921300"
 
 將 [foreach](/dotnet/csharp/language-reference/keywords/foreach-in) 陳述式轉換為 [for](/dotnet/csharp/language-reference/keywords/for) 迴圈的理由包括：
 
-- 除了存取項目之外，您想要在迴圈內使用本機迴圈變數來進行其他工作。
+- 除了存取項目之外，您想要在迴圈內使用區域迴圈變數來進行其他工作。
 
-- 您[透過多維度陣列反覆運算](/dotnet/csharp/programming-guide/arrays/using-foreach-with-arrays)，並想要陣列元素的更多控制權。
+- 您[透過多維度陣列反覆運算](/dotnet/csharp/programming-guide/arrays/using-foreach-with-arrays)，並想要對陣列元素有更多控制權。
 
 ### <a name="how-to-use-it"></a>如何使用
 
 1. 將插入號放在 `foreach` 或 `For Each` 關鍵字中。
 
-1. 在字行任何地方按 **Ctrl**+**.**， 或按一下程式碼檔案邊界的螺絲起子 ![螺絲起子圖示](../media/screwdriver-icon.png) 圖示。
+1. 在字行任何地方按 **Ctrl**+ **.** ， 或按一下程式碼檔案邊界的螺絲起子 ![螺絲起子圖示](../media/screwdriver-icon.png) 圖示。
 
    ![轉換為 for 功能表](media/convert-to-for.png)
 
-1. 選取 [轉換為 'for']。 或選取 [預覽變更] 以開啟 [[預覽變更]](../../ide/preview-changes.md) 對話方塊，然後選取 [套用]。
+1. 選取 [轉換為 'for']  。 或選取 [預覽變更]  以開啟 [[預覽變更]](../../ide/preview-changes.md) 對話方塊，然後選取 [套用]  。
 
-1. 由於重構採用了新的反覆運算計數變數，因此 [重新命名] 方塊會顯示在編輯器的右上角。 若您想為變數選擇其他名稱，請鍵入名稱後按 **Enter 鍵**或選取 [重新命名] 方塊中的 [套用]。 若您不想選擇新名稱，則按 **Esc 鍵**或選取 [套用] 關閉 [重新命名] 方塊。
+1. 由於重構採用了新的反覆運算計數變數，因此 [重新命名]  方塊會顯示在編輯器的右上角。 若您想為變數選擇其他名稱，請鍵入名稱後按 **Enter 鍵**或選取 [重新命名]  方塊中的 [套用]  。 若您不想選擇新名稱，則按 **Esc 鍵**或選取 [套用]  關閉 [重新命名]  方塊。
 
 > [!NOTE]
-> 就 C# 而言，這些重構所產生的程式碼會針對集合中項目的類型，使用明確的類型或 [var](/dotnet/csharp/language-reference/keywords/var)。 所產生程式碼中的類型 (不論是明確還是隱含) 會取決於範圍內的程式碼樣式設定。 設定這些特定程式碼樣式設定時，是在電腦層級的下列位置底下設定：[工具] > [選項] > [文字編輯器] > [C#] > [程式碼樣式] > [一般] > [\'var' 喜歡設定]，或在 [EditorConfig](../../ide/editorconfig-code-style-settings-reference.md#implicit-and-explicit-types) 檔案中的方案層級設定。 如果您在 [選項] 中變更某個程式碼樣式，請重新開啟程式碼檔案以讓變更生效。
+> 就 C# 而言，這些重構所產生的程式碼會針對集合中項目的類型，使用明確的類型或 [var](/dotnet/csharp/language-reference/keywords/var)。 所產生程式碼中的類型 (不論是明確還是隱含) 會取決於範圍內的程式碼樣式設定。 設定這些特定程式碼樣式設定時，是在電腦層級的下列位置底下設定：[工具]   > [選項]   > [文字編輯器]   > [C#]   > [程式碼樣式]   > [一般]   > [\'var' 喜歡設定]  ，或在 [EditorConfig](../../ide/editorconfig-language-conventions.md#implicit-and-explicit-types) 檔案中的方案層級設定。 如果您在 [選項]  中變更某個程式碼樣式，請重新開啟程式碼檔案以讓變更生效。
 
 ## <a name="see-also"></a>另請參閱
 

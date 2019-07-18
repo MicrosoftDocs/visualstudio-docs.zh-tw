@@ -1,77 +1,77 @@
 ---
-title: 逐步解說：使用 c + + 建立 SDK |Microsoft Docs
+title: 逐步解說：使用 SDK 建立C++|Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 36ea793b-3832-41a1-b906-69e680ad5e1d
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: da9be257587936088ee5f91c5e1723d71be11965
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: a60194c6512b67e1e3e90389b0221b6cdb8a5226
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58325064"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66312693"
 ---
-# <a name="walkthrough-create-an-sdk-using-c"></a>逐步解說：建立使用 c + + SDK
-本逐步解說示範如何建立原生 c + + 數學程式庫 SDK，封裝 SDK 作為 Visual Studio 擴充功能 (VSIX)，並接著使用它來建立應用程式。 本逐步解說分為下列步驟：
+# <a name="walkthrough-create-an-sdk-using-c"></a>逐步解說：使用 SDK 建立C++
+本逐步解說示範如何建立原生C++數學程式庫 SDK，封裝 SDK 作為 Visual Studio 擴充功能 (VSIX)，並接著使用它來建立應用程式。 本逐步解說分為下列步驟：
 
--   [若要建立原生和 Windows 執行階段程式庫](../extensibility/walkthrough-creating-an-sdk-using-cpp.md#createClassLibrary)
+- [若要建立原生和 Windows 執行階段程式庫](../extensibility/walkthrough-creating-an-sdk-using-cpp.md#createClassLibrary)
 
--   [若要建立 NativeMathVSIX 擴充功能專案](../extensibility/walkthrough-creating-an-sdk-using-cpp.md#createVSIX)
+- [若要建立 NativeMathVSIX 擴充功能專案](../extensibility/walkthrough-creating-an-sdk-using-cpp.md#createVSIX)
 
--   [若要建立範例應用程式使用的類別庫](../extensibility/walkthrough-creating-an-sdk-using-cpp.md#createSample)
+- [若要建立範例應用程式使用的類別庫](../extensibility/walkthrough-creating-an-sdk-using-cpp.md#createSample)
 
 ## <a name="prerequisites"></a>必要條件
  若要依照本逐步解說執行作業，您必須安裝 Visual Studio SDK。 如需詳細資訊，請參閱 < [Visual Studio SDK](../extensibility/visual-studio-sdk.md)。
 
-##  <a name="createClassLibrary"></a> 若要建立原生和 Windows 執行階段程式庫
+## <a name="createClassLibrary"></a> 若要建立原生和 Windows 執行階段程式庫
 
-1.  在功能表列上，選擇 [檔案] > [新增] > [專案]。
+1. 在功能表列上，選擇 [檔案]   > [新增]   > [專案]  。
 
-2.  在範本清單中，依序展開**Visual c + +** > **Windows Universal**，然後選取**DLL （通用 Windows 應用程式）** 範本。 在 [**名稱**方塊中，指定`NativeMath`，然後選擇 **[確定]** ] 按鈕。
+2. 在範本清單中，依序展開**Visual C++**   >  **Windows Universal**，然後選取**DLL （通用 Windows 應用程式）** 範本。 在 [**名稱**方塊中，指定`NativeMath`，然後選擇 **[確定]** ] 按鈕。
 
-3.  更新*NativeMath.h*以符合下列程式碼。
+3. 更新*NativeMath.h*以符合下列程式碼。
 
      [!code-cpp[CreatingAnSDKUsingCpp#1](../extensibility/codesnippet/CPP/walkthrough-creating-an-sdk-using-cpp_1.h)]
 
-4.  更新*NativeMath.cpp*以符合此程式碼：
+4. 更新*NativeMath.cpp*以符合此程式碼：
 
      [!code-cpp[CreatingAnSDKUsingCpp#2](../extensibility/codesnippet/CPP/walkthrough-creating-an-sdk-using-cpp_2.cpp)]
 
-5.  在**方案總管 中**，開啟捷徑功能表**解決方案 'NativeMath'**，然後選擇**新增** > **新專案**.
+5. 在**方案總管 中**，開啟捷徑功能表**解決方案 'NativeMath'** ，然後選擇**新增** > **新專案**.
 
-6.  在範本清單中，依序展開**Visual c + +**，然後選取**Windows 執行階段元件**範本。 在 [**名稱**方塊中，指定`NativeMathWRT`，然後選擇 **[確定]** ] 按鈕。
+6. 在範本清單中，依序展開**Visual C++** ，然後選取**Windows 執行階段元件**範本。 在 [**名稱**方塊中，指定`NativeMathWRT`，然後選擇 **[確定]** ] 按鈕。
 
-7.  更新*Class1.h*以符合此程式碼：
+7. 更新*Class1.h*以符合此程式碼：
 
      [!code-cpp[CreatingAnSDKUsingCpp#3](../extensibility/codesnippet/CPP/walkthrough-creating-an-sdk-using-cpp_3.h)]
 
-8.  更新*Class1.cpp*以符合此程式碼：
+8. 更新*Class1.cpp*以符合此程式碼：
 
      [!code-cpp[CreatingAnSDKUsingCpp#4](../extensibility/codesnippet/CPP/walkthrough-creating-an-sdk-using-cpp_4.cpp)]
 
-9. 在功能表列上選擇 [建置] > [建置解決方案]。
+9. 在功能表列上選擇 [建置]   > [建置解決方案]  。
 
-##  <a name="createVSIX"></a> 若要建立 NativeMathVSIX 擴充功能專案
+## <a name="createVSIX"></a> 若要建立 NativeMathVSIX 擴充功能專案
 
-1.  在**方案總管 中**，開啟捷徑功能表**解決方案 'NativeMath'**，然後選擇**新增** > **新專案**.
+1. 在**方案總管 中**，開啟捷徑功能表**解決方案 'NativeMath'** ，然後選擇**新增** > **新專案**.
 
-2.  在範本清單中，依序展開**Visual C#** > **擴充性**，然後選取**VSIX 專案**。 在 [**名稱**方塊中，指定**NativeMathVSIX**，然後選擇 **[確定]** ] 按鈕。
+2. 在範本清單中，依序展開**Visual C#**  > **擴充性**，然後選取**VSIX 專案**。 在 [**名稱**方塊中，指定**NativeMathVSIX**，然後選擇 **[確定]** ] 按鈕。
 
-3.  在 **方案總管 中**，開啟捷徑功能表**source.extension.vsixmanifest**，然後選擇 **檢視程式碼**。
+3. 在 **方案總管 中**，開啟捷徑功能表**source.extension.vsixmanifest**，然後選擇 **檢視程式碼**。
 
-4.  使用下列 XML 取代現有的 XML。
+4. 使用下列 XML 取代現有的 XML。
 
     [!code-xml[CreatingAnSDKUsingCpp#6](../extensibility/codesnippet/XML/walkthrough-creating-an-sdk-using-cpp_6.xml)]
 
-5.  在**方案總管**，開啟捷徑功能表**NativeMathVSIX**專案，，然後選擇**新增** > **新項目**.
+5. 在**方案總管**，開啟捷徑功能表**NativeMathVSIX**專案，，然後選擇**新增** > **新項目**.
 
-6.  在這份**Visual C# 項目**，展開**資料**，然後選取**XML 檔案**。 在 [**名稱**方塊中，指定`SDKManifest.xml`，然後選擇 **[確定]** ] 按鈕。
+6. 在這份**Visual C# 項目**，展開**資料**，然後選取**XML 檔案**。 在 [**名稱**方塊中，指定`SDKManifest.xml`，然後選擇 **[確定]** ] 按鈕。
 
-7.  使用這個 XML 取代檔案的內容：
+7. 使用這個 XML 取代檔案的內容：
 
      [!code-xml[CreatingAnSDKUsingCpp#5](../extensibility/codesnippet/XML/walkthrough-creating-an-sdk-using-cpp_5.xml)]
 
@@ -92,7 +92,7 @@ ms.locfileid: "58325064"
                 \Neutral
     ```
 
-9. 中**方案總管**，開啟捷徑功能表**解決方案 'NativeMath'**，然後選擇**在檔案總管 中開啟資料夾**。
+9. 中**方案總管**，開啟捷徑功能表**解決方案 'NativeMath'** ，然後選擇**在檔案總管 中開啟資料夾**。
 
 10. 在 **檔案總管**，複製 *$SolutionRoot$\NativeMath\NativeMath.h*，然後在**方案總管 中**下**NativeMathVSIX**專案中，貼上 *$SolutionRoot$ \NativeMathVSIX\DesignTime\CommonConfiguration\Neutral\Include\\* 資料夾。
 
@@ -129,7 +129,7 @@ ms.locfileid: "58325064"
 
      重複此程序**SDKManifest.xml**檔案。
 
-15. 在功能表列上選擇 [建置] > [建置解決方案]。
+15. 在功能表列上選擇 [建置]   > [建置解決方案]  。
 
 16. 在 **方案總管 中**，開啟捷徑功能表**NativeMathVSIX**專案，，然後選擇**在檔案總管 中開啟資料夾**。
 
@@ -137,11 +137,11 @@ ms.locfileid: "58325064"
 
 18. 選擇**安裝**按鈕，等候安裝完成，然後再開啟 Visual Studio。
 
-##  <a name="createSample"></a> 若要建立範例應用程式使用的類別庫
+## <a name="createSample"></a> 若要建立範例應用程式使用的類別庫
 
-1. 在功能表列上，選擇 [檔案] > [新增] > [專案]。
+1. 在功能表列上，選擇 [檔案]   > [新增]   > [專案]  。
 
-2. 在範本清單中，依序展開**Visual c + +** > **Windows Universal** ，然後選取**空白應用程式**。 在 [**名稱**方塊中，指定**NativeMathSDKSample**，然後選擇 **[確定]** ] 按鈕。
+2. 在範本清單中，依序展開**Visual C++**   >  **Windows Universal** ，然後選取**空白應用程式**。 在 [**名稱**方塊中，指定**NativeMathSDKSample**，然後選擇 **[確定]** ] 按鈕。
 
 3. 在 [**方案總管] 中**，開啟捷徑功能表**NativeMathSDKSample**專案，，然後選擇**新增** > **參考**.
 
@@ -165,7 +165,7 @@ ms.locfileid: "58325064"
 
 9. 選擇**F5**鍵以執行應用程式。
 
-10. 在應用程式中，輸入任何兩個數字，選取作業，然後選擇**=**  按鈕。
+10. 在應用程式中，輸入任何兩個數字，選取作業，然後選擇 **=** 按鈕。
 
      正確的結果會出現。
 

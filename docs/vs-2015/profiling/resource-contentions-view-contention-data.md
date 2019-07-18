@@ -13,12 +13,12 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2f98cad59356b48be185ba8e73d91bd3d368ff2a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: c6a7d4d1e80323b4d260ac558661c222f72ec3c1
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54804130"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68149272"
 ---
 # <a name="resource-contentions-view---contention-data"></a>資源爭用檢視 - 爭用資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,16 +33,16 @@ ms.locfileid: "54804130"
 ### <a name="function-values"></a>函式值  
  函式值是根據在呼叫樹狀圖中顯示的執行路徑中發生的函式執行個體。  
   
--   專有值是根據在執行自身函式主體中的陳述式時所發生的事件。 專有值中不包括由函式呼叫的函式中所發生的事件。  
+- 專有值是根據在執行自身函式主體中的陳述式時所發生的事件。 專有值中不包括由函式呼叫的函式中所發生的事件。  
   
--   內含值是根據在執行函式或由函式呼叫的函式時所發生的事件。  
+- 內含值是根據在執行函式或由函式呼叫的函式時所發生的事件。  
   
 ### <a name="percentage-values"></a>百分比值  
  百分比值是根據程式碼剖析資料中的總時間或爭用事件。 如果已篩選報表或程式碼剖析執行檢視，只有已篩選資料中的封鎖時間和爭用情況，才能當做總計值使用。  
   
 ## <a name="navigating-the-resource-allocation-view"></a>巡覽資源分派檢視  
   
-|資料行|說明|  
+|「資料行」|說明|  
 |------------|-----------------|  
 |**名稱**|資源或函式的名稱。|  
 |**專有封鎖時間**|-   對於資源，是指遭到封鎖而無法存取資源並導致執行緒等候的總時間。<br />-   對於函式，是指當函式在執行函式主體中的程式碼時，這些函式執行個體遭到封鎖而無法存取父資源的時間。 不包括由該函式所呼叫函式的封鎖時間。|  

@@ -13,11 +13,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.openlocfilehash: 7e8e155efc0fee9a66cbb107024ca899527acd49
-ms.sourcegitcommit: aea5cdb76fbc7eb31d1e5cc3c8d6adb0c743220f
+ms.openlocfilehash: 0606865228afa75f6bac5f00406bcf808816490b
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/08/2018
-ms.locfileid: "44211200"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "68143382"
 ---
 Visual Studio

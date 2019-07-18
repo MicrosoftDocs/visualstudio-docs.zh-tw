@@ -1,26 +1,21 @@
 ---
 title: 支援的事件類型 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], supported events
 ms.assetid: a3c0386d-551e-4734-9a0c-368d1c2e6671
 caps.latest.revision: 13
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: dd6f8f5b7c2782bb908538426cb531db216b72fb
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: f671e8d0128bee2c52dc1191b33edb889c92d2e9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51781461"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446437"
 ---
 # <a name="supported-event-types"></a>支援的事件類型
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -50,7 +45,7 @@ Visual Studio 偵錯目前支援下列事件類型：
     介面[IDebugBreakpointEvent2](../../extensibility/debugger/reference/idebugbreakpointevent2.md)並[IDebugExceptionEvent2](../../extensibility/debugger/reference/idebugexceptionevent2.md)會停止事件的範例。  
   
   > [!NOTE]
-  >  不支援非同步停止事件。 它是傳送非同步停止事件中的錯誤。  
+  > 不支援非同步停止事件。 它是傳送非同步停止事件中的錯誤。  
   
 ## <a name="discussion"></a>討論  
  事件的實際實作取決於您的德國的設計。 傳送每個事件的型別取決於其屬性，當您設計 DE 時設定。 比方說，可能會傳送一個 DE [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md)當做非同步事件，而另一個可能會將它傳送為停止事件。  
@@ -58,7 +53,7 @@ Visual Studio 偵錯目前支援下列事件類型：
  下表指定哪些程式和執行緒的參數所需的事件，以及事件類型。 任何事件可以是同步的。 不必須要同步的任何事件。  
   
 > [!NOTE]
->  [IDebugEngine2](../../extensibility/debugger/reference/idebugengine2.md)介面是必要的所有事件。  
+> [IDebugEngine2](../../extensibility/debugger/reference/idebugengine2.md)介面是必要的所有事件。  
   
 |Event - 事件|IDebugProgram2|IDebugThread2|停止事件|  
 |-----------|--------------------|-------------------|---------------------|  
@@ -94,4 +89,3 @@ Visual Studio 偵錯目前支援下列事件類型：
   
 ## <a name="see-also"></a>另請參閱  
  [傳送事件](../../extensibility/debugger/sending-events.md)
-

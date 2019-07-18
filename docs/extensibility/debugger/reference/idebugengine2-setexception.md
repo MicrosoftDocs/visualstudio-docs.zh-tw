@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEngine2::SetException
 ms.assetid: e6f5ec48-09e8-4b9b-9dc9-55f8d883f1b7
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 288e77ce539a26764a897656c79649720be2438e
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 2234c0c0b571e763d3b143b5606fe61c43f25cde
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56698907"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66352537"
 ---
 # <a name="idebugengine2setexception"></a>IDebugEngine2::SetException
 指定偵錯引擎 (DE) 應該如何處理指定的例外狀況。
@@ -36,10 +39,9 @@ int SetException( 
 );
 ```
 
-#### <a name="parameters"></a>參數
- `pException`
-
- [in][EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md)結構，描述例外狀況，以及如何進行偵錯。
+## <a name="parameters"></a>參數
+`pException`\
+[in][EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md)結構，描述例外狀況，以及如何進行偵錯。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

@@ -8,17 +8,20 @@ helpviewer_keywords:
 - SetCondition method
 - IDebugPendingBreakpoint2::SetCondition method
 ms.assetid: 0534224f-654f-4862-bc4d-a9a81a5f8899
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4a67286b4732436c2a680e13e90740ca9faff299
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 1a71e22d118b64e15bb9da15b2f9152a90440f1a
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56680226"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66347657"
 ---
 # <a name="idebugpendingbreakpoint2setcondition"></a>IDebugPendingBreakpoint2::SetCondition
 設定或變更暫止中斷點相關聯的條件。
@@ -37,10 +40,9 @@ int SetCondition( 
 );
 ```
 
-#### <a name="parameters"></a>參數
- `bpCondition`
-
- [in]A [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md)結構，指定要設定的條件。
+## <a name="parameters"></a>參數
+`bpCondition`\
+[in]A [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md)結構，指定要設定的條件。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

@@ -18,11 +18,11 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: c138c05d755b05275755f96776764604997cbbcd
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55921545"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62778781"
 ---
 # <a name="ca1047-do-not-declare-protected-members-in-sealed-types"></a>CA1047:不要在密封類型中宣告 protected 成員
 

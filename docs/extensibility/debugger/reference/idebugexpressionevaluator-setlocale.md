@@ -1,5 +1,5 @@
 ---
-title: IDebugExpressionEvaluator::SetLocale | Microsoft Docs
+title: IDebugExpressionEvaluator::SetLocale |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugExpressionEvaluator::SetLocale method
 ms.assetid: d3d2027d-74e2-4ae6-bcc7-59d12f873b7c
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 582dd3b7aa024bcbf4913f6807ea9b2153a46719
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 18d0dbde0d04dcdf42b3e1fbd19841645036e5bf
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56681110"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "66325657"
 ---
 # <a name="idebugexpressionevaluatorsetlocale"></a>IDebugExpressionEvaluator::SetLocale
 這個方法會設定要用來建立可列印的結果的語言。
@@ -36,10 +39,9 @@ int SetLocale(
 );
 ```
 
-#### <a name="parameters"></a>參數
- `wLangID`
-
- [in]語言識別碼。
+## <a name="parameters"></a>參數
+`wLangID`\
+[in]語言識別碼。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

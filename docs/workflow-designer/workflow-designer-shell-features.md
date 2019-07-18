@@ -11,15 +11,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4519be8ec5c5d4ba8a611df1880ae770a83cf981
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55919465"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62433860"
 ---
 # <a name="workflow-designer-shell-features"></a>工作流程設計工具殼層功能
 
-工作流程設計工具由三個主要 UI 區域所組成： 在設計工具介面、 階層連結列上方和下方的殼層。 位於畫面上方的階層連結列，會用於顯示目前根活動的祖系清單。 如需詳細資訊，請參閱[＜How to：使用階層連結巡覽](../workflow-designer/how-to-use-breadcrumb-navigation.md)。 位於畫面中央的設計介面，會用於撰寫工作流程。 位於畫面下方的殼層，會包含許多管理目前檢視的按鈕。
+工作流程設計工具由三個主要 UI 區域所組成： 在設計工具介面、 階層連結列上方和下方的殼層。 位於畫面上方的階層連結列，會用於顯示目前根活動的祖系清單。 如需詳細資訊，請參閱[如何：使用階層連結巡覽](../workflow-designer/how-to-use-breadcrumb-navigation.md)。 位於畫面中央的設計介面，會用於撰寫工作流程。 位於畫面下方的殼層，會包含許多管理目前檢視的按鈕。
 
 ## <a name="shell-features"></a>殼層功能
  殼層列的右側具有按鈕，可用來縮放工作流程，將工作流程的內容調整為符合畫面的大小，以及顯示或隱藏概觀圖。 您也可使用鍵盤快速鍵 CTRL++ 和 CTRL+- 來縮放工作流程。

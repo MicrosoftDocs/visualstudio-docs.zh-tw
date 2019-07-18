@@ -1,14 +1,9 @@
 ---
 title: IDebugBoundBreakpoint2::GetState |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugBoundBreakpoint2::GetState
 helpviewer_keywords:
@@ -17,13 +12,13 @@ helpviewer_keywords:
 ms.assetid: a40a8382-295e-4916-aae6-ffe3a9cd3f2d
 caps.latest.revision: 12
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 1970fd339f8f26539e0f5e3160465a3e9976a194
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: b2bab406e84eee11dbfe73a70975fc69bd209930
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51738168"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68156211"
 ---
 # <a name="idebugboundbreakpoint2getstate"></a>IDebugBoundBreakpoint2::GetState
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -77,4 +72,3 @@ HRESULT CBoundBreakpoint::GetState(BP_STATE* pState)
 ## <a name="see-also"></a>另請參閱  
  [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)   
  [BP_STATE](../../../extensibility/debugger/reference/bp-state.md)
-

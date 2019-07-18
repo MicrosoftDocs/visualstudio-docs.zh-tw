@@ -9,12 +9,12 @@ caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6b060f35abf79d76e17f847e6b4b296c253a4b30
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 132e6252662ed765630764dabca26b22f868a315
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54766105"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704881"
 ---
 # <a name="memory-usage"></a>記憶體使用量
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,21 +31,21 @@ ms.locfileid: "54766105"
   
   除了可以在 **記憶體使用量** 工具中收集任何時間的記憶體快照之外，您還可以使用 Visual Studio 偵錯工具，來控制調查效能問題時要如何執行應用程式。 設定中斷點、逐步偵錯、全部中斷和其他偵錯工具動作，都可以協助您將效能調查工作集中在最相關的程式碼路徑上。 在應用程式執行時進行這些動作，可排除您不感興趣之程式碼的干擾，並可大幅縮短診斷問題所需的時間。  
   
-  您也可以在偵錯工具外部使用記憶體工具。 請參閱 [Memory Usage without Debugging](http://msdn.microsoft.com/library/8883bc5f-df86-4f84-aa2b-a21150f499b0)。  
+  您也可以在偵錯工具外部使用記憶體工具。 請參閱 [Memory Usage without Debugging](https://msdn.microsoft.com/library/8883bc5f-df86-4f84-aa2b-a21150f499b0)。  
   
 > [!NOTE]
->  **自訂配置器支援** 原生記憶體分析工具的運作方式是收集在執行階段所發出的配置 [ETW](https://msdn.microsoft.com/library/windows/desktop/bb968803\(v=vs.85\).aspx) 事件資料。  在來源層級已註釋 CRT 和 Windows SDK 中的配置器，以便擷取其配置資料。  如果您正在撰寫自己的配置器，傳回新剛剛配置之堆積記憶體指標的任何函式，都可以使用 [__declspec](http://msdn.microsoft.com/library/832db681-e8e1-41ca-b78c-cd9d265cdb87)(配置器) 裝飾，如 myMalloc 本範例所示：  
+> **自訂配置器支援** 原生記憶體分析工具的運作方式是收集在執行階段所發出的配置 [ETW](https://msdn.microsoft.com/library/windows/desktop/bb968803\(v=vs.85\).aspx) 事件資料。  在來源層級已註釋 CRT 和 Windows SDK 中的配置器，以便擷取其配置資料。  如果您正在撰寫自己的配置器，傳回新剛剛配置之堆積記憶體指標的任何函式，都可以使用 [__declspec](https://msdn.microsoft.com/library/832db681-e8e1-41ca-b78c-cd9d265cdb87)(配置器) 裝飾，如 myMalloc 本範例所示：  
 >   
->  `__declspec(allocator) void* myMalloc(size_t size)`  
+> `__declspec(allocator) void* myMalloc(size_t size)`  
   
 ## <a name="analyze-memory-use-with-the-debugger"></a>使用偵錯工具分析記憶體使用量  
   
 > [!NOTE]
->  由於收集記憶體資料可能會影響原生或混合模式應用程式的偵錯效能，因此預設會停用記憶體快照。 若要啟用原生或混合模式應用程式的快照，請啟動偵錯工作階段 (快速鍵： **F5**)。 在顯示 [診斷工具]  視窗時，選擇 [記憶體使用量] 索引標籤，然後選擇 [啟用快照] 。  
+> 由於收集記憶體資料可能會影響原生或混合模式應用程式的偵錯效能，因此預設會停用記憶體快照。 若要啟用原生或混合式應用程式的快照，開始偵錯工作階段 (快速鍵：**F5**)。 在顯示 [診斷工具]  視窗時，選擇 [記憶體使用量] 索引標籤，然後選擇 [啟用快照] 。  
 >   
->  ![啟用快照](../profiling/media/dbgdiag-mem-mixedtoolbar-enablesnapshot.png "DBGDIAG_MEM_MixedToolbar_EnableSnapshot")  
+> ![啟用快照](../profiling/media/dbgdiag-mem-mixedtoolbar-enablesnapshot.png "DBGDIAG_MEM_MixedToolbar_EnableSnapshot")  
 >   
->  停止 (快速鍵：**Shift + F5**)，然後重新啟動偵錯。  
+> 停止 (快速鍵：**Shift + F5**)，然後重新啟動偵錯。  
   
  每當您想要擷取記憶體的狀態時，請選擇 [記憶體使用量]  摘要工具列上的 [擷取快照]  。  
   
@@ -53,7 +53,7 @@ ms.locfileid: "54766105"
   
 > [!TIP]
 > - 若要建立記憶體的比較基準，請考慮擷取偵錯工作階段開始時的快照。  
->   -   由於當應用程式頻繁地配置和解除配置記憶體時，擷取您感興趣之作業的記憶體設定檔可能會是項挑戰，因此請在作業開始和結束處設定中斷點，或逐步執行作業，以找出記憶體變更的實際點。  
+>   - 由於當應用程式頻繁地配置和解除配置記憶體時，擷取您感興趣之作業的記憶體設定檔可能會是項挑戰，因此請在作業開始和結束處設定中斷點，或逐步執行作業，以找出記憶體變更的實際點。  
   
 ## <a name="viewing-memory-snapshot-details"></a>檢視記憶體快照詳細資料  
  記憶體使用量摘要表的資料列會列出您在偵錯工作階段期間擷取的快照。  
@@ -104,13 +104,13 @@ ms.locfileid: "54766105"
   
  [類型檢視]  顯示快照中所有類型的數目和大小。  
   
--   選擇所選取類型的執行個體圖示 (![[物件類型] 欄中的執行個體圖示](../misc/media/dbg-mma-instancesicon.png "DBG_MMA_InstancesIcon"))，以顯示快照中所選取類型的物件相關資訊。  
+- 選擇所選取類型的執行個體圖示 (![[物件類型] 欄中的執行個體圖示](../misc/media/dbg-mma-instancesicon.png "DBG_MMA_InstancesIcon"))，以顯示快照中所選取類型的物件相關資訊。  
   
      [執行個體]  檢視顯示所選類型的每個執行個體。 選取執行個體會顯示在 [配置呼叫堆疊]  窗格中建立執行個體時所產生的呼叫堆疊。  
   
      ![執行個體檢視](../profiling/media/dbgdiag-mem-native-instances.png "DBGDIAG_MEM_Native_Instances")  
   
--   在 [檢視模式]  清單中選擇 [堆疊檢視]  ，以查看所選類型的配置堆疊。  
+- 在 [檢視模式]  清單中選擇 [堆疊檢視]  ，以查看所選類型的配置堆疊。  
   
      ![堆疊檢視](../profiling/media/dbgdiag-mem-native-stacksview.png "DBGDIAG_MEM_Native_StacksView")  
   
@@ -129,9 +129,9 @@ ms.locfileid: "54766105"
   ![原生類型差異檢視](../profiling/media/dbgdiag-mem-native-typesviewdiff.png "DBGDIAG_MEM_Native_TypesViewDiff")  
   
 ## <a name="blogs-and-videos"></a>部落格和影片  
- [Visual Studio 2015 中的診斷工具偵錯工具視窗](http://blogs.msdn.com/b/visualstudioalm/archive/2015/01/16/diagnostic-tools-debugger-window-in-visual-studio-2015.aspx)  
+ [Visual Studio 2015 中的診斷工具偵錯工具視窗 (英文)](http://blogs.msdn.com/b/visualstudioalm/archive/2015/01/16/diagnostic-tools-debugger-window-in-visual-studio-2015.aspx)  
   
- [ 部落格 在 Visual Studio 2015 中偵錯時的記憶體使用量工具](http://blogs.msdn.com/b/visualstudioalm/archive/2014/11/13/memory-usage-tool-while-debugging-in-visual-studio-2015.aspx)  
+ [部落格：在 Visual Studio 2015 中偵錯時的記憶體使用量工具](http://blogs.msdn.com/b/visualstudioalm/archive/2014/11/13/memory-usage-tool-while-debugging-in-visual-studio-2015.aspx)  
   
  [Visual C++ 部落格：VS2015 Preview 中的原生記憶體診斷](http://blogs.msdn.com/b/vcblog/archive/2014/11/21/native-memory-diagnostics-in-vs2015-preview.aspx)  
   

@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugBinder3::GetTypeArgumentCount method
 ms.assetid: caf68de6-6f7c-4efd-b803-121347a5032e
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 77d4140a37577fa5bf4734e386300e062ef80399
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: b9dff83d4d9c09ebc2572fa3897ae528d2adce4b
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56725043"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66330753"
 ---
 # <a name="idebugbinder3gettypeargumentcount"></a>IDebugBinder3::GetTypeArgumentCount
 這個方法會傳回與這個物件相關聯的引數類型的數目。
@@ -36,10 +39,9 @@ int GetTypeArgumentCount(
 );
 ```
 
-#### <a name="parameters"></a>參數
- `uCount`
-
- [out]與這個物件相關聯的引數類型的數目。
+## <a name="parameters"></a>參數
+`uCount`\
+[out]與這個物件相關聯的引數類型的數目。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

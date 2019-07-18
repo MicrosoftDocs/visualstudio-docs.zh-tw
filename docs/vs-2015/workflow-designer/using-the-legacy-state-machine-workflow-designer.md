@@ -1,11 +1,8 @@
 ---
 title: 使用舊版狀態機器工作流程設計工具 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 helpviewer_keywords:
 - StateFinalizationActivity activity
@@ -20,16 +17,16 @@ ms.assetid: 2cd21123-35c2-4eaf-82f6-86fce7a8f04d
 caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 30eaf026d0558538c51b4cbda313e051348a5120
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 54469f2e255ff9ea726ea1b6c13abcb55c33252d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49231682"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444121"
 ---
 # <a name="using-the-legacy-state-machine-workflow-designer"></a>使用舊版狀態機器工作流程設計工具
-建立在新的狀態機器工作流程專案時[!INCLUDE[vs2010](../includes/vs2010-md.md)]為目標的其中一個[!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)]或[!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)]，您可以選擇使用任何一種**狀態機器工作流程主控台應用程式**或**狀態機器工作流程程式庫**舊版專案範本。 如果您選擇其中一個狀態機器專案範本，則狀態機器設計工具會以舊版工作流程設計工具使用者介面的方式呈現。 如需舊版狀態機器專案範本的詳細資訊，請參閱[如何： 建立狀態機器工作流程主控台應用程式 （舊版）](../workflow-designer/how-to-create-state-machine-workflow-console-applications-legacy.md)和[How to： 建立狀態機器工作流程程式庫 （舊版）](../workflow-designer/how-to-create-a-state-machine-workflow-library-legacy.md).  
+建立在新的狀態機器工作流程專案時[!INCLUDE[vs2010](../includes/vs2010-md.md)]為目標的其中一個[!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)]或[!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)]，您可以選擇使用任何一種**狀態機器工作流程主控台應用程式**或**狀態機器工作流程程式庫**舊版專案範本。 如果您選擇其中一個狀態機器專案範本，則狀態機器設計工具會以舊版工作流程設計工具使用者介面的方式呈現。 如需舊版狀態機器專案範本的詳細資訊，請參閱[How to:建立狀態機器工作流程主控台應用程式 （舊版）](../workflow-designer/how-to-create-state-machine-workflow-console-applications-legacy.md)和[How to:建立狀態機器工作流程程式庫 （舊版）](../workflow-designer/how-to-create-a-state-machine-workflow-library-legacy.md)。  
   
  狀態機器工作流程包含了一組狀態。 其中有一個狀態表示初始狀態。 每個狀態可以接收特定的一組事件。 根據事件，會完成另一個狀態的轉換。 狀態機器工作流程會有最終狀態。 當轉換為最終狀態時，工作流程便完成。  
   
@@ -47,7 +44,7 @@ ms.locfileid: "49231682"
 |------------------|--------------|-----------------|  
 |**狀態**|[StateActivity](http://go.microsoft.com/fwlink?LinkID=65042)|代表狀態機器; 中的狀態可能包含其他**StateActivity**活動。 如需詳細資訊，請參閱 <<c0> [ 使用 StateActivity 活動](http://go.microsoft.com/fwlink?LinkID=65083)。|  
 |**SetState**|[SetStateActivity](http://go.microsoft.com/fwlink?LinkID=65041)|指定轉換至新狀態。 如需詳細資訊，請參閱 <<c0> [ 使用 SetStateActivity 活動](http://go.microsoft.com/fwlink?LinkID=65082)。|  
-|**Stateinitialization 活動**|[StateInitializationActivity](http://go.microsoft.com/fwlink?LinkID=65044)|輸入狀態時執行，可能包含其他活動。 如需詳細資訊，請參閱 <<c0> [ 使用 StateInitialization 活動](http://go.microsoft.com/fwlink?LinkID=65006)。|  
+|**StateInitialization**|[StateInitializationActivity](http://go.microsoft.com/fwlink?LinkID=65044)|輸入狀態時執行，可能包含其他活動。 如需詳細資訊，請參閱 <<c0> [ 使用 StateInitialization 活動](http://go.microsoft.com/fwlink?LinkID=65006)。|  
 |**StateFinalization**|[StateFinalizationActivity](http://go.microsoft.com/fwlink?LinkID=65043)|執行包含的活動時離開[StateActivity](http://go.microsoft.com/fwlink?LinkID=65042)活動。 如需詳細資訊，請參閱 <<c0> [ 使用 StateFinalizationActivity 活動](http://go.microsoft.com/fwlink?LinkID=65008)。|  
 |**EventDriven**|[EventDrivenActivity](http://go.microsoft.com/fwlink?LinkID=65029)|用於信賴外部事件以啟動執行的狀態。 **EventDrivenActivity**活動必須有活動實作[IEventActivity](http://go.microsoft.com/fwlink?LinkID=65032)介面做為第一個子活動。 如需詳細資訊，請參閱 <<c0> [ 使用 EventDrivenActivity 活動](http://go.microsoft.com/fwlink?LinkID=65068)。|  
   
@@ -56,13 +53,13 @@ ms.locfileid: "49231682"
  當您將新**StateActivity**拖曳至工作流程設計介面中，您可以新增[EventDrivenActivity](http://go.microsoft.com/fwlink?LinkID=65029)， [StateInitializationActivity](http://go.microsoft.com/fwlink?LinkID=65044)， [StateFinalizationActivity](http://go.microsoft.com/fwlink?LinkID=65043)，或其他**StateActivity**做為子活動的活動。  
   
 > [!CAUTION]
->  當您使用狀態機器工作流程設計工具來建立工作流程時，您必須監視工作流程，您要設計與結構**文件大綱**檢視 視窗中。 結構中的狀態機器工作流程的檢視**文件大綱**視窗鏡像的工作流程標記檔案中的活動邏輯版面配置 檢視。 當工作流程活動出現在設計介面時，其實體配置可能不會鏡像工作流程標記檔案中活動的邏輯配置。  
+> 當您使用狀態機器工作流程設計工具來建立工作流程時，您必須監視工作流程，您要設計與結構**文件大綱**檢視 視窗中。 結構中的狀態機器工作流程的檢視**文件大綱**視窗鏡像的工作流程標記檔案中的活動邏輯版面配置 檢視。 當工作流程活動出現在設計介面時，其實體配置可能不會鏡像工作流程標記檔案中活動的邏輯配置。  
 >   
->  若要開啟 [**文件大綱**] 視窗，請在**檢視**功能表上，指向**其他 Windows**，然後選取**文件大綱**。  
+> 若要開啟 [**文件大綱**] 視窗，請在**檢視**功能表上，指向**其他 Windows**，然後選取**文件大綱**。  
   
 ## <a name="see-also"></a>另請參閱  
- [如何： 建立狀態機器工作流程主控台應用程式 （舊版）](../workflow-designer/how-to-create-state-machine-workflow-console-applications-legacy.md)   
- [如何： 建立狀態機器工作流程程式庫 （舊版）](../workflow-designer/how-to-create-a-state-machine-workflow-library-legacy.md)   
+ [如何：建立狀態機器工作流程主控台應用程式 （舊版）](../workflow-designer/how-to-create-state-machine-workflow-console-applications-legacy.md)   
+ [如何：建立狀態機器工作流程程式庫 （舊版）](../workflow-designer/how-to-create-a-state-machine-workflow-library-legacy.md)   
  [狀態機器工作流程](http://go.microsoft.com/fwlink?LinkID=65016)   
  [使用 StateActivity 活動](http://go.microsoft.com/fwlink?LinkID=65083)   
  [使用 StateInitializationActivity 活動](http://go.microsoft.com/fwlink?LinkID=65006)   

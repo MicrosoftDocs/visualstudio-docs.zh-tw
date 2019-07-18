@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2cff118e31a10780a4573608a6516ddea9e4f73a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: df645fc7f53bbcd0ad5294182d13e96b57b5d42d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56626748"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431582"
 ---
 # <a name="features-available-by-office-application-and-project-type"></a>依 Office 應用程式和專案類型提供的功能
   Visual Studio 有幾種類型的專案範本，可支援不同的 Microsoft Office 應用程式商務案例，包括下列類型：
@@ -36,7 +36,7 @@ ms.locfileid: "56626748"
   並非所有應用程式都可以使用每個專案類型。 例如，文件層級專案僅用於 Microsoft Office Word 和 Microsoft Office Excel。 同樣地，某些功能僅用於特定類型的專案或應用程式。 例如，執行窗格只用於文件層級專案，而功能區擴充功能只用於某些應用程式。 如需不同專案類型的詳細資訊，請參閱[Office 方案開發概觀&#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)。
 
 > [!NOTE]
->  Office 專案範本只用於某些版本的 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。 如需詳細資訊，請參閱 <<c0> [ 設定電腦以開發 Office 方案](../vsto/configuring-a-computer-to-develop-office-solutions.md)。
+> Office 專案範本只用於某些版本的 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。 如需詳細資訊，請參閱 <<c0> [ 設定電腦以開發 Office 方案](../vsto/configuring-a-computer-to-develop-office-solutions.md)。
 
 ## <a name="project-types-available-for-different-microsoft-office-applications"></a>適用於不同的 Microsoft Office 應用程式的專案類型
  下表顯示您可以搭配每個專案類型使用的應用程式。

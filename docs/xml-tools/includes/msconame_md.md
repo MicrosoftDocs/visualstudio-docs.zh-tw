@@ -13,11 +13,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.openlocfilehash: 470596235b74fded4f20dd2c71004e02ca7d3d40
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 78685de60de8dee87177b734b37ff11304ba0d47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38943414"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63029237"
 ---
 Windows Server 2008

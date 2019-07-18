@@ -14,24 +14,24 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: e91c1433fde85a9ec828a6a018bee986fdc7aa5c
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56623758"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62988143"
 ---
 # <a name="build-and-debug-sharepoint-solutions"></a>建置和偵錯 SharePoint 方案
   一般情況下，建置和偵錯 SharePoint 方案等同於建置和偵錯其他類型的專案中[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。 本節主題會說明兩者之間的差異。
 
 ## <a name="project-output-for-sharepoint-solutions"></a>SharePoint 方案的專案輸出
- 建置 SharePoint 解決方案建立組件及方案套件 (*.wsp*) 檔案。 下表顯示這些檔案的位置，在建置期間。
+ 建置 SharePoint 解決方案建立組件及方案套件 ( *.wsp*) 檔案。 下表顯示這些檔案的位置，在建置期間。
 
 |建立項目|輸出資料夾|
 |----------------|-------------------|
-|組件、 程式資料庫 (*.pdb*)，以及 *.wsp*檔案。|*\<專案名稱 > \bin\debug*或是*\<專案名稱 > \bin\release*|
-|SharePoint 專案項目檔案。|*\<專案名稱 > \pkg\debug*或是*\<專案名稱 > \pkg\release*|
-|建立中繼檔案。|*\<專案名稱 > \obj\debug*或是*\<專案名稱 > \obj\release*|
-|中繼套件的檔案。|*\<專案名稱 > \pkgobj\debug*或是*\<專案名稱 > \pkgobj\release*|
+|組件、 程式資料庫 ( *.pdb*)，以及 *.wsp*檔案。|*\<專案名稱 > \bin\debug*或是 *\<專案名稱 > \bin\release*|
+|SharePoint 專案項目檔案。|*\<專案名稱 > \pkg\debug*或是 *\<專案名稱 > \pkg\release*|
+|建立中繼檔案。|*\<專案名稱 > \obj\debug*或是 *\<專案名稱 > \obj\release*|
+|中繼套件的檔案。|*\<專案名稱 > \pkgobj\debug*或是 *\<專案名稱 > \pkgobj\release*|
 
 ## <a name="build-sharepoint-solutions"></a>建置 SharePoint 解決方案
  若要建置 SharePoint 解決方案，在開發電腦必須安裝的 SharePoint 伺服器的正確版本。 否則，建置 SharePoint 解決方案是建置中專案的其他類型相同[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。 如需詳細資訊，請參閱[如何：建置 SharePoint 解決方案](../sharepoint/how-to-build-sharepoint-solutions.md)。

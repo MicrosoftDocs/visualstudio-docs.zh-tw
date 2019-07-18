@@ -1,47 +1,44 @@
 ---
-title: 如何： 在工作流程中設定中斷點 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：在工作流程中設定中斷點 |Microsoft Docs
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 ms.assetid: e41b21c9-c061-4358-8e2f-eb5e412864a8
 caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: b3dedba320ce8a783b7d54df54a30b0759a6bd00
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 47d53ad2579ce24f6d5fde2503a0acc98b4f7f5c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49896220"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444123"
 ---
 # <a name="how-to-set-breakpoints-in-workflows"></a>HOW TO：在工作流程中設定中斷點
 使用 [!INCLUDE[wfd1](../includes/wfd1-md.md)] 時，您可以在圖形化工作流程上設定中斷點，就像利用 Visual Basic 或 C# 程式碼設定一樣。 如預期般，工作流程執行會在您設定的每個中斷點上停止。  
   
- 中斷點有三種狀態：*暫止*，*繫結*，並*錯誤*。 設定中斷點時，狀態為「擱置」，由實心的紅色圖示表示。 如果執行階段已載入工作流程型別，中斷點就會變成「繫結」狀態。 如果您指定的中斷點格式不正確，例如活動名稱無效，就會出現錯誤視窗。 中斷點仍會新增至中斷點視窗，但以小的 "x" 記號標示。  
+ 中斷點有三種狀態：*暫止*，*繫結*，以及*錯誤*。 設定中斷點時，狀態為「擱置」，由實心的紅色圖示表示。 如果執行階段已載入工作流程型別，中斷點就會變成「繫結」狀態。 如果您指定的中斷點格式不正確，例如活動名稱無效，就會出現錯誤視窗。 中斷點仍會新增至中斷點視窗，但以小的 "x" 記號標示。  
   
 > [!NOTE]
->  不支援在已叫用的工作流程上設定中斷點。  
+> 不支援在已叫用的工作流程上設定中斷點。  
 > 
 > [!WARNING]
->  請確定您選取的選項**啟用 Just My Code （僅限 Managed）** 從**工具**，**選項**，**偵錯**功能表之前偵錯。 如果您有兩個巢狀於另一個序列的序列，而且您在第一個內部序列上設定中斷點，按下**F11**將不進行偵錯到第二個內部序列<strong>啟用 Just My Code （僅限 Managed）</strong>未選取選項。  
+> 請確定您選取的選項**啟用 Just My Code （僅限 Managed）** 從**工具**，**選項**，**偵錯**功能表之前偵錯。 如果您有兩個巢狀於另一個序列的序列，而且您在第一個內部序列上設定中斷點，按下**F11**將不進行偵錯到第二個內部序列<strong>啟用 Just My Code （僅限 Managed）</strong>未選取選項。  
 > 
 > [!WARNING]
->  如果 XAML 檔案屬性的完整路徑不正確，就不會取得工作流程中的中斷點。將專案/方案移至另一個資料夾或另一台機器之後，XAML 檔案的完整路徑即不正確。選取 Ctrl+S 以儲存並更新完整路徑屬性。  
+> 如果 XAML 檔案屬性的完整路徑不正確，就不會取得工作流程中的中斷點。將專案/方案移至另一個資料夾或另一台機器之後，XAML 檔案的完整路徑即不正確。選取 Ctrl+S 以儲存並更新完整路徑屬性。  
   
 ### <a name="to-set-a-breakpoint-on-an-activity-in-the-design-view"></a>若要在設計檢視中的活動上設定中斷點  
   
-1.  選取您要偵錯工具中斷在哪一個活動上。  
+1. 選取您要偵錯工具中斷在哪一個活動上。  
   
-2.  在 **偵錯**功能表上，選取**切換中斷點**。 活動左邊的最上方會出現紅色圖示。  
+2. 在 **偵錯**功能表上，選取**切換中斷點**。 活動左邊的最上方會出現紅色圖示。  
   
      或者，您也可以按快速鍵**F9**金鑰後選取的活動，或您可以以滑鼠右鍵按一下活動，並選取**中斷點**然後**插入中斷點**從內容功能表。  
   
 ## <a name="see-also"></a>另請參閱  
- [如何： 叫用工作流程偵錯工具](../workflow-designer/how-to-invoke-the-workflow-debugger.md)   
+ [如何：叫用工作流程偵錯工具](../workflow-designer/how-to-invoke-the-workflow-debugger.md)   
  [偵錯工作流程與工作流程設計工具](../workflow-designer/debugging-workflows-with-the-workflow-designer.md)   
  [如何：使用工作流程設計工具對 XAML 進行偵錯](../workflow-designer/how-to-debug-xaml-with-the-workflow-designer.md)

@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e931ca44b8251a7530e1af6b1c8355d0cebd67cc
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 76315f6cde5bc54385e217a8f234389a7f45e621
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56598943"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62955920"
 ---
 # <a name="how-to-programmatically-print-worksheets"></a>HOW TO：以程式設計方式列印工作表
   您可以列印活頁簿中的任何工作表。
@@ -39,7 +39,7 @@ ms.locfileid: "56598943"
 
 ### <a name="to-preview-a-page-before-printing"></a>在列印前先預覽頁面
 
-1.  呼叫工作表的 <xref:Microsoft.Office.Tools.Excel.Worksheet.PrintPreview%2A> 方法。
+1. 呼叫工作表的 <xref:Microsoft.Office.Tools.Excel.Worksheet.PrintPreview%2A> 方法。
 
      [!code-csharp[Trin_VstcoreExcelAutomation#23](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#23)]
      [!code-vb[Trin_VstcoreExcelAutomation#23](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#23)]
@@ -57,7 +57,7 @@ ms.locfileid: "56598943"
 
 ### <a name="to-preview-a-page-before-printing"></a>在列印前先預覽頁面
 
-1.  呼叫使用中工作表的 <xref:Microsoft.Office.Interop.Excel._Worksheet.PrintPreview%2A> 方法。
+1. 呼叫使用中工作表的 <xref:Microsoft.Office.Interop.Excel._Worksheet.PrintPreview%2A> 方法。
 
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#15](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#15)]
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#15](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#15)]

@@ -13,10 +13,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.openlocfilehash: 6992232f0e893b887950335056fac4f142b284f1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 944f67276c6e0adaa8611eef857024e08adb21b7
+ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67253756"
 ---
 適用於 Windows 8.x 應用程式的 .NET

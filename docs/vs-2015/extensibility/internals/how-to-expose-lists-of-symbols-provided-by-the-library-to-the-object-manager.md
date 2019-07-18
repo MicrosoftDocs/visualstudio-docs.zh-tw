@@ -1,14 +1,9 @@
 ---
-title: 如何： 公開 （expose) 的程式庫提供對物件管理員中的符號清單 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：公開 （expose) 的程式庫提供對物件管理員中的符號清單 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - IVsSimpleLibrary2 interface, lists of symbols
 - IVsLibrary2 interface, lists of symbols
@@ -18,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 19757068-bdaa-4e7e-85d6-f8ce5026a859
 caps.latest.revision: 26
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 32adc26be31ebb090916f5f0f4b038bd20ab2ea2
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 888ffbf255816fb04d84cb72219df2cfeae73f45
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51722171"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431643"
 ---
-# <a name="how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager"></a>如何： 公開 （expose) 的程式庫提供對物件管理員中的符號清單
+# <a name="how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager"></a>HOW TO：將程式庫提供的符號清單公開至物件管理員
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 符號瀏覽工具，**類別檢視**，**物件瀏覽器**，**呼叫瀏覽器**並**尋找符號結果**，傳遞至新資料的要求[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]物件管理員。 物件管理員尋找適當的程式庫，並要求新的符號清單。 藉由提供要求的資料，以回應的程式庫[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]物件的管理員，透過<xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2>介面。 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]物件管理員會呼叫方法<xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2>介面取得的資料，並使用它來填入，或更新的符號瀏覽工具的檢視。  
@@ -34,15 +29,15 @@ ms.locfileid: "51722171"
  叫用的工具、 節點已展開，或重新整理檢視時，程式庫可能會收到資料的要求。 第一次叫用的符號瀏覽工具時，物件管理員會要求要提供最上層清單的程式庫。 當使用者展開清單節點時，則程式庫會提供該節點下的子系清單。 每個物件管理員查詢包含感興趣的項目的索引。 若要顯示新的清單，物件管理員必須決定多少項目會在清單中，項目，其名稱、 存取範圍，以及其他屬性的類型。  
   
 > [!NOTE]
->  下列的 managed 程式碼範例示範如何提供透過實作的符號清單<xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2>介面。 物件管理員這個介面中呼叫的方法，並使用取得的資料填入，或更新的符號瀏覽工具。  
+> 下列的 managed 程式碼範例示範如何提供透過實作的符號清單<xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2>介面。 物件管理員這個介面中呼叫的方法，並使用取得的資料填入，或更新的符號瀏覽工具。  
 >   
->  如需原生程式碼符號提供者實作，使用<xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectList2>介面。  
+> 如需原生程式碼符號提供者實作，使用<xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectList2>介面。  
   
 ## <a name="providing-lists-of-symbols-to-the-object-manager"></a>提供符號的清單至物件管理員  
   
 #### <a name="to-provide-lists-of-symbols-to-the-object-manager"></a>物件管理員提供的符號清單  
   
-1.  取得的符號清單中的項目數目，藉由實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetItemCount%2A>方法。 下列範例會示範如何 object manager 取得資訊清單中的項目數。  
+1. 取得的符號清單中的項目數目，藉由實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetItemCount%2A>方法。 下列範例會示範如何 object manager 取得資訊清單中的項目數。  
   
     ```vb  
     Protected m_Methods As System.Collections.Generic.SortedList(Of String, Method) = New System.Collections.Generic.SortedList(Of String, Method)()  
@@ -64,7 +59,7 @@ ms.locfileid: "51722171"
   
     ```  
   
-2.  取得類別目錄以及指定的清單項目的屬性的相關資訊，藉由實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetCategoryField2%2A>方法。 中指定的項目分類<xref:Microsoft.VisualStudio.Shell.Interop.LIB_CATEGORY>列舉型別。 下列範例會示範物件管理員如何取得屬性的指定分類的項目。  
+2. 取得類別目錄以及指定的清單項目的屬性的相關資訊，藉由實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetCategoryField2%2A>方法。 中指定的項目分類<xref:Microsoft.VisualStudio.Shell.Interop.LIB_CATEGORY>列舉型別。 下列範例會示範物件管理員如何取得屬性的指定分類的項目。  
   
     ```vb  
     Public Function GetCategoryField2(ByVal index As UInteger, ByVal Category As Integer, ByRef pfCatField As UInteger) As Integer  
@@ -159,7 +154,7 @@ ms.locfileid: "51722171"
   
     ```  
   
-3.  取得指定的清單項目之文字表示，藉由實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetTextWithOwnership%2A>方法。 下列範例示範如何取得指定項目的完整名稱。  
+3. 取得指定的清單項目之文字表示，藉由實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetTextWithOwnership%2A>方法。 下列範例示範如何取得指定項目的完整名稱。  
   
     ```vb  
     Public Function GetTextWithOwnership(<System.Runtime.InteropServices.ComAliasNameAttribute("Microsoft.VisualStudio.OLE.Interop.ULONG")> ByVal index As UInteger, <System.Runtime.InteropServices.ComAliasNameAttribute("Microsoft.VisualStudio.Shell.Interop.VSTREETEXTOPTIONS")> ByVal tto As Microsoft.VisualStudio.Shell.Interop.VSTREETEXTOPTIONS, <System.Runtime.InteropServices.ComAliasNameAttribute("Microsoft.VisualStudio.OLE.Interop.WCHAR")> ByRef ppszText As String) As Integer  
@@ -177,7 +172,7 @@ ms.locfileid: "51722171"
   
     ```  
   
-4.  取得指定的清單項目圖示的資訊，藉由實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetDisplayData%2A>方法。 圖示代表的型別 （類別、 方法等等） 和協助工具 （私人、 公用，依此類推） 的清單項目。 下列範例示範如何取得根據指定的項目屬性圖示的資訊。  
+4. 取得指定的清單項目圖示的資訊，藉由實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetDisplayData%2A>方法。 圖示代表的型別 （類別、 方法等等） 和協助工具 （私人、 公用，依此類推） 的清單項目。 下列範例示範如何取得根據指定的項目屬性圖示的資訊。  
   
     ```vb  
     Public Overridable Function GetDisplayData(ByVal index As UInteger, ByVal pData As Microsoft.VisualStudio.Shell.Interop.VSTREEDISPLAYDATA()) As Integer  
@@ -259,7 +254,7 @@ ms.locfileid: "51722171"
   
     ```  
   
-5.  取得有關指定的清單項目是否可展開藉由實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetExpandable3%2A>方法。 下列範例示範如何取得在指定的項目是否可展開的資訊。  
+5. 取得有關指定的清單項目是否可展開藉由實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetExpandable3%2A>方法。 下列範例示範如何取得在指定的項目是否可展開的資訊。  
   
     ```vb  
     Public Function GetExpandable(ByVal index As UInteger, ByRef pfExpandable As Integer) As Integer  
@@ -286,7 +281,7 @@ ms.locfileid: "51722171"
   
     ```  
   
-6.  藉由實作取得子清單的指定的清單項目的符號<xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetList2%2A>方法。 下列範例示範如何取得子清單的指定項目符號**呼叫**或是**的呼叫端**圖形。  
+6. 藉由實作取得子清單的指定的清單項目的符號<xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetList2%2A>方法。 下列範例示範如何取得子清單的指定項目符號**呼叫**或是**的呼叫端**圖形。  
   
     ```vb  
     ' Call graph list.  
@@ -475,7 +470,6 @@ ms.locfileid: "51722171"
   
 ## <a name="see-also"></a>另請參閱  
  [支援符號瀏覽工具](../../extensibility/internals/supporting-symbol-browsing-tools.md)   
- [如何： 使用物件管理員註冊程式庫](../../extensibility/internals/how-to-register-a-library-with-the-object-manager.md)   
- [如何： 識別文件庫中的符號](../../extensibility/internals/how-to-identify-symbols-in-a-library.md)   
+ [如何：使用物件管理員註冊程式庫](../../extensibility/internals/how-to-register-a-library-with-the-object-manager.md)   
+ [如何：識別文件庫中的符號](../../extensibility/internals/how-to-identify-symbols-in-a-library.md)   
  [舊版語言服務的擴充性](../../extensibility/internals/legacy-language-service-extensibility.md)
-

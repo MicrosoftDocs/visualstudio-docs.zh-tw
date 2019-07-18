@@ -1,14 +1,9 @@
 ---
 title: IDebugProperty2::GetMemoryBytes |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugProperty2::GetMemoryBytes
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: b32042ed-7a06-4b4a-99ef-fe03b0aa61cc
 caps.latest.revision: 10
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 0175d20d08554fb63f84b29b90ddc4504d8bbde0
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 77b58f247f2a7d12c5d39c4044c37e9c0782c947
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51749666"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68193524"
 ---
 # <a name="idebugproperty2getmemorybytes"></a>IDebugProperty2::GetMemoryBytes
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -53,4 +48,3 @@ int GetMemoryBytes ( 
 ## <a name="see-also"></a>另請參閱  
  [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)   
  [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md)
-

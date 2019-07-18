@@ -1,26 +1,21 @@
 ---
 title: IDebugDocumentPositionOffset2::GetRange |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - IDebugDocumentPositionOffset2::GetRange
 ms.assetid: 27da7130-0932-4f97-abde-05e6fb018606
 caps.latest.revision: 7
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: eca754c3154267629a1d6567c3412ec44a0784f9
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: a028a2c88fe44aa6a117ddb81cff5788eec1732e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51809242"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68200226"
 ---
 # <a name="idebugdocumentpositionoffset2getrange"></a>IDebugDocumentPositionOffset2::GetRange
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -66,4 +61,3 @@ Line 6: x = 1;
 ## <a name="see-also"></a>另請參閱  
  [IDebugDocumentPositionOffset2](../../../extensibility/debugger/reference/idebugdocumentpositionoffset2.md)   
  [GetRange](../../../extensibility/debugger/reference/idebugdocumentposition2-getrange.md)
-

@@ -1,25 +1,20 @@
 ---
-title: BeginCapture |Microsoft Docs
-ms.custom: ''
+title: BeginCapture | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 9edbb52d-ee0b-4cc4-a382-972bcee067d3
 caps.latest.revision: 8
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 9d9ac50f2e1f5f92a16a7482a25c9054c2a36f68
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: b16fdc4d0a12d7082400e697ca44a7ca4c549f9a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51787298"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62431793"
 ---
 # <a name="begincapture"></a>BeginCapture
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,6 +35,3 @@ void BeginCapture();
 ## <a name="see-also"></a>另請參閱  
  [EndCapture](../debugger/endcapture.md)   
  [CaptureCurrentFrame](../debugger/capturecurrentframe.md)
-
-
-

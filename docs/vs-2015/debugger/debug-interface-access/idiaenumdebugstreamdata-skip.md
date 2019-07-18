@@ -1,14 +1,9 @@
 ---
 title: 'Idiaenumdebugstreamdata:: Skip |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 106ae1d3-a379-4077-babf-2665e697b0c4
 caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: d56ceef78fcb76be2d483c1b0fad98173e1d1bfb
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: e71d9631949fc9ae22f80b1b5be3b0662d918ddd
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51747914"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68187351"
 ---
 # <a name="idiaenumdebugstreamdataskip"></a>IDiaEnumDebugStreamData::Skip
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -47,6 +42,3 @@ HRESULT Skip ( 
   
 ## <a name="see-also"></a>另請參閱  
  [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md)
-
-
-

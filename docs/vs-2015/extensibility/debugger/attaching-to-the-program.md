@@ -1,26 +1,21 @@
 ---
 title: 附加至程式 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - debug engines, attaching to programs
 ms.assetid: 9a3f5b83-60b5-4ef0-91fe-a432105bd066
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 8c16c13b4dec412fa44be5cbfbbdd8494b805545
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: ab9301f31976b084c3c8565329dca248503e40ae
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51777938"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437420"
 ---
 # <a name="attaching-to-the-program"></a>附加至程式
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -50,19 +45,19 @@ ms.locfileid: "51777938"
   
   在後`IDebugEngine2::Attach`呼叫方法，請遵循下列步驟，在您實作`IDebugEngine2::Attach`方法：  
   
-1.  傳送[IDebugEngineCreateEvent2](../../extensibility/debugger/reference/idebugenginecreateevent2.md) SDM 事件物件。 如需詳細資訊，請參閱 <<c0> [ 傳送事件](../../extensibility/debugger/sending-events.md)。  
+1. 傳送[IDebugEngineCreateEvent2](../../extensibility/debugger/reference/idebugenginecreateevent2.md) SDM 事件物件。 如需詳細資訊，請參閱 <<c0> [ 傳送事件](../../extensibility/debugger/sending-events.md)。  
   
-2.  呼叫[GetProgramId](../../extensibility/debugger/reference/idebugprogram2-getprogramid.md)方法[IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md)物件傳遞給`IDebugEngine2::Attach`方法。  
+2. 呼叫[GetProgramId](../../extensibility/debugger/reference/idebugprogram2-getprogramid.md)方法[IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md)物件傳遞給`IDebugEngine2::Attach`方法。  
   
      這會傳回`GUID`用來找出的程式。 `GUID`必須儲存在物件，代表本機程式，以 DE，而且它必須傳回時`IDebugProgram2::GetProgramId`上呼叫方法`IDebugProgram2`介面。  
   
     > [!NOTE]
-    >  如果您實作`IDebugProgramNodeAttach2`介面，該程式`GUID`傳遞至`IDebugProgramNodeAttach2::OnAttach`方法。 這`GUID`使用於程式`GUID`所傳回`IDebugProgram2::GetProgramId`方法。  
+    > 如果您實作`IDebugProgramNodeAttach2`介面，該程式`GUID`傳遞至`IDebugProgramNodeAttach2::OnAttach`方法。 這`GUID`使用於程式`GUID`所傳回`IDebugProgram2::GetProgramId`方法。  
   
-3.  傳送[IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md)通知 SDM 事件物件的本機`IDebugProgram2`以 DE 代表程式建立物件。 如需詳細資訊，請參閱 <<c0> [ 傳送事件](../../extensibility/debugger/sending-events.md)。  
+3. 傳送[IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md)通知 SDM 事件物件的本機`IDebugProgram2`以 DE 代表程式建立物件。 如需詳細資訊，請參閱 <<c0> [ 傳送事件](../../extensibility/debugger/sending-events.md)。  
   
     > [!NOTE]
-    >  這不是相同`IDebugProgram2`物件傳遞至`IDebugEngine2::Attach`方法。 先前傳遞`IDebugProgram2`物件的連接埠，只可辨識，而且是不同的物件。  
+    > 這不是相同`IDebugProgram2`物件傳遞至`IDebugEngine2::Attach`方法。 先前傳遞`IDebugProgram2`物件的連接埠，只可辨識，而且是不同的物件。  
   
 ## <a name="see-also"></a>另請參閱  
  [啟動時附加](../../extensibility/debugger/launch-based-attachment.md)   
@@ -77,4 +72,3 @@ ms.locfileid: "51777938"
  [IDebugProgramEx2](../../extensibility/debugger/reference/idebugprogramex2.md)   
  [附加](../../extensibility/debugger/reference/idebugprogramex2-attach.md)   
  [Attach](../../extensibility/debugger/reference/idebugengine2-attach.md)
-

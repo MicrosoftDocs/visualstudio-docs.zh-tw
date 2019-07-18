@@ -6,17 +6,17 @@ helpviewer_keywords:
 - debug engines, AsyncVoidMethodBuilder structure [.NET Framework]
 - AsyncVoidMethodBuilder structure [.NET Framework debug engines]
 ms.assetid: fe2970ab-d4c5-4355-a8e4-772ee0a57178
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0a4c51d76d38680945eaccbd3ace256813668c51
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 109f7d0491420ce4f3df2179dad15a582213d439
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56716801"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66350932"
 ---
 # <a name="asyncvoidmethodbuilder-structure---internal-members"></a>AsyncVoidMethodBuilder 結構-內部成員
 本主題描述的內部成員<xref:System.Runtime.CompilerServices.AsyncVoidMethodBuilder>類別。 如需此類別的一般資訊，請參閱<xref:System.Runtime.CompilerServices.AsyncVoidMethodBuilder>參考主題。

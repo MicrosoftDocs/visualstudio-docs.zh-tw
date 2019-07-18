@@ -1,14 +1,9 @@
 ---
-title: VSCodeWindow 物件 |Microsoft Docs
-ms.custom: ''
+title: VSCodeWindow Object | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 f1_keywords:
 - VSCodeWindow
 helpviewer_keywords:
@@ -17,13 +12,13 @@ helpviewer_keywords:
 ms.assetid: cf5fe926-e784-4098-bc01-cac49c7c55c6
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: e0abc38177bc10f4a8ddd9c20cbde1409de20ea3
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 511c730ec3a11b02d46f5e9c9271c028bb4fa325
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51727348"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65690765"
 ---
 # <a name="vscodewindow-object"></a>VSCodeWindow 物件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,5 +37,4 @@ ms.locfileid: "51727348"
   
 ## <a name="see-also"></a>另請參閱  
  <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider>   
- [圖形編輯](http://msdn.microsoft.com/en-us/f08872bd-fd9c-4e36-8cf2-a2a2622ef986)
-
+ [圖形編輯](https://msdn.microsoft.com/f08872bd-fd9c-4e36-8cf2-a2a2622ef986)

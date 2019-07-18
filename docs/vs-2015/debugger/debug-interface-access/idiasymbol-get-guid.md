@@ -1,14 +1,9 @@
 ---
 title: 'Idiasymbol:: Get_guid |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: c02a6c92-f406-4646-82e7-3cd005af900e
 caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: dea7ab333eb5eb161596bca84173b6f2e0478781
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 1dddb9035a73a7d7da281a77760eafb066c4ddd5
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51739425"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "64780474"
 ---
 # <a name="idiasymbolgetguid"></a>IDiaSymbol::get_guid
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -46,17 +41,14 @@ HRESULT get_guid ( 
  如果成功，則傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。  
   
 > [!NOTE]
->  傳回值為`S_FALSE`表示此屬性不適用於符號。  
+> 傳回值為`S_FALSE`表示此屬性不適用於符號。  
   
 ## <a name="requirements"></a>需求  
   
-|需求|描述|  
+|需求|說明|  
 |-----------------|-----------------|  
 |標頭：|dia2.h|  
 |版本:|DIA SDK v7.0|  
   
 ## <a name="see-also"></a>另請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
-
-
-

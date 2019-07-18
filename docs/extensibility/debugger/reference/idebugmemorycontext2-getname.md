@@ -8,17 +8,20 @@ helpviewer_keywords:
 - IDebugMemoryContext2::GetName method
 - GetName method
 ms.assetid: 8c212556-7d9e-4d68-b2a9-8212f50d0287
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a404687e91b8374bad056ee9cd5e80077350c3a9
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: ee8dd65a3bcaef7fd5a23da6c2a5f9c21a4838af
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56693954"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66347001"
 ---
 # <a name="idebugmemorycontext2getname"></a>IDebugMemoryContext2::GetName
 擷取此內容的使用者可顯示名稱。
@@ -37,10 +40,9 @@ int GetName(
 );
 ```
 
-#### <a name="parameters"></a>參數
- `pbstrName`
-
- [out]傳回記憶體內容的名稱。
+## <a name="parameters"></a>參數
+`pbstrName`\
+[out]傳回記憶體內容的名稱。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

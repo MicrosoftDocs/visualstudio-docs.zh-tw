@@ -8,12 +8,12 @@ ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: d3ef293b4e25f85cd901c42382158bdd75742e26
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: df46a2731f9923d85a16082f96c44947099db592
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55936417"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63000424"
 ---
 # <a name="get-started-with-r-tools-for-visual-studio"></a>Visual Studio R 工具使用者入門
 
@@ -21,7 +21,7 @@ ms.locfileid: "55936417"
 
 ## <a name="create-an-r-project"></a>建立 R 專案
 
-1. 啟動 Visual Studio。
+1. 開啟 Visual Studio。
 1. 選擇 檔案 > 新增 > 專案 (**Ctrl**+**Shift**+**N**)
 1. 從 [範本] > [R] 下選取 [R 專案]、提供專案名稱和位置，然後選取 [確定]：
 

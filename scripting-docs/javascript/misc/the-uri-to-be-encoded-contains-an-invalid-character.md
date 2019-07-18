@@ -14,19 +14,19 @@ ms.assetid: a3f0fdbb-8d4b-41ae-a396-43dfc9483760
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a3c71b90d0711bf317d0ed72d51c0d5d45297c80
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: f2f9111acf656bf882a3d506fe95b8361f3693ff
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56841866"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63006204"
 ---
 # <a name="the-uri-to-be-encoded-contains-an-invalid-character"></a>要編碼的 URI 包含無效的字元
 您嘗試將字串編碼為 URI （統一資源識別項），但它包含無效的字元。 雖然大部分字元字串轉換成 Uri 內有效，但是某些 Unicode 字元序列是不合法的。  
   
 ### <a name="to-correct-this-error"></a>更正這個錯誤  
   
--   確定要編碼的字串，包含只有有效的 Unicode 順序。 完整的 URI 被組成一連串的元件和分隔符號。 角括弧括住的名稱代表的元件，而":"，"/"，";"和"？"是用來做為分隔符號的保留的字元。 一般格式如下：  
+- 確定要編碼的字串，包含只有有效的 Unicode 順序。 完整的 URI 被組成一連串的元件和分隔符號。 角括弧括住的名稱代表的元件，而":"，"/"，";"和"？"是用來做為分隔符號的保留的字元。 一般格式如下：  
   
     ```JavaScript  
     <Scheme>:<first>/<second>;<third>?<fourth>  

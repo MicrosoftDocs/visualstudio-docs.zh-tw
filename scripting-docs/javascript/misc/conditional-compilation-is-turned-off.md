@@ -14,12 +14,12 @@ ms.assetid: 59a030b0-a6c6-47f2-b90e-c0ed204d5116
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3d3c225df20113308ee7037742ad74efb6a0cc2e
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 8317121b840d82ab12d4a9e1ca50f6680eb1e21d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56840350"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62946572"
 ---
 # <a name="conditional-compilation-is-turned-off"></a>條件式編譯已經關閉
 您嘗試使用不含第一次開啟的條件式編譯的條件式編譯變數上。 開啟 條件式編譯會告訴[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]編譯器解譯開頭為 @ 做為條件式編譯變數的識別項。 您可以從您使用陳述式的條件式程式碼：  
@@ -30,7 +30,7 @@ ms.locfileid: "56840350"
   
 ### <a name="to-correct-this-error"></a>更正這個錯誤  
   
--   條件式程式碼的開頭加入下列陳述式：  
+- 條件式程式碼的開頭加入下列陳述式：  
   
     ```JavaScript  
     /*@cc_on @*/  

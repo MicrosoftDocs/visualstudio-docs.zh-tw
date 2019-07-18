@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 387ec5814e0b5a2a8c2169198a3ceebad47e10d4
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 8697a49c57840d358eeaa597fe984b6671958b09
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56599476"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446961"
 ---
 # <a name="ribbon-overview"></a>功能區概觀
   功能區是一種方式，使其更容易尋找到組織相關的命令。 命令會顯示為功能區上的控制項。 控制項分為*群組*沿著水平帶狀的應用程式視窗的頂端。 相關的群組會組織在索引標籤上。
@@ -49,7 +49,7 @@ ms.locfileid: "56599476"
 - 將自訂群組加入自訂或內建的索引標籤。
 
   > [!NOTE]
-  >  內建索引標籤或群組可以是現有的 Microsoft Office 應用程式功能區上的。 例如，**資料** 索引標籤是在 Excel 中的內建索引標籤。 **連線**群組上是內建群組**資料** 索引標籤。
+  > 內建索引標籤或群組可以是現有的 Microsoft Office 應用程式功能區上的。 例如，**資料** 索引標籤是在 Excel 中的內建索引標籤。 **連線**群組上是內建群組**資料** 索引標籤。
 
 - 將自訂控制項加入自訂群組。
 
@@ -93,12 +93,12 @@ ms.locfileid: "56599476"
 ## <a name="add-multiple-ribbon-items-to-a-project"></a>將多個功能區項目加入至專案
  一個專案中可以加入多個功能區項目。 如果您想要執行下列兩項工作的其中之一，這會很有用：
 
--   建立 Outlook 功能區*偵測器*。 如需詳細資訊，請參閱 < [outlook 自訂功能區](../vsto/customizing-a-ribbon-for-outlook.md)。
+- 建立 Outlook 功能區*偵測器*。 如需詳細資訊，請參閱 < [outlook 自訂功能區](../vsto/customizing-a-ribbon-for-outlook.md)。
 
     > [!NOTE]
-    >  [偵測器] 是使用者執行特定工作時開啟的視窗，例如建立電子郵件訊息。
+    > [偵測器] 是使用者執行特定工作時開啟的視窗，例如建立電子郵件訊息。
 
--   選取要顯示在執行階段的功能區。
+- 選取要顯示在執行階段的功能區。
 
 ### <a name="select-which-ribbons-to-display-at-runtime"></a>選取要在執行階段顯示哪個功能區
  因為專案可以包含多個功能區，您可以選取要顯示在執行階段的功能區。
@@ -106,7 +106,7 @@ ms.locfileid: "56599476"
  若要選取要顯示在執行階段的功能區，請覆寫`CreateRibbonExtensibilityObject`方法中的`ThisAddin`， `ThisWorkbook`，或`ThisDocument`的專案，然後傳回您想要顯示的功能區類別。 下列範例會檢查名為欄位的值`myCondition`，並傳回適當的功能區。
 
 > [!NOTE]
->  在此範例中所用的語法會傳回一個功能區，利用所建立**功能區 （視覺化設計工具）** 項目。 傳回一個功能區，建立使用語法**功能區 (XML)** 項目會有些許不同。 如需有關傳回**功能區 (XML)** 項目，請參閱[功能區 XML](../vsto/ribbon-xml.md)。
+> 在此範例中所用的語法會傳回一個功能區，利用所建立**功能區 （視覺化設計工具）** 項目。 傳回一個功能區，建立使用語法**功能區 (XML)** 項目會有些許不同。 如需有關傳回**功能區 (XML)** 項目，請參閱[功能區 XML](../vsto/ribbon-xml.md)。
 
  加入下列程式碼：
 
@@ -115,7 +115,7 @@ ms.locfileid: "56599476"
 
 ### <a name="related-topics"></a>相關主題
 
-|標題|描述|
+|標題|說明|
 |-----------|-----------------|
 |[如何：開始自訂功能區](../vsto/how-to-get-started-customizing-the-ribbon.md)|示範如何自訂 Microsoft Office 應用程式的功能區中，新增**功能區 （視覺化設計工具）** 或是**功能區 (XML)** 在 Office 專案的項目。|
 |[功能區設計工具](../vsto/ribbon-designer.md)|說明如何使用功能區設計工具，以及在將自訂索引標籤、 群組和控制項新增至 Microsoft Office 應用程式的功能區。|

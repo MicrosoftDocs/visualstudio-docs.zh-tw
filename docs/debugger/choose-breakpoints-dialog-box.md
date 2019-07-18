@@ -22,11 +22,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 50547507bf37eb22346bcbf3f48585c9cb0b26b6
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56637031"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62564778"
 ---
 # <a name="choose-breakpoints-dialog-box"></a>[選擇中斷點] 對話方塊
 **選擇中斷點** 對話方塊隨即開啟，當您嘗試從模稜兩可的輸入中設定中斷點**新中斷點** 對話方塊。 模稜兩可的常見範例是輸入的多載函式名稱。
@@ -37,6 +37,6 @@ ms.locfileid: "56637031"
 
  **無**清除中列出的所有中斷點**中斷點** 方塊中。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [使用中斷點](../debugger/using-breakpoints.md)

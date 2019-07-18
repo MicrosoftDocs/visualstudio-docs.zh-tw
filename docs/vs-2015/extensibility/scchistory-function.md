@@ -1,14 +1,9 @@
 ---
 title: SccHistory 函式 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - SccHistory
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: a636d9d3-47c1-4b48-ac6b-bcfde19d6cf9
 caps.latest.revision: 17
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 8621b437cd21d0294abee65386c40465888bd3e8
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 8df85c03201e46768c43fb64cc41b7fa081eb91a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51740063"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446824"
 ---
 # <a name="scchistory-function"></a>SccHistory 函式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -81,9 +76,8 @@ SCCRTN SccHistory(
  請注意，在某些情況下，此呼叫的執行期間可能會變更所檢查的檔案。 比方說，[!INCLUDE[vsvss](../includes/vsvss-md.md)]歷程記錄命令讓使用者有機會取得舊版本的檔案。 在此情況下，原始檔控制外掛程式傳回`SCC_I_RELOAD`警告 IDE，它需要重新載入檔案。  
   
 > [!NOTE]
->  如果原始檔控制外掛程式不支援此函式陣列的檔案，就可以顯示只有第一個檔案的檔案歷程記錄。  
+> 如果原始檔控制外掛程式不支援此函式陣列的檔案，就可以顯示只有第一個檔案的檔案歷程記錄。  
   
 ## <a name="see-also"></a>另請參閱  
  [原始檔控制外掛程式 API 函式](../extensibility/source-control-plug-in-api-functions.md)   
  [SccOpenProject](../extensibility/sccopenproject-function.md)
-

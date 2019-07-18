@@ -1,12 +1,9 @@
 ---
 title: 驗證 UML 模型 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML, constraints
 - UML, validation
@@ -14,13 +11,13 @@ ms.assetid: deed5092-c11d-4431-a801-1e866a103075
 caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: fea958a20e5eee78f79f324ad19ef646f7920951
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: f795928677f4a232c3ae3cec0d3bab9d9266cb35
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51739975"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437465"
 ---
 # <a name="validate-your-uml-model"></a>驗證 UML 模型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +32,7 @@ ms.locfileid: "51739975"
 - **驗證命令。** 若要叫用驗證在任何時間，請按一下**驗證 UML 模型**上**架構**功能表。  
   
   > [!NOTE]
-  >  已安裝驗證條件約束時，才會出現命令。  
+  > 已安裝驗證條件約束時，才會出現命令。  
   
 - **儲存模型。** 當您儲存模型時，可以套用驗證條件約束。 這些條件約束的目的是協助確定您不會儲存根據專案解譯無效的模型。  
   
@@ -52,29 +49,26 @@ ms.locfileid: "51739975"
   
 #### <a name="to-install-a-visual-studio-extension"></a>安裝 Visual Studio 擴充功能  
   
-1.  按兩下 **.vsix** Windows 檔案總管 （或檔案總管） 中的檔案。  
+1. 按兩下 **.vsix** Windows 檔案總管 （或檔案總管） 中的檔案。  
   
-2.  重新啟動已在執行的任何 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 執行個體。  
+2. 重新啟動已在執行的任何 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 執行個體。  
   
 ## <a name="disabling-and-uninstalling-validation-constraints"></a>停用並解除安裝驗證條件約束  
  當您想要使用條件約束並不適用的模型時，可以暫時停用包含它們的擴充功能。 如此一來，您可以藉由啟用和停用不同的擴充功能，在不同的時間使用不同種類的模型。  
   
 #### <a name="to-disable-or-uninstall-a-visual-studio-extension"></a>停用或解除安裝 Visual Studio 擴充功能  
   
-1.  在  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] **工具**功能表上，按一下 **擴充功能和更新**。  
+1. 在  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] **工具**功能表上，按一下 **擴充功能和更新**。  
   
-2.  連同延伸模組中，按一下**停用**暫時停用擴充功能。 您可以稍後重新啟用它回到**擴充功能和更新**視窗。  
+2. 連同延伸模組中，按一下**停用**暫時停用擴充功能。 您可以稍後重新啟用它回到**擴充功能和更新**視窗。  
   
      \-或-  
   
      按一下 **解除安裝**移除擴充功能。  
   
-3.  重新啟動 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。  
+3. 重新啟動 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。  
   
 ## <a name="see-also"></a>另請參閱  
  [定義 UML 模型的驗證條件約束](../modeling/define-validation-constraints-for-uml-models.md)   
  [建立應用程式模型](../modeling/create-models-for-your-app.md)   
  [在開發程序中使用模型](../modeling/use-models-in-your-development-process.md)
-
-
-

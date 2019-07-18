@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6de817e3aaecbdd1c89cc2174e91126ea39d99d7
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58194615"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62541112"
 ---
 # <a name="ca3075-insecure-dtd-processing"></a>CA3075:不安全的 DTD 處理
 

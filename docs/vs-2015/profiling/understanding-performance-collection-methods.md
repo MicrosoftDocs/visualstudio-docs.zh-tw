@@ -13,12 +13,12 @@ caps.latest.revision: 25
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 357623a6c93cf2ec87cc9d4b53f76cec535fd6c1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: e398d7e5e297daa68663902efb8a9fa0775c86fa
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54805304"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431634"
 ---
 # <a name="understanding-performance-collection-methods"></a>了解效能收集方法
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "54805304"
 Visual Studio 程式碼剖析工具提供五種方法讓您收集效能資料。 本主題說明不同方法，並建議一些適合利用特定方法收集資料的案例。  
   
 > [!NOTE]
->  Windows 8 和 Windows Server 2012 增強式安全性功能需要的重大變更，會以 Visual Studio 分析工具在這些平台收集資料的方式表現。 Windows 市集應用程式也需要新的資料收集技術。 請參閱 [Windows 8 和 Windows Server 2012 應用程式的效能工具](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)。  
+> Windows 8 和 Windows Server 2012 增強式安全性功能需要的重大變更，會以 Visual Studio 分析工具在這些平台收集資料的方式表現。 Windows 市集應用程式也需要新的資料收集技術。 請參閱 [Windows 8 和 Windows Server 2012 應用程式的效能工具](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)。  
   
 |方法|描述|  
 |------------|-----------------|  
@@ -38,7 +38,7 @@ Visual Studio 程式碼剖析工具提供五種方法讓您收集效能資料。
   
  藉由使用某些分析方法，您也可以收集其他資料，例如軟體和硬體的效能計數器。 如需詳細資訊，請參閱[收集其他效能資料](../profiling/collecting-additional-performance-data.md)。  
   
-##  <a name="sampling"></a>取樣  
+## <a name="sampling"></a>取樣  
  取樣分析方法可收集應用程式在執行程式碼剖析期間所執行工作的相關統計資料。 取樣方法屬於輕量型，對於執行應用程式方法影響並不大。  
   
  取樣是 Visual Studio 程式碼剖析工具的預設方法。 適用於下列項目︰  
@@ -57,7 +57,7 @@ Visual Studio 程式碼剖析工具提供五種方法讓您收集效能資料。
   
   [取樣方法資料檢視](../profiling/profiler-sampling-method-data-views.md)  
   
-##  <a name="instrumentation"></a>檢測  
+## <a name="instrumentation"></a>檢測  
  檢測分析方法可收集已進行程式碼剖析的應用程式中詳細的函式呼叫計時資料。 檢測分析適用於下列項目：  
   
 - 調查輸入/輸出瓶頸，例如磁碟 I/O。  
@@ -82,7 +82,7 @@ Visual Studio 程式碼剖析工具提供五種方法讓您收集效能資料。
   
   [檢測方法資料檢視](../profiling/instrumentation-method-data-views.md)  
   
-##  <a name="concurrency"></a>並行  
+## <a name="concurrency"></a>並行  
  並行程式碼剖析會收集有關多執行緒應用程式的資訊。 資源爭用分析會在每次強迫競爭執行緒等候共用資源的存取權時，收集詳細的呼叫堆疊資訊。 並行視覺化也會收集有關多執行緒應用程式如何與其本身、硬體、作業系統及主機電腦上的其他處理序互動的一般詳細資訊：  
   
 - 資源爭用報表可顯示爭用總數，以及等候資源以用於發生等候的模組、函式、原始碼程式行及指示所花費的總時間。 時間軸圖表也會顯示發生的爭用情況。  
@@ -97,7 +97,7 @@ Visual Studio 程式碼剖析工具提供五種方法讓您收集效能資料。
   
   [並行視覺化檢視](../profiling/concurrency-visualizer.md)  
   
-##  <a name="net_memory"></a> .NET 記憶體  
+## <a name="net_memory"></a> .NET 記憶體  
  .NET 記憶體配置分析方法會在每次於已進行程式碼剖析的應用程式中配置 .NET Framework 物件時，中斷電腦處理器。 也會收集物件存留期資料時，分析工具會在每次 .NET Framework 記憶體回收之後中斷處理器。  
   
  分析工具會收集有關配置時建立或在記憶體回收時終結的類型、大小及物件數目資訊。  
@@ -118,7 +118,7 @@ Visual Studio 程式碼剖析工具提供五種方法讓您收集效能資料。
   
   [.NET 記憶體資料檢視](../profiling/dotnet-memory-data-views.md)  
   
-##  <a name="tier_interaction"></a>階層互動  
+## <a name="tier_interaction"></a>階層互動  
  階層互動分析會將有關 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 頁面或其他應用程式與 [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] 資料庫之間的同步 [!INCLUDE[vstecado](../includes/vstecado-md.md)] 呼叫資訊，加入至程式碼剖析資料檔案。 資料包括呼叫的數目和時間，以及最大和最小次數。 階層互動資料可以加入至利用取樣、檢測、.NET 記憶體或並行方法收集的分析資料。  
   
  ![階層互動分析資料](../profiling/media/tierinteraction-profilingtools.png "TierInteraction_ProfilingTools")  
@@ -128,6 +128,6 @@ Visual Studio 程式碼剖析工具提供五種方法讓您收集效能資料。
   
  [階層互動檢視](../profiling/tier-interaction-views.md)  
   
-## <a name="see-also"></a>請參閱  
- [如何：收集網站的效能資料](../profiling/how-to-collect-performance-data-for-a-web-site.md)   
+## <a name="see-also"></a>另請參閱  
+ [如何：為網站收集效能資料](../profiling/how-to-collect-performance-data-for-a-web-site.md)   
  [效能分析的初級開發人員指南](../profiling/beginners-guide-to-performance-profiling.md)

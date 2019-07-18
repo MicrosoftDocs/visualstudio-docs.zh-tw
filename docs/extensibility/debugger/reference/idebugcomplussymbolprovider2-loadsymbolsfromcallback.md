@@ -6,17 +6,20 @@ helpviewer_keywords:
 - LoadSymbolsFromCallback
 - IDebugComPlusSymbolProvider2::LoadSymbolsFromCallback
 ms.assetid: 905315ba-8e9b-4889-b9da-98e1441950ad
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 22d0d31530c5b0b81f3a8e622893874efecfbea5
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 88964d7631681d779132738352acae356aae60a5
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56720740"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66334668"
 ---
 # <a name="idebugcomplussymbolprovider2loadsymbolsfromcallback"></a>IDebugComPlusSymbolProvider2::LoadSymbolsFromCallback
 載入偵錯符號使用指定的回呼方法。
@@ -47,34 +50,27 @@ int LoadSymbolsFromCallback(
 );
 ```
 
-#### <a name="parameters"></a>參數
-`ulAppDomainID`
+## <a name="parameters"></a>參數
+`ulAppDomainID`\
+[in]應用程式定義域的識別項。
 
- [in]應用程式定義域的識別項。
+`guidModule`\
+[in]模組的唯一識別碼。
 
-`guidModule`
+`pUnkMetadataImport`\
+[in]包含符號的中繼資料的物件。
 
- [in]模組的唯一識別碼。
+`pUnkCorDebugModule`\
+[in]物件，可實作[ICorDebugModule 介面](/dotnet/framework/unmanaged-api/debugging/icordebugmodule-interface)。
 
-`pUnkMetadataImport`
+`bstrModuleName`\
+[in]模組的名稱。
 
- [in]包含符號的中繼資料的物件。
+`bstrSymSearchPath`\
+[in]若要搜尋符號檔案的路徑。
 
-`pUnkCorDebugModule`
-
- [in]物件，可實作[ICorDebugModule 介面](/dotnet/framework/unmanaged-api/debugging/icordebugmodule-interface)。
-
-`bstrModuleName`
-
- [in]模組的名稱。
-
-`bstrSymSearchPath`
-
- [in]若要搜尋符號檔案的路徑。
-
-`pCallback`
-
- [in]表示回呼方法的物件。
+`pCallback`\
+[in]表示回呼方法的物件。
 
 ## <a name="return-value"></a>傳回值
 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

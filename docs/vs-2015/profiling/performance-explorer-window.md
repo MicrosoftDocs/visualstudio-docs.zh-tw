@@ -14,45 +14,45 @@ caps.latest.revision: 25
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b486326985261b5d024c747853d24be3fad19fd4
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: a370ae802408ecc821de4cd15824f9d1fca42b75
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54780717"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105320"
 ---
 # <a name="performance-explorer-window"></a>效能總管視窗
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]整合式開發環境 (IDE) 中的 [效能總管] 視窗可讓您利用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 程式碼剖析工具來設定及啟動效能工作階段。  
+[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]整合式開發環境 (IDE) 中的 [效能總管]  視窗可讓您利用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 程式碼剖析工具來設定及啟動效能工作階段。  
   
  **需求**  
   
--   [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)]、[!INCLUDE[vsPreLong](../includes/vsprelong-md.md)]、[!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
 ## <a name="performance-explorer-toolbar"></a>效能總管工具列  
- 下列選項位於 [效能總管] 工具列上：  
+ 下列選項位於 [效能總管]  工具列上：  
   
--   **啟動效能精靈** - 顯示將新的效能工作階段加入 [效能總管] 視窗的 [效能精靈]。  
+- **啟動效能精靈** - 顯示將新的效能工作階段加入 [效能總管] 視窗的 [效能精靈]。  
   
--   **新增效能工作階段** - 將空白的效能工作階段加入 [效能總管] 視窗。  
+- **新增效能工作階段** - 將空白的效能工作階段加入 [效能總管] 視窗。  
   
--   **啟動** - [啟動] 命令按鈕清單可讓您啟動立即啟用分析 ([啟動並啟用程式碼剖析]) 或暫停分析 ([啟動並暫停程式碼剖析]) 的目標應用程式。  
+- **啟動** - [啟動]  命令按鈕清單可讓您啟動立即啟用分析 ([啟動並啟用程式碼剖析]  ) 或暫停分析 ([啟動並暫停程式碼剖析]  ) 的目標應用程式。  
   
--   **方法** - 指定工作階段的程式碼剖析方法是取樣或檢測。  
+- **方法** - 指定工作階段的程式碼剖析方法是取樣或檢測。  
   
--   **停止** - 立即結束目標應用程式和程式碼剖析工具。  
+- **停止** - 立即結束目標應用程式和程式碼剖析工具。  
   
--   **附加/中斷連結** - 顯示 [將程式碼剖析工具附加至處理序] 對話方塊，供您選取一個執行中的處理序以附加程式碼剖析工具。  
+- **附加/中斷連結** - 顯示 [將程式碼剖析工具附加至處理序]  對話方塊，供您選取一個執行中的處理序以附加程式碼剖析工具。  
   
 ## <a name="performance-explorer-window"></a>效能總管視窗  
- [效能總管] 視窗包含樹狀目錄控制項，其中顯示一或多個效能工作階段的二進位檔和報表資料檔案。  
+ [效能總管]  視窗包含樹狀目錄控制項，其中顯示一或多個效能工作階段的二進位檔和報表資料檔案。  
   
--   **工作階段名稱** - 樹狀目錄控制項的根目錄，其中包含工作階段名稱。 以滑鼠右鍵按一下工作階段名稱可設定工作階段屬性，或啟動目標應用程式和程式碼剖析工具。  
+- **工作階段名稱** - 樹狀目錄控制項的根目錄，其中包含工作階段名稱。 以滑鼠右鍵按一下工作階段名稱可設定工作階段屬性，或啟動目標應用程式和程式碼剖析工具。  
   
--   **目標** - 顯示要在工作階段中進行程式碼剖析的二進位檔的名稱。 以滑鼠右鍵按一下 [目標] 來新增或移除二進位檔、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 專案或網站。 以滑鼠右鍵按一下目標名稱以設定個別二進位檔的屬性。  
+- **目標** - 顯示要在工作階段中進行程式碼剖析的二進位檔的名稱。 以滑鼠右鍵按一下 [目標]  來新增或移除二進位檔、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 專案或網站。 以滑鼠右鍵按一下目標名稱以設定個別二進位檔的屬性。  
   
--   **報表** - 顯示針對工作階段產生的程式碼剖析工具資料檔案的名稱。 以滑鼠右鍵按一下 [報表] 以加入現有的報表，或比較兩個程式碼剖析工具資料檔案。 以滑鼠右鍵按一下報表名稱以開啟、移除或匯出程式碼剖析工具資料檔案。  
+- **報表** - 顯示針對工作階段產生的程式碼剖析工具資料檔案的名稱。 以滑鼠右鍵按一下 [報表]  以加入現有的報表，或比較兩個程式碼剖析工具資料檔案。 以滑鼠右鍵按一下報表名稱以開啟、移除或匯出程式碼剖析工具資料檔案。  
   
 ## <a name="see-also"></a>請參閱  
  [概觀](../profiling/overviews-performance-tools.md)   

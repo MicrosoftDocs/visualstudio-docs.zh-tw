@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c27950e104b6064bdaf3b8b4a8fe4a760fa4e677
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55938068"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62792887"
 ---
 # <a name="accounts-environment-options-dialog-box"></a>選項對話方塊、環境、帳戶
 

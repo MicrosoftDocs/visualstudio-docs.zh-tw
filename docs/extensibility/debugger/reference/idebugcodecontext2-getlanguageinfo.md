@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugCodeContext2::GetLanguageInfo
 ms.assetid: 03002ef1-9fe6-44b6-b23b-ef7b86b2b21b
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e4afcb2a8fd9de89b74fccec373e71e19264fe56
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 08138fcd67e7d4fd5115ac13fe1b8348f76245d8
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56712485"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66339019"
 ---
 # <a name="idebugcodecontext2getlanguageinfo"></a>IDebugCodeContext2::GetLanguageInfo
 取得此程式碼內容的語言資訊。
@@ -38,14 +41,12 @@ int GetLanguageInfo( 
 );
 ```
 
-#### <a name="parameters"></a>參數
- `pbstrLanguage`
+## <a name="parameters"></a>參數
+`pbstrLanguage`\
+[in、 out]傳回字串，包含的語言名稱，例如"C++。 」
 
- [in、 out]傳回字串，包含名稱的語言，例如"C + +"。
-
- `pguidLanguage`
-
- [in、 out]例如，傳回之語言的程式碼內容，GUID `guidCPPLang`。
+`pguidLanguage`\
+[in、 out]例如，傳回之語言的程式碼內容，GUID `guidCPPLang`。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

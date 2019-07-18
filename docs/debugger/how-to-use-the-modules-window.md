@@ -25,14 +25,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0425929908f17b33de71a49b03ae8de729f28309
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 400961eaa14b87d70a685a87be5df48ac92c8281
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56681891"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62906138"
 ---
-# <a name="view-dlls-and-executables-in-the-modules-window-c-c-visual-basic-f"></a>在 [模組] 視窗中檢視的 Dll 和可執行檔 (C#，c + +、 Visual Basic 中， F#)
+# <a name="view-dlls-and-executables-in-the-modules-window-c-c-visual-basic-f"></a>在 [模組] 視窗中檢視的 Dll 和可執行檔 (C#， C++，Visual Basic 中， F#)
 
 Visual Studio 偵錯時，**模組** 視窗列出和顯示的 Dll 和可執行檔的相關資訊 (*.exe*檔案) 應用程式使用。
 
@@ -73,9 +73,9 @@ Visual Studio 偵錯時，**模組** 視窗列出和顯示的 Dll 和可執行�
 
 **若要變更符號載入特定模組的行為：**
 
-1.  在 [模組] 視窗中，以滑鼠右鍵按一下模組。
+1. 在 [模組] 視窗中，以滑鼠右鍵按一下模組。
 
-1.  以滑鼠右鍵按一下功能表中，請選取或取消選取**永遠負載自動**。 變更將會在下一個偵錯工作階段中生效。
+1. 以滑鼠右鍵按一下功能表中，請選取或取消選取**永遠負載自動**。 變更將會在下一個偵錯工作階段中生效。
 
 ## <a name="see-also"></a>另請參閱
 - [Breaking execution](/previous-versions/visualstudio/visual-studio-2010/7z9se2d8(v=vs.100)) (中斷執行)

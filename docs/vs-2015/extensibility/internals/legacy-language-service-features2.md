@@ -1,26 +1,21 @@
 ---
 title: 舊版語言服務功能 2 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], code development aides
 ms.assetid: 97c38622-ae0b-4ae0-90ed-604072c298d3
 caps.latest.revision: 17
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: eedd4162f45f5e1a68aea92af7c4f3cf71171cee
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 885940b90d24b471d1712670f53ea72fcd4d40e0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51761505"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434397"
 ---
 # <a name="legacy-language-service-features"></a>舊版語言服務功能
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -30,7 +25,7 @@ ms.locfileid: "51761505"
  舊版語言服務會實作成 VSPackage 的一部分，但實作語言服務功能的較新的方式是使用 MEF 擴充功能。 若要深入了解實作語言服務的新方式，請參閱[編輯器和語言服務延伸模組](../../extensibility/editor-and-language-service-extensions.md)。  
   
 > [!NOTE]
->  我們建議您開始使用新的編輯器 API 盡。 這會改善您的語言服務的效能，並可讓您充分利用新編輯器功能。  
+> 我們建議您開始使用新的編輯器 API 盡。 這會改善您的語言服務的效能，並可讓您充分利用新編輯器功能。  
   
 ## <a name="in-this-section"></a>本節內容  
  [舊版語言服務中的語法著色](../../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md)  
@@ -48,8 +43,7 @@ ms.locfileid: "51761505"
  [舊版語言服務中的大綱和隱藏文字](../../extensibility/internals/outlining-and-hidden-text-in-a-legacy-language-service.md)  
  說明如何實作大綱或隱藏的文字。  
   
- [如何︰在舊版語言服務中提供展開大綱的支援](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md)  
+ [如何：在舊版語言服務中提供展開大綱的支援](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md)  
  說明的步驟中實作偵錯工具支援的一些...  
   
 ## <a name="related-sections"></a>相關章節
-

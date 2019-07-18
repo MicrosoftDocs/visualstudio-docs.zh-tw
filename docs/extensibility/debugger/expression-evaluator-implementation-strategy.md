@@ -6,21 +6,21 @@ helpviewer_keywords:
 - expression evaluation, implementation strategy
 - debug engines, implementation strategies
 ms.assetid: 1bccaeb3-8109-4128-ae79-16fd8fbbaaa2
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c79b1e59c40354e3805d034920d0d3acc396a435
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: ee0842f8375faeca7e715d4b20c73ca13598dbc3
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56695995"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66353745"
 ---
 # <a name="expression-evaluator-implementation-strategy"></a>運算式評估工具的實作策略
 > [!IMPORTANT]
->  在 Visual Studio 2015 中，這種實作運算式評估工具已被取代。 實作 CLR 運算式評估工具的詳細資訊，請參閱[CLR 運算式評估工具](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)並[Managed 運算式評估工具範例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。
+> 在 Visual Studio 2015 中，這種實作運算式評估工具已被取代。 實作 CLR 運算式評估工具的詳細資訊，請參閱[CLR 運算式評估工具](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)並[Managed 運算式評估工具範例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。
 
  若要快速建立的運算式評估工具 (EE) 的其中一個方法是先實作最小的程式碼顯示本機變數中的所需**區域變數**視窗。 您最好了解中的每一行**區域變數** 視窗會顯示名稱、 類型和值的區域變數，且所有三個都由[IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md)物件。 名稱、 類型和本機變數的值取自`IDebugProperty2`物件，藉由呼叫其[GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md)方法。 如需有關如何顯示在中的區域變數**區域變數** 視窗中，請參閱[顯示區域變數](../../extensibility/debugger/displaying-locals.md)。
 

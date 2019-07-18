@@ -1,14 +1,9 @@
 ---
 title: 使用 Managed 的 Package Framework 實作專案類型 (C#) |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio SDK], creating with MPF
 - MPF projects
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 926de536-eead-415b-9451-f1ddc8c44630
 caps.latest.revision: 21
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: f248bdafaf0fdd632069e6cffe367cf0ed21135f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 86e250c5a5922df52acea7445c97862a00cdc826
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51741977"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68143726"
 ---
 # <a name="using-the-managed-package-framework-to-implement-a-project-type-c"></a>使用受控套件架構實作專案類型 (C#)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -34,9 +29,9 @@ Managed Package Framework (MPF) 提供 C# 類別，您可以使用，或繼承�
   
  若要將此專案新增至您的 VSPackage 方案中，執行下列作業：  
   
-1.  下載 MPFProj 檔案，才能*MPFProjectDir*。  
+1. 下載 MPFProj 檔案，才能*MPFProjectDir*。  
   
-2.  在  *MPFProjectDir*\Dev10\Src\CSharp\ProjectBase.file，變更下列區塊：  
+2. 在  *MPFProjectDir*\Dev10\Src\CSharp\ProjectBase.file，變更下列區塊：  
   
 ```  
 <!-- Provide a default value for $(ProjectBasePath) -->  
@@ -45,11 +40,11 @@ Managed Package Framework (MPF) 提供 C# 類別，您可以使用，或繼承�
   </PropertyGroup>  
 ```  
   
-1.  建立 VSPackage 專案。  
+1. 建立 VSPackage 專案。  
   
-2.  卸載 VSPackage 專案。  
+2. 卸載 VSPackage 專案。  
   
-3.  編輯 VSPackage.csproj 檔案，加上下列區塊在其他`<Import>`區塊：  
+3. 編輯 VSPackage.csproj 檔案，加上下列區塊在其他`<Import>`區塊：  
   
 ```  
 <Import Project="MPFProjectDir\Dev10\Src\CSharp\ProjectBase.files" />  
@@ -61,17 +56,17 @@ Managed Package Framework (MPF) 提供 C# 類別，您可以使用，或繼承�
   </PropertyGroup>  
 ```  
   
-1.  儲存專案。  
+1. 儲存專案。  
   
-2.  關閉並重新開啟 VSPackage 方案中。  
+2. 關閉並重新開啟 VSPackage 方案中。  
   
-3.  重新開啟 VSPackage 專案。 您應該會看到一個名為 ProjectBase 的新目錄。  
+3. 重新開啟 VSPackage 專案。 您應該會看到一個名為 ProjectBase 的新目錄。  
   
-4.  新增下列參考加入 VSPackage 專案：  
+4. 新增下列參考加入 VSPackage 專案：  
   
      Microsoft.Build.Tasks.4.0  
   
-5.  建置專案。  
+5. 建置專案。  
   
 ## <a name="hierarchy-classes"></a>階層架構類別  
  下表摘要說明 MPFProj 支援專案階層架構的類別。 如需詳細資訊，請參閱 <<c0> [ 階層和選取範圍](../../extensibility/internals/hierarchies-and-selection.md)。  
@@ -131,4 +126,3 @@ Managed Package Framework (MPF) 提供 C# 類別，您可以使用，或繼承�
 |`Microsoft.VisualStudio.Package.ProjectNodeProperties`|  
 |`Microsoft.VisualStudio.Package.FolderNodeProperties`|  
 |`Microsoft.VisualStudio.Package.ReferenceNodeProperties`|
-

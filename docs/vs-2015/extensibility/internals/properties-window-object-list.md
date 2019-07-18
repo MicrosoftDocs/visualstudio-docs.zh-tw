@@ -1,26 +1,21 @@
 ---
 title: 屬性視窗的物件清單 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Properties window, object list
 ms.assetid: 6c159c9d-345d-4b23-8ddd-9839d338b62f
 caps.latest.revision: 13
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: bbb9153a216b2d2fcc7cdeba0399aa60fc73881e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 95ef509491e05daf575e211ae479c815994eb3d0
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51768902"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68148336"
 ---
 # <a name="properties-window-object-list"></a>屬性視窗的物件清單
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -38,4 +33,3 @@ ms.locfileid: "51768902"
   
 ## <a name="see-also"></a>另請參閱  
  [擴充屬性](../../extensibility/internals/extending-properties.md)
-

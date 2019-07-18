@@ -1,5 +1,5 @@
 ---
-title: HOW TO：將類別分割成部分類別 (類別設計工具)
+title: 作法：將類別分割成部分類別 (類別設計工具)
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,14 +14,14 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 32ac7dc37787a91504988fc43636d49d2b3c9ce0
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e1426b1ad9799984f7b14604a1d8b685e9ce8813
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55924028"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65615407"
 ---
-# <a name="how-to-split-a-class-into-partial-classes-in-class-designer"></a>HOW TO：將類別分割成部分類別 (類別設計工具)
+# <a name="how-to-split-a-class-into-partial-classes-in-class-designer"></a>作法：將類別分割成部分類別 (類別設計工具)
 
 您可以使用 `partial` 關鍵字 (在 Visual Basic 中為 `Partial`)，將類別或結構的宣告分割成數個宣告。 您可以使用所需數目的部分宣告。
 

@@ -1,14 +1,9 @@
 ---
-title: ： Ca1710 識別項應該正確的後置詞 |Microsoft Docs
-ms.custom: ''
+title: CA1710:識別項應該使用正確的後置詞 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1710
 - IdentifiersShouldHaveCorrectSuffix
@@ -20,14 +15,14 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 2256e3f20dfdb4ddb8efa28d7ecdd203a139bcc5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 16b4c2fb13a8de1824233b491d752b796aea907d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49940160"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65676554"
 ---
-# <a name="ca1710-identifiers-should-have-correct-suffix"></a>CA1710：識別項應該使用正確的後置字元
+# <a name="ca1710-identifiers-should-have-correct-suffix"></a>CA1710:識別項應該使用正確的後置字元
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -59,12 +54,12 @@ ms.locfileid: "49940160"
 |<xref:System.Collections.Stack?displayProperty=fullName>|集合或堆疊|
 |<xref:System.Collections.Generic.ICollection%601?displayProperty=fullName>|集合|
 |<xref:System.Collections.Generic.IDictionary%602?displayProperty=fullName>|字典|
-|<xref:System.Data.DataSet?displayProperty=fullName>|DataSet|
+|<xref:System.Data.DataSet?displayProperty=fullName>|資料集|
 |<xref:System.Data.DataTable?displayProperty=fullName>|集合或 DataTable|
 |<xref:System.IO.Stream?displayProperty=fullName>|資料流|
 |<xref:System.Security.IPermission?displayProperty=fullName>|權限|
 |<xref:System.Security.Policy.IMembershipCondition?displayProperty=fullName>|條件|
-|事件處理常式委派。|事件處理常式|
+|事件處理常式委派。|EventHandler|
 
  型別都會實作<xref:System.Collections.ICollection>而產生的類型的資料結構，例如字典、 堆疊或佇列，可提供之型別的預定的使用方式的有意義資訊的名稱。
 
@@ -95,10 +90,7 @@ foreach(SomeType x in SomeDictionary.Values) { }
  對於其他後置字元，請勿隱藏此規則的警告。 後置詞允許的用途是明顯的是從型別名稱。
 
 ## <a name="related-rules"></a>相關的規則
- [CA1711：識別項名稱不應該使用不正確的後置字元](../code-quality/ca1711-identifiers-should-not-have-incorrect-suffix.md)
+ [CA1711:識別項不應該有不正確的後置詞](../code-quality/ca1711-identifiers-should-not-have-incorrect-suffix.md)
 
 ## <a name="see-also"></a>另請參閱
- [屬性](http://msdn.microsoft.com/library/ee0038ef-b247-4747-a650-3c5c5cd58d8b) [NIB： 事件與委派](http://msdn.microsoft.com/en-us/d98fd58b-fa4f-4598-8378-addf4355a115)
-
-
-
+ [屬性](https://msdn.microsoft.com/library/ee0038ef-b247-4747-a650-3c5c5cd58d8b) [NIB:事件與委派](https://msdn.microsoft.com/d98fd58b-fa4f-4598-8378-addf4355a115)

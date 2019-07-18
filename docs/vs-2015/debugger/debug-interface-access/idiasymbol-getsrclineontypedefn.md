@@ -1,27 +1,22 @@
 ---
-title: IDiaSymbol::getSrcLineOnTypeDefn |Microsoft Docs
-ms.custom: ''
+title: IDiaSymbol::getSrcLineOnTypeDefn | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 ms.assetid: ad554d18-9988-4b64-ad71-e7594c266e94
 caps.latest.revision: 6
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 684a2c7a63cf6e70b8111b4c3fcd60dac3051274
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: a3a70cec3ab9e03dd97a1df5f0ccf8713a79cc28
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51806772"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "68180473"
 ---
 # <a name="idiasymbolgetsrclineontypedefn"></a>IDiaSymbol::getSrcLineOnTypeDefn
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -45,6 +40,3 @@ HRESULT getSrcLineOnTypeDefn(
 ## <a name="see-also"></a>另請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)
-
-
-

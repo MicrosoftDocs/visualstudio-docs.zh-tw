@@ -1,14 +1,9 @@
 ---
 title: SccAddFromScc 函式 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - SccAddFromScc
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 902e764d-200e-46e1-8c42-4da7b037f9a0
 caps.latest.revision: 18
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: b366c6c80dc52436743da0f69266105cc0ba5db8
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: ccf3a25bda14cf98fdba4a58b0032444badc4c4a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51771016"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432499"
 ---
 # <a name="sccaddfromscc-function"></a>SccAddFromScc 函式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -72,9 +67,8 @@ SCCRTN SccAddFromScc (
  `lplpFileNames` 是`char ***`指標。 原始檔控制外掛程式將放置的檔案名稱，藉以在此 api 的標準方式傳遞清單的指標陣列的指標。  
   
 > [!NOTE]
->  VSSCI API 的初始版本未提供一個方法來指示加入之檔案的目標專案。 為了完成此的語意`lplpFIleNames`參數已經強化，可讓 in/out 參數，而不是一個 output 參數。 如果只指定單一檔案，也就是值所指向`lpnFiles`= 1，則第一個項目`lplpFileNames`包含目標資料夾。 若要使用這些新的語意，IDE 會呼叫`SccSetOption`函式搭配`nOption`參數設為`SCC_OPT_SHARESUBPROJ`。 如果原始檔控制外掛程式不支援語意，它會傳回`SCC_E_OPTNOTSUPPORTED`。 執行使用的是停用**從原始檔控制新增**功能。 如果外掛程式支援**從原始檔控制新增**功能 (`SCC_CAP_ADDFROMSCC`)，則它必須支援新的語意，並傳回`SCC_I_SHARESUBPROJOK`。  
+> VSSCI API 的初始版本未提供一個方法來指示加入之檔案的目標專案。 為了完成此的語意`lplpFIleNames`參數已經強化，可讓 in/out 參數，而不是一個 output 參數。 如果只指定單一檔案，也就是值所指向`lpnFiles`= 1，則第一個項目`lplpFileNames`包含目標資料夾。 若要使用這些新的語意，IDE 會呼叫`SccSetOption`函式搭配`nOption`參數設為`SCC_OPT_SHARESUBPROJ`。 如果原始檔控制外掛程式不支援語意，它會傳回`SCC_E_OPTNOTSUPPORTED`。 執行使用的是停用**從原始檔控制新增**功能。 如果外掛程式支援**從原始檔控制新增**功能 (`SCC_CAP_ADDFROMSCC`)，則它必須支援新的語意，並傳回`SCC_I_SHARESUBPROJOK`。  
   
 ## <a name="see-also"></a>另請參閱  
  [原始檔控制外掛程式 API 函式](../extensibility/source-control-plug-in-api-functions.md)   
  [SccSetOption](../extensibility/sccsetoption-function.md)
-

@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugExceptionEvent2::CanPassToDebuggee
 ms.assetid: ae4bbe0a-fbe1-49be-a310-ea64279a434b
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 93652efe19096466c853d758cc36aa022236068d
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: c27ac3239fd6621a824f626a141a357241b03b1f
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56706440"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66310569"
 ---
 # <a name="idebugexceptionevent2canpasstodebuggee"></a>IDebugExceptionEvent2::CanPassToDebuggee
 決定偵錯引擎 (DE) 支援將此例外狀況傳遞至正在進行偵錯時繼續執行程式的選項。

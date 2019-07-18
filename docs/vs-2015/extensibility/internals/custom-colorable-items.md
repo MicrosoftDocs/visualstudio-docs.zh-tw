@@ -1,27 +1,22 @@
 ---
 title: 自訂色彩的項目 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - colorable items
 - language services, custom colorable items
 ms.assetid: b4d0ddee-c04b-48dc-ba82-f6068570cef0
 caps.latest.revision: 25
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 272d16b9f5f8fb33b68c911c5e7bd27923f4c2db
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 24a4db907ec859c6075c06956f86939047379897
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51796944"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63409362"
 ---
 # <a name="custom-colorable-items"></a>自訂可設定色彩的項目
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -35,11 +30,11 @@ ms.locfileid: "51796944"
  因為 IDE 會處理的可設定色彩的項目中的使用者覆寫**字型和色彩**對話方塊，您需要只提供每個自訂色彩項目的名稱。 這個名稱是在顯示的內容**顯示的項目**清單。 可設定色彩的項目會依字母順序顯示。 若要將您的語言服務的自訂色彩項目，就可以使用您語言的名稱，每個名稱，例如**NewLanguage-註解**並**NewLanguage-關鍵字**。  
   
 > [!CAUTION]
->  您應該避免與現有的色彩項目的名稱發生衝突的色彩項目的名稱包含語言名稱。 如果您變更其中一個您可設定色彩的項目名稱，在開發期間，您必須重設快取建立第一次存取您可設定色彩的項目。 您可以重設使用 CreateExpInstance 工具，它會隨 Visual Studio SDK，通常在目錄中的實驗性快取  
+> 您應該避免與現有的色彩項目的名稱發生衝突的色彩項目的名稱包含語言名稱。 如果您變更其中一個您可設定色彩的項目名稱，在開發期間，您必須重設快取建立第一次存取您可設定色彩的項目。 您可以重設使用 CreateExpInstance 工具，它會隨 Visual Studio SDK，通常在目錄中的實驗性快取  
 >   
->  **C:\Program 檔案 (x86) \Microsoft Visual Studio 14.0\VSSDK\VisualStudioIntegration\Tools\Bin**  
+> **C:\Program Files (x86)\Microsoft Visual Studio 14.0\VSSDK\VisualStudioIntegration\Tools\Bin**  
 >   
->  若要重設快取，請呼叫`CreateExpInstance /Reset`。 如需 CreateExpInstance 的詳細資訊，請參閱[CreateExpInstance Utility](../../extensibility/internals/createexpinstance-utility.md)。  
+> 若要重設快取，請呼叫`CreateExpInstance /Reset`。 如需 CreateExpInstance 的詳細資訊，請參閱[CreateExpInstance Utility](../../extensibility/internals/createexpinstance-utility.md)。  
   
  永遠不會參考可設定色彩的項目清單中第一個項目。 第一個項目對應至 0，色彩項目的索引和[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]一律會提供預設文字色彩和該項目的屬性。 此未參考的項目處理的最簡單的方式是提供為第一個項目清單中的預留位置色彩項目。  
   
@@ -76,5 +71,4 @@ ms.locfileid: "51796944"
  [自訂編輯器中的語法著色](../../extensibility/syntax-coloring-in-custom-editors.md)   
  [舊版語言服務中的語法著色](../../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md)   
  [實作語法著色](../../extensibility/internals/implementing-syntax-coloring.md)   
- [如何︰使用內建可設定色彩的項目](../../extensibility/internals/how-to-use-built-in-colorable-items.md)
-
+ [如何：使用內建可設定色彩的項目](../../extensibility/internals/how-to-use-built-in-colorable-items.md)

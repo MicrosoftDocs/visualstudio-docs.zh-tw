@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d23f3c2677f1e99a80b5a3f05d1f6f4f69294e27
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 384d7b3488e6ef90994e24e95fbe7a516428e2bd
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56707363"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62852785"
 ---
 # <a name="debugger-security"></a>偵錯工具安全性
 偵錯其他處理序的功能可以讓您獲得在他處無法得到的多樣化功能，特別是在遠端偵錯時。 惡意偵錯工具可能會在被偵錯的電腦上散佈更廣泛的損害。
@@ -37,7 +37,7 @@ ms.locfileid: "56707363"
 ### <a name="managed-debugging-security"></a>Managed 偵錯安全性
  以下列出幾項適用所有 Managed 偵錯的一般建議：
 
-- 當附加至未受信任使用者的處理序時要小心：在執行這項動作時是假設它沒有任何問題的。 當您嘗試附加至未受信任使用者的處理序時，就會出現安全性警告對話方塊確認，詢問您是否想要附加至處理序。 「信任的使用者」包括您，以及安裝 .NET Framework 後電腦上通常會定義的標準使用者集，例如 **aspnet**、 **localsystem**、 **networkservice**和 **localservice**。 如需詳細資訊，請參閱[安全性警告： 附加至不受信任的使用者所擁有的處理序可能會造成危險。如果下面的資訊看起來有問題，或者您並不確定，請不要附加至此處理序](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md)
+- 當附加至未受信任使用者的處理序時要小心：在執行這項動作時是假設它沒有任何問題的。 當您嘗試附加至未受信任使用者的處理序時，就會出現安全性警告對話方塊確認，詢問您是否想要附加至處理序。 「信任的使用者」包括您，以及安裝 .NET Framework 後電腦上通常會定義的標準使用者集，例如 **aspnet**、 **localsystem**、 **networkservice**和 **localservice**。 如需詳細資訊，請參閱[安全性警告：附加至未受信任的使用者所擁有的處理序可能會造成危險。如果下列資訊看起來有問題，或您不確定，不會附加至這個處理序](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md)。
 
 - 從網際網路下載專案並載入 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]時要小心。 即使不使用偵錯，這個動作也非常危險。 在執行這項動作時，是假設專案和其中包含的程式碼沒有任何問題。
 
@@ -59,11 +59,11 @@ ms.locfileid: "56707363"
 ### <a name="web-services-debugging-security"></a>Web 服務偵錯安全性
  在本機偵錯比較安全，但是因為在 Web 伺服器上可能並未安裝 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ，所以本機偵錯並不實用。 一般來說，偵錯 Web 服務會在遠端完成 (除了在開發期間以外)，因此遠端偵錯安全性的建議也適用於 Web 服務偵錯。 這裡有幾個額外的最佳作法。 如需詳細資訊，請參閱 [Debugging XML Web Services](https://msdn.microsoft.com/library/c900b137-9fbd-4f59-91b5-9c2c6ce06f00)。
 
--   請勿在受到危害的 Web 伺服器上啟用偵錯
+- 請勿在受到危害的 Web 伺服器上啟用偵錯
 
--   在偵錯前請確定 Web 伺服器是安全的。 如果不確定是否安全，請勿進行偵錯
+- 在偵錯前請確定 Web 伺服器是安全的。 如果不確定是否安全，請勿進行偵錯
 
--   如果要偵錯公開在網際網路上的 Web 服務要特別小心
+- 如果要偵錯公開在網際網路上的 Web 服務要特別小心
 
 ### <a name="external-components"></a>外部元件
  請留意程式進行互動的外部元件之信任狀態，特別是如果您並未撰寫其程式碼。 同時留意 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 或偵錯工具會使用的元件。
@@ -77,8 +77,8 @@ ms.locfileid: "56707363"
 
   請參閱[指定符號 (.pdb) 和原始程式檔](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [偵錯設定和準備](../debugger/debugger-settings-and-preparation.md)
 - [偵錯工具簡介](../debugger/debugger-feature-tour.md)
-- [安全性警告︰附加至未受信任的使用者所擁有的處理序可能會造成危險。如果下面的資訊看起來有問題，或者您並不確定，請不要附加至此處理序](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md)
+- [安全性警告：附加至未受信任的使用者所擁有的處理序可能會造成危險。如果下面的資訊看起來有問題，或者您並不確定，請不要附加至此處理序](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md)
 - [安全性警告：偵錯工具必須執行未受信任的命令](../debugger/security-warning-debugger-must-execute-untrusted-command.md)

@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugCanStopEvent2::GetDocumentContext
 ms.assetid: 936a6c4e-30c5-4c7e-9ad5-910cc605a4b5
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2066d712824ec40c822a813eb20a6afffd7981ab
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 1c3d409b0fa4438331d1a798e5fd6e21b2c10ca9
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56721026"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66349549"
 ---
 # <a name="idebugcanstopevent2getdocumentcontext"></a>IDebugCanStopEvent2::GetDocumentContext
 取得描述這個事件的位置的文件內容。
@@ -36,10 +39,9 @@ int GetDocumentContext ( 
 );
 ```
 
-#### <a name="parameters"></a>參數
- `ppDocCxt`
-
- [out]傳回[IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)介面，表示目前的程式碼位置的來源檔案的文件，對應中的位置。
+## <a name="parameters"></a>參數
+`ppDocCxt`\
+[out]傳回[IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)介面，表示目前的程式碼位置的來源檔案的文件，對應中的位置。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

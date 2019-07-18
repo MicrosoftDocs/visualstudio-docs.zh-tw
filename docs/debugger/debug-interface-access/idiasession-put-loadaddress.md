@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b768b06e0702f7929b402086dcc6e11918f3e683
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 01d004491feedff26c350cd7d40c544bc6b6de0f
+ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56630089"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "64783743"
 ---
 # <a name="idiasessionputloadaddress"></a>IDiaSession::put_loadAddress
 符號設定對應的可執行檔載入位址，此符號存放區中。
@@ -39,7 +39,7 @@ HRESULT put_loadAddress ( 
  符號虛擬位址 (VA) 屬性會使用此方法的值來計算。 除非此屬性將設為非零，才會計算虛擬位址。
 
 > [!NOTE]
->  您必須先呼叫這個方法，當您取得[IDiaSession](../../debugger/debug-interface-access/idiasession.md)物件，並開始使用的物件，如果您需要使用任何虛擬屬性上符號之前。
+> 您必須先呼叫這個方法，當您取得[IDiaSession](../../debugger/debug-interface-access/idiasession.md)物件，並開始使用的物件，如果您需要使用任何虛擬屬性上符號之前。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [IDiaSession](../../debugger/debug-interface-access/idiasession.md)

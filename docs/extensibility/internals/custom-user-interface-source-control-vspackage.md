@@ -6,20 +6,20 @@ helpviewer_keywords:
 - user interface, source control packages
 - source control packages, user interface
 ms.assetid: f35ddb24-53bf-461e-b34f-7414f657c082
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 09ab1bb7e44ee2772023a73632ca194796bbb33e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 9d27fe21fb577f2e3610bf30109aa8c0b7f17a12
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56631883"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66312193"
 ---
 # <a name="custom-user-interface-source-control-vspackage"></a>自訂使用者介面 （原始檔控制 VSPackage）
-VSPackage 會宣告它的功能表項目和其預設狀態，透過 Visual Studio 命令資料表 (*.vsct*) 檔案。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]整合式的開發環境 (IDE) 會顯示在其預設狀態中的功能表項目直到載入 VSPackage。 接著，<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A>呼叫方法來啟用或停用功能表項目。
+VSPackage 會宣告它的功能表項目和其預設狀態，透過 Visual Studio 命令資料表 ( *.vsct*) 檔案。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]整合式的開發環境 (IDE) 會顯示在其預設狀態中的功能表項目直到載入 VSPackage。 接著，<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A>呼叫方法來啟用或停用功能表項目。
 
  VSPackage 可以設定登錄機碼，以便根據命令使用者介面 (UI) 內容可以自動載入 VSPackage，雖然通常原始檔控制 VSPackage 應而不只切換到特定的 UI 內容，是視需要載入。 如需詳細資訊**AutoLoadPackages**登錄機碼，請參閱[管理 Vspackage](../../extensibility/managing-vspackages.md)。
 

@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - SccRename function
 ms.assetid: b467ade6-a1db-4c0b-b60f-7850ec4f79eb
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2e270d1be9cdf935dbffa7d094fddaecd4f73a02
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 1329f847f7f961bf4c792cbdf7f40f8f04b1694c
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56710679"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66338723"
 ---
 # <a name="sccrename-function"></a>SccRename 函式
 此函式會將檔案重新命名原始檔控制系統中。

@@ -1,25 +1,22 @@
 ---
 title: 部署自訂指示詞處理器 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - text templates, custom directive processors
 ms.assetid: 80c28722-a630-47b5-923b-024dc3f2c940
 caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 6986811b522f6ed3621335227231bb69ab6cf1c0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 14bb73043a3c206f5b7397717a113e479a4163d7
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49836394"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65699680"
 ---
 # <a name="deploying-a-custom-directive-processor"></a>部署自訂指示詞處理器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +25,7 @@ ms.locfileid: "49836394"
   
  可供選擇的方法為：  
   
-- [Visual Studio 擴充功能 (VSIX)](http://msdn.microsoft.com/en-us/64ff1452-f7d5-42d9-98b8-76f769f76832)。 此方法提供在自己的電腦以及其他電腦上安裝和解除安裝指示詞處理器的方式。 您通常可以在相同的 VSIX 中封裝其他功能。  
+- [Visual Studio 擴充功能 (VSIX)](https://msdn.microsoft.com/64ff1452-f7d5-42d9-98b8-76f769f76832)。 此方法提供在自己的電腦以及其他電腦上安裝和解除安裝指示詞處理器的方式。 您通常可以在相同的 VSIX 中封裝其他功能。  
   
 - [VSPackage](../extensibility/internals/vspackages.md)。 如果您要定義除了指示詞處理器之外還包含其他功能的 VSPackage，有個便利的方法可以註冊指示詞處理器。  
   
@@ -37,7 +34,7 @@ ms.locfileid: "49836394"
   只有當您想要在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 或 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 中轉換文字範本時，才需要使用上述其中一個方法。 如果您在自己的應用程式 (Application) 中使用自訂主應用程式 (Custom Host)，那麼自訂主應用程式就要負責為每個指示詞尋找指示詞處理器。  
   
 ## <a name="deploying-a-directive-processor-in-a-vsix"></a>在 VSIX 中部署指示詞處理器  
- 您可以新增自訂指示詞處理器[Visual Studio 擴充功能 (VSIX)](http://msdn.microsoft.com/en-us/64ff1452-f7d5-42d9-98b8-76f769f76832)。  
+ 您可以新增自訂指示詞處理器[Visual Studio 擴充功能 (VSIX)](https://msdn.microsoft.com/64ff1452-f7d5-42d9-98b8-76f769f76832)。  
   
  您必須確認 .vsix 檔是否包含下列兩個項目：  
   
@@ -51,27 +48,27 @@ ms.locfileid: "49836394"
   
 #### <a name="to-develop-a-custom-directive-processor-in-a-vsix-project"></a>若要在 VSIX 專案中開發自訂指示詞處理器  
   
-1.  在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中建立 VSIX 專案。  
+1. 在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中建立 VSIX 專案。  
   
-    -   在**新的專案**對話方塊方塊中，展開**Visual Basic**或**Visual C#**，然後展開**擴充性**。 按一下  **VSIX 專案**。  
+    - 在**新的專案**對話方塊方塊中，展開**Visual Basic**或**Visual C#**，然後展開**擴充性**。 按一下  **VSIX 專案**。  
   
-2.  在  **source.extension.vsixmanifest**、 內容類型設定和支援的版本。  
+2. 在  **source.extension.vsixmanifest**、 內容類型設定和支援的版本。  
   
-    1.  在 VSIX 資訊清單編輯器中，在**資產**索引標籤上，選擇**新增**並設定新的項目屬性：  
+    1. 在 VSIX 資訊清單編輯器中，在**資產**索引標籤上，選擇**新增**並設定新的項目屬性：  
   
          **內容類型** = **VSPackage**  
   
          **來源專案** = \<*目前的專案*>  
   
-    2.  按一下 **選取的版本**並檢查您想要可指示詞處理器的安裝類型。  
+    2. 按一下 **選取的版本**並檢查您想要可指示詞處理器的安裝類型。  
   
-3.  加入 .pkgdef 檔案，並設定其要包含在 VSIX 中的屬性。  
+3. 加入 .pkgdef 檔案，並設定其要包含在 VSIX 中的屬性。  
   
-    1.  建立文字檔案並將它命名\< *assemblyName*>.pkgdef。  
+    1. 建立文字檔案並將它命名\< *assemblyName*>.pkgdef。  
   
          \<*assemblyName*> 通常是專案的名稱相同。  
   
-    2.  在 [方案總管] 中選取它，然後設定其屬性，如下所示：  
+    2. 在 [方案總管] 中選取它，然後設定其屬性，如下所示：  
   
          **建置動作** = **內容**  
   
@@ -79,9 +76,9 @@ ms.locfileid: "49836394"
   
          **包含在 VSIX** = **，則為 True**  
   
-    3.  設定 VSIX 的名稱，並確定 ID 是唯一的。  
+    3. 設定 VSIX 的名稱，並確定 ID 是唯一的。  
   
-4.  將下列文字加入至 .pkgdef 檔：  
+4. 將下列文字加入至 .pkgdef 檔：  
   
     ```  
     [$RootKey$\TextTemplating]  
@@ -94,46 +91,46 @@ ms.locfileid: "49836394"
   
      以自己的名稱取代下列名稱：`CustomDirectiveProcessorName`、`NamespaceName`、`ClassName`、`AssemblyName`。  
   
-5.  將下列參考加入至專案：  
+5. 將下列參考加入至專案：  
   
-    -   **Microsoft.VisualStudio.TextTemplating.\*.0**  
+    - **Microsoft.VisualStudio.TextTemplating.\*.0**  
   
-    -   **Microsoft.VisualStudio.TextTemplating.Interfaces.\*.0**  
+    - **Microsoft.VisualStudio.TextTemplating.Interfaces.\*.0**  
   
-    -   **Microsoft.VisualStudio.TextTemplating.VSHost.\*.0**  
+    - **Microsoft.VisualStudio.TextTemplating.VSHost.\*.0**  
   
-6.  將自訂指示詞處理器類別加入至專案。  
+6. 將自訂指示詞處理器類別加入至專案。  
   
      這是應該實作 <xref:Microsoft.VisualStudio.TextTemplating.DirectiveProcessor> 或 <xref:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor> 的公用類別。  
   
 #### <a name="to-install-the-custom-directive-processor"></a>若要安裝自訂指示詞處理器  
   
-1.  在 [Windows 檔案總管 (Windows 8 中的檔案總管)] 中，開啟組建目錄 (通常是 bin\Debug 或 bin\Release)。  
+1. 在 [Windows 檔案總管 (Windows 8 中的檔案總管)] 中，開啟組建目錄 (通常是 bin\Debug 或 bin\Release)。  
   
-2.  如果您想要在另一台電腦上安裝指示詞處理器，請將 .vsix 檔複製到該電腦。  
+2. 如果您想要在另一台電腦上安裝指示詞處理器，請將 .vsix 檔複製到該電腦。  
   
-3.  按兩下 .vsix 檔。 [[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 擴充功能安裝程式] 隨即出現。  
+3. 按兩下 .vsix 檔。 [[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 擴充功能安裝程式] 隨即出現。  
   
-4.  重新啟動 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。 您現在可以執行包含參考自訂指示詞處理器之指示詞的文字範本。 每個指示詞的格式如下：  
+4. 重新啟動 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。 您現在可以執行包含參考自訂指示詞處理器之指示詞的文字範本。 每個指示詞的格式如下：  
   
      `<#@ CustomDirective Processor="CustomDirectiveProcessorName" parameter1="value1" … #>`  
   
 #### <a name="to-uninstall-or-temporarily-disable-the-custom-directive-processor"></a>若要解除安裝或暫時停用自訂指示詞處理器  
   
-1.  在  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] **工具**功能表上，按一下 **延伸模組管理員**。  
+1. 在  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] **工具**功能表上，按一下 **延伸模組管理員**。  
   
-2.  選取包含指示詞處理器的 VSIX，然後按一下**解除安裝**或是**停用**。  
+2. 選取包含指示詞處理器的 VSIX，然後按一下**解除安裝**或是**停用**。  
   
 ### <a name="troubleshooting-a-directive-processor-in-a-vsix"></a>VSIX 中的指示詞處理器疑難排解  
  如果指示詞處理器無法運作，下列建議可能會有幫助：  
   
--   您在自訂指示詞中指定的處理器名稱應該與在 .pkgdef 檔中指定的 `CustomDirectiveProcessorName` 相符。  
+- 您在自訂指示詞中指定的處理器名稱應該與在 .pkgdef 檔中指定的 `CustomDirectiveProcessorName` 相符。  
   
--   將 `IsDirectiveSupported` 的名稱傳遞給 `true` 方法時，此方法必須傳回 `CustomDirective`。  
+- 將 `IsDirectiveSupported` 的名稱傳遞給 `true` 方法時，此方法必須傳回 `CustomDirective`。  
   
--   如果看不到管理員 」 中的延伸模組，延伸模組，但系統將不會允許您進行安裝，刪除從延伸模組 **%localappdata%\Microsoft\VisualStudio\\\*。 0\Extensions\\** .  
+- 如果看不到管理員 」 中的延伸模組，延伸模組，但系統將不會允許您進行安裝，刪除從延伸模組 **%localappdata%\Microsoft\VisualStudio\\\*。 0\Extensions\\** .  
   
--   開啟 .vsix 檔並檢查其內容。 若要開啟它，請將副檔名變更為 .zip。 確認其中是否包含 .dll、.pkgdef 和 extension.vsixmanifest 檔案。 extension.vsixmanifest 檔案在 SupportedProducts 節點中應包含適當清單，而在 Content 節點底下也應包含 VsPackage 節點。  
+- 開啟 .vsix 檔並檢查其內容。 若要開啟它，請將副檔名變更為 .zip。 確認其中是否包含 .dll、.pkgdef 和 extension.vsixmanifest 檔案。 extension.vsixmanifest 檔案在 SupportedProducts 節點中應包含適當清單，而在 Content 節點底下也應包含 VsPackage 節點。  
   
      `<Content>`  
   
@@ -151,7 +148,7 @@ ms.locfileid: "49836394"
 ```  
   
 > [!NOTE]
->  這個屬性要放在套件類別，而非指示詞處理器類別上。  
+> 這個屬性要放在套件類別，而非指示詞處理器類別上。  
   
  當您建置專案時，就會產生 .pkgdef 檔。 當您安裝 VSPackage 時，.pkgdef 檔將會註冊指示詞處理器。  
   
@@ -163,7 +160,7 @@ ms.locfileid: "49836394"
  除非不得已，否則不建議使用這個方法來安裝自訂指示詞處理器。 它無法提供啟用和停用指示詞處理器的便利方式，也無法提供散發指示詞處理器給其他使用者的方法。  
   
 > [!CAUTION]
->  不當編輯登錄可能會造成系統嚴重受損。 變更登錄之前，務必先備份電腦上任何重要的資料。  
+> 不當編輯登錄可能會對系統造成嚴重損害。 變更登錄之前，務必先備份電腦上任何重要的資料。  
   
 #### <a name="to-register-a-directive-processor-by-setting-a-registry-key"></a>若要設定登錄機碼來註冊指示詞處理器  
   
@@ -177,15 +174,15 @@ ms.locfileid: "49836394"
   
 3. 加入與指示詞處理器相同名稱的登錄機碼。  
   
-   -   在登錄樹狀目錄中，以滑鼠右鍵按一下**DirectiveProcessors**節點，指向**新增**，然後按一下**金鑰**。  
+   - 在登錄樹狀目錄中，以滑鼠右鍵按一下**DirectiveProcessors**節點，指向**新增**，然後按一下**金鑰**。  
   
 4. 根據下表，在新節點中加入 Class 和 CodeBase 或 Assembly 的字串值。  
   
-   1.  以滑鼠右鍵按一下您所建立的節點，指向**的新**，然後按一下**字串值**。  
+   1. 以滑鼠右鍵按一下您所建立的節點，指向**的新**，然後按一下**字串值**。  
   
-   2.  輸入該值的名稱。  
+   2. 輸入該值的名稱。  
   
-   3.  按兩下名稱，然後編輯資料。  
+   3. 按兩下名稱，然後編輯資料。  
   
    如果自訂指示詞處理器不在 GAC 中，則登錄子機碼看起來應該如下表所示：  
   
@@ -205,6 +202,3 @@ ms.locfileid: "49836394"
   
 ## <a name="see-also"></a>另請參閱  
  [建立自訂 T4 文字範本指示詞處理器](../modeling/creating-custom-t4-text-template-directive-processors.md)
-
-
-

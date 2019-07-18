@@ -1,34 +1,66 @@
 ---
-title: 組織範本
+title: 尋找範本
 ms.date: 01/02/2018
 ms.topic: conceptual
 helpviewer_keywords:
 - project templates [Visual Studio], locations
 - item templates [Visual Studio], locations
 - template locations [Visual Studio]
-- Visual Studio templates, organizing
-- templates [Visual Studio], organizing
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a228c882ff573b9e319d5fdbeb1ba6472cc5e3d5
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: db74d23cf42e371f00bf25c7edcd8c480f7649d4
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57221642"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62430272"
 ---
 # <a name="how-to-locate-and-organize-project-and-item-templates"></a>HOW TO：尋找及整理專案與項目範本
 
-範本檔案必須放在 Visual Studio 可以辨識的位置，這樣範本才會出現在 [新增專案] 和 [新增項目] 對話方塊中。 您也可以在使用者範本位置中建立自訂的子目錄，且目錄會顯示在 [新增專案] 和 [新增項目] 對話方塊中。
+範本檔案必須放在已知的位置，使其顯示在 [新增專案] 和 [新項目] 對話方塊中。
+
+::: moniker range="vs-2017"
+
+您也可以在使用者範本位置中建立自訂的子目錄，且目錄會顯示在 [新增專案] 和 [新增項目] 對話方塊中。
+
+::: moniker-end
 
 ## <a name="locate-templates"></a>尋找範本
 
 已安裝的範本和使用者範本會儲存在兩個不同的位置。
 
+### <a name="installed-templates"></a>已安裝的範本
+
+根據預設，與 Visual Studio 一起安裝的範本位於：
+
+::: moniker range="vs-2017"
+
+- *%ProgramFiles(x86)%\\Microsoft Visual Studio\\2017\\\<edition>\\Common7\IDE\ProjectTemplates\\<Language\>\\<Locale ID\>*
+
+- *%ProgramFiles(x86)%\\Microsoft Visual Studio\\2017\\\<edition>\Common7\IDE\ItemTemplates\\<Language\>\\<Locale ID\>*
+
+例如，下列目錄有適用於英文的 Visual Basic 項目範本 (LCID 1033)：
+
+*C:\\Program Files (x86)\\Microsoft Visual Studio\\2017\\Community\\Common7\\IDE\\ItemTemplates\\VisualBasic\\1033*
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+- *%ProgramFiles(x86)%\\Microsoft Visual Studio\\2019\\\<edition>\\Common7\IDE\ProjectTemplates\\<Language\>\\<Locale ID\>*
+
+- *%ProgramFiles(x86)%\\Microsoft Visual Studio\\2019\\\<edition>\Common7\IDE\ItemTemplates\\<Language\>\\<Locale ID\>*
+
+例如，下列目錄有適用於英文的 Visual Basic 項目範本 (LCID 1033)：
+
+*C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\Common7\\IDE\\ItemTemplates\\VisualBasic\\1033*
+
+::: moniker-end
+
 ### <a name="user-templates"></a>使用者範本
 
-如果您將包含 *.vstemplate* 檔案的壓縮檔 (*.zip*) 新增到使用者範本目錄，範本將出現在 [新增專案] 或 [新增項目] 對話方塊中。 根據預設，自訂範本位於：
+如果您將包含 *.vstemplate* 檔案的壓縮檔 (*.zip*) 新增到使用者範本目錄，範本將出現在 [新增專案] 和 [新增項目] 對話方塊中。 根據預設，自訂範本位於：
 
 ::: moniker range="vs-2017"
 
@@ -55,19 +87,9 @@ ms.locfileid: "57221642"
 ::: moniker-end
 
 > [!TIP]
-> 您可以在 [工具] > [選項] > [專案和方案] >  [位置] 中設定使用者範本的位置。
+> 您可以在 [工具] > [選項] > [專案和方案] >  [位置] 中變更使用者範本的已知位置。
 
-### <a name="installed-templates"></a>已安裝的範本
-
-根據預設，與 Visual Studio 一起安裝的範本位於：
-
-- *\\<VisualStudioInstallationDirectory\>\Common7\IDE\ItemTemplates\\<程式設計語言\>\\<Locale ID>*
-
-- *\\<VisualStudioInstallationDirectory\>\Common7\IDE\ProjectTemplates\\<程式設計語言\>\\<Locale ID>*
-
-例如，下列目錄有適用於英文的 Visual Basic 項目範本 (LCID 1033)：
-
-- *C:\\<Visual Studio 安裝目錄\>\Common7\IDE\ItemTemplates\VisualBasic\1033*
+::: moniker range="vs-2017"
 
 ## <a name="organize-templates"></a>組織範本
 
@@ -76,7 +98,7 @@ ms.locfileid: "57221642"
 > [!NOTE]
 > 您無法在程式設計語言層級建立新的類別。 只能在每一種語言內建立新的類別。
 
-### <a name="to-create-new-user-project-template-categories"></a>建立新的使用者專案範本類別
+### <a name="create-new-user-project-template-categories"></a>建立新的使用者專案範本類別
 
 1. 在使用者專案範本目錄的程式設計語言資料夾中建立資料夾。 例如，若要為 C# 專案範本建立 **HelloWorld** 類別，請建立下列目錄：
 
@@ -84,11 +106,11 @@ ms.locfileid: "57221642"
 
 1. 將此類別的所有範本都放在新資料夾中。
 
-1. 在 [檔案] 功能表上，選擇 [新增] > [專案]。
+1. 在 [檔案] 功能表上，依序選擇 [新增] 和 [專案]>。
 
    **HelloWorld** 類別隨即出現在 [新增專案] 對話方塊下的 [已安裝] > [Visual C#] 中。
 
-### <a name="to-create-new-user-item-template-categories"></a>建立新的使用者項目範本類別
+### <a name="create-new-user-item-template-categories"></a>建立新的使用者項目範本類別
 
 1. 在使用者項目範本目錄的程式設計語言資料夾中建立資料夾。 例如，若要為 C# 項目範本建立 **HelloWorld** 類別，請建立下列目錄：
 
@@ -103,8 +125,6 @@ ms.locfileid: "57221642"
 ### <a name="display-templates-in-parent-categories"></a>在父類別中顯示範本
 
 您可以使用 *.vstemplate* 檔案中的 `NumberOfParentCategoriesToRollUp` 項目，讓子分類中的範本可以顯示在其父分類中。 對於專案範本和項目範本而言，這些步驟都相同。
-
-#### <a name="to-display-templates-in-parent-categories"></a>在父類別中顯示範本
 
 1. 尋找包含範本的 *.zip* 檔。
 
@@ -126,13 +146,15 @@ ms.locfileid: "57221642"
 
 1. 儲存並關閉 *.vstemplate* 檔案。
 
-1. 在範本中選取檔案，以滑鼠右鍵按一下選項，選擇 [Send to] (傳送至) > [壓縮的 (zipped) 資料夾]。
+1. 在範本中選取檔案，以滑鼠右鍵按一下選項，選擇 [傳送至]  > [壓縮的 (zipped) 資料夾]。
 
    檔案即會壓縮成 *.zip* 檔案。
 
 1. 刪除已解壓縮的範本檔案和舊範本 *.zip* 檔案。
 
 1. 將新的 *.zip* 檔案放在有已刪除 *.zip* 檔案的目錄。
+
+::: moniker-end
 
 ## <a name="see-also"></a>另請參閱
 

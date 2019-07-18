@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: cc2a8b3dc2f5940c64be870df452b088dce7bc0e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56632455"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62939002"
 ---
 # <a name="suspendtracking"></a>SuspendTracking
 在目前的內容中暫停追蹤。
@@ -35,7 +35,7 @@ HRESULT WINAPI SuspendTracking(void);
  如已暫停追蹤，則為 **HRESULT** 和已設定的 **SUCCEEDED** 位元。
 
 ## <a name="requirements"></a>需求
- **標頭：***FileTracker.h*
+ **標頭：**  *FileTracker.h*
 
 ## <a name="see-also"></a>另請參閱
 - [ResumeTracking](../msbuild/resumetracking.md)

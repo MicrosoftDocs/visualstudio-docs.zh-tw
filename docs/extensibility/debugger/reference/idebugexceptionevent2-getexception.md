@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugExceptionEvent2::GetException
 ms.assetid: 7c98f41d-322b-4e72-a514-cbd4823eb70d
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 79385348aa9290f26a34b99dbd2d6f68cb92dc8a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 691df8f5a212f1d854d87076a215402c7ce0053c
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56680278"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66310514"
 ---
 # <a name="idebugexceptionevent2getexception"></a>IDebugExceptionEvent2::GetException
 取得引發這個事件的例外狀況的詳細的描述。
@@ -36,17 +39,16 @@ int GetException( 
 );
 ```
 
-#### <a name="parameters"></a>參數
- `pExceptionInfo`
-
- [in、 out][EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md)會填入的例外狀況描述的結構。
+## <a name="parameters"></a>參數
+`pExceptionInfo`\
+[in、 out][EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md)會填入的例外狀況描述的結構。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
 
 ## <a name="remarks"></a>備註
 
- [只有 c + +]呼叫端負責釋放中的任何字串[EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md)結構，以及釋放[IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)結構中的物件。
+ [C++只]呼叫端負責釋放中的任何字串[EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md)結構，以及釋放[IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)結構中的物件。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugExceptionEvent2](../../../extensibility/debugger/reference/idebugexceptionevent2.md)

@@ -8,11 +8,11 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: bbe04ac7a28666f32aa1da3bebe5ed50f96fb900
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55957961"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62790550"
 ---
 # <a name="generate-equals-and-gethashcode-method-overrides-in-visual-studio"></a>在 Visual Studio 中產生 Equals 與 GetHashCode 方法覆寫
 
@@ -43,17 +43,17 @@ ms.locfileid: "55957961"
 
 1. 接著，執行下列其中一項操作：
 
-   - 在字行任何地方按 **Ctrl**+**.**， 以觸發 [快速動作與重構] 功能表。
+   - 在字行任何地方按 **Ctrl**+ **.** ， 以觸發 [快速動作與重構]  功能表。
 
-   - 以滑鼠右鍵按一下並選取 [快速動作與重構] 功能表。
+   - 以滑鼠右鍵按一下並選取 [快速動作與重構]  功能表。
 
    - 按一下 ![出現於左邊界的螺絲起子](../media/screwdriver-icon.png) 圖示。
 
    ![「產生覆寫」預覽](media/overrides-preview-cs.png)
 
-1. 從下拉式功能表選取 [產生 Equals(object)]或 [產生 Equals 和 GetHashCode]。
+1. 從下拉式功能表選取 [產生 Equals(object)]  或 [產生 Equals 和 GetHashCode]  。
 
-1. 在 [選取成員]對話方塊中，選取您想要產生方法的成員：
+1. 在 [選取成員]  對話方塊中，選取您想要產生方法的成員：
 
     ![[產生覆寫] 對話方塊](media/overrides-dialog-cs.png)
 

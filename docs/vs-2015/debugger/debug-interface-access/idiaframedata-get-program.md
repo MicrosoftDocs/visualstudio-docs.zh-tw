@@ -1,14 +1,9 @@
 ---
-title: 'Idiaframedata:: Get_program |Microsoft Docs'
-ms.custom: ''
+title: IDiaFrameData::get_program | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 9201409e-b4b1-4e2e-a9f8-d17678ac538b
 caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: a393b4768de11e34e14126da6979a185513d4ac0
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: d87f5c7fda25a901d44b9f511b9a92eb4471f845
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51800844"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68180005"
 ---
 # <a name="idiaframedatagetprogram"></a>IDiaFrameData::get_program
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -43,7 +38,7 @@ HRESULT get_program ( 
  [out]傳回程式字串。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`。 傳回`S_FALSE`不支援這個屬性，則為。 反之則傳回錯誤碼。  
+ 如果成功，會傳回 `S_OK`。 傳回`S_FALSE`不支援這個屬性，則為。 否則會傳回錯誤碼。  
   
 ## <a name="remarks"></a>備註  
  程式字串是一串巨集，以便建立序言解譯。 例如，典型的堆疊框架可能會使用程式字串`"$T0 $ebp = $eip $T0 4 + ^ = $ebp $T0 ^ = $esp $T0 8 + ="`。 格式為反向波蘭文標記法，其中運算子後面接著運算元。 `T0` 表示在堆疊上的暫存變數。 此範例會執行下列步驟：  
@@ -60,6 +55,3 @@ HRESULT get_program ( 
   
 ## <a name="see-also"></a>另請參閱  
  [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)
-
-
-

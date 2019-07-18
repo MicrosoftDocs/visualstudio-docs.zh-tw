@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: af585d77176e52442d5eee37f3d16fcbafd31ef9
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55910801"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62897732"
 ---
 # <a name="constant-nodes"></a>常數節點
 
@@ -27,7 +27,7 @@ ms.locfileid: "55910801"
 
 ## <a name="constant-node-reference"></a>常數節點參考
 
-|節點|Details|屬性|
+|節點|詳細資料|屬性|
 |----------|-------------|----------------|
 |**觀景窗向量**|從目前像素擴充至世界空間之觀景窗的向量。<br /><br /> 您可以用這個來計算世界空間中的反射。<br /><br /> **輸出**<br /><br /> `Output`: `float3`<br /> 從目前像素到觀景窗的向量。|無|
 |**色彩常數**|色彩常數值。<br /><br /> **輸出**<br /><br /> `Output`: `float4`<br /> 色彩值。|**輸出**<br /> 色彩值。|

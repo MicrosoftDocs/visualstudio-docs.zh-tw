@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 277463ad717331980988f87cb070815e644a71ab
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 6f18b01a6db0068b44ad9c25037e544efa8df35a
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56643947"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746591"
 ---
 # <a name="generatebootstrapper-task"></a>GenerateBootstrapper 工作
 提供自動化方式來偵測、下載及安裝應用程式及其必要條件。 它可用來做為單一安裝程式，針對組成應用程式的所有元件整合個別的安裝程式。
@@ -152,7 +152,7 @@ ms.locfileid: "56643947"
 除了上述所列的參數，此項工作還會繼承 <xref:Microsoft.Build.Tasks.TaskExtension> 類別中的參數，而該類別本身又繼承 <xref:Microsoft.Build.Utilities.Task> 類別。 如需這些其他參數的清單及其描述，請參閱 [TaskExtension 基底類別](../msbuild/taskextension-base-class.md)。
 
 ## <a name="example"></a>範例
-下列範例會使用 `GenerateBootstrapper` 工作，來安裝必須安裝 [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] 做為必要條件的應用程式。
+下列範例會使用 `GenerateBootstrapper` 工作來安裝必須安裝 .NET Framework 2.0 的應用程式。
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">

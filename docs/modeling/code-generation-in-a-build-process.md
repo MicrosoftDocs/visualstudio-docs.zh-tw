@@ -13,12 +13,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 02608d5bc1b2c03560b5d954084d84059c34224a
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: d790110d76a8500d127e34842c63648ce5169914
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57324321"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821417"
 ---
 # <a name="code-generation-in-a-build-process"></a>在建置流程中的程式碼產生
 
@@ -28,7 +28,7 @@ ms.locfileid: "57324321"
 
 這表示您無法將專案檔案名稱等項目存取相同的方式建置在 MSBuild 中的文字範本時。 不過，您可以[傳遞環境資訊至文字範本和指示詞處理器，使用組建參數](#parameters)。
 
-##  <a name="buildserver"></a> 設定您的電腦
+## <a name="buildserver"></a> 設定您的電腦
 
 若要啟用建置工作，在您的開發電腦上，安裝 Visual Studio Modeling SDK。
 
@@ -38,23 +38,23 @@ ms.locfileid: "57324321"
 
 - $(ProgramFiles)\MSBuild\Microsoft\VisualStudio\v*.0\TextTemplating
 
-    - Microsoft.VisualStudio.TextTemplating.Sdk.Host.*.0.dll
+  - Microsoft.VisualStudio.TextTemplating.Sdk.Host.*.0.dll
 
-    - Microsoft.TextTemplating.Build.Tasks.dll
+  - Microsoft.TextTemplating.Build.Tasks.dll
 
-    - Microsoft.TextTemplating.targets
+  - Microsoft.TextTemplating.targets
 
 - $(ProgramFiles)\Microsoft Visual Studio *.0\VSSDK\VisualStudioIntegration\Common\Assemblies\v4.0
 
-    - Microsoft.VisualStudio.TextTemplating.*.0.dll
+  - Microsoft.VisualStudio.TextTemplating.*.0.dll
 
-    - Microsoft.VisualStudio.TextTemplating.Interfaces.*.0.dll (數個檔案)
+  - Microsoft.VisualStudio.TextTemplating.Interfaces.*.0.dll (數個檔案)
 
-    - Microsoft.VisualStudio.TextTemplating.VSHost.*.0.dll
+  - Microsoft.VisualStudio.TextTemplating.VSHost.*.0.dll
 
 - $(ProgramFiles)\Microsoft Visual Studio *.0\Common7\IDE\PublicAssemblies\
 
-    - Microsoft.VisualStudio.TextTemplating.Modeling.*.0.dll
+  - Microsoft.VisualStudio.TextTemplating.Modeling.*.0.dll
 
 ## <a name="to-edit-the-project-file"></a>若要編輯專案檔
 
@@ -216,7 +216,7 @@ $(IncludeFolders);$(MSBuildProjectDirectory)\Include;AnotherFolder;And\Another</
 </PropertyGroup>
 ```
 
-##  <a name="parameters"></a> 將建置內容資料傳遞至範本
+## <a name="parameters"></a> 將建置內容資料傳遞至範本
 
 您可以在專案檔中設定參數值。 例如，您可以傳遞[建置](../msbuild/msbuild-properties.md)屬性並[環境變數](../msbuild/how-to-use-environment-variables-in-a-build.md):
 
@@ -250,7 +250,7 @@ Dim value = Host.ResolveParameterValue("-", "-", "parameterName")
 > [!NOTE]
 > 只有在您使用 MSBuild 時，`ResolveParameterValue` 才會從 `T4ParameterValues` 取得資料。 使用 Visual Studio 轉換範本時，參數會擁有預設值。
 
-##  <a name="msbuild"></a> 使用組件中的專案屬性和 include 指示詞
+## <a name="msbuild"></a> 使用組件中的專案屬性和 include 指示詞
 
 Visual Studio 巨集想 **$ （solutiondir)** 在 MSBuild 中無法運作。 您可以改用專案屬性。
 

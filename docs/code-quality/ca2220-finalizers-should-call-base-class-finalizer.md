@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 034f80c9198ab098070e6642f4a4d96cff1744c5
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55927642"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62541854"
 ---
 # <a name="ca2220-finalizers-should-call-base-class-finalizer"></a>CA2220:完成項應該呼叫基底類別完成項
 

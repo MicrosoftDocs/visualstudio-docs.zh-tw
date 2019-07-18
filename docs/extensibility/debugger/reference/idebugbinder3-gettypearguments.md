@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugBinder3::GetTypeArguments method
 ms.assetid: fa0c37a7-327f-463e-9a9d-bb3f534584cb
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7cbccb155b8a96a3a7480c4e898a597e57250df4
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: a9d301dbb99e88ba4552ad59d9116f64dc032371
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56712147"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66330749"
 ---
 # <a name="idebugbinder3gettypearguments"></a>IDebugBinder3::GetTypeArguments
 這個方法會擷取與這個物件相關聯的引數類型的清單。
@@ -42,22 +45,18 @@ int GetTypeArguments(
 );
 ```
 
-#### <a name="parameters"></a>參數
- `skip`
+## <a name="parameters"></a>參數
+`skip`\
+[in]取得引數型別之前，要略過的欄位數目。
 
- [in]取得引數型別之前，要略過的欄位數目。
+`count`\
+[in]要傳回的引數欄位數目 (也會指定的大小`ppFields`陣列)。
 
- `count`
+`ppFields`\
+[in、 out]將會填入這個方法傳回的欄位的陣列。
 
- [in]要傳回的引數欄位數目 (也會指定的大小`ppFields`陣列)。
-
- `ppFields`
-
- [in、 out]將會填入這個方法傳回的欄位的陣列。
-
- `pFetched`
-
- [out]\(選擇性)引數的數字輸入實際傳回的欄位。
+`pFetched`\
+[out]\(選擇性)引數的數字輸入實際傳回的欄位。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

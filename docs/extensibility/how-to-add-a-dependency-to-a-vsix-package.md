@@ -1,5 +1,5 @@
 ---
-title: HOW TO：新增 vsix 套見的相依性 |Microsoft Docs
+title: 作法：新增 vsix 套見的相依性 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,19 +8,19 @@ helpviewer_keywords:
 - package dll
 - vsix reference
 ms.assetid: 8f20177b-dab9-43a3-b959-81a591b451d6
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 225f2bba47aea209e406abe4555b508a2ee93ade
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: ee6ebeb776e6aa85d5fba200ac357a7375fa2b99
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56708572"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66341052"
 ---
-# <a name="how-to-add-a-dependency-to-a-vsix-package"></a>HOW TO：將相依性加入至 VSIX 封裝
+# <a name="how-to-add-a-dependency-to-a-vsix-package"></a>作法：將相依性加入至 VSIX 封裝
 
 您可以設定安裝中不存在目標電腦上任何相依性的 VSIX 套件部署。 若要達成此目的，包括 VSIX 相依性，以*source.extension.vsixmanifest*檔案。
 
@@ -45,7 +45,6 @@ ms.locfileid: "56708572"
 ```
 
 VSIXInstaller 會偵測舊版的 Visual Studio，並通知使用者，都需要更新版的更新。
-
 
 ## <a name="see-also"></a>另請參閱
 

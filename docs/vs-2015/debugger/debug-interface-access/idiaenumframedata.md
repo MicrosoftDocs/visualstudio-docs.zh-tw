@@ -1,14 +1,9 @@
 ---
-title: IDiaEnumFrameData |Microsoft Docs
-ms.custom: ''
+title: IDiaEnumFrameData | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 2ca7fd5a-b2fa-4b3a-9492-0263eafc435b
 caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 1fbb6c294b6de0a19a8915487e830cb092a7ada7
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 3b3e2436d4b4eed6ac86591821090c89a538e06b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51732392"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68190790"
 ---
 # <a name="idiaenumframedata"></a>IDiaEnumFrameData
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -109,16 +104,13 @@ void ShowFrameData(IDiaSession *pSession)
 ```  
   
 ## <a name="requirements"></a>需求  
- **標頭：** Dia2.h  
+ **標頭：** dia2.h  
   
  **程式庫：** diaguids.lib  
   
  **DLL:** msdia80.dll  
   
 ## <a name="see-also"></a>另請參閱  
- [介面 （偵錯介面存取 SDK）](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
- [Idiasession:: Getenumtables](../../debugger/debug-interface-access/idiasession-getenumtables.md)   
+ [介面 (偵錯介面存取 SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
+ [IDiaSession::getEnumTables](../../debugger/debug-interface-access/idiasession-getenumtables.md)   
  [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)
-
-
-

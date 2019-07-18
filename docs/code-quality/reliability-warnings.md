@@ -14,17 +14,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 74c1a5202b05b3ffe6f9b6c5b24804fb259287c4
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 009422eaf9ac81af6e8f9d48732655b2528c85a0
+ms.sourcegitcommit: 92a04c57ac0a49f304fa2ea5043436f30068c3cd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55942722"
+ms.lasthandoff: 05/21/2019
+ms.locfileid: "65976153"
 ---
 # <a name="reliability-warnings"></a>可靠性警告
-可靠性警告支援程式庫和應用程式的可靠性，例如記憶體和執行緒的正確用法。
 
-## <a name="in-this-section"></a>本節內容
+可靠性警告支援程式庫和應用程式的可靠性，例如記憶體和執行緒的正確用法。 可靠性規則包括：
 
 |規則|描述|
 |----------|-----------------|
@@ -34,3 +33,4 @@ ms.locfileid: "55942722"
 |[CA2003:不要將 fiber 視為執行緒](../code-quality/ca2003-do-not-treat-fibers-as-threads.md)|Managed 的執行緒會被視為 Win32 執行緒。|
 |[CA2004： 必須移除對 GC 的呼叫。KeepAlive](../code-quality/ca2004-remove-calls-to-gc-keepalive.md)|如果您正在轉換為 SafeHandle 使用方式，移除所有對 GC。KeepAlive （物件）。 在此情況下，類別應該不需要呼叫 GC。KeepAlive，假設它們沒有完成項但依賴 SafeHandle 最終處理 OS 處理它們。|
 |[CA2006:使用 SafeHandle 封裝原生資源](../code-quality/ca2006-use-safehandle-to-encapsulate-native-resources.md)|在 Managed 程式碼中使用 IntPtr，可能會有潛在的安全性和可靠性問題。 必須檢閱所有使用 IntPtr 的情況，判斷是否需要在該處使用 SafeHandle (或類似技術)。|
+|[CA2007:不直接等候工作](../code-quality/ca2007-do-not-directly-await-task.md)|非同步方法[等候](/dotnet/csharp/language-reference/keywords/await)<xref:System.Threading.Tasks.Task>直接。|

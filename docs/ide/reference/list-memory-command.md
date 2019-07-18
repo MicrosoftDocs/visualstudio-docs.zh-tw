@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9120b3076dff1620f6ec5b9ff77041126932481a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55947207"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62557095"
 ---
 # <a name="list-memory-command"></a>列出記憶體命令
 顯示指定的記憶體範圍的內容。

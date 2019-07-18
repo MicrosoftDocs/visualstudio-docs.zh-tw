@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPortEx2 interface
 ms.assetid: 144724d0-38ee-4c9b-87ca-8a504371182b
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 392b922eb8312906713ba7b5808ed117e20277b5
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: bed6cd047af4ba57a1880d87e30a990dcf83efac
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56691042"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66340436"
 ---
 # <a name="idebugportex2"></a>IDebugPortEx2
 此介面可讓偵錯管理員 (SDM) 控制項，程式和連接埠上執行的處理序的工作階段。

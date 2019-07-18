@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b4c7df0cf9e837e27e8f572bb50d5e3395b3424a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 0dce682aad7ab0d049488a6da9b8ab4f3b444d88
+ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56629907"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65531699"
 ---
 # <a name="import-element-msbuild"></a>Import 項目 (MSBuild)
 將某個專案檔的內容匯入至另一個專案檔。
@@ -46,6 +46,7 @@ ms.locfileid: "56629907"
 |---------------|-----------------|
 |`Project`|必要屬性。<br /><br /> 要匯入之專案檔的路徑。 路徑可以包含萬用字元。 相符的檔案會依排序的順序進行匯入。 使用這項功能，只要將程式碼檔案新增至目錄，就可以將程式碼新增至專案。|
 |`Condition`|選擇性屬性。<br /><br /> 要評估的條件。 如需詳細資訊，請參閱[條件](../msbuild/msbuild-conditions.md)。|
+|`Sdk`| 選擇性屬性。<br /><br /> 參考專案 SDK。|
 
 ### <a name="child-elements"></a>子元素
  無
@@ -69,7 +70,6 @@ ms.locfileid: "56629907"
  如果匯入的專案沒有 `DefaultTargets` 屬性，則會依匯入順序來檢查匯入的專案，並使用第一個探索到之 `DefaultTargets` 屬性的值。 例如，如果 ProjectA 匯入 ProjectB 和 ProjectC (依該順序)，而 ProjectB 匯入 ProjectD，則 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 會依序尋找 ProjectA、ProjectB、ProjectD 和 ProjectC 上指定的 `DefaultTargets` 。
 
  匯入之專案的結構描述與標準專案的結構描述完全相同。 雖然 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 可能可以建置匯入的專案，但是無法達成，因為匯入的專案通常不會包含要設定之屬性或目標執行順序的相關資訊。 匯入的專案取決於匯入它以提供該資訊的專案。
-
 
 ## <a name="wildcards"></a>萬用字元
  在 .NET Framework 4 中，MSBuild 允許在 Project 屬性中使用萬用字元。 有萬用字元時，會排序所有找到的相符項目 (適用於重現性)，然後依該順序進行匯入，就像已明確設定順序一樣。

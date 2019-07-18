@@ -20,12 +20,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f0a13f6355b868292d7d2867e54a8e62cb87c0f
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 1e592b6d5da908b71aa5af9bae7afe495944301a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223009"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62936784"
 ---
 # <a name="dependency-diagrams-reference"></a>相依性圖表： 參考
 
@@ -40,13 +40,13 @@ ms.locfileid: "57223009"
 
 使用相依性圖表，可協助您執行下列工作：
 
--   溝通系統的現有或預期邏輯架構。
+- 溝通系統的現有或預期邏輯架構。
 
--   探索您現有程式碼和預期架構之間的衝突。
+- 探索您現有程式碼和預期架構之間的衝突。
 
--   當重構、更新或發展您的系統時，以視覺化方式檢視變更對預期架構的影響。
+- 當重構、更新或發展您的系統時，以視覺化方式檢視變更對預期架構的影響。
 
--   在開發和維護您的程式碼期間，藉由在簽入及建置作業包含驗證，強化預期的架構。
+- 在開發和維護您的程式碼期間，藉由在簽入及建置作業包含驗證，強化預期的架構。
 
 本主題說明您可以使用相依性圖表的項目。 如需詳細資訊，有關如何建立和繪製相依性圖表，請參閱[相依性圖表：指導方針](../modeling/layer-diagrams-guidelines.md)。 如需分層模式的詳細資訊，請瀏覽[典範與實例的站台](http://go.microsoft.com/fwlink/?LinkId=145794)。
 
@@ -66,19 +66,19 @@ ms.locfileid: "57223009"
 
 ## <a name="Explorer"></a> 圖層總管
 
-您可以將每個圖層連結到方案中的成品，例如專案、類別、命名空間、專案檔和您軟體的其他部分。 圖層上的數字顯示連結至該圖層的成品數目。 不過，當閱讀圖層上的成品數時，請記住下列：
+您可以將每個圖層連結到方案中的成品，例如專案、類別、命名空間、專案檔和您軟體的其他部分。 圖層上的數字會顯示圖層連結的成品數目。 不過，當閱讀圖層上的成品數時，請記住下列：
 
--   如果圖層連結的成品有包含其他成品，但圖層未直接連結這些其他成品，則數字將只包含連結的成品。 然而，在圖層驗證期間會加入其他成品以進行分析。
+- 如果圖層連結的成品有包含其他成品，但圖層未直接連結這些其他成品，則數字將只包含連結的成品。 然而，在圖層驗證期間會加入其他成品以進行分析。
 
      例如，如果圖層連結到單一命名空間，即使命名空間包含類別，連結的成品數目仍為 1。 如果圖層也有命名空間中每個類別的連結，則數字將包含這些已連結的類別。
 
--   如果圖層包含已連結到成品的其他圖層，即使此容器圖層上的數字未包含那些成品，容器圖層也會連結到那些成品。
+- 如果圖層包含已連結到成品的其他圖層，即使此容器圖層上的數字未包含那些成品，容器圖層也會連結到那些成品。
 
 如需連結圖層與成品的詳細資訊，請參閱：
 
--   [相依性圖表中：指導方針](../modeling/layer-diagrams-guidelines.md)
+- [相依性圖表中：方針](../modeling/layer-diagrams-guidelines.md)
 
--   [從您的程式碼建立相依性圖表](../modeling/create-layer-diagrams-from-your-code.md)
+- [從您的程式碼建立相依性圖表](../modeling/create-layer-diagrams-from-your-code.md)
 
 ### <a name="examine-the-linked-artifacts"></a>檢查連結的成品
 

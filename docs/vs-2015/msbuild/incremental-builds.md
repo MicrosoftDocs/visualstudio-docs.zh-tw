@@ -11,17 +11,16 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a436135d4acb27e9f875d6a0bd348e37b91c06a6
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: eb11467d8d59e7af11741d7719da2858ac1a784c
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54758441"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59654031"
 ---
 # <a name="incremental-builds"></a>累加建置
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 累加組建是已最佳化的組置，因此不會執行輸出檔案與其相關對應輸入檔案為最新的目標。 目標項目可能有 `Inputs` 屬性可指出目標預期作為輸入的項目，以及 `Outputs` 屬性可指出它產生作為輸出的項目。 MSBuild 嘗試尋找這些屬性值之間的 1 對 1 對應。 如果具有 1 對 1 對應，MSBuild 會比較每個輸入項目的時間戳記與其對應輸出項目的時間戳記。 沒有 1 對 1 對應的輸出檔案會與所有輸入檔案進行比較。 如果項目的輸出檔與輸入檔同齡或是前者較新，該項目則可視為最新狀態。  
   
  如果所有輸出項目都是最新的，則 MSBuild 會跳過目標。 目標的這個「累加組建」可以大幅改善建置速度。 如果只有某些檔案是最新的，則 MSBuild 會執行目標，但跳過最新項目，進而讓所有項目都具有最新狀態。 這稱為目標的「部分累加組建」。  

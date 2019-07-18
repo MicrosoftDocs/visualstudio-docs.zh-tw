@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d28836e1213e65fa7537937b9b6ce27b87f1c3ba
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
-ms.translationtype: MT
+ms.openlocfilehash: e170a5ed703a9bf5aae2e73126de52ecf88e8084
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58324496"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443515"
 ---
 # <a name="debug-extensions-for-the-sharepoint-tools-in-visual-studio"></a>偵錯在 Visual Studio 中 SharePoint 工具擴充功能
   您可以偵錯的實驗執行個體或一般的執行個體的 Visual Studio 中 SharePoint 工具擴充功能。 如果您需要的行為延伸模組進行疑難排解，您也可以修改登錄值以顯示其他錯誤資訊，並設定 Visual Studio 執行 SharePoint 命令的方式。
@@ -29,50 +29,50 @@ ms.locfileid: "58324496"
 
  如需示範如何偵錯各種類型的 Visual Studio 的實驗執行個體中的延伸模組的範例，請參閱下列逐步解說：
 
--   [逐步解說：擴充 SharePoint 專案項目類型](../sharepoint/walkthrough-extending-a-sharepoint-project-item-type.md)
+- [逐步解說：擴充 SharePoint 專案項目類型](../sharepoint/walkthrough-extending-a-sharepoint-project-item-type.md)
 
--   [逐步解說：使用項目範本，第 1 部分中建立自訂動作專案項目](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)
+- [逐步解說：使用項目範本，第 1 部分中建立自訂動作專案項目](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)
 
--   [逐步解說：建立 SharePoint 專案的自訂部署步驟](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md)
+- [逐步解說：建立 SharePoint 專案的自訂部署步驟](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md)
 
--   [逐步解說：擴充伺服器總管以顯示 web 組件](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)
+- [逐步解說：擴充伺服器總管以顯示 web 組件](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)
 
--   [逐步解說：呼叫 SharePoint 用戶端物件模型，在 伺服器總管延伸模組](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md)
+- [逐步解說：呼叫 SharePoint 用戶端物件模型，在 伺服器總管延伸模組](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md)
 
 ## <a name="debug-extensions-in-the-regular-instance-of-visual-studio"></a>偵錯 Visual Studio 的一般執行個體中的延伸模組
  如果您想要偵錯擴充功能專案的 Visual Studio 一般的執行個體中，第一次規則執行個體中安裝擴充功能。 然後，將偵錯工具附加至第二個 Visual Studio 處理序。 完成之後，您就可以移除擴充功能，使它不會再載入在開發電腦上。
 
 #### <a name="to-install-the-extension"></a>安裝擴充功能
 
-1.  關閉所有 Visual Studio 執行個體。
+1. 關閉所有 Visual Studio 執行個體。
 
-2.  在 擴充功能專案的組建輸出資料夾，開啟 *.vsix*檔案按兩下，或開啟其捷徑功能表，然後選擇**開啟**:
+2. 在 擴充功能專案的組建輸出資料夾，開啟 *.vsix*檔案按兩下，或開啟其捷徑功能表，然後選擇**開啟**:
 
-3.  在 [ **Visual Studio 擴充功能安裝程式**對話方塊方塊中，選擇您想要安裝擴充功能，再選擇的 Visual Studio 版本**安裝**] 按鈕。
+3. 在 [ **Visual Studio 擴充功能安裝程式**對話方塊方塊中，選擇您想要安裝擴充功能，再選擇的 Visual Studio 版本**安裝**] 按鈕。
 
      Visual Studio 會延伸檔案安裝至 %UserProfile%\AppData\Local\Microsoft\VisualStudio\11.0\Extensions\\*作者姓名*\\*副檔名*\\*版本*。 此路徑中的最後三個資料夾，建構自`Author`， `Name`，並`Version`中的項目*extension.vsixmanifest*的延伸模組檔案。
 
-4.  Visual Studio 安裝擴充功能之後，請選擇**關閉** 按鈕。
+4. Visual Studio 安裝擴充功能之後，請選擇**關閉** 按鈕。
 
 #### <a name="to-debug-the-extension"></a>若要偵錯擴充功能
 
-1.  使用系統管理員權限開啟 Visual Studio，然後開啟 擴充功能專案。 下列的步驟，請參閱 Visual studio 這個執行個體*第一次執行個體*。
+1. 使用系統管理員權限開啟 Visual Studio，然後開啟 擴充功能專案。 下列的步驟，請參閱 Visual studio 這個執行個體*第一次執行個體*。
 
-2.  系統管理員權限啟動 Visual studio 的另一個執行個體。 下列的步驟，請參閱 Visual studio 這個執行個體*第二個執行個體*。
+2. 系統管理員權限啟動 Visual studio 的另一個執行個體。 下列的步驟，請參閱 Visual studio 這個執行個體*第二個執行個體*。
 
-3.  切換至 Visual Studio 的第一個執行個體。
+3. 切換至 Visual Studio 的第一個執行個體。
 
-4.  在功能表列上選擇 **偵錯**，**附加至處理序**。
+4. 在功能表列上選擇 **偵錯**，**附加至處理序**。
 
-5.  在 **可用的處理序**清單中，選擇*devenv.exe*。 此項目是指 Visual Studio; 第二個執行個體這是您想要偵錯您的專案延伸模組的執行個體。
+5. 在 **可用的處理序**清單中，選擇*devenv.exe*。 此項目是指 Visual Studio; 第二個執行個體這是您想要偵錯您的專案延伸模組的執行個體。
 
-6.  選擇**附加** 按鈕。
+6. 選擇**附加** 按鈕。
 
      Visual Studio 偵錯模式中執行擴充功能專案。
 
-7.  切換至 Visual Studio 的第二個執行個體。
+7. 切換至 Visual Studio 的第二個執行個體。
 
-8.  建立新的 SharePoint 專案，以載入您的延伸模組。 例如，如果您正在偵錯擴充功能的清單定義專案項目，建立**清單定義**專案。
+8. 建立新的 SharePoint 專案，以載入您的延伸模組。 例如，如果您正在偵錯擴充功能的清單定義專案項目，建立**清單定義**專案。
 
 9. 執行任何步驟都必須測試延伸模組程式碼。
 
@@ -80,33 +80,33 @@ ms.locfileid: "58324496"
 
 #### <a name="to-remove-the-extension"></a>移除擴充功能
 
-1.  在 Visual Studio 中，在功能表列上選擇**工具**，**擴充功能和更新**。
+1. 在 Visual Studio 中，在功能表列上選擇**工具**，**擴充功能和更新**。
 
      [擴充功能和更新] 對話方塊隨即開啟。
 
-2.  在延伸模組清單中，選擇的延伸模組的名稱，然後選擇**解除安裝** 按鈕。
+2. 在延伸模組清單中，選擇的延伸模組的名稱，然後選擇**解除安裝** 按鈕。
 
-3.  在出現的對話方塊中，選擇**是**按鈕，以確認您想要解除安裝擴充功能。
+3. 在出現的對話方塊中，選擇**是**按鈕，以確認您想要解除安裝擴充功能。
 
-4.  選擇**立即重新啟動**按鈕以完成解除安裝。
+4. 選擇**立即重新啟動**按鈕以完成解除安裝。
 
 ## <a name="debug-sharepoint-commands"></a>偵錯 SharePoint 命令
  如果您想要偵錯組件的 SharePoint 工具擴充功能的 SharePoint 命令，您必須將偵錯工具附加*vssphost4.exe*程序。 這是 64 位元主控件程序來執行 SharePoint 命令。 如需有關 SharePoint 命令和*vssphost4.exe*，請參閱[呼叫 SharePoint 物件模型](../sharepoint/calling-into-the-sharepoint-object-models.md)。
 
 #### <a name="to-attach-the-debugger-to-the-vssphost4exe-process"></a>若要將偵錯工具附加至 vssphost4.exe 處理序
 
-1.  開始偵錯您的 Visual Studio 實驗執行個體或一般執行個體中的 Visual Studio 的擴充功能，依照上述指示。
+1. 開始偵錯您的 Visual Studio 實驗執行個體或一般執行個體中的 Visual Studio 的擴充功能，依照上述指示。
 
-2.  在 Visual Studio 中您正在偵錯工具，在功能表列的執行個體，選擇**偵錯**，**附加至處理序**。
+2. 在 Visual Studio 中您正在偵錯工具，在功能表列的執行個體，選擇**偵錯**，**附加至處理序**。
 
-3.  在 **可用的處理序**清單中，選擇*vssphost.exe*。
+3. 在 **可用的處理序**清單中，選擇*vssphost.exe*。
 
     > [!NOTE]
-    >  如果 vssphost.exe 不會出現在清單中，您必須啟動*vssphost4.exe*程序，在您執行擴充功能的 Visual Studio 執行個體。 一般而言，您可以執行某個動作而造成 Visual Studio 來連線至 SharePoint 網站，在開發電腦上。 比方說，Visual Studio 會啟動*vssphost4.exe*當您展開站台的連線節點 （節點會顯示網站 URL） 底下**SharePoint 連線**中的節點**伺服器總管**視窗中，或當您新增特定 SharePoint 專案項目，例如**清單執行個體**或是**事件接收器**至 SharePoint 專案項目。
+    > 如果 vssphost.exe 不會出現在清單中，您必須啟動*vssphost4.exe*程序，在您執行擴充功能的 Visual Studio 執行個體。 一般而言，您可以執行某個動作而造成 Visual Studio 來連線至 SharePoint 網站，在開發電腦上。 比方說，Visual Studio 會啟動*vssphost4.exe*當您展開站台的連線節點 （節點會顯示網站 URL） 底下**SharePoint 連線**中的節點**伺服器總管**視窗中，或當您新增特定 SharePoint 專案項目，例如**清單執行個體**或是**事件接收器**至 SharePoint 專案項目。
 
-4.  選擇**附加** 按鈕。
+4. 選擇**附加** 按鈕。
 
-5.  在 Visual Studio 進行偵錯的執行個體，執行步驟，才能執行您的命令。
+5. 在 Visual Studio 進行偵錯的執行個體，執行步驟，才能執行您的命令。
 
 ## <a name="modify-registry-values-to-help-debug-sharepoint-tools-extensions"></a>修改登錄值，以協助偵錯 SharePoint 工具擴充功能
  當您偵錯的 Visual Studio 中 SharePoint 工具擴充功能時，您可以修改登錄，以協助您疑難排解擴充功能中的值。 值存在底下**HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\11.0\SharePointTools**索引鍵。 依預設沒有這些值。

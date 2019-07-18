@@ -6,17 +6,20 @@ helpviewer_keywords:
 - GetAttributedClassesForLanguage
 - IDebugComPlusSymbolProvider::GetAttributedClassesForLanguage
 ms.assetid: e5b1b8b6-52a6-4ade-9a36-644abfa9f4b2
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 10d25cb9e58ac3eb38282a3ef2a2f631b6ba0e66
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 4baf00c91d424282e80740bfa097957aa074997d
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56706232"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66336879"
 ---
 # <a name="idebugcomplussymbolprovidergetattributedclassesforlanguage"></a>IDebugComPlusSymbolProvider::GetAttributedClassesForLanguage
 擷取具有指定屬性中指定的程式設計語言實作的類別。
@@ -39,18 +42,15 @@ int GetAttributedClassesForLanguage (
 );
 ```
 
-#### <a name="parameters"></a>參數
-`guidLanguage`
+## <a name="parameters"></a>參數
+`guidLanguage`\
+[in]語言的唯一識別碼。
 
- [in]語言的唯一識別碼。
+`pstrAttribute`\
+[in]屬性的字串。
 
-`pstrAttribute`
-
- [in]屬性的字串。
-
-`ppEnum`
-
- [out]傳回屬性類別的列舉。
+`ppEnum`\
+[out]傳回屬性類別的列舉。
 
 ## <a name="return-value"></a>傳回值
 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

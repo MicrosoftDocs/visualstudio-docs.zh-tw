@@ -5,12 +5,12 @@ ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e7c7e93fa0ba58f7888212c48e28d21bd564ae7c
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: 3cf836ed59dadba71314aa38cd4d2907bee384a6
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526304"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62808154"
 ---
 # <a name="walkthrough-use-xslt-hierarchy"></a>逐步解說：使用 XSLT 階層
 
@@ -69,7 +69,7 @@ XSLT 階層工具可簡化許多 XML 開發工作。 XSLT 樣式表經常使用 
     </xsl:stylesheet>
     ```
 
-3.  新增下列*xslinclude.xsl*檔案：
+3. 新增下列*xslinclude.xsl*檔案：
 
     ```xml
     <?xml version='1.0'?>
@@ -103,11 +103,11 @@ XSLT 階層工具可簡化許多 XML 開發工作。 XSLT 樣式表經常使用 
     </xsl:stylesheet>
     ```
 
-4.  在指示處加入中斷點`<xsl:include href="xslincludefile.xsl" />`。
+4. 在指示處加入中斷點`<xsl:include href="xslincludefile.xsl" />`。
 
-5.  開始偵錯。
+5. 開始偵錯。
 
-6.  當偵錯工具停在指示`<xsl:include href="xslincludefile.xsl" />`，按下**逐步執行** 按鈕。 偵錯可以繼續在參考的樣式表中。 您會看見階層，同時設計工具會顯示正確的路徑。
+6. 當偵錯工具停在指示`<xsl:include href="xslincludefile.xsl" />`，按下**逐步執行** 按鈕。 偵錯可以繼續在參考的樣式表中。 您會看見階層，同時設計工具會顯示正確的路徑。
 
 ## <a name="see-also"></a>另請參閱
 

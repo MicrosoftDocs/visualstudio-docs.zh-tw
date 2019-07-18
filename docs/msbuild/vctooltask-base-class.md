@@ -8,19 +8,19 @@ dev_langs:
 - C++
 - jsharp
 author: mikeblome
-ms.author: Michael.Blome
+ms.author: mblome
 ms.workload:
 - multiple
-ms.openlocfilehash: 4c7cc3490735dbd9ac43cd43555ec673cc3afccd
-ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
+ms.openlocfilehash: 7bdad856a6ea0ec6cca8292bc3095f51c500bcb1
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "58070391"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62970714"
 ---
 # <a name="vctooltask-base-class"></a>VCToolTask 基底類別
 
-許多工作最終繼承自 <xref:Microsoft.Build.Utilities.Task> 類別和 [ToolTask](/dotnet/api/microsoft.build.utilities.tooltask) 類別。 此類別會將數個參數新增至從中衍生它們的工作。 此文件會列出這些參數。
+許多工作最終繼承自 <xref:Microsoft.Build.Utilities.Task> 類別和 [ToolTask](/dotnet/api/microsoft.build.utilities.tooltask) 類別。 此類別會將數個參數新增至從中衍生它們的工作。 本文件會列出這些參數。
 
 ## <a name="parameters"></a>參數
 

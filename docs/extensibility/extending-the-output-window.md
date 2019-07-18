@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - Output window, about Output window
 ms.assetid: b02fa88c-f92a-4ff6-ba5f-2eb4d48a643a
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 03e7cb1a462c79f498687296afd8c64accfc1458
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: dd02ce74f2fee8255d92c47149a46f1003b02011
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56706206"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66311030"
 ---
 # <a name="extend-the-output-window"></a>擴充 [輸出] 視窗
 **輸出**視窗是一組讀取/寫入文字窗格。 Visual Studio 有這些內建的窗格：**建置**，在哪些專案通訊相關的組建中，訊息和**一般**，在其中[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]會傳達有關 IDE 的訊息。 專案取得參照**建置**窗格自動透過<xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildableProjectCfg>介面方法和 Visual Studio 提供直接存取**一般**窗格中的透過<xref:Microsoft.VisualStudio.Shell.Interop.SVsGeneralOutputWindowPane>服務。 除了內建的窗格中，您可以建立和管理您自己自訂的窗格。
@@ -25,22 +25,22 @@ ms.locfileid: "56706206"
 ## <a name="create-an-extension-that-uses-the-output-pane"></a>建立會使用 [輸出] 窗格的擴充功能
  您可以讓擴充功能執行輸出 窗格的不同層面。
 
-1.  建立 VSIX 專案，名為`TestOutput`功能表命令與名為**TestOutput**。 如需詳細資訊，請參閱 <<c0> [ 建立具有功能表命令的延伸模組](../extensibility/creating-an-extension-with-a-menu-command.md)。
+1. 建立 VSIX 專案，名為`TestOutput`功能表命令與名為**TestOutput**。 如需詳細資訊，請參閱 <<c0> [ 建立具有功能表命令的延伸模組](../extensibility/creating-an-extension-with-a-menu-command.md)。
 
-2.  加入下列參考：
+2. 加入下列參考：
 
-    1.  EnvDTE
+    1. EnvDTE
 
-    2.  EnvDTE80
+    2. EnvDTE80
 
-3.  在  *TestOutput.cs*，新增下列 using 陳述式：
+3. 在  *TestOutput.cs*，新增下列 using 陳述式：
 
     ```f#
     using EnvDTE;
     using EnvDTE80;
     ```
 
-4.  在  *TestOutput.cs*，刪除`ShowMessageBox`方法。 新增下列方法 stub:
+4. 在  *TestOutput.cs*，刪除`ShowMessageBox`方法。 新增下列方法 stub:
 
     ```csharp
     private void OutputCommandHandler(object sender, EventArgs e)
@@ -48,7 +48,7 @@ ms.locfileid: "56706206"
     }
     ```
 
-5.  TestOutput 建構函式，將 OutputCommandHandler 中的命令處理常式。 以下是將命令新增的部分：
+5. TestOutput 建構函式，將 OutputCommandHandler 中的命令處理常式。 以下是將命令新增的部分：
 
     ```csharp
     OleMenuCommandService commandService = this.ServiceProvider.GetService(typeof(IMenuCommandService)) as OleMenuCommandService;
@@ -61,7 +61,7 @@ ms.locfileid: "56706206"
     }
     ```
 
-6.  下列各節會有不同的方法，顯示不同的方式處理 [輸出] 窗格。 您可以呼叫這些方法的主體來`OutputCommandHandler()`方法。 例如，下列程式碼加入`CreatePane()`下一節中提供的方法。
+6. 下列各節會有不同的方法，顯示不同的方式處理 [輸出] 窗格。 您可以呼叫這些方法的主體來`OutputCommandHandler()`方法。 例如，下列程式碼加入`CreatePane()`下一節中提供的方法。
 
     ```csharp
     private void OutputCommandHandler(object sender, EventArgs e)

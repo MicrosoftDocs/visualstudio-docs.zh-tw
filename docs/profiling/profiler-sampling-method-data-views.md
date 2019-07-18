@@ -11,18 +11,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fe65358318ee00d53345d6d61ee999e46c1ecd06
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 622a088506fe913c834e7de8807dc167f6ab0fc9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56627749"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431993"
 ---
 # <a name="profiler-sampling-method-data-views"></a>分析工具取樣方法資料檢視
 本節包含使用取樣方法所產生的分析工具資料檔案之檢視和報告的參考資訊。
 
 > [!NOTE]
->  Windows 8 和 Windows Server 2012 增強式安全性功能需要的重大變更，會以 Visual Studio 分析工具在這些平台收集資料的方式表現。 UWP App 也需要新的收集技術。 請參閱 [Windows 8 和 Windows Server 2012 應用程式的效能工具](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)。
+> Windows 8 和 Windows Server 2012 增強式安全性功能需要的重大變更，會以 Visual Studio 分析工具在這些平台收集資料的方式表現。 UWP App 也需要新的收集技術。 請參閱 [Windows 8 和 Windows Server 2012 應用程式的效能工具](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)。
 
 ## <a name="in-this-section"></a>本節內容
 - [摘要檢視](../profiling/summary-view-sampling-data.md)

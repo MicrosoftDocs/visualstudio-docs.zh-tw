@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d263344b84ad93cc582d05112c08d2bad1aa998
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 3b9c73def1870e09a43485ddd423ee9d3000bbee
+ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56632442"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65846231"
 ---
 # <a name="special-characters-to-escape"></a>要逸出的特殊字元
 只有正在使用特殊字元的內容中，特殊字元具有特殊意義時，才必須逸出。 例如，星號 (*) 只有在項目定義的 "Include" 和 "Exclude" 屬性中，或是呼叫  <xref:Microsoft.Build.Tasks.CreateItem> 時，才是特殊字元。 在其他情況下，星號會視為星號常值。 雖然您不需要逸出專案檔中的所有星號，但要這麼做也無妨。
@@ -37,7 +37,6 @@ ms.locfileid: "56632442"
 |@|@ 記號，用以參考項目清單。|
 |(|左括號，用於清單中。|
 |)|右括號，用於清單中。|
-|`|所有格符號 (或刻度標記)，用於條件運算式和其他運算式。|
 |;|分號，清單分隔字元。|
 |?|問號，在項目的 Include/Exclude 區段中描述檔案規格時為萬用字元。|
 |*|星號，在項目的 Include/Exclude 區段中描述檔案規格時為萬用字元。|

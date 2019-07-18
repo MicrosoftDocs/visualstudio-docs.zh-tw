@@ -24,14 +24,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1a35e679ebff8a0a262b329298b0f2d135eb9dc8
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
-ms.translationtype: MTE95
+ms.openlocfilehash: 794400a14cac5b85f813e7a384c650c581a719e2
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526681"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62905574"
 ---
-# <a name="use-the-memory-windows-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>使用 Visual Studio 偵錯工具中的 [記憶體] 視窗 (C#，c + +、 Visual Basic 中， F#)
+# <a name="use-the-memory-windows-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>使用 Visual Studio 偵錯工具中的 [記憶體] 視窗 (C#， C++，Visual Basic 中， F#)
 
 偵錯時，**記憶體**視窗會顯示您的應用程式使用的記憶體空間。
 
@@ -84,7 +84,7 @@ ms.locfileid: "57526681"
 
 **變更記憶體內容格式：**
 
--  以滑鼠右鍵按一下**記憶體** 視窗中，並從操作功能表中選擇您想要的格式。
+- 以滑鼠右鍵按一下**記憶體** 視窗中，並從操作功能表中選擇您想要的格式。
 
 **變更記憶體視窗中的欄位數目：**
 

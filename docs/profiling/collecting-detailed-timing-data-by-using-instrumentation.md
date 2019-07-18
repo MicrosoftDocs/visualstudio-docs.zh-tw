@@ -11,23 +11,23 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9bd897d6b986b1d0c7a06a36a58eb88ba929bfc4
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: a58a5a1431dbb8ddbc9b23d93928f615e945b3b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56617570"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62834303"
 ---
 # <a name="collect-detailed-timing-data-by-using-instrumentation"></a>使用檢測設備收集詳細計時資料
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 程式碼剖析工具檢測方法會將程式碼剖析的程式碼插入模組的複本。 執行剖析期間，程式碼會記錄在模組中函式的每個項目、結束和函式呼叫。 此檢測方法適合用來收集程式碼區段的詳細計時資訊，以及了解輸入和輸出作業對應用程式效能的影響。
 
  您可以使用下列程序的其中一個來指定檢測方法：
 
--   在 [程式碼剖析精靈] 的第一頁，選取 [檢測] 。
+- 在 [程式碼剖析精靈] 的第一頁，選取 [檢測] 。
 
--   在 [效能總管]  工具列的 [方法]  清單中，按一下 [檢測] 。
+- 在 [效能總管]  工具列的 [方法]  清單中，按一下 [檢測] 。
 
--   在效能工作階段 [屬性] 對話方塊中的 [一般]  頁面，選取 [檢測] 。
+- 在效能工作階段 [屬性] 對話方塊中的 [一般]  頁面，選取 [檢測] 。
 
 ## <a name="common-tasks"></a>一般工作
  您可以在效能工作階段的 [效能工作階段]  對話方塊中指定其他選項。 若要開啟此對話方塊：

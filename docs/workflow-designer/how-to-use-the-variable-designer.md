@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2322b787327b4c0abf7c8a1010d52ef49a54f945
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: f90cbb58406df2410361bf9409c843b5c35b4331
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55944581"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62949040"
 ---
 # <a name="how-to-use-the-variable-designer"></a>HOW TO：使用變數設計工具
 
@@ -25,13 +25,13 @@ ms.locfileid: "55944581"
 
 ## <a name="to-create-a-new-variable"></a>若要建立新變數
 
-1.  Visual Studio 中開啟工作流程或活動的解決方案。
+1. Visual Studio 中開啟工作流程或活動的解決方案。
 
-2.  在設計畫布上，選取工作流程中的活動。
+2. 在設計畫布上，選取工作流程中的活動。
 
-3.  開啟變數設計工具，依序按一下**變數**設計畫布左下角的按鈕。 變數設計工具隨即出現。
+3. 開啟變數設計工具，依序按一下**變數**設計畫布左下角的按鈕。 變數設計工具隨即出現。
 
-4.  按一下標示為空白資料列**建立變數**。 這會將新的資料列新增使用新的變數，使用下列的預設值： 針對 variablex**名稱**其中 x 是整數，其初始值為 1，若要建立唯一的變數名稱，會自動遞增**字串**for**變數型別**，和**順序**如**範圍**。 不加入任何值**預設**。 在工作流程設計過程中，您隨時可以變更這些值。
+4. 按一下標示為空白資料列**建立變數**。 這會將新的資料列新增使用新的變數，使用下列的預設值： 針對 variablex**名稱**其中 x 是整數，其初始值為 1，若要建立唯一的變數名稱，會自動遞增**字串**for**變數型別**，和**順序**如**範圍**。 不加入任何值**預設**。 在工作流程設計過程中，您隨時可以變更這些值。
 
     > [!NOTE]
     > 若要刪除變數，按一下選取的變數，然後按**刪除**索引鍵。

@@ -20,18 +20,18 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b6c4b9d780caf7589eecdc709cbede577dd7a6fd
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56686154"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62852709"
 ---
 # <a name="debugbreak-and-debugbreak"></a>DebugBreak 和 __debugbreak
 您可以在程式碼中的任何一點呼叫 DebugBreak Win32 函式或 [__debugbreak](/cpp/intrinsics/debugbreak) 內建。 `DebugBreak` 和 `__debugbreak` 的作用與在該位置設定中斷點的作用相同。
 
  由於 `DebugBreak` 屬於系統函式呼叫，因此必須安裝系統偵錯符號，才能確保中斷後會顯示正確的呼叫堆疊資訊。 否則，偵錯工具所顯示的呼叫堆疊資訊可能會偏移一個框架。 如果您使用 `__debugbreak`，就不需要符號。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [編譯器內建](/cpp/intrinsics/compiler-intrinsics)
 - [偵錯工具安全性](../debugger/debugger-security.md)
 - [偵錯機器碼](../debugger/debugging-native-code.md)

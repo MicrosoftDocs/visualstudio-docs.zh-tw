@@ -10,12 +10,12 @@ ms.assetid: 800fc739-acd2-4242-84cb-1d83b4d82cf9
 caps.latest.revision: 38
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 46e9ad272dd7d7b6e4a1f6033f09e99cb4b289d3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: d0aa4646bd9d3295aaa2a9da49cc4ed6f057d91a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54782655"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695171"
 ---
 # <a name="using-code-coverage-to-determine-how-much-code-is-being-tested"></a>使用程式碼涵蓋範圍來決定所測試的程式碼數量
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,25 +30,25 @@ ms.locfileid: "54782655"
   
  **需求**  
   
--   Visual Studio 企業版  
+- Visual Studio 企業版  
   
 ### <a name="to-analyze-code-coverage-on-unit-tests-in-test-explorer"></a>在 [測試總管] 中分析單元測試的程式碼涵蓋範圍  
   
-1.  在 [測試] 功能表中選擇 [分析程式碼涵蓋範圍]。  
+1. 在 [測試] 功能表中選擇 [分析程式碼涵蓋範圍]。  
   
-2.  若要查看已執行的程式碼行，請選擇 ![顯示程式碼涵蓋範圍著色圖示](../test/media/codecoverage-showcoloringicon.png "CodeCoverage-ShowColoringIcon")[顯示程式碼涵蓋範圍著色]。  
+2. 若要查看已執行的程式碼行，請選擇 ![顯示程式碼涵蓋範圍著色圖示](../test/media/codecoverage-showcoloringicon.png "CodeCoverage-ShowColoringIcon")[顯示程式碼涵蓋範圍著色]。  
   
      若要修改色彩或使用粗體格式，請選擇**工具**，**選項**，**環境**，**字型和色彩**，**顯示設定：** 文字編輯器。 在 [顯示項目] 下，調整 [涵蓋範圍] 項目。  
   
-3.  如果結果顯示涵蓋範圍較小，請檢查不會執行的部分程式碼，並撰寫更多測試來涵蓋這些項目。 開發小組通常以 80% 的程式碼涵蓋範圍為目標。 某些情況可以接受較小的涵蓋範圍。 例如，從標準範本產生之程式碼涵蓋範圍較小是可接受的。  
+3. 如果結果顯示涵蓋範圍較小，請檢查不會執行的部分程式碼，並撰寫更多測試來涵蓋這些項目。 開發小組通常以 80% 的程式碼涵蓋範圍為目標。 某些情況可以接受較小的涵蓋範圍。 例如，從標準範本產生之程式碼涵蓋範圍較小是可接受的。  
   
 > [!TIP]
->  若要取得準確的結果：  
+> 若要取得準確的結果：  
 > 
 > - 請務必關閉編譯器最佳化。  
 > 
 >   如果使用 Unmanaged 程式碼 (機器碼)，請使用偵錯組建。  
->   -   請務必為每個組件產生 .pdb (符號) 檔。  
+>   - 請務必為每個組件產生 .pdb (符號) 檔。  
 > 
 >   如果沒有得到預期的結果，請參閱[針對程式碼涵蓋範圍進行 疑難排解](../test/troubleshooting-code-coverage.md)。 。 更新程式碼後不要忘記再次執行程式碼涵蓋範圍。 修改程式碼後或執行測試時，並不會自動更新涵蓋範圍結果和程式碼著色。  
   
@@ -66,15 +66,15 @@ ms.locfileid: "54782655"
   
  您可以合併數個回合的結果，例如合併使用不同測試資料的回合。  
   
--   **若要檢視先前的結果集**，請從下拉式功能表中選取它。 當您開啟新的方案時，功能表會顯示暫存清單。  
+- **若要檢視先前的結果集**，請從下拉式功能表中選取它。 當您開啟新的方案時，功能表會顯示暫存清單。  
   
--   **若要檢視上一個工作階段的結果**，請選擇 [匯入程式碼涵蓋範圍結果]，瀏覽至方案中的 [TestResults] 資料夾，然後匯入 .coverage 檔案。  
+- **若要檢視上一個工作階段的結果**，請選擇 [匯入程式碼涵蓋範圍結果]，瀏覽至方案中的 [TestResults] 資料夾，然後匯入 .coverage 檔案。  
   
      如果在產生 .coverage 檔案之後變更過原始程式碼，涵蓋範圍著色可能會不正確。  
   
--   **若要以文字顯示結果**，請選擇 [匯出程式碼涵蓋範圍結果]。 這樣會產生一個易讀的 .coveragexml 檔案，您可以使用其他工具處理這個檔案，也可以透過郵件傳送該檔案。  
+- **若要以文字顯示結果**，請選擇 [匯出程式碼涵蓋範圍結果]。 這樣會產生一個易讀的 .coveragexml 檔案，您可以使用其他工具處理這個檔案，也可以透過郵件傳送該檔案。  
   
--   **若要將結果傳送給他人**，請傳送 .coverage 檔案或匯出的 .coveragexml 檔案。 然後，他們就可以匯入您所傳送的檔案。 如果他們有相同版本的原始程式碼，就可以看見涵蓋範圍著色。  
+- **若要將結果傳送給他人**，請傳送 .coverage 檔案或匯出的 .coveragexml 檔案。 然後，他們就可以匯入您所傳送的檔案。 如果他們有相同版本的原始程式碼，就可以看見涵蓋範圍著色。  
   
 ## <a name="merging-results-from-different-runs"></a>合併不同回合的結果  
  在某些情況下，會根據測試資料使用程式碼中的不同區塊。 因此，建議您合併不同測試回合的結果。  
@@ -87,16 +87,16 @@ ms.locfileid: "54782655"
   
 ### <a name="limitations-in-merging"></a>合併的限制  
   
--   如果您從不同版本的程式碼合併涵蓋範圍資料，結果會個別顯示而不會合併。 若要取得完整的合併結果，請使用相同組建的程式碼，只變更測試資料。  
+- 如果您從不同版本的程式碼合併涵蓋範圍資料，結果會個別顯示而不會合併。 若要取得完整的合併結果，請使用相同組建的程式碼，只變更測試資料。  
   
--   如果合併先匯出再匯入的結果，您只能依行而不是依區塊檢視結果。 使用 [新增/移除資料行] 命令顯示行資料。  
+- 如果合併先匯出再匯入的結果，您只能依行而不是依區塊檢視結果。 使用 [新增/移除資料行] 命令顯示行資料。  
   
--   如果您合併 ASP.NET 專案測試的結果，會顯示個別測試的結果而非合併的結果。 這只適用於 ASP.NET 成品本身：會合併其他任何組件的結果。  
+- 如果您合併 ASP.NET 專案測試的結果，會顯示個別測試的結果而非合併的結果。 這只適用於 ASP.NET 成品本身：會合併其他任何組件的結果。  
   
 ## <a name="excluding-elements-from-the-code-coverage-results"></a>在程式碼涵蓋範圍結果中排除項目  
  如果程式碼是從文字範本產生的，您可能會想要將程式碼中的特定項目從排除涵蓋範圍分數中排除。 將 `System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage` 屬性加入至下列任一程式碼項目：類別、結構、方法、屬性、屬性 setter 或 getter、事件。 請注意，排除類別並不會排除其衍生類別。  
   
- 例如：  
+ 例如:   
   
 ```csharp  
   
@@ -225,22 +225,22 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
   
  `ExcludeSourceFromCodeCoverage(` *ExclusionName* `, L"` *SourceFilePath* `");`  
   
--   *ExclusionName* 是任何唯一名稱。  
+- *ExclusionName* 是任何唯一名稱。  
   
--   *FunctionName* 是完整函式名稱。 可以包含萬用字元。 例如，若要排除某個類別的所有函式，可以寫成 `MyNamespace::MyClass::*`  
+- *FunctionName* 是完整函式名稱。 可以包含萬用字元。 例如，若要排除某個類別的所有函式，可以寫成 `MyNamespace::MyClass::*`  
   
--   *SourceFilePath* 是 .cpp 檔案的本機或 UNC 路徑。 可以包含萬用字元。 下列範例會排除特定目錄中的所有檔案： `\\MyComputer\Source\UnitTests\*.cpp`  
+- *SourceFilePath* 是 .cpp 檔案的本機或 UNC 路徑。 可以包含萬用字元。 下列範例會排除特定目錄中的所有檔案： `\\MyComputer\Source\UnitTests\*.cpp`  
   
--   `#include <CodeCoverage\CodeCoverage.h>`  
+- `#include <CodeCoverage\CodeCoverage.h>`  
   
--   請呼叫全域命名空間中的排除巨集，而不要呼叫任何命名空間或類別中的排除巨集。  
+- 請呼叫全域命名空間中的排除巨集，而不要呼叫任何命名空間或類別中的排除巨集。  
   
--   您可以在單元測試程式碼檔案或應用程式程式碼檔案中排除。  
+- 您可以在單元測試程式碼檔案或應用程式程式碼檔案中排除。  
   
--   您必須設定編譯器選項或使用 `#pragma managed(off)` 將排除編譯為 Unmanaged (機器碼)。  
+- 您必須設定編譯器選項或使用 `#pragma managed(off)` 將排除編譯為 Unmanaged (機器碼)。  
   
 > [!NOTE]
->  若要排除 C++/CLI 程式碼中的函式，請將 `[System::Diagnostics::CodeAnalysis::ExcludeFromCodeCoverage]` 屬性套用至該函式。 這和 C# 的做法相同。  
+> 若要排除 C++/CLI 程式碼中的函式，請將 `[System::Diagnostics::CodeAnalysis::ExcludeFromCodeCoverage]` 屬性套用至該函式。 這和 C# 的做法相同。  
   
 ### <a name="including-or-excluding-additional-elements"></a>包含或排除其他項目  
  程式碼涵蓋範圍分析只能對載入的組件或與 .dll 或 .exe 檔案位於同一個目錄中的 .pdb 檔案執行。 因此，在某些情況下，您可以藉由取得包含適當 .pdb 檔案的複本來擴充所包含的組件集。  
@@ -248,7 +248,7 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
  您可以撰寫 .runsettings 檔案進一步控制執行程式碼範圍分析時選取的組件和項目。 例如，您可以排除特定種類的組件，而不需要在其類別中加入屬性。 如需詳細資訊，請參閱[自訂程式碼涵蓋範圍分析](../test/customizing-code-coverage-analysis.md)。  
   
 ## <a name="analyzing-code-coverage-in-the-build-service"></a>在組建服務中分析程式碼涵蓋範圍  
- 當您檢查程式碼時，您的測試會在組建伺服器上與其他小組成員的所有其他測試一起執行。 (如果您尚未設定此功能，請參閱[在組建流程中執行測試](http://msdn.microsoft.com/library/d05743a1-c5cf-447e-bed9-bed3cb595e38)。)由於在組建服務分析程式碼覆蓋範圍可以針對整個專案的覆蓋範圍提供最新、最完整的分析結果，因此是非常有用的方法。 這項分析也包含自動化系統測試，和通常不會在開發電腦上執行的其他自動程式碼測試。  
+ 當您檢查程式碼時，您的測試會在組建伺服器上與其他小組成員的所有其他測試一起執行。 (如果您尚未設定此功能，請參閱[在組建流程中執行測試](https://msdn.microsoft.com/library/d05743a1-c5cf-447e-bed9-bed3cb595e38)。)由於在組建服務分析程式碼覆蓋範圍可以針對整個專案的覆蓋範圍提供最新、最完整的分析結果，因此是非常有用的方法。 這項分析也包含自動化系統測試，和通常不會在開發電腦上執行的其他自動程式碼測試。  
   
 1. 在 Team Explorer 中開啟 [組建]，然後新增或編輯組建定義。  
   
@@ -256,7 +256,7 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
   
     如果您有一個以上的測試來源定義，請針對每一個定義重複以上步驟。  
   
-   - <em>但沒有名為 [回合設定檔類型]** 的欄位。*  
+   - 但沒有名為 [回合設定檔類型] 的欄位。<em>***  
   
       在 [自動化測試] 下，選取 [測試組件]，然後選擇行末的省略符號按鈕 [...]。 在 [加入/編輯測試回合] 對話方塊中，選擇 [測試執行器] 之下的 [Visual Studio 測試執行器]。  
   
@@ -265,13 +265,13 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
    組建執行後會將程式碼涵蓋範圍結果附加至測試回合，而且結果會出現在組建摘要。  
   
 ## <a name="analyzing-code-coverage-in-a-command-line"></a>在命令列中分析程式碼涵蓋範圍  
- 若要從命令列執行測試，請使用 vstest.console.exe。 程式碼涵蓋範圍是此公用程式的選項。 如需詳細資訊，請參閱 [VSTest.Console.exe 命令列選項](http://msdn.microsoft.com/library/52e1689d-b1a8-4589-bd98-99a55acd0a11)。  
+ 若要從命令列執行測試，請使用 vstest.console.exe。 程式碼涵蓋範圍是此公用程式的選項。 如需詳細資訊，請參閱 [VSTest.Console.exe 命令列選項](https://msdn.microsoft.com/library/52e1689d-b1a8-4589-bd98-99a55acd0a11)。  
   
-1.  啟動 Visual Studio Developer 命令提示字元：  
+1. 啟動 Visual Studio Developer 命令提示字元：  
   
      在 Windows 的 [開始] 功能表上，依序選擇 [所有程式]、[Microsoft Visual Studio]、[Visual Studio Tools]、[開發人員命令提示字元]。  
   
-2.  執行：  
+2. 執行：  
   
      `vstest.console.exe MyTestAssembly.dll /EnableCodeCoverage`  
   
@@ -281,9 +281,9 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
 ## <a name="external-resources"></a>外部資源  
   
 ### <a name="guidance"></a>指引  
- [測試 for Continuous Delivery with Visual Studio 2012 – 第 2 章：單元測試測試內部](http://go.microsoft.com/fwlink/?LinkID=255188)  
+ [測試 for Continuous Delivery with Visual Studio 2012 – 第 2 章：單元測試：測試內部](http://go.microsoft.com/fwlink/?LinkID=255188)  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [自訂程式碼涵蓋範圍分析](../test/customizing-code-coverage-analysis.md)   
  [針對程式碼涵蓋範圍進行疑難排解](../test/troubleshooting-code-coverage.md)   
  [對程式碼進行單元測試](../test/unit-test-your-code.md)

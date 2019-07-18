@@ -9,17 +9,17 @@ helpviewer_keywords:
 - visual studio command
 - guid
 ms.assetid: 2ea4bee2-0259-4675-8e65-2023b312b516
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ab40302e7b92f0cb3789c7510ba80904b45f5afe
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 89274600d05b787182ac447902555f7d703851c2
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56596720"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66329192"
 ---
 # <a name="guids-and-ids-of-visual-studio-commands"></a>Visual Studio 識別碼和 Guid 的命令
 已安裝 Visual Studio SDK 的一部分的.vsct 檔案中定義的 Visual Studio 整合式的開發環境 (IDE) 中包含的命令 GUID 和 ID 值。 如需詳細資訊，請參閱 < [IDE 定義的命令、 功能表和群組](../../extensibility/internals/ide-defined-commands-menus-and-groups.md)。
@@ -52,13 +52,13 @@ ms.locfileid: "56596720"
 ### <a name="special-cases"></a>特殊案例
  在下列情況中，功能表文字或工具提示文字可能不完全相同功能的命令定義。
 
--   功能表項目包含未加上底線的字元，例如**列印**命令**檔案**功能表上，在其中*P*會加上底線。
+- 功能表項目包含未加上底線的字元，例如**列印**命令**檔案**功能表上，在其中*P*會加上底線。
 
-     會加上連字號的字元 (&) 中的功能表項目名稱字元會顯示為加上底線。 不過， *.vsct*檔案會在 XML 中，使用連字號 (&) 字元表示特殊字元，且需要顯示連字號必須拼出，做為寫入 *&amp;a m p;*。 因此，在 *.vsct*檔案，**列印**命令會顯示成 *&amp;a m p;列印*。
+     會加上連字號的字元 (&) 中的功能表項目名稱字元會顯示為加上底線。 不過， *.vsct*檔案會在 XML 中，使用連字號 (&) 字元表示特殊字元，且需要顯示連字號必須拼出，做為寫入 *&amp;a m p;* 。 因此，在 *.vsct*檔案，**列印**命令會顯示成 *&amp;a m p;列印*。
 
--   命令，例如具有動態的文字**儲存**\<目前的檔名\>，和動態產生功能表項目，例如項目**最近使用的檔案**清單。
+- 命令，例如具有動態的文字**儲存** \<目前的檔名\>，和動態產生功能表項目，例如項目**最近使用的檔案**清單。
 
-     沒有任何可靠的方法，以進行動態文字搜尋。 相反地，尋找 群組可裝載所需的命令諮詢[Visual Studio 識別碼和 Guid 功能表](../../extensibility/internals/guids-and-ids-of-visual-studio-menus.md)或[Guid 和 Id Visual Studio 工具列](../../extensibility/internals/guids-and-ids-of-visual-studio-toolbars.md)，並搜尋該群組的識別碼。 如果命令不需要定義群組做為其[父元素](../../extensibility/parent-element.md)，搜尋*SharedCmdPlace.vsct*並*ShellCmdPlace.vsct* (或*VsDbgCmdPlace.vsct*偵錯工具命令) 的`<CommandPlacement>`設定命令的父代的項目。 *SharedCmdPlace.vsct*， *ShellCmdPlace.vsct*，以及*VsDbgCmdPlace.vsct*位於*\<Visual Studio SDK 安裝路徑\>\VisualStudioIntegration\Common\Inc\\*資料夾。
+     沒有任何可靠的方法，以進行動態文字搜尋。 相反地，尋找 群組可裝載所需的命令諮詢[Visual Studio 識別碼和 Guid 功能表](../../extensibility/internals/guids-and-ids-of-visual-studio-menus.md)或[Guid 和 Id Visual Studio 工具列](../../extensibility/internals/guids-and-ids-of-visual-studio-toolbars.md)，並搜尋該群組的識別碼。 如果命令不需要定義群組做為其[父元素](../../extensibility/parent-element.md)，搜尋*SharedCmdPlace.vsct*並*ShellCmdPlace.vsct* (或*VsDbgCmdPlace.vsct*偵錯工具命令) 的`<CommandPlacement>`設定命令的父代的項目。 *SharedCmdPlace.vsct*， *ShellCmdPlace.vsct*，以及*VsDbgCmdPlace.vsct*位於 *\<Visual Studio SDK 安裝路徑\>\VisualStudioIntegration\Common\Inc\\* 資料夾。
 
 ## <a name="see-also"></a>另請參閱
 - [Menucommand 對比OleMenuCommand](../../extensibility/menucommands-vs-olemenucommands.md)

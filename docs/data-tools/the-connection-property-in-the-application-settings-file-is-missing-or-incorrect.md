@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 1a2b06d16c3761c1f2d82197c82d195b67845989
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.openlocfilehash: becbc5032c05af1edf5361a54fd0a80b4a0ff412
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55941461"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458311"
 ---
 # <a name="the-connection-property-in-the-application-settings-file-is-missing-or-incorrect"></a>應用程式設定檔中的連接屬性遺漏或不正確
 
@@ -25,5 +25,4 @@ ms.locfileid: "55941461"
 
 ## <a name="see-also"></a>另請參閱
 
-- [O/R 設計工具訊息](../data-tools/o-r-designer-messages.md)
 - [Visual Studio 中的 LINQ to SQL 工具](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

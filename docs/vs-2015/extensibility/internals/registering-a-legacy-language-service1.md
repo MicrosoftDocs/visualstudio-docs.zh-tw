@@ -1,26 +1,21 @@
 ---
 title: 註冊舊版語言服務 1 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - language services [managed package framework], registering
 ms.assetid: d33b08af-09e0-4c79-87b2-5536b27fbacf
 caps.latest.revision: 23
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: e473df78787b83655c402bae666448e718216b36
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 9d78050f455e83b43dc114ad80fc084dc5604103
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51769601"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68188872"
 ---
 # <a name="registering-a-legacy-language-service"></a>註冊舊版語言服務
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -318,4 +313,3 @@ namespace TestLanguagePackage
     }  
 }   
 ```
-

@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - SccGetUserOption function
 ms.assetid: 17863747-1901-4c53-a2b3-ed996085e120
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8b237ded8ac0d22500986a9d390834147f24a2c6
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: eabf9cfc9d878d4d12096c8d264e8ee332031adf
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56721261"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66353658"
 ---
 # <a name="sccgetuseroption-function"></a>SccGetUserOption 函式
 此函式會擷取各種不同的使用者特定的選項。

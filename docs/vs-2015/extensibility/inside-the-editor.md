@@ -1,26 +1,21 @@
 ---
 title: 在編輯器內 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - architecture
 ms.assetid: 822cbb8d-7ab4-40ee-bd12-44016ebcce81
 caps.latest.revision: 32
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: ddca5ab4b0d7dc6aa43f3db8c641ad5fc9e583b2
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 8dfc751b040bd775c3f55ff7db804c2a16d45d5f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51735190"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63414621"
 ---
 # <a name="inside-the-editor"></a>深入探索編輯器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,7 +46,7 @@ ms.locfileid: "51735190"
   
 - [IntelliSense](../extensibility/inside-the-editor.md#intellisense)  
   
-##  <a name="overview"></a> 子系統的概觀  
+## <a name="overview"></a> 子系統的概觀  
   
 ### <a name="text-model-subsystem"></a>文字模型子系統  
  文字模型子系統負責表示文字，並啟用其操作。 文字模型子系統包含<xref:Microsoft.VisualStudio.Text.ITextBuffer>介面，其中描述要編輯器所顯示的字元序列。 這段文字可以修改、 追蹤，並以其他方式操作在許多方面。 文字模型也會提供類型的下列層面：  
@@ -81,7 +76,7 @@ ms.locfileid: "51735190"
   
 ## <a name="a-closer-look-at-the-text-model-and-the-text-view"></a>仔細看看文字模型和文字檢視  
   
-###  <a name="textmodel"></a> 文字模型  
+### <a name="textmodel"></a> 文字模型  
  文字模型子系統所組成的文字型別不同群組。 其中包括文字緩衝區、 文字快照集和文字範圍。  
   
 #### <a name="text-buffers-and-text-snapshots"></a>文字緩衝區和文字快照集  
@@ -97,7 +92,7 @@ ms.locfileid: "51735190"
  為一連串的字元或一連串的行，您可以檢視文字快照集內容。 字元和行都是同時編製索引從零開始。 空白文字快照集包含零個字元和一個空白行。 任何有效 Unicode 換行字元序列，或是開頭或結尾的緩衝區，是以分隔列。 文字的快照集，以明確表示分行符號字元，並不是所有具有相同文字快照中的分行符號。  
   
 > [!NOTE]
->  如需 Visual Studio 編輯器中的分行符號字元的詳細資訊，請參閱[編碼與分行符號](../ide/encodings-and-line-breaks.md)。  
+> 如需 Visual Studio 編輯器中的分行符號字元的詳細資訊，請參閱[編碼與分行符號](../ide/encodings-and-line-breaks.md)。  
   
  表示文字行<xref:Microsoft.VisualStudio.Text.ITextSnapshotLine>物件，可從文字的快照集的特定行號或特定的字元位置。  
   
@@ -154,7 +149,7 @@ abXefYj
   
  開發人員可以定義自己的內容類型，並將它們註冊使用<xref:Microsoft.VisualStudio.Utilities.IContentTypeRegistryService>。 許多編輯器功能，可以使用來定義特定的內容類型方面<xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>。 比方說，編輯器邊界、 裝飾和滑鼠處理常式可以定義，讓它們只適用於顯示特定內容類型的編輯器。  
   
-###  <a name="textview"></a> 文字檢視  
+### <a name="textview"></a> 文字檢視  
  模型檢視控制器 (MVC) 模式的檢視部分定義文字檢視中，檢視，例如捲軸，以及插入號的圖形元素的格式。 所有的 Visual Studio 編輯器中的簡報項目是以 WPF 為基礎。  
   
 #### <a name="text-views"></a>文字檢視  
@@ -189,21 +184,21 @@ abXefYj
 ## <a name="editor-features"></a>編輯器功能  
  編輯器的功能被設計，此功能的定義是不同於其的實作。 編輯器包含下列功能：  
   
--   標記和分類器  
+- 標記和分類器  
   
--   裝飾  
+- 裝飾  
   
--   Projection  
+- Projection  
   
--   大綱  
+- 大綱  
   
--   滑鼠和索引鍵繫結  
+- 滑鼠和索引鍵繫結  
   
--   作業和基本項目  
+- 作業和基本項目  
   
--   IntelliSense  
+- IntelliSense  
   
-###  <a name="tagsandclassifiers"></a> 標記和分類器  
+### <a name="tagsandclassifiers"></a> 標記和分類器  
  標籤是一段文字相關聯的標記。 他們可以看到不同的方式，例如，使用文字著色、 底線、 圖形或快顯視窗。 分類器是一種標記。  
   
  其他類型的標籤都<xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>反白顯示文字，<xref:Microsoft.VisualStudio.Text.Tagging.OutliningRegionTag>供製作大綱，和<xref:Microsoft.VisualStudio.Text.Tagging.ErrorTag>編譯錯誤。  
@@ -235,14 +230,14 @@ abXefYj
   
  <xref:Microsoft.VisualStudio.Text.Classification.IClassificationFormatMap>是一組文字格式設定屬性的分類類型對應。 在編輯器中的格式模式的實作會處理分類格式的所有的匯出。  
   
-###  <a name="adornments"></a> 裝飾  
+### <a name="adornments"></a> 裝飾  
  裝飾會直接與無關的字型和色彩的文字檢視中的字元的圖形效果。 比方說，用來標記非編譯程式碼以在許多程式設計語言中的紅色波浪線底線是內嵌透過裝飾，而工具提示快顯的裝飾。 裝飾會衍生自<xref:System.Windows.UIElement>並實作<xref:Microsoft.VisualStudio.Text.Tagging.ITag>。 裝飾標記的兩個特製化的型別是<xref:Microsoft.VisualStudio.Text.Tagging.SpaceNegotiatingAdornmentTag>，如佔用相同的空間，以在檢視中，文字的裝飾和<xref:Microsoft.VisualStudio.Text.Tagging.ErrorTag>的波浪線底線。  
   
  內嵌的裝飾會構成格式化的文字檢視的一部分的圖形。 組織在不同的疊置順序層級。 有三個內建的層級，如下所示： 文字、 插入號和選取項目。 不過，開發人員可以定義多個圖層，並將它們放在彼此的相對順序。 內嵌的裝飾的三種是文字相對於裝飾 （這會刪除的文字時，可刪除移動時文字會移動，且）、 （其中有如何處理非文字部分檢視） 檢視相對於裝飾和擁有者控制的裝飾 (開發人員必須管理它們的位置）。  
   
  快顯裝飾會出現在上述 [文字] 檢視中，例如工具提示的小視窗的圖形。  
   
-###  <a name="projection"></a> 投影  
+### <a name="projection"></a> 投影  
  投射是一種技術來建構不同種類的文字緩衝區，不會實際儲存的文字，但改為結合其他文字緩衝區中的文字。 比方說，串連兩個其他緩衝區中的文字，並呈現結果，它是在只有一個緩衝區，或隱藏一個緩衝區中的文字部分，可以使用投影緩衝區。 投影緩衝區可以做為另一個投影緩衝區的來源緩衝區。 可以建構一組相關的投影的緩衝區，以許多不同的方式重新排列的文字。 (這類集合，也就是*緩衝區圖形*。)Visual Studio 文字大綱功能藉由使用投影緩衝區來隱藏摺疊的文字，並適用於 ASP.NET 網頁的 Visual Studio 編輯器使用投影來支援內嵌的 Visual Basic 和 C# 等語言。  
   
  <xref:Microsoft.VisualStudio.Text.Projection.IProjectionBuffer>建立使用<xref:Microsoft.VisualStudio.Text.Projection.IProjectionBufferFactoryService>。 表示已排序的投影緩衝區<xref:Microsoft.VisualStudio.Text.ITrackingSpan>物件，也就*來源範圍*。 這些範圍的內容會顯示為一連串的字元。 名為從中繪製的來源範圍的文字緩衝區*來源緩衝區*。 要注意，它不同於一般文字緩衝區沒有投影緩衝區的用戶端。  
@@ -276,18 +271,18 @@ P: ABCDEvwxyz
 ##### <a name="events-and-projection-buffers"></a>事件和投影緩衝區  
  修改投影緩衝區時，所做的修改所傳來的投影緩衝區取決於它的緩衝區。 修改所有緩衝區之後，會引發緩衝區變更事件，從最深的緩衝區。  
   
-###  <a name="outlining"></a> 大綱  
+### <a name="outlining"></a> 大綱  
  大綱是文字的展開或摺疊的不同文字檢視中區塊的能力。 大綱定義為一種的<xref:Microsoft.VisualStudio.Text.Tagging.ITag>，在相同的方式定義的裝飾。 A<xref:Microsoft.VisualStudio.Text.Tagging.OutliningRegionTag>定義可以展開或摺疊的文字區域的標記。 若要使用大綱，您必須匯入<xref:Microsoft.VisualStudio.Text.Outlining.IOutliningManagerService>以取得<xref:Microsoft.VisualStudio.Text.Outlining.IOutliningManager>。 大綱 manager 列舉、 摺疊，並展開不同的區塊，以表示<xref:Microsoft.VisualStudio.Text.Outlining.ICollapsible>物件，並據以引發事件。  
   
-###  <a name="mousebindings"></a> 滑鼠繫結  
+### <a name="mousebindings"></a> 滑鼠繫結  
  滑鼠繫結至不同的命令連結滑鼠動作。 您可以使用定義滑鼠繫結<xref:Microsoft.VisualStudio.Text.Editor.IMouseProcessorProvider>，並使用所定義的按鍵繫結<xref:Microsoft.VisualStudio.Text.Editor.IKeyProcessorProvider>。 <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewHost>自動具現化的所有繫結並連接到檢視中的滑鼠事件。  
   
  <xref:Microsoft.VisualStudio.Text.Editor.IMouseProcessor>介面包含不同的滑鼠事件的前置處理和後續處理的事件處理常式。 其中一個事件的控制代碼，您可以覆寫的一些方法<xref:Microsoft.VisualStudio.Text.Editor.MouseProcessorBase>。  
   
-###  <a name="editoroperations"></a> 編輯器作業，  
+### <a name="editoroperations"></a> 編輯器作業，  
  編輯器作業，可用來自動化與編輯器中的，以編寫指令碼或其他用途之間的互動。 您可以匯入<xref:Microsoft.VisualStudio.Text.Operations.IEditorOperationsFactoryService>上的存取作業指定<xref:Microsoft.VisualStudio.Text.Editor.ITextView>。 您接著可以使用這些物件修改選取項目、 捲動檢視，或將插入號移至不同的檢視部分。  
   
-###  <a name="intellisense"></a> IntelliSense  
+### <a name="intellisense"></a> IntelliSense  
  IntelliSense 支援陳述式完成、 簽章說明 （也稱為 「 參數資訊 」）、 快速諮詢和燈泡。  
   
  陳述式完成提供的方法名稱、 XML 項目，以及其他撰寫程式碼或標記的項目可能的完成項的快顯清單。 一般情況下，使用者筆勢叫用完成工作階段。 工作階段會顯示可能的完成的清單，使用者可以選取其中一個，或關閉清單。 <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionBroker>負責建立並觸發<xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSession>。 <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSource>計算<xref:Microsoft.VisualStudio.Language.Intellisense.CompletionSet>的工作階段的完成項目。  
@@ -295,4 +290,3 @@ P: ABCDEvwxyz
 ## <a name="see-also"></a>另請參閱  
  [語言服務及編輯器擴充點](../extensibility/language-service-and-editor-extension-points.md)   
  [編輯器匯入](../extensibility/editor-imports.md)
-

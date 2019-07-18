@@ -14,18 +14,18 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 089d824a6f693d7a0661b2e099ded82e0b02f403
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56603777"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62554403"
 ---
 # <a name="getting-started-debug-interface-access-sdk"></a>使用者入門 (偵錯介面存取 SDK)
-偵錯介面存取 (DIA) SDK 會提供您指示文件與說明如何使用 DIA API 的範例。 使用介面和方法在 DIA SDK 開發自訂的應用程式所開啟的.pdb 和.dbg 檔案，並搜尋其內容的符號、 值、 屬性、 位址和其他偵錯資訊。 此 SDK 也提供適用於 c + + 應用程式中找到的符號相關聯的屬性參考表格。
+偵錯介面存取 (DIA) SDK 會提供您指示文件與說明如何使用 DIA API 的範例。 使用介面和方法在 DIA SDK 開發自訂的應用程式所開啟的.pdb 和.dbg 檔案，並搜尋其內容的符號、 值、 屬性、 位址和其他偵錯資訊。 此 SDK 也提供參考資料表中找到與符號相關聯的屬性C++應用程式。
 
  若要最佳方式使用 DIA SDK，您應該先熟悉下列項目：
 
-- C + + 程式設計語言
+- C++程式設計語言
 
 - COM 程式設計
 
@@ -51,6 +51,6 @@ ms.locfileid: "56603777"
 
 提供有關如何使用 DIA API 來查詢.pdb 檔案的逐步指示。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [偵錯介面存取 SDK](../../debugger/debug-interface-access/debug-interface-access-sdk.md)

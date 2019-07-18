@@ -9,27 +9,27 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b1e202f84fb3b4e0e865e2cebb96b6728289ff6b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 59259d8186803d966e79f27012e6be6c22b47dd8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54774110"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63414712"
 ---
-# <a name="how-to-create-a-basic-color-shader"></a>如何：建立基本色彩著色器
+# <a name="how-to-create-a-basic-color-shader"></a>HOW TO：建立基本色彩著色器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 本文件將示範如何使用著色器設計工具和有向圖形著色器語言 (DGSL)，來建立一般色彩著色器。 這個著色器會將完稿色彩設定為 RGB 色彩常數值。  
   
  本文件示範下列活動︰  
   
--   移除圖形中的節點  
+- 移除圖形中的節點  
   
--   將節點加入圖形  
+- 將節點加入圖形  
   
--   設定節點屬性  
+- 設定節點屬性  
   
--   連接節點  
+- 連接節點  
   
 ## <a name="creating-a-flat-color-shader"></a>建立一般色彩著色器  
  您可以將 RGB 色彩常數的色彩值寫入完稿輸出色彩，來實作一般色彩著色器。  
@@ -51,13 +51,13 @@ ms.locfileid: "54774110"
    下圖顯示完成的著色器圖形和套用至立方體的著色器預覽。  
   
 > [!NOTE]
->  在此圖中，指定橘色以更適當展現著色器的效果。  
+> 在此圖中，指定橘色以更適當展現著色器的效果。  
   
  ![3D 模型上的著色器圖形及其結果](../designers/media/digit-flat-color-effect.png "Digit-Flat-Color-Effect")  
   
  某些圖形可對一些著色器提供更佳的預覽。 如需如何在著色器設計工具中預覽著色器的詳細資訊，請參閱[著色器設計工具](../designers/shader-designer.md)。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [如何：將著色器套用至 3d 模型](../designers/how-to-apply-a-shader-to-a-3-d-model.md)   
  [如何：匯出著色器](../designers/how-to-export-a-shader.md)   
  [著色器設計工具](../designers/shader-designer.md)   

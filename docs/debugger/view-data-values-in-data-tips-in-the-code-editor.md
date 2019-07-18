@@ -19,11 +19,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2a4674dec4b15f608eb25ffaf62c97efcc2363ab
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56679810"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62929987"
 ---
 # <a name="view-data-values-in-datatips-in-the-code-editor"></a>在資料提示方塊中，程式碼編輯器中的檢視資料值
 
@@ -75,14 +75,14 @@ Float 固定資料提示方塊，將滑鼠停在資料提示方塊，並從操�
 
 ### <a name="close-all-datatips-for-a-specific-file"></a>關閉特定檔案的所有資料提示方塊
 
-若要在關閉特定的檔案，所有資料提示方塊**偵錯**功能表上，選取**清除所有 DataTips 釘選到\<檔名 >**。
+若要在關閉特定的檔案，所有資料提示方塊**偵錯**功能表上，選取**清除所有 DataTips 釘選到\<檔名 >** 。
 
 ## <a name="expand-and-edit-information"></a>展開並編輯資訊
 您可以使用資料提示方塊展開陣列、結構或物件，以便檢視其成員。 也可以從資料提示方塊編輯變數值。
 
 ### <a name="expand-a-variable"></a>展開變數
 
-若要展開以查看其項目資料提示方塊中的物件，將滑鼠停留項目名稱，以樹狀結構形式來顯示項目之前的展開箭號。 針對固定資料提示方塊中，選取**+** 之前變數名稱，然後展開 樹狀結構。
+若要展開以查看其項目資料提示方塊中的物件，將滑鼠停留項目名稱，以樹狀結構形式來顯示項目之前的展開箭號。 針對固定資料提示方塊中，選取 **+** 之前變數名稱，然後展開 樹狀結構。
 
 ![展開 資料提示方塊](../debugger/media/dbg-tour-data-tips.png "依序展開 資料提示方塊")
 

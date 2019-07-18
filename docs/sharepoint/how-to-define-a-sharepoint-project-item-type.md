@@ -14,37 +14,37 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 589e6f5fd102cdd2a69bc63bf623142c14337678
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 0e0483f535dfd7a483d2b83728f78fa9c7167bcb
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56639228"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62814040"
 ---
 # <a name="how-to-define-a-sharepoint-project-item-type"></a>HOW TO：定義 SharePoint 專案項目類型
   當您想要建立自訂的 SharePoint 專案項目時，請定義專案項目類型。 如需詳細資訊，請參閱 <<c0> [ 定義自訂 SharePoint 專案項目類型](../sharepoint/defining-custom-sharepoint-project-item-types.md)。
 
 ### <a name="to-define-a-project-item-type"></a>若要定義專案項目類型
 
-1.  建立類別庫 (Class Library) 專案。
+1. 建立類別庫 (Class Library) 專案。
 
-2.  加入下列組件的參考：
+2. 加入下列組件的參考：
 
-    -   Microsoft.VisualStudio.SharePoint
+    - Microsoft.VisualStudio.SharePoint
 
-    -   System.ComponentModel.Composition
+    - System.ComponentModel.Composition
 
-3.  建立實作 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider> 介面的類別。
+3. 建立實作 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider> 介面的類別。
 
-4.  將下列屬性新增至類別：
+4. 將下列屬性新增至類別：
 
-    -   <xref:System.ComponentModel.Composition.ExportAttribute>. 這個屬性可讓 Visual Studio 來探索及載入您<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider>實作。 傳遞<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider>屬性建構函式的型別。
+    - <xref:System.ComponentModel.Composition.ExportAttribute>. 這個屬性可讓 Visual Studio 來探索及載入您<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider>實作。 傳遞<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider>屬性建構函式的型別。
 
-    -   <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemTypeAttribute>. 在專案項目類型定義中，這個屬性會指定字串識別項，為新的專案項目。 我們建議您使用的格式*公司名稱*。*功能名稱*可協助您確認所有專案項目都具有唯一的名稱。
+    - <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemTypeAttribute>. 在專案項目類型定義中，這個屬性會指定字串識別項，為新的專案項目。 我們建議您使用的格式*公司名稱*。*功能名稱*可協助您確認所有專案項目都具有唯一的名稱。
 
-    -   <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemIconAttribute>. 這個屬性會指定要在這個專案項目的顯示的圖示**方案總管 中**。 這個屬性是選擇性的;如果您不會套用它到您的類別，Visual Studio 會顯示預設圖示為您的專案項目。 如果您設定此屬性，傳遞圖示或點陣圖，內嵌在您的組件的完整的名稱。
+    - <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemIconAttribute>. 這個屬性會指定要在這個專案項目的顯示的圖示**方案總管 中**。 這個屬性是選擇性的;如果您不會套用它到您的類別，Visual Studio 會顯示預設圖示為您的專案項目。 如果您設定此屬性，傳遞圖示或點陣圖，內嵌在您的組件的完整的名稱。
 
-5.  在您實作<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider.InitializeType%2A>方法，使用成員*projectItemTypeDefinition*參數來定義專案項目類型的行為。 這個參數是<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeDefinition>可用來存取事件中所定義的物件<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents>和<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemFileEvents>介面。 若要存取您的專案項目類型的特定執行個體，處理<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents>事件，例如<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemAdded>和<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemInitialized>。
+5. 在您實作<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider.InitializeType%2A>方法，使用成員*projectItemTypeDefinition*參數來定義專案項目類型的行為。 這個參數是<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeDefinition>可用來存取事件中所定義的物件<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents>和<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemFileEvents>介面。 若要存取您的專案項目類型的特定執行個體，處理<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents>事件，例如<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemAdded>和<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemInitialized>。
 
 ## <a name="example"></a>範例
  下列程式碼範例示範如何定義簡單的專案項目類型。 這個專案項目類型將訊息寫入**輸出**視窗和**錯誤清單**時使用者會將此類型的專案項目加入至專案 視窗。
@@ -57,9 +57,9 @@ ms.locfileid: "56639228"
 ## <a name="compile-the-code"></a>編譯程式碼
  這個範例需要參考下列組件：
 
--   Microsoft.VisualStudio.SharePoint
+- Microsoft.VisualStudio.SharePoint
 
--   System.ComponentModel.Composition
+- System.ComponentModel.Composition
 
 ## <a name="deploy-the-project-item"></a>部署專案項目
  若要讓其他開發人員使用您的專案項目，建立專案範本或專案項目範本。 如需詳細資訊，請參閱 <<c0> [ 建立項目範本和專案範本，為 SharePoint 專案項目](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)。

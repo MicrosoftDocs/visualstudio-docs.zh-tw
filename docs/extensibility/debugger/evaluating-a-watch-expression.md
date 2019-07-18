@@ -6,17 +6,17 @@ helpviewer_keywords:
 - expression evaluation, watch expressions
 - watch expressions
 ms.assetid: 8317cd52-6fea-4e8f-a739-774dc06bd44b
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e1704a33abddada9a439786b408a8bc7bceeba0d
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: d50abb359095a727b56bf40ab0d2c7ab1155d0c6
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56711224"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66315546"
 ---
 # <a name="evaluate-a-watch-expression"></a>評估監看式運算式
 > [!IMPORTANT]
@@ -26,7 +26,7 @@ Visual Studio 即可顯示 監看式運算式的值時，它會呼叫[EvaluateSy
 
 在此實作中的`IDebugParsedExpression::EvaluateSync`，剖析並同時評估運算式。 此實作會執行下列工作：
 
-1. 會剖析並評估運算式，以產生可儲存值和其類型的泛型物件。 在 C# 中，這表示為`object`在 c + +，這表示為`VARIANT`。
+1. 會剖析並評估運算式，以產生可儲存值和其類型的泛型物件。 在C#，這表示為`object`在C++，這表示為`VARIANT`。
 
 2. 具現化類別 (稱為`CValueProperty`在此範例中) 可實`IDebugProperty2`介面，並儲存在類別中要傳回的值。
 

@@ -23,12 +23,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6ad84f5a0db677ca9efa9d24b1963959010f25e3
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: e9ce2388dbf61ef3af524f0debc776891dca004f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56602019"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436501"
 ---
 # <a name="ribbon-xml"></a>功能區 XML
   功能區 (XML) 項目可讓您使用 XML 自訂功能區。 如果您想要自訂功能區的功能區 （視覺化設計工具） 項目不支援的方式，請使用功能區 (XML) 項目。 您可以使用每個項目進行比較，請參閱[功能區概觀](../vsto/Ribbon-overview.md)。
@@ -55,12 +55,12 @@ ms.locfileid: "56602019"
 ## <a name="define-the-behavior-of-the-custom-ribbon"></a>定義自訂功能區的行為
  您可以回應使用者動作，例如按一下功能區上的按鈕建立*回呼方法*。 回呼方法和 Windows Forms 控制項中的事件非常類似，但回呼方法是由 UI 項目中 XML 的屬性所識別。 請在功能區類別中撰寫方法，接著控制項便會呼叫與屬性值名稱相同的方法。 例如，您可以建立當使用者按一下功能區上的按鈕時所呼叫的回呼方法。 建立回呼方法需要執行兩個步驟：
 
--   在程式碼中識別回呼方法的功能區 XML 檔案中，將屬性指派給控制項。
+- 在程式碼中識別回呼方法的功能區 XML 檔案中，將屬性指派給控制項。
 
--   在功能區類別中定義回呼方法。
+- 在功能區類別中定義回呼方法。
 
 > [!NOTE]
->  Outlook 還需要另一個步驟。 如需詳細資訊，請參閱 < [outlook 自訂功能區](../vsto/customizing-a-ribbon-for-outlook.md)。
+> Outlook 還需要另一個步驟。 如需詳細資訊，請參閱 < [outlook 自訂功能區](../vsto/customizing-a-ribbon-for-outlook.md)。
 
  如需示範如何以自動化從功能區應用程式的逐步解說，請參閱[逐步解說：使用功能區 XML 建立自訂的索引標籤](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md)。
 
@@ -77,7 +77,7 @@ ms.locfileid: "56602019"
 
  您可以將許多不同類型的回呼方法指定給功能區控制項。 如需每個控制項可用之回呼方法的完整清單，請參閱技術文件[適用於開發人員 (第 3 之 3) 自訂 Office (2007) 功能區使用者介面](/previous-versions/office/developer/office-2007/aa722523(v=office.12))。
 
-###  <a name="CallBackMethods"></a> 定義回呼方法
+### <a name="CallBackMethods"></a> 定義回呼方法
  請在功能區程式碼檔案的功能區類別中定義回呼方法。 回呼方法具有幾項需求：
 
 - 必須將其宣告為公用。
@@ -93,7 +93,7 @@ ms.locfileid: "56602019"
   [!code-csharp[Trin_RibbonOutlookBasic#2](../vsto/codesnippet/CSharp/Trin_RibbonOutlookBasic/Ribbon1.cs#2)]
   [!code-vb[Trin_RibbonOutlookBasic#2](../vsto/codesnippet/VisualBasic/Trin_RibbonOutlookBasic/Ribbon1.vb#2)]
 
-##  <a name="RibbonDescriptorFile"></a> 功能區 XML 檔案參考
+## <a name="RibbonDescriptorFile"></a> 功能區 XML 檔案參考
  您可以在功能區 XML 檔案中定義自訂功能區加入項目和屬性。 根據預設，功能區 XML 檔包含下列 XML。
 
 ```xml
@@ -113,7 +113,7 @@ ms.locfileid: "56602019"
 
  下表描述功能區 XML 檔中的預設項目。
 
-|元素|描述|
+|項目|描述|
 |-------------|-----------------|
 |**customUI**|代表 VSTO 增益集專案中的自訂功能區。|
 |**ribbon**|代表功能區。|
@@ -132,7 +132,7 @@ ms.locfileid: "56602019"
 
  功能區 XML 檔案中的預設項目和屬性是可用項目和屬性的小型子集。 如需可用的項目和屬性的完整清單，請參閱技術文件[適用於開發人員 (第 2 部分為 3) 自訂 Office (2007) 功能區使用者介面](/previous-versions/office/developer/office-2007/aa338199(v=office.12))。
 
-##  <a name="RibbonExtensionClass"></a> 功能區類別參考
+## <a name="RibbonExtensionClass"></a> 功能區類別參考
  Visual Studio 會在功能區程式碼檔中產生功能區類別。 這個類別中加入功能區上的控制項的回呼方法。 這個類別會實作 <xref:Microsoft.Office.Core.IRibbonExtensibility> 介面。
 
  下表描述此類別中的預設方法。

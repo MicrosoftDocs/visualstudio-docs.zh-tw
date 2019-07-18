@@ -1,14 +1,9 @@
 ---
 title: IEnumDebugFields |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IEnumDebugFields
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 403c2a51-3ba5-431f-a1dd-2f3b2046c00c
 caps.latest.revision: 7
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 9c336b48b0502843415c7d093afebd2376893e07
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 5e3c9a43b6903522fe2caf0e329f8e8faa69cd6b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51782711"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68161084"
 ---
 # <a name="ienumdebugfields"></a>IEnumDebugFields
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -44,9 +39,9 @@ IEnumDebugFields : IUnknown
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法  
  這個介面會實作下列方法。  
   
-|方法|描述|  
+|方法|說明|  
 |------------|-----------------|  
-|[下一步](../../../extensibility/debugger/reference/ienumdebugfields-next.md)|擷取下的一組[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)列舉中的物件。|  
+|[下一個](../../../extensibility/debugger/reference/ienumdebugfields-next.md)|擷取下的一組[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)列舉中的物件。|  
 |[Skip](../../../extensibility/debugger/reference/ienumdebugfields-skip.md)|略過指定的數目的項目。|  
 |[Reset](../../../extensibility/debugger/reference/ienumdebugfields-reset.md)|將列舉重設第一個項目中。|  
 |[Clone](../../../extensibility/debugger/reference/ienumdebugfields-clone.md)|擷取一份目前的列舉型別。|  
@@ -57,13 +52,12 @@ IEnumDebugFields : IUnknown
 ## <a name="requirements"></a>需求  
  標頭： sh.h  
   
- 命名空間： Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間：Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
  [符號提供者介面](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)   
  [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)   
  [GetMethodFieldsByName](../../../extensibility/debugger/reference/idebugsymbolprovider-getmethodfieldsbyname.md)   
  [GetNamespacesUsedAtAddress](../../../extensibility/debugger/reference/idebugsymbolprovider-getnamespacesusedataddress.md)
-

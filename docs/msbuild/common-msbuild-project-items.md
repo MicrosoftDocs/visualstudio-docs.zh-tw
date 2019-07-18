@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 394a986963ad1d1690535aecbb3355bdbe382516
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 54288f345276a019bf8fd6987a9e138c53c8a9e2
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56610342"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62569864"
 ---
 # <a name="common-msbuild-project-items"></a>一般 MSBuild 專案項目
 在 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 中，項目是一個或多個檔案的具名參考。 項目包含中繼資料，例如檔案名稱、路徑和版本號碼。 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中的所有專案類型都有共同的數個項目。 這些項目會在 *Microsoft.Build.CommonTypes.xsd* 檔案中定義。
@@ -46,9 +46,9 @@ ms.locfileid: "56610342"
 |項目中繼資料名稱|說明|
 |---------------|-----------------|
 |名稱|選擇性字串。 元件的顯示名稱。|
-|Guid|選擇性字串。 元件的 GUID，格式為 {12345678-1234-1234-1234-1234567891234}。|
-|VersionMajor|選擇性字串。 元件的版本號碼主要部分。 例如，如果完整版本號碼為"5.46"，則主要部分為 "5"。|
-|VersionMinor|選擇性字串。 元件版本號碼的次要部分。 例如，如果完整版本號碼為"5.46"，則次要部分為 "46"。|
+|Guid|必要的字串。 元件的 GUID，格式為 {12345678-1234-1234-1234-1234567891234}。|
+|VersionMajor|必要的字串。 元件的版本號碼主要部分。 例如，如果完整版本號碼為"5.46"，則主要部分為 "5"。|
+|VersionMinor|必要的字串。 元件版本號碼的次要部分。 例如，如果完整版本號碼為"5.46"，則次要部分為 "46"。|
 |LCID|選擇性字串。 元件的地區設定識別碼。|
 |包裝函式工具|選擇性字串。 用於元件的包裝函式工具名稱，例如 "tlbimp"。|
 |隔離|選擇性布林值。 指定元件是否為免註冊元件。|
@@ -76,11 +76,10 @@ ms.locfileid: "56610342"
 |名稱|選擇性字串。 參考的顯示名稱。|
 |專案|選擇性字串。 參考的 GUID，格式為 {12345678-1234-1234-1234-1234567891234}。|
 |Package|選擇性字串。 所參考的專案檔路徑。|
-|ReferenceOutputAssembly|選擇性布林值。 如果設定為 `false`，則不會將參考之專案的輸出，以[參考](#Reference)的方式包含在此專案中，但仍然可確保其他專案會在此專案之前建置。 預設值為 `true`。|
+|ReferenceOutputAssembly|選擇性布林值。 如果設定為 `false`，則不會將參考之專案的輸出，以[參考](#reference)的方式包含在此專案中，但仍然可確保其他專案會在此專案之前建置。 預設值為 `true`。|
 
 ### <a name="compile"></a>編譯
  代表編譯器的原始程式檔。
-
 
 | 項目中繼資料名稱 | 說明 |
 |-----------------------| - |
@@ -92,7 +91,6 @@ ms.locfileid: "56610342"
 
 ### <a name="embeddedresource"></a>內嵌資源
  代表要內嵌於所產生組件中的資源。
-
 
 | 項目中繼資料名稱 | 說明 |
 |-----------------------| - |
@@ -108,7 +106,6 @@ ms.locfileid: "56610342"
 ### <a name="content"></a>內容
  代表不會編譯到專案中，但可能內嵌或一起發行的檔案。
 
-
 | 項目中繼資料名稱 | 說明 |
 |-----------------------| - |
 | 相依依據 | 選擇性字串。 指定這個檔案必須倚賴才能正確編譯的檔案。 |
@@ -123,7 +120,6 @@ ms.locfileid: "56610342"
 
 ### <a name="none"></a>無
  代表在建置流程中應該沒有任何角色的檔案。
-
 
 | 項目中繼資料名稱 | 說明 |
 |-----------------------| - |

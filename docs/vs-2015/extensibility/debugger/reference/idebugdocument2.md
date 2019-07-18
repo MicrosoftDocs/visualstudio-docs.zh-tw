@@ -1,14 +1,9 @@
 ---
 title: IDebugDocument2 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugDocument2
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 1bc58426-dbf5-4471-9aad-9d66cd80eef0
 caps.latest.revision: 13
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: b0b430f0a6022181a45c82fcb0db67fb0c9742e9
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 2cd6afb417de4d8a362916f91593d0d0e67d307c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51761100"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68156509"
 ---
 # <a name="idebugdocument2"></a>IDebugDocument2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -44,20 +39,20 @@ IDebugDocument2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法  
  下表顯示的方法`IDebugDocument2`。  
   
-|方法|描述|  
+|方法|說明|  
 |------------|-----------------|  
 |[GetName](../../../extensibility/debugger/reference/idebugdocument2-getname.md)|取得數種形式之一的文件的名稱。|  
 |[GetDocumentClassID](../../../extensibility/debugger/reference/idebugdocument2-getdocumentclassid.md)|取得文件的類別識別項。|  
   
 ## <a name="remarks"></a>備註  
- DE 提供的原始程式碼時，才會實作這個介面。 比方說，當您正在偵錯 HTML 網頁上的指令碼，DE 提供原始碼因為下載來源或動態產生，而且為磁碟檔案不存在。 當偵錯傳統的語言，例如 c + +，這個介面就不需要實作。  
+ DE 提供的原始程式碼時，才會實作這個介面。 比方說，當您正在偵錯 HTML 網頁上的指令碼，DE 提供原始碼因為下載來源或動態產生，而且為磁碟檔案不存在。 當偵錯傳統的語言，例如C++，不需要實作這個介面。  
   
 ## <a name="requirements"></a>需求  
  標頭： msdbg.h  
   
- 命名空間： Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間：Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
  [IsPositionInDocument](../../../extensibility/debugger/reference/idebugdocumentposition2-ispositionindocument.md)   
@@ -65,4 +60,3 @@ IDebugDocument2 : IUnknown
  [GetDocument](../../../extensibility/debugger/reference/idebugdocumentcontext2-getdocument.md)   
  [GetDocument](../../../extensibility/debugger/reference/idebugdocumentposition2-getdocument.md)   
  [GetDocument](../../../extensibility/debugger/reference/idebugdisassemblystream2-getdocument.md)
-

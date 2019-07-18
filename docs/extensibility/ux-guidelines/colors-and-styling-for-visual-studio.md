@@ -3,17 +3,17 @@ title: 色彩和樣式設定適用於 Visual Studio |Microsoft Docs
 ms.date: 07/31/2017
 ms.topic: conceptual
 ms.assetid: 0e384ea1-4d9e-4307-8884-6e183900732c
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8cdfa140614117e00e0ad3cc813c7f33d7a47b75
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: faded3e4a541ad899306e40bf9d46bf96a6b8ace
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55027707"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66338353"
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>色彩和樣式設定適用於 Visual Studio
 
@@ -85,7 +85,7 @@ Visual Studio 原始程式碼包含數個封裝定義檔包含的語彙基元名
 
 ![工具&gt;[選項] 對話方塊](../../extensibility/ux-guidelines/media/0301-a_toolsoptionsdialog.png "0301 a_ToolsOptionsDialog")<br />工具&gt;選項 對話方塊
 
-##  <a name="BKMK_TheVSColorService"></a> VSColor Service
+## <a name="BKMK_TheVSColorService"></a> VSColor Service
 
 Visual Studio 提供的環境色彩服務，也稱為 VSColor service 或殼層色彩服務。 這項服務可讓您將 UI 元素的色彩值繫結為集，其中包含每個佈景主題色彩的名稱 / 值色彩。 VSColor service 必須用於所有的 UI 項目，以便色彩會自動變更以反映目前的使用者選取主題，並使 UI 繫結至環境色彩服務將與整合新的佈景主題在未來版本的 Visual Studio。
 
@@ -112,7 +112,6 @@ IVsUIShell2::GetVSSysColorEx(VSSYSCOLOR dwSysColIndex, DWORD *pdwRGBval)
 在檔案 VSShell80.idl，列舉`__VSSYSCOLOREX`具有 shell 色彩常數。 若要使用它，傳入的索引值為下列其中一種將值從`enum __VSSYSCOLOREX`中所記錄的 MSDN 或一般的索引編號，Windows 系統 API， `GetSysColor`，接受。 如此一來取得回應該在第二個參數中使用的色彩的 RGB 值。
 
 如果儲存的畫筆或筆刷，新的色彩，您必須`AdviseBroadcastMessages`（從 Visual Studio shell)，並接聽`WM_SYSCOLORCHANGE`和`WM_THEMECHANGED`訊息。
-
 
 若要存取原生程式碼色彩服務，您將進行看起來像這樣的呼叫：
 
@@ -268,7 +267,7 @@ protected override void Dispose(bool disposing)
 }
 ```
 
-##  <a name="BKMK_ChoosingHighContrastColors"></a> 選擇高對比色彩
+## <a name="BKMK_ChoosingHighContrastColors"></a> 選擇高對比色彩
 
 ### <a name="overview"></a>總覽
 
@@ -331,7 +330,7 @@ Windows 會使用數個高對比系統層級佈景主題，增加文字、 背�
 | WindowFrame | -IDE 框線 |
 | WindowText | -自動隱藏 索引標籤前景<br />-選取的工具視窗索引標籤前景<br />-未取得焦點的文件視窗索引標籤和未取得焦點或未選取佈建 索引標籤前景<br />-樹狀檢視的預設前景和暫留時透過未選取圖像 （glyph）<br />-選取索引標籤的框線工具視窗。<br />-捲軸捲動方塊的背景、 框線及圖像 （glyph） |
 
-##  <a name="BKMK_ExposingColorsForEndUsers"></a> 公開使用者的色彩
+## <a name="BKMK_ExposingColorsForEndUsers"></a> 公開使用者的色彩
 
 ### <a name="overview"></a>總覽
 
@@ -362,7 +361,7 @@ VSPackage 可以控制的字型和色彩，透過自訂分類，和 [字型和�
 | 名稱 | 類型 | 資料 | 描述 |
 | --- | --- | --- | --- |
 | 分類 | REG_SZ | GUID | 若要識別類別目錄建立 GUID |
-| 封裝 | REG_SZ | GUID | 服務的 GUID VSPackage 支援類別 |
+| 套件 | REG_SZ | GUID | 服務的 GUID VSPackage 支援類別 |
 
  在登錄中指定的服務必須提供實作[IVsFontAndColorDefaults](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolordefaults)對應分類。
 
@@ -375,7 +374,7 @@ VSPackage 可以控制的字型和色彩，透過自訂分類，和 [字型和�
 | 名稱 | 類型 | 資料 | 描述 |
 |--- | --- | --- | --- |
 | 分類 | REG_SZ | GUID | 若要識別類別目錄建立 GUID |
-| 封裝 | REG_SZ | GUID | 服務的 GUID VSPackage 支援類別 |
+| 套件 | REG_SZ | GUID | 服務的 GUID VSPackage 支援類別 |
 
 在登錄中指定的服務必須提供實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup>對應的群組。
 

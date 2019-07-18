@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugThreads2::GetCount
 ms.assetid: 81b7f139-d24e-4040-9adc-d664d77563ba
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 80e41fa777817af73ef744462de3f82487a653c1
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: da9ed6ff154d022f85c61aa2c26fca3d9470985d
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56704133"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66324369"
 ---
 # <a name="ienumdebugthreads2getcount"></a>IEnumDebugThreads2::GetCount
 列舉中傳回的項目數。
@@ -36,10 +39,9 @@ int GetCount(
 );
 ```
 
-#### <a name="parameters"></a>參數
- `pcelt`
-
- [out]列舉中傳回的項目數。
+## <a name="parameters"></a>參數
+`pcelt`\
+[out]列舉中傳回的項目數。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

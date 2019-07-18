@@ -7,17 +7,17 @@ helpviewer_keywords:
 - <MaxFrameworkVersion> Element (Visual Studio Templates)
 - MaxFrameworkVersion Element (Visual Studio Templates)
 ms.assetid: f732a9d3-fc29-405b-9298-01ea83fc58b8
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 573fcbce3b395f7f351d57208998b0b63b175559
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 0a00e174e3454dcb054c13252ef699a7cbc87df8
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55039146"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66318599"
 ---
 # <a name="maxframeworkversion-element-visual-studio-templates"></a>MaxFrameworkVersion 元素 （Visual Studio 範本）
 

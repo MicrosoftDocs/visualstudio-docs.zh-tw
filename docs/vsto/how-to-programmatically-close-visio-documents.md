@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9059e0f066cbd1dc6ced5f11f1139d7687afacf3
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 474efcb62cf7cadd9de82e41ff2ad36cebc046cb
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56597203"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62575360"
 ---
 # <a name="how-to-programmatically-close-visio-documents"></a>HOW TO：以程式設計方式關閉 Visio 文件
   您可以使用 `Microsoft.Office.Interop.Visio.Document.Close` 方法來關閉使用中的 Microsoft Office Visio 文件。
@@ -29,7 +29,7 @@ ms.locfileid: "56597203"
 
 ### <a name="to-close-the-active-document"></a>關閉使用中的文件
 
--   呼叫 `Microsoft.Office.Interop.Visio.Document.Close` 方法，關閉使用中的文件。
+- 呼叫 `Microsoft.Office.Interop.Visio.Document.Close` 方法，關閉使用中的文件。
 
      若要使用下列程式碼範例，在中執行`ThisAddIn`適用於 Visio VSTO 增益集專案中的類別。
 

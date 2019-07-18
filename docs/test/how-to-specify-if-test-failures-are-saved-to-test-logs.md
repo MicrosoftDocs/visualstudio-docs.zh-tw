@@ -9,12 +9,12 @@ ms.assetid: 08a7fe98-a7f7-4b8d-94a3-ec82b65a2aaf
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: de19f24040d285392c2ed2a69776c8ecf39c9f36
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ef80a10954e9cf58db04e46f11934ffd86974bea
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55910788"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62786100"
 ---
 # <a name="how-to-specify-if-test-failures-are-saved-to-test-logs-using-the-load-test-editor"></a>HOW TO：使用負載測試編輯器指定測試失敗是否會儲存至測試記錄
 
@@ -27,17 +27,17 @@ ms.locfileid: "55910788"
 
 ## <a name="to-specify-if-the-test-log-is-saved-when-a-test-fails-in-a-scenario"></a>若要指定當情節中的測試失敗時是否儲存測試記錄檔
 
-1.  開啟負載測試。
+1. 開啟負載測試。
 
-     [負載測試編輯器] 隨即出現。 負載測試樹狀隨即顯示。
+     [負載測試編輯器] 隨即出現。 負載測試樹狀結構隨即顯示。
 
-2.  在負載測試樹狀目錄的 [回合設定] 資料夾中，選擇您要指定其測試反覆項目數上限的回合設定節點。
+2. 在負載測試樹狀目錄的 [回合設定] 資料夾中，選擇您要指定其測試反覆項目數上限的回合設定節點。
 
-3.  在 [檢視] 功能表上，選取 [屬性視窗]。
+3. 在 [檢視] 功能表上，選取 [屬性視窗]。
 
      回合設定分類和屬性會顯示在 [屬性] 視窗中。
 
-4.  在 [測試失敗時儲存記錄檔] 屬性中，選取 [True] 或 [False] 以指定情節中的測試失敗時，是否要儲存測試記錄。
+4. 在 [測試失敗時儲存記錄檔] 屬性中，選取 [True] 或 [False] 以指定情節中的測試失敗時，是否要儲存測試記錄。
 
      屬性變更完成之後，選擇 [檔案] 功能表上的 [儲存]。
 

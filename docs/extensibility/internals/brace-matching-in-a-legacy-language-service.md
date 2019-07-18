@@ -6,17 +6,17 @@ helpviewer_keywords:
 - brace matching
 - language services [managed package framework], brace matching
 ms.assetid: 4e3d0a70-f22f-49dd-92d8-edf48ab62b52
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: de9e1a002bf31335131e741a8ce5adc0b2219dbc
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: a535fc479fe5cc398d09d7aa9e47a3c91fa97f38
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56606624"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66309176"
 ---
 # <a name="brace-matching-in-a-legacy-language-service"></a>舊版語言服務中的比對的大括號
 大括號比對，可協助開發人員追蹤發生在一起，例如括號和大括號所需要的語言項目。 當開發人員輸入右括號時，左括號會反白顯示。
@@ -26,7 +26,7 @@ ms.locfileid: "56606624"
  舊版語言服務會實作成 VSPackage 的一部分，但實作語言服務功能的較新的方式是使用 MEF 擴充功能。 若要深入了解實作大括號比對的新方式，請參閱[逐步解說：顯示相符的大括號](../../extensibility/walkthrough-displaying-matching-braces.md)。
 
 > [!NOTE]
->  我們建議您開始使用新的編輯器 API 盡。 這會改善您的語言服務的效能，並可讓您充分利用新編輯器功能。
+> 我們建議您開始使用新的編輯器 API 盡。 這會改善您的語言服務的效能，並可讓您充分利用新編輯器功能。
 
  <xref:Microsoft.VisualStudio.Package.AuthoringSink>類別支援這兩組，而且與 triples<xref:Microsoft.VisualStudio.Package.AuthoringSink.MatchPair%2A>和<xref:Microsoft.VisualStudio.Package.AuthoringSink.MatchTriple%2A>方法。
 

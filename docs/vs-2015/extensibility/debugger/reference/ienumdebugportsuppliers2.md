@@ -1,14 +1,9 @@
 ---
-title: IEnumDebugPortSuppliers2 |Microsoft Docs
-ms.custom: ''
+title: IEnumDebugPortSuppliers2 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IEnumDebugPortSuppliers2
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: cd0a73dc-dd25-46fd-8c4f-5b011501afeb
 caps.latest.revision: 13
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: d148ba120f4dd70f271e36933ad2395517469ad1
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f8ed12c0ba9c6263968c51a7e8cfcdfe2fe47011
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51736232"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68179158"
 ---
 # <a name="ienumdebugportsuppliers2"></a>IEnumDebugPortSuppliers2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -46,7 +41,7 @@ IEnumDebugPortSuppliers2 : IUnknown
   
 |方法|描述|  
 |------------|-----------------|  
-|[下一步](../../../extensibility/debugger/reference/ienumdebugportsuppliers2-next.md)|擷取指定的數目的列舉順序中的連接埠提供者。|  
+|[下一個](../../../extensibility/debugger/reference/ienumdebugportsuppliers2-next.md)|擷取指定的數目的列舉順序中的連接埠提供者。|  
 |[Skip](../../../extensibility/debugger/reference/ienumdebugportsuppliers2-skip.md)|略過指定的數目的列舉順序中的連接埠提供者。|  
 |[Reset](../../../extensibility/debugger/reference/ienumdebugportsuppliers2-reset.md)|將列舉型別序列重設到開頭。|  
 |[Clone](../../../extensibility/debugger/reference/ienumdebugportsuppliers2-clone.md)|建立列舉值，包含目前的列舉值相同的列舉型別狀態。|  
@@ -58,11 +53,10 @@ IEnumDebugPortSuppliers2 : IUnknown
 ## <a name="requirements"></a>需求  
  標頭： msdbg.h  
   
- 命名空間： Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間：Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
  [核心介面](../../../extensibility/debugger/reference/core-interfaces.md)   
  [EnumPortSuppliers](../../../extensibility/debugger/reference/idebugcoreserver2-enumportsuppliers.md)
-

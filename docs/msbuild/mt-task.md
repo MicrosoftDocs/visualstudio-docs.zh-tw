@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4916f51c3044bbd0a6cb8f8dd283c741a216c015
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 7afdf40c660a7433c51d2fa1130ef5f2cca616bd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56654467"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437843"
 ---
 # <a name="mt-task"></a>MT 工作
 包裝 Microsoft 資訊清單工具 *mt.exe*。 如需詳細資訊，請參閱 [Mt.exe](https://docs.microsoft.com/windows/desktop/SbsCs/mt-exe)。
@@ -38,7 +38,7 @@ ms.locfileid: "56654467"
  下表說明 **MT** 工作的參數。 大部分的工作參數以及數組參數會對應到命令列選項。
 
 > [!NOTE]
->  *mt.exe* 文件使用連字號 (**-**) 作為命令列選項的前置詞，但本主題使用斜線 (**/**)。 任一前置詞都可接受。
+> *mt.exe* 文件使用連字號 (**-**) 作為命令列選項的前置詞，但本主題使用斜線 (**/**)。 任一前置詞都可接受。
 
 |參數|說明|
 |---------------|-----------------|

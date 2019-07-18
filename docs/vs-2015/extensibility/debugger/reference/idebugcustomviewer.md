@@ -1,14 +1,9 @@
 ---
 title: IDebugCustomViewer |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugCustomViewer
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 7aca27d3-c7b8-470f-b42c-d1e9d9115edd
 caps.latest.revision: 15
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 6b9e068591961e7eafa9d4fdc588da2694532463
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 5f94fe0301777a615fa6dc567311c493ff55a90a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51759505"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68196290"
 ---
 # <a name="idebugcustomviewer"></a>IDebugCustomViewer
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -44,7 +39,7 @@ IDebugCustomViewer : IUknown
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法  
  這個介面會實作下列方法：  
   
-|方法|描述|  
+|方法|說明|  
 |------------|-----------------|  
 |[DisplayValue](../../../extensibility/debugger/reference/idebugcustomviewer-displayvalue.md)|沒有所能顯示指定的值。|  
   
@@ -60,9 +55,9 @@ IDebugCustomViewer : IUknown
 ## <a name="requirements"></a>需求  
  標頭： msdbg.h  
   
- 命名空間： Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間：Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="example"></a>範例  
  此範例示範如何從屬性取得的第一個自訂檢視器，如果該屬性的任何自訂檢視器。  
@@ -116,4 +111,3 @@ IDebugCustomViewer *GetFirstCustomViewer(IDebugProperty2 *pProperty)
  [GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md)   
  [偵錯的 SDK 協助程式](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)   
  [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)
-

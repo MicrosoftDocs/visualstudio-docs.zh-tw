@@ -10,18 +10,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 641dd7485e97a7833c2483d73271a8169dbc2054
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: ae3478aef733d106fa075a51edce4af91b404149
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56617739"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62939309"
 ---
 # <a name="start-a-build-from-within-the-ide"></a>從 IDE 中啟動組建
 自訂專案系統必須使用 <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildManagerAccessor> 來啟動組建。 本文說明此需求的原因，並概述相關程序。
 
 ## <a name="parallel-builds-and-threads"></a>平行組建和執行緒
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 允許需要中繼才能存取一般資源的平行組建。 專案系統可以非同步執行組建，但是這類系統不得從提供給組建管理員的回呼中來呼叫組建函式。
+ [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 允許需要中繼才能存取一般資源的平行組建。 專案系統可以非同步執行組建，但是這類系統不得從回呼中呼叫組建函式。
 
  如果專案系統會修改環境變數，則必須將組建的 NodeAffinity 設為 OutOfProc。 此需求表示您無法使用主機物件，因為它們需要同處理序節點。
 

@@ -13,11 +13,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.openlocfilehash: 91ab359489e7eb50fe78005a369b17f2f91be58c
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: cb2413fbb3831ecd29e5d2bf090329c01041c442
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38940756"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "68146962"
 ---
 WPF 設計工具

@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4d85803e478931022e5872ddde2746b5b90feacf
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 56ecbfcdaf22132f63df1ecf5eadba97dee426af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56614125"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62817269"
 ---
 # <a name="how-to-programmatically-apply-color-to-excel-ranges"></a>HOW TO：以程式設計方式將色彩套用至 Excel 範圍
   若要將色彩套用至資料格範圍內的文字，使用<xref:Microsoft.Office.Tools.Excel.NamedRange>控制項或原生的 Excel 範圍物件。
@@ -31,12 +31,12 @@ ms.locfileid: "56614125"
 
 ### <a name="to-apply-color-to-a-namedrange-control"></a>若要將色彩套用到 NamedRange 控制項
 
-1.  建立<xref:Microsoft.Office.Tools.Excel.NamedRange>A1 儲存格的控制項。
+1. 建立<xref:Microsoft.Office.Tools.Excel.NamedRange>A1 儲存格的控制項。
 
      [!code-csharp[Trin_VstcoreExcelAutomation#65](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#65)]
      [!code-vb[Trin_VstcoreExcelAutomation#65](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#65)]
 
-2.  設定中的文字色彩<xref:Microsoft.Office.Tools.Excel.NamedRange>控制項。
+2. 設定中的文字色彩<xref:Microsoft.Office.Tools.Excel.NamedRange>控制項。
 
      [!code-csharp[Trin_VstcoreExcelAutomation#66](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#66)]
      [!code-vb[Trin_VstcoreExcelAutomation#66](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#66)]
@@ -45,7 +45,7 @@ ms.locfileid: "56614125"
 
 ### <a name="to-apply-color-to-a-native-excel-range-object"></a>若要將色彩套用至原生的 Excel 範圍物件
 
-1.  建立在儲存格 A1 的範圍，然後將 文字的色彩。
+1. 建立在儲存格 A1 的範圍，然後將 文字的色彩。
 
      [!code-csharp[Trin_VstcoreExcelAutomation#67](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#67)]
      [!code-vb[Trin_VstcoreExcelAutomation#67](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#67)]

@@ -5,17 +5,17 @@ ms.topic: reference
 helpviewer_keywords:
 - m_parent field, Task class [.NET Framework debug engines]
 ms.assetid: da9e3dc7-8e9b-4c3a-a9e0-12921b5300c6
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7de88b41615e2d42a13d8b5ee78b564409a79022
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 10b95a49eca8f3f4cc7fa81e62eb95d4ca048b1b
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56714981"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66350668"
 ---
 # <a name="mparent-field"></a>m_parent 欄位
 

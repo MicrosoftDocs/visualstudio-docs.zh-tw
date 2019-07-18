@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEngine3::LoadSymbols
 ms.assetid: c846a440-1d91-4d48-b8f1-82e902ae152b
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ff317b217b72fcb5a6042747abd88e5a9d344f7a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 72c4fce5a7e8dd53093e21db2771d2176462e67c
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56681266"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66352515"
 ---
 # <a name="idebugengine3loadsymbols"></a>IDebugEngine3::LoadSymbols
 正在偵錯此偵錯引擎的所有模組的載入 （視） 符號。
@@ -32,7 +35,7 @@ HRESULT LoadSymbols();
 int LoadSymbols();
 ```
 
-#### <a name="parameters"></a>參數
+## <a name="parameters"></a>參數
  無。
 
 ## <a name="return-value"></a>傳回值

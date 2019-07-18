@@ -6,17 +6,17 @@ helpviewer_keywords:
 - syntax coloring
 - language services, syntax coloring
 ms.assetid: f65ff67e-8c20-497a-bebf-5e2a5b5b012f
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 734898fdaffe067025d45a0b4905443f87450d3c
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 47d7164df48011907f8bea408c0acf08250d0657
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56629569"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66331306"
 ---
 # <a name="syntax-coloring-in-a-legacy-language-service"></a>舊版語言服務中的語法著色
 
@@ -28,7 +28,7 @@ Visual Studio 會使用色彩服務識別語言的項目，並使用指定的色
  ![SVC 色彩標示器圖形](../../extensibility/internals/media/figlgsvccolorizer.gif)
 
 > [!NOTE]
->  語法著色服務是不同於一般的 Visual Studio 機制，以色彩標示文字。 如需有關一般[!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]機制支援標示色彩，請參閱[使用的字型和色彩](../../extensibility/using-fonts-and-colors.md)。
+> 語法著色服務是不同於一般的 Visual Studio 機制，以色彩標示文字。 如需有關一般[!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]機制支援標示色彩，請參閱[使用的字型和色彩](../../extensibility/using-fonts-and-colors.md)。
 
  除了色彩標示器，其語言服務可以提供自訂色彩的項目所使用的編輯器中，廣告會提供自訂色彩的項目。 您可以藉由實作<xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems>介面實作的相同物件上<xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo>介面。 當編輯器呼叫時，它會傳回的自訂色彩的項目數<xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems.GetItemCount%2A>方法，且會傳回個別的自訂色彩項目的時，編輯器會呼叫<xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems.GetColorableItem%2A>方法。
 
@@ -36,31 +36,31 @@ Visual Studio 會使用色彩服務識別語言的項目，並使用指定的色
 
 ## <a name="how-a-vspackage-uses-a-language-service-colorizer"></a>VSPackage 如何使用語言服務色彩標示器
 
-1.  VSPackage 必須取得適當的語言服務，它會要求語言服務 VSPackage 來執行下列作業：
+1. VSPackage 必須取得適當的語言服務，它會要求語言服務 VSPackage 來執行下列作業：
 
-    1.  使用物件，實作<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer>介面，以取得會以色彩標示的文字。
+    1. 使用物件，實作<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer>介面，以取得會以色彩標示的文字。
 
          文字通常會顯示使用該物件會實作<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>介面。
 
-    2.  查詢的語言服務 GUID VSPackage 的服務提供者，以取得語言服務。 語言服務是以副檔名識別登錄中。
+    2. 查詢的語言服務 GUID VSPackage 的服務提供者，以取得語言服務。 語言服務是以副檔名識別登錄中。
 
-    3.  建立關聯的語言服務<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer>藉由呼叫其<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer.SetLanguageServiceID%2A>方法。
+    3. 建立關聯的語言服務<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer>藉由呼叫其<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer.SetLanguageServiceID%2A>方法。
 
-2.  VSPackage 現在取得及使用的色彩標示器物件，如下所示：
+2. VSPackage 現在取得及使用的色彩標示器物件，如下所示：
 
     > [!NOTE]
     > 使用核心編輯器的 Vspackage，不需要明確地取得語言服務的色彩標示器物件。 核心編輯器的執行個體取得適當的語言服務，因為它會執行如下所示的所有顏色標示工作。
 
-    1.  取得語言服務的色彩標示器物件，它會實作<xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer>，並<xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer2>介面，藉由呼叫<xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo.GetColorizer%2A>語言服務的方法<xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo>物件。
+    1. 取得語言服務的色彩標示器物件，它會實作<xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer>，並<xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer2>介面，藉由呼叫<xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo.GetColorizer%2A>語言服務的方法<xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo>物件。
 
-    2.  呼叫<xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A>方法，以取得特定範圍的色彩標示器資訊的文字。
+    2. 呼叫<xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A>方法，以取得特定範圍的色彩標示器資訊的文字。
 
          <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A> 傳回值，一個用於以色彩標示的文字範圍中的每個字元的陣列。 值是到維護核心編輯器的預設色彩的項目清單或自訂色彩項目的清單，語言服務本身所維護的可設定色彩的項目清單的索引。
 
-    3.  使用所傳回的顏色標示資訊<xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A>方法，以顯示選取的文字。
+    3. 使用所傳回的顏色標示資訊<xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A>方法，以顯示選取的文字。
 
 > [!NOTE]
->  除了使用語言服務色彩標示器，VSPackage 也可以使用一般用途的 Visual Studio 文字著色機制。 如需有關這項機制的詳細資訊，請參閱 <<c0> [ 使用的字型和色彩](../../extensibility/using-fonts-and-colors.md)。
+> 除了使用語言服務色彩標示器，VSPackage 也可以使用一般用途的 Visual Studio 文字著色機制。 如需有關這項機制的詳細資訊，請參閱 <<c0> [ 使用的字型和色彩](../../extensibility/using-fonts-and-colors.md)。
 
 ## <a name="in-this-section"></a>本節內容
 - [實作語法著色](../../extensibility/internals/implementing-syntax-coloring.md)

@@ -1,5 +1,5 @@
 ---
-title: 逐步解說：使用商務資料在 SharePoint 中建立外部清單 |Microsoft Docs
+title: 在使用商務資料的 SharePoint 中建立外部清單
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 45f0a896db97d489d58036ea226962550b512665
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: cf9c7d13e6aaac85d3bac4254247a3c07b39b5c3
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56600294"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401072"
 ---
 # <a name="walkthrough-create-an-external-list-in-sharepoint-by-using-business-data"></a>逐步解說：使用商務資料在 SharePoint 中建立外部清單
 
@@ -66,17 +66,17 @@ ms.locfileid: "56600294"
 
 6. 在 [**方案總管] 中**，選擇 SharePoint 專案節點。
 
-7. 在功能表列中，選擇 [專案] > [加入新項目]。
+7. 在功能表列中，選擇 [專案]   > [加入新項目]  。
 
-     [新增項目] 對話方塊隨即開啟。
+     [新增項目]  對話方塊隨即開啟。
 
-8. 在**範本**窗格中，選擇**Business Data Connectivity 模型 （僅限陣列方案）**，將專案命名為**為 AdventureWorksContacts**，然後選擇 [ **新增**] 按鈕。
+8. 在**範本**窗格中，選擇**Business Data Connectivity 模型 （僅限陣列方案）** ，將專案命名為**為 AdventureWorksContacts**，然後選擇 [ **新增**] 按鈕。
 
 ## <a name="add-data-access-classes-to-the-project"></a>加入專案中的資料存取類別
 
 1. 在功能表列上選擇 **工具** > **連接至資料庫**。
 
-     [新增連線] 對話方塊隨即開啟。
+     [新增連線]  對話方塊隨即開啟。
 
 2. 新增連線至 SQL Server AdventureWorks 範例資料庫。
 
@@ -84,7 +84,7 @@ ms.locfileid: "56600294"
 
 3. 在 [ **方案總管**] 中選擇專案節點。
 
-4. 在功能表列中，選擇 [專案] > [加入新項目]。
+4. 在功能表列中，選擇 [專案]   > [加入新項目]  。
 
 5. 在 **已安裝的範本**窗格中，選擇**資料**節點。
 
@@ -120,7 +120,7 @@ ms.locfileid: "56600294"
 
 將實體新增至模型。 您可以從 Visual Studio 中新增實體**工具箱**在 BDC 設計工具上。
 
-1. 在功能表列上，選擇 [檢視] > [工具箱]。
+1. 在功能表列上，選擇 [檢視]   > [工具箱]  。
 
 2. 在上**BusinessDataConnectivity**索引標籤**工具箱**，加入**實體**在 BDC 設計工具上。
 

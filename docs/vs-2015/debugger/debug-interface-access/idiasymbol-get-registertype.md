@@ -1,27 +1,22 @@
 ---
 title: IDiaSymbol::get_registerType |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 ms.assetid: f1c98ab0-8aef-4a07-a686-28b8a54418ef
 caps.latest.revision: 6
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 466754faca6aa3a5794c9e5e6ab2a21ca1b7d3a3
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: ec0124a6085e86c1656237a23ab4733c39c35646
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51793278"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "68182993"
 ---
 # <a name="idiasymbolgetregistertype"></a>IDiaSymbol::get_registerType
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -44,6 +39,3 @@ HRESULT get_registerType(
   
 ## <a name="see-also"></a>另請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
-
-
-

@@ -1,5 +1,5 @@
 ---
-title: 逐步解說：依需求使用設計工具以 ClickOnce 部署 API 下載組件 |Microsoft Docs
+title: 下載組件隨選與 ClickOnce 使用設計工具
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 47eed859b0969289a78f4eb13314241e89982f5d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: MTE95
+ms.openlocfilehash: 5a8c5def5c4ebdf8f34efef50dca8dc4656bbd7d
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54919300"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263429"
 ---
 # <a name="walkthrough-download-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer"></a>逐步解說：下載組件隨選與 ClickOnce 部署 API 使用設計工具
 第一次執行 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式時，預設會下載應用程式中包含的所有組件。 不過，可能是小部分使用者所使用之應用程式的組件。 在此情況下，只有在建立組件的其中一種類型時，才會想要下載組件。 下列逐步解說示範如何將應用程式中的特定組件標示為「選擇性」，以及在 Common Language Runtime 需要時，使用 <xref:System.Deployment.Application> 中的類別來如何下載它們。
@@ -37,20 +37,20 @@ ms.locfileid: "54919300"
 
 ### <a name="to-create-a-project-that-uses-an-on-demand-assembly-with-visual-studio"></a>使用 Visual Studio 建立使用隨選組件的專案
 
-1. 在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]中建立新的 Windows Forms 專案。 在 [檔案]  功能表上，指向 [加入] ，然後按一下 [新增專案] 。 選擇對話方塊中的 [類別庫]  專案，並將它命名為 `ClickOnceLibrary`。
+1. 在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]中建立新的 Windows Forms 專案。 在 [檔案]  功能表上，指向 [加入]  ，然後按一下 [新增專案]  。 選擇對話方塊中的 [類別庫]  專案，並將它命名為 `ClickOnceLibrary`。
 
    > [!NOTE]
-   >  在 Visual Basic 中，建議您修改專案屬性，以將此專案的根命名空間變更為 `Microsoft.Samples.ClickOnceOnDemand` 或您選擇的命名空間。 為求簡單起見，本逐步解說中的兩個專案都位於相同的命名空間中。
+   > 在 Visual Basic 中，建議您修改專案屬性，以將此專案的根命名空間變更為 `Microsoft.Samples.ClickOnceOnDemand` 或您選擇的命名空間。 為求簡單起見，本逐步解說中的兩個專案都位於相同的命名空間中。
 
 2. 定義具有單一屬性 `DynamicClass` 的 `Message`類別。
 
     [!code-vb[ClickOnceLibrary#1](../deployment/codesnippet/VisualBasic/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer_1.vb)]
     [!code-csharp[ClickOnceLibrary#1](../deployment/codesnippet/CSharp/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer_1.cs)]
 
-3. 在方案總管 中，選取 Windows Forms 專案。 將參考新增至 <xref:System.Deployment.Application> 組件，並將專案參考新增至 `ClickOnceLibrary` 專案。
+3. 在方案總管  中，選取 Windows Forms 專案。 將參考新增至 <xref:System.Deployment.Application> 組件，並將專案參考新增至 `ClickOnceLibrary` 專案。
 
    > [!NOTE]
-   >  在 Visual Basic 中，建議您修改專案屬性，以將此專案的根命名空間變更為 `Microsoft.Samples.ClickOnceOnDemand` 或您選擇的命名空間。 為求簡單起見，本逐步解說中的兩個專案都位於相同的命名空間中。
+   > 在 Visual Basic 中，建議您修改專案屬性，以將此專案的根命名空間變更為 `Microsoft.Samples.ClickOnceOnDemand` 或您選擇的命名空間。 為求簡單起見，本逐步解說中的兩個專案都位於相同的命名空間中。
 
 4. 以滑鼠右鍵按一下表單，並從功能表中按一下 [檢視程式碼]  ，然後在表單中新增下列參考。
 
@@ -71,15 +71,15 @@ ms.locfileid: "54919300"
 
 ### <a name="to-mark-assemblies-as-optional-in-your-clickonce-application-by-using-visual-studio"></a>使用 Visual Studio 將組件標示為 ClickOnce 應用程式中的選用項目
 
-1.  以滑鼠右鍵按一下方案總管  中的 Windows Forms 專案，然後按一下 [屬性] 。 選取 [發行]  索引標籤。
+1. 以滑鼠右鍵按一下方案總管  中的 Windows Forms 專案，然後按一下 [屬性]  。 選取 [發行]  索引標籤。
 
-2.  按一下 [應用程式檔案]  按鈕。
+2. 按一下 [應用程式檔案]  按鈕。
 
-3.  尋找 *ClickOnceLibrary.dll* 的清單。 將 [發行狀態]  下拉式方塊設定成 [包含] 。
+3. 尋找 *ClickOnceLibrary.dll* 的清單。 將 [發行狀態]  下拉式方塊設定成 [包含]  。
 
-4.  展開 [群組]  下拉式方塊，然後選取 [新增] 。 輸入名稱 `ClickOnceLibrary` 作為新的群組名稱。
+4. 展開 [群組]  下拉式方塊，然後選取 [新增]  。 輸入名稱 `ClickOnceLibrary` 作為新的群組名稱。
 
-5.  繼續發行您的應用程式中所述[How to:使用發佈精靈發佈 ClickOnce 應用程式](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)。
+5. 繼續發行您的應用程式中所述[How to:使用發佈精靈發佈 ClickOnce 應用程式](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)。
 
 ### <a name="to-mark-assemblies-as-optional-in-your-clickonce-application-by-using-manifest-generation-and-editing-tool--graphical-client-mageuiexe"></a>使用資訊清單產生和編輯工具 (圖形化用戶端 (MageUI.exe)) 將組件標示為 ClickOnce 應用程式中的選用項目
 
@@ -87,7 +87,7 @@ ms.locfileid: "54919300"
 
 2. 關閉 MageUI.exe 之前，請選取包含您部署之應用程式資訊清單的索引標籤，然後在該索引標籤內選取 [檔案]  索引標籤。
 
-3. 在應用程式檔案清單中尋找 ClickOnceLibrary.dll，並將其 [檔案類型]  資料行設定成 [無] 。 在 [群組]  資料行中，輸入 `ClickOnceLibrary.dll`。
+3. 在應用程式檔案清單中尋找 ClickOnceLibrary.dll，並將其 [檔案類型]  資料行設定成 [無]  。 在 [群組]  資料行中，輸入 `ClickOnceLibrary.dll`。
 
 ## <a name="test-the-new-assembly"></a>測試新的組件
 

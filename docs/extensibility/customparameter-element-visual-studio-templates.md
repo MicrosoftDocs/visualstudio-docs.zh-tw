@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - CustomParameters element [Visual Studio project templates]
 ms.assetid: 743c4489-74ac-403a-bbaa-eed7d785a3ac
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dc0ac3d936037e9b92567a6fcf20b26c25cb5d3f
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: bbf76edec01cce52768f36dc534d50b580b64230
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56705933"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66322268"
 ---
 # <a name="customparameter-element-visual-studio-templates"></a>CustomParameter 元素 （Visual Studio 範本）
 包含自訂的參數名稱和值，以從範本建立專案或項目時使用。

@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugDisassemblyStream2::GetSize
 ms.assetid: 8f512704-12d0-46d2-959a-4f8dffe117b5
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d415c87c67c20880615d83c1201b4588a683719c
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: cb13ac24aaa542d3111ff3480ac340615226a0a7
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56706375"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66310422"
 ---
 # <a name="idebugdisassemblystream2getsize"></a>IDebugDisassemblyStream2::GetSize
 指示這個反組譯碼資料流中取得的大小。
@@ -36,10 +39,9 @@ int GetSize( 
 );
 ```
 
-#### <a name="parameters"></a>參數
- `pnSize`
-
- [out]傳回大小，指示中。
+## <a name="parameters"></a>參數
+`pnSize`\
+[out]傳回大小，指示中。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

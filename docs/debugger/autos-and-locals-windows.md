@@ -15,18 +15,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 16139daaadfa687abf296505d94f350600fbfa9f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 60bb98644c1905b030176b28b97575b379bed38d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56636901"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62564542"
 ---
 # <a name="inspect-variables-in-the-autos-and-locals-windows"></a>檢查 [自動變數] 和 [區域變數] 視窗中的變數
 
 **自動變數**並**區域變數**在偵錯時，windows 會顯示變數的值。 在偵錯工作階段期間，才可以使用 windows。 **自動變數**視窗會顯示目前中斷點周圍使用的變數。 **區域變數**視窗會顯示在本機的範圍中，通常是目前函式或方法定義的變數。 如果這是您嘗試偵錯程式碼的第一次，您可能想要閱讀[偵錯適用於徹底初學者](../debugger/debugging-absolute-beginners.md)並[偵錯的技術和工具](../debugger/write-better-code-with-visual-studio.md)之前，先透過這篇文章。
 
- **自動變數**視窗可供C#，Visual Basic、 c + + 和 Python 程式碼，但不適用於 JavaScript 或F#。
+ **自動變數**視窗可供C#，Visual Basic 中， C++，和 Python 程式碼，但不適用於 JavaScript 或F#。
 
 若要開啟 **自動變數**視窗中的，偵錯時，選取**偵錯** > **Windows** > **自動變數**，或按**Ctrl**+**Alt**+**V** > **A**。
 
@@ -56,9 +56,22 @@ ms.locfileid: "56636901"
 >[!CAUTION]
 >請確定您瞭解後果，再變更值和運算式。 一些可能的問題是：
 >
->-   評估某些運算式可能會變更變數的值，或是影響程式的狀態。 例如，評估`var1 = ++var2`變更的值都`var1`和`var2`。 這些運算式被視為具有[副作用](https://en.wikipedia.org/wiki/Side_effect_\(computer_science\))。 如果您不知道它們的存在，副作用會造成非預期的結果。
+>- 評估某些運算式可能會變更變數的值，或是影響程式的狀態。 例如，評估`var1 = ++var2`變更的值都`var1`和`var2`。 這些運算式被視為具有[副作用](https://en.wikipedia.org/wiki/Side_effect_\(computer_science\))。 如果您不知道它們的存在，副作用會造成非預期的結果。
 >
->-   由於分數元件的十進位至二進位轉換，編輯浮點數值會略微不精確。 即使表面上無害的編輯也可能造成浮點變數中的位元的某些變更。
+>- 由於分數元件的十進位至二進位轉換，編輯浮點數值會略微不精確。 即使表面上無害的編輯也可能造成浮點變數中的位元的某些變更。
+
+::: moniker range=">= vs-2019" 
+## <a name="search-in-the-autos-or-locals-window"></a>在 [自動變數] 或 [區域變數] 視窗中搜尋
+
+您可以搜尋的名稱、 值和型別資料行中的關鍵字**自動變數**或**區域變數**使用每個視窗上方的 [搜尋] 列的視窗。 按下 enter 鍵，或選取其中一個箭號，以執行搜尋。 若要取消進行中的搜尋，請在搜尋列中選取"x"圖示。
+
+使用左邊和右邊的箭號 (Shift + F3 和 F3，分別) 之間瀏覽找到相符項目。
+
+![在 [區域變數] 視窗中的搜尋](../debugger/media/ee-search-locals.png "[區域變數] 視窗中的搜尋")
+
+若要您的搜尋更多或更少徹底，利用**搜尋更深入**頂端的下拉式清單**自動變數**或**區域變數**視窗，即可選取您想要搜尋到的深度等級數巢狀的物件。 
+
+::: moniker-end
 
 ## <a name="change-the-context-for-the-autos-or-locals-window"></a>[自動變數] 或 [區域變數] 視窗的內容變更
 
@@ -70,11 +83,11 @@ ms.locfileid: "56636901"
 
 ![偵錯位置工具列](../debugger/media/debuglocationtoolbar.png "偵錯位置工具列")
 
-## <a name="bkmk_whatvariables"></a> 在 [自動變數] 視窗中的變數 (C#，c + +、 Visual Basic、 Python)
+## <a name="bkmk_whatvariables"></a> 在 [自動變數] 視窗中的變數 (C#， C++，Visual Basic、 Python)
 
- 不同的程式碼的語言會顯示在不同的變數**自動變數**視窗。
+不同的程式碼的語言會顯示在不同的變數**自動變數**視窗。
 
- - 在 C# 和 Visual Basic 中，[自動變數] 視窗會顯示目前或前一行使用的任何變數。 例如，在C#或 Visual Basic 程式碼中，宣告下列四個變數：
+- 在 C# 和 Visual Basic 中，[自動變數] 視窗會顯示目前或前一行使用的任何變數。 例如，在C#或 Visual Basic 程式碼中，宣告下列四個變數：
 
    ```csharp
        public static void Main()
@@ -93,7 +106,7 @@ ms.locfileid: "56636901"
 
    值`c`為 0，因為列`c = 3`尚未執行。
 
- - C + +**自動變數**視窗會顯示已暫停執行目前這一行之前至少三行中所使用的變數。 例如，在 c + + 程式碼中，宣告六個變數：
+- 在C++，則**自動變數** 視窗會顯示已暫停執行目前這一行之前至少三行中所使用的變數。 例如，在C++程式碼中，宣告六個變數：
 
    ```C++
        void main() {
@@ -113,8 +126,8 @@ ms.locfileid: "56636901"
 
     變數`e`未初始化，因為列`e = 5`尚未執行。
 
-##  <a name="bkmk_returnValue"></a> View return values of method calls
- 在.NET 和 c + + 程式碼中，您可以檢查中的傳回值**自動變數**不進入或者跳離方法呼叫時，視窗。 檢視方法呼叫傳回時不會儲存在本機變數，值可能很有用。 無法使用的方法，做為參數，或為另一種方法的傳回值。
+## <a name="bkmk_returnValue"></a> View return values of method calls
+ 在.NET 和C++程式碼中，您可以檢查中的傳回值**自動變數**不進入或者跳離方法呼叫時，視窗。 檢視方法呼叫傳回時不會儲存在本機變數，值可能很有用。 無法使用的方法，做為參數，或為另一種方法的傳回值。
 
  例如，下列C#程式碼會加入兩個函式的傳回值：
 

@@ -13,42 +13,42 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a415a1021514a4d8b962e4a65a22b691edc66d9d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 6cac959fb4f9c52849e6e121943fd847deb923d0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56635146"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63427393"
 ---
 # <a name="how-to-import-a-master-page-or-theme"></a>HOW TO：匯入的主版頁面或佈景主題
   您可以讓頁面在您的 SharePoint 網站上一致的外觀建立並使用主版頁面和主題。 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 未提供範本，針對這些項目，但是您可以在 SharePoint Designer 中建立它們，並再將其匯入[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。 如需詳細資訊，請參閱[建置組塊：頁面和使用者介面](http://go.microsoft.com/fwlink/?LinkID=182095)Microsoft 網站上。
 
 ### <a name="to-import-a-master-page-or-theme"></a>若要匯入的主版頁面或佈景主題
 
-1.  在  [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]，建立或開啟 SharePoint 專案。
+1. 在  [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]，建立或開啟 SharePoint 專案。
 
      如需有關如何建立 SharePoint 專案的資訊，請參閱 < [SharePoint 專案和專案項目範本](../sharepoint/sharepoint-project-and-project-item-templates.md)。
 
-2.  在功能表列中，選擇 [專案] > [加入新項目]。
+2. 在功能表列中，選擇 [專案] > [加入新項目]。
 
-3.  在**加入新項目**對話方塊方塊中，展開**SharePoint**節點，然後選擇**2010年**節點。
+3. 在**加入新項目**對話方塊方塊中，展開**SharePoint**節點，然後選擇**2010年**節點。
 
-4.  在 SharePoint 範本清單中，選擇**模組**範本，然後指定模組的名稱。
+4. 在 SharePoint 範本清單中，選擇**模組**範本，然後指定模組的名稱。
 
      模組包含檔案 （例如，主版頁面或佈景主題檔案），以部署至您在 SharePoint 中指定的位置。
 
-5.  在模組中，刪除 預設的檔案，名為*Sample.txt*。
+5. 在模組中，刪除 預設的檔案，名為*Sample.txt*。
 
-6.  選擇 [模組] 節點。
+6. 選擇 [模組] 節點。
 
-7.  在功能表列上選擇 **專案** > **加入現有項目**，然後選擇 主版頁面或佈景主題檔案。
+7. 在功能表列上選擇 **專案** > **加入現有項目**，然後選擇 主版頁面或佈景主題檔案。
 
      主版頁面檔案具有.master 副檔名，而且佈景主題檔案副檔名為.thmx。
 
-8.  如果您加入主版頁面，變更其**部署衝突解決**設為**自動**中模組的屬性。
+8. 如果您加入主版頁面，變更其**部署衝突解決**設為**自動**中模組的屬性。
 
     > [!NOTE]
-    >  主版頁面的名稱是否與現有的主版頁面標示為預設主版頁面或自訂主版頁面的名稱相同，則可能會發生錯誤。 如需有關如何解決此問題的資訊，請參閱[逐步解說：匯入自訂主版頁面和網站頁面的映像](../sharepoint/walkthrough-import-a-custom-master-page-and-site-page-with-an-image.md)。
+    > 主版頁面的名稱是否與現有的主版頁面標示為預設主版頁面或自訂主版頁面的名稱相同，則可能會發生錯誤。 如需有關如何解決此問題的資訊，請參閱[逐步解說：匯入自訂主版頁面和網站頁面的映像](../sharepoint/walkthrough-import-a-custom-master-page-and-site-page-with-an-image.md)。
 
 9. 在模組中，開啟*Elements.xml*。
 
@@ -81,7 +81,7 @@ ms.locfileid: "56635146"
      值為**Web**表示主版頁面只適用於目前專案中指定的網站。 值為**站台**表示主版頁面套用至目前網站集合，其中包括所有子網站和根網站。 不適用於其他值。
 
     > [!NOTE]
-    >  佈景主題套用至網站集合層級，因為我們建議您不要設定佈景主題的範圍到任何項目以外**站台**。 如果在子站台會使用佈景主題，可能會發生錯誤。
+    > 佈景主題套用至網站集合層級，因為我們建議您不要設定佈景主題的範圍到任何項目以外**站台**。 如果在子站台會使用佈景主題，可能會發生錯誤。
 
 12. 在功能表列上選擇 **建置** > **部署方案**。
 

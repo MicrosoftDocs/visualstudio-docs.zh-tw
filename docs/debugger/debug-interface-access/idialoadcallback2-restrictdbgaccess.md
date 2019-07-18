@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 24317ff7a79815e5af2306b09cc8d2aa3bfdde0d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56595849"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62832653"
 ---
 # <a name="idialoadcallback2restrictdbgaccess"></a>IDiaLoadCallback2::RestrictDBGAccess
 會決定是否從.dbg 檔案中允許尋找偵錯資訊。
@@ -34,5 +34,5 @@ HRESULT RestrictDBGAccess();
 ## <a name="remarks"></a>備註
  任何傳回值，而非`S_OK`以避免需要從.dbg 檔案的偵錯資訊。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md)

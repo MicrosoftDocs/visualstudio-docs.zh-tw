@@ -21,17 +21,16 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9b55bc206b204fe2b2e5ef71e2fdb1d48e67802d
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 266db8199160f58c62b7587f55029cff2bb26c29
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54802580"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441694"
 ---
 # <a name="miscellaneous-files"></a>其他檔案
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 您可能想要使用 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 編輯器，單獨處理專案或方案中的檔案。 開啟方案時，可以開啟並修改檔案，而不需要將它們新增至方案或專案。 您想要單獨處理稱為其他檔案的容器中檔案。 其他檔案是方案和專案的外部檔案、未納入組建中，而且不能隨附於原始檔控制下的方案。  
   
  單獨開啟容器中的檔案因各種原因而十分有用。 您可能有想要在開發專案方案時檢視但不是方案開發之必要項目的檔案。 常見範例包括開發附註或指示、資料庫結構描述和程式碼片段。 此外，您可能想要建立獨立檔案。  
@@ -43,7 +42,7 @@ ms.locfileid: "54802580"
  [其他檔案] 資料夾會將檔案呈現為連結。 雖然此資料夾不是方案的一部分，但是開啟方案時，會重新開啟在最後一次關閉方案時開啟的部分或所有其他檔案 (視資料夾的設定而定)。  
   
 > [!NOTE]
->  未出現在 [其他檔案] 資料夾中的檔案有些是您無法在 IDE 內修改的檔案 (例如 .zip 檔案和 .doc 檔案)。 IDE 將不會追蹤只能透過外部編輯器修改的檔案。  
+> 未出現在 [其他檔案] 資料夾中的檔案有些是您無法在 IDE 內修改的檔案 (例如 .zip 檔案和 .doc 檔案)。 IDE 將不會追蹤只能透過外部編輯器修改的檔案。  
   
 ## <a name="commands-available-in-the-ide"></a>IDE 中可用的命令  
  功能表、工具列和其包含的命令會根據所開啟檔案的格式變更。 例如，開啟文字檔時，[文字編輯器] 工具列會出現，並且可以使用其命令。 如果您接著開啟 XML 結構描述檔案，則會出現 [XML 結構描述] 工具列。 編輯 XML 結構描述時，無法使用 [文字編輯器] 工具列的命令 (或工具列本身)。 XML 結構描述是使用中視窗，因而包含目前選取項目內容。 切換專案檔與其他檔案時，所有專案相關命令都會消失，只會出現與其他檔案直接相關的命令。  

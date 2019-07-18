@@ -18,14 +18,14 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: c4943d1305c2f25de4eec9e782949a66827de879
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58144871"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62955087"
 ---
 # <a name="iactivescriptaddtypelib"></a>IActiveScript::AddTypeLib
-將指令碼的命名空間中的型別程式庫。 這是類似於`#include`C/c + + 指示詞。 它可讓一組預先定義的項目類別定義，例如`typedefs`，與具名常數可以加入至可供指令碼的執行階段環境。  
+將指令碼的命名空間中的型別程式庫。 這是類似`#include`指示詞 C /C++。 它可讓一組預先定義的項目類別定義，例如`typedefs`，與具名常數可以加入至可供指令碼的執行階段環境。  
   
 ## <a name="syntax"></a>語法  
   

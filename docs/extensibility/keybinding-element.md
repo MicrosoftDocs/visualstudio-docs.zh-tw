@@ -6,22 +6,22 @@ helpviewer_keywords:
 - VSCT XML schema elements, KeyBindings
 - KeyBinding element (VSCT XML schema)
 ms.assetid: e55a1098-15df-42a9-9f87-e3a99cf437dd
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1eac2d38e0444cb6ee6624863d1cb3e33bae3314
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 9c3bc5e10c928c50bca1ea3879531885f4580519
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56678432"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66309634"
 ---
 # <a name="keybinding-element"></a>KeyBinding 元素
 按鍵繫結關係項目會指定命令的鍵盤快速鍵。
 
- 命令可以有與其相關聯的單一和雙重金鑰的連結。 單一索引鍵繫結的範例**Ctrl**+**S**如**儲存**命令。 雙重金鑰的繫結需要兩個連續的按鍵組合來觸發命令。 雙重金鑰繫結的範例<strong>Ctrl*+</strong>K<strong>，</strong>Ctrl<strong>+</strong>K** 若要設定書籤。
+ 命令可以有與其相關聯的單一和雙重金鑰的連結。 單一索引鍵繫結的範例**Ctrl**+**S**如**儲存**命令。 雙重金鑰的繫結需要兩個連續的按鍵組合來觸發命令。 雙重金鑰繫結的範例<strong>Ctrl *+</strong>K<strong>，</strong>Ctrl<strong>+</strong>K** 若要設定書籤。
 
 ## <a name="syntax"></a>語法
 

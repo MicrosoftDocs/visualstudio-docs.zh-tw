@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ae65ad9c1ad740b3ea39dd97d7430804292df057
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: bb5160ef663375ee3dd4b45797e8f4536acdf793
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55948442"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66744643"
 ---
 # <a name="ca1820-test-for-empty-strings-using-string-length"></a>CA1820:應該使用字串長度測試空白字串
 
@@ -38,11 +38,11 @@ ms.locfileid: "55948442"
 
 比較字串使用<xref:System.String.Length%2A?displayProperty=nameWithType>屬性或<xref:System.String.IsNullOrEmpty%2A?displayProperty=nameWithType>方法的速度比使用<xref:System.Object.Equals%2A>。 這是因為<xref:System.Object.Equals%2A>執行更多的 MSIL 指示，兩個<xref:System.String.IsNullOrEmpty%2A>或執行擷取的指令數目<xref:System.String.Length%2A>屬性值，並比較它與零。
 
-Null 的字串，請<xref:System.Object.Equals%2A>和<xref:System.String.Length%2A>= = 0 有不同的行為。 如果您嘗試取得的值<xref:System.String.Length%2A>屬性為 null 的字串，common language runtime 會擲回<xref:System.NullReferenceException?displayProperty=fullName>。 如果您執行 null 字串與空字串之間的比較，通用語言執行平台並不會擲回例外狀況，並傳回`false`。 測試 null，不會大幅影響這兩種方法的相對效能。 當目標.NET Framework 2.0 或更新版本，使用<xref:System.String.IsNullOrEmpty%2A>方法。 否則，請使用<xref:System.String.Length%2A>= = 0 的比較，可能的話。
+Null 的字串，請<xref:System.Object.Equals%2A>和`<string>.Length == 0`表現的行為。 如果您嘗試取得的值<xref:System.String.Length%2A>屬性為 null 的字串，common language runtime 會擲回<xref:System.NullReferenceException?displayProperty=fullName>。 如果您執行 null 字串與空字串之間的比較，通用語言執行平台並不會擲回例外狀況，並傳回`false`。 測試 null，不會大幅影響這兩種方法的相對效能。 當目標.NET Framework 2.0 或更新版本，使用<xref:System.String.IsNullOrEmpty%2A>方法。 否則，請使用<xref:System.String.Length%2A>= = 0 的比較，可能的話。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
 
-若要修正此規則的違規情形，變更要使用的比較<xref:System.String.Length%2A>屬性以及測試，null 字串。 如果目標.NET Framework 2.0 或更新版本，使用<xref:System.String.IsNullOrEmpty%2A>方法。
+若要修正此規則的違規情形，變更要使用的比較<xref:System.String.IsNullOrEmpty%2A>方法。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
 

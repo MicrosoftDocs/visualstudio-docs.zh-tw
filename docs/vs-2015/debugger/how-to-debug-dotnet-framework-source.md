@@ -1,14 +1,9 @@
 ---
-title: 如何： 偵錯.NET Framework 原始檔 |Microsoft Docs
-ms.custom: ''
+title: 作法：偵錯.NET Framework 原始檔 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -20,15 +15,15 @@ ms.assetid: fc12e472-ac6a-4e77-8e22-a769e13a03b8
 caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: ce5e20524040d131a655da1567606ffbb0934a80
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 49b13b8406dc96e8e7ebe5e79e26c5da02e8a53a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51725427"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68205435"
 ---
-# <a name="how-to-debug-net-framework-source"></a>如何：偵錯 .NET Framework 原始檔
+# <a name="how-to-debug-net-framework-source"></a>作法：對 .NET Framework 來源進行偵錯
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 最新版本[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]提供的新功能[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]偵錯。 若要偵錯[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]來源，您必須具有存取權的程式碼偵錯符號。 您也必須啟用逐步執行到[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]來源。  
@@ -37,49 +32,46 @@ ms.locfileid: "51725427"
   
 ### <a name="to-enable-net-framework-source-debugging"></a>若要啟用 .NET Framework 原始檔偵錯  
   
-1.  在 [ **工具** ] 功能表上按一下 [ **選項**]。  
+1. 在 [ **工具** ] 功能表上按一下 [ **選項**]。  
   
-2.  在 [**選項**] 對話方塊中，按一下**偵錯**類別目錄。  
+2. 在 [**選項**] 對話方塊中，按一下**偵錯**類別目錄。  
   
-3.  在 **一般**方塊中，設定**啟用.NET Framework**來源逐步執行。  
+3. 在 **一般**方塊中，設定**啟用.NET Framework**來源逐步執行。  
   
-    1.  如果您已啟用 Just My Code，將會出現警告對話方塊，通知您 Just My Code 現在已停用。 按一下 [確定 **Deploying Office Solutions**]。  
+    1. 如果您已啟用 Just My Code，將會出現警告對話方塊，通知您 Just My Code 現在已停用。 按一下 [確定]  。  
   
-    2.  如果您未設定符號快取區位置，將會出現另一個對話方塊，通知您現在已經設定預設的符號快取區位置。 按一下 [確定 **Deploying Office Solutions**]。  
+    2. 如果您未設定符號快取區位置，將會出現另一個對話方塊，通知您現在已經設定預設的符號快取區位置。 按一下 [確定 **Deploying Office Solutions**]。  
   
-4.  底下**偵錯**分類中，按一下**符號**。  
+4. 底下**偵錯**分類中，按一下**符號**。  
   
-5.  如果您想要變更符號快取位置：  
+5. 如果您想要變更符號快取位置：  
   
-    1.  開啟**偵錯**左邊方塊中的節點。  
+    1. 開啟**偵錯**左邊方塊中的節點。  
   
-    2.  底下**偵錯**節點中，按一下**符號**。  
+    2. 底下**偵錯**節點中，按一下**符號**。  
   
-    3.  編輯中的位置**快取從符號伺服器到此目錄的符號**或按**瀏覽**選擇的位置。  
+    3. 編輯中的位置**快取從符號伺服器到此目錄的符號**或按**瀏覽**選擇的位置。  
   
-6.  如果您想要立即下載符號，請按一下**載入符號使用上述位置**。  
+6. 如果您想要立即下載符號，請按一下**載入符號使用上述位置**。  
   
      這個按鈕不能在設計模式中使用。  
   
      如果您沒有選擇立即下載符號，便會在下次開始偵錯程式時，自動下載符號。  
   
-7.  按一下 [確定] 關閉 [選項] 對話方塊。  
+7. 按一下 [確定]  關閉 [選項]  對話方塊。  
   
 ### <a name="to-load-framework-symbols-using-the-modules-window"></a>若要使用模組視窗載入 Framework 符號  
   
-1.  在 [**模組**] 視窗中，以滑鼠右鍵按一下的未載入符號的模組。 如果已載入符號，或者不是藉由查看，您可以告訴**符號狀態**資料行。  
+1. 在 [**模組**] 視窗中，以滑鼠右鍵按一下的未載入符號的模組。 如果已載入符號，或者不是藉由查看，您可以告訴**符號狀態**資料行。  
   
-2.  指向**載入符號來源**然後按一下**Microsoft 符號伺服器**若要從 Microsoft 公用符號伺服器下載符號或**符號路徑**載入從目錄您先前儲存的符號。  
+2. 指向**載入符號來源**然後按一下**Microsoft 符號伺服器**若要從 Microsoft 公用符號伺服器下載符號或**符號路徑**載入從目錄您先前儲存的符號。  
   
 ### <a name="to-load-framework-symbols-using-the-call-stack-window"></a>若要使用呼叫堆疊視窗載入 Framework 符號  
   
-1.  在 [**呼叫堆疊**] 視窗中，以滑鼠右鍵按一下未載入符號的框架。 該框架隨即變成暗灰色。  
+1. 在 [**呼叫堆疊**] 視窗中，以滑鼠右鍵按一下未載入符號的框架。 該框架隨即變成暗灰色。  
   
-2.  指向**載入符號來源**然後按一下**Microsoft 符號伺服器**或是**符號路徑**。  
+2. 指向**載入符號來源**然後按一下**Microsoft 符號伺服器**或是**符號路徑**。  
   
 ## <a name="see-also"></a>另請參閱  
  [偵錯 Managed 程式碼](../debugger/debugging-managed-code.md)   
  [指定符號 (.pdb) 和來源檔案](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)
-
-
-

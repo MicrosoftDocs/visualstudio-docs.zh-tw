@@ -9,12 +9,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7b28a279e729900d8a1cb26f25bca6370c00a08c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: a89e06fad1e47e3c2fd7be565acab9d94e3f29d5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54774097"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434436"
 ---
 # <a name="how-to-modify-the-pivot-point-of-a-3-d-model"></a>HOW TO：修改 3d 模型的樞紐點
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,7 +23,7 @@ ms.locfileid: "54774097"
   
  本文件示範下列活動︰  
   
--   修改物件的樞紐分析點  
+- 修改物件的樞紐分析點  
   
 ## <a name="modifying-the-pivot-point-of-a-3-d-model"></a>修改 3D 模型的樞紐分析點  
  您可以修改 3D 模型的樞紐分析點，以重新定義其原點。  
@@ -43,12 +43,12 @@ ms.locfileid: "54774097"
     您也可以使用 [屬性] 視窗中的 [ 在空間中移動樞紐位置] 屬性，來指定樞紐分析點。  
   
    > [!TIP]
-   >  您可以旋轉物件來檢視新樞紐分析點的效果。 若要加以旋轉，請使用 [旋轉] 工具或修改 [旋轉] 屬性。  
+   > 您可以旋轉物件來檢視新樞紐分析點的效果。 若要加以旋轉，請使用 [旋轉] 工具或修改 [旋轉] 屬性。  
   
    以下模型具有已修改的樞紐點：  
   
    ![具有已修改樞紐點的房屋模型](../designers/media/digit-modified-model.png "Digit-Modified-Model")  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [如何：建立基本 3d 模型](../designers/how-to-create-a-basic-3-d-model.md)   
  [模型編輯器](../designers/model-editor.md)

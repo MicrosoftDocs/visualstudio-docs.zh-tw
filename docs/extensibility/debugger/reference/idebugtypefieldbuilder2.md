@@ -5,17 +5,17 @@ ms.topic: reference
 helpviewer_keywords:
 - IDebugTypeFieldBuilder2 interface
 ms.assetid: 23911c5b-2bbf-4734-9976-87a0bd6ea36c
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 97e0903d23b94019016634637cc18295efacd699
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: a22f8d60318721fbb51e0d5be7965c27666b8c48
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56688782"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66319767"
 ---
 # <a name="idebugtypefieldbuilder2"></a>IDebugTypeFieldBuilder2
 擴充**IDebugTypeFieldBuilder**能夠建立陣列的型別。

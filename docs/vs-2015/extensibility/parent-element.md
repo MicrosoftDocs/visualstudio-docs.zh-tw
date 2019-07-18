@@ -1,27 +1,22 @@
 ---
 title: 父項目 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - VSCT XML schema elements, Parent
 - Parent element (VSCT XML schema)
 ms.assetid: e4624ac8-1b9a-4940-910a-528a661cefad
 caps.latest.revision: 9
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 62096a713e84353ab79206c5edc7003ab443adbb
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 2086473bc484fed4e8e351f0c3838074557586c9
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51765880"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68194085"
 ---
 # <a name="parent-element"></a>Parent 項目
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,15 +36,15 @@ ms.locfileid: "51765880"
   
 |屬性|描述|  
 |---------------|-----------------|  
-|guid|必要。 GUID/識別碼 GUID 命令識別項。|  
-|id|必要。 識別碼的 GUID/識別碼命令識別項。|  
+|guid|必要項。 GUID/識別碼 GUID 命令識別項。|  
+|id|必要項。 識別碼的 GUID/識別碼命令識別項。|  
   
 ### <a name="child-elements"></a>子元素  
- 無  
+ None  
   
 ### <a name="parent-elements"></a>父項目  
   
-|項目|描述|  
+|項目|說明|  
 |-------------|-----------------|  
 |[CommandTable 元素](../extensibility/commandtable-element.md)|定義代表命令的 VSPackage 提供整合式的開發環境 (IDE) 的所有項目。 例如，功能表項目、 功能表、 工具列和下拉式方塊。|  
 |[Buttons 元素](../extensibility/buttons-element.md)|群組[Button Element](../extensibility/button-element.md)項目。|  
@@ -58,4 +53,3 @@ ms.locfileid: "51765880"
   
 ## <a name="see-also"></a>另請參閱  
  [Visual Studio 命令表檔案 (.Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
-

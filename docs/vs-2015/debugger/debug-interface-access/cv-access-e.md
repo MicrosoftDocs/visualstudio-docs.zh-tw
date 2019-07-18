@@ -1,14 +1,9 @@
 ---
-title: CV_access_e |Microsoft Docs
-ms.custom: ''
+title: CV_access_e | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 33c05d65-abb4-4800-a382-54a3805ea7b0
 caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 4491aa77eaf27915dcda1654ef00dca351804ff1
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 1ce5997555b37cf5ab30f091e7124b5025284c0e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51745647"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68164383"
 ---
 # <a name="cvaccesse"></a>CV_access_e
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -58,8 +53,5 @@ typedef enum CV_access_e { 
   
 ## <a name="see-also"></a>另請參閱  
  [列舉和結構](../../debugger/debug-interface-access/enumerations-and-structures.md)   
- [Idiasymbol:: Get_access](../../debugger/debug-interface-access/idiasymbol-get-access.md)   
+ [IDiaSymbol::get_access](../../debugger/debug-interface-access/idiasymbol-get-access.md)   
  [IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)
-
-
-

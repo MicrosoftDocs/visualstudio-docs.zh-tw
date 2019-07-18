@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: afbfaae56470fa9b16c99277d36b0e39a6504906
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 362eb5fd1973035e31ccd301f6cc46a748a9b2ac
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56628906"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62988281"
 ---
 # <a name="additional-information-for-sharepoint-errors"></a>SharePoint 錯誤的其他相關資訊
   您可以找到協助疑難排解[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]SharePoint 工具錯誤和警告的疑難排解主題和公共論壇。
@@ -29,11 +29,11 @@ ms.locfileid: "56628906"
 ## <a name="troubleshoot-errors-and-issues"></a>疑難排解錯誤和問題
  如需一些常見錯誤及其他問題的協助[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]SharePoint 工具，請參閱下列主題：
 
--   [SharePoint 方案進行疑難排解](../sharepoint/troubleshooting-sharepoint-solutions.md)
+- [SharePoint 方案進行疑難排解](../sharepoint/troubleshooting-sharepoint-solutions.md)
 
--   [偵錯 SharePoint 方案](../sharepoint/debugging-sharepoint-solutions.md)
+- [偵錯 SharePoint 方案](../sharepoint/debugging-sharepoint-solutions.md)
 
--   [針對 SharePoint 封裝和部署進行疑難排解](../sharepoint/troubleshooting-sharepoint-packaging-and-deployment.md)
+- [針對 SharePoint 封裝和部署進行疑難排解](../sharepoint/troubleshooting-sharepoint-packaging-and-deployment.md)
 
 ## <a name="other-resources"></a>其他資源
  下表列出[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]SharePoint 工具論壇和其他可用的資源。

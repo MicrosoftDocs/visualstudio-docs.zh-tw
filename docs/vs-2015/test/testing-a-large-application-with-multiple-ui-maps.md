@@ -11,12 +11,12 @@ ms.assetid: 6e1ae9ec-e9b1-458a-bd96-0eb15e46f1d5
 caps.latest.revision: 24
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 459e7e00f1fc9602b4e003ec16394d9cdf06410a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 18180ee3277cdff60d11c0ae35e8aa3c990764de
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54775082"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63386040"
 ---
 # <a name="testing-a-large-application-with-multiple-ui-maps"></a>測試含有多個 UI 對應的大型應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,9 +42,9 @@ ms.locfileid: "54775082"
 ## <a name="do-you-need-multiple-ui-maps"></a>您是否需要多個 UI 對應？  
  請在下列幾種情況下建立多個 UI 對應：  
   
--   一起執行邏輯作業的多組複雜的複合 UI 控制項，例如網站上的註冊網頁或購物車的購買網頁。  
+- 一起執行邏輯作業的多組複雜的複合 UI 控制項，例如網站上的註冊網頁或購物車的購買網頁。  
   
--   從應用程式的多點存取的獨立一組控制項，例如具有數頁作業的精靈。 如果精靈的每一頁都特別複雜，您可以為每一頁各建立一個 UI 對應。  
+- 從應用程式的多點存取的獨立一組控制項，例如具有數頁作業的精靈。 如果精靈的每一頁都特別複雜，您可以為每一頁各建立一個 UI 對應。  
   
 ## <a name="adding-multiple-ui-maps"></a>加入多個 UI 對應  
   
@@ -59,7 +59,7 @@ ms.locfileid: "54775082"
     隨即顯示 [ 新增項目] 對話方塊。  
   
    > [!NOTE]
-   >  您必須在自動程式化 UI 測試專案中，才能加入新的自動程式化 UI 測試對應。  
+   > 您必須在自動程式化 UI 測試專案中，才能加入新的自動程式化 UI 測試對應。  
   
 3. 從清單中選取 [自動程式碼 UI 測試對應]。  
   
@@ -138,7 +138,7 @@ namespace ContosoProject
 }  
 ```  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap>   
  <xref:Microsoft.VisualStudio.TestTools.UITesting.BrowserWindow.CopyFrom%2A>   
  [使用使用者介面自動化來測試您的程式碼](../test/use-ui-automation-to-test-your-code.md)   

@@ -1,14 +1,9 @@
 ---
-title: 如何： 使用模組視窗 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：使用模組視窗 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.modules
 dev_langs:
@@ -31,31 +26,31 @@ ms.assetid: d840fdca-b035-4452-b652-72580c831896
 caps.latest.revision: 41
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: fea513b7593e260b5f5fb71e40ced98a1f8cc279
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: b592515692e23dce49c125c7895bd158904b653f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51764410"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696132"
 ---
-# <a name="how-to-use-the-modules-window"></a>如何：使用模組視窗
+# <a name="how-to-use-the-modules-window"></a>作法：使用模組視窗
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-附註]
->  這個功能不能用於 SQL 或指令碼偵錯。  
+注意]
+> 這個功能不能用於 SQL 或指令碼偵錯。  
   
  **模組**視窗會列出 Dll 和 EXE，供您的程式，並顯示每個的相關資訊。  
   
 ### <a name="to-display-the-modules-window-in-break-mode-or-in-run-mode"></a>若要在中斷模式或執行模式顯示模組視窗  
   
--   在 [**偵錯**] 功能表中，選擇**Windows**，然後按一下**模組**。  
+- 在 [**偵錯**] 功能表中，選擇**Windows**，然後按一下**模組**。  
   
-     根據預設，**模組**視窗會依載入順序來排序模組。 但您也可以選擇依任何資料行來排序。  
+     根據預設，[模組] 視窗會依載入順序來排序模組。 但您也可以選擇依任何資料行來排序。  
   
 ### <a name="to-sort-by-any-column"></a>若要依任何欄位排序  
   
--   請按一下欄位頂端的按鈕。  
+- 請按一下欄位頂端的按鈕。  
   
      您可以載入符號或指定的符號路徑**模組**使用捷徑功能表的視窗。  
   
@@ -64,30 +59,25 @@ ms.locfileid: "51764410"
   
 #### <a name="to-load-symbols-manually"></a>若要手動載入符號  
   
-1.  在 [**模組**] 視窗中，以滑鼠右鍵按一下未載入符號有的模組。  
+1. 在 [**模組**] 視窗中，以滑鼠右鍵按一下未載入符號有的模組。  
   
-2.  指向**載入符號來源**，然後按一下**Microsoft 符號伺服器**或是**符號路徑**。  
+2. 指向**載入符號來源**，然後按一下**Microsoft 符號伺服器**或是**符號路徑**。  
   
 #### <a name="to-change-symbol-load-settings"></a>若要變更符號載入設定  
   
-1.  在 [**模組**] 視窗中，以滑鼠右鍵按一下任何模組。  
+1. 在 [模組] 視窗中，以滑鼠右鍵按一下任一模組。  
   
-2.  按一下 **符號設定**。  
+2. 按一下 **符號設定**。  
   
      您現在可以變更符號載入設定，，如中所述[指定符號位置和載入行為](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md#BKMK_Specify_symbol_locations_and_loading_behavior)。 在重新啟動偵錯工作階段之前，變更不會生效。  
   
 #### <a name="to-change-symbol-load-behavior-for-a-specific-module"></a>若要變更特定模組的符號載入行為  
   
-1.  在 [**模組**] 視窗中，以滑鼠右鍵按一下模組。  
+1. 在 [模組] 視窗中，以滑鼠右鍵按一下模組。  
   
-2.  指向**自動符號載入設定**，然後按一下**永遠手動載入**或是**預設**。 在重新啟動偵錯工作階段之前，變更不會生效。  
+2. 指向**自動符號載入設定**，然後按一下**永遠手動載入**或是**預設**。 在重新啟動偵錯工作階段之前，變更不會生效。  
   
 ## <a name="see-also"></a>另請參閱  
- [中斷執行](http://msdn.microsoft.com/en-us/30fc4643-f337-4651-b1ff-f2de2c098d40)   
- [在 偵錯工具中檢視資料](../debugger/viewing-data-in-the-debugger.md)   
+ [中斷執行](https://msdn.microsoft.com/30fc4643-f337-4651-b1ff-f2de2c098d40)   
+ [在偵錯工具中檢視資料](../debugger/viewing-data-in-the-debugger.md)   
  [指定符號 (.pdb) 和來源檔案](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)
-
-
-
-
-

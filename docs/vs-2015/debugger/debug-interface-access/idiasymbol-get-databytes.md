@@ -1,14 +1,9 @@
 ---
 title: 'Idiasymbol:: Get_databytes |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 5eb37179-20d8-44ae-a72a-405c1b0435c4
 caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: a82f1161fdce536d9a66529eb9faf155c91debbd
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: bb0946c586c7b9ac3bb8907a9b5eb907d8f3ae70
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51787649"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "64858502"
 ---
 # <a name="idiasymbolgetdatabytes"></a>IDiaSymbol::get_dataBytes
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -54,7 +49,7 @@ HRESULT get_dataBytes ( 
  如果成功，則傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。  
   
 > [!NOTE]
->  傳回值為`S_FALSE`表示屬性不是適用於符號。  
+> 傳回值為`S_FALSE`表示屬性不是適用於符號。  
   
 ## <a name="requirements"></a>需求  
   
@@ -65,6 +60,3 @@ HRESULT get_dataBytes ( 
   
 ## <a name="see-also"></a>另請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
-
-
-

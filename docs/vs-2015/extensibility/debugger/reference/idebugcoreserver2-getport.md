@@ -1,14 +1,9 @@
 ---
-title: IDebugCoreServer2::GetPort |Microsoft Docs
-ms.custom: ''
+title: IDebugCoreServer2::GetPort | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugCoreServer2::GetPort
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 3f5ea4a8-6085-4600-980a-9e48f8b5be56
 caps.latest.revision: 12
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: c5b221831dbcbbd7054f3372ace71f3373cce8f5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: e00f055d8e6a0fe1bea82061431410eb1e3b236f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51761728"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68192928"
 ---
 # <a name="idebugcoreserver2getport"></a>IDebugCoreServer2::GetPort
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -58,4 +53,3 @@ int GetPort( 
 ## <a name="see-also"></a>另請參閱  
  [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md)   
  [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)
-

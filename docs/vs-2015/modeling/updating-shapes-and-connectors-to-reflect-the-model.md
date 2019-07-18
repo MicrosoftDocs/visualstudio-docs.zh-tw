@@ -1,23 +1,20 @@
 ---
 title: 更新圖案和接點來反映模型 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: 51eb2af9-00e7-4725-a87d-62fb4f39f444
 caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 93c079a5dc80b0a26e133258328fb7b5b9fb8d41
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: c8520084b57fdf0f831f62626593832d03c25636
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49192448"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68183926"
 ---
 # <a name="updating-shapes-and-connectors-to-reflect-the-model"></a>更新圖案和接點來反映模型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,9 +32,9 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 ## <a name="set-shape-map-properties-to-control-the-visibility-of-a-decorator"></a>設定圖形地圖屬性來控制的裝飾項目可見性  
  您可以控制裝飾項目可見的性，而不需要撰寫程式碼中，藉由設定 DSL 定義中的圖形與領域類別之間的對應。 如需詳細資訊，請參閱下列主題：  
   
--   [如何：控制 Decorator 的可視性 - 重新導向](../misc/how-to-control-the-visibility-of-a-decorator-redirect.md)  
+- [如何：控制 Decorator 的可視性-重新導向](../misc/how-to-control-the-visibility-of-a-decorator-redirect.md)  
   
--   [如何定義特定領域語言](../modeling/how-to-define-a-domain-specific-language.md)  
+- [如何定義特定領域語言](../modeling/how-to-define-a-domain-specific-language.md)  
   
 ## <a name="expose-the-color-and-style-of-a-shape-as-properties"></a>將公開為屬性的色彩和樣式的圖形  
  在 DSL 定義中，以滑鼠右鍵按一下圖形類別，指向**加入已公開**，然後按一下其中一個項目這類**填滿色彩**。  
@@ -93,7 +90,7 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 ```  
   
 ## <a name="use-onchildconfigured-to-initialize-a-shapes-properties"></a>使用 OnChildConfigured 初始化圖形的屬性  
- 若要設定圖案的屬性，第一次時，建立覆寫`OnChildConfigured()`圖表類別的部分定義中。 在 DSL 定義中，指定圖表類別與產生的程式碼位於**Dsl\Generated Code\Diagram.cs**。 例如:   
+ 若要設定圖案的屬性，第一次時，建立覆寫`OnChildConfigured()`圖表類別的部分定義中。 在 DSL 定義中，指定圖表類別與產生的程式碼位於**Dsl\Generated Code\Diagram.cs**。 例如：  
   
 ```csharp  
 partial class MyLanguageDiagram  
@@ -118,7 +115,7 @@ partial class MyLanguageDiagram
   
  針對網域屬性和非存放區功能，例如圖形的大小，可以使用這個方法。  
   
-##  <a name="OnAssociatedProperty"></a> 若要更新圖形的其他功能使用 Associatevaluewith  
+## <a name="OnAssociatedProperty"></a> 若要更新圖形的其他功能使用 Associatevaluewith  
  圖形，例如是否有陰影或連接器的箭頭樣式的某些功能沒有任何內建的方法，公開為網域屬性的功能。  這類功能的變更不在交易系統的控制之下。 因此，不適當更新這些使用規則，因為規則不會叫用使用者執行 [復原] 命令時。  
   
  相反地，您可以更新這類功能，使用<xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnAssociatedPropertyChanged%2A>。 在下列範例中，連接器的箭頭樣式會受到網域屬性的連接器顯示在關係性中的值：  
@@ -165,6 +162,3 @@ public partial class ArrowConnector // My connector class.
  `AssociateValueWith()` 應該呼叫一次，針對每個您想要註冊的網域屬性。 已呼叫之後，會呼叫指定之屬性的任何變更`OnAssociatedPropertyChanged()`中呈現該屬性的模型項目中的任何圖形。  
   
  您不需要呼叫`AssociateValueWith()`每個執行個體。 雖然 InitializeResources 是執行個體方法，它會叫用一次，針對每個圖形類別。
-
-
-

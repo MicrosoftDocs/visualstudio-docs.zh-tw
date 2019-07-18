@@ -13,11 +13,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.openlocfilehash: fd3db58fa1ac0e3e1b1ea35901530be44c28ea12
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: eafe06a5654c14d60a78e20fb43f8b09172ddd29
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38943563"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "68146807"
 ---
 O/R 設計工具

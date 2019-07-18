@@ -1,14 +1,9 @@
 ---
 title: Creating an Extension with 功能表命令 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - write a vspackage
 - vspackage
@@ -17,13 +12,13 @@ helpviewer_keywords:
 ms.assetid: f97104c8-2bcb-45c7-a3c9-85abeda8df98
 caps.latest.revision: 57
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: fb99149a7b617d8e48e036d9e706e5e1c0a6169b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: e3bbf6b3b1ed2565d5e58806bd0935f713ba5bfd
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51779303"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62572883"
 ---
 # <a name="creating-an-extension-with-a-menu-command"></a>建立具有功能表命令的延伸模組
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,28 +30,28 @@ ms.locfileid: "51779303"
   
 ## <a name="creating-a-menu-command"></a>建立功能表命令  
   
-1.  建立 VSIX 專案，名為**FirstMenuCommand**。 您可以找到在 VSIX 專案範本**新的專案**下方的對話方塊**Visual C# / 擴充性**。  
+1. 建立 VSIX 專案，名為**FirstMenuCommand**。 您可以找到在 VSIX 專案範本**新的專案**下方的對話方塊**Visual C# / 擴充性**。  
   
-2.  當專案開啟時，新增名為的自訂命令項目範本**FirstCommand**。 在 **方案總管**，以滑鼠右鍵按一下專案節點，然後選取**新增 / 新項目**。 在 **加入新項目**對話方塊中，移至**Visual C# / 擴充性**，然後選取**自訂命令**。 在 **名稱**視窗的底部欄位中，將命令的檔案名稱變更為**FirstCommand.cs**。  
+2. 當專案開啟時，新增名為的自訂命令項目範本**FirstCommand**。 在 **方案總管**，以滑鼠右鍵按一下專案節點，然後選取**新增 / 新項目**。 在 **加入新項目**對話方塊中，移至**Visual C# / 擴充性**，然後選取**自訂命令**。 在 **名稱**視窗的底部欄位中，將命令的檔案名稱變更為**FirstCommand.cs**。  
   
-3.  建置此專案並開始偵錯。  
+3. 建置此專案並開始偵錯。  
   
      Visual Studio 的實驗執行個體隨即出現。 如需詳細的實驗執行個體的詳細資訊，請參閱[實驗的執行個體](../extensibility/the-experimental-instance.md)。  
   
-4.  在實驗執行個體中，開啟**工具 / 擴充功能和更新**視窗。 您應該會看到**FirstMenuCommand**延伸模組。 (如果您開啟**擴充功能和更新**在您的 Visual Studio 的工作執行個體，您將不會看到**FirstMenuCommand**)。  
+4. 在實驗執行個體中，開啟**工具 / 擴充功能和更新**視窗。 您應該會看到**FirstMenuCommand**延伸模組。 (如果您開啟**擴充功能和更新**在您的 Visual Studio 的工作執行個體，您將不會看到**FirstMenuCommand**)。  
   
      現在請移至**工具**實驗執行個體中的功能表。 您應該會看到**叫用 FirstCommand**命令。 此時只會出現訊息方塊，指出 「 FirstCommandPackage 內 FirstMenuCommand.FirstCommand.MenuItemCallback()"。 我們會看到如何實際從下一節中的此命令啟動 「 記事本 」。  
   
 ## <a name="changing-the-menu-command-handler"></a>變更功能表命令處理常式  
  現在讓我們更新命令處理常式，以啟動 [記事本]。  
   
-1.  停止偵錯，並返回您的 Visual Studio 的工作執行個體。 開啟 FirstCommand.cs 檔案並新增下列 using 陳述式：  
+1. 停止偵錯，並返回您的 Visual Studio 的工作執行個體。 開啟 FirstCommand.cs 檔案並新增下列 using 陳述式：  
   
     ```csharp  
     using System.Diagnostics;  
     ```  
   
-2.  找到的私用 FirstCommand 建構函式。 這是命令連結至命令服務和命令處理常式會指定位置。 變更命令處理常式的名稱來 StartNotepad，如下所示：  
+2. 找到的私用 FirstCommand 建構函式。 這是命令連結至命令服務和命令處理常式會指定位置。 變更命令處理常式的名稱來 StartNotepad，如下所示：  
   
     ```csharp  
     private FirstCommand(Package package)  
@@ -79,7 +74,7 @@ ms.locfileid: "51779303"
     }  
     ```  
   
-3.  移除 MenuItemCallback 方法，並新增 StartNotepad 方法，而這個方法會將只會啟動 [記事本]:  
+3. 移除 MenuItemCallback 方法，並新增 StartNotepad 方法，而這個方法會將只會啟動 [記事本]:  
   
     ```csharp  
     private void StartNotepad(object sender, EventArgs e)  
@@ -90,7 +85,7 @@ ms.locfileid: "51779303"
     }  
     ```  
   
-4.  現在試試看。當您開始偵錯的專案，然後按一下**工具] / [叫用 FirstCommand**，您應該會看到出現 [記事本] 的執行個體。  
+4. 現在試試看。當您開始偵錯的專案，然後按一下**工具] / [叫用 FirstCommand**，您應該會看到出現 [記事本] 的執行個體。  
   
      您可以使用的執行個體<xref:System.Diagnostics.Process>類別來執行任何的可執行檔中，而不只是 「 記事本 」。 試試看 calc.exe，例如。  
   
@@ -99,9 +94,9 @@ ms.locfileid: "51779303"
   
  您可以取得此指令碼中有兩種：  
   
-1.  從桌面上，尋找**重設 Visual Studio 2015 實驗執行個體**。  
+1. 從桌面上，尋找**重設 Visual Studio 2015 實驗執行個體**。  
   
-2.  從命令列執行下列命令：  
+2. 從命令列執行下列命令：  
   
     ```  
     <VSSDK installation>\VisualStudioIntegration\Tools\Bin\CreateExpInstance.exe /Reset /VSInstance=14.0 /RootSuffix=Exp && PAUSE  
@@ -113,7 +108,7 @@ ms.locfileid: "51779303"
   
  您可以找到此延伸模組的.vsix 檔 FirstMenuCommand bin 目錄中。 具體來說，假設您已建立的發行組態，它會是：  
   
- **\<程式碼目錄 > \FirstMenuCommand\FirstMenuCommand\bin\Release\ FirstMenuCommand.vsix**  
+ **\<code directory>\FirstMenuCommand\FirstMenuCommand\bin\Release\ FirstMenuCommand.vsix**  
   
  若要安裝擴充功能，您的朋友必須關閉所有開啟的 Visual Studio 中，執行個體，然後按兩下.vsix 檔案時，會顯示**VSIX 安裝程式**。 檔案會複製到 **%LocalAppData%\Microsoft\VisualStudio\14.0\Extensions**目錄。  
   
@@ -124,19 +119,18 @@ ms.locfileid: "51779303"
   
 1. 您可以使用簡單的功能表命令的更多項目：  
   
-   1.  新增您自己的圖示：[新增圖示加入至功能表命令](../extensibility/adding-icons-to-menu-commands.md)  
+   1. 新增您自己的圖示：[將圖示加入至功能表命令](../extensibility/adding-icons-to-menu-commands.md)  
   
-   2.  變更功能表命令文字：[變更功能表命令的文字](../extensibility/changing-the-text-of-a-menu-command.md)  
+   2. 變更功能表命令文字：[變更功能表命令的文字](../extensibility/changing-the-text-of-a-menu-command.md)  
   
-   3.  將功能表捷徑新增至命令：[繫結至功能表項目的的鍵盤快速鍵](../extensibility/binding-keyboard-shortcuts-to-menu-items.md)  
+   3. 將功能表捷徑新增至命令：[將鍵盤快速鍵繫結至功能表項目](../extensibility/binding-keyboard-shortcuts-to-menu-items.md)  
   
-2. 新增不同類型的命令、 功能表和工具列：[擴充的功能表和命令](../extensibility/extending-menus-and-commands.md)  
+2. 新增不同類型的命令、 功能表和工具列：[擴充功能表和命令](../extensibility/extending-menus-and-commands.md)  
   
-3. 加入工具視窗，並擴充內建的 Visual Studio 工具視窗：[延伸和自訂工具 Windows](../extensibility/extending-and-customizing-tool-windows.md)  
+3. 加入工具視窗，並擴充內建的 Visual Studio 工具視窗：[擴充和自訂工具視窗](../extensibility/extending-and-customizing-tool-windows.md)  
   
-4. 加入 IntelliSense、 程式碼的建議，和其他功能，現有的程式碼編輯器：[擴充編輯器和語言服務](../extensibility/extending-the-editor-and-language-services.md)  
+4. 加入現有的程式碼編輯器的 IntelliSense、 程式碼的建議，以及其他功能：[擴充編輯器和語言服務](../extensibility/extending-the-editor-and-language-services.md)  
   
-5. 加入您的延伸模組中的選項和 [屬性] 頁面和使用者設定：[擴充屬性和 [屬性] 視窗](../extensibility/extending-properties-and-the-property-window.md)和[Extending User Settings and 選項](../extensibility/extending-user-settings-and-options.md)  
+5. 加入您的延伸模組的選項和 [屬性] 頁面和使用者設定：[擴充屬性和屬性視窗](../extensibility/extending-properties-and-the-property-window.md)和[擴充使用者設定和選項](../extensibility/extending-user-settings-and-options.md)  
   
-   其他類型的延伸模組需要多一點的工作，例如建立新的專案類型 ([擴充的專案](../extensibility/extending-projects.md))，建立新類型的編輯器 ([建立自訂編輯器和設計工具](../extensibility/creating-custom-editors-and-designers.md))，或在 獨立模式 shell 中實作您的延伸模組： [Visual Studio Isolated Shell](../extensibility/visual-studio-isolated-shell.md)
-
+   其他類型的延伸模組需要多一點的工作，例如建立新的專案類型 ([擴充的專案](../extensibility/extending-projects.md))，建立新類型的編輯器 ([建立自訂編輯器和設計工具](../extensibility/creating-custom-editors-and-designers.md))，或在 獨立模式 shell 實作您的延伸模組：[Visual Studio Isolated Shell](../extensibility/visual-studio-isolated-shell.md)

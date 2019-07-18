@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f1522b2567c05a9c3a61091813a8b5e18315433f
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 4ec56ae4345405cfc704a97ec624f9c2e4d96a5b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54863444"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62967907"
 ---
 # <a name="how-to-populate-documents-with-data-from-a-database"></a>HOW TO：資料庫中的資料填入文件
 
@@ -36,11 +36,11 @@ ms.locfileid: "54863444"
 
 ### <a name="to-populate-a-document-with-data-from-a-database"></a>以資料庫的資料填入文件
 
-1.  在 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 中開啟 Word 文件層級專案，同時在設計工具中開啟文件。
+1. 在 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 中開啟 Word 文件層級專案，同時在設計工具中開啟文件。
 
-2.  開啟**Zdroje dat**視窗，並從資料庫建立資料來源。 如需詳細資訊，請參閱 <<c0> [ 新增連線](../data-tools/add-new-connections.md)。
+2. 開啟**Zdroje dat**視窗，並從資料庫建立資料來源。 如需詳細資訊，請參閱 <<c0> [ 新增連線](../data-tools/add-new-connections.md)。
 
-3.  將您想要的欄位拖曳**Zdroje dat**文件視窗。
+3. 將您想要的欄位拖曳**Zdroje dat**文件視窗。
 
 內容控制項已加入文件。 內容控制項的類型取決於您選取的欄位資料類型。 如需詳細資訊，請參閱 <<c0> [ 內容控制項](../vsto/content-controls.md)。
 
@@ -50,19 +50,19 @@ ms.locfileid: "54863444"
 
 除了控制項之外，下列與資料相關的物件會自動加入專案：
 
--   封裝連接到資料庫之資料表的具類型資料集。 如需詳細資訊，請參閱 < [Visual Studio 中的資料集工具](../data-tools/dataset-tools-in-visual-studio.md)。
+- 封裝連接到資料庫之資料表的具類型資料集。 如需詳細資訊，請參閱 < [Visual Studio 中的資料集工具](../data-tools/dataset-tools-in-visual-studio.md)。
 
--   將控制項連接至具類型資料集的 <xref:System.Windows.Forms.BindingSource>。 如需詳細資訊，請參閱 < [BindingSource 元件概觀](/dotnet/framework/winforms/controls/bindingsource-component-overview)。
+- 將控制項連接至具類型資料集的 <xref:System.Windows.Forms.BindingSource>。 如需詳細資訊，請參閱 < [BindingSource 元件概觀](/dotnet/framework/winforms/controls/bindingsource-component-overview)。
 
--   連接至資料庫的具類型資料集的 TableAdapter。 如需詳細資訊，請參閱 <<c0> [ 建立和設定 Tableadapter](../data-tools/create-and-configure-tableadapters.md)。
+- 連接至資料庫的具類型資料集的 TableAdapter。 如需詳細資訊，請參閱 <<c0> [ 建立和設定 Tableadapter](../data-tools/create-and-configure-tableadapters.md)。
 
--   TableAdapterManager，這用來協調資料集內若要啟用階層式更新的資料表配置器。 如需詳細資訊，請參閱 <<c0> [ 階層式更新](../data-tools/hierarchical-update.md)並[TableAdapterManager 參考](../data-tools/fill-datasets-by-using-tableadapters.md#tableadaptermanager-reference)。
+- TableAdapterManager，這用來協調資料集內若要啟用階層式更新的資料表配置器。 如需詳細資訊，請參閱 <<c0> [ 階層式更新](../data-tools/hierarchical-update.md)並[TableAdapterManager 參考](../data-tools/fill-datasets-by-using-tableadapters.md#tableadaptermanager-reference)。
 
 當您執行專案時，控制項會顯示資料來源中的第一筆記錄。 您可以使用 <xref:System.Windows.Forms.BindingSource>，讓使用者捲動資料列。
 
 ### <a name="to-scroll-through-the-records"></a>捲動資料列
 
--   使用 <xref:System.Windows.Forms.BindingSource> 方法，如 <xref:System.Windows.Forms.BindingSource.MoveNext%2A> 和 <xref:System.Windows.Forms.BindingSource.MovePrevious%2A>。
+- 使用 <xref:System.Windows.Forms.BindingSource> 方法，如 <xref:System.Windows.Forms.BindingSource.MoveNext%2A> 和 <xref:System.Windows.Forms.BindingSource.MovePrevious%2A>。
 
 如需有關如何將更新傳送至具類型資料集和資料庫的資訊，請參閱[How to:從主控制項的資料更新資料來源](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)。
 

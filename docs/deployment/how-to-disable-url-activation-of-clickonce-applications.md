@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 26fdadf92fa94efe0a08fdf090e5a295e2f65096
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: MTE95
+ms.openlocfilehash: 6841b8a91cec24f467f6e3f684cbb27e25c9fa63
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54999973"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62899345"
 ---
 # <a name="how-to-disable-url-activation-of-clickonce-applications"></a>HOW TO：停用 ClickOnce 應用程式的 URL 啟動
 
@@ -29,19 +29,19 @@ ms.locfileid: "54999973"
 
 這項技術僅適用於安裝在使用者電腦上的 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式，其來自 Web 伺服器。 此技術不得用於僅限線上使用的應用程式，其只能使用 URL 啟動。 如需僅限線上使用及已安裝應用程式之間差異的詳細資訊，請參閱[選擇 ClickOnce 部署策略](../deployment/choosing-a-clickonce-deployment-strategy.md)。
 
-此程序會使用 Windows 軟體開發套件 (SDK) 工具 MageUI.exe。 如需有關這項工具的詳細資訊，請參閱 < [MageUI.exe (Manifest Generation and Editing Tool，Graphical Client)](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client)。 您也可以執行使用 Visual Studio 這個程序。
+此程序會使用 Windows 軟體開發套件 (SDK) 工具 MageUI.exe。 如需有關這項工具的詳細資訊，請參閱 < [MageUI.exe (圖形用戶端、資訊清單產生和編輯工具)](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client)。 您也可以執行使用 Visual Studio 這個程序。
 
 ## <a name="procedure"></a>程序
 
 ### <a name="to-disable-url-activation-for-your-application"></a>若要停用應用程式的 URL 啟用
 
-1.  開啟 MageUI.exe 中的部署資訊清單。 如果您尚未建立一個，請依照下列中的步驟[逐步解說：手動部署 ClickOnce 應用程式](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)。
+1. 開啟 MageUI.exe 中的部署資訊清單。 如果您尚未建立一個，請依照下列中的步驟[逐步解說：手動部署 ClickOnce 應用程式](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)。
 
-2.  選取 [部署選項] 索引標籤。
+2. 選取 [部署選項] 索引標籤。
 
-3.  清除 [安裝後自動執行應用程式] 核取方塊。
+3. 清除 [安裝後自動執行應用程式] 核取方塊。
 
-4.  儲存並簽署該資訊清單。
+4. 儲存並簽署該資訊清單。
 
 ## <a name="see-also"></a>另請參閱
 

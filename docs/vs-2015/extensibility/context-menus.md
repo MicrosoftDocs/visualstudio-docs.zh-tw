@@ -1,26 +1,21 @@
 ---
 title: 操作功能表 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - context menus
 ms.assetid: 44fd9e6a-6d42-4aba-80ba-f37fa0070f1d
 caps.latest.revision: 13
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: efd4e1c80b9af2a0d73730f0bd7d741cd877fb07
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 9baab8ef64fa1952eff138165f608e25960c8cfd
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51796840"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68184274"
 ---
 # <a name="context-menus"></a>操作功能表
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,4 +28,3 @@ ms.locfileid: "51796840"
 ## <a name="see-also"></a>另請參閱  
  [開發舊版語言服務](../extensibility/internals/developing-a-legacy-language-service.md)   
  [擴充功能表和命令](../extensibility/extending-menus-and-commands.md)
-

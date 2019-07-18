@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7bfbdb2605f4db86afe3f8f2195a004ab1eea775
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 5e7f82f667fffec09894ab65e277cea09d137a9b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56597448"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62826705"
 ---
 # <a name="how-to-add-listobject-controls-to-worksheets"></a>HOW TO：將 ListObject 控制項加入工作表
   您可以新增<xref:Microsoft.Office.Tools.Excel.ListObject>Microsoft Office Excel 工作表在設計階段，並在執行階段在文件層級專案中的控制項。
@@ -37,51 +37,51 @@ ms.locfileid: "56597448"
 
   如需詳細資訊<xref:Microsoft.Office.Tools.Excel.ListObject>控制項，請參閱[ListObject 控制項](../vsto/listobject-control.md)。
 
-##  <a name="designtime"></a> 在設計階段加入 ListObject 控制項
+## <a name="designtime"></a> 在設計階段加入 ListObject 控制項
  有數種方式可以新增<xref:Microsoft.Office.Tools.Excel.ListObject>控制項加入文件層級專案在設計階段中工作表：從在 Excel 中、 從 Visual Studio**工具箱**，以及從**Zdroje dat**視窗。
 
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
 ### <a name="to-use-the-ribbon-in-excel"></a>使用 Excel 中的功能區
 
-1.  在 [插入]  索引標籤上，按一下 [表格]  群組中的 [表格] 。
+1. 在 [插入]  索引標籤上，按一下 [表格]  群組中的 [表格] 。
 
-2.  選取您要包含在清單中的一或多個儲存格，然後按一下 [確定] 。
+2. 選取您要包含在清單中的一或多個儲存格，然後按一下 [確定] 。
 
 #### <a name="to-use-the-toolbox"></a>使用工具箱
 
-1.  從 [工具箱]  的 [Excel 控制項] 索引標籤中，將 <xref:Microsoft.Office.Tools.Excel.ListObject> 拖曳至工作表。
+1. 從 [工具箱]  的 [Excel 控制項] 索引標籤中，將 <xref:Microsoft.Office.Tools.Excel.ListObject> 拖曳至工作表。
 
      [加入 ListObject 控制項]  對話方塊隨即出現。
 
-2.  選取您要包含在清單中的一或多個儲存格，然後按一下 [確定] 。
+2. 選取您要包含在清單中的一或多個儲存格，然後按一下 [確定] 。
 
      如果您不想保留預設名稱，您可以在 [屬性]  視窗中變更名稱。
 
 #### <a name="to-use-the-data-sources-window"></a>使用資料來源視窗
 
-1.  開啟 [資料來源]  視窗並為您的專案建立資料來源。 如需詳細資訊，請參閱 <<c0> [ 新增連線](../data-tools/add-new-connections.md)。
+1. 開啟 [資料來源]  視窗並為您的專案建立資料來源。 如需詳細資訊，請參閱 <<c0> [ 新增連線](../data-tools/add-new-connections.md)。
 
-2.  將資料表從 [資料來源]  視窗拖曳至您的工作表。
+2. 將資料表從 [資料來源]  視窗拖曳至您的工作表。
 
      繫結至資料的 <xref:Microsoft.Office.Tools.Excel.ListObject> 控制項隨即加入工作表。 如需詳細資訊，請參閱 <<c0> [ 資料繫結和 Windows Form](/dotnet/framework/winforms/data-binding-and-windows-forms)。
 
-##  <a name="runtimedoclevel"></a> 在文件層級專案中的執行階段加入 ListObject 控制項
+## <a name="runtimedoclevel"></a> 在文件層級專案中的執行階段加入 ListObject 控制項
  您可以新增<xref:Microsoft.Office.Tools.Excel.ListObject>在執行階段動態控制項。 如此可讓您建立主控制項，以回應事件。 當工作表關閉時，動態建立的清單物件不會保存為工作表中的主控制項。 如需詳細資訊，請參閱 <<c0> [ 將控制項加入 Office 文件，在執行階段](../vsto/adding-controls-to-office-documents-at-run-time.md)。
 
 #### <a name="to-add-a-listobject-control-to-a-worksheet-programmatically"></a>以程式設計方式將 ListObject 控制項加入工作表
 
-1.  在 <xref:Microsoft.Office.Tools.Excel.Worksheet.Startup> 的 `Sheet1`事件處理常式中插入下列程式碼，將 <xref:Microsoft.Office.Tools.Excel.ListObject> 控制項加入儲存格 **A1** 至 **A4**。
+1. 在 <xref:Microsoft.Office.Tools.Excel.Worksheet.Startup> 的 `Sheet1`事件處理常式中插入下列程式碼，將 <xref:Microsoft.Office.Tools.Excel.ListObject> 控制項加入儲存格 **A1** 至 **A4**。
 
      [!code-csharp[Trin_VstcoreHostControlsExcel#2](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#2)]
      [!code-vb[Trin_VstcoreHostControlsExcel#2](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#2)]
 
-##  <a name="runtimeaddin"></a> 在 VSTO 增益集專案中的執行階段加入 ListObject 控制項
+## <a name="runtimeaddin"></a> 在 VSTO 增益集專案中的執行階段加入 ListObject 控制項
  您可以利用程式設計方式，在 VSTO 增益集專案中，將 <xref:Microsoft.Office.Tools.Excel.ListObject> 控制項加入任何開啟中的工作表。 當工作表儲存並關閉時，動態建立的清單物件不會保存為工作表中的主控制項。 如需詳細資訊，請參閱 <<c0> [ 擴充 Word 文件和 VSTO 增益集在執行階段中的 Excel 活頁簿](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)。
 
 #### <a name="to-add-a-listobject-control-to-a-worksheet-programmatically"></a>以程式設計方式將 ListObject 控制項加入工作表
 
-1.  下列程式碼會產生以開啟的工作表為基礎的工作表主項目，然後將 <xref:Microsoft.Office.Tools.Excel.ListObject> 控制項加入儲存格 **A1** 至 **A4**。
+1. 下列程式碼會產生以開啟的工作表為基礎的工作表主項目，然後將 <xref:Microsoft.Office.Tools.Excel.ListObject> 控制項加入儲存格 **A1** 至 **A4**。
 
      [!code-csharp[Trin_Excel_Dynamic_Controls#8](../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/ThisAddIn.cs#8)]
      [!code-vb[Trin_Excel_Dynamic_Controls#8](../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/ThisAddIn.vb#8)]

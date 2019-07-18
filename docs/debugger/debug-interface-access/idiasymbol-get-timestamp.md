@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 726c452abe8f435ab05e3e6a5606b21fb8d9eba1
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 91f75ab56c8c34e2c58e0f0560422021299c9540
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56634236"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "64793707"
 ---
 # <a name="idiasymbolgettimestamp"></a>IDiaSymbol::get_timeStamp
 擷取基礎的可執行檔的時間戳記。
@@ -39,7 +39,7 @@ HRESULT get_timeStamp ( 
  如果成功，則傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。
 
 > [!NOTE]
->  傳回值為`S_FALSE`表示此屬性不適用於符號。
+> 傳回值為`S_FALSE`表示此屬性不適用於符號。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

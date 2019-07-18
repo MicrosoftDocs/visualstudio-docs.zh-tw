@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugExpressionEvaluator interface
 ms.assetid: 0636d8c3-625a-49fa-94b6-516f22b7e1bc
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f74579ba14a99cde35bb12b2a4d320c73802ad75
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: a7606f01d180c0c26ad0e2f82e5d83a7256e3d64
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56706570"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66325618"
 ---
 # <a name="idebugexpressionevaluator"></a>IDebugExpressionEvaluator
 > [!IMPORTANT]

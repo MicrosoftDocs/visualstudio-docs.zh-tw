@@ -1,26 +1,21 @@
 ---
-title: IDebugGenericParamField::GetOwner |Microsoft Docs
-ms.custom: ''
+title: IDebugGenericParamField::GetOwner | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - IDebugGenericParamField::GetOwner
 ms.assetid: c7f6d166-a69e-40c4-bd0b-1a1fdf9aaacf
 caps.latest.revision: 10
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: f616030516794fcc4de805ed9add94753e2bc5f0
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 6e78ee30b1fb351e2c2c5682d372a9aa9704caf3
+ms.sourcegitcommit: 0cd282a7584b9bfd4df7882f8fdf3ad8a270e219
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51759190"
+ms.lasthandoff: 07/01/2019
+ms.locfileid: "62421131"
 ---
 # <a name="idebuggenericparamfieldgetowner"></a>IDebugGenericParamField::GetOwner
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -101,4 +96,3 @@ Error:
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md)
-

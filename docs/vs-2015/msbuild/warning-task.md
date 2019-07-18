@@ -19,23 +19,22 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 010ab0d98fa384a7b3a5d18e54a8409d5aa165b2
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: adbddc2fb36e5036e535dfc1049945187fe14ed0
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54771916"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62558485"
 ---
 # <a name="warning-task"></a>警告工作
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 在建置期間，根據評估的條件陳述式來記錄警告。  
   
 ## <a name="parameters"></a>參數  
  下表說明 `Warning` 工作的參數。  
   
-|參數|描述|  
+|參數|說明|  
 |---------------|-----------------|  
 |`Code`|選擇性的 `String` 參數。<br /><br /> 要與警告建立關聯的警告碼。|  
 |`File`|選擇性的 `String` 參數。<br /><br /> 指定相關檔案 (如果有的話)。 如果未提供任何檔案，則會使用包含 Warning 工作的檔案。|  

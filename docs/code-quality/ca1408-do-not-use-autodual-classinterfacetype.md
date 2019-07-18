@@ -18,11 +18,11 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: c811c7e2b6ba06c716179469c8b038fd26b3b38a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55908010"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62546029"
 ---
 # <a name="ca1408-do-not-use-autodual-classinterfacetype"></a>CA1408:不要使用 AutoDual ClassInterfaceType
 

@@ -7,17 +7,17 @@ helpviewer_keywords:
 - files [Visual Studio], opening and saving
 - editors [Visual Studio SDK], file persistence
 ms.assetid: f71898ad-335f-4c43-a177-4da87078afd1
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7ca83cb6d2913e0c0a91f4a6e874640ae57c7708
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 77a3417bc15bc9c4c6149b4e77dc4fdcebe5cd6e
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56602425"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66314925"
 ---
 # <a name="opening-and-saving-project-items"></a>開啟和儲存專案項目
 當您新增新的專案類型時，您必須管理的開啟和儲存您的專案檔案中[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]整合式的開發環境 (IDE)。 下列主題討論不同的方法，來開啟和儲存檔案。
@@ -39,7 +39,7 @@ ms.locfileid: "56602425"
 
  提供逐步指示，來指定如何啟用 IDE 中您的專案類型開啟檔案的標準編輯器。
 
-- [如何：開啟編輯器開啟的文件](../../extensibility/how-to-open-editors-for-open-documents.md)
+- [如何：針對開啟的文件開啟編輯器](../../extensibility/how-to-open-editors-for-open-documents.md)
 
  提供逐步指示，開啟專案特定的編輯器開啟的檔案。
 

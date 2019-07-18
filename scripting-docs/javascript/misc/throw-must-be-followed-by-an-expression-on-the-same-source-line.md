@@ -14,12 +14,12 @@ ms.assetid: b03b7747-01a1-40c6-af80-a1dd70bc5781
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5d2989b2ebb5cf0095736d5667f85a807558c495
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 4c8ed951fb30b84f114f8f44a60e94b88f0f1d0f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56841139"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63005935"
 ---
 # <a name="throw-must-be-followed-by-an-expression-on-the-same-source-line"></a>throw 必須接著一運算式，且於同一行程式碼
 您已使用`throw`關鍵字，但未遵循它與運算式相同的原始程式行上。 A`throw`陳述式是由兩個部分所組成：`throw`關鍵字，後面接著將會擲回運算式。 例如:   
@@ -34,7 +34,7 @@ if (denominator == 0) {
   
 ### <a name="to-correct-this-error"></a>更正這個錯誤  
   
--   請確定`throw`關鍵字，並擲回運算式出現在同一行。  
+- 請確定`throw`關鍵字，並擲回運算式出現在同一行。  
   
 ## <a name="see-also"></a>另請參閱  
  [Error 物件](../../javascript/reference/error-object-javascript.md)   

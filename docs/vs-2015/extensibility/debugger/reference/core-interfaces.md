@@ -1,26 +1,21 @@
 ---
 title: 核心介面 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - debugging [Debugging SDK], core interfaces
 ms.assetid: 666b9116-8550-4bdd-bc15-55fc57de87df
 caps.latest.revision: 25
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: ea9a80bf469d0555b07d48ca48b158027c90abb7
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 94703f13eba0c58aad24597bc65beeea862e79e5
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51764793"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68179220"
 ---
 # <a name="core-interfaces"></a>核心介面
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -72,7 +67,7 @@ ms.locfileid: "51764793"
   
 - Visual Studio (VS)  
   
-##  <a name="Breakpoints"></a> 中斷點  
+## <a name="Breakpoints"></a> 中斷點  
  有關這些介面實作] 和 [追蹤的中斷點。  
   
 |介面|藉由將|描述|  
@@ -93,7 +88,7 @@ ms.locfileid: "51764793"
 |[IEnumDebugBoundBreakpoints2](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2.md)|DE|表示列舉類型的繫結中斷點集合。|  
 |[IEnumDebugErrorBreakpoints2](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2.md)|DE|代表一組可能未繫結至記憶體位置的中斷點列舉型別。|  
   
-##  <a name="Contexts"></a> 內容  
+## <a name="Contexts"></a> 內容  
  這些介面代表各種內正在偵錯之程式的內容。  
   
 |介面|藉由將|描述|  
@@ -107,7 +102,7 @@ ms.locfileid: "51764793"
 |[IDebugStackFrame3](../../../extensibility/debugger/reference/idebugstackframe3.md)|DE|表示在中斷點或例外狀況的堆疊框架內容。|  
 |[IEnumDebugCodeContexts2](../../../extensibility/debugger/reference/ienumdebugcodecontexts2.md)|DE|代表一組程式碼內容的列舉型別。|  
   
-##  <a name="CoreServer"></a> 核心伺服器  
+## <a name="CoreServer"></a> 核心伺服器  
  這些介面代表一個程式正在偵錯的電腦。 藉由實作這些[!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)]但可以呼叫到偵錯引擎。  
   
 |介面|藉由將|描述|  
@@ -115,7 +110,7 @@ ms.locfileid: "51764793"
 |[IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md)|VS|提供存取權的連接埠和連接埠提供者，以及電腦的相關資訊。|  
 |[IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md)|VS|代表[IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md) ，支援遠端偵錯。|  
   
-##  <a name="DebugEngines"></a> 偵錯引擎  
+## <a name="DebugEngines"></a> 偵錯引擎  
  這些介面代表偵錯引擎和其相關聯的事件。  
   
 |介面|藉由將|描述|  
@@ -127,7 +122,7 @@ ms.locfileid: "51764793"
 |[IDebugProgramEngines2](../../../extensibility/debugger/reference/idebugprogramengines2.md)|DE PS|代表會處理多個偵錯引擎的程式節點。|  
 |[IDebugQueryEngine2](../../../extensibility/debugger/reference/idebugqueryengine2.md)|DE|提供了 SDM 取自介面來偵錯引擎的執行緒、 程式或堆疊框架的方式。|  
   
-##  <a name="Documents"></a> 文件  
+## <a name="Documents"></a> 文件  
  這些介面代表文件 （來源檔案） 和其相關聯的項目。  
   
 |介面|藉由將|描述|  
@@ -142,7 +137,7 @@ ms.locfileid: "51764793"
 |[IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md)|VS DE|代表 DE 所提供的文字文件 (衍生自[IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md))，提供實際的文字。|  
 |[IDebugDocumentTextEvents2](../../../extensibility/debugger/reference/idebugdocumenttextevents2.md)|DE|若要指定記憶體中的原始程式檔的變更傳送 DE。|  
   
-##  <a name="Events"></a> 事件  
+## <a name="Events"></a> 事件  
  這些介面代表 DE 與工作階段的偵錯管理員 (SDM) 之間傳送的所有事件。  
   
 |介面|藉由將|描述|  
@@ -187,16 +182,16 @@ ms.locfileid: "51764793"
 |[IDebugThreadDestroyEvent2](../../../extensibility/debugger/reference/idebugthreaddestroyevent2.md)|DE|執行緒已被終結時傳送 DE。|  
 |[IDebugThreadNameChangedEvent2](../../../extensibility/debugger/reference/idebugthreadnamechangedevent2.md)|DE|當執行緒變更其名稱時，由 DE 傳送。|  
   
-##  <a name="Expressions"></a> 運算式  
+## <a name="Expressions"></a> 運算式  
  這些介面代表在特定內容中評估的運算式。  
   
-|介面|藉由將|描述|  
+|介面|藉由將|說明|  
 |---------------|--------------------|-----------------|  
 |[IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md)|DE|表示要評估的運算式。 取自[IDebugExpressionContext2](../../../extensibility/debugger/reference/idebugexpressioncontext2.md)介面。|  
 |[IDebugExpressionContext2](../../../extensibility/debugger/reference/idebugexpressioncontext2.md)|DE|表示用來評估運算式的內容。 取自[IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)介面。|  
 |[IDebugExpressionEvaluationCompleteEvent2](../../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2.md)|DE|DE 非同步運算式評估完成時傳送。|  
   
-##  <a name="Memory"></a> 記憶體  
+## <a name="Memory"></a> 記憶體  
  這些介面代表記憶體中的位元組的序列。  
   
 |介面|藉由將|描述|  
@@ -204,7 +199,7 @@ ms.locfileid: "51764793"
 |[IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md)|DE|代表可讀取或寫入的記憶體中的位元組序列。|  
 |[IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)|DE|表示在記憶體中的一連串的位元組的位置。|  
   
-##  <a name="Modules"></a> 模組  
+## <a name="Modules"></a> 模組  
  這些介面代表一個模組，可對應至可執行檔或。DLL 檔案。  
   
 |介面|藉由將|描述|  
@@ -215,7 +210,7 @@ ms.locfileid: "51764793"
 |[IDebugSourceServerModule](../../../extensibility/debugger/reference/idebugsourceservermodule.md)|DE|表示包含在 PDB 檔案中的來源伺服器資訊。|  
 |[IEnumDebugModules2](../../../extensibility/debugger/reference/ienumdebugmodules2.md)|DE|代表一組已知的模組列舉型別[IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)。|  
   
-##  <a name="Ports"></a> 連接埠  
+## <a name="Ports"></a> 連接埠  
  這些介面代表連接埠和連接埠提供者。  
   
 |介面|藉由將|描述|  
@@ -235,10 +230,10 @@ ms.locfileid: "51764793"
 |[IEnumDebugPorts2](../../../extensibility/debugger/reference/ienumdebugports2.md)|VS PS|列舉型別代表一組連接埠。|  
 |[IEnumDebugPortSuppliers2](../../../extensibility/debugger/reference/ienumdebugportsuppliers2.md)|VS|代表一組連接埠提供者的列舉型別。|  
   
-##  <a name="Processes"></a> 處理程序  
+## <a name="Processes"></a> 處理程序  
  這些介面代表處理程序，包含一或多個程式的單一可執行檔。  
   
-|介面|藉由將|描述|  
+|介面|藉由將|說明|  
 |---------------|--------------------|-----------------|  
 |[IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)|PS，DE|表示執行的電腦的處理序。|  
 |[IDebugProcess3](../../../extensibility/debugger/reference/idebugprocess3.md)|PS，DE|代表積極支援程序偵錯 (用來取代步驟，繼續執行，和執行方法[IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)介面)。|  
@@ -247,7 +242,7 @@ ms.locfileid: "51764793"
 |[IDebugProcessEx2](../../../extensibility/debugger/reference/idebugprocessex2.md)|PS|表示必須追蹤哪些工作階段已附加的處理程序。|  
 |[IEnumDebugProcesses2](../../../extensibility/debugger/reference/ienumdebugprocesses2.md)|PS|表示一組連接埠上的處理序的列舉。|  
   
-##  <a name="Programs"></a> 程式  
+## <a name="Programs"></a> 程式  
  這些介面代表程式，這不一定對應到實體的可執行檔或模組執行的邏輯單元。  
   
 |介面|藉由將|描述|  
@@ -266,7 +261,7 @@ ms.locfileid: "51764793"
 |[IDebugProviderProgramNode2](../../../extensibility/debugger/reference/idebugproviderprogramnode2.md)|DE PS|代表[IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) ，可以跨封送處理介面執行緒或處理序界限。|  
 |[IEnumDebugPrograms2](../../../extensibility/debugger/reference/ienumdebugprograms2.md)|DE PS|代表一組程式列舉。|  
   
-##  <a name="Properties"></a> 屬性  
+## <a name="Properties"></a> 屬性  
  這些介面代表屬性，與特定的內容，通常的運算式評估結果相關聯的值。  
   
 |介面|藉由將|描述|  
@@ -280,17 +275,17 @@ ms.locfileid: "51764793"
 |[IEnumDebugPropertyInfo2](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md)|DE|透過一組代表列舉[DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md)結構會描述變數、 暫存器、 參數和運算式。|  
 |[IEnumDebugReferenceInfo2](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2.md)|DE|透過一組代表列舉[DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md)結構。|  
   
-##  <a name="StackFrames"></a> 堆疊框架  
+## <a name="StackFrames"></a> 堆疊框架  
  這些介面代表堆疊框架，在內容中的中斷點或例外狀況發生。  
   
-|介面|藉由將|描述|  
+|介面|藉由將|說明|  
 |---------------|--------------------|-----------------|  
 |[IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)|DE|表示內容中的中斷點或例外狀況發生。|  
 |[IDebugStackFrame3](../../../extensibility/debugger/reference/idebugstackframe3.md)|DE|代表[IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)此運算子可以處理攔截例外狀況。|  
 |[IEnumCodePaths2](../../../extensibility/debugger/reference/ienumcodepaths2.md)|DE|透過一組代表列舉[CODE_PATH](../../../extensibility/debugger/reference/code-path.md)結構而指定的函式呼叫來達到特定的堆疊框架的順序。|  
 |[IEnumDebugFrameInfo2](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md)|DE|透過一組代表列舉[FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md)結構描述的堆疊框架。|  
   
-##  <a name="Threads"></a> 執行緒  
+## <a name="Threads"></a> 執行緒  
  這些介面代表執行緒和其相關聯的事件。  
   
 |介面|藉由將|描述|  
@@ -301,10 +296,10 @@ ms.locfileid: "51764793"
 |[IDebugThreadNameChangedEvent2](../../../extensibility/debugger/reference/idebugthreadnamechangedevent2.md)|DE|當執行緒變更其名稱時，由 DE 傳送。|  
 |[IEnumDebugThreads2](../../../extensibility/debugger/reference/ienumdebugthreads2.md)|DE|代表一組執行緒列舉型別。|  
   
-##  <a name="TypeVisualizers"></a> 類型視覺化檢視  
+## <a name="TypeVisualizers"></a> 類型視覺化檢視  
  這些介面類型視覺化檢視提供支援。 這些介面通常是由運算式評估工具實作。  
   
-|介面|藉由將|描述|  
+|介面|藉由將|說明|  
 |---------------|--------------------|-----------------|  
 |[IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)|EE|表示要呈現給類型視覺化檢視的位元組陣列。|  
 |[IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)|EE|提供方法來取得要傳遞至類型視覺化檢視資料的存取權。|  
@@ -313,4 +308,3 @@ ms.locfileid: "51764793"
 ## <a name="see-also"></a>另請參閱  
  [API 參考](../../../extensibility/debugger/reference/api-reference-visual-studio-debugging.md)   
  [建立自訂的偵錯引擎](../../../extensibility/debugger/creating-a-custom-debug-engine.md)
-

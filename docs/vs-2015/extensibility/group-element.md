@@ -1,27 +1,22 @@
 ---
 title: 群組項目 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - VSCT XML schema elements, Groups
 - Groups element (VSCT XML schema)
 ms.assetid: 69faee18-cbf4-470a-b952-c1919c583df8
 caps.latest.revision: 10
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: dd9dda00c88a0702c6ce1efc4ff5816ac5e1d498
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 35c332682b609f6620f96cc8eb8499cca921d399
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51817252"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68204271"
 ---
 # <a name="group-element"></a>Group 項目
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,10 +36,10 @@ ms.locfileid: "51817252"
   
 ### <a name="attributes"></a>屬性  
   
-|屬性|描述|  
+|屬性|說明|  
 |---------------|-----------------|  
-|guid|必要。 GUID/識別碼命令識別碼的 GUID。|  
-|id|必要。 GUID/識別碼的命令識別項的識別碼。|  
+|guid|必要項。 GUID/識別碼命令識別碼的 GUID。|  
+|id|必要項。 GUID/識別碼的命令識別項的識別碼。|  
 |priority|選擇性。 數值，指定的優先權。|  
 |條件|選擇性。 請參閱[條件式屬性](../extensibility/vsct-xml-schema-conditional-attributes.md)。|  
   
@@ -71,4 +66,3 @@ ms.locfileid: "51817252"
   
 ## <a name="see-also"></a>另請參閱  
  [Visual Studio 命令表檔案 (.Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
-

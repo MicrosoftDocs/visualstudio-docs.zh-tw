@@ -13,16 +13,15 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 17cfc810bbe8cfa303620b19c49941ba9085a849
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 10ce4bd59567d7d055dd107dd05358d994d22c36
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54779355"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68160873"
 ---
 # <a name="visual-studio-commands"></a>Visual Studio 命令
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
-
 
 Visual Studio 的命令可讓您透過 [命令]  視窗、[即時運算]  視窗，或 [尋找/命令]  方塊來叫用命令。 在每種情況下，大於符號 (`>`) 都用來表示應執行命令，而不是搜尋或偵錯作業。
 
@@ -42,7 +41,7 @@ Visual Studio 的命令可讓您透過 [命令]  視窗、[即時運算]  視窗
 
  下列命令需要引數和/或參數。
 
-|命令名稱：|說明|
+|命令名稱：|描述|
 |------------------|-----------------|
 |[加入現有項目](../../ide/reference/add-existing-item-command.md)|將現有檔案新增至目前的方案，並開啟它。|
 |[加入現有專案](../../ide/reference/add-existing-project-command.md)|將現有專案新增至目前的方案。|
@@ -78,5 +77,5 @@ Visual Studio 的命令可讓您透過 [命令]  視窗、[即時運算]  視窗
 |[切換中斷點](../../ide/reference/toggle-breakpoint-command.md)|根據中斷點目前的狀態以及在檔案中的目前位置，將其開啟或關閉。|
 |[監看式命令](../../ide/reference/watch-command.md)|建立並開啟 [監看式]  視窗的指定執行個體。|
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
  [命令視窗](../../ide/reference/command-window.md)[尋找/命令方塊](../../ide/find-command-box.md) [Visual Studio 命令別名](../../ide/reference/visual-studio-command-aliases.md)

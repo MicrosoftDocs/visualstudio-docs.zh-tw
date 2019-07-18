@@ -1,23 +1,23 @@
 ---
-title: HOW TO：針對服務進行疑難排解 |Microsoft Docs
+title: 作法：針對服務進行疑難排解 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - services, troubleshooting
 ms.assetid: 001551da-4847-4f59-a0b2-fcd327d7f5ca
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b943322fe6172eaaf196cc3f842da9ec0838d8cc
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 669b8880e3fe378b05cc258bf473d74d0e5401b6
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56702391"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66324821"
 ---
-# <a name="how-to-troubleshoot-services"></a>HOW TO：針對服務進行疑難排解
+# <a name="how-to-troubleshoot-services"></a>作法：針對服務進行疑難排解
 有數個常見的問題，當您嘗試取得服務時，可能會發生：
 
 - 服務未向[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。
@@ -52,9 +52,9 @@ if (log == null) return;
 
 2. 使用服務類型而不是介面類型，當您呼叫 GetService。 要求的服務時[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]， <xref:Microsoft.VisualStudio.Shell.Package> GUID 擷取型別。 如果存在下列條件，則不會找到服務：
 
-   1.  介面型別會傳遞至 GetService，而不是服務類型。
+   1. 介面型別會傳遞至 GetService，而不是服務類型。
 
-   2.  GUID 不是明確指派給介面。 因此，系統會建立物件所需的預設 GUID。
+   2. GUID 不是明確指派給介面。 因此，系統會建立物件所需的預設 GUID。
 
 3. 請務必決定位置的服務要求的 VSPackage。 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 站台的 VSPackage 之後建構該項目,，以及呼叫之前<xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A>。
 

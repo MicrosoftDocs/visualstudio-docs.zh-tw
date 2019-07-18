@@ -6,17 +6,17 @@ helpviewer_keywords:
 - tool windows, registering managed
 - tool windows, registering
 ms.assetid: 8c8c4a24-3da4-497b-9db2-0ddd7cfbfdd2
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8ef5cc84ea1fdce8e297d8b5bff6636065b3d044
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 2ae53481b773cfdad5d4ac70f90202fcfd9d1ad4
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56702742"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66334316"
 ---
 # <a name="register-a-tool-window"></a>註冊工具視窗
 您可以註冊您使用的工具視窗<xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute>和<xref:Microsoft.VisualStudio.Shell.ProvideToolWindowVisibilityAttribute>。

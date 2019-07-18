@@ -10,16 +10,16 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6db375422e4a8d21d9b82cac82a07fed45e7d279
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
+ms.openlocfilehash: 0b725d0ee49590062ebdde9a1ef27f838678ccf5
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56796812"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62540790"
 ---
 # <a name="c-core-guidelines-checker-reference"></a>C + + Core Guidelines 檢查工具參考
 
-本章節列出 c + + 核心指南檢查工具警告。 如需程式碼分析的資訊，請參閱 < [/analyze （程式碼分析）](/cpp/build/reference/analyze-code-analysis)和[快速入門：C/c + + 程式碼分析](../code-quality/quick-start-code-analysis-for-c-cpp.md)。
+本章節列出 c + + 核心指南檢查工具警告。 如需程式碼分析的資訊，請參閱 < [/analyze （程式碼分析）](/cpp/build/reference/analyze-code-analysis)和[快速入門：適用於 C 的程式碼分析 /C++](../code-quality/quick-start-code-analysis-for-c-cpp.md)。
 
 > [!NOTE]
 > 某些警告屬於一個以上的群組，且並非所有的警告有完整的參考主題。
@@ -107,12 +107,9 @@ ms.locfileid: "56796812"
 
 [C26435 SINGLE_VIRTUAL_SPECIFICATION](c26435.md)函式 '%符號 %' 應指定剛好一個 'virtual'、 'override' 或 'final'。 請參閱[C.128:虛擬函式應指定剛好一個虛擬的覆寫，或最後一個](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md)。
 
-
 [C26436 NEED_VIRTUAL_DTOR](C26436.md)具有虛擬函式的 ' %符號 %' 的類型必須是公用虛擬或受保護非虛擬解構函式。 請參閱[c + + Core Guidelines C.35](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#c35-a-base-class-destructor-should-be-either-public-and-virtual-or-protected-and-nonvirtual)。
 
-
 [C26443 NO_EXPLICIT_DTOR_OVERRIDE](c26443.md)覆寫解構函式不應使用明確的 'override' virtual' 的規範。 請參閱[C.128:虛擬函式應指定剛好一個虛擬的覆寫，或最後一個](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md)。
-
 
 ## <a name="type-group"></a>型別群組
 
@@ -129,7 +126,7 @@ ms.locfileid: "56796812"
 [C26440 DECLARE_NOEXCEPT](C26440.md)可以宣告為函式 '%符號 %' `noexcept`。 請參閱[c + + Core Guidelines F.6](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#f6-if-your-function-may-not-throw-declare-it-noexcept)。
 
 [C26447 DONT_THROW_IN_NOEXCEPT](c26447.md)函式宣告**noexcept**但 calls 函式可能擲回例外狀況。
-請參閱[c + + Core Guidelines:F.6:如果您的函式可能不會擲回，將它宣告 noexcept](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#f6-if-your-function-may-not-throw-declare-it-noexcept)。
+請參閱[C++核心的指導方針：F.6:如果您的函式可能不會擲回，將它宣告 noexcept](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#f6-if-your-function-may-not-throw-declare-it-noexcept)。
 
 ## <a name="concurrency-group"></a>並行存取群組
 
@@ -183,7 +180,7 @@ ms.locfileid: "56796812"
 
 ## <a name="bounds-group"></a>界限群組
 
-[C26446 USE_GSL_AT](c26446.md)偏好使用`gsl::at()`而不是未檢查的註標運算子。 請參閱[c + + Core Guidelines:Bounds.4:不使用標準程式庫函式和類型沒有檢查界限](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#probounds-bounds-safety-profile)。
+[C26446 USE_GSL_AT](c26446.md)偏好使用`gsl::at()`而不是未檢查的註標運算子。 請參閱[C++核心的指導方針：Bounds.4:不使用標準程式庫函式和類型沒有檢查界限](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#probounds-bounds-safety-profile)。
 
 [C26481 NO_POINTER_ARITHMETIC](C26481.md)。
 請勿使用指標算術。 請改用 span。 請參閱[c + + 核心指南 Bounds.1](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-bounds)
@@ -197,15 +194,14 @@ ms.locfileid: "56796812"
 ## <a name="gsl-group"></a>GSL 群組
 
 [C26445 NO_SPAN_REF](c26445.md)的參考`gsl::span`或`std::string_view`可能表示存留期問題。
-請參閱[c + + 核心指南 GSL.view:檢視](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#gslview-views)
+請參閱[C++核心 GSL.view 指導方針：檢視](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#gslview-views)
 
-[C26446 USE_GSL_AT](c26446.md)偏好使用`gsl::at()`而不是未檢查的註標運算子。 請參閱[c + + Core Guidelines:Bounds.4:不使用標準程式庫函式和類型沒有檢查界限](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#probounds-bounds-safety-profile)。
+[C26446 USE_GSL_AT](c26446.md)偏好使用`gsl::at()`而不是未檢查的註標運算子。 請參閱[C++核心的指導方針：Bounds.4:不使用標準程式庫函式和類型沒有檢查界限](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#probounds-bounds-safety-profile)。
 
-[C26448 USE_GSL_FINALLY](c26448.md)請考慮使用`gsl::finally`如果是最後一個動作。 請參閱[c + + Core Guidelines:GSL.util:公用程式](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-utilities)。
+[C26448 USE_GSL_FINALLY](c26448.md)請考慮使用`gsl::finally`如果是最後一個動作。 請參閱[C++核心的指導方針：GSL.util:公用程式](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-utilities)。
 
 [C26449 NO_SPAN_FROM_TEMPORARY](c26449.md) 
- `gsl::span`或`std::string_view`從 temporary 所建立也會失效時 temporary 已經失效。 請參閱[c + + Core Guidelines:GSL.view:檢視](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#gslview-views)。
-
+ `gsl::span`或`std::string_view`從 temporary 所建立也會失效時 temporary 已經失效。 請參閱[C++核心的指導方針：GSL.view:檢視](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#gslview-views)。
 
 ## <a name="deprecated-warnings"></a>已被取代的警告
 

@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - SccDirQueryInfo function
 ms.assetid: 459e2d99-573d-47c4-b834-6d82c5e14162
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cc42301901c6642a54dcb6b84de52a4acc198b4a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: e19b65ea4b3c4cd87b1f9d6a3db9e6f8ae64d16d
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56720415"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66332235"
 ---
 # <a name="sccdirqueryinfo-function"></a>SccDirQueryInfo 函式
 此函式會檢查完整的目錄清單及其目前狀態。
@@ -66,7 +66,7 @@ LPLONG  lpStatus
  目錄已重新命名為檢查目錄是否在原始檔控制中，藉由查詢是否有對應的專案之前，IDE 會使用此函式。 如果目錄不是原始檔控制之下，IDE 可以提供適當的警告給使用者。
 
 > [!NOTE]
->  如果原始檔控制外掛程式選擇實作一個或多個狀態的值，未實作的 bits 應該設定為零。
+> 如果原始檔控制外掛程式選擇實作一個或多個狀態的值，未實作的 bits 應該設定為零。
 
 ## <a name="see-also"></a>另請參閱
 - [原始檔控制外掛程式 API 函式](../extensibility/source-control-plug-in-api-functions.md)

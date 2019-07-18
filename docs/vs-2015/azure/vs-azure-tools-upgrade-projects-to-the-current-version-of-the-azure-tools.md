@@ -1,8 +1,8 @@
 ---
-title: 如何將專案升級至目前版本的 Azure tools |Microsoft Docs
-description: 了解如何在 Visual Studio 中的將 Azure 專案升級至最新版的 Azure 工具
+title: 如何將專案升級為目前版本的 Azure Tools | Microsoft Docs
+description: 了解如何在 Visual Studio 中將 Azure 專案升級至目前版本的 Azure Tools
 author: ghogen
-manager: douge
+manager: jillfra
 assetId: 1d64070a-078d-468a-87f4-e6715de6475f
 ms.prod: visual-studio-dev14
 ms.technology: vs-azure
@@ -11,37 +11,36 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/18/2016
 ms.author: ghogen
-ms.openlocfilehash: c5fb70f2dd09338dd2e2f6b01cb60bf2be0cdbdd
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: 27ab6619a4d36fc105a3b8a668a31a33ae4c2a43
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51001986"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62793730"
 ---
-# <a name="how-to-upgrade-projects-to-the-current-version-of-the-azure-tools-for-visual-studio"></a>如何將專案升級到最新版本的 Azure Tools for Visual Studio
+# <a name="how-to-upgrade-projects-to-the-current-version-of-the-azure-tools-for-visual-studio"></a>如何將專案升級為目前版本的 Azure Tools for Visual Studio
 ## <a name="overview"></a>總覽
-安裝最新版的 Azure 工具 （或先前的版本比 1.6 版本更新） 之後，使用 Azure Tools 所建立的任何專案發行之前 1.6 當您開啟自動升級 (第 2011 年 11 月)。 如果您使用這些工具的 1.6 (第 2011 年 11 月) 版本建立的專案，您仍然必須安裝該版本，您可以在較舊版本中開啟這些專案，並稍後決定是否要將它們升級。
+安裝目前版本的 Azure Tools (或是比 1.6 版更新的舊版) 之後，任何使用 1.6 版 (2011 年 11 月) 以前的 Azure Tools 所建立的專案，在您開啟時會立即自動升級。 如果您使用這些工具的 1.6 版 (2011 年 11 月) 建立專案，且仍然安裝該版本，您可以在較舊版本中開啟這些專案，稍後再決定是否要將它們升級。
 
-## <a name="how-your-project-changes-when-you-upgrade-it"></a>當您在升級時，您的專案如何變更
-如果專案自動升級，或您指定您想要將它升級，您的專案已修改為使用目前版本的某些組件，而且某些屬性也會變更，如本節所述。 如果您的專案需要其他變更，才能與較新版本的工具相容，您必須手動進行這些變更。
+## <a name="how-your-project-changes-when-you-upgrade-it"></a>專案升級時有何變更
+如果專案自動升級，或您指定要將它升級，您的專案會修改為使用目前版本的某些組件，某些屬性也會變更，如本節所述。 如果您的專案需要其他變更，才能與較新版本的工具相容，您必須手動進行這些變更。
 
-* Web 角色的 web.config 檔案和背景工作角色的 app.config 檔案更新為參考較新版的 Microsoft.WindowsAzure.Diagnostics.DiagnosticMonitoirTraceListener.dll。
-* Microsoft.WindowsAzure.StorageClient.dll、 Microsoft.WindowsAzure.Diagnostics.dll 和 Microsoft.WindowsAzure.ServiceRuntime.dll 組件會升級到新的版本。
-* 已儲存在 Azure 專案檔 (.ccproj) 的發行設定檔會在移至另一個檔案，副檔名為.azurePubXml**發佈**子目錄。
-* 發行設定檔中的某些屬性會更新以支援新的和變更功能。 **AllowUpgrade**被**DeploymentReplacementMethod**因為您可以同時或以累加方式更新部署的雲端服務。
-* 屬性**UseIISExpressByDefault**加入並設定為 false，使用於偵錯的 web 伺服器不會自動將從網際網路資訊服務 (IIS) 變更為 IIS Express。 IIS Express 是由較新版本的工具建立之專案的預設 web 伺服器。
-* 如果 Azure 快取裝載於一或多個專案的角色，當專案升級時，會變更的服務組態 （.cscfg 檔） 與服務定義 （.csdef 檔） 中的某些屬性。 如果專案使用 Azure 快取 NuGet 封裝，專案會升級至最新版本的封裝。 您應該開啟 web.config 檔案，並確認用戶端設定的升級程序期間已妥善維護。 如果您加入 Azure 快取的用戶端組件的參考，而不需使用 NuGet 套件，不會更新這些組件;您必須手動更新這些參考到新的版本。
+* Web 角色的 web.config 檔案和背景工作角色的 app.config 檔案會更新為參考較新版的 Microsoft.WindowsAzure.Diagnostics.DiagnosticMonitorTraceListener.dll。
+* Microsoft.WindowsAzure.StorageClient.dll、Microsoft.WindowsAzure.Diagnostics.dll 和 Microsoft.WindowsAzure.ServiceRuntime.dll 組件會升級至新的版本。
+* 已儲存在 Azure 專案檔 (.ccproj) 的發佈設定檔，將會移到 **Publish** 子目錄中的另一個檔案，副檔名為 .azurePubXml。
+* 發佈設定檔中的某些屬性會更新為支援新的和變更的功能。 **AllowUpgrade** 會取代為 **DeploymentReplacementMethod**，因為您可以同時或以累加方式更新已部署的雲端服務。
+* 屬性 **UseIISExpressByDefault** 會加入並設為 false，使得用於偵錯的 Web 伺服器不會自動從網際網路資訊服務 (IIS) 切換為 IIS Express。 IIS Express 是由較新版本的工具所建立之專案的預設 Web 伺服器。
+* 如果 Azure 快取裝載於一或多個專案的角色，當專案升級時，服務組態 (.cscfg 檔) 和服務定義 (.csdef 檔) 中的某些屬性會變更。 如果專案使用 Azure 快取 NuGet 封裝，專案會升級到最新版的封裝。 您應該開啟 web.config 檔案，並確認用戶端組態在升級程序期間已妥善維護。 如果您加入 Azure 快取用戶端組件的參考，而未使用 NuGet 封裝，則不會更新這些組件。您必須手動更新對於新版本的參考。
 
 > [!IMPORTANT]
-> 針對F#專案，使其參考這些組件的較新版本，您必須手動更新 Azure 組件的參考。
+> 在 F# 專案中，您必須手動更新 Azure 組件的參考，使它們參考這些組件的較新版本。
 > 
 > 
 
 ### <a name="how-to-upgrade-an-azure-project-to-the-current-release"></a>如何將 Azure 專案升級至目前版本
-1. 將目前版本的 Azure tools 安裝到您想要用於升級的專案的 Visual Studio 安裝，然後開啟您想要升級的專案。 如果專案使用 Azure Tools 建立以前 1.6 (2011 年 11 月)，專案會自動升級為最新版本。 如果專案建立使用 2011 年 11 月版本和仍然安裝該版本，該版本的專案隨即開啟。
-2. 在 方案總管 中，開啟專案節點的捷徑功能表，選擇 **屬性**，然後選擇**應用程式**出現的對話方塊索引標籤。
+1. 將目前版本的 Azure tools 安裝到您想要用於升級專案的 Visual Studio 安裝，然後開啟您想要升級的專案。 如果專案是使用 1.6 版 (2011 年 11 月) 以前的 Azure Tools 建立，專案會自動升級至目前版本。 如果專案是使用 2011 年 11 月版本建立，且仍然安裝該版本，則會在該版本中開啟專案。
+2. 在 [方案總管] 中，開啟專案節點的捷徑功能表，選擇 [屬性]，然後在出現的對話方塊中選擇 [應用程式] 索引標籤。
    
-    **應用程式**索引標籤會顯示與專案相關聯的工具版本。 如果出現目前版本的 Azure 工具，已經升級專案。 如果您已經安裝比索引標籤顯示時，較新版本的工具**升級**按鈕隨即顯示。
-3. 選擇**升級** 按鈕，將專案升級為目前版本的工具。
-4. 建置專案，並再解決任何錯誤所產生的 API 變更。 如需如何修改您的程式碼，新的版本資訊，請參閱特定 API 的文件。
-
+    [應用程式]  索引標籤會顯示與專案相關聯的工具版本。 如果出現目前版本的 Azure Tools，表示已經升級專案。 如果您已安裝的工具版本比索引標籤顯示的版本更新，則會出現 [升級]  按鈕。
+3. 選擇 [升級]  按鈕，將專案升級為目前版本的工具。
+4. 建置專案，然後解決因為 API 變更而造成的任何錯誤。 如需如何針對新版本來修改程式碼的相關資訊，請參閱特定 API 的文件。

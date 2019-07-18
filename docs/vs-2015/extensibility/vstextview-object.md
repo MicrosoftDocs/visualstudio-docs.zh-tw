@@ -1,14 +1,9 @@
 ---
 title: VSTextView 物件 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 f1_keywords:
 - VSTextView
 helpviewer_keywords:
@@ -17,13 +12,13 @@ helpviewer_keywords:
 ms.assetid: 78272ddc-9718-4c65-a94e-a44a2e8d54f4
 caps.latest.revision: 9
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 5815adbdc05685999d7dcd64139ebfd29b8776b9
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 22e4d4cdf1e5ca610dbdb067f8195fb730139c3d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51765091"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65690691"
 ---
 # <a name="vstextview-object"></a>VSTextView 物件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +29,7 @@ ms.locfileid: "51765091"
   
 |介面|描述|  
 |---------------|-----------------|  
-|[IDropSource](http://msdn.microsoft.com/library/windows/desktop/ms690071)|標準的 OLE 介面。|  
+|[IDropSource](/windows/desktop/api/oleidl/nn-oleidl-idropsource)|標準的 OLE 介面。|  
 |<xref:Microsoft.VisualStudio.OLE.Interop.IDropTarget>|標準的 OLE 介面。|  
 |<xref:Microsoft.VisualStudio.OLE.Interop.IObjectWithSite>|標準的 OLE 介面。|  
 |<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>|標準的 OLE 介面。|  
@@ -45,7 +40,6 @@ ms.locfileid: "51765091"
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsThreadSafeTextView>|從不同的執行緒中執行檢視上的作業。|  
   
 ## <a name="see-also"></a>另請參閱  
- [圖形編輯](http://msdn.microsoft.com/en-us/f08872bd-fd9c-4e36-8cf2-a2a2622ef986)   
+ [圖形編輯](https://msdn.microsoft.com/f08872bd-fd9c-4e36-8cf2-a2a2622ef986)   
  [VSTextBuffer 物件](../extensibility/vstextbuffer-object.md)   
  [使用舊版 API 存取文字檢視](../extensibility/accessing-thetext-view-by-using-the-legacy-api.md)
-

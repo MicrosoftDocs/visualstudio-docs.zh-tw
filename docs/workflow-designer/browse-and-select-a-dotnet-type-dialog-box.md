@@ -11,24 +11,24 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: d7cbe3b0593b3a71c65667e78d7b0284cacc4538
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: f48a30e11e28daef2d1803646d2b495bcb718b84
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55942189"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62993187"
 ---
 # <a name="browse-and-select-a-net-type-dialog-box"></a>瀏覽並選取 .NET 類型對話方塊
 
-在 **屬性**視窗、 對話方塊，或是如變數設計工具，當您選取的設計工具**瀏覽型別**從清單中的資料型別，是**瀏覽並選取.NET 類型** （簡稱為 「 型別瀏覽器 」） 的對話方塊。 在這個對話方塊中，您可以從組件與專案的樹狀檢閱中選擇型別。
+在 **屬性**視窗、 對話方塊，或是如變數設計工具，當您選取的設計工具**瀏覽型別**從清單中的資料型別，是**瀏覽並選取.NET 類型** （簡稱為 「 型別瀏覽器 」） 的對話方塊。 在這個對話方塊中，您可以從組件與專案的樹狀檢視中選擇型別。
 
 有幾個使用者案例會採用這個對話方塊，包括下列：
 
--   設定變數或引數的型別時。
+- 設定變數或引數的型別時。
 
--   為泛型活動選取型別時。
+- 為泛型活動選取型別時。
 
--   在 <xref:System.Activities.Statements.TryCatch> 活動上加入 catch 時。
+- 在 <xref:System.Activities.Statements.TryCatch> 活動上加入 catch 時。
 
 > [!NOTE]
 > 型別瀏覽器可以顯示 Visual Basic 不規則陣列型別，而不是多維陣列型別。 請參閱[不規則陣列](http://go.microsoft.com/fwlink/?LinkId=195226)並[多維陣列](http://go.microsoft.com/fwlink/?LinkId=195227)如需詳細資訊。
@@ -37,19 +37,19 @@ ms.locfileid: "55942189"
 
 ### <a name="to-select-a-value-or-reference-type-from-the-type-browser"></a>若要從型別瀏覽器選取值或參考型別
 
-1.  在 **型別名稱**方塊中，輸入您想要使用的型別名稱。
+1. 在 **型別名稱**方塊中，輸入您想要使用的型別名稱。
 
-2.  執行下列任一步驟：
+2. 執行下列任一步驟：
 
-    -   當您想要使用的型別名稱出現在樹狀目錄中**型別名稱**方塊中，按兩下要選取它的型別。
+    - 當您想要使用的型別名稱出現在樹狀目錄中**型別名稱**方塊中，按兩下要選取它的型別。
 
-    -   輸入中的字元足以**型別名稱**方塊來唯一識別您想要使用，然後按 enter 鍵來選取類型的類型
+    - 輸入中的字元足以**型別名稱**方塊來唯一識別您想要使用，然後按 enter 鍵來選取類型的類型
 
 ### <a name="to-select-a-generic-type-from-the-type-browser"></a>若要從型別瀏覽器選取泛型型別
 
-1.  在 [**型別名稱**] 方塊中，輸入您想要使用的類型的名稱。
+1. 在 [**型別名稱**] 方塊中，輸入您想要使用的類型的名稱。
 
-2.  當您想要使用的型別名稱出現在樹狀目錄中**型別名稱**方塊中，按一下以選取它會造成下拉式清單方塊的型別會出現。
+2. 當您想要使用的型別名稱出現在樹狀目錄中**型別名稱**方塊中，按一下以選取它會造成下拉式清單方塊的型別會出現。
 
      選取您想要以關閉的泛型，從下拉式清單方塊中，然後按一下 使用類型**確定**。
 
@@ -65,9 +65,9 @@ ms.locfileid: "55942189"
 
 例如: 
 
-1.  鍵入**作業**比對<xref:System.OperationCanceledException>而非<xref:System.InvalidOperationException>。 若要符合 <xref:System.InvalidOperationException>，一開始請輸入 System.I 或 Invalid。
+1. 鍵入**作業**比對<xref:System.OperationCanceledException>而非<xref:System.InvalidOperationException>。 若要符合 <xref:System.InvalidOperationException>，一開始請輸入 System.I 或 Invalid。
 
-2.  鍵入**泛型**比對<xref:System.GenericUriParser>但不是輸入<xref:System.Collections.Generic>命名空間。 要搜尋中的型別<xref:System.Collections.Generic>命名空間中，輸入命名空間的完整的名稱。
+2. 鍵入**泛型**比對<xref:System.GenericUriParser>但不是輸入<xref:System.Collections.Generic>命名空間。 要搜尋中的型別<xref:System.Collections.Generic>命名空間中，輸入命名空間的完整的名稱。
 
 ## <a name="selecting-a-service-contract-using-the-type-browser-dialog"></a>使用型別瀏覽器對話方塊選取服務合約
 

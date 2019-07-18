@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugDocumentText2::GetText
 ms.assetid: f8c15a58-da77-473e-a721-7a094e306c63
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3eb4eae82dd11d58734ed114886c9ec121b60b69
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: d2906c4421c570542579d0326167cd6ecbafb395
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56678354"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66330657"
 ---
 # <a name="idebugdocumenttext2gettext"></a>IDebugDocumentText2::GetText
 從指定之位置的文件中擷取的文字。
@@ -42,22 +45,18 @@ int GetText(
 );
 ```
 
-#### <a name="parameters"></a>參數
-`pos`
+## <a name="parameters"></a>參數
+`pos`\
+[in]A [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)結構，表示要擷取文字的位置。
 
- [in]A [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)結構，表示要擷取文字的位置。
+`cMaxChars`\
+[in]要擷取的文字字元的數目上限。
 
-`cMaxChars`
+`pText`\
+[in、 out]要被填入所需的文字緩衝區的指標。 這個緩衝區必須至少包含`cMaxChars`寬字元數。
 
- [in]要擷取的文字字元的數目上限。
-
-`pText`
-
- [in、 out]要被填入所需的文字緩衝區的指標。 這個緩衝區必須至少包含`cMaxChars`寬字元數。
-
-`pcNumChars`
-
- [out]傳回實際擷取的字元的數。
+`pcNumChars`\
+[out]傳回實際擷取的字元的數。
 
 ## <a name="return-value"></a>傳回值
 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

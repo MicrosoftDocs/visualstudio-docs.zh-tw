@@ -6,17 +6,20 @@ helpviewer_keywords:
 - IDebugFunctionObject2::CreateObject
 - CreateObject
 ms.assetid: 148de615-941e-4b64-ab11-75b692aae465
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7004e57aaf659b90b5323105c6d2c2b80baa4d0f
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 87d1c2cd71b57136e26a2bc30004547dc4b8dee5
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56723119"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66313417"
 ---
 # <a name="idebugfunctionobject2createobject"></a>IDebugFunctionObject2::CreateObject
 建立會使用指定評估旗標設定和逾時值的建構函式的物件。
@@ -45,30 +48,24 @@ int CreateObject (
 );
 ```
 
-#### <a name="parameters"></a>參數
- `pConstructor`
+## <a name="parameters"></a>參數
+`pConstructor`\
+[in][IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md)物件，表示要建立之物件的建構函式。
 
- [in][IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md)物件，表示要建立之物件的建構函式。
+`dwArgs`\
+[in]中的參數數目`pArg`陣列。 表示傳遞至建構函式的參數數目。
 
- `dwArgs`
+`pArgs`\
+[in]陣列[IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)物件，表示的參數傳遞至建構函式。
 
- [in]中的參數數目`pArg`陣列。 表示傳遞至建構函式的參數數目。
+`dwEvalFlags`\
+[in]從旗標的組合[EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md)列舉，指定要如何進行評估。
 
- `pArgs`
+`dwTimeout`\
+[in]最大時間 （毫秒），這個方法返回之前等候。 使用**無限**無限期等候。
 
- [in]陣列[IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)物件，表示的參數傳遞至建構函式。
-
- `dwEvalFlags`
-
- [in]從旗標的組合[EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md)列舉，指定要如何進行評估。
-
- `dwTimeout`
-
- [in]最大時間 （毫秒），這個方法返回之前等候。 使用**無限**無限期等候。
-
- `ppObject`
-
- [out]傳回**IDebugObject**代表新建立的物件。
+`ppObject`\
+[out]傳回**IDebugObject**代表新建立的物件。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

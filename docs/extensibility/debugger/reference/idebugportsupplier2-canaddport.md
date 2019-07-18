@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPortSupplier2::CanAddPort
 ms.assetid: 41f69e0a-e82c-473d-8b7a-0c40fc5730fc
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 19eb4d11ab6e67384a119f11bf070a27159c1676
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 37f4fd246c376d08ab3ca006c543b44c4db2d73d
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56696112"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66340284"
 ---
 # <a name="idebugportsupplier2canaddport"></a>IDebugPortSupplier2::CanAddPort
 確認連接埠提供者可以新增新的連接埠。

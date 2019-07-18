@@ -8,17 +8,17 @@ helpviewer_keywords:
 - QUERYCHANGESFUNC callback function
 - QUERYCHANGESDATA structure
 ms.assetid: 9d383e2c-eee1-4996-973a-0652d4c5951c
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dfa7ed62276e63e80158a86165b59e367d7a88f4
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 8ac0003d26296a25659debbab3352e4e37cbf2ec
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56715592"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66334402"
 ---
 # <a name="querychangesfunc"></a>QUERYCHANGESFUNC
 這是所使用的回呼函式[SccQueryChanges](../extensibility/sccquerychanges-function.md)操作列舉的檔案名稱集合，並判斷每個檔案的狀態。
@@ -52,7 +52,7 @@ typedef BOOL (*QUERYCHANGESFUNC)(
 |SCC_I_OPERATIONCANCELED|停止處理。|
 |SCC_E_xxx|任何適當的 SCC 錯誤應該停止處理。|
 
-##  <a name="LinkQUERYCHANGESDATA"></a> QUERYCHANGESDATA 結構
+## <a name="LinkQUERYCHANGESDATA"></a> QUERYCHANGESDATA 結構
  傳入的每個檔案結構看起來如下所示：
 
 ```cpp

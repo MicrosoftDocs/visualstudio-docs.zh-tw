@@ -7,17 +7,17 @@ helpviewer_keywords:
 - MPF projects
 - managed package framework, creating projects
 ms.assetid: 926de536-eead-415b-9451-f1ddc8c44630
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bdefaf3dfbce124ecfee9ab6f5c0479fe12930f8
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: a36dcb0ba8b55b6f3dece44e0fe7872e8696404f
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56627762"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66324639"
 ---
 # <a name="using-the-managed-package-framework-to-implement-a-project-type-c"></a>使用受控套件架構實作專案類型 (C#)
 Managed Package Framework (MPF) 提供 C# 類別，您可以使用，或繼承自實作您自己的專案類型。 MPF 實作許多介面的 Visual Studio 必須是專案類型提供，讓您自由地專注於實作您的專案類型的特定項目。
@@ -27,9 +27,9 @@ Managed Package Framework (MPF) 提供 C# 類別，您可以使用，或繼承�
 
  若要將此專案新增至您的 VSPackage 方案中，執行下列作業：
 
-1.  下載 MPFProj 檔案，才能*MPFProjectDir*。
+1. 下載 MPFProj 檔案，才能*MPFProjectDir*。
 
-2.  在  *MPFProjectDir*\Dev10\Src\CSharp\ProjectBase.file，變更下列區塊：
+2. 在  *MPFProjectDir*\Dev10\Src\CSharp\ProjectBase.file，變更下列區塊：
 
 ```
 <!-- Provide a default value for $(ProjectBasePath) -->
@@ -38,11 +38,11 @@ Managed Package Framework (MPF) 提供 C# 類別，您可以使用，或繼承�
   </PropertyGroup>
 ```
 
-1.  建立 VSPackage 專案。
+1. 建立 VSPackage 專案。
 
-2.  卸載 VSPackage 專案。
+2. 卸載 VSPackage 專案。
 
-3.  編輯 VSPackage.csproj 檔案，加上下列區塊在其他`<Import>`區塊：
+3. 編輯 VSPackage.csproj 檔案，加上下列區塊在其他`<Import>`區塊：
 
 ```
 <Import Project="MPFProjectDir\Dev10\Src\CSharp\ProjectBase.files" />
@@ -54,17 +54,17 @@ Managed Package Framework (MPF) 提供 C# 類別，您可以使用，或繼承�
   </PropertyGroup>
 ```
 
-1.  儲存專案。
+1. 儲存專案。
 
-2.  關閉並重新開啟 VSPackage 方案中。
+2. 關閉並重新開啟 VSPackage 方案中。
 
-3.  重新開啟 VSPackage 專案。 您應該會看到一個名為 ProjectBase 的新目錄。
+3. 重新開啟 VSPackage 專案。 您應該會看到一個名為 ProjectBase 的新目錄。
 
-4.  新增下列參考加入 VSPackage 專案：
+4. 新增下列參考加入 VSPackage 專案：
 
      Microsoft.Build.Tasks.4.0
 
-5.  建置專案。
+5. 建置專案。
 
 ## <a name="hierarchy-classes"></a>階層架構類別
  下表摘要說明 MPFProj 支援專案階層架構的類別。 如需詳細資訊，請參閱 <<c0> [ 階層和選取範圍](../../extensibility/internals/hierarchies-and-selection.md)。

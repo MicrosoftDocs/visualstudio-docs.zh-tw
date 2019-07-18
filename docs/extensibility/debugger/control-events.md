@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], events
 ms.assetid: 0fc63484-5fb6-4887-9ea4-1905b459ca9d
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8fbe2f3c3835c55fffefe4692c4e8779b48e9c5e
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 0c79abb6ca0912ba0a8872d87c830ba455836595
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56683384"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66312445"
 ---
 # <a name="control-events"></a>控制項事件
 您必須在受控制的程式執行期間傳送事件。 所有事件都會使用在傳送[IDebugEvent2](../../extensibility/debugger/reference/idebugevent2.md)介面，並且具有會要求您實作的屬性[IDebugEvent2::GetAttributes](../../extensibility/debugger/reference/idebugevent2-getattributes.md)方法。

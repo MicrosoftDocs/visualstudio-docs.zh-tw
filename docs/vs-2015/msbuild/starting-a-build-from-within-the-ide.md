@@ -11,17 +11,16 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b5176a3a8c5575521c3adaea13f1f1b862010217
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 94685a2b06b14c232d9e1f79a1d7440e1ceb765b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54788422"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68161335"
 ---
 # <a name="starting-a-build-from-within-the-ide"></a>從 IDE 中啟動組建
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 自訂專案系統必須使用 <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildManagerAccessor> 來啟動組建。 本主題說明上述情況的原因，並概述相關程序。  
   
 ## <a name="parallel-builds-and-threads"></a>平行組建和執行緒  

@@ -1,35 +1,30 @@
 ---
 title: 運算式評估內容 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - expression evaluation, context
 ms.assetid: a2fd3758-09bd-45ae-8ecc-2d276c0036ba
 caps.latest.revision: 12
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: d42d5f7ef2d2514a8352abd87ef3cc46c922c044
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 377609cb9f971b667872c198a53b45a6288f2c15
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51751224"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68152785"
 ---
 # <a name="expression-evaluation-context"></a>運算式評估內容
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 在 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]偵錯**運算式評估內容**:  
   
--   表示運算式評估的內容。 通常，評估內容會對應至在其中評估變數、 參數、 函數和方法的語彙範圍。 比方說，堆疊框架相關聯的運算式評估內容將提供的內容，來評估區域變數、 方法參數和類別成員 （如果適用）。  
+- 表示運算式評估的內容。 通常，評估內容會對應至在其中評估變數、 參數、 函數和方法的語彙範圍。 比方說，堆疊框架相關聯的運算式評估內容將提供的內容，來評估區域變數、 方法參數和類別成員 （如果適用）。  
   
--   當程式已經在中斷點停止時，就會存在。 運算式本身是資料結構，表示剖析的運算式，供繫結和指定的內容內評估。  
+- 當程式已經在中斷點停止時，就會存在。 運算式本身是資料結構，表示剖析的運算式，供繫結和指定的內容內評估。  
   
      在詳細資料，運算式會建立使用[ParseText](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md)方法。 評估運算式時，它會產生可列印的字串，包含名稱和類型的變數或引數，而其值。 在 [監看式] 視窗或 IDE 的 [區域變數] 視窗中，會顯示這個字串。  
   
@@ -38,4 +33,3 @@ ms.locfileid: "51751224"
 ## <a name="see-also"></a>另請參閱  
  [運算式評估介面](../../extensibility/debugger/reference/expression-evaluation-interfaces.md)   
  [偵錯工具內容](../../extensibility/debugger/debugger-contexts.md)
-

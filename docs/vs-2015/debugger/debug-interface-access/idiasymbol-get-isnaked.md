@@ -1,14 +1,9 @@
 ---
 title: 'Idiasymbol:: Get_isnaked |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,18 +12,18 @@ ms.assetid: b16629dc-8e17-476b-9c7b-58e7277c61ed
 caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 8a0fea18234180bf2da2c2f82648d0e7155c49bb
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 64989ca10416ab2ad9606c94b3f3bc977f60c5ee
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51791406"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "65702352"
 ---
 # <a name="idiasymbolgetisnaked"></a>IDiaSymbol::get_isNaked
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-擷取指定函數是否有的旗標[naked](http://msdn.microsoft.com/library/69723241-05e1-439b-868e-20a83a16ab6d)屬性 （也就是該函式具有由編譯器新增任何初構和終解程式碼）。  
+擷取指定函數是否有的旗標[naked](https://msdn.microsoft.com/library/69723241-05e1-439b-868e-20a83a16ab6d)屬性 （也就是該函式具有由編譯器新增任何初構和終解程式碼）。  
   
 ## <a name="syntax"></a>語法  
   
@@ -46,18 +41,15 @@ HRESULT get_isNaked(
  如果成功，則傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。  
   
 > [!NOTE]
->  傳回值為`S_FALSE`表示此屬性不適用於符號。  
+> 傳回值為`S_FALSE`表示此屬性不適用於符號。  
   
 ## <a name="requirements"></a>需求  
   
 |需求|描述|  
 |-----------------|-----------------|  
 |標頭：|dia2.h|  
-|版本:|DIA SDK 8.0 版|  
+|版本:|DIA SDK v8.0|  
   
 ## <a name="see-also"></a>另請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [Naked 函式呼叫](http://msdn.microsoft.com/library/2a66847a-a43f-4541-a7be-c9f5f29b5fdb)
-
-
-
+ [Naked 函式呼叫](https://msdn.microsoft.com/library/2a66847a-a43f-4541-a7be-c9f5f29b5fdb)

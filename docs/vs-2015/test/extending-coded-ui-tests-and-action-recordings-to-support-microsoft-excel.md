@@ -8,12 +8,12 @@ ms.assetid: 6b0f72a4-70ca-4e55-b236-2ea1034fd8a7
 caps.latest.revision: 32
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4852dc5b65f00f7d298f5f1a15d39ff041022578
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: a85676fca972bb0d2d91f5ffd7c7cbf95bfc68c8
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54791988"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686395"
 ---
 # <a name="extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel"></a>擴充自動程式化 UI 測試和動作記錄以支援 Microsoft Excel
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ ms.locfileid: "54791988"
   從這篇[部落格文章 (英文)](http://go.microsoft.com/fwlink/?LinkID=185592) 取得範例。  
   
 > [!NOTE]
->  此範例主要搭配 Microsoft Excel 2010 使用。 此範例可搭配其他版本的 Microsoft Excel 使用，但目前不支援。  
+> 此範例主要搭配 Microsoft Excel 2010 使用。 此範例可搭配其他版本的 Microsoft Excel 使用，但目前不支援。  
   
 ## <a name="details-about-the-sample"></a>有關範例的詳細資料  
  下列各節將提供範例與其結構的相關資訊。  
@@ -51,7 +51,7 @@ ms.locfileid: "54791988"
 ### <a name="microsoft-excel-add-in-excelcodeduiaddinhelper"></a>Microsoft Excel 增益集：ExcelCodedUIAddinHelper  
  此專案包含在 Excel 處理序中執行的增益集。 請參閱[自動程式化 UI 測試的範例 Excel 增益集](../test/sample-excel-add-in-for-coded-ui-testing.md)，以概略認識增益集專案。  
   
- 如需詳細資訊，請參閱[逐步解說：建立您的第一個 Excel VSTO 增益集](http://msdn.microsoft.com/library/a855e2be-3ecf-4112-a7f5-ec0f7fad3b5f)。  
+ 如需詳細資訊，請參閱[逐步解說：建立 Excel 的第一個 VSTO 增益集](https://msdn.microsoft.com/library/a855e2be-3ecf-4112-a7f5-ec0f7fad3b5f)。  
   
 ### <a name="excel-ui-communication-exceluicommunicationhelper"></a>Excel UI 通訊：ExcelUIcommunicationHelper  
  此專案包含用來在自動程式碼 UI 測試架構和 Excel 之間傳遞資料的 `IExcelUICommunication` 介面和資訊類別。 如需詳細資訊，請參閱[範例 Excel Communicator 介面](../test/sample-excel-communicator-interface.md)。  
@@ -71,7 +71,7 @@ ms.locfileid: "54791988"
 ### <a name="testing-excel-with-the-sampletestproject"></a>使用 SampleTestProject 測試 Excel  
  您可以在提供的測試專案中執行測試 (該專案可能會使用您沒有的特定版本 Excel)，或是自行建立測試專案並自行記錄測試。 如需詳細資訊，請參閱[建立自動程式化 UI 測試](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate)。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestPropertyProvider>   
  <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyElement>   
  <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter>   

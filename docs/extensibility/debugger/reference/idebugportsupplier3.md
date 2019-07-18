@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPortSupplier3 interface
 ms.assetid: e458cd02-2370-4435-8953-17d7a60ce152
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ca7113a1b108713b5dd7cf0f17511cec39a1b8b6
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: b471e0799409e68b5a843e39975f54f2ce3b5bc5
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56695488"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66314167"
 ---
 # <a name="idebugportsupplier3"></a>IDebugPortSupplier3
 此介面可讓呼叫端判斷連接埠提供者是否可以保留連接埠 （寫入磁碟） 的偵錯工具的引動過程之間，然後以取得這些保留的連接埠清單。

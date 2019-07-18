@@ -20,11 +20,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1134ac538487487834b754407a3cc1a90175c56b
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526021"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62849943"
 ---
 # <a name="expressions-in-the-visual-studio-debugger"></a>Visual Studio 偵錯工具中的運算式
 當您在 [ **快速監看式** ] 對話方塊、[ **監看式** ] 視窗或 [ **即時運算** ] 視窗中輸入運算式時，都能使用 Visual Studio 偵錯工具所包含的運算式評估工具。 在 [ **中斷點** ] 視窗和偵錯工具中的其他許多地方，也都可以使用運算式評估工具。
@@ -118,7 +118,7 @@ int main()
 
 - 不支援`Sizeof` 運算子。
 
-## <a name="c---unsupported-expressions"></a>c# - 不支援的運算式
+## <a name="c---unsupported-expressions"></a>C# - 不支援的運算式
 
 ### <a name="dynamic-objects"></a>動態物件
 您可以在偵錯工具運算式中使用靜態設定類型為動態的變數。 當物件實作<xref:System.Dynamic.IDynamicMetaObjectProvider>評估監看式視窗中，節點會加入 動態檢視。 [動態檢視] 節點會顯示物件成員，但不允許編輯成員的值。
@@ -204,7 +204,7 @@ int main()
 
 - 命名空間或模組層級關鍵字，例如 `End Sub` 或 `Module`。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [C++ 中的格式規範](../debugger/format-specifiers-in-cpp.md)
 - [內容運算子 (C++)](../debugger/context-operator-cpp.md)
 - [C# 中的格式規範](../debugger/format-specifiers-in-csharp.md)

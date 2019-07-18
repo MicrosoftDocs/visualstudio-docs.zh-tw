@@ -6,17 +6,20 @@ f1_keywords:
 - PROCESS_INFO_FLAGS
 helpviewer_keywords:
 - PROCESS_INFO_FLAGS enumeration
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 42a596eb8d720a273d89586427232dcf833f8595
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: e0694d83409a492a1d950a17ac5e2298ba9b8578
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56696515"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66309393"
 ---
 # <a name="processinfoflags"></a>PROCESS_INFO_FLAGS
 
@@ -43,15 +46,19 @@ enum enum_PROCESS_INFO_FLAGS { 
 };
 ```
 
-## <a name="members"></a>成員
+## <a name="fields"></a>欄位
 
-PIFLAG_SYSTEM_PROCESS 表示程序是系統處理序。
+`PIFLAG_SYSTEM_PROCESS`\
+表示處理程序是系統處理序。
 
-PIFLAG_DEBUGGER_ATTACHED 指出處理序正在進行偵錯的偵錯工具。 它可能是[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]偵錯工具，或它可能是某些其他偵錯工具，例如 WinDbg。
+`PIFLAG_DEBUGGER_ATTACHED`\
+表示處理程序正在偵錯的偵錯工具。 它可能是[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]偵錯工具，或它可能是某些其他偵錯工具，例如 WinDbg。
 
-PIFLAG_PROCESS_STOPPED 表示程序已停止。 才有效`PIFLAG_DEBUGGER_ATTACHED`同時指定。 適用於 Visual Studio 2005 和更新版本。
+`PIFLAG_PROCESS_STOPPED`\
+表示處理程序已停止。 才有效`PIFLAG_DEBUGGER_ATTACHED`同時指定。 適用於 Visual Studio 2005 和更新版本。
 
-PIFLAG_PROCESS_RUNNING 指出處理序正在執行。 才有效`PIFLAG_DEBUGGER_ATTACHED`同時指定。 適用於 Visual Studio 2005 和更新版本。
+`PIFLAG_PROCESS_RUNNING`\
+表示處理序正在執行。 才有效`PIFLAG_DEBUGGER_ATTACHED`同時指定。 適用於 Visual Studio 2005 和更新版本。
 
 ## <a name="remarks"></a>備註
 

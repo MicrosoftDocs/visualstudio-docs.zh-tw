@@ -1,27 +1,22 @@
 ---
 title: 安裝 Isolated 的 Shell 應用程式 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Shell [Visual Studio], deploying shell-based applications
 - Visual Studio shell, deploying shell-based applications
 ms.assetid: 33416226-9083-41b5-b153-10d2bf35c012
 caps.latest.revision: 41
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 1ecec7963b66c20ef08d1e5f3f0917a66f885aa0
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 60862d631d93788f10c372310da9eb3d181943ef
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51796299"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63414535"
 ---
 # <a name="installing-an-isolated-shell-application"></a>安裝 Isolated 的 Shell 應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,13 +45,13 @@ ms.locfileid: "51796299"
   
 #### <a name="to-prepare-a-shell-application-for-msi-deployment"></a>若要準備 MSI 部署的殼層應用程式  
   
-1.  編輯您的方案中每個的.vsixmanifest 檔案。  
+1. 編輯您的方案中每個的.vsixmanifest 檔案。  
   
      在 `Identifier`項目，新增`InstalledByMSI`項目和`SystemComponent`項目，然後將其值設定為`true`。  
   
      這些項目可避免 VSIX 安裝程式嘗試從它們使用 [解除安裝安裝程式元件和使用者**擴充功能和更新**] 對話方塊。  
   
-2.  VSIX 資訊清單包含每個專案，編輯建置工作輸出的內容位置的安裝程式 MSI 檔案。 在組建輸出中，包含在 VSIX 資訊清單，但不建置.vsix 檔案。  
+2. VSIX 資訊清單包含每個專案，編輯建置工作輸出的內容位置的安裝程式 MSI 檔案。 在組建輸出中，包含在 VSIX 資訊清單，但不建置.vsix 檔案。  
   
 ## <a name="creating-an-msi-for-your-shell"></a>建立您的殼層中的 MSI  
  若要建置您的 MSI 套件，我們建議您使用[Windows Installer XML 工具組](http://go.microsoft.com/fwlink/?LinkId=82720)因為它提供更大的彈性比標準的安裝專案。  
@@ -90,7 +85,7 @@ ms.locfileid: "51796299"
   
 ##### <a name="to-set-the-layout-of-shell-components"></a>若要設定的殼層元件版面配置  
   
-1.  建立的階層`Directory`來代表所有在目標電腦上的檔案系統上建立，如下列範例所示的目錄項目。  
+1. 建立的階層`Directory`來代表所有在目標電腦上的檔案系統上建立，如下列範例所示的目錄項目。  
   
     ```xml  
     <Directory Id="TARGETDIR" Name="SourceDir">  
@@ -110,10 +105,10 @@ ms.locfileid: "51796299"
   
      這些目錄由參考`Id`時指定的檔案，必須先安裝。  
   
-2.  識別命令介面與殼層應用程式需要，如下列範例所示的元件。  
+2. 識別命令介面與殼層應用程式需要，如下列範例所示的元件。  
   
     > [!NOTE]
-    >  某些項目可以參考其他.wxs 檔案中定義。  
+    > 某些項目可以參考其他.wxs 檔案中定義。  
   
     ```xml  
     <Feature Id="ProductFeature" Title="$(var.ShortProductName)Shell" Level="1">  
@@ -128,7 +123,7 @@ ms.locfileid: "51796299"
     </Feature>  
     ```  
   
-    1.  `ComponentRef`項目是指識別目前的元件所需之檔案的另一個.wxs 檔案。 比方說，GeneralProfile 具有下列定義 HelpAbout.wxs 中。  
+    1. `ComponentRef`項目是指識別目前的元件所需之檔案的另一個.wxs 檔案。 比方說，GeneralProfile 具有下列定義 HelpAbout.wxs 中。  
   
         ```xml  
         <Fragment Id="FragmentProfiles">  
@@ -144,7 +139,7 @@ ms.locfileid: "51796299"
   
          `DirectoryRef`項目會指定使用者的電腦上這些檔案在哪裡。 `Directory`項目會指定，將會安裝到子目錄，而每個`File`項目代表所建置，或是，解決方案的一部分，並識別該檔案可以找到建立 MSI 檔案時的檔案。  
   
-    2.  `ComponentGroupRef`項目參考的其他元件 （或元件與元件群組） 的一組。 比方說，`ComponentGroupRef`在 ApplicationGroup 中所定義，如下所示 Application.wxs。  
+    2. `ComponentGroupRef`項目參考的其他元件 （或元件與元件群組） 的一組。 比方說，`ComponentGroupRef`在 ApplicationGroup 中所定義，如下所示 Application.wxs。  
   
         ```xml  
         <ComponentGroup Id="ApplicationGroup">  
@@ -164,51 +159,51 @@ ms.locfileid: "51796299"
         ```  
   
     > [!NOTE]
-    >  必要 Shell （獨立模式） 應用程式相依性： DebuggerProxy，MasterPkgDef，資源 （尤其是.winprf 檔案），應用程式和 PkgDefs。  
+    > Shell （獨立模式） 應用程式的必要的相依性：DebuggerProxy，MasterPkgDef，資源 （尤其是.winprf 檔案），應用程式和 PkgDefs。  
   
 ### <a name="registry-entries"></a>登錄項目  
  Shell （獨立模式） 專案範本會包含*ProjectName*合併安裝上的登錄機碼的.reg 檔案。 這些登錄項目必須是安裝和清除用途的 MSI 的一部分。 您也必須在 ApplicationRegistry.wxs 建立相符的登錄區塊。  
   
 ##### <a name="to-integrate-registry-entries-into-the-msi"></a>若要整合到 MSI 的登錄項目  
   
-1.  在  **Shell 自訂**資料夾中，開啟*ProjectName*.reg  
+1. 在  **Shell 自訂**資料夾中，開啟*ProjectName*.reg  
   
-2.  目標安裝目錄的路徑取代 $RootFolder$ 語彙基元的所有執行個體。  
+2. 目標安裝目錄的路徑取代 $RootFolder$ 語彙基元的所有執行個體。  
   
-3.  新增應用程式所需的任何其他登錄項目。  
+3. 新增應用程式所需的任何其他登錄項目。  
   
-4.  開啟 ApplicationRegistry.wxs。  
+4. 開啟 ApplicationRegistry.wxs。  
   
-5.  中的每個登錄項目*ProjectName*.reg，新增相對應的登錄區塊，如下列範例所示。  
+5. 中的每個登錄項目*ProjectName*.reg，新增相對應的登錄區塊，如下列範例所示。  
   
     |*ProjectName*.reg|ApplicationRegisty.wxs|  
     |-----------------------|----------------------------|  
-    |[HKEY_CLASSES_ROOT\CLSID\\{bb431796-a179-4df7-b65d-c0df6bda7cc6}]<br /><br /> @= 「 PhotoStudio DTE 物件 」|\<登錄機碼識別碼 = 'DteClsidRegKey' Root = 'HKCR' 機碼 =' $（var。DteClsidRegKey)' 動作 = 'createAndRemoveOnUninstall' ><br /><br /> \<RegistryValue 類型 = 'string' 名稱 =' @' 值 =' $（var。ShortProductName) DTE 物件 ' / ><br /><br /> \</ 登錄機碼 >|  
-    |[HKEY_CLASSES_ROOT\CLSID\\{bb431796-a179-4df7-b65d-c0df6bda7cc6} \LocalServer32]<br /><br /> @="$RootFolder$\PhotoStudio.exe 」|\<登錄機碼識別碼 = 'DteLocSrv32RegKey' Root = 'HKCR' 機碼 =' $（var。DteClsidRegKey) \LocalServer32' 動作 = 'createAndRemoveOnUninstall' ><br /><br /> \<RegistryValue 類型 = 'string' 名稱 =' @' 值 ='[INSTALLDIR] $（var。ShortProductName).exe ' / ><br /><br /> \</ 登錄機碼 >|  
+    |[HKEY_CLASSES_ROOT\CLSID\\{bb431796-a179-4df7-b65d-c0df6bda7cc6}]<br /><br /> @="PhotoStudio DTE Object"|\<RegistryKey Id='DteClsidRegKey' Root='HKCR' Key='$(var.DteClsidRegKey)' Action='createAndRemoveOnUninstall'><br /><br /> \<RegistryValue Type='string' Name='@' Value='$(var.ShortProductName) DTE Object' /><br /><br /> \</RegistryKey>|  
+    |[HKEY_CLASSES_ROOT\CLSID\\{bb431796-a179-4df7-b65d-c0df6bda7cc6}\LocalServer32]<br /><br /> @="$RootFolder$\PhotoStudio.exe"|\<RegistryKey Id='DteLocSrv32RegKey' Root='HKCR' Key='$(var.DteClsidRegKey)\LocalServer32' Action='createAndRemoveOnUninstall'><br /><br /> \<RegistryValue Type='string' Name='@' Value='[INSTALLDIR]$(var.ShortProductName).exe' /><br /><br /> \</RegistryKey>|  
   
      在此範例中，Var.DteClsidRegKey 會解析為頂端列中的登錄機碼。 Var.ShortProductName 會解析成`PhotoStudio`。  
   
 ## <a name="creating-a-setup-bootstrapper"></a>建立安裝程式啟動載入器  
  只有當第一次安裝所有先決條件，就會安裝您已完成的 MSI。 若要簡化使用者體驗，建立安裝程式會收集並安裝您的應用程式之前先安裝所有必要條件。 若要確保安裝成功，請執行下列動作：  
   
--   強制執行由系統管理員的安裝。  
+- 強制執行由系統管理員的安裝。  
   
--   偵測是否已安裝 Visual Studio Shell （獨立模式）。  
+- 偵測是否已安裝 Visual Studio Shell （獨立模式）。  
   
--   執行一或兩個殼層安裝程式。  
+- 執行一或兩個殼層安裝程式。  
   
--   處理重新啟動要求。  
+- 處理重新啟動要求。  
   
--   執行您的 MSI。  
+- 執行您的 MSI。  
   
 ### <a name="enforcing-installation-by-administrator"></a>強制執行由系統管理員的安裝  
  此程序，才能讓安裝程式，以存取所需的目錄，例如 \Program Files\\。  
   
 ##### <a name="to-enforce-installation-by-administrator"></a>若要強制執行由系統管理員的安裝  
   
-1.  開啟安裝專案的捷徑功能表，然後選擇**屬性**。  
+1. 開啟安裝專案的捷徑功能表，然後選擇**屬性**。  
   
-2.  底下**組態屬性/連結器/資訊清單檔**，將**UAC 執行層級**來**requireAdministrator**。  
+2. 底下**組態屬性/連結器/資訊清單檔**，將**UAC 執行層級**來**requireAdministrator**。  
   
      這個屬性會將要求到內嵌的資訊清單檔案，以系統管理員身分執行程式的屬性。  
   
@@ -216,7 +211,7 @@ ms.locfileid: "51796299"
  若要判斷是否必須安裝 Visual Studio Shell （獨立模式），請先判斷是否已安裝的檢查 HKLM\Software\Microsoft\DevDiv\vs\Servicing\ShellVersion\isoshell\LCID\Install 登錄值。  
   
 > [!NOTE]
->  在 Product.wxs Shell 偵測區塊也會讀取這些值。  
+> 在 Product.wxs Shell 偵測區塊也會讀取這些值。  
   
  HKLM\Software\Microsoft\AppEnv\14.0\ShellFolder 指定已安裝 Visual Studio Shell，而您可以檢查檔案的位置。  
   
@@ -257,15 +252,15 @@ dwResult = ExecCmd("Vs_IsoShellLP.exe /norestart /q", TRUE);
   
  若要處理重新啟動時，執行下列動作：  
   
--   設定登錄以繼續安裝，當 Windows 啟動時。  
+- 設定登錄以繼續安裝，當 Windows 啟動時。  
   
--   執行啟動載入器 double 重新啟動。  
+- 執行啟動載入器 double 重新啟動。  
   
--   刪除 Shell installer ResumeData 機碼。  
+- 刪除 Shell installer ResumeData 機碼。  
   
--   重新啟動 Windows。  
+- 重新啟動 Windows。  
   
--   重設啟動路徑的 msi。  
+- 重設啟動路徑的 msi。  
   
 ### <a name="setting-the-registry-to-resume-setup-when-windows-starts"></a>設定登錄，以繼續設定，當 Windows 啟動時  
  HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\RunOnce\ 登錄機碼在系統啟動時，以系統管理權限執行，並接著會清除。 HKEY_CURRENT_USER 包含類似索引鍵，但一般使用者的身分執行，並不適合安裝。 您可以將字串值放在您的安裝程式會呼叫 runonce 機碼，以繼續安裝。 不過，我們建議您藉由呼叫安裝程式 **/重新啟動**或類似的參數，以通知它正在繼續而不啟動應用程式。 您也可以包含參數，指出在安裝過程中，可能需要多次重新啟動的安裝中特別有用。  
@@ -374,5 +369,4 @@ dwResult = ExecCmd(boutiqueInstallCmd, FALSE);
 ```  
   
 ## <a name="see-also"></a>另請參閱  
- [逐步解說︰建立基本的 Isolated Shell 應用程式](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)
-
+ [逐步解說：建立基本的 Isolated Shell 應用程式](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)

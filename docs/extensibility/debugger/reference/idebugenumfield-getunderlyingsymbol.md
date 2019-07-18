@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEnumField::GetUnderlyingSymbol method
 ms.assetid: c3b8a117-6708-4cfd-8ffc-5f007d706bc5
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9b6b90f388f93bc7cfc2c246c529217bcdb00fa9
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 353b6d6f2a448cb7ac1bfdc98cc489688db9ee74
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56686804"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66345027"
 ---
 # <a name="idebugenumfieldgetunderlyingsymbol"></a>IDebugEnumField::GetUnderlyingSymbol
 這個方法會傳回[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)表示列舉型別的名稱。
@@ -36,10 +39,9 @@ int GetUnderlyingSymbol(
 );
 ```
 
-#### <a name="parameters"></a>參數
- `ppField`
-
- [out]傳回[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)描述這個列舉型別的名稱。
+## <a name="parameters"></a>參數
+`ppField`\
+[out]傳回[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)描述這個列舉型別的名稱。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

@@ -1,14 +1,9 @@
 ---
 title: IDebugPortEx2::TerminateProcess |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugPortEx2::TerminateProcess
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: bf8fa94c-6d9d-4e4f-ac08-3b44ba5ace68
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 8909e7299b23fa467258320af005f3469c3c5e8b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: c8e524ac03b11eeee540c32af07fa422f83a7ac6
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51779492"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68188445"
 ---
 # <a name="idebugportex2terminateprocess"></a>IDebugPortEx2::TerminateProcess
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -53,4 +48,3 @@ int TerminateProcess( 
 ## <a name="see-also"></a>另請參閱  
  [IDebugPortEx2](../../../extensibility/debugger/reference/idebugportex2.md)   
  [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)
-

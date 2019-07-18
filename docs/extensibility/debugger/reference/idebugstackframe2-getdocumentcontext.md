@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugStackFrame2::GetDocumentContext
 ms.assetid: 69e81439-1238-4f18-9028-6fd1c1ba5e4a
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f4fecae2fe2398f1814b0948fd6639f234353390
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: b7b89c8114c65e25153beb6c66845ef66014fbf7
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56703808"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66352133"
 ---
 # <a name="idebugstackframe2getdocumentcontext"></a>IDebugStackFrame2::GetDocumentContext
 取得此堆疊框架的文件內容。
@@ -36,10 +39,9 @@ int GetDocumentContext ( 
 );
 ```
 
-#### <a name="parameters"></a>參數
- `ppCxt`
-
- [out]傳回[IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)物件，代表來源文件中的目前位置。
+## <a name="parameters"></a>參數
+`ppCxt`\
+[out]傳回[IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)物件，代表來源文件中的目前位置。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

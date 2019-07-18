@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 352651be28f178272caaad9a01070dc9d7357d79
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56637668"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62823461"
 ---
 # <a name="visible-timeline-profile"></a>可見時間表分析
 執行緒封鎖檢視的可見時間表分析提供統計資訊和報表連結。 當您放大、縮小、水平捲動、隱藏通道或顯示通道時，作用中圖例中的數字會隨之變更，反映目前在檢視中的項目。 若要檢視有關圖例中項目的報表，按一下該項目。

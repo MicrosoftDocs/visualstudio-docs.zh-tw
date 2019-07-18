@@ -13,11 +13,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: d8e3b53cbe31971ddcdc8e349133f52634e03e88
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54801801"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68197739"
 ---
 # <a name="microsoft-help-viewer-installation"></a>Microsoft Help Viewer 安裝
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

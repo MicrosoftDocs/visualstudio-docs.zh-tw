@@ -14,17 +14,16 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c83f499560bf747843fe74ede4d2187a544bee8b
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 15a6eeea6ebf75513419cc763b2e29a6b6264391
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54769152"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436799"
 ---
 # <a name="item-metadata-in-task-batching"></a>工作批次處理中的項目中繼資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 能夠根據項目中繼資料，將項目清單分割成不同的類別或批次，然後使用每個批次一次執行一個工作。 要確切了解哪個批次要傳遞哪些項目，可能會相當混亂。 本主題涵蓋下列與批次處理相關的常見案例。  
   
 - 將項目清單分割成批次  
@@ -87,7 +86,7 @@ ms.locfileid: "54769152"
  [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 可根據相同的中繼資料將數個項目清單分割成批次。 這可讓您輕鬆將不同的項目清單分割成批次，以建置多個組件。 例如，您可以將 .cs 檔案的項目清單分割成應用程式批次和組件批次，以及將資源檔案的項目清單分割成應用程式批次和組件批次。 接著，您可以使用批次處理將這些項目清單傳遞給一個工作，然後建置應用程式和組件。  
   
 > [!NOTE]
->  如果要傳遞給工作的項目清單未包含任何具有所參考中繼資料的項目，系統就會將該項目清單中的每個項目都傳遞給每個批次。  
+> 如果要傳遞給工作的項目清單未包含任何具有所參考中繼資料的項目，系統就會將該項目清單中的每個項目都傳遞給每個批次。  
   
  下列範例示範如何根據項目中繼資料，將多個項目清單分割成批次。 `ExampColl` 和 `ExampColl2` 項目清單會分別根據 `Number` 項目中繼資料分割成三個批次。 `Text` 屬性中的 `%(Number)` 會通知 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 應該執行批次處理。 `ExampColl` 和 `ExampColl2` 項目清單會根據 `Number` 中繼資料分割成三個批次，而系統會將每個批次個別傳遞給工作。  
   

@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 229b1606a8a7de18da7354852e3e5adb9123f5b5
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 1d012c0902aa82eb057f9d69c0b85b13262e847a
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57222853"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66747615"
 ---
 # <a name="user-permissions-and-visual-studio"></a>使用者權限和 Visual Studio
 
@@ -32,8 +32,8 @@ ms.locfileid: "57222853"
 |----------|----------| - |
 |安裝|安裝 Visual Studio。|[安裝 Visual Studio](../install/install-visual-studio.md)|
 ||安裝、更新或移除本機說明內容。|[安裝和管理本機說明內容](../help-viewer/install-manage-local-content.md)|
-|工具箱|將傳統 COM 控制項新增至 [工具箱]。|[工具箱](../ide/reference/toolbox.md)|
-|建置|使用註冊元件的建置後事件。|[了解自訂建置步驟和建置事件](/cpp/ide/understanding-custom-build-steps-and-build-events)|
+|工具箱|將傳統 COM 控制項新增至 [工具箱]  。|[工具箱](../ide/reference/toolbox.md)|
+|建置|使用註冊元件的建置後事件。|[了解自訂建置步驟和建置事件](/cpp/build/understanding-custom-build-steps-and-build-events)|
 ||包含當您建置 C++ 專案時的註冊步驟。||
 |偵錯|對以更高權限執行的應用程式進行偵錯。|[偵錯設定和準備](../debugger/debugger-settings-and-preparation.md)|
 ||對在不同使用者帳戶下執行的應用程式進行偵錯，例如 ASP.NET 網站。|[對 ASP.NET 和 AJAX 應用程式進行偵錯](../debugger/how-to-enable-debugging-for-aspnet-applications.md)|
@@ -52,21 +52,21 @@ ms.locfileid: "57222853"
 
 ::: moniker range="vs-2017"
 
-1. 開啟 [開始] 功能表，然後捲動至 Visual Studio 2017。
+1. 開啟 [開始]  功能表，然後捲動至 Visual Studio 2017。
 
-1. 從 **Visual Studio 2017** 的操作功能表 (按一下滑鼠右鍵)，選取 [更多] >[以系統管理員身分執行]。
+1. 從 **Visual Studio 2017** 的操作功能表 (按一下滑鼠右鍵)，選取 [更多]  >[以系統管理員身分執行]  。
 
-   在 Visual Studio 啟動時，**(系統管理員)** 會顯示在標題列的產品名稱之後。
+   在 Visual Studio 啟動時， **(系統管理員)** 會顯示在標題列的產品名稱之後。
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-1. 開啟 [開始] 功能表，然後捲動至 Visual Studio 2019。
+1. 開啟 [開始]  功能表，然後捲動至 Visual Studio 2019。
 
-1. 從 **Visual Studio 2019** 的操作功能表 (按一下滑鼠右鍵)，選取 [更多] >[以系統管理員身分執行]。
+1. 從 **Visual Studio 2019** 的操作功能表 (按一下滑鼠右鍵)，選取 [更多]  >[以系統管理員身分執行]  。
 
-   在 Visual Studio 啟動時，**(系統管理員)** 會顯示在標題列的產品名稱之後。
+   在 Visual Studio 啟動時， **(系統管理員)** 會顯示在標題列的產品名稱之後。
 
 ::: moniker-end
 

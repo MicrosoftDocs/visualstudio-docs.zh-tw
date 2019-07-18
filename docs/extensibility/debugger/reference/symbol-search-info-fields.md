@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - SYMBOL_SEARCH_INFO_FIELDS enumeration
 ms.assetid: bce35af0-722d-46d4-afa6-eaae598c51ff
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fc50da1cec68103045365a021e039dd18eced85e
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 86a7fb7c891d0c22bc415920014e905cf3d9c6fa
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56717646"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66322355"
 ---
 # <a name="symbolsearchinfofields"></a>SYMBOL_SEARCH_INFO_FIELDS
 指定要擷取的符號資訊種類。
@@ -42,16 +45,18 @@ public enum enum_SYMBOL_SEARCH_INFO_FIELDS
 
 ```
 
-## <a name="members"></a>成員
- SSIF_NONE 表示沒有旗標
+## <a name="fields"></a>欄位
+ `SSIF_NONE`\
+ 表示沒有旗標
 
- SSIF_VERBOSE_SEARCH_INFO 傳回所有搜尋用來尋找符號的路徑
+ `SSIF_VERBOSE_SEARCH_INFO`\
+ 傳回所有搜尋用來尋找符號的路徑
 
 ## <a name="remarks"></a>備註
  這些旗標會傳遞做為參數[GetSymbolInfo](../../../extensibility/debugger/reference/idebugmodule3-getsymbolinfo.md)傳回方法，以判斷的資訊數量。
 
 > [!NOTE]
->  目前，只有`SSIF_VERBOSE_SEARCH_INFO`支援，且必須指定為`dwFlags`參數來`IDebugModule3::GetSymbolInfo`。 所有其他值會傳回錯誤。
+> 目前，只有`SSIF_VERBOSE_SEARCH_INFO`支援，且必須指定為`dwFlags`參數來`IDebugModule3::GetSymbolInfo`。 所有其他值會傳回錯誤。
 
 ## <a name="requirements"></a>需求
  標頭： msdbg.h

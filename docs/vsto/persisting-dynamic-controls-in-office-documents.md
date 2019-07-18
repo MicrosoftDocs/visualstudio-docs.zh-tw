@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 48b2cc1402243bfedb7b22280b4a161235cb9957
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 8fd44d535cd8a9920ebc3de37d0c483a19dac8f8
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54863509"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62976597"
 ---
 # <a name="persist-dynamic-controls-in-office-documents"></a>保存動態控制項中的 Office 文件
 
@@ -76,11 +76,11 @@ ms.locfileid: "54863509"
 
 您可以在使用者重新開啟文件時，重新建立已刪除的 Windows Form 控制項。 若要這樣做，您的解決方案必須執行下列工作：
 
-1.  在文件儲存或關閉時，儲存控制項的相關資訊，包括其大小、位置與狀態。 文件層級自訂中，您可以將資料儲存到文件中的資料快取。 在 VSTO 增益集中，您可以將資料儲存到文件中的自訂 XML 組件。
+1. 在文件儲存或關閉時，儲存控制項的相關資訊，包括其大小、位置與狀態。 文件層級自訂中，您可以將資料儲存到文件中的資料快取。 在 VSTO 增益集中，您可以將資料儲存到文件中的自訂 XML 組件。
 
-2.  重新建立文件開啟時所引發事件的控制項。 在文件層級專案中，您可以在 `Sheet`*n*`_Startup` 或 `ThisDocument_Startup` 事件處理常式中執行此作業。 在 VSTO 增益集專案中，您可以在 <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookOpen> 或 <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentOpen> 事件的處理常式中執行此作業。
+2. 重新建立文件開啟時所引發事件的控制項。 在文件層級專案中，您可以在 `Sheet`*n*`_Startup` 或 `ThisDocument_Startup` 事件處理常式中執行此作業。 在 VSTO 增益集專案中，您可以在 <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookOpen> 或 <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentOpen> 事件的處理常式中執行此作業。
 
-###  <a name="removingActiveX"></a> 移除增益集中的 ActiveX 包裝函式
+### <a name="removingActiveX"></a> 移除增益集中的 ActiveX 包裝函式
 
 當您將動態 Windows Form 控制項加入文件使用 VSTO 增益集時，您可以防止控制項的 ActiveX 包裝函式不會出現在文件以下列方式開啟下一次。
 

@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7b17e79e1bfefd5b6b23695f2f49d694c7148ae0
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56645130"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62838141"
 ---
 # <a name="idiaenumdebugstreams"></a>IDiaEnumDebugStreams
 列舉包含的資料來源中的各種偵錯資料流。
@@ -31,7 +31,7 @@ IDiaEnumDebugStreams : IUnknown
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法
 下表顯示的方法`IDiaEnumDebugStreams`。
 
-|方法|說明|
+|方法|描述|
 |------------|-----------------|
 |[IDiaEnumDebugStreams::get__NewEnum](../../debugger/debug-interface-access/idiaenumdebugstreams-get-newenum.md)|擷取`IEnumVARIANT`這個列舉值的版本。|
 |[IDiaEnumDebugStreams::get_Count](../../debugger/debug-interface-access/idiaenumdebugstreams-get-count.md)|擷取偵錯資料流的數目。|
@@ -78,13 +78,13 @@ void DumpAllDebugStreams( IDiaSession* pSession)
 ```
 
 ## <a name="requirements"></a>需求
-標頭： Dia2.h
+標頭：dia2.h
 
 程式庫： diaguids.lib
 
 DLL: msdia80.dll
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [介面 (偵錯介面存取 SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
 - [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md)
 - [IDiaSession::getEnumDebugStreams](../../debugger/debug-interface-access/idiasession-getenumdebugstreams.md)

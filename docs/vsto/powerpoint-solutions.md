@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 34175d2e53e897160e601f29bc2279f226fb5d11
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: ee1e5eddf89e60434a083293cdc08998dfe1b41d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56601248"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445215"
 ---
 # <a name="powerpoint-solutions"></a>PowerPoint 方案
   Visual Studio 提供您可用來建立 Microsoft Office PowerPoint VSTO 增益集的專案範本。 您可以使用 VSTO 增益集來自動化 PowerPoint、擴充 PowerPoint 功能，或自訂 PowerPoint 使用者介面 (UI)。
@@ -32,7 +32,7 @@ ms.locfileid: "56601248"
  [!INCLUDE[appliesto_pptallapp](../vsto/includes/appliesto-pptallapp-md.md)]
 
 > [!NOTE]
->  想要開發解決方案，擴充的 Office 體驗，跨[多個平台](https://dev.office.com/add-in-availability)嗎？ 查看新[Office 增益集模型](https://dev.office.com/docs/add-ins/overview/office-add-ins)。 Office 增益集較小的使用量，相較於 VSTO 增益集和解決方案，而且您可以使用幾乎任何 web 程式設計技術，例如 HTML5、 JavaScript、 CSS3、 以及 XML 來建置。
+> 想要開發解決方案，擴充的 Office 體驗，跨[多個平台](https://dev.office.com/add-in-availability)嗎？ 查看新[Office 增益集模型](https://dev.office.com/docs/add-ins/overview/office-add-ins)。 Office 增益集較小的使用量，相較於 VSTO 增益集和解決方案，而且您可以使用幾乎任何 web 程式設計技術，例如 HTML5、 JavaScript、 CSS3、 以及 XML 來建置。
 
  ![影片連結](../vsto/media/playvideo.gif "影片連結")如需相關的影片示範，請參閱[How do i:建立 Microsoft PowerPoint 增益集嗎？](http://go.microsoft.com/fwlink/?LinkId=132767).
 
@@ -49,7 +49,7 @@ ms.locfileid: "56601248"
 
   呼叫 PowerPoint 物件模型時，您使用的類型是由 PowerPoint 的主要 Interop 組件所提供。 主要 Interop 組件的作用，如同 VSTO 增益集中 Managed 程式碼與 PowerPoint 中 COM 物件模型之間的橋樑。 PowerPoint 主要 Interop 組件中的所有類型都定義在 <xref:Microsoft.Office.Interop.PowerPoint> 命名空間中。 如需有關主要 interop 組件的詳細資訊，請參閱 < [Office 方案開發概觀&#40;VSTO&#41; ](../vsto/office-solutions-development-overview-vsto.md)並[Office 主要 interop 組件](../vsto/office-primary-interop-assemblies.md)。
 
-##  <a name="WordOMDocumentation"></a> 使用 PowerPoint 物件模型文件
+## <a name="WordOMDocumentation"></a> 使用 PowerPoint 物件模型文件
  如需 PowerPoint 物件模型的完整資訊，您可以參閱 PowerPoint 主要 Interop 組件 (PIA) 參考和 VBA 物件模型參考。
 
 ### <a name="primary-interop-assembly-reference"></a>主要 interop 組件參考

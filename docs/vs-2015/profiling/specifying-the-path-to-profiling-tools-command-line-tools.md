@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 209c2263e35bc4e6c5bfffb03b4a760e8cc15a45
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 7fadcff84c4b927a7718d7d4ad1311918ae0f18a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54791748"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68199782"
 ---
 # <a name="specifying-the-path-to-profiling-tools-command-line-tools"></a>指定程式碼剖析工具命令列工具的路徑
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,10 +27,10 @@ ms.locfileid: "54791748"
 ## <a name="64-bit-computers"></a>64 位元電腦  
  在 64 位元電腦上，則會根據已進行程式碼剖析之應用程式的目標平台指定路徑。  
   
--   若是 32 位元應用程式，預設程式碼剖析工具目錄是：  
+- 若是 32 位元應用程式，預設程式碼剖析工具目錄是：  
   
      *磁碟機*\Program Files (x86)\Microsoft Visual Studio 11.0\Team Tools\Performance Tools  
   
--   若是 64 位元應用程式，預設程式碼剖析工具目錄是：  
+- 若是 64 位元應用程式，預設程式碼剖析工具目錄是：  
   
      *磁碟機*\Program Files (x86)\Microsoft Visual Studio 11.0\Team Tools\Performance Tools\x64

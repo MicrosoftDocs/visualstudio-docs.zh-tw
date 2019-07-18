@@ -1,14 +1,9 @@
 ---
 title: 'Idiasymbol:: Findchildren |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 5fe7573a-e48b-428d-9c17-7421b7209246
 caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 684fc0f5474e85806066de352da7ddad8527a3d2
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: a09a62a2e6b94dbccda3afce4bdd286270149c15
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51809229"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "68150042"
 ---
 # <a name="idiasymbolfindchildren"></a>IDiaSymbol::findChildren
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -64,8 +59,5 @@ HRESULT findChildren ( 
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [SymTagEnum 列舉](../../debugger/debug-interface-access/symtagenum.md)   
  [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)   
- [Idiasession:: Findchildren](../../debugger/debug-interface-access/idiasession-findchildren.md)   
+ [IDiaSession::findChildren](../../debugger/debug-interface-access/idiasession-findchildren.md)   
  [NameSearchOptions 列舉](../../debugger/debug-interface-access/namesearchoptions.md)
-
-
-

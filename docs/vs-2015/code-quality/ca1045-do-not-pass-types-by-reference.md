@@ -1,14 +1,9 @@
 ---
-title: CA1045： 不要參考所傳遞類型 |Microsoft Docs
-ms.custom: ''
+title: CA1045:不要參考所傳遞類型 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1045
 - DoNotPassTypesByReference
@@ -20,14 +15,14 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 1aa9077a0d27c105cd7008d550a4315ce8daf91a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 6bbdcb2e2ac8f905a2b52cfb41ed90217d215b4b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49836563"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431547"
 ---
-# <a name="ca1045-do-not-pass-types-by-reference"></a>CA1045：不要以傳址方式傳遞類型
+# <a name="ca1045-do-not-pass-types-by-reference"></a>CA1045:不要以傳址方式傳遞類型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -50,7 +45,7 @@ ms.locfileid: "49836563"
  雖然傳回的值很常見，並且大量使用正確的應用程式的`out`和`ref`參數需要中繼的設計和編碼技能。 程式庫架構設計人員負責設計的目標為一般使用者不應預期使用者會熟練地運用`out`或`ref`參數。
 
 > [!NOTE]
->  當您使用大型結構參數時，會複製這些結構所需的其他資源可能會造成效能上的影響時傳值方式傳遞。 在這些情況下，您可以考慮使用`ref`或`out`參數。
+> 當您使用大型結構參數時，會複製這些結構所需的其他資源可能會造成效能上的影響時傳值方式傳遞。 在這些情況下，您可以考慮使用`ref`或`out`參數。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
  若要修正此起因於實值類型的規則的違規情形，讓方法傳回的物件做為其傳回的值。 如果此方法必須傳回多個值，請將它傳回保存值物件的單一執行個體重新設計。
@@ -82,16 +77,13 @@ ms.locfileid: "49836563"
 
  此範例會產生下列輸出。
 
- **變更指標-傳值方式傳遞：**
+ **變更指標-傳值方式傳遞：** 
 **12345**
 **12345**
 **變更指標-傳址方式傳遞：** 
- **12345**
+**12345**
 **12345 ABCDE**
-**傳回值來傳遞：**
+**傳回值來傳遞：** 
 **12345 ABCDE**
 ## <a name="related-rules"></a>相關的規則
- [CA1021：避免使用 out 參數](../code-quality/ca1021-avoid-out-parameters.md)
-
-
-
+ [CA1021:避免使用 out 參數](../code-quality/ca1021-avoid-out-parameters.md)

@@ -1,14 +1,9 @@
 ---
-title: CA1012： 抽象類型不可以有建構函式 |Microsoft Docs
-ms.custom: ''
+title: CA1012:抽象類型不應該有建構函式 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - AbstractTypesShouldNotHaveConstructors
 - CA1012
@@ -19,14 +14,14 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: d28f43d8e567b9f12589d8176e8e54011d22eabd
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 02b92ac92e545ab30405d195d85a97a4ef2e3806
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49811045"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68151093"
 ---
-# <a name="ca1012-abstract-types-should-not-have-constructors"></a>CA1012：抽象類型不應具有建構函式
+# <a name="ca1012-abstract-types-should-not-have-constructors"></a>CA1012:抽象類型不應該有建構函式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -59,6 +54,3 @@ ms.locfileid: "49811045"
 
  [!code-csharp[FxCop.Design.AbstractTypeGood#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.AbstractTypeGood/cs/FxCop.Design.AbstractTypeGood.cs#1)]
  [!code-vb[FxCop.Design.AbstractTypeGood#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Design.AbstractTypeGood/vb/FxCop.Design.AbstractTypeGood.vb#1)]
-
-
-

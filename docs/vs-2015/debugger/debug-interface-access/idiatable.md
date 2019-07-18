@@ -1,14 +1,9 @@
 ---
-title: IDiaTable |Microsoft Docs
-ms.custom: ''
+title: IDiaTable | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: c99a2c44-7b72-4e3c-b963-25fe3df3a555
 caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 03f93cb75ce675409adcceec3f08b172581a3d8b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 5b9c9f85ffbf4eed2fdc305a64bd3f32822dacd6
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51722001"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65682794"
 ---
 # <a name="idiatable"></a>IDiaTable
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -41,7 +36,7 @@ IDiaTable : IEnumUnknown
   
 |方法|描述|  
 |------------|-----------------|  
-|[IDiaTable::get__NewEnum](../../debugger/debug-interface-access/idiatable-get-newenum.md)|擷取[IEnumVARIANT 介面](http://msdn.microsoft.com/en-us/139e3c93-faef-4003-9079-e0e94494db3e)這個列舉值的版本。|  
+|[IDiaTable::get__NewEnum](../../debugger/debug-interface-access/idiatable-get-newenum.md)|擷取[IEnumVARIANT 介面](https://msdn.microsoft.com/139e3c93-faef-4003-9079-e0e94494db3e)這個列舉值的版本。|  
 |[IDiaTable::get_name](../../debugger/debug-interface-access/idiatable-get-name.md)|擷取資料表的名稱。|  
 |[IDiaTable::get_Count](../../debugger/debug-interface-access/idiatable-get-count.md)|擷取資料表中的項目數。|  
 |[IDiaTable::Item](../../debugger/debug-interface-access/idiatable-item.md)|擷取特定項目索引的參考。|  
@@ -56,25 +51,25 @@ IDiaTable : IEnumUnknown
   
  以實作下列介面`IDiaTable`介面 (也就是您可以查詢`IDiaTable`其中一個下列介面的介面):  
   
--   [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)  
+- [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)  
   
--   [IDiaEnumSourceFiles](../../debugger/debug-interface-access/idiaenumsourcefiles.md)  
+- [IDiaEnumSourceFiles](../../debugger/debug-interface-access/idiaenumsourcefiles.md)  
   
--   [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)  
+- [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)  
   
--   [IDiaEnumSectionContribs](../../debugger/debug-interface-access/idiaenumsectioncontribs.md)  
+- [IDiaEnumSectionContribs](../../debugger/debug-interface-access/idiaenumsectioncontribs.md)  
   
--   [IDiaEnumSegments](../../debugger/debug-interface-access/idiaenumsegments.md)  
+- [IDiaEnumSegments](../../debugger/debug-interface-access/idiaenumsegments.md)  
   
--   [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md)  
+- [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md)  
   
--   [IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md)  
+- [IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md)  
   
 ## <a name="example"></a>範例  
  第一個函式， `ShowTableNames`，工作階段中會顯示所有資料表的名稱。 第二個函式， `GetTable`，搜尋所有實作指定的介面的資料表中的資料表。 第三個函式中， `UseTable`，示範如何使用`GetTable`函式。  
   
 > [!NOTE]
->  `CDiaBSTR` 是一個類別，包裝`BSTR`並可自動處理具現化超出範圍時釋出的字串。  
+> `CDiaBSTR` 是一個類別，包裝`BSTR`並可自動處理具現化超出範圍時釋出的字串。  
   
 ```cpp#  
 void ShowTableNames(IDiaSession *pSession)  
@@ -139,17 +134,14 @@ void UseTable(IDiaSession *pSession)
 ```  
   
 ## <a name="requirements"></a>需求  
- 標頭： Dia2.h  
+ 標頭：dia2.h  
   
  程式庫： diaguids.lib  
   
  DLL: msdia80.dll  
   
 ## <a name="see-also"></a>另請參閱  
- [介面 （偵錯介面存取 SDK）](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
+ [介面 (偵錯介面存取 SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
  [IDiaEnumTables](../../debugger/debug-interface-access/idiaenumtables.md)   
- [Idiaenumtables:: Item](../../debugger/debug-interface-access/idiaenumtables-item.md)   
+ [IDiaEnumTables::Item](../../debugger/debug-interface-access/idiaenumtables-item.md)   
  [IDiaEnumTables::Next](../../debugger/debug-interface-access/idiaenumtables-next.md)
-
-
-

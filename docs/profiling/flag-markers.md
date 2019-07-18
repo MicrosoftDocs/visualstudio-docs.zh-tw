@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ccc0c7aa3386e906ad13331a596953db70240701
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56627593"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62969935"
 ---
 # <a name="flag-markers"></a>旗標標記
 旗標標記表示在應用程式時間中的某個時刻發生的項目。 旗標可代表許多種類的應用程式事件。 比方說，當特定工作項目已排程或擲回例外狀況時，可以顯示旗標。 工作平行程式庫等的執行階段也可以產生旗標。

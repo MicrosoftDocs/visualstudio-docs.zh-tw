@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgramEx2 interface
 ms.assetid: 663359ed-635a-4539-addb-0cc52f19d1bd
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 99b57aece9b835ac1f2277fdd626a9fdff7b903f
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 13a9e44ee2a7782cb804c4e0b6f4279918e7d78e
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56705095"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66325111"
 ---
 # <a name="idebugprogramex2"></a>IDebugProgramEx2
 此介面可讓偵錯管理員 (SDM) 附加至程式，並取得與程式相關聯的 [程式] 節點的工作階段。

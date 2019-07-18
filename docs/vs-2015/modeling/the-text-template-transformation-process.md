@@ -1,25 +1,22 @@
 ---
 title: 文字範本轉換流程 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - text templates, transformation process
 ms.assetid: 80b3f0e0-49e7-4865-a1ac-dba068abe96b
 caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 146d391cc843291b79dc34af29851cfed4c80a46
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 0f92b4053006aa5da3c28d9330b372466f84d0fd
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49203771"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68199964"
 ---
 # <a name="the-text-template-transformation-process"></a>文字範本轉換流程
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,29 +31,29 @@ ms.locfileid: "49203771"
   
 |元件|描述|可自訂 （是/否）|  
 |---------------|-----------------|------------------------------|  
-|引擎|引擎元件控制文字範本轉換流程|否。|  
-|主機|主機是引擎與使用者環境之間的介面。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 是一堆文字轉換程序。|可以。 您可以撰寫自訂主機。|  
-|指示詞處理器|指示詞處理器會處理文字範本中的指示詞的類別。 您可以使用指示詞提供資料給文字範本中，從輸入來源。|可以。 您可以撰寫自訂指示詞處理器|  
+|引擎|引擎元件控制文字範本轉換流程|資料分割|  
+|主機|主機是引擎與使用者環境之間的介面。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 是一堆文字轉換程序。|是的。 您可以撰寫自訂主機。|  
+|指示詞處理器|指示詞處理器會處理文字範本中的指示詞的類別。 您可以使用指示詞提供資料給文字範本中，從輸入來源。|是的。 您可以撰寫自訂指示詞處理器|  
   
 ## <a name="the-engine"></a>引擎  
  引擎會收到範本做為字串，從主應用程式，用來處理轉換程序中使用的所有檔案。 然後，引擎會要求主應用程式找出任何自訂指示詞處理器和環境的其他方面。 然後，引擎會編譯，並執行產生的轉換類別。 引擎會傳回產生的文字至主機，通常會將文字儲存至檔案。  
   
-## <a name="the-host"></a>主應用程式  
+## <a name="the-host"></a>主機  
  主應用程式會負責任何與轉換處理序，包括下列外部環境相關的項目：  
   
--   尋找文字和二進位檔案要求的引擎或指示詞處理器。 主應用程式可以搜尋目錄和全域組件快取，以找出組件。 主應用程式可以找到自訂指示詞處理器的程式碼引擎。 主機也可以找出並讀取文字檔案然後傳回其內容為字串。  
+- 尋找文字和二進位檔案要求的引擎或指示詞處理器。 主應用程式可以搜尋目錄和全域組件快取，以找出組件。 主應用程式可以找到自訂指示詞處理器的程式碼引擎。 主機也可以找出並讀取文字檔案然後傳回其內容為字串。  
   
--   提供的標準組件和由引擎用來建立產生的轉換類別的命名空間的清單。  
+- 提供的標準組件和由引擎用來建立產生的轉換類別的命名空間的清單。  
   
--   提供應用程式定義域時，引擎會編譯並執行產生的轉換類別所使用。 個別應用程式定義域用來保護主應用程式發生錯誤的範本程式碼。  
+- 提供應用程式定義域時，引擎會編譯並執行產生的轉換類別所使用。 個別應用程式定義域用來保護主應用程式發生錯誤的範本程式碼。  
   
--   寫入產生的輸出檔案。  
+- 寫入產生的輸出檔案。  
   
--   設定產生的輸出檔的預設副檔名。  
+- 設定產生的輸出檔的預設副檔名。  
   
--   處理文字範本轉換錯誤。 比方說，主應用程式可以在使用者介面中顯示的錯誤，或將它們寫入至檔案。 (在[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]，錯誤會顯示錯誤訊息視窗中。)  
+- 處理文字範本轉換錯誤。 比方說，主應用程式可以在使用者介面中顯示的錯誤，或將它們寫入至檔案。 (在[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]，錯誤會顯示錯誤訊息視窗中。)  
   
--   如果使用者已呼叫指示詞，而不需提供值，請提供必要的參數值。 指示詞處理器可以指定指示詞，並使用參數的名稱，並要求主應用程式提供的預設值，如果有的話。  
+- 如果使用者已呼叫指示詞，而不需提供值，請提供必要的參數值。 指示詞處理器可以指定指示詞，並使用參數的名稱，並要求主應用程式提供的預設值，如果有的話。  
   
 ## <a name="directives-and-directive-processors"></a>指示詞和指示詞處理器  
  指示詞是在文字範本中的命令。 它提供在產生程序的參數。 通常指示詞所定義的來源和類型的模型或其他的輸入和輸出檔案的副檔名。  
@@ -68,6 +65,3 @@ ms.locfileid: "49203771"
  `<#@ import namespace="System.Text" #>`  
   
  標準的指示詞處理器會將轉換為`using`產生的轉換類別中的陳述式。 然後您可以使用`StringBuilder`類別的未限定為您的範本程式碼其餘部分`System.Text.StringBuilder`。
-
-
-

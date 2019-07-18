@@ -1,14 +1,9 @@
 ---
 title: WizardExtension 項目 （Visual Studio 範本） |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#WizardExtension
 helpviewer_keywords:
@@ -17,13 +12,13 @@ helpviewer_keywords:
 ms.assetid: d54b01c1-50f5-4b65-828c-686e2321cc8c
 caps.latest.revision: 12
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: cb3c1cd9b5819bcdcf7abab0c5a501bafb8311de
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 69e35d4bebf7a16a1429be674ba3533b4f082b05
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51797308"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68201918"
 ---
 # <a name="wizardextension-element-visual-studio-templates"></a>WizardExtension 項目 (Visual Studio 範本)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +27,7 @@ ms.locfileid: "51797308"
   
  \<VSTemplate >  
  ...  
- \<WizardExtension >  
+ \<WizardExtension>  
   
 ## <a name="syntax"></a>語法  
   
@@ -51,14 +46,14 @@ ms.locfileid: "51797308"
   
 ### <a name="child-elements"></a>子元素  
   
-|項目|描述|  
+|項目|說明|  
 |-------------|-----------------|  
 |[Assembly](../extensibility/assembly-element-visual-studio-template-wizard-extension.md)|必要項目。<br /><br /> 指定的名稱或組件出現在全域組件快取中的強式名稱。 必須有至少一個`Assembly`中的項目`WizardExtension`項目。|  
 |[FullClassName](../extensibility/fullclassname-element-visual-studio-template-wizard-extension.md)|必要項目。<br /><br /> 實作的類別完整的名稱`IWizard`介面。 必須有至少一個`FullClassName`中的項目`WizardExtension`項目。|  
   
 ### <a name="parent-elements"></a>父項目  
   
-|項目|描述|  
+|項目|說明|  
 |-------------|-----------------|  
 |[VSTemplate](../extensibility/vstemplate-element-visual-studio-templates.md)|包含專案範本、 項目範本，或入門套件的所有中繼資料。|  
   
@@ -99,5 +94,4 @@ ms.locfileid: "51797308"
 ## <a name="see-also"></a>另請參閱  
  [Visual Studio 範本結構描述參考](../extensibility/visual-studio-template-schema-reference.md)   
  [建立專案和項目範本](../ide/creating-project-and-item-templates.md)   
- [如何︰搭配專案範本使用精靈](../extensibility/how-to-use-wizards-with-project-templates.md)
-
+ [如何：搭配專案範本使用精靈](../extensibility/how-to-use-wizards-with-project-templates.md)

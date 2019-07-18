@@ -7,37 +7,37 @@ helpviewer_keywords:
 - debug engines, custom
 - debugging [Debugging SDK], custom debug engines
 ms.assetid: 52794238-6fae-451c-bf1c-99f344c6f173
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5273270905c99b565fe4fd455e9c5c505af9c878
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 3756eb105ec562d902d4631318e7a5fc698601a2
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56711094"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66345308"
 ---
 # <a name="create-a-custom-debug-engine"></a>建立自訂的偵錯引擎
 偵錯引擎 (DE) 是元件，可讓特定的執行階段架構的偵錯。 通常是只有一個 DE 實作每個執行階段環境。
 
 > [!NOTE]
->  TRANSACT-SQL 和 JScript 的個別 DE 實作時，VBScript 和 JScript 會共用單一的規定。
+> TRANSACT-SQL 和 JScript 的個別 DE 實作時，VBScript 和 JScript 會共用單一的規定。
 
  規定適用於解譯器或作業的系統，以提供執行控制、 中斷點、 和運算式評估為這類偵錯服務。 這些服務透過 DE 介面實作，而且可能會造成偵錯工具不同的作業模式之間轉換。 如需詳細資訊，請參閱 <<c0> [ 作業模式](../../extensibility/debugger/operational-modes.md)。
 
  建立 DE 包含下列步驟：
 
-1.  使用 Visual Studio 註冊 DE
+1. 使用 Visual Studio 註冊 DE
 
-2.  啟用要偵錯程式
+2. 啟用要偵錯程式
 
-3.  實作執行控制和狀態評估
+3. 實作執行控制和狀態評估
 
-4.  傳送事件
+4. 傳送事件
 
-5.  設定終止並中斷連結
+5. 設定終止並中斷連結
 
 ## <a name="in-this-section"></a>本節內容
  [註冊自訂的偵錯引擎](../../extensibility/debugger/registering-a-custom-debug-engine.md)說明使用 Visual Studio 中偵錯引擎註冊，讓它可以用所需的步驟。

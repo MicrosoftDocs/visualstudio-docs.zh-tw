@@ -1,14 +1,9 @@
 ---
-title: IPropertyProxyProvider |Microsoft Docs
-ms.custom: ''
+title: IPropertyProxyProvider | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IPropertyProxyProvider
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 52e9f7fc-6fe0-4d23-890b-5673dca8c3cb
 caps.latest.revision: 12
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 7c80783260f5a54e45ee15f1955d6c2d05a6747d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 39cdc7769765a7680905fca5faa49222bf0a3b6d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51743079"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65700037"
 ---
 # <a name="ipropertyproxyprovider"></a>IPropertyProxyProvider
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -39,7 +34,7 @@ IPropertyProxyProvider : IUnknown
  運算式評估工具 (EE) 實作的相同物件上實作這個介面[IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) EE 支援的類型視覺化檢視的介面。  
   
 ## <a name="notes-for-callers"></a>呼叫端資訊  
- 呼叫[QueryInterface](http://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3)上`IDebugProperty3`介面，以取得此介面。  
+ 呼叫[QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3)上`IDebugProperty3`介面，以取得此介面。  
   
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法  
  `IPropertyProxyProvider`介面會實作下列方法：  
@@ -54,13 +49,12 @@ IPropertyProxyProvider : IUnknown
 ## <a name="requirements"></a>需求  
  標頭： msdbg.h  
   
- 命名空間： Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間：Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
  [核心介面](../../../extensibility/debugger/reference/core-interfaces.md)   
  [GetPropertyProxy](../../../extensibility/debugger/reference/ieevisualizerservice-getpropertyproxy.md)   
  [類型視覺化檢視和自訂檢視器](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md)   
  [視覺化及檢視資料](../../../extensibility/debugger/visualizing-and-viewing-data.md)
-

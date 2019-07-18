@@ -9,17 +9,17 @@ helpviewer_keywords:
 - SupportsCodeSeparation element [Visual Studio Templates]
 - <SupportsCodeSeparation> element [Visual Studio Templates]
 ms.assetid: 8112aac8-a269-40e5-b92b-9b9a6ff5a542
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 504e176973cd9bb6f0041254e0de19d675be05df
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 3a4a9e7ba92b9f48cf22999d53ecf6c7b7d832ab
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56716463"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66316941"
 ---
 # <a name="supportscodeseparation-element-visual-studio-templates"></a>SupportsCodeSeparation 項目 (Visual Studio 範本)
 指定是否**程式碼置於個別的檔案**中已啟用 核取方塊**加入新項目** 對話方塊。

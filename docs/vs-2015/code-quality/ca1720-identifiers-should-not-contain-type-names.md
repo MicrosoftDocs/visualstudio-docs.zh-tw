@@ -1,14 +1,9 @@
 ---
-title: CA1720： 識別項不可以包含類型名稱 |Microsoft Docs
-ms.custom: ''
+title: CA1720:識別項不應包含類型名稱 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1720
 - IdentifiersShouldNotContainTypeNames
@@ -20,14 +15,14 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: ec0980d312d4a65a770e63f0a23203a7e95c546f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 504c985bd276a891b76e8c9b2a7c0ef51c3a490a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49862330"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62576714"
 ---
-# <a name="ca1720-identifiers-should-not-contain-type-names"></a>CA1720：識別項不應包含類型名稱
+# <a name="ca1720-identifiers-should-not-contain-type-names"></a>CA1720:識別項名稱不應該包含類型名稱
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -79,15 +74,15 @@ ms.locfileid: "49862330"
 
 - 浮動
 
-- float32
+- Float32
 
-- float64
+- Float64
 
   此外，參數的名稱也使核對下列的語言無關的資料型別名稱，不區分大小寫的方式：
 
 - Object
 
-- obj
+- Obj
 
 - Boolean
 
@@ -146,13 +141,10 @@ ms.locfileid: "49862330"
  偶爾使用的類型為基礎的參數和成員的名稱可能是適當的。 不過，對於新的開發，沒有已知您應該在其中隱藏此規則的警告發生的案例。 對於有舊版隨附的程式庫，您可能必須隱藏此規則的警告。
 
 ## <a name="related-rules"></a>相關的規則
- [CA1709：識別項名稱應該使用正確的大小寫](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
+ [CA1709:識別項應該使用正確的大小寫](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
 
- [CA1708：識別項名稱不應該只靠大小寫區別](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
+ [CA1708:識別項應該不僅為大小寫不同](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
 
- [CA1707：識別項名稱不應該包含底線](../code-quality/ca1707-identifiers-should-not-contain-underscores.md)
+ [CA1707:識別項不應該包含底線](../code-quality/ca1707-identifiers-should-not-contain-underscores.md)
 
- [CA1719：參數名稱不應該和成員名稱相符](../code-quality/ca1719-parameter-names-should-not-match-member-names.md)
-
-
-
+ [CA1719:參數名稱不應該和成員名稱相符](../code-quality/ca1719-parameter-names-should-not-match-member-names.md)

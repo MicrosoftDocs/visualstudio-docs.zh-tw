@@ -1,14 +1,9 @@
 ---
 title: 安全性、 版本設定和 ClickOnce 部署中的資訊清單問題 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -28,13 +23,13 @@ ms.assetid: d5d0c90b-ac1a-44e2-88dc-0d0ffd881624
 caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 77685b2eb6397d1edf9a342c25838fcefac2e619
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: a4864d37cb5930075b292ee765bce9b288794019
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49289220"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444985"
 ---
 # <a name="security-versioning-and-manifest-issues-in-clickonce-deployments"></a>ClickOnce 部署中的安全性、版本控制和資訊清單問題
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -72,11 +67,11 @@ ms.locfileid: "49289220"
   
  如果您已經手動編輯您的部署或應用程式資訊清單，您可能會不小心損壞了。 損毀的資訊清單可防止正確[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]安裝。 您可以按一下這類錯誤偵錯執行階段**詳細資料**上**ClickOnce 錯誤** 對話方塊中，以及讀取記錄檔中的錯誤訊息。 記錄檔會列出下列訊息之一：  
   
--   語法錯誤的行號和字元的描述發生錯誤的位置。  
+- 語法錯誤的行號和字元的描述發生錯誤的位置。  
   
--   項目或屬性中的資訊清單結構描述的違規所使用的名稱。 如果您已手動新增 XML，以您的資訊清單，您必須比較您新增至資訊清單的結構描述。 如需詳細資訊，請參閱 < [ClickOnce 部署資訊清單](../deployment/clickonce-deployment-manifest.md)並[ClickOnce 應用程式資訊清單](../deployment/clickonce-application-manifest.md)。  
+- 項目或屬性中的資訊清單結構描述的違規所使用的名稱。 如果您已手動新增 XML，以您的資訊清單，您必須比較您新增至資訊清單的結構描述。 如需詳細資訊，請參閱 < [ClickOnce 部署資訊清單](../deployment/clickonce-deployment-manifest.md)並[ClickOnce 應用程式資訊清單](../deployment/clickonce-application-manifest.md)。  
   
--   ID 衝突。 部署和應用程式資訊清單中的相依性參考必須是唯一在其`name`和`publicKeyToken`屬性。 如果這兩個屬性符合資訊清單內任何兩個項目之間，資訊清單剖析將不會成功。  
+- ID 衝突。 部署和應用程式資訊清單中的相依性參考必須是唯一在其`name`和`publicKeyToken`屬性。 如果這兩個屬性符合資訊清單內任何兩個項目之間，資訊清單剖析將不會成功。  
   
 ## <a name="precautions-when-manually-changing-manifests-or-applications"></a>如果以手動方式變更的資訊清單或應用程式的預防措施  
  當您更新應用程式資訊清單時，您必須重新簽署應用程式資訊清單和部署資訊清單。 部署資訊清單包含應用程式資訊清單，其中包含該檔案的雜湊和數位簽章的參考。  
@@ -93,12 +88,9 @@ ms.locfileid: "49289220"
  如果您想要移動或複製的應用程式，您也必須更新`deploymentProvider`路徑，以便在用戶端實際安裝從新位置。 如果您已安裝應用程式時，就更新此路徑是尤其重要。 針對透過原始 URL，設定永遠啟動的線上應用程式`deploymentProvider`是選擇性的。 如果`deploymentProvider`時，就會生效; 否則用來啟動應用程式的 URL 用以做為基底 URL 下載應用程式檔案。  
   
 > [!NOTE]
->  將資訊清單更新每次您必須再次加以簽署。  
+> 將資訊清單更新每次您必須再次加以簽署。  
   
 ## <a name="see-also"></a>另請參閱  
  [疑難排解 ClickOnce 部署](../deployment/troubleshooting-clickonce-deployments.md)   
  [保護 ClickOnce 應用程式](../deployment/securing-clickonce-applications.md)   
  [選擇 ClickOnce 部署策略](../deployment/choosing-a-clickonce-deployment-strategy.md)
-
-
-

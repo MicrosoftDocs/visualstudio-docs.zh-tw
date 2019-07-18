@@ -14,17 +14,17 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 2a4502be6c683376b93bc144ef5b3568550a1c9e
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54834347"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62584031"
 ---
 # <a name="da0021-high-rate-of-gen-1-garbage-collections"></a>DA0021：高比率的 Gen 1 記憶體回收
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 規則 Id |DA0021 |  
-|類別目錄 |。.NET Framework 使用方式 |  
+|類別目錄 |.NET Framework 使用方式 |  
 |程式碼剖析方法 |所有 |  
 |訊息 |沒有相當高比率的 Gen 1 回收。 如果您設計讓大部分程式的資料結構配置並持續一段很長的時間，這通常不是問題。 不過，如果這不是預期的行為，您的應用程式可能正鎖定物件。 如果您不確定，可以收集 .NET 記憶體配置資料和物件存留期資訊，了解應用程式所使用之記憶體配置的模式。|  
 |規則類型 |資訊 |  

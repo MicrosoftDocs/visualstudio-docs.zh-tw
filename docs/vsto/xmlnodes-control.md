@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3650c06b38ab139c6c4bcc26033922c284dd1184
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 9ad16165924a33a25dab2b1cfb49a0a7bbfe0875
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56604141"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63421541"
 ---
 # <a name="xmlnodes-control"></a>XMLNodes 控制項
   **重要**本主題有關 Microsoft Word 中設定的資訊是提供專門用於權益與使用個人和組織使用者位於外部皒玿璅其領域，或使用，或開發在執行的程式，第 2010 年 1 月 Microsoft 何時移除特定功能的實作之前由 Microsoft 所授權的 Microsoft Word 產品與自訂 XML 從 Microsoft Word。 有關 Microsoft Word 的這項資訊可能不會讀取或使用的個人或組織在美國或其區域使用，或開發在 2010 年 1 月 10 日之後由 Microsoft 所授權的 Microsoft Word 產品執行的程式;這些產品無法運作此日期之前的授權或購買，以在美國以外的使用授權的產品相同。
@@ -30,7 +30,7 @@ ms.locfileid: "56604141"
  Visual Studio 會建立 XML 節點的集合之後，您可以直接而不必周遊 Word 物件模型程式對控制項。 <xref:Microsoft.Office.Tools.Word.XMLNodes>可刪除控制項只能由從文件中移除的項目對應。
 
 > [!NOTE]
->  如果您存取的子元素<xref:Microsoft.Office.Tools.Word.XMLNodes>透過控制<xref:Microsoft.Office.Tools.Word.XMLNodes.Item%2A>屬性，它會傳回<xref:Microsoft.Office.Interop.Word.XMLNode>物件而非<xref:Microsoft.Office.Tools.Word.XMLNode>控制項。 如需詳細資訊，請參閱 <<c0> [ 主項目和主控制項的程式設計限制](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)。
+> 如果您存取的子元素<xref:Microsoft.Office.Tools.Word.XMLNodes>透過控制<xref:Microsoft.Office.Tools.Word.XMLNodes.Item%2A>屬性，它會傳回<xref:Microsoft.Office.Interop.Word.XMLNode>物件而非<xref:Microsoft.Office.Tools.Word.XMLNode>控制項。 如需詳細資訊，請參閱 <<c0> [ 主項目和主控制項的程式設計限制](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)。
 
 ## <a name="bind-data-to-the-control"></a>將資料繫結至控制項
  <xref:Microsoft.Office.Tools.Word.XMLNodes>控制項不支援資料繫結。 這是因為<xref:Microsoft.Office.Tools.Word.XMLNodes>控制項並沒有複雜資料繫結功能，而且不能代表簡單資料繫結重複資料。
@@ -41,21 +41,21 @@ ms.locfileid: "56604141"
 ## <a name="events"></a>事件
  事件可供<xref:Microsoft.Office.Tools.Word.XMLNodes>顯示的項目：
 
--   <xref:Microsoft.Office.Tools.Word.XMLNodes.AfterInsert>
+- <xref:Microsoft.Office.Tools.Word.XMLNodes.AfterInsert>
 
--   <xref:Microsoft.Office.Tools.Word.XMLNodes.BeforeDelete>
+- <xref:Microsoft.Office.Tools.Word.XMLNodes.BeforeDelete>
 
--   <xref:Microsoft.Office.Tools.Word.XMLNodes.ContextEnter>
+- <xref:Microsoft.Office.Tools.Word.XMLNodes.ContextEnter>
 
--   <xref:Microsoft.Office.Tools.Word.XMLNodes.ContextLeave>
+- <xref:Microsoft.Office.Tools.Word.XMLNodes.ContextLeave>
 
--   <xref:Microsoft.Office.Tools.Word.XMLNodes.Deselect>
+- <xref:Microsoft.Office.Tools.Word.XMLNodes.Deselect>
 
--   <xref:System.ComponentModel.IComponent.Disposed>
+- <xref:System.ComponentModel.IComponent.Disposed>
 
--   <xref:Microsoft.Office.Tools.Word.XMLNodes.Select>
+- <xref:Microsoft.Office.Tools.Word.XMLNodes.Select>
 
--   <xref:Microsoft.Office.Tools.Word.XMLNodes.ValidationError>
+- <xref:Microsoft.Office.Tools.Word.XMLNodes.ValidationError>
 
 ## <a name="compare-events"></a>比較事件
  您可以擷取的事件，當使用者將他或她的特定內容中的資料指標<xref:Microsoft.Office.Tools.Word.XMLNodes>控制項。 例如，您可能會有<xref:Microsoft.Office.Tools.Word.XMLNodes>控制項，名為`Customer`具有子系<xref:Microsoft.Office.Tools.Word.XMLNodes>控制項，名為`Company`，和`Company`具有兩個子<xref:Microsoft.Office.Tools.Word.XMLNodes>控制項名為`CompanyName`和`CompanyRegion`，如下所示：

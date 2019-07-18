@@ -19,13 +19,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4ff16a1443b05dc7021406cde03a4153f3234602
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227429"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62905898"
 ---
-# <a name="how-to-write-a-run-time-error-reporting-function-c"></a>如何：撰寫執行階段錯誤報告函式 (C++)
+# <a name="how-to-write-a-run-time-error-reporting-function-c"></a>HOW TO：撰寫執行階段錯誤報告函式 (C++)
 執行階段錯誤的自訂報告函式，它必須具有與 `_CrtDbgReportW` 相同的宣告。 它應該向偵錯工具傳回值 1。
 
 下列範例顯示如何定義自訂報告函式：
@@ -122,5 +122,5 @@ int main()
 }
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 [自訂原生執行階段檢查](../debugger/native-run-time-checks-customization.md)

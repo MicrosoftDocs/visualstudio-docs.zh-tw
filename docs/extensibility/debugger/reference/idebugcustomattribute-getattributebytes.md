@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugCustomAttribute::GetAttributeBytes
 ms.assetid: cf34583b-6530-4dcc-89f8-eb27e4e8d594
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 188cc4e8b1c58a7fd8f9f1c99b8d5f544710ef8c
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 551261414db9fab97f3e8c2a8fdbe518143d79c5
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56711263"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66315188"
 ---
 # <a name="idebugcustomattributegetattributebytes"></a>IDebugCustomAttribute::GetAttributeBytes
 取得屬性資訊為 blob (位元組）。
@@ -38,14 +41,12 @@ int GetAttributeBytes(
 );
 ```
 
-#### <a name="parameters"></a>參數
- `ppBlob`
+## <a name="parameters"></a>參數
+`ppBlob`\
+[in、 out]陣列，其中會填入屬性的位元組。
 
- [in、 out]陣列，其中會填入屬性的位元組。
-
- `pdwLen`
-
- [in、 out]指定要傳回的位元組數目上限`ppBlob`陣列並傳回實際寫入至陣列的位元組數目。
+`pdwLen`\
+[in、 out]指定要傳回的位元組數目上限`ppBlob`陣列並傳回實際寫入至陣列的位元組數目。
 
 ## <a name="return-value"></a>傳回值
  如果成功，會傳回 S_OK;否則，傳回錯誤碼。

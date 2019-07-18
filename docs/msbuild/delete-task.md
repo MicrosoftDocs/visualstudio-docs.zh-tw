@@ -19,11 +19,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4995d948cc4ad452da1585404987e3feb15e233e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56610287"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62821100"
 ---
 # <a name="delete-task"></a>Delete 工作
 刪除指定的檔案。

@@ -1,27 +1,22 @@
 ---
 title: 選項頁的自動化支援 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Tools Options pages [Visual Studio SDK], automation support
 - automation [Visual Studio SDK], creating Tools Options pages
 ms.assetid: 0b25b82c-7432-4e0a-9e84-350269ba8260
 caps.latest.revision: 30
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 6205d01547f7243234facfb43db80303c9b71c51
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 7cb2634f5a16c62222cf360065cae0c22aef6667
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51720251"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68157238"
 ---
 # <a name="automation-support-for-options-pages"></a>選項頁的自動化支援
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -45,4 +40,3 @@ Vspackage 可以提供自訂**選項**對話方塊來**工具**中的功能表 �
   
 ## <a name="see-also"></a>另請參閱  
  [公開專案物件](../../extensibility/internals/exposing-project-objects.md)
-

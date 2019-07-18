@@ -13,18 +13,18 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1120b85ded35dbbe9c8c038350080e4071b19cf8
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: b8b1793fc1a3aacb27cc612bb5212dc33e7ab7dc
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58152219"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436049"
 ---
 # <a name="idebugapplicationnode100getexcludeddocuments"></a>IDebugApplicationNode100::GetExcludedDocuments
 取得指定的篩選條件會隱藏文字文件。  
   
 > [!IMPORTANT]
->  [IDebugApplicationNode100 介面](../../winscript/reference/idebugapplicationnode100-interface.md)是由 PDM v10.0 實作和更新版本。 可在 activdbg100.h 中找到。  
+> [IDebugApplicationNode100 介面](../../winscript/reference/idebugapplicationnode100-interface.md)是由 PDM v10.0 實作和更新版本。 可在 activdbg100.h 中找到。  
   
 ## <a name="syntax"></a>語法  
   

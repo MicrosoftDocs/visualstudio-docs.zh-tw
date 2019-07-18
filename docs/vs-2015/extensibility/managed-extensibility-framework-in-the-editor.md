@@ -1,26 +1,21 @@
 ---
 title: Managed Extensibility Framework，在編輯器中的 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - using MEF for extensions
 ms.assetid: 3f59a285-6c33-4ae3-a4fb-ec1f5aa21bd1
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 41d5768c8cfddc3474616d7a2eee16b84cd24d56
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f19b71c86d972b59a9d46f379bf7ec93f63aeb9a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51754692"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65679949"
 ---
 # <a name="managed-extensibility-framework-in-the-editor"></a>編輯器中的 Managed Extensibility Framework
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +27,7 @@ ms.locfileid: "51754692"
   
  MEF 被包含在.NET Framework 第 4 版 System.ComponentModel.Composition.dll 組件中。  
   
- 如需 MEF 的詳細資訊，請參閱[Managed Extensibility Framework (MEF)](http://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde)。  
+ 如需 MEF 的詳細資訊，請參閱[Managed Extensibility Framework (MEF)](https://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde)。  
   
 ### <a name="component-parts-and-composition-containers"></a>元件組件和組合容器  
  將元件組件是類別或類別的成員可以執行其中一個 （或兩者） 下列：  
@@ -89,26 +84,25 @@ internal IClassificationTypeRegistryService ClassificationRegistry;
   
 #### <a name="to-consume-editor-functionality-from-a-mef-component-part"></a>若要使用的 MEF 元件組件的編輯器功能  
   
-1.  將參考加入 System.Composition.ComponentModel.dll，也就是在全域組件快取 (GAC)，以及編輯器的組件。  
+1. 將參考加入 System.Composition.ComponentModel.dll，也就是在全域組件快取 (GAC)，以及編輯器的組件。  
   
-2.  加入相關 using 陳述式。  
+2. 加入相關 using 陳述式。  
   
     ```  
     using System.ComponentModel.Composition;  
     using Microsoft.VisualStudio.Text;  
     ```  
   
-3.  新增`[Import]`屬性至您的服務介面，如下所示。  
+3. 新增`[Import]`屬性至您的服務介面，如下所示。  
   
     ```  
     [Import]  
     ITextBufferFactoryService textBufferService;  
     ```  
   
-4.  當您取得的服務時，您可以使用其元件的任何一個。  
+4. 當您取得的服務時，您可以使用其元件的任何一個。  
   
-5.  當您編譯您的組件中，然後再將它放在...您的 Visual Studio 安裝 \Common7\IDE\Components\ 資料夾。  
+5. 當您編譯您的組件中，然後再將它放在...您的 Visual Studio 安裝 \Common7\IDE\Components\ 資料夾。  
   
 ## <a name="see-also"></a>另請參閱  
  [語言服務及編輯器擴充點](../extensibility/language-service-and-editor-extension-points.md)
-

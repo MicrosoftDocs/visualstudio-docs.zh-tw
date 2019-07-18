@@ -1,14 +1,9 @@
 ---
 title: IDebugActivateDocumentEvent2::GetDocument |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugActivateDocumentEvent2::GetDocument
 helpviewer_keywords:
@@ -17,13 +12,13 @@ helpviewer_keywords:
 ms.assetid: b3c32f1b-f3de-409d-920d-ba7b3fa84fcd
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 49d6d3c28ec53a625754c4a91f890a1f4d011e78
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 2b159fe71c75acbeb6a0220af76ab13cf7b40e20
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51759188"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68186723"
 ---
 # <a name="idebugactivatedocumentevent2getdocument"></a>IDebugActivateDocumentEvent2::GetDocument
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -54,4 +49,3 @@ int GetDocument ( 
 ## <a name="see-also"></a>另請參閱  
  [IDebugActivateDocumentEvent2](../../../extensibility/debugger/reference/idebugactivatedocumentevent2.md)   
  [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)
-

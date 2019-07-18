@@ -6,17 +6,17 @@ helpviewer_keywords:
 - deploy packages
 - publish extension
 ms.assetid: b6c82167-e2a5-4cff-8c8b-2d72e2a9092c
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 972b0b777cda837b246de4a208337c4e369139c4
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: cc2600a6c72e13ba7d894dab84f0b8a171d5a43e
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58194628"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66322828"
 ---
 # <a name="vsix-project-template"></a>VSIX 專案範本
 
@@ -80,7 +80,7 @@ VSIX 專案範本有兩個主要用途：
 
 8. 建置方案。
 
-    [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 建置 *.vsix*檔案，其中包含 VSIX 資訊清單檔案，[Content_Types]*.xml*檔案，以及所有您加入至專案的延伸模組資產。
+    [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 建置 *.vsix*檔案，其中包含 VSIX 資訊清單檔案，[Content_Types] *.xml*檔案，以及所有您加入至專案的延伸模組資產。
 
 ## <a name="see-also"></a>另請參閱
 

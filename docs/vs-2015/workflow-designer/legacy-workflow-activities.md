@@ -1,11 +1,8 @@
 ---
 title: 舊版工作流程活動 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 helpviewer_keywords:
 - workflows, activities
@@ -15,13 +12,13 @@ ms.assetid: 4af7a06b-1e82-43c8-aec8-0dc5fb63d08a
 caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 6ff21a431e380a281ce1261215367b89c4ecf1a3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: fa5a6da8d45435fc7c755905a19e95e90a98ad57
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49205394"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63000160"
 ---
 # <a name="legacy-workflow-activities"></a>舊版工作流程活動
 [!INCLUDE[wf](../includes/wf-md.md)] 包括一組預設的活動，這組活動提供許多功能，如控制流程、條件、事件處理、狀態管理，以及與應用程式和服務相互通訊。 設計工作流程時，您可以使用 [!INCLUDE[wfd1](../includes/wfd1-md.md)] 系統提供的活動，或者建立自訂活動。  
@@ -62,7 +59,7 @@ ms.locfileid: "49205394"
 |[SynchronizationScopeActivity](http://go.microsoft.com/fwlink?LinkID=65057)|在同步化領域中循序執行所包含的活動。 [!INCLUDE[crdefault](../includes/crdefault-md.md)][使用 SynchronizationScopeActivity 活動](http://go.microsoft.com/fwlink?LinkID=65085)。|  
 |[TerminateActivity](http://go.microsoft.com/fwlink?LinkID=65058)|讓您能夠在發生錯誤狀況時立即結束工作流程的作業。 [!INCLUDE[crdefault](../includes/crdefault-md.md)][使用 TerminateActivity 活動](http://go.microsoft.com/fwlink?LinkID=65086)。|  
 |[ThrowActivity](http://go.microsoft.com/fwlink?LinkID=65059)|讓您能夠擷取擲回的商務例外狀況，做為工作流程其中繼資料程序的一部分。 [!INCLUDE[crdefault](../includes/crdefault-md.md)][使用 ThrowActivity 活動](http://go.microsoft.com/fwlink?LinkID=65087)。|  
-|[TransactionScopeActivity](http://go.microsoft.com/fwlink?LinkID=65093)|提供異動和例外狀況處理的架構。 如需詳細資訊，請參閱 <<c0> [ 使用 TransactionScopeActivity 活動](http://go.microsoft.com/fwlink?LinkID=65088)。|  
+|[TransactionScopeActivity](http://go.microsoft.com/fwlink?LinkID=65093)|提供交易和例外狀況處理的架構。 如需詳細資訊，請參閱 <<c0> [ 使用 TransactionScopeActivity 活動](http://go.microsoft.com/fwlink?LinkID=65088)。|  
 |[WebServiceFaultActivity](http://go.microsoft.com/fwlink?LinkID=65046)|讓您將 Web 服務錯誤的發生頻率製成模型。 [!INCLUDE[crdefault](../includes/crdefault-md.md)][使用 WebServiceFaultActivity 活動](http://go.microsoft.com/fwlink?LinkID=65089)。|  
 |[WebServiceInputActivity](http://go.microsoft.com/fwlink?LinkID=65047)|從 Web 服務接收資料。 [!INCLUDE[crdefault](../includes/crdefault-md.md)][使用 WebServiceInputActivity 活動](http://go.microsoft.com/fwlink?LinkID=65090)。|  
 |[WebServiceOutputActivity](http://go.microsoft.com/fwlink?LinkID=65048)|回應對工作流程提出的 Web 服務要求。 [!INCLUDE[crdefault](../includes/crdefault-md.md)][使用 WebServiceOutputActivity 活動](http://go.microsoft.com/fwlink?LinkID=65092)。|  

@@ -1,12 +1,9 @@
 ---
-title: 如何： 將命令加入至捷徑功能表 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：將命令加入至捷徑功能表 |Microsoft Docs
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language Tools, walkthroughs
 - walkthroughs [Domain-Specific Language Tools]
@@ -14,15 +11,15 @@ ms.assetid: cd550399-05fc-4dbf-be4c-f5094bb752ce
 caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: e7d15c1991ee70a0b1a163c8968e42fe450b7919
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 5bcb562d89ee68320c48cc778be3294a2af5c719
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49833514"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63426937"
 ---
-# <a name="how-to-add-a-command-to-the-shortcut-menu"></a>如何：在捷徑功能表中加入命令
+# <a name="how-to-add-a-command-to-the-shortcut-menu"></a>HOW TO：在捷徑功能表中新增命令
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 您可以將功能表命令加入網域指定的語言 (DSL)，以便您的使用者可以執行專屬 DSL 的工作。 當使用者以滑鼠右鍵按一下圖表時，命令會出現在內容 (捷徑) 功能表上。 您可以定義命令，使它只在特定的情況下出現在功能表中。 例如，您可以使命令只在使用者按一下特定類型的項目或處於特定狀態的項目時才可見。  
@@ -38,7 +35,7 @@ ms.locfileid: "49833514"
    如需範例，請參閱[Visualization and Modeling SDK 網站](http://go.microsoft.com/fwlink/?LinkID=185579)。  
   
 > [!NOTE]
->  您也可以覆寫 CommandSet.cs 中的方法，即可修改部分現有命令 (例如剪下、貼上、全選和列印) 的行為。 如需詳細資訊，請參閱 <<c0> [ 如何： 修改標準功能表命令](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)。  
+> 您也可以覆寫 CommandSet.cs 中的方法，即可修改部分現有命令 (例如剪下、貼上、全選和列印) 的行為。 如需詳細資訊，請參閱[如何：修改標準功能表命令](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)。  
   
 ## <a name="defining-a-command-using-mef"></a>使用 MEF 定義命令  
  Managed Extension Framework (MEF) 提供在圖表功能表上定義功能表命令的替代方法。 它的主要用途是讓您或其他方可以擴充 DSL。 使用者可以選擇僅安裝 DSL，也可以安裝 DSL 和擴充功能。 然而，在 DSL 上啟用 MEF 的初始工作之後，MEF 也會減少定義捷徑功能表命令的工作。  
@@ -55,7 +52,7 @@ ms.locfileid: "49833514"
   
    否則，請考慮使用 MEF 方法來定義命令。 如需詳細資訊，請參閱 <<c0> [ 藉由使用 MEF 擴充您的 DSL](../modeling/extend-your-dsl-by-using-mef.md)。  
   
-##  <a name="VSCT"></a> 宣告在 Commands.Vsct 中命令  
+## <a name="VSCT"></a> 宣告在 Commands.Vsct 中命令  
  功能表命令在 DslPackage\Commands.vsct 中宣告。 這些定義指定功能表項目的標籤以及它們在功能表上的顯示位置。  
   
  檔案進行編輯，Commands.vsct 會從數個位於目錄中的.h 檔案匯入定義*Visual Studio SDK 安裝路徑*\VisualStudioIntegration\Common\Inc。它還包括從 DSL 定義產生的 GeneratedVsct.vsct。  
@@ -64,9 +61,9 @@ ms.locfileid: "49833514"
   
 #### <a name="to-add-the-command"></a>加入命令  
   
-1.  在 **方案總管**下方**DslPackage**專案中，開啟 Commands.vsct。  
+1. 在 **方案總管**下方**DslPackage**專案中，開啟 Commands.vsct。  
   
-2.  在 `Commands` 項目中，定義一或多個按鈕和群組。 A * 按鈕*是功能表中的項目。 A*群組*是功能表中的區段。 若要定義這些項目，請加入下列項目：  
+2. 在 `Commands` 項目中，定義一或多個按鈕和群組。 A  *按鈕*是功能表中的項目。 A*群組*是功能表中的區段。 若要定義這些項目，請加入下列項目：  
   
     ```  
     <!-- Define a group - a section in the menu -->  
@@ -93,9 +90,9 @@ ms.locfileid: "49833514"
     ```  
   
     > [!NOTE]
-    >  每一個按鈕或群組都是以 GUID 和整數 ID 識別。 您可以使用相同的 GUID 建立數個群組和按鈕。 不過，它們必須具有不同的 ID。 GUID 名稱和 ID 名稱會轉譯成的實際 Guid 和數字 Id 在`<Symbols>`節點。  
+    > 每一個按鈕或群組都是以 GUID 和整數 ID 識別。 您可以使用相同的 GUID 建立數個群組和按鈕。 不過，它們必須具有不同的 ID。 GUID 名稱和 ID 名稱會轉譯成的實際 Guid 和數字 Id 在`<Symbols>`節點。  
   
-3.  為命令加入可見度限制，令其只在網域指定的語言之內容中載入。 如需詳細資訊，請參閱 < [VisibilityConstraints 元素](../extensibility/visibilityconstraints-element.md)。  
+3. 為命令加入可見度限制，令其只在網域指定的語言之內容中載入。 如需詳細資訊，請參閱 < [VisibilityConstraints 元素](../extensibility/visibilityconstraints-element.md)。  
   
      若要這麼做，請在 `CommandTable` 項目之後的 `Commands` 項目中加入下列項目。  
   
@@ -107,7 +104,7 @@ ms.locfileid: "49833514"
     </VisibilityConstraints>  
     ```  
   
-4.  定義用於 GUID 和 ID 的名稱。 若要這麼做，請在 `Symbols` 項目之後的 `CommandTable` 項目中加入 `Commands` 項目。  
+4. 定義用於 GUID 和 ID 的名稱。 若要這麼做，請在 `Symbols` 項目之後的 `CommandTable` 項目中加入 `Commands` 項目。  
   
     ```  
     <Symbols>  
@@ -120,52 +117,52 @@ ms.locfileid: "49833514"
     </Symbols>  
     ```  
   
-5.  將 `{000...000}` 取代為識別您群組和功能表項目的 GUID。 若要取得新的 GUID，請使用**建立 GUID**工具**工具**功能表。  
+5. 將 `{000...000}` 取代為識別您群組和功能表項目的 GUID。 若要取得新的 GUID，請使用**建立 GUID**工具**工具**功能表。  
   
     > [!NOTE]
-    >  如果您加入更多群組或功能表項目，您就可以使用相同的 GUID。 不過，您必須為 `IDSymbols` 使用新的值。  
+    > 如果您加入更多群組或功能表項目，您就可以使用相同的 GUID。 不過，您必須為 `IDSymbols` 使用新的值。  
   
-6.  在您從此程序複製的程式碼中，將每個出現的下列字串取代為您自己的字串：  
+6. 在您從此程序複製的程式碼中，將每個出現的下列字串取代為您自己的字串：  
   
-    -   `grpidMyMenuGroup`  
+    - `grpidMyMenuGroup`  
   
-    -   `cmdidMyContextMenuCommand`  
+    - `cmdidMyContextMenuCommand`  
   
-    -   `guidCustomMenuCmdSet`  
+    - `guidCustomMenuCmdSet`  
   
-    -   `My Context Menu Command`  
+    - `My Context Menu Command`  
   
-##  <a name="version"></a> 更新 Package.tt 中的套件版本  
+## <a name="version"></a> 更新 Package.tt 中的套件版本  
  每當您加入或變更命令時，請先更新套用到套件類別的 `version` 之 <xref:Microsoft.VisualStudio.Shell.ProvideMenuResourceAttribute> 參數，然後再發行網域指定語言的新版本。  
   
  由於套件類別定義於產生的檔案，因此請更新文字範本檔案中產生 Package.cs 檔的屬性。  
   
 #### <a name="to-update-the-packagett-file"></a>更新 Package.tt 檔  
   
-1.  在 [**方案總管] 中**，請在**DslPackage**專案，在**GeneratedCode**資料夾中，開啟 Package.tt 檔。  
+1. 在 [**方案總管] 中**，請在**DslPackage**專案，在**GeneratedCode**資料夾中，開啟 Package.tt 檔。  
   
-2.  找出 `ProvideMenuResource` 屬性。  
+2. 找出 `ProvideMenuResource` 屬性。  
   
-3.  遞增屬性的 `version` 參數，這是第二個參數。 您可以依需要明確撰寫參數名稱以提醒您其用途。 例如:   
+3. 遞增屬性的 `version` 參數，這是第二個參數。 您可以依需要明確撰寫參數名稱以提醒您其用途。 例如:  
   
      `[VSShell::ProvideMenuResource("1000.ctmenu", version: 2 )]`  
   
-##  <a name="CommandSet"></a> 定義命令的行為  
- 您的 DSL 已經有一些命令，這些命令實作於 DslPackage\GeneratedCode\CommandSet.cs 中宣告的部分類別。 若要加入新的命令，您必須建立含有相同類別之部分宣告的新檔案，以擴充此類別。 類別的名稱通常是 *\<YourDslName >*`CommandSet`。 以驗證類別的名稱並檢查其內容開頭非常有用。  
+## <a name="CommandSet"></a> 定義命令的行為  
+ 您的 DSL 已經有一些命令，這些命令實作於 DslPackage\GeneratedCode\CommandSet.cs 中宣告的部分類別。 若要加入新的命令，您必須建立含有相同類別之部分宣告的新檔案，以擴充此類別。 類別的名稱通常是 *\<YourDslName >* `CommandSet`。 以驗證類別的名稱並檢查其內容開頭非常有用。  
   
  命令集類別衍生自 <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet>。  
   
 #### <a name="to-extend-the-commandset-class"></a>擴充 CommandSet 類別  
   
-1.  在 [方案總管] 的 DslPackage 專案中，開啟 [GeneratedCode] 資料夾，然後查看 CommandSet.tt 下方並開啟其產生的檔案 CommandSet.cs。 記下檔案中定義的命名空間和第一個類別的名稱。 例如，您可能會看到：  
+1. 在 [方案總管] 的 DslPackage 專案中，開啟 [GeneratedCode] 資料夾，然後查看 CommandSet.tt 下方並開啟其產生的檔案 CommandSet.cs。 記下檔案中定義的命名空間和第一個類別的名稱。 例如，您可能會看到：  
   
      `namespace Company.Language1`  
   
      `{ ...  internal partial class Language1CommandSet : ...`  
   
-2.  在  **DslPackage**，建立名為的資料夾**自訂程式碼**。 在此資料夾中，建立新的類別檔案，稱為`CommandSet.cs`。  
+2. 在  **DslPackage**，建立名為的資料夾**自訂程式碼**。 在此資料夾中，建立新的類別檔案，稱為`CommandSet.cs`。  
   
-3.  在新檔案中，撰寫具有與產生部分類別相同之命名空間和名稱的部分宣告。 例如:   
+3. 在新檔案中，撰寫具有與產生部分類別相同之命名空間和名稱的部分宣告。 例如:  
   
      `namespace Company.Language1 /* Make sure this is correct */`  
   
@@ -245,7 +242,7 @@ private void OnStatusMyContextMenuCommand(object sender, EventArgs e)
 ### <a name="define-what-the-command-does"></a>定義命令執行的動作  
  對每一個命令定義 `OnMenu...` 方法，執行使用者按一下功能表命令時的必要動作。  
   
- 如果您變更模型項目，您必須在異動內進行。 如需詳細資訊，請參閱 <<c0> [ 如何： 修改標準功能表命令](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)。  
+ 如果您變更模型項目，您必須在異動內進行。 如需詳細資訊，請參閱[如何：修改標準功能表命令](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)。  
   
  在本範例中，`ClassShape`、`ModelClass` 和 `Comment` 是在 DSL (衍生自「類別圖 DSL」範本) 中所定義的類型。  
   
@@ -286,7 +283,7 @@ private void OnMenuMyContextMenuCommand(object sender, EventArgs e)
 }  
 ```  
   
- 如需有關如何在模型中，巡覽物件物件，以及有關如何建立物件和連結的詳細資訊，請參閱[如何： 修改標準功能表命令](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)。  
+ 如需有關如何在模型中，巡覽物件物件，以及有關如何建立物件和連結的詳細資訊，請參閱[How to:修改標準功能表命令](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)。  
   
 ### <a name="register-the-command"></a>註冊命令  
  在 C# 中重複執行您在 CommandSet.vsct 的 Symbols 區段中所做的 GUID 和 ID 值宣告：  
@@ -301,7 +298,7 @@ private const int cmdidMyContextMenuCommand = 1;
  使用相同的 GUID 值，當您插入**Commands.vsct**。  
   
 > [!NOTE]
->  如果您變更 VSCT 檔的 Symbols 區段，您必須也將這些宣告變更為相符。 您也應在 Package.tt 中遞增版本號碼  
+> 如果您變更 VSCT 檔的 Symbols 區段，您必須也將這些宣告變更為相符。 您也應在 Package.tt 中遞增版本號碼  
   
  將功能表命令註冊為此命令集的一部分。 圖表初始化時會呼叫 `GetMenuCommands()` 一次：  
   
@@ -327,18 +324,18 @@ protected override IList<MenuCommand> GetMenuCommands()
   
 #### <a name="to-exercise-the-command"></a>執行命令  
   
-1.  在 **方案總管**工具列上，按一下**轉換所有範本**。  
+1. 在 **方案總管**工具列上，按一下**轉換所有範本**。  
   
-2.  按下**F5**重建方案，並開始偵錯特定領域語言，在實驗組建中。  
+2. 按下**F5**重建方案，並開始偵錯特定領域語言，在實驗組建中。  
   
-3.  在實驗組建中，開啟範例圖表。  
+3. 在實驗組建中，開啟範例圖表。  
   
-4.  以滑鼠右鍵按一下圖表中的各種項目，以驗證命令是否已正確啟用或停用，以及是否適當顯示或隱藏，視選取的項目而定。  
+4. 以滑鼠右鍵按一下圖表中的各種項目，以驗證命令是否已正確啟用或停用，以及是否適當顯示或隱藏，視選取的項目而定。  
   
 ## <a name="troubleshooting"></a>疑難排解  
  **命令未出現在功能表中：**  
   
-- 命令只會出現在 Visual Studio 的偵錯執行個體中，直到安裝 DSL 套件為止。 如需詳細資訊，請參閱 <<c0> [ 部署特定領域語言方案](../modeling/deploying-domain-specific-language-solutions.md)。  
+- 命令只會出現在 Visual Studio 的偵錯執行個體中，直到安裝 DSL 套件為止。 如需詳細資訊，請參閱[部署特定領域語言方案](../modeling/deploying-domain-specific-language-solutions.md)。  
   
 - 請確定實驗範例具有此 DSL 的正確副檔名。 若要檢查副檔名，請在 Visual Studio 的主要執行個體中開啟 DslDefinition.dsl。 然後在 DSL Explorer 中，以滑鼠右鍵按一下 [編輯器] 節點，然後按一下 [屬性]。 在 [屬性] 視窗中，檢查 FileExtension 屬性。  
   
@@ -348,11 +345,11 @@ protected override IList<MenuCommand> GetMenuCommands()
   
    **未呼叫 OnStatus 方法**:  
   
-  -   請確定您的 CommandSet 程式碼中的 GUID 和 ID 符合 Commands.vsct 的 Symbols 區段中的 GUID 和 ID。  
+  - 請確定您的 CommandSet 程式碼中的 GUID 和 ID 符合 Commands.vsct 的 Symbols 區段中的 GUID 和 ID。  
   
-  -   在 Commands.vsct 中，確定每個父節點中的 GUID 和 ID 識別正確的父群組。  
+  - 在 Commands.vsct 中，確定每個父節點中的 GUID 和 ID 識別正確的父群組。  
   
-  -   在 Visual Studio 命令提示字元中，輸入 devenv /rootsuffix exp /setup。 然後重新啟動 Visual Studio 的偵錯執行個體。  
+  - 在 Visual Studio 命令提示字元中，輸入 devenv /rootsuffix exp /setup。 然後重新啟動 Visual Studio 的偵錯執行個體。  
   
 - 逐步執行 OnStatus 方法，以確認 command.Visible 和 command.Enabled 設為 true。  
   
@@ -364,9 +361,6 @@ protected override IList<MenuCommand> GetMenuCommands()
   
 ## <a name="see-also"></a>另請參閱  
  [撰寫程式碼來自訂特定領域語言](../modeling/writing-code-to-customise-a-domain-specific-language.md)   
- [如何： 修改標準功能表命令](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)   
+ [如何：修改標準功能表命令](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)   
  [部署特定領域語言方案](../modeling/deploying-domain-specific-language-solutions.md)   
- [程式碼範例： 電路圖表](http://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
-
-
-
+ [範例程式碼：電路圖表](http://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)

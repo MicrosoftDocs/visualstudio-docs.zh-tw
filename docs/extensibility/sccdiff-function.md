@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - SccDiff function
 ms.assetid: d49bc8c5-f631-4153-9d3c-feb3564da305
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8f9f381fbd9c6cb3f4f2128adc3910516be42962
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 52da17cbb7f6349d99a04709bbe469501394d4e5
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56681656"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66327509"
 ---
 # <a name="sccdiff-function"></a>SccDiff 函式
 此函式會顯示 （或選擇性地只會檢查） 目前的檔案 （位於本機磁碟上） 和最後一個簽入版本之間的差異，即可在來源控制系統。
@@ -77,7 +77,7 @@ SCCRTN SccDiff(
  當做效能最佳化，原始檔控制外掛程式可能會使用總和檢查碼或而不是呼叫的逐位元組比較時間戳記為基礎的替代方案`SCC_DIFF_CONTENTS`： 這些形式的比較會很明顯地更快但較不可靠。 並非所有的原始檔控制系統可能會支援這些替代的比較方法，而外掛程式可能切換回內容比較。 所有的原始檔控制外掛程式至少必須支援的內容比較。
 
 > [!NOTE]
->  快速差異旗標互斥。 能夠傳遞任何旗標，但同時傳遞多個無效。 `SCC_DIFF_QUICK_DIFF`這結合了所有的旗標的遮罩可以用來測試，但它應該永遠不會做為參數傳遞。
+> 快速差異旗標互斥。 能夠傳遞任何旗標，但同時傳遞多個無效。 `SCC_DIFF_QUICK_DIFF`這結合了所有的旗標的遮罩可以用來測試，但它應該永遠不會做為參數傳遞。
 
 |`fOption`|意義|
 |---------------|-------------|

@@ -1,14 +1,9 @@
 ---
-title: 如何： 在訊息檢視中的訊息搜尋 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：在訊息檢視中的訊息搜尋 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Message Search dialog box
 - Messages view
@@ -17,15 +12,15 @@ ms.assetid: 732b7ccc-54ea-41db-823b-2b96e3e4083e
 caps.latest.revision: 8
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 08a2a08014d0927ecea29b1acb6bb36620f1a15a
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 6c89a763389abe364fe70166e63b41f932581837
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51802081"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430903"
 ---
-# <a name="how-to-search-for-a-message-in-messages-view"></a>如何：在訊息檢視中搜尋訊息
+# <a name="how-to-search-for-a-message-in-messages-view"></a>HOW TO：在訊息檢視中搜尋訊息
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 您可以使用其控制代碼、 類型或訊息識別碼，做為搜尋準則來搜尋特定訊息在訊息檢視中。 其中任何一個，或組合，會是有效的搜尋準則。 也可以指定搜尋的初始方向。 在對話方塊中的欄位會預先載入的目前選取的訊息屬性。  
@@ -51,13 +46,10 @@ ms.locfileid: "51802081"
 4. 清除，您不想指定值的任何欄位。  
   
    > [!TIP]
-   >  若要減少螢幕混亂的情形，請選取**隱藏 spy + +** 選項。 此選項會隱藏主 Spy + + 視窗中，並且只留下**尋找視窗**對話方塊顯示在其他應用程式之上。 當您按一下 還原 Spy + + 主要視窗**確定**或是**取消**，或清除**隱藏 Spy + +** 選項。  
+   > 若要減少螢幕混亂的情形，請選取**隱藏 spy + +** 選項。 此選項會隱藏主 Spy + + 視窗中，並且只留下**尋找視窗**對話方塊顯示在其他應用程式之上。 當您按一下 還原 Spy + + 主要視窗**確定**或是**取消**，或清除**隱藏 Spy + +** 選項。  
   
 5. 選擇**向上**或是**向下**初始搜尋的方向。  
   
-6. 按一下 [確定 **Deploying Office Solutions**]。  
+6. 按一下 [確定] 。  
   
    如果找到相符的訊息時，它會反白顯示在訊息的 [檢視] 視窗。 請參閱[訊息檢視](../debugger/messages-view.md)。
-
-
-

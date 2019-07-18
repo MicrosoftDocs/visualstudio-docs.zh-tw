@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugStackFrame3::InterceptCurrentException
 ms.assetid: 116c7324-7645-4c15-b484-7a5cdd065ef5
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 89ba8aadaa55a22c8e8c645866a9163628404407
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: ffc50f9884d40083d9696869c0e1b34284e4a794
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56712784"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66352052"
 ---
 # <a name="idebugstackframe3interceptcurrentexception"></a>IDebugStackFrame3::InterceptCurrentException
 何時要攔截目前的例外狀況，請呼叫目前的堆疊框架上偵錯工具。
@@ -38,14 +41,12 @@ int InterceptCurrentException(
 );
 ```
 
-#### <a name="parameters"></a>參數
- `dwFlags`
+## <a name="parameters"></a>參數
+`dwFlags`\
+[in]指定不同的動作。 目前，只有[INTERCEPT_EXCEPTION_ACTION](../../../extensibility/debugger/reference/intercept-exception-action.md)值`IEA_INTERCEPT`支援，而且必須加以指定。
 
- [in]指定不同的動作。 目前，只有[INTERCEPT_EXCEPTION_ACTION](../../../extensibility/debugger/reference/intercept-exception-action.md)值`IEA_INTERCEPT`支援，而且必須加以指定。
-
- `pqwCookie`
-
- [out]識別特定的例外狀況的唯一值。
+`pqwCookie`\
+[out]識別特定的例外狀況的唯一值。
 
 ## <a name="return-value"></a>傳回值
  如果成功，會傳回 S_OK;否則，傳回錯誤碼。
@@ -64,7 +65,7 @@ int InterceptCurrentException(
  當偵錯工具想要知道是否應該攔截例外狀況時，它會在目前的堆疊框架物件上呼叫這個方法。 這個方法會負責處理的例外狀況的所有詳細資料。 如果[IDebugStackFrame3](../../../extensibility/debugger/reference/idebugstackframe3.md)未實作介面或`InterceptStackException`方法會傳回任何錯誤，則偵錯工具會繼續正常處理例外狀況。
 
 > [!NOTE]
->  例外狀況可以被攔截只能在 managed 程式碼，也就是正在偵錯之程式的.NET 執行階段下執行時。 當然，協力廠商語言實作者可以實作`InterceptStackException`人員可以選擇他們自己偵錯引擎。
+> 例外狀況可以被攔截只能在 managed 程式碼，也就是正在偵錯之程式的.NET 執行階段下執行時。 當然，協力廠商語言實作者可以實作`InterceptStackException`人員可以選擇他們自己偵錯引擎。
 
  攔截完成之後， [IDebugInterceptExceptionCompleteEvent2](../../../extensibility/debugger/reference/idebuginterceptexceptioncompleteevent2.md)收到信號。
 

@@ -8,12 +8,12 @@ ms.assetid: f6337c35-acae-4c5f-b5d9-ac5ff687ef18
 caps.latest.revision: 18
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 70e74c1c4d5b8cc93f4afaeebc74f5fc0579a692
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 15093cc6af6e61384c393b1c3e435df3840a2811
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54768029"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686444"
 ---
 # <a name="customizing-code-coverage-analysis"></a>自訂程式碼涵蓋範圍分析
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ ms.locfileid: "54768029"
   
    取得這些組件的 .pdb 檔案，並將這些檔案複製到組件 .dll 檔案所在的資料夾。  
   
-  若要自訂程式碼涵蓋範圍行為，請複製[本主題結尾處的範例](#sample)，然後使用副檔名 .runsettings 將範例新增至方案。 根據您的需求編輯範例，然後在 [測試] 功能表上依序選擇 [測試設定] 和 [選取測試設定] 檔案。 本主題的其餘部分將深入說明此程序。  
+  若要自訂程式碼涵蓋範圍行為，請複製[本主題結尾處的範例](#sample)，然後使用副檔名 .runsettings 將範例新增至方案。 根據您的需求編輯範例，然後在 [測試]  功能表上依序選擇 [測試設定]  和 [選取測試設定]  檔案。 本主題的其餘部分將深入說明此程序。  
   
 ## <a name="the-runsettings-file"></a>.runsettings 檔案  
  .runsettings 檔案中會指定進階的程式碼涵蓋範圍設定。 這是單元測試工具所使用的組態檔。 我們建議您複製[本主題結尾處的範例](#sample)，然後根據您自己的需求進行編輯。  
@@ -43,15 +43,15 @@ ms.locfileid: "54768029"
   
 1. 新增 .xml 檔案，作為副檔名是 `.runsettings` 的方案項目：  
   
-    在方案總管中，於方案的捷徑功能表上，依序選擇 [新增] 和 [新增項目]，然後選取 [XML 檔]。 儲存檔案，而檔案具有 `CodeCoverage.runsettings` 這類名稱結尾。  
+    在方案總管中，於方案的捷徑功能表上，依序選擇 [新增]  和 [新增項目]  ，然後選取 [XML 檔]  。 儲存檔案，而檔案具有 `CodeCoverage.runsettings` 這類名稱結尾。  
   
 2. 加入本主題結尾處範例中的內容，然後依照下列各節的說明並根據您自己的需求進行自訂。  
   
-3. 在 [測試] 功能表上，依序選擇 [測試設定] 和 [選取測試設定檔]，然後選取檔案。  
+3. 在 [測試]  功能表上，依序選擇 [測試設定]  和 [選取測試設定檔]  ，然後選取檔案。  
   
-4. 現在，當您執行 [分析程式碼涵蓋範圍] 時，這個 `.runsettings` 檔案就會控制其行為。 不要忘記您必須再次執行程式碼涵蓋範圍：當您執行測試或更新程式碼時，並不會自動隱藏之前的涵蓋範圍結果及程式碼著色。  
+4. 現在，當您執行 [分析程式碼涵蓋範圍]  時，這個 `.runsettings` 檔案就會控制其行為。 不要忘記您必須再次執行程式碼涵蓋範圍：當您執行測試或更新程式碼時，並不會自動隱藏之前的涵蓋範圍結果及程式碼著色。  
   
-5. 若要開啟和關閉自訂設定，請取消選取或選取 [測試]、[測試設定] 功能表中的檔案。  
+5. 若要開啟和關閉自訂設定，請取消選取或選取 [測試]  、[測試設定]  功能表中的檔案。  
   
    ![具有自訂設定檔的測試設定功能表](../test/media/codecoverage-settingsfile.png "CodeCoverage-settingsFile")  
   
@@ -69,7 +69,7 @@ ms.locfileid: "54768029"
 ```  
   
 > [!WARNING]
->  符號解析可能需要一些時間，特別是在使用具有大量組件的遠端檔案位置時。 因此，請考慮將遠端 .pdb 檔案複製到二進位 (.dll 和 .exe) 檔案在本機中的位置。  
+> 符號解析可能需要一些時間，特別是在使用具有大量組件的遠端檔案位置時。 因此，請考慮將遠端 .pdb 檔案複製到二進位 (.dll 和 .exe) 檔案在本機中的位置。  
   
 ### <a name="excluding-and-including"></a>排除和包含  
  您可以在程式碼涵蓋範圍分析中排除指定的組件。 例如：  
@@ -101,7 +101,7 @@ ms.locfileid: "54768029"
 ### <a name="regular-expressions"></a>規則運算式  
  包含和排除節點使用規則運算式。 如需詳細資訊，請參閱[在 Visual Studio 中使用規則運算式](../ide/using-regular-expressions-in-visual-studio.md)。 規則運算式和萬用字元不同。 特別之處在於：  
   
-1. **\.\\*** 會比對任何字元的字串  
+1. **\.\\** * 會比對任何字元的字串  
   
 2. **\\.** 會比對點 "."  
   
@@ -115,7 +115,7 @@ ms.locfileid: "54768029"
   
    所有相符項目皆不區分大小寫。  
   
-   例如：  
+   例如:  
   
 ```xml  
 <ModulePaths>  
@@ -134,7 +134,7 @@ ms.locfileid: "54768029"
 ```  
   
 > [!WARNING]
->  如果規則運算式出現錯誤，例如未逸出和無對應的括號，則程式碼涵蓋範圍分析不會執行。  
+> 如果規則運算式出現錯誤，例如未逸出和無對應的括號，則程式碼涵蓋範圍分析不會執行。  
   
 ### <a name="other-ways-to-include-or-exclude-elements"></a>包含或排除項目的其他方法  
  如需範例，請參閱[本主題結尾處的範例](#sample)。  
@@ -178,16 +178,16 @@ ms.locfileid: "54768029"
 ## <a name="how-to-specify-runsettings-files-while-running-tests"></a>執行測試時如何指定 .runsettings 檔案  
   
 ### <a name="to-customize-runsettings-in-visual-studio-tests"></a>在 Visual Studio 測試中執行 runsettings  
- 依序選擇 [測試]、[測試設定] 和 [選取測試設定檔]，然後選取 .runsettings 檔案。 該檔案隨即出現在 [測試設定 ]功能表中，您可以加以選取或取消。 選取該檔案時，無論何時只要使用 [分析程式碼涵蓋範圍] 就會套用您的 runsettings 檔案。  
+ 依序選擇 [測試]  、[測試設定]  和 [選取測試設定檔]  ，然後選取 .runsettings 檔案。 該檔案隨即出現在 [測試設定 ]功能表中，您可以加以選取或取消。 選取該檔案時，無論何時只要使用 [分析程式碼涵蓋範圍]  就會套用您的 runsettings 檔案。  
   
 ### <a name="to-customize-run-settings-in-a-command-line-test"></a>自訂命令列測試中的回合設定  
- 若要從命令列執行測試，請使用 vstest.console.exe。 設定檔案是此公用程式的參數。 如需詳細資訊，請參閱[從命令列使用 VSTest.console](http://msdn.microsoft.com/library/852812d8-b3bb-407e-bc43-04d511fcb27a)。  
+ 若要從命令列執行測試，請使用 vstest.console.exe。 設定檔案是此公用程式的參數。 如需詳細資訊，請參閱[從命令列使用 VSTest.console](https://msdn.microsoft.com/library/852812d8-b3bb-407e-bc43-04d511fcb27a)。  
   
-1.  啟動 Visual Studio Developer 命令提示字元：  
+1. 啟動 Visual Studio Developer 命令提示字元：  
   
-     在 Windows 的 [開始] 上，依序選擇 [所有程式]、[Microsoft Visual Studio]、[Visual Studio Tools] 和 [開發人員命令提示字元]。  
+     在 Windows 的 [開始]  上，依序選擇 [所有程式]  、[Microsoft Visual Studio]  、[Visual Studio Tools]  和 [開發人員命令提示字元]  。  
   
-2.  執行：  
+2. 執行：  
   
      `vstest.console.exe MyTestAssembly.dll /EnableCodeCoverage /Settings:CodeCoverage.runsettings`  
   
@@ -198,17 +198,17 @@ ms.locfileid: "54768029"
   
 1. 請務必簽入您的 .runsettings 檔案。  
   
-2. 在 Team Explorer 中開啟 [組建]，然後新增或編輯組建定義。  
+2. 在 Team Explorer 中開啟 [組建]  ，然後新增或編輯組建定義。  
   
-3. 在 [流程] 頁面上，展開 [自動化測試]、[測試來源]、[回合設定]。 選取 **.runsettings** 檔案。  
+3. 在 [流程]  頁面上，展開 [自動化測試]  、[測試來源]  、[回合設定]  。 選取 **.runsettings** 檔案。  
   
-   - <em>但是會出現 [測試組件] 而非 [測試來源]。當我嘗試設定 [回合設定] 欄位時，我只能選取 .testsettings 檔案。*  
+   - <em>但是會出現 [測試組件]  而非 [測試來源]  。當我嘗試設定 [回合設定]  欄位時，我只能選取 .testsettings 檔案。*  
   
-      在 [自動化測試] 下選取 [測試組件]，然後選擇該行結尾的 [...]。 在 [新增/編輯測試回合] 對話方塊中，將 [測試執行器] 設為 [Visual Studio 測試執行器]。  
+      在 [自動化測試]  下選取 [測試組件]  ，然後選擇該行結尾的 [...]  。 在 [新增/編輯測試回合]  對話方塊中，將 [測試執行器]  設為 [Visual Studio 測試執行器]  。  
   
    結果會顯示在組建報告的摘要區段。  
   
-##  <a name="sample"></a> 範例 .runsettings 檔案  
+## <a name="sample"></a> 範例 .runsettings 檔案  
  複製此程式碼並根據您自己的需求進行編輯。 這是預設的 .runsettings 檔案。  
   
  (如需 .runsettings 檔案的其他用法，請參閱[使用 .runsettings 檔案設定單元測試](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md))。  
@@ -237,7 +237,7 @@ Note that searching for symbols increases code coverage runtime. So keep this sm
 <!--  
 About include/exclude lists:  
 Empty "Include" clauses imply all; empty "Exclude" clauses imply none.  
-Each element in the list is a regular expression (ECMAScript syntax). See http://msdn.microsoft.com/library/2k3te2cs.aspx.  
+Each element in the list is a regular expression (ECMAScript syntax). See https://msdn.microsoft.com/library/2k3te2cs.aspx.  
 An item must first match at least one entry in the include list to be included.  
 Included items must then not match any entries in the exclude list to remain included.  
 -->  
@@ -325,6 +325,6 @@ Included items must then not match any entries in the exclude list to remain inc
   
 ```  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [使用程式碼涵蓋範圍來決定所測試的程式碼數量](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)   
  [對程式碼進行單元測試](../test/unit-test-your-code.md)

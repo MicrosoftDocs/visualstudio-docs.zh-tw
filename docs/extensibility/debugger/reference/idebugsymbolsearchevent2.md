@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugSymbolSearchEvent2
 ms.assetid: 9b946d55-ff85-44eb-b40a-efbf8282eafd
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 85556fb8549b6ebab679fed35d5d39fbd060fbff
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: ed7108c9e1349b01115bed8a6b2a77a3eaa71f45
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56703015"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66320382"
 ---
 # <a name="idebugsymbolsearchevent2"></a>IDebugSymbolSearchEvent2
 這個介面會傳送偵錯引擎 (DE)，表示已載入模組，正在進行偵錯的偵錯符號。

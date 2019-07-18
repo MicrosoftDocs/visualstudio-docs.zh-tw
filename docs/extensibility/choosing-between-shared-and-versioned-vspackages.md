@@ -7,22 +7,22 @@ helpviewer_keywords:
 - side-by-side installation
 - installation [Visual Studio SDK], side-by-side
 ms.assetid: e3128ac3-2e92-48e9-87ab-3b6c9d80e8c9
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 705fe42cf158992bb041ac9b75348f7b25945631
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: de7bb2ee0335322e0b089fd2af81026b1f6bd1ca
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56697503"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747782"
 ---
 # <a name="choose-between-shared-and-versioned-vspackages"></a>共用和建立版本的 Vspackage 之間進行選擇
 不同版本的 Visual Studio 可以在相同電腦上並存。 Vspackage 可以支援任何混合[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]版本。
 
- 您可以啟用透過兩種策略、 共用的策略或版本控制策略的並排顯示安裝的 Vspackage。 同時容納多個版本存在[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]相關聯的版本和[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]。
+ 您可以啟用透過兩種策略、 共用的策略或版本控制策略的並排顯示安裝的 Vspackage。 同時容納多個版本存在[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]和相關聯的.NET Framework 版本。
 
  在共用的策略中，以用於多個版本的註冊一個 VSPackage [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。 在版本控制策略中，安裝多個 VSPackage Dll，其中每個版本的[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]您支援。
 

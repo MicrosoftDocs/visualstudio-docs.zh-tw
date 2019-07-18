@@ -1,14 +1,9 @@
 ---
 title: IDebugPropertyCreateEvent2::GetDebugProperty |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugPropertyCreateEvent2::GetDebugProperty
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: d7e43183-444c-4417-af19-82e28229f83a
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 8ed3ef1b337ee43c6a5484ca313696600dfe9f07
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: d54212cf7cbd7808fe68d2a0e64da4b50cc67eda
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51774042"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68164936"
 ---
 # <a name="idebugpropertycreateevent2getdebugproperty"></a>IDebugPropertyCreateEvent2::GetDebugProperty
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -53,4 +48,3 @@ int GetDebugProperty ( 
 ## <a name="see-also"></a>另請參閱  
  [IDebugPropertyCreateEvent2](../../../extensibility/debugger/reference/idebugpropertycreateevent2.md)   
  [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)
-

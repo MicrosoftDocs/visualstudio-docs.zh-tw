@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], custom - single and multi-tab views
 ms.assetid: e3611704-349f-4323-b03c-f2b0a445d781
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3676a19b5b5b7a4050a7d48385e76954ad0bcc96
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: def68627223ba082f5ec6a3ef571e314feae33f3
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56716697"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66332048"
 ---
 # <a name="single-and-multi-tab-views"></a>單一和多重索引標籤檢視
 編輯器可以建立不同類型的檢視。 其中一個範例的程式碼編輯器 視窗，另一個是表單設計工具。

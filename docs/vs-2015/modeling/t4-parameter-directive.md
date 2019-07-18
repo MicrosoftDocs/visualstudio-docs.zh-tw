@@ -1,23 +1,20 @@
 ---
 title: T4 參數指示詞 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: 1d590387-1d9d-40a5-a72c-65fae7a8bdf3
 caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 87e493667af1626cd97e575ddb614e7fd12c21d3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 3e350b353d90143a0805455b29bfe0a14aad25cb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49294550"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63411605"
 ---
 # <a name="t4-parameter-directive"></a>T4 參數指示詞
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -109,7 +106,4 @@ string resultText = t.TransformText();
 ## <a name="obtaining-arguments-from-texttemplateexe"></a>從 TextTemplate.exe 取得引數  
   
 > [!IMPORTANT]
->  `parameter`指示詞不會擷取中設定的值`–a`參數`TextTransform.exe`公用程式。 若要取得這些值，設定`hostSpecific="true"`中`template`指示詞，並使用`this.Host.ResolveParameterValue("","","argName")`。
-
-
-
+> `parameter`指示詞不會擷取中設定的值`–a`參數`TextTransform.exe`公用程式。 若要取得這些值，設定`hostSpecific="true"`中`template`指示詞，並使用`this.Host.ResolveParameterValue("","","argName")`。

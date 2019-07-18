@@ -1,121 +1,110 @@
 ### YamlMime:YamlDocument
-ms.openlocfilehash: b8f5921be45ead5ec97263c01b780c57cb1acb68
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
-ms.translationtype: HT
-ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318946"
 documentType: LandingData
-title: Visual Studio for Mac 文件
+title: Visual Studio 2019 for Mac 文件
 metadata:
   description: 本文介紹 Visual Studio for Mac 的功能。
-  author: conceptdev
-  ms.author: crdun
-  ms.date: 02/06/2019
+  author: asb3993
+  ms.author: amburns
+  ms.date: 04/02/2019
   ms.topic: landing-page
   ms.prod: visual-studio-mac
   ms.technology: vs-ide-general
 sections:
-- title: Visual Studio for Mac 使用者入門
-  items:
-  - type: paragraph
-    text: 安裝和了解 Visual Studio for Mac 整合式開發環境 (IDE)。
-  - type: list
-    style: cards
-    className: cardsM
-    columns: 3
+  - title: Visual Studio for Mac 使用者入門
     items:
-    - href: ~/installation.md
-      html: <p></p>
-      image:
-        src: https://docs.microsoft.com/media/common/i_setup.svg
-      title: 安裝 Visual Studio for Mac
-    - href: ~/ide-tour.md
-      html: <p></p>
-      image:
-        src: https://docs.microsoft.com/media/logos/logo_vs-mac.svg
-      title: 導覽 Visual Studio for Mac
-    - href: ~/installation.md?view=vsmac-2019
-      html: <p></p>
-      image:
-        src: ~/media/index-2019-preview.png
-      title: 試用 2019 Preview！
-- title: 我可以建置哪些應用程式？
-  items:
-  - type: paragraph
-    text: 有了 Visual Studio for Mac，您就能分別以 ASP.NET Core 和 .NET Core 建置網站和應用程式、以 Unity 打造遊戲，以及使用 Xamarin 來製作 Android 和 iOS 行動應用程式。 Azure 能融入您的所有應用程式。
-  - type: list
-    style: icon48
+      - type: paragraph
+        text: 安裝和了解 Visual Studio for Mac 整合式開發環境 (IDE)。
+      - type: list
+        style: cards
+        className: cardsM
+        columns: 2
+        items:
+          - href: ~/installation.md
+            html: <p></p>
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_setup.svg'
+            title: 安裝 Visual Studio for Mac
+          - href: ~/ide-tour.md
+            html: <p></p>
+            image:
+              src: 'https://docs.microsoft.com/media/logos/logo_vs-mac.svg'
+            title: 導覽 Visual Studio for Mac
+  - title: 我可以建置哪些應用程式？
     items:
-    - image:
-        src: https://docs.microsoft.com/media/logos/logo_NETcore.svg
-      text: ASP.NET Core
-      href: ~/asp-net-core.md
-    - image:
-        src: https://docs.microsoft.com/media/logos/logo_azure.svg
-      text: Azure
-      href: ~/azure-workload.md
-    - image:
-        src: https://docs.microsoft.com/media/logos/logo_unity.svg
-      text: Unity
-      href: ~/unity-tools.md
-    - image:
-        src: https://docs.microsoft.com/media/logos/logo_xamarin.svg
-      text: Xamarin
-      href: /xamarin/
-- title: 我可以使用什麼語言？
-  items:
-  - type: paragraph
-    text: 您可在 Visual Studio for Mac 中以 C#、F#、Razor、HTML5、CSS、Javascript、Typescript、XAML 和 XML 撰寫。
-  - type: list
-    style: icon48
+      - type: paragraph
+        text: 有了 Visual Studio for Mac，您就能分別以 ASP.NET Core 和 .NET Core 建置網站和應用程式、以 Unity 打造遊戲，以及使用 Xamarin 來製作 Android 和 iOS 行動應用程式。 Azure 能融入您的所有應用程式。
+      - type: list
+        style: icon48
+        items:
+          - image:
+              src: 'https://docs.microsoft.com/media/logos/logo_NETcore.svg'
+            text: ASP.NET Core
+            href: ~/asp-net-core.md
+          - image:
+              src: 'https://docs.microsoft.com/media/logos/logo_azure.svg'
+            text: Azure
+            href: ~/azure-workload.md
+          - image:
+              src: 'https://docs.microsoft.com/media/logos/logo_unity.svg'
+            text: Unity
+            href: ~/unity-tools.md
+          - image:
+              src: 'https://docs.microsoft.com/media/logos/logo_xamarin.svg'
+            text: Xamarin
+            href: /xamarin/
+  - title: 我可以使用什麼語言？
     items:
-    - image:
-        src: https://docs.microsoft.com/media/logos/logo_Csharp.svg
-      text: C#
-      href: /dotnet/csharp/
-    - image:
-        src: https://docs.microsoft.com/media/logos/logo_Fsharp.svg
-      text: F#
-      href: /dotnet/fsharp/
-    - image:
-        src: https://docs.microsoft.com/media/logos/logo_js.svg
-      text: JavaScript
-      href: ~/javascript.md
-    - image:
-        src: https://docs.microsoft.com/media/logos/logo_TS.svg
-      text: TypeScript
-      href: ~/javascript.md
-    - image:
-        src: https://docs.microsoft.com/media/logos/logo_html5.svg
-      text: HTML/Razor
-      href: ~/razor.md
-- title: 使用 Visual Studio for Mac 來撰寫程式碼
-  items:
-  - type: paragraph
-    text: 深入了解如何使用 Visual Studio 來撰寫、編譯、偵錯和儲存您的程式碼。
-  - type: list
-    style: cards
-    className: cardsM
-    columns: 3
+      - type: paragraph
+        text: '您可在 Visual Studio for Mac 中以 C#、F#、Razor、HTML5、CSS、Javascript、Typescript、XAML 和 XML 撰寫。'
+      - type: list
+        style: icon48
+        items:
+          - image:
+              src: 'https://docs.microsoft.com/media/logos/logo_Csharp.svg'
+            text: 'C#'
+            href: /dotnet/csharp/
+          - image:
+              src: 'https://docs.microsoft.com/media/logos/logo_Fsharp.svg'
+            text: 'F#'
+            href: /dotnet/fsharp/
+          - image:
+              src: 'https://docs.microsoft.com/media/logos/logo_js.svg'
+            text: JavaScript
+            href: ~/javascript.md
+          - image:
+              src: 'https://docs.microsoft.com/media/logos/logo_TS.svg'
+            text: TypeScript
+            href: ~/javascript.md
+          - image:
+              src: 'https://docs.microsoft.com/media/logos/logo_html5.svg'
+            text: HTML/Razor
+            href: ~/razor.md
+  - title: 使用 Visual Studio for Mac 來撰寫程式碼
     items:
-    - href: ~/source-editor.md
-      html: <p>IntelliSense、重構，以及您慣用語言的語法醒目提示。</p>
-      image:
-        src: https://docs.microsoft.com/media/common/i_code-edit.svg
-      title: 撰寫程式碼
-    - href: ~/compiling-and-building.md
-      html: <p>設定您的編譯器並建置您的應用程式。</p>
-      image:
-        src: https://docs.microsoft.com/media/common/i_build.svg
-      title: 編譯和建置
-    - href: ~/debugging.md
-      html: <p>在偵錯工具下執行您的應用程式來調查問題。</p>
-      image:
-        src: https://docs.microsoft.com/media/common/i_debug.svg
-      title: 偵錯
-    - href: ~/version-control.md
-      html: <p>存取 Azure DevOps、Git 或 Subversion 來源存放庫。</p>
-      image:
-        src: https://docs.microsoft.com/media/common/i_pull-request.svg
-      title: 版本控制
+      - type: paragraph
+        text: 深入了解如何使用 Visual Studio 來撰寫、編譯、偵錯和儲存您的程式碼。
+      - type: list
+        style: cards
+        className: cardsM
+        columns: 3
+        items:
+          - href: ~/source-editor.md
+            html: <p>IntelliSense、重構，以及您慣用語言的語法醒目提示。</p>
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_code-edit.svg'
+            title: 撰寫程式碼
+          - href: ~/compiling-and-building.md
+            html: <p>設定您的編譯器並建置您的應用程式。</p>
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_build.svg'
+            title: 編譯和建置
+          - href: ~/debugging.md
+            html: <p>在偵錯工具下執行您的應用程式來調查問題。</p>
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_debug.svg'
+            title: 偵錯
+          - href: ~/version-control.md
+            html: <p>存取 Azure DevOps、Git 或 Subversion 來源存放庫。</p>
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_pull-request.svg'
+            title: 版本控制

@@ -1,14 +1,9 @@
 ---
 title: 可攜性警告 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.PortabilityRules
 helpviewer_keywords:
@@ -20,12 +15,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 3b7c38f8380fc8e52707b9c4817880b1ce86b4b9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7c8f195f2219cfa2c81b24a3e04ddc559dc98a06
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49173072"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68142216"
 ---
 # <a name="portability-warnings"></a>可攜性警告
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,9 +31,6 @@ ms.locfileid: "49173072"
   
 |規則|描述|  
 |----------|-----------------|  
-|[CA1900：實值型別欄位應該為可移植的](../code-quality/ca1900-value-type-fields-should-be-portable.md)|此規則會檢查封送處理至 unmanaged 程式碼，在 64 位元作業系統上時使用明確的配置屬性宣告的結構會正確地對齊。|  
-|[CA1901：P/Invoke 宣告應該為可移植](../code-quality/ca1901-p-invoke-declarations-should-be-portable.md)|此規則會評估每個參數的大小和 P/Invoke，傳回值，並驗證它們的大小正確封送處理至 unmanaged 程式碼在 32 位元和 64 位元作業系統上時。|  
-|[CA1903：只使用來自目標架構的 API](../code-quality/ca1903-use-only-api-from-targeted-framework.md)|某一個成員或類型使用的是 Service Pack 中所導入的成員或類型，但是專案的目標 Framework 中卻沒有包含該成員或類型。|
-
-
-
+|[CA1900： 實實值類型欄位應該為可移植的](../code-quality/ca1900-value-type-fields-should-be-portable.md)|此規則會檢查封送處理至 unmanaged 程式碼，在 64 位元作業系統上時使用明確的配置屬性宣告的結構會正確地對齊。|  
+|[CA1901:P/Invoke 宣告應該為可移植的](../code-quality/ca1901-p-invoke-declarations-should-be-portable.md)|此規則會評估每個參數的大小和 P/Invoke，傳回值，並驗證它們的大小正確封送處理至 unmanaged 程式碼在 32 位元和 64 位元作業系統上時。|  
+|[CA1903:使用來自目標架構的 API](../code-quality/ca1903-use-only-api-from-targeted-framework.md)|某一個成員或類型使用的是 Service Pack 中所導入的成員或類型，但是專案的目標 Framework 中卻沒有包含該成員或類型。|

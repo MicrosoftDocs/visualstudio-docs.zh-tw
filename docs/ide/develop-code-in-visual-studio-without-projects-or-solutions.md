@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ed08d8d94fbf94b8be3d1bf4b11eb116ceb6d4d1
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: 7554d3f89547701e1a7cad0280a1655450520586
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58194946"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62962394"
 ---
 # <a name="develop-code-in-visual-studio-without-projects-or-solutions"></a>在 Visual Studio 中不使用專案或方案來開發程式碼
 

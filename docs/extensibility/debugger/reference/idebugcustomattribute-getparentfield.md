@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugCustomAttribute::GetParentField
 ms.assetid: bcdfdf37-bfcf-4988-a7b8-4c731d0af1b0
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 158887e9f2d7d7b250b435570d6780e460508816
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 6a99310520109dad6a1b8084405119e0a106ad89
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56693369"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66350053"
 ---
 # <a name="idebugcustomattributegetparentfield"></a>IDebugCustomAttribute::GetParentField
 取得要附加自訂屬性的欄位。
@@ -36,10 +39,9 @@ int GetParentField(
 );
 ```
 
-#### <a name="parameters"></a>參數
- `ppField`
-
- [out]傳回[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)物件，表示要附加自訂屬性的欄位。
+## <a name="parameters"></a>參數
+`ppField`\
+[out]傳回[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)物件，表示要附加自訂屬性的欄位。
 
 ## <a name="return-value"></a>傳回值
  如果成功，會傳回 S_OK;否則，傳回錯誤碼。

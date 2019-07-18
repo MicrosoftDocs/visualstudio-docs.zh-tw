@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1c9c834d3fbb49775d9462ac5e6ce3d27127f793
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 45b9dba16a0a8ebf6baaf2f1d7660035294fd80d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56628776"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62977935"
 ---
 # <a name="office-solutions-development-overview-vsto"></a>Office 方案開發概觀 (VSTO)
   您可以使用 Microsoft Office 做為方案的前端，以善用熟悉的 Microsoft Office 使用者介面和工具 (例如 Word 的文書處理功能、Excel 的資料分析功能，以及 Outlook 的電子郵件管理功能)。 您可以使用 Visual Studio 來開發方案，以自訂 Office 應用程式，以及加入符合商務流程需求的特定功能。 例如，您可以將 Word 轉變成可將已存在的組件 (這些組件可設定為是否可編輯) 組合為合約的合約產生器。 藉由 Excel，您可以建立自動化的預算工作表，為不同的專案進行自訂。 如果您使用網頁式的架構，則您的使用者也可以離線使用 Office 方案，使複雜的方案比原本可能的更加實用。
@@ -43,11 +43,11 @@ ms.locfileid: "56628776"
 
  如需自訂的詳細資訊，請參閱下列主題：
 
--   [開始使用適用於 Excel 的文件層級自訂程式設計](../vsto/getting-started-programming-document-level-customizations-for-excel.md)
+- [開始使用適用於 Excel 的文件層級自訂程式設計](../vsto/getting-started-programming-document-level-customizations-for-excel.md)
 
--   [開始使用 word 的文件層級自訂程式設計](../vsto/getting-started-programming-document-level-customizations-for-word.md)
+- [開始使用 word 的文件層級自訂程式設計](../vsto/getting-started-programming-document-level-customizations-for-word.md)
 
--   [文件層級自訂的架構](../vsto/architecture-of-document-level-customizations.md)
+- [文件層級自訂的架構](../vsto/architecture-of-document-level-customizations.md)
 
 ### <a name="vsto-add-ins"></a>VSTO 增益集
  VSTO 增益集是由與 Microsoft Office 應用程式相關聯的組件所組成。 一般而言，VSTO 增益集會在相關聯的應用程式啟動時執行，不過使用者也可以選擇在應用程式已經開始執行後載入 VSTO 增益集。 不論開啟哪一份文件，您所建立之 VSTO 增益集中的功能都可供應用程式本身使用。
@@ -56,9 +56,9 @@ ms.locfileid: "56628776"
 
  如需 VSTO 增益集的詳細資訊，請參閱下列主題：
 
--   [開始進行程式設計 VSTO 增益集](../vsto/getting-started-programming-vsto-add-ins.md)
+- [開始進行程式設計 VSTO 增益集](../vsto/getting-started-programming-vsto-add-ins.md)
 
--   [VSTO 增益集的架構](../vsto/architecture-of-vsto-add-ins.md)
+- [VSTO 增益集的架構](../vsto/architecture-of-vsto-add-ins.md)
 
 ## <a name="automate-office-applications-by-using-primary-interop-assemblies"></a>使用主要 interop 組件自動化 Office 應用程式
  您可以用程式設計的方式將 Office 應用程式的功能加入方案，方法是撰寫會存取應用程式物件模型的程式碼。 物件模型是一種類別的排列，能夠藉由各種屬性和方法來公開功能。 每個 Office 應用程式的物件模型都不同。
@@ -69,9 +69,9 @@ ms.locfileid: "56628776"
 
  如需在 VSTO Office 方案中使用 PIA 的詳細資訊，請參閱下列主題：
 
--   [在 Office 方案中撰寫程式碼](../vsto/writing-code-in-office-solutions.md)
+- [在 Office 方案中撰寫程式碼](../vsto/writing-code-in-office-solutions.md)
 
--   [Office 主要 interop 組件](../vsto/office-primary-interop-assemblies.md)
+- [Office 主要 interop 組件](../vsto/office-primary-interop-assemblies.md)
 
 ## <a name="run-microsoft-vsto-office-solutions-on-end-user-computers"></a>在使用者電腦上執行 Microsoft VSTO Office 方案
  當您建立 VSTO Office 方案時，請考慮部署需求可能會如何影響您的開發選擇。

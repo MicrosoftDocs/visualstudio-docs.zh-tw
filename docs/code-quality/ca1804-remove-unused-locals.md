@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: f567fa1d1f793395532efac5991b01c5087b638a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c94f1b2709f3541692a0dfcd2a92559135639c2a
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55908526"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66744578"
 ---
 # <a name="ca1804-remove-unused-locals"></a>CA1804:必須移除未使用的區域變數
 
@@ -40,7 +40,11 @@ ms.locfileid: "55908526"
  未使用的區域變數和不必要的設定，會增加組件的大小並降低效能。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
- 若要修正此規則的違規情形，請移除，或使用本機變數。 請注意，C# 編譯器隨附[!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)]移除未使用的本機變數時`optimize`啟用選項。
+
+若要修正此規則的違規情形，請移除，或使用本機變數。
+
+> [!NOTE]
+> C#編譯器會移除未使用的本機變數時`optimize`選項已啟用。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
  如果變數是由編譯器發出，則隱藏此規則的警告。 也很安全隱藏這項規則的警告，或停用規則，如果效能和程式碼維護不是主要的考量。

@@ -1,29 +1,24 @@
 ---
-title: 獨立模式 Shell 進入點參數 （c + +） |Microsoft Docs
-ms.custom: ''
+title: 獨立模式 Shell 進入點參數 (C++) |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Shell [Visual Studio], isolated mode%2C Start entry point
 - Visual Studio shell, isolated mode%2C Start entry point
 ms.assetid: 18f4b18b-2173-4afa-ba0a-42fe33e61118
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 270a5c932429a518447d0029b05d3c9522db7387
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 9e736343212c4bf6acd833f5740b996c6c032c3f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51749154"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439812"
 ---
-# <a name="isolated-shell-entry-point-parameters-c"></a>Isolated 的 Shell 進入點參數 （c + +）
+# <a name="isolated-shell-entry-point-parameters-c"></a>獨立模式 Shell 進入點參數 (C++)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Visual Studio shell 為基礎的應用程式啟動時，它會呼叫 Visual Studio shell 的啟動進入點。 下列設定可以覆寫的殼層啟動進入點的呼叫中。 如需每個設定的說明，請參閱[。Pkgdef 檔案](../extensibility/modifying-the-isolated-shell-by-using-the-dot-pkgdef-file.md)。  
@@ -32,7 +27,7 @@ Visual Studio shell 為基礎的應用程式啟動時，它會呼叫 Visual Stud
   
 - AllowsDroppedFilesOnMainWindow  
   
-- 應用程式名稱  
+- AppName  
   
 - CommandLineLogo  
   
@@ -80,21 +75,21 @@ typedef int (__cdecl *STARTFCN)(LPSTR, LPWSTR, int, GUID *, WCHAR *pszSettings);
  若要覆寫一個或多個設定，請傳遞 Unicode 字串，包含要覆寫的設定。 字串是名稱 / 值組的分號分隔清單。 每一組包含要覆寫設定的名稱，後面接著等號 （=），後面接著要套用設定的值。  
   
 > [!NOTE]
->  Unicode 字串中不包含空白字元。  
+> Unicode 字串中不包含空白字元。  
   
  如需布林值的設定，下列字串代表 true 值;所有其他字串代表 false 值。 這些字串是不區分大小寫。  
   
--   \+  
+- \+  
   
--   1  
+- 1  
   
--   -1  
+- -1  
   
--   於  
+- 於  
   
--   true  
+- true  
   
--   是  
+- 是  
   
 ## <a name="example"></a>範例  
  若要停用增益集，並變更您的應用程式的預設專案位置，您可以設定 「 AddinsAllowed=false;DefaultProjectsLocation=%USERPROFILE%\temp 」 的最後一個參數。  
@@ -102,4 +97,3 @@ typedef int (__cdecl *STARTFCN)(LPSTR, LPWSTR, int, GUID *, WCHAR *pszSettings);
 ## <a name="see-also"></a>另請參閱  
  [自訂 Isolated 的 Shell](../extensibility/customizing-the-isolated-shell.md)   
  [.Pkgdef 檔案](../extensibility/modifying-the-isolated-shell-by-using-the-dot-pkgdef-file.md)
-

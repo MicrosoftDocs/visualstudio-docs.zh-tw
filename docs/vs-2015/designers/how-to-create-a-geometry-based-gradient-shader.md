@@ -9,27 +9,27 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 555fe986267ce8cd88a5beea6f57cef2ba810156
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: eda8424aeb28231df0ae0355931989bec13a89b7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54797533"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436167"
 ---
-# <a name="how-to-create-a-geometry-based-gradient-shader"></a>如何：建立以幾何為基礎的漸層著色器
+# <a name="how-to-create-a-geometry-based-gradient-shader"></a>HOW TO：建立以幾何為基礎的漸層著色器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 本文件將示範如何使用著色器設計工具和有向圖形著色器語言，來建立以幾何為基礎的漸層著色器。 這個著色器可透過世界空間中物件各點的高度，來縮放 RGB 色彩常數值。  
   
  本文件示範下列活動︰  
   
--   將節點加入著色器圖形  
+- 將節點加入著色器圖形  
   
--   設定節點屬性  
+- 設定節點屬性  
   
--   中斷和節點的連接  
+- 中斷和節點的連接  
   
--   連接節點  
+- 連接節點  
   
 ## <a name="creating-a-geometry-based-gradient-shader"></a>建立以幾何為基礎的漸層著色器  
  您可以將像素位置納入著色器，來實作以幾何為基礎的著色器。 在著色語言中，像素包含的資訊不只有其在 2D 螢幕上的色彩與位置資訊。 在某些系統中稱為「片段」的像素是一組值集合，描述對應於像素的表面。 本文件中所述的著色器會利用世界空間中 3D 物件每個像素的高度，影響片段的完稿輸出色彩。  
@@ -59,7 +59,7 @@ ms.locfileid: "54797533"
    下圖顯示完成的著色器圖形和套用至圓球的著色器預覽。  
   
 > [!NOTE]
->  在本圖例中，指定橘色以更適當展現著色器效果，但因為世界空間中尚無預覽圖形的位置，而無法在著色器設計工具中完整預覽著色器。 著色器必須在實際場景中預覽，才能呈現完整的效果。  
+> 在本圖例中，指定橘色以更適當展現著色器效果，但因為世界空間中尚無預覽圖形的位置，而無法在著色器設計工具中完整預覽著色器。 著色器必須在實際場景中預覽，才能呈現完整的效果。  
   
  ![著色器圖形和其效果預覽](../designers/media/digit-gradient-effect-graph.png "Digit-Gradient-Effect-Graph")  
   
@@ -71,7 +71,7 @@ ms.locfileid: "54797533"
   
  如需如何將著色器套用至 3d 模型的詳細資訊，請參閱[How to:將著色器套用至 3d 模型](../designers/how-to-apply-a-shader-to-a-3-d-model.md)。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [如何：將著色器套用至 3d 模型](../designers/how-to-apply-a-shader-to-a-3-d-model.md)   
  [如何：匯出著色器](../designers/how-to-export-a-shader.md)   
  [如何：模型的 3d 地形模型](../designers/how-to-model-3-d-terrain.md)   

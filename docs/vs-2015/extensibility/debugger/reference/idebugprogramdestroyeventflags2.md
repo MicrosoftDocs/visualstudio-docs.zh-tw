@@ -1,26 +1,21 @@
 ---
-title: IDebugProgramDestroyEventFlags2 |Microsoft Docs
-ms.custom: ''
+title: IDebugProgramDestroyEventFlags2 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - IDebugProgramDestroyEventFlags2 interface
 ms.assetid: d384ff71-dc71-40b9-a871-801f8b6a3418
 caps.latest.revision: 8
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: d062fe93a18b88cd6c24e0ece18d30f186c6420f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 86f7e211c742e4d95f3459d058139854874e7d85
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51777028"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68182210"
 ---
 # <a name="idebugprogramdestroyeventflags2"></a>IDebugProgramDestroyEventFlags2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -47,9 +42,8 @@ IDebugProgramDestroyEventFlags2 : IUnknown
  預設行為[!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)]UI 是以返回設計模式中所有的程式已送出程式之後終結事件。 此介面可讓偵錯引擎變更該行為。  
   
 ## <a name="requirements"></a>需求  
- 標頭： Msdbg.h  
+ 標頭：Msdbg.h  
   
- 命名空間： Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間：Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
-
+ 組件︰Microsoft.VisualStudio.Debugger.Interop.dll

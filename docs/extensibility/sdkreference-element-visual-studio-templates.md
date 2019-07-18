@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
 ms.assetid: 72c8b352-0b7a-42b3-ba5d-2a2d1e90c34b
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 692b8600d1de2cbbb17841dd174c4a18010c41d6
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: da11d9e01802bff8162b2767444c7a1d225200a0
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56691159"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66338487"
 ---
 # <a name="sdkreference-element-visual-studio-templates"></a>SDKReference 項目 (Visual Studio 樣板)
 指定項目範本使用 SDK 參考。

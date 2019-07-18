@@ -1,30 +1,25 @@
 ---
 title: MenuCommand 對比OleMenuCommands |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 helpviewer_keywords:
 - commands, creating in VSPackages
 - command buttons, creating and placing
 - menus, creating commands
 ms.assetid: 553d5e07-3e19-4aba-b490-6c7dd05fd82e
 caps.latest.revision: 46
-manager: douge
-ms.openlocfilehash: 3b548a43cabcb097250411c3475f47774c840511
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 42c471ca924bfded62db32a956a26c07240459eb
+ms.sourcegitcommit: 3cc73e74921a9ceb622542e0e263abeebc455c00
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49911904"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "67624462"
 ---
 # <a name="menucommands-vs-olemenucommands"></a>MenuCommand 對比OleMenuCommand
-您可以藉由衍生自 <xref:System.ComponentModel.Design.MenuCommand> 或 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> 物件，然後實作適當的事件處理常式來建立功能表命令。 在大多數情況下，您可以使用 <xref:System.ComponentModel.Design.MenuCommand>，就如同 VSPackage 專案範本一樣，但有時候您可能需要使用 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand>。  
+您可以藉由衍生自建立功能表命令<xref:System.ComponentModel.Design.MenuCommand>或從<xref:Microsoft.VisualStudio.Shell.OleMenuCommand>物件，並實作適當的事件處理常式。 在大多數情況下，您可以使用 <xref:System.ComponentModel.Design.MenuCommand>，就如同 VSPackage 專案範本一樣，但有時候您可能需要使用 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand>。  
   
  VSPackage 會提供給 IDE 的命令必須顯示並啟用，使用者才能使用它們。 使用 Visual Studio Package 專案範本建立在 .vsct 檔案中建立命令，它們預設會顯示並啟用。 設定一些命令旗標，例如 `DynamicItemStart`，可以變更預設行為。 可見性、啟用的狀態，以及命令的其他屬性，也可以在執行階段的程式碼中藉由存取與命令相關聯的 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> 物件來變更。  
   
@@ -69,9 +64,9 @@ ms.locfileid: "49911904"
    </Button>
    ``` 
      
-   1.  設定 `guid` 和 `id` 欄位，以符合新命令的 GUID:ID。  
+   1. 設定 `guid` 和 `id` 欄位，以符合新命令的 GUID:ID。  
   
-   2.  設定 `priority` 屬性。  
+   2. 設定 `priority` 屬性。  
   
         .vsct 使用 `priority` 屬性來決定按鈕與父群組中其他物件的相對位置。  
   
@@ -79,7 +74,7 @@ ms.locfileid: "49911904"
   
         省略 `priority` 屬性會將其值設定為 0。  
   
-   3.  設定 `type` 屬性。 在大部分情況下，其值為 `"Button"`。 如需其他有效按鈕類型的描述，請參閱 [Button Element](../extensibility/button-element.md)。  
+   3. 設定 `type` 屬性。 在大部分情況下，其值為 `"Button"`。 如需其他有效按鈕類型的描述，請參閱 [Button Element](../extensibility/button-element.md)。  
   
 5. 在按鈕定義中，建立包含 [ButtonText](../extensibility/strings-element.md) 項目的 [字串](../extensibility/buttontext-element.md) 項目，以包含顯示在 IDE 中的功能表名稱，並建立 [CommandName](../extensibility/commandname-element.md) 項目，以包含用於存取 [ **命令** ] 視窗之功能表的命令名稱。  
   
@@ -95,7 +90,7 @@ ms.locfileid: "49911904"
   
     您可以執行下列兩種方式之一，視您的設計而定：  
   
-   -   在 `Button` 項目中，建立 [父代](../extensibility/parent-element.md) 項目，並將其 `guid` 和 `id` 欄位設定為裝載命令之群組的 Guid 和 ID，這個群組又稱為 *「主要父群組」*(primary parent group)。  
+   - 在 `Button` 項目中，建立 [父代](../extensibility/parent-element.md) 項目，並將其 `guid` 和 `id` 欄位設定為裝載命令之群組的 Guid 和 ID，這個群組又稱為 *「主要父群組」* (primary parent group)。  
   
         下列範例會定義使用者定義功能表中所顯示的命令。  
   
@@ -110,7 +105,7 @@ ms.locfileid: "49911904"
        </Button>
        ```
       
-   -   如果使用命令位置來放置命令，則可以省略 `Parent` 。 在 [區段之前建立](../extensibility/commandplacements-element.md) CommandPlacements `Symbols` 項目，然後加入具有命令 [和](../extensibility/commandplacement-element.md) 、 `guid` 和父代的 `id` CommandPlacement `priority`，如下列範例所示。  
+   - 如果使用命令位置來放置命令，則可以省略 `Parent` 。 在 [區段之前建立](../extensibility/commandplacements-element.md) CommandPlacements `Symbols` 項目，然後加入具有命令 [和](../extensibility/commandplacement-element.md) 、 `guid` 和父代的 `id` CommandPlacement `priority`，如下列範例所示。  
   
    ```xml
    <CommandPlacements>
@@ -120,7 +115,7 @@ ms.locfileid: "49911904"
    </CommandPlacements>
    ```
       
-        Creating multiple command placements that have the same GUID:ID and have different parents causes a menu to appear in multiple locations. For more information, see [CommandPlacements](../extensibility/commandplacements-element.md) element.  
+      建立多個有相同 GUID:ID 但有不同父代的命令位置，會使功能表出現在多個位置。 如需詳細資訊，請參閱 [CommandPlacements](../extensibility/commandplacements-element.md) 項目。  
   
     如需有關命令群組與父代的詳細資訊，請參閱[建立可重複使用群組的按鈕](../extensibility/creating-reusable-groups-of-buttons.md)。  
   
@@ -131,11 +126,11 @@ ms.locfileid: "49911904"
   
  對於直接使用 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> 介面處理命令的程式碼，您必須實作 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> 介面和其方法。 兩個最重要的方法是 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> 和 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A>。  
   
-1.  取得 <xref:Microsoft.VisualStudio.Shell.OleMenuCommandService> 執行個體，如下列範例所示。  
+1. 取得 <xref:Microsoft.VisualStudio.Shell.OleMenuCommandService> 執行個體，如下列範例所示。  
   
      [!code-csharp[ButtonGroup#21](../snippets/csharp/VS_Snippets_VSSDK/buttongroup/cs/buttongrouppackage.cs#21)]  
   
-2.  建立 <xref:System.ComponentModel.Design.CommandID> 物件，其以要處理之命令的 GUID 和 ID 作為參數，如下列範例所示。  
+2. 建立 <xref:System.ComponentModel.Design.CommandID> 物件，其以要處理之命令的 GUID 和 ID 作為參數，如下列範例所示。  
   
      [!code-csharp[ButtonGroup#22](../snippets/csharp/VS_Snippets_VSSDK/buttongroup/cs/buttongrouppackage.cs#22)]  
   
@@ -143,15 +138,15 @@ ms.locfileid: "49911904"
   
      或者，您可以使用 GUID 的原始字串值和 ID 的整數值，填入 <xref:System.ComponentModel.Design.CommandID> 物件。  
   
-3.  具現化 <xref:System.ComponentModel.Design.MenuCommand> 或 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> 物件，指定處理命令的方法以及 <xref:System.ComponentModel.Design.CommandID>，如下列範例所示。  
+3. 具現化 <xref:System.ComponentModel.Design.MenuCommand> 或 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> 物件，指定處理命令的方法以及 <xref:System.ComponentModel.Design.CommandID>，如下列範例所示。  
   
      [!code-csharp[ButtonGroup#23](../snippets/csharp/VS_Snippets_VSSDK/buttongroup/cs/buttongrouppackage.cs#23)]  
   
      <xref:System.ComponentModel.Design.MenuCommand> 適用於靜態命令。 動態功能表項目顯示需要 QueryStatus 事件處理常式。 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> 會加入 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.BeforeQueryStatus> 事件，此事件會在命令的主功能表開啟時發生，另外也會加入一些其他屬性，例如 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.Text%2A>。  
   
-     封裝範本所建立的命令，依預設會在封裝類別的 `Initialize()` 方法中，傳遞到 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> 物件。  
+     封裝範本所建立的命令，依預設會在封裝類別的 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> 方法中，傳遞到 `Initialize()` 物件。  
   
-4.  <xref:System.ComponentModel.Design.MenuCommand> 適用於靜態命令。 動態功能表項目顯示需要 QueryStatus 事件處理常式。 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> 會加入 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.BeforeQueryStatus> 事件，此事件會在命令的主功能表開啟時發生，另外也會加入一些其他屬性，例如 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.Text%2A>。  
+4. <xref:System.ComponentModel.Design.MenuCommand> 適用於靜態命令。 動態功能表項目顯示需要 QueryStatus 事件處理常式。 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> 會加入 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.BeforeQueryStatus> 事件，此事件會在命令的主功能表開啟時發生，另外也會加入一些其他屬性，例如 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.Text%2A>。  
   
      封裝範本所建立的命令，依預設會在封裝類別的 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> 方法中，傳遞到 `Initialize()` 物件。 Visual Studio 精靈使用 `Initialize` 來實作 `MenuCommand`方法。 針對動態功能表項目顯示，您必須將這變更為 `OleMenuCommand`，如下一個步驟所示。 此外，若要變更功能表項目文字，您必須將 TextChanges 命令旗標加入 .vsct 檔案中的功能表命令按鈕，如下列範例所示  
   
@@ -167,11 +162,11 @@ ms.locfileid: "49911904"
     </Button>
     ```
       
-5.  將新的功能表命令傳遞給 <xref:System.ComponentModel.Design.IMenuCommandService.AddCommand%2A> 介面的 <xref:System.ComponentModel.Design.IMenuCommandService> 方法。 依預設，會針對封裝範本所建立的命令而完成，如下列範例所示  
+5. 將新的功能表命令傳遞給 <xref:System.ComponentModel.Design.IMenuCommandService.AddCommand%2A> 介面的 <xref:System.ComponentModel.Design.IMenuCommandService> 方法。 依預設，會針對封裝範本所建立的命令而完成，如下列範例所示  
   
      [!code-csharp[ButtonGroup#24](../snippets/csharp/VS_Snippets_VSSDK/buttongroup/cs/buttongrouppackage.cs#24)]  
   
-6.  實作處理命令的方法。  
+6. 實作處理命令的方法。  
   
 #### <a name="to-implement-querystatus"></a>實作 QueryStatus  
   
@@ -210,7 +205,7 @@ ms.locfileid: "49911904"
   
 1. 針對有效的命令傳回 <xref:Microsoft.VisualStudio.VSConstants.S_OK> 。  
   
-2. 設定 `prgCmds` 參數的 `cmdf` 項目。  
+2. 設定 `cmdf` 參數的 `prgCmds` 項目。  
   
     `cmdf` 項目的值是來自 <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> 列舉值的邏輯聯集，藉由使用邏輯 OR (`|`) 運算子合併。  
   
@@ -238,7 +233,7 @@ ms.locfileid: "49911904"
   
       `prgCmds[0] cmdf |= OLECMDF_DEFHIDEONCTXMENU`  
   
-   - 如果命令使用 `TEXTCHANGES` 旗標，請將 `pCmdText` 參數的 `rgwz` 項目設為命令的新文字，並將 `pCmdText` 參數的 `cwActual` 項目設為命令字串的大小。  
+   - 如果命令使用 `TEXTCHANGES` 旗標，請將 `rgwz` 參數的 `pCmdText` 項目設為命令的新文字，並將 `cwActual` 參數的 `pCmdText` 項目設為命令字串的大小。  
   
      對於錯誤狀況， <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> 方法必須處理下列錯誤情況：  
   
@@ -250,11 +245,11 @@ ms.locfileid: "49911904"
   
 ##### <a name="to-implement-the-exec-method"></a>實作 Exec 方法  
   
--   如果命令 `GUID` 不明，會傳回 `OLECMDERR_E_UNKNOWNGROUP`。  
+- 如果命令 `GUID` 不明，會傳回 `OLECMDERR_E_UNKNOWNGROUP`。  
   
--   如果 `GUID` 已知但命令 ID 不明時，會傳回 `OLECMDERR_E_NOTSUPPORTED`。  
+- 如果 `GUID` 已知但命令 ID 不明時，會傳回 `OLECMDERR_E_NOTSUPPORTED`。  
   
--   如果 `GUID` 和命令 ID 符合 .vsct 檔中的命令所使用的 GUID:ID 配對，會執行與命令相關聯的程式碼並傳回 <xref:Microsoft.VisualStudio.VSConstants.S_OK>。  
+- 如果 `GUID` 和命令 ID 符合 .vsct 檔中的命令所使用的 GUID:ID 配對，會執行與命令相關聯的程式碼並傳回 <xref:Microsoft.VisualStudio.VSConstants.S_OK>。  
   
 ## <a name="see-also"></a>另請參閱  
  [VSCT XML 結構描述參考](../extensibility/vsct-xml-schema-reference.md)   

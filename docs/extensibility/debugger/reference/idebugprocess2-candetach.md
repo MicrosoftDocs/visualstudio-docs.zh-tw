@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProcess2::CanDetach
 ms.assetid: 2830f7c3-69fb-474a-97b8-5b869e38d546
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ad1a127a390b27a08a89ac939d9dcce60e60a64e
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 83cb927d86604096eac89da1d0efdf7e64e209be
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56695774"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66353217"
 ---
 # <a name="idebugprocess2candetach"></a>IDebugProcess2::CanDetach
 判斷工作階段的偵錯管理員 (SDM) 可以中斷連結程序。

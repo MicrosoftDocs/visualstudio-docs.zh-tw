@@ -7,17 +7,17 @@ helpviewer_keywords:
 - menus, creating MRU list
 - most recently used
 ms.assetid: 27d4bbcf-99b1-498f-8b66-40002e3db0f8
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 462f59d472c6de8872394b2eadd5f33aa27bccca
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 6eb32f81947f7359f5912e8a558e8df5002a0b80
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56710080"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66352401"
 ---
 # <a name="add-a-most-recently-used-list-to-a-submenu"></a>新增 最近使用的子功能表清單
 本逐步解說是根據在示範[子功能表加入至功能表](../extensibility/adding-a-submenu-to-a-menu.md)，並示範如何加入子功能表中的動態清單。 動態清單構成建立最近使用的 (MRU) 清單的基礎。

@@ -1,12 +1,9 @@
 ---
 title: 巡覽及更新程式碼中的圖層模型 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - layer models, navigating in program code
 - layer models, updating in program code
@@ -14,23 +11,23 @@ ms.assetid: c60edc87-33ee-4964-a954-40069f9febf3
 caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: ec36aa78ce5ed90098587092207806444681146a
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 05a7b50c15c3bc1953e4be3d13809fd9db64f052
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51734736"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435018"
 ---
 # <a name="navigate-and-update-layer-models-in-program-code"></a>巡覽及更新程式碼中的圖層模型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題描述圖層模型中的項目和關聯性，而您可以使用程式碼巡覽和更新它們。 如需有關從使用者的觀點來看的分層圖的詳細資訊，請參閱[分層圖： 參考](../modeling/layer-diagrams-reference.md)並[分層圖： 方針](../modeling/layer-diagrams-guidelines.md)。  
+本主題描述圖層模型中的項目和關聯性，而您可以使用程式碼巡覽和更新它們。 如需有關從使用者的觀點來看的分層圖的詳細資訊，請參閱[分層圖：參考](../modeling/layer-diagrams-reference.md)和[分層圖：指導方針](../modeling/layer-diagrams-guidelines.md)。  
   
  本主題所述的 <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer> 模型是較為一般 <xref:Microsoft.VisualStudio.GraphModel> 模型的正面。 如果您正在撰寫[功能表命令或軌跡擴充功能](../modeling/add-commands-and-gestures-to-layer-diagrams.md)，使用`Layer`模型。 如果您正在撰寫[圖層驗證擴充功能](../modeling/add-custom-architecture-validation-to-layer-diagrams.md)，更輕鬆地使用`GraphModel`。  
   
 ## <a name="transactions"></a>異動  
- 當您更新模型時，請考慮將變更納入 `ILinkedUndoTransaction` 中。 這會將您的變更群組為一個交易。 如果任何變更失敗，則會復原整個交易。 如果使用者復原某項變更，則也會一併復原所有變更。  
+ 當您更新模型時，請考慮將變更納入 `ILinkedUndoTransaction` 中。 這會將您的變更群組為一個交易。 如果任何變更失敗，則會復原整個異動。 如果使用者復原某項變更，則也會一併復原所有變更。  
   
  如需詳細資訊，請參閱 <<c0> [ 藉由使用異動連結 UML 模型更新](../modeling/link-uml-model-updates-by-using-transactions.md)。  
   
@@ -77,7 +74,7 @@ IEnumerable<ILayerComment> comments =
 ```  
   
 > [!CAUTION]
->  `Comments` 的 `ILayer` 屬性會取得包含在 `ILayer` 內的註解。 但不會取得與它連結的註解。  
+> `Comments` 的 `ILayer` 屬性會取得包含在 `ILayer` 內的註解。 但不會取得與它連結的註解。  
   
  在適當的容器上叫用 `CreateComment()`，以建立註解。  
   
@@ -134,9 +131,6 @@ public void ... (...)
  [將命令和軌跡加入分層圖](../modeling/add-commands-and-gestures-to-layer-diagrams.md)   
  [將自訂架構驗證加入至圖層圖表](../modeling/add-custom-architecture-validation-to-layer-diagrams.md)   
  [將自訂屬性加入分層圖](../modeling/add-custom-properties-to-layer-diagrams.md)   
- [分層圖： 參考](../modeling/layer-diagrams-reference.md)   
- [分層圖： 方針](../modeling/layer-diagrams-guidelines.md)   
+ [圖層圖表：參考](../modeling/layer-diagrams-reference.md)   
+ [圖層圖表：指導方針](../modeling/layer-diagrams-guidelines.md)   
  [擴充 UML 模型和圖表](../modeling/extend-uml-models-and-diagrams.md)
-
-
-

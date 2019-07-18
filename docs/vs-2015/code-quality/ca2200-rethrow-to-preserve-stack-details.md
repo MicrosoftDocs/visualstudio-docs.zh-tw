@@ -1,14 +1,9 @@
 ---
-title: CA2200： 重新擲回以保存堆疊詳細資料 |Microsoft Docs
-ms.custom: ''
+title: CA2200:重新擲回以保存堆疊詳細資料 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - RethrowToPreserveStackDetails
 - CA2200
@@ -20,14 +15,14 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: eb0550a6850f79c7098817d19222c8034e1127ed
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ed2dd2884268511ae05ac89c132f73fdf8b2771e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49874789"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68201643"
 ---
-# <a name="ca2200-rethrow-to-preserve-stack-details"></a>CA2200：請重新擲回以保存堆疊詳細資料
+# <a name="ca2200-rethrow-to-preserve-stack-details"></a>CA2200:必須重新擲回以保存堆疊詳細資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -54,6 +49,3 @@ ms.locfileid: "49874789"
 
  [!code-csharp[FxCop.Usage.Rethrow#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.Rethrow/cs/FxCop.Usage.Rethrow.cs#1)]
  [!code-vb[FxCop.Usage.Rethrow#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Usage.Rethrow/vb/FxCop.Usage.Rethrow.vb#1)]
-
-
-

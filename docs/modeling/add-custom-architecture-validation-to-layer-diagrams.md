@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ba9f4f3a7f6c3ab8d01b50a614fb006305d25eee
-ms.sourcegitcommit: 4c7a0c2d712eb24609216577a793e912a6083eaf
+ms.openlocfilehash: 743337777677b61661da53446f9717cad14ff9ed
+ms.sourcegitcommit: 6a19c5ece38a70731496a38f2ef20676ff18f8a4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "57983360"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65476664"
 ---
 # <a name="add-custom-architecture-validation-to-dependency-diagrams"></a>將自訂架構驗證新增至相依性圖表
 
@@ -32,7 +32,7 @@ ms.locfileid: "57983360"
 
 ## <a name="requirements"></a>需求
 
-請參閱 [需求](../modeling/extend-layer-diagrams.md#prereqs)。
+請參閱 [需求](../modeling/extend-layer-diagrams.md#requirements)。
 
 ## <a name="defining-a-layer-validator-in-a-new-vsix"></a>在新的 VSIX 中定義圖層驗證程式
 
@@ -40,9 +40,7 @@ ms.locfileid: "57983360"
 
 ### <a name="to-define-an-extension-by-using-a-project-template"></a>使用專案範本定義擴充功能
 
-1. 使用 [檔案]  功能表上的 [新增專案]  命令，在新的方案中建立專案。
-
-2. 在 [新增專案]  對話方塊中，於 [模型專案] 之下，選取 [圖層設計工具驗證擴充功能] 。
+1. 建立新**圖層設計工具驗證擴充功能**專案。
 
     此範本隨即建立包含小型範例的專案。
 
@@ -52,22 +50,22 @@ ms.locfileid: "57983360"
    > - 編輯對 `LogValidationError` 的呼叫，移除選擇性引數 `errorSourceNodes` 和 `errorTargetNodes`。
    > - 如果您使用自訂屬性，套用更新中所述[將自訂屬性加入至相依性圖表](../modeling/add-custom-properties-to-layer-diagrams.md)。
 
-3. 編輯程式碼以定義您的驗證。 如需詳細資訊，請參閱 [程式設計驗證](#programming)。
+2. 編輯程式碼以定義您的驗證。 如需詳細資訊，請參閱 [程式設計驗證](#programming)。
 
-4. 若要測試擴充功能，請參閱 [圖層驗證偵錯](#debugging)。
+3. 若要測試擴充功能，請參閱 [圖層驗證偵錯](#debugging)。
 
    > [!NOTE]
    > 只有在特定情況下才會呼叫您的方法，且中斷點將不會自動運作。 如需詳細資訊，請參閱 [圖層驗證偵錯](#debugging)。
 
 ::: moniker range="vs-2017"
 
-5. 若要安裝延伸模組，Visual Studio 中，或在另一部電腦上的主要執行個體，尋找 *.vsix*中的檔案*bin*目錄。 將它複製到您要安裝它的電腦上，然後按兩下該檔案。 若要解除安裝它，請選擇**擴充功能和更新**上**工具**功能表。
+4. 若要安裝延伸模組，Visual Studio 中，或在另一部電腦上的主要執行個體，尋找 *.vsix*中的檔案*bin*目錄。 將它複製到您要安裝它的電腦上，然後按兩下該檔案。 若要解除安裝它，請選擇**擴充功能和更新**上**工具**功能表。
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-5. 若要安裝延伸模組，Visual Studio 中，或在另一部電腦上的主要執行個體，尋找 *.vsix*中的檔案*bin*目錄。 將它複製到您要安裝它的電腦上，然後按兩下該檔案。 若要解除安裝它，請選擇**管理延伸模組**上**延伸模組**功能表。
+4. 若要安裝延伸模組，Visual Studio 中，或在另一部電腦上的主要執行個體，尋找 *.vsix*中的檔案*bin*目錄。 將它複製到您要安裝它的電腦上，然後按兩下該檔案。 若要解除安裝它，請選擇**管理延伸模組**上**延伸模組**功能表。
 
 ::: moniker-end
 
@@ -77,39 +75,37 @@ ms.locfileid: "57983360"
 
 ### <a name="to-add-layer-validation-to-a-separate-vsix"></a>將圖層驗證加入個別的 VSIX
 
-1.  在新的或現有的 Visual Studio 方案中建立類別庫專案。 在 [新增專案]  對話方塊中，按一下 [Visual C#]  ，然後按一下 [類別庫] 。 這個專案會包含圖層驗證類別。
+1. 建立新的**類別庫**專案。 這個專案會包含圖層驗證類別。
 
-2.  在您的方案中識別或建立 VSIX 專案。 VSIX 專案會包含名為 **source.extension.vsixmanifest**的檔案。 如果您必須加入 VSIX 專案，請遵循下列步驟：
+2. 尋找或建立**VSIX 專案**方案中。 VSIX 專案會包含名為 **source.extension.vsixmanifest**的檔案。
 
-    1.  在 [新增專案]  對話方塊中，依序選擇 [Visual C#] 、[擴充性] 、[VSIX 專案] 。
+3. 在 **方案總管 中**，以滑鼠右鍵按一下功能表上的 VSIX 專案，選擇**設定為啟始專案**。
 
-    2.  在 [方案總管] 中，在 VSIX 專案的捷徑功能表上，選擇 [設定為啟始專案] 。
+4. 在 **source.extension.vsixmanifest**的 [資產]  下，加入圖層驗證專案做為 MEF 元件：
 
-3.  在 **source.extension.vsixmanifest**的 [資產] 下，加入圖層驗證專案做為 MEF 元件：
+    1. 選擇 [新增]  。
 
-    1.  選擇 [新增] 。
+    2. 在 [加入新的資產]  對話方塊中，設定：
 
-    2.  在 [加入新的資產]  對話方塊中，設定：
+           =  
 
-          = 
+           =  
 
-          = 
+          = *您的驗證程式專案* 
 
-          = *您的驗證程式專案*
+5. 您也必須將它加入做為圖層驗證：
 
-4.  您也必須將它加入做為圖層驗證：
+    1. 選擇 [新增]  。
 
-    1.  選擇 [新增] 。
-
-    2.  在 [加入新的資產]  對話方塊中，設定：
+    2. 在 [加入新的資產]  對話方塊中，設定：
 
          **Type** = **Microsoft.VisualStudio.ArchitectureTools.Layer.Validator**. 這不是下拉式清單的其中一個選項。 您必須從鍵盤輸入。
 
-          = 
+           =  
 
-          = *您的驗證程式專案*
+          = *您的驗證程式專案* 
 
-5.  返回圖層驗證專案，然後加入下列專案參考：
+6. 返回圖層驗證專案，然後加入下列專案參考：
 
     |**參考資料**|**這可讓您執行**|
     |-|-|
@@ -120,16 +116,16 @@ ms.locfileid: "57983360"
     |System.ComponentModel.Composition|使用 Managed Extensibility Framework (MEF) 定義驗證元件|
     |Microsoft.VisualStudio.Modeling.Sdk.[版本]|定義模型擴充功能|
 
-6.  將本主題結尾處的範例程式碼複製到驗證程式庫專案中的類別檔案，以包含您的驗證程式碼。 如需詳細資訊，請參閱 [程式設計驗證](#programming)。
+7. 將本主題結尾處的範例程式碼複製到驗證程式庫專案中的類別檔案，以包含您的驗證程式碼。 如需詳細資訊，請參閱 [程式設計驗證](#programming)。
 
-7.  若要測試擴充功能，請參閱 [圖層驗證偵錯](#debugging)。
+8. 若要測試擴充功能，請參閱 [圖層驗證偵錯](#debugging)。
 
     > [!NOTE]
     > 只有在特定情況下才會呼叫您的方法，且中斷點將不會自動運作。 如需詳細資訊，請參閱 [圖層驗證偵錯](#debugging)。
 
-8.  若要安裝 VSIX 的 Visual Studio，或在另一部電腦上的主要執行個體中，尋找 **.vsix**中的檔案**bin** VSIX 專案的目錄。 將它複製到您想要安裝 VSIX 的電腦。 在 Windows 檔案總管中按兩下 VSIX 檔案。
+9. 若要安裝 VSIX 的 Visual Studio，或在另一部電腦上的主要執行個體中，尋找 **.vsix**中的檔案**bin** VSIX 專案的目錄。 將它複製到您想要安裝 VSIX 的電腦。 在 Windows 檔案總管中按兩下 VSIX 檔案。
 
-##  <a name="programming"></a> 程式設計驗證
+## <a name="programming"></a> 程式設計驗證
 
 若要定義圖層驗證擴充功能，您可以定義具有下列特性的類別：
 
@@ -198,7 +194,7 @@ ms.locfileid: "57983360"
 
 從圖層到程式碼中之項目的連結具有「代表」的類別。
 
-##  <a name="debugging"></a> 驗證偵錯
+## <a name="debugging"></a> 驗證偵錯
 
 若要對您的圖層驗證擴充功能進行偵錯，請按 CTRL + F5。 Visual Studio 的實驗執行個體隨即開啟。 在本執行個體中，開啟或建立圖層模型。 此模型必須與程式碼相關聯，而且必須有至少一個相依性。
 
@@ -224,13 +220,13 @@ ms.locfileid: "57983360"
 
 或者，您可以插入對 `System.Windows.Forms.MessageBox.Show()`的呼叫。 訊息方塊出現時，請移至 Visual studio，然後在主要執行個體**偵錯**功能表上，按一下**附加至處理序**。 選取名為 **Graphcmd.exe**的處理序。
 
-一律藉由按 CTRL + F5 ([啟動但不偵錯]) 來啟動實驗執行個體。
+一律藉由按 CTRL + F5 ([啟動但不偵錯]  ) 來啟動實驗執行個體。
 
 ### <a name="deploying-a-validation-extension"></a>部署驗證擴充功能
 
 若要在已安裝 Visual Studio 適當版本的電腦上安裝您的驗證擴充功能，請在目標電腦上開啟 VSIX 檔案。
 
-##  <a name="example"></a> Example code
+## <a name="example"></a> Example code
 
 ```csharp
 using System;

@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugSymbolProvider::GetNamespacesUsedAtAddress method
 ms.assetid: 392de54b-9af0-4567-953b-1b41acd1e05c
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d016dd475effa099ac4471e8bc9716f1965b569f
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: adf78f67d9da92c0024b34ec53fc10f772b66ca1
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56705199"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66347537"
 ---
 # <a name="idebugsymbolprovidergetnamespacesusedataddress"></a>IDebugSymbolProvider::GetNamespacesUsedAtAddress
 這個方法會建立偵錯位址相關聯的命名空間的列舉值。
@@ -38,14 +41,12 @@ int GetNamespacesUsedAtAddress(
 );
 ```
 
-#### <a name="parameters"></a>參數
- `pAddress`
+## <a name="parameters"></a>參數
+`pAddress`\
+[in]偵錯位址。
 
- [in]偵錯位址。
-
- `ppEnum`
-
- [out]傳回[IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)命名空間的列舉值。
+`ppEnum`\
+[out]傳回[IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)命名空間的列舉值。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

@@ -1,14 +1,9 @@
 ---
 title: 正在儲存標準文件 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], saving standard documents
 - projects [Visual Studio SDK], saving standard documents
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: d692fedf-b46e-4d60-84bd-578635042235
 caps.latest.revision: 9
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 72415a4ddfa3de9511aab4b52ae37960af872fde
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 5040070287db6486fa62c9010fe023be31b04cbe
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51803574"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68198076"
 ---
 # <a name="saving-a-standard-document"></a>儲存標準文件
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -58,13 +53,12 @@ ms.locfileid: "51803574"
   
 #### <a name="to-change-file-ownership-to-the-miscellaneous-files-project"></a>若要將檔案擁有權變更為其他檔案專案  
   
-1.  查詢服務<xref:Microsoft.VisualStudio.Shell.Interop.SVsExternalFilesManager>介面。  
+1. 查詢服務<xref:Microsoft.VisualStudio.Shell.Interop.SVsExternalFilesManager>介面。  
   
      指標<xref:Microsoft.VisualStudio.Shell.Interop.IVsExternalFilesManager2>會傳回。  
   
-2.  呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsExternalFilesManager2.TransferDocument%2A>(`pszMkDocumentNew`， `punkWindowFrame`) 方法，以將文件傳送至新的階層。 執行 [另存新檔] 命令的階層架構會呼叫這個方法。  
+2. 呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsExternalFilesManager2.TransferDocument%2A>(`pszMkDocumentNew`， `punkWindowFrame`) 方法，以將文件傳送至新的階層。 執行 [另存新檔] 命令的階層架構會呼叫這個方法。  
   
 ## <a name="see-also"></a>另請參閱  
  <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>   
  [開啟和儲存專案項目](../../extensibility/internals/opening-and-saving-project-items.md)
-

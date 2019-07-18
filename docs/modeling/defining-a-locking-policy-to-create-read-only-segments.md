@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e53c91a641606f0ab4b29f9ce0357f4e9ee87022
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MT
+ms.openlocfilehash: 22eaa971035b4b202ecb76b3f1d29e286516a69b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55944623"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445826"
 ---
 # <a name="defining-a-locking-policy-to-create-read-only-segments"></a>定義鎖定原則來建立唯讀區段
 Visual Studio Visualization and Modeling SDK 的不變性 API 可讓程式鎖定的特定領域語言 (DSL) 模型的部分或全部，如此可以讀取但不是會變更。 無法使用這個唯讀選項，例如，讓使用者可以要求加上註解，並檢閱 DSL 模型的同事，但可以變更原始禁止。
@@ -20,7 +20,7 @@ Visual Studio Visualization and Modeling SDK 的不變性 API 可讓程式鎖定
  此外，身為作者的 DSL，您可以定義*鎖定原則。* 鎖定的原則會定義哪些鎖定是允許、 不允許，或強制。 比方說，當您發行 DSL，您可以建議第三方開發人員擴充新的命令。 不過，您也可以使用 鎖定原則，防止它們改變模型的指定組件的唯讀狀態。
 
 > [!NOTE]
->  可以使用反映來規避鎖定原則。 它適用於第三方開發人員，提供清楚的界限，但並不會提供更強的安全性。
+> 可以使用反映來規避鎖定原則。 它適用於第三方開發人員，提供清楚的界限，但並不會提供更強的安全性。
 
  更多的資訊和範例可在 Visual Studio [Visualization and Modeling SDK](https://code.msdn.microsoft.com/Visualization-and-Modeling-313535db)網站。
 
@@ -56,15 +56,15 @@ partition.SetLocks(Locks.Delete);
 ### <a name="using-locks"></a>使用鎖定
  您可以使用鎖定來實作配置，如下所示：
 
--   不允許所有的項目和關聯性以外，表示註解的變更。 這可讓使用者加上註解不需要變更它的模型。
+- 不允許所有的項目和關聯性以外，表示註解的變更。 這可讓使用者加上註解不需要變更它的模型。
 
--   不允許預設分割區中的變更，但允許在圖表的資料分割的變更。 使用者可以重新排列圖表中，但不能改變基礎的模型。
+- 不允許預設分割區中的變更，但允許在圖表的資料分割的變更。 使用者可以重新排列圖表中，但不能改變基礎的模型。
 
--   禁止變更除了在個別的資料庫中註冊的使用者群組的存放區。 其他使用者時，圖表和模型是唯讀。
+- 禁止變更除了在個別的資料庫中註冊的使用者群組的存放區。 其他使用者時，圖表和模型是唯讀。
 
--   不允許為模型的變更，如果圖表的布林值屬性設定為 true。 提供功能表命令，以變更該屬性。 這有助於確保它們不會進行的使用者不小心變更。
+- 不允許為模型的變更，如果圖表的布林值屬性設定為 true。 提供功能表命令，以變更該屬性。 這有助於確保它們不會進行的使用者不小心變更。
 
--   不允許新增和刪除的項目和關聯性的特定類別，但允許變更屬性。 這會將使用者提供固定的表單開發人員可以在其中填入屬性。
+- 不允許新增和刪除的項目和關聯性的特定類別，但允許變更屬性。 這會將使用者提供固定的表單開發人員可以在其中填入屬性。
 
 ## <a name="lock-values"></a>鎖定值
  鎖定可以設定存放區、 磁碟分割，或個別的 ModelElement。 鎖定是`Flags`列舉型別： 您可以結合使用其值 '&#124;'。
@@ -77,14 +77,14 @@ partition.SetLocks(Locks.Delete);
 
 |值|這表示如果`IsLocked(Value)`為 true|
 |-|-|
-|無|沒有限制。|
+|None|沒有限制。|
 |屬性|無法變更定義域屬性的項目。 這不適用於關聯性中的網域類別的角色所產生的屬性。|
 |新增|在資料分割，則無法建立新的項目和連結，或儲存。<br /><br /> 不適用於`ModelElement`。|
 |Move|無法分割區之間移動項目，如果`element.IsLocked(Move)`為 true，或如果`targetPartition.IsLocked(Move)`為 true。|
 |刪除|無法刪除項目，如果這個鎖定設定項目本身，或在任何項目要刪除會傳播，例如內嵌的項目和圖形。<br /><br /> 您可以使用`element.CanDelete()`來探索是否可以刪除項目。|
 |重新排列|無法變更連結的 roleplayer 的順序。|
 |RolePlayer|也就源自於這個項目的連結集，無法變更。 比方說，新的項目不可以內嵌在這個項目。 這不會影響此元素的目標的連結。<br /><br /> 如果這個項目是連結，其來源和目標不會影響。|
-|全部|其他值的位元 OR 運算。|
+|All|其他值的位元 OR 運算。|
 
 ## <a name="locking-policies"></a>鎖定原則
  身為 DSL 的作者，您可以定義*鎖定原則*。 鎖定原則，讓您可以防止特定鎖定設定，或要求，必須設定特定的鎖定會節制主控 SetLocks() 的操作。 一般而言，您可使用鎖定原則可禁止使用者或開發人員不小心在相同的方式，您可以宣告變數 contravening DSL，用途`private`。
@@ -95,9 +95,9 @@ partition.SetLocks(Locks.Delete);
 
  若要定義鎖定原則，您必須：
 
--   建立會實作 <xref:Microsoft.VisualStudio.Modeling.Immutability.ILockingPolicy> 的類別。
+- 建立會實作 <xref:Microsoft.VisualStudio.Modeling.Immutability.ILockingPolicy> 的類別。
 
--   加入這個類別都是透過您的 DSL 的 DocData 的服務。
+- 加入這個類別都是透過您的 DSL 的 DocData 的服務。
 
 ### <a name="to-define-a-locking-policy"></a>若要定義鎖定原則
  <xref:Microsoft.VisualStudio.Modeling.Immutability.ILockingPolicy> 具有下列定義：
@@ -113,7 +113,7 @@ public interface ILockingPolicy
 
  進行呼叫時，會呼叫這些方法`SetLocks()`存放區、 磁碟分割，或 ModelElement。 在每個方法中，您會提供建議的一份鎖定。 您可以傳回建議的設定，或者您可以加入和減去鎖定。
 
- 例如: 
+ 例如：
 
 ```csharp
 using Microsoft.VisualStudio.Modeling;

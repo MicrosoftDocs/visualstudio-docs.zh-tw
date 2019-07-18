@@ -14,15 +14,15 @@ helpviewer_keywords:
 - MSBuild (Visual C++), GetOutputFileName task
 - GetOutputFileName task (MSBuild (Visual C++))
 author: mikeblome
-ms.author: Michael.Blome
+ms.author: mblome
 ms.workload:
 - multiple
-ms.openlocfilehash: ee44e891c8c5f6a95971cade0536b2a5ec5b4688
-ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
+ms.openlocfilehash: c6298a512a1848622bf854d6d9ee9084309a0b4f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "58070387"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62977108"
 ---
 # <a name="getoutputfilename-task"></a>GetOutputFileName 工作
 

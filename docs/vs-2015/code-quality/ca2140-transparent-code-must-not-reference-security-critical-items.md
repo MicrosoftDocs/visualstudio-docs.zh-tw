@@ -1,14 +1,9 @@
 ---
-title: CA2140： 透明程式碼不可以參考安全性關鍵項目 |Microsoft Docs
-ms.custom: ''
+title: CA2140:透明程式碼絕不能參考安全性關鍵項目 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA2129
 - SecurityTransparentCodeShouldNotReferenceNonpublicSecurityCriticalCode
@@ -22,14 +17,14 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: fb6c01fc281384aec28ae46dbb1466686626df8b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1990e781b5793b05166c6ff5b6e9c14141ffdd69
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49892112"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68154250"
 ---
-# <a name="ca2140-transparent-code-must-not-reference-security-critical-items"></a>CA2140：透明程式碼不可以參考安全性關鍵項目
+# <a name="ca2140-transparent-code-must-not-reference-security-critical-items"></a>CA2140:透明程式碼不可以參考安全性關鍵項目
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -42,21 +37,21 @@ ms.locfileid: "49892112"
 ## <a name="cause"></a>原因
  透明的方法：
 
--   處理安全性關鍵的安全性例外狀況類型
+- 處理安全性關鍵的安全性例外狀況類型
 
--   具有參數標記為安全性關鍵類型
+- 具有參數標記為安全性關鍵類型
 
--   具有安全性關鍵條件約束的泛型參數
+- 具有安全性關鍵條件約束的泛型參數
 
--   具有安全性關鍵類型的本機變數
+- 具有安全性關鍵類型的本機變數
 
--   參考的類型會標示為安全性關鍵，
+- 參考的類型會標示為安全性關鍵，
 
--   呼叫標記為安全性關鍵方法
+- 呼叫標記為安全性關鍵方法
 
--   參考的欄位標記為安全性關鍵
+- 參考的欄位標記為安全性關鍵
 
--   傳回標記為安全性關鍵類型
+- 傳回標記為安全性關鍵類型
 
 ## <a name="rule-description"></a>規則描述
  標示的程式碼項目<xref:System.Security.SecurityCriticalAttribute>屬性是安全性關鍵。 透明方法不能使用安全性關鍵項目。 如果透明類型嘗試使用安全性關鍵類型<xref:System.TypeAccessException>， <xref:System.MethodAccessException> ，或<xref:System.FieldAccessException>，就會引發。
@@ -64,11 +59,11 @@ ms.locfileid: "49892112"
 ## <a name="how-to-fix-violations"></a>如何修正違規
  若要修正此規則的違規情形，請執行下列其中一項：
 
--   標記會使用安全性關鍵程式碼與程式碼項目<xref:System.Security.SecurityCriticalAttribute>屬性
+- 標記會使用安全性關鍵程式碼與程式碼項目<xref:System.Security.SecurityCriticalAttribute>屬性
 
      \-或-
 
--   移除<xref:System.Security.SecurityCriticalAttribute>從程式碼項目會標示為安全性關鍵，而是將它們與標記的屬性<xref:System.Security.SecuritySafeCriticalAttribute>或<xref:System.Security.SecurityTransparentAttribute>屬性。
+- 移除<xref:System.Security.SecurityCriticalAttribute>從程式碼項目會標示為安全性關鍵，而是將它們與標記的屬性<xref:System.Security.SecuritySafeCriticalAttribute>或<xref:System.Security.SecurityTransparentAttribute>屬性。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
  請勿隱藏此規則的警告。
@@ -83,6 +78,3 @@ ms.locfileid: "49892112"
  <xref:System.Security.SecurityTransparentAttribute>
  <xref:System.Security.SecurityTreatAsSafeAttribute>
  <xref:System.Security?displayProperty=fullName>
-
-
-

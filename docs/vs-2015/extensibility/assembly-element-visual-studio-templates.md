@@ -1,14 +1,9 @@
 ---
 title: Assembly 項目 （Visual Studio 範本） |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#Assembly
 helpviewer_keywords:
@@ -17,13 +12,13 @@ helpviewer_keywords:
 ms.assetid: 9242f76a-1273-4b8a-8f26-6606f91829ef
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 40bb0b99bfe22c7842296c2fbaa2b868ca1ef259
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 10c894f3507ae760624b6ae18f785aae6016cd5e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51802027"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68184702"
 ---
 # <a name="assembly-element-visual-studio-templates"></a>Assembly 項目 (Visual Studio 範本)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +26,7 @@ ms.locfileid: "51802027"
 指定的範本會使用該組件的參考加入至專案的組件的相關資訊。  
   
  \<VSTemplate >  
- \<TemplateContent >  
+ \<TemplateContent>  
  \<參考 >  
  \<參考 >  
  \<組件 >  
@@ -62,7 +57,7 @@ ms.locfileid: "51802027"
   
  此文字會指定要加入至專案，項目樣板具現化時的組件。 這個組件名稱必須指定其中一種以下列方式：  
   
--   為完整的組件名稱。 例如:   
+- 為完整的組件名稱。 例如：  
   
     ```  
     <Assembly>  
@@ -70,7 +65,7 @@ ms.locfileid: "51802027"
     </Assembly>  
     ```  
   
--   以簡單文字的參考。 例如:   
+- 以簡單文字的參考。 例如：  
   
     ```  
     <Assembly> System </Assembly>  
@@ -105,4 +100,3 @@ ms.locfileid: "51802027"
 ## <a name="see-also"></a>另請參閱  
  [Visual Studio 範本結構描述參考](../extensibility/visual-studio-template-schema-reference.md)   
  [建立專案和項目範本](../ide/creating-project-and-item-templates.md)
-

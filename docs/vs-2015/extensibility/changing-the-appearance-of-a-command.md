@@ -1,14 +1,9 @@
 ---
 title: 變更命令的外觀 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - commands, changing appearance
 - menu commands, changing appearance
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: da2474fa-f92d-4e9e-b8bf-67c61bf249c2
 caps.latest.revision: 24
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 463a9f20b84fdceeeb1165fce2d672263fec30f9
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 4741059410e052c571d77088b9cbe109fb651642
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51770659"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68184498"
 ---
 # <a name="changing-the-appearance-of-a-command"></a>變更命令的外觀
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,21 +36,21 @@ ms.locfileid: "51770659"
   
 ### <a name="to-change-the-appearance-of-a-menu-command"></a>若要變更功能表命令的外觀  
   
-1.  請依照下列中的指示[變更功能表命令的文字](../extensibility/changing-the-text-of-a-menu-command.md)建立功能表項目命名為`New Text`。  
+1. 請依照下列中的指示[變更功能表命令的文字](../extensibility/changing-the-text-of-a-menu-command.md)建立功能表項目命名為`New Text`。  
   
-2.  在 ChangeMenuText.cs 檔案中，新增下列 using 陳述式：  
+2. 在 ChangeMenuText.cs 檔案中，新增下列 using 陳述式：  
   
     ```csharp  
     using System.Security.Permissions;  
     ```  
   
-3.  在 ChangeMenuTextPackageGuids.cs 檔案中，加入下面這一行：  
+3. 在 ChangeMenuTextPackageGuids.cs 檔案中，加入下面這一行：  
   
     ```csharp  
     public const string guidChangeMenuTextPackageCmdSet= "00000000-0000-0000-0000-00000000";  // get the GUID from the .vsct file  
     ```  
   
-4.  在 ChangeMenuText.cs 檔案中，請以下列取代 ShowMessageBox 方法中的程式碼：  
+4. 在 ChangeMenuText.cs 檔案中，請以下列取代 ShowMessageBox 方法中的程式碼：  
   
     ```csharp  
     private void ShowMessageBox(object sender, EventArgs e)  
@@ -66,7 +61,7 @@ ms.locfileid: "51770659"
     }  
     ```  
   
-5.  取得您想要從更新命令<xref:Microsoft.VisualStudio.Shell.OleMenuCommandService>物件，然後在命令物件上設定適當的屬性。 例如，下列方法可指定的命令從 VSPackage 的命令集可以或無法使用。 下列程式碼所做的功能表項目命名為`New Text`已按下後無法使用。  
+5. 取得您想要從更新命令<xref:Microsoft.VisualStudio.Shell.OleMenuCommandService>物件，然後在命令物件上設定適當的屬性。 例如，下列方法可指定的命令從 VSPackage 的命令集可以或無法使用。 下列程式碼所做的功能表項目命名為`New Text`已按下後無法使用。  
   
     ```csharp  
     public bool ChangeMyCommand(int cmdID, bool enableCmd)  
@@ -85,15 +80,14 @@ ms.locfileid: "51770659"
     }  
     ```  
   
-6.  建置此專案並開始偵錯。 Visual Studio 的實驗執行個體應該會出現。  
+6. 建置此專案並開始偵錯。 Visual Studio 的實驗執行個體應該會出現。  
   
-7.  在 **工具**功能表上，按一下**叫用 ChangeMenuText**命令。 命令名稱是在此時**叫用 ChangeMenuText**，因此命令處理常式並不會呼叫 ChangeMyCommand()。  
+7. 在 **工具**功能表上，按一下**叫用 ChangeMenuText**命令。 命令名稱是在此時**叫用 ChangeMenuText**，因此命令處理常式並不會呼叫 ChangeMyCommand()。  
   
-8.  在 **工具**您現在應該會看到的功能表**新文字**。 按一下 **新的文字**。 此命令應該現在會變成灰色。  
+8. 在 **工具**您現在應該會看到的功能表**新文字**。 按一下 **新的文字**。 此命令應該現在會變成灰色。  
   
 ## <a name="see-also"></a>另請參閱  
  [命令、 功能表和工具列](../extensibility/internals/commands-menus-and-toolbars.md)   
  [Vspackage 如何新增使用者介面項目](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
  [擴充功能表和命令](../extensibility/extending-menus-and-commands.md)   
  [Visual Studio 命令表檔案 (.Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
-

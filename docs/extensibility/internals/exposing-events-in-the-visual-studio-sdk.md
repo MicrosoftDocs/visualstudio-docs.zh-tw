@@ -6,17 +6,17 @@ helpviewer_keywords:
 - events [Visual Studio], exposing
 - automation [Visual Studio SDK], exposing events
 ms.assetid: 70bbc258-c221-44f8-b0d7-94087d83b8fe
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3cc905e359d7bcb2946d627ebcb3c28067233fa0
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 29fd9df90f58807ab3d48e077dcfa02d75eff837
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56603153"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66352594"
 ---
 # <a name="expose-events-in-the-visual-studio-sdk"></a>公開 （expose) Visual Studio SDK 中的事件
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 可讓您使用自動化來源事件。 我們建議您來源專案和專案項目的事件。
@@ -52,7 +52,7 @@ ms.locfileid: "56603153"
 
  **AutomationProjectItemEvents** = 傳回`AutomationProjectItemsEvents`物件。
 
-|名稱|類型|範圍|描述|
+|名稱|類型|Range|描述|
 |----------|----------|-----------|-----------------|
 |預設值 (@)|REG_SZ|未使用|未使用。 如需文件，您可以使用 [資料] 欄位。|
 |*AutomationProjectsEvents*|REG_SZ|事件物件的名稱。|索引鍵的名稱是相關項目。 如需文件，您可以使用 [資料] 欄位。<br /><br /> 此範例中，來自於基本的專案範例。|

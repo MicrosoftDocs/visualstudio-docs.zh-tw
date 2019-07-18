@@ -8,19 +8,20 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: e54a031e69957579974e67af124b0e88a0d95abb
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: cf5b486e8298b6438b774481a839c0f6433cdbed
+ms.sourcegitcommit: 92a04c57ac0a49f304fa2ea5043436f30068c3cd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55918165"
+ms.lasthandoff: 05/21/2019
+ms.locfileid: "65975896"
 ---
 # <a name="extended-design-guidelines-rules-rule-set-for-managed-code"></a>適用於 Managed 程式碼的擴充設計方針規則規則集
+
 若要最大化的可用性和可維護性問題所報告的基本設計方針規則擴充了 Microsoft 擴充設計方針規則規則集。 額外特別強調命名方針。 您應該考慮包含這個規則集，如果您的專案包含程式庫程式碼，或如果您想要強制執行最高的標準，來撰寫容易維護的程式碼。
 
- 擴充設計方針規則包含所有 Microsoft 基本設計方針規則。 基本設計方針規則包含所有 Microsoft 最小建議規則。 如需詳細資訊，請參閱 < [managed 程式碼的基本設計方針規則規則集](../code-quality/basic-design-guideline-rules-rule-set-for-managed-code.md)和[managed 程式碼的 Managed 建議規則規則集](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md)
+擴充設計方針規則包含所有 Microsoft 基本設計方針規則。 基本設計方針規則包含所有 Microsoft 最小建議規則。 如需詳細資訊，請參閱 < [managed 程式碼的基本設計方針規則規則集](../code-quality/basic-design-guideline-rules-rule-set-for-managed-code.md)和[managed 程式碼的 Managed 建議規則規則集](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md)
 
- 下表描述中的 Microsoft 擴充設計方針規則規則集的所有規則。
+下表描述中的 Microsoft 擴充設計方針規則規則集的所有規則。
 
 |規則|描述|
 |----------|-----------------|

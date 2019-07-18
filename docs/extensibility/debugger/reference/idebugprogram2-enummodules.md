@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgram2::EnumModules
 ms.assetid: 876ac9da-3b7c-4156-b79a-8f340e9fcea6
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e8de1f98cb6953ba713796e1dbd74de849a0aaf7
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 1bcc4beb077683cddfe3df14f147c3cc90b4111b
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56715925"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66353114"
 ---
 # <a name="idebugprogram2enummodules"></a>IDebugProgram2::EnumModules
 擷取此程式已載入，並且正在執行的模組清單。
@@ -36,10 +39,9 @@ int EnumModules( 
 );
 ```
 
-#### <a name="parameters"></a>參數
- `ppEnum`
-
- [out]傳回[IEnumDebugModules2](../../../extensibility/debugger/reference/ienumdebugmodules2.md)物件，其中包含的模組清單。
+## <a name="parameters"></a>參數
+`ppEnum`\
+[out]傳回[IEnumDebugModules2](../../../extensibility/debugger/reference/ienumdebugmodules2.md)物件，其中包含的模組清單。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

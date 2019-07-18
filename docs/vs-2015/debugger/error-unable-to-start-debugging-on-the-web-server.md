@@ -1,14 +1,9 @@
 ---
-title: 錯誤： 無法啟動網頁伺服器上偵錯 |Microsoft Docs
-ms.custom: ''
+title: 錯誤：無法啟動網頁伺服器上偵錯 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 f1_keywords:
 - vs.debug.error.http
 - vwd.nonadmin.error.
@@ -32,22 +27,22 @@ ms.assetid: f62e378a-3a99-4f78-9d97-8bb63a4da181
 caps.latest.revision: 40
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 168aaff6e7165c0566b198dab22174b14dad9949
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 0b0cbd7afe90b1dbc091263e3a2594c9ca739e1c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51779290"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68185476"
 ---
-# <a name="error-unable-to-start-debugging-on-the-web-server"></a>錯誤：無法在 Web 伺服器上啟動偵錯
+# <a name="error-unable-to-start-debugging-on-the-web-server"></a>錯誤：無法在網頁伺服器上開始偵錯
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-當您嘗試偵錯 Web 伺服器上所執行的 ASP.NET 應用程式時，您可能會收到此錯誤訊息：無法在 Web 伺服器上開始偵錯。
+當您嘗試偵錯 Web 伺服器上執行的 ASP.NET 應用程式時，您可能會收到這個錯誤訊息：無法開始偵錯 Web 伺服器上。
   
 在許多情況下，因為 IIS 未正確設定，就會發生此錯誤。
 
-##  <a name="vxtbshttpservererrorsthingstocheck"></a> 檢查您的 IIS 設定
+## <a name="vxtbshttpservererrorsthingstocheck"></a> 檢查您的 IIS 設定
 
 之後採取來解決問題，並再重新嘗試偵錯的詳細步驟，您可能也需要重設 IIS。 可以這麼做，開啟系統管理員命令提示字元並輸入`iisreset`，或您可以在 [IIS 管理員] 中。 
 
@@ -93,10 +88,6 @@ ms.locfileid: "51779290"
     （稍後修正） 的較舊版本中的 bug 需要提高的權限中有些 ASP.NET 偵錯案例。
     
 - 如果執行的 Visual Studio 的多個執行個體，重新開啟您的專案中的 Visual Studio 中，一個執行個體，並再試一次。
-   
-  
+
 ## <a name="see-also"></a>另請參閱  
  [偵錯 Web 應用程式：錯誤和疑難排解](../debugger/debugging-web-applications-errors-and-troubleshooting.md)
-
-
-

@@ -9,18 +9,18 @@ manager: jillfra
 ms.workload:
 - data-storage
 - dotnet
-ms.openlocfilehash: a454218bbddb6c135ff7dc2a5910e6e4a9b3c7e4
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.openlocfilehash: a4a62f629244d44680b3d5ac3233bd45b975302e
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55956775"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66745308"
 ---
 # <a name="visual-studio-data-tools-for-net"></a>適用於 .NET 的 Visual Studio Data Tools
 
-Visual Studio 和.NET Framework 一起提供廣泛的 API 和工具連線到資料庫、 模型化資料在記憶體中，以及在使用者介面中顯示資料的支援。 .NET Framework 類別提供資料存取功能，稱為[ADO.NET](/dotnet/framework/data/adonet/index)。 ADO.NET，以及工具在 Visual Studio 中的資料已設計為支援關聯式資料庫和 XML。 如今，許多 NoSQL 資料庫廠商或第三方，會提供 ADO.NET 提供者。
+Visual Studio 和.NET 一起提供廣泛的 API 和工具連線到資料庫、 模型化資料在記憶體中，以及在使用者介面中顯示資料的支援。 提供資料存取功能的.NET 類別稱為[ADO.NET](/dotnet/framework/data/adonet/index)。 ADO.NET，以及工具在 Visual Studio 中的資料已設計為支援關聯式資料庫和 XML。 如今，許多 NoSQL 資料庫廠商或第三方，會提供 ADO.NET 提供者。
 
-[.NET core](/dotnet/core/)支援 ADO.NET 資料集和相關的類型除外。 如果您以.NET Core 為目標，而且需要的物件關聯式對應 (ORM) 層級，使用[Entity Framework Core](/ef/core/)。
+[.NET core](/dotnet/core/)支援 ADO.NET 資料集和其相關的類型除外。 如果您以.NET Core 為目標，而且需要的物件關聯式對應 (ORM) 層級，使用[Entity Framework Core](/ef/core/)。
 
 下圖顯示簡單的檢視的基本架構：
 
@@ -40,7 +40,7 @@ Visual Studio 和.NET Framework 一起提供廣泛的 API 和工具連線到資�
 
 5. 新增項目，例如商務規則、 搜尋、 資料驗證，或利用基礎資料庫公開 （expose） 的自訂功能的自訂程式碼。
 
-您可以略過步驟 3 和程式的.NET 應用程式，以發出命令，直接與資料庫，而不是使用模型。 在此情況下，您會發現相關文件： [ADO.NET](/dotnet/framework/data/adonet/index)。 請注意，您仍然可以使用**資料來源組態精靈**和設計工具來產生資料繫結程式碼，當您填入自己的記憶體，然後將 UI 控制項資料繫結至這些物件的物件。
+您可以略過步驟 3 和程式的.NET 應用程式，以發出命令，直接與資料庫，而不是使用模型。 在此情況下，您會找到相關的文件：[ADO.NET](/dotnet/framework/data/adonet/index)。 請注意，您仍然可以使用**資料來源組態精靈**和設計工具來產生資料繫結程式碼，當您填入自己的記憶體，然後將 UI 控制項資料繫結至這些物件的物件。
 
 ## <a name="see-also"></a>另請參閱
 

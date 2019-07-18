@@ -1,26 +1,21 @@
 ---
 title: 使用設定存放區 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Settings Store, using
 ms.assetid: 447ec08a-eca5-40b8-89b0-f98fdf3d39a4
 caps.latest.revision: 29
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 421ae479d2c25fc6b01ae63083f18c2b1c55c69d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 4b6c2810a81ada06152faea06e86a27f7907a643
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51749916"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430104"
 ---
 # <a name="using-the-settings-store"></a>使用設定存放區
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,9 +31,9 @@ ms.locfileid: "51749916"
 ## <a name="creating-the-example-project"></a>建立範例專案  
  本節說明如何使用示範的功能表命令來建立簡單的延伸模組專案。  
   
-1.  每個 Visual Studio 擴充功能開始 VSIX 部署專案，以將包含的延伸模組資產。 建立[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]VSIX 專案，名為`SettingsStoreExtension`。 您可以找到在 VSIX 專案範本**新的專案**下方的對話方塊**Visual C# / 擴充性**。  
+1. 每個 Visual Studio 擴充功能開始 VSIX 部署專案，以將包含的延伸模組資產。 建立[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]VSIX 專案，名為`SettingsStoreExtension`。 您可以找到在 VSIX 專案範本**新的專案**下方的對話方塊**Visual C# / 擴充性**。  
   
-2.  現在將新增名為的自訂命令項目範本**SettingsStoreCommand**。 在 **加入新項目**對話方塊中，移至**Visual C# / 擴充性**，然後選取**自訂命令**。 在 **名稱**視窗的底部欄位中，將命令的檔案名稱變更為**SettingsStoreCommand.cs**。 如需如何建立自訂命令的詳細資訊，請參閱[建立擴充的功能表命令](../extensibility/creating-an-extension-with-a-menu-command.md)  
+2. 現在將新增名為的自訂命令項目範本**SettingsStoreCommand**。 在 **加入新項目**對話方塊中，移至**Visual C# / 擴充性**，然後選取**自訂命令**。 在 **名稱**視窗的底部欄位中，將命令的檔案名稱變更為**SettingsStoreCommand.cs**。 如需如何建立自訂命令的詳細資訊，請參閱[建立擴充的功能表命令](../extensibility/creating-an-extension-with-a-menu-command.md)  
   
 ## <a name="using-the-configuration-settings-store"></a>使用組態設定存放區  
  本節說明如何偵測並顯示組態設定。  
@@ -84,12 +79,11 @@ ms.locfileid: "51749916"
   
 #### <a name="to-use-a-registry-editor-to-verify-configuration-settings"></a>若要使用登錄編輯程式來確認組態設定  
   
-1.  開啟 Regedit.exe。  
+1. 開啟 Regedit.exe。  
   
-2.  瀏覽至 HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0Exp_Config\InstalledProducts\\。  
+2. 瀏覽至 HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0Exp_Config\InstalledProducts\\。  
   
     > [!NOTE]
-    >  請確定您正在查看該索引鍵包含 \14.0Exp_Config\ 和不 \14.0_Config\\。 當您執行 Visual Studio 的實驗執行個體時，組態設定是在登錄區 「 14.0Exp_Config"。  
+    > 請確定您正在查看該索引鍵包含 \14.0Exp_Config\ 和不 \14.0_Config\\。 當您執行 Visual Studio 的實驗執行個體時，組態設定是在登錄區 「 14.0Exp_Config"。  
   
-3.  展開 \Installed Products\ 節點。 在先前步驟中的訊息是否**Microsoft Windows Phone 開發人員工具安裝： True**，則 \Installed Products\ 應該包含 Microsoft Windows Phone 開發人員工具 節點。 如果訊息已**Microsoft Windows Phone 開發人員工具安裝： False**，則 \Installed Products\ 不應包含 Microsoft Windows Phone 開發人員工具 節點。
-
+3. 展開 \Installed Products\ 節點。 如果在先前步驟中的訊息是**Microsoft Windows Phone 開發人員工具安裝：True**，則 \Installed Products\ 應該包含 Microsoft Windows Phone 開發人員工具 節點。 如果訊息是**Microsoft Windows Phone 開發人員工具安裝：False**，則 \Installed Products\ 不應包含 Microsoft Windows Phone 開發人員工具 節點。

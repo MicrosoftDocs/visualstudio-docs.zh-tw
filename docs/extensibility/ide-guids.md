@@ -6,17 +6,17 @@ helpviewer_keywords:
 - GUIDs, integrated development environment
 - IDE, GUIDs
 ms.assetid: d31a0f97-b7be-4fb5-a942-8ba4527bc068
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3cdd656367e42a0a5b5636049ff4483b3aa1e9f3
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: da2cdd5a292de0413845da0ce2d7e8b4678cf895
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335164"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66311176"
 ---
 # <a name="ide-guids"></a>IDE GUID
 

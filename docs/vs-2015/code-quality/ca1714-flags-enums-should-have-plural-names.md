@@ -1,14 +1,9 @@
 ---
-title: ： 旗標列舉應該 ca1714 複數名稱 |Microsoft Docs
-ms.custom: ''
+title: CA1714:旗標列舉應該使用複數名稱 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - FlagsEnumsShouldHavePluralNames
 - CA1714
@@ -20,14 +15,14 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: bb2314b0cc0b12b56c7807bef5668e1c79a71cc5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: bf0e75596bfc2b274f12d9b58d2718881931b7df
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49830037"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65700503"
 ---
-# <a name="ca1714-flags-enums-should-have-plural-names"></a>CA1714：旗標列舉應該使用複數名稱
+# <a name="ca1714-flags-enums-should-have-plural-names"></a>CA1714:旗標列舉應該使用複數名稱
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -52,12 +47,9 @@ ms.locfileid: "49830037"
  它可安全地隱藏違規情形，如果名稱是複數的字，但不結束中的 '。 比方說，如果先前所述的數日列舉型別已命名為 'DaysOfTheWeek'，這會違反此規則，但不是其意圖的邏輯。 這類違規應該才能隱藏。
 
 ## <a name="related-rules"></a>相關的規則
- [CA1027：必須以 FlagsAttribute 標記列舉](../code-quality/ca1027-mark-enums-with-flagsattribute.md)
+ [CA1027:以 FlagsAttribute 標記列舉](../code-quality/ca1027-mark-enums-with-flagsattribute.md)
 
- [CA2217：不要以 FlagsAttribute 標記列舉](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)
+ [CA2217:不以 FlagsAttribute 標記列舉](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)
 
 ## <a name="see-also"></a>另請參閱
- <xref:System.FlagsAttribute?displayProperty=fullName> [列舉設計](http://msdn.microsoft.com/library/dd53c952-9d9a-4736-86ff-9540e815d545)
-
-
-
+ <xref:System.FlagsAttribute?displayProperty=fullName> [列舉設計](https://msdn.microsoft.com/library/dd53c952-9d9a-4736-86ff-9540e815d545)

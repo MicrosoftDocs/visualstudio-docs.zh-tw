@@ -1,14 +1,9 @@
 ---
 title: 編輯後繼續 (Visual Basic) |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -25,13 +20,13 @@ ms.assetid: 7e90f34f-e699-45ab-a4c9-a4b527c498c8
 caps.latest.revision: 43
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 383e3418135857b0bded3bbefaace0e8d5832ce6
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 24782fee98cff09513ff2b4d1606f2be0bd9fbd2
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51750635"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62428545"
 ---
 # <a name="edit-and-continue-visual-basic"></a>編輯後繼續 (Visual Basic)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,12 +39,12 @@ ms.locfileid: "51750635"
   
  以 .NET Framework 4.5.1 為目標的 64 位元專案支援 [編輯後繼續]。  
   
- 編輯後繼續時，不支援您開始使用偵錯**附加至處理序**。 在最佳化程式碼、混合 Managed 程式碼和機器碼或 Compact Framework (智慧型裝置) 專案中，皆不支援 [編輯後繼續] 功能。  
+ 當您使用 [附加至處理序] 開始偵錯時，並不支援 [編輯後繼續]。 在最佳化程式碼、混合 Managed 程式碼和機器碼或 Compact Framework (智慧型裝置) 專案中，皆不支援 [編輯後繼續] 功能。  
   
  本章節中的主題提供其他詳細資訊，說明使用這項功能的方法以及不允許進行的變更種類。  
   
 ## <a name="in-this-section"></a>本節內容  
- [如何：以編輯後繼續在中斷模式套用編輯](../debugger/how-to-apply-edits-in-break-mode-with-edit-and-continue.md)  
+ [如何：以編輯後繼續在中斷模式中套用編輯](../debugger/how-to-apply-edits-in-break-mode-with-edit-and-continue.md)  
  說明在中斷模式中套用程式碼編輯的方式。  
   
  [Visual Basic 編輯後繼續中不支援的編輯](../debugger/unsupported-edits-in-visual-basic-edit-and-continue.md)  
@@ -58,6 +53,3 @@ ms.locfileid: "51750635"
 ## <a name="related-sections"></a>相關章節  
  [編輯後繼續](../debugger/edit-and-continue.md)  
  提供編輯後繼續的主題清單。
-
-
-

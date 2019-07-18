@@ -1,5 +1,5 @@
 ---
-title: 如何：從命令列指定符號檔位置 | Microsoft Docs
+title: 作法：從命令列指定符號檔位置 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -9,14 +9,14 @@ caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d4cb6fcfac8e9f619ab99e1d96472824d6c98e51
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: e08a2f8fc93f91cafe40d2dc5e9bdb8b49770b3b
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54776174"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67692822"
 ---
-# <a name="how-to-specify-symbol-file-locations-from-the-command-line"></a>如何：從命令列指定符號檔位置
+# <a name="how-to-specify-symbol-file-locations-from-the-command-line"></a>HOW TO：從命令列指定符號檔位置
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 若要顯示符號資訊 (例如函式名稱和行號)，VSPerfReport 命令列工具需要存取已進行程式碼剖析之元件的符號 (.pdb) 檔案和 Windows 系統檔。 符號檔是在元件編譯時建立。 如需詳細資訊，請參閱 [VSPerfReport](../profiling/vsperfreport.md)。 VSPerfReport 會自動搜尋下列位置中是否有符號檔：  
@@ -38,7 +38,7 @@ ms.locfileid: "54776174"
   您也可以同時使用這兩種方法。  
   
 > [!NOTE]
->  如果 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 安裝在本機電腦上，則可能已指定 Windows 符號檔的位置。 如需詳細資訊，請參閱[如何：參考 Windows 符號資訊](../profiling/how-to-reference-windows-symbol-information.md)。 您仍然必須按照本主題之後描述的方式來設定 VSPerfReport 使用位置和伺服器。  
+> 如果 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 安裝在本機電腦上，則可能已指定 Windows 符號檔的位置。 如需詳細資訊，請參閱[如何：參考 Windows 符號資訊](../profiling/how-to-reference-windows-symbol-information.md)。 您仍然必須按照本主題之後描述的方式來設定 VSPerfReport 使用位置和伺服器。  
   
 ## <a name="specifying-windows-symbol-files"></a>指定 Windows 符號檔案  
   
@@ -48,7 +48,7 @@ ms.locfileid: "54776174"
   
 2. 使用下列語法設定 **_NT_SYMBOL_PATH** 環境變數或 VSPerfReport /SymbolPath 選項：  
   
-    **srv\\*** *LocalStore* **\*http://msdl.microsoft.com/downloads/symbols**  
+    **srv\*** *LocalStore* **\*http://msdl.microsoft.com/downloads/symbols**  
   
     其中 *LocalStore* 代表您建立的本機目錄路徑。  
   

@@ -11,17 +11,16 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 41be21f3b28cccfe735a2a908851ebe3b181ce7b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 0d4406d1fc30115cc7002da24c71d2274131ce74
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54762891"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65674524"
 ---
 # <a name="options-text-editor-cc-experimental"></a>選項、文字編輯器、C/C++、實驗
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 藉由變更這些選項，您可以變更進行 C 或 C++ 程式設計時之 IntelliSense 和瀏覽資料庫的相關行為。  
   
  若要存取這個頁面，請在 [選項]  對話方塊的左窗格中依序展開 [文字編輯器] 和 [C/C++] ，然後選擇 [實驗] 。  
@@ -29,7 +28,7 @@ ms.locfileid: "54762891"
  Visual Studio 2015 Update 1 RC 安裝提供這些功能。  
   
 > [!NOTE]
->  在下列指示的某些 Visual Studio 使用者介面項目中，您的電腦可能會顯示不同的名稱或位置。 您所擁有的 Visual Studio 版本以及使用的設定會決定這些項目。 請參閱 [在 Visual Studio 中自訂開發設定](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。  
+> 在下列指示的某些 Visual Studio 使用者介面項目中，您的電腦可能會顯示不同的名稱或位置。 您所擁有的 Visual Studio 版本以及使用的設定會決定這些項目。 請參閱 [在 Visual Studio 中自訂開發設定](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。  
   
 ## <a name="browsingnavigation"></a>瀏覽/巡覽  
  **啟用新的 Database Engine**  
@@ -65,6 +64,6 @@ ms.locfileid: "54762891"
   
   您可以將游標停留在波浪線上，或是使用預設鍵盤快速鍵 Ctrl+點 (Ctrl +)，來取得燈泡。 請注意，針對鍵盤快速鍵，您的插入號不需要放在特定錯誤或語彙基元上；您可以直接在錯誤所在的同一行，叫用該行上任何項目的建議。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [設定語言特定編輯器選項](../../ide/reference/setting-language-specific-editor-options.md)   
  [Refactoring in C++ (VC Blog)](http://blogs.msdn.com/b/vcblog/archive/2014/11/14/all-about-c-refactoring-in-visual-studio-2015-preview.aspx) (在 C++ 中重構 (VC 部落格))

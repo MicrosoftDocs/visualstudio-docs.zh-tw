@@ -1,14 +1,9 @@
 ---
 title: 將資料儲存在專案檔 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - data [Visual Studio], saving in project files
 - project files
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: a3d4b15b-a91e-41ba-b235-e62632d11bc5
 caps.latest.revision: 29
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 87d858d675fb1b2fb60280321a319b24684d9d83
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: fc671963854e4fa0c2af763de5000fac82a839b8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51755823"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432522"
 ---
 # <a name="saving-data-in-project-files"></a>將資料儲存於專案檔
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +34,7 @@ ms.locfileid: "51755823"
   
 #### <a name="to-save-a-build-related-data-in-the-project-file"></a>若要儲存組建相關的專案檔中的資料  
   
--   呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetPropertyValue%2A>方法來儲存專案檔的完整路徑。  
+- 呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetPropertyValue%2A>方法來儲存專案檔的完整路徑。  
   
     ```  
     private SpecializedProject project;  
@@ -54,7 +49,7 @@ ms.locfileid: "51755823"
   
 #### <a name="to-retrieve-build-related-data-from-the-project-file"></a>若要擷取組建從專案檔的相關資料  
   
--   呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.GetPropertyValue%2A>方法來擷取專案檔的完整路徑。  
+- 呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.GetPropertyValue%2A>方法來擷取專案檔的完整路徑。  
   
     ```  
     private SpecializedProject project;  
@@ -71,7 +66,7 @@ ms.locfileid: "51755823"
   
 #### <a name="to-save-non-build-related-data-in-the-project-file"></a>若要儲存非建置相關的專案檔中的資料  
   
-1.  實作<xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.IsFragmentDirty%2A>方法，以判斷是否已變更 XML 片段，自從上次儲存至其目前的檔案。  
+1. 實作<xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.IsFragmentDirty%2A>方法，以判斷是否已變更 XML 片段，自從上次儲存至其目前的檔案。  
   
     ```  
     public int IsFragmentDirty(uint storage, out int pfDirty)  
@@ -101,7 +96,7 @@ ms.locfileid: "51755823"
     }  
     ```  
   
-2.  實作<xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.Save%2A>方法，將 XML 資料儲存在專案檔中。  
+2. 實作<xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.Save%2A>方法，將 XML 資料儲存在專案檔中。  
   
     ```  
     public int Save(ref Guid guidFlavor, uint storage, out string pbstrXMLFragment, int fClearDirty)  
@@ -152,7 +147,7 @@ ms.locfileid: "51755823"
   
 #### <a name="to-retrieve-non-build-related-data-in-the-project-file"></a>若要擷取非建置相關的專案檔中的資料  
   
-1.  實作<xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.InitNew%2A>方法以初始化專案延伸模組屬性和其他組建無關的資料。 如果沒有出現在專案檔的 XML 組態資料，會呼叫這個方法。  
+1. 實作<xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.InitNew%2A>方法以初始化專案延伸模組屬性和其他組建無關的資料。 如果沒有出現在專案檔的 XML 組態資料，會呼叫這個方法。  
   
     ```  
     public int InitNew(ref Guid guidFlavor, uint storage)  
@@ -168,7 +163,7 @@ ms.locfileid: "51755823"
         return VSConstants.S_OK;  
     ```  
   
-2.  實作<xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.Load%2A>從專案檔案載入 XML 資料的方法。  
+2. 實作<xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.Load%2A>從專案檔案載入 XML 資料的方法。  
   
     ```  
     public int Load(ref Guid guidFlavor, uint storage, string pszXMLFragment)  
@@ -213,8 +208,7 @@ ms.locfileid: "51755823"
     ```  
   
 > [!NOTE]
->  本主題所提供的所有程式碼範例是較大的範例中，部分[VSSDK 範例](../misc/vssdk-samples.md)。  
+> 本主題所提供的所有程式碼範例是較大的範例中，部分[VSSDK 範例](../misc/vssdk-samples.md)。  
   
 ## <a name="see-also"></a>另請參閱  
  [在 MSBuild 專案檔中保存資料](../extensibility/internals/persisting-data-in-the-msbuild-project-file.md)
-

@@ -5,17 +5,17 @@ ms.topic: reference
 helpviewer_keywords:
 - IDebugPortPicker interface
 ms.assetid: 8b7f6685-a3c5-4355-b706-c1b574f6ff84
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 845e197b186d462b74aaf8cf3cd7218e4606dfc7
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 991480886c2c43c330ce37561d383ffdc420e214
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56716541"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66340371"
 ---
 # <a name="idebugportpicker"></a>IDebugPortPicker
 代表自訂的 UI 中選取連接埠。

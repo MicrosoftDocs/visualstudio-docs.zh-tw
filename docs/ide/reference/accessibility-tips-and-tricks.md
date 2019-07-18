@@ -11,12 +11,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 67166318335495f0f8454e1c987fdbfb14c0cac0
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: e86791e77d5c8f6eb1e6b88ac663e1f11cc53e1e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56680928"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62793312"
 ---
 # <a name="accessibility-tips-and-tricks-for-visual-studio"></a>Visual Studio 協助工具祕訣和訣竅
 
@@ -51,8 +51,8 @@ Visual Studio IDE 工具列的作用與許多工具視窗相同。 下列快速�
 |功能|說明|按鍵組合|
 |-------------|-----------------| - |
 |IDE 工具列|選取 [標準] 工具列上的第一個按鈕。|**ALT**、**CTRL** + **TAB**|
-|工作視窗工具列|將焦點移至工具視窗中的工具列。 <br> <br> **注意：** 這適用於大部分的工具視窗，但只限焦點位於在工具視窗中時。 此外，您必須先選擇 SHIFT 鍵再選擇 ALT 鍵。 在部分工具視窗 (例如 Team Explorer) 中，您必須先按住 SHIFT 鍵再選擇 ALT 鍵。|**SHIFT** + **ALT**|
-|工具列|移至下一個工具列中的第一個項目 (當工具列有焦點時)。|**CTRL** + **TAB**|
+|工作視窗工具列|將焦點移至工具視窗中的工具列。 <br> <br> **注意：** 這適用於大部分的工具視窗，但只限焦點位於在工具視窗中時。 此外，您必須先選擇 SHIFT 鍵再選擇 ALT 鍵。 在部分工具視窗 (例如 Team Explorer) 中，您必須先按住 SHIFT 鍵再選擇 ALT 鍵。|**Shift** + **Alt**|
+|工具列|移至下一個工具列中的第一個項目 (當工具列有焦點時)。|**Ctrl** + **Tab**|
 
 ### <a name="other-useful-shortcut-key-combinations"></a>其他實用快速鍵組合
 
@@ -60,14 +60,14 @@ Visual Studio IDE 工具列的作用與許多工具視窗相同。 下列快速�
 
 |功能|說明|按鍵組合|
 |-------------|-----------------| - |
-|IDE|開啟或關閉高對比。 <br> <br> **注意：** 標準 Windows 捷徑|**左 ALT + 左 SHIFT + PRINT SCREEN**|
+|IDE|開啟或關閉高對比。 <br> <br> **注意：** 標準 Windows 捷徑|**左 Alt + 左 Shift + PrtScn**|
 |對話方塊|選取或清除對話方塊中的核取方塊選項。 <br> <br> **注意：** 標準 Windows 捷徑|**空格鍵**|
-|操作功能表|開啟操作 (滑鼠右鍵) 功能表。 <br> <br> **注意：** 標準 Windows 捷徑|**SHIFT** + **F10**|
-|Menus|使用其快速鍵來快速存取功能表項目。 選擇後接功能表中加底線字母的 **ALT** 鍵，來啟動命令。 例如，若要檢視 Visual Studio 中的 [開啟專案] 對話方塊，您將選擇 **ALT** + **F** + **O** + **P**。  <br><br> **注意：** 標準 Windows 捷徑|**ALT** + **[字母]**|
-|[快速啟動] 搜尋方塊| 使用 Visual Studio 中的搜尋功能|**Ctrl** + **Q**|
-|[工具箱] 視窗|在 [工具箱] 索引標籤之間移動。|**CTRL** + **向上鍵**<br /><br /> 和<br /><br /> **CTRL** + **向下鍵**|
-|[工具箱] 視窗|將控制項從 [工具箱] 新增至表單或設計工具。|**ENTER**|
-|選項對話方塊、環境、鍵盤|刪除 [按快速鍵] 選項中所輸入的按鍵組合。|**退格鍵**|
+|操作功能表|開啟操作 (滑鼠右鍵) 功能表。 <br> <br> **注意：** 標準 Windows 捷徑|**Shift** + **F10**|
+|Menus|使用其快速鍵來快速存取功能表項目。 選擇 **Alt** 鍵加上功能表中加底線的字母來啟動命令。 例如，若要檢視 Visual Studio 中的 [開啟專案] 對話方塊，請選擇 **Alt** + **F** + **O** + **P**。  <br><br> **注意：** 標準 Windows 捷徑|**Alt** + **[字母]**|
+|搜尋方塊|使用 Visual Studio 中的搜尋功能。|**Ctrl** + **Q**|
+|[工具箱] 視窗|在 [工具箱] 索引標籤之間移動。|**Ctrl** + **向下鍵**<br /><br /> 和<br /><br /> **Ctrl** + **向上鍵**|
+|[工具箱] 視窗|將控制項從 [工具箱] 新增至表單或設計工具。|**Enter**|
+|選項對話方塊：環境 > 鍵盤|刪除 [按快速鍵] 選項中所輸入的按鍵組合。|**退格鍵**|
 
 > [!NOTE]
 > 根據您目前使用的設定或版本，您所看到的對話方塊與功能表命令可能會與 [說明] 中描述的不同。
@@ -76,10 +76,10 @@ Visual Studio IDE 工具列的作用與許多工具視窗相同。 下列快速�
 
 您可以使用 Windows 的音效小程式，指派 Visual Studio 程式事件的音效。 具體而言，您可以指派下列程式事件的音效：
 
- * 遇到中斷點
- * 已取消組建
- * 組建失敗
- * 組建成功
+* 遇到中斷點
+* 已取消組建
+* 組建失敗
+* 組建成功
 
 方式如下：
 
@@ -98,7 +98,7 @@ Visual Studio IDE 工具列的作用與許多工具視窗相同。 下列快速�
 
    ![Windows 10 中 [音效] 小程式的 [音效] 索引標籤](media/sound-applet.png)
 
-4. 按一下 [確定 **Deploying Office Solutions**]。
+4. 按一下 [確定]。
 
 ## <a name="see-also"></a>另請參閱
 

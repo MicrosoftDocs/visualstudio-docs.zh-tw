@@ -11,19 +11,19 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: af11a16c94f50c5d7614d8d630534433332a4d91
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 978313276865c15672a129db601543a0ca307d5b
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223386"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263039"
 ---
 # <a name="debug-a-javascript-or-typescript-app-in-visual-studio"></a>在 Visual Studio 中對 JavaScript 和 TypeScript 進行偵錯
 
 您可以使用 Visual Studio 來偵錯 JavaScript 和 TypeScript 程式碼。 您可以設定和叫用中斷點、附加偵錯工具、檢查變數、檢視呼叫堆疊，以及使用其他偵錯功能。
 
 > [!TIP]
-> 如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017)頁面免費進行安裝。 根據您執行的應用程式開發類型，您可能需要安裝 Visual Studio 隨附的 **Node.js 開發工作負載**。
+> 如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/)頁面免費進行安裝。 根據您執行的應用程式開發類型，您可能需要安裝 Visual Studio 隨附的 **Node.js 開發工作負載**。
 
 ## <a name="debug-server-side-script"></a>偵錯伺服器端指令碼
 
@@ -60,6 +60,13 @@ Visual Studio 僅提供 Chrome 和 Internet Explorer 的偵錯支援。 在某�
     `chrome.exe --remote-debugging-port=9222`
 
     此命令會啟動 Chrome 並啟用偵錯。
+
+    ::: moniker range=">=vs-2019"
+
+    > [!NOTE]
+    > 您也可以在瀏覽器啟動時設定 `--remote-debugging-port` 旗標，方法是從 [偵錯] 工具列中選取 [...瀏覽方式]，接著選擇 [新增]，然後在 [引數] 欄位中設定此旗標。 為瀏覽器使用不同的易記名稱，例如 **Chrome with Debugging**。 如需詳細資訊，請參閱[版本資訊](https://docs.microsoft.com/visualstudio/releases/2019/release-notes-preview)。
+
+    ::: moniker-end
 
 3. 切換至 Visual Studio，然後在原始程式碼中設定中斷點 (在允許中斷點的程式碼行中設定中斷點，例如 `return` 陳述式或 `var` 宣告)。
 
@@ -101,7 +108,7 @@ Visual Studio 僅提供 Chrome 和 Internet Explorer 的偵錯支援。 在某�
     * 如果您需要在已轉換的 JavaScript 檔案 (例如 *app-bundle.js*) 內中斷程式碼，但無法這麼做，請移除來源對應檔案 (*filename.js.map*)。
 
      > [!TIP]
-     > 依照下列步驟第一次附加至處理序之後，在 Visual Studio 2017 中選擇 [偵錯] > [重新附加至處理序]，即可快速地重新附加至相同的處理序。
+     > 遵循下列步驟在第一次附加至處理序之後，您可以選擇 [偵錯] > [重新附加至處理序] 來快速重新附加至相同的處理序。
 
 ## <a name="generate_sourcemaps"></a> 產生來源對應以進行偵錯
 

@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugFunctionObject::CreateObjectNoConstructor method
 ms.assetid: 4e2bd6d5-f4bd-4c10-a998-3db451c9a0c8
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6a5ecd42b0ddf0138e98e2159fae1236ca02b473
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: e42e19e0ac08fc7dff658df2188cd0a822097ddb
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56707389"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66320928"
 ---
 # <a name="idebugfunctionobjectcreateobjectnoconstructor"></a>IDebugFunctionObject::CreateObjectNoConstructor
 使用沒有建構函式建立物件。
@@ -38,14 +41,12 @@ int CreateObjectNoConstructor(
 );
 ```
 
-#### <a name="parameters"></a>參數
- `pClassObject`
+## <a name="parameters"></a>參數
+`pClassObject`\
+[in][IDebugField](../../../extensibility/debugger/reference/idebugfield.md)物件，表示要建立之物件的型別。
 
- [in][IDebugField](../../../extensibility/debugger/reference/idebugfield.md)物件，表示要建立之物件的型別。
-
- `ppObject`
-
- [out]傳回[IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)代表新建立的物件。
+`ppObject`\
+[out]傳回[IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)代表新建立的物件。
 
 ## <a name="return-value"></a>傳回值
  如果成功，會傳回 S_OK;否則，傳回錯誤碼。

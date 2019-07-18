@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - STEPUNIT enumeration
 ms.assetid: cb8441f2-f744-4e73-acfe-ae8542df9649
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0f1d6742b28badf39a5c9273d2891c2da9a9d5f0
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 803aafb60d7ada5b3339735fc0a10c66bb4925e0
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56712121"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66329169"
 ---
 # <a name="stepunit"></a>STEPUNIT
 指定間距單位逐步執行。
@@ -41,12 +44,15 @@ enum enum_STEPUNIT { 
 };
 ```
 
-## <a name="members"></a>成員
- STEP_STATEMENT 陳述式的步驟。
+## <a name="fields"></a>欄位
+ `STEP_STATEMENT`\
+ 陳述式的步驟。
 
- STEP_LINE 所列的步驟。
+ `STEP_LINE`\
+ 所列的步驟。
 
- STEP_INSTRUCTION 指示的步驟。
+ `STEP_INSTRUCTION`\
+ 依指示的步驟。
 
 ## <a name="remarks"></a>備註
  作為引數[步驟](../../../extensibility/debugger/reference/idebugprocess3-step.md)方法。

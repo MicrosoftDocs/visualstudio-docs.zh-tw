@@ -8,26 +8,26 @@ helpviewer_keywords:
 - Visual Studio templates, schema
 - .vstemplate files
 ms.assetid: 6f74a2d5-3811-43d6-8b10-eb5823ad8995
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: df36d255f5277ff9c91901b1ebe12daaef3c7c19
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: af0a11e2e75b8a9be44dacb58eeac2505613e86d
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54959758"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66323042"
 ---
 # <a name="visual-studio-template-schema-reference"></a>Visual Studio 範本結構描述參考
 此章節包含的 XML 項目中的相關資訊 *.vstemplate*檔，亦即儲存專案範本、 項目範本和入門套件的中繼資料的檔案。
 
  您可以使用*vstemplate.xsd*若要驗證自訂 *.vstemplate*檔案。 此檔案位於 *...\\ \<Visual Studio 安裝資料夾 > \Xml\Schemas\1033\vstemplate.xsd*。
 
-|元素|子元素|屬性|
+|項目|子元素|屬性|
 |-------------|--------------------|----------------|
-|[AppliesTo](../extensibility/appliesto-element-visual-studio-templates.md)|無|無|
+|[AppliesTo](../extensibility/appliesto-element-visual-studio-templates.md)|None|None|
 |[Assembly （範本）](../extensibility/assembly-element-visual-studio-templates.md)|--|--|
 |[Assembly （精靈副檔名）](../extensibility/assembly-element-visual-studio-template-wizard-extension.md)|--|--|
 |[BuildProjectOnload](../extensibility/buildprojectonload-element-visual-studio-templates.md)|--|--|
@@ -37,18 +37,18 @@ ms.locfileid: "54959758"
 |[CustomParameter](../extensibility/customparameter-element-visual-studio-templates.md)|--|名稱<br /><br /> 值|
 |[CustomParameters](../extensibility/customparameters-element-visual-studio-templates.md)|CustomParameter|--|
 |[DefaultName](../extensibility/defaultname-element-visual-studio-templates.md)|--|--|
-|[描述](../extensibility/description-element-visual-studio-templates.md)|--|封裝<br /><br /> 識別碼|
+|[描述](../extensibility/description-element-visual-studio-templates.md)|--|套件<br /><br /> 識別碼|
 |[EnableEditOfLocationField](../extensibility/enableeditoflocationfield-element-visual-studio-templates.md)|--|--|
 |[EnableLocationBrowseButton](../extensibility/enablelocationbrowsebutton-element-visual-studio-templates.md)|--|--|
 |[資料夾](../extensibility/folder-element-visual-studio-project-templates.md)|ProjectItem<br /><br /> 資料夾|名稱|
 ||[已被取代]|--|
 |[FullClassName](../extensibility/fullclassname-element-visual-studio-template-wizard-extension.md)|--|--|
 |[Hidden](../extensibility/hidden-element-visual-studio-templates.md)|--|--|
-|[圖示](../extensibility/icon-element-visual-studio-templates.md)|--|封裝<br /><br /> 識別碼|
+|[圖示](../extensibility/icon-element-visual-studio-templates.md)|--|套件<br /><br /> 識別碼|
 |[LocationField](../extensibility/locationfield-element-visual-studio-project-templates.md)|--|--|
 |[LocationFieldMRUPrefix](../extensibility/locationfieldmruprefix-element-visual-studio-templates.md)|--|--|
 |[MaxFrameworkVersion](../extensibility/maxframeworkversion-element-visual-studio-templates.md)|--|--|
-|[名稱](../extensibility/name-element-visual-studio-templates.md)|--|封裝<br /><br /> 識別碼|
+|[名稱](../extensibility/name-element-visual-studio-templates.md)|--|套件<br /><br /> 識別碼|
 |[NumberOfParentCategoriesToRollUp](../extensibility/numberofparentcategoriestorollup-visual-studio-templates.md)|--|--|
 |[PreviewImage](../extensibility/previewimage-element-visual-studio-templates.md)|--|--|
 |[Project](../extensibility/project-element-visual-studio-templates.md)|資料夾<br /><br /> ProjectItem|檔案<br /><br /> TargetFileName<br /><br /> ReplaceParameters|
@@ -64,7 +64,7 @@ ms.locfileid: "54959758"
 |[參考](../extensibility/references-element-visual-studio-templates.md)|參考資料|--|
 |[RequiredFrameworkVersion](../extensibility/requiredframeworkversion-element-visual-studio-templates.md)|--|--|
 |[RequiredPlatformVersion](../extensibility/requiredplatformversion-element-visual-studio-templates.md)|--|版本|
-|[SDKReference](../extensibility/sdkreference-element-visual-studio-templates.md)|--|封裝|
+|[SDKReference](../extensibility/sdkreference-element-visual-studio-templates.md)|--|套件|
 |[ShowByDefault](../extensibility/showbydefault-visual-studio-templates.md)|--|--|
 |[SolutionFolder](../extensibility/solutionfolder-element-visual-studio-templates.md)|ProjectTemplateLink<br /><br /> SolutionFolder|名稱|
 |[SortOrder](../extensibility/sortorder-element-visual-studio-templates.md)|--|--|

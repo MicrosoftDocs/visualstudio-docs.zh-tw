@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - m_taskId field, Task class [.NET Framework debug engines]
 ms.assetid: 9e4b827e-7c41-4fa3-b646-830aba2ec736
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ec28b693ee16153a48d3edc43b50ddbb15536dc5
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 511a9e51c9612db30efe122d940ae458f1850a08
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56685842"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66351541"
 ---
 # <a name="mtaskid-field"></a>m_taskId 欄位
 支援欄位<xref:System.Threading.Tasks.Task.Id%2A?displayProperty=fullName>屬性。

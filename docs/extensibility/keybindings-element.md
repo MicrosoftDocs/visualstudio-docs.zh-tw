@@ -8,17 +8,17 @@ helpviewer_keywords:
 - VSCT XML schema elements, KeyBindings
 - KeyBindings element (VSCT XML schema)
 ms.assetid: 26a15d5c-ddea-4977-af7f-d795ff09c7ad
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 74cd564af66532c454d4ec340c6c8c93820cf5c6
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: d970497dd8f80d66bdbdac8809103582104a2636
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56678341"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66352584"
 ---
 # <a name="keybindings-element"></a>KeyBindings 元素
 按鍵繫結關係項目群組的按鍵繫結關係項目和其他按鍵繫結關係群組。

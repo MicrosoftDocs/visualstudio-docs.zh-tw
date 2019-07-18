@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - objects, interfaces
 ms.assetid: 8a5ab7a4-3668-4f78-9c08-04c5af7090f2
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e6898f8ce028a270bbf9d83b073439cc4576f56f
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 41825004c9a9e8cd5c89f2c3fb7eb08146d70063
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56702963"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66336287"
 ---
 # <a name="objects"></a>物件
 下列參考資訊會說明用來建立核心文字編輯器的執行個體的物件。

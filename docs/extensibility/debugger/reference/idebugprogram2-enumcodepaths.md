@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgram2::EnumCodePaths
 ms.assetid: fb100c3c-9c29-4d63-bd1f-a3e531cb395f
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 09437fddf5cd61aef06341494431c747c4c66c8a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 3206a9c89197ccc9415115fe9fb0995e51ede8c9
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56681617"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66353189"
 ---
 # <a name="idebugprogram2enumcodepaths"></a>IDebugProgram2::EnumCodePaths
 擷取一份原始程式檔中的指定位置的程式碼路徑。
@@ -46,30 +49,24 @@ int EnumCodePaths( 
 );
 ```
 
-#### <a name="parameters"></a>參數
- `pszHint`
+## <a name="parameters"></a>參數
+`pszHint`\
+[in]在游標下方 word**來源**或是**反組譯碼**在 IDE 中的檢視。
 
- [in]在游標下方 word**來源**或是**反組譯碼**在 IDE 中的檢視。
+`pStart`\
+[in][IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)物件，表示目前的程式碼內容。
 
- `pStart`
+`pFrame`\
+[in][IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)物件代表堆疊框架的目前中斷點相關聯。
 
- [in][IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)物件，表示目前的程式碼內容。
+`fSource`\
+[in]非零值 (`TRUE`) 如果在**來源**檢視中，則為零 (`FALSE`) 中的 if**反組譯碼**檢視。
 
- `pFrame`
+`ppEnum`\
+[out]傳回[IEnumCodePaths2](../../../extensibility/debugger/reference/ienumcodepaths2.md)物件，其中包含一份程式碼路徑。
 
- [in][IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)物件代表堆疊框架的目前中斷點相關聯。
-
- `fSource`
-
- [in]非零值 (`TRUE`) 如果在**來源**檢視中，則為零 (`FALSE`) 中的 if**反組譯碼**檢視。
-
- `ppEnum`
-
- [out]傳回[IEnumCodePaths2](../../../extensibility/debugger/reference/ienumcodepaths2.md)物件，其中包含一份程式碼路徑。
-
- `ppSafety`
-
- [out]傳回[IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)物件代表要設定為中斷點中，如果所選的程式碼路徑的額外的程式碼內容會略過。 這可能會發生在最少運算的布林運算式，例如。
+`ppSafety`\
+[out]傳回[IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)物件代表要設定為中斷點中，如果所選的程式碼路徑的額外的程式碼內容會略過。 這可能會發生在最少運算的布林運算式，例如。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

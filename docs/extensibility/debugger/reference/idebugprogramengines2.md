@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgramEngines2 interface
 ms.assetid: 53d648f0-6c11-4337-badd-c43f3872b62c
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1a5ad34904a2f0bf02e5a2221f1ff73093012a41
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: b45cbe8cd1b68e1681b07fcdf1fc715973a11295
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56679914"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66325254"
 ---
 # <a name="idebugprogramengines2"></a>IDebugProgramEngines2
 程式節點會使用此介面來指定所有可能的偵錯引擎 (DE) 可以偵錯此程式。

@@ -13,17 +13,17 @@ caps.latest.revision: 8
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 854371293fd46893f41eef0abc36446f1c7955f0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: e975986a03e7005835653dc98931fc9a44681e28
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54791464"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65700488"
 ---
 # <a name="concurrency-namespace-concurrency-visualizer"></a>Concurrency 命名空間 (並行視覺化檢視)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-`Concurrency` 命名空間提供可讓您存取並行執行階段 (C++ 的並行程式設計架構) 的類別和函式。 如需詳細資訊，請參閱[並行執行階段](http://msdn.microsoft.com/library/874bc58f-8dce-483e-a3a1-4dcc9e52ed2c)。  
+`Concurrency` 命名空間提供可讓您存取並行執行階段 (C++ 的並行程式設計架構) 的類別和函式。 如需詳細資訊，請參閱[並行執行階段](https://msdn.microsoft.com/library/874bc58f-8dce-483e-a3a1-4dcc9e52ed2c)。  
   
 ## <a name="syntax"></a>語法  
   
@@ -35,12 +35,12 @@ namespace Concurrency;
   
 ### <a name="namespaces"></a>命名空間  
   
-|名稱|說明|  
+|名稱|描述|  
 |----------|-----------------|  
 |[diagnostic 命名空間](../profiling/diagnostic-namespace.md)|`diagnostics` 命名空間提供的功能可用來發出並行視覺化檢視標記。|  
   
 ## <a name="requirements"></a>需求  
  **標頭：** cvmarkersobj.h  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [C 程式庫參考](../profiling/c-library-reference.md)

@@ -1,14 +1,9 @@
 ---
-title: 內容運算子 （c + +） |Microsoft Docs
-ms.custom: ''
+title: 內容運算子 (C++) |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.operators
 dev_langs:
@@ -27,23 +22,23 @@ ms.assetid: 73cc9afe-f4a4-474e-bb89-5a33fb5e570c
 caps.latest.revision: 29
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 5807b8e3c6a85c25511374e756b02fabfa5abba5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f6351dd9db7e6f8f29bdd15f376f84511c64bfe7
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51731676"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68161535"
 ---
 # <a name="context-operator-c"></a>內容運算子 (C++)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 您可以使用 C++ 中的內容運算子限定中斷點位置、變數名稱或運算式。 內容運算子對於指定來自外部範圍的名稱相當實用，因為這類名稱會被本機名稱所隱藏。  
   
-##  <a name="BKMK_Using_context_operators_to_specify_a_symbol"></a> 語法  
+## <a name="BKMK_Using_context_operators_to_specify_a_symbol"></a> 語法  
  指定內容的方式有兩種：  
   
-1.  {,,[*module*] } *expression*  
+1. {,,[*module*] } *expression*  
   
      大括號必須包含兩個逗號和模組 (可執行檔或 DLL) 名稱或完整路徑。  
   
@@ -53,7 +48,7 @@ ms.locfileid: "51731676"
     {,,EXAMPLE.dll}SomeFunction  
     ```  
   
-2.  *module*!*expression*  
+2. *module*!*expression*  
   
     ```cpp  
     EXAMPLE.dll!SomeFunction  
@@ -71,17 +66,12 @@ ms.locfileid: "51731676"
   
   當運算式評估工具在運算式中遇到符號時，它會依照下列順序搜尋該符號：  
   
-1.  語彙範圍向外擴展，從目前區塊開始 (大括號括住的一連串陳述式)，並繼續向外擴展至封閉區塊。 目前區塊是包含目前位置 (指令指標位址) 的程式碼。  
+1. 語彙範圍向外擴展，從目前區塊開始 (大括號括住的一連串陳述式)，並繼續向外擴展至封閉區塊。 目前區塊是包含目前位置 (指令指標位址) 的程式碼。  
   
-2.  函式範圍。 目前函式。  
+2. 函式範圍。 目前函式。  
   
-3.  類別範圍 (如果目前位置是在 C++ 成員函式內)。 類別範圍包括所有基底類別。 運算式評估工具將使用一般支配規則。  
+3. 類別範圍 (如果目前位置是在 C++ 成員函式內)。 類別範圍包括所有基底類別。 運算式評估工具將使用一般支配規則。  
   
-4.  目前模組中的全域符號。  
+4. 目前模組中的全域符號。  
   
-5.  目前程式中的公用符號。
-
-
-
-
-
+5. 目前程式中的公用符號。

@@ -19,23 +19,22 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9913d2762b5ebfff98ddb9296637f3e8847ee2f2
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 71ef27b61e162fedbf0b8fcaac38d93bedbc77c1
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54769188"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65682396"
 ---
 # <a name="registerassembly-task"></a>RegisterAssembly 工作
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
-讀取所指定組件內的中繼資料，並將必要的項目加入至登錄，這樣可讓 COM 用戶端順利地建立 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 類別。 此工作的行為和 [Regasm.exe (組件登錄工具)](http://msdn.microsoft.com/library/e190e342-36ef-4651-a0b4-0e8c2c0281cb) 很類似，但不是完全相同。  
+讀取所指定組件內的中繼資料，並將必要的項目加入至登錄，這樣可讓 COM 用戶端順利地建立 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 類別。 此工作的行為和 [Regasm.exe (組件登錄工具)](https://msdn.microsoft.com/library/e190e342-36ef-4651-a0b4-0e8c2c0281cb) 很類似，但不是完全相同。  
   
 ## <a name="parameters"></a>參數  
  下表說明 `RegisterAssembly` 工作的參數。  
   
-|參數|描述|  
+|參數|說明|  
 |---------------|-----------------|  
 |`Assemblies`|必要的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 指定要向 COM 註冊的組件。|  
 |`AssemblyListFile`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem> 參數。<br /><br /> 包含 `RegisterAssembly` 工作與 [UnregisterAssembly](../msbuild/unregisterassembly-task.md) 工作之間狀態的相關資訊。 如此可防止 `UnregisterAssembly` 工作嘗試取消註冊無法在 `RegisterAssembly` 工作中註冊的組件。|  

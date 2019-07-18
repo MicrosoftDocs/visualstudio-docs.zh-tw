@@ -6,17 +6,20 @@ helpviewer_keywords:
 - IDebugComPlusSymbolProvider::GetAttributedClassesinModule
 - GetAttributedClassesinModule
 ms.assetid: d8b087f3-1d32-4570-9eb0-7e0f7b051bc8
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4bd4a1a93a1dd7e4049efd886d5eca1f292d561b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 7aaff6ee7b770ce55a2ad08ff3d8f4f392375576
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56719003"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66336940"
 ---
 # <a name="idebugcomplussymbolprovidergetattributedclassesinmodule"></a>IDebugComPlusSymbolProvider::GetAttributedClassesinModule
 擷取與指定的屬性，指定模組中的類別。
@@ -41,22 +44,18 @@ int GetAttributedClassesinModule (
 );
 ```
 
-#### <a name="parameters"></a>參數
-`ulAppDomainID`
+## <a name="parameters"></a>參數
+`ulAppDomainID`\
+[in]應用程式定義域的識別項。
 
- [in]應用程式定義域的識別項。
+`guidModule`\
+[in]模組的唯一識別碼。
 
-`guidModule`
+`pstrAttribute`\
+[in]屬性的字串。
 
- [in]模組的唯一識別碼。
-
-`pstrAttribute`
-
- [in]屬性的字串。
-
-`ppEnum`
-
- [out]傳回列舉的屬性化類別。
+`ppEnum`\
+[out]傳回列舉的屬性化類別。
 
 ## <a name="return-value"></a>傳回值
 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

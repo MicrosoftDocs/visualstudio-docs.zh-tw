@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugClassField::EnumNestedEnums method
 ms.assetid: 90fd0cef-9145-4de6-91d4-6c881df39d6e
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bdfa97ccdbf139ce28ec58c07864551c4e6a7d5a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 5b8d69c79ed1e27d2c65908d02730f46f4ed6f85
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56719518"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66313102"
 ---
 # <a name="idebugclassfieldenumnestedenums"></a>IDebugClassField::EnumNestedEnums
 建立這個類別的巢狀的列舉值的列舉值。
@@ -36,10 +39,9 @@ int EnumNestedEnums(
 );
 ```
 
-#### <a name="parameters"></a>參數
-`ppEnum`
-
- [out]傳回[IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)物件，表示巢狀的列舉型別的清單。 如果不有任何巢狀列舉型別，則傳回 null 值。
+## <a name="parameters"></a>參數
+`ppEnum`\
+[out]傳回[IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)物件，表示巢狀的列舉型別的清單。 如果不有任何巢狀列舉型別，則傳回 null 值。
 
 ## <a name="return-value"></a>傳回值
 如果成功，會傳回 S_OK，或如果沒有任何巢狀的列舉值，則傳回 S_FALSE。 否則會傳回錯誤碼。

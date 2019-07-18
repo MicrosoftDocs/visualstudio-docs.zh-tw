@@ -1,27 +1,22 @@
 ---
 title: 撰寫的 Windows Installer 套件 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - .msi files, VSPackages
 - msi files, VSPackages
 ms.assetid: 0ce7c21d-0d3f-47fe-a0bb-eed506e32609
 caps.latest.revision: 21
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: c51696cd41083e81fb1561eb8707c4f4844b32d5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 5e92e965f0efe531f1618be509d0a7c9655c573d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51742646"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65682545"
 ---
 # <a name="authoring-a-windows-installer-package"></a>編寫 Windows Installer 套件
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -41,7 +36,7 @@ ms.locfileid: "51742646"
   
 - 整合在 VSPackage[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]藉由呼叫**devenv.exe /setup** （使用 CustomAction 資料表）。  
   
-  如需詳細資訊，請參閱 < [Windows Installer](http://msdn.microsoft.com/library/cc185688\(VS.85\).aspx)。  
+  如需詳細資訊，請參閱 < [Windows Installer](https://msdn.microsoft.com/library/cc185688\(VS.85\).aspx)。  
   
 ## <a name="setup-tools"></a>安裝程式工具  
  有各式各樣的協力廠商安裝程式工具會提供 Windows Installer 封裝的開發環境。 兩個免費的工具，如下所示：  
@@ -54,8 +49,7 @@ ms.locfileid: "51742646"
   
    工具組建置 XML 原始程式檔的 Windows Installer 封裝。 工具組是 Microsoft 的開放原始碼專案。 您可以下載原始程式碼和可執行檔[ http://sourceforge.net/projects/wix ](http://sourceforge.net/projects/wix)。  
   
-  適用於整合的商業產品[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]利用[!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)]，請參閱[ http://visualstudiogallery.com ](http://visualstudiogallery.com/)。  
+  適用於整合的商業產品[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]利用[!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)]，請參閱[ https://marketplace.visualstudio.com/ ](https://marketplace.visualstudio.com/)。  
   
 ## <a name="see-also"></a>另請參閱  
  [使用 Windows Installer 安裝 VSPackage](../../extensibility/internals/installing-vspackages-with-windows-installer.md)
-

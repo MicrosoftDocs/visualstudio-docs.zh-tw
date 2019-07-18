@@ -1,5 +1,5 @@
 ---
-title: 如何：連接至服務中的資料
+title: HOW TO：連線至服務中的資料
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -16,14 +16,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: f3fd643ca29c5f5e4df20f244bc06b6bca04b9bd
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.openlocfilehash: 7633d60ed672b64137b68bd9e6c3b860224753e5
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55930736"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62566930"
 ---
-# <a name="how-to-connect-to-data-in-a-service"></a>如何：連線至服務中的資料
+# <a name="how-to-connect-to-data-in-a-service"></a>HOW TO：連線至服務中的資料
 
 連接您的應用程式，執行從服務傳回的資料[資料來源組態精靈](../data-tools/media/data-source-configuration-wizard.png)，然後選取**服務**上**選擇資料來源類型**頁面。
 
@@ -36,20 +36,20 @@ ms.locfileid: "55930736"
 
 ## <a name="to-connect-your-application-to-a-service"></a>若要連接至服務的應用程式
 
-1.  在 [ **資料** ] 功能表上，請按一下 [ **加入新資料來源**]。
+1. 在 [ **資料** ] 功能表上，請按一下 [ **加入新資料來源**]。
 
-2.  選取 [**服務**上**選擇資料來源類型**頁面，然後再按一下**下一步]**。
+2. 選取 [**服務**上**選擇資料來源類型**頁面，然後再按一下**下一步]**。
 
-3.  輸入您想要使用，或按一下 服務的位址**Discover**以在目前的方案中，尋找服務，然後按一下**移**。
+3. 輸入您想要使用，或按一下 服務的位址**Discover**以在目前的方案中，尋找服務，然後按一下**移**。
 
-4.  （選擇性） 您可以輸入新**命名空間**來取代預設的值。
+4. （選擇性） 您可以輸入新**命名空間**來取代預設的值。
 
     > [!NOTE]
     > 按一下 **進階**來開啟[設定服務參考對話方塊](../data-tools/configure-service-reference-dialog-box.md)。
 
-5.  按一下 **確定**加入服務參考加入專案。
+5. 按一下 **確定**加入服務參考加入專案。
 
-6.  按一下 [ **完成**]。
+6. 按一下 [ **完成**]。
 
      資料來源隨即新增至 [資料來源] 視窗。
 

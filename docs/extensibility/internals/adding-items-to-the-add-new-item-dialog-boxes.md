@@ -5,23 +5,23 @@ ms.topic: conceptual
 helpviewer_keywords:
 - Add New Item dialog box, adding items
 ms.assetid: 2f70863b-425b-4e65-86b4-d6a898e29dc7
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e392947f86a1adab92289934632dd393f4ff24ed
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 61a9921103bf5954061fbb61c405ba1d36ffb782
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56620989"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66328058"
 ---
 # <a name="add-items-to-the-add-new-item-dialog-box"></a>將項目新增至 [加入新項目] 對話方塊
 加入項目至的程序**加入新項目**對話方塊開頭的登錄機碼。 下列登錄項目中所示**AddItemTemplates**一節包含可在哪一個項目中的目錄名稱與路徑**加入新項目**放 對話方塊。
 
 > [!NOTE]
->  資料表的正後方的程式碼片段包含其他資訊的登錄項目。
+> 資料表的正後方的程式碼片段包含其他資訊的登錄項目。
 
  本章節位於**HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\14.0Exp\Projects**。
 
@@ -35,7 +35,6 @@ ms.locfileid: "56620989"
 
  **SortPriority** = dword:00000064
 
-
 | 名稱 | 類型 | 資料 (從 *.rgs*檔案) | 描述 |
 |------------------|-----------| - | - |
 | @ （預設值） | REG_SZ | #%IDS_ADDITEM_TEMPLATES_ENTRY% | 資源識別碼**加入項目**範本。 |
@@ -43,18 +42,18 @@ ms.locfileid: "56620989"
 | Val SortPriority | REG_DWORD | 100 ([!INCLUDE[vcprx64](../../extensibility/internals/includes/vcprx64_md.md)]) | 判斷樹狀節點中顯示的檔案中的排序次序**加入新項目** 對話方塊。 |
 
 > [!NOTE]
->  Visual C# 和 Visual Basic 專案類型 GUID 如下所示：
+> Visual C# 和 Visual Basic 專案類型 GUID 如下所示：
 > - [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]: {FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}
 > - [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]: {F184B08F-C81C-45F6-A57F-5ABD9991F28F}
 
- 針對列出的目錄**TemplatesDir**，即*TEMPLATE_PATH %\\&lt;SomeProjectItems&gt;*，是在左邊的節點**新增新的項目**對話方塊方塊中的樹狀結構。 在樹狀目錄中的其他項目為基礎的根目錄中的子目錄。 可加入至專案的檔案是在右窗格中的項目**加入新項目** 對話方塊。
+ 針對列出的目錄**TemplatesDir**，即*TEMPLATE_PATH %\\&lt;SomeProjectItems&gt;* ，是在左邊的節點**新增新的項目**對話方塊方塊中的樹狀結構。 在樹狀目錄中的其他項目為基礎的根目錄中的子目錄。 可加入至專案的檔案是在右窗格中的項目**加入新項目** 對話方塊。
 
  一般而言，這個資料夾將包含範本檔案，例如 HTML 範本專案或 *.cpp*檔案，以及任何 *.vsz*檔案來啟動精靈。 若要控制的項目顯示的方式，您也可以包含 *.vsdir*當地語系化目錄名稱和圖示的檔案。 當地語系化的字串會出現在對話方塊中，表示此節點中的標題**加入新項目**對話方塊方塊中的樹狀結構。
 
  不過，您沒有將所有項目在其中一個 *.vsdir*檔案。 您可以有一個 *.vsdir*檔案的目錄中的每個項目。 如需詳細資訊，請參閱 < [Wizard (.vsz) 檔](../../extensibility/internals/wizard-dot-vsz-file.md)並[範本目錄描述 (.vsdir) 檔案](../../extensibility/internals/template-directory-description-dot-vsdir-files.md)。
 
 > [!NOTE]
->  *.Vsdir*是選擇性的範本目錄中的檔案。 如果您只想要將專案項目放在目錄中，並顯示在**加入新項目** 對話方塊中，您可以將該檔案中指定的範本目錄置於**TemplatesDir**陳述式。 在右窗格中會顯示檔案**加入新項目**該專案的對話方塊。 不過，如果您想要顯示的檔案或圖示的當地語系化的標題，您必須包含至少一個 *.vsdir*範本目錄中的檔案。
+> *.Vsdir*是選擇性的範本目錄中的檔案。 如果您只想要將專案項目放在目錄中，並顯示在**加入新項目** 對話方塊中，您可以將該檔案中指定的範本目錄置於**TemplatesDir**陳述式。 在右窗格中會顯示檔案**加入新項目**該專案的對話方塊。 不過，如果您想要顯示的檔案或圖示的當地語系化的標題，您必須包含至少一個 *.vsdir*範本目錄中的檔案。
 
 ## <a name="group-project-items"></a>群組的專案項目
  如果您想要包含在資料夾中的樣板群組**加入新項目**對話方塊方塊樹狀目錄中，您必須使用項目範本根目錄底下的子目錄中。 當**加入新項目**對話方塊會顯示給使用者，他們也會看到子資料夾，並可以從中選取專案項目。

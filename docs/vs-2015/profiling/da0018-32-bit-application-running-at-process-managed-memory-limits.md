@@ -1,5 +1,5 @@
 ---
-title: DA0018：以處理序 Managed 記憶體限制執行的 32 位元應用程式 | Microsoft Docs
+title: DA0018：32 位元應用程式正以處理序受控記憶體限制執行 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,13 +14,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 6418a39d7e53a3edaa48b3cd003d35d95cba386e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54773283"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68194952"
 ---
-# <a name="da0018-32-bit-application-running-at-process-managed-memory-limits"></a>DA0018：以處理序 Managed 記憶體限制執行的 32 位元應用程式
+# <a name="da0018-32-bit-application-running-at-process-managed-memory-limits"></a>DA0018：執行 32 位元的應用程式時，處理序的記憶體限制會受到管理
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 規則 Id |DA0018 以 |  
@@ -46,7 +46,7 @@ ms.locfileid: "54773283"
  當 Managed 堆積的總大小接近預設限制時，記憶體管理的負擔通常會變大而開始影響應用程式的回應性和延展性。  
   
 ## <a name="how-to-investigate-a-warning"></a>如何調查警告  
- 按兩下 [錯誤清單] 視窗中的訊息，瀏覽至[標記](../profiling/marks-view.md)檢視。 尋找 **.NET CLR Memory\\# Bytes in all Heaps** 和 **# Total committed bytes** 欄。 判斷是否有特定的程式執行階段，當中的 Managed 記憶體配置比其他階段更繁重。 將 **# Bytes in all Heaps** 欄的值與 **.NET CLR Memory\\# of Gen 0 Collections**、**.NET CLR Memory\\# of Gen 1 Collections** 和 **.NET CLR Memory\\# of Gen 2 Collections** 欄中報告的記憶體回收速度比較，判斷 Managed 記憶體配置的模式是否會影響記憶體回收的速率。  
+ 按兩下 [錯誤清單] 視窗中的訊息，瀏覽至[標記](../profiling/marks-view.md)檢視。 尋找 **.NET CLR Memory\\# Bytes in all Heaps** 和 **# Total committed bytes** 欄。 判斷是否有特定的程式執行階段，當中的 Managed 記憶體配置比其他階段更繁重。 將 **# Bytes in all Heaps** 欄的值與 **.NET CLR Memory\\# of Gen 0 Collections**、 **.NET CLR Memory\\# of Gen 1 Collections** 和 **.NET CLR Memory\\# of Gen 2 Collections** 欄中報告的記憶體回收速度比較，判斷 Managed 記憶體配置的模式是否會影響記憶體回收的速率。  
   
  在 .NET Framework 應用程式中，通用語言執行平台限制 Managed 堆積的大小上限要稍微小於處理序位址空間之私用區域部分大小上限的一半。 對於在 32 位元電腦上執行的 32 位元處理序，2GB 代表處理序位址空間之私用部分的上限。 當 Managed 堆積的總大小開始接近預設限制時，可能會增加管理記憶體的負擔，且會降低應用程式效能。  
   

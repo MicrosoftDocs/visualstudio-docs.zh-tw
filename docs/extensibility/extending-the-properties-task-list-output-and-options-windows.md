@@ -1,5 +1,5 @@
 ---
-title: 擴充屬性、 工作清單、 輸出和選項的 Windows |Microsoft Docs
+title: 擴充屬性，工作清單中，輸出中，選項視窗
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,17 +10,17 @@ helpviewer_keywords:
 - tutorials
 - tool windows
 ms.assetid: 06990510-5424-44b8-9fd9-6481acec5c76
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1a32772abb6dd0a4fb1a2d1dc7026cf5d4bac214
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 5186d7c16f89201b43ebabc49215c0afff4bbfd4
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56717815"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66337121"
 ---
 # <a name="extend-the-properties-task-list-output-and-options-windows"></a>擴充屬性、 工作清單、 輸出和選項的 windows
 您可以存取任何 Visual Studio 中的 [工具] 視窗。 本逐步解說示範如何整合到新的工具視窗的相關資訊**選項**頁面和新的設定上**屬性**頁面上，以及如何將寫入**工作清單**並**輸出**windows。
@@ -30,26 +30,26 @@ ms.locfileid: "56717815"
 
 ## <a name="create-an-extension-with-a-tool-window"></a>建立工具視窗的延伸模組
 
-1.  建立專案，名為**TodoList**使用 [VSIX] 範本，然後新增名為的自訂工具視窗項目範本**TodoWindow**。
+1. 建立專案，名為**TodoList**使用 [VSIX] 範本，然後新增名為的自訂工具視窗項目範本**TodoWindow**。
 
     > [!NOTE]
-    >  如需使用工具視窗建立擴充功能的詳細資訊，請參閱[建立的擴充功能與工具視窗](../extensibility/creating-an-extension-with-a-tool-window.md)。
+    > 如需使用工具視窗建立擴充功能的詳細資訊，請參閱[建立的擴充功能與工具視窗](../extensibility/creating-an-extension-with-a-tool-window.md)。
 
 ## <a name="set-up-the-tool-window"></a>設定工具視窗
  新增文字方塊，以在其中輸入新 ToDo 項目，若要加入至清單中，新的項目按鈕和清單方塊中顯示的項目在清單上。
 
-1.  在  *TodoWindow.xaml*，從使用者控制項中刪除按鈕時，文字方塊中，以及 StackPanel 控制項。
+1. 在  *TodoWindow.xaml*，從使用者控制項中刪除按鈕時，文字方塊中，以及 StackPanel 控制項。
 
     > [!NOTE]
-    >  這不會刪除**button1_Click**事件處理常式，您將在稍後步驟中重複使用。
+    > 這不會刪除**button1_Click**事件處理常式，您將在稍後步驟中重複使用。
 
-2.  從**所有 WPF 控制項**一節**工具箱**，拖曳**畫布**方格控制項。
+2. 從**所有 WPF 控制項**一節**工具箱**，拖曳**畫布**方格控制項。
 
-3.  拖曳**文字方塊**，則 **按鈕**，和 **ListBox** 至畫布。 排列項目，讓文字方塊和按鈕是在相同的層級和清單方塊會填滿視窗下方，如下列圖片所示的其餘部分。
+3. 拖曳**文字方塊**，則 **按鈕**，和 **ListBox** 至畫布。 排列項目，讓文字方塊和按鈕是在相同的層級和清單方塊會填滿視窗下方，如下列圖片所示的其餘部分。
 
      ![完成工具視窗](../extensibility/media/t5-toolwindow.png "T5 工具視窗")
 
-4.  在 [XAML] 窗格中，尋找 [] 按鈕並將其內容屬性設定為**新增**。 重新連接 按鈕控制項的按鈕事件處理常式加入`Click="button1_Click"`屬性。 畫布區塊看起來應該像這樣：
+4. 在 [XAML] 窗格中，尋找 [] 按鈕並將其內容屬性設定為**新增**。 重新連接 按鈕控制項的按鈕事件處理常式加入`Click="button1_Click"`屬性。 畫布區塊看起來應該像這樣：
 
     ```xml
     <Canvas HorizontalAlignment="Left" Width="306">
@@ -61,13 +61,13 @@ ms.locfileid: "56717815"
 
 ### <a name="customize-the-constructor"></a>自訂建構函式
 
-1.  在  *TodoWindowControl.xaml.cs*檔案中，新增下列 using 陳述式：
+1. 在  *TodoWindowControl.xaml.cs*檔案中，新增下列 using 陳述式：
 
     ```csharp
     using System;
     ```
 
-2.  新增公用 TodoWindow 參考，並具有採用 TodoWindow 參數 TodoWindowControl 建構函式。 程式碼應該如下所示：
+2. 新增公用 TodoWindow 參考，並具有採用 TodoWindow 參數 TodoWindowControl 建構函式。 程式碼應該如下所示：
 
     ```csharp
     public TodoWindow parent;
@@ -79,7 +79,7 @@ ms.locfileid: "56717815"
     }
     ```
 
-3.  在  *TodoWindow.cs*，變更為包含 TodoWindow 參數 TodoWindowControl 建構函式。 程式碼應該如下所示：
+3. 在  *TodoWindow.cs*，變更為包含 TodoWindow 參數 TodoWindowControl 建構函式。 程式碼應該如下所示：
 
     ```csharp
     public TodoWindow() : base(null)
@@ -125,13 +125,13 @@ ms.locfileid: "56717815"
 
 ### <a name="make-the-options-page-available-to-users"></a>讓使用者可以使用 [選項] 頁面
 
-1.  在  *TodoWindowPackage.cs*，新增<xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute>到`TodoWindowPackage`類別：
+1. 在  *TodoWindowPackage.cs*，新增<xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute>到`TodoWindowPackage`類別：
 
     ```csharp
     [ProvideOptionPage(typeof(ToolsOptions), "ToDo", "General", 101, 106, true)]
     ```
 
-2.  ProvideOptionPage 建構函式的第一個參數是類別的型別`ToolsOptions`，您在稍早所建立。 第二個參數，也就是"ToDo"，是在類別目錄的名稱**選項** 對話方塊。 第三個參數，[一般]，為的子類別的名稱**選項**會使用 [選項] 頁面的對話方塊。 接下來的兩個參數是資源識別碼的字串;第一個是類別目錄的名稱和第二個是子類別目錄的名稱。 最後一個參數會決定是否可以使用自動化來存取此頁面。
+2. ProvideOptionPage 建構函式的第一個參數是類別的型別`ToolsOptions`，您在稍早所建立。 第二個參數，也就是"ToDo"，是在類別目錄的名稱**選項** 對話方塊。 第三個參數，[一般]，為的子類別的名稱**選項**會使用 [選項] 頁面的對話方塊。 接下來的兩個參數是資源識別碼的字串;第一個是類別目錄的名稱和第二個是子類別目錄的名稱。 最後一個參數會決定是否可以使用自動化來存取此頁面。
 
      當使用者開啟選項頁面時，它應該類似下列圖片。
 
@@ -142,7 +142,7 @@ ms.locfileid: "56717815"
 ## <a name="make-data-available-to-the-properties-window"></a>將資料提供給 [屬性] 視窗
  您可以將 ToDo 清單資訊提供藉由建立類別，名為`TodoItem`ToDo 清單中儲存個別項目的相關資訊。
 
-1.  新增類別，名為`TodoItem.cs`。
+1. 新增類別，名為`TodoItem.cs`。
 
      使用者可以使用 [工具] 視窗時，清單方塊中的項目將會以 TodoItems 來表示。 當使用者選取其中一個項目在清單方塊中，**屬性**視窗會顯示項目的資訊。
 
@@ -150,7 +150,7 @@ ms.locfileid: "56717815"
 
      ![屬性視窗](../extensibility/media/t5properties.png "T5Properties")
 
-2.  新增下列 using 陳述式*TodoItem.cs*檔案。
+2. 新增下列 using 陳述式*TodoItem.cs*檔案。
 
     ```csharp
     using System.ComponentModel;
@@ -158,7 +158,7 @@ ms.locfileid: "56717815"
     using Microsoft.VisualStudio.Shell.Interop;
     ```
 
-3.  新增`public`至類別宣告的存取修飾詞。
+3. 新增`public`至類別宣告的存取修飾詞。
 
     ```csharp
     public class TodoItem
@@ -201,7 +201,7 @@ ms.locfileid: "56717815"
     }
     ```
 
-4.  加入至使用者控制項的私用的參考。 加入建構函式採用使用者控制項，而且此 ToDo 項目名稱。 若要尋找的值`daysAhead`，它會取得選項頁面屬性。
+4. 加入至使用者控制項的私用的參考。 加入建構函式採用使用者控制項，而且此 ToDo 項目名稱。 若要尋找的值`daysAhead`，它會取得選項頁面屬性。
 
     ```csharp
     private TodoWindowControl parent;
@@ -230,7 +230,7 @@ ms.locfileid: "56717815"
     }
     ```
 
-5.  因為執行個體`TodoItem`類別會儲存在清單方塊和清單方塊會呼叫`ToString`您必須多載函式，`ToString`函式。 將下列程式碼加入*TodoItem.cs*、 建構函式之後，和之前的類別結尾。
+5. 因為執行個體`TodoItem`類別會儲存在清單方塊和清單方塊會呼叫`ToString`您必須多載函式，`ToString`函式。 將下列程式碼加入*TodoItem.cs*、 建構函式之後，和之前的類別結尾。
 
     ```csharp
     public override string ToString()
@@ -239,7 +239,7 @@ ms.locfileid: "56717815"
     }
     ```
 
-6.  在  *TodoWindowControl.xaml.cs*，新增到的虛設常式方法`TodoWindowControl`類別`CheckForError`和`UpdateList`方法。 檔案結尾 ProcessDialogChar 之後再將它們放。
+6. 在  *TodoWindowControl.xaml.cs*，新增到的虛設常式方法`TodoWindowControl`類別`CheckForError`和`UpdateList`方法。 檔案結尾 ProcessDialogChar 之後再將它們放。
 
     ```csharp
     public void CheckForErrors()
@@ -257,7 +257,7 @@ ms.locfileid: "56717815"
 
  您必須變更按鈕 click 處理常式來讀取的文字方塊中，建立 TodoItem，並將它加入至 ListBox。
 
-1.  取代現有`button1_Click`函式會建立新的 TodoItem 並將它新增至清單方塊的程式碼。 它會呼叫`TrackSelection()`，這將會稍後再進行定義。
+1. 取代現有`button1_Click`函式會建立新的 TodoItem 並將它新增至清單方塊的程式碼。 它會呼叫`TrackSelection()`，這將會稍後再進行定義。
 
     ```csharp
     private void button1_Click(object sender, RoutedEventArgs e)
@@ -272,9 +272,9 @@ ms.locfileid: "56717815"
     }
     ```
 
-2.  在 [設計] 檢視中選取的 ListBox 控制項。 在 **屬性**視窗中按一下 **事件處理常式**按鈕，然後尋找**SelectionChanged**事件。 在文字方塊中，以填滿**listBox_SelectionChanged**。 如此一來新增 SelectionChanged 處理常式的虛設常式，並將它指派給事件。
+2. 在 [設計] 檢視中選取的 ListBox 控制項。 在 **屬性**視窗中按一下 **事件處理常式**按鈕，然後尋找**SelectionChanged**事件。 在文字方塊中，以填滿**listBox_SelectionChanged**。 如此一來新增 SelectionChanged 處理常式的虛設常式，並將它指派給事件。
 
-3.  實作 `TrackSelection()` 方法。 因為您必須取得<xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell><xref:Microsoft.VisualStudio.Shell.Interop.STrackSelection>服務，您需要進行<xref:Microsoft.VisualStudio.Shell.WindowPane.GetService%2A>TodoWindowControl 存取。 將下列方法加入`TodoWindow`類別：
+3. 實作 `TrackSelection()` 方法。 因為您必須取得<xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell><xref:Microsoft.VisualStudio.Shell.Interop.STrackSelection>服務，您需要進行<xref:Microsoft.VisualStudio.Shell.WindowPane.GetService%2A>TodoWindowControl 存取。 將下列方法加入`TodoWindow`類別：
 
     ```
     internal object GetVsService(Type service)
@@ -283,7 +283,7 @@ ms.locfileid: "56717815"
     }
     ```
 
-4.  新增下列 using 陳述式*TodoWindowControl.xaml.cs*:
+4. 新增下列 using 陳述式*TodoWindowControl.xaml.cs*:
 
     ```csharp
     using System.Runtime.InteropServices;
@@ -292,7 +292,7 @@ ms.locfileid: "56717815"
     using Microsoft.VisualStudio.Shell;
     ```
 
-5.  填入的 SelectionChanged 處理常式，如下所示：
+5. 填入的 SelectionChanged 處理常式，如下所示：
 
     ```
     private void listBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -301,7 +301,7 @@ ms.locfileid: "56717815"
     }
     ```
 
-6.  現在，填寫 TrackSelection 函式，這將會提供與整合**屬性**視窗。 當使用者將項目加入至清單方塊，或按一下清單方塊中的項目時，會呼叫此函數。 它將 SelectionContainer 清單方塊的內容，並將傳遞至 SelectionContainer**屬性**視窗的<xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection.OnSelectChange%2A>事件處理常式。 TrackSelection 服務會追蹤使用者介面 (UI) 中選取的物件，並顯示其屬性
+6. 現在，填寫 TrackSelection 函式，這將會提供與整合**屬性**視窗。 當使用者將項目加入至清單方塊，或按一下清單方塊中的項目時，會呼叫此函數。 它將 SelectionContainer 清單方塊的內容，並將傳遞至 SelectionContainer**屬性**視窗的<xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection.OnSelectChange%2A>事件處理常式。 TrackSelection 服務會追蹤使用者介面 (UI) 中選取的物件，並顯示其屬性
 
     ```csharp
     private SelectionContainer mySelContainer;
@@ -351,7 +351,7 @@ ms.locfileid: "56717815"
 
      既然您有一個類別，**屬性** 視窗可以使用，您可以將整合**屬性**工具視窗的視窗。 當使用者按一下 [工具] 視窗中，在清單方塊中的項目**屬性**視窗應該據此更新。 同樣地，當使用者變更中的 ToDo 項目時，才**屬性** 視窗中，應該更新相關聯的項目。
 
-7.  現在，加入 UpdateList 函式程式碼中的其餘*TodoWindowControl.xaml.cs*。 它應該卸除並重新加入從 ListBox 的已修改的 TodoItem。
+7. 現在，加入 UpdateList 函式程式碼中的其餘*TodoWindowControl.xaml.cs*。 它應該卸除並重新加入從 ListBox 的已修改的 TodoItem。
 
     ```csharp
     public void UpdateList(TodoItem item)
@@ -363,7 +363,7 @@ ms.locfileid: "56717815"
     }
     ```
 
-8.  測試您的程式碼。 建置此專案並開始偵錯。 實驗執行個體應該會出現。
+8. 測試您的程式碼。 建置此專案並開始偵錯。 實驗執行個體應該會出現。
 
 9. 開啟**工具** > **選項**頁面。 您應該會看到左窗格中的待辦事項 類別。 分類在依字母順序列出，請看下 Ts。
 
@@ -376,7 +376,7 @@ ms.locfileid: "56717815"
 ## <a name="add-text-to-the-output-window-and-items-to-the-task-list"></a>將文字加入至輸出視窗] 和 [工作清單的項目
  針對**工作清單**，您建立的型別 Task，新的物件，然後再新增至該工作物件**工作清單**藉由呼叫其`Add`方法。 要寫入**輸出** 視窗中，呼叫其`GetPane`方法，以取得窗格物件，然後呼叫`OutputString`窗格物件的方法。
 
-1.  在*TodoWindowControl.xaml.cs*，請在`button1_Click`方法，加入程式碼來取得**一般**窗格**輸出**（這是預設值） 視窗，並寫入其中。 方法看起來應該像這樣：
+1. 在*TodoWindowControl.xaml.cs*，請在`button1_Click`方法，加入程式碼來取得**一般**窗格**輸出**（這是預設值） 視窗，並寫入其中。 方法看起來應該像這樣：
 
     ```csharp
     private void button1_Click(object sender, EventArgs e)
@@ -403,7 +403,7 @@ ms.locfileid: "56717815"
     }
     ```
 
-2.  若要新增至工作清單的項目，您必須將巢狀的類別新增至 TodoWindowControl 類別。 巢狀的類別必須衍生自<xref:Microsoft.VisualStudio.Shell.TaskProvider>。 將下列程式碼新增至結尾`TodoWindowControl`類別。
+2. 若要新增至工作清單的項目，您必須將巢狀的類別新增至 TodoWindowControl 類別。 巢狀的類別必須衍生自<xref:Microsoft.VisualStudio.Shell.TaskProvider>。 將下列程式碼新增至結尾`TodoWindowControl`類別。
 
     ```csharp
     [Guid("72de1eAD-a00c-4f57-bff7-57edb162d0be")]
@@ -416,7 +416,7 @@ ms.locfileid: "56717815"
     }
     ```
 
-3.  接下來新增私用的參考`TodoTaskProvider`並`CreateProvider()`方法，以`TodoWindowControl`類別。 程式碼應該如下所示：
+3. 接下來新增私用的參考`TodoTaskProvider`並`CreateProvider()`方法，以`TodoWindowControl`類別。 程式碼應該如下所示：
 
     ```csharp
     private TodoWindowTaskProvider taskProvider;
@@ -430,7 +430,7 @@ ms.locfileid: "56717815"
     }
     ```
 
-4.  新增`ClearError()`，以便清除工作 清單中，並`ReportError()`，其將項目加入工作清單中，為`TodoWindowControl`類別。
+4. 新增`ClearError()`，以便清除工作 清單中，並`ReportError()`，其將項目加入工作清單中，為`TodoWindowControl`類別。
 
     ```csharp
     private void ClearError()
@@ -462,7 +462,7 @@ ms.locfileid: "56717815"
     }
     ```
 
-5.  現在實作`CheckForErrors`方法，如下所示。
+5. 現在實作`CheckForErrors`方法，如下所示。
 
     ```csharp
     public void CheckForErrors()
@@ -480,28 +480,28 @@ ms.locfileid: "56717815"
 
 ## <a name="try-it-out"></a>現在就試試看
 
-1.  建置此專案並開始偵錯。 實驗執行個體隨即出現。
+1. 建置此專案並開始偵錯。 實驗執行個體隨即出現。
 
-2.  開啟**TodoWindow** (**檢視** > **其他 Windows** > **TodoWindow**)。
+2. 開啟**TodoWindow** (**檢視** > **其他 Windows** > **TodoWindow**)。
 
-3.  在文字方塊中輸入的項目，然後按一下**新增**。
+3. 在文字方塊中輸入的項目，然後按一下**新增**。
 
      到期日之後立即新增至清單方塊的 2 天。 沒有產生任何錯誤，而**工作清單**(**檢視** > **工作清單**) 應該包含任何項目。
 
-4.  現在將設定變更上**工具** > **選項** > **ToDo**頁面**2**回到**0**。
+4. 現在將設定變更上**工具** > **選項** > **ToDo**頁面**2**回到**0**。
 
-5.  輸入中的其他項目**TodoWindow** ，然後按一下**新增**一次。 這會觸發錯誤以及中的項目**工作清單**。
+5. 輸入中的其他項目**TodoWindow** ，然後按一下**新增**一次。 這會觸發錯誤以及中的項目**工作清單**。
 
      當您新增的項目時，初始的日期會設定現在再加上 2 天。
 
-6.  在上**檢視**功能表上，按一下**輸出**以開啟**輸出**視窗。
+6. 在上**檢視**功能表上，按一下**輸出**以開啟**輸出**視窗。
 
      請注意每次新增一個項目，訊息會顯示在**工作清單**窗格。
 
-7.  按一下其中一個清單方塊中的項目。
+7. 按一下其中一個清單方塊中的項目。
 
      **屬性**視窗會顯示兩個項目的屬性。
 
-8.  變更其中一個屬性，然後按**Enter**。
+8. 變更其中一個屬性，然後按**Enter**。
 
      在清單方塊中更新項目。

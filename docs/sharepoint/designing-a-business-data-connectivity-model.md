@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bf2fd868927a7e8380d5c079c2f8dc86d5385961
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 8f322d18afdb8e14ee87ae31d30dd6bdd57b07c5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56628412"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431291"
 ---
 # <a name="design-a-business-data-connectivity-model"></a>設計商務資料連接模型
   您可以藉由將模型檔案中的實體和方法來開發商務資料連接 (BDC) 服務的模型。 實體描述資料欄位的集合。 例如，實體可以代表資料庫中的資料表。 方法會執行的工作，例如加入、 刪除或更新實體將代表的資料。 如需詳細資訊，請參閱 <<c0> [ 將商務資料整合到 SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md)。
@@ -96,7 +96,7 @@ ms.locfileid: "56628412"
  您也可以設定個別的模型或外部內容類型的安全性權限。 如需如何設定安全性權限，模型的詳細資訊，請參閱[BDC 模型管理](http://go.microsoft.com/fwlink/?LinkID=178884)。 如需如何設定安全性權限的外部內容類型的詳細資訊，請參閱[外部內容類型管理](http://go.microsoft.com/fwlink/?LinkID=178885)。
 
 > [!NOTE]
->  您可以使用這些設定，偵錯本機 SharePoint 伺服器上的解決方案。 如需如何在生產環境 SharePoint 伺服器上的 BDC 相關的安全性設定的詳細資訊，請參閱[Business Data Connectivity 服務安全性概觀](http://go.microsoft.com/fwlink/?LinkID=178886)。
+> 您可以使用這些設定，偵錯本機 SharePoint 伺服器上的解決方案。 如需如何在生產環境 SharePoint 伺服器上的 BDC 相關的安全性設定的詳細資訊，請參閱[Business Data Connectivity 服務安全性概觀](http://go.microsoft.com/fwlink/?LinkID=178886)。
 
 ### <a name="retract-models-that-become-corrupt"></a>撤銷損毀的模型
  第一次您啟動偵錯工具，Visual Studio，將整個模型部署到 SharePoint。 之後每次 Visual Studio 會更新 SharePoint 中的模型，與您所做的部署之間的任何變更。

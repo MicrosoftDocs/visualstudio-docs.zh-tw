@@ -1,25 +1,20 @@
 ---
 title: 0 的 x-2 x-4 的 msaa 變異 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 668a6603-5082-4c78-98e6-f3dc871aa55b
 caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 8e661823a07945c22679832dc716ad2f25f4f6aa
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: f6cc62e4ba56cb7be461bbf3cee5435cb404b7fe
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51793772"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439979"
 ---
 # <a name="0x2x4x-msaa-variants"></a>0x/2x/4x MSAA 變異
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,24 +29,24 @@ ms.locfileid: "51793772"
  如果應用程式尚未啟用 MSAA，則 2x MSAA 和 4x MSAA 變異指出在應用程式中啟用它們的相對效能成本。 當成本為可接受的低水平時，請考慮啟用 MSAA 以增強應用程式的影像品質。  
   
 > [!NOTE]
->  您的硬體可能未完全支援所有格式的 MSAA。 如果其中任何變異遇到無法克服的硬體限制，則其在效能摘要表格中的資料行會空白，並會產生一則錯誤訊息。  
+> 您的硬體可能未完全支援所有格式的 MSAA。 如果其中任何變異遇到無法克服的硬體限制，則其在效能摘要表格中的資料行會空白，並會產生一則錯誤訊息。  
   
 ## <a name="remarks"></a>備註  
  這些變異會覆寫建立呈現目標的 `ID3DDevice::CreateTexture2D` 呼叫上的樣本計數和樣本品質引數。 特別是在下列情況下，會覆寫這些參數：  
   
 - `D3D11_TEXTURE2D_DESC` 中所傳遞的 `pDesc` 物件描述呈現目標；亦即：  
   
-  -   BindFlags 成員已設定 D3D11_BIND_TARGET 旗標或 D3D11_BIND_DEPTH_STENCIL 旗標。  
+  - BindFlags 成員已設定 D3D11_BIND_TARGET 旗標或 D3D11_BIND_DEPTH_STENCIL 旗標。  
   
-  -   Usage 成員設定為 D3D11_USAGE_DEFAULT。  
+  - Usage 成員設定為 D3D11_USAGE_DEFAULT。  
   
-  -   CPUAccessFlags 成員設定為 0。  
+  - CPUAccessFlags 成員設定為 0。  
   
-  -   MipLevels 成員設定為 1。  
+  - MipLevels 成員設定為 1。  
   
 - 裝置針對要求的呈現目標格式 (D3D11_TEXTURE2D_DESC::Format 成員)，支援要求的樣本計數 (0、2 或 4) 和樣本品質 (0) (由 `ID3D11Device::CheckMultisampleQualityLevels` 決定)。  
   
-  如果 D3D11_TEXTURE2D_DESC::BindFlags 成員已設定 D3D_BIND_SHADER_RESOUCE 或 D3D11_BIND_UNORDERED_ACCESS 旗標，則會建立兩個版本的紋理；第一個版本已清除這些用做呈現目標的旗標，而另一個版本是非 MSAA 紋理，其完整保留這些旗標做為第一個版本的解析緩衝區。 這是必要的，因為使用 MSAA 紋理做為著色器資源，或進行未排序存取都不可能會有效；例如，處理它的著色器會產生不正確的結果，原因是它需要非 MSAA 紋理。 如果變數已建立次要非 MSAA 紋理，則只要從裝置內容取消設定 MSAA 呈現目標，就會將其內容解析為非 MSAA 紋理。 同樣地，只要 MSAA 呈現目標應該繫結為著色器資源，或用於未排序存取檢視時，就會改為繫結解析的非 MSAA 紋理。  
+  如果 D3D11_TEXTURE2D_DESC::BindFlags 成員已設定 D3D_BIND_SHADER_RESOURCE 或 D3D11_BIND_UNORDERED_ACCESS 旗標，則會建立兩個版本的紋理；第一個版本已清除這些用做轉譯目標的旗標，而另一個版本是非 MSAA 紋理，它完整保留這些旗標作為第一個版本的解析緩衝區。 這是必要的，因為使用 MSAA 紋理做為著色器資源，或進行未排序存取都不可能會有效；例如，處理它的著色器會產生不正確的結果，原因是它需要非 MSAA 紋理。 如果變數已建立次要非 MSAA 紋理，則只要從裝置內容取消設定 MSAA 呈現目標，就會將其內容解析為非 MSAA 紋理。 同樣地，只要 MSAA 呈現目標應該繫結為著色器資源，或用於未排序存取檢視時，就會改為繫結解析的非 MSAA 紋理。  
   
   這些變異也會覆寫使用 `IDXGIFactory::CreateSwapChain`、`IDXGIFactory2::CreateSwapChainForHwnd`、`IDXGIFactory2::CreateSwapChainForCoreWindow`、`IDXGIFactory2::CreateSwapChainForComposition` 和 `ID3D11CreateDeviceAndSwapChain` 所建立的所有交換鏈結上的 MSAA 設定。  
   
@@ -83,6 +78,3 @@ chain_description.SampleDesc.Quality = 0;
   
 // Call IDXGISwapChain::CreateSwapChain or D3D11CreateDeviceAndSwapChain, etc.  
 ```
-
-
-

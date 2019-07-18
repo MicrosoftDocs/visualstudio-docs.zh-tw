@@ -1,14 +1,9 @@
 ---
 title: 舊版語言服務中的自訂文件屬性 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - custom document properties, language services [managed package framework]
 - document properties, custom
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: cc714a67-b33e-4440-9203-3c90f648bd9c
 caps.latest.revision: 19
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 9760ba82c7f40a3fc7768e56111352eb384456fb
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: a2062932f5c9b0c1d51b0503742f7387b7da3dec
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51750679"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68196899"
 ---
 # <a name="custom-document-properties-in-a-legacy-language-service"></a>舊版語言服務中的自訂文件屬性
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -406,4 +401,3 @@ namespace TestLanguagePackage
   
 ## <a name="see-also"></a>另請參閱  
  [舊版語言服務功能](../../extensibility/internals/legacy-language-service-features1.md)
-

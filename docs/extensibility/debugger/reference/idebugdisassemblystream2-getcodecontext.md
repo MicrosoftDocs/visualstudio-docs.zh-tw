@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugDisassemblyStream2::GetCodeContext
 ms.assetid: a6d0ae82-7617-4915-9713-369abe3e2e53
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 268d1f4f80c032932663e7adf9ba9f2063fa90a8
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 64a957f3150520e1cd5dbe4f54b3e9e44fe1facd
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56706362"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66351696"
 ---
 # <a name="idebugdisassemblystream2getcodecontext"></a>IDebugDisassemblyStream2::GetCodeContext
 傳回對應至指定的程式碼位置識別碼的程式碼內容物件。
@@ -38,14 +41,12 @@ int GetCodeContext( 
 );
 ```
 
-#### <a name="parameters"></a>參數
- `uCodeLocationId`
+## <a name="parameters"></a>參數
+`uCodeLocationId`\
+[in]指定的程式碼位置識別碼。 請參閱 < 備註 > 一節[GetCodeLocationId](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodelocationid.md)方法的程式碼的位置識別項的描述。
 
- [in]指定的程式碼位置識別碼。 請參閱 < 備註 > 一節[GetCodeLocationId](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodelocationid.md)方法的程式碼的位置識別項的描述。
-
- `ppCodeContext`
-
- [out]傳回[IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)物件，表示相關聯的程式碼內容。
+`ppCodeContext`\
+[out]傳回[IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)物件，表示相關聯的程式碼內容。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

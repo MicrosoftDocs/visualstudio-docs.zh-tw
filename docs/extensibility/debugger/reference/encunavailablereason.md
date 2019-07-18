@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - EncUnavailableReason enumeration
 ms.assetid: c10aa4c0-d7e0-4de1-b8ff-7e050985eb12
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ea1bbf8fe96abbf1e7bd9a92396d0dcfa4306445
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 7db94a181d87791edb242d69b461f90c42a5e080
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56717035"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66318150"
 ---
 # <a name="encunavailablereason"></a>EncUnavailableReason
 `This is for internal use only!` 表示的原因，**編輯後繼續**不提供。
@@ -49,20 +52,27 @@ public enum EncUnavailableReason {
 };
 ```
 
-#### <a name="parameters"></a>參數
-為何無法使用 編輯後繼續 ENCUN_NONE 否的特定原因。
+## <a name="fields"></a>欄位
+`ENCUN_NONE`\
+沒有特定的理由為何無法使用 編輯後繼續。
 
-ENCUN_INTEROP 編輯後繼續不提供 InterOp 呼叫期間。
+`ENCUN_INTEROP`\
+編輯後繼續不提供 InterOp 呼叫期間。
 
-ENCUN_SQLCLR 編輯後繼續提供期間不會使用 Common Language Runtime (CLR) 的 SQL 程序呼叫。
+`ENCUN_SQLCLR`\
+編輯後繼續提供期間不會使用 Common Language Runtime (CLR) 的 SQL 程序呼叫。
 
-ENCUN_MINIDUMP 編輯後繼續不提供在處理小型傾印。
+`ENCUN_MINIDUMP`\
+編輯後繼續不提供在處理小型傾印。
 
-ENCUN_EMBEDDED 編輯後繼續使用時不處理內嵌程式碼。
+`ENCUN_EMBEDDED`\
+編輯後繼續使用時不處理內嵌程式碼。
 
-ENCUN_ATTACH 編輯後繼續不提供工作階段已附加到，因為未啟動的偵錯工具。
+`ENCUN_ATTACH`\
+編輯後繼續 無法使用工作階段已附加到，因為無法啟動的偵錯工具。
 
-ENCUN_WIN64 編輯後繼續不提供處理 64 位元 Windows 程式碼時。
+`ENCUN_WIN64`\
+編輯後繼續不提供處理 64 位元 Windows 程式碼時。
 
 ## <a name="remarks"></a>備註
 這個列舉僅供內部使用由[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]。 [GetENCAvailableState](../../../extensibility/debugger/reference/idebugprocess3-getencavailablestate.md)並[DisableENC](../../../extensibility/debugger/reference/idebugprocess3-disableenc.md)方法所實作的自訂連接埠供應商應該一律會傳回`E_NOTIMPL`。

@@ -1,27 +1,22 @@
 ---
 title: PreviewImage 元素 （Visual Studio 範本） |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 helpviewer_keywords:
 - <PreviewImage> Element (Visual Studio Templates)
 - PreviewImage Element (Visual Studio Templates)
 ms.assetid: d1796f20-523b-4e0d-8ac3-ca87f3b5a9b6
 caps.latest.revision: 7
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 81b80af3252cd48c2656577a6efdd6e08c251738
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 90521b5ea05aae2f54e56f21b65933a93580da85
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51810217"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68194063"
 ---
 # <a name="previewimage-element-visual-studio-templates"></a>PreviewImage 項目 (Visual Studio 範本)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +25,7 @@ ms.locfileid: "51810217"
   
  \<VSTemplate >  
  \<TemplateData >  
- \<PreviewImage >  
+ \<PreviewImage>  
   
 ## <a name="syntax"></a>語法  
   
@@ -49,7 +44,7 @@ ms.locfileid: "51810217"
   
 ### <a name="parent-elements"></a>父項目  
   
-|項目|描述|  
+|項目|說明|  
 |-------------|-----------------|  
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|必要項目。<br /><br /> 將範本分類，以及定義如何顯示在**新的專案**或**加入新項目** 對話方塊。|  
   
@@ -64,4 +59,3 @@ ms.locfileid: "51810217"
 ## <a name="see-also"></a>另請參閱  
  [Visual Studio 範本結構描述參考](../extensibility/visual-studio-template-schema-reference.md)   
  [建立專案和項目範本](../ide/creating-project-and-item-templates.md)
-

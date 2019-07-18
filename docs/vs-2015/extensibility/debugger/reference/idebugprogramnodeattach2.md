@@ -1,14 +1,9 @@
 ---
-title: IDebugProgramNodeAttach2 |Microsoft Docs
-ms.custom: ''
+title: IDebugProgramNodeAttach2 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugProgramNodeAttach2
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 46b37ac9-a026-4ad3-997b-f19e2f8deb73
 caps.latest.revision: 4
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 0ba1dd00fc661e6b35f30998376c1970096a4d57
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 580d4d2432a957bae8c590b3590a11b1a0b5e84e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51774766"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68148534"
 ---
 # <a name="idebugprogramnodeattach2"></a>IDebugProgramNodeAttach2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -56,15 +51,14 @@ IDebugProgramNodeAttach2 : IUnknown
  如果先前的實作`IDebugProgramNode2::Attach_V7`方法使用所提供的回呼介面，則該功能必須要實作移動[附加](../../../extensibility/debugger/reference/idebugengine2-attach.md)方法和`IDebugProgramNodeAttach2`介面則否必須實作。  
   
 ## <a name="requirements"></a>需求  
- 標頭： Msdbg.h  
+ 標頭：Msdbg.h  
   
- 命名空間： Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間：Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
  [核心介面](../../../extensibility/debugger/reference/core-interfaces.md)   
  [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)   
  [附加](../../../extensibility/debugger/reference/idebugengine2-attach.md)   
  [Attach_V7](../../../extensibility/debugger/reference/idebugprogramnode2-attach-v7.md)
-

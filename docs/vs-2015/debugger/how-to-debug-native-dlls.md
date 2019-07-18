@@ -1,14 +1,9 @@
 ---
-title: 如何： 偵錯原生 Dll |Microsoft Docs
-ms.custom: ''
+title: HOW TO：偵錯原生 Dll |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.dll
 dev_langs:
@@ -27,19 +22,19 @@ ms.assetid: 76b34d15-a66d-4963-842e-c8b955c81696
 caps.latest.revision: 20
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 6577395d33d9004d8f17d91f273e3a53e7a3897d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 16a533b27e619526edab71374d922e68baf0a4b0
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51757482"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65702672"
 ---
-# <a name="how-to-debug-native-dlls"></a>如何：偵錯原生 DLL
+# <a name="how-to-debug-native-dlls"></a>HOW TO：偵錯原生 Dll
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 > [!NOTE]
->  根據您目前使用的設定或版本，您所看到的對話方塊與功能表命令可能會與 [說明] 中描述的不同。 若要變更設定，請從 [工具] 功能表中選擇 [匯入和匯出設定]。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
+> 根據您目前使用的設定或版本，您所看到的對話方塊與功能表命令可能會與 [說明] 中描述的不同。 若要變更設定，請從 [工具] 功能表中選擇 [匯入和匯出設定]。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
   
  當您要偵錯一個 DLL 時，您可以從下列地方開始偵錯：  
   
@@ -49,7 +44,7 @@ ms.locfileid: "51757482"
   
 - 從建立該 DLL 本身的專案。  
   
-  如果您是使用某專案來建立可執行檔，請從該專案開始偵錯。 您可以接著開啟該 DLL 的原始程式檔 (Source File)，並在該檔案中設定中斷點，即使這個檔案並不是屬於用來建立可執行檔的專案。 如需詳細資訊，請參閱 <<c0> [ 中斷點](http://msdn.microsoft.com/en-us/fe4eedc1-71aa-4928-962f-0912c334d583)。  
+  如果您是使用某專案來建立可執行檔，請從該專案開始偵錯。 您可以接著開啟該 DLL 的原始程式檔 (Source File)，並在該檔案中設定中斷點，即使這個檔案並不是屬於用來建立可執行檔的專案。 如需詳細資訊，請參閱[中斷點](https://msdn.microsoft.com/fe4eedc1-71aa-4928-962f-0912c334d583)。  
   
   如果您要從建立該 DLL 的專案開始偵錯，就必須指定您希望用來偵錯該 DLL 的可執行檔。  
   
@@ -70,6 +65,3 @@ ms.locfileid: "51757482"
 ## <a name="see-also"></a>另請參閱  
  [偵錯工具安全性](../debugger/debugger-security.md)   
  [Visual Studio 偵錯](../debugger/debugging-in-visual-studio.md)
-
-
-

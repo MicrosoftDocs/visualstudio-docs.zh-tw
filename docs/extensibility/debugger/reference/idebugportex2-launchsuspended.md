@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPortEx2::LaunchSuspended
 ms.assetid: 34b2cf99-2e52-4757-8969-1d12ac517ec0
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a8d946097d7a8f50cab65b41aaef73654dfbd18a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 94810761e546b0cae9eca32fc76bc0bfd396c7e7
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56703197"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66311121"
 ---
 # <a name="idebugportex2launchsuspended"></a>IDebugPortEx2::LaunchSuspended
 會啟動可執行檔。
@@ -50,38 +53,30 @@ int LaunchSuspended( 
 );
 ```
 
-#### <a name="parameters"></a>參數
- `pszExe`
+## <a name="parameters"></a>參數
+`pszExe`\
+[in]若要啟動的可執行檔名稱。 這可以是完整路徑或相對於在指定的工作目錄`pszDir`參數。
 
- [in]若要啟動的可執行檔名稱。 這可以是完整路徑或相對於在指定的工作目錄`pszDir`參數。
+`pszArgs`\
+[in]要傳遞至可執行檔的引數。 如果不有任何引數，則可能是 null 值。
 
- `pszArgs`
+`pszDir`\
+[in]可執行檔所使用的工作目錄名稱。 可能是 null 值，如果所沒有的工作目錄。
 
- [in]要傳遞至可執行檔的引數。 如果不有任何引數，則可能是 null 值。
+`bstrEnv`\
+[in]Null 終止的字串，後面接著其他的 NULL 結束字元的環境區塊。
 
- `pszDir`
+`hStdInput`\
+[in]替代的輸入資料流的控制代碼。 如果不需要重新導向，則可能是 0。
 
- [in]可執行檔所使用的工作目錄名稱。 可能是 null 值，如果所沒有的工作目錄。
+`hStdOutput`\
+[in]替代的輸出資料流的控制代碼。 如果不需要重新導向，則可能是 0。
 
- `bstrEnv`
+`hStdError`\
+[in]替代錯誤輸出資料流的控制代碼。 如果不需要重新導向，則可能是 0。
 
- [in]Null 終止的字串，後面接著其他的 NULL 結束字元的環境區塊。
-
- `hStdInput`
-
- [in]替代的輸入資料流的控制代碼。 如果不需要重新導向，則可能是 0。
-
- `hStdOutput`
-
- [in]替代的輸出資料流的控制代碼。 如果不需要重新導向，則可能是 0。
-
- `hStdError`
-
- [in]替代錯誤輸出資料流的控制代碼。 如果不需要重新導向，則可能是 0。
-
- `ppPortProcess`
-
- [out]傳回[IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)物件，表示啟動的程序。
+`ppPortProcess`\
+[out]傳回[IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)物件，表示啟動的程序。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

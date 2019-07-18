@@ -5,17 +5,17 @@ ms.topic: reference
 helpviewer_keywords:
 - IDebugDocumentChecksum2 interface
 ms.assetid: 6d22fa94-21aa-46cb-b5b5-32a6399ebb20
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9b40129cb8623e6ea68babe2c480da4e4d4198f3
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 0b4bfc51595e6414a3760d4e57ab6f9791259f83
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56685582"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66341291"
 ---
 # <a name="idebugdocumentchecksum2"></a>IDebugDocumentChecksum2
 表示偵錯文件的總和檢查碼，並讓傳遞元件之間的總和檢查碼。

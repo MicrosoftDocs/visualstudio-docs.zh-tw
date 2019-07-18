@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3e5e7eb7dcfe8103370e30b0be18a0fdcda298d7
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: MTE95
+ms.openlocfilehash: 87e76b2668d8777c46404f0b304eeb56d1821bb8
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55018666"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62894296"
 ---
 # <a name="how-to-debug-inline-assembly-code"></a>HOW TO：對內嵌組譯碼進行偵錯
 
@@ -35,9 +35,9 @@ ms.locfileid: "55018666"
 
 ## <a name="debug-inline-assembly-code"></a>對內嵌組譯碼進行偵錯
 
-1.  使用 [反組譯碼] 視窗檢視組譯碼指令。
+1. 使用 [反組譯碼] 視窗檢視組譯碼指令。
 
-2.  使用 [暫存器] 視窗檢視暫存器內容。
+2. 使用 [暫存器] 視窗檢視暫存器內容。
 
 ## <a name="see-also"></a>另請參閱
 

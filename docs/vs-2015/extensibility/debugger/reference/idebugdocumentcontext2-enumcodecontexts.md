@@ -1,14 +1,9 @@
 ---
 title: IDebugDocumentContext2::EnumCodeContexts |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugDocumentContext2::EnumCodeContexts
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 627af69c-5cce-4e1d-8233-5f4d8dbc62e5
 caps.latest.revision: 12
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: c98df184441568be62a7caf6ab999ea8adf0955e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f34013a827b97234c87e98c6022c64aca3d1a736
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51791380"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68144984"
 ---
 # <a name="idebugdocumentcontext2enumcodecontexts"></a>IDebugDocumentContext2::EnumCodeContexts
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -115,4 +110,3 @@ HRESULT CDebugContext::EnumCodeContexts(IEnumDebugCodeContexts2 **ppEnumCodeCxts
 ## <a name="see-also"></a>另請參閱  
  [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)   
  [IEnumDebugCodeContexts2](../../../extensibility/debugger/reference/ienumdebugcodecontexts2.md)
-

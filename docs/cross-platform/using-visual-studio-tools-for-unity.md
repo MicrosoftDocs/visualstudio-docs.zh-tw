@@ -10,12 +10,12 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 380618e0cee57a1cf0f45a1324d150170e5ee16e
-ms.sourcegitcommit: 5c049194fa256b876ad303f491af11edd505756c
+ms.openlocfilehash: 15c4ba33dda8e1e3220d8285e35000061fedd99f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53027337"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65676720"
 ---
 # <a name="use-visual-studio-tools-for-unity"></a>使用 Visual Studio Tools for Unity
 
@@ -189,6 +189,9 @@ Visual Studio Tools for Unity 可讓您使用 Visual Studio 的強大偵錯工�
 
 2. 參考 DLL 專案中的正確 Unity Framework 設定檔。 在 Visual Studio 的 DLL 專案屬性中，將 [目標 Framework] 屬性設定為您所使用的 Unity Framework 版本。 這是與專案的目標應用程式開發介面相容的 Unity 基底類別庫，例如 Unity 完整、微型或 Web 基底類別庫。 如此可防止 DLL 呼叫存在於其他 Framework 或相容性層級中，但可能不存在於您所使用之 Unity Framework 版本的 Framework 方法。
 
+> [!NOTE]
+> 僅在使用 Unity 的舊版執行階段時才需要以下內容。 如果您使用的是新的 Unity 執行階段，則不再需要使用這些專用的 3.5 設定檔。 使用與 Unity 版本相容的 .NET 4.x 設定檔。
+
    ![將 DLL 的目標 Framework 設定為 Unity 架構。](../cross-platform/media/vstu_debugging_dll_target_framework.png "vstu_debugging_dll_target_framework")
 
 3. 將 DLL 複製到 Unity 專案的 Assets 資料夾。 在 Unity 中，資產是與 Unity 應用程式一起封裝及部署的檔案，以便可以在執行階段載入。 由於 DLL 是在執行階段連結，因此您必須將 DLL 部署為資產。 為了將 DLL 部署為資產，Unity Editor 會要求將 DLL 放在 Unity 專案的 [Assets] 資料夾中。 有兩種方式可讓您完成這個步驟：
@@ -197,7 +200,9 @@ Visual Studio Tools for Unity 可讓您使用 Visual Studio 的強大偵錯工�
 
    - 修改 DLL 專案的組建設定，將其輸出資料夾設定為 Unity 專案的 [Assets] 資料夾。 DLL 和 PDB 檔案都會被放在 [Assets] 資料夾中。
 
-   由於 PDB 檔案包含 DLL 的偵錯符號，並將 DLL 程式碼對應至其原始程式碼形式，因此偵錯時會需要這些檔案。 Visual Studio Tools for Unity 將會使用 DLL 和 PDB 中的資訊來建立 DLL.MDB 檔案，這是 Unity 指令碼引擎所使用的偵錯符號格式。
+   由於 PDB 檔案包含 DLL 的偵錯符號，並將 DLL 程式碼對應至其原始程式碼形式，因此偵錯時會需要這些檔案。 如果您是以舊版執行階段為目標，Visual Studio Tools for Unity 將會使用 DLL 和 PDB 中的資訊來建立 DLL.MDB 檔案，這是舊版 Unity 指令碼引擎所使用的偵錯符號格式。 如果您是以新的執行階段為目標，並使用可攜式 PDB，則 Visual Studio Tools for Unity 將不會嘗試執行任何的符號轉換，因為新的 Unity 執行階段是以原生方式使用可攜式 PDB。
+   
+   有關產生 PDB 的更多資訊，請參閱[此處](https://docs.microsoft.com/visualstudio/debugger/how-to-set-debug-and-release-configurations)。 如果您是以新的執行階段為目標，請確定 [偵錯資訊] 設定為 [可攜式]，以便正確地產生可攜式 PDB。 如果您是以舊版執行階段為目標，則需要使用 [完整]。
 
 4. 為程式碼偵錯。 您現在可以連同 Unity 專案的原始程式碼一起為 DLL 原始程式碼偵錯，並使用您慣用的所有偵錯功能，例如中斷點和逐步執行程式碼。
 

@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEngineCreateEvent2 interface
 ms.assetid: 37c0a841-1c8d-4802-a990-36b54bca3ef7
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: eec2d1dd536b70432b761d613389acdac80cd6d5
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 088de1540a07e85bfb474308987302d8a7c613ba
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56702300"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66352452"
 ---
 # <a name="idebugenginecreateevent2"></a>IDebugEngineCreateEvent2
 偵錯引擎 (DE) 會將此介面傳送至工作階段的偵錯管理員 (SDM) 中，建立的預設執行個體時。

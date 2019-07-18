@@ -1,13 +1,8 @@
 ---
 title: 在您的開發程序中使用模型 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-techdebt
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
 ms.topic: conceptual
 helpviewer_keywords:
 - UML, using models
@@ -15,18 +10,18 @@ ms.assetid: a33ac8fc-4ba0-4850-b71b-014dc8674e54
 caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 56534483f8b9cda99b756524d87408efbedfe275
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 92e8e236be1c6aa07709d03274a4c964b17b1bad
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51757695"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65700720"
 ---
 # <a name="use-models-in-your-development-process"></a>在開發程序中使用模型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-在 Visual Studio 中，您可以使用模型來協助您了解並變更系統、應用程式或元件。 模型可以協助您將系統運作的領域視覺化、釐清使用者的需求、定義系統的架構、分析程式碼，以及確定您的程式碼符合需求。 請參閱[Channel 9 影片： 透過模型改善結構](http://go.microsoft.com/fwlink/?LinkID=252078)。  
+在 Visual Studio 中，您可以使用模型來協助您了解並變更系統、應用程式或元件。 模型可以協助您將系統運作的領域視覺化、釐清使用者的需求、定義系統的架構、分析程式碼，以及確定您的程式碼符合需求。 請參閱[Channel 9 影片：透過模型改善結構](http://go.microsoft.com/fwlink/?LinkID=252078)。  
   
  若要查看支援各類型之模型的 Visual Studio 版本，請參閱 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。  
   
@@ -57,25 +52,25 @@ ms.locfileid: "51757695"
   
  通常與模型一起使用的其他規格層面包含下列項目。 根據您的專案規模和樣式，可能會使用其中許多層面，或完全不使用任何層面：  
   
--   使用者劇本。 使用者劇本是系統行為之某個層面的簡短描述 (與使用者和其他專案關係人一起討論)，該層面將在其中一個專案反覆項目中傳遞。 一般使用者劇本的開頭是「客戶將能夠...」。 使用者劇本可能會引入一組使用案例，也可能會定義先前已經開發之使用案例的擴充功能。 定義或擴充使用案例有助於讓使用者劇本更加清楚。  
+- 使用者劇本。 使用者劇本是系統行為之某個層面的簡短描述 (與使用者和其他專案關係人一起討論)，該層面將在其中一個專案反覆項目中傳遞。 一般使用者劇本的開頭是「客戶將能夠...」。 使用者劇本可能會引入一組使用案例，也可能會定義先前已經開發之使用案例的擴充功能。 定義或擴充使用案例有助於讓使用者劇本更加清楚。  
   
--   變更要求。 較正式專案中的變更要求和敏捷式專案中的使用者劇本相當類似。 敏捷式方法會將所有需求視為已在先前反覆項目中開發的項目。  
+- 變更要求。 較正式專案中的變更要求和敏捷式專案中的使用者劇本相當類似。 敏捷式方法會將所有需求視為已在先前反覆項目中開發的項目。  
   
--   使用案例描述。 使用案例代表使用者與系統互動來達成特定目標的其中一種方式。 完整描述包含目標、事件的主要和替代順序，以及例外結果。 使用案例圖有助於摘要說明並提供使用案例的概觀。  
+- 使用案例描述。 使用案例代表使用者與系統互動來達成特定目標的其中一種方式。 完整描述包含目標、事件的主要和替代順序，以及例外結果。 使用案例圖有助於摘要說明並提供使用案例的概觀。  
   
--   情節。 情節是一系列事件之相當詳細的描述，其中顯示系統、使用者和其他系統如何一起運作，提供給專案關係人價值。 它可能會採用使用者介面之投影片放映或使用者介面原型的形式。 它可以描述單一使用案例或一系列使用案例。  
+- 情節。 情節是一系列事件之相當詳細的描述，其中顯示系統、使用者和其他系統如何一起運作，提供給專案關係人價值。 它可能會採用使用者介面之投影片放映或使用者介面原型的形式。 它可以描述單一使用案例或一系列使用案例。  
   
--   字彙。 專案的需求字彙可描述客戶用來討論其領域的單字。 使用者介面和需求模型應該也會使用這些詞彙。 類別圖可以協助釐清大部分詞彙之間的關聯性。 建立此圖表和字彙不僅可減少使用者與開發人員之間的誤解，而且也幾乎總是能顯示出不同商務專案關係人之間的誤解。  
+- 字彙。 專案的需求字彙可描述客戶用來討論其領域的單字。 使用者介面和需求模型應該也會使用這些詞彙。 類別圖可以協助釐清大部分詞彙之間的關聯性。 建立此圖表和字彙不僅可減少使用者與開發人員之間的誤解，而且也幾乎總是能顯示出不同商務專案關係人之間的誤解。  
   
--   商務規則。 許多商務規則都可以表達成需求類別模型中關聯和屬性的非變異條件約束，以及表達成循序圖的條件約束。  
+- 商務規則。 許多商務規則都可以表達成需求類別模型中關聯和屬性的非變異條件約束，以及表達成循序圖的條件約束。  
   
--   高階設計。 描述這主要的部分以及它們如何相互配合。 元件、順序和介面圖表是高階設計的主要部分。  
+- 高階設計。 描述這主要的部分以及它們如何相互配合。 元件、順序和介面圖表是高階設計的主要部分。  
   
--   設計模式。 描述在該系統不同部分之間共用的設計規則。  
+- 設計模式。 描述在該系統不同部分之間共用的設計規則。  
   
--   測試規格。 測試指令碼和測試程式碼的設計可以充分運用活動和循序圖來描述測試步驟的順序。 您應該根據需求模型表達系統測試，以便在需求變更時更輕易地變更系統測試。  
+- 測試規格。 測試指令碼和測試程式碼的設計可以充分運用活動和循序圖來描述測試步驟的順序。 您應該根據需求模型表達系統測試，以便在需求變更時更輕易地變更系統測試。  
   
--   專案計劃。 專案計劃或待處理項目會定義何時要傳遞每項功能。 您可以指出每項功能所實作或擴充的使用案例和商務規則，藉以定義每項功能。 您可以直接在計劃中參考使用案例和商務規則，或是在個別的文件中定義一組功能，然後在該計劃中使用此功能標題。  
+- 專案計劃。 專案計劃或待處理項目會定義何時要傳遞每項功能。 您可以指出每項功能所實作或擴充的使用案例和商務規則，藉以定義每項功能。 您可以直接在計劃中參考使用案例和商務規則，或是在個別的文件中定義一組功能，然後在該計劃中使用此功能標題。  
   
 ### <a name="use-models-in-iteration-planning"></a>在反覆項目計劃中使用模型  
  雖然所有專案的規模和組織都不同，不過一般專案會規劃成介於二至六週的一系列反覆項目。 請務必規劃足夠的反覆項目，以便利用早期反覆項目的意見回應來調整後期反覆項目的範圍和計劃。  
@@ -85,28 +80,28 @@ ms.locfileid: "51757695"
 #### <a name="sharpen-focus-as-each-iteration-approaches"></a>在每個反覆項目進行時突顯焦點  
  在每個反覆項目進行時，使用模型來協助定義該反覆項目結束時所傳遞的項目。  
   
--   請勿在早期的反覆項目中詳細模型化所有項目。 在第一個反覆項目中，請針對使用者字彙中的主要項目建立類別圖、繪製主要使用案例的圖表，並且繪製主要元件的圖表。 請勿詳細描述其中任何項目，因為這個詳細資料之後將在專案中變更。 使用這個模型中定義的詞彙來建立一份功能或主要使用者劇本的清單。 將這些功能指派給反覆項目，以便能大致上平衡整個專案估計的工作負載。 這些指派之後將在此專案中變更。  
+- 請勿在早期的反覆項目中詳細模型化所有項目。 在第一個反覆項目中，請針對使用者字彙中的主要項目建立類別圖、繪製主要使用案例的圖表，並且繪製主要元件的圖表。 請勿詳細描述其中任何項目，因為這個詳細資料之後將在專案中變更。 使用這個模型中定義的詞彙來建立一份功能或主要使用者劇本的清單。 將這些功能指派給反覆項目，以便能大致上平衡整個專案估計的工作負載。 這些指派之後將在此專案中變更。  
   
--   請嘗試在早期的反覆項目中實作所有最重要使用案例的簡化版本。 在後期的反覆項目中擴充這些使用案例。 這種方式有助於降低太晚在專案中發現需求或架構之缺陷而無法進行任何處置的風險。  
+- 請嘗試在早期的反覆項目中實作所有最重要使用案例的簡化版本。 在後期的反覆項目中擴充這些使用案例。 這種方式有助於降低太晚在專案中發現需求或架構之缺陷而無法進行任何處置的風險。  
   
--   在每個反覆項目即將結束前，召集需求研討會來詳細定義將於下一個反覆項目中開發的需求或使用者劇本。 邀請可以決定優先順序的使用者和商務專案關係人，以及開發人員和系統測試人員。 提供三個小時來定義 2 週反覆項目的需求。  
+- 在每個反覆項目即將結束前，召集需求研討會來詳細定義將於下一個反覆項目中開發的需求或使用者劇本。 邀請可以決定優先順序的使用者和商務專案關係人，以及開發人員和系統測試人員。 提供三個小時來定義 2 週反覆項目的需求。  
   
--   此研討會的目標是要讓每個人都同意下一個反覆項目結束時所完成的項目。 請使用模型做為其中一項工具來協助釐清需求。 此研討會的輸出就是反覆項目的待處理項目：也就是，[!INCLUDE[esprfound](../includes/esprfound-md.md)] 中的開發工作和 [!INCLUDE[TCMext](../includes/tcmext-md.md)] 中的測試套件之清單。  
+- 此研討會的目標是要讓每個人都同意下一個反覆項目結束時所完成的項目。 請使用模型做為其中一項工具來協助釐清需求。 此研討會的輸出就是反覆項目的待處理項目：也就是，[!INCLUDE[esprfound](../includes/esprfound-md.md)] 中的開發工作和 [!INCLUDE[TCMext](../includes/tcmext-md.md)] 中的測試套件之清單。  
   
--   在此需求研討會中，只在您需要決定此開發工作估計的範圍內討論該設計。 否則，請將討論主題保持在使用者可能會直接體驗的系統行為。 將需求模型與架構模型分開討論。  
+- 在此需求研討會中，只在您需要決定此開發工作估計的範圍內討論該設計。 否則，請將討論主題保持在使用者可能會直接體驗的系統行為。 將需求模型與架構模型分開討論。  
   
--   非技術性專案關係人通常只要透過您一些指引，就可以順利了解 UML 圖表。  
+- 非技術性專案關係人通常只要透過您一些指引，就可以順利了解 UML 圖表。  
   
 #### <a name="link-model-to-work-items"></a>將模型連結至工作項目  
  在需求研討會之後，請詳述該需求模型的詳細資料，並且將此模型連結至開發工作。 您可以將 [!INCLUDE[esprfound](../includes/esprfound-md.md)] 中的工作項目連結至該模型中的項目，藉以完成此作業。 若要了解如何執行這項操作，請參閱[連結模型項目和工作項目](../modeling/link-model-elements-and-work-items.md)。  
   
  雖然您可以將任何項目連結至工作項目，不過最有用的項目如下所示：  
   
--   使用案例。 您可以將使用案例連結至即將實作它的開發工作。  
+- 使用案例。 您可以將使用案例連結至即將實作它的開發工作。  
   
--   使用案例擴充。 如果反覆項目只有實作使用案例的單一層面，則您可將它分隔成基底使用案例以及一個或多個擴充。 這些擴充就是使用 «extend» 關聯性連結至基底案例的使用案例。 如需有關使用案例擴充的詳細資訊，請參閱[UML 使用案例圖： 參考](../modeling/uml-use-case-diagrams-reference.md)。  
+- 使用案例擴充。 如果反覆項目只有實作使用案例的單一層面，則您可將它分隔成基底使用案例以及一個或多個擴充。 這些擴充就是使用 «extend» 關聯性連結至基底案例的使用案例。 如需有關使用案例擴充的詳細資訊，請參閱[UML 使用案例圖：參考資料](../modeling/uml-use-case-diagrams-reference.md)。  
   
--   描述商務規則或服務需求品質的註解。 如需詳細資訊，請參閱 <<c0> [ 模型使用者需求](../modeling/model-user-requirements.md)。  
+- 描述商務規則或服務需求品質的註解。 如需詳細資訊，請參閱 <<c0> [ 模型使用者需求](../modeling/model-user-requirements.md)。  
   
 #### <a name="link-model-to-tests"></a>將模型連結至測試  
  您可以使用需求模型來引導接受度測試的設計。 請同時與開發工作一起建立這些測試。  
@@ -137,18 +132,15 @@ ms.locfileid: "51757695"
   
 |**分類**|**連結**|  
 |------------------|---------------|  
-|**影片**|![影片連結](../data-tools/media/playvideo.gif "PlayVideo") [MSDN 「 如何 」 影片： 如何建立和使用 UML 模型和圖表 (Visual Studio 2010 Ultimate)](http://go.microsoft.com/fwlink/?LinkId=214460)<br /><br /> ![影片連結](../data-tools/media/playvideo.gif "PlayVideo") [Channel 9: UML 搭配 Visual Studio 2010](http://go.microsoft.com/fwlink/?LinkID=201106)<br /><br /> ![影片連結](../data-tools/media/playvideo.gif "PlayVideo") [MSDN 「 如何 」 系列： UML 工具和擴充性 (Visual Studio 2010 Ultimate)](http://go.microsoft.com/fwlink/?LinkID=214467)|  
+|**影片**|![影片連結](../data-tools/media/playvideo.gif "PlayVideo") [MSDN 「 如何 」 影片：如何建立和使用 UML 模型和圖表 (Visual Studio 2010 Ultimate)](http://go.microsoft.com/fwlink/?LinkId=214460)<br /><br /> ![影片連結](../data-tools/media/playvideo.gif "PlayVideo") [Channel 9:搭配 Visual Studio 2010 使用 UML](http://go.microsoft.com/fwlink/?LinkID=201106)<br /><br /> ![影片連結](../data-tools/media/playvideo.gif "PlayVideo") [MSDN 「 如何 」 系列：UML 工具和擴充性 (Visual Studio 2010 Ultimate)](http://go.microsoft.com/fwlink/?LinkID=214467)|  
 |**論壇**|-   [Visual Studio Visualization & Modeling Tools](http://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Visual Studio Visualization & Modeling SDK (DSL 工具)](http://go.microsoft.com/fwlink/?LinkId=184721)|  
 |**部落格**|[Visual Studio ALM + Team Foundation Server 部落格](http://go.microsoft.com/fwlink/?LinkID=201340)|  
 |**技術文件和日誌**|[MSDN 架構中心](http://go.microsoft.com/fwlink/?LinkId=201343)<br /><br /> [Visual Studio 架構工具指南](../modeling/visual-studio-architecture-tooling-guidance.md)|  
   
 ## <a name="see-also"></a>另請參閱  
- [在 Agile 開發中使用模型](http://msdn.microsoft.com/en-us/592ac27c-3d3e-454a-9c38-b76658ed137f)   
+ [在 Agile 開發中使用模型](https://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)   
  [建立應用程式模型](../modeling/create-models-for-your-app.md)   
  [模型使用者需求](../modeling/model-user-requirements.md)   
  [您的應用程式架構模型](../modeling/model-your-app-s-architecture.md)   
  [透過模型開發測試](../modeling/develop-tests-from-a-model.md)   
  [建構模型方案](../modeling/structure-your-modeling-solution.md)
-
-
-

@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 800dcfaa7ae171d1bf3812bef3a8bedda3f2bd21
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 3e0befc61b39030bd7144cef10b54e70dc71e33a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56616972"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63419551"
 ---
 # <a name="how-to-programmatically-search-for-text-in-worksheet-ranges"></a>HOW TO：以程式設計方式在工作表範圍中搜尋的文字
   <xref:Microsoft.Office.Interop.Excel.Range.Find%2A>方法的<xref:Microsoft.Office.Interop.Excel.Range>物件可讓您搜尋的範圍內的文字。 這段文字也可以是任何錯誤字串，例如可以出現在工作表儲存格中`#NULL!`或`#VALUE!`。 如需詳細的錯誤字串的詳細資訊，請參閱[儲存格的錯誤值](/office/vba/excel/Concepts/Cells-and-Ranges/cell-error-values)。
@@ -29,7 +29,7 @@ ms.locfileid: "56616972"
  下列範例會搜尋範圍，名為`Fruits`並修改包含單字"apples"的資料格的字型。 此程序也會使用<xref:Microsoft.Office.Interop.Excel.Range.FindNext%2A>方法，它會使用先前設定搜尋設定，以重複搜尋。 指定要搜尋，請在之後的資料格和<xref:Microsoft.Office.Interop.Excel.Range.FindNext%2A>方法會處理其餘部分。
 
 > [!NOTE]
->  <xref:Microsoft.Office.Interop.Excel.Range.FindNext%2A>它達到範圍的結尾後方法的搜尋會繞回搜尋範圍的開頭。 您的程式碼必須確定，搜尋不會環繞在無限迴圈。 此範例程序示範一種方式處理這種使用<xref:Microsoft.Office.Interop.Excel.Range.Address%2A>屬性。
+> <xref:Microsoft.Office.Interop.Excel.Range.FindNext%2A>它達到範圍的結尾後方法的搜尋會繞回搜尋範圍的開頭。 您的程式碼必須確定，搜尋不會環繞在無限迴圈。 此範例程序示範一種方式處理這種使用<xref:Microsoft.Office.Interop.Excel.Range.Address%2A>屬性。
 
  ![影片連結](../vsto/media/playvideo.gif "影片連結")如需相關的影片示範，請參閱[How do i:Excel 增益集中使用 Find 方法嗎？](http://go.microsoft.com/fwlink/?LinkID=130294).
 

@@ -1,14 +1,9 @@
 ---
 title: IEEVisualizerService::GetCustomViewerCount |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IEEVisualizerService::GetCustomViewerCount
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: f7b095c2-e538-4352-8cad-d4c6d4f6bdbc
 caps.latest.revision: 10
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 452b621beef8dabc5d1c9666ac28373697d90299
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 6a167fc504bb1a6486cf69ed7eb155aac73f9d3f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51770033"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68197029"
 ---
 # <a name="ieevisualizerservicegetcustomviewercount"></a>IEEVisualizerService::GetCustomViewerCount
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -56,4 +51,3 @@ int GetCustomViewerCount(
 ## <a name="see-also"></a>另請參閱  
  [IEEVisualizerService](../../../extensibility/debugger/reference/ieevisualizerservice.md)   
  [GetCustomViewerCount](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewercount.md)
-

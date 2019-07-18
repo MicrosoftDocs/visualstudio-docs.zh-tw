@@ -6,17 +6,20 @@ helpviewer_keywords:
 - IDebugComPlusSymbolProvider::CreateTypeFromPrimitive
 - CreateTypeFromPrimitive
 ms.assetid: 37213cc2-a038-42ea-9b28-3ae40d4cfe69
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: da9d0639ec6cf6cae01298273f21e3fde1f2aafd
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: c20ba30a7212c89048d18fab3b20c57260ec5185
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56718088"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66338879"
 ---
 # <a name="idebugcomplussymbolprovidercreatetypefromprimitive"></a>IDebugComPlusSymbolProvider::CreateTypeFromPrimitive
 從指定的基本類型建立類型。
@@ -39,18 +42,15 @@ int CreateTypeFromPrimitive(
 );
 ```
 
-#### <a name="parameters"></a>參數
-`dwPrimType`
+## <a name="parameters"></a>參數
+`dwPrimType`\
+[in]值從[CorElementType 列舉](/dotnet/framework/unmanaged-api/metadata/corelementtype-enumeration)表示基本類型。
 
- [in]值從[CorElementType 列舉](/dotnet/framework/unmanaged-api/metadata/corelementtype-enumeration)表示基本類型。
+`pAddress`\
+[in]位址物件，表示所[IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)介面。
 
-`pAddress`
-
- [in]位址物件，表示所[IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)介面。
-
-`ppType`
-
- [in]傳回[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)描述類型的物件。
+`ppType`\
+[in]傳回[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)描述類型的物件。
 
 ## <a name="return-value"></a>傳回值
 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

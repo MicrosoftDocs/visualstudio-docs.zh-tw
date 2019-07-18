@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProcess2::GetProcessId
 ms.assetid: d5b6f03c-d49d-4b83-b072-016ac3124f5f
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b927d5a8da316faa76b5d102ad0cfb14e0cb61e7
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: b1759563f9f379a878f987662df2cd380ec0532c
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56706648"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66309501"
 ---
 # <a name="idebugprocess2getprocessid"></a>IDebugProcess2::GetProcessId
 此程序中取得的 GUID。
@@ -36,10 +39,9 @@ int GetProcessId(
 );
 ```
 
-#### <a name="parameters"></a>參數
- `pguidProcessId`
-
- [out]傳回針對此程序的 GUID。
+## <a name="parameters"></a>參數
+`pguidProcessId`\
+[out]傳回針對此程序的 GUID。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

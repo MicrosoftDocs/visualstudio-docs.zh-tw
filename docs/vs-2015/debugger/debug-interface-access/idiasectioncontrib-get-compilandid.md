@@ -1,14 +1,9 @@
 ---
-title: 'Idiasectioncontrib:: Get_compilandid |Microsoft Docs'
-ms.custom: ''
+title: IDiaSectionContrib::get_compilandId | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 71ef2e63-d095-42b6-88d8-626e3129f0d9
 caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: d61f929935d1ece7d2f22e946c073dc26d27d1a9
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 80a42cda74c5ca4bd2b5a4552787422b07b32287
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51801169"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62576650"
 ---
 # <a name="idiasectioncontribgetcompilandid"></a>IDiaSectionContrib::get_compilandId
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -43,10 +38,7 @@ HRESULT get_compilandId ( 
  [out]傳回之區段的編譯模組識別碼。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`。 傳回`S_FALSE`不支援這個屬性，則為。 反之則傳回錯誤碼。  
+ 如果成功，會傳回 `S_OK`。 傳回`S_FALSE`不支援這個屬性，則為。 否則會傳回錯誤碼。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)
-
-
-

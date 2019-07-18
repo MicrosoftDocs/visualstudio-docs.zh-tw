@@ -1,5 +1,5 @@
 ---
-title: 作法：清除組建 | Microsoft Docs
+title: HOW TO：清除組建 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,14 +13,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f2385d359387090d0430fbea182fcef738b454a7
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: d737ecf51b6726bf46a525104c99f8ac61569964
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56603270"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62977302"
 ---
-# <a name="how-to-clean-a-build"></a>作法：清除組建
+# <a name="how-to-clean-a-build"></a>HOW TO：清除組建
 當您清除組建時，會刪除所有中繼和輸出檔案，只留下專案檔和元件檔案。 從專案和元件檔案中，接著可以建置新的中繼和輸出檔案執行個體。 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 所提供的一般工作程式庫包含 [Exec](../msbuild/exec-task.md) 工作，讓您可用來執行系統命令。 如需工作程式庫的詳細資訊，請參閱[工作參考](../msbuild/msbuild-task-reference.md)。
 
 ## <a name="create-a-directory-for-output-items"></a>建立輸出項目的目錄
@@ -28,11 +28,11 @@ ms.locfileid: "56603270"
 
 #### <a name="to-create-a-directory-for-output-items"></a>建立輸出項目的目錄
 
-1.  使用 `Property` 項目來定義目錄的位置和名稱。 例如，在包含專案和來源檔案的目錄中，建立名為 *BuiltApp* 的目錄：
+1. 使用 `Property` 項目來定義目錄的位置和名稱。 例如，在包含專案和來源檔案的目錄中，建立名為 *BuiltApp* 的目錄：
 
      `<builtdir>BuiltApp</builtdir>`
 
-2.  如果目錄不存在，請使用 [MakeDir](../msbuild/makedir-task.md) 工作來建立目錄。 例如：
+2. 如果目錄不存在，請使用 [MakeDir](../msbuild/makedir-task.md) 工作來建立目錄。 例如：
 
      ```xml
      <MakeDir Directories = "$(builtdir)"
@@ -44,7 +44,7 @@ ms.locfileid: "56603270"
 
 #### <a name="to-remove-a-directory-and-all-files-contained-in-the-directory"></a>移除目錄中所含的目錄和所有檔案
 
--   使用 `RemoveDir` 工作，以移除目錄。 例如：
+- 使用 `RemoveDir` 工作，以移除目錄。 例如：
 
      `<RemoveDir Directories="$(builtdir)" />`
 

@@ -1,12 +1,9 @@
 ---
 title: 用於疑難排解資料的其他資源存取的錯誤 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: troubleshooting
 f1_keywords:
 - DSD_ImportXmlSchemaSameFileWrnHelpId
 - vbdata.ParameterizeFormDialog_NoDataSource
@@ -232,19 +229,18 @@ ms.assetid: 357c9f0a-9d59-4db4-9b7c-b96cad839961
 caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: 415d403bc5282e2759805558ea6a91a1c2cf9bdf
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 851a1f87cce5f4030a9ba5a4701b6c0055859f10
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49263014"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68143090"
 ---
-# <a name="additional-resources-for-troubleshooting-data-access-errors"></a>如需疑難排解資料存取錯誤的其他資源
+# <a name="additional-resources-for-troubleshooting-data-access-errors"></a>用來對資料存取錯誤進行疑難排解的其他資源
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 您可以在 Microsoft Developer Network (MSDN) 公共論壇中尋求有關疑難排解錯誤和警告的協助。 下表列出的資料與相關的論壇可在 MSDN 上取得。  
   
  [Windows Forms 資料控制項與資料繫結](http://go.microsoft.com/fwlink/?LinkId=160179)  
@@ -253,7 +249,7 @@ ms.locfileid: "49263014"
  [ADO.NET 資料集論壇](http://go.microsoft.com/fwlink/?LinkId=160180)  
  提供問題的資料集的相關和一般討論的論壇。  
   
- [ADO.NET Entity Framework 與 LINQ to Entities](http://go.microsoft.com/fwlink/?LinkId=191520)  
+ [ADO.NET Entity Framework and LINQ to Entities](http://go.microsoft.com/fwlink/?LinkId=191520) (ADO.NET Entity Framework 與 LINQ to Entities)  
  提供有關問題和 Entity Framework 應用程式和 LINQ to Entities 語言的一般討論的論壇。  
   
  [WCF Data Services 論壇](http://go.microsoft.com/fwlink/?LinkId=160181)  
@@ -272,4 +268,3 @@ ms.locfileid: "49263014"
   
 ## <a name="see-also"></a>另請參閱  
  [適用於 .NET 的 Visual Studio Data Tools](../data-tools/visual-studio-data-tools-for-dotnet.md)
-

@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugPropertyInfo2::Reset
 ms.assetid: fa4201c1-4633-4596-93aa-bd415c4ed71a
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4d8cf8af9b8d042748bf37f90d059a97d06f1c77
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 050eb3e88789a9f028ad0fb11bf32abacb92348d
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56704289"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66347173"
 ---
 # <a name="ienumdebugpropertyinfo2reset"></a>IEnumDebugPropertyInfo2::Reset
 將列舉重設第一個項目。

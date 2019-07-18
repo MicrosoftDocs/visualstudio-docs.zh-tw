@@ -1,38 +1,33 @@
 ---
 title: 中斷點相關的方法 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], breakpoint methods
 - breakpoints, methods
 ms.assetid: a6f77bf0-bf81-443f-8683-5f12075bbe10
 caps.latest.revision: 9
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: e1767afec32b2b90250a841317e0929fcdd7732c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 47ba1529521fdce042512a38d32ad2ca2eb3cb82
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51794994"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68146434"
 ---
 # <a name="breakpoint-related-methods"></a>中斷點相關的方法
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 偵錯引擎 (DE) 必須支援的設定中斷點。 Visual Studio 偵錯支援下列類型的中斷點：  
   
--   繫結  
+- 繫結  
   
      透過 UI 要求及成功繫結到指定的程式碼的位置  
   
--   擱置  
+- 擱置  
   
      透過 UI，但無法尚未繫結至實際的指示要求  
   
@@ -68,14 +63,14 @@ ms.locfileid: "51794994"
   
  解析和要求資訊需要實作下列[IDebugBreakpointResolution2](../../extensibility/debugger/reference/idebugbreakpointresolution2.md)方法。  
   
-|方法|描述|  
+|方法|說明|  
 |------------|-----------------|  
 |[GetBreakpointType](../../extensibility/debugger/reference/idebugbreakpointresolution2-getbreakpointtype.md)|取得中斷點表示所解析的型別。|  
 |[GetResolutionInfo](../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md)|取得描述中斷點的中斷點解析資訊。|  
   
  在繫結期間可能發生之錯誤的解析所需的下列實作[IDebugErrorBreakpoint2](../../extensibility/debugger/reference/idebugerrorbreakpoint2.md)方法。  
   
-|方法|描述|  
+|方法|說明|  
 |------------|-----------------|  
 |[GetPendingBreakpoint](../../extensibility/debugger/reference/idebugerrorbreakpoint2-getpendingbreakpoint.md)|取得包含錯誤的中斷點暫止中斷點。|  
 |[GetBreakpointResolution](../../extensibility/debugger/reference/idebugerrorbreakpoint2-getbreakpointresolution.md)|取得描述錯誤中斷點的中斷點錯誤解決方式。|  
@@ -91,4 +86,3 @@ ms.locfileid: "51794994"
   
 ## <a name="see-also"></a>另請參閱  
  [執行控制和狀態評估](../../extensibility/debugger/execution-control-and-state-evaluation.md)
-

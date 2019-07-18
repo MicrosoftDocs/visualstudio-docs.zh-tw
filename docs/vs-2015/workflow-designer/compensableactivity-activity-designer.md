@@ -1,11 +1,8 @@
 ---
 title: CompensableActivity 活動設計工具 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.CompensableActivity.UI
@@ -13,13 +10,13 @@ ms.assetid: e0340d89-d39e-4a52-8557-13e27040d7b5
 caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 670d3e92b24e35979074df3817611ceff692f59d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: f11743e0027866fd45687f716f1989e98020c68e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49290442"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62977286"
 ---
 # <a name="compensableactivity-activity-designer"></a>CompensableActivity 活動設計工具
 **CompensableActivity**活動設計工具會用來建立及設定<xref:System.Activities.Statements.CompensableActivity>活動。  
@@ -35,7 +32,7 @@ ms.locfileid: "49290442"
 ### <a name="the-compensableactivity-properties"></a>CompensableActivity 屬性  
  下表顯示 <xref:System.Activities.Statements.CompensableActivity> 屬性，並且描述屬性在設計工具中的使用方式。 <xref:System.Activities.Activity.DisplayName%2A> 與 <xref:System.Activities.Activity%601.Result%2A> 屬性可以在屬性方格中編輯，但其他屬性必須在 [!INCLUDE[wfd2](../includes/wfd2-md.md)] 介面上編輯。  
   
-|屬性名稱|必要項|使用方式|  
+|屬性名稱|必要|使用量|  
 |-------------------|--------------|-----------|  
 |<xref:System.Activities.Activity.DisplayName%2A>|False|<xref:System.Activities.Statements.CompensableActivity> 活動可選用的易記名稱。 預設為 CompensableActivity。|  
 |<xref:System.Activities.Activity%601.Result%2A>|False|指定 <xref:System.Activities.Statements.CompensableActivity> 的傳回值。 這個屬性必須在屬性方格中編輯。|  
@@ -48,5 +45,5 @@ ms.locfileid: "49290442"
  [交易](../workflow-designer/transaction-activity-designers.md)   
  [CancellationScope](../workflow-designer/cancellationscope-activity-designer.md)   
  [補償](../workflow-designer/compensate-activity-designer.md)   
- [確認](../workflow-designer/confirm-activity-designer.md)   
+ [Confirm](../workflow-designer/confirm-activity-designer.md)   
  [TransactionScope](../workflow-designer/transactionscope-activity-designer.md)

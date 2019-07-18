@@ -1,14 +1,9 @@
 ---
 title: IDebugPendingBreakpoint2::EnumErrorBreakpoints |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugPendingBreakpoint2::EnumErrorBreakpoints
 helpviewer_keywords:
@@ -17,13 +12,13 @@ helpviewer_keywords:
 ms.assetid: 2f9a9720-c1ac-4430-8f28-200d85360452
 caps.latest.revision: 13
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 36ebe62cf005a537b3f7e9cbe35ffe7e8904b758
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f9cac8b19e6281b8993e84d13ae60138ddaeac89
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51781969"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68201075"
 ---
 # <a name="idebugpendingbreakpoint2enumerrorbreakpoints"></a>IDebugPendingBreakpoint2::EnumErrorBreakpoints
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -136,4 +131,3 @@ HRESULT CPendingBreakpoint::EnumErrorBreakpoints(
  [BP_ERROR_TYPE](../../../extensibility/debugger/reference/bp-error-type.md)   
  [IEnumDebugErrorBreakpoints2](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2.md)   
  [IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md)
-

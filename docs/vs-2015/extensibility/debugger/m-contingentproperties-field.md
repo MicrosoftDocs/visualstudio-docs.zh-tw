@@ -1,26 +1,21 @@
 ---
 title: m_contingentProperties 欄位 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - m_contingentProperties field, Task class [.NET Framework debug engines]
 ms.assetid: 49e8cb36-db39-440b-acda-a325651f1165
 caps.latest.revision: 10
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 50590184e51707f634c880210985c2752fef5617
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: ccc99657b43fa53b8bf4f7d78ece61da8e7069cc
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51737918"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68153760"
 ---
 # <a name="mcontingentproperties-field"></a>m_contingentProperties 欄位
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -43,4 +38,3 @@ ms.locfileid: "51737918"
   
 ## <a name="see-also"></a>另請參閱  
  [Task 類別](../../extensibility/debugger/task-class-internal-members.md)
-

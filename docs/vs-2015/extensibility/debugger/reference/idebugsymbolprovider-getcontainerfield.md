@@ -1,14 +1,9 @@
 ---
-title: IDebugSymbolProvider::GetContainerField |Microsoft Docs
-ms.custom: ''
+title: IDebugSymbolProvider::GetContainerField | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugSymbolProvider::GetContainerField
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: d6b56b4f-a96b-4fa7-87c1-bac4e58fa766
 caps.latest.revision: 12
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 133e4683109dd57f6d1123ca3490c1ce1aa1b4ca
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 85c25d0d601ef3264a1fbd22f9cdbc2e40f31402
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51744195"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62546872"
 ---
 # <a name="idebugsymbolprovidergetcontainerfield"></a>IDebugSymbolProvider::GetContainerField
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -59,4 +54,3 @@ int GetContainerField(
  [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)   
  [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)   
  [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md)
-

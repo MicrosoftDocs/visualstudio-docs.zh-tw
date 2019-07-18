@@ -1,12 +1,9 @@
 ---
 title: 自訂工具和工具箱 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 f1_keywords:
 - vs.dsltools.dsldesigner.selectiondialog
 - vs.dsltools.dsldesigner.selecticondialog
@@ -17,13 +14,13 @@ ms.assetid: 2a0d03d7-ebc6-4458-b9f4-d2cb8418a62d
 caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 18c727a228b51c484905c381dd98b7db66c9d7ad
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 2a91615fc711d98970c1aace57cbef814e6fc2a0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49847808"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433203"
 ---
 # <a name="customizing-tools-and-the-toolbox"></a>自訂工具和工具箱
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,15 +29,15 @@ ms.locfileid: "49847808"
   
  本主題內容：  
   
--   [[工具箱] 中的定義方式](#ToolboxDef)  
+- [[工具箱] 中的定義方式](#ToolboxDef)  
   
--   [自訂項目工具](#customizing)  
+- [自訂項目工具](#customizing)  
   
--   [從工具建立項目群組](#groups)  
+- [從工具建立項目群組](#groups)  
   
--   [自訂連接工具](#connections)  
+- [自訂連接工具](#connections)  
   
-##  <a name="ToolboxDef"></a> 工具箱 中的定義方式  
+## <a name="ToolboxDef"></a> 工具箱 中的定義方式  
  在 [DSL 總管] 中，展開 [編輯器] 節點和下方節點。 一般而言，您會看到類似如下的階層架構：  
   
 ```  
@@ -56,18 +53,18 @@ Editor
   
  在 [DSL 總管] 的這個部分中，您可以：  
   
--   建立新的索引標籤。 索引標籤定義工具箱中的區段標題。  
+- 建立新的索引標籤。 索引標籤定義工具箱中的區段標題。  
   
--   建立新的工具。  
+- 建立新的工具。  
   
--   複製並貼上工具。  
+- 複製並貼上工具。  
   
--   在清單中向上或向下移動工具。  
+- 在清單中向上或向下移動工具。  
   
--   刪除索引標籤和工具。  
+- 刪除索引標籤和工具。  
   
 > [!IMPORTANT]
->  若要在 [DSL 總管] 中加入或貼上項目，請以滑鼠右鍵按一下新節點的上兩層節點。 比方說，若要新增的工具，以滑鼠右鍵按一下索引標籤上，而非**工具**節點。 若要加入索引標籤，以滑鼠右鍵按一下**編輯器**節點。  
+> 若要在 [DSL 總管] 中加入或貼上項目，請以滑鼠右鍵按一下新節點的上兩層節點。 比方說，若要新增的工具，以滑鼠右鍵按一下索引標籤上，而非**工具**節點。 若要加入索引標籤，以滑鼠右鍵按一下**編輯器**節點。  
   
  **工具箱圖示**每一個工具的屬性參考 16x16 點陣圖檔案。 這些檔案通常會保留在**Dsl\Resources**資料夾。  
   
@@ -77,38 +74,38 @@ Editor
   
 #### <a name="to-add-a-tool-to-the-toolbox"></a>將工具加入至工具箱  
   
-1.  您通常會先建立圖形類別並將其對應至網域類別，再建立項目工具。  
+1. 您通常會先建立圖形類別並將其對應至網域類別，再建立項目工具。  
   
      您通常會先建立連接線類別並將其對應至參考關聯性，再建立連接工具。  
   
-2.  在 [DSL 總管] 中，展開**編輯器**節點並**工具箱索引標籤**節點。  
+2. 在 [DSL 總管] 中，展開**編輯器**節點並**工具箱索引標籤**節點。  
   
      工具箱 索引標籤 節點中，以滑鼠右鍵按一下，然後按一下**加入新項目工具**或是**新增連接工具**。  
   
-3.  設定**工具箱圖示**屬性參考 16x16 點陣圖。  
+3. 設定**工具箱圖示**屬性參考 16x16 點陣圖。  
   
-     如果您想要定義新的圖示，請在 [方案總管] 中建立點陣圖檔案**Dsl\Resources**資料夾。 檔案應具有下列屬性值：**建置動作** = **內容**;**複製到輸出目錄** = **請勿複製**。  
+     如果您想要定義新的圖示，請在 [方案總管] 中建立點陣圖檔案**Dsl\Resources**資料夾。 檔案應該具有下列屬性值：**建置動作** = **內容**;**複製到輸出目錄** = **請勿複製**。  
   
-4.  **為項目工具：** 設定**類別**要參考對應至某個圖形的具象網域類別之工具的屬性。  
+4. **為項目工具：** 設定**類別**要參考對應至某個圖形的具象網域類別之工具的屬性。  
   
      **連接工具：** 設定**連接產生器**工具的其中一個項目下拉式清單中所提供的屬性。 當您將連接線對應至網域關聯性時，會自動建立連接產生器。 如果您最近剛建立連接線，通常會選取相關聯的連接產生器。  
   
-5.  若要測試 DSL，請按 F5 鍵或 CTRL+F5，然後在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的實驗執行個體中開啟範例模型檔案。 新工具應顯示在工具箱上。 將工具拖曳至圖表上，驗證工具是否會建立新項目。  
+5. 若要測試 DSL，請按 F5 鍵或 CTRL+F5，然後在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的實驗執行個體中開啟範例模型檔案。 新工具應顯示在工具箱上。 將工具拖曳至圖表上，驗證工具是否會建立新項目。  
   
      如果工具未出現，請停止實驗 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。 在 Windows**開始**功能表中，執行**重設 Microsoft Visual Studio 2010 實驗執行個體**。 在  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]**建置**功能表上，按一下 **重建方案**。 然後再測試一次 DSL。  
   
-##  <a name="customizing"></a> 自訂項目工具  
+## <a name="customizing"></a> 自訂項目工具  
  根據預設，此工具會建立指定類別的單一執行個體，但是您可以透過下列兩個方式來改變：  
   
--   定義其他類別的 Element Merge 指示詞，讓這些類別接受這個類別的新執行個體，並讓這些類別在建立新項目時建立其他連結。 例如，您可以允許使用者將一個註解拖曳到另一個項目上，藉此建立兩者之間的參考連結。  
+- 定義其他類別的 Element Merge 指示詞，讓這些類別接受這個類別的新執行個體，並讓這些類別在建立新項目時建立其他連結。 例如，您可以允許使用者將一個註解拖曳到另一個項目上，藉此建立兩者之間的參考連結。  
   
      這些自訂也會影響當使用者貼上或拖放項目時所發生的狀況。  
   
      如需詳細資訊，請參閱 <<c0> [ 自訂項目的建立和移動](../modeling/customizing-element-creation-and-movement.md)。  
   
--   撰寫程式碼來自訂此工具，使其可以建立項目群組。 此工具是由您可以覆寫之 ToolboxHelper.cs 中的方法初始化。 如需詳細資訊，請參閱 <<c0> [ 建立群組的項目從工具](#groups)。  
+- 撰寫程式碼來自訂此工具，使其可以建立項目群組。 此工具是由您可以覆寫之 ToolboxHelper.cs 中的方法初始化。 如需詳細資訊，請參閱 <<c0> [ 建立群組的項目從工具](#groups)。  
   
-##  <a name="groups"></a> 從工具建立項目群組  
+## <a name="groups"></a> 從工具建立項目群組  
  每個項目工具包含該工具應建立的項目原型。 根據預設，每個項目工具會建立一個項目，但也可能透過一個工具來建立一組相關的物件。 若要執行這項操作，您可以使用內含相關項目的 <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype> 來初始化工具。  
   
  下列範例取自內含電晶體類型的 DSL。 每個電晶體有三個具名端子。 電晶體的項目工具會儲存內含四個模型項目和三個關聯性連結的原型。 當使用者將工具拖曳至圖表上時，原型會具現化並連結至模型根。  
@@ -158,7 +155,7 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
   
 ```  
   
-##  <a name="connections"></a> 自訂連接工具  
+## <a name="connections"></a> 自訂連接工具  
  您通常會在建立新的連接線類別時，建立項目工具。 或者，您可以允許由兩個端點類型來決定關聯性類型，藉此多載一個工具。 例如，您可以定義一個連接工具，該工具可建立人與人的關聯性，以及人與鄉鎮的關聯性。  
   
  連接工具會叫用連接產生器。 使用連接產生器可指定使用者在產生的設計工具中連結項目的方式。 連接產生器指定可連結的項目，以及在項目之間建立的連結類型。  
@@ -194,7 +191,7 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
   您必須提供一些程式碼來建立這些自訂。 若要探索必須提供的程式碼，請核取上述其中一個方塊，按一下 [轉換所有範本]，然後建置您的方案。 錯誤報告隨即產生。 按兩下錯誤報告，以檢視說明應加入之程式碼的註解。  
   
 > [!NOTE]
->  若要加入自訂程式碼，請使用與 GeneratedCode 資料夾中的程式碼檔案不同的程式碼檔案，建立部分類別定義。 為了避免遺失工作，請勿編輯產生的程式碼檔案。 如需詳細資訊，請參閱 <<c0> [ 覆寫及擴充產生的類別](../modeling/overriding-and-extending-the-generated-classes.md)。  
+> 若要加入自訂程式碼，請使用與 GeneratedCode 資料夾中的程式碼檔案不同的程式碼檔案，建立部分類別定義。 為了避免遺失工作，請勿編輯產生的程式碼檔案。 如需詳細資訊，請參閱 <<c0> [ 覆寫及擴充產生的類別](../modeling/overriding-and-extending-the-generated-classes.md)。  
   
 #### <a name="creating-custom-connection-code"></a>建立自訂連接程式碼  
  在每個 link connect 指示詞，**來源角色指示詞** 索引標籤上定義的項目型別可以拖曳。 同樣地，**目標角色指示詞**索引標籤會定義哪些類型的您可以拖曳。 針對每個類型中，您可以進一步指定是否要允許連接 （針對該 link connect 指示詞) 藉由設定**自訂接受**旗標，然後提供 額外的程式碼。  
@@ -233,7 +230,7 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
     /// <summary>  
     /// Only if source is on parent of target.  
     /// </summary>  
-    private static bool CanAcceptInPortAndInPortAsSourceAndTarget                (InPort sourceInPort, InPort targetInPort)  
+    private static bool CanAcceptInPortAndInPortAsSourceAndTarget                (InPort sourceInPort, InPort targetInPort)  
     {  
       return sourceInPort.Component == targetInPort.Component.Parent;  
     }  
@@ -254,9 +251,6 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 ## <a name="see-also"></a>另請參閱  
  [自訂項目建立和移動](../modeling/customizing-element-creation-and-movement.md)   
  [自訂複製行為](../modeling/customizing-copy-behavior.md)   
- [如何： 加入拖放處理常式](../modeling/how-to-add-a-drag-and-drop-handler.md)   
+ [如何：新增拖放處理常式](../modeling/how-to-add-a-drag-and-drop-handler.md)   
  [巡覽及更新程式碼中的模型](../modeling/navigating-and-updating-a-model-in-program-code.md)   
  [電路圖表範例 DSL](http://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
-
-
-

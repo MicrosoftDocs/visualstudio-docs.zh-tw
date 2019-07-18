@@ -1,5 +1,5 @@
 ---
-title: 使用分析工具命令列收集 .NET Framework 記憶體資料 | Microsoft Docs
+title: 使用分析工具命令列取得 .NET Framework 記憶體資料
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 7bce69e2-407c-4342-8516-641586968928
@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 98aae9471e0479a4b32b578bfd9da913237ea095
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: e23c473d281ba72173df43349bf3a44929ddb60f
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56637473"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263743"
 ---
 # <a name="collect-net-framework-memory-data-by-using-the-profiler-command-line"></a>使用分析工具命令列收集 .NET Framework 記憶體資料
 
@@ -37,7 +37,6 @@ ms.locfileid: "56637473"
 |**使用檢測方法進行分析**|-   [使用檢測設備收集詳細計時資料](../profiling/collecting-detailed-timing-data-for-a-stand-alone-application.md)|
 |**分析資源爭用和執行緒活動**|-   [收集並行資料](../profiling/collecting-concurrency-data-for-stand-alone-applications.md)|
 |**新增階層互動資料**|-   [收集階層互動資料](../profiling/adding-tier-interaction-data-from-the-command-line.md)|
-
 
 ### <a name="profile-net-memory-data"></a>分析 .NET 記憶體資料
 

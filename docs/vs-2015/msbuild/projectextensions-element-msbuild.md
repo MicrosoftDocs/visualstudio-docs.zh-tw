@@ -19,17 +19,16 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2a8241033be738e7f608f3a83531d6fde52e9361
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 0afc4f73ed287f753acf87bd0b112e6f5303e996
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54801542"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62551246"
 ---
 # <a name="projectextensions-element-msbuild"></a>ProjectExtensions 項目 (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 可讓 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 專案檔包含非 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 的資訊。 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 將會忽略 `ProjectExtensions` 內部的一切。  
   
  \<Project>  
@@ -54,7 +53,7 @@ ms.locfileid: "54801542"
   
 ### <a name="parent-elements"></a>父項目  
   
-|元素|描述|  
+|元素|說明|  
 |-------------|-----------------|  
 |[專案](../msbuild/project-element-msbuild.md)|[!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 專案檔案的必要根項目。|  
   

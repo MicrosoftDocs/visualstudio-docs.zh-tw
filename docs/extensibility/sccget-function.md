@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - SccGet function
 ms.assetid: 09a18bd2-b788-411a-9da6-067d806e46f6
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e74de898bb9e7810729a0895834f7cdfe5ee5984
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 4ad087af24723c6ccbf901280c7db748e2af461a
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56691302"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66332129"
 ---
 # <a name="sccget-function"></a>SccGet 函式
 此函式會擷取一或多個檔案，來檢視和編譯，但不是用於編輯的複本。 在大部分的系統中，檔案會標記為唯讀。
@@ -81,7 +81,7 @@ SCCRTN SccGet(
  `SCC_GET_ALL`旗標可以結合`SCC_GET_RECURSIVE`旗標，以擷取指定的目錄中的所有檔案和所有的子目錄。
 
 > [!NOTE]
->  `SCC_GET_RECURSIVE` 永遠不會傳遞而且`SCC_GET_ALL`。 此外，請注意，如果目錄*C:\A*並*C:\A\B*兩者都傳遞遞迴 get 上, *C:\A\B*和所有子目錄會實際都擷取兩次。 是 IDE 的責任，並不是原始檔控制外掛程式，藉此確定這類的重複項目會保留從陣列。
+> `SCC_GET_RECURSIVE` 永遠不會傳遞而且`SCC_GET_ALL`。 此外，請注意，如果目錄*C:\A*並*C:\A\B*兩者都傳遞遞迴 get 上, *C:\A\B*和所有子目錄會實際都擷取兩次。 是 IDE 的責任，並不是原始檔控制外掛程式，藉此確定這類的重複項目會保留從陣列。
 
  最後，即使原始檔控制外掛程式指定`SCC_CAP_GET_NOUI`上初始化時，表示它並沒有 Get 命令的使用者介面，以擷取檔案 IDE 仍可能會呼叫此函式的旗標。 旗標只是表示，IDE 不會顯示取得功能表項目，而且，外掛程式不需要提供任何 UI。
 
@@ -90,21 +90,21 @@ SCCRTN SccGet(
 
  有兩種方式可解決本機快取的原始檔控制版本會與原始檔控制資料庫不同步變成這種情況：
 
-1.  不允許重新命名目前已簽出原始檔控制資料庫中的檔案。
+1. 不允許重新命名目前已簽出原始檔控制資料庫中的檔案。
 
-2.  執行 「 刪除舊 」 後面接著 「 新增 」 的對等項目。 下列演算法是一種方式完成這項作業。
+2. 執行 「 刪除舊 」 後面接著 「 新增 」 的對等項目。 下列演算法是一種方式完成這項作業。
 
-    1.  呼叫[SccQueryChanges](../extensibility/sccquerychanges-function.md)函式，以了解重新命名*a.txt*來*b.txt*原始檔控制資料庫中。
+    1. 呼叫[SccQueryChanges](../extensibility/sccquerychanges-function.md)函式，以了解重新命名*a.txt*來*b.txt*原始檔控制資料庫中。
 
-    2.  重新命名本機*a.txt*要*b.txt*。
+    2. 重新命名本機*a.txt*要*b.txt*。
 
-    3.  呼叫`SccGet`函式兩者*a.txt*並*b.txt*。
+    3. 呼叫`SccGet`函式兩者*a.txt*並*b.txt*。
 
-    4.  因為*a.txt*不存在的本機版本快取清除遺漏的原始檔控制資料庫中，在*a.txt*版本資訊。
+    4. 因為*a.txt*不存在的本機版本快取清除遺漏的原始檔控制資料庫中，在*a.txt*版本資訊。
 
-    5.  *B.txt*簽出的檔案會本機內容與合併*b.txt*檔案。
+    5. *B.txt*簽出的檔案會本機內容與合併*b.txt*檔案。
 
-    6.  已更新*b.txt*檔案現在簽入。
+    6. 已更新*b.txt*檔案現在簽入。
 
 ## <a name="see-also"></a>另請參閱
 - [原始檔控制外掛程式 API 函式](../extensibility/source-control-plug-in-api-functions.md)

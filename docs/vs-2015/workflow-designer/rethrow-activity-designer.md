@@ -1,11 +1,8 @@
 ---
 title: Rethrow 活動設計工具 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.Rethrow.UI
@@ -13,13 +10,13 @@ ms.assetid: 9cfa2eda-395f-4cf3-9154-83fadd4f7452
 caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 724e0b69fb14735682d437c9f21906560b15a590
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 8b023a42da1c862927606c4bec0215120a5e5a11
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49280679"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62937753"
 ---
 # <a name="rethrow-activity-designer"></a>Rethrow 活動設計工具
 **重新擲回**活動設計工具會用來建立及設定<xref:System.Activities.Statements.Rethrow>活動。  
@@ -35,7 +32,7 @@ ms.locfileid: "49280679"
 ### <a name="the-rethrow-properties"></a>Rethrow 屬性  
  下表顯示 <xref:System.Activities.Statements.Rethrow> 屬性，並且描述屬性在設計工具中的使用方式。  
   
-|屬性名稱|必要項|使用方式|  
+|屬性名稱|必要|使用量|  
 |-------------------|--------------|-----------|  
 |<xref:System.Activities.Activity.DisplayName%2A>|False|指定 <xref:System.Activities.Statements.Rethrow> 活動選用的易記名稱。 預設為 Rethrow。|  
   

@@ -1,14 +1,9 @@
 ---
-title: CA1309： 使用循序的 StringComparison |Microsoft Docs
-ms.custom: ''
+title: CA1309:使用循序的 StringComparison |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - UseOrdinalStringComparison
 - CA1309
@@ -20,14 +15,14 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: a239d8c40a07e92ee46c2d27bf3276e9b8bba2ca
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7b491cf06528b67c96f90f314210e61800e0cab1
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49885013"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68200331"
 ---
-# <a name="ca1309-use-ordinal-stringcomparison"></a>CA1309：使用循序的 StringComparison
+# <a name="ca1309-use-ordinal-stringcomparison"></a>CA1309:使用循序的 StringComparison
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -52,7 +47,4 @@ ms.locfileid: "49885013"
  它是安全的程式庫或應用程式適用於有限制的本機使用者，或應該使用目前文化特性的語意時，隱藏此規則的警告。
 
 ## <a name="see-also"></a>另請參閱
- [全球化警告](../code-quality/globalization-warnings.md) [CA1307： 指定 StringComparison](../code-quality/ca1307-specify-stringcomparison.md)
-
-
-
+ [全球化警告](../code-quality/globalization-warnings.md) [CA1307:指定 StringComparison](../code-quality/ca1307-specify-stringcomparison.md)

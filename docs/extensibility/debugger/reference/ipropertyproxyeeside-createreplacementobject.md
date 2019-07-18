@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IPropertyProxyEESide::CreateReplacementObject
 ms.assetid: 0cfe79b8-c3f1-48b0-a225-e39dee2c92fe
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 03bfeeb30fad4f332a3a747dcf8468c4fb39ef56
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 5621a3f32d68374339df9a6987033e5fef5e44dd
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56704198"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66329583"
 ---
 # <a name="ipropertyproxyeesidecreatereplacementobject"></a>IPropertyProxyEESide::CreateReplacementObject
 建立特定運算式評估工具 (EE) 的資料物件的複本。
@@ -38,14 +41,12 @@ int CreateReplacementObject(
 );
 ```
 
-#### <a name="parameters"></a>參數
- `dataIn`
+## <a name="parameters"></a>參數
+`dataIn`\
+[in][IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)含有要複製資料的物件。
 
- [in][IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)含有要複製資料的物件。
-
- `dataOut`
-
- [out]傳回新`IEEDataStorage`物件。
+`dataOut`\
+[out]傳回新`IEEDataStorage`物件。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

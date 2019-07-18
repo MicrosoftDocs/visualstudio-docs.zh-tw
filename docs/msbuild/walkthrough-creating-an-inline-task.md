@@ -11,48 +11,48 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cad3d554ff62c3d9a3d295efbf10fde403176b94
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 322c8d4b766619a6404a315fb83298bf5416fba4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56597263"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445320"
 ---
 # <a name="walkthrough-create-an-inline-task"></a>逐步解說：建立內嵌工作
 MSBuild 工作通常是透過編譯實作 <xref:Microsoft.Build.Framework.ITask> 介面的類別來建立。 從 .NET Framework 4 版開始，您可以在專案檔中建立內嵌工作。 您不必建立個別的組件來裝載工作。 如需詳細資訊，請參閱[內嵌工作](../msbuild/msbuild-inline-tasks.md)。
 
  本逐步解說示範如何建立並執行這些內嵌工作：
 
--   沒有輸入或輸出參數的工作。
+- 沒有輸入或輸出參數的工作。
 
--   有一個輸入參數，沒有輸出參數的工作。
+- 有一個輸入參數，沒有輸出參數的工作。
 
--   有兩個輸入參數，一個傳回 MSBuild 屬性之輸出參數的工作。
+- 有兩個輸入參數，一個傳回 MSBuild 屬性之輸出參數的工作。
 
--   有兩個輸入參數，一個傳回 MSBuild 項目之輸出參數的工作。
+- 有兩個輸入參數，一個傳回 MSBuild 項目之輸出參數的工作。
 
 若要建立並執行作業，請使用 Visual Studio 和「Visual Studio 命令提示字元視窗」，如下所示︰
 
-1.   使用 Visual Studio 建立 MSBuild 專案檔。
+1. 使用 Visual Studio 建立 MSBuild 專案檔。
 
-2.   修改 Visual Studio 中的專案檔以建立內嵌工作。
+2. 修改 Visual Studio 中的專案檔以建立內嵌工作。
 
-3.   使用「命令提示字元視窗」來建置專案並檢查結果。
+3. 使用「命令提示字元視窗」來建置專案並檢查結果。
 
 ## <a name="create-and-modify-an-msbuild-project"></a>建立和修改 MSBuild 專案
  Visual Studio 專案系統是以 MSBuild 為基礎。 因此，您可以使用 Visual Studio 建立組建專案檔。 在本節中，您將建立 Visual C# 專案檔。 (您可以改為建立 Visual Basic 專案檔。 在本教學課程的內容中，這兩個專案檔之間的差異非常小)。
 
 #### <a name="to-create-and-modify-a-project-file"></a>建立並修改專案檔
 
-1.  在 Visual Studio 的 [檔案] 功能表上，按一下 [新增]，然後按一下 [專案]。
+1. 在 Visual Studio 的 [檔案] 功能表上，按一下 [新增]，然後按一下 [專案]。
 
-2.  在 [新增專案] 對話方塊中，選取 [Visual C#] 專案類型，然後選取 [Windows Forms 應用程式] 範本。 在 [名稱]  方塊中，輸入 `InlineTasks`。 輸入方案的 [位置]，例如 *D:\\*。 確認已選取 [為方案建立目錄]、已取消選取 [加入至原始檔控制]，且 [方案名稱] 為 **InlineTasks**。
+2. 在 [新增專案] 對話方塊中，選取 [Visual C#] 專案類型，然後選取 [Windows Forms 應用程式] 範本。 在 [名稱]  方塊中，輸入 `InlineTasks`。 輸入方案的 [位置]，例如 *D:\\*。 確認已選取 [為方案建立目錄]、已取消選取 [加入至原始檔控制]，且 [方案名稱] 為 **InlineTasks**。
 
-3.  按一下 [確定] 以建立專案檔。
+3. 按一下 [確定] 以建立專案檔。
 
-3.  在 [方案總管] 中，以滑鼠右鍵按一下 [InlineTasks] 專案節點，然後按一下 [卸載專案]。
+3. 在 [方案總管] 中，以滑鼠右鍵按一下 [InlineTasks] 專案節點，然後按一下 [卸載專案]。
 
-4.  再次以滑鼠右鍵按一下專案節點，然後按一下 [編輯 InlineTasks.csproj]。
+4. 再次以滑鼠右鍵按一下專案節點，然後按一下 [編輯 InlineTasks.csproj]。
 
      該專案檔隨即出現在程式碼編輯器中。
 
@@ -103,7 +103,7 @@ MSBuild 工作通常是透過編譯實作 <xref:Microsoft.Build.Framework.ITask>
     `Hello, world!`
 
    > [!NOTE]
-   >  如果您沒有看到 hello 訊息，請嘗試重新儲存專案檔，然後執行 Hello 工作。
+   > 如果您沒有看到 hello 訊息，請嘗試重新儲存專案檔，然後執行 Hello 工作。
 
    藉由交替使用程式碼編輯器和「命令提示字元視窗」，您可以變更專案檔並快速查看結果。
 

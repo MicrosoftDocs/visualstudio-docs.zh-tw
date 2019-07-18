@@ -1,14 +1,9 @@
 ---
-title: CA1704： 識別項應該使用正確的拼字 |Microsoft Docs
-ms.custom: ''
+title: CA1704:識別項應該使用正確的拼字 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1704
 - IdentifiersShouldBeSpelledCorrectly
@@ -20,14 +15,14 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: c1e31917356e3d55a7db38ba7aabc9258af1deb0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d77e5ffcb7cc6688ea07cd99760e79e8f92aeb43
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49827539"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68189228"
 ---
-# <a name="ca1704-identifiers-should-be-spelled-correctly"></a>CA1704：識別項應該使用正確的拼字
+# <a name="ca1704-identifiers-should-be-spelled-correctly"></a>CA1704:識別項應該使用正確的拼字
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -51,18 +46,18 @@ ms.locfileid: "49827539"
 
 - 表示權杖結尾底線，且會移除。 比方說，Hello_world 會語彙基元化為"Hello"，"world"。
 
-- 會移除內嵌的連字號。 例如，for&mat 會語彙基元化為 "format"。
+- 會移除內嵌的連字號。 例如，對於 & for&mat 會語彙基元化為"format"。
 
   預設情況下，會使用英文 (en) 版本的拼字檢查程式。 目前使用任何其他語言字典不。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
- 若要修正此規則的違規情形，更正這個字的拼字，或將該字加入至名為 CustomDictionary.xml 自訂字典。 將字典中的工具，[專案目錄中，安裝目錄，或使用者的設定檔] 下方的工具相關聯的目錄中 (%USERPROFILE%\Application 資料\\...)。若要了解如何加入自訂字典中的專案[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]，請參閱[How to： 自訂程式碼分析字典](../code-quality/how-to-customize-the-code-analysis-dictionary.md)
+ 若要修正此規則的違規情形，更正這個字的拼字，或將該字加入至名為 CustomDictionary.xml 自訂字典。 將字典中的工具，[專案目錄中，安裝目錄，或使用者的設定檔] 下方的工具相關聯的目錄中 (%USERPROFILE%\Application 資料\\...)。若要了解如何加入自訂字典中的專案[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]，請參閱[How to:自訂程式碼分析字典](../code-quality/how-to-customize-the-code-analysis-dictionary.md)
 
 - 新增應該不會造成違反 Recognized/單字字典/路徑下的單字。
 
 - 新增應該會造成無法識別字典/文字/路徑下的違規的單字。
 
-- 新增應該標示的文字，為即將淘汰字典/文字/路徑下已過時。 請參閱相關的規則主題[ca1726 建議： 使用慣用的詞彙](../code-quality/ca1726-use-preferred-terms.md)如需詳細資訊。
+- 新增應該標示的文字，為即將淘汰字典/文字/路徑下已過時。 請參閱相關的規則主題[ca1726 建議：使用慣用的詞彙](../code-quality/ca1726-use-preferred-terms.md)如需詳細資訊。
 
 - 加入至字典/首字母縮略字/CasingExceptions 路徑的首字母縮略字大小寫規則的例外狀況。
 
@@ -95,20 +90,17 @@ ms.locfileid: "49827539"
  隱藏此規則的警告，才有刻意拼錯的文字和一組有限的程式庫適用於 word。 正確拼寫的字會縮短學習曲線所需的新軟體程式庫。
 
 ## <a name="related-rules"></a>相關的規則
- [CA2204：常值必須使用正確的拼字](../code-quality/ca2204-literals-should-be-spelled-correctly.md)
+ [CA2204:常值應該使用正確的拼字](../code-quality/ca2204-literals-should-be-spelled-correctly.md)
 
- [CA1703：資源字串應該使用正確的拼字](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)
+ [CA1703:資源字串應該使用正確的拼字](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)
 
- [CA1709：識別項名稱應該使用正確的大小寫](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
+ [CA1709:識別項應該使用正確的大小寫](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
 
- [CA1708：識別項名稱不應該只靠大小寫區別](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
+ [CA1708:識別項應該不僅為大小寫不同](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
 
- [CA1707：識別項名稱不應該包含底線](../code-quality/ca1707-identifiers-should-not-contain-underscores.md)
+ [CA1707:識別項不應該包含底線](../code-quality/ca1707-identifiers-should-not-contain-underscores.md)
 
- [CA1726：建議使用慣用詞彙](../code-quality/ca1726-use-preferred-terms.md)
+ [CA1726： 建議使用慣用的詞彙](../code-quality/ca1726-use-preferred-terms.md)
 
 ## <a name="see-also"></a>另請參閱
  [如何：自訂程式碼分析字典](../code-quality/how-to-customize-the-code-analysis-dictionary.md)
-
-
-

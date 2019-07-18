@@ -1,14 +1,9 @@
 ---
-title: BP_RESOLUTION_CODE |Microsoft Docs
-ms.custom: ''
+title: BP_RESOLUTION_CODE | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - BP_RESOLUTION_CODE
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: ac103ec5-771c-4667-92de-b5abb53bbb52
 caps.latest.revision: 10
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 89fcdf1090499f2390d8e8a2ad91149072cb3623
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: b2323ce082a41633afae33e90030b704f2e53f80
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51780278"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68153332"
 ---
 # <a name="bpresolutioncode"></a>BP_RESOLUTION_CODE
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -53,9 +48,9 @@ public struct BP_RESOLUTION_CODE { 
 ## <a name="requirements"></a>需求  
  標頭： msdbg.h  
   
- 命名空間： Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間：Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
  [結構和等位](../../../extensibility/debugger/reference/structures-and-unions.md)   
@@ -63,4 +58,3 @@ public struct BP_RESOLUTION_CODE { 
  [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md)   
  [GetResolutionInfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md)   
  [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)
-

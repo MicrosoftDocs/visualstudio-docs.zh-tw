@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9d25325eb6f0fac952cbecff13cacde2d5354762
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: dc0f56331c11c6c33561774d38ef79e286a4133a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56621363"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445566"
 ---
 # <a name="create-outlook-form-regions"></a>建立 Outlook 表單區域
   您可以使用表單區域自訂 Microsoft Office Outlook 表單。 Visual Studio 提供進階的工具，可讓您更方便地設計、開發和偵錯表單區域。
@@ -30,23 +30,23 @@ ms.locfileid: "56621363"
 
  本主題提供下列資訊：
 
--   [使用表單區域的優點](#Enhance)
+- [使用表單區域的優點](#Enhance)
 
--   [將 Outlook 表單區域加入至專案](#Adding)
+- [將 Outlook 表單區域加入至專案](#Adding)
 
--   [使用表單區域設計工具](#UsingFormRegionDesigner)
+- [使用表單區域設計工具](#UsingFormRegionDesigner)
 
--   [使用在 Outlook 中設計表單區域](#UsingFormRegionDesignedOutlook)
+- [使用在 Outlook 中設計表單區域](#UsingFormRegionDesignedOutlook)
 
--   [將自訂程式碼新增至表單區域](#AddingCustomCode)
+- [將自訂程式碼新增至表單區域](#AddingCustomCode)
 
--   [建置專案](#Building)
+- [建置專案](#Building)
 
--   [偵錯表單區域](#Debugging)
+- [偵錯表單區域](#Debugging)
 
--   [部署表單區域](#Deploying)
+- [部署表單區域](#Deploying)
 
-##  <a name="Enhance"></a> 使用表單區域的優點
+## <a name="Enhance"></a> 使用表單區域的優點
  表單區域提供許多超越傳統 Outlook 表單開發的增強功能：
 
 - 自訂任何標準表單的預設頁面。
@@ -59,10 +59,10 @@ ms.locfileid: "56621363"
 
   如需詳細資訊，請參閱 <<c0> [ 來自訂表單頁面與表單區域](/office/vba/outlook/Concepts/Forms/customizing-form-pages-and-form-regions)。
 
-##  <a name="Adding"></a> 將 Outlook 表單區域加入至專案
+## <a name="Adding"></a> 將 Outlook 表單區域加入至專案
  您可以使用**新的 Outlook 表單區域**設計新的表單區域，或匯入在 Outlook 中設計的表單區域精靈。 此外，如果您在另一個 Outlook VSTO 增益集專案中使用表單區域，則可重複使用現有的表單區域。
 
-###  <a name="CreatingFormRegion"></a> 使用精靈建立新的表單區域
+### <a name="CreatingFormRegion"></a> 使用精靈建立新的表單區域
  若要建立表單區域，新增**Outlook 表單區域**項目加入 Outlook VSTO 增益集專案。 這會啟動**新的 Outlook 表單區域**精靈。
 
  使用此精靈指出您要設計新的表單區域，或匯入已在 Outlook 中設計的表單區域。 如需有關如何設計新的表單區域的詳細資訊，請參閱 <<c0> [ 使用表單區域設計工具](#UsingFormRegionDesigner)。 如需使用在 Outlook 中設計表單區域的詳細資訊，請參閱[匯入在 Outlook 中設計的表單區域](#UsingFormRegionDesignedOutlook)。
@@ -83,14 +83,14 @@ ms.locfileid: "56621363"
 #### <a name="form-region-files"></a>表單區域檔案
  當您完成**新的 Outlook 表單區域** 精靈，Visual Studio 會自動將下列檔案新增至您的專案：
 
--   表單區域程式碼檔案。 此檔案具有您指定的名稱**Outlook 表單區域**中的項目**加入新項目** 對話方塊。 請將程式碼加入這個檔案以處理表單區域事件。
+- 表單區域程式碼檔案。 此檔案具有您指定的名稱**Outlook 表單區域**中的項目**加入新項目** 對話方塊。 請將程式碼加入這個檔案以處理表單區域事件。
 
--   表單區域設計工具程式碼檔案。 這個檔案包含表單區域設計工具所產生的程式碼，且不應直接編輯。
+- 表單區域設計工具程式碼檔案。 這個檔案包含表單區域設計工具所產生的程式碼，且不應直接編輯。
 
--   Outlook 表單儲存區 (*.ofs*) 檔案。
+- Outlook 表單儲存區 (*.ofs*) 檔案。
 
     > [!NOTE]
-    >  這個檔案只會在您匯入已在 Outlook 中設計的表單區域時加入專案。
+    > 這個檔案只會在您匯入已在 Outlook 中設計的表單區域時加入專案。
 
 #### <a name="form-region-factory-class"></a>表單區域 factory 類別
  表單區域程式碼檔案包含一個部分類別，用來實作 <xref:Microsoft.Office.Tools.Outlook.IFormRegionFactory> 介面。 也就是表單區域 Factory 類別。 表單區域 Factory 類別會負責建立表單區域的新執行個體。
@@ -101,16 +101,16 @@ ms.locfileid: "56621363"
 
  大部分表單區域 Factory 類別是在表單區域設計工具檔案中實作。 不過，`FormRegionInitializing` 事件處理常式會在表單區域程式碼檔案中公開。 您可以使用這個事件處理常式指定 Outlook 是否應顯示表單區域。 如需詳細資訊，請參閱 <<c0> [ 處理表單區域事件](#HandlingFormRegionEvents)。
 
-###  <a name="AddingExistingFormRegion"></a> 將現有的表單區域加入至專案
+### <a name="AddingExistingFormRegion"></a> 將現有的表單區域加入至專案
  如果在其他 Outlook 專案中有您使用的 Outlook 表單區域，則可使用 [加入現有項目]  對話方塊在目前的 Outlook VSTO 增益集專案中重複使用該表單區域。
 
  現有的表單區域必須擁有程式碼檔案 (*.vb*或 *.cs*); 您無法新增 Outlook 表單儲存區 (*.ofs*) 所使用的檔案**加入現有項目**  對話方塊。 不過，您可以藉由匯入 Outlook 表單儲存區檔案建立新的表單區域。 如需詳細資訊，請參閱[如何：將表單區域加入 Outlook 增益集專案](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)。
 
-##  <a name="UsingFormRegionDesigner"></a> 使用表單區域設計工具
+## <a name="UsingFormRegionDesigner"></a> 使用表單區域設計工具
  [表單區域設計工具] 可協助您設計表單區域的配置和外觀。 您可以將 managed 的控制項拖曳至設計工具的介面、 按兩下控制項開啟事件處理常式，和在 設定屬性**屬性**視窗。
 
 > [!NOTE]
->  您可以找到影響表單區域在下方的 Outlook 中顯示的方式的屬性**Manifest**中的節點**屬性**視窗。
+> 您可以找到影響表單區域在下方的 Outlook 中顯示的方式的屬性**Manifest**中的節點**屬性**視窗。
 
  表單區域設計工具才會提供您所選取**設計新的表單區域**中**選取您要建立此表單區域的方式**頁面**新的 Outlook 表單區域**精靈。
 
@@ -124,7 +124,7 @@ ms.locfileid: "56621363"
 
   [表單區域設計工具] 只支援 Managed 控制項。 因此您無法加入原生 Outlook 控制項。
 
-##  <a name="UsingFormRegionDesignedOutlook"></a> 匯入在 Outlook 中設計的表單區域
+## <a name="UsingFormRegionDesignedOutlook"></a> 匯入在 Outlook 中設計的表單區域
  當您在 Outlook 中設計時，可將原生 Outlook 控制項加入表單區域。 原生 Outlook 控制項可讓您在設計階段時繫結至 Outlook 資料。 不過，之後您就無法使用 [表單區域設計工具] 加入 Managed 控制項，或是變更表單區域的設計。
 
  您可以使用表單區域匯入至 Outlook VSTO 增益集專案**新的 Outlook 表單區域**精靈。 在 **選取您要建立此表單區域的方式**頁面上，選取**匯入 Outlook 表單儲存區 (.ofs) 檔案**。 您可以再瀏覽至 Outlook 表單儲存區檔案的位置 (*.ofs*) 檔案。 (Outlook 會將儲存為表單區域 *.ofs*檔案。)
@@ -138,17 +138,17 @@ ms.locfileid: "56621363"
  您可以在表單區域 Factory 類別的 `InitializeManifest` 方法中變更表單區域屬性。
 
 > [!NOTE]
->  若要匯入表單區域，您必須在目標 Outlook 版本與開發電腦上所安裝版本相同的專案中進行。 例如，如果您已安裝 Outlook 2010，匯入表單區域則只能在專案中的建立使用**Outlook 2010 增益集**專案範本。
+> 若要匯入表單區域，您必須在目標 Outlook 版本與開發電腦上所安裝版本相同的專案中進行。 例如，如果您已安裝 Outlook 2010，匯入表單區域則只能在專案中的建立使用**Outlook 2010 增益集**專案範本。
 
 ### <a name="update-an-imported-form-regions-design"></a>更新的匯入的表單區域設計
  您可以加入、移除或變更表單區域上的控制項。 在執行這些動作前，請先備份您加入表單區域程式碼檔案的任何程式碼。 然後，開啟 *.ofs*檔案在 Outlook 中，修改表單區域，並儲存所做的變更。 使用**新的 Outlook 表單區域**精靈來匯入已修改 *.ofs*檔案。 然後您可以將程式碼貼入新的表單區域程式碼檔案。
 
-##  <a name="AddingCustomCode"></a> 將自訂程式碼新增至表單區域
+## <a name="AddingCustomCode"></a> 將自訂程式碼新增至表單區域
  <xref:Microsoft.Office.Tools.Outlook> 命名空間可讓您存取代表表單區域的類別、顯示表單區域的 Outlook 項目，以及其他實用的項目。 **Outlook 表單區域**項目會自動在專案中新增此組件的參考並插入適當**使用**或是**Imports**頂端的陳述式表單區域程式碼檔案。
 
  您可以使用 `Microsoft.Office.Interop.Outlook` 命名空間中的類別、方法和屬性來完成大部分 Outlook 程式設計工作。 如需 Outlook 物件模型的詳細資訊，請參閱[Outlook 物件模型概觀](../vsto/outlook-object-model-overview.md)。 如需使用 Outlook 物件模型，請參閱的一般工作的範例[層級增益集](../vsto/outlook-solutions.md)。
 
-###  <a name="HandlingFormRegionEvents"></a> 處理表單區域事件
+### <a name="HandlingFormRegionEvents"></a> 處理表單區域事件
  **Outlook 表單區域**項目會自動將下列三個事件處理常式加入表單區域程式碼檔案。
 
 |Event - 事件|描述|
@@ -157,7 +157,7 @@ ms.locfileid: "56621363"
 |FormRegionShowing|發生於建立表單區域的執行個體之後，但在表單區域顯示之前。|
 |FormRegionClosed|發生於關閉表單區域之前。|
 
-##  <a name="Building"></a> 建置專案
+## <a name="Building"></a> 建置專案
  當您建置包含表單區域的 Outlook VSTO 增益集專案時，Visual Studio 會在登錄中加入以下資訊：
 
 - 與一個或多個表單區域關聯之每個訊息類別的索引鍵。
@@ -166,12 +166,12 @@ ms.locfileid: "56621363"
 
   Outlook 會使用這項資訊來載入表單區域。
 
-##  <a name="Debugging"></a> 偵錯表單區域
+## <a name="Debugging"></a> 偵錯表單區域
  您可以對包含表單區域的 Outlook VSTO 增益集進行偵錯，就如同您對其他 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 專案進行偵錯一般。 當您啟動 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 偵錯工具時，Visual Studio 會自動啟動 Outlook。
 
  若要檢視表單區域，您必須開啟適當的 Outlook 項目。 例如，如果郵件項目底部附加了相鄰表單區域，則開啟郵件項目。
 
-##  <a name="Deploying"></a> 部署表單區域
+## <a name="Deploying"></a> 部署表單區域
  表單區域會自動隨相關聯的 Outlook VSTO 增益集部署。 因此，您不需要執行任何特殊工作來部署表單區域。 如需部署 VSTO 增益集的詳細資訊，請參閱 <<c0> [ 部署 Office 方案](../vsto/deploying-an-office-solution.md)。
 
 ## <a name="related-topics"></a>相關主題

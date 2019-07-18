@@ -1,27 +1,22 @@
 ---
 title: MSSCCPRJ。SCC 檔案 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, MSSCCPRJ.SCC file
 - MSSCCPRJ.SCC file
 ms.assetid: 6f2e39d6-b79d-407e-976f-b62a3cedd378
 caps.latest.revision: 16
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: a04429bafb7da0b3d4922905bd712e82ba16a4ba
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 705e0fa821000716dc9cd729901fbb7db5fd759c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51736163"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68194212"
 ---
 # <a name="mssccprjscc-file"></a>MSSCCPRJ.SCC 檔案
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,19 +27,19 @@ ms.locfileid: "51736163"
   
  原始檔控制外掛程式支援 MSSCCPRJ。SCC 檔案必須遵守下列指導方針：  
   
--   只能有一個 MSSCCPRJ。SCC 檔案，每個目錄。  
+- 只能有一個 MSSCCPRJ。SCC 檔案，每個目錄。  
   
--   MSSCCPRJ。SCC 檔案可以包含"AuxPath 」 和 「 專案名稱 」，在指定的目錄中的原始檔控制的多個檔案。  
+- MSSCCPRJ。SCC 檔案可以包含"AuxPath 」 和 「 專案名稱 」，在指定的目錄中的原始檔控制的多個檔案。  
   
--   "AuxPath"字串不能在其中的引號。 它允許有用引號括住它做為分隔符號 （例如雙引號括住一組可用來表示空字串）。 讀取從 MSSCCPRJ 時，IDE 將帶狀所有從 「 AuxPath"字串的引號。SCC 檔案。  
+- "AuxPath"字串不能在其中的引號。 它允許有用引號括住它做為分隔符號 （例如雙引號括住一組可用來表示空字串）。 讀取從 MSSCCPRJ 時，IDE 將帶狀所有從 「 AuxPath"字串的引號。SCC 檔案。  
   
--   MSSCCPRJ"專案名稱 」 字串。SCC 檔案必須從傳回的字串完全相符`SccGetProjPath`函式。 如果函式所傳回的字串必須用引號括住它 MSSCCPRJ 中的字串。SCC 檔案必須具有引號括住，反之亦然。  
+- MSSCCPRJ"專案名稱 」 字串。SCC 檔案必須從傳回的字串完全相符`SccGetProjPath`函式。 如果函式所傳回的字串必須用引號括住它 MSSCCPRJ 中的字串。SCC 檔案必須具有引號括住，反之亦然。  
   
--   MSSCCPRJ。SCC 檔案建立或更新時的檔案會放在原始檔控制。  
+- MSSCCPRJ。SCC 檔案建立或更新時的檔案會放在原始檔控制。  
   
--   如果 MSSCCPRJ。SCC 檔案遭到刪除，提供者應該重新執行有關該目錄的原始檔控制作業的下一次產生它。  
+- 如果 MSSCCPRJ。SCC 檔案遭到刪除，提供者應該重新執行有關該目錄的原始檔控制作業的下一次產生它。  
   
--   MSSCCPRJ。SCC 檔案必須嚴格遵循定義的格式。  
+- MSSCCPRJ。SCC 檔案必須嚴格遵循定義的格式。  
   
 ## <a name="an-illustration-of-the-mssccprjscc-file-format"></a>MSSCCPRJ 圖例。SCC 檔案格式  
  以下是 MSSCCPRJ 的範例。SCC 檔案格式 （行號，才會提供做為指南，和不應包含在檔案內文）：  
@@ -82,4 +77,3 @@ ms.locfileid: "51736163"
 ## <a name="see-also"></a>另請參閱  
  [原始檔控制外掛程式](../extensibility/source-control-plug-ins.md)   
  [用來做為索引鍵以尋找原始檔控制外掛程式的字串](../extensibility/strings-used-as-keys-for-finding-a-source-control-plug-in.md)
-

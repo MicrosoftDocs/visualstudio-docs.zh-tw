@@ -1,14 +1,9 @@
 ---
 title: IDebugDocumentContext2::GetLanguageInfo |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugDocumentContext2::GetLanguageInfo
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 6a212ee5-414c-4eb5-ab11-19db1786943d
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: e1a75daf781126437003e975839a9d1b9c1292ef
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f1c9d62fd368b248bd6267c9d85e86b9b6e4de36
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51769948"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68145029"
 ---
 # <a name="idebugdocumentcontext2getlanguageinfo"></a>IDebugDocumentContext2::GetLanguageInfo
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -89,4 +84,3 @@ HRESULT CDebugContext::GetLanguageInfo(BSTR* pbstrLanguage, GUID* pguidLanguage)
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)
-

@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugStackFrame2::GetName
 ms.assetid: 069d4f96-363f-404e-9c89-5318c4c9821b
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 076e744be4e97cc8c58d5b5f7578f1701f39d711
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 3d50fc1b711c673d8582be0d1208bc1d56e0f38b
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56714254"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66352110"
 ---
 # <a name="idebugstackframe2getname"></a>IDebugStackFrame2::GetName
 取得堆疊框架的名稱。
@@ -36,10 +39,9 @@ int GetName ( 
 );
 ```
 
-#### <a name="parameters"></a>參數
- `pbstrName`
-
- [out]傳回堆疊框架的名稱。
+## <a name="parameters"></a>參數
+`pbstrName`\
+[out]傳回堆疊框架的名稱。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

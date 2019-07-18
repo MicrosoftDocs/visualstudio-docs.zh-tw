@@ -1,14 +1,9 @@
 ---
-title: 'Idiaenuminjectedsources:: Skip |Microsoft Docs'
-ms.custom: ''
+title: IDiaEnumInjectedSources::Skip | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 4aad6a51-f2d3-4064-b216-60d830d0a560
 caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 6e9b28573ad1bdb82ac491d58abd7d7f0020e9b1
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 890d9c5b1673a9af4acabf8262a76e2840ede8ad
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51722742"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68150881"
 ---
 # <a name="idiaenuminjectedsourcesskip"></a>IDiaEnumInjectedSources::Skip
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -47,6 +42,3 @@ HRESULT Skip ( 
   
 ## <a name="see-also"></a>另請參閱  
  [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md)
-
-
-

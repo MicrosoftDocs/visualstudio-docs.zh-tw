@@ -1,11 +1,8 @@
 ---
 title: InvokeMethod 活動設計工具 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.InvokeMethod.UI
@@ -13,13 +10,13 @@ ms.assetid: 15e6efdc-52ca-46d8-9c5e-063f7c8265a6
 caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: a3fa1c07bbb32bc1da963a0d2f0a91ae6c193a30
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 61398efe1849c6038e13a68ae3b2e2f5f80f1d5d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49863681"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62952005"
 ---
 # <a name="invokemethod-activity-designer"></a>InvokeMethod 活動設計工具
 **InvokeMethod**設計工具會用來建立及設定<xref:System.Activities.Statements.InvokeMethod>活動。  
@@ -35,7 +32,7 @@ ms.locfileid: "49863681"
 ### <a name="the-invokemethod-properties"></a>InvokeMethod 屬性  
  下表顯示 <xref:System.Activities.Statements.InvokeMethod> 屬性，並且描述屬性在設計工具中的使用方式。 這些屬性可以在屬性方格中進行編輯，其中有一些可以在 [!INCLUDE[wfd2](../includes/wfd2-md.md)] 設計工具介面上編輯。  
   
-|屬性名稱|必要項|使用方式|  
+|屬性名稱|必要|使用量|  
 |-------------------|--------------|-----------|  
 |<xref:System.Activities.Activity.DisplayName%2A>|False|<xref:System.Activities.Statements.InvokeMethod> 活動的易記名稱。 預設值為 InvokeMethod。<br /><br /> 雖然 <xref:System.Activities.Activity.DisplayName%2A> 並非絕對必要，但建議您盡量使用。|  
 |<xref:System.Activities.Statements.InvokeMethod.MethodName%2A>|True|活動執行時要呼叫之方法的名稱。 呼叫的方法必須宣告為**公開**。 此屬性也可以在設計工具介面上編輯。 這是必要的屬性。|  
@@ -57,7 +54,7 @@ ms.locfileid: "49863681"
   
 3. 逐一查看 <xref:System.Activities.Statements.InvokeMethod.Parameters%2A> 集合並登錄每個引數。  
   
-   結果的例外狀況是包含以下訊息的 <xref:System.Activities.InvalidWorkflowException> 類型：'InvokeMethod'：已有名稱為 'TargetObject' 的變數、RuntimeArgument 或 DelegateArgument。 名稱在環境範圍中必須是唯一的。  
+   產生的例外狀況是型別<xref:System.Activities.InvalidWorkflowException>並出現下列訊息：' InvokeMethod':變數、 RuntimeArgument 或 DelegateArgument 已經存在名稱為 'TargetObject'。 名稱在環境範圍中必須是唯一的。  
   
    這個限制不適用於 <xref:System.Activities.Statements.InvokeMethod.TargetType%2A> 和 <xref:System.Activities.Statements.InvokeMethod.RunAsynchronously%2A>，因為它們並非工作流程引數，因此並未登錄於 <xref:System.Activities.Statements.InvokeMethod.GenericTypeArguments%2A> 方法中 <xref:System.Activities.Statements.InvokeMethod> 活動的 <xref:System.Activities.Activity.CacheMetadata%2A> 集合。  
   

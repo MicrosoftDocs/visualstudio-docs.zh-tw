@@ -18,11 +18,11 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: 72d75985482ebf7e90db9d817212882b5ed8c292
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55928461"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62779635"
 ---
 # <a name="ca1006-do-not-nest-generic-types-in-member-signatures"></a>CA1006：不要在成員簽章中將泛型類型巢狀化
 

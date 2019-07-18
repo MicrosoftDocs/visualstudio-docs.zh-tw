@@ -1,26 +1,21 @@
 ---
 title: API 參考 （Visual Studio 偵錯） |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - debugging [Debugging SDK], API reference
 ms.assetid: e4e429da-3667-41f7-9158-a8207d13e91a
 caps.latest.revision: 10
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: c45f89a6deafad5317f4cde704b73d9d4a1f30a6
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: f3e95200cf29c8561798c858635c3864d635fb40
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51771705"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63424508"
 ---
 # <a name="api-reference-visual-studio-debugging"></a>API 參考 (Visual Studio 偵錯)
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -44,10 +39,10 @@ ms.locfileid: "51771705"
 |E_ACCESSDENIED|一般拒絕存取錯誤。|0x80070005|  
   
 > [!NOTE]
->  當[!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)]偵錯方法會傳回`S_OK`，則會假設所有參數的指標都有效，也就是沒有驗證場地進行 out 參數的指標時`S_OK`會傳回。  
+> 當[!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)]偵錯方法會傳回`S_OK`，則會假設所有參數的指標都有效，也就是沒有驗證場地進行 out 參數的指標時`S_OK`會傳回。  
   
 > [!NOTE]
->  無效或`NULL`[out] 參數可能會造成 IDE 損毀。  
+> 無效或`NULL`[out] 參數可能會造成 IDE 損毀。  
   
 ## <a name="see-also"></a>另請參閱  
  [介面](../../../extensibility/debugger/reference/interfaces-visual-studio-debugging.md)   
@@ -55,4 +50,3 @@ ms.locfileid: "51771705"
  [結構和等位](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [偵錯的 SDK 協助程式](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)   
  [Visual Studio 偵錯工具的擴充性](../../../extensibility/debugger/visual-studio-debugger-extensibility.md)
-

@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2c08f3d2f7ddcd3d9f1ad0eb0b937905d6449d00
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: a494f954f3f670fb796b33a0dbd01e2512ad1d26
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56620885"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62955725"
 ---
 # <a name="how-to-programmatically-retrieve-a-folder-by-name"></a>HOW TO：以程式設計方式依名稱擷取資料夾
   此範例會取得命名自訂資料夾的參考，並接著會顯示資料夾的內容。
@@ -30,7 +30,7 @@ ms.locfileid: "56620885"
 ## <a name="compile-the-code"></a>編譯程式碼
  這個範例需要：
 
--   名為 TestFolder 的資料夾。
+- 名為 TestFolder 的資料夾。
 
 ## <a name="see-also"></a>另請參閱
 - [使用資料夾](../vsto/working-with-folders.md)

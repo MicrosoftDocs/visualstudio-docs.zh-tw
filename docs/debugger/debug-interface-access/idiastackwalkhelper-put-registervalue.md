@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 59d076781e0f67ad9a2f2af02e7dc937042b0e71
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56620391"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62837923"
 ---
 # <a name="idiastackwalkhelperputregistervalue"></a>IDiaStackWalkHelper::put_registerValue
 設定暫存器值。
@@ -46,6 +46,6 @@ HRESULT put_registerValue ( 
 ## <a name="remarks"></a>備註
  值的大小，儘管實作應該儲存只哪些暫存器通常會保留。 例如，8 位元暫存器會保存只有最低 8 位元的指定值。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)
 - [CV_HREG_e 列舉](../../debugger/debug-interface-access/cv-hreg-e.md)

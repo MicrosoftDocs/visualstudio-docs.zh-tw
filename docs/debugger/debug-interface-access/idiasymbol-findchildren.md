@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5199be7307fdaa607f5aa6a5f554d9fcc82f452d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56623147"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "62837819"
 ---
 # <a name="idiasymbolfindchildren"></a>IDiaSymbol::findChildren
 擷取之符號的子系。
@@ -56,7 +56,7 @@ HRESULT findChildren ( 
 ## <a name="remarks"></a>備註
  這個方法相當於呼叫[idiasession:: Findchildren](../../debugger/debug-interface-access/idiasession-findchildren.md)完成這個符號的第一個參數的方法。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
 - [SymTagEnum 列舉](../../debugger/debug-interface-access/symtagenum.md)
 - [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)

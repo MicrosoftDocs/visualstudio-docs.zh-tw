@@ -1,33 +1,28 @@
 ---
 title: 運算式評估工具的實作策略 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - expression evaluation, implementation strategy
 - debug engines, implementation strategies
 ms.assetid: 1bccaeb3-8109-4128-ae79-16fd8fbbaaa2
 caps.latest.revision: 13
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 757e74a9dde1c580a6116342948edd4eb42f9ca3
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: a9c2ded111c371fc1a42c8f1ee08769f5b06aeda
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51737886"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63421149"
 ---
 # <a name="expression-evaluator-implementation-strategy"></a>運算式評估工具的實作策略
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 > [!IMPORTANT]
->  在 Visual Studio 2015 中，這種實作運算式評估工具已被取代。 如需實作 CLR 運算式評估工具的資訊，請參閱[CLR 運算式評估工具](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)並[Managed 運算式評估工具範例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。  
+> 在 Visual Studio 2015 中，這種實作運算式評估工具已被取代。 如需實作 CLR 運算式評估工具的資訊，請參閱[CLR 運算式評估工具](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)並[Managed 運算式評估工具範例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。  
   
  若要快速建立的運算式評估工具 (EE) 的其中一個方法是先實作最小的程式碼顯示本機變數中的所需**區域變數**視窗。 您最好了解中的每一行**區域變數** 視窗會顯示名稱、 類型和值的區域變數，且所有三個都由[IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md)物件。 名稱、 類型和本機變數的值可以取自`IDebugProperty2`物件，藉由呼叫其[GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md)方法。 如需有關如何顯示在中的區域變數**區域變數** 視窗中，請參閱[顯示區域變數](../../extensibility/debugger/displaying-locals.md)。  
   
@@ -39,4 +34,3 @@ ms.locfileid: "51737886"
 ## <a name="see-also"></a>另請參閱  
  [實作運算式評估工具](../../extensibility/debugger/implementing-an-expression-evaluator.md)   
  [顯示區域變數](../../extensibility/debugger/displaying-locals.md)
-

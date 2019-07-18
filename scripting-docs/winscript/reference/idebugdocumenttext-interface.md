@@ -14,11 +14,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 8878e1ce6e9ad05fc94b134a2e71847b67d578d2
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58151722"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63008611"
 ---
 # <a name="idebugdocumenttext-interface"></a>IDebugDocumentText 介面
 存取純文字版的偵錯文件。 這個介面會使用下列慣例：  

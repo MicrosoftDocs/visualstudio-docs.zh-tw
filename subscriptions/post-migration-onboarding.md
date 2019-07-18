@@ -6,13 +6,12 @@ manager: evelynp
 ms.date: 07/12/2018
 ms.topic: conceptual
 description: 了解如何在移轉至管理入口網站後，成功將組織上架於 Visual Studio 訂用帳戶。
-searchscope: VS Subscription
-ms.openlocfilehash: 188842272f7e4ee102829f961b29b4d5ffbf70dc
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: a5745fae68c8df4b2935de3410d76711f6477436
+ms.sourcegitcommit: f369ff7e84b0216f01570a486c7be80ca6d0e61a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58154175"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68250703"
 ---
 # <a name="onboard-to-the-visual-studio-subscriptions-administration-portal-after-your-organization-is-migrated"></a>在您的組織移轉之後，上架至 Visual Studio 訂用帳戶系統管理入口網站
 
@@ -26,7 +25,7 @@ ms.locfileid: "58154175"
 
 1. [主要連絡人未完成上架程序。](#onboarding-not-completed-by-primary-contact)
 2. [主要連絡人已完成上線程序，但未將您加入為系統管理員。您的認證已列在 VLSC 中。](#primary-contact-did-not-provide-you-administrator-access)
-3. [主要連絡人已完成上線程序，但未將您加入為系統管理員。您的認證未列在 VLSC 中。](#Your-credentials-were-not-listed-in-VLSC-prior-to-migration)
+3. [主要連絡人已完成上線程序，但未將您加入為系統管理員。您的認證未列在 VLSC 中。](#your-credentials-were-not-listed-in-vlsc-prior-to-migration)
 
 <sup>1</sup> 若您是主要或通知連絡人且未完成上線程序，您將必須依照情節一中的步驟完成設定組織的作業。
 
@@ -36,7 +35,7 @@ ms.locfileid: "58154175"
 
 若主要連絡人未完成上線程序，您會看到以下畫面。 若您可以存取[大量授權服務中心 (VLSC)](https://www.microsoft.com/Licensing/servicecenter/default.aspx)，您就能完成此程序並取得管理訂用帳戶的存取權。 您需要組織的[公開客戶號碼 (PCN)](find-pcn.md) (可以在 VLSC 中找到)。
 
-在 [PCN] 欄位中，輸入 [PCN](find-pcn.md)，然後選取 [傳送邀請電子郵件]。
+在 [PCN] 欄位中，輸入 [PCN](find-pcn.md)，然後選取 [傳送邀請電子郵件]  。
 > [!div class="mx-imgBorder"]
 > ![Visual Studio 訂用帳戶系統管理入口網站的螢幕擷取畫面](_img/post-migration-onboarding/send-invitation.png)
 

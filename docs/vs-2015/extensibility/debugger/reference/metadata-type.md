@@ -1,14 +1,9 @@
 ---
-title: METADATA_TYPE |Microsoft Docs
-ms.custom: ''
+title: METADATA_TYPE | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - METADATA_TYPE
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 2d8b78f6-0aef-4d79-809a-cff9b2c24659
 caps.latest.revision: 8
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 8e8b5cc4c0a067a8add062d2003e991eb8672af5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 1be7cb6071a0307a56285b8929e52e038c263fdc
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51732161"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62546820"
 ---
 # <a name="metadatatype"></a>METADATA_TYPE
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -57,7 +52,7 @@ public struct METADATA_TYPE {
  tokClass  
  此類型的中繼資料語彙基元的識別碼。  
   
- [C + +]`_mdToken`已`typedef`適用於 32 位元`int`。  
+ [C++]`_mdToken`是`typedef`適用於 32 位元`int`。  
   
 ## <a name="remarks"></a>備註  
  此結構會顯示為中的等位的一部分[TYPE_INFO](../../../extensibility/debugger/reference/type-info.md)結構時`dwKind`欄位`TYPE_INFO`結構設定為`TYPE_KIND_METADATA`(值[dwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md)列舉型別）。  
@@ -67,12 +62,11 @@ public struct METADATA_TYPE {
 ## <a name="requirements"></a>需求  
  標頭： sh.h  
   
- 命名空間： Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間：Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
  [結構和等位](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md)   
  [dwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md)
-

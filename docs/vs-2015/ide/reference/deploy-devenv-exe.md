@@ -14,17 +14,16 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 16ac851c59f084a4d9e98998754e7b9d20afaf81
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 0dac8564c06efd65b8db04e0aa0fae97a849e6cb
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54804525"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62421417"
 ---
 # <a name="deploy-devenvexe"></a>/Deploy (devenv.exe)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 在建置或重建之後部署方案。 只適用於 受控碼專案。  
   
 ## <a name="syntax"></a>語法  

@@ -1,14 +1,9 @@
 ---
-title: 逐步解說： 偵錯在設計階段 |Microsoft Docs
-ms.custom: ''
+title: 逐步解說：在設計階段偵錯 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -27,13 +22,13 @@ ms.assetid: 35bfdd2c-6f60-4be1-ba9d-55fce70ee4d8
 caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 4b6660bc4d9cf0073f1e18b0960c3fa9c0ae9c13
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 54466cc3561c194199bbad2b35cd00433da2b0f3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51737773"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68149422"
 ---
 # <a name="walkthrough-debugging-at-design-time"></a>逐步解說：在設計階段進行偵錯
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +39,7 @@ ms.locfileid: "51737773"
   
 ### <a name="to-hit-breakpoints-from-the-immediate-window"></a>從即時運算視窗中叫用  
   
-1.  將下列程式碼貼到 Visual Basic 主控台應用程式：  
+1. 將下列程式碼貼到 Visual Basic 主控台應用程式：  
   
     ```  
     Module Module1  
@@ -68,19 +63,19 @@ ms.locfileid: "51737773"
     End Module  
     ```  
   
-2.  讀取的行上設定中斷點`s="Add BreakPoint Here"`。  
+2. 讀取的行上設定中斷點`s="Add BreakPoint Here"`。  
   
-3.  輸入中的下列**Immediate**視窗： `?MyFunction<enter>`  
+3. 輸入中的下列**Immediate**視窗： `?MyFunction<enter>`  
   
-4.  請確認，叫用中斷點，和呼叫堆疊正確無誤。  
+4. 請確認，叫用中斷點，和呼叫堆疊正確無誤。  
   
-5.  在 [**偵錯**] 功能表中，按一下**繼續**，並確認您是否仍處於設計模式。  
+5. 在 [**偵錯**] 功能表中，按一下**繼續**，並確認您是否仍處於設計模式。  
   
-6.  輸入中的下列**Immediate**視窗： `?MyFunction<enter>`  
+6. 輸入中的下列**Immediate**視窗： `?MyFunction<enter>`  
   
-7.  輸入中的下列**Immediate**視窗： `?MySub<enter>`  
+7. 輸入中的下列**Immediate**視窗： `?MySub<enter>`  
   
-8.  確認您叫用中斷點，並檢查靜態變數的值`i`中**區域變數**視窗。 它應該有值為 3。  
+8. 確認您叫用中斷點，並檢查靜態變數的值`i`中**區域變數**視窗。 它應該有值為 3。  
   
 9. 驗證正確的呼叫堆疊。  
   
@@ -89,6 +84,3 @@ ms.locfileid: "51737773"
 ## <a name="see-also"></a>另請參閱  
  [偵錯工具安全性](../debugger/debugger-security.md)   
  [偵錯工具基礎](../debugger/debugger-basics.md)
-
-
-

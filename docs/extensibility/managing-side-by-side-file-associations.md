@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - verbs, setting default
 ms.assetid: 9b6df3bc-d15c-4a5d-9015-948a806193b7
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f62318da0fc60a0fa9200d8ec11bdc4bb567ad86
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: b5d389ea97c9a77fe859a4029e4447adf76624e3
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56954383"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66340661"
 ---
 # <a name="manage-side-by-side-file-associations"></a>管理並排顯示檔案關聯
 
@@ -51,7 +51,7 @@ ms.locfileid: "56954383"
 
   **判斷最新版本的 Visual Studio 的 CustomAction 資料表資料列**
 
-  |動作|類型|原始程式檔|目標|
+  |動作|類型|Source|Target|
   |------------|----------|------------|------------|
   |CA_SetDevenvLatest_2002|51|DEVENV_EXE_LATEST|[DEVENV_EXE_2002]|
   |CA_SetDevenvLatest_2003|51|DEVENV_EXE_LATEST|[DEVENV_EXE_2003]|
@@ -81,9 +81,9 @@ ms.locfileid: "56954383"
 
 - 指示使用者執行使用者想要擁有的檔案關聯的 VSPackage 版本的修復。
 
--   提供個別的可執行程式，重寫的適當的登錄項目。
+- 提供個別的可執行程式，重寫的適當的登錄項目。
 
--   提供組態選項頁面或對話方塊中，可讓使用者選擇 檔案關聯，並回收遺失的關聯。 指示使用者解除安裝之後執行它。
+- 提供組態選項頁面或對話方塊中，可讓使用者選擇 檔案關聯，並回收遺失的關聯。 指示使用者解除安裝之後執行它。
 
 ## <a name="see-also"></a>另請參閱
 

@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugClassField::EnumBaseClasses method
 ms.assetid: 78749674-ef75-46d3-a1f4-ff33afd90e32
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 74889ed04dceb133c80467d20f723f9561b6e25c
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: f5735ac6f0ecdf9d3f2a0e3bb868be092b8fdb7e
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56703819"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66349642"
 ---
 # <a name="idebugclassfieldenumbaseclasses"></a>IDebugClassField::EnumBaseClasses
 建立此類別的基底類別的列舉值。
@@ -36,16 +39,16 @@ int EnumBaseClasses(
 );
 ```
 
-#### <a name="parameters"></a>參數
- `ppEnum`
+## <a name="parameters"></a>參數
+`ppEnum`\
 
- [out]傳回[IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)物件，代表基底類別清單。 如果沒有基底類別，則傳回 null 值。
+[out]傳回[IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)物件，代表基底類別清單。 如果沒有基底類別，則傳回 null 值。
 
 ## <a name="return-value"></a>傳回值
  如果成功，會傳回 S_OK，如果沒有基底類別，則傳回 S_SH_NO_BASE_CLASSES (和`ppEnum`參數設為 null 的值)，否則會傳回錯誤碼。
 
 ## <a name="remarks"></a>備註
- 中的列舉值物件的基底類別是以最立即可見的 （或最具衍生性的） 基底類別的大多數遠端的基底類別的順序指定。 例如，假設 c + + 類別：
+ 中的列舉值物件的基底類別是以最立即可見的 （或最具衍生性的） 基底類別的大多數遠端的基底類別的順序指定。 例如，假設C++類別：
 
 ```
 class Root { }

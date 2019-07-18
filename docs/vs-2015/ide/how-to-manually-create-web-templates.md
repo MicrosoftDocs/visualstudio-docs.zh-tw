@@ -14,20 +14,20 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4884ef313d969ae59b8aea704490eeb2e4e5a91c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 8a505fe3428a8e16c321eee4764f8a62fff65511
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54782206"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431087"
 ---
-# <a name="how-to-manually-create-web-templates"></a>如何：以手動方式建立網站範本
+# <a name="how-to-manually-create-web-templates"></a>HOW TO：手動建立網站範本
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 建立網站範本與建立其他種類的範本不同。 因為 Web 專案範本出現在 [新增網站] 對話方塊中，並且依程式語言分類 Web 專案項目，所以 .vstemplate 檔案必須將範本指定為網站範本，並識別程式設計語言。  
   
 > [!NOTE]
->  網站範本必須包含使用 `Project` 項目的 `File` 屬性所指定的空 .webproj 檔案。 雖然 Web 專案不需要專案檔，但需要這個檔案，網站範本才能正常運作。  
+> 網站範本必須包含使用 `Project` 項目的 `File` 屬性所指定的空 .webproj 檔案。 雖然 Web 專案不需要專案檔，但需要這個檔案，網站範本才能正常運作。  
   
 ### <a name="to-manually-create-a-web-template"></a>手動建立網站範本  
   
@@ -47,7 +47,7 @@ ms.locfileid: "54782206"
   
    - VisualBasic  
   
-     例如：  
+     例如:   
   
    ```  
    <TemplateData>  
@@ -86,6 +86,6 @@ ms.locfileid: "54782206"
 </VSTemplate>  
 ```  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [建立專案和項目範本](../ide/creating-project-and-item-templates.md)   
  [Visual Studio 範本結構描述參考](../extensibility/visual-studio-template-schema-reference.md)

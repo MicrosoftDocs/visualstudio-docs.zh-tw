@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - PROVIDER_FIELDS enumeration
 ms.assetid: 39631545-2b0e-45b4-978b-d63656484b02
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 67c055c1cf9fffde227d4e52a9764b2559a2342b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 923ae0bc3ca03dabee7b5d4bca74d24c7f7d5815
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56684347"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66329374"
 ---
 # <a name="providerfields"></a>PROVIDER_FIELDS
 指定的程式提供者相關聯的屬性。
@@ -39,10 +42,12 @@ public enum enum_PROVIDER_FIELDS {
 };
 ```
 
-## <a name="members"></a>成員
- PFIELD_PROGRAM_NODES`ProgramNodes`欄位無效。
+## <a name="fields"></a>欄位
+ `PFIELD_PROGRAM_NODES`\
+ `ProgramNodes`欄位無效。
 
- PFIELD_IS_DEBUGGER_PRESENT`fIsDebuggerPresent`欄位無效。
+ `PFIELD_IS_DEBUGGER_PRESENT`\
+ `fIsDebuggerPresent`欄位無效。
 
 ## <a name="remarks"></a>備註
  這些值會傳回在`Fields`隸屬[PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md)結構，以表示哪些欄位結構的明確已填入。

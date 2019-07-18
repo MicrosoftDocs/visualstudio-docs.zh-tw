@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugStackFrame2::GetPhysicalStackRange
 ms.assetid: 2f6992e2-ac1c-433f-83b7-a7f83a4ce63d
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7c325ab6cb12813000c981e978e728c251b06c55
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 2cf0db9fa776116f1536ae137444160385a8b6a1
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56720896"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66347705"
 ---
 # <a name="idebugstackframe2getphysicalstackrange"></a>IDebugStackFrame2::GetPhysicalStackRange
 取得的堆疊框架相關聯的實體位址範圍的電腦相關表示法。
@@ -38,14 +41,12 @@ int GetPhysicalStackRange ( 
 );
 ```
 
-#### <a name="parameters"></a>參數
- `paddrMin`
+## <a name="parameters"></a>參數
+`paddrMin`\
+[out]傳回此堆疊框架相關聯的最小實體位址。
 
- [out]傳回此堆疊框架相關聯的最小實體位址。
-
- `paddrMax`
-
- [out]傳回此堆疊框架相關聯的最高的實體位址。
+`paddrMax`\
+[out]傳回此堆疊框架相關聯的最高的實體位址。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

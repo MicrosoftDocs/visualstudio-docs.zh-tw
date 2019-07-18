@@ -6,17 +6,17 @@ helpviewer_keywords:
 - Visual Studio SDK, reference
 - reference, Visual Studio SDK
 ms.assetid: a6930db5-a112-4651-8de3-e520df851f82
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 62f5547da6e2181590b231175a409c505f3da7a0
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 692297a22017ad3bb934bc80cc05c9b90f62ecbc
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56685745"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66322176"
 ---
 # <a name="visual-studio-sdk-reference"></a>Visual Studio SDK 參考
 本節包含 Visual Studio 的命名空間、 相關的命名空間和資訊感興趣的其他區域的開發人員使用 Visual Studio SDK。
@@ -126,11 +126,11 @@ ms.locfileid: "56685745"
 
 - <xref:EnvDTE100> 使用 Visual Studio 自動化。
 
-- <xref:Microsoft.VisualStudio.VCCodeModel> 使用 Visual c + + 專案自動化。
+- <xref:Microsoft.VisualStudio.VCCodeModel> 視覺效果使用C++專案自動化。
 
-- <xref:Microsoft.VisualStudio.VCProject> 使用 Visual c + + 專案自動化的類別。
+- <xref:Microsoft.VisualStudio.VCProject> 視覺效果使用的類別C++專案自動化。
 
-- <xref:Microsoft.VisualStudio.VCProjectEngine> 使用 Visual c + + 專案自動化。
+- <xref:Microsoft.VisualStudio.VCProjectEngine> 視覺效果使用C++專案自動化。
 
 - <xref:Microsoft.VisualStudio.VsWizard> 使用 Visual Studio 精靈。
 

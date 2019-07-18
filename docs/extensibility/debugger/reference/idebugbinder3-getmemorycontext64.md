@@ -6,17 +6,20 @@ helpviewer_keywords:
 - GetMemoryContext64
 - IDebugBinder3::GetMemoryContext64
 ms.assetid: f021fd16-9fc7-4c41-86af-e54e6224cfbb
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 522d6cc0888f3ccbfd8c39a9ec313f7e06add25f
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 92c589951e9b65536be5474f56eb6b959232b738
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56713863"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66327061"
 ---
 # <a name="idebugbinder3getmemorycontext64"></a>IDebugBinder3::GetMemoryContext64
 將記憶體內容的物件位置或 64 位元記憶體位址。
@@ -39,18 +42,15 @@ int GetMemoryContext64 (
 );
 ```
 
-#### <a name="parameters"></a>參數
-`pField`
+## <a name="parameters"></a>參數
+`pField`\
+[in][IDebugField](../../../extensibility/debugger/reference/idebugfield.md) ，描述要尋找的物件。 如果`NULL`，然後使用`dwConstant`改。
 
- [in][IDebugField](../../../extensibility/debugger/reference/idebugfield.md) ，描述要尋找的物件。 如果`NULL`，然後使用`dwConstant`改。
+`uConstant`\
+[in]64 位元記憶體位址，例如 0x50000000。
 
-`uConstant`
-
- [in]64 位元記憶體位址，例如 0x50000000。
-
-`ppMemCxt`
-
- [out]傳回[IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)代表物件的位址或在記憶體中的位址的介面。
+`ppMemCxt`\
+[out]傳回[IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)代表物件的位址或在記憶體中的位址的介面。
 
 ## <a name="return-value"></a>傳回值
 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

@@ -1,14 +1,9 @@
 ---
-title: IDebugProgram2::Detach |Microsoft Docs
-ms.custom: ''
+title: IDebugProgram2::Detach | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugProgram2::Detach
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 5e8d88b0-a8d4-4746-88c0-ad332ee73f33
 caps.latest.revision: 9
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 558256ab57651337970ecdbda4c498fcb600a1d5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 922c3d4df6332fc5b9bc5b264c4d46b3f1b91805
+ms.sourcegitcommit: da4079f5b6ec884baf3108cbd0519d20cb64c70b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51772196"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "62549320"
 ---
 # <a name="idebugprogram2detach"></a>IDebugProgram2::Detach
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -49,4 +44,3 @@ int Detach();
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)
-

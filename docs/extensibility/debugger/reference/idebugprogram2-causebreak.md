@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgram2::CauseBreak
 ms.assetid: 07d353fc-68ab-4297-a18f-3d3c7a80e121
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 06b392dd10c364e746f592a4d0ffd9ac32ca7df9
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: a01b5982b4f747bd70c3a35bc0b7191bb54cd21b
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56720201"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66311350"
 ---
 # <a name="idebugprogram2causebreak"></a>IDebugProgram2::CauseBreak
 程式停止執行下一個要求的時間執行其執行緒嘗試的其中一個。

@@ -8,19 +8,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 68250d8767910106ab7e6a3c3239beeb292bdfd8
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: ef65019223ba1978ea31fbdb9020993a166da89b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56620807"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422204"
 ---
 # <a name="troubleshoot-performance-tools-issues"></a>針對效能工具問題進行疑難排解
 當您使用程式碼剖析工具時，可能會遇到下列其中一個問題：
 
--   [程式碼剖析工具沒有收集到任何資料](#no-data-is-collected-by-the-profiling-tools)
+- [程式碼剖析工具沒有收集到任何資料](#no-data-is-collected-by-the-profiling-tools)
 
--   [效能檢視和報表將函式名稱顯示為數字](#performance-views-and-reports-display-numbers-for-function-names)
+- [效能檢視和報表將函式名稱顯示為數字](#performance-views-and-reports-display-numbers-for-function-names)
 
 ## <a name="no-data-is-collected-by-the-profiling-tools"></a>程式碼剖析工具沒有收集到任何資料
  在您分析應用程式之後，並未建立程式碼剖析資料 (.*vsp*) 檔案，而且您在 [輸出] 視窗或命令視窗中收到下列警告：
@@ -29,7 +29,7 @@ ms.locfileid: "56620807"
 
  有幾個問題會造成這個問題︰
 
--   使用取樣或 .NET 記憶體方法分析的處理序，啟動的子處理序會成為執行應用程式工作的處理序。 例如，一些應用程式會讀取該命令列，判斷其要啟動為 Windows 應用程式或命令列應用程式。 如果要求 Windows 應用程式時，原始的處理序會啟動設定為 Windows 應用程式的新處理序，然後結束原始的處理序。 因為程式碼剖析工具不會自動收集子處理序的資料，所以不會收集到任何資料。
+- 使用取樣或 .NET 記憶體方法分析的處理序，啟動的子處理序會成為執行應用程式工作的處理序。 例如，一些應用程式會讀取該命令列，判斷其要啟動為 Windows 應用程式或命令列應用程式。 如果要求 Windows 應用程式時，原始的處理序會啟動設定為 Windows 應用程式的新處理序，然後結束原始的處理序。 因為程式碼剖析工具不會自動收集子處理序的資料，所以不會收集到任何資料。
 
      若要在這種情況下收集程式碼剖析資料，請將分析工具附加至子處理序，而不是使用分析工具來啟動應用程式。 如需詳細資訊，請參閱[如何：為執行中的處理序附加和中斷連結效能工具](../profiling/how-to-attach-and-detach-performance-tools-to-running-processes.md)和[附加 (VSPerfCmd)](../profiling/attach.md)
 
@@ -40,9 +40,9 @@ ms.locfileid: "56620807"
 
  您可以下列兩種方式解決這個問題︰
 
--   找到 .*pdb* 檔，並放入和應用程式檔案相同的目錄。
+- 找到 .*pdb* 檔，並放入和應用程式檔案相同的目錄。
 
--   在程式碼剖析資料 (.*vsp*) 檔案中內嵌符號資訊。 如需詳細資訊，請參閱[使用效能資料檔案儲存符號資訊](../profiling/saving-symbol-information-with-performance-data-files.md)。
+- 在程式碼剖析資料 (.*vsp*) 檔案中內嵌符號資訊。 如需詳細資訊，請參閱[使用效能資料檔案儲存符號資訊](../profiling/saving-symbol-information-with-performance-data-files.md)。
 
 > [!NOTE]
->  分析引擎所需的 .*pdb* 檔版本要和編譯的應用程式檔案相同。 來自舊版或更新版本的應用程式檔案的 .*pdb* 檔不適用。
+> 分析引擎所需的 .*pdb* 檔版本要和編譯的應用程式檔案相同。 來自舊版或更新版本的應用程式檔案的 .*pdb* 檔不適用。

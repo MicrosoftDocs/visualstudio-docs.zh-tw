@@ -1,14 +1,9 @@
 ---
 title: 測量的複雜度與可維護性 Managed 程式碼 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.codemetrics.toolwindow
 helpviewer_keywords:
@@ -23,13 +18,13 @@ ms.assetid: 952b6f2e-584f-4c97-a5ba-42d7bd47a576
 caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 2926fb0ced23fb7bdf794730898313ce8b4e9d1f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: e1f2ee066e448c0c039c4288c39aa13a646bc46a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51749584"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697447"
 ---
 # <a name="measuring-complexity-and-maintainability-of-managed-code"></a>測量 Managed 程式碼的複雜度和維護性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,15 +42,12 @@ ms.locfileid: "51749584"
   
  [使用程式碼度量資料](../code-quality/working-with-code-metrics-data.md)  
   
- [如何： 將程式碼度量結果複製到剪貼簿](http://msdn.microsoft.com/en-us/bce8fa29-e39c-4855-aab9-8346257657c5)  
+ [如何：將程式碼度量結果複製到剪貼簿](https://msdn.microsoft.com/bce8fa29-e39c-4855-aab9-8346257657c5)  
   
- [如何： 將程式碼度量結果匯出至 Excel](http://msdn.microsoft.com/en-us/affc08f3-24e5-446d-9076-bf517663e582)  
+ [如何：將程式碼度量結果匯出至 Excel](https://msdn.microsoft.com/affc08f3-24e5-446d-9076-bf517663e582)  
   
- [如何： 建立根據結果的工作項目](http://msdn.microsoft.com/en-us/9016393b-b5a3-4d6b-ab6d-f80bafafc0da)  
+ [如何：建立根據結果的工作項目](https://msdn.microsoft.com/9016393b-b5a3-4d6b-ab6d-f80bafafc0da)  
   
 ## <a name="see-also"></a>另請參閱  
  [程式碼度量問題疑難排解](../code-quality/troubleshooting-code-metrics-issues.md)   
- [執行一般的開發工作](http://msdn.microsoft.com/en-us/4cd9702a-1e21-4f2d-8e86-e1be4bc74f0b)
-
-
-
+ [執行一般的開發工作](https://msdn.microsoft.com/4cd9702a-1e21-4f2d-8e86-e1be4bc74f0b)

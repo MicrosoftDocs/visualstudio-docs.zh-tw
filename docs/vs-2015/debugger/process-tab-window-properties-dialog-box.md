@@ -1,27 +1,22 @@
 ---
 title: 處理索引標籤上，視窗屬性對話方塊 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Window Properties dialog box, Process Tab
 ms.assetid: bb464429-4e7c-4919-98b5-1aaafe89bb5f
 caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: c2be6ec4c7f532c30363e4931e2a0e881131df10
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 4a8d4726ba91be6df455d16907a0cf122cc1effa
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51720821"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68192328"
 ---
 # <a name="process-tab-window-properties-dialog-box"></a>視窗屬性對話方塊、處理序索引標籤
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,10 +25,7 @@ ms.locfileid: "51720821"
   
  下列設定位於**程序** 索引標籤：  
   
-|進入|描述|  
+|進入|說明|  
 |-----------|-----------------|  
 |**處理序 ID**|擁有建立這個視窗的執行緒的處理序識別碼。 選擇此值，以檢視此程序的屬性。|  
 |**執行緒 ID**|建立這個視窗的執行緒識別碼。 選擇此值，以檢視此執行緒的內容。|
-
-
-

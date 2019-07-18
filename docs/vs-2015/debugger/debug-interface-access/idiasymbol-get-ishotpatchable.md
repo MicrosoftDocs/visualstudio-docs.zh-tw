@@ -1,14 +1,9 @@
 ---
 title: 'Idiasymbol:: Get_ishotpatchable |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,18 +12,18 @@ ms.assetid: b7b6f490-1cf2-4a68-9237-b152dac84d3c
 caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 061e55714c8dad1c6a04909e3ec52b9cca8f753c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 20fc0bf766baf2fcdee32c654d10dbd4813da698
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51777743"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "65703684"
 ---
 # <a name="idiasymbolgetishotpatchable"></a>IDiaSymbol::get_isHotpatchable
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-旗標，指出是否已編譯的模組會擷取[/hotpatch （建立可線上修補的影像）](http://msdn.microsoft.com/library/aad539b6-c053-4c78-8682-853d98327798)編譯器參數。  
+旗標，指出是否已編譯的模組會擷取[/hotpatch （建立可線上修補的影像）](https://msdn.microsoft.com/library/aad539b6-c053-4c78-8682-853d98327798)編譯器參數。  
   
 ## <a name="syntax"></a>語法  
   
@@ -46,7 +41,7 @@ HRESULT get_isHotpatchable(
  如果成功，則傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。  
   
 > [!NOTE]
->  傳回值為`S_FALSE`表示此屬性不適用於符號。  
+> 傳回值為`S_FALSE`表示此屬性不適用於符號。  
   
 ## <a name="remarks"></a>備註  
  這個屬性會使用來自`SymTagCompilandDetails`符號類型 (請參閱 < [CompilandDetails](../../debugger/debug-interface-access/compilanddetails.md))。  
@@ -56,11 +51,8 @@ HRESULT get_isHotpatchable(
 |需求|描述|  
 |-----------------|-----------------|  
 |標頭：|dia2.h|  
-|版本:|DIA SDK 8.0 版|  
+|版本:|DIA SDK v8.0|  
   
 ## <a name="see-also"></a>另請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [CompilandDetails](../../debugger/debug-interface-access/compilanddetails.md)
-
-
-

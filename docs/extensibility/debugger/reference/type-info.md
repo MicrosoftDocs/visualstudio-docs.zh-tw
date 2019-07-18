@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - TYPE_INFO structure
 ms.assetid: d725cb68-a565-49d1-a16f-ff0445c587a0
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4931553586f64ce0c3a38a8054016b1aba44a76a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 86212a5ef6f417dae2ae345b1367e041c3cf9095
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56707766"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66316122"
 ---
 # <a name="typeinfo"></a>TYPE_INFO
 此結構指定的各種欄位的類型的相關資訊。
@@ -43,35 +46,33 @@ public struct TYPE_INFO {
 };
 ```
 
-#### <a name="parameters"></a>參數
- dwKind 的值從[dwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md)列舉，決定如何解譯聯集。
+## <a name="members"></a>成員
+ `dwKind`\
+ 值，以從[dwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md)列舉，決定如何解譯聯集。
 
- type.typeMeta
+ `type.typeMeta`\
+ [C++只]包含[METADATA_TYPE](../../../extensibility/debugger/reference/metadata-type.md)結構，如果`dwKind`是`TYPE_KIND_METADATA`。
 
- [只有 c + +]包含[METADATA_TYPE](../../../extensibility/debugger/reference/metadata-type.md)結構，如果`dwKind`是`TYPE_KIND_METADATA`。
+ `type.typePdb`\
+ [C++只]包含[PDB_TYPE](../../../extensibility/debugger/reference/pdb-type.md)結構，如果`dwKind`是`TYPE_KIND_PDB`。
 
- type.typePdb
+ `type.typeBuilt`\
+ [C++只]包含[BUILT_TYPE](../../../extensibility/debugger/reference/built-type.md)結構，如果`dwKind`是`TYPE_KIND_BUILT`。
 
- [只有 c + +]包含[PDB_TYPE](../../../extensibility/debugger/reference/pdb-type.md)結構，如果`dwKind`是`TYPE_KIND_PDB`。
+ `type.unused`\
+ 未使用的填補。
 
- type.typeBuilt
+ `type`\
+ 聯集的名稱。
 
- [只有 c + +]包含[BUILT_TYPE](../../../extensibility/debugger/reference/built-type.md)結構，如果`dwKind`是`TYPE_KIND_BUILT`。
-
- type.unused 未使用的填補。
-
- 輸入的聯集的名稱。
-
- unionmember
-
+ `unionmember`\
  [C#只]封送處理為適當的結構類型根據`dwKind`。
 
 ## <a name="remarks"></a>備註
  此結構會傳遞至[GetTypeInfo](../../../extensibility/debugger/reference/idebugfield-gettypeinfo.md)填滿其中的方法。 結構的內容的解譯方式根據`dwKind`欄位。
 
 > [!NOTE]
->  [只有 c + +]如果`dwKind`equals `TYPE_KIND_BUILT`，然後才釋出基礎[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)物件終結時`TYPE_INFO`結構。 藉由呼叫 `typeInfo.type.typeBuilt.pUnderlyingField->Release()` 即可達到此目的。
-
+> [C++只]如果`dwKind`equals `TYPE_KIND_BUILT`，然後才釋出基礎[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)物件終結時`TYPE_INFO`結構。 藉由呼叫 `typeInfo.type.typeBuilt.pUnderlyingField->Release()` 即可達到此目的。
 
  [C#只]下表顯示如何解譯`unionmember`的每一種類型的成員。 此範例會示範如何做到這點一種型別。
 

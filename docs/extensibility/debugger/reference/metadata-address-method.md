@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - METADATA_ADDRESS_METHOD structure
 ms.assetid: fc0e5370-1b4f-4867-837f-0d63c4b9dd09
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f6d6ad6fdb995c80043a831bd08aa1294f0fb33e
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 03a8e4850a2a18ec55655934618ba42a694b412d
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56700272"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66347356"
 ---
 # <a name="metadataaddressmethod"></a>METADATA_ADDRESS_METHOD
 此結構表示的類別方法的位址。
@@ -40,19 +43,16 @@ public struct METADATA_ADDRESS_METHOD {
 }
 ```
 
-## <a name="terms"></a>詞彙
- tokMethod
-
+## <a name="members"></a>成員
+ `tokMethod`\
  方法的識別碼。
 
- [C + +]`_mdToken`已`typedef`適用於 32 位元`int`。
+ [C++]`_mdToken`是`typedef`適用於 32 位元`int`。
 
- dwOffset
-
+ `dwOffset`\
  從類別的位移開始 （可以代表位移 vtable） 此方法。
 
- dwVersion
-
+ `dwVersion`\
  （這個值是唯一的符號提供者） 的方法版本。
 
 ## <a name="remarks"></a>備註

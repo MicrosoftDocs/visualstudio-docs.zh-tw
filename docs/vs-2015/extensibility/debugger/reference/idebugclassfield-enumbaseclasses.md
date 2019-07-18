@@ -1,14 +1,9 @@
 ---
 title: IDebugClassField::EnumBaseClasses |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugClassField::EnumBaseClasses
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 78749674-ef75-46d3-a1f4-ff33afd90e32
 caps.latest.revision: 10
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 1b10e52c15dbb5d177cee872bb04dc46e60fff80
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: acfdc872ba5f7cf1989ea1d9ec67f82f1c0419b0
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51792719"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68191055"
 ---
 # <a name="idebugclassfieldenumbaseclasses"></a>IDebugClassField::EnumBaseClasses
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -51,7 +46,7 @@ int EnumBaseClasses(
  如果成功，會傳回 S_OK，如果沒有基底類別，則傳回 S_SH_NO_BASE_CLASSES (和`ppEnum`參數設為 null 的值)，否則會傳回錯誤碼。  
   
 ## <a name="remarks"></a>備註  
- 中的列舉值物件的基底類別是以最立即可見的 （或最具衍生性的） 基底類別的大多數遠端的基底類別的順序指定。 例如，假設 c + + 類別：  
+ 中的列舉值物件的基底類別是以最立即可見的 （或最具衍生性的） 基底類別的大多數遠端的基底類別的順序指定。 例如，假設C++類別：  
   
 ```  
 class Root { }  
@@ -65,4 +60,3 @@ class MyClass : Level2 { }
 ## <a name="see-also"></a>另請參閱  
  [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)   
  [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)
-

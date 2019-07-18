@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 41b8a6a7c075a72f010de1e3b57d5a47514498dd
-ms.sourcegitcommit: 612f8c21d1448f1a013c30100cdecfbec5ddb24f
+ms.openlocfilehash: ae1d142058b2f655bb55e5140a6ad6ac5f119742
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/01/2019
-ms.locfileid: "55571043"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263506"
 ---
 # <a name="publish-a-web-app-to-a-web-site-using-visual-studio"></a>使用 Visual Studio 將 Web 應用程式發行至網站
 
@@ -24,7 +24,7 @@ ms.locfileid: "55571043"
 [!INCLUDE [quickstart-prereqs](includes/quickstart-prereqs.md)]
 
 > [!NOTE]
-> 如果您需要將 Windows 桌面應用程式發行至網路檔案共用，請參閱[使用 ClickOnce 部署桌面應用程式](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) (C# 或 Visual Basic)。 針對 C++/CLR，請參閱[使用 ClickOnce 部署原生應用程式](/cpp/ide/clickonce-deployment-for-visual-cpp-applications)，針對 C/C++，請參閱[使用安裝專案部署原生應用程式](/cpp/ide/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project)。
+> 如果您需要將 Windows 桌面應用程式發行至網路檔案共用，請參閱[使用 ClickOnce 部署桌面應用程式](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) (C# 或 Visual Basic)。 針對 C++/CLR，請參閱[使用 ClickOnce 部署原生應用程式](/cpp/windows/clickonce-deployment-for-visual-cpp-applications)，針對 C/C++，請參閱[使用安裝專案部署原生應用程式](/cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project)。
 
 ## <a name="publish-to-a-web-site"></a>發行至網站
 
@@ -57,4 +57,4 @@ ms.locfileid: "55571043"
 在本快速入門中，您已了解如何使用 Visual Studio 建立發行設定檔。 您也可以匯入發行設定來設定發行設定檔。
 
 > [!div class="nextstepaction"]
-> [匯入發行設定並部署至 IIS](tutorial-import-publish-settings-iis.md)
+> [匯入發佈設定並部署至 IIS](tutorial-import-publish-settings-iis.md)

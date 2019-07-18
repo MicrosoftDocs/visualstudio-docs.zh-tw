@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgramPublisher2::SetDebuggerPresent
 ms.assetid: c88c3ff4-3632-4199-b5de-83c6d21bcf75
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: faa7263c3f5fa86a77c94271dec1b429d2f00543
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 402a9a65344af02dd4c321f4a1e449b012af36ee
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56713460"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66343309"
 ---
 # <a name="idebugprogrampublisher2setdebuggerpresent"></a>IDebugProgramPublisher2::SetDebuggerPresent
 告知偵錯工具存在並在執行計劃發行者。
@@ -36,10 +39,9 @@ int SetDebuggerPresent(
 );
 ```
 
-#### <a name="parameters"></a>參數
- `fDebuggerPresent`
-
- [in]非零 (`TRUE`) 如果偵錯工具，則為零 (`FALSE`) 如果不是。
+## <a name="parameters"></a>參數
+`fDebuggerPresent`\
+[in]非零 (`TRUE`) 如果偵錯工具，則為零 (`FALSE`) 如果不是。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

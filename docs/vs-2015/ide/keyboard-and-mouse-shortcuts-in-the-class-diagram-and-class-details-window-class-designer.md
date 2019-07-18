@@ -14,12 +14,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b3ae815bb0f9a11b19c711a3a860f8734701cc39
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 861ce1cf40dd5c56c043399387ef51fa3b4efee2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54775823"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63412249"
 ---
 # <a name="keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer"></a>類別圖表和類別檢視視窗中的鍵盤和滑鼠捷徑 (類別設計工具)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,18 +28,18 @@ ms.locfileid: "54775823"
   
  **本主題內容**  
   
--   [在類別設計工具中使用滑鼠](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md#MouseClassDesigner)  
+- [在類別設計工具中使用滑鼠](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md#MouseClassDesigner)  
   
--   [在類別細節視窗中使用滑鼠](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md#MouseClassDetails)  
+- [在類別細節視窗中使用滑鼠](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md#MouseClassDetails)  
   
--   [在類別設計工具中使用鍵盤](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md#KeyboardClassDesigner)  
+- [在類別設計工具中使用鍵盤](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md#KeyboardClassDesigner)  
   
--   [在類別細節視窗中使用鍵盤](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md#KeyboardClassDetails)  
+- [在類別細節視窗中使用鍵盤](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md#KeyboardClassDetails)  
   
-##  <a name="MouseClassDesigner"></a>在類別設計工具中使用滑鼠  
+## <a name="MouseClassDesigner"></a>在類別設計工具中使用滑鼠  
  類別圖表中可支援下列滑鼠動作：  
   
-|滑鼠組合|內容|描述|  
+|滑鼠組合|內容|說明|  
 |-----------------------|-------------|-----------------|  
 |按兩下|圖案項目|開啟程式碼編輯器。|  
 ||棒棒糖符號連接器|展開/摺疊棒棒糖符號。|  
@@ -49,23 +49,23 @@ ms.locfileid: "54775823"
 |CTRL + 滑鼠滾輪|類別圖表|縮放。|  
 |CTRL + Shift + 按一下|類別圖表|縮放。|  
   
-##  <a name="MouseClassDetails"></a>在類別細節視窗中使用滑鼠  
+## <a name="MouseClassDetails"></a>在類別細節視窗中使用滑鼠  
  您可以使用滑鼠變更 [類別細節] 視窗及其顯示之資料的外觀，方法如下：  
   
--   按一下任何可編輯的儲存格，即可編輯該儲存格的內容。 您的變更會反映在資料儲存或顯示的所有位置，包括在 [屬性] 視窗和原始程式碼中。  
+- 按一下任何可編輯的儲存格，即可編輯該儲存格的內容。 您的變更會反映在資料儲存或顯示的所有位置，包括在 [屬性] 視窗和原始程式碼中。  
   
--   按一下任何一列儲存格，[屬性] 視窗就會顯示該資料列所代表的項目屬性。  
+- 按一下任何一列儲存格，[屬性] 視窗就會顯示該資料列所代表的項目屬性。  
   
--   若要變更資料行的寬度，請拖曳欄位標題的右邊框線到您想要的寬度。  
+- 若要變更資料行的寬度，請拖曳欄位標題的右邊框線到您想要的寬度。  
   
--   按一下資料列左側的箭頭符號，可展開或摺疊區間或屬性節點。  
+- 按一下資料列左側的箭頭符號，可展開或摺疊區間或屬性節點。  
   
--   [類別細節] 視窗可提供數個按鈕，供您在目前的類別中建立新的成員，以及在 [類別細節] 視窗方格中的成員區間之間瀏覽。 如需詳細資訊，請參閱類別細節視窗按鈕。  
+- [類別細節] 視窗可提供數個按鈕，供您在目前的類別中建立新的成員，以及在 [類別細節] 視窗方格中的成員區間之間瀏覽。 如需詳細資訊，請參閱類別細節視窗按鈕。  
   
-##  <a name="KeyboardClassDesigner"></a>在類別設計工具中使用鍵盤  
+## <a name="KeyboardClassDesigner"></a>在類別設計工具中使用鍵盤  
  類別圖表中可支援下列鍵盤動作：  
   
-|Key|內容|描述|  
+|Key|內容|說明|  
 |---------|-------------|-----------------|  
 |方向鍵|在類型圖形內|圖形內容的樹狀樣式瀏覽 (支援圖案循環)。 如果可展開目前的項目，則向左和向右鍵可展開/摺疊該項目；如果不可展開目前的項目，則向左和向右鍵會瀏覽至父系 (請參閱樹狀檢視瀏覽，以了解詳細的行為)。|  
 ||最上層的圖形|移動圖表上的圖形。|  
@@ -89,10 +89,10 @@ ms.locfileid: "54775823"
 |SHIFT+TAB|在所有內容中|瀏覽至同一父系內的上一個子項 (支援循環)。|  
 |空格鍵|在所有內容中|在目前的項目上切換選取項目。|  
   
-##  <a name="KeyboardClassDetails"></a>在類別細節視窗中使用鍵盤  
+## <a name="KeyboardClassDetails"></a>在類別細節視窗中使用鍵盤  
   
 > [!NOTE]
->  下列按鍵繫結關係皆是特別為了模仿程式碼的輸入經驗而選。  
+> 下列按鍵繫結關係皆是特別為了模仿程式碼的輸入經驗而選。  
   
  使用下列機碼瀏覽 [類別細節] 視窗：  
   

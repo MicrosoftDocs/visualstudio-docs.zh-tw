@@ -1,14 +1,9 @@
 ---
-title: IDebugProperty3::CreateObjectID |Microsoft Docs
-ms.custom: ''
+title: IDebugProperty3::CreateObjectID | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugProperty3::CreateObjectID
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: f2fa81e7-822f-456e-8729-a96a18eea771
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 1e27d0dca73829bb5dd98c42d2e42ba34f4afdf0
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 0035faad9078acd70886d597f039c0d8de5ee12f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51776196"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63403188"
 ---
 # <a name="idebugproperty3createobjectid"></a>IDebugProperty3::CreateObjectID
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -50,9 +45,8 @@ int CreateObjectID();
  任何唯一的識別碼以建立`CreateObjectID`時終結[DestroyObjectID](../../../extensibility/debugger/reference/idebugproperty3-destroyobjectid.md)呼叫方法時，這也表示用來唯一識別此屬性需要的結束。  
   
 > [!NOTE]
->  沒有任何方法來擷取這個唯一識別碼，因此 DE 可以執行它想要的任何唯一的識別碼時`CreateObjectID`呼叫方法。  
+> 沒有任何方法來擷取這個唯一識別碼，因此 DE 可以執行它想要的任何唯一的識別碼時`CreateObjectID`呼叫方法。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)   
  [DestroyObjectID](../../../extensibility/debugger/reference/idebugproperty3-destroyobjectid.md)
-

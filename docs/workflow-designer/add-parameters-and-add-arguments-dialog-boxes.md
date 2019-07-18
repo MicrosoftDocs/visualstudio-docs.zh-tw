@@ -1,5 +1,5 @@
 ---
-title: 工作流程設計工具-新增參數及新增引數對話方塊
+title: 工作流程設計工具：加入參數] & [加入引數對話方塊
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -10,12 +10,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: f9ad4828eb3103ebbd014420e71c23f5411d9729
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 7acb273430ac2dea8bc1f95a5c9a6e5c1d45c6f5
+ms.sourcegitcommit: 13ab9a5ab039b070b9cd9251d0b83dd216477203
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55953668"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66177740"
 ---
 # <a name="add-parameters-and-add-arguments-dialog-boxes"></a>加入參數及加入引數對話方塊
 

@@ -4,18 +4,17 @@ titleSuffix: ''
 ms.date: 11/09/2016
 ms.topic: conceptual
 ms.assetid: 54d5af60-0b44-4ae1-aa57-45aa03f89f3d
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-monikerRange: vs-2017
-ms.openlocfilehash: e7363a0779721e4fb36106d6ee77324c341517ba
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: 0cc62384f2a413362f53ed0626031501e163d6a4
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57324191"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823812"
 ---
 # <a name="changes-in-visual-studio-2017-extensibility"></a>在 Visual Studio 2017 擴充性的變更
 
@@ -64,35 +63,35 @@ VSIX v3 中的資訊清單格式工具來撰寫新的設計工具位於 Visual S
 
 * 只安裝至 GAC 的組件：
 
-   這些組件現在會安裝下<em>[INSTALLDIR] \Common7\IDE\*，* [INSTALLDIR] \Common7\IDE\PublicAssemblies</em>或是 *[INSTALLDIR] \Common7\IDE\PrivateAssemblies*。 這些資料夾是 Visual Studio 處理序的探查路徑的一部分。
+  這些組件現在會安裝下<em>[INSTALLDIR] \Common7\IDE\*，* [INSTALLDIR] \Common7\IDE\PublicAssemblies</em>或是 *[INSTALLDIR] \Common7\IDE\PrivateAssemblies*。 這些資料夾是 Visual Studio 處理序的探查路徑的一部分。
 
 * 已安裝到非探查的路徑及 GAC 的組件：
 
-   * 在 GAC 中的複本已從安裝程式移除。
-   * A *.pkgdef*檔案加入至指定組件的程式碼基底項目。
+  * 在 GAC 中的複本已從安裝程式移除。
+  * A *.pkgdef*檔案加入至指定組件的程式碼基底項目。
 
-      例如: 
+    例如：
 
-      ```xml
-      [$RootKey$\RuntimeConfiguration\dependentAssembly\codeBase\{UniqueGUID}]
-      "name"="AssemblyName" "codeBase"="$PackageFolder$\AssemblyName.dll"
-      "publicKeyToken"="Public Key Token"
-      "culture"="neutral"
-      "version"=15.0.0.0
-      ```
+    ```
+    [$RootKey$\RuntimeConfiguration\dependentAssembly\codeBase\{UniqueGUID}]
+    "name"="AssemblyName" "codeBase"="$PackageFolder$\AssemblyName.dll"
+    "publicKeyToken"="Public Key Token"
+    "culture"="neutral"
+    "version"=15.0.0.0
+    ```
 
-      在執行階段，Visual Studio pkgdef 子系統合併至 Visual Studio 處理序的執行階段組態檔的這些項目 (底下 *[VSAPPDATA]\devenv.exe.config*) 作為[ `<codeBase>` ](/dotnet/framework/configure-apps/file-schema/runtime/codebase-element)項目。 這是讓 Visual Studio 程序尋找您的組件，因為它可避免探查路徑中搜尋的建議的方式。
+    在執行階段，Visual Studio pkgdef 子系統合併至 Visual Studio 處理序的執行階段組態檔的這些項目 (底下 *[VSAPPDATA]\devenv.exe.config*) 作為[ `<codeBase>` ](/dotnet/framework/configure-apps/file-schema/runtime/codebase-element)項目。 這是讓 Visual Studio 程序尋找您的組件，因為它可避免探查路徑中搜尋的建議的方式。
 
 ### <a name="reacting-to-this-breaking-change"></a>回應這項重大變更
 
 * 如果您的延伸模組在 Visual Studio 處理序內執行：
 
-   * 您的程式碼都能夠找到 Visual Studio 核心組件。
-   * 請考慮使用 *.pkgdef*來指定您的組件的路徑，如有必要的檔案。
+  * 您的程式碼都能夠找到 Visual Studio 核心組件。
+  * 請考慮使用 *.pkgdef*來指定您的組件的路徑，如有必要的檔案。
 
 * 如果您的延伸模組在 Visual Studio 處理序之外執行：
 
-   尋找在 Visual Studio 核心組件，請考慮<em>[INSTALLDIR] \Common7\IDE\*，* [INSTALLDIR] \Common7\IDE\PublicAssemblies</em>或 *[INSTALLDIR] \Common7\IDE\PrivateAssemblies*使用組態檔案或組件解析程式。
+  尋找在 Visual Studio 核心組件，請考慮<em>[INSTALLDIR] \Common7\IDE\*，* [INSTALLDIR] \Common7\IDE\PublicAssemblies</em>或 *[INSTALLDIR] \Common7\IDE\PrivateAssemblies*使用組態檔案或組件解析程式。
 
 ## <a name="change-reduce-registry-impact"></a>變更：減少登錄的影響
 
@@ -106,8 +105,8 @@ VSIX v3 中的資訊清單格式工具來撰寫新的設計工具位於 Visual S
 
 * 之前，Visual Studio 安裝到系統的許多的登錄機碼**HKEY_LOCAL_MACHINE**並**HKEY_CURRENT_USER** hive Visual Studio 特定機碼下：
 
-  * **HKLM\Software\Microsoft\VisualStudio\{版本}**:MSI 安裝程式和每個機器擴充功能所建立的登錄機碼。
-  * **HKCU\Software\Microsoft\VisualStudio\{版本}**:Visual Studio 來儲存使用者專屬設定所建立的登錄機碼。
+  * **HKLM\Software\Microsoft\VisualStudio\{版本}** :MSI 安裝程式和每個機器擴充功能所建立的登錄機碼。
+  * **HKCU\Software\Microsoft\VisualStudio\{版本}** :Visual Studio 來儲存使用者專屬設定所建立的登錄機碼。
   * **HKCU\Software\Microsoft\VisualStudio\{版本} _Config**:從一份 Visual Studio HKLM 索引鍵，再加上的登錄機碼合併 *.pkgdef*延伸模組的檔案。
 
 * 若要減少對登錄的影響，Visual Studio 現在會使用[RegLoadAppKey](/windows/desktop/api/winreg/nf-winreg-regloadappkeya)將登錄機碼下的私用二進位檔案中的函式 *[VSAPPDATA]\privateregistry.bin*。 只有非常少數的 Visual Studio 特定索引鍵會保留在系統登錄中。

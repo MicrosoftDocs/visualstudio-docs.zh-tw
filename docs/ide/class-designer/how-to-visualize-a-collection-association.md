@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e734b84bb8c386c60f3fef9061d74b8b31277cec
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 09c23b59711a95f0729555acfd0203160bd9995d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55910945"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62975069"
 ---
 # <a name="how-to-visualize-a-collection-association-in-class-designer"></a>HOW TO：在 [類別設計工具] 中將集合關聯視覺化
 
@@ -28,11 +28,11 @@ ms.locfileid: "55910945"
 
 ## <a name="to-create-a-collection-association"></a>建立集合關聯
 
-1.  在程式碼中，建立類型本身就是強型別集合的屬性或欄位。
+1. 在程式碼中，建立類型本身就是強型別集合的屬性或欄位。
 
-2.  在類別圖表中，展開類別以便顯示屬性和欄位。
+2. 在類別圖表中，展開類別以便顯示屬性和欄位。
 
-3.  在類別中，以滑鼠右鍵按一下欄位或屬性上，然後選擇 [顯示為集合關聯]。
+3. 在類別中，以滑鼠右鍵按一下欄位或屬性上，然後選擇 [顯示為集合關聯]。
 
 屬性或欄位會顯示為連結所收集類型的關聯線。
 

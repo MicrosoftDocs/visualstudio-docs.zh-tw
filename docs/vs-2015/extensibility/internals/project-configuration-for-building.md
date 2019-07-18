@@ -1,27 +1,22 @@
 ---
 title: 專案建置的組態 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio SDK], configuration for building
 - project configurations, building
 ms.assetid: 2c83615d-fa4d-4b9f-b315-7a69b3000da0
 caps.latest.revision: 12
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: ef43fe505e859cb32f7c0fbe407bcc73c4f4e0e8
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 953a02c27f40e92c41d2e43bc818727118eb0a27
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51725522"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434852"
 ---
 # <a name="project-configuration-for-building"></a>建置的專案組態
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +28,7 @@ ms.locfileid: "51725522"
  如果使用者建立新的方案組態，名為 MyConfig2，Project1 預設繫結其偵錯組態的方案組態。 Project2 也預設會繫結其 MyConfig2 組態的方案組態。  
   
 > [!NOTE]
->  繫結是不區分大小寫。  
+> 繫結是不區分大小寫。  
   
  當使用者選取**多重選取**項目在 [組態] 下拉式清單中，環境會顯示對話方塊，來提供可用的組態清單。  
   
@@ -52,7 +47,7 @@ ms.locfileid: "51725522"
  專案相依性會決定專案建置的順序。 使用對話方塊上的建置順序 索引標籤，來檢視專案的方案中建置及修改的建置順序使用 相依性 索引標籤的正確順序。  
   
 > [!NOTE]
->  由於明確的相依性所指定的環境已新增專案清單中的選取其核取方塊，但呈現暗灰色<xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildDependency>或<xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployDependency>介面，而且無法變更。 例如，將專案參考從[!INCLUDE[vbprvb](../../includes/vbprvb-md.md)]到另一個專案的專案會自動將會移除它必須刪除參考的組建相依性。 無法選取其核取方塊已清除，而且會呈現暗灰色的專案，因為這樣會建立相依性迴圈 （比方說，會相依於 Project2 Project1 和 Project2 會相依於 Project1），這會停止組建。  
+> 由於明確的相依性所指定的環境已新增專案清單中的選取其核取方塊，但呈現暗灰色<xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildDependency>或<xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployDependency>介面，而且無法變更。 例如，將專案參考從[!INCLUDE[vbprvb](../../includes/vbprvb-md.md)]到另一個專案的專案會自動將會移除它必須刪除參考的組建相依性。 無法選取其核取方塊已清除，而且會呈現暗灰色的專案，因為這樣會建立相依性迴圈 （比方說，會相依於 Project2 Project1 和 Project2 會相依於 Project1），這會停止組建。  
   
  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 建置程序包含一般的編譯和連結作業使用單一組建命令叫用。 也可支援兩個其他組建程序： 若要刪除所有輸出項目從某一個組建和最新的檢查，以判斷是否有變更輸出中的項目設定的清除作業。  
   
@@ -68,4 +63,3 @@ ms.locfileid: "51725522"
  [管理組態選項](../../extensibility/internals/managing-configuration-options.md)   
  [管理部署的專案組態](../../extensibility/internals/project-configuration-for-managing-deployment.md)   
  [輸出的專案組態](../../extensibility/internals/project-configuration-for-output.md)
-

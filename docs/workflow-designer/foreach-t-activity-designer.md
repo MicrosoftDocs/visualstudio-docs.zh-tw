@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e441898973614b6e3e33fc91d5d9688b51aab7fe
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55928864"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62949613"
 ---
 # <a name="foreachlttgt-activity-designer"></a>ForEach&lt;T&gt;活動設計工具
 
@@ -25,7 +25,7 @@ ms.locfileid: "55928864"
 
 下表顯示最為實用的 <xref:System.Activities.Statements.ForEach%601> 活動屬性，並且說明它們在設計工具中的使用方式。
 
-|屬性名稱|必要項|使用方式|
+|屬性名稱|必要|使用量|
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|<xref:System.Activities.Statements.ForEach%601> 活動的易記名稱。 預設值是 ForEach < Int32\>。 雖然 <xref:System.Activities.Activity.DisplayName%2A> 值並非絕對必要，但建議您盡量使用。|
 |<xref:System.Activities.Statements.ForEach%601.Values%2A>|True|要重複項目的集合。 若要設定<xref:System.Activities.Statements.ForEach%601.Values%2A>，輸入在 Visual Basic 運算式**值**方塊**ForEach < T\>** 活動設計工具上或在屬性方格中。|

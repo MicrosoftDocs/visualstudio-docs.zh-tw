@@ -1,26 +1,21 @@
 ---
-title: CA3075： 不安全 DTD 處理 |Microsoft Docs
-ms.custom: ''
+title: CA3075:不安全 DTD 處理 |Microsoft Docs
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 ms.assetid: 65798d66-7a30-4359-b064-61a8660c1eed
 caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 8284f065a829ac7ecc29330fb8a9dad74e92690e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 694b72327d8e059fe12a227afdab79219081ef92
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49850166"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65693406"
 ---
-# <a name="ca3075-insecure-dtd-processing"></a>CA3075：不安全的 DTD 處理
+# <a name="ca3075-insecure-dtd-processing"></a>CA3075:不安全的 DTD 處理
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -34,7 +29,7 @@ ms.locfileid: "49850166"
  如果您使用不安全的 <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A> 執行個體或參考外部實體來源，剖析器可能會接受未受信任的輸入，而將機密資訊洩漏給攻擊者。
 
 ## <a name="rule-description"></a>規則描述
- [文件類型定義 (DTD)](https://msdn.microsoft.com/library/aa468547.aspx) 是  [World Wide Web Consortium (W3C) Extensible Markup Language (XML) 1.0](http://www.w3.org/TR/2008/REC-xml-20081126/)中針對 XML 剖析器用來判斷文件有效性所定義之兩種方式的其中一種。 此規則會搜尋已接受不受信任之資料的屬性和執行個體，藉此警告開發人員潛在的 [Information Disclosure](http://msdn.microsoft.com/library/4064c89f-afa6-444a-aa7e-807ef072131c) 威脅，這些威脅可能會導致 [Denial of Service (DoS)](http://msdn.microsoft.com/library/dfb150f3-d598-4697-a5e6-6779e4f9b600) 攻擊。 下列情況會觸發此規則：
+ [文件類型定義 (DTD)](https://msdn.microsoft.com/library/aa468547.aspx) 是  [World Wide Web Consortium (W3C) Extensible Markup Language (XML) 1.0](http://www.w3.org/TR/2008/REC-xml-20081126/)中針對 XML 剖析器用來判斷文件有效性所定義之兩種方式的其中一種。 此規則會搜尋已接受不受信任之資料的屬性和執行個體，藉此警告開發人員潛在的 [Information Disclosure](https://msdn.microsoft.com/library/4064c89f-afa6-444a-aa7e-807ef072131c) 威脅，這些威脅可能會導致 [Denial of Service (DoS)](https://msdn.microsoft.com/library/dfb150f3-d598-4697-a5e6-6779e4f9b600) 攻擊。 下列情況會觸發此規則：
 
 - <xref:System.Xml.XmlReader> 執行個體上已啟用 DtdProcessing，它會使用 <xref:System.Xml.XmlUrlResolver>解析外部 XML 項目。
 
@@ -64,7 +59,7 @@ ms.locfileid: "49850166"
 
 - 停用 DTD 處理，如果您正在處理不受信任的來源藉由設定 <xref:System.Xml.XmlReaderSettings.ProhibitDtd%2A>屬性，以 **，則為 true** 。
 
-- XmlTextReader 類別具有完全信任的繼承要求。 請參閱 [繼承要求](http://msdn.microsoft.com/en-us/28b9adbb-8f08-4f10-b856-dbf59eb932d9)如需詳細資訊。
+- XmlTextReader 類別具有完全信任的繼承要求。 請參閱 [繼承要求](https://msdn.microsoft.com/28b9adbb-8f08-4f10-b856-dbf59eb932d9)如需詳細資訊。
 
   .NET 4 和更新版本
 
@@ -73,7 +68,7 @@ ms.locfileid: "49850166"
 - 請確認在所有 InnerXml 案例中 Load() 方法皆會使用 XmlReader 執行個體。
 
 > [!NOTE]
->  此規則可能會在一些有效的 XmlSecureResolver 執行個體上出現誤判報告。 我們會努力在 2016 年中旬前解決此問題。
+> 此規則可能會在一些有效的 XmlSecureResolver 執行個體上出現誤判報告。 我們會努力在 2016 年中旬前解決此問題。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
  如果您無法確定輸入是否來自受信任的來源，請不要隱藏這個警告的規則。
@@ -387,6 +382,3 @@ namespace TestNamespace
     }
 }
 ```
-
-
-

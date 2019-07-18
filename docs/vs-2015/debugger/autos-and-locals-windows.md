@@ -1,13 +1,8 @@
 ---
 title: '[自動變數] 和 [區域變數] Windows |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.autos
@@ -25,18 +20,18 @@ ms.assetid: bb6291e1-596d-4af0-9f22-5fd713d6b84b
 caps.latest.revision: 29
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 51e62df0fb98a9c7b04b09b3e58fb52828e1bd5a
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 261c0c0bd8b48634c8d24d56ee4df7ea3bbcf135
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51782475"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68161782"
 ---
 # <a name="autos-and-locals-windows"></a>[自動變數] 和 [區域變數] 視窗
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-[自動變數]  視窗 (偵錯時， **CTRL+ALT+V、A**，或 [偵錯] / [視窗] / [自動變數] ) 和 [區域變數]  視窗 (偵錯時， **CTRL+ALT+V、L**，或 [偵錯] / [視窗] / [區域變數] ) 相當適合用來在您偵錯時查看變數值。 [區域變數]  視窗會顯示在區域範圍中定義的變數，這通常是目前正在執行的函式或方法。 [自動變數]  視窗會顯示目前這一行 (偵錯工具停止處的位置) 附近使用的變數。 會確切顯示哪些變數在不同語言中是不同的。 請參閱 [自動變數] 視窗中出現哪些變數？下面。  
+[自動變數]  視窗 (偵錯時， **CTRL+ALT+V、A**，或 [偵錯] / [視窗] / [自動變數]  ) 和 [區域變數]  視窗 (偵錯時， **CTRL+ALT+V、L**，或 [偵錯] / [視窗] / [區域變數]  ) 相當適合用來在您偵錯時查看變數值。 [區域變數]  視窗會顯示在區域範圍中定義的變數，這通常是目前正在執行的函式或方法。 [自動變數]  視窗會顯示目前這一行 (偵錯工具停止處的位置) 附近使用的變數。 會確切顯示哪些變數在不同語言中是不同的。 請參閱 [自動變數] 視窗中出現哪些變數？下面。  
   
  如果您需要基本偵錯的詳細資訊，請參閱 [Getting Started with the Debugger](../debugger/getting-started-with-the-debugger.md)。  
   
@@ -89,7 +84,7 @@ void main() {
   
  在某些情況下，您也可以查看函式和方法的傳回值。 請參閱下方的 [View return values of method calls](#bkmk_returnValue) 。  
   
-##  <a name="bkmk_returnValue"></a> View return values of method calls  
+## <a name="bkmk_returnValue"></a> View return values of method calls  
  在 .NET 和 C++ 程式碼中，您可以在不進入或者跳離方法呼叫時檢查傳回值。 當方法呼叫的結果不會儲存在區域變數中，例如，方法做為另一個方法的參數或傳回值時，這項功能會很有用。  
   
  下列 C# 程式碼會加入兩個函式的傳回值：  
@@ -127,10 +122,10 @@ private static int subtractVars(int i, int j)
  您可能會注意到變數的值有時候在 [區域變數]  和 [自動變數]  視窗中是紅色。 這些是自從上次評估後已變更的變數值。 變更可能是來自先前的偵錯工作階段，或是因為值在視窗中已變更。  
   
 ## <a name="changing-the-numeric-format-of-a-variable-window"></a>變更變數視窗的數字格式  
- 預設數值格式為十進位，但您可以將它變更為十六進位。 以滑鼠右鍵按一下 [區域變數]  或 [自動變數]  視窗並選取 [十六進位顯示] 。 變更會影響所有偵錯工具視窗。  
+ 預設數值格式為十進位，但您可以將它變更為十六進位。 以滑鼠右鍵按一下 [區域變數]  或 [自動變數]  視窗並選取 [十六進位顯示]  。 變更會影響所有偵錯工具視窗。  
   
 ## <a name="editing-a-value-in-a-variable-window"></a>編輯變數視窗中的值  
- 您可以編輯 [自動變數] 、[區域變數] 、[監看式] 和 [快速監看式]  視窗中出現的大部分變數值。 如需 [監看式]  和 [快速監看式]  視窗的相關資訊，請參閱 [Watch and QuickWatch Windows](../debugger/watch-and-quickwatch-windows.md)。 只要連按兩下您想要變更的值，並加入新值。  
+ 您可以編輯 [自動變數]  、[區域變數]  、[監看式]  和 [快速監看式]  視窗中出現的大部分變數值。 如需 [監看式]  和 [快速監看式]  視窗的相關資訊，請參閱 [Watch and QuickWatch Windows](../debugger/watch-and-quickwatch-windows.md)。 只要連按兩下您想要變更的值，並加入新值。  
   
  您可以輸入值的運算式，例如 `a + b`。 偵錯工具接受大部分的有效語言運算式。  
   
@@ -138,14 +133,14 @@ private static int subtractVars(int i, int j)
   
  不過，變更值時應該謹慎。 部分可能問題如下：  
   
--   評估某些運算式可能會變更變數的值，或是影響程式的狀態。 例如，評估 `var1 = ++var2` 會變更 `var1` 和 `var2`的值。  
+- 評估某些運算式可能會變更變數的值，或是影響程式的狀態。 例如，評估 `var1 = ++var2` 會變更 `var1` 和 `var2`的值。  
   
      變更資料的運算式被視為具有 [副作用](https://en.wikipedia.org/wiki/Side_effect_\(computer_science\))，如果您不知道它們的存在，可能會產生非預期的結果。 請確定您在進行之前了解這類變更的結果。  
   
--   由於分數元件的十進位至二進位轉換，編輯浮點數值會略微不精確。 即使表面上無害的編輯也可能造成浮點變數中的某些最小顯著性位元變更。  
+- 由於分數元件的十進位至二進位轉換，編輯浮點數值會略微不精確。 即使表面上無害的編輯也可能造成浮點變數中的某些最小顯著性位元變更。  
   
 ## <a name="debug-location-toolbar"></a>偵錯位置工具列  
- 您可以使用 [偵錯位置]  工具列選取想要的函式、執行緒或處理序。 設定中斷點，並開始偵錯。 (如果看不到此工具列，您可以按一下工具列區域的空白部分來啟用它。 您應該會看到一份工具列。選取 [偵錯位置] )。 當遇到中斷點時，執行會停止而且您可以看到 [偵錯位置] 工具列，它是下列圖形的底端列：  
+ 您可以使用 [偵錯位置]  工具列選取想要的函式、執行緒或處理序。 設定中斷點，並開始偵錯。 (如果看不到此工具列，您可以按一下工具列區域的空白部分來啟用它。 您應該會看到一份工具列。選取 [偵錯位置]  )。 當遇到中斷點時，執行會停止而且您可以看到 [偵錯位置] 工具列，它是下列圖形的底端列：  
   
  ![DebugLocationToolbar](../debugger/media/debuglocationtoolbar.png "DebugLocationToolbar")  
   
@@ -153,8 +148,3 @@ private static int subtractVars(int i, int j)
   
 ## <a name="see-also"></a>另請參閱  
  [偵錯工具視窗](../debugger/debugger-windows.md)
-
-
-
-
-

@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 530b6c3f6873724f8a8ca06ea4228b017de281f9
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56694461"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62831802"
 ---
 # <a name="idiastackwalkhelperreadmemory"></a>IDiaStackWalkHelper::readMemory
 從記憶體中的可執行檔的映像中讀取資料的區塊。
@@ -58,6 +58,6 @@ HRESULT readMemory( 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)
 - [MemoryTypeEnum 列舉](../../debugger/debug-interface-access/memorytypeenum.md)

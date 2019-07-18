@@ -1,16 +1,16 @@
 ---
 title: 管理應用程式資源
 description: 本文與說明如何在 Visual Studio for Mac 中為各種平台管理應用程式資源的多篇指南有關
-author: conceptdev
-ms.author: crdun
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 05/06/2018
 ms.assetid: 61EAAB8F-3C32-4574-924F-CFC616604089
-ms.openlocfilehash: e4182bdcc8e2a97b152d5548b07cd03a152607ff
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: c3572edc46d4f69a338ba655b32254126a7fce9c
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51296368"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67692848"
 ---
 # <a name="managing-app-resources"></a>管理應用程式資源
 

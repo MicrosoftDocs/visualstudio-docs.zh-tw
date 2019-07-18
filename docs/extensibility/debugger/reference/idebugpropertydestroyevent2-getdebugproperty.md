@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPropertyDestroyEvent2::GetDebugProperty
 ms.assetid: c96ae785-0ac8-4df4-8df3-15a8d7e13687
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b9a9d0b6ec922e010fb9800c212d4a233e8eeeb0
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: b58a7a3463c579ece09a6bb185066a4e556f2f06
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56709222"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66348707"
 ---
 # <a name="idebugpropertydestroyevent2getdebugproperty"></a>IDebugPropertyDestroyEvent2::GetDebugProperty
 取得要終結的屬性。
@@ -36,10 +39,9 @@ int GetDebugProperty ( 
 );
 ```
 
-#### <a name="parameters"></a>參數
- `ppProperty`
-
- [out]傳回[IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)物件，表示要終結的屬性。
+## <a name="parameters"></a>參數
+`ppProperty`\
+[out]傳回[IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)物件，表示要終結的屬性。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

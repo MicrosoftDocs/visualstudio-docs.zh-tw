@@ -1,14 +1,9 @@
 ---
-title: 'Idiastackframe:: Get_lengthprolog |Microsoft Docs'
-ms.custom: ''
+title: IDiaStackFrame::get_lengthProlog | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 9894c5ca-835f-41e9-a35e-70e046dfb7f0
 caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: aad15382b0e2cdf7c2485b83df3d933e16d1bd47
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 7934afbcee032a4595afda5d67938a661bef9cdd
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51727590"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68190571"
 ---
 # <a name="idiastackframegetlengthprolog"></a>IDiaStackFrame::get_lengthProlog
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -43,10 +38,7 @@ HRESULT get_lengthProlog ( 
  [out]傳回的初構程式碼的位元組數目。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`。 傳回`S_FALSE`不支援的屬性。 反之則傳回錯誤碼。  
+ 如果成功，會傳回 `S_OK`。 傳回`S_FALSE`不支援的屬性。 否則會傳回錯誤碼。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)
-
-
-

@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: dc61db134063c1e300a2620f611d62497fffe6e1
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 49f494fa2c0fb35f7d2a65dc2ccb6b6d2d761cbe
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56608067"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63428718"
 ---
 # <a name="how-to-add-a-finder-method"></a>HOW TO：新增搜尋方法
   若要啟用網頁組件或清單中顯示的實體清單的商務資料連接 (BDC) 服務，您必須建立*Finder*方法。 搜尋方法是特殊的方法可傳回實體執行個體的集合。 如需詳細資訊，請參閱 <<c0> [ 設計 Business Data Connectivity 模型](../sharepoint/designing-a-business-data-connectivity-model.md)。
@@ -44,7 +44,7 @@ ms.locfileid: "56608067"
 4. 設定為實體集合類型描述元的型別描述項。 如需如何建立實體集合類型描述元的詳細資訊，請參閱[How to:定義參數的型別描述元](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)。
 
    > [!NOTE]
-   >  您沒有執行此步驟中，如果您已加入實體中的特定搜尋工具方法。 Visual Studio 會使用您在特定搜尋工具方法中定義的類型描述元。
+   > 您沒有執行此步驟中，如果您已加入實體中的特定搜尋工具方法。 Visual Studio 會使用您在特定搜尋工具方法中定義的類型描述元。
 
 5. 在 **方案總管**，開啟實體時，所產生的服務程式碼檔案的捷徑功能表，然後選擇**檢視程式碼**。 如需有關服務的程式碼檔的詳細資訊，請參閱[建立 business data connectivity 模型](../sharepoint/creating-a-business-data-connectivity-model.md)。
 
@@ -57,7 +57,7 @@ ms.locfileid: "56608067"
      下列範例會傳回的集合`Contact`適用於 SQL Server 使用 AdventureWorks 範例資料庫中的資料的實體。
 
    > [!NOTE]
-   >  值取代`ServerName`欄位與您伺服器的名稱。
+   > 值取代`ServerName`欄位與您伺服器的名稱。
 
     [!code-csharp[SP_BDC#2](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs#2)]
     [!code-vb[SP_BDC#2](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#2)]

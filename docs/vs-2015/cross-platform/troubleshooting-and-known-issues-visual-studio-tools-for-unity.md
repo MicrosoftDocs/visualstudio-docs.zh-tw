@@ -9,17 +9,16 @@ caps.latest.revision: 7
 author: conceptdev
 ms.author: crdun
 manager: jillfra
-ms.openlocfilehash: f614188d6a4a9855af072b200c71633ef7a2bd57
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 6e1b34cbc2497bd70f65021c83db4f59480519f1
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54776838"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62573202"
 ---
 # <a name="troubleshooting-and-known-issues-visual-studio-tools-for-unity"></a>疑難排解和已知問題 (Visual Studio Tools for Unity)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 在本節中，您將找到 Visual Studio Tools for Unity 之常見問題的解決方法、已知問題的描述，並了解如何透過回報錯誤來協助改善 Visual Studio Tools for Unity。  
   
 ## <a name="troubleshooting"></a>疑難排解  
@@ -30,11 +29,11 @@ ms.locfileid: "54776838"
   
 ##### <a name="to-migrate-your-unity-project-from-unityvs-18-to-visual-studio-tools-for-unity-19"></a>將 Unity 專案從 UnityVS 1.8 移轉至 Visual Studio Tools for Unity 1.9  
   
-1.  從您的 Unity 專案中刪除舊的方案和專案檔。 在您的 Unity 專案根目錄中，找出並刪除所有 Visual Studio .sln 和 .*proj 檔。  
+1. 從您的 Unity 專案中刪除舊的方案和專案檔。 在您的 Unity 專案根目錄中，找出並刪除所有 Visual Studio .sln 和 .*proj 檔。  
   
-2.  將 Visual Studio Tools for Unity 套件匯入 Unity 專案。 如需如何匯入 VSTU 套件的相關資訊，請參閱 [使用者入門](../cross-platform/getting-started-with-visual-studio-tools-for-unity.md) 頁面上的＜設定 Visual Studio Tools for Unity＞。  
+2. 將 Visual Studio Tools for Unity 套件匯入 Unity 專案。 如需如何匯入 VSTU 套件的相關資訊，請參閱 [使用者入門](../cross-platform/getting-started-with-visual-studio-tools-for-unity.md) 頁面上的＜設定 Visual Studio Tools for Unity＞。  
   
-3.  產生新的方案和專案檔。 如果您想要立即產生檔案，請在 Unity Editor 主功能表上，選擇 [Visual Studio Tools] 、[Generate Project Files] 。 否則，您可以視需要略過這個步驟；當您選擇 [Visual Studio Tools] 、[Open in Visual Studio] 時，Visual Studio Tools for Unity 會自動產生新檔案。  
+3. 產生新的方案和專案檔。 如果您想要立即產生檔案，請在 Unity Editor 主功能表上，選擇 [Visual Studio Tools] 、[Generate Project Files] 。 否則，您可以視需要略過這個步驟；當您選擇 [Visual Studio Tools] 、[Open in Visual Studio] 時，Visual Studio Tools for Unity 會自動產生新檔案。  
   
 ### <a name="visual-studio-wont-load-the-solution-that-visual-studio-tools-for-unity-created"></a>Visual Studio 不會載入 Visual Studio Tools for Unity 所建立的方案  
  如需詳細資訊，請參閱 [這個 stackoverflow 問題的答案](http://stackoverflow.com/a/24035907/36702)。  
@@ -45,11 +44,11 @@ ms.locfileid: "54776838"
 ## <a name="known-issues"></a>已知問題  
  Visual Studio Tools for Unity 在偵錯工具如何與 Unity 的舊版 C# 編譯器互動方面有已知問題。 我們致力於協助修正這些問題，但您同時可能會遇到下列問題。  
   
--   偵錯時，Unity 有時會損毀。  
+- 偵錯時，Unity 有時會損毀。  
   
--   偵錯時，Unity 有時會凍結。  
+- 偵錯時，Unity 有時會凍結。  
   
--   逐步執行和跳離方法有時運作異常，尤其是在 iterator 或 switch 陳述式內。  
+- 逐步執行和跳離方法有時運作異常，尤其是在 iterator 或 switch 陳述式內。  
   
 ## <a name="reporting-errors"></a>報告錯誤  
  當您遇到損毀、凍結或其他錯誤時，請傳送錯誤報告，以協助我們改善 Visual Studio Tools for Unity 的品質。 這可協助我們調查並修正 Visual Studio Tools for Unity 的問題。 感謝您！  

@@ -1,27 +1,22 @@
 ---
 title: IDE 定義的命令，來擴充專案系統 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - commands, project systems
 - project systems, environment-defined commands
 ms.assetid: 0e33b8e9-16fa-4400-a941-e92d56120e7e
 caps.latest.revision: 20
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: a58525c9b3bcbcd1bbe4792ecc9427812b62f1e1
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 3b5de061449844b87d60d7a700b1e1c22e1e1282
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51789742"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68195028"
 ---
 # <a name="ide-defined-commands-for-extending-project-systems"></a>用來擴充專案系統的 IDE 定義的命令
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +28,7 @@ ms.locfileid: "51789742"
 ## <a name="command-menus"></a>命令功能表  
  下表會很有用的位置，您可以叫用專案擴充性的高階命令的命令功能表。  
   
-|命令功能表|描述|  
+|命令功能表|說明|  
 |------------------|-----------------|  
 |IDM_VS_MENU_PROJECT|**專案**最上層的功能表。|  
 |IDM_VS_TOOL_PROJWIN|**方案總管 中**工具列。|  
@@ -41,7 +36,7 @@ ms.locfileid: "51789742"
 ## <a name="shortcut-menus"></a>快顯功能表  
  下表顯示快顯功能表中選取單一節點時，適用於**方案總管**，或有多個同質性的選取項目中時**方案總管 中**，這是當所有選取的節點都屬於相同的類型。  
   
-|快顯功能表|描述|  
+|快顯功能表|說明|  
 |-------------------|-----------------|  
 |<xref:Microsoft.VisualStudio.Shell.VsMenus.IDM_VS_CTXT_PROJNODE>|適用於選取專案節點時。|  
 |<xref:Microsoft.VisualStudio.Shell.VsMenus.IDM_VS_CTXT_ITEMNODE>|選取檔案時套用。|  
@@ -63,7 +58,7 @@ ms.locfileid: "51789742"
 ## <a name="command-groups"></a>命令群組  
  下表顯示您可以使用擴充的專案，而您可以透過存取時的命令群組<xref:Microsoft.VisualStudio.Shell.VsMenus.IDM_VS_CTXT_PROJNODE>快顯功能表。  
   
-|命令群組|描述|  
+|命令群組|說明|  
 |-------------------|-----------------|  
 |IDG_VS_CTXT_PROJECT_BUILD|建置、 重建和部署專案的命令。|  
 |IDG_VS_CTXT_COMPILELINK|編譯和連結專案的命令。|  
@@ -80,4 +75,3 @@ ms.locfileid: "51789742"
  [Vspackage 如何新增使用者介面項目](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
  [MenuCommand 對比OleMenuCommands](../../misc/menucommands-vs-olemenucommands.md)   
  [建立可重複使用的按鈕群組](../../extensibility/creating-reusable-groups-of-buttons.md)
-

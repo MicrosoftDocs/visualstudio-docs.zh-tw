@@ -1,26 +1,21 @@
 ---
 title: 編輯器和語言服務延伸模組 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK]
 ms.assetid: 5653bac9-724f-4948-a820-68ce6aa96365
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: b5e0b568cee873d29f73eb2b81e38d49b76b5844
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 7fa3e4be6ee44011eb1286e3ebf22ee69f8e3397
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51778757"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65683108"
 ---
 # <a name="editor-and-language-service-extensions"></a>編輯器和語言服務延伸模組
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,6 +33,5 @@ ms.locfileid: "51778757"
 |[編輯器中的舊版介面](../extensibility/legacy-interfaces-in-the-editor.md)|說明如何從現有的程式碼存取核心編輯器的文件的連結。|  
 |[建立自訂編輯器和設計工具](../extensibility/creating-custom-editors-and-designers.md)|說明如何建立自訂編輯器的文件的連結。|  
 |[舊版語言服務的擴充性](../extensibility/internals/legacy-language-service-extensibility.md)|說明如何整合到 Visual Studio 的程式設計語言的文件的連結。|  
-|[Managed Extensibility Framework (MEF)](http://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde)|導入了 Managed 的 Extensibility Framework (MEF)。|  
-|[Windows Presentation Foundation](http://msdn.microsoft.com/library/f667bd15-2134-41e9-b4af-5ced6fafab5d)|介紹 Windows Presentation Foundation (WPF)。|
-
+|[Managed Extensibility Framework (MEF)](https://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde)|導入了 Managed 的 Extensibility Framework (MEF)。|  
+|[Windows Presentation Foundation](https://msdn.microsoft.com/library/f667bd15-2134-41e9-b4af-5ced6fafab5d)|介紹 Windows Presentation Foundation (WPF)。|

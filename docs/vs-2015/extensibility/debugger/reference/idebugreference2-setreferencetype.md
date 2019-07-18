@@ -1,14 +1,9 @@
 ---
 title: IDebugReference2::SetReferenceType |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugReference2::SetReferenceType
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 5854a172-ea82-481c-97d9-c7fc16923d44
 caps.latest.revision: 12
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 4f27c8ee7f72c593bd1ec5248ed61f1835b5afd9
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 31be7be2b9d17ca5b7af65e4d38668f88d484d9d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51723399"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68178181"
 ---
 # <a name="idebugreference2setreferencetype"></a>IDebugReference2::SetReferenceType
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -53,4 +48,3 @@ int SetReferenceType ( 
 ## <a name="see-also"></a>另請參閱  
  [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)   
  [REFERENCE_TYPE](../../../extensibility/debugger/reference/reference-type.md)
-

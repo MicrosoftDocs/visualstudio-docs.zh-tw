@@ -1,12 +1,9 @@
 ---
 title: 撰寫 T4 文字範本 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - text templates, syntax
 - text templates, guide
@@ -15,13 +12,13 @@ ms.assetid: 94328da7-953b-4e92-9587-648543d1f732
 caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 7aa5a216b9be48eae7f2905084f0c39109688d6c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 1e2f40421c2b59e61de1560619422491a37ed8d8
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49897793"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65684695"
 ---
 # <a name="writing-a-t4-text-template"></a>撰寫 T4 文字範本
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -103,7 +100,7 @@ Hello!
  只要程式碼中允許 `Write();` 陳述式的位置，就可以插入文字區塊。  
   
 > [!NOTE]
->  當您內嵌文字區塊，例如迴圈或條件式複合陳述式內時，一律使用大括號 {...} 若要包含文字區塊。  
+> 當您內嵌文字區塊，例如迴圈或條件式複合陳述式內時，一律使用大括號 {...} 若要包含文字區塊。  
   
 ### <a name="expression-control-blocks"></a>運算式控制區塊  
  運算式控制區塊會評估運算式，並將它轉換為字串。 這會插入至輸出檔案。  
@@ -116,7 +113,7 @@ Hello!
 <#= 2 + 3 #>  
 ```  
   
- 請注意，開啟符號有三個字元 "<#="。  
+ 請注意，開啟符號有三個字元"< #="。  
   
  運算式可以包括範圍內的任何變數。 例如，此區塊會列印含有數字的行：  
   
@@ -200,7 +197,7 @@ private void WriteSquareLine(int i)
 <#@ assembly name="$(SolutionDir)library\MyAssembly.dll" #>  
 ```  
   
- 如需巨集的清單，請參閱 <<c0> [ 建置命令和屬性的一般巨集](http://msdn.microsoft.com/library/239bd708-2ea9-4687-b264-043f1febf98b)。  
+ 如需巨集的清單，請參閱 <<c0> [ 建置命令和屬性的一般巨集](https://msdn.microsoft.com/library/239bd708-2ea9-4687-b264-043f1febf98b)。  
   
  Assembly 指示詞沒有任何作用[前置處理過的文字範本](../modeling/run-time-text-generation-with-t4-text-templates.md)。  
   
@@ -217,7 +214,7 @@ private void WriteSquareLine(int i)
   
  如需詳細資訊，請參閱 < [T4 匯入指示詞](../modeling/t4-import-directive.md)。  
   
-###  <a name="Include"></a> 包括程式碼和文字  
+### <a name="Include"></a> 包括程式碼和文字  
  `include` 指示詞會插入另一個範本檔中的文字。 例如，此指示詞會插入 `test.txt` 的內容。  
   
  `<#@ include file="c:\test.txt" #>`  
@@ -267,7 +264,7 @@ Content of MyFile.txt is:
   
 ```  
   
- 您也可以取得主機所提供的其他服務。 如需詳細資訊，請參閱 <<c0> [ 存取 Visual Studio 或從範本的其他主機](http://msdn.microsoft.com/en-us/0556f20c-fef4-41a9-9597-53afab4ab9e4)。  
+ 您也可以取得主機所提供的其他服務。 如需詳細資訊，請參閱 <<c0> [ 存取 Visual Studio 或從範本的其他主機](https://msdn.microsoft.com/0556f20c-fef4-41a9-9597-53afab4ab9e4)。  
   
 ### <a name="design-time-text-templates-run-in-a-separate-appdomain"></a>設計階段文字範本是在不同的 AppDomain 中執行  
  您應該注意可[設計階段文字範本](../modeling/design-time-code-generation-by-using-t4-text-templates.md)是獨立於主要應用程式的 AppDomain 中執行。 在大多數情況下，這並不重要，但是，您可能會發現特定複雜情況下的限制。 例如，如果您想要使用不同的服務，將資料傳入或傳出範本，則服務必須提供可序列化的 API   
@@ -287,6 +284,3 @@ Content of MyFile.txt is:
 |在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 外部執行文字產生。|[使用 TextTransform 公用程式產生檔案](../modeling/generating-files-with-the-texttransform-utility.md)|  
 |以網域特定領域語言形式，轉換您的資料。|[從特定領域語言產生程式碼](../modeling/generating-code-from-a-domain-specific-language.md)|  
 |撰寫指示詞處理器，以轉換您專屬的資料來源。|[自訂 T4 文字轉換](../modeling/customizing-t4-text-transformation.md)|
-
-
-

@@ -1,21 +1,25 @@
 - name: 偵錯 (偵錯介面存取 SDK)
-  href: debug-interface-access-sdk.md
   items:
+    - name: 偵錯 (偵錯介面存取 SDK)
+      href: debug-interface-access-sdk.md
     - name: 使用者入門 (偵錯介面存取 SDK)
-      href: getting-started-debug-interface-access-sdk.md
       items:
+        - name: 使用者入門 (偵錯介面存取 SDK)
+          href: getting-started-debug-interface-access-sdk.md
         - name: 概觀 (偵錯介面存取 SDK)
           href: overview-debug-interface-access-sdk.md
         - name: 查詢 .Pdb 檔案
           href: querying-the-dot-pdb-file.md
     - name: 符號和符號標記
-      href: symbols-and-symbol-tags.md
       items:
+        - name: 符號和符號標記
+          href: symbols-and-symbol-tags.md
         - name: 符號位置
           href: symbol-locations.md
         - name: 符號類型的語彙階層架構
-          href: lexical-hierarchy-of-symbol-types.md
           items:
+            - name: 符號類型的語彙階層架構
+              href: lexical-hierarchy-of-symbol-types.md
             - name: 註釋
               href: annotation.md
             - name: 區塊
@@ -47,8 +51,9 @@
             - name: UsingNameSpace
               href: usingnamespace.md
         - name: 符號類型的類別階層架構
-          href: class-hierarchy-of-symbol-types.md
           items:
+            - name: 符號類型的類別階層架構
+              href: class-hierarchy-of-symbol-types.md
             - name: ArrayType
               href: arraytype.md
             - name: BaseClass
@@ -80,14 +85,17 @@
             - name: VTableShape
               href: vtableshape.md
     - name: 偵錯介面存取 SDK 參考
-      href: debug-interface-access-sdk-reference.md
       items:
+        - name: 偵錯介面存取 SDK 參考
+          href: debug-interface-access-sdk-reference.md
         - name: 介面 (偵錯介面存取 SDK)
-          href: interfaces-debug-interface-access-sdk.md
           items:
+            - name: 介面 (偵錯介面存取 SDK)
+              href: interfaces-debug-interface-access-sdk.md
             - name: IDiaAddressMap
-              href: idiaaddressmap.md
               items:
+                - name: IDiaAddressMap
+                  href: idiaaddressmap.md
                 - name: 'IDiaAddressMap::get_addressMapEnabled'
                   href: idiaaddressmap-get-addressmapenabled.md
                 - name: 'IDiaAddressMap::get_imageAlign'
@@ -105,8 +113,9 @@
                 - name: 'IDiaAddressMap::set_imageHeaders'
                   href: idiaaddressmap-set-imageheaders.md
             - name: IDiaDataSource
-              href: idiadatasource.md
               items:
+                - name: IDiaDataSource
+                  href: idiadatasource.md
                 - name: 'IDiaDataSource::get_lastError'
                   href: idiadatasource-get-lasterror.md
                 - name: 'IDiaDataSource::loadAndValidateDataFromPdb'
@@ -120,8 +129,9 @@
                 - name: 'IDiaDataSource::openSession'
                   href: idiadatasource-opensession.md
             - name: IDiaEnumDebugStreamData
-              href: idiaenumdebugstreamdata.md
               items:
+                - name: IDiaEnumDebugStreamData
+                  href: idiaenumdebugstreamdata.md
                 - name: 'IDiaEnumDebugStreamData::Clone'
                   href: idiaenumdebugstreamdata-clone.md
                 - name: 'IDiaEnumDebugStreamData::get_name'
@@ -139,8 +149,9 @@
                 - name: 'IDiaEnumDebugStreamData::Skip'
                   href: idiaenumdebugstreamdata-skip.md
             - name: IDiaEnumDebugStreams
-              href: idiaenumdebugstreams.md
               items:
+                - name: IDiaEnumDebugStreams
+                  href: idiaenumdebugstreams.md
                 - name: 'IDiaEnumDebugStreams::Clone'
                   href: idiaenumdebugstreams-clone.md
                 - name: 'IDiaEnumDebugStreams::get__NewEnum'
@@ -156,8 +167,9 @@
                 - name: 'IDiaEnumDebugStreams::Skip'
                   href: idiaenumdebugstreams-skip.md
             - name: IDiaEnumFrameData
-              href: idiaenumframedata.md
               items:
+                - name: IDiaEnumFrameData
+                  href: idiaenumframedata.md
                 - name: 'IDiaEnumFrameData::Clone'
                   href: idiaenumframedata-clone.md
                 - name: 'IDiaEnumFrameData::frameByRVA'
@@ -177,8 +189,9 @@
                 - name: 'IDiaEnumFrameData::Skip'
                   href: idiaenumframedata-skip.md
             - name: IDiaEnumInjectedSources
-              href: idiaenuminjectedsources.md
               items:
+                - name: IDiaEnumInjectedSources
+                  href: idiaenuminjectedsources.md
                 - name: 'IDiaEnumInjectedSources::Clone'
                   href: idiaenuminjectedsources-clone.md
                 - name: 'IDiaEnumInjectedSources::get__NewEnum'
@@ -194,8 +207,9 @@
                 - name: 'IDiaEnumInjectedSources::Skip'
                   href: idiaenuminjectedsources-skip.md
             - name: IDiaEnumLineNumbers
-              href: idiaenumlinenumbers.md
               items:
+                - name: IDiaEnumLineNumbers
+                  href: idiaenumlinenumbers.md
                 - name: 'IDiaEnumLineNumbers::Clone'
                   href: idiaenumlinenumbers-clone.md
                 - name: 'IDiaEnumLineNumbers::get__NewEnum'
@@ -211,8 +225,9 @@
                 - name: 'IDiaEnumLineNumbers::Skip'
                   href: idiaenumlinenumbers-skip.md
             - name: IDiaEnumSectionContribs
-              href: idiaenumsectioncontribs.md
               items:
+                - name: IDiaEnumSectionContribs
+                  href: idiaenumsectioncontribs.md
                 - name: 'IDiaEnumSectionContribs::Clone'
                   href: idiaenumsectioncontribs-clone.md
                 - name: 'IDiaEnumSectionContribs::get__NewEnum'
@@ -228,8 +243,9 @@
                 - name: 'IDiaEnumSectionContribs::Skip'
                   href: idiaenumsectioncontribs-skip.md
             - name: IDiaEnumSegments
-              href: idiaenumsegments.md
               items:
+                - name: IDiaEnumSegments
+                  href: idiaenumsegments.md
                 - name: 'IDiaEnumSegments::Clone'
                   href: idiaenumsegments-clone.md
                 - name: 'IDiaEnumSegments::get__NewEnum'
@@ -245,8 +261,9 @@
                 - name: 'IDiaEnumSegments::Skip'
                   href: idiaenumsegments-skip.md
             - name: IDiaEnumSourceFiles
-              href: idiaenumsourcefiles.md
               items:
+                - name: IDiaEnumSourceFiles
+                  href: idiaenumsourcefiles.md
                 - name: 'IDiaEnumSourceFiles::Clone'
                   href: idiaenumsourcefiles-clone.md
                 - name: 'IDiaEnumSourceFiles::get__NewEnum'
@@ -262,15 +279,17 @@
                 - name: 'IDiaEnumSourceFiles::Skip'
                   href: idiaenumsourcefiles-skip.md
             - name: IDiaEnumStackFrames
-              href: idiaenumstackframes.md
               items:
+                - name: IDiaEnumStackFrames
+                  href: idiaenumstackframes.md
                 - name: 'IDiaEnumStackFrames::Next'
                   href: idiaenumstackframes-next.md
                 - name: 'IDiaEnumStackFrames::Reset'
                   href: idiaenumstackframes-reset.md
             - name: IDiaEnumSymbols
-              href: idiaenumsymbols.md
               items:
+                - name: IDiaEnumSymbols
+                  href: idiaenumsymbols.md
                 - name: 'IDiaEnumSymbols::Clone'
                   href: idiaenumsymbols-clone.md
                 - name: 'IDiaEnumSymbols::get__NewEnum'
@@ -286,8 +305,9 @@
                 - name: 'IDiaEnumSymbols::Skip'
                   href: idiaenumsymbols-skip.md
             - name: IDiaEnumSymbolsByAddr
-              href: idiaenumsymbolsbyaddr.md
               items:
+                - name: IDiaEnumSymbolsByAddr
+                  href: idiaenumsymbolsbyaddr.md
                 - name: 'IDiaEnumSymbolsByAddr::Clone'
                   href: idiaenumsymbolsbyaddr-clone.md
                 - name: 'IDiaEnumSymbolsByAddr::Next'
@@ -301,8 +321,9 @@
                 - name: 'IDiaEnumSymbolsByAddr::symbolByVA'
                   href: idiaenumsymbolsbyaddr-symbolbyva.md
             - name: IDiaEnumTables
-              href: idiaenumtables.md
               items:
+                - name: IDiaEnumTables
+                  href: idiaenumtables.md
                 - name: 'IDiaEnumTables::Clone'
                   href: idiaenumtables-clone.md
                 - name: 'IDiaEnumTables::get__NewEnum'
@@ -318,8 +339,9 @@
                 - name: 'IDiaEnumTables::Skip'
                   href: idiaenumtables-skip.md
             - name: IDiaFrameData
-              href: idiaframedata.md
               items:
+                - name: IDiaFrameData
+                  href: idiaframedata.md
                 - name: 'IDiaFrameData::execute'
                   href: idiaframedata-execute.md
                 - name: 'IDiaFrameData::get_addressOffset'
@@ -357,8 +379,9 @@
                 - name: 'IDiaFrameData::get_virtualAddress'
                   href: idiaframedata-get-virtualaddress.md
             - name: IDiaImageData
-              href: idiaimagedata.md
               items:
+                - name: IDiaImageData
+                  href: idiaimagedata.md
                 - name: 'IDiaImageData::get_imageBase'
                   href: idiaimagedata-get-imagebase.md
                 - name: 'IDiaImageData::get_relativeVirtualAddress'
@@ -366,8 +389,9 @@
                 - name: 'IDiaImageData::get_virtualAddress'
                   href: idiaimagedata-get-virtualaddress.md
             - name: IDiaInjectedSource
-              href: idiainjectedsource.md
               items:
+                - name: IDiaInjectedSource
+                  href: idiainjectedsource.md
                 - name: 'IDiaInjectedSource::get_crc'
                   href: idiainjectedsource-get-crc.md
                 - name: 'IDiaInjectedSource::get_filename'
@@ -383,8 +407,9 @@
                 - name: 'IDiaInjectedSource::get_virtualFilename'
                   href: idiainjectedsource-get-virtualfilename.md
             - name: IDiaLineNumber
-              href: idialinenumber.md
               items:
+                - name: IDiaLineNumber
+                  href: idialinenumber.md
                 - name: 'IDiaLineNumber::get_addressOffset'
                   href: idialinenumber-get-addressoffset.md
                 - name: 'IDiaLineNumber::get_addressSection'
@@ -414,8 +439,9 @@
                 - name: 'IDiaLineNumber::get_virtualAddress'
                   href: idialinenumber-get-virtualaddress.md
             - name: IDiaLoadCallback
-              href: idialoadcallback.md
               items:
+                - name: IDiaLoadCallback
+                  href: idialoadcallback.md
                 - name: 'IDiaLoadCallback::NotifyDebugDir'
                   href: idialoadcallback-notifydebugdir.md
                 - name: 'IDiaLoadCallback::NotifyOpenDBG'
@@ -427,8 +453,9 @@
                 - name: 'IDiaLoadCallback::RestrictSymbolServerAccess'
                   href: idialoadcallback-restrictsymbolserveraccess.md
             - name: IDiaLoadCallback2
-              href: idialoadcallback2.md
               items:
+                - name: IDiaLoadCallback2
+                  href: idialoadcallback2.md
                 - name: 'IDiaLoadCallback2::RestrictDBGAccess'
                   href: idialoadcallback2-restrictdbgaccess.md
                 - name: 'IDiaLoadCallback2::RestrictOriginalPathAccess'
@@ -438,8 +465,9 @@
                 - name: 'IDiaLoadCallback2::RestrictSystemRootAccess'
                   href: idialoadcallback2-restrictsystemrootaccess.md
             - name: IDiaPropertyStorage
-              href: idiapropertystorage.md
               items:
+                - name: IDiaPropertyStorage
+                  href: idiapropertystorage.md
                 - name: 'IDiaPropertyStorage::ReadBOOL'
                   href: idiapropertystorage-readbool.md
                 - name: 'IDiaPropertyStorage::ReadBSTR'
@@ -457,18 +485,21 @@
                 - name: 'IDiaPropertyStorage::ReadULONGLONG'
                   href: idiapropertystorage-readulonglong.md
             - name: IDiaReadExeAtOffsetCallback
-              href: idiareadexeatoffsetcallback.md
               items:
+                - name: IDiaReadExeAtOffsetCallback
+                  href: idiareadexeatoffsetcallback.md
                 - name: 'IDiaReadExeAtOffsetCallback::ReadExecutableAt'
                   href: idiareadexeatoffsetcallback-readexecutableat.md
             - name: IDiaReadExeAtRVACallback
-              href: idiareadexeatrvacallback.md
               items:
+                - name: IDiaReadExeAtRVACallback
+                  href: idiareadexeatrvacallback.md
                 - name: 'IDiaReadExeAtRVACallback::ReadExecutableAtRVA'
                   href: idiareadexeatrvacallback-readexecutableatrva.md
             - name: IDiaSectionContrib
-              href: idiasectioncontrib.md
               items:
+                - name: IDiaSectionContrib
+                  href: idiasectioncontrib.md
                 - name: 'IDiaSectionContrib::get_addressOffset'
                   href: idiasectioncontrib-get-addressoffset.md
                 - name: 'IDiaSectionContrib::get_addressSection'
@@ -518,8 +549,9 @@
                 - name: 'IDiaSectionContrib::get_write'
                   href: idiasectioncontrib-get-write.md
             - name: IDiaSegment
-              href: idiasegment.md
               items:
+                - name: IDiaSegment
+                  href: idiasegment.md
                 - name: 'IDiaSegment::get_addressSection'
                   href: idiasegment-get-addresssection.md
                 - name: 'IDiaSegment::get_execute'
@@ -539,8 +571,9 @@
                 - name: 'IDiaSegment::get_write'
                   href: idiasegment-get-write.md
             - name: IDiaSession
-              href: idiasession.md
               items:
+                - name: IDiaSession
+                  href: idiasession.md
                 - name: 'IDiaSession::findAcceleratorInlineesByLinenum'
                   href: idiasession-findacceleratorinlineesbylinenum.md
                 - name: 'IDiaSession::findAcceleratorInlineesByName'
@@ -614,8 +647,9 @@
                 - name: 'IDiaSession::symsAreEquiv'
                   href: idiasession-symsareequiv.md
             - name: IDiaSourceFile
-              href: idiasourcefile.md
               items:
+                - name: IDiaSourceFile
+                  href: idiasourcefile.md
                 - name: 'IDiaSourceFile::get_checksum'
                   href: idiasourcefile-get-checksum.md
                 - name: 'IDiaSourceFile::get_checksumType'
@@ -627,8 +661,9 @@
                 - name: 'IDiaSourceFile::get_uniqueId'
                   href: idiasourcefile-get-uniqueid.md
             - name: IDiaStackFrame
-              href: idiastackframe.md
               items:
+                - name: IDiaStackFrame
+                  href: idiastackframe.md
                 - name: 'IDiaStackFrame::get_allocatesBasePointer'
                   href: idiastackframe-get-allocatesbasepointer.md
                 - name: 'IDiaStackFrame::get_base'
@@ -662,15 +697,17 @@
                 - name: 'IDiaStackFrame::get_type'
                   href: idiastackframe-get-type.md
             - name: IDiaStackWalker
-              href: idiastackwalker.md
               items:
+                - name: IDiaStackWalker
+                  href: idiastackwalker.md
                 - name: 'IDiaStackWalker::getEnumFrames'
                   href: idiastackwalker-getenumframes.md
                 - name: 'IDiaStackWalker::getEnumFrames2'
                   href: idiastackwalker-getenumframes2.md
             - name: IDiaStackWalkFrame
-              href: idiastackwalkframe.md
               items:
+                - name: IDiaStackWalkFrame
+                  href: idiastackwalkframe.md
                 - name: 'IDiaStackWalkFrame::get_registerValue'
                   href: idiastackwalkframe-get-registervalue.md
                 - name: 'IDiaStackWalkFrame::put_registerValue'
@@ -682,8 +719,9 @@
                 - name: 'IDiaStackWalkFrame::searchForReturnAddressStart'
                   href: idiastackwalkframe-searchforreturnaddressstart.md
             - name: IDiaStackWalkHelper
-              href: idiastackwalkhelper.md
               items:
+                - name: IDiaStackWalkHelper
+                  href: idiastackwalkhelper.md
                 - name: 'IDiaStackWalkHelper::frameForVA'
                   href: idiastackwalkhelper-frameforva.md
                 - name: 'IDiaStackWalkHelper::imageForVA'
@@ -703,8 +741,9 @@
                 - name: 'IDiaStackWalkHelper::symbolForVA'
                   href: idiastackwalkhelper-symbolforva.md
             - name: IDiaSymbol
-              href: idiasymbol.md
               items:
+                - name: IDiaSymbol
+                  href: idiasymbol.md
                 - name: 'IDiaSymbol::findChildren'
                   href: idiasymbol-findchildren.md
                 - name: 'IDiaSymbol::findChildrenEx'
@@ -1094,8 +1133,9 @@
                 - name: 'IDiaSymbol::get_volatileType'
                   href: idiasymbol-get-volatiletype.md
             - name: IDiaTable
-              href: idiatable.md
               items:
+                - name: IDiaTable
+                  href: idiatable.md
                 - name: 'IDiaTable::get__NewEnum'
                   href: idiatable-get-newenum.md
                 - name: 'IDiaTable::get_Count'
@@ -1105,8 +1145,9 @@
                 - name: 'IDiaTable::Item'
                   href: idiatable-item.md
         - name: 列舉和結構
-          href: enumerations-and-structures.md
           items:
+            - name: 列舉和結構
+              href: enumerations-and-structures.md
             - name: BasicType
               href: basictype.md
             - name: CV_access_e

@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fe209a28f74866cf13b6dbd58b01eac2450557b2
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 9ac716c3268709cdf168a379b2df6cd40b727f51
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57221771"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62793798"
 ---
 # <a name="features-of-visual-studio"></a>Visual Studio 的功能
 
@@ -24,7 +24,7 @@ Visual Studio 的模組安裝程式可讓您選擇並安裝「工作負載」。
 
 ::: moniker range="vs-2017"
 
-如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017)頁面免費進行安裝。
+如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)頁面免費進行安裝。
 
 ::: moniker-end
 
@@ -42,9 +42,13 @@ Visual Studio 提供一套工具，可讓您輕鬆建立由 Microsoft Azure 提�
 
 ![Azure 開發工作負載](../data-tools/media/azure-development-workload.png)
 
+::: moniker range="vs-2017"
+
 安裝 **Azure 開發**工作負載之後，即可在 [新增專案] 對話方塊中使用 C# 的下列**雲端**範本：
 
 ![Visual Studio 的雲端專案範本](media/cloud-project-templates.png)
+
+::: moniker-end
 
 Visual Studio 的 [Cloud Explorer](/azure/vs-azure-tools-resources-managing-with-cloud-explorer) 可讓您在 Visual Studio 內檢視和管理 Azure 型雲端資源。 這些資源可能包含虛擬機器、資料表、SQL 資料庫等。 **Cloud Explorer** 會顯示在您所登入 Azure 訂用帳戶下管理之所有帳戶中的 Azure 資源。 此外，如果特定作業需要 Azure 入口網站，**Cloud Explorer** 會提供連結，將您帶到入口網站中您所需前往的位置。
 
@@ -96,7 +100,7 @@ Visual Studio 中的 [SQL Server 物件總管] 提供與 SQL Server Management S
 
 ## <a name="debug-test-and-improve-your-code"></a>偵錯、測試及改善您的程式碼
 
-當您撰寫程式碼時，必須執行它並測試它，以找出錯誤 (bug) 及改善效能。 Visual Studio 的先進偵錯系統可讓您針對在本機專案、遠端裝置或[裝置模擬器](../cross-platform/visual-studio-emulator-for-android.md)上執行的程式碼進行偵錯。 您可以以一次一個陳述式的方式逐步偵錯程式碼，並一邊檢查變數。 您可以將中斷點設定成只在指定的條件為 true 時才叫用。 偵錯選項可以在程式碼編輯器本身中管理，如此您就不需要離開您的程式碼。 如需有關 Visual Studio 中之 偵錯的更多詳細資料，請參閱[偵錯工具功能導覽](../debugger/debugger-feature-tour.md)。
+當您撰寫程式碼時，必須執行它並測試它，以找出錯誤 (bug) 及改善效能。 Visual Studio 的先進偵錯系統可讓您針對在本機專案、遠端裝置或[裝置模擬器](../cross-platform/visual-studio-emulator-for-android.md)上執行的程式碼進行偵錯。 您可以以一次一個陳述式的方式逐步偵錯程式碼，並一邊檢查變數。 您可以將中斷點設定成只在指定的條件為 true 時才叫用。 偵錯選項可以在程式碼編輯器本身中管理，如此您就不需要離開您的程式碼。 如需在 Visual Studio 中偵錯的更多詳細資料，請參閱[偵錯工具簡介](../debugger/debugger-feature-tour.md)。
 
 若要深入了解如何改善您應用程式的效能，請查看 Visual Studio 的[分析](../profiling/profiling-feature-tour.md)功能。
 
@@ -114,7 +118,7 @@ Azure DevOps Services 是雲端式服務，可規劃、裝載，自動化和部�
 
 Team Foundation Server (TFS) 是 Visual Studio 的應用程式生命週期管理中樞。 其可讓所有人使用單一方案參與開發流程。 TFS 也適合用來管理異質小組和專案
 
-如果您在網路上有 Azure DevOps 組織或 Team Foundation Server，便可以透過 Visual Studio 中的 [Team Explorer] 視窗與其連線。 在這個視窗中，您可以在原始檔控制簽入或簽出程式碼、管理工作項目、啟動建置和存取小組聊天室及工作區。 您可以從 [快速啟動] 方塊開啟 [Team Explorer]，也可以從主功能表的 [檢視] > [Team Explorer] 或從 [小組] > [管理連線] 來開啟它。
+如果您在網路上有 Azure DevOps 組織或 Team Foundation Server，便可以透過 Visual Studio 中的 [Team Explorer] 視窗與其連線。 在這個視窗中，您可以在原始檔控制簽入或簽出程式碼、管理工作項目、啟動建置和存取小組聊天室及工作區。 您可以從搜尋方塊開啟 [Team Explorer]，也可以從主功能表的 [檢視] > [Team Explorer] 或從 [小組] > [管理連線] 來開啟它。
 
 下圖顯示裝載於 Azure DevOps Services 中解決方案的 [Team Explorer] 視窗。
 

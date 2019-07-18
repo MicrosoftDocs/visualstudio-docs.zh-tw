@@ -7,17 +7,17 @@ helpviewer_keywords:
 - menus, adding menu controllers to toolbars
 - menu controllers, adding to toolbars
 ms.assetid: 6af9b0b4-037f-404c-bb40-aaa1970768ea
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2938da8f5f24c5c60cfe8d09423be886de1d0c86
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: eaa53a9bf8d33ad145d75bdb2d72e6820f806711
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56705634"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66349801"
 ---
 # <a name="add-a-menu-controller-to-a-toolbar"></a>將功能表控制器加入工具列
 本逐步解說是根據[將工具列加入工具視窗](../extensibility/adding-a-toolbar-to-a-tool-window.md)逐步解說，並示範如何將功能表控制器加入至 [工具] 視窗工具列。 如下所示的步驟也可以套用到在中建立的工具列[新增工具列](../extensibility/adding-a-toolbar.md)逐步解說。

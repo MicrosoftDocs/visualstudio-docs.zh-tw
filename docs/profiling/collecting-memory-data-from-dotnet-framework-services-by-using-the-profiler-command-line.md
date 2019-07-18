@@ -1,5 +1,5 @@
 ---
-title: 使用分析工具命令列收集 .NET Framework 服務的記憶體資料 | Microsoft Docs
+title: 分析工具命令列：取得 .NET Framework 服務的記憶體資料
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: b1361333-8a09-4a65-87a9-4ac94ceb2d9f
@@ -8,15 +8,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: d39a81bbf504a36d65b86ffa35901eeaf1b0916b
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: a4526bc9b4dde74488d3997bf18006454383cb06
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56631935"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747808"
 ---
 # <a name="collect-memory-data-from-net-framework-services-by-using-the-profiler-command-line"></a>使用分析工具命令列以收集 .NET Framework 服務的記憶體資料
-本節說明從命令列使用取樣方法收集 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 服務之記憶體配置和物件存留期資料的程序和選項。
+本節說明從命令列使用取樣方法收集 .NET Framework 服務之記憶體配置和物件存留期資料的程序和選項。
 
 ## <a name="common-tasks"></a>一般工作
 

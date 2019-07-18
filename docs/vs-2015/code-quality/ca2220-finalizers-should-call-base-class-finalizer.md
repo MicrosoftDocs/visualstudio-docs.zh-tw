@@ -1,14 +1,9 @@
 ---
-title: CA2220： 完成項應該呼叫基底類別完成項 |Microsoft Docs
-ms.custom: ''
+title: CA2220:完成項應該呼叫基底類別完成項 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA2220
 - FinalizersShouldCallBaseClassFinalizer
@@ -20,14 +15,14 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 3e00419ed7f6b4d388b9fb28f56d85990a4257b1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e069e3a75e05e958b563430fa02d9def104aa716
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49862706"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685122"
 ---
-# <a name="ca2220-finalizers-should-call-base-class-finalizer"></a>CA2220：完成項應該呼叫基底類別完成項
+# <a name="ca2220-finalizers-should-call-base-class-finalizer"></a>CA2220:完成項應該呼叫基底類別完成項
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -55,7 +50,4 @@ ms.locfileid: "49862706"
  [!code-vb[FxCop.Usage.IDisposableBaseCalled#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Usage.IDisposableBaseCalled/vb/FxCop.Usage.IDisposableBaseCalled.vb#1)]
 
 ## <a name="see-also"></a>另請參閱
- [Dispose 模式](http://msdn.microsoft.com/library/31a6c13b-d6a2-492b-9a9f-e5238c983bcb)
-
-
-
+ [Dispose 模式](https://msdn.microsoft.com/library/31a6c13b-d6a2-492b-9a9f-e5238c983bcb)

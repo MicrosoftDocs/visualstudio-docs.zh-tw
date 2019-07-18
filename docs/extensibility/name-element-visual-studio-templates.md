@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - Name element [Visual Studio project templates]
 ms.assetid: 48788dbf-7da0-4443-8061-aab966fc22c8
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 67160258eb445b1a7131898687fa410ac1636f40
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 6b0365740f5ea8ab20ed79d077134afd32356bcc
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56697685"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66344726"
 ---
 # <a name="name-element-visual-studio-templates"></a>Name 元素 （Visual Studio 範本）
 指定範本的名稱，因為它會出現在**新的專案**或是**加入新項目** 對話方塊。

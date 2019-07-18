@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: aa8370dcf36eb13b6ba1491efc5def55a93fff34
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 026dc77573bbedce7882f9b3cceab049ef1066e4
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56643102"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67692348"
 ---
 # <a name="walkthrough-complex-data-binding-in-a-document-level-project"></a>逐步解說：在文件層級專案中的複雜資料繫結
   本逐步解說會示範在文件層級專案中的複雜資料繫結的基本概念。 您可以將 Microsoft Office Excel 工作表中的多個資料格繫結至 Northwind SQL Server 資料庫中的欄位。
@@ -40,20 +40,20 @@ ms.locfileid: "56643102"
 ## <a name="prerequisites"></a>必要條件
  您需要下列元件才能完成此逐步解說：
 
--   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
+- [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
--   [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] 或 [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)]。
+- [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] 或 [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)]。
 
--   伺服器的存取權與 Northwind SQL Server 範例資料庫。
+- 伺服器的存取權與 Northwind SQL Server 範例資料庫。
 
--   讀取和寫入至 SQL Server 資料庫的權限。
+- 讀取和寫入至 SQL Server 資料庫的權限。
 
 ## <a name="create-a-new-project"></a>建立新專案
  第一個步驟是建立 Excel 活頁簿專案。
 
 ### <a name="to-create-a-new-project"></a>建立新的專案
 
-1.  建立 Excel 活頁簿專案同名**My 複雜資料繫結**。 在精靈中，選取**建立新的文件**。
+1. 建立 Excel 活頁簿專案同名**My 複雜資料繫結**。 在精靈中，選取**建立新的文件**。
 
      如需詳細資訊，請參閱[如何：在 Visual Studio 中建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)。
 
@@ -68,13 +68,13 @@ ms.locfileid: "56643102"
 
 2. 選擇 [ **加入新資料來源** ] 以啟動 [ **資料來源組態精靈**]。
 
-3. 選取 [**資料庫**，然後按一下**下一步]**。
+3. 選取 [**資料庫**，然後按一下**下一步]** 。
 
 4. 選取資料連接至 Northwind 範例 SQL Server 資料庫，或使用 [新增連線**新的連接**] 按鈕。
 
 5. 已選取或建立連接之後，請按一下**下一步**。
 
-6. 清除 [可儲存連線，如果已選取，選項，然後按**下一步]**。
+6. 清除 [可儲存連線，如果已選取，選項，然後按**下一步]** 。
 
 7. 依序展開**資料表**中的節點**資料庫物件**視窗。
 
@@ -91,15 +91,15 @@ ms.locfileid: "56643102"
 
 #### <a name="to-add-a-list-object"></a>若要加入清單物件
 
-1.  確認**我的複雜資料 Binding.xlsx**活頁簿是在 Visual Studio 設計工具中開啟具有**Sheet1**顯示。
+1. 確認**我的複雜資料 Binding.xlsx**活頁簿是在 Visual Studio 設計工具中開啟具有**Sheet1**顯示。
 
-2.  開啟**資料來源**視窗，然後選取**員工**節點。
+2. 開啟**資料來源**視窗，然後選取**員工**節點。
 
-3.  按一下出現的下拉式箭號。
+3. 按一下出現的下拉式箭號。
 
-4.  選取  **ListObject**下拉式清單中。
+4. 選取  **ListObject**下拉式清單中。
 
-5.  拖曳**員工**資料表來儲存格**A6**。
+5. 拖曳**員工**資料表來儲存格**A6**。
 
      A<xref:Microsoft.Office.Tools.Excel.ListObject>控制項，名為`EmployeesListObject`會建立在資料格中**A6**。 在此同時<xref:System.Windows.Forms.BindingSource>名為`EmployeesBindingSource`，資料表配接器和<xref:System.Data.DataSet>執行個體加入至專案。 控制項所繫結<xref:System.Windows.Forms.BindingSource>，它接著會繫結至<xref:System.Data.DataSet>執行個體。
 
@@ -132,7 +132,7 @@ ms.locfileid: "56643102"
 
 ### <a name="to-save-changes-to-the-database"></a>若要將變更儲存至資料庫
 
-1.  新增事件處理常式<xref:System.Windows.Forms.Control.Click>事件的`button`，並新增下列程式碼來確認已在資料集傳回至資料庫的所有變更。
+1. 新增事件處理常式<xref:System.Windows.Forms.Control.Click>事件的`button`，並新增下列程式碼來確認已在資料集傳回至資料庫的所有變更。
 
      [!code-csharp[Trin_VstcoreDataExcel#10](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet3.cs#10)]
      [!code-vb[Trin_VstcoreDataExcel#10](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet3.vb#10)]
@@ -142,86 +142,86 @@ ms.locfileid: "56643102"
 
 ### <a name="to-test-the-data-binding"></a>若要測試的資料繫結
 
--   請按 **F5**。
+- 請按 **F5**。
 
      確認活頁簿開啟時，請使用資料填入清單物件**員工**資料表。
 
 ### <a name="to-modify-data"></a>若要修改資料
 
-1.  按一下資料格**B7**，其中應包含名稱**Davolio**。
+1. 按一下資料格**B7**，其中應包含名稱**Davolio**。
 
-2.  輸入名稱**Anderson**，然後按**Enter**。
+2. 輸入名稱**Anderson**，然後按**Enter**。
 
 ### <a name="to-modify-a-column-header"></a>若要修改的資料行標頭
 
-1.  按一下包含資料行標頭儲存格**LastName**。
+1. 按一下包含資料行標頭儲存格**LastName**。
 
-2.  型別**姓氏**，包括兩個單字，之間的空格，然後按**Enter**。
+2. 型別**姓氏**，包括兩個單字，之間的空格，然後按**Enter**。
 
 ### <a name="to-save-data"></a>若要儲存資料
 
-1.  按一下 **儲存**工作表上。
+1. 按一下 **儲存**工作表上。
 
-2.  結束 Excel。 按一下  **No**當系統提示您儲存您所做的變更。
+2. 結束 Excel。 按一下  **No**當系統提示您儲存您所做的變更。
 
-3.  按下**F5**再次執行專案。
+3. 按下**F5**再次執行專案。
 
      清單物件會填入來自**員工**資料表。
 
-4.  請注意，在儲存格的名稱**B7**仍**Anderson**，這是資料變更您進行，並儲存回資料庫。 資料行行首**LastName**變更回其原始形式，不含任何空格，因為具有資料行標頭未繫結到資料庫並沒有儲存您對工作表的變更。
+4. 請注意，在儲存格的名稱**B7**仍**Anderson**，這是資料變更您進行，並儲存回資料庫。 資料行行首**LastName**變更回其原始形式，不含任何空格，因為具有資料行標頭未繫結到資料庫並沒有儲存您對工作表的變更。
 
 ### <a name="to-add-new-rows"></a>若要加入新的資料列
 
 1. 選取資料格內的清單物件。
 
-    新的資料列會出現在底部清單中，將以星號 (* *\\* * *) 新的資料列的第一個資料格中。
+    新的資料列會出現在底部清單中，將以星號 ( **\*** ) 新的資料列的第一個資料格中。
 
 2. 新增下列資訊的空白資料列。
 
-   |員工識別碼|LastName|FirstName|標題|
+   |EmployeeID|LastName|FirstName|標題|
    |----------------|--------------|---------------|-----------|
    |10|Ito|Shu|銷售經理|
 
 ### <a name="to-delete-rows"></a>若要刪除資料列
 
--   16 （資料列 16） 上的最左側的工作表號碼，以滑鼠右鍵按一下，然後按一下**刪除**。
+- 16 （資料列 16） 上的最左側的工作表號碼，以滑鼠右鍵按一下，然後按一下**刪除**。
 
 ### <a name="to-sort-the-rows-in-the-list"></a>若要排序清單中的資料列
 
-1.  選取清單內的資料格。
+1. 選取清單內的資料格。
 
      箭號按鈕會出現在各個資料行標頭。
 
-2.  按一下箭號按鈕，在**姓氏**資料行標頭。
+2. 按一下箭號按鈕，在**姓氏**資料行標頭。
 
-3.  按一下 **遞增排序**。
+3. 按一下 **遞增排序**。
 
      依姓氏依字母順序排序資料列。
 
 ### <a name="to-filter-information"></a>若要篩選資訊
 
-1.  選取清單內的資料格。
+1. 選取清單內的資料格。
 
-2.  按一下箭號按鈕，在**Title**資料行標頭。
+2. 按一下箭號按鈕，在**Title**資料行標頭。
 
-3.  按一下 **銷售代表**。
+3. 按一下 **銷售代表**。
 
      此清單會顯示有這些資料列**業務代表**中**標題**資料行。
 
-4.  按一下箭號按鈕，在**Title**資料行標頭一次。
+4. 按一下箭號按鈕，在**Title**資料行標頭一次。
 
-5.  按一下  **（全部）**。
+5. 按一下  **（全部）** 。
 
      會移除篩選，並顯示所有的資料列。
 
 ## <a name="next-steps"></a>後續步驟
  本逐步解說會示範在資料庫中的資料表繫結到清單物件的基本概念。 接著可以執行下列一些工作：
 
--   快取的資料，以便可以離線使用。 如需詳細資訊，請參閱[如何：離線或在伺服器上快取資料以用於](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md)。
+- 快取的資料，以便可以離線使用。 如需詳細資訊，請參閱[如何：離線或在伺服器上快取資料以用於](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md)。
 
--   部署方案。 如需詳細資訊，請參閱 <<c0> [ 部署 Office 方案](../vsto/deploying-an-office-solution.md)。
+- 部署方案。 如需詳細資訊，請參閱 <<c0> [ 部署 Office 方案](../vsto/deploying-an-office-solution.md)。
 
--   建立主從式關聯欄位與資料表之間。 如需詳細資訊，請參閱[逐步解說：建立使用快取的資料集的主版詳細資料關聯性](../vsto/walkthrough-creating-a-master-detail-relation-using-a-cached-dataset.md)。
+- 建立主從式關聯欄位與資料表之間。 如需詳細資訊，請參閱[逐步解說：建立使用快取的資料集的主版詳細資料關聯性](../vsto/walkthrough-creating-a-master-detail-relation-using-a-cached-dataset.md)。
 
 ## <a name="see-also"></a>另請參閱
 - [資料繫結至 Office 方案中的控制項](../vsto/binding-data-to-controls-in-office-solutions.md)

@@ -1,14 +1,9 @@
 ---
-title: CA1702： 複合字應該使用的大小寫正確 |Microsoft Docs
-ms.custom: ''
+title: CA1702:複合字應該使用正確的大小寫 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1702
 - CompoundWordsShouldBeCasedCorrectly
@@ -20,17 +15,17 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: cfc723e94b8be2f427be7b42d676218b0d9aa68d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 91a3945c6ef212ba664119a822123f326cdefc5c
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49201123"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65676399"
 ---
-# <a name="ca1702-compound-words-should-be-cased-correctly"></a>CA1702：複合字應該使用正確的大小寫
+# <a name="ca1702-compound-words-should-be-cased-correctly"></a>CA1702:複合字應該使用正確的大小寫
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-如需 Visual Studio 2017 的最新文件，請參閱 < [CA1702： 複合字應該使用正確的大小寫](https://docs.microsoft.com/visualstudio/code-quality/ca1702-compound-words-should-be-cased-correctly)docs.microsoft.com 上。  
+如需 Visual Studio 的最新文件，請參閱[CA1702:複合字應該使用正確的大小寫](https://docs.microsoft.com/visualstudio/code-quality/ca1702-compound-words-should-be-cased-correctly)。  
   
 |||  
 |-|-|  
@@ -54,13 +49,12 @@ ms.locfileid: "49201123"
  它可安全地隱藏此規則的警告，如果拼字檢查字典所辨識的複合字的兩個部分，且其目的是要使用兩個字。  
   
 ## <a name="related-rules"></a>相關的規則  
- [CA1701：資源字串複合字應該使用正確的大小寫](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)  
+ [CA1701:資源字串複合字應該使用正確的大小寫](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)  
   
- [CA1709：識別項名稱應該使用正確的大小寫](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)  
+ [CA1709:識別項應該使用正確的大小寫](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)  
   
- [CA1708：識別項名稱不應該只靠大小寫區別](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)  
+ [CA1708:識別項應該不僅為大小寫不同](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)  
   
 ## <a name="see-also"></a>另請參閱  
- [命名方針](http://msdn.microsoft.com/library/fc076d66-9b5f-42d3-aa65-61d970c794a3)   
- [大小寫慣例](http://msdn.microsoft.com/library/4c4ea526-9203-486f-b72d-29d61c5b3c6d)
-
+ [命名方針](https://msdn.microsoft.com/library/fc076d66-9b5f-42d3-aa65-61d970c794a3)   
+ [大小寫慣例](https://msdn.microsoft.com/library/4c4ea526-9203-486f-b72d-29d61c5b3c6d)

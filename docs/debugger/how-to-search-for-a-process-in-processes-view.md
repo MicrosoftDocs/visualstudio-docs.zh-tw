@@ -1,5 +1,5 @@
 ---
-title: 如何： 搜尋處理序中處理序檢視 |Microsoft Docs
+title: 作法：搜尋處理序中處理序檢視 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,14 +11,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c9cd618768268b5c0bc4e3e99fbffd4fd65e874
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 2a6b57226b14963759bb4d78afff3beb5559a63e
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56715085"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "64798986"
 ---
-# <a name="how-to-search-for-a-process-in-processes-view"></a>如何：在處理序檢視中搜尋處理序
+# <a name="how-to-search-for-a-process-in-processes-view"></a>作法：在處理序檢視中搜尋處理序
 您可以使用它的處理序識別碼或模組字串做為搜尋準則來搜尋特定處理序中處理序檢視。 您也可以指定搜尋的初始方向。 在對話方塊中的欄位會顯示選取的處理序的屬性，在處理序樹狀目錄中。
 
 ### <a name="to-search-for-a-process-in-processes-view"></a>搜尋處理序檢視中的處理序
@@ -34,7 +34,7 @@ ms.locfileid: "56715085"
 4. 清除，您不想指定值的任何欄位。
 
    > [!TIP]
-   >  若要尋找模組所擁有的所有處理程序，請清除**程序**方塊，然後輸入中的模組名稱**模組** 方塊中。 然後使用**尋找下一個**繼續搜尋處理序。
+   > 若要尋找模組所擁有的所有處理程序，請清除**程序**方塊，然後輸入中的模組名稱**模組** 方塊中。 然後使用**尋找下一個**繼續搜尋處理序。
 
 5. 選擇**向上**或是**向下**初始搜尋的方向。
 

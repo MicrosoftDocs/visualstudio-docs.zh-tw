@@ -6,13 +6,12 @@ manager: evelynp
 ms.date: 01/02/2018
 ms.topic: conceptual
 description: 登入可能會因為使用別名或易記名稱而失敗
-searchscope: VS Subscription
-ms.openlocfilehash: f0b18aca4c6188c23998c8a87f86359895198b95
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: 7285c1ede495a1aa2603216f2a9e9fe9f89331ea
+ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58195147"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67783680"
 ---
 # <a name="signing-in-to-visual-studio-subscriptions-may-fail-when-using-aliases"></a>登入 Visual Studio 訂用帳戶可能會因為使用別名而失敗
 
@@ -46,22 +45,21 @@ ms.locfileid: "58195147"
 請依照這些步驟使用目錄帳戶新增訂閱者。
 
 1. 瀏覽[大量授權服務中心](https://www.microsoft.com/Licensing/servicecenter/default.aspx) (VLSC) 並登入。
-2. 從 VLSC [系統管理] 頁面，按一下 [訂用帳戶]，然後按一下 [Visual Studio 訂用帳戶]。
+2. 從 VLSC [系統管理] 頁面，按一下 [訂用帳戶]  ，然後按一下 [Visual Studio 訂用帳戶]  。
 
     > [!div class="mx-imgBorder"]
     > ![[訂閱] 功能表](_img//vlsc/vlsc-subscriptions.png)
 
-
-3. 按一下與該 Visual Studio 訂用帳戶關聯的 [合約編號]。
+3. 按一下與該 Visual Studio 訂用帳戶關聯的 [合約編號]  。
 
     > [!div class="mx-imgBorder"]
     > ![選取合約](_img/vlsc/vlsc-agreement.png)
 
-4. 按一下 [指派訂用帳戶]。
-5. 選取想要的 [訂用帳戶層級]。
-6. 驗證您有可指派的訂用帳戶，然後按一下 [下一步]。
-7. 輸入訂閱者詳細資料並在 [電子郵件地址] 中輸入目錄地址，然後按一下 [下一步]。
-8. 驗證訂閱者資訊，然後按一下 [完成]。
+4. 按一下 [指派訂用帳戶]  。
+5. 選取想要的 [訂用帳戶層級]  。
+6. 驗證您有可指派的訂用帳戶，然後按一下 [下一步]  。
+7. 輸入訂閱者詳細資料並在 [電子郵件地址] 中輸入目錄地址，然後按一下 [下一步]  。
+8. 驗證訂閱者資訊，然後按一下 [完成]  。
 9. 使用下面的[範本](#notifying-your-subscribers-with-directory-addresses)通知訂閱者其訂用帳戶已佈建。
 
 ### <a name="updating-an-existing-subscriber"></a>更新現有的訂閱者
@@ -69,34 +67,36 @@ ms.locfileid: "58195147"
 請依照下面的步驟使用目錄帳戶更新現有的訂閱者。
 
 1. 瀏覽[大量授權服務中心](https://www.microsoft.com/Licensing/servicecenter/default.aspx) (VLSC) 並登入。
-2. 從 VLSC [系統管理] 頁面，按一下 [訂用帳戶]，然後按一下 [Visual Studio 訂用帳戶]。
-3. 按一下與該 Visual Studio 訂用帳戶關聯的 [合約編號]。
-4. 按一下 [搜尋] 列上的向下箭號 。
+2. 從 VLSC [系統管理] 頁面，按一下 [訂用帳戶]  ，然後按一下 [Visual Studio 訂用帳戶]  。
+3. 按一下與該 Visual Studio 訂用帳戶關聯的 [合約編號]  。
+4. 按一下 [搜尋] 列上的向下箭號  。
 5. 使用 [電子郵件地址] 欄位搜尋訂閱者。
-6. 從結果清中，按一下 [訂閱者] 上的 [姓氏]。
-7. 按一下 [編輯] 。
-8. 將 [電子郵件地址] 欄位變更為想要的目錄地址，然後按一下 [儲存]。
+6. 從結果清中，按一下 [訂閱者] 上的 [姓氏]  。
+7. 按一下 [編輯]  。
+8. 將 [電子郵件地址] 欄位變更為想要的目錄地址，然後按一下 [儲存]  。
 9. 使用下面的電子郵件範本通知訂閱者其訂用帳戶已佈建。
 
 ### <a name="notifying-your-subscribers-with-directory-addresses"></a>使用目錄地址通知您的訂閱者
 
 因為歡迎電子郵件將無法成功地傳送給您的訂閱者，請將下面的訊息複製並貼上到電子郵件中並傳送給您的訂閱者。 針對每個訂閱者，將 %WORD% 取代為適當的資訊。
 
------------ 複製下面的內容 (Ctrl+C) -----------
+```
+----------- Copy Below (Ctrl+C) -----------
 
-%SUBSCRIBER NAME%，您好
+Hello %SUBSCRIBER NAME%
 
-您已被指派 Visual Studio 訂用帳戶。 請瀏覽 https://my.visualstudio.com 並使用您的 %DIRECTORY ADDRESS% 地址登入，以啟用並存取您的訂用帳戶。
+You have been assigned a Visual Studio subscription. Please visit https://my.visualstudio.com, and log in with your %DIRECTORY ADDRESS% address to activate and access your subscription.
 
-如果您持續遇到問題，請連絡支援小組 (https://visualstudio.microsoft.com/subscriptions/support/)。
+If you’re having trouble, please contact the support team (https://visualstudio.microsoft.com/subscriptions/support/).
 
-在頁面底部，選取下列項目：
-   - [帳戶]、[訂用帳戶] 與 [計費支援]
-   - 從 [問題] 中，選擇 [訂用帳戶登入支援]
-   - 選擇適當的 [國家/地區]
-   - 選取想要的 [輔助支援] 選項
+At the bottom of the page, select the following:
+   - Accounts, Subscriptions, and Billing Support
+   - From Issue, choose Subscription sign in support
+   - Choose the appropriate Country
+   - Select the desired Assisted Support option
 
------------ 複製到這裡 -----------
+----------- End Copy -----------
+```
 
 ## <a name="defining-a-work-or-school-account-as-a-personal-account"></a>將公司或學校帳戶定義為個人帳戶
 
@@ -109,7 +109,7 @@ ms.locfileid: "58195147"
 
 在訂用帳戶指派給訂閱者之後，他們將會收到要求其瀏覽 [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) 以發揮其訂用帳戶優點的電子郵件。  當嘗試登入時，Visual Studio 訂用帳戶登入會失敗，並傳回說明無法識別帳戶的錯誤。  請要求您的訂閱者先遵循這些指示執行，再登入 [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs)。  如果有需要，您可以在指派訂閱之後使用此[範本](#notifying-your-subscribers-using-personal-accounts)來通知您的訂閱者。
 
-1. 瀏覽 https://my.visualstudio.com ，然後按一下 [建立新的 Microsoft 帳戶]。
+1. 瀏覽 https://my.visualstudio.com ，然後按一下 [建立新的 Microsoft 帳戶]  。
 
 2. 完成欄位：
    - 在 Someone@example.com 方塊中輸入收到歡迎電子郵件的電子郵件地址
@@ -117,7 +117,7 @@ ms.locfileid: "58195147"
    - 選擇您的推廣設定
    - 按一下 [下一步] 
 
-3. 完成驗證步驟並按一下 [下一步]。
+3. 完成驗證步驟並按一下 [下一步]  。
 
 4. 新使用者可能需要完成 Visual Studio 設定檔。
 
@@ -127,35 +127,37 @@ ms.locfileid: "58195147"
 
 在上面所述的案例中，您的訂閱者將會收到「歡迎電子郵件」，但由於別名處理，他們可能會發現他們無法登入。  您可以使用下面的文字來通知您的訂閱者上述步驟，並視需要建議支援選項。  針對每個訂閱者，將 %WORD% 取代為適當的資訊。
 
------------ 複製下面的內容 (Ctrl+C) -----------
+```
+----------- Copy Below (Ctrl+C) -----------
 
-%SUBSCRIBER NAME%，您好
+Hello %SUBSCRIBER NAME%
 
-您已被指派 Visual Studio 訂用帳戶，而且可能會根據歡迎電子郵件來導向以登入 https://my.visualstudio.com 。  雖然這是取用權益的正確網站，但我們的組織要求您執行一些額外步驟以存取網站。  請依照下面的指示執行，以建立與我們的公司電子郵件地址繫結的「Microsoft 帳戶」。  一旦完成這些步驟，您就可以使用您的電子郵件地址來存取訂用帳戶權益。
-1. 瀏覽 https://my.visualstudio.com
+You have been assigned a Visual Studio subscription, and may have been directed to log into https://my.visualstudio.com based on your Welcome email.  While this is the correct website for consuming benefits, our organization requires you to take a few extra steps before you can access the site.  Please follow the below instructions to help you create a “Microsoft Account” that is tied to our corporate email address.  Once these steps are completed, you will use your email address to access the Subscription benefits.
+1. Visit https://my.visualstudio.com
 
-2. 按一下右邊的 [建立新的 Microsoft 帳戶]
+2. Click Create new Microsoft Account on the right hand side
 
-3. 完成表單：
-   - 在 someone@example.com 方塊中使用您的公司電子郵件地址
-   - 輸入密碼
-   - 選取您的推廣喜好設定
-   - 按一下 [下一步]
+3. Complete the Form:
+   - Use your corporate email address in the someone@example.com box
+   - Enter a password
+   - Select your promotional preference
+   - Click Next
 
-4. 完成帳戶驗證步驟
+4. Complete the account validation steps
 
-5. 如果有需要，請完成 Visual Studio 設定檔
+5. If necessary, complete the Visual Studio profile
 
-6. 您現在應該會看到您的權益
+6. You should now see your benefits
 
-注意:未來瀏覽 https://my.visualstudio.com 時，系統可能會提示您選取要使用的帳戶 (例如：「公司或學校帳戶」或「個人帳戶」)。  依照上面的步驟執行之後，您將需要選擇 [個人帳戶] 選項。
+Note:  When visiting https://my.visualstudio.com in the future, you may be prompted to select which account you’d like to use (e.g. “Work or School Account” or “Personal Account”).  After following the steps above, you will need to leverage the “Personal Account” option.
 
-如果您持續遇到問題，請連絡支援小組 (https://visualstudio.microsoft.com/subscriptions/support/)。
+If you’re having trouble, please contact the support team (https://visualstudio.microsoft.com/subscriptions/support/).
 
-在頁面底部，選取下列項目：
-   - [帳戶]、[訂用帳戶] 與 [計費支援]
-   - 從 [問題] 中，選擇 [訂用帳戶登入支援]
-   - 選擇適當的 [國家/地區]
-   - 選取想要的 [輔助支援] 選項
+At the bottom of the page, select the following:
+   - Accounts, Subscriptions, and Billing Support
+   - From Issue, choose Subscription sign in support
+   - Choose the appropriate Country
+   - Select the desired Assisted Support option
 
------------ 複製到這裡 -----------
+----------- End Copy -----------
+```

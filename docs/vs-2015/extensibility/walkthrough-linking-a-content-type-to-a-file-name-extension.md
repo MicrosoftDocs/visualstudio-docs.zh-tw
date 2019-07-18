@@ -1,28 +1,23 @@
 ---
-title: 逐步解說： 將內容類型連結至副檔名為 |Microsoft Docs
-ms.custom: ''
+title: 逐步解說：將內容類型連結至副檔名為 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - link content type to file name extension
 ms.assetid: 21ee64ce-9afe-4b08-94a0-8389cc4dc67c
 caps.latest.revision: 25
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: f543992ba23e08be25d5c8206d2b5b0565d33948
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: beae9d0526cb9f2f294f2267a8da52d3ce3d8c08
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51739880"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68202000"
 ---
-# <a name="walkthrough-linking-a-content-type-to-a-file-name-extension"></a>逐步解說︰將內容類型連結至副檔名
+# <a name="walkthrough-linking-a-content-type-to-a-file-name-extension"></a>逐步解說：將內容類型連結至副檔名
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 您可以定義您自己的內容類型，並連結到它的副檔名，透過使用編輯器 Managed Extensibility Framework (MEF) 擴充功能。 在某些情況下，檔案名稱的副檔名已經定義的語言服務;不過，以搭配 MEF 您仍然必須連結到內容類型。  
@@ -32,23 +27,23 @@ ms.locfileid: "51739880"
   
 ## <a name="creating-a-mef-project"></a>建立 MEF 專案  
   
-1.  建立 C# VSIX 專案。 (在**新的專案**對話方塊中，選取**Visual C# / 擴充性**，然後**VSIX 專案**。)將方案命名為 `ContentTypeTest`。  
+1. 建立 C# VSIX 專案。 (在**新的專案**對話方塊中，選取**Visual C# / 擴充性**，然後**VSIX 專案**。)將方案命名為 `ContentTypeTest`。  
   
-2.  在  **source.extension.vsixmanifest**檔案中，移至**資產**索引標籤，然後將**型別**欄位設為**Microsoft.VisualStudio.MefComponent**，則**來源**欄位設為**目前方案中的專案**，而**專案**欄位設為專案的名稱。  
+2. 在  **source.extension.vsixmanifest**檔案中，移至**資產**索引標籤，然後將**型別**欄位設為**Microsoft.VisualStudio.MefComponent**，則**來源**欄位設為**目前方案中的專案**，而**專案**欄位設為專案的名稱。  
   
 ## <a name="defining-the-content-type"></a>定義內容類型  
   
-1.  加入類別檔案，並將它命名為 `FileAndContentTypes`。  
+1. 加入類別檔案，並將它命名為 `FileAndContentTypes`。  
   
-2.  加入下列組件的參考：  
+2. 加入下列組件的參考：  
   
-    1.  System.ComponentModel.Composition  
+    1. System.ComponentModel.Composition  
   
-    2.  Microsoft.VisualStudio.Text.Logic  
+    2. Microsoft.VisualStudio.Text.Logic  
   
-    3.  Microsoft.VisualStudio.CoreUtility  
+    3. Microsoft.VisualStudio.CoreUtility  
   
-3.  新增下列`using`指示詞。  
+3. 新增下列`using`指示詞。  
   
     ```csharp  
     using System.ComponentModel.Composition;  
@@ -57,14 +52,14 @@ ms.locfileid: "51739880"
   
     ```  
   
-4.  宣告靜態類別，包含定義。  
+4. 宣告靜態類別，包含定義。  
   
     ```csharp  
     internal static class FileAndContentTypeDefinitions  
     {. . .}  
     ```  
   
-5.  在此類別中，匯出<xref:Microsoft.VisualStudio.Utilities.ContentTypeDefinition>名為 「 隱藏 」，並宣告其基底定義為"text"。  
+5. 在此類別中，匯出<xref:Microsoft.VisualStudio.Utilities.ContentTypeDefinition>名為 「 隱藏 」，並宣告其基底定義為"text"。  
   
     ```csharp  
     internal static class FileAndContentTypeDefinitions  
@@ -78,7 +73,7 @@ ms.locfileid: "51739880"
   
 ## <a name="linking-a-file-name-extension-to-a-content-type"></a>連結至內容類型的副檔名  
   
--   若要將這個內容類型對應至檔案的副檔名，匯出<xref:Microsoft.VisualStudio.Utilities.FileExtensionToContentTypeDefinition>".hid 」 具有擴充功能和內容類型 「 隱藏 」。  
+- 若要將這個內容類型對應至檔案的副檔名，匯出<xref:Microsoft.VisualStudio.Utilities.FileExtensionToContentTypeDefinition>".hid 」 具有擴充功能和內容類型 「 隱藏 」。  
   
     ```csharp  
     internal static class FileAndContentTypeDefinitions  
@@ -97,11 +92,11 @@ ms.locfileid: "51739880"
   
 ## <a name="adding-the-content-type-to-an-editor-export"></a>將內容類型加入至編輯器匯出  
   
-1.  建立編輯器擴充功能。 例如，您可以使用邊界圖像 （glyph） 擴充功能中所述[逐步解說： 建立邊界圖像](../extensibility/walkthrough-creating-a-margin-glyph.md)。  
+1. 建立編輯器擴充功能。 例如，您可以使用邊界圖像 （glyph） 擴充功能中所述[逐步解說：建立邊界圖像](../extensibility/walkthrough-creating-a-margin-glyph.md)。  
   
-2.  新增您在此程序中定義的類別。  
+2. 新增您在此程序中定義的類別。  
   
-3.  當您匯出延伸模組類別時，新增<xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>「 隱藏 」 給它的型別。  
+3. 當您匯出延伸模組類別時，新增<xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>「 隱藏 」 給它的型別。  
   
     ```csharp  
     [Export]  
@@ -110,4 +105,3 @@ ms.locfileid: "51739880"
   
 ## <a name="see-also"></a>另請參閱  
  [語言服務及編輯器擴充點](../extensibility/language-service-and-editor-extension-points.md)
-

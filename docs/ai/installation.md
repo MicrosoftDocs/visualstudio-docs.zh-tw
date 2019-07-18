@@ -9,12 +9,12 @@ ms.date: 11/13/2017
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 7fe18719e55a59abfcbde35195ed499fe9882c6c
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 15888341bf3cc7a4e9f4739ed37283e11c5ce75e
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58146067"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821412"
 ---
 # <a name="installation"></a>安裝
 
@@ -26,13 +26,13 @@ Visual Studio Tools for AI 可以安裝在 Windows 64 位元作業系統上。
 
 您可以從 [Visual Studio Marketplace](https://aka.ms/vstoolsforai) 或從 Visual Studio 內下載這些工具：
 
-1. 選取 [工具] > [擴充功能和更新]。
+1. 選取 [工具]   > [擴充功能和更新]  。
 
    ![Visual Studio 中的 [擴充功能和更新] 功能表](media/installation/extensions.png)
 
-2. 在 [擴充功能和更新] 對話方塊中，選取左側的 [線上]。
+2. 在 [擴充功能和更新]  對話方塊中，選取左側的 [線上]  。
 3. 在右上角的 [搜尋] 方塊中，鍵入或輸入 "tools for ai"。
-4. 從結果中選取 [Visual Studio Tools for AI]。
+4. 從結果中選取 [Visual Studio Tools for AI]  。
 5. 按一下 [ **下載**]。
 
 ## <a name="prepare-your-local-machine"></a>準備本機電腦
@@ -87,26 +87,28 @@ Python 一直是深度學習應用程式的主要程式設計語言。 需要 **
 然後，我們需要確認是否已正確安裝 Python 3.5，並藉由在終端機中執行下列命令，來將 pip 升級為最新版本：
 
 - **Windows**
-    ```cmd
-    C:\Users\test>python -V
-    Python 3.5.4
 
-    C:\Users\test>pip3.5 -V
-    pip 9.0.1 from c:\users\test\appdata\local\programs\python\python35\lib\site-packages (python 3.5)
+  ```cmd
+  C:\Users\test>python -V
+  Python 3.5.4
 
-    C:\Users\test>python -m pip install -U pip
-    ```
+  C:\Users\test>pip3.5 -V
+  pip 9.0.1 from c:\users\test\appdata\local\programs\python\python35\lib\site-packages (python 3.5)
+
+  C:\Users\test>python -m pip install -U pip
+  ```
 
 - **macOS**
-    ```bash
-    MyMac:~ test$ python3.5 -V
-    Python 3.5.4
 
-    MyMac:~ test$ pip3.5 -V
-    pip 9.0.1 from /Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages (python 3.5)
+  ```bash
+  MyMac:~ test$ python3.5 -V
+  Python 3.5.4
 
-    MyMac:~ test$ python3.5 -m pip install -U pip
-    ```
+  MyMac:~ test$ pip3.5 -V
+  pip 9.0.1 from /Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages (python 3.5)
+
+  MyMac:~ test$ python3.5 -m pip install -U pip
+  ```
 
 ### <a name="python-on-visual-studio"></a>Visual Studio 上的 Python
 
@@ -159,13 +161,16 @@ pip3.5 install -U numpy scipy
 若要安裝 MXNet，請在終端機中執行下列命令：
 
 - 使用 GPU
-    ```bash
-    pip3.5 install mxnet-cu80==0.12.0
-    ```
+
+  ```bash
+  pip3.5 install mxnet-cu80==0.12.0
+  ```
+
 - 不使用 GPU
-    ```bash
-    pip3.5 install mxnet==0.12.0
-    ```
+
+  ```bash
+  pip3.5 install mxnet==0.12.0
+  ```
 
 ### <a name="keras"></a>Keras
 
@@ -198,33 +203,33 @@ pip3.5 install Theano==0.9.0
 
 - **Windows**
 
-   目前沒有官方 wheel 套件。 您可以從 [Anaconda](https://anaconda.org/pytorch/repo?type=all) 或 [University of California](https://www.lfd.uci.edu/~gohlke/pythonlibs/#pytorch) 下載協力廠商套件。
+  目前沒有官方 wheel 套件。 您可以從 [Anaconda](https://anaconda.org/pytorch/repo?type=all) 或 [University of California](https://www.lfd.uci.edu/~gohlke/pythonlibs/#pytorch) 下載協力廠商套件。
 
-   - 將其解壓縮到您的主目錄，例如 *C:\Users\test\pytorch*。
-   - 將 *C:\Users\test\pytorch\Lib\site-packages* 新增至 %PYTHONPATH% 環境變數。
+  - 將其解壓縮到您的主目錄，例如 *C:\Users\test\pytorch*。
+  - 將 *C:\Users\test\pytorch\Lib\site-packages* 新增至 %PYTHONPATH% 環境變數。
 
-      ```bash
-      pip3 install http://download.pytorch.org/whl/cu80/torch-0.4.0-cp36-cp36m-win_amd64.whl
-      pip3 install torchvision
-      ```
+    ```bash
+    pip3 install http://download.pytorch.org/whl/cu80/torch-0.4.0-cp36-cp36m-win_amd64.whl
+    pip3 install torchvision
+    ```
 
 - **macOS**
 
-    ```bash
-    pip3.5 install http://download.pytorch.org/whl/torch-0.2.0.post3-cp35-cp35m-macosx_10_7_x86_64.whl
-    ```
+  ```bash
+  pip3.5 install http://download.pytorch.org/whl/torch-0.2.0.post3-cp35-cp35m-macosx_10_7_x86_64.whl
+  ```
 
-    > [!NOTE]
-    > macOS 二進位檔不支援 CUDA；如果需要 CUDA，請從來源進行安裝
+  > [!NOTE]
+  > macOS 二進位檔不支援 CUDA；如果需要 CUDA，請從來源進行安裝
 
 - **Linux**
 
-    ```bash
-    pip3.5 install http://download.pytorch.org/whl/cu80/torch-0.2.0.post3-cp35-cp35m-manylinux1_x86_64.whl
-    ```
+  ```bash
+  pip3.5 install http://download.pytorch.org/whl/cu80/torch-0.2.0.post3-cp35-cp35m-manylinux1_x86_64.whl
+  ```
 
-    > [!NOTE]
-    > 此單一套件支援 GPU 和 CPU。
+  > [!NOTE]
+  > 此單一套件支援 GPU 和 CPU。
 
 最後，在非 Windows 上安裝 torchvision：
 

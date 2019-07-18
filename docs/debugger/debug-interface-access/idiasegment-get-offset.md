@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: fe768bc356f5e3284218d973c31fa41db0bc51ad
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56596486"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62827577"
 ---
 # <a name="idiasegmentgetoffset"></a>IDiaSegment::get_offset
 擷取位移，區段，區段開始的位置。
@@ -38,5 +38,5 @@ HRESULT get_offset ( 
 ## <a name="return-value"></a>傳回值
  如果成功，會傳回 `S_OK`。 傳回`S_FALSE`不支援這個屬性，則為。 否則會傳回錯誤碼。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md)

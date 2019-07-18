@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 664b7b5a002e2d30856d072ce77047db6adf7f73
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 4e35db1186f2547b8d3c859d20e0e4ce2b1f68e9
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56624070"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "64803337"
 ---
 # <a name="idiasymbolgetage"></a>IDiaSymbol::get_age
 擷取的.pdb 檔案的存留期值。
@@ -39,7 +39,7 @@ HRESULT get_age ( 
  如果成功，則傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。
 
 > [!NOTE]
->  傳回值為`S_FALSE`表示此屬性不適用於符號。
+> 傳回值為`S_FALSE`表示此屬性不適用於符號。
 
 ## <a name="remarks"></a>備註
  存留期不一定會對應至任何已知的時間值;它通常用來判斷是否與對應的.exe 檔案不同步的.pdb 檔案。
@@ -51,5 +51,5 @@ HRESULT get_age ( 
 |標頭：|dia2.h|
 |版本:|DIA SDK v7.0|
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

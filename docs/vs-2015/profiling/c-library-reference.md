@@ -11,12 +11,12 @@ caps.latest.revision: 8
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5178ff7becc318b4f5b796046118bccb83129a59
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: b5b6a44ac8e97477a8e4f4789b10135ac3f989a0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54797008"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433787"
 ---
 # <a name="c-library-reference"></a>C 程式庫參考
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ ms.locfileid: "54797008"
 本節包含並行視覺化檢視 SDK 的參考資訊。  
   
 > [!NOTE]
->  C 語言標準針對程式庫等實作，保留使用開頭為底線 (`_`) 字元的識別項。 請勿在程式碼中使用開頭為底線的名稱。 我們不保證名稱遵循這個慣例之程式碼項目的行為，而且未來的發行版本可能會變更。 因此，本文件中將省略這類程式碼項目。  
+> C 語言標準針對程式庫等實作，保留使用開頭為底線 (`_`) 字元的識別項。 請勿在程式碼中使用開頭為底線的名稱。 我們不保證名稱遵循這個慣例之程式碼項目的行為，而且未來的發行版本可能會變更。 因此，本文件中將省略這類程式碼項目。  
   
 ## <a name="in-this-section"></a>本節內容  
  [CvCreateDefaultMarkerSeriesOfDefaultProvider 函式](../profiling/cvcreatedefaultmarkerseriesofdefaultprovider-function.md)  

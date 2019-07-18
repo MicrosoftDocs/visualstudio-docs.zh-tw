@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - OBJECT_TYPE enumeration
 ms.assetid: c4d246f9-8a98-44ec-b2bb-ff5c684f668e
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7f0aafc5b41d9020c80cd2b86c9048db1d333bfd
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 726e4978ac2c474b1f23b90f409f25b8a58aceab
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56708520"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66349923"
 ---
 # <a name="objecttype"></a>OBJECT_TYPE
 指定運算式評估工具中的物件的類型。
@@ -65,36 +68,51 @@ public enum enum_OBJECT_TYPE { 
 };
 ```
 
-## <a name="members"></a>成員
- OBJECT_TYPE_BOOLEAN 指出物件是布林值。
+## <a name="fields"></a>欄位
+ `OBJECT_TYPE_BOOLEAN`\
+ 指出物件是布林值。
 
- OBJECT_TYPE_CHAR 指出物件是一個字元。
+ `OBJECT_TYPE_CHAR`\
+ 指出物件是一個字元。
 
- OBJECT_TYPE_I1 會指出物件是一個位元組帶正負號的整數。
+ `OBJECT_TYPE_I1`\
+ 指出物件是一個位元組帶正負號的整數。
 
- OBJECT_TYPE_U1 會指出物件是一個位元組不帶正負號的整數。
+ `OBJECT_TYPE_U1`\
+ 指出物件是一個位元組不帶正負號的整數。
 
- OBJECT_TYPE_I2 會指出物件是二位元組帶正負號的整數。
+ `OBJECT_TYPE_I2`\
+ 指出物件是二位元組帶正負號的整數。
 
- OBJECT_TYPE_U2 會指出物件是二位元組不帶正負號的整數。
+ `OBJECT_TYPE_U2`\
+ 指出物件是二位元組不帶正負號的整數。
 
- OBJECT_TYPE_I4 會指出物件是四位元組帶正負號的整數。
+ `OBJECT_TYPE_I4`\
+ 指出物件是四位元組帶正負號的整數。
 
- OBJECT_TYPE_U4 會指出物件是四位元組不帶正負號的整數。
+ `OBJECT_TYPE_U4`\
+ 指出物件是四位元組不帶正負號的整數。
 
- OBJECT_TYPE_I8 會指出物件是八位元組帶正負號的整數。
+ `OBJECT_TYPE_I8`\
+ 表示此物件是八位元組帶正負號的整數。
 
- OBJECT_TYPE_U8 表示之物件的八位元組不帶正負號的整數。
+ `OBJECT_TYPE_U8`\
+ 表示物件的八位元組不帶正負號的整數。
 
- OBJECT_TYPE_R4 指出物件是四位元組浮點數。
+ `OBJECT_TYPE_R4`\
+ 指出物件是四位元組浮點數。
 
- OBJECT_TYPE_R8 會指出物件是 8 位元組浮點數。
+ `OBJECT_TYPE_R8`\
+ 指出物件是 8 位元組浮點數。
 
- OBJECT_TYPE_OBJECT 表示之物件的物件。
+ `OBJECT_TYPE_OBJECT`\
+ 表示物件的物件。
 
- OBJECT_TYPE_NULL 會表示為 NULL 的物件。
+ `OBJECT_TYPE_NULL`\
+ 表示為 NULL 的物件。
 
- OBJECT_TYPE_CLASS 表示之物件的類別。
+ `OBJECT_TYPE_CLASS`\
+ 表示物件的類別。
 
 ## <a name="remarks"></a>備註
  作為引數[CreatePrimitiveObject](../../../extensibility/debugger/reference/idebugfunctionobject-createprimitiveobject.md)並[CreateArrayObject](../../../extensibility/debugger/reference/idebugfunctionobject-createarrayobject.md)方法。

@@ -10,17 +10,17 @@ helpviewer_keywords:
 - session debug manager, debug engine multiplexing
 - session debug manager, delegating
 ms.assetid: fbb1928d-dddc-43d1-98a4-e23b0ecbae09
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: edbb1510265307e1c9fe6c8a01cffc0115d879ac
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 6c7dd40796fbf0141cc60bf86204bce462594f8f
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56715852"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66348570"
 ---
 # <a name="session-debug-manager"></a>工作階段偵錯管理員
 工作階段的偵錯管理員 (SDM) 管理任何偵錯引擎 (DE) 要進行偵錯跨任意數目的機器的任意數目的多個處理序中的程式的數目。 除了多工器的偵錯引擎，SDM 提供 ide 的偵錯工作階段的統一的檢視。

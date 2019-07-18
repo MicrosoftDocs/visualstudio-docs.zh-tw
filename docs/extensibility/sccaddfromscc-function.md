@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - SccAddFromScc function
 ms.assetid: 902e764d-200e-46e1-8c42-4da7b037f9a0
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 199f89d7c2ce4c9674ed9d79ec13a1b392b70371
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: e8f37ce82630b72d5a01c66c8848431e8f6c2891
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56706999"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66334037"
 ---
 # <a name="sccaddfromscc-function"></a>SccAddFromScc 函式
 此函數可讓使用者瀏覽已在原始檔控制系統中的檔案，並接著讓這些檔案的部分目前的專案。 比方說，此函式可以取得常見的標頭檔到目前的專案而不複製檔案。 傳回陣列的檔案， `lplpFileNames`，包含的使用者想要新增至 IDE 專案的檔案清單。
@@ -69,7 +69,7 @@ SCCRTN SccAddFromScc (
  `lplpFileNames` 是`char ***`指標。 原始檔控制外掛程式將放置的檔案名稱，藉以在此 api 的標準方式傳遞清單的指標陣列的指標。
 
 > [!NOTE]
->  VSSCI API 的初始版本未提供一個方法來指示加入之檔案的目標專案。 為了完成此的語意`lplpFIleNames`參數已經強化，可讓 in/out 參數，而不是一個 output 參數。 如果只指定單一檔案，也就是值所指向`lpnFiles`= 1，則第一個項目`lplpFileNames`包含目標資料夾。 若要使用這些新的語意，IDE 會呼叫`SccSetOption`函式搭配`nOption`參數設為`SCC_OPT_SHARESUBPROJ`。 如果原始檔控制外掛程式不支援語意，它會傳回`SCC_E_OPTNOTSUPPORTED`。 執行使用的是停用**從原始檔控制新增**功能。 如果外掛程式支援**從原始檔控制新增**功能 (`SCC_CAP_ADDFROMSCC`)，則它必須支援新的語意，並傳回`SCC_I_SHARESUBPROJOK`。
+> VSSCI API 的初始版本未提供一個方法來指示加入之檔案的目標專案。 為了完成此的語意`lplpFIleNames`參數已經強化，可讓 in/out 參數，而不是一個 output 參數。 如果只指定單一檔案，也就是值所指向`lpnFiles`= 1，則第一個項目`lplpFileNames`包含目標資料夾。 若要使用這些新的語意，IDE 會呼叫`SccSetOption`函式搭配`nOption`參數設為`SCC_OPT_SHARESUBPROJ`。 如果原始檔控制外掛程式不支援語意，它會傳回`SCC_E_OPTNOTSUPPORTED`。 執行使用的是停用**從原始檔控制新增**功能。 如果外掛程式支援**從原始檔控制新增**功能 (`SCC_CAP_ADDFROMSCC`)，則它必須支援新的語意，並傳回`SCC_I_SHARESUBPROJOK`。
 
 ## <a name="see-also"></a>另請參閱
 - [原始檔控制外掛程式 API 函式](../extensibility/source-control-plug-in-api-functions.md)

@@ -7,16 +7,16 @@ manager: jillfra
 ms.workload:
 - uwp
 author: gewarren
-ms.openlocfilehash: 23c16ab17ef1ad4870fa6435939bc29db5208803
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 359f2f8b078c197f12a6db09858ca7c9da5a621a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55917762"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62809625"
 ---
-# <a name="unit-testing-visual-c-code"></a>對 Visual C# 程式碼進行單元測試
+# <a name="unit-test-c-code"></a>對 C# 程式碼進行單元測試
 
-本文說明如何在 UWP 應用程式中建立 Visual C# 類別的單元測試。 Rooter 類別會藉由實作計算某數值的平方根估計數的函式，示範微積分中極限理論的模糊記憶。 然後 Maths 應用程式就可以使用這個函式向使用者展現許多可運用數學運算執行的有趣作業。
+本文描述如何在 UWP 應用程式中建立 C# 類別的單元測試。 Rooter 類別會藉由實作計算某數值的平方根估計數的函式，示範微積分中極限理論的模糊記憶。 然後 Maths 應用程式就可以使用這個函式向使用者展現許多可運用數學運算執行的有趣作業。
 
 本文示範如何使用單元測試作為開發工作的第一步。 採用這種方式時，您會先撰寫測試方法，用來驗證要測試之系統中的特定行為，然後撰寫通過測試的程式碼。 依照下列程序的順序進行變更，您就可以反轉策略，先撰寫要測試的程式碼，再撰寫單元測試。
 
@@ -26,13 +26,13 @@ ms.locfileid: "55917762"
 
 1. 在 [檔案] 功能表上，選擇 [新增] > [專案]。
 
-2. 在 [新增專案] 對話方塊上，展開 [已安裝] > [Visual C#]，並選擇 [Windows 通用]。 然後從專案範本清單中選擇 [空白應用程式]。
+2. 搜尋並選取 [空白應用程式 (通用 Windows)] 專案範本。
 
-3. 將專案命名為 `Maths`，並確認已選取 [為方案建立目錄]。
+3. 將專案命名為 `Maths`。
 
 4. 在 [方案總管] 中選擇方案名稱，並從捷徑功能表選擇 [新增]，然後選擇 [新增專案]。
 
-5. 在 [新增專案] 對話方塊上，展開 [已安裝]，然後展開 [Visual C#]，並選擇 [Windows 通用]。 接著從專案範本清單中選擇 [單元測試應用程式 (通用 Windows)]。
+5. 搜尋並選取 [單元測試應用程式 (通用 Windows)] 專案範本。
 
 6. 在 Visual Studio 編輯器中開啟 *UnitTest1.cs*。
 
@@ -118,7 +118,7 @@ ms.locfileid: "55917762"
 
     2. 在 [新增參考 - RooterTests] 對話方塊中，展開 [方案] 並選擇 [專案]。 然後選取 **Maths** 項目。
 
-        ![將參考加入 Maths 專案](../test/media/ute_cs_windows_addreference.png)
+        ![加入 Maths 專案的參考](../test/media/ute_cs_windows_addreference.png)
 
 2. 將 using 陳述式加入至 *UnitTest1.cs* 檔案：
 
@@ -150,7 +150,7 @@ ms.locfileid: "55917762"
 
 5. 在 [測試總管] 中，選擇 [全部執行]。
 
-   ![基本測試成功](../test/media/ute_cpp_testexplorer_basictest.png)
+   ![成功的基本測試](../test/media/ute_cpp_testexplorer_basictest.png)
 
 您已經設定測試和程式碼專案，並確認您可以執行在程式碼專案中執行函式的測試。 現在您可以開始撰寫真正的測試和程式碼。
 

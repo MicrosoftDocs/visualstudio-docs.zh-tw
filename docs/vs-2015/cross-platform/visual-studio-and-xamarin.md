@@ -8,18 +8,17 @@ ms.assetid: 1da4064f-af69-472c-8f31-98484be5f790
 caps.latest.revision: 14
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 99f36287c6ab1aa6b8157e6dde2a84bb97233fcb
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 098d94a1aed9020271db5010e278a4aa8fc68330
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54766954"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442121"
 ---
 # <a name="visual-studio-and-xamarin"></a>Visual Studio 和 Xamarin
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
-Xamarin 是行動應用程式開發平台，可從通用 C#/.NET 程式碼基底建置原生 iOS、Android 和 Windows 應用程式，以在平台之間重複使用 75% 到將近 100% 的程式碼。 使用 Xamarin 和 C# 撰寫的應用程式可完整存取基礎平台 API，而且能夠建置原生使用者介面，並編譯為平台專用的封裝，因此不會對執行階段效能造成太大的影響。 注意:Xamarin 也支援F#，但本文將著重在C#只。 目前不支援 Visual Basic。)  
+Xamarin 是行動應用程式開發平台，可從通用 C#/.NET 程式碼基底建置原生 iOS、Android 和 Windows 應用程式，以在平台之間重複使用 75% 到將近 100% 的程式碼。 使用 Xamarin 和 C# 撰寫的應用程式可完整存取基礎平台 API，而且能夠建置原生使用者介面，並編譯為平台專用的封裝，因此不會對執行階段效能造成太大的影響。 (注意：Xamarin 也支援F#，但本文將著重在C#只。 目前不支援 Visual Basic。)  
   
  更棒的是，熟悉 C#、.NET 和 Visual Studio 的開發人員在使用 Xamarin 開發行動應用程式時，不需要了解 Objective-C 或 Java 等機器碼語言，也能享有相同的功能和產能，包括在 Android、iOS 和 Windows 裝置上進行遠端偵錯。 因此，許多具有美觀使用者介面的高效能應用程式 (例如 NASCAR、Aviva 和 MixRadio) 意料之中都是使用 Xamarin 所建置。  
   
@@ -36,7 +35,7 @@ Xamarin 是行動應用程式開發平台，可從通用 C#/.NET 程式碼基底
   您可以透過[任何版本的 Visual Studio 2015](https://www.visualstudio.com/vs-2015-product-editions) (Community、Professional 及 Enterprise) 來使用所有的 Xamarin 功能。 另請注意，截至 2016 年 3 月 31 日，Xamarin 已隨附於所有版本的 Visual Studio 2015 中，不再需要個別授權。 針對 Visual Studio 2013，您可以個別安裝 Xamarin，如[設定和安裝](../cross-platform/setup-and-install.md)主題中所述。  
   
 > [!NOTE]
->  這些指示會說明最簡單且最直接的電腦設定，適用於具有 Windows 和 Visual Studio 背景的人員。 在這項設定中，整體開發經驗已經過簡化，因為您只有在使用 iOS 模擬器和行動網卡時才需要與 Mac 互動。 如果您具備 Mac 背景，則建議您在 Parallels/VMWare 中執行 Visual Studio，或是使用 Xamarin Studio Community。 如需相關指示，請參閱[針對 Mac 使用者的設定、安裝和驗證](../cross-platform/setup-install-and-verifications-for-mac-users.md)。  
+> 這些指示會說明最簡單且最直接的電腦設定，適用於具有 Windows 和 Visual Studio 背景的人員。 在這項設定中，整體開發經驗已經過簡化，因為您只有在使用 iOS 模擬器和行動網卡時才需要與 Mac 互動。 如果您具備 Mac 背景，則建議您在 Parallels/VMWare 中執行 Visual Studio，或是使用 Xamarin Studio Community。 如需相關指示，請參閱[針對 Mac 使用者的設定、安裝和驗證](../cross-platform/setup-install-and-verifications-for-mac-users.md)。  
   
 > [!NOTE]
->  如果您想要尋求以 HTML 和 CSS 為基礎的跨平台開發解決方案，請試試 Visual Studio Tools for Apache Cordova，如 [Visual Studio 中的跨平台開發](../cross-platform/cross-platform-mobile-development-in-visual-studio.md#HTML)所述。
+> 如果您想要尋求以 HTML 和 CSS 為基礎的跨平台開發解決方案，請試試 Visual Studio Tools for Apache Cordova，如 [Visual Studio 中的跨平台開發](../cross-platform/cross-platform-mobile-development-in-visual-studio.md#HTML)所述。

@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0cd81854dfa603063a70b2fe11b06eff341c203f
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MT
+ms.openlocfilehash: fcc35f74625b17762656451e598d131dfe85417e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913050"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63385855"
 ---
 # <a name="validation-in-a-domain-specific-language"></a>網域指定的語言中的驗證
 身為網域指定的語言 (DSL) 的作者，您可以定義驗證條件約束，以驗證使用者建立的模型是否有意義。 例如，如果您的 DSL 允許使用者繪製人們與其祖先的家譜，您可以撰寫條件約束，確保孩子的出生日期晚於父母的出生日期。
@@ -25,7 +25,7 @@ ms.locfileid: "55913050"
  驗證是特別重要，如果您正在撰寫文字範本或其他工具來處理使用者的模型。 驗證可確保模型滿足這些工具假設的前置條件。
 
 > [!WARNING]
->  除了擴充功能的功能表命令和軌跡處理常式之外，您也可以將驗證條件約束定義為 DSL 的個別擴充功能。 當使用者安裝 DSL 時，可以另外選擇安裝這些擴充功能。 如需詳細資訊，請參閱 <<c0> [ 藉由使用 MEF 擴充您的 DSL](../modeling/extend-your-dsl-by-using-mef.md)。
+> 除了擴充功能的功能表命令和軌跡處理常式之外，您也可以將驗證條件約束定義為 DSL 的個別擴充功能。 當使用者安裝 DSL 時，可以另外選擇安裝這些擴充功能。 如需詳細資訊，請參閱 <<c0> [ 藉由使用 MEF 擴充您的 DSL](../modeling/extend-your-dsl-by-using-mef.md)。
 
 ## <a name="running-validation"></a>執行驗證
  當使用者編輯模型 (亦即網域指定的語言執行個體) 時，下列動作會執行驗證：
@@ -48,19 +48,19 @@ ms.locfileid: "55913050"
  每個驗證方法會報告找到的任何錯誤。
 
 > [!NOTE]
->  驗證方法會報告錯誤，但不會變更模型。 如果您想要調整或避免特定變更，請參閱[驗證的替代方法](#alternatives)。
+> 驗證方法會報告錯誤，但不會變更模型。 如果您想要調整或避免特定變更，請參閱[驗證的替代方法](#alternatives)。
 
 #### <a name="to-define-a-validation-constraint"></a>定義驗證條件約束
 
 1. 啟用中的驗證**於**節點：
 
-   1.  開啟**Dsl\DslDefinition.dsl**。
+   1. 開啟**Dsl\DslDefinition.dsl**。
 
-   2.  在 [DSL 總管] 中，展開**編輯器**節點，然後選取**驗證**。
+   2. 在 [DSL 總管] 中，展開**編輯器**節點，然後選取**驗證**。
 
-   3.  在 [屬性] 視窗中，設定**會使用**屬性，以`true`。 最方便的做法是設定所有屬性。
+   3. 在 [屬性] 視窗中，設定**會使用**屬性，以`true`。 最方便的做法是設定所有屬性。
 
-   4.  按一下 [**轉換所有範本**中**方案總管] 中**工具列。
+   4. 按一下 [**轉換所有範本**中**方案總管] 中**工具列。
 
 2. 撰寫一個或多個網域類別或網域關聯性的部分類別定義。 新的程式碼檔案中撰寫這些定義**Dsl**專案。
 
@@ -70,7 +70,7 @@ ms.locfileid: "55913050"
    [ValidationState(ValidationState.Enabled)]
    ```
 
-   -   根據預設，這個屬性也會啟用衍生類別的驗證。 如果您要停用特定衍生類別的驗證，您可以使用 `ValidationState.Disabled`。
+   - 根據預設，這個屬性也會啟用衍生類別的驗證。 如果您要停用特定衍生類別的驗證，您可以使用 `ValidationState.Disabled`。
 
 4. 將驗證方法加入至類別。 每個驗證方法可以命名為任何名稱，但只能有一個 <xref:Microsoft.VisualStudio.Modeling.Validation.ValidationContext> 類型的參數。
 
@@ -82,7 +82,7 @@ ms.locfileid: "55913050"
 
     ValidationCategories 指定何時執行方法。
 
-   例如：
+   例如: 
 
 ```csharp
 using Microsoft.VisualStudio.Modeling;
@@ -177,7 +177,7 @@ public partial class Person
 
  其缺點在於合併的方法比較難管理，並且條件約束必須具有相同的 `ValidationCategories`。 因此，建議您盡可能以不同的方法來保留每個條件約束。
 
- **您可以將值傳入內容快取。** 內容參數具有的字典，您可以在其中放置任意值。 在執行驗證期間都可以使用此字典。 例如，某個驗證方法可能會將錯誤計數保留在內容中，然後使用該內容以避免錯誤視窗中出現太多重複的訊息。 例如：
+ **您可以將值傳入內容快取。** 內容參數具有的字典，您可以在其中放置任意值。 在執行驗證期間都可以使用此字典。 例如，某個驗證方法可能會將錯誤計數保留在內容中，然後使用該內容以避免錯誤視窗中出現太多重複的訊息。 例如: 
 
 ```csharp
 List<ParentsHaveChildren> erroneousLinks;
@@ -211,9 +211,9 @@ partial class MyLanguageCommandSet
 ...
 ```
 
- 如需詳細資訊，請參閱[＜How to：將命令加入至捷徑功能表](../modeling/how-to-add-a-command-to-the-shortcut-menu.md)。
+ 如需詳細資訊，請參閱[如何：將命令加入至捷徑功能表](../modeling/how-to-add-a-command-to-the-shortcut-menu.md)。
 
- 您也可以建立獨立的驗證控制器，自行管理錯誤。 例如：
+ 您也可以建立獨立的驗證控制器，自行管理錯誤。 例如: 
 
 ```csharp
 using Microsoft.VisualStudio.Modeling;
@@ -310,7 +310,7 @@ private void TestForCircularLinks(ValidationContext context)
 ```
 
 > [!NOTE]
->  您可以視需要在方法前面加上任意數目的 `[ValidationMethod()]` 屬性。 您可以同時將一個方法加入至自訂分類和標準分類。
+> 您可以視需要在方法前面加上任意數目的 `[ValidationMethod()]` 屬性。 您可以同時將一個方法加入至自訂分類和標準分類。
 
  若要叫用自訂驗證：
 

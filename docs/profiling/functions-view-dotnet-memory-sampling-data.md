@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: b0e8c14779f9f7b3f14fab2dfc1022db0319aeb4
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56637967"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62974055"
 ---
 # <a name="functions-view---net-memory-sampling-data"></a>函式檢視 - .NET 記憶體取樣資料
 使用取樣方法所收集之 .NET 記憶體配置分析資料的 [函式] 檢視，會列出已在分析回合期間配置記憶體的函式，並報告配置大小和數目。

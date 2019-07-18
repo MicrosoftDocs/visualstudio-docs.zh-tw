@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 06ef9eb5969b351d49212e9b940988e7ff14c40e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 0312571b0a96b080949398618888b05c2704d3ca
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56636173"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "64808951"
 ---
 # <a name="idiasymbolgetliverangestartaddressoffset"></a>IDiaSymbol::get_liveRangeStartAddressOffset
 傳回本機符號有效範圍的起始位址的位移的部分。
@@ -39,7 +39,7 @@ HRESULT get_liveRangeStartAddressOffset ( 
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
 
 > [!NOTE]
->  傳回的錯誤碼表示符號沒有即時範圍資訊。
+> 傳回的錯誤碼表示符號沒有即時範圍資訊。
 
 ## <a name="remarks"></a>備註
  區段和位移所形成的位址是符號無效範圍的開頭。
@@ -47,11 +47,11 @@ HRESULT get_liveRangeStartAddressOffset ( 
  若要取得位址中區段的一部分，請使用[IDiaSymbol::get_liveRangeStartAddressSection](../../debugger/debug-interface-access/idiasymbol-get-liverangestartaddresssection.md)。
 
 ## <a name="requirements"></a>需求
- 標頭： Dia2.h
+ 標頭：dia2.h
 
  程式庫： diaguids.lib
 
  DLL: msdia100.dll
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

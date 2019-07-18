@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: af79f4074d3eb7e370d3e4fb24984e70ed2d962a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: ddd5d6a99f0d5e2f0eb3bab87bbe7805b7d8588a
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56606221"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "64830732"
 ---
 # <a name="idiasymbolgetunalignedtype"></a>IDiaSymbol::get_unalignedType
 擷取指定使用者定義資料類型是否未對齊的旗標。
@@ -39,7 +39,7 @@ HRESULT get_unalignedType ( 
  如果成功，則傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。
 
 > [!NOTE]
->  傳回值為`S_FALSE`表示此屬性不適用於符號。
+> 傳回值為`S_FALSE`表示此屬性不適用於符號。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

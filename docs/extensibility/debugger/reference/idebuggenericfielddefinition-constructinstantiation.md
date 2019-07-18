@@ -6,17 +6,20 @@ helpviewer_keywords:
 - ConstructInstantiation
 - IDebugGenericFieldDefinition::ConstructInstantiation
 ms.assetid: ef8ae261-a98b-4dc2-93b3-7c5191818ba2
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8c2fc6b9b7683180c3a9c3f2aa967ba171a48097
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 89f7ecfc79cc2a4279a8ca0fccfc527ef63e603b
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56690678"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66313218"
 ---
 # <a name="idebuggenericfielddefinitionconstructinstantiation"></a>IDebugGenericFieldDefinition::ConstructInstantiation
 建構指定型別引數陣列的欄位執行個體。
@@ -39,18 +42,15 @@ int ConstructInstantiation(
 );
 ```
 
-#### <a name="parameters"></a>參數
- `cArgs`
+## <a name="parameters"></a>參數
+`cArgs`\
+[in]中的引數`ppArgs`陣列。
 
- [in]中的引數`ppArgs`陣列。
+`ppArgs`\
+[in]包含型別引數的陣列。 型別引數必須是封閉式的型別 （非泛型或完整具現化泛型）。
 
- `ppArgs`
-
- [in]包含型別引數的陣列。 型別引數必須是封閉式的型別 （非泛型或完整具現化泛型）。
-
- `ppConstructedField`
-
- [out]傳回[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)介面，表示新的欄位。
+`ppConstructedField`\
+[out]傳回[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)介面，表示新的欄位。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugInterceptExceptionCompleteEvent2::GetInterceptCookie
 ms.assetid: 07b20866-e598-4783-9ecc-6aa8625c8804
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 400f0c6785a9cf9096caba9403886a2009905859
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 58967be9befc7061ea8005009b1628966a93de0f
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56700974"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66349510"
 ---
 # <a name="idebuginterceptexceptioncompleteevent2getinterceptcookie"></a>IDebugInterceptExceptionCompleteEvent2::GetInterceptCookie
 攔截到例外狀況處理完成時呼叫。
@@ -36,10 +39,9 @@ int GetInterceptCookie(
 );
 ```
 
-#### <a name="parameters"></a>參數
- `pqwCookie`
-
- [out]攔截到例外狀況相關聯的唯一值。
+## <a name="parameters"></a>參數
+`pqwCookie`\
+[out]攔截到例外狀況相關聯的唯一值。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則會傳回錯誤碼。

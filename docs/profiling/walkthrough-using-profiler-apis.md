@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 61b9cb5bfc1b310bf7947c51fa3ba718db824fce
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 5b1b6817b31272bf01c92e77ff5b04dfff35f6ad
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57868203"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63428120"
 ---
 # <a name="walkthrough-using-profiler-apis"></a>逐步解說：使用分析工具 API
 
@@ -39,8 +39,6 @@ ms.locfileid: "57868203"
 
  針對受控碼，分析工具 API 位在 *Microsoft.VisualStudio.Profiler.dll* 中。 這個 DLL 位於 *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools* 目錄。 針對 64 位元應用程式，資料夾為 *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools\x64*。 如需詳細資訊，請參閱<xref:Microsoft.VisualStudio.Profiler>。
 
-
-
 ## <a name="prerequisites"></a>必要條件
  本逐步解說假設您所選擇的開發環境設定成支援偵錯和取樣。 下列主題概述這些必要條件：
 
@@ -62,12 +60,12 @@ DataCollection.CurrentId);
 
 #### <a name="to-create-the-code-to-profile"></a>建立要分析的程式碼
 
-1.  根據您的喜好設定，在 Visual Studio 中建立新的 C# 專案，或使用命令列組建。
+1. 根據您的喜好設定，在 Visual Studio 中建立新的 C# 專案，或使用命令列組建。
 
     > [!NOTE]
-    >  您的組建必須參考 *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools* 目錄中的 *Microsoft.VisualStudio.Profiler.dll* 程式庫。
+    > 您的組建必須參考 *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools* 目錄中的 *Microsoft.VisualStudio.Profiler.dll* 程式庫。
 
-2.  複製下列程式碼，並將其貼入專案中：
+2. 複製下列程式碼，並將其貼入專案中：
 
     ```csharp
     using System;
@@ -150,23 +148,23 @@ DataCollection.CurrentId);
 
 #### <a name="to-collect-and-view-data-at-the-command-line"></a>在命令列收集和檢視資料
 
-1.  編譯您在本逐步解說前面的「建立要分析的程式碼」程序中所建立範例程式碼的偵錯版本。
+1. 編譯您在本逐步解說前面的「建立要分析的程式碼」程序中所建立範例程式碼的偵錯版本。
 
-2.  若要分析 Managed 應用程式，請鍵入下列命令，以設定適當的環境變數：
+2. 若要分析 Managed 應用程式，請鍵入下列命令，以設定適當的環境變數：
 
      **VsPerfCLREnv /traceon**
 
-3.  輸入下列命令：**VSInstr \<>.exe**
+3. 輸入下列命令：**VSInstr \<>.exe**
 
-4.  輸入下列命令：**VSPerfCmd /start:trace /output:\<檔案名稱>.vsp**
+4. 輸入下列命令：**VSPerfCmd /start:trace /output:\<檔案名稱>.vsp**
 
-5.  輸入下列命令：**VSPerfCmd /globaloff**
+5. 輸入下列命令：**VSPerfCmd /globaloff**
 
-6.  執行程式。
+6. 執行程式。
 
-7.  輸入下列命令：**VSPerfCmd /shutdown**
+7. 輸入下列命令：**VSPerfCmd /shutdown**
 
-8.  輸入下列命令：**VSPerfReport /calltrace:\<檔案名稱>.vsp**
+8. 輸入下列命令：**VSPerfReport /calltrace:\<檔案名稱>.vsp**
 
      在目前目錄中，會使用產生的效能資料來建立 .*csv* 檔案。
 

@@ -9,17 +9,17 @@ helpviewer_keywords:
 - Tools Options pages [Visual Studio SDK], layouts
 - Tools Options pages [Visual Studio SDK], attributes
 ms.assetid: e6c0e636-5ec3-450e-b395-fc4bb9d75918
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4397ba075c0f0ebd066dc885991a34f08586008b
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 7c336503b80e2af34ac58c7debde16895d7f2585
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56618350"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66314855"
 ---
 # <a name="options-and-options-pages"></a>選項和選項頁
 按一下 **選項**上**工具** 功能表隨即開啟**選項** 對話方塊。 在此對話方塊中的選項會統稱為選項 頁面。 瀏覽窗格中的樹狀控制項包含選項類別，而且每個類別目錄選項頁面。 當您選取的頁面時，它的選項會出現在右窗格中。 這些頁面可讓您變更判斷 VSPackage 的狀態選項的值。
@@ -59,7 +59,7 @@ ms.locfileid: "56618350"
 - <xref:System.ComponentModel.DescriptionAttribute> 決定選項的描述。
 
   > [!NOTE]
-  >  對等的屬性、 SRCategory、 LocDisplayName，SRDescription，字串資源當地語系化，並使用定義於[受管理的專案範例](http://go.microsoft.com/fwlink/?LinkId=122774)。
+  > 對等的屬性、 SRCategory、 LocDisplayName，SRDescription，字串資源當地語系化，並使用定義於[受管理的專案範例](http://go.microsoft.com/fwlink/?LinkId=122774)。
 
   請考慮下列程式碼片段：
 
@@ -84,4 +84,4 @@ ms.locfileid: "56618350"
  自動化屬性的登錄路徑由合併<xref:Microsoft.VisualStudio.Shell.Package.ApplicationRegistryRoot%2A>，word、 AutomationProperties，以及選項頁面上的分類和名稱。 例如，如果 [選項] 頁面有 [我的類別目錄] 類別中，我的格線頁名稱，而<xref:Microsoft.VisualStudio.Shell.Package.ApplicationRegistryRoot%2A>，HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp，則 [自動化] 屬性已登錄機碼，這是 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\AutomationProperties\My Category\My 格線頁。
 
 > [!NOTE]
->  正式名稱，也就是我的 Category.My 格線頁中，是這個機碼名稱子機碼的值。
+> 正式名稱，也就是我的 Category.My 格線頁中，是這個機碼名稱子機碼的值。

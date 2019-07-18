@@ -5,23 +5,23 @@ ms.topic: conceptual
 helpviewer_keywords:
 - VSPackages, installation directory
 ms.assetid: 01fbbb5b-f747-446c-afe0-2a081626a945
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 41a5016c528e754e452ee1248e85b705c41a44ac
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 249efe70cdcc2cf8ef600ca4d9e009e094e1b105
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56621067"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66309113"
 ---
 # <a name="choose-the-installation-directory-for-a-vspackage"></a>選擇 vspackage 的安裝目錄
 VSPackage 和其支援的檔案必須是使用者的檔案系統上。 位置取決於 VSPackage 是否管理或未受管理，您的並排顯示版本設定配置和使用者選擇。
 
 ## <a name="unmanaged-vspackages"></a>Unmanaged 的 Vspackage
- Unmanaged 的 VSPackage 是 COM 伺服器可安裝在任何位置。 其登錄資訊必須精確地反映其位置。 安裝程式使用者介面 (UI) 應該提供的預設位置為的子目錄`ProgramFilesFolder`Windows Installer 屬性值。 例如: 
+ Unmanaged 的 VSPackage 是 COM 伺服器可安裝在任何位置。 其登錄資訊必須精確地反映其位置。 安裝程式使用者介面 (UI) 應該提供的預設位置為的子目錄`ProgramFilesFolder`Windows Installer 屬性值。 例如：
 
 *&lt;ProgramFilesFolder&gt;\\&lt;MyCompany&gt;\\&lt;MyVSPackageProduct&gt;\V1.0\\*
 
@@ -47,16 +47,15 @@ VSPackage 和其支援的檔案必須是使用者的檔案系統上。 位置取
 
  [管理 Vspackage](../../extensibility/managing-vspackages.md)文章指出登錄項目控制 where[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]實際上會尋找 VSPackage 的附屬 DLL。 不過，[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]嘗試載入附屬 DLL 中命名的 LCID 值，以下列順序：
 
-1.  預設 LCID (Visual Studio LCID，例如 *\1033* 英文)
+1. 預設 LCID (Visual Studio LCID，例如 *\1033* 英文)
 
-2.  使用預設的子語言的預設 LCID。
+2. 使用預設的子語言的預設 LCID。
 
-3.  系統預設 LCID。
+3. 系統預設 LCID。
 
-4.  預設子語言使用系統預設 LCID。
+4. 預設子語言使用系統預設 LCID。
 
-5.  美國英文 (*。 \1033*或是 *。 \0x409*)。
-
+5. 美國英文 ( *。 \1033*或是 *。 \0x409*)。
 
 如果您的 VSPackage DLL 包含資源和**SatelliteDll\DllName**登錄項目指向它，[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]嘗試載入它們依上述順序。
 

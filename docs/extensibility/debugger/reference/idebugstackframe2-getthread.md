@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugStackFrame2::GetThread
 ms.assetid: cbeef85b-3dd7-4f97-adc2-c4d197d979fc
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 99248291ce06aa4f07f627429bbb5cc2993a61c1
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 36ab3d18a54eceb01e0f4770c4bf6e8bae62606d
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56718166"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66352166"
 ---
 # <a name="idebugstackframe2getthread"></a>IDebugStackFrame2::GetThread
 取得與堆疊框架相關聯的執行緒。
@@ -36,10 +39,9 @@ int GetThread ( 
 );
 ```
 
-#### <a name="parameters"></a>參數
- `ppThread`
-
- [out]傳回[IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)物件，表示執行緒。
+## <a name="parameters"></a>參數
+`ppThread`\
+[out]傳回[IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)物件，表示執行緒。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

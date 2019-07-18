@@ -1,14 +1,9 @@
 ---
-title: Ca1060： 必須將 P-invokes 移到 NativeMethods 類別 |Microsoft Docs
-ms.custom: ''
+title: CA1060:將 P-invokes 移到 NativeMethods 類別 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - MovePInvokesToNativeMethodsClass
 - CA1060
@@ -20,14 +15,14 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 026f568d71c80af95d2d4bee640dc11d1042713f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f47fa4326da9914171e5014decbd6d6923c2f02e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49913861"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68200473"
 ---
-# <a name="ca1060-move-pinvokes-to-nativemethods-class"></a>CA1060：將 P/Invokes 移到 NativeMethods 類別
+# <a name="ca1060-move-pinvokes-to-nativemethods-class"></a>CA1060:必須將 P/Invokes 移到 NativeMethods 類別
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -71,7 +66,7 @@ ms.locfileid: "49913861"
 
 ## <a name="nativemethods-example"></a>NativeMethods 範例
 
-### <a name="description"></a>描述
+### <a name="description"></a>說明
  因為**NativeMethods**類別不應該使用標示**SuppressUnmanagedCodeSecurityAttribute**，將要求放入其中的 P/Invokes **UnmanagedCode**權限。 因為大部分的應用程式從本機電腦上執行，以及完全信任執行，這通常不是問題。 不過，如果您正在開發可重複使用程式庫，您應該考慮定義**SafeNativeMethods**或是**UnsafeNativeMethods**類別。
 
  下列範例所示**Interaction.Beep**包裝的方法**MessageBeep**函式從 user32.dll。 **MessageBeep**置於 P/Invoke **NativeMethods**類別。
@@ -82,7 +77,7 @@ ms.locfileid: "49913861"
 
 ## <a name="safenativemethods-example"></a>SafeNativeMethods 範例
 
-### <a name="description"></a>描述
+### <a name="description"></a>說明
  P/Invoke 方法，可以安全地公開給任何應用程式，並沒有任何副作用都應該放在名為類別**SafeNativeMethods**。 您不必要求權限，您就不必在多注意力在從的呼叫，用多少付多少。
 
  下列範例所示**environment.tickcount 做**屬性，可包裝**GetTickCount**函式，從 kernel32.dll。
@@ -94,7 +89,7 @@ ms.locfileid: "49913861"
 ## <a name="unsafenativemethods-example"></a>UnsafeNativeMethods 範例
 
 ### <a name="description"></a>描述
- 無法安全地呼叫和，可能會造成副作用的 P/Invoke 方法都應該放在名為類別**UnsafeNativeMethods**。 這些方法應該嚴格檢查以確定它們都不會公開該使用者不小心。 此規則[CA2118： 檢閱 SuppressUnmanagedCodeSecurityAttribute 使用方法](../code-quality/ca2118-review-suppressunmanagedcodesecurityattribute-usage.md)可以解決這個。 或者，方法應該有其他的權限，而不是要求**UnmanagedCode**時使用它們。
+ 無法安全地呼叫和，可能會造成副作用的 P/Invoke 方法都應該放在名為類別**UnsafeNativeMethods**。 這些方法應該嚴格檢查以確定它們都不會公開該使用者不小心。 此規則[CA2118:檢閱 SuppressUnmanagedCodeSecurityAttribute 使用方法](../code-quality/ca2118-review-suppressunmanagedcodesecurityattribute-usage.md)可以解決這個。 或者，方法應該有其他的權限，而不是要求**UnmanagedCode**時使用它們。
 
  下列範例所示**Cursor.Hide**包裝的方法**ShowCursor**函式從 user32.dll。
 
@@ -104,6 +99,3 @@ ms.locfileid: "49913861"
 
 ## <a name="see-also"></a>另請參閱
  [設計警告](../code-quality/design-warnings.md)
-
-
-

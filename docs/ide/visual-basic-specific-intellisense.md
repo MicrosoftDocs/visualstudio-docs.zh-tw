@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: dc0897f3b2964996b18a40cc8dda16068ff772f2
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55917671"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62582507"
 ---
 # <a name="intellisense-for-visual-basic-code-files"></a>Visual Basic 程式碼檔案的 IntelliSense
 

@@ -1,14 +1,9 @@
 ---
-title: IEnumDebugPorts2 |Microsoft Docs
-ms.custom: ''
+title: IEnumDebugPorts2 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IEnumDebugPorts2
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 1754eef3-cf62-42e0-b218-1911acba77d4
 caps.latest.revision: 13
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 678784d8ee9a15099e4c46554e2c1451936611d8
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: c30e42592af4d34765951b5e229555556c9b57b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51750609"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68155025"
 ---
 # <a name="ienumdebugports2"></a>IEnumDebugPorts2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -46,7 +41,7 @@ IEnumDebugPorts2 : IUnknown
   
 |方法|描述|  
 |------------|-----------------|  
-|[下一步](../../../extensibility/debugger/reference/ienumdebugports2-next.md)|擷取指定的數目的列舉型別序列中的連接埠。|  
+|[下一個](../../../extensibility/debugger/reference/ienumdebugports2-next.md)|擷取指定的數目的列舉型別序列中的連接埠。|  
 |[Skip](../../../extensibility/debugger/reference/ienumdebugports2-skip.md)|略過指定的數目的列舉型別序列中的連接埠。|  
 |[Reset](../../../extensibility/debugger/reference/ienumdebugports2-reset.md)|將列舉型別序列重設到開頭。|  
 |[Clone](../../../extensibility/debugger/reference/ienumdebugports2-clone.md)|建立列舉值，包含目前的列舉值相同的列舉型別狀態。|  
@@ -60,12 +55,11 @@ IEnumDebugPorts2 : IUnknown
 ## <a name="requirements"></a>需求  
  標頭： msdbg.h  
   
- 命名空間： Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間：Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
  [核心介面](../../../extensibility/debugger/reference/core-interfaces.md)   
  [EnumPorts](../../../extensibility/debugger/reference/idebugcoreserver2-enumports.md)   
  [EnumPorts](../../../extensibility/debugger/reference/idebugportsupplier2-enumports.md)
-

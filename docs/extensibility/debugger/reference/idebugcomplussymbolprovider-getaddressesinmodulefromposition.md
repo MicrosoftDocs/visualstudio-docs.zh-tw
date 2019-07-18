@@ -6,17 +6,20 @@ helpviewer_keywords:
 - GetAddressesInModuleFromPosition
 - IDebugComPlusSymbolProvider::GetAddressesInModuleFromPosition
 ms.assetid: f901c66e-f53c-4ea0-8004-d8fcbf46f916
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 153f891e9ab5497f90eeefc02191f9227c0108c6
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 3000b93a9ce7f3ba56325943d48c5ac686ddde38
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56723665"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66338718"
 ---
 # <a name="idebugcomplussymbolprovidergetaddressesinmodulefromposition"></a>IDebugComPlusSymbolProvider::GetAddressesInModuleFromPosition
 將指定的模組中的文件位置對應的偵錯位址陣列。
@@ -45,30 +48,24 @@ int GetAddressesInModuleFromPosition(
 );
 ```
 
-#### <a name="parameters"></a>參數
- `ulAppDomainID`
+## <a name="parameters"></a>參數
+`ulAppDomainID`\
+[in]應用程式定義域識別項。
 
- [in]應用程式定義域識別項。
+`guidModule`\
+[in]模組的唯一識別碼。
 
- `guidModule`
+`pDocPos`\
+[in]文件位置。
 
- [in]模組的唯一識別碼。
+`fStatmentOnly`\
+[in]如果`TRUE`，限制為單一陳述式的偵錯位址。
 
- `pDocPos`
+`ppEnumBegAddresses`\
+[out]傳回與這個陳述式或列相關聯的開始偵錯位址的列舉值。
 
- [in]文件位置。
-
- `fStatmentOnly`
-
- [in]如果`TRUE`，限制為單一陳述式的偵錯位址。
-
- `ppEnumBegAddresses`
-
- [out]傳回與這個陳述式或列相關聯的開始偵錯位址的列舉值。
-
- `ppEnumEndAddresses`
-
- [out]傳回與這個陳述式或列相關聯的結束偵錯位址的列舉值。
+`ppEnumEndAddresses`\
+[out]傳回與這個陳述式或列相關聯的結束偵錯位址的列舉值。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

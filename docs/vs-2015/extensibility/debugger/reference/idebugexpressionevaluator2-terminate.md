@@ -1,27 +1,22 @@
 ---
 title: IDebugExpressionEvaluator2::Terminate |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - Terminate
 - IDebugExpressionEvaluator2::Terminate
 ms.assetid: 38265100-4d80-4902-833a-07bb569f9ba8
 caps.latest.revision: 9
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 271fc612580cfcff383b74ed198a80024db570d0
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 3957728bf52e21a166abf3771d3cccf282c1c8da
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51752194"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68148991"
 ---
 # <a name="idebugexpressionevaluator2terminate"></a>IDebugExpressionEvaluator2::Terminate
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -65,4 +60,3 @@ STDMETHODIMP ExpressionEvaluatorPackage::Terminate(void)
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugExpressionEvaluator2](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md)
-

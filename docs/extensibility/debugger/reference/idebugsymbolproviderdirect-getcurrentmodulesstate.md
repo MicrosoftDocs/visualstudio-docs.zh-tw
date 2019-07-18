@@ -6,17 +6,20 @@ helpviewer_keywords:
 - GetCurrentModulesState
 - IDebugSymbolProviderDirect::GetCurrentModulesState
 ms.assetid: a0c85318-5686-4eed-b213-21f2b9e681e6
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a2a4cfb78c7ccf24a79c5326f7f263a1b78302a3
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 59f1917f420e4815bcd525f131e4b524e53e6b3f
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56699986"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66347323"
 ---
 # <a name="idebugsymbolproviderdirectgetcurrentmodulesstate"></a>IDebugSymbolProviderDirect::GetCurrentModulesState
 擷取符號提供者為成員的符號群組的相關資訊。
@@ -37,14 +40,12 @@ int GetCurrentModulesState(
 );
 ```
 
-#### <a name="parameters"></a>參數
- `pState`
+## <a name="parameters"></a>參數
+`pState`\
+[out]符號提供者群組的狀態。
 
- [out]符號提供者群組的狀態。
-
- `count`
-
- [out]在群組中的模組數目。
+`count`\
+[out]在群組中的模組數目。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

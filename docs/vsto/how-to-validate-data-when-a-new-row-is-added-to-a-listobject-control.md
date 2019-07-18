@@ -1,5 +1,5 @@
 ---
-title: HOW TO：新的資料列加入 ListObject 控制項時驗證資料
+title: 新的資料列加入 ListObject 控制項時驗證資料
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,14 +14,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a78674a0738c0b7a0f69e04decd70fbbf1d1e367
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 8cf302388b71174767d41cc8b1a7594f4223db2a
+ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56615854"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "67328869"
 ---
-# <a name="how-to-validate-data-when-a-new-row-is-added-to-a-listobject-control"></a>HOW TO：新的資料列加入 ListObject 控制項時驗證資料
+# <a name="how-to-validate-data-when-a-new-row-is-added-to-a-listobject-control"></a>作法：新的資料列加入 ListObject 控制項時驗證資料
   使用者可以將新的資料列加入繫結至資料的 <xref:Microsoft.Office.Tools.Excel.ListObject> 控制項。 您可以先驗證使用者的資料，再認可資料來源的變更。
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
@@ -30,21 +30,21 @@ ms.locfileid: "56615854"
  每次將資料列加入繫結至資料的 <xref:Microsoft.Office.Tools.Excel.ListObject> ，就會引發 <xref:Microsoft.Office.Tools.Excel.ListObject.BeforeAddDataBoundRow> 事件。 您可以處理這個事件以執行資料驗證。 例如，如果您的應用程式需要只有 65 年滿 18 歲之間的員工，可以加入資料來源，請確認輸入的年齡落在該範圍內加入資料列之前。
 
 > [!NOTE]
->  除用戶端之外，亦請一律檢查伺服器上的使用者輸入。 如需詳細資訊，請參閱 <<c0> [ 安全的用戶端應用程式](/dotnet/framework/data/adonet/secure-client-applications)。
+> 除用戶端之外，亦請一律檢查伺服器上的使用者輸入。 如需詳細資訊，請參閱 <<c0> [ 安全的用戶端應用程式](/dotnet/framework/data/adonet/secure-client-applications)。
 
 ### <a name="to-validate-data-when-a-new-row-is-added-to-data-bound-listobject"></a>在新資料列加入資料繫結的 ListObject 時驗證資料
 
-1.  在類別層級建立識別碼和 <xref:System.Data.DataTable> 的變數。
+1. 在類別層級建立識別碼和 <xref:System.Data.DataTable> 的變數。
 
      [!code-csharp[Trin_VstcoreHostControlsExcel#8](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#8)]
      [!code-vb[Trin_VstcoreHostControlsExcel#8](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#8)]
 
-2.  建立新<xref:System.Data.DataTable>並新增範例資料行和資料`Startup`事件處理常式`Sheet1`類別 （在文件層級專案中） 或`ThisAddIn`類別 （在 VSTO 增益集專案中）。
+2. 建立新<xref:System.Data.DataTable>並新增範例資料行和資料`Startup`事件處理常式`Sheet1`類別 （在文件層級專案中） 或`ThisAddIn`類別 （在 VSTO 增益集專案中）。
 
      [!code-csharp[Trin_VstcoreHostControlsExcel#9](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#9)]
      [!code-vb[Trin_VstcoreHostControlsExcel#9](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#9)]
 
-3.  在 `list1_BeforeAddDataBoundRow` 事件處理常式中加入程式碼，以檢查輸入的年齡是否落在可接受的範圍內。
+3. 在 `list1_BeforeAddDataBoundRow` 事件處理常式中加入程式碼，以檢查輸入的年齡是否落在可接受的範圍內。
 
      [!code-csharp[Trin_VstcoreHostControlsExcel#10](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#10)]
      [!code-vb[Trin_VstcoreHostControlsExcel#10](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#10)]

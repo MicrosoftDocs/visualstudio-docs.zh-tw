@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - SccIsMultiCheckoutEnabled function
 ms.assetid: 6721639d-e475-4766-81b5-ee40a280fc70
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a0b4d13367977081b757fa9b0ef2823154dc348a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 93cbefe716b46b3dd3fe481447612c5c7f65daa3
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56679186"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66353576"
 ---
 # <a name="sccismulticheckoutenabled-function"></a>SccIsMultiCheckoutEnabled 函式
 此函式會檢查原始檔控制外掛程式是否允許多重簽出檔案。

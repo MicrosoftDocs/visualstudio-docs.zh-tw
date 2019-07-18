@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8600fd67cd28073544824374135c6966e19b63a0
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
-ms.translationtype: MT
+ms.openlocfilehash: 58d88f865e5f220000bf021b548e4b9c4b8745f6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54864237"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445505"
 ---
 # <a name="ltcustomizationsgt-element-office-development-in-visual-studio"></a>&lt;自訂&gt;元素 （在 Visual Studio 中的 Office 程式開發）
   `customizations` 命名空間的 `vstov4` 項目包含安裝及載入每個 Office 方案的所有資訊。
@@ -72,7 +72,7 @@ ms.locfileid: "54864237"
  下列程式碼範例可說明文件層級自訂的 `customizations` 項目。
 
 > [!NOTE]
->  此程式碼範例是中提供之較大範例的一部分[Application manifests for Office 方案](../vsto/application-manifests-for-office-solutions.md)。
+> 此程式碼範例是中提供之較大範例的一部分[Application manifests for Office 方案](../vsto/application-manifests-for-office-solutions.md)。
 
 ### <a name="code"></a>程式碼
 

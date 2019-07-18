@@ -1,14 +1,9 @@
 ---
 title: 'Idiasymbol:: Get_name |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 050ec02f-b7b3-48fc-8e35-58bdf7d938b0
 caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: c93d6b33025c12eef5725ce81fd489342e743e64
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 6609ae23f12a9e85a82448119cb9d0c8ffeaef8e
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51789690"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "64800430"
 ---
 # <a name="idiasymbolgetname"></a>IDiaSymbol::get_name
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -46,7 +41,7 @@ HRESULT get_name ( 
  如果成功，則傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。  
   
 > [!NOTE]
->  傳回值為`S_FALSE`表示此屬性不適用於符號。  
+> 傳回值為`S_FALSE`表示此屬性不適用於符號。  
   
 ## <a name="example"></a>範例  
   
@@ -58,6 +53,3 @@ pType->get_name( &name );
   
 ## <a name="see-also"></a>另請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
-
-
-

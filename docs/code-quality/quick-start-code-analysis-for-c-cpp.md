@@ -1,5 +1,6 @@
 ---
 title: 快速入門：C/C++ 的程式碼分析
+description: 執行靜態分析C++來偵測常見的程式碼問題和缺失的 Visual Studio 中的程式碼。
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +11,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ecb4f46b238b72c9d83b46122b8567a8636282b8
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 039ffcd1717dba8ec3c76ae1ca4a691d60851ee5
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55950093"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65226057"
 ---
 # <a name="quickstart-code-analysis-for-cc"></a>快速入門：C/C++ 的程式碼分析
 
@@ -34,13 +35,13 @@ ms.locfileid: "55950093"
         > [!NOTE]
         > 這個選項不會在表單和範本中出現錯誤和警告時，抑制來自產生的程式碼的程式碼分析錯誤和警告。 您可以同時檢視及維護表單或範本的原始程式碼。
 
-3. 若要執行程式碼分析，每次使用選取的組態建置專案時，請選取**啟用 C/c + + 建置的程式碼分析**核取方塊。 您也可以執行程式碼分析手動開啟**分析**功能表，然後選擇**上執行程式碼分析** *ProjectName*。
+3. 若要執行程式碼分析，每次使用選取的組態建置專案時，請選取**啟用適用於 C 的程式碼分析 /C++上建置**核取方塊。 您也可以執行程式碼分析手動開啟**分析**功能表，然後選擇**上執行程式碼分析** *ProjectName*。
 
 4. 在 **執行此規則集**清單中，執行下列其中之一：
 
     - 選擇想要使用的規則集。
 
-    - 選擇**\<瀏覽 >** ，指定現有的自訂規則集不在清單中。
+    - 選擇 **\<瀏覽>** ，指定現有的自訂規則集不在清單中。
 
     - 定義[自訂規則集](../code-quality/how-to-create-a-custom-rule-set.md)。
 
@@ -59,13 +60,13 @@ Visual Studio 包含兩組標準的原生程式碼規則：
 
 若要針對方案執行程式碼分析：
 
-- 在 [建置] 功能表上，選擇 [針對方案執行程式碼分析]。
+- 在 [建置]  功能表上，選擇 [針對方案執行程式碼分析]  。
 
 若要針對專案執行程式碼分析：
 
 1. 在 [方案總管] 中，選擇專案的名稱。
 
-2. 在 **建置**功能表上，選擇**上執行程式碼分析***專案名稱*。
+2. 在 **建置**功能表上，選擇 **上執行程式碼分析** *專案名稱*。
 
    編譯專案或方案並執行程式碼分析。 結果會出現在 錯誤清單。
 
@@ -85,7 +86,7 @@ Visual Studio 包含兩組標準的原生程式碼規則：
 
 1. 如果未顯示詳細資訊，請選擇警告標題以展開它。
 
-2. 選擇警告下方的 [動作] 連結。
+2. 選擇警告下方的 [動作]  連結。
 
 3. 選擇**隱藏訊息**，然後選擇**在原始程式檔**。
 
@@ -95,7 +96,7 @@ Visual Studio 包含兩組標準的原生程式碼規則：
 
 若要記錄來自 Visual Studio 的錯誤，您可以使用工作項目追蹤功能。 若要使用這項功能，您必須連接到 Team Foundation Server 的執行個體。
 
-**若要建立一或多個 C/c + + 程式碼警告的工作項目**
+**若要建立一或多個 C 的工作項目 /C++程式碼警告**
 
 1. 在 錯誤清單中，展開並選取警告
 
@@ -115,4 +116,4 @@ Visual Studio 包含兩組標準的原生程式碼規則：
 
 ## <a name="see-also"></a>另請參閱
 
-[C/c + + 的程式碼分析](../code-quality/code-analysis-for-c-cpp-overview.md)
+[適用於 C 的程式碼分析 /C++](../code-quality/code-analysis-for-c-cpp-overview.md)

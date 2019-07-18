@@ -5,17 +5,20 @@ ms.topic: reference
 helpviewer_keywords:
 - IDebugComPlusSymbolProvider::IsFunctionStale
 ms.assetid: dcffc090-4ed8-47b2-ba51-bce1a6b6428d
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d17b6a6fc84a7e0d2787e93bb12345d8243bfd41
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 121782e7febeb93844689c140d1994a68e3903b4
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56717841"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66351811"
 ---
 # <a name="idebugcomplussymbolproviderisfunctionstale"></a>IDebugComPlusSymbolProvider::IsFunctionStale
 決定是否在指定的偵錯位址函式會被視為過時。
@@ -34,10 +37,9 @@ int IsFunctionStale(
 );
 ```
 
-#### <a name="parameters"></a>參數
-`pAddress`
-
- [in]所表示的偵錯位址[IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)介面。 此位址必須是 METHOD_ADDRESS。
+## <a name="parameters"></a>參數
+`pAddress`\
+[in]所表示的偵錯位址[IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)介面。 此位址必須是 METHOD_ADDRESS。
 
 ## <a name="return-value"></a>傳回值
 如果函式被視為過時，就會傳回`S_OK`。 如果函式不是過時的就會傳回`S_FALSE`。

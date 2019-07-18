@@ -1,14 +1,9 @@
 ---
-title: 'Idiasectioncontrib:: Get_informational |Microsoft Docs'
-ms.custom: ''
+title: IDiaSectionContrib::get_informational | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 5351e89f-7db1-4f8e-9e57-2dd1c74002e0
 caps.latest.revision: 8
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: fcadd756ab9bea1d02dddb79728dcc68be8220b7
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 60ca5a57fd2b8921c3fc3c140bf1fdf5c0277f21
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51788442"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68151902"
 ---
 # <a name="idiasectioncontribgetinformational"></a>IDiaSectionContrib::get_informational
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -43,13 +38,10 @@ HRESULT get_informational(
  [out]會傳回`TRUE`如果區段包含註解或其他資訊中; 否則會傳回`FALSE`。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`。 傳回`S_FALSE`不支援這個屬性，則為。 反之則傳回錯誤碼。  
+ 如果成功，會傳回 `S_OK`。 傳回`S_FALSE`不支援這個屬性，則為。 否則會傳回錯誤碼。  
   
 ## <a name="remarks"></a>備註  
  通常.directive 區段包含的資訊。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)
-
-
-

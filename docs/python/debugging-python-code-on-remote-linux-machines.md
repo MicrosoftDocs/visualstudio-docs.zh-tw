@@ -3,19 +3,19 @@ title: 對遠端 Linux 電腦上的 Python 程式碼進行偵錯
 description: 使用 Visual Studio 對在遠端 Linux 電腦上執行的 Python 程式碼進行偵錯，包括必要的組態步驟、安全性和疑難排解。
 ms.date: 12/06/2018
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: bb98a94e60d84fc48078be396e0fb48dd8952c55
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e718a5610d9539e3e2a89af0a9de502ebfd168a7
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55945738"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62962517"
 ---
 # <a name="remotely-debug-python-code-on-linux"></a>對 Linux 上的 Python 程式碼進行遠端偵錯
 

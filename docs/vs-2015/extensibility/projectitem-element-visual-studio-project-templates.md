@@ -1,14 +1,9 @@
 ---
 title: ProjectItem 項目 （Visual Studio 專案範本） |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#ProjectItem
 helpviewer_keywords:
@@ -17,13 +12,13 @@ helpviewer_keywords:
 ms.assetid: 82879fbe-7756-42cd-9a07-c10edf5b4673
 caps.latest.revision: 19
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: bca26cba66169758aa882535c07846cfa451d172
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 84fb371460bc697660e176ca9df4c984d2b234bf
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51737072"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438376"
 ---
 # <a name="projectitem-element-visual-studio-project-templates"></a>ProjectItem 項目 (Visual Studio 專案範本)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,12 +26,12 @@ ms.locfileid: "51737072"
 指定專案範本中所包含的檔案。  
   
 > [!NOTE]
->  `ProjectItem`元素接受不同的屬性，根據該範本是否為專案或項目。 本主題說明`ProjectItem`專案範本的項目。 如需說明`ProjectItem`項目，項目範本，請參閱[ProjectItem 項目 （Visual Studio 項目範本）](../extensibility/projectitem-element-visual-studio-item-templates.md)。  
+> `ProjectItem`元素接受不同的屬性，根據該範本是否為專案或項目。 本主題說明`ProjectItem`專案範本的項目。 如需說明`ProjectItem`項目，項目範本，請參閱[ProjectItem 項目 （Visual Studio 項目範本）](../extensibility/projectitem-element-visual-studio-item-templates.md)。  
   
- \<VSTemplate >  
- \<TemplateContent >  
+ \<VSTemplate>  
+ \<TemplateContent>  
  \<Project>  
- \<專案項目 >  
+ \<ProjectItem>  
   
 ## <a name="syntax"></a>語法  
   
@@ -61,9 +56,9 @@ ms.locfileid: "51737072"
 |---------------|-----------------|  
 |`TargetFileName`|選擇性屬性。<br /><br /> 從範本建立專案時，請指定專案項目的路徑與名稱。 這個屬性是用來建立目錄結構的目錄結構不同，在範本的.zip 檔案中，或使用參數取代建立項目名稱。|  
 |`ReplaceParameters`|選擇性屬性。<br /><br /> 布林值，指定的項目是否有從範本建立專案時，必須被取代的參數值。 預設值為 `false`。|  
-|`OpenInEditor`|選擇性屬性。<br /><br /> 布林值，指定是否應該在其各自的編輯器中開啟項目[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]從範本建立專案時。<br /><br /> `OpenInWebBrowser`並`OpenInHelpBrowser`屬性會被忽略的項目上`OpenInEditor`的值`true`。<br /><br /> 預設值是 `false`。|  
-|`OpenInWebBrowser`|選擇性屬性。<br /><br /> 布林值，指定項目是否應該會開啟網頁瀏覽器從範本建立專案。<br /><br /> 僅 HTML 檔案和文字檔的本機專案可以在 Web 瀏覽器中開啟。 無法開啟外部 Url，以這個屬性。<br /><br /> 預設值是 `false`。|  
-|`OpenInHelpBrowser`|選擇性屬性。<br /><br /> 布林值，指定項目應該會開啟說明檢視器中從範本建立專案時。<br /><br /> 僅 HTML 檔案和文字檔的本機專案可以在說明瀏覽器中開啟。 無法開啟外部 Url，以這個屬性。<br /><br /> 預設值是 `false`。|  
+|`OpenInEditor`|選擇性屬性。<br /><br /> 布林值，指定是否應該在其各自的編輯器中開啟項目[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]從範本建立專案時。<br /><br /> `OpenInWebBrowser`並`OpenInHelpBrowser`屬性會被忽略的項目上`OpenInEditor`的值`true`。<br /><br /> 預設值為 `false`。|  
+|`OpenInWebBrowser`|選擇性屬性。<br /><br /> 布林值，指定項目是否應該會開啟網頁瀏覽器從範本建立專案。<br /><br /> 僅 HTML 檔案和文字檔的本機專案可以在 Web 瀏覽器中開啟。 無法開啟外部 Url，以這個屬性。<br /><br /> 預設值為 `false`。|  
+|`OpenInHelpBrowser`|選擇性屬性。<br /><br /> 布林值，指定項目應該會開啟說明檢視器中從範本建立專案時。<br /><br /> 僅 HTML 檔案和文字檔的本機專案可以在說明瀏覽器中開啟。 無法開啟外部 Url，以這個屬性。<br /><br /> 預設值為 `false`。|  
 |`OpenOrder`|選擇性屬性。<br /><br /> 指定數值，表示項目將會開啟在其各自的編輯器中的順序。 所有的值必須是 10 的倍數。 使用更高項目`OpenOrder`值第一次開啟。|  
   
 ### <a name="child-elements"></a>子元素  
@@ -95,21 +90,21 @@ ms.locfileid: "51737072"
   
 ### <a name="to-rename-files-with-parameters"></a>若要重新命名具有參數檔案  
   
-1.  這個.vstemplate 檔案中使用下列 XML:  
+1. 這個.vstemplate 檔案中使用下列 XML:  
   
     ```  
     <ProjectItem TargetFileName="$safeprojectname$.vb">MyFile.vb</ProjectItem>  
     ```  
   
-2.  開啟專案檔案 (如.vbproj[!INCLUDE[vbprvb](../includes/vbprvb-md.md)]專案) 在文字編輯器或[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。  
+2. 開啟專案檔案 (如.vbproj[!INCLUDE[vbprvb](../includes/vbprvb-md.md)]專案) 在文字編輯器或[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。  
   
-3.  看起來類似下列的 XML 專案檔中找到的一行：  
+3. 看起來類似下列的 XML 專案檔中找到的一行：  
   
     ```  
     <Compile Include="MyFile.vb">  
     ```  
   
-4.  取代下列 XML 程式碼行：  
+4. 取代下列 XML 程式碼行：  
   
     ```  
     <Compile Include="$safeprojectname$.vb">  
@@ -149,4 +144,3 @@ ms.locfileid: "51737072"
  [建立專案和項目範本](../ide/creating-project-and-item-templates.md)   
  [範本參數](../ide/template-parameters.md)   
  [ProjectItem 元素 (Visual Studio 項目範本)](../extensibility/projectitem-element-visual-studio-item-templates.md)
-

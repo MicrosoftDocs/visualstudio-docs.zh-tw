@@ -7,17 +7,17 @@ helpviewer_keywords:
 - language services [managed package framework], outlining
 - outlining, supporting in language services [managed package framework]
 ms.assetid: 7b5578b4-a20a-4b94-ad4c-98687ac133b9
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ba6d709dae3b2a20332b3122585ad2060628016e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 7af8ab4615cff7462a47dfb11b193660eb62274c
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56601353"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66314873"
 ---
 # <a name="outlining-in-a-legacy-language-service"></a>在舊版語言服務中製作大綱
 大綱，讓能夠摺疊成概觀或外框的是複雜的程式。 例如，在 C# 中的所有方法可以摺都疊成一行，顯示方法簽章。 此外，結構和類別可以摺疊以顯示的結構和類別的名稱。 在單一方法中，複雜的邏輯可以摺疊來顯示整體流程這類顯示陳述式的第一行`foreach`， `if`，和`while`。
@@ -25,7 +25,7 @@ ms.locfileid: "56601353"
  舊版語言服務會實作成 VSPackage 的一部分，但實作語言服務功能的較新的方式是使用 MEF 擴充功能。 若要深入了解，請參閱[逐步解說：大綱](../../extensibility/walkthrough-outlining.md)。
 
 > [!NOTE]
->  我們建議您開始使用新的編輯器 API 盡。 這會改善您的語言服務的效能，並可讓您充分利用新編輯器功能。
+> 我們建議您開始使用新的編輯器 API 盡。 這會改善您的語言服務的效能，並可讓您充分利用新編輯器功能。
 
 ## <a name="enabling-support-for-outlining"></a>啟用支援，供製作大綱
  `AutoOutlining`登錄項目設為 1 以啟用自動大綱。 檔案載入或變更以找出隱藏的區域和顯示大綱的圖像 （glyph） 時自動大綱設定剖析的完整的來源。 大綱也可以控制手動使用者。

@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - SccRemove function
 ms.assetid: 20830fdc-c0e9-4a5f-bf60-33f28874442f
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2183a73536e7e4251958680b25a8909ea2bb714e
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 70413c2e446f8ed226a58eb8ddfe62ede4a1d61f
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56696424"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66338626"
 ---
 # <a name="sccremove-function"></a>SccRemove 函式
 此函式會從原始檔控制系統中刪除檔案。

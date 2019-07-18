@@ -1,14 +1,9 @@
 ---
-title: IDebugPropertyDestroyEvent2 |Microsoft Docs
-ms.custom: ''
+title: IDebugPropertyDestroyEvent2 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugPropertyDestroyEvent2
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 301b7a75-ecfa-46f1-9131-66cf3e4be147
 caps.latest.revision: 12
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 4140544cd9fe6de530416e77b891dceaff169b54
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 034040ecd8df3368f53cb7a3bf99197e962e2b56
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51743656"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65702296"
 ---
 # <a name="idebugpropertydestroyevent2"></a>IDebugPropertyDestroyEvent2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -36,7 +31,7 @@ IDebugPropertyDestroyEvent2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>實作者的附註  
- DE 會實作這個介面來報告屬性已被終結。 [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)介面必須實作此介面的相同物件上。 使用 SDM [QueryInterface](http://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3)若要存取`IDebugEvent2`介面。 如果 DE 先前已建立的指令碼; 相關聯的屬性，會實作這個介面終結的屬性，是在 IDE 中移除相關聯的指令碼。  
+ DE 會實作這個介面來報告屬性已被終結。 [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)介面必須實作此介面的相同物件上。 使用 SDM [QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3)若要存取`IDebugEvent2`介面。 如果 DE 先前已建立的指令碼; 相關聯的屬性，會實作這個介面終結的屬性，是在 IDE 中移除相關聯的指令碼。  
   
 ## <a name="notes-for-callers"></a>呼叫端資訊  
  DE 建立，並將此事件的物件傳送至報表的屬性已被終結。 事件會使用傳送[IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)附加至正在進行偵錯程式時，會將 SDM 所提供的回呼函式。  
@@ -54,9 +49,9 @@ IDebugPropertyDestroyEvent2 : IUnknown
 ## <a name="requirements"></a>需求  
  標頭： msdbg.h  
   
- 命名空間： Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間：Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
  [核心介面](../../../extensibility/debugger/reference/core-interfaces.md)   
@@ -64,4 +59,3 @@ IDebugPropertyDestroyEvent2 : IUnknown
  [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)   
  [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)   
  [IDebugPropertyCreateEvent2](../../../extensibility/debugger/reference/idebugpropertycreateevent2.md)
-

@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugExpressionEvaluationCompleteEvent2::GetResult
 ms.assetid: d9ad3e22-b6b2-421e-9a43-6bb8c70d12a9
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1cc3122103b075b18d2e77e72ad50cda958ba715
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 8efcb487ae2d95aa54671f608d51eff78960a6de
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56678705"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66325743"
 ---
 # <a name="idebugexpressionevaluationcompleteevent2getresult"></a>IDebugExpressionEvaluationCompleteEvent2::GetResult
 取得運算式評估的結果。
@@ -36,10 +39,8 @@ int GetResult( 
 );
 ```
 
-#### <a name="parameters"></a>參數
- `ppResult`
-
- [out]傳回[IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)物件，表示運算式評估的結果。
+## <a name="parameters"></a>參數
+`ppResult` [out]傳回[IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)物件，表示運算式評估的結果。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

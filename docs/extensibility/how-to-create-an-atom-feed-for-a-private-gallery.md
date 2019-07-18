@@ -1,28 +1,28 @@
 ---
-title: HOW TO：建立的 Atom 摘要私用組件庫 |Microsoft Docs
+title: 作法：建立的 Atom 摘要私用組件庫 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Atom feed, VSIX private galleries
 - VSIX private galleries, Atom feed
 ms.assetid: 5897f538-9c41-486f-97d9-a1976d20d9fd
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 094bff5c761a45e936f14f79587b4846d3838610
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 027a7f70240695e64051ef6c16fd3e5469d75900
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56722404"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66340892"
 ---
-# <a name="how-to-create-an-atom-feed-for-a-private-gallery"></a>HOW TO：建立私用組件庫摘要的 Atom
-您可以建立 Atom (RSS) 到內部網路位置包含延伸模組，並加入至摘要**擴充功能和更新**為私用組件庫。 如需詳細資訊，請參閱 <<c0> [ 私用主機庫](../extensibility/private-galleries.md)。
+# <a name="how-to-create-an-atom-feed-for-a-private-gallery"></a>作法：建立私用組件庫摘要的 Atom
+您可以建立 Atom (RSS) 到內部網路位置包含延伸模組，並加入至摘要**擴充功能和更新**為私用組件庫。 如需詳細資訊，請參閱[私人資源庫](../extensibility/private-galleries.md)。
 
 ## <a name="create-an-atom-feed"></a>建立 Atom 摘要
- 若要建立的 Atom 摘要為私用組件庫，您先收集您的擴充功能 (*.vsix*檔案) 的資料夾。 您可以將它們組織到子資料夾如果您想要。 您也需要下列資源：
+ 若要建立的 Atom 摘要為私用組件庫，您先收集您的擴充功能 ( *.vsix*檔案) 的資料夾。 您可以將它們組織到子資料夾如果您想要。 您也需要下列資源：
 
 - *Atom.xml*為私用組件庫提供延伸模組的檔案。 如需有關如何連接資訊*atom.xml*的檔案**擴充功能和更新**，請參閱[私用主機庫](../extensibility/private-galleries.md)。
 

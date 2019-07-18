@@ -1,14 +1,9 @@
 ---
-title: 如何： 設定 ClickOnce 信任提示行為 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：設定 ClickOnce 信任提示行為 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -23,15 +18,15 @@ ms.assetid: cc04fa75-012b-47c9-9347-f4216be23cf2
 caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: f8fdb17bc724cc9cbf7385451a773a68ecf3df4e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 58e5f0e9154137097a94637799966ee94818fca4
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49235660"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68150835"
 ---
-# <a name="how-to-configure-the-clickonce-trust-prompt-behavior"></a>如何：設定 ClickOnce 信任提示行為
+# <a name="how-to-configure-the-clickonce-trust-prompt-behavior"></a>作法：設定 ClickOnce 信任提示行為
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 您可以設定 ClickOnce 信任提示，來控制，是否可以選擇安裝 ClickOnce 應用程式，例如 Windows Forms 應用程式、 Windows Presentation Foundation 應用程式、 主控台應用程式、 WPF 瀏覽器的使用者。應用程式和 Office 方案。 您可以設定每位使用者的電腦上的登錄機碼設定信任提示。  
@@ -61,19 +56,19 @@ ms.locfileid: "49235660"
   
 #### <a name="to-enable-the-clickonce-trust-prompt-by-using-the-registry-editor"></a>若要使用登錄編輯程式中啟用 ClickOnce 信任提示  
   
-1.  開啟登錄編輯程式：  
+1. 開啟登錄編輯程式：  
   
-    1.  按一下 **開始**，然後按一下**執行**。  
+    1. 按一下 [開始]  ，然後按一下 [執行]  。  
   
-    2.  在 **開放**方塊中，輸入`regedit32`，然後按一下**確定**。  
+    2. 在 **開啟**方塊中，輸入`regedit`(或`regedit32`32 位元 Windows 上)，然後按一下**確定**。  
   
-2.  尋找下列登錄機碼：  
+2. 尋找下列登錄機碼：  
   
-     \HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\。NETFramework\Security\TrustManager\PromptingLevel  
+     \HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\.NETFramework\Security\TrustManager\PromptingLevel  
   
      如果索引鍵不存在，請加以建立。  
   
-3.  新增為下列子機碼**字串值**，如果它們不存在，與相關的值下, 表所示。  
+3. 新增為下列子機碼**字串值**，如果它們不存在，與相關的值下, 表所示。  
   
     |字串值的子機碼|值|  
     |-------------------------|-----------|  
@@ -87,9 +82,9 @@ ms.locfileid: "49235660"
   
 #### <a name="to-enable-the-clickonce-trust-prompt-programmatically"></a>以程式設計方式啟用 ClickOnce 信任提示  
   
-1.  Visual Studio 中建立 Visual Basic 或 Visual C# 主控台應用程式。  
+1. Visual Studio 中建立 Visual Basic 或 Visual C# 主控台應用程式。  
   
-2.  開啟 Program.vb 或 Program.cs 的檔案進行編輯並加入下列程式碼。  
+2. 開啟 Program.vb 或 Program.cs 的檔案進行編輯並加入下列程式碼。  
   
     ```vb  
     Dim key As Microsoft.Win32.RegistryKey  
@@ -113,26 +108,26 @@ ms.locfileid: "49235660"
     key.Close();  
     ```  
   
-3.  建置並執行應用程式。  
+3. 建置並執行應用程式。  
   
 ## <a name="restricting-the-clickonce-trust-prompt"></a>限制 ClickOnce 信任提示  
  限制信任提示，讓解決方案必須使用之前會提示使用者信任決策提供有已知識別的 Authenticode 憑證來簽署。  
   
 #### <a name="to-restrict-the-clickonce-trust-prompt-by-using-the-registry-editor"></a>若要限制 ClickOnce 信任提示，使用登錄編輯程式  
   
-1.  開啟登錄編輯程式：  
+1. 開啟登錄編輯程式：  
   
-    1.  按一下 **開始**，然後按一下**執行**。  
+    1. 按一下 [開始]  ，然後按一下 [執行]  。  
   
-    2.  在 **開放**方塊中，輸入`regedit`，然後按一下**確定**。  
+    2. 在 **開啟**方塊中，輸入`regedit`(或`regedit32`32 位元 Windows 上)，然後按一下**確定**。  
   
-2.  尋找下列登錄機碼：  
+2. 尋找下列登錄機碼：  
   
-     \HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\。NETFramework\Security\TrustManager\PromptingLevel  
+     \HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\.NETFramework\Security\TrustManager\PromptingLevel  
   
      如果索引鍵不存在，請加以建立。  
   
-3.  新增為下列子機碼**字串值**，如果它們不存在，與相關的值下, 表所示。  
+3. 新增為下列子機碼**字串值**，如果它們不存在，與相關的值下, 表所示。  
   
     |字串值的子機碼|值|  
     |-------------------------|-----------|  
@@ -144,9 +139,9 @@ ms.locfileid: "49235660"
   
 #### <a name="to-restrict-the-clickonce-trust-prompt-programmatically"></a>若要以程式設計的方式限制 ClickOnce 信任提示  
   
-1.  Visual Studio 中建立 Visual Basic 或 Visual C# 主控台應用程式。  
+1. Visual Studio 中建立 Visual Basic 或 Visual C# 主控台應用程式。  
   
-2.  開啟 Program.vb 或 Program.cs 的檔案進行編輯並加入下列程式碼。  
+2. 開啟 Program.vb 或 Program.cs 的檔案進行編輯並加入下列程式碼。  
   
     ```vb  
     Dim key As Microsoft.Win32.RegistryKey  
@@ -170,26 +165,26 @@ ms.locfileid: "49235660"
     key.Close();  
     ```  
   
-3.  建置並執行應用程式。  
+3. 建置並執行應用程式。  
   
 ## <a name="disabling-the-clickonce-trust-prompt"></a>停用 ClickOnce 信任提示  
  您可以停用信任提示，讓使用者不會得到安裝已經不信任其安全性原則中的解決方案的選項。  
   
 #### <a name="to-disable-the-clickonce-trust-prompt-by-using-the-registry-editor"></a>使用登錄編輯程式，停用 ClickOnce 信任提示  
   
-1.  開啟登錄編輯程式：  
+1. 開啟登錄編輯程式：  
   
-    1.  按一下 **開始**，然後按一下**執行**。  
+    1. 按一下 [開始]  ，然後按一下 [執行]  。  
   
-    2.  在 **開放**方塊中，輸入`regedit`，然後按一下**確定**。  
+    2. 在 **開啟**方塊中，輸入`regedit`(或`regedit32`32 位元 Windows 上)，然後按一下**確定**。  
   
-2.  尋找下列登錄機碼：  
+2. 尋找下列登錄機碼：  
   
-     \HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\。NETFramework\Security\TrustManager\PromptingLevel  
+     \HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\.NETFramework\Security\TrustManager\PromptingLevel  
   
      如果索引鍵不存在，請加以建立。  
   
-3.  新增為下列子機碼**字串值**，如果它們不存在，與相關的值下, 表所示。  
+3. 新增為下列子機碼**字串值**，如果它們不存在，與相關的值下, 表所示。  
   
     |字串值的子機碼|值|  
     |-------------------------|-----------|  
@@ -201,9 +196,9 @@ ms.locfileid: "49235660"
   
 #### <a name="to-disable-the-clickonce-trust-prompt-programmatically"></a>若要以程式設計方式停用 ClickOnce 信任提示  
   
-1.  Visual Studio 中建立 Visual Basic 或 Visual C# 主控台應用程式。  
+1. Visual Studio 中建立 Visual Basic 或 Visual C# 主控台應用程式。  
   
-2.  開啟 Program.vb 或 Program.cs 的檔案進行編輯並加入下列程式碼。  
+2. 開啟 Program.vb 或 Program.cs 的檔案進行編輯並加入下列程式碼。  
   
     ```vb  
     Dim key As Microsoft.Win32.RegistryKey  
@@ -228,7 +223,7 @@ ms.locfileid: "49235660"
   
     ```  
   
-3.  建置並執行應用程式。  
+3. 建置並執行應用程式。  
   
 ## <a name="see-also"></a>另請參閱  
  [保護 ClickOnce 應用程式](../deployment/securing-clickonce-applications.md)   
@@ -236,11 +231,8 @@ ms.locfileid: "49235660"
  [ClickOnce 和 Authenticode](../deployment/clickonce-and-authenticode.md)   
  [受信任的應用程式部署概觀](../deployment/trusted-application-deployment-overview.md)   
  [如何：啟用 ClickOnce 安全性設定](../deployment/how-to-enable-clickonce-security-settings.md)   
- [如何：設定 ClickOnce 應用程式的安全性區域](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)   
- [如何：設定 ClickOnce 應用程式的自訂使用權限](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)   
- [如何：以限制權限偵錯 ClickOnce 應用程式](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)   
- [如何：新增信任發行者至 ClickOnce 應用程式的用戶端電腦](../deployment/how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications.md)   
+ [如何：ClickOnce 應用程式設定的安全性區域](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)   
+ [如何：設定 ClickOnce 應用程式的自訂權限](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)   
+ [如何：偵錯 ClickOnce 應用程式，以限制權限](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)   
+ [如何：加入用戶端電腦中的受信任的發行者，ClickOnce 應用程式](../deployment/how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications.md)   
  [如何：重新簽署應用程式和部署資訊清單](../deployment/how-to-re-sign-application-and-deployment-manifests.md)
-
-
-

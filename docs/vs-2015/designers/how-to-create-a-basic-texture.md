@@ -9,29 +9,29 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8b653d1b19842910fc88deb9d9cae5db918f35b3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: bd1a9a2a269c173ef9dcb47b39921073802fe1ee
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54767095"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438404"
 ---
-# <a name="how-to-create-a-basic-texture"></a>如何：建立基本材質
+# <a name="how-to-create-a-basic-texture"></a>HOW TO：建立基本紋理
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 本文件將示範如何使用影像編輯器來建立基本材質。  
   
  本文件示範下列活動︰  
   
--   設定材質的大小  
+- 設定材質的大小  
   
--   設定前景和背景色彩  
+- 設定前景和背景色彩  
   
--   使用 Alpha 色板 (透明度)  
+- 使用 Alpha 色板 (透明度)  
   
--   使用 [填滿] 和 [橢圓形] 工具  
+- 使用 [填滿] 和 [橢圓形] 工具  
   
--   設定工具屬性  
+- 設定工具屬性  
   
 ## <a name="creating-a-basic-texture"></a>建立基本材質  
  您可以使用影像編輯器來建立和修改遊戲或應用程式的紋理和影像。  
@@ -55,7 +55,7 @@ ms.locfileid: "54767095"
 5. 在 [影像編輯器] 工具列上，選擇 [填滿] 工具，然後按住 Shift 鍵並選擇影像中的任意點。 使用 Shift 鍵會造成填滿色彩的 Alpha 值取代影像中的色彩；否則，Alpha 值是用來將填滿色彩和影像中的色彩混合。  
   
    > [!IMPORTANT]
-   >  此步驟加上前一步驟中選取的色彩，可確保會備妥您即將繪製的「靶心」目標材質基底影像。 以透明黑色填滿影像，同時目標邊界為黑色時，目標周圍不會有鋸齒化成品。  
+   > 此步驟加上前一步驟中選取的色彩，可確保會備妥您即將繪製的「靶心」目標材質基底影像。 以透明黑色填滿影像，同時目標邊界為黑色時，目標周圍不會有鋸齒化成品。  
   
 6. 在 [影像編輯器] 工具列上，選擇 [橢圓形] 工具。  
   
@@ -70,7 +70,7 @@ ms.locfileid: "54767095"
 11. 使用 [橢圓形] 工具，繪製一個從像素座標 `(3, 3)` 到像素座標 `(508, 508)` 的圓形。 您在繪製時按住 Shift 鍵，可以更輕鬆繪製圓形。  
   
     > [!NOTE]
-    >  目前指標位置的像素座標會顯示在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 狀態列。  
+    > 目前指標位置的像素座標會顯示在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 狀態列。  
   
 12. 變更背景色彩。 將 [R] 設定為 `44`、[G] 設為 `165`、[B] 設為 `211`，並將 [A] 設為 `255`。  
   
@@ -88,7 +88,7 @@ ms.locfileid: "54767095"
   
     ![完整的「靶心」目標材質](../designers/media/gfx-image-demo-bullseye.png "gfx_image_demo_bullseye")  
   
-    下一步可以產生這個材質的 MIP 層級。 如需詳細資訊，請參閱[如何：建立和修改 MIP 層級](../designers/how-to-create-and-modify-mip-levels.md)。  
+    下一步可以產生這個材質的 MIP 層級。 如需相關資訊，請參閱[如何：建立和修改 MIP 層級](../designers/how-to-create-and-modify-mip-levels.md)。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [Image Editor](../designers/image-editor.md)

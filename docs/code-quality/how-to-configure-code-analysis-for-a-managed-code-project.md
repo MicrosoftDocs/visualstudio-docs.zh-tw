@@ -13,31 +13,33 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 466178015c725242b6bc4a28da1da6ded19b421f
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: f3c8fbde60e247ca9ec5fe82c9a16f28aded2abc
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55916787"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66715056"
 ---
-# <a name="how-to-configure-code-analysis-for-a-managed-code-project"></a>HOW TO：設定受控碼專案的程式碼分析
+# <a name="how-to-configure-static-code-analysis-for-managed-code"></a>作法：設定 managed 程式碼的靜態程式碼分析
 
-在 Visual Studio 中，您可以從清單中選擇的程式碼分析[規則集](../code-quality/rule-set-reference.md)) 套用至 managed 程式碼專案。 根據預設， **Microsoft 最小建議規則**選取規則集，但您可以套用不同的規則集有需要。 規則集可以套用至解決方案中的一或多個專案中。
+在 Visual Studio 中，您可以從清單中選擇的程式碼分析[規則集](../code-quality/rule-set-reference.md)来套用至 managed 程式碼專案。 根據預設， **Microsoft 最小建議規則**選取規則集，但您可以套用不同的規則集有需要。 規則集可以套用至解決方案中的一或多個專案中。
 
-> [!TIP]
-> 如需如何設定 ASP.NET web 應用程式設定的規則的詳細資訊，請參閱[How to:設定 ASP.NET web 應用程式的程式碼分析](../code-quality/how-to-configure-code-analysis-for-an-aspnet-web-application.md)。
+如需如何設定 ASP.NET web 應用程式設定的規則的詳細資訊，請參閱[How to:設定 ASP.NET web 應用程式的程式碼分析](../code-quality/how-to-configure-code-analysis-for-an-aspnet-web-application.md)。
 
-## <a name="to-configure-a-rule-set-for-a-net-framework-project"></a>若要設定的規則集的.NET Framework 專案
+> [!NOTE]
+> 本文適用於靜態程式碼分析，而不[Roslyn 分析器](use-roslyn-analyzers.md)，這不在建置之後執行程式碼分析。
+
+## <a name="configure-a-rule-set-for-a-net-framework-project"></a>設定.NET Framework 專案中設定的規則
 
 1. 開啟**程式碼分析**上專案屬性頁 索引標籤。 您可以下列兩種方法之一來這麼做：
 
-   - 在 [**方案總管] 中**，選取專案。 在功能表列上選取**分析** > **設定程式碼分析** > **如\<專案名稱 >**。
+   - 在 [**方案總管] 中**，選取專案。 在功能表列上選取**分析** > **設定程式碼分析** > **如\<專案名稱 >** 。
 
    - 中的專案上按一下滑鼠右鍵**方案總管**，然後選取**屬性**，然後選取**程式碼分析** 索引標籤。
 
 1. 在 **組態**並**平台**清單中，選取組建組態和目標平台。
 
-1. 若要執行程式碼分析，每次使用選取的組態建置專案時，請選取**建置時啟用程式碼分析**核取方塊。 您也可以執行程式碼分析以手動方式選取**分析** > **執行程式碼分析** > **上執行程式碼分析\<專案名稱 >**.
+1. 若要執行程式碼分析，每次使用選取的組態建置專案時，請選取**建置時啟用程式碼分析**核取方塊。 您也可以執行程式碼分析以手動方式選取**分析** > **執行程式碼分析** > **上執行程式碼分析\<專案名稱 >** .
 
 1. 根據預設，程式碼分析不會報告從外部工具自動產生的程式碼警告。 若要檢視產生程式碼的警告，請清除**隱藏所產生的程式碼的結果** 核取方塊。
 

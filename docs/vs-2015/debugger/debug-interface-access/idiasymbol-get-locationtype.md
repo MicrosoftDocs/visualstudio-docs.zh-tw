@@ -1,14 +1,9 @@
 ---
-title: 'Idiasymbol:: Get_locationtype |Microsoft Docs'
-ms.custom: ''
+title: IDiaSymbol::get_locationType | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: fbb09c43-ebb7-4b4f-be53-ccff86eb183a
 caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 16af35862d26e23e1a9ad9bafeb45b4e32907d49
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 49d92f0891af725e8e17c673d975a300a1fa6bdf
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51737549"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "64804067"
 ---
 # <a name="idiasymbolgetlocationtype"></a>IDiaSymbol::get_locationType
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -46,11 +41,8 @@ HRESULT get_locationType ( 
  如果成功，則傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。  
   
 > [!NOTE]
->  傳回值為`S_FALSE`表示此屬性不適用於符號。  
+> 傳回值為`S_FALSE`表示此屬性不適用於符號。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [LocationType 列舉](../../debugger/debug-interface-access/locationtype.md)
-
-
-

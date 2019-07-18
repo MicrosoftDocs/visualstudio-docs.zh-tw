@@ -14,21 +14,21 @@ ms.assetid: 79e32926-b03f-457b-997c-2bb2ec8a1ec5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: aef1efa0a0b597d9c75d46e24fd443943cca17ab
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 72b63c699b09081e843f36daeec3fcc556ebaf4a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56840629"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63007369"
 ---
 # <a name="label-not-found"></a>找不到標籤
 您所做的參考不存在的標籤。 標籤可用來將標記區塊的程式碼，但指定的範圍內，必須是唯一的。  
   
 ### <a name="to-correct-this-error"></a>更正這個錯誤  
   
--   請檢查以確定未拼錯的標籤名稱。  
+- 請檢查以確定未拼錯的標籤名稱。  
   
--   請確定標籤的所有參考不會都對目前的範圍 （包括正向的定義） 中所定義的標籤。  
+- 請確定標籤的所有參考不會都對目前的範圍 （包括正向的定義） 中所定義的標籤。  
   
 ## <a name="see-also"></a>另請參閱  
  [Labeled 陳述式](../../javascript/reference/labeled-statement-javascript.md)   

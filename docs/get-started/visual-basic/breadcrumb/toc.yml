@@ -1,18 +1,11 @@
-items:
 - name: Docs
   tocHref: /
   topicHref: /
   items:
-  - name: Visual Studio
-    tocHref: /visualstudio/
-    topicHref: /visualstudio/ide/
-    items:
-    - name: Visual Basic
-      tocHref: /visualstudio/visual-basic
-      topicHref: /visualstudio/visual-basic/index
-ms.openlocfilehash: 67adbdac13d3bfe30a0d4f7de378da05ca5b50e1
-ms.sourcegitcommit: a715de2ba8c703f37aa2102567b1aa2c0f05a117
-ms.translationtype: HT
-ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "53442894"
+    - name: Visual Studio
+      tocHref: /visualstudio/
+      topicHref: /visualstudio/ide/
+      items:
+        - name: Visual Basic
+          tocHref: /visualstudio/visual-basic
+          topicHref: /visualstudio/visual-basic/index

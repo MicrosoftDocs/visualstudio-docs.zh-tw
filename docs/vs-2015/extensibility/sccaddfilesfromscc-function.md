@@ -1,14 +1,9 @@
 ---
 title: SccAddFilesFromSCC 函式 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - SccAddFilesFromSCC
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: f21a3500-ade8-4dd8-8647-10e2179be9c1
 caps.latest.revision: 18
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 537ec62d6bd504a588a70931a7c66e20989fd9f2
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: d5af748c9180644cae928d1b6db3a3f880b6b286
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51805582"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68200916"
 ---
 # <a name="sccaddfilesfromscc-function"></a>SccAddFilesFromSCC 函式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -86,4 +81,3 @@ SCCRTN SccAddFilesFromSCC(
   
 ## <a name="see-also"></a>另請參閱  
  [原始檔控制外掛程式 API 函式](../extensibility/source-control-plug-in-api-functions.md)
-

@@ -1,14 +1,9 @@
 ---
-title: IDebugPortNotify2 |Microsoft Docs
-ms.custom: ''
+title: IDebugPortNotify2 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugPortNotify2
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 43278b79-bf16-4c08-bcf1-6f7f7a17feab
 caps.latest.revision: 12
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: e5bc329807d4b610ae42d3bb5ac5c95faf37db40
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 18edddd698953bf71febb8f9f2f1bac704205120
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51740380"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65703928"
 ---
 # <a name="idebugportnotify2"></a>IDebugPortNotify2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -39,7 +34,7 @@ IDebugPortNotify2 : IUnknown
  自訂的連接埠提供者會實作這個介面，以支援新增和移除連接埠的程式。 它通常會實作相同的物件會實作[IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)介面。  
   
 ## <a name="notes-for-callers"></a>呼叫端資訊  
- 呼叫[QueryInterface](http://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3)上`IDebugPort2`介面會傳回此介面。 此外，呼叫[GetPortNotify](../../../extensibility/debugger/reference/idebugdefaultport2-getportnotify.md)傳回此介面。 偵錯引擎可以看到此介面做為參數[WatchForProviderEvents](../../../extensibility/debugger/reference/idebugprogramprovider2-watchforproviderevents.md)。  
+ 呼叫[QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3)上`IDebugPort2`介面會傳回此介面。 此外，呼叫[GetPortNotify](../../../extensibility/debugger/reference/idebugdefaultport2-getportnotify.md)傳回此介面。 偵錯引擎可以看到此介面做為參數[WatchForProviderEvents](../../../extensibility/debugger/reference/idebugprogramprovider2-watchforproviderevents.md)。  
   
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法  
  下表顯示的方法`IDebugPortNotify2`。  
@@ -55,11 +50,10 @@ IDebugPortNotify2 : IUnknown
 ## <a name="requirements"></a>需求  
  標頭： msdbg.h  
   
- 命名空間： Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間：Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
  [核心介面](../../../extensibility/debugger/reference/core-interfaces.md)   
  [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)
-

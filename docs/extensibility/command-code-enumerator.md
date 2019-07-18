@@ -6,17 +6,17 @@ helpviewer_keywords:
 - command code enumerator
 - source control plug-ins, command code enumeration
 ms.assetid: 5d2c360c-59e4-4da8-bcb4-dd07c7441e40
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ddb2e88db15d60731bc17fcc60cb69772779f14e
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: f4ec14c15bbd0aa6340e30e3156e714ba5f9e074
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56718413"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66334953"
 ---
 # <a name="command-code-enumerator"></a>命令碼列舉程式
 這個列舉值使用中的選項[SccGetCommandOptions](../extensibility/sccgetcommandoptions-function.md)並[SccPopulateList](../extensibility/sccpopulatelist-function.md)表示指定之選項的命令。

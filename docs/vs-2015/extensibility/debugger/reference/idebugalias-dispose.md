@@ -1,14 +1,9 @@
 ---
 title: IDebugAlias::Dispose |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugAlias::Dispose
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: e84909a4-d378-4f48-bf25-2c014c77c8e3
 caps.latest.revision: 8
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 2f0607ef8deda907c69a23242c89e26edf52e769
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 082398c9a8718b5814c417b9e3d3393de91f0ffb
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51745491"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68206058"
 ---
 # <a name="idebugaliasdispose"></a>IDebugAlias::Dispose
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -50,4 +45,3 @@ int Dispose();
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md)
-

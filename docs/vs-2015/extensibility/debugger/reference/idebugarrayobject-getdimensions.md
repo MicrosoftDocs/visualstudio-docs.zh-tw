@@ -1,14 +1,9 @@
 ---
 title: IDebugArrayObject::GetDimensions |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugArrayObject::GetDimensions
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 113e0aff-9028-49d6-b104-9fe7be4772d7
 caps.latest.revision: 10
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: c58374115a8a3803a2190c16fc6308f275378e9a
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 09902c60f87cfb92d0f0778fcbd106ade4d8dac4
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51760998"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68197781"
 ---
 # <a name="idebugarrayobjectgetdimensions"></a>IDebugArrayObject::GetDimensions
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -60,4 +55,3 @@ int GetDimensions(
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugArrayObject](../../../extensibility/debugger/reference/idebugarrayobject.md)
-

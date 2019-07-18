@@ -7,20 +7,20 @@ helpviewer_keywords:
 - property pages, project subtypes
 - property pages, removing
 ms.assetid: 34853412-ab8a-4caa-9601-7d0727b2985d
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - vssdk
-ms.openlocfilehash: d45d402287443e3cdd643a76853e62c11c64e3d3
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 03974bba0ca93242cf044a58bbb60ca772a369ce
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54951153"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66352308"
 ---
 # <a name="add-and-remove-property-pages"></a>新增和移除屬性頁
 
@@ -32,7 +32,7 @@ ms.locfileid: "54951153"
 
 ### <a name="remove-a-property-page"></a>移除屬性頁
 
-1.  覆寫`GetProperty(uint itemId, int propId, out object property)`方法來篩選屬性頁面，並取得`clsids`清單。
+1. 覆寫`GetProperty(uint itemId, int propId, out object property)`方法來篩選屬性頁面，並取得`clsids`清單。
 
     ```vb
     Protected Overrides int GetProperty(uint itemId, int propId, out object property)
@@ -77,7 +77,7 @@ ms.locfileid: "54951153"
     }
     ```
 
-2.  移除**建置事件**頁面取得`clsids`清單。
+2. 移除**建置事件**頁面取得`clsids`清單。
 
     ```vb
     Private buildEventsPageGuid As String = "{1E78F8DB-6C07-4D61-A18F-7514010ABD56}"
@@ -113,7 +113,7 @@ ms.locfileid: "54951153"
 
 ### <a name="add-a-property-page"></a>加入屬性頁
 
-1.  建立您想要新增的屬性頁面。
+1. 建立您想要新增的屬性頁面。
 
     ```vb
     Class DeployPropertyPage
@@ -158,7 +158,7 @@ ms.locfileid: "54951153"
     }
     ```
 
-2.  註冊新的屬性頁。
+2. 註冊新的屬性頁。
 
     ```vb
     <MSVSIP.ProvideObject(GetType(DeployPropertyPage), RegisterUsing = RegistrationMethod.CodeBase)>
@@ -168,7 +168,7 @@ ms.locfileid: "54951153"
     [MSVSIP.ProvideObject(typeof(DeployPropertyPage), RegisterUsing = RegistrationMethod.CodeBase)]
     ```
 
-3.  覆寫`GetProperty(uint itemId, int propId, out object property)`方法，以篩選屬性頁，取得`clsids`清單，並加入新的屬性頁。
+3. 覆寫`GetProperty(uint itemId, int propId, out object property)`方法，以篩選屬性頁，取得`clsids`清單，並加入新的屬性頁。
 
     ```vb
     Protected Overrides Function GetProperty(ByVal itemId As UInteger, ByVal propId As Integer, ByRef [property] As Object) As Integer

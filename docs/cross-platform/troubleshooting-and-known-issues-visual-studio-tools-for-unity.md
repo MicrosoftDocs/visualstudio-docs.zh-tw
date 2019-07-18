@@ -1,5 +1,5 @@
 ---
-title: 疑難排解和已知問題 (Visual Studio Tools for Unity) | Microsoft Docs
+title: 疑難排解和已知問題 (VS Tools for Unity)
 ms.custom: ''
 ms.date: 07/03/2018
 ms.technology: vs-unity-tools
@@ -10,12 +10,12 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 1c69c78e9a081680c6ee5279ddce1816bf500672
-ms.sourcegitcommit: 5c049194fa256b876ad303f491af11edd505756c
+ms.openlocfilehash: d6856ff73f9aab2325a31e164e7983a919097d46
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53027285"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66261120"
 ---
 # <a name="troubleshooting-and-known-issues-visual-studio-tools-for-unity"></a>疑難排解和已知問題 (Visual Studio Tools for Unity)
 
@@ -54,7 +54,7 @@ ms.locfileid: "53027285"
 
 剖析、FMOD、UMP (通用媒體播放程式)、ZFBrowser 或 Embedded Browser 這類 Unity 外掛程式會使用原生執行緒。 但當外掛程式最後將原生執行緒附加到執行階段時則會發生問題，因為這會導致作業系統的呼叫受到封鎖。 這表示 Unity 無法為偵錯工具中斷該執行緒 (或網域重新載入)，因此會停止回應。
 
-針對 FMOD，有下列因應措施：您可以傳遞 `FMOD_STUDIO_INIT_SYNCHRONOUS_UPDATE` 初始化[旗標](https://www.fmod.org/docs/content/generated/FMOD_STUDIO_INITFLAGS.html)以停用非同步處理，並在主執行緒上執行所有處理。
+針對 FMOD，有下列因應措施：您可以傳遞 `FMOD_STUDIO_INIT_SYNCHRONOUS_UPDATE` 初始化[旗標](https://www.fmod.com/resources/documentation-studio?version=2.0&page=https://fmod.com/resources/documentation-api?version=2.0&page=studio-api-system.html#fmod_studio_initflags)以停用非同步處理，並在主執行緒上執行所有處理。
 
 ## <a name="incompatible-project-in-visual-studio"></a>Visual Studio 中的不相容專案
 
@@ -62,7 +62,7 @@ ms.locfileid: "53027285"
 
 ## <a name="extra-reloads-or-visual-studio-losing-all-open-windows"></a>額外重新載入，或 Visual Studio 遺失所有開啟的視窗
 
-請務必不要再直接從資產處理器或任何其他工具處理專案檔。 如果您真的需要操作專案檔，我們會公開它的 API。 請參閱[組件參考問題](#Assembly-reference-issues)一節。
+請務必不要再直接從資產處理器或任何其他工具處理專案檔。 如果您真的需要操作專案檔，我們會公開它的 API。 請參閱[組件參考問題](#assembly-reference-issues)一節。
 
 如果您發生額外重新載入，或如果 Visual Studio 在重新載入中遺失所有開啟的視窗，請確定您安裝了正確的 .NET 目標套件。 如需架構的詳細資訊，請參閱下節。
 

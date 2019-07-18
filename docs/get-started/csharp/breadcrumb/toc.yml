@@ -1,18 +1,11 @@
-items:
 - name: Docs
   tocHref: /
   topicHref: /
   items:
-  - name: Visual Studio
-    tocHref: /visualstudio/
-    topicHref: /visualstudio/ide/
-    items:
-    - name: C#
-      tocHref: /visualstudio/csharp/
-      topicHref: /visualstudio/csharp/index
-ms.openlocfilehash: 9104d5ed4d2e06bb4d9461d69690a06b12f62b33
-ms.sourcegitcommit: a715de2ba8c703f37aa2102567b1aa2c0f05a117
-ms.translationtype: HT
-ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "53442889"
+    - name: Visual Studio
+      tocHref: /visualstudio/
+      topicHref: /visualstudio/ide/
+      items:
+        - name: 'C#'
+          tocHref: /visualstudio/csharp/
+          topicHref: /visualstudio/csharp/index

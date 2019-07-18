@@ -6,21 +6,21 @@ helpviewer_keywords:
 - debugging [Debugging SDK], custom viewer
 - debugging [Debugging SDK], type visualizer
 ms.assetid: abef18c0-8272-4451-b82a-b4624edaba7d
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bb3168a53ca503a60a8aa5009d02a0f3a4d72b94
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 0f7e977df6236ea8c3310312114ba4fa30d5003a
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56710808"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66344207"
 ---
 # <a name="implement-type-visualizers-and-custom-viewers"></a>實作類型視覺化檢視和自訂檢視器
 > [!IMPORTANT]
->  在 Visual Studio 2015 中，這種實作運算式評估工具已被取代。 實作 CLR 運算式評估工具的詳細資訊，請參閱[CLR 運算式評估工具](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)並[Managed 運算式評估工具範例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。
+> 在 Visual Studio 2015 中，這種實作運算式評估工具已被取代。 實作 CLR 運算式評估工具的詳細資訊，請參閱[CLR 運算式評估工具](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)並[Managed 運算式評估工具範例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。
 
  類型視覺化檢視和自訂檢視器可讓使用者更有意義，比簡單的十六進位傾印的數字的方式檢視特定類型的資料。 運算式評估工具 (EE) 可以將自訂檢視器與特定類型的變數或資料產生關聯。 EE 實作這些自訂檢視器。 EE 也可支援外部類型視覺化檢視，可能是來自其他第三方廠商或甚至是一般使用者。
 

@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 00cc931a75dee9d3762e94ca522e4d060584840b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.openlocfilehash: 0d1769440ea72ff477ac78230f2c7c1bb71b5ace
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55939095"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62816261"
 ---
 # <a name="bind-wpf-controls-to-data-in-visual-studio"></a>將 WPF 控制項繫結至 Visual Studio 中的資料
 
@@ -52,8 +52,8 @@ ms.locfileid: "55939095"
 
 | 資料來源 | 產生可將控制項繫結至資料來源的 XAML | 產生可將資料填入資料來源的程式碼 |
 | - | - | - |
-| 資料集 | 是 | [是] |
-| [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] | [是] | 是 |
+| 資料集 | 是 | 是 |
+| [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] | 是 | 是 |
 | 服務 | 是 | 否 |
 | Object | 是 | 否 |
 
@@ -61,9 +61,9 @@ ms.locfileid: "55939095"
 
 當您將資料表或資料行**資料來源**視窗，以設計工具中，Visual Studio 會產生[!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)]，會進行下列作業：
 
--   將資料集或新 <xref:System.Windows.Data.CollectionViewSource> 加入至拖曳目標容器的資源。 <xref:System.Windows.Data.CollectionViewSource> 物件可用來巡覽及顯示資料集中的資料。
+- 將資料集或新 <xref:System.Windows.Data.CollectionViewSource> 加入至拖曳目標容器的資源。 <xref:System.Windows.Data.CollectionViewSource> 物件可用來巡覽及顯示資料集中的資料。
 
--   建立控制項的資料繫結。 如果您將項目拖曳至設計工具中的現有控制項，XAML 會將控制項繫結至項目。 如果您將項目拖曳至容器時，XAML 會建立為拖曳的項目，所選取的控制項和它的項目繫結的控制項。 控制項是在新的 <xref:System.Windows.Controls.Grid> 內建立。
+- 建立控制項的資料繫結。 如果您將項目拖曳至設計工具中的現有控制項，XAML 會將控制項繫結至項目。 如果您將項目拖曳至容器時，XAML 會建立為拖曳的項目，所選取的控制項和它的項目繫結的控制項。 控制項是在新的 <xref:System.Windows.Controls.Grid> 內建立。
 
 Visual Studio 也會對程式碼後置檔案進行下列變更：
 
@@ -71,7 +71,7 @@ Visual Studio 也會對程式碼後置檔案進行下列變更：
 
 ### <a name="entity-data-models"></a>實體資料模型
 
-當您拖曳實體或實體屬性從**資料來源**產生的設計工具中，Visual Studio 視窗[!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)]，會進行下列作業：
+當您拖曳實體或實體屬性從**資料來源**視窗，以設計工具中，Visual Studio 會產生[!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)]，會進行下列作業：
 
 - 將新 <xref:System.Windows.Data.CollectionViewSource> 加入至拖曳目標容器的資源。 <xref:System.Windows.Data.CollectionViewSource> 物件可用來巡覽及顯示實體中的資料。
 
@@ -102,9 +102,9 @@ Visual Studio 會產生執行下列工作的 XAML：
 
 Visual Studio 會產生[!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)]，會進行下列作業：
 
--   將新 <xref:System.Windows.Data.CollectionViewSource> 加入至拖曳目標容器的資源。 <xref:System.Windows.Data.CollectionViewSource> 物件可用來巡覽及顯示物件中的資料。
+- 將新 <xref:System.Windows.Data.CollectionViewSource> 加入至拖曳目標容器的資源。 <xref:System.Windows.Data.CollectionViewSource> 物件可用來巡覽及顯示物件中的資料。
 
--   建立控制項的資料繫結。 如果您將項目拖曳至設計工具中的現有控制項，XAML 會將控制項繫結至項目。 如果您將項目拖曳至容器時，XAML 會建立為拖曳的項目，所選取的控制項和它的項目繫結的控制項。 控制項是在新的 <xref:System.Windows.Controls.Grid> 內建立。
+- 建立控制項的資料繫結。 如果您將項目拖曳至設計工具中的現有控制項，XAML 會將控制項繫結至項目。 如果您將項目拖曳至容器時，XAML 會建立為拖曳的項目，所選取的控制項和它的項目繫結的控制項。 控制項是在新的 <xref:System.Windows.Controls.Grid> 內建立。
 
 ## <a name="see-also"></a>另請參閱
 

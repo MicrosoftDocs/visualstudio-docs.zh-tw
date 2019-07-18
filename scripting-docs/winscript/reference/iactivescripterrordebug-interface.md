@@ -14,11 +14,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 936770859d3bdfe81c84245d32ae63346b142a01
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58153743"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63009528"
 ---
 # <a name="iactivescripterrordebug-interface"></a>IActiveScriptErrorDebug 介面
 提供編譯時期錯誤和執行階段例外狀況的文件內容資訊。 `IActiveScriptError::QueryInterface`方法可支援`IActiveScriptErrorDebug`介面。  

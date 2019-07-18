@@ -12,25 +12,24 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e117eac0a0a5211dcc97ddf14bf6727f62260ff8
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: d127aaa85cdd8da9e5daebe5c7841e0f6e85238d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54767988"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65674867"
 ---
 # <a name="options-page-text-editor-node-properties"></a>文字編輯器節點屬性、選項頁
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 本文件描述與 [選項] 對話方塊的 [文字編輯器] 分類 `DTE.Properties("TextEditor", <Property Page>)` 相關聯的一些頁面 (或屬性集合)。 每一小節的標題就是用來存取 `Properties` 集合的呼叫，而每一小節中的表格會列出集合中的屬性。  
   
- [控制選項設定](http://msdn.microsoft.com/library/a09ed242-7494-4cde-bbd1-7a8ec617965d)中的 Visual Basic 巨集會示範，如何顯示 [選項] 對話方塊中每一個頁面目前的選項及其值。  
+ [控制選項設定](https://msdn.microsoft.com/library/a09ed242-7494-4cde-bbd1-7a8ec617965d)中的 Visual Basic 巨集會示範，如何顯示 [選項] 對話方塊中每一個頁面目前的選項及其值。  
   
 ## <a name="general"></a>一般  
  `DTE.Properties("TextEditor", "General")`  
   
-|屬性項目名稱|值|描述|  
+|屬性項目名稱|值|說明|  
 |------------------------|-----------|-----------------|  
 |GoToAnchorAfterEscape|Get/Set (布林值)|如果為 `True`，在有選取範圍時按 Escape 鍵會將插入點移至建立選取範圍這個動作的起始位置。 如果為 `False`，則會將插入點移至選取範圍的結束位置。|  
 |DragNDropTextEditing|Get/Set (布林值)|決定您能否在文件中拖曳選取的文字區域，執行複製或剪貼作業。|  
@@ -49,7 +48,7 @@ ms.locfileid: "54767988"
   
  `PlainText` 編輯器選項會影響編輯文字檔時的編輯器設定。 每個程式語言和 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 套件都有各自特定的 [文字編輯器] 設定。 例如，若要檢視或變更 [!INCLUDE[csprcs](../../includes/csprcs-md.md)] 的編輯器設定，請使用 `DTE.Properties("TextEditor", "CSharp") or DTE.Properties("TextEditor", "CSharp-Specific")`。 [SQL 指令碼] 編輯器設定請使用 `DTE.Properties("TextEditor", "SQL ")`。  
   
-|屬性項目名稱|值|描述|  
+|屬性項目名稱|值|說明|  
 |------------------------|-----------|-----------------|  
 |AutoListMembers|Get/Set (布林值)|決定當使用者在變數參考後面輸入句號時，是否自動顯示可用的成員清單|  
 |AutoListParams|Get/Set (布林值)|決定當使用者在函式名稱後面輸入 "(" 時，是否自動顯示引數清單描述|  
@@ -67,7 +66,7 @@ ms.locfileid: "54767988"
 |CutCopyBlankLines|Get/Set (布林值)|在選取時剪下或複製空白行。|  
   
 ## <a name="see-also"></a>請參閱  
- [控制選項設定](http://msdn.microsoft.com/library/a09ed242-7494-4cde-bbd1-7a8ec617965d)   
- [在選項頁中決定屬性項目的名稱](http://msdn.microsoft.com/library/d450422d-47c7-4eeb-9f9f-3286264bc5aa)   
+ [控制選項設定](https://msdn.microsoft.com/library/a09ed242-7494-4cde-bbd1-7a8ec617965d)   
+ [在選項頁中決定屬性項目的名稱](https://msdn.microsoft.com/library/d450422d-47c7-4eeb-9f9f-3286264bc5aa)   
  [環境節點屬性、選項頁](../../ide/reference/options-page-environment-node-properties.md)   
  [字型和色彩節點屬性、選項頁面](../../ide/reference/options-page-fonts-and-colors-node-properties.md)

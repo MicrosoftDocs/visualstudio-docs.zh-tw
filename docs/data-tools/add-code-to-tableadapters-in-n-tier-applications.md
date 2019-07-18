@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 75f7dd3149785520023657bb86ec8172dc379ab6
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.openlocfilehash: e61b9e35464c4200581f6859b2f394911d266d44
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55926992"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63402910"
 ---
 # <a name="add-code-to-tableadapters-in-n-tier-applications"></a>將程式碼新增至多層式架構 (N-Tier) 應用程式中的 TableAdapter
 您可以透過建立 TableAdapter 部分類別檔案，並加入程式碼擴充 TableAdapter 的功能 (而不是將程式碼加入*DatasetName.DataSet.Designer*檔案)。 部分類別可讓多個實體檔案分割為特定類別的程式碼。 如需詳細資訊，請參閱 <<c0> [ 部分](/dotnet/visual-basic/language-reference/modifiers/partial)或是[partial （類型）](/dotnet/csharp/language-reference/keywords/partial-type)。
@@ -29,7 +29,7 @@ ms.locfileid: "55926992"
 根據預設，您可將資料集和 TableAdapter 程式碼之後, 的結果會是離散的類別檔案中的每個專案。 原始的專案具有名為的檔案*DatasetName.Designer.vb* (或*DatasetName.Designer.cs*) 包含 TableAdapter 的程式碼。 專案中指定**資料集 Project**屬性具有名為的檔案*DatasetName.DataSet.Designer.vb* (或*DatasetName.DataSet.Designer.cs*)，包含資料集程式碼。
 
 > [!NOTE]
->  當您分隔資料集與 TableAdapter 時 (設定 [資料集專案] 屬性)，將不會自動移動專案中的現有部份資料集類別。 現有的部分資料集類別必須手動將移至資料集專案。
+> 當您分隔資料集與 TableAdapter 時 (設定 [資料集專案] 屬性)，將不會自動移動專案中的現有部份資料集類別。 現有的部分資料集類別必須手動將移至資料集專案。
 
 > [!NOTE]
 > 資料集提供功能來產生<xref:System.Data.DataTable.ColumnChanging>和<xref:System.Data.DataTable.RowChanging>時需要驗證的事件處理常式。 如需詳細資訊，請參閱 <<c0> [ 將驗證新增至多層式架構資料集](../data-tools/add-validation-to-an-n-tier-dataset.md)。
@@ -38,17 +38,17 @@ ms.locfileid: "55926992"
 
 ## <a name="to-add-user-code-to-a-tableadapter-in-an-n-tier-application"></a>若要將使用者程式碼新增至多層式架構應用程式中的 TableAdapter
 
-1.  找出包含專案 *.xsd*檔案。
+1. 找出包含專案 *.xsd*檔案。
 
-2.  按兩下 *.xsd*若要開啟的檔案**Dataset 設計工具**。
+2. 按兩下 *.xsd*若要開啟的檔案**Dataset 設計工具**。
 
-3.  以滑鼠右鍵按一下您想要加入程式碼，然後選取 TableAdapter**檢視程式碼**。
+3. 以滑鼠右鍵按一下您想要加入程式碼，然後選取 TableAdapter**檢視程式碼**。
 
      部分類別會建立，並會在程式碼編輯器中開啟。
 
-4.  加入部分類別宣告內的程式碼。
+4. 加入部分類別宣告內的程式碼。
 
-5.  下列範例示範如何將程式碼加入`CustomersTableAdapter`在`NorthwindDataSet`:
+5. 下列範例示範如何將程式碼加入`CustomersTableAdapter`在`NorthwindDataSet`:
 
     ```vb
     Partial Public Class CustomersTableAdapter

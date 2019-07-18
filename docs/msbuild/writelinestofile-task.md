@@ -19,11 +19,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8cfe294e94acce70f48b96265b3edc491b37e668
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56653865"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62777889"
 ---
 # <a name="writelinestofile-task"></a>WriteLinesToFile 工作
 將所指定項目的路徑寫入至指定的文字檔。

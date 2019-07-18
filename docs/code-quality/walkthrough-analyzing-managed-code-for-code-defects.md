@@ -5,31 +5,31 @@ ms.topic: conceptual
 helpviewer_keywords:
 - code analysis [Visual Studio]
 - managed code, analyzing
-author: gewarren
-ms.author: gewarren
+author: mikadumont
+ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3097e52f99f044257b8eaf634455bdf19978d0c3
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 3a2ce9b719f77377abf5b2bebd81b03a2606258b
+ms.sourcegitcommit: fd5a5b057df3d733f5224c305096907989811f85
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55952837"
+ms.lasthandoff: 06/18/2019
+ms.locfileid: "67195297"
 ---
-# <a name="walkthrough-analyzing-managed-code-for-code-defects"></a>逐步解說：分析 managed 程式碼的程式碼缺失
+# <a name="walkthrough-use-static-code-analysis-to-find-code-defects"></a>逐步解說：使用靜態程式碼分析，以尋找程式碼缺失
 
 在本逐步解說中，您會使用程式碼分析工具來分析 managed 的專案的程式碼缺失。
 
-本逐步解說會引導您使用程式碼分析來分析您的.NET managed 程式碼組件符合 Microsoft.NET Framework 設計方針的程序。
+本逐步解說會引導您使用靜態程式碼分析來分析您的.NET managed 程式碼組件符合.NET 設計指導方針的程序。
 
 ## <a name="create-a-class-library"></a>建立類別庫
 
 ### <a name="to-create-a-class-library"></a>若要建立類別庫
 
-1. 在 [檔案] 功能表上，選擇 [新增] > [專案]。
+1. 在 [檔案]  功能表上，選擇 [新增]   > [專案]  。
 
-1. 在**新的專案**對話方塊方塊中，展開**已安裝** > **Visual C#**，然後選擇  **Windows 桌面**。
+1. 在**新的專案**對話方塊方塊中，展開**已安裝** > **Visual C#** ，然後選擇  **Windows 桌面**。
 
 1. 選擇**類別庫 (.NET Framework)** 範本。
 
@@ -61,7 +61,7 @@ ms.locfileid: "55952837"
 
 1. 中，選取 CodeAnalysisManagedDemo 專案**方案總管 中**。
 
-1. 在 [專案] 功能表上，按一下 [屬性]。
+1. 在 [專案]  功能表上，按一下 [屬性]  。
 
      CodeAnalysisManagedDemo 的 [內容] 頁面會顯示。
 
@@ -85,7 +85,7 @@ ms.locfileid: "55952837"
 
     根據您選擇的開發人員設定檔，您可能必須以指向**其他的 Windows**上**檢視**功能表，然後選擇**錯誤清單**。
 
-1. 在 [方案總管] 中選擇 [顯示所有檔案]。
+1. 在 [方案總管]  中選擇 [顯示所有檔案]  。
 
 1. 展開 [屬性] 節點，然後開啟*AssemblyInfo.cs*檔案。
 
@@ -141,7 +141,7 @@ ms.locfileid: "55952837"
 
    1. 選取 **簽署組件**核取方塊。
 
-   1. 在 **選擇字串名稱金鑰檔**清單中，選取**\<新增...>**。
+   1. 在 **選擇字串名稱金鑰檔**清單中，選取 **\<新增...>** 。
 
       **建立強式名稱金鑰** 對話方塊隨即出現。
 
@@ -151,7 +151,7 @@ ms.locfileid: "55952837"
 
    1. 在 **檔案**功能表上，選擇**儲存選取項目**，然後關閉 屬性頁。
 
-   [CA2237： 必須Serializableattribute 標記 ISerializable 類型](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md):Microsoft.Usage:加入輸入 'demo' 因為此類型會實作 ISerializable [Serializable] 屬性。
+   [CA2237：Serializableattribute 標記 ISerializable 類型](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md):Microsoft.Usage:加入輸入 'demo' 因為此類型會實作 ISerializable [Serializable] 屬性。
 
    1. 新增`[Serializable ()]`屬性加入該類別`demo`。
 

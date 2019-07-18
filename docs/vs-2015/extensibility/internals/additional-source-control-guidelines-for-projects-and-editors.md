@@ -1,26 +1,21 @@
 ---
 title: 專案和編輯器適用的其他原始檔控制指導方針 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK], guidelines for projects and editors
 ms.assetid: 2483cce5-321c-4d3c-9c5c-ee8385263f74
 caps.latest.revision: 15
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: c52244aa91217ae57d4265ce37a530b2e48d0e93
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 376b297e94cc8e5f429254bdc981aea994b27130
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51770706"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68203839"
 ---
 # <a name="additional-source-control-guidelines-for-projects-and-editors"></a>專案和編輯器適用的其他原始檔控制方針
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -30,7 +25,7 @@ ms.locfileid: "51770706"
 ## <a name="guidelines"></a>方針  
  您的專案或編輯器應該也會執行以下動作來支援原始檔控制：  
   
-|區域圖|專案|編輯器|詳細資料|  
+|區域|專案|編輯器|詳細資料|  
 |----------|-------------|------------|-------------|  
 |私用檔案的複本|X||環境支援檔案的私用的複本。 也就是登錄在專案中每個人都他/她自己的私用複本，該專案中的檔案。|  
 |ANSI/Unicode 持續性|X|X|如果您撰寫持續性程式碼時，保存 ANSI 格式的檔案，因為大部分的原始檔控制程式目前不支援 Unicode。|  
@@ -42,4 +37,3 @@ ms.locfileid: "51770706"
   
 ## <a name="see-also"></a>另請參閱  
  [支援原始檔控制](../../extensibility/internals/supporting-source-control.md)
-

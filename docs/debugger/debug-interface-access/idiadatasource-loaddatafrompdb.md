@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: fb34098f8d69d3c8618c406eff9666d52eace1f2
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56605597"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62554140"
 ---
 # <a name="idiadatasourceloaddatafrompdb"></a>IDiaDataSource::loadDataFromPdb
 隨即開啟，並準備做為偵錯資料來源的程式資料庫 (.pdb) 檔。
@@ -38,7 +38,7 @@ pdbPath
 ## <a name="return-value"></a>傳回值
 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。 下表顯示可能的傳回值，這個方法。
 
-|值|說明|
+|值|描述|
 |-----------|-----------------|
 |E_PDB_NOT_FOUND|無法開啟檔案，或判斷檔案有無效的格式。|
 |E_PDB_FORMAT|嘗試存取已過時的格式的檔案。|
@@ -64,7 +64,7 @@ if (FAILED(hr))
 }
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md)
 - [IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)
 - [IDiaDataSource::loadAndValidateDataFromPdb](../../debugger/debug-interface-access/idiadatasource-loadandvalidatedatafrompdb.md)

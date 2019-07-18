@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugDisassemblyStream2::GetCurrentLocation
 ms.assetid: 512302f1-12b1-4107-8a6e-c5bc878ce1c3
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3fa89650ea1497afcb5ac1143264103ee7fc69b1
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 87adb08b6907fc07363372ab2e41377fc37957f5
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56678525"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66351734"
 ---
 # <a name="idebugdisassemblystream2getcurrentlocation"></a>IDebugDisassemblyStream2::GetCurrentLocation
 傳回代表目前的程式碼位置的程式碼位置識別碼。
@@ -36,10 +39,9 @@ int GetCurrentLocation( 
 );
 ```
 
-#### <a name="parameters"></a>參數
- `puCodeLocationId`
-
- [out]傳回的程式碼位置識別碼。 請參閱 < 備註 > 一節[GetCodeLocationId](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodelocationid.md)方法的程式碼的位置識別項的描述。
+## <a name="parameters"></a>參數
+`puCodeLocationId`\
+[out]傳回的程式碼位置識別碼。 請參閱 < 備註 > 一節[GetCodeLocationId](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodelocationid.md)方法的程式碼的位置識別項的描述。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

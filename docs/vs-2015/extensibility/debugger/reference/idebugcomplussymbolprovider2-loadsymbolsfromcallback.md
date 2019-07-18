@@ -1,27 +1,22 @@
 ---
-title: IDebugComPlusSymbolProvider2::LoadSymbolsFromCallback |Microsoft Docs
-ms.custom: ''
+title: IDebugComPlusSymbolProvider2::LoadSymbolsFromCallback | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - LoadSymbolsFromCallback
 - IDebugComPlusSymbolProvider2::LoadSymbolsFromCallback
 ms.assetid: 905315ba-8e9b-4889-b9da-98e1441950ad
 caps.latest.revision: 14
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: ee82503512e2282fbf6bc69a5123ce52f97f0df8
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 108d50788992eb8316811bb5d9c7d327c3d62eda
+ms.sourcegitcommit: 0cd282a7584b9bfd4df7882f8fdf3ad8a270e219
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51798361"
+ms.lasthandoff: 07/01/2019
+ms.locfileid: "62540562"
 ---
 # <a name="idebugcomplussymbolprovider2loadsymbolsfromcallback"></a>IDebugComPlusSymbolProvider2::LoadSymbolsFromCallback
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -175,4 +170,3 @@ Error:
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)
-

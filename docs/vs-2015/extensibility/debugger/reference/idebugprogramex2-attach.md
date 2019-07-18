@@ -1,14 +1,9 @@
 ---
-title: IDebugProgramEx2::Attach |Microsoft Docs
-ms.custom: ''
+title: IDebugProgramEx2::Attach | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugProgramEx2::Attach
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 33b22b2f-431e-4205-9441-d28a9c928c97
 caps.latest.revision: 14
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: ea96fab360df7b23090ba93918a5bff60a31ea32
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 4fe729f2fc196380a3db1a60d1c32f62bbd70998
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51751094"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439161"
 ---
 # <a name="idebugprogramex2attach"></a>IDebugProgramEx2::Attach
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -65,8 +60,7 @@ int Attach( 
  包含該程式的連接埠可以使用中的值`pSession`來判斷哪一個工作階段嘗試附加至程式。 例如，如果連接埠允許附加至處理序中，一次只能有一個偵錯工作階段，連接埠就可以判斷是否相同的工作階段已附加至處理序中的其他程式。  
   
 > [!NOTE]
->  介面傳入`pSession`會僅視為 cookie 值可唯一識別 附加至這個方案的偵錯工作階段管理員提供的介面上的方法沒有任何功能。  
+> 介面傳入`pSession`會僅視為 cookie 值可唯一識別 附加至這個方案的偵錯工作階段管理員提供的介面上的方法沒有任何功能。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugProgramEx2](../../../extensibility/debugger/reference/idebugprogramex2.md)
-

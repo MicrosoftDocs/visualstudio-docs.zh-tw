@@ -1,14 +1,9 @@
 ---
-title: IDebugMessageEvent2 |Microsoft Docs
-ms.custom: ''
+title: IDebugMessageEvent2 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugMessageEvent2
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: a9ff3d00-e9ac-4cd6-bda9-584a4815aff8
 caps.latest.revision: 13
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 8ac168e24de6cf444ac8fcd4215e4ee978fae925
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: e7bb6b014ef8aa662abd42ab2989d47f703880a4
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51799804"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685976"
 ---
 # <a name="idebugmessageevent2"></a>IDebugMessageEvent2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -36,7 +31,7 @@ IDebugMessageEvent2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>實作者的附註  
- DE 會實作這個介面來傳送訊息至 Visual Studio 所需的使用者回應。 [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)介面必須實作此介面的相同物件上。 使用 SDM [QueryInterface](http://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3)若要存取`IDebugEvent2`介面。  
+ DE 會實作這個介面來傳送訊息至 Visual Studio 所需的使用者回應。 [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)介面必須實作此介面的相同物件上。 使用 SDM [QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3)若要存取`IDebugEvent2`介面。  
   
  這個介面的實作必須與其進行通訊的 Visual Studio 呼叫[Responsemanager](../../../extensibility/debugger/reference/idebugmessageevent2-setresponse.md) DE 到。 比方說，這可以使用訊息，張貼至 DE 的訊息處理執行緒，或實作這個介面的物件可以保存 DE 的參考，並與回應傳遞至回撥 DE `IDebugMessageEvent2::SetResponse`。  
   
@@ -54,20 +49,19 @@ IDebugMessageEvent2 : IUnknown
 ## <a name="remarks"></a>備註  
  預設會使用此介面，如果需要使用者的特定回應特定訊息。 比方說，如果 DE 取得 「 拒絕存取 」 訊息，嘗試從遠端將其附加至程式之後，DE 會傳送此特定訊息中的 Visual studio`IDebugMessageEvent2`事件的訊息方塊樣式`MB_RETRYCANCEL`。 這可讓使用者重試一次，或取消在附加作業。  
   
- DE 指定由下列的 Win32 函式的慣例來處理此訊息有何`MessageBox`(請參閱 < [AfxMessageBox](http://msdn.microsoft.com/library/d66d0328-cdcc-48f6-96a4-badf089099c8)如需詳細資訊)。  
+ DE 指定由下列的 Win32 函式的慣例來處理此訊息有何`MessageBox`(請參閱 < [AfxMessageBox](https://msdn.microsoft.com/library/d66d0328-cdcc-48f6-96a4-badf089099c8)如需詳細資訊)。  
   
  使用[IDebugErrorEvent2](../../../extensibility/debugger/reference/idebugerrorevent2.md)介面將訊息傳送至 Visual Studio 不需要使用者回應。  
   
 ## <a name="requirements"></a>需求  
  標頭： msdbg.h  
   
- 命名空間： Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間：Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
  [核心介面](../../../extensibility/debugger/reference/core-interfaces.md)   
  [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)   
  [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)   
  [IDebugErrorEvent2](../../../extensibility/debugger/reference/idebugerrorevent2.md)
-

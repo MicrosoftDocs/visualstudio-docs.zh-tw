@@ -18,23 +18,22 @@ caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 32b907680155c9631ca5336c2228dd5b8ecce8d9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: f135221564583d2d9726bb9fa153840b1328e96f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54778600"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65701820"
 ---
 # <a name="publish-page-project-designer"></a>專案設計工具、發行頁
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 [專案設計工具]  的 [發行]  頁面，可用以設定 ClickOnce 部署的屬性。  
   
  若要存取 [發行]  頁面，請選取方案總管 中的專案節點，然後按一下 [專案]  功能表上的 [屬性] 。 當 [ **專案設計工具** ] 出現時，請按一下 [ **發行** ] 索引標籤。  
   
 > [!NOTE]
->  這裡描述的一些 ClickOnce 屬性也可以設定於 [發行精靈] 中 (從 [組建] 功能表或按一下此頁面上的 [發行精靈] 按鈕即可使用)。  
+> 這裡描述的一些 ClickOnce 屬性也可以設定於 [發行精靈] 中 (從 [組建] 功能表或按一下此頁面上的 [發行精靈] 按鈕即可使用)。  
   
 ## <a name="uielement-list"></a>UIElement 清單  
  **發行資料夾位置**  
@@ -51,16 +50,16 @@ ms.locfileid: "54778600"
  針對 WPF Web 瀏覽器應用程式，停用 [應用程式也可以在離線時使用]  選項，因為這類應用程式只能在上線時使用。  
   
  **應用程式檔案**  
- 開啟 [[應用程式檔案] 對話方塊](http://msdn.microsoft.com/b06dff3a-b87a-4caf-996b-7a4acf8137a8)，以用來指定個別檔案的安裝方式和位置。  
+ 開啟 [[應用程式檔案] 對話方塊](https://msdn.microsoft.com/b06dff3a-b87a-4caf-996b-7a4acf8137a8)，以用來指定個別檔案的安裝方式和位置。  
   
  **必要條件**  
  開啟 [[必要條件] 對話方塊](../../ide/reference/prerequisites-dialog-box.md)，以用來指定將必備元件 (例如 .NET Framework) 和應用程式安裝在一起。  
   
  **更新**  
- 開啟 [[應用程式更新] 對話方塊](http://msdn.microsoft.com/8eca8743-8e68-4d04-bfd5-4dc0a9b2934f)，以用來指定應用程式的更新行為。 選取 [應用程式只能在線上時使用]  時無法使用。  
+ 開啟 [[應用程式更新] 對話方塊](https://msdn.microsoft.com/8eca8743-8e68-4d04-bfd5-4dc0a9b2934f)，以用來指定應用程式的更新行為。 選取 [應用程式只能在線上時使用]  時無法使用。  
   
  **選項**  
- 開啟 [[發行選項] 對話方塊](http://msdn.microsoft.com/fd9baa1b-7311-4f9e-8ffb-ae50cf110592)，以用來指定其他進階發行選項。  
+ 開啟 [[發行選項] 對話方塊](https://msdn.microsoft.com/fd9baa1b-7311-4f9e-8ffb-ae50cf110592)，以用來指定其他進階發行選項。  
   
  **發行版本**  
  設定應用程式的發行版本號碼；當版本號碼變更時，會以更新形式發行應用程式。 發行版本的每個部分 (**主要**、**次要**、**組建**、**修訂**) 最大值可以是 65355 (<xref:System.UInt16.MaxValue>)，這是 <xref:System.Version> 允許的最大值。  
@@ -71,25 +70,25 @@ ms.locfileid: "54778600"
  選擇性。 選取此選項時 (預設)，每次發行應用程式時，發行版本號碼的 [修訂]  部分都會加一。 這樣會以更新形式發行應用程式。  
   
  **發行精靈**  
- 開啟 [[發行精靈]](http://msdn.microsoft.com/fc6abebd-13d6-48e4-a567-fbc52dad0872)。 完成 [發行精靈] 的效果，與執行 [建置]  功能表上的 [發行]  命令相同。  
+ 開啟 [[發行精靈]](https://msdn.microsoft.com/fc6abebd-13d6-48e4-a567-fbc52dad0872)。 完成 [發行精靈] 的效果，與執行 [建置]  功能表上的 [發行]  命令相同。  
   
  **立即發行**  
  使用目前的設定發行應用程式。 這相當於 [發行精靈] 中的 [完成] 按鈕。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [發佈 ClickOnce 應用程式](../../deployment/publishing-clickonce-applications.md)   
- [如何：使用發行精靈發行 ClickOnce 應用程式](../../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)   
+ [如何：發行 ClickOnce 應用程式使用發行精靈](../../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)   
  [如何：指定 Visual Studio 複製檔案的位置](../../deployment/how-to-specify-where-visual-studio-copies-the-files.md)   
- [如何：指定位置讓終端使用者從此處執行安裝作業](../../deployment/how-to-specify-the-location-where-end-users-will-install-from.md)   
- [如何：指定技術支援的連結](../../deployment/how-to-specify-a-link-for-technical-support.md)   
+ [如何：指定使用者將從安裝的位置](../../deployment/how-to-specify-the-location-where-end-users-will-install-from.md)   
+ [如何：如需技術支援指定的連結](../../deployment/how-to-specify-a-link-for-technical-support.md)   
  [如何：指定 ClickOnce 離線或線上安裝模式](../../deployment/how-to-specify-the-clickonce-offline-or-online-install-mode.md)   
  [如何：啟用 CD 安裝的 AutoStart](../../deployment/how-to-enable-autostart-for-cd-installations.md)   
  [如何：設定 ClickOnce 發行版本](../../deployment/how-to-set-the-clickonce-publish-version.md)   
  [如何：自動累加 ClickOnce 的發行版本](../../deployment/how-to-automatically-increment-the-clickonce-publish-version.md)   
- [如何：指定哪些檔案是由 ClickOnce 發行](../../deployment/how-to-specify-which-files-are-published-by-clickonce.md)   
+ [如何：指定哪些檔案由 ClickOnce 發行](../../deployment/how-to-specify-which-files-are-published-by-clickonce.md)   
  [如何：使用 ClickOnce 應用程式安裝必要條件](../../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)   
  [如何：管理 ClickOnce 應用程式的更新](../../deployment/how-to-manage-updates-for-a-clickonce-application.md)   
- [如何：變更 ClickOnce 應用程式的發行語言](../../deployment/how-to-change-the-publish-language-for-a-clickonce-application.md)   
+ [如何：變更發行 ClickOnce 應用程式的語言](../../deployment/how-to-change-the-publish-language-for-a-clickonce-application.md)   
  [如何：指定 ClickOnce 應用程式的開始功能表名稱](../../deployment/how-to-specify-a-start-menu-name-for-a-clickonce-application.md)   
  [如何：指定 ClickOnce 應用程式的發行頁面](../../deployment/how-to-specify-a-publish-page-for-a-clickonce-application.md)   
  [ClickOnce 安全性和部署](../../deployment/clickonce-security-and-deployment.md)

@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 505a05c13add7c9e4d2ee27790ef6b971ee281f9
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: c69d010f9a4e834f9435616747c2776786706445
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56635133"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62999334"
 ---
 # <a name="project-element-msbuild"></a>Project 元素 (MSBuild)
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 專案檔案的必要根項目。
@@ -61,7 +61,7 @@ ms.locfileid: "56635133"
 | `Sdk` | 選擇性屬性。 <br /><br /> 要用來建立隱含 Import 陳述式 (會將它新增至 .proj 檔案) 的 SDK 名稱和選擇性版本。 如果未指定版本，MSBuild 會嘗試解析預設版本。  例如，`<Project Sdk="Microsoft.NET.Sdk" />` 或 `<Project Sdk="My.Custom.Sdk/1.0.0" />`。 |
 | `ToolsVersion` | 選擇性屬性。<br /><br /> MSBuild 用來判斷 $(MSBuildBinPath) 和 $(MSBuildToolsPath) 之值的工具組版本。 |
 | `TreatAsLocalProperty` | 選擇性屬性。<br /><br /> 將不會被視為全域的屬性名稱。 這個屬性可防止特定的命令列屬性覆寫專案檔或目標檔案及所有後續匯入中設定的屬性值。 請以分號 (;) 來分隔多個屬性。<br /><br /> 一般來說，全域屬性值會覆寫專案檔或目標檔案中所設定的屬性值。 如果此屬性列於 `TreatAsLocalProperty` 值中，則全域屬性值不會覆寫該檔案及任何後續匯入中所設定的屬性值。 如需詳細資訊，請參閱[如何：使用不同選項來建置相同的來源檔案](../msbuild/how-to-build-the-same-source-files-with-different-options.md)。 **注意：** 您可以使用 **-property** (或 **-p**) 參數，在命令提示字元中設定全域屬性。 您也可以使用 MSBuild 工作的 `Properties` 屬性，針對多專案組建中的子專案設定或修改全域屬性。 如需詳細資訊，請參閱 [MSBuild 工作](../msbuild/msbuild-task.md)。 |
-| `Xmlns` | 選擇性屬性。<br /><br /> 指定時，`xmlns` 屬性的值必須為 `http://schemas.microsoft.com/developer/msbuild/2003`。 |
+| `xmlns` | 選擇性屬性。<br /><br /> 指定時，`xmlns` 屬性的值必須為 `http://schemas.microsoft.com/developer/msbuild/2003`。 |
 
 ### <a name="child-elements"></a>子元素
 

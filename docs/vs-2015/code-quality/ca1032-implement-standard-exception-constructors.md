@@ -1,14 +1,9 @@
 ---
-title: Ca1032： 必須實作標準例外狀況建構函式 |Microsoft Docs
-ms.custom: ''
+title: CA1032:實作標準例外狀況建構函式 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1032
 - ImplementStandardExceptionConstructors
@@ -20,14 +15,14 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: efef441e84c4f1d51c633e3fdcb2da8d1ba3e963
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c59da56304a5d1d8f2cca7eaf886fd5ebc37f8ef
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49868608"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68205840"
 ---
-# <a name="ca1032-implement-standard-exception-constructors"></a>CA1032：必須實作標準例外狀況建構函式
+# <a name="ca1032-implement-standard-exception-constructors"></a>CA1032:必須實作標準例外狀況建構函式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -51,7 +46,7 @@ ms.locfileid: "49868608"
 
 - 受保護或私用 NewException （SerializationInfo，StreamingContext）
 
-  無法提供整組的建構函式會導致難以正確地處理例外狀況。 例如，建構函式簽章`NewException(string, Exception)`用來建立其他例外狀況所造成的例外狀況。 沒有這個建構函式無法建立及擲回自訂例外狀況，其中包含內部 （巢狀的） 例外狀況的執行個體，這是哪些受管理的程式碼應該在這種情況下。 第三個例外狀況建構函式是公用的慣例。 第四個建構函式是在未密封的類別中，受保護和密封類別中私用。 如需詳細資訊，請參閱[CA2229： 請實作序列化建構函式](../code-quality/ca2229-implement-serialization-constructors.md)
+  無法提供整組的建構函式會導致難以正確地處理例外狀況。 例如，建構函式簽章`NewException(string, Exception)`用來建立其他例外狀況所造成的例外狀況。 沒有這個建構函式無法建立及擲回自訂例外狀況，其中包含內部 （巢狀的） 例外狀況的執行個體，這是哪些受管理的程式碼應該在這種情況下。 第三個例外狀況建構函式是公用的慣例。 第四個建構函式是在未密封的類別中，受保護和密封類別中私用。 如需詳細資訊，請參閱[CA2229:必須實作序列化建構函式](../code-quality/ca2229-implement-serialization-constructors.md)
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
  若要修正此規則的違規情形，加入遺漏的建構函式例外狀況，並確定它們有正確的存取範圍。
@@ -63,6 +58,3 @@ ms.locfileid: "49868608"
  下列範例包含違反此規則的例外狀況類型以及已正確地實作的例外狀況類型。
 
  [!code-csharp[FxCop.Design.ExceptionMultipleCtors#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.ExceptionMultipleCtors/cs/FxCop.Design.ExceptionMultipleCtors.cs#1)]
-
-
-

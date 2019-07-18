@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: db9d64119a94e2358a6f52e6e1269fca8d726cbb
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 6b20ed28518c9156e82c6fe75ecceda74c66615d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56694396"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62845844"
 ---
 # <a name="messages-view"></a>訊息檢視
 每個視窗都具有相關聯的訊息資料流。 訊息檢視 視窗會顯示此訊息資料流。 視窗控制代碼、 訊息和訊息會顯示。 您可以建立執行緒或處理序的訊息檢視。 這可讓您檢視傳送給特定的處理程序或特別適用於擷取視窗初始化訊息的執行緒所擁有的所有視窗的訊息。
@@ -30,21 +30,21 @@ ms.locfileid: "56694396"
 
 #### <a name="to-open-a-messages-view-for-a-window-process-or-thread"></a>若要開啟的視窗、 處理序或執行緒的訊息檢視
 
-1.  焦點移至[Windows 檢視](../debugger/windows-view.md)，[處理序檢視](../debugger/processes-view.md)，或[執行緒檢視](../debugger/threads-view.md)視窗。
+1. 焦點移至[Windows 檢視](../debugger/windows-view.md)，[處理序檢視](../debugger/processes-view.md)，或[執行緒檢視](../debugger/threads-view.md)視窗。
 
-2.  尋找您想要檢查其訊息的項目節點，並加以選取。
+2. 尋找您想要檢查其訊息的項目節點，並加以選取。
 
-3.  從**Spy**功能表上，選擇**記錄檔訊息**。
+3. 從**Spy**功能表上，選擇**記錄檔訊息**。
 
      [訊息選項對話方塊](../debugger/message-options-dialog-box.md)隨即開啟。
 
-4.  選取您想要顯示之訊息的選項。
+4. 選取您想要顯示之訊息的選項。
 
-5.  按下**確定**開始記錄訊息。
+5. 按下**確定**開始記錄訊息。
 
      訊息檢視 視窗隨即開啟，而**訊息**功能表會加入至 Spy + + 工具列。 視選取的選項而定，訊息就會開始串流處理至作用中的 [訊息] 檢視視窗。
 
-6.  當您有足夠的訊息時，選擇**停止記錄**從**訊息**功能表。
+6. 當您有足夠的訊息時，選擇**停止記錄**從**訊息**功能表。
 
 ## <a name="in-this-section"></a>本節內容
  [控制訊息檢視](../debugger/how-to-control-messages-view.md)說明如何管理訊息檢視。

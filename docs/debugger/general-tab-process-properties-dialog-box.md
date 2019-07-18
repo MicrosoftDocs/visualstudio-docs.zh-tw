@@ -11,18 +11,18 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6116beb67baf072d9c9762a1e8c67408cc915f29
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56709690"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62849812"
 ---
 # <a name="general-tab-process-properties-dialog-box"></a>處理序屬性對話方塊、一般索引標籤
 使用**一般**索引標籤，以深入了解特定的處理程序。 若要顯示[處理序屬性對話方塊](../debugger/process-properties-dialog-box.md)，焦點移至[處理序檢視](../debugger/processes-view.md)視窗。 在樹狀目錄中，選取任何處理序節點，然後選擇**屬性**從**檢視**功能表。
 
  下列設定位於**一般** 索引標籤：
 
-|進入|說明|
+|進入|描述|
 |-----------|-----------------|
 |**模組名稱**|模組的名稱。|
 |**處理序 ID**|此程序的唯一識別碼。 重複使用處理序識別碼，因此它們只會針對該程序的存留期識別處理程序。 當程式執行時，會建立處理程序物件類型。 處理序中的所有執行緒共用相同的位址空間，而且可以存取相同的資料。|

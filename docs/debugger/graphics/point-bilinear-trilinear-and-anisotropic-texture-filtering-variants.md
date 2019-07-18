@@ -1,5 +1,5 @@
 ---
-title: 點、 雙線性、 三線性和非等向性紋理篩選變異 |Microsoft Docs
+title: 點/雙線性/三線性/非等向性紋理篩選變異
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 57d14fc9-b5f7-45ee-9717-48086886742d
@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8229a407c6326d097dd1c1413f3692a3781b40aa
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 314ec61da7ed61cc8bdd573e201d98a53862a32c
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56701338"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66262925"
 ---
 # <a name="point-bilinear-trilinear-and-anisotropic-texture-filtering-variants"></a>點、雙線性、三線性和各向異性紋理篩選變異
 覆寫適當的紋理取樣器上的篩選模式。

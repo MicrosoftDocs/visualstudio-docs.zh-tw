@@ -5,17 +5,17 @@ ms.topic: reference
 helpviewer_keywords:
 - IDebugBreakpointChecksumRequest2 interface
 ms.assetid: 9cfdbca5-052c-48e9-8411-e2e9e4065d00
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dfad0d8469a3cd01b5697cd9ba74f7a84ee84b83
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: edfcb7d1603160c2f857508c3dd32ce0696b6d7f
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56706271"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66352984"
 ---
 # <a name="idebugbreakpointchecksumrequest2"></a>IDebugBreakpointChecksumRequest2
 表示中斷點要求的文件總和檢查碼。

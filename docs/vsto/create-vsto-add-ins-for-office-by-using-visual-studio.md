@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: efb95d2beb90358cbbe359076a815dee13ce7166
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: e0411d40a4b156e24fcdf4fb3e9de5353787333f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56644376"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445553"
 ---
 # <a name="create-vsto-add-ins-for-office-by-using-visual-studio"></a>使用 Visual Studio 建立適用於 Office 的 VSTO 增益集
   您可以使用 Visual Studio 中的 Microsoft Office Developer Tools 來建立 .NET Framework 應用程式，以擴充 Office 功能。 這些應用程式也稱為 *「Office 方案」*(Office Solution)。
@@ -25,13 +25,13 @@ ms.locfileid: "56644376"
  Office 開發人員工具提供的功能，可協助您針對各種商務需求來建立 Office 方案。 這些工具包含可協助您使用 Visual Basic 或 Visual C# 建立 Office 方案的專案範本，以及可協助您為 Office 方案建立自訂使用者介面的視覺化設計工具。
 
 > [!NOTE]
->  想要開發解決方案，擴充的 Office 體驗，跨[多個平台](https://dev.office.com/add-in-availability)嗎？ 查看新[Office 增益集模型](https://dev.office.com/docs/add-ins/overview/office-add-ins)。 Office 增益集較小的使用量，相較於 VSTO 增益集和解決方案，而且您可以使用幾乎任何 web 程式設計技術，例如 HTML5、 JavaScript、 CSS3、 以及 XML 來建置。
+> 想要開發解決方案，擴充的 Office 體驗，跨[多個平台](https://dev.office.com/add-in-availability)嗎？ 查看新[Office 增益集模型](https://dev.office.com/docs/add-ins/overview/office-add-ins)。 Office 增益集較小的使用量，相較於 VSTO 增益集和解決方案，而且您可以使用幾乎任何 web 程式設計技術，例如 HTML5、 JavaScript、 CSS3、 以及 XML 來建置。
 
  如需 Office 開發的最新資訊，請參閱 MSDN 上的下列開發中心：
 
--   [Visual Studio 開發人員入口網站的 Office 程式開發](http://go.microsoft.com/fwlink/?LinkId=123844)包含產品資訊、 程式碼範例、 影片和有關使用 Visual Studio 將 Office 應用程式自訂為解決方案一部分的社群資源的連結.
+- [Visual Studio 開發人員入口網站的 Office 程式開發](http://go.microsoft.com/fwlink/?LinkId=123844)包含產品資訊、 程式碼範例、 影片和有關使用 Visual Studio 將 Office 應用程式自訂為解決方案一部分的社群資源的連結.
 
--   [Microsoft Office 開發人員中心](http://go.microsoft.com/fwlink/?LinkId=83467)包含技術文章、 程式碼範例、 下載、 社群資訊、 支援，以及有關 Office 自訂和 Office Business Application (Oba 的其他文件的連結).
+- [Microsoft Office 開發人員中心](http://go.microsoft.com/fwlink/?LinkId=83467)包含技術文章、 程式碼範例、 下載、 社群資訊、 支援，以及有關 Office 自訂和 Office Business Application (Oba 的其他文件的連結).
 
 ## <a name="in-this-section"></a>本節內容
 - [開始使用&#40;在 Visual Studio 中的 Office 程式開發&#41;](../vsto/getting-started-office-development-in-visual-studio.md)

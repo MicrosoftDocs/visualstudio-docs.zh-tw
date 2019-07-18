@@ -1,26 +1,21 @@
 ---
 title: IDebugExpressionEvaluator3::Parse2 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - IDebugExpressionEvaluator3::Parse2
 ms.assetid: 78099628-d600-4f76-b7c8-ee07c864af1e
 caps.latest.revision: 12
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: a12cf778633fecdd5e4f4c473460f6a2fa7af216
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 3c8629fb996dd020882ce81ae9975ccd799d863c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51772245"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68148964"
 ---
 # <a name="idebugexpressionevaluator3parse2"></a>IDebugExpressionEvaluator3::Parse2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -143,4 +138,3 @@ HRESULT CEE::Parse2 ( LPCOLESTR in_szExprText,
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugExpressionEvaluator3](../../../extensibility/debugger/reference/idebugexpressionevaluator3.md)
-

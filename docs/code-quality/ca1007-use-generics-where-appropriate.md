@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: f1cf2939f0484c6defb76b88fb072fcd4b51849b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ce4f72ba56b27d87d785ca561bad0de6e59dfdc2
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55922509"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66744772"
 ---
 # <a name="ca1007-use-generics-where-appropriate"></a>CA1007:建議在適當時使用泛型
 
@@ -34,7 +34,7 @@ ms.locfileid: "55922509"
 |中斷變更|中斷|
 
 ## <a name="cause"></a>原因
- 外部可見的方法包含類型的參考參數<xref:System.Object?displayProperty=fullName>，和包含的組件目標[!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)]。
+ 外部可見的方法包含類型的參考參數<xref:System.Object?displayProperty=fullName>，且包含組件為目標的.NET Framework 2.0。
 
 ## <a name="rule-description"></a>規則描述
  參考參數會使用已修改的參數`ref`(`ByRef`在[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) 關鍵字。 提供做為參考參數的引數類型必須完全符合參考參數型別。 若要使用衍生自參考的參數類型的類型，類型必須先轉換並指派給變數的參考參數的類型。 使用泛型的方法可讓所有的類型，受限於條件約束，以傳遞至方法，而不先將轉型為參考參數型別類型。

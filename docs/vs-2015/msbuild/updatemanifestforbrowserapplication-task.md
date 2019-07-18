@@ -19,22 +19,21 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d1c45f001c6d050ca48546579f313ee64d5fec2a
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: a0a6dff6c9e10312241f1d95128febbd5dabb6c5
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54778811"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696917"
 ---
 # <a name="updatemanifestforbrowserapplication-task"></a>UpdateManifestForBrowserApplication 工作
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 會執行 <xref:Microsoft.Build.Tasks.Windows.UpdateManifestForBrowserApplication> 工作，以便在建置 [!INCLUDE[TLA#tla_xbap](../includes/tlasharptla-xbap-md.md)] 專案時，將 **\<hostInBrowser />** 項目新增至應用程式資訊清單 (*projectname*.exe.manifest)。  
   
 ## <a name="task-parameters"></a>工作參數  
   
-|參數|描述|  
+|參數|說明|  
 |---------------|-----------------|  
 |`ApplicationManifest`|必要的 **ITaskItem[]** 參數。<br /><br /> 指定要加入 `<hostInBrowser />` 項目的應用程式資訊清單檔案的路徑和名稱。|  
 |`HostInBrowser`|必要的 **Boolean** 參數。<br /><br /> 指定是否要修改應用程式資訊清單以包含 **\<hostInBrowser />** 元素。 若為 **true**，**\<entryPoint />** 元素中會包含新的 `<`**hostInBrowser />** 元素。 請注意，元素的包含是累計的：如果 **\<hostInBrowser />** 元素已經存在，就不會移除或覆寫它。 相反地，會建立額外的 **\<hostInBrowser />** 元素。 若為 **false**，則不會修改應用程式資訊清單。|  
@@ -81,5 +80,5 @@ ms.locfileid: "54778811"
  [工作參考](../msbuild/wpf-msbuild-task-reference.md)   
  [MSBuild 參考](../msbuild/msbuild-reference.md)   
  [工作參考](../msbuild/msbuild-task-reference.md)   
- [建置 WPF 應用程式 (WPF)](http://msdn.microsoft.com/library/a58696fd-bdad-4b55-9759-136dfdf8b91c)   
- [WPF XAML 瀏覽器應用程式概觀](http://msdn.microsoft.com/library/3a7a86a8-75d5-4898-96b9-73da151e5e16)
+ [建置 WPF 應用程式 (WPF)](https://msdn.microsoft.com/library/a58696fd-bdad-4b55-9759-136dfdf8b91c)   
+ [WPF XAML 瀏覽器應用程式概觀](https://msdn.microsoft.com/library/3a7a86a8-75d5-4898-96b9-73da151e5e16)

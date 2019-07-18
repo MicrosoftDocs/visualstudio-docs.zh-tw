@@ -10,11 +10,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e84a7c3c7e402edb3c39ea247ea7efffce1b60df
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54768983"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68154832"
 ---
 # <a name="msbuild-glossary"></a>MSBuild 字彙表
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ ms.locfileid: "54768983"
 
  批次處理
 
- 批次處理表示會根據項目中繼資料，將項目分割成不同的類別 (稱為「批次」)，然後使用每個批次一次執行一或多個目標。 MSBuild 批次處理相當於 for 迴圈建構。 如需詳細資訊，請參閱[批次處理](../msbuild/msbuild-batching.md)。
+ 批次處理表示會根據項目中繼資料，將項目分割成不同的類別 (稱為「批次」  )，然後使用每個批次一次執行一或多個目標。 MSBuild 批次處理相當於 for 迴圈建構。 如需詳細資訊，請參閱[批次處理](../msbuild/msbuild-batching.md)。
 
  建置範圍
 
@@ -36,7 +36,7 @@ ms.locfileid: "54768983"
 
  子專案
 
- 請參閱＜專案，子系＞。
+ 請參閱＜專案，子系＞  。
 
  condition
 
@@ -44,7 +44,7 @@ ms.locfileid: "54768983"
 
  定義，項目
 
- 請參閱＜項目定義＞。
+ 請參閱＜項目定義＞  。
 
  發出項目
 
@@ -64,7 +64,7 @@ ms.locfileid: "54768983"
 
  函式，屬性
 
- 請參閱＜屬性函式＞。
+ 請參閱＜屬性函式＞  。
 
  函式，項目
 
@@ -72,7 +72,7 @@ ms.locfileid: "54768983"
 
  項目
 
- 項目 (Item) 是建置系統的輸入，會根據它們的項目 (Element) 名稱分組到項目 (Item) 類型。 項目通常代表檔案。 由於項目是根據其所屬的項目類型來命名，因此可交換使用「項目」和「項目值」等詞彙。 如需詳細資訊，請參閱[項目](../msbuild/msbuild-items.md)。
+ 項目 (Item) 是建置系統的輸入，會根據它們的項目 (Element) 名稱分組到項目 (Item) 類型。 項目通常代表檔案。 由於項目是根據其所屬的項目類型來命名，因此可交換使用「項目」  和「項目值」  等詞彙。 如需詳細資訊，請參閱[項目](../msbuild/msbuild-items.md)。
 
  項目定義
 
@@ -84,7 +84,7 @@ ms.locfileid: "54768983"
 
  項目中繼資料
 
- 請參閱＜中繼資料，項目＞。
+ 請參閱＜中繼資料，項目＞  。
 
  項目類型
 
@@ -168,7 +168,7 @@ ms.locfileid: "54768983"
 
  登錄屬性
 
- 請參閱＜屬性，登錄＞。
+ 請參閱＜屬性，登錄＞  。
 
  target
 
@@ -216,7 +216,7 @@ ms.locfileid: "54768983"
 
  已知的中繼資料
 
- 請參閱＜中繼資料，已知＞。
+ 請參閱＜中繼資料，已知＞  。
 
 ## <a name="see-also"></a>另請參閱
 

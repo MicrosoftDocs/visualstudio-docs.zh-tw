@@ -1,14 +1,9 @@
 ---
-title: 'Idiasession:: Symsareequiv |Microsoft Docs'
-ms.custom: ''
+title: IDiaSession::symsAreEquiv | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 9941d520-e203-46c0-83c3-b3a967f4fc59
 caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: bb9b8833ca4e7d780677aca475ee13897dbb8fc8
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: ba8c77d7d97da75ce82fcbe732db64acf633b8af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51780018"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68150223"
 ---
 # <a name="idiasessionsymsareequiv"></a>IDiaSession::symsAreEquiv
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -52,6 +47,3 @@ HRESULT symsAreEquiv ( 
 ## <a name="see-also"></a>另請參閱  
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
-
-
-

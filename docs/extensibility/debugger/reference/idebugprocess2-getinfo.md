@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProcess2::GetInfo
 ms.assetid: 46021dce-bb97-46c3-b0cc-e5b3b68acc35
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3d2a3b8b1ef028562502454994da18e799b8f28b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: e6227e8a4397dac03e9ecc70eedf2b902888cdbb
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56703539"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66353147"
 ---
 # <a name="idebugprocess2getinfo"></a>IDebugProcess2::GetInfo
 取得處理序的描述。
@@ -38,14 +41,12 @@ int GetInfo(
 );
 ```
 
-#### <a name="parameters"></a>參數
- `Fields`
+## <a name="parameters"></a>參數
+`Fields`\
+[in]從值的組合[PROCESS_INFO_FIELDS](../../../extensibility/debugger/reference/process-info-fields.md)列舉，指定哪些欄位`pProcessInfo`參數是要填入。
 
- [in]從值的組合[PROCESS_INFO_FIELDS](../../../extensibility/debugger/reference/process-info-fields.md)列舉，指定哪些欄位`pProcessInfo`參數是要填入。
-
- `pProcessInfo`
-
- [out]A [PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md)程序的描述會填入的結構。
+`pProcessInfo`\
+[out]A [PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md)程序的描述會填入的結構。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

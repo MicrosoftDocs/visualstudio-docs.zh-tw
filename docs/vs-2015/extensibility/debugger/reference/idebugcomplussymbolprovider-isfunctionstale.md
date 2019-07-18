@@ -1,26 +1,21 @@
 ---
 title: IDebugComPlusSymbolProvider::IsFunctionStale |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - IDebugComPlusSymbolProvider::IsFunctionStale
 ms.assetid: dcffc090-4ed8-47b2-ba51-bce1a6b6428d
 caps.latest.revision: 10
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 60628c3029d96f5e0c942e1c72b6d028c0fc45b0
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: cbd4601acd7ec6323776a7ffd37933ff31d93574
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51781942"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68176739"
 ---
 # <a name="idebugcomplussymbolproviderisfunctionstale"></a>IDebugComPlusSymbolProvider::IsFunctionStale
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -97,4 +92,3 @@ Error:
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)
-

@@ -1,14 +1,9 @@
 ---
 title: 視覺化程式碼 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-techdebt
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - code, understanding
 - code, visualizing
@@ -17,13 +12,13 @@ ms.assetid: 0dd7d438-393a-4cd3-b417-9bf37379e1b0
 caps.latest.revision: 49
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 071048fba8d3663639747ea35dbae4375d101c26
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 2d5803544e4e7279179929c7c04a3792e4dd9318
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51738923"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68183877"
 ---
 # <a name="visualize-code"></a>視覺化程式碼
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,9 +41,9 @@ ms.locfileid: "51738923"
   
 |||  
 |-|-|  
-|**了解程式碼和其關聯性：**<br /><br /> 對應特定程式碼片段之間的關聯性。<br /><br /> 查看整個方案的程式碼中的關聯性概觀。<br /><br /> **注意**：在本版 Visual Studio 中，會以 *Code Map* 一詞取代 *「相依性圖形」*(Dependency Graph)。|-   [對應方案之間的相依性](../modeling/map-dependencies-across-your-solutions.md)<br />-   [使用 code map 偵錯應用程式](../modeling/use-code-maps-to-debug-your-applications.md)<br />-   [使用 code map 分析器尋找潛在問題](../modeling/find-potential-problems-using-code-map-analyzers.md)<br />-   [偵錯時對應呼叫堆疊上的方法](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)|  
+|**了解程式碼和其關聯性：**<br /><br /> 對應特定程式碼片段之間的關聯性。<br /><br /> 查看整個方案的程式碼中的關聯性概觀。<br /><br /> **注意**：在這一版的 Visual Studio 中，詞彙*的 code map*用來取代*相依性圖形*。|-   [對應方案之間的相依性](../modeling/map-dependencies-across-your-solutions.md)<br />-   [使用 code map 偵錯應用程式](../modeling/use-code-maps-to-debug-your-applications.md)<br />-   [使用 code map 分析器尋找潛在問題](../modeling/find-potential-problems-using-code-map-analyzers.md)<br />-   [偵錯時對應呼叫堆疊上的方法](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)|  
 |**了解類別結構：**<br /><br /> 從程式碼建立類別圖，將專案中的類別結構視覺化。|[如何：將類別圖表新增至專案 (類別設計工具)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)|  
-|**描述高階系統設計，並針對這項設計驗證程式碼：**<br /><br /> 藉由建立分層圖，描述高階系統設計及其預計相依性。 針對此設計驗證程式碼，以確定程式碼中的相依性與設計保持一致。|-   [從您的程式碼建立分層圖](../modeling/create-layer-diagrams-from-your-code.md)<br />-   [分層圖： 參考](../modeling/layer-diagrams-reference.md)<br />-   [分層圖： 方針](../modeling/layer-diagrams-guidelines.md)<br />-   [使用分層圖驗證程式碼](../modeling/validate-code-with-layer-diagrams.md)|  
+|**描述高階系統設計，並針對這項設計驗證程式碼：**<br /><br /> 藉由建立分層圖，描述高階系統設計及其預計相依性。 針對此設計驗證程式碼，以確定程式碼中的相依性與設計保持一致。|-   [從您的程式碼建立分層圖](../modeling/create-layer-diagrams-from-your-code.md)<br />-   [分層圖：參考](../modeling/layer-diagrams-reference.md)<br />-   [分層圖：方針](../modeling/layer-diagrams-guidelines.md)<br />-   [使用分層圖驗證程式碼](../modeling/validate-code-with-layer-diagrams.md)|  
 |**溝通使用者需求和架構：**<br /><br /> 藉由繪製下列 UML 圖表：活動、元件、類別、順序和使用案例，建立使用者需求和軟體系統架構的模型。|-   [建立應用程式模型](../modeling/create-models-for-your-app.md)<br />-   [模型使用者需求](../modeling/model-user-requirements.md)<br />-   [您的應用程式架構模型](../modeling/model-your-app-s-architecture.md)|  
   
 ## <a name="external-resources"></a>外部資源  
@@ -60,12 +55,9 @@ ms.locfileid: "51738923"
 |**技術文件和日誌**|[MSDN 架構論壇](http://go.microsoft.com/fwlink/?LinkId=201343)|  
   
 ## <a name="see-also"></a>另請參閱  
- [情節： 變更您的設計使用視覺化和模型](../modeling/scenario-change-your-design-using-visualization-and-modeling.md)   
+ [案例：使用視覺化和模型變更設計](../modeling/scenario-change-your-design-using-visualization-and-modeling.md)   
  [分析並製作架構模型](../modeling/analyze-and-model-your-architecture.md)   
  [建立應用程式模型](../modeling/create-models-for-your-app.md)   
  [模型使用者需求](../modeling/model-user-requirements.md)   
  [您的應用程式架構模型](../modeling/model-your-app-s-architecture.md)   
  [在開發程序中使用模型](../modeling/use-models-in-your-development-process.md)
-
-
-

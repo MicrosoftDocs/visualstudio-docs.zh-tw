@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - extensions
 ms.assetid: 5388EEBA-211D-4114-8CD9-70C899919F7E
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: Meng
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7899a096bb2a56e93ea55a4ba0a17cde272bd615
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: 66a1c42340a88f0756d4fcc1f323433ab2640127
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58193701"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66322800"
 ---
 # <a name="walkthrough-create-an-extension-pack"></a>逐步解說：建立延伸模組套件
 
@@ -31,7 +31,7 @@ ms.locfileid: "58193701"
 
 延伸模組組件項目範本建立與一組可一起安裝的擴充功能的延伸模組組件。
 
-1. 在 **新的專案**對話方塊中，搜尋"vsix 」 並選取**VSIX 專案**。 針對**專案名稱**，輸入 「 測試延伸模組組件 」。 選取 [建立]。
+1. 在 **新的專案**對話方塊中，搜尋"vsix 」 並選取**VSIX 專案**。 針對**專案名稱**，輸入 「 測試延伸模組組件 」。 選取 [建立]  。
 
 2. 在 **方案總管**，以滑鼠右鍵按一下專案節點，然後選取**新增** > **新項目**。 移至 Visual C#**擴充性**節點，然後選取**延伸模組套件**。 保留預設的檔案名稱 (ExtensionPack1.cs)。
 

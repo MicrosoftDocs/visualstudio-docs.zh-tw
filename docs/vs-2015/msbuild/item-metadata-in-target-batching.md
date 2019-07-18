@@ -13,17 +13,16 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: eca5fc85f4a1bcd26c2c4c73ec39fbe855f77add
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 9dd6c297e00a305fbd1b13cf0fe0bd4a4f151f6b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54769366"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68192871"
 ---
 # <a name="item-metadata-in-target-batching"></a>目標批次處理中的項目中繼資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 可針對建置目標的輸入和輸出執行相依性分析作業。 如果判斷目標的輸入或輸出已是最新，即會略過目標繼續建置。 `Target` 項目會使用 `Inputs` 和 `Outputs` 屬性，來指定要在相依性分析期間檢查的項目。  
   
  如果目標包含的工作會將批次項目作為輸入或輸出，則目標的 `Target` 項目應該在其 `Inputs` 或 `Outputs` 屬性中使用批次處理，以讓 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 略過已是最新的項目批次。  
@@ -69,8 +68,8 @@ ms.locfileid: "54769366"
 </Project>  
 ```  
   
-## <a name="see-also"></a>請參閱  
- [如何：累加建置](../msbuild/how-to-build-incrementally.md)   
+## <a name="see-also"></a>另請參閱  
+ [如何：以累加方式建置](../msbuild/how-to-build-incrementally.md)   
  [批次處理](../msbuild/msbuild-batching.md)   
  [Target 項目 (MSBuild)](../msbuild/target-element-msbuild.md)   
  [工作批次處理中的項目中繼資料](../msbuild/item-metadata-in-task-batching.md)

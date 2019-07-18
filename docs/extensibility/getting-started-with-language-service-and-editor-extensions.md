@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - extensions
 ms.assetid: 6b151891-c06d-40b1-9867-42298caa8492
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a6002ed1748a5848e43628c88ec0395a0d4053ed
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 7bd39ab8abde2fdbe337073e7cfaa7ea457b022f
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56712017"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66342452"
 ---
 # <a name="get-started-with-language-service-and-editor-extensions"></a>語言服務及編輯器擴充功能入門
 若要將語言服務功能，例如大綱、 括號對稱、 IntelliSense 和燈泡，加入您自己的程式設計語言或任何內容類型，您可以使用編輯器延伸模組。 您也可以自訂的外觀和行為的 Visual Studio 編輯器，例如色彩標示、 邊界、 裝飾和其他視覺元素的文字。 您也可以定義您自己的內容的類型，並指定的外觀和行為，您的內容會出現的文字檢視。
@@ -23,7 +23,7 @@ ms.locfileid: "56712017"
  若要開始撰寫編輯器延伸模組，使用已安裝 Visual Studio SDK 的一部分的編輯器專案範本。 Visual Studio SDK 是可下載的工具，可讓您更輕鬆地使用 Vspackage，或使用 Managed Extensibility Framework (MEF) 開發 Visual Studio 擴充功能，一組。
 
 > [!NOTE]
->  如需有關 Visual Studio SDK 的詳細資訊，請參閱[Visual Studio SDK](../extensibility/visual-studio-sdk.md)。
+> 如需有關 Visual Studio SDK 的詳細資訊，請參閱[Visual Studio SDK](../extensibility/visual-studio-sdk.md)。
 
  我們建議您先了解下列概念和技術撰寫您自己的編輯器延伸模組之前。
 
@@ -34,7 +34,7 @@ ms.locfileid: "56712017"
  Visual Studio 編輯器會使用 Managed Extensibility Framework (MEF) 來管理其元件和延伸模組。 MEF 也可讓開發人員輕鬆地建立主應用程式，例如 Visual Studio 的擴充功能。 在此架構中，您可以定義根據 MEF 合約的延伸模組，並將它匯出為 MEF 元件組件。 主應用程式管理之元件部分，找到這些物件、 註冊，並確保它們會套用至正確的內容。
 
 > [!NOTE]
->  如需在編輯器中的 MEF 的詳細資訊，請參閱[編輯器中的 Managed Extensibility Framework](../extensibility/managed-extensibility-framework-in-the-editor.md)。
+> 如需在編輯器中的 MEF 的詳細資訊，請參閱[編輯器中的 Managed Extensibility Framework](../extensibility/managed-extensibility-framework-in-the-editor.md)。
 
 ## <a name="visual-studio-editor-extension-points-and-extensions"></a>Visual Studio 編輯器擴充點和擴充功能
  編輯器擴充點的 MEF 元件部分，您可以自訂及擴充。 在某些情況下您會藉由實作介面，並將它匯出加上正確的中繼資料擴充擴充點。 在其他情況下，只是宣告的擴充功能，並將它匯出為特定類型。
@@ -59,7 +59,7 @@ ms.locfileid: "56712017"
  當您在電腦上安裝擴充功能時，請在資料夾的子資料夾，也是以 Visual Studio 中包含的二進位檔和資訊清單。
 
 > [!WARNING]
->  您不必擔心資訊清單和部署位置的詳細資料，如果您使用其中一個隨附於 Visual Studio 擴充性範本編輯器。 範本會包含所需登錄及部署擴充功能的所有項目。
+> 您不必擔心資訊清單和部署位置的詳細資料，如果您使用其中一個隨附於 Visual Studio 擴充性範本編輯器。 範本會包含所需登錄及部署擴充功能的所有項目。
 
 ## <a name="run-extensions-in-the-experimental-instance"></a>執行實驗的執行個體中的擴充功能
  藉由部署 （在 Windows Vista 和 Windows 7） 的下列實驗性資料夾中儲存的遊戲開發擴充功能時，您可以隔離您的 Visual Studio 版本：
@@ -82,9 +82,9 @@ ms.locfileid: "56712017"
 
  您也可以建立編輯器的 MEF 元件從 Visual Studio 封裝擴充功能。 下列逐步解說，如需詳細資訊，請參閱：
 
--   [逐步解說：搭配編輯器擴充功能使用 shell 命令](../extensibility/walkthrough-using-a-shell-command-with-an-editor-extension.md)
+- [逐步解說：搭配編輯器擴充功能使用 shell 命令](../extensibility/walkthrough-using-a-shell-command-with-an-editor-extension.md)
 
--   [逐步解說：編輯器擴充功能搭配使用攠摝坫](../extensibility/walkthrough-using-a-shortcut-key-with-an-editor-extension.md)
+- [逐步解說：編輯器擴充功能搭配使用攠摝坫](../extensibility/walkthrough-using-a-shortcut-key-with-an-editor-extension.md)
 
 ## <a name="see-also"></a>另請參閱
 - [語言服務及編輯器擴充點](../extensibility/language-service-and-editor-extension-points.md)

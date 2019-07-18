@@ -1,24 +1,24 @@
 ---
-title: 測試區域 2:從原始檔控制取得 |Microsoft Docs
+title: 測試區域 2：從原始檔控制取得 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, getting items from source control
 - source control [Visual Studio SDK], getting items from
 ms.assetid: cbd345c5-ca43-4630-b7a4-85564f4e2090
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e6e6a9f71a1ebda6e6366096881fb681a864ce31
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 31f5f9b9657b0577d6b8e36166049fe46ac2a907
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56630869"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66331026"
 ---
-# <a name="test-area-2-get-from-source-control"></a>測試區域 2:取得從原始檔控制
+# <a name="test-area-2-get-from-source-control"></a>測試區域 2：從原始檔控制取得
 此測試區域涵蓋測試案例，透過 Get 命令的版本存放區擷取項目。 這些測試案例可以套用至這兩個本機和 Web 專案。
 
 ## <a name="command-menu-access"></a>命令功能表存取
@@ -26,13 +26,13 @@ ms.locfileid: "56630869"
 
 ##### <a name="get-latest-version"></a>取得最新版本：
 
--   **檔案**，**原始檔控制**，**取得最新版本**。
+- **檔案**，**原始檔控制**，**取得最新版本**。
 
--   **檔案**，**取得最新版本**。
+- **檔案**，**取得最新版本**。
 
--   快顯功能表**取得最新版本**。
+- 快顯功能表**取得最新版本**。
 
--   取得此項目：**檔案**，**原始檔控制**，**取得**。
+- 取得此項目：**檔案**，**原始檔控制**，**取得**。
 
 ## <a name="expected-behavior"></a>預期的行為
 

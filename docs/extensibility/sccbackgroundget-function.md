@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - SccBackgroundGet function
 ms.assetid: 69817e52-b9ac-4f4d-820b-2cc9c384f0dc
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 51e1768e23eb61a5a6463d8d48f64683987f431a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: d0805e91f5386f101917ee988e9e0d23d066f48d
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56707964"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66334016"
 ---
 # <a name="sccbackgroundget-function"></a>SccBackgroundGet 函式
 此函式會擷取從原始檔控制每個指定的檔案而不需要使用者互動。
@@ -48,7 +48,7 @@ SCCRTN SccBackgroundGet(
 [in、 out]要擷取的檔案名稱的陣列。
 
 > [!NOTE]
->  名稱必須是完整的本機檔案名稱。
+> 名稱必須是完整的本機檔案名稱。
 
  dwFlags
 

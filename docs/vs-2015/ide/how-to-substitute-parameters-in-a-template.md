@@ -12,14 +12,14 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 97a8a99e160e4d488e44cc9e084789fe3a005eb1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 3c0a710bc3ad504c6654528db33b9a6698f4f7ae
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54780287"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435154"
 ---
-# <a name="how-to-substitute-parameters-in-a-template"></a>如何：替代樣板中的參數
+# <a name="how-to-substitute-parameters-in-a-template"></a>HOW TO：替代範本中的參數
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 根據範本建立檔案時，您可以取代範本參數 (例如類別名稱和命名空間)。 如需完整的範本參數清單，請參閱[範本參數](../ide/template-parameters.md)。  
@@ -29,24 +29,24 @@ ms.locfileid: "54780287"
   
 #### <a name="to-use-a-parameter-to-replace-namespace-name-with-the-project-name"></a>使用參數將命名空間名稱取代為專案名稱  
   
-1.  在範本的一或多個程式碼檔案中，插入參數。 例如：  
+1. 在範本的一或多個程式碼檔案中，插入參數。 例如：  
   
     ```  
     namespace $safeprojectname$  
     ```  
   
     > [!NOTE]
-    >  以格式 $<參數>$ 撰寫範本參數。  
+    > 以格式 $<參數>$ 撰寫範本參數。  
   
-2.  在範本的 .vstemplate 檔案中，找出包括此檔案的 `ProjectItem` 項目。  
+2. 在範本的 .vstemplate 檔案中，找出包括此檔案的 `ProjectItem` 項目。  
   
-3.  將 `ProjectItem` 項目的 `ReplaceParameters` 屬性設定為 `true`。 例如：  
+3. 將 `ProjectItem` 項目的 `ReplaceParameters` 屬性設定為 `true`。 例如:   
   
     ```  
     <ProjectItem ReplaceParameters="true">Class1.cs</ProjectItem>  
     ```  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [建立專案和項目範本](../ide/creating-project-and-item-templates.md)   
  [範本參數](../ide/template-parameters.md)   
  [Visual Studio 範本結構描述參考](../extensibility/visual-studio-template-schema-reference.md)   

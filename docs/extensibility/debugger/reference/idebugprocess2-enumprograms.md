@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProcess2::EnumPrograms
 ms.assetid: f5b7295d-487d-464f-a4c6-d54175b07705
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2c044961a4b360c028c560adbea3d6faee09ee49
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 1bcfab5378a2bbef6160a94cbda1fa80157337b6
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56722651"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66353204"
 ---
 # <a name="idebugprocess2enumprograms"></a>IDebugProcess2::EnumPrograms
 擷取一份此程序所包含的所有程式。
@@ -36,10 +39,9 @@ int EnumPrograms( 
 );
 ```
 
-#### <a name="parameters"></a>參數
- `ppEnum`
-
- [out]傳回[IEnumDebugPrograms2](../../../extensibility/debugger/reference/ienumdebugprograms2.md)物件，其中包含的程序中的所有程式清單。
+## <a name="parameters"></a>參數
+`ppEnum`\
+[out]傳回[IEnumDebugPrograms2](../../../extensibility/debugger/reference/ienumdebugprograms2.md)物件，其中包含的程序中的所有程式清單。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

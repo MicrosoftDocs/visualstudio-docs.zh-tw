@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - REFERENCE_COMPARE enumeration
 ms.assetid: e31cdc78-f621-498b-9ca4-aefa790b9f6f
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b518e9bcfd77f489dd38a96eb8e378610841feb5
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: d166917ec9770e3f8d1f41f3774676278b894724
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56707714"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66322350"
 ---
 # <a name="referencecompare"></a>REFERENCE_COMPARE
 指定參考的比較類型。
@@ -41,12 +44,15 @@ public enum enum_REFERENCE_COMPARE { 
 };
 ```
 
-## <a name="members"></a>成員
- REF_COMPARE_EQUAL 指定等於比較。
+## <a name="fields"></a>欄位
+ `REF_COMPARE_EQUAL`\
+ 指定的等於比較。
 
- REF_COMPARE_LESS_THAN 指定更少的比較。
+ `REF_COMPARE_LESS_THAN`\
+ 指定更少的比較。
 
- REF_COMPARE_GREATER_THAN 指定大於-比較。
+ `REF_COMPARE_GREATER_THAN`\
+ 指定大於-比較。
 
 ## <a name="remarks"></a>備註
  作為引數[比較](../../../extensibility/debugger/reference/idebugreference2-compare.md)方法。

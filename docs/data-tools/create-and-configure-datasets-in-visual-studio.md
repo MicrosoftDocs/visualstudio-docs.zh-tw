@@ -11,14 +11,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: cba7cf4a402b92f05f12faa39b88ab03cd5bd03b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.openlocfilehash: 41a7a699506853d6891c7d7b66fef4082814c06a
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55943008"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65460625"
 ---
-# <a name="create-and-configure-datasets-in-visual-studio"></a>在 Visual Studio 中建立和設定資料集
+# <a name="how-to-create-and-configure-datasets-in-visual-studio"></a>作法：在 Visual Studio 中建立和設定資料集
 
 資料集是一組儲存在記憶體中的資料庫中的資料，並且支援以啟用變更追蹤之物件的建立、 讀取、 更新和刪除 (CRUD) 作業，而不需要永遠連接到資料庫的資料。 資料集所設計的簡單*資料表單*商務應用程式。 對於新的應用程式，請考慮使用 Entity Framework 來儲存和模型化記憶體中的資料。 若要使用的資料集，您應該使用資料庫概念的基本知識。
 
@@ -70,7 +70,7 @@ ms.locfileid: "55943008"
 
 1. 在按一下資料集節點**方案總管**使**DataSet 設計工具**成為焦點。
 
-2. 按一下 [**資料來源**索引標籤中的 Visual Studio 中或類型的左邊界**資料來源**中**快速啟動**] 方塊中。
+2. 按一下 [**資料來源**] 索引標籤中的 Visual Studio 中或類型的左邊界**zdroje dat**在搜尋方塊中。
 
 3. 以滑鼠右鍵按一下資料集節點，然後選取**使用精靈設定資料來源**。
 

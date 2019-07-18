@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 88690e57e1781e9fe43b3cf4108c62fab189a988
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 56332c58c48903a13a5b1538cf18986ba81e20a7
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55949027"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62856391"
 ---
 # <a name="t4-template-directive"></a>T4 範本指示詞
 
@@ -68,7 +68,7 @@ debug="true"
 
 `true`
 
-`false` (預設值)
+`false` (預設)
 
 如果 `debug` 屬性為 `true`，表示中繼程式碼檔案將會包含啟用偵錯工具所需的相關資訊，以更精確識別範本內中斷或例外狀況發生的位置。
 
@@ -88,7 +88,7 @@ hostspecific="true"
 
 `true`
 
-`false` (預設值)
+`false` (預設)
 
 `trueFromBase`
 
@@ -128,7 +128,7 @@ Content of myFile is:
 
 有效值：
 
-`C#` (預設值)
+`C#` (預設)
 
 `VB`
 
@@ -206,13 +206,15 @@ protected override void SpecificFragment2()
 #>
 ```
 
- 用來叫用 DerivedTemplate1 的應用程式程式碼：
- ```csharp
+用來叫用 DerivedTemplate1 的應用程式程式碼：
+
+```csharp
 Console.WriteLine(new DerivedTemplate().TransformText());
 ```
 
- 產生的輸出：
- ```
+產生的輸出：
+
+```
 This is the common header.
    Fragment 1 for DerivedTemplate1
 A common central text.
@@ -243,7 +245,7 @@ This is the common footer.
 
 有效值：
 
-`true` (預設值)
+`true` (預設)
 
 `false`
 
@@ -259,7 +261,7 @@ This is the common footer.
 
 有效值：
 
-`public` (預設值)
+`public` (預設)
 
 `internal`
 

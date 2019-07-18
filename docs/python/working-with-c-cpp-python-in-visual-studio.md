@@ -3,19 +3,19 @@ title: 撰寫適用於 Python 的 C++ 延伸模組
 description: 使用 Visual Studio、CPython 和 PyBind11 建立適用於 Python 的 C++ 延伸模組逐步解說，包括混合模式偵錯。
 ms.date: 11/19/2018
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: bb4d2ec524065a79150b35564dd526d0bf13779e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 9c81984e8921e44e32b58ae7f5c5c27c5fe8b12f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55914275"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62956930"
 ---
 # <a name="create-a-c-extension-for-python"></a>建立適用於 Python 的 C++ 延伸模組
 
@@ -38,7 +38,7 @@ ms.locfileid: "55914275"
 
 ## <a name="prerequisites"></a>必要條件
 
-- Visual Studio 2017 含有使用預設選項安裝的 [使用 C++ 的桌面開發] 和 [Python 開發] 工作負載。
+- Visual Studio 2017 或更新版本含有使用預設選項安裝的**使用 C++ 的桌面開發**和 **Python 開發**工作負載。
 - 在 **Python 開發**工作負載中，也選取 **Python 原生開發工具**右邊的方塊。 這個選項會設定本文所述的大部分組態。 (這個選項也會自動包含 C++ 工作負載。)
 
     ![選取 Python 原生開發工具選項](media/cpp-install-native.png)
@@ -107,7 +107,7 @@ ms.locfileid: "55914275"
 1. 搜尋 "C++"、選取 [空專案]、指定名稱 "superfastcode" (針對第二個專案指定 "superfastcode2")，然後選取 [確定]。
 
     > [!Tip]
-    > 在 Visual Studio 2017 中安裝 **Python 原生開發工具**後，您便可從 [Python 延伸模組] 範本著手，其已包含此處所述的大多數功能。 不過，在此逐步解說中，從空白專案開始將逐步示範如何建置延伸模組。 只要您了解了程序，此範本就能在您撰寫自己的延伸模組時為您節省時間。
+    > 在 Visual Studio 中安裝 **Python 原生開發工具**後，您便可從 [Python 延伸模組] 範本著手，其已包含此處所述的大多數功能。 不過，在此逐步解說中，從空白專案開始將逐步示範如何建置延伸模組。 只要您了解了程序，此範本就能在您撰寫自己的延伸模組時為您節省時間。
 
 1. 在新專案中建立 C++ 檔案，方法是以滑鼠右鍵按一下 [來源檔案] 節點，然後選取 [加入] > [新增項目]、選取 [C++ 檔案]、將它命名為 `module.cpp`，然後選取 [確定]。
 
@@ -284,7 +284,7 @@ C++ 模組可能因為下列原因而無法編譯：
 
 在後續步驟中描述的另一種方法，會將模組安裝在全域 Python 環境中，將它也提供給其他 Python 專案使用。 (這樣做，通常需要您在 Visual Studio 2017 15.5 版及較舊版本中重新整理該環境的 IntelliSense 完成資料庫。 從環境移除模組時，也需要重新整理。)
 
-1. 如果您使用 Visual Studio 2017，請執行 Visual Studio 安裝程式，然後依序選取 [修改]、[個別元件] > [編譯器、建置工具和執行階段] > [Visual C++ 2015.3 v140 工具組]。 此步驟之所以必要，是因為 Python (適用於 Windows) 本身是使用 Visual Studio 2015 (14.0 版) 來建置，因此在透過此處所述方法建置延伸模組時，Python 預期要能使用這些工具 。 (請注意，您可能需要安裝 32 位元版本的 Python 並將 DLL 的目標設成 Win32 而不是 x64。)
+1. 如果您使用 Visual Studio 2017 或更新版本，請執行 Visual Studio 安裝程式，然後依序選取 [修改]、[個別元件] > [編譯器、建置工具和執行階段] > [Visual C++ 2015.3 v140 工具組]。 此步驟之所以必要，是因為 Python (適用於 Windows) 本身是使用 Visual Studio 2015 (14.0 版) 來建置，因此在透過此處所述方法建置延伸模組時，Python 預期要能使用這些工具 。 (請注意，您可能需要安裝 32 位元版本的 Python 並將 DLL 的目標設成 Win32 而不是 x64。)
 
 1. 以滑鼠右鍵按一下 C++ 專案、建立名為 *setup.py* 的檔案，然後選取 [新增] > [新增項目]。 接著，選取 [C++ 檔案 (.cpp)]，將檔案命名為 `setup.py`，並選取 [確定] (使用 *.py* 副檔名命名檔案時，即可讓 Visual Studio 將其辨識為 Python，即使使用 C++ 檔案範本亦同)。 當檔案出現在編輯器中時，以適合延伸模組方法的方式，將下列程式碼貼入檔案中︰
 

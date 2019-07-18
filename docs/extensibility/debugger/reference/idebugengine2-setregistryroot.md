@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEngine2::SetRegistryRoot
 ms.assetid: d0d81202-8a4a-4bc3-b297-30a047c5ec60
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2761a8509958c60746f7e5312fa5f5e13631acc7
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: f30a2fe4a239b76d9eb984cdc4cea6485b8dd5d5
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56698803"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66352510"
 ---
 # <a name="idebugengine2setregistryroot"></a>IDebugEngine2::SetRegistryRoot
 設定偵錯引擎 (DE) 的登錄根目錄。
@@ -36,10 +39,9 @@ int SetRegistryRoot( 
 );
 ```
 
-#### <a name="parameters"></a>參數
- `pszRegistryRoot`
-
- [in]若要使用的登錄根目錄。
+## <a name="parameters"></a>參數
+`pszRegistryRoot`\
+[in]若要使用的登錄根目錄。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

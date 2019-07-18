@@ -17,23 +17,22 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 05028dabe3ca5c6cff8838a1f4ac69b0cf70bce0
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 9308f94e865bfe54384719d8f57f3ad1819c79fb
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54773053"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59664199"
 ---
 # <a name="createcsharpmanifestresourcename-task"></a>CreateCSharpManifestResourceName 工作
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 從指定的 .resx 檔案名稱或其他資源，建立 [!INCLUDE[csprcs](../includes/csprcs-md.md)] 樣式的資訊清單名稱。  
   
 ## <a name="parameters"></a>參數  
  下表描述 [CreateCSharpManifestResourceName 工作](../msbuild/createcsharpmanifestresourcename-task.md)的參數。  
   
-|參數|描述|  
+|參數|說明|  
 |---------------|-----------------|  
 |`ManifestResourceNames`|<xref:Microsoft.Build.Framework.ITaskItem> `[]` 輸出唯讀參數。<br /><br /> 產生的資訊清單名稱。|  
 |`ResourceFiles`|必要的 `String` 參數。<br /><br /> 建立 [!INCLUDE[csprcs](../includes/csprcs-md.md)] 資訊清單名稱的來源資源檔名稱。|  

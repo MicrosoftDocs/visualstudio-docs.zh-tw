@@ -13,11 +13,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.openlocfilehash: ce2eed6ac4835746670f91714d3c29cac06c3797
-ms.sourcegitcommit: aea5cdb76fbc7eb31d1e5cc3c8d6adb0c743220f
+ms.openlocfilehash: d05eeb95f2f0967d86383297597dd4d9b0289d8d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/08/2018
-ms.locfileid: "44211018"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62615316"
 ---
 Windows Communication Foundation (WCF)

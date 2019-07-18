@@ -1,22 +1,25 @@
 ---
-title: IDebugComPlusSymbolProvider2::LoadSymbolsFromStreamWithCorModule |Microsoft Docs
+title: IDebugComPlusSymbolProvider2::LoadSymbolsFromStreamWithCorModule
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugComPlusSymbolProvider2::LoadSymbolsFromStreamWithCorModule
 - LoadSymbolsFromStreamWithCorModule
 ms.assetid: f79b894f-52c4-43c2-9a68-c71536451f6c
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 472a83212bdd71bd1747fa54e4bf3d2bda51434e
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 682786df1d676391cc1ec838e739cb03983ebb66
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56722833"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66334661"
 ---
 # <a name="idebugcomplussymbolprovider2loadsymbolsfromstreamwithcormodule"></a>IDebugComPlusSymbolProvider2::LoadSymbolsFromStreamWithCorModule
 從指定的資料流載入偵錯符號**ICorDebugModule**物件。
@@ -45,30 +48,24 @@ int LoadSymbolsFromStreamWithCorModule(
 );
 ```
 
-#### <a name="parameters"></a>參數
-`ulAppDomainID`
+## <a name="parameters"></a>參數
+`ulAppDomainID`\
+[in]應用程式定義域的識別項。
 
- [in]應用程式定義域的識別項。
+`guidModule`\
+[in]模組的唯一識別碼。
 
-`guidModule`
+`baseAddress`\
+[in]基底的記憶體位址。
 
- [in]模組的唯一識別碼。
+`pUnkMetadataImport`\
+[in]包含符號的中繼資料的物件。
 
-`baseAddress`
+`pUnkCorDebugModule`\
+[in]物件，可實作[ICorDebugModule 介面](/dotnet/framework/unmanaged-api/debugging/icordebugmodule-interface)。
 
- [in]基底的記憶體位址。
-
-`pUnkMetadataImport`
-
- [in]包含符號的中繼資料的物件。
-
-`pUnkCorDebugModule`
-
- [in]物件，可實作[ICorDebugModule 介面](/dotnet/framework/unmanaged-api/debugging/icordebugmodule-interface)。
-
-`pStream`
-
- [in]包含要載入的偵錯符號的資料流。
+`pStream`\
+[in]包含要載入的偵錯符號的資料流。
 
 ## <a name="return-value"></a>傳回值
 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

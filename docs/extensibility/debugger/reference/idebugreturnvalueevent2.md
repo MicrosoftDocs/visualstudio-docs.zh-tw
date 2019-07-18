@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugReturnValueEvent2
 ms.assetid: 2daded43-e427-4fbb-a19e-f3834e3723af
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a2ce15c905ee12e1c3f45db5e5044b171db3527d
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 03f3a46c7213a48b527f2756e5a4915ca59e48f8
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56712706"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66345662"
 ---
 # <a name="idebugreturnvalueevent2"></a>IDebugReturnValueEvent2
 這個介面會傳送偵錯引擎 (DE) 工作階段的偵錯管理員 (SDM) 之後逐步執行出或函式。

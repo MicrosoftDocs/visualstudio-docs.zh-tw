@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9dd45410a2c928a0ffbbe827b100edd119cf59f0
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55950366"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62797481"
 ---
 # <a name="ca1065-do-not-raise-exceptions-in-unexpected-locations"></a>CA1065:不要在非預期的位置中引發例外狀況
 

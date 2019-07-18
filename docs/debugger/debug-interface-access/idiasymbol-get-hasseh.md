@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6bf5d6f31d25d72cd6bc71f9d8b17443b3d8fc8a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 41987007dd5121dff8cce1eb91ea9e1c4d93578c
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56643726"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "64816354"
 ---
 # <a name="idiasymbolgethasseh"></a>IDiaSymbol::get_hasSEH
-擷取指定的函式是否包含任何的旗標[Structured Exception Handling （C/c + +）](/cpp/cpp/structured-exception-handling-c-cpp) (例如 __try /\__except 區塊)。
+擷取指定的函式是否包含任何的旗標[Structured Exception Handling (C /C++)](/cpp/cpp/structured-exception-handling-c-cpp) (例如 __try /\__except 區塊)。
 
 ## <a name="syntax"></a>語法
 
@@ -39,15 +39,15 @@ HRESULT get_hasSEH(
  如果成功，則傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。
 
 > [!NOTE]
->  傳回值為`S_FALSE`表示此屬性不適用於符號。
+> 傳回值為`S_FALSE`表示此屬性不適用於符號。
 
 ## <a name="requirements"></a>需求
 
-|需求|說明|
+|需求|描述|
 |-----------------|-----------------|
 |標頭：|dia2.h|
 |版本:|DIA SDK v8.0|
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
 - [結構化例外狀況處理 (C/C++)](/cpp/cpp/structured-exception-handling-c-cpp)

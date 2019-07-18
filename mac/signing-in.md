@@ -1,16 +1,16 @@
 ---
 title: 登入 Visual Studio for Mac
 description: 如何登入 Visual Studio for Mac
-author: conceptdev
-ms.author: crdun
-ms.date: 05/06/2018
+author: asb3993
+ms.author: amburns
+ms.date: 04/02/2019
 ms.assetid: E4CFD03C-03AF-48CA-B409-6DB1CA45E991
-ms.openlocfilehash: e34a1a65e168b92f5002fc52586cae8967b46d3a
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: d3ef047d018d5069cd362af1becfe7c6d778bde7
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56953871"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67692003"
 ---
 # <a name="sign-in-to-visual-studio-for-mac"></a>登入 Visual Studio for Mac
 
@@ -24,7 +24,7 @@ ms.locfileid: "56953871"
 
 若要登入 Visual Studio for Mac，請執行下列步驟：
 
-1. 按一下歡迎頁面上的 [登入] 連結來顯示 [帳戶] 對話方塊，然後按 [登入] 按鈕：
+1. 按一下登入視窗的 [使用 Microsoft 帳戶登入]  按鈕：
 
     ![Visual Studio for Mac 中的帳戶對話方塊](media/signing-in-image12.png)
 
@@ -34,7 +34,7 @@ ms.locfileid: "56953871"
 
     您無法使用 Xamarin 認證來登入 Visual Studio for Mac。
 
-3. 在您登入之後，就會看到授權類型。 在這個對話方塊中，您可以新增可能要使用的額外 Microsoft 帳戶：
+3. 登入之後，您會看到 Visual Studio 2019 for Mac 的開始視窗。 您可以在此開啟或建立新的專案：
 
     ![登入成功](media/signing-in-image14.png)
 
@@ -42,7 +42,9 @@ ms.locfileid: "56953871"
 
 Visual Studio for Mac 支援將多個帳戶新增至您的個人化帳戶。 這些額外帳戶可讓您從任何已新增的帳戶存取資源 (例如 Azure)。
 
-若要新增其他使用者帳戶，請遵循[如何登入 Visual Studio for Mac](#how-to-sign-in-to-visual-studio-for-mac) 一節中的步驟。
+若要新增其他使用者帳戶，請從 Visual Studio for mac 選擇 [Visual Studio] > [帳戶]  功能表。 按一下 [新增]  按鈕，輸入其他的帳戶認證。
+
+![管理帳戶](media/signing-in-image15.png)
 
 ## <a name="see-also"></a>另請參閱
 

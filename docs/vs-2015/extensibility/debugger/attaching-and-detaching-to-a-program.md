@@ -1,27 +1,22 @@
 ---
 title: 附加和中斷連結至程式 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - debug engines, attaching to programs
 - debug engines, detaching from programs
 ms.assetid: 79dcbb9b-c7f8-40fc-8a00-f37fe1934f51
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 3b6bba6600d3ea32073a908199f5cd6ddaa33ef9
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 6e232a6f7fcb8813670ca6d949fdb6b3287bb79c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51762803"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68146451"
 ---
 # <a name="attaching-and-detaching-to-a-program"></a>附加至程式及中斷連結程式
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -38,11 +33,11 @@ ms.locfileid: "51762803"
   
     如果`S_OK`傳回，預設會在 SDM 相同的程序中載入。 在 SDM 會執行下列工作：  
   
-   1.  呼叫[GetEngineInfo](../../extensibility/debugger/reference/idebugprogramnode2-getengineinfo.md)取得 DE 的引擎資訊。  
+   1. 呼叫[GetEngineInfo](../../extensibility/debugger/reference/idebugprogramnode2-getengineinfo.md)取得 DE 的引擎資訊。  
   
-   2.  共同建立 DE。  
+   2. 共同建立 DE。  
   
-   3.  呼叫[附加](../../extensibility/debugger/reference/idebugengine2-attach.md)。  
+   3. 呼叫[附加](../../extensibility/debugger/reference/idebugengine2-attach.md)。  
   
 2. DE 傳送[IDebugEngineCreateEvent2](../../extensibility/debugger/reference/idebugenginecreateevent2.md)來使用 SDM`EVENT_SYNC`屬性。  
   
@@ -58,4 +53,3 @@ ms.locfileid: "51762803"
   
 ## <a name="see-also"></a>另請參閱  
  [呼叫偵錯工具事件](../../extensibility/debugger/calling-debugger-events.md)
-

@@ -1,14 +1,9 @@
 ---
 title: 舊版語言服務中的語法上色 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - language services [managed package framework], syntax highlighting
 - colorization, supporting in language services [managed package framework]
@@ -17,13 +12,13 @@ helpviewer_keywords:
 ms.assetid: 1ca1736a-f554-42e4-a9c7-fe8c3c1717df
 caps.latest.revision: 29
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 20655534439fa187488087e1ae819a7ffca4c27a
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 64e57ebc80320ccc133261781eb8ee6611c8e2a0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51730277"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441232"
 ---
 # <a name="syntax-colorizing-in-a-legacy-language-service"></a>舊版語言服務中的語法上色
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +28,7 @@ ms.locfileid: "51730277"
  舊版語言服務會實作成 VSPackage 的一部分，但實作語言服務功能的較新的方式是使用 MEF 擴充功能。 若要深入了解，請參閱[擴充編輯器和語言服務](../../extensibility/extending-the-editor-and-language-services.md)。  
   
 > [!NOTE]
->  我們建議您開始使用新的編輯器 API 盡。 這會改善您的語言服務的效能，並可讓您充分利用新編輯器功能。  
+> 我們建議您開始使用新的編輯器 API 盡。 這會改善您的語言服務的效能，並可讓您充分利用新編輯器功能。  
   
 ## <a name="implementation"></a>實作  
  為了支援顏色標示，managed 的封裝架構 (MPF) 包含<xref:Microsoft.VisualStudio.Package.Colorizer>類別，它會實作<xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer>介面。 這個類別互動<xref:Microsoft.VisualStudio.Package.IScanner>判斷語彙基元和色彩。 如需有關掃描器的詳細資訊，請參閱[舊版語言服務剖析器和掃描器](../../extensibility/internals/legacy-language-service-parser-and-scanner.md)。 <xref:Microsoft.VisualStudio.Package.Colorizer>類別然後標記的語彙基元的色彩資訊的每個字元，並傳回該項資訊到編輯器中顯示的原始程式檔。  
@@ -44,10 +39,10 @@ ms.locfileid: "51730277"
  若要提供您自己自訂的色彩項目，您必須覆寫<xref:Microsoft.VisualStudio.Package.LanguageService.GetItemCount%2A>並<xref:Microsoft.VisualStudio.Package.LanguageService.GetColorableItem%2A>方法<xref:Microsoft.VisualStudio.Package.LanguageService>類別。 第一種方法會傳回您的語言服務支援的自訂色彩項目數目和第二個取得自訂色彩項目的索引。 您建立自訂的色彩項目的預設清單。 在您的語言服務的建構函式，您只需要會提供每個可設定色彩的項目名稱。 Visual Studio 會自動處理的情況下，使用者選取一組不同的可設定色彩的項目。 這個名稱是在顯示的內容**字型和色彩**屬性頁上的**選項** 對話方塊中 (在 Visual Studio 中使用**工具**功能表)，此名稱會決定哪一個使用者已覆寫的色彩。 使用者的選擇會儲存在登錄中的快取，而且色彩名稱來存取。 **字型和色彩**屬性頁面會列出所有的色彩名稱，依字母順序，因此您可以將您的自訂色彩分組的方法是使用您語言的名稱; 每一個色彩名稱，例如"**TestLanguage-註解**"和"**TestLanguage-關鍵字**"。 也可以依型別，您可設定色彩的項目 」**註解 (TestLanguage)**"和"**關鍵字 (TestLanguage)**"。 依語言名稱的群組時，偏好。  
   
 > [!CAUTION]
->  強烈建議您避免與現有的色彩項目的名稱發生衝突的色彩項目的名稱包含語言名稱。  
+> 強烈建議您避免與現有的色彩項目的名稱發生衝突的色彩項目的名稱包含語言名稱。  
   
 > [!NOTE]
->  如果您變更其中一個色彩的名稱，在開發期間，您必須重設 Visual Studio 建立第一次存取您的色彩的快取。 則可以藉由執行**重設實驗性的 Hive**從 Visual Studio SDK 的 [程式] 功能表命令。  
+> 如果您變更其中一個色彩的名稱，在開發期間，您必須重設 Visual Studio 建立第一次存取您的色彩的快取。 則可以藉由執行**重設實驗性的 Hive**從 Visual Studio SDK 的 [程式] 功能表命令。  
   
  請注意，永遠不會參考可設定色彩的項目清單中第一個項目。 Visual Studio 一律會提供預設文字色彩和該項目的屬性。 與這個處理的最簡單的方式是提供預留位置色彩項目的第一個項目。  
   
@@ -155,4 +150,3 @@ namespace TestLanguagePackage
  [舊版語言服務功能](../../extensibility/internals/legacy-language-service-features1.md)   
  [舊版語言服務剖析器和掃描器](../../extensibility/internals/legacy-language-service-parser-and-scanner.md)   
  [註冊舊版語言服務](../../extensibility/internals/registering-a-legacy-language-service1.md)
-

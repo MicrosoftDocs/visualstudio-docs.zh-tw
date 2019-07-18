@@ -12,28 +12,28 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f09afb11708afb310a3dcd52490f5b2bcda9d79b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 6bdc9148b406d9d3806e5eb64f223dccb4b7c0b7
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55928084"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66744971"
 ---
 # <a name="choose-toolbox-items-wpf-components"></a>選擇工具箱項目、WPF 元件
 
-[選擇工具箱項目] 對話方塊的這個索引標籤會顯示您的本機電腦上可用的 Windows Presentation Foundation (WPF) 控制項清單。 若要顯示這份清單，請從 [工具] 功能表，選取 [選擇工具箱項目] 以顯示 [選擇工具箱項目] 對話方塊，然後選取其 [WPF 元件] 索引標籤。若要排序上列元件，請選取任一資料行標題。
+[選擇工具箱項目]  對話方塊的這個索引標籤會顯示您的本機電腦上可用的 Windows Presentation Foundation (WPF) 控制項清單。 若要顯示這份清單，請從 [工具]  功能表，選取 [選擇工具箱項目]  以顯示 [選擇工具箱項目]  對話方塊，然後選取其 [WPF 元件]  索引標籤。若要排序上列元件，請選取任一資料行標題。
 
-- 如果選取了某個元件旁的核取方塊，[工具箱] 中會顯示該元件的圖示。
+- 如果選取了某個元件旁的核取方塊，[工具箱]  中會顯示該元件的圖示。
 
     > [!TIP]
     > 若要將 WPF 控制項新增至開啟供編輯的專案文件，請將其**工具箱**圖示拖曳至 [設計檢視] 介面上。 該元件的預設標記和程式碼已插入您的專案，您可以隨時進行修改。 如需詳細資訊，請參閱[工具箱](../../ide/reference/toolbox.md)。
 
-- 如果清除了某個元件旁的核取方塊，則會從 [工具箱] 移除對應的圖示。
+- 如果清除了某個元件旁的核取方塊，則會從 [工具箱]  移除對應的圖示。
 
     > [!NOTE]
-    > 安裝在您電腦上的 .NET Framework 元件仍然可供使用，而不論 [工具箱] 中是否顯示其圖示。
+    > 安裝在您電腦上的 .NET 元件會保持可供使用，無論其圖示是否顯示在 [工具箱]  中。
 
-[WPF 元件] 索引標籤中的欄位包含下列資訊：
+[WPF 元件]  索引標籤中的欄位包含下列資訊：
 
 **名稱**
 
@@ -41,15 +41,15 @@ ms.locfileid: "55928084"
 
 **命名空間**
 
-顯示 [.NET Framework Class API](/dotnet/api/?view=netframework-4.7) 命名空間的階層，該階層定義元件的結構。 依此欄排序即可列出安裝在您電腦上之每個 .NET Framework 命名空間內的可用元件清單。
+顯示 [.NET API](/dotnet/api/?view=netframework-4.7) 命名空間的階層，其能定義元件的結構。 依此欄排序以列出安裝在您電腦上之每個 .NET 命名空間內的可用元件。
 
 **組件名稱**
 
-顯示 .NET Framework 組件的名稱，其中包含每個元件的命名空間。 依此欄排序即可列出安裝在您電腦上之每個 .NET Framework 組件中所包含的命名空間清單。
+顯示 .NET 組件的名稱，其中包含每個元件的命名空間。 依此欄排序以列出安裝在您電腦上之每個 .NET 組件中所包含的命名空間。
 
 **目錄**
 
-顯示 .NET Framework 組件的位置。 所有組件的預設位置為 [全域組件快取]。 如需全域組件快取的進一步資訊，請參閱[使用組件和全域組件快取](/dotnet/framework/app-domains/working-with-assemblies-and-the-gac)。
+顯示 .NET 組件的位置。 所有組件的預設位置為 [全域組件快取]。 如需全域組件快取的進一步資訊，請參閱[使用組件和全域組件快取](/dotnet/framework/app-domains/working-with-assemblies-and-the-gac)。
 
 ## <a name="uielement-list"></a>UIElement 清單
 
@@ -63,7 +63,7 @@ ms.locfileid: "55928084"
 
 **瀏覽**
 
-開啟 [開啟舊檔] 對話方塊，該對話方塊可讓您巡覽至包含 WPF 控制項的組件。 請使用此選項載入不在全域組件快取中的組件。
+開啟 [開啟舊檔]  對話方塊，該對話方塊可讓您巡覽至包含 WPF 控制項的組件。 請使用此選項載入不在全域組件快取中的組件。
 
 **Language**
 

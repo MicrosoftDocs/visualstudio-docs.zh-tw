@@ -6,17 +6,17 @@ helpviewer_keywords:
 - file extensions
 - file name extensions
 ms.assetid: 99f4f9ff-fb84-4258-9787-6890f308a57f
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9998a8a07995f866b1833736b96e2884c5cba091
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 60a721581c3deb4588df59974768c634c2e9515f
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56678393"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66313723"
 ---
 # <a name="about-file-name-extensions"></a>關於副檔名
 當您註冊 VSPackage 的副檔名時，您將它產生關聯的版本[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。 這是重要如果多個版本[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]安裝在電腦上。

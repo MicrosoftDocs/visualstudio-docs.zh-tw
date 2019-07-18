@@ -16,14 +16,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cf4a781bee0d0ccb1acd7d9c6b035acac603aea3
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 82e82a75ce5ecff8e9b7e6d0b6aaf2e29728fc45
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56696697"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62901055"
 ---
-# <a name="debug-at-design-time-in-visual-studio-c-c-visual-basic-f"></a>在 Visual Studio 中的設計階段偵錯 (C#，c + +、 Visual Basic 中， F#)
+# <a name="debug-at-design-time-in-visual-studio-c-c-visual-basic-f"></a>在 Visual Studio 中的設計階段偵錯 (C#， C++，Visual Basic 中， F#)
 
 執行程式碼偵錯在設計階段，而不是在應用程式時，您可以使用**Immediate**視窗。
 
@@ -33,7 +33,7 @@ ms.locfileid: "56696697"
 
 您可以使用 Visual Studio **Immediate**視窗來執行函式或副程式，而不需執行您的應用程式。 如果函式或副程式含有中斷點，Visual Studio 會在中斷點中斷。 然後，您就可以使用偵錯工具視窗來檢查程式狀態。 這項功能稱為*在設計階段偵錯*。
 
-下列範例是在 Visual Basic 中。 您也可以使用**Immediate**視窗，在設計階段於C#， F#，和 c + + 應用程式。
+下列範例是在 Visual Basic 中。 您也可以使用**Immediate**視窗，在設計階段於C#， F#，和C++應用程式。
 
 1. 將下列程式碼貼到空白的 Visual Basic 主控台應用程式中：
 
@@ -102,6 +102,7 @@ ms.locfileid: "56696697"
     ```xaml
     <TextBlock Text="{Binding title, ConverterParameter=lower, Converter={StaticResource StringFormatConverter}, Mode=TwoWay}"  />
     ```
+
    當頁面載入時，會叫用中斷點。
 
 ## <a name="see-also"></a>另請參閱

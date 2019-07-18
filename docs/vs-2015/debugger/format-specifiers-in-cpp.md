@@ -1,13 +1,8 @@
 ---
-title: Format Specifiers in c + + |Microsoft Docs
-ms.custom: ''
+title: Format Specifiers in C++ |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug
@@ -32,13 +27,13 @@ ms.assetid: 0f6f3b7c-ce2c-4b4d-b14f-7589dbed5444
 caps.latest.revision: 45
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 6634124e7dc0b50236a9fd6ff9c5c5388c3063bc
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 9f620cbf5d522b99965268f35c00ff8e874f1542
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51810516"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440067"
 ---
 # <a name="format-specifiers-in-c"></a>C++ 中的格式規範
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,10 +43,10 @@ ms.locfileid: "51810516"
  您也可以在 [即時運算]  視窗、[命令]  視窗，甚至來源視窗中使用格式規範。 如果暫停在這些視窗中的某個運算式上，結果則會顯示在 DataTip (資料提示方塊)。 DataTip 顯示會反映格式規範。  
   
 > [!NOTE]
->  Visual Studio 原生偵錯工具變更成新的偵錯引擎。 這項變更包括加入一些新的格式規範，以及移除一些舊的格式規範。 當您使用 C++/CLI 執行 Interop (混合原生和 Managed) 偵錯時仍會使用較舊的偵錯工具。 本主題的下列章節說明每個偵錯引擎的格式規範。  
+> Visual Studio 原生偵錯工具變更成新的偵錯引擎。 這項變更包括加入一些新的格式規範，以及移除一些舊的格式規範。 當您使用 C++/CLI 執行 Interop (混合原生和 Managed) 偵錯時仍會使用較舊的偵錯工具。 本主題的下列章節說明每個偵錯引擎的格式規範。  
 > 
 > - [格式規範](#BKMK_Visual_Studio_2012_format_specifiers) 描述新偵錯引擎中的格式規範。  
->   -   [使用 C++/CLI 的 Interop 偵錯格式規範](#BKMK_Format_specifiers_for_interop_debugging_and_C___edit_and_continue) 描述舊偵錯引擎中的格式規範。  
+>   - [使用 C++/CLI 的 Interop 偵錯格式規範](#BKMK_Format_specifiers_for_interop_debugging_and_C___edit_and_continue) 描述舊偵錯引擎中的格式規範。  
   
 ## <a name="using-format-specifiers"></a>使用格式規範  
  如果您有下列程式碼：  
@@ -68,7 +63,7 @@ int main() {
   
  ![WatchFormatCPlus1](../debugger/media/watchformatcplus1.png "WatchFormatCPlus1")  
   
-##  <a name="BKMK_Visual_Studio_2012_format_specifiers"></a> 格式規範  
+## <a name="BKMK_Visual_Studio_2012_format_specifiers"></a> 格式規範  
  下表顯示可在 Visual Studio 中使用的格式規範。 使用 C++/CLI 的 Interop 偵錯不支援粗體的規範。  
   
 |指定名稱|格式|原始的監看值|顯示的值|  
@@ -88,18 +83,18 @@ int main() {
 |**s32**|UTF-32 字串|\<位置 > U"hello world"|U”hello world”|  
 |**s32b**|Utf-32 字串 (沒有引號)|\<位置 > U"hello world"|hello world|  
 |**en**|enum|Saturday(6)|星期六|  
-|**hv**|指標類型：指出檢查中的指標值是陣列堆積配置的結果，例如 `new int[3]`。|\<位置 > {\<第一個成員 >}|\<位置 > {\<第一個成員 >，\<第二個成員 >，...}|  
+|**hv**|指標類型：指出檢查中的指標值是陣列堆積配置的結果，例如 `new int[3]`。|\<位置>{\<第一個成員>}|\<位置 > {\<第一個成員 >，\<第二個成員 >，...}|  
 |**na**|隱藏物件指標的記憶體位址。|\<位置 >，{成員 = 值...}|{成員=值...}|  
 |**nd**|只顯示基底類別資訊，忽略衍生類別|`(Shape*) square` 包含基底類別和衍生類別資訊|只顯示基底類別資訊|  
 |hr|HRESULT 或 Win32 錯誤碼。 (偵錯工具現在可自動將 HRESULT 解碼，因此這個規範並不需要用於這些狀況中)。|S_OK|S_OK|  
 |wc|Window 類別旗標|0x0010|WC_DEFAULTCHAR|  
 |wm|Windows 訊息編號|16|WM_CLOSE|  
-|!|未經處理格式，忽略任何資料類型檢視自訂|\<自訂的表示 >|4|  
+|!|未經處理格式，忽略任何資料類型檢視自訂|\<自訂的表示>|4|  
   
 > [!NOTE]
->  當 **hv** 格式規範出現時，偵錯工具會嘗試判斷緩衝區的長度並顯示適當的項目數目。 因為偵錯工具不一定能一直找到陣列確切的緩衝區大小，所以您應該盡可能使用大小規範 `(pBuffer,[bufferSize])` 。 **hv** 格式規範是針對緩衝區大小非隨時可用的案例。  
+> 當 **hv** 格式規範出現時，偵錯工具會嘗試判斷緩衝區的長度並顯示適當的項目數目。 因為偵錯工具不一定能一直找到陣列確切的緩衝區大小，所以您應該盡可能使用大小規範 `(pBuffer,[bufferSize])` 。 **hv** 格式規範是針對緩衝區大小非隨時可用的案例。  
   
-###  <a name="BKMK_Size_specifiers_for_pointers_as_arrays_in_Visual_Studio_2012"></a> 做為陣列的指標大小規範  
+### <a name="BKMK_Size_specifiers_for_pointers_as_arrays_in_Visual_Studio_2012"></a> 做為陣列的指標大小規範  
  如果想要將檢視的物件指標做為陣列，可以使用整數或運算式來指定陣列項目的數量：  
   
 |規範|格式|原始的監看值|顯示的值|  
@@ -108,7 +103,7 @@ int main() {
 |**[exp]**|判斷值為整數的有效 C++ 運算式。|pBuffer,[bufferSize]|PBuffer 顯示為 `bufferSize` 項目的陣列。|  
 |**expand(n)**|判斷值為整數的有效 C++ 運算式|pBuffer，expand(2)|顯示  `pBuffer`的第三個項目|  
   
-##  <a name="BKMK_Format_specifiers_for_interop_debugging_and_C___edit_and_continue"></a> 使用 C++/CLI 的 Interop 偵錯格式規範  
+## <a name="BKMK_Format_specifiers_for_interop_debugging_and_C___edit_and_continue"></a> 使用 C++/CLI 的 Interop 偵錯格式規範  
  偵錯原生和 C++/CLI 程式碼僅支援 **粗體** 的規範。  
   
 |指定名稱|格式|原始的監看值|顯示的值|  
@@ -121,17 +116,17 @@ int main() {
 |**f**|帶正負號的浮點數|(3./2.), f|1.500000|  
 |**e**|帶正負號的科學記號表示法|(3.0/2.0)|1.500000e+000|  
 |**g**|帶正負號的浮點數或帶正負號的科學記號表示法 (兩者中較短者)|(3.0/2.0)|1.5|  
-|c|單一字元|\<location>|101 'e'|  
-|秒|const char*|\<location>|"hello world"|  
-|su|const wchar_t*<br /><br /> const char16_t\*|\<location>|L"hello world"|  
-|sub|const wchar_t*<br /><br /> const char16_t\*|\<location>|hello world|  
-|s8|const char*|\<location>|"hello world"|  
+|c|單一字元|\<位置>|101 'e'|  
+|秒|const char*|\<位置>|"hello world"|  
+|su|const wchar_t*<br /><br /> const char16_t\*|\<位置>|L"hello world"|  
+|sub|const wchar_t*<br /><br /> const char16_t\*|\<位置>|hello world|  
+|s8|const char*|\<位置>|"hello world"|  
 |hr|HRESULT 或 Win32 錯誤碼。 (偵錯工具現在可自動將 HRESULT 解碼，因此這個規範並不需要用於這些狀況中)。|S_OK|S_OK|  
 |wc|Window 類別旗標。|0x00000040,|WC_DEFAULTCHAR|  
 |wm|Windows 訊息編號|0x0010|WM_CLOSE|  
-|!|未經處理格式，忽略任何資料類型檢視自訂|\<自訂的表示 >|4|  
+|!|未經處理格式，忽略任何資料類型檢視自訂|\<自訂的表示>|4|  
   
-###  <a name="BKMK_Format_specifiers_memory_locations_in_interop_debugging_and_C___edit_and_continue"></a> 使用 C++/CLI 的 Interop 偵錯中記憶體位置的格式規範  
+### <a name="BKMK_Format_specifiers_memory_locations_in_interop_debugging_and_C___edit_and_continue"></a> 使用 C++/CLI 的 Interop 偵錯中記憶體位置的格式規範  
  下表包含了用於記憶體位置的格式化符號。 您可將記憶體位置規範用於評估結果為位置的任何數值或運算式。  
   
 |符號|格式|原始的監看值|顯示的值|  
@@ -144,14 +139,9 @@ int main() {
 |**mq**|2 個 Quadword|0x0012ffac|0x0012ffac 7ffdf00000000000 5f441a790012fdd4|  
 |**mu**|2 個位元組的字元 (Unicode)|0x0012ffac|0x0012ffac 8478 77f4 ffff ffff 0000 0000 0000 0000|  
   
-###  <a name="BKMK_Size_specifier_for_pointers_as_arrays_in_interop_debugging_and_C___edit_and_continue"></a> 在使用 C++/CLI 的 Interop 偵錯中做為陣列之指標的大小規範  
+### <a name="BKMK_Size_specifier_for_pointers_as_arrays_in_interop_debugging_and_C___edit_and_continue"></a> 在使用 C++/CLI 的 Interop 偵錯中做為陣列之指標的大小規範  
  如果想要將檢視的物件指標做為陣列，可以使用整數來指定陣列項目的數量：  
   
 |指定名稱|格式|運算式|顯示的值|  
 |---------------|------------|----------------|---------------------|  
 |n|十進位整數|pBuffer[32]|顯示 `pBuffer` 為 32 個項目的陣列。|
-
-
-
-
-

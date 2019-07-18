@@ -1,14 +1,9 @@
 ---
-title: 如何： 指定 ClickOnce 部署中的個別必要條件的支援 URL |Microsoft Docs
-ms.custom: ''
+title: 作法：指定在 ClickOnce 部署中的個別必要條件的支援 URL |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -20,15 +15,15 @@ ms.assetid: 590742c3-a286-4160-aa75-7a441bb2207b
 caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: bdd366cb8ac86f20e7457178f63aa553a0814158
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 1907b619bcc616c73d9b9e37af30722c02bf100e
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49831571"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65679963"
 ---
-# <a name="how-to-specify-a-support-url-for-individual-prerequisites-in-a-clickonce-deployment"></a>如何：在 ClickOnce 部署中指定個別必要條件的支援 URL
+# <a name="how-to-specify-a-support-url-for-individual-prerequisites-in-a-clickonce-deployment"></a>作法：指定在 ClickOnce 部署中的個別必要條件的支援 URL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 A[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]部署可以測試數目的用戶端電腦必須要有的必要條件[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]執行的應用程式。 其中包括所需的最低版本的[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]，作業系統和必須預先安裝在全域組件快取 (GAC) 中的任何組件的版本。 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]不過，無法安裝任何必要條件本身;如果找不到必要元件，它只是中止安裝，並顯示對話方塊，說明安裝失敗的原因。  
@@ -39,9 +34,9 @@ A[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]部署可以測試數目�
   
 ### <a name="specifying-a-support-url-for-an-individual-prerequisite"></a>指定個別必要條件的支援 URL  
   
-1.  開啟應用程式資訊清單 （.manifest 檔案） 您[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]在文字編輯器應用程式。  
+1. 開啟應用程式資訊清單 （.manifest 檔案） 您[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]在文字編輯器應用程式。  
   
-2.  針對作業系統的必要條件，新增`supportUrl`屬性設定為`dependentOS`項目：  
+2. 針對作業系統的必要條件，新增`supportUrl`屬性設定為`dependentOS`項目：  
   
     ```  
      <dependency>  
@@ -53,7 +48,7 @@ A[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]部署可以測試數目�
       </dependency>  
     ```  
   
-3.  針對特定版本的通用語言執行平台的必要條件，新增`supportUrl`屬性設定為`dependentAssembly`指定通用語言執行階段相依性的項目：  
+3. 針對特定版本的通用語言執行平台的必要條件，新增`supportUrl`屬性設定為`dependentAssembly`指定通用語言執行階段相依性的項目：  
   
     ```  
       <dependency>  
@@ -63,19 +58,19 @@ A[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]部署可以測試數目�
       </dependency>  
     ```  
   
-4.  對於必須預先安裝在全域組件快取中的組件的必要條件、 設定`supportUrl`針對`dependentAssembly`指定必要的組件的項目：  
+4. 對於必須預先安裝在全域組件快取中的組件的必要條件、 設定`supportUrl`針對`dependentAssembly`指定必要的組件的項目：  
   
     ```  
       <dependency>  
-        <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true" supportUrl=" http://www.adatum.com/MyApplication/missingSampleGACAssembly.htm">  
+        <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true" supportUrl=" http://www.adatum.com/MyApplication/missingSampleGACAssembly.htm">  
           <assemblyIdentity name="SampleGACAssembly" version="5.0.0.0" publicKeyToken="04529dfb5da245c5" processorArchitecture="msil" language="neutral" />  
         </dependentAssembly>  
       </dependency>  
     ```  
   
-5.  選擇性。 針對以.NET Framework 4 為目標的應用程式開啟部署資訊清單 （.application 檔案） 您[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]在文字編輯器應用程式。  
+5. 選擇性。 針對以.NET Framework 4 為目標的應用程式開啟部署資訊清單 （.application 檔案） 您[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]在文字編輯器應用程式。  
   
-6.  針對.NET Framework 4 先決條件是，新增`supportUrl`屬性設定為`compatibleFrameworks`項目：  
+6. 針對.NET Framework 4 先決條件是，新增`supportUrl`屬性設定為`compatibleFrameworks`項目：  
   
     ```  
     <compatibleFrameworks  xmlns="urn:schemas-microsoft-com:clickonce.v2" supportUrl="http://adatum.com/MyApplication/CompatibleFrameworks.htm">  
@@ -84,17 +79,14 @@ A[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]部署可以測試數目�
     </compatibleFrameworks>  
     ```  
   
-7.  一旦您以手動方式已改變應用程式資訊清單，您必須重新簽署應用程式資訊清單中使用您的數位憑證，然後更新並重新簽署部署資訊清單。 您必須使用 Mage.exe 或 MageUI.exe SDK 工具來完成這項工作，以重新產生這些檔案使用[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]會清除您手動變更。 如需有關如何使用 Mage.exe 來重新簽署資訊清單的詳細資訊，請參閱 < [How to: re-sign Application and Deployment Manifests](../deployment/how-to-re-sign-application-and-deployment-manifests.md)。  
+7. 一旦您以手動方式已改變應用程式資訊清單，您必須重新簽署應用程式資訊清單中使用您的數位憑證，然後更新並重新簽署部署資訊清單。 您必須使用 Mage.exe 或 MageUI.exe SDK 工具來完成這項工作，以重新產生這些檔案使用[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]會清除您手動變更。 如需有關如何使用 Mage.exe 來重新簽署資訊清單的詳細資訊，請參閱[How to:重新簽署應用程式和部署資訊清單](../deployment/how-to-re-sign-application-and-deployment-manifests.md)。  
   
 ## <a name="net-framework-security"></a>.NET Framework 安全性  
  支援 URL 不會顯示在對話方塊中，如果應用程式標記為在部分信任中執行。  
   
 ## <a name="see-also"></a>另請參閱  
- [Mage.exe (資訊清單產生和編輯工具)](http://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)   
+ [Mage.exe (資訊清單產生和編輯工具)](https://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)   
  [逐步解說：手動部署 ClickOnce 應用程式](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)   
  [\<compatibleFrameworks > 項目](../deployment/compatibleframeworks-element-clickonce-deployment.md)   
  [ClickOnce 和 Authenticode](../deployment/clickonce-and-authenticode.md)   
  [應用程式部署必要條件](../deployment/application-deployment-prerequisites.md)
-
-
-

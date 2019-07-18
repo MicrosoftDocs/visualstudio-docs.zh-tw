@@ -1,49 +1,41 @@
 ---
 title: IDebugProgram2::CanDetach |Microsoft Docs
-ms.custom: ''
-ms.date: 11/15/2016
-ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.date: 11/04/2016
+ms.topic: reference
 f1_keywords:
 - IDebugProgram2::CanDetach
 helpviewer_keywords:
 - IDebugProgram2::CanDetach
 ms.assetid: dcd9ab6c-49e5-447e-aa7c-89f571f4a052
-caps.latest.revision: 8
+author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 9a9eff0ba74becb28efb49549a61f3d0b376e30c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.workload:
+- vssdk
+ms.openlocfilehash: 0a7f8bbabbba54cc7705aedc6e7f12ca1bffc924
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51797906"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68187938"
 ---
 # <a name="idebugprogram2candetach"></a>IDebugProgram2::CanDetach
-[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+決定偵錯引擎 (DE) 可以中斷連結程式。
 
-決定偵錯引擎 (DE) 可以中斷連結程式。  
-  
-## <a name="syntax"></a>語法  
-  
-```cpp#  
-HRESULT CanDetach(  
-   void  
-);  
-```  
-  
-```csharp  
-int CanDetach();  
-```  
-  
-## <a name="return-value"></a>傳回值  
- 如果可以中斷連結，請傳回`S_OK`; 否則傳回錯誤碼。 傳回`S_FALSE`如果 DE 無法中斷連結程式。  
-  
-## <a name="see-also"></a>另請參閱  
- [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)
+## <a name="syntax"></a>語法
 
+```cpp
+HRESULT CanDetach(
+   void
+);
+```
+
+```csharp
+int CanDetach();
+```
+
+## <a name="return-value"></a>傳回值
+ 如果可以中斷連結，請傳回`S_OK`; 否則傳回錯誤碼。 傳回`S_FALSE`如果 DE 無法中斷連結程式。
+
+## <a name="see-also"></a>另請參閱
+- [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

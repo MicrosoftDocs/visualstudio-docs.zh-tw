@@ -1,12 +1,9 @@
 ---
 title: 使用 T4 文字範本產生執行階段文字 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - Preprocessed Text Template project item
 - TextTemplatingFilePreprocessor custom tool
@@ -16,13 +13,13 @@ ms.assetid: 79b4b3c6-a9a7-4446-b6fd-e2388fc6b05f
 caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 75da17b32d3997121777f398a6663932c7d7143d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 586ad1d68ce1d0310b30b8bdac8aa2fb55acdeb5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49920127"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63411882"
 ---
 # <a name="run-time-text-generation-with-t4-text-templates"></a>使用 T4 文字範本在執行階段產生文字
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,16 +53,16 @@ This report is Company Confidential.
   
 #### <a name="to-create-a-run-time-text-template"></a>若要建立執行階段文字範本  
   
-1.  在 [方案總管] 中，您的專案的捷徑功能表上選擇**新增**，**新項目**。  
+1. 在 [方案總管] 中，您的專案的捷徑功能表上選擇**新增**，**新項目**。  
   
-2.  在 **加入新項目**對話方塊中，選取**執行階段文字範本**。 (在[!INCLUDE[vbprvb](../includes/vbprvb-md.md)]查看底下**常見 Items\General**。)  
+2. 在 **加入新項目**對話方塊中，選取**執行階段文字範本**。 (在[!INCLUDE[vbprvb](../includes/vbprvb-md.md)]查看底下**常見 Items\General**。)  
   
-3.  輸入您的範本檔案的名稱。  
+3. 輸入您的範本檔案的名稱。  
   
     > [!NOTE]
-    >  範本檔案名稱將用於做為產生的程式碼中的類別名稱。 因此，它應該沒有空格或標點符號。  
+    > 範本檔案名稱將用於做為產生的程式碼中的類別名稱。 因此，它應該沒有空格或標點符號。  
   
-4.  選擇 [新增]。  
+4. 選擇 [新增]。  
   
      會建立新的檔案副檔名 **.tt**。 其**自訂工具**屬性設定為**TextTemplatingFilePreprocessor**。 它包含下列幾行：  
   
@@ -82,18 +79,18 @@ This report is Company Confidential.
   
 #### <a name="to-convert-an-existing-text-file-to-a-run-time-template"></a>若要將現有的文字檔轉換成執行階段範本  
   
-1.  包含檔案到您[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]專案。 在 [方案總管] 中，在專案的捷徑功能表上選擇**新增**，**現有項目**。  
+1. 包含檔案到您[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]專案。 在 [方案總管] 中，在專案的捷徑功能表上選擇**新增**，**現有項目**。  
   
-2.  設定檔案的**自訂工具**屬性設**TextTemplatingFilePreprocessor**。 在 [方案總管] 中，檔案的捷徑功能表上選擇**屬性**。  
+2. 設定檔案的**自訂工具**屬性設**TextTemplatingFilePreprocessor**。 在 [方案總管] 中，檔案的捷徑功能表上選擇**屬性**。  
   
     > [!NOTE]
-    >  如果已設定的屬性，請確定它是**TextTemplatingFilePreprocessor**而非**TextTemplatingFileGenerator**。 如果包含檔案已擴充此情形 **.tt**。  
+    > 如果已設定的屬性，請確定它是**TextTemplatingFilePreprocessor**而非**TextTemplatingFileGenerator**。 如果包含檔案已擴充此情形 **.tt**。  
   
-3.  變更的檔案名稱副檔名 **.tt**。 雖然這個步驟是選擇性的它可協助您避免在不正確的編輯器中開啟檔案。  
+3. 變更的檔案名稱副檔名 **.tt**。 雖然這個步驟是選擇性的它可協助您避免在不正確的編輯器中開啟檔案。  
   
-4.  移除檔案名稱的主要部分的任何空格或標點符號。 比方說 「 我的 Web Page.tt"是不正確，但是 「 MyWebPage.tt"正確無誤。 檔案名稱將用於做為產生的程式碼中的類別名稱。  
+4. 移除檔案名稱的主要部分的任何空格或標點符號。 比方說 「 我的 Web Page.tt"是不正確，但是 「 MyWebPage.tt"正確無誤。 檔案名稱將用於做為產生的程式碼中的類別名稱。  
   
-5.  在檔案開頭插入下面這一行。 如果您使用 Visual Basic 專案中，會取代 「 C#"與"VB"。  
+5. 在檔案開頭插入下面這一行。 如果您使用 Visual Basic 專案中，會取代 「 C#"與"VB"。  
   
      `<#@ template language="C#" #>`  
   
@@ -292,7 +289,7 @@ System.IO.File.WriteAllText("outputPage.html", pageContent)
 ### <a name="inheritance-between-run-time-text-templates"></a>執行階段文字範本之間的繼承  
  您可以共用執行階段範本，藉由撰寫一個可為抽象的基底類別範本之間的內容。 使用`inherits`參數`<@#template#>`指示詞可參考另一個執行階段範本類別。  
   
-#### <a name="inheritance-pattern-fragments-in-base-methods"></a>繼承模式： 基底方法中的片段  
+#### <a name="inheritance-pattern-fragments-in-base-methods"></a>繼承模式：基底方法中的片段  
  在接下來的範例所使用的模式，請注意下列幾點：  
   
 - 基底類別`SharedFragments`定義類別功能區塊內的方法`<#+ ... #>`。  
@@ -348,7 +345,7 @@ begin 1
 end 1  
 ```  
   
-#### <a name="inheritance-pattern-text-in-base-body"></a>基底的主體中的繼承模式： 文字  
+#### <a name="inheritance-pattern-text-in-base-body"></a>繼承模式：基底的主體中的文字  
  使用範本繼承此替代方法，在大量的文字是基底範本中定義。 在衍生的範本會提供資料和文字片段放入基底的內容。  
   
  **AbstractBaseTemplate1.tt:**  
@@ -424,14 +421,11 @@ End material for DerivedTemplate1.
 ```  
   
 ## <a name="related-topics"></a>相關主題  
- 設計階段範本： 如果您想要使用範本來產生程式碼會變成您的應用程式的一部分，請參閱 <<c0> [ 使用 T4 文字範本在設計階段的程式碼產生](../modeling/design-time-code-generation-by-using-t4-text-templates.md)。  
+ 設計階段範本：如果您想要使用範本來產生程式碼，會成為您的應用程式的一部分，請參閱 <<c0> [ 使用 T4 文字範本在設計階段的程式碼產生](../modeling/design-time-code-generation-by-using-t4-text-templates.md)。  
   
  執行階段範本可用在任何應用程式範本和其內容在編譯時期決定位置。 但是，如果您想要撰寫[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]延伸模組，可產生文字範本在執行階段變更，請參閱[叫用 VS 擴充功能中的文字轉換](../modeling/invoking-text-transformation-in-a-vs-extension.md)。  
   
 ## <a name="see-also"></a>另請參閱  
  [程式碼產生和 T4 文字範本](../modeling/code-generation-and-t4-text-templates.md)   
  [撰寫 T4 文字範本](../modeling/writing-a-t4-text-template.md)   
- [Oleg Sych 了解 T4： 前置處理過的文字範本](http://www.olegsych.com/2009/09/t4-preprocessed-text-templates/)
-
-
-
+ [了解 T4:Oleg Sych 前置處理過的文字範本](https://github.com/olegsych/T4Toolbox)

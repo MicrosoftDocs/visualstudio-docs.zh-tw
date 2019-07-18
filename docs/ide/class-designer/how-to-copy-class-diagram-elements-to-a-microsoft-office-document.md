@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f5164ca6795811efa528db01aacf79aea250aff
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 19fbcc3db88cd020e1a4541f6cfb7f5f3acd18b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55956684"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62975493"
 ---
 # <a name="how-to-copy-class-diagram-elements-to-a-microsoft-office-document"></a>HOW TO：將類別圖表項目複製到 Microsoft Office 文件
 
@@ -28,15 +28,15 @@ ms.locfileid: "55956684"
 
 ## <a name="copy-several-elements"></a>複製數個元素
 
-1.  選取您要複製的圖表上的圖形。
+1. 選取您要複製的圖表上的圖形。
 
-2.  以滑鼠右鍵按一下選取項目，然後選擇 [複製影像]。
+2. 以滑鼠右鍵按一下選取項目，然後選擇 [複製影像]。
 
 ## <a name="copy-all-the-elements-in-a-class-diagram"></a>複製類別圖表中的所有元素
 
-1.  以滑鼠右鍵按一下圖表介面，然後選擇 [全選]，或按 **Ctrl + A**。
+1. 以滑鼠右鍵按一下圖表介面，然後選擇 [全選]，或按 **Ctrl + A**。
 
-2.  在 [編輯] 功能表上，選取 [複製影像]。
+2. 在 [編輯] 功能表上，選取 [複製影像]。
 
 您也可以不選 [複製影像] 而選擇 [複製]。 [複製] 會將影像複製為一般點陣圖。 [複製影像] 會將影像複製為向量影像，更適用於大多數的 Office 應用程式。
 

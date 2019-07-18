@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugThreads2
 ms.assetid: 1854f078-3b49-42c2-b65b-33e3b506fd63
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: db9a7eae6a0a37f8bd1f530afe067f4766197591
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: a6d8f869e519d9500f1ea8f3bb33a3ee098f5cfd
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56708559"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66325410"
 ---
 # <a name="ienumdebugthreads2"></a>IEnumDebugThreads2
-此介面會列舉在目前的偵錯工作階段中執行的執行緒。
+這個介面會列舉在目前的偵錯工作階段中執行的執行緒。
 
 ## <a name="syntax"></a>語法
 

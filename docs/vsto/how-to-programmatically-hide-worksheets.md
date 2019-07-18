@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6fe1ebb3316acfc53ac29ea734413cc0cf2cb15e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: f1fca54350900b2ed252efc324308d1168c6da53
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56638552"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62812460"
 ---
 # <a name="how-to-programmatically-hide-worksheets"></a>HOW TO：以程式設計方式隱藏工作表
   您可以顯示或隱藏活頁簿中的任何工作表。 若要隱藏工作表，請使用工作表主項目，或使用活頁簿的工作表集合存取工作表。
@@ -30,7 +30,7 @@ ms.locfileid: "56638552"
 
 ### <a name="to-hide-a-worksheet-using-a-worksheet-host-item"></a>使用工作表主項目隱藏工作表
 
-1.  將 <xref:Microsoft.Office.Tools.Excel.Worksheet.Visible%2A> 主項目的 `Sheet1` 屬性設定為 <xref:Microsoft.Office.Interop.Excel.XlSheetVisibility.xlSheetHidden> 列舉值。
+1. 將 <xref:Microsoft.Office.Tools.Excel.Worksheet.Visible%2A> 主項目的 `Sheet1` 屬性設定為 <xref:Microsoft.Office.Interop.Excel.XlSheetVisibility.xlSheetHidden> 列舉值。
 
      [!code-csharp[Trin_VstcoreExcelAutomation#25](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#25)]
      [!code-vb[Trin_VstcoreExcelAutomation#25](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#25)]
@@ -38,13 +38,13 @@ ms.locfileid: "56638552"
 ## <a name="use-the-sheets-collection-of-the-excel-workbook"></a>使用 Excel 活頁簿的工作表集合
  在下列情況中，透過 Microsoft Office Excel 的 <xref:Microsoft.Office.Interop.Excel.Sheets> 集合存取工作表：
 
--   您想要隱藏工作表中的 VSTO 增益集。
+- 您想要隱藏工作表中的 VSTO 增益集。
 
--   您想要隱藏的工作表，是在文件層級自訂的執行階段建立的。
+- 您想要隱藏的工作表，是在文件層級自訂的執行階段建立的。
 
 ### <a name="to-hide-a-worksheet-using-the-sheets-collection-of-the-excel-workbook"></a>使用 Excel 活頁簿的工作表集合隱藏工作表
 
-1.  將工作表的 <xref:Microsoft.Office.Interop.Excel.Worksheets.Visible%2A> 屬性設定為 <xref:Microsoft.Office.Interop.Excel.XlSheetVisibility.xlSheetHidden> 列舉值。
+1. 將工作表的 <xref:Microsoft.Office.Interop.Excel.Worksheets.Visible%2A> 屬性設定為 <xref:Microsoft.Office.Interop.Excel.XlSheetVisibility.xlSheetHidden> 列舉值。
 
      [!code-csharp[Trin_VstcoreExcelAutomation#26](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#26)]
      [!code-vb[Trin_VstcoreExcelAutomation#26](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#26)]

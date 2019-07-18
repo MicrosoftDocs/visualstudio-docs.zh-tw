@@ -9,12 +9,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5bcf5f27653782d0280082713306e142702559c8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: ce0aadf455e95895309bbae4f23eb84c75935428
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54770311"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68201865"
 ---
 # <a name="customizing-intellisense-for-requirejs"></a>為 RequireJS 自訂 IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,9 +25,9 @@ ms.locfileid: "54770311"
   
  本主題說明如何：  
   
--   在 ASP.NET 專案中自訂 RequireJS  
+- 在 ASP.NET 專案中自訂 RequireJS  
   
--   在 JSProj 專案中自訂 RequireJS，這些專案可用來建置 Apache Cordova 應用程式、Windows 市集應用程式和 LightSwitch HTML 應用程式  
+- 在 JSProj 專案中自訂 RequireJS，這些專案可用來建置 Apache Cordova 應用程式、Windows 市集應用程式和 LightSwitch HTML 應用程式  
   
 ## <a name="customize-requirejs-in-aspnet-projects"></a>在 ASP.NET 專案中自訂 RequireJS  
  當目前的 JavaScript 檔案參考名為 require.js 的檔案時，會自動啟用對 RequireJS 的支援 (如需詳細資訊，請參閱 [JavaScript IntelliSense](../ide/javascript-intellisense.md) 中的＜判斷 IntelliSense 的內容＞一節)。 在 ASP.NET 專案中，通常是在 _references.js 檔案中使用 /// \<reference/> 指示詞來參考 require.js。  
@@ -59,5 +59,5 @@ ms.locfileid: "54770311"
   
  在 JSProj 專案檔中不需要 ASP.NET 專案所需的自訂步驟。 換言之，系統會自動載入參考 require.js 的指令碼標記上的 `data-main` 屬性所使用的指令碼檔，以便設定 require.js。 參考 require.js 的 HTML 檔也會做為應用程式的起始頁。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [JavaScript IntelliSense](../ide/javascript-intellisense.md)

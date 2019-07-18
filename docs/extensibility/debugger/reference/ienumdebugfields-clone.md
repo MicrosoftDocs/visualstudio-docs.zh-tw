@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugFields::Clone method
 ms.assetid: 7ec265a8-696f-45ce-a2a2-0a83e96fee1b
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 122b0d64c32f50287a8845cbd43a41834234a415
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 2d614a1d98a1374ed0b04aef5b23ebf91c21610c
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56692381"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66350447"
 ---
 # <a name="ienumdebugfieldsclone"></a>IEnumDebugFields::Clone
 這個方法會傳回一份目前的列舉，為個別的物件。
@@ -36,10 +39,9 @@ int Clone(
 );
 ```
 
-#### <a name="parameters"></a>參數
- `ppEnum`
-
- [out]傳回這個列舉型別為個別物件的複本。
+## <a name="parameters"></a>參數
+`ppEnum`\
+[out]傳回這個列舉型別為個別物件的複本。
 
 ## <a name="property-valuereturn-value"></a>屬性值/傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

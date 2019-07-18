@@ -3,19 +3,19 @@ title: 選取要用於專案的 Python 解譯器和環境
 description: 您可以特別選取要套用至特定專案的 Python 環境，包括 Anaconda 和虛擬環境。
 ms.date: 03/18/2019
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 1bf1937c92f5da234ab72934c5acd52bc9cd0a6b
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: 9d7736365e8e2bb371a71580492401bb2660fcc3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58194959"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62429623"
 ---
 # <a name="how-to-select-a-python-environment-for-a-project"></a>如何選取要用於專案的 Python 環境
 

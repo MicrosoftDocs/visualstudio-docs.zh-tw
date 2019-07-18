@@ -9,23 +9,23 @@ helpviewer_keywords:
 - ProjectItem element [Visual Studio project templates]
 - <ProjectItem> element [Visual Studio project templates]
 ms.assetid: 82879fbe-7756-42cd-9a07-c10edf5b4673
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0fae92cd0a2903753f5b02ca33308a83cdab67c7
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 09f062575cc7d0978fbacede32cfe22d0f98a71c
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56694903"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66335958"
 ---
 # <a name="projectitem-element-visual-studio-project-templates"></a>ProjectItem 項目 （Visual Studio 專案範本）
 指定專案範本中所包含的檔案。
 
 > [!NOTE]
->  `ProjectItem`元素接受不同的屬性，根據該範本是否為專案或項目。 本主題說明`ProjectItem`專案範本的項目。 如需說明`ProjectItem`項目，項目範本，請參閱[ProjectItem 項目 （Visual Studio 項目範本）](../extensibility/projectitem-element-visual-studio-item-templates.md)。
+> `ProjectItem`元素接受不同的屬性，根據該範本是否為專案或項目。 本主題說明`ProjectItem`專案範本的項目。 如需說明`ProjectItem`項目，項目範本，請參閱[ProjectItem 項目 （Visual Studio 項目範本）](../extensibility/projectitem-element-visual-studio-item-templates.md)。
 
  \<VSTemplate> \<TemplateContent> \<Project> \<ProjectItem>
 
@@ -92,7 +92,7 @@ ms.locfileid: "56694903"
    <ProjectItem TargetFileName="$safeprojectname$.vb">MyFile.vb</ProjectItem>
    ```
 
-2. 開啟專案檔案 (*.vbproj* for[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]專案) 中的文字編輯器或[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。
+2. 開啟專案檔案 ( *.vbproj* for[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]專案) 中的文字編輯器或[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。
 
 3. 看起來類似下列的 XML 專案檔中找到的一行：
 

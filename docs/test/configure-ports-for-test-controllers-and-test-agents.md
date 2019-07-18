@@ -14,11 +14,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: bd66bcb3615477abc2fc9a8122f2ec4675f37bbb
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56796682"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62965644"
 ---
 # <a name="configure-ports-for-test-controllers-and-test-agents"></a>設定測試控制器和測試代理程式的通訊埠
 

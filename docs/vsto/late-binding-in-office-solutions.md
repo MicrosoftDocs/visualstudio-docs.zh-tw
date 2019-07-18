@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 62224006d04e0a1e7447053e868dd9946f00c97e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56640684"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62583936"
 ---
 # <a name="late-binding-in-office-solutions"></a>在 Office 方案中的晚期繫結
   Office 應用程式的物件模型中的某些類型提供可透過晚期繫結功能的功能。 比方說，有些方法和屬性可以傳回不同類型的物件，根據 Office 應用程式的內容，而某些型別可以公開不同的方法或在不同的內容中的屬性。

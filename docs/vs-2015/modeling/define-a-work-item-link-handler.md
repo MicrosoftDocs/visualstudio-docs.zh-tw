@@ -1,25 +1,22 @@
 ---
 title: 定義工作項目連結處理常式 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML API
 ms.assetid: d52e0bbf-0166-4bb4-a2e3-cefed6188875
 caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 7ce74627d1d2d48ab02e0b124fbc38949f1f76f9
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: cd50f4c80e5e67f6fb7582dc2bc22963151b42fe
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51733060"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433120"
 ---
 # <a name="define-a-work-item-link-handler"></a>定義工作項目連結處理常式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,39 +26,39 @@ ms.locfileid: "51733060"
 ## <a name="set-up-a-uml-extension-solution"></a>設定 UML 擴充功能方案  
  這會讓您開發處理常式，然後將它們分散給其他使用者。 您必須設定兩個 Visual Studio 專案：  
   
--   包含連結處理常式程式碼的類別庫專案。  
+- 包含連結處理常式程式碼的類別庫專案。  
   
--   VSIX 專案，做為安裝命令的容器。 如果您想要，可以在相同的 VSIX 中包含其他元件。  
+- VSIX 專案，做為安裝命令的容器。 如果您想要，可以在相同的 VSIX 中包含其他元件。  
   
 #### <a name="to-set-up-the-visual-studio-solution"></a>設定 Visual Studio 方案  
   
-1.  建立類別庫專案，將它加入現有的 VSIX 方案，或是建立新的方案。  
+1. 建立類別庫專案，將它加入現有的 VSIX 方案，或是建立新的方案。  
   
-    1.  在 [檔案]  功能表上，依序選擇 [新增] 和 [專案] 。  
+    1. 在 [檔案]  功能表上，依序選擇 [新增] 和 [專案] 。  
   
-    2.  底下**已安裝的範本**，展開**Visual C#** 或是**Visual Basic**，然後在中間的資料行中按一下**類別庫**。  
+    2. 底下**已安裝的範本**，展開**Visual C#** 或是**Visual Basic**，然後在中間的資料行中按一下**類別庫**。  
   
-    3.  設定 [方案]  以表示您是要建立新的方案，還是將元件加入已經開啟的 VSIX 方案。  
+    3. 設定 [方案]  以表示您是要建立新的方案，還是將元件加入已經開啟的 VSIX 方案。  
   
-    4.  設定專案名稱和位置，然後按一下 [確定]。  
+    4. 設定專案名稱和位置，然後按一下 [確定]。  
   
-2.  除非您的方案已經包含 VSIX 專案，否則請建立一個。  
+2. 除非您的方案已經包含 VSIX 專案，否則請建立一個。  
   
-    1.  在 [方案總管] 中，在方案的捷徑功能表上，選擇 [新增] 和 [新增專案] 。  
+    1. 在 [方案總管] 中，在方案的捷徑功能表上，選擇 [新增] 和 [新增專案] 。  
   
-    2.  在 [已安裝的範本] 下，依序展開 [Visual C#]  或 [Visual Basic] ，然後選取 [擴充性] 。 在中間的資料行中，選擇 [VSIX 專案] 。  
+    2. 在 [已安裝的範本] 下，依序展開 [Visual C#]  或 [Visual Basic] ，然後選取 [擴充性] 。 在中間的資料行中，選擇 [VSIX 專案] 。  
   
-3.  將 VSIX 專案設定為方案的啟始專案。  
+3. 將 VSIX 專案設定為方案的啟始專案。  
   
-    -   在方案總管中，在 VSIX 專案的捷徑功能表上，選擇 [設定為啟始專案] 。  
+    - 在方案總管中，在 VSIX 專案的捷徑功能表上，選擇 [設定為啟始專案] 。  
   
-4.  在  **source.extension.vsixmanifest**下方**內容**，新增類別庫專案做為 MEF 元件。  
+4. 在  **source.extension.vsixmanifest**下方**內容**，新增類別庫專案做為 MEF 元件。  
   
-    1.  在 [中繼資料]  索引標籤上，設定 VSIX 的名稱。  
+    1. 在 [中繼資料]  索引標籤上，設定 VSIX 的名稱。  
   
-    2.  在 [安裝目標]  索引標籤上，設定 Visual Studio 版本做為目標。  
+    2. 在 [安裝目標]  索引標籤上，設定 Visual Studio 版本做為目標。  
   
-    3.  在 [資產]  索引標籤上，選擇 [新增] ，然後在對話方塊中設定：  
+    3. 在 [資產]  索引標籤上，選擇 [新增] ，然後在對話方塊中設定：  
   
           =   
   
@@ -155,41 +152,41 @@ namespace WorkItems
  基於測試目的，請在偵錯模式中執行連結處理常式。  
   
 > [!WARNING]
->  您必須先連接 TFS 原始程式碼控制 (SCC) 才能建立或連結工作項目。 若您嘗試開啟連接至不同的 TFS SCC，Visual Studio 會自動關閉目前方案。 請先確認您已連接至適當的 SCC，再嘗試建立或連結至工作項目。 在更新版本的 Visual Studio 中，如果沒有連接至 SCC 即無法使用功能表命令。  
+> 您必須先連接 TFS 原始程式碼控制 (SCC) 才能建立或連結工作項目。 若您嘗試開啟連接至不同的 TFS SCC，Visual Studio 會自動關閉目前方案。 請先確認您已連接至適當的 SCC，再嘗試建立或連結至工作項目。 在更新版本的 Visual Studio 中，如果沒有連接至 SCC 即無法使用功能表命令。  
   
 #### <a name="to-test-the-link-handler"></a>測試連結處理常式  
   
-1.  按 **F5**，或在 [偵錯]  功能表上，選擇 [開始偵錯] 。  
+1. 按 **F5**，或在 [偵錯]  功能表上，選擇 [開始偵錯] 。  
   
      [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的實驗執行個體隨即啟動。  
   
-     **疑難排解**： 如果新[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]不會啟動，請確定 VSIX 專案已設定為啟始專案的方案。  
+     **疑難排解**:如果新[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]不會啟動，請確定 VSIX 專案已設定為啟始專案的方案。  
   
-2.  在實驗性 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]中，開啟或建立模型專案，並開啟或建立模型圖表。  
+2. 在實驗性 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]中，開啟或建立模型專案，並開啟或建立模型圖表。  
   
-3.  建立模型項目，例如 UML 類別，並設定其名稱。  
+3. 建立模型項目，例如 UML 類別，並設定其名稱。  
   
-4.  以滑鼠右鍵按一下項目，然後按一下**建立工作項目**。  
+4. 以滑鼠右鍵按一下項目，然後按一下**建立工作項目**。  
   
-    -   如果子功能表顯示**開啟 Team Foundation Server 連接**，您必須關閉專案、 連接至適當的 TFS，並重新啟動此程序。  
+    - 如果子功能表顯示**開啟 Team Foundation Server 連接**，您必須關閉專案、 連接至適當的 TFS，並重新啟動此程序。  
   
-    -   如果子功能表顯示工作項目類型的清單，請按一下其中一個。  
+    - 如果子功能表顯示工作項目類型的清單，請按一下其中一個。  
   
          新的工作項目表單隨即開啟。  
   
-5.  如果您已經在上一節中使用範例程式碼，請確認工作項目的標題與模型項目相同。 這表示 `OnWorkItemCreated()` 已生效。  
+5. 如果您已經在上一節中使用範例程式碼，請確認工作項目的標題與模型項目相同。 這表示 `OnWorkItemCreated()` 已生效。  
   
-6.  完成表單、儲存並關閉工作項目。  
+6. 完成表單、儲存並關閉工作項目。  
   
-7.  請確認工作項目現在是以紅色顯示。 這示範了範例程式碼的 `OnWorkItemLinked()`。  
+7. 請確認工作項目現在是以紅色顯示。 這示範了範例程式碼的 `OnWorkItemLinked()`。  
   
-     **疑難排解**： 如果尚未執行的處理常式方法，請確認：  
+     **疑難排解**:如果尚未執行的處理常式方法，確認：  
   
-    -   類別庫專案會列為 MEF 元件**內容**列入**source.extensions.manifest**在 VSIX 專案。  
+    - 類別庫專案會列為 MEF 元件**內容**列入**source.extensions.manifest**在 VSIX 專案。  
   
-    -   正確的 `Export` 屬性會附加至處理常式類別，且該類別會實作 `ILinkedWorkItemExtension`。  
+    - 正確的 `Export` 屬性會附加至處理常式類別，且該類別會實作 `ILinkedWorkItemExtension`。  
   
-    -   所有 `Import` 和 `Export` 屬性的參數都有效。  
+    - 所有 `Import` 和 `Export` 屬性的參數都有效。  
   
 ## <a name="about-the-work-item-handler-code"></a>關於工作項目處理常式程式碼  
   
@@ -224,7 +221,7 @@ public void OnWorkItemLinked
 ```  
   
 > [!NOTE]
->  若要讓此範例運作，您必須在 `System.Drawing.dll` 加入專案參考，並匯入命名空間 `Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation`。 不過，`OnWorkItemLinked` 的其他實作並不需要這些加入作業。  
+> 若要讓此範例運作，您必須在 `System.Drawing.dll` 加入專案參考，並匯入命名空間 `Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation`。 不過，`OnWorkItemLinked` 的其他實作並不需要這些加入作業。  
   
 ### <a name="listening-for-link-removal"></a>接聽連結移除作業  
  在每個刪除的工作項目連結之前，會呼叫一次 `OnWorkItemRemoved`。 如果刪除模型項目，將會移除其所有連結。  
@@ -240,9 +237,9 @@ public void OnWorkItemRemoved
   
  若要使用下列範例，請在您的專案參考加入這些 .NET 組件：  
   
--   Microsoft.TeamFoundation.Client.dll  
+- Microsoft.TeamFoundation.Client.dll  
   
--   Microsoft.TeamFoundation.WorkItemTracking.Client.dll  
+- Microsoft.TeamFoundation.WorkItemTracking.Client.dll  
   
 ```  
   
@@ -304,6 +301,3 @@ element.AddReference(ReferenceConstants.WorkItem, linkString, true);
  [將參考字串附加至 UML 模型項目](../modeling/attach-reference-strings-to-uml-model-elements.md)   
  [定義與安裝模型擴充功能](../modeling/define-and-install-a-modeling-extension.md)   
  [使用 UML API 進行程式設計](../modeling/programming-with-the-uml-api.md)
-
-
-

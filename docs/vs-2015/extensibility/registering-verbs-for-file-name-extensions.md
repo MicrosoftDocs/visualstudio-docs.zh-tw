@@ -1,33 +1,28 @@
 ---
 title: 註冊副檔名的動詞命令 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - verbs, registering
 ms.assetid: 81a58e40-7cd0-4ef4-a475-c4e1e84d6e06
 caps.latest.revision: 17
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 3a1300f7f66e9c3e9e9cebe3a7b0c7c84e7df4c2
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: dbd97310163a4eb3ae5502c6341dc73322ca653d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51782423"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685274"
 ---
 # <a name="registering-verbs-for-file-name-extensions"></a>註冊適用於副檔名的動詞命令
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 與應用程式的檔案名稱副檔名關聯通常會有偏好的動作，當使用者按兩下檔案時，就會發生。 此建議動作連結到動詞，例如開啟時，對應至動作。  
   
- 您可以註冊在 HKEY_CLASSES_ROOT 使用 Shell 機碼位於與擴充功能的程式設計識別項 (ProgID) 相關聯的動詞\\*progid*\shell。 如需詳細資訊，請參閱 <<c0> [ 檔案類型](http://msdn.microsoft.com/library/windows/desktop/cc144148\(v=vs.85\).aspx)。  
+ 您可以註冊在 HKEY_CLASSES_ROOT 使用 Shell 機碼位於與擴充功能的程式設計識別項 (ProgID) 相關聯的動詞\\*progid*\shell。 如需詳細資訊，請參閱 <<c0> [ 檔案類型](https://msdn.microsoft.com/library/windows/desktop/cc144148\(v=vs.85\).aspx)。  
   
 ## <a name="registering-standard-verbs"></a>註冊標準動詞命令  
  作業系統可辨識下列的標準動詞命令：  
@@ -45,7 +40,7 @@ ms.locfileid: "51782423"
   可能的話，請註冊一個標準動詞。 最常見的方式是開啟的動詞命令。 只有當沒有清楚的差異開啟檔案，並編輯檔案，請使用編輯動詞命令。 例如，開啟的.htm 檔案被它顯示在瀏覽器中，而編輯的.htm 檔案被啟動 HTML 編輯器。 標準動詞命令已當地語系化的作業系統地區設定。  
   
 > [!NOTE]
->  註冊時的標準動詞，未設定開啟的索引鍵的預設值。 預設值會包含在功能表上的顯示字串。 作業系統會提供這個標準動詞命令的字串。  
+> 註冊時的標準動詞，未設定開啟的索引鍵的預設值。 預設值會包含在功能表上的顯示字串。 作業系統會提供這個標準動詞命令的字串。  
   
  專案檔應該要啟動的新執行個體註冊[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]當使用者在開啟的檔案。 下列範例說明的標準動詞註冊[!INCLUDE[csprcs](../includes/csprcs-md.md)]專案。  
   
@@ -116,8 +111,7 @@ ms.locfileid: "51782423"
  預設的動詞命令是使用者按兩下 Windows 檔案總管中的檔案時所執行的動作。 預設的動詞命令為動詞命令指定為預設值的 HKEY_CLASSES_ROOT\\*progid*\Shell 索引鍵。 如果未不指定任何值，預設的動詞命令是指定 HKEY_CLASSES_ROOT 裡的第一個指令動詞\\*progid*\Shell 索引鍵清單。  
   
 > [!NOTE]
->  如果您想要變更預設的並排顯示部署中的延伸模組的動詞命令，請考慮對安裝與移除的影響。 在安裝期間會覆寫原始的預設值。  
+> 如果您想要變更預設的並排顯示部署中的延伸模組的動詞命令，請考慮對安裝與移除的影響。 在安裝期間會覆寫原始的預設值。  
   
 ## <a name="see-also"></a>另請參閱  
  [管理並存的檔案關聯](../extensibility/managing-side-by-side-file-associations.md)
-

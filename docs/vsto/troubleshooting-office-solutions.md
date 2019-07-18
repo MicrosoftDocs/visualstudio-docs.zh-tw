@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 901df0b15f26624ecf2e9fca217cdc074913ceae
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56614294"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62978259"
 ---
 # <a name="troubleshoot-office-solutions"></a>Office 方案進行疑難排解
   本節所包含的秘訣，可解決使用 Visual Studio 中的 Office 開發工具建立方案時可能遇到的常見問題。

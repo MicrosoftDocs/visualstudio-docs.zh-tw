@@ -1,26 +1,21 @@
 ---
 title: 原始檔控制的設計決策 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK], design decisions
 ms.assetid: 5f60ec1a-5a74-4362-8293-817a4dd73872
 caps.latest.revision: 13
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: a0932d0029ee924d900dead6b80c3ad2d7e555a0
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 89d125dc52340e8528ee9692d5de00784632e6f2
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51726073"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68187891"
 ---
 # <a name="source-control-design-decisions"></a>原始檔控制的設計決策
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -35,15 +30,14 @@ ms.locfileid: "51726073"
 ## <a name="will-the-project-include-special-files"></a>專案包含特殊的檔案？  
  另一個重要的設計決策是您的專案結構是否使用特殊的檔案。 特殊的檔案是隱藏的檔案為基礎所顯示在 [方案總管] 中，並在簽入和簽出對話方塊的檔案。 如果您使用特殊的檔案，請遵循這些指導方針：  
   
-1.  請勿將特殊的檔案關聯的專案根節點 — 也就是與專案檔案本身。 您的專案檔必須是單一檔案。  
+1. 請勿將特殊的檔案關聯的專案根節點 — 也就是與專案檔案本身。 您的專案檔必須是單一檔案。  
   
-2.  當新增、 移除或重新命名專案中，適當的特殊檔案<xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocumentsEvents2>設定旗標，指出檔案是特殊的檔案，必須引發事件。 回應呼叫適當的專案中的環境會呼叫這些事件<xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2>方法。  
+2. 當新增、 移除或重新命名專案中，適當的特殊檔案<xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocumentsEvents2>設定旗標，指出檔案是特殊的檔案，必須引發事件。 回應呼叫適當的專案中的環境會呼叫這些事件<xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2>方法。  
   
-3.  當您的專案或編輯器呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A>檔案，該檔案相關聯的特殊檔案不會自動簽出。中的特殊檔案與一起傳遞的父檔案。 環境會偵測傳入的所有檔案之間的關聯性，並適當地隱藏在 UI 中簽出的特殊檔案。  
+3. 當您的專案或編輯器呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A>檔案，該檔案相關聯的特殊檔案不會自動簽出。中的特殊檔案與一起傳遞的父檔案。 環境會偵測傳入的所有檔案之間的關聯性，並適當地隱藏在 UI 中簽出的特殊檔案。  
   
 ## <a name="see-also"></a>另請參閱  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A>   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocumentsEvents2>   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2>   
  [支援原始檔控制](../../extensibility/internals/supporting-source-control.md)
-

@@ -15,18 +15,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 95a438c6776e468611a99691c0a4bfea2e4203a5
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
-ms.translationtype: MTE95
+ms.openlocfilehash: 56ce4766f2afb148bbbc495d151b052de3334a47
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56953646"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63407727"
 ---
 # <a name="unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor"></a>Unable to Connect to the Microsoft Visual Studio Remote Debugging Monitor
 因為遠端偵錯監視未正確設定遠端電腦上或遠端電腦因為網路問題或防火牆存在而無法存取，可能會發生此訊息。
 
 > [!IMPORTANT]
->  如果您認為您收到此訊息是因為產品錯誤，請[報告這個問題](../ide/how-to-report-a-problem-with-visual-studio.md)Visual studio。 如果您需要更多協助，請參閱 [Talk to Us](../ide/talk-to-us.md) 與 Microsoft 連絡。
+> 如果您認為您收到此訊息是因為產品錯誤，請[報告這個問題](../ide/how-to-report-a-problem-with-visual-studio.md)Visual studio。 如果您需要更多協助，請參閱 [Talk to Us](../ide/talk-to-us.md) 與 Microsoft 連絡。
 
 ## <a name="specificerrors"></a>什麼是詳細的錯誤訊息？
 
@@ -81,7 +81,6 @@ Visual Studio 無法連接到遠端偵錯工具。 此訊息可能會發生，�
 
 - 遠端偵錯工具版本不符合 Visual Studio。 若要取得正確的遠端偵錯工具版本，請參閱[遠端偵錯](../debugger/remote-debugging.md)
 
-
 ## <a name="valid_name"></a> 要求的名稱有效，但找不到要求類型的任何資料
 
 遠端電腦已經存在，但 Visual Studio 無法連線到遠端偵錯工具。 此訊息可能會發生，原因有幾種：
@@ -118,7 +117,7 @@ Visual Studio 無法連接到遠端偵錯工具。 此訊息可能會發生，�
 
 ### <a name="server_incorrect"></a> 伺服器名稱不正確，或第三方軟體干擾遠端偵錯工具
 
-在 Visual Studio 中，查看專案屬性，並確定伺服器名稱正確。 請參閱主題[C#和 Visual Basic](../debugger/remote-debugging-csharp.md#remote_csharp)並[c + +](../debugger/remote-debugging-cpp.md#remote_cplusplus)。 針對 ASP.NET 中，開啟**屬性 / Web / 伺服器**或是**屬性 / 偵錯**視您的專案類型而定。
+在 Visual Studio 中，查看專案屬性，並確定伺服器名稱正確。 請參閱主題[C#和 Visual Basic](../debugger/remote-debugging-csharp.md#remote_csharp)並[ C++ ](../debugger/remote-debugging-cpp.md#remote_cplusplus)。 針對 ASP.NET 中，開啟**屬性 / Web / 伺服器**或是**屬性 / 偵錯**視您的專案類型而定。
 
 > [!NOTE]
 > 如果您要連結至處理序，將不會使用專案屬性中的遠端設定。
@@ -131,16 +130,16 @@ Visual Studio 無法連接到遠端偵錯工具。 此訊息可能會發生，�
 
 您可以使用下列方式的其中之一解決這個問題：
 
--   Visual Studio 使用者加入遠端偵錯工具的權限 (在 [遠端偵錯工具] 視窗中，選擇**工具 > 權限**)。
+- Visual Studio 使用者加入遠端偵錯工具的權限 (在 [遠端偵錯工具] 視窗中，選擇**工具 > 權限**)。
 
--   遠端電腦上，重新啟動遠端偵錯工具在相同的使用者帳戶及您使用 Visual Studio 電腦的密碼。
+- 遠端電腦上，重新啟動遠端偵錯工具在相同的使用者帳戶及您使用 Visual Studio 電腦的密碼。
 
     > [!NOTE]
     > 如果您在遠端伺服器上執行遠端偵錯工具，以滑鼠右鍵按一下 遠端偵錯工具應用程式，並選擇**系統管理員身分執行**（或者，您可以執行遠端偵錯工具即服務）。 如果您不會執行它，在遠端伺服器上，只是正常方式啟動。
 
--   您可以從命令列使用 **/allow \<使用者名稱>** 參數：`msvsmon /allow <username@computer>` 啟動遠端偵錯工具。
+- 您可以從命令列使用 **/allow \<使用者名稱>** 參數：`msvsmon /allow <username@computer>` 啟動遠端偵錯工具。
 
--   或者，您可以允許任何使用者執行遠端偵錯。 在遠端偵錯工具視窗中，移至 [工具] > [選項] 對話方塊。 當您選取 [無驗證]   時，可以接著選取 [允許任何使用者執行偵錯] 。 不過，您應該嘗試此選項，只有當其他選項都失敗，或如果您是在私人網路上。
+- 或者，您可以允許任何使用者執行遠端偵錯。 在遠端偵錯工具視窗中，移至 [工具] > [選項] 對話方塊。 當您選取 [無驗證]   時，可以接著選取 [允許任何使用者執行偵錯] 。 不過，您應該嘗試此選項，只有當其他選項都失敗，或如果您是在私人網路上。
 
 ### <a name="firewall"></a> 遠端電腦上的防火牆不允許連入連線至遠端偵錯工具
  Visual Studio 電腦上的防火牆和遠端電腦上的防火牆必須設定為允許 Visual Studio 和遠端偵錯工具之間的通訊。 如需遠端偵錯工具所用連接埠的相關資訊，請參閱 [Remote Debugger Port Assignments](../debugger/remote-debugger-port-assignments.md)。 如需設定 Windows 防火牆的相關資訊，請參閱 [Configure the Windows Firewall for Remote Debugging](../debugger/configure-the-windows-firewall-for-remote-debugging.md)。
@@ -165,5 +164,5 @@ Visual Studio 無法連接到遠端偵錯工具。 此訊息可能會發生，�
 ## <a name="more-help"></a>詳細的說明
  若要取得更多的遠端偵錯工具的說明，請開啟 遠端偵錯工具的 說明 頁面 (**協助 > 使用量**遠端偵錯工具中)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [Remote Debugging](../debugger/remote-debugging.md)

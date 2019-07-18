@@ -1,14 +1,9 @@
 ---
-title: IDebugField |Microsoft Docs
-ms.custom: ''
+title: IDebugField | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugField
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: adecdd1c-b1b9-4027-92da-74cbe910636f
 caps.latest.revision: 13
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 4feaec188bcfcfbca9f6484e162f1c3e6ad22d67
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 8bc18204d3cbe20635ab0680a50b4d1555dce2ce
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51764981"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65690298"
 ---
 # <a name="idebugfield"></a>IDebugField
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -39,7 +34,7 @@ IDebugField : IUnknown
  符號提供者會實作這個介面的基底類別的所有欄位。  
   
 ## <a name="notes-for-callers"></a>呼叫端資訊  
- 這個介面是基底類別的所有欄位。 傳回值為基礎[GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md)，此介面可能會傳回更具特製化的介面，藉由使用[QueryInterface](http://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3)。 此外，許多介面傳回`IDebugField`從各種方法的物件。  
+ 這個介面是基底類別的所有欄位。 傳回值為基礎[GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md)，此介面可能會傳回更具特製化的介面，藉由使用[QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3)。 此外，許多介面傳回`IDebugField`從各種方法的物件。  
   
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法  
  下表顯示的方法`IDebugField`。  
@@ -59,7 +54,7 @@ IDebugField : IUnknown
 ## <a name="remarks"></a>備註  
  類型相當於 C 語言`typedef`。  
   
- 在下列 c + + 語言範例中，`weather`是類別類型，並`sunny`和`stormy`符號：  
+ 在下列C++語言範例中，`weather`是類別類型，並`sunny`並`stormy`是符號：  
   
 ```cpp#  
 class weather;  
@@ -72,10 +67,9 @@ weather stormy;
 ## <a name="requirements"></a>需求  
  標頭： sh.h  
   
- 命名空間： Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間：Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
  [符號提供者介面](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)
-

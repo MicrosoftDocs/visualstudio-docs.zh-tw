@@ -1,14 +1,9 @@
 ---
-title: IDebugProgram2::Step |Microsoft Docs
-ms.custom: ''
+title: IDebugProgram2::Step | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugProgram2::Step
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: e4c2ffce-9810-4088-8162-eac9ef04f2a9
 caps.latest.revision: 17
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: d8b0b1e72115a710798d2961105d6884edd7b493
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 0473cf7061cb18dad569910af5214742ba774a87
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51746840"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445775"
 ---
 # <a name="idebugprogram2step"></a>IDebugProgram2::Step
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -30,7 +25,7 @@ ms.locfileid: "51746840"
 會執行的步驟。  
   
 > [!NOTE]
->  這個方法已被取代。 使用[步驟](../../../extensibility/debugger/reference/idebugprocess3-step.md)方法改為。  
+> 這個方法已淘汰。 使用[步驟](../../../extensibility/debugger/reference/idebugprocess3-step.md)方法改為。  
   
 ## <a name="syntax"></a>語法  
   
@@ -67,10 +62,9 @@ int Step( 
  如果沒有任何執行緒同步處理或執行緒之間的通訊，當特定執行緒逐步執行時，就應該會執行中的其他執行緒。  
   
 > [!WARNING]
->  不會傳送停止事件或即時 （同步） 事件[事件](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)時處理這個呼叫; 否則為偵錯工具可能會停止回應。  
+> 不會傳送停止事件或即時 （同步） 事件[事件](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)時處理這個呼叫; 否則為偵錯工具可能會停止回應。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)   
  [IDebugEngineProgram2](../../../extensibility/debugger/reference/idebugengineprogram2.md)   
  [Event](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)
-

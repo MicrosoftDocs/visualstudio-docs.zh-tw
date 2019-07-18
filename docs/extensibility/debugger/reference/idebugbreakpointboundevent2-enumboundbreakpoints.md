@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugBreakpointBoundEvent2::EnumBoundBreakpoints
 ms.assetid: 1f588feb-522e-488d-be92-7bc19b9e3688
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b062e17767fdbcfe1bf9efe6c0be197eb2638a1e
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 2584e49209dd95c3d43673eadf72e138ac828f57
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56715644"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66314392"
 ---
 # <a name="idebugbreakpointboundevent2enumboundbreakpoints"></a>IDebugBreakpointBoundEvent2::EnumBoundBreakpoints
 建立繫結此事件的中斷點的列舉值。
@@ -36,10 +39,9 @@ int EnumBoundBreakpoints( 
 );
 ```
 
-#### <a name="parameters"></a>參數
-`ppEnum`
-
- [out]傳回[IEnumDebugBoundBreakpoints2](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2.md)列舉所有中斷點的物件繫結從這個事件。
+## <a name="parameters"></a>參數
+`ppEnum`\
+[out]傳回[IEnumDebugBoundBreakpoints2](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2.md)列舉所有中斷點的物件繫結從這個事件。
 
 ## <a name="return-value"></a>傳回值
 如果成功，會傳回 `S_OK`。 傳回`S_FALSE`如果不有任何繫結的中斷點; 否則傳回錯誤碼。

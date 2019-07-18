@@ -6,26 +6,26 @@ helpviewer_keywords:
 - debug engines, debugging
 - debugging [Debugging SDK], custom debug engines
 ms.assetid: df27a8d6-3938-45ff-b47f-b684e80b38a0
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d07ba77739b4ff9749591405daf12fa66bae94e5
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 992440dd137b5622f4c619f1f81008eb38e1ff5f
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56715945"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66334834"
 ---
 # <a name="how-to-debug-a-custom-debug-engine"></a>如何：偵錯自訂的偵錯引擎
 從專案類型會啟動的偵錯引擎 (DE)<xref:Microsoft.VisualStudio.Shell.Interop.IVsDebuggableProjectCfg.DebugLaunch%2A>方法。 這表示控制下的執行個體啟動時 DE[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]控制的專案類型。 不過，該執行個體[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]無法偵錯 DE。 下面是可讓您偵錯您的自訂裝置的步驟。
 
 > [!NOTE]
->  :   在 「 偵錯自訂的偵錯引擎 」 的程序，您必須等待開始之前，您可以附加至這個 DE。 如果您即將開始您 DE DE 啟動時出現的訊息方塊，您可以附加在該點，然後清除 訊息方塊，以繼續。 如此一來，您可以攔截所有 DE 事件。
+> :   在 「 偵錯自訂的偵錯引擎 」 的程序，您必須等待開始之前，您可以附加至這個 DE。 如果您即將開始您 DE DE 啟動時出現的訊息方塊，您可以附加在該點，然後清除 訊息方塊，以繼續。 如此一來，您可以攔截所有 DE 事件。
 
 > [!WARNING]
->  您必須擁有遠端偵錯安裝才能嘗試進行下列程序。 請參閱[遠端偵錯](../../debugger/remote-debugging.md)如需詳細資訊。
+> 您必須擁有遠端偵錯安裝才能嘗試進行下列程序。 請參閱[遠端偵錯](../../debugger/remote-debugging.md)如需詳細資訊。
 
 ## <a name="debug-a-custom-debug-engine"></a>偵錯自訂的偵錯引擎
 
@@ -43,7 +43,7 @@ ms.locfileid: "56715945"
 
 7. 第一個執行個體中[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]（DE 專案），然後選取 **附加至處理序**從**偵錯**功能表。
 
-8. 在 [ **připojit k procesu** ] 對話方塊中，變更**傳輸**來**遠端 （僅限使用任何驗證的原生）**。
+8. 在 [ **připojit k procesu** ] 對話方塊中，變更**傳輸**來**遠端 （僅限使用任何驗證的原生）** 。
 
 9. 變更**限定詞**您電腦的名稱 (注意： 沒有記錄的項目，因此您必須輸入此名稱僅一次)。
 

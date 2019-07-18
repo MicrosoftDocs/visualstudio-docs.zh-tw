@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgramPublisher2::PublishProgramNode
 ms.assetid: d4b72e04-f726-46cf-8e56-5203ff205b12
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d3422e738246d2b1c883c5d3efb01fab6c0aef8d
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: e1b0611b723b649fd8d899af427c6b41fb5db1e1
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56720220"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66343290"
 ---
 # <a name="idebugprogrampublisher2publishprogramnode"></a>IDebugProgramPublisher2::PublishProgramNode
 讓程式節點可供使用的偵錯引擎 (DEs) 和工作階段偵錯管理員 (SDM)。
@@ -36,10 +39,9 @@ int PublishProgramNode(
 );
 ```
 
-#### <a name="parameters"></a>參數
- `pProgramNode`
-
- [in][IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)物件，表示要提供的 [程式] 節點。
+## <a name="parameters"></a>參數
+`pProgramNode`\
+[in][IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)物件，表示要提供的 [程式] 節點。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

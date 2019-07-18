@@ -50,12 +50,12 @@ caps.latest.revision: 41
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 32b2f33af3c34cf6245e511cbd54d6ce7cc3a2bd
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 340fe819086d3cc18cb9c2dd6a4ca14129c6d8ad
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54795248"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65679892"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Visual Studio 中的方案和專案
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -75,7 +75,7 @@ ms.locfileid: "54795248"
  您也可以建立自訂專案與項目範本。 如需詳細資訊，請參閱[建立專案和項目範本](../ide/creating-project-and-item-templates.md)。
 
 ## <a name="creating-new-projects"></a>建立新專案
- 建立新專案最簡單的方式是從預先定義的專案範本開始，它們是由預先產生的程式碼檔案、組態檔、資產與設定的基本集合所組成，可讓您開始以特定的程式設計語言來建立特定類型的應用程式或網站。 當您從主功能表選擇 [檔案] &#124; [新增] &#124; [專案] 或 [檔案] &#124; [新增] &#124; [網站] 並巡覽時，可以在 [新增專案] 對話方塊中看到這些範本。 如需詳細資訊，請參閱[建立方案和專案](../ide/creating-solutions-and-projects.md)和 [NIB 根據範本建立專案](http://msdn.microsoft.com/7c36d86a-6b79-4480-8228-0f925f1204b2)。
+ 建立新專案最簡單的方式是從預先定義的專案範本開始，它們是由預先產生的程式碼檔案、組態檔、資產與設定的基本集合所組成，可讓您開始以特定的程式設計語言來建立特定類型的應用程式或網站。 當您從主功能表選擇 [檔案] &#124; [新增] &#124; [專案] 或 [檔案] &#124; [新增] &#124; [網站] 並巡覽時，可以在 [新增專案] 對話方塊中看到這些範本。 如需詳細資訊，請參閱[建立方案和專案](../ide/creating-solutions-and-projects.md)和 [NIB 根據範本建立專案](https://msdn.microsoft.com/7c36d86a-6b79-4480-8228-0f925f1204b2)。
 
 ## <a name="managing-projects-in-solution-explorer"></a>管理 [方案總管] 中的專案
  建立新專案之後，您可以使用 [方案總管]  來檢視及管理專案與方案，以及關聯的項目。 下圖顯示 [伺服器總管] 與包含兩個專案的 C# 方案。
@@ -84,23 +84,23 @@ ms.locfileid: "54795248"
 
 ## <a name="in-this-section"></a>本節內容
 
--   [建立方案和專案](../ide/creating-solutions-and-projects.md)
+- [建立方案和專案](../ide/creating-solutions-and-projects.md)
 
--   [新增和移除專案項目](../ide/adding-and-removing-project-items.md)
+- [新增和移除專案項目](../ide/adding-and-removing-project-items.md)
 
--   [管理專案和方案屬性](../ide/managing-project-and-solution-properties.md)
+- [管理專案和方案屬性](../ide/managing-project-and-solution-properties.md)
 
--   [管理專案中的參考](../ide/managing-references-in-a-project.md)
+- [管理專案中的參考](../ide/managing-references-in-a-project.md)
 
--   [應用程式屬性](../ide/application-properties.md)
+- [應用程式屬性](../ide/application-properties.md)
 
--   [管理組件和資訊清單簽署](../ide/managing-assembly-and-manifest-signing.md)
+- [管理組件和資訊清單簽署](../ide/managing-assembly-and-manifest-signing.md)
 
--   [如何：指定應用程式圖示 (Visual Basic、C#)](../ide/how-to-specify-an-application-icon-visual-basic-csharp.md)
+- [如何：指定應用程式圖示 (Visual Basic、C#)](../ide/how-to-specify-an-application-icon-visual-basic-csharp.md)
 
--   [以特定的 .NET Framework 版本為目標](../ide/targeting-a-specific-dotnet-framework-version.md)
+- [以特定的 .NET Framework 版本為目標](../ide/targeting-a-specific-dotnet-framework-version.md)
 
--   [建立專案和項目範本](../ide/creating-project-and-item-templates.md)
+- [建立專案和項目範本](../ide/creating-project-and-item-templates.md)
 
 ## <a name="see-also"></a>請參閱
  [Visual Studio IDE](../ide/visual-studio-ide.md)

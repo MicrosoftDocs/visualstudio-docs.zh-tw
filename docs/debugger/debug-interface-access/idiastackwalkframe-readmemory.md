@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 82ef0d25e796f9e04ecdcfd0c54a7312b9c9edad
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56628594"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62837910"
 ---
 # <a name="idiastackwalkframereadmemory"></a>IDiaStackWalkFrame::readMemory
 讀取影像中的記憶體。
@@ -58,5 +58,5 @@ HRESULT readMemory ( 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [IDiaStackWalkFrame](../../debugger/debug-interface-access/idiastackwalkframe.md)

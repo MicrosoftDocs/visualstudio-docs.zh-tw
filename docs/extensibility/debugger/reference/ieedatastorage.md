@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - IEEDataStorage interface
 ms.assetid: 704e932d-2325-410e-89c4-ce88c6ec19da
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: eeb34d9574a6070b2d1f658575d345d74aa72972
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: ab42216df5c7d5f3d2d349ccf07e595ab3fc616c
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56704029"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66335640"
 ---
 # <a name="ieedatastorage"></a>IEEDataStorage
 這個介面會表示為位元組陣列。

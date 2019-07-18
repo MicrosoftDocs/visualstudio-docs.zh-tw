@@ -7,17 +7,17 @@ helpviewer_keywords:
 - document properties, custom
 - language services [managed package framework], custom document properties
 ms.assetid: cc714a67-b33e-4440-9203-3c90f648bd9c
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 98402a61629b48b25a8636aaf6a912e89c283951
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 8422e35e5241cf1cef30d0ba4a1fe7815323d091
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56605831"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66312897"
 ---
 # <a name="custom-document-properties-in-a-legacy-language-service"></a>舊版語言服務中的自訂文件屬性
 中可顯示文件屬性[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]**屬性**視窗。 程式設計語言通常不需要個別的原始程式檔相關聯的屬性。 不過，XML 支援會影響編碼方式、 結構描述和樣式表的文件屬性。

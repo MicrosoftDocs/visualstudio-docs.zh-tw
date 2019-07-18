@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 59ed3b8e62bbb2086581d89016d4609ab215f0de
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 3d4339295c47ee6bc8915eecfb581d9a0e8a4bed
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56604947"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747674"
 ---
 # <a name="trusted-application-deployment-overview"></a>信任的應用程式部署概觀
 本主題提供如何部署 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式的概觀，使用受信任的應用程式部署技術可提高此應用程式的權限。
@@ -29,12 +29,12 @@ ms.locfileid: "56604947"
  信任的應用程式部署 ( [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 部署技術的一部分)，可讓各種規模的組織以更安全的方式授與 Managed 應用程式的其他權限，而不需要進行使用者提示。 使用信任的應用程式部署，組織可以只設定用戶端電腦的信任發行者清單，這些發行者是使用 Authenticode 憑證來識別。 此後，由其中一個信任發行者簽署的任何 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式，會收到較高的信任層級。
 
 > [!NOTE]
->  信任的應用程式部署需要對使用者電腦進行一次性的組態。 在 Managed 桌面環境中，可以使用全域原則來執行此組態。 如果您的應用程式不想要使用這種方式，請改用權限提高。 如需詳細資訊，請參閱[保護 ClickOnce 應用程式](../deployment/securing-clickonce-applications.md)。
+> 信任的應用程式部署需要對使用者電腦進行一次性的組態。 在 Managed 桌面環境中，可以使用全域原則來執行此組態。 如果您的應用程式不想要使用這種方式，請改用權限提高。 如需詳細資訊，請參閱[保護 ClickOnce 應用程式](../deployment/securing-clickonce-applications.md)。
 
 ## <a name="trusted-application-deployment-basics"></a>信任的應用程式部署基本概念
  下表顯示信任的應用程式部署所涉及的物件和角色。
 
-|物件或角色|說明|
+|物件或角色|描述|
 |--------------------|-----------------|
 |系統管理員|負責更新和維護用戶端電腦的組織實體|
 |測試管理員|在 Common Language Runtime (CLR) 內負責強制執行用戶端應用程式安全性的子系統。|
@@ -75,22 +75,22 @@ ms.locfileid: "56604947"
 
  如果您不在 Managed 桌面環境中部署您的應用程式，在將憑證加入信任的發行者存放區時有下列選項：
 
--   <xref:System.Security.Cryptography?displayProperty=fullName> 命名空間。
+- <xref:System.Security.Cryptography?displayProperty=fullName> 命名空間。
 
--   *CertMgr.exe*，為 Internet Explorer 的元件，因此存在於 Windows 98 和所有更新版本上。 如需詳細資訊，請參閱 < [Certmgr.exe （憑證管理員工具）](/dotnet/framework/tools/certmgr-exe-certificate-manager-tool)。
+- *CertMgr.exe*，為 Internet Explorer 的元件，因此存在於 Windows 98 和所有更新版本上。 如需詳細資訊，請參閱 < [Certmgr.exe （憑證管理員工具）](/dotnet/framework/tools/certmgr-exe-certificate-manager-tool)。
 
 ### <a name="create-a-clickonce-application"></a>建立 ClickOnce 應用程式
- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式是 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 用戶端應用程式，並結合描述應用程式及提供安裝參數的資訊清單檔案。 您可以使用 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 中的 [發行]  命令 ，將程式變成 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]應用程式。 或者，您可以使用 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 隨附的工具，產生 [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)]部署所需的所有檔案。 如需詳細步驟[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]部署，請參閱[逐步解說：手動部署 ClickOnce 應用程式](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)。
+ A[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式是.NET Framework 用戶端的應用程式，結合描述應用程式，並提供安裝參數的資訊清單檔案。 您可以使用 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 中的 [發行]  命令 ，將程式變成 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]應用程式。 或者，您可以使用 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 隨附的工具，產生 [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)]部署所需的所有檔案。 如需詳細步驟[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]部署，請參閱[逐步解說：手動部署 ClickOnce 應用程式](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)。
 
  信任的應用程式部署是 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]所特有，並且僅能與 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式搭配使用。
 
 ### <a name="sign-the-deployment"></a>簽署部署
- 取得您的憑證之後，必須用它來簽署您的部署。 如果您使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 發行精靈來部署應用程式，精靈會自動產生測試憑證 (如果您未自行指定憑證的話)。 不過，您也可以使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 專案設計工具視窗，提供由 CA 所提供的憑證。  另請參閱[如何： 發行 ClickOnce 應用程式使用發行精靈](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)。
+ 取得您的憑證之後，必須用它來簽署您的部署。 如果您使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 發行精靈來部署應用程式，精靈會自動產生測試憑證 (如果您未自行指定憑證的話)。 不過，您也可以使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 專案設計工具視窗，提供由 CA 所提供的憑證。  另請參閱[How to:使用發佈精靈發佈 ClickOnce 應用程式](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)。
 
 > [!CAUTION]
->  我們不建議使用測試憑證來部署應用程式。
+> 我們不建議使用測試憑證來部署應用程式。
 
- 您也可以使用 *Mage.exe* 或 *MageUI.exe* SDK 工具簽署應用程式。 如需詳細資訊，請參閱 <<c0> [ 逐步解說： 手動部署 ClickOnce 應用程式](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)。 如需與部署簽署相關的命令列選項的完整清單，請參閱 < [Mage.exe （資訊清單產生和編輯工具）](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)。
+ 您也可以使用 *Mage.exe* 或 *MageUI.exe* SDK 工具簽署應用程式。 如需詳細資訊，請參閱[逐步解說：手動部署 ClickOnce 應用程式](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)。 如需與部署簽署相關的命令列選項的完整清單，請參閱 < [Mage.exe （資訊清單產生和編輯工具）](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)。
 
 ### <a name="publish-the-application"></a>發行應用程式
  一旦您簽署了 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 資訊清單，應用程式便已準備好要發行到您的安裝位置。 安裝位置可以是 Web 伺服器、檔案共用或本機磁碟。 當用戶端存取第一次部署資訊清單時，信任管理員必須選擇是否已授與 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式權限，以便以已安裝之信任發行者的較高信任層級執行。 信任管理員會藉由比較用來簽署部署的憑證與儲存在用戶端信任的發行者存放區的憑證，來進行這項選擇。 如果信任管理員找到相符項目，應用程式會以高信任執行。
@@ -103,4 +103,4 @@ ms.locfileid: "56604947"
 
 ## <a name="see-also"></a>另請參閱
 - [Mage.exe (資訊清單產生和編輯工具)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)
-- [Walkthrough: Manually deploy a ClickOnce application](../deployment/walkthrough-manually-deploying-a-clickonce-application.md) (逐步解說：手動部署 ClickOnce 應用程式)
+- [逐步解說：手動部署 ClickOnce 應用程式](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)

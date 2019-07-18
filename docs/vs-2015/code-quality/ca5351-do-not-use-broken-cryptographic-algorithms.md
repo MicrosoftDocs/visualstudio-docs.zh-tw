@@ -1,24 +1,19 @@
 ---
 title: CA5351 不要使用中斷的密碼編譯演算法 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 ms.assetid: 483f51b3-e186-4433-b48e-5ca24a9a9c94
 caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 7067d1d08be6de121986c60ead67086a11548ea8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 780745e2b4213d8fdd130fe03cac292b233c5b0c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49889811"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430668"
 ---
 # <a name="ca5351-do-not-use-broken-cryptographic-algorithms"></a>CA5351 不要使用中斷的密碼編譯演算法
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +26,7 @@ ms.locfileid: "49889811"
 |中斷變更|非中斷|  
   
 > [!NOTE]
->  上次於 2015 年 11 月更新此警告。  
+> 上次於 2015 年 11 月更新此警告。  
   
 ## <a name="cause"></a>原因  
  雜湊函式 (例如 <xref:System.Security.Cryptography.MD5> ) 和加密演算法 (例如 <xref:System.Security.Cryptography.DES> 和 <xref:System.Security.Cryptography.RC2> ) 可以公開重大風險，而且可能會透過一般攻擊技巧 (例如暴力攻擊和雜湊衝突) 而導致公開機密資訊。  
@@ -52,9 +47,9 @@ ms.locfileid: "49889811"
 ## <a name="how-to-fix-violations"></a>如何修正違規  
  使用密碼編譯較強的選項：  
   
--   針對 MD5，在 [SHA-2](https://msdn.microsoft.com/en-us/library/windows/desktop/aa382459.aspx) 系列 (例如 <xref:System.Security.Cryptography.SHA512>、 <xref:System.Security.Cryptography.SHA384>、 <xref:System.Security.Cryptography.SHA256>) 中使用雜湊。  
+- 針對 MD5，在 [SHA-2](https://msdn.microsoft.com/library/windows/desktop/aa382459.aspx) 系列 (例如 <xref:System.Security.Cryptography.SHA512>、 <xref:System.Security.Cryptography.SHA384>、 <xref:System.Security.Cryptography.SHA256>) 中使用雜湊。  
   
--   針對 DES 和 RC2，使用 <xref:System.Security.Cryptography.Aes> 加密。  
+- 針對 DES 和 RC2，使用 <xref:System.Security.Cryptography.Aes> 加密。  
   
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機  
  請不要隱藏這個規則的警告，除非密碼編譯專家已檢閱過它。  

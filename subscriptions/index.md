@@ -7,9 +7,13 @@ layout: LandingPage
 Ms.date: 06/25/2018
 Ms.topic: landing-page
 Description: 歡迎使用 Visual Studio 訂閱
-Searchscope: VS Subscription
+ms.openlocfilehash: d5083141fdaaf5eede2cc181c51cd0340575bbb9
+ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67784390"
 ---
-
 # <a name="visual-studio-subscriptions"></a>Visual Studio 訂閱
 
 Visual Studio 訂用帳戶是一組全方位資源，可供您在 Windows、iOS、Android 及 Linux 等慣用平台及裝置上，建立、部署與管理絕佳的應用程式。  訂閱即享有使用開發人員工具、雲端服務與軟體及訓練的權益，還可取得滿足您開發與測試需求的支援。
@@ -164,7 +168,7 @@ Visual Studio 訂用帳戶是一組全方位資源，可供您在 Windows、iOS�
                 <div class="card">
                     <div class="cardText">
                         <h3>雲端服務</h3>
-                        <p>透過 Visual Studio 訂用帳戶，您可以                         收到每月 Azure 點數和 Azure 服務的                         免費存取，加上優惠的開發與測試費率，                         以及訂閱者獨家享有的圖像藝廊與                         預先設定的虛擬機器。 取決於您的訂用帳戶，                               雲端服務可能包括：</p>
+                        <p>透過 Visual Studio 訂用帳戶，您可以                         收到每月 Azure 點數來                         存取 Azure 服務，加上優惠的開發與測試費率，                         以及訂閱者獨家享有的圖像藝廊與                         預先設定的虛擬機器。 取決於您的訂用帳戶，                               雲端服務可能包括：</p>
                         <ul>
                             <li><a href="/visualstudio/subscriptions/vs-azure">Azure</a></li>
                             <li><a href="/visualstudio/subscriptions/vs-visual-studio-app-center">Visual Studio App Center</a></li>
@@ -189,7 +193,6 @@ Visual Studio 訂用帳戶是一組全方位資源，可供您在 Windows、iOS�
                             <li><a href="/visualstudio/subscriptions/vs-linkedin-learning">LinkedIn Premium</a> (商務、技術與創意)</li>
                             <li><a href="/visualstudio/subscriptions/vs-pluralsight">Pluralsight</a> (雲端、設計、行動及資料)</li>
                             <li><a href="/visualstudio/subscriptions/vs-datacamp">Data Camp</a> (資料科學與 AI)</li>
-                            <li><a href="/visualstudio/subscriptions/vs-xamarin">Xamarin University</a> (行動開發)</li>
                             <li><a href="/visualstudio/subscriptions/vs-opsgility">Opsgility 訓練</a> (雲端導向)</li>
                             <li><a href="/visualstudio/subscriptions/vs-tech-support">Microsoft 專業技術援事件</a></li>
                             <li><a href="/visualstudio/subscriptions/vs-azure-advisory-chat">Azure 諮詢對談</a></li>

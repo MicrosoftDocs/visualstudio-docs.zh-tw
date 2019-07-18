@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: e2df347edfa2ea6672449dfbaa5f3740e94cd11c
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 932c8331b7b706b783868a52e47afc5ead25ef9c
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58153011"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65679250"
 ---
 # <a name="quickstart-debug-aspnet-with-the-visual-studio-debugger"></a>快速入門：使用 Visual Studio 偵錯工具對 ASP.NET 進行偵錯
 
@@ -25,13 +25,13 @@ Visual Studio 偵錯工具提供許多強大的功能，可協助您偵錯應用
 
 ## <a name="create-a-new-project"></a>建立新專案
 
-1. 在 Visual Studio 中，選擇 [檔案] > [新增] > [專案]。
+1. 開啟 Visual Studio。
 
     ::: moniker range=">=vs-2019"
-    [建立新專案] 對話方塊隨即開啟。 在搜尋方塊中輸入 **asp.net** 以篩選結果、選擇 [ASP.NET Core Web 應用程式]，然後按 [下一步]。 接著，輸入 **MyDbgApp** 之類的名稱，然後選擇 [建立]。
+    按 **Esc** 關閉開始視窗。 鍵入 **Ctrl + Q** 開啟 [搜尋] 方塊，鍵入 **asp.net**，選擇 [範本]，然後選擇 [建立新的 ASP.NET Core Web 應用程式]。 在出現的對話方塊中，選擇 [建立]。
     ::: moniker-end
     ::: moniker range="vs-2017"
-    [新增專案] 對話方塊隨即開啟。 在 [Visual C#] 下方，選擇 [Web]，然後在中間窗格中選擇 [ASP.NET Core Web 應用程式]。 鍵入 **MyDbgApp** 這類名稱，然後按一下 [確定]。
+    從頂端功能表列中，選擇 [檔案] > [新增] > [專案]。 在 [新增專案] 對話方塊左窗格的 [Visual C#] 下，選擇 [Web]，然後在中間窗格中選擇 [ASP.NET Core Web 應用程式]。 鍵入 **MyDbgApp** 這類名稱，然後按一下 [確定]。
 
     在出現的對話方塊中，選擇中間窗格中的 [Web 應用程式]，然後按一下 [確定]。
 
@@ -138,4 +138,4 @@ Visual Studio 偵錯工具提供許多強大的功能，可協助您偵錯應用
 在本教學課程中，您已了解如何啟動偵錯工具、逐步執行程式碼，以及檢查變數。 建議您進一步查看偵錯工具功能，以及詳細資訊的連結。
 
 > [!div class="nextstepaction"]
-> [偵錯工具功能導覽](../debugger/debugger-feature-tour.md)
+> [偵錯工具簡介](../debugger/debugger-feature-tour.md)

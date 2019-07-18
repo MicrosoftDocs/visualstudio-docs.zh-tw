@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b2a411a135330fbf36bde9b28f8015e96a4555c3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: d85b71c2ed54a8ab8bc85c93ce61e3ed274d86e0
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54759905"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65673813"
 ---
 # <a name="network-usage"></a>網路使用量
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ Visual Studio 的 [網路] 診斷工具會收集使用 [Windows.Web.Http 應用�
  網路工具僅支援 Windows 通用平台應用程式。 目前不支援其他平台。  
   
 > [!NOTE]
->  如需更多完整的網路工具描述，請參閱[介紹 Visual Studio 的網路工具](http://blogs.msdn.com/b/visualstudio/archive/2015/05/04/introducing-visual-studio-s-network-tool.aspx)。  
+> 如需更多完整的網路工具描述，請參閱[介紹 Visual Studio 的網路工具](http://blogs.msdn.com/b/visualstudio/archive/2015/05/04/introducing-visual-studio-s-network-tool.aspx)。  
   
 ## <a name="collecting-network-tool-data"></a>收集網路工具資料  
  您應該針對 Visual Studio 電腦上開啟的 Visual Studio 專案執行 [網路] 工具。  
@@ -67,13 +67,13 @@ Visual Studio 的 [網路] 診斷工具會收集使用 [Windows.Web.Http 應用�
 ### <a name="analysis-tips"></a>分析秘訣  
  此工具會反白顯示特定區域，有助您執行網路相關的分析：  
   
-1.  完全來自快取的要求會在 [已接收] 資料行中顯示為 [(從快取)]。 這可協助判斷您是否有效率地使用快取來節省使用者頻寬，或您是否意外地快取回應且提供具過時資料的應用程式給使用者。  
+1. 完全來自快取的要求會在 [已接收] 資料行中顯示為 [(從快取)]。 這可協助判斷您是否有效率地使用快取來節省使用者頻寬，或您是否意外地快取回應且提供具過時資料的應用程式給使用者。  
   
-2.  錯誤回應 (4xx 或 5xx) 會顯示在 [結果] 資料行中，並具有紅色狀態程式碼，同時也會在摘要列中反白顯示。 這樣可以在應用程式上許多潛在的要求之間輕易發現錯誤。  
+2. 錯誤回應 (4xx 或 5xx) 會顯示在 [結果] 資料行中，並具有紅色狀態程式碼，同時也會在摘要列中反白顯示。 這樣可以在應用程式上許多潛在的要求之間輕易發現錯誤。  
   
-3.  回應美化顯示按鈕 (在主體索引標籤內) 可協助您藉由增加內容可讀性來剖析 JSON、XML、HTML、CSS、JavaScript 和 TypeScript 的回應裝載。  
+3. 回應美化顯示按鈕 (在主體索引標籤內) 可協助您藉由增加內容可讀性來剖析 JSON、XML、HTML、CSS、JavaScript 和 TypeScript 的回應裝載。  
   
-## <a name="see-also"></a>請參閱  
- [執行但不偵錯程式碼剖析工具](http://msdn.microsoft.com/library/e97ce1a4-62d6-4b8e-a2f7-61576437ff01)   
- [Visual Studio blog: Introducing Visual Studio’s network inspector](http://go.microsoft.com/fwlink/?LinkId=535022)  (Visual Studio 部落格：Visual Studio 網路檢查簡介)  
- [Channel 9 影片︰ VS 診斷工具 - 新的網路分析工具 (英文)](http://channel9.msdn.com/Series/ConnectOn-Demand/206)
+## <a name="see-also"></a>另請參閱  
+ [執行但不偵錯程式碼剖析工具](https://msdn.microsoft.com/library/e97ce1a4-62d6-4b8e-a2f7-61576437ff01)   
+ [Visual Studio 部落格：簡介 Visual Studio 的網路偵測器](http://go.microsoft.com/fwlink/?LinkId=535022)   
+ [Channel 9 影片：VS 診斷工具-新的網路 Profiler](http://channel9.msdn.com/Series/ConnectOn-Demand/206)

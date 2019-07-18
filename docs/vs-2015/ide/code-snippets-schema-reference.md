@@ -14,12 +14,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5c62d8a65b1015029f183ea2b617dfe77f9b4f05
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: b49b1aa1022b12dc2d409037a1241f51b469a14c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54753559"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436234"
 ---
 # <a name="code-snippets-schema-reference"></a>程式碼片段結構描述參考
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,11 +41,11 @@ IntelliSense 程式碼片段是預先設計的程式碼片段，可用以插入�
 |[Function 項目](../ide/code-snippets-schema-reference.md#function)|[Object 項目](../ide/code-snippets-schema-reference.md#object)|[Url 項目](../ide/code-snippets-schema-reference.md#url)|  
 |[Header 項目](../ide/code-snippets-schema-reference.md#header)|[Reference 項目](../ide/code-snippets-schema-reference.md#reference)||  
   
-##  <a name="assembly"></a> Assembly 項目  
+## <a name="assembly"></a> Assembly 項目  
  指定程式碼片段所參考的組件名稱。  
   
 > [!NOTE]
->  只有 Visual Basic 程式碼片段支援 `Assembly` 項目。  
+> 只有 Visual Basic 程式碼片段支援 `Assembly` 項目。  
   
  **Assembly** 項目的文字值有兩種，即組件的易記文字名稱，例如 `System.dll`，或是組件的強式名稱，例如 `System,Version=1.0.0.1,Culture=neutral,PublicKeyToken=9b35aa323c18d4fb1`。  
   
@@ -61,7 +61,7 @@ IntelliSense 程式碼片段是預先設計的程式碼片段，可用以插入�
   
  需要文字值。 此文字會指定程式碼片段參考的組件。  
   
-##  <a name="author"></a> Author 項目  
+## <a name="author"></a> Author 項目  
  指定程式碼片段作者名稱。 [程式碼片段管理員] 會顯示儲存在程式碼片段 `Author` 項目中的名稱。  
   
 ```xml  
@@ -77,7 +77,7 @@ IntelliSense 程式碼片段是預先設計的程式碼片段，可用以插入�
   
  需要文字值。 此文字會指定程式碼片段的作者。  
   
-##  <a name="code"></a> Code 項目  
+## <a name="code"></a> Code 項目  
  提供簡短程式碼區塊的容器。  
   
  `Code` 項目的文字可以使用兩個保留字：`$end$` 和 `$selected$`。 `$end$` 會標記程式碼片段插入後，放置游標的位置。 `$selected$` 表示在文件中選取的文字，該文字會在叫用時插入程式碼片段中。 例如，假設程式碼片段包含：  
@@ -146,7 +146,7 @@ is a great color. I love Blue.
   
  需要文字值。 此文字會指定程式碼以及常值和物件，讓您可以在將此程式碼片段插入專案時使用。  
   
-##  <a name="codesnippet"></a> CodeSnippet 項目  
+## <a name="codesnippet"></a> CodeSnippet 項目  
  讓您指定可插入 Visual Studio 程式碼檔中的標題和多個 IntelliSense 程式碼片段。  
   
 ```xml  
@@ -170,7 +170,7 @@ is a great color. I love Blue.
 |--------------------|-----------------|  
 |[CodeSnippets 項目](../ide/code-snippets-schema-reference.md#codesnippets)|程式碼片段 XML 結構描述的根項目。|  
   
-##  <a name="codesnippets"></a> CodeSnippets 項目  
+## <a name="codesnippets"></a> CodeSnippets 項目  
  將 [CodeSnippet 項目](../ide/code-snippets-schema-reference.md#codesnippet)的項目設為群組。 `CodeSnippets` 項目是程式碼片段 XML 結構描述的根項目。  
   
 ```xml  
@@ -184,7 +184,7 @@ is a great color. I love Blue.
 |-------------------|-----------------|  
 |[CodeSnippet 項目](../ide/code-snippets-schema-reference.md#codesnippet)|選擇性項目。 所有程式碼片段資料的父項目。 `CodeSnippet` 項目中可能有零個或多個 `CodeSnippets` 項目。|  
   
-##  <a name="declarations"></a> Declarations 項目  
+## <a name="declarations"></a> Declarations 項目  
  指定構成您可以編輯的程式碼片段部分的常值和物件。  
   
 ```xml  
@@ -204,7 +204,7 @@ is a great color. I love Blue.
 |--------------------|-----------------|  
 |[Snippet 項目](../ide/code-snippets-schema-reference.md#snippet)|包含程式碼片段的參考、匯入、宣告和程式碼。|  
   
-##  <a name="default"></a> Default 項目  
+## <a name="default"></a> Default 項目  
  指定 IntelliSense 程式碼片段中常值或物件的預設值。  
   
 ```xml  
@@ -221,7 +221,7 @@ is a great color. I love Blue.
   
  需要文字值。 這項文字是指定填入您可以編輯的程式碼片段中，各欄位的常值或物件的預設值。  
   
-##  <a name="description"></a> Description 項目  
+## <a name="description"></a> Description 項目  
  指定有關 IntelliSense 程式碼片段內容的描述性資訊。  
   
 ```xml  
@@ -236,11 +236,11 @@ is a great color. I love Blue.
   
  需要文字值。 此文字描述程式碼片段。  
   
-##  <a name="function"></a> Function 項目  
+## <a name="function"></a> Function 項目  
  指定常值或物件在 Visual Studio 中得到焦點時要執行的函式。  
   
 > [!NOTE]
->  只有 Visual C# 程式碼片段支援 `Function` 項目。  
+> 只有 Visual C# 程式碼片段支援 `Function` 項目。  
   
 ```xml  
 <Function>  
@@ -255,7 +255,7 @@ is a great color. I love Blue.
   
  需要文字值。 此文字指定常值或物件欄位在 Visual Studio 中得到焦點時要執行的函式。  
   
-##  <a name="header"></a> Header 項目  
+## <a name="header"></a> Header 項目  
  指定有關 IntelliSense 程式碼片段的一般資訊。  
   
 ```xml  
@@ -275,7 +275,7 @@ is a great color. I love Blue.
 |-------------------|-----------------|  
 |[Author 項目](../ide/code-snippets-schema-reference.md#author)|選擇性項目。 程式碼片段作者的人員或公司名稱。 `Author` 項目中可能有零個或一個 `Header` 項目。|  
 |[Description 項目](../ide/code-snippets-schema-reference.md#description)|選擇性項目。 程式碼片段的描述。 `Description` 項目中可能有零個或一個 `Header` 項目。|  
-|[HelpUrl 項目](../ide/code-snippets-schema-reference.md#helpurl)|選擇性項目。 包含程式碼片段詳細資訊的 URL。 Header 項目中可能有零個或一個 `HelpURL` 項目。 **注意：** Visual Studio 不會使用 `HelpUrl` 項目。 此項目是 IntelliSense 程式碼片段 XML 結構描述的一部分，任何包含此項目的程式碼片段都會生效，但是不會使用此項目的值。|  
+|[HelpUrl 項目](../ide/code-snippets-schema-reference.md#helpurl)|選擇性項目。 包含程式碼片段詳細資訊的 URL。 Header 項目中可能有零個或一個 `HelpURL` 項目。 **注意：** Visual Studio 不會使用 `HelpUrl` 元素。 此項目是 IntelliSense 程式碼片段 XML 結構描述的一部分，任何包含此項目的程式碼片段都會生效，但是不會使用此項目的值。|  
 |[Keywords 項目](../ide/code-snippets-schema-reference.md#keywords)|選擇性項目。 將 `Keyword` 項目設為群組。 `Keywords` 項目中可能有零個或一個 `Header` 項目。|  
 |[Shortcut 項目](../ide/code-snippets-schema-reference.md#shortcut)|選擇性項目。 指定可用來插入程式碼片段的捷徑文字。 `Shortcut` 項目中可能有零個或一個 `Header` 項目。|  
 |[SnippetTypes 項目](../ide/code-snippets-schema-reference.md#snippettypes)|選擇性項目。 將 `SnippetType` 項目設為群組。 `SnippetTypes` 項目中可能有零個或一個 `Header` 項目。 如果沒有 `SnippetTypes` 項目，程式碼片段永遠有效。|  
@@ -285,11 +285,11 @@ is a great color. I love Blue.
 |--------------------|-----------------|  
 |[CodeSnippet 項目](../ide/code-snippets-schema-reference.md#codesnippet)|所有程式碼片段資料的父項目。|  
   
-##  <a name="helpurl"></a> HelpUrl 項目  
+## <a name="helpurl"></a> HelpUrl 項目  
  指定提供程式碼片段詳細資訊的 URL。  
   
 > [!NOTE]
->  Visual Studio 不會使用 `HelpUrl` 元素。 此項目是 IntelliSense 程式碼片段 XML 結構描述的一部分，任何包含此項目的程式碼片段都會生效，但是不會使用此項目的值。  
+> Visual Studio 不會使用 `HelpUrl` 元素。 此項目是 IntelliSense 程式碼片段 XML 結構描述的一部分，任何包含此項目的程式碼片段都會生效，但是不會使用此項目的值。  
   
 ```xml  
 <HelpUrl>  
@@ -304,7 +304,7 @@ is a great color. I love Blue.
   
  可選擇使用文字值。 此文字指定可瀏覽程式碼片段詳細資訊的 URL。  
   
-##  <a name="id"></a> ID 項目  
+## <a name="id"></a> ID 項目  
  指定 `Literal` 或 `Object` 項目的唯一識別項。 相同程式碼片段中不會有兩個常值或物件的 `ID` 項目有相同的文字值。常值和物件不能包含具有 end 值的 `ID` 項目。 已保留 `$end$` 值，並且在插入程式碼片段以後，用來標示放置游標的位置。  
   
 ```xml  
@@ -321,11 +321,11 @@ is a great color. I love Blue.
   
  需要文字值。 此文字會指定物件或常值的唯一識別項。  
   
-##  <a name="import"></a> Import 項目  
+## <a name="import"></a> Import 項目  
  指定 IntelliSense 程式碼片段使用的匯入命名空間。  
   
 > [!NOTE]
->  只有 Visual Basic 專案支援 `Import` 項目。  
+> 只有 Visual Basic 專案支援 `Import` 項目。  
   
 ```xml  
 <Import>  
@@ -342,11 +342,11 @@ is a great color. I love Blue.
 |--------------------|-----------------|  
 |[Imports 項目](../ide/code-snippets-schema-reference.md#imports)|將 **Import** 項目的項目設為群組。|  
   
-##  <a name="imports"></a> Imports 項目  
+## <a name="imports"></a> Imports 項目  
  將個別 `Import` 項目設為群組。  
   
 > [!NOTE]
->  只有 Visual Basic 專案支援 `Imports` 項目。  
+> 只有 Visual Basic 專案支援 `Imports` 項目。  
   
 ```xml  
 <Imports>  
@@ -362,7 +362,7 @@ is a great color. I love Blue.
 |--------------------|-----------------|  
 |[Snippet 項目](../ide/code-snippets-schema-reference.md#snippet)|包含程式碼片段的參考、匯入、宣告和程式碼。|  
   
-##  <a name="keyword"></a> Keyword 項目  
+## <a name="keyword"></a> Keyword 項目  
  指定程式碼片段的自訂關鍵字。 這些程式碼片段關鍵字是由 Visual Studio 使用，而且代表線上內容提供者加入自訂關鍵字進行搜尋或分類的標準方式。  
   
 ```xml  
@@ -377,7 +377,7 @@ is a great color. I love Blue.
   
  需要文字值。 程式碼片段的關鍵字。  
   
-##  <a name="keywords"></a> Keywords 項目  
+## <a name="keywords"></a> Keywords 項目  
  將個別 `Keyword` 項目設為群組。 這些程式碼片段關鍵字是由 Visual Studio 使用，而且代表線上內容提供者加入自訂關鍵字進行搜尋或分類的標準方式  
   
 ```xml  
@@ -395,7 +395,7 @@ is a great color. I love Blue.
 |--------------------|-----------------|  
 |[Header 項目](../ide/code-snippets-schema-reference.md#header)|包含有關該程式碼片段的一般資訊。|  
   
-##  <a name="literal"></a> Literal 項目  
+## <a name="literal"></a> Literal 項目  
  定義您可以編輯的程式碼片段常值。 `Literal` 項目是用以辨認整個包含在程式碼片段中一小段程式碼的取代，但有可能會在插入程式碼後加以自訂。 例如常值字串、數值以及一些應宣告為常值的變數名稱。  
   
  常值和物件不能包含值為 selected 或 end 的 **ID** 項目。 `$selected$` 值代表在文件中選取的文字，這些文字會在叫用時插入程式碼片段中。 `$end$` 會標記程式碼片段插入後，放置游標的位置。  
@@ -424,11 +424,11 @@ is a great color. I love Blue.
 |--------------------|-----------------|  
 |[Declarations 項目](../ide/code-snippets-schema-reference.md#declarations)|包含您可以編輯之程式碼片段的常值和物件。|  
   
-##  <a name="namespace"></a> Namespace 項目  
+## <a name="namespace"></a> Namespace 項目  
  指定必須匯入的命名空間，匯入後程式碼片段才能進行編譯和執行。 在 `Namespace` 項目中指定的命名空間會自動加入至程式碼開頭的 `Imports` 陳述式中 (如果不存在的話)。  
   
 > [!NOTE]
->  只有 Visual Basic 專案支援 `Namespace` 項目。  
+> 只有 Visual Basic 專案支援 `Namespace` 項目。  
   
 ```xml  
 <Namespace>  
@@ -442,7 +442,7 @@ is a great color. I love Blue.
   
  需要文字值。 此文字會指定程式碼片段假設已匯入的命名空間。  
   
-##  <a name="object"></a> Object 項目  
+## <a name="object"></a> Object 項目  
  定義您可以編輯的程式碼片段物件。 `Object` 項目是用以識別程式碼片段所需的項目，但有可能定義在程式碼片段本身的外面。 例如，Windows Form 控制項、ASP.NET 控制項、物件執行個體以及類型執行個體應該宣告為物件。 物件宣告需要指定類型，可透過 `Type` 項目指定。  
   
 ```xml  
@@ -471,11 +471,11 @@ is a great color. I love Blue.
 |--------------------|-----------------|  
 |[Declarations 項目](../ide/code-snippets-schema-reference.md#declarations)|包含您可以編輯之程式碼片段的常值和物件。|  
   
-##  <a name="reference"></a> Reference 項目  
+## <a name="reference"></a> Reference 項目  
  指定程式碼片段所需之組件參考的相關資訊。  
   
 > [!NOTE]
->  只有 Visual Basic 專案支援 `Reference` 項目。  
+> 只有 Visual Basic 專案支援 `Reference` 項目。  
   
 ```xml  
 <Reference>  
@@ -493,11 +493,11 @@ is a great color. I love Blue.
 |--------------------|-----------------|  
 |[References 項目](../ide/code-snippets-schema-reference.md#references)|`Reference` 項目的群組項目。|  
   
-##  <a name="references"></a> References 項目  
+## <a name="references"></a> References 項目  
  將個別 `Reference` 項目設為群組。  
   
 > [!NOTE]
->  只有 Visual Basic 專案支援 `References` 項目。  
+> 只有 Visual Basic 專案支援 `References` 項目。  
   
 ```xml  
 <References>  
@@ -513,11 +513,11 @@ is a great color. I love Blue.
 |--------------------|-----------------|  
 |[Snippet 項目](../ide/code-snippets-schema-reference.md#snippet)|包含程式碼片段的參考、匯入、宣告和程式碼。|  
   
-##  <a name="shortcut"></a> Shortcut 項目  
+## <a name="shortcut"></a> Shortcut 項目  
  指定用來插入程式碼片段的捷徑文字。 `Shortcut` 項目的文字值只能包含英數字元、短破折號 ( - ) 及底線 ( _ )。  
   
 > [!CAUTION]
->  C++ 程式碼片段捷徑不支援 _ 和 – 字元。  
+> C++ 程式碼片段捷徑不支援 _ 和 – 字元。  
   
 ```xml  
 <Shortcut>  
@@ -531,7 +531,7 @@ is a great color. I love Blue.
   
  可選擇使用文字值。 此文字是做為插入程式碼片段的捷徑。  
   
-##  <a name="snippet"></a> Snippet 項目  
+## <a name="snippet"></a> Snippet 項目  
  指定程式碼片段的參考、匯入、宣告及程式碼。  
   
 ```xml  
@@ -555,7 +555,7 @@ is a great color. I love Blue.
 |--------------------|-----------------|  
 |[CodeSnippet 項目](../ide/code-snippets-schema-reference.md#codesnippet)|讓您指定可插入 Visual Studio 程式碼檔中的標題和多個 IntelliSense 程式碼片段。|  
   
-##  <a name="snippettype"></a> SnippetType 項目  
+## <a name="snippettype"></a> SnippetType 項目  
  指定 Visual Studio 如何插入程式碼片段。  
   
 ```xml  
@@ -570,13 +570,13 @@ is a great color. I love Blue.
   
  文字值必須是下列其中一個值：  
   
--   `SurroundsWith`：允許將程式碼片段放置在所選取程式碼的前後。  
+- `SurroundsWith`：允許將程式碼片段放置在所選取程式碼的前後。  
   
--   `Expansion`：允許在游標所在位置插入程式碼片段。  
+- `Expansion`：允許在游標所在位置插入程式碼片段。  
   
--   `Refactoring`：指定在 Visual C# 重構期間使用程式碼片段。 `Refactoring` 無法在自訂程式碼片段中使用。  
+- `Refactoring`：指定在 Visual C# 重構期間使用程式碼片段。 `Refactoring` 無法在自訂程式碼片段中使用。  
   
-##  <a name="snippettypes"></a> SnippetTypes 項目  
+## <a name="snippettypes"></a> SnippetTypes 項目  
  將個別 `SnippetType` 項目設為群組。 如果沒有 `SnippetTypes` 項目，程式碼片段就可以插入程式碼中的任何位置。  
   
 ```xml  
@@ -594,7 +594,7 @@ is a great color. I love Blue.
 |--------------------|-----------------|  
 |[Header 項目](../ide/code-snippets-schema-reference.md#header)|指定有關程式碼片段的一般資訊。|  
   
-##  <a name="title"></a> Title 項目  
+## <a name="title"></a> Title 項目  
  指定程式碼片段的標題。 儲存在程式碼片段之 `Title` 項目中的標題會出現在 [程式碼片段選擇器] 中，以及出現在 [程式碼片段管理員] 的程式碼片段描述中。  
   
 ```xml  
@@ -609,7 +609,7 @@ is a great color. I love Blue.
   
  需要文字值。 此文字會指定程式碼片段的標題。  
   
-##  <a name="tooltip"></a> ToolTip 項目  
+## <a name="tooltip"></a> ToolTip 項目  
  描述程式碼片段中常值或物件的預期值和使用方式，這會在 Visual Studio 將程式碼片段插入專案時，顯示在工具提示中。 在插入程式碼片段後，當滑鼠停留在常值或物件上時，就會顯示工具提示文字。  
   
 ```xml  
@@ -625,7 +625,7 @@ is a great color. I love Blue.
   
  需要文字值。 此文字會指定要與程式碼片段中的物件或常值相關聯的工具提示描述。  
   
-##  <a name="type"></a> Type 項目  
+## <a name="type"></a> Type 項目  
  指定物件類型。 `Object` 項目是用以識別程式碼片段所需的項目，但有可能定義在程式碼片段本身的外面。 例如，Windows Form 控制項、ASP.NET 控制項、物件執行個體以及類型執行個體應該宣告為物件。 物件宣告需要指定類型，可透過 `Type` 項目指定。  
   
 ```xml  
@@ -640,11 +640,11 @@ is a great color. I love Blue.
   
  需要文字值。 此文字會指定物件的類型。  
   
-##  <a name="url"></a> Url 項目  
+## <a name="url"></a> Url 項目  
  指定提供所參考組件相關詳細資訊的 URL。  
   
 > [!NOTE]
->  只有 Visual Basic 專案支援 `Url` 項目。  
+> 只有 Visual Basic 專案支援 `Url` 項目。  
   
 ```xml  
 <Url>  
@@ -658,6 +658,6 @@ is a great color. I love Blue.
   
  需要文字值。 此文字會指定參考組件詳細資訊的 URL。 當參考無法加入至專案時，就會顯示此 URL。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [程式碼片段](../ide/code-snippets.md)   
  [逐步解說：建立程式碼片段](../ide/walkthrough-creating-a-code-snippet.md)

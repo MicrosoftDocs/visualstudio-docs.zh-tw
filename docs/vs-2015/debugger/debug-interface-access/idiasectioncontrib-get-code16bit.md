@@ -1,14 +1,9 @@
 ---
-title: IDiaSectionContrib::get_code16bit |Microsoft Docs
-ms.custom: ''
+title: IDiaSectionContrib::get_code16bit | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 8cde8fc5-9546-4f82-b4a8-afd0d835039e
 caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 4a7b05974e5a93f3fda2ddef3bdcee6158a6303f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 1aceb4956b7ce2517087511676ebeff2b061b673
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51733957"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62576984"
 ---
 # <a name="idiasectioncontribgetcode16bit"></a>IDiaSectionContrib::get_code16bit
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -50,6 +45,3 @@ HRESULT get_code16bit(
   
 ## <a name="see-also"></a>另請參閱  
  [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)
-
-
-

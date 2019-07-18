@@ -1,14 +1,9 @@
 ---
 title: 偵錯工具專案設定 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -24,13 +19,13 @@ ms.assetid: 5e1b2a30-d2db-49e8-aba3-2d3a190eea80
 caps.latest.revision: 20
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: ed31c4490738d007375d1a73728a00ac17c20897
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 0953b68989b36dbe85466c71760f75e71498a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51755045"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68189573"
 ---
 # <a name="debugger-project-settings"></a>偵錯工具專案設定
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -70,6 +65,3 @@ ms.locfileid: "51755045"
   
 ## <a name="see-also"></a>另請參閱  
  [偵錯工具安全性](../debugger/debugger-security.md)
-
-
-

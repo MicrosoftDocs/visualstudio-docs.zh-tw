@@ -1,27 +1,22 @@
 ---
-title: IDiaSession::findAcceleratorInlineesByName |Microsoft Docs
-ms.custom: ''
+title: IDiaSession::findAcceleratorInlineesByName | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 ms.assetid: e203e5c2-6563-43fa-be56-3063955043ab
 caps.latest.revision: 6
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: b547d38779578ca4fc2fba44effc9b5a6037f4fe
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 47883395ec12cac60d3a21651432f5ac21cc64a4
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51761837"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68151758"
 ---
 # <a name="idiasessionfindacceleratorinlineesbyname"></a>IDiaSession::findAcceleratorInlineesByName
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -52,12 +47,9 @@ HRESULT findAcceleratorInlineeLinesByName ( 
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
   
 ## <a name="remarks"></a>備註  
- 此函式會搜尋只在加速器 stub 函式內的內嵌項屬性。 它會忽略原生 c + + 程序記錄。  
+ 此函式會搜尋只在加速器 stub 函式內的內嵌項屬性。 它會忽略原生C++程序的記錄。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
  [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)   
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
-
-
-

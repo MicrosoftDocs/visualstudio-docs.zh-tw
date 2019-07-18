@@ -1,27 +1,22 @@
 ---
-title: IDiaSymbol::get_numberOfRows |Microsoft Docs
-ms.custom: ''
+title: IDiaSymbol::get_numberOfRows | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 ms.assetid: cf3eb110-d07f-4995-b68b-08290aa67d6f
 caps.latest.revision: 6
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 3be01be73d45eaabeae2557a9513e089af176c33
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: e2654747ab074a4157e2334e35d0fa7fe6ae748f
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51724549"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "68183114"
 ---
 # <a name="idiasymbolgetnumberofrows"></a>IDiaSymbol::get_numberOfRows
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -44,6 +39,3 @@ HRESULT get_numberOfRows(
   
 ## <a name="see-also"></a>另請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
-
-
-

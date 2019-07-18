@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: c639175e74d13a35724a4388505a177c8b60db0b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: f7d1fe7213bff39f83f315b472f29cb06eda06ae
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55912452"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62939065"
 ---
 # <a name="static-helper-classes"></a>靜態協助程式類別
 
@@ -123,7 +123,6 @@ PexObserve.Value<string>("result", result);
 public static class MathEx {
      public static int Square(int value) { return value * value; }
 }
-
 
 // fixture
 [TestClass]

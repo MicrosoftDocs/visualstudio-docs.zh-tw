@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
 ms.assetid: 3a6b1f45-b5d6-418e-add1-87ee8f15033d
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b6b657defd229d191fcb4dcd6343f3c8c64505cc
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: c307a52b8f252f5059f2d4009e98fc4d497f616e
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56683307"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66316701"
 ---
 # <a name="targetplatformname-element-visual-studio-templates"></a>TargetPlatformName 項目 (Visual Studio 樣板)
 指定專案範本的目標平台。 這個項目用來指定用於建立 [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] 應用程式的專案範本。

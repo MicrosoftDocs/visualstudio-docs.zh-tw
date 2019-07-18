@@ -12,17 +12,16 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a42cee0574d5cf5f0de50fb1e9923c9e54504a91
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 3f9a6f7985e3ebb3e77dcc605157f75e00a0842b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54773081"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63426029"
 ---
 # <a name="msbuild-transforms"></a>MSBuild 轉換
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 轉換是指某個項目清單和另一個項目清單的一對一轉換作業。 轉換作業除了可讓專案轉換項目清單，還能讓目標識別其輸入和輸出之間的直接對應。 本主題說明轉換作業，以及 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 如何使用轉換作業以更有效建置專案。  
   
 ## <a name="transform-modifiers"></a>轉換修飾詞  
@@ -35,7 +34,7 @@ ms.locfileid: "54773081"
 ```  
   
 > [!NOTE]
->  您可以為已轉換的項目清單指定自訂分隔符號 (方法與您為標準項目清單指定分隔符號的方式相同)。 例如，若要使用逗號 (,) 而不是預設的分號 (;) 來分隔已轉換的項目清單，請使用下列 XML。  
+> 您可以為已轉換的項目清單指定自訂分隔符號 (方法與您為標準項目清單指定分隔符號的方式相同)。 例如，若要使用逗號 (,) 而不是預設的分號 (;) 來分隔已轉換的項目清單，請使用下列 XML。  
   
 ```  
 @(RESXFile->'Toolset\%(filename)%(extension)', ',')  
@@ -55,7 +54,7 @@ ms.locfileid: "54773081"
 ## <a name="dependency-analysis"></a>相依性分析  
  轉換作業可保證轉換後的項目清單與原始項目清單之間的一對一對應。 因此，如果目標所建立的輸出是輸入的轉換項目，[!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 即會分析輸入和輸出的時間戳記，並決定是否略過、建置或部分重建目標。  
   
- 在下列範例的 [Copy 工作](../msbuild/copy-task.md)中，`BuiltAssemblies` 項目清單中的每個檔案會對應至工作目的地資料夾中的檔案 (藉由在 `Outputs` 屬性中使用轉換來指定)。 如果 `BuiltAssemblies` 項目清單中的檔案有所變更，系統就只會針對已變更的檔案執行 `Copy` 工作，並會略過所有其他檔案。 如需相依性分析以及如何使用轉換的詳細資訊，請參閱[如何：累加建置](../msbuild/how-to-build-incrementally.md)。  
+ 在下列範例的 [Copy 工作](../msbuild/copy-task.md)中，`BuiltAssemblies` 項目清單中的每個檔案會對應至工作目的地資料夾中的檔案 (藉由在 `Outputs` 屬性中使用轉換來指定)。 如果 `BuiltAssemblies` 項目清單中的檔案有所變更，系統就只會針對已變更的檔案執行 `Copy` 工作，並會略過所有其他檔案。 如需相依性分析及如何使用轉換的詳細資訊，請參閱[如何：以累加方式建置](../msbuild/how-to-build-incrementally.md)。  
   
 ```  
 <Target Name="CopyOutputs"  
@@ -109,7 +108,7 @@ relativedir: sub1\sub2\sub3\
 extension: .xsd  
 ```  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [MSBuild 概念](../msbuild/msbuild-concepts.md)   
  [MSBuild 參考](../msbuild/msbuild-reference.md)   
- [如何：累加建置](../msbuild/how-to-build-incrementally.md)
+ [如何：以累加方式建置](../msbuild/how-to-build-incrementally.md)

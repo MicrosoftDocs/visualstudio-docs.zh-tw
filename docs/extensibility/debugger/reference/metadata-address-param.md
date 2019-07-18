@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - METADATA_ADDRESS_PARAM structure
 ms.assetid: 90904f19-0e71-4cb3-a56e-6a2e92f66dfc
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ec1012ef689750dcd16679763baa942be55f1805
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 066b6da356a3f9a2047d010f1308ab1f90be65a2
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56700285"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66347263"
 ---
 # <a name="metadataaddressparam"></a>METADATA_ADDRESS_PARAM
 此結構表示的方法或函式的參數。
@@ -40,12 +43,15 @@ public struct METADATA_ADDRESS_PARAM {
 }
 ```
 
-## <a name="terms"></a>詞彙
- tokMethod 方法參數的識別碼是的一部分。
+## <a name="members"></a>成員
+ `tokMethod`\
+ 方法的 ID 參數是的一部分。
 
- tokParam 參數的識別碼。
+ `tokParam`\
+ 參數的識別碼。
 
- dwIndex 參數在參數清單中的索引。
+ `dwIndex`\
+ 在參數清單中參數的索引。
 
 ## <a name="remarks"></a>備註
  此結構是中的等位的一部分[DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)結構的時機`dwKind`欄位`DEBUG_ADDRESS_UNION`結構設定為`ADDRESS_KIND_PARAM`(中的值[ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)列舉型別）。

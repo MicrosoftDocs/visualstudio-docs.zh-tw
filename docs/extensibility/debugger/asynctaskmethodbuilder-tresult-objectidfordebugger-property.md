@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - ObjectForDebugger property, AsyncTaskMethodBuilder<TResult> structure [.NET Framework debug engines]
 ms.assetid: 060b857f-daf5-43ea-bb51-abf9368e1e91
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 98e01b663b7a4dd9ee14ec4a65119f504a749ad0
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 66c75f50f6857628bca79f2cfce83f2b37906ab0
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56716853"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66315524"
 ---
 # <a name="asynctaskmethodbuilderlttresultgtobjectidfordebugger-property"></a>AsyncTaskMethodBuilder&lt;TResult&gt;。ObjectIdForDebugger 屬性
 取得物件，可用來唯一識別這個產生器偵錯工具。

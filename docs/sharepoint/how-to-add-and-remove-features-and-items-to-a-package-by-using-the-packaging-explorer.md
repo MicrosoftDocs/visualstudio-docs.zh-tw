@@ -1,5 +1,5 @@
 ---
-title: HOW TO：新增和移除功能和項目加入封裝時，使用 [封裝總管] |Microsoft Docs
+title: 封裝總管：新增 / 移除功能和封裝的項目
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2dda4193a0ea30ac08f8a63a39ce00fb634832d7
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 0f01ecb67cb82ffe325ea471ad5fb5913c8e4d28
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56596421"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401566"
 ---
 # <a name="how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer"></a>HOW TO：新增和移除功能和項目加入封裝時，使用 [封裝總管]
   若要設定要部署的 SharePoint 項目和功能的套件，您可以使用 [封裝總管] 中。 您的.wsp 檔內，您可以調整的 SharePoint 專案項目和功能。
@@ -31,7 +31,7 @@ ms.locfileid: "56596421"
 
 #### <a name="to-open-the-packaging-explorer"></a>若要開啟 封裝總管
 
-1.  在功能表列上選擇 **檢視** > **其他 Windows** > **封裝總管**。
+1. 在功能表列上選擇 **檢視** > **其他 Windows** > **封裝總管**。
 
      **封裝總管**會出現在**工具箱**。
 
@@ -40,27 +40,27 @@ ms.locfileid: "56596421"
 
 #### <a name="to-add-a-sharepoint-feature"></a>若要新增的 SharePoint 功能
 
-1.  開啟**封裝總管**，開啟專案的捷徑功能表，然後選擇**加入功能**。
+1. 開啟**封裝總管**，開啟專案的捷徑功能表，然後選擇**加入功能**。
 
 #### <a name="to-move-an-existing-sharepoint-feature"></a>若要移動現有的 SharePoint 功能
 
-1.  開啟**封裝總管**，然後執行下列步驟的其中一個：
+1. 開啟**封裝總管**，然後執行下列步驟的其中一個：
 
-    -   拖曳**功能**從另一個專案的一個專案。
+    - 拖曳**功能**從另一個專案的一個專案。
 
-    -   開啟功能的捷徑功能表，選擇 **剪下**，開啟您想要移動功能，再選擇的專案的捷徑功能表**貼上**。
+    - 開啟功能的捷徑功能表，選擇 **剪下**，開啟您想要移動功能，再選擇的專案的捷徑功能表**貼上**。
 
     > [!NOTE]
-    >  如果您的方案中有一個以上的 SharePoint 專案，請使用此程序。
+    > 如果您的方案中有一個以上的 SharePoint 專案，請使用此程序。
 
 ## <a name="validate-a-feature-or-package"></a>驗證功能或封裝
  您可以識別潛在的問題中的 SharePoint 功能和封裝驗證的檔案。 警告和錯誤會顯示在輸出視窗 和 錯誤清單 視窗中。
 
 #### <a name="to-validate-a-sharepoint-feature-or-package"></a>若要驗證的 SharePoint 功能或封裝
 
-1.  開啟**封裝總管**。
+1. 開啟**封裝總管**。
 
-2.  對某個功能或封裝中，開啟捷徑功能表，然後選擇**驗證**。
+2. 對某個功能或封裝中，開啟捷徑功能表，然後選擇**驗證**。
 
 ## <a name="see-also"></a>另請參閱
 - [封裝和部署 SharePoint 方案](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)

@@ -9,12 +9,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 22db62a186c1f1c668a0304a9b586aca85e713c3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: f4d300651731b38b9b86421d36d9de169dc6464d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54758505"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68188780"
 ---
 # <a name="create-jsdoc-comments-for-javascript-intellisense"></a>建立 JavaScript IntelliSense 的 JSDoc 註解
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,8 +24,7 @@ Visual Studio 中的 IntelliSense 會顯示您使用標準 JSDoc 註解加入指
 ## <a name="jsdoc-comment-tags"></a>JSDoc 註解標記  
  下列標準 JSDoc 註解標記是由 IntelliSense 用於顯示您程式碼的相關資訊。  
 
-
-|  JSDoc 標記   |                       語法                        |                                                     注意                                                      |
+|  JSDoc 標記   |                       語法                        |                                                     附註                                                      |
 |--------------|-----------------------------------------------------|----------------------------------------------------------------------------------------------------------------|
 | @deprecated  |              @deprecated *description*              |                                   指定取代函式或方法。                                   |
 | @description |             @description *description*              |                              指定函式或方法的描述。                               |

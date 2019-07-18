@@ -1,14 +1,9 @@
 ---
 title: 程式碼產生和 T4 文字範本 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-techdebt
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 f1_keywords:
 - VS.ToolsOptionsPages.TextTemplating.TextTemplating
 helpviewer_keywords:
@@ -21,13 +16,13 @@ ms.assetid: 74a0a748-5b11-4999-8bea-49572967827d
 caps.latest.revision: 84
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: d1310d08138e4df172a5dc9f390d0407a68fe769
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 4886a23272962d2dee03576504d60d64067faf20
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49229816"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433400"
 ---
 # <a name="code-generation-and-t4-text-templates"></a>程式碼產生和 T4 文字範本
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -98,7 +93,7 @@ namespace Fabrikam.FirstJob
  如需詳細資訊，請參閱 <<c0> [ 使用 T4 文字範本在設計階段的程式碼產生](../modeling/design-time-code-generation-by-using-t4-text-templates.md)。 如需詳細的範本語法的詳細資訊，請參閱[撰寫 T4 文字範本](../modeling/writing-a-t4-text-template.md)。  
   
 > [!NOTE]
->  *「模型」* (model) 一詞有時可用來描述由一個或多個範本讀取的資料。 模型可以是任何形式、任何類型的檔案或資料庫。 它不需要是 UML 模型或「特定領域語言」模型。 「模型」只表示資料可以依照商務概念定義，而非類似於程式碼。  
+> *「模型」* (model) 一詞有時可用來描述由一個或多個範本讀取的資料。 模型可以是任何形式、任何類型的檔案或資料庫。 它不需要是 UML 模型或「特定領域語言」模型。 「模型」只表示資料可以依照商務概念定義，而非類似於程式碼。  
   
  文字範本轉換功能的名稱為 *T4*。  
   
@@ -130,6 +125,3 @@ namespace Fabrikam.FirstJob
 ## <a name="see-also"></a>另請參閱  
  [從 UML 模型產生檔案](../modeling/generate-files-from-a-uml-model.md)   
  [從特定領域語言產生程式碼](../modeling/generating-code-from-a-domain-specific-language.md)
-
-
-

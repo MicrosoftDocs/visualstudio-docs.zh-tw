@@ -8,14 +8,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 0526f08e1bbffb0a4dc8729e2b180ad9efe319ff
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.openlocfilehash: ae3b86be9ec26f9bb8c9b8978a6276169262933d
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55936560"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65457895"
 ---
-# <a name="warning-changes-have-been-made-to-the-configure-behavior-dialog-box-that-have-not-been-applied"></a>警告：已對 [設定行為] 對話方塊進行變更，但是尚未套用變更
+# <a name="warning-changes-have-been-made-to-the-configure-behavior-dialog-box-that-have-not-been-applied"></a>警告：尚未套用的設定行為對話方塊已經變更了
 
 警告。 尚未套用的設定行為對話方塊已經變更了。 是否要套用您的變更?
 
@@ -29,5 +29,4 @@ ms.locfileid: "55936560"
 
 ## <a name="see-also"></a>另請參閱
 
-- [O/R 設計工具訊息](../data-tools/o-r-designer-messages.md)
 - [Visual Studio 中的 LINQ to SQL 工具](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

@@ -5,17 +5,17 @@ ms.topic: reference
 helpviewer_keywords:
 - IDebugSymbolProviderDirect interface
 ms.assetid: 872b04a8-70de-4ab5-aceb-684c81828545
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d546cae810d40a850bb3dd2758f2f659eecdd18e
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 1ad8bc95e5fe8fa49088d8c1006bc69243dd4977
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56697421"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66320366"
 ---
 # <a name="idebugsymbolproviderdirect"></a>IDebugSymbolProviderDirect
 表示符號提供者可直接存取中繼資料和核心符號的介面。

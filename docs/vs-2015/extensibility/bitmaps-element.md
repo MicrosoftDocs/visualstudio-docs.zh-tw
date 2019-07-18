@@ -1,27 +1,22 @@
 ---
 title: Bitmaps 元素 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - VSCT XML schema elements, Bitmaps
 - Bitmaps element (VSCT XML schema)
 ms.assetid: 74652e1b-fcfa-421b-aa9f-fbc081d3b476
 caps.latest.revision: 10
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 7ec55d7e7336837db5758fb49079238a84e99d28
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 50e0a57c53587d56cacc91faa8bc40b9e221b318
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51773453"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68184662"
 ---
 # <a name="bitmaps-element"></a>Bitmaps 項目
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +37,7 @@ ms.locfileid: "51773453"
   
 ### <a name="attributes"></a>屬性  
   
-|屬性|描述|  
+|屬性|說明|  
 |---------------|-----------------|  
 |條件|選擇性。 請參閱[條件式屬性](../extensibility/vsct-xml-schema-conditional-attributes.md)。|  
   
@@ -55,7 +50,7 @@ ms.locfileid: "51773453"
   
 ### <a name="parent-elements"></a>父項目  
   
-|項目|描述|  
+|項目|說明|  
 |-------------|-----------------|  
 |[Commands 元素](../extensibility/commands-element.md)|表示 [VSPackage] 工具列上的命令的集合。|  
   
@@ -72,4 +67,3 @@ ms.locfileid: "51773453"
 ## <a name="see-also"></a>另請參閱  
  [Vspackage 如何新增使用者介面項目](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
  [命令、功能表及工具列](../extensibility/internals/commands-menus-and-toolbars.md)
-

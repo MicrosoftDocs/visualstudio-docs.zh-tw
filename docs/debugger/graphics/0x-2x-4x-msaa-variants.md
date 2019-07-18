@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 74d1be80fff92a8663582ba4e51e65ecc224ef1f
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 707d63d3ae5fb487f6232321a1d9d3128d379e06
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56699219"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "64816541"
 ---
 # <a name="0x2x4x-msaa-variants"></a>0x/2x/4x MSAA 變異
 覆寫所有呈現目標和交換鏈結上的多重取樣消除鋸齒 (MSAA) 設定。
@@ -26,20 +26,20 @@ ms.locfileid: "56699219"
  如果應用程式尚未啟用 MSAA，則 2x MSAA 和 4x MSAA 變異指出在應用程式中啟用它們的相對效能成本。 當成本為可接受的低水平時，請考慮啟用 MSAA 以增強應用程式的影像品質。
 
 > [!NOTE]
->  您的硬體可能未完全支援所有格式的 MSAA。 如果其中任何變異遇到無法克服的硬體限制，則其在效能摘要表格中的資料行會空白，並會產生一則錯誤訊息。
+> 您的硬體可能未完全支援所有格式的 MSAA。 如果其中任何變異遇到無法克服的硬體限制，則其在效能摘要表格中的資料行會空白，並會產生一則錯誤訊息。
 
 ## <a name="remarks"></a>備註
  這些變異會覆寫建立呈現目標的 `ID3DDevice::CreateTexture2D` 呼叫上的樣本計數和樣本品質引數。 特別是在下列情況下，會覆寫這些參數：
 
 - `D3D11_TEXTURE2D_DESC` 中所傳遞的 `pDesc` 物件描述呈現目標；亦即：
 
-  -   BindFlags 成員已設定 D3D11_BIND_TARGET 旗標或 D3D11_BIND_DEPTH_STENCIL 旗標。
+  - BindFlags 成員已設定 D3D11_BIND_TARGET 旗標或 D3D11_BIND_DEPTH_STENCIL 旗標。
 
-  -   Usage 成員設定為 D3D11_USAGE_DEFAULT。
+  - Usage 成員設定為 D3D11_USAGE_DEFAULT。
 
-  -   CPUAccessFlags 成員設定為 0。
+  - CPUAccessFlags 成員設定為 0。
 
-  -   MipLevels 成員設定為 1。
+  - MipLevels 成員設定為 1。
 
 - 裝置針對要求的呈現目標格式 (D3D11_TEXTURE2D_DESC::Format 成員)，支援要求的樣本計數 (0、2 或 4) 和樣本品質 (0) (由 `ID3D11Device::CheckMultisampleQualityLevels` 決定)。
 

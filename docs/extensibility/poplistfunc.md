@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - POPLISTFUNC callback function
 ms.assetid: b2199fd5-d707-4628-92dd-e2a01e2f507a
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 54b73a7f34c663661ae9cc2e2805e5fb6bd11480
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: f3125c17ad30eec6c374c38df7d4baa9e299314a
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56696437"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66336223"
 ---
 # <a name="poplistfunc"></a>POPLISTFUNC
 此回呼會提供給[SccPopulateList](../extensibility/sccpopulatelist-function.md) ide 而且由原始檔控制外掛程式用來更新檔案或目錄的清單 (也提供給`SccPopulateList`函式)。
@@ -56,7 +56,7 @@ typedef BOOL (*POPLISTFUNC) (
  原始檔控制外掛程式想要加入或刪除的檔案清單中的每個檔案，它會呼叫此函式，並傳入`lpFileName`。 `fAddRemove`旗標會指出新的檔案新增至清單或刪除舊的檔案。 `nStatus`參數會提供檔案的狀態。 當外掛程式 SCC 完成新增及刪除檔案時，它會傳回[SccPopulateList](../extensibility/sccpopulatelist-function.md)呼叫。
 
 > [!NOTE]
->  `SCC_CAP_POPULATELIST`功能位元是需要 Visual Studio。
+> `SCC_CAP_POPULATELIST`功能位元是需要 Visual Studio。
 
 ## <a name="see-also"></a>另請參閱
 - [IDE 所實作的回呼函式](../extensibility/callback-functions-implemented-by-the-ide.md)

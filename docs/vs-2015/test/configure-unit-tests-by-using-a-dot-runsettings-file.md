@@ -8,12 +8,12 @@ ms.assetid: f7e9e4a2-5d01-4f78-b408-5be3892bd162
 caps.latest.revision: 28
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 12acdaa6884a657782aa1e61e0a02f7118a59392
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 2a1eae79e90a7d20419aaf25c1679aae885e3e92
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54792150"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686423"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>使用 .runsettings 檔案設定單元測試
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,11 +23,11 @@ ms.locfileid: "54792150"
  如果您不想要執行任何特殊組態，則不需要 *.runsettings 檔案。 最常見做法是自訂[程式碼涵蓋範圍](../test/customizing-code-coverage-analysis.md)。  
   
 > [!NOTE]
->  **.runsettings 和 .testsettings**  
+> **.runsettings 和 .testsettings**  
 >   
->  有兩種類型的檔案可用來設定測試。 *.runsettings 是用於單元測試。 而 \*.testsettings 是針對[實驗室環境測試](http://msdn.microsoft.com/library/0c15317e-80c6-4317-aed3-82b8e15e3901)、Web 效能和負載測試以及用於自訂一些類型的診斷資料配接器 (例如 IntelliTrace 和事件記錄配接器)。  
+> 有兩種類型的檔案可用來設定測試。 *.runsettings 是用於單元測試。 而 \*.testsettings 是針對[實驗室環境測試](https://msdn.microsoft.com/library/0c15317e-80c6-4317-aed3-82b8e15e3901)、Web 效能和負載測試以及用於自訂一些類型的診斷資料配接器 (例如 IntelliTrace 和事件記錄配接器)。  
 >   
->  在舊版 Visual Studio 到 2010 中，也是使用 *.testsettings 檔案來自訂單元測試。 您還是可以這麼做，但是測試的執行速度比使用 \*.runsettings 檔案中的對等組態還要慢。  
+> 在舊版 Visual Studio 到 2010 中，也是使用 *.testsettings 檔案來自訂單元測試。 您還是可以這麼做，但是測試的執行速度比使用 \*.runsettings 檔案中的對等組態還要慢。  
   
 ## <a name="customizing-tests-with-a-runsettings-file"></a>使用 .runsettings 檔案自訂測試  
   
@@ -43,7 +43,7 @@ ms.locfileid: "54792150"
   
    ![啟用回合設定檔](../test/media/runsettings-1.png "RunSettings-1")  
   
-##  <a name="example"></a> 複製這個範例 .runsettings 檔案  
+## <a name="example"></a> 複製這個範例 .runsettings 檔案  
  以下是一般 *.runsettings 檔案。 因為每個值都有預設值，因此該檔案的每個項目都是選擇性的。  
   
 ```xml  
@@ -141,7 +141,7 @@ ms.locfileid: "54792150"
 #### <a name="other-diagnostic-data-adapters"></a>其他診斷資料配接器  
  程式碼涵蓋範圍配接器是目前唯一可透過使用回合設定檔來自訂的配接器。  
   
- 若要自訂任何其他類型的診斷資料配接器，您必須使用測試設定檔。 如需詳細資訊，請參閱[指定 Visual Studio 測試的測試設定](http://msdn.microsoft.com/library/0c15317e-80c6-4317-aed3-82b8e15e3901)。  
+ 若要自訂任何其他類型的診斷資料配接器，您必須使用測試設定檔。 如需詳細資訊，請參閱[指定 Visual Studio 測試的測試設定](https://msdn.microsoft.com/library/0c15317e-80c6-4317-aed3-82b8e15e3901)。  
   
 #### <a name="testrunparameters"></a>TestRunParameters  
  TestRunParameters 提供可供在執行階段的測試使用之定義變數和值的方式。  
@@ -149,10 +149,10 @@ ms.locfileid: "54792150"
 ### <a name="mstest-run-settings"></a>MSTest 回合設定  
  這些是執行具有 `[TestMethod]` 屬性之測試方法的測試配接器專屬的設定。  
   
-|Configuration|預設|值|  
+|組態|預設|值|  
 |-------------------|-------------|------------|  
 |ForcedLegacyMode|False|Visual Studio 2012 中的 MSTest 配接器已進行過最佳化，因此更快速且更具延展性。 某些行為 (例如測試執行順序) 可能與舊版 Visual Studio 稍有出入。 將此值設為 `true` 即可使用舊的測試配接器。<br /><br /> 例如，如果您為單元測試指定 app.config 檔案，則可以使用此方式。<br /><br /> 建議您考慮重構測試，以便使用較新的配接器。|  
-|IgnoreTestImpact|False|在 MSTest 或 Microsoft Test Manager 中執行時，測試影響功能會為最近變更所影響的測試設定優先權。 這項設定會停用該功能。 如需詳細資訊，請參閱[如何：收集資料以檢查其測試應該要執行程式碼變更後](http://msdn.microsoft.com/library/2f921ea1-9bb0-4870-a30f-0521fc22cb47)。|  
+|IgnoreTestImpact|False|在 MSTest 或 Microsoft Test Manager 中執行時，測試影響功能會為最近變更所影響的測試設定優先權。 這項設定會停用該功能。 如需詳細資訊，請參閱[How to:收集資料以檢查其測試應該要執行程式碼變更後](https://msdn.microsoft.com/library/2f921ea1-9bb0-4870-a30f-0521fc22cb47)。|  
 |SettingsFile||您可以指定與此處的 MS 測試配接器一起使用的測試設定檔。 您也可以使用 [測試] 功能表、[測試設定] 、[選取測試設定檔] 來指定測試設定檔。<br /><br /> 如果您指定這個值，也必須將 [ **ForcedlegacyMode** ] 設定為 [ **true**]。<br /><br /> `<RunSettings>   <MSTest>     <SettingsFile>my.testsettings</SettingsFile>      <ForcedLegacyMode>true</ForcedLegacyMode>    </MSTest> </RunSettings>`|  
 |KeepExecutorAliveAfterLegacyRun|False|測試回合完成後，會關閉 MSTest。 此時也會終止所有在測試過程中啟動的處理序。 如果您想要讓測試執行程式保持運作，請將這個組態設為 true。<br /><br /> 例如，您可以使用此方式讓瀏覽器在不同的自動程式碼 UI 測試之間保持執行。|  
 |DeploymentEnabled|true|如果將此設定為 false，就不會將您在測試方法中指定的部署項目複製到部署目錄中。|  
@@ -162,6 +162,6 @@ ms.locfileid: "54792150"
 |InProcMode|False|如果您想要在 MS 測試配接器的處理序中執行測試，請將此值設定為 true。 這個設定提供較小效能。 但如果測試因為例外狀況而結束，其他測試將不會繼續。|  
 |AssemblyResolution|False|您可以在求解及執行單元測試時，指定其他組件的路徑。  例如，您可以針對與測試組件位於不同目錄的相依性組件，使用這些路徑。  若要指定路徑，請使用 "Directory Path" 項目。  路徑可以包含環境變數。<br /><br /> `<AssemblyResolution>  <Directory Path>"D:\myfolder\bin\" includeSubDirectories="false"/> </AssemblyResolution>`|  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [自訂程式碼涵蓋範圍分析](../test/customizing-code-coverage-analysis.md)   
- [指定 Visual Studio 測試的測試設定](http://msdn.microsoft.com/library/0c15317e-80c6-4317-aed3-82b8e15e3901)
+ [指定 Visual Studio 測試的測試設定](https://msdn.microsoft.com/library/0c15317e-80c6-4317-aed3-82b8e15e3901)

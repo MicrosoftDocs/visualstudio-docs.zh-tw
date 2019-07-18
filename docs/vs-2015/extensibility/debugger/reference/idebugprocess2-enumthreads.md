@@ -1,14 +1,9 @@
 ---
 title: IDebugProcess2::EnumThreads |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugProcess2::EnumThreads
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 05677385-7a7f-4545-8438-af00dde85db0
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 69d4606b03504751a98b6fc0274defed4af99870
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 3e9b6447827baa80da2843c992a8d2233dd1a4b6
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51747323"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68188029"
 ---
 # <a name="idebugprocess2enumthreads"></a>IDebugProcess2::EnumThreads
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -60,4 +55,3 @@ int EnumThreads(
  [IEnumDebugThreads2](../../../extensibility/debugger/reference/ienumdebugthreads2.md)   
  [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)   
  [EnumThreads](../../../extensibility/debugger/reference/idebugprogram2-enumthreads.md)
-

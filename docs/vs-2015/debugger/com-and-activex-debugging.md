@@ -1,14 +1,9 @@
 ---
 title: COM 和 ActiveX 進行偵錯 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.com
 dev_langs:
@@ -26,13 +21,13 @@ ms.assetid: 3260b2a7-3239-493d-9271-aedf705c13c7
 caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 1c71aa59e62d9ac8530f34f42e15737a52b0fad6
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 4b4d74a6a1c4f03951d93eaf2aa5e556762b9021
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51771492"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65702311"
 ---
 # <a name="com-and-activex-debugging"></a>偵錯 COM 和 ActiveX
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +38,7 @@ ms.locfileid: "51771492"
  [COM 伺服器和容器偵錯](../debugger/com-server-and-container-debugging.md)  
  內容提出偵錯 COM 應用程式時的特殊考量。 涉及的問題包含：在同一方案中使用兩個專案偵錯 COM 伺服器和容器 (Container)、跨處理序 (Process) 界限追蹤呼叫、設定回呼函式 (Callback Function) 的中斷點，以及逐步跨和進入容器和伺服器等的問題。  
   
- [如何：偵錯 ActiveX 控制項](../debugger/how-to-debug-an-activex-control.md)  
+ [如何：針對 ActiveX 控制項進行偵錯](../debugger/how-to-debug-an-activex-control.md)  
  包括偵錯 ActiveX 控制項的資訊。 其中包括：指定偵錯工作階段的容器以查看您 ActiveX 控制項中的程式碼如何執行、偵錯資料繫結的 ActiveX 控制項、模擬特定的容器，以及逐步執行容器的程式碼。  
   
  [COM 偵錯工具](../debugger/com-debugging-tools.md)  
@@ -55,9 +50,6 @@ ms.locfileid: "51771492"
   
 ## <a name="see-also"></a>另請參閱  
  [偵錯工具安全性](../debugger/debugger-security.md)   
- [COM 簡介](http://msdn.microsoft.com/library/120735d9-db71-4ad3-a730-ce576ea2354e)   
- [ActiveX 控制項](http://msdn.microsoft.com/library/52aaec4d-3889-402e-b57d-758078f8ac57)   
+ [COM 簡介](https://msdn.microsoft.com/library/120735d9-db71-4ad3-a730-ce576ea2354e)   
+ [ActiveX 控制項](https://msdn.microsoft.com/library/52aaec4d-3889-402e-b57d-758078f8ac57)   
  [SDI 伺服器應用程式](../debugger/sdi-server-applications.md)
-
-
-

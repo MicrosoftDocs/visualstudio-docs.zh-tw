@@ -1,27 +1,22 @@
 ---
-title: IDiaSession::findAcceleratorInlineesByLinenum |Microsoft Docs
-ms.custom: ''
+title: IDiaSession::findAcceleratorInlineesByLinenum | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 ms.assetid: 386c87aa-f7b2-4d38-9dd6-fffba9ff01f0
 caps.latest.revision: 6
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 2fcb0eb438e88107c1447a7334f767bbc17dc88b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f388671f7efeeefa05704d934ccf5307578e7d3e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51738169"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68150446"
 ---
 # <a name="idiasessionfindacceleratorinlineesbylinenum"></a>IDiaSession::findAcceleratorInlineesByLinenum
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -63,6 +58,3 @@ HRESULT findAcceleratorInlineeLinesByName ( 
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
  [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)   
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
-
-
-

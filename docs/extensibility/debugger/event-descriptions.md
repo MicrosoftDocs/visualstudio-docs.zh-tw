@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], events
 ms.assetid: 09f61652-7e16-4bb0-8055-f61a84bf384e
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d5a1567cc7f5d3f6072b47fda1aacd32f69cb672
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 7267011c61a3b43c76db80a758a86f1af1dd228b
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56695280"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66315354"
 ---
 # <a name="event-descriptions"></a>事件描述
 事件的每個類型都有特定的用途。

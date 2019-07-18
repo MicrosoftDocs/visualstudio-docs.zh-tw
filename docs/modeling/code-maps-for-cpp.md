@@ -1,5 +1,5 @@
 ---
-title: 請參閱 c + + 原始程式檔和標頭檔之間的相依性
+title: 請參閱之間的相依性C++原始程式檔和標頭檔
 ms.date: 05/16/2018
 ms.topic: conceptual
 author: gewarren
@@ -8,13 +8,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3904ff08496257d18589e36e5878f49404bbdf7c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55939550"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62422163"
 ---
-# <a name="code-maps-for-c-projects"></a>C + + 專案的 code map
+# <a name="code-maps-for-c-projects"></a>Code map 的C++專案
 
 如果要為 C++ 專案建立更完整的對應，請在這些專案上設定瀏覽資訊編譯器選項 (**/FR**)。 否則會出現訊息並提示您設定此選項。 如果選取 [確定] ，則只會為目前的對應設定這個選項。 您可以選擇隱藏所有之後對應的訊息。
 
@@ -28,7 +28,7 @@ ms.locfileid: "55939550"
 
    ![.h 檔案的第一層相依性圖形](../modeling/media/dependencygraph_native_firstlevel.png)
 
-## <a name="troubleshoot-code-maps-for-c-and-c-code"></a>C 和 c + + 程式碼的程式碼對應疑難排解
+## <a name="troubleshoot-code-maps-for-c-and-c-code"></a>程式碼對應疑難排解適用於 C 和C++程式碼
 
 C 和 C++ 程式碼不支援下列項目：
 
@@ -36,13 +36,13 @@ C 和 C++ 程式碼不支援下列項目：
 
 - 大部分的 [顯示]  功能表項目無法供 C 和 C++ 程式碼使用。
 
-當您建立 C 和 c + + 程式碼的 code map 時，可能會發生這些問題：
+當您建立適用於 C 的 code map 時，可能會發生這些問題和C++程式碼：
 
 |**問題**|**可能的原因**|**解決方法**|
 |-|-|-|
 |無法產生 Code Map。|方案中沒有成功建立的專案。|修正發生的建置錯誤，然後重新產生對應。|
 |Visual Studio 變成沒有回應，當您嘗試將產生的 code map**架構**功能表。|程式資料庫 (.pdb) 檔案可能會損毀。<br /><br /> .pdb 檔案會儲存偵錯資訊，例如類型、方法和原始程式檔資訊。|重建方案後再試一次。|
-|IntelliSense 瀏覽資料庫的某些設定已停用。|某些 IntelliSense 設定可能會停用，在 Visual Studio**選項** 對話方塊。|開啟這些設定來加以啟用。<br /><br /> 請參閱[選項、 文字編輯器、 C/c + +、 進階](../ide/reference/options-text-editor-c-cpp-advanced.md)。|
+|IntelliSense 瀏覽資料庫的某些設定已停用。|某些 IntelliSense 設定可能會停用，在 Visual Studio**選項** 對話方塊。|開啟這些設定來加以啟用。<br /><br /> 請參閱[選項、 文字編輯器、 C /C++進階](../ide/reference/options-text-editor-c-cpp-advanced.md)。|
 |[未知方法]  訊息出現在方法節點上。<br /><br /> 發生這個問題是因為無法解析方法的名稱。|二進位檔可能沒有基底重新配置表格。|在連結器中開啟 **/FIXED:NO** 選項。|
 ||程式資料庫 (.pdb) 檔案可能無法建置。<br /><br /> .pdb 檔案會儲存偵錯資訊，例如類型、方法和原始程式檔資訊。|在連結器中開啟 **/DEBUG** 選項。|
 ||無法在預期的位置中開啟或找到 .pdb 檔案。|請確定預期的位置中有 .pdb 檔案存在。|

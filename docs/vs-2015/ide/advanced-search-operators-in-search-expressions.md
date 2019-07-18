@@ -16,12 +16,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9c2b8df3878f67207b22127881722aedd8caae8e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 6befa20bcda7f30896fb2b04fadefb0eb5f21f8d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54775570"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63408399"
 ---
 # <a name="advanced-search-operators-in-search-expressions"></a>搜尋運算式中的進階搜尋運算子
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "54775570"
 使用進階的搜尋運算子，您可以從較簡單的運算式建立更複雜的搜尋運算式來精簡搜尋內容。 如下表所示，這些運算子會限制查詢的執行內容。  
   
 > [!WARNING]
->  您必須輸入包含最終冒號且冒號前面沒有介入空格的進階搜尋運算子，搜尋引擎才能加以辨認。  
+> 您必須輸入包含最終冒號且冒號前面沒有介入空格的進階搜尋運算子，搜尋引擎才能加以辨認。  
   
 |搜尋|使用|範例|結果|  
 |-------------------|---------|-------------|------------|  
@@ -49,6 +49,6 @@ ms.locfileid: "54775570"
 |JavaScript|code:javascript<br /><br /> 或<br /><br /> code:js|  
 |XAML|code:xaml|  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [搜尋運算式中的邏輯運算子](../ide/logical-operators-in-search-expressions.md)   
  [全文檢索搜尋提示](../ide/full-text-search-tips.md)

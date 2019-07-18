@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - project types, conditions for creating
 ms.assetid: 26adc860-ee4a-4f5c-95e1-e41b207dd7e6
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 45bd40d2261a30ea455132ba92841c33b968eac0
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 8be01ef0592deab48d923828ccfd3f86f1311a4d
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56614983"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66323069"
 ---
 # <a name="when-to-create-project-types"></a>建立專案類型的時機
 建立新的專案類型提供基礎自訂[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]為您的使用者。 不過，建立新的專案類型不需要所有[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]自訂項目。 下列指導方針可協助您判斷新的專案類型是否需要針對您的案例。
@@ -23,26 +23,26 @@ ms.locfileid: "56614983"
 ## <a name="create-a-new-project-type"></a>建立新的專案類型
  您必須先建立專案類型，如果您想要自訂[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]以扮演一或多個下列的方式：
 
--   參與建置、 部署、 設定和原始檔控制。
+- 參與建置、 部署、 設定和原始檔控制。
 
--   偵錯支援的供應項目。
+- 偵錯支援的供應項目。
 
--   顯示專案中的項目**方案總管 中**。
+- 顯示專案中的項目**方案總管 中**。
 
--   使用**開啟專案**或是**新的專案** 對話方塊。
+- 使用**開啟專案**或是**新的專案** 對話方塊。
 
--   支援專案巢狀結構。
+- 支援專案巢狀結構。
 
 ## <a name="extend-an-existing-project-type"></a>擴充現有的專案類型
  您可能想要建立新的專案類型可供[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]下列方式來修改或擴充現有的專案類型的行為，例如，修改的建置程序[!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)]專案：
 
--   使用多個檔案當做單一單位。
+- 使用多個檔案當做單一單位。
 
--   顯示單一檔案的子項目階層。
+- 顯示單一檔案的子項目階層。
 
--   顯示編輯器命令內容。
+- 顯示編輯器命令內容。
 
--   編輯器中顯示的服務內容。
+- 編輯器中顯示的服務內容。
 
 ## <a name="use-an-existing-project-type"></a>使用現有的專案類型
  建立新的專案則有時候不需要。 下表顯示您沒有建立的專案類型的工作。

@@ -5,8 +5,8 @@
 ## [在防火牆或 Proxy 後方安裝及使用](/visualstudio/mac/install-behind-a-firewall-or-proxy-server)
 ## [安裝預覽版本](/visualstudio/mac/install-preview)
 ## [更新](/visualstudio/mac/update)
+## [更新至 Visual Studio 2019 for Mac](/visualstudio/mac/update-vsmac-8.0)
 ## [解除安裝](/visualstudio/mac/uninstall)
-
 
 # [使用者帳戶](/visualstudio/mac/user-accounts)
 ## [登入](/visualstudio/mac/signing-in)
@@ -14,7 +14,6 @@
 
 # [自訂 IDE](/visualstudio/mac/customizing-the-ide)
 ## [擴充 Visual Studio for Mac](/visualstudio/mac/extending-visual-studio-mac)
-
 
 # [專案和方案](/visualstudio/mac/projects-and-solutions)
 ## [建立新專案](/visualstudio/mac/create-new-projects)
@@ -77,3 +76,4 @@
 # [疑難排解](/visualstudio/mac/troubleshooting)
 ## [Visual Studio 客戶經驗改進計畫](/visualstudio/mac/visual-studio-experience-improvement-program)
 ## [回報問題](/visualstudio/mac/report-a-problem)
+## [疑難排解：更新程式在擷取資訊時發生錯誤](updater-troubleshooting.md)

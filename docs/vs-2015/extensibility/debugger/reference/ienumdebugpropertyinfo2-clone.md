@@ -1,14 +1,9 @@
 ---
 title: IEnumDebugPropertyInfo2::Clone |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IEnumDebugPropertyInfo2::Clone
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 0ede1667-1071-4aa4-b887-260ea103d724
 caps.latest.revision: 10
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 7f41f3da2088fa4ec51c048461854333b4d940bd
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 68e60c71b2c1f7298d56b26d4db881afd8f347da
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51809658"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68199572"
 ---
 # <a name="ienumdebugpropertyinfo2clone"></a>IEnumDebugPropertyInfo2::Clone
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -55,4 +50,3 @@ int Clone(
   
 ## <a name="see-also"></a>另請參閱  
  [IEnumDebugPropertyInfo2](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md)
-

@@ -1,14 +1,9 @@
 ---
-title: CA2201： 不要引發保留的例外狀況類型 |Microsoft Docs
-ms.custom: ''
+title: CA2201:不要引發保留的例外狀況類型 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - DoNotRaiseReservedExceptionTypes
 - CA2201
@@ -20,14 +15,14 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 9cc22f6bc8f7e863f0808c05b0b5cba37ba79fbf
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 580a021a85d1211932c248ddc925a49e95e1cf13
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49810589"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68142563"
 ---
-# <a name="ca2201-do-not-raise-reserved-exception-types"></a>CA2201：不要引發保留的例外狀況類型
+# <a name="ca2201-do-not-raise-reserved-exception-types"></a>CA2201:不要引發保留的例外狀況類型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -94,7 +89,4 @@ ms.locfileid: "49810589"
  請勿隱藏此規則的警告。
 
 ## <a name="related-rules"></a>相關的規則
- [CA1031：不要攔截一般例外狀況類型](../code-quality/ca1031-do-not-catch-general-exception-types.md)
-
-
-
+ [CA1031:不要攔截一般例外狀況類型](../code-quality/ca1031-do-not-catch-general-exception-types.md)

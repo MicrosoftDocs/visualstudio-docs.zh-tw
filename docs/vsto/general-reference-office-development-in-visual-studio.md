@@ -14,18 +14,18 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 70a34a4f0e9785277743d2870b23e33f848912b4
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 2f1370dc0eb159b3f566e6ddcba6e1317cfb441a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56641087"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63427951"
 ---
 # <a name="general-reference-office-development-in-visual-studio"></a>一般參考 （在 Visual Studio 中的 Office 程式開發）
   本章節包含有關在 Visual Studio 中的 Microsoft Office 專案的技術詳細資料。
 
 > [!NOTE]
->  想要開發解決方案，擴充的 Office 體驗，跨[多個平台](https://dev.office.com/add-in-availability)嗎？ 查看新[Office 增益集模型](https://dev.office.com/docs/add-ins/overview/office-add-ins)。 Office 增益集較小的使用量，相較於 VSTO 增益集和解決方案，而且您可以使用幾乎任何 web 程式設計技術，例如 HTML5、 JavaScript、 CSS3、 以及 XML 來建置。
+> 想要開發解決方案，擴充的 Office 體驗，跨[多個平台](https://dev.office.com/add-in-availability)嗎？ 查看新[Office 增益集模型](https://dev.office.com/docs/add-ins/overview/office-add-ins)。 Office 增益集較小的使用量，相較於 VSTO 增益集和解決方案，而且您可以使用幾乎任何 web 程式設計技術，例如 HTML5、 JavaScript、 CSS3、 以及 XML 來建置。
 
 ## <a name="in-this-section"></a>本節內容
 - [Office 主要 interop 組件](../vsto/office-primary-interop-assemblies.md)

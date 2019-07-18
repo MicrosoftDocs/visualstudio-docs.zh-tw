@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugSymbolProvider::GetTypeByName method
 ms.assetid: b9d88d3b-8b75-484a-b9cc-dc8c0fbb4bc8
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 98ba8c20be22a6f6a9a990f9de042ac2dab4c72a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: fca036da331795c0f7c17f848bbea1e682796894
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56695007"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66347414"
 ---
 # <a name="idebugsymbolprovidergettypebyname"></a>IDebugSymbolProvider::GetTypeByName
 這個方法會對應至符號類型的符號名稱。
@@ -40,18 +43,15 @@ int GetTypeByName(
 );
 ```
 
-#### <a name="parameters"></a>參數
- `pszClassName`
+## <a name="parameters"></a>參數
+`pszClassName`\
+[in]符號名稱。
 
- [in]符號名稱。
+`nameMatch`\
+[in]選取類型的相符項目，例如，區分大小寫。 值，以從[NAME_MATCH](../../../extensibility/debugger/reference/name-match.md)列舉型別。
 
- `nameMatch`
-
- [in]選取類型的相符項目，例如，區分大小寫。 值，以從[NAME_MATCH](../../../extensibility/debugger/reference/name-match.md)列舉型別。
-
- `ppField`
-
- [out]傳回與符號類型[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)物件。
+`ppField`\
+[out]傳回與符號類型[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)物件。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

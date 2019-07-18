@@ -9,21 +9,28 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: af930f983ad328dac16e5eec1fb0cf2650f7681a
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 62ea3402a053ed57280ddbc946d79d27ab35f944
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57867851"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62980534"
 ---
 # <a name="find-code-changes-and-other-history-with-codelens"></a>尋找 CodeLens 的程式碼變更和其他記錄
 
 CodeLens 可讓您在了解程式碼發生什麼事時，也能保持專注在工作上，且無須離開編輯器。 您可以尋找程式碼片段的參考、程式碼的變更、已連結的錯誤、工作項目、程式碼檢閱和單元測試。
 
+::: moniker range=">=vs-2019"
+
+> [!NOTE]
+> 在 Visual Studio Community 版中無法使用原始檔控制 CodeLens 指標。
+
+::: moniker-end
+
 ::: moniker range="vs-2017"
 
 > [!NOTE]
-> CodeLens 僅適用於 Visual Studio Enterprise 與 Visual Studio Professional 版。 其不適用於 Visual Studio Community 版。
+> CodeLens 只能在 Visual Studio Enterprise 與 Professional 版中使用。 其不適用於 Visual Studio Community 版。
 
 ::: moniker-end
 
@@ -60,15 +67,15 @@ CodeLens 可讓您在了解程式碼發生什麼事時，也能保持專注在�
 
 ![CodeLens - Code Map 上的參考](../ide/media/codelensmappedreferences.png)
 
-## <a name="a-namefind-code-historyfind-changes-in-your-code"></a><a name="find-code-history"/>尋找您程式碼中的變更
+## <a name="find-changes-in-your-code"></a>尋找您程式碼中的變更
 
 請檢查您的程式碼記錄，以了解程式碼發生了什麼事。 或者，請先檢閱變更內容，再將其合併到您的程式碼中，如此可更了解其他分支中的變更可能會如何影響您的程式碼。
 
 您需要：
 
-- Visual Studio 2019 (或是 Visual Studio 2017 Enterprise 或 Professional 版本)
+- Visual Studio Enterprise 或 Professional 版本
 
-- Team Foundation Server 2013 或更新版本、Azure DevOps Services 或 Git
+- Azure DevOps Services、Team Foundation Server 2013 或更新版本，或 Git
 
 - [商務用 Skype](/skypeforbusiness/)，以從程式碼編輯器與您的小組連絡
 
@@ -224,11 +231,11 @@ CodeLens 可讓您在了解程式碼發生什麼事時，也能保持專注在�
 
      ![CodeLens - 移至單元測試定義](../ide/media/codelens-unit-test-definition.png)
 
-6. 若要檢閱測試結果，請選擇測試狀態指標 (![測試失敗的圖示](../ide/media/codelenstestfailedicon.png)或![測試成功圖示](../ide/media/codelenstestpassedicon.png))，或按 **Alt**+**1**。
+6. 若要檢閱測試結果，請選擇測試狀態指標 (![測試失敗的圖示](../ide/media/codelenstestfailedicon.png) 或 ![測試成功圖示](../ide/media/codelenstestpassedicon.png))，或按 **Alt**+**1**。
 
      ![CodeLens - 查看單元測試結果](../ide/media/codelens-unit-test-result.png)
 
-7. 若要查看有多少人變更此測試、是誰變更此測試，或是對此測試做了多少變更，請[尋找您程式碼的記錄](#find-code-history)和連結的項目。
+7. 若要查看有多少人變更此測試、是誰變更此測試，或是對此測試做了多少變更，請[尋找您程式碼的記錄](#find-changes-in-your-code)和連結的項目。
 
 ## <a name="keyboard-shortcuts"></a>鍵盤快速鍵
 
@@ -264,6 +271,20 @@ CodeLens 可讓您在了解程式碼發生什麼事時，也能保持專注在�
 - 唯有當工作項目連結到程式碼，且您擁有開啟工作項目連結的權限時，才會出現與 DevOps 相關的指標。 確認您擁有[小組成員權限](/azure/devops/organizations/security/view-permissions?view=vsts)。
 
 - 應用程式程式碼沒有單元測試時，不會出現測試狀態指標。 測試狀態指標會自動出現在測試專案中。 如果您知道應用程式程式碼有單元測試，但是並未出現測試指標，請嘗試建置方案 (**Ctrl**+**Shift**+**B**)。
+
+::: moniker range=">=vs-2019"
+
+> [!TIP]
+> 在 Visual Studio Community 版中無法使用原始檔控制指標。
+
+::: moniker-end
+
+::: moniker range="vs-2017"
+
+> [!TIP]
+> 在 Visual Studio Community 版中無法使用 CodeLens。
+
+::: moniker-end
 
 ### <a name="q-why-dont-i-see-the-work-item-details-for-a-commit"></a>問：為什麼看不到認可的工作項目詳細資料？
 
@@ -313,11 +334,11 @@ CodeLens 不支援安裝不同版本的 Lync 或 Skype。 它們可能尚未對�
 
 - **參考**：程式碼變更時，此指標會自動更新。 如果**參考**指標固定為個別的視窗，請選取 [重新整理] 來重新整理指標：
 
-     ![CodeLens 參考中的 [重新整理] 按鈕](../ide/media/codelensviewreferencesdocked.png)
+   ![CodeLens 參考中的 [重新整理] 按鈕](../ide/media/codelensviewreferencesdocked.png)
 
 - **小組**：從右鍵功能表選取 [重新整理 CodeLens 小組指標]，以重新整理這些指標：
 
-     ![[重新整理 CodeLens 小組指標] 功能表項目](../ide/media/codelensrefreshindicatorsfromcode.png)
+   ![[重新整理 CodeLens 小組指標] 功能表項目](../ide/media/codelensrefreshindicatorsfromcode.png)
 
 - **測試**：[尋找您程式碼的單元測試](#associated-unit-tests)，以重新整理**測試**指標。
 

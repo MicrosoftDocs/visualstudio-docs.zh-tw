@@ -4,19 +4,19 @@ titleSuffix: ''
 description: 以 Django Visual Studio 專案做背景，逐步解說 Django 的基礎知識，我們將重點介紹 Polls Django Web 專案的各項功能，例如自訂管理功能。
 ms.date: 11/19/2018
 ms.topic: tutorial
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: a8169dc759091bcc89da64a9676589e473bccf1f
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 93771033dd83ae988340ed355066992990f22f50
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55957790"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62961808"
 ---
 # <a name="step-6-use-the-polls-django-web-project-template"></a>步驟 6：使用 Polls Django Web 專案範本
 

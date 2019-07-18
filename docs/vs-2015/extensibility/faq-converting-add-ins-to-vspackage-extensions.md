@@ -1,24 +1,19 @@
 ---
-title: 常見問題集： 將增益集轉換成 VSPackage 擴充功能 |Microsoft Docs
-ms.custom: ''
+title: 常見問題集：將增益集轉換成 VSPackage 擴充功能 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: 3a01d333-6e31-423f-ae06-5091a4fcb7a9
 caps.latest.revision: 23
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: b2318ff719f51660b4cec0eec6b7a051ea54aa67
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: bc6ed31f96fc2021d0d9e104692f0440cfb78a5e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51817343"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433744"
 ---
 # <a name="faq-converting-add-ins-to-vspackage-extensions"></a>常見問題集：將增益集轉換成 VSPackage 擴充功能
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,14 +21,14 @@ ms.locfileid: "51817343"
 增益集目前已被取代。 若要讓新的 Visual Studio 擴充功能，您需要建立 VSIX 擴充功能。 以下是一些有關如何將轉換的 Visual Studio 增益集，為 VSIX 擴充功能的常見問題集問題的答案。  
   
 > [!WARNING]
->  對於 C# 和 Visual Basic 專案，開始在 Visual Studio 2015 中，您就可以使用 VSIX 專案，並加入功能表命令、 工具視窗和 Vspackage 的項目範本。 如需詳細資訊，請參閱 < [What's New in Visual Studio 2015 SDK](../extensibility/what-s-new-in-the-visual-studio-2015-sdk.md)。  
+> 對於 C# 和 Visual Basic 專案，開始在 Visual Studio 2015 中，您就可以使用 VSIX 專案，並加入功能表命令、 工具視窗和 Vspackage 的項目範本。 如需詳細資訊，請參閱 < [What's New in Visual Studio 2015 SDK](../extensibility/what-s-new-in-the-visual-studio-2015-sdk.md)。  
   
 > [!IMPORTANT]
->  在許多情況下您可以只傳輸您的增益集程式碼加入 VSIX 專案 VSPackage 專案項目。 在 <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> 方法中呼叫 <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A>，可以取得 DTE 自動化物件。  
+> 在許多情況下您可以只傳輸您的增益集程式碼加入 VSIX 專案 VSPackage 專案項目。 在 <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> 方法中呼叫 <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A>，可以取得 DTE 自動化物件。  
 >   
->  `DTE2 dte = (DTE2)GetService(typeof(DTE));`  
+> `DTE2 dte = (DTE2)GetService(typeof(DTE));`  
 >   
->  如需詳細資訊，請參閱 <<c0> [ 如何執行增益集程式碼在 VSPackage 中？](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md#BKMK_RunAddin)如下。  
+> 如需詳細資訊，請參閱 <<c0> [ 如何執行增益集程式碼在 VSPackage 中？](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md#BKMK_RunAddin)如下。  
   
 ## <a name="what-software-do-i-need-to-develop-vsix-extensions"></a>若要開發 VSIX 擴充功能是否需要哪些軟體？  
  從 Visual Studio 2015 中，從下載中心取得未安裝 Visual Studio SDK。 包含為 Visual Studio 安裝程式的選用功能。 您也可以在稍後安裝 VS SDK。 如需詳細資訊，請參閱 <<c0> [ 安裝 Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md)。  
@@ -44,22 +39,22 @@ ms.locfileid: "51817343"
 ## <a name="can-i-convert-my-add-in-project-to-a-vsix-project"></a>我是否可以將我的增益集專案轉換加入 VSIX 專案？  
  增益集專案無法轉換直接加入 VSIX 專案，因為在 VSIX 專案中使用的機制與增益集專案中的項目相同。 VSIX 專案範本，再加上正確的專案項目範本有許多可讓相當容易快速啟動且做為 VSIX 擴充功能執行的程式碼。  
   
-##  <a name="BKMK_StartDeveloping"></a> 如何開始開發 VSIX 擴充功能？  
+## <a name="BKMK_StartDeveloping"></a> 如何開始開發 VSIX 擴充功能？  
  以下是讓具有功能表命令的 VSIX 的方式：  
   
 #### <a name="to-make-a-vsix-extension-that-has-a-menu-command"></a>若要建立具有功能表命令的 VSIX 擴充功能  
   
-1.  建立 VSIX 專案。 (**檔案**，**新增**，**專案**，或類型**專案**中**快速啟動**視窗)。 在**新的專案**對話方塊方塊中，展開**Visual C# / 擴充性**或**Visual Basic / 擴充性**，然後選取**VSIX 專案**。)將專案命名為**TestExtension**並為其指定的位置。  
+1. 建立 VSIX 專案。 (**檔案**，**新增**，**專案**，或類型**專案**中**快速啟動**視窗)。 在**新的專案**對話方塊方塊中，展開**Visual C# / 擴充性**或**Visual Basic / 擴充性**，然後選取**VSIX 專案**。)將專案命名為**TestExtension**並為其指定的位置。  
   
-2.  新增**自訂命令**專案項目範本。 (以滑鼠右鍵按一下專案節點，在**方案總管**，然後選取**新增 / 新的項目**。 在**新的專案**對話方塊中的 Visual C# 或 Visual Basic 中，選取**擴充性**節點，然後選取**自訂命令**。)  
+2. 新增**自訂命令**專案項目範本。 (以滑鼠右鍵按一下專案節點，在**方案總管**，然後選取**新增 / 新的項目**。 在**新的專案**對話方塊中的 Visual C# 或 Visual Basic 中，選取**擴充性**節點，然後選取**自訂命令**。)  
   
-3.  按 F5，以偵錯模式建置並執行專案。  
+3. 按 F5，以偵錯模式建置並執行專案。  
   
      Visual Studio 的第二個執行個體隨即出現。 第二個執行個體稱為實驗執行個體，其設定可能與您正用來撰寫程式碼的 Visual Studio 執行個體的設定不同。 第一次執行實驗執行個體時，系統會要求您登入 VS Online 並指定佈景主題和設定檔。  
   
-     在 **工具**功能表上 （在實驗執行個體中） 您應該會看到名為按鈕**我的命令名稱**。 當您選擇此按鈕時，應該會出現一則訊息：**在 testvspackagepackage.menuitemcallback （） 之中**。  
+     在 **工具**功能表上 （在實驗執行個體中） 您應該會看到名為按鈕**我的命令名稱**。 當您選擇此按鈕時，應該會出現一則訊息：**Inside TestVSPackagePackage.MenuItemCallback()** .  
   
-##  <a name="BKMK_RunAddin"></a> 如何在 VSPackage 中執行我的增益集程式碼？  
+## <a name="BKMK_RunAddin"></a> 如何在 VSPackage 中執行我的增益集程式碼？  
  增益集程式碼通常以兩種方式之一執行：  
   
 - 由功能表命令觸發 (程式碼在 `IDTCommandTarget.Exec` 方法中)  
@@ -272,4 +267,3 @@ public void OnItemRenamed(EnvDTE.ProjectItem projItem, string oldName)
     string s = "[Event] Renamed " + oldName + " to " + Path.GetFileName(projItem.get_FileNames(1) + " in project " + projItem.ContainingProject.Name;   
 }  
 ```
-

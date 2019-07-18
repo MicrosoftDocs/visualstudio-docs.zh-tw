@@ -3,17 +3,17 @@ title: Creating an Extension with 工具視窗 |Microsoft Docs
 ms.date: 3/16/2019
 ms.topic: conceptual
 ms.assetid: 585b0a3a-f85b-4f92-81bb-9ca499bb8a89
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2741a7f9d27c303981ed4b179e3fe3d7cd63f020
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: b5a38c9912be87c94c79076675b5db25663fb5f0
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58194145"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66345438"
 ---
 # <a name="create-an-extension-with-a-tool-window"></a>建立工具視窗的延伸模組
 
@@ -27,7 +27,7 @@ ms.locfileid: "58194145"
 
 1. 建立 VSIX 專案，名為**FirstWindow**。 您可以找到在 VSIX 專案範本**新的專案**藉由搜尋 「 vsix 」 的對話方塊。
 
-2. 當專案開啟時，新增名為的工具視窗項目範本**MyWindow**。 在 **方案總管**，以滑鼠右鍵按一下專案節點，然後選取**新增** > **新項目**。 在 **加入新項目**對話方塊中，移至**Visual C#** > **擴充性**，然後選取**自訂工具視窗**。 在 **名稱**在視窗底部的欄位、 變更工具視窗的檔案名稱，以*MyWindow.cs*。
+2. 當專案開啟時，新增名為的工具視窗項目範本**MyWindow**。 在 **方案總管**，以滑鼠右鍵按一下專案節點，然後選取**新增** > **新項目**。 在 **加入新項目**對話方塊中，移至**Visual C#**  > **擴充性**，然後選取**自訂工具視窗**。 在 **名稱**在視窗底部的欄位、 變更工具視窗的檔案名稱，以*MyWindow.cs*。
 
 3. 建置此專案並開始偵錯。
 

@@ -18,11 +18,11 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: defc1605d15fcc9ce616212b48faa7674abc87e8
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55910164"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62824664"
 ---
 # <a name="add-custom-controls-to-the-data-sources-window"></a>將自訂控制項加入 [資料來源] 視窗
 
@@ -62,7 +62,7 @@ ms.locfileid: "55910164"
     > [!NOTE]
     > 如果您想要選取的控制項不會不出現在**關聯的控制項** 方塊中，您必須將控制項新增至清單。 如需詳細資訊，請參閱 <<c0> [ 新增關聯的控制項](#add-associated-controls)。
 
-6. 按一下 [確定 **Deploying Office Solutions**]。
+6. 按一下 [確定] 。
 
 7. 在  **Zdroje dat**視窗中，按一下資料的項目類型只是關聯一或多個控制項，然後按一下 下拉式選單，項目。
 

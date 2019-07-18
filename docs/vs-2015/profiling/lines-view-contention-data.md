@@ -12,11 +12,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8cb6b8191b39bfc79615bf0bbcd4fb469395f8d8
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54779046"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62583154"
 ---
 # <a name="lines-view---contention-data"></a>程式行檢視 - 爭用資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ ms.locfileid: "54779046"
   
   下表說明 [程式行] 檢視報表的資料行。  
   
-|資料行|描述|  
+|資料行|說明|  
 |------------|-----------------|  
 |**專有封鎖時間**|此陳述式因爭用事件遭封鎖，無法在陳述式中執行程式碼的時間長度。 陳述式所呼叫函式中的封鎖時間不包括在內。|  
 |**專有封鎖時間 %**|陳述式的專有封鎖時間佔處理序中所有封鎖時間的百分比。|  

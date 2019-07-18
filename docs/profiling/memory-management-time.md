@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 442973edb18e75bafda8a9397eac799286c69dfa
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56609367"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62963777"
 ---
 # <a name="memory-management-time"></a>記憶體管理時間
 時間軸中的這些區段會和分類為記憶體管理的封鎖時間相關聯。 這個案例表示，和記憶體管理作業 (例如分頁) 建立關聯的事件會封鎖執行緒。 在這段期間內，會在並行視覺化檢視當作記憶體管理分類計數的 API 或核心狀態中封鎖執行緒。 像是分頁和記憶體配置等事件都包括在內。

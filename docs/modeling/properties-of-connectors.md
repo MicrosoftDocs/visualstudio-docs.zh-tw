@@ -10,11 +10,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 754f479b99eef44159994425ddd7a0d812bcf2ee
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55909228"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62970805"
 ---
 # <a name="properties-of-connectors"></a>接點的屬性
 連接器會代表產生的設計工具中的網域關聯性。
@@ -27,8 +27,8 @@ ms.locfileid: "55909228"
 |-|-|-|
 |色彩|此連接器的色彩。|黑色|
 |虛線樣式|此連接器 （實線、 虛線、 點、 線、 虛線點點或自訂） 的列虛線樣式。|實線|
-|來源端樣式|（HollowArrow、 EmptyArrow、 FilledArrow、 EmptyDiamond、 FilledDiamond，或無） 此接點來源端樣式。|無|
-|目標端樣式|（HollowArrow、 EmptyArrow、 FilledArrow、 EmptyDiamond、 FilledDiamond，或無） 此接點目標端樣式。|無|
+|來源端樣式|（HollowArrow、 EmptyArrow、 FilledArrow、 EmptyDiamond、 FilledDiamond，或無） 此接點來源端樣式。|None|
+|目標端樣式|（HollowArrow、 EmptyArrow、 FilledArrow、 EmptyDiamond、 FilledDiamond，或無） 此接點目標端樣式。|None|
 |文字色彩|使用此連接器與相關聯的文字裝飾項目的色彩。|黑色|
 |Thickness|這個連接器的線條的粗細，單位為英吋。|0.03125|
 |存取修飾詞|類別的存取層級 (`public`或`internal`)。|Public|
@@ -50,4 +50,4 @@ ms.locfileid: "55909228"
 
 ## <a name="see-also"></a>另請參閱
 
-- [特定領域語言工具字彙](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [Domain-Specific Language Tools Glossary](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa) (特定領域語言工具字彙表)

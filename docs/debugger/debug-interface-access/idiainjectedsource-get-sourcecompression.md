@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 00c7783752a183e8afc580c4c74285add8a51041
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56629790"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62839910"
 ---
 # <a name="idiainjectedsourcegetsourcecompression"></a>IDiaInjectedSource::get_sourceCompression
 擷取來源所用的壓縮的指標。
@@ -41,5 +41,5 @@ HRESULT get_sourceCompression ( 
 ## <a name="remarks"></a>備註
  這個方法所傳回的值是特定編譯器使用。 例如，編譯器可能會使用執行長度編碼方式編碼或 Huffman 式壓縮。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)

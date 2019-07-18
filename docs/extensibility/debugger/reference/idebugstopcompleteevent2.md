@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugStopCompleteEvent2 interface
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a3ec59d6e9a6008f195cab40fe5c1998aff24a50
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: d080b3073ffc13b90870b40a16a353634f4aa0cf
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56705277"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66352015"
 ---
 # <a name="idebugstopcompleteevent2"></a>IDebugStopCompleteEvent2
 

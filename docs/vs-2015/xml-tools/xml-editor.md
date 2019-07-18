@@ -1,30 +1,24 @@
 ---
 title: XML 編輯器 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: 623869f3-040b-4bf4-b353-ddc2229694e4
 caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 5053910e4f5760648eef989162eb31e3c3cc5c9e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: cadd0bded176a44d3eb977382778dd20b68a95a2
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49896324"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65703161"
 ---
 # <a name="xml-editor"></a>XML 編輯器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 XML 編輯器以 [!INCLUDE[msCoName](../includes/msconame-md.md)] Visual Studio 文字編輯器為基礎，並包括 XML 語言的其他支援。 XML 編輯器包括下列功能：  
   
 - XML 1.0 語法檢查。  
@@ -52,13 +46,13 @@ XML 編輯器以 [!INCLUDE[msCoName](../includes/msconame-md.md)] Visual Studio 
 ## <a name="express-editions"></a>Express Edition  
  下列 XML 編輯器功能在 Visual Studio Express Edition 中無法使用：  
   
--   從 XML 執行個體文件建立 XML 結構描述。  
+- 從 XML 執行個體文件建立 XML 結構描述。  
   
--   從 XML 編輯器檢視 XSLT 輸出。  
+- 從 XML 編輯器檢視 XSLT 輸出。  
   
--   編輯 XSLT 樣式表時進行智慧型驗證。  
+- 編輯 XSLT 樣式表時進行智慧型驗證。  
   
--   XML 結構描述總管。  
+- XML 結構描述總管。  
   
 ## <a name="in-this-section"></a>本節內容  
  [XML 文件驗證](../xml-tools/xml-document-validation.md)  
@@ -80,14 +74,11 @@ XML 編輯器以 [!INCLUDE[msCoName](../includes/msconame-md.md)] Visual Studio 
  說明 XML 編輯器使用者介面元件。  
   
 ## <a name="related-sections"></a>相關章節  
- [編輯文字、 程式碼和標記](http://msdn.microsoft.com/en-us/0d9c00d7-5df4-48a3-b185-2a265f055439)  
+ [編輯文字、 程式碼和標記](https://msdn.microsoft.com/0d9c00d7-5df4-48a3-b185-2a265f055439)  
  提供文字編輯器的相關資訊。  
   
- [XML 標準參考](http://msdn.microsoft.com/en-us/79c78508-c9d0-423a-a00f-672e855de401)  
+ [XML 標準參考](https://msdn.microsoft.com/79c78508-c9d0-423a-a00f-672e855de401)  
  提供 XML 技術的資訊，包括 XML、文件類型定義 (DTD)、XML 結構描述定義語言 (XSD) 和 XSLT。  
   
 ## <a name="see-also"></a>另請參閱  
  [Visual Studio 中的 XML 工具](../xml-tools/xml-tools-in-visual-studio.md)
-
-
-

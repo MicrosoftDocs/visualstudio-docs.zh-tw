@@ -1,14 +1,9 @@
 ---
-title: 'Idiaenumframedata:: Reset |Microsoft Docs'
-ms.custom: ''
+title: IDiaEnumFrameData::Reset | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 2242165b-096b-4345-b214-4a8941dc5ba5
 caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 914349d5151e50d4326a17e62574b3c91ef5e28e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: cfdf39b4569fd74d9ba42e651199d5013e952c5c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51760789"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68161210"
 ---
 # <a name="idiaenumframedatareset"></a>IDiaEnumFrameData::Reset
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -41,6 +36,3 @@ HRESULT Reset();
   
 ## <a name="see-also"></a>另請參閱  
  [IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md)
-
-
-

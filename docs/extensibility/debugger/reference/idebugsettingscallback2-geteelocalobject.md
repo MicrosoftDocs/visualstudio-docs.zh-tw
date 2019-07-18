@@ -5,17 +5,20 @@ ms.topic: reference
 helpviewer_keywords:
 - IDebugSettingsCallback2::GetEELocalObject
 ms.assetid: e69a3469-a049-420c-b918-c48a1e7b9baf
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 22d95914ea3366578cb401c304ac52aa5db5e5a1
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 561f6727ca0273d5d59434a7bfdd0cdc00533754
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56703678"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66322186"
 ---
 # <a name="idebugsettingscallback2geteelocalobject"></a>IDebugSettingsCallback2::GetEELocalObject
 擷取給定的計量名稱的運算式的評估工具本機物件。
@@ -40,22 +43,18 @@ private int GetEELocalObject(
 );
 ```
 
-#### <a name="parameters"></a>參數
- `guidLang`
+## <a name="parameters"></a>參數
+`guidLang`\
+[in]程式設計語言的唯一識別碼。
 
- [in]程式設計語言的唯一識別碼。
+`guidVendor`\
+[in]供應商的唯一識別碼。
 
- `guidVendor`
+`pszMetric`\
+[in]計量名稱。
 
- [in]供應商的唯一識別碼。
-
- `pszMetric`
-
- [in]計量名稱。
-
- `ppUnk`
-
- [out]傳回的運算式評估工具的本機物件。
+`ppUnk`\
+[out]傳回的運算式評估工具的本機物件。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

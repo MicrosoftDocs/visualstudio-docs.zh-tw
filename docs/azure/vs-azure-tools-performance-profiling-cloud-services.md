@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.workload: azure-vs
 ms.date: 11/11/2016
 ms.author: mikejo
-ms.openlocfilehash: 12fcc2813b36968270e0eeba968a5572f904fc1f
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: fd436a6b7e38c8f76de5d113c326e194e4011155
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55946936"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62427396"
 ---
 # <a name="testing-the-performance-of-a-cloud-service"></a>測試雲端服務的效能
 ## <a name="overview"></a>總覽
@@ -101,7 +101,7 @@ ms.locfileid: "55946936"
 2. 選擇 [Azure 運算] 節點，然後選擇從 Visual Studio 發佈時您選取要分析的雲端服務的 Azure 部署節點。
 3. 若要檢視執行個體的分析報告，請選擇服務中的角色、開啟特定執行個體的捷徑功能表，然後選擇 [檢視分析報告] 。
 
-    現在便會從 Azure 下載 .vsp 檔案的報告，而下載狀態會出現在 Azure 活動記錄檔中。 下載完成時，分析報告會顯示在 Visual Studio 編輯器的索引標籤中，名為 <Role name>*<Instance Number>*<identifier>.vsp。 報告的摘要資料隨即出現。
+    現在便會從 Azure 下載 .vsp 檔案的報告，而下載狀態會出現在 Azure 活動記錄檔中。 下載完成時，分析報告會顯示在 Visual Studio 編輯器的索引標籤中，名為  <角色名稱\><執行個體號碼\><識別碼\>.vsp。 報告的摘要資料隨即出現。
 4. 若要顯示報告的不同檢視，在 [目前檢視] 清單中，選擇您要的檢視類型。 如需詳細資訊，請參閱 [分析工具報告檢視](https://msdn.microsoft.com/library/azure/bb385755.aspx)。
 
 ## <a name="next-steps"></a>後續步驟

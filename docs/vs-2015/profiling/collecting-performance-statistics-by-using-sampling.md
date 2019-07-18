@@ -12,12 +12,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a557691d06c41fc3d8919be10ff22038975686a3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 0b84674eafde85528e04157ab213913e57d27e60
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54777101"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439030"
 ---
 # <a name="collecting-performance-statistics-by-using-sampling"></a>使用取樣收集效能統計資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,18 +26,18 @@ ms.locfileid: "54777101"
   
  **需求**  
   
--   [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)]、[!INCLUDE[vsPreLong](../includes/vsprelong-md.md)]、[!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
 > [!NOTE]
->  Windows 8 和 Windows Server 2012 增強式安全性功能需要的重大變更，會以 Visual Studio 分析工具在這些平台收集資料的方式表現。 Windows 市集應用程式也需要新的資料收集技術。 請參閱 [Windows 8 和 Windows Server 2012 應用程式的效能工具](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)。  
+> Windows 8 和 Windows Server 2012 增強式安全性功能需要的重大變更，會以 Visual Studio 分析工具在這些平台收集資料的方式表現。 Windows 市集應用程式也需要新的資料收集技術。 請參閱 [Windows 8 和 Windows Server 2012 應用程式的效能工具](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)。  
   
  您可以使用下列其中一種程序來指定取樣方法：  
   
--   在分析精靈的第一個頁面上，按一下 [CPU 取樣 (建議使用)]。  
+- 在分析精靈的第一個頁面上，按一下 [CPU 取樣 (建議使用)]。  
   
--   在 [效能總管] 工具列的 [方法] 清單中，按一下 [取樣]。  
+- 在 [效能總管] 工具列的 [方法] 清單中，按一下 [取樣]。  
   
--   在效能工作階段 [屬性] 對話方塊中的 [一般] 頁面上，按一下 [取樣]。  
+- 在效能工作階段 [屬性] 對話方塊中的 [一般] 頁面上，按一下 [取樣]。  
   
 ## <a name="common-tasks"></a>一般工作  
  您可以在效能工作階段的 [效能工作階段]  對話方塊中指定其他選項。 若要開啟此對話方塊：  

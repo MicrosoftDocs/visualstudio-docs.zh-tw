@@ -1,14 +1,9 @@
 ---
 title: 原始檔控制整合的基本資訊 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Source Control Integration, essentials
 - Source Control Integration,overview
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 442057cb-fd54-4283-96f8-2f6dc8bf2de7
 caps.latest.revision: 10
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 9893d5525bf66b167dea170c0c5fae8285aa40af
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: b9189b647baa29d72975f84172696ecb54cd7f87
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51780967"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68183438"
 ---
 # <a name="source-control-integration-essentials"></a>原始檔控制整合的基本資訊
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -36,7 +31,7 @@ ms.locfileid: "51780967"
   
 1. 建立一個實作中指定的函式的 DLL[原始檔控制外掛程式](../../extensibility/source-control-plug-ins.md)。  
   
-2. 將 DLL 註冊藉由適當的登錄項目，如中所述[如何： 安裝原始檔控制外掛程式](../../extensibility/internals/how-to-install-a-source-control-plug-in.md)。  
+2. 中所述，藉由適當的登錄項目中，登錄 DLL [How to:安裝原始檔控制外掛程式](../../extensibility/internals/how-to-install-a-source-control-plug-in.md)。  
   
 3. 建立協助程式 UI，並顯示原始檔控制配接器套件出現提示時 ([!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]會處理透過原始檔控制外掛程式的原始檔控制功能的元件)。  
   
@@ -61,4 +56,3 @@ ms.locfileid: "51780967"
  [概觀](../../extensibility/internals/source-control-integration-overview.md)   
  [建立原始檔控制外掛程式](../../extensibility/internals/creating-a-source-control-plug-in.md)   
  [建立原始檔控制 VSPackage](../../extensibility/internals/creating-a-source-control-vspackage.md)
-

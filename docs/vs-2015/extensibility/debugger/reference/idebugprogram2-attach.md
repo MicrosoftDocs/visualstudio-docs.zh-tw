@@ -1,14 +1,9 @@
 ---
 title: IDebugProgram2::Attach |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugProgram2::Attach
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: de069fbf-a565-4905-b102-f5658c55aacd
 caps.latest.revision: 12
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 894c3eeb8fa86c51b540fefdb970f1ecfbbf1e46
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 0e029c2e16d5eee1764b463b21fc0fd8a4032252
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51776339"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62580400"
 ---
 # <a name="idebugprogram2attach"></a>IDebugProgram2::Attach
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -64,4 +59,3 @@ int Attach( 
  [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)   
  [OnAttach](../../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md)   
  [Attach](../../../extensibility/debugger/reference/idebugengine2-attach.md)
-

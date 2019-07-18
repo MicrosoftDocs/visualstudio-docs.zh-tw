@@ -1,14 +1,9 @@
 ---
-title: CA1703： 資源字串應該使用正確的拼字 |Microsoft Docs
-ms.custom: ''
+title: CA1703:資源字串應該使用正確的拼字 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - ResourceStringsShouldBeSpelledCorrectly
 - CA1703
@@ -20,14 +15,14 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: e5f5541a048d1434f64bf53e7573fa8288933e4e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c1ff5a2600a4f40673f7d38dfe551ab9ac8cfe29
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49854999"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68189220"
 ---
-# <a name="ca1703-resource-strings-should-be-spelled-correctly"></a>CA1703：資源字串應該拼寫正確
+# <a name="ca1703-resource-strings-should-be-spelled-correctly"></a>CA1703:資源字串應該使用正確的拼字
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -41,22 +36,19 @@ ms.locfileid: "49854999"
  資源字串包含一個或多個 Microsoft 拼字檢查程式庫無法辨識的字。
 
 ## <a name="rule-description"></a>規則描述
- 此規則會將資源字串剖析成單字 （token 化的複合字），並檢查每個字/語彙基元的拼字。 如需剖析演算法的詳細資訊，請參閱[CA1704： 識別項應該使用正確的拼字](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)。
+ 此規則會將資源字串剖析成單字 （token 化的複合字），並檢查每個字/語彙基元的拼字。 如需剖析演算法的詳細資訊，請參閱[CA1704:識別項應該使用正確的拼字](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)。
 
  預設情況下，會使用英文 (en) 版本的拼字檢查程式。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
- 若要修正此規則的違規情形，使用完整的文字拼寫正確，或將文字加入自訂字典。 如需如何使用自訂字典的詳細資訊，請參閱[CA1704： 識別項應該使用正確的拼字](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)。
+ 若要修正此規則的違規情形，使用完整的文字拼寫正確，或將文字加入自訂字典。 如需如何使用自訂字典的詳細資訊，請參閱[CA1704:識別項應該使用正確的拼字](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
  請勿隱藏此規則的警告。 正確拼寫的字會減少所需了解新的軟體程式庫的時間。
 
 ## <a name="related-rules"></a>相關的規則
- [CA1701：資源字串複合字應該使用正確的大小寫](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)
+ [CA1701:資源字串複合字應該使用正確的大小寫](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)
 
- [CA1704：識別項應該使用正確的拼字](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)
+ [CA1704:識別項應該使用正確的拼字](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)
 
- [CA2204：常值必須使用正確的拼字](../code-quality/ca2204-literals-should-be-spelled-correctly.md)
-
-
-
+ [CA2204:常值應該使用正確的拼字](../code-quality/ca2204-literals-should-be-spelled-correctly.md)

@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEngine2 interface
 ms.assetid: 1f0e9ac0-6dfb-461a-976c-888d82144cdb
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 86458a501ba1bb321727663b6c8b995d329904f7
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: ce60ffb1143dd763ea14390b0b55e105f74d1b53
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56707571"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66352560"
 ---
 # <a name="idebugengine2"></a>IDebugEngine2
 這個介面會表示偵錯引擎 (DE)。 它用來管理各方面的偵錯工作階段中，從建立中斷點，設定及清除例外狀況。

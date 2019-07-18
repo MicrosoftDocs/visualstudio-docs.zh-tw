@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - VSTemplate element [Visual Studio project templates]
 ms.assetid: f8ac561b-3b0b-4246-9ec9-118d2447e9a9
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7f9dc06b287485d857c18214ade500e63ff8032b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: cdcbde9ab8e49d439ab909b4cd5563d6b8ec3afa
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56694253"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66322873"
 ---
 # <a name="vstemplate-element-visual-studio-templates"></a>VSTemplate 項目 （Visual Studio 範本）
 包含有關專案範本、 項目範本或入門套件的所有中繼資料。

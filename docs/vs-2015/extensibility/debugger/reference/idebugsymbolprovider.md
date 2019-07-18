@@ -1,14 +1,9 @@
 ---
-title: IDebugSymbolProvider |Microsoft Docs
-ms.custom: ''
+title: IDebugSymbolProvider | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugSymbolProvider
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: df5f095f-1dee-46f9-84cf-92417c71d5fb
 caps.latest.revision: 15
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: fb2535cdbb75a2012134b9d439fd522617e3231b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: b760b106992b200576258ab6becb1ae3849b8f3a
+ms.sourcegitcommit: da4079f5b6ec884baf3108cbd0519d20cb64c70b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51775091"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "62420923"
 ---
 # <a name="idebugsymbolprovider"></a>IDebugSymbolProvider
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -44,7 +39,7 @@ IDebugSymbolProvider : IUnknown
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法  
  下表顯示的方法`IDebugSymbolProvider`。  
   
-|方法|描述|  
+|方法|說明|  
 |------------|-----------------|  
 |`Initialize`|已取代。 請勿使用。|  
 |`Uninitialize`|已取代。 請勿使用。|  
@@ -67,9 +62,9 @@ IDebugSymbolProvider : IUnknown
 ## <a name="requirements"></a>需求  
  標頭： sh.h  
   
- 命名空間： Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間：Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="example"></a>範例  
  此範例示範如何具現化的符號提供者中，指定 （偵錯引擎必須知道此值） 其 GUID。  
@@ -112,4 +107,3 @@ IDebugSymbolProvider *GetSymbolProvider(GUID *pSymbolProviderGuid)
   
 ## <a name="see-also"></a>另請參閱  
  [符號提供者介面](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)
-

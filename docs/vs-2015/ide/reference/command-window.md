@@ -17,17 +17,16 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c7ec3911496c5106d53f90a281452df2c8a128f6
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 491d6c044b22a89e8ea61a78d5dd70e0a348b893
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54788343"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441446"
 ---
 # <a name="command-window"></a>命令視窗
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 [命令] 視窗是用來直接在 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 整合式開發環境 (IDE) 中執行命令或別名。 您可以執行功能表命令以及不會出現在任何功能表上的命令。 若要顯示 [命令] 視窗，請從 [檢視] 功能表中選擇 [其他視窗]，然後選取 [命令視窗]。  
   
 ## <a name="displaying-the-values-of-variables"></a>顯示變數的值  
@@ -63,7 +62,7 @@ ms.locfileid: "54788343"
 |向下捲動視窗。|命令視窗內容|向下鍵或 CTRL+向下鍵|  
   
 > [!TIP]
->  您可以將整個或一部分的先前命令複製至輸入行，方法是捲動到它，並反白顯示它的全部或一部分，然後按 ENTER。  
+> 您可以將整個或一部分的先前命令複製至輸入行，方法是捲動到它，並反白顯示它的全部或一部分，然後按 ENTER。  
   
 ## <a name="mark-mode"></a>標記模式  
  當您按一下 [命令] 視窗中的任何先前行時，會自動切換至標記模式。 這可讓您像在任何文字編輯器中一樣地選取、編輯和複製先前命令的文字，並將它們貼入目前行。  
@@ -105,7 +104,7 @@ Edit.ReplaceInFiles /case /pattern:regex var[1-3]+ oldpar
 - `var[1-3]+` 和 `oldpar` 是參數  
   
   > [!NOTE]
-  >  任何包含空格的命令、參數、切換參數或值的兩端都必須有雙引號。  
+  > 任何包含空格的命令、參數、切換參數或值的兩端都必須有雙引號。  
   
   在命令列上，切換參數和參數的位置可以自由地互換，例外是 [Shell](../../ide/reference/shell-command.md) 命令，其切換參數和參數必須為特定順序。  
   

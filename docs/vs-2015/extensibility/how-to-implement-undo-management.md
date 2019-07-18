@@ -1,28 +1,23 @@
 ---
-title: 如何： 實作復原管理 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：實作復原管理 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - undo management
 ms.assetid: 1942245d-7a1d-4a11-b5e7-a3fe29f11c0b
 caps.latest.revision: 12
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: f7eb3e3a1bbda905b2f5c5819835b10513d444fb
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 0f3d56ae02718f5dfdf373eeeb6aff774d11931e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51806096"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435946"
 ---
-# <a name="how-to-implement-undo-management"></a>如何： 實作復原管理
+# <a name="how-to-implement-undo-management"></a>HOW TO：實作復原管理
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 用於復原管理的主要介面是<xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoManager>，這由環境實作。 若要支援復原管理，請實作不同的復原單位 (也就是<xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoUnit>，其中可以包含多個個別的步驟。  
@@ -34,9 +29,9 @@ ms.locfileid: "51806096"
   
 #### <a name="to-support-undo-management-for-a-single-view-editor"></a>若要支援單一檢視編輯器復原管理  
   
-1.  呼叫`QueryInterface`上`IServiceProvider`介面上的視窗框架`IOleUndoManager`，從 文件檢視物件來存取復原管理員 (`IID_IOLEUndoManager`)。  
+1. 呼叫`QueryInterface`上`IServiceProvider`介面上的視窗框架`IOleUndoManager`，從 文件檢視物件來存取復原管理員 (`IID_IOLEUndoManager`)。  
   
-2.  當檢視設置至視窗框架時，它會取得站台的指標，它可以用來呼叫`QueryInterface`針對`IServiceProvider`。  
+2. 當檢視設置至視窗框架時，它會取得站台的指標，它可以用來呼叫`QueryInterface`針對`IServiceProvider`。  
   
 ## <a name="cases-where-an-editor-supports-multiple-views"></a>其中的編輯器支援多個檢視的情況下  
  如果您有文件和檢視區隔，就與文件本身相關聯的一個正常復原管理員。 所有的復原單位會放在一個復原管理員與文件資料物件建立關聯。  
@@ -53,17 +48,17 @@ ms.locfileid: "51806096"
   
 3. 轉送您<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A>並<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A>呼叫預存的`IOleCommandTarget`下列 StandardCommandSet97 命令介面：  
   
-   -   cmdidUndo  
+   - cmdidUndo  
   
-   -   cmdidMultiLevelUndo  
+   - cmdidMultiLevelUndo  
   
-   -   cmdidRedo  
+   - cmdidRedo  
   
-   -   cmdidMultiLevelRedo  
+   - cmdidMultiLevelRedo  
   
-   -   cmdidMultiLevelUndoList  
+   - cmdidMultiLevelUndoList  
   
-   -   cmdidMultiLevelRedoList  
+   - cmdidMultiLevelRedoList  
   
 4. 呼叫`QueryInterface`上`IOleUndoManager`如`IID_IVsChangeTrackingUndoManager`。 儲存的指標<xref:Microsoft.VisualStudio.TextManager.Interop.IVsChangeTrackingUndoManager>。  
   
@@ -82,10 +77,9 @@ ms.locfileid: "51806096"
    `OleUndoManager`類別代表單一復原 stack 執行個體。 因此，為每個受到追蹤的復原或取消復原的資料實體的一個復原管理員物件。  
   
 > [!NOTE]
->  文字編輯器是廣泛使用復原管理員物件，就沒有特定的支援的文字編輯器的一般元件。 如果您想要支援多層級復原或取消復原，您可以使用此物件，若要這樣做。  
+> 文字編輯器是廣泛使用復原管理員物件，就沒有特定的支援的文字編輯器的一般元件。 如果您想要支援多層級復原或取消復原，您可以使用此物件，若要這樣做。  
   
 ## <a name="see-also"></a>另請參閱  
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsChangeTrackingUndoManager>   
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLifetimeControlledObject>   
  [如何：清除復原堆疊](../extensibility/how-to-clear-the-undo-stack.md)
-

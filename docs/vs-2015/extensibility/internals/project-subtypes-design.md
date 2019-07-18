@@ -1,26 +1,21 @@
 ---
 title: 專案子類型設計 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - project subtypes, design
 ms.assetid: 405488bb-1362-40ed-b0f1-04a57fc98c56
 caps.latest.revision: 33
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 96ab44df6512b4288cf01f4c1f99d435a9c24bd5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 0e7cd96324e5a2bbd6c9b0acf4125bc0450cfd06
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51806122"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62430529"
 ---
 # <a name="project-subtypes-design"></a>設計專案子類型
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -29,11 +24,11 @@ ms.locfileid: "51806122"
   
  下列主題將詳細說明的基本設計和實作專案子類型：  
   
--   專案子類型設計。  
+- 專案子類型設計。  
   
--   多層級的彙總。  
+- 多層級的彙總。  
   
--   支援的介面。  
+- 支援的介面。  
   
 ## <a name="project-subtype-design"></a>專案子類型設計  
  專案子類型的初始設定之後，即可彙總主<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>和<xref:Microsoft.VisualStudio.Shell.Interop.IVsProject>物件。 此彙總可以覆寫或增強功能的基底專案的大部分專案子類型。 專案子類型有機會先處理使用的屬性<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>，使用的命令<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>並<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy>，和專案項目管理使用<xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3>。 此外，也可以擴充專案子類型：  
@@ -76,11 +71,11 @@ ms.locfileid: "51806122"
 ## <a name="multi-level-aggregation"></a>多層級的彙總  
  包裝一個較低的層級的專案子類型的專案子類型實作需要以合作方式進行程式設計，以允許內部專案子類型，才能正確運作。 程式設計責任清單包括：  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment>正在包裝的內部的子類型的專案子類型的實作必須委派給<xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment>內部的專案子類型的實作，同時<xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.Load%2A>和<xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.Save%2A>方法。  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment>正在包裝的內部的子類型的專案子類型的實作必須委派給<xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment>內部的專案子類型的實作，同時<xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.Load%2A>和<xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.Save%2A>方法。  
   
--   <xref:EnvDTE80.IInternalExtenderProvider>包裝函式專案子類型的實作必須委派，其內部的專案子類型。 特別是，實作<xref:EnvDTE80.IInternalExtenderProvider.GetExtenderNames%2A>必須獲得內部專案子類型之名稱的字串，然後再進行串連它想要新增為擴充項的字串。  
+- <xref:EnvDTE80.IInternalExtenderProvider>包裝函式專案子類型的實作必須委派，其內部的專案子類型。 特別是，實作<xref:EnvDTE80.IInternalExtenderProvider.GetExtenderNames%2A>必須獲得內部專案子類型之名稱的字串，然後再進行串連它想要新增為擴充項的字串。  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfgProvider>包裝函式專案子類型的實作必須具現化<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFlavorCfg>物件，其內部的專案子類型，並容納它做為私用的委派，因為只有基底專案的專案組態物件直接知道包裝函式專案子類型的組態物件存在。 外部專案子類型可以一開始，選擇其想要直接處理的組態介面，然後委派到內部的專案子類型的實作 rest <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFlavorCfg.get_CfgType%2A>。  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfgProvider>包裝函式專案子類型的實作必須具現化<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFlavorCfg>物件，其內部的專案子類型，並容納它做為私用的委派，因為只有基底專案的專案組態物件直接知道包裝函式專案子類型的組態物件存在。 外部專案子類型可以一開始，選擇其想要直接處理的組態介面，然後委派到內部的專案子類型的實作 rest <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFlavorCfg.get_CfgType%2A>。  
   
 ## <a name="supporting-interfaces"></a>支援的介面  
  基底的專案會將委派支援加入專案子類型的介面來擴充它的實作的各種層面的呼叫。 這包括擴充專案組態的物件和各種屬性瀏覽器物件。 這些介面藉由呼叫擷取`QueryInterface`上`punkOuter`(指標`IUnknown`) 的最外層的專案子類型的彙總工具。  
@@ -97,4 +92,3 @@ ms.locfileid: "51806122"
 ## <a name="see-also"></a>另請參閱  
  <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID>   
  <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID2>
-

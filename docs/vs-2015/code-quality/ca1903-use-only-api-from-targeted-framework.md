@@ -1,14 +1,9 @@
 ---
-title: CA1903： 只使用 API 來自目標架構 |Microsoft Docs
-ms.custom: ''
+title: CA1903:使用來自目標架構的 API |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - UseOnlyAPIFromTargetedFramework
 - CA1903
@@ -20,24 +15,24 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 1c23b25029775cd3abca84e695c50b5a0fdf68cf
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 146563dfa358367e7c22f8ad37564b85d64eaf1d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49191566"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68189086"
 ---
-# <a name="ca1903-use-only-api-from-targeted-framework"></a>CA1903：只使用來自目標架構的 API
+# <a name="ca1903-use-only-api-from-targeted-framework"></a>CA1903:只使用來自目標架構的 API
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-如需 Visual Studio 2017 的最新文件，請參閱 < [CA1903： 只使用來自目標架構 API](https://docs.microsoft.com/visualstudio/code-quality/ca1903-use-only-api-from-targeted-framework) docs.microsoft.com 上。  
+如需 Visual Studio 的最新文件，請參閱[CA1903:只使用來自目標架構 API](https://docs.microsoft.com/visualstudio/code-quality/ca1903-use-only-api-from-targeted-framework)。  
   
 |||  
 |-|-|  
 |TypeName|UseOnlyApiFromTargetedFramework|  
 |CheckId|CA1903|  
 |分類|Microsoft.Portability|  
-|中斷變更|中斷-時引發的外部可見的成員或型別，簽章。<br /><br /> 非中斷-時引發的方法主體中。|  
+|中斷變更|中斷-時引發的外部可見的成員或型別，簽章。<br /><br /> 非分行-時引發的方法主體中。|  
   
 ## <a name="cause"></a>原因  
  成員或型別使用成員或並未包含在專案的目標 framework 的 service pack 中所導入的類型。  
@@ -61,7 +56,7 @@ ms.locfileid: "49191566"
  若要移除的相依性的 service pack，請移除新的成員或類型的所有使用方式。 如果這是刻意的相依性時，隱藏警告，或關閉這項規則。  
   
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機  
- 如果這不是刻意的相依性，於指定的服務組件，則請勿隱藏此規則的警告。 在此情況下，您的應用程式可能無法在系統上執行未安裝此 service pack。 隱藏警告或將關閉這項規則，如果這是刻意的相依性。  
+ 如果這不是刻意的相依性，於指定的服務組件，則請勿隱藏此規則的警告。 在此情況下，您的應用程式可能無法在系統上執行未安裝此 service pack。 隱藏警告，或關閉這項規則，如果這是刻意的相依性。  
   
 ## <a name="example"></a>範例  
  下列範例顯示使用的型別 DateTimeOffset，僅供以.NET 2.0 Service Pack 1 的類別。 這個範例需要在目標 Framework 下拉式清單中，在專案屬性中已選取 .NET Framework 2.0。  
@@ -76,4 +71,3 @@ ms.locfileid: "49191566"
 ## <a name="see-also"></a>另請參閱  
  [可攜性警告](../code-quality/portability-warnings.md)   
  [以特定的 .NET Framework 版本為目標](../ide/targeting-a-specific-dotnet-framework-version.md)
-

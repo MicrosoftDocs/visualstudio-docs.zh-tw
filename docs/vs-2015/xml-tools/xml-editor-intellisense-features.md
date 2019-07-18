@@ -1,30 +1,24 @@
 ---
 title: XML 編輯器 IntelliSense 功能 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: 2b26f214-cc3a-46bf-b260-14eb8e599182
 caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 4dbb96ffcca47303a90b1ff4c71643a63f6b4aa5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 9c691eea7417e882ee3b73e9f2adc538714b486a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49830739"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68158568"
 ---
 # <a name="xml-editor-intellisense-features"></a>XML 編輯器 IntelliSense 功能
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 XML 編輯器提供完整的 IntelliSense 功能，其相當於 Visual Studio 中提供的其他語言編輯器。 本節說明如何使用 IntelliSense (XSLT) 搭配 XML 結構定義語言 (XSD) 與 XSLT 文件。  
   
 ## <a name="intellisense-in-an-xsd-document"></a>XSD 文件中的 IntelliSense  
@@ -51,7 +45,7 @@ XML 編輯器提供完整的 IntelliSense 功能，其相當於 Visual Studio �
   
 - 指定具名範本的參數名稱。‏  
   
-  如需詳細資訊，請參閱 <<c0> [ 逐步解說： 使用 XSLT IntelliSense](../xml-tools/walkthrough-using-xslt-intellisense.md)主題。  
+  如需詳細資訊，請參閱[逐步解說：使用 XSLT IntelliSense](../xml-tools/walkthrough-using-xslt-intellisense.md)主題。  
   
 ## <a name="auto-completion"></a>自動完成  
  XML 編輯器還可藉由填入必要的 XML 語法，使編輯 XML 變得更容易。 例如，如果您鍵入下列開始標記：  
@@ -91,26 +85,26 @@ XML 編輯器提供完整的 IntelliSense 功能，其相當於 Visual Studio �
   
  XML 編輯器會針對下列項目執行此操作：  
   
--   對稱的開始與結束標記。  
+- 對稱的開始與結束標記。  
   
--   任何一對 「\<"或">"角括號。  
+- 任何一對 「\<"或">"角括號。  
   
--   註解的開始與結束。  
+- 註解的開始與結束。  
   
--   處理指示的開始與結束。  
+- 處理指示的開始與結束。  
   
--   CDATA 區塊的開始與結束。  
+- CDATA 區塊的開始與結束。  
   
--   DTD 宣告的開始與結束。  
+- DTD 宣告的開始與結束。  
   
--   屬性上的開頭及結束引號。  
+- 屬性上的開頭及結束引號。  
   
 ## <a name="modifying-the-intellisense-options"></a>修改 IntelliSense 選項  
  依預設會啟用 IntelliSense 及自動完成功能。 但是，您可藉由修改 [工具] - [選項] 設定來對其進行變更。  
   
  **自動插入**一節**其他**頁面控制下列行為：  
   
-|名稱|描述|  
+|名稱|說明|  
 |----------|-----------------|  
 |關閉標記|插入新項目的關閉標記。|  
 |屬性引號|輸入新屬性名稱時，請插入屬性值引號。|  
@@ -118,16 +112,13 @@ XML 編輯器提供完整的 IntelliSense 功能，其相當於 Visual Studio �
   
 #### <a name="to-change-the-auto-completion-behavior"></a>變更自動完成行為  
   
-1.  選取 [工具] 功能表上的 [選項]。  
+1. 選取 [工具]  功能表上的 [選項]  。  
   
-2.  依序展開**文字編輯器**，展開**XML**，然後選取**其他**。  
+2. 依序展開**文字編輯器**，展開**XML**，然後選取**其他**。  
   
-3.  若要變更任何**自動插入**區段，然後按一下**確定**。  
+3. 若要變更任何**自動插入**區段，然後按一下**確定**。  
   
 ## <a name="see-also"></a>另請參閱  
  [XML 編輯器](../xml-tools/xml-editor.md)   
  [使用 IntelliSense](../ide/using-intellisense.md)   
  [逐步解說：使用 XSLT IntelliSense](../xml-tools/walkthrough-using-xslt-intellisense.md)
-
-
-

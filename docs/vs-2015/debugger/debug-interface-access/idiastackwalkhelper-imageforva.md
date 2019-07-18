@@ -1,14 +1,9 @@
 ---
 title: 'Idiastackwalkhelper:: Imageforva |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 8d4edabf-3c01-4fef-8b61-4779f3371067
 caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: a48891d39f79705e072196b52c0136aef64661c2
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 36ad6529f28701d0e6d83550636382be773f0ec1
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51740243"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68150099"
 ---
 # <a name="idiastackwalkhelperimageforva"></a>IDiaStackWalkHelper::imageForVA
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -51,6 +46,3 @@ HRESULT imageForVA(
   
 ## <a name="see-also"></a>另請參閱  
  [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)
-
-
-

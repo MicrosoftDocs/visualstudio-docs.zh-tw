@@ -1,14 +1,9 @@
 ---
-title: 'Idiasymbol:: Get_symbolsfilename |Microsoft Docs'
-ms.custom: ''
+title: IDiaSymbol::get_symbolsFileName | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: c1aa39ee-d645-431e-bf5f-0640c0998934
 caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: c0f16a4c0b5ed4f2b3f0b41c407cc9f1c5947694
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 3d97a70e661796c681916b60d5eacb364e90ada3
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51743811"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "64834523"
 ---
 # <a name="idiasymbolgetsymbolsfilename"></a>IDiaSymbol::get_symbolsFileName
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -46,7 +41,7 @@ HRESULT get_symbolsFileName ( 
  如果成功，則傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。  
   
 > [!NOTE]
->  傳回值為`S_FALSE`表示此屬性不適用於符號。  
+> 傳回值為`S_FALSE`表示此屬性不適用於符號。  
   
 ## <a name="remarks"></a>備註  
  這個屬性是僅適用於具有符號[SymTagEnum 列舉](../../debugger/debug-interface-access/symtagenum.md)的值`SymTagExe`也具有全域範圍。  
@@ -54,6 +49,3 @@ HRESULT get_symbolsFileName ( 
 ## <a name="see-also"></a>另請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [SymTagEnum 列舉](../../debugger/debug-interface-access/symtagenum.md)
-
-
-

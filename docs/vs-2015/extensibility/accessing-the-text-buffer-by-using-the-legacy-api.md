@@ -1,28 +1,23 @@
 ---
 title: 使用舊版 API 存取的文字緩衝 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - text buffers
 ms.assetid: cd6cf4ae-fff5-4e23-b293-7cbafdb8aed2
 caps.latest.revision: 16
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 7c52e4beb1397e9919c3bf670e009d7ca1060ce1
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f2cfbd84bc4f9298358a2a2d1ba87f76d6e5303c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51722196"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68184989"
 ---
-# <a name="accessing-the-text-buffer-by-using-the-legacy-api"></a>使用舊版 API 存取的文字緩衝區
+# <a name="accessing-the-text-buffer-by-using-the-legacy-api"></a>使用舊版 API 存取文字緩衝區
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 負責管理文字資料流和檔案持續性的文字。 雖然緩衝區可以讀取或寫入其他格式中，使用 Unicode 來執行所有一般的通訊緩衝區。 在舊版的 Api 中，文字緩衝區可以使用一段或二維的座標系統識別緩衝區中的字元位置。  
@@ -46,4 +41,3 @@ ms.locfileid: "51722196"
   
 ## <a name="see-also"></a>另請參閱  
  [深入探索核心編輯器](../extensibility/inside-the-core-editor.md)
-

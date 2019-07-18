@@ -1,14 +1,9 @@
 ---
 title: IDE 常數 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - IDE, errors
 - logical views
@@ -20,13 +15,13 @@ helpviewer_keywords:
 ms.assetid: 5030e70a-241d-474a-ba8c-e3b1cf947ff0
 caps.latest.revision: 24
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: aa8fb2e4af74facc0ca00343e6abad36b7fcec50
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 18256996d829d34117caa11f4e581d8e54d738b1
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51743307"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68204046"
 ---
 # <a name="ide-constants"></a>IDE 常數
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +41,7 @@ ms.locfileid: "51743307"
   
 ## <a name="editor-factory-flags"></a>編輯器 Factory 旗標  
   
-|值|描述|  
+|值|說明|  
 |-----------|-----------------|  
 |[CEF.CloneFile](/dotnet/api/microsoft.visualstudio.vsconstants.cef?view=visualstudiosdk-2015)|過時的旗標位元的第一個參數為結合<xref:Microsoft.VisualStudio.Package.EditorFactory.CreateEditorInstance%2A>方法。|  
 |[CEF.CloneFile](/dotnet/api/microsoft.visualstudio.vsconstants.cef?view=visualstudiosdk-2015)|合併的第一個參數的位元<xref:Microsoft.VisualStudio.Package.EditorFactory.CreateEditorInstance%2A>，這方法，表示編輯器 factory 應該執行必要的修正程式。|  
@@ -124,4 +119,3 @@ ms.locfileid: "51743307"
   
 ## <a name="see-also"></a>另請參閱  
  [用來擴充專案系統的 IDE 定義的命令](../extensibility/internals/ide-defined-commands-for-extending-project-systems.md)
-

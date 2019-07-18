@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugBreakpointRequest2::GetLocationType
 ms.assetid: b6d14c59-d3aa-48ff-8278-f6b5bba9c2f3
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ef63656e645611e13bfc6e0fcf1fb3a5cc339abc
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 4c298bd220547c2faa6315ae7c06f9495368b62e
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56684685"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66352958"
 ---
 # <a name="idebugbreakpointrequest2getlocationtype"></a>IDebugBreakpointRequest2::GetLocationType
 取得此中斷點要求的中斷點位置類型。
@@ -36,10 +39,9 @@ int GetLocationType(
 );
 ```
 
-#### <a name="parameters"></a>參數
-`pBPLocationType`
-
- [out]傳回值，以從[BP_LOCATION_TYPE](../../../extensibility/debugger/reference/bp-location-type.md)列舉，可描述此中斷點要求的位置。
+## <a name="parameters"></a>參數
+`pBPLocationType`\
+[out]傳回值，以從[BP_LOCATION_TYPE](../../../extensibility/debugger/reference/bp-location-type.md)列舉，可描述此中斷點要求的位置。
 
 ## <a name="return-value"></a>傳回值
 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。 傳回`E_FAIL`如果`bpLocation`欄位中相關聯[BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)結構無效。

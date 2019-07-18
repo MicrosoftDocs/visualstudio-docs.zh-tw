@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ef85067ca3478bb2387f1f47a35938805f5fe0c5
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 24ca736d65a889c0bbada24412ebedecbe6970ce
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55924587"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62428972"
 ---
 # <a name="how-to-exclude-projects-from-a-build"></a>HOW TO：從組建排除專案
 
@@ -22,37 +22,37 @@ ms.locfileid: "55924587"
 
 您可以利用下列方式排除專案：
 
--   從作用中的方案組態暫時將其移除。
+- 從作用中的方案組態暫時將其移除。
 
--   建立不包含專案的方案組態。
+- 建立不包含專案的方案組態。
 
 如需詳細資訊，請參閱[了解組建組態](../ide/understanding-build-configurations.md)。
 
 ## <a name="to-temporarily-remove-a-project-from-the-active-solution-configuration"></a>從作用中的方案組態暫時將專案移除
 
-1.  在功能表列上，選擇 [建置] > [組態管理員]。
+1. 在功能表列上，選擇 [建置] > [組態管理員]。
 
-2.  在 [專案內容] 資料表中，找出您想要從組建排除的專案。
+2. 在 [專案內容] 資料表中，找出您想要從組建排除的專案。
 
-3.  在專案的 [組建] 資料行中，清除核取方塊。
+3. 在專案的 [組建] 資料行中，清除核取方塊。
 
-4.  選擇 [關閉] 按鈕，然後重新建置方案。
+4. 選擇 [關閉] 按鈕，然後重新建置方案。
 
 ## <a name="to-create-a-solution-configuration-that-excludes-a-project"></a>建立排除專案的方案組態
 
-1.  在功能表列上，選擇 [建置] > [組態管理員]。
+1. 在功能表列上，選擇 [建置] > [組態管理員]。
 
-2.  在 [使用中的方案組態] 清單中，選擇 [\<新增>]。
+2. 在 [使用中的方案組態] 清單中，選擇 [\<新增>]。
 
-3.  在 [名稱] 方塊中，輸入方案組態的名稱。
+3. 在 [名稱] 方塊中，輸入方案組態的名稱。
 
-4.  在 [複製設定來源] 清單中，選擇您要以其為新組態根據的方案組態 (例如，偵錯)，然後選擇 [確定] 按鈕。
+4. 在 [複製設定來源] 清單中，選擇您要以其為新組態根據的方案組態 (例如，偵錯)，然後選擇 [確定] 按鈕。
 
-5.  在 [組態管理員] 對話方塊中，清除 [建置] 資料行中您想要排除之專案的核取方塊，然後選擇 [關閉] 按鈕。
+5. 在 [組態管理員] 對話方塊中，清除 [建置] 資料行中您想要排除之專案的核取方塊，然後選擇 [關閉] 按鈕。
 
-6.  在 [標準] 工具列上，確認新的方案組態是 [方案組態] 方塊中的使用中組態。
+6. 在 [標準] 工具列上，確認新的方案組態是 [方案組態] 方塊中的使用中組態。
 
-7.  在功能表列上，依序選擇 [建置] > [重建方案]。
+7. 在功能表列上，依序選擇 [建置] > [重建方案]。
 
 ## <a name="see-also"></a>另請參閱
 

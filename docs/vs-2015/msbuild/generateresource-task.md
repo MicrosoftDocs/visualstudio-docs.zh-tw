@@ -19,18 +19,17 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a2a0831ea2220877d020b3e109460c560a1d6694
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 712d0de957ff7f780567c927fb1b18b100f8f6ca
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54796902"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65703522"
 ---
 # <a name="generateresource-task"></a>GenerateResource 工作
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
-在 .txt 和 .resx (XML 型資源格式) 檔案，以及通用語言執行平台二進位 .resources 檔案 (可以內嵌在執行階段二進位可執行檔，或是編譯到附屬組件中) 之間轉換。 此工作一般用來將 .txt 或 .resx 檔轉換為 .resource 檔。 `GenerateResource` 工作的功能類似於 [resgen.exe](http://msdn.microsoft.com/library/8ef159de-b660-4bec-9213-c3fbc4d1c6f4)。  
+在 .txt 和 .resx (XML 型資源格式) 檔案，以及通用語言執行平台二進位 .resources 檔案 (可以內嵌在執行階段二進位可執行檔，或是編譯到附屬組件中) 之間轉換。 此工作一般用來將 .txt 或 .resx 檔轉換為 .resource 檔。 `GenerateResource` 工作的功能類似於 [resgen.exe](https://msdn.microsoft.com/library/8ef159de-b660-4bec-9213-c3fbc4d1c6f4)。  
   
 ## <a name="parameters"></a>參數  
  下表說明 `GenerateResource` 工作的參數。  
@@ -48,7 +47,7 @@ ms.locfileid: "54796902"
 |`PublicClass`|選擇性的 `Boolean` 參數。<br /><br /> 如果為 `true`，會建立強型別資源類別做為公用類別。|  
 |`References`|選擇性的 `String[]` 參數。<br /><br /> 要從中載入 .resx 檔型別的參考。 Resx 檔案資料元素可能具有 .NET 型別。 讀取 .resx 檔時，必須解析此型別。 一般而言，使用標準型別載入規則即可順利解析。 如果您提供 `References` 中的組件，則會優先使用它們。<br /><br /> 強型別資源不需要此參數。|  
 |`SdkToolsPath`|選擇性的 `String` 參數。<br /><br /> 指定 SDK 工具 (例如 resgen.exe) 的路徑。|  
-|`Sources`|必要的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 指定要轉換的項目。 傳遞給此參數的項目必須具有下列其中一個副檔名︰<br /><br /> -   `.txt`︰指定文字檔的副檔名以進行轉換。 文字檔只能包含字串資源。<br />-   `.resx`︰指定 XML 型資源檔的副檔名以進行轉換。<br />-   `.restext`︰指定和 .txt 相同的格式。 如果您想要清楚地區分包含資源的原始程式檔和建置流程中的其他原始程式檔，這個不同的副檔名會很有用。<br />-   `.resources`︰指定資源檔的副檔名以進行轉換。|  
+|`Sources`|必要的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 指定要轉換的項目。 傳遞給此參數的項目必須具有下列其中一個副檔名︰<br /><br /> -   `.txt`：指定文字檔的副檔名以進行轉換。 文字檔只能包含字串資源。<br />-   `.resx`：指定 XML 型資源檔的副檔名以進行轉換。<br />-   `.restext`：您可以指定相同的格式為.txt。 如果您想要清楚地區分包含資源的原始程式檔和建置流程中的其他原始程式檔，這個不同的副檔名會很有用。<br />-   `.resources`：指定資源檔的副檔名以進行轉換。|  
 |`StateFile`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem> 參數。<br /><br /> 指定選擇性快取檔案的路徑，這個檔案可用來加速 .resx 輸入檔中連結的相依性檢查。|  
 |`StronglyTypedClassName`|選擇性的 `String` 參數。<br /><br /> 指定強型別資源類別的類別名稱。 如果未指定此參數，則會使用資源檔的基底名稱。|  
 |`StronglyTypedFilename`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem> 參數。<br /><br /> 指定原始程式檔的檔案名稱。 如果未指定此參數，則會使用類別名稱做為基底檔案名稱，副檔名則依語言而定。 例如：`MyClass.cs`。|  
@@ -57,11 +56,11 @@ ms.locfileid: "54796902"
 |`StronglyTypedNamespace`|選擇性的 `String` 參數。<br /><br /> 指定要為強型別資源產生的類別來源使用的命名空間。 如果未指定此參數，任何強型別資源都位在全域命名空間中。|  
 |`TLogReadFiles`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 唯讀參數。<br /><br /> 取得代表讀取追蹤記錄檔的項目陣列。|  
 |`TLogWriteFiles`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 唯讀參數。<br /><br /> 取得代表寫入追蹤記錄檔的項目陣列。|  
-|`ToolArchitecture`|選擇性的 [String](<!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  -->) 參數。<br /><br /> 用來判斷是否需要使用 Tracker.exe 來繁衍 ResGen.exe。<br /><br /> 應可剖析為 <xref:Microsoft.Build.Utilities.ExecutableType> 列舉的成員。 如果為 `String.Empty`，請使用啟發學習法以判斷預設架構。 應可剖析為 Microsoft.Build.Utilities.ExecutableType 列舉的成員。|  
-|`TrackerFrameworkPath`|選擇性的 <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> 參數。<br /><br /> 指定包含 FileTracker.dll 之適當 .NET Framework 位置的路徑。<br /><br /> 如果設定，使用者要負責確定所傳遞的 FileTracker.dll 的位元和他們想要使用 ResGen.exe 的位元相符。 如果未設定，工作會根據目前的 .NET Framework 版本決定適當的位置。|  
-|`TrackerLogDirectory`|選擇性的 <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> 參數。<br /><br /> 指定要用於放置執行此工作產生之追蹤記錄檔的中繼目錄。|  
-|`TrackerSdkPath`|選擇性的 <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> 參數。<br /><br /> 指定包含 Tracker.exe 之適當 Windows SDK 位置的路徑。<br /><br /> 如果設定，使用者要負責確定所傳遞的 Tracker.exe 的位元和他們想要使用 ResGen.exe 的位元相符。 如果未設定，工作會根據目前的 Windows SDK 決定適當的位置。|  
-|`TrackFileAccess`|選擇性 [布林值](<!-- TODO: review code entity reference <xref:assetId:///Boolean?qualifyHint=False&amp;autoUpgrade=True>  -->) 參數。<br /><br /> 如果為 true，會使用輸入檔的目錄來解析相對檔案路徑。|  
+|`ToolArchitecture`|選擇性的 [String](<!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  -->)參數。<br /><br /> 用來判斷是否需要使用 Tracker.exe 來繁衍 ResGen.exe。<br /><br /> 應可剖析為 <xref:Microsoft.Build.Utilities.ExecutableType> 列舉的成員。 如果為 `String.Empty`，請使用啟發學習法以判斷預設架構。 應可剖析為 Microsoft.Build.Utilities.ExecutableType 列舉的成員。|  
+|`TrackerFrameworkPath`|Optional <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> 參數。<br /><br /> 指定包含 FileTracker.dll 之適當 .NET Framework 位置的路徑。<br /><br /> 如果設定，使用者要負責確定所傳遞的 FileTracker.dll 的位元和他們想要使用 ResGen.exe 的位元相符。 如果未設定，工作會根據目前的 .NET Framework 版本決定適當的位置。|  
+|`TrackerLogDirectory`|Optional <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> 參數。<br /><br /> 指定要用於放置執行此工作產生之追蹤記錄檔的中繼目錄。|  
+|`TrackerSdkPath`|Optional <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> 參數。<br /><br /> 指定包含 Tracker.exe 之適當 Windows SDK 位置的路徑。<br /><br /> 如果設定，使用者要負責確定所傳遞的 Tracker.exe 的位元和他們想要使用 ResGen.exe 的位元相符。 如果未設定，工作會根據目前的 Windows SDK 決定適當的位置。|  
+|`TrackFileAccess`|選擇性的[布林值](<!-- TODO: review code entity reference <xref:assetId:///Boolean?qualifyHint=False&amp;autoUpgrade=True>  -->)參數。<br /><br /> 如果為 true，會使用輸入檔的目錄來解析相對檔案路徑。|  
 |`UseSourcePath`|選擇性的 `Boolean` 參數。<br /><br /> 如果為 `true`，會使用輸入檔的目錄來解析相對檔案路徑。|  
   
 ## <a name="remarks"></a>備註  
@@ -94,6 +93,6 @@ ms.locfileid: "54796902"
   
  沒有 \<LogicalName > 中繼資料時，則會將資源命名為 myAssembly.myResource.resources。  此範例僅適用於 Visual Basic 和 Visual C# 建置流程。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [工作](../msbuild/msbuild-tasks.md)   
  [工作參考](../msbuild/msbuild-task-reference.md)

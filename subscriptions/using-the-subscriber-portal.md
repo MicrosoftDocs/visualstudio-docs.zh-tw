@@ -6,15 +6,14 @@ manager: evelynp
 ms.date: 01/04/2018
 ms.topic: conceptual
 description: 了解 Visual Studio 訂用帳戶入口網站上提供給您的完整權益
-searchscope: VS Subscription
-ms.openlocfilehash: ba353c6c13d0a538e0030b10c95d054805d0ec39
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: eab622c843a7099b5a75ca953d55666be849b246
+ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57867586"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67784774"
 ---
-# <a name="using-the-subscriber-portal---myspanspanvisualstudiospanspancom"></a>使用訂閱者入口網站 - my.<span></span>visualstudio<span></span>.com
+# <a name="using-the-subscriber-portal---myvisualstudiocom"></a>使用訂閱者入口網站 - my.visualstudio.com
 
 Visual Studio 訂閱者入口網站 ([https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs)) 是您可以完整運用 Visual Studio 訂用帳戶權益的單一位置。
 

@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProcess3::GetHostingProcessLanguage
 ms.assetid: 52fca002-a9ef-43b1-9192-afbe7bb59ad4
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1a6e704875fe59be77bc07428a1ca4dab97988f4
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 36098cf1fa19228962743856a814f0d094439edd
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56692771"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66313896"
 ---
 # <a name="idebugprocess3gethostingprocesslanguage"></a>IDebugProcess3::GetHostingProcessLanguage
 這個方法會傳回`GUID`表示此程序的語言設定，藉由呼叫[SetHostingProcessLanguage](../../../extensibility/debugger/reference/idebugprocess3-sethostingprocesslanguage.md)。
@@ -36,10 +39,9 @@ int GetHostingProcessLanguage(
 );
 ```
 
-#### <a name="parameters"></a>參數
- `pguidLang`
-
- [out]`GUID`此程序使用的語言。 `GUID_NULL` （c + +） 或`Guid.Empty`(C#) 表示的語言不設定。
+## <a name="parameters"></a>參數
+`pguidLang`\
+[out]`GUID`此程序使用的語言。 `GUID_NULL` (C++) 或`Guid.Empty`(C#) 表示未設定的語言。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`，否則會傳回錯誤碼。

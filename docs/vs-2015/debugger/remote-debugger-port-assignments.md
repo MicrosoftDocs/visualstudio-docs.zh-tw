@@ -1,25 +1,20 @@
 ---
 title: 遠端偵錯工具連接埠指派 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 238bb4ec-bb00-4c2b-986e-18ac278f3959
 caps.latest.revision: 8
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 47a2b212ce3e98588a5dcf6ee75a479b01b5b302
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: c1e70ec3ba50e5be1ed532bb4a88cbdd500af09c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51817846"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68195179"
 ---
 # <a name="remote-debugger-port-assignments"></a>遠端偵錯工具連接埠指派
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,21 +32,21 @@ Visual Studio 遠端偵錯工具可以應用程式或背景服務的形式執行
 ## <a name="the-remote-debugger-port-on-32-bit-operating-systems"></a>32 位元作業系統上的遠端偵錯工具連接埠  
  (在 Visual Studio 2015 中) TCP 4020 是主要的連接埠，在所有情況下都需要。 您可以從命令列或遠端偵錯工具視窗來進行此設定。  
   
- 在遠端偵錯工具視窗中，按一下 [工具] / [選項] ，然後設定 TCP/IP 通訊埠編號。  
+ 在遠端偵錯工具視窗中，按一下 [工具] / [選項]  ，然後設定 TCP/IP 通訊埠編號。  
   
- 在命令列中，啟動 遠端偵錯工具 **/連接埠**切換： **msvsmon /port\<連接埠號碼 >**。  
+ 在命令列上，使用 **/port** 參數啟動遠端偵錯工具：**msvsmon /port \<連接埠號碼>** 。  
   
  您可以在遠端偵錯說明中找到所有遠端偵錯工具命令列參數 (在遠端偵錯工具視窗中按 **F1** 或按一下 [說明] / [用法]  )。  
   
 ## <a name="the-remote-debugger-port-on-64-bit-operating-systems"></a>64 位元作業系統上的遠端偵錯工具連接埠  
  當啟動 64 位元版本的遠端偵錯工具時，它預設會使用 4020 連接埠。  如果您偵錯 32 位元處理序，64 位元版本的遠端偵錯工具會在連接埠 4021 啟動遠端偵錯工具的 32 位元版本。 如果您執行 32 位元遠端偵錯工具，它會使用 4020，而不會使用 4021。  
   
- 此連接埠是可從命令列設定： **Msvsmon/wow64port\<連接埠號碼 >**。  
+ 此連接埠是可從命令列設定：**Msvsmon/wow64port\<連接埠號碼 >** 。  
   
 ## <a name="the-discovery-port"></a>探索連接埠  
  UDP 3702 用於在網路上搜尋遠端偵錯工具的執行個體 (例如 [附加至處理序]  對話方塊中的 [尋找]  對話方塊)。 它只適用於探索執行遠端偵錯工具的機器，因此如果您有其他方式得知目標電腦的機器名稱或 IP 位址，它是選擇性的。 這是探索的標準連接埠，因此不能設定連接埠號碼。  
   
- 如果您不想啟用探索，可以從命令列啟動 msvsmon 並停用探索：  **Msvsmon /nodiscovery**。  
+ 如果您不想啟用探索，您可以從命令列啟動 msvsmon 停用探索：**Msvsmon /nodiscovery**。  
   
 ## <a name="remote-debugger-ports-on-azure"></a>Azure 上的遠端偵錯工具連接埠  
  Azure 上的遠端偵錯工具會使用下列連接埠。 雲端服務上的連接埠會對應至個別 VM 上的連接埠。 所有連接埠都是 TCP。  
@@ -65,6 +60,3 @@ Visual Studio 遠端偵錯工具可以應用程式或背景服務的形式執行
   
 ## <a name="see-also"></a>另請參閱  
  [Remote Debugging](../debugger/remote-debugging.md)
-
-
-

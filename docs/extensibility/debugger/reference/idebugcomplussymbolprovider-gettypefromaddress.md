@@ -6,17 +6,20 @@ helpviewer_keywords:
 - IDebugComPlusSymbolProvider::GetTypeFromAddress
 - GetTypeFromAddress
 ms.assetid: 01f21ff9-e8a5-4e5f-9f7b-1b6de8b1432f
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 48e1e90c69688cf1ef5388e74060e38087d50920
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 7cc1a0e5bb25edcbfae047a088c20884330e81ee
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56691406"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66336694"
 ---
 # <a name="idebugcomplussymbolprovidergettypefromaddress"></a>IDebugComPlusSymbolProvider::GetTypeFromAddress
 擷取至其偵錯位址符號類型。
@@ -37,14 +40,12 @@ int GetTypeFromAddress(
 );
 ```
 
-#### <a name="parameters"></a>參數
-`pAddress`
+## <a name="parameters"></a>參數
+`pAddress`\
+[in]所表示的偵錯位址[IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)介面。
 
- [in]所表示的偵錯位址[IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)介面。
-
-`ppField`
-
- [out]傳回陣列型別，如同它由[IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)介面。
+`ppField`\
+[out]傳回陣列型別，如同它由[IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)介面。
 
 ## <a name="return-value"></a>傳回值
 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

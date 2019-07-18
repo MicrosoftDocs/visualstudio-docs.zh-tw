@@ -1,14 +1,9 @@
 ---
-title: CONNECTION_PROTOCOL |Microsoft Docs
-ms.custom: ''
+title: CONNECTION_PROTOCOL | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - CONNECTION_PROTOCOL
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 99df5865-8b36-486d-9f4c-d10ae2bc688a
 caps.latest.revision: 9
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: d09af3d2f40e60d2c3e12b7b9c64a82679f10c53
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 72ed9b8a747814d9537739c8dc27e5f113547756
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51722979"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62561848"
 ---
 # <a name="connectionprotocol"></a>CONNECTION_PROTOCOL
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -83,11 +78,10 @@ public enum CONNECTION_PROTOCOL {
 ## <a name="requirements"></a>需求  
  標頭： msdbg.h  
   
- 命名空間： Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間：Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
  [列舉型別](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [GetConnectionProtocol](../../../extensibility/debugger/reference/idebugcoreserver3-getconnectionprotocol.md)
-

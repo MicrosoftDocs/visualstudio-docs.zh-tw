@@ -1,14 +1,9 @@
 ---
-title: Ca1900： 實值類型欄位應該為可移植 |Microsoft Docs
-ms.custom: ''
+title: CA1900:實值類型欄位應該為可移植 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1900
 - ValueTypeFieldsShouldBePortable
@@ -20,17 +15,17 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: d8794fc1e30e2afb70c6816b6d10feb8d69a5d86
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 97a83bf4ba71d0adc71fdb96d4e1c865358c08e2
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49236297"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68203094"
 ---
-# <a name="ca1900-value-type-fields-should-be-portable"></a>CA1900：實值類型欄位應該為可移植的
+# <a name="ca1900-value-type-fields-should-be-portable"></a>CA1900:實值類型欄位應該為可移植的
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-如需 Visual Studio 2017 的最新文件，請參閱 < [ca1900 實： 實值類型欄位應該為可移植](https://docs.microsoft.com/visualstudio/code-quality/ca1900-value-type-fields-should-be-portable)docs.microsoft.com 上。  
+如需 Visual Studio 的最新文件，請參閱[ca1900 實：實值類型欄位應該為可移植](https://docs.microsoft.com/visualstudio/code-quality/ca1900-value-type-fields-should-be-portable)。  
   
 |||  
 |-|-|  
@@ -50,4 +45,3 @@ ms.locfileid: "49236297"
   
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機  
  在發生錯誤時，才應該隱藏這個警告。
-

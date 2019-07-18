@@ -13,11 +13,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.openlocfilehash: 6fe4be22c9424d22b6dd42c92c3df194c23f91c9
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: a059c9189f7fadd0bbf356d8e473a6ca371cef3c
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38943864"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "68143495"
 ---
 Blend for Visual Studio

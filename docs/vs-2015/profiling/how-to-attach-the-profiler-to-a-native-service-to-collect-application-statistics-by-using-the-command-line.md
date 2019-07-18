@@ -1,5 +1,5 @@
 ---
-title: 如何：使用命令列將分析工具附加至原生服務以收集應用程式統計資料 | Microsoft Docs
+title: HOW TO：使用命令列將分析工具附加至原生服務以收集應用程式統計資料 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -9,23 +9,23 @@ caps.latest.revision: 30
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6382d4e674640426d2676531f06dc720b3c7eb4b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 2a2884229024cfc212c408b0d07e5b94a41737ac
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54793152"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432873"
 ---
-# <a name="how-to-attach-the-profiler-to-a-native-service-to-collect-application-statistics-by-using-the-command-line"></a>如何：使用命令列將程式碼剖析工具附加至原生服務以收集應用程式統計資料
+# <a name="how-to-attach-the-profiler-to-a-native-service-to-collect-application-statistics-by-using-the-command-line"></a>HOW TO：Profiler 附加至原生服務以使用命令列收集應用程式統計資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 本主題描述如何使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 分析工具命令列工具將分析工具附加至 原生服務，並使用取樣方法收集效能統計資料。  
 
 > [!NOTE]
->  Windows 8 和 Windows Server 2012 增強式安全性功能需要的重大變更，會以 Visual Studio 分析工具在這些平台收集資料的方式表現。 Windows 市集應用程式也需要新的資料收集技術。 請參閱 [Windows 8 和 Windows Server 2012 應用程式的效能工具](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)。  
+> Windows 8 和 Windows Server 2012 增強式安全性功能需要的重大變更，會以 Visual Studio 分析工具在這些平台收集資料的方式表現。 Windows 市集應用程式也需要新的資料收集技術。 請參閱 [Windows 8 和 Windows Server 2012 應用程式的效能工具](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)。  
 
 > [!NOTE]
->  程式碼剖析工具的命令列工具位於 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 安裝目錄的 \Team Tools\Performance Tools 子目錄中。 在 64 位元電腦上，64 位元和 32 位元版本的工具都可以使用。 若要使用程式碼剖析工具命令列工具，必須將工具路徑加入至命令提示字元視窗的 PATH 環境變數，或將它加入至命令本身。 如需詳細資訊，請參閱[指定命令列工具的路徑](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)。  
+> 程式碼剖析工具的命令列工具位於 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 安裝目錄的 \Team Tools\Performance Tools 子目錄中。 在 64 位元電腦上，64 位元和 32 位元版本的工具都可以使用。 若要使用程式碼剖析工具命令列工具，必須將工具路徑加入至命令提示字元視窗的 PATH 環境變數，或將它加入至命令本身。 如需詳細資訊，請參閱[指定命令列工具的路徑](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)。  
 
  程式碼剖析工具附加至服務時，您可以暫停和繼續收集資料。  
 
@@ -51,7 +51,7 @@ ms.locfileid: "54793152"
      您可以使用下列任一選項搭配 **/start:sample** 選項。  
 
    > [!NOTE]
-   >  **/User** 和 **/crosssession** 選項通常是服務的必要選項。  
+   > **/User** 和 **/crosssession** 選項通常是服務的必要選項。  
 
    |                                 選項                                  |                                                                                                                                            描述                                                                                                                                             |
    |-------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -60,7 +60,6 @@ ms.locfileid: "54793152"
    |    [/wincounter](../profiling/wincounter.md) **:** `WinCounterPath`     |                                                                                                             指定程式碼剖析期間要收集的 Windows 效能計數器。                                                                                                              |
    |         [/automark](../profiling/automark.md) **:** `Interval`          |                                                                           只能搭配 **/wincounter** 使用。 指定 Windows 效能計數器收集事件間隔的毫秒數。 預設值為 500 毫秒。                                                                            |
    |       [/events](../profiling/events-vsperfcmd.md) **:** `Config`        |                                                                              指定程式碼剖析期間要收集的 Windows 事件追蹤 (ETW) 事件。 ETW 事件會收集至個別的 (.etl) 檔案。                                                                              |
-
 
 4. 將程式碼剖析工具附加至服務。 類型：  
 
@@ -82,7 +81,7 @@ ms.locfileid: "54793152"
 
 #### <a name="to-start-and-stop-data-collection"></a>開始和停止資料收集  
 
--   下列成對的 **VSPerfCmd** 選項會開始和停止資料收集。 請在個別的命令列上指定各個選項。 您可以多次開始和停止資料收集。  
+- 下列成對的 **VSPerfCmd** 選項會開始和停止資料收集。 請在個別的命令列上指定各個選項。 您可以多次開始和停止資料收集。  
 
     |選項|描述|  
     |------------|-----------------|  
@@ -95,18 +94,18 @@ ms.locfileid: "54793152"
 
 #### <a name="to-end-a-profiling-session"></a>結束程式碼剖析工作階段  
 
-1.  執行下列其中一項動作，以從目標應用程式中斷連結分析工具：  
+1. 執行下列其中一項動作，以從目標應用程式中斷連結分析工具：  
 
-    -   停止服務。  
+    - 停止服務。  
 
          -或-  
 
-    -   輸入 **VSPerfCmd /detach**  
+    - 輸入 **VSPerfCmd /detach**  
 
-2.  關閉分析工具。 類型：  
+2. 關閉分析工具。 類型：  
 
      **VSPerfCmd /shutdown**  
 
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [分析服務](../profiling/command-line-profiling-of-services.md)   
  [取樣方法資料檢視](../profiling/profiler-sampling-method-data-views.md)

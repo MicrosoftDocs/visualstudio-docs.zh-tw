@@ -1,5 +1,5 @@
 ---
-title: HOW TO：以程式設計方式摺疊範圍或選取的文件
+title: 以程式設計方式摺疊範圍或選取的文件
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -16,14 +16,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a6550ac7b2ea1d6780122f0064f39defa4859731
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 7394e8703f0437493536655e11b00ed302e59cff
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56598220"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66402231"
 ---
-# <a name="how-to-programmatically-collapse-ranges-or-selections-in-documents"></a>HOW TO：以程式設計方式摺疊範圍或選取的文件
+# <a name="how-to-programmatically-collapse-ranges-or-selections-in-documents"></a>作法：以程式設計方式摺疊範圍或選取的文件
   如果您正在使用 <xref:Microsoft.Office.Interop.Word.Range> 或 <xref:Microsoft.Office.Interop.Word.Selection> 物件，您可能會想要先將選取範圍變更為插入點再插入文字，以免覆寫現有的文字。 同時<xref:Microsoft.Office.Interop.Word.Range>並<xref:Microsoft.Office.Interop.Word.Selection>物件具有摺疊方法，其使用<xref:Microsoft.Office.Interop.Word.WdCollapseDirection>列舉值：
 
 - <xref:Microsoft.Office.Interop.Word.WdCollapseDirection.wdCollapseStart> 將選取範圍摺疊至選取範圍的開頭。 如果不指定列舉值，這就是預設值。
@@ -72,7 +72,7 @@ ms.locfileid: "56598220"
 
 ### <a name="to-collapse-a-range-in-a-document-level-customization"></a>摺疊文件層級自訂中的範圍
 
-1.  下列範例顯示文件層級自訂的完整方法。 若要使用此程式碼，請從專案的 `ThisDocument` 類別中執行它。
+1. 下列範例顯示文件層級自訂的完整方法。 若要使用此程式碼，請從專案的 `ThisDocument` 類別中執行它。
 
      [!code-vb[Trin_VstcoreWordAutomation#45](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#45)]
      [!code-csharp[Trin_VstcoreWordAutomation#45](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#45)]
@@ -81,7 +81,7 @@ ms.locfileid: "56598220"
 
 ### <a name="to-collapse-a-range-in-a-vsto-add-in"></a>若要摺疊中的 VSTO 增益集的範圍
 
-1.  下列範例顯示 VSTO 增益集的完整方法。 若要使用此程式碼，請從專案的 `ThisAddIn` 類別中執行它。
+1. 下列範例顯示 VSTO 增益集的完整方法。 若要使用此程式碼，請從專案的 `ThisAddIn` 類別中執行它。
 
      [!code-vb[Trin_VstcoreWordAutomationAddIn#45](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#45)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#45](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#45)]

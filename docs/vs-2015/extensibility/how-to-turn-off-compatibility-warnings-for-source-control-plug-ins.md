@@ -1,44 +1,39 @@
 ---
-title: 如何： 關閉的原始檔控制外掛程式的相容性警告 |Microsoft Docs
-ms.custom: ''
+title: 作法：關閉原始檔控制外掛程式的相容性警告 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, turning off compatibility warnings
 - compatibility warnings, turning off
 ms.assetid: ba318e12-921b-4b7a-a8c2-12c712be1dbf
 caps.latest.revision: 22
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: eacdce1e311ad15e449ddec6e99ffcf9e4d26c8a
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: a4397b2710a7de4addd97bfcbdb4f8e80e2b9c70
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51726111"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68204055"
 ---
-# <a name="how-to-turn-off-compatibility-warnings-for-source-control-plug-ins"></a>如何： 關閉的原始檔控制外掛程式的相容性警告
+# <a name="how-to-turn-off-compatibility-warnings-for-source-control-plug-ins"></a>作法：關閉原始檔控制外掛程式的相容性警告
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 使用者可能會採用原始檔控制中的看到數個相容性警告[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。 顯示警告取決於原始檔控制外掛程式的功能，並且可以停用，如此處所示詳細。  
   
-### <a name="to-disable-the-warning-to-ensure-optimal-source-control-integration-with-visual-studio"></a>若要停用警告: 「 若要確保最佳的原始檔控制整合，使用 Visual Studio...」  
+### <a name="to-disable-the-warning-to-ensure-optimal-source-control-integration-with-visual-studio"></a>若要停用警告：「 若要確保最佳的來源控制與 Visual Studio 整合...」  
   
--   設定下列登錄項目 （如有必要，請新增此值）：  
+- 設定下列登錄項目 （如有必要，請新增此值）：  
   
      HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl\DontDisplayCheckDotNETCompatible = dword: 00000001  
   
      這個警告會顯示所有非[!INCLUDE[vsvss](../includes/vsvss-md.md)]外掛程式。  
   
-### <a name="to-disable-the-warning-the-installed-source-control-provider-does-not-support-all-the-capabilities"></a>若要停用警告: 「 已安裝的原始檔控制提供者不支援所有功能...」  
+### <a name="to-disable-the-warning-the-installed-source-control-provider-does-not-support-all-the-capabilities"></a>若要停用警告：「 已安裝的原始檔控制提供者不支援所有功能...」  
   
--   設定下列兩個登錄值 （如有必要，請加入的值）：  
+- 設定下列兩個登錄值 （如有必要，請加入的值）：  
   
      HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl\WarnedOldMSSCCIProvider = dword:00000000  
   
@@ -50,4 +45,3 @@ ms.locfileid: "51726111"
   
 ## <a name="see-also"></a>另請參閱  
  [功能旗標](../extensibility/capability-flags.md)
-

@@ -1,5 +1,5 @@
 ---
-title: 使用 DebuggerTypeProxy 屬性 |Microsoft Docs
+title: 顯示自訂型別使用 DebuggerTypeProxy |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -17,14 +17,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 011f5dc9525a8a5f88f3cc923eb56dde58313d85
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: c379fbeb9d17f92dcc7067424ea06bb1a2805ed1
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56717490"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62929630"
 ---
-# <a name="using-debuggertypeproxy-attribute-c-visual-basic-ccli"></a>使用 DebuggerTypeProxy 屬性 (C#，Visual Basic、 C + + /cli CLI)
+# <a name="tell-the-debugger-what-type-to-show-using-debuggertypeproxy-attribute-c-visual-basic-ccli"></a>告知偵錯工具以顯示使用 DebuggerTypeProxy 屬性類型 (C#，Visual Basic 中， C++/CLI)
 
 <xref:System.Diagnostics.DebuggerTypeProxyAttribute> 會指定類型的 Proxy (或替代)，並且變更在偵錯工具視窗中顯示類型的方式。 當您檢視有 Proxy 的變數時，Proxy 會替代 [顯示] 中的原始類型。 偵錯工具變數視窗只會顯示 proxy 型別的 Public 成員。 私用成員不會顯示。
 
@@ -35,7 +35,7 @@ ms.locfileid: "56717490"
 - 組件
 
 > [!NOTE]
-> 原生程式碼，這個屬性只支援 C + + /cli 程式碼。
+> 原生程式碼，支援這個屬性只能在C++/CLI 程式碼。
 
 類型 Proxy 類別必須具有建構函式，才能接受 Proxy 將取代之類型的引數。 每次需要顯示目標類型的變數時，偵錯工具都會建立類型 Proxy 類別的新執行個體。 這種行為可能會影響效能。 因此，除非絕對必要，否則不要在建構函式中再執行任何作業。
 
@@ -59,13 +59,13 @@ ms.locfileid: "56717490"
 
 如果您在 `DebuggerTypeProxy` 中使用泛型類型做為目標，就必須使用此語法。 `DebuggerTypeProxy` 機制會自動推斷型別參數。
 
-如需詳細資訊中的開放型和封閉型別C#請參閱[C#語言規格](/dotnet/csharp/language-reference/language-specification)，區段 20.5.2 開啟和封閉類型。
+如需 C# 中的開放型和封閉類型詳細資訊，請參閱[C# 語言規格](/dotnet/csharp/language-reference/language-specification)，區段 20.5.2 開啟和封閉類型。
 
 Visual Basic 沒有開放類型語法，因此無法在 Visual Basic 中執行相同的動作。 您必須改用開放類型名稱的字串表示。
 
 `"Namespace.TypeName'2"`
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [使用 DebuggerDisplay 屬性](../debugger/using-the-debuggerdisplay-attribute.md)
 - [建立受管理物件的自訂檢視](../debugger/create-custom-views-of-dot-managed-objects.md)

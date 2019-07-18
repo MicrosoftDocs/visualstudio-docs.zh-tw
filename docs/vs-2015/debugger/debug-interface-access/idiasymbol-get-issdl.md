@@ -1,27 +1,22 @@
 ---
-title: IDiaSymbol::get_isSdl |Microsoft Docs
-ms.custom: ''
+title: IDiaSymbol::get_isSdl | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 ms.assetid: 6aa0e116-da75-4643-a4d7-d8e142231e21
 caps.latest.revision: 6
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 2618a8adee7f70aaec974a7b9c0ea6bd1dd46afd
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: da15e70cab420289e46b9e413aa0fe046b97671d
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51787324"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "68151494"
 ---
 # <a name="idiasymbolgetissdl"></a>IDiaSymbol::get_isSdl
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -44,6 +39,3 @@ HRESULT get_isSdl(
   
 ## <a name="see-also"></a>另請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
-
-
-

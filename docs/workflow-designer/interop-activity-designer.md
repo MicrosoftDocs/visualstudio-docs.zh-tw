@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e020e2f4e1ffae9c0e979f2230ff845b1cda203e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 688ef92fae5bd0cbaa5ddc653bbaab5692f4827f
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55942696"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747141"
 ---
 # <a name="interop-activity-designer"></a>Interop 活動設計工具
 
@@ -29,11 +29,7 @@ ms.locfileid: "55942696"
 
 **Interop**活動設計工具位於**移轉**類別**工具箱**，即可存取的哪一個**工具箱** 索引標籤。或者，選取**工具箱**從**檢視**功能表，或是按下**Ctrl**+**Alt** + **X**。
 
-[遷移](../workflow-designer/migration-activity-designers.md)包含分類<xref:System.Activities.Statements.Interop>活動只會出現在**工具箱**如果您的專案以完整的.NET Framework 4 為目標。
-
-C# 專案，您可以將專案目標重定為使用完整的.NET Framework 4 中的專案上按一下滑鼠右鍵**方案總管**，然後選取**屬性**。 在 **應用程式**索引標籤上，選取 **.NET Framework 4**選項**目標 framework**。 選取 **是**是否確認變更。
-
-Visual Basic 專案，您可以將專案目標重定為使用完整的.NET Framework 4 中的專案上按一下滑鼠右鍵**方案總管**，然後選取**屬性**。 在 [**編譯**索引標籤上，按一下**進階編譯選項**] 按鈕。 選取 **.Net Framework 4**從**目標 framework 清單**，然後按一下**確定**。 選取 **是**是否確認變更。
+[遷移](../workflow-designer/migration-activity-designers.md)包含分類<xref:System.Activities.Statements.Interop>活動只會出現在**工具箱**如果您的專案目標.NET Framework 4 （完整） 或更新版本。 如果有必要，您可以變更的 framework 版本，您專案的目標。
 
 **Interop**活動設計工具可以從拖曳**工具箱**並放到工作流程設計工具介面，不論活動通常放置的例如內部<xref:System.Activities.Statements.Sequence>。 卸除**Interop**活動設計工具會建立<xref:System.Activities.Statements.Interop>活動，具有預設值**DisplayName**的 Interop。 您可以編輯<xref:System.Activities.Activity.DisplayName%2A>中的標頭**Interop**活動設計工具，或是在**DisplayName**屬性方格的方塊。
 
@@ -43,7 +39,7 @@ Visual Basic 專案，您可以將專案目標重定為使用完整的.NET Frame
 
 下表顯示<xref:System.Activities.Statements.Interop>屬性，並描述在設計工具的使用方式。 這些屬性可以在屬性方格中或在工作流程設計工具介面上編輯。
 
-|屬性名稱|必要項|使用方式|
+|屬性名稱|必要|使用量|
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|<xref:System.Activities.Statements.Interop> 活動的易記名稱。 預設值是**Interop**。 雖然顯示名稱不是必要的建議您為其提供。|
 |<xref:System.Activities.Statements.Interop.ActivityType%2A>|True|指定 <xref:System.Activities.Statements.Interop> 活動所包含之活動的活動型別。 指定的型別必須衍生自 <xref:System.Workflow.ComponentModel.Activity>。|

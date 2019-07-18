@@ -8,17 +8,20 @@ helpviewer_keywords:
 - IDebugPendingBreakpoint2::Delete method
 - Delete method
 ms.assetid: 4cb5ed81-6f0c-41ce-a770-5adb6b4bf5d9
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7ae9b35ba47b08acd2623a3d28c9e634b1ffaa76
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 850f073e76bb48e734ff1cccac100b10ceaa2066
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56694123"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66320466"
 ---
 # <a name="idebugpendingbreakpoint2delete"></a>IDebugPendingBreakpoint2::Delete
 刪除這個暫止中斷點和繫結從它的所有中斷點。

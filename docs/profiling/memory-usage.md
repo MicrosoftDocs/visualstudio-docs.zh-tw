@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dd36bf3381c2b3bdd604dad9bc1aaf3ad37b36d4
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: ad4716b2408afb04242a8a71da3a96474dc42b99
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57868978"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704466"
 ---
 # <a name="measure-memory-usage-in-visual-studio"></a>在 Visual Studio 中測量記憶體使用量
 
@@ -41,48 +41,48 @@ ms.locfileid: "57868978"
 
 ## <a name="collect-memory-usage-data"></a>收集記憶體使用量資料
 
-1.  開啟您想要在 Visual Studio 中偵錯的專案，並於應用程式中要開始檢查記憶體使用量的位置設定中斷點。
+1. 開啟您想要在 Visual Studio 中偵錯的專案，並於應用程式中要開始檢查記憶體使用量的位置設定中斷點。
 
     如果您懷疑某個區域具有記憶體問題，請在記憶體問題發生之前設定第一個中斷點。
 
     > [!TIP]
-    >  由於當應用程式頻繁地配置和解除配置記憶體時，擷取您感興趣之作業的記憶體設定檔可能會是項挑戰，因此請在作業開始和結束處 (或是逐項順著作業) 設定中斷點，以找出記憶體變更的實際點。
+    > 由於當應用程式頻繁地配置和解除配置記憶體時，擷取您感興趣之作業的記憶體設定檔可能會是項挑戰，因此請在作業開始和結束處 (或是逐項順著作業) 設定中斷點，以找出記憶體變更的實際點。
 
-2.  在您想要分析的函式或程式碼區域結尾 (或是在可能的記憶體問題發生之後) 設定第二個中斷點。
+2. 在您想要分析的函式或程式碼區域結尾 (或是在可能的記憶體問題發生之後) 設定第二個中斷點。
 
-3.  [偵錯工具]  視窗會自動出現，除非您將其關閉。 如需再次顯示視窗，請按一下 [偵錯] > [Windows] > [顯示診斷工具]。
+3. [偵錯工具]  視窗會自動出現，除非您將其關閉。 如需再次顯示視窗，請按一下 [偵錯] > [Windows] > [顯示診斷工具]。
 
-4.  以工具列上的 [選取工具] 設定選擇 [記憶體使用量]。
+4. 以工具列上的 [選取工具] 設定選擇 [記憶體使用量]。
 
-     ![顯示診斷工具](../profiling/media/DiagToolsSelectTool.png "DiagToolsSelectTool")
+     ![顯示診斷工具](../profiling/media/diag-tools-select-tool-2.png "DiagToolsSelectTool")
 
-5.  按一下 [偵錯/開始偵錯]\(或工具列上的 [開始] 或 **F5**)。
+5. 按一下 [偵錯/開始偵錯]\(或工具列上的 [開始] 或 **F5**)。
 
      當應用程式完成載入時，會出現 [Diagnostics Tools (診斷工具)] 的 [Summary (摘要)] 檢視。
 
-     ![診斷工具摘要索引標籤](../profiling/media/DiagToolsSummaryTab.png "DiagToolsSummaryTab")
+     ![診斷工具摘要索引標籤](../profiling/media/diag-tools-summary-tab-2.png "DiagToolsSummaryTab")
 
      > [!NOTE]
-     >  由於收集記憶體資料可能會影響原生或混合模式應用程式的偵錯效能，因此預設會停用記憶體快照。 若要在原生或混合模式應用程式中啟用快照，請啟動偵錯工作階段 (快速鍵：**F5**)。 在顯示 [診斷工具] 視窗時，選擇 [記憶體使用量] 索引標籤，然後選擇 [堆積分析]。
+     > 由於收集記憶體資料可能會影響原生或混合模式應用程式的偵錯效能，因此預設會停用記憶體快照。 若要在原生或混合模式應用程式中啟用快照，請啟動偵錯工作階段 (快速鍵：**F5**)。 在顯示 [診斷工具] 視窗時，選擇 [記憶體使用量] 索引標籤，然後選擇 [堆積分析]。
      >
      >  ![啟用快照](../profiling/media/dbgdiag_mem_mixedtoolbar_enablesnapshot.png "DBGDIAG_MEM_MixedToolbar_EnableSnapshot")
      >
      >  停止 (快速鍵：**Shift**+**F5**) 並重新開始偵錯。
 
-6.  若要在偵錯工作階段開始時擷取快照，請選擇 [記憶體使用量] 摘要工具列上的 [擷取快照]。 (在此設定中斷點也可能會有幫助)。
+6. 若要在偵錯工作階段開始時擷取快照，請選擇 [記憶體使用量] 摘要工具列上的 [擷取快照]。 (在此設定中斷點也可能會有幫助)。
 
     ![擷取快照](../profiling/media/dbgdiag_mem_mixedtoolbar_takesnapshot.png "DBGDIAG_MEM_MixedToolbar_TakeSnapshot")
 
      > [!TIP]
-     >  若要建立記憶體的比較基準，請考慮擷取偵錯工作階段開始時的快照。
+     > 若要建立記憶體的比較基準，請考慮擷取偵錯工作階段開始時的快照。
 
-6.  執行會叫用您的第一個中斷點的案例。
+6. 執行會叫用您的第一個中斷點的案例。
 
-7.  當偵錯工具於第一個中斷點暫停時，選擇 [記憶體使用量] 摘要工具列上的 [擷取快照]。
+7. 當偵錯工具於第一個中斷點暫停時，選擇 [記憶體使用量] 摘要工具列上的 [擷取快照]。
 
-8.  按 **F5** 使應用程式執行至第二個中斷點。
+8. 按 **F5** 使應用程式執行至第二個中斷點。
 
-9.  現在請擷取另一個快照。
+9. 現在請擷取另一個快照。
 
      此時，您可以開始分析資料。
 
@@ -93,9 +93,9 @@ ms.locfileid: "57868978"
 
  每個資料行的名稱則取決於您在專案屬性中選擇的偵錯模式：.NET、原生或混合 (.NET 和原生)。
 
--   [物件 (差異)] 和 [配置數 (差異)] 資料行顯示擷取快照時 .NET 和原生記憶體中的物件數目。
+- [物件 (差異)] 和 [配置數 (差異)] 資料行顯示擷取快照時 .NET 和原生記憶體中的物件數目。
 
--   [堆積大小 (差異)] 資料行顯示 .NET 和原生堆積中的位元組數目
+- [堆積大小 (差異)] 資料行顯示 .NET 和原生堆積中的位元組數目
 
 當您擷取多個快照之後，摘要表的資料格會包含資料列快照與上一個快照之間的值變更。
 
@@ -136,13 +136,13 @@ ms.locfileid: "57868978"
 
  [類型檢視]  顯示快照中所有類型的數目和大小。
 
--   選擇所選取類型的執行個體圖示 (![[物件類型] 欄中的執行個體圖示](../profiling/media/dbg_mma_instancesicon.png "DBG_MMA_InstancesIcon"))，以顯示快照中所選取類型的物件相關資訊。
+- 選擇所選取類型的執行個體圖示 (![[物件類型] 欄中的執行個體圖示](../profiling/media/dbg_mma_instancesicon.png "DBG_MMA_InstancesIcon"))，以顯示快照中所選取類型的物件相關資訊。
 
      [執行個體]  檢視顯示所選類型的每個執行個體。 選取執行個體會顯示在 [配置呼叫堆疊]  窗格中建立執行個體時所產生的呼叫堆疊。
 
      ![執行個體檢視](../profiling/media/dbgdiag_mem_native_instances.png "DBGDIAG_MEM_Native_Instances")
 
--   在 [檢視模式]  清單中選擇 [堆疊檢視]  ，以查看所選類型的配置堆疊。
+- 在 [檢視模式]  清單中選擇 [堆疊檢視]  ，以查看所選類型的配置堆疊。
 
      ![堆疊檢視](../profiling/media/dbgdiag_mem_native_stacksview.png "DBGDIAG_MEM_Native_StacksView")
 
@@ -150,7 +150,7 @@ ms.locfileid: "57868978"
 
 - 在 [診斷工具]  視窗中，選擇 [記憶體使用量]  索引標籤摘要表資料格中的變更連結。
 
-   ![選擇變更 &#40;差異&#41; 報表](../profiling/media/dbgdiag_mem_choosediffreport.png "DBGDIAG_MEM_ChooseDiffReport")
+   ![選擇變更 &#40差異&#41; 報表](../profiling/media/dbgdiag_mem_choosediffreport.png "DBGDIAG_MEM_ChooseDiffReport")
 
 - 在 Managed 或原生報表的 [比較]  清單中，選擇一個快照。
 

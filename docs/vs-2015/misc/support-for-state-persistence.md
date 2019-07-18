@@ -1,27 +1,22 @@
 ---
 title: 狀態持續性支援 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 helpviewer_keywords:
 - state persistence, managed package framework support
 - managed package framework, state persistence support
 - state, persistence
 ms.assetid: d25866f2-8d1f-477f-8aa5-3af3fbbf6e97
 caps.latest.revision: 15
-manager: douge
-ms.openlocfilehash: 2b7eb294b38a5fb19303a175347adcdaa0f0ba22
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 6dc542d2e410b79a21e436a1881c06bd3cc4eef8
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49242823"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62434315"
 ---
 # <a name="support-for-state-persistence"></a>狀態持續性支援
 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 可以維護狀態的通用物件。 比方說，方案和專案屬性會儲存到與方案和專案檔從還原的。 可以匯出為使用者設定，而且從設定檔匯入。  

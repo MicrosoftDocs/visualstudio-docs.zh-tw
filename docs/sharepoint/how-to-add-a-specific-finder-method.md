@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e6f52caf33820b230eb00b1be2999fe7f972176f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 8fdd467f2b3a06398198f6fd8452c6a548bf0872
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56615282"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431274"
 ---
 # <a name="how-to-add-a-specific-finder-method"></a>HOW TO：新增特定搜尋方法
   您可以藉由建立傳回單一實體執行個體*特定的 Finder*方法。 當使用者選擇商務資料 web 組件或外部的清單中的實體時，商務資料連接 (BDC) 服務會執行特定搜尋工具方法。 如需詳細資訊，請參閱 <<c0> [ 設計 business data connectivity 模型](../sharepoint/designing-a-business-data-connectivity-model.md)。
@@ -58,10 +58,10 @@ ms.locfileid: "56615282"
 5. 設定傳回參數的類型描述元做為實體型別描述元。 如需有關如何建立實體型別描述元的資訊，請參閱[How to:定義參數的型別描述元](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)。
 
    > [!NOTE]
-   >  您不需要執行此步驟中，如果您已加入實體中的搜尋工具方法。 Visual Studio 會使用您在搜尋工具方法中定義的類型描述元。
+   > 您不需要執行此步驟中，如果您已加入實體中的搜尋工具方法。 Visual Studio 會使用您在搜尋工具方法中定義的類型描述元。
 
    > [!NOTE]
-   >  如果實體類型的識別項欄位代表自動產生的資料庫資料表中的欄位，設定**唯讀**屬性的識別項欄位 **，則為 True**。
+   > 如果實體類型的識別項欄位代表自動產生的資料庫資料表中的欄位，設定**唯讀**屬性的識別項欄位 **，則為 True**。
 
 6. 在 [**方法詳細資料**] 視窗中，選擇此方法的方法執行個體。
 
@@ -80,7 +80,7 @@ ms.locfileid: "56615282"
      下列範例會傳回 SQL Server 的 AdventureWorks 範例資料庫中的連絡人。
 
      > [!NOTE]
-     >  值取代`ServerName`欄位與您伺服器的名稱。
+     > 值取代`ServerName`欄位與您伺服器的名稱。
 
      [!code-csharp[SP_BDC#3](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs#3)]
      [!code-vb[SP_BDC#3](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#3)]

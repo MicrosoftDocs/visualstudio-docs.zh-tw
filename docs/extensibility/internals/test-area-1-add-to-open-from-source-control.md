@@ -1,24 +1,24 @@
 ---
-title: 測試區域 1:從原始檔控制新增至開啟 |Microsoft Docs
+title: 測試區域 1：從原始檔控制新增至開啟 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK], adding and opening solutions
 - source control plug-ins, adding and opening solutions
 ms.assetid: 5b3b5b08-5e9b-41be-ac72-c63957faed22
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 686c7fbfae76d9f4006664aff9f79848eba563f8
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 1e490ac500d5598866dbf66e3562dbb156fecb6e
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56613310"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66331103"
 ---
-# <a name="test-area-1-add-toopen-from-source-control"></a>測試區域 1:從原始檔控制新增至 / Open
+# <a name="test-area-1-add-toopen-from-source-control"></a>測試區域 1：從原始檔控制新增至 / Open
 此原始檔控制外掛程式測試區域涵蓋如何將方案或專案原始檔控制之下，並擷取從原始檔控制。
 
 ## <a name="command-menu-access"></a>命令功能表存取
@@ -37,19 +37,19 @@ ms.locfileid: "56613310"
 - 針對[!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)]，加入從原始檔控制也會提供**檔案**，**新增**，**現有專案**; 查看在[!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)]位置。
 
   > [!NOTE]
-  >  這項測試中可用的本機檔案或本機 IIS （web 伺服器） 的路徑。
+  > 這項測試中可用的本機檔案或本機 IIS （web 伺服器） 的路徑。
 
 ## <a name="expected-behavior"></a>預期的行為
 
--   每個支援的專案類型，使用者應該能夠 「 新增到 」 和 「 開啟從 「 原始檔控制。
+- 每個支援的專案類型，使用者應該能夠 「 新增到 」 和 「 開啟從 「 原始檔控制。
 
--   當專案加入原始檔控制，對應\< *ProjectName*> 建立.vspscc 檔案 （專案提示檔案）。 它包含排除的檔案清單和連接資訊。 請勿刪除此檔案，因為它包含專案的特定資訊。
+- 當專案加入原始檔控制，對應\< *ProjectName*> 建立.vspscc 檔案 （專案提示檔案）。 它包含排除的檔案清單和連接資訊。 請勿刪除此檔案，因為它包含專案的特定資訊。
 
--   當方案就會加入至原始檔控制，相對應\< *SolutionName*> 建立.vssscc (triple S) 檔案。 文字檔包含連接資訊和排除的檔案清單，類似於專案提示檔案。 這個檔案是暫時的且只存在於原始檔控制資料庫。
+- 當方案就會加入至原始檔控制，相對應\< *SolutionName*> 建立.vssscc (triple S) 檔案。 文字檔包含連接資訊和排除的檔案清單，類似於專案提示檔案。 這個檔案是暫時的且只存在於原始檔控制資料庫。
 
--   從原始檔控制開啟方案時\< *SolutionName*>.vsscc (雙精度浮點 S) 檔案，只存在於原始檔控制資料庫中，在本機建立的暫存檔案中。 此檔案包含方案的 [連線] 資料夾的方案檔的路徑。 這個檔案是暫時的 「 從原始檔控制開啟 」 作業完成時，會刪除本機複本。
+- 從原始檔控制開啟方案時\< *SolutionName*>.vsscc (雙精度浮點 S) 檔案，只存在於原始檔控制資料庫中，在本機建立的暫存檔案中。 此檔案包含方案的 [連線] 資料夾的方案檔的路徑。 這個檔案是暫時的 「 從原始檔控制開啟 」 作業完成時，會刪除本機複本。
 
--   專案加入原始檔控制之後，您可以執行它 （簽出、 Get、 等等） 的原始檔控制的任何動作。
+- 專案加入原始檔控制之後，您可以執行它 （簽出、 Get、 等等） 的原始檔控制的任何動作。
 
 ## <a name="test-cases"></a>測試案例
  以下是新增的特定測試案例 / 開啟從原始檔控制的測試區域。

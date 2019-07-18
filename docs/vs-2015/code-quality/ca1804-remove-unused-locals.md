@@ -1,14 +1,9 @@
 ---
-title: Ca1804： 必須移除未使用的區域變數 |Microsoft Docs
-ms.custom: ''
+title: CA1804:移除未使用的區域變數 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1804
 - RemoveUnusedLocals
@@ -20,14 +15,14 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 4d7982ad4fd7e9785634b3b729af4057b8179381
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 38fe76bbdf2fdafa69ca12caf4f131a05f783954
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49928408"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68143122"
 ---
-# <a name="ca1804-remove-unused-locals"></a>CA1804：必須移除未使用的區域變數
+# <a name="ca1804-remove-unused-locals"></a>CA1804:必須移除未使用的區域變數
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -56,13 +51,10 @@ ms.locfileid: "49928408"
  [!code-vb[FxCop.Performance.UnusedLocals#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Performance.UnusedLocals/vb/FxCop.Performance.UnusedLocals.vb#1)]
 
 ## <a name="related-rules"></a>相關的規則
- [CA1809：避免在方法中包含過多區域變數](../code-quality/ca1809-avoid-excessive-locals.md)
+ [CA1809:避免過多區域變數](../code-quality/ca1809-avoid-excessive-locals.md)
 
- [CA1811：避免使用未呼叫的私用程式碼](../code-quality/ca1811-avoid-uncalled-private-code.md)
+ [CA1811:避免使用未呼叫的私用程式碼](../code-quality/ca1811-avoid-uncalled-private-code.md)
 
- [CA1812：避免使用未執行個體化的內部類別](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md)
+ [CA1812:避免使用未執行個體化的內部類別](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md)
 
- [CA1801：必須檢閱未使用的參數](../code-quality/ca1801-review-unused-parameters.md)
-
-
-
+ [CA1801： 必須檢閱未使用的參數](../code-quality/ca1801-review-unused-parameters.md)

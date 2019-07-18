@@ -1,25 +1,20 @@
 ---
 title: 應用程式移轉至通用 Windows 平台 (UWP) |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 ms.assetid: 5279ab9b-71d9-4be5-81f6-a1f24b06f5fb
 caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
-manager: wpickett
-ms.openlocfilehash: 8d4bc5d8e8a24483c30ac813d3253626e58dd353
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 86bc76b9b71c7b73a8d299aab41cb6e2eb37680d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51791744"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686659"
 ---
 # <a name="migrate-apps-to-the-universal-windows-platform-uwp"></a>將應用程式移轉至通用 Windows 平台 (UWP)
 視需要手動變更現有使用 Visual Studio 2015 RC 為 Windows 市集 8.1 應用程式、Windows Phone 8.1 應用程式或通用 Windows 應用程式所建立的專案檔案，使其能夠用於 Visual Studio 2015 RTM。 (如果您的 Windows 8.1 通用應用程式同時具有 Windows 應用程式專案和 Windows Phone 專案，則需要遵循移轉每個專案的步驟)。  
@@ -34,19 +29,19 @@ ms.locfileid: "51791744"
   
 - [您必須變更現有使用 Visual Studio 2015 CTP 所建立之通用 Windows 應用程式的單元測試專案](#MigrateUnitTest)。  
   
-  若您不想執行上述變更，可了解如何 [移植您現有的應用程式](http://msdn.microsoft.com/library/windows/apps/xaml/mt238321.aspx) 到新的通用 Windows 專案。  
+  若您不想執行上述變更，可了解如何 [移植您現有的應用程式](https://msdn.microsoft.com/library/windows/apps/xaml/mt238321.aspx) 到新的通用 Windows 專案。  
   
-##  <a name="MigrateCSharp"></a> 移轉 C# /VB Windows 市集 8.1 或 Windows Phone 8.1 應用程式以使用通用 Windows 平台  
+## <a name="MigrateCSharp"></a> 移轉 C# /VB Windows 市集 8.1 或 Windows Phone 8.1 應用程式以使用通用 Windows 平台  
   
 #### <a name="migrate-your-cvb-project-files"></a>移轉 C#/VB 專案檔  
   
-1.  若要尋找您已安裝的通用 Windows 平台，請開啟下列資料夾： **\Program Files (x86)\Windows Kits\10\Platforms\UAP**。 這包含每個已安裝的通用 Windows 平台的資料夾清單。 資料夾名稱就是您已安裝的通用 Windows 平台版本。 例如此 Windows 10 裝置安裝了 10.0.10240.0 版的通用 Windows 平台。  
+1. 若要尋找您已安裝的通用 Windows 平台，請開啟下列資料夾： **\Program Files (x86)\Windows Kits\10\Platforms\UAP**。 這包含每個已安裝的通用 Windows 平台的資料夾清單。 資料夾名稱就是您已安裝的通用 Windows 平台版本。 例如此 Windows 10 裝置安裝了 10.0.10240.0 版的通用 Windows 平台。  
   
      ![開啟資料夾以檢視安裝的版本](../misc/media/uap-uwpversions.png "UAP_UWPVersions")  
   
      可以安裝多個通用 Windows 平台版本。 建議您針對應用程式使用最新版本。  
   
-2.  使用檔案總管，前往 UWP 專案的儲存資料夾。 在此資料夾中建立 .json 檔案。 將檔案命名為 project.json，然後將下列內容加入此檔案中：  
+2. 使用檔案總管，前往 UWP 專案的儲存資料夾。 在此資料夾中建立 .json 檔案。 將檔案命名為 project.json，然後將下列內容加入此檔案中：  
   
     ```json  
     {  
@@ -71,7 +66,7 @@ ms.locfileid: "51791744"
   
     ```  
   
-3.  建立稱為 default.rd.xml 並具有下列內容的檔案。 如果您有 VB 專案，請將這個檔案加入您專案的 [我的專案] 目錄。 如果您有 C# 專案，請將這個檔案加入您專案的 [屬性] 目錄。  
+3. 建立稱為 default.rd.xml 並具有下列內容的檔案。 如果您有 VB 專案，請將這個檔案加入您專案的 [我的專案] 目錄。 如果您有 C# 專案，請將這個檔案加入您專案的 [屬性] 目錄。  
   
     ```xml  
     <?xml version="1.0"?>  
@@ -83,23 +78,23 @@ ms.locfileid: "51791744"
     </Application></Directives>  
     ```  
   
-4.  在 Visual Studio 中，開啟包含現有 Windows 市集 8.1 應用程式或 Windows Phone 8.1 應用程式的方案。  
+4. 在 Visual Studio 中，開啟包含現有 Windows 市集 8.1 應用程式或 Windows Phone 8.1 應用程式的方案。  
   
-5.  在方案總管中，於您應用程式所屬的現有專案上按一下滑鼠右鍵，然後選取 [卸載專案] 。 卸載專案之後，再次以滑鼠右鍵按一下專案檔，然後選擇編輯 .csproj 或 .vbproj 檔案。  
+5. 在方案總管中，於您應用程式所屬的現有專案上按一下滑鼠右鍵，然後選取 [卸載專案] 。 卸載專案之後，再次以滑鼠右鍵按一下專案檔，然後選擇編輯 .csproj 或 .vbproj 檔案。  
   
      ![以滑鼠右鍵按一下專案，然後選擇 [編輯]](../misc/media/uap-editproject.png "UAP_EditProject")  
   
-6.  尋找\<PropertyGroup > 包含的項目\<TargetPlatformVersion > 項目，其值為 8.1。 執行下列步驟，為此\<PropertyGroup > 項目：  
+6. 尋找\<PropertyGroup > 包含的項目\<TargetPlatformVersion > 項目，其值為 8.1。 執行下列步驟，為此\<PropertyGroup > 項目：  
   
-    1.  設定的值\<平台 > 項目： **x86**。  
+    1. 設定的值\<平台 > 項目： **x86**。  
   
-    2.  新增\<TargetPlatformIdentifier > 項目並將其值設定為： **UAP**。  
+    2. 新增\<TargetPlatformIdentifier > 項目並將其值設定為：**UAP**。  
   
-    3.  現有的值變更\<TargetPlatformVersion > 是您所安裝的通用 Windows 平台版本值的項目。 也將新增\<TargetPlatformMinVersion > 項目並為它提供相同的值。  
+    3. 現有的值變更\<TargetPlatformVersion > 是您所安裝的通用 Windows 平台版本值的項目。 也將新增\<TargetPlatformMinVersion > 項目並為它提供相同的值。  
   
-    4.  值變更\<MinimumVisualStudioVersion > 項目： **14**。  
+    4. 值變更\<MinimumVisualStudioVersion > 項目：**14**.  
   
-    5.  取代\<ProjectTypeGuids > 項目，如下所示：  
+    5. 取代\<ProjectTypeGuids > 項目，如下所示：  
   
          若為 C#：  
   
@@ -113,9 +108,9 @@ ms.locfileid: "51791744"
         <ProjectTypeGuids>{A5A43C5B-DE2A-4C0C-9213-0A381AF9435A};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>  
         ```  
   
-    6.  新增\<e > 項目並將其值設定為： **，則為 true**。  
+    6. 新增\<e > 項目並將其值設定為： **，則為 true**。  
   
-    7.  通用 Windows 應用程式的預設資產縮放比例為 200。 如果您的專案包含資產不縮放比例為 200，則您必須新增\<u > 項目加入此 PropertyGroup 您資產的縮放比例的值。 深入了解 [資產與縮放比例](http://msdn.microsoft.com/library/jj679352.aspx)。  
+    7. 通用 Windows 應用程式的預設資產縮放比例為 200。 如果您的專案包含資產不縮放比例為 200，則您必須新增\<u > 項目加入此 PropertyGroup 您資產的縮放比例的值。 深入了解 [資產與縮放比例](https://msdn.microsoft.com/library/jj679352.aspx)。  
   
          現在您\<PropertyGroup > 項目看起來應該類似此範例：  
   
@@ -134,7 +129,7 @@ ms.locfileid: "51791744"
         </PropertyGroup>  
         ```  
   
-7.  將 12.0 的任何執行個體都取代為 14.0，以反映現在正在使用的 Visual Studio 版本。 例如這些執行個體：  
+7. 將 12.0 的任何執行個體都取代為 14.0，以反映現在正在使用的 Visual Studio 版本。 例如這些執行個體：  
   
     ```xml  
     <Project Tools Version="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
@@ -145,7 +140,7 @@ ms.locfileid: "51791744"
         <VisualStudioVersion>14.0</VisualStudioVersion>  
     ```  
   
-8.  尋找\<PropertyGroup > 已針對 AnyCPU 平台一部分的 Condition 屬性的項目。 移除這些項目和其所有子系。 使用 Visual Studio 2015 建立的 Windows 10 應用程式不支援 AnyCPU。 例如，您應該移除\<PropertyGroup > 項目像是這些項目：  
+8. 尋找\<PropertyGroup > 已針對 AnyCPU 平台一部分的 Condition 屬性的項目。 移除這些項目和其所有子系。 使用 Visual Studio 2015 建立的 Windows 10 應用程式不支援 AnyCPU。 例如，您應該移除\<PropertyGroup > 項目像是這些項目：  
   
     ```xml  
     <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">  
@@ -251,35 +246,35 @@ ms.locfileid: "51791744"
   
      您現在必須遵循步驟，為您的 Windows 市集 8.1 或 Windows Phone 8.1 專案 [更新封裝資訊清單檔](#PackageManifest) 。  
   
-##  <a name="MigrateCPlusPlus"></a> 移轉 c + + Windows 市集 8.1 或 Windows Phone 8.1 應用程式以使用通用 Windows 平台  
+## <a name="MigrateCPlusPlus"></a> 移轉您C++Windows 市集 8.1 或 Windows Phone 8.1 應用程式，以使用通用 Windows 平台  
   
 #### <a name="migrate-your-c-project-files"></a>移轉 C++ 專案檔  
   
-1.  若要尋找您已安裝的通用 Windows 平台，請開啟下列資料夾： **\Program Files (x86)\Windows Kits\10\Platforms\UAP**。 這包含每個已安裝的通用 Windows 平台的資料夾清單。 資料夾名稱就是您已安裝的通用 Windows 平台版本。 例如此 Windows 10 裝置安裝了 10.0.10240.0 版的通用 Windows 平台。  
+1. 若要尋找您已安裝的通用 Windows 平台，請開啟下列資料夾： **\Program Files (x86)\Windows Kits\10\Platforms\UAP**。 這包含每個已安裝的通用 Windows 平台的資料夾清單。 資料夾名稱就是您已安裝的通用 Windows 平台版本。 例如此 Windows 10 裝置安裝了 10.0.10240.0 版的通用 Windows 平台。  
   
      ![開啟資料夾以檢視安裝的版本](../misc/media/uap-uwpversions.png "UAP_UWPVersions")  
   
      可以安裝多個通用 Windows 平台版本。 建議您針對應用程式使用最新版本。  
   
-2.  在 Visual Studio 中，開啟包含現有 C++ Windows 市集 8.1 應用程式或 Windows Phone 8.1 應用程式的方案。  
+2. 在 Visual Studio 中，開啟包含現有 C++ Windows 市集 8.1 應用程式或 Windows Phone 8.1 應用程式的方案。  
   
      在方案總管中，以滑鼠右鍵按一下現有專案，然後選取 [卸載專案] 。 卸載專案之後，再次以滑鼠右鍵按一下專案檔，然後選擇編輯 .vcxproj 檔案。  
   
      ![權限&#45;按一下 專案檔，然後選擇編輯](../misc/media/uap-editcplusproject.png "UAP_EditCPlusProject")  
   
-3.  尋找\<PropertyGroup > 包含的項目\<ApplicationTypeRevision > 項目，其值為 8.1。 執行下列步驟，為此\<PropertyGroup > 項目：  
+3. 尋找\<PropertyGroup > 包含的項目\<ApplicationTypeRevision > 項目，其值為 8.1。 執行下列步驟，為此\<PropertyGroup > 項目：  
   
-    1.  新增\<WindowsTargetPlatformVersion > 項目和\<WindowsTargetPlatformMinVersion > 項目並提供他們的您所安裝的通用 Windows 平台版本值。  
+    1. 新增\<WindowsTargetPlatformVersion > 項目和\<WindowsTargetPlatformMinVersion > 項目並提供他們的您所安裝的通用 Windows 平台版本值。  
   
-    2.  將 ApplicationTypeRevision 項目的值從 8.1 更新為 10.0。  
+    2. 將 ApplicationTypeRevision 項目的值從 8.1 更新為 10.0。  
   
-    3.  值變更\<MinimumVisualStudioVersion > 項目： 14。  
+    3. 值變更\<MinimumVisualStudioVersion > 項目：14.  
   
-    4.  新增\<e > 項目並將其值設定為： true。  
+    4. 新增\<e > 項目並將其值設定為： true。  
   
-    5.  通用 Windows 應用程式的預設資產縮放比例為 200。 如果您的專案包含資產不縮放比例為 200，則您必須新增\<u > 項目加入此 PropertyGroup 您資產的縮放比例的值。 深入了解 [資產與縮放比例](http://msdn.microsoft.com/library/jj679352.aspx)。  
+    5. 通用 Windows 應用程式的預設資產縮放比例為 200。 如果您的專案包含資產不縮放比例為 200，則您必須新增\<u > 項目加入此 PropertyGroup 您資產的縮放比例的值。 深入了解 [資產與縮放比例](https://msdn.microsoft.com/library/jj679352.aspx)。  
   
-    6.  適用於 Windows Phone 專案，將值變更的\<ApplicationType > 從 Windows Phone，到 Windows 市集。  
+    6. 適用於 Windows Phone 專案，將值變更的\<ApplicationType > 從 Windows Phone，到 Windows 市集。  
   
          現在您\<PropertyGroup > 項目看起來應該類似此範例：  
   
@@ -297,7 +292,7 @@ ms.locfileid: "51791744"
         </PropertyGroup>  
         ```  
   
-4.  所有執行個體都變更\<PlatformToolset > 具有值 [v140] 的項目。 例如:   
+4. 所有執行個體都變更\<PlatformToolset > 具有值 [v140] 的項目。 例如:   
   
     ```xml  
     <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">  
@@ -309,7 +304,7 @@ ms.locfileid: "51791744"
       </PropertyGroup>  
     ```  
   
-5.  每個其餘\<PropertyGroup > 項目中，檢查是否項目具有含發行組態的 Condition 屬性。 如果是這樣，但它不包含\<h > 項目，然後新增一個。 設定的值\<h > 項目為 true，就像這樣：  
+5. 每個其餘\<PropertyGroup > 項目中，檢查是否項目具有含發行組態的 Condition 屬性。 如果是這樣，但它不包含\<h > 項目，然後新增一個。 設定的值\<h > 項目為 true，就像這樣：  
   
     ```xml  
     <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|X64'" Label="Configuration">  
@@ -322,13 +317,13 @@ ms.locfileid: "51791744"
   
     ```  
   
-6.  儲存您的變更。 然後關閉專案檔。  
+6. 儲存您的變更。 然後關閉專案檔。  
   
-7.  在方案總管中，以滑鼠右鍵按一下專案檔，然後從內容功能表中選擇 [重新載入專案]。 您專案中的所有檔案現在應該都顯示在方案總管中。  
+7. 在方案總管中，以滑鼠右鍵按一下專案檔，然後從內容功能表中選擇 [重新載入專案]。 您專案中的所有檔案現在應該都顯示在方案總管中。  
   
      您現在必須遵循步驟，為您的 Windows 市集 8.1 或 Windows Phone 8.1 專案 [更新封裝資訊清單檔](#PackageManifest) 。  
   
-##  <a name="PackageManifest"></a> 更新您所有的 Windows 市集 8.1 或 Windows Phone 8.1 專案的封裝資訊清單檔  
+## <a name="PackageManifest"></a> 更新您所有的 Windows 市集 8.1 或 Windows Phone 8.1 專案的封裝資訊清單檔  
  您必須更新方案中每個專案的封裝資訊清單檔。  
   
 #### <a name="update-your-package-manifest-file"></a>更新封裝資訊清單檔  
@@ -337,7 +332,7 @@ ms.locfileid: "51791744"
   
 2. 您需要更新\<封裝 > 新的結構描述具有項目會根據您現有的專案類型。 先根據是否有 Windows 市集或 Windows Phone 專案，移除下面的結構描述。  
   
-    **舊的 Windows 市集專案：** 您\<封裝 > 項目看起來類似如下。  
+    **針對 Windows 市集專案的舊版：** 您\<封裝 > 項目看起來類似如下。  
   
    ```xml  
    <Package  
@@ -346,7 +341,7 @@ ms.locfileid: "51791744"
   
    ```  
   
-    **舊的 Windows Phone 專案：** 您\<封裝 > 項目看起來類似如下。  
+    **針對 Windows Phone 專案的舊版：** 您\<封裝 > 項目看起來類似如下。  
   
    ```xml  
    <Package  
@@ -356,7 +351,7 @@ ms.locfileid: "51791744"
    xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest">  
    ```  
   
-    **通用 Windows 平台的新功能：** 加入如下的結構描述，以您\<封裝 > 項目。 從剛剛移除之結構描述的項目中，移除任何相關聯的命名空間識別碼前置詞。 將 IgnorableNamespaces 屬性更新為：uap mp。 您的新\<封裝 > 項目看起來應該類似如下。  
+    **新的通用 Windows 平台：** 新增下列結構描述，以您\<封裝 > 項目。 從剛剛移除之結構描述的項目中，移除任何相關聯的命名空間識別碼前置詞。 將 IgnorableNamespaces 屬性更新為：uap mp。 您的新\<封裝 > 項目看起來應該類似如下。  
   
    ```xml  
    <Package  
@@ -367,7 +362,7 @@ ms.locfileid: "51791744"
   
    ```  
   
-3. 新增\<相依性 > 子項目\<封裝 > 項目。 然後新增\<TargetDeviceFamily > 子項目，這個\<相依性 > 具有 Name、 MinVersion 和 MaxVersionTested 屬性項目。 將下列值提供給名稱屬性：Windows.Universal。 將您已安裝的通用 Windows 平台版本值提供給 MinVersion 和 MaxVersionTested。 這個項目應該與下列項目類似：  
+3. 新增\<相依性 > 子項目\<封裝 > 項目。 然後新增\<TargetDeviceFamily > 子項目，這個\<相依性 > 具有 Name、 MinVersion 和 MaxVersionTested 屬性項目。 提供的名稱屬性的值：Windows.Universal。 將您已安裝的通用 Windows 平台版本值提供給 MinVersion 和 MaxVersionTested。 這個項目應該與下列項目類似：  
   
    ```xml  
    <Dependencies>  
@@ -375,7 +370,7 @@ ms.locfileid: "51791744"
    </Dependencies>  
    ```  
   
-4. **只有 Windows 市集：** 您需要新增\<phoneidentity> > 子項目\<封裝 > 項目。 加入 PhoneProductId 屬性和 PhonePublisherId 屬性。 將具有相同的值中的 Name 屬性 PhoneProductId 設定\<身分識別 > 項目。 將 PhonePublishedId 值設定為：00000000-0000-0000-0000-000000000000。 與下列類似：  
+4. **只有 Windows 市集：** 您需要新增\<phoneidentity> > 子項目\<封裝 > 項目。 加入 PhoneProductId 屬性和 PhonePublisherId 屬性。 將具有相同的值中的 Name 屬性 PhoneProductId 設定\<身分識別 > 項目。 若要設定 PhonePublishedId 值：00000000-0000-0000-0000-000000000000. 與下列類似：  
   
    ```xml  
    <Identity Name="aa3815a1-2d97-4c71-8c99-578135b28cd8" Publisher="CN=xxxxxxxx" Version="1.0.0.0" />   
@@ -384,7 +379,7 @@ ms.locfileid: "51791744"
   
 5. 尋找\<必要條件 > 項目，並刪除這個項目和其任何子項目。  
   
-6. 新增**uap**命名空間下的\<資源 > 項目： Scale、 DXFeatureLevel。 例如:   
+6. 新增**uap**命名空間下的\<資源 > 項目：小數位數、 DXFeatureLevel。 例如：  
   
    ```xml  
    <Resources>  
@@ -405,7 +400,7 @@ ms.locfileid: "51791744"
   
    ```  
   
-8. 新增**uap**命名空間\<VisualElements > 項目和任何其子項目。 例如:   
+8. 新增**uap**命名空間\<VisualElements > 項目和任何其子項目。 例如：  
   
    ```xml  
    <uap:VisualElements  
@@ -487,7 +482,7 @@ ms.locfileid: "51791744"
   
 12. 變更架構相依性。 將發行者名稱新增至所有\<PackageDependency > 項目，並指定 MinVersion，如果尚未指定。  
   
-     **舊：** \<PackageDependency > 項目  
+     **舊：**\<PackageDependency > 項目  
   
     ```xml  
     <Dependencies>  
@@ -496,7 +491,7 @@ ms.locfileid: "51791744"
   
     ```  
   
-     **新增：** \<PackageDependency > 項目  
+     **新增：**\<PackageDependency > 項目  
   
     ```xml  
     <Dependencies>  
@@ -523,7 +518,7 @@ ms.locfileid: "51791744"
     </Extension>  
     ```  
   
-     **新：** 使用 Bluetooth 類型工作。  
+     **新增：** 使用 Bluetooth 類型工作。  
   
     ```xml  
     <Extension Category="windows.backgroundTasks" EntryPoint="Fabrikam.BackgroundTask" Executable="MyBackground.exe">  
@@ -533,7 +528,7 @@ ms.locfileid: "51791744"
     </Extension>  
     ```  
   
-14. 將 Bluetooth 裝置功能 bluetooth.rfcomm 和 bluetooth.genericAttributeProfile 取代為一般 Bluetooth 功能。 例如:   
+14. 將 Bluetooth 裝置功能 bluetooth.rfcomm 和 bluetooth.genericAttributeProfile 取代為一般 Bluetooth 功能。 例如：  
   
      **舊：**  
   
@@ -552,7 +547,7 @@ ms.locfileid: "51791744"
     </Capabilities>  
     ```  
   
-     **新：** 取代為一般 Bluetooth 功能。  
+     **新增：** 取代為一般 Bluetooth 功能。  
   
     ```xml  
     <Capabilities>  
@@ -565,7 +560,7 @@ ms.locfileid: "51791744"
   
     1. 這些屬性\<VisualElements > 已被取代，應移除：  
   
-       - \<VisualElements > 屬性： ForegroundText、 ToastCapable  
+       - \<VisualElements > 屬性：ForegroundText、 ToastCapable  
   
        - \<d > 屬性 DefaultSize  
   
@@ -590,22 +585,22 @@ ms.locfileid: "51791744"
   
 17. 您需要先移除一些隱藏檔案，才能重新開啟方案。  
   
-    1.  開啟檔案總管，並按一下工具列中的 [檢視]  ，然後選取 [隱藏項目]  和 [副檔名] 。 開啟您的電腦上的下列資料夾：\<方案的位置路徑 >\\.vs\\\v14 {專案名稱}。 如果檔案的副檔名是 .suo，則請予以刪除。  
+    1. 開啟檔案總管，並按一下工具列中的 [檢視]  ，然後選取 [隱藏項目]  和 [副檔名] 。 開啟您的電腦上的下列資料夾：\<方案的位置路徑 >\\.vs\\\v14 {專案名稱}。 如果檔案的副檔名是 .suo，則請予以刪除。  
   
-    2.  現在，請回到您方案所在的資料夾。 開啟方案中現有專案的任何資料夾。 如果其中任何專案資料夾內檔案的副檔名為 .csproj.user 或 .vbproj.user，則請予以刪除。  
+    2. 現在，請回到您方案所在的資料夾。 開啟方案中現有專案的任何資料夾。 如果其中任何專案資料夾內檔案的副檔名為 .csproj.user 或 .vbproj.user，則請予以刪除。  
   
          您現在可以在 Visual Studio 中重新開啟方案。 您已經準備好使用通用 Windows 平台來編寫、建置和偵錯應用程式。  
   
          了解如何 [調整程式碼](https://msdn.microsoft.com/library/windows/apps/dn954974.aspx) ，以利用通用 Windows 平台的新功能。  
   
-##  <a name="PreviousVersions"></a> 現有使用 Visual Studio 2015 RC 建立的通用 Windows 應用程式所需的變更  
+## <a name="PreviousVersions"></a> 現有使用 Visual Studio 2015 RC 建立的通用 Windows 應用程式所需的變更  
  若是使用 Visual Studio 2015 RC 建立 Windows 10 通用應用程式，必須重新設定目標專案，如此您所安裝的通用 Windows 平台版本才能與最新版的 Visual Studio 2015 一起使用。 不支援任何先前的版本。 所需的變更會根據您用來建立應用程式的語言而不同：  
   
--   [C# /VB 應用程式](#RCUpdate10CSharp)  
+- [C# /VB 應用程式](#RCUpdate10CSharp)  
   
--   [C + + 應用程式](#RCUpdate10CPlusPlus)  
+- [C++應用程式](#RCUpdate10CPlusPlus)  
   
-###  <a name="RCUpdate10CSharp"></a> 更新 C# /VB 專案以使用最新的通用 Windows 平台  
+### <a name="RCUpdate10CSharp"></a> 更新 C# /VB 專案以使用最新的通用 Windows 平台  
  當您開啟您現有應用程式的方案時，會顯示應用程式需要更新：  
   
  ![在 [方案總管] 中檢視您的專案](../misc/media/uwp-updaterequired.png "UWP_UpdateRequired")  
@@ -656,7 +651,7 @@ ms.locfileid: "51791744"
   
 4. 尋找\<PropertyGroup > 包含的項目\<TargetPlatformVersion > 和\<TargetPlatformMinVersion > 項目。 變更現有的值\<TargetPlatformVersion > 和\<TargetPlatformMinVersion > 項目是相同的版本，您已安裝的通用 Windows 平台。  
   
-    通用 Windows 應用程式的預設資產縮放比例為 200。 建立 Visual Studio 2015 RC 包含資產縮放比例為 100 的專案，您必須新增\<u > 項目加入此 PropertyGroup 100 的值。 深入了解 [資產與縮放比例](http://msdn.microsoft.com/library/jj679352.aspx)。  
+    通用 Windows 應用程式的預設資產縮放比例為 200。 建立 Visual Studio 2015 RC 包含資產縮放比例為 100 的專案，您必須新增\<u > 項目加入此 PropertyGroup 100 的值。 深入了解 [資產與縮放比例](https://msdn.microsoft.com/library/jj679352.aspx)。  
   
 5. 您先前如有加入任何 UWP 擴充功能 SDK 的參考 (例如 Windows Mobile SDK)，必須更新 SDK 版本。 比方說這\<SDKReference > 項目：  
   
@@ -676,7 +671,7 @@ ms.locfileid: "51791744"
   
    ```  
   
-6. 尋找\<目標 > 名稱屬性值，其值的元素： EnsureNuGetPackageBuildImports。 刪除此項目及其所有子系。  
+6. 尋找\<目標 > 名稱屬性值，其值的元素：EnsureNuGetPackageBuildImports. 刪除此項目及其所有子系。  
   
    ```xml  
    <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">  
@@ -736,13 +731,13 @@ ms.locfileid: "51791744"
   
 13. 在專案中，開啟 Package.appxmanifest 檔案。  
   
-    1.  尋找\<t > 項目。 將其 MinVersion 及 MaxVersionTested 屬性變更為您所安裝之通用 Windows 平台的對應版本。 與下列類似：  
+    1. 尋找\<t > 項目。 將其 MinVersion 及 MaxVersionTested 屬性變更為您所安裝之通用 Windows 平台的對應版本。 與下列類似：  
   
         ```xml  
         <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.10240.0" MaxVersionTested="10.0.10240.0" />  
         ```  
   
-    2.  儲存您的變更。  
+    2. 儲存您的變更。  
   
 14. 使用 NuGet 管理員加入您在前述步驟中刪除的封裝。 Visual Studio 2015 RC 與 Visual Studio 2015 RTM 之 Windows 10 專案格式的最大不同，就是 RTM 格式會使用 [NuGet](http://docs.nuget.org/) 第 3 版。  
   
@@ -750,23 +745,23 @@ ms.locfileid: "51791744"
   
     若您的通用 Windows 應用程式已有單元測試專案，也必須遵循 [這些步驟](#MigrateUnitTest)。  
   
-###  <a name="RCUpdate10CPlusPlus"></a> 更新 c + + 專案以使用最新的通用 Windows 平台  
+### <a name="RCUpdate10CPlusPlus"></a> 更新您C++專案以使用最新的通用 Windows 平台  
   
-1.  若要尋找您已安裝的通用 Windows 平台，請開啟下列資料夾： **\Program Files (x86)\Windows Kits\10\Platforms\UAP**。 這包含每個已安裝的通用 Windows 平台的資料夾清單。 資料夾名稱就是您已安裝的通用 Windows 平台版本。 例如此 Windows 10 裝置安裝了 10.0.10240.0 版的通用 Windows 平台。  
+1. 若要尋找您已安裝的通用 Windows 平台，請開啟下列資料夾： **\Program Files (x86)\Windows Kits\10\Platforms\UAP**。 這包含每個已安裝的通用 Windows 平台的資料夾清單。 資料夾名稱就是您已安裝的通用 Windows 平台版本。 例如此 Windows 10 裝置安裝了 10.0.10240.0 版的通用 Windows 平台。  
   
      ![開啟資料夾以檢視安裝的版本](../misc/media/uap-uwpversions.png "UAP_UWPVersions")  
   
      可以安裝多個通用 Windows 平台版本。 建議您針對應用程式使用最新版本。  
   
-2.  開啟包含 C++ Windows 通用應用程式的方案。 以滑鼠右鍵按一下專案 .vcxproj 檔案，然後選擇卸載專案檔。 卸載專案之後，再次以滑鼠右鍵按一下專案檔，然後選擇進行編輯。  
+2. 開啟包含 C++ Windows 通用應用程式的方案。 以滑鼠右鍵按一下專案 .vcxproj 檔案，然後選擇卸載專案檔。 卸載專案之後，再次以滑鼠右鍵按一下專案檔，然後選擇進行編輯。  
   
      ![卸載專案，然後編輯專案檔](../misc/media/uap-editearliercplus.png "UAP_EditEarlierCPlus")  
   
-3.  尋找任何\<PropertyGroup > 項目不包含條件屬性，但包含\<ApplicationTypeRevision > 項目。 將 ApplicationTypeRevision 值從 8.2 更新為 10.0。 新增\<WindowsTargetPlatformVersion > 和\<WindowsTargetPlatformMinVersion > 項目，並設定其值必須是您所安裝的通用 Windows 平台版本的值。  
+3. 尋找任何\<PropertyGroup > 項目不包含條件屬性，但包含\<ApplicationTypeRevision > 項目。 將 ApplicationTypeRevision 值從 8.2 更新為 10.0。 新增\<WindowsTargetPlatformVersion > 和\<WindowsTargetPlatformMinVersion > 項目，並設定其值必須是您所安裝的通用 Windows 平台版本的值。  
   
      新增\<e > 項目並設定其值為 true，如果項目不存在。  
   
-     通用 Windows 應用程式的預設資產縮放比例為 200。 建立 Visual Studio 2015 RC 包含資產縮放比例為 100 的專案，您必須新增\<u > 項目加入此 PropertyGroup 100 的值。 深入了解 [資產與縮放比例](http://msdn.microsoft.com/library/jj679352.aspx)。  
+     通用 Windows 應用程式的預設資產縮放比例為 200。 建立 Visual Studio 2015 RC 包含資產縮放比例為 100 的專案，您必須新增\<u > 項目加入此 PropertyGroup 100 的值。 深入了解 [資產與縮放比例](https://msdn.microsoft.com/library/jj679352.aspx)。  
   
      因此這個\<PropertyGroup > 項目現在會如下所示：  
   
@@ -784,7 +779,7 @@ ms.locfileid: "51791744"
   
     ```  
   
-4.  每個其餘\<PropertyGroup > 項目中，檢查是否項目具有含發行組態的 Condition 屬性。 如果是這樣，但它不包含\<h > 項目，然後新增一個。 設定的值\<h > 項目為 true，就像這樣：  
+4. 每個其餘\<PropertyGroup > 項目中，檢查是否項目具有含發行組態的 Condition 屬性。 如果是這樣，但它不包含\<h > 項目，然後新增一個。 設定的值\<h > 項目為 true，就像這樣：  
   
     ```xml  
     <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">  
@@ -797,36 +792,36 @@ ms.locfileid: "51791744"
   
     ```  
   
-5.  您需要更新\<e > 項目和\<h > 若要啟用.NET Native，但.NET 原生的項目未啟用 c + + 範本中。  
+5. 您需要更新\<e > 項目和\<h > 中未啟用項目，若要啟用.NET Native，但.NET 原生C++範本。  
   
      儲存您的變更。 然後關閉專案檔。  
   
-6.  在方案總管中，以滑鼠右鍵按一下專案檔，然後從內容功能表中選擇 [重新載入專案]。 您專案中的所有檔案現在應該都顯示在方案總管中。  
+6. 在方案總管中，以滑鼠右鍵按一下專案檔，然後從內容功能表中選擇 [重新載入專案]。 您專案中的所有檔案現在應該都顯示在方案總管中。  
   
-7.  在專案中，開啟 Package.appxmanifest 檔案。  
+7. 在專案中，開啟 Package.appxmanifest 檔案。  
   
-    1.  尋找\<t > 項目。 將其 MinVersion 及 MaxVersionTested 屬性變更為您所安裝之通用 Windows 平台的對應版本。 與下列類似：  
+    1. 尋找\<t > 項目。 將其 MinVersion 及 MaxVersionTested 屬性變更為您所安裝之通用 Windows 平台的對應版本。 與下列類似：  
   
         ```xml  
         <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.10240.0" MaxVersionTested="10.0.10240.0" />  
         ```  
   
-    2.  儲存您的變更。  
+    2. 儲存您的變更。  
   
          您現在可以編寫、建置和偵錯應用程式。  
   
          若您的通用 Windows 應用程式已有單元測試專案，也必須遵循 [這些步驟](#MigrateUnitTest)。  
   
-##  <a name="MigrateUnitTest"></a> 使用 Visual Studio 2015 RC 建立的通用 Windows 應用程式的現有單元測試專案所需的變更  
+## <a name="MigrateUnitTest"></a> 使用 Visual Studio 2015 RC 建立的通用 Windows 應用程式的現有單元測試專案所需的變更  
  若是使用 Visual Studio 2015 RC 建立 Windows 10 通用應用程式的單元測試專案，您必須另外對您的專案檔案進行這些額外的變更，才能利用最新版 Visual Studio 2015 所提供的這些測試專案。 所需的變更會根據您用來建立應用程式的語言而不同：  
   
--   [C# /VB 應用程式](#UnitTestRCUpdate10CSharp)  
+- [C# /VB 應用程式](#UnitTestRCUpdate10CSharp)  
   
--   [C + + 應用程式](#UnitTestRCUpdate10CPlusPlus)  
+- [C++應用程式](#UnitTestRCUpdate10CPlusPlus)  
   
-###  <a name="UnitTestRCUpdate10CSharp"></a> 更新您的 C# /VB 單元測試專案  
+### <a name="UnitTestRCUpdate10CSharp"></a> 更新您的 C# /VB 單元測試專案  
   
-1. 使用 Visual Studio 開啟包含 C#/VB 單元測試專案的方案。 值變更\<OuttputType > 項目： AppContainerExe。  
+1. 使用 Visual Studio 開啟包含 C#/VB 單元測試專案的方案。 值變更\<OuttputType > 項目：AppContainerExe.  
   
    ```xml  
   
@@ -997,9 +992,9 @@ ms.locfileid: "51791744"
   
    您現在已可執行單元測試。  
   
-###  <a name="UnitTestRCUpdate10CPlusPlus"></a> 更新 c + + 專案以使用最新的通用 Windows 平台  
+### <a name="UnitTestRCUpdate10CPlusPlus"></a> 更新您C++專案以使用最新的通用 Windows 平台  
   
-1.  使用 Visual Studio 開啟包含 C++ 單元測試專案的方案。 移除下列項目：  
+1. 使用 Visual Studio 開啟包含 C++ 單元測試專案的方案。 移除下列項目：  
   
     ```xml  
   
@@ -1010,7 +1005,7 @@ ms.locfileid: "51791744"
   
     ```  
   
-2.  新增下列\<p > 項目，這個項目底下\<u p Label ="ProjectConfigurations"> 如果它們不存在於此檔案：  
+2. 新增下列\<p > 項目，這個項目底下\<u p Label ="ProjectConfigurations"> 如果它們不存在於此檔案：  
   
     ```xml  
   
@@ -1025,7 +1020,7 @@ ms.locfileid: "51791744"
   
     ```  
   
-3.  將所有此項目：  
+3. 將所有此項目：  
   
     ```xml  
   
@@ -1041,7 +1036,7 @@ ms.locfileid: "51791744"
   
     ```  
   
-4.  加入下列\<PropertyGroup > 如果還沒有在檔案中的項目：  
+4. 加入下列\<PropertyGroup > 如果還沒有在檔案中的項目：  
   
     ```xml  
   
@@ -1060,7 +1055,7 @@ ms.locfileid: "51791744"
   
     ```  
   
-5.  將所有此項目：  
+5. 將所有此項目：  
   
     ```xml  
   
@@ -1075,7 +1070,7 @@ ms.locfileid: "51791744"
   
     ```  
   
-6.  將所有此項目：  
+6. 將所有此項目：  
   
     ```xml  
   
@@ -1091,7 +1086,7 @@ ms.locfileid: "51791744"
   
     ```  
   
-7.  加入下列\<ItemDefinitionGroup > 已經包含其他一節中的項目\<ItemDefinitionGroup > 項目：  
+7. 加入下列\<ItemDefinitionGroup > 已經包含其他一節中的項目\<ItemDefinitionGroup > 項目：  
   
     ```xml  
   
@@ -1118,7 +1113,7 @@ ms.locfileid: "51791744"
   
     ```  
   
-8.  刪除下列\<ItemGroup > 項目：  
+8. 刪除下列\<ItemGroup > 項目：  
   
     ```xml  
   

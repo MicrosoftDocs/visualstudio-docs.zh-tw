@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgram2::Attach
 ms.assetid: de069fbf-a565-4905-b102-f5658c55aacd
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3c8cf4f3f5978744c38690681b4555f59cafd106
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: ca0d696067cecc042a0fa6eb071a92f18ac229fc
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56720195"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66311400"
 ---
 # <a name="idebugprogram2attach"></a>IDebugProgram2::Attach
 將附加至程式。
@@ -36,10 +39,9 @@ int Attach( 
 );
 ```
 
-#### <a name="parameters"></a>參數
- `pCallback`
-
- [in][IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)用於偵錯事件通知的物件。
+## <a name="parameters"></a>參數
+`pCallback`\
+[in][IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)用於偵錯事件通知的物件。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。 下表顯示一些可能的錯誤碼。

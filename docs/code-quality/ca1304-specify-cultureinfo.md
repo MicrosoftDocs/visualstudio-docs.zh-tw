@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f1fe4ebce3a49c4aa626515e22eacd1c8e263847
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: f6d4776f6bcbf89e95301bd2c7ef4f6f6b5680d9
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57870369"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66714354"
 ---
 # <a name="ca1304-specify-cultureinfo"></a>CA1304:必須指定 CultureInfo
 
@@ -40,7 +40,7 @@ ms.locfileid: "57870369"
 
 ## <a name="rule-description"></a>規則描述
 
-當<xref:System.Globalization.CultureInfo>或<xref:System.IFormatProvider?displayProperty=nameWithType>未提供物件，多載成員所提供的預設值可能沒有您想要以所有地區設定的效果。 此外，.NET Framework 成員選擇預設文化特性，而且格式為基礎的假設，可能不正確的程式碼。 為了確保程式碼的運作如預期般運作，您的案例，您應該提供特定文化特性資訊，根據下列指導方針：
+當<xref:System.Globalization.CultureInfo>或<xref:System.IFormatProvider?displayProperty=nameWithType>未提供物件，多載成員所提供的預設值可能沒有您想要以所有地區設定的效果。 此外，.NET 成員選擇預設文化特性，而且格式為基礎的假設，可能不正確的程式碼。 為了確保程式碼的運作如預期般運作，您的案例，您應該提供特定文化特性資訊，根據下列指導方針：
 
 - 如果此值會顯示給使用者，使用目前文化特性。 請參閱 <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=nameWithType>。
 

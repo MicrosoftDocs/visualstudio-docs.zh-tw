@@ -10,16 +10,17 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d369bae532fae40c2856cce88169137146d826d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 00e95520c526c1d26f0122d9631dfb8196077853
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55934636"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62970144"
 ---
-# <a name="keyboard-environment-options-dialog-box"></a>選項對話方塊、環境、鍵盤
+# <a name="options-dialog-box-environment--keyboard"></a>選項對話方塊：環境 \> 鍵盤
+
 您可以使用這個頁面設定鍵盤對應。 如需對應的詳細資訊，請參閱[識別及自訂鍵盤快速鍵](../../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [環境選項對話方塊](../../ide/reference/environment-options-dialog-box.md)

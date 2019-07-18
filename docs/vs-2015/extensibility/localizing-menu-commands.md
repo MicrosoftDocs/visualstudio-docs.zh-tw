@@ -1,14 +1,9 @@
 ---
 title: 將功能表命令當地語系化 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - localize
 - localization
@@ -19,13 +14,13 @@ helpviewer_keywords:
 ms.assetid: b04ee0f6-82ea-47e6-853a-72382267d6da
 caps.latest.revision: 12
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 6b16771e4d47416f09774ce2f4765de9d6023e94
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: c879072b55729e249b1aecd665d6f470f4138a75
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51753886"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686127"
 ---
 # <a name="localizing-menu-commands"></a>將功能表命令當地語系化
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,7 +48,7 @@ ms.locfileid: "51753886"
   
       下列範例會顯示英文和西班牙文按鈕文字，以開啟家譜 Explorer 工具視窗命令。  
   
-      [FamilyTree.en US.vsct]  
+      [FamilyTree.en-US.vsct]  
   
    ```xml  
    <Button guid="guidLocalizedPackageCmdSet" id="cmdidFamilyTree" priority="0x0100" type="Button">  
@@ -66,7 +61,7 @@ ms.locfileid: "51753886"
    </Button>  
    ```  
   
-    [FamilyTree.es ES.vsct]  
+    [FamilyTree.es-ES.vsct]  
   
    ```xml  
    <Button guid="guidLocalizedPackageCmdSet" id="cmdidFamilyTree" priority="0x0100" type="Button">  
@@ -83,21 +78,21 @@ ms.locfileid: "51753886"
 ## <a name="localizing-other-text-resources"></a>當地語系化的文字中的其他資源  
  資源 (.resx) 檔案中定義的文字命令名稱以外的資源。  
   
-1.  重新命名 VSPackage.en US.resx VSPackage.resx。  
+1. 重新命名 VSPackage.en US.resx VSPackage.resx。  
   
-2.  請針對每個當地語系化的語言 VSPackage.en US.resx 檔案的複本。  
+2. 請針對每個當地語系化的語言 VSPackage.en US.resx 檔案的複本。  
   
      命名每個複本的 VSPackage。*地區設定*.resx，其中*地區設定*是特定文化特性名稱。  
   
-3.  重新命名 Resources.en-us.resx Resources.resx。  
+3. 重新命名 Resources.en-us.resx Resources.resx。  
   
-4.  請針對每個當地語系化的語言 Resources.en-us.resx 檔案的複本。  
+4. 請針對每個當地語系化的語言 Resources.en-us.resx 檔案的複本。  
   
      命名每個複本的資源。*地區設定*.resx，其中*地區設定*是特定文化特性名稱。  
   
-5.  開啟每個.resx 檔案，以修改適用於特定的語言和文化特性的字串值。 下列範例會顯示工具視窗的標題列的當地語系化的資源定義。  
+5. 開啟每個.resx 檔案，以修改適用於特定的語言和文化特性的字串值。 下列範例會顯示工具視窗的標題列的當地語系化的資源定義。  
   
-     [Resources.en-us.resx]  
+     [Resources.en-US.resx]  
   
     ```xml  
     <data name="ToolWindowTitle" xml:space="preserve">  
@@ -117,9 +112,9 @@ ms.locfileid: "51753886"
 ## <a name="incorporating-localized-resources-into-the-project"></a>併入專案中當地語系化的資源  
  您必須修改 assemblyinfo.cs 檔案和要納入的當地語系化的資源的專案檔。  
   
-1.  從**屬性**中的節點**方案總管 中**，在編輯器中開啟 assemblyinfo.cs 或 assemblyinfo.vb。  
+1. 從**屬性**中的節點**方案總管 中**，在編輯器中開啟 assemblyinfo.cs 或 assemblyinfo.vb。  
   
-2.  新增下列項目。  
+2. 新增下列項目。  
   
     ```csharp  
     [assembly: NeutralResourcesLanguage("en-US", UltimateResourceFallbackLocation.Satellite)]  
@@ -127,13 +122,13 @@ ms.locfileid: "51753886"
   
      英文 （美國） 設定為預設語言。  
   
-3.  卸載專案。  
+3. 卸載專案。  
   
-4.  在編輯器中開啟專案檔。  
+4. 在編輯器中開啟專案檔。  
   
-5.  找出`ItemGroup`包含的項目`EmbeddedResource`項目。  
+5. 找出`ItemGroup`包含的項目`EmbeddedResource`項目。  
   
-6.  在`EmbeddedResource`項目，會呼叫 VSPackage.en US.resx，取代`ManifestResourceName`項目`LogicalName`項目，設定為`VSPackage.en-US.Resources`、，如下所示。  
+6. 在`EmbeddedResource`項目，會呼叫 VSPackage.en US.resx，取代`ManifestResourceName`項目`LogicalName`項目，設定為`VSPackage.en-US.Resources`、，如下所示。  
   
     ```xml  
     <EmbeddedResource Include="VSPackage.en-US.resx">  
@@ -142,9 +137,9 @@ ms.locfileid: "51753886"
     </EmbeddedResource>  
     ```  
   
-7.  針對每個當地語系化的語言，複製`EmbeddedResource`VsPackage.en 美國，並將設定項目**Include**屬性並**LogicalName**的複製到目標地區設定，如下列所示的項目範例。  
+7. 針對每個當地語系化的語言，複製`EmbeddedResource`VsPackage.en 美國，並將設定項目**Include**屬性並**LogicalName**的複製到目標地區設定，如下列所示的項目範例。  
   
-8.  每個當地語系化`VSCTCompile`項目，新增`ResourceName`指向的項目`Menus.ctmenu`，如下列範例所示。  
+8. 每個當地語系化`VSCTCompile`項目，新增`ResourceName`指向的項目`Menus.ctmenu`，如下列範例所示。  
   
     ```xml  
     <ItemGroup>  
@@ -163,5 +158,4 @@ ms.locfileid: "51753886"
 ## <a name="see-also"></a>另請參閱  
  [擴充功能表和命令](../extensibility/extending-menus-and-commands.md)   
  [MenuCommand 對比OleMenuCommands](../misc/menucommands-vs-olemenucommands.md)   
- [全球化和當地語系化](http://msdn.microsoft.com/library/9a59696b-d89b-45bd-946d-c75da4732d02)
-
+ [全球化和當地語系化](https://msdn.microsoft.com/library/9a59696b-d89b-45bd-946d-c75da4732d02)

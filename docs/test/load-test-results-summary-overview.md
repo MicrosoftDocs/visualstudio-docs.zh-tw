@@ -14,16 +14,16 @@ ms.assetid: 326b6c3c-5378-452b-8ca3-ba5a06ab3d41
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7cc4cc2af5fb78c181be94863176914c17481e95
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 66789cdf50c06648b2d973d9c62a14c113aeaa0e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55928721"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62785919"
 ---
 # <a name="load-test-results-summary-overview"></a>負載測試結果摘要概觀
 
-執行負載測試之後，您可以檢視負載測試摘要，快速了解測試的結果。 負載測試摘要以精簡易讀的格式提供主要的結果。 您也可以列印負載測試摘要， 以方便您和專案關係人一起討論測試的結果。 當您從先前執行的負載測試開啟負載測試結果時，負載測試摘要也是預設檢視。 如需詳細資訊，請參閱[＜How to：存取負載測試結果以進行分析](../test/how-to-access-load-test-results-for-analysis.md)。
+執行負載測試之後，您可以檢視負載測試摘要，快速了解測試的結果。 負載測試摘要以精簡易讀的格式提供主要的結果。 您也可以列印負載測試摘要， 以方便您和專案關係人一起討論測試的結果。 當您從先前執行的負載測試開啟負載測試結果時，負載測試摘要也是預設檢視。 如需詳細資訊，請參閱[如何：存取負載測試結果以進行分析](../test/how-to-access-load-test-results-for-analysis.md)。
 
 ![摘要檢視](../test/media/ltest_summaryview.png)
 
@@ -70,7 +70,7 @@ ms.locfileid: "55928721"
 
 ## <a name="key-statistic-top-5-slowest-pages"></a>基本統計資料：前 5 名最慢的頁面
 
-最慢的頁面區段包含負載測試中前 5 名最慢的頁面， 並顯示每個頁面的 URL 和平均頁面載入時間。 這些頁面是依遞減順序列出。 您可以選擇頁面的 URL 開啟 [頁面] 資料表，並查看該頁面的其他詳細資料。 如需詳細資訊，請參閱[＜How to：檢視網頁回應](../test/how-to-view-web-page-response-time-in-a-load-test.md)。
+最慢的頁面區段包含負載測試中前 5 名最慢的頁面， 並顯示每個頁面的 URL 和平均頁面載入時間。 這些頁面是依遞減順序列出。 您可以選擇頁面的 URL 開啟 [頁面] 資料表，並查看該頁面的其他詳細資料。 如需詳細資訊，請參閱[如何：檢視網頁回應](../test/how-to-view-web-page-response-time-in-a-load-test.md)。
 
 [95% 頁面時間 (秒)] 的百分位數會報告 95% 頁面的完成時間都不超過這段時間 (以秒為單位)。
 
@@ -93,7 +93,7 @@ ms.locfileid: "55928721"
 
 ## <a name="page-results"></a>頁面結果
 
-頁面結果區段包含負載測試中所有網頁的清單， 並顯示 URL、情節、測試的名稱、平均頁面時間和計數。 您可以選擇頁面的 URL 開啟 [頁面] 資料表，並查看該頁面的其他詳細資料。 如需詳細資訊，請參閱[＜How to：檢視網頁回應](../test/how-to-view-web-page-response-time-in-a-load-test.md)。
+頁面結果區段包含負載測試中所有網頁的清單， 並顯示 URL、情節、測試的名稱、平均頁面時間和計數。 您可以選擇頁面的 URL 開啟 [頁面] 資料表，並查看該頁面的其他詳細資料。 如需詳細資訊，請參閱[如何：檢視網頁回應](../test/how-to-view-web-page-response-time-in-a-load-test.md)。
 
 > [!NOTE]
 > 選擇區段標題左側的箭號，就可以摺疊或展開此區段。
@@ -107,9 +107,9 @@ ms.locfileid: "55928721"
 
 這些百分位數會報告下列異動資訊：
 
--   90% 異動總數的完成時間都不超過 \<time> 秒。
+- 90% 異動總數的完成時間都不超過 \<time> 秒。
 
--   95% 異動總數的完成時間都不超過 \<time> 秒。
+- 95% 異動總數的完成時間都不超過 \<time> 秒。
 
 ## <a name="system-under-test-resources"></a>待測系統資源
 

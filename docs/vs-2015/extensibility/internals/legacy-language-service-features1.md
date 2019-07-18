@@ -1,26 +1,21 @@
 ---
 title: 舊版語言服務功能 1 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - language services [managed package framework]
 ms.assetid: a646e4f0-767d-4cd1-8e1a-9a2aa210a1b7
 caps.latest.revision: 13
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: bb66895066d0af1259c3509c40ec9fa4458e3f79
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 9506c6756c785741c40f86ae5839101bf0079854
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51774052"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68196136"
 ---
 # <a name="legacy-language-service-features"></a>舊版語言服務功能
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -85,4 +80,3 @@ Managed 的封裝架構 (MPF) 語言服務可支援一或多個[!INCLUDE[vsprvs]
   
  [實作舊版語言服務](../../extensibility/internals/implementing-a-legacy-language-service1.md)  
  提供有關如何使用 managed 的 package framework (MPF) 來實作 managed 程式碼中的功能完整的語言服務的資訊。
-

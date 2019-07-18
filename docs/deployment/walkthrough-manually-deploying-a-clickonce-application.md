@@ -1,5 +1,5 @@
 ---
-title: 逐步解說： 手動部署 ClickOnce 應用程式 |Microsoft Docs
+title: 逐步解說：手動部署 ClickOnce 應用程式 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -20,14 +20,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 39d482b6e2b0e2cdd9fce553a1cb11b1b27e9467
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 60173bd8a48b067757bbccfad42a2feaf5633082
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56628100"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63405801"
 ---
-# <a name="walkthrough-manually-deploy-a-clickonce-application"></a>Walkthrough: Manually deploy a ClickOnce application (逐步解說：手動部署 ClickOnce 應用程式)
+# <a name="walkthrough-manually-deploy-a-clickonce-application"></a>逐步解說：手動部署 ClickOnce 應用程式
 如果您不能使用 Visual Studio 部署您[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式，或您需要使用進階的部署功能，例如受信任的應用程式部署，您應該使用*Mage.exe*命令列工具來建立您[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]資訊清單。 本逐步解說描述如何建立[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]部署所使用的命令列版本 (*Mage.exe*) 或圖形化的版本 (*MageUI.exe*) 的資訊清單產生和編輯工具。
 
 ## <a name="prerequisites"></a>必要條件
@@ -43,7 +43,7 @@ ms.locfileid: "56628100"
 
 - 決定如何將分散式部署。
 
-   發佈選項包括： Web、 檔案共用或 CD。 如需詳細資訊，請參閱 [ClickOnce Security and Deployment](../deployment/clickonce-security-and-deployment.md)。
+   發佈選項包括：Web、 檔案共用或 CD。 如需詳細資訊，請參閱 [ClickOnce Security and Deployment](../deployment/clickonce-security-and-deployment.md)。
 
 - 決定應用程式是否需要提高權限的信任層級。
 
@@ -54,13 +54,13 @@ ms.locfileid: "56628100"
    您應該登入您的部署使用 Authenticode 憑證。 您可以使用 Visual Studio，來產生測試憑證*MageUI.exe*，或*MakeCert.exe*並*Pvk2Pfx.exe*工具，或者您可以從憑證取得憑證授權單位 (CA)。 如果您選擇使用受信任的應用程式部署，您也必須執行一次安裝所有的用戶端電腦上的憑證。 如需詳細資訊，請參閱 [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md)。
 
   > [!NOTE]
-  >  您也可以簽署您的部署，您可以從憑證授權單位取得的 CNG 憑證。
+  > 您也可以簽署您的部署，您可以從憑證授權單位取得的 CNG 憑證。
 
 - 請確定應用程式沒有與 UAC 資訊內嵌資訊清單。
 
    您必須決定是否您的應用程式包含的資訊清單與使用者帳戶控制 (UAC) 的詳細資訊，例如`<dependentAssembly>`項目。 若要檢查應用程式資訊清單，您可以使用 Windows Sysinternals [Sigcheck](http://go.microsoft.com/fwlink/?LinkId=158035)公用程式。
 
-   如果您的應用程式包含的資訊清單以 UAC 的詳細資訊，您必須重新建置它沒有 UAC 資訊。 針對C#專案在 Visual Studio 中開啟專案屬性，然後選取 應用程式 索引標籤。在  **Manifest**下拉式清單中，選取**Vytvořit aplikaci bez manifestu**。 在 Visual Studio 中 Visual Basic 專案，請開啟 專案屬性，選取 應用程式 索引標籤，然後按一下**檢視的 UAC 設定**。 在開啟資訊清單檔案中，移除所有項目內的單一`<asmv1:assembly>`項目。
+   如果您的應用程式包含的資訊清單以 UAC 的詳細資訊，您必須重新建置它沒有 UAC 資訊。 針對 C# 專案在 Visual Studio 中，開啟專案屬性，然後選取 應用程式 索引標籤。在  **Manifest**下拉式清單中，選取**Vytvořit aplikaci bez manifestu**。 在 Visual Studio 中 Visual Basic 專案，請開啟 專案屬性，選取 應用程式 索引標籤，然後按一下**檢視的 UAC 設定**。 在開啟資訊清單檔案中，移除所有項目內的單一`<asmv1:assembly>`項目。
 
 - 決定應用程式是否需要用戶端電腦上的必要條件。
 
@@ -73,7 +73,7 @@ ms.locfileid: "56628100"
 2. 在您剛才建立的部署目錄，建立版本的子目錄。 如果這是您要部署應用程式的第一次，命名版本子目錄**1.0.0.0**。
 
    > [!NOTE]
-   >  您部署的版本可以不同於您的應用程式的版本。
+   > 您部署的版本可以不同於您的應用程式的版本。
 
 3. 所有的應用程式檔案複製到版本子目錄，包括可執行檔、 組件、 資源和資料檔案。 如有必要，您可以建立其他子目錄包含其他檔案。
 
@@ -86,7 +86,7 @@ ms.locfileid: "56628100"
    ```
 
    > [!NOTE]
-   >  務必包含句點 （.） 之後`-FromDirectory`選項，指出目前的目錄。 如果您未包含點，您必須指定您的應用程式檔案的路徑。
+   > 務必包含句點 （.） 之後`-FromDirectory`選項，指出目前的目錄。 如果您未包含點，您必須指定您的應用程式檔案的路徑。
 
 6. 登入應用程式資訊清單，使用您的 Authenticode 憑證。 取代*mycert.pfx*與您的憑證檔案的路徑。 取代*passwd*取代為您的憑證檔案的密碼。
 
@@ -121,7 +121,7 @@ ms.locfileid: "56628100"
 2. 在您剛才建立的部署目錄，建立版本的子目錄。 如果這是您要部署應用程式的第一次，命名版本子目錄**1.0.0.0**。
 
    > [!NOTE]
-   >  您部署的版本是可能不同於您的應用程式的版本。
+   > 您部署的版本是可能不同於您的應用程式的版本。
 
 3. 所有的應用程式檔案複製到版本子目錄，包括可執行檔、 組件、 資源和資料檔案。 如有必要，您可以建立其他子目錄包含其他檔案。
 

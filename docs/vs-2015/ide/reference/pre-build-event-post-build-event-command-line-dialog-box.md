@@ -34,28 +34,27 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d3e6597e8b288e85c6bd49d3c8e843fd464bf094
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 213535d983f95f304b8e0fba3241fa502577f0f4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54753374"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438061"
 ---
 # <a name="pre-build-eventpost-build-event-command-line-dialog-box"></a>建置前事件/建置後事件命令列對話方塊
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 您可以直接在編輯方塊中鍵入[專案設計工具、建置事件頁面 (C#)](../../ide/reference/build-events-page-project-designer-csharp.md)的建置前或建置後事件，或者可以從可用的巨集清單選取建置前或建置後巨集。  
   
 > [!NOTE]
->  如果專案是最新狀態，而且未觸發任何建置，則建置前事件不會執行。  
+> 如果專案是最新狀態，而且未觸發任何建置，則建置前事件不會執行。  
   
 ## <a name="ui-element-list"></a>UI 項目清單  
  **命令列編輯方塊**  
  包含要針對建置前或建置後執行的事件。  
   
 > [!NOTE]
->  在執行 .bat 檔案的所有建置命令前方，加入 `call` 陳述式。 例如，`call C:\MyFile.bat` 或 `call C:\MyFile.bat call C:\MyFile2.bat`。  
+> 在執行 .bat 檔案的所有建置命令前方，加入 `call` 陳述式。 例如，`call C:\MyFile.bat` 或 `call C:\MyFile.bat call C:\MyFile2.bat`。  
   
  **巨集**  
  展開編輯方塊以顯示要插入命令列編輯方塊中的巨集清單。  
@@ -91,7 +90,7 @@ ms.locfileid: "54753374"
 |`$(TargetFileName)`|組建的主要輸出檔檔案名稱 (定義為主檔名和副檔名)。|  
 |`$(TargetExt)`|建置的主要輸出檔副檔名。 副檔名前面有 '.'。|  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [在 Visual Studio 中指定自訂建置事件](../../ide/specifying-custom-build-events-in-visual-studio.md)   
  [專案設計工具、建置事件 (C#)](../../ide/reference/build-events-page-project-designer-csharp.md)   
  [如何：指定建置事件 (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md)   

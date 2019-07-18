@@ -10,20 +10,20 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d2ca4e45c83aa3291b922694ebd16df5ab7fc35e
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 9b6f956adee315cc8c5d229a237e953de67f9c16
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57870502"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66262943"
 ---
 # <a name="walkthrough-create-a-multiple-computer-build-environment"></a>逐步解說：建立多電腦建置環境
 
 您可以在組織內建立建置環境，方法是在主機電腦上安裝 Visual Studio，然後將各種檔案和設定複製到另一部電腦，以便該電腦可參與建置。 您不需要在另一部電腦上安裝 Visual Studio。
 
-此文件並不會授權在外部轉散發軟體，或將建置環境提供給第三方。
+本文件並不會授權在外部轉散發軟體，或將建置環境提供給第三方。
 
-> 免責聲明<br /><br /> 此文件係依「原樣」提供。 雖然我們已測試過所述的步驟，但無法徹底測試每一種組態。 我們將試圖以學到的任何其他資訊，確保文件處於最新狀態。 此文件中所述之資訊與檢視 (包括 URL 及其他網站參考) 可能會隨時變更，恕不另行通知。 Microsoft 對本文提供之資訊，不作任何明示或暗示之保證。 貴用戶須自行承擔使用風險。<br /><br /> 此文件不提供　貴用戶任何 Microsoft 產品之智慧財產權的法定權利。 貴用戶可以複製此文件供內部參考之用。<br /><br /> 貴用戶沒有義務提供與此文件相關的任何建議、意見或其他意見反應 (「意見反應」) 給 Microsoft。 不過，貴用戶自願提供的任何意見反應可能會用於 Microsoft 產品以及相關規格或其他文件 (統稱為「Microsoft 供應項目」)，之後可能會由其他第三方用來開發自己的產品。 因此，如果　貴用戶針對此文件的任何版本提供 Microsoft 意見反應或套用意見反應的 Microsoft 供應項目，即表示　貴用戶同意：(a) Microsoft 可以在任何 Microsoft 供應項目中，自由地使用、重製、授權、散發或商業化意見反應；(b) 貴用戶也免費授權給第三方，這些權利僅限於讓其他產品使用或連接到納入意見反應的 Microsoft 產品之任何特定部分所需的專利權；以及 (c) 在下列情況下，貴用戶不會提供 Microsoft 任何意見反應，以授權或分享給任何第三方：(i) 貴用戶合理相信這些意見反應受限於任何第三方的任何專利、著作權或其他智慧財產權宣告或權利；或是 (ii) 受限於試圖要求納入或衍生自這類意見反應之任何 Microsoft 供應項目的授權條款，或其他 Microsoft 智慧財產權。
+> 免責聲明<br /><br /> 本文件係依「原樣」提供。 雖然我們已測試過所述的步驟，但無法徹底測試每一種組態。 我們將試圖以學到的任何其他資訊，確保文件處於最新狀態。 本文件中所述之資訊與檢視 (包括 URL 及其他網站參考) 可能會隨時變更，恕不另行通知。 Microsoft 對本文提供之資訊，不作任何明示或暗示之保證。 貴用戶須自行承擔使用風險。<br /><br /> 本文件不提供　貴用戶任何 Microsoft 產品之智慧財產權的法定權利。 貴用戶可以複製本文件供內部參考之用。<br /><br /> 貴用戶沒有義務提供與本文件相關的任何建議、意見或其他意見反應 (「意見反應」) 給 Microsoft。 不過，貴用戶自願提供的任何意見反應可能會用於 Microsoft 產品以及相關規格或其他文件 (統稱為「Microsoft 供應項目」)，之後可能會由其他第三方用來開發自己的產品。 因此，如果　貴用戶針對本文件的任何版本提供 Microsoft 意見反應或套用意見反應的 Microsoft 供應項目，即表示　貴用戶同意：(a) Microsoft 可以在任何 Microsoft 供應項目中，自由地使用、重製、授權、散發或商業化意見反應；(b) 貴用戶也免費授權給第三方，這些權利僅限於讓其他產品使用或連接到納入意見反應的 Microsoft 產品之任何特定部分所需的專利權；以及 (c) 在下列情況下，貴用戶不會提供 Microsoft 任何意見反應，以授權或分享給任何第三方：(i) 貴用戶合理相信這些意見反應受限於任何第三方的任何專利、著作權或其他智慧財產權宣告或權利；或是 (ii) 受限於試圖要求納入或衍生自這類意見反應之任何 Microsoft 供應項目的授權條款，或其他 Microsoft 智慧財產權。
 
 本逐步解說已對下列作業系統驗證過：
 
@@ -43,7 +43,7 @@ ms.locfileid: "57870502"
 
 ## <a name="prerequisites"></a>必要條件
 
-已安裝 [.NET 桌面開發] 工作負載的 Visual Studio。
+已安裝 [.NET 桌面開發]  工作負載的 Visual Studio。
 
 ## <a name="install-software-on-the-computers"></a>在電腦上安裝軟體
 
@@ -53,7 +53,7 @@ ms.locfileid: "57870502"
 
 1. 在主機電腦上，安裝 Visual Studio。
 
-2. 在建置電腦上，安裝 .NET Framework 4.5 或更新版本。 若要確認已安裝，請檢查登錄子機碼 **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full** 中 [Version] 項目的值是否為 [4.5] 或更高。
+2. 在建置電腦上，安裝 .NET Framework 4.5 或更新版本。 若要確認已安裝，請檢查登錄子機碼 **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full** 中 [Version]  項目的值是否為 [4.5]  或更高。
 
 ## <a name="copy-files-from-the-host-computer-to-the-build-computer"></a>將檔案從主機電腦複製到組建電腦
 
@@ -62,10 +62,10 @@ ms.locfileid: "57870502"
 - 在 x86 電腦上，預設位置為 *C:\Program Files\Microsoft Visual Studio*
 - 在 x64 電腦上，預設位置為 *C:\Program Files (x86)\Microsoft Visual Studio*
 
-請注意，*Program Files* 資料夾的名稱取決於所安裝的作業系統。 在 x86 電腦上，此名稱會是 *Program Files*；在 x64 電腦上，此名稱會是 *Program Files (x86)*。 不論系統架構為何，本逐步解說會將 *Program Files* 資料夾稱為 *%ProgramFiles%*。
+請注意，*Program Files* 資料夾的名稱取決於所安裝的作業系統。 在 x86 電腦上，此名稱會是 *Program Files*；在 x64 電腦上，此名稱會是 *Program Files (x86)* 。 不論系統架構為何，本逐步解說會將 *Program Files* 資料夾稱為 *%ProgramFiles%* 。
 
 > [!NOTE]
-> 在組建電腦中，所有相關檔案都必須位於相同的磁碟機上。 不過，該磁碟機的磁碟機代號可能會與安裝在主機電腦之 Visual Studio 磁碟機的磁碟機代號不同。 在任何情況下，當您建立登錄項目時，您必須考慮檔案的位置，如此文件稍後所述。
+> 在組建電腦中，所有相關檔案都必須位於相同的磁碟機上。 不過，該磁碟機的磁碟機代號可能會與安裝在主機電腦之 Visual Studio 磁碟機的磁碟機代號不同。 在任何情況下，當您建立登錄項目時，您必須考慮檔案的位置，如本文件稍後所述。
 
 ### <a name="copy-the-windows-sdk-files-to-the-build-computer"></a>將 Windows SDK 檔案複製到組建電腦
 
@@ -169,7 +169,7 @@ ms.locfileid: "57870502"
 
     - \Microsoft.VC110.OPENMP\vcomp110.dll
 
-5. 只將下列檔案從 *Debug_NonRedist\x86* 或 *Debug_NonRedist\x64* 資料夾複製到組建電腦，如[準備測試電腦以執行偵錯可執行檔](/cpp/ide/preparing-a-test-machine-to-run-a-debug-executable)中所述。 不會複製其他任何檔案。
+5. 只將下列檔案從 *Debug_NonRedist\x86* 或 *Debug_NonRedist\x64* 資料夾複製到組建電腦，如[準備測試電腦以執行偵錯可執行檔](/cpp/windows/preparing-a-test-machine-to-run-a-debug-executable)中所述。 不會複製其他任何檔案。
 
     - \Microsoft.VC110.DebugCRT\msvcp110d.dll
 
@@ -254,7 +254,7 @@ ms.locfileid: "57870502"
 
 ### <a name="use-vcvarsallbat-to-set-environment-variables"></a>使用 vcvarsall.bat 設定環境變數
 
-在組建電腦上開啟 [命令提示字元] 視窗，然後執行 *%Program Files%\Microsoft Visual Studio\\\<版本>\\\<版次>\VC\vcvarsall.bat*。 您可以使用命令列引數，指定要使用的工具組：x86、x64 Native 或 x64 Cross 編譯器。 如果您未指定命令列引數，則會使用 x86 工具組。
+在組建電腦上開啟 [命令提示字元]  視窗，然後執行 *%Program Files%\Microsoft Visual Studio\\\<版本>\\\<版次>\VC\vcvarsall.bat*。 您可以使用命令列引數，指定要使用的工具組：x86、x64 Native 或 x64 Cross 編譯器。 如果您未指定命令列引數，則會使用 x86 工具組。
 
 下表描述 *vcvarsall.bat* 支援的引數：
 
@@ -264,7 +264,7 @@ ms.locfileid: "57870502"
 |x86_amd64|x64 Cross|x86、x64|X64|
 |amd64|x64 Native|X64|X64|
 
-如果 *vcvarsall.bat* 順利執行 (也就是未顯示任何錯誤訊息)，您可以略過下一個步驟，並繼續進行此文件的[將 MSBuild 組件安裝到組建電腦上的全域組件快取 (GAC)](#install-msbuild-to-gac) 一節。
+如果 *vcvarsall.bat* 順利執行 (也就是未顯示任何錯誤訊息)，您可以略過下一個步驟，並繼續進行本文件的[將 MSBuild 組件安裝到組建電腦上的全域組件快取 (GAC)](#install-msbuild-to-gac) 一節。
 
 ### <a name="manually-set-environment-variables"></a>手動設定環境變數
 
@@ -300,7 +300,7 @@ MSBuild 必須將一些額外的組件安裝到組建電腦上的 GAC。
 
 2. 若要將組件安裝到 GAC，請在組建電腦上尋找 *gacutil.exe* (通常位於 %ProgramFiles%\Microsoft SDKs\Windows\v8.0A\bin\NETFX 4.0 Tools\\ 中)。 如果找不到此資料夾，請重複本逐步解說之[將檔案從主機電腦複製到組建電腦](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#copy-files-from-the-host-computer-to-the-build-computer)一節中的步驟。
 
-     開啟具有系統管理權限的 [命令提示字元] 視窗，然後針對每個檔案執行此命令：
+     開啟具有系統管理權限的 [命令提示字元]  視窗，然後針對每個檔案執行此命令：
 
      **gacutil -i \<檔案>**
 
@@ -385,9 +385,9 @@ MSBuild 必須將一些額外的組件安裝到組建電腦上的 GAC。
 
 6. 變更命令列環境，如下所示：
 
-    - 設定 Depot=「您在步驟 1 中建立的 Depot 目錄位置」
+    - 設定 Depot=「您在步驟 1 中建立的 Depot 目錄位置」 
 
-    - 設定 path=%path%;電腦上的 MSBuild 位置;%Depot%\Windows\System32;%Depot%\Windows\SysWOW64;%Depot%\Microsoft Visual Studio 15.0\Common7\IDE\
+    - 設定 path=%path%;電腦上的 MSBuild 位置  ;%Depot%\Windows\System32;%Depot%\Windows\SysWOW64;%Depot%\Microsoft Visual Studio 15.0\Common7\IDE\
 
        如需原生 64 位元建置，請指向 64 位元版本的 MSBuild。
 
@@ -397,7 +397,7 @@ MSBuild 必須將一些額外的組件安裝到組建電腦上的 GAC。
 
 6. 變更命令列環境，如下所示：
 
-    - 設定 Depot=「您在步驟 1 中建立的 Depot 目錄位置」
+    - 設定 Depot=「您在步驟 1 中建立的 Depot 目錄位置」 
 
     - 設定 path=%path%;*電腦上的 MSBuild 位置*;%Depot%\Windows\System32;%Depot%\Windows\SysWOW64;%Depot%\Microsoft Visual Studio 16.0\Common7\IDE\
 
@@ -407,5 +407,5 @@ MSBuild 必須將一些額外的組件安裝到組建電腦上的 GAC。
 
 ## <a name="see-also"></a>另請參閱
 
-- [準備測試電腦以執行偵錯可執行檔](/cpp/ide/preparing-a-test-machine-to-run-a-debug-executable)
+- [準備測試電腦以執行偵錯可執行檔](/cpp/windows/preparing-a-test-machine-to-run-a-debug-executable)
 - [命令列參考](../msbuild/msbuild-command-line-reference.md)

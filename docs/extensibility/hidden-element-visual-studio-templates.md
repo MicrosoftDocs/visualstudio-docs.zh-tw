@@ -1,6 +1,6 @@
 ---
 title: 隱藏項目 （Visual Studio 範本） |Microsoft Docs
-ms.date: 11/04/2016
+ms.date: 04/17/2019
 ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
@@ -8,37 +8,46 @@ f1_keywords:
 helpviewer_keywords:
 - Hidden element [Visual Studio project template]
 ms.assetid: f37406b0-52e7-4f2c-aacf-bc8d7a4117b3
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7a7a70b59d08da09f6a06c3d5c38d330def11b86
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 7c00fa2c9aff8664c637219c59cb174f5a16e655
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56721390"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66341048"
 ---
 # <a name="hidden-element-visual-studio-templates"></a>隱藏的項目 （Visual Studio 範本）
-指定是否在該範本會出現**新的專案**或**加入新項目** 對話方塊。
 
- \<VSTemplate> \<TemplateData> \<Hidden>
+指定是否該範本會出現在新的專案或**加入新項目**對話方塊。
+
+```xml
+<VSTemplate>
+    <TemplateData>
+        <Hidden>
+```
 
 ## <a name="syntax"></a>語法
 
-```
-<Hidden> true/false </Hidden>
+```xml
+<Hidden>true</Hidden>
+<Hidden>false</Hidden>
 ```
 
 ## <a name="attributes-and-elements"></a>屬性和元素
- 下列章節說明屬性、子元素和父元素。
+
+下列章節說明屬性、子元素和父元素。
 
 ### <a name="attributes"></a>屬性
- 無。
+
+無。
 
 ### <a name="child-elements"></a>子元素
- 無。
+
+無。
 
 ### <a name="parent-elements"></a>父元素
 
@@ -47,19 +56,22 @@ ms.locfileid: "56721390"
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|必要項目。<br /><br /> 將範本分類，並定義該範本在 [新增專案]  或 [加入新項目]  對話方塊中顯示的方式。|
 
 ## <a name="text-value"></a>文字值
- 需要文字值。
 
- 文字必須是`true`或`false`，這表示範本是否會出現在**新增專案**或是**加入新項目**對話方塊。
+需要文字值。
+
+文字必須是`true`或`false`，這表示範本是否會出現在**新增專案**或是**加入新項目**對話方塊。
 
 ## <a name="remarks"></a>備註
- `Hidden` 是選擇性項目。
 
- 如果不指定的任何其他子項目`TemplateData`所需的項目。
+`Hidden` 是選擇性項目。
+
+如果不指定的任何其他子項目`TemplateData`所需的項目。
 
 ## <a name="example"></a>範例
- 下列範例說明 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 範本的中繼資料。
 
-```
+下列範例說明的中繼資料C#範本。
+
+```xml
 <VSTemplate Type="Project" Version="3.0.0"
     xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
     <TemplateData>
@@ -85,5 +97,6 @@ ms.locfileid: "56721390"
 ```
 
 ## <a name="see-also"></a>另請參閱
-- [Visual Studio 範本結構描述參考](../extensibility/visual-studio-template-schema-reference.md)
+
+- [範本結構描述參考](../extensibility/visual-studio-template-schema-reference.md)
 - [建立專案與項目範本](../ide/creating-project-and-item-templates.md)

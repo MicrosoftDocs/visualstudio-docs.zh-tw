@@ -9,12 +9,12 @@ caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 53c55987c22104a8951976890812d90f6bb838d4
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: d9e4fc4dfdff336b9ddcbd04bd031b48a8acc4dd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54774989"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432608"
 ---
 # <a name="how-to-modify-webconfig-files-to-instrument-and-profile-dynamically-compiled-aspnet-web-applications"></a>如何：修改 Web.Config 檔案以檢測並分析動態編譯的 ASP.NET Web 應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ ms.locfileid: "54774989"
  本主題說明如何修改 web.config 組態檔，以啟用 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Web 應用程式的檢測和程式碼剖析。  
   
 > [!NOTE]
->  當您使用取樣程式碼剖析方法，或是想要檢測預先編譯的 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 模組時，不需要修改 web.config 檔。  
+> 當您使用取樣程式碼剖析方法，或是想要檢測預先編譯的 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 模組時，不需要修改 web.config 檔。  
   
  web.config 檔的根是 **configuration** 項目。 若要檢測動態編譯的 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Web 應用程式並對其進行程式碼剖析，您必須加入或修改下列項目：  
   
@@ -38,27 +38,27 @@ ms.locfileid: "54774989"
   
 ### <a name="to-add-the-aspnethelper-assembly-as-a-configurationruntimeassemblybindingdependentassembly-element"></a>加入 ASPNetHelper 組件做為 configuration/runtime/assemblyBinding/dependentAssembly 項目  
   
-1.  如有需要，加入 **runtime** 項目做為 **configuration** 項目的子項目，否則移至下一個步驟。  
+1. 如有需要，加入 **runtime** 項目做為 **configuration** 項目的子項目，否則移至下一個步驟。  
   
      **runtime** 項目沒有任何屬性。 **configuration** 項目只能有一個 **runtime** 子項目。  
   
-2.  如有需要，加入 **assemblyBinding** 項目做為 **runtime** 項目的子項目，否則移至下一個步驟。  
+2. 如有需要，加入 **assemblyBinding** 項目做為 **runtime** 項目的子項目，否則移至下一個步驟。  
   
      **runtime** 項目只能有一個 **assemblyBinding** 項目。  
   
-3.  將下列屬性名稱和值加入至 **assemblyBinding** 項目：  
+3. 將下列屬性名稱和值加入至 **assemblyBinding** 項目：  
   
     |屬性名稱|屬性值|  
     |--------------------|---------------------|  
     |**Xmlns**|**urn:schemas-microsoft-com:asm.v1**|  
   
-4.  加入 **dependentAssembly** 項目做為 **assemblyBinding** 項目的子項目。  
+4. 加入 **dependentAssembly** 項目做為 **assemblyBinding** 項目的子項目。  
   
      **dependentAssembly** 項目沒有任何屬性。  
   
-5.  加入 **assemblyIdentity** 項目做為 **dependentAssembly** 項目的子系。  
+5. 加入 **assemblyIdentity** 項目做為 **dependentAssembly** 項目的子系。  
   
-6.  將下列屬性名稱和值加入至 **assemblyIdentity** 項目：  
+6. 將下列屬性名稱和值加入至 **assemblyIdentity** 項目：  
   
     |屬性名稱|屬性值|  
     |--------------------|---------------------|  
@@ -66,9 +66,9 @@ ms.locfileid: "54774989"
     |**PublicKeyToken**|**b03f5f7f11d50a3a**|  
     |**culture**|**Neutral**|  
   
-7.  加入 **codeBase** 項目做為 **dependentAssembly** 項目的子系。  
+7. 加入 **codeBase** 項目做為 **dependentAssembly** 項目的子系。  
   
-8.  將下列屬性名稱和值加入至 **codeBase** 項目：  
+8. 將下列屬性名稱和值加入至 **codeBase** 項目：  
   
     |屬性名稱|屬性值|  
     |--------------------|---------------------|  
@@ -98,15 +98,15 @@ ms.locfileid: "54774989"
   
 ### <a name="to-add-the-profiler-post-process-step-to-the-configurationsystemwebcompilation-element"></a>將程式碼剖析工具的後續處理步驟加入至 configuration/system.web/compilation 項目  
   
-1.  如有需要，加入 **system.web** 項目做為 **configuration** 項目的子項目，否則移至下一個步驟。  
+1. 如有需要，加入 **system.web** 項目做為 **configuration** 項目的子項目，否則移至下一個步驟。  
   
      **system.web** 項目沒有任何屬性。 **configuration** 項目只能有一個 **system.web** 子項目。  
   
-2.  如有需要，加入 **compilation** 項目做為 **system.web** 項目的子項目，否則移至下一個步驟。  
+2. 如有需要，加入 **compilation** 項目做為 **system.web** 項目的子項目，否則移至下一個步驟。  
   
      **system.web** 項目只能有一個 **compilation** 子項目。  
   
-3.  從 **compilation** 項目移除任何現有的屬性，並且加入下列屬性名稱和值：  
+3. 從 **compilation** 項目移除任何現有的屬性，並且加入下列屬性名稱和值：  
   
     |屬性名稱|屬性值|  
     |--------------------|---------------------|  
@@ -130,22 +130,22 @@ ms.locfileid: "54774989"
   
 ### <a name="to-add-profiler-location-settings-to-the-configurationappsettings-element"></a>將程式碼剖析工具位置設定加入至 configuration/appSettings 項目  
   
-1.  如有需要，加入 **appSettings** 項目做為 **configuration** 項目的子項目，否則移至下一個步驟。  
+1. 如有需要，加入 **appSettings** 項目做為 **configuration** 項目的子項目，否則移至下一個步驟。  
   
      **appSettings** 項目沒有任何屬性。 **configuration** 項目只能有一個 **appSettings** 子項目。  
   
-2.  加入 **add** 項目做為 **appSettings** 項目的子系。  
+2. 加入 **add** 項目做為 **appSettings** 項目的子系。  
   
-3.  將下列屬性名稱和值加入至 **add** 項目：  
+3. 將下列屬性名稱和值加入至 **add** 項目：  
   
     |屬性名稱|屬性值|  
     |--------------------|---------------------|  
     |**key**|**Microsoft.VisualStudio.Enterprise.AspNetHelper.VsInstrLocation**|  
     |**value**|`PerformanceToolsFolder` **\VSInstr.Exe**|  
   
-4.  加入另一個 **add** 項目做為 **appSettings** 項目的子系。  
+4. 加入另一個 **add** 項目做為 **appSettings** 項目的子系。  
   
-5.  將下列屬性名稱和值加入此 **add** 項目：  
+5. 將下列屬性名稱和值加入此 **add** 項目：  
   
     |屬性名稱|屬性值|  
     |--------------------|---------------------|  

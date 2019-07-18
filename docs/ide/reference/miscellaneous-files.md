@@ -20,12 +20,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8bde65506a9005459f1102cd6181e0fa346ec26a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 6ec5b5210c37e6beaa71cecb6894ec5b72d96060
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55912699"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62540897"
 ---
 # <a name="miscellaneous-files"></a>其他檔案
 您可能想要使用 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 編輯器，單獨處理專案或方案中的檔案。 開啟方案時，可以開啟並修改檔案，而不需要將它們新增至方案或專案。 您想要單獨處理稱為其他檔案的容器中檔案。 其他檔案是方案和專案的外部檔案、未納入組建中，而且不能隨附於原始檔控制下的方案。
@@ -40,7 +40,6 @@ ms.locfileid: "55912699"
 
 > [!NOTE]
 > 未出現在 [其他檔案] 資料夾中的檔案有些是您無法在 IDE 內修改的檔案 (例如 .zip 檔案和 .doc 檔案)。 IDE 將不會追蹤只能透過外部編輯器修改的檔案。
-
 
 ## <a name="commands-available-in-the-ide"></a>IDE 中可用的命令
  功能表、工具列和其包含的命令會根據所開啟檔案的格式變更。 例如，開啟文字檔時，[文字編輯器] 工具列會出現，並且可以使用其命令。 如果您接著開啟 XML 結構描述檔案，則會出現 [XML 結構描述] 工具列。 編輯 XML 結構描述時，無法使用 [文字編輯器] 工具列的命令 (或工具列本身)。 XML 結構描述是使用中視窗，因而包含目前選取項目內容。 切換專案檔與其他檔案時，所有專案相關命令都會消失，只會出現與其他檔案直接相關的命令。

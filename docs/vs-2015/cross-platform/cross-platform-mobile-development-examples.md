@@ -11,17 +11,16 @@ caps.latest.revision: 5
 author: corob-msft
 ms.author: corob
 manager: jillfra
-ms.openlocfilehash: 64f5022d0d4aca15583606caa5215d06357edcf1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: c129634dd2421809d5ac15eb930f07c94d8b39f3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54783758"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68151009"
 ---
 # <a name="cross-platform-mobile-development-examples"></a>跨平台行動開發範例
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 數個 Visual C++ for Cross-Platform Mobile Development 所安裝的範本會產生完整的範例，可讓您從中學習。 此外，Windows 開發人員中心有數個範例應用程式，您可以下載並在 Visual Studio 中試用。  
   
 - [hello jni Android 應用程式範例](https://code.msdn.microsoft.com/hello-jni-Android-790ab73d)  
@@ -52,6 +51,6 @@ ms.locfileid: "54783758"
   
    這個範例是 Android NDK test-libstdc++ 範例的連接埠，專門用來搭配 Visual Studio 2015 使用。 這個範例是很好的起點，能讓開發人員了解如何使用標準程式庫。  
   
-  若要在 Visual Studio 中開啟其中一個範例，請下載 zip 檔案，並在總管中開啟下載檔案的 [屬性]  頁面。 選擇 [解除封鎖]  按鈕然後選擇 [確定] 。 將 zip 檔案的內容解壓縮到方便存取的位置，然後開啟解壓縮範例的 C++ 資料夾，並開啟方案檔。  
+  若要在 Visual Studio 中開啟其中一個範例，請下載 zip 檔案，並在總管中開啟下載檔案的 [屬性]  頁面。 選擇 [解除封鎖]  按鈕然後選擇 [確定]  。 將 zip 檔案的內容解壓縮到方便存取的位置，然後開啟解壓縮範例的 C++ 資料夾，並開啟方案檔。  
   
-  若要建置範例，請按 F7，或從功能表列上選擇 [建置] 、[建置方案] 。
+  若要建置範例，請按 F7，或從功能表列上選擇 [建置]  、[建置方案]  。

@@ -18,17 +18,16 @@ caps.latest.revision: 32
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9c7854e982a369816a9dac2c54df48e98ec6d3b7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: ae55e34f929acca6c708dfc39477f3bd6546f53f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54804230"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65703778"
 ---
 # <a name="troubleshooting-net-framework-targeting-errors"></a>疑難排解 .NET Framework 目標錯誤
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 本主題說明可能因參考問題造成的 MSBuild 錯誤，以及如何解決這些錯誤。  
   
 ## <a name="you-have-referenced-a-project-or-assembly-that-targets-a-different-version-of-the-net-framework"></a>您參考了以不同 .NET Framework 版本為目標的專案或組件  
@@ -55,10 +54,10 @@ ms.locfileid: "54804230"
 ```  
   
 > [!NOTE]
->  在關閉並重新開啟專案後，您也應該重建它，以確保能夠正確解析所有參考。  
+> 在關閉並重新開啟專案後，您也應該重建它，以確保能夠正確解析所有參考。  
   
-## <a name="see-also"></a>請參閱  
- [如何：以 .NET Framework 版本為目標](../ide/how-to-target-a-version-of-the-dotnet-framework.md)   
- [.NET Framework Client Profile](http://msdn.microsoft.com/library/f0219919-1f02-4588-8704-327a62fd91f1)   
+## <a name="see-also"></a>另請參閱  
+ [如何：.NET Framework 版本為目標](../ide/how-to-target-a-version-of-the-dotnet-framework.md)   
+ [.NET Framework Client Profile](https://msdn.microsoft.com/library/f0219919-1f02-4588-8704-327a62fd91f1)   
  [以特定的 .NET Framework 版本為目標](../ide/targeting-a-specific-dotnet-framework-version.md)   
  [多目標](../msbuild/msbuild-multitargeting-overview.md)

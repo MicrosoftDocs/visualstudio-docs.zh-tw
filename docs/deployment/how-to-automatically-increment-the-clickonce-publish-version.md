@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 174506e9ee88de385f5bbba6fe09276d9297f298
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: MTE95
+ms.openlocfilehash: cce9dfe48e34d642b115c8391de73c0350ce515b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54937700"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62928491"
 ---
 # <a name="how-to-automatically-increment-the-clickonce-publish-version"></a>HOW TO：自動累加 ClickOnce 的發佈版本
 
@@ -35,11 +35,11 @@ ms.locfileid: "54937700"
 
 ## <a name="to-disable-automatically-incrementing-the-publish-version"></a>若要停用 自動遞增發行版本
 
-1.  在方案總管 中選取專案之後，按一下 [專案]  功能表中 [屬性] 。
+1. 在方案總管 中選取專案之後，按一下 [專案]  功能表中 [屬性] 。
 
-2.  按一下 [發佈] 索引標籤。
+2. 按一下 [發佈] 索引標籤。
 
-3.  在 **發行版本**區段中，清除**隨著每次發行自動遞增修訂**核取方塊。
+3. 在 **發行版本**區段中，清除**隨著每次發行自動遞增修訂**核取方塊。
 
 ## <a name="see-also"></a>另請參閱
 

@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2b2f043cba192ed3ff1f4e0ec995b0ee51a48432
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 5aba4c6446b2dbcfcb31c423a28eedd552799b4e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56624642"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62967666"
 ---
 # <a name="how-to-programmatically-add-comments-to-text-in-documents"></a>HOW TO：以程式設計方式在文件中的文字中加入註解
   文件類別的註解屬性中某個範圍的 Microsoft Office Word 文件中的文字加入註解。
@@ -29,14 +29,14 @@ ms.locfileid: "56624642"
 
 ## <a name="to-add-a-new-comment-to-text-in-a-document-level-customization"></a>若要在文件層級自訂中將新註解加入文字
 
-1.  呼叫 <xref:Microsoft.Office.Interop.Word.Comments.Add%2A> 屬性的 <xref:Microsoft.Office.Tools.Word.Document.Comments%2A> 方法，並提供範圍和註解文字。 若要使用下列程式碼範例，請從專案的 `ThisDocument` 類別中執行此範例。
+1. 呼叫 <xref:Microsoft.Office.Interop.Word.Comments.Add%2A> 屬性的 <xref:Microsoft.Office.Tools.Word.Document.Comments%2A> 方法，並提供範圍和註解文字。 若要使用下列程式碼範例，請從專案的 `ThisDocument` 類別中執行此範例。
 
      [!code-vb[Trin_VstcoreWordAutomation#118](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#118)]
      [!code-csharp[Trin_VstcoreWordAutomation#118](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#118)]
 
 ## <a name="to-add-a-new-comment-to-text-in-a-vsto-add-in"></a>將新的註解加入文字中的 VSTO 增益集
 
-1.  呼叫 <xref:Microsoft.Office.Interop.Word.Comments.Add%2A> 屬性的 <xref:Microsoft.Office.Interop.Word._Document.Comments%2A> 方法，並提供範圍和註解文字。
+1. 呼叫 <xref:Microsoft.Office.Interop.Word.Comments.Add%2A> 屬性的 <xref:Microsoft.Office.Interop.Word._Document.Comments%2A> 方法，並提供範圍和註解文字。
 
      下列程式碼範例會將註解加入現用文件。 若要使用此範例，請從專案的 `ThisAddIn` 類別中執行。
 

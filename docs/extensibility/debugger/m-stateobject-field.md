@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - m_stateObject field, Task class [.NET Framework debug engines]
 ms.assetid: 68c54b22-3e1c-4031-b9c7-b972c519d8a0
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c49682d43236f66b3acbef630f1d81b32e97dab2
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 95947a1367ea1ddf4aa88689f731971d5c7d0a6c
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56688273"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66330839"
 ---
 # <a name="mstateobject-field"></a>m_stateObject 欄位
 物件，表示該動作將會使用的資料。

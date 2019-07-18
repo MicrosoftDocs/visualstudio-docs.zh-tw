@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: b688e1199fefb050c05cc69784256b156e23094d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.openlocfilehash: f7214bfc1d4260a3baa03464d541993a264faefa
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55943489"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65460663"
 ---
 # <a name="could-not-retrieve-schema-information-for-database-object-object-name"></a>無法擷取資料庫物件 \<物件名稱> 的結構描述資訊
 
@@ -21,5 +21,4 @@ ms.locfileid: "55943489"
 
 ## <a name="see-also"></a>另請參閱
 
-- [O/R 設計工具訊息](../data-tools/o-r-designer-messages.md)
 - [Visual Studio 中的 LINQ to SQL 工具](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

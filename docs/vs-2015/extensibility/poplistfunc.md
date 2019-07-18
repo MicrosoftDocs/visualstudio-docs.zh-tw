@@ -1,14 +1,9 @@
 ---
-title: POPLISTFUNC |Microsoft Docs
-ms.custom: ''
+title: POPLISTFUNC | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 f1_keywords:
 - POPDIRLISTFUNC
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: b2199fd5-d707-4628-92dd-e2a01e2f507a
 caps.latest.revision: 17
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 6109dcdda535d3ee420c161c8277dcd8ca19040e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 8c3ae2ce451f076c33ea5613b71c6d262c1d7a0e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51804511"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430827"
 ---
 # <a name="poplistfunc"></a>POPLISTFUNC
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -67,11 +62,10 @@ typedef BOOL (*POPLISTFUNC) (
  原始檔控制外掛程式想要加入或刪除的檔案清單中的每個檔案，它會呼叫此函式，並傳入`lpFileName`。 `fAddRemove`旗標會指出新的檔案新增至清單或刪除舊的檔案。 `nStatus`參數會提供檔案的狀態。 當外掛程式 SCC 完成新增及刪除檔案時，它會傳回[SccPopulateList](../extensibility/sccpopulatelist-function.md)呼叫。  
   
 > [!NOTE]
->  `SCC_CAP_POPULATELIST`功能位元是需要 Visual Studio。  
+> `SCC_CAP_POPULATELIST`功能位元是需要 Visual Studio。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDE 所實作的回呼函式](../extensibility/callback-functions-implemented-by-the-ide.md)   
  [原始檔控制外掛程式](../extensibility/source-control-plug-ins.md)   
  [SccPopulateList](../extensibility/sccpopulatelist-function.md)   
  [檔案狀態碼](../extensibility/file-status-code-enumerator.md)
-

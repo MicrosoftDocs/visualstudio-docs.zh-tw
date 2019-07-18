@@ -1,49 +1,44 @@
 ---
 title: 語言服務及編輯器擴充點 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - extension points
 ms.assetid: 91a6417e-a6fe-4bc2-9d9f-5173c634a99b
 caps.latest.revision: 34
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 0bcbef5094bd12392b7ea79865e1d28e2934a11e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 5bf0e34c76406b054ea2d27434f749b676b0b30c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51743589"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439795"
 ---
 # <a name="language-service-and-editor-extension-points"></a>語言服務及編輯器擴充點
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 編輯器會提供您可以擴充為 Managed Extensibility Framework (MEF) 元件組件，其中包括大部分的語言服務功能的擴充點。 這些是主要擴充點類別：  
   
--   內容類型  
+- 內容類型  
   
--   分類類型及分類格式  
+- 分類類型及分類格式  
   
--   邊界和捲軸  
+- 邊界和捲軸  
   
--   Tags  
+- Tags  
   
--   裝飾  
+- 裝飾  
   
--   滑鼠處理器  
+- 滑鼠處理器  
   
--   拖放處理常式  
+- 拖放處理常式  
   
--   選項  
+- 選項  
   
--   IntelliSense  
+- IntelliSense  
   
 ## <a name="extending-content-types"></a>擴充的內容類型  
  內容類型是一種文字編輯器，例如處理、 「 文字 」、 「 程式碼 」 或"CSharp"的定義。 您可以定義新的內容類型所宣告之型別的變數<xref:Microsoft.VisualStudio.Utilities.ContentTypeDefinition>並提供新的內容類型的唯一名稱。 若要註冊的內容類型的編輯器，請將它匯出以及下列屬性：  
@@ -98,7 +93,7 @@ internal static ContentTypeDefinition TestContentTypeDefinition;
   
 - ENC  
   
-- 裡  
+- FindResults  
   
 - F#  
   
@@ -120,7 +115,7 @@ internal IContentTypeRegistryService ContentTypeRegistryService { get; set; }
  若要將內容類型與副檔名產生關聯，請使用<xref:Microsoft.VisualStudio.Utilities.FileExtensionToContentTypeDefinition>。  
   
 > [!NOTE]
->  在 Visual Studio 中，檔案名稱副檔名會註冊使用<xref:Microsoft.VisualStudio.Shell.ProvideLanguageExtensionAttribute>的語言服務套件。 <xref:Microsoft.VisualStudio.Utilities.FileExtensionToContentTypeDefinition> MEF 的內容類型關聯這種方式中已註冊的副檔名。  
+> 在 Visual Studio 中，檔案名稱副檔名會註冊使用<xref:Microsoft.VisualStudio.Shell.ProvideLanguageExtensionAttribute>的語言服務套件。 <xref:Microsoft.VisualStudio.Utilities.FileExtensionToContentTypeDefinition> MEF 的內容類型關聯這種方式中已註冊的副檔名。  
   
  若要匯出內容的型別定義的檔案名稱的副檔名，您必須包含下列屬性：  
   
@@ -183,7 +178,7 @@ internal static ClassificationTypeDefinition CSharpTestDefinition;
   
 - 「 其他錯誤 」  
   
-- 「 警告 」  
+- "warning"  
   
   若要探索可用的分類類型的清單，匯入<xref:Microsoft.VisualStudio.Text.Classification.IClassificationTypeRegistryService>，可維護之編輯器的分類類型集合。 下列程式碼中，會匯入這項服務做為屬性。  
   
@@ -283,7 +278,7 @@ internal class TestTaggerProvider : ITaggerProvider
 - <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>： 與透過裝飾相關聯。  
   
   > [!NOTE]
-  >  如需範例<xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>，請參閱 HighlightWordTag 定義[逐步解說： 反白顯示的文字](../extensibility/walkthrough-highlighting-text.md)。  
+  > 如需<xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>，請參閱 HighlightWordTag 定義[逐步解說：反白顯示文字](../extensibility/walkthrough-highlighting-text.md)。  
   
 - <xref:Microsoft.VisualStudio.Text.Tagging.OutliningRegionTag>： 可以展開或摺疊大綱區域相關聯。  
   
@@ -329,7 +324,7 @@ internal class HighlightWordFormatDefinition : MarkerFormatDefinition
  若要將此格式定義套用至標記中，參考您設定的名稱屬性中的類別 （而不是顯示名稱） 的名稱。  
   
 > [!NOTE]
->  如需<xref:Microsoft.VisualStudio.Text.Classification.MarkerFormatDefinition>，請參閱中的 HighlightWordFormatDefinition 類別[逐步解說： 反白顯示的文字](../extensibility/walkthrough-highlighting-text.md)。  
+> 如需<xref:Microsoft.VisualStudio.Text.Classification.MarkerFormatDefinition>，請參閱中的 HighlightWordFormatDefinition 類別[逐步解說：反白顯示文字](../extensibility/walkthrough-highlighting-text.md)。  
   
 ## <a name="extending-adornments"></a>擴充裝飾  
  裝飾定義視覺效果，可以新增在文字檢視中顯示的文字或文字檢視本身。 您可以為任何類型的定義您自己的裝飾<xref:System.Windows.UIElement>。  
@@ -338,7 +333,7 @@ internal class HighlightWordFormatDefinition : MarkerFormatDefinition
   
 - <xref:Microsoft.VisualStudio.Utilities.NameAttribute>: 裝飾的名稱。  
   
-- <xref:Microsoft.VisualStudio.Utilities.OrderAttribute>： 相對於其他 adornment 層級裝飾的順序。 此類別<xref:Microsoft.VisualStudio.Text.Editor.PredefinedAdornmentLayers>定義四個預設層級： 選取範圍、 大綱、 插入號和文字。  
+- <xref:Microsoft.VisualStudio.Utilities.OrderAttribute>： 相對於其他 adornment 層級裝飾的順序。 此類別<xref:Microsoft.VisualStudio.Text.Editor.PredefinedAdornmentLayers>定義四個預設層級：選取、 大綱、 插入號及文字。  
   
   下列範例會顯示匯出屬性裝飾層定義。  
   
@@ -414,21 +409,21 @@ internal sealed class TestMouseProcessorProvider : IMouseProcessorProvider
   
 - <xref:Microsoft.VisualStudio.Text.Editor.DragDrop.DropFormatAttribute>： 這個拖放處理常式是有效的文字格式。 依優先順序從最高到最低，會處理下列格式：  
   
-  1.  任何自訂的格式  
+  1. 任何自訂的格式  
   
-  2.  FileDrop  
+  2. FileDrop  
   
-  3.  EnhancedMetafile  
+  3. EnhancedMetafile  
   
-  4.  WaveAudio  
+  4. WaveAudio  
   
-  5.  Riff  
+  5. Riff  
   
-  6.  差異  
+  6. 差異  
   
-  7.  地區設定  
+  7. 地區設定  
   
-  8.  調色盤  
+  8. 調色盤  
   
   9. PenData  
   
@@ -512,39 +507,39 @@ internal sealed class TestOption : EditorOptionDefinition<bool>
 ### <a name="implementing-an-intellisense-source"></a>實作 IntelliSense 的來源  
  若要自訂來源，您必須實作其中一個 （或以上） 的下列來源介面：  
   
--   <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSource>  
+- <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSource>  
   
--   <xref:Microsoft.VisualStudio.Language.Intellisense.IQuickInfoSource>  
+- <xref:Microsoft.VisualStudio.Language.Intellisense.IQuickInfoSource>  
   
--   <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSource>  
+- <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSource>  
   
--   <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource>  
+- <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource>  
   
 > [!IMPORTANT]
->  <xref:Microsoft.VisualStudio.Language.Intellisense.ISmartTagSource> 已被取代的益處<xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource>。  
+> <xref:Microsoft.VisualStudio.Language.Intellisense.ISmartTagSource> 已被取代的益處<xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource>。  
   
  此外，您必須實作相同類型的提供者：  
   
--   <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSourceProvider>  
+- <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSourceProvider>  
   
--   <xref:Microsoft.VisualStudio.Language.Intellisense.IQuickInfoSourceProvider>  
+- <xref:Microsoft.VisualStudio.Language.Intellisense.IQuickInfoSourceProvider>  
   
--   <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSourceProvider>  
+- <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSourceProvider>  
   
--   <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSourceProvider>  
+- <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSourceProvider>  
   
 > [!IMPORTANT]
->  <xref:Microsoft.VisualStudio.Language.Intellisense.ISmartTagSourceProvider> 已被取代的益處<xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSourceProvider>。  
+> <xref:Microsoft.VisualStudio.Language.Intellisense.ISmartTagSourceProvider> 已被取代的益處<xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSourceProvider>。  
   
  您必須將匯出的提供者，以及下列屬性：  
   
--   <xref:Microsoft.VisualStudio.Utilities.NameAttribute>： 來源的名稱。  
+- <xref:Microsoft.VisualStudio.Utilities.NameAttribute>： 來源的名稱。  
   
--   <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>： 要套用的來源內容 （例如，"text"或"code"） 的類型。  
+- <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>： 要套用的來源內容 （例如，"text"或"code"） 的類型。  
   
--   <xref:Microsoft.VisualStudio.Utilities.OrderAttribute>： 來源 （相對於其他來源） 應該出現的順序。  
+- <xref:Microsoft.VisualStudio.Utilities.OrderAttribute>： 來源 （相對於其他來源） 應該出現的順序。  
   
--   下列範例會顯示匯出屬性，完成來源提供者。  
+- 下列範例會顯示匯出屬性，完成來源提供者。  
   
 ```  
 Export(typeof(ICompletionSourceProvider))]  
@@ -556,9 +551,9 @@ internal class TestCompletionSourceProvider : ICompletionSourceProvider
   
  如需有關如何實作 IntelliSense 的來源的詳細資訊，請參閱下列逐步解說：  
   
- [逐步解說︰顯示 QuickInfo 工具提示](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)  
+ [逐步解說：顯示 QuickInfo 工具提示](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)  
   
- [逐步解說︰顯示簽章說明](../extensibility/walkthrough-displaying-signature-help.md)  
+ [逐步解說：顯示簽章說明](../extensibility/walkthrough-displaying-signature-help.md)  
   
  [逐步解說：顯示陳述式完成](../extensibility/walkthrough-displaying-statement-completion.md)  
   
@@ -583,5 +578,4 @@ internal class TestIntellisenseControllerProvider : IIntellisenseControllerProvi
   
  如需使用 IntelliSense 控制器的詳細資訊，請參閱下列逐步解說：  
   
- [逐步解說︰顯示 QuickInfo 工具提示](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)
-
+ [逐步解說：顯示 QuickInfo 工具提示](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)

@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 8d05809d7d2c3c0c93044eee4d44603eac2bffec
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56609627"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62776800"
 ---
 # <a name="call-tree-view---net-memory-sampling-data"></a>呼叫樹狀圖檢視 - .NET 記憶體取樣資料
 [呼叫樹狀圖] 檢視顯示在分析的應用程式中周遊的函式執行路徑。 樹狀圖的根是應用程式或元件的進入點。 每個函式節點都會列出它所呼叫的所有函式，以及這些函式呼叫的 .NET 記憶體配置資料。

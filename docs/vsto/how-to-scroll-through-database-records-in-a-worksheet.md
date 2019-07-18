@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7facc5a70b603b016bbafd207650caaef05027fa
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 0b3ee44c6666a887552f1babfcbbf028e9215e95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56600242"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62961224"
 ---
 # <a name="how-to-scroll-through-database-records-in-a-worksheet"></a>HOW TO：捲動工作表中的資料庫記錄
   下列程序示範如何使用設計工具來顯示控制項，可讓使用者以捲動所有記錄在 Microsoft Office Excel 工作表，從資料庫資料表的單一欄位。
@@ -31,17 +31,17 @@ ms.locfileid: "56600242"
 
 ## <a name="to-scroll-through-database-records-in-a-worksheet"></a>捲動工作表中的資料庫記錄
 
-1.  Visual Studio 中開啟 Excel 應用程式專案。
+1. Visual Studio 中開啟 Excel 應用程式專案。
 
-2.  開啟**Zdroje dat**視窗，並從資料庫建立資料來源。 如需詳細資訊，請參閱 <<c0> [ 新增連線](../data-tools/add-new-connections.md)。
+2. 開啟**Zdroje dat**視窗，並從資料庫建立資料來源。 如需詳細資訊，請參閱 <<c0> [ 新增連線](../data-tools/add-new-connections.md)。
 
-3.  展開包含您想要顯示，資料的資料表，然後選取特定的資料行。
+3. 展開包含您想要顯示，資料的資料表，然後選取特定的資料行。
 
-4.  開啟清單控制項，然後選取**NamedRange**。
+4. 開啟清單控制項，然後選取**NamedRange**。
 
-5.  拖曳<xref:Microsoft.Office.Tools.Excel.NamedRange>控制項拖曳至您想要顯示資料的儲存格。
+5. 拖曳<xref:Microsoft.Office.Tools.Excel.NamedRange>控制項拖曳至您想要顯示資料的儲存格。
 
-6.  從**Windows Forms**索引標籤**工具箱**，新增<xref:System.Windows.Forms.BindingNavigator>控制項加入您的工作表，並設定您想要使用的控制項。 如需詳細資訊，請參閱 < [BindingNavigator 控制項概觀&#40;Windows Forms&#41;](/dotnet/framework/winforms/controls/bindingnavigator-control-overview-windows-forms)。
+6. 從**Windows Forms**索引標籤**工具箱**，新增<xref:System.Windows.Forms.BindingNavigator>控制項加入您的工作表，並設定您想要使用的控制項。 如需詳細資訊，請參閱 < [BindingNavigator 控制項概觀&#40;Windows Forms&#41;](/dotnet/framework/winforms/controls/bindingnavigator-control-overview-windows-forms)。
 
 ## <a name="see-also"></a>另請參閱
 - [資料繫結至 Office 方案中的控制項](../vsto/binding-data-to-controls-in-office-solutions.md)

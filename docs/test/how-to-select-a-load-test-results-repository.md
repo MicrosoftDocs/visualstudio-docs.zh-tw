@@ -15,12 +15,12 @@ ms.assetid: fa0c4dd9-612f-4a57-b8eb-458f129d9cda
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6d1b324eb2122559eb45a22bc463458d4f6661ef
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 602327d49733077e3c180c0e192027be6374afe6
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55941073"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62950019"
 ---
 # <a name="how-to-select-a-load-test-results-repository"></a>HOW TO：選取負載測試結果存放庫
 
@@ -32,26 +32,26 @@ ms.locfileid: "55941073"
 
 ## <a name="identify-a-results-store-for-load-test-data"></a>識別負載測試資料的結果存放區
 
-1.  在 [方案總管] 中開啟您的負載測試檔案。
+1. 在 [方案總管] 中開啟您的負載測試檔案。
 
-2.  從 [負載測試] 工具列選擇 [管理測試控制器]。 [管理測試控制器] 對話方塊隨即顯示。 如果您正在遠端使用代理程式，則必須選取控制器。
+2. 從 [負載測試] 工具列選擇 [管理測試控制器]。 [管理測試控制器] 對話方塊隨即顯示。 如果您正在遠端使用代理程式，則必須選取控制器。
 
      ![負載測試結果存放區連接屬性](../test/media/loadtestconnectionproperties.png) 負載測試結果存放區連接屬性
 
-3.  在 [負載測試結果存放區] 中，按一下 **(…)** 以顯示 [連接屬性] 對話方塊。
+3. 在 [負載測試結果存放區] 中，按一下 **(…)** 以顯示 [連接屬性] 對話方塊。
 
-4.  在 [伺服器名稱] 中，鍵入先前執行 `LoadTest` 指令碼所在之伺服器的名稱。
+4. 在 [伺服器名稱] 中，鍵入先前執行 `LoadTest` 指令碼所在之伺服器的名稱。
 
     > [!TIP]
     > 如果您在本機電腦上使用 SQL Express 作為負載測試存放區，請輸入 \<電腦名稱>\sqlexpress (例如 **MyComputer\sqlexpress**)。
 
-5.  在 [登入伺服器] 底下，您可以選擇 [使用 Windows 驗證]。 您可以指定使用者名稱和密碼，但若指定，則必須選取 [儲存我的密碼] 選項。
+5. 在 [登入伺服器] 底下，您可以選擇 [使用 Windows 驗證]。 您可以指定使用者名稱和密碼，但若指定，則必須選取 [儲存我的密碼] 選項。
 
-6.  在 [連接至資料庫] 底下，選擇 [選取或輸入資料庫名稱]。 請從下拉式清單方塊中選取 [LoadTest]。
+6. 在 [連接至資料庫] 底下，選擇 [選取或輸入資料庫名稱]。 請從下拉式清單方塊中選取 [LoadTest]。
 
-7.  選擇 [確定] 。 您可以選擇 [測試連接] 測試連接。
+7. 選擇 [確定] 。 您可以選擇 [測試連接] 測試連接。
 
-8.  選擇 [管理測試控制器] 對話方塊中的 [關閉]。
+8. 選擇 [管理測試控制器] 對話方塊中的 [關閉]。
 
 ## <a name="see-also"></a>另請參閱
 

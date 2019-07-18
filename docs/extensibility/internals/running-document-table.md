@@ -9,17 +9,17 @@ helpviewer_keywords:
 - running document table (RDT), edit locks
 - document data objects, running document table
 ms.assetid: bbec74f3-dd8e-48ad-99c1-2df503c15f5a
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9c91aa3cbad7fd58fbd819e46f3f3428f68801e9
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: bd66b245da88b26c75c612ab7e45ccc01b4ab607
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56618935"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66318708"
 ---
 # <a name="running-document-table"></a>執行中的文件資料表
 IDE 會維護呼叫執行的文件資料表 (RDT) 的內部結構中所有目前開啟的文件的清單。 此清單包含所有開啟的文件在記憶體中，不論是否目前正在編輯這些文件。 文件是會保留，包括檔案的專案或主要專案檔 （例如.vcxproj 檔案） 中的任何項目。
@@ -27,7 +27,7 @@ IDE 會維護呼叫執行的文件資料表 (RDT) 的內部結構中所有目前
 ## <a name="elements-of-the-running-document-table"></a>執行文件表格的項目
  執行文件資料表包含下列項目。
 
-|元素|描述|
+|項目|描述|
 |-------------|-----------------|
 |文件 moniker|字串，可唯一識別文件資料物件。 這會是可管理的檔案 (例如 C:\MyProject\MyFile) 的專案系統的絕對檔案路徑。 這個字串也會儲存在檔案系統，例如在資料庫中的預存程序以外的存放區中的專案。 在此情況下，專案系統可以發明的唯一字串，它可以辨識和可能剖析以判斷如何儲存文件。|
 |階層擁有者|擁有文件，表示的階層物件<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>介面。|
@@ -52,9 +52,9 @@ IDE 會維護呼叫執行的文件資料表 (RDT) 的內部結構中所有目前
 
  IDE 也使用 RDT resurface （提到最上層） 開啟的文件，如果使用者要求該文件。 如需詳細資訊，請參閱 <<c0> [ 使用 開啟檔案命令顯示檔案](../../extensibility/internals/displaying-files-by-using-the-open-file-command.md)。 若要判斷檔案是否為開啟 RDT 中，執行下列任一種。
 
--   若要找出項目是否已開啟的文件 moniker （也就是完整的文件路徑） 的查詢。
+- 若要找出項目是否已開啟的文件 moniker （也就是完整的文件路徑） 的查詢。
 
--   使用階層或項目識別碼來要求專案系統的完整文件路徑，並接著 RDT 中查閱項目。
+- 使用階層或項目識別碼來要求專案系統的完整文件路徑，並接著 RDT 中查閱項目。
 
 ## <a name="see-also"></a>另請參閱
 - [RDT_ReadLock 使用方式](../../extensibility/internals/rdt-readlock-usage.md)

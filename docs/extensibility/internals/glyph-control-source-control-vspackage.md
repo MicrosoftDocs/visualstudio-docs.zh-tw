@@ -6,17 +6,17 @@ helpviewer_keywords:
 - glyphs, source control packages
 - source control packages, glyphs
 ms.assetid: b9413b08-b3c3-4fc3-a6e0-3dc0db3652d7
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f66613c5f5b8b6e48efda17330f66cdb87a06cf9
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: d30682a85551aab062824688b635260c30df63f9
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56613813"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66321352"
 ---
 # <a name="glyph-control-source-control-vspackage"></a>字符控制 （原始檔控制 VSPackage）
 加入原始檔控制 Vspackage 提供的深入整合的一部分是能夠顯示自己的字符，以指出原始檔控制下的項目狀態。
@@ -25,7 +25,7 @@ ms.locfileid: "56613813"
  狀態的圖像 （glyph） 是以圖示表示的項目時顯示，如範例中的目前狀態**方案總管**或是在**類別檢視**。 原始檔控制 VSPackage 可以訓練字符控制的兩個層的級。 它可以限制的一組預先定義的圖像 （glyph） 所提供的圖像選擇[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]IDE，也可以定義一組自訂的字符才能顯示。
 
 ### <a name="default-set-of-glyphs"></a>一組預設的圖像 （glyph）
- 若要判斷與中的項目相關聯的狀態字符**方案總管**，專案會從原始檔控制使用要求狀態圖像 （glyph） <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2.GetSccGlyph%2A>。 原始檔控制 VSPackage 可能會決定要保留的限制為預先定義的圖像 （glyph） IDE 所提供的圖像 （glyph） 的選擇。 在此情況下，VSPackage 回傳遞的值，表示中所定義的圖像 （glyph） 列舉型別陣列*vsshell.idl*。 如需詳細資訊，請參閱<xref:Microsoft.VisualStudio.Shell.Interop.VsStateIcon>。 這是一組預先定義的 IDE，例如簽入的圖像，掛鎖和簽出圖像 （glyph） 核取記號來設定的圖像 （glyph）。
+ 若要判斷與中的項目相關聯的狀態字符**方案總管**，專案會從原始檔控制使用要求狀態圖像 （glyph） <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2.GetSccGlyph%2A>。 原始檔控制 VSPackage 可能會決定要保留的限制為預先定義的圖像 （glyph） IDE 所提供的圖像 （glyph） 的選擇。 在此情況下，VSPackage 回傳遞的值，表示中所定義的圖像 （glyph） 列舉型別陣列*vsshell.idl*。 如需詳細資訊，請參閱 <xref:Microsoft.VisualStudio.Shell.Interop.VsStateIcon>。 這是一組預先定義的 IDE，例如簽入的圖像，掛鎖和簽出圖像 （glyph） 核取記號來設定的圖像 （glyph）。
 
 ### <a name="custom-set-of-glyphs"></a>自訂的圖像集
  原始檔控制 VSPackage 在安裝時，可以使用它自己的字符的獨特的外觀與風格。 使用新的原始檔控制 VSPackage 時，它應該能夠開始使用它自己的字符即使上一個原始檔控制 VSPackage 仍載入而非使用中。 在此模式中，原始檔控制 VSPackage 仍然可以使用現有的圖示維持一致的外觀[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]如果選擇。

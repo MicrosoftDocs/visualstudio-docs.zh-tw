@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 06017a3feb3faa667b469c0075e561b2104785b5
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227533"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62895595"
 ---
 # <a name="mip-map-generation-variant"></a>Mip-map 產生變異
 在非呈現目標的紋理上啟用 MIP 對應。
@@ -69,5 +69,5 @@ d3d_device->CreateTexture2D(&texture_description, initial_data.data(), &texture)
 > [!NOTE]
 > 如果您想要提供您的 MIP 層級內容，而不是自動產生該內容，則必須使用可支援經過 MIP 對應之紋理的影像編輯器來建立紋理，然後載入檔案，並將 MIP 層級傳遞給 `CreateTexture2D`。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 [二分之一/四分之一紋理維度變化](half-quarter-texture-dimensions-variant.md)

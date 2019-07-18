@@ -14,11 +14,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 3691a874121c00dcccc69958eb5746a2c1d78122
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58149454"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62992019"
 ---
 # <a name="iactivescriptsitewindow"></a>IActiveScriptSiteWindow
 這個介面實作所支援的使用者介面的相同物件的主機[IActiveScriptSite](../../winscript/reference/iactivescriptsite.md) 。 不支援使用者介面，例如伺服器、 主機不會實作`IActiveScriptSiteWindow`介面。 指令碼引擎存取這個介面，藉由呼叫`QueryInterface`從`IActiveScriptSite`。  

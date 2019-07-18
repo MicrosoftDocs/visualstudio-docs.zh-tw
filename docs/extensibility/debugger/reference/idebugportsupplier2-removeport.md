@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPortSupplier2::RemovePort
 ms.assetid: f5c1fbf2-9084-46f2-a682-7db963928df2
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: db48cc82e16f071ec55493e98570c6969324bfda
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: ba0a18ba3d137e0e003b84c01cfb98e4504aff88
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56685727"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66340112"
 ---
 # <a name="idebugportsupplier2removeport"></a>IDebugPortSupplier2::RemovePort
 移除連接埠。
@@ -36,10 +39,9 @@ int RemovePort( 
 );
 ```
 
-#### <a name="parameters"></a>參數
- `pPort`
-
- [in][IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)物件，代表要移除的連接埠。
+## <a name="parameters"></a>參數
+`pPort`\
+[in][IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)物件，代表要移除的連接埠。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

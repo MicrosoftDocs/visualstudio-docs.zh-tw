@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProperty3::SetValueAsStringWithError
 ms.assetid: b378368f-4a45-4b2f-8e3d-3bff7a18ab17
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1f3bc987cf097f3573b40d4d907204c742608fd0
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 61a39d3b68deec2dd51c49113355a8ed6c69325c
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56709274"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66348821"
 ---
 # <a name="idebugproperty3setvalueasstringwitherror"></a>IDebugProperty3::SetValueAsStringWithError
 設定這個屬性的值，並傳回錯誤訊息，如有必要。
@@ -42,22 +45,18 @@ int SetValueAsStringWithError(
 );
 ```
 
-#### <a name="parameters"></a>參數
-`pszValue`
+## <a name="parameters"></a>參數
+`pszValue`\
+[in]若要設定的值。
 
- [in]若要設定的值。
+`dwRadix`\
+[in]所設定的值的基數。
 
-`dwRadix`
+`dwTimeout`\
+[in]要設定之值的等待時間長度 (`INFINITE`表示永遠等待)。
 
- [in]所設定的值的基數。
-
-`dwTimeout`
-
- [in]要設定之值的等待時間長度 (`INFINITE`表示永遠等待)。
-
-`errorString`
-
- [out]如果設定值時發生錯誤，這會保留失敗的原因。
+`errorString`\
+[out]如果設定值時發生錯誤，這會保留失敗的原因。
 
 ## <a name="return-value"></a>傳回值
 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

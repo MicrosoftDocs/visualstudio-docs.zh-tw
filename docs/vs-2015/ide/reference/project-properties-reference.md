@@ -12,22 +12,21 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8bf0e41f750a7003f3d267b2bd17dcf6dc2d4a3a
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 5d36a521db2c82ed207b3f77a51908ca7fad3d27
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54800845"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695992"
 ---
 # <a name="project-properties-reference"></a>專案屬性參考
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 深入了解如何設定和自訂專案屬性。  
   
 ## <a name="project-properties-pages"></a>專案屬性頁面  
   
-|標題|描述|  
+|標題|說明|  
 |-----------|-----------------|  
 |[專案設計工具、應用程式頁面 (Visual Basic)](../../ide/reference/application-page-project-designer-visual-basic.md)|使用這個頁面來指定 [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] 專案的應用程式設定和屬性。|  
 |[專案設計工具，應用程式頁面 (C#)](../../ide/reference/application-page-project-designer-csharp.md)|使用這個頁面來指定 [!INCLUDE[csprcs](../../includes/csprcs-md.md)] 專案的應用程式設定和屬性。|  
@@ -46,5 +45,5 @@ ms.locfileid: "54800845"
 |||  
   
 ## <a name="see-also"></a>請參閱  
- [專案設計工具簡介](http://msdn.microsoft.com/898dd854-c98d-430c-ba1b-a913ce3c73d7)   
+ [專案設計工具簡介](https://msdn.microsoft.com/898dd854-c98d-430c-ba1b-a913ce3c73d7)   
  [專案和方案](../../ide/solutions-and-projects-in-visual-studio.md)

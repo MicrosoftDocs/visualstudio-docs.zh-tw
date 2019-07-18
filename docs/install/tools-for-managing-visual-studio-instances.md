@@ -14,12 +14,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e8278448c1b10062c3e030d763d1cf4e37f9cc7e
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.prod: visual-studio-windows
+ms.technology: vs-installation
+ms.openlocfilehash: 006a3fa3d41799a87449b8f9e111ca341a698bf5
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56681747"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62935408"
 ---
 # <a name="tools-for-detecting-and-managing-visual-studio-instances"></a>用於偵測及管理 Visual Studio 執行個體的工具
 
@@ -29,7 +31,7 @@ ms.locfileid: "56681747"
 
 我們提供數種工具來協助您偵測及管理用戶端電腦上已安裝的 Visual Studio 執行個體︰
 
-* [VSWhere](https://github.com/microsoft/vswhere) \(英文\)：這個內建於 Visual Studio 中，也可供個別發佈的可執行檔，可以協助您在特定電腦上找到所有 Visual Studio 執行個體的位置。
+* [vswhere](https://github.com/microsoft/vswhere) \(英文\)：這個內建於 Visual Studio 中，也能以個別發佈方式取得的可執行檔，可協助您在特定機器上找到所有 Visual Studio 執行個體的位置。
 * [VSSetup.PowerShell](https://github.com/microsoft/vssetup.powershell)：PowerShell 指令碼，使用安裝程式組態 API 來識別已安裝的 Visual Studio 執行個體。
 * [VS-Setup-Samples](https://github.com/microsoft/vs-setup-samples)：C# 和 C++ 範例，示範如何使用安裝程式組態 API 來查詢現有安裝。
 
@@ -37,25 +39,33 @@ ms.locfileid: "56681747"
 
 ## <a name="using-vswhereexe"></a>使用 vswhere.exe
 
-`vswhere.exe` 會自動包含在 Visual Studio 2017 15.2 版或更新版本之中，您也可以從它的[版本頁面](https://github.com/Microsoft/vswhere/releases)下載它。 使用 `vswhere -?` 來取得該工具的說明資訊。 作為範例，此命令會顯示 Visual Studio 的所有版本 (包括產品的較舊版本及發行前版本)，並以 JSON 格式輸出結果：
+`vswhere.exe` 自動包含在 Visual Studio (Visual Studio 2017 15.2 版與更新版本) 中，或您也可以從 [vswhere 發行頁面](https://github.com/Microsoft/vswhere/releases) \(英文\) 下載。 使用 `vswhere -?` 來取得該工具的說明資訊。 作為範例，此命令會顯示 Visual Studio 的所有版本 (包括產品的較舊版本及發行前版本)，並以 JSON 格式輸出結果：
 
 ```cmd
 C:\Program Files (x86)\Microsoft Visual Studio\Installer> vswhere.exe -legacy -prerelease -format json
 ```
 
->[!TIP]
->如需 Visual Studio 2017 安裝的詳細資訊，請參閱 [Visual Studio Setup Archives](https://devblogs.microsoft.com/setup/tag/vs2017/) (Visual Studio 安裝封存)。
+::: moniker range="vs-2017"
+
+> [!TIP]
+> 如需 Visual Studio 2017 安裝的詳細資訊，請參閱 [Visual Studio Setup Archives](https://devblogs.microsoft.com/setup/tag/vs2017/) (Visual Studio 安裝封存)。
+
+::: moniker-end
 
 ## <a name="editing-the-registry-for-a-visual-studio-instance"></a>編輯 Visual Studio 執行個體的登錄
 
-在 Visual Studio 2017 中，登錄設定會儲存在私人位置，這可在相同電腦上啟用相同版本之 Visual Studio 的多個並存執行個體。
+在 Visual Studio 中，登錄設定會儲存在私人位置，這可在相同電腦上啟用 Visual Studio 相同版本的多個並存執行個體。
 
 因為這些項目不是儲存在全域登錄中，針對使用登錄編輯程式來變更登錄設定有一些特殊指示︰
 
-1. 如果您有開啟的 Visual Studio 2017 執行個體，請將它關閉。
-2. 啟動 `regedit.exe`。
-3. 選取 `HKEY_LOCAL_MACHINE` 節點。
-4. 從 Regedit 主功能表選取 [檔案] -> [載入登錄區]，然後選取私人登錄檔 (儲存在 **AppData\Local** 資料夾中)。 例如：
+1. 如果您有開啟的 Visual Studio 執行個體，請將其關閉。
+
+1. 啟動 `regedit.exe`。
+
+1. 選取 `HKEY_LOCAL_MACHINE` 節點。
+
+1. 從 Regedit 主功能表選取 [檔案] > [載入登錄區]，然後選取私人登錄檔 (儲存在 **AppData\Local** 資料夾中)。 例如：
+
    ```
    %localappdata%\Microsoft\VisualStudio\<config>\privateregistry.bin
    ```
@@ -66,7 +76,7 @@ C:\Program Files (x86)\Microsoft Visual Studio\Installer> vswhere.exe -legacy -p
 系統將會提示您提供登錄區名稱，這會變成您的已隔離登錄區的名稱。 這麼做之後，您應該能在您所建立的已隔離登錄區下瀏覽登錄。
 
 > [!IMPORTANT]
-> 在重新啟動 Visual Studio 之前，必須卸載您所建立的已隔離登錄區。 若要這樣做，從 Regedit 主功能表選取 [檔案] -> [解除載入登錄區] (如果您沒有這麼做，則檔案會維持鎖定且 Visual Studio 將無法啟動)。
+> 在重新啟動 Visual Studio 之前，必須卸載您所建立的已隔離登錄區。 若要執行此操作，請從 Regedit 主功能表選取 [檔案] > [解除載入登錄區]。 (如果您沒有這麼做，則檔案會維持鎖定且 Visual Studio 將無法啟動)。
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

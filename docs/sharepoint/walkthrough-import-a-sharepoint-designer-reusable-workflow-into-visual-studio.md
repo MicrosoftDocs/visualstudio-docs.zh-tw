@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1552e45b13fbbd860a429238cf233bbfccbb3f02
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: c7d1373339fac4768e2af1eda5770d5058ae8078
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56603413"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446602"
 ---
 # <a name="walkthrough-import-a-sharepoint-designer-reusable-workflow-into-visual-studio"></a>逐步解說：SharePoint Designer 可重複使用工作流程匯入 Visual Studio
   本逐步解說示範如何匯入 SharePoint Designer 2010 中建立可重複使用工作流程[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]SharePoint 工作流程專案。
@@ -48,11 +48,11 @@ ms.locfileid: "56603413"
 ## <a name="prerequisites"></a>必要條件
  您需要下列元件才能完成此逐步解說：
 
--   支援的版本[!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)]和 SharePoint。
+- 支援的版本[!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)]和 SharePoint。
 
--   Visual Studio。
+- Visual Studio。
 
--   Microsoft [!INCLUDE[TLA2#tla_office](../sharepoint/includes/tla2sharptla-office-md.md)] SharePoint Designer 2010。
+- Microsoft [!INCLUDE[TLA2#tla_office](../sharepoint/includes/tla2sharptla-office-md.md)] SharePoint Designer 2010。
 
 ## <a name="create-target-sharepoint-subsites"></a>建立目標 SharePoint 子網站
  首先您必須建立兩個新的 SharePoint 子網站： 一個用來裝載可重複使用的工作流程，從 SharePoint Designer，另一個是用來裝載已轉換的工作流程。
@@ -80,27 +80,27 @@ ms.locfileid: "56603413"
 
 #### <a name="to-create-a-sharepoint-designer-reusable-workflow"></a>若要建立 SharePoint Designer 可重複使用工作流程
 
-1.  在 **子**區段中，選擇**SPD1**網站進行修改。
+1. 在 **子**區段中，選擇**SPD1**網站進行修改。
 
-2.  在功能區中，選擇**可重複使用工作流程** 按鈕。
+2. 在功能區中，選擇**可重複使用工作流程** 按鈕。
 
      建立可重複使用工作流程精靈隨即出現。
 
-3.  在 **名稱**方塊中，輸入**SPD Task Workflow**。
+3. 在 **名稱**方塊中，輸入**SPD Task Workflow**。
 
-4.  在 **內容類型**清單中，選擇**工作**，然後選擇  **確定**按鈕。
+4. 在 **內容類型**清單中，選擇**工作**，然後選擇  **確定**按鈕。
 
      在 SharePoint Designer 工作流程設計工具中，開啟工作流程。
 
-5.  在工作流程設計工具中，選擇 [步驟 1，然後，在功能區中，選擇**條件**] 按鈕。
+5. 在工作流程設計工具中，選擇 [步驟 1，然後，在功能區中，選擇**條件**] 按鈕。
 
-6.  在條件清單中，選擇**如果目前的項目欄位等於值**。
+6. 在條件清單中，選擇**如果目前的項目欄位等於值**。
 
      這個步驟會加入名為條件**如果欄位等於值**。
 
-7.  在 **如果欄位等於值**條件中，選擇**欄位**連結。
+7. 在 **如果欄位等於值**條件中，選擇**欄位**連結。
 
-8.  在值清單中，選擇**Title**。
+8. 在值清單中，選擇**Title**。
 
 9. 在 **如果欄位等於值**條件中，選擇**值**連結。
 
@@ -124,27 +124,27 @@ ms.locfileid: "56603413"
  因為[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]可以只匯入 *.wsp*檔案，您必須將儲存為可重複使用的工作流程 *.wsp*檔案，並將它部署到 SharePoint 中，然後再匯入到[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。
 
 > [!IMPORTANT]
->  如果您收到執行階段錯誤，執行下列程序，您必須對 SharePoint 網站存取的系統上執行程序。
+> 如果您收到執行階段錯誤，執行下列程序，您必須對 SharePoint 網站存取的系統上執行程序。
 
 #### <a name="to-save-and-deploy-the-reusable-workflow"></a>若要儲存並部署可重複使用的工作流程
 
-1.  在 SharePoint Designer 頂端，選擇**儲存**按鈕以儲存您的進度，然後選擇**發佈**按鈕，將部署工作流程**SPD1** SharePoint 網站.
+1. 在 SharePoint Designer 頂端，選擇**儲存**按鈕以儲存您的進度，然後選擇**發佈**按鈕，將部署工作流程**SPD1** SharePoint 網站.
 
-2.  在 [導覽] 窗格中，選擇**工作流程**物件。
+2. 在 [導覽] 窗格中，選擇**工作流程**物件。
 
-3.  底下**可重複使用工作流程**，選擇**SPD Task Workflow**。
+3. 底下**可重複使用工作流程**，選擇**SPD Task Workflow**。
 
-4.  在功能區中，選擇**另存為範本**按鈕以儲存工作流程作為 *.wsp*檔案。
+4. 在功能區中，選擇**另存為範本**按鈕以儲存工作流程作為 *.wsp*檔案。
 
-5.  開啟**SPD1**瀏覽器檢視中的 SharePoint 網站 *.wsp*在 SharePoint 中的檔案。
+5. 開啟**SPD1**瀏覽器檢視中的 SharePoint 網站 *.wsp*在 SharePoint 中的檔案。
 
-6.  在 [快速啟動] 列中，選擇**程式庫**連結。
+6. 在 [快速啟動] 列中，選擇**程式庫**連結。
 
-7.  在 **文件庫**區段中，選擇**網站資產**連結。
+7. 在 **文件庫**區段中，選擇**網站資產**連結。
 
      **SPD Task Workflow**檔案會列在與其他站台的資產。
 
-8.  在檔案清單中，選擇該檔案的名稱
+8. 在檔案清單中，選擇該檔案的名稱
 
 9. 在 [**檔案下載**對話方塊方塊中，選擇**儲存**] 按鈕以儲存 *.wsp*在您的本機系統上的檔案。
 
@@ -170,7 +170,7 @@ ms.locfileid: "56603413"
 6. 在 [**指定新專案來源**頁面上，瀏覽至您先前儲存在系統上位置 *.wsp*檔案，開啟檔案，然後選擇**下一步]** 按鈕。
 
    > [!NOTE]
-   >  選擇**完成**按鈕以匯入中的所有可用項目 *.wsp*檔案。
+   > 選擇**完成**按鈕以匯入中的所有可用項目 *.wsp*檔案。
 
     這會顯示一份可供匯入可重複使用工作流程。
 
@@ -188,11 +188,11 @@ ms.locfileid: "56603413"
 
 11. 因為**匯入的可重複使用 SharePoint 2010 工作流程**範本不會匯入匯入的工作流程的關聯屬性值，您必須輸入它們。 若要這樣做：
 
-    1.  在 **方案總管**，選擇**SPD_Workflow_TestFT**節點。
+    1. 在 **方案總管**，選擇**SPD_Workflow_TestFT**節點。
 
-    2.  選擇省略符號 (![ASP.NET Mobile 設計工具橢圓形](../sharepoint/media/mwellipsis.gif "ASP.NET Mobile 設計工具橢圓形")) 按鈕旁的清單屬性，其中一個這類**目標清單**屬性。
+    2. 選擇省略符號 (![ASP.NET Mobile 設計工具橢圓形](../sharepoint/media/mwellipsis.gif "ASP.NET Mobile 設計工具橢圓形")) 按鈕旁的清單屬性，其中一個這類**目標清單**屬性。
 
-    3.  填滿遺漏值，在 SharePoint 自訂精靈，然後選擇 **完成** 按鈕。
+    3. 填滿遺漏值，在 SharePoint 自訂精靈，然後選擇 **完成** 按鈕。
 
 12. 選擇.xoml 檔案]，然後在功能表列上選擇 [**檢視** > **設計師**若要在工作流程設計工具中檢視匯入的工作流程。
 
@@ -206,9 +206,9 @@ ms.locfileid: "56603413"
 
 14. 請執行下列其中一組步驟：
 
-    -   按兩下**CodeActivity1**產生事件處理常式，並檢視程式碼。
+    - 按兩下**CodeActivity1**產生事件處理常式，並檢視程式碼。
 
-    -   在 **屬性**視窗**CodeActivity1**，設定的值**ExecuteCode**屬性設**codeActivity_ExecuteCode**。
+    - 在 **屬性**視窗**CodeActivity1**，設定的值**ExecuteCode**屬性設**codeActivity_ExecuteCode**。
 
 15. 現有下新增下列**使用**或是**匯入**陳述式：
 
@@ -225,27 +225,27 @@ ms.locfileid: "56603413"
 
 #### <a name="to-deploy-the-project-and-associate-the-workflow"></a>若要部署專案和工作流程產生關聯
 
-1.  在  [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]，選擇**F5**鍵執行並部署轉換後的工作流程專案。
+1. 在  [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]，選擇**F5**鍵執行並部署轉換後的工作流程專案。
 
-2.  在 [快速啟動] 列中，選擇**任務**連結可以顯示 [工作] 清單。
+2. 在 [快速啟動] 列中，選擇**任務**連結可以顯示 [工作] 清單。
 
-3.  在上**清單工具**索引標籤上，選擇**項目**按鈕，然後再選擇**新項目** 按鈕。
+3. 在上**清單工具**索引標籤上，選擇**項目**按鈕，然後再選擇**新項目** 按鈕。
 
      **工作-新的項目**對話方塊隨即開啟。
 
-4.  在 **標題**方塊中，輸入**新工作**，然後選擇 **儲存**按鈕。
+4. 在 **標題**方塊中，輸入**新工作**，然後選擇 **儲存**按鈕。
 
-5.  在 [**清單工具**索引標籤上，選擇**清單**按鈕，然後再選擇**清單設定**] 按鈕。
+5. 在 [**清單工具**索引標籤上，選擇**清單**按鈕，然後再選擇**清單設定**] 按鈕。
 
      **清單設定**頁面隨即出現。
 
-6.  在 **權限與管理**區段中，選擇**工作流程設定**連結。
+6. 在 **權限與管理**區段中，選擇**工作流程設定**連結。
 
      **工作流程設定**頁面隨即出現。
 
-7.  選擇**新增的工作流程**連結。
+7. 選擇**新增的工作流程**連結。
 
-8.  在 **工作流程**清單中，選擇**WorkflowImportProject1-SPD Workflow Test**。
+8. 在 **工作流程**清單中，選擇**WorkflowImportProject1-SPD Workflow Test**。
 
 9. 在 [**名稱**方塊中，輸入**SPD Workflow Test**，然後選擇 **[確定]** ] 按鈕。
 
@@ -256,7 +256,7 @@ ms.locfileid: "56603413"
 12. 中**啟動新的工作流程**區段中，選擇連結**SPD Workflow Test**，然後選擇**啟動**按鈕來起始工作流程。
 
     > [!NOTE]
-    >  或者，您可以自動為相關聯的工作流程清單藉由執行工作流程設定精靈，並設定自動產生關聯的工作流程。
+    > 或者，您可以自動為相關聯的工作流程清單藉由執行工作流程設定精靈，並設定自動產生關聯的工作流程。
 
      請注意兩個動作由工作流程： 您的名稱會出現在工作的**指派給**資料行，且宣告會出現在**公告**清單。
 

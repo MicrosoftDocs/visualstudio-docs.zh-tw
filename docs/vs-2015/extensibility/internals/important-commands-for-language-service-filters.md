@@ -1,27 +1,22 @@
 ---
 title: 重要的命令，語言服務篩選器 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - language services, filters
 - language services, commands to support
 ms.assetid: 4948c494-3d4d-4f50-b3f9-959e73f90e4d
 caps.latest.revision: 17
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 2c99fdefdd8a215be04bb16b88f56be56b7fff67
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 03bb20abf32f7c320ed56f4a649a9f43453e7694
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51787086"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63447268"
 ---
 # <a name="important-commands-for-language-service-filters"></a>語言服務篩選的重要命令
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -31,7 +26,7 @@ ms.locfileid: "51787086"
 ## <a name="commands-to-handle"></a>控制代碼的命令  
   
 > [!NOTE]
->  它並不一定要篩選為下表中的每個命令。  
+> 它並不一定要篩選為下表中的每個命令。  
   
 |命令|描述|  
 |-------------|-----------------|  
@@ -47,4 +42,3 @@ ms.locfileid: "51787086"
   
 ## <a name="see-also"></a>另請參閱  
  [開發舊版語言服務](../../extensibility/internals/developing-a-legacy-language-service.md)
-

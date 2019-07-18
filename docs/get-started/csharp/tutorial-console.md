@@ -2,8 +2,9 @@
 title: 教學課程：建立簡單的 C# 主控台應用程式
 description: 了解如何逐步在 Visual Studio 中建立 C# 主控台應用程式。
 ms.custom: seodec18, get-started
-ms.date: 03/12/2019
+ms.date: 03/23/2019
 ms.technology: vs-ide-general
+ms.prod: visual-studio-windows
 ms.topic: tutorial
 ms.devlang: CSharp
 author: TerryGLee
@@ -14,55 +15,102 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: c73212ad53389b71ee2eb2a2660cd3dcbccaad8b
-ms.sourcegitcommit: 2dc924c96a6d48803c8eedc3d6781202629b41fa
+ms.openlocfilehash: 5497b0a343960e3f9e7e606e45c41f188b2bdcba
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57736922"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823638"
 ---
 # <a name="tutorial-create-a-simple-c-console-app-in-visual-studio"></a>教學課程：在 Visual Studio 中建立簡單的 C# 主控台應用程式
 
 在 C# 的這個教學課程中，您將使用 Visual Studio 建立並執行主控台應用程式，並在這樣做的同時探索 Visual Studio 整合式開發環境 (IDE) 的一些功能。
 
-如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017)頁面免費進行安裝。
+::: moniker range="vs-2017"
+
+如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)頁面免費進行安裝。
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019)頁面免費進行安裝。
+
+::: moniker-end
 
 ## <a name="create-a-project"></a>建立專案
 
 首先，我們將建立 C# 應用程式專案。 在您新增任何項目之前，專案類型會隨附您需要的所有範本檔案！
 
+::: moniker range="vs-2017"
+
 1. 開啟 Visual Studio 2017。
 
-2. 從頂端功能表列中，選擇 [檔案] > [新增] > [專案]。
+2. 從頂端功能表列中，選擇 [檔案]   > [新增]   > [專案]  。
    (或者按下 **CTRL**+**SHIFT**+**N**)。
 
-3. 在 新增專案 對話方塊的左窗格中，展開 C#，然後選擇 .NET Core。 在中間窗格中，選擇 [主控台應用程式 (.NET Core)]。 接著，將檔案命名為 ***Calculator***。
+3. 在 新增專案  對話方塊的左窗格中，展開 C#  ，然後選擇 .NET Core  。 在中間窗格中，選擇 [主控台應用程式 (.NET Core)]  。 接著，將檔案命名為 ***Calculator***。
 
    ![Visual Studio IDE 的 [新增專案] 對話方塊中的主控台應用程式 (.NET Core) 專案範本](./media/new-project-csharp-calculator-console-app.png)
 
 ### <a name="add-a-workload-optional"></a>新增工作負載 (選擇性)
 
-如果您看不到 [主控台應用程式] 專案範本，則其取得方式是新增 [.NET Core 跨平台開發] 工作負載。 方式如下：
+如果您看不到 [主控台應用程式]  專案範本，則其取得方式是新增 [.NET Core 跨平台開發]  工作負載。 方式如下：
 
 #### <a name="option-1-use-the-new-project-dialog-box"></a>選項 1：使用 [新增專案] 對話方塊
 
-1. 選擇 [新增專案] 對話方塊左窗格中的 [開啟 Visual Studio 安裝程式] 連結。
+1. 選擇 [新增專案]  對話方塊左窗格中的 [開啟 Visual Studio 安裝程式]  連結。
 
    ![從 [新增專案] 對話方塊選擇 [開啟 Visual Studio 安裝程式] 連結](./media/csharp-open-visual-studio-installer-generic-dark.png)
 
-1. Visual Studio 安裝程式即會啟動。 選擇 [.NET Core 跨平台開發] 工作負載，然後選擇 [修改]。
+1. Visual Studio 安裝程式即會啟動。 選擇 [.NET Core 跨平台開發]  工作負載，然後選擇 [修改]  。
 
    ![Visual Studio 安裝程式中的 .NET Core 跨平台開發工作負載](./media/dot-net-core-xplat-dev-workload.png)
 
 #### <a name="option-2-use-the-tools-menu-bar"></a>選項 2：使用 [工具] 功能表列
 
-1. 請取消 [新專案] 對話方塊，然後從頂端功能表列中選擇 [工具] > [取得工具和功能]。
+1. 請取消 [新增專案]  對話方塊，然後從頂端功能表列中選擇 [工具]  >[取得工具和功能]  。
 
-1. Visual Studio 安裝程式即會啟動。 選擇 [.NET Core 跨平台開發] 工作負載，然後選擇 [修改]。
+1. Visual Studio 安裝程式即會啟動。 選擇 [.NET Core 跨平台開發]  工作負載，然後選擇 [修改]  。
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+1. 開啟 Visual Studio 2019。
+
+1. 在開始視窗中，選擇 [建立新專案]  。
+
+   ![檢視 [建立新專案] 視窗](../../get-started/media/vs-2019/create-new-project-dark-theme.png)
+
+1. 在 [建立新專案]  視窗的搜尋方塊中輸入或鍵入 ASP.NET  。 接下來，從語言清單中選擇 **C#** ，然後從平台清單中選擇 **Windows**。 
+
+   在您套用語言和平台的篩選條件之後，請選擇 [主控台應用程式 (.NET Core)]  範本，然後選擇 [下一步]  。
+
+   ![選擇主控台應用程式 (.NET Framework) 的 C# 專案範本](./media/vs-2019/csharp-create-new-project-search-console-net-core-filtered.png)
+
+   > [!NOTE]
+   > 如果您未看到 [主控台應用程式 (.NET Core)]  範本，您可以從 [建立新專案]  視窗中安裝。 在 [找不到您要找的資料嗎?]  訊息中，選擇 [安裝更多工具和功能]  連結。
+   >
+   > ![[建立新專案] 視窗中 [找不到您要找的資料嗎?] 訊息的 [安裝更多的工具和功能] 連結](../../get-started/media/vs-2019/not-finding-what-looking-for.png) 
+   > 
+   > 接下來，在 Visual Studio 安裝程式中選擇 **.NET Core 跨平台開發**工作負載。
+   >
+   > ![Visual Studio 安裝程式中的 .NET Core 跨平台開發工作負載](./media/dot-net-core-xplat-dev-workload.png)
+   >
+   > 接著，選擇Visual Studio 安裝程式中的 [修改]  按鈕。 系統可能會提示您儲存工作，若收到提示，請依提示執行。 接下來，選擇 [繼續]  以安裝工作負載。 然後，返回至「[建立專案](#create-a-project)」程序中的步驟 2。
+
+1. 在 [設定您的新專案]  視窗的 [專案名稱]  方塊中鍵入或輸入 *Calculator*。 接著，選擇 [建立]  。
+
+   ![在 [設定您的新專案] 視窗中，以 'Calculator' 命名您的專案](./media/vs-2019/csharp-name-your-calculator-project.png)
+
+   Visual Studio 會隨即開啟您的新專案，其中包含預設 "Hello World" 程式碼。
+   
+::: moniker-end
 
 ## <a name="create-the-app"></a>建立應用程式
 
-首先，我們將探索一些以 C# 撰寫的基本整數運算。 然後，我們將新增程式碼來建立基本的計算機。 下一步，。 然後，我們會對應用程式進行偵錯以找出錯誤，將其修正。 最後，我們會精簡程式碼，讓其更有效率。
+首先，我們將探索一些以 C# 撰寫的基本整數運算。 然後，我們將新增程式碼來建立基本的計算機。 然後，我們會對應用程式進行偵錯以找出錯誤，將其修正。 最後，我們會精簡程式碼，讓其更有效率。
 
 ### <a name="explore-integer-math"></a>探索整數運算
 
@@ -88,7 +136,7 @@ ms.locfileid: "57736922"
 
     ![顯示 Visual Studio IDE 中 IntelliSense 自動完成功能的整數數學代碼動畫](./media/integer-math-intellisense.gif)
 
-1. 選擇 [Calculator] 來執行您的程式 (或按 **F5**)。
+1. 選擇 [Calculator]  來執行您的程式 (或按 **F5**)。
 
    ![選擇 [Calculator] 按鈕以從工具列執行應用程式](./media/csharp-console-calculator-button.png)
 
@@ -96,7 +144,7 @@ ms.locfileid: "57736922"
 
     ![顯示整數數學結果的主控台視窗](./media/csharp-console-integer-math.png)
 
-1. (選擇性)，您可以變更運算子來變更結果。 例如，您可以將 `int c = a + b;`程式碼行中的 `+` 運算子變更為 `-` 進行相減、變更為 `*` 進行相乘，或變更為 `/` 進行相除。 在您執行程式時，結果也會變更。
+1. (選擇性)  ，您可以變更運算子來變更結果。 例如，您可以將 `int c = a + b;`程式碼行中的 `+` 運算子變更為 `-` 進行相減、變更為 `*` 進行相乘，或變更為 `/` 進行相除。 在您執行程式時，結果也會變更。
 
 1. 關閉主控台視窗。
 
@@ -117,22 +165,22 @@ ms.locfileid: "57736922"
         {
             static void Main(string[] args)
             {
-                // Declare variables and then initialize to zero
+                // Declare variables and then initialize to zero.
                 int num1 = 0; int num2 = 0;
 
-                // Display title as the C# console calculator app
+                // Display title as the C# console calculator app.
                 Console.WriteLine("Console Calculator in C#\r");
                 Console.WriteLine("------------------------\n");
 
-                // Ask the user to type the first number
+                // Ask the user to type the first number.
                 Console.WriteLine("Type a number, and then press Enter");
                 num1 = Convert.ToInt32(Console.ReadLine());
 
-                // Ask the user to type the second number
+                // Ask the user to type the second number.
                 Console.WriteLine("Type another number, and then press Enter");
                 num2 = Convert.ToInt32(Console.ReadLine());
 
-                // Ask the user to choose an option
+                // Ask the user to choose an option.
                 Console.WriteLine("Choose an option from the following list:");
                 Console.WriteLine("\ta - Add");
                 Console.WriteLine("\ts - Subtract");
@@ -140,7 +188,7 @@ ms.locfileid: "57736922"
                 Console.WriteLine("\td - Divide");
                 Console.Write("Your option? ");
 
-                // Use a switch statement to do the math
+                // Use a switch statement to do the math.
                 switch (Console.ReadLine())
                 {
                     case "a":
@@ -156,7 +204,7 @@ ms.locfileid: "57736922"
                         Console.WriteLine($"Your result: {num1} / {num2} = " + (num1 / num2));
                         break;
                 }
-                // Wait for the user to respond before closing
+                // Wait for the user to respond before closing.
                 Console.Write("Press any key to close the Calculator console app...");
                 Console.ReadKey();
             }
@@ -164,7 +212,7 @@ ms.locfileid: "57736922"
     }
     ```
 
-1. 選擇 [Calculator] 來執行您的程式 (或按 **F5**)。
+1. 選擇 [Calculator]  來執行您的程式 (或按 **F5**)。
 
    ![選擇 [Calculator] 按鈕以從工具列執行應用程式](./media/csharp-console-calculator-button.png)
 
@@ -190,11 +238,11 @@ ms.locfileid: "57736922"
 
 讓我們修正程式碼來處理小數。
 
-1. 按 **Ctrl** + **F** 以開啟 [尋找和取代] 控制項。
+1. 按 **Ctrl** + **F** 以開啟 [尋找和取代]  控制項。
 
 1. 將 `int` 變數的每個執行個體變更為 `float`。
 
-   請確認您已在 [尋找和取代] 控制項中切換 [大小寫須相符] (**ALT**+**C**) 和 [全字相符] (**ALT**+**W**)。
+   請確認您已在 [尋找和取代]  控制項中切換 [大小寫須相符]  (**ALT**+**C**) 和 [全字相符]  (**ALT**+**W**)。
 
     ![顯示如何將 int 變數變更為 float 的 [尋找和取代] 控制項動畫](./media/find-replace-control-animation.gif)
 
@@ -206,7 +254,7 @@ ms.locfileid: "57736922"
 
 不過，應用程式僅會產生小數結果。 讓我們進一步調校程式碼，讓應用程式也可以計算小數。
 
-1. 使用 [尋找和取代] 控制項 (**Ctrl** + **F**)，將 `float` 變數的每個執行個體變更為 `double`，以及將 `Convert.ToInt32` 方法的每個執行個體變更為 `Convert.ToDouble`。
+1. 使用 [尋找和取代]  控制項 (**Ctrl** + **F**)，將 `float` 變數的每個執行個體變更為 `double`，以及將 `Convert.ToInt32` 方法的每個執行個體變更為 `Convert.ToDouble`。
 
 1. 執行您的計算機應用程式，將數字 **42.5** 除以數字 **119.75**。
 
@@ -240,7 +288,7 @@ ms.locfileid: "57736922"
 1. 使用下列程式碼將其取代：
 
    ```csharp
-            // Ask the user to enter a non-zero divisor until they do so
+            // Ask the user to enter a non-zero divisor until they do so.
                 while (num2 == 0)
                 {
                     Console.WriteLine("Enter a non-zero divisor: ");
@@ -269,13 +317,13 @@ ms.locfileid: "57736922"
 
 #### <a name="revise-the-code"></a>修改程式碼
 
-我們將應用程式分為兩類：`calculator` 和 `program`，而不依賴 `program` 類別來處理所有程式碼。
+我們將應用程式分為兩類：`Calculator` 和 `Program`，而不依賴 `program` 類別來處理所有程式碼。
 
-`calculator` 類別會處理大量計算工作，`program` 類別會處理使用者介面和錯誤擷取工作。
+`Calculator` 類別會處理大量計算工作，`Program` 類別會處理使用者介面和錯誤擷取工作。
 
 我們現在就開始吧。
 
-1. 刪除下列程式碼區塊「之後」的所有項目：
+1. 刪除下列程式碼區塊「之後」  的所有項目：
 
     ```csharp
 
@@ -286,16 +334,16 @@ ms.locfileid: "57736922"
 
     ```
 
-1. 接下來，新增 `calculator` 類別，如下所示：
+1. 接下來，新增 `Calculator` 類別，如下所示：
 
     ```csharp
     class Calculator
     {
         public static double DoOperation(double num1, double num2, string op)
         {
-            double result = double.NaN; // Default value is "not-a-number" which we use if an operation, such as division, could result in an error
+            double result = double.NaN; // Default value is "not-a-number" which we use if an operation, such as division, could result in an error.
 
-            // Use a switch statement to do the math
+            // Use a switch statement to do the math.
             switch (op)
             {
                 case "a":
@@ -308,13 +356,13 @@ ms.locfileid: "57736922"
                     result = num1 * num2;
                     break;
                 case "d":
-                    // Ask the user to enter a non-zero divisor
+                    // Ask the user to enter a non-zero divisor.
                     if (num2 != 0)
                     {
                         result = num1 / num2;
                     }
                     break;
-                // Return text for an incorrect option entry
+                // Return text for an incorrect option entry.
                 default:
                     break;
             }
@@ -324,7 +372,7 @@ ms.locfileid: "57736922"
 
     ```
 
-1. 然後，新增 `program` 類別，如下所示：
+1. 然後，新增 `Program` 類別，如下所示：
 
     ```csharp
     class Program
@@ -332,18 +380,18 @@ ms.locfileid: "57736922"
         static void Main(string[] args)
         {
             bool endApp = false;
-            // Display title as the C# console calculator app
+            // Display title as the C# console calculator app.
             Console.WriteLine("Console Calculator in C#\r");
             Console.WriteLine("------------------------\n");
 
             while (!endApp)
             {
-                // Declare variables and set to empty
+                // Declare variables and set to empty.
                 string numInput1 = "";
                 string numInput2 = "";
                 double result = 0;
 
-                // Ask the user to type the first number
+                // Ask the user to type the first number.
                 Console.Write("Type a number, and then press Enter: ");
                 numInput1 = Console.ReadLine();
 
@@ -354,7 +402,7 @@ ms.locfileid: "57736922"
                     numInput1 = Console.ReadLine();
                 }
 
-                // Ask the user to type the second number
+                // Ask the user to type the second number.
                 Console.Write("Type another number, and then press Enter: ");
                 numInput2 = Console.ReadLine();
 
@@ -365,7 +413,7 @@ ms.locfileid: "57736922"
                     numInput2 = Console.ReadLine();
                 }
 
-                // Ask the user to choose an operator
+                // Ask the user to choose an operator.
                 Console.WriteLine("Choose an operator from the following list:");
                 Console.WriteLine("\ta - Add");
                 Console.WriteLine("\ts - Subtract");
@@ -391,20 +439,20 @@ ms.locfileid: "57736922"
 
                 Console.WriteLine("------------------------\n");
 
-                // Wait for the user to respond before closing
+                // Wait for the user to respond before closing.
                 Console.Write("Press 'n' and Enter to close the app, or press any other key and Enter to continue: ");
                 if (Console.ReadLine() == "n") endApp = true;
 
-                Console.WriteLine("\n"); // Friendly linespacing
+                Console.WriteLine("\n"); // Friendly linespacing.
             }
             return;
         }
     }
     ```
 
-1. 選擇 [Calculator] 來執行您的程式 (或按 **F5**)。
+1. 選擇 [Calculator]  來執行您的程式 (或按 **F5**)。
 
-1. 遵循提示，將數字 **42** 除以數字 **119**。 應用程式看起來應類似下圖：
+1. 遵循提示，將數字 **42** 除以數字 **119**。 您的應用程式看起來應該類似下列螢幕擷取畫面：
 
     ![主控台視窗顯示重構的應用程式，包含要採取那些動作和處理不正確輸入的提示](./media/csharp-console-calculator-refactored.png)
 
@@ -414,7 +462,7 @@ ms.locfileid: "57736922"
 
 1. 如果您尚未這麼做，請關閉計算機應用程式。
 
-1. 關閉 Visual Studio 中的 [輸出] 窗格。
+1. 關閉 Visual Studio 中的 [輸出]  窗格。
 
    ![關閉 Visual Studio 中的 [輸出] 窗格](./media/csharp-calculator-close-output-pane.png)
 
@@ -438,9 +486,9 @@ namespace Calculator
     {
         public static double DoOperation(double num1, double num2, string op)
         {
-            double result = double.NaN; // Default value is "not-a-number" which we use if an operation, such as division, could result in an error
+            double result = double.NaN; // Default value is "not-a-number" which we use if an operation, such as division, could result in an error.
 
-            // Use a switch statement to do the math
+            // Use a switch statement to do the math.
             switch (op)
             {
                 case "a":
@@ -453,13 +501,13 @@ namespace Calculator
                     result = num1 * num2;
                     break;
                 case "d":
-                    // Ask the user to enter a non-zero divisor
+                    // Ask the user to enter a non-zero divisor.
                     if (num2 != 0)
                     {
                         result = num1 / num2;
                     }
                     break;
-                // Return text for an incorrect option entry
+                // Return text for an incorrect option entry.
                 default:
                     break;
             }
@@ -472,18 +520,18 @@ namespace Calculator
         static void Main(string[] args)
         {
             bool endApp = false;
-            // Display title as the C# console calculator app
+            // Display title as the C# console calculator app.
             Console.WriteLine("Console Calculator in C#\r");
             Console.WriteLine("------------------------\n");
 
             while (!endApp)
             {
-                // Declare variables and set to empty
+                // Declare variables and set to empty.
                 string numInput1 = "";
                 string numInput2 = "";
                 double result = 0;
 
-                // Ask the user to type the first number
+                // Ask the user to type the first number.
                 Console.Write("Type a number, and then press Enter: ");
                 numInput1 = Console.ReadLine();
 
@@ -494,7 +542,7 @@ namespace Calculator
                     numInput1 = Console.ReadLine();
                 }
 
-                // Ask the user to type the second number
+                // Ask the user to type the second number.
                 Console.Write("Type another number, and then press Enter: ");
                 numInput2 = Console.ReadLine();
 
@@ -505,7 +553,7 @@ namespace Calculator
                     numInput2 = Console.ReadLine();
                 }
 
-                // Ask the user to choose an operator
+                // Ask the user to choose an operator.
                 Console.WriteLine("Choose an operator from the following list:");
                 Console.WriteLine("\ta - Add");
                 Console.WriteLine("\ts - Subtract");
@@ -531,11 +579,11 @@ namespace Calculator
 
                 Console.WriteLine("------------------------\n");
 
-                // Wait for the user to respond before closing
+                // Wait for the user to respond before closing.
                 Console.Write("Press 'n' and Enter to close the app, or press any other key and Enter to continue: ");
                 if (Console.ReadLine() == "n") endApp = true;
 
-                Console.WriteLine("\n"); // Friendly linespacing
+                Console.WriteLine("\n"); // Friendly linespacing.
             }
             return;
         }

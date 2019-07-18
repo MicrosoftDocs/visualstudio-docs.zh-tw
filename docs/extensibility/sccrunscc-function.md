@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - SccRunScc function
 ms.assetid: bbe7c931-b17a-4779-9cf6-59e5f9f0c172
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e7400fc2b635c036f4bf9b2ff3632a20e628b50d
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: ec6f430b4fee28e0bd1a9d5b1c64f9e8d95b2a97
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56691510"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66338686"
 ---
 # <a name="sccrunscc-function"></a>SccRunScc 函式
 此函式會叫用原始檔控制系統管理工具。
@@ -72,6 +72,6 @@ SCCRTN SccRunScc(
 
 ## <a name="see-also"></a>另請參閱
 - [原始檔控制外掛程式 API 函式](../extensibility/source-control-plug-in-api-functions.md)
-- [如何：安裝原始檔控制外掛程式](../extensibility/internals/how-to-install-a-source-control-plug-in.md)
+- [如何：安裝原始程式碼控制外掛程式](../extensibility/internals/how-to-install-a-source-control-plug-in.md)
 - [功能旗標](../extensibility/capability-flags.md)
 - [SccInitialize](../extensibility/sccinitialize-function.md)

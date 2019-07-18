@@ -14,15 +14,15 @@ helpviewer_keywords:
 - MSBuild (Visual C++), FXC task
 - FXC task (MSBuild (Visual C++))
 author: mikeblome
-ms.author: Michael.Blome
+ms.author: mblome
 ms.workload:
 - multiple
-ms.openlocfilehash: a0854835c1562c0797394395f07708cd0eab710d
-ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
+ms.openlocfilehash: 65819f1625477effab024055828301b26ab5804a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "58070395"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62931486"
 ---
 # <a name="fxc-task"></a>FXC 工作
 

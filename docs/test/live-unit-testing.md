@@ -9,12 +9,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4e73e6939dd5b2cad382d56616e7cf1f2d64934e
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: ce9a1a2da7397dbc7ce4235391c962cada7d59eb
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223711"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62786473"
 ---
 # <a name="live-unit-testing-with-visual-studio"></a>Visual Studio 的 Live Unit Testing
 
@@ -28,28 +28,11 @@ ms.locfileid: "57223711"
 ## <a name="supported-test-frameworks"></a>支援的測試架構
 Live Unit Testing 適用於下表所列的三種熱門單元測試架構。 其配接器與架構所支援的最小版本也列於表格中。 單元測試架構全都可從 NuGet.org 取得。
 
-<table>
-<tr>
-   <th>測試架構</th>
-   <th>Visual Studio 配接器最小版本</th>
-   <th>架構最小版本</th>
-</tr>
-<tr>
-   <td>xUnit.net</td>
-   <td> xunit.runner.visualstudio 版本 2.2.0-beta3-build1187</td>
-   <td>xunit 1.9.2</td>
-</tr>
-<tr>
-   <td>NUnit</td>
-   <td>NUnit3TestAdapter 版本 3.5.1</td>
-   <td>NUnit 版本 3.5.0</td>
-</tr>
-<tr>
-   <td>MSTest</td>
-   <td>MSTest.TestAdapter 1.1.4-preview</td>
-   <td>MSTest.TestFramework 1.0.5-preview</td>
-</tr>
-</table>
+|測試架構  |Visual Studio 配接器最小版本  |架構最小版本  |
+|---------|---------|---------|
+|xUnit.net |xunit.runner.visualstudio 版本 2.2.0-beta3-build1187 |xunit 1.9.2 |
+|NUnit |NUnit3TestAdapter 版本 3.5.1 |NUnit 版本 3.5.0 |
+|MSTest |MSTest.TestAdapter 1.1.4-preview |MSTest.TestFramework 1.0.5-preview |
 
 如果您的舊版 MSTest 測試專案參考 `Microsoft.VisualStudio.QualityTools.UnitTestFramework`，但您不想要移至新版 MSTest NuGet 套件，請升級至 Visual Studio 2017 15.4 版或更新版本。
 

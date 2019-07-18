@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 46a8c9a4e22c7a54a4b2b68f95bb2b81f3a0888e
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 4886a11d7d207523785b9d568226ae98a9e97b28
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57870382"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66744579"
 ---
 # <a name="ca1052-static-holder-types-should-be-sealed"></a>CA1052:靜態預留位置類型應該為密封的
 
@@ -46,7 +46,7 @@ ms.locfileid: "57870382"
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
 
-若要修正此規則的違規情形，將標示為的型別`sealed`或`NotInheritable`。 如果您的目標.NET Framework 2.0 或更新版本，較好的方法將標示為的型別`static`或`Shared`。 以這種方式，您不需要宣告以防止建立類別的私用建構函式。
+若要修正此規則的違規情形，將標示為的型別`sealed`或`NotInheritable`。 如果專案的目標.NET Framework 2.0 或更新版本，較好的方法將標示為的型別`static`或`Shared`。 以這種方式，您不需要宣告以防止建立類別的私用建構函式。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
 
@@ -56,7 +56,7 @@ ms.locfileid: "57870382"
 
 如果您執行這項規則，從[FxCop 分析器](install-fxcop-analyzers.md)（而不是透過靜態程式碼分析），您可以設定的哪些部分您程式碼基底上執行這項規則，根據其存取範圍。 比方說，若要指定執行規則時，應該只針對非公用 API 介面，將下列索引鍵 / 值組新增至專案中的.editorconfig 檔案：
 
-```
+```ini
 dotnet_code_quality.ca1052.api_surface = private, internal
 ```
 

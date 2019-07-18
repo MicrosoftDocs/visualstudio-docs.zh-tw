@@ -2,8 +2,10 @@
 title: 使用 Visual Studio 建立您的第一個 C# 主控台應用程式
 titleSuffix: ''
 description: 了解如何使用 C# 在 Visual Studio 中逐步建立簡單的 Hello World 主控台應用程式。
-ms.date: 09/21/2018
 ms.custom: seodec18
+ms.date: 03/23/2019
+ms.technology: vs-ide-general
+ms.prod: visual-studio-windows
 ms.topic: quickstart
 ms.devlang: vb
 author: TerryGLee
@@ -13,22 +15,34 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 12a08aa0e7509d04b522b74362347bc996e02946
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 34e943984755ff1f36f8a28134e1e2abde4312d4
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55923730"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62954034"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-c-console-app"></a>快速入門：使用 Visual Studio 建立您的第一個 C# 主控台應用程式
 
 在這個 5-10 分鐘的 Visual Studio 整合式開發環境 (IDE) 簡介中，您將建立在主控台上執行的簡單 C# 應用程式。
 
-如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017)頁面免費進行安裝。
+::: moniker range="vs-2017"
+
+如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)頁面免費進行安裝。
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019)頁面免費進行安裝。
+
+::: moniker-end
 
 ## <a name="create-a-project"></a>建立專案
 
 首先，您將建立 C# 應用程式專案。 在您新增任何項目之前，專案類型會隨附您需要的所有範本檔案！
+
+::: moniker range="vs-2017"
 
 1. 開啟 Visual Studio 2017。
 
@@ -46,17 +60,62 @@ ms.locfileid: "55923730"
 
      ![Visual Studio 安裝程式中的 .NET Core 跨平台開發工作負載](../ide/media/dot-net-core-xplat-dev-workload.png)
 
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+1. 開啟 Visual Studio 2019。
+
+1. 在開始視窗中，選擇 [建立新專案]。
+
+   ![[建立新專案] 視窗](../get-started/media/vs-2019/create-new-project-dark-theme.png)
+
+1. 在 [建立新專案] 視窗的搜尋方塊中輸入或鍵入 ASP.NET。 接下來，從語言清單中選擇 **C#**，然後從平台清單中選擇 **Windows**。 
+
+   在您套用語言和平台的篩選條件之後，請選擇 [主控台應用程式 (.NET Core)] 範本，然後選擇 [下一步]。
+
+   ![選擇主控台應用程式 (.NET Framework) 的 C# 專案範本](../get-started/csharp/media/vs-2019/csharp-create-new-project-search-console-net-core-filtered.png)
+
+   > [!NOTE]
+   > 如果您未看到 [主控台應用程式 (.NET Core)] 範本，您可以從 [建立新專案] 視窗中安裝。 在 [找不到您要找的資料嗎?] 訊息中，選擇 [安裝更多工具和功能] 連結。
+   >
+   > ![[建立新專案] 視窗中 [找不到您要找的資料嗎?] 訊息的 [安裝更多的工具和功能] 連結](../get-started/media/vs-2019/not-finding-what-looking-for.png) 
+   > 
+   > 接下來，在 Visual Studio 安裝程式中選擇 **.NET Core 跨平台開發**工作負載。
+   >
+   > ![Visual Studio 安裝程式中的 .NET Core 跨平台開發工作負載](./media/dot-net-core-xplat-dev-workload.png)
+   >
+   > 接著，選擇Visual Studio 安裝程式中的 [修改] 按鈕。 系統可能會提示您儲存工作，若收到提示，請依提示執行。 接下來，選擇 [繼續] 以安裝工作負載。 然後，返回至「[建立專案](#create-a-project)」程序中的步驟 2。
+
+1. 在 [設定您的新專案] 視窗的 [專案名稱] 方塊中鍵入或輸入 *HelloWorld*。 接著，選擇 [建立]。
+
+   ![在 [設定您的新專案] 視窗中，以 'HelloWorld' 命名您的專案](../get-started/csharp/media/vs-2019/csharp-name-your-helloworld-project.png)
+
+   Visual Studio 會隨即開啟您的新專案。
+   
+::: moniker-end
+
 ## <a name="create-the-application"></a>建立應用程式
+
+::: moniker range="vs-2017"
 
 在您選取 C# 專案範本並命名專案之後，Visual Studio 會為您建立簡單的 "Hello World" 應用程式。
 
-(它的做法是呼叫 <xref:System.Console.WriteLine%2A> 方法，以在主控台視窗中顯示常值字串 "Hello World!" 。)
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+Visual Studio 在您的專案中包含預設 "Hello World" 程式碼。
+
+::: moniker-end
+
+(若要執行此操作，做法是呼叫 <xref:System.Console.WriteLine%2A> 方法，以在主控台視窗中顯示常值字串 "Hello World!" 。)
 
    ![從範本檢視預設 Hello World 程式碼](../ide/media/csharp-console-helloworld-template.png)
 
 如果按下 **F5**，您可以在偵錯模式中執行程式。 不過，主控台視窗只會顯示一下子，然後就關閉。
 
-(發生原因是 `Main` 方法在其單一陳述式執行之後終止，因此應用程式結束。)
+(此行為發生的原因是 `Main` 方法在其單一陳述式執行之後終止，因此應用程式結束。)
 
 ### <a name="add-some-code"></a>新增一些程式碼
 

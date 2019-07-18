@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugBreakpointErrorEvent2::GetErrorBreakpoint
 ms.assetid: e5acfd19-ac17-47f3-a31a-b2aa8baca36d
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 362cacab9317aef05cb16e7d9d3e3796439af8af
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 629dbfcd86a1401ed8d5ebf64d4e06723fa82398
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56715110"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66352972"
 ---
 # <a name="idebugbreakpointerrorevent2geterrorbreakpoint"></a>IDebugBreakpointErrorEvent2::GetErrorBreakpoint
 取得[IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md)物件，描述為什麼中斷點未繫結的原因。
@@ -36,10 +39,9 @@ int GetErrorBreakpoint( 
 );
 ```
 
-#### <a name="parameters"></a>參數
-`ppErrorBP`
-
- [out]傳回[IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md)描述警告或錯誤的物件。
+## <a name="parameters"></a>參數
+`ppErrorBP`\
+[out]傳回[IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md)描述警告或錯誤的物件。
 
 ## <a name="return-value"></a>傳回值
 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgramEx2::Attach
 ms.assetid: 33b22b2f-431e-4205-9441-d28a9c928c97
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b5ebf525b2c823963aa7ba099d4f3b1801d84d1e
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: db27f29b37480081d29e452d74a6da0c5cea59a6
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56683580"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66325176"
 ---
 # <a name="idebugprogramex2attach"></a>IDebugProgramEx2::Attach
 附加至程式的工作階段。
@@ -40,18 +43,15 @@ int Attach( 
 );
 ```
 
-#### <a name="parameters"></a>參數
- `pCallback`
+## <a name="parameters"></a>參數
+`pCallback`\
+[in][IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)物件，表示附加的偵錯引擎會傳送至事件的回呼函式。
 
- [in][IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)物件，表示附加的偵錯引擎會傳送至事件的回呼函式。
+`dwReason`\
+[in]值，以從[ATTACH_REASON](../../../extensibility/debugger/reference/attach-reason.md)描述在附加作業原因的列舉型別。
 
- `dwReason`
-
- [in]值，以從[ATTACH_REASON](../../../extensibility/debugger/reference/attach-reason.md)描述在附加作業原因的列舉型別。
-
- `pSession`
-
- [in]值，這個值可唯一識別附加至程式的工作階段。
+`pSession`\
+[in]值，這個值可唯一識別附加至程式的工作階段。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則會傳回錯誤碼。 此方法應傳回`E_ATTACH_DEBUGGER_ALREADY_ATTACHED`如果已經附加的程式。
@@ -60,7 +60,7 @@ int Attach( 
  包含該程式的連接埠可以使用中的值`pSession`來判斷哪一個工作階段嘗試附加至程式。 例如，如果連接埠允許附加至處理序中，一次只能有一個偵錯工作階段，連接埠就可以判斷是否相同的工作階段已附加至處理序中的其他程式。
 
 > [!NOTE]
->  介面傳入`pSession`會僅視為 cookie 值可唯一識別 附加至這個方案的偵錯工作階段管理員提供的介面上的方法沒有任何功能。
+> 介面傳入`pSession`會僅視為 cookie 值可唯一識別 附加至這個方案的偵錯工作階段管理員提供的介面上的方法沒有任何功能。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugProgramEx2](../../../extensibility/debugger/reference/idebugprogramex2.md)

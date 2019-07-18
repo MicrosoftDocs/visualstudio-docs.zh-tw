@@ -1,10 +1,4 @@
 ### YamlMime:YamlDocument
-ms.openlocfilehash: 7d4650eac4e0914c4bcd37980860575770d46af0
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: HT
-ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55911724"
 documentType: LandingData
 title: Visual Studio | JavaScript 和 TypeScript
 metadata:
@@ -13,84 +7,84 @@ metadata:
   author: mikejo5000
   manager: jillfra
   ms.prod: visual-studio-windows
-  ms.technology: vs-nodejs
+  ms.technology: vs-javascript
   ms.topic: landing-page
   ms.date: 01/15/2019
   ms.author: mikejo
   dev_langs:
-  - JavaScript
-  - TypeScript
+    - JavaScript
+    - TypeScript
 sections:
-- title: Visual Studio 使用者入門
-  items:
-  - type: list
-    style: cards
-    className: cardsM
-    columns: 3
+  - title: Visual Studio 使用者入門
     items:
-    - href: ../install/install-visual-studio.md
-      html: <p></p>
-      image:
-        src: https://docs.microsoft.com/media/common/i_setup.svg
-      title: 安裝 Visual Studio
-    - href: ../javascript/quickstart-ide-orientation-js.md
-      html: <p></p>
-      image:
-        src: https://docs.microsoft.com/media/logos/logo_visual-studio.svg
-      title: 體驗 Visual Studio IDE
-- title: 教學課程
-  items:
-  - type: list
-    style: cards
-    className: cardsM
-    columns: 3
+      - type: list
+        style: cards
+        className: cardsM
+        columns: 3
+        items:
+          - href: ../install/install-visual-studio.md
+            html: <p></p>
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_setup.svg'
+            title: 安裝 Visual Studio
+          - href: ../javascript/quickstart-ide-orientation-js.md
+            html: <p></p>
+            image:
+              src: 'https://docs.microsoft.com/media/logos/logo_visual-studio.svg'
+            title: 體驗 Visual Studio IDE
+  - title: 教學課程
     items:
-    - href: tutorial-nodejs.md
-      html: <p>利用 Node.js 和 Express 建立 Web 應用程式</p>
-      image:
-        src: https://docs.microsoft.com/media/logos/logo_nodejs.svg
-    - href: tutorial-nodejs-with-react-and-jsx.md
-      html: <p>利用 Node.js 和 React 建立 Web 應用程式</p>
-      image:
-        src: https://docs.microsoft.com/media/logos/logo_React.svg
-    - href: quickstart-vuejs-with-nodejs.md
-      html: <p>利用 Node.js 和 Vue.js 建立 Web 應用程式</p>
-      image:
-        src: ../javascript/media/logo-vuejs.png
-    - href: publish-nodejs-app-azure.md
-      html: <p>將 Node.js 應用程式發佈到 Linux App Service</p>
-      image:
-        src: https://docs.microsoft.com/media/logos/logo_linux-color.svg
-- title: 開發應用程式
-  items:
-  - type: paragraph
-    text: 了解如何使用 Visual Studio 進行開發工作。
-  - type: list
-    style: cards
-    className: cardsM
-    columns: 3
+      - type: list
+        style: cards
+        className: cardsM
+        columns: 3
+        items:
+          - href: tutorial-nodejs.md
+            html: <p>利用 Node.js 和 Express 建立 Web 應用程式</p>
+            image:
+              src: 'https://docs.microsoft.com/media/logos/logo_nodejs.svg'
+          - href: tutorial-nodejs-with-react-and-jsx.md
+            html: <p>利用 Node.js 和 React 建立 Web 應用程式</p>
+            image:
+              src: 'https://docs.microsoft.com/media/logos/logo_React.svg'
+          - href: quickstart-vuejs-with-nodejs.md
+            html: <p>利用 Node.js 和 Vue.js 建立 Web 應用程式</p>
+            image:
+              src: ../javascript/media/logo-vuejs.png
+          - href: publish-nodejs-app-azure.md
+            html: <p>將 Node.js 應用程式發佈到 Linux App Service</p>
+            image:
+              src: 'https://docs.microsoft.com/media/logos/logo_linux-color.svg'
+  - title: 開發應用程式
     items:
-    - href: write-and-edit-code.md
-      html: <p>撰寫和編輯程式碼</p>
-      image:
-        src: https://docs.microsoft.com/media/common/i_code-edit.svg
-    - href: nodejs-interactive-repl.md
-      html: <p>使用 Node.js 互動式 REPL</p>
-      image:
-        src: https://docs.microsoft.com/media/common/i_cligeneric.svg
-    - href: npm-package-management.md
-      html: <p>管理 npm 套件</p>
-      image:
-        src: https://docs.microsoft.com/media/logos/logo_npm.svg
-    - href: debug-nodejs.md
-      html: <p>偵錯程式碼</p>
-      image:
-        src: https://docs.microsoft.com/media/common/i_debug.svg
-    - href: develop-javascript-code-without-solutions-projects.md
-      html: <p>不使用專案或方案來開發程式碼</p>
-      image:
-        src: https://docs.microsoft.com/media/common/i_code-edit.svg
-    - href: unit-testing-javascript-with-visual-studio.md
-      html: <p>撰寫和執行單元測試</p>
-      image:
-        src: https://docs.microsoft.com/media/common/i_unit-testing.svg
+      - type: paragraph
+        text: 了解如何使用 Visual Studio 進行開發工作。
+      - type: list
+        style: cards
+        className: cardsM
+        columns: 3
+        items:
+          - href: write-and-edit-code.md
+            html: <p>撰寫和編輯程式碼</p>
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_code-edit.svg'
+          - href: nodejs-interactive-repl.md
+            html: <p>使用 Node.js 互動式 REPL</p>
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_cligeneric.svg'
+          - href: npm-package-management.md
+            html: <p>管理 npm 套件</p>
+            image:
+              src: 'https://docs.microsoft.com/media/logos/logo_npm.svg'
+          - href: debug-nodejs.md
+            html: <p>偵錯程式碼</p>
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_debug.svg'
+          - href: develop-javascript-code-without-solutions-projects.md
+            html: <p>不使用專案或方案來開發程式碼</p>
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_code-edit.svg'
+          - href: unit-testing-javascript-with-visual-studio.md
+            html: <p>撰寫和執行單元測試</p>
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_unit-testing.svg'

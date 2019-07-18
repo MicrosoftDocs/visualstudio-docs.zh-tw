@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugFrameInfo2::Reset
 ms.assetid: e149b559-f072-480b-9552-a452b147f3a8
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1ec86ba04ab65df2bccf1b6eb4e3de8fe36a01a3
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: fd2febc45121c5c3a5ef5a39b10800cd3f2bce7c
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56721546"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66350356"
 ---
 # <a name="ienumdebugframeinfo2reset"></a>IEnumDebugFrameInfo2::Reset
 將列舉重設第一個項目。

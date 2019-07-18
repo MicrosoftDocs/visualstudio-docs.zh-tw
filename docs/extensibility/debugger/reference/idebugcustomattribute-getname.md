@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugCustomAttribute::GetName
 ms.assetid: ba509cc5-5816-4925-a094-4c72d88c360c
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8ed12526422a38b7b3b629a0acafc019b2e94a5a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 3ed7abc9682d0a9f56c50fe7510ed3f276a6bf5a
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56718244"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66315198"
 ---
 # <a name="idebugcustomattributegetname"></a>IDebugCustomAttribute::GetName
 取得自訂屬性的名稱。
@@ -36,10 +39,9 @@ int GetName(
 );
 ```
 
-#### <a name="parameters"></a>參數
- `bstrName`
-
- [out]傳回字串，包含自訂屬性的名稱。
+## <a name="parameters"></a>參數
+`bstrName`\
+[out]傳回字串，包含自訂屬性的名稱。
 
 ## <a name="return-value"></a>傳回值
  如果成功，會傳回 S_OK;否則，傳回錯誤碼。

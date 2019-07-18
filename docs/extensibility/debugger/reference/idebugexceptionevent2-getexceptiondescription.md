@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugExceptionEvent2::GetExceptionDescription
 ms.assetid: d07d458f-5729-47e4-9b77-1bd59c61a75a
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 732ca932179cee48a3395e6cdb765c244f007d0f
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: cc13184328ce3a7cf09e6df20ee62162cb108b5b
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56680135"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66310549"
 ---
 # <a name="idebugexceptionevent2getexceptiondescription"></a>IDebugExceptionEvent2::GetExceptionDescription
 取得可顯示例外狀況的描述。
@@ -36,10 +39,9 @@ int GetExceptionDescription( 
 );
 ```
 
-#### <a name="parameters"></a>參數
- `pbstrDescription`
-
- [out]傳回可顯示例外狀況的描述。
+## <a name="parameters"></a>參數
+`pbstrDescription`\
+[out]傳回可顯示例外狀況的描述。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

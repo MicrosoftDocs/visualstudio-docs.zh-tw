@@ -9,23 +9,23 @@ caps.latest.revision: 33
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2568b04e999a1b887e918a07ff8233ea9bf289a1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 9a1601b855cfc895aa01c6b72cbbe36b59980bd5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54802374"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432892"
 ---
-# <a name="how-to-attach-the-profiler-to-a-net-service-to-collect-memory-data-by-using-the-command-line"></a>如何：使用命令列將程式碼剖析工具附加至 .NET 服務以收集記憶體資料
+# <a name="how-to-attach-the-profiler-to-a-net-service-to-collect-memory-data-by-using-the-command-line"></a>HOW TO：附加至.NET 服務以收集記憶體資料使用命令列的 Profiler
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 本主題描述如何使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 分析工具命令列工具將分析工具附加至 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 服務，並收集記憶體資料。 您可以收集記憶體配置數目和大小的相關資料，也可以收集記憶體物件存留期的相關資料。  
 
 > [!NOTE]
->  Windows 8 和 Windows Server 2012 增強式安全性功能需要的重大變更，會以 Visual Studio 分析工具在這些平台收集資料的方式表現。 Windows 市集應用程式也需要新的資料收集技術。 請參閱 [Windows 8 和 Windows Server 2012 應用程式的效能工具](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)。  
+> Windows 8 和 Windows Server 2012 增強式安全性功能需要的重大變更，會以 Visual Studio 分析工具在這些平台收集資料的方式表現。 Windows 市集應用程式也需要新的資料收集技術。 請參閱 [Windows 8 和 Windows Server 2012 應用程式的效能工具](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)。  
 
 > [!NOTE]
->  程式碼剖析工具的命令列工具位於 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 安裝目錄的 \Team Tools\Performance Tools 子目錄中。 在 64 位元電腦上，64 位元和 32 位元版本的工具都可以使用。 若要使用程式碼剖析工具命令列工具，必須將工具路徑加入至命令提示字元視窗的 PATH 環境變數，或將它加入至命令本身。 如需詳細資訊，請參閱[指定命令列工具的路徑](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)。  
+> 程式碼剖析工具的命令列工具位於 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 安裝目錄的 \Team Tools\Performance Tools 子目錄中。 在 64 位元電腦上，64 位元和 32 位元版本的工具都可以使用。 若要使用程式碼剖析工具命令列工具，必須將工具路徑加入至命令提示字元視窗的 PATH 環境變數，或將它加入至命令本身。 如需詳細資訊，請參閱[指定命令列工具的路徑](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)。  
 
  若要收集 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 服務的記憶體資料，請使用 [VSPerfCLREnv.cmd](../profiling/vsperfclrenv.md) 工具在裝載服務的電腦上初始化適當的環境變數。 電腦必須重新啟動，才能設定它進行分析。  
 
@@ -72,7 +72,7 @@ ms.locfileid: "54802374"
      您可以使用下列一或多個選項搭配 **/start:sample** 選項。  
 
    > [!NOTE]
-   >  **/User** 和 **/crosssession** 選項通常是服務的必要選項。  
+   > **/User** 和 **/crosssession** 選項通常是服務的必要選項。  
 
    |                                 選項                                  |                                                                                                                                                   描述                                                                                                                                                    |
    |-------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -84,21 +84,20 @@ ms.locfileid: "54802374"
    |         [/automark](../profiling/automark.md) **:** `Interval`          |                                                                                  只能搭配 **/wincounter** 使用。 指定 Windows 效能計數器收集事件間隔的毫秒數。 預設值為 500 毫秒。                                                                                   |
    |       [/events](../profiling/events-vsperfcmd.md) **:** `Config`        |                                                                                     指定程式碼剖析期間要收集的 Windows 事件追蹤 (ETW) 事件。 ETW 事件會收集至個別的 (.etl) 檔案。                                                                                     |
 
-
 8. 將程式碼剖析工具附加至服務。 類型：  
 
     **VSPerfCmd**  [/attach](../profiling/attach.md) **:**{`PID`&#124;`ProcName`} [[/targetclr](../profiling/targetclr.md)**:**`Version`]  
 
-   -   指定服務的處理序識別碼或處理序名稱。 您可以在 [Windows 工作管理員] 中檢視所有執行中處理序的處理序識別碼和名稱。  
+   - 指定服務的處理序識別碼或處理序名稱。 您可以在 [Windows 工作管理員] 中檢視所有執行中處理序的處理序識別碼和名稱。  
 
-   -   **targetclr:** `Version` 指定當應用程式載入多個版本的執行階段時要分析的 Common Language Runtime (CLR) 版本。 選擇性。  
+   - **targetclr:** `Version` 指定當應用程式載入多個版本的執行階段時要分析的 Common Language Runtime (CLR) 版本。 選擇性。  
 
 ## <a name="controlling-data-collection"></a>控制資料收集  
  當服務執行時，您可以使用 **VSPerfCmd.exe** 選項停止和開始將資料寫入至分析工具資料檔案。 控制資料收集可讓您收集特定程式執行 (例如啟動或關閉應用程式) 的資料。  
 
 #### <a name="to-start-and-stop-data-collection"></a>開始和停止資料收集  
 
--   下列成對的 **VSPerfCmd** 選項會開始和停止資料收集。 請在個別的命令列上指定各個選項。 您可以多次開始和停止資料收集。  
+- 下列成對的 **VSPerfCmd** 選項會開始和停止資料收集。 請在個別的命令列上指定各個選項。 您可以多次開始和停止資料收集。  
 
     |選項|描述|  
     |------------|-----------------|  
@@ -111,24 +110,24 @@ ms.locfileid: "54802374"
 
 #### <a name="to-end-a-profiling-session"></a>結束程式碼剖析工作階段  
 
-1.  執行下列其中一項動作，以從目標應用程式中斷連結分析工具：  
+1. 執行下列其中一項動作，以從目標應用程式中斷連結分析工具：  
 
-    -   停止服務。  
+    - 停止服務。  
 
          -或-  
 
-    -   輸入 **VSPerfCmd /detach**  
+    - 輸入 **VSPerfCmd /detach**  
 
-2.  關閉分析工具。 類型：  
+2. 關閉分析工具。 類型：  
 
      **VSPerfCmd /shutdown**  
 
-3.  (選擇性) 清除程式碼剖析環境變數。 類型：  
+3. (選擇性) 清除程式碼剖析環境變數。 類型：  
 
      **VSPerfClrEnv /globaloff**  
 
-4.  重新啟動電腦。  
+4. 重新啟動電腦。  
 
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [分析服務](../profiling/command-line-profiling-of-services.md)   
  [.NET 記憶體資料檢視](../profiling/dotnet-memory-data-views.md)

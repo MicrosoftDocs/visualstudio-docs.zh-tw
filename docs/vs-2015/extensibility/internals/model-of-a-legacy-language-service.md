@@ -1,26 +1,21 @@
 ---
 title: 舊版語言服務模型 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - language services, model
 ms.assetid: d8ae1c0c-ee3d-4937-a581-ee78d0499793
 caps.latest.revision: 21
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 76838d6beb5d24f7586ddd44f7bd5400dec4f355
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 27d51df6dd11509b86e6648d59978b87d9cd8a02
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51795177"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68157665"
 ---
 # <a name="model-of-a-legacy-language-service"></a>舊版語言服務模型
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -57,4 +52,3 @@ ms.locfileid: "51795177"
   
 ## <a name="see-also"></a>另請參閱  
  [自訂編輯器中的文件資料和文件檢視](../../extensibility/document-data-and-document-view-in-custom-editors.md)
-

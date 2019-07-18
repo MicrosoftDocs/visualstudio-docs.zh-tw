@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugStackFrame2 interface
 ms.assetid: bd212a6a-dcc6-4756-a77a-e8dfda38b104
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ce4112addee78c4df293bf49e1cb191e4bbcd18b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 72ee1190c3a1bf45807939c26dd0951cb5636203
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56703933"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66352082"
 ---
 # <a name="idebugstackframe2"></a>IDebugStackFrame2
 這個介面表示在特定執行緒的呼叫堆疊中的單一堆疊框架。

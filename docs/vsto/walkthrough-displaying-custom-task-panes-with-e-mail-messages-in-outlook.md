@@ -1,5 +1,5 @@
 ---
-title: 逐步解說：在 Outlook 中顯示自訂工作窗格與電子郵件訊息
+title: 在 Outlook 中顯示自訂工作窗格與電子郵件訊息
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 69c68397c8695fd0d9c3c1ef48a38e316c537641
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: fa86c07ba964ca918c7ad225d5152b31a2e1d9ae
+ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56606442"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "67328351"
 ---
 # <a name="walkthrough-display-custom-task-panes-with-email-messages-in-outlook"></a>逐步解說：在 Outlook 中顯示自訂工作窗格與電子郵件訊息
   本逐步解說示範如何顯示每個已建立或開啟的電子郵件訊息的自訂工作窗格的唯一執行個體。 使用者可以使用每則電子郵件訊息功能區上的按鈕，顯示或隱藏自訂工作窗格。
@@ -31,24 +31,24 @@ ms.locfileid: "56606442"
  若要顯示含有多個檔案總管或偵測器視窗的自訂工作窗格，您必須針對每一個開啟的視窗，建立該自訂工作窗格的執行個體。 自訂工作窗格，Outlook 視窗中的行為相關資訊，請參閱[自訂工作窗格](../vsto/custom-task-panes.md)。
 
 > [!NOTE]
->  本逐步解說會呈現一小部分的 VSTO 增益集程式碼，以便更容易討論程式碼背後的邏輯。
+> 本逐步解說會呈現一小部分的 VSTO 增益集程式碼，以便更容易討論程式碼背後的邏輯。
 
  這個逐步解說將說明下列工作：
 
--   設計自訂工作窗格的使用者介面 (UI)。
+- 設計自訂工作窗格的使用者介面 (UI)。
 
--   建立自訂功能區 UI。
+- 建立自訂功能區 UI。
 
--   顯示自訂功能區 UI 以電子郵件訊息。
+- 顯示自訂功能區 UI 以電子郵件訊息。
 
--   建立類別以管理偵測器視窗和自訂工作窗格。
+- 建立類別以管理偵測器視窗和自訂工作窗格。
 
--   初始化和清除 VSTO 增益集所使用的資源。
+- 初始化和清除 VSTO 增益集所使用的資源。
 
--   同步處理功能區切換按鈕和自訂工作窗格。
+- 同步處理功能區切換按鈕和自訂工作窗格。
 
 > [!NOTE]
->  在下列指示的某些 Visual Studio 使用者介面項目中，您的電腦可能會顯示不同的名稱或位置。 您所擁有的 Visual Studio 版本以及使用的設定會決定這些項目。 如需詳細資訊，請參閱[將 Visual Studio IDE 個人化](../ide/personalizing-the-visual-studio-ide.md)。
+> 在下列指示的某些 Visual Studio 使用者介面項目中，您的電腦可能會顯示不同的名稱或位置。 您所擁有的 Visual Studio 版本以及使用的設定會決定這些項目。 如需詳細資訊，請參閱[將 Visual Studio IDE 個人化](../ide/personalizing-the-visual-studio-ide.md)。
 
 ## <a name="prerequisites"></a>必要條件
  您需要下列元件才能完成此逐步解說：
@@ -64,56 +64,56 @@ ms.locfileid: "56606442"
 
 ### <a name="to-create-a-new-project"></a>建立新的專案
 
-1.  建立名為 **OutlookMailItemTaskPane** 的 [Outlook 增益集] 專案。 使用 [Outlook 增益集]  專案範本。 如需詳細資訊，請參閱[如何：在 Visual Studio 中建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)。
+1. 建立名為 **OutlookMailItemTaskPane** 的 [Outlook 增益集]  專案。 使用 [Outlook 增益集]  專案範本。 如需詳細資訊，請參閱[如何：在 Visual Studio 中建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)。
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 會開啟 *ThisAddIn.cs* 或 *ThisAddIn.vb* 程式碼檔，並將 [OutlookMailItemTaskPane]  專案加入 [方案總管] 。
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 會開啟 *ThisAddIn.cs* 或 *ThisAddIn.vb* 程式碼檔，並將 [OutlookMailItemTaskPane]  專案加入 [方案總管]  。
 
 ## <a name="design-the-user-interface-of-the-custom-task-pane"></a>設計自訂工作窗格的使用者介面
  自訂工作窗格沒有視覺化設計工具，但您可以透過 UI 來設計所需的使用者控制項。 這個 VSTO 增益集中的自訂工作窗格具有內含 <xref:System.Windows.Forms.TextBox> 控制項的簡單 UI。 稍後在本逐步解說中，您會將使用者控制項加入自訂工作窗格。
 
 ### <a name="to-design-the-user-interface-of-the-custom-task-pane"></a>設計自訂工作窗格的使用者介面
 
-1.  在 [方案總管] 中，按一下 [OutlookMailItemTaskPane]  專案。
+1. 在 [方案總管]  中，按一下 [OutlookMailItemTaskPane]  專案。
 
-2.  在 [專案]  功能表上，按一下 [加入使用者控制項] 。
+2. 在 [專案]  功能表上，按一下 [加入使用者控制項]  。
 
-3.  在 [加入新項目]  對話方塊中，將使用者控制項的名稱變更為 **TaskPaneControl**，然後按一下 [加入] 。
+3. 在 [加入新項目]  對話方塊中，將使用者控制項的名稱變更為 **TaskPaneControl**，然後按一下 [加入]  。
 
      使用者控制項隨即在設計工具中開啟。
 
-4.  從 [工具箱]  的 [通用控制項] 索引標籤，將 **TextBox** 控制項拖曳至使用者控制項。
+4. 從 [工具箱]  的 [通用控制項]  索引標籤，將 **TextBox** 控制項拖曳至使用者控制項。
 
 ## <a name="design-the-user-interface-of-the-ribbon"></a>設計功能區的使用者介面
  這個 VSTO 增益集的目標是授與使用者的方式來隱藏或顯示自訂工作窗格中，從功能區的每個電子郵件訊息。 若要提供使用者介面，請建立顯示切換按鈕的自訂功能區 UI，使用者可按一下該切換按鈕以顯示或隱藏自訂工作窗格。
 
 ### <a name="to-create-a-custom-ribbon-ui"></a>建立自訂功能區 UI
 
-1.  在 [專案]  功能表中，按一下 [加入新項目] 。
+1. 在 [專案]  功能表中，按一下 [加入新項目]  。
 
-2.  選取 [ **加入新項目** ] 對話方塊中的 [ **功能區 (視覺化設計工具)**]。
+2. 選取 [ **加入新項目** ] 對話方塊中的 [ **功能區 (視覺化設計工具)** ]。
 
-3.  將新功能區的名稱變更為 **ManageTaskPaneRibbon**，然後按一下 [加入] 。
+3. 將新功能區的名稱變更為 **ManageTaskPaneRibbon**，然後按一下 [加入]  。
 
      *ManageTaskPaneRibbon.cs* 或 *ManageTaskPaneRibbon.vb* 檔案會在功能區設計工具中開啟，並顯示預設的索引標籤和群組。
 
-4.  在功能區設計工具中，按一下 [group1] 。
+4. 在功能區設計工具中，按一下 [group1]  。
 
-5.  在 [屬性]  視窗中，將 [標籤]  屬性設定為「工作窗格管理員」 。
+5. 在 [屬性]  視窗中，將 [標籤]  屬性設定為「工作窗格管理員」  。
 
-6.  從 [工具箱]  的 [Office 功能區控制項] 索引標籤，將 ToggleButton 控制項拖曳至 [工作窗格管理員]  群組。
+6. 從 [工具箱]  的 [Office 功能區控制項]  索引標籤，將 ToggleButton 控制項拖曳至 [工作窗格管理員]  群組。
 
-7.  按一下 [toggleButton1] 。
+7. 按一下 [toggleButton1]  。
 
-8.  在 [屬性]  視窗中，將 [標籤]  屬性設定為「顯示工作窗格」 。
+8. 在 [屬性]  視窗中，將 [標籤]  屬性設定為「顯示工作窗格」  。
 
 ## <a name="display-the-custom-ribbon-user-interface-with-email-messages"></a>顯示與電子郵件訊息的自訂功能區使用者介面
  您在本逐步解說中建立的自訂工作窗格，會設計為僅與含有電子郵件訊息的偵測器視窗一起出現。 因此，請設定屬性，僅與這些視窗一起顯示您的自訂功能區 UI。
 
 ### <a name="to-display-the-custom-ribbon-ui-with-email-messages"></a>若要顯示與電子郵件訊息的自訂功能區 UI
 
-1.  在功能區設計工具中，按一下 [ManageTaskPaneRibbon]  功能區。
+1. 在功能區設計工具中，按一下 [ManageTaskPaneRibbon]  功能區。
 
-2.  在 [屬性]  視窗中，按一下 [RibbonType] 旁的下拉式清單，然後選取 [Microsoft.Outlook.Mail.Compose]  和 [Microsoft.Outlook.Mail.Read] 。
+2. 在 [屬性]  視窗中，按一下 [RibbonType]  旁的下拉式清單，然後選取 [Microsoft.Outlook.Mail.Compose]  和 [Microsoft.Outlook.Mail.Read]  。
 
 ## <a name="create-a-class-to-manage-inspector-windows-and-custom-task-panes"></a>建立類別以管理偵測器視窗和自訂工作窗格
  有幾種情況下在其中的 VSTO 增益集必須識別哪一個自訂工作窗格與特定電子郵件訊息相關聯。 這些情況包括：
@@ -128,34 +128,34 @@ ms.locfileid: "56606442"
 
 ### <a name="to-create-a-class-to-manage-inspector-windows-and-custom-task-panes"></a>若要建立類別以管理偵測器視窗和自訂工作窗格
 
-1.  在 [方案總管] 中，以滑鼠右鍵按一下 *ThisAddIn.cs* 或 *ThisAddIn.vb* 檔案，然後按一下 [檢視程式碼] 。
+1. 在 [方案總管]  中，以滑鼠右鍵按一下 *ThisAddIn.cs* 或 *ThisAddIn.vb* 檔案，然後按一下 [檢視程式碼]  。
 
-2.  在檔案最上方加入下列陳述式。
+2. 在檔案最上方加入下列陳述式。
 
      [!code-csharp[Trin_OutlookMailItemTaskPane#2](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs#2)]
      [!code-vb[Trin_OutlookMailItemTaskPane#2](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb#2)]
 
-3.  將下列程式碼加入 *類別之外的* ThisAddIn.cs *或* ThisAddIn.vb `ThisAddIn` 檔案 (若為 Visual C#，則將這個程式碼加入 `OutlookMailItemTaskPane` 命名空間內)。 `InspectorWrapper` 類別會管理一組 <xref:Microsoft.Office.Interop.Outlook.Inspector> 和 <xref:Microsoft.Office.Tools.CustomTaskPane> 物件。 您會在下列步驟中完成這個類別的定義。
+3. 將下列程式碼加入 *類別之外的* ThisAddIn.cs *或* ThisAddIn.vb `ThisAddIn` 檔案 (若為 Visual C#，則將這個程式碼加入 `OutlookMailItemTaskPane` 命名空間內)。 `InspectorWrapper` 類別會管理一組 <xref:Microsoft.Office.Interop.Outlook.Inspector> 和 <xref:Microsoft.Office.Tools.CustomTaskPane> 物件。 您會在下列步驟中完成這個類別的定義。
 
      [!code-csharp[Trin_OutlookMailItemTaskPane#3](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs#3)]
      [!code-vb[Trin_OutlookMailItemTaskPane#3](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb#3)]
 
-4.  將下列建構函式加入您在上一個步驟中加入的程式碼之後。 這個建構函式會建立並初始化與所傳入 <xref:Microsoft.Office.Interop.Outlook.Inspector> 物件相關聯的新自訂工作窗格。 在 C# 中，這個建構函式也會將事件處理常式附加至 <xref:Microsoft.Office.Interop.Outlook.InspectorEvents_Event.Close> 物件的 <xref:Microsoft.Office.Interop.Outlook.Inspector> 事件，以及 <xref:Microsoft.Office.Tools.CustomTaskPane.VisibleChanged> 物件的 <xref:Microsoft.Office.Tools.CustomTaskPane> 事件。
+4. 將下列建構函式加入您在上一個步驟中加入的程式碼之後。 這個建構函式會建立並初始化與所傳入 <xref:Microsoft.Office.Interop.Outlook.Inspector> 物件相關聯的新自訂工作窗格。 在 C# 中，這個建構函式也會將事件處理常式附加至 <xref:Microsoft.Office.Interop.Outlook.InspectorEvents_Event.Close> 物件的 <xref:Microsoft.Office.Interop.Outlook.Inspector> 事件，以及 <xref:Microsoft.Office.Tools.CustomTaskPane.VisibleChanged> 物件的 <xref:Microsoft.Office.Tools.CustomTaskPane> 事件。
 
      [!code-csharp[Trin_OutlookMailItemTaskPane#4](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs#4)]
      [!code-vb[Trin_OutlookMailItemTaskPane#4](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb#4)]
 
-5.  將下列方法加入您在上一個步驟中加入的程式碼之後。 對於 <xref:Microsoft.Office.Tools.CustomTaskPane.VisibleChanged> 類別內含之 <xref:Microsoft.Office.Tools.CustomTaskPane> 物件的 `InspectorWrapper` 事件而言，這個方法為其事件處理常式。 每當使用者開啟或關閉自訂工作窗格時，這個程式碼就會更新切換按鈕的狀態。
+5. 將下列方法加入您在上一個步驟中加入的程式碼之後。 對於 <xref:Microsoft.Office.Tools.CustomTaskPane.VisibleChanged> 類別內含之 <xref:Microsoft.Office.Tools.CustomTaskPane> 物件的 `InspectorWrapper` 事件而言，這個方法為其事件處理常式。 每當使用者開啟或關閉自訂工作窗格時，這個程式碼就會更新切換按鈕的狀態。
 
      [!code-csharp[Trin_OutlookMailItemTaskPane#5](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs#5)]
      [!code-vb[Trin_OutlookMailItemTaskPane#5](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb#5)]
 
-6.  將下列方法加入您在上一個步驟中加入的程式碼之後。 這個方法是事件處理常式<xref:Microsoft.Office.Interop.Outlook.InspectorEvents_Event.Close>事件的<xref:Microsoft.Office.Interop.Outlook.Inspector>物件，包含目前的電子郵件訊息。 關閉電子郵件訊息時，事件處理常式就會釋放資源。 這個事件處理常式也會從 `CustomTaskPanes` 集合中移除目前的自訂工作窗格。 這有助於防止自訂工作窗格的多個執行個體，開啟下一步 的電子郵件訊息時。
+6. 將下列方法加入您在上一個步驟中加入的程式碼之後。 這個方法是事件處理常式<xref:Microsoft.Office.Interop.Outlook.InspectorEvents_Event.Close>事件的<xref:Microsoft.Office.Interop.Outlook.Inspector>物件，包含目前的電子郵件訊息。 關閉電子郵件訊息時，事件處理常式就會釋放資源。 這個事件處理常式也會從 `CustomTaskPanes` 集合中移除目前的自訂工作窗格。 這有助於防止自訂工作窗格的多個執行個體，開啟下一步 的電子郵件訊息時。
 
      [!code-csharp[Trin_OutlookMailItemTaskPane#6](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs#6)]
      [!code-vb[Trin_OutlookMailItemTaskPane#6](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb#6)]
 
-7.  將下列程式碼加入您在上一個步驟中加入的程式碼之後。 稍後在本逐步解說中，您將在自訂功能區 UI 中從某個方法呼叫這個屬性，以顯示或隱藏自訂工作窗格。
+7. 將下列程式碼加入您在上一個步驟中加入的程式碼之後。 稍後在本逐步解說中，您將在自訂功能區 UI 中從某個方法呼叫這個屬性，以顯示或隱藏自訂工作窗格。
 
      [!code-csharp[Trin_OutlookMailItemTaskPane#7](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs#7)]
      [!code-vb[Trin_OutlookMailItemTaskPane#7](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb#7)]
@@ -201,23 +201,23 @@ ms.locfileid: "56606442"
 
 ### <a name="to-build-your-project"></a>建置您的專案
 
-1.  在 [方案總管] 中，以滑鼠右鍵按一下 [OutlookMailItemTaskPane]  專案，然後按一下 [建置] 。 確認專案編譯無誤。
+1. 在 [方案總管]  中，以滑鼠右鍵按一下 [OutlookMailItemTaskPane]  專案，然後按一下 [建置]  。 確認專案編譯無誤。
 
 ## <a name="synchronize-the-ribbon-toggle-button-with-the-custom-task-pane"></a>自訂工作窗格與同步處理功能區切換按鈕
  當工作窗格可見時，切換按鈕會呈現已按下狀態；當工作窗格隱藏時，切換按鈕會呈現未按下狀態。 若要同步處理按鈕和自訂工作窗格的狀態，請修改切換按鈕的 <xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton.Click> 事件處理常式。
 
 ### <a name="to-synchronize-the-custom-task-pane-with-the-toggle-button"></a>同步處理自訂工作窗格和切換按鈕
 
-1.  在功能區設計工具中，按兩下 [顯示工作窗格]  切換按鈕。
+1. 在功能區設計工具中，按兩下 [顯示工作窗格]  切換按鈕。
 
      Visual Studio 會自動產生名為 `toggleButton1_Click`的事件處理常式，以處理切換按鈕的 <xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton.Click> 事件。 Visual Studio 也會在程式碼編輯器中開啟 *ManageTaskPaneRibbon.cs* 或 *ManageTaskPaneRibbon.vb* 檔案。
 
-2.  將下列陳述式加入 *ManageTaskPaneRibbon.cs* 或 *ManageTaskPaneRibbon.vb* 檔案的頂端。
+2. 將下列陳述式加入 *ManageTaskPaneRibbon.cs* 或 *ManageTaskPaneRibbon.vb* 檔案的頂端。
 
      [!code-csharp[Trin_OutlookMailItemTaskPane#14](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ManageTaskPaneRibbon.cs#14)]
      [!code-vb[Trin_OutlookMailItemTaskPane#14](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ManageTaskPaneRibbon.vb#14)]
 
-3.  以下列程式碼取代 `toggleButton1_Click` 事件處理常式。 當使用者按一下切換按鈕時，這個方法會隱藏或顯示與目前偵測器視窗相關聯的自訂工作窗格。
+3. 以下列程式碼取代 `toggleButton1_Click` 事件處理常式。 當使用者按一下切換按鈕時，這個方法會隱藏或顯示與目前偵測器視窗相關聯的自訂工作窗格。
 
      [!code-csharp[Trin_OutlookMailItemTaskPane#15](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ManageTaskPaneRibbon.cs#15)]
      [!code-vb[Trin_OutlookMailItemTaskPane#15](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ManageTaskPaneRibbon.vb#15)]
@@ -243,7 +243,7 @@ ms.locfileid: "56606442"
 
 6. 再按一次 [顯示工作窗格]  按鈕。
 
-    確認工作窗格會開啟，而且文字方塊仍含有「第一個工作窗格」 字串。
+    確認工作窗格會開啟，而且文字方塊仍含有「第一個工作窗格」  字串。
 
 7. 在 Outlook 中，按一下**新增**以建立第二個電子郵件訊息。
 
@@ -262,11 +262,11 @@ ms.locfileid: "56606442"
 ## <a name="next-steps"></a>後續步驟
  您可以透過下列主題，進一步了解如何建立自訂工作窗格：
 
--   建立自訂工作窗格中的 VSTO 增益集不同的應用程式。 如需支援自訂工作窗格應用程式的詳細資訊，請參閱[自訂工作窗格](../vsto/custom-task-panes.md)。
+- 建立自訂工作窗格中的 VSTO 增益集不同的應用程式。 如需支援自訂工作窗格應用程式的詳細資訊，請參閱[自訂工作窗格](../vsto/custom-task-panes.md)。
 
--   使用自訂工作窗格自動化 Microsoft Office 應用程式。 如需詳細資訊，請參閱[逐步解說：自動化運用自訂工作窗格應用程式](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md)。
+- 使用自訂工作窗格自動化 Microsoft Office 應用程式。 如需詳細資訊，請參閱[逐步解說：自動化運用自訂工作窗格應用程式](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md)。
 
--   在 Excel 中，建立可用來隱藏或顯示自訂工作窗格的功能區按鈕。 如需詳細資訊，請參閱[逐步解說：與功能區按鈕同步處理自訂工作窗格](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md)。
+- 在 Excel 中，建立可用來隱藏或顯示自訂工作窗格的功能區按鈕。 如需詳細資訊，請參閱[逐步解說：與功能區按鈕同步處理自訂工作窗格](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md)。
 
 ## <a name="see-also"></a>另請參閱
 - [自訂工作窗格](../vsto/custom-task-panes.md)

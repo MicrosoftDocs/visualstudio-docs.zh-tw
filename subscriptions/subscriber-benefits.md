@@ -2,23 +2,22 @@
 title: Visual Studio 訂用帳戶 - 訂閱者權益
 author: evanwindom
 ms.author: jaunger
-manager: evelynp
-ms.date: 02/12/2018
+manager: lank
+ms.date: 06/28/2019
 ms.topic: conceptual
 description: 了解有關您的 Visual Studio 訂用帳戶中包含的權益
-searchscope: VS Subscription
-ms.openlocfilehash: c7616bc468aad5b4753fb3a05652f976bae6299b
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 1677b280723fd3b2302dcc0c987c09fda5e4ec9b
+ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56839704"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67784840"
 ---
 # <a name="benefits-included-in-your-visual-studio-subscription"></a>您的 Visual Studio 訂用帳戶中包含的權益
 
-Visual Studio 訂用帳戶 提供最全面的一組資源，可供您在 Windows、iOS、Android 與 Linux 等慣用平台及裝置上，建立、部署及管理絕佳的應用程式。  特定的權益會視您擁有的訂用帳戶類型而不同。  為了提供訂閱者最大價值，根據我們調整專注於最新且最有用的技術、訓練教材，及可用的夥伴權益，提供的權益每隔一段時間會隨上述項目變更。
+Visual Studio 訂用帳戶 (前身為 MSDN 訂用帳戶) 提供最全面的資源集，供您在 Windows、iOS、Android 與 Linux 等慣用的平台及裝置上，建立、部署及管理絕佳的應用程式。  特定的權益會視您擁有的訂用帳戶類型而不同。  為了提供訂閱者最大價值，根據我們調整專注於最新且最有用的技術、訓練教材，及可用的夥伴權益，提供的權益每隔一段時間會隨上述項目變更。
 
-權益分為三個類別：
+[訂閱者入口網站](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs:)中的權益分為三個類別。
 
 ## <a name="tools"></a>工具
 「工具」類別提供各種權益的存取權，包括 [Visual Studio IDE](vs-ide-benefit.md)、[Azure DevOps Services](vs-azure-devops.md) 和 [Azure](vs-azure.md) 等旗艦級權益。  視您的訂用帳戶層級而定，您也會看到 Windows 和 Office 365 開發人員帳戶、Visual Studio App Center，以及來自 WhiteSource Bolt 和 ModernRequirements 等夥伴的權益。
@@ -30,7 +29,7 @@ Visual Studio 訂用帳戶 提供最全面的一組資源，可供您在 Windows
 - 由 Pluralsight 提供的適用於 .Net 開發人員的 Microsoft Azure 與其他絕佳內容
 - 由 DataCamp 提供的適用於開發人員的資料科學
 - 由 Microsoft Virtual Academy 提供的設計適用於 SQL Server 的資料庫解決方案
-- LinkedIn Learning 提供您邁向成功的人員、深入解析和技能。
+- LinkedIn Learning 讓您接觸各界人士、深入解析和您需要專精的技能。
 
 ## <a name="support"></a>支援
 身為 Visual Studio 訂閱者，您也擁有各種類型支援的存取權，以防您有疑問或需要技術協助。

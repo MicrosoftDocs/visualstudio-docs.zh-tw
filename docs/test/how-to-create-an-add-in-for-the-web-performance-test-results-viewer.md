@@ -9,24 +9,24 @@ ms.assetid: 1118c604-4b1b-4b21-a04e-45995b676fa8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d9434ac138f848442a32986d85ae816bb8d78e71
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b8548fb33e5a4b9156701e12231324e3f59c88f2
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55946937"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747237"
 ---
-# <a name="how-to-create-a-visual-studio-add-in-for-the-web-performance-test-results-viewer"></a>HOW TO：建立 Web 效能測試結果檢視器的 Visual Studio 增益集
+# <a name="how-to-create-an-add-in-for-the-web-performance-test-results-viewer"></a>作法：建立 Web 效能測試結果檢視器的增益集
 
-您可以使用下列命名空間來擴充 [Web 效能測試結果檢視器] 的 UI：
+您可以使用下列命名空間來擴充 [Web 效能測試結果檢視器]  的 UI：
 
--   <xref:Microsoft.VisualStudio.TestTools.LoadTesting>
+- <xref:Microsoft.VisualStudio.TestTools.LoadTesting>
 
--   <xref:Microsoft.VisualStudio.TestTools.WebTesting>
+- <xref:Microsoft.VisualStudio.TestTools.WebTesting>
 
-此外，您必須新增 LoadTestPackage DLL 的參考，這個檔案位於 *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\PrivateAssemblies* 資料夾中。
+此外，您必須新增 LoadTestPackage DLL 的參考，這個檔案位於 *%ProgramFiles(x86)%\Microsoft Visual Studio\\\<version>\Enterprise\Common7\IDE\PrivateAssemblies* 資料夾中。
 
-若要擴充 [Web 效能測試結果檢視器] 的 UI，您必須建立 Visual Studio 增益集和使用者控制項。 下列程序將說明如何建立增益集、使用者控制項，以及如何實作必要的類別，以便擴充 [Web 效能測試結果檢視器] 的 UI。
+若要擴充 [Web 效能測試結果檢視器]  的 UI，您必須建立 Visual Studio 增益集和使用者控制項。 下列程序將說明如何建立增益集、使用者控制項，以及如何實作必要的類別，以便擴充 [Web 效能測試結果檢視器]  的 UI。
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
@@ -41,70 +41,62 @@ ms.locfileid: "55946937"
 
 ## <a name="create-a-visual-studio-add-in"></a>建立 Visual Studio 增益集
 
-增益集是編譯過的 DLL，可以在 Visual Studio 整合式開發環境 (IDE) 中執行。 編譯有助於保護您的智慧財產並且改進效能。 雖然您可以用手動方式建立增益集，但是使用 [增益集精靈] 要簡單許多。 這個精靈會建立基本但實用的增益集，建立完成之後便可立即執行。 當 [增益集精靈] 產生基本程式之後，您就可以加入程式碼並且進行自訂。
+增益集是編譯過的 DLL，可以在 Visual Studio 整合式開發環境 (IDE) 中執行。 編譯有助於保護您的智慧財產並且改進效能。 雖然您可以用手動方式建立增益集，但是使用 [增益集精靈]  要簡單許多。 這個精靈會建立基本但實用的增益集，建立完成之後便可立即執行。 當 [增益集精靈]  產生基本程式之後，您就可以加入程式碼並且進行自訂。
 
- [增益集精靈] 可讓您提供增益集的顯示名稱和描述。 這兩項資訊都會顯示在 [增益集管理員] 中。 您可以選擇由精靈產生程式碼，將開啟增益集的命令新增至 [工具] 功能表， 也可以選擇顯示增益集的自訂 [關於] 對話方塊。 當精靈完成時，您就會擁有一個新專案，其中僅包含一個實作增益集的類別。 該類別名為 Connect。
+ [增益集精靈]  可讓您提供增益集的顯示名稱和描述。 這兩項資訊都會顯示在 [增益集管理員]  中。 您可以選擇由精靈產生程式碼，將開啟增益集的命令新增至 [工具]  功能表， 也可以選擇顯示增益集的自訂 [關於]  對話方塊。 當精靈完成時，您就會擁有一個新專案，其中僅包含一個實作增益集的類別。 該類別名為 Connect。
 
- 您將在本文的結尾使用 [增益集管理員]。
+ 您將在本文的結尾使用 [增益集管理員]  。
 
 ### <a name="to-create-an-add-in-by-using-the-add-in-wizard"></a>若要使用增益集精靈建立增益集
 
-1. 在 [方案總管] 中，以滑鼠右鍵按一下方案，選擇 [新增]，然後選取 [新增專案]。
+1. 在 [方案總管]  中，以滑鼠右鍵按一下方案，選擇 [新增]  ，然後選取 [新增專案]  。
 
-    [新增專案] 對話方塊隨即出現。
+2. 建立新的 **Visual Studio 增益集**專案。
 
-2. 展開 [已安裝的範本] 底下的 [其他專案類型]，然後選取 [擴充性]。
+    Visual Studio [增益集精靈]  隨即啟動。
 
-3. 在範本的清單中，選取 [Visual Studio 增益集]。
+3. 選擇 [下一步]  。
 
-4. 在 [名稱] 底下，鍵入增益集的名稱。 例如，**WebPerfTestResultsViewerAddin**。
-
-5. 選擇 [確定] 。
-
-    Visual Studio [增益集精靈] 隨即啟動。
-
-6. 選擇 [下一步]。
-
-7. 在 [選取程式設計語言] 頁面上，選取您要用來撰寫增益集的程式設計語言。
+4. 在 [選取程式設計語言]  頁面上，選取您要用來撰寫增益集的程式設計語言。
 
    > [!NOTE]
    > 本主題將針對範例程式碼使用 Visual C#。
 
-8. 在 [選擇主應用程式] 頁面上，選取 [Visual Studio] 並清除 [Visual Studio 巨集]。
+5. 在 [選擇主應用程式]  頁面上，選取 [Visual Studio]  並清除 [Visual Studio 巨集]  。
 
-9. 選擇 [下一步]。
+6. 選擇 [下一步]  。
 
-10. 在 [輸入名稱和描述] 頁面中，鍵入增益集的名稱和描述。
+7. 在 [輸入名稱和描述]  頁面中，鍵入增益集的名稱和描述。
 
-     建立增益集之後，其名稱和描述會顯示在 [增益集管理員] 的 [可用的增益集] 清單中。 您可以為增益集加入詳細的描述資料，讓使用者了解增益集的功能、運作方式等。
+     建立增益集之後，其名稱和描述會顯示在 [增益集管理員]  的 [可用的增益集]  清單中。 您可以為增益集加入詳細的描述資料，讓使用者了解增益集的功能、運作方式等。
 
-11. 選擇 [下一步]。
+8. 選擇 [下一步]  。
 
-12. 在 [選擇增益集選項] 頁面上，選取 [當主應用程式啟動時載入增益集]。
+9. 在 [選擇增益集選項]  頁面上，選取 [當主應用程式啟動時載入增益集]  。
 
-13. 清除其餘核取方塊。
+10. 清除其餘核取方塊。
 
-14. 在 [[關於] 對話方塊資訊選擇] 頁面上，您可以指定是否要將增益集的相關資訊顯示在 [關於] 對話方塊中。 如果您想要顯示這項資訊，請選取 [是，我希望增益集可以提供 [關於] 對話方塊資訊] 核取方塊。
+11. 在 [[關於] 對話方塊資訊選擇]  頁面上，您可以指定是否要將增益集的相關資訊顯示在 [關於]  對話方塊中。 如果您想要顯示這項資訊，請選取 [是，我希望增益集可以提供 [關於] 對話方塊資訊]  核取方塊。
 
-     可新增至 Visual Studio [關於] 對話方塊的資訊包括版本號碼、支援詳細資料、授權資料等等。
+     可新增至 Visual Studio [關於]  對話方塊的資訊包括版本號碼、支援詳細資料、授權資料等等。
 
-15. 選擇 [下一步]。
+12. 選擇 [下一步]  。
 
-16. 您所選取的選項就會顯示在 [摘要] 頁面上，供您檢閱。 如果您對設定感到滿意，請選擇 [完成] 建立增益集。 如果您想要變更某些設定，請選擇 [上一頁] 按鈕。
+13. 您所選取的選項就會顯示在 [摘要]  頁面上，供您檢閱。 如果您對設定感到滿意，請選擇 [完成]  建立增益集。 如果您想要變更某些設定，請選擇 [上一頁]  按鈕。
 
-     此時，系統已建立新的方案和專案，而且新增益集的 *Connect.cs* 檔案會顯示在 [程式碼編輯器] 中。
+     此時，系統已建立新的方案和專案，而且新增益集的 *Connect.cs* 檔案會顯示在 [程式碼編輯器]  中。
 
      完成下列程序之後，您會將程式碼加入至 *Connect.cs* 檔案，以便建立這個 WebPerfTestResultsViewerAddin 專案所參考的使用者控制項。
 
-    建立增益集之後，您必須先將向 Visual Studio 註冊，才能在 [增益集管理員] 中啟動該增益集。 使用具有 *.addin* 副檔名的 XML 檔，即可完成這項作業。
+    建立增益集之後，您必須先將向 Visual Studio 註冊，才能在 [增益集管理員]  中啟動該增益集。 使用具有 *.addin* 副檔名的 XML 檔，即可完成這項作業。
 
-    *.addin* 檔案會描述 Visual Studio 將增益集顯示在 [增益集管理員] 中所需的資訊。 當 Visual Studio 啟動時，它會查看 *.addin* 檔案位置，以尋找可用的 *.addin* 檔案。 如果找到檔案，就會讀取 XML 檔案，並將按一下以啟動增益集時所需的資訊提供給 [增益集管理員]。
+    *.addin* 檔案會描述 Visual Studio 將增益集顯示在 [增益集管理員]  中所需的資訊。 當 Visual Studio 啟動時，它會查看 *.addin* 檔案位置，以尋找可用的 *.addin* 檔案。 如果找到檔案，就會讀取 XML 檔案，並將按一下以啟動增益集時所需的資訊提供給 [增益集管理員]  。
 
-    使用 [增益集精靈] 建立增益集時，會自動建立 *.addin* 檔案。
+    使用 [增益集精靈]  建立增益集時，會自動建立 *.addin* 檔案。
 
 ### <a name="add-in-file-locations"></a>增益集檔案位置
 
-[增益集精靈] 會自動建立兩個 *.addin* 檔案的複本，如下所示：
+[增益集精靈]  會自動建立兩個 *.addin* 檔案的複本，如下所示：
 
 |**.Addin 檔案位置**|**描述**|
 |-|----------------------------|-|
@@ -117,50 +109,37 @@ ms.locfileid: "55946937"
 
 ### <a name="to-create-a-control-to-be-used-in-the-web-test-results-viewer"></a>若要建立要用於 Web 測試結果檢視器的控制項
 
-1.  在 [方案總管] 中，以滑鼠右鍵按一下方案，選擇 [新增]，然後選取 [新增專案]。
+1. 在 [方案總管]  中，以滑鼠右鍵按一下方案，選擇 [新增]  ，然後選取 [新增專案]  。
 
-     [新增專案] 對話方塊隨即出現。
+2. 建立新的 **Windows Forms 控制項程式庫**專案。
 
-2.  在 [已安裝的範本] 底下，展開 [Visual Basic] 或 [Visual C#]，然後選取 [Windows]。
+3. 從 [工具箱]  中，將 <xref:System.Windows.Forms.DataGridView> 拖曳至 userControl1 的介面上。
 
-    > [!NOTE]
-    > 本主題將針對範例程式碼使用 Visual C#。
+4. 按一下 <xref:System.Windows.Forms.DataGridView> 右上角的動作標籤字符 (![智慧標籤字符](../test/media/vs_winformsmttagglyph.gif))，然後依照下列步驟進行操作：
 
-3.  在範本的清單中，選取 [Windows Form 控制項程式庫]。
+    1. 選擇 [停駐於父容器中]  。
 
-4.  在 [名稱] 底下，鍵入增益集的名稱。 例如，**WebPerfTestResultsViewerControl**。
+    2. 清除下列核取方塊：[啟用新增]  、[啟用編輯]  、[啟用刪除]  和 [啟用資料行重新調整順序]  。
 
-5.  選擇 [確定] 。
+    3. 選擇 [新增資料行]  。
 
-     Windows Form 控制項程式庫專案 WebPerfTestResultsViewerControl 就會加入至 [方案總管]，而且 *UserControl1.cs* 會以設計模式顯示。
+         [新增資料行]  對話方塊隨即顯示。
 
-6.  從 [工具箱] 中，將 <xref:System.Windows.Forms.DataGridView> 拖曳至 userControl1 的介面上。
+    4. 在 [類型]  下拉式清單中，選取 **DataGridViewTextBoxColumn**。
 
-7.  按一下 <xref:System.Windows.Forms.DataGridView> 右上角的動作標籤字符 (![智慧標籤字符](../test/media/vs_winformsmttagglyph.gif))，然後依照下列步驟進行操作：
+    5. 清除 [標題文字]  中的文字 "Column1"。
 
-    1.  選擇 [停駐於父容器中]。
+    6. 選擇 [新增]  。
 
-    2.  清除下列核取方塊：[啟用新增]、[啟用編輯]、[啟用刪除] 和 [啟用資料行重新調整順序]。
+    7. 選擇 [關閉]  。
 
-    3.  選擇 [新增資料行]。
+5. 在 [屬性]  視窗中，將 <xref:System.Windows.Forms.DataGridView> 的 [(名稱)]  屬性變更為 **resultControlDataGridView**。
 
-         [新增資料行] 對話方塊隨即顯示。
+6. 以滑鼠右鍵按一下設計介面，然後選取 [檢視程式碼]  。
 
-    4.  在 [類型] 下拉式清單中，選取 **DataGridViewTextBoxColumn**。
+     *UserControl1.cs* 檔案就會顯示在 [程式碼編輯器]  中。
 
-    5.  清除 [標題文字] 中的文字 "Column1"。
-
-    6.  選擇 [新增]。
-
-    7.  選擇 [關閉]。
-
-8.  在 [屬性] 視窗中，將 <xref:System.Windows.Forms.DataGridView> 的 [(名稱)] 屬性變更為 **resultControlDataGridView**。
-
-9. 以滑鼠右鍵按一下設計介面，然後選取 [檢視程式碼]。
-
-     *UserControl1.cs* 檔案就會顯示在 [程式碼編輯器] 中。
-
-10. 將具現化 <xref:System.Windows.Forms.UserControl> 類別的名稱從 UserContro1 變更為 resultControl：
+7. 將具現化 <xref:System.Windows.Forms.UserControl> 類別的名稱從 UserContro1 變更為 resultControl：
 
     ```csharp
     namespace WebPerfTestResultsViewerControl
@@ -179,31 +158,29 @@ ms.locfileid: "55946937"
 
 ## <a name="add-code-to-the-webperftestresultsvieweraddin"></a>將程式碼加入至 WebPerfTestResultsViewerAddin
 
-### <a name="to-add-code-to-the-visual-studio-add-in-to-extend-the-web-test-results-viewer"></a>若要將程式碼加入至 Visual Studio 增益集以擴充 Web 測試結果檢視器
+1. 在 [方案總管]  中，以滑鼠右鍵按一下 WebPerfTestResultsViewerAddin 專案中的 [參考]  節點，然後選取 [新增參考]  。
 
-1.  在 [方案總管] 中，以滑鼠右鍵按一下 WebPerfTestResultsViewerAddin 專案中的 [參考] 節點，然後選取 [新增參考]。
+2. 在 [新增參考]  對話方塊中，選擇 [.NET]  索引標籤。
 
-2.  在 [新增參考] 對話方塊中，選擇 [.NET] 索引標籤。
+3. 向下捲動並選取 **Microsoft.VisualStudio.QualityTools.WebTestFramework** 和 **System.Windows.Forms**。
 
-3.  向下捲動並選取 **Microsoft.VisualStudio.QualityTools.WebTestFramework** 和 **System.Windows.Forms**。
+4. 選擇 [確定]  。
 
-4.  選擇 [確定] 。
+5. 再次以滑鼠右鍵按一下 [參考]  節點，然後選取 [新增參考]  。
 
-5.  再次以滑鼠右鍵按一下 [參考] 節點，然後選取 [新增參考]。
+6. 在 [新增參考]  對話方塊中，選擇 [瀏覽]  索引標籤。
 
-6.  在 [新增參考] 對話方塊中，選擇 [瀏覽] 索引標籤。
+7. 選擇 [查詢]  下拉式清單並巡覽至 *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\PrivateAssemblies*，然後選取 *Microsoft.VisualStudio.QualityTools.LoadTestPackage.dll* 檔案。
 
-7.  選擇 [查詢] 下拉式清單並巡覽至 *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\PrivateAssemblies*，然後選取 *Microsoft.VisualStudio.QualityTools.LoadTestPackage.dll* 檔案。
+8. 選擇 [確定]  。
 
-8.  選擇 [確定] 。
+9. 以滑鼠右鍵按一下 WebPerfTestResultsViewerAddin 專案節點，然後選取 [新增參考]  。
 
-9. 以滑鼠右鍵按一下 WebPerfTestResultsViewerAddin 專案節點，然後選取 [新增參考]。
+10. 在 [新增參考]  對話方塊中，選擇 [專案]  索引標籤。
 
-10. 在 [新增參考] 對話方塊中，選擇 [專案] 索引標籤。
+11. 在 [專案名稱]  底下，選取 **WebPerfTestResultsViewerControl** 專案，然後選擇 [確定]  。
 
-11. 在 [專案名稱] 底下，選取 **WebPerfTestResultsViewerControl** 專案，然後選擇 [確定]。
-
-12. 如果 *Connect.cs* 檔案仍未開啟，請在 [方案總管] 中，以滑鼠右鍵按一下 WebPerfTestResultsViewerAddin 專案中的 **Connect.cs** 檔案，然後選取 [檢視程式碼]。
+12. 如果 *Connect.cs* 檔案仍未開啟，請在 [方案總管]  中，以滑鼠右鍵按一下 WebPerfTestResultsViewerAddin 專案中的 **Connect.cs** 檔案，然後選取 [檢視程式碼]  。
 
 13. 在 *Connect.cs* 檔案中，加入下列 Using 陳述式：
 
@@ -216,7 +193,7 @@ ms.locfileid: "55946937"
     using WebPerfTestResultsViewerControl;
     ```
 
-14. 向下捲動至 *Connect.cs* 檔案的底部。 您必須針對 <xref:System.Windows.Forms.UserControl> 加入 GUID 清單，以防開啟多個 [Web 效能測試結果檢視器] 執行個體。 您稍後將會加入使用這份清單的程式碼。
+14. 向下捲動至 *Connect.cs* 檔案的底部。 您必須針對 <xref:System.Windows.Forms.UserControl> 加入 GUID 清單，以防開啟多個 [Web 效能測試結果檢視器]  執行個體。 您稍後將會加入使用這份清單的程式碼。
 
      第二份字串清單會用於您稍後編寫程式碼的 OnDiscconection 方法。
 
@@ -227,7 +204,7 @@ ms.locfileid: "55946937"
     private Dictionary<Guid, List<UserControl>> m_controls = new Dictionary<Guid, List<UserControl>>();        private List<string> temporaryFilePaths = new List<string>();
     ```
 
-15. *Connect.cs* 檔案會根據 <xref:Extensibility.IDTExtensibility2> 類別具現化名為 Connect 的類別，而且也包括一些用於實作 Visual Studio 增益集的方法。 其中一個方法是 OnConnection 方法，這個方法會接收載入增益集的通知。 在 OnConnection 方法中，您將會使用 LoadTestPackageExt 類別來建立 [Web 效能測試結果檢視器] 的擴充性套件。 將下列程式碼新增至 OnConnection 方法：
+15. *Connect.cs* 檔案會根據 <xref:Extensibility.IDTExtensibility2> 類別具現化名為 Connect 的類別，而且也包括一些用於實作 Visual Studio 增益集的方法。 其中一個方法是 OnConnection 方法，這個方法會接收載入增益集的通知。 在 OnConnection 方法中，您將會使用 LoadTestPackageExt 類別來建立 [Web 效能測試結果檢視器]  的擴充性套件。 將下列程式碼新增至 OnConnection 方法：
 
     ```csharp
     public void OnConnection(object application, ext_ConnectMode connectMode, object addInInst, ref Array custom)
@@ -277,30 +254,28 @@ ms.locfileid: "55946937"
 
 ## <a name="add-code-to-the-webperftestresultsviewercontrol"></a>將程式碼加入至 WebPerfTestResultsViewerControl
 
-### <a name="to-add-code-to-the-user-control"></a>若要將程式碼加入至使用者控制項
+1. 在 [方案總管]  中，以滑鼠右鍵按一下 WebPerfTestResultsViewerControl 專案節點，然後選取 [屬性]  。
 
-1.  在 [方案總管] 中，以滑鼠右鍵按一下 WebPerfTestResultsViewerControl 專案節點，然後選取 [屬性]。
+2. 選取 [應用程式]  索引標籤，然後選擇 [目標 Framework]  下拉式清單並選取 [.NET Framework 4]  (或更新版本)。 關閉 [屬性]  視窗。
 
-2.  選取 [應用程式] 索引標籤，然後選擇 [目標 Framework] 下拉式清單並選取 [.NET Framework 4]，接著關閉 [屬性]。
+   這是支援擴充 [Web 效能測試結果檢視器]  所需之 DLL 參考的必要步驟。
 
-     這是支援擴充 [Web 效能測試結果檢視器] 所需之 DLL 參考的必要步驟。
+3. 在 [方案總管]  的 WebPerfTestResultsViewerControl 專案中，以滑鼠右鍵按一下 [參考]  節點，然後選取 [新增參考]  。
 
-3.  在 [方案總管] 的 WebPerfTestResultsViewerControl 專案中，以滑鼠右鍵按一下 [參考] 節點，然後選取 [新增參考]。
+4. 在 [新增參考]  對話方塊中，按一下 [.NET]  索引標籤。
 
-4.  在 [新增參考] 對話方塊中，按一下 [.NET] 索引標籤。
+5. 向下捲動並選取 **Microsoft.VisualStudio.QualityTools.WebTestFramework**。
 
-5.  向下捲動並選取 **Microsoft.VisualStudio.QualityTools.WebTestFramework**。
+6. 選擇 [確定]  。
 
-6.  選擇 [確定] 。
-
-7.  在 *UserControl1.cs* 檔案中，加入下列 Using 陳述式：
+7. 在 *UserControl1.cs* 檔案中，加入下列 Using 陳述式：
 
     ```csharp
     using Microsoft.VisualStudio.TestTools.WebTesting;
     using Microsoft.VisualStudio.TestTools.WebTesting.Rules;
     ```
 
-8.  加入從 *Connect.cs* 檔案中 WebPerfTestResultsViewerAddin WebTestResultViewer_SelectedChanged 方法呼叫並傳遞 WebTestRequestResult 的 Update 方法。 Update 方法會將 WebTestRequestResult 傳遞給它的各種屬性填入 DataGridView。
+8. 加入從 *Connect.cs* 檔案中 WebPerfTestResultsViewerAddin WebTestResultViewer_SelectedChanged 方法呼叫並傳遞 WebTestRequestResult 的 Update 方法。 Update 方法會將 WebTestRequestResult 傳遞給它的各種屬性填入 DataGridView。
 
     ```csharp
     public void Update(WebTestRequestResult WebTestResults)
@@ -325,35 +300,29 @@ ms.locfileid: "55946937"
             }
     ```
 
-## <a name="build-the-webperftestresultsvieweraddin-solution"></a>建置 WebPerfTestResultsViewerAddin 方案
+## <a name="build-the-solution"></a>建置方案
 
-### <a name="to-build-the-solution"></a>若要建置方案
-
--   在 [建置] 功能表上，選取 [建置方案]。
+- 在 [建置]  功能表上，選取 [建置方案]  。
 
 ## <a name="register-the-webperftestresultsvieweraddin-add-in"></a>登錄 WebPerfTestResultsViewerAddin 增益集
 
-### <a name="to-register-the-add-in-using-the-add-in-manager"></a>若要使用增益集管理員來登錄增益集
+1. 在 [工具]  功能表上，選取 [增益集管理員]  。
 
-1.  在 [工具] 功能表上，選取 [增益集管理員]。
+2. [增益集管理員]  對話方塊隨即顯示。
 
-2.  [增益集管理員] 對話方塊隨即顯示。
+3. 在 [可用的增益集]  資料行中，選取 WebPerfTestResultsViewerAddin 增益集的核取方塊，並且清除 [啟動]  和 [命令列]  資料行下方的核取方塊。
 
-3.  在 [可用的增益集] 資料行中，選取 WebPerfTestResultsViewerAddin 增益集的核取方塊，並且清除 [啟動] 和 [命令列] 資料行下方的核取方塊。
+4. 選擇 [確定]  。
 
-4.  選擇 [確定] 。
+## <a name="run-the-web-performance-test-using-the-web-test-results-viewer"></a>使用 Web 測試結果檢視器執行 Web 效能測試
 
-## <a name="run-the-web-performance-test-using-the-build-the-webperftestresultsvieweraddin-add-in"></a>使用建置 WebPerfTestResultsViewerAddin 增益集執行 Web 效能測試
+1. 執行 Web 效能測試，然後您將會看見 WebPerfTestResultsViewerAddin 增益集中名為 Sample 的新索引標籤顯示在 [Web 效能測試結果檢視器]  中。
 
-### <a name="to-run-the-new-vs-add-in-for-the-web-test-results-viewer"></a>執行 Web 測試結果檢視器的新 VS 增益集
+2. 選擇此索引標籤可查看 DataGridView 中呈現的屬性。
 
-1.  執行 Web 效能測試，然後您將會看見 WebPerfTestResultsViewerAddin 增益集中名為 Sample 的新索引標籤顯示在 [Web 效能測試結果檢視器] 中。
+## <a name="net-security"></a>.NET 安全性
 
-2.  選擇此索引標籤可查看 DataGridView 中呈現的屬性。
-
-## <a name="net-framework-security"></a>.NET Framework 安全性
-
-為了改善安全性，防止惡意的增益集自動啟動，Visual Studio 在名為 [增益集/巨集安全性] 的 [工具選項] 頁面中提供相關設定。
+為了改善安全性，防止惡意的增益集自動啟動，Visual Studio 在名為 [增益集/巨集安全性]  的 [工具選項]  頁面中提供相關設定。
 
 此外，這個選項頁還可讓您指定 Visual Studio 搜尋 *.AddIn* 登錄檔案的資料夾。 這樣做可讓您限制系統能讀取 *.AddIn* 登錄檔案的位置，藉以改善安全性。 這有助於避免您不小心使用惡意 *.AddIn* 檔案。
 
@@ -361,9 +330,9 @@ ms.locfileid: "55946937"
 
  增益集安全性之選項頁中的設定如下：
 
--   **允許載入增益集元件**： 預設會選取。 當您選取此選項時，就可以在 Visual Studio 中載入增益集。 當您沒有選取此選項時，則禁止在 Visual Studio 中載入增益集。
+- **允許載入增益集元件**： 預設會選取。 當您選取此選項時，就可以在 Visual Studio 中載入增益集。 當您沒有選取此選項時，則禁止在 Visual Studio 中載入增益集。
 
--   **允許從 URL 載入增益集元件**： 預設不會選取。 當您選取此選項時，就可以從外部網站載入增益集。 當您沒有選取此選項時，則禁止在 Visual Studio 中載入遠端增益集。 如果增益集因為某種原因無法載入，那麼便無法從網路載入。 這項設定只能控制增益集 DLL 的載入。 *.Addin* 登錄檔案必須隨時位於本機系統中。
+- **允許從 URL 載入增益集元件**： 預設不會選取。 當您選取此選項時，就可以從外部網站載入增益集。 當您沒有選取此選項時，則禁止在 Visual Studio 中載入遠端增益集。 如果增益集因為某種原因無法載入，那麼便無法從網路載入。 這項設定只能控制增益集 DLL 的載入。 *.Addin* 登錄檔案必須隨時位於本機系統中。
 
 ## <a name="see-also"></a>另請參閱
 

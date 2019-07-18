@@ -1,14 +1,9 @@
 ---
-title: IEnumDebugCodeContexts2::Clone |Microsoft Docs
-ms.custom: ''
+title: IEnumDebugCodeContexts2::Clone | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IEnumDebugCodeContexts2::Clone
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 22c98975-4294-4fbd-a345-16f65fe1200d
 caps.latest.revision: 10
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: ec0f900429678793422cc78903b132be2da302d0
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 46861570f5d874a0071fb3d3e67210b2b54e3fff
+ms.sourcegitcommit: da4079f5b6ec884baf3108cbd0519d20cb64c70b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51782439"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "62551775"
 ---
 # <a name="ienumdebugcodecontexts2clone"></a>IEnumDebugCodeContexts2::Clone
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -55,4 +50,3 @@ int Clone(
   
 ## <a name="see-also"></a>另請參閱  
  [IEnumDebugCodeContexts2](../../../extensibility/debugger/reference/ienumdebugcodecontexts2.md)
-

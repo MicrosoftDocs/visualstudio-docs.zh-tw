@@ -1,14 +1,9 @@
 ---
 title: ProjectSubType 項目 （Visual Studio 範本） |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#ProjectSubType
 helpviewer_keywords:
@@ -17,13 +12,13 @@ helpviewer_keywords:
 ms.assetid: f6895cd4-3e95-4f0e-aa9e-8c7750f46ed4
 caps.latest.revision: 14
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: bfc64d4f5a1de6223178321eecb3050478ed9960
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: d07a62027b494242d3c25aba00fbd5f4d75df78b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51807760"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68193895"
 ---
 # <a name="projectsubtype-element-visual-studio-templates"></a>ProjectSubType 項目 (Visual Studio 範本)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +27,7 @@ ms.locfileid: "51807760"
   
  \<VSTemplate >  
  \<TemplateData >  
- \<ProjectSubType >  
+ \<ProjectSubType>  
   
 ## <a name="syntax"></a>語法  
   
@@ -65,15 +60,15 @@ ms.locfileid: "51807760"
   
  `ProjectSubType`項目會提供子類別目錄[ProjectType](../extensibility/projecttype-element-visual-studio-templates.md)項目。 這個值可以包含：  
   
-- `SmartDevice-NETCFv1`： 指定的範本目標[!INCLUDE[Compact](../includes/compact-md.md)]1.0 版。  
+- `SmartDevice-NETCFv1`：指定範本的目標[!INCLUDE[Compact](../includes/compact-md.md)]1.0 版。  
   
-- `SmartDevice-NETCFv2`： 指定 tempalate 目標[!INCLUDE[Compact](../includes/compact-md.md)]2.0 版。  
+- `SmartDevice-NETCFv2`：指定 tempalate 目標[!INCLUDE[Compact](../includes/compact-md.md)]2.0 版。  
   
   如果範本中包含`ProjectType`值的項目`Web`，則`ProjectSubType`項目會指定範本的程式設計語言。 這個項目可以有下列值：  
   
-- `CSharp`： 指定此範本會建立[!INCLUDE[csprcs](../includes/csprcs-md.md)]Web 專案或項目。  
+- `CSharp`：指定此範本會建立[!INCLUDE[csprcs](../includes/csprcs-md.md)]Web 專案或項目。  
   
-- `VisualBasic`： 指定此範本會建立[!INCLUDE[vbprvb](../includes/vbprvb-md.md)]Web 專案或項目。  
+- `VisualBasic`：指定此範本會建立[!INCLUDE[vbprvb](../includes/vbprvb-md.md)]Web 專案或項目。  
   
 ## <a name="example"></a>範例  
  下列範例顯示的專案範本的中繼資料[!INCLUDE[csprcs](../includes/csprcs-md.md)]裝置應用程式目標[!INCLUDE[Compact](../includes/compact-md.md)]2.0 版。  
@@ -107,4 +102,3 @@ ms.locfileid: "51807760"
  [Visual Studio 範本結構描述參考](../extensibility/visual-studio-template-schema-reference.md)   
  [建立專案和項目範本](../ide/creating-project-and-item-templates.md)   
  [ProjectType 元素 (Visual Studio 範本)](../extensibility/projecttype-element-visual-studio-templates.md)
-

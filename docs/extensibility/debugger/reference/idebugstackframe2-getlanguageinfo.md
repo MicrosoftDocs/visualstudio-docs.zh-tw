@@ -7,19 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugStackFrame2::GetLanguageInfo
 ms.assetid: 0e12fd92-f155-46a7-8272-cda279388cfb
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 90fd7beabb14163558afe4b957d95635e91f904a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 0318f99d234309093717c9603ec1153e71d6d7f3
+ms.sourcegitcommit: 74c5360186731de07828764eb32ea1033a8c2275
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56719544"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67559702"
 ---
 # <a name="idebugstackframe2getlanguageinfo"></a>IDebugStackFrame2::GetLanguageInfo
+
 取得此堆疊框架相關聯的語言。
 
 ## <a name="syntax"></a>語法
@@ -38,29 +42,30 @@ int GetLanguageInfo ( 
 );
 ```
 
-#### <a name="parameters"></a>參數
- `pbstrLanguage`
+## <a name="parameters"></a>參數
 
- [out]傳回實作的方法，此堆疊框架相關聯的語言名稱。
+`pbstrLanguage`\
+[out]傳回實作的方法，此堆疊框架相關聯的語言名稱。
 
- `pguidLanguage`
+`pguidLanguage`\
+[out]傳回`GUID`的語言。 針對[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]語言，例如，下列可傳回：
 
- [out]傳回`GUID`的語言。 針對[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]語言，例如，下列可傳回：
+- `guidVBScriptLang`\
 
--   `guidVBScriptLang`
+- `guidJScriptLang`\
 
--   `guidJScriptLang`
+- `guidCPPLang`\
 
--   `guidCPPLang`
+- `guidVBLang`\
 
--   `guidVBLang`
+- `guidSQLLang`\
 
--   `guidSQLLang`
-
--   `guidScriptLang`
+- `guidScriptLang`\
 
 ## <a name="return-value"></a>傳回值
+
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
 
 ## <a name="see-also"></a>另請參閱
+
 - [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)

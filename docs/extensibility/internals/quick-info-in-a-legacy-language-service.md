@@ -7,17 +7,17 @@ helpviewer_keywords:
 - IntelliSense, Quick Info
 - language services [managed package framework], IntelliSense Quick Info
 ms.assetid: 159ccb0b-f5d6-4912-b88b-e9612924ed5e
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9d86ba3b75f2c0e26a568c962a51999dd9fac078
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 6180e34135197c60276bf119ce0ac34c859b2f3d
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56605961"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66341366"
 ---
 # <a name="quick-info-in-a-legacy-language-service"></a>舊版語言服務中的快速諮詢
 IntelliSense 快速諮詢會顯示來源中的識別項的相關資訊時，使用者將插入號放在識別項，並選取**快速諮詢**從**IntelliSense**功能表或保留滑鼠資料指標的識別碼上方。 這會導致識別碼的相關資訊會出現工具提示。 這項資訊通常包括識別項型別。 作用中的偵錯引擎時，這項資訊可能包含目前的值。 語言服務處理只有識別碼項目時，偵錯引擎會提供運算式值。
@@ -25,7 +25,7 @@ IntelliSense 快速諮詢會顯示來源中的識別項的相關資訊時，使�
  舊版語言服務會實作成 VSPackage 的一部分，但實作語言服務功能的較新的方式是使用 MEF 擴充功能。 若要深入了解，請參閱[逐步解說：顯示 QuickInfo 工具提示](../../extensibility/walkthrough-displaying-quickinfo-tooltips.md)。
 
 > [!NOTE]
->  我們建議您開始使用新的編輯器 API 盡。 這會改善您的語言服務的效能，並可讓您充分利用新編輯器功能。
+> 我們建議您開始使用新的編輯器 API 盡。 這會改善您的語言服務的效能，並可讓您充分利用新編輯器功能。
 
  Managed 的封裝架構 (MPF) 語言服務類別會提供完整的支援，顯示 IntelliSense 快速諮詢工具提示。 您必須執行的只是提供文字顯示，並啟用快速諮詢功能。
 

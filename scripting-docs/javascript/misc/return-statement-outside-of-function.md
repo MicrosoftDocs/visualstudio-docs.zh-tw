@@ -14,12 +14,12 @@ ms.assetid: 03568f9f-5f4f-4a10-a738-9a73f3832b9e
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e23a3b7f4c1979132cf9ec6285c2f60c89341540
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 01ef96385d5fe3dccf14a7491e67983d39913280
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843074"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63006402"
 ---
 # <a name="return-statement-outside-of-function"></a>函式外部的 'return' 陳述式
 您已使用`return`全域範圍中的陳述式，您的程式碼。 `return`陳述式應該只出現在函式主體。  
@@ -39,7 +39,7 @@ return [ expression ];
   
 ### <a name="to-correct-this-error"></a>更正這個錯誤  
   
--   移除`return`陳述式，從您的程式碼 （全域範圍） 的主體。  
+- 移除`return`陳述式，從您的程式碼 （全域範圍） 的主體。  
   
 ## <a name="see-also"></a>另請參閱  
  [return 陳述式](../../javascript/reference/return-statement-javascript.md)   

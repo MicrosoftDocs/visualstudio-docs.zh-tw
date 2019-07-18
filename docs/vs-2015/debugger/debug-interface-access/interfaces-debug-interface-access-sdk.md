@@ -1,14 +1,9 @@
 ---
 title: 介面 （偵錯介面存取 SDK） |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -18,13 +13,13 @@ ms.assetid: 62aee7c3-d314-4272-a32b-b2818f32fab8
 caps.latest.revision: 19
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: d74f42008a76fb9b3f5ac6966ec01721bcb32cac
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 5eaf63ac57610e9ebde6703f0b5c15bf9607fdde
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51809333"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68150865"
 ---
 # <a name="interfaces-debug-interface-access-sdk"></a>介面 (偵錯介面存取 SDK)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -140,6 +135,3 @@ ms.locfileid: "51809333"
   
 ## <a name="see-also"></a>另請參閱  
  [參考資料](../../debugger/debug-interface-access/debug-interface-access-sdk-reference.md)
-
-
-

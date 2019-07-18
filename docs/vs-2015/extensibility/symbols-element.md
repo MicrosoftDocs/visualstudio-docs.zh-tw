@@ -1,34 +1,29 @@
 ---
 title: 符號項目 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - Symbols element (VSCT XML schema)
 - VSCT XML schema elements, Symbols
 ms.assetid: 1cda43d8-42a5-4b1b-a3c8-cf0401c3202f
 caps.latest.revision: 8
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 6b9bccb3874d5b85a8a69288e2bf44adb14b5b3f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: c8d28d225bd3a8d5c105bf54b9c63574002aed15
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51783241"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68160465"
 ---
 # <a name="symbols-element"></a>Symbols 項目
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 定義 Guid 和 Id，可供其他 VSCT 項目。 Unmanaged 程式碼，這項資訊通常來自所指定的標頭檔[Extern 元素](../extensibility/extern-element.md)。 Managed 程式碼會使用項目的子項目符號來定義這項資訊。  
   
- 如果您從現有的.cto 檔建立.vsct 檔，就會產生符號做為符號項目的子系。 如需詳細資訊，請參閱[How to： 建立。從現有的 Vsct 檔案。Cto 檔案](../misc/how-to-create-a-dot-vsct-file-from-an-existing-dot-cto-file.md)。  
+ 如果您從現有的.cto 檔建立.vsct 檔，就會產生符號做為符號項目的子系。 如需詳細資訊，請參閱[如何：建立。從現有的 Vsct 檔案。Cto 檔案](../misc/how-to-create-a-dot-vsct-file-from-an-existing-dot-cto-file.md)。  
   
  Symbols 元素不應該與混淆[定義的項目](../extensibility/define-element.md)，其定義前置處理器所使用的名稱 / 值組。  
   
@@ -46,7 +41,7 @@ ms.locfileid: "51783241"
   
 ### <a name="attributes"></a>屬性  
   
-|屬性|描述|  
+|屬性|說明|  
 |---------------|-----------------|  
 |無||  
   
@@ -78,4 +73,3 @@ ms.locfileid: "51783241"
   
 ## <a name="see-also"></a>另請參閱  
  [Visual Studio 命令表檔案 (.Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
-

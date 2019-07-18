@@ -1,14 +1,9 @@
 ---
 title: SccCheckin 函式 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - SccCheckin
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: e3f26ac2-6163-42e1-a764-22cfea5a3bc6
 caps.latest.revision: 17
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 26daf5fcd3ee4ec14b0801c828a6e536a65150d8
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: d8a5a91a0300f256b66970403a3431edf0fe757e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51797997"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68189526"
 ---
 # <a name="scccheckin-function"></a>SccCheckin 函式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,7 +54,7 @@ SCCRTN SccCheckin (
  lpComment  
  [in]要套用至每個選取的檔案簽入註解。 這是`NULL`如果原始檔控制外掛程式應該會提示使用者輸入註解。  
   
- Stored  
+ fOptions  
  [in]命令的旗標，可能是 0 或`SCC_KEEP_CHECKEDOUT`。  
   
  pvOptions  
@@ -90,4 +85,3 @@ SCCRTN SccCheckin (
   
 ## <a name="see-also"></a>另請參閱  
  [原始檔控制外掛程式 API 函式](../extensibility/source-control-plug-in-api-functions.md)
-

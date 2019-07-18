@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugPorts2
 ms.assetid: 1754eef3-cf62-42e0-b218-1911acba77d4
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b39eff84e1933c6181b3e6ae03bd6055b33570e2
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: c24edcd5ef47408cd4c11b3d0548ad34516702a1
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56716073"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66326511"
 ---
 # <a name="ienumdebugports2"></a>IEnumDebugPorts2
 此介面列舉電腦或連接埠的供應商的連接的埠。

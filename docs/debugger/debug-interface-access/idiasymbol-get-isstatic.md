@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: af93290b28d44b18832f4f7c47df6ba6dfa3aa62
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 50c19104d0597c9aa178569d0d103bb3e57f18ed
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56622214"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "64813379"
 ---
 # <a name="idiasymbolgetisstatic"></a>IDiaSymbol::get_isStatic
 擷取旗標，指定是否函式或 thunk 層已標示為靜態。
@@ -39,7 +39,7 @@ HRESULT get_isStatic(
  如果成功，則傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。
 
 > [!NOTE]
->  傳回值為`S_FALSE`表示此屬性不適用於符號。
+> 傳回值為`S_FALSE`表示此屬性不適用於符號。
 
 ## <a name="requirements"></a>需求
 
@@ -48,5 +48,5 @@ HRESULT get_isStatic(
 |標頭：|dia2.h|
 |版本:|DIA SDK v8.0|
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

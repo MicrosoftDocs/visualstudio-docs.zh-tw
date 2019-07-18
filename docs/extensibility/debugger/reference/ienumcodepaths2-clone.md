@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumCodePaths2::Clone
 ms.assetid: 9d5c6bc6-7e72-4f1b-801c-7192458f3ba8
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 54148f7442d714f40b0eab68131113c751cde8e9
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 10f93130ca1bda866684ed8e212baef199a2a1ec
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56684373"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66310195"
 ---
 # <a name="ienumcodepaths2clone"></a>IEnumCodePaths2::Clone
 傳回一份目前的列舉，為個別的物件。
@@ -36,10 +39,9 @@ int Clone(
 );
 ```
 
-#### <a name="parameters"></a>參數
- `ppEnum`
-
- [out]傳回這個列舉型別為個別物件的複本。
+## <a name="parameters"></a>參數
+`ppEnum`\
+[out]傳回這個列舉型別為個別物件的複本。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

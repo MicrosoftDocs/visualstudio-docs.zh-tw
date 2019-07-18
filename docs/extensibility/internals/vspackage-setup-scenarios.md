@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - VSPackages, deployment considerations
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7a8c8d0501222616ad97b745ce69e102ebd54835
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 433819e269e546b224dd34cf47b2f127ea9813aa
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56613309"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66332703"
 ---
 # <a name="vspackage-setup-scenarios"></a>VSPackage 安裝案例
 

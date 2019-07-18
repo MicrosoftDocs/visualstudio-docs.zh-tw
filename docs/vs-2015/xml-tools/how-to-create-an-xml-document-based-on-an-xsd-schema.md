@@ -1,30 +1,24 @@
 ---
-title: 如何： 建立 XML 文件根據 XSD 結構描述 |Microsoft Docs
-ms.custom: ''
+title: 作法：建立根據 XSD 結構描述的 XML 文件 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: 193b195f-e918-4c79-a1a1-8096a1433bde
 caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: bbecacc0729c936489c05d3bb59260341a08d314
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 623da37807e0fd61041bfeb9ab411ce0cb96d4b5
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49884221"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68164486"
 ---
-# <a name="how-to-create-an-xml-document-based-on-an-xsd-schema"></a>HOW TO：根據 XSD 結構描述建立 XML 文件
+# <a name="how-to-create-an-xml-document-based-on-an-xsd-schema"></a>作法：根據 XSD 結構描述建立 XML 文件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 **產生範例 XML**功能會產生範例 XML 檔案，根據 XML 結構描述 (XSD) 檔案。  
   
  您可以針對下列案例使用此選項：  
@@ -49,9 +43,9 @@ ms.locfileid: "49884221"
   
 ### <a name="to-generate-an-xml-instance-document-based-on-the-xsd-file"></a>根據 XSD 檔案產生 XML 執行個體文件  
   
-1.  請依照下列中的步驟[如何： 建立和編輯 XSD 結構描述檔案](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md)。  
+1. 請依照下列中的步驟[How to:建立和編輯 XSD 結構描述檔案](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md)。  
   
-2.  在  [XML 結構描述總管](../xml-tools/xml-schema-explorer.md)，以滑鼠右鍵按一下`PurchaseOrder`全域項目。 選取 **產生範例 XML**。  
+2. 在  [XML 結構描述總管](../xml-tools/xml-schema-explorer.md)，以滑鼠右鍵按一下`PurchaseOrder`全域項目。 選取 **產生範例 XML**。  
   
      當您選取此選項時，會產生含有下列範例 XML 內容的 PurchaseOrder.xml 檔，並在 XML 編輯器中開啟。  
   
@@ -84,6 +78,3 @@ ms.locfileid: "49884221"
   
 ## <a name="see-also"></a>另請參閱  
  [使用 XML 資料](../xml-tools/working-with-xml-data.md)
-
-
-

@@ -1,14 +1,9 @@
 ---
-title: CA2006： 使用 SafeHandle 封裝原生資源 |Microsoft Docs
-ms.custom: ''
+title: CA2006:使用 SafeHandle 封裝原生資源 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA2006
 - UseSafeHandleToEncapsulateNativeResources
@@ -20,14 +15,14 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 88d53d90d00f58706e366b54dfa78b59e499bc24
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: dcf385263eba5a6012097f43b49e7a75166bad42
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49935376"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68154409"
 ---
-# <a name="ca2006-use-safehandle-to-encapsulate-native-resources"></a>CA2006：使用 SafeHandle 封裝原生資源
+# <a name="ca2006-use-safehandle-to-encapsulate-native-resources"></a>CA2006:必須使用 SafeHandle 封裝原生資源
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -55,6 +50,3 @@ ms.locfileid: "49935376"
 
 ## <a name="see-also"></a>另請參閱
  <xref:System.IDisposable>
-
-
-

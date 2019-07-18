@@ -18,11 +18,11 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: 94c21a81a7473e1697609ff3e46eb054ad304540
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955358"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62779885"
 ---
 # <a name="ca1004-generic-methods-should-provide-type-parameter"></a>CA1004：泛型方法應該提供類型參數
 
@@ -37,7 +37,7 @@ ms.locfileid: "55955358"
  外部可見的泛型方法的參數簽章不包含對應至方法的所有型別參數的類型。
 
 ## <a name="rule-description"></a>規則描述
- 推斷是指如何利用傳遞到泛型方法的引數類型，而不是利用型別引數的明確規格，來決定泛型方法的型別引數。 若要啟用推斷，泛型方法的參數簽章必須包含與方法之型別參數具有相同類型的參數。 在上述情形中，不必指定型別引數。 當您使用推斷所有類型參數時，呼叫泛型和非泛型執行個體方法的語法完全相同。 這可簡化泛型方法的可用性。
+ 推斷是指如何利用傳遞到泛型方法的引數類型，而不是利用型別引數的明確規格，來決定泛型方法的型別引數。 若要啟用推斷，泛型方法的參數簽章必須包含與方法之型別參數具有相同類型的參數。 在上述情形中，不必指定類型引數。 當您使用推斷所有類型參數時，呼叫泛型和非泛型執行個體方法的語法完全相同。 這可簡化泛型方法的可用性。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
  若要修正此規則的違規情形，變更設計，使參數簽章包含每個類型參數的方法相同的類型。

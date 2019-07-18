@@ -6,7 +6,7 @@ keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.date: 03/02/2019
+ms.date: 05/22/2019
 ms.topic: reference
 helpviewer_keywords:
 - workload ID, Visual Studio
@@ -16,12 +16,12 @@ ms.custom: seodec18
 ms.assetid: 34e19ef1-abfb-44fd-aad2-33c5d7874482
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: b96088a2107ae826067287aee9f306aa0f590329
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: cdab0458d67bb13ffdd456e2e50e86d290444f3c
+ms.sourcegitcommit: 13ab9a5ab039b070b9cd9251d0b83dd216477203
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57324035"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66177688"
 ---
 # <a name="visual-studio-workload-and-component-ids"></a>Visual Studio 工作負載與元件識別碼
 
@@ -50,7 +50,7 @@ ms.locfileid: "57324035"
 
 ::: moniker range="vs-2019"
 
-**[Visual Studio 2019 RC](/visualstudio/releases/2019/release-notes/) 的更新**
+已針對 [16.1 版](/visualstudio/releases/2019/release-notes/)更新
 
 | **版本** | **ID** | **描述** |
 | ----------- | ------ | --------------- |
@@ -63,6 +63,9 @@ ms.locfileid: "57324035"
 | [Visual&nbsp;Studio Load&nbsp;Test&nbsp;Controller 2019](workload-component-id-vs-test-controller.md?vs-2019) | Microsoft.VisualStudio.Product.TestController | 將自動化的測試散發至多部電腦 |
 
 如需如何使用這些清單的詳細資訊，請參閱[使用命令列參數安裝 Visual Studio](use-command-line-parameters-to-install-visual-studio.md?view=vs-2019) 頁面及[如何：將擴充性專案移轉到 Visual Studio](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md?view=vs-2019) 頁面。
+
+> [!NOTE]
+> 如需先前版本的工作負載和元件識別碼清單，請參閱 [Visual Studio 2017 工作負載和元件識別碼](workload-and-component-ids.md?view=vs-2017)
 
 ::: moniker-end
 

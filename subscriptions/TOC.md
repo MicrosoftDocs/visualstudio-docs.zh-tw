@@ -12,10 +12,9 @@
 ### [下載軟體](subscriber-downloads.md)
 #### [可用軟體下載的清單](software-download-list.md)
 ### [取得與管理產品金鑰](product-keys.md)
-### Visual Studio Dev Essentials
-#### [加入 Visual Studio Dev Essentials](join-dev-essentials.md)
-#### [選擇退出 Visual Studio Dev Essentials](leave-vsde.md)
+### [搭配 GitHub Enterprise 的 Visual Studio](access-github.md)
 ### [訂閱者權益](subscriber-benefits.md)
+### [Visual Studio Dev Essentials](join-dev-essentials.md)
 ## 使用訂閱者權益
 ### 工具
 #### [Visual Studio IDE](vs-ide-benefit.md)
@@ -31,14 +30,11 @@
 #### [Windows 開發人員帳戶](vs-windows-dev.md)
 #### [Office 365 訂閱](vs-office365.md)
 #### [Power BI Pro](vs-pbi.md)
-#### [Modern Requirements4TFS](vs-modernreq.md)
 #### [Azure 隨用隨付](vs-azure-payg.md)
 ### [專業開發](professional-development.md)
 #### [LinkedIn Learning](vs-linkedin-learning.md)
 #### [DataCamp](vs-datacamp.md)
-#### [Skill Me Up](vs-opsgility.md)
 #### [Pluralsight](vs-pluralsight.md)
-#### [Xamarin University 訓練課程](vs-xamarin.md)
 #### [MSDN Magazine 訂閱](vs-msdn.md)
 ### [支援權益](technical-support.md)
 #### [Azure 諮詢對談](vs-azure-advisory-chat.md)
@@ -68,8 +64,10 @@
 #### [搜尋訂閱](search-license.md)
 #### [匯出訂用帳戶](exporting-subscriptions.md)
 #### [過度分派](handle-overclaimed-license.md)
+#### [使用量上限](maximum-usage.md)
 #### [過期的訂閱](handle-expired-license.md)
 #### [具有個人電子郵件登入的訂閱者](personal-email-sign-ins.md)
+### [管理搭配 GitHub Enterprise 的 Visual Studio](assign-github.md)
 ## 取得 Visual Studio 訂閱
 ### [比較訂用帳戶選項](https://visualstudio.microsoft.com/vs/pricing)
 ### 購買雲端訂閱

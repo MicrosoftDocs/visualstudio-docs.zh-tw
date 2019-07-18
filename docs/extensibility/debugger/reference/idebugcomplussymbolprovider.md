@@ -5,17 +5,17 @@ ms.topic: reference
 helpviewer_keywords:
 - IDebugComPlusSymbolProvider interface
 ms.assetid: 5b98e908-fd15-49a6-9010-933c9b948085
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: eee0fd9f65d09eff9593ee1932b9e713639c262f
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 4388b3d561420282ade0104443e0db8061ef2ff6
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56717906"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66352749"
 ---
 # <a name="idebugcomplussymbolprovider"></a>IDebugComPlusSymbolProvider
 代表 COM + 符號提供者特有的 managed 程式碼的方法。

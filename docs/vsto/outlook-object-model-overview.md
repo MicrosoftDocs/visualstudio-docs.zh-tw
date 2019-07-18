@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f3f937b819628414430104782459da65d350dd69
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: d2ad5a5424844896541e46d2afbc158320c7e5a3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56597708"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442402"
 ---
 # <a name="outlook-object-model-overview"></a>Outlook 物件模型概觀
   若要開發 Microsoft Office Outlook 的 VSTO 增益集，您可以與 Outlook 物件模型提供的物件進行互動。 Outlook 物件模型會提供表示使用者介面中各種項目的類別和介面。 例如， <xref:Microsoft.Office.Interop.Outlook.Application> 物件表示整個應用程式、 <xref:Microsoft.Office.Interop.Outlook.Folder> 物件表示含有電子郵件訊息或其他項目的資料夾，而 <xref:Microsoft.Office.Interop.Outlook.MailItem> 物件則表示電子郵件訊息。
@@ -37,21 +37,21 @@ ms.locfileid: "56597708"
 ## <a name="access-objects-in-an-outlook-project"></a>存取 Outlook 專案中的物件
  Outlook 會提供許多您可以與之互動的物件。 若要有效使用物件模型，您應該熟悉下列最上層物件：
 
--   <xref:Microsoft.Office.Interop.Outlook.Application>
+- <xref:Microsoft.Office.Interop.Outlook.Application>
 
--   <xref:Microsoft.Office.Interop.Outlook.Explorer>
+- <xref:Microsoft.Office.Interop.Outlook.Explorer>
 
--   <xref:Microsoft.Office.Interop.Outlook.Inspector>
+- <xref:Microsoft.Office.Interop.Outlook.Inspector>
 
--   <xref:Microsoft.Office.Interop.Outlook.Folder>
+- <xref:Microsoft.Office.Interop.Outlook.Folder>
 
--   <xref:Microsoft.Office.Interop.Outlook.MailItem>
+- <xref:Microsoft.Office.Interop.Outlook.MailItem>
 
--   <xref:Microsoft.Office.Interop.Outlook.AppointmentItem>
+- <xref:Microsoft.Office.Interop.Outlook.AppointmentItem>
 
--   <xref:Microsoft.Office.Interop.Outlook.TaskItem>
+- <xref:Microsoft.Office.Interop.Outlook.TaskItem>
 
--   <xref:Microsoft.Office.Interop.Outlook.ContactItem>
+- <xref:Microsoft.Office.Interop.Outlook.ContactItem>
 
 ### <a name="application-object"></a>Application 物件
  <xref:Microsoft.Office.Interop.Outlook.Application> 物件表示 Outlook 應用程式，而且它是 Outlook 物件模型中的最上層物件。 這個物件中某些最重要的成員包括：
@@ -65,29 +65,29 @@ ms.locfileid: "56597708"
   若要取得的執行個體<xref:Microsoft.Office.Interop.Outlook.Application>物件，請使用的應用程式欄位`ThisAddIn`專案中的類別。 如需詳細資訊，請參閱 <<c0> [ 程式的 VSTO 增益集](../vsto/programming-vsto-add-ins.md)。
 
 > [!NOTE]
->  為了避免安全性警告，當您使用屬性和方法所封鎖的 Outlook 物件模型保護時，取得 Outlook 物件的 [應用程式] 欄位從`ThisAddIn`類別。 如需詳細資訊，請參閱 < [Office 方案的特定安全性考量](../vsto/specific-security-considerations-for-office-solutions.md)。
+> 為了避免安全性警告，當您使用屬性和方法所封鎖的 Outlook 物件模型保護時，取得 Outlook 物件的 [應用程式] 欄位從`ThisAddIn`類別。 如需詳細資訊，請參閱 < [Office 方案的特定安全性考量](../vsto/specific-security-considerations-for-office-solutions.md)。
 
 ### <a name="explorer-object"></a>Explorer 物件
  <xref:Microsoft.Office.Interop.Outlook.Explorer> 物件表示會顯示含有項目之資料夾內容的視窗，而這些項目包括電子郵件訊息、工作或約會。 <xref:Microsoft.Office.Interop.Outlook.Explorer> 物件含有一些方法和屬性，可讓您用來修改視窗，以及視窗變更時引發的事件。
 
  若要取得 <xref:Microsoft.Office.Interop.Outlook.Explorer> 物件，請進行下列其中一項動作：
 
--   使用 <xref:Microsoft.Office.Interop.Outlook._Application.Explorers%2A> 物件的 <xref:Microsoft.Office.Interop.Outlook.Application> 屬性來存取 Outlook 中的所有 <xref:Microsoft.Office.Interop.Outlook.Explorer> 物件。
+- 使用 <xref:Microsoft.Office.Interop.Outlook._Application.Explorers%2A> 物件的 <xref:Microsoft.Office.Interop.Outlook.Application> 屬性來存取 Outlook 中的所有 <xref:Microsoft.Office.Interop.Outlook.Explorer> 物件。
 
--   使用 <xref:Microsoft.Office.Interop.Outlook._Application.ActiveExplorer%2A> 物件的 <xref:Microsoft.Office.Interop.Outlook.Application> 方法來取得目前具有焦點的 <xref:Microsoft.Office.Interop.Outlook.Explorer> 。
+- 使用 <xref:Microsoft.Office.Interop.Outlook._Application.ActiveExplorer%2A> 物件的 <xref:Microsoft.Office.Interop.Outlook.Application> 方法來取得目前具有焦點的 <xref:Microsoft.Office.Interop.Outlook.Explorer> 。
 
--   使用 <xref:Microsoft.Office.Interop.Outlook.Folder> 物件的 `GetExplorer` 方法來取得目前資料夾的 <xref:Microsoft.Office.Interop.Outlook.Explorer>。
+- 使用 <xref:Microsoft.Office.Interop.Outlook.Folder> 物件的 `GetExplorer` 方法來取得目前資料夾的 <xref:Microsoft.Office.Interop.Outlook.Explorer>。
 
 ### <a name="inspector-object"></a>Inspector 物件
  <xref:Microsoft.Office.Interop.Outlook.Inspector> 物件是表示顯示單一項目的視窗，而這些項目包括電子郵件訊息、工作或約會。 <xref:Microsoft.Office.Interop.Outlook.Inspector> 物件含有一些方法和屬性，可讓您用來修改視窗，以及視窗變更時引發的事件。
 
  若要取得 <xref:Microsoft.Office.Interop.Outlook.Inspector> 物件，請進行下列其中一項動作：
 
--   使用 <xref:Microsoft.Office.Interop.Outlook._Application.Inspectors%2A> 物件的 <xref:Microsoft.Office.Interop.Outlook.Application> 屬性來存取 Outlook 中的所有 <xref:Microsoft.Office.Interop.Outlook.Inspector> 物件。
+- 使用 <xref:Microsoft.Office.Interop.Outlook._Application.Inspectors%2A> 物件的 <xref:Microsoft.Office.Interop.Outlook.Application> 屬性來存取 Outlook 中的所有 <xref:Microsoft.Office.Interop.Outlook.Inspector> 物件。
 
--   使用 <xref:Microsoft.Office.Interop.Outlook._Application.ActiveInspector%2A> 物件的 <xref:Microsoft.Office.Interop.Outlook.Application> 方法來取得目前具有焦點的 <xref:Microsoft.Office.Interop.Outlook.Inspector> 。
+- 使用 <xref:Microsoft.Office.Interop.Outlook._Application.ActiveInspector%2A> 物件的 <xref:Microsoft.Office.Interop.Outlook.Application> 方法來取得目前具有焦點的 <xref:Microsoft.Office.Interop.Outlook.Inspector> 。
 
--   使用特定項目 (例如 <xref:Microsoft.Office.Interop.Outlook.MailItem> 或 <xref:Microsoft.Office.Interop.Outlook.AppointmentItem>) 的 `GetInspector` 方法來擷取與該項目相關聯的偵測器。
+- 使用特定項目 (例如 <xref:Microsoft.Office.Interop.Outlook.MailItem> 或 <xref:Microsoft.Office.Interop.Outlook.AppointmentItem>) 的 `GetInspector` 方法來擷取與該項目相關聯的偵測器。
 
 ### <a name="folder-object"></a>資料夾 」 物件
  <xref:Microsoft.Office.Interop.Outlook.Folder> 物件表示含有電子郵件訊息、連絡人、工作和其他項目的資料夾。 Outlook 會提供 16 個預設的 <xref:Microsoft.Office.Interop.Outlook.Folder> 物件。
@@ -118,7 +118,7 @@ ms.locfileid: "56597708"
 
  如需示範如何建立新的連絡人的範例，請參閱[How to:以程式設計方式將項目新增至 Outlook 連絡人](../vsto/how-to-programmatically-add-an-entry-to-outlook-contacts.md)。 如需示範如何搜尋現有連絡人的範例，請參閱[How to:以程式設計方式搜尋特定連絡人](../vsto/how-to-programmatically-search-for-a-specific-contact.md)。
 
-##  <a name="refdoc"></a> 使用 Outlook 物件模型文件
+## <a name="refdoc"></a> 使用 Outlook 物件模型文件
  如需 Outlook 物件模型的完整資訊，您可以參閱 Outlook 主要 Interop 組件 (PIA) 參考和 VBA 物件模型參考。
 
 ### <a name="primary-interop-assembly-reference"></a>主要 interop 組件參考

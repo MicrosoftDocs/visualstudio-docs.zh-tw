@@ -17,12 +17,12 @@ caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d426c1146ae3862318b265c2e36b334b4761d2d9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 978458e9aaca7ea0eae15350803c26246f0c9f1e
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54768996"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696457"
 ---
 # <a name="viewing-types-and-relationships-class-designer"></a>檢視類型和關聯性 (類別設計工具)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ ms.locfileid: "54768996"
 [類別設計工具] 使用類別圖表來顯示類型的詳細資料 (例如其構成成員)，以及類型共有的關聯性。 這些實體在視覺化後，實際上就是程式碼中的動態檢視。 這表示您可以在設計工具上編輯類型，然後就能看到編輯的結果反映在實體的原始程式碼中。 同樣地，類別圖表會與您對程式碼中的實體所做的變更保持同步。  
   
 > [!NOTE]
->  如果您的專案包含類別圖表，而且參考了其他專案中的類型，則除非您建置該類型的專案，否則類別圖表不會顯示參考的類型。 同樣地，除非您重建外部實體的專案，否則此圖表不會顯示該實體的程式碼變更。 如需參考組件和唯讀檔案中類型的資訊，請參閱[顯示唯讀資訊 (類別設計工具)](http://msdn.microsoft.com/33e2d3a9-1668-4d10-ae56-fa09b3156e0a)。  
+> 如果您的專案包含類別圖表，而且參考了其他專案中的類型，則除非您建置該類型的專案，否則類別圖表不會顯示參考的類型。 同樣地，除非您重建外部實體的專案，否則此圖表不會顯示該實體的程式碼變更。 如需參考組件和唯讀檔案中類型的資訊，請參閱[顯示唯讀資訊 (類別設計工具)](https://msdn.microsoft.com/33e2d3a9-1668-4d10-ae56-fa09b3156e0a)。  
   
 ## <a name="in-this-section"></a>本節內容  
  [如何：檢視現有類型 (類別設計工具)](../ide/how-to-view-existing-types-class-designer.md)  

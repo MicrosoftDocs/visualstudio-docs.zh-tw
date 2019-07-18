@@ -1,14 +1,9 @@
 ---
-title: 如何： 搭配專案範本使用精靈 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：使用精靈與專案範本 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - project templates [Visual Studio], wizards
 - Visual Studio templates, wizards
@@ -18,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 47ee26cf-67b7-4ff1-8a9d-ab11a725405c
 caps.latest.revision: 23
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 650b9c360013d06216e607269f77afd24f3cc22c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: e8722cc2990f91446c806bf80f3673dc4c941532
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51783749"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432564"
 ---
-# <a name="how-to-use-wizards-with-project-templates"></a>如何：搭配專案範本使用精靈
+# <a name="how-to-use-wizards-with-project-templates"></a>HOW TO：搭配專案範本使用精靈
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Visual Studio 提供<xref:Microsoft.VisualStudio.TemplateWizard.IWizard>介面，這個介面實作時，可讓您執行自訂程式碼，當使用者從範本建立專案。  
@@ -38,24 +33,24 @@ Visual Studio 提供<xref:Microsoft.VisualStudio.TemplateWizard.IWizard>介面�
 ## <a name="creating-a-project-template-project-with-a-vsix-project"></a>使用 VSIX 專案建立專案範本專案  
  您開始建立自訂的範本與專案範本的專案，這是 Visual Studio SDK 的一部分。 在此程序中，我們將使用 C# 專案範本的專案，但也是 Visual Basic 專案範本專案。 然後您加入 VSIX 專案包含專案範本專案的方案。  
   
-1.  建立 C# 專案範本的專案 (在 Visual Studio 中，**檔案 / 新增 / 專案 / Visual C# / 擴充性 / C# 專案範本**)。 命名**MyProjectTemplate**。  
+1. 建立 C# 專案範本的專案 (在 Visual Studio 中，**檔案 / 新增 / 專案 / Visual C# / 擴充性 / C# 專案範本**)。 命名**MyProjectTemplate**。  
   
     > [!NOTE]
-    >  系統可能會要求您安裝 Visual Studio SDK。 如需詳細資訊，請參閱 <<c0> [ 安裝 Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md)。  
+    > 系統可能會要求您安裝 Visual Studio SDK。 如需詳細資訊，請參閱 <<c0> [ 安裝 Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md)。  
   
-2.  加入新的 VSIX 專案 (**檔案 / 新增 / 專案 / Visual C# / 擴充性 / VSIX 專案**) 相同的方案與專案範本專案中 (在**方案總管 中**，選取 解決方案 節點中，按一下滑鼠右鍵，然後選取**新增 / 新增專案**)。 它命名為**MyProjectWizard。**  
+2. 加入新的 VSIX 專案 (**檔案 / 新增 / 專案 / Visual C# / 擴充性 / VSIX 專案**) 相同的方案與專案範本專案中 (在**方案總管 中**，選取 解決方案 節點中，按一下滑鼠右鍵，然後選取**新增 / 新增專案**)。 它命名為**MyProjectWizard。**  
   
-3.  將 VSIX 專案設定為啟始專案。 在 **方案總管**，選取方案節點、 按一下滑鼠右鍵，然後選取**設定為啟始專案**。  
+3. 將 VSIX 專案設定為啟始專案。 在 **方案總管**，選取方案節點、 按一下滑鼠右鍵，然後選取**設定為啟始專案**。  
   
-4.  範本將專案加入做為 VSIX 專案的資產。 中**方案總管**、 VSIX 專案節點下，尋找**source.extension.vsixmanifest**檔案。 按兩下以在資訊清單編輯器中開啟它。  
+4. 範本將專案加入做為 VSIX 專案的資產。 中**方案總管**、 VSIX 專案節點下，尋找**source.extension.vsixmanifest**檔案。 按兩下以在資訊清單編輯器中開啟它。  
   
-5.  在資訊清單編輯器中，選取**資產**視窗左側的索引標籤。  
+5. 在資訊清單編輯器中，選取**資產**視窗左側的索引標籤。  
   
-6.  在 **資產**索引標籤上，選取**新增**。 在 [**加入新資產**] 視窗中的型別欄位中，選取**Microsoft.VisualStudio.ProjectTemplate**。 在 **來源**欄位中，選取**目前方案中的專案**。 在 **專案**欄位中，選取**MyProjectTemplate**。 然後按一下 [確定]。   
+6. 在 **資產**索引標籤上，選取**新增**。 在 [**加入新資產**] 視窗中的型別欄位中，選取**Microsoft.VisualStudio.ProjectTemplate**。 在 **來源**欄位中，選取**目前方案中的專案**。 在 **專案**欄位中，選取**MyProjectTemplate**。 然後按一下 [確定]。   
   
-7.  建置方案並開始偵錯。 Visual Studio 的第二個執行個體隨即出現。 （這可能需要幾分鐘的時間）。  
+7. 建置方案並開始偵錯。 Visual Studio 的第二個執行個體隨即出現。 （這可能需要幾分鐘的時間）。  
   
-8.  在 Visual Studio 的第二個執行個體，嘗試使用新的範本建立新的專案。 (**檔案 / 新增 / 專案 / Visual C# / MyProject 範本**)。 使用名為類別的新的專案應該會出現**Class1**。 您現在已建立自訂專案範本 ！ 現在停止偵錯。  
+8. 在 Visual Studio 的第二個執行個體，嘗試使用新的範本建立新的專案。 (**檔案 / 新增 / 專案 / Visual C# / MyProject 範本**)。 使用名為類別的新的專案應該會出現**Class1**。 您現在已建立自訂專案範本 ！ 現在停止偵錯。  
   
 ## <a name="creating-a-custom-template-wizard"></a>建立自訂範本精靈  
  本主題說明如何建立自訂精靈建立專案之前開啟 Windows 表單。 表單可讓使用者加入自訂參數值在專案建立期間新增至原始程式碼。  
@@ -64,15 +59,15 @@ Visual Studio 提供<xref:Microsoft.VisualStudio.TemplateWizard.IWizard>介面�
   
 2. 在 [**方案總管] 中**，選取 [VSIX 專案] 節點。 下面 [方案總管] 中，您應該看到**屬性**視窗。 如果您不這樣做，請選取**檢視 / 屬性 視窗**，或按**F4**。 在 屬性 視窗中，選取 在下列欄位`true`:  
   
-   -   **IncludeAssemblyInVSIXContainer**  
+   - **IncludeAssemblyInVSIXContainer**  
   
-   -   **IncludeDebugSymbolsInVSIXContainer**  
+   - **IncludeDebugSymbolsInVSIXContainer**  
   
-   -   **IncludeDebugSymbolsInLocalVSIXDeployment**  
+   - **IncludeDebugSymbolsInLocalVSIXDeployment**  
   
 3. 做為資產中加入 VSIX 專案的組件。 開啟 source.extension.vsixmanifest 檔案中，然後選取**資產** 索引標籤。中**加入新資產** 視窗中，如**型別**選取**Microsoft.VisualStudio.Assembly**，如**來源**選取**的目前方案中的專案**，並針對**專案**選取**MyTemplateWizard**。  
   
-4. 將下列參考加入 VSIX 專案。 (在**方案總管**，在 VSIX 專案節點，選取**參考**，按一下滑鼠右鍵，然後選取**加入參考**。)在 **加入參考**對話方塊，請在**Framework**索引標籤上，尋找**System.Windows 表單**組件並加以選取。 現在，選取**延伸模組** 索引標籤尋找**EnvDTE**組件並加以選取。 也會發現**Microsoft.VisualStudio.TemplateWizardInterface**組件並加以選取。 按一下 [確定 **Deploying Office Solutions**]。  
+4. 將下列參考加入 VSIX 專案。 (在**方案總管**，在 VSIX 專案節點，選取**參考**，按一下滑鼠右鍵，然後選取**加入參考**。)在 **加入參考**對話方塊，請在**Framework**索引標籤上，尋找**System.Windows 表單**組件並加以選取。 現在，選取**延伸模組** 索引標籤尋找**EnvDTE**組件並加以選取。 也會發現**Microsoft.VisualStudio.TemplateWizardInterface**組件並加以選取。 按一下 [確定]  。  
   
 5. 加入 VSIX 專案的精靈實作的類別。 (在 方案總管 中，以滑鼠右鍵按一下 VSIX 專案節點，然後選取**新增**，然後**新項目**，然後**類別**。)將類別命名為**WizardImplementation**。  
   
@@ -212,7 +207,7 @@ Visual Studio 提供<xref:Microsoft.VisualStudio.TemplateWizard.IWizard>介面�
   
 1. 簽署組件。 在 **方案總管**，選取 VSIX 專案、 按一下滑鼠右鍵，然後選取**專案屬性**。  
   
-2. 在 [**專案屬性**視窗中，選取**簽署**] 索引標籤中的**簽署**索引標籤上，勾選**簽署組件**。 在 **選擇強式名稱金鑰檔**欄位中，選取**\<新增 >**。 在 [**建立強式名稱金鑰**] 視窗，請在**金鑰檔名稱**欄位中，輸入**key.snk**。 取消核取**保護我的密碼金鑰檔**欄位。  
+2. 在 [**專案屬性**視窗中，選取**簽署**] 索引標籤中的**簽署**索引標籤上，勾選**簽署組件**。 在 **選擇強式名稱金鑰檔**欄位中，選取 **\<新增 >** 。 在 [**建立強式名稱金鑰**] 視窗，請在**金鑰檔名稱**欄位中，輸入**key.snk**。 取消核取**保護我的密碼金鑰檔**欄位。  
   
 3. 在 **方案總管**，選取 VSIX 專案，並尋找**屬性**視窗。  
   
@@ -220,31 +215,31 @@ Visual Studio 提供<xref:Microsoft.VisualStudio.TemplateWizard.IWizard>介面�
   
 5. 重建方案。  
   
-6. 您現在可以在 MyProjectWizard 專案目錄中尋找的 key.snk 檔案 (**\<磁碟位置 > \MyProjectTemplate\MyProjectWizard\key.snk**)。 將複製的 key.snk 檔案。  
+6. 您現在可以在 MyProjectWizard 專案目錄中尋找的 key.snk 檔案 ( **\<磁碟位置 > \MyProjectTemplate\MyProjectWizard\key.snk**)。 將複製的 key.snk 檔案。  
   
-7. 移至輸出目錄，並尋找組件 (**\<磁碟位置 > \MyProjectTemplate/MyProjectWizard\bin\Debug\MyProjectWizard.dll**)。 貼上以下的 key.snk 檔案。 （這並非絕對必要，但它會讓下列步驟輕鬆）。  
+7. 移至輸出目錄，並尋找組件 ( **\<磁碟位置 > \MyProjectTemplate/MyProjectWizard\bin\Debug\MyProjectWizard.dll**)。 貼上以下的 key.snk 檔案。 （這並非絕對必要，但它會讓下列步驟輕鬆）。  
   
 8. 開啟命令視窗，並將在其中建立組件的目錄。  
   
 9. 尋找**sn.exe**簽署工具。 比方說，Windows 10 64 位元作業系統上，典型的路徑會是下列：  
   
-     **C:\Program Files (x86) \Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.6.1 Tools**  
+     **C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.6.1 Tools**  
   
      如果找不到工具，請嘗試執行**其中 /R。 sn.exe**命令視窗中。 記下路徑。  
   
 10. 從 key.snk 檔案中擷取的公開金鑰。 在 [命令] 視窗中，輸入  
   
-     **\<sn.exe 的位置 > \sn.exe-p key.snk outfile.key。**  
+     **\<location of sn.exe>\sn.exe - p key.snk outfile.key.**  
   
      別忘了用 sn.exe 加上引號的路徑，如果目錄名稱中有空格 ！  
   
 11. 從 outfile 取得的公開金鑰語彙基元：  
   
-     **\<sn.exe 的位置 > \sn.exe-t outfile.key。**  
+     **\<location of sn.exe>\sn.exe - t outfile.key.**  
   
      同樣地，別忘了引號。 您應該會看到如下的輸出中的資料行  
   
-     **公開金鑰語彙基元是 <token>**  
+     **公開金鑰語彙基元是\<權杖 >**  
   
      記下此值。  
   
@@ -297,19 +292,19 @@ namespace $safeprojectname$
 ## <a name="using-the-custom-wizard"></a>使用自訂的精靈  
  現在您可以從您的範本建立專案，並使用自訂的精靈。  
   
-1.  重建方案，並開始偵錯。 Visual Studio 的第二個執行個體應該會出現。  
+1. 重建方案，並開始偵錯。 Visual Studio 的第二個執行個體應該會出現。  
   
-2.  建立新的 MyProjectTemplate 專案。 (**檔案 / 新增 / 專案 / Visual C# / MyProjectTemplate**)  
+2. 建立新的 MyProjectTemplate 專案。 (**檔案 / 新增 / 專案 / Visual C# / MyProjectTemplate**)  
   
-3.  在 **新的專案** 對話方塊中，找出您的範本、 輸入名稱，並按一下 **確定**。  
+3. 在 **新的專案** 對話方塊中，找出您的範本、 輸入名稱，並按一下 **確定**。  
   
      精靈的使用者輸入的表單隨即開啟。  
   
-4.  輸入自訂參數的值，然後按一下  按鈕。  
+4. 輸入自訂參數的值，然後按一下  按鈕。  
   
      在精靈的使用者輸入的表單關閉，並從範本建立專案。  
   
-5.  在 **方案總管**，以滑鼠右鍵按一下原始程式碼檔，然後按一下**檢視程式碼**。  
+5. 在 **方案總管**，以滑鼠右鍵按一下原始程式碼檔，然後按一下**檢視程式碼**。  
   
      請注意，`$custommessage$`已取代為精靈的使用者輸入表單中輸入的文字。  
   

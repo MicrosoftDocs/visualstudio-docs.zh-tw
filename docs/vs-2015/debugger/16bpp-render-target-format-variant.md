@@ -1,25 +1,20 @@
 ---
 title: 16bpp 呈現目標格式變異 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 24b22ad9-5ad0-4161-809a-9b518eb924bf
 caps.latest.revision: 8
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: bf00bf536e5f1ee140a818ee59c66703906860f0
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 7b315c7ab9bb10d039e81ba26b1beb9c4447a205
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51727645"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68157563"
 ---
 # <a name="16bpp-render-target-format-variant"></a>16bpp 呈現目標格式變異
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,11 +37,11 @@ ms.locfileid: "51727645"
 ## <a name="remarks"></a>備註  
  每次呼叫可建立呈現目標的 `ID3D11Device::CreateTexture2D` 時，都會將呈現目標格式重設為 DXGI_FORMAT_B5G6R5_UNORM。 特別是 pDesc 中所傳遞的 D3D11_TEXTURE2D_DESC 物件描述呈現目標時，會覆寫此格式；亦即：  
   
--   BindFlags 成員已設定 D3D11_BIND_REDNER_TARGET 旗標。  
+- BindFlags 成員已設定 D3D11_BIND_REDNER_TARGET 旗標。  
   
--   BindFlags 成員已清除 D3D11_BIND_DEPTH_STENCIL 旗標。  
+- BindFlags 成員已清除 D3D11_BIND_DEPTH_STENCIL 旗標。  
   
--   Usage 成員設定為 D3D11_USAGE_DEFAULT。  
+- Usage 成員設定為 D3D11_USAGE_DEFAULT。  
   
 ## <a name="restrictions-and-limitations"></a>限制  
  因為 B5G6R5 格式沒有 Alpha 色板，所以此變異不會保留 Alpha 內容。 如果您應用程式的呈現需要呈現目標中有 Alpha 色板，則不能只是切換至 B5G6R5 格式。  
@@ -61,6 +56,3 @@ target_description.BindFlags = D3D11_BIND_RENDER_TARGET;
 target_description.Format = DXGI_FORMAT_B5G6R5_UNORM;  
 d3d_device->CreateTexture2D(&target_description, nullptr, &render_target);  
 ```
-
-
-

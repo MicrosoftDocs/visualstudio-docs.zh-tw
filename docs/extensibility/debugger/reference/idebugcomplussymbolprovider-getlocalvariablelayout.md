@@ -6,17 +6,20 @@ helpviewer_keywords:
 - GetLocalVariablelayout
 - IDebugComPlusSymbolProvider::GetLocalVariablelayout
 ms.assetid: b7328d85-e5e9-4d9f-bcd1-e7711fd33878
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f5ed664c3c9b018be6e29b5129c375d1e8f5eb41
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: c92bdab6c3bbe7196e5f1df68758bcce4a9f2063
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56723847"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66336767"
 ---
 # <a name="idebugcomplussymbolprovidergetlocalvariablelayout"></a>IDebugComPlusSymbolProvider::GetLocalVariablelayout
 擷取一組方法的區域變數的配置。
@@ -43,26 +46,21 @@ int GetLocalVariablelayout(
 );
 ```
 
-#### <a name="parameters"></a>參數
-`ulAppDomainID`
+## <a name="parameters"></a>參數
+`ulAppDomainID`\
+[in]應用程式定義域的識別項。
 
- [in]應用程式定義域的識別項。
+`guidModule`\
+[in]模組的唯一識別碼。
 
-`guidModule`
+`cMethods`\
+[in]方法的數字的語彙基元`rgMethodTokens`陣列。
 
- [in]模組的唯一識別碼。
+`rgMethodTokens`\
+[in]方法的語彙基元的陣列。
 
-`cMethods`
-
- [in]方法的數字的語彙基元`rgMethodTokens`陣列。
-
-`rgMethodTokens`
-
- [in]方法的語彙基元的陣列。
-
-`pStreamLayout`
-
- [out]包含變數的版面配置的文字資料流。
+`pStreamLayout`\
+[out]包含變數的版面配置的文字資料流。
 
 ## <a name="return-value"></a>傳回值
 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

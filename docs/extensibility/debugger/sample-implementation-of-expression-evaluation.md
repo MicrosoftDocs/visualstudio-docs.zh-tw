@@ -7,34 +7,34 @@ helpviewer_keywords:
 - debugging [Debugging SDK], expression evaluators
 - expression evaluation, examples
 ms.assetid: 2a5f04b8-6c65-4232-bddd-9093653a22c4
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2afb20f2a337008bc3d3b7fe3dd6aaa5b3f163cf
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 0135c8dd61ca2505c1458bc157b574e6bcbee09a
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56684971"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66315077"
 ---
 # <a name="sample-implementation-of-expression-evaluation"></a>運算式評估的範例實作
 > [!IMPORTANT]
->  在 Visual Studio 2015 中，這種實作運算式評估工具已被取代。 實作 CLR 運算式評估工具的詳細資訊，請參閱[CLR 運算式評估工具](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)並[Managed 運算式評估工具範例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。
+> 在 Visual Studio 2015 中，這種實作運算式評估工具已被取代。 實作 CLR 運算式評估工具的詳細資訊，請參閱[CLR 運算式評估工具](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)並[Managed 運算式評估工具範例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。
 
  針對**監看式** 視窗的運算式時，Visual Studio 會呼叫[ParseText](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md)產生[IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md)物件。 `IDebugExpressionContext2::ParseText` 具現化的運算式評估工具 (EE) 和呼叫[剖析](../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md)若要取得[IDebugParsedExpression](../../extensibility/debugger/reference/idebugparsedexpression.md)物件。
 
  `IDebugExpressionEvaluator::Parse`會執行下列工作：
 
-1.  [只有 c + +]剖析的運算式，若要尋找的錯誤。
+1. [C++只]剖析的運算式，若要尋找的錯誤。
 
-2.  具現化類別 (稱為`CParsedExpression`在此範例中) 執行`IDebugParsedExpression`介面，並儲存在類別中，運算式才能進行剖析。
+2. 具現化類別 (稱為`CParsedExpression`在此範例中) 執行`IDebugParsedExpression`介面，並儲存在類別中，運算式才能進行剖析。
 
-3.  傳回`IDebugParsedExpression`介面從`CParsedExpression`物件。
+3. 傳回`IDebugParsedExpression`介面從`CParsedExpression`物件。
 
 > [!NOTE]
->  在接下來的範例和 MyCEE 範例中，運算式評估工具不會分開評估剖析。
+> 在接下來的範例和 MyCEE 範例中，運算式評估工具不會分開評估剖析。
 
 ## <a name="managed-code"></a>Managed 程式碼
  下列程式碼示範如何實作`IDebugExpressionEvaluator::Parse`managed 程式碼中。 這個版本的方法會延後到剖析[EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md)當剖析的程式碼也會評估一次 (請參閱[評估 監看運算式](../../extensibility/debugger/evaluating-a-watch-expression.md))。

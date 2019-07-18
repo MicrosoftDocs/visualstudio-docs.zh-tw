@@ -1,14 +1,9 @@
 ---
 title: Windows Vista 的 ClickOnce 部署 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -22,13 +17,13 @@ ms.assetid: b21a0ebc-0ff6-4f49-8993-7d1ad3f8cac2
 caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: a0b8b4b5cff478a2dbe03f3f72115da3c0696c4e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: e25f9da960b1de8acb1950b2bdd3ab7e61409f17
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49852050"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65675467"
 ---
 # <a name="clickonce-deployment-on-windows-vista"></a>Windows Vista 的 ClickOnce 部署
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,9 +52,6 @@ ms.locfileid: "49852050"
   
 ## <a name="see-also"></a>另請參閱  
  [ClickOnce 安全性和部署](../deployment/clickonce-security-and-deployment.md)   
- [使用者權限和 Visual Studio](http://msdn.microsoft.com/en-us/d5c55084-1e7b-4b61-b478-137db01c0fc0)   
+ [使用者權限和 Visual Studio](https://msdn.microsoft.com/d5c55084-1e7b-4b61-b478-137db01c0fc0)   
  [專案設計工具，應用程式頁面 (C#)](../ide/reference/application-page-project-designer-csharp.md)   
  [專案設計工具、應用程式頁面 (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)
-
-
-

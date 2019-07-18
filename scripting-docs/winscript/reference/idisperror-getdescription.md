@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: aff28f0f552bcad6792e4d252a92e45e9a6fd38c
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: 5505113ee650c6618be5a95bc77244daf90cfcb7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58146691"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446944"
 ---
 # <a name="idisperrorgetdescription"></a>IDispError::GetDescription
 傳回此錯誤的文字描述。  
@@ -50,7 +50,7 @@ HRESULT GetDescription(
  文字會傳入的地區設定識別碼 (LCID) 傳遞給所指定的語言`IDispatchEx::InvokeEx`發生錯誤的方法。  
   
 > [!NOTE]
->  這個方法尚未實作。  
+> 這個方法尚未實作。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDispError 介面](../../winscript/reference/idisperror-interface.md)   

@@ -7,17 +7,17 @@ helpviewer_keywords:
 - selection
 - hierarchies
 ms.assetid: cad0a859-7a84-4ce5-b0a9-f7f64e5f8ebb
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 741d61f4f3a62638e56aabb1f62f97aac4519d0c
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: d3d59a5160b5c20a3243426eaf1fda4b72e58e93
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56596577"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66328871"
 ---
 # <a name="hierarchies-and-selection"></a>階層和選取範圍
 當您自訂[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]，您應該了解如何[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]處理階層，例如專案，以及如何使用選取範圍內容來決定向使用者顯示的內容。 本章節將討論的概念[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]階層和選取範圍。

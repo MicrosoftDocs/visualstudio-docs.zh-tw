@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: f4dbafb4c6f7ad590244842ac3def0e26f8a14fd
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: dfa50fc6007c2313191b430e9ed5445e7fd72a88
+ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57872962"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65841558"
 ---
 # <a name="ca1802-use-literals-where-appropriate"></a>CA1802:建議在適當時使用常值
 
@@ -59,7 +59,7 @@ ms.locfileid: "57872962"
 
 如果您執行這項規則，從[FxCop 分析器](install-fxcop-analyzers.md)（而不是透過靜態程式碼分析），您可以設定的哪些部分您程式碼基底上執行這項規則，根據其存取範圍。 比方說，若要指定執行規則時，應該只針對非公用 API 介面，將下列索引鍵 / 值組新增至專案中的.editorconfig 檔案：
 
-```
+```ini
 dotnet_code_quality.ca1802.api_surface = private, internal
 ```
 

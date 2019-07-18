@@ -1,24 +1,24 @@
 ---
-title: 新的專案產生：在幕後，第二部分 |Microsoft Docs
+title: 新專案產生：在幕後，第二部分 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio], new project dialog
 - projects [Visual Studio], new project generation
 ms.assetid: 73ce91d8-0ab1-4a1f-bf12-4d3c49c01e13
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5ccdd4cd8bafc4bc4a899ea47d62ec10e578569c
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 4ea614be39456f5d6a31ea6c9c12221b4db09bbd
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58148200"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66311012"
 ---
-# <a name="new-project-generation-under-the-hood-part-two"></a>新的專案產生：在幕後，第二部分
+# <a name="new-project-generation-under-the-hood-part-two"></a>新專案產生：一探究竟，第二部份
 
 在 [產生新專案：在幕後，第一段](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md)我們可了解如何**新的專案**就會填入方塊的對話方塊。 假設您已選取**Visual C# Windows 應用程式**、 填入**名稱**並**位置**文字方塊中，然後按下的 [確定]。
 
@@ -156,5 +156,5 @@ namespace Simple
 
 ## <a name="see-also"></a>另請參閱
 
-- [新的專案產生：在幕後，第一部](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md)
+- [新專案產生：一探究竟，第一部份](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md)
 - [MSBuild](../../msbuild/msbuild.md)

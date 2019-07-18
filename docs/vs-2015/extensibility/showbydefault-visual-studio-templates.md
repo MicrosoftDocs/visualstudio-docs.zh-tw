@@ -1,14 +1,9 @@
 ---
 title: ShowByDefault （Visual Studio 範本） |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#ShowByDefault
 helpviewer_keywords:
@@ -17,13 +12,13 @@ helpviewer_keywords:
 ms.assetid: 7be783f6-0ef6-42bc-924a-df9a2eba7781
 caps.latest.revision: 8
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 6cd368d33e218d0f240a8f6272cfbfba846f04e8
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 98779743f1e7c68f579334d74d3651357c6ee0b4
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51781799"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68184121"
 ---
 # <a name="showbydefault-visual-studio-templates"></a>ShowByDefault (Visual Studio 範本)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +27,7 @@ ms.locfileid: "51781799"
   
  \<VSTemplate >  
  \<TemplateData >  
- \<ShowByDefault >  
+ \<ShowByDefault>  
   
 ## <a name="syntax"></a>語法  
   
@@ -51,7 +46,7 @@ ms.locfileid: "51781799"
   
 ### <a name="parent-elements"></a>父項目  
   
-|項目|描述|  
+|項目|說明|  
 |-------------|-----------------|  
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|將範本分類，並定義該範本在 [新增專案]  或 [加入新項目]  對話方塊中顯示的方式。|  
   
@@ -61,7 +56,7 @@ ms.locfileid: "51781799"
  此文字必須是 `true` 或 `false`。 如果為 true，請指定範本將會針對所有專案類型顯示。 如果為 false，則範本只會顯示在指定的 `TemplateGroupID` 之下。  
   
 ## <a name="remarks"></a>備註  
- `ShowByDefault` 是選擇性項目。 預設值是 `true`。  
+ `ShowByDefault` 是選擇性項目。 預設值為 `true`。  
   
 ## <a name="example"></a>範例  
  下列範例說明 [!INCLUDE[csprcs](../includes/csprcs-md.md)] 範本的中繼資料。  
@@ -95,4 +90,3 @@ ms.locfileid: "51781799"
  [建立專案和項目範本](../ide/creating-project-and-item-templates.md)   
  [Visual Studio 範本結構描述參考](../extensibility/visual-studio-template-schema-reference.md)   
  [TemplateGroupID 元素 (Visual Studio 範本)](../extensibility/templategroupid-element-visual-studio-templates.md)
-

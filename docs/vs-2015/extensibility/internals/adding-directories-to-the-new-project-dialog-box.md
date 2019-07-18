@@ -1,26 +1,21 @@
 ---
 title: 將目錄新增至新的 [專案] 對話方塊 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - New Project dialog box, extending
 ms.assetid: 53b328f5-20bb-49a3-bf9e-1818f4fbdf50
 caps.latest.revision: 14
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 6a03e61cf3699cd45a7b4b8e6a7e5b7d192ca6de
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: a8a9eeca4dc455c4f16e3551541454483138a993
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51769741"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68203871"
 ---
 # <a name="adding-directories-to-the-new-project-dialog-box"></a>將目錄新增至新增專案對話方塊
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -56,4 +51,3 @@ NoRemove NewProjectTemplates
  [註冊專案和項目範本](../../extensibility/internals/registering-project-and-item-templates.md)   
  [新增項目加入新項目對話方塊](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md)   
  [將目錄新增至加入新項目對話方塊](../../extensibility/internals/adding-directories-to-the-add-new-item-dialog-box.md)
-

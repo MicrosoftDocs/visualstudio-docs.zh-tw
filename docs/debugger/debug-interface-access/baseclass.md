@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: df8cc7fa837e5308d2e6ba18501d7bfb93a83223
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56626386"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62829930"
 ---
 # <a name="baseclass"></a>BaseClass
 每個使用者定義型別 (UDT) 符號的基底類別由與子系`SymTagBaseClass`標記。 [Idiasymbol:: Get_type](../../debugger/debug-interface-access/idiasymbol-get-type.md)屬性為基礎的 UDT，包含的符號和基礎 UDT 的所有屬性都都可以做為這個 BaseClass 符號的一部分。
@@ -27,7 +27,7 @@ ms.locfileid: "56626386"
 ## <a name="properties"></a>屬性
  下表顯示此符號類型的其他有效屬性。
 
-|屬性|資料類型|說明|
+|屬性|資料類型|描述|
 |--------------|---------------|-----------------|
 |[IDiaSymbol::get_access](../../debugger/debug-interface-access/idiasymbol-get-access.md)|`DWORD`|存取修飾詞套用至這個基底類別。 其中一個[CV_access_e 列舉](../../debugger/debug-interface-access/cv-access-e.md)值。|
 |[IDiaSymbol::get_classParent](../../debugger/debug-interface-access/idiasymbol-get-classparent.md)|`IDiaSymbol*`|（如果有的話） 的封入類別的符號。|
@@ -61,6 +61,6 @@ ms.locfileid: "56626386"
 |[IDiaSymbol::get_virtualTableShapeId](../../debugger/debug-interface-access/idiasymbol-get-virtualtableshapeid.md)|`DWORD`|虛擬資料表圖形符號的識別碼。|
 |[IDiaSymbol::get_volatileType](../../debugger/debug-interface-access/idiasymbol-get-volatiletype.md)|`BOOL`|`TRUE` 如果基底類別會標示為 volatile。|
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [符號類型的類別階層架構](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md)
 - [UDT](../../debugger/debug-interface-access/udt.md)

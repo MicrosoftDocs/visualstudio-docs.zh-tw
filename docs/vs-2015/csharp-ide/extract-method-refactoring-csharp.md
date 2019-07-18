@@ -1,14 +1,9 @@
 ---
 title: 擷取方法重構 (C#) |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - vs.csharp.refactoring.extractmethod
 dev_langs:
@@ -20,13 +15,13 @@ ms.assetid: eeba11df-a815-4bec-9c21-8a831891b783
 caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
-manager: wpickett
-ms.openlocfilehash: cc05da79676beed5fa698f11843a6b7485280e71
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 5a889250e641e004bdb0d89f6965c43c3d6b8e2a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49228055"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68155251"
 ---
 # <a name="extract-method-refactoring-c"></a>擷取方法重構 (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,19 +32,19 @@ ms.locfileid: "49228055"
   
  **Extrahovat Metodu**具有下列優點：  
   
--   強調離散、 可重複使用的方法，建議採用最佳編碼作法。  
+- 強調離散、 可重複使用的方法，建議採用最佳編碼作法。  
   
--   可促進程式碼透過極佳的組織可以自我記錄。  
+- 可促進程式碼透過極佳的組織可以自我記錄。  
   
      當具描述性的名稱時使用的高階方法讀的起來就像一系列的註解。  
   
--   可建立更細微的方法，以簡化覆寫。  
+- 可建立更細微的方法，以簡化覆寫。  
   
--   減少程式碼重複。  
+- 減少程式碼重複。  
   
 ### <a name="to-use-extract-method"></a>若要使用 擷取方法  
   
-1.  建立名為 `ExtractMethod` 的主控台應用程式，再以下列程式碼取代 `Program`。  
+1. 建立名為 `ExtractMethod` 的主控台應用程式，再以下列程式碼取代 `Program`。  
   
     ```csharp  
     class A  
@@ -73,13 +68,13 @@ ms.locfileid: "49228055"
     }  
     ```  
   
-2.  選取您想要擷取的程式碼片段：  
+2. 選取您想要擷取的程式碼片段：  
   
     ```csharp  
     double area = PI * radius * radius;  
     ```  
   
-3.  在 **重構**功能表上，按一下**擷取方法**。  
+3. 在 **重構**功能表上，按一下**擷取方法**。  
   
      **擷取方法** 對話方塊隨即出現。  
   
@@ -87,11 +82,11 @@ ms.locfileid: "49228055"
   
      您可以也以滑鼠右鍵按一下所選程式碼中，指向**重構**，然後按一下**擷取方法**以顯示**擷取方法**對話方塊。  
   
-4.  指定名稱，以針對新的方法，例如`CircleArea`，請在**新的方法名稱** 方塊中。  
+4. 指定名稱，以針對新的方法，例如`CircleArea`，請在**新的方法名稱** 方塊中。  
   
      底下會顯示新的方法簽章的預覽**預覽方法簽章**。  
   
-5.  按一下 [確定 **Deploying Office Solutions**]。  
+5. 按一下 [確定 **Deploying Office Solutions**]。  
   
 ## <a name="remarks"></a>備註  
  當您使用**擷取方法**命令時，新的方法會插入下列來源類別中的成員相同。  
@@ -99,7 +94,7 @@ ms.locfileid: "49228055"
 ## <a name="partial-types"></a>部分型別  
  如果類別是部分的型別，則**擷取方法**會產生來源成員的正後方的新方法。 **Extrahovat Metodu**決定新的方法，任何執行個體資料不參考中的新方法的程式碼時建立的靜態方法的簽章。  
   
-## <a name="generic-type-parameters"></a>泛型型別參數  
+## <a name="generic-type-parameters"></a>泛型類型參數  
  當您擷取具有不受限制的泛型類型參數的方法時，不會加入產生的程式碼`ref`至該參數的修飾詞除非將值指派給它。 如果擷取的方法將會支援參考型別作為泛型型別引數，則您應該手動加入`ref`方法簽章中參數的修飾詞。  
   
 ## <a name="anonymous-methods"></a>匿名方法  

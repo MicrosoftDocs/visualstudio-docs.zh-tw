@@ -1,14 +1,9 @@
 ---
-title: IDiaEnumLineNumbers |Microsoft Docs
-ms.custom: ''
+title: IDiaEnumLineNumbers | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: cdf07b4f-19e4-4dcd-8af8-c2dbca586a7c
 caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 087ebeee78d6b88ab1e3de20bc2553e6cfca749a
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 87d5450cddab6b3cd230040175d18ae186483b30
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51772153"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687190"
 ---
 # <a name="idiaenumlinenumbers"></a>IDiaEnumLineNumbers
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -41,7 +36,7 @@ IDiaEnumLineNumbers : IUnknown
   
 |方法|描述|  
 |------------|-----------------|  
-|[IDiaEnumLineNumbers::get__NewEnum](../../debugger/debug-interface-access/idiaenumlinenumbers-get-newenum.md)|擷取[IEnumVARIANT 介面](http://msdn.microsoft.com/en-us/139e3c93-faef-4003-9079-e0e94494db3e)這個列舉值的版本。|  
+|[IDiaEnumLineNumbers::get__NewEnum](../../debugger/debug-interface-access/idiaenumlinenumbers-get-newenum.md)|擷取[IEnumVARIANT 介面](https://msdn.microsoft.com/139e3c93-faef-4003-9079-e0e94494db3e)這個列舉值的版本。|  
 |[IDiaEnumLineNumbers::get_Count](../../debugger/debug-interface-access/idiaenumlinenumbers-get-count.md)|擷取線數字數目。|  
 |[IDiaEnumLineNumbers::Item](../../debugger/debug-interface-access/idiaenumlinenumbers-item.md)|透過索引中擷取的行號。|  
 |[IDiaEnumLineNumbers::Next](../../debugger/debug-interface-access/idiaenumlinenumbers-next.md)|擷取指定的數目的列舉型別序列中的行號。|  
@@ -54,15 +49,15 @@ IDiaEnumLineNumbers : IUnknown
 ## <a name="notes-for-callers"></a>呼叫端資訊  
  這個介面藉由呼叫其中一項中的下列方法取得[IDiaSession](../../debugger/debug-interface-access/idiasession.md)介面：  
   
--   [IDiaSession::findLines](../../debugger/debug-interface-access/idiasession-findlines.md)  
+- [IDiaSession::findLines](../../debugger/debug-interface-access/idiasession-findlines.md)  
   
--   [IDiaSession::findLinesByAddr](../../debugger/debug-interface-access/idiasession-findlinesbyaddr.md)  
+- [IDiaSession::findLinesByAddr](../../debugger/debug-interface-access/idiasession-findlinesbyaddr.md)  
   
--   [IDiaSession::findLinesByRVA](../../debugger/debug-interface-access/idiasession-findlinesbyrva.md)  
+- [IDiaSession::findLinesByRVA](../../debugger/debug-interface-access/idiasession-findlinesbyrva.md)  
   
--   [IDiaSession::findLinesByVA](../../debugger/debug-interface-access/idiasession-findlinesbyva.md)  
+- [IDiaSession::findLinesByVA](../../debugger/debug-interface-access/idiasession-findlinesbyva.md)  
   
--   [IDiaSession::findLinesByLinenum](../../debugger/debug-interface-access/idiasession-findlinesbylinenum.md)  
+- [IDiaSession::findLinesByLinenum](../../debugger/debug-interface-access/idiasession-findlinesbylinenum.md)  
   
 ## <a name="example"></a>範例  
  此範例示範如何取得`IDiaEnumLineNumbers`從工作階段的介面。 在此情況下，此範例會示範如何取得函式的行數字列舉 (由`pSymbol`)。 使用行號的更完整範例，請參閱 < [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)介面。  
@@ -94,20 +89,17 @@ void dumpFunctionLines( IDiaSymbol* pSymbol, IDiaSession* pSession )
 ```  
   
 ## <a name="requirements"></a>需求  
- 標頭： Dia2.h  
+ 標頭：dia2.h  
   
  程式庫： diaguids.lib  
   
  DLL: msdia80.dll  
   
 ## <a name="see-also"></a>另請參閱  
- [介面 （偵錯介面存取 SDK）](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
+ [介面 (偵錯介面存取 SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
- [Idiasession:: Findlinesbylinenum](../../debugger/debug-interface-access/idiasession-findlinesbylinenum.md)   
- [Idiasession:: Findlinesbyrva](../../debugger/debug-interface-access/idiasession-findlinesbyrva.md)   
- [Idiasession:: Findlinesbyva](../../debugger/debug-interface-access/idiasession-findlinesbyva.md)   
- [Idiasession:: Findlines](../../debugger/debug-interface-access/idiasession-findlines.md)   
+ [IDiaSession::findLinesByLinenum](../../debugger/debug-interface-access/idiasession-findlinesbylinenum.md)   
+ [IDiaSession::findLinesByRVA](../../debugger/debug-interface-access/idiasession-findlinesbyrva.md)   
+ [IDiaSession::findLinesByVA](../../debugger/debug-interface-access/idiasession-findlinesbyva.md)   
+ [IDiaSession::findLines](../../debugger/debug-interface-access/idiasession-findlines.md)   
  [IDiaSession::findLinesByAddr](../../debugger/debug-interface-access/idiasession-findlinesbyaddr.md)
-
-
-

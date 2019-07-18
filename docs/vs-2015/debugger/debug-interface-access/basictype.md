@@ -1,14 +1,9 @@
 ---
-title: BasicType |Microsoft Docs
-ms.custom: ''
+title: BasicType | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 19ae53ba-cd6e-47b6-9f94-27ae663ce955
 caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 633fb76a8177f239b988554a5d15bee09e00c2d9
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 38de89b9774ac20f67b91e4ba864534122f4cdb0
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51745026"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62580833"
 ---
 # <a name="basictype"></a>BasicType
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -63,16 +58,16 @@ enum BasicType { 
  基本類型是`void`。  
   
  btChar  
- 基本類型是`char`（C/c + + 型別）。  
+ 基本類型是`char`(C /C++型別)。  
   
  btWChar  
  基本類型是寬 (Unicode) 字元 (`WCHAR`)。  
   
  btInt  
- 基本類型是`signed int`（C/c + + 型別）。  
+ 基本類型是`signed int`(C /C++型別)。  
   
  btUInt  
- 基本類型是`unsigned int`（C/c + + 型別）。  
+ 基本類型是`unsigned int`(C /C++型別)。  
   
  btFloat  
  基本的型別是浮點數 (`FLOAT`)。  
@@ -84,10 +79,10 @@ enum BasicType { 
  基本的型別是布林值 (`BOOL`)。  
   
  btLong  
- 基本類型是`long int`（C/c + + 型別）。  
+ 基本類型是`long int`(C /C++型別)。  
   
  btULong  
- 基本類型是`unsigned long int`（C/c + + 型別）。  
+ 基本類型是`unsigned long int`(C /C++型別)。  
   
  btCurrency  
  基本類型為貨幣。  
@@ -118,8 +113,5 @@ enum BasicType { 
   
 ## <a name="see-also"></a>另請參閱  
  [列舉和結構](../../debugger/debug-interface-access/enumerations-and-structures.md)   
- [Idiasymbol:: Get_basetype](../../debugger/debug-interface-access/idiasymbol-get-basetype.md)   
+ [IDiaSymbol::get_baseType](../../debugger/debug-interface-access/idiasymbol-get-basetype.md)   
  [IDiaSymbol::get_length](../../debugger/debug-interface-access/idiasymbol-get-length.md)
-
-
-

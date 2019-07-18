@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 66feaa25b9910a48e192e80798e50d80d861fb08
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c1acd55ad9ea2d671730a656a673fd1f2ca3aa19
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55940603"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430887"
 ---
 # <a name="specify-custom-build-events-in-visual-studio"></a>在 Visual Studio 中指定自訂建置事件
 
@@ -24,11 +24,11 @@ ms.locfileid: "55940603"
 
  如需您所使用之程式設計語言的特定資訊，請參閱下列主題：
 
--   Visual Basic--[如何：指定建置事件 (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md)。
+- Visual Basic--[如何：指定建置事件 (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md)。
 
--   C# 和 F#--[如何：指定建置事件 (C#)](../ide/how-to-specify-build-events-csharp.md)。
+- C# 和 F#--[如何：指定建置事件 (C#)](../ide/how-to-specify-build-events-csharp.md)。
 
--   Visual C++ -- [指定建置事件](/cpp/ide/specifying-build-events)。
+- Visual C++ -- [指定建置事件](/cpp/ide/specifying-build-events)。
 
 ## <a name="syntax"></a>語法
 
@@ -53,7 +53,7 @@ ms.locfileid: "55940603"
    範例：`for %I in (*.txt *.doc *.html) do copy %I c:\`<我的目錄>`\`
 
   > [!NOTE]
-  >  在批次指令碼中，上述程式碼中的 `%I` 應該是 `%%I`。
+  > 在批次指令碼中，上述程式碼中的 `%I` 應該是 `%%I`。
 
 ## <a name="see-also"></a>另請參閱
 

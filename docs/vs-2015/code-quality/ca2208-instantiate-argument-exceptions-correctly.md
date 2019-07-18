@@ -1,14 +1,9 @@
 ---
-title: Ca2208： 必須正確執行個體化引數例外狀況 |Microsoft Docs
-ms.custom: ''
+title: CA2208:具現化引數例外狀況正確 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA2208
 - InstantiateArgumentExceptionsCorrectly
@@ -20,14 +15,14 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 55789b7d5b4b1e462b715649b7583299b9f02e6b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6d7020563d7bcbc794a0d2980a8dcc77c0d98d0b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49825598"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68142541"
 ---
-# <a name="ca2208-instantiate-argument-exceptions-correctly"></a>CA2208：請正確執行個體化引數例外狀況
+# <a name="ca2208-instantiate-argument-exceptions-correctly"></a>CA2208:必須正確執行個體化引數例外狀況
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -40,9 +35,9 @@ ms.locfileid: "49825598"
 ## <a name="cause"></a>原因
  可能的原因包括下列情況：
 
--   例外狀況類型，或衍生自 [System.ArgumentException] 預設 （無參數） 建構函式進行呼叫 (<!-- TODO: review code entity reference <xref:assetId:///System.ArgumentException?qualifyHint=True&amp;autoUpgrade=True>  -->)。
+- 呼叫例外狀況類型，或衍生自 [System.ArgumentException] （預設 （無參數） 建構函式<!-- TODO: review code entity reference <xref:assetId:///System.ArgumentException?qualifyHint=True&amp;autoUpgrade=True>  -->) 來存取它所儲存的值。
 
--   不正確的字串引數傳遞至參數化建構函式的例外狀況型別，或衍生自 [System.ArgumentException。](<!-- TODO: review code entity reference <xref:assetId:///System.ArgumentException.?qualifyHint=True&amp;autoUpgrade=True>  -->)
+- 不正確的字串引數傳遞至參數化建構函式的例外狀況型別，或衍生自 [System.ArgumentException。](<!-- TODO: review code entity reference <xref:assetId:///System.ArgumentException.?qualifyHint=True&amp;autoUpgrade=True>  -->)
 
 ## <a name="rule-description"></a>規則描述
  而不是呼叫預設建構函式，呼叫其中一個建構函式多載，可讓提供更有意義的例外狀況訊息。 例外狀況訊息應該為目標的開發人員，並清楚地說明錯誤狀況，以及如何修正或避免此例外狀況。
@@ -84,6 +79,3 @@ ms.locfileid: "49825598"
  [!code-cpp[FxCop.Usage.InstantiateArgumentExceptionsCorrectly#2](../snippets/cpp/VS_Snippets_CodeAnalysis/FxCop.Usage.InstantiateArgumentExceptionsCorrectly/cpp/FxCop.Usage.InheritedPublic.cpp#2)]
  [!code-csharp[FxCop.Usage.InstantiateArgumentExceptionsCorrectly#2](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.InstantiateArgumentExceptionsCorrectly/cs/FxCop.Usage.InheritedPublic.cs#2)]
  [!code-vb[FxCop.Usage.InstantiateArgumentExceptionsCorrectly#2](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Usage.InstantiateArgumentExceptionsCorrectly/vb/FxCop.Usage.InstantiateArgumentExceptionsCorrectly.vb#2)]
-
-
-

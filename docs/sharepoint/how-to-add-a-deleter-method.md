@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d7a486ea4a448cb30b64631589f003854e8b1b40
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: c9d005ef8bade9f83027c216d875d24aad602449
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56644389"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63418345"
 ---
 # <a name="how-to-add-a-deleter-method"></a>HOW TO：新增刪除者方法
   您可以讓使用者從 SharePoint 網站上的外部清單刪除資料錄，藉由加入模型中的刪除者方法。 如需詳細資訊，請參閱 <<c0> [ 設計 business data connectivity 模型](../sharepoint/designing-a-business-data-connectivity-model.md)。
@@ -58,10 +58,10 @@ ms.locfileid: "56644389"
 5. 若要刪除記錄的刪除者方法中加入程式碼。 下列範例會刪除從銷售訂單中行項目，使用 AdventureWorks 範例資料庫的 SQL Server。
 
    > [!NOTE]
-   >  此範例中的方法會使用兩個輸入的參數。
+   > 此範例中的方法會使用兩個輸入的參數。
 
    > [!NOTE]
-   >  值取代`ServerName`欄位與您伺服器的名稱。
+   > 值取代`ServerName`欄位與您伺服器的名稱。
 
     [!code-csharp[SP_BDC#6](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/salesorderdetailservice.cs#6)]
     [!code-vb[SP_BDC#6](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/salesorderdetailservice.vb#6)]

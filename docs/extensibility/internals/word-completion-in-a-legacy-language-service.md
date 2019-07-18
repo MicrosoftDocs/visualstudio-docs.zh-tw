@@ -7,17 +7,17 @@ helpviewer_keywords:
 - IntelliSense, Complete Word
 - Complete Word
 ms.assetid: 0ace5ac3-f9e1-4e6d-add4-42967b1f96a6
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0f81895766a94bd22e533ead3078b3852ed68ca0
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 26495f909d815b32ff8a75c2529ba30eabf3b5c8
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56599842"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66309717"
 ---
 # <a name="word-completion-in-a-legacy-language-service"></a>舊版語言服務中的文字自動完成
 文字自動完成會填入遺漏的字元，在部分輸入的字組。 如果只有一個可能的完成，這個字被完成時完成輸入的字元是。 如果部分文字比對一個以上的可能性，會顯示可能的完成清單。 完成字元可以是任何字元，不會用於識別項。
@@ -25,7 +25,7 @@ ms.locfileid: "56599842"
  舊版語言服務會實作成 VSPackage 的一部分，但實作語言服務功能的較新的方式是使用 MEF 擴充功能。 若要深入了解，請參閱[擴充編輯器和語言服務](../../extensibility/extending-the-editor-and-language-services.md)。
 
 > [!NOTE]
->  我們建議您開始使用新的編輯器 API 盡。 這會改善您的語言服務的效能，並可讓您充分利用新編輯器功能。
+> 我們建議您開始使用新的編輯器 API 盡。 這會改善您的語言服務的效能，並可讓您充分利用新編輯器功能。
 
 ## <a name="implementation-steps"></a>實作步驟
 

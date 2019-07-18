@@ -12,14 +12,14 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 683e9e6fdd6108ade3a991ce5280a2f8024fe496
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
-ms.translationtype: MTE95
+ms.openlocfilehash: c71c0e7f8961b5f7c545fb59597cdd173230fc08
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54834913"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65680496"
 ---
-# <a name="how-to-create-a-nullable-type-class-designer"></a>如何：建立可為 Null 的類型 (類別設計工具)
+# <a name="how-to-create-a-nullable-type-class-designer"></a>作法：建立可為 Null 的型別 (類別設計工具)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 特定實值型別不一定具有 (或需要) 定義的值。 這種情況在資料庫中為常見做法，其中的部分欄位不會指派任何值。 比方說，您可能將 null 值指派給資料庫欄位，以表示該欄位尚未指派值。  
@@ -36,23 +36,23 @@ ms.locfileid: "54834913"
   
   [類別設計工具] 針對可為 Null 型別的顯示方式，完全與顯示其基礎類型一樣。  
   
-  如需 Visual C# 可為 Null 型別的詳細資訊，請參閱[可為 Null 的型別](http://msdn.microsoft.com/library/e473cb01-28ca-42be-9cea-f717055d72c6)。 如需 Visual Basic 可為 Null 型別的詳細資訊，請參閱[可為 Null 的實值類型](http://msdn.microsoft.com/library/9ac3b602-6f96-4e6d-96f7-cd4e81c468a6)。  
+  如需 Visual C# 可為 Null 型別的詳細資訊，請參閱[可為 Null 的型別](https://msdn.microsoft.com/library/e473cb01-28ca-42be-9cea-f717055d72c6)。 如需 Visual Basic 可為 Null 型別的詳細資訊，請參閱[可為 Null 的實值類型](https://msdn.microsoft.com/library/9ac3b602-6f96-4e6d-96f7-cd4e81c468a6)。  
   
   [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
   
 ### <a name="to-add-a-nullable-type-by-using-the-class-designer"></a>若要使用類別設計工具，新增可為 Null 的型別  
   
-1.  在類別圖表中，展開現有類別，或建立新的類別。  
+1. 在類別圖表中，展開現有類別，或建立新的類別。  
   
-2.  若要將類別新增至專案，請依序按一下 [類別圖表] 功能表上的 [新增] 和 [新增類別]。  
+2. 若要將類別新增至專案，請依序按一下 [類別圖表] 功能表上的 [新增] 和 [新增類別]。  
   
-3.  若要展開類別圖形，請按一下 [類別圖表] 功能表上的 [展開]。  
+3. 若要展開類別圖形，請按一下 [類別圖表] 功能表上的 [展開]。  
   
-4.  選取類別圖形。 在 [類別圖表] 功能表上，按一下 [新增]，然後按一下 [欄位]。 接著，在類別圖形和 [類別細節] 視窗中，即會出現一個新欄位 (預設名稱為 [欄位])。  
+4. 選取類別圖形。 在 [類別圖表] 功能表上，按一下 [新增]，然後按一下 [欄位]。 接著，在類別圖形和 [類別細節] 視窗中，即會出現一個新欄位 (預設名稱為 [欄位])。  
   
-5.  在 [類別細節] 視窗 (或類別圖形本身) 的 [名稱] 資料行中，將新欄位的名稱變更為有效且有意義的名稱。  
+5. 在 [類別細節] 視窗 (或類別圖形本身) 的 [名稱] 資料行中，將新欄位的名稱變更為有效且有意義的名稱。  
   
-6.  在 [類別細節] 視窗的 [類型] 資料行中，將類型宣告為可為 Null 的型別，如下列程式碼所示：  
+6. 在 [類別細節] 視窗的 [類型] 資料行中，將類型宣告為可為 Null 的型別，如下列程式碼所示：  
   
     ```csharp  
     // Declare a nullable type in Visual C#:  
@@ -71,19 +71,19 @@ ms.locfileid: "54834913"
   
 ### <a name="to-add-a-nullable-type-by-using-the-code-editor"></a>若要使用程式碼編輯器，新增可為 Null 的型別  
   
-1.  將類別加入至專案。 在方案總管中，選取專案節點，然後按一下 [專案] 功能表上的 [新增類別]。  
+1. 將類別加入至專案。 在方案總管中，選取專案節點，然後按一下 [專案] 功能表上的 [新增類別]。  
   
-2.  若為新類別，可在 .cs 或 .vb 檔案中，將新類別中的一或多個可為 Null 的型別新增至類別宣告。  
+2. 若為新類別，可在 .cs 或 .vb 檔案中，將新類別中的一或多個可為 Null 的型別新增至類別宣告。  
   
-3.  從 [類別檢視] 中，將新類別圖示拖曳至 [類別設計工具] 的設計介面。 類別圖表中隨即出現類別圖形。  
+3. 從 [類別檢視] 中，將新類別圖示拖曳至 [類別設計工具] 的設計介面。 類別圖表中隨即出現類別圖形。  
   
-4.  展開類別圖形的詳細資料，然後將滑鼠指標移至類別成員上方。 工具提示會顯示每個成員的宣告。  
+4. 展開類別圖形的詳細資料，然後將滑鼠指標移至類別成員上方。 工具提示會顯示每個成員的宣告。  
   
-5.  以滑鼠右鍵按一下類別圖形，然後按一下 [類別細節]。 您可以在 [類別細節] 視窗中檢視或修改新類型的屬性。  
+5. 以滑鼠右鍵按一下類別圖形，然後按一下 [類別細節]。 您可以在 [類別細節] 視窗中檢視或修改新類型的屬性。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  <xref:System.Nullable%601>   
- [可為 Null 的型別](http://msdn.microsoft.com/library/e473cb01-28ca-42be-9cea-f717055d72c6)   
- [使用可為 Null 的型別](http://msdn.microsoft.com/library/0bacbe72-ce15-4b14-83e1-9c14e6380c28)   
- [如何：識別可為 Null 的型別](http://msdn.microsoft.com/library/d4b67ee2-66e8-40c1-ae9d-545d32c71387)   
- [可為 Null 的值類型](http://msdn.microsoft.com/library/9ac3b602-6f96-4e6d-96f7-cd4e81c468a6)
+ [可為 Null 的型別](https://msdn.microsoft.com/library/e473cb01-28ca-42be-9cea-f717055d72c6)   
+ [使用可為 Null 的型別](https://msdn.microsoft.com/library/0bacbe72-ce15-4b14-83e1-9c14e6380c28)   
+ [如何：識別可為 Null 的型別](https://msdn.microsoft.com/library/d4b67ee2-66e8-40c1-ae9d-545d32c71387)   
+ [可為 Null 的值類型](https://msdn.microsoft.com/library/9ac3b602-6f96-4e6d-96f7-cd4e81c468a6)

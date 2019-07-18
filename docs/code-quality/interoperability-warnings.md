@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b68ea8c66b26ee2463969ca71b8f0e5ac78b3f0a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 7a4e8f7bc60704842a8a0e940b336b4bb79093b2
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55921779"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66745131"
 ---
 # <a name="interoperability-warnings"></a>互通性警告
 
@@ -32,7 +32,7 @@ ms.locfileid: "55921779"
 | [CA1400:P/Invoke 進入點應該要存在](../code-quality/ca1400-p-invoke-entry-points-should-exist.md) | 公用或受保護的方法是使用 System.Runtime.InteropServices.DllImportAttribute 屬性來標記。 有可能是找不到 Unmanaged 程式庫，或是方法不符合程式庫中的函式。 |
 | [CA1401:P/Invokes 不應該為可見](../code-quality/ca1401-p-invokes-should-not-be-visible.md) | 公用類型中的公用或受保護的方法具有 System.Runtime.InteropServices.DllImportAttribute 屬性 （也在 Visual Basic 中的 Declare 關鍵字實作）。 但不得公開 (Expose) 此類方法。 |
 | [CA1402:避免在 COM 可見介面中的多載](../code-quality/ca1402-avoid-overloads-in-com-visible-interfaces.md) | 當多載方法會對 COM 用戶端公開 (Expose) 時，只有第一個方法多載會保留它的名稱。 後續的多載則會透過將名稱附加至底線字元 (_) 和對應於多載宣告之順序的整數，重新命名為唯一的名稱。 |
-| [CA1403:自動配置類型不應該是 COM 可見](../code-quality/ca1403-auto-layout-types-should-not-be-com-visible.md) | COM 可見實值類型是使用設為 LayoutKind.Auto 的 System.Runtime.InteropServices.StructLayoutAttribute 屬性來標記。這些類型的配置可以變更版本之間的.NET Framework 中，將會中斷 COM 用戶端預期特定的版面配置。 |
+| [CA1403:自動配置類型不應該是 COM 可見](../code-quality/ca1403-auto-layout-types-should-not-be-com-visible.md) | COM 可見實值類型是使用設為 LayoutKind.Auto 的 System.Runtime.InteropServices.StructLayoutAttribute 屬性來標記。這些類型的配置可以變更將會中斷 COM 用戶端預期特定的版面配置的.NET 版本之間。 |
 | [CA1404： 必須P/Invoke 之後立即呼叫 GetLastError](../code-quality/ca1404-call-getlasterror-immediately-after-p-invoke.md) | 呼叫對 Marshal.GetLastWin32Error 方法或對等項目[!INCLUDE[TLA2#tla_win32](../code-quality/includes/tla2sharptla_win32_md.md)]GetLastError 函式，並立即在前一個呼叫不到平台叫用方法。 |
 | [CA1405:COM 可見類型的基底類型應該是 COM 可見](../code-quality/ca1405-com-visible-type-base-types-should-be-com-visible.md) | COM 可見類型會衍生自不是 COM 可見的類型。 |
 | [CA1406:避免對 Visual Basic 6 用戶端的 Int64 引數](../code-quality/ca1406-avoid-int64-arguments-for-visual-basic-6-clients.md) | Visual Basic 6 COM 用戶端無法存取 64 位元整數。 |

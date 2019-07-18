@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - SccCheckin function
 ms.assetid: e3f26ac2-6163-42e1-a764-22cfea5a3bc6
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 178cebb974147a95aac35ebabe484dc4a7777407
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 22264f9882192e05a9812cad4d6ea7f74bfdabfc
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56689456"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66333946"
 ---
 # <a name="scccheckin-function"></a>SccCheckin 函式
 此函式會檢查在先前會在簽出原始檔控制系統，儲存所做的變更和建立的新版本的檔案。 此函式呼叫計數與簽入的檔案名稱的陣列。

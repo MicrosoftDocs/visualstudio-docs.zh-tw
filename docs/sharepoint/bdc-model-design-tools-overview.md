@@ -23,12 +23,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: eb2f257feaa8faa6acf58c8e8763d15d08a1079e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 7a2531f1cc6352a03acf0b3d6af82c35e47c2743
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56596564"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63387721"
 ---
 # <a name="bdc-model-design-tools-overview"></a>BDC 模型設計工具概觀
   您可以使用 [BDC 設計工具中，設計商務資料連接 (BDC) 模型**BDC 方法詳細資料**] 視窗中，而**BDC 總管**。
@@ -63,13 +63,13 @@ ms.locfileid: "56596564"
  當您選擇在節點**BDC 總管**，您選擇每個節點的屬性會出現在**屬性**視窗。 許多這些屬性對應至模型檔案中的屬性。 您可以使用頂端的 [搜尋] 方塊中搜尋模型**BDC 總管**。
 
 > [!NOTE]
->  **BDC 總管**不會顯示識別項、 自訂屬性、 當地語系化的字串、 關聯群組、 動作、 篩選描述元、 動作控制清單，以及預設參數值。
+> **BDC 總管**不會顯示識別項、 自訂屬性、 當地語系化的字串、 關聯群組、 動作、 篩選描述元、 動作控制清單，以及預設參數值。
 
 ### <a name="define-type-descriptors"></a>定義型別描述項
  使用**BDC 總管**定義型別描述項。 BDC 總管可讓您定義的型別描述元一次，然後重複使用該型別描述項，您的模型中的其他位置。 若要這麼做，複製類型描述元並將它貼到任何其他參數或型別描述項。
 
 > [!NOTE]
->  原始的型別描述項的變更不會影響該型別描述項的複本。
+> 原始的型別描述項的變更不會影響該型別描述項的複本。
 
  如需詳細資訊，請參閱[如何：定義參數的型別描述元](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)。
 

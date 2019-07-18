@@ -1,14 +1,9 @@
 ---
-title: IDebugExceptionEvent2 |Microsoft Docs
-ms.custom: ''
+title: IDebugExceptionEvent2 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugExceptionEvent2
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 53d32e59-a84b-4710-833e-c5ab08100516
 caps.latest.revision: 12
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 6ac2e9a85d66ad93b8b0ae1c80ee82e915fa9d86
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f364b6aa622bf9c7481d61e7646e955cebe00933
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51743368"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695393"
 ---
 # <a name="idebugexceptionevent2"></a>IDebugExceptionEvent2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -36,7 +31,7 @@ IDebugExceptionEvent2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>實作者的附註  
- DE 會實作這個介面來進行偵錯的程式中，發生例外狀況的報表。 [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)介面必須實作此介面的相同物件上。 使用 SDM [QueryInterface](http://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3)若要存取`IDebugEvent2`介面。  
+ DE 會實作這個介面來進行偵錯的程式中，發生例外狀況的報表。 [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)介面必須實作此介面的相同物件上。 使用 SDM [QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3)若要存取`IDebugEvent2`介面。  
   
 ## <a name="notes-for-callers"></a>呼叫端資訊  
  DE 建立，並傳送這個事件物件，以報告例外狀況。 事件會使用傳送[IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)它附加到正在偵錯程式時，會將 SDM 所提供的回呼函式。  
@@ -54,9 +49,9 @@ IDebugExceptionEvent2 : IUnknown
 ## <a name="requirements"></a>需求  
  標頭： msdbg.h  
   
- 命名空間： Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間：Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="remarks"></a>備註  
  在之前傳送事件，DE 會檢查以查看 是否這個例外狀況事件已指定發生第一個或第二個可能發生的例外狀況的先前呼叫所[SetException](../../../extensibility/debugger/reference/idebugengine2-setexception.md)。 如果已指定為第一個可能發生的例外狀況， `IDebugExceptionEvent2` SDM 來傳送事件。 如果沒有，DE 讓應用程式有機會處理例外狀況。 如果未不提供任何例外狀況處理常式，則與例外狀況已指定為第二個可能發生的例外狀況，如果`IDebugExceptionEvent2`SDM 來傳送事件。 否則，DE 繼續執行程式，而且作業系統或執行階段處理的例外狀況。  
@@ -66,4 +61,3 @@ IDebugExceptionEvent2 : IUnknown
  [SetException](../../../extensibility/debugger/reference/idebugengine2-setexception.md)   
  [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)   
  [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)
-

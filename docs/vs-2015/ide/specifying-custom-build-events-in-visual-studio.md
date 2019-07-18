@@ -11,12 +11,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3eca61e696fea82952e3efde5cea1f6164d5bab5
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: d00c520f75869e6cf886074c482575f1170e923a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54775842"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65679520"
 ---
 # <a name="specifying-custom-build-events-in-visual-studio"></a>在 Visual Studio 中指定自訂建置事件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,35 +25,35 @@ ms.locfileid: "54775842"
 
  如需您所使用之程式設計語言的特定資訊，請參閱下列主題：
 
--   Visual Basic -- [如何：指定建置事件 (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md)。
+- Visual Basic--[如何：指定建置事件 (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md)。
 
--   Visual C# 和 F# -- [如何：指定建置事件 (C#)](../ide/how-to-specify-build-events-csharp.md)。
+- 視覺化C#和F#-[如何：指定建置事件 (C#)](../ide/how-to-specify-build-events-csharp.md)。
 
--   Visual C++ -- [指定建置事件](http://msdn.microsoft.com/library/788a6c18-2dbe-4a49-8cd6-86c1ad7a95cc)。
+- Visual C++ -- [指定建置事件](https://msdn.microsoft.com/library/788a6c18-2dbe-4a49-8cd6-86c1ad7a95cc)。
 
 ## <a name="syntax"></a>語法
  建置事件遵循與 DOS 命令相同的語法，不過您可以使用巨集更輕鬆地建立建置事件。 如需可用巨集的清單，請參閱[建置前事件/建置後事件命令列對話方塊](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md)。
 
  為了獲得最佳結果，請依照下列格式秘訣：
 
--   在執行 .bat 檔案的所有建置事件之前加入 `call` 陳述式。
+- 在執行 .bat 檔案的所有建置事件之前加入 `call` 陳述式。
 
      範例：`call C:\MyFile.bat`
 
      範例：`call C:\MyFile.bat call C:\MyFile2.bat`
 
--   以引號括住檔案路徑。
+- 以引號括住檔案路徑。
 
      範例 (適用於 [!INCLUDE[win8](../includes/win8-md.md)])：如果是 "$(TargetPath)"，則為 "%ProgramFiles(x86)%\Microsoft SDKs\Windows\v8.0A\Bin\NETFX 4.0 Tools\gacutil.exe"
 
--   使用分行符號來分隔多個命令。
+- 使用分行符號來分隔多個命令。
 
--   視需要包含萬用字元。
+- 視需要包含萬用字元。
 
      範例：`for %I in (*.txt *.doc *.html) do copy %I c:\`<我的目錄>`\`
 
     > [!NOTE]
-    >  在批次指令碼中，上述程式碼中的 `%I` 應該是 `%%I`。
+    > 在批次指令碼中，上述程式碼中的 `%I` 應該是 `%%I`。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
  [編譯和建置](../ide/compiling-and-building-in-visual-studio.md)[建置前事件/建置後事件命令列對話方塊](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md) [MSBuild 特殊字元](../msbuild/msbuild-special-characters.md)[逐步解說：建置應用程式](../ide/walkthrough-building-an-application.md)

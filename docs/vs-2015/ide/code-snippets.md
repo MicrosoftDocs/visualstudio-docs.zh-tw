@@ -20,16 +20,16 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: e28ebd46a03983e60ebdd3fc22dd55d85249f710
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54774869"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68188848"
 ---
 # <a name="code-snippets"></a>程式碼片段
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-程式碼片段是可重複使用的程式碼之小型區塊，可以使用操作功能表命令或快速鍵的組合在程式碼檔案中插入。 它們通常包含常用的程式碼區塊，例如 try-finally 或 if-else 區塊，但是它們可以用來插入整個類別或方法。  
+程式碼片段是可重複使用的程式碼之小型區塊，可以使用內容功能表命令或快速鍵的組合在程式碼檔案中插入。 它們通常包含常用的程式碼區塊，例如 try-finally 或 if-else 區塊，但是它們可以用來插入整個類別或方法。  
   
 ## <a name="expansion-snippets-and-surround-with-snippets"></a>擴充程式碼片段和範圍陳述式程式碼片段  
  在 Visual Studio 中，有兩種類型的程式碼片段：擴充程式碼片段，這會在指定的插入點加入，而且可能會取代程式碼片段捷徑，以及範圍陳述式程式碼片段 (僅限 C# 和 C++)，可在選取的程式碼區塊前後加入。  
@@ -48,9 +48,9 @@ finally
   
 ```  
   
- 插入此程式碼片段的方式，是在程式碼視窗的操作功能表中依序按一下 [插入程式碼片段] 和 [Visual C#]，並鍵入 `tryf`，然後按 TAB，也可以鍵入 `tryf`，然後按 TAB + TAB。  
+ 插入此程式碼片段的方式，是在程式碼視窗的操作功能表中依序按一下 [插入程式碼片段]  和 [Visual C#]  ，並鍵入 `tryf`，然後按 TAB，也可以鍵入 `tryf`，然後按 TAB + TAB。  
   
- 範圍陳述式程式碼片段的範例：在 C++中，捷徑 `if` 可用作插入程式碼片段或範圍陳述式程式碼片段。 如果您選取一行程式碼 (例如 `return FALSE;`)，然後依序按一下 [Surround With] (範圍陳述式) 和 [if]，程式碼片段隨即在此行周圍展開：  
+ 範圍陳述式程式碼片段的範例：在 C++中，捷徑 `if` 可用作插入程式碼片段或範圍陳述式程式碼片段。 如果您選取一行程式碼 (例如 `return FALSE;`)，然後依序按一下 [Surround With] (範圍陳述式)  和 [if]  ，程式碼片段隨即在此行周圍展開：  
   
 ```  
 if (true)  
@@ -63,7 +63,7 @@ if (true)
 ## <a name="snippet-replacement-parameters"></a>程式碼片段取代參數  
  程式碼片段可以包含取代參數，這些都是您必須取代的預留位置，以符合您要撰寫的精確程式碼。 在上述範例中，`true` 是取代參數，您必須以適當的條件取代。 在此程式碼片段中同一個取代參數的每個執行個體都要重複這項您所進行的取代。  
   
- 例如，在 Visual Basic 中有會插入屬性的程式碼片段。 按一下程式碼視窗操作功能表上的 [插入程式碼片段]，然後依序按一下 [程式碼模式]、[屬性]、[程序]、[事件] 和 [定義屬性]。 以下是已插入的程式碼：  
+ 例如，在 Visual Basic 中有會插入屬性的程式碼片段。 按一下程式碼視窗操作功能表上的 [插入程式碼片段]  ，然後依序按一下 [程式碼模式]  、[屬性]、[程序]、[事件]  和 [定義屬性]。 以下是已插入的程式碼：  
   
 ```  
 Private newPropertyValue As String  
@@ -81,11 +81,11 @@ End Property
  如果您變更 `newPropertyValue` 為 `m_property`，則會變更每個 `newPropertyValue` 的執行個體。 如果您在屬性宣告中變更 `String` 為 `Int`，則已設定方法中的值也會變更為 `Int`。  
   
 ## <a name="code-snippet-manager"></a>程式碼片段管理員  
- 按一下 [工具/程式碼片段管理員]，即可看到目前安裝的所有程式碼片段，以及其在磁碟上的位置。 程式碼片段會依語言顯示。  
+ 按一下 [工具/程式碼片段管理員]  ，即可看到目前安裝的所有程式碼片段，以及其在磁碟上的位置。 程式碼片段會依語言顯示。  
   
- 您可以在 [程式碼片段管理員] 對話方塊中使用 [新增] 和 [移除] 按鈕，來新增和移除程式碼片段目錄。 若要新增個別程式碼片段，請使用 [匯入] 按鈕。  
+ 您可以在 [程式碼片段管理員]  對話方塊中使用 [新增]  和 [移除]  按鈕，來新增和移除程式碼片段目錄。 若要新增個別程式碼片段，請使用 [匯入]  按鈕。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [逐步解說：建立程式碼片段](../ide/walkthrough-creating-a-code-snippet.md)   
  [如何：散發程式碼片段](../ide/how-to-distribute-code-snippets.md)   
  [使用程式碼片段的最佳做法](../ide/best-practices-for-using-code-snippets.md)   

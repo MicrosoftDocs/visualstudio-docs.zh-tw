@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProcess2::EnumThreads
 ms.assetid: 05677385-7a7f-4545-8438-af00dde85db0
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f1ca619fe00ca29fb8788a450fab1ec5237be984
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 664f4264fd12106fef0650a31a888470e09a3154
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56721900"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66353173"
 ---
 # <a name="idebugprocess2enumthreads"></a>IDebugProcess2::EnumThreads
 擷取處理序中執行的所有執行緒的清單。
@@ -36,10 +39,9 @@ int EnumThreads(
 );
 ```
 
-#### <a name="parameters"></a>參數
- `ppEnum`
-
- [out]傳回[IEnumDebugThreads2](../../../extensibility/debugger/reference/ienumdebugthreads2.md)物件，其中包含一份程序中的所有程式 中的所有執行緒。
+## <a name="parameters"></a>參數
+`ppEnum`\
+[out]傳回[IEnumDebugThreads2](../../../extensibility/debugger/reference/ienumdebugthreads2.md)物件，其中包含一份程序中的所有程式 中的所有執行緒。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

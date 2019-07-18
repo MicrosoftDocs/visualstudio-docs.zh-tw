@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: badb2266e47fcbf0bb20c5fd6fd2f7f25a167997
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56639982"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62830911"
 ---
 # <a name="marks-view"></a>標記檢視
 [標記] 檢視會顯示插入應用程式中的取樣和 ETW 事件。

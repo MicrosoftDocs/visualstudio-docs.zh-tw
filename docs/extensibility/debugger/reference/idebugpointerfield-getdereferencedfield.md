@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPointerField::GetDereferencedField method
 ms.assetid: 8de988ab-cd79-4287-be72-3c900f2fe407
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 51ddd954e069ae2f6a683b727305808b8591d4f2
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: fef8ee4e584703338afd09e5303ac184f28b3a49
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56680330"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66331616"
 ---
 # <a name="idebugpointerfieldgetdereferencedfield"></a>IDebugPointerField::GetDereferencedField
 這個方法會傳回這個指標物件所指向的物件型別。
@@ -36,10 +39,9 @@ int GetDereferencedField(
 );
 ```
 
-#### <a name="parameters"></a>參數
- `ppField`
-
- [out]傳回[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)描述的目標物件類型。
+## <a name="parameters"></a>參數
+`ppField`\
+[out]傳回[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)描述的目標物件類型。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

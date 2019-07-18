@@ -1,29 +1,24 @@
 ---
-title: 如何： 實作巢狀的專案 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：實作巢狀的專案 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - nested projects, implementing
 - projects [Visual Studio SDK], nesting
 ms.assetid: d20b8d6a-f0e0-4115-b3a3-edda893ae678
 caps.latest.revision: 18
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 8a392b8b336c57c47055357147075f29ba173d8f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 427ef425c64323246ffe1141d081fd7d921506a6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51810126"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435243"
 ---
-# <a name="how-to-implement-nested-projects"></a>如何： 實作巢狀的專案
+# <a name="how-to-implement-nested-projects"></a>HOW TO：實作巢狀專案
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 當您建立巢狀的專案類型，有幾個額外步驟必須實作。 父專案會採用一些相同的方案具有及其巢狀 （子系） 專案的責任。 父專案是類似於方案的專案的容器。 特別是，有數個必須在解決方案，以及若要建立巢狀專案的階層的父專案所引發的事件。 這些事件是以建立巢狀的專案的下列程序所述。  
@@ -33,7 +28,7 @@ ms.locfileid: "51810126"
 1. 整合式的開發環境 (IDE) 載入父專案的專案檔案和啟動資訊，藉由呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory>介面。 父專案建立並加入至方案。  
   
    > [!NOTE]
-   >  到目前為止，則還太早父專案來建立巢狀的專案，因為必須先建立父專案，可以建立子專案的程序。 依照這個順序中，父專案可以將設定套用至子專案，並視子專案能夠取得父專案中的資訊。 此序列是需要在原始程式碼控制 (SCC) 等方案總管 中的用戶端。  
+   > 到目前為止，則還太早父專案來建立巢狀的專案，因為必須先建立父專案，可以建立子專案的程序。 依照這個順序中，父專案可以將設定套用至子專案，並視子專案能夠取得父專案中的資訊。 此序列是需要在原始程式碼控制 (SCC) 等方案總管 中的用戶端。  
   
     父專案必須等候<xref:Microsoft.VisualStudio.Shell.Interop.IVsParentProject.OpenChildren%2A>專案，它可以建立巢狀 （子） 之前，IDE 所要呼叫的方法。  
   
@@ -62,7 +57,7 @@ ms.locfileid: "51810126"
     如果已經存在，則父專案會建立每個巢狀專案的 GUID 藉由呼叫`CoCreateGuid`。  
   
    > [!NOTE]
-   >  `CoCreateGuid` COM API 呼叫時要建立的 GUID。 如需詳細資訊，請參閱`CoCreateGuid`和 MSDN Library 中的 Guid。  
+   > `CoCreateGuid` COM API 呼叫時要建立的 GUID。 如需詳細資訊，請參閱`CoCreateGuid`和 MSDN Library 中的 Guid。  
   
     父專案會儲存此 GUID 要擷取下一次，它會在 IDE 中開啟其專案檔中。 請參閱步驟 4 與呼叫相關的詳細資訊`AddVirtualProjectEX`擷取`guidProjectID`子專案。  
   
@@ -71,7 +66,7 @@ ms.locfileid: "51810126"
      因為父和子專案具現化以程式設計的方式，您可以在此時設定巢狀專案的屬性。  
   
     > [!NOTE]
-    >  不只執行您會看到從巢狀專案中，執行的內容資訊，但您也可以要求父專案是否已藉由檢查該項目的任何內容<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID>。 如此一來，您可以加入額外的動態說明屬性及功能表選項，指定個別的巢狀專案。  
+    > 不只執行您會看到從巢狀專案中，執行的內容資訊，但您也可以要求父專案是否已藉由檢查該項目的任何內容<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID>。 如此一來，您可以加入額外的動態說明屬性及功能表選項，指定個別的巢狀專案。  
   
 10. 階層是顯示在 [方案總管] 藉由呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetNestedHierarchy%2A>方法。  
   
@@ -96,7 +91,6 @@ ms.locfileid: "51810126"
 ## <a name="see-also"></a>另請參閱  
  [新增項目加入新項目對話方塊](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md)   
  [註冊專案和項目範本](../../extensibility/internals/registering-project-and-item-templates.md)   
- [檢查清單： 建立新的專案類型](../../extensibility/internals/checklist-creating-new-project-types.md)   
+ [檢查清單：建立新的專案類型](../../extensibility/internals/checklist-creating-new-project-types.md)   
  [內容參數](../../extensibility/internals/context-parameters.md)   
  [精靈檔 (.Vsz)](../../extensibility/internals/wizard-dot-vsz-file.md)
-

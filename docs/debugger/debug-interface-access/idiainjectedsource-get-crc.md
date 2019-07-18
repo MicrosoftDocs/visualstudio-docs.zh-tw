@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 39fb027c5e23d0d18443a22848b181e64347669a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56598787"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62839897"
 ---
 # <a name="idiainjectedsourcegetcrc"></a>IDiaInjectedSource::get_crc
 擷取從來源程式碼位元組計算的循環冗餘檢查 (CRC)。
@@ -38,5 +38,5 @@ HRESULT get_crc ( 
 ## <a name="return-value"></a>傳回值
  如果成功，會傳回 `S_OK`。 傳回`S_FALSE`不支援這個屬性，則為。 否則會傳回錯誤碼。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)

@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2b1859d422b0f3a76947a64e754521efcda46e65
-ms.sourcegitcommit: 4c7a0c2d712eb24609216577a793e912a6083eaf
+ms.openlocfilehash: 1afeb6f75648ce2ab1687fa9262ab28b658b0d70
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "57982931"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62820814"
 ---
 # <a name="install-net-compiler-platform-analyzers"></a>安裝.NET Compiler Platform 分析器
 
@@ -24,14 +24,14 @@ Visual Studio 包含一組核心.NET 編譯器平台 (*Roslyn*) 分析器。 這
 
 ## <a name="to-install-nuget-analyzer-packages"></a>若要安裝 NuGet 分析器套件
 
-1. 尋找您想要在 www.nuget.org 安裝分析器套件。例如，您可能想要[安裝 Microsoft FxCop 分析器](install-fxcop-analyzers.md#to-install-fxcop-analyzers-as-a-nuget-package)來檢查您的程式碼，如需安全性和效能問題，其他項目。
+1. 尋找您想要在 www.nuget.org 安裝分析器套件。
+
+   例如，您可能想要[安裝 Microsoft FxCop 分析器](install-fxcop-analyzers.md#to-install-fxcop-analyzers-as-a-nuget-package)來檢查您的程式碼，如需安全性和效能問題，其他項目。 或者，安裝[StyleCopAnalyzers](https://www.nuget.org/packages/stylecop.analyzers/)來尋找程式碼基底中的樣式問題。
 
 2. 在 Visual Studio 中，使用安裝套件[Package Manager Console](/nuget/quickstart/install-and-use-a-package-in-visual-studio#package-manager-console)或[套件管理員 UI](/nuget/quickstart/install-and-use-a-package-in-visual-studio#package-manager-console)。
 
    > [!NOTE]
    > 每個分析器套件的 www.nuget.org 頁面會顯示貼到命令**Package Manager Console**。 甚至還有一些好用的按鈕，以將文字複製到剪貼簿。
-   >
-   > ![顯示套件管理員主控台命令的 NuGet.org 頁面](media/nuget-install-command.png)
 
    分析器組件已安裝，並會出現在**方案總管**下方**參考** > **分析器**。
 
@@ -41,7 +41,7 @@ Visual Studio 包含一組核心.NET 編譯器平台 (*Roslyn*) 分析器。 這
 
 1. 在 Visual Studio 中，選取**工具** > **擴充功能和更新**。
 
-   [擴充功能和更新] 對話方塊隨即開啟。
+   [擴充功能和更新]  對話方塊隨即開啟。
 
    > [!NOTE]
    > 或者，您可以在其中尋找並下載分析器擴充功能，直接從[Visual Studio Marketplace](https://marketplace.visualstudio.com)。
@@ -75,7 +75,7 @@ Visual Studio 包含一組核心.NET 編譯器平台 (*Roslyn*) 分析器。 這
 
 6. 選取 **修改**開始安裝。
 
-7. 一或兩分鐘，安裝完成之後。 選取 [關閉] 。
+7. 一或兩分鐘，安裝完成之後。 選取 [關閉]  。
 
 8. 重新開啟 Visual Studio。
 

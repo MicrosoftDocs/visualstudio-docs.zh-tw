@@ -1,14 +1,9 @@
 ---
-title: 'Idiaenuminjectedsources:: Get_count |Microsoft Docs'
-ms.custom: ''
+title: IDiaEnumInjectedSources::get_Count | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 659c415b-9f7b-470d-90e2-b4c0087f8dd3
 caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 51e5a3f95873123bd342b0fa6347f2d7ded4ae3f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 8323c090bd7c938987a5675da5b0f38e72662e89
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51758765"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68202623"
 ---
 # <a name="idiaenuminjectedsourcesgetcount"></a>IDiaEnumInjectedSources::get_Count
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -48,6 +43,3 @@ HRESULT get_Count ( 
 ## <a name="see-also"></a>另請參閱  
  [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md)   
  [IDiaEnumInjectedSources::Item](../../debugger/debug-interface-access/idiaenuminjectedsources-item.md)
-
-
-

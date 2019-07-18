@@ -11,12 +11,12 @@ ms.assetid: 7eb9290a-f9f6-4e41-9caa-796fcfaf0610
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 29f6cfe21537cd74ffa135edc3f93b9d8548aab7
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: dfcbac0bb9188826804ba13884f0f57962dddeab
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55946661"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62979324"
 ---
 # <a name="how-to-bind-a-test-controller-or-test-agent-to-a-network-adapter"></a>HOW TO：將測試控制器或測試代理程式繫結至網路介面卡
 
@@ -35,19 +35,19 @@ ms.locfileid: "55946661"
 
 ### <a name="to-obtain-the-ip-addresses-of-the-network-adapters"></a>若要取得網路介面卡的 IP 位址
 
-1.  在 Microsoft Windows 中選擇 [開始]，在 [開始搜尋] 方塊中鍵入 **cmd**，然後選擇 **Enter**。
+1. 在 Microsoft Windows 中選擇 [開始]，在 [開始搜尋] 方塊中鍵入 **cmd**，然後選擇 **Enter**。
 
-2.  鍵入 **ipconfig /all**。
+2. 鍵入 **ipconfig /all**。
 
      接著便會顯示您的網路介面卡 IP 位址。 請將控制器要繫結之網路介面卡的 IP 位址記錄下來。
 
 ### <a name="to-bind-a-network-adapter-to-a-test-controller"></a>將網路介面卡繫結至測試控制器
 
-1.  在 Microsoft Windows 中選擇 [開始]，在 [開始搜尋] 方塊中鍵入 **services.msc**，然後選擇 **Enter**。
+1. 在 Microsoft Windows 中選擇 [開始]，在 [開始搜尋] 方塊中鍵入 **services.msc**，然後選擇 **Enter**。
 
      [服務] 對話方塊隨即顯示。
 
-2.  在結果窗格中的 [名稱] 資料行底下，以滑鼠右鍵按一下 [Visual Studio Test Controller] 服務，然後選擇 [停止]。
+2. 在結果窗格中的 [名稱] 資料行底下，以滑鼠右鍵按一下 [Visual Studio Test Controller] 服務，然後選擇 [停止]。
 
      -或-
 
@@ -55,9 +55,9 @@ ms.locfileid: "55946661"
 
      `net stop vsttcontroller`
 
-3.  開啟位於 *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\\<edition>\Common7\IDE* 中的 *QTCcontroller.exe.config* XML 組態檔。
+3. 開啟位於 *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\\\<edition\Common7\IDE* 中的 *QTCcontroller.exe.config XML* 組態檔。
 
-4.  找出 `<appSettings>` 標記。
+4. 找出 `<appSettings>` 標記。
 
     ```xml
     <appSettings>
@@ -71,14 +71,14 @@ ms.locfileid: "55946661"
     </appSettings>
     ```
 
-5.  加入 `BindTo` 索引鍵，指定要用於 `<appSettings>` 區段中的網路介面卡。
+5. 加入 `BindTo` 索引鍵，指定要用於 `<appSettings>` 區段中的網路介面卡。
 
     ```xml
             <add key="BindTo" value="<YOUR IP ADDRESS>"/>
     </appSettings>
     ```
 
-6.  啟動測試控制器服務。 若要這樣做，請在命令提示字元中執行下列命令：
+6. 啟動測試控制器服務。 若要這樣做，請在命令提示字元中執行下列命令：
 
     `net start vsttcontroller`
 
@@ -89,11 +89,11 @@ ms.locfileid: "55946661"
 
 ### <a name="to-bind-a-network-interface-card-to-a-test-agent"></a>將網路介面卡繫結至測試代理程式
 
-1.  在 Microsoft Windows 中選擇 [開始]，在 [開始搜尋] 方塊中鍵入 **services.msc**，然後選擇 **Enter**。
+1. 在 Microsoft Windows 中選擇 [開始]，在 [開始搜尋] 方塊中鍵入 **services.msc**，然後選擇 **Enter**。
 
     [服務] 對話方塊隨即顯示。
 
-2.  在結果窗格中的 [名稱] 資料行下，以滑鼠右鍵按一下 [Visual Studio Test Agent] 服務，然後選擇 [停止]。
+2. 在結果窗格中的 [名稱] 資料行下，以滑鼠右鍵按一下 [Visual Studio Test Agent] 服務，然後選擇 [停止]。
 
      -或-
 
@@ -101,9 +101,9 @@ ms.locfileid: "55946661"
 
      **net stop vsttagent**
 
-3.  開啟位於 *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\\<edition>\Common7\IDE* 中的 *QTAgentService.exe.config* XML 組態檔。
+3. 開啟位於 *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\\\<edition\Common7\IDE* 中的 *QTAgentService.exe.config* 組態檔。
 
-4.  找出 `<appSettings>` 標記。
+4. 找出 `<appSettings>` 標記。
 
     ```xml
     <appSettings>
@@ -117,14 +117,14 @@ ms.locfileid: "55946661"
     </appSettings>  </appSettings>
     ```
 
-5.  加入 `BindTo` 索引鍵，指定要用於 `<appSettings>` 區段中的網路介面卡。
+5. 加入 `BindTo` 索引鍵，指定要用於 `<appSettings>` 區段中的網路介面卡。
 
     ```xml
             <add key="BindTo" value="<YOUR IP ADDRESS>"/>
     </appSettings>
     ```
 
-6.  啟動測試代理程式服務。 若要這樣做，請在命令提示字元中執行下列命令：
+6. 啟動測試代理程式服務。 若要這樣做，請在命令提示字元中執行下列命令：
 
     `net start vsttagent`
 
@@ -133,5 +133,4 @@ ms.locfileid: "55946661"
 - [安裝和設定測試代理程式](../test/lab-management/install-configure-test-agents.md)
 - [修改負載測試記錄設定](../test/modify-load-test-logging-settings.md)
 - [設定測試控制器和測試代理程式的連接埠](../test/configure-ports-for-test-controllers-and-test-agents.md)
-- [如何：指定記錄檔的大小上限](../test/how-to-specify-the-maximum-size-for-the-log-file.md)
 - [如何：指定測試控制器和測試代理程式的逾時期間](../test/how-to-specify-timeout-periods-for-test-controllers-and-test-agents.md)

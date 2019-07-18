@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugQueryEngine2::GetEngineInterface
 ms.assetid: ed84aa98-7ec7-48f3-97ae-821090bc3664
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5b5ac40af5f508a00b010025f9851ee2a8933dfa
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: c720ac348179ec979ba1ffbc1488244ca69246c4
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56720964"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66339920"
 ---
 # <a name="idebugqueryengine2getengineinterface"></a>IDebugQueryEngine2::GetEngineInterface
 取得自訂的偵錯引擎 (DE) 介面。
@@ -36,10 +39,9 @@ int GetEngineInterface( 
 );
 ```
 
-#### <a name="parameters"></a>參數
- `ppUnk`
-
- [out]傳回`IUnknown`物件代表偵錯引擎 (DE)，以及可查詢的其他規定與相關聯的有效介面 (例如[IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)或是[IDebugEngineLaunch2](../../../extensibility/debugger/reference/idebugenginelaunch2.md))。
+## <a name="parameters"></a>參數
+`ppUnk`\
+[out]傳回`IUnknown`物件代表偵錯引擎 (DE)，以及可查詢的其他規定與相關聯的有效介面 (例如[IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)或是[IDebugEngineLaunch2](../../../extensibility/debugger/reference/idebugenginelaunch2.md))。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

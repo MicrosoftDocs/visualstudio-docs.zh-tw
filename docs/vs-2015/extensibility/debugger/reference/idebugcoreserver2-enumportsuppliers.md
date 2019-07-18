@@ -1,14 +1,9 @@
 ---
 title: IDebugCoreServer2::EnumPortSuppliers |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugCoreServer2::EnumPortSuppliers
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: ce0c90e4-8e02-4b08-b558-7677fb2c88f7
 caps.latest.revision: 12
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 71de6947e23137f7bf70d952c124206cb17aada3
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: fa9ad86e7a7cb4070b9bc6dbb7e71cc668b00e1e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51773648"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68192958"
 ---
 # <a name="idebugcoreserver2enumportsuppliers"></a>IDebugCoreServer2::EnumPortSuppliers
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -53,4 +48,3 @@ int EnumPortSuppliers(
 ## <a name="see-also"></a>另請參閱  
  [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md)   
  [IEnumDebugPortSuppliers2](../../../extensibility/debugger/reference/ienumdebugportsuppliers2.md)
-

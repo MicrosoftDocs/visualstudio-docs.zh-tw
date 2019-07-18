@@ -1,25 +1,22 @@
 ---
 title: 選擇特定領域語言方案範本 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language Tools, solution templates
 ms.assetid: 9c05955f-1548-4df6-b09b-4b348823c237
 caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 618a26740759431ffe9de2b6ed5b51ffb32ea69e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 36b821219b02fa77171d89214d8cf4813ce92303
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49268479"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433393"
 ---
 # <a name="choosing-a-domain-specific-language-solution-template"></a>選擇網域指定的語言方案範本
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +26,7 @@ ms.locfileid: "49268479"
  下列解決方案範本可在特定領域語言設計工具精靈。  
   
 > [!NOTE]
->  範本的目的是提供開始的 DSL。 名為類別和元件圖表的範本不完整的 UML 圖表。 如果您想要建立 UML 模型，請考慮的 UML 模型工具，提供一組整合在單一模型周圍的圖表。 它們可以擴充，並且可以使用 ModelBus 與 DSL 整合。 如需詳細資訊，請參閱 <<c0> [ 建立應用程式模型](../modeling/create-models-for-your-app.md)。  
+> 範本的目的是提供開始的 DSL。 名為類別和元件圖表的範本不完整的 UML 圖表。 如果您想要建立 UML 模型，請考慮的 UML 模型工具，提供一組整合在單一模型周圍的圖表。 它們可以擴充，並且可以使用 ModelBus 與 DSL 整合。 如需詳細資訊，請參閱 <<c0> [ 建立應用程式模型](../modeling/create-models-for-your-app.md)。  
   
 |範本|功能|描述|  
 |--------------|--------------|-----------------|  
@@ -43,6 +40,3 @@ ms.locfileid: "49268479"
   
 ## <a name="see-also"></a>另請參閱  
  [特定領域語言工具概觀](../modeling/overview-of-domain-specific-language-tools.md)
-
-
-

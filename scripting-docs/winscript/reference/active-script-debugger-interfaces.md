@@ -14,18 +14,18 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6c63e20b802ff6c54ba17f8ddc55f390213e9043
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: ed8ff0361396deaaffd46f14ca1fc38869988593
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58155390"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422454"
 ---
 # <a name="active-script-debugger-interfaces"></a>動態指令碼偵錯工具的介面
 Activdbg.h 和 activdbg100.h 標頭檔會提供介面、 列舉和結構列在這一節。 也就是進行偵錯指令碼。  
   
 > [!NOTE]
->  `IJSDebug*`介面和`IEnumJsStackFrames`介面初次發行時在 Internet Explorer 11 中使用指令碼的原生程式碼偵錯。 這些介面的標頭檔是 jscript9diag.h。  
+> `IJSDebug*`介面和`IEnumJsStackFrames`介面初次發行時在 Internet Explorer 11 中使用指令碼的原生程式碼偵錯。 這些介面的標頭檔是 jscript9diag.h。  
   
 ## <a name="in-this-section"></a>本節內容  
  下列介面允許非語言相關、 非主機相關偵錯：  

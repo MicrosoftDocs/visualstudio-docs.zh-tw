@@ -8,17 +8,17 @@ helpviewer_keywords:
 - CommandPlacements element (VSCT XML schema)
 - VSCT XML schema elements, CommandPlacements
 ms.assetid: 78a5724a-3b9f-4c78-9c0d-8faa3924f81c
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fcacd56700867682e10ead8e46cfdadcdc66b31d
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: bb22359c936caacef81f4c9b81993a46d47ccc0b
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56696762"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66341889"
 ---
 # <a name="commandplacements-element"></a>CommandPlacements 元素
 CommandPlacements 元素分組 CommandPlacement 元素和其他 CommandPlacements 分組。

@@ -1,14 +1,9 @@
 ---
 title: '&lt;RelatedProducts&gt;項目 （啟動載入器） |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 f1_keywords:
 - MSBuild.GenerateBootstrapper.MissingDependency
 - MSBuild.GenerateBootstrapper.DuplicateItems
@@ -26,13 +21,13 @@ ms.assetid: bf152712-4c1e-48bd-9b7f-311cf0fdb832
 caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: c78aa559bf64b110909134426c676f302ca5fe04
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 70afe724be5b782bc90e162fd65f83ad1b0d0d23
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49296292"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68202531"
 ---
 # <a name="ltrelatedproductsgt-element-bootstrapper"></a>&lt;RelatedProducts&gt;項目 （啟動載入器）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -77,7 +72,7 @@ ms.locfileid: "49296292"
   
  `IncludesProduct` 具有下列屬性。  
   
-|屬性|描述|  
+|屬性|說明|  
 |---------------|-----------------|  
 |`Code`|包含的產品，為所指定的程式碼名稱`ProductCode`屬性的`Product`項目。 如需詳細資訊，請參閱 < [\<產品 > 項目](../deployment/product-element-bootstrapper.md)。|  
   
@@ -91,7 +86,4 @@ ms.locfileid: "49296292"
 ```  
   
 ## <a name="see-also"></a>另請參閱  
- [\<產品 > 項目](../deployment/product-element-bootstrapper.md)
-
-
-
+ [\<Product> 元素](../deployment/product-element-bootstrapper.md)

@@ -6,17 +6,20 @@ helpviewer_keywords:
 - GetAppDomainId
 - IDebugAlias2::GetAppDomainId
 ms.assetid: 23581aaa-5a53-4859-b264-eca49fc44bcd
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 890e215c7e575e67a4360717851bab538966f419
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: b40d52c5eedf0defb845f1944acd166d48dca1ee
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56715046"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66338166"
 ---
 # <a name="idebugalias2getappdomainid"></a>IDebugAlias2::GetAppDomainId
 擷取應用程式定義域的識別項。
@@ -35,10 +38,9 @@ int GetAppDomainId (
 );
 ```
 
-#### <a name="parameters"></a>參數
- `pappDomainId`
-
- [out]傳回應用程式網域識別項。
+## <a name="parameters"></a>參數
+`pappDomainId`\
+[out]傳回應用程式網域識別項。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

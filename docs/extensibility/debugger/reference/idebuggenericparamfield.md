@@ -5,17 +5,17 @@ ms.topic: reference
 helpviewer_keywords:
 - IDebugGenericParamField interface
 ms.assetid: ba24f499-5ba7-4c67-83e6-923229b52327
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ab5cb19475ae92ab1e89bdce5c833e0f18a2cccb
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: db5f82944063abc3274840e820104a7737944047
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56720702"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66349207"
 ---
 # <a name="idebuggenericparamfield"></a>IDebugGenericParamField
 表示 managed 程式碼的泛型類型參數。

@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugMethodField::GetGlobalContainer method
 ms.assetid: 041ac5aa-0b80-4310-b9ae-b88f8e7e0e5f
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 40bbee4c00425c4f46ccde35b8a8c810e1d7c8e6
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 77f3d82beab43b227dd3beb772dd41353d89b6fe
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56717503"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66324183"
 ---
 # <a name="idebugmethodfieldgetglobalcontainer"></a>IDebugMethodField::GetGlobalContainer
 取得方法的通用的容器。
@@ -36,10 +39,9 @@ int GetGlobalContainer(
 );
 ```
 
-#### <a name="parameters"></a>參數
- `ppClass`
-
- [out]傳回[IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)代表這個方法會定義模組。
+## <a name="parameters"></a>參數
+`ppClass`\
+[out]傳回[IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)代表這個方法會定義模組。
 
 ## <a name="return-value"></a>傳回值
  如果成功，會傳回 S_OK;否則，傳回錯誤碼。

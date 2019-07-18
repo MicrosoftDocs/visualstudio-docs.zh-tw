@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - Tools Options pages [Visual Studio SDK], creating
 ms.assetid: 9f4e210c-4b47-4daa-91fa-1c301c4587f9
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d9830178d936e912caf6ab21761f7a072c29a4d4
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: b0b8108470d5f9f14c76e422591a536648b5485e
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58194414"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66350981"
 ---
 # <a name="create-an-options-page"></a>建立選項頁面
 
@@ -101,7 +101,7 @@ ms.locfileid: "58194414"
 
      在左窗格中，您應該會看到**My Category**。 （選項會列出分類依字母順序，因此它應該會出現有關中途往下到清單。）開啟**My Category** ，然後按一下**我的格線頁**。 選項方格會出現在右窗格中。 屬性類別目錄會**My Options**，而屬性名稱為**My 整數選項**。 屬性描述**我整數選項**，出現在窗格的底部。 將值從 256 其初始值變更為其他項目。 按一下  **確定**，然後再重新開啟**我的格線頁**。 您可以看到新的值仍然存在。
 
-     也可透過 Visual Studio 的快速啟動您的 [選項] 頁面。 在 [快速啟動] 視窗在 IDE 右上角中，輸入**My Category** ，您會看到**My Category]-> [我的格線頁**列在下拉式清單中。
+     也可透過 Visual Studio 的 [搜尋] 方塊選項頁面。 在 IDE 頂端附近的 [搜尋] 方塊中，輸入**My Category** ，您會看到**My Category]-> [我的格線頁**結果清單中。
 
 ## <a name="create-a-tools-options-custom-page"></a>建立自訂工具選項 頁面
 
@@ -247,7 +247,7 @@ ms.locfileid: "58194414"
 
      此程式碼會呼叫<xref:Microsoft.VisualStudio.Shell.Package.GetDialogPage%2A>建立或擷取`OptionPageGrid`執行個體。 `OptionPageGrid` 呼叫<xref:Microsoft.VisualStudio.Shell.DialogPage.LoadSettingsFromStorage%2A>載入它的選項，也就是公用屬性。
 
-2. 現在將新增名為的自訂命令項目範本**MyToolsOptionsCommand**来顯示的值。 在 **加入新項目**對話方塊中，移至**Visual C#** > **擴充性**，然後選取**自訂命令**。 在 **名稱**視窗的底部欄位中，將命令的檔案名稱變更為*MyToolsOptionsCommand.cs*。
+2. 現在將新增名為的自訂命令項目範本**MyToolsOptionsCommand**来顯示的值。 在 **加入新項目**對話方塊中，移至**Visual C#**  > **擴充性**，然後選取**自訂命令**。 在 **名稱**視窗的底部欄位中，將命令的檔案名稱變更為*MyToolsOptionsCommand.cs*。
 
 3. 在  *MyToolsOptionsCommand*檔案中，將命令的主體`ShowMessageBox`以下列方法：
 

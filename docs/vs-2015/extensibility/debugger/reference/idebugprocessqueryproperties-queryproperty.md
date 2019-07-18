@@ -1,26 +1,21 @@
 ---
 title: IDebugProcessQueryProperties::QueryProperty |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - IDebugProcessQueryProperties::QueryProperty
 ms.assetid: 9a91707d-a590-44ef-b122-69d9816a7a79
 caps.latest.revision: 7
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 007a1d1833970425a6c7b029380e6c3c78a55d72
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 72f91d6cf8554567807e958ae9a32b93f9228c8f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51723027"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62537658"
 ---
 # <a name="idebugprocessquerypropertiesqueryproperty"></a>IDebugProcessQueryProperties::QueryProperty
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -62,4 +57,3 @@ int QueryProperty(
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugProcessQueryProperties](../../../extensibility/debugger/reference/idebugprocessqueryproperties.md)
-

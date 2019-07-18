@@ -1,25 +1,22 @@
 ---
 title: 了解模型、 類別和關聯性 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, models
 ms.assetid: 2ecd569c-b369-41ea-b78e-a61b62e2e4e9
 caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: b86e9bd2aa11f098b26edf90f3ed415c66b874a1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 1809072ca0a01362e6434254b6e70a4bf4db4762
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49271787"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65698105"
 ---
 # <a name="understanding-models-classes-and-relationships"></a>了解模型、類別和關聯性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,13 +28,13 @@ ms.locfileid: "49271787"
 ## <a name="the-dsl-definition"></a>DSL 定義  
  當您開啟`Dsl\DslDefinition.dsl`、 您[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]視窗類似以下圖片。  
   
- ![dsl 設計工具](../modeling/media/dsl-designer.png "dsl_designer")  
+ ![DSL 設計工具](../modeling/media/dsl-designer.png "dsl_designer")  
   
  在 DSL 定義中最重要的資訊會顯示在 DSL 定義圖。 其他資訊，也是 DslDefinition.dsl 的一部分，會顯示在 [DSL 總管] 中，它通常會顯示在圖表的側邊。 您工作的最常見的工作，該圖表和 DSL 總管 中的更進階的自訂項目。  
   
  DSL 定義圖會顯示定義模型項目，以及定義模型項目之間的連結關聯性的網域類別。 此外，它也會顯示的圖形和連接器，用來向使用者顯示的模型項目。  
   
- ![具有泳道的 dsl 設計工具](../modeling/media/dsl-desinger.png "dsl_desinger")  
+ ![具有區隔線的 DSL 設計工具](../modeling/media/dsl-desinger.png "dsl_desinger")  
   
  當您在 DSL 定義中，在圖表上或在 [DSL 總管] 中，選取項目相關的資訊會顯示在 [屬性] 視窗中。 在 DSL 詳細資料視窗中，可能會顯示其他資訊。  
   
@@ -59,22 +56,22 @@ ms.locfileid: "49271787"
   
  ![內嵌和參考關聯性](../modeling/media/music-classes.png "Music_Classes")  
   
- 下圖顯示四個網域類別： 音樂、 專輯、 演出者與歌曲。 網域類別定義網域屬性，例如名稱、 標題和等等。 在執行個體模型中，其中部分屬性的值會顯示在圖表上。  
+ 下圖顯示四個網域類別：音樂、 專輯、 演出者與歌曲。 網域類別定義網域屬性，例如名稱、 標題和等等。 在執行個體模型中，其中部分屬性的值會顯示在圖表上。  
   
- 類別之間是網域關聯性： MusicHasAlbums、 MusicHasArtists、 AlbumbHasSongs 和 ArtistAppearedOnAlbums。 關聯性具有多重性，例如 1..1，0..*。 例如，必須與相關 AlbumHasSongs 關聯性透過一個專輯的所有歌曲。 每個專輯可以有任意數目的歌曲。  
+ 類別之間是網域關聯性：MusicHasAlbums、 MusicHasArtists、 AlbumbHasSongs 和 ArtistAppearedOnAlbums。 關聯性具有多重性，例如 1..1，0..*。 例如，必須與相關 AlbumHasSongs 關聯性透過一個專輯的所有歌曲。 每個專輯可以有任意數目的歌曲。  
   
 ### <a name="rearranging-the-dsl-definition-diagram"></a>重新排列 DSL 定義圖表  
  請注意網域類別可以在 DSL 定義圖表中，會出現許多次專輯未在此圖中。 總是有一個主要檢視，而且不可以有一些*參考*檢視。  
   
  若要重新排列 DSL 定義圖，您可以：  
   
--   交換主要與參考檢視使用**此處將樹狀結構**並**分割樹狀結構**命令。 以滑鼠右鍵按一下單一網域類別，以查看這些命令。  
+- 交換主要與參考檢視使用**此處將樹狀結構**並**分割樹狀結構**命令。 以滑鼠右鍵按一下單一網域類別，以查看這些命令。  
   
--   按下 Ctrl + Up 和 Ctrl + 向下鍵，來重新排序的網域類別和圖形類別。  
+- 按下 Ctrl + Up 和 Ctrl + 向下鍵，來重新排序的網域類別和圖形類別。  
   
--   摺疊或展開類別使用每個圖形右上角的圖示。  
+- 摺疊或展開類別使用每個圖形右上角的圖示。  
   
--   按一下底部的 網域類別減號 （-） 摺疊樹狀結構組件。  
+- 按一下底部的 網域類別減號 （-） 摺疊樹狀結構組件。  
   
 ## <a name="inheritance"></a>繼承  
  可以使用繼承來定義網域類別。 若要建立繼承衍生，按一下 [繼承] 工具，按一下衍生的類別中，然後按一下基底類別。 模型項目有它自己的網域類別，以及繼承自基底類別的所有屬性所定義的所有屬性。 它也會繼承其關聯性中的角色。  
@@ -100,7 +97,7 @@ ms.locfileid: "49271787"
  當模型儲存至 XML 格式檔案，內嵌的項目都放在其父代，除非您已自訂序列化。  
   
 > [!NOTE]
->  內嵌與繼承不同。 內嵌關聯性中的子系不會繼承父項的屬性。 內嵌是連結的一種模型項目之間。 繼承類別之間的關聯性，而不會建立模型項目之間的連結。  
+> 內嵌與繼承不同。 內嵌關聯性中的子系不會繼承父項的屬性。 內嵌是連結的一種模型項目之間。 繼承類別之間的關聯性，而不會建立模型項目之間的連結。  
   
 ### <a name="embedding-rules"></a>內嵌的規則  
  執行個體模型中的每個項目必須是一個內嵌連結的詳細資訊，除了模型根的目標。  
@@ -157,7 +154,4 @@ ms.locfileid: "49271787"
   
 ## <a name="see-also"></a>另請參閱  
  [產生的 API 中的網域關聯性](../misc/domain-relationships-in-the-generated-api.md)   
- [特定領域語言工具字彙](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)
-
-
-
+ [Domain-Specific Language Tools Glossary](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa) (特定領域語言工具字彙表)

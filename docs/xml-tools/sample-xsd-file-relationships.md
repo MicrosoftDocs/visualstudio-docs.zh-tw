@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e643ab6566818df7cdfee2bc4e5b256ecf065b5a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 1e5d335fb6f90e6e93d58013958e94f6d4555c39
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55951692"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65455103"
 ---
 # <a name="sample-xsd-file-relationships"></a>XSD 範例檔案：關聯性
 
@@ -63,3 +63,6 @@ XSD 結構描述設計工具文件中的數個範例使用下列 XSD 檔案。 �
 
 </xs:schema>
 ```
+
+> [!NOTE]
+> 此處所描述的範例公司、組織、產品、網域名稱、電子郵件地址、商標、人員、地點與事件均屬虛構。 並非影射任何真實的公司、組織、產品、網域名稱、電子郵件地址、商標、人員、地點或事件。

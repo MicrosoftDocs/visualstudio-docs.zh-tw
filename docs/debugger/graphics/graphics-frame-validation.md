@@ -10,20 +10,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1a15a51d392ee6e351fbcf277ef26eb422fe7ecc
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: ce283e5cbab30b612a02ec447113ad11e206a7f3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56694812"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62895866"
 ---
 # <a name="graphics-frame-validation"></a>圖形畫面格驗證
-<!-- VERSIONLESS --> Visual Studio 2017 和更新版本支援**框架驗證**工具。  [畫面格驗證] 視窗會顯示錯誤和事件清單相關聯的警告。  若要檢視此視窗，請選取**檢視 > 畫面格驗證**功能表。
+<!-- VERSIONLESS -->
+Visual Studio 2017 和更新版本支援**框架驗證**工具。  [畫面格驗證] 視窗會顯示錯誤和事件清單相關聯的警告。  若要檢視此視窗，請選取**檢視 > 畫面格驗證**功能表。
 
 ![框架驗證](media/gfx_diag_frame_validation.png)
 
 按一下 **執行驗證**在起始分析左上角的按鈕。  可能需要幾分鐘才能完成，視框架的複雜度而定。  會出現下面是結合來自兩個來源的資料： 訊息的 D3D 本身會時發出[SDK 層](/windows/desktop/direct3d11/overviews-direct3d-11-devices-layers)啟用時，和收集自追蹤工具自己的內部狀態的資料。 完成後，您會看到多個資料行：
-
 
 | **資料行** | **描述** |
 |------------| - |
@@ -33,6 +33,6 @@ ms.locfileid: "56694812"
 | 訊息 | 與事件相關聯的訊息。 |
 | Event - 事件 | 相關聯的錯誤或警告事件。 |
 
-## <a name="see-also"></a>請參閱
-[圖形診斷 (對 DirectX 圖形進行偵錯)](visual-studio-graphics-diagnostics.md)
+## <a name="see-also"></a>另請參閱
+[圖形診斷 (偵錯 DirectX 圖形)](visual-studio-graphics-diagnostics.md)
 <!-- /VERSIONLESS -->

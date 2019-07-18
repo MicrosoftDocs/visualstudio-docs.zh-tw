@@ -3,23 +3,23 @@ title: 快速入門 - 複製 Python 程式碼存放庫
 description: 在此快速入門中，您可以使用 Visual Studio Team Explorer 複製 Python Koans 存放庫，以在 Visual Studio 中建立 Python 專案。
 ms.date: 12/06/2018
 ms.topic: quickstart
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e80c09978aa313aa3392ef8221d0e58bda26e385
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 446c2622c01e1b127347a668e199e3e6e6e0b1c5
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55928448"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62430611"
 ---
 # <a name="quickstart-clone-a-repository-of-python-code-in-visual-studio"></a>快速入門：在 Visual Studio 中複製 Python 程式碼存放庫
 
-[在 Visual Studio 2017 中安裝 Python 支援](installing-python-support-in-visual-studio.md)之後，您可以為 Visual Studio 新增 GitHub 延伸模組。 延伸模組可讓您輕鬆地複製 Python 程式碼的存放庫，並在 IDE 中透過該存放庫建立專案。 您也可以一律在命令列上複製存放庫，然後在 Visual Studio 中使用它們。
+[在 Visual Studio 中安裝 Python 支援](installing-python-support-in-visual-studio.md)之後，您可以為 Visual Studio 新增 GitHub 延伸模組。 延伸模組可讓您輕鬆地複製 Python 程式碼的存放庫，並在 IDE 中透過該存放庫建立專案。 您也可以一律在命令列上複製存放庫，然後在 Visual Studio 中使用它們。
 
 ## <a name="install-the-github-extension-for-visual-studio"></a>安裝適用於 Visual Studio Code 的 GitHub 延伸模組 \(英文\)。
 

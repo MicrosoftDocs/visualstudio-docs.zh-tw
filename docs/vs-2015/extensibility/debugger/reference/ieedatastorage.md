@@ -1,14 +1,9 @@
 ---
-title: IEEDataStorage |Microsoft Docs
-ms.custom: ''
+title: IEEDataStorage | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IEEDataStorage
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 704e932d-2325-410e-89c4-ce88c6ec19da
 caps.latest.revision: 12
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 442b760bfdddaeb4c8707eb33815c3cf12a52356
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: ad398380c7c951b99e7d84283355ee9d31955173
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51801104"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704737"
 ---
 # <a name="ieedatastorage"></a>IEEDataStorage
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -39,7 +34,7 @@ IEEDataStorage : IUnknown
  運算式評估工具 (EE) 會實作這個介面來表示的位元組陣列 (用來擷取和變更資料類型視覺化檢視[IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)介面)。 EE 通常會實作這個介面來支援外部類型視覺化檢視。  
   
 ## <a name="notes-for-callers"></a>呼叫端資訊  
- 上的方法`IPropertyProxyEESide`所有的介面會傳回此介面。 呼叫[GetPropertyProxy](../../../extensibility/debugger/reference/ipropertyproxyprovider-getpropertyproxy.md)若要取得[IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)介面。 呼叫[QueryInterface](http://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3)上[IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)介面，以取得[IPropertyProxyProvider](../../../extensibility/debugger/reference/ipropertyproxyprovider.md)介面。  
+ 上的方法`IPropertyProxyEESide`所有的介面會傳回此介面。 呼叫[GetPropertyProxy](../../../extensibility/debugger/reference/ipropertyproxyprovider-getpropertyproxy.md)若要取得[IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)介面。 呼叫[QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3)上[IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)介面，以取得[IPropertyProxyProvider](../../../extensibility/debugger/reference/ipropertyproxyprovider.md)介面。  
   
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法  
  `IEEDataStorage`介面會實作下列方法：  
@@ -57,12 +52,11 @@ IEEDataStorage : IUnknown
 ## <a name="requirements"></a>需求  
  標頭： msdbg.h  
   
- 命名空間： Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間：Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
  [核心介面](../../../extensibility/debugger/reference/core-interfaces.md)   
  [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)   
  [類型視覺化檢視和自訂檢視器](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md)
-

@@ -1,26 +1,21 @@
 ---
 title: 在啟動後傳送啟動事件 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], startup events
 ms.assetid: 306ea0b4-6d9e-4871-8d8d-a4032d422940
 caps.latest.revision: 10
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 0cc0642c085510e69fe7cd16abe195095c993219
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: caf36e6713e49bb1470cd720ba2d04f689abba43
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51769121"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436669"
 ---
 # <a name="sending-startup-events-after-a-launch"></a>在啟動後傳送啟動事件
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -38,7 +33,7 @@ ms.locfileid: "51769121"
 - 載入完成事件，傳送程式碼時載入並準備好執行之前執行任何程式碼  
   
   > [!NOTE]
-  >  當此事件繼續時，會初始化全域變數，並啟動程序執行。  
+  > 當此事件繼續時，會初始化全域變數，並啟動程序執行。  
   
 - 可能的其他執行緒建立和模組載入事件。  
   
@@ -53,4 +48,3 @@ ms.locfileid: "51769121"
 ## <a name="see-also"></a>另請參閱  
  [控制執行](../../extensibility/debugger/control-of-execution.md)   
  [偵錯工作](../../extensibility/debugger/debugging-tasks.md)
-

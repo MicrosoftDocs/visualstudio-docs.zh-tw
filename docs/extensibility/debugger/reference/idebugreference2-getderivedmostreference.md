@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugReference2::GetDerivedMostReference
 ms.assetid: 07253b74-7d39-48e0-8e85-ac8dfd919f6e
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0d10c265ba8b77dc8cc434fd8a9c688f1c7188a8
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 8775087b9ec212f7e7d7e1547d01a5f175c4dc22
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56679316"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66329817"
 ---
 # <a name="idebugreference2getderivedmostreference"></a>IDebugReference2::GetDerivedMostReference
 取得參考的最具衍生性參考。 保留供未來使用。
@@ -36,10 +39,9 @@ int GetDerivedMostReference( 
 );
 ```
 
-#### <a name="parameters"></a>參數
- `ppDerivedMost`
-
- [out]傳回[IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)物件，表示最具衍生性的屬性。
+## <a name="parameters"></a>參數
+`ppDerivedMost`\
+[out]傳回[IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)物件，表示最具衍生性的屬性。
 
 ## <a name="return-value"></a>傳回值
  一律傳回 `E_NOTIMPL`。

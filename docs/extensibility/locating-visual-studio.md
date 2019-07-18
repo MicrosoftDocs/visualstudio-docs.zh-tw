@@ -9,12 +9,12 @@ ms.author: heaths
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c13146d0d48dc176417040bcb756bf8069ad3c3e
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: a7187fbcc3e3aca990846176676a47f5d17aaf00
+ms.sourcegitcommit: 62f42113ae4dae1ddfff1c4e02445acc09913445
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56683567"
+ms.lasthandoff: 04/29/2019
+ms.locfileid: "64878149"
 ---
 # <a name="locate-visual-studio"></a>尋找 Visual Studio
 
@@ -22,7 +22,7 @@ ms.locfileid: "56683567"
 
 這是快速、 唯讀 API，使用適用於原生和 managed 程式碼的 NuGet 套件。
 
-| 程式碼 | 封裝 |
+| 程式碼 | 套件 |
 | ---- | --- |
 | 原生 | https://nuget.org/packages/Microsoft.VisualStudio.Setup.Configuration.Native |
 | Managed | https://nuget.org/packages/Microsoft.VisualStudio.Setup.Configuration.Interop |
@@ -42,3 +42,4 @@ ms.locfileid: "56683567"
 ## <a name="see-also"></a>另請參閱
 
 * [Visual Studio 2017 安裝程式的變更](https://devblogs.microsoft.com/setup/changes-to-visual-studio-15-setup/)
+* [啟動 Visual Studio 中使用 DTE](launch-visual-studio-dte.md)

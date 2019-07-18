@@ -1,14 +1,9 @@
 ---
 title: Windows 檢視 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.externaltools.spyplus.windowsview
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 154786ce-c803-4bfb-8198-f7962a900363
 caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: e297e43c25a2e72412c84e5cc01d3b59436f83dc
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 636feaa6d7d29b016012cb17cf5a333133680509
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51778478"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68183487"
 ---
 # <a name="windows-view"></a>視窗檢視
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +41,7 @@ Spy++ 視窗檢視
  [如何：在視窗檢視中搜尋視窗](../debugger/how-to-search-for-a-window-in-windows-view.md)  
  說明如何在 Windows 檢視尋找特定的視窗。  
   
- [如何： 顯示視窗屬性](../debugger/how-to-display-window-properties.md)m  
+ [如何：顯示視窗屬性](../debugger/how-to-display-window-properties.md)m  
  開啟 [視窗屬性] 對話方塊中的程序。  
   
 ## <a name="related-sections"></a>相關章節  
@@ -67,6 +62,3 @@ Spy++ 視窗檢視
   
  [Spy++ 參考](../debugger/spy-increment-reference.md)  
  包含描述每個 Spy + + 功能表和對話方塊方塊中的區段。
-
-
-

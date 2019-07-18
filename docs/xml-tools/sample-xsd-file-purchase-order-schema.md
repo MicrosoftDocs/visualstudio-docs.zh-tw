@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c3a799337c098a8ce04bbb5dff0eb3eb046b04f4
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 9bea23307c5d35e997f41e4ec9cbfd41fa41bdee
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55936352"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65455120"
 ---
 # <a name="sample-xsd-file-purchase-order-schema"></a>XSD 範例檔案：訂購單結構描述
 
@@ -86,3 +86,6 @@ XSD 結構描述設計工具文件中的數個範例使用下列 XSD 檔案。 �
   </xsd:complexType>
 </xsd:schema>
 ```
+
+> [!NOTE]
+> 此處所描述的範例公司、組織、產品、網域名稱、電子郵件地址、商標、人員、地點與事件均屬虛構。 並非影射任何真實的公司、組織、產品、網域名稱、電子郵件地址、商標、人員、地點或事件。

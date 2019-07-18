@@ -1,27 +1,22 @@
 ---
 title: 命令在 Vspackage 中路由傳送 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - commands, routing
 - command routing, Visual Studio SDK
 ms.assetid: a9c7f9ae-3594-4557-a314-8cf76f5f8772
 caps.latest.revision: 25
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 805b0bcf4b2087626060595f9cd6e86d10ad719f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 954d3f25a425652d8adcb31bd36fab06de0d04d2
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51781734"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68195081"
 ---
 # <a name="command-routing-in-vspackages"></a>在 VSPackage 中路由傳送命令
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -44,4 +39,3 @@ ms.locfileid: "51781734"
   
  [命令、功能表及工具列](../../extensibility/internals/commands-menus-and-toolbars.md)  
  說明如何建立包含功能表、工具列和命令下拉式方塊的 UI。
-

@@ -12,12 +12,12 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: fbe0942226e44e5ca2908f7c13f34595bef34887
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: ac2f040addb4c387afe0b325fe53b6a9c289f33a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58069693"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62819595"
 ---
 # <a name="create-an-android-native-activity-app"></a>建立 Android Native Activity 應用程式
 
@@ -45,9 +45,9 @@ ms.locfileid: "58069693"
 
    新的 Android Native Activity 應用程式方案包含兩個專案：
 
--   `MyAndroidApp.NativeActivity` 包含參考和黏附程式碼 (glue code)，可讓您的應用程式當做 Native Activity 在 Android 上執行。 黏合程式碼 (glue code) 的進入點實作位於 *main.cpp* 中。 先行編譯標頭檔位於 *pch.h* 中。 這個 Native Activity 應用程式專案會編譯至封裝專案所挑選的共用程式庫 *.so* 檔案中。
+- `MyAndroidApp.NativeActivity` 包含參考和黏附程式碼 (glue code)，可讓您的應用程式當做 Native Activity 在 Android 上執行。 黏合程式碼 (glue code) 的進入點實作位於 *main.cpp* 中。 先行編譯標頭檔位於 *pch.h* 中。 這個 Native Activity 應用程式專案會編譯至封裝專案所挑選的共用程式庫 *.so* 檔案中。
 
--   `MyAndroidApp.Packaging` 會建立部署在 Android 裝置或模擬器上時所使用的 *.apk* 檔案。 其中包含資源以及您設有資訊清單屬性的 *AndroidManifest.xml* 檔案。 其中也包含用來控制建置流程的 *build.xml* 檔案。 依預設，它會設成啟始專案，以便直接從 Visual Studio 部署及執行。
+- `MyAndroidApp.Packaging` 會建立部署在 Android 裝置或模擬器上時所使用的 *.apk* 檔案。 其中包含資源以及您設有資訊清單屬性的 *AndroidManifest.xml* 檔案。 其中也包含用來控制建置流程的 *build.xml* 檔案。 依預設，它會設成啟始專案，以便直接從 Visual Studio 部署及執行。
 
 ## <a name="build-and-run-the-default-android-native-activity-app"></a>建置並執行預設 Android Native Activity 應用程式
 
@@ -55,21 +55,21 @@ ms.locfileid: "58069693"
 
 ## <a name="to-build-and-run-the-default-native-activity-app"></a>建置並執行預設 Native Activity 應用程式
 
-1.  若尚未選取，請從 [方案平台]  下拉式清單中選擇 [x86]  。
+1. 若尚未選取，請從 [方案平台]  下拉式清單中選擇 [x86]  。
 
      ![[方案平台] 下拉式清單中的 x86 選項](../cross-platform/media/cppmdd_rc_na_solution_x86.png "CPPMDD_RC_NA_Solution_x86")
 
      如果未顯示 [方案平台] 清單，請從 [新增或移除按鈕] 下拉式清單中選擇 [x86]，然後選擇您的平台。
 
-2.  在功能表列上選擇 [建置] > [建置解決方案]。
+2. 在功能表列上選擇 [建置] > [建置解決方案]。
 
      [輸出] 視窗會顯示方案中這兩個專案的建置流程輸出。
 
-3.  選擇其中一個 VS Emulator Android Phone (x86) 做為部署目標。
+3. 選擇其中一個 VS Emulator Android Phone (x86) 做為部署目標。
 
      如果您已經安裝其他模擬器或連接 Android 裝置，就可以在部署目標下拉式清單中加以選擇。
 
-4.  按 **F5** 啟動偵錯，或按 Shift+F5 啟動但不偵錯。
+4. 按 **F5** 啟動偵錯，或按 Shift+F5 啟動但不偵錯。
 
      以下是預設應用程式在 Visual Studio Emulator for Android 中的外觀。
 
@@ -77,6 +77,6 @@ ms.locfileid: "58069693"
 
      Visual Studio 啟動模擬器，這需要幾秒的時間來載入及部署您的程式碼。 在您的應用程式啟動之後，您可以設定中斷點，並使用偵錯工具，以逐步執行程式碼、檢查本機及監看值。
 
-5.  按 **Shift**+**F5** 停止偵錯。
+5. 按 **Shift**+**F5** 停止偵錯。
 
      模擬器是分開的程序，會繼續執行。 您可以將程式碼多次編輯、編譯及部署至相同的模擬器。

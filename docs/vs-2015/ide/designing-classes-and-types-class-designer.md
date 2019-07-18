@@ -12,12 +12,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 032e5a33c7cf70d48913739459c619b5d0302dea
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: ddd4ae3ed3a1a2a239c0efac0f25d04f589f8fa5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54795508"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437543"
 ---
 # <a name="designing-classes-and-types-class-designer"></a>設計類別和類型 (類別設計工具)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "54795508"
 使用 [類別設計工具]，您不能只視覺化類別和類型，還能設計它們。 下列各主題描述如何執行這項作業。  
   
 > [!NOTE]
->  使用類別設計工具時，您應該先檢查它所發出的程式碼再執行程式碼，確認程式碼適合您的安全性內容。  
+> 使用類別設計工具時，您應該先檢查它所發出的程式碼再執行程式碼，確認程式碼適合您的安全性內容。  
   
 ## <a name="in-this-section"></a>本節內容  
  [如何：使用類別設計工具建立類型](../ide/how-to-create-types-by-using-class-designer.md)  
@@ -40,7 +40,7 @@ ms.locfileid: "54795508"
   
  描述如何在類別圖表中定義關聯。  
   
- [如何：視覺化集合關聯 (類別設計工具)](../ide/how-to-visualize-a-collection-association-class-designer.md)  
+ [如何：將集合關聯視覺化 (類別設計工具)](../ide/how-to-visualize-a-collection-association-class-designer.md)  
   
  說明如何在類別設計工具中定義集合關聯。  
   
@@ -53,5 +53,5 @@ ms.locfileid: "54795508"
   
  [重構類別和類型 (類別設計工具)](../ide/refactoring-classes-and-types-class-designer.md)  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [使用類別圖表 (類別設計工具)](../ide/working-with-class-diagrams-class-designer.md)

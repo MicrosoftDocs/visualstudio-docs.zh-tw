@@ -1,14 +1,9 @@
 ---
 title: 如何偵錯存取違規？ | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.access
 dev_langs:
@@ -24,13 +19,13 @@ ms.assetid: 9311d754-0ce9-4145-b147-88b6ca77ba63
 caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: e9c9384790a07898862bf158f854b4af65395bf7
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 073fc84d15cb31b4f7a4cc635524ab08a724911e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51739574"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68147855"
 ---
 # <a name="how-can-i-debug-an-access-violation"></a>如何偵錯存取違規？
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,26 +44,26 @@ using namespace std;
   
 class ClassB {  
 public:  
-        ClassC* C;  
-        ClassB() {  
-                C = new ClassC();  
-        }  
+      ClassC* C;  
+      ClassB() {  
+            C = new ClassC();  
+      }  
      void printHello() {  
-                cout << "hello world";  
-        }  
+            cout << "hello world";  
+      }  
 };  
   
 class ClassA {  
 public:  
     ClassB* B;  
-      ClassA() {  
-                B = nullptr;  
-        }  
+    ClassA() {  
+            B = nullptr;  
+      }  
 };  
   
 int main() {  
     ClassA* A = new ClassA();  
-      A->B->printHello();  
+    A->B->printHello();  
 }  
 ```  
   
@@ -80,6 +75,3 @@ int main() {
   
 ## <a name="see-also"></a>另請參閱  
  [偵錯機器碼常見問題集](../debugger/debugging-native-code-faqs.md)
-
-
-

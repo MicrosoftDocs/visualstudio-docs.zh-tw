@@ -6,17 +6,17 @@ helpviewer_keywords:
 - project properties, displaying in tool window
 - tool windows, displaying project properties
 ms.assetid: 96ba07ca-0811-4013-8602-12550ac4ba79
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d6708759796639886d84a46003fbb894b988a714
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: 7f766be25015081338b887a5b08413e77f5f17f9
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58194991"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66342518"
 ---
 # <a name="get-project-properties"></a>取得專案屬性
 

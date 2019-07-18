@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d88f08746035792913601b280a0794a9ff50bf2
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 4157316756e4b180f6fb49082bf60927ddb43707
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57871310"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66714804"
 ---
 # <a name="ca1058-types-should-not-extend-certain-base-types"></a>CA1058:類型不應該擴充特定基底類型
 
@@ -47,7 +47,7 @@ ms.locfileid: "57871310"
 
 ## <a name="rule-description"></a>規則描述
 
-適用於.NET Framework 第 1 版中，會建議衍生新的例外狀況，從<xref:System.ApplicationException>。 建議變更和新的例外狀況應該衍生自<xref:System.Exception?displayProperty=fullName>或其中一個子類別中<xref:System>命名空間。
+例外狀況應該衍生自<xref:System.Exception?displayProperty=fullName>或其中一個子類別中<xref:System>命名空間。
 
 請勿建立的子類別<xref:System.Xml.XmlDocument>如果您想要建立基礎物件模型或資料來源的 XML 檢視。
 
@@ -91,7 +91,7 @@ public class MyReadOnlyCollection : ReadOnlyCollection<T>
 
 如果您執行這項規則，從[FxCop 分析器](install-fxcop-analyzers.md)（而不是透過靜態程式碼分析），您可以設定的哪些部分您程式碼基底上執行這項規則，根據其存取範圍。 比方說，若要指定執行規則時，應該只針對非公用 API 介面，將下列索引鍵 / 值組新增至專案中的.editorconfig 檔案：
 
-```
+```ini
 dotnet_code_quality.ca1058.api_surface = private, internal
 ```
 

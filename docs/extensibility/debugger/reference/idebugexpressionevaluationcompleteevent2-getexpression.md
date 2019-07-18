@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugExpressionEvaluationCompleteEvent2::GetExpression
 ms.assetid: faf6b2dd-2afd-4852-b21c-7e8d3130e141
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bb413457b9e84d57079d9c5efa3369ddad608934
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 84cd692b2b615f7b8215b864025381db0500209e
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56707688"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66325754"
 ---
 # <a name="idebugexpressionevaluationcompleteevent2getexpression"></a>IDebugExpressionEvaluationCompleteEvent2::GetExpression
 取得原始的運算式。
@@ -36,10 +39,9 @@ int GetExpression( 
 );
 ```
 
-#### <a name="parameters"></a>參數
- `ppExpr`
-
- [out]傳回[IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md)物件，表示已剖析的運算式。
+## <a name="parameters"></a>參數
+`ppExpr`\
+[out]傳回[IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md)物件，表示已剖析的運算式。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

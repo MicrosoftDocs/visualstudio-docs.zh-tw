@@ -1,14 +1,9 @@
 ---
 title: IDebugMethodField::EnumAllLocals |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugMethodField::EnumAllLocals
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 0bc7cc13-2628-4bd8-8c06-4d2aa6755ea8
 caps.latest.revision: 10
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: d7f3f730d0afdbb1c78e2bf76ced59981ff51110
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 2f0f89c3fee45d6d56b845753958d697e41ab11f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51774610"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68190882"
 ---
 # <a name="idebugmethodfieldenumalllocals"></a>IDebugMethodField::EnumAllLocals
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -53,7 +48,7 @@ int EnumAllLocals(
  [out]會傳回[IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)物件，表示指定之範圍中的所有區域變數的清單; 否則會傳回 null 值，指出無區域變數。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，會傳回 S_OK，或如果沒有任何區域變數，則傳回 S_FALSE。 反之則傳回錯誤碼。  
+ 如果成功，會傳回 S_OK，或如果沒有任何區域變數，則傳回 S_FALSE。 否則會傳回錯誤碼。  
   
 ## <a name="remarks"></a>備註  
  列舉只包含指定的偵錯位址區塊內定義的變數。 這個方法會包含任何編譯器所產生的區域變數。 如果只需要在來源，也就是呼叫中明確定義的區域變數[EnumLocals](../../../extensibility/debugger/reference/idebugmethodfield-enumlocals.md)方法。  
@@ -65,4 +60,3 @@ int EnumAllLocals(
  [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)   
  [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)   
  [EnumLocals](../../../extensibility/debugger/reference/idebugmethodfield-enumlocals.md)
-

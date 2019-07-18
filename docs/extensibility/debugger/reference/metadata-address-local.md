@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - METADATA_ADDRESS_LOCAL structure
 ms.assetid: 635f6bc5-c486-4e0e-83db-36f15e543843
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2f8366b8a18c2512aa55f2bab70ac9523e9265f5
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: f8500d7ad1e03e08fa852afe9b8b77e49562f355
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56700298"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66345628"
 ---
 # <a name="metadataaddresslocal"></a>METADATA_ADDRESS_LOCAL
 
@@ -41,20 +44,17 @@ public struct METADATA_ADDRESS_LOCAL {
 }
 ```
 
-## <a name="terms"></a>詞彙
+## <a name="members"></a>成員
 
-`tokMethod`
-
+`tokMethod`\
 方法或函式識別碼的本機變數是的一部分。
 
-[C + +]`_mdToken`已`typedef`適用於 32 位元`int`。
+[C++]`_mdToken`是`typedef`適用於 32 位元`int`。
 
-`pLocal`
-
+`pLocal`\
 這個結構是表示其位址之語彙基元。
 
-`dwIndex`
-
+`dwIndex`\
 可以是方法或函式或其他值 （語言特有） 中的這個本機變數的索引。
 
 ## <a name="remarks"></a>備註
@@ -62,12 +62,12 @@ public struct METADATA_ADDRESS_LOCAL {
 此結構是中的等位的一部分[DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)結構的時機`dwKind`欄位`DEBUG_ADDRESS_UNION`結構設定為`ADDRESS_KIND_LOCAL`(中的值[ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)列舉型別）。
 
 > [!WARNING]
-> [只有 c + +]如果`pLocal`不是 null，則您必須呼叫`Release`語彙基元的指標 (`addr`是中的欄位[DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md)結構):
+> [C++只]如果`pLocal`不是 null，則您必須呼叫`Release`語彙基元的指標 (`addr`是中的欄位[DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md)結構):
 >
 > ```cpp
 > if (addr.dwKind == ADDRESS_KIND_METADATA_LOCAL && addr.addr.addrLocal.pLocal != NULL)
 > {
-     addr.addr.addrLocal.pLocal->Release();
+>     addr.addr.addrLocal.pLocal->Release();
 > }
 > ```
 

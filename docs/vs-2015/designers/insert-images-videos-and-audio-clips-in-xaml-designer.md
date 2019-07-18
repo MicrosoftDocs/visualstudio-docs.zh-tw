@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: db6225f8bf8055edb0fb5b6f3cdea98de79b4bcc
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54774136"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68159412"
 ---
 # <a name="insert-images-videos-and-audio-clips-in-xaml-designer"></a>在 XAML 設計工具中插入影像、視訊和音訊剪輯
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,7 +23,7 @@ ms.locfileid: "54774136"
   
  ![已調整為適當大小的影像](../designers/media/b5-memory-images-sized.png "b5_memory_images_sized")  
   
- 若要使用的影像、視訊或音訊剪輯，請將其加入專案，然後從 [資產]  面板拖曳至 [畫板] 上。  
+ 若要使用的影像、視訊或音訊剪輯，請將其加入專案，然後從 [資產]  面板拖曳至 [畫板]  上。  
   
  這些影片可協助您在應用程式中插入影像、視訊和音訊剪輯。  
   
@@ -34,5 +34,5 @@ ms.locfileid: "54774136"
 |匯入 Adobe Photoshop 檔案|![設定已安裝的功能](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [匯入 Photoshop 檔案至 Blend](https://www.youtube.com/watch?v=ekYyhirFKs0)|  
 |插入音訊剪輯|![設定已安裝的功能](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [新增音訊剪輯](https://www.youtube.com/watch?v=7qW9l0tmkAI&index=52&list=PLBDF977B2F1DAB358)|  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [使用 Blend for Visual Studio 建立 UI](../designers/creating-a-ui-by-using-blend-for-visual-studio.md)

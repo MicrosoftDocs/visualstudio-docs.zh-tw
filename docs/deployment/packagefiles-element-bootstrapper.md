@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: da625db79e8738bad2a5e73ceee5d8b0adb6603d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 81a12f400ee870798759237e202d2ca358fefa69
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56605142"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747517"
 ---
 # <a name="ltpackagefilesgt-element-bootstrapper"></a>&lt;請為 PackageFiles&gt;項目 （啟動載入器）
 `PackageFiles`項目包含`PackageFile`項目，定義執行的安裝套件`Command`項目。
@@ -44,7 +44,7 @@ ms.locfileid: "56605142"
 ## <a name="elements-and-attributes"></a>元素和屬性
  `PackageFiles` 項目具有下列屬性。
 
-|屬性|說明|
+|屬性|描述|
 |---------------|-----------------|
 |`CopyAllPackageFiles`|選擇性。 如果設定為`false`，安裝程式只會下載檔案從參考`Command`項目。 如果設定為`true`，將會下載所有檔案。<br /><br /> 如果設定為`IfNotHomesite`，安裝程式將有相同的行為如同`False`如果`ComponentsLocation`設為`HomeSite`，否則會運作相同如同`True`。 此設定可用來讓本身的封裝來執行他們自己的行為在 HomeSite 案例的啟動載入器。<br /><br /> 預設為 `true`。|
 
@@ -53,8 +53,7 @@ ms.locfileid: "56605142"
 
  `PackageFile` 具有下列屬性。
 
-
-| 屬性 | 說明 |
+| 屬性 | 描述 |
 |---------------| - |
 | `Name` | 必要項。 封裝檔案的名稱。 這是名稱，`Command`它定義所在的套件會安裝的條件時，會參考項目。 此值也會用到索引鍵`Strings`資料表，以擷取這類工具的當地語系化的名稱[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]用來描述套件。 |
 | `HomeSite` | 選擇性。 在遠端伺服器上，如果它不會包含安裝程式封裝的位置。 |
@@ -63,7 +62,7 @@ ms.locfileid: "56605142"
 | `Hash` | 選擇性。 封裝檔案的 SHA1 雜湊。 這用來在安裝階段驗證檔案的完整性。 如果無法從封裝檔案計算相同的雜湊，將不會安裝封裝。 |
 
 ## <a name="example"></a>範例
- 下列程式碼範例會定義套件[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]可轉散發套件和其相依性，例如 Windows Installer。
+ 下列程式碼範例會定義.NET Framework 可轉散發套件和其相依性，例如 Windows Installer 封裝。
 
 ```xml
 <PackageFiles>

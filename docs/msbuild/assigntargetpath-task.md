@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3afe10d8bb912b911734437eb79684cdbfe9f78d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56626501"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62823249"
 ---
 # <a name="assigntargetpath-task"></a>AssignTargetPath 工作
 此工作接受檔案清單，並新增 `<TargetPath>` 屬性 (若尚未指定)。

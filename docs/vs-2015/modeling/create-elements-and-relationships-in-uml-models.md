@@ -1,25 +1,22 @@
 ---
 title: 在 UML 模型中建立項目和關聯性 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML API
 ms.assetid: cae81d32-8cc7-4f7c-9f00-20119952bc51
 caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 5ed918bc96168196400dd34d87ec65574fdfc5b6
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: ce1f236347ad811f1c5d115f30907b7e3356e3af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51785868"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68159639"
 ---
 # <a name="create-elements-and-relationships-in-uml-models"></a>在 UML 模型中建立項目和關聯性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +52,7 @@ IPackage linkedPackage = Context.CurrentDiagram.Element as IPackage;
 |`ILifeline, IMessage, ICombinedFragment`|`IInteraction`|  
   
 ### <a name="invoke-the-create-method-on-the-owner"></a>在擁有者上叫用 Create 方法  
- 方法名稱的格式為： `Create`*擁有的類型*`()`。 例如:   
+ 方法名稱是格式的：`Create`*擁有的類型*`()`。 例如：  
   
 ```  
 IUseCase usecase1 = linkedPackage.CreateUseCase();  
@@ -90,11 +87,11 @@ using Microsoft.VisualStudio.Uml.Extensions;
   
 #### <a name="to-create-an-association"></a>建立關聯  
   
-1.  取得關聯的擁有者，這通常是包含關聯性來源端的套件或模型。  
+1. 取得關聯的擁有者，這通常是包含關聯性來源端的套件或模型。  
   
-2.  在擁有者上叫用必要的 Create 方法。  
+2. 在擁有者上叫用必要的 Create 方法。  
   
-3.  設定關聯性的屬性，例如其名稱。  
+3. 設定關聯性的屬性，例如其名稱。  
   
      例如：  
   
@@ -103,7 +100,7 @@ using Microsoft.VisualStudio.Uml.Extensions;
     association .Name = "Observes";  
     ```  
   
-4.  設定關聯性各端的屬性。 總是會有兩個 `MemberEnds`。 例如：  
+4. 設定關聯性各端的屬性。 總是會有兩個 `MemberEnds`。 例如：  
   
     ```  
     association .MemberEnds[0].Name = "subject";   // role name  
@@ -128,13 +125,10 @@ anElement.Delete();
   
  當您從模型刪除項目時：  
   
--   也會刪除與項目連結的每一個關聯性。  
+- 也會刪除與項目連結的每一個關聯性。  
   
--   也會刪除在圖表上代表該項目的每一個圖形。  
+- 也會刪除在圖表上代表該項目的每一個圖形。  
   
 ## <a name="see-also"></a>另請參閱  
  [擴充 UML 模型和圖表](../modeling/extend-uml-models-and-diagrams.md)   
  [在圖表上顯示 UML 模型](../modeling/display-a-uml-model-on-diagrams.md)
-
-
-

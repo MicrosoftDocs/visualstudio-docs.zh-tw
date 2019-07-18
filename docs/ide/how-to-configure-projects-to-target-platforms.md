@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ee7c0ee30ebe5a424439aab8e06c18c10fc679bf
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: a014e4210f1c94637564e5db86846ed2ade29468
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55942111"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438183"
 ---
 # <a name="how-to-configure-projects-to-target-platforms"></a>HOW TO：將專案設定成以各種平台為目標
 
@@ -35,20 +35,20 @@ Visual Studio 可讓您將應用程式的目標設定為不同的平台，包括
 
 ### <a name="to-configure-a-project-to-target-a-64-bit-platform"></a>將專案設定成以 64 位元平台為目標
 
-1.  在功能表列上，選擇 [建置] > [組態管理員]。
+1. 在功能表列上，選擇 [建置] > [組態管理員]。
 
-2.  在 [使用中的方案平台] 清單中，選擇 64 位元平台作為方案的目標，然後選擇 [關閉] 按鈕。
+2. 在 [使用中的方案平台] 清單中，選擇 64 位元平台作為方案的目標，然後選擇 [關閉] 按鈕。
 
-    1.  如果您想要的平台未出現在 [使用中的方案平台] 清單中，請選擇 [新增]。
+    1. 如果您想要的平台未出現在 [使用中的方案平台] 清單中，請選擇 [新增]。
 
          [新增方案平台] 對話方塊隨即出現。
 
-    2.  在 [輸入或選取新平台] 清單中選擇 [x64]。
+    2. 在 [輸入或選取新平台] 清單中選擇 [x64]。
 
         > [!NOTE]
-        >  如果您將組態改為新的名稱，則必須在 [專案設計工具] 中修改設定，才能以正確的平台為目標。
+        > 如果您將組態改為新的名稱，則必須在 [專案設計工具] 中修改設定，才能以正確的平台為目標。
 
-    3.  如果您想要從目前的平台組態複製設定，請選擇所需項目，然後選擇 [確定] 按鈕。
+    3. 如果您想要從目前的平台組態複製設定，請選擇所需項目，然後選擇 [確定] 按鈕。
 
 以 64 位元平台為目標的所有專案的屬性會進行更新，而專案的下一個組建會針對 64 位元平台進行最佳化。
 

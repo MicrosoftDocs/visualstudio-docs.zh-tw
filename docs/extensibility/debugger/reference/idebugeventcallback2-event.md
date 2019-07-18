@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEventCallback2::Event
 ms.assetid: e5a3345b-d460-4e40-8f5b-3111c56a2ed9
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 461c2487c18cb6edc5601868c0f9644d7b8eeac1
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 5def4a2bf9ae748fee9563b7845807ba1b0acd71
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56686960"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66327577"
 ---
 # <a name="idebugeventcallback2event"></a>IDebugEventCallback2::Event
 傳送通知的偵錯事件。
@@ -48,34 +51,27 @@ int Event( 
 );
 ```
 
-#### <a name="parameters"></a>參數
- `pEngine`
+## <a name="parameters"></a>參數
+`pEngine`\
+[in][IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)物件，表示正在傳送這個事件的偵錯引擎 (DE)。 規定，才能填入此參數。
 
- [in][IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)物件，表示正在傳送這個事件的偵錯引擎 (DE)。 規定，才能填入此參數。
+`pProcess`\
+[in][IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)物件，表示發生事件的程序。 此參數會填入工作階段的偵錯管理員 (SDM)。 DE 一律會傳遞此參數的 null 值。
 
- `pProcess`
+`pProgram`\
+[in][IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)物件，表示的程式發生此事件。 對於大多數事件，此參數不是 null 的值。
 
- [in][IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)物件，表示發生事件的程序。 此參數會填入工作階段的偵錯管理員 (SDM)。 DE 一律會傳遞此參數的 null 值。
+`pThread`\
+[in][IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)物件，表示發生此事件的執行緒。 停止事件，此參數不能堆疊框架取自此參數為 null 值。
 
- `pProgram`
+`pEvent`\
+[in][IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)物件，代表偵錯事件。
 
- [in][IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)物件，表示的程式發生此事件。 對於大多數事件，此參數不是 null 的值。
+`riidEvent`\
+[in]GUID，識別哪些事件介面，以取得從`pEvent`參數。
 
- `pThread`
-
- [in][IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)物件，表示發生此事件的執行緒。 停止事件，此參數不能堆疊框架取自此參數為 null 值。
-
- `pEvent`
-
- [in][IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)物件，代表偵錯事件。
-
- `riidEvent`
-
- [in]GUID，識別哪些事件介面，以取得從`pEvent`參數。
-
- `dwAttrib`
-
- [in]從旗標的組合[EVENTATTRIBUTES](../../../extensibility/debugger/reference/eventattributes.md)列舉型別。
+`dwAttrib`\
+[in]從旗標的組合[EVENTATTRIBUTES](../../../extensibility/debugger/reference/eventattributes.md)列舉型別。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

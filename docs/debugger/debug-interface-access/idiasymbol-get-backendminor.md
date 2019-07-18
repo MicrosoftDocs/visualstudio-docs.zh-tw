@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c4cbdaf9a259e199c0cc32141e961e74f9c91c8c
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 8dfeb0dd9fd729f0502215defdbeac0c542c509a
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56628620"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "64801650"
 ---
 # <a name="idiasymbolgetbackendminor"></a>IDiaSymbol::get_backEndMinor
 擷取後端的次要版本號碼的編譯器。
@@ -39,7 +39,7 @@ HRESULT get_backEndMinor ( 
  如果成功，則傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。
 
 > [!NOTE]
->  傳回值為`S_FALSE`表示屬性不是適用於符號。
+> 傳回值為`S_FALSE`表示屬性不是適用於符號。
 
 ## <a name="remarks"></a>備註
  編譯器通常由兩個主要項目所組成： 前端 （剖析器），以處理剖析原始程式碼以中繼形式和一個後端 （程式碼產生器），然後將中繼的形式轉換成組件。 您不可能發生的前端與後端的不同版本的狀況。
@@ -48,10 +48,10 @@ HRESULT get_backEndMinor ( 
 
 ## <a name="requirements"></a>需求
 
-|需求|說明|
+|需求|描述|
 |-----------------|-----------------|
 |標頭：|dia2.h|
 |版本:|DIA SDK v7.0|
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugQueryEngine2 interface
 ms.assetid: 8f0e1838-a818-4459-9138-a3dceb7408de
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bbe3444d5bcdb31a4ef7619b123041f459a09852
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: ad823c2aab4d2ca17b95c989925b8ffe16b1504d
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56701650"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66339840"
 ---
 # <a name="idebugqueryengine2"></a>IDebugQueryEngine2
 此介面可讓偵錯管理員 (SDM) 擷取介面，代表偵錯引擎 (DE) 的工作階段。

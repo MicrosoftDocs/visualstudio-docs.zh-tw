@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugModule3::LoadSymbols
 ms.assetid: 7548c8c1-cbc6-48aa-a845-19058d4a85bb
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9068eed8881124e75f06f4b97d3430ff3ef80e8a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: e1b23e7b1ae837087db198795ffeda6a5827f045
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56717022"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66323848"
 ---
 # <a name="idebugmodule3loadsymbols"></a>IDebugModule3::LoadSymbols
 載入目前模組的符號。

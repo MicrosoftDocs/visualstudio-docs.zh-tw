@@ -1,26 +1,21 @@
 ---
 title: 屬性 Window Fields and Interfaces |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Properties window, fields and interfaces
 ms.assetid: 0328f0e5-2380-4a7a-a872-b547cb775050
 caps.latest.revision: 13
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 8b9e7705af131bdc8c81b6cbeeac3ed4dda80aa4
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: b58314d64536ecf33cc5589609ee5524a9352629
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51721033"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65700828"
 ---
 # <a name="properties-window-fields-and-interfaces"></a>Properties Window Fields and Interfaces
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -36,7 +31,7 @@ ms.locfileid: "51721033"
   
 3. 呼叫<xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection.OnSelectChange%2A>並將其傳遞中選取的階層項目`VSHPROPID_BrowseObject`參數會填入<xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer>物件。  
   
-4. 物件衍生自[IDispatch 介面](http://msdn.microsoft.com/en-us/ebbff4bc-36b2-4861-9efa-ffa45e013eb5)會傳回<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID>要求的項目，且環境會包裝到<xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer>（請參閱下一個步驟）。 如果呼叫失敗，環境會第二個呼叫`IVsHierarchy::GetProperty`，並選取容器<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID>的階層項目或項目提供。  
+4. 物件衍生自[IDispatch 介面](https://msdn.microsoft.com/ebbff4bc-36b2-4861-9efa-ffa45e013eb5)會傳回<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID>要求的項目，且環境會包裝到<xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer>（請參閱下一個步驟）。 如果呼叫失敗，環境會第二個呼叫`IVsHierarchy::GetProperty`，並選取容器<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID>的階層項目或項目提供。  
   
     VSPackage 不會建立的專案<xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer>因為環境提供視窗 VSPackage 實作它 (例如**方案總管 中**) 建構<xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer>代替它。  
   
@@ -52,4 +47,3 @@ ms.locfileid: "51721033"
   
 ## <a name="see-also"></a>另請參閱  
  [擴充屬性](../../extensibility/internals/extending-properties.md)
-

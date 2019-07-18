@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - SccHistory function
 ms.assetid: a636d9d3-47c1-4b48-ac6b-bcfde19d6cf9
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5c22583890d476f6ada0838877360c1405e911db
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: bad55b0fce5f4bec27ec707a4f9578c627a07363
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56691146"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66353608"
 ---
 # <a name="scchistory-function"></a>SccHistory 函式
 此函式會顯示指定的檔案歷程記錄。
@@ -80,7 +80,7 @@ SCCRTN SccHistory(
  請注意，在某些情況下，此呼叫的執行期間可能會變更所檢查的檔案。 比方說，[!INCLUDE[vsvss](../extensibility/includes/vsvss_md.md)]歷程記錄命令讓使用者有機會取得舊版本的檔案。 在此情況下，原始檔控制外掛程式傳回`SCC_I_RELOAD`警告 IDE，它需要重新載入檔案。
 
 > [!NOTE]
->  如果原始檔控制外掛程式不支援此函式陣列的檔案，就可以顯示只有第一個檔案的檔案歷程記錄。
+> 如果原始檔控制外掛程式不支援此函式陣列的檔案，就可以顯示只有第一個檔案的檔案歷程記錄。
 
 ## <a name="see-also"></a>另請參閱
 - [原始檔控制外掛程式 API 函式](../extensibility/source-control-plug-in-api-functions.md)

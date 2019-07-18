@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugField interface
 ms.assetid: adecdd1c-b1b9-4027-92da-74cbe910636f
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a036f6d08c6f88a30f8a8c9ab6d0d2e847065854
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 80def3f9c3d270ebd6f2217f6ce39f07ef27b119
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56682916"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66337513"
 ---
 # <a name="idebugfield"></a>IDebugField
 這個介面表示的欄位，也就是符號或類型的描述。
@@ -52,7 +52,7 @@ IDebugField : IUnknown
 ## <a name="remarks"></a>備註
  類型相當於 C 語言`typedef`。
 
- 在下列 c + + 語言範例中，`weather`是類別類型，並`sunny`和`stormy`符號：
+ 在下列C++語言範例中，`weather`是類別類型，並`sunny`並`stormy`是符號：
 
 ```cpp
 class weather;

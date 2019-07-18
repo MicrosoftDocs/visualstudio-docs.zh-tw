@@ -1,24 +1,19 @@
 ---
 title: 管理多個執行緒在 Managed 程式碼 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: 59730063-cc29-4dae-baff-2234ad8d0c8f
 caps.latest.revision: 8
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: a33b17ddc0eb2d6169761260905b9bf056a4c55e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 4e7198623283fa3ef9c82d6a39a1f7c1db6c760c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51802352"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433039"
 ---
 # <a name="managing-multiple-threads-in-managed-code"></a>在受控碼中管理多個執行緒
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,11 +23,11 @@ ms.locfileid: "51802352"
  一般情況下，您可以從 UI 執行緒切換至不同的執行緒，或反之亦然。 方法傳回時，目前的執行緒就會是從其中所初次呼叫的執行緒。  
   
 > [!IMPORTANT]
->  下列指導方針使用中的 Api<xref:Microsoft.VisualStudio.Threading>命名空間，特別是，<xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory>類別。 此命名空間中的 Api 是中的新[!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]。 您可以取得的執行個體<xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory>從<xref:Microsoft.VisualStudio.Shell.ThreadHelper>屬性`ThreadHelper.JoinableTaskFactory`。  
+> 下列指導方針使用中的 Api<xref:Microsoft.VisualStudio.Threading>命名空間，特別是，<xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory>類別。 此命名空間中的 Api 是中的新[!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]。 您可以取得的執行個體<xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory>從<xref:Microsoft.VisualStudio.Shell.ThreadHelper>屬性`ThreadHelper.JoinableTaskFactory`。  
   
 ## <a name="switching-from-the-ui-thread-to-a-background-thread"></a>從 UI 執行緒切換到背景執行緒  
   
-1.  如果您是在 UI 執行緒上，而且您想要在背景執行緒上的非同步工作，請使用 Task.Run():  
+1. 如果您是在 UI 執行緒上，而且您想要在背景執行緒上的非同步工作，請使用 Task.Run():  
   
     ```csharp  
     await Task.Run(async delegate{  
@@ -42,7 +37,7 @@ ms.locfileid: "51802352"
   
     ```  
   
-2.  如果您是在 UI 執行緒上，而且您想要以同步方式封鎖，您會在背景執行緒，使用在執行工作時<xref:System.Threading.Tasks.TaskScheduler>屬性`TaskScheduler.Default`內<xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory.Run%2A>:  
+2. 如果您是在 UI 執行緒上，而且您想要以同步方式封鎖，您會在背景執行緒，使用在執行工作時<xref:System.Threading.Tasks.TaskScheduler>屬性`TaskScheduler.Default`內<xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory.Run%2A>:  
   
     ```csharp  
     // using Microsoft.VisualStudio.Threading;  
@@ -56,7 +51,7 @@ ms.locfileid: "51802352"
   
 ## <a name="switching-from-a-background-thread-to-the-ui-thread"></a>從背景執行緒切換至 UI 執行緒  
   
-1.  如果您是在背景執行緒上，而且您想要使用的 UI 執行緒上進行一些動作<xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory.SwitchToMainThreadAsync%2A>:  
+1. 如果您是在背景執行緒上，而且您想要使用的 UI 執行緒上進行一些動作<xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory.SwitchToMainThreadAsync%2A>:  
   
     ```csharp  
     // Switch to main thread  
@@ -74,4 +69,3 @@ ms.locfileid: "51802352"
         // Do your work on the main thread here.  
     });  
     ```
-

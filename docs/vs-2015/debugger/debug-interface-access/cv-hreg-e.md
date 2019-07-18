@@ -1,14 +1,9 @@
 ---
-title: CV_HREG_e |Microsoft Docs
-ms.custom: ''
+title: CV_HREG_e | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 3f0622f7-6790-41d8-8778-227cbbf8a212
 caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 5387a697b025757388864289cbbd3fdcebc7a5ea
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: ace9f28c0726a762e0ffe2abcf0538c5a629b06c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51724310"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443499"
 ---
 # <a name="cvhrege"></a>CV_HREG_e
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -31,7 +26,7 @@ ms.locfileid: "51724310"
 指定的目標暫存器。  
   
 > [!NOTE]
->  因為`CV_HREG_e`列舉型別複製整個這裡太大的縮寫的版本提供作為參考。 遺漏的項目會最先斜體。 完整的列舉型別適用於 cvconst.h 標頭檔。  
+> 因為`CV_HREG_e`列舉型別複製整個這裡太大的縮寫的版本提供作為參考。 遺漏的項目會最先斜體。 完整的列舉型別適用於 cvconst.h 標頭檔。  
   
 ## <a name="syntax"></a>語法  
   
@@ -417,37 +412,37 @@ enum CV_HREG_e { 
 ```  
   
 ## <a name="elements"></a>項目  
- CV_REG_ *  
+ CV_REG_*  
  Intel 80x86 和 ix86 處理器和 p 程式碼所使用的暫存器。  
   
- CV_R68_ *  
+ CV_R68_*  
  68 K 處理器所使用的暫存器。  
   
- CV_M4_ *  
+ CV_M4_*  
  MIPS 4000 系列處理器所使用的暫存器。  
   
- CV_ALPHA_ *  
+ CV_ALPHA_*  
  使用數位設備 Corporation Alpha AXP 系列處理器暫存器。  
   
- CV_PPC_ *  
+ CV_PPC_*  
  / IBM Motorola PowerPC 處理器所使用的暫存器。  
   
  CV_SH3_ * 和 CV_SH_\*  
  Hitachi SH3 和 Hitachi SH 系列處理器所使用的暫存器。  
   
- CV_ARM_ *  
+ CV_ARM_*  
  Advanced RISC Machine (ARM) 處理器所使用的暫存器。  
   
- CV_IA64_ *  
+ CV_IA64_*  
  Intel 的 IA64 系列處理器所使用的暫存器。  
   
- CV_TRI_ *  
+ CV_TRI_*  
  Infineon 技術 TriCore 處理器所使用的暫存器。  
   
- CV_AM33_ *  
+ CV_AM33_*  
  暫存器供 Matsushita/Panasonic AM33，以及相關的處理器。  
   
- CV_M32R_ *  
+ CV_M32R_*  
  Mitsubishi M32R 處理器所使用的暫存器。  
   
 ## <a name="remarks"></a>備註  
@@ -455,26 +450,23 @@ enum CV_HREG_e { 
   
  這個列舉型別中的值會傳遞下列方法：  
   
--   [IDiaStackWalkFrame::get_registerValue](../../debugger/debug-interface-access/idiastackwalkframe-get-registervalue.md)  
+- [IDiaStackWalkFrame::get_registerValue](../../debugger/debug-interface-access/idiastackwalkframe-get-registervalue.md)  
   
--   [IDiaStackWalkFrame::put_registerValue](../../debugger/debug-interface-access/idiastackwalkframe-put-registervalue.md)  
+- [IDiaStackWalkFrame::put_registerValue](../../debugger/debug-interface-access/idiastackwalkframe-put-registervalue.md)  
   
--   [IDiaStackWalkHelper::get_registerValue](../../debugger/debug-interface-access/idiastackwalkhelper-get-registervalue.md)  
+- [IDiaStackWalkHelper::get_registerValue](../../debugger/debug-interface-access/idiastackwalkhelper-get-registervalue.md)  
   
--   [IDiaStackWalkHelper::put_registerValue](../../debugger/debug-interface-access/idiastackwalkhelper-put-registervalue.md)  
+- [IDiaStackWalkHelper::put_registerValue](../../debugger/debug-interface-access/idiastackwalkhelper-put-registervalue.md)  
   
--   [IDiaStackFrame::get_registerValue](../../debugger/debug-interface-access/idiastackframe-get-registervalue.md)  
+- [IDiaStackFrame::get_registerValue](../../debugger/debug-interface-access/idiastackframe-get-registervalue.md)  
   
 ## <a name="requirements"></a>需求：  
  標頭： cvconst.h  
   
 ## <a name="see-also"></a>另請參閱  
  [列舉和結構](../../debugger/debug-interface-access/enumerations-and-structures.md)   
- [Idiastackwalkframe:: Get_registervalue](../../debugger/debug-interface-access/idiastackwalkframe-get-registervalue.md)   
- [Idiastackwalkframe:: Put_registervalue](../../debugger/debug-interface-access/idiastackwalkframe-put-registervalue.md)   
+ [IDiaStackWalkFrame::get_registerValue](../../debugger/debug-interface-access/idiastackwalkframe-get-registervalue.md)   
+ [IDiaStackWalkFrame::put_registerValue](../../debugger/debug-interface-access/idiastackwalkframe-put-registervalue.md)   
  [IDiaStackWalkHelper::get_registerValue](../../debugger/debug-interface-access/idiastackwalkhelper-get-registervalue.md)   
  [IDiaStackWalkHelper::put_registerValue](../../debugger/debug-interface-access/idiastackwalkhelper-put-registervalue.md)   
  [IDiaStackFrame::get_registerValue](../../debugger/debug-interface-access/idiastackframe-get-registervalue.md)
-
-
-

@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c251b9fbf8327369acf20ef6acea0518e2b16913
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 9c7f3bdc6351f30d5cad60a7ed9663824fa3d434
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55910280"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66714707"
 ---
 # <a name="ca2107-review-deny-and-permit-only-usage"></a>CA2107:必須檢閱 Deny 和 Permit Only 的使用方式
 
@@ -31,14 +31,16 @@ ms.locfileid: "55910280"
 |中斷變更|中斷|
 
 ## <a name="cause"></a>原因
- 方法包含指定的 PermitOnly 或 Deny 安全性動作的安全性檢查。
+
+方法包含指定的 PermitOnly 或 Deny 安全性動作的安全性檢查。
 
 ## <a name="rule-description"></a>規則描述
- <xref:System.Security.CodeAccessPermission.Deny%2A?displayProperty=fullName>安全性動作應只能由有.NET Framework 安全性的進階的知識的人員。 而使用這些安全性動作的程式碼應該接受安全性檢閱。
 
- 拒絕會改變以回應安全性需求，就會發生堆疊查核行程的預設行為。 它可讓您指定必須不被拒絕的方法，不論實際的權限，呼叫堆疊中的呼叫端的持續期間授與的權限。 如果堆疊查核行程偵測到的方法，受到拒絕，而且如果要求的權限包含在拒絕的權限時，堆疊查核行程失敗。 PermitOnly 也會改變堆疊查核行程的預設行為。 它可讓程式碼，以指定可以授與，不論呼叫端的權限的權限。 如果堆疊查核行程偵測受到 PermitOnly 方法和要求的權限不會納入 PermitOnly 所指定的權限，就會失敗的堆疊查核行程。
+<xref:System.Security.CodeAccessPermission.Deny%2A?displayProperty=fullName>安全性動作應只由知曉進階.NET 安全性的任何人。 而使用這些安全性動作的程式碼應該接受安全性檢閱。
 
- 這些動作所依賴的程式碼應謹慎評估有安全性弱點因為他們有限的實用性和細微的行為。 請考慮下列事項：
+拒絕會改變以回應安全性需求，就會發生堆疊查核行程的預設行為。 它可讓您指定必須不被拒絕的方法，不論實際的權限，呼叫堆疊中的呼叫端的持續期間授與的權限。 如果堆疊查核行程偵測到的方法，受到拒絕，而且如果要求的權限包含在拒絕的權限時，堆疊查核行程失敗。 PermitOnly 也會改變堆疊查核行程的預設行為。 它可讓程式碼，以指定可以授與，不論呼叫端的權限的權限。 如果堆疊查核行程偵測受到 PermitOnly 方法和要求的權限不會納入 PermitOnly 所指定的權限，就會失敗的堆疊查核行程。
+
+這些動作所依賴的程式碼應謹慎評估有安全性弱點因為他們有限的實用性和細微的行為。 請考慮下列事項：
 
 - [連結要求](/dotnet/framework/misc/link-demands)不會受到 Deny 或 PermitOnly。
 
@@ -51,22 +53,24 @@ ms.locfileid: "55910280"
 - 如果拒絕具有任何作用，也就是，當呼叫端具有封鎖的 Deny 權限呼叫端可以存取受保護的資源，以直接略過 Deny。 同樣地，如果呼叫端並沒有拒絕的權限，堆疊查核行程將會失敗而拒絕不。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
- 任何使用這些安全性動作會造成違規。 若要修正違規情形，請勿使用這些安全性動作。
+
+任何使用這些安全性動作會造成違規。 若要修正違規情形，請勿使用這些安全性動作。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
- 只有在您完成安全性檢閱之後，才，則隱藏此規則的警告。
+
+只有在您完成安全性檢閱之後，才，則隱藏此規則的警告。
 
 ## <a name="example-1"></a>範例 1
- 下列範例示範拒絕某些的限制。
 
- 下列程式庫包含具有兩個方法，除了保護它們的安全性需求之外完全相同的類別。
+下列範例示範拒絕某些的限制。 程式庫包含具有兩個方法，除了保護它們的安全性需求之外完全相同的類別。
 
- [!code-csharp[FxCop.Security.PermitAndDeny#1](../code-quality/codesnippet/CSharp/ca2107-review-deny-and-permit-only-usage_1.cs)]
+[!code-csharp[FxCop.Security.PermitAndDeny#1](../code-quality/codesnippet/CSharp/ca2107-review-deny-and-permit-only-usage_1.cs)]
 
 ## <a name="example-2"></a>範例 2
- 下列應用程式會示範拒絕對受保護的方法，從程式庫。
 
- [!code-csharp[FxCop.Security.TestPermitAndDeny#1](../code-quality/codesnippet/CSharp/ca2107-review-deny-and-permit-only-usage_2.cs)]
+下列應用程式會示範拒絕對受保護的方法，從程式庫。
+
+[!code-csharp[FxCop.Security.TestPermitAndDeny#1](../code-quality/codesnippet/CSharp/ca2107-review-deny-and-permit-only-usage_2.cs)]
 
 這個範例會產生下列輸出：
 

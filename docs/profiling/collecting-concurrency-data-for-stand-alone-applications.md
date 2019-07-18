@@ -1,5 +1,5 @@
 ---
-title: 使用分析工具命令列收集獨立應用程式的並行資料 | Microsoft Docs
+title: 可取得獨立應用程式並行資料的分析工具命令列
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,16 +11,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c4794a0dd50423a7a1566b20e86aaa5501c94e5
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 31355689927ed4a2c10411ec7fc76bf8281d356c
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56623134"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66262991"
 ---
 # <a name="collect-concurrency-data-for-stand-alone-applications-by-using-the-profiler-command-line"></a>使用分析工具命令列收集獨立應用程式的並行資料
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具的並行方法可讓您收集資源爭用資料和執行緒活動資料，顯示 CPU 使用率、執行緒爭用、執行緒移轉、同步處理延遲、重疊 IO 區域 和其他系統事件。
-
 
 ## <a name="common-tasks"></a>一般工作
 

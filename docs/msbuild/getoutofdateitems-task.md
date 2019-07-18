@@ -14,15 +14,15 @@ helpviewer_keywords:
 - MSBuild (Visual C++), GetOutOfDateItems task
 - GetOutOfDateItems task (MSBuild (Visual C++))
 author: mikeblome
-ms.author: Michael.Blome
+ms.author: mblome
 ms.workload:
 - multiple
-ms.openlocfilehash: 668dddcd0854869c9ede7bf96c092d415f41dd17
-ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
+ms.openlocfilehash: e3393dd7e81fa98c49dd09a32457171286f88f18
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "58070374"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62977486"
 ---
 # <a name="getoutofdateitems-task"></a>GetOutOfDateItems 工作
 

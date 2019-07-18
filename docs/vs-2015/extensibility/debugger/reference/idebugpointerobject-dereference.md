@@ -1,14 +1,9 @@
 ---
 title: IDebugPointerObject::Dereference |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugPointerObject::Dereference
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 196ec2cc-8569-4780-b217-23b24e7f50ca
 caps.latest.revision: 10
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 40c7b14d4d10e2cf1daee8a70c1d43865ae56d67
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 40a0e66e5f3cb3a50618a3c8dd4fd5926c34c624
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51743196"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68201002"
 ---
 # <a name="idebugpointerobjectdereference"></a>IDebugPointerObject::Dereference
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -60,4 +55,3 @@ int Dereference(
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugPointerObject](../../../extensibility/debugger/reference/idebugpointerobject.md)
-

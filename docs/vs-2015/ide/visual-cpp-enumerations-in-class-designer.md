@@ -11,12 +11,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 209f56d8222d4cc446d15f8eedd4d89b08993c5a
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: b38d36c1fdc0033115f1d7a4cf18265dc1f2a3ab
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54755015"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696355"
 ---
 # <a name="visual-c-enumerations-in-class-designer"></a>類別設計工具中的 Visual C++ 列舉類型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,8 +43,8 @@ enum class CardSuit {
   
  類別圖表中的 C++ 列舉圖形外觀和運作方式與結構圖形類似，不同之處在於標籤為「列舉」或「列舉類別」、它是粉紅色而不是藍色，而且它的左和上邊界具有有色框線。 列舉圖形和結構圖形都有方角。  
   
- 如需使用 `enum` 類型的詳細資訊，請參閱[列舉](http://msdn.microsoft.com/library/081829db-5dca-411e-a53c-bffef315bcb3)。  
+ 如需使用 `enum` 類型的詳細資訊，請參閱[列舉](https://msdn.microsoft.com/library/081829db-5dca-411e-a53c-bffef315bcb3)。  
   
 ## <a name="see-also"></a>請參閱  
  [使用 Visual C++ 程式碼 (類別設計工具)](../ide/working-with-visual-cpp-code-class-designer.md)   
- [列舉](http://msdn.microsoft.com/library/081829db-5dca-411e-a53c-bffef315bcb3)
+ [列舉](https://msdn.microsoft.com/library/081829db-5dca-411e-a53c-bffef315bcb3)

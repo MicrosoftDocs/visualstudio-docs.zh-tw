@@ -1,14 +1,9 @@
 ---
 title: SccGet 函式 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - SccGet
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 09a18bd2-b788-411a-9da6-067d806e46f6
 caps.latest.revision: 15
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 78c766e52278c8bae29e57cad6f1c0255de4ea43
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 2a5d5065ca427f0319174aa59e6b87d356816d4c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51761720"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432423"
 ---
 # <a name="sccget-function"></a>SccGet 函式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +50,7 @@ SCCRTN SccGet(
  lpFileNames  
  [in]要擷取檔案的完整名稱的陣列。  
   
- Stored  
+ fOptions  
  [in]命令旗標 (`SCC_GET_ALL`， `SCC_GET_RECURSIVE`)。  
   
  pvOptions  
@@ -82,7 +77,7 @@ SCCRTN SccGet(
  `SCC_GET_ALL`旗標可以結合`SCC_GET_RECURSIVE`旗標，以擷取指定的目錄中的所有檔案和所有的子目錄。  
   
 > [!NOTE]
->  `SCC_GET_RECURSIVE` 永遠不會傳遞而且`SCC_GET_ALL`。 另請注意，是否目錄 C:\A 和 C:\A\B 同時傳遞遞迴取得，C:\A\B 及其所有子目錄會實際擷取兩次。 是 IDE 的責任，並不是原始檔控制外掛程式，藉此確定這類的重複項目會保留從陣列。  
+> `SCC_GET_RECURSIVE` 永遠不會傳遞而且`SCC_GET_ALL`。 另請注意，是否目錄 C:\A 和 C:\A\B 同時傳遞遞迴取得，C:\A\B 及其所有子目錄會實際擷取兩次。 是 IDE 的責任，並不是原始檔控制外掛程式，藉此確定這類的重複項目會保留從陣列。  
   
  最後，即使原始檔控制外掛程式指定`SCC_CAP_GET_NOUI`上初始化時，表示它並沒有 Get 命令的使用者介面，以擷取檔案 IDE 仍可能會呼叫此函式的旗標。 旗標只是表示，IDE 不會顯示取得功能表項目，而且，外掛程式不需要提供任何 UI。  
   
@@ -91,23 +86,22 @@ SCCRTN SccGet(
   
  有兩種方式可解決本機快取的原始檔控制版本會與原始檔控制資料庫不同步變成這種情況：  
   
-1.  不允許重新命名目前已簽出原始檔控制資料庫中的檔案。  
+1. 不允許重新命名目前已簽出原始檔控制資料庫中的檔案。  
   
-2.  執行 「 刪除舊 」 後面接著 「 新增 」 的對等項目。 下列演算法是一種方式完成這項作業。  
+2. 執行 「 刪除舊 」 後面接著 「 新增 」 的對等項目。 下列演算法是一種方式完成這項作業。  
   
-    1.  呼叫[SccQueryChanges](../extensibility/sccquerychanges-function.md)若要了解重新命名為 b.txt 原始檔控制資料庫中的 a.txt 函式。  
+    1. 呼叫[SccQueryChanges](../extensibility/sccquerychanges-function.md)若要了解重新命名為 b.txt 原始檔控制資料庫中的 a.txt 函式。  
   
-    2.  將本機 a.txt 重新命名為 b.txt。  
+    2. 將本機 a.txt 重新命名為 b.txt。  
   
-    3.  呼叫`SccGet`a.txt 和 b.txt 函式。  
+    3. 呼叫`SccGet`a.txt 和 b.txt 函式。  
   
-    4.  因為 a.txt 不存在於原始檔控制資料庫中，會將本機版本快取清除遺漏的 a.txt 版本資訊。  
+    4. 因為 a.txt 不存在於原始檔控制資料庫中，會將本機版本快取清除遺漏的 a.txt 版本資訊。  
   
-    5.  正在簽出 b.txt 檔案會合併本機 b.txt 檔案的內容。  
+    5. 正在簽出 b.txt 檔案會合併本機 b.txt 檔案的內容。  
   
-    6.  更新的 b.txt 檔案現在可以簽入。  
+    6. 更新的 b.txt 檔案現在可以簽入。  
   
 ## <a name="see-also"></a>另請參閱  
  [原始檔控制外掛程式 API 函式](../extensibility/source-control-plug-in-api-functions.md)   
  [特定命令所使用的位元旗標](../extensibility/bitflags-used-by-specific-commands.md)
-

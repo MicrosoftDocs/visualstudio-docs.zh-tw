@@ -5,21 +5,21 @@ ms.topic: reference
 helpviewer_keywords:
 - expression evaluation, interfaces
 ms.assetid: 2d259f60-2cd7-460e-b02d-24a8fb202850
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: da46fc4309be1575ffde3d42f8b2c984986ce15b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 2919310885cb2666a74136d56db713ee8e607dfc
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56720051"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66337651"
 ---
 # <a name="expression-evaluation-interfaces"></a>Expression Evaluation Interfaces
 > [!IMPORTANT]
->  在 Visual Studio 2015 中，這種實作運算式評估工具已被取代。 如需實作 CLR 運算式評估工具的資訊，請參閱[CLR 運算式評估工具](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)並[Managed 運算式評估工具範例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。
+> 在 Visual Studio 2015 中，這種實作運算式評估工具已被取代。 如需實作 CLR 運算式評估工具的資訊，請參閱[CLR 運算式評估工具](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)並[Managed 運算式評估工具範例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。
 
  以下是針對的運算式評估介面[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]偵錯 sdk 》。
 
@@ -28,11 +28,11 @@ ms.locfileid: "56720051"
 
  在資料表中的每個介面會顯示可以實作下列清單中的元件：
 
--   偵錯引擎 (DE)
+- 偵錯引擎 (DE)
 
--   運算式評估工具 (EE)
+- 運算式評估工具 (EE)
 
--   Visual Studio (VS)
+- Visual Studio (VS)
 
 |介面|藉由將|描述|
 |---------------|--------------------|-----------------|

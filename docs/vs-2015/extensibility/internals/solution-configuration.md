@@ -1,26 +1,21 @@
 ---
 title: 方案組態 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - solution configurations
 ms.assetid: f22cfc75-3e31-4e0d-88a9-3ca99539203b
 caps.latest.revision: 14
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 53d8e3d33a81e20d553e6a5c97eb6e6f33339079
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: bbd47969a7a48be817e8e2f5359705e03b5d0dc2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51801598"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432085"
 ---
 # <a name="solution-configuration"></a>方案組態
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -30,7 +25,7 @@ ms.locfileid: "51801598"
  標準的 Visual Studio 工具列包含 [開始] 按鈕和方案組態下拉式清單右邊的 [開始] 按鈕。 這份清單可讓使用者選擇在按下 F5 時要啟動的組態，建立自己的方案組態，或編輯現有的組態。  
   
 > [!NOTE]
->  沒有擴充性介面來建立或編輯方案組態。 您必須使用`DTE.SolutionBuilder`。 不過，有擴充性 Api 用於管理方案的組建。 如需詳細資訊，請參閱<xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionBuildManager2>。  
+> 沒有擴充性介面來建立或編輯方案組態。 您必須使用`DTE.SolutionBuilder`。 不過，有擴充性 Api 用於管理方案的組建。 如需詳細資訊，請參閱<xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionBuildManager2>。  
   
  以下是如何實作您的專案類型所支援的解決方案組態：  
   
@@ -66,4 +61,3 @@ ms.locfileid: "51801598"
  [管理組態選項](../../extensibility/internals/managing-configuration-options.md)   
  [建置的專案組態](../../extensibility/internals/project-configuration-for-building.md)   
  [專案組態物件](../../extensibility/internals/project-configuration-object.md)
-

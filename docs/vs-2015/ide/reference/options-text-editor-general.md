@@ -48,21 +48,20 @@ caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5ac63b183493b378fc0e1df454bc94a56722224f
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 423c79bc2fc6640180b0dfa9f6e9d59ef1d37dcc
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54794453"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695870"
 ---
 # <a name="options-text-editor-general"></a>一般、文字編輯器、選項
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 此對話方塊可讓您變更 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 程式碼和文字編輯器的全域設定。 若要顯示這個對話方塊，請按一下 [工具] 功能表上的 [選項]，並展開 [文字編輯器] 資料夾，然後按一下 [一般]。  
   
 > [!NOTE]
->  根據您目前使用的設定或版本，您所看到的對話方塊與功能表命令可能會與 [說明] 中描述的不同。 若要變更設定，請從 [ **工具** ] 功能表中選取 [ **匯入和匯出設定** ]。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
+> 根據您目前使用的設定或版本，您所看到的對話方塊與功能表命令可能會與 [說明] 中描述的不同。 若要變更設定，請從 [ **工具** ] 功能表中選取 [ **匯入和匯出設定** ]。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
   
 ## <a name="settings"></a>設定  
  拖放式文字編輯  

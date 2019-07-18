@@ -1,27 +1,22 @@
 ---
 title: IDSymbol 元素 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - IDSymbol element (VSCT XML schema)
 - VSCT XML schema elements, IDSymbol
 ms.assetid: 760cfd20-3c06-422c-9103-98bfa1f387f8
 caps.latest.revision: 8
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: c7b4855fbdf2e395e6f309692fe531762e3ada7f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 7db4e686b5e105b0ea0aa80783137093679d4cad
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51817564"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68203959"
 ---
 # <a name="idsymbol-element"></a>IDSymbol 項目
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,8 +36,8 @@ ms.locfileid: "51817564"
   
 |屬性|描述|  
 |---------------|-----------------|  
-|名稱|必要。 名稱的 ID 符號。|  
-|value|必要。 識別碼符號的數值識別碼值。|  
+|名稱|必要項。 名稱的 ID 符號。|  
+|value|必要項。 識別碼符號的數值識別碼值。|  
   
 ### <a name="child-elements"></a>子元素  
  無。  
@@ -58,4 +53,3 @@ ms.locfileid: "51817564"
   
 ## <a name="see-also"></a>另請參閱  
  [Visual Studio 命令表檔案 (.Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
-

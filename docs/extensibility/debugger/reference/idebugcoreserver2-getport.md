@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugCoreServer2::GetPort
 ms.assetid: 3f5ea4a8-6085-4600-980a-9e48f8b5be56
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 44e801318a2a997e7c1ab2f863b737c4d6693e14
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 59f4507f631887f8ffda37abec8b597087a0e57f
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56708000"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66317807"
 ---
 # <a name="idebugcoreserver2getport"></a>IDebugCoreServer2::GetPort
 擷取特定的連接埠。
@@ -38,14 +41,12 @@ int GetPort( 
 );
 ```
 
-#### <a name="parameters"></a>參數
- `guidPort`
+## <a name="parameters"></a>參數
+`guidPort`\
+[in]要擷取之連接埠的 GUID。
 
- [in]要擷取之連接埠的 GUID。
-
- `ppPort`
-
- [out]傳回[IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)物件，表示所需的連接埠。
+`ppPort`\
+[out]傳回[IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)物件，表示所需的連接埠。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。 傳回`E_PORTSUPPLIER_NO_PORT`如果沒有指定的識別項與連接埠。

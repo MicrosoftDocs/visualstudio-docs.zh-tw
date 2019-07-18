@@ -4,19 +4,19 @@ titleSuffix: ''
 description: 逐步解說 Visual Studio 專案內容中的 Django 基本知識，特別是建立應用程式及使用檢視與範本的步驟。
 ms.date: 11/19/2018
 ms.topic: tutorial
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 696bb664cb7dd63e6b6964fca5d999652723d240
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: de486593c21813746c6c13fa835506d7b1703279
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955657"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62958162"
 ---
 # <a name="step-2-create-a-django-app-with-views-and-page-templates"></a>步驟 2：使用檢視與頁面範本建立 Django 應用程式
 
@@ -48,7 +48,7 @@ Django 應用程式通常會以一組標準的檔案作為開始。 Visual Studi
 
 ![[方案總管] 中的 Django 應用程式檔案](media/django/step02-django-app-in-solution-explorer.png)
 
-| 項目 | 描述 |
+| 項目 | 說明 |
 | --- | --- |
 | **\_\_init\_\_.py** | 此檔案會將應用程式識別為套件。 |
 | **移轉** | Django 儲存指令碼的資料夾，這些指令碼會更新資料庫以配合對模型所做的變更。 接著，Django 的移轉工具會對任何舊版資料庫套用必要的變更，以使它符合目前的模型。 透過使用移轉，您可以專注於模型上，並讓 Django 處理基礎資料庫結構描述。 移轉會在步驟 6 中討論；現在，該資料夾只會包含 *\_\_init\_\_.py* 檔案 (表示該資料夾定義自己的 Python 套件)。 |

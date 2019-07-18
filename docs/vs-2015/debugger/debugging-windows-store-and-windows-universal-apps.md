@@ -1,14 +1,9 @@
 ---
 title: 偵錯 Windows 市集和 Windows 通用應用程式 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -18,13 +13,13 @@ ms.assetid: dd1723b7-4a43-47aa-9acf-d44afce78154
 caps.latest.revision: 8
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: d126afed3d8f164eebdec5e81d6cf60232305734
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 979808584c788d8b4b30f327a535ae2dfb7479e1
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51740127"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68205664"
 ---
 # <a name="debugging-windows-store-and-windows-universal-apps"></a>對 Windows 市集及 Windows 通用應用程式進行偵錯
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,12 +34,9 @@ Visual Studio 偵錯工具進行偵錯 Windows 市集應用程式提供完整的
   
 |||  
 |-|-|  
-|[從 Visual Studio 執行應用程式](../debugger/run-store-apps-from-visual-studio.md)|在本機電腦上、應用程式模擬器或模擬器中，或在遠端裝置上執行市集應用程式。|  
-|[在 Visual Studio 中偵錯應用程式](../debugger/debug-store-apps-in-visual-studio.md)|使用 Visual Studio 偵錯工具，尋找和修正市集應用程式中的 Bug。|  
+|[從 Visual Studio 執行應用程式](../debugger/run-store-apps-from-visual-studio.md)|在本機電腦、應用程式模擬器或遠端裝置上執行市集應用程式。|  
+|[在 Visual Studio 中偵錯應用程式](../debugger/debug-store-apps-in-visual-studio.md)|使用 Visual Studio 偵錯工具，尋找並修正市集應用程式中的 Bug。|  
 |[預先擷取 Windows 市集應用程式的內容](../debugger/prefetch-content-for-windows-store-apps.md)|分析 ContentPrefetcher 類別對 Windows 市集應用程式的影響。|  
   
 ## <a name="see-also"></a>另請參閱  
  [使用靜態程式碼分析來分析程式碼品質](../test/analyze-the-code-quality-of-store-apps-using-visual-studio-static-code-analysis.md)
-
-
-

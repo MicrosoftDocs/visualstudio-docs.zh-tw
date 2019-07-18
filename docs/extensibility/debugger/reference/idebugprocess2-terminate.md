@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProcess2::Terminate
 ms.assetid: 5e6bf373-0fe9-4321-b04a-473a65f664d9
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 704f2b59852a47b02dcf5d6bdaa60e05ca722ca0
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 8a4b44cfc9655c619089d341156328b77594dad9
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56703561"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66314143"
 ---
 # <a name="idebugprocess2terminate"></a>IDebugProcess2::Terminate
 終止處理序。

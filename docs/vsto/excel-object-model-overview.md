@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3db6031a7934d72a3784f08ff7c6c3e5018d26c9
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: df1045cd0b35a2c8d4afa765167693032c6d9936
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56628581"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441813"
 ---
 # <a name="excel-object-model-overview"></a>Excel 物件模型概觀
   若要開發使用 Microsoft Office Excel 的方案，您可以與 Excel 物件模型提供的物件進行互動。 本主題將介紹最重要的物件：
@@ -72,7 +72,7 @@ ms.locfileid: "56628581"
 
 - 工作表
 
-- 範圍
+- Range
 
   使用 Excel 執行的大部分工作都是以這四個物件及其成員為中心。
 
@@ -80,7 +80,7 @@ ms.locfileid: "56628581"
  Excel <xref:Microsoft.Office.Interop.Excel.Application> 物件代表 Excel 應用程式本身。 <xref:Microsoft.Office.Interop.Excel.Application> 物件會公開有關執行中應用程式、套用至該執行個體的選項，以及目前在執行個體中開啟之使用者物件的大量資訊。
 
 > [!NOTE]
->  請勿在 Excel 中，將 <xref:Microsoft.Office.Interop.Excel.ApplicationClass.EnableEvents%2A> 物件的 <xref:Microsoft.Office.Interop.Excel.Application> 屬性設定為 **false**(Native Office Object)。 將這個屬性設定為 false，會導致 Excel 無法引發任何事件，包括主控制項的事件在內。
+> 請勿在 Excel 中，將 <xref:Microsoft.Office.Interop.Excel.ApplicationClass.EnableEvents%2A> 物件的 <xref:Microsoft.Office.Interop.Excel.Application> 屬性設定為 **false**(Native Office Object)。 將這個屬性設定為 false，會導致 Excel 無法引發任何事件，包括主控制項的事件在內。
 
 ### <a name="workbook-object"></a>生活頁簿物件
  <xref:Microsoft.Office.Interop.Excel.Workbook> 物件代表 Excel 應用程式中的單一活頁簿。
@@ -99,7 +99,7 @@ ms.locfileid: "56628581"
 
  Visual Studio 會藉由提供 <xref:Microsoft.Office.Tools.Excel.NamedRange> 和 <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> 類型，來擴充 <xref:Microsoft.Office.Interop.Excel.Range> 物件。 這些類型具有與 <xref:Microsoft.Office.Interop.Excel.Range> 物件相同的大部分功能，以及新功能 (例如資料繫結功能和新事件)。 如需詳細資訊，請參閱 < [NamedRange 控制項](../vsto/namedrange-control.md)並[XmlMappedRange 控制項](../vsto/xmlmappedrange-control.md)。
 
-##  <a name="ExcelOMDocumentation"></a> 使用 Excel 物件模型文件
+## <a name="ExcelOMDocumentation"></a> 使用 Excel 物件模型文件
  如需 Excel 物件模型的完整資訊，您可以參閱 Excel 主要 Interop 組件 (PIA) 參考和 VBA 物件模型參考。
 
 ### <a name="primary-interop-assembly-reference"></a>主要 interop 組件參考

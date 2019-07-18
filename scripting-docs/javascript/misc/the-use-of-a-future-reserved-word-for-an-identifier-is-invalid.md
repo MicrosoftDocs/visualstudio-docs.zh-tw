@@ -15,11 +15,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 5b6527be8f803a62992a6d420c2eee03b384789f
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56839915"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63006165"
 ---
 # <a name="the-use-of-a-future-reserved-word-for-an-identifier-is-invalid"></a>使用未來供識別項使用的保留字是無效的動作
 1049:使用未來供識別項使用的保留字是無效的動作  

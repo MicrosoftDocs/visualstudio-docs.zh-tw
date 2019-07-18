@@ -14,17 +14,16 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b6b29179332920197960ebe3be71e5973bdc8fe9
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 91b34183e36c86290c14e3da7d17687d45cfe180
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54769447"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65694652"
 ---
 # <a name="import-and-export-settings-command"></a>匯入和匯出設定命令
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 匯入、匯出或重設 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 設定。  
   
 ## <a name="syntax"></a>語法  
@@ -44,7 +43,7 @@ Tools.ImportandExportSettings [/export:filename | /import:filename | /reset]
  選擇性。 重設目前的設定。  
   
 ## <a name="remarks"></a>備註  
- 執行此命令而不使用切換參數，會開啟 [匯入和匯出設定精靈]。 如需詳細資訊，請參閱[如何：在電腦與 Visual Studio 版本之間共用設定](http://msdn.microsoft.com/1131fb10-35c1-42da-9cd8-91aa3235b882)。  
+ 執行此命令而不使用切換參數，會開啟 [匯入和匯出設定精靈]。 如需詳細資訊，請參閱[如何：在電腦與 Visual Studio 版本之間共用設定](https://msdn.microsoft.com/1131fb10-35c1-42da-9cd8-91aa3235b882)。  
   
 ## <a name="example"></a>範例  
  下列命令會將目前的設定匯出至檔案 `MyFile.vssettings`。  
@@ -54,5 +53,5 @@ Tools.ImportandExportSettings /export:"c:\Files\MyFile.vssettings"
 ```  
   
 ## <a name="see-also"></a>請參閱  
- [在 Visual Studio 中自訂開發設定](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)   
+ [在 Visual Studio 中自訂開發設定](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)   
  [Visual Studio 命令](../../ide/reference/visual-studio-commands.md)

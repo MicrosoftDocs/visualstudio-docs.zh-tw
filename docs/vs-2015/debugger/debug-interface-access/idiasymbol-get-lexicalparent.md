@@ -1,14 +1,9 @@
 ---
 title: 'Idiasymbol:: Get_lexicalparent |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 4d119965-33a8-474c-9c64-95c5218c389c
 caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 0af84545fac88074aed90fe94c91a6a7d19de0f9
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 4b5f9da456282daca52d6c924b62f21e13545928
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51735637"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "64809821"
 ---
 # <a name="idiasymbolgetlexicalparent"></a>IDiaSymbol::get_lexicalParent
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -46,7 +41,7 @@ HRESULT get_lexicalParent ( 
  如果成功，則傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。  
   
 > [!NOTE]
->  傳回值為`S_FALSE`表示此屬性不適用於符號。  
+> 傳回值為`S_FALSE`表示此屬性不適用於符號。  
   
 ## <a name="remarks"></a>備註  
  語彙父代的符號是封入函式或模組。 例如，函式參數或區域變數語彙父代是函式本身，語彙父函式時，用來定義它的模組。  
@@ -56,6 +51,3 @@ HRESULT get_lexicalParent ( 
 ## <a name="see-also"></a>另請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [符號類型的語彙階層架構](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md)
-
-
-

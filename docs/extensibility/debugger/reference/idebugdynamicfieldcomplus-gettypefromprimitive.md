@@ -6,17 +6,20 @@ helpviewer_keywords:
 - IDebugDynamicFieldCOMPlus::GetTypeFromPrimitive
 - GetTypeFromPrimitive
 ms.assetid: d7f51e2a-1b72-489c-b7b6-4af7b7e4d663
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6f29a1d77e4bb56608750c1f277fc6d58b81c255
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 5a57bcdf876907884c98a29ee6723cf35b7d9806
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56678276"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66351314"
 ---
 # <a name="idebugdynamicfieldcomplusgettypefromprimitive"></a>IDebugDynamicFieldCOMPlus::GetTypeFromPrimitive
 擷取給定其基本類型的類型。
@@ -37,14 +40,12 @@ int GetTypeFromPrimitive(
 );
 ```
 
-#### <a name="parameters"></a>參數
- `dwCorElementType`
+## <a name="parameters"></a>參數
+`dwCorElementType`\
+[in]值從[CorElementType 列舉](/dotnet/framework/unmanaged-api/metadata/corelementtype-enumeration)表示基本類型。
 
- [in]值從[CorElementType 列舉](/dotnet/framework/unmanaged-api/metadata/corelementtype-enumeration)表示基本類型。
-
- `ppType`
-
- [out]傳回[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)表示的型別。
+`ppType`\
+[out]傳回[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)表示的型別。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

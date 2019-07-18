@@ -1,38 +1,34 @@
 ---
 title: O-R 設計工具訊息 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 ms.assetid: 42178ae8-be6c-4df6-9b7a-cdac24d71dd2
 caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: c055321c3936f92c21d5bff6ac63ecbeb7c982e9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 5435b500d79640a944238ea3de6dfc0088a617f3
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49217642"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65693535"
 ---
 # <a name="or-designer-messages"></a>O/R 設計工具訊息
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 本主題列出使用 O/R 設計工具時可能會出現的訊息。  
   
 ## <a name="in-this-section"></a>本節內容  
- [無法建立關聯\<關聯名稱 >-屬性列出兩次](../data-tools/cannot-create-an-association-association-name-property-listed-twice.md)  
+ [無法建立關聯 \<關聯名稱> - 屬性已列出兩次](../data-tools/cannot-create-an-association-association-name-property-listed-twice.md)  
   
- [無法建立關聯\<關聯名稱 >-屬性類型不符](../data-tools/cannot-create-an-association-association-name-property-types-do-not-match.md)  
+ [無法建立關聯 \<關聯名稱> - 屬性類型不符](../data-tools/cannot-create-an-association-association-name-property-types-do-not-match.md)  
   
  [變更 DataContext 方法的傳回型別將無法復原](../data-tools/changing-the-return-type-of-a-datacontext-method-cannot-be-undone.md)  
   
- [無法擷取資料庫物件的結構描述資訊\<物件名稱 >](../data-tools/could-not-retrieve-schema-information-for-database-object-object-name.md)  
+ [無法擷取資料庫物件 \<物件名稱> 的結構描述資訊](../data-tools/could-not-retrieve-schema-information-for-database-object-object-name.md)  
   
  [一個或多個選取的資料庫物件傳回的結構描述與目標類別的結構描述不相符](../data-tools/one-or-more-selected-database-objects-return-a-schema-that-does-not-match-the-schema-of-the-target-class.md)  
   
@@ -44,9 +40,9 @@ ms.locfileid: "49217642"
   
  [您要新增至此設計工具的物件使用了不同於設計工具目前所使用的資料連線](../data-tools/the-objects-you-are-adding-to-the-designer-use-a-different-data-connection-than-the-designer-is-currently-using.md)  
   
- [屬性\<屬性名稱 > 不能刪除](../data-tools/the-property-property-name-cannot-be-deleted.md)  
+ [無法刪除屬性 \<屬性名稱>](../data-tools/the-property-property-name-cannot-be-deleted.md)  
   
- [屬性\<屬性名稱 > 不能刪除，因為它正參與關聯\<關聯名稱 >](../data-tools/the-property-property-name-cannot-be-deleted-because-it-is-participating-in-the-association-association-name.md)  
+ [無法刪除屬性 \<屬性名稱>，因為它正參與關聯 \<關聯名稱>](../data-tools/the-property-property-name-cannot-be-deleted-because-it-is-participating-in-the-association-association-name.md)  
   
  [無法刪除所選取的類別，因為它是用來當做一或多個 DataContext 方法的傳回型別](../data-tools/the-selected-class-cannot-be-deleted-because-it-is-used-as-a-return-type-for-one-or-more-datacontext-methods.md)  
   
@@ -64,5 +60,4 @@ ms.locfileid: "49217642"
 ## <a name="related-sections"></a>相關章節  
  [LINQ to SQL Tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) (Visual Studio 中的 LINQ to SQL 工具)  
   
- [LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)
-
+ [LINQ to SQL](https://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)

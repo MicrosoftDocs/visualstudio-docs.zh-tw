@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - PROCESS_INFO structure
 ms.assetid: 260c33cc-a05e-4645-84b6-536d0b3b0537
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a18d9a158e69fd18319f187274a2db7d00e24546
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 2f8333dd697f265480c46ed7edbfbea1a48970ae
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56720623"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66309334"
 ---
 # <a name="processinfo"></a>PROCESS_INFO
 包含處理序的相關資訊。
@@ -53,23 +56,32 @@ public struct PROCESS_INFO { 
 ```
 
 ## <a name="members"></a>成員
- 欄位中的旗標的組合[PROCESS_INFO_FIELDS](../../../extensibility/debugger/reference/process-info-fields.md)指定哪些欄位都已填寫的列舉型別。
+ `Fields`\
+ 從旗標的組合[PROCESS_INFO_FIELDS](../../../extensibility/debugger/reference/process-info-fields.md)指定哪些欄位都已填寫的列舉型別。
 
- bstrFileName 程序的完整路徑名稱。 相當於呼叫[GetName](../../../extensibility/debugger/reference/idebugprocess2-getname.md)方法搭配參數`GN_FILENAME`。
+ `bstrFileName`\
+ 程序的完整路徑名稱。 相當於呼叫[GetName](../../../extensibility/debugger/reference/idebugprocess2-getname.md)方法搭配參數`GN_FILENAME`。
 
- bstrBaseName 的檔名和副檔名的程序。 相當於呼叫`IDebugProcess2::Getname`方法使用參數`GN_BASENAME`。
+ `bstrBaseName`\
+ 檔案名稱和副檔名的程序。 相當於呼叫`IDebugProcess2::Getname`方法使用參數`GN_BASENAME`。
 
- bstrTitle 標題的過程中，如果有的話。 相當於呼叫`IDebugProcess2::Getname`方法使用參數`GN_TITLE`。
+ `bstrTitle`\
+ 標題的過程中，如果有的話。 相當於呼叫`IDebugProcess2::Getname`方法使用參數`GN_TITLE`。
 
- ProcessId [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md)識別處理序的結構。 相當於呼叫[GetPhysicalProcessId](../../../extensibility/debugger/reference/idebugprocess2-getphysicalprocessid.md)方法。
+ `ProcessId`\
+ [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md)識別處理序的結構。 相當於呼叫[GetPhysicalProcessId](../../../extensibility/debugger/reference/idebugprocess2-getphysicalprocessid.md)方法。
 
- dwSessionId 偵錯工作階段中執行此程序的識別碼。
+ `dwSessionId`\
+ 偵錯工作階段中執行此程序的識別碼。
 
- bstrAttachedSessionName 附加的工作階段名稱。 相當於呼叫[GetAttachedSessionName](../../../extensibility/debugger/reference/idebugprocess2-getattachedsessionname.md)方法。
+ `bstrAttachedSessionName`\
+ 附加的工作階段名稱。 相當於呼叫[GetAttachedSessionName](../../../extensibility/debugger/reference/idebugprocess2-getattachedsessionname.md)方法。
 
- CreationTime 建立程序的時間。
+ `CreationTime`\
+ 建立程序的時間。
 
- 從旗標的組合加上旗標[PROCESS_INFO_FLAGS](../../../extensibility/debugger/reference/process-info-flags.md)列舉，指定處理序的屬性。
+ `Flags`\
+ 從旗標的組合[PROCESS_INFO_FLAGS](../../../extensibility/debugger/reference/process-info-flags.md)列舉，指定處理序的屬性。
 
 ## <a name="remarks"></a>備註
  此結構會傳遞至[GetInfo](../../../extensibility/debugger/reference/idebugprocess2-getinfo.md)填滿其中的方法。

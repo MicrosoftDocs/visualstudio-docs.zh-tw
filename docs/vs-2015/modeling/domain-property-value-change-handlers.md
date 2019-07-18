@@ -1,25 +1,22 @@
 ---
 title: 網域屬性值變更處理常式 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, overriding event handlers
 ms.assetid: 96d8f392-045e-4bc5-b165-fbaa470a3e16
 caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 7b79220a82ce2afc3cbafebedfbfea0c9caa649f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: c8dac5a999b4f11fb066edfc1b1d4c057a999bae
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49232722"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442979"
 ---
 # <a name="domain-property-value-change-handlers"></a>網域屬性值變更處理常式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,15 +55,15 @@ public partial class Comment
   
  請注意有關屬性處理常式的下列重點：  
   
--   當使用者變更網域屬性時，以及當程式碼指派不同的值給屬性時，都會呼叫屬性處理常式方法。  
+- 當使用者變更網域屬性時，以及當程式碼指派不同的值給屬性時，都會呼叫屬性處理常式方法。  
   
--   只有在值實際變更時，才會呼叫方法。 如果程式碼指派的值與目前的值相同，則不會叫用處理常式。  
+- 只有在值實際變更時，才會呼叫方法。 如果程式碼指派的值與目前的值相同，則不會叫用處理常式。  
   
--   計算和自訂儲存網域屬性沒有 OnValueChanged 和 OnValueChanging 方法。  
+- 計算和自訂儲存網域屬性沒有 OnValueChanged 和 OnValueChanging 方法。  
   
--   您無法使用變更處理常式來修改新值。 如果您要這樣做 (例如將值限制在特定範圍內)，請定義 `ChangeRule`。  
+- 您無法使用變更處理常式來修改新值。 如果您要這樣做 (例如將值限制在特定範圍內)，請定義 `ChangeRule`。  
   
--   您無法將變更處理常式加入至代表關聯性角色的屬性。 請改為定義關聯性類別上的 `AddRule` 和 `DeleteRule`。 建立或變更連結時，即會觸發這些規則。 如需詳細資訊，請參閱 <<c0> [ 規則傳播變更內模型](../modeling/rules-propagate-changes-within-the-model.md)。  
+- 您無法將變更處理常式加入至代表關聯性角色的屬性。 請改為定義關聯性類別上的 `AddRule` 和 `DeleteRule`。 建立或變更連結時，即會觸發這些規則。 如需詳細資訊，請參閱 <<c0> [ 規則傳播變更內模型](../modeling/rules-propagate-changes-within-the-model.md)。  
   
 ### <a name="changes-in-and-out-of-the-store"></a>存放區內外的變更  
  屬性處理常式方法會在啟始變更的異動內呼叫。 因此，您可以在存放區中進行更多變更，而不需要開啟新異動。 您的變更可能會產生更多處理常式呼叫。  
@@ -97,7 +94,7 @@ if (newValue > 10)
   
 ```  
   
-### <a name="alternative-technique-calculated-properties"></a>替代方法：計算屬性  
+### <a name="alternative-technique-calculated-properties"></a>替代方法：導出的屬性  
  先前的範例示範如何使用 OnValueChanged() 將某個網域屬性的值傳播至另一個網域屬性。 每個屬性都有自己的儲存值。  
   
  相反地，您可以考慮將衍生屬性定義為計算屬性。 在此情況下，屬性不會有自己的儲存值，因此每當需要屬性值時，都會評估定義的函式。 如需詳細資訊，請參閱 <<c0> [ 計算和儲存體的自訂屬性](../modeling/calculated-and-custom-storage-properties.md)。  
@@ -106,7 +103,7 @@ if (newValue > 10)
   
  不過，計算屬性的潛在缺點是每次使用值都會評估運算式，因此可能呈現效能問題。 此外，計算屬性沒有 OnValueChanging() 和 OnValueChanged()。  
   
-### <a name="alternative-technique-change-rules"></a>替代方法：ChangeRule  
+### <a name="alternative-technique-change-rules"></a>替代方法：變更規則  
  如果您定義了 ChangeRule，則會在屬性值變更的異動結束時執行此規則。  如需詳細資訊，請參閱 <<c0> [ 規則傳播變更內模型](../modeling/rules-propagate-changes-within-the-model.md)。  
   
  如果在一個異動中進行數項變更，ChangeRule 會在所有變更完成時執行。 相較之下，則會執行 OnValue...方法執行時的一些變更尚未執行。 視您要達成的目標而定，ChangeRule 可能更適用。  
@@ -114,7 +111,7 @@ if (newValue > 10)
  您也可以使用 ChangeRule 調整屬性的新值，將值保持在特定範圍內。  
   
 > [!WARNING]
->  如果某項規則變更了存放區內容，可能會觸發其他規則和屬性處理常式。 如果某項規則變更了已觸發的屬性，則會再次呼叫此規則。 您必須確定規則定義不會無限地造成觸發。  
+> 如果某項規則變更了存放區內容，可能會觸發其他規則和屬性處理常式。 如果某項規則變更了已觸發的屬性，則會再次呼叫此規則。 您必須確定規則定義不會無限地造成觸發。  
   
 ```  
 using Microsoft.VisualStudio.Modeling;   
@@ -177,6 +174,3 @@ namespace msft.FieldChangeSample
   }  
 }  
 ```  
-  
-
-

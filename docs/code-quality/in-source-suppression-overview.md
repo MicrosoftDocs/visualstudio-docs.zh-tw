@@ -14,12 +14,12 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: 6cd61304e150da63d2d461ef364e7039789c71fc
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 39fd588a51771aae79d22d2d7f0a02a648184c05
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223078"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821570"
 ---
 # <a name="suppress-code-analysis-warnings"></a>隱藏程式碼分析警告
 
@@ -27,7 +27,7 @@ ms.locfileid: "57223078"
 
 <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute>屬性是在編譯時期定義 CODE_ANALYSIS 編譯的符號時，才會包含您的 managed 程式碼組件的 IL 中繼資料中的條件式屬性。
 
-在 C + + /cli CLI，使用巨集 CA\_抑制\_訊息或 CA\_GLOBAL\_SUPPRESS_MESSAGE 標頭檔中的新增屬性。
+在C++/CLI，使用巨集 CA\_抑制\_訊息或 CA\_GLOBAL\_SUPPRESS_MESSAGE 標頭檔中的新增屬性。
 
 > [!NOTE]
 > 您不應該在發行組建中，使用在原始程式檔的隱藏項目，以避免不小心傳送來源在隱藏項目中繼資料。 此外，在原始程式檔隱藏項目處理成本，因為您的應用程式的效能可能會降低。
@@ -67,17 +67,17 @@ CA_SUPPRESS_MESSAGE("Rule Category", "Rule Id", Justification = "Justification",
 
 - **範圍**-在其要隱藏警告的目標。 如果未指定目標，則會將它設定為屬性的目標。 支援[範圍](xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute.Scope)包含下列項目：
 
-   - `module`
+  - `module`
 
-   - `resource`
+  - `resource`
 
-   - `type`
+  - `type`
 
-   - `member`
+  - `member`
 
-   - `namespace` -此範圍會隱藏對本身的命名空間的警告。 它不會抑制警告針對命名空間內的型別。
+  - `namespace` -此範圍會隱藏對本身的命名空間的警告。 它不會抑制警告針對命名空間內的型別。
 
-   - `namespaceanddescendants` -（新增適用於 Visual Studio 2019) 此範圍會抑制警告中的命名空間和其所有子系的符號。 `namespaceanddescendants`值是唯一有效的 Roslyn 分析器，而且會忽略的二進位、 FxCop 為基礎的靜態分析。
+  - `namespaceanddescendants` -（新增適用於 Visual Studio 2019) 此範圍會抑制警告中的命名空間和其所有子系的符號。 `namespaceanddescendants`值是唯一有效的 Roslyn 分析器，而且會忽略的二進位、 FxCop 為基礎的靜態分析。
 
 - **目標**-識別項，用來指定在其要隱藏警告的目標。 它必須包含完整項目名稱。
 
@@ -85,11 +85,11 @@ CA_SUPPRESS_MESSAGE("Rule Category", "Rule Id", Justification = "Justification",
 
 程式碼分析警告會隱藏的層級<xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute>屬性會套用。 例如，屬性可以套用在組件、 模組、 類型、 成員或參數層級。 的目的是緊密結合的程式碼的隱藏項目資訊發生違規的位置。
 
-一般格式的隱藏項目包含規則的類別和規則識別項，其中包含規則名稱的選擇性人們可讀取表示。 例如: 
+一般格式的隱藏項目包含規則的類別和規則識別項，其中包含規則名稱的選擇性人們可讀取表示。 例如：
 
 `[SuppressMessage("Microsoft.Design", "CA1039:ListsAreStrongTyped")]`
 
-如果有最小化在原始程式檔隱藏項目中繼資料的嚴格的效能考量，就可以省略 「 規則名稱。 規則類別和其規則識別碼一起構成夠唯一的規則識別項。 例如: 
+如果有最小化在原始程式檔隱藏項目中繼資料的嚴格的效能考量，就可以省略 「 規則名稱。 規則類別和其規則識別碼一起構成夠唯一的規則識別項。 例如：
 
 `[SuppressMessage("Microsoft.Design", "CA1039")]`
 

@@ -1,14 +1,9 @@
 ---
 title: IDebugProgramProvider2::WatchForProviderEvents |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugProgramProvider2::WatchForProviderEvents
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 2eb93653-b5fb-45b6-b136-56008c5d25ef
 caps.latest.revision: 15
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 6034898ad8c10583a8fa982a978fa05aa884d25a
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 64ee4b40aefc848d89068076fb3176ae6b625e9f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51787688"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68198699"
 ---
 # <a name="idebugprogramprovider2watchforproviderevents"></a>IDebugProgramProvider2::WatchForProviderEvents
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -57,7 +52,7 @@ int WatchForProviderEvents(
  `Flags`  
  [in]從旗標的組合[PROVIDER_FLAGS](../../../extensibility/debugger/reference/provider-flags.md)列舉型別。 此呼叫一般會在下列旗標：  
   
-|旗標|描述|  
+|旗標|說明|  
 |----------|-----------------|  
 |`PFLAG_REMOTE_PORT`|呼叫端在遠端電腦上執行。|  
 |`PFLAG_DEBUGGEE`|呼叫端目前正在偵錯 （每個節點都會傳回封送處理的其他資訊）。|  
@@ -179,7 +174,7 @@ STDMETHODIMP CDebugEngine::WatchForProviderEvents(
                                 if ( 0 == m_pPidList->GetCount() )  
                                     this->Cleanup();  
                             }  
-                            // This is needed for cases where the SDM has not yet recieved program create  
+                            // This is needed for cases where the SDM has not yet received program create  
                             // by the time that we need to detach (example: the managed attach succeeds,  
                             // but some other attach step fails).  
                             else  
@@ -221,4 +216,3 @@ STDMETHODIMP CDebugEngine::WatchForProviderEvents(
  [CONST_GUID_ARRAY](../../../extensibility/debugger/reference/const-guid-array.md)   
  [IDebugDefaultPort2](../../../extensibility/debugger/reference/idebugdefaultport2.md)   
  [IDebugPortNotify2](../../../extensibility/debugger/reference/idebugportnotify2.md)
-

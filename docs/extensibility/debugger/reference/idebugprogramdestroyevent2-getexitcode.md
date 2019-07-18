@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgramDestroyEvent2::GetExitCode
 ms.assetid: 7f540cf6-e2d1-42b0-913e-a26d654b7659
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d52a45d2d192a7ee9b3918a21a03250c5b0f0d0e
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 3adc3eb2598b46be186612892df4960bad39772e
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56684243"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66343586"
 ---
 # <a name="idebugprogramdestroyevent2getexitcode"></a>IDebugProgramDestroyEvent2::GetExitCode
 取得程式的結束代碼。
@@ -36,10 +39,9 @@ int GetExitCode( 
 );
 ```
 
-#### <a name="parameters"></a>參數
- `pdwExit`
-
- [out]傳回程式的結束代碼。
+## <a name="parameters"></a>參數
+`pdwExit`\
+[out]傳回程式的結束代碼。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

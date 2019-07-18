@@ -8,17 +8,17 @@ helpviewer_keywords:
 - Solution Items folder
 - files, opening with Miscellaneous Files project
 ms.assetid: 93a278a8-d4f4-400b-8945-4f1b0a2b5bac
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3a1d0530d6a7a759bfab557be1a3d80fcfc9df78
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: dd3cf792b10905d0f124266601e791dc91259ce2
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56630817"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66349281"
 ---
 # <a name="miscellaneous-files-project"></a>其他檔案專案
 當使用者開啟專案項目時，IDE 會指派給其他檔案專案不是成員的方案中的任何專案的任何項目。

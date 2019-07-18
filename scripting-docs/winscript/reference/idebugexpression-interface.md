@@ -13,18 +13,18 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 589c231afbc149c4eeface784d3cdbd43c4e5e40
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: 1757317e9ab148b508bfed95107b5c3b3369b598
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58156342"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430018"
 ---
 # <a name="idebugexpression-interface"></a>IDebugExpression 介面
 代表非同步評估的運算式。 指令碼引擎通常會實作這個介面。 偵錯工具 IDE 通常會使用此介面來啟用 [立即執行] 視窗或監看式視窗。  
   
 > [!NOTE]
->  `IDebugExpression`介面可供使用，只會從堆疊框架。  
+> `IDebugExpression`介面可供使用，只會從堆疊框架。  
   
  除了繼承自方法`IUnknown`，則`IDebugExpression`介面會公開下列方法。  
   

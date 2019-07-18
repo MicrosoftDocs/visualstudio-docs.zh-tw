@@ -10,17 +10,17 @@ helpviewer_keywords:
 - localize visual studio
 - localize vsct
 ms.assetid: b04ee0f6-82ea-47e6-853a-72382267d6da
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fd5755f2b0bf8fe4379d503d952341f176c0b870
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 62c6011d1a04b60d1bd0cc538e9560d8977f9799
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56679264"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66344663"
 ---
 # <a name="localize-menu-commands"></a>將功能表命令當地語系化
 您也可以建立當地語系化的功能表和工具列命令提供當地語系化的文字 *.vsct*檔案，與當地語系化 *.resx*的 VSPackage，然後更新專案檔以納入的檔案變更。
@@ -74,21 +74,21 @@ ms.locfileid: "56679264"
    ```
 
 ## <a name="localize-other-text-resources"></a>當地語系化的文字中的其他資源
- 文字命令名稱以外的資源定義中資源 (*.resx*) 檔案。
+ 文字命令名稱以外的資源定義中資源 ( *.resx*) 檔案。
 
-1.  重新命名*VSPackage.resx*要*VSPackage.en US.resx*。
+1. 重新命名*VSPackage.resx*要*VSPackage.en US.resx*。
 
-2.  建立一份*VSPackage.en US.resx*檔案，每個當地語系化語言。
+2. 建立一份*VSPackage.en US.resx*檔案，每個當地語系化語言。
 
      命名每個複本*VSPackage。 {地區設定}.resx*，其中 *{地區設定}* 是特定文化特性名稱。
 
-3.  重新命名*Resources.resx*要*Resources.en-us.resx*。
+3. 重新命名*Resources.resx*要*Resources.en-us.resx*。
 
-4.  建立一份*Resources.en-us.resx*檔案，每個當地語系化語言。
+4. 建立一份*Resources.en-us.resx*檔案，每個當地語系化語言。
 
      命名每個複本*資源。 {地區設定}.resx*，其中 *{地區設定}* 是特定文化特性名稱。
 
-5.  開啟每一個 *.resx*檔案修改的字串值為適合特定語言和文化特性。 下列範例會顯示工具視窗的標題列的當地語系化的資源定義。
+5. 開啟每一個 *.resx*檔案修改的字串值為適合特定語言和文化特性。 下列範例會顯示工具視窗的標題列的當地語系化的資源定義。
 
      [*Resources.en-US.resx*]
 
@@ -110,9 +110,9 @@ ms.locfileid: "56679264"
 ## <a name="incorporate-localized-resources-into-the-project"></a>併入專案中當地語系化的資源
  您必須修改*assemblyinfo.cs*檔案和專案檔案，來將當地語系化的資源。
 
-1.  從**屬性**中的節點**方案總管**，開啟*assemblyinfo.cs*或是*assemblyinfo.vb*在編輯器中。
+1. 從**屬性**中的節點**方案總管**，開啟*assemblyinfo.cs*或是*assemblyinfo.vb*在編輯器中。
 
-2.  新增下列項目。
+2. 新增下列項目。
 
     ```csharp
     [assembly: NeutralResourcesLanguage("en-US", UltimateResourceFallbackLocation.Satellite)]
@@ -120,13 +120,13 @@ ms.locfileid: "56679264"
 
      英文 （美國） 設定為預設語言。
 
-3.  卸載專案。
+3. 卸載專案。
 
-4.  在編輯器中開啟專案檔。
+4. 在編輯器中開啟專案檔。
 
-5.  找出`ItemGroup`包含的項目`EmbeddedResource`項目。
+5. 找出`ItemGroup`包含的項目`EmbeddedResource`項目。
 
-6.  在`EmbeddedResource`呼叫的項目*VSPackage.en US.resx*，取代`ManifestResourceName`項目`LogicalName`項目，設定為`VSPackage.en-US.Resources`、，如下所示。
+6. 在`EmbeddedResource`呼叫的項目*VSPackage.en US.resx*，取代`ManifestResourceName`項目`LogicalName`項目，設定為`VSPackage.en-US.Resources`、，如下所示。
 
     ```xml
     <EmbeddedResource Include="VSPackage.en-US.resx">
@@ -135,9 +135,9 @@ ms.locfileid: "56679264"
     </EmbeddedResource>
     ```
 
-7.  針對每個當地語系化的語言，複製`EmbeddedResource`項目`VsPackage.en-US`，並將**Include**屬性和**LogicalName**的複製到目標地區設定，如下列所示的項目範例。
+7. 針對每個當地語系化的語言，複製`EmbeddedResource`項目`VsPackage.en-US`，並將**Include**屬性和**LogicalName**的複製到目標地區設定，如下列所示的項目範例。
 
-8.  每個當地語系化`VSCTCompile`項目，新增`ResourceName`指向的項目`Menus.ctmenu`，如下列範例所示。
+8. 每個當地語系化`VSCTCompile`項目，新增`ResourceName`指向的項目`Menus.ctmenu`，如下列範例所示。
 
     ```xml
     <ItemGroup>

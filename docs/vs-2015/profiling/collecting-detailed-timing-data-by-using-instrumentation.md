@@ -12,12 +12,12 @@ caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 595c5f326ba7af25f3b6517f9955db18056e38f9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: c129ddf016e02fe6c29d5cf63fe57ba07fbd4e95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54794322"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68176641"
 ---
 # <a name="collecting-detailed-timing-data-by-using-instrumentation"></a>使用檢測收集計時詳細資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,18 +26,18 @@ ms.locfileid: "54794322"
   
  您可以使用下列程序的其中一個來指定檢測方法：  
   
--   在 [程式碼剖析精靈] 的第一頁，選取 [檢測] 。  
+- 在 [程式碼剖析精靈] 的第一頁，選取 [檢測]  。  
   
--   在 [效能總管]  工具列的 [方法]  清單中，按一下 [檢測] 。  
+- 在 [效能總管]  工具列的 [方法]  清單中，按一下 [檢測]  。  
   
--   在效能工作階段 [屬性] 對話方塊中的 [一般]  頁面，選取 [檢測] 。  
+- 在效能工作階段 [屬性] 對話方塊中的 [一般]  頁面，選取 [檢測]  。  
   
 ## <a name="common-tasks"></a>一般工作  
- 您可以在效能工作階段的 [效能工作階段]  對話方塊中指定其他選項。 若要開啟此對話方塊：  
+ 您可以在效能工作階段的 [效能工作階段]   對話方塊中指定其他選項。 若要開啟此對話方塊：  
   
-- 在 **效能總管**中，以滑鼠右鍵按一下效能工作階段名稱，然後按一下 [屬性] 。  
+- 在 **效能總管**中，以滑鼠右鍵按一下效能工作階段名稱，然後按一下 [屬性]  。  
   
-  下表中的工作描述當您使用檢測方法設定檔時，可以在 [效能工作階段]  對話方塊中指定的選項。  
+  下表中的工作描述當您使用檢測方法設定檔時，可以在 [效能工作階段]   對話方塊中指定的選項。  
   
 |工作|相關內容|  
 |----------|---------------------|  

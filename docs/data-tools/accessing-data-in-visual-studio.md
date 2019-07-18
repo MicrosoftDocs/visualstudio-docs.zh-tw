@@ -14,20 +14,20 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 3adedb95931dfc2f683595fc97bb98821e32fb38
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MTE95
+ms.openlocfilehash: 5403803a4da0821978a8c6bbfc31e45c31104640
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57983490"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66715271"
 ---
 # <a name="access-data-in-visual-studio"></a>使用 Visual Studio 存取資料
 
 在 Visual Studio 中，您可以建立連接至幾乎任何的資料庫產品或服務的任何格式、 任何位置中資料的應用程式，在本機電腦上，在區域網路上，或是在公用、 私人或混合式雲端。
 
-JavaScript、 Python、 PHP、 Ruby 或 c + + 中的應用程式，您連接到資料就像任何其他動作，取得程式庫，然後撰寫程式碼。 .NET 應用程式，Visual Studio 會提供您可用來瀏覽資料來源，請建立來儲存和管理記憶體中的資料和資料繫結至使用者介面的物件模型的工具。 Microsoft Azure 會提供 Sdk for.NET、 Java、 Node.js、 PHP、 Python、 Ruby 和行動應用程式和在 Visual Studio 中的工具連線至 Azure 儲存體。
+JavaScript、 Python、 PHP、 Ruby 中的應用程式或C++，在取得程式庫，然後撰寫程式碼，執行任何動作，例如連接到資料。 .NET 應用程式，Visual Studio 會提供您可用來瀏覽資料來源，請建立來儲存和管理記憶體中的資料和資料繫結至使用者介面的物件模型的工具。 Microsoft Azure 會提供 Sdk for.NET、 Java、 Node.js、 PHP、 Python、 Ruby 和行動應用程式和在 Visual Studio 中的工具連線至 Azure 儲存體。
 
-下列清單會顯示幾個可用的許多資料庫和儲存體系統，從 Visual Studio。 [Microsoft Azure](https://azure.microsoft.com/)供應項目是資料服務，其中包含所有的佈建和管理的基礎資料存放區。 **Azure 開發**中的工作負載[Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017)可讓您能夠直接從 Visual Studio 的 Azure 資料存放區使用。
+下列清單會顯示幾個可用的許多資料庫和儲存體系統，從 Visual Studio。 [Microsoft Azure](https://azure.microsoft.com/)供應項目是資料服務，其中包含所有的佈建和管理的基礎資料存放區。 **Azure 開發**中的工作負載[Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)可讓您能夠直接從 Visual Studio 的 Azure 資料存放區使用。
 
 ![Azure 開發工作負載](media/azure-development-workload.png)
 
@@ -86,7 +86,7 @@ JavaScript、 Python、 PHP、 Ruby 或 c + + 中的應用程式，您連接到�
 
 如需關於 ASP.NET 資料存取文件，請參閱[使用資料](https://www.asp.net/web-forms/overview/presenting-and-managing-data)ASP.NET 網站上。 如需使用 Entity Framework 搭配 ASP.NET MVC 教學課程，請參閱 < [Getting Started with Entity Framework 6 Code First 使用 MVC 5](/aspnet/mvc/overview/getting-started/getting-started-with-ef-using-mvc/creating-an-entity-framework-data-model-for-an-asp-net-mvc-application)。
 
-中的通用 Windows 平台 (UWP) 應用程式C#或 Visual Basic 可以使用 Microsoft Azure SDK for.NET 存取 Azure 儲存體和其他 Azure 服務。 Windows.Web.HttpClient 類別可讓您與任何 RESTful 服務的通訊。 如需詳細資訊，請參閱 <<c0> [ 如何連接至 HTTP 伺服器使用 windows.web.http 應用程式開發](https://msdn.microsoft.com/library/windows/apps/dn469430.aspx)。
+在 C# 或 Visual Basic 中的通用 Windows 平台 (UWP) 應用程式可以使用 Microsoft Azure SDK for.NET 存取 Azure 儲存體和其他 Azure 服務。 Windows.Web.HttpClient 類別可讓您與任何 RESTful 服務的通訊。 如需詳細資訊，請參閱 <<c0> [ 如何連接至 HTTP 伺服器使用 windows.web.http 應用程式開發](https://msdn.microsoft.com/library/windows/apps/dn469430.aspx)。
 
 在本機電腦上的資料儲存體，建議的方法是使用 SQLite，會在應用程式相同的程序中執行。 如果需要物件關聯式對應 (ORM) 層，您可以使用 Entity Framework。 如需詳細資訊，請參閱 <<c0> [ 資料存取](/windows/uwp/data-access/index)Windows 開發人員中心。
 
@@ -110,15 +110,15 @@ JavaScript、 Python、 PHP、 Ruby 或 c + + 中的應用程式，您連接到�
 
 ## <a name="native-c"></a>原生 C++
 
-連接到 SQL Server 的 c + + 應用程式應使用[Microsoft® ODBC Driver 13.1 for SQL Server](https://www.microsoft.com/download/details.aspx?id=53339)在大部分情況下。 如果連結的伺服器，則是必要的 OLE DB 和，您會使用[SQL Server Native Client](/sql/relational-databases/native-client/sql-server-native-client)。 您可以使用來存取其他資料庫[ODBC](https://docs.microsoft.com/sql/odbc/microsoft-open-database-connectivity-odbc?view=sql-server-2017)或直接 OLE DB 驅動程式。 ODBC 是目前的標準資料庫介面，但大部分資料庫系統提供無法透過 ODBC 介面存取的自訂功能。 OLE DB 是舊的 COM 資料存取技術，仍然受到支援，但不是建議用於新的應用程式。 如需詳細資訊，請參閱 < [Visual c + + 中的資料存取](/cpp/data/data-access-in-cpp)。
+C++連接到 SQL Server 的應用程式應使用[Microsoft® ODBC Driver 13.1 for SQL Server](https://www.microsoft.com/download/details.aspx?id=53339)在大部分情況下。 如果連結的伺服器，則是必要的 OLE DB 和，您會使用[SQL Server Native Client](/sql/relational-databases/native-client/sql-server-native-client)。 您可以使用來存取其他資料庫[ODBC](https://docs.microsoft.com/sql/odbc/microsoft-open-database-connectivity-odbc?view=sql-server-2017)或直接 OLE DB 驅動程式。 ODBC 是目前的標準資料庫介面，但大部分資料庫系統提供無法透過 ODBC 介面存取的自訂功能。 OLE DB 是舊的 COM 資料存取技術，仍然受到支援，但不是建議用於新的應用程式。 如需詳細資訊，請參閱 <<c0> [ 視覺效果中的資料存取C++ ](/cpp/data/data-access-in-cpp)。</c0>
 
-使用 REST 服務的 c + + 程式可以使用[c + + REST SDK](https://github.com/Microsoft/cpprestsdk)。
+C++使用 REST 服務的程式可以使用[ C++ REST SDK](https://github.com/Microsoft/cpprestsdk)。
 
-使用 Microsoft Azure 儲存體的 c + + 程式可以使用[Microsoft Azure 儲存體用戶端](https://www.nuget.org/packages/Microsoft.Azure.Storage.CPP)。
+C++使用 Microsoft Azure 儲存體的程式可以使用[Microsoft Azure 儲存體用戶端](https://www.nuget.org/packages/Microsoft.Azure.Storage.CPP)。
 
-資料模型化&mdash;Visual Studio 不提供 c + + 的 ORM 層。 [ODB](https://www.codesynthesis.com/products/odb/) c + + 是熱門的開放原始碼 ORM。
+資料模型化&mdash;Visual Studio 不提供的 ORM 層C++。 [ODB](https://www.codesynthesis.com/products/odb/)是熱門的開放原始碼 ORM，如C++。
 
-若要深入了解從 c + + 應用程式連接到資料庫，請參閱[c + + 的 Visual Studio data tools](../data-tools/visual-studio-data-tools-for-cpp.md)。 如需有關舊版的 Visual c + + 資料存取技術的詳細資訊，請參閱[資料存取](/cpp/data/data-access-in-cpp)。
+若要深入了解連接到資料庫，從C++應用程式，請參閱[Visual Studio data tools 的C++ ](../data-tools/visual-studio-data-tools-for-cpp.md)。 如需有關舊版視覺效果C++資料存取技術，請參閱[Data Access](/cpp/data/data-access-in-cpp)。
 
 ## <a name="javascript"></a>JavaScript
 
@@ -150,8 +150,8 @@ JavaScript、 Python、 PHP、 Ruby 或 c + + 中的應用程式，您連接到�
 
 [在 Office 方案中的資料](../vsto/data-in-office-solutions.md)&mdash;包含說明資料在 Office 方案中的運作方式的主題連結。 這包括有關結構描述導向程式設計、 資料快取，以及伺服器端資料存取的資訊。
 
-[LINQ (Language-Integrated Query)](/dotnet/csharp/linq/)&mdash;告訴您，內建的查詢功能C#和 Visual Basic 和查詢關聯式資料庫、 XML 文件、 資料集和記憶體中集合的一般模型。
+[LINQ (Language-Integrated Query)](/dotnet/csharp/linq/)&mdash;說明內建 C# 和 Visual Basic 中，以及通用模型來查詢關聯式資料庫、 XML 文件、 資料集和記憶體中集合的查詢功能。
 
-[Visual Studio 中的 XML 工具](../xml-tools/xml-tools-in-visual-studio.md)&mdash;討論使用 XML 資料、 偵錯 XSLT，.NET Framework 的 XML 功能，以及 XML 查詢的架構。
+[Visual Studio 中的 XML 工具](../xml-tools/xml-tools-in-visual-studio.md)&mdash;討論使用 XML 資料、 偵錯 XSLT，.NET XML 功能，以及 XML 查詢的架構。
 
-[XML 文件和資料](/dotnet/standard/data/xml/index)&mdash;提供一組完整且整合式的類別處理 XML 文件和.NET Framework 中的資料的概觀。
+[XML 文件和資料](/dotnet/standard/data/xml/index)&mdash;提供一組完整且整合式的類別處理 XML 文件和.NET 中的資料的概觀。

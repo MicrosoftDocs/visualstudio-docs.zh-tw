@@ -1,29 +1,24 @@
 ---
-title: 測試區域 2： 取得從原始檔控制 |Microsoft Docs
-ms.custom: ''
+title: 測試區域 2：從原始檔控制取得 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, getting items from source control
 - source control [Visual Studio SDK], getting items from
 ms.assetid: cbd345c5-ca43-4630-b7a4-85564f4e2090
 caps.latest.revision: 19
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 96b00cfc9965b6006fa51b3cd313566658d604bd
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 069c396ce4cb75c9153082fdbb352b2ba713c8a8
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51786154"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68156015"
 ---
-# <a name="test-area-2-get-from-source-control"></a>測試區域 2︰從原始檔控制中取得
+# <a name="test-area-2-get-from-source-control"></a>測試區域 2：從原始檔控制取得
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 此測試區域涵蓋測試案例，透過 Get 命令的版本存放區擷取項目。 這些測試案例可以套用至這兩個本機和 Web 專案。  
@@ -33,13 +28,13 @@ ms.locfileid: "51786154"
   
 ##### <a name="get-latest-version"></a>取得最新版本：  
   
--   **檔案**，**原始檔控制**，**取得最新版本**。  
+- **檔案**，**原始檔控制**，**取得最新版本**。  
   
--   **檔案**，**取得最新版本**。  
+- **檔案**，**取得最新版本**。  
   
--   快顯功能表**取得最新版本**。  
+- 快顯功能表**取得最新版本**。  
   
--   Get:**檔案**，**原始檔控制**，**取得**。  
+- 取得此項目：**檔案**，**原始檔控制**，**取得**。  
   
 ## <a name="expected-behavior"></a>預期的行為  
   
@@ -62,4 +57,3 @@ ms.locfileid: "51786154"
   
 ## <a name="see-also"></a>另請參閱  
  [原始檔控制外掛程式測試指南](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)
-

@@ -1,27 +1,22 @@
 ---
 title: 圖形狀態 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.graphics.statewindow
 ms.assetid: 97e7757e-c372-4626-8149-99a81367a0e1
 caps.latest.revision: 5
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: c5100f32a7a706f0d61e3b0ac006c8168e1ee553
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 87972fe12cb8be78b89261d0aaaa272d9e2d5a14
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51750363"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825584"
 ---
 # <a name="graphics-state"></a>圖形狀態
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,23 +37,23 @@ Visual Studio 圖形診斷中的 [狀態] 視窗可協助您了解在目前事�
   
 ##### <a name="to-change-the-state-view"></a>變更狀態檢視  
   
--   在 [狀態] 視窗左上方的標題列正下方，選擇對應至您要使用之狀態檢視樣式的按鈕。  
-  
-    -   **顯示 API 輸入的狀態檢視**  
-  
-    -   **顯示邏輯狀態檢視**  
-  
-    -   **顯示釘選狀態檢視**  
+- 在 [狀態] 視窗左上方的標題列正下方，選擇對應至您要使用之狀態檢視樣式的按鈕。  
+
+  - **顯示 API 輸入狀態檢視**  
+
+  - **顯示邏輯狀態檢視**  
+
+  - **顯示釘選的狀態檢視**  
   
 > [!IMPORTANT]
->  您必須將狀態中的釘選**顯示 API 輸入狀態**或是**顯示邏輯狀態**才會顯示在檢視**顯示釘選狀態檢視**。  
+> 您必須在 [顯示 API 輸入狀態]  或 [顯示邏輯狀態]  檢視中釘選狀態，它才會顯示在 [顯示釘選的狀態檢視]  中。  
   
 ### <a name="state-table-format"></a>狀態資料表格式  
  [狀態] 視窗會呈現數個資料行的資訊。  
   
-|資料行|描述|  
+|「資料行」|描述|  
 |------------|-----------------|  
-|名稱|狀態項目的名稱。 如果此項目代表狀態的組合，則可以展開項目予以顯示。<br /><br /> 在  **API 輸入狀態檢視**並**邏輯狀態檢視**狀態，以顯示狀態之間的階層式關聯性會縮排名稱。<br /><br /> 在 **釘選狀態檢視**狀態時，完整名稱會顯示在一般清單。|  
+|名稱|狀態項目的名稱。 如果此項目代表狀態的組合，則可以展開項目予以顯示。<br /><br /> 在 [API 輸入狀態檢視]  和 [邏輯狀態檢視]  狀態中，會縮排名稱，以顯示狀態之間的階層式關聯性。<br /><br /> 在 [釘選的狀態檢視]  狀態中，會在簡單列表顯示完整名稱。|  
 |值|狀態項目的值。|  
 |類型|狀態項目的類型。|  
   
@@ -72,11 +67,8 @@ Visual Studio 圖形診斷中的 [狀態] 視窗可協助您了解在目前事�
   
 ##### <a name="to-pin-state-in-place"></a>就地釘選狀態  
   
-1.  在 [狀態] 視窗中，找出您感興趣的狀態。 您可能需要展開高階狀態，以找出您感興趣的詳細資料。  
+1. 在 [狀態] 視窗中，找出您感興趣的狀態。 您可能需要展開高階狀態，以找出您感興趣的詳細資料。  
   
-2.  將游標放在您感興趣的狀態上方。 [釘選] 圖示會出現在狀態項目左側。  
+2. 將游標放在您感興趣的狀態上方。 [釘選] 圖示會出現在狀態項目左側。  
   
-3.  選擇 [釘選] 圖示就地釘選狀態項目。
-
-
-
+3. 選擇 [釘選] 圖示就地釘選狀態項目。

@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d63354d552b04d07f0b2d0ede41d28fc33cda3a3
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MT
+ms.openlocfilehash: 607809b05688931b139b27fec1803719b928dfea
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55970721"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445824"
 ---
 # <a name="customizing-text-and-image-fields"></a>自訂文字和影像欄位
 當您在圖形中定義的文字裝飾項目時，它被以文字欄位。 例如 TextFields 和其他 ShapeFields 初始化的詳細資訊，請在您的 DSL 方案中檢查 Dsl\GeneratedCode\Shapes.cs。
@@ -88,7 +88,7 @@ public virtual StyleSetResourceId GetFontId(ShapeElement parentShape)
  如果沒有，則覆寫`InitializeShapeFields`shape 類別，以及指派值給適當的方法`Default...`文字欄位的屬性。
 
 > [!WARNING]
->  若要覆寫`InitializeShapeFields()`，您必須設定**產生雙衍生**屬性的圖形類別`true`DSL 定義中。
+> 若要覆寫`InitializeShapeFields()`，您必須設定**產生雙衍生**屬性的圖形類別`true`DSL 定義中。
 
  在此範例中，圖形會有將用於使用者註解的文字欄位。 我們想要使用標準的註解的字型。 由於這是標準的字型樣式集中，我們可以設定預設字型 id:
 
@@ -181,13 +181,13 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 
 #### <a name="to-create-a-subclass-of-imagefield"></a>若要建立的 ImageField 子類別
 
-1.  設定**產生雙衍生**DSL 定義中的父圖形類別的屬性。
+1. 設定**產生雙衍生**DSL 定義中的父圖形類別的屬性。
 
-2.  覆寫`InitializeShapeFields`圖形類別的方法。
+2. 覆寫`InitializeShapeFields`圖形類別的方法。
 
-    -   在 DSL 專案中，建立新的程式碼檔案並寫入 shape 類別的部分類別定義。 覆寫的方法定義。
+    - 在 DSL 專案中，建立新的程式碼檔案並寫入 shape 類別的部分類別定義。 覆寫的方法定義。
 
-3.  檢查的程式碼`InitializeShapeFields`DSL\GeneratedCode\Shapes.cs 中。
+3. 檢查的程式碼`InitializeShapeFields`DSL\GeneratedCode\Shapes.cs 中。
 
      在您覆寫的方法，呼叫基底方法，然後建立您自己的映像欄位類別的執行個體。 使用此選項可將一般的映像 欄位中取代`shapeFields`清單。
 
@@ -195,7 +195,7 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
  此範例會將取決於圖形的模型項目的狀態變更的圖示。
 
 > [!WARNING]
->  此範例示範如何進行動態影像的裝飾項目。 但如果您只想要根據的模型變數狀態的一或兩個映像之間切換，很容易建立數個影像的裝飾項目，在圖形上，相同的位置找到這些服務，然後設定取決於模型的特定值的可見性篩選變數。 若要設定此篩選器，選取圖形對應 DSL 定義中，開啟 [DSL 詳細資料] 視窗中，然後按一下 [裝飾項目] 索引標籤。
+> 此範例示範如何進行動態影像的裝飾項目。 但如果您只想要根據的模型變數狀態的一或兩個映像之間切換，很容易建立數個影像的裝飾項目，在圖形上，相同的位置找到這些服務，然後設定取決於模型的特定值的可見性篩選變數。 若要設定此篩選器，選取圖形對應 DSL 定義中，開啟 [DSL 詳細資料] 視窗中，然後按一下 [裝飾項目] 索引標籤。
 
  若要執行此程式碼範例，建立新的 DSL 方案，使用 [最小語言] 範本。 將布林值的網域屬性加入`AlternateState`ExampleElement 網域類別。 將圖示裝飾項目加入 ExampleShape 類別，並設定其影像點陣圖檔案。 按一下 **轉換所有範本**。 在 DSL 專案中，加入新的程式碼檔案，並插入下列程式碼。
 

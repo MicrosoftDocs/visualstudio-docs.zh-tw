@@ -25,26 +25,25 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 957e40a44c4f396fbd31b9062cfacddfd78cc8d5
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: efbdccf4d5774322b42a517831b22186103347b1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54805470"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430893"
 ---
 # <a name="mt-task"></a>MT 工作
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 包裝 Microsoft 資訊清單工具 mt.exe。 如需詳細資訊，請參閱 [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) 網站的 "Mt.exe"。  
   
 ## <a name="parameters"></a>參數  
  下表說明 **MT** 工作的參數。 大部分的工作參數以及數組參數會對應到命令列選項。  
   
 > [!NOTE]
->  mt.exe 文件使用連字號 (**-**) 做為命令列選項的前置詞，但本主題使用斜線 (**/**)。 任一前置詞都可接受。  
+> mt.exe 文件使用連字號 (**-**) 做為命令列選項的前置詞，但本主題使用斜線 (**/**)。 任一前置詞都可接受。  
   
-|參數|描述|  
+|參數|說明|  
 |---------------|-----------------|  
 |**AdditionalManifestFiles**|選擇性的 **String[]** 參數。<br /><br /> 指定一或多個資訊清單檔案的名稱。<br /><br /> 如需詳細資訊，請參閱 [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) 網站中 "Mt.exe" 的 **/manifest** 選項。|  
 |**AdditionalOptions**|選擇性的 **String** 參數。<br /><br /> 命令列選項清單。 例如 "*/option1 /option2 /option#*"。 使用此參數，來指定任何其他 **MT** 工作參數未表示的命令列選項。<br /><br /> 如需詳細資訊，請參閱 [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) 網站的 "Mt.exe"。|  

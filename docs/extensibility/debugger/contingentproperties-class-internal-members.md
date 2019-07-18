@@ -6,17 +6,17 @@ helpviewer_keywords:
 - ContingentProperties class [.NET Framework debug engines]
 - debug engines, ContingentProperties class [.NET Framework]
 ms.assetid: c49d1362-ab1c-4b6d-9950-fcae40e0e66b
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 60129950c2311cc94b8573de4cd8ae3c46194e75
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: a7b9775ed74e7ae81768f180e596f171b2c99cba
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56704744"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66344313"
 ---
 # <a name="contingentproperties-class---internal-members"></a>ContingentProperties 類別-內部成員
 包含其他屬性<xref:System.Threading.Tasks.Task>物件。

@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8dc08ce4ef3f4afd8cd7630848ef1ee67e1f2970
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: e5495bb1f531db00d43e04cce9f5f771c88cc1a7
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58152924"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65679196"
 ---
 # <a name="quickstart-debug-with-c-or-visual-basic-using-the-visual-studio-debugger"></a>快速入門：使用 Visual Studio 偵錯工具對 C# 或 Visual Basic 進行偵錯
 
@@ -25,13 +25,13 @@ Visual Studio 偵錯工具提供許多強大的功能，可協助您偵錯應用
 
 ## <a name="create-a-new-project"></a>建立新專案
 
-1. 在 Visual Studio 中，選擇 [檔案] > [新增] > [專案]。
+1. 開啟 Visual Studio 並建立新專案。
 
     ::: moniker range=">=vs-2019"
-    [建立新專案] 對話方塊隨即開啟。 在搜尋方塊中輸入 **.net** 以篩選結果、選擇 [主控台應用程式 (.NET Core)]，然後按 [下一步]。 接著，輸入 **MyDbgApp** 之類的名稱，然後選擇 [建立]。
+    按 **Esc** 關閉開始視窗。 鍵入 **Ctrl + Q** 來開啟搜尋方塊，鍵入**主控台**，選擇 [範本]，然後選擇 [建立新的主控台應用程式 (.NET Core) 專案]。 在出現的對話方塊中選擇 [建立]。
     ::: moniker-end
     ::: moniker range="vs-2017"
-    [新增專案] 對話方塊隨即開啟。 在 [Visual C#] 下方，選擇 [.NET Core]，然後在中間窗格中選擇 [主控台應用程式 (.NET Core)]。 接著，輸入 **MyDbgApp** 之類的名稱，然後按一下 [確定]。
+    從頂端功能表列中，選擇 [檔案] > [新增] > [專案]。 在 [新專案] 對話方塊的左窗格中，於 [Visual C#] 下選擇 [.NET Core]，然後在中間的窗格中選擇 [主控台應用程式 (.NET Core)]。 接著，輸入 **MyDbgApp** 之類的名稱，然後按一下 [確定]。
     ::: moniker-end
 
      如果您看不到 [主控台應用程式 (.NET Core)] 專案範本，請移至 [工具] > [取得工具與功能...]，以開啟 Visual Studio 安裝程式。 選擇 [.NET 桌面開發] 和 [.NET Core] 工作負載，然後選擇 [修改]。
@@ -186,4 +186,4 @@ Visual Studio 偵錯工具提供許多強大的功能，可協助您偵錯應用
 在本教學課程中，您已了解如何啟動偵錯工具、逐步執行程式碼，以及檢查變數。 建議您進一步查看偵錯工具功能，以及詳細資訊的連結。
 
 > [!div class="nextstepaction"]
-> [偵錯工具功能導覽](../debugger/debugger-feature-tour.md)
+> [偵錯工具簡介](../debugger/debugger-feature-tour.md)

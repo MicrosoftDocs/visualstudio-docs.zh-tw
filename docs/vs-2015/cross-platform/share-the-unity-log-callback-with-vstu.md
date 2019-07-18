@@ -9,17 +9,16 @@ caps.latest.revision: 5
 author: conceptdev
 ms.author: crdun
 manager: jillfra
-ms.openlocfilehash: 5e4fcfdc35e9329429421fd03a941e611e6b5b8f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: b58d693980ffc55ccfe613d52e868bccca9908b8
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54789165"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68145728"
 ---
 # <a name="share-the-unity-log-callback-with-vstu"></a>與 VSTU 共用 Unity 記錄回呼
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Visual Studio Tools for Unity 使用 Unity 註冊記錄回呼，以便將其主控台串流至 Visual Studio。 如果您的編輯器指令碼也使用 Unity 註冊記錄回呼，VSTU 回呼可能會與您的回呼相衝突。 若要避免這種可能性，請使用 `VisualStudioIntegration.LogCallback` 事件來與 VSTU 合作。  
   
 ## <a name="demonstrates"></a>示範  
@@ -48,5 +47,5 @@ public class LogCallbackHook
 }  
 ```  
   
-## <a name="see-also"></a>請參閱  
- [範例：產生專案檔](../cross-platform/customize-project-files-created-by-vstu.md)
+## <a name="see-also"></a>另請參閱  
+ [例如：產生專案檔](../cross-platform/customize-project-files-created-by-vstu.md)

@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: eff7b4b880526909c293e16aa32ae7045bcdf297
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 66bb2b2229608c1a7710b7c5c71cbc0d701234e3
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57867770"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66714385"
 ---
 # <a name="ca1003-use-generic-event-handler-instances"></a>CA1003：使用一般事件處理常式執行個體
 
@@ -41,7 +41,7 @@ ms.locfileid: "57867770"
 
 ## <a name="rule-description"></a>規則描述
 
-之前.NET，才能將自訂資訊傳遞給事件處理常式中，新的委派必須宣告所指定的類別，衍生自<xref:System.EventArgs?displayProperty=fullName>類別。 這不再是在.NET 中，則為 true。 導入的.NET Framework<xref:System.EventHandler%601?displayProperty=fullName>委派，泛型委派，讓任何類別都衍生自<xref:System.EventArgs>要與事件處理常式一起使用。
+之前.NET，才能將自訂資訊傳遞給事件處理常式中，新的委派必須宣告所指定的類別，衍生自<xref:System.EventArgs?displayProperty=fullName>類別。 在.NET 中，泛型<xref:System.EventHandler%601?displayProperty=fullName>委派可讓任何類別都衍生自<xref:System.EventArgs>要與事件處理常式一起使用。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
 
@@ -57,7 +57,7 @@ ms.locfileid: "57867770"
 
 如果您執行這項規則，從[FxCop 分析器](install-fxcop-analyzers.md)（而不是透過靜態程式碼分析），您可以設定的哪些部分您程式碼基底上執行這項規則，根據其存取範圍。 比方說，若要指定執行規則時，應該只針對非公用 API 介面，將下列索引鍵 / 值組新增至專案中的.editorconfig 檔案：
 
-```
+```ini
 dotnet_code_quality.ca1003.api_surface = private, internal
 ```
 

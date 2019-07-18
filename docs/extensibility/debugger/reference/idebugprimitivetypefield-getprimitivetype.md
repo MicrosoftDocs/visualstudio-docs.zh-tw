@@ -6,17 +6,20 @@ helpviewer_keywords:
 - GetPrimitiveType
 - IDebugPrimitiveTypeField::GetPrimitiveType
 ms.assetid: a186c922-bbfe-478c-a744-b21eb4672d8f
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 09015d343507afb8f68ed8165b07314465d2500c
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 0eed7b3243b56e0b01240ed5a0f8cd4e823354dc
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56695735"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66353257"
 ---
 # <a name="idebugprimitivetypefieldgetprimitivetype"></a>IDebugPrimitiveTypeField::GetPrimitiveType
 擷取這個欄位相關聯的基本類型。
@@ -35,10 +38,9 @@ int GetPrimitiveType (
 );
 ```
 
-#### <a name="parameters"></a>參數
- `pdwType`
-
- [out]值從[CorElementType 列舉](/dotnet/framework/unmanaged-api/metadata/corelementtype-enumeration)表示基本類型。
+## <a name="parameters"></a>參數
+`pdwType`\
+[out]值從[CorElementType 列舉](/dotnet/framework/unmanaged-api/metadata/corelementtype-enumeration)表示基本類型。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回`S_FALSE`。

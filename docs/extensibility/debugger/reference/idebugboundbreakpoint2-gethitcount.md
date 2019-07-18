@@ -8,17 +8,20 @@ helpviewer_keywords:
 - GetHitCount method
 - IDebugBoundBreakpoint2::GetHitCount method
 ms.assetid: 23481f37-047c-41d2-8286-4da1f4084961
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 88fde36e2d7b0ef776849d7d3af7e36418dfff7d
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 3a46baa5b48173df5a89dde8e683c875ef536a38
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56705056"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66320418"
 ---
 # <a name="idebugboundbreakpoint2gethitcount"></a>IDebugBoundBreakpoint2::GetHitCount
 取得此繫結中斷點目前叫用的次數。
@@ -37,10 +40,9 @@ int GetHitCount( 
 );
 ```
 
-#### <a name="parameters"></a>參數
- `pdwHitCount`
-
- [out]傳回叫用的次數。
+## <a name="parameters"></a>參數
+`pdwHitCount`\
+[out]傳回叫用的次數。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。 傳回`E_BP_DELETED`如果繫結的中斷點物件的狀態設為`BPS_DELETED`(屬於[BP_STATE](../../../extensibility/debugger/reference/bp-state.md)列舉型別)。

@@ -1,14 +1,9 @@
 ---
-title: CA2207： 必須初始化實值類型的靜態欄位內嵌 |Microsoft Docs
-ms.custom: ''
+title: CA2207:初始化實值類型的靜態欄位內嵌 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - InitializeValueTypeStaticFieldsInline
 - CA2207
@@ -20,14 +15,14 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: d2833e14c941ae4d2ac6c16f8f5abf625f430de9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4f8bc843dc20df03ddf38a7506342addb6477297
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49890592"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68142528"
 ---
-# <a name="ca2207-initialize-value-type-static-fields-inline"></a>CA2207：必須初始化實值類型的靜態欄位內嵌
+# <a name="ca2207-initialize-value-type-static-fields-inline"></a>CA2207:必須將實值類型的靜態欄位內嵌初始化
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -52,7 +47,4 @@ ms.locfileid: "49890592"
  請勿隱藏此規則的警告。
 
 ## <a name="related-rules"></a>相關的規則
- [CA1810：必須初始化參考類型內部的靜態欄位](../code-quality/ca1810-initialize-reference-type-static-fields-inline.md)
-
-
-
+ [CA1810:初始化參考類型的靜態欄位內嵌](../code-quality/ca1810-initialize-reference-type-static-fields-inline.md)

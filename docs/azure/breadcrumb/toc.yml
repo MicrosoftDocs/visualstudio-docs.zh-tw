@@ -1,14 +1,7 @@
-items:
 - name: Docs
   tocHref: /
   topicHref: /
   items:
-  - name: Visual Studio
-    tocHref: /visualstudio/
-    topicHref: /visualstudio/
-ms.openlocfilehash: c6a9dda7c7abd4a29f3ab700ee22bbf3ec9e9e8d
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
-ms.translationtype: HT
-ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50673102"
+    - name: Visual Studio
+      tocHref: /visualstudio/
+      topicHref: /visualstudio/

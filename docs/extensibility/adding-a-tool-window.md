@@ -6,17 +6,17 @@ helpviewer_keywords:
 - tutorials
 - tool windows
 ms.assetid: 8e16c381-03c8-404e-92ef-3614cdf3150a
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 22b84716f320883c71f534ea762adf34d5c2a983
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 5f438297a51e5b091ea8b80cf587586919d00798
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56709937"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66352417"
 ---
 # <a name="add-a-tool-window"></a>加入工具視窗
 在本逐步解說，您會學習如何建立工具視窗，並將它整合到 Visual Studio 中，以下列方式：

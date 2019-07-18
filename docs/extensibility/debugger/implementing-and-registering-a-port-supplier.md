@@ -6,17 +6,17 @@ helpviewer_keywords:
 - debugging [Debugging SDK], registering port suppliers
 - port suppliers, registering
 ms.assetid: fb057052-ee16-4272-8e16-a4da5dda0ad4
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 253289862ae341e0682f5fe19616720e74799a1d
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 26767193c4489405432054ee94beb195ce8448d7
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56719856"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66344263"
 ---
 # <a name="implement-and-register-a-port-supplier"></a>實作並註冊連接埠提供者
 連接埠提供者的角色是追蹤，並提供連接埠，進而管理程序。 當需要建立一個連接埠時，連接埠提供者會使用具現化 CoCreate （工作階段的偵錯管理員 [SDM] 會使用指定的專案系統在選取的使用者或連接埠提供者的連接埠供應商） 的連接埠提供者的 guid。 然後呼叫 SDM [CanAddPort](../../extensibility/debugger/reference/idebugportsupplier2-canaddport.md)以查看是否可以加入任何連接埠。 如果可以加入一個連接埠，藉由呼叫要求新的連接埠[下列](../../extensibility/debugger/reference/idebugportsupplier2-addport.md)並將其傳遞[IDebugPortRequest2](../../extensibility/debugger/reference/idebugportrequest2.md)描述連接埠。 `AddPort` 傳回新的連接埠，由[IDebugPort2](../../extensibility/debugger/reference/idebugport2.md)介面。
@@ -55,7 +55,7 @@ RemoveMetric(metrictypePortSupplier,
 ```
 
 > [!NOTE]
->  [進行偵錯的 SDK 協助程式](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)`SetMetric`並`RemoveMetric`靜態函式定義於*dbgmetric.h*並編譯成*ad2de.lib*。 `metrictypePortSupplier`， `metricCLSID`，並`metricName`協助程式也會定義於*dbgmetric.h*。
+> [進行偵錯的 SDK 協助程式](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)`SetMetric`並`RemoveMetric`靜態函式定義於*dbgmetric.h*並編譯成*ad2de.lib*。 `metrictypePortSupplier`， `metricCLSID`，並`metricName`協助程式也會定義於*dbgmetric.h*。
 
  連接埠提供者可以透過方法提供它的名稱和 GUID [GetPortSupplierName](../../extensibility/debugger/reference/idebugportsupplier2-getportsuppliername.md)並[GetPortSupplierId](../../extensibility/debugger/reference/idebugportsupplier2-getportsupplierid.md)分別。
 

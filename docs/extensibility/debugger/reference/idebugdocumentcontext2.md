@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugDocumentContext2
 ms.assetid: 2a446c71-8100-4c09-a1cc-fd446bd74030
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3de9f48109590d6c59a46fd6451a750eecfbaa01
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: fe54a6d3e97fc40f915c42c4aa5397165416b073
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56678759"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66326649"
 ---
 # <a name="idebugdocumentcontext2"></a>IDebugDocumentContext2
 此介面代表來源檔案的文件中的位置。

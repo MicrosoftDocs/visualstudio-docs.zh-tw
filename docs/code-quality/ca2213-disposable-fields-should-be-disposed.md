@@ -1,6 +1,6 @@
 ---
 title: CA2213:可處置的欄位應該受到處置
-ms.date: 11/05/2018
+ms.date: 05/14/2019
 ms.topic: reference
 f1_keywords:
 - DisposableFieldsShouldBeDisposed
@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1fff209c9a432b78ce27e9c344c1afd29e93d57f
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b38157fcc23561b47a919151aa78a71f98b3909b
+ms.sourcegitcommit: 283f2dbce044a18e9f6ac6398f6fc78e074ec1ed
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55935533"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "65805004"
 ---
 # <a name="ca2213-disposable-fields-should-be-disposed"></a>CA2213:可處置的欄位應該受到處置
 
@@ -36,10 +36,21 @@ ms.locfileid: "55935533"
 
 ## <a name="rule-description"></a>規則描述
 
-類型會負責所有 unmanaged 資源的處置。 規則 CA2213 會檢查以查看是否可處置的類型 (也就是其中一個可實作<xref:System.IDisposable>)`T`宣告欄位`F`也就是可處置型別的執行個體`FT`。 每個欄位`F`，已指派在本機建立的物件內的方法或初始設定式包含型別的`T`，此規則會嘗試找出呼叫`FT.Dispose`。 此規則會搜尋呼叫的方法`T.Dispose`和 下一層 (也就是由所呼叫的方法呼叫的方法`FT.Dispose`)。
+類型會負責所有 unmanaged 資源的處置。 規則 CA2213 會檢查以查看是否可處置的類型 (也就是其中一個可實作<xref:System.IDisposable>)`T`宣告欄位`F`也就是可處置型別的執行個體`FT`。 每個欄位`F`，已指派在本機建立的物件內的方法或初始設定式包含型別的`T`，此規則會嘗試找出呼叫`FT.Dispose`。 此規則會搜尋呼叫的方法`T.Dispose`和 下一層 (也就是由所呼叫的方法呼叫的方法`T.Dispose`)。
 
 > [!NOTE]
-> 只適用於已指派在本機建立的可處置物件，包含類型的方法和初始設定式內的欄位，就會引發規則 CA2213。 如果建立或指派給外部型別物件`T`，不會引發此規則。 這可減少雜訊，其中包含類型未擁有處置物件的責任的情況下。
+> 以外[特殊的情況下](#special-cases)，規則只適用於已指派在本機建立的可處置物件，包含類型的方法和初始設定式內的欄位 CA2213 引發。 如果建立或指派給外部型別物件`T`，不會引發此規則。 這可減少雜訊，其中包含類型未擁有處置物件的責任的情況下。
+
+### <a name="special-cases"></a>特殊案例
+
+即使不在本機建立其指派的物件，則規則 CA2213 也可能引發下列類型的欄位：
+
+- <xref:System.IO.Stream?displayProperty=nameWithType>
+- <xref:System.IO.TextReader?displayProperty=nameWithType>
+- <xref:System.IO.TextWriter?displayProperty=nameWithType>
+- <xref:System.Resources.IResourceReader?displayProperty=nameWithType>
+
+將其中一種類型的物件傳遞至建構函式，然後將它指派給 欄位指出*處置擁有權移轉*新建構的類型。 也就是新建構的型別負責現在處置的物件。 如果未處置的物件，就會發生 CA2213 的違規情形。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
 
@@ -47,7 +58,10 @@ ms.locfileid: "55935533"
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
 
-安全地隱藏此規則的警告，如果您不負責針對欄位中，所持有的釋放資源，或如果呼叫<xref:System.IDisposable.Dispose%2A>比規則檢查更深入的呼叫層級，就會發生。
+它可安全地隱藏此規則的警告，如果：
+
+- 標有旗標的型別並不負責該欄位所持有的釋放資源 (也就是型別沒有*處置擁有權*)
+- 若要呼叫<xref:System.IDisposable.Dispose%2A>發生更深層級呼叫比規則檢查
 
 ## <a name="example"></a>範例
 

@@ -8,15 +8,15 @@ helpviewer_keywords:
 - FxCopCmd errors
 ms.author: gewarren
 author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 71e2a39b792dcc5a01eb28611664736f6620bb1f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4d723065e224058b7e269299aad2900f97a1425d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47498852"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62936643"
 ---
 # <a name="fxcopcmd-tool-errors"></a>FxCopCmd 工具錯誤
 

@@ -1,11 +1,8 @@
 ---
 title: 建立舊版工作流程活動 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 helpviewer_keywords:
 - workflow projects, creating
@@ -15,13 +12,13 @@ ms.assetid: 572d5c32-59ef-49d8-a24c-e180fe9f7a11
 caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: f7c8e8c65ce7a3c716c017bc83886d0ddb8e7292
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 73cc930e6ec21694cf6c5df8e68cbe17ca469291
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49298450"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62976977"
 ---
 # <a name="creating-legacy-workflow-projects"></a>建立舊版工作流程活動
 本章節描述如何使用 vs2010 提供的舊版 [!INCLUDE[wfd1](../includes/wfd1-md.md)] 來建立工作流程專案。 舊版 [!INCLUDE[wfd2](../includes/wfd2-md.md)] 是以 [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] 或 [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] 為目標。 其中包括如何使用下表所列工作流程專案範本的相關資訊。  
@@ -52,7 +49,7 @@ ms.locfileid: "49298450"
   
  [如何：設定工作流程專案屬性 (舊版)](../workflow-designer/how-to-configure-workflow-project-properties-legacy.md)  
   
- [如何：新增項目至工作流程專案 (舊版)](../workflow-designer/how-to-add-a-new-item-to-a-workflow-project-legacy.md)  
+ [如何：將新項目新增至工作流程專案 (舊版)](../workflow-designer/how-to-add-a-new-item-to-a-workflow-project-legacy.md)  
   
 ## <a name="see-also"></a>另請參閱  
  [循序工作流程檢視 （舊版）](../workflow-designer/sequential-workflow-views-legacy.md)   

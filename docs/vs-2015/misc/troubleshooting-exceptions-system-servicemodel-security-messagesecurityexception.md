@@ -1,14 +1,9 @@
 ---
-title: 疑難排解例外狀況： System.ServiceModel.Security.MessageSecurityException |Microsoft Docs
-ms.custom: ''
+title: 疑難排解例外狀況：System.ServiceModel.Security.MessageSecurityException | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: troubleshooting
 helpviewer_keywords:
 - System.ServiceModel.Security.MessageSecurityException exception
 - MessageSecurityException exception
@@ -16,22 +11,22 @@ ms.assetid: 61ad69a1-ac50-49de-9a7c-8454a84ec5bd
 caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: e7d13f5cc282026b1590f59180ed7f25312bb926
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: db8c0c092ad8bc1435f939c862cf3fa7fc52179e
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51742483"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65689141"
 ---
 # <a name="troubleshooting-exceptions-systemservicemodelsecuritymessagesecurityexception"></a>疑難排解例外狀況：System.ServiceModel.Security.MessageSecurityException
 A<xref:System.ServiceModel.Security.MessageSecurityException>例外狀況時擲回[!INCLUDE[vsindigo](../includes/vsindigo-md.md)]決定訊息未正確受到保護，或已遭竄改。 這個錯誤通常是在下列所有條件都成立時發生：  
   
--   在網站或 Web 應用程式專案中，您使用 WCF 服務參考透過遠端桌面連線或終端機服務 (Terminal Service) 這類的遠端連接，與 WCF 服務 (.svc) 通訊。  
+- 在網站或 Web 應用程式專案中，您使用 WCF 服務參考透過遠端桌面連線或終端機服務 (Terminal Service) 這類的遠端連接，與 WCF 服務 (.svc) 通訊。  
   
--   您沒有遠端站台的系統管理員權限。  
+- 您沒有遠端站台的系統管理員權限。  
   
--   遠端站台上 localhost 的要求是由 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 程式開發伺服器處理。  
+- 遠端站台上 localhost 的要求是由 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 程式開發伺服器處理。  
   
 ## <a name="associated-tips"></a>相關秘訣  
  **解決使用 ASP.Net 程式開發伺服器時的 NTLM 驗證問題。**  
@@ -40,7 +35,7 @@ A<xref:System.ServiceModel.Security.MessageSecurityException>例外狀況時擲�
  如果遠端使用者可能會透過使用 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 程式開發伺服器執行網站，同時也會使用 Web 服務或 WCF 服務，您可以建立自訂服務繫結或是關閉 NTLM 安全性。  
   
 > [!IMPORTANT]
->  關閉 NTLM 安全性不是建議的方式，並且可能造成安全性威脅。  
+> 關閉 NTLM 安全性不是建議的方式，並且可能造成安全性威脅。  
   
  如果您建立自訂服務繫結，則仍然受到 NTLM 驗證的保護。  
   
@@ -79,16 +74,16 @@ A<xref:System.ServiceModel.Security.MessageSecurityException>例外狀況時擲�
    當您使用 WCF 服務參考時，可以遵循下列步驟停用 NTLM 安全性。  
   
 > [!IMPORTANT]
->  關閉 NTLM 安全性不是建議的方式，並且可能造成安全性威脅。  
+> 關閉 NTLM 安全性不是建議的方式，並且可能造成安全性威脅。  
   
 #### <a name="to-turn-off-ntlm-security"></a>若要關閉 NTLM 安全性  
   
-1.  在 [ **方案總管**] 中，以滑鼠右鍵按一下網站名稱，然後再按一下 [ **屬性頁**]。  
+1. 在 [ **方案總管**] 中，以滑鼠右鍵按一下網站名稱，然後再按一下 [ **屬性頁**]。  
   
-2.  選取 [ **起始選項**]，然後再清除 [ **NTLM 驗證** ] 核取方塊。  
+2. 選取 [ **起始選項**]，然後再清除 [ **NTLM 驗證** ] 核取方塊。  
   
-3.  按一下 [確定 **Deploying Office Solutions**]。  
+3. 按一下 [確定] 。  
   
 ## <a name="see-also"></a>另請參閱  
  <xref:System.ServiceModel.Security.MessageSecurityException>   
- [使用例外狀況助理](http://msdn.microsoft.com/library/e0a78c50-7318-4d54-af51-40c00aea8711)
+ [使用例外狀況助理](https://msdn.microsoft.com/library/e0a78c50-7318-4d54-af51-40c00aea8711)

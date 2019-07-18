@@ -1,14 +1,9 @@
 ---
-title: 錯誤： Web 伺服器找不到要求的資源 |Microsoft Docs
-ms.custom: ''
+title: 錯誤：Web 伺服器找不到要求的資源 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - FSharp
 - VB
@@ -20,13 +15,13 @@ ms.assetid: 1ceeaf30-918c-42bb-ace1-96944530fef3
 caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: f490006d21f51f48cd8b2d97da262015ab170f39
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: b3904a9fcb2e15190018dbc4caabe925690e023f
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51808293"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263714"
 ---
 # <a name="error-the-web-server-could-not-find-the-requested-resource"></a>錯誤：Web 伺服器找不到要求的資源
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,11 +32,8 @@ ms.locfileid: "51808293"
   
  造成這個錯誤的原因可能有很多種。 其中幾個最常見的原因包括 IIS 的安裝或組態、網站組態或檔案系統的權限發生問題。 您可以嘗試使用瀏覽器存取資源。 根據 IIS 的設定方式，您可能需要在伺服器上使用本機瀏覽器或檢查 IIS 錯誤記錄檔，以取得詳細的錯誤訊息。  
   
- 如需有關 IIS 疑難排解的詳細資訊，請參閱 < [IIS 管理](http://go.microsoft.com/fwlink/?LinkId=255872)。  
+ 如需針對 IIS 進行疑難排解的詳細資訊，請參閱 [IIS 管理與系統管理](http://go.microsoft.com/fwlink/?LinkId=255872)。  
   
 ## <a name="see-also"></a>另請參閱  
- [UrlScan 安全性工具](http://www.microsoft.com/technet/security/tools/urlscan.mspx)   
+ [UrlScan 安全性工具](/iis/extensions/working-with-urlscan/urlscan-3-reference)   
  [錯誤：Web 伺服器已經鎖定，並會封鎖 DEBUG 動詞命令](../debugger/error-the-web-server-has-been-locked-down-and-is-blocking-the-debug-verb.md)
-
-
-

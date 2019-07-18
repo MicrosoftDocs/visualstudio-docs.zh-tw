@@ -1,16 +1,16 @@
 ---
 title: 管理專案和方案屬性
 description: 本文說明如何在 Visual Studio for Mac 中管理專案和方案的屬性
-author: conceptdev
-ms.author: crdun
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 05/06/2018
 ms.assetid: 75247EB8-323A-4AFD-A451-6703A03D5D1F
-ms.openlocfilehash: 8d6a45f8cdd46483dda5ef252a6235e7eb2f0a04
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 514792804515541b7e4f64359a08e9c6093c5018
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51296316"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67692876"
 ---
 # <a name="managing-project-and-solution-properties"></a>管理專案和方案屬性
 
@@ -18,7 +18,7 @@ ms.locfileid: "51296316"
 
 專案選項專屬於每個專案，並影響如何撰寫、建置和執行專案。 這對照於 Visual Studio for Mac 喜好設定 (其會設定使用者特定的選項) 以及方案選項 (其會設定整個方案的選項)。 專案選項儲存在專案 (.csproj) 檔案中，讓其他開發人員可以正確地建置和執行專案。 使用特定專案選項可讓多個開發人員處理相同的文件，而不影響檔案格式。
 
-若要在 Visual Studio for Mac 中開啟專案選項，請按兩下專案名稱，或以滑鼠右鍵按一下以開啟操作功能表，然後選取 [選項]：
+若要在 Visual Studio for Mac 中開啟專案選項，請按兩下專案名稱，或以滑鼠右鍵按一下以開啟操作功能表，然後選取 [選項]  ：
 
 ![操作功能表中的選項](media/projects-and-solutions-image2.png)
 
@@ -42,7 +42,7 @@ Xamarin.iOS 具有與套件組合簽署相關的選項，例如要使用的必�
 
 ## <a name="solution-options"></a>方案選項
 
-方案選項就像專案選項，但涵蓋整個方案的範圍。 它們提供方法來設定作者資訊、組建設定、程式碼格式樣式和版本控制，並且允許在方案中指派啟始專案的方法。  從 [專案] > [解決方案選項] 功能表項目、從 Solution Pad [解決方案] 上的 [選項] 操作功能表項目，或按兩下 Solution Pad 中的 [解決方案]，即可存取 [解決方案選項] 對話方塊：
+方案選項就像專案選項，但涵蓋整個方案的範圍。 它們提供方法來設定作者資訊、組建設定、程式碼格式樣式和版本控制，並且允許在方案中指派啟始專案的方法。  從 [專案] > [解決方案選項]  功能表項目、從 Solution Pad [解決方案] 上的 [選項]  操作功能表項目，或按兩下 Solution Pad 中的 [解決方案]，即可存取 [解決方案選項] 對話方塊：
 
 ![方案選項](media/projects-and-solutions-image7.png)
 

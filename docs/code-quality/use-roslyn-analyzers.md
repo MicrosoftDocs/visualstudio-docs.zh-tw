@@ -1,6 +1,6 @@
 ---
 title: 分析器規則的嚴重性和隱藏項目
-ms.date: 03/26/2018
+ms.date: 03/26/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - code analysis, managed code
@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a2b874a3bddfbfb7831b286cec0887f24ce6bcb8
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: d4b5ad6ca824e6c7091c6c508b51c2d51501b2fd
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57873498"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821520"
 ---
 # <a name="use-roslyn-analyzers"></a>使用 Roslyn 分析器
 
@@ -46,20 +46,25 @@ ms.locfileid: "57873498"
 
 ## <a name="rule-sets"></a>規則集
 
-A[規則集](../code-quality/using-rule-sets-to-group-code-analysis-rules.md)是儲存個別的診斷的嚴重性和隱藏項目狀態的 XML 檔案。 規則集套用到單一專案中，而且專案可以有多個規則集。 若要檢視作用中的規則集編輯器中，以滑鼠右鍵按一下**分析器**中的節點**方案總管**，然後選取**開啟作用中規則集**。 如果這是您要存取此規則的第一次設定，檔案名*\<專案名稱 >.ruleset*加入至專案，而且會出現在**方案總管 中**。
+A[規則集](../code-quality/using-rule-sets-to-group-code-analysis-rules.md)是儲存個別的診斷的嚴重性和隱藏項目狀態的 XML 檔案。
 
 > [!NOTE]
-> 規則集包含靜態 （二進位） 的程式碼分析和 Roslyn 分析器規則。
+> 規則集可以包含靜態 （二進位） 的程式碼分析和 Roslyn 分析器的規則。
 
-您可以變更作用中的規則上設定的專案**程式碼分析**專案屬性 索引標籤。 選取中的規則集**執行此規則集**下拉式清單。 您也可以開啟規則集從**程式碼分析** 屬性頁面中的選取**開啟**。
+若要編輯的規則集編輯器中設定使用中的規則，以滑鼠右鍵按一下**參考** > **分析器**中的節點**方案總管] 中**，然後選取**開啟 [作用中的規則集**。 如果這是您正在編輯的規則集的第一次時，Visual Studio 會建立一份預設的規則集檔案，它 *\<專案名稱 >.ruleset*，並將它加入至您的專案。 此自訂的規則集也會變成作用中的規則設定為您的專案。
+
+若要變更專案中設定使用中的規則，瀏覽至**程式碼分析**專案屬性 索引標籤。 選取下方的清單設定的規則**執行此規則集**。 若要開啟規則集，請選取**開啟**。
+
+> [!NOTE]
+> .NET core 和.NET Standard 專案不會支援功能表命令的規則集所適用**方案總管**，例如**開啟作用中規則集**。 若要指定非預設規則集，是針對.NET Core 或.NET Standard 專案，以手動方式[新增**CodeAnalysisRuleSet**屬性](using-rule-sets-to-group-code-analysis-rules.md#specify-a-rule-set-for-a-project)專案檔。 您仍然可以設定 Visual Studio 中設定的規則，規則集編輯器 UI 內的規則。
 
 ## <a name="rule-severity"></a>規則嚴重性
 
 您可以設定分析器規則的嚴重性或*診斷*，如果您[安裝分析器](../code-quality/install-roslyn-analyzers.md)NuGet 套件的形式。 下表顯示診斷的嚴重性選項：
 
-|嚴重性|建置階段行為|編輯器的行為|
+|Severity|建置階段行為|編輯器的行為|
 |-|-|-|
-|錯誤|違規如下所示*錯誤*中**錯誤清單**命令列建置輸出，以及會導致組建失敗。|違規的程式碼會加上底線以紅色曲線，並以在捲軸的小型紅色方塊標示。|
+|Error|違規如下所示*錯誤*中**錯誤清單**命令列建置輸出，以及會導致組建失敗。|違規的程式碼會加上底線以紅色曲線，並以在捲軸的小型紅色方塊標示。|
 |警告|違規如下所示*警告*中**錯誤清單**和在命令列建置輸出，但不是會造成建置失敗。|違規的程式碼會加上底線以綠色曲線，並標示在捲軸的小型綠色方塊。|
 |資訊|違規如下所示*訊息*中**錯誤清單**，完全不會在命令列組建輸出。|違規的程式碼會加上底線以灰色曲線，並標示在捲軸的小型灰色方塊。|
 |Hidden|非-使用者可以看見。|非-使用者可以看見。 診斷會回報給 IDE 診斷引擎，不過。|
@@ -79,7 +84,7 @@ A[規則集](../code-quality/using-rule-sets-to-group-code-analysis-rules.md)是
 
 ![在 [方案總管] 中的規則集檔案](media/ruleset-in-solution-explorer.png)
 
-### <a name="to-set-rule-severity-from-solution-explorer"></a>若要從方案總管 中設定規則嚴重性
+### <a name="set-rule-severity-from-solution-explorer"></a>從 [方案總管] 中的設定規則嚴重性
 
 1. 在 **方案總管**，展開**參考** > **分析器**(**相依性** >  **分析器**.NET Core 專案)。
 
@@ -89,7 +94,7 @@ A[規則集](../code-quality/using-rule-sets-to-group-code-analysis-rules.md)是
 
    此規則的嚴重性會儲存在使用中的規則集檔案。
 
-### <a name="to-set-rule-severity-in-the-rule-set-file"></a>若要設定規則在規則中的嚴重性設定檔
+### <a name="set-rule-severity-in-the-rule-set-file"></a>在 規則集檔案中設定規則嚴重性
 
 1. 開啟[規則集](analyzer-rule-sets.md)按兩下檔案**方案總管**，並選取**開啟作用中規則集**上按一下滑鼠右鍵功能表**分析器**節點，或選取**開放**上**程式碼分析**專案屬性頁。
 
@@ -103,42 +108,42 @@ A[規則集](../code-quality/using-rule-sets-to-group-code-analysis-rules.md)是
 
 有多種方式可用來隱藏規則違規：
 
-- 若要隱藏所有目前的違規情形，請選取**分析** > **執行程式碼分析和隱藏作用中問題**功能表列上。 這有時候稱為 「 基準 」。
+- 從**分析**功能表
 
-- 若要隱藏從診斷**方案總管 中**，其嚴重性設為**無**。
+  選取 **分析** > **執行程式碼分析和隱藏作用中問題**在功能表列上隱藏所有目前的違規情形。 這有時候稱為 「 基準 」。
 
-- 若要隱藏的規則集編輯器診斷，取消選取其名稱旁邊的方塊，或設定**動作**要**無**。
+- 從**方案總管**
 
-- 若要隱藏診斷，以從程式碼編輯器，將游標放在一行程式碼的違規和按下**Ctrl**+**。** 若要開啟 **快速動作**功能表。 選取**隱藏 CAxxxx** > **來源中**或是**隱藏 CAxxxx** > **隱藏項目檔**。
+  若要隱藏在違規**方案總管 中**，設定規則的嚴重性**無**。
 
-   ![隱藏診斷的快速動作 功能表](media/suppress-diagnostic-from-editor.png)
+- 從**規則集編輯器**
 
-- 若要隱藏從診斷**錯誤清單**，請參閱[隱藏錯誤清單的違規](#suppress-violations-from-the-error-list)。
+  若要隱藏的規則集編輯器的違規，取消選取其名稱旁邊的方塊，或設定**動作**要**無**。
 
-### <a name="suppress-violations-from-the-error-list"></a>隱藏錯誤清單的違規
+- 從**程式碼編輯器**
 
-您可以隱藏來自一或多個診斷**錯誤清單**藉由選取您想要隱藏的項目，然後用滑鼠右鍵按一下並選取**隱藏** > **在原始程式檔**或是**隱藏** > **隱藏項目檔**。
+  若要隱藏程式碼編輯器中的違規，將游標放在一行程式碼的違規和按下**Ctrl**+ **。** 若要開啟 **快速動作**功能表。 選取 **隱藏 CAXXXX** > **來源中/隱藏項目檔**。
 
-- 如果您選取**在原始程式檔**，則**預覽變更** 對話方塊隨即開啟並顯示 C# 的預覽[#pragma 警告](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-pragma-warning)或 Visual Basic [#Disable 警告](/dotnet/visual-basic/language-reference/directives/directives)指示詞加入至原始程式碼。
+  ![隱藏診斷的快速動作 功能表](media/suppress-diagnostic-from-editor.png)
 
-   ![在程式碼檔案中加入 #pragma 警告的預覽](media/pragma-warning-preview.png)
+- 從**錯誤清單**
 
-- 如果您選取**檔案中的隱藏項目**，則**預覽變更** 對話方塊隨即開啟並顯示預覽<xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute>會新增至全域隱藏項目檔案的屬性。
+  您可以隱藏來自一或多個診斷**錯誤清單**藉由選取您想要隱藏的項目，然後用滑鼠右鍵按一下並選取**隱藏** > **中 Source/In隱藏項目檔**。
 
-   ![新增 SuppressMessage 屬性隱藏項目檔案的預覽](media/preview-changes-in-suppression-file.png)
+  - 如果要抑制**在原始程式檔**，則**預覽變更** 對話方塊隨即開啟並顯示預覽C# [#pragma 警告](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-pragma-warning)或 Visual Basic [#Disable警告](/dotnet/visual-basic/language-reference/directives/directives)指示詞加入至原始程式碼。
 
-在 **預覽變更**對話方塊中，選取**套用**。
+    ![在程式碼檔案中加入 #pragma 警告的預覽](media/pragma-warning-preview.png)
 
-**錯誤清單**顯示診斷或規則違規，同時從即時程式碼分析，以及建置。 因為組建診斷可能會過期，比方說，如果您已編輯的程式碼來修正此違規情形，但尚未重建，您無法隱藏來自這些診斷**錯誤清單**。 不過，從即時的分析或 IntelliSense、 診斷都一律是最新與目前的來源，而且可以從隱藏**錯誤清單**。 隱藏項目選項已停用，以滑鼠右鍵按一下或內容功能表中，它可能是因為您有一或多個組建診斷您的選取範圍。 若要從您的選取範圍中排除組建診斷，請切換**錯誤清單**來源篩選器，從**組建 + IntelliSense**來**Intellisense 僅**。 然後，選取您想要隱藏並繼續如先前所述的診斷。
+  - 如果您選取**檔案中的隱藏項目**，則**預覽變更** 對話方塊隨即開啟並顯示預覽<xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute>會新增至全域隱藏項目檔案的屬性。
 
-![在 Visual Studio 中的錯誤清單來源篩選器](media/error-list-filter.png)
+    ![新增 SuppressMessage 屬性隱藏項目檔案的預覽](media/preview-changes-in-suppression-file.png)
 
-> [!NOTE]
-> 在.NET Core 專案中，如果您加入至專案的 NuGet 分析器參考這些分析器會自動加入至相依專案太。 若要停用此行為，例如，如果相依的專案是單元測試專案，將標示為私用中的 NuGet 套件 *.csproj*或是 *.vbproj*參考專案的檔案：
->
-> ```xml
-> <PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="2.6.0" PrivateAssets="all" />
-> ```
+  在 **預覽變更**對話方塊中，選取**套用**。
+
+  > [!NOTE]
+  > 如果您沒有看到**抑制**中的功能表選項**方案總管 中**，違規可能來自組建並不是即時的分析。 **錯誤清單**顯示診斷或規則違規，同時從即時程式碼分析，以及建置。 因為組建診斷可能會過期，比方說，如果您已編輯的程式碼來修正此違規情形，但尚未重建，您無法隱藏來自這些診斷**錯誤清單**。 來自即時分析或 IntelliSense、 診斷都一律是最新與目前的來源，並可從隱藏**錯誤清單**。 若要排除*建置*診斷從您的選取範圍中，切換**錯誤清單**來源篩選器，從**組建 + IntelliSense**至**只 Intellisense**. 然後，選取您想要隱藏並繼續如先前所述的診斷。
+  >
+  > ![在 Visual Studio 中的錯誤清單來源篩選器](media/error-list-filter.png)
 
 ## <a name="command-line-usage"></a>命令列使用方式
 
@@ -164,6 +169,14 @@ msbuild myproject.csproj /target:rebuild /verbosity:minimal
 下圖顯示建置專案，其中包含分析器規則的違規情況的命令列組建輸出：
 
 ![包含違規的 MSBuild 輸出](media/command-line-build-analyzers.png)
+
+## <a name="dependent-projects"></a>相依的專案
+
+在.NET Core 專案中，如果您加入至專案的 NuGet 分析器參考這些分析器會自動加入至相依專案太。 若要停用此行為，例如，如果相依的專案是單元測試專案，將標示為私用中的 NuGet 套件 *.csproj*或是 *.vbproj*檔案參考的專案，藉由設定**PrivateAssets**屬性：
+
+```xml
+<PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="2.9.0" PrivateAssets="all" />
+```
 
 ## <a name="see-also"></a>另請參閱
 

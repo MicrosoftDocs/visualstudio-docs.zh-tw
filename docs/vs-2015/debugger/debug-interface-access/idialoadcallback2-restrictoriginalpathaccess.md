@@ -1,14 +1,9 @@
 ---
-title: IDiaLoadCallback2::RestrictOriginalPathAccess |Microsoft Docs
-ms.custom: ''
+title: IDiaLoadCallback2::RestrictOriginalPathAccess | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 31fde3af-2824-4b0f-8d0d-cee6046596f6
 caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 0b98ba8159c0e7928303e72d66b6d4546965c43d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 970a188b5d72353dbb3ccf64fd74f3354f1ba888
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51737917"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68151945"
 ---
 # <a name="idialoadcallback2restrictoriginalpathaccess"></a>IDiaLoadCallback2::RestrictOriginalPathAccess
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -44,6 +39,3 @@ HRESULT RestrictOriginalPathAccess ();
   
 ## <a name="see-also"></a>另請參閱  
  [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md)
-
-
-

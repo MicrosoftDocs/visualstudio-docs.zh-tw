@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e6b893a40172bfd806130bef663da8676b513042
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56636394"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62832834"
 ---
 # <a name="idiaframedatagetprogram"></a>IDiaFrameData::get_program
 擷取用來計算目前的函式的呼叫之前設定的暫存器的程式字串。
@@ -51,5 +51,5 @@ HRESULT get_program ( 
 
    請注意，程式字串是特定的 CPU，並設定由目前的堆疊框架的函式的呼叫慣例。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)

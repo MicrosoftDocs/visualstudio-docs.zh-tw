@@ -1,14 +1,9 @@
 ---
 title: IDebugPortSupplier2::AddPort |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugPortSupplier2::AddPort
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: df491161-6bf3-4fcc-b478-b9ec88ec995f
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 9f9c13d5b5717ff518642c1b7877dd881aa68a99
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: bf5bf281e794bde04ae0c2e86c6d27edb7edc5a7
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51753755"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68188300"
 ---
 # <a name="idebugportsupplier2addport"></a>IDebugPortSupplier2::AddPort
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -63,4 +58,3 @@ int AddPort( 
  [IDebugPortRequest2](../../../extensibility/debugger/reference/idebugportrequest2.md)   
  [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)   
  [CanAddPort](../../../extensibility/debugger/reference/idebugportsupplier2-canaddport.md)
-

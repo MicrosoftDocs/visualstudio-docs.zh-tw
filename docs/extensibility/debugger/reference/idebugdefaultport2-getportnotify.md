@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugDefaultPort2::GetPortNotify
 ms.assetid: 3ae715ee-9886-4694-a52b-59bb3b27467a
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e7e0cc45ba3f692f799deb568bcbb84cc5edf7bf
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: fd85f76ab0c882656ca79fe02296f30bdb83f523
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56712511"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66351767"
 ---
 # <a name="idebugdefaultport2getportnotify"></a>IDebugDefaultPort2::GetPortNotify
 這個方法會取得[IDebugPortNotify2](../../../extensibility/debugger/reference/idebugportnotify2.md)介面，此連接埠。
@@ -36,10 +39,9 @@ int GetPortNotify(
 );
 ```
 
-#### <a name="parameters"></a>參數
- `ppPortNotify`
-
- [out][IDebugPortNotify2](../../../extensibility/debugger/reference/idebugportnotify2.md)物件。
+## <a name="parameters"></a>參數
+`ppPortNotify`\
+[out][IDebugPortNotify2](../../../extensibility/debugger/reference/idebugportnotify2.md)物件。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

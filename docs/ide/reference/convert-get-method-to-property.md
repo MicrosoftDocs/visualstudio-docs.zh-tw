@@ -1,5 +1,5 @@
 ---
-title: 將 Get 方法轉換為屬性及將屬性轉換為 Get 方法
+title: 將 Get 方法轉換為屬性；將屬性轉換為 Get 方法
 ms.date: 01/26/2018
 ms.topic: reference
 ms.devlang: csharp
@@ -12,12 +12,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4e6177ac701f3792aa49df72584b8bb3cccefd23
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 87fc623f781c54267fa70da7c5d2a341823e35ae
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55936755"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263103"
 ---
 # <a name="convert-get-method-to-property--convert-property-to-get-method-refactorings"></a>將 Get 方法轉換為屬性 / 將屬性轉換為 Get 方法的重構
 

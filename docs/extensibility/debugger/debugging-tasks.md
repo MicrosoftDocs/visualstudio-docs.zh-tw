@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], tasks
 ms.assetid: 5d60e9e8-305e-4a48-829f-b9440fc8af7b
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 299db84fb06679bfbf9dff92234c944cbdec6295
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 774999dbdcb9eaf4a948364956ed95ab57e24d10
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56695202"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66345846"
 ---
 # <a name="debug-tasks"></a>偵錯工作
 偵錯程式，就必須啟動並偵錯引擎 (DE) 必須連接到它，否則 DE 必須附加至先前啟動的程式。 附加後，裝置必須產生特定啟動事件。 在回應中，偵錯封裝會嘗試繫結在 IDE 中設定的中斷點。 當程式叫用繫結的中斷點時，它會中止，並等待使用者輸入。

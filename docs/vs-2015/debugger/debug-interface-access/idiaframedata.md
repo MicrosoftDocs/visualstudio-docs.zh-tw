@@ -1,14 +1,9 @@
 ---
-title: IDiaFrameData |Microsoft Docs
-ms.custom: ''
+title: IDiaFrameData | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 2f1b4986-341b-4641-89a4-226e261e9d93
 caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 027ff793932e917cf65fab9b4fd1175fad35d43c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 9619d4f3d5670d3692c21d850201a2f39d96b922
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51740702"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68202583"
 ---
 # <a name="idiaframedata"></a>IDiaFrameData
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -53,9 +48,9 @@ IDiaFrameData : IUnknown
 |[IDiaFrameData::get_lengthSavedRegisters](../../debugger/debug-interface-access/idiaframedata-get-lengthsavedregisters.md)|擷取已儲存的暫存器推送到堆疊上的位元組數目。|  
 |[IDiaFrameData::get_program](../../debugger/debug-interface-access/idiaframedata-get-program.md)|擷取用來計算目前的函式的呼叫之前設定的暫存器的程式字串。|  
 |[IDiaFrameData::get_systemExceptionHandling](../../debugger/debug-interface-access/idiaframedata-get-systemexceptionhandling.md)|擷取指出該系統例外狀況處理的旗標是作用中。|  
-|[IDiaFrameData::get_cplusplusExceptionHandling](../../debugger/debug-interface-access/idiaframedata-get-cplusplusexceptionhandling.md)|擷取指出該 c + + 例外狀況處理的旗標是作用中。|  
+|[IDiaFrameData::get_cplusplusExceptionHandling](../../debugger/debug-interface-access/idiaframedata-get-cplusplusexceptionhandling.md)|擷取旗標，表示C++例外狀況處理是作用中。|  
 |[IDiaFrameData::get_functionStart](../../debugger/debug-interface-access/idiaframedata-get-functionstart.md)|擷取指出區塊包含函式的進入點的旗標。|  
-|[IDiaFrameData::get_allocatesBasePointer](../../debugger/debug-interface-access/idiaframedata-get-allocatesbasepointer.md)|擷取指出基底的指標會配置此位址範圍中的程式碼的旗標。 這個方法已被取代。|  
+|[IDiaFrameData::get_allocatesBasePointer](../../debugger/debug-interface-access/idiaframedata-get-allocatesbasepointer.md)|擷取指出基底的指標會配置此位址範圍中的程式碼的旗標。 這個方法已淘汰。|  
 |[IDiaFrameData::get_type](../../debugger/debug-interface-access/idiaframedata-get-type.md)|擷取編緝器特定畫面格型別。|  
 |[IDiaFrameData::get_functionParent](../../debugger/debug-interface-access/idiaframedata-get-functionparent.md)|擷取框架資料介面以提供封入函式。|  
 |[IDiaFrameData::execute](../../debugger/debug-interface-access/idiaframedata-execute.md)|執行堆疊回溯並傳回在堆疊查核行程框架介面中的暫存器的目前狀態。|  
@@ -121,17 +116,14 @@ void PrintFrameData(IDiaFrameData* pFrameData){
 ```  
   
 ## <a name="requirements"></a>需求  
- 標頭： Dia2.h  
+ 標頭：dia2.h  
   
  程式庫： diaguids.lib  
   
  DLL: msdia80.dll  
   
 ## <a name="see-also"></a>另請參閱  
- [介面 （偵錯介面存取 SDK）](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
+ [介面 (偵錯介面存取 SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
  [IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md)   
- [Idiaenumframedata:: Item](../../debugger/debug-interface-access/idiaenumframedata-item.md)   
+ [IDiaEnumFrameData::Item](../../debugger/debug-interface-access/idiaenumframedata-item.md)   
  [IDiaEnumFrameData::Next](../../debugger/debug-interface-access/idiaenumframedata-next.md)
-
-
-

@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugCoreServer3::GetServerName
 ms.assetid: 0fc3fcf5-d6a3-4a00-bf14-458b8645714e
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 26136955a8956006a5c6795d5fc28ea9079f3efb
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 6fe2a6425e55e3e0fdb56dc1e4cb4429dd9d4df3
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56693421"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66327030"
 ---
 # <a name="idebugcoreserver3getservername"></a>IDebugCoreServer3::GetServerName
 擷取伺服器的名稱。
@@ -36,13 +39,12 @@ int GetServerName(
 );
 ```
 
-#### <a name="parameters"></a>參數
- `pbstrName`
-
- [out]傳回伺服器的名稱。
+## <a name="parameters"></a>參數
+`pbstrName`\
+[out]傳回伺服器的名稱。
 
 > [!NOTE]
->  呼叫端負責釋放字串。
+> 呼叫端負責釋放字串。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`，否則會傳回錯誤碼。

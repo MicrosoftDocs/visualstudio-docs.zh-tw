@@ -1,6 +1,6 @@
 ---
 title: 單元測試基本概念
-ms.date: 01/07/2016
+ms.date: 06/06/2019
 ms.topic: conceptual
 f1_keywords:
 - vs.UnitTest.CreateUnitTest
@@ -9,18 +9,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bc001765beb01c7767ec9143cecf8462793dcaa8
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
+ms.openlocfilehash: c51042ee5a154c09245a28645cf2e432ff6e694c
+ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56796825"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66820761"
 ---
 # <a name="unit-test-basics"></a>單元測試基本概念
 
-藉由建立及執行單元測試，檢查您的程式碼是否如預期般執行。 這之所以稱為單元測試，是因為您將程式功能分解成離散的可測試行為，這些行為能作為個別的「單位」加以測試。 Visual Studio [測試總管] 提供富彈性又有效率的方式來執行單元測試，並可在 Visual Studio 中檢視結果。 Visual Studio 會安裝 Managed 程式碼和原生程式碼適用的 Microsoft 單元測試架構。 請使用 *「單元測試架構」* (unit testing framework) 來建立單元測試並加以執行，然後報告這些測試的結果。 當您進行變更來測試程式碼是否仍正常運作時，請重新執行單元測試。 Visual Studio Enterprise 可透過 [Live Unit Testing](live-unit-testing-intro.md) 自動執行這項作業，該工具會偵測受到程式碼變更影響的測試，並在您鍵入時於背景執行這些測試。
+藉由建立及執行單元測試，檢查您的程式碼是否如預期般執行。 這之所以稱為單元測試，是因為您將程式功能分解成離散的可測試行為，這些行為能作為個別的「單位」  加以測試。 Visual Studio [測試總管] 提供富彈性又有效率的方式來執行單元測試，並可在 Visual Studio 中檢視結果。 Visual Studio 會安裝 Managed 程式碼和原生程式碼適用的 Microsoft 單元測試架構。 請使用 *「單元測試架構」* (unit testing framework) 來建立單元測試並加以執行，然後報告這些測試的結果。 當您進行變更來測試程式碼是否仍正常運作時，請重新執行單元測試。 Visual Studio Enterprise 可透過 [Live Unit Testing](live-unit-testing-intro.md) 自動執行這項作業，該工具會偵測受到程式碼變更影響的測試，並在您鍵入時於背景執行這些測試。
 
-當單元測試是軟體開發工作流程中不可或缺的一部分時，就能對您的程式碼品質發揮最大的作用。 一旦您撰寫函式或其他應用程式程式碼區塊，就會建立單元測試，以便驗證該程式碼的行為是否對應於輸入資料的標準、界限和不正確情況，並檢查程式碼所做的任何明確或隱含假設。 藉由 *「測試驅動式開發」*(test driven development)，您可在撰寫程式碼之前先建立單元測試，以便將單元測試做為設計文件和功能規格。
+當單元測試是軟體開發工作流程中不可或缺的一部分時，就能對您的程式碼品質發揮最大的作用。 一旦您撰寫函式或其他應用程式程式碼區塊，就會建立單元測試，以便驗證該程式碼的行為是否對應於輸入資料的標準、界限和不正確情況，並檢查程式碼所做的任何明確或隱含假設。 藉由 *「測試驅動式開發」* (test driven development)，您可在撰寫程式碼之前先建立單元測試，以便將單元測試做為設計文件和功能規格。
 
 您可以從您的程式碼快速產生測試專案和測試方法，或在您需要的時候以手動方式建立此測試。 當您使用 IntelliTest 來探索 .NET 程式碼時，可以產生測試資料和單元測試套件。 其會為程式碼中的每一個陳述式產生一個用以執行該陳述式的測試輸入。 了解如何 [產生程式碼的單元測試](generate-unit-tests-for-your-code-with-intellitest.md)。
 
@@ -38,7 +38,7 @@ ms.locfileid: "56796825"
 
 ## <a name="the-mybank-solution-example"></a>MyBank 解決方案範例
 
-在本主題中，我們會使用稱為 `MyBank` 的虛構應用程式開發來做為範例。 您不需要實際程式碼來照著本主題中的說明進行。 測試方法是以 C# 所撰寫並使用 Microsoft 受控程式碼單元測試架構呈現。 不過，很容易就可以將概念移轉到其他語言與架構。
+在本文中，我們會使用稱為 `MyBank` 的虛構應用程式開發來作為範例。 您不需要實際程式碼來照著本主題中的說明進行。 測試方法是以 C# 所撰寫並使用 Microsoft 受控程式碼單元測試架構呈現。 不過，很容易就可以將概念移轉到其他語言與架構。
 
 ![MyBank 方案](../test/media/ute_mybanksolution.png)
 
@@ -52,11 +52,11 @@ ms.locfileid: "56796825"
 
 我們第一次在 `Accounts` 專案的設計嘗試包含一個保留帳戶相關基本資訊的類別、一個指定任一種帳戶通用功能 (例如在帳戶的資產中存款和提款) 的介面，以及一個從該介面衍生代表支票帳戶的類別。 一開始我們先在帳戶專案中建立下列原始程式檔：
 
-- AccountInfo.cs 定義帳戶的基本資訊。
+- AccountInfo.cs  定義帳戶的基本資訊。
 
-- IAccount.cs 定義帳戶的標準 `IAccount` 介面，包括從帳戶資產存款和提款，以及擷取帳戶餘額的方法。
+- IAccount.cs  定義帳戶的標準 `IAccount` 介面，包括從帳戶資產存款和提款，以及擷取帳戶餘額的方法。
 
-- CheckingAccount.cs 包含的 `CheckingAccount` 類別可實作支票帳戶的 `IAccount` 介面。
+- CheckingAccount.cs  包含的 `CheckingAccount` 類別可實作支票帳戶的 `IAccount` 介面。
 
 我們從經驗中知道一件事，那就是從支票帳戶提款必須先確認提取的金額小於帳戶餘額。 因此我們使用一個可檢查此條件的方法來覆寫 `IAccount.Withdraw` 中的 `CheckingAccount` 方法。 此方法可能看起來像這樣：
 
@@ -78,17 +78,20 @@ public void Withdraw(double amount)
 
 ## <a name="create-unit-test-projects-and-test-methods"></a>建立單元測試專案和測試方法
 
-從您的程式碼中產生單元測試專案和單元測試虛設常式通常較快。 或者您可以視您的需求而定，選擇以手動方式建立單元測試專案和測試。
+從您的程式碼中產生單元測試專案和單元測試虛設常式通常較快。 或者您可以視您的需求而定，選擇以手動方式建立單元測試專案和測試。 如果您想要使用協力廠商架構建立單元測試，您需要安裝下列其中一個延伸模組：[NUnit](https://marketplace.visualstudio.com/items?itemName=NUnitDevelopers.TestGeneratorNUnitextension-18371) 或 [xUnit](https://marketplace.visualstudio.com/items?itemName=YowkoTsai.xUnitnetTestGenerator)。
 
 ### <a name="generate-unit-test-project-and-unit-test-stubs"></a>產生單元測試專案和單元測試虛設常式
 
-1. 在程式碼編輯器視窗中，以滑鼠右鍵按一下並從右鍵功能表中選擇 [建立單元測試]。
+1. 在程式碼編輯器視窗中，以滑鼠右鍵按一下並從右鍵功能表中選擇 [[**建立單元測試**]](create-unit-tests-menu.md)。
 
-    ![從編輯器視窗，檢視內容功能表](../test/media/createunittestsrightclick.png)
+   ![從編輯器視窗，檢視內容功能表](../test/media/createunittestsrightclick.png)
 
-2. 按一下 [確定] 接受預設值來建立單元測試，或變更過去用來建立和命名單元測試專案和單元測試的值。 您可以選取預設加入此單元測試方法的程式碼。
+   > [!NOTE]
+   > [建立單元測試]  功能表命令僅供以 .NET Framework 為目標 (非 .NET Core) 的受控程式碼使用。
 
-    ![在編輯器中按一下滑鼠右鍵，然後選擇 [建立單元測試]](../test/media/createunittestsdialog.png)
+2. 按一下 [確定]  接受預設值來建立單元測試，或變更過去用來建立和命名單元測試專案和單元測試的值。 您可以選取預設加入此單元測試方法的程式碼。
+
+    ![Visual Studio 的 [建立單元測試] 對話方塊](../test/media/create-unit-tests.png)
 
 3. 會針對此類別中的所有方法，在新的單元測試專案中建立單元測試虛設常式。
 
@@ -102,34 +105,46 @@ public void Withdraw(double amount)
 
 **將單元測試專案加入方案：**
 
-1. 在 [檔案] 功能表上，選擇 [新增]，然後選擇 [專案] (鍵盤 **Ctrl**+**Shift**+**N**)。
+1. 在 [方案總管]  中，以滑鼠右鍵按一下方案，然後選擇 [新增]   > [新增專案]   。
 
-2. 在 [新增專案] 對話方塊上，展開 [已安裝] 節點，並選擇您想要用於測試專案的語言，然後選擇 [測試]。
+::: moniker range="vs-2017"
+
+2. 在 [新增專案]  對話方塊中，展開 [已安裝]  節點，選擇您想要用於測試專案的語言，然後選擇 [測試]  。
 
 3. 若要使用其中一個 Microsoft 單元測試架構，請從專案範本清單中選擇 [單元測試專案]  。 否則，請選擇您所要使用單元測試架構的專案範本。 若要測試本例的 `Accounts` 專案，請將專案命名為 `AccountsTests`。
 
-   > [!WARNING]
+   > [!NOTE]
    > 並非所有協力廠商和開放原始碼的單元測試架構都提供 Visual Studio 專案範本。 如需建立專案的相關資訊，請參閱架構文件。
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+2. 使用專案範本搜尋方塊來尋找您希望使用之測試架構的單元測試專案範本。
+
+3. 請在下一頁命名專案。 若要測試本範例的 `Accounts` 專案，您可以將專案命名為 `AccountsTests`。
+
+::: moniker-end
 
 4. 在您的單元測試專案中，可在本例中將受測程式碼專案的參考加入帳戶專案。
 
    建立程式碼專案的參考：
 
-   1.  在 [方案總管] 中選取專案。
+   1. 在 [方案總管]  中選取專案。
 
-   2.  在 [專案]  功能表上，選擇 [加入參考] 。
+   2. 在 [專案]  功能表上，選擇 [加入參考]  。
 
-   3.  在 [參考管理員] 對話方塊上，開啟 [方案] 節點，然後選擇 [專案]。 選取程式碼專案名稱，然後關閉對話方塊。
+   3. 在 [參考管理員]  對話方塊上，開啟 [方案]  節點，然後選擇 [專案]  。 選取程式碼專案名稱，然後關閉對話方塊。
 
 每個單元測試專案包含的類別都可反映程式碼專案中的類別名稱。 在本例中， `AccountsTests` 專案可能包含下列類別：
 
--   `AccountInfoTests` 類別包含 `AccountInfo` 專案中 `Accounts` 類別的單元測試方法。
+- `AccountInfoTests` 類別包含 `AccountInfo` 專案中 `Accounts` 類別的單元測試方法。
 
--   `CheckingAccountTests` 類別包含 `CheckingAccount` 類別的單元測試方法。
+- `CheckingAccountTests` 類別包含 `CheckingAccount` 類別的單元測試方法。
 
 ## <a name="write-your-tests"></a>撰寫您的測試
 
-您使用的單元測試架構和 Visual Studio IntelliSense 會引導您完成撰寫程式碼專案的單元測試程式碼。 若要在 [測試總管] 中執行，大部分的架構都會要求您新增特定屬性，以識別單元測試方法。 這些架構也會提供一個辨別測試方法是否通過或失敗的方式，通常是透過判斷提示陳述式或方法屬性。 其他屬性會識別在類別初始化和每個測試方法之前的選用設定方法，和識別在每個測試方法之後和終結類別之前的清除方法。
+您使用的單元測試架構和 Visual Studio IntelliSense 會引導您完成撰寫程式碼專案的單元測試程式碼。 若要在 [測試總管]  中執行，大部分的架構都會要求您新增特定屬性，以識別單元測試方法。 這些架構也會提供一個辨別測試方法是否通過或失敗的方式，通常是透過判斷提示陳述式或方法屬性。 其他屬性會識別在類別初始化和每個測試方法之前的選用設定方法，和識別在每個測試方法之後和終結類別之前的清除方法。
 
 AAA (排列、作用、判斷提示) 模式是為受測方法撰寫單元測試的常見方式。
 
@@ -150,34 +165,32 @@ public void Withdraw_ValidAmount_ChangesBalance()
     double withdrawal = 1.0;
     double expected = 9.0;
     var account = new CheckingAccount("JohnDoe", currentBalance);
+
     // act
     account.Withdraw(withdrawal);
-    double actual = account.Balance;
+
     // assert
-    Assert.AreEqual(expected, actual);
+    Assert.AreEqual(expected, account.Balance);
 }
 
 [TestMethod]
-[ExpectedException(typeof(ArgumentException))]
 public void Withdraw_AmountMoreThanBalance_Throws()
 {
     // arrange
     var account = new CheckingAccount("John Doe", 10.0);
-    // act
-    account.Withdraw(20.0);
-    // assert is handled by the ExpectedException
+
+    // act and assert
+    Assert.ThrowsException<System.ArgumentException>(() => account.Withdraw(20.0));
 }
 ```
 
-請注意， `Withdraw_ValidAmount_ChangesBalance` 會使用明確的 `Assert` 陳述式來判斷測試方法是否通過或失敗，而 `Withdraw_AmountMoreThanBalance_Throws` 則會使用 `ExpectedException` 屬性來判斷測試方法是否成功。 實際上，單元測試架構會將測試方法包在 try/catch 陳述式中。 在大部分情況下，如果攔截到例外狀況時，測試方法便會失敗，並忽略例外狀況。 如果指定的例外狀況擲回，則 `ExpectedException` 屬性就會導致測試方法通過。
-
 如需 Microsoft 單元測試架構的詳細資訊，請參閱下列其中一個主題：
 
--   [對程式碼進行單元測試](unit-test-your-code.md)
+- [對程式碼進行單元測試](unit-test-your-code.md)
 
--   [撰寫 C/C++ 的單元測試](writing-unit-tests-for-c-cpp.md)
+- [撰寫 C/C++ 的單元測試](writing-unit-tests-for-c-cpp.md)
 
--   [在單元測試中使用 MSTest 架構](using-microsoft-visualstudio-testtools-unittesting-members-in-unit-tests.md)
+- [在單元測試中使用 MSTest 架構](using-microsoft-visualstudio-testtools-unittesting-members-in-unit-tests.md)
 
 ## <a name="set-timeouts-for-unit-tests"></a>設定單元測試逾時
 
@@ -203,21 +216,21 @@ public void My_Test ()
 
 ## <a name="run-tests-in-test-explorer"></a>在 [測試總管] 中執行測試
 
-在建置測試專案後，這些測試便會出現在 [測試總管] 中。 如果看不到 [測試總管]，請選擇 Visual Studio 功能表上的 [測試]，並選擇 [Windows]，然後選擇 [測試總管]。
+在建置測試專案後，這些測試便會出現在 [測試總管]  中。 如果看不到 [測試總管]  ，請選擇 Visual Studio 功能表上的 [測試]  ，並選擇 [Windows]  ，然後選擇 [測試總管]  。
 
 ![單元測試總管](../test/media/ute_failedpassednotrunsummary.png)
 
-隨著您執行、撰寫及重新執行測試，[測試總管] 的預設檢視便會顯示 [失敗的測試]、[通過的測試]、[略過的測試] 及 [未執行的測試] 群組中的結果。 您可以選擇群組標題，以開啟顯示該群組中所有測試的檢視。
+隨著您執行、撰寫及重新執行測試，[測試總管]  的預設檢視便會顯示 [失敗的測試]  、[通過的測試]  、[略過的測試]  及 [未執行的測試]  群組中的結果。 您可以選擇群組標題，以開啟顯示該群組中所有測試的檢視。
 
 在搜尋方塊中找出全域層級中相符的文字或選取其中一個預先定義的篩選器，也能在任何檢視中篩選測試。 您可以隨時執行測試的任何選取範圍。 測試回合的結果會立即顯示在 [總管] 視窗上方的通過/失敗列中。 選取測試時，會顯示測試方法結果的詳細資料。
 
 ### <a name="run-and-view-tests"></a>執行測試並加以檢視
 
-[測試總管] 工具列可協助您探索、組織和執行您有興趣的測試。
+[測試總管]  工具列可協助您探索、組織和執行您有興趣的測試。
 
 ![從 [測試總管] 的工具列執行測試](../test/media/ute_toolbar.png)
 
-您可以選擇 [全部執行]  以執行所有測試，或選擇 [執行]  以選擇要執行的一小組測試。 執行一組測試之後，測試回合的摘要會出現在 [測試總管] 視窗的底部。 在底部窗格中選取某個測試以檢視該測試的詳細資料。 從右鍵功能表中選擇 [開啟測試] (鍵盤：**F12**) 以顯示所選測試的原始程式碼。
+您可以選擇 [全部執行]  以執行所有測試，或選擇 [執行]  以選擇要執行的一小組測試。 執行一組測試之後，測試回合的摘要會出現在 [測試總管]  視窗的底部。 在底部窗格中選取某個測試以檢視該測試的詳細資料。 從右鍵功能表中選擇 [開啟測試]  (鍵盤：**F12**) 以顯示所選測試的原始程式碼。
 
 如果個別測試沒有任何會防止它們依任意順序執行的相依性，請使用工具列上的 ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png) 切換按鈕開啟平行測試執行。 這可大幅縮短執行所有測試所需的時間。
 
@@ -228,11 +241,11 @@ public void My_Test ()
 
 |按鈕|說明|
 |-|-|
-|![建置後執行](../test/media/ute_runafterbuild_btn.png)|若要在每次本機組建之後執行單元測試，請選擇標準功能表上的 [測試]，然後在 [測試總管] 工具列上選擇 [建置之後執行測試]。|
+|![建置後執行](../test/media/ute_runafterbuild_btn.png)|若要在每次本機組建之後執行單元測試，請選擇標準功能表上的 [測試]  ，然後在 [測試總管]  工具列上選擇 [建置之後執行測試]  。|
 
 ### <a name="filter-and-group-the-test-list"></a>篩選與群組測試清單
 
-若有大量測試，您可以在 [測試總管] 搜尋方塊中鍵入文字，以依指定字串篩選清單。 您可以從篩選清單中選擇以進一步限制篩選事件。
+若有大量測試，您可以在 [測試總管]  搜尋方塊中鍵入文字，以依指定字串篩選清單。 您可以從篩選清單中選擇以進一步限制篩選事件。
 
 ![搜尋篩選條件分類](../test/media/ute_searchfilter.png)
 
@@ -246,14 +259,14 @@ public void My_Test ()
 
 **問：如何偵錯單元測試？**
 
-**答：** 您可以使用 [測試總管] 來啟動測試的偵錯工作階段。 使用 Visual Studio 偵錯工具逐步執行程式碼可讓您順暢地在單元測試和受測專案之間來回進行。 啟動偵錯：
+**答：** 您可以使用 [測試總管]  來啟動測試的偵錯工作階段。 使用 Visual Studio 偵錯工具逐步執行程式碼可讓您順暢地在單元測試和受測專案之間來回進行。 啟動偵錯：
 
-1.  在 Visual Studio 編輯器中，於您要偵錯的一個或多個測試方法中設定中斷點。
+1. 在 Visual Studio 編輯器中，於您要偵錯的一個或多個測試方法中設定中斷點。
 
     > [!NOTE]
     > 由於測試方法可以依照任何順序執行，請在您要偵錯的所有測試方法中設定中斷點。
 
-2.  在 [測試總管] 中選取測試方法，然後從捷徑功能表中選擇 [偵錯選取的測試]。
+2. 在 [測試總管]  中選取測試方法，然後從捷徑功能表中選擇 [偵錯選取的測試]  。
 
 進一步了解 [偵錯單元測試](../debugger/debugger-feature-tour.md)的詳細資料。
 
@@ -291,7 +304,7 @@ public void AddIntegerHelper_DataDrivenValues_AllShouldPass()
 }
 ```
 
-資料表中一個資料列執行一次屬性的方法。 如果任何反覆項目失敗，[測試總管] 會報告該方法的測試失敗。 該方法的測試結果詳細資料窗格會向您顯示每個資料列通過/失敗狀態的方法。
+資料表中一個資料列執行一次屬性的方法。 如果任何反覆項目失敗，[測試總管]  會報告該方法的測試失敗。 該方法的測試結果詳細資料窗格會向您顯示每個資料列通過/失敗狀態的方法。
 
 深入了解 [資料驅動的單元測試](../test/how-to-create-a-data-driven-unit-test.md)。
 
@@ -299,11 +312,11 @@ public void AddIntegerHelper_DataDrivenValues_AllShouldPass()
 
 **答：** 可以。 您可以使用 Visual Studio 程式碼涵蓋範圍工具來判斷您的單元測試實際測試的程式碼數量。 原生和 Managed 語言，以及可由單元測試架構執行的所有單元測試架構都受支援。
 
-您可以在方案中的所選測試或所有測試上執行程式碼涵蓋範圍。 [程式碼涵蓋範圍結果] 視窗會顯示線條、函式、類別、命名空間及模組所運用的產品程式碼區塊的百分比。
+您可以在方案中的所選測試或所有測試上執行程式碼涵蓋範圍。 [程式碼涵蓋範圍結果]  視窗會顯示線條、函式、類別、命名空間及模組所運用的產品程式碼區塊的百分比。
 
-若要在方案中執行測試方法的程式碼涵蓋範圍，請選擇 [Visual Studio] 功能表上的 [測試]  ，然後選擇 [分析程式碼涵蓋範圍] 。
+若要在方案中執行測試方法的程式碼涵蓋範圍，請選擇 [Visual Studio] 功能表上的 [測試]  ，然後選擇 [分析程式碼涵蓋範圍]  。
 
-涵蓋範圍結果會出現在 [程式碼涵蓋範圍結果] 視窗中。
+涵蓋範圍結果會出現在 [程式碼涵蓋範圍結果]  視窗中。
 
 ![程式碼涵蓋範圍結果](../test/media/ute_codecoverageresults.png)
 
@@ -315,9 +328,9 @@ public void AddIntegerHelper_DataDrivenValues_AllShouldPass()
 
 Microsoft Fakes 會使用兩種方式來建立外部相依性的替代類別：
 
-1.  *「虛設常式」* (stub) 會產生自目標相依性類別的父介面衍生的替代類別。 虛設常式方法可以取代為目標類別的公用虛擬方法。
+1. *「虛設常式」* (stub) 會產生自目標相依性類別的父介面衍生的替代類別。 虛設常式方法可以取代為目標類別的公用虛擬方法。
 
-2.  *「填充碼」* (shim) 會使用執行階段檢測將呼叫轉向至目標方法，以使用填充碼方法來替代非虛擬方法。
+2. *「填充碼」* (shim) 會使用執行階段檢測將呼叫轉向至目標方法，以使用填充碼方法來替代非虛擬方法。
 
 在這兩種方法中，您可以對相依性方法使用呼叫所產生的委派，以指定您要讓測試方法執行的行為。
 

@@ -3,17 +3,17 @@ title: 什麼&#39;Visual Studio 2017 SDK 的新功能 |Microsoft Docs
 ms.date: 10/31/2017
 ms.topic: conceptual
 ms.assetid: 9efcf0a3-dbde-4cab-8ed3-425826a48b2e
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: caa7593c85351512e683f2cf93adeb3211e3e4d8
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: 434a04aaa8389b4b09f32778d5de63bd2a7d687f
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57323915"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66350786"
 ---
 # <a name="what39s-new-in-the-visual-studio-2017-sdk"></a>什麼&#39;Visual Studio 2017 SDK 的新功能
 

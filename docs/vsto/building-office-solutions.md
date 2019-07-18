@@ -26,18 +26,18 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 000a036b90d1fa44f24a8340770790ab216c1d85
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MT
+ms.openlocfilehash: e103b07b82d587ac00e2ff53e9ed7ea344267a85
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55945413"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440330"
 ---
 # <a name="build-office-solutions"></a>建置 Office 方案
   一般而言，建置和偵錯 Office 專案，和在 Visual Studio 中建置和偵錯其他類型的專案是相同的，例如 Windows Forms。 本節主題會說明兩者之間的差異。 如需如何建置應用程式的一般資訊，請參閱[編譯，並在 Visual Studio 建置](../ide/compiling-and-building-in-visual-studio.md)。
 
 > [!NOTE]
->  想要開發解決方案，擴充的 Office 體驗，跨[多個平台](https://dev.office.com/add-in-availability)嗎？ 查看新[Office 增益集模型](https://dev.office.com/docs/add-ins/overview/office-add-ins)。 Office 增益集較小的使用量，相較於 VSTO 增益集和解決方案，而且您可以使用幾乎任何 web 程式設計技術，例如 HTML5、 JavaScript、 CSS3、 以及 XML 來建置。
+> 想要開發解決方案，擴充的 Office 體驗，跨[多個平台](https://dev.office.com/add-in-availability)嗎？ 查看新[Office 增益集模型](https://dev.office.com/docs/add-ins/overview/office-add-ins)。 Office 增益集較小的使用量，相較於 VSTO 增益集和解決方案，而且您可以使用幾乎任何 web 程式設計技術，例如 HTML5、 JavaScript、 CSS3、 以及 XML 來建置。
 
 ## <a name="project-output-for-office-projects"></a>Office 專案的專案輸出
  Office 專案的輸出位置是 *projectname*\bin\release 或 *projectname*\bin\debug。 無法建立到部署目錄。
@@ -45,18 +45,18 @@ ms.locfileid: "55945413"
 ### <a name="document-level-projects"></a>文件層級專案
  當您建置文件層級專案時，專案輸出會包含下列項目：
 
--   一份專案文件的複本。
+- 一份專案文件的複本。
 
--   其 [複製到本機]  屬性設定為 **true**的專案組件和所有參考組件。
+- 其 [複製到本機]  屬性設定為 **true**的專案組件和所有參考組件。
 
--   應用程式資訊清單檔案的副檔名 *.manifest*。 如需詳細資訊，請參閱 < [Application manifests for Office 方案](../vsto/application-manifests-for-office-solutions.md)。
+- 應用程式資訊清單檔案的副檔名 *.manifest*。 如需詳細資訊，請參閱 < [Application manifests for Office 方案](../vsto/application-manifests-for-office-solutions.md)。
 
--   部署資訊清單檔案名稱副檔名 *.vsto*。 如需詳細資訊，請參閱 < [Deployment manifests for Office 方案](../vsto/deployment-manifests-for-office-solutions.md)。
+- 部署資訊清單檔案名稱副檔名 *.vsto*。 如需詳細資訊，請參閱 < [Deployment manifests for Office 方案](../vsto/deployment-manifests-for-office-solutions.md)。
 
--   程式資料庫 (*PDB*) 檔案。
+- 程式資料庫 (*PDB*) 檔案。
 
 > [!NOTE]
->  文件層級解決方案如果建立在遠端位置而不是本機電腦，請在應用程式信任中心的 [信任位置] 清單中加入完整的路徑。 如需詳細資訊，請參閱稱為授與信任給文件中的區段[保護的 Office 方案](../vsto/securing-office-solutions.md)。
+> 文件層級解決方案如果建立在遠端位置而不是本機電腦，請在應用程式信任中心的 [信任位置] 清單中加入完整的路徑。 如需詳細資訊，請參閱稱為授與信任給文件中的區段[保護的 Office 方案](../vsto/securing-office-solutions.md)。
 
 ### <a name="application-level-projects"></a>應用程式層級專案
  當您建置 VSTO 增益集專案時，專案輸出會包含下列項目：
@@ -80,7 +80,7 @@ ms.locfileid: "55945413"
   Outlook 需要這項資訊載入表單區域。
 
 ## <a name="referenced-assemblies"></a>參考的組件
- 您可以參考您「建置 Office 解決方案」專案的組件 (包括類別庫專案)。 每個參考的組件都有稱為 [複製到本機] 的屬性。 [複製到本機] 指出組件是否要複製到輸出目錄。 根據預設，此屬性設定為 **true**。 每個將 [複製到本機]  設為 **true** 的參考組件都會複製到輸出目錄。
+ 您可以參考您「建置 Office 解決方案」專案的組件 (包括類別庫專案)。 每個參考的組件都有稱為 [複製到本機]  的屬性。 [複製到本機]  指出組件是否要複製到輸出目錄。 根據預設，此屬性設定為 **true**。 每個將 [複製到本機]  設為 **true** 的參考組件都會複製到輸出目錄。
 
 ## <a name="security-during-the-build-process"></a>建置程序期間的安全性
  Visual Studio 會自動設定開發電腦的安全性設定，在建置程序期間將信任授與解決方案。 這讓解決方案在被偵錯時依然執行。
@@ -102,7 +102,7 @@ ms.locfileid: "55945413"
  如果平台目標設定為 x64，解決方案就不能在 32 位元版本的 Windows 或 Office 中執行。 X64 平台目標需要解決方案在 64 位元處理序中執行。
 
 ## <a name="use-the-clean-command"></a>使用 [清除] 命令
- 若要從開發電腦中移除已建置的專案檔案，您可以使用 **之 [建置]****功能表的 [清除]**[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]命令。 [清除]  命令會刪除建置輸出位置的所有檔案。 至於應用程式層級專案，[清除]  命令也會移除建置程序所建立的登錄項目。
+ 若要從開發電腦中移除已建置的專案檔案，您可以使用 **之[建置]** **功能表的[清除]** [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]命令。 [清除]  命令會刪除建置輸出位置的所有檔案。 至於應用程式層級專案，[清除]  命令也會移除建置程序所建立的登錄項目。
 
 ## <a name="related-topics"></a>相關主題
 

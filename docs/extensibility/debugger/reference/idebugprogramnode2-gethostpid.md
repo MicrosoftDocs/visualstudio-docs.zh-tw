@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgramNode2::GetHostPid
 ms.assetid: e65b4b15-46d8-4ca7-9456-2b4c078f7cf9
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 932691781398d4e7c7983248b26f4828975ad03c
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 8ad7ba35bcc95434e7857c9b4f89b10fd332366c
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56701585"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66351163"
 ---
 # <a name="idebugprogramnode2gethostpid"></a>IDebugProgramNode2::GetHostPid
 取得裝載程式的處理序的系統處理序識別碼。
@@ -36,10 +39,9 @@ int GetHostPid ( 
 );
 ```
 
-#### <a name="parameters"></a>參數
- `pdwHostPid`
-
- [out]傳回裝載處理序的系統處理序識別碼。
+## <a name="parameters"></a>參數
+`pdwHostPid`\
+[out]傳回裝載處理序的系統處理序識別碼。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 90230bd95e1dbcd3e4c186257c6c36faad6ba1f7
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56605470"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62555126"
 ---
 # <a name="cvaccesse"></a>CV_access_e
 指定的成員函式和變數的可見性 （存取層級） 的範圍。
@@ -45,7 +45,7 @@ CV_public 成員具有公用存取權。
 ## <a name="requirements"></a>需求
 標頭： cvconst.h
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [列舉和結構](../../debugger/debug-interface-access/enumerations-and-structures.md)
 - [IDiaSymbol::get_access](../../debugger/debug-interface-access/idiasymbol-get-access.md)
 - [IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)

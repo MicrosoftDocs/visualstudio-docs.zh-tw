@@ -1,25 +1,20 @@
 ---
 title: 遠端偵錯 ASP.NET 在 IIS 7.5 的遠端電腦 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 573a3fc5-6901-41f1-bc87-557aa45d8858
 caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 71d249571830ac608bef12c4a47d0243de1859a5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: c43f392cddfd5ea36180d9b2675db82469f86ce0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51764076"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446084"
 ---
 # <a name="remote-debugging-aspnet-on-a-remote-iis-computer"></a>遠端偵錯 IIS 的遠端電腦上的 ASP.NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,14 +39,14 @@ ms.locfileid: "51764076"
   
 ## <a name="create-the-application-on-the-visual-studio-computer"></a>在 Visual Studio 電腦上建立應用程式  
   
-1. 建立新的 MVC ASP.NET 應用程式。 ([檔案] / [新增] / [專案]，然後選取 [Visual C#] / [Web] / [ASP.NET Web 應用程式]  。 在 [ASP.NET 4.5.2]  範本區段中選取 [MVC] 。 請確定**雲端中的主機**未選取 [Azure] 區段底下。 將專案命名為**MyMVC**。)
+1. 建立新的 MVC ASP.NET 應用程式。 ([檔案] / [新增] / [專案]  ，然後選取 [Visual C#] / [Web] / [ASP.NET Web 應用程式]  。 在 [ASP.NET 4.5.2]  範本區段中選取 [MVC]  。 請確定**雲端中的主機**未選取 [Azure] 區段底下。 將專案命名為**MyMVC**。)
 1. 開啟 HomeController.cs 檔案，並在 `About()` 方法中設定中斷點。
-1. 在 [方案總管] ，以滑鼠右鍵按一下專案節點，然後選取 [發行] 。
-1. 針對 [選取發行目標] 選取 [自訂]  ，然後將設定檔命名為 **MyMVC**。 按 [ **下一步**]。
+1. 在 [方案總管]  ，以滑鼠右鍵按一下專案節點，然後選取 [發行]  。
+1. 針對 [選取發行目標]  選取 [自訂]  ，然後將設定檔命名為 **MyMVC**。 按 [ **下一步**]。
 1. 在 [連接]  索引標籤上，設定 [發行方法]  欄位為 [檔案系統]  ，以及設定 [目標位置]  欄位為本機目錄。 按 [ **下一步**]。
 
     ![RemoteDBG_Publish_Local](../debugger/media/remotedbg-publish-local.png "RemoteDBG_Publish_Local")
-1. 設定要 **偵錯**的組態。 按一下 [發行] 。
+1. 設定要 **偵錯**的組態。 按一下 [發行]  。
 
     ![RemoteDBG_Publish_Debug_Config](../debugger/media/remotedbg-publish-debug-config.png "RemoteDBG_Publish_Debug_Config")
     
@@ -64,11 +59,11 @@ ms.locfileid: "51764076"
 
     ![RemoteDBG_IIS_AspNet_45](../debugger/media/remotedbg-iis-aspnet-45.png "RemoteDBG_IIS_AspNet_45")
 
-    在 Windows Server 2008 R2 上安裝 ASP.NET 4，改為使用下列命令： **C:\Windows\Microsoft.NET\Framework (64) \v4.0.30319\aspnet_regiis.exe ir**
+    在 Windows Server 2008 R2 上安裝 ASP.NET 4，改為使用下列命令： **C:\Windows\Microsoft.NET\Framework(64)\v4.0.30319\aspnet_regiis.exe -ir**
 1. 將 ASP.NET 專案目錄從 Visual Studio 電腦複製到在 Windows 伺服器電腦上的本機目錄 (我們將稱之為 **C:\Publish**)。 您可以手動複製專案，請使用 Xcopy、 Web Deploy、 Robocopy、 Powershell 或其他選項。
 
     > [!CAUTION]
-    >  如果您需要對程式碼或重建的變更，您必須重新發行，並重複此步驟。 您複製到遠端電腦的可執行檔必須完全符合您的本機來源和符號。
+    > 如果您需要對程式碼或重建的變更，您必須重新發行，並重複此步驟。 您複製到遠端電腦的可執行檔必須完全符合您的本機來源和符號。
 1. 請確定 web.config 檔案會列出 .NET Framework 的正確版本。  比方說，Windows Server 2008 R2 上的預設安裝的.NET Framework 版本是 4.0.30319，但是我們建立的是 ASP.NET 4.5.2 版本。 如果 ASP.NET 4.0 應用程式正在執行 Windows Server 電腦上，您需要變更的版本：
   
     ```xml
@@ -79,8 +74,9 @@ ms.locfileid: "51764076"
       </system.web>
   
     ```
-1. 開啟 [Internet Information Services (IIS) 管理員]  並移至 [網站] 。
-1. 以滑鼠右鍵按一下 [預設的網站]  節點，並選取 [加入應用程式] 。
+
+1. 開啟 [Internet Information Services (IIS) 管理員]  並移至 [網站]  。
+1. 以滑鼠右鍵按一下 [預設的網站]  節點，並選取 [加入應用程式]  。
 1. 設定**別名**欄位設為**MyMVC** ，讓應用程式集區欄位**ASP.NET v4.0** （ASP.NET 4.5 不是應用程式集區的選項）。 將 [實體路徑]  設定為 **C:\Publish** (您複製 ASP.NET 專案目錄的地方)。
 
     >[!NOTE] 
@@ -92,13 +88,13 @@ ms.locfileid: "51764076"
 
 1. 在 Visual Studio 電腦上開啟 [MyMVC]  方案。
 1. 在 Visual Studio 中，按一下**偵錯] / [附加至處理序**(**Ctrl + Alt + P**)。
-1. [限定詞] 欄位設定為**\<遠端電腦名稱 >: 4020**。
-1. 按一下 **重新整理**。
+1. [限定詞] 欄位設定為 **\<遠端電腦名稱>:4020**。
+1. 按一下 [重新整理]  。
     您應該會看到有些處理程序會出現在 [可使用的處理序]  視窗。
 
     如果您沒有看到任何處理程序，請嘗試使用的 IP 位址，而不 （連接埠是必要的） 遠端電腦名稱。 使用`ipconfig`取得 IPv4 位址的命令列。
-1. 核取 [顯示所有使用者的處理序]  。
-1. 尋找 **w3wp.exe** ，然後按一下 [附加] 。
+1. 核取 [顯示所有使用者的處理序]   。
+1. 尋找 **w3wp.exe** ，然後按一下 [附加]  。
 
      若要快速找到處理序名稱，輸入程序的第一個字母。
      
@@ -107,12 +103,9 @@ ms.locfileid: "51764076"
 
     ![RemoteDBG_AttachToProcess](../debugger/media/remotedbg-attachtoprocess.png "RemoteDBG_AttachToProcess")
 
-1. 開啟遠端電腦的網站。 在瀏覽器中，移至**http://\<遠端電腦名稱 >**。
+1. 開啟遠端電腦的網站。 在瀏覽器中，移至 **http://\<遠端電腦名稱>** 。
     
     您應該會看到 ASP.NET 網頁。
 1. 在 ASP.NET 網頁上，按一下 連結**關於**頁面。
 
     應該在 Visual Studio 中叫用中斷點。
-
-
-

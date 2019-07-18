@@ -1,6 +1,6 @@
 ---
 title: 分析器規則集
-ms.date: 07/20/2018
+ms.date: 04/22/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - analyzers, rule sets
@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: da5eab1424ac6f6fe580ec0f71ec3efd6e120020
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 696e6bd46c17054494be2ea0e0f2a1af4fd703d7
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57866993"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65675478"
 ---
 # <a name="rule-sets-for-roslyn-analyzers"></a>Roslyn 分析器的規則集
 
@@ -25,11 +25,28 @@ ms.locfileid: "57866993"
 
 ## <a name="use-analyzer-rule-sets"></a>使用分析器規則集
 
-之後您[安裝 nuget 分析器](install-roslyn-analyzers.md)，找出預先定義的規則中設定其*ruleset*目錄，例如 *%USERPROFILE%\\.nuget\packages\microsoft.codequality.analyzers\<版本 > \rulesets*。 從該處，您可以拖放，或複製並貼上，一或多個規則集至您的 Visual Studio 專案中**方案總管 中**。
+之後您[安裝 nuget 分析器](install-roslyn-analyzers.md)，找出預先定義的規則中設定其*ruleset*目錄。 例如，如果您參考`Microsoft.CodeAnalysis.FxCopAnalyzers`分析器套件，則您可以找到其*ruleset*目錄 *%USERPROFILE%\\.nuget\packages\microsoft.codeanalysis.fxcopanalyzers\\\<版本\>\rulesets*。 從該處複製一或多個規則集，並包含 Visual Studio 專案的目錄中，或直接將它們貼**方案總管 中**。
 
-若要讓規則集的作用中的規則集分析，以滑鼠右鍵按一下專案中**方案總管**，然後選擇**屬性**。 在 專案屬性頁中，選取**程式碼分析** 索引標籤。底下**執行此規則集**，選取**瀏覽**，然後選取 複製到專案目錄中您所需的規則集。 現在您只看到 vybranou 的 sadu pravidel 中啟用這些規則的規則違規。
+您也可以[來自訂預先定義的規則集](how-to-create-a-custom-rule-set.md)為您的喜好設定。 比方說，變更一或多個規則的嚴重性，以便顯示為錯誤或警告的違規**錯誤清單**。
 
-您也可以[來自訂預先定義的規則集](how-to-create-a-custom-rule-set.md#create-a-custom-rule-set)為您的喜好設定。 比方說，變更一或多個規則的嚴重性，以便顯示為錯誤或警告的違規**錯誤清單**。
+## <a name="set-the-active-rule-set"></a>設定作用中的規則集
+
+設定使用中的規則集的程序會稍有不同，取決於您是否有.NET Core/.NET Standard 專案或.NET Framework 專案。
+
+### <a name="net-core"></a>.NET Core
+
+若要讓規則集的作用中的規則集在.NET Core 或.NET Standard 專案中的分析，以手動方式新增**CodeAnalysisRuleSet**屬性，以您的專案檔。 例如，下列程式碼片段可設定`HelloWorld.ruleset`成為使用中的規則集。
+
+```xml
+<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+  ...
+  <CodeAnalysisRuleSet>HelloWorld.ruleset</CodeAnalysisRuleSet>
+</PropertyGroup>
+```
+
+### <a name="net-framework"></a>.NET Framework
+
+若要讓規則集的作用中的規則集在.NET Framework 專案中的分析，以滑鼠右鍵按一下專案中**方案總管**，然後選擇**屬性**。 在 專案屬性頁中，選取**程式碼分析** 索引標籤。底下**執行此規則集**，選取**瀏覽**，然後選取 複製到專案目錄中您所需的規則集。 現在您只看到 vybranou 的 sadu pravidel 中啟用這些規則的規則違規。
 
 ## <a name="available-rule-sets"></a>可用的規則集
 

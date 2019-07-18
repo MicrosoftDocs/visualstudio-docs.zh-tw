@@ -8,12 +8,12 @@ ms.assetid: bd7ad36c-54cb-4d2a-9aea-9d10ad98d7ba
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3f00ff0f794bec43a6d81bf4303488885d901bcb
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 517d4e0558aeca1518316520191ae6c662b41a9e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55914015"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62950728"
 ---
 # <a name="how-to-create-a-diagnostic-data-adapter"></a>HOW TO：建立診斷資料配接器
 
@@ -32,7 +32,7 @@ ms.locfileid: "55914015"
 
 以下是您在建立診斷資料配接器時可以使用之關鍵事件的部分清單。 如需診斷資料配接器事件的完整清單，請參閱抽象 <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionEvents> 類別。
 
-|Event - 事件|描述|
+|Event - 事件|說明|
 |-|-----------------|
 |<xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionEvents.SessionStart>|啟動測試回合|
 |<xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionEvents.SessionEnd>|結束測試回合|
@@ -48,37 +48,25 @@ ms.locfileid: "55914015"
 
 如需診斷資料配接器專案的完整範例 (包括自訂組態編輯器)，請參閱[建立診斷資料配接器的專案範例](../test/quickstart-create-a-load-test-project.md)。
 
-##  <a name="create-and-install-a-diagnostic-data-adapter"></a>建立和安裝診斷資料配接器
+## <a name="create-and-install-a-diagnostic-data-adapter"></a>建立和安裝診斷資料配接器
 
-### <a name="to-create-and-install-a-diagnostic-data-adapter"></a>若要建立和安裝診斷資料配接器
-
-1. 建立新的類別庫。
-
-   1.  在 [檔案] 功能表上選擇 [新增]，然後指向 [新增專案]。
-
-   2.  從 [專案類型] 選取要使用的語言。
-
-   3.  從 [Visual Studio 安裝的範本] 中選取 [類別庫]。
-
-   4.  輸入診斷資料配接器的名稱。
-
-   5.  選擇 [確定] 。
+1. 建立新的**類別庫**專案。
 
 2. 新增組件 **Microsoft.VisualStudio.QualityTools.ExecutionCommon**。
 
-   1.  在 [方案總管] 中，以滑鼠右鍵按一下 [參考]，然後選擇 [新增參考] 命令。
+   1. 在 [方案總管] 中，以滑鼠右鍵按一下 [參考]，然後選擇 [新增參考] 命令。
 
-   2.  選擇 [.NET] 並尋找 **Microsoft.VisualStudio.QualityTools.ExecutionCommon.dll**。
+   2. 選擇 [.NET] 並尋找 **Microsoft.VisualStudio.QualityTools.ExecutionCommon.dll**。
 
-   3.  選擇 [確定] 。
+   3. 選擇 [確定] 。
 
 3. 新增組件 **Microsoft.VisualStudio.QualityTools.Common**。
 
-   1.  在 [方案總管] 中，以滑鼠右鍵按一下 [參考]，然後選取 [新增參考] 命令。
+   1. 在 [方案總管] 中，以滑鼠右鍵按一下 [參考]，然後選取 [新增參考] 命令。
 
-   2.  選擇 [/.NET]，尋找 **Microsoft.VisualStudio.QualityTools.Common.dll**。
+   2. 選擇 [/.NET]，尋找 **Microsoft.VisualStudio.QualityTools.Common.dll**。
 
-   3.  選擇 [確定] 。
+   3. 選擇 [確定] 。
 
 4. 將下列 `using` 陳述式加入至類別檔：
 

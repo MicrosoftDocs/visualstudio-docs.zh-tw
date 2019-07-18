@@ -2,17 +2,17 @@
 title: 針對 Visual Studio 中的範本探索進行疑難排解 |Microsoft Docs
 ms.date: 01/02/2018
 ms.topic: conceptual
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c98c13528facb08f475614a6cbca9cee3c426ef9
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: b3c5558079772a8ddc4c4826ba68d1866c220ba2
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58323103"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823973"
 ---
 # <a name="troubleshooting-template-installation"></a>疑難排解安裝的範本
 
@@ -49,7 +49,7 @@ ms.locfileid: "58323103"
 
 ::: moniker range=">=vs-2019"
 
-4. 開啟 Visual Studio，並啟動初始化兩個範本樹狀結構的 [新增專案] 和 [新增項目] 對話方塊。
+4. 開啟 Visual Studio 和啟動**建立新的專案**並**新項目**初始化兩個範本樹狀結構的對話方塊。
 
    範本記錄現在會出現在 **%LOCALAPPDATA%\Microsoft\VisualStudio\16.0_[instanceid]\VsTemplateDiagnosticsList.csv** （對應至您的 Visual Studio 執行個體的安裝識別碼的執行個體識別碼）。 每個範本的樹狀目錄中初始化會將項目附加至這個記錄檔。
 
@@ -59,9 +59,9 @@ ms.locfileid: "58323103"
 
 - **FullPathToTemplate**，其中包含下列值：
 
-    - 1 代表資訊清單為基礎的部署
+  - 1 代表資訊清單為基礎的部署
 
-    - 0 代表磁碟為基礎的部署
+  - 0 代表磁碟為基礎的部署
 
 - **TemplateFileName**
 

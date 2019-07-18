@@ -5,24 +5,24 @@ ms.topic: conceptual
 helpviewer_keywords:
 - Properties window
 ms.assetid: 289ed4f2-02ac-4899-855e-42dfe57ee05f
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1b47db7802a6e174d8efff054fe9a6454fa6ef73
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 05c772365c42037bfd97a2a31b80efc2f5f1a48b
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56643674"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66347820"
 ---
 # <a name="properties-window-overview"></a>屬性視窗概觀
 **屬性** 視窗來顯示在 windows 中可用的兩個主要類型中選取的物件的屬性[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]整合式的開發環境 (IDE)。 這兩種 windows 類型如下：
 
--   例如 方案總管、 類別檢視 和 物件瀏覽器工具視窗
+- 例如 方案總管、 類別檢視 和 物件瀏覽器工具視窗
 
--   包含這類編輯器和 forms 設計工具，以及 XML 編輯器、 HTML 編輯器的設計工具的文件視窗
+- 包含這類編輯器和 forms 設計工具，以及 XML 編輯器、 HTML 編輯器的設計工具的文件視窗
 
 ## <a name="using-the-properties-window"></a>使用 [屬性] 視窗
  **屬性**視窗會顯示單一或多個選取的項目屬性。 如果選取多個項目，則會顯示所有選取的物件的所有屬性的交集。

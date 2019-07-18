@@ -6,17 +6,17 @@ helpviewer_keywords:
 - VSPackages, structure
 - source control packages, VSPackage overview
 ms.assetid: 92722be7-b397-48c3-a7a7-0b931a341961
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: aeaa87cf55b9429904286817b043dcba92d2bfcf
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: d609efe52955dba53b8c8890a6fcb44bb7f3f352
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335216"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66332746"
 ---
 # <a name="vspackage-structure-source-control-vspackage"></a>VSPackage 結構 (原始檔控制 VSPackage)
 
@@ -28,23 +28,23 @@ VSPackage 會宣告其功能表項目，並建立透過.vsct 檔的預設項目�
 
 原始檔控制 VSPackage 已完全整合至 Visual Studio 中。 VSPackage 語意包括：
 
--   因為 VSPackage 實作介面 (`IVsPackage`介面)
+- 因為 VSPackage 實作介面 (`IVsPackage`介面)
 
--   UI 命令實作 (.vsct 檔並實作<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>介面)
+- UI 命令實作 (.vsct 檔並實作<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>介面)
 
--   使用 Visual Studio VSPackage 的註冊。
+- 使用 Visual Studio VSPackage 的註冊。
 
 原始檔控制 VSPackage 這些其他的 Visual Studio 實體必須與通訊：
 
--   專案
+- 專案
 
--   編輯器
+- 編輯器
 
--   方案
+- 方案
 
--   Windows
+- Windows
 
--   執行中的文件表格
+- 執行中的文件表格
 
 ### <a name="visual-studio-environment-services-that-may-be-consumed"></a>Visual Studio 環境服務使用
 

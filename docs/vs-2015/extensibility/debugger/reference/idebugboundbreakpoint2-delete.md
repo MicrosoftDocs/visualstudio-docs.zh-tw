@@ -1,14 +1,9 @@
 ---
 title: IDebugBoundBreakpoint2::Delete |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugBoundBreakpoint2::Delete
 helpviewer_keywords:
@@ -17,13 +12,13 @@ helpviewer_keywords:
 ms.assetid: 7088dc66-f24a-446f-a52a-397d02457a41
 caps.latest.revision: 9
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: c130350c4673e894d2f340efdea4ae0d81ca0bbf
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f85886e86fbdc2b3c4958d97b1cfb63a247d8af3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51758620"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68203552"
 ---
 # <a name="idebugboundbreakpoint2delete"></a>IDebugBoundBreakpoint2::Delete
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -75,4 +70,3 @@ HRESULT CBoundBreakpoint::Delete(void)
 ## <a name="see-also"></a>另請參閱  
  [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)   
  [BP_STATE](../../../extensibility/debugger/reference/bp-state.md)
-

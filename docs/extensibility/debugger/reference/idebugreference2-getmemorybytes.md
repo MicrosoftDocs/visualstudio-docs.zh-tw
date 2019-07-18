@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugReference2::GetMemoryBytes
 ms.assetid: 2006cb2b-1dfa-4a2d-8e3e-db2ce0302e0d
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 20e08fdd59bd519358342c9cb8abbc1516d8637e
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 100b04f8cd81ecbc470c85e76f08b45ed46d8de9
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56713837"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66329869"
 ---
 # <a name="idebugreference2getmemorybytes"></a>IDebugReference2::GetMemoryBytes
 取得實際包含參考的值的記憶體位元組。 保留供未來使用。
@@ -36,10 +39,9 @@ int GetMemoryBytes ( 
 );
 ```
 
-#### <a name="parameters"></a>參數
- `ppMemoryBytes`
-
- [out]傳回[IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md)物件，可用來擷取包含參考的值的記憶體。
+## <a name="parameters"></a>參數
+`ppMemoryBytes`\
+[out]傳回[IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md)物件，可用來擷取包含參考的值的記憶體。
 
 ## <a name="return-value"></a>傳回值
  一律傳回 `E_NOTIMPL`。

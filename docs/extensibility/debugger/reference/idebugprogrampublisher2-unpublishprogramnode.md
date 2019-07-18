@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgramPublisher2::UnpublishProgramNode
 ms.assetid: 57c7e6e1-b84e-4e14-ad83-cbbb64e2f526
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 56eb23466d0364cbe22046bbb36be593a83a0998
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 6c59f4df20be0836d42a5d88431401660d9d5bc0
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56698699"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66343149"
 ---
 # <a name="idebugprogrampublisher2unpublishprogramnode"></a>IDebugProgramPublisher2::UnpublishProgramNode
 若要偵錯引擎 (DEs) 和工作階段的偵錯管理員 (SDM) 的可用性會從指定的程式節點。
@@ -36,10 +39,9 @@ int UnpublishProgramNode(
 );
 ```
 
-#### <a name="parameters"></a>參數
- `pProgramNode`
-
- [in][IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)物件，代表要移除之程式節點。
+## <a name="parameters"></a>參數
+`pProgramNode`\
+[in][IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)物件，代表要移除之程式節點。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

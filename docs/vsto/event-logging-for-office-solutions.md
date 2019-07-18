@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3501c963a3fdc97151fdacce723942ca4e4bc93f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 480a355ee2af321341c54b90edcc582d49102186
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56628880"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62951928"
 ---
 # <a name="event-logging-for-office-solutions"></a>Office 方案的事件記錄
   在安裝或解除安裝 Office 方案時，您可以使用 Windows 的事件檢視器查看 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 擷取的例外狀況訊息。 您可以使用事件記錄器的這些訊息，解決安裝和部署問題。
@@ -32,19 +32,19 @@ ms.locfileid: "56628880"
 
 ### <a name="to-read-the-event-log-in-windows-server-2003-and-windows-xp"></a>若要讀取事件記錄檔，在 Windows Server 2003 和 Windows XP
 
-1.  在 [控制台] 中，開啟 [系統管理工具] 。
+1. 在 [控制台] 中，開啟 [系統管理工具] 。
 
-2.  啟動 [事件檢視器] 。
+2. 啟動 [事件檢視器] 。
 
-3.  在事件記錄檔清單中，選取 [應用程式] 。
+3. 在事件記錄檔清單中，選取 [應用程式] 。
 
-4.  在 [檢視]  功能表上，按一下 [篩選] 。
+4. 在 [檢視]  功能表上，按一下 [篩選] 。
 
-5.  在 [事件來源]  清單中，選取 [VSTO 4.0] 。
+5. 在 [事件來源]  清單中，選取 [VSTO 4.0] 。
 
-6.  針對安裝事件，在 [事件識別碼]  方塊中輸入 **4096**。
+6. 針對安裝事件，在 [事件識別碼]  方塊中輸入 **4096**。
 
-7.  按一下 [確定]  以查看篩選過的檢視。
+7. 按一下 [確定]  以查看篩選過的檢視。
 
 ### <a name="to-read-the-event-log-in-windows-7-windows-vista-and-windows-server-2008"></a>若要讀取事件記錄檔，在 Windows 7、 Windows Vista 和 Windows Server 2008
 
@@ -84,17 +84,17 @@ ms.locfileid: "56628880"
 
 ### <a name="to-disable-the-event-log"></a>若要停用事件記錄檔
 
-1.  在 [控制台] 中，開啟 [系統] 。
+1. 在 [控制台] 中，開啟 [系統] 。
 
-2.  按一下 [ **進階** ] 索引標籤上的 [ **環境變數**]。
+2. 按一下 [ **進階** ] 索引標籤上的 [ **環境變數**]。
 
-3.  在 [系統變數]  窗格中，按一下 [新增] 。
+3. 在 [系統變數]  窗格中，按一下 [新增] 。
 
-4.  在 [新增系統變數]  對話方塊的 [變數名稱]  方塊中，輸入 **VSTO_EVENTLOGDISABLED** 。
+4. 在 [新增系統變數]  對話方塊的 [變數名稱]  方塊中，輸入 **VSTO_EVENTLOGDISABLED** 。
 
-5.  在 [變數值]  方塊中，輸入 **1**。
+5. 在 [變數值]  方塊中，輸入 **1**。
 
-6.  按一下 [確定] 。
+6. 按一下 [確定] 。
 
 ## <a name="see-also"></a>另請參閱
 - [部署 Office 方案](../vsto/deploying-an-office-solution.md)

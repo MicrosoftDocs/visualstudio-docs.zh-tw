@@ -9,14 +9,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4221489318e4cdd4268d5c5d00cbaa079838dcba
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 3f9d514178e4b899ca727e17ead260719697b562
+ms.sourcegitcommit: 6a19c5ece38a70731496a38f2ef20676ff18f8a4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55940889"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65476641"
 ---
-# <a name="creating-custom-t4-text-template-directive-processors"></a>建立自訂 T4 文字範本指示詞處理器
+# <a name="create-custom-t4-text-template-directive-processors"></a>建立自訂 T4 文字範本指示詞處理器
 
 *文字範本轉換流程*採用*文字範本*做為輸入並產生文字檔做為輸出的檔案。 *文字範本轉換引擎*控制項與文字範本轉換主應用程式和一個或多個文字範本的程序和引擎互動*指示詞處理器*完成程序。 如需詳細資訊，請參閱 <<c0> [ 文字範本轉換流程](../modeling/the-text-template-transformation-process.md)。
 
@@ -40,9 +40,9 @@ ms.locfileid: "55940889"
 
 可能是自訂指示詞處理器的一些範例：
 
--   傳回從資料庫可接受的使用者名稱和密碼做為參數的資料指示詞處理器。
+- 傳回從資料庫可接受的使用者名稱和密碼做為參數的資料指示詞處理器。
 
--   開啟和讀取檔案的指示詞處理器會接受檔案名稱，做為參數。
+- 開啟和讀取檔案的指示詞處理器會接受檔案名稱，做為參數。
 
 ### <a name="principal-parts-of-a-custom-directive-processor"></a>主體組件的自訂指示詞處理器
 
@@ -50,19 +50,19 @@ ms.locfileid: "55940889"
 
 最重要`DirectiveProcessor`必須實作的方法如下所示。
 
--   `bool IsDirectiveSupported(string directiveName)` -傳回`true`如果指示詞處理器可以處理具名指示詞。
+- `bool IsDirectiveSupported(string directiveName)` -傳回`true`如果指示詞處理器可以處理具名指示詞。
 
--   `void ProcessDirective (string directiveName, IDictionary<string, string> arguments)` -範本引擎會呼叫這個方法，每個項目範本中的指示詞。 結果應該儲存您的處理器。
+- `void ProcessDirective (string directiveName, IDictionary<string, string> arguments)` -範本引擎會呼叫這個方法，每個項目範本中的指示詞。 結果應該儲存您的處理器。
 
 所有呼叫 ProcessDirective() 之後範本化引擎會呼叫這些方法：
 
--   `string[] GetReferencesForProcessingRun()` -傳回範本程式碼所需的組件名稱。
+- `string[] GetReferencesForProcessingRun()` -傳回範本程式碼所需的組件名稱。
 
--   `string[] GetImportsForProcessingRun()` -傳回可用的命名空間中的範本程式碼。
+- `string[] GetImportsForProcessingRun()` -傳回可用的命名空間中的範本程式碼。
 
--   `string GetClassCodeForProcessingRun()` -傳回方法、 屬性和範本程式碼可以使用其他宣告的程式的碼。 若要這樣做最簡單的方式是建置包含 C# 或 Visual Basic 程式碼的字串。 若要讓您指示詞處理器能夠呼叫使用任何 CLR 語言的範本，您可以為 CodeDom 樹狀結構建構陳述式，然後傳回 序列化範本所使用的語言中的樹狀結構的結果。
+- `string GetClassCodeForProcessingRun()` -傳回方法、 屬性和範本程式碼可以使用其他宣告的程式的碼。 若要這樣做最簡單的方式是建置包含 C# 或 Visual Basic 程式碼的字串。 若要讓您指示詞處理器能夠呼叫使用任何 CLR 語言的範本，您可以為 CodeDom 樹狀結構建構陳述式，然後傳回 序列化範本所使用的語言中的樹狀結構的結果。
 
--   如需詳細資訊，請參閱[逐步解說：建立自訂指示詞處理器](../modeling/walkthrough-creating-a-custom-directive-processor.md)。
+- 如需詳細資訊，請參閱[逐步解說：建立自訂指示詞處理器](../modeling/walkthrough-creating-a-custom-directive-processor.md)。
 
 ## <a name="see-also"></a>另請參閱
 

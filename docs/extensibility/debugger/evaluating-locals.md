@@ -6,17 +6,17 @@ helpviewer_keywords:
 - debugging [Debugging SDK], evaluating locals
 - expression evaluation, evaluating locals
 ms.assetid: 7d1ed528-4e7a-4d8f-87b4-162440644a75
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 977962352887e9cce09b3b703c3f66dd15cb7397
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: ed43dae7aaf2fe7c130f6822a46ce429661634ed
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56710899"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66315408"
 ---
 # <a name="evaluate-locals"></a>評估 [區域變數]
 > [!IMPORTANT]
@@ -32,7 +32,7 @@ ms.locfileid: "56710899"
 
 3. 格式化值取決於本機的類型。
 
-4. 傳回泛型的物件，包含區域的值。 在 C# 中，這是`object`，並在 c + +，這是`VARIANT`。
+4. 傳回泛型的物件，包含區域的值。 在C#，這是`object`，然後在C++，這是`VARIANT`。
 
 ## <a name="managed-code"></a>Managed 程式碼
  這是函的擷取 managed 程式碼中區域變數的值式的實作。

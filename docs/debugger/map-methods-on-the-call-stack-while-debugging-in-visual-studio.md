@@ -29,14 +29,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: da49cd81ea309df2d8e2bd0b4c41c28a84564fa8
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
-ms.translationtype: MTE95
+ms.openlocfilehash: 3de5a3f9e9c5b8f89a9c8917794247098ba12d06
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526086"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62846705"
 ---
-# <a name="create-a-visual-map-of-the-call-stack-while-debugging-c-visual-basic-c-javascript"></a>建立視覺效果的對應呼叫堆疊偵錯時 (C#，Visual Basic、 c + +、 JavaScript)
+# <a name="create-a-visual-map-of-the-call-stack-while-debugging-c-visual-basic-c-javascript"></a>建立視覺效果的對應呼叫堆疊偵錯時 (C#，Visual Basic 中， C++，JavaScript)
 
 在您偵錯時建立 Code Map 以視覺方式追蹤呼叫堆疊。 您可以在地圖上做筆記來追蹤程式碼的執行狀況，以便專注於尋找 Bug。
 
@@ -45,15 +45,15 @@ ms.locfileid: "57526086"
 如需命令和動作，您可以使用 code map 的詳細資訊，請參閱 <<c0> [ 瀏覽和重新整理 code map](../modeling/browse-and-rearrange-code-maps.md)。
 
 >[!IMPORTANT]
->您可以建立 code map 只有[Visual Studio Enterprise edition](https://visualstudio.microsoft.com/downloads/)。
+>您可以建立 code map 只有[Visual Studio Enterprise edition](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019)。
 
 以下是快速查看 code map:
 
  ![使用 code map 上的呼叫堆疊偵錯](../debugger/media/debuggermap_overview.png "DebuggerMap_Overview")
 
-##  <a name="MapStack"></a> 對應呼叫堆疊
+## <a name="MapStack"></a> 對應呼叫堆疊
 
-1. 在 Visual Studio Enterprise 中C#，Visual Basic、 c + + 或 JavaScript 專案中，開始藉由選取偵錯**偵錯** > **開始偵錯**或按下**F5**.
+1. 在 Visual Studio Enterprise 中C#，Visual Basic 中， C++，或 JavaScript 專案中，開始藉由選取偵錯**偵錯** > **開始偵錯** 或按**F5**.
 
 1. 您的應用程式進入中斷模式或是您逐步執行函式之後，請選取**偵錯** > **Code Map**，或按**Ctrl**+**Shift**+**`**.
 
@@ -89,11 +89,11 @@ ms.locfileid: "57526086"
 
 在 [**版面配置**] 功能表中，您可以：
 
--   變更預設的版面配置。
--   停止自動重新整理對應，取消選取**偵錯時自動配置**。
--   當您取消選取 新增項目，重新排列對應盡可能**累加配置**。
+- 變更預設的版面配置。
+- 停止自動重新整理對應，取消選取**偵錯時自動配置**。
+- 當您取消選取 新增項目，重新排列對應盡可能**累加配置**。
 
-##  <a name="MakeNotes"></a> 製作程式碼的筆記
+## <a name="MakeNotes"></a> 製作程式碼的筆記
 
 您可以加入註解，以追蹤程式碼中的情況。
 
@@ -103,7 +103,7 @@ ms.locfileid: "57526086"
 
  ![新增堆疊呼叫 code map 上的註解](../debugger/media/debuggermap_addcomment.png "DebuggerMap_AddComment")
 
-##  <a name="UpdateMap"></a> 以下一個呼叫堆疊更新地圖
+## <a name="UpdateMap"></a> 以下一個呼叫堆疊更新地圖
 
 當您執行您的應用程式的下一個中斷點或步驟來執行函式，地圖會自動新增新的呼叫堆疊。
 
@@ -111,7 +111,7 @@ ms.locfileid: "57526086"
 
 若要停止從將新增新的呼叫堆疊會自動對應，請選取![顯示呼叫堆疊 code map 上自動](../debugger/media/debuggermap_automaticupdateicon.gif "顯示呼叫堆疊 code map 上自動")code map 工具列上。 地圖會繼續反白顯示現有的呼叫堆疊。 若要手動新增至對應的目前呼叫堆疊，請按**Ctrl**+**Shift**+**`**。
 
-##  <a name="AddRelatedCode"></a> 將相關程式碼新增至地圖
+## <a name="AddRelatedCode"></a> 將相關程式碼新增至地圖
 
 現在，您有一個對應，在C#或 Visual Basic 中，您可以新增欄位、 屬性和其他方法，來追蹤程式碼中的事情等項目。
 
@@ -134,7 +134,7 @@ ms.locfileid: "57526086"
 
  ![堆疊呼叫 code map 使用欄位的方法](../debugger/media/debuggermap_foundallreferences.png "DebuggerMap_FoundAllReferences")
 
-##  <a name="FindBugs"></a> 使用地圖尋找 Bug
+## <a name="FindBugs"></a> 使用地圖尋找 Bug
  視覺化程式碼可協助您更快速找到 Bug。 例如，假設您正在調查繪圖應用程式中的 bug。 當您繪製一條線並嘗試復原時，卻沒有發生任何動作，直到您繪製另一條線為止。
 
  因此您在 `clear`、`undo` 和 `Repaint` 方法中設定中斷點、開始偵錯，並建置一個如下所示的對應圖：

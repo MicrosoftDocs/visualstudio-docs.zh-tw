@@ -1,27 +1,22 @@
 ---
 title: 群組項目 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - VSCT XML schema elements, Groups
 - Groups element (VSCT XML schema)
 ms.assetid: 740ca4ec-79fa-4b98-8f9a-2a137f9f7f98
 caps.latest.revision: 12
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 41070a6ef1c5d045793cffb9c1f1b4c7c68be4c9
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: e9199ea7a74f92fec5d26c1b2a3e178224780f9c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51721343"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68204267"
 ---
 # <a name="groups-element"></a>Groups 項目
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -72,4 +67,3 @@ ms.locfileid: "51721343"
 ## <a name="see-also"></a>另請參閱  
  [Vspackage 如何新增使用者介面項目](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
  [命令、功能表及工具列](../extensibility/internals/commands-menus-and-toolbars.md)
-

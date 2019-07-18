@@ -11,32 +11,32 @@ caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4585fcbf9f026349246e59eef1a018eeed68c848
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 6e135b92cad94f2154341ca79c785d9e40ccb000
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54774799"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68160283"
 ---
 # <a name="setting-general-performance-session-options"></a>設定一般效能工作階段選項
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-您可以在效能工作階段屬性對話方塊的 [一般] 頁面上設定 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 分析工具效能工作階段的收集方法和分析資料命名慣例。 若要從 [效能總管] 中開啟此對話方塊，請以滑鼠右鍵按一下效能工作階段，然後按一下 [屬性]。  
+您可以在效能工作階段屬性對話方塊的 [一般]  頁面上設定 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 分析工具效能工作階段的收集方法和分析資料命名慣例。 若要從 [效能總管]  中開啟此對話方塊，請以滑鼠右鍵按一下效能工作階段，然後按一下 [屬性]  。  
   
  **需求**  
   
--   [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)]、[!INCLUDE[vsPreLong](../includes/vsprelong-md.md)]、[!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
 ## <a name="choosing-data-collection-methods"></a>選擇資料收集方法  
- 您可以選取 [分析集合] 下的其中一個選項來設定基底收集方法。 下表描述這些選項：  
+ 您可以選取 [分析集合]  下的其中一個選項來設定基底收集方法。 下表描述這些選項：  
   
 |||  
 |-|-|  
 |**取樣**。 取樣方法會依固定間隔收集分析資訊。 此方法可用來尋找處理器使用率問題，建議用來調查大多數效能問題。|-   [使用取樣收集效能統計資料](../profiling/collecting-performance-statistics-by-using-sampling.md)|  
-|**檢測**。 檢測方法會插入至模組分析程式碼的複本，以記錄分析回合期間模組中函式的每個進入、結束和函式呼叫。 此方法可用來收集程式碼區段的詳細計時資訊，以及了解輸入和輸出作業對應用程式效能的影響。|-   [使用檢測收集詳細計時資料](../profiling/collecting-detailed-timing-data-by-using-instrumentation.md)|  
-|**並行**。 並行方法會收集每個封鎖執行程式碼之事件的資料，例如，執行緒等待釋放鎖定應用程式資源存取時。 此方法適用於分析多執行緒應用程式。|-   [收集執行緒和處理序並行資料](../profiling/collecting-thread-and-process-concurrency-data.md)|  
+|**檢測**。 檢測方法會插入至模組分析程式碼的複本，以記錄分析回合期間模組中函式的每個進入、結束和函式呼叫。 這個方法適合用來收集關於您的程式碼的某個區段的詳細時間資訊，以及了解輸入和輸出作業對應用程式效能的影響。|-   [使用檢測收集詳細計時資料](../profiling/collecting-detailed-timing-data-by-using-instrumentation.md)|  
+|**並行**。 並行方法會收集每個封鎖執行程式碼之事件的資料，例如，執行緒等待釋放鎖定應用程式資源存取時。 這個方法對於分析多執行緒應用程式很實用。|-   [收集執行緒和處理序並行資料](../profiling/collecting-thread-and-process-concurrency-data.md)|  
   
- 您可以使用取樣或檢測方法來收集 .NET 記憶體資料。 您可以在 [.NET 記憶體分析] 下選取資料類型。  
+ 您可以使用取樣或檢測方法來收集 .NET 記憶體資料。 您可以在 [.NET 記憶體分析]  下選取資料類型。  
   
 |||  
 |-|-|  

@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 09d58e682424e09f0e8d5c37c1c6e0b8839495d4
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62422081"
+---
 # <a name="visual-studio-documentation"></a>Visual Studio 文件
 
 歡迎! 此存放庫包含 Visual Studio 技術文件的來源檔案。 主題發佈在 [docs.microsoft.com](https://docs.microsoft.com/visualstudio)。

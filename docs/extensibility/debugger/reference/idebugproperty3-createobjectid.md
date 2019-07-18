@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProperty3::CreateObjectID
 ms.assetid: f2fa81e7-822f-456e-8729-a96a18eea771
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a523dd7886e46cf1df7c6e70024a052f62ca4748
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: ee1d2a66a5ed655c132526c5d73b6673a680c971
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56694916"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66339864"
 ---
 # <a name="idebugproperty3createobjectid"></a>IDebugProperty3::CreateObjectID
 建立此屬性以確保它是唯一的所有其他屬性的唯一識別碼。
@@ -43,7 +46,7 @@ int CreateObjectID();
  任何唯一的識別碼以建立`CreateObjectID`時終結[DestroyObjectID](../../../extensibility/debugger/reference/idebugproperty3-destroyobjectid.md)呼叫方法時，這也表示用來唯一識別此屬性需要的結束。
 
 > [!NOTE]
->  沒有任何方法來擷取這個唯一識別碼，因此 DE 可以執行它想要的任何唯一的識別碼時`CreateObjectID`呼叫方法。
+> 沒有任何方法來擷取這個唯一識別碼，因此 DE 可以執行它想要的任何唯一的識別碼時`CreateObjectID`呼叫方法。
 
 ## <a name="see-also"></a>另請參閱
 - [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)

@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPort2::GetPortSupplier
 ms.assetid: 7a7b0615-df6b-4726-ab35-39dfa1ebed8f
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5bbbbf620d9a5b78c098ec593dd20c57a18d79ee
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 8e98004c912fd820fba12854178e45330bb3376a
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56719125"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66326968"
 ---
 # <a name="idebugport2getportsupplier"></a>IDebugPort2::GetPortSupplier
 取得此連接埠的連接埠提供者。
@@ -36,10 +39,9 @@ int GetPortSupplier( 
 );
 ```
 
-#### <a name="parameters"></a>參數
- `ppSupplier`
-
- [out]傳回[IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md)物件都代表一個連接埠的連接埠供應商。
+## <a name="parameters"></a>參數
+`ppSupplier`\
+[out]傳回[IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md)物件都代表一個連接埠的連接埠供應商。
 
 ## <a name="return-value"></a>傳回值
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。

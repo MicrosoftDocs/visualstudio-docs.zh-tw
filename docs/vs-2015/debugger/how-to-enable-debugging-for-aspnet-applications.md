@@ -1,14 +1,9 @@
 ---
-title: 如何： 啟用 ASP.NET 應用程式的偵錯 |Microsoft Docs
-ms.custom: ''
+title: 作法：啟用 ASP.NET 應用程式的偵錯 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -22,50 +17,50 @@ ms.assetid: 3beed819-cece-4864-8184-bd410000973a
 caps.latest.revision: 40
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: c199e03af8a21b3134ae0e2afac7bd9b153be2f4
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 07036fd7c1db7dc8b56502ab9c914f1ba808e876
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51749123"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65703668"
 ---
-# <a name="how-to-enable-debugging-for-aspnet-applications"></a>如何：啟用 ASP.NET 應用程式的偵錯
+# <a name="how-to-enable-debugging-for-aspnet-applications"></a>作法：啟用 ASP.NET 應用程式的偵錯
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 若要啟用偵錯，您必須先在 **專案屬性** 頁面以及應用程式的 web.config 檔案中啟用它。  
   
 > [!NOTE]  
-> 根據您目前使用的設定或版本，您所看到的對話方塊與功能表命令可能會與 [說明] 中描述的不同。 若要變更設定，請從 [ **工具** ] 功能表中選取 [ **匯入和匯出設定** ]。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](http://msdn.microsoft.com/library/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
+> 根據您目前使用的設定或版本，您所看到的對話方塊與功能表命令可能會與 [說明] 中描述的不同。 若要變更設定，請從 [ **工具** ] 功能表中選取 [ **匯入和匯出設定** ]。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](https://msdn.microsoft.com/library/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
   
 ### <a name="to-enable-aspnet-debugging-in-the-project-properties-visual-basicc"></a>在專案屬性中啟用 ASP.NET 偵錯 (Visual Basic/C#)  
   
-1.  在 **方案總管**中，以滑鼠右鍵按一下 Web 專案的名稱，並選取 [屬性] 。  
+1. 在 **方案總管**中，以滑鼠右鍵按一下 Web 專案的名稱，並選取 [屬性] 。  
   
-2.  在 [專案屬性] 頁面中，按一下 [Web]  索引標籤。  
+2. 在 [專案屬性] 頁面中，按一下 [Web]  索引標籤。  
   
-3.  在 [偵錯工具] 下，選取 [ASP.NET]  核取方塊。  
+3. 在 [偵錯工具] 下，選取 [ASP.NET]  核取方塊。  
   
 ### <a name="to-enable-debugging-in-the-webconfig-file"></a>在 web.config 檔案中啟用偵錯  
   
-1.  使用任何標準文字編輯器或 XML 剖析器，以開啟 web.config 檔案。  
+1. 使用任何標準文字編輯器或 XML 剖析器，以開啟 web.config 檔案。  
   
     > [!NOTE]  
-    > 不過，您無法使用網頁瀏覽器從遠端存取檔案。 基於安全性原因，[!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 會設定 Microsoft IIS，以協助防止瀏覽器直接存取 Web.config 檔案。 如果您嘗試使用瀏覽器來存取組態檔，則會收到 HTTP 存取錯誤 403 (禁止)。  
+    > 不過，您無法使用網頁瀏覽器從遠端存取檔案。 基於安全性原因， [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 會設定 Microsoft IIS，以協助防止瀏覽器直接存取 Web.config 檔案。 如果您嘗試使用瀏覽器來存取組態檔，則會收到 HTTP 存取錯誤 403 (禁止)。  
   
-2.  Web.config 是一個 XML 檔案，因此會包含透過標記所標記的巢狀區段。 找到 `configuration/system.web/compilation` 項目。 如果 compilation 項目不存在，請建立它。  
+2. Web.config 是一個 XML 檔案，因此會包含透過標記所標記的巢狀區段。 找到 `configuration/system.web/compilation` 項目。 如果 compilation 項目不存在，請建立它。  
   
-3.  如果 `compilation` 項目未包含 `debug` 屬性，請將屬性加入項目中。  
+3. 如果 `compilation` 項目未包含 `debug` 屬性，請將屬性加入項目中。  
   
-4.  請確定`debug`屬性值設為`true`。  
+4. 請確定`debug`屬性值設為`true`。  
   
 web.config 檔案應該如下列範例所示。 請注意，configuration 與 system.web 項目之間可能會有一些區段  
   
--   configuration 與 system.web 項目之間的項目區段  
+- configuration 與 system.web 項目之間的項目區段  
   
--   system.web 與 compilation 項目之間的項目區段  
+- system.web 與 compilation 項目之間的項目區段  
   
--   compilation 項目可以包含其他屬性或項目  
+- compilation 項目可以包含其他屬性或項目  
   
 ## <a name="example"></a>範例  
   
@@ -94,8 +89,3 @@ web.config 檔案應該如下列範例所示。 請注意，configuration 與 sy
   
 ## <a name="see-also"></a>另請參閱  
 [偵錯 ASP.NET 和 AJAX 應用程式](../debugger/debugging-aspnet-and-ajax-applications.md)  
-  
-
-
-
-

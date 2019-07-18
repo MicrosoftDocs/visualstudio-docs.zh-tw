@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumCodePaths2::Reset
 ms.assetid: 490c0e19-ff4b-4673-bd06-cdee996ac226
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a20697c83546fc08c3c08154961a403f18a39c39
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 18504e8cfb40614c4725456ab5c73c74231a3b7b
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56700376"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66319627"
 ---
 # <a name="ienumcodepaths2reset"></a>IEnumCodePaths2::Reset
 將列舉重設第一個項目。

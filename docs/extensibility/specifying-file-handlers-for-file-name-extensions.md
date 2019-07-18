@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - file extensions, specifying file handlers
 ms.assetid: e3de4730-a95c-465a-b3b2-92ca85364ad7
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: aba754735bb8a002b1876770b47594ccc98e43fb
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 7a80c17fc6de0efe691b1c36e4421cb2b62cbd00
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56687532"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66331780"
 ---
 # <a name="specifying-file-handlers-for-file-name-extensions"></a>指定適用於副檔名的檔案處理常式
 有數種方式來判斷應用程式會處理具有特定副檔名的檔案。 OpenWithList 和 OpenWithProgids 動詞命令是兩種方式可以指定副檔名之登錄項目下的檔案處理常式。
@@ -34,7 +34,7 @@ HKEY_CLASSES_ROOT\
 ```
 
 > [!NOTE]
->  指定的應用程式的索引鍵是 HKEY_CLASSES_ROOT\Applications 下方的清單。
+> 指定的應用程式的索引鍵是 HKEY_CLASSES_ROOT\Applications 下方的清單。
 
  藉由新增 OpenWithList 金鑰，您會宣告您的應用程式支援檔案延伸模組，即使另一個應用程式會取得延伸模組的擁有權。 這可能是您的應用程式或其他應用程式的未來版本。
 
@@ -47,10 +47,10 @@ HKEY_CLASSES_ROOT\
 |--------------------|----------------------|
 |.extension|產品名稱。 extension.versionMajor.versionMinor|
 
- 您可以註冊不同的應用程式能夠開啟特定副檔名設定版本的 Progid 做為值加入 HKEY_CLASSES_ROOT\\*\<擴充功能 >* \OpenWithProgids 索引鍵。 此登錄機碼包含替代的 Progid 相關聯的檔案副檔名的清單。 列出的 Progid 相關聯的應用程式會出現在**開啟**_Product Name_子功能表。 如果相同的應用程式中同時指定`OpenWithList`和`OpenWithProgids`索引鍵，作業系統會將合併重複的項目。
+ 您可以註冊不同的應用程式能夠開啟特定副檔名設定版本的 Progid 做為值加入 HKEY_CLASSES_ROOT\\ *\<擴充功能 >* \OpenWithProgids 索引鍵。 此登錄機碼包含替代的 Progid 相關聯的檔案副檔名的清單。 列出的 Progid 相關聯的應用程式會出現在**開啟**_Product Name_子功能表。 如果相同的應用程式中同時指定`OpenWithList`和`OpenWithProgids`索引鍵，作業系統會將合併重複的項目。
 
 > [!NOTE]
->  `OpenWithProgids`金鑰僅適用於 Windows XP 中。 因為其他作業系統會忽略此金鑰，請勿使用它作為唯一的註冊檔案處理常式。 若要提供更好的使用者體驗，在 Windows XP 中使用此金鑰。
+> `OpenWithProgids`金鑰僅適用於 Windows XP 中。 因為其他作業系統會忽略此金鑰，請勿使用它作為唯一的註冊檔案處理常式。 若要提供更好的使用者體驗，在 Windows XP 中使用此金鑰。
 
  加入所需的 Progid 做為 REG_NONE 型別的值。 下列程式碼提供的 Progid 註冊副檔名的檔案範例 (。*ext*)。
 

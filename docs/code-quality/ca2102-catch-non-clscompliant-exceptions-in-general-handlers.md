@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2f361720f45a24e561ab2a886537bda02c73c006
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55923704"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62545768"
 ---
 # <a name="ca2102-catch-non-clscompliant-exceptions-in-general-handlers"></a>CA2102:必須使用一般處理常式攔截非 CLSCompliant 例外狀況
 
@@ -39,7 +39,7 @@ Catch 區塊處理<xref:System.Exception>取得所有與 Common Language Specifi
 
 - C#: `catch {}`
 
-- C + +:`catch(...) {}`或 `catch(Object^) {}`
+- C++:`catch(...) {}`或 `catch(Object^) {}`
 
 在 catch 區塊中移除先前允許的權限時，未處理的非符合 CLS 規範的例外狀況就會成為安全性問題。 因為系統不會攔截非 CLS 標準的例外狀況，擲回不符合 CLS 規範的例外狀況的惡意方法可以執行以提高權限。
 

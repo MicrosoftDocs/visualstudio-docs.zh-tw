@@ -1,26 +1,21 @@
 ---
 title: 簡化嵌入 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], custom - simple view embedding
 ms.assetid: f1292478-a57d-48ec-8c9e-88a23f04ffe5
 caps.latest.revision: 17
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: e59e09f475697ac0539384514837554e3ce85afc
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: b8e1ac2fa17409ac3228f87eb71c99ce9e725521
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51736222"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63447197"
 ---
 # <a name="simplified-embedding"></a>簡化嵌入
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +26,7 @@ ms.locfileid: "51736222"
 使用簡化的嵌入編輯器  
   
 > [!NOTE]
->  在此圖中，只有物件的`CYourEditorFactory`物件才能建立標準檔案為基礎的編輯器。 如果您要建立自訂編輯器，您不需要實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2>，因為您的編輯器可能會有自己的私用持續性機制。 非自訂編輯器，不過，您必須執行這項作業。  
+> 在此圖中，只有物件的`CYourEditorFactory`物件才能建立標準檔案為基礎的編輯器。 如果您要建立自訂編輯器，您不需要實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2>，因為您的編輯器可能會有自己的私用持續性機制。 非自訂編輯器，不過，您必須執行這項作業。  
   
  中包含所有的介面實作，以建立編輯器來簡化內嵌`CYourEditorDocument`物件。 不過，若要支援多個檢視的文件資料，分割到不同的資料和檢視物件的介面下表所示。  
   
@@ -45,4 +40,3 @@ ms.locfileid: "51736222"
 |<xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat>|資料|啟用檔案類型的 [另存新檔] 功能。|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2>|資料|啟用文件的持續性。|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsDocDataFileChangeControl>|資料|可讓隱藏項目檔案變更的事件，例如觸發重新載入。|
-

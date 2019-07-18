@@ -6,17 +6,17 @@ helpviewer_keywords:
 - debugging [Debugging SDK], custom viewer
 - debugging [Debugging SDK], type visualizer
 ms.assetid: fd3691e6-9c78-4767-846f-43f85ada4375
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 219632bce50b6942d46e4061a3c7eaf8f70adfd5
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 01f058f959c9af78e196112cc49b63d293e8e31d
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56685959"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66341257"
 ---
 # <a name="type-visualizer-and-custom-viewer"></a>類型視覺化檢視和自訂檢視器
 類型視覺化檢視是顯示某份資料以特定格式的元件。 格式為全部都是最多由誰實作視覺化檢視，是使用者或第三方供應商的視覺化檢視。

@@ -6,17 +6,17 @@ helpviewer_keywords:
 - multi
 - tool windows
 ms.assetid: 4a7872f1-acc9-4f43-8932-5a526b36adea
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 687d46136ad4ed0f043210839e95caf6071f87f2
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: a9c31f1c439db69b3795d789758b0604a539ef81
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56317480"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66341633"
 ---
 # <a name="create-a-multi-instance-tool-window"></a>建立多個執行個體工具視窗
 您可以程式設計的工具視窗，讓多個執行個體可以同時開啟。 根據預設，工具視窗可以有開啟的只有一個執行個體。

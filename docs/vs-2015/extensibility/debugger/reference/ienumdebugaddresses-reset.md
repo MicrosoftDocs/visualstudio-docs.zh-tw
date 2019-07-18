@@ -1,14 +1,9 @@
 ---
-title: IEnumDebugAddresses::Reset |Microsoft Docs
-ms.custom: ''
+title: IEnumDebugAddresses::Reset | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IEnumDebugAddresses::Reset
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 3a9d7f20-5bc6-4e13-8e91-5af4092e092f
 caps.latest.revision: 6
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 06d30f292be8a82355ae6672a1fc3bb2a38f0614
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 866c96f81edd5406f36790b932b057f6279f7e67
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51784958"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68191953"
 ---
 # <a name="ienumdebugaddressesreset"></a>IEnumDebugAddresses::Reset
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -50,5 +45,4 @@ int Reset();
   
 ## <a name="see-also"></a>另請參閱  
  [IEnumDebugAddresses](../../../extensibility/debugger/reference/ienumdebugaddresses.md)   
- [下一步](../../../extensibility/debugger/reference/ienumdebugaddresses-next.md)
-
+ [下一個](../../../extensibility/debugger/reference/ienumdebugaddresses-next.md)

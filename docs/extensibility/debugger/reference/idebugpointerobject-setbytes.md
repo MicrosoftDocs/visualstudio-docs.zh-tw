@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPointerObject::SetBytes method
 ms.assetid: 8c578b38-38d7-46f3-bb2e-8a730fccd334
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e54a7f38eed85ffe2757b373de1af59e1aaa126b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 1e7b3fd72285f6a6c9c4abeca4e6b262d981be8f
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56694722"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66331557"
 ---
 # <a name="idebugpointerobjectsetbytes"></a>IDebugPointerObject::SetBytes
 設定從一系列的連續位元組所指向的值。
@@ -42,22 +45,18 @@ int SetBytes(
 );
 ```
 
-#### <a name="parameters"></a>參數
- `dwStart`
+## <a name="parameters"></a>參數
+`dwStart`\
+[in]以位元組為單位，從所指向之物件的開始位移。
 
- [in]以位元組為單位，從所指向之物件的開始位移。
+`dwCount`\
+[in]若要設定的位元組數目。
 
- `dwCount`
+`pBytes`\
+[in]代表新值的位元組陣列。 這個值會儲存成物件，指定位移處開始。
 
- [in]若要設定的位元組數目。
-
- `pBytes`
-
- [in]代表新值的位元組陣列。 這個值會儲存成物件，指定位移處開始。
-
- `pdwBytes`
-
- [out]傳回的位元組數目可實際設定。
+`pdwBytes`\
+[out]傳回的位元組數目可實際設定。
 
 ## <a name="return-value"></a>傳回值
  如果成功，會傳回 S_OK;否則，傳回錯誤碼。

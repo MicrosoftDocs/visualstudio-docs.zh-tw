@@ -9,17 +9,17 @@ helpviewer_keywords:
 - Assembly element [Visual Studio templates]
 - <Assembly> element [Visual Studio templates]
 ms.assetid: 9242f76a-1273-4b8a-8f26-6606f91829ef
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9887214edae870ca79796a7a667b15f8536e8bb4
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 13c52b7f913e35ace3e0fd41227e27b6c00e90e2
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56710977"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66352201"
 ---
 # <a name="assembly-element-visual-studio-templates"></a>Assembly 項目 （Visual Studio 範本）
 指定的範本會使用該組件的參考加入至專案的組件的相關資訊。
@@ -52,7 +52,7 @@ ms.locfileid: "56710977"
 
  此文字會指定要加入至專案，項目樣板具現化時的組件。 這個組件名稱必須指定其中一種以下列方式：
 
--   為完整的組件名稱。 例如: 
+- 為完整的組件名稱。 例如: 
 
     ```
     <Assembly>
@@ -60,7 +60,7 @@ ms.locfileid: "56710977"
     </Assembly>
     ```
 
--   以簡單文字的參考。 例如: 
+- 以簡單文字的參考。 例如: 
 
     ```
     <Assembly> System </Assembly>

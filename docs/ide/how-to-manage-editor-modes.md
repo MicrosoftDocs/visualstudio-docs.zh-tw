@@ -24,14 +24,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b441543079ab3369beddcd95999809e075b3bb2b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 39873fdd1bc41b32a69909a1061ec3fc7fb63b67
+ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55907138"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65531899"
 ---
-# <a name="how-to-manage-editor-modes"></a>HOW TO：管理編輯器模式
+# <a name="how-to-manage-editor-modes"></a>作法：管理編輯器模式
 
 您可以使用各種不同的顯示模式來顯示 Visual Studio 程式碼編輯器。
 
@@ -42,27 +42,26 @@ ms.locfileid: "55907138"
 
 您可以選擇隱藏所有工具視窗，並且只檢視文件視窗，方法是啟用 [全螢幕] 模式。
 
--   按 **Alt**+**Shift**+**Enter** 來進入或結束 [全螢幕] 模式。
+- 按 **Alt**+**Shift**+**Enter** 來進入或結束 [全螢幕] 模式。
 
      -或-
 
--   在 [命令] 視窗中發出命令 `View.Fullscreen`。
+- 在 [命令] 視窗中發出命令 `View.Fullscreen`。
 
 ## <a name="enable-virtual-space-mode"></a>啟用虛擬空間模式
 
 在 [虛擬空間] 模式中，會在每一行程式碼的結尾插入空格。 選取這個選項，可在程式碼旁邊一致的位置上放置註解。
 
-1.  選取 [工具] 功能表上的 [選項]。
+1. 選取 [工具] 功能表上的 [選項]。
 
-2.  展開 [文字編輯器] 資料夾，然後選擇 [所有語言] 全域設定此選項，或選擇特定語言的資料夾。 例如，若只要在 Visual Basic 中開啟行號，請選擇 [基本] > [文字編輯器] 節點。
+2. 展開 [文字編輯器] 資料夾，然後選擇 [所有語言] 全域設定此選項，或選擇特定語言的資料夾。 例如，若只要在 Visual Basic 中開啟行號，請選擇 [基本] > [文字編輯器] 節點。
 
-3.  選取 [一般] 選項，然後在 [設定] 下選取 [啟用虛擬空間]。
+3. 選取 [一般] 選項，然後在 [設定] 下選取 [啟用虛擬空間]。
 
     > [!NOTE]
     > 在 [資料行選取] 模式中會啟用 [虛擬空間]。 未啟用 [虛擬空間] 模式時，插入點會從一行結尾直接移到下一行的第一個字元。
 
 ## <a name="see-also"></a>另請參閱
 
-- [自訂編輯器](../ide/customizing-the-editor.md)
 - [在 Visual Studio 中自訂視窗版面配置](../ide/customizing-window-layouts-in-visual-studio.md)
 - [選項對話方塊、環境、字型和色彩](../ide/reference/fonts-and-colors-environment-options-dialog-box.md)

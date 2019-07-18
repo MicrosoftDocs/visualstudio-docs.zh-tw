@@ -1,30 +1,24 @@
 ---
 title: XML 結構描述對話方塊 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: 0271fa26-2205-49bd-96e0-ae1441571808
 caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: f97bfca4623a826130e68a5399cc2ab86f784cbf
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 82247c2510d64f712cc4b703154ea16a4bb7e7e1
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49899587"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68150666"
 ---
 # <a name="xml-schemas-dialog-box"></a>XML 結構描述對話方塊
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 **XML 結構描述**對話方塊用來選取哪一個 XML 結構描述定義語言 (XSD) 結構描述與 XML 文件產生關聯。 您可以從結構描述快取中選取結構描述，或指定快取中沒有的結構描述。 選取的結構描述會被視為結構描述集的一部分。 結構描述集用於 IntelliSense 以及 XML 文件驗證。  
   
  您可以存取**XML 結構描述**對話方塊中，按一下**結構描述**按鈕，在 [文件屬性] 視窗中，或選取**結構描述**從**XML**功能表。  
@@ -53,8 +47,5 @@ ms.locfileid: "49899587"
   
 ## <a name="see-also"></a>另請參閱  
  [XML 編輯器元件](../xml-tools/xml-editor-components.md)   
- [如何： 選取要使用的 XML 結構描述](../xml-tools/how-to-select-the-xml-schemas-to-use.md)   
+ [如何：選取要使用的 XML 結構描述](../xml-tools/how-to-select-the-xml-schemas-to-use.md)   
  [結構描述快取](../xml-tools/schema-cache.md)
-
-
-

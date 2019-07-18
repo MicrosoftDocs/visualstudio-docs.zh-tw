@@ -3,37 +3,38 @@ title: 映像和適用於 Visual Studio 的圖示 |Microsoft Docs
 ms.date: 04/26/2017
 ms.topic: conceptual
 ms.assetid: f410325e-9cf2-4f39-b6d7-b672121c2691
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 272d9bd9b1e54c6ff97b522375b773002e93dd49
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 0ba4a5c52bf972236914c06ec9672653fbde9cea
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56683138"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67891049"
 ---
 # <a name="images-and-icons-for-visual-studio"></a>映像和適用於 Visual Studio 的圖示
-##  <a name="BKMK_ImageUseInVisualStudio"></a> 在 Visual Studio 中的映像使用
+## <a name="BKMK_ImageUseInVisualStudio"></a> 在 Visual Studio 中的映像使用
  在之前建立圖檔，請考慮讓使用 1,000 個以上中的映像[Visual Studio 影像程式庫](http://www.microsoft.com/en-my/download/details.aspx?id=35825)。
 
 ### <a name="types-of-images"></a>類型的映像
 
--   **圖示**。 會出現在命令、 階層、 範本和等等的小型影像。 在 Visual Studio 中使用的預設圖示大小是 16 x 16 PNG。 自動產生的映像服務的圖示會產生 XAML 格式的 HDPI 支援。
+- **圖示**。 會出現在命令、 階層、 範本和等等的小型影像。 在 Visual Studio 中使用的預設圖示大小是 16 x 16 PNG。 自動產生的映像服務的圖示會產生 XAML 格式的 HDPI 支援。
 
-     **注意：** 雖然映像會用於功能表系統，您不應建立為每個命令的圖示。 請參閱[功能表和命令適用於 Visual Studio](../../extensibility/ux-guidelines/menus-and-commands-for-visual-studio.md) ，了解您的命令是否應該取得圖示。
+    > [!NOTE]
+    > 雖然映像會用於功能表系統，您不應建立為每個命令的圖示。 請參閱[功能表和命令適用於 Visual Studio](../../extensibility/ux-guidelines/menus-and-commands-for-visual-studio.md) ，了解您的命令是否應該取得圖示。
 
--   **縮圖。** 在對話方塊中，例如 [新增專案] 對話方塊的 [預覽] 區域中使用的映像。
+- **縮圖。** 在對話方塊中，例如 [新增專案] 對話方塊的 [預覽] 區域中使用的映像。
 
--   **對話方塊的映像。** 會出現在對話方塊或精靈，為具描述性的圖形或訊息指標的影像。 使用常且只在必要說明難理解的概念，或取得使用者的注意力 （警示，警告） 時。
+- **對話方塊的映像。** 會出現在對話方塊或精靈，為具描述性的圖形或訊息指標的影像。 使用常且只在必要說明難理解的概念，或取得使用者的注意力 （警示，警告） 時。
 
--   **動畫的映像。** 用於進度指標、 狀態列和作業的對話方塊。
+- **動畫的映像。** 用於進度指標、 狀態列和作業的對話方塊。
 
--   **資料指標。** 用來表示作業是否允許使用的滑鼠，其中物件可能會中斷，依此類推。
+- **資料指標。** 用來表示作業是否允許使用的滑鼠，其中物件可能會中斷，依此類推。
 
-##  <a name="BKMK_IconDesign"></a> 迶蒩飶耵
+## <a name="BKMK_IconDesign"></a> 迶蒩飶耵
 
 ### <a name="overview"></a>總覽
  Visual Studio 使用現代化樣式圖示，會有全新的幾何和 50/50 兼顧正/負 （淡/濃），並使用直接且容易了解的隱喻。 重要迶蒩飶耵點圍繞在清楚、 簡化方式，以及內容。
@@ -62,7 +63,7 @@ ms.locfileid: "56683138"
 |||
 |-|-|
 |**符號影像的正確用法**|**不正確地使用符號的影像**|
-|![正確的智慧標籤圖示](../../extensibility/ux-guidelines/media/0404-01_smarttagcorrect.png "0404年 01_SmartTagCorrect")|![Incorrect Smart Tag icon](../../extensibility/ux-guidelines/media/0404-02_smarttagincorrect.png "0404-02_SmartTagIncorrect")|
+|![正確的智慧標籤圖示](../../extensibility/ux-guidelines/media/0404-01_smarttagcorrect.png "0404年 01_SmartTagCorrect")|![不正確的智慧標籤圖示](../../extensibility/ux-guidelines/media/0404-02_smarttagincorrect.png "0404年 02_SmartTagIncorrect")|
 
  沒有適合圖示標準且易於辨識的 UI 項目執行工作所在的執行個體。 加入視窗是其中一個範例：
 
@@ -210,19 +211,19 @@ ms.locfileid: "56683138"
 
 #### <a name="file-types"></a>檔案類型
 
--   **32 位元 PNG:** 圖示的慣用的格式。 可以儲存 （像素） 的單一點陣影像不失真的資料壓縮的檔案格式。 32 位元 PNG 檔案支援 alpha 色板透明度、 gamma 修正和交錯式。
+- **32 位元 PNG:** 圖示的慣用的格式。 可以儲存 （像素） 的單一點陣影像不失真的資料壓縮的檔案格式。 32 位元 PNG 檔案支援 alpha 色板透明度、 gamma 修正和交錯式。
 
--   **32 位元 BMP:** 非 WPF 控制項。 也稱為 XP 或高彩，32 位元 BMP 是 RGB/A 映像格式，使用 alpha 色板透明效果的全彩映像。 Alpha 色板為圖層的透明度，然後儲存為其他 （第四個） 點陣圖內 Adobe Photoshop 中指定色頻。 黑色背景會加入插圖來提供快速的視覺提示的色彩深度相關的所有 32 位元 BMP 檔案的實際執行期間。 此黑色背景代表要遮罩時，在 UI 中的區域。
+- **32 位元 BMP:** 非 WPF 控制項。 也稱為 XP 或高彩，32 位元 BMP 是 RGB/A 映像格式，使用 alpha 色板透明效果的全彩映像。 Alpha 色板為圖層的透明度，然後儲存為其他 （第四個） 點陣圖內 Adobe Photoshop 中指定色頻。 黑色背景會加入插圖來提供快速的視覺提示的色彩深度相關的所有 32 位元 BMP 檔案的實際執行期間。 此黑色背景代表要遮罩時，在 UI 中的區域。
 
--   **32 位元 ICO:** 專案圖示和加入項目。 所有的 ICO 檔案都是 32 位元，則為 true 的色彩 alpha 色板的透明度 (RGB/A)。 因為 ICO 檔案可以儲存多個大小和色彩深度，Vista 圖示通常是 ICO 格式包含 16 x 16、 32 x 32、 48 x 48，以及 256 x 256 影像大小。 若要在 Windows 檔案總管中正確顯示，ICO 檔案必須是儲存-向下鍵即可每個映像大小的 24 位元和 8 位元的色彩深度。
+- **32 位元 ICO:** 專案圖示和加入項目。 所有的 ICO 檔案都是 32 位元，則為 true 的色彩 alpha 色板的透明度 (RGB/A)。 因為 ICO 檔案可以儲存多個大小和色彩深度，Vista 圖示通常是 ICO 格式包含 16 x 16、 32 x 32、 48 x 48，以及 256 x 256 影像大小。 若要在 Windows 檔案總管中正確顯示，ICO 檔案必須是儲存-向下鍵即可每個映像大小的 24 位元和 8 位元的色彩深度。
 
--   **XAML:** 設計介面和 Windows 的裝飾項。 XAML 圖示是支援縮放、 旋轉、 歸檔和透明度的向量為基礎的映像檔案。 他們目前不在 Visual Studio 中常見，但因為其彈性越來越受歡迎。
+- **XAML:** 設計介面和 Windows 的裝飾項。 XAML 圖示是支援縮放、 旋轉、 歸檔和透明度的向量為基礎的映像檔案。 他們目前不在 Visual Studio 中常見，但因為其彈性越來越受歡迎。
 
--   **SVG**
+- **SVG**
 
--   **24 位元 BMP:** Visual Studio 命令列。 全彩 RGB 影像格式，24 位元 BMP 是透明化的圖層會使用建立洋紅 （R = 255，G = 0，B = 255） 做為 knock 外透明度圖層的色彩索引鍵圖示慣例。 在 24 位元 BMP、 洋紅的所有表面會都顯示使用的背景色彩。
+- **24 位元 BMP:** Visual Studio 命令列。 全彩 RGB 影像格式，24 位元 BMP 是透明化的圖層會使用建立洋紅 （R = 255，G = 0，B = 255） 做為 knock 外透明度圖層的色彩索引鍵圖示慣例。 在 24 位元 BMP、 洋紅的所有表面會都顯示使用的背景色彩。
 
--   **24 位元 GIF:** Visual Studio 命令列。 True-色彩 RGB 影像格式，支援透明度。 GIF 檔通常使用於精靈插圖和動畫 GIF。
+- **24 位元 GIF:** Visual Studio 命令列。 True-色彩 RGB 影像格式，支援透明度。 GIF 檔通常使用於精靈插圖和動畫 GIF。
 
 ### <a name="icon-construction"></a>圖示建構
  在 Visual Studio 中的最小圖示大小是 16 x 16。 最大在一般用法是 32 x 32。 請注意，不是用來填滿整個 16 x 16、 24 x 24 或 32 x 32 畫面，設計圖示時。 清晰且統一的圖示建構務必使用者辨識。 建立圖示時，請遵守下列各點。
@@ -244,18 +245,18 @@ ms.locfileid: "56683138"
 
  如需有關如何在 Visual Studio 圖示中使用色彩的詳細資訊，請參閱[映像中使用色彩](../../extensibility/ux-guidelines/images-and-icons-for-visual-studio.md#BKMK_UsingColorInImages)。
 
-##  <a name="BKMK_UsingColorInImages"></a> 在 映像中使用色彩
+## <a name="BKMK_UsingColorInImages"></a> 在 映像中使用色彩
 
 ### <a name="overview"></a>總覽
  在 Visual Studio 中的圖示為主要單色。 色彩保留來傳遞特定的資訊並不會進行裝飾。 色彩會在使用中：
 
--   表示動作
+- 表示動作
 
--   警示的狀態通知使用者
+- 警示的狀態通知使用者
 
--   若要指定語言的關係
+- 若要指定語言的關係
 
--   IntelliSense 中的項目
+- IntelliSense 中的項目
 
 ### <a name="accessibility"></a>協助工具選項
  Visual Studio 相容性的指導方針會需要的所有圖示都簽入產品傳遞色彩和對比的協助工具需求。 色彩調色盤中的視覺化語言已經過測試，並符合這些需求。
@@ -285,8 +286,8 @@ ms.locfileid: "56683138"
 |-----------|----------|--------------------------|------------|
 |正|VS 動作綠色|388A34 / 56,138,52|![樣本 388A34](../../extensibility/ux-guidelines/media/0405_388a34.png "0405_388A34")|
 |負|VS 動作紅色|A1260D / 161,38,13|![樣本 A1260D](../../extensibility/ux-guidelines/media/0405_a1260d.png "0405_A1260D")|
-|中性|VS 動作藍色|00539C / 0,83,156|![樣本 00539c](../../extensibility/ux-guidelines/media/0405_00539c.png "0405_00539C")|
-|建立/新增|VS 動作橙色|C27D1A / 194,156,26|![Swatch C27D1A](../../extensibility/ux-guidelines/media/0405_c27d1a.png "0405_C27D1A")|
+|中性語言|VS 動作藍色|00539C / 0,83,156|![樣本 00539c](../../extensibility/ux-guidelines/media/0405_00539c.png "0405_00539C")|
+|建立/新增|VS 動作橙色|C27D1A / 194,156,26|![樣本 C27D1A](../../extensibility/ux-guidelines/media/0405_c27d1a.png "0405_C27D1A")|
 
 ##### <a name="examples"></a>範例
  綠色用於正向動作修飾詞，例如 「 Add 」，「 執行，」 「 播放 」 和 [驗證]。
@@ -318,7 +319,7 @@ ms.locfileid: "56683138"
 
 ||||||
 |-|-|-|-|-|
-|![執行圖示](../../extensibility/ux-guidelines/media/0405-03_actionmodifierrun.png "0405年 03_ActionModifierRun")<br />執行|![停止圖示](../../extensibility/ux-guidelines/media/0405-19_stop.png "0405年 19_Stop")<br />停止|![刪除圖示](../../extensibility/ux-guidelines/media/0405-20_delete.png "0405年 20_Delete")<br />刪除|![儲存圖示](../../extensibility/ux-guidelines/media/0405-21_save.png "0405年 21_Save")<br />儲存|![向後巡覽圖示](../../extensibility/ux-guidelines/media/0405-22_navigateback.png "0405年 22_NavigateBack")<br />往回導覽|
+|![執行圖示](../../extensibility/ux-guidelines/media/0405-03_actionmodifierrun.png "0405年 03_ActionModifierRun")<br />執行|![停止圖示](../../extensibility/ux-guidelines/media/0405-19_stop.png "0405年 19_Stop")<br />停止|![刪除圖示](../../extensibility/ux-guidelines/media/0405-20_delete.png "0405年 20_Delete")<br />刪除|![儲存圖示](../../extensibility/ux-guidelines/media/0405-21_save.png "0405年 21_Save")<br />儲存|![向後巡覽圖示](../../extensibility/ux-guidelines/media/0405-22_navigateback.png "0405年 22_NavigateBack")<br />向後巡覽|
 
 ### <a name="code-hierarchy-palette"></a>程式碼階層架構調色盤
 
@@ -326,7 +327,7 @@ ms.locfileid: "56683138"
 
 |使用量|名稱|值 （所有佈景主題）|樣本|範例|
 |-----------|----------|--------------------------|------------|-------------|
-|資料夾|資料夾|DCB67A / 220,182,122|![Swatch DCB67A](../../extensibility/ux-guidelines/media/0405_dcb67a.png "0405_DCB67A")|![資料夾色彩圖示](../../extensibility/ux-guidelines/media/0405-23_foldercolor.png "0405年 23_FolderColor")|
+|資料夾|資料夾|DCB67A / 220,182,122|![樣本 DCB67A](../../extensibility/ux-guidelines/media/0405_dcb67a.png "0405_DCB67A")|![資料夾色彩圖示](../../extensibility/ux-guidelines/media/0405-23_foldercolor.png "0405年 23_FolderColor")|
 
 #### <a name="visual-studio-languages"></a>Visual Studio 語言
  每個一般的 語言 或 Visual Studio 中提供的平台都有相關聯的色彩。 在基底的圖示，或上會出現在複合圖示的右上角的語言修飾詞，則會使用這些色彩。
@@ -355,8 +356,8 @@ ms.locfileid: "56683138"
 
 |使用量|名稱|值 （所有佈景主題）|樣本|
 |-----------|----------|--------------------------|------------|
-|事件類別|VS 動作橙色|C27D1A / 194,125,26|![Swatch C27D1A](../../extensibility/ux-guidelines/media/0405_c27d1a.png "0405_C27D1A")|
-|擴充方法，方法中，模組中委派|VS 動作紫|652D90 / 101,45,144|![樣本 652d90](../../extensibility/ux-guidelines/media/0405_652d90.png "0405_652D90")|
+|事件類別|VS 動作橙色|C27D1A / 194,125,26|![樣本 C27D1A](../../extensibility/ux-guidelines/media/0405_c27d1a.png "0405_C27D1A")|
+|擴充方法，方法中，模組中委派|VS 動作紫|652 D 90 / 101,45,144|![樣本 652d90](../../extensibility/ux-guidelines/media/0405_652d90.png "0405_652D90")|
 |欄位、 列舉項目、 巨集、 結構、 等位的實值型別，運算子，介面|VS 動作藍色|00539C / 0,83,156|![樣本 00539c](../../extensibility/ux-guidelines/media/0405_00539c.png "0405_00539C")|
 |Object|VS 動作綠色|388A34 / 56,138,52|![樣本 388A34](../../extensibility/ux-guidelines/media/0405_388a34.png "0405_388A34")|
 |常數，例外狀況、 列舉項目、 地圖、 地圖項目、 命名空間中，範本中，類型定義|背景 (VS BG)|424242 / 66,66,66|![樣本 424242](../../extensibility/ux-guidelines/media/0405_424242.png "0405_424242")|
@@ -376,7 +377,7 @@ ms.locfileid: "56683138"
 |狀態： 中性|通知藍色 （與藍色）|1BA1E2 / 27,161,226|![樣本 1BA1E2](../../extensibility/ux-guidelines/media/0405_1ba1e2.png "0405_1BA1E2")|
 |狀態： 正數|通知綠色 （VS 綠色）|339933 / 51,153,51|![樣本 339933](../../extensibility/ux-guidelines/media/0405_339933.png "0405_339933")|
 |狀態： 負數|通知 Red （VS 紅色）|E51400 / 229,20,0|![樣本 E51400](../../extensibility/ux-guidelines/media/0405_e51400.png "0405_E51400")|
-|狀態： 警告|通知黃色 （VS 橘色）|FFCC00 / 255,204,0|![Swatch FFCC00](../../extensibility/ux-guidelines/media/0405_ffcc00.png "0405_FFCC00")|
+|狀態： 警告|通知黃色 （VS 橘色）|FFCC00 / 255,204,0|![樣本 FFCC00](../../extensibility/ux-guidelines/media/0405_ffcc00.png "0405_FFCC00")|
 |前景填滿|通知黑色 （黑色）|000000 / 0,0,0|![樣本&#35;000000](../../extensibility/ux-guidelines/media/0405_000000.png "0405_000000")|
 |前景填滿|通知技術 （白皮書）|FFFFFF / 255,255,255|![樣本 FFFFFF](../../extensibility/ux-guidelines/media/0405_ffffff.png "0405_FFFFFF")|
 
@@ -398,7 +399,7 @@ ms.locfileid: "56683138"
 |F12|背景|白皮書|FFFFFF / 255，255，255|![樣本 FFFFFF](../../extensibility/ux-guidelines/media/0405_ffffff.png "0405_FFFFFF")|
 |F12|一般|F12 Grey_Primary|555555 / 85, 85, 85|![樣本 555555](../../extensibility/ux-guidelines/media/0405_555555.png "0405_555555")|
 |F12|暫留|F12 Blue_Hover|2279BF / 34,121,191|![樣本 2279BF](../../extensibility/ux-guidelines/media/0405_2279bf.png "0405_2279BF")|
-|F12|已停用|F12 LtGrey_Disabled|ABABAC / 171,171,172|![Swatch ABABAC](../../extensibility/ux-guidelines/media/0405_ababac.png "0405_ABABAC")|
+|F12|已停用|F12 LtGrey_Disabled|ABABAC / 171,171,172|![樣本 ABABAC](../../extensibility/ux-guidelines/media/0405_ababac.png "0405_ABABAC")|
 |F12|暫留時背景|將滑鼠移至 bg|D9EBF7 / 217,235,247|![Swatch D9EBF7](../../extensibility/ux-guidelines/media/0405_d9ebf7.png "0405_D9EBF7")|
 |F12|已按下的背景|已按下的 bg|B2D7F0 / 178,215,240|![Swatch B2D7F0](../../extensibility/ux-guidelines/media/0405_b2d7f0.png "0405_B2D7F0")|
 |F12|外框|VS 出|F6F6F6 / 246,246,246|![樣本 F6F6F6](../../extensibility/ux-guidelines/media/0405_f6f6f6.png "0405_F6F6F6")|
@@ -407,7 +408,7 @@ ms.locfileid: "56683138"
 |F12|錯誤 / 負數|Error_Negative|E81123 / 232,17,35|![樣本 E81123](../../extensibility/ux-guidelines/media/0405_e81123.png "0405_E81123")|
 |F12|啟動 / 正數|Start_Positive|009E49 / 0,158,73|![樣本 009E49](../../extensibility/ux-guidelines/media/0405_009e49.png "0405_009E49")|
 |F12|符號類型|符號類型|9B4F96 / 155,79,150|![樣本 9B4F96](../../extensibility/ux-guidelines/media/0405_9b4f96.png "0405_9B4F96")|
-|F12|事件標記|事件標記|A51F00 / 165,31,0|![Swatch A51F00](../../extensibility/ux-guidelines/media/0405_a51f00.png "0405_A51F00")|
+|F12|事件標記|事件標記|A51F00 / 165,31,0|![樣本 A51F00](../../extensibility/ux-guidelines/media/0405_a51f00.png "0405_A51F00")|
 |F12|使用者標記|使用者標記|F16220 / 241,98,32|![樣本 F16220](../../extensibility/ux-guidelines/media/0405_f16220.png "0405_F16220")|
 
 #### <a name="examples-of-visual-studio-online-icons"></a>Visual Studio Online 圖示的範例
@@ -418,7 +419,7 @@ ms.locfileid: "56683138"
 
 |Napa||||
 |----------|-|-|-|
-|![Napa 內容圖示](../../extensibility/ux-guidelines/media/0405-53_napacontent.png "0405年 53_NapaContent")<br />內容|![Napa 辦公室郵件圖示](../../extensibility/ux-guidelines/media/0405-54_napaofficemail.png "0405年 54_NapaOfficeMail")<br />Office Mail|![Napa SharePoint 圖示](../../extensibility/ux-guidelines/media/0405-55_napasharepoint.png "0405年 55_NapaSharePoint")<br />SharePoint|![Napa 工作窗格圖示](../../extensibility/ux-guidelines/media/0405-56_napataskpane.png "0405年 56_NapaTaskPane")<br />工作窗格|
+|![Napa 內容圖示](../../extensibility/ux-guidelines/media/0405-53_napacontent.png "0405年 53_NapaContent")<br />內容|![Napa 辦公室郵件圖示](../../extensibility/ux-guidelines/media/0405-54_napaofficemail.png "0405年 54_NapaOfficeMail")<br />Office 郵件|![Napa SharePoint 圖示](../../extensibility/ux-guidelines/media/0405-55_napasharepoint.png "0405年 55_NapaSharePoint")<br />SharePoint|![Napa 工作窗格圖示](../../extensibility/ux-guidelines/media/0405-56_napataskpane.png "0405年 56_NapaTaskPane")<br />工作窗格|
 
 |摩納哥||||
 |------------|-|-|-|

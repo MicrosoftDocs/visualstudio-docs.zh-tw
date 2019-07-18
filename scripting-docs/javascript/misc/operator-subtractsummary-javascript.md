@@ -13,11 +13,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: dadd47684978bf4be6c9029646d4b6041cb431ee
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56844330"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63006469"
 ---
 # <a name="operator-summary-javascript"></a>運算子摘要 (JavaScript)
 下表列出[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]其各自的類別目錄中的運算子。  

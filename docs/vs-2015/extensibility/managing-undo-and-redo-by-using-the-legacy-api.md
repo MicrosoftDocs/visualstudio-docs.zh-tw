@@ -1,28 +1,23 @@
 ---
 title: 管理復原和取消復原使用舊版 API |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - undo management
 ms.assetid: 838c0ddf-fdf3-4df1-8d21-79610b8ba0b1
 caps.latest.revision: 15
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: ab655c4822f7f5186cbcd18d451cfa3bb0aa656e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 7c2133c75b32e56c1a054740bd829bd04cac97cc
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51764181"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68194363"
 ---
-# <a name="managing-undo-and-redo-by-using-the-legacy-api"></a>管理的復原和重複使用舊版 API
+# <a name="managing-undo-and-redo-by-using-the-legacy-api"></a>使用舊版 API 管理復原和重做
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 編輯器必須支援可讓使用者反轉其最近的變更，它們就會修改程式碼時的復原作業。 大多數編輯器實作下[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]和[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]可以自動提供整合式的開發環境 (IDE) 的復原支援。  
@@ -42,4 +37,3 @@ ms.locfileid: "51764181"
  提供支援多個檢視的編輯器復原管理。  
   
 ## <a name="related-sections"></a>相關章節
-

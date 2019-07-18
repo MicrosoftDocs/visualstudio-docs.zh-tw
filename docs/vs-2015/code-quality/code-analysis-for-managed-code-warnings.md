@@ -1,14 +1,9 @@
 ---
 title: 程式碼分析，Managed 程式碼警告 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - vc.project.vcfxcoptool.enablefxcop
 helpviewer_keywords:
@@ -21,12 +16,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 300875689a8ea6e872e287eaed6d2328bdab5170
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 237091c4304b6d6fef90197d503f84fe86c12b9e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49278904"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68142334"
 ---
 # <a name="code-analysis-for-managed-code-warnings"></a>Managed 程式碼的程式碼分析警告
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +30,7 @@ Managed 程式碼分析工具會提供警告，指出 Managed 程式碼程式庫
   
  下表顯示針對每個警告所提供的資訊類型。  
   
-|項目|描述|  
+|項目|說明|  
 |----------|-----------------|  
 |類型|規則的 TypeName。|  
 |CheckId|規則的唯一識別碼。 Checkid 與 Category 是用於原始程式檔內的警告隱藏。|  
@@ -66,6 +61,3 @@ Managed 程式碼分析工具會提供警告，指出 Managed 程式碼程式庫
 |[安全性警告](../code-quality/security-warnings.md)|此警告支援更安全的程式庫與應用程式。|  
 |[用法警告](../code-quality/usage-warnings.md)|此警告支援 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]的適當用法。|  
 |[Code Analysis Policy Errors](../code-quality/code-analysis-policy-errors.md)|若程式碼分析原則在簽入時不符合，會發生此錯誤。|
-
-
-

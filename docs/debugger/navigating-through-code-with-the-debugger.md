@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 05458481a691f74f1746860e537d915dcad90efc
-ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
-ms.translationtype: MTE95
+ms.openlocfilehash: 5c5a57c41753c8689e83da2a6f8473fa643a657f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57428748"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62905787"
 ---
 # <a name="navigate-through-code-with-the-visual-studio-debugger"></a>Visual Studio 偵錯工具巡覽程式碼
 
@@ -44,7 +44,7 @@ Visual Studio 偵錯工具可協助您瀏覽程式碼來檢查應用程式的狀
 
 您不一定要開始偵錯啟動應用程式的開頭。 您也可以按下**F11**要[逐步執行程式碼](#BKMK_Step_into__over__or_out_of_the_code)，按下**F10**至[略過程式碼](#BKMK_Step_over_Step_out)，或[執行至特定位置或函式](#BKMK_Break_into_code_by_using_breakpoints_or_Break_All)。
 
-##  <a name="step-through-code"></a>逐步執行程式碼
+## <a name="step-through-code"></a>逐步執行程式碼
 
 偵錯工具逐步執行命令，可協助您檢查應用程式狀態，或深入了解其執行流程。
 
@@ -75,16 +75,16 @@ Visual Studio 偵錯工具可協助您瀏覽程式碼來檢查應用程式的狀
 >[!TIP]
 >當您執行每一行程式碼時，您可以暫留變數，以查看其值，或是使用[區域變數](autos-and-locals-windows.md)並[監看式](watch-and-quickwatch-windows.md)監看變更值的 windows。 同時逐步執行函式中，您可以也以視覺化方式追蹤呼叫堆疊。 請參閱[偵錯時對應呼叫堆疊上的方法](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)。
 
-###  <a name="BKMK_Step_over_Step_out"></a> 逐步執行程式碼，並略過某些函式
+### <a name="BKMK_Step_over_Step_out"></a> 逐步執行程式碼，並略過某些函式
 
 您可能不在意函式偵錯時，或您知道它的運作方式，例如通過完善測試的程式庫程式碼。 您可以使用下列命令，可以跳過的程式碼。 函式仍在執行，但偵錯工具會略過它們。
 
-|鍵盤命令|偵錯 功能表命令|說明|
+|鍵盤命令|偵錯 功能表命令|描述|
 |----------------------|------------------|-----------------|
 |**F10**|**不進入函式**|如果目前這一行包含函式呼叫**不進入函式**執行的程式碼，然後在第一行程式碼中暫止執行之後呼叫的函式會傳回。|
 |**Shift**+**F11**|**跳離函式**|**跳離函式**會繼續執行程式碼和目前的函式傳回時，會暫停執行。 偵錯工具會略過透過目前的函式。|
 
-##  <a name="BKMK_Break_into_code_by_using_breakpoints_or_Break_All"></a> 執行至特定位置或函式
+## <a name="BKMK_Break_into_code_by_using_breakpoints_or_Break_All"></a> 執行至特定位置或函式
 
 您可能會想要知道確切您要檢查哪些程式的碼時，直接向特定的位置或函式執行，或您知道您要開始偵錯。
 
@@ -139,7 +139,7 @@ Visual Studio 的中斷點提供一組豐富的其他功能，例如條件式中
 
 若要中斷執行中應用程式中的程式碼的下一行中，選取**偵錯** > **全部中斷**，或按**Ctrl**+**Alt** +**中斷**。
 
-##  <a name="BKMK_Set_the_next_statement_to_execute"></a> 將指標移至要變更執行流程
+## <a name="BKMK_Set_the_next_statement_to_execute"></a> 將指標移至要變更執行流程
 
 當偵錯工具暫停時，來源程式碼界的黃色箭頭或**反組譯碼**視窗會將標示要執行下一個陳述式的位置。 您可以變更下一個陳述式，來執行移動這個箭頭。 您可以略過的部分程式碼，或返回先前的行。 將指標移適合的情況下，例如略過包含已知的錯誤的程式碼區段。
 
@@ -181,7 +181,7 @@ Visual Studio 的中斷點提供一組豐富的其他功能，例如條件式中
 
 1. 在 [**模組**] 視窗中，您所見的模組已經載入的符號**符號狀態**資料行。 以滑鼠右鍵按一下您想要載入符號，然後選取模組**載入符號**。
 
-##  <a name="BKMK_Step_into_properties_and_operators_in_managed_code"></a> 逐步執行 Managed 程式碼中的屬性及運算子
+## <a name="BKMK_Step_into_properties_and_operators_in_managed_code"></a> 逐步執行 Managed 程式碼中的屬性及運算子
  偵錯工具預設為不進入 Managed 程式碼中的屬性及運算子。 在大部分情況下，這會產生比較令人滿意的偵錯經驗。 若要啟用逐步執行屬性或運算子，請選擇**偵錯** > **選項**。 在 [偵錯] > [一般] 頁面上，清除 [不進入屬性和運算子 (僅限受控)] 核取方塊。
 
 ## <a name="see-also"></a>另請參閱

@@ -1,25 +1,22 @@
 ---
 title: 文字範本公用程式方法 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - text templates, utility methods
 ms.assetid: 8c11f9f7-678b-4f0c-b634-dc78fda699d1
 caps.latest.revision: 52
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 4a9c5a0b4b6c85a301c5d3a0e12ad3687f54aeb0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: e69bd59782c2caa1dcb878df4e5316df798b0f21
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49186299"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65680982"
 ---
 # <a name="text-template-utility-methods"></a>文字範本公用程式方法
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +24,7 @@ ms.locfileid: "49186299"
 有數種方法，當您撰寫程式碼，會一律可供您[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]文字範本。 這些方法的定義位於<xref:Microsoft.VisualStudio.TextTemplating.TextTransformation>。  
   
 > [!TIP]
->  您也可以使用其他方法和一般 （不前置處理過的） 文字範本中的主機環境所提供的服務。 例如，您可以在此解析檔案路徑、 記錄錯誤，並取得所提供的服務[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]和任何已載入的套件。  如需詳細資訊，請參閱 <<c0> [ 從文字範本存取 Visual Studio](http://msdn.microsoft.com/en-us/0556f20c-fef4-41a9-9597-53afab4ab9e4)。  
+> 您也可以使用其他方法和一般 （不前置處理過的） 文字範本中的主機環境所提供的服務。 例如，您可以在此解析檔案路徑、 記錄錯誤，並取得所提供的服務[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]和任何已載入的套件。  如需詳細資訊，請參閱 <<c0> [ 從文字範本存取 Visual Studio](https://msdn.microsoft.com/0556f20c-fef4-41a9-9597-53afab4ab9e4)。  
   
 ## <a name="write-methods"></a>撰寫方法  
  您可以使用`Write()`和`WriteLine()`方法來附加在標準的程式碼區塊，而不是使用運算式的程式碼區塊內的文字。 下列兩個程式碼區塊的功能相同。  
@@ -121,7 +118,7 @@ Hello
   
  `<#@template ... hostspecific="true" #>`  
   
- 型別`this.Host`範本執行所在的主控件的類型而定。 在執行中的範本[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]，您可以轉型`this.Host`到`IServiceProvider`來存取服務，例如 IDE。 例如:   
+ 型別`this.Host`範本執行所在的主控件的類型而定。 在執行中的範本[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]，您可以轉型`this.Host`到`IServiceProvider`來存取服務，例如 IDE。 例如：  
   
 ```  
 EnvDTE.DTE dte = (EnvDTE.DTE) ((IServiceProvider) this.Host)  
@@ -136,6 +133,3 @@ EnvDTE.DTE dte = (EnvDTE.DTE) ((IServiceProvider) this.Host)
 ```  
   
  使用`assembly`指示詞來參考組件可在其中找到編譯的類別。
-
-
-

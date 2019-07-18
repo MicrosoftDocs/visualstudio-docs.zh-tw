@@ -1,21 +1,21 @@
 ---
-title: 擴充 Visual Studio 中支援 EditorConfig 語言服務 |Microsoft Docs
+title: 延伸語言服務以支援 EditorConfig
 ms.date: 11/22/2017
 ms.topic: conceptual
 helpviewer_keywords:
 - editorconfig [extensibility]
 - editorconfig, supporting in a language service
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3c29c22ae4539d874ffc08c9ce5adf94ab33d404
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 5c6974c7943a751f50cafb0b141ba9c1dfc85677
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56696970"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66353500"
 ---
 # <a name="supporting-editorconfig-for-your-language-service"></a>支援 EditorConfig 語言服務
 

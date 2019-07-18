@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEngineLaunch2 interface
 ms.assetid: 5eaf2ad8-3fbf-446e-b48b-5327ad3f5255
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d7578bc8564e65211ec809710e4f69ec96bcdf5d
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 4b6f59c9444b0c54f8a230f8eb4487e16b65ebf4
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56702924"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66345230"
 ---
 # <a name="idebugenginelaunch2"></a>IDebugEngineLaunch2
 使用偵錯引擎 (DE) 來啟動和終止程式。

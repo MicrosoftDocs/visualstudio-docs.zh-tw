@@ -7,17 +7,17 @@ helpviewer_keywords:
 - menu commands, changing appearance
 - menus, changing command appearance
 ms.assetid: da2474fa-f92d-4e9e-b8bf-67c61bf249c2
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7431fa1670f6a75b69c1a1033a51975307426771
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 119ce68dca4dfdea44cc7160855733080bc8e9ca
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56691341"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66321106"
 ---
 # <a name="change-the-appearance-of-a-command"></a>變更命令的外觀
 您可以變更命令的外觀，至您的使用者提供意見反應。 比方說，您可能會想看起來不同，無法使用時的命令。 您可以讓命令，可以或無法使用，隱藏或顯示，或核取或取消核取功能表上。
@@ -80,7 +80,7 @@ ms.locfileid: "56691341"
 
 6. 建置此專案並開始偵錯。 Visual Studio 的實驗執行個體應該會出現。
 
-7. 在 **工具**功能表上，按一下**叫用 ChangeMenuText**命令。 命令名稱是在此時**叫用 ChangeMenuText**，因此不會呼叫命令處理常式**ChangeMyCommand()**。
+7. 在 **工具**功能表上，按一下**叫用 ChangeMenuText**命令。 命令名稱是在此時**叫用 ChangeMenuText**，因此不會呼叫命令處理常式**ChangeMyCommand()** 。
 
 8. 在 **工具**您現在應該會看到的功能表**新文字**。 按一下 **新的文字**。 此命令應該現在會變成灰色。
 
