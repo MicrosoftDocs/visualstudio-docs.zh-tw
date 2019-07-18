@@ -1,5 +1,5 @@
 ---
-title: HOW TO：參考 MSBuild 專案 SDK | Microsoft Docs
+title: 作法：參考 MSBuild 專案 SDK | Microsoft Docs
 ms.date: 01/25/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,14 +9,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 55fcc74069ab912a7ec0fb9a6c4996cfd0b9cc36
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 172dfae63fbfb95432a1635490ac703f7bbd9021
+ms.sourcegitcommit: da4079f5b6ec884baf3108cbd0519d20cb64c70b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62977326"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "67852232"
 ---
-# <a name="how-to-use-msbuild-project-sdks"></a>HOW TO：使用 MSBuild 專案 SDK
+# <a name="how-to-use-msbuild-project-sdks"></a>作法：使用 MSBuild 專案 SDK
 
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 15.0 版導入「專案 SDK」的概念，簡化了需要匯入屬性和目標之軟體開發套件的使用。
 
@@ -56,7 +56,15 @@ ms.locfileid: "62977326"
     </Project>
     ```
 
-    如上所述，隱含的匯入會新增到專案的頂端和底部。  `Sdk` 屬性的格式為 `Name[/Version]`，其中 Version 是選擇性的。  例如，您可以指定 `My.Custom.Sdk/1.2.3`。
+    如上所述，隱含的匯入會新增到專案的頂端和底部。
+    
+    若要指定特定的 SDK 版本，您可以將它附加到 `Sdk` 屬性：
+
+    ```xml
+    <Project Sdk="My.Custom.Sdk/1.2.3">
+        ...
+    </Project>
+    ```
 
     > [!NOTE]
     > 這是目前在 Visual Studio for Mac 中參考專案 SDK 的唯一方法。

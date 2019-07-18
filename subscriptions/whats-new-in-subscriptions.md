@@ -3,17 +3,16 @@ title: Visual Studio 訂用帳戶的新功能
 description: 了解您可以用來管理 Visual Studio 訂用帳戶的新功能和更新功能。
 ms.custom: ''
 ms.date: 06/27/2019
-searchscope: VS Subscription
 ms.topic: conceptual
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.openlocfilehash: 6984d4aab23817707280af6bce47deee8d79adf7
-ms.sourcegitcommit: 0cd282a7584b9bfd4df7882f8fdf3ad8a270e219
+ms.openlocfilehash: 8dd4063e6250ccf2f54a88f08ef0c6e2b378fe8b
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/28/2019
-ms.locfileid: "67465113"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67891078"
 ---
 # <a name="what39s-new-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶的新功能
 
@@ -21,7 +20,7 @@ ms.locfileid: "67465113"
 
 ## <a name="2019-q1-january-march"></a>2019 第 1 季 (1 月至 3 月)
 
-### <a name="maximum-usage-added-to-subscriptions-administration-portalhttpsmanagevisualstuidocom"></a>[訂用帳戶系統管理入口網站](https://manage.visualstuido.com)已新增使用量上限
+### <a name="maximum-usage-added-to-subscriptions-administration-portalhttpsmanagevisualstudiocom"></a>[訂用帳戶系統管理入口網站](https://manage.visualstudio.com)已新增使用量上限
 Visual Studio 訂用帳戶系統管理入口網站中新功能會協助您追蹤曾購買和指派的訂用帳戶數量，並識別過去一年和整個合約持續時間內，每個層級曾指派的訂用帳戶尖峰數目。 這可協助您了解目前的訂用帳戶使用量，規劃未來的購買方案。 
 
   > [!div class="mx-imgBorder"]
@@ -34,7 +33,7 @@ Visual Studio 訂用帳戶系統管理入口網站中新功能會協助您追蹤
 ## <a name="2019-q2-april-june"></a>2019 第 2 季 (4 月至 6 月)
 
 ### <a name="visual-studio-with-github-enterprise-subscriptions"></a>包含 GitHub Enterprise 訂用帳戶的 Visual Studio
-在 5 月的 //build 會議上，Microsoft 宣佈 Enterprise 合約客戶現可購買包含 GitHub Enterprise 的 Visual Studio 訂用帳戶。  這是以單一較低價格同時取得 Visual Studio 訂用帳戶和 GitHub Enterprise 的簡單方法。  
+在 5 月的 //build 會議上，Microsoft 宣佈 Enterprise 合約客戶現可購買包含 GitHub Enterprise 的 Visual Studio 訂用帳戶。  這是以單一較低價格同時取得 Visual Studio 訂閱和 GitHub Enterprise 的簡單方法。  
 
 GitHub Enterprise 可使用透過 Enterprise 合約取得 Visual Studio Enterprise 和 Visual Studio Professional 訂用帳戶。 即使您的 Enterprise 合約未到續約時間，另有「升級」優惠可讓您新增 GitHub Enterprise。
 

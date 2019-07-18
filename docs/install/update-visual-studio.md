@@ -2,7 +2,7 @@
 title: 更新 Visual Studio 2017
 titleSuffix: ''
 description: 了解如何將 Visual Studio 逐步更新至最新版本。
-ms.date: 06/19/2019
+ms.date: 07/11/2019
 ms.custom: seodec18
 ms.topic: conceptual
 ms.prod: visual-studio-windows
@@ -10,17 +10,19 @@ ms.technology: vs-installation
 helpviewer_keywords:
 - update [Visual Studio]
 - change [Visual Studio]
+f1_keywords:
+- VS.ToolsOptionsPages.Environment.ProductUpdates
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dc87d6e7c6115a915d2bb7fc9f3d187e1a4d8e7d
-ms.sourcegitcommit: b593bb889f049fcbdff502c30b73178ed17dbdf0
+ms.openlocfilehash: 9ed8ce37351d8129107711e6fd079622050d6aa0
+ms.sourcegitcommit: f369ff7e84b0216f01570a486c7be80ca6d0e61a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/20/2019
-ms.locfileid: "67290661"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68250559"
 ---
 # <a name="update-visual-studio-to-the-most-recent-release"></a>將 Visual Studio 更新至最新版本
 
@@ -257,6 +259,27 @@ Visual Studio 會通知您何時有 Visual Studio 本身或任何元件的更新
 1. 在 [已下載更新，可以開始安裝]  對話方塊方塊中，選擇 [更新]  。
 
    Visual Studio 隨即更新，然後關閉再重新開啟。
+
+## <a name="customize-update-settings"></a>自訂更新設定
+
+您能以數個不同方式自訂 Visual Studio 中的更新設定，例如，變更安裝模式和選取自動下載。
+
+有兩種安裝模式可選擇：
+
+* **在下載時安裝**
+* **全部下載後安裝**
+
+您也可以選擇 [自動下載更新]  設定，讓系統在機器閒置時下載更新。
+
+方式如下：
+
+1. 在功能表列上選擇 [工具]  >[選項]  。
+
+2. 展開 [環境]  ，然後選擇 [產品更新]  。
+
+    ![Visual Studio 中的更新設定](media/vs-2019/update-settings-options.png)
+
+3. 選擇您要用於 Visual Studio 更新的安裝模式和自動下載選項。
 
 ::: moniker-end
 
