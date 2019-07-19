@@ -8,22 +8,22 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b1f82142a66ad5c967e8f790e6dc70fca6b53496
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: f01ddcd75aa02a9444f014898efd114ebdcd59d6
+ms.sourcegitcommit: 57866dd72fd0e15ce61128df70729b427a2d02eb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66310750"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "68315113"
 ---
 # <a name="visual-studio-user-experience-guidelines"></a>Visual Studio 使用者體驗方針
-如果您設計適用於 Visual Studio 的新功能，請遵循 Visual Studio 使用者經驗指導方針。 這些指導方針包含常見的使用者模型和互動模式的相關資訊，好讓新的使用者介面 (UI) 的設計工具可以建立會順暢且一致的開發環境內的使用者體驗。
+如果您設計 Visual Studio 的新功能, 請遵循 Visual Studio 使用者經驗指導方針。 這些指導方針包含一般使用者模型和互動模式的相關資訊, 讓新使用者介面 (UI) 的設計人員可以在開發環境中建立順暢且一致的使用者體驗。
 
-如果您要開發適用於 Microsoft 產品的軟體，了解如何使用這些資源：
+如果您為 Microsoft 產品開發軟體, 請瞭解如何使用這些資源:
 
-- [Windows 使用者經驗互動的指導方針](https://developer.microsoft.com/windows/desktop)是 Windows 桌面的行為和外觀的基本概念。
+- [Windows 使用者體驗互動方針](https://docs.microsoft.com/windows/win32/uxguide/guidelines)是 windows 桌面行為和外觀的基本概念。
 
-- 這些 Visual Studio 的指導方針，也就是取代的一般 Windows 指導方針，不論是適合我們的環境中的應用程式平台特定指導方針。
+- 這些 Visual Studio 指導方針, 這些都是平臺特定的指導方針, 會取代一般的 Windows 指導方針, 只要適合我們的環境即可。
 
-- [控制項和 UWP 應用程式模式](/windows/uwp/design/controls-and-patterns)是新興的模式，可用於 Visual Studio 中的某些執行個體的參考。
+- [UWP 應用程式的控制項和模式](/windows/uwp/design/controls-and-patterns)是可在 Visual Studio 內的某些實例中使用的新興模式參考。
 
-這些指導方針提供您的 Visual Studio 中，在設計時，該怎麼辦的相關資訊，並會在某些情況下也包含有關如何執行此動作的資訊。 如需詳細的實作資訊，並了解特定的應用程式開發介面 (Api) 可讓您撰寫程式碼整合到 Visual Studio 整合式的開發環境 (IDE) 的解決方案，請使用[Visual Studio 軟體開發套件 (SDK)](../visual-studio-sdk.md)。
+這些指導方針會提供您在設計 Visual Studio 時應執行之工作的相關資訊, 而且在某些情況下也包含有關如何執行此動作的資訊。 如需更詳細的執行資訊, 並瞭解特定應用程式開發介面 (Api), 可讓您針對整合到 Visual Studio 整合式開發環境 (IDE) 的方案撰寫程式碼, 請使用[視覺效果Studio 軟體發展工具組 (SDK)](../visual-studio-sdk.md)。
