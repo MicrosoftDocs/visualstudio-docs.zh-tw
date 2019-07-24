@@ -50,7 +50,7 @@ ms.locfileid: "62851883"
 [錯誤：無法進行偵錯，系統會啟動核心偵錯](../debugger/error-debugging-isn-t-possible-because-a-kernel-debugger-is-enabled-on-the-system.md)\
 描述如果您嘗試在以偵錯模式啟動且執行 [!INCLUDE[win7](../debugger/includes/win7_md.md)]、[!INCLUDE[wiprlhext](../debugger/includes/wiprlhext_md.md)]、[!INCLUDE[winxp](../code-quality/includes/winxp_md.md)]、[!INCLUDE[Win2kFamily](../code-quality/includes/win2kfamily_md.md)] 或 Windows NT 的系統上，對 Managed 程式碼進行偵錯時會產生的錯誤訊息。
 
-\[JIT 最佳化和偵錯](../debugger/jit-optimization-and-debugging.md)
+[JIT 最佳化和偵錯](../debugger/jit-optimization-and-debugging.md)\
 描述 JIT 最佳化對偵錯的影響。
 
 [針對 LINQ 和 DLINQ 進行偵錯](../debugger/debugging-linq.md)\
