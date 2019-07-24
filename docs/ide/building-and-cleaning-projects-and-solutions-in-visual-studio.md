@@ -18,17 +18,17 @@ helpviewer_keywords:
 - solution build configurations, build order
 - builds [Visual Studio], preparing
 ms.assetid: 710891fd-379e-42c2-a84b-44a7af694ca0
-author: gewarren
-ms.author: gewarren
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 73a15890dd35f341760561bbd730795e62b1478b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b8676ad9dc1a3b245242687e2ea56148b83b8d56
+ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62975704"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68416418"
 ---
 # <a name="build-and-clean-projects-and-solutions-in-visual-studio"></a>在 Visual Studio 中建置和清除專案與方案
 
@@ -113,11 +113,11 @@ ms.locfileid: "62975704"
 
 ## <a name="see-also"></a>另請參閱
 
-- [如何：檢視、儲存及設定組建記錄檔](../ide/how-to-view-save-and-configure-build-log-files.md)
+- [操作說明：檢視、儲存及設定組建記錄檔](../ide/how-to-view-save-and-configure-build-log-files.md)
 - [取得組建記錄檔](../msbuild/obtaining-build-logs-with-msbuild.md)
 - [編譯和建置](../ide/compiling-and-building-in-visual-studio.md)
 - [了解組建組態](../ide/understanding-build-configurations.md)
-- [如何：設定偵錯和發行組態](../debugger/how-to-set-debug-and-release-configurations.md)
+- [操作說明：設定偵錯和發行組態](../debugger/how-to-set-debug-and-release-configurations.md)
 - [C/C++ 建置參考](/cpp/build/reference/c-cpp-building-reference)
 - [Devenv 命令列參數](../ide/reference/devenv-command-line-switches.md)
 - [方案和專案](../ide/solutions-and-projects-in-visual-studio.md)

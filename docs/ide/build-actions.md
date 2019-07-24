@@ -3,17 +3,17 @@ title: 檔案的建置動作
 ms.date: 11/19/2018
 ms.technology: vs-ide-compile
 ms.topic: reference
-author: gewarren
-ms.author: gewarren
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7820cbbe0477000c2a822e94f5204906d65025fa
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 061a3cce8d1d29b57c02de4506a809994bf12910
+ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62975630"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68416508"
 ---
 # <a name="build-actions"></a>建置動作
 
@@ -24,7 +24,7 @@ Visual Studio 專案中的所有檔案都有一個建置動作。 建置動作�
 
 ## <a name="set-a-build-action"></a>設定建置動作
 
-若要設定檔案的建置動作，請在 [方案總管] 中選取檔案並按下 **Alt**+**Enter**，在 [屬性] 視窗中開啟檔案的屬性。 或是在 [方案總管] 中，以滑鼠右鍵按一下檔案，並選擇 [屬性]。 在 [屬性] 視窗的 [進階] 區段下，使用 [建置動作] 旁的下拉式清單設定檔案的建置動作。
+若要設定檔案的建置動作，請在 [方案總管]  中選取檔案並按下 **Alt**+**Enter**，在 [屬性]  視窗中開啟檔案的屬性。 或是在 [方案總管]  中，以滑鼠右鍵按一下檔案，並選擇 [屬性]  。 在 [屬性]  視窗的 [進階]  區段下，使用 [建置動作]  旁的下拉式清單設定檔案的建置動作。
 
 ![Visual Studio 中的檔案建置動作](media/build-actions.png)
 
@@ -34,7 +34,7 @@ C# 和 Visual Basic 專案檔的部分建置動作如下：
 
 * **無** - 檔案在任何方面都不是建置的一部分。 這個值可以用於文件檔，例如「讀我」檔案。
 * **編譯** - 檔案會當作來源檔案傳遞至編譯器。
-* **內容** - 標示為 [內容] 的檔案可以藉由呼叫 <xref:System.Windows.Application.GetContentStream%2A?displayProperty=nameWithType> 來擷取為資料流。 若是 ASP.NET 專案，這些檔案將在網站部署時納入為網站的一部分。
+* **內容** - 標示為 [內容]  的檔案可以藉由呼叫 <xref:System.Windows.Application.GetContentStream%2A?displayProperty=nameWithType> 來擷取為資料流。 若是 ASP.NET 專案，這些檔案將在網站部署時納入為網站的一部分。
 * **EmbeddedResource** - 檔案會當作要在組件中內嵌的資源傳遞至編譯器。 您可以呼叫 <xref:System.Reflection.Assembly.GetManifestResourceStream%2A?displayProperty=fullName> 從組件讀取檔案。
 * **AdditionalFiles** - 當作輸入傳遞至 C# 或 Visual Basic 編譯器的非原始程式文字檔。 此建置動作主要用來提供輸入給專案參考的[分析器](../code-quality/roslyn-analyzers-overview.md)，以便驗證程式碼品質。 如需詳細資訊，請參閱[使用其他檔案](https://github.com/dotnet/roslyn/blob/master/docs/analyzers/Using%20Additional%20Files.md)。
 
