@@ -9,38 +9,38 @@ helpviewer_keywords:
 - debug builds
 - release builds
 ms.assetid: eaea6e0b-6c61-4869-8d63-d372c745a23c
-author: gewarren
-ms.author: gewarren
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ee2ecb5e501390dfc82d895bf6a81706f4297a4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b422b1844ffb30c1c6f2f8fa8845995c98c794e4
+ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62430287"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68416841"
 ---
-# <a name="how-to-manage-build-configurations-with-visual-basic-developer-settings-applied"></a>HOW TO：在套用 Visual Basic 開發人員設定的情況下管理組建組態
+# <a name="how-to-manage-build-configurations-with-visual-basic-developer-settings-applied"></a>作法：在套用 Visual Basic 開發人員設定的情況下管理組建組態
 
 根據預設，在套用 Visual Basic 開發人員設定時，所有進階組建組態選項都會被隱藏。 本文說明如何手動啟用這些組建設定。
 
 ## <a name="enable-advanced-build-configurations"></a>啟用進階組建組態
 
-根據預設，Visual Basic 開發人員設定會隱藏開啟 [組態管理員] 對話方塊和[專案設計工具](../ide/reference/application-page-project-designer-visual-basic.md)中的 [組態] 和 [平台] 清單的選項。
+根據預設，Visual Basic 開發人員設定會隱藏開啟 [組態管理員]  對話方塊和[專案設計工具](../ide/reference/application-page-project-designer-visual-basic.md)中的 [組態]  和 [平台]  清單的選項。
 
 1. 在 [ **工具** ] 功能表上按一下 [ **選項**]。
 
-2. 展開 [專案和方案]，然後按一下 [一般]。
+2. 展開 [專案和方案]  ，然後按一下 [一般]  。
 
     > [!NOTE]
-    > 即使未核取 [顯示所有設定] 選項，都可以看到 [一般] 節點。 如果您想要查看每個可用的選項，請按一下 [顯示所有設定]。
+    > 即使未核取 [顯示所有設定]  選項，都可以看到 [一般]  節點。 如果您想要查看每個可用的選項，請按一下 [顯示所有設定]  。
 
-3. 按一下 [顯示進階組建組態]。
+3. 按一下 [顯示進階組建組態]  。
 
-4. 按一下 [確定]。
+4. 按一下 [確定]  。
 
-     在 [組建] 功能表上現在已可使用 [組態管理員]，且 [組態] 和 [平台] 清單也會顯示在 [專案設計工具] 中。
+     在 [組建]  功能表上現在已可使用 [組態管理員]  ，且 [組態]  和 [平台]  清單也會顯示在 [專案設計工具]  中。
 
 ## <a name="see-also"></a>另請參閱
 

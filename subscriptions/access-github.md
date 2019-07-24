@@ -3,15 +3,15 @@ title: Visual Studio + GitHub 搭售方案 | Microsoft Docs
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 04/15/2019
+ms.date: 07/19/2019
 ms.topic: conceptual
 description: 了解新的 Visual Studio + GitHub 搭售方案
-ms.openlocfilehash: 6f14a484c365bcbede89c1cc4ac056a97f9ec013
-ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
+ms.openlocfilehash: 1d7b55a32c796747d50fac8dae14d6af2f847c46
+ms.sourcegitcommit: 485881e6ba872c7b28a7b17ceaede845e5bea4fe
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67783433"
+ms.lasthandoff: 07/22/2019
+ms.locfileid: "68377643"
 ---
 # <a name="introducing-visual-studio-subscriptions-with-github-enterprise"></a>含 GitHub Enterprise 的 Visual Studio 訂用帳戶簡介  
 
@@ -50,7 +50,7 @@ Visual Studio + GitHub Enterprise 訂用帳戶分成兩部份指派：
 
 若您剛接觸 GitHub，以下這些資源可能會對您有幫助：
 
-| 主旨                                  | GitHub 說明主題                                     |
+| 主體                                  | GitHub 說明主題                                     |
 |------------------------------------------|-------------------------------------------------------|
 | 一般問題/資訊          | [GitHub 說明](https://help.github.com/en)             |
 | GitHub 是什麼？  如何深入了解？  | [About GitHub](https://help.github.com/en/categories/about-github) (關於 GitHub)                                       |
@@ -62,15 +62,12 @@ Visual Studio + GitHub Enterprise 訂用帳戶分成兩部份指派：
 ## <a name="frequently-asked-questions"></a>常見問題集
 
 ### <a name="q--where-is-my-github-subscription"></a>問：我的 GitHub 訂用帳戶位於何處？
-
 答：設定 GitHub 訂用帳戶的過程可能需要一段時間。  若您已等待多時，而尚未收到任何消息，建議您與 GitHub 系統管理員連絡。  這可能是因為您的系統管理員仍在處理指派，或 決定不指派 GitHub 訂用帳戶給您。 
 
 ### <a name="q--how-do-i-reach-my-github-administrator"></a>問：如何與 GitHub 系統管理員連絡？
-
 答：若您使用的是 GitHub Enterprise Server，可以按一下位於用戶端底部的 [支援]  連結，與您的系統管理員聯繫。
 
 ### <a name="q-do-i-get-the-full-visual-studio-subscription-professional-or-enterprise-or-do-i-just-get-the-ide-with-this-offering"></a>問：我會從這個供應項目得到完整的 Visual Studio 訂用帳戶 (Professional 或 Enterprise)，還是只會得到 IDE？
-
 答：您會連同 GitHub Enterprise 收到完整的 Visual Studio 訂用帳戶。  您可獲得這些訂用帳戶中包含的所有權益，例如軟體下載、雲端服務、技術支援及合作夥伴權益，就如同單獨購買訂用帳戶。
 
 ## <a name="support-resources"></a>支援資源
@@ -81,5 +78,4 @@ Visual Studio + GitHub Enterprise 訂用帳戶分成兩部份指派：
 - 取得 GitHub Enterprise 的[技術支援](https://support.microsoft.com/en-us/supportforbusiness/productselection?sapId=b77fe80f-5417-80bd-4b2a-275cf0018c24)。   
 
 ## <a name="next-steps"></a>後續步驟
-
 如果您還不熟悉 GitHub，請前往 [GitHub Learning Lab](https://lab.github.com/) (GitHub 學習實驗室)，這裡會帶您了解一系列有趣又實用的專案，並在過程中提供實用的回饋。

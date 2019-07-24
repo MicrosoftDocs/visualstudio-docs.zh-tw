@@ -3,63 +3,19 @@ title: 管理 Visual Studio 訂閱
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 06/24/2019
+ms.date: 07/17/2019
 ms.topic: conceptual
 description: 了解如何充分利用 Visual Studio 訂用帳戶
-ms.openlocfilehash: 5d9c5e91f6cd76857bdd5aa4c5398cdde0db41b8
-ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
+ms.openlocfilehash: 553513bf41184389b921f392962f22f26561094f
+ms.sourcegitcommit: 485881e6ba872c7b28a7b17ceaede845e5bea4fe
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67785090"
+ms.lasthandoff: 07/22/2019
+ms.locfileid: "68378086"
 ---
 # <a name="managing-subscriptions"></a>管理訂用帳戶
 
 Visual Studio [訂閱者入口網站](https://my.visualstudio.com)可讓您在單一位置管理您的所有訂用帳戶和方案成員資格。 您可以針對您的設定檔進行變更、使用訂用帳戶隨附的所有權益，並在訂用帳戶之間快速輕鬆地切換。
-
-## <a name="signing-in-to-the-portal"></a>登入入口網站
-
-歡迎使用 Visual Studio 訂閱！  您的訂閱可提供掌握編寫程式碼大小事所需的軟體及權益，包括軟體、每月的 Azure 信用額度、共同作業工具、訓練津貼、支援及其他更多內容，而這一切全都來自 Microsoft 最新、最棒的內容。 若要使用入口網站，您必須先登入。
-
-### <a name="first-time-access"></a>第一次存取時
-
-第一次使用訂閱的步驟取決於您的訂閱取得方式而定。
-
-#### <a name="microsoft-store"></a>Microsoft 市集
-
-如果您是透過 Microsoft Store 購買 Visual Studio 訂用帳戶，則可以從付款 [確認頁面]  或 [確認電子郵件]  起始啟用步驟。
-
-1. 在「確認頁面」或「確認電子郵件」中，按一下 [請按這裡登入]  。 我們即將將您重新導向到 https://my.visualstudio.com/subscriptions/activate 。
-2. 輸入您要用來登入訂閱者入口網站的電子郵件地址，並按一下 [繼續]  。
-3. 根據電子郵件地址，系統可能會將您重新導向至 Microsoft 帳戶登入頁面，或您公司/學校的登入頁面。
-4. 輸入您的密碼，或完成登入需求。
-5. 輸入歡迎電子郵件或確認頁面中提供的產品金鑰，然後按一下 [啟動]  。
-
-#### <a name="workschool-accounts"></a>公司帳戶/學校帳戶
-
-如果您的訂閱是由公司/學校提供，則您會收到一封歡迎電子郵件。
-
-1. 前往[訂閱者入口網站](https://my.visualstudio.com/)
-2. 輸入指派給新 Visual Studio 訂閱的電子郵件地址。 您也可以在訂閱者歡迎郵件中識別這個地址。 如果沒有收到歡迎郵件，請檢查垃圾郵件資料夾。
-3. 按一下 [繼續]  。
-4. 系統會將您重新導向至公司登入頁面。
-5. 請輸入您的密碼。
-6. 按一下 [登入]  。
-
-#### <a name="visual-studio-marketplace"></a>Visual Studio Marketplace
-
-如果您是透過 Visual Studio Marketplace 購買每月或每年的雲端訂閱，請前往[訂閱者入口網站](https://my.visualstudio.com/)，並使用購買訂閱時提供的 Microsoft 帳戶 (MSA) 登入。
-
-#### <a name="using-a-workschool-account-with-a-microsoft-account-msa"></a>搭配使用公司帳戶/學校帳戶與 Microsoft 帳戶 (MSA)
-
-如果組織使用 Azure Active Directory，但您沒有 Azure Active Directory 帳戶，則可能需要利用登入程序期間提供的 [個人]  選項。
-
-1. 請前往[訂閱者入口網站](https://my.visualstudio.com)
-2. 輸入指派給新 Visual Studio 訂閱的電子郵件地址。 您也可以在訂閱者的**歡迎郵件**中識別這個地址。 如果您未收到歡迎電子郵件，請檢查垃圾郵件資料夾。
-3. 按一下 [繼續]  。
-4. 系統會將您重新導向至**決策頁面**。  如果您的訂用帳戶已指派給與 Azure Active Directory (AAD) 租用戶建立關聯的**公司或學校**帳戶，請選取 [公司或學校帳戶]  。 如果您的訂用帳戶與**公司**電子郵件地址建立關聯，但已經轉換成**個人** Microsoft 帳戶 (MSA)，請選取 [個人] 
-5. 輸入您的密碼
-6. 按一下 [登入] 
 
 ## <a name="managing-multiple-subscriptions"></a>管理多重訂閱
 
@@ -87,7 +43,6 @@ Visual Studio 訂用帳戶入口網站可將您所有 Visual Studio 訂閱與方
 ## <a name="renewing-my-subscriptions"></a>續訂訂閱
 
 **標準訂閱**
-
 - Microsoft Store：如果您是從 [Microsoft 市集](http://www.microsoft.com/store)購買訂閱，即可在同樣的位置更新憑證。
 - 大量授權：如果您的公司是透過大量授權購買訂閱，則應該由系統管理員連絡轉銷商以更新您的訂閱。
 
@@ -97,10 +52,8 @@ Visual Studio 訂用帳戶入口網站可將您所有 Visual Studio 訂閱與方
 
 - [Imagine](https://imagine.microsoft.com/about)
 - [BizSpark](https://bizspark.microsoft.com/About/Offers)
-- [Microsoft 合作夥伴網路](https://partner.microsoft.com/en-us)
-- [Microsoft Certified Trainer](https://www.microsoft.com/en-us/learning/mct-certification.aspx)
-
-**Visual Studio Dev Essentials：** Dev Essentials 是免費的程式，因此成員資格不會過期。
+- [Microsoft 合作夥伴網路](https://partner.microsoft.com)
+- [Microsoft Certified Trainer](https://www.microsoft.com/learning/mct-certification.aspx)
 
 ## <a name="transferring-subscriptions"></a>轉移訂閱
 
@@ -121,8 +74,6 @@ Visual Studio 訂用帳戶入口網站可將您所有 Visual Studio 訂閱與方
 4. 完成變更時，請按一下 [儲存]  。
 5. 按一下瀏覽器的 [返回]  按鈕，返回「權益」頁面。
 
-   > [!div class="mx-imgBorder"]
-   > ![編輯設定檔資訊](_img/manage-vs-subscriptions/edit-profile-resized.png)
 
 ### <a name="setting-communications-preferences"></a>設定通訊喜好設定
 如果您想要接收關於您的訂閱和權益的定期更新 (包括 Visual Studio 訂閱電子報)，請[更新您的喜好設定](https://app.vsaex.visualstudio.com/me?workflowID=devprogram&tab=edit)，方法是選取您 Visual Studio 設定檔中的 [Visual Studio 訂閱] 核取方塊。 您隨時可以變更這些設定和取消訂閱。 
@@ -131,7 +82,6 @@ Visual Studio 訂用帳戶入口網站可將您所有 Visual Studio 訂閱與方
    > ![設定喜好設定](_img/manage-vs-subscriptions/change-prefs.png)
    
 ### <a name="linking-my-subscription-to-existing-azure-devops-services-or-azure-subscriptions"></a>將訂用帳戶連結至現有的 Azure DevOps Services 或 Azure 訂用帳戶
-
 如果您是使用個人 Microsoft 帳戶 (MSA) 登入訂用帳戶，且其中一個訂用帳戶使用由 Azure 管理的公司或學校帳戶，並包含 Azure DevOps Services 或 Microsoft Azure，那麼您可以將這兩個訂用帳戶連結起來。 這個連結稱為「其他帳戶」，可讓您繼續使用 MSA 登入您的訂用帳戶，同時存取與您學校或公司帳戶建立關聯的現有 Azure、Azure DevOps Services 或 IDE 資源。
 
 即使這兩個帳戶使用同一組電子郵件地址，您仍需要將公司帳戶/學校帳戶新增為其他帳戶，讓這兩個帳戶也能使用您的權益。
@@ -143,15 +93,11 @@ Visual Studio 訂用帳戶入口網站可將您所有 Visual Studio 訂閱與方
 3. 在 [相關連結]  中，選擇 [新增其他帳戶]  。
 4. 輸入您的公司帳戶/學校帳戶電子郵件地址，然後按一下 [新增]  。
 
-   > [!div class="mx-imgBorder"]
-   > ![其他帳戶](_img/manage-vs-subscriptions/alternate-account-resized.png)
-
 新增其他帳戶之後，您可以按一下 [訂閱]  索引標籤，然後選擇 [相關連結]  區段中的適當選項，隨時更新帳戶或將其移除。
 
 ## <a name="frequently-asked-questions"></a>常見問題集
 
 ### <a name="q-if-i-do-not-renew-my-subscription-how-long-will-microsoft-keep-my-data"></a>問：如果我未更新訂閱，Microsoft 會保留我的資料多久？
-
 答：根據購買管道，Microsoft 維護客戶資料的時間長度不一。
 
 | 通道                                                | 持續時間 (天數) |

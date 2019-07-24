@@ -6,17 +6,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - build events, customizing
 ms.assetid: 69e935a5-e208-4bcd-865c-3e5f9b047ca8
-author: gewarren
-ms.author: gewarren
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c1acd55ad9ea2d671730a656a673fd1f2ca3aa19
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 8367400df14f9a5e5c846a6df52e1a5fc7b8ec21
+ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430887"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68416731"
 ---
 # <a name="specify-custom-build-events-in-visual-studio"></a>在 Visual Studio 中指定自訂建置事件
 
@@ -28,7 +28,7 @@ ms.locfileid: "63430887"
 
 - C# 和 F#--[如何：指定建置事件 (C#)](../ide/how-to-specify-build-events-csharp.md)。
 
-- Visual C++ -- [指定建置事件](/cpp/ide/specifying-build-events)。
+- Visual C++ -- [指定建置事件](/cpp/build/specifying-build-events)。
 
 ## <a name="syntax"></a>語法
 
@@ -38,9 +38,9 @@ ms.locfileid: "63430887"
 
 - 在執行 *.bat* 檔案的所有建置事件之前新增 `call` 陳述式。
 
-   範例：`call C:\MyFile.bat`
+   範例： `call C:\MyFile.bat`
 
-   範例：`call C:\MyFile.bat call C:\MyFile2.bat`
+   範例： `call C:\MyFile.bat call C:\MyFile2.bat`
 
 - 以引號括住檔案路徑。
 
@@ -50,7 +50,7 @@ ms.locfileid: "63430887"
 
 - 視需要包含萬用字元。
 
-   範例：`for %I in (*.txt *.doc *.html) do copy %I c:\`<我的目錄>`\`
+   範例：`for %I in (*.txt *.doc *.html) do copy %I c:\`<我的目錄>  `\`
 
   > [!NOTE]
   > 在批次指令碼中，上述程式碼中的 `%I` 應該是 `%%I`。
@@ -60,4 +60,4 @@ ms.locfileid: "63430887"
 - [編譯和建置](../ide/compiling-and-building-in-visual-studio.md)
 - [建置前事件/建置後事件命令列對話方塊](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md)
 - [MSBuild 特殊字元](../msbuild/msbuild-special-characters.md)
-- [逐步解說：建置應用程式](../ide/walkthrough-building-an-application.md)
+- [逐步解說︰建置應用程式](../ide/walkthrough-building-an-application.md)
