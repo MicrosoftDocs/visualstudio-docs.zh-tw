@@ -18,7 +18,6 @@
 #### [使用公司/學校帳戶登入](sign-in-work.md)
 #### [使用 GitHub 登入](sign-in-github.md)
 #### [替代識別](vs-alternate-identity.md)
-#### [使用別名登入](aliasing.md)
 #### [登入問題](sign-in-issues.md)
 #### [訂閱者資料的匿名](anonymization.md)
 ### [訂用帳戶入口網站概觀](using-the-subscriber-portal.md)
@@ -60,6 +59,9 @@
 #### [網際網路示範](internet-demos.md)
 ## 系統管理員
 ### [系統管理員責任](admin-responsibilities.md)
+#### [生產階段前清查](admin-inventory.md)
+#### [管理大型小組及外部承攬人](manage-teams.md)
+#### [追蹤使用者指派及處理訂單](assignments-orders.md)
 ### [大量授權](volume-license-admins.md)
 ### 將組織上線
 #### [移轉後上線](post-migration-onboarding.md)
@@ -78,6 +80,7 @@
 #### [過度分派](handle-overclaimed-license.md)
 #### [使用量上限](maximum-usage.md)
 #### [過期的訂閱](handle-expired-license.md)
+#### [使用別名的訂閱者](aliasing.md)
 #### [具有個人電子郵件登入的訂閱者](personal-email-sign-ins.md)
 ### [管理搭配 GitHub Enterprise 的 Visual Studio](assign-github.md)
 ## 資源
