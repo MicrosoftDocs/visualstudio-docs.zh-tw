@@ -956,6 +956,8 @@
           href: C26476.md
         - name: C26477
           href: C26477.md
+        - name: C26478
+          href: c26478.md
         - name: C26481
           href: C26481.md
         - name: C26482
@@ -990,6 +992,10 @@
           href: C26497.md
         - name: C26498
           href: C26498.md
+        - name: C26812
+          href: c26812.md
+        - name: C26814
+          href: c26814.md
     - name: C/C++ 警告
       items:
         - name: 總覽
