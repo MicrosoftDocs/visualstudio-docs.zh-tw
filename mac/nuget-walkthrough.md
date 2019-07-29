@@ -6,12 +6,12 @@ ms.author: jomatthi
 ms.date: 04/24/2019
 ms.assetid: 5C800815-0B13-4B27-B017-95FCEF1A0EA2
 ms.custom: video
-ms.openlocfilehash: 356a99e3bdbc1608bdebc160c3a10878d3194a40
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.openlocfilehash: 5d38afb0dd3adc1db253b7b2c290925716bd5bf9
+ms.sourcegitcommit: 78e4836fe0f45b7079271330aff449dff6fd9685
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67691391"
+ms.lasthandoff: 07/17/2019
+ms.locfileid: "68303866"
 ---
 # <a name="include-a-nuget-package-in-your-project"></a>在專案中包含 NuGet 套件
 
@@ -43,7 +43,7 @@ NuGet 是進行 .NET 開發的最受歡迎套件管理員，並內建於 Visual 
 
 ![列出 NuGet 套件](media/nuget-walkthrough-AddPackages1.png)
 
-使用右上角的搜尋方塊來尋找特定套件，例如  `azure mobile`。 當您找到想要使用的套件時，請選取它，然後按一下 [新增套件] ****   按鈕以開始安裝。
+使用右上角的 [搜尋] 方塊來尋找特定套件，例如 `azure mobile`。 當您發現想要使用的套件時，請選取該套件，然後按一下 [新增套件]  按鈕開始安裝。
 
 ![新增 Azure NuGet 套件](media/nuget-walkthrough-AddPackages2.png)
 
@@ -57,7 +57,7 @@ NuGet 是進行 .NET 開發的最受歡迎套件管理員，並內建於 Visual 
 
 新增 NuGet 套件並更新專案參考之後，即可針對 API 進行程式設計，如同任何專案參考。
 
-確定您將任何必要的  `using`  指示詞新增至檔案頂端：
+確定您將任何必要 `using` 指示詞新增至檔案頂端：
 
 ```csharp
 using Newtonsoft.Json;
