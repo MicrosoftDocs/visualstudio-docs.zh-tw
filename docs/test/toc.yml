@@ -54,9 +54,9 @@
       items:
         - name: 逐步解說：針對受控碼建立和執行單元測試
           href: walkthrough-creating-and-running-unit-tests-for-managed-code.md
-        - name: '快速入門：搭配 [測試總管] 進行以測試為導向的開發工作'
+        - name: 逐步解說：測試驅動開發
           href: quick-start-test-driven-development-with-test-explorer.md
-        - name: 在單元測試中使用 Microsoft.VisualStudio.TestTools.UnitTesting 成員
+        - name: 在單元測試中使用 MSTest API
           href: using-microsoft-visualstudio-testtools-unittesting-members-in-unit-tests.md
         - name: 使用 Assert 類別
           href: using-the-assert-classes.md
@@ -74,11 +74,11 @@
           items:
             - name: 建立資料驅動的單元測試
               href: how-to-create-a-data-driven-unit-test.md
-            - name: 逐步解說：使用設定檔定義資料來源
+            - name: 使用設定檔定義資料來源
               href: walkthrough-using-a-configuration-file-to-define-a-data-source.md
         - name: 泛型方法的單元測試
           href: unit-tests-for-generic-methods.md
-        - name: 設定以舊版 .NET Framework 為目標的單元測試
+        - name: 設定以舊版 .NET 為目標的單元測試
           href: how-to-configure-unit-tests-to-target-an-earlier-version-of-the-dotnet-framework.md
     - name: C/C++ 程式碼的單元測試
       items:

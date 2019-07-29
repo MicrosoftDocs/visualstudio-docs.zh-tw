@@ -12,12 +12,12 @@ manager: jillfra
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: 9bbd0aa8ea3d98077154225fb3a35aec5545ccfa
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: fae6be8932731e5589dbc27f5084bcbc509680c1
+ms.sourcegitcommit: 9fc8b144d4ed1c46aba87c0b7e1d24454e0eea9d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68415741"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68493310"
 ---
 # <a name="debug-live-aspnet-azure-apps-using-the-snapshot-debugger"></a>使用快照偵錯工具針對即時 ASP.NET Azure 應用程式進行偵錯
 
@@ -109,7 +109,6 @@ ms.locfileid: "68415741"
 ## <a name="take-a-snapshot"></a>建立快照集
 
 設定快照點之後, 您可以前往網站的瀏覽器視圖, 並執行標示為的程式程式碼, 或等待使用者從網站的使用方式產生一個快照, 以手動產生快照集。
-
 
 ## <a name="inspect-snapshot-data"></a>檢查快照集資料
 
