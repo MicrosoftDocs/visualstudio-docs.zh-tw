@@ -1,6 +1,6 @@
 ---
 title: EditorConfig 的 .NET 格式設定慣例
-ms.date: 06/17/2019
+ms.date: 07/17/2019
 ms.topic: reference
 dev_langs:
 - CSharp
@@ -13,16 +13,16 @@ manager: jillfra
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 3218e819d8f94cf760cdc75d6bfa6d29d0a29568
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: ccebfc38d5170920fe3f3c37ee77aabaf660a3b8
+ms.sourcegitcommit: 8562a337cc9f674c756a4a0b2c7e288ebd61b51e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67823344"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68345675"
 ---
 # <a name="formatting-conventions"></a>格式設定慣例
 
-Visual Studio 的 EditorConfig 適用的格式設定慣例分為兩類：
+Visual Studio 的 EditorConfig 適用格式設定慣例分為下列類別：
 
 - [.NET 格式化設定](#net-formatting-settings)
 
@@ -122,20 +122,32 @@ using Octokit;
   - csharp_indent_case_contents
   - csharp_indent_switch_labels
   - csharp_indent_labels
+  - csharp_indent_block_contents
+  - csharp_indent_braces
+  - csharp_indent_case_contents_when_block
 - [間距選項](#spacing-options)
   - csharp_space_after_cast
   - csharp_space_after_keywords_in_control_flow_statements
-  - csharp_space_between_method_declaration_parameter_list_parentheses
-  - csharp_space_between_method_call_parameter_list_parentheses
   - csharp_space_between_parentheses
   - csharp_space_before_colon_in_inheritance_clause
   - csharp_space_after_colon_in_inheritance_clause
   - csharp_space_around_binary_operators
+  - csharp_space_between_method_declaration_parameter_list_parentheses
   - csharp_space_between_method_declaration_empty_parameter_list_parentheses
-  - csharp_space_between_method_call_name_and_opening_parenthesis
+  - csharp_space_between_method_declaration_name_and_open_parenthesis
+  - csharp_space_between_method_call_parameter_list_parentheses
   - csharp_space_between_method_call_empty_parameter_list_parentheses
+  - csharp_space_between_method_call_name_and_opening_parenthesis
   - csharp_space_after_comma
+  - csharp_space_before_comma
   - csharp_space_after_dot
+  - csharp_space_before_dot
+  - csharp_space_after_semicolon_in_for_statement
+  - csharp_space_before_semicolon_in_for_statement
+  - csharp_space_around_declaration_statements
+  - csharp_space_before_open_square_brackets
+  - csharp_space_between_empty_square_brackets
+  - csharp_space_between_square_brackets
 - [包裝選項](#wrap-options)
   - csharp_preserve_single_line_statements
   - csharp_preserve_single_line_blocks
@@ -371,6 +383,9 @@ Editorconfig  檔案範例︰
 csharp_indent_case_contents = true
 csharp_indent_switch_labels = true
 csharp_indent_labels = flush_left
+csharp_indent_block_contents = true
+csharp_indent_braces = false
+csharp_indent_case_contents_when_block = true
 ```
 
 #### <a name="csharpindentcasecontents"></a>csharp\_indent\_case_contents
@@ -509,6 +524,83 @@ class C
 }
 ```
 
+#### <a name="csharpindentblockcontents"></a>csharp_indent_block_contents
+
+|||
+|-|-|
+| **規則名稱** | csharp_indent_block_contents |
+| **適用語言** | C# |
+| **值** | `true` - <br /><br />`false` -  |
+| **Visul Studio 預設值** | `true` |
+
+程式碼範例：
+
+```csharp
+// csharp_indent_block_contents = true
+static void Hello()
+{
+    Console.WriteLine("Hello");
+}
+
+// csharp_indent_block_contents = false
+static void Hello()
+{
+Console.WriteLine("Hello");
+}
+```
+
+#### <a name="csharpindentbraces"></a>csharp_indent_braces
+
+|||
+|-|-|
+| **規則名稱** | csharp_indent_braces |
+| **適用語言** | C# |
+| **值** | `true` - <br /><br />`false` -  |
+| **Visul Studio 預設值** | `false` |
+
+程式碼範例：
+
+```csharp
+// csharp_indent_braces = true
+static void Hello()
+    {
+    Console.WriteLine("Hello");
+    }
+
+// csharp_indent_braces = false
+static void Hello()
+{
+    Console.WriteLine("Hello");
+}
+```
+
+#### <a name="csharpindentcasecontentswhenblock"></a>csharp_indent_case_contents_when_block
+
+|||
+|-|-|
+| **規則名稱** | csharp_indent_case_contents_when_block |
+| **適用語言** | C# |
+| **值** | `true` - <br /><br />`false` -  |
+| **Visul Studio 預設值** | `true` |
+
+程式碼範例：
+
+```csharp
+// csharp_indent_case_contents_when_block = true
+case 0:
+    {
+        Console.WriteLine("Hello");
+        break;
+    }
+
+// csharp_indent_case_contents_when_block = false
+case 0:
+{
+    Console.WriteLine("Hello");
+    break;
+}
+```
+
 ### <a name="spacing-options"></a>間距選項
 
 這些格式化規則是關於格式化程式碼空白字元的使用。
@@ -520,17 +612,26 @@ Editorconfig  檔案範例︰
 [*.cs]
 csharp_space_after_cast = true
 csharp_space_after_keywords_in_control_flow_statements = true
-csharp_space_between_method_declaration_parameter_list_parentheses = true
-csharp_space_between_method_call_parameter_list_parentheses = true
 csharp_space_between_parentheses = control_flow_statements, type_casts
 csharp_space_before_colon_in_inheritance_clause = true
 csharp_space_after_colon_in_inheritance_clause = true
 csharp_space_around_binary_operators = before_and_after
+csharp_space_between_method_declaration_parameter_list_parentheses = true
 csharp_space_between_method_declaration_empty_parameter_list_parentheses = false
-csharp_space_between_method_call_name_and_opening_parenthesis = false
+csharp_space_between_method_declaration_name_and_open_parenthesis = false
+csharp_space_between_method_call_parameter_list_parentheses = true
 csharp_space_between_method_call_empty_parameter_list_parentheses = false
+csharp_space_between_method_call_name_and_opening_parenthesis = false
 csharp_space_after_comma = true
+csharp_space_before_comma = false
 csharp_space_after_dot = false
+csharp_space_before_dot = false
+csharp_space_after_semicolon_in_for_statement = true
+csharp_space_before_semicolon_in_for_statement = false
+csharp_space_around_declaration_statements = false
+csharp_space_before_open_square_brackets = false
+csharp_space_between_empty_square_brackets = false
+csharp_space_between_square_brackets = false
 ```
 
 #### <a name="csharpspaceaftercast"></a>csharp\_space\_after_cast
@@ -540,8 +641,8 @@ csharp_space_after_dot = false
 | **規則名稱** | csharp_space_after_cast |
 | **適用語言** | C# |
 | **引進的版本** | Visual Studio 2017 15.3 版 |
-| **值** | `true` - 要求在轉換和值之間加入空格<br /><br />`false` - 要求在轉換和值之間不能有  空格 |
-| **Visual Studio 預設值** | `false` |
+| **值** | `true` - 在轉換和值之間放入一個空白字元<br /><br />`false` - 移除轉換和值之間的空格 |
+| **Visul Studio 預設值** | `false` |
 
 程式碼範例：
 
@@ -560,8 +661,8 @@ int y = (int)x;
 | **規則名稱** | csharp_space_after_keywords_in_control_flow_statements |
 | **適用語言** | C# |
 | **引進的版本** | Visual Studio 2017 15.3 版 |
-| **值** | `true` - 控制流程陳述式中的關鍵字後面需要保留一個空格，例如 `for` 迴圈<br /><br />`false` - 控制流程陳述式中的關鍵字後面「不」  需要保留一個空格，例如 `for` 迴圈 |
-| **Visual Studio 預設值** | `true` |
+| **值** | `true` - 在控制流程陳述式中的關鍵字後面放入一個空白字元，例如 `for` 迴圈<br /><br />`false` - 移除控制流程陳述式中關鍵字後面的空格，例如 `for` 迴圈 |
+| **Visul Studio 預設值** | `true` |
 
 程式碼範例：
 
@@ -571,46 +672,6 @@ for (int i;i<x;i++) { ... }
 
 // csharp_space_after_keywords_in_control_flow_statements = false
 for(int i;i<x;i++) { ... }
-```
-
-#### <a name="csharpspacebetweenmethoddeclarationparameterlistparentheses"></a>csharp_space_between_method_declaration_parameter_list_parentheses
-
-|||
-|-|-|
-| **規則名稱** | csharp_space_between_method_declaration_parameter_list_parentheses |
-| **適用語言** | C# |
-| **引進的版本** | Visual Studio 2017 15.3 版 |
-| **值** | `true` - 在方法宣告參數清單的左括弧後面和右括弧前面加上空格字元<br /><br />`false` - 不在方法宣告參數清單的左括弧後面和右括弧前面加上空格字元 |
-| **Visual Studio 預設值** | `false` |
-
-程式碼範例：
-
-```csharp
-// csharp_space_between_method_declaration_parameter_list_parentheses = true
-void Bark( int x ) { ... }
-
-// csharp_space_between_method_declaration_parameter_list_parentheses = false
-void Bark(int x) { ... }
-```
-
-#### <a name="csharpspacebetweenmethodcallparameterlistparentheses"></a>csharp_space_between_method_call_parameter_list_parentheses
-
-|||
-|-|-|
-| **規則名稱** | csharp_space_between_method_call_parameter_list_parentheses |
-| **適用語言** | C# |
-| **引進的版本** | Visual Studio 2017 15.3 版 |
-| **值** | `true` - 在方法呼叫的左括弧後面和右括弧前面加上空格字元<br /><br />`false` - 不在方法呼叫的左括弧後面和右括弧前面加上空格字元 |
-| **Visual Studio 預設值** | `false` |
-
-程式碼範例：
-
-```csharp
-// csharp_space_between_method_call_parameter_list_parentheses = true
-MyMethod( argument );
-
-// csharp_space_between_method_call_parameter_list_parentheses = false
-MyMethod(argument);
 ```
 
 #### <a name="csharpspacebetweenparentheses"></a>csharp_space_between_parentheses
@@ -645,8 +706,8 @@ int y = ( int )x;
 | **規則名稱** | csharp_space_before_colon_in_inheritance_clause |
 | **適用語言** | C# |
 | **引進的版本** | Visual Studio 2017 15.7 版 |
-| **值** | `true` - 需要在型別宣告中基底或介面的冒號之前保留一個空格<br /><br />`false` - 「不」  需要在型別宣告中基底或介面的冒號之前保留一個空格 |
-| **Visual Studio 預設值** | `true` |
+| **值** | `true` - 在型別宣告中基底或介面的冒號之前放入一個空白字元<br /><br />`false` - 移除型別宣告中基底或介面內冒號之前的空格 |
+| **Visul Studio 預設值** | `true` |
 
 程式碼範例：
 
@@ -681,8 +742,8 @@ class C: I
 | **規則名稱** | csharp_space_after_colon_in_inheritance_clause |
 | **適用語言** | C# |
 | **引進的版本** | Visual Studio 2017 15.7 版 |
-| **值** | `true` - 需要在型別宣告中基底或介面的冒號之後保留一個空格<br /><br />`false` - 「不」  需要在型別宣告中基底或介面的冒號之後保留一個空格 |
-| **Visual Studio 預設值** | `true` |
+| **值** | `true` - 在型別宣告中基底或介面的冒號之後放入一個空白字元<br /><br />`false` - 移除型別宣告中基底或介面內冒號之後的空格 |
+| **Visul Studio 預設值** | `true` |
 
 程式碼範例：
 
@@ -735,6 +796,26 @@ return x*(x-y);
 return x  *  (x-y);
 ```
 
+#### <a name="csharpspacebetweenmethoddeclarationparameterlistparentheses"></a>csharp_space_between_method_declaration_parameter_list_parentheses
+
+|||
+|-|-|
+| **規則名稱** | csharp_space_between_method_declaration_parameter_list_parentheses |
+| **適用語言** | C# |
+| **引進的版本** | Visual Studio 2017 15.3 版 |
+| **值** | `true` - 在方法宣告參數清單的左括弧後面和右括弧前面加上空格字元<br /><br />`false` - 移除方法宣告參數清單的左括弧後面和右括弧前面的空白字元 |
+| **Visul Studio 預設值** | `false` |
+
+程式碼範例：
+
+```csharp
+// csharp_space_between_method_declaration_parameter_list_parentheses = true
+void Bark( int x ) { ... }
+
+// csharp_space_between_method_declaration_parameter_list_parentheses = false
+void Bark(int x) { ... }
+```
+
 #### <a name="csharpspacebetweenmethoddeclarationemptyparameterlistparentheses"></a>csharp_space_between_method_declaration_empty_parameter_list_parentheses
 
 |||
@@ -760,6 +841,81 @@ void Goo(int x)
 }
 
 // csharp_space_between_method_declaration_empty_parameter_list_parentheses = false
+void Goo()
+{
+    Goo(1);
+}
+
+void Goo(int x)
+{
+    Goo();
+}
+```
+
+#### <a name="csharpspacebetweenmethoddeclarationnameandopenparenthesis"></a>csharp_space_between_method_declaration_name_and_open_parenthesis
+
+|||
+|-|-|
+| **規則名稱** | csharp_space_between_method_declaration_name_and_open_parenthesis |
+| **適用語言** | C# |
+| **值** | `true` - 在方法名稱與方法宣告的左括弧之間放入一個空白字元<br /><br />`false` - 移除方法名稱與方法宣告左括弧之間的空白字元 |
+| **Visul Studio 預設值** | `false` |
+
+程式碼範例：
+
+```csharp
+// csharp_space_between_method_declaration_name_and_open_parenthesis = true
+void M () { }
+
+// csharp_space_between_method_declaration_name_and_open_parenthesis = false
+void M() { }
+```
+
+#### <a name="csharpspacebetweenmethodcallparameterlistparentheses"></a>csharp_space_between_method_call_parameter_list_parentheses
+
+|||
+|-|-|
+| **規則名稱** | csharp_space_between_method_call_parameter_list_parentheses |
+| **適用語言** | C# |
+| **引進的版本** | Visual Studio 2017 15.3 版 |
+| **值** | `true` - 在方法呼叫的左括弧後面和右括弧前面加上空格字元<br /><br />`false` - 移除方法呼叫的左括弧後面和右括弧前面的空白字元 |
+| **Visul Studio 預設值** | `false` |
+
+程式碼範例：
+
+```csharp
+// csharp_space_between_method_call_parameter_list_parentheses = true
+MyMethod( argument );
+
+// csharp_space_between_method_call_parameter_list_parentheses = false
+MyMethod(argument);
+```
+
+#### <a name="csharpspacebetweenmethodcallemptyparameterlistparentheses"></a>csharp_space_between_method_call_empty_parameter_list_parentheses
+
+|||
+|-|-|
+| **規則名稱** | csharp_space_between_method_call_empty_parameter_list_parentheses |
+| **適用語言** | C# |
+| **引進的版本** | Visual Studio 2017 15.7 版 |
+| **值** | `true` - 在空白引數清單括弧內插入空格<br /><br />`false` - 將空白引數清單括弧內的空格移除 |
+| **Visual Studio 預設值** | `false` |
+
+程式碼範例：
+
+```csharp
+// csharp_space_between_method_call_empty_parameter_list_parentheses = true
+void Goo()
+{
+    Goo(1);
+}
+
+void Goo(int x)
+{
+    Goo( );
+}
+
+// csharp_space_between_method_call_empty_parameter_list_parentheses = false
 void Goo()
 {
     Goo(1);
@@ -807,42 +963,6 @@ void Goo(int x)
 }
 ```
 
-#### <a name="csharpspacebetweenmethodcallemptyparameterlistparentheses"></a>csharp_space_between_method_call_empty_parameter_list_parentheses
-
-|||
-|-|-|
-| **規則名稱** | csharp_space_between_method_call_empty_parameter_list_parentheses |
-| **適用語言** | C# |
-| **引進的版本** | Visual Studio 2017 15.7 版 |
-| **值** | `true` - 在空白引數清單括弧內插入空格<br /><br />`false` - 將空白引數清單括弧內的空格移除 |
-| **Visual Studio 預設值** | `false` |
-
-程式碼範例：
-
-```csharp
-// csharp_space_between_method_call_empty_parameter_list_parentheses = true
-void Goo()
-{
-    Goo(1);
-}
-
-void Goo(int x)
-{
-    Goo( );
-}
-
-// csharp_space_between_method_call_empty_parameter_list_parentheses = false
-void Goo()
-{
-    Goo(1);
-}
-
-void Goo(int x)
-{
-    Goo();
-}
-```
-
 #### <a name="csharpspaceaftercomma"></a>csharp_space_after_comma
 
 |||
@@ -862,6 +982,25 @@ int[] x = new int[] { 1, 2, 3, 4, 5 };
 int[] x = new int[] { 1,2,3,4,5 }
 ```
 
+#### <a name="csharpspacebeforecomma"></a>csharp_space_before_comma
+
+|||
+|-|-|
+| **規則名稱** | csharp_space_before_comma |
+| **適用語言** | C# |
+| **值** | `true` - 在逗號之前插入空格<br /><br />`false` - 移除逗號之前的空格 |
+| **Visul Studio 預設值** | `false` |
+
+程式碼範例：
+
+```csharp
+// csharp_space_before_comma = true
+int[] x = new int[] { 1 , 2 , 3 , 4 , 5 };
+
+// csharp_space_before_comma = false
+int[] x = new int[] { 1, 2, 3, 4, 5 };
+```
+
 #### <a name="csharpspaceafterdot"></a>csharp_space_after_dot
 
 |||
@@ -879,6 +1018,139 @@ this. Goo();
 
 // csharp_space_after_dot = false
 this.Goo();
+```
+
+#### <a name="csharpspacebeforedot"></a>csharp_space_before_dot
+
+|||
+|-|-|
+| **規則名稱** | csharp_space_before_dot |
+| **適用語言** | C# |
+| **值** | `true` - 在點之前插入空格 <br /><br />`false` - 移除點之前的空格 |
+| **Visul Studio 預設值** | `false` |
+
+程式碼範例：
+
+```csharp
+// csharp_space_before_dot = true
+this .Goo();
+
+// csharp_space_before_dot = false
+this.Goo();
+```
+
+#### <a name="csharpspaceaftersemicoloninforstatement"></a>csharp_space_after_semicolon_in_for_statement
+
+|||
+|-|-|
+| **規則名稱** | csharp_space_after_semicolon_in_for_statement |
+| **適用語言** | C# |
+| **值** | `true` - 在 `for` 陳述式的每個分號之後插入空格<br /><br />`false` - 移除 `for` 陳述式每個分號之後的空格 |
+| **Visul Studio 預設值** | `true` |
+
+程式碼範例：
+
+```csharp
+// csharp_space_after_semicolon_in_for_statement = true
+for (int i = 0; i < x.Length; i++)
+
+// csharp_space_after_semicolon_in_for_statement = false
+for (int i = 0;i < x.Length;i++)
+```
+
+##### <a name="csharpspacebeforesemicoloninforstatement"></a>csharp_space_before_semicolon_in_for_statement
+
+|||
+|-|-|
+| **規則名稱** | csharp_space_before_semicolon_in_for_statement |
+| **適用語言** | C# |
+| **值** | `true` - 在 `for` 陳述式的每個分號之前插入空格 <br /><br />`false` - 移除 `for` 陳述式每個分號之前的空格 |
+| **Visul Studio 預設值** | `false` |
+
+程式碼範例：
+
+```csharp
+// csharp_space_before_semicolon_in_for_statement = true
+for (int i = 0 ; i < x.Length ; i++)
+
+// csharp_space_before_semicolon_in_for_statement = false
+for (int i = 0; i < x.Length; i++)
+```
+
+#### <a name="csharpspacearounddeclarationstatements"></a>csharp_space_around_declaration_statements
+
+|||
+|-|-|
+| **規則名稱** | csharp_space_around_declaration_statements |
+| **適用語言** | C# |
+| **值** | `ignore` - 不要移除宣告陳述式中的額外空白字元<br /><br />`false` - 移除宣告陳述式中的額外空白字元 |
+| **Visul Studio 預設值** | `false` |
+
+程式碼範例：
+
+```csharp
+// csharp_space_around_declaration_statements = ignore
+int    x    =    0   ;
+
+// csharp_space_around_declaration_statements = false
+int x = 0;
+```
+
+#### <a name="csharpspacebeforeopensquarebrackets"></a>csharp_space_before_open_square_brackets
+
+|||
+|-|-|
+| **規則名稱** | csharp_space_before_open_square_brackets |
+| **適用語言** | C# |
+| **值** | `true` - 在左方括弧 `[` 之前插入空格 <br /><br />`false` - 移除左方括弧 `[` 之前的空格 |
+| **Visul Studio 預設值** | `false` |
+
+程式碼範例：
+
+```csharp
+// csharp_space_before_open_square_brackets = true
+int [] numbers = new int [] { 1, 2, 3, 4, 5 };
+
+// csharp_space_before_open_square_brackets = false
+int[] numbers = new int[] { 1, 2, 3, 4, 5 };
+```
+
+#### <a name="csharpspacebetweenemptysquarebrackets"></a>csharp_space_between_empty_square_brackets
+
+|||
+|-|-|
+| **規則名稱** | csharp_space_between_empty_square_brackets |
+| **適用語言** | C# |
+| **值** | `true` - 在空白方括弧 `[ ]` 之間插入空格 <br /><br />`false` - 移除空白方括弧 `[]` 之間的空格 |
+| **Visul Studio 預設值** | `false` |
+
+程式碼範例：
+
+```csharp
+// csharp_space_between_empty_square_brackets = true
+int[ ] numbers = new int[ ] { 1, 2, 3, 4, 5 };
+
+// csharp_space_between_empty_square_brackets = false
+int[] numbers = new int[] { 1, 2, 3, 4, 5 };
+```
+
+#### <a name="csharpspacebetweensquarebrackets"></a>csharp_space_between_square_brackets
+
+|||
+|-|-|
+| **規則名稱** | csharp_space_between_square_brackets |
+| **適用語言** | C# |
+| **值** | `true` - 在非空白方括弧 `[ 0 ]` 中插入空白字元 <br /><br />`false` - 移除非空白方括弧 `[0]` 之間的空白字元 |
+| **Visul Studio 預設值** | `false` |
+
+程式碼範例：
+
+```csharp
+// csharp_space_between_square_brackets = true
+int index = numbers[ 0 ];
+
+// csharp_space_between_square_brackets = false
+int index = numbers[0];
 ```
 
 ### <a name="wrap-options"></a>包裝選項

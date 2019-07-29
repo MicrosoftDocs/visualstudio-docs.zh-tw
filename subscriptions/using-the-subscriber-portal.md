@@ -1,17 +1,17 @@
 ---
 title: 使用訂閱者入口網站 - http://my.visualstudio.com | Microsoft Docs
 author: evanwindom
-ms.author: jaunger
-manager: evelynp
-ms.date: 01/04/2018
+ms.author: lank
+manager: lank
+ms.date: 07/19/2019
 ms.topic: conceptual
 description: 了解 Visual Studio 訂用帳戶入口網站上提供給您的完整權益
-ms.openlocfilehash: eab622c843a7099b5a75ca953d55666be849b246
-ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
+ms.openlocfilehash: 8ac16b09077935fc1b45d2b04acd895107096459
+ms.sourcegitcommit: 485881e6ba872c7b28a7b17ceaede845e5bea4fe
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67784774"
+ms.lasthandoff: 07/22/2019
+ms.locfileid: "68377928"
 ---
 # <a name="using-the-subscriber-portal---myvisualstudiocom"></a>使用訂閱者入口網站 - my.visualstudio.com
 
@@ -33,7 +33,7 @@ Visual Studio 訂閱者入口網站 ([https://my.visualstudio.com](https://my.vi
 ### <a name="support"></a>支援
 是否有關於 Azure 的問題？  透過論壇從 Azure 社群，或是運用 Azure 諮詢對談 (預覽) 來取得協助。  「指引對談」服務可用來協助您尋找技術性文件和產品資訊，以及協助回答與訂閱相關的問題。  特定訂閱也會包含事件型的技術性支援，以協助您解決於開發/測試環境中執行之各種 Microsoft 產品的問題。
 
-## <a name="downloadshttpsmyvisualstudiocomdownloadswtmcidomsftdocs"></a>[下載](https://my.visualstudio.com/downloads?wt.mc_id=o~msft~docs)
+## <a name="downloadshttpsmyvisualstudiocomdownloadswtmcidomsftdocs"></a>[下載次數](https://my.visualstudio.com/downloads?wt.mc_id=o~msft~docs)
 根據訂閱或程式的不同，您將可以存取各式各樣的軟體下載內容，無論是更新及修補程式，還是包含新舊軟體版本的詳盡程式庫，讓您可以在各種不同的案例中測試您的應用程式。
 
 為了讓具有與多個訂閱相關聯之單一帳戶的訂閱者能更容易地使用，當您造訪 [下載] 頁面時，您將會看見可供您最高階訂閱使用的下載內容。  如此一來，無論您目前使用的訂閱為何，您都能看見所有的下載內容。
@@ -51,3 +51,6 @@ Visual Studio 訂閱者入口網站 ([https://my.visualstudio.com](https://my.vi
 ## <a name="marketplacehttpsmarketplacevisualstudiocom"></a>[Marketplace](https://marketplace.visualstudio.com/) \(英文\)
 
 是否需要更新 Visual Studio 雲端訂閱？  想要下載適用於 Visual Studio 產品系列的最新擴充功能？  Marketplace 可協助使用者尋找延伸模組、工具與服務，以進一步改進 Azure DevOps、Azure DevOps Server 與 Visual Studio Code。 您甚至可以成為發行者，並將自己的擴充功能發行到 Marketplace 上。
+
+## <a name="next-steps"></a>後續步驟
+登入入口網站 (網址為 [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs))，並查看您的權益。  您也可以深入了解如何使用 [Microsoft 帳戶](sign-in-msa.md) (MSA)、[公司或學校帳戶](sign-in-work.md)，甚至是 [GitHub 帳戶](sign-in-github.md)登入入口網站。 

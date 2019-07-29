@@ -2,25 +2,38 @@
 title: 步驟 8：自訂測驗
 ms.date: 11/04/2016
 ms.topic: conceptual
+dev_langs:
+- csharp
+- vb
 ms.assetid: dc8edb13-1b23-47d7-b859-8c6f7888c1a9
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e4ecd650b931fe5d79ca4617022fba8577fbd39
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1868cd30cc41187ac995e71ee86d81dd0fb83d5a
+ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62996239"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68416458"
 ---
 # <a name="step-8-customize-the-quiz"></a>步驟 8：自訂測驗
 在本教學課程的最後一部分，您將探索一些方法來自訂測驗，以及延伸您已經學習過的內容。 例如，請了解程式如何建立答案絕不是分數的隨機除法問題。 若要深入了解，請將 `timeLabel` 控制項轉換為不同的色彩，並提供受測者的提示。
 
 ## <a name="to-customize-the-quiz"></a>自訂測驗
 
-- 測驗只剩五秒時，請將 [timeLabel] 控制項轉換為紅色，方法是設定其 [BackColor] 屬性 (`timeLabel.BackColor = Color.Red;`)。 在測驗結束時重設色彩。
+- 測驗只剩五秒時，請將 **timeLabel** 控制項轉換為紅色，方法是設定其 **BackColor** 屬性
+
+```csharp
+timeLabel.BackColor = Color.Red;
+```
+
+```vb
+timeLabel.BackColor = Color.Red
+```
+
+在測驗結束時重設色彩。
 
 - 在 <xref:System.Windows.Forms.NumericUpDown> 控制項中輸入正確答案時，透過播放音效來提供受測者的提示。 (您必須撰寫每個控制項之 <xref:System.Windows.Forms.NumericUpDown.ValueChanged> 事件的事件處理常式，而只要受測者變更控制項的值時就會引發該事件)。
 
