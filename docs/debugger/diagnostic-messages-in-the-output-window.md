@@ -1,12 +1,7 @@
 ---
-title: 將訊息傳送至輸出視窗 |Microsoft Docs
+title: 將訊息傳送至 [輸出] 視窗 |Microsoft Docs
 ms.date: 11/08/2018
 ms.topic: conceptual
-dev_langs:
-- CSharp
-- VB
-- FSharp
-- C++
 helpviewer_keywords:
 - diagnostic messages [C#]
 - System.Diagnostics.Debug class, Output window
@@ -26,27 +21,27 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bb4493eb55b83b9f76d1a833ba2df359ae9683e8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 47b563f58d08a732ec224bb8bbf47ad807c4e81d
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62852139"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68605385"
 ---
 # <a name="send-messages-to-the-output-window"></a>傳送訊息至 [輸出] 視窗
 
-您可以撰寫執行階段訊息**輸出**視窗中使用<xref:System.Diagnostics.Debug>類別或<xref:System.Diagnostics.Trace>類別，也就是組件的<xref:System.Diagnostics>類別庫。 使用<xref:System.Diagnostics.Debug>類別，如果您只想輸出*偵錯*程式的版本。 使用<xref:System.Diagnostics.Trace>類別，如果您想在輸出*偵錯*並*發行*版本。
+您可以使用<xref:System.Diagnostics.Debug>類別或<xref:System.Diagnostics.Trace>類別 (屬於<xref:System.Diagnostics>類別庫的一部分), 將執行時間訊息寫入 [**輸出**] 視窗。 如果您只想要在程式的*Debug*版本中輸出, 請使用類別。<xref:System.Diagnostics.Debug> 如果您想要在*Debug*和*Release*版本中同時輸出, 請使用類別。<xref:System.Diagnostics.Trace>
 
 ## <a name="output-methods"></a>輸出方法
  <xref:System.Diagnostics.Trace> 和 <xref:System.Diagnostics.Debug> 類別會提供下列輸出方法：
 
 - 各種 `Write` 方法可在不中斷執行的情況下輸出資訊。 這些方法將取代前幾版 Visual Basic 所使用的 `Debug.Print` 方法。
 
-- <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName> 和<xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName>方法，如果指定的條件失敗時中斷執行並輸出資訊。 根據預設，`Assert` 方法會在對話方塊中顯示此資訊。 如需詳細資訊，請參閱[受控碼中的判斷提示](../debugger/assertions-in-managed-code.md)。
+- <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName>和<xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName>方法, 如果指定的條件失敗, 則會中斷執行和輸出資訊。 根據預設，`Assert` 方法會在對話方塊中顯示此資訊。 如需詳細資訊，請參閱[受控碼中的判斷提示](../debugger/assertions-in-managed-code.md)。
 
-- <xref:System.Diagnostics.Debug.Fail%2A?displayProperty=fullName>和<xref:System.Diagnostics.Trace.Fail%2A?displayProperty=fullName>一定會中斷執行並輸出資訊的方法。 根據預設，`Fail` 方法會在對話方塊中顯示資訊。
+- <xref:System.Diagnostics.Debug.Fail%2A?displayProperty=fullName> 和<xref:System.Diagnostics.Trace.Fail%2A?displayProperty=fullName>方法, 一律會中斷執行和輸出資訊。 根據預設，`Fail` 方法會在對話方塊中顯示資訊。
 
-**輸出**視窗也可以顯示相關的資訊：
+[**輸出**] 視窗也可以顯示下列資訊:
 
 - 偵錯工具已載入或卸載的模組。
 
@@ -59,6 +54,6 @@ ms.locfileid: "62852139"
 ## <a name="see-also"></a>另請參閱
 - [偵錯工具安全性](../debugger/debugger-security.md)
 - [輸出視窗](../ide/reference/output-window.md)
-- [追蹤和檢測的應用程式](/dotnet/framework/debug-trace-profile/tracing-and-instrumenting-applications)
+- [追蹤和檢測應用程式](/dotnet/framework/debug-trace-profile/tracing-and-instrumenting-applications)
 - [C#, F#, and Visual Basic project types](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md) (C#、F# 和 Visual Basic 專案類型)
 - [對受控碼進行偵錯](../debugger/debugging-managed-code.md)
