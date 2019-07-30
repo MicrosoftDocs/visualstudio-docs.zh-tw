@@ -1,6 +1,6 @@
 ---
 title: 使用 TextTransform 公用程式產生檔案
-ms.date: 03/22/2018
+ms.date: 07/26/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - text templates, TextTransform utility
@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 55ebaaa05670cdea0685b7d337c7f3b3a9733cb0
-ms.sourcegitcommit: 9fc8b144d4ed1c46aba87c0b7e1d24454e0eea9d
+ms.openlocfilehash: f224419cd92b760d71045859a13887a83115b987
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "68493094"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68606089"
 ---
 # <a name="generate-files-with-the-texttransform-utility"></a>產生使用 TextTransform 公用程式的檔案
 
@@ -24,21 +24,37 @@ TextTransform.exe 是命令列工具，可用來轉換文字範本。 當您呼�
 > [!NOTE]
 > 如果您想要執行建置程序的一部分的文字轉換，請考慮使用 MSBuild 的文字轉換工作。 如需詳細資訊，請參閱 <<c0> [ 建置流程中的程式碼產生](../modeling/code-generation-in-a-build-process.md)。 在機器安裝 Visual Studio 中，您也可以撰寫的應用程式或可以轉換文字範本的 Visual Studio 擴充功能。 如需詳細資訊，請參閱 <<c0> [ 藉由使用自訂主機處理文字範本](../modeling/processing-text-templates-by-using-a-custom-host.md)。
 
- TextTransform.exe 位於下列目錄：
+TextTransform.exe 位於下列目錄：
+ 
+::: moniker range=">=vs-2019"
 
- **\Program Files (x86) \Microsoft Visual Studio\2019\Professional\Common7\IDE**
+**\Program Files (x86) \Microsoft Visual Studio\2019\Professional\Common7\IDE**
 
-Professional edition，或
+若為 Professional edition, 或
 
- **\Program Files (x86) \Microsoft Visual Studio\2019\Enterprise\Common7\IDE**
+**\Program Files (x86) \Microsoft Visual Studio\2019\Enterprise\Common7\IDE**
 
- 針對 Enterprise edition。
+適用于 Enterprise edition。
+
+::: moniker-end
+ 
+::: moniker range="vs-2017"
+
+**\Program Files (x86)\Microsoft Visual Studio\2017\Professional\Common7\IDE**
+
+若為 Professional edition, 或
+
+**\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE**
+
+適用于 Enterprise edition。
 
 在舊版的 Visual Studio 中，在下列位置找到的檔案：
 
 **\Program Files (x86)\Common Files\Microsoft Shared\TextTemplating\{version}**
 
 其中 {version} 取決於已安裝先前版本。
+
+::: moniker-end
 
 ## <a name="syntax"></a>語法
 
