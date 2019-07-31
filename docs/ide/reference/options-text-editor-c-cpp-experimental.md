@@ -8,15 +8,15 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.C\C++.Experimental
 author: mikeblome
 ms.author: mblome
-manager: wpickett
+manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 088359aeabc45966aed927693ecbab75751eca2a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 75f36d66ea46e7a0474c3b76ae000f745337fc45
+ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62817919"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68461376"
 ---
 # <a name="options-text-editor-cc-experimental"></a>選項、文字編輯器、C/C++、實驗
 
@@ -24,11 +24,11 @@ ms.locfileid: "62817919"
 
 ::: moniker range="vs-2017"
 
-本文描述 Visual Studio 2017 中的選項。 針對 Visual Studio 2015，請在目錄上方的選取器中選取 [2015]。
+本文描述 Visual Studio 2017 中的選項。 針對 Visual Studio 2015，請在目錄上方的選取器中選取 [2015]  。
 
 ::: moniker-end
 
-若要存取本屬性頁面，請按 **Control**+**Q** 以啟動搜尋方塊，然後鍵入 **experimental**。 鍵入前幾個字母之後，搜尋就會找到頁面。 您也可以選擇 [工具] > [選項]，並依序展開 [文字編輯器] 和 [C/C++]，然後選擇 [實驗性]，即可到達頁面。
+若要存取本屬性頁面，請按 **Control**+**Q** 以啟動搜尋方塊，然後鍵入 **experimental**。 鍵入前幾個字母之後，搜尋就會找到頁面。 您也可以選擇 [工具]   > [選項]  ，並依序展開 [文字編輯器]  和 [C/C++]  ，然後選擇 [實驗性]  ，即可到達頁面。
 
 這些功能可在 Visual Studio 安裝中使用。
 

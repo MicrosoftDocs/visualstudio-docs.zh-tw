@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 03ca4a3b247375f18f3889ae7c63b1405ca942a4
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 68ed41eeecde853459bc9c817d84bd433788084c
+ms.sourcegitcommit: 9fc8b144d4ed1c46aba87c0b7e1d24454e0eea9d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66747769"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68493306"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>使用測試總管執行單元測試
 
@@ -29,7 +29,7 @@ Visual Studio 2015 包含 Managed 程式碼和機器碼皆適用的 Microsoft �
 
 在建置測試專案後，這些測試便會出現在 [測試總管] 中。 如果沒有看到 [測試總管]，請選擇 Visual Studio 功能表上的 [測試]  ，接著選擇 [Windows]  ，然後選擇 [測試總管]  。
 
-![單元測試總管](../test/media/ute_failedpassednotrunsummary.png)
+![測試總管](../test/media/ute_failedpassednotrunsummary.png)
 
 當您執行、寫入、重新執行您的測試時，測試總管會顯示 [失敗的測試]  、[通過的測試]  、[略過的測試]  和 [未執行的測試]  預設群組中的結果。 您可以變更測試總管群組測試的方式。
 
@@ -228,3 +228,4 @@ FilterName:"Criteria" -FilterName:"SubsetCriteria"
 
 - [對程式碼進行單元測試](../test/unit-test-your-code.md)
 - [以 64 位元處理序的形式執行單元測試](../test/run-a-unit-test-as-a-64-bit-process.md)
+- [測試清單編輯器常見問題集](test-explorer-faq.md)

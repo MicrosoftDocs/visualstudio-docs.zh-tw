@@ -2,19 +2,19 @@
 title: Visual C++ 程式碼片段
 ms.date: 11/04/2016
 ms.topic: reference
-author: gewarren
-ms.author: gewarren
-manager: jillfra
+author: mikeblome
+ms.author: mblome
+manager: markl
 dev_langs:
 - CPP
 ms.workload:
 - cplusplus
-ms.openlocfilehash: de27b201dadb23bb8209ebee24b34386f8fa5127
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9c1bcef00116e0c5f09099344926d924113e5982
+ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62581756"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68461629"
 ---
 # <a name="visual-c-code-snippets"></a>Visual C++ 程式碼片段
 
@@ -24,15 +24,15 @@ ms.locfileid: "62581756"
 
 ## <a name="insert-a-code-snippet"></a>插入程式碼片段
 
-若要插入程式碼片段，請開啟 C++ 程式碼檔案 (*.cpp* 或 *.h*)，在該檔案內部任意處按一下，然後執行下列其中一項動作：
+若要插入程式碼片段，請開啟 C++ 程式碼檔案 ( *.cpp* 或 *.h*)，在該檔案內部任意處按一下，然後執行下列其中一項動作：
 
-- 按一下滑鼠右鍵以取得操作功能表，然後選取 [插入程式碼片段]
+- 按一下滑鼠右鍵以取得操作功能表，然後選取 [插入程式碼片段] 
 
-- 在 [編輯/IntelliSense] 功能表中，選取 [插入程式碼片段]
+- 在 [編輯/IntelliSense]  功能表中，選取 [插入程式碼片段] 
 
 - 使用快速鍵：**Ctrl**+**K**+**X**
 
-您應該會看到開頭為 **#if** 的選擇清單。 當您選取 [#if] 時，應該會看到下列程式碼已新增至檔案：
+您應該會看到開頭為 **#if** 的選擇清單。 當您選取 [#if]  時，應該會看到下列程式碼已新增至檔案：
 
 ```cpp
 #if 0
@@ -46,13 +46,13 @@ ms.locfileid: "62581756"
 
 若要使用程式碼片段來圍繞已選取的程式碼，請選取其中一行 (或多行)，然後執行下列其中一項動作：
 
-- 按一下滑鼠右鍵以取得操作功能表，然後選取 [範圍陳述式]
+- 按一下滑鼠右鍵以取得操作功能表，然後選取 [範圍陳述式] 
 
-- 在 [編輯] > [IntelliSense] 功能表中，選取 [範圍陳述式]
+- 在 [編輯]   > [IntelliSense]  功能表中，選取 [範圍陳述式] 
 
 - 從鍵盤按：**Ctrl**+**K**+**S**
 
-選取 [#if]。 您應該會看到類似下面的內容：
+選取 [#if]  。 您應該會看到類似下面的內容：
 
 ```cpp
 #if 0
@@ -64,7 +64,7 @@ ms.locfileid: "62581756"
 
 ## <a name="where-can-i-find-a-complete-list-of-the-c-code-snippets"></a>可以找到 C++ 程式碼片段完整清單的位置
 
-移至 [工具] 功能表上的 [程式碼片段管理員]，並將 [語言] 設定為 [Visual C++]，即可找到 C++ 程式碼片段的完整清單。 在下面的視窗中，展開 [Visual C++]。 您應該會看到所有的 C++ 程式碼片段依照字母順序排列的名稱。
+移至 [工具]  功能表上的 [程式碼片段管理員]  ，並將 [語言]  設定為 [Visual C++]  ，即可找到 C++ 程式碼片段的完整清單。 在下面的視窗中，展開 [Visual C++]  。 您應該會看到所有的 C++ 程式碼片段依照字母順序排列的名稱。
 
 大部分程式碼片段的名稱都一目了然，但某些名稱可能會造成混淆。
 
@@ -144,7 +144,7 @@ for (int i = length - 1; i >= 0; i--)
 
 ## <a name="the-destructor-snippet-"></a>解構函式程式碼片段 (~)
 
-解構函式程式碼片段 (**~**) 會在不同的內容中顯示不同的行為。 如果您將此程式碼片段插入類別時，它會提供該類別的解構函式。 例如，假設有以下的程式碼：
+解構函式程式碼片段 ( **~** ) 會在不同的內容中顯示不同的行為。 如果您將此程式碼片段插入類別時，它會提供該類別的解構函式。 例如，假設有以下的程式碼：
 
 ```cpp
 class SomeClass {

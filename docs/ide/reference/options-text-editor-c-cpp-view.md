@@ -8,21 +8,21 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.C\C++.View
 author: mikeblome
 ms.author: mblome
-manager: wpickett
+manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9f4705b6326a3a2968084ecbd1bd385954528017
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b15952c8262ea1e8dec1e89816a5887f9bfe9bf6
+ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62817761"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68461277"
 ---
 # <a name="options-text-editor-cc-view"></a>選項、文字編輯器、C/C++、檢視
 
 在使用 C 或 C++ 進行程式設計時，請使用這些屬性頁變更程式碼編輯器的預設行為。
 
-若要存取此屬性頁面，請選擇 [工具] > [選項] 並展開 [文字編輯器]、[C/C++]，然後選擇 [檢視]。
+若要存取此屬性頁面，請選擇 [工具]   > [選項]  並展開 [文字編輯器]  、[C/C++]  ，然後選擇 [檢視]  。
 
 ## <a name="code-squiggles"></a>程式碼波浪線
 

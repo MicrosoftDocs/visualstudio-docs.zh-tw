@@ -834,7 +834,7 @@
           href: ide/reference/call-hierarchy.md
         - name: 預覽變更
           href: ide/preview-changes.md
-        - name: 選擇工具箱項目，WPF 元件
+        - name: 選擇工具箱項目、WPF 元件
           href: ide/reference/choose-toolbox-items-wpf-components.md
         - name: 程式碼片段選擇器
           href: ide/reference/code-snippet-picker.md
@@ -842,7 +842,7 @@
           href: ide/reference/command-window.md
         - name: 轉換對話方塊
           href: ide/reference/convert-dialog-box.md
-        - name: 錯誤清單視窗
+        - name: '[錯誤清單] 視窗。'
           href: ide/reference/error-list-window.md
         - name: JavaScript、檔案屬性
           href: ide/reference/file-properties-javascript.md
@@ -856,127 +856,147 @@
           items:
             - name: 選項對話方塊
               href: ide/reference/options-dialog-box-visual-studio.md
-            - name: 環境選項
+            - name: 環境
               items:
-                - name: 環境選項對話方塊
-                  href: ide/reference/environment-options-dialog-box.md
-                - name: 環境 - 一般
+                - name: 一般
                   href: ide/reference/general-environment-options-dialog-box.md
-                - name: 環境 - 自動回復
-                  href: ide/reference/autorecover-environment-options-dialog-box.md
-                - name: 環境 - 文件
-                  href: ide/reference/documents-environment-options-dialog-box.md
-                - name: 環境 - 延伸模組
-                  href: ide/reference/extensions-and-updates-environment-options-dialog-box.md
-                - name: 環境 - 尋找和取代
-                  href: ide/reference/find-and-replace-environment-options-dialog-box.md
-                - name: 環境 - 字型和色彩
-                  href: ide/reference/fonts-and-colors-environment-options-dialog-box.md
-                - name: 環境 - 匯入和匯出設定
-                  href: ide/reference/import-and-export-settings-environment-options-dialog-box.md
-                - name: 環境 - 國際設定
-                  href: ide/reference/international-settings-environment-options-dialog-box.md
-                - name: 環境 - 鍵盤
-                  href: ide/reference/keyboard-environment-options-dialog-box.md
-                - name: 環境 - 通知
-                  href: ide/reference/notifications-environment-options-dialog-box.md
-                - name: 環境 - 快速啟動
-                  href: ide/reference/quick-launch-environment-options-dialog-box.md
-                - name: 環境 - 啟動
-                  href: ide/reference/startup-environment-options-dialog-box.md
-                - name: 環境 - 帳戶
+                - name: 帳戶
                   href: ide/reference/accounts-environment-options-dialog-box.md
-                - name: 環境 - 索引標籤和視窗
+                - name: 自動回復
+                  href: ide/reference/autorecover-environment-options-dialog-box.md
+                - name: 文件
+                  href: ide/reference/documents-environment-options-dialog-box.md
+                - name: 延伸模組
+                  href: ide/reference/extensions-and-updates-environment-options-dialog-box.md
+                - name: 尋找和取代
+                  href: ide/reference/find-and-replace-environment-options-dialog-box.md
+                - name: 字型和色彩
+                  href: ide/reference/fonts-and-colors-environment-options-dialog-box.md
+                - name: 匯入和匯出設定
+                  href: ide/reference/import-and-export-settings-environment-options-dialog-box.md
+                - name: 國際設定
+                  href: ide/reference/international-settings-environment-options-dialog-box.md
+                - name: 鍵盤
+                  href: ide/reference/keyboard-environment-options-dialog-box.md
+                - name: 預覽功能
+                  href: ide/reference/environment-preview-features-options.md
+                - name: 通知
+                  href: ide/reference/notifications-environment-options-dialog-box.md
+                - name: 快速啟動
+                  href: ide/reference/quick-launch-environment-options-dialog-box.md
+                - name: 啟動
+                  href: ide/reference/startup-environment-options-dialog-box.md
+                - name: 索引標籤和視窗
                   href: ide/reference/tabs-and-windows-environment-options-dialog-box.md
-                - name: 環境 - 工作清單
+                - name: 工作清單
                   href: ide/reference/task-list-environment-options-dialog-box.md
-                - name: 環境 - 信任設定
+                - name: 信任設定
                   href: ide/reference/trust-settings.md
-                - name: 環境 - 網頁瀏覽器
+                - name: 網頁瀏覽器
                   href: ide/reference/web-browser-environment-options-dialog-box.md
-            - name: 文字編輯器選項
+            - name: 專案和方案
               items:
-                - name: 文字編輯器選項對話方塊
-                  href: ide/reference/text-editor-options-dialog-box.md
-                - name: 文字編輯器 - 一般
-                  href: ide/reference/options-text-editor-general.md
-                - name: 文字編輯器 - 副檔名
-                  href: ide/reference/options-text-editor-file-extension.md
-                - name: 文字編輯器 - 所有語言
-                  href: ide/reference/options-text-editor-all-languages.md
-                - name: 文字編輯器 - 所有語言、捲軸
-                  href: ide/reference/options-text-editor-all-languages-scroll-bars.md
-                - name: 文字編輯器 - 索引標籤、所有語言
-                  href: ide/reference/options-text-editor-all-languages-tabs.md
-                - name: 文字編輯器 - 基本 (Visual Basic)、進階
-                  href: ide/reference/options-text-editor-basic-visual-basic.md
-                - name: 文字編輯器 - 基本 (Visual Basic)、程式碼樣式
-                  href: ide/code-styles-and-code-cleanup.md
-                - name: 文字編輯器 - 基本 (Visual Basic)、IntelliSense
-                  href: ide/visual-basic-specific-intellisense.md
-                - name: 文字編輯器 - 格式、C/C++
-                  href: ide/reference/options-text-editor-c-cpp-formatting.md
-                - name: 文字編輯器 - 進階、C/C++
-                  href: ide/reference/options-text-editor-c-cpp-advanced.md
-                - name: 文字編輯器 - 實驗、C/C++
-                  href: ide/reference/options-text-editor-c-cpp-experimental.md
-                - name: 文字編輯器 - C/C++、檢視
-                  href: ide/reference/options-text-editor-c-cpp-view.md
-                - name: '文字編輯器 - C#、程式碼樣式、格式化'
-                  href: ide/reference/options-text-editor-csharp-formatting.md
-                - name: '文字編輯器 - 進階、C#'
-                  href: ide/reference/options-text-editor-csharp-advanced.md
-                - name: '文字編輯器 - IntelliSense、C#'
-                  href: ide/reference/options-text-editor-csharp-intellisense.md
-                - name: '文字編輯器 - F#、進階'
-                  href: ide/reference/options-text-editor-fsharp-advanced.md
-                - name: '文字編輯器 - F#、程式碼修正'
-                  href: ide/reference/options-text-editor-fsharp-code-fixes.md
-                - name: '文字編輯器 - F#、CodeLens'
-                  href: ide/reference/options-text-editor-fsharp-codelens.md
-                - name: '文字編輯器 - F#、IntelliSense'
-                  href: ide/reference/options-text-editor-fsharp-intellisense.md
-                - name: 文字編輯器 - HTML (Web Forms)、格式
-                  href: ide/reference/options-text-editor-html-formatting.md
-                - name: 文字編輯器 - HTML (Web Forms)、雜項
-                  href: ide/reference/options-text-editor-html-miscellaneous.md
-                - name: 文字編輯器 - HTML (Web Forms)、驗證
-                  href: ide/reference/options-text-editor-html-validation.md
-                - name: 文字編輯器 - JavaScript、程式碼驗證
-                  href: ide/reference/options-text-editor-javascript-code-validation.md
-                - name: 文字編輯器 - 格式、JavaScript
-                  href: ide/reference/options-text-editor-javascript-formatting.md
-                - name: 文字編輯器 - IntelliSense、JavaScript
-                  href: ide/reference/options-text-editor-javascript-intellisense.md
-                - name: 文字編輯器 - JavaScript、Linting
-                  href: ide/reference/options-text-editor-javascript-linting.md
-                - name: 文字編輯器 - JavaScript、專案
-                  href: ide/reference/options-text-editor-javascript-project.md
-                - name: 文字編輯器 - U-SQL、格式設定
-                  href: ide/reference/options-text-editor-usql-formatting.md
-                - name: 文字編輯器 - U-SQL、IntelliSense
-                  href: ide/reference/options-text-editor-usql-intellisense.md
-                - name: 文字編輯器 - 格式、XAML
-                  href: ide/reference/options-text-editor-xaml-formatting.md
-                - name: 文字編輯器 - XAML、雜項
-                  href: ide/reference/options-text-editor-xaml-miscellaneous.md
-                - name: 文字編輯器 - XML、格式設定
-                  href: ide/reference/options-text-editor-xml-formatting.md
-                - name: 文字編輯器 - XML、雜項
-                  href: ide/reference/options-text-editor-xml-miscellaneous.md
-            - name: 專案和解決方案選項
-              items:
-                - name: 專案和方案、選項對話方塊
+                - name: 一般
                   href: ide/reference/projects-and-solutions-options-dialog-box.md
-                - name: 專案和方案 - 建置並執行
+                - name: 建置並執行
                   href: ide/reference/options-dialog-box-projects-and-solutions-build-and-run.md
-                - name: 專案和方案 - Web 專案
-                  href: ide/reference/options-dialog-box-projects-and-solutions-web-projects.md
-                - name: 專案和方案 - VB 預設值
+                - name: 位置
+                  href: ide/reference/projects-solutions-locations-options.md
+                - name: VB 預設值
                   href: ide/reference/visual-basic-defaults-projects-options-dialog-box.md
-                - name: 專案和方案 - VC++ 專案設定
+                - name: VC++ 專案設定
                   href: ide/reference/vcpp-project-settings-projects-and-solutions-options-dialog-box.md
-            - name: XAML 設計工具對話方塊
+                - name: Web 專案
+                  href: ide/reference/options-dialog-box-projects-and-solutions-web-projects.md
+            - name: 文字編輯器
+              items:
+                - name: 一般
+                  href: ide/reference/options-text-editor-general.md
+                - name: 副檔名
+                  href: ide/reference/options-text-editor-file-extension.md
+                - name: 所有語言
+                  items:
+                    - name: 一般
+                      href: ide/reference/options-text-editor-all-languages.md
+                    - name: 捲軸
+                      href: ide/reference/options-text-editor-all-languages-scroll-bars.md
+                    - name: 定位點
+                      href: ide/reference/options-text-editor-all-languages-tabs.md
+                - name: 基本
+                  items:
+                    - name: 進階
+                      href: ide/reference/options-text-editor-basic-visual-basic.md
+                    - name: 程式碼樣式
+                      href: ide/code-styles-and-code-cleanup.md
+                    - name: IntelliSense
+                      href: ide/visual-basic-specific-intellisense.md
+                - name: 'C#'
+                  items:
+                    - name: 進階
+                      href: ide/reference/options-text-editor-csharp-advanced.md
+                    - name: '[程式碼樣式] > [格式化]'
+                      href: ide/reference/options-text-editor-csharp-formatting.md
+                    - name: IntelliSense
+                      href: ide/reference/options-text-editor-csharp-intellisense.md
+                - name: C/C++
+                  items:
+                    - name: 進階
+                      href: ide/reference/options-text-editor-c-cpp-advanced.md
+                    - name: 實驗
+                      href: ide/reference/options-text-editor-c-cpp-experimental.md
+                    - name: 格式化
+                      href: ide/reference/options-text-editor-c-cpp-formatting.md
+                    - name: 檢視
+                      href: ide/reference/options-text-editor-c-cpp-view.md
+                - name: 'F#'
+                  items:
+                    - name: 進階
+                      href: ide/reference/options-text-editor-fsharp-advanced.md
+                    - name: 程式碼修正
+                      href: ide/reference/options-text-editor-fsharp-code-fixes.md
+                    - name: CodeLens
+                      href: ide/reference/options-text-editor-fsharp-codelens.md
+                    - name: IntelliSense
+                      href: ide/reference/options-text-editor-fsharp-intellisense.md
+                - name: HTML (Web Form)
+                  items:
+                    - name: 格式化
+                      href: ide/reference/options-text-editor-html-formatting.md
+                    - name: 其他
+                      href: ide/reference/options-text-editor-html-miscellaneous.md
+                    - name: 驗證
+                      href: ide/reference/options-text-editor-html-validation.md
+                - name: JavaScript/TypeScript
+                  items:
+                    - name: 程式碼驗證
+                      href: ide/reference/options-text-editor-javascript-code-validation.md
+                    - name: 格式化
+                      href: ide/reference/options-text-editor-javascript-formatting.md
+                    - name: IntelliSense
+                      href: ide/reference/options-text-editor-javascript-intellisense.md
+                    - name: 進行 Lint 檢查
+                      href: ide/reference/options-text-editor-javascript-linting.md
+                    - name: 專案
+                      href: ide/reference/options-text-editor-javascript-project.md
+                - name: U-SQL
+                  items:
+                    - name: 格式化
+                      href: ide/reference/options-text-editor-usql-formatting.md
+                    - name: IntelliSense
+                      href: ide/reference/options-text-editor-usql-intellisense.md
+                - name: XAML
+                  items:
+                    - name: 格式化
+                      href: ide/reference/options-text-editor-xaml-formatting.md
+                    - name: 其他
+                      href: ide/reference/options-text-editor-xaml-miscellaneous.md
+                - name: XML
+                  items:
+                    - name: 格式化
+                      href: ide/reference/options-text-editor-xml-formatting.md
+                    - name: 其他
+                      href: ide/reference/options-text-editor-xml-miscellaneous.md
+            - name: XAML 設計工具
               href: ide/reference/xaml-designer.md
         - name: 輸出視窗
           href: ide/reference/output-window.md
