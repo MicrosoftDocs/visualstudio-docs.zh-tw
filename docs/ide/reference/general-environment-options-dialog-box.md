@@ -1,47 +1,43 @@
 ---
 title: 選項對話方塊、環境、一般
-ms.date: 03/28/2019
+ms.date: 07/26/2019
 ms.topic: reference
 f1_keywords:
-- VS.Message.0x800a002e
-- VS.ToolsOptionsPages.Environment.General
 - VS.Environment.General
+- VS.Message.0x800a002e
+- VS.OptionsDialog.Environment
+- VS.ToolsOptionsPages.Environment
+- VS.ToolsOptionsPages.Environment.General
 helpviewer_keywords:
-- MRU lists
-- windows, customizing
-- MDI, environment options
-- speed, environment animation
-- File menu
-- menus, customizing
-- Windows menu customizing
-- status bars, displaying
-- IDE, startup options
-- editors, autocompletion
+- recently used file lists
+- Windows menu, customizing
+- status bar, displaying
 - Options dialog box, General Environment
 - General Environment Options dialog box
+- Environment Options dialog box
 author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a2f860293669ddab035ddd1c53e09dbb9962df01
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c4024209ac0c1b2766b67984710b8349c6d66d91
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62790131"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68605439"
 ---
 # <a name="options-dialog-box-environment--general"></a>選項對話方塊：環境 \> 一般
 
-使用此頁面來變更整合式開發環境 (IDE) 之色彩佈景主題、狀態列設定和副檔名關聯等其他選項。 開啟 [工具] 功能表，並選擇 [選項]，然後開啟 [環境] 資料夾，再選擇 [一般] 頁面，即可存取 [選項] 對話方塊。 如果此頁面未出現在清單中，請在 [選項] 對話方塊中選取 [顯示所有設定] 核取方塊。
+使用此頁面來變更整合式開發環境 (IDE) 之色彩佈景主題、狀態列設定和副檔名關聯等其他選項。 開啟 [工具]  功能表，並選擇 [選項]  ，然後開啟 [環境]  資料夾，再選擇 [一般]  頁面，即可存取 [選項]  對話方塊。 如果此頁面未出現在清單中，請在 [選項]  對話方塊中選取 [顯示所有設定]  核取方塊。
 
 ## <a name="visual-experience"></a>視覺效果
 
 **色彩佈景主題**
 
-選擇 IDE 的 [藍色]、[淺色]、[深色] 或 [藍色 (更高對比)] 色彩佈景主題。
+選擇 IDE 的 [藍色]  、[淺色]  、[深色]  或 [藍色 (更高對比)]  色彩佈景主題。
 
-您可以從 [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.VisualStudio2017ColorThemeEditor) 下載和安裝 **Visual Studio 色彩佈景主題編輯器**，以安裝其他預先定義的佈景主題，以及建立自訂佈景主題。 安裝此工具之後，其他色彩佈景主題會出現在 [色彩佈景主題] 清單方塊中。
+您可以從 [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.VisualStudio2017ColorThemeEditor) 下載和安裝 **Visual Studio 色彩佈景主題編輯器**，以安裝其他預先定義的佈景主題，以及建立自訂佈景主題。 安裝此工具之後，其他色彩佈景主題會出現在 [色彩佈景主題]  清單方塊中。
 
 **將標題大寫樣式套用至功能表列**
 
@@ -54,8 +50,8 @@ ms.locfileid: "62790131"
 此選項可啟用或停用個別監視器 DPI (每英吋的點數) 感知 (或 *PMA*)。 當 PMA 啟用時，使用任何監視器顯示比例與 DPI 設定都能清晰顯示 Visual Studio 使用者介面，包括跨多個監視器顯示時。 若要啟用 PMA，您需要 Windows 10 2018 4 月更新或更新版本和 .NET Framework 4.8 或更新版本。 (如果不符合這兩個必要條件，這個選項會呈現灰色。)
 
 > [!TIP]
-> - Windows 10 有設定顯示為 [讓 Windows 嘗試修正應用程式，讓他們不會模糊不清]。 如果您選取 [為不同像素密度的螢幕將呈現方式最佳化] 選項，則**開啟**該 Windows 設定會有顯著效果。
-> - Windows 10 也包含 [程式相容性疑難排解員]。 我們不建議您嘗試使用該疑難排解工具來修正 Visual Studio 的外觀。
+> - Windows 10 有設定顯示為 [讓 Windows 嘗試修正應用程式，讓他們不會模糊不清]  。 如果您選取 [為不同像素密度的螢幕將呈現方式最佳化]  選項，則**開啟**該 Windows 設定會有顯著效果。
+> - Windows 10 也包含 [程式相容性疑難排解員]  。 我們不建議您嘗試使用該疑難排解工具來修正 Visual Studio 的外觀。
 
 ::: moniker-end
 
@@ -66,13 +62,13 @@ ms.locfileid: "62790131"
 ::: moniker range="vs-2017"
 
 > [!TIP]
-> Windows 10 有設定顯示為 [讓 Windows 嘗試修正應用程式，讓他們不會模糊不清]。 如果 Visual Studio 在您的監視器上顯示模糊，建議您**開啟**該設定。 請考慮升級至 [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019)，因為它是感知個別監視器 DPI 的應用程式，能大幅改善顯示清晰度。
+> Windows 10 有設定顯示為 [讓 Windows 嘗試修正應用程式，讓他們不會模糊不清]  。 如果 Visual Studio 在您的監視器上顯示模糊，建議您**開啟**該設定。 請考慮升級至 [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019)，因為它是感知個別監視器 DPI 的應用程式，能大幅改善顯示清晰度。
 
 ::: moniker-end
 
 **啟用豐富的用戶端效果**
 
-啟用 Visual Studio 的完整視覺效果 (包括漸層和動畫)。 使用遠端桌面連線或較舊的圖形介面卡時，請清除這個選項，因為這些功能在這些情況下的效能可能不佳。 只有在您清除 [自動根據用戶端效能調整視覺效果] 選項時，才能使用這個選項。
+啟用 Visual Studio 的完整視覺效果 (包括漸層和動畫)。 使用遠端桌面連線或較舊的圖形介面卡時，請清除這個選項，因為這些功能在這些情況下的效能可能不佳。 只有在您清除 [自動根據用戶端效能調整視覺效果]  選項時，才能使用這個選項。
 
 **使用硬體圖形加速 (如果有)**
 
@@ -82,11 +78,11 @@ ms.locfileid: "62790131"
 
 **要在 Windows 功能表中顯示的項目**
 
-自訂 [視窗] 功能表之 [視窗] 清單中顯示的視窗數目。 輸入 1 和 24 之間的數字。 預設值為 10。
+自訂 [視窗]  功能表之 [視窗] 清單中顯示的視窗數目。 輸入 1 和 24 之間的數字。 預設值為 10。
 
 **顯示在最近使用的清單中的項目數**
 
-自訂出現在 [檔案] 功能表上的最近使用的專案和檔案數目。 輸入 1 和 24 之間的數字。 預設值為 10。 這是擷取最近使用的專案和檔案的簡單方法。
+自訂出現在 [檔案]  功能表上的最近使用的專案和檔案數目。 輸入 1 和 24 之間的數字。 預設值為 10。 這是擷取最近使用的專案和檔案的簡單方法。
 
 **顯示狀態列**
 
@@ -94,13 +90,12 @@ ms.locfileid: "62790131"
 
 **[關閉] 按鈕只影響作用中的工具視窗**
 
-指定按一下 [關閉] 按鈕時，只會關閉具有焦點的工具視窗，而非停駐集中的所有工具視窗。 根據預設，這個選項是選取的。
+指定按一下 [關閉]  按鈕時，只會關閉具有焦點的工具視窗，而非停駐集中的所有工具視窗。 根據預設，這個選項是選取的。
 
 **自動隱藏 按鈕只影響作用中的工具視窗**
 
-指定按一下 [自動隱藏] 按鈕時，只會自動隱藏具有焦點的工具視窗，而非停駐集中的所有工具視窗。 根據預設，這個選項並未選取。
+指定按一下 [自動隱藏]  按鈕時，只會自動隱藏具有焦點的工具視窗，而非停駐集中的所有工具視窗。 根據預設，這個選項並未選取。
 
 ## <a name="see-also"></a>另請參閱
 
-- [環境選項對話方塊](../../ide/reference/environment-options-dialog-box.md)
 - [自訂視窗版面配置](../../ide/customizing-window-layouts-in-visual-studio.md)

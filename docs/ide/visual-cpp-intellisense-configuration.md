@@ -2,17 +2,17 @@
 title: 設定 C++ IntelliSense 專案
 ms.date: 10/08/2018
 ms.topic: conceptual
-author: mblome
+author: mikeblome
 ms.author: mblome
-manager: wpickett
+manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fef5f63d8c3fd843ed6f92a313102a9c9879003f
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: 605ad454d00387d9a9094a518b4afed279fcc190
+ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66715368"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68461592"
 ---
 # <a name="configure-a-c-project-for-intellisense"></a>設定 C++ IntelliSense 專案
 
@@ -120,6 +120,6 @@ IntelliSense 組建並不會產生二進位檔，但它仍可能會失敗。 其
 
 若要深入了解 TRACEDESIGNTIME 環境變數，請參閱 [Roslyn](https://github.com/dotnet/roslyn/wiki/Diagnosing-Project-System-Build-Errors) \(英文\) 與[常見專案系統](https://github.com/dotnet/project-system/blob/master/docs/design-time-builds.md) \(英文\)。 這些文章中的資訊皆與 C++ 專案相關。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [Visual C++ IntelliSense](visual-cpp-intellisense.md)

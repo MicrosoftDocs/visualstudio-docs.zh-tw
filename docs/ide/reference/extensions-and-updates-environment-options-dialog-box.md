@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d7c49cc7946f9fea988c57a4ba782ec93a6294fa
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9d2ddf174255a7db85e3eb61d71472748287be90
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62790846"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68605859"
 ---
 # <a name="options-dialog-box-environment--extensions"></a>選項對話方塊：環境 \> 延伸模組
 
@@ -36,7 +36,3 @@ ms.locfileid: "62790846"
 ## <a name="additional-extension-galleries"></a>其他擴充組件庫
 
 這個企業版功能可支援專屬擴充功能的組件庫。 如需詳細資訊，請參閱[私人資源庫](../../extensibility/private-galleries.md)。
-
-## <a name="see-also"></a>另請參閱
-
-- [環境選項對話方塊](../../ide/reference/environment-options-dialog-box.md)

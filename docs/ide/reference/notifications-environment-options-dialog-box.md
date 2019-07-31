@@ -11,17 +11,13 @@ manager: jillfra
 ms.workload:
 - multiple
 monikerRange: vs-2017
-ms.openlocfilehash: 702e1dfa14874691b72ce42e21cf6057f56d8394
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6a475397969ce5ebdeff15238f548d42ceee60d6
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62989883"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68606027"
 ---
 # <a name="notifications-environment-options-dialog-box"></a>選項對話方塊、環境、通知
 
-您可以使用這個選項，停止忽略之前透過 [通知] 對話方塊選擇忽略的任何通知。 如需詳細資訊，請參閱[更新 Visual Studio](../../install/update-visual-studio.md)。
-
-### <a name="see-also"></a>另請參閱
-
-- [環境選項對話方塊](../../ide/reference/environment-options-dialog-box.md)
+您可以使用這個選項，停止忽略之前透過 [通知]  對話方塊選擇忽略的任何通知。 如需詳細資訊，請參閱[更新 Visual Studio](../../install/update-visual-studio.md)。
