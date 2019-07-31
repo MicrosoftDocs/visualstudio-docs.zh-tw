@@ -7,12 +7,12 @@ ms.topic: conceptual
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.openlocfilehash: b6922e5a2b14186afd1f3fa9294bbb24c2e7d649
-ms.sourcegitcommit: 485881e6ba872c7b28a7b17ceaede845e5bea4fe
+ms.openlocfilehash: ba6c17aa6aa1f0a89e53be6b8dba7067e1fdc902
+ms.sourcegitcommit: 9fc8b144d4ed1c46aba87c0b7e1d24454e0eea9d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68377954"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68493389"
 ---
 # <a name="what39s-new-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶的新功能
 
@@ -42,5 +42,3 @@ GitHub Enterprise 可使用透過 Enterprise 合約取得 Visual Studio Enterpri
 如果組織的 Visual Studio 已經包含 GitHub Enterprise 訂用帳戶，您可以從我們的文件深入了解[管理 Visual Studio 和 GitHub Enterprise](assign-github.md) 訂用帳戶。  
 
 現在就是這麼容易！
-
-
