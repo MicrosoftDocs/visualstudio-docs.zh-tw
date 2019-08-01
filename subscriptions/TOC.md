@@ -62,9 +62,7 @@
 #### [生產階段前清查](admin-inventory.md)
 #### [管理大型小組及外部承攬人](manage-teams.md)
 #### [追蹤使用者指派及處理訂單](assignments-orders.md)
-### [大量授權](volume-license-admins.md)
 ### 將組織上線
-#### [移轉後上線](post-migration-onboarding.md)
 #### [Open 和 Open License 移轉](open-migration.md)
 #### [MPSA](mpsa.md)
 #### [雲端訂用帳戶](cloud-admin.md)
