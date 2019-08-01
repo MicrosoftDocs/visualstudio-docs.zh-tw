@@ -1,6 +1,6 @@
 ---
 title: 使用 IntelliTrace 獨立收集器 |Microsoft Docs
-ms.date: 11/04/2016
+ms.date: 07/30/2019
 ms.topic: conceptual
 f1_keywords:
 - vs.historicaldebug.collectdataoutsideVS
@@ -12,28 +12,28 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cf83992e92c90600f63516919774fe09f06434ff
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 1e5219e6e3977be59d89b7835413092f1fbeb200
+ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66746114"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68680624"
 ---
-# <a name="using-the-intellitrace-stand-alone-collector-c-visual-basic"></a>使用 IntelliTrace 獨立收集器 (C#，Visual Basic)
+# <a name="using-the-intellitrace-stand-alone-collector-c-visual-basic"></a>使用 IntelliTrace 獨立收集器 (C#, Visual Basic)
 
 **IntelliTrace 獨立收集器** 可讓您收集生產伺服器或其他環境上 App 的 IntelliTrace 診斷資料，而不需要在目標電腦上安裝 Visual Studio，而且不需要變更目標系統的環境。 IntelliTrace 獨立收集器適用於 Web、Sharepoint、WPF 和 Windows Forms App。 完成資料收集時，只要刪除收集器，就可以將其解除安裝。
 
- 觀看 IntelliTrace 動作：[收集和分析生產環境偵錯 （Channel 9 影片） 中的 IntelliTrace 資料](http://go.microsoft.com/fwlink/?LinkID=251851)
+ 觀看 IntelliTrace 實際操作:[收集和分析生產環境中的 IntelliTrace 資料以進行偵錯工具 (Channel 9 影片)](http://go.microsoft.com/fwlink/?LinkID=251851)
 
 > [!NOTE]
 > 您也可以透過 **Trace** 模式使用 **Microsoft Monitoring Agent** ，即可收集遠端電腦上執行之 Web 和 Sharepoint App 的相同 IntelliTrace 資料。
 >
 > 您可以透過 **Monitor** 模式執行代理程式，即可在 IntelliTrace 資料中收集效能相關事件。 **Monitor** 模式的效能影響低於 **Trace** 模式或 **IntelliTrace 獨立收集器**。 Microsoft Monitoring Agent 在安裝時確實會變更目標系統的環境。 請參閱[使用 Microsoft Monitoring Agent](../debugger/using-the-microsoft-monitoring-agent.md)。
-> IntelliTrace 獨立收集器不支援處理序快照集。
+> IntelliTrace 獨立收集器不支援進程快照集。
 
  **需求**
 
-- .NET Framework 3.5、4 或 4.5
+- .NET Framework 3.5 或更高版本
 
 - 在開發電腦或其他要開啟 .iTrace 檔案的電腦上已安裝 Visual Studio Enterprise (但不能是 Professional 或 Community 版本)
 
@@ -52,7 +52,7 @@ ms.locfileid: "66746114"
 
 ## <a name="WhatApps"></a> 哪些 App 與收集器搭配使用？
 
-- 裝載於 Internet Information Services (IIS) 7.0、7.5 和 8.0 版的 ASP.NET Web App
+- ASP.NET 裝載于 Internet Information Services (IIS) 版本7.0、7.5、8.0、12.0 和16.0 的 Web 應用程式
 
 - SharePoint 2010 和 SharePoint 2013 應用程式
 
@@ -80,11 +80,11 @@ ms.locfileid: "66746114"
 
 1. 在您的應用程式伺服器上，建立收集器目錄，例如：**C:\IntelliTraceCollector**
 
-2. 從 Microsoft 下載中心或從 Visual Studio 2013 Update 3 安裝資料夾取得收集器。 [IntelliTrace Collector for Visual Studio 2013 Update 4](https://www.microsoft.com/en-us/download/details.aspx?id=44909)::
+2. 從[Microsoft 下載中心](https://visualstudio.microsoft.com/downloads/#intellitrace-standalone-collector-for-visual-studio-2019)、 [My.visualstudio.com](https://my.visualstudio.com/Downloads?q=intellitrace%20standalone%20collector%20visual%20studio%202017)或 Visual Studio 2013 Update 3 安裝資料夾取得收集器。 [IntelliTrace Collector for Visual Studio 2013 Update 4](https://www.microsoft.com/en-us/download/details.aspx?id=44909)::
 
-   - **Microsoft 下載中心**：
+   - **Microsoft 下載中心**或**my.visualstudio.com**:
 
-     1. 選擇 **IntelliTraceCollector.exe**旁邊的 [下載]  。
+     1. 選擇 **IntelliTraceCollector.exe**旁邊的 [下載]。
 
      2. 將 IntelliTraceCollector.exe 儲存至收集器目錄，例如：**C:\IntelliTraceCollector**
 
@@ -94,7 +94,11 @@ ms.locfileid: "66746114"
 
    - **Visual Studio 安裝資料夾**：
 
-     1. 從下列資料夾複製 IntelliTraceCollection.cab：
+     1. 從安裝收集器的資料夾複製 Start-intellitracecollection, 例如:
+
+          **..\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\CommonExtensions\Microsoft\IntelliTrace**
+
+          或者, 針對舊版的 Visual Studio:
 
           **..\Microsoft Visual Studio 12.0\Common7\IDE\CommonExtensions\Microsoft\IntelliTrace\12.0.0**
 
@@ -117,7 +121,7 @@ ms.locfileid: "66746114"
 
 1. 在 App 伺服器上，以系統管理員身分開啟命令提示字元視窗。
 
-2. 使用 Windows **icacls** 命令，授與伺服器管理員收集器目錄的完整權限。 例如:
+2. 使用 Windows **icacls** 命令，授與伺服器管理員收集器目錄的完整權限。 例如：
 
      `icacls "C:\IntelliTraceCollector" /grant "` *\<Domain\AdministratorID>* `":F`
 
@@ -125,13 +129,13 @@ ms.locfileid: "66746114"
 
     1. 將收集器目錄的完整權限授與執行 IntelliTrace PowerShell Cmdlet 的人員。
 
-         例如:
+         例如：
 
          `icacls "C:\IntelliTraceCollector" /grant "` *\<Domain\UserID>* `":F`
 
     2. 將收集器目錄的讀取和執行權限授與 Web App 或 SharePoint 應用程式的應用程式集區。
 
-         例如:
+         例如：
 
         - 針對 **DefaultAppPool** 應用程式集區中的 Web App：
 
@@ -143,25 +147,25 @@ ms.locfileid: "66746114"
 
 ## <a name="BKMK_Set_up_the_IntelliTrace_PowerShell_commandlets"></a> 安裝 IntelliTrace PowerShell Cmdlet 以收集 Web App 或 SharePoint 應用程式的資料
 
-1. 在 App 伺服器上，確認已啟用 PowerShell。 在大部分的 Windows Server 版本上，您可以在 [伺服器管理員]  系統管理工具中加入這項功能。
+1. 在 App 伺服器上，確認已啟用 PowerShell。 在大部分的 Windows Server 版本上，您可以在 [伺服器管理員] 系統管理工具中加入這項功能。
 
-     ![使用伺服器管理員 新增 PowerShell](../debugger/media/intellitrace_servermanager_addpowershell.png "INTELLITRACE_ServerManager_AddPowerShell")
+     ![使用伺服器管理員新增 PowerShell](../debugger/media/intellitrace_servermanager_addpowershell.png "INTELLITRACE_ServerManager_AddPowerShell")
 
 2. 安裝 IntelliTrace PowerShell Cmdlet。
 
     1. 以系統管理員身分開啟 PowerShell 命令視窗。
 
-        1. 依序選擇 [開始]  、[所有程式]  、[附屬應用程式]  和 [Windows PowerShell]  。
+        1. 依序選擇 [開始]、[所有程式]、[附屬應用程式]和 [Windows PowerShell]。
 
         2. 選擇下列其中一個步驟：
 
-            - 在 64 位元作業系統上，開啟 **Windows PowerShell**的捷徑功能表。 選擇 [以系統管理員身分執行]  。
+            - 在 64 位元作業系統上，開啟 **Windows PowerShell**的捷徑功能表。 選擇 [以系統管理員身分執行]。
 
-            - 在 32 位元作業系統上，開啟 **Windows PowerShell (x86)** 的捷徑功能表。 選擇 [以系統管理員身分執行]  。
+            - 在 32 位元作業系統上，開啟 **Windows PowerShell (x86)** 的捷徑功能表。 選擇 [以系統管理員身分執行]。
 
     2. 在 PowerShell 命令視窗中，使用 **Import-Module** 命令匯入 **Microsoft.VisualStudio.IntelliTrace.PowerShell.dll**。
 
-         例如:
+         例如：
 
          `Import-Module "C:\IntelliTraceCollector\Microsoft.VisualStudio.IntelliTrace.PowerShell.dll"`
 
@@ -179,7 +183,7 @@ ms.locfileid: "66746114"
 
 2. 針對 Web App 或 SharePoint 應用程式，將 .iTrace 檔案目錄的完整權限授與其應用程式集區。 您可以使用 Windows **icacls** 命令，或使用 Windows 檔案總管 (或檔案總管)。
 
-    例如:
+    例如：
 
    - 使用 Windows **icacls** 命令設定權限：
 
@@ -195,19 +199,19 @@ ms.locfileid: "66746114"
 
    - 使用 Windows 檔案總管 (或檔案總管) 設定權限：
 
-     1. 開啟 .iTrace 檔案目錄的 [屬性]  。
+     1. 開啟 .iTrace 檔案目錄的 [屬性] 。
 
-     2. 在 [安全性]  索引標籤上，依序選擇 [編輯]  和 [新增]  。
+     2. 在 [安全性] 索引標籤上，依序選擇 [編輯]和 [新增]。
 
-     3. 請確認 [內建安全性主體]  出現在 [選取這個物件類型]  方塊中。 如果未出現，請選擇 [物件類型]  ，以將它加入。
+     3. 請確認 [內建安全性主體] 出現在 [選取這個物件類型] 方塊中。 如果未出現，請選擇 [物件類型]  ，以將它加入。
 
-     4. 請確認您的本機電腦出現在 [從這個位置]  方塊中。 如果未出現，請選擇 [位置]  變更它。
+     4. 請確認您的本機電腦出現在 [從這個位置] 方塊中。 如果未出現，請選擇 [位置]  變更它。
 
-     5. 在 [輸入要選取的物件名稱]  方塊中，加入 Web App 或 SharePoint 應用程式的應用程式集區。
+     5. 在 [輸入要選取的物件名稱] 方塊中，加入 Web App 或 SharePoint 應用程式的應用程式集區。
 
-     6. 選擇 [檢查名稱]  來解析名稱。 選擇 [確定]  。
+     6. 選擇 [檢查名稱] 來解析名稱。 選擇 [確定]。
 
-     7. 請確認應用程式集區具有 [完全控制]  。
+     7. 請確認應用程式集區具有 [完全控制]。
 
 ## <a name="BKMK_Collect_Data_from_IIS_Application_Pools"></a> 從 Web App 或 SharePoint 應用程式收集資料
 
@@ -234,7 +238,7 @@ ms.locfileid: "66746114"
 
 2. 重現問題。
 
-3. 若要建立.iTrace 檔案的檢查點，使用此語法：
+3. 若要建立 .Itrace 檔案的檢查點, 請使用下列語法:
 
      `Checkpoint-IntelliTraceCollection` `"` *\<ApplicationPool>* `"`
 
@@ -281,7 +285,7 @@ ms.locfileid: "66746114"
 
 2. 在 Visual Studio 外部按兩下 .iTrace 檔案，或從 Visual Studio 內開啟該檔案。
 
-     Visual Studio 會顯示 [IntelliTrace 摘要]  頁面。 在大部分的區段中，您都可以檢閱事件或其他項目，並選擇一個項目，然後在發生事件的位置以及時間使用 IntelliTrace 開始偵錯。 請參閱[儲存的 IntelliTrace 資料的使用](../debugger/using-saved-intellitrace-data.md)。
+     Visual Studio 會顯示 [IntelliTrace 摘要] 頁面。 在大部分的區段中，您都可以檢閱事件或其他項目，並選擇一個項目，然後在發生事件的位置以及時間使用 IntelliTrace 開始偵錯。 請參閱[使用儲存的 IntelliTrace 資料](../debugger/using-saved-intellitrace-data.md)。
 
     > [!NOTE]
     > 若要使用 IntelliTrace 進行偵錯並逐步執行程式碼，您必須在開發電腦上具有相符的原始程式檔和符號檔。 請參閱[在部署後診斷問題](../debugger/diagnose-problems-after-deployment.md)。
@@ -371,13 +375,13 @@ ms.locfileid: "66746114"
 
    `Employee` 類型具有下列屬性： `Id`、 `Name`和 `HomeAddress`。 `Employee` 與 `Address` 類型之間具有關聯。
 
-   ![Employee 和 Address 之間的關聯性](../debugger/media/employeeaddressrelationship.png "EmployeeAddressRelationship")
+   ![員工與位址之間的關聯]性(../debugger/media/employeeaddressrelationship.png "EmployeeAddressRelationship")
 
    收集器會記錄 `id`方法所傳回 `Employee.Id`、 `Employee.Name` 、 `Employee` 和 `AlterEmployee` 物件的值。 不過，收集器不會記錄 `Address` 物件的資訊，不論此物件是否為 Null。 收集器也不會記錄 `AlterEmployee` 方法中區域變數的資料，除非其他方法使用這些區域變數做為參數 (當時記錄為方法參數)。
 
 ## <a name="WhereElse"></a> 我還可以在哪裏取得 IntelliTrace 資料？
 
-您可以取得 IntelliTrace 資料，從 IntelliTrace 偵錯在 Visual Studio Enterprise 中的工作階段。 請參閱[IntelliTrace 功能](../debugger/intellitrace-features.md)。
+您可以從 Visual Studio Enterprise 中的 IntelliTrace 偵錯工具取得 IntelliTrace 資料。 請參閱[IntelliTrace 功能](../debugger/intellitrace-features.md)。
 
 ## <a name="where-can-i-get-more-information"></a>哪裡可以取得詳細資訊？
  [使用儲存的 IntelliTrace 資料](../debugger/using-saved-intellitrace-data.md)
