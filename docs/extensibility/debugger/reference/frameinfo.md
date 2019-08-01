@@ -1,5 +1,5 @@
 ---
-title: FRAMEINFO | Microsoft Docs
+title: FRAMEINFO |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1209036bced88cffb3681be0ceedd28942714419
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: eb6a4a9f7408e5bcd03da464bfbc8ade3fa39e7e
+ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66344455"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68681089"
 ---
 # <a name="frameinfo"></a>FRAMEINFO
 描述堆疊框架。
@@ -65,49 +65,49 @@ public struct FRAMEINFO {
 
 ## <a name="members"></a>成員
 `m_dwValidFields`\
-從旗標的組合[FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md)列舉，指定哪些欄位會填入。
+從[FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md)列舉中指定要填入哪些欄位的旗標組合。
 
 `m_bstrFuncName`\
-函式相關聯的名稱與堆疊框架。
+與堆疊框架相關聯的函數名稱。
 
 `m_bstrReturnType`\
-堆疊框架相關聯的傳回型別。
+與堆疊框架相關聯的傳回型別。
 
 `m_bstrArgs`\
-要與堆疊框架相關聯的函式的引數。
+與堆疊框架相關聯之函數的引數。
 
 `m_bstrLanguage`\
-在其中實作該函式語言。
+函數的實作為語言。
 
 `m_bstrModule`\
-堆疊框架相關聯的模組名稱。
+與堆疊框架相關聯的模組名稱。
 
 `m_addrMin`\
-最小實體堆疊位址。
+實體堆疊位址的最小值。
 
 `m_addrMAX`\
-最大實體堆疊位址。
+實體堆疊位址的最大值。
 
 `m_pFrame`\
-[IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)物件，代表這個堆疊框架。
+代表此堆疊框架的[IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)物件。
 
-`m_pFrame`\
-[IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md)物件，表示包含此堆疊框架的模組。
-
-`m_fHasDebugInfo`\
-非零 (`TRUE`) 如果偵錯資訊存在於指定的範圍內。
+`m_pModule`\
+代表包含此堆疊框架之模組的[IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md)物件。
 
 `m_fHasDebugInfo`\
-非零 (`TRUE`) 的堆疊框架是否已不再有效的程式碼與相關聯。
+如果指定的框架`TRUE`中存在 debug 資訊, 則為非零 ()。
 
-`m_fHasDebugInfo`\
-非零 (`TRUE`) 如果工作階段的偵錯管理員 (SDM) 所標註的堆疊框架。
+`m_fStaleCode`\
+如果堆疊框架與`TRUE`不再有效的程式碼相關聯, 則為非零 ()。
+
+`m_fAnnotatedFrame`\
+如果堆疊框架是`TRUE`由會話 debug manager (SDM) 所標注, 則為非零 ()。
 
 ## <a name="remarks"></a>備註
-此結構會傳遞至[GetInfo](../../../extensibility/debugger/reference/idebugstackframe2-getinfo.md)来填入的方法。 此結構也會包含在清單中包含[IEnumDebugFrameInfo2](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md)介面，反而會從呼叫傳回[EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md)方法。
+這個結構會傳遞至要填入的[GetInfo](../../../extensibility/debugger/reference/idebugstackframe2-getinfo.md)方法。 這個結構也會包含在[IEnumDebugFrameInfo2](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md)介面所包含的清單中, 而後者則是從[EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md)方法的呼叫傳回。
 
 ## <a name="requirements"></a>需求
-標頭： msdbg.h
+標頭: msdbg。h
 
 命名空間：Microsoft.VisualStudio.Debugger.Interop
 
