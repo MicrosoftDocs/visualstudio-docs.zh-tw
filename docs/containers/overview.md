@@ -15,7 +15,7 @@ ms.locfileid: "65084040"
 ---
 # <a name="container-tools-in-visual-studio"></a>Visual Studio 中的容器工具
 
-在 Visual Studio 中包含使用容器進行開發的工具，並可大幅簡化建置、偵錯和部署容器化應用程式。 您可以使用單一專案的容器，或使用容器協調流程搭配 Docker Compose、Service Fabric 或 Kubernetes，來使用容器中的多個服務。
+Visual Studio 中所包含、用於使用容器進行開發的工具非常容易使用，而且可以大幅簡化容器化應用程式的建置、偵錯及部署程序。您可以為單一專案使用容器，或搭配 Docker Compose、Service Fabric 或 Kubernetes 使用容器協調流程以使用容器中的多個服務。
 
 > [!NOTE]
 > 本文適用於 Windows 上的 Visual Studio，Visual Studio for Mac 則不支援。
@@ -95,7 +95,7 @@ Visual Studio 中對 Docker 的支援，已針對客戶需求在多個版本中�
 
 如果 *docker-compose.yml* 已存在，則 Visual Studio 只會向其新增所需的組態程式碼行。
 
-使用 Docker Compose 對要控制的其他專案重複此流程。
+使用 Docker Compose 對要控制的其他專案重複此程序。
 
 ## <a name="kubernetes-support"></a>Kubernetes 支援
 
