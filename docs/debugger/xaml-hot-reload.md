@@ -1,6 +1,6 @@
 ---
-title: 撰寫和偵錯使用 XAML 熱重新載入的 XAML
-description: 重新載入 XAML 經常性存取，或 XAML 編輯後繼續，可讓您對您的 XAML 程式碼中的變更，同時執行應用程式
+title: 使用 XAML 熱重載來撰寫和調試 XAML
+description: 「XAML 熱重載」或「XAML 編輯後繼續」可讓您在執行應用程式時變更 XAML 程式碼
 ms.custom: ''
 ms.date: 02/28/2019
 ms.topic: conceptual
@@ -12,49 +12,49 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f526cc8d5ff7835b3d0b942325f5755898fad147
-ms.sourcegitcommit: c6249a8f3054db881ba62f4e80bf006d440f5a2d
+ms.openlocfilehash: f1b2428024c30b8f96babf0cab6a56c60f52fa57
+ms.sourcegitcommit: 3e74ec49a54e5c3da7631f4466128cdf4384af6b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/03/2019
-ms.locfileid: "66462151"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "68711215"
 ---
-# <a name="write-and-debug-running-xaml-code-with-xaml-hot-reload-in-visual-studio"></a>撰寫和偵錯執行使用 Visual Studio 中的 XAML 熱重新載入的 XAML 程式碼
+# <a name="write-and-debug-running-xaml-code-with-xaml-hot-reload-in-visual-studio"></a>在 Visual Studio 中使用 XAML 熱重載來撰寫和偵測執行中的 XAML 程式碼
 
-熱門的 visual Studio XAML 重新載入您建置 WPF 或 UWP 應用程式 UI，可讓您對 XAML 程式碼進行變更，您的應用程式執行時的協助。 這項功能可讓您以累加方式建置及測試與執行的應用程式資料內容、 驗證狀態和其他實際複雜度，很難在設計階段模擬的好處的 XAML 程式碼。
+Visual Studio XAML 熱重載可協助您在應用程式執行時變更 XAML 程式碼, 藉此建立 WPF 或 UWP 應用程式 UI。 這項功能可讓您以累加方式建立和測試 XAML 程式碼, 並享有執行中應用程式的資料內容、驗證狀態, 以及在設計階段中難以模擬的其他真實世界複雜度的優勢。
 
-XAML 最忙碌的重新載入會在這些情況下特別有用：
+在這些情況下, XAML 熱重載特別有用:
 
-* 修正偵錯模式中啟動應用程式之後，您的 XAML 程式碼中找到的 UI 問題。
+* 在應用程式以「偵測模式」啟動之後, 修正在 XAML 程式碼中找到的 UI 問題。
 
-* 建置應用程式的新 UI 元件已開發，同時利用您的應用程式執行階段內容。
+* 為正在開發的應用程式建立新的 UI 元件, 同時利用應用程式的執行時間內容。
 
 |支援的應用程式類型|作業系統與工具|
 |-|-|-|
 |Windows Presentation Foundation (WPF) |.NET Framework 4.6+</br>Windows 7 和更新版本 |
-|通用 Windows app (UWP)|Windows 10 及更新版本，具有 [Windows 10 SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk) 14393 + |
+|通用 Windows 應用程式 (UWP)|Windows 10 和更新版本, 含 [windows 10 SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk) 14393 + |
 
 > [!NOTE]
-> Visual Studio XAML 熱重新載入目前在 Visual Studio 中執行您的應用程式，附加偵錯工具時，才支援 (**F5**或是**開始偵錯**)。 您無法使用，以啟用這項體驗*附加至處理序*。
+> 目前只有當您在已附加偵錯工具的 Visual Studio 中執行應用程式時, 才支援 Visual Studio XAML 熱重載 (**F5**或**開始進行調試**程式)。 您無法使用 [*附加至進程*] 來啟用此體驗。
 
 ## <a name="known-limitations"></a>已知限制
 
-以下是已知的 XAML 限制熱重新載入。 若要解決您遇到任何限制，只是停止偵錯工具，然後完成作業。
+以下是 XAML 熱重載的已知限制。 若要解決您遇到的任何限制, 只要停止偵錯工具, 然後完成作業即可。
 
-|限制|WPF|UWP|注意|
+|限制|WPF|UWP|附註|
 |-|-|-|-|
-|將事件傳送至應用程式執行時的控制項|不支援|不支援|請參閱錯誤：*請確定事件失敗*|
-|例如您的應用程式頁面] / [視窗中的資源字典中建立資源的物件或*App.xaml*|不支援|支援|範例： 新增```SolidColorBrush```做為資源字典```StaticResource```。</br>注意:靜態資源，樣式轉換器和其他項目寫入至的資源字典可以套用/使用同時使用 XAML 熱重新載入。 不支援資源的建立。</br> 變更資源字典```Source```屬性。| 
-|將新控制項、 類別、 windows 或其他檔案新增至您的專案，應用程式執行時|不支援|不支援|None|
-|管理 NuGet 套件 （新增/移除/更新套件）|不支援|不支援|None|
-|變更資料繫結，會使用 {x： 繫結} 標記延伸|N/A|在 Visual Studio 2019 和更新版本支援|在 Visual Studio 2017 或舊版不支援|
+|在應用程式執行時將事件接線至控制項|不支援|不支援|請參閱錯誤:*確定事件失敗*|
+|在資源字典中建立資源物件, 例如在應用程式的頁面/視窗或*應用程式中。 xaml*|不支援|支援|範例: 將```SolidColorBrush```加入至資源字典以當做使用```StaticResource```。</br>注意:使用 XAML 熱重載時, 可以套用/使用靜態資源、樣式轉換器, 以及寫入至資源字典的其他元素。 不支援建立資源。</br> 變更資源字典```Source```屬性。| 
+|當應用程式正在執行時, 將新的控制項、類別、視窗或其他檔案加入至您的專案|不支援|不支援|None|
+|管理 NuGet 套件 (新增/移除/更新套件)|不支援|不支援|None|
+|變更使用 {x:Bind} 標記延伸的資料系結|N/A|Visual Studio 2019 和更新版本中支援|Visual Studio 2017 或之前版本中不支援|
 
 ## <a name="error-messages"></a>錯誤訊息
 
-使用 XAML 熱重新載入時，您可能會遇到下列錯誤。
+使用 XAML 熱重載時, 您可能會遇到下列錯誤。
 
 |錯誤訊息|描述|
 |-|-|-|
-|請確定事件失敗|錯誤指出您嘗試將事件傳送至其中一個您應用程式執行時不支援的控制項。|
-|XAML 編輯後繼續找不到任何要更新的元素。|錯誤發生於您正在編輯熱重新載入的 XAML 無法更新您的應用程式中。</br> 此錯誤有時可藉由使用您執行的應用程式來瀏覽至 檢視使用 XAML 的位置。</br> 某些情況下，此錯誤表示在重新啟動偵錯工作階段之前，無法套用特定變更。 |
-|偵錯工作階段期間不支援此變更。|錯誤表示 XAML 熱重新載入不支援您嘗試變更。 停止偵錯工作階段，進行變更，，然後重新啟動偵錯工作階段。|
+|確定事件失敗|錯誤表示您嘗試將事件連接到您的其中一個控制項, 而您的應用程式在執行時並不支援。|
+|XAML 編輯後繼續找不到任何要更新的元素。|當您編輯的 XAML 無法在您的應用程式中更新熱重載時, 就會發生錯誤。</br> 有時候, 您可以使用執行中的應用程式來流覽至使用 XAML 的視圖, 以修正此錯誤。</br> 有時候, 此錯誤表示在您重新開機偵錯工具會話之前, 無法套用特定的變更。 |
+|偵錯工作階段期間不支援此變更。|錯誤表示 XAML 熱重載不支援您嘗試的變更。 停止「調試」會話、進行變更, 然後重新開機「調試」會話。|
