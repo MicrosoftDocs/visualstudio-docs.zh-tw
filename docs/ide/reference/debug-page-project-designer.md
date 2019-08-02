@@ -1,6 +1,7 @@
 ---
 title: 專案設計工具、偵錯頁
 ms.date: 06/27/2018
+ms.technology: vs-ide-debug
 ms.topic: reference
 f1_keywords:
 - vb.ProjectPropertiesDebug
@@ -8,23 +9,23 @@ helpviewer_keywords:
 - Project Designer, Debug page
 - Debug page in Project Designer
 ms.assetid: ef11eae9-df96-4e20-aabd-2678ba317140
-author: gewarren
-ms.author: gewarren
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a49b2c77833538cb983f776a2f54ad332fb87f59
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a1f54485a4dd47b0aec4401f6cdfb39072e9f8cf
+ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62968175"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68461400"
 ---
 # <a name="debug-page-project-designer"></a>專案設計工具、偵錯頁
 
-使用專案設計工具的 [偵錯頁面] 設定在 Visual Basic 或 C# 專案中的偵錯行為屬性。
+使用專案設計工具  的 [偵錯頁面]  設定在 Visual Basic 或 C# 專案中的偵錯行為屬性。
 
-若要存取 [偵錯] 頁面，請選取方案總管中的專案節點。 在 [專案] 功能表上，選擇 [\<專案名稱> 屬性]。 當專案設計工具出現時，請按一下 [偵錯] 索引標籤。
+若要存取 [偵錯]  頁面，請選取方案總管  中的專案節點。 在 [專案]  功能表上，選擇 [\<專案名稱> 屬性]  。 當專案設計工具  出現時，請按一下 [偵錯]  索引標籤。
 
 > [!NOTE]
 > 本主題不適用於 UWP 應用程式。 若為 UWP 應用程式，請參閱[啟動偵錯工作階段 (VB、C#、C++ 和 XAML)](../../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)。
@@ -35,15 +36,15 @@ ms.locfileid: "62968175"
 
 **組態**
 
-指定要顯示或修改的組態設定。 設定可以是 [偵錯] (預設)、[發行] 或 [所有設定]。
+指定要顯示或修改的組態設定。 設定可以是 [偵錯]  (預設)、[發行]  或 [所有設定]  。
 
 **平台**
 
-指定要顯示或修改的平台設定。 選項可以包括 [任何 CPU] (預設)、[x64]和 [x86]。
+指定要顯示或修改的平台設定。 選項可以包括 [任何 CPU]  (預設)、[x64]  和 [x86]  。
 
 ## <a name="start-action"></a>起始動作
 
-**起始動作**指出在對應用程式進行偵錯時要啟動的項目：專案、自訂程式、URL 或不啟動任何項目。 根據預設，這個選項會設為 [起始專案]。 [偵錯] 頁面上的 [起始動作] 設定會決定 `StartAction` 屬性的值。
+**起始動作**指出在對應用程式進行偵錯時要啟動的項目：專案、自訂程式、URL 或不啟動任何項目。 根據預設，這個選項會設為 [起始專案]  。 [偵錯]  頁面上的 [起始動作]  設定會決定 `StartAction` 屬性的值。
 
 **起始專案**
 
@@ -65,7 +66,7 @@ ms.locfileid: "62968175"
 
 **工作目錄**
 
-在這個文字方塊中，輸入將從中啟動專案的目錄。 或按一下 [瀏覽] 按鈕 (**...**) 選擇目錄。
+在這個文字方塊中，輸入將從中啟動專案的目錄。 或按一下 [瀏覽] 按鈕 ( **...** ) 選擇目錄。
 
 **使用遠端電腦**
 

@@ -15,7 +15,9 @@ ms.locfileid: "65084040"
 ---
 # <a name="container-tools-in-visual-studio"></a>Visual Studio 中的容器工具
 
+
 Visual Studio 中所包含、用於使用容器進行開發的工具非常容易使用，而且可以大幅簡化容器化應用程式的建置、偵錯及部署程序。您可以為單一專案使用容器，或搭配 Docker Compose、Service Fabric 或 Kubernetes 使用容器協調流程以使用容器中的多個服務。
+
 
 > [!NOTE]
 > 本文適用於 Windows 上的 Visual Studio，Visual Studio for Mac 則不支援。
@@ -48,7 +50,7 @@ Visual Studio 中對 Docker 的支援，已針對客戶需求在多個版本中�
 
 ### <a name="adding-docker-support"></a>新增 Docker 支援
 
-您可以在專案建立期間，透過在建立新的專案時選取 [啟用 Docker 支援] 來啟用 Docker 支援，如下列螢幕擷取畫面所示：
+您可以在專案建立期間，透過在建立新的專案時選取 [啟用 Docker 支援]  來啟用 Docker 支援，如下列螢幕擷取畫面所示：
 
 ::: moniker range="vs-2017"
 ![在 Visual Studio 中為新的 ASP.NET Core Web 應用程式啟用 Docker 支援](./media/overview/enable-docker-support-visual-studio.png)
@@ -60,7 +62,7 @@ Visual Studio 中對 Docker 的支援，已針對客戶需求在多個版本中�
 > [!NOTE]
 > 針對 .NET Framework 專案 (非 .NET Core)，僅提供 Windows 容器。
 
-您可以透過在 [方案總管] 中選取 [新增] > [Docker 支援]，為現有的專案新增 Docker 支援。 [新增 > Docker 支援] 和 [新增 > 容器協調器支援] 命令位於 [方案總管] 中 ASP.NET Core 專案的專案節點右鍵操作功能表 (或操作功能表)，如下列螢幕擷取畫面所示：
+您可以透過在 [方案總管]  中選取 [新增]   > [Docker 支援]  ，為現有的專案新增 Docker 支援。 [新增 > Docker 支援]  和 [新增 > 容器協調器支援]  命令位於 [方案總管]  中 ASP.NET Core 專案的專案節點右鍵操作功能表 (或操作功能表)，如下列螢幕擷取畫面所示：
 
 ![Visual Studio 中的 [新增 Docker 支援] 功能表選項](./media/overview/add-docker-support-menu.png)
 
@@ -87,9 +89,9 @@ Visual Studio 中對 Docker 的支援，已針對客戶需求在多個版本中�
 
 如果要使用 Docker Compose 撰寫多容器解決方案，請將容器協調流程支援新增至您的專案。 如果它們在同一個*docker-compose.yml*文件中定義，則允許您同時運行和調試一組容器（整個解決方案或一組項目）。
 
-若要使用 Docker Compose 新增容器協調流程支援，請以滑鼠右鍵按一下 [方案總管] 中的方案或專案節點，然後選擇 [新增] > [容器協調流程支援]。 然後選擇 [Docker Compose] 以管理容器。
+若要使用 Docker Compose 新增容器協調流程支援，請以滑鼠右鍵按一下 [方案總管]  中的方案或專案節點，然後選擇 [新增] > [容器協調流程支援]  。 然後選擇 [Docker Compose]  以管理容器。
 
-向專案新增容器協調流程支援後，您會看到專案中新增了 *Dockerfile* (如果找不到)，且 [方案總管] 中的方案新增了 **docker-compose** 資料夾，如下所示：
+向專案新增容器協調流程支援後，您會看到專案中新增了 *Dockerfile* (如果找不到)，且 [方案總管]  中的方案新增了 **docker-compose** 資料夾，如下所示：
 
 ![Visual Studio 中 [方案總管] 中的 Docker 檔案](media/overview/docker-support-solution-explorer.png)
 

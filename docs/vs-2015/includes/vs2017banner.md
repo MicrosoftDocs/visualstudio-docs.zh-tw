@@ -8,10 +8,10 @@ ms.date: 11/15/2016
 ms.topic: include
 manager: jillfra
 ms.openlocfilehash: d16cdc30788ad8b05f5e794241be2f4b3fc5dba6
-ms.sourcegitcommit: 9cfd3ef6c65f671a26322320818212a1ed5955fe
+ms.sourcegitcommit: 3e74ec49a54e5c3da7631f4466128cdf4384af6b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/26/2019
+ms.lasthandoff: 08/02/2019
 ms.locfileid: "68141854"
 ---
 > [!Note]

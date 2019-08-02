@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/23/2019
 ms.topic: conceptual
 description: 了解系統管理員要管理大型小組及外部承攬人訂用帳戶的責任。
-ms.openlocfilehash: 0f304d4858658c4540e38c6fa250e08c127713ae
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: 91e507358084bcb878d2a9afc7aad4fe4a2b869c
+ms.sourcegitcommit: 9fc8b144d4ed1c46aba87c0b7e1d24454e0eea9d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68420569"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68493344"
 ---
 # <a name="large-teams-and-external-contractors"></a>大型小組和外部承攬人
 Visual Studio 訂用帳戶系統管理員必須負責確保與 Visual Studio 授權軟體進行互動的每個使用者，已使用自己的 Visual Studio 訂用帳戶取得適當的授權。
@@ -39,5 +39,3 @@ Visual Studio 訂用帳戶系統管理員必須負責確保與 Visual Studio 授
 - [清查生產前環境](admin-inventory.md)
 - [追蹤使用者指派和處理訂單](assignments-orders.md)
 - 使用[使用量上限](maximum-usage.md)來追蹤購買承諾用量
-
-

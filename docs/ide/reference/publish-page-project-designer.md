@@ -1,46 +1,49 @@
 ---
 title: 專案設計工具、發行頁
 ms.date: 11/04/2016
+ms.technology: vs-ide-deployment
 ms.topic: reference
 f1_keywords:
 - Microsoft.VisualStudio.Publish.ClickOnceProvider.Dialog.PropertyPage
 helpviewer_keywords:
 - Project Designer, Publish page
 - Publish page in Project Designer
-author: gewarren
-ms.author: gewarren
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 731ed637c8c728f51dd318e6c06b980e512b7d57
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: aa33f3adc4fe05bd0df5c24bcb1fa769f93682cc
+ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62968886"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68461633"
 ---
 # <a name="publish-page-project-designer"></a>專案設計工具、發行頁
+
 [專案設計工具]  的 [發行]  頁面，可用以設定 ClickOnce 部署的屬性。
 
- 若要存取 [發行]  頁面，請選取方案總管 中的專案節點，然後按一下 [專案]  功能表上的 [屬性] 。 當 [ **專案設計工具** ] 出現時，請按一下 [ **發行** ] 索引標籤。
+ 若要存取 [發行]  頁面，請選取方案總管  中的專案節點，然後按一下 [專案]  功能表上的 [屬性]  。 當 [ **專案設計工具** ] 出現時，請按一下 [ **發行** ] 索引標籤。
 
 > [!NOTE]
-> 這裡描述的一些 ClickOnce 屬性也可以設定於 [發行精靈] 中 (從 [組建] 功能表或按一下此頁面上的 [發行精靈] 按鈕即可使用)。
+> 這裡描述的一些 ClickOnce 屬性也可以設定於 [發行精靈]  中 (從 [組建]  功能表或按一下此頁面上的 [發行精靈]  按鈕即可使用)。
 
 ## <a name="uielement-list"></a>UIElement 清單
+
  **發行資料夾位置**
 
- 指定應用程式的發行位置。 可以是磁碟機路徑 (`C:\deploy\myapplication`)、檔案共用 (`\\server\myapplication`) 或 FTP 伺服器 (`ftp://ftp.microsoft.com/myapplication`)。 請注意，文字必須出現在 [發行位置]  方塊中才能讓瀏覽 (**...**) 按鈕運作。
+ 指定應用程式的發行位置。 可以是磁碟機路徑 (`C:\deploy\myapplication`)、檔案共用 (`\\server\myapplication`) 或 FTP 伺服器 (`ftp://ftp.microsoft.com/myapplication`)。 請注意，文字必須出現在 [發行位置]  方塊中才能讓瀏覽 ( **...** ) 按鈕運作。
 
  **安裝資料夾 URL**
 
- 選擇性。 指定使用者前往以安裝應用程式的網站。 只有在它與 [發行位置] 不同時 (例如，將應用程式發行至預備伺服器時) 才是必要項目。
+ 選擇性。 指定使用者前往以安裝應用程式的網站。 只有在它與 [發行位置]  不同時 (例如，將應用程式發行至預備伺服器時) 才是必要項目。
 
  **安裝模式和設定**
 
  判斷是從 [發行位置]  直接執行應用程式 (選取 [應用程式只能在線上時使用]  時)，還是將應用程式安裝並新增至 [開始]  功能表以及 [控制台]  中的 [新增或移除程式]  項目 (選取 [應用程式也可以在離線時使用]  時)。
 
- 針對 WPF 網頁瀏覽器應用程式，[應用程式也可以在離線時使用] 選項已停用，因為這類應用程式只能在上線時使用。
+ 針對 WPF 網頁瀏覽器應用程式，[應用程式也可以在離線時使用]  選項已停用，因為這類應用程式只能在上線時使用。
 
  **應用程式檔案**
 
@@ -74,9 +77,9 @@ ms.locfileid: "62968886"
 
  **立即發行**
 
- 使用目前的設定發行應用程式。 這相當於 [發行精靈] 中的 [完成] 按鈕。
+ 使用目前的設定發行應用程式。 這相當於 [發行精靈]  中的 [完成]  按鈕。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [發行 ClickOnce 應用程式](../../deployment/publishing-clickonce-applications.md)
 - [如何：使用 [發佈精靈] 發佈 ClickOnce 應用程式](../../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)

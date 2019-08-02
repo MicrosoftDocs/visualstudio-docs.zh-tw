@@ -1,5 +1,6 @@
 ﻿---
 title: 將 Foreach 迴圈轉換為 LINQ
+descritpion: Convert any foreach loop that uses an IEnumerable to a LINQ query or a LINQ call form (also known as a LINQ method).
 ms.date: 02/20/2019
 ms.topic: reference
 author: kendrahavens
@@ -9,12 +10,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7893ed676372cce94d883353139de91ef639aeb0
-ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
+ms.openlocfilehash: baa1f32bb981e6d244555baef2a00d03933cdd6c
+ms.sourcegitcommit: 0f5f7955076238742f2071d286ad8e896f3a6cad
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "65531853"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68483724"
 ---
 # <a name="convert-a-foreach-loop-to-linq"></a>將 Foreach 迴圈轉換為 LINQ
 
@@ -37,11 +38,11 @@ ms.locfileid: "65531853"
 
     ![使用 IEnumerable 範例的 Foreach](media/convert-foreach-to-LINQ.png)
 
-2. 在字行任何地方按 **Ctrl**+**.**， 以觸發 [快速動作與重構] 功能表。
+2. 在字行任何地方按 **Ctrl**+ **.** ， 以觸發 [快速動作與重構]  功能表。
 
    ![轉換為 LINQ 功能表範例](media/convert-foreach-to-LINQ-codefix.png)
 
-3. 選取 [轉換至 LINQ] 或 [轉換為 Linq (呼叫表單)]。
+3. 選取 [轉換至 LINQ]  或 [轉換為 Linq (呼叫表單)]  。
 
    ![LINQ 查詢結果範例](media/convert-foreach-to-LINQ-result.png)
 
