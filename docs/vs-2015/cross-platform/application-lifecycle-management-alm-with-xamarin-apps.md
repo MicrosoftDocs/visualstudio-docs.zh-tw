@@ -8,12 +8,12 @@ ms.assetid: ff978cc2-5a25-46d6-921b-e51adaa65992
 caps.latest.revision: 16
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 258b9fcb8b36be1d179d9f907ef2da16ff1c3037
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: c72d37e34afe65378a1ddebe1c5b9be560b4d173
+ms.sourcegitcommit: b56dc6fadc6c924beed36bb4c2ccc16cf6bcfa1c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65696254"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "68740176"
 ---
 # <a name="application-lifecycle-management-alm-with-xamarin-apps"></a>應用程式生命週期管理 (ALM) 與 Xamarin 應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ Xamarin 可讓您使用 C#、.NET 及 Visual Studio，來建置目標為 Android
  下列表格列出您可以預期哪些 Visual Studio ALM 功能可與 Xamarin 專案搭配良好，哪些功能則有限制。 請參閱連結文件以取得這項功能的詳細資訊。  
   
 ## <a name="agile-tools"></a>Agile 工具  
- 參考連結：**[工作](https://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503)** （使用 Visual Studio Team Services 或 TFS，包括 Team Explorer Everywhere）  
+ 參考連結： **[工作](https://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503)** (使用 Visual Studio Team Services 或 TFS, 包括 Team Explorer Everywhere)  
   
  一般註解：所有的計劃和追蹤功能都與專案類型和程式碼撰寫語言無關。  
   
@@ -42,7 +42,7 @@ Xamarin 可讓您使用 C#、.NET 及 Visual Studio，來建置目標為 Android
 |報告和視覺化進度|是||  
   
 ## <a name="modeling"></a>模型化  
- 參考連結：**[分析並製作架構模型](../modeling/analyze-and-model-your-architecture.md)**  
+ 參考連結： **[分析和模型化架構](../modeling/analyze-and-model-your-architecture.md)**  
   
  設計功能與程式碼撰寫語言無關，或者它會使用如 C# 等 .NET 語言。 若要了解哪些層面與程式碼相關，請參閱[架構與模型圖表在軟體開發中的角色](../modeling/scenario-change-your-design-using-visualization-and-modeling.md#ModelingDiagramsTools)。  
   
@@ -68,7 +68,7 @@ Xamarin 可讓您使用 C#、.NET 及 Visual Studio，來建置目標為 Android
 |[使用 Code Map 偵錯您的應用程式](../modeling/use-code-maps-to-debug-your-applications.md)|是||  
   
 ## <a name="build"></a>組建  
- 參考連結：**[建置](https://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)**  
+ 參考連結： **[建置](/azure/devops/pipelines/index)**  
   
 |功能|支援 Xamarin|其他註解|  
 |-------------|----------------------------|-------------------------|  
@@ -79,7 +79,7 @@ Xamarin 可讓您使用 C#、.NET 及 Visual Studio，來建置目標為 Android
 |包括閘道簽入的連續整合|是|TFVC 的閘道簽入，只適用於 Git 在提取要求模型上運作的時候，而不是簽入運作時。|  
   
 ## <a name="testing"></a>測試  
- 參考連結：**[測試應用程式](https://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)**  
+ 參考連結： **[測試應用程式](https://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)**  
   
 |功能|支援 Xamarin|其他註解|  
 |-------------|----------------------------|-------------------------|  
@@ -91,7 +91,7 @@ Xamarin 可讓您使用 C#、.NET 及 Visual Studio，來建置目標為 Android
 |[使用 UI 自動化來測試您的程式碼](../test/use-ui-automation-to-test-your-code.md)|僅限 Windows|Visual Studio 的 UI 測試錄製器僅適用 Windows。 對於所有平台，請參閱 [Xamarin 測試錄製器 (英文)](https://www.xamarin.com/test-cloud/recorder)。|  
   
 ## <a name="improve-code-quality"></a>改善程式碼品質  
- 參考連結：**[改善程式碼品質](https://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)**  
+ 參考連結： **[改善程式碼品質](https://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)**  
   
 |功能|支援 Xamarin|其他註解|  
 |-------------|----------------------------|-------------------------|  
@@ -102,7 +102,7 @@ Xamarin 可讓您使用 C#、.NET 及 Visual Studio，來建置目標為 Android
 |[分析 .NET Framework 記憶體問題](../misc/analyze-dotnet-framework-memory-issues.md)|否|Visual Studio 工具並不會為程式碼剖析而連結 Mono 架構。|  
   
 ## <a name="release-management"></a>版本管理  
- 參考連結：**[使用 Release Management 進行自動部署](https://msdn.microsoft.com/library/vs/alm/release/overview)**  
+ 參考連結： **[使用 Release Management 自動化部署](https://msdn.microsoft.com/library/vs/alm/release/overview)**  
   
 |功能|支援 Xamarin|其他註解|  
 |-------------|----------------------------|-------------------------|  
@@ -111,7 +111,7 @@ Xamarin 可讓您使用 C#、.NET 及 Visual Studio，來建置目標為 Android
 |上傳至應用程式存放區|Partial|您可以針對某些應用程式存放區，使用擴充功能來自動化此程序。  請參閱[適用於 Visual Studio Team Services 的擴充功能 (英文)](https://marketplace.visualstudio.com/VSTS)；例如[適用於 Google Play 的擴充功能 (英文)](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.google-play)。|  
   
 ## <a name="monitor-with-hockeyapp"></a>使用 HockeyApp 監視  
- 參考連結：**[使用 HockeyApp 監視](https://www.hockeyapp.net/features/)**  
+ 參考連結： **[使用 HockeyApp 監視](https://www.hockeyapp.net/features/)**  
   
 |功能|支援 Xamarin|其他註解|  
 |-------------|----------------------------|-------------------------|  

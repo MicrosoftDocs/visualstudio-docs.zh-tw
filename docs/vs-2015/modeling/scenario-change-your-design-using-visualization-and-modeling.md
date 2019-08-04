@@ -1,5 +1,5 @@
 ---
-title: 案例：變更您的設計使用視覺化和模型化 |Microsoft Docs
+title: 案例：使用視覺效果和模型化來變更您的設計 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -17,12 +17,12 @@ caps.latest.revision: 63
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: dbb123b952287de0b519bfdd40b0d9a851a0b81f
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 53b4e4c6073785d972dc48d1a68e08fa1730e02d
+ms.sourcegitcommit: b56dc6fadc6c924beed36bb4c2ccc16cf6bcfa1c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65686881"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "68739703"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>案例：使用視覺化和模型製作工具變更設計
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,7 +56,7 @@ ms.locfileid: "65686881"
 - [建立應用程式模型](../modeling/create-models-for-your-app.md)  
   
 ## <a name="ScenarioOverview"></a> 情節概觀  
- 此案例中描述的兩家虛構公司的軟體開發生命週期事件：Dinner Now 及 Lucerne 發行。 Dinner Now 在西雅圖提供網站架構的餐點外送服務。 客戶可以在 Dinner Now 網站上訂餐並付款。 然後訂單便會傳送到合適的當地餐廳以準備外送。 Lucerne Publishing 是一家位在紐約的公司，營業項目涵蓋幾項網路與非網路服務。 例如，客戶可以在其經營的網站張貼對餐廳的評論。  
+ 此案例說明兩家虛構公司的軟體發展生命週期中的劇集:現在晚餐和 Lucerne 發行。 Dinner Now 在西雅圖提供網站架構的餐點外送服務。 客戶可以在 Dinner Now 網站上訂餐並付款。 然後訂單便會傳送到合適的當地餐廳以準備外送。 Lucerne Publishing 是一家位在紐約的公司，營業項目涵蓋幾項網路與非網路服務。 例如，客戶可以在其經營的網站張貼對餐廳的評論。  
   
  Lucerne 最近併購 Dinner Now，並想要進行下列變更：  
   
@@ -115,7 +115,7 @@ ms.locfileid: "65686881"
   
 - [讓程式碼與設計保持一致](#ValidatingCode)  
   
-- [描述的邏輯架構：分層圖](#DescribeLayers)  
+- [描述邏輯架構:分層圖](#DescribeLayers)  
   
 - [使用分層圖驗證程式碼](../modeling/validate-code-with-layer-diagrams.md)  
   
@@ -149,7 +149,7 @@ ms.locfileid: "65686881"
   
   請參閱：  
   
-- [了解商務程序中的系統角色](#UnderstandingBPMandSystemDesign)  
+- [瞭解系統在商務程式中的角色](#UnderstandingBPMandSystemDesign)  
   
 - [描述新的或更新的使用者需求](#DescribingURM)  
   
@@ -165,22 +165,22 @@ ms.locfileid: "65686881"
   
 - [在經過更新的程式碼中進行測試、驗證及檢查](#TestValidateCheckInCode)  
   
-### <a name="UnderstandingBPMandSystemDesign"></a> 了解商務程序中的系統角色  
+### <a name="UnderstandingBPMandSystemDesign"></a>瞭解系統在商務程式中的角色  
  Lucerne 想要深入了解 Dinner Now 的商務程序。 他們建立下列圖表，藉此更輕易地釐清其對於 Dinner Now 的了解：  
   
 |**圖表**|**描述**|  
 |-----------------|-------------------|  
-|*使用案例圖表 (UML)*<br /><br /> 請參閱：<br /><br /> -   [UML 使用案例圖：參考](../modeling/uml-use-case-diagrams-reference.md)<br />-   [UML 使用案例圖：方針](../modeling/uml-use-case-diagrams-guidelines.md)|Dinner Now 系統支援-活動<br />-的人員和執行活動的外部系統<br />系統的-支援每項活動的主要元件<br />-組件的商務程序在目前的系統範圍之外，例如食物傳遞|  
-|*活動圖表 (UML)*<br /><br /> 請參閱：<br /><br /> -   [UML 活動圖表：參考](../modeling/uml-activity-diagrams-reference.md)<br />-   [UML 活動圖表：方針](../modeling/uml-activity-diagrams-guidelines.md)|客戶建立訂單時會發生的步驟流程|  
-|*類別圖表 (UML)*<br /><br /> 請參閱：<br /><br /> -   [UML 類別圖：參考](../modeling/uml-class-diagrams-reference.md)<br />-   [UML 類別圖：方針](../modeling/uml-class-diagrams-guidelines.md)|商務實體以及這些實體間的討論及關聯性所用的詞彙。 例如，「訂單」及「菜單項目」屬於本情節所用的詞彙。|  
+|*使用案例圖表 (UML)*<br /><br /> 請參閱：<br /><br /> -   [UML 使用案例圖:證明](../modeling/uml-use-case-diagrams-reference.md)<br />-   [UML 使用案例圖:方針](../modeling/uml-use-case-diagrams-guidelines.md)|-晚餐現在系統支援的活動<br />-執行活動的人員和外部系統<br />-支援每項活動之系統的主要元件<br />-在目前系統範圍外的商務程式部分, 例如食物傳遞|  
+|*活動圖表 (UML)*<br /><br /> 請參閱：<br /><br /> -   [UML 活動圖:證明](../modeling/uml-activity-diagrams-reference.md)<br />-   [UML 活動圖:方針](../modeling/uml-activity-diagrams-guidelines.md)|客戶建立訂單時會發生的步驟流程|  
+|*類別圖表 (UML)*<br /><br /> 請參閱：<br /><br /> -   [UML 類別圖:證明](../modeling/uml-class-diagrams-reference.md)<br />-   [UML 類別圖:方針](../modeling/uml-class-diagrams-guidelines.md)|商務實體以及這些實體間的討論及關聯性所用的詞彙。 例如，「訂單」及「菜單項目」屬於本情節所用的詞彙。|  
   
  例如，Lucerne 會建立下列使用案例圖表，以了解 Dinner Now 網站上所執行的工作，以及執行工作的人員：  
   
- ![UML 使用案例圖表](../modeling/media/uml-usecase.png "UML_UseCase")  
+ ![UML 使用案例圖](../modeling/media/uml-usecase.png "UML_UseCase")  
   
  **UML 使用案例圖表**  
   
- 下列活動圖表描述客戶在 Dinner Now 網站建立訂單時的步驟流程。 在此版本中，註解項目會識別角色，而線條會建立 *「泳道」*(Swimlane)，其會依角色來組織步驟：  
+ 下列活動圖表描述客戶在 Dinner Now 網站建立訂單時的步驟流程。 在此版本中，註解項目會識別角色，而線條會建立 *「泳道」* (Swimlane)，其會依角色來組織步驟：  
   
  ![UML 活動圖表](../modeling/media/uml-dinnernowprocess.png "UML_DinnerNowProcess")  
   
@@ -188,24 +188,24 @@ ms.locfileid: "65686881"
   
  下列類別圖表描述參與訂單流程的實體：  
   
- ![UML 類別圖](../modeling/media/uml-dinnerorders.png "UML_DinnerOrders")  
+ ![UML 類別圖表](../modeling/media/uml-dinnerorders.png "UML_DinnerOrders")  
   
  **UML 類別圖表**  
   
-### <a name="DescribingURM"></a> 描述新的或更新的使用者需求  
+### <a name="DescribingURM"></a>描述新的或更新的使用者需求  
  Lucerne 想要在 Dinner Now 系統中加入功能，讓客戶可以閱讀及張貼對餐廳的評論。 他們會更新下列圖表，以便與 Dinner Now 描述及討論這個新需求。  
   
 |**圖表**|**描述**|  
 |-----------------|-------------------|  
-|*使用案例圖表 (UML)*<br /><br /> 請參閱：<br /><br /> -   [UML 使用案例圖：參考](../modeling/uml-use-case-diagrams-reference.md)<br />-   [UML 使用案例圖：方針](../modeling/uml-use-case-diagrams-guidelines.md)|用於「撰寫餐廳評論」的新使用案例|  
-|*活動圖表 (UML)*<br /><br /> 請參閱：<br /><br /> -   [UML 活動圖表：參考](../modeling/uml-activity-diagrams-reference.md)<br />-   [UML 活動圖表：方針](../modeling/uml-activity-diagrams-guidelines.md)|客戶想要撰寫餐廳評論時會發生的步驟|  
-|*類別圖表 (UML)*<br /><br /> 請參閱：<br /><br /> -   [UML 類別圖：參考](../modeling/uml-class-diagrams-reference.md)<br />-   [UML 類別圖：方針](../modeling/uml-class-diagrams-guidelines.md)|必須要有這些資料才能儲存評論。|  
+|*使用案例圖表 (UML)*<br /><br /> 請參閱：<br /><br /> -   [UML 使用案例圖:證明](../modeling/uml-use-case-diagrams-reference.md)<br />-   [UML 使用案例圖:方針](../modeling/uml-use-case-diagrams-guidelines.md)|用於「撰寫餐廳評論」的新使用案例|  
+|*活動圖表 (UML)*<br /><br /> 請參閱：<br /><br /> -   [UML 活動圖:證明](../modeling/uml-activity-diagrams-reference.md)<br />-   [UML 活動圖:方針](../modeling/uml-activity-diagrams-guidelines.md)|客戶想要撰寫餐廳評論時會發生的步驟|  
+|*類別圖表 (UML)*<br /><br /> 請參閱：<br /><br /> -   [UML 類別圖:證明](../modeling/uml-class-diagrams-reference.md)<br />-   [UML 類別圖:方針](../modeling/uml-class-diagrams-guidelines.md)|必須要有這些資料才能儲存評論。|  
   
  例如，下列使用案例圖表包含新的「撰寫評論」使用案例，用以代表新的需求。 在圖表上會以橙色醒目提示，藉此便於辨識：  
   
- ![UML 使用案例圖表](../modeling/media/uml-writerev.png "UML_WriteRev")  
+ ![UML 使用案例圖](../modeling/media/uml-writerev.png "UML_WriteRev")  
   
- **UML 使用案例圖表**  
+ **UML 使用案例圖**  
   
  下列活動圖表包含新項目 (以橙色表示) 以描述新使用案例中的步驟流程：  
   
@@ -215,11 +215,11 @@ ms.locfileid: "65686881"
   
  下列類別圖表包含新的評論類別，以及其與其他類別的關聯性，如此小組可以討論其詳細內容。 請注意，客戶及餐聽可以有多個評論：  
   
- ![UML 類別圖](../modeling/media/uml-dinnerreviews.png "UML_DinnerReviews")  
+ ![UML 類別圖表](../modeling/media/uml-dinnerreviews.png "UML_DinnerReviews")  
   
- **UML 類別圖**  
+ **UML 類別圖表**  
   
-### <a name="CreatingTests"></a> 從模型建立測試  
+### <a name="CreatingTests"></a>從模型建立測試  
  雙方小組同意在進行任何變更前，必需針對系統及其元件執行一組完整的測試。 Lucerne 有專門小組在執行系統及元件層級的測試。 他們重複使用 Dinner Now 所建立的測試，並使用 UML 圖表來組織這些測試：  
   
 - 每個使用案例皆由一或多個測試代表。 使用案例圖表上的項目會連結到 Team Foundation Server 中的「測試案例」工作項目。  
@@ -241,32 +241,32 @@ ms.locfileid: "65686881"
   
 |**地圖或圖表**|**顯示**|  
 |------------------------|---------------|  
-|*Code Map*<br /><br /> 請參閱：<br /><br /> -   [對應方案之間的相依性](../modeling/map-dependencies-across-your-solutions.md)<br />-   [瀏覽和重新排列 code map](../modeling/browse-and-rearrange-code-maps.md)<br />-   [藉由編輯 DGML 檔案自訂 code map](../modeling/customize-code-maps-by-editing-the-dgml-files.md)|程式碼中的相依性及其他關聯性<br /><br /> 例如，Dinner Now 可能一開始會檢閱組件 Code Map，以取得組件及其相依性的概觀。 他們可以深入研究此地圖，以探索這些組件中的命名空間及類別。<br /><br /> Dinner Now 也可以建立地圖，以探索程式碼中的特定區域及其他種類的關聯性。 他們可以使用 [方案總管] 來尋找並選取其感興趣的區域及關聯性。|  
-|*以程式碼為基礎的類別圖表*<br /><br /> 請參閱[如何：將類別圖表新增至專案 （類別設計工具）](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)。|程式碼中的現有類別|  
+|*Code Map*<br /><br /> 請參閱：<br /><br /> -   [對應方案之間的相依性](../modeling/map-dependencies-across-your-solutions.md)<br />-   [流覽和重新排列 code map](../modeling/browse-and-rearrange-code-maps.md)<br />-   [藉由編輯 DGML 檔案自訂 code map](../modeling/customize-code-maps-by-editing-the-dgml-files.md)|程式碼中的相依性及其他關聯性<br /><br /> 例如，Dinner Now 可能一開始會檢閱組件 Code Map，以取得組件及其相依性的概觀。 他們可以深入研究此地圖，以探索這些組件中的命名空間及類別。<br /><br /> Dinner Now 也可以建立地圖，以探索程式碼中的特定區域及其他種類的關聯性。 他們可以使用 [方案總管] 來尋找並選取其感興趣的區域及關聯性。|  
+|*以程式碼為基礎的類別圖表*<br /><br /> 請參閱[How to:將類別圖表新增至專案 (類別設計工具](../ide/how-to-add-class-diagrams-to-projects-class-designer.md))。|程式碼中的現有類別|  
   
  例如，開發人員建立了 Code Map。 接著調整其範圍以便將焦點放在新情節會影響的區域。 這些區域在地圖上會處於選取及醒目提示的狀態：  
   
- ![命名空間相依性圖形](../modeling/media/namespace-reviewsystem.png "Namespace_ReviewSystem")  
+ ![命名空間]相依性圖形(../modeling/media/namespace-reviewsystem.png "Namespace_ReviewSystem")  
   
  **命名空間 Code Map**  
   
  開發人員展開選取的命名空間以查看其類別、方法及關聯性：  
   
- ![展開的命名空間相依性圖形](../modeling/media/dep-reviewsystem.png "Dep_ReviewSystem")  
+ ![展開的命名空間]相依性圖形(../modeling/media/dep-reviewsystem.png "Dep_ReviewSystem")  
   
  **展開的命名空間 Code Map，包含可見的跨群組連結**  
   
- 開發人員檢查程式碼以找出受影響的類別及方法。 若要在每次變更時查看所產生的影響，請在每次變更後重新產生 Code Map。 請參閱[視覺化程式碼](../modeling/visualize-code.md)。  
+ 開發人員檢查程式碼以找出受影響的類別及方法。 若要在每次變更時查看所產生的影響，請在每次變更後重新產生 Code Map。 請參閱將程式[代碼視覺化](../modeling/visualize-code.md)。  
   
  若要描述對系統其他部分 (例如元件或互動) 所造成的變更，小組可能會在白板上繪製這些項目。 他們也可能會在 Visual Studio 中繪製下列圖表，如此雙方小組皆可擷取、管理及了解詳細資料。  
   
 |**圖表**|**描述**|  
 |------------------|-------------------|  
-|*活動圖表 (UML)*<br /><br /> 請參閱：<br /><br /> -   [UML 活動圖表：參考](../modeling/uml-activity-diagrams-reference.md)<br />-   [UML 活動圖表：方針](../modeling/uml-activity-diagrams-guidelines.md)|當系統注意到客戶向某餐廳再次下訂單時所產生的步驟流程，系統會提示客戶撰寫評論。|  
-|*類別圖表 (UML)*<br /><br /> 請參閱：<br /><br /> -   [UML 類別圖：參考](../modeling/uml-class-diagrams-reference.md)<br />-   [UML 類別圖：方針](../modeling/uml-class-diagrams-guidelines.md)|邏輯類別及其關聯性。 例如，系統會加入新類別以便描述 [評論]  以及其與其他實體 (例如 [餐廳] 、[菜單] 及 [客戶] ) 的關聯性。<br /><br /> 若要將評論與客戶相關聯，系統必須儲存客戶詳細資料。 UML 類別圖表可協助釐清這些詳細資料。|  
-|*以程式碼為基礎的類別圖表*<br /><br /> 請參閱[如何：將類別圖表新增至專案 （類別設計工具）](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)。|程式碼中的現有類別。|  
-|*元件圖表 (UML)*<br /><br /> 請參閱：<br /><br /> -   [UML 元件圖：參考](../modeling/uml-component-diagrams-reference.md)<br />-   [UML 元件圖：方針](../modeling/uml-component-diagrams-guidelines.md)|系統的高階組成部分，例如 Dinner Now 網站及其介面。 這些介面可定義元件如何透過其所提供及使用的方法或服務，與其他元件互動。|  
-|*順序圖表 (UML)*<br /><br /> 請參閱：<br /><br /> -   [UML 循序圖：參考](../modeling/uml-sequence-diagrams-reference.md)<br />-   [UML 循序圖：方針](../modeling/uml-sequence-diagrams-guidelines.md)|執行個體間互動的順序。|  
+|*活動圖表 (UML)*<br /><br /> 請參閱：<br /><br /> -   [UML 活動圖:證明](../modeling/uml-activity-diagrams-reference.md)<br />-   [UML 活動圖:方針](../modeling/uml-activity-diagrams-guidelines.md)|當系統注意到客戶向某餐廳再次下訂單時所產生的步驟流程，系統會提示客戶撰寫評論。|  
+|*類別圖表 (UML)*<br /><br /> 請參閱：<br /><br /> -   [UML 類別圖:證明](../modeling/uml-class-diagrams-reference.md)<br />-   [UML 類別圖:方針](../modeling/uml-class-diagrams-guidelines.md)|邏輯類別及其關聯性。 例如，系統會加入新類別以便描述 [評論] 以及其與其他實體 (例如 [餐廳]、[菜單]及 [客戶]) 的關聯性。<br /><br /> 若要將評論與客戶相關聯，系統必須儲存客戶詳細資料。 UML 類別圖表可協助釐清這些詳細資料。|  
+|*以程式碼為基礎的類別圖表*<br /><br /> 請參閱[How to:將類別圖表新增至專案 (類別設計工具](../ide/how-to-add-class-diagrams-to-projects-class-designer.md))。|程式碼中的現有類別。|  
+|*元件圖表 (UML)*<br /><br /> 請參閱：<br /><br /> -   [UML 元件圖表:證明](../modeling/uml-component-diagrams-reference.md)<br />-   [UML 元件圖表:方針](../modeling/uml-component-diagrams-guidelines.md)|系統的高階組成部分，例如 Dinner Now 網站及其介面。 這些介面可定義元件如何透過其所提供及使用的方法或服務，與其他元件互動。|  
+|*順序圖表 (UML)*<br /><br /> 請參閱：<br /><br /> -   [UML 順序圖表:證明](../modeling/uml-sequence-diagrams-reference.md)<br />-   [UML 順序圖表:方針](../modeling/uml-sequence-diagrams-guidelines.md)|執行個體間互動的順序。|  
   
  例如，下列元件圖表顯示屬於 Dinner Now 網站元件的新元件。 ReviewProcessing 元件會處理用來建立評論的功能，而此元件以橙色醒目提示。  
   
@@ -285,11 +285,11 @@ ms.locfileid: "65686881"
   
 |**圖表**|**描述**|  
 |-----------------|-------------------|  
-|*分層圖*<br /><br /> 請參閱：<br /><br /> -   [從您的程式碼建立分層圖](../modeling/create-layer-diagrams-from-your-code.md)<br />-   [分層圖：參考](../modeling/layer-diagrams-reference.md)<br />-   [分層圖：方針](../modeling/layer-diagrams-guidelines.md)<br />-   [使用分層圖驗證程式碼](../modeling/validate-code-with-layer-diagrams.md)|程式碼的邏輯架構。<br /><br /> 分層圖會組織 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 方案中的成品並將其對應到稱為 *「圖層」*(Layer) 的抽象群組。 這些圖層可識別這些成品在系統中執行的角色、工作或功能。<br /><br /> 分層圖有助於說明系統的預定設計，以及根據該設計來驗證不斷演變的程式碼。<br /><br /> 若要建立圖層，請從 [方案總管]、[Code Map]、[類別檢視] 以及 [物件瀏覽器] 拖曳項目。 若要繪製新圖層，請使用工具箱或以滑鼠右鍵按一下圖表介面。<br /><br /> 若要檢視現有相依性，請以滑鼠右鍵按一下分層圖介面，然後按一下 [產生相依性] 。 若要指定預定的相依性，請繪製新相依性。|  
+|*分層圖*<br /><br /> 請參閱：<br /><br /> -   [從您的程式碼建立分層圖](../modeling/create-layer-diagrams-from-your-code.md)<br />-   [分層圖:證明](../modeling/layer-diagrams-reference.md)<br />-   [分層圖:方針](../modeling/layer-diagrams-guidelines.md)<br />-   [使用圖層圖表驗證程式代碼](../modeling/validate-code-with-layer-diagrams.md)|程式碼的邏輯架構。<br /><br /> 分層圖會組織 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 方案中的成品並將其對應到稱為 *「圖層」* (Layer) 的抽象群組。 這些圖層可識別這些成品在系統中執行的角色、工作或功能。<br /><br /> 分層圖有助於說明系統的預定設計，以及根據該設計來驗證不斷演變的程式碼。<br /><br /> 若要建立圖層，請從 [方案總管]、[Code Map]、[類別檢視] 以及 [物件瀏覽器] 拖曳項目。 若要繪製新圖層，請使用工具箱或以滑鼠右鍵按一下圖表介面。<br /><br /> 若要檢視現有相依性，請以滑鼠右鍵按一下分層圖介面，然後按一下 [產生相依性]。 若要指定預定的相依性，請繪製新相依性。|  
   
  例如，下列分層圖會描述圖層間的相依性，以及與每個圖層相關聯的成品數目。  
   
- ![整合式的付款系統的圖層圖表](../modeling/media/layer-integrated-dnlucerne.png "Layer_Integrated_DNLucerne")  
+ ![整合式付款系統的分層圖](../modeling/media/layer-integrated-dnlucerne.png "Layer_Integrated_DNLucerne")  
   
  **分層圖**  
   
@@ -307,7 +307,7 @@ ms.locfileid: "65686881"
   
 - 大部分的圖表是由以線條連結之節點所組成。 針對每個圖表類型，工具箱會提供不同種類的節點及線條。  
   
-   若要開啟工具箱，請在 [檢視]  功能表上按一下 [工具箱] 。  
+   若要開啟工具箱，請在 [檢視] 功能表上按一下 [工具箱]。  
   
 - 若要建立節點，請將其從工具箱拖曳到圖表。 特定種類的節點必須拖曳到現有節點上。 例如，在元件圖表上，必須將新連接埠加入現有元件中。  
   
@@ -315,13 +315,13 @@ ms.locfileid: "65686881"
   
 - 當您在 UML 圖表上建立項目時，同時也會將這些項目加入一般模型中。 模型專案中的 UML 圖表為該模型的檢視。 分層圖上的項目雖然不會儲存在一般模型中，但仍屬於模型專案的一部分。  
   
-   若要查看模型，請在 [架構]  功能表中指向 [視窗]  ，然後按一下 [UML 模型總管] 。  
+   若要查看模型，請在 [架構] 功能表中指向 [視窗]，然後按一下 [UML 模型總管]。  
   
-- 在某些情況下，您可以從 [UML 模型總管]  將特定項目拖曳到 UML 圖表。 相同模型中的某些項目可以用在多個或不同的圖表，以顯示架構的替代檢視。 例如，您可將元件拖曳到另一個元件圖表或順序圖表中作為執行者。  
+- 在某些情況下，您可以從 [UML 模型總管] 將特定項目拖曳到 UML 圖表。 相同模型中的某些項目可以用在多個或不同的圖表，以顯示架構的替代檢視。 例如，您可將元件拖曳到另一個元件圖表或順序圖表中作為執行者。  
   
 - Visual Studio 支援 UML 2.1.2。 本概觀僅描述此版本 UML 圖表的主要功能，但有許多書籍會詳細討論 UML 及其用法。  
   
-  請參閱[建立應用程式模型](../modeling/create-models-for-your-app.md)。  
+  請參閱[為您的應用程式建立模型](../modeling/create-models-for-your-app.md)。  
   
 ### <a name="PlanningTracking"></a> Planning and Tracking Work  
  Visual Studio 模型圖表已經與 Team Foundation Server 整合，以便您可以更輕鬆地計畫、管理及追蹤工作。 兩個小組都使用模型來識別測試案例及開發工作，以及評估其工作。 Lucerne 建立 Team Foundation Server 工作項目並將其連結到模型項目，例如使用案例或元件。 這樣可協助他們監視進度及針對使用者需求追蹤工作。 也可協助他們確定所做的變更能持續符合這些需求。  
@@ -330,9 +330,9 @@ ms.locfileid: "65686881"
   
 - 每日 *「待執行工作報表」* (Burndown Report)，此報表會顯示他們是否會在預定時間內完成計劃的工作。 他們會從 Team Foundation Server 產生其他類似的報表來追蹤 Bug 進度。  
   
-- *「反覆項目工作表」* (Iteration Worksheet)，此工作表使用 Microsoft Excel 協助小組監視及平衡小組成員間的工作量。 此工作表連結到 Team Foundation Server，並在定期進度會議中提供討論重點。  
+-           *「反覆項目工作表」* (Iteration Worksheet)，此工作表使用 Microsoft Excel 協助小組監視及平衡小組成員間的工作量。 此工作表連結到 Team Foundation Server，並在定期進度會議中提供討論重點。  
   
-- *「開發儀表板」* (Development Dashboard)，此儀表板使用 Office Project 讓小組隨時獲知重要的專案資訊。  
+-           *「開發儀表板」* (Development Dashboard)，此儀表板使用 Office Project 讓小組隨時獲知重要的專案資訊。  
   
   請參閱：  
   
@@ -365,24 +365,24 @@ ms.locfileid: "65686881"
   
 - [使用版本控制](http://go.microsoft.com/fwlink/?LinkID=525605)  
   
-- [建置應用程式](https://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)  
+- [建置應用程式](/azure/devops/pipelines/index)  
   
 ## <a name="UpdatingSystem"></a> Updating the System Using Visualization and Modeling  
  Lucerne 及 Dinner Now 必須整合其付款系統。 下列各節將示範 Visual Studio 中的模型圖表如何協助其執行這項工作：  
   
-- [了解使用者需求：使用案例圖](#UnderstandUseCases)  
+- [瞭解使用者需求:使用案例圖](#UnderstandUseCases)  
   
-- [了解商務程序：活動圖表](#UnderstandActivities)  
+- [瞭解商務程式:活動圖表](#UnderstandActivities)  
   
-- [描述系統結構：元件圖表](#DescribeComponents)  
+- [描述系統結構:元件圖](#DescribeComponents)  
   
-- [描述互動：順序圖表](#DescribeSequence)  
+- [描述互動:順序圖表](#DescribeSequence)  
   
-- [視覺化現有程式碼：Code Map](#VisualizeCode)  
+- [將現有程式碼視覺化:Code Map](#VisualizeCode)  
   
-- [定義類型的詞彙：類別圖表](#DefineClasses)  
+- [定義類型的詞彙:類別圖表](#DefineClasses)  
   
-- [描述的邏輯架構：分層圖](#DescribeLayers)  
+- [描述邏輯架構:分層圖](#DescribeLayers)  
   
   請參閱：  
   
@@ -396,7 +396,7 @@ ms.locfileid: "65686881"
   
 - [建立應用程式架構的模型](../modeling/model-your-app-s-architecture.md)  
   
-### <a name="UnderstandUseCases"></a> 了解使用者需求：使用案例圖  
+### <a name="UnderstandUseCases"></a>瞭解使用者需求:使用案例圖  
  使用案例圖表會摘要說明系統支援的活動，以及執行這些活動的人員。 Lucerne 藉助使用案例圖表來了解 Dinner Now 系統的下列項目：  
   
 - 客戶建立訂單。  
@@ -407,15 +407,15 @@ ms.locfileid: "65686881"
   
   圖表也會顯示某些主要使用案例如何分成較小的使用案例。 Lucerne 想要使用自己的付款系統。 他們以不同顏色將「處理付款」使用案例醒目提示，以表示此使用案例需要變更：  
   
-  ![使用案例圖表上醒目提示 「 處理付款](../modeling/media/uml-processpay.png "UML_ProcessPay")  
+  ![在使用案例圖上反白顯示進程付款](../modeling/media/uml-processpay.png "UML_ProcessPay")  
   
-  **使用案例圖表上醒目提示 「 處理付款 」**  
+  **在使用案例圖上反白顯示進程付款**  
   
   如果開發時間較短，小組可能會討論是否要讓客戶直接付款給餐廳。 若要顯示此做法，他們會將「處理付款」使用案例更換成在 Dinner Now 系統界限之外的使用案例。 接著會將「客戶」直接連結到「餐廳」，表示 Dinner Now 只會處理訂單：  
   
-  ![重新付款給餐廳 」 使用案例圖上](../modeling/media/uml-payrestaurant.png "UML_PayRestaurant")  
+  ![Rescoping 使用案例圖上的付款餐廳](../modeling/media/uml-payrestaurant.png "UML_PayRestaurant")  
   
-  **重新付款給餐廳 」 使用案例圖上**  
+  **Rescoping 使用案例圖上的付款餐廳**  
   
   請參閱：  
   
@@ -444,7 +444,7 @@ ms.locfileid: "65686881"
   
 - [UML 使用案例圖表：方針](../modeling/uml-use-case-diagrams-guidelines.md)  
   
-#### <a name="summary-strengths-of-use-case-diagrams"></a>摘要: 使用案例圖表的優勢  
+#### <a name="summary-strengths-of-use-case-diagrams"></a>摘要: 使用案例圖的優勢  
  使用案例圖表可協助您將下列項目視覺化：  
   
 - 系統所支援或不支援的活動。  
@@ -459,20 +459,20 @@ ms.locfileid: "65686881"
   
 |**圖表**|**描述**|  
 |-----------------|-------------------|  
-|活動圖表|使用案例中的步驟流程，以及在該使用案例中執行這些步驟的人員。<br /><br /> 使用案例名稱通常會反映活動圖表中的步驟。 活動圖表支援像是決策、合併、輸入與輸出、並行的流程等項目。<br /><br /> 請參閱：<br /><br /> -   [UML 活動圖表：參考](../modeling/uml-activity-diagrams-reference.md)<br />-   [UML 活動圖表：方針](../modeling/uml-activity-diagrams-guidelines.md)|  
-|順序圖表|使用案例參與者之間的互動順序。<br /><br /> 請參閱：<br /><br /> -   [UML 循序圖：參考](../modeling/uml-sequence-diagrams-reference.md)<br />-   [UML 循序圖：方針](../modeling/uml-sequence-diagrams-guidelines.md)|  
-|類別圖表 (UML)|參與使用案例的實體或類型。<br /><br /> 請參閱：<br /><br /> -   [UML 類別圖：參考](../modeling/uml-class-diagrams-reference.md)<br />-   [UML 類別圖：方針](../modeling/uml-class-diagrams-guidelines.md)|  
+|活動圖表|使用案例中的步驟流程，以及在該使用案例中執行這些步驟的人員。<br /><br /> 使用案例名稱通常會反映活動圖表中的步驟。 活動圖表支援像是決策、合併、輸入與輸出、並行的流程等項目。<br /><br /> 請參閱：<br /><br /> -   [UML 活動圖:證明](../modeling/uml-activity-diagrams-reference.md)<br />-   [UML 活動圖:方針](../modeling/uml-activity-diagrams-guidelines.md)|  
+|順序圖表|使用案例參與者之間的互動順序。<br /><br /> 請參閱：<br /><br /> -   [UML 順序圖表:證明](../modeling/uml-sequence-diagrams-reference.md)<br />-   [UML 順序圖表:方針](../modeling/uml-sequence-diagrams-guidelines.md)|  
+|類別圖表 (UML)|參與使用案例的實體或類型。<br /><br /> 請參閱：<br /><br /> -   [UML 類別圖:證明](../modeling/uml-class-diagrams-reference.md)<br />-   [UML 類別圖:方針](../modeling/uml-class-diagrams-guidelines.md)|  
   
-### <a name="UnderstandActivities"></a> 了解商務程序：活動圖  
+### <a name="UnderstandActivities"></a>瞭解商務程式:活動圖  
  活動圖表描述商務程序中的步驟流程，並提供簡單的方式來溝通工作流程。 開發專案可以有多個活動圖表。 活動通常包含一個外部動作產生的所有動作，例如訂餐、更新菜單或將新餐廳加入營業。 活動也可能會描述複雜動作的詳細資料。  
   
  Lucerne 更新下列活動圖表以顯示 Lucerne 會處理付款並支付給餐廳。 他們將 Dinner Now 付款系統更換成 Lucerne 付款系統，如下醒目提示：  
   
  ![活動圖表上的 Lucerne 付款系統](../modeling/media/uml-lucerne.png "UML_Lucerne")  
   
- **更換 Dinner Now 付款系統在活動圖表上**  
+ **取代活動圖表上的「立即晚餐」付款系統**  
   
- 已更新的圖表可協助 Lucerne 及 Dinner Now 將Lucerne 付款系統於商務程序所在之處視覺化。 在此版本中，註解會用來識別執行步驟的角色。 線條會用來建立 *「泳道」*(Swimlane)，其會依角色來組織步驟。  
+ 已更新的圖表可協助 Lucerne 及 Dinner Now 將Lucerne 付款系統於商務程序所在之處視覺化。 在此版本中，註解會用來識別執行步驟的角色。 線條會用來建立 *「泳道」* (Swimlane)，其會依角色來組織步驟。  
   
  小組也可能需要討論替代的劇本，即客戶改為在訂單抵達後付款給餐廳的情況。 這樣會針對軟體系統建立不同的需求。  
   
@@ -509,30 +509,30 @@ ms.locfileid: "65686881"
   
 - [UML 活動圖表：方針](../modeling/uml-activity-diagrams-guidelines.md)  
   
-#### <a name="summary-strengths-of-activity-diagrams"></a>摘要: 活動圖表的優勢  
+#### <a name="summary-strengths-of-activity-diagrams"></a>摘要: 活動圖的優勢  
  活動圖表可協助您描述商務、系統或程式之動作間的控制流程及資訊，並將其視覺化。 在與他人溝通描述工作流程時，這方式相當簡單實用。  
   
 #### <a name="relationship-to-other-diagrams"></a>與其他圖表的關聯性  
   
 |**圖表**|**描述**|  
 |-----------------|---------------------|  
-|使用案例圖|摘要說明各個執行者所執行的活動。<br /><br /> 請參閱：<br /><br /> -   [UML 使用案例圖：參考](../modeling/uml-use-case-diagrams-reference.md)<br />-   [UML 使用案例圖：方針](../modeling/uml-use-case-diagrams-guidelines.md)|  
-|元件圖|將系統視覺化為可重覆使用的組件集合，該組件透過一組妥善定義的介面來提供或使用行為。<br /><br /> 請參閱：<br /><br /> -   [UML 元件圖：參考](../modeling/uml-component-diagrams-reference.md)<br />-   [UML 元件圖：方針](../modeling/uml-component-diagrams-guidelines.md)|  
+|使用案例圖|摘要說明各個執行者所執行的活動。<br /><br /> 請參閱：<br /><br /> -   [UML 使用案例圖:證明](../modeling/uml-use-case-diagrams-reference.md)<br />-   [UML 使用案例圖:方針](../modeling/uml-use-case-diagrams-guidelines.md)|  
+|元件圖|將系統視覺化為可重覆使用的組件集合，該組件透過一組妥善定義的介面來提供或使用行為。<br /><br /> 請參閱：<br /><br /> -   [UML 元件圖表:證明](../modeling/uml-component-diagrams-reference.md)<br />-   [UML 元件圖表:方針](../modeling/uml-component-diagrams-guidelines.md)|  
   
-### <a name="DescribeComponents"></a> 描述系統結構：元件圖表  
+### <a name="DescribeComponents"></a>描述系統結構:元件圖  
  元件圖表將系統描述為可分隔的組件集合，該組件透過一組妥善定義的介面來提供或使用行為。 這些組件可以是任何規模，且可以採用任何方式進行連接。  
   
  為協助 Lucerne 與 Dinner Now 討論系統的元件及其介面，並將其視覺化，他們建立了下列元件圖表：  
   
- ![在 付款系統的外部元件](../modeling/media/uml-extdnpayment.png "UML_ExtDNPayment")  
+ ![付款系統中的外部元件](../modeling/media/uml-extdnpayment.png "UML_ExtDNPayment")  
   
- **Dinner Now 付款系統的元件**  
+ **晚餐現已付款系統的元件**  
   
- 此圖表顯示不同的元件類型及其 *「相依性」*(Dependency)。 例如，Dinner Now 網站與 Lucerne 付款系統皆需要「外部付款處理器閘道」來驗證付款。 元件之間的箭號代表相依性，表示哪些元件需要其他元件的功能。  
+ 此圖表顯示不同的元件類型及其 *「相依性」* (Dependency)。 例如，Dinner Now 網站與 Lucerne 付款系統皆需要「外部付款處理器閘道」來驗證付款。 元件之間的箭號代表相依性，表示哪些元件需要其他元件的功能。  
   
  為使用 Lucerne 付款系統，Dinner Now 網站必須更新以使用 Lucerne 付款系統的 PaymentApproval 及 PayableInsertion 介面。  
   
- 下列圖表顯示 Dinner Now 網站的特定元件設定。 此設定表示網站的任一執行個體是由四個 *「組件」*(Part) 所組成：  
+ 下列圖表顯示 Dinner Now 網站的特定元件設定。 此設定表示網站的任一執行個體是由四個 *「組件」* (Part) 所組成：  
   
 - CustomerProcessing  
   
@@ -544,9 +544,9 @@ ms.locfileid: "65686881"
   
   這些組件是指定之元件類型的執行個體，會以下列方式連接：  
   
-  ![Dinner Now 網站內部的元件](../modeling/media/uml-dinnernow.png "UML_DinnerNow")  
+  ![晚餐中的元件 Now 網站](../modeling/media/uml-dinnernow.png "UML_DinnerNow")  
   
-  **元件在 Dinner Now 網站。**  
+  **晚餐 Now 網站內的元件**  
   
   Dinner Now 網站將其行為委派給這些組件，而這些組件會處理網站的功能。 父元件及其成員元件間的箭號會顯示 *「委派」* (Delegation)，其表示哪些組件會處理父元件透過其介面接收或傳遞的訊息。  
   
@@ -591,13 +591,13 @@ ms.locfileid: "65686881"
 |**圖表**|**描述**|  
 |-----------------|---------------------|  
 |Code Map|將現有程式碼中的組織與關聯性視覺化。<br /><br /> 若要識別候選元件，請建立 Code Map，並在系統中依功能將項目分組。<br /><br /> 請參閱：<br /><br /> -   [對應方案之間的相依性](../modeling/map-dependencies-across-your-solutions.md)|  
-|順序圖表|將元件或元件內部組件間的互動順序視覺化。<br /><br /> 若要在順序圖表上從元件建立生命線，請以滑鼠右鍵按一下元件，然後按一下 [建立生命線] 。<br /><br /> 請參閱：<br /><br /> -   [UML 循序圖：參考](../modeling/uml-sequence-diagrams-reference.md)<br />-   [UML 循序圖：方針](../modeling/uml-sequence-diagrams-guidelines.md)|  
-|類別圖表 (UML)|定義提供的連接埠或必要的連接埠上的介面，以及定義實作元件功能的類別。<br /><br /> 請參閱：<br /><br /> -   [UML 類別圖：參考](../modeling/uml-class-diagrams-reference.md)<br />-   [UML 類別圖：方針](../modeling/uml-class-diagrams-guidelines.md)|  
-|分層圖|描述與元件相關的系統邏輯架構。 使用圖層驗證以確定程式碼與設計維持一致。<br /><br /> 請參閱：<br /><br /> -   [從您的程式碼建立分層圖](../modeling/create-layer-diagrams-from-your-code.md)<br />-   [分層圖：參考](../modeling/layer-diagrams-reference.md)<br />-   [分層圖：方針](../modeling/layer-diagrams-guidelines.md)<br />-   [使用分層圖驗證程式碼](../modeling/validate-code-with-layer-diagrams.md)|  
-|活動圖表|將元件為回應傳入訊息所執行的內部處理程序視覺化。<br /><br /> 請參閱：<br /><br /> -   [UML 活動圖表：參考](../modeling/uml-activity-diagrams-reference.md)<br />-   [UML 活動圖表：方針](../modeling/uml-activity-diagrams-guidelines.md)|  
+|順序圖表|將元件或元件內部組件間的互動順序視覺化。<br /><br /> 若要在順序圖表上從元件建立生命線，請以滑鼠右鍵按一下元件，然後按一下 [建立生命線]。<br /><br /> 請參閱：<br /><br /> -   [UML 順序圖表:證明](../modeling/uml-sequence-diagrams-reference.md)<br />-   [UML 順序圖表:方針](../modeling/uml-sequence-diagrams-guidelines.md)|  
+|類別圖表 (UML)|定義提供的連接埠或必要的連接埠上的介面，以及定義實作元件功能的類別。<br /><br /> 請參閱：<br /><br /> -   [UML 類別圖:證明](../modeling/uml-class-diagrams-reference.md)<br />-   [UML 類別圖:方針](../modeling/uml-class-diagrams-guidelines.md)|  
+|分層圖|描述與元件相關的系統邏輯架構。 使用圖層驗證以確定程式碼與設計維持一致。<br /><br /> 請參閱：<br /><br /> -   [從您的程式碼建立分層圖](../modeling/create-layer-diagrams-from-your-code.md)<br />-   [分層圖:證明](../modeling/layer-diagrams-reference.md)<br />-   [分層圖:方針](../modeling/layer-diagrams-guidelines.md)<br />-   [使用圖層圖表驗證程式代碼](../modeling/validate-code-with-layer-diagrams.md)|  
+|活動圖表|將元件為回應傳入訊息所執行的內部處理程序視覺化。<br /><br /> 請參閱：<br /><br /> -   [UML 活動圖:證明](../modeling/uml-activity-diagrams-reference.md)<br />-   [UML 活動圖:方針](../modeling/uml-activity-diagrams-guidelines.md)|  
   
-### <a name="VisualizeCode"></a> 視覺化現有程式碼：Code Map  
- Code Map 顯示程式碼的目前組織及關聯性。 項目在地圖上是以 *「節點」* (Node) 來代表，關聯性則是以 *「連結」*(Link) 來代表。 Code Map 可協助您執行下列種類的工作：  
+### <a name="VisualizeCode"></a>將現有程式碼視覺化:Code Map  
+ Code Map 顯示程式碼的目前組織及關聯性。 項目在地圖上是以 *「節點」* (Node) 來代表，關聯性則是以 *「連結」* (Link) 來代表。 Code Map 可協助您執行下列種類的工作：  
   
 - 探索不熟悉的程式碼。  
   
@@ -609,19 +609,19 @@ ms.locfileid: "65686881"
   
   下列地圖顯示 PaymentProcessing 類別及 Dinner Now 系統其他部分之間的相依性，其以選取狀態顯示：  
   
-  ![Dinner Now 付款系統的相依性圖形](../modeling/media/dep-dnpayment.png "Dep_DNPayment")  
+  ![晚餐現在付款系統的]相依性圖形(../modeling/media/dep-dnpayment.png "Dep_DNPayment")  
   
   **Dinner Now 付款系統的 Code Map**  
   
   開發人員展開 PaymentProcessing 類別並選取其成員以探索地圖，進而查看可能受影響的區域。  
   
-  ![PaymentProcessing 和相依性的方法](../modeling/media/depgraph-expandeddn.png "DepGraph_ExpandedDN")  
+  ![PaymentProcessing 和相依性中的方法](../modeling/media/depgraph-expandeddn.png "DepGraph_ExpandedDN")  
   
   **PaymentProcessing 類別內部方法及其相依性**  
   
   他們針對 Lucerne 付款系統產生下列地圖以查看其類別、方法與相依性。 小組發現 Lucerne 系統可能也需要處理，以與 Dinner Now 系統其他部分互動：  
   
-  ![Lucerne 付款系統的相依性圖形](../modeling/media/depgraph-lucernepay.png "DepGraph_LucernePay")  
+  ![Lucerne 付款系統的]相依性圖形(../modeling/media/depgraph-lucernepay.png "DepGraph_LucernePay")  
   
   **Lucerne 付款系統的 Code Map**  
   
@@ -629,7 +629,7 @@ ms.locfileid: "65686881"
   
   在重新組織程式碼之後，小組產生新的 Code Map 來查看已更新的結構及關聯性：  
   
-  ![使用已重新組織過的程式碼的相依性圖形](../modeling/media/depgraph-integrated.png "DepGraph_Integrated")  
+  ![具有重新組織程式碼的]相依性圖形(../modeling/media/depgraph-integrated.png "DepGraph_Integrated")  
   
   **程式碼已重新組織過的 Code Map**  
   
@@ -639,7 +639,7 @@ ms.locfileid: "65686881"
   
 - 如需快速取得原始程式碼的概觀，請遵循這些步驟來產生 Code Map：  
   
-     在 [架構]  功能表上，按一下 [產生方案的 Code Map] 。  
+     在 [架構] 功能表上，按一下 [產生方案的 Code Map]。  
   
      若要快速取得已編譯程式碼的概觀，請建立空白的 Code Map，然後將組件檔或二進位檔拖曳到地圖介面上。  
   
@@ -647,7 +647,7 @@ ms.locfileid: "65686881"
   
 - 為了協助您探索地圖，請重新整理配置，以便其符合您要執行的工作種類。  
   
-     例如，若要將程式碼的圖層視覺化，請選取樹狀配置。 請參閱[瀏覽和重新整理 code map](../modeling/browse-and-rearrange-code-maps.md)。  
+     例如，若要將程式碼的圖層視覺化，請選取樹狀配置。 請參閱[流覽和重新排列 code map](../modeling/browse-and-rearrange-code-maps.md)。  
   
 #### <a name="summary-strengths-of-code-maps"></a>摘要: Code Map 的優勢  
  Code Map 可協助您：  
@@ -662,19 +662,19 @@ ms.locfileid: "65686881"
   
 |**圖表**|**描述**|  
 |-----------------|-------------------|  
-|分層圖|系統的邏輯架構。 使用圖層驗證以確定程式碼與設計維持一致。<br /><br /> 若要易於識別現有圖層或預定圖層，請建立 Code Map 並將相關項目分組。 若要建立分層圖，請參閱：<br /><br /> -   [從您的程式碼建立分層圖](../modeling/create-layer-diagrams-from-your-code.md)<br />-   [分層圖：方針](../modeling/layer-diagrams-guidelines.md)|  
-|元件圖|元件、其介面及關聯性。<br /><br /> 為了協助您識別元件，請建立 Code Map，並在系統中依功能將項目分組。<br /><br /> 請參閱：<br /><br /> -   [UML 元件圖：參考](../modeling/uml-component-diagrams-reference.md)<br />-   [UML 元件圖：方針](../modeling/uml-component-diagrams-guidelines.md)|  
-|類別圖表 (UML)|類別、其屬性與作業及關聯性。<br /><br /> 為了協助您識別這些項目，請建立會顯示這些項目的 UML 類別圖表。<br /><br /> 請參閱：<br /><br /> -   [UML 類別圖：參考](../modeling/uml-class-diagrams-reference.md)<br />-   [UML 類別圖：方針](../modeling/uml-class-diagrams-guidelines.md)|  
-|類別圖表 (以程式碼為基礎)|特定專案程式碼中的現有類別。<br /><br /> 若要修改程式碼中的現有類別並將其視覺化，請使用 [類別設計工具]。<br /><br /> 請參閱[如何：將類別圖表新增至專案 （類別設計工具）](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)。|  
+|分層圖|系統的邏輯架構。 使用圖層驗證以確定程式碼與設計維持一致。<br /><br /> 若要易於識別現有圖層或預定圖層，請建立 Code Map 並將相關項目分組。 若要建立分層圖，請參閱：<br /><br /> -   [從您的程式碼建立分層圖](../modeling/create-layer-diagrams-from-your-code.md)<br />-   [分層圖:方針](../modeling/layer-diagrams-guidelines.md)|  
+|元件圖|元件、其介面及關聯性。<br /><br /> 為了協助您識別元件，請建立 Code Map，並在系統中依功能將項目分組。<br /><br /> 請參閱：<br /><br /> -   [UML 元件圖表:證明](../modeling/uml-component-diagrams-reference.md)<br />-   [UML 元件圖表:方針](../modeling/uml-component-diagrams-guidelines.md)|  
+|類別圖表 (UML)|類別、其屬性與作業及關聯性。<br /><br /> 為了協助您識別這些項目，請建立會顯示這些項目的 UML 類別圖表。<br /><br /> 請參閱：<br /><br /> -   [UML 類別圖:證明](../modeling/uml-class-diagrams-reference.md)<br />-   [UML 類別圖:方針](../modeling/uml-class-diagrams-guidelines.md)|  
+|類別圖表 (以程式碼為基礎)|特定專案程式碼中的現有類別。<br /><br /> 若要修改程式碼中的現有類別並將其視覺化，請使用 [類別設計工具]。<br /><br /> 請參閱[How to:將類別圖表新增至專案 (類別設計工具](../ide/how-to-add-class-diagrams-to-projects-class-designer.md))。|  
   
-### <a name="DescribeSequence"></a> 描述互動：順序圖表  
+### <a name="DescribeSequence"></a>描述互動:順序圖表  
  順序圖表描述系統組成部分之間的一系列互動。 組成部分可以是任何規模。 例如，其範圍可小至程式的個別物件，或大至大型子系統或外部執行者。 互動可以是任何規模及類型。 例如，其範圍可小至個別訊息或大至擴充的異動，而且可做為函式呼叫或 Web 服務訊息。  
   
  為協助 Lucerne 與 Dinner Now 描述及討論「處理付款」使用案例中的步驟，其從元件圖表建立下列順序圖表。 生命線反映 Dinner Now 網站元件及其組件。 出現在生命線之間的訊息會遵循元件圖表上的連接。  
   
- ![循序圖用於處理付款 」 使用案例](../modeling/media/umlsequence-processpayment.png "UMLSequence_ProcessPayment")  
+ ![進程付款使用案例的順序圖表](../modeling/media/umlsequence-processpayment.png "UMLSequence_ProcessPayment")  
   
- **使用案例的 「 處理付款的順序圖表**  
+ **處理付款使用案例的順序圖表**  
   
  順序圖表顯示在客戶建立訂單時，Dinner Now 網站會在 OrderProcessing 執行個體上呼叫 ProcessOrder。 接著，OrderProcessing 會在 PaymentProcessing 上呼叫 ProcessPayment。 這項作業會一直持續直到「外部付款處理器閘道」驗證付款。 唯有如此，控制權才會回到 Dinner Now 網站。  
   
@@ -693,13 +693,13 @@ ms.locfileid: "65686881"
   
 - 垂直 *「生命線」* (Lifeline) 代表執行者或軟體物件的執行個體。  
   
-   若要加入執行者符號 (表示參與者位在開發中系統之外)，請按一下生命線。 在 [屬性]  視窗中，將 **執行者** 設為 **True**。 如果 [屬性]  視窗未開啟，請按 **F4**。  
+   若要加入執行者符號 (表示參與者位在開發中系統之外)，請按一下生命線。 在 [屬性] 視窗中，將 **執行者** 設為 **True**。 如果 [屬性] 視窗未開啟，請按 **F4**。  
   
 - 水平 *「訊息」* (Message) 代表方法呼叫、Web 服務訊息或一些其他通訊。 *「執行出現次數」* (Execution Occurrence) 是出現在生命線上帶有垂直陰影的矩形，代表接收物件處理呼叫的期間。  
   
-- 期間*同步*訊息，寄件者物件等待控制權移到 <\<傳回 >> 如同一般函式呼叫。 在 *「非同步」* (Asynchronous) 訊息期間，傳送者可立即繼續作業。  
+- 在*同步*訊息期間, 傳送者物件會等待控制項 <\<傳回 > >, 如同在一般函式呼叫中。 在 *「非同步」* (Asynchronous) 訊息期間，傳送者可立即繼續作業。  
   
-- 使用 <\<建立 >> 表示的物件由其他物件建構的訊息。 這應該是第一個傳送到物件的訊息。  
+- 使用 <\<建立 > > 訊息, 以指示其他物件的物件結構。 這應該是第一個傳送到物件的訊息。  
   
   請參閱：  
   
@@ -718,16 +718,16 @@ ms.locfileid: "65686881"
   
 |**圖表**|**描述**|  
 |-----------------|---------------------|  
-|類別圖表 (UML)|定義生命線代表的類別，以及定義參數及傳回值，而此參數及傳回值用於在生命線之間傳送的訊息中。<br /><br /> 若要從生命線建立類別，請以滑鼠右鍵按一下生命線，然後按一下 [建立類別]  或 [建立介面] 。 若要在類別圖表上從類型建立生命線，請以滑鼠右鍵按一下類型，然後按一下 [建立生命線] 。<br /><br /> 請參閱：<br /><br /> -   [UML 類別圖：參考](../modeling/uml-class-diagrams-reference.md)<br />-   [UML 類別圖：方針](../modeling/uml-class-diagrams-guidelines.md)|  
-|元件圖|描述生命線代表的元件，以及描述會提供及使用訊息代表之行為的介面。<br /><br /> 若要從元件圖表建立生命線，請以滑鼠右鍵按一下元件，然後按一下 [建立生命線] 。<br /><br /> 請參閱：<br /><br /> -   [UML 元件圖：參考](../modeling/uml-component-diagrams-reference.md)<br />-   [UML 元件圖：方針](../modeling/uml-component-diagrams-guidelines.md)|  
-|使用案例圖|將順序圖表上使用者及元件之間的互動摘要說明為使用案例，其代表使用者的目標。<br /><br /> 請參閱：<br /><br /> -   [UML 使用案例圖：參考](../modeling/uml-use-case-diagrams-reference.md)<br />-   [UML 使用案例圖：方針](../modeling/uml-use-case-diagrams-guidelines.md)|  
+|類別圖表 (UML)|定義生命線代表的類別，以及定義參數及傳回值，而此參數及傳回值用於在生命線之間傳送的訊息中。<br /><br /> 若要從生命線建立類別，請以滑鼠右鍵按一下生命線，然後按一下 [建立類別] 或 [建立介面]。 若要在類別圖表上從類型建立生命線，請以滑鼠右鍵按一下類型，然後按一下 [建立生命線]。<br /><br /> 請參閱：<br /><br /> -   [UML 類別圖:證明](../modeling/uml-class-diagrams-reference.md)<br />-   [UML 類別圖:方針](../modeling/uml-class-diagrams-guidelines.md)|  
+|元件圖|描述生命線代表的元件，以及描述會提供及使用訊息代表之行為的介面。<br /><br /> 若要從元件圖表建立生命線，請以滑鼠右鍵按一下元件，然後按一下 [建立生命線]。<br /><br /> 請參閱：<br /><br /> -   [UML 元件圖表:證明](../modeling/uml-component-diagrams-reference.md)<br />-   [UML 元件圖表:方針](../modeling/uml-component-diagrams-guidelines.md)|  
+|使用案例圖|將順序圖表上使用者及元件之間的互動摘要說明為使用案例，其代表使用者的目標。<br /><br /> 請參閱：<br /><br /> -   [UML 使用案例圖:證明](../modeling/uml-use-case-diagrams-reference.md)<br />-   [UML 使用案例圖:方針](../modeling/uml-use-case-diagrams-guidelines.md)|  
   
-### <a name="DefineClasses"></a> 定義類型的詞彙：類別圖表  
+### <a name="DefineClasses"></a>定義類型的詞彙:類別圖表  
  類別圖表定義參與系統的實體、詞彙或概念，以及彼此的關聯性。 例如，您可以在開發期間使用這些圖表來描述每個類別的屬性及作業，不論其實作語言或樣式為何。  
   
  為了協助 Lucerne 描述及討論參與「處理付款」使用案例的實體，他們繪製了下列類別圖表：  
   
- ![處理付款 」 實體在類別圖表](../modeling/media/uml-payentities.png "UML_PayEntities")  
+ ![類別圖表上的處理付款實體](../modeling/media/uml-payentities.png "UML_PayEntities")  
   
  **類別圖表上的「處理付款」實體**  
   
@@ -735,7 +735,7 @@ ms.locfileid: "65686881"
   
  在開發期間，Lucerne 使用下列類別圖表來描述及討論每個類別的詳細資料：  
   
- ![「 處理付款類別圖上的實體詳細資料](../modeling/media/uml-payment.png "UML_Payment")  
+ ![類別圖表上的處理付款實體詳細資料](../modeling/media/uml-payment.png "UML_Payment")  
   
  **類別圖表上的「處理付款」詳細資料**  
   
@@ -750,29 +750,29 @@ ms.locfileid: "65686881"
   
 - 類型，例如類別、介面及列舉：  
   
-  - *「類別」* (Class) 是物件的定義，而這些物件共用特定的結構或行為特性。  
+  -           *「類別」* (Class) 是物件的定義，而這些物件共用特定的結構或行為特性。  
   
-  - *「介面」* (Interface) 會定義物件外部可見行為的一部分。  
+  -           *「介面」* (Interface) 會定義物件外部可見行為的一部分。  
   
-  - *「列舉」* (Enumeration) 是包含常值清單的分類器。  
+  -           *「列舉」* (Enumeration) 是包含常值清單的分類器。  
   
-- *「屬性」* (Attribute) 是特定類型的值，其描述 *「分類器」*(Classifier) 的每個執行個體。 分類器是類型、元件、使用案例的一般名稱，甚至是執行者的一般名稱。  
+- *「屬性」* (Attribute) 是特定類型的值，其描述 *「分類器」* (Classifier) 的每個執行個體。 分類器是類型、元件、使用案例的一般名稱，甚至是執行者的一般名稱。  
   
 - *「作業」* (Operation) 是分類器執行個體可以執行的方法或函式。  
   
-- *「關聯」* (Association) 表示兩個分類器之間的某種關聯性。  
+-           *「關聯」* (Association) 表示兩個分類器之間的某種關聯性。  
   
-  - *「彙總」* (Aggregation) 是一種關聯，表示兩個分類器之間的共用擁有權。  
+  -           *「彙總」* (Aggregation) 是一種關聯，表示兩個分類器之間的共用擁有權。  
   
-  - *「組合」* (Composition) 是一種關聯，表示兩個分類器之間的整體-部分關聯性。  
+  -           *「組合」* (Composition) 是一種關聯，表示兩個分類器之間的整體-部分關聯性。  
   
     若要顯示彙總或組合，請在關聯上設定 **彙總** 屬性。 **共用** 顯示彙總， **組合** 則顯示組合。  
   
-- *「相依性」* (Dependency) 表示若變更某個分類器的定義，可能會變更另一個分類器的定義。  
+-           *「相依性」* (Dependency) 表示若變更某個分類器的定義，可能會變更另一個分類器的定義。  
   
-- *「一般化」* (Generalization) 表示特定分類器的部分定義繼承自一般分類器。 *「實現」* (Realization) 表示類別實作介面提供的作業及屬性。  
+-           *「一般化」* (Generalization) 表示特定分類器的部分定義繼承自一般分類器。           *「實現」* (Realization) 表示類別實作介面提供的作業及屬性。  
   
-   若要建立這些關聯性，請使用 [繼承]  工具。 另外，實現可以用 *「棒棒糖符號」*(Lollipop) 表示。  
+   若要建立這些關聯性，請使用 [繼承] 工具。 另外，實現可以用 *「棒棒糖符號」* (Lollipop) 表示。  
   
 - *「封裝」* (Package) 是分類器、關聯、生命線、元件及其他封裝的群組。 *「匯入」* (Import) 關聯性表示某個封裝包含另一個封裝的所有定義。  
   
@@ -786,12 +786,12 @@ ms.locfileid: "65686881"
   
 - [如何：將類別圖表新增至專案 (類別設計工具)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)  
   
-#### <a name="summary-strengths-of-class-diagrams"></a>摘要: 類別圖表的優勢  
+#### <a name="summary-strengths-of-class-diagrams"></a>摘要: 類別圖表的優點  
  類別圖表可協助您定義下列項目：  
   
 - 討論使用者需求及參與系統的實體時可使用的常用詞彙。 請參閱[模型使用者需求](../modeling/model-user-requirements.md)。  
   
-- 系統組成部分 (例如元件) 使用的類型，不論其實作為何。 請參閱[您的應用程式架構模型](../modeling/model-your-app-s-architecture.md)。  
+- 系統組成部分 (例如元件) 使用的類型，不論其實作為何。 請參閱[模型應用程式的架構](../modeling/model-your-app-s-architecture.md)。  
   
 - 類型之間的關聯性 (例如相依性)。 例如，您可以顯示某個類型可以與另一個類型的多個執行個體相關聯。  
   
@@ -799,35 +799,35 @@ ms.locfileid: "65686881"
   
 |**圖表**|**描述**|  
 |-----------------|---------------------|  
-|使用案例圖|定義用於描述使用案例中目標及步驟的類型。<br /><br /> 請參閱：<br /><br /> -   [UML 使用案例圖：參考](../modeling/uml-use-case-diagrams-reference.md)<br />-   [UML 使用案例圖：方針](../modeling/uml-use-case-diagrams-guidelines.md)|  
-|活動圖表|定義會通過物件節點、輸入連接、輸出連接及活動參數節點的資料類型。<br /><br /> 請參閱：<br /><br /> -   [UML 活動圖表：參考](../modeling/uml-activity-diagrams-reference.md)<br />-   [UML 活動圖表：方針](../modeling/uml-activity-diagrams-guidelines.md)|  
-|元件圖|描述元件、其介面及關聯性。 類別可能也會描述完整元件。<br /><br /> 請參閱：<br /><br /> -   [UML 元件圖：參考](../modeling/uml-component-diagrams-reference.md)<br />-   [UML 元件圖：方針](../modeling/uml-component-diagrams-guidelines.md)|  
-|分層圖|定義與類別相關的系統邏輯架構。<br /><br /> 使用圖層驗證以確定程式碼與設計維持一致。<br /><br /> 請參閱：<br /><br /> -   [從您的程式碼建立分層圖](../modeling/create-layer-diagrams-from-your-code.md)<br />-   [分層圖：參考](../modeling/layer-diagrams-reference.md)<br />-   [分層圖：方針](../modeling/layer-diagrams-guidelines.md)<br />-   [使用分層圖驗證程式碼](../modeling/validate-code-with-layer-diagrams.md)|  
-|順序圖表|定義生命線的類型，以及生命線可以接收之所有訊息的作業、參數及傳回值。<br /><br /> 若要在類別圖表上從類型建立生命線，請以滑鼠右鍵按一下類型，然後按一下 [建立生命線] 。<br /><br /> 請參閱：<br /><br /> -   [UML 循序圖：參考](../modeling/uml-sequence-diagrams-reference.md)<br />-   [UML 循序圖：方針](../modeling/uml-sequence-diagrams-guidelines.md)|  
+|使用案例圖|定義用於描述使用案例中目標及步驟的類型。<br /><br /> 請參閱：<br /><br /> -   [UML 使用案例圖:證明](../modeling/uml-use-case-diagrams-reference.md)<br />-   [UML 使用案例圖:方針](../modeling/uml-use-case-diagrams-guidelines.md)|  
+|活動圖表|定義會通過物件節點、輸入連接、輸出連接及活動參數節點的資料類型。<br /><br /> 請參閱：<br /><br /> -   [UML 活動圖:證明](../modeling/uml-activity-diagrams-reference.md)<br />-   [UML 活動圖:方針](../modeling/uml-activity-diagrams-guidelines.md)|  
+|元件圖|描述元件、其介面及關聯性。 類別可能也會描述完整元件。<br /><br /> 請參閱：<br /><br /> -   [UML 元件圖表:證明](../modeling/uml-component-diagrams-reference.md)<br />-   [UML 元件圖表:方針](../modeling/uml-component-diagrams-guidelines.md)|  
+|分層圖|定義與類別相關的系統邏輯架構。<br /><br /> 使用圖層驗證以確定程式碼與設計維持一致。<br /><br /> 請參閱：<br /><br /> -   [從您的程式碼建立分層圖](../modeling/create-layer-diagrams-from-your-code.md)<br />-   [分層圖:證明](../modeling/layer-diagrams-reference.md)<br />-   [分層圖:方針](../modeling/layer-diagrams-guidelines.md)<br />-   [使用圖層圖表驗證程式代碼](../modeling/validate-code-with-layer-diagrams.md)|  
+|順序圖表|定義生命線的類型，以及生命線可以接收之所有訊息的作業、參數及傳回值。<br /><br /> 若要在類別圖表上從類型建立生命線，請以滑鼠右鍵按一下類型，然後按一下 [建立生命線]。<br /><br /> 請參閱：<br /><br /> -   [UML 順序圖表:證明](../modeling/uml-sequence-diagrams-reference.md)<br />-   [UML 順序圖表:方針](../modeling/uml-sequence-diagrams-guidelines.md)|  
 |Code Map|將現有程式碼中的組織與關聯性視覺化。<br /><br /> 若要識別類別、其關聯性及方法，請建立會顯示這些項目的 Code Map。<br /><br /> 請參閱：<br /><br /> -   [對應方案之間的相依性](../modeling/map-dependencies-across-your-solutions.md)|  
   
-### <a name="DescribeLayers"></a> 描述的邏輯架構：圖層圖表  
- 分層圖將您方案中的成品組織成抽象群組 (也就是 *「圖層」*(Layer))，來描述系統的邏輯架構。 成品可以是多個項目，例如命名空間、專案、類別、方法等等。 圖層代表及描述成品在系統中執行的角色或工作。 您也可以在組建中加入圖層驗證並簽入作業，以確定程式碼與設計維持一致。  
+### <a name="DescribeLayers"></a>描述邏輯架構:圖層圖表  
+ 分層圖將您方案中的成品組織成抽象群組 (也就是 *「圖層」* (Layer))，來描述系統的邏輯架構。 成品可以是多個項目，例如命名空間、專案、類別、方法等等。 圖層代表及描述成品在系統中執行的角色或工作。 您也可以在組建中加入圖層驗證並簽入作業，以確定程式碼與設計維持一致。  
   
  為了讓程式碼與設計一致，Dinner Now 及 Lucerne 使用下列分層圖來驗證演變的程式碼：  
   
- ![整合式的付款系統的圖層圖表](../modeling/media/layer-integrated-dnlucerne.png "Layer_Integrated_DNLucerne")  
+ ![整合式付款系統的分層圖](../modeling/media/layer-integrated-dnlucerne.png "Layer_Integrated_DNLucerne")  
   
- **描述 Dinner now 與 Lucerne 整合的分層圖**  
+ **晚餐的圖層圖表現在已與 Lucerne 整合**  
   
- 這個圖表上的圖層會連結到對應的 Dinner Now 及 Lucerne 方案成品。 例如，商務圖層會連結到 DinnerNow.Business 命名空間及其成員，其目前已包含 PaymentApprover 類別。 資源存取圖層會連結到 DinnerNow.Data 命名空間。 箭號 (也就是 *「相依性」*(Dependency)) 會指定只有商務圖層可以使用位於資源存取圖層中的功能。 小組在更新程式碼時，圖層驗證會定期執行，以便在發生衝突時加以攔截，並協助小組立即解決衝突。  
+ 這個圖表上的圖層會連結到對應的 Dinner Now 及 Lucerne 方案成品。 例如，商務圖層會連結到 DinnerNow.Business 命名空間及其成員，其目前已包含 PaymentApprover 類別。 資源存取圖層會連結到 DinnerNow.Data 命名空間。 箭號 (也就是 *「相依性」* (Dependency)) 會指定只有商務圖層可以使用位於資源存取圖層中的功能。 小組在更新程式碼時，圖層驗證會定期執行，以便在發生衝突時加以攔截，並協助小組立即解決衝突。  
   
  小組共同合作，以逐步進行整合並測試這兩個系統。 他們首先確定 PaymentApprover 與 Dinner Now 其餘部分彼此可順利運作，才會處理 PaymentProcessing。  
   
  下列 Code Map 顯示 Dinner Now 及 PaymentApprover 之間的新呼叫：  
   
- ![使用整合式系統的更新相依性圖形](../modeling/media/depgraph-intsystem.png "DepGraph_IntSystem")  
+ ![已更新整合式系統的]相依性圖形(../modeling/media/depgraph-intsystem.png "DepGraph_IntSystem")  
   
  **內含已更新方法呼叫的 Code Map**  
   
  在確定系統如預期運作之後，Dinner Now 會將 PaymentProcessing 程式碼註解化。 圖層驗證報表結果無誤，且產生的 Code Map 顯示沒有任何 PaymentProcessing 相依性存在：  
   
- ![未含 PaymentProcessing 的相依性圖形](../modeling/media/depgraph-nomore.png "DepGraph_NoMore")  
+ ![沒有 PaymentProcessing]的相依性圖形(../modeling/media/depgraph-nomore.png "DepGraph_NoMore")  
   
  **未含 PaymentProcessing 的 Code Map**  
   
@@ -836,7 +836,7 @@ ms.locfileid: "65686881"
   
 - *「圖層」* (Layer) 描述成品的邏輯群組。  
   
-- *「連結」* (Link) 是圖層與成品之間的關聯。  
+-           *「連結」* (Link) 是圖層與成品之間的關聯。  
   
    若要從成品建立圖層，請從 [方案總管]、[Code Map]、[類別檢視] 或 [物件瀏覽器] 拖曳項目。 若要繪製新圖層再連結到成品，請使用工具箱或以滑鼠右鍵按一下圖表介面以建立圖層，然後將項目拖曳到這些圖層。  
   
@@ -848,11 +848,11 @@ ms.locfileid: "65686881"
   
   - 如果圖層包含已連結到成品的其他圖層，即使此容器圖層上的數字未包含那些成品，容器圖層也會連結到那些成品。  
   
-    若要查看連結到圖層的成品，請以滑鼠右鍵按一下圖層，然後按一下 [檢視連結]  來開啟 [圖層總管] 。  
+    若要查看連結到圖層的成品，請以滑鼠右鍵按一下圖層，然後按一下 [檢視連結] 來開啟 [圖層總管]。  
   
-- *「相依性」* (Dependency) 表示某個圖層可以使用另一個圖層中的功能，但反過來則不行。 *「雙向相依性」* (Bidirectional Dependency) 表示某個圖層可以使用另一個圖層中的功能，反之亦然。  
+-           *「相依性」* (Dependency) 表示某個圖層可以使用另一個圖層中的功能，但反過來則不行。 *「雙向相依性」* (Bidirectional Dependency) 表示某個圖層可以使用另一個圖層中的功能，反之亦然。  
   
-   若要在分層圖上顯示現有相依性，請以滑鼠右鍵按一下圖表介面，然後按一下 [產生相依性] 。 若要描述預定的相依性，請繪製新的相依性。  
+   若要在分層圖上顯示現有相依性，請以滑鼠右鍵按一下圖表介面，然後按一下 [產生相依性]。 若要描述預定的相依性，請繪製新的相依性。  
   
   請參閱：  
   
@@ -864,7 +864,7 @@ ms.locfileid: "65686881"
   
 - [使用分層圖驗證程式碼](../modeling/validate-code-with-layer-diagrams.md)  
   
-#### <a name="summary-strengths-of-layer-diagrams"></a>摘要: 圖層圖表的優勢  
+#### <a name="summary-strengths-of-layer-diagrams"></a>摘要: 分層圖的優勢  
  分層圖可以協助您：  
   
 - 根據成品功能描述系統的邏輯架構。  
@@ -875,8 +875,8 @@ ms.locfileid: "65686881"
   
 |**圖表**|**描述**|  
 |-----------------|---------------------|  
-|Code Map|將現有程式碼中的組織與關聯性視覺化。<br /><br /> 若要建立圖層，請產生 Code Map，然後在地圖上將項目分組為可能的圖層。 將群組從地圖拖曳到分層圖。<br /><br /> 請參閱：<br /><br /> -   [對應方案之間的相依性](../modeling/map-dependencies-across-your-solutions.md)<br />-   [瀏覽和重新排列 code map](../modeling/browse-and-rearrange-code-maps.md)|  
-|元件圖|描述元件、其介面及關聯性。<br /><br /> 若要將圖層視覺化，請建立會描述系統中不同元件之功能的元件圖表。<br /><br /> 請參閱：<br /><br /> -   [UML 元件圖：參考](../modeling/uml-component-diagrams-reference.md)<br />-   [UML 元件圖：方針](../modeling/uml-component-diagrams-guidelines.md)|  
+|Code Map|將現有程式碼中的組織與關聯性視覺化。<br /><br /> 若要建立圖層，請產生 Code Map，然後在地圖上將項目分組為可能的圖層。 將群組從地圖拖曳到分層圖。<br /><br /> 請參閱：<br /><br /> -   [對應方案之間的相依性](../modeling/map-dependencies-across-your-solutions.md)<br />-   [流覽和重新排列 code map](../modeling/browse-and-rearrange-code-maps.md)|  
+|元件圖|描述元件、其介面及關聯性。<br /><br /> 若要將圖層視覺化，請建立會描述系統中不同元件之功能的元件圖表。<br /><br /> 請參閱：<br /><br /> -   [UML 元件圖表:證明](../modeling/uml-component-diagrams-reference.md)<br />-   [UML 元件圖表:方針](../modeling/uml-component-diagrams-guidelines.md)|  
   
 ## <a name="external-resources"></a>外部資源  
   
@@ -886,8 +886,8 @@ ms.locfileid: "65686881"
   
 ## <a name="see-also"></a>另請參閱  
  [視覺化程式碼](../modeling/visualize-code.md)   
- [建立應用程式模型](../modeling/create-models-for-your-app.md)   
- [在您的開發程序中使用模型](../modeling/use-models-in-your-development-process.md)   
+ [建立應用程式的模型](../modeling/create-models-for-your-app.md)   
+ [在開發程式中使用模型](../modeling/use-models-in-your-development-process.md)   
  [在 Agile 開發中使用模型](https://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)   
  [在開發期間驗證您的系統](../modeling/validate-your-system-during-development.md)   
  [擴充 UML 模型和圖表](../modeling/extend-uml-models-and-diagrams.md)
