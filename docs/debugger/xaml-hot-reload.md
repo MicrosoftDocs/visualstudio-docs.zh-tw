@@ -1,8 +1,7 @@
 ---
 title: 使用 XAML 熱重載來撰寫和調試 XAML
 description: 「XAML 熱重載」或「XAML 編輯後繼續」可讓您在執行應用程式時變更 XAML 程式碼
-ms.custom: ''
-ms.date: 02/28/2019
+ms.date: 08/05/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - xaml edit and continue
@@ -12,16 +11,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f1b2428024c30b8f96babf0cab6a56c60f52fa57
-ms.sourcegitcommit: 3e74ec49a54e5c3da7631f4466128cdf4384af6b
+ms.openlocfilehash: 2728f26319b3d395381d60f136fba7d0c20da977
+ms.sourcegitcommit: 90c3187d804ad7544367829d07ed4b47d3f8a72d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "68711215"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68822138"
 ---
 # <a name="write-and-debug-running-xaml-code-with-xaml-hot-reload-in-visual-studio"></a>在 Visual Studio 中使用 XAML 熱重載來撰寫和偵測執行中的 XAML 程式碼
 
-Visual Studio XAML 熱重載可協助您在應用程式執行時變更 XAML 程式碼, 藉此建立 WPF 或 UWP 應用程式 UI。 這項功能可讓您以累加方式建立和測試 XAML 程式碼, 並享有執行中應用程式的資料內容、驗證狀態, 以及在設計階段中難以模擬的其他真實世界複雜度的優勢。
+XAML 熱重載可讓您在應用程式執行時變更 XAML 程式碼, 以協助您建立 WPF 或 UWP 應用程式使用者介面 (UI)。 「熱重載」可同時在 Visual Studio 和 Blend for Visual Studio 中使用。 這項功能可讓您以累加方式建立和測試 XAML 程式碼, 並享有執行中應用程式的資料內容、驗證狀態, 以及在設計階段中難以模擬的其他真實世界複雜度的優勢。
 
 在這些情況下, XAML 熱重載特別有用:
 
@@ -35,7 +34,7 @@ Visual Studio XAML 熱重載可協助您在應用程式執行時變更 XAML 程�
 |通用 Windows 應用程式 (UWP)|Windows 10 和更新版本, 含 [windows 10 SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk) 14393 + |
 
 > [!NOTE]
-> 目前只有當您在已附加偵錯工具的 Visual Studio 中執行應用程式時, 才支援 Visual Studio XAML 熱重載 (**F5**或**開始進行調試**程式)。 您無法使用 [*附加至進程*] 來啟用此體驗。
+> 目前只有當您在已附加偵錯工具的 Visual Studio 或 Blend for Visual Studio 中執行應用程式時, 才支援 Visual Studio XAML 熱重載 (**F5**或**開始進行調試**程式)。 您無法使用 [[附加至進程](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)] 來啟用此體驗。
 
 ## <a name="known-limitations"></a>已知限制
 
@@ -44,7 +43,7 @@ Visual Studio XAML 熱重載可協助您在應用程式執行時變更 XAML 程�
 |限制|WPF|UWP|附註|
 |-|-|-|-|
 |在應用程式執行時將事件接線至控制項|不支援|不支援|請參閱錯誤:*確定事件失敗*|
-|在資源字典中建立資源物件, 例如在應用程式的頁面/視窗或*應用程式中。 xaml*|不支援|支援|範例: 將```SolidColorBrush```加入至資源字典以當做使用```StaticResource```。</br>注意:使用 XAML 熱重載時, 可以套用/使用靜態資源、樣式轉換器, 以及寫入至資源字典的其他元素。 不支援建立資源。</br> 變更資源字典```Source```屬性。| 
+|在資源字典中建立資源物件, 例如在應用程式的頁面/視窗或*應用程式中。 xaml*|不支援|支援|範例: 將`SolidColorBrush`加入至資源字典以當做使用`StaticResource`。</br>注意:使用 XAML 熱重載時, 可以套用/使用靜態資源、樣式轉換器, 以及寫入至資源字典的其他元素。 不支援建立資源。</br> 變更資源字典`Source`屬性。|
 |當應用程式正在執行時, 將新的控制項、類別、視窗或其他檔案加入至您的專案|不支援|不支援|None|
 |管理 NuGet 套件 (新增/移除/更新套件)|不支援|不支援|None|
 |變更使用 {x:Bind} 標記延伸的資料系結|N/A|Visual Studio 2019 和更新版本中支援|Visual Studio 2017 或之前版本中不支援|

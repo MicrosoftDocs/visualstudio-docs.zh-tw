@@ -9,12 +9,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1ed80454f6a87047de9e338d26c749d3c27a98ea
-ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
+ms.openlocfilehash: 41d5248106b831accf4d71f97aeaeb72fdbc5018
+ms.sourcegitcommit: 044bb54cb4552c8f4651feb11d62e52726117e75
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "67258128"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68662015"
 ---
 # <a name="live-unit-testing-frequently-asked-questions"></a>Live Unit Testing 常見問題集
 
@@ -139,7 +139,7 @@ Live Unit Testing 適用於下表所列的三種熱門單元測試架構。 其�
 
 - Live Unit Testing 不會建立新的應用程式定義域來執行測試，但從 [測試總管]  視窗中執行的測試會建立新的應用程式定義域。
 
-- Live Unit Testing 會循序執行每個測試組件中的測試，然而，如果您從 [測試總管]  視窗執行多個測試，並選取 [平行執行測試]  按鈕，測試將會平行執行。
+- Live Unit Testing 會循序執行 [測試總管]  視窗中每個測試組件中的測試，您可以選擇並行執行多個測試。
 
 - 在 Live Unit Testing 中探索和執行測試會使用 `TestPlatform` 的第 2 版，而 [測試總管]  視窗則會使用第 1 版。 儘管如此，您在大多數情況下不會注意到任何差異。
 

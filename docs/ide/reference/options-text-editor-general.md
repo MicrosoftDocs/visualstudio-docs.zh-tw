@@ -3,21 +3,25 @@ title: 一般、文字編輯器、選項
 ms.date: 01/18/2019
 ms.topic: reference
 f1_keywords:
-- VS.ToolsOptionsPages.Text_Editor.RDL_Expression.General
-- VS.ToolsOptionsPages.Text_Editor.SQL.General
-- vs.toolsoptionspages.text_editor
-- VS.ToolsOptionsPages.Text_Editor.T-SQL80.General
-- VS.ToolsOptionsPages.Text_Editor.SQL_Script.General
-- VS.ToolsOptionsPages.Text_Editor.T-SQL7.General
-- VS.ToolsOptionsPages.Text_Editor.T-SQL.General
-- VS.ToolsOptionsPages.Text_Editor.PL/SQL.General
 - VS.ToolsOptionsPages.Text_Editor
-- VS.ToolsOptionsPages.Text_Editor.XOML.General
-- VS.ToolsOptionsPages.Text_Editor.SQL
-- VS.ToolsOptionsPages.Text_Editor.SQL_Script
+- vs.toolsoptionspages.text_editor
+- VS.ToolsOptionsPages.Text_Editor.CSharp.Formatting
+- VS.ToolsOptionsPages.Text_Editor.CSharp.Outlining
 - VS.ToolsOptionsPages.Text_Editor.General
+- VS.ToolsOptionsPages.Text_Editor.PL/SQL
+- VS.ToolsOptionsPages.Text_Editor.PL/SQL.General
 - VS.ToolsOptionsPages.Text_Editor.Python
 - VS.ToolsOptionsPages.Text_Editor.R
+- VS.ToolsOptionsPages.Text_Editor.RDL_Expression.General
+- VS.ToolsOptionsPages.Text_Editor.SQL
+- VS.ToolsOptionsPages.Text_Editor.SQL.General
+- VS.ToolsOptionsPages.Text_Editor.SQL_Script
+- VS.ToolsOptionsPages.Text_Editor.SQL_Script.General
+- VS.ToolsOptionsPages.Text_Editor.T-SQL
+- VS.ToolsOptionsPages.Text_Editor.T-SQL.General
+- VS.ToolsOptionsPages.Text_Editor.T-SQL7.General
+- VS.ToolsOptionsPages.Text_Editor.T-SQL80
+- VS.ToolsOptionsPages.Text_Editor.T-SQL80.General
 helpviewer_keywords:
 - Text Editor Options dialog box
 - Code Editor
@@ -29,16 +33,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 986c52a365abcb1780b741af61414bfc758413db
-ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
+ms.openlocfilehash: 3b23edb73ee08762ae8e3efaea4f883693aaacbd
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "65531912"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68606012"
 ---
-# <a name="options-text-editor-general"></a>一般、文字編輯器、選項
+# <a name="options-dialog-box-text-editor--general"></a>選項對話方塊：文字編輯器 \> 一般
 
-此對話方塊可讓您變更 Visual Studio 程式碼和文字編輯器的全域設定。 若要顯示這個對話方塊，請選取 [工具] 功能表上的 [選項]，並展開 [文字編輯器] 資料夾，然後選取 [一般]。
+此對話方塊可讓您變更 Visual Studio 程式碼和文字編輯器的全域設定。 若要顯示這個對話方塊，請選取 [工具]  功能表上的 [選項]  ，並展開 [文字編輯器]  資料夾，然後選取 [一般]  。
 
 ## <a name="settings"></a>設定
 
@@ -64,9 +68,9 @@ ms.locfileid: "65531912"
 
 ### <a name="enable-mouse-click-to-perform-go-to-definition"></a>啟用按一下滑鼠即執行前往定義
 
-選取時，您可以按下 **Ctrl** 並暫留在元素上，同時按一下滑鼠。 這樣會帶您前往所選取元素的定義。 您也可以從 [使用輔助按鍵] 下拉式清單選擇 [Alt] 或 [Ctrl + Alt]。
+選取時，您可以按下 **Ctrl** 並暫留在元素上，同時按一下滑鼠。 這樣會帶您前往所選取元素的定義。 您也可以從 [使用輔助按鍵]  下拉式清單選擇 [Alt]  或 [Ctrl + Alt]   。
 
-選取 [在預覽檢視中開啟定義] 核取方塊，以在視窗中顯示元素的定義，而不需從您目前在程式碼編輯器中的位置尋覽到他處。
+選取 [在預覽檢視中開啟定義]  核取方塊，以在視窗中顯示元素的定義，而不需從您目前在程式碼編輯器中的位置尋覽到他處。
 
 ## <a name="display"></a>顯示
 

@@ -2,7 +2,7 @@
 title: 修復 Visual Studio
 titleSuffix: ''
 description: 了解如何修復 Visual Studio 2017 的安裝
-ms.date: 03/30/2019
+ms.date: 07/31/2019
 ms.custom: seodec18
 ms.topic: conceptual
 author: TerryGLee
@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 3ba5cdf7ba627bc1d6a75368d90da5ce8a726a5e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ed6b7050d2162fc4e893db6ec4f429fbe3f8eb4f
+ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62973203"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68681342"
 ---
 # <a name="repair-visual-studio"></a>修復 Visual Studio
 
@@ -27,23 +27,23 @@ ms.locfileid: "62973203"
 
 1. 在您的電腦上找到 **Visual Studio 安裝程式**。
 
-     例如，在執行「Windows 10 年度更新版」或更新版本的電腦上，選取 [開始]，然後捲動至字母 [V]，它是列為 [Visual Studio 安裝程式]。
+     例如，在執行「Windows 10 年度更新版」或更新版本的電腦上，選取 [開始]  ，然後捲動至字母 [V]  ，它是列為 [Visual Studio 安裝程式]  。
 
    > [!NOTE]
-   > 在某些電腦上，Visual Studio 安裝程式可能會列在 **"M"** 字母下方，成為 [Microsoft Visual Studio 安裝程式]。
+   > 在某些電腦上，Visual Studio 安裝程式可能會列在 **"M"** 字母下方，成為 [Microsoft Visual Studio 安裝程式]  。
    >
    > 您也可以在下列位置找到 Visual Studio 安裝程式：`C:\Program Files (x86)\Microsoft Visual Studio\Installer\vs_installer.exe`
 
-1. 開啟安裝程式，選擇 [更多]，然後選擇 [修復]。
+1. 開啟安裝程式，選擇 [更多]  ，然後選擇 [修復]  。
 
     ![從 Visual Studio 安裝程式修復 Visual Studio](media/repair-visual-studio.png "從 Visual Studio 安裝程式修復 Visual Studio")
-    
+
    > [!NOTE]
    > 修復 Visual Studio 會重設環境。 個別使用者沒有使用提高權限所安裝的擴充、使用者設定和設定檔等本機自訂項目會被移除。 佈景主題、色彩、按鍵繫結等已同步處理的設定會還原。
    >
 
    > [!TIP]
-   > [修復] 選項僅會針對已安裝的 Visual Studio 執行個體加以顯示。 如果您看不到 [修復] 選項，很可能是您選取 [更多] 的版本在 Visual Studio 安裝程式中是列為「可用」而非「已安裝」。
+   > [修復]  選項僅會針對已安裝的 Visual Studio 執行個體加以顯示。 如果您看不到 [修復]  選項，很可能是您選取 [更多]  的版本在 Visual Studio 安裝程式中是列為「可用」而非「已安裝」。
 
 ::: moniker-end
 
@@ -51,9 +51,9 @@ ms.locfileid: "62973203"
 
 1. 在電腦上找到 Visual Studio 安裝程式。
 
-     例如，在執行 Windows 10，的電腦上，選取 [開始]，然後捲動到字母 [V]，它在其中列為 [Visual Studio Installer]。
+     例如，在執行 Windows 10，的電腦上，選取 [開始]  ，然後捲動到字母 [V]  ，它在其中列為 [Visual Studio Installer]  。
 
-     ![開啟 Visual Studio 安裝程式](media/vs2019-visual-studio-installer.png "開啟 Visual Studio 安裝程式")
+     ![開啟 Visual Studio 安裝程式](media/vs-2019/vs-installer-windows-start.png "開啟 Visual Studio 安裝程式")
 
      > [!NOTE]
      > 您也可以在下列位置找到 Visual Studio 安裝程式：
@@ -62,7 +62,7 @@ ms.locfileid: "62973203"
 
     您可能需要更新安裝程式才能繼續。 若是如此，請遵循提示。
 
-1. 請在安裝程式中尋找您安裝的 Visual Studio 版本。 接著，選擇 [更多]，然後選擇 [修復]。
+1. 請在安裝程式中尋找您安裝的 Visual Studio 版本。 接著，選擇 [更多]  ，然後選擇 [修復]  。
 
      ![修復 Visual Studio 2019](media/vs-2019/vs-installer-repair.png "修復 Visual Studio 2019")
 
@@ -71,7 +71,7 @@ ms.locfileid: "62973203"
    >
 
    > [!TIP]
-   > [修復] 選項僅會針對已安裝的 Visual Studio 執行個體加以顯示。 如果您看不到 [修復] 選項，很可能是您選取 [更多] 的版本在 Visual Studio 安裝程式中是列為「可用」而非「已安裝」。
+   > [修復]  選項僅會針對已安裝的 Visual Studio 執行個體加以顯示。 如果您看不到 [修復]  選項，很可能是您選取 [更多]  的版本在 Visual Studio 安裝程式中是列為「可用」而非「已安裝」。
 
 ::: moniker-end
 

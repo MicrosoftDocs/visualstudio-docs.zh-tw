@@ -3,24 +3,23 @@ title: Visual Studio 訂用帳戶的 CloudPilot 權益 | Microsoft Docs
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 12/19/2018
+ms.date: 07/30/2019
 ms.topic: conceptual
 description: 了解所選 Visual Studio 訂用帳戶中所含的 CloudPilot 權益
-ms.openlocfilehash: 66de81b30d8eeb315353aa0b6aa37e75c50a19d6
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 6fec81e4f4345c77bdff7dd08bf2615d6fe45ad4
+ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67825910"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68681650"
 ---
 # <a name="the-cloudpilot-benefit-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶的 CloudPilot 權益
-
 將您的應用程式移至 Microsoft Azure 只需幾個簡單的步驟。 在幾分鐘內即可找出需進行程式碼變更 (細至程式碼行)，以成功移轉至：容器、VM、App Services、SQL Azure 及/或 SQL MI。 然後，透過使用 ASR、DMA 和 DMS 的精靈，將應用程式遷移至 Azure。
 
+## <a name="overview"></a>總覽
 由 UnifyCloud 開發的 CloudPilot，旨在協助開發人員快速且輕鬆地將應用程式移至 Azure。  只需花費手動評估時間的一小部分，CloudPilot 即可以準確判斷 Azure PaaS 和 IaaS 的移轉成本，並提供細至程式碼行、在雲端中執行應用程式需要進行哪些程式碼變更的詳細建議。 藉由針對雲端提供詳細的程式碼層級變更，以及針對企業技術控制和原則的最終測試，CloudPilot 可協助於初始評估雲端遷移工作和重新建構程序中的開發計劃。
 
 ## <a name="activation-steps"></a>啟用步驟
-
 1. 登入 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)。
 
 2. 在 [工具] 類別中，尋找 CloudPilot 權益磚，然後按一下 [取得程式碼]  。

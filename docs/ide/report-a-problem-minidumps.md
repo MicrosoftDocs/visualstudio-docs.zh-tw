@@ -14,12 +14,12 @@ dev_langs:
 ms.workload:
 - multiple
 ms.description: Collect minidumps to send to Microsoft for help with troubleshooting issues with Visual Studio
-ms.openlocfilehash: eefcbefa8b728afa677e7bd04fd538633ae117f0
-ms.sourcegitcommit: 6f7a740750b2cd17ea2275c3d046caebc9782917
+ms.openlocfilehash: 7d0580e04968a01dc8e447a9ee35f2b1c5934ccf
+ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67518174"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68461667"
 ---
 # <a name="create-minidumps-for-a-visual-studio-process-with-all-call-stacks"></a>建立包含所有呼叫堆疊的 Visual Studio 處理序小型傾印
 
@@ -40,7 +40,6 @@ ms.locfileid: "67518174"
 ## <a name="get-the-call-stacks-from-the-minidump"></a>從小型傾印中取得呼叫堆疊
 
 1. 在 Visual Studio 開啟傾印檔案。
-
 1. 移至 [工具]   > [選項]   > [偵錯]   > [符號]  ，並確定已勾選 [符號檔 (.pdb) 位置]  中的 [Microsoft 符號伺服器]  。
 1. 開啟 [命令]  視窗 ([檢視]   > [其他視窗]   > [命令視窗]  )
 1. 鍵入 ‘~*k’。 此視窗會顯示所有執行緒的呼叫堆疊。

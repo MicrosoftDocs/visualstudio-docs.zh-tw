@@ -12,18 +12,18 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 563dcd4d91e23c019edf5a777b70453f40091d69
-ms.sourcegitcommit: 57866dd72fd0e15ce61128df70729b427a2d02eb
+ms.openlocfilehash: 048e0409a5af77c512f0ee768d95d61259426fb9
+ms.sourcegitcommit: 9cfd3ef6c65f671a26322320818212a1ed5955fe
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "68315242"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "68533368"
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>教學課程：在 Visual Studio 中建立 Node.js 和 React 應用程式
 
 Visual Studio 可讓您輕鬆地建立 Node.js 專案，體驗 IntelliSense 和其他支援 Node.js 的內建功能。 在適用於 Visual Studio 的本教學課程中，請從 Visual Studio 範本建立 Node.js Web 應用程式專案。 然後，請使用 React 建立簡單的應用程式。
 
-在本教學課程中，您了解如何：
+在本教學課程中，您將了解如何：
 > [!div class="checklist"]
 > * 建立 Node.js 專案
 > * 新增 npm 套件
@@ -82,7 +82,7 @@ Webpack 搭配 JavaScript 檔案，讓它們可以在瀏覽器中執行。 它�
 
 1. 開啟 Visual Studio。
 
-1. 建立新專案。
+1. 建立新的專案。
 
     ::: moniker range=">=vs-2019"
     按 **Esc** 關閉開始視窗。 鍵入 **Ctrl + Q** 開啟 [搜尋] 方塊，再鍵入 **Node.js**，然後選擇 [空白的 Node.js Web 應用程式]  (JavaScript)。 在出現的對話方塊中，選擇 [建立]  。
@@ -113,7 +113,7 @@ Webpack 搭配 JavaScript 檔案，讓它們可以在瀏覽器中執行。 它�
 * react
 * react-dom
 * express
-* path
+* 路徑
 * ts-loader
 * typescript
 * webpack
@@ -322,7 +322,7 @@ Webpack 搭配 JavaScript 檔案，讓它們可以在瀏覽器中執行。 它�
 
 ## <a name="add-a-build-script-to-transpile-the-jsx"></a>新增組建指令碼來轉換 JSX
 
-在較新版本的 Node.js 中，需要有組建指令碼。 您可以改為在從 Visual Studio 建置時轉換 JSX，而不是在命令列上轉譯 JSX (如上一節中所示)。
+從 Visual Studio 2019 開始，需要組建指令碼。 您可以在從 Visual Studio 建置時轉換 JSX，而不是在命令列上轉譯 JSX (如上一節中所示)。
 
 * 開啟 *package.json*，並在 `dependencies` 區段之後新增下列區段：
 

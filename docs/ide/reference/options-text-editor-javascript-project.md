@@ -1,28 +1,28 @@
 ---
 title: 選項、文字編輯器、JavaScript、專案
 ms.date: 1/15/2019
-ms.technology: vs-ide-general
+ms.technology: vs-javascript
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.JavaScript.Project.General
 - VS.ToolsOptionsPages.Text_Editor.JavaScript.Project
 - VS.ToolsOptionsPages.Text_Editor.TypeScript.Project.General
 - VS.ToolsOptionsPages.Text_Editor.TypeScript.Project
-author: gewarren
-ms.author: gewarren
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 09ed64d6bffaa4453c3294229ee48fd0a065eb74
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 190cbdb2a8096415985d83fc525b997572d252c2
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62778169"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68605925"
 ---
 # <a name="options-text-editor-javascript-project"></a>選項、文字編輯器、JavaScript、專案
 
-使用 [選項] 對話方塊的 [專案] 頁面，在程式碼編輯器中指定 JavaScript 專案選項。 若要存取此頁面，請在功能表列上依序選擇 [工具] > [選項]，然後依序展開 [文字編輯器] > [JavaScript] > [專案]。
+使用 [選項]  對話方塊的 [專案]  頁面，在程式碼編輯器中指定 JavaScript 和 TypeScript 專案選項。 若要存取此頁面，請在功能表列上依序選擇 [工具]   > [選項]  ，然後依序展開 [文字編輯器]   > [JavaScript/TypeScript]   > [Project]  。
 
 ## <a name="project-analysis-options"></a>專案分析選項
 

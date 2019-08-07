@@ -1,21 +1,22 @@
 ---
 title: 逐步解說：建立多電腦建置環境
 ms.date: 11/04/2016
+ms.technology: vs-ide-compile
 ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, building on multiple computers
 - build environment, MSBuild
-author: gewarren
-ms.author: gewarren
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9b6f956adee315cc8c5d229a237e953de67f9c16
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 11b158854a0026de28cb2fb0a582bbaf764eeaa4
+ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66262943"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68461529"
 ---
 # <a name="walkthrough-create-a-multiple-computer-build-environment"></a>逐步解說：建立多電腦建置環境
 
@@ -47,7 +48,7 @@ ms.locfileid: "66262943"
 
 ## <a name="install-software-on-the-computers"></a>在電腦上安裝軟體
 
-首先設定主機電腦，然後設定組建電腦。
+首先設定主機電腦，然後設定建置電腦。
 
 您會藉由在主機電腦上安裝 Visual Studio，建立稍後將複製到組建電腦的檔案和設定。 您可以在 x86 或 x64 電腦上安裝 Visual Studio，但組建電腦的架構必須符合主機電腦的架構。
 
@@ -309,7 +310,7 @@ MSBuild 必須將一些額外的組件安裝到組建電腦上的 GAC。
 
 ## <a name="build-projects"></a>建置專案
 
-您可以使用 Azure Pipelines 來建置 Visual Studio 專案和方案，或者您可也在命令列建置它們。 當您使用 Azure Pipelines 建置專案時，它會叫用對應至系統架構的 MSBuild 可執行檔。 在命令列上，您可以使用 32 位元 MSBuild 或 64 位元 MSBuild，而且可以藉由設定 PATH 環境變數，或直接叫用特定架構的 MSBuild 可執行檔，來選擇 MSBuild 的架構。
+您可以使用 Azure Pipelines 來建置 Visual Studio 專案和解決方案，或者您可也在命令列建置它們。 當您使用 Azure Pipelines 建置專案時，它會叫用對應至系統架構的 MSBuild 可執行檔。 在命令列上，您可以使用 32 位元 MSBuild 或 64 位元 MSBuild，而且可以藉由設定 PATH 環境變數，或直接叫用特定架構的 MSBuild 可執行檔，來選擇 MSBuild 的架構。
 
 若要在命令提示字元中使用 *msbuild.exe*，請執行下列命令；其中 *solution.sln* 是方案名稱的預留位置。
 

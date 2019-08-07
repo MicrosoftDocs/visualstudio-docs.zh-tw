@@ -10,16 +10,110 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: e5bc02948d410d465d7ac1be798ff17ebc5daaf9
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: ff2bcce9e041ff28393020c48563fe345c4fa076
+ms.sourcegitcommit: 044bb54cb4552c8f4651feb11d62e52726117e75
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67821506"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68661824"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-mac"></a>變更記錄檔 (Visual Studio Tools for Unity，Mac)
 
 Visual Studio Tools for Unity 變更記錄。
+
+## <a name="2200"></a>2.2.0.0
+
+2019 年 7 月 25 日發行
+
+### <a name="bug-fixes"></a>錯誤 (Bug) 修正
+
+- **評估：**
+
+  - 已修正 IntPtr 型別的檢閱。
+
+- **偵錯工具：**
+
+  - 已修正捕捉點與函數中斷點的處理方式。
+
+## <a name="2130"></a>2.1.3.0
+
+2019 年 7 月 9 日發行
+
+### <a name="new-features"></a>新功能
+
+- **偵錯工具：**
+
+  - 已新增對捕捉例外狀況子類別的支援。
+
+  - 已新增對 MDS 通訊協定 2.5.1 的支援。
+
+- **整合：**
+
+  - 已新增對 asmdef 檔案的資源。
+
+  - 從範本新增檔案時切換至重新命名模式 (以模擬 Unity 編輯器行為)。
+
+### <a name="bug-fixes"></a>錯誤 (Bug) 修正
+
+- **整合：**
+
+  - 已修正與 Unity 播放機通訊時，對格式不正確訊息的處理方式。
+
+- **評估：**
+
+  - 已修正運算式中命名空間的處理方式。
+
+## <a name="2120"></a>2.1.2.0
+
+2019 年 7 月 2 日發行
+
+### <a name="bug-fixes"></a>錯誤 (Bug) 修正
+
+- **評估：**
+
+  - 已修正包含非可剖析式運算式的錯誤報告。
+
+## <a name="2110"></a>2.1.1.0
+
+2019 年 6 月 27 日發行
+
+### <a name="new-features"></a>新功能
+
+- **整合：**
+
+  - 已將 MonoBehaviour API 更新為 2019.1。
+
+### <a name="bug-fixes"></a>錯誤 (Bug) 修正
+
+- **整合：**
+
+  - 已修正 Unity 專案總管效能。
+
+  - 已修正啟用輕量型組建時輸出的報告警告和錯誤。
+
+  - 已修正輕量型組建效能。
+
+## <a name="2100"></a>2.1.0.0
+
+2019 年 6 月 20 日發行
+
+### <a name="new-features"></a>新功能
+
+- **整合：**
+
+  - 已停用 Unity 專案的完整建置，改為使用 IntelliSense 錯誤和警告。 事實上，Unity 會使用代表 Unity 內部工作的類別庫專案，建立一個 Visual Studio 方案。 也就是說，當 Unity 的編譯管線遭到關閉時，它永遠不會使用或挑選 Visual Studio 中的組建結果。 在 Visual Studio 中建置只是消耗資源而已。 如果您因為有相依的工具或設定而需要完整建置，您可以停用此最佳化 (設定/Tools for Unity/停用專案的完整建置)。
+  
+  - 已新增對 UPE 中 Unity 封裝的支援。 只有參考套件 (使用 Packages 資料夾中的 manifest.json) 和本機套件 (內嵌在 Packages 資料夾中) 會顯示。
+
+## <a name="2021"></a>2.0.2.1
+
+2019 年 5 月 30 日發行
+
+### <a name="new-features"></a>新功能
+
+- **整合：**
+
+  - 已新增 Unity 執行目標的自訂圖示。
 
 ## <a name="2020"></a>2.0.2.0
 
@@ -35,16 +129,17 @@ Visual Studio Tools for Unity 變更記錄。
 
   - 新增新編輯器的快顯功能表。
 
-### <a name="bug-fixes"></a>Bug 修正
+### <a name="bug-fixes"></a>錯誤 (Bug) 修正
 
 - **偵錯工具：**
 
   - 已修正組件篩選和空白框架的框架檢查。
 
 ## <a name="2011"></a>2.0.1.1
+ 
  發行於 2019 年 3 月 26 日
 
-### <a name="bug-fixes"></a>Bug 修正
+### <a name="bug-fixes"></a>錯誤 (Bug) 修正
 
 - **整合：**
 
@@ -80,13 +175,14 @@ Visual Studio Tools for Unity 變更記錄。
 
   - 已更新 ScriptableObject API。
 
-### <a name="bug-fixes"></a>Bug 修正
+### <a name="bug-fixes"></a>錯誤 (Bug) 修正
 
 - **整合：**
 
   - 從範本移除命名空間。
 
 ## <a name="2003"></a>2.0.0.3
+ 
  發行於 2019 年 3 月 5 日
 
 ### <a name="new-features"></a>新功能
@@ -103,7 +199,7 @@ Visual Studio Tools for Unity 變更記錄。
 
   - 已新增對區域函式的支援。
 
-### <a name="bug-fixes"></a>Bug 修正
+### <a name="bug-fixes"></a>錯誤 (Bug) 修正
 
 - **偵錯工具：**
 
@@ -119,7 +215,7 @@ Visual Studio Tools for Unity 變更記錄。
 
   - 已更新 MonoBehaviour API。
 
-### <a name="bug-fixes"></a>Bug 修正
+### <a name="bug-fixes"></a>錯誤 (Bug) 修正
 
 - **偵錯工具：**
 
@@ -129,7 +225,7 @@ Visual Studio Tools for Unity 變更記錄。
 
 發行於 2018 年 12 月 4 日
 
-### <a name="bug-fixes"></a>Bug 修正
+### <a name="bug-fixes"></a>錯誤 (Bug) 修正
 
 - **整合：**
 
@@ -154,7 +250,7 @@ Visual Studio Tools for Unity 變更記錄。
 
   - 新增虛擬變數 (例外狀況和物件識別碼) 的支援。
 
-### <a name="bug-fixes"></a>Bug 修正
+### <a name="bug-fixes"></a>錯誤 (Bug) 修正
 
 - **偵錯工具：**
 
@@ -170,7 +266,7 @@ Visual Studio Tools for Unity 變更記錄。
 
   - 在 [附加] 對話方塊中新增更多用戶端資訊 (IP、電腦名稱)。
 
-### <a name="bug-fixes"></a>Bug 修正
+### <a name="bug-fixes"></a>錯誤 (Bug) 修正
 
 - **偵錯工具：**
 
@@ -186,7 +282,7 @@ Visual Studio Tools for Unity 變更記錄。
 
 2018 年 7 月 24 日發行
 
-### <a name="bug-fixes"></a>Bug 修正
+### <a name="bug-fixes"></a>錯誤 (Bug) 修正
 
 - **整合：**
 
@@ -196,7 +292,7 @@ Visual Studio Tools for Unity 變更記錄。
 
 2018 年 7 月 10 日發行
 
-### <a name="bug-fixes"></a>Bug 修正
+### <a name="bug-fixes"></a>錯誤 (Bug) 修正
 
 - **整合：**
 
@@ -206,7 +302,7 @@ Visual Studio Tools for Unity 變更記錄。
 
 2018 年 7 月 26 日發行
 
-### <a name="bug-fixes"></a>Bug 修正
+### <a name="bug-fixes"></a>錯誤 (Bug) 修正
 
 - **精靈：**
 
@@ -268,7 +364,7 @@ Visual Studio Tools for Unity 變更記錄。
 
 2018 年 1 月 24 日發行
 
-### <a name="bug-fixes"></a>Bug 修正
+### <a name="bug-fixes"></a>錯誤 (Bug) 修正
 
 - **Project Generation:**
 
@@ -284,7 +380,7 @@ Visual Studio Tools for Unity 變更記錄。
 
 2018 年 1 月 23 日發行
 
-### <a name="bug-fixes"></a>Bug 修正
+### <a name="bug-fixes"></a>錯誤 (Bug) 修正
 
 - **整合：**
 
@@ -300,7 +396,7 @@ Visual Studio Tools for Unity 變更記錄。
 
   - 已新增 .NET Standard 的支援。
 
-### <a name="bug-fixes"></a>Bug 修正
+### <a name="bug-fixes"></a>錯誤 (Bug) 修正
 
 - **整合：**
 
@@ -310,7 +406,7 @@ Visual Studio Tools for Unity 變更記錄。
 
 2017 年 12 月 12 日發行
 
-### <a name="bug-fixes"></a>Bug 修正
+### <a name="bug-fixes"></a>錯誤 (Bug) 修正
 
 - **整合：**
 
@@ -342,7 +438,7 @@ Visual Studio Tools for Unity 變更記錄。
 
   - 已新增可攜式偵錯符號檔的支援。
 
-### <a name="bug-fixes"></a>Bug 修正
+### <a name="bug-fixes"></a>錯誤 (Bug) 修正
 
 - **Project Generation:**
 
@@ -402,7 +498,7 @@ Visual Studio Tools for Unity 變更記錄。
 
   - 修正具有 API 層級的定義。
 
-### <a name="bug-fixes"></a>Bug 修正
+### <a name="bug-fixes"></a>錯誤 (Bug) 修正
 
 - **整合：**
 
@@ -412,7 +508,7 @@ Visual Studio Tools for Unity 變更記錄。
 
 2017 年 5 月 4 日發行
 
-### <a name="bug-fixes"></a>Bug 修正
+### <a name="bug-fixes"></a>錯誤 (Bug) 修正
 
 - **整合：**
 

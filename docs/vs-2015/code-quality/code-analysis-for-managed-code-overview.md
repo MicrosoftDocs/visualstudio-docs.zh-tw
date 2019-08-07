@@ -14,12 +14,12 @@ caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 5076ea34b1bcbd66239722bc8fb1a3edc4763162
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: b4c22076a5f08b1b8f25722e5c3a5fef27b81b9e
+ms.sourcegitcommit: b56dc6fadc6c924beed36bb4c2ccc16cf6bcfa1c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65680612"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "68739981"
 ---
 # <a name="code-analysis-for-managed-code-overview"></a>Managed 程式碼的程式碼分析概觀
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,12 +31,12 @@ Managed 程式碼的程式碼分析可以分析 Managed 組件並回報有關組
 ## <a name="ide-integrated-development-environment-integration"></a>IDE (整合式開發環境) 整合  
  開發人員可以對專案自動執行程式碼分析，或者也可以手動執行分析。  
   
- 若要每次建置專案時都執行程式碼分析，請在專案的屬性頁上選取 [建置時啟用程式碼分析 (定義 CODE_ANALYSIS 常數)]。 如需詳細資訊，請參閱[如何：啟用和停用自動程式碼分析](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md)。  
+ 若要每次建置專案時都執行程式碼分析，請在專案的屬性頁上選取 [建置時啟用程式碼分析 (定義 CODE_ANALYSIS 常數)]  。 如需詳細資訊，請參閱[如何：啟用和停用自動程式碼分析](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md)。  
   
- 若要在專案上手動執行程式碼分析，請在 [分析] 功能表上，按一下 [針對 _ProjectName_ 執行程式碼分析]。 如需詳細資訊，請參閱[如何：啟用和停用自動程式碼分析](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md)。  
+ 若要在專案上手動執行程式碼分析，請在 [分析]  功能表上，按一下 [針對 _ProjectName_ 執行程式碼分析]  。 如需詳細資訊，請參閱[如何：啟用和停用自動程式碼分析](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md)。  
   
 ## <a name="rule-sets"></a>規則集  
- 受控碼的程式碼分析規則會分組成「規則集」。 您可以使用其中一個 Microsoft 標準規則集，或建立自訂規則集來滿足特定需求。 如需詳細資訊，請參閱[使用規則集分組程式碼分析規則](../code-quality/using-rule-sets-to-group-code-analysis-rules.md)。  
+ 受控碼的程式碼分析規則會分組成「規則集」  。 您可以使用其中一個 Microsoft 標準規則集，或建立自訂規則集來滿足特定需求。 如需詳細資訊，請參閱[使用規則集分組程式碼分析規則](../code-quality/using-rule-sets-to-group-code-analysis-rules.md)。  
   
 ## <a name="in-source-suppression"></a>原始檔中隱藏項目  
  最大的用途是指出某個警告不適用。 這會通知程式開發人員和其他稍後可能會檢閱程式碼的人員，指出您已經調查此警告並且隱藏或忽略它。  
@@ -63,8 +63,8 @@ Managed 程式碼的程式碼分析可以分析 Managed 組件並回報有關組
   您可以指定簽入原則，達成上述要求。 如需詳細資訊，請參閱[使用 Team 專案簽入原則強化程式碼品質](../code-quality/enhancing-code-quality-with-team-project-check-in-policies.md)。  
   
 ## <a name="team-build-integration"></a>Team Build 整合  
- 您可以使用建置系統的整合式功能，執行分析工具做為建置流程的一部分。 如需詳細資訊，請參閱[建置應用程式](https://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)。  
+ 您可以使用建置系統的整合式功能，執行分析工具做為建置流程的一部分。 如需詳細資訊，請參閱[建置應用程式](/azure/devops/pipelines/index)。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [使用規則集分組程式碼分析規則](../code-quality/using-rule-sets-to-group-code-analysis-rules.md)   
  [如何：啟用和停用自動程式碼分析](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md)

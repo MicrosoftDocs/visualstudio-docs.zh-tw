@@ -1,17 +1,17 @@
 ---
 title: Visual Studio 訂用帳戶中的 LinkedIn Learning 權益 | Microsoft Docs
 author: evanwindom
-ms.author: jaunger
-manager: evelynp
-ms.date: 12/19/2018
+ms.author: lank
+manager: lank
+ms.date: 08/02/2019
 ms.topic: conceptual
 description: 了解包含為所選取 Visual Studio 訂用帳戶中所含 LinkedIn Premium 訂用帳戶一部分的 LinkedIn Learning 權益。
-ms.openlocfilehash: 2ae1bd5442a062514525df3d1bada70eba71a81d
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 9715c2fb5dd8219e05a6728c7d242aef24e86081
+ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67824803"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68787753"
 ---
 # <a name="the-linkedin-learning-benefit-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶中的 LinkedIn Learning 權益
 
@@ -32,46 +32,26 @@ ms.locfileid: "67824803"
 
 ### <a name="create-a-linkedin-account"></a>建立 LinkedIn 帳戶
 4. 如果您還沒有 LinkedIn 帳戶，請按一下 [立即加入]  。
-   > [!div class="mx-imgBorder"]
-   > ![LinkedIn Learning 立即加入](_img/vs-linkedin/vs-linkedin-join-now.png)
 
 5. 輸入您的個人資訊，選擇使用者名稱和密碼，然後按一下 [立即加入]  。
-   > [!div class="mx-imgBorder"]
-   > ![LinkedIn Learning 建立帳戶](_img/vs-linkedin/vs-linkedin-create-account.png)
 
 6. 指定您的國家/地區和郵遞區號，然後按一下 [Next] (下一步)  。
-   > [!div class="mx-imgBorder"]
-   > ![LinkedIn Learning 設定位置](_img/vs-linkedin/vs-linkedin-set-location.png)
 
 7. 接下來，您將提供關於自己的一些資訊作為個人資料。  指出您是否為學生，並提供最近的工作職稱、公司和產業。
-   > [!div class="mx-imgBorder"]
-   > ![LinkedIn Learning 角色](_img/vs-linkedin/vs-linkedin-role.png)
 
 8. 在此步驟中，您將有機會指定您感興趣的部分。  若要加速帳戶建立程序，請按一下 **[Not sure yet.I’m open! (目前不確定，來者不拒！)]**  (您可以稍後再指定感興趣的部分)。
-   > [!div class="mx-imgBorder"]
-   > ![LinkedIn Learning 興趣](_img/vs-linkedin/vs-linkedin-interests.png)
 
 9. 當您提供電子郵件地址時，您會收到一封包含確認碼的訊息。  此郵件的寄件者是 “Linkedin Messages”。  如果您在 [收件匣] 中找不到此郵件，請檢查 [垃圾郵件] 資料夾。  輸入郵件中的代碼，然後按一下 [Verify] (確認)  。
-   > [!div class="mx-imgBorder"]
-   > ![LinkedIn Learning 驗證](_img/vs-linkedin/vs-linkedin-verify.png)
 
 10. 如果您想要從先前輸入的電子郵件帳戶匯入連絡人，您可以立即執行。  否則請按一下 [Skip] (略過)  。 (如果選擇略過此步驟，系統會要求您確認選擇。  按一下 [Yes] (是)  。)
-   > [!div class="mx-imgBorder"]
-   > ![LinkedIn Learning 連絡人](_img/vs-linkedin/vs-linkedin-contacts.png)
 
 11. 工作警示可讓您在當地有適合您的工作時收到通知。  您可以立即選擇設定工作警示，或略過此步驟以繼續建立您的帳戶。
-   > [!div class="mx-imgBorder"]
-   > ![LinkedIn Learning 工作警示](_img/vs-linkedin/vs-linkedin-job-alerts.png)
 
 12. 根據您到目前為止所提供的喜好設定和個人資訊，您會看到選取的建議關聯以開始建立您的網路。  您可以選擇新增關聯，或略過此步驟。
 
 13. 若要將相片新增至您的個人資料，請按一下 [Upload photo] (上傳相片)  。  否則您可以略過此步驟  (您一律可以稍後再新增相片)。
-    > [!div class="mx-imgBorder"]
-    > ![LinkedIn Learning 上傳相片](_img/vs-linkedin/vs-linkedin-photo.png)
 
 14. 您可以將 LinkedIn 應用程式下載至手機，以便在任何地方都能存取您的網路。  您可以傳送連結至手機，或是直接從 Microsoft Store 或 Google Play 下載。  您也可以按一下 [Next] (下一步)  暫時略過此步驟，稍後再下載應用程式。
-    > [!div class="mx-imgBorder"]
-    > ![LinkedIn Learning 上傳相片](_img/vs-linkedin/vs-linkedin-app.png)
 
 ### <a name="activate-your-offer"></a>啟用您的供應項目
 15. 現在您已登入 LinkedIn 帳戶或建立新帳戶，即準備好啟用 Premium 訂閱並開始享受 LinkedIn Learning。  按一下 [Activate your offer] (啟用您的供應項目)  。
