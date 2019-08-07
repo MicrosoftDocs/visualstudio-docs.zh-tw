@@ -3,24 +3,22 @@ title: Visual Studio 訂用帳戶的 CAST Highlight 權益 | Microsoft Docs
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 12/19/2018
+ms.date: 07/30/2019
 ms.topic: conceptual
 description: 了解所選 Visual Studio 訂用帳戶中所含的 CAST Highlight 權益
-ms.openlocfilehash: c990682fa107364c181403863d3dbefc5a1f3891
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 50d892c5da4d39ebd2b379a2b16b8c9ca69d061d
+ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67823675"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68681195"
 ---
 # <a name="the-cast-highlight-benefit-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶中的 CAST Highlight 權益
-
 在移轉至雲端時，開發人員需要掌握其軟體的重要見解。 使用 CAST Highlight 時，Visual Studio Enterprise 訂閱者可以快速掃描應用程式原始程式碼，以識別應用程式移轉至 Azure 的雲端整備程度，並監視應用程式移轉期間和移轉之後的進度。
 
 Visual Studio Enterprise 訂閱者可以取得免費一個月的 CAST Highlight 完整功能訂閱，每個訂閱者最多五個應用程式。
 
 ## <a name="activation-steps"></a>啟用步驟
-
 1. 登入 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)。
 
 2. 在 [工具] 類別中，尋找 CAST Highlight 權益磚，然後按一下 [取得程式碼]  。
@@ -39,9 +37,6 @@ Visual Studio Enterprise 訂閱者可以取得免費一個月的 CAST Highlight 
    > 每個組織可啟用的 CAST Highlight 權益限制為十個。  如果您的組織已使用十個啟用，您就無法啟用 CAST Highlight 權益，並會收到一封提供進一步資訊的電子郵件。
 
 0. 提交資訊之後，即可看到頁面上確認收到您的要求。
-
-    > [!div class="mx-imgBorder"]
-    > ![CAST Highlight 的感謝頁面](_img/vs-cast-highlight/vs-cast-highlight-thankyou.png)
 
 0. CAST 小組會評估您的要求，並連絡您以完善處理您的帳戶建立。
 
@@ -78,7 +73,6 @@ Visual Studio Enterprise 訂閱者可以取得免費一個月的 CAST Highlight 
    > 請務必按一下所收到電子郵件中的啟用連結。  否則，您將無法存取 CAST Highlight 訂用帳戶。 如果您在收件匣中沒看到這封電子郵件，請務必檢查垃圾郵件資料夾。
 
 ## <a name="eligibility"></a>資格
-
 | 訂用帳戶層級                                                 |     通道                                            | 優勢                                                          | 可續約？    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard)   | VL, Azure, 零售, | 30 天評估 5 個應用程式|  否。  僅提供給新訂閱者使用          |
@@ -104,7 +98,6 @@ Visual Studio Enterprise 訂閱者可以取得免費一個月的 CAST Highlight 
 - 是否有關於 Visual Studio IDE、Azure DevOps Services 或其他 Visual Studio 產品或服務的問題？  前往 [Visual Studio 支援](https://visualstudio.microsoft.com/support/)
 
 ## <a name="next-steps"></a>後續步驟
-
 如果您尚未啟用訂用帳戶隨附的 Azure 權益，請瀏覽 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)，並按一下 [工具] 類別中的 Azure 磚，以設定 Azure 訂用帳戶並兌換 Azure 點數。
 
 此外，別忘了參考 Greg 在電子郵件中提到的示範、使用者指南和教學課程影片。

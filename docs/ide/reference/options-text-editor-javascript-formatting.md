@@ -1,6 +1,7 @@
 ---
 title: 格式、JavaScript、文字編輯器、選項
 ms.date: 10/29/2018
+ms.technology: vs-javascript
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.JavaScript.Formatting.Spacing
@@ -10,25 +11,27 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.TypeScript.Formatting.General
 - VS.ToolsOptionsPages.Text_Editor.TypeScript.Formatting.New_Lines
 ms.assetid: 28a0aef1-9353-4d94-95a5-54b42e15c0dc
-author: gewarren
-ms.author: gewarren
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e995ec564d0260faac02eb3b4a0237fa9f1f89b4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 957dbd557a15c4c1df6028672f204a06936767c1
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62778348"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68605995"
 ---
-# <a name="options-text-editor-javascript-formatting"></a>格式、JavaScript、文字編輯器、選項
-使用 [選項] 對話方塊的 [格式] 頁面，設定在程式碼編輯器中格式化程式碼的選項。 若要存取此頁面，請在功能表列上依序選擇 [工具] 和 [選項]，然後依序展開 [文字編輯器]、[JavaScript] 和 [格式]。
+# <a name="options-dialog-box-text-editor--javascript--formatting"></a>選項對話方塊：文字編輯器 \>、JavaScript \> 格式化
+
+使用 [選項]  對話方塊的 [格式]  頁面，設定在程式碼編輯器中格式化程式碼的選項。 若要存取此頁面，請在功能表列上依序選擇 [工具]   > [選項]  ，然後依序展開 [文字編輯器]   > [JavaScript/TypeScript]   > [格式化]  。
 
 [!INCLUDE[note_settings_general](../../data-tools/includes/note_settings_general_md.md)]
 
 ## <a name="automatic-formatting"></a>自動格式化
- 這些選項會決定在 [來源] 檢視中進行格式化的時機。
+
+這些選項會決定在 [來源]  檢視中進行格式化的時機。
 
 ### <a name="uielement-list"></a>UIElement 清單
 
@@ -41,7 +44,8 @@ ms.locfileid: "62778348"
 |**貼上時格式化**|選取這個選項時，程式碼編輯器會在您將程式碼貼入編輯器時重新格式化程式碼。 編輯器會使用目前定義的格式化規則。 如果未選取這個選項，則編輯器會使用所貼入程式碼的原始格式。|
 
 ## <a name="new-lines"></a>新行
- 這些選項會決定程式碼編輯器是否將函式和控制區塊的左大括弧放在新行。
+
+這些選項會決定程式碼編輯器是否將函式和控制區塊的左大括弧放在新行。
 
 ### <a name="uielement-list"></a>UIElement 清單
 
@@ -51,7 +55,8 @@ ms.locfileid: "62778348"
 |**將控制區塊的左大括弧置於新行**|選取這個選項時，程式碼編輯器會將與控制區塊 (例如，`if` 和 `while` 控制區塊) 相關聯的左大括弧移至新行。|
 
 ## <a name="spacing"></a>間距
- 這些選項會決定在 [來源] 檢視中插入空格的方式。
+
+這些選項會決定在 [來源]  檢視中插入空格的方式。
 
 ### <a name="uielement-list"></a>UIElement 清單
 
@@ -64,6 +69,6 @@ ms.locfileid: "62778348"
 |**在匿名函式的函式關鍵字後面插入空格**|選取這個選項時，程式碼編輯器會在匿名函式的 `function` 關鍵字後面新增空格。|
 |**在非空白括弧的左括弧後面及右括弧前面插入空格**|選取這個選項時，如果括弧內有非空白字元，則程式碼編輯器會在左括弧後面及右括弧前面新增空格。|
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [選項對話方塊、環境、一般](../../ide/reference/general-environment-options-dialog-box.md)

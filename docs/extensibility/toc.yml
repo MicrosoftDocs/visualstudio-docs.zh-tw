@@ -830,6 +830,8 @@
   items:
     - name: 建立軟體開發套件
       href: creating-a-software-development-kit.md
+    - name: SDK 與 NuGet 套件
+      href: nuget-versus-sdk-references.md
     - name: '逐步解說：使用 C# 或 Visual Basic 建立 SDK'
       href: walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md
     - name: 逐步解說：使用 C++ 建立 SDK

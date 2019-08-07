@@ -7,12 +7,12 @@ manager: markl
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 38d792ad9264c007dab296b65aa330dfa142769e
-ms.sourcegitcommit: ab06cde69d862440b4277bcd9bf02e7b50593a1b
+ms.openlocfilehash: 1e9e77cd3b6cd02810873127bf9173eac80d7e74
+ms.sourcegitcommit: 044bb54cb4552c8f4651feb11d62e52726117e75
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67132157"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68661901"
 ---
 # <a name="how-to-write-unit-tests-for-c-dlls"></a>作法：撰寫 C++ DLL 的單元測試
 
@@ -88,7 +88,7 @@ ms.locfileid: "67132157"
 
 下列步驟會示範如何在 Visual Studio 2019 中建立 DLL 專案。
 
-1. 使用 [Windows 傳統式精靈]  建立 C++ 專案：以滑鼠右鍵按一下 [方案總管]  中的解決方案名稱，然後選擇 [新增]   > [新增專案]  。 將 [語言]  設為 C++，然後在搜尋方塊中鍵入 "windows"。 從結果清單中選擇 [Windows 傳統式精靈]  。 
+1. 使用 [Windows 傳統式精靈]  建立 C++ 專案：以滑鼠右鍵按一下 [方案總管]  中的解決方案名稱，然後選擇 [新增]   > [新增專案]  。 將 [語言]  設為 C++，然後在搜尋方塊中鍵入 "windows"。 從結果清單中選擇 [Windows 傳統式精靈]  。
 
      在此逐步解說中，專案名為 `RootFinder`。
 
@@ -321,10 +321,21 @@ ms.locfileid: "67132157"
 
 6. 現在所有測試都通過了。
 
-     ![所有測試都成功](../test/media/ute_ult_alltestspass.png)
+   ![所有測試都成功](../test/media/ute_ult_alltestspass.png)
+
+::: moniker range="vs-2017"
 
 > [!TIP]
 > 如果個別測試沒有任何會防止它們依任意順序執行的相依性，請使用工具列上的 ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png) 切換按鈕開啟平行測試執行。 這可大幅縮短執行所有測試所需的時間。
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+> [!TIP]
+> 如果個別測試沒有任何會防止它們依任意順序執行的相依性，請使用工具列的設定功能表開啟平行測試執行。 這可大幅縮短執行所有測試所需的時間。
+
+::: moniker-end
 
 ## <a name="refactor"></a> 重構程式碼，但不變更測試
 
@@ -353,7 +364,7 @@ ms.locfileid: "67132157"
 
 - **簽入測試。** 您可以強制在每位小組成員將程式碼簽入原始檔控制之前，執行某些測試。 一般而言，這是一組完整組建驗證測試的子集。
 
-     您也可以強制規定程式碼涵蓋範圍的最低層級。
+   您也可以強制規定程式碼涵蓋範圍的最低層級。
 
 ## <a name="see-also"></a>另請參閱
 

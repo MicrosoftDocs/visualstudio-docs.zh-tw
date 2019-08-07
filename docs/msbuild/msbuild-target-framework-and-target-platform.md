@@ -8,15 +8,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9760dbf4fd2eabb43e88e0b99858eba3e09c8fb5
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 00874c8fd7ded67c380de1166d7e9753a3bd3c24
+ms.sourcegitcommit: 044bb54cb4552c8f4651feb11d62e52726117e75
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66747392"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68662044"
 ---
 # <a name="msbuild-target-framework-and-target-platform"></a>MSBuild 目標 Framework 和目標平台
 您可以建置專案，以在特定 .NET Framework 版本的「目標 Framework」  ，以及特定軟體架構的「目標平台」  上執行。  例如，您可以在目標為 .NET Framework 2.0 以及與 802x86 處理器系列 ("x86") 相容的 32 位元平台上，執行應用程式。 目標 Framework 和目標平台的組合稱為「目標內容」  。
+
+> [!IMPORTANT]
+> 本文說明指定目標 Framework 的舊方式。 SDK 樣式專案可啟用不同的 TargetFrameworks，例如 netstandard。 如需詳細資訊，請參閱[目標 Framework](/dotnet/standard/frameworks)。
 
 ## <a name="target-framework-and-profile"></a>目標 Framework 和設定檔
  目標 Framework 是專案被建置來於其上執行的特定 .NET Framework 版本。 由於目標 Framework 啟用由該版 Framework 獨佔的編譯器功能和組件參考，因此需要目標 Framework 的規格。
@@ -41,9 +44,13 @@ ms.locfileid: "66747392"
 
 - .NET Framework 4.7.1
 
+- .NET Framework 4.7.2
+
+- .NET Framework 4.8
+
 組件清單中每一個組件所參考的 .NET Framework 版本各自不同。 例如，除非您專案是以 .NET Framework 3.0 (含) 以上版本為目標，否則您無法建置 Windows Presentation Foundation (WPF) 應用程式。
 
-目標 Framework 是在專案檔的 `TargetFrameworkVersion` 屬性中指定。 您可以在 Visual Studio 整合式開發環境 (IDE) 中，使用專案屬性頁來變更專案的目標 Framework。 如需詳細資訊，請參閱[如何：以一個 .NET Framework 版本為目標](../ide/how-to-target-a-version-of-the-dotnet-framework.md)。 `TargetFrameworkVersion` 的可用值包括 `v2.0`、`v3.0`、`v3.5`、`v4.5.2`、`v4.6`、`v4.6.1`、`v4.6.2`、`v4.7` 和 `v4.7.1`。
+目標 Framework 是在專案檔的 `TargetFrameworkVersion` 屬性中指定。 您可以在 Visual Studio 整合式開發環境 (IDE) 中，使用專案屬性頁來變更專案的目標 Framework。 如需詳細資訊，請參閱[如何：以一個 .NET Framework 版本為目標](../ide/how-to-target-a-version-of-the-dotnet-framework.md)。 `TargetFrameworkVersion` 的可用值包括 `v2.0`、`v3.0`、`v3.5`、`v4.5.2`、`v4.6`、`v4.6.1`、`v4.6.2`、`v4.7`、`v4.7.1`、`v4.7.2` 和 `v4.8`。
 
 ```xml
 <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>

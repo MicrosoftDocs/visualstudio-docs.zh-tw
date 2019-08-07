@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c51042ee5a154c09245a28645cf2e432ff6e694c
-ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
+ms.openlocfilehash: c4d129d823c662a96a2186ea24989922d4af7442
+ms.sourcegitcommit: 044bb54cb4552c8f4651feb11d62e52726117e75
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66820761"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68661970"
 ---
 # <a name="unit-test-basics"></a>單元測試基本概念
 
@@ -232,7 +232,17 @@ public void My_Test ()
 
 您可以選擇 [全部執行]  以執行所有測試，或選擇 [執行]  以選擇要執行的一小組測試。 執行一組測試之後，測試回合的摘要會出現在 [測試總管]  視窗的底部。 在底部窗格中選取某個測試以檢視該測試的詳細資料。 從右鍵功能表中選擇 [開啟測試]  (鍵盤：**F12**) 以顯示所選測試的原始程式碼。
 
+::: moniker range="vs-2017"
+
 如果個別測試沒有任何會防止它們依任意順序執行的相依性，請使用工具列上的 ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png) 切換按鈕開啟平行測試執行。 這可大幅縮短執行所有測試所需的時間。
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+如果個別測試沒有任何會防止它們依任意順序執行的相依性，請使用工具列的設定功能表開啟平行測試執行。 這可大幅縮短執行所有測試所需的時間。
+
+::: moniker-end
 
 ### <a name="run-tests-after-every-build"></a>每次建置後執行測試
 

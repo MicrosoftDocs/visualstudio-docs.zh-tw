@@ -1,5 +1,6 @@
 ---
 title: 重構
+description: Visual Studio 中最受歡迎的重構，其中包含描述和範例。
 ms.date: 01/10/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 15a36378efe7b6e3151882d5e6927cd7fbfa4542
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6b9ce37df2999ac27f5bc8e5aeb7edfb1959b8cc
+ms.sourcegitcommit: 0f5f7955076238742f2071d286ad8e896f3a6cad
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62793176"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68483635"
 ---
 # <a name="refactor-code"></a>重構程式碼
 

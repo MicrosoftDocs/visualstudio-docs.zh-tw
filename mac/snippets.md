@@ -5,16 +5,16 @@ author: cobey
 ms.author: cobey
 ms.date: 02/07/2019
 ms.assetid: 0FE27C0C-A861-4133-A74E-8D0505CF5342
-ms.openlocfilehash: 1c0113346031853e21e9182a56078a44097119a5
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.openlocfilehash: 1dacc935549d738ff1b5e84c3ac4420c343155fd
+ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67691987"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68787691"
 ---
 # <a name="code-snippets"></a>程式碼片段
 
-程式碼片段通常稱為「程式碼範本」 __ ，適用於具效率的程式設計，因為它們允許插入和編輯預先撰寫的程式碼區塊。 使用程式碼片段可便於迅速新增常見模式，或甚至在您是開發人員但不確定語法時學習新的模式。 有針對 C#、F#、HTML、XML、Python 和 Razor 提供的範本。
+程式碼片段通常稱為「程式碼範本」  ，適用於具效率的程式設計，因為它們允許插入和編輯預先撰寫的程式碼區塊。 使用程式碼片段可便於迅速新增常見模式，或甚至在您是開發人員但不確定語法時學習新的模式。 有針對 C#、F#、HTML、XML、Python 和 Razor 提供的範本。
 
 本節說明如何在程式碼中建立、插入和使用程式碼片段。
 
@@ -30,7 +30,7 @@ ms.locfileid: "67691987"
 
   [![工具箱中的程式碼片段](media/source-editor-image14-sml.png)](media/source-editor-image14.png#lightbox)
 
-- **插入範本命令** &ndash; 目前未設定任何用於插入範本的預設按鍵繫結關係。 若要建立按鍵繫結關係，請瀏覽至 [Visual Studio] > [喜好設定] > [按鍵繫結關係]  ，並搜尋 `template`。 這允許將想要的按鍵繫結關係新增至 [編輯繫結] 欄位，然後按一下 [套用] **** ：
+- **插入範本命令** &ndash; 目前未設定任何用於插入範本的預設按鍵繫結關係。 若要建立按鍵繫結關係，請瀏覽至 [Visual Studio] > [喜好設定] > [按鍵繫結關係]  ，並搜尋 `template`。 這允許將想要的按鍵繫結關係新增至 [編輯繫結] 欄位，然後按一下 [套用]  ：
 
   ![插入範本命令](media/source-editor-image15.png)
 

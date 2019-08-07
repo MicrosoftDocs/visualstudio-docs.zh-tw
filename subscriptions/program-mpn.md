@@ -1,17 +1,17 @@
 ---
 title: Microsoft 合作夥伴網路 (MPN) 中提供的 Visual Studio 訂用帳戶
 author: evanwindom
-ms.author: jaunger
-manager: evelynp
-ms.date: 12/19/2018
+ms.author: lank
+manager: lank
+ms.date: 07/28/2019
 ms.topic: conceptual
 description: 有關提供哪些訂用帳戶、套用哪些規則，以及 MPN 中提供多少訂用帳戶的詳細資料。
-ms.openlocfilehash: 133b9561b6276329e17104b17f0687172b94a574
-ms.sourcegitcommit: f369ff7e84b0216f01570a486c7be80ca6d0e61a
+ms.openlocfilehash: e7cbb8e7d3fd28c9537ddcab84d5c38869c283e0
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68250663"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68605776"
 ---
 # <a name="visual-studio-subscriptions-offered-to-partners-in-the-microsoft-partner-network-mpn"></a>Microsoft 合作夥伴網路 (MPN) 中提供的 Visual Studio 訂用帳戶
 擁有專長認證或購買 MPN 行動套件的合作夥伴，有資格使用 Visual Studio 訂用帳戶。 這些訂用帳戶是依每位使用者授權，而且只有在指派給為合作夥伴工作的特定具名使用者時才有效。
@@ -20,13 +20,11 @@ ms.locfileid: "68250663"
 當合作夥伴獲得專長認證時，無論是銀級或金級，合作夥伴都會獲得 Visual Studio Enterprise 訂用帳戶的核心編號。 如果合作夥伴獲得至少一項金級專長認證，此核心權益即會變更。 Visual Studio Enterprise 訂用帳戶是自訂的供應項目，大致相當於 [Visual Studio Enterprise 標準訂用帳戶](https://visualstudio.microsoft.com/vs/pricing/)，但移除了某些權益 (其中有許多是分別提供給合作夥伴當作一般的 MPN 權益，而不是作為 MPN 提供之 Visual Studio Enterprise 訂用帳戶的一部分)。
 
 ### <a name="core-visual-studio-benefit-for-earning-at-least-one-competency-of-any-kind"></a>獲得至少一項任何種類專長認證的核心 Visual Studio 權益
-
 | 只能在銀級獲得的專長認證               | 獲得至少一項金級專長認證   |
 |------------------------------------------------------------|----------------------------------------------------|
 | 5 個 Visual Studio Enterprise 訂用帳戶                   | 10 個 Visual Studio Enterprise 訂用帳戶          |
 
 ### <a name="additional-visual-studio-benefit-for-select-competencies"></a>特選專長認證的其他 Visual Studio 權益
-
 | 專長認證                                  | **銀級**專長認證所獲得的其他訂用帳戶 | **金級**專長認證所獲得的其他訂用帳戶 |
 |---------------------------------------------|-----------------------------------------------------------|---------------------------------------------------------|
 | 應用程式開發                     | 5 個 Visual Studio Enterprise 訂用帳戶                  | 25 個 Visual Studio Enterprise 訂用帳戶               |
@@ -38,7 +36,6 @@ ms.locfileid: "68250663"
 無論合作夥伴獲得到多少項專長認證，Visual Studio 訂用帳戶數目都有下列限制：
 
 ### <a name="limits-for-visual-studio-subscriptions-earned-through-competencies"></a>透過專長認證取得之 Visual Studio 訂用帳戶限制
-
 | 只有銀級專長認證之合作夥伴的最大權益                   | 擁有至少一項金級專長認證之合作夥伴的最大權益               |
 |------------------------------------------------------------------------------|------------------------------------------------------------------------------|
 | 每個國家/地區 25 個 Visual Studio Enterprise 訂用帳戶，全球 75 個          | 每個國家/地區 50 個 Visual Studio Enterprise 訂用帳戶，全球 150 個         |
@@ -65,7 +62,9 @@ MPN 規則規定，所有視為方案權益提供的軟體僅能供內部使用�
 不會提供產品金鑰來解除鎖定產品，登入是執行 Visual Studio 的唯一選項。 在 Visual Studio 停止運作之前，Visual Studio 訂閱者最多可以離線操作 30 天。 在線上工作時，Visual Studio 會以無訊息模式定期重新整理使用者的授權狀態，以確保訂用帳戶仍然有效。
 
 ## <a name="resources"></a>資源
-
 - [MPN 程式系統管理員指南](https://assets.microsoft.com/en-us/Program-Administrator-Guide-to-Software-and-Online-Services-Benefits_1.pdf) - 包括如何將 Visual Studio 訂用帳戶指派給 MPN 員工的說明。
 - [將 Visual Studio 訂用帳戶指派給 MPN 員工](manage-mpn-subscriptions.md)
 - [使用條款](http://www.microsoft.com/useterms/) - 透過 MPN 提供的 Visual Studio 訂用帳戶受到 Visual Studio 訂用帳戶非賣品 (NFR) 使用者授權合約的約束。
+
+## <a name="next-steps"></a>後續步驟
+了解如何[管理 Visual Studio 訂閱](manage-mpn-subscriptions.md) (透過 Microsoft 合作夥伴網路提供)。

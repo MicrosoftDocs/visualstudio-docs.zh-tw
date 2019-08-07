@@ -1,5 +1,6 @@
 ---
 title: 將類型移到對應的檔案重構
+description: 將類型移到具有相同名稱的個別檔案。 以滑鼠右鍵按一下類型、選取 [快速動作與重構]，然後為 [移動類型] 選取 <TypeName>.cs。
 ms.date: 01/26/2018
 ms.topic: reference
 author: gewarren
@@ -10,12 +11,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 31e3b12f6a19ea64e43f7a5e00e3c795cc7358e0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3021e08d3cfb601a67f51e53c97d2eba60c397a5
+ms.sourcegitcommit: 0f5f7955076238742f2071d286ad8e896f3a6cad
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62540731"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68483658"
 ---
 # <a name="move-a-type-to-a-matching-file-refactoring"></a>將類型移到對應的檔案重構
 
@@ -45,14 +46,14 @@ ms.locfileid: "62540731"
 
 2. 接著，執行下列其中一項操作：
 
-   - 在字行任何地方按 **Ctrl**+**.**，
-   - 以滑鼠右鍵按一下類型名稱，並選取 [快速動作與重構]。
+   - 在字行任何地方按 **Ctrl**+ **.** ，
+   - 以滑鼠右鍵按一下類型名稱，並選取 [快速動作與重構]  。
 
-1. 從功能表選取 [將類型移到 *TypeName*.cs]，其中 *TypeName* 是您所選取之類型的名稱。
+1. 從功能表選取 [將類型移到 *TypeName*.cs]  ，其中 *TypeName* 是您所選取之類型的名稱。
 
    該類型將移動到專案中與該類型名稱相同的新檔案。
 
-   - C#: 
+   - C#:
 
       ![內嵌結果 - C#](media/movetype-result-cs.png)
 

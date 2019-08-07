@@ -1,6 +1,7 @@
 ---
 title: 管理組件和資訊清單簽署
 ms.date: 02/17/2017
+ms.technology: vs-ide-deployment
 ms.topic: conceptual
 helpviewer_keywords:
 - manifests [Visual Studio]
@@ -8,17 +9,17 @@ helpviewer_keywords:
 - application manifests [Visual Studio]
 - assemblies [Visual Studio], signing
 ms.assetid: 6c1ef36b-25f7-4ad0-b29a-51801b7a5420
-author: gewarren
-ms.author: gewarren
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 17cda43c2fab2944e5027f5292b405f8a9e2e084
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3add6e3e4f38b5ba73cd5154720d7b283189526e
+ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62538237"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68461492"
 ---
 # <a name="manage-assembly-and-manifest-signing"></a>管理組件和資訊清單簽署
 
@@ -37,13 +38,13 @@ ms.locfileid: "62538237"
 
 您可以簽署 .NET 組件和應用程式資訊清單：
 
-- 可執行檔 (*.exe*)
+- 可執行檔 ( *.exe*)
 
-- 應用程式資訊清單 (*.exe.manifest*)
+- 應用程式資訊清單 ( *.exe.manifest*)
 
-- 部署資訊清單 (*.application*)
+- 部署資訊清單 ( *.application*)
 
-- 共用的元件組件 (*.dll*)
+- 共用的元件組件 ( *.dll*)
 
 簽署下列資產類型：
 
@@ -57,7 +58,7 @@ ms.locfileid: "62538237"
 
 ## <a name="how-to-sign-an-assembly-in-visual-studio"></a>如何簽署 Visual Studio 中的組件
 
-使用 [專案屬性] 視窗的 [簽署] 索引標籤來簽署應用程式或元件 (以滑鼠右鍵按一下 [方案總管] 中的專案節點，然後選取 [屬性])。 選取 [簽署] 索引標籤，然後選取 [簽署組件] 核取方塊。
+使用 [專案屬性] 視窗的 [簽署]  索引標籤來簽署應用程式或元件 (以滑鼠右鍵按一下 [方案總管]  中的專案節點，然後選取 [屬性]  )。 選取 [簽署]  索引標籤，然後選取 [簽署組件]  核取方塊。
 
 指定金鑰檔。 如果您選擇建立新的金鑰檔，新的金鑰檔一律會使用 *.pfx* 格式建立。 您需要新檔案的名稱和密碼。
 
@@ -66,7 +67,7 @@ ms.locfileid: "62538237"
 
 您也可以指向已經建立的金錀。 如需建立金鑰的詳細資訊，請參閱[如何：建立公開/私密金鑰組](/dotnet/framework/app-domains/how-to-create-a-public-private-key-pair)。
 
-如果您只能存取公開金鑰，您可以使用延遲簽署，稍後再指派金鑰。 選取 [僅延遲簽署] 核取方塊以啟用延遲簽署。 延遲簽署的專案不會執行，且無法進行偵錯。 不過，您可以搭配使用 [Sn.exe 強式名稱工具](/dotnet/framework/tools/sn-exe-strong-name-tool)與 `-Vr` 選項，在開發期間略過驗證。
+如果您只能存取公開金鑰，您可以使用延遲簽署，稍後再指派金鑰。 選取 [僅延遲簽署]  核取方塊以啟用延遲簽署。 延遲簽署的專案不會執行，且無法進行偵錯。 不過，您可以搭配使用 [Sn.exe 強式名稱工具](/dotnet/framework/tools/sn-exe-strong-name-tool)與 `-Vr` 選項，在開發期間略過驗證。
 
 如需簽署資訊清單的資訊，請參閱[如何：重新簽署應用程式和部署資訊清單](../ide/how-to-sign-application-and-deployment-manifests.md)。
 

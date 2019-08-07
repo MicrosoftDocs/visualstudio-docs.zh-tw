@@ -1,6 +1,7 @@
 ---
 title: 建置前事件/建置後事件命令列對話方塊
 ms.date: 11/04/2016
+ms.technology: vs-ide-compile
 ms.topic: reference
 f1_keywords:
 - cs.ProjectPropertiesBuildEventsBuilder
@@ -28,46 +29,49 @@ helpviewer_keywords:
 - $(ProjectName)
 - build events, macros
 ms.assetid: d49b2c57-24bf-4fb2-8351-5c4b6cca938f
-author: gewarren
-ms.author: gewarren
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 977bd72b478d2106f687d3666aad574a63ca68ec
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d5671a75a847d81caedeffc17ea436eade060f3e
+ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62969055"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68461311"
 ---
 # <a name="pre-build-eventpost-build-event-command-line-dialog-box"></a>建置前事件/建置後事件命令列對話方塊
+
 您可以直接在編輯方塊中鍵入[專案設計工具、建置事件頁面 (C#)](../../ide/reference/build-events-page-project-designer-csharp.md)的建置前或建置後事件，或者可以從可用的巨集清單選取建置前或建置後巨集。
 
 > [!NOTE]
 > 如果專案是最新狀態，而且未觸發任何建置，則建置前事件不會執行。
 
 ## <a name="ui-element-list"></a>UI 項目清單
- **命令列編輯方塊**
 
- 包含要針對建置前或建置後執行的事件。
+**命令列編輯方塊**
+
+包含要針對建置前或建置後執行的事件。
 
 > [!NOTE]
 > 在執行 .bat 檔案的所有建置命令前方，加入 `call` 陳述式。 例如，`call C:\MyFile.bat` 或 `call C:\MyFile.bat call C:\MyFile2.bat`。
 
- **巨集**
+**巨集**
 
- 展開編輯方塊以顯示要插入命令列編輯方塊中的巨集清單。
+展開編輯方塊以顯示要插入命令列編輯方塊中的巨集清單。
 
- **巨集資料表**
+**巨集資料表**
 
- 列出可用的巨集和它的值。 每個巨集的描述，請參閱底下的＜巨集＞。 您可以一次只選取一個巨集來插入命令列編輯方塊中。
+列出可用的巨集和它的值。 每個巨集的描述，請參閱底下的＜巨集＞。 您一次只能選取一個巨集來插入到命令列編輯方塊中。
 
- **插入**
+**插入**
 
- 將巨集資料表中選取的巨集插入命令列編輯方塊中。
+將巨集資料表中選取的巨集插入命令列編輯方塊中。
 
 ### <a name="macros"></a>巨集
- 您可以使用任何這些巨集指定檔案位置，或是在複選的情況下取得輸入檔的實際名稱。 這些巨集不區分大小寫。
+
+您可以使用任何這些巨集指定檔案位置，或是在複選的情況下取得輸入檔的實際名稱。 這些巨集不區分大小寫。
 
 |巨集|說明|
 |-----------|-----------------|
@@ -91,7 +95,7 @@ ms.locfileid: "62969055"
 |`$(TargetFileName)`|組建的主要輸出檔檔案名稱 (定義為主檔名和副檔名)。|
 |`$(TargetExt)`|建置的主要輸出檔副檔名。 副檔名前面有 '.'。|
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [在 Visual Studio 中指定自訂建置事件](../../ide/specifying-custom-build-events-in-visual-studio.md)
 - [專案設計工具、建置事件頁面 (C#)](../../ide/reference/build-events-page-project-designer-csharp.md)

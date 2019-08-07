@@ -1,48 +1,54 @@
 ---
 title: IntelliSense、JavaScript、文字編輯器、選項
 ms.date: 10/29/2018
+ms.technology: vs-javascript
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.JavaScript.Intellisense.References
 - VS.ToolsOptionsPages.Text_Editor.JavaScript.Intellisense.General
 - VS.ToolsOptionsPages.Text_Editor.TypeScript.IntelliSense.General
 ms.assetid: b4a9816d-cf87-4dc6-a8d4-1591d6a48103
-author: gewarren
-ms.author: gewarren
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 04ef05c5823c6a07fb6f93d82ddae55830e0e3ac
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e3d030e028332bd57afe66eee31c888713721212
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62778565"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68605975"
 ---
-# <a name="options-text-editor-javascript-intellisense"></a>IntelliSense、JavaScript、文字編輯器、選項
-使用 [ **選項** ] 對話方塊的 [ **IntelliSense** ] 頁面修改影響 JavaScript 之 IntelliSense 行為的設定。 您可以透過選擇功能表列上的 [工具] > [選項]，並展開 [文字編輯器] > [JavaScript] > [IntelliSense] 來存取 [IntelliSense] 頁面。
+# <a name="options-dialog-box-text-editor--javascript--intellisense"></a>選項對話方塊：文字編輯器 \> JavaScript \> IntelliSense
+
+使用 [ **選項** ] 對話方塊的 [ **IntelliSense** ] 頁面修改影響 JavaScript 之 IntelliSense 行為的設定。 您可以透過選擇功能表列上的 [工具]   > [選項]  ，並展開 [文字編輯器]   > [JavaScript/TypeScript]   > [IntelliSense]  來存取 [IntelliSense]  頁面。
 
 [!INCLUDE[note_settings_general](../../data-tools/includes/note_settings_general_md.md)]
 
-[ **IntelliSense** ] 頁面包含下列區段：
+[IntelliSense]  頁面包含下列區段：
 
 ## <a name="statement-completion"></a>陳述式完成
- 您可以使用這些選項變更 IntelliSense 陳述式完成的行為。
+
+您可以使用這些選項變更 IntelliSense 陳述式完成的行為。
 
 ### <a name="uielement-list"></a>UIElement 清單
- **僅使用 Tab 或 Enter 進行認可**
 
- 當您選取這個核取方塊時，JavaScript 程式碼編輯器只會在您選擇 **Tab** 或 **Enter** 鍵之後，才將完成清單中選取的項目附加至陳述式。 當您取消選取這個核取方塊時，其他字元像是句號、逗號、冒號、左括弧和左大括弧 ({) 也可以在陳述式中附加選取的項目。
+**僅使用 Tab 或 Enter 進行認可**
 
-## <a name="references"></a>參考
- 您可以使用這些選項指定不同 JavaScript 專案類型範圍中 IntelliSense .js 檔案的類型。 IntelliSense 參考通常是用來為全域物件提供 IntelliSense 支援。 您也可以使用這個頁面設定必須在執行階段載入之指令碼的載入順序，以及加入 IntelliSense 擴充檔案。
+當您選取這個核取方塊時，JavaScript 程式碼編輯器只會在您選擇 **Tab** 或 **Enter** 鍵之後，才將完成清單中選取的項目附加至陳述式。 當您取消選取這個核取方塊時，其他字元像是句號、逗號、冒號、左括弧和左大括弧 ({) 也可以在陳述式中附加選取的項目。
+
+## <a name="references"></a>reference
+
+您可以使用這些選項指定不同 JavaScript 專案類型範圍中 IntelliSense .js 檔案的類型。 IntelliSense 參考通常是用來為全域物件提供 IntelliSense 支援。 您也可以使用這個頁面設定必須在執行階段載入之指令碼的載入順序，以及加入 IntelliSense 擴充檔案。
 
 ### <a name="uielement-list"></a>UIElement 清單
- **參考群組**
 
- 這個選項會指定參考群組類型。 支援的參考群組有三種：
+**參考群組**
 
- 您可以使用預先定義的參考群組指定特殊 IntelliSense .js 檔案於不同 JavaScript 專案範圍中。 有四種參考群組可用：
+這個選項會指定參考群組類型。 支援的參考群組有三種：
+
+您可以使用預先定義的參考群組指定特殊 IntelliSense .js 檔案於不同 JavaScript 專案範圍中。 有四種參考群組可用：
 
 - 隱含 (Windows *版本*)，適用於使用 JavaScript 的 [!INCLUDE[win8_appname_long](../../debugger/includes/win8_appname_long_md.md)] 應用程式。 此群組中所含的檔案會在程式碼編輯器中針對使用 JavaScript 的 [!INCLUDE[win8_appname_long](../../debugger/includes/win8_appname_long_md.md)] 應用程式開啟的每個 .js 檔案範圍中。
 
@@ -70,6 +76,6 @@ ms.locfileid: "62778565"
 > [!NOTE]
 > Web 專案預設會下載專案中參考的遠端檔案。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [JavaScript IntelliSense](../../ide/javascript-intellisense.md)

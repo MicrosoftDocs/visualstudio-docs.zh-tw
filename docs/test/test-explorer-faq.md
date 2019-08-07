@@ -14,14 +14,25 @@ ms.workload:
 - multiple
 author: kendrahavens
 manager: jillfra
-ms.openlocfilehash: 2efecd936dea0d764058b795457e89cdc700d902
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0dda73a4bbea2813131cc0695655eed7ea3409ca
+ms.sourcegitcommit: 044bb54cb4552c8f4651feb11d62e52726117e75
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62429453"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68661987"
 ---
 # <a name="visual-studio-test-explorer-faq"></a>Visual Studio 測試總管常見問題集
+
+::: moniker range=">=vs-2019"
+## <a name="where-is-group-by-traits-in-visual-studio-2019"></a>Visual Studio 2019 中依據特性群組的位置為何？
+這個特性群組已移至資料行。 有了 Visual Studio 2019 16.2 版中多個且可自訂的階層，我們認為將特性納入為群組產生了不必要的視覺複雜度。 我們一定會聽取對這項設計的意見反映！ https://developercommunity.visualstudio.com/content/problem/588029/no-longer-able-to-group-by-trait-in-test-explorer.html
+
+現在您可以用滑鼠右鍵按一下 [測試總管] 中的資料行，然後選取 [資料行]。 檢查 [特性] 資料行，它會出現在 [測試總管] 中。 您現在可以依據您感興趣的特性來篩選此資料行。
+
+![顯示特性資料行](media/vs-2019/trait-column.png)
+![篩選特性資料行](media/vs-2019/trait-column-filter.png)
+
+::: moniker-end
 
 ## <a name="dynamic-test-discovery"></a>動態測試探索
 

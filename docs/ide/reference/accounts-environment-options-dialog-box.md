@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c27950e104b6064bdaf3b8b4a8fe4a760fa4e677
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: cc3d88fd07ec5d345b3e8697ef69b193ece0fac1
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62792887"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68604905"
 ---
 # <a name="accounts-environment-options-dialog-box"></a>選項對話方塊、環境、帳戶
 
@@ -29,13 +29,13 @@ ms.locfileid: "62792887"
 
 ### <a name="enable-device-code-flow"></a>啟用裝置程式碼流程
 
-選取此選項時，當您選取 [檔案] > [帳戶設定] 頁面的 [新增帳戶]，Visual Studio 的行為會變更。 您並不會看到 [登入您的帳戶] 頁面，而是出現對話方塊，其提供您 URL 和程式碼以貼入至網頁來登入。 若無法以正常方式登入 Visual Studio，例如使用較舊版本的 Internet Explorer 或防火牆限制存取時，此選項十分有用。 如需詳細資訊，請參閱[使用多個使用者帳戶](../work-with-multiple-user-accounts.md#add-an-account-using-device-code-flow)。
+選取此選項時，當您選取 [檔案]   > [帳戶設定]  頁面的 [新增帳戶]  ，Visual Studio 的行為會變更。 您並不會看到 [登入您的帳戶]  頁面，而是出現對話方塊，其提供您 URL 和程式碼以貼入至網頁來登入。 若無法以正常方式登入 Visual Studio，例如使用較舊版本的 Internet Explorer 或防火牆限制存取時，此選項十分有用。 如需詳細資訊，請參閱[使用多個使用者帳戶](../work-with-multiple-user-accounts.md#add-an-account-using-device-code-flow)。
 
 ## <a name="registered-azure-clouds"></a>已註冊的 Azure 雲端
 
-本節說明可讓您透過一或多個用來登入 Visual Studio 帳戶存取的 Azure 雲端執行個體。 例如，您可能擁有貴公司資料中心的 Azure 私人執行個體存取權。 或您擁有主權或政府 Azure 執行個體 (例如 Azure 中國或 Azure 美國) 的存取權。政府。 根據預設，全域 Azure 雲端執行個體會出現在清單中且無法移除。
+本節說明可讓您透過一或多個用來登入 Visual Studio 帳戶存取的 Azure 雲端執行個體。 例如，您可能擁有貴公司資料中心的 Azure 私人執行個體存取權。 或您擁有主權或政府 Azure 執行個體 (例如 Azure 中國 21 Vianet 或 Azure 美國政府) 的存取權。 根據預設，全域 Azure 雲端執行個體會出現在清單中且無法移除。
 
-選擇 [新增] 按鈕，註冊額外的 Azure 雲端。 [新增 Azure 雲端] 對話方塊會列出數個您可以連線的已知 Azure 雲端執行個體，或者您也可以將 URL 輸入至私人 Azure 端點。
+選擇 [新增]  按鈕，註冊額外的 Azure 雲端。 [新增 Azure 雲端]  對話方塊會列出數個您可以連線的已知 Azure 雲端執行個體，或者您也可以將 URL 輸入至私人 Azure 端點。
 
 ![新增 Azure 雲端執行個體](media/add-new-azure-cloud.png)
 
@@ -47,4 +47,3 @@ ms.locfileid: "62792887"
 - [登入 Visual Studio](../signing-in-to-visual-studio.md)
 - [使用多個使用者帳戶](../work-with-multiple-user-accounts.md)
 - [環境設定](../environment-settings.md)
-- [環境選項對話方塊](../../ide/reference/environment-options-dialog-box.md)
