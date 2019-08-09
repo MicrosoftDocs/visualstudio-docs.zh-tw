@@ -1,5 +1,5 @@
 ---
-title: 資訊版權管理] & [managed 程式碼擴充功能
+title: 資訊版權管理 & managed 程式碼擴充
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -17,31 +17,31 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ca8f9d77681e3f11312e5e908a58ac2e292f581b
-ms.sourcegitcommit: 13ab9a5ab039b070b9cd9251d0b83dd216477203
+ms.openlocfilehash: 753f3d2da201c67cd86c697eccf7580596a40d6e
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66177745"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68872056"
 ---
-# <a name="information-rights-management-and-managed-code-extensions-overview"></a>資訊版權管理和 managed 程式碼延伸模組概觀
-  Microsoft Office Word 和 Microsoft Office Excel 提供的資訊版權管理 (IRM)，可協助您防止未經授權的人員檢視或變更敏感資訊的功能。 如需資訊版權管理的運作方式的詳細資訊，請參閱特定 Office 應用程式中的說明。
+# <a name="information-rights-management-and-managed-code-extensions-overview"></a>資訊版權管理和 managed 程式碼延伸模組總覽
+  Microsoft Office Word 和 Microsoft Office Excel 提供資訊 Rights Management (IRM), 這項功能可協助您防止未經授權的人員查看或改變機密資訊。 如需資訊 Rights Management 運作方式的詳細資訊, 請參閱特定 Office 應用程式中的說明。
 
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]
 
-## <a name="run-code-behind-documents-with-restricted-permissions"></a>執行文件背後的程式碼，以限制權限
- 如果您的方案包含文件或活頁簿使用 IRM，根據預設，Word 和 Excel 不允許執行任何程式碼。 如果您是文件的作者，或具有完整控制存取，您可以變更預設值，讓您的方案運作。 如需詳細資訊，請參閱[如何：允許程式碼的文件背後執行以限制使用權限](../vsto/how-to-permit-code-to-run-behind-documents-with-restricted-permissions.md)。
+## <a name="run-code-behind-documents-with-restricted-permissions"></a>以受限制的許可權執行程式碼後置檔
+ 如果您的方案包含使用 IRM 的檔或活頁簿, 則 Word 和 Excel 預設不允許執行任何程式碼。 如果您是檔的作者或具有完整控制存取權, 您可以變更預設值, 讓您的方案能夠運作。 如需詳細資訊，請參閱[如何：允許程式碼在具有限制許可權](../vsto/how-to-permit-code-to-run-behind-documents-with-restricted-permissions.md)的檔背後執行。
 
- IRM 會防止使用<xref:Microsoft.VisualStudio.Tools.Applications.Runtime.ServerDocument>擷取或操作文件中快取的資料。
+ IRM 會防止使用<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument>來取出或操作檔中快取的資料。
 
-## <a name="end-users-to-restrict-permissions-to-documents-that-use-managed-code-extensions"></a>限制使用 managed 程式碼擴充功能的文件的權限的使用者
- 在您的方案中有完整控制存取權的文件或活頁簿的任何人可以使用 IRM 限制的權限。 比方說，如果使用者在會計部門中使用會自動填入資料庫中的資料在工作表的解決方案，該使用者可能要允許僅變更中所屬的部門的人員存取權和讀取權限給其他人。 當使用者加入受限制的權限時，根據預設，工作表背後的程式碼無法執行，而且在工作表不會填入資料。
+## <a name="end-users-to-restrict-permissions-to-documents-that-use-managed-code-extensions"></a>終端使用者限制使用 managed 程式碼擴充之檔的許可權
+ 對於您解決方案中的檔或活頁簿具有完整控制存取權的任何人, 都可以使用 IRM 來限制許可權。 例如, 如果會計部門的使用者所使用的解決方案會自動將資料庫中的資料填入工作表, 則該使用者可能只想要允許其部門中的人員進行變更存取, 並讀取其他人的存取權。 當使用者加入限制的許可權時, 工作表的後置程式碼預設無法執行, 而且工作表不會填入資料。
 
- 若要修正此問題，完全控制存取的文件或活頁簿的人必須變更預設權限設定，允許以程式設計方式存取物件模型。 如需詳細資訊，請參閱[如何：允許程式碼的文件背後執行以限制使用權限](../vsto/how-to-permit-code-to-run-behind-documents-with-restricted-permissions.md)。
+ 若要修正此問題, 具有檔或活頁簿之完整控制存取權的人, 必須變更預設許可權設定, 以允許以程式設計方式存取物件模型。 如需詳細資訊，請參閱[如何：允許程式碼在具有限制許可權](../vsto/how-to-permit-code-to-run-behind-documents-with-restricted-permissions.md)的檔背後執行。
 
 ## <a name="see-also"></a>另請參閱
-- [在文件層級方案中的文件保護](../vsto/document-protection-in-document-level-solutions.md)
-- [Office 文件上的密碼保護](../vsto/password-protection-on-office-documents.md)
+- [檔層級方案中的檔案保護](../vsto/document-protection-in-document-level-solutions.md)
+- [Office 檔上的密碼保護](../vsto/password-protection-on-office-documents.md)
 - [保護 Office 方案](../vsto/securing-office-solutions.md)
 - [部署 Office 方案](../vsto/deploying-an-office-solution.md)
 - [設計和建立 Office 方案](../vsto/designing-and-creating-office-solutions.md)

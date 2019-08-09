@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6be903b2d0e269a0bce99ab57ff83e1b4bf8caa7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 429ce6ed8d44387d3289ee7100da4e639f16ad8e
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62934338"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68870594"
 ---
 # <a name="api-reference-for-modeling-sdk-for-visual-studio"></a>Modeling SDK for Visual Studio 的 API 參考
 
@@ -33,11 +33,11 @@ Visual Studio Visualization and Modeling SDK 提供特定領域語言 (DSL) 工�
 |<xref:Microsoft.VisualStudio.Modeling.Extensibility?displayProperty=fullName>|擴充方法 ModelElement 可實作 DSL 擴充性。|
 |<xref:Microsoft.VisualStudio.Modeling.ExtensionEnablement?displayProperty=fullName>|擴充性屬性|
 |<xref:Microsoft.VisualStudio.Modeling.Immutability?displayProperty=fullName>|可讓您將模型的部分為唯讀。|
-|<xref:Microsoft.VisualStudio.Modeling.Integration?displayProperty=fullName>|Modelbus API，可協助您整合不同的模型。|
-|<xref:Microsoft.VisualStudio.Modeling.Integration.Picker?displayProperty=fullName>|對話方塊中，可讓使用者瀏覽至模型和建立 Modelbus 參考的項目。|
-|<xref:Microsoft.VisualStudio.Modeling.Integration.Picker.Hosting?displayProperty=fullName>|選擇器服務。|
-|<xref:Microsoft.VisualStudio.Modeling.Integration.Shell?displayProperty=fullName>|適用於 Visual Studio Modelbus 配接器架構。|
-|<xref:Microsoft.VisualStudio.Modeling.Integration.Shell.Picker?displayProperty=fullName>|選擇器 對話方塊，可讓使用者瀏覽至模型和建立 Modelbus 參考的項目。|
+|[VisualStudio。整合](/previous-versions/ee904412(v=vs.140))|Modelbus API，可協助您整合不同的模型。|
+|[VisualStudio。選擇器的整合](/previous-versions/ee904394(v=vs.140))|對話方塊中，可讓使用者瀏覽至模型和建立 Modelbus 參考的項目。|
+|`Microsoft.VisualStudio.Modeling.Integration.Picker.Hosting`|選擇器服務。|
+|[VisualStudio。命令介面](/previous-versions/ee869435(v=vs.140))|適用於 Visual Studio Modelbus 配接器架構。|
+|[VisualStudio。選擇器的整合](/previous-versions/ee886769(v=vs.140))|選擇器 對話方塊，可讓使用者瀏覽至模型和建立 Modelbus 參考的項目。|
 |<xref:Microsoft.VisualStudio.Modeling.Shell?displayProperty=fullName>|Dsl 和 Visual Studio 之間的介面。|
 |<xref:Microsoft.VisualStudio.Modeling.Shell.ExtensionEnablement?displayProperty=fullName>|可讓您定義捷徑 （操作） 功能表命令。|
 |<xref:Microsoft.VisualStudio.Modeling.Validation?displayProperty=fullName>|可讓您定義驗證條件約束。|
