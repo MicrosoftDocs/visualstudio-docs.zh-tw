@@ -7,17 +7,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 43f071d73bef7d7b67988ccffb00b7ae7518b916
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7bf32a1722ec8029840566b7602ba78f84adb7ec
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62810563"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68870511"
 ---
-# <a name="invoking-text-transformation-in-a-vs-extension"></a>叫用 VS 擴充功能中的文字轉換
-如果您要撰寫的 Visual Studio 擴充功能，例如功能表命令或[定義域專屬語言](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)，您可以使用文字範本化服務來轉換文字範本。 取得 <xref:Microsoft.VisualStudio.TextTemplating.VSHost.STextTemplating> 服務並將它轉換成  <xref:Microsoft.VisualStudio.TextTemplating.VSHost.ITextTemplating>。
+# <a name="invoke-text-transformation-in-a-visual-studio-extension"></a>叫用 Visual Studio 延伸模組中的文字轉換
 
-## <a name="getting-the-text-templating-service"></a>取得文字範本化服務
+如果您要撰寫 Visual Studio 的延伸模組, 例如功能表命令或[特定領域語言](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md), 您可以使用文字模板化服務來轉換文字模板。 取得[STextTemplating](/previous-versions/visualstudio/visual-studio-2012/bb932394(v=vs.110))服務, 並將其轉換為[ITextTemplating](/previous-versions/visualstudio/visual-studio-2012/bb932392(v=vs.110))。
+
+## <a name="get-the-text-templating-service"></a>取得文字模板化服務
 
 ```csharp
 using Microsoft.VisualStudio.TextTemplating;
@@ -33,16 +34,17 @@ ITextTemplating t4 = serviceProvider.GetService(typeof(STextTemplating)) as ITex
 string result = t4.ProcessTemplate(filePath, System.IO.File.ReadAllText(filePath));
 ```
 
-## <a name="passing-parameters-to-the-template"></a>將參數傳遞給範本
+## <a name="pass-parameters-to-the-template"></a>將參數傳遞給範本
+
  您可以將參數傳遞給範本。 在範本中，您可以使用 `<#@parameter#>` 指示詞取得參數值。
 
- 針對參數的類型，您必須使用可序列化或可封送處理的類型。 也就是說，類型必須使用 <xref:System.SerializableAttribute> 宣告或類型必須衍生自 <xref:System.MarshalByRefObject>。 這是必要的限制，因為文字範本會在不同的 AppDomain 中執行。 所有的內建類型，例如**System.String**並**System.Int32**都是可序列化。
+ 針對參數的類型，您必須使用可序列化或可封送處理的類型。 也就是說，類型必須使用 <xref:System.SerializableAttribute> 宣告或類型必須衍生自 <xref:System.MarshalByRefObject>。 這是必要的限制，因為文字範本會在不同的 AppDomain 中執行。 所有內建類型 (例如**system.string**和**system.object** ) 都是可序列化的。
 
  為了傳遞參數值，呼叫的程式碼可以在 `Session` 字典或 <xref:System.Runtime.Remoting.Messaging.CallContext> 中放入值。
 
  下列範例會使用兩個方法轉換簡短的測試範本：
 
-```
+```csharp
 using Microsoft.VisualStudio.TextTemplating;
 using Microsoft.VisualStudio.TextTemplating.VSHost;
 ...
@@ -73,10 +75,11 @@ string result = t4.ProcessTemplate("",
 //     Test: Hello    07/06/2010 12:37:45    42
 ```
 
-## <a name="error-reporting-and-the-output-directive"></a>錯誤報告和輸出指示詞
- 在 Visual Studio 錯誤視窗中，將顯示在處理期間發生任何錯誤。 此外，指定實作 <xref:Microsoft.VisualStudio.TextTemplating.VSHost.ITextTemplatingCallback> 的回呼，也可以發出錯誤通知。
+## <a name="error-reporting-and-the-output-directive"></a>錯誤報表和輸出指示詞
 
- 如果要將結果字串寫入檔案中，您可能會想要知道範本的 `<#@output#>` 指示詞中指定的副檔名和編碼。 此資訊也會傳遞至回呼。 如需詳細資訊，請參閱 < [T4 輸出指示詞](../modeling/t4-output-directive.md)。
+在處理期間發生的任何錯誤都會顯示在 [Visual Studio 錯誤] 視窗中。 此外, 您可以藉由指定執行[ITextTemplatingCallback](/previous-versions/visualstudio/visual-studio-2012/bb932397(v=vs.110))的回呼, 來通知您有錯誤。
+
+如果要將結果字串寫入檔案中，您可能會想要知道範本的 `<#@output#>` 指示詞中指定的副檔名和編碼。 此資訊也會傳遞至回呼。 如需詳細資訊, 請參閱[T4 Output](../modeling/t4-output-directive.md)指示詞。
 
 ```csharp
 void ProcessMyTemplate(string MyTemplateFile)
@@ -118,7 +121,7 @@ class T4Callback : ITextTemplatingCallback
 }
 ```
 
- 可使用範本檔測試的程式碼看起來和下列類似：
+可使用範本檔測試的程式碼看起來和下列類似：
 
 ```
 <#@output extension=".htm" encoding="ASCII"#>
@@ -127,14 +130,16 @@ class T4Callback : ITextTemplatingCallback
 Sample text.
 ```
 
- 編譯器警告會出現在 Visual Studio 錯誤視窗中，而且它也會產生呼叫`ErrorCallback`。
+編譯器警告會出現在 Visual Studio 錯誤視窗中, 而且也會產生對的呼叫`ErrorCallback`。
 
 ## <a name="reference-parameters"></a>傳址參數
- 您可以使用衍生自 <xref:System.MarshalByRefObject> 的參數類別，將值傳出文字範本。
 
-## <a name="related-topics"></a>相關主題
- 若要從前置處理過的文字範本產生文字：呼叫產生的類別其 `TransformText()` 方法。 如需詳細資訊，請參閱 <<c0> [ 執行階段使用 T4 文字範本產生文字](../modeling/run-time-text-generation-with-t4-text-templates.md)。
+您可以使用衍生自 <xref:System.MarshalByRefObject> 的參數類別，將值傳出文字範本。
 
- 若要產生的 Visual Studio 擴充功能之外的文字：定義自訂主應用程式。 如需詳細資訊，請參閱 <<c0> [ 藉由使用自訂主機處理文字範本](../modeling/processing-text-templates-by-using-a-custom-host.md)。
+## <a name="related-articles"></a>相關文章
 
- 若要產生可在之後編譯及執行的原始程式碼：呼叫 `t4.PreprocessTemplate()` 的 <xref:Microsoft.VisualStudio.TextTemplating.VSHost.ITextTemplating>方法。
+若要從前置處理過的文字範本產生文字：呼叫產生的類別其 `TransformText()` 方法。 如需詳細資訊, 請參閱[使用 T4 文字模板產生執行時間文字](../modeling/run-time-text-generation-with-t4-text-templates.md)。
+
+若要在 Visual Studio 延伸模組外產生文字:定義自訂主應用程式。 如需詳細資訊，請參閱 <<c0> [ 藉由使用自訂主機處理文字範本](../modeling/processing-text-templates-by-using-a-custom-host.md)。
+
+若要產生可在之後編譯及執行的原始程式碼：呼叫[ITextTemplating](/previous-versions/visualstudio/visual-studio-2012/bb932392(v=vs.110))的[PreprocessTemplate](/previous-versions/visualstudio/visual-studio-2012/ee844321(v=vs.110))方法。

@@ -9,17 +9,17 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e9f0a185ce4f78a81d1ed806e38b102296093f48
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 84374596d706c23e835bf344d318d57c297aec60
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441012"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68871804"
 ---
 # <a name="integrating-models-by-using-visual-studio-modelbus"></a>使用 Visual Studio Modelbus 整合模型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ModelBus 提供方法來建立模型的模型之間，以及從其他工具的連結。 例如，您可以連結定義域專屬語言 (DSL) 模型和 UML 模型。 您可以建立一組整合的 DSL。
+[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]ModelBus 提供一種方法, 可讓您在模型和其他工具之間建立連結到模型。 例如，您可以連結定義域專屬語言 (DSL) 模型和 UML 模型。 您可以建立一組整合的 DSL。
 
  ModelBus 可讓您建立模型或模型內特定項目的唯一參考。 這個參考可以儲存在模型外，例如儲存在另一個模型的項目中。 在此情況下，工具需要取得項目的存取權，模型匯流排基礎結構會載入適當的模型並傳回項目。 如有需要，您可以向使用者顯示模型。 如果無法從先前的位置存取檔案，ModelBus 會請使用者尋找檔案。 如果使用者找到檔案，ModelBus 會修正該檔案的所有參考。
 
@@ -47,7 +47,7 @@ ms.locfileid: "63441012"
 
 5. 如果您要從文字範本存取 DSL，您必須修改新專案中的 AdapterManager.tt。 如果您要從其他程式碼 (例如命令和事件處理常式) 存取 DSL，請略過這個步驟。 如需詳細資訊，請參閱 <<c0> [ 文字範本中使用 Visual Studio ModelBus](../modeling/using-visual-studio-modelbus-in-a-text-template.md)。
 
-   1. 將 AdapterManagerBase 的基底類別變更為 <xref:Microsoft.VisualStudio.TextTemplating.Modeling.VsTextTemplatingModelingAdapterManager>。
+   1. 將 AdapterManagerBase 的基類變更為[VsTextTemplatingModelingAdapterManager](/previous-versions/ee844317(v=vs.140))。
 
    2. 在接近檔案結尾處，將這個額外的屬性插入到類別 AdapterManager 的前面：
 
@@ -127,7 +127,7 @@ ms.locfileid: "63441012"
 
 4. 如果您選擇模型內某個項目的參考，您可以加入使用者可選取的類型清單，例如 Company.FamilyTree.Person。
 
-5. 按一下  **確定**，然後按一下**轉換所有範本**在 方案總管 工具列中。
+5. 按一下 **[確定]** , 然後按一下 [方案瀏覽器] 工具列中的 [**轉換所有範本**]。
 
     > [!WARNING]
     > 如果您尚未選取有效的模型或實體，[確定] 按鈕即使可能顯示為已啟用，也不會有任何作用。
@@ -510,4 +510,4 @@ private const string INVALID_REF_FORMAT =
 - 在  **DslPackage\source.extention.tt**，`|ModelBusAdapter|`加入做為 MEF 元件。
 
 ## <a name="see-also"></a>另請參閱
- [如何：從程式碼中的檔案中開啟模型](../modeling/how-to-open-a-model-from-file-in-program-code.md)[整合 UML 模型與其他模型和工具](../modeling/integrate-uml-models-with-other-models-and-tools.md) [How to:新增拖放處理常式](../modeling/how-to-add-a-drag-and-drop-handler.md)[文字範本中使用 Visual Studio ModelBus](../modeling/using-visual-studio-modelbus-in-a-text-template.md)
+ [如何：在程式碼](../modeling/how-to-open-a-model-from-file-in-program-code.md)中從檔案開啟模型[整合 UML 模型與其他模型和工具](../modeling/integrate-uml-models-with-other-models-and-tools.md) [如何:[使用文字模板中的 Visual Studio ModelBus](../modeling/using-visual-studio-modelbus-in-a-text-template.md)新增拖](../modeling/how-to-add-a-drag-and-drop-handler.md)放處理常式

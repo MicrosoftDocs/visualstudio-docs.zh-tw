@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2728f26319b3d395381d60f136fba7d0c20da977
-ms.sourcegitcommit: 90c3187d804ad7544367829d07ed4b47d3f8a72d
+ms.openlocfilehash: 0acacac883153990861385c96eeb3379c464f97f
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "68822138"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68870993"
 ---
 # <a name="write-and-debug-running-xaml-code-with-xaml-hot-reload-in-visual-studio"></a>在 Visual Studio 中使用 XAML 熱重載來撰寫和偵測執行中的 XAML 程式碼
 
@@ -44,7 +44,7 @@ XAML 熱重載可讓您在應用程式執行時變更 XAML 程式碼, 以協助�
 |-|-|-|-|
 |在應用程式執行時將事件接線至控制項|不支援|不支援|請參閱錯誤:*確定事件失敗*|
 |在資源字典中建立資源物件, 例如在應用程式的頁面/視窗或*應用程式中。 xaml*|不支援|支援|範例: 將`SolidColorBrush`加入至資源字典以當做使用`StaticResource`。</br>注意:使用 XAML 熱重載時, 可以套用/使用靜態資源、樣式轉換器, 以及寫入至資源字典的其他元素。 不支援建立資源。</br> 變更資源字典`Source`屬性。|
-|當應用程式正在執行時, 將新的控制項、類別、視窗或其他檔案加入至您的專案|不支援|不支援|None|
+|當應用程式正在執行時, 將新的控制項、類別、視窗或其他檔案加入至您的專案|不支援|不支援|無|
 |管理 NuGet 套件 (新增/移除/更新套件)|不支援|不支援|None|
 |變更使用 {x:Bind} 標記延伸的資料系結|N/A|Visual Studio 2019 和更新版本中支援|Visual Studio 2017 或之前版本中不支援|
 
@@ -52,8 +52,8 @@ XAML 熱重載可讓您在應用程式執行時變更 XAML 程式碼, 以協助�
 
 使用 XAML 熱重載時, 您可能會遇到下列錯誤。
 
-|錯誤訊息|描述|
-|-|-|-|
+|錯誤訊息|說明|
+|-|-|
 |確定事件失敗|錯誤表示您嘗試將事件連接到您的其中一個控制項, 而您的應用程式在執行時並不支援。|
 |XAML 編輯後繼續找不到任何要更新的元素。|當您編輯的 XAML 無法在您的應用程式中更新熱重載時, 就會發生錯誤。</br> 有時候, 您可以使用執行中的應用程式來流覽至使用 XAML 的視圖, 以修正此錯誤。</br> 有時候, 此錯誤表示在您重新開機偵錯工具會話之前, 無法套用特定的變更。 |
 |偵錯工作階段期間不支援此變更。|錯誤表示 XAML 熱重載不支援您嘗試的變更。 停止「調試」會話、進行變更, 然後重新開機「調試」會話。|

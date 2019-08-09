@@ -8,14 +8,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a75dc86a45c78f6b57d5a326c8c342eca70b26e0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 26845b3878a89ea52a3f77f9a0a8d23363877edd
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62960459"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68870681"
 ---
-# <a name="access-visual-studio-or-other-hosts-from-a-text-template"></a>從文字範本存取 Visual Studio 或其他主機
+# <a name="access-visual-studio-or-other-hosts-from-a-text-template"></a>從文字模板存取 Visual Studio 或其他主機
 
 在文字範本中，您可以使用的主控件執行此範本所公開的方法和屬性。 Visual Studio 是主機的範例。
 
@@ -24,7 +24,7 @@ ms.locfileid: "62960459"
 
 ## <a name="obtain-access-to-the-host"></a>取得主機的存取權
 
-若要存取主應用程式，設定`hostspecific="true"`在`template`指示詞。 現在您可以使用`this.Host`，其中包含型別<xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>。 <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>類型具有您可以使用，例如，若要解決檔案名稱，並記錄錯誤的成員。
+若要存取主應用程式，設定`hostspecific="true"`在`template`指示詞。 現在您可以使用`this.Host`, 其型別為[ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110))。 [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110))類型具有可供您用來解析檔案名和記錄錯誤的成員, 例如。
 
 ### <a name="resolve-file-names"></a>解析檔案名稱
 
