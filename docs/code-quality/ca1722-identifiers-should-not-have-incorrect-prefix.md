@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c1d2aa6f0889216b39b891b042989f1c8c69692
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5daf51cd8bef4910a327b8e261f15332ad6522da
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62545980"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68921615"
 ---
 # <a name="ca1722-identifiers-should-not-have-incorrect-prefix"></a>CA1722:識別項名稱不應該使用不正確的前置字元
 
@@ -31,20 +31,20 @@ ms.locfileid: "62545980"
 |中斷變更|中斷|
 
 ## <a name="cause"></a>原因
- 識別項具有不正確的前置詞。
+識別碼有不正確的前置詞。
 
 ## <a name="rule-description"></a>規則描述
- 根據慣例，只有特定程式設計項目的名稱會以特定的前置字元做為開頭。
+根據慣例，只有特定程式設計項目的名稱會以特定的前置字元做為開頭。
 
- 型別名稱沒有特定的前置詞，而且不前面應該要有 'C'。 此規則會回報的型別名稱，例如 'CMyClass' 違規，並不會報告的類型名稱，例如 '快取' 違規。
+型別名稱沒有特定的前置詞, 且前面不能加上 ' C '。 此規則會報告型別名稱 (例如 ' CMyClass ') 的違規, 而且不會報告型別名稱違規, 例如 ' Cache '。
 
- 命名慣例提供了通用程式庫 common language runtime 為目標。 這種一致性可降低學習曲線，具有所需的新軟體程式庫，並增加程式庫，開發人員專業開發的 managed 程式碼中的其他人的客戶信心。
+命名慣例提供以通用語言執行時間為目標之程式庫的常見外觀。 這種一致性可減少新軟體程式庫所需的學習曲線, 並提高客戶對於開發 managed 程式碼專業知識的人員所開發的信心。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
- 識別項中移除前置詞。
+請移除識別碼中的前置詞。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
- 請勿隱藏此規則的警告。
+請勿隱藏此規則的警告。
 
-## <a name="related-rules"></a>相關的規則
- [CA1715:識別項應該使用正確的前置詞](../code-quality/ca1715-identifiers-should-have-correct-prefix.md)
+## <a name="related-rules"></a>相關規則
+[CA1715識別碼應該有正確的前置詞](../code-quality/ca1715-identifiers-should-have-correct-prefix.md)

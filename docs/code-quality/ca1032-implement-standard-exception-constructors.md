@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7baf13eb9125b273ad8fb1265a65eb7b053238a1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ad062154b8213d021c8c265aaf287d3a9335d0e4
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62779120"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68922873"
 ---
 # <a name="ca1032-implement-standard-exception-constructors"></a>CA1032:必須實作標準例外狀況建構函式
 
@@ -28,41 +28,41 @@ ms.locfileid: "62779120"
 |TypeName|ImplementStandardExceptionConstructors|
 |CheckId|CA1032|
 |分類|Microsoft.Design|
-|中斷變更|非重大|
+|中斷變更|不中斷|
 
 ## <a name="cause"></a>原因
 
-型別擴充<xref:System.Exception?displayProperty=fullName>但不宣告所有必要建構函式。
+型別會<xref:System.Exception?displayProperty=fullName>擴充, 但不會宣告所有必要的函式。
 
 ## <a name="rule-description"></a>規則描述
 
-例外狀況類型必須實作下列三個建構函式：
+例外狀況類型必須實作為下列三個構造函式:
 
-- public NewException()
+- 公用 NewException ()
 
-- public NewException(string)
+- 公用 NewException (字串)
 
-- public NewException(string, Exception)
+- 公用 NewException (字串, 例外狀況)
 
-此外，如果您執行舊版 FxCop 靜態程式碼分析做為相對於[Roslyn 為基礎的 FxCop 分析器](../code-quality/roslyn-analyzers-overview.md)，如果沒有第四個建構函式也會產生違規情形：
+此外, 如果您執行的是舊版 FxCop 靜態程式碼分析, 而不是以[Roslyn 為基礎的 fxcop 分析器](../code-quality/roslyn-analyzers-overview.md), 則缺少第四個函數也會產生違規:
 
-- 受保護或私用 NewException （SerializationInfo，StreamingContext）
+- protected 或 private NewException (SerializationInfo, StreamingCoNtext)
 
-無法提供整組的建構函式會導致難以正確地處理例外狀況。 例如，建構函式簽章`NewException(string, Exception)`用來建立其他例外狀況所造成的例外狀況。 沒有這個建構函式，您無法建立，並擲回自訂例外狀況，其中包含內部 （巢狀的） 例外狀況，也就是哪些受管理的程式碼應該在這種情況下執行的執行個體。
+無法提供整組的建構函式會導致難以正確地處理例外狀況。 例如, 具有`NewException(string, Exception)`簽章的函式會用來建立其他例外狀況所造成的例外狀況。 如果沒有這個函式, 您就無法建立和擲回自訂例外狀況的實例, 其中包含內部 (嵌套) 例外狀況, 這是 managed 程式碼在這種情況下應該執行的動作。
 
-第三個例外狀況建構函式是公用的慣例。 第四個建構函式是在未密封的類別中，受保護和密封類別中私用。 如需詳細資訊，請參閱[CA2229:必須實作序列化建構函式](../code-quality/ca2229-implement-serialization-constructors.md)
+前三個例外狀況的函式會依照慣例公開。 第四個函式會在未密封的類別中受到保護, 並在密封類別中進行私用 如需詳細資訊, [請參閱 CA2229:執行序列化](../code-quality/ca2229-implement-serialization-constructors.md)的函式。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
 
-若要修正此規則的違規情形，加入遺漏的建構函式例外狀況，並確定它們有正確的存取範圍。
+若要修正此規則的違規情形, 請將遺漏的函式新增至例外狀況, 並確定它們具有正確的存取範圍。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
 
-它是安全違規因使用不同的存取層級的公用建構函式時隱藏此規則的警告。 此外，也可以隱藏警告`NewException(SerializationInfo, StreamingContext)`建構函式，如果您正在建置可攜式類別庫 (PCL)。
+當違規是針對公用的函式使用不同的存取層級所造成時, 可以安全地隱藏此規則的警告。 此外, 如果您要建立可移植的類別庫`NewException(SerializationInfo, StreamingContext)` (PCL), 可以隱藏此函式的警告。
 
 ## <a name="example"></a>範例
 
-下列範例包含違反此規則的例外狀況類型以及已正確地實作的例外狀況類型。
+下列範例包含違反此規則的例外狀況類型, 以及已正確執行的例外狀況類型。
 
 [!code-csharp[FxCop.Design.ExceptionMultipleCtors#1](../code-quality/codesnippet/CSharp/ca1032-implement-standard-exception-constructors_1.cs)]
 

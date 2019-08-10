@@ -14,81 +14,81 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: e1fd14dcbe2ed5840fdaa2da755fe6a95d7c8e68
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: da8555d4246d2177b3d97eeef8d24c7b4a22b31d
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63402927"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68925641"
 ---
-# <a name="how-to-add-update-or-remove-a-wcf-data-service-reference"></a>HOW TO：新增、更新或移除 WCF 資料服務參考
-A*服務參考*允許存取一或多個專案[!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)]。 使用**加入服務參考**對話方塊，即可搜尋[!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)]在目前方案中，區域網路上，在本機，或在網際網路上。
+# <a name="how-to-add-update-or-remove-a-wcf-data-service-reference"></a>作法：新增、更新或移除 WCF 資料服務參考
+*服務參考*可讓專案存取一或多個[!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)]。 使用 [**加入服務參考**] 對話方塊, [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)]在本機、區域網路或網際網路上搜尋目前的解決方案。
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 
-## <a name="add-a-service-reference"></a>加入服務參考
+## <a name="add-a-service-reference"></a>新增服務參考
 
-### <a name="to-add-a-reference-to-an-external-service"></a>將參考加入至外部服務
+### <a name="to-add-a-reference-to-an-external-service"></a>加入外部服務的參考
 
-1. 在 [**方案總管**，以滑鼠右鍵按一下您想要新增服務]，然後按一下專案名稱**加入服務參考**。
+1. 在**方案總管**中, 以滑鼠右鍵按一下您要新增服務的專案名稱, 然後按一下 [**加入服務參考**]。
 
-     **加入服務參考** 對話方塊隨即出現。
+     [**加入服務參考**] 對話方塊隨即出現。
 
-2. 在 **地址**方塊，輸入服務的 URL，然後按一下**移**搜尋服務。 如果服務實作使用者名稱和密碼的安全性，您可能會提示輸入使用者名稱和密碼。
+2. 在 [**位址**] 方塊中, 輸入服務的 URL, 然後按一下 [**移**至] 來搜尋服務。 如果服務會執行使用者名稱和密碼安全性, 系統可能會提示您輸入使用者名稱和密碼。
 
     > [!NOTE]
     > 您只應該參考來自信任來源的服務。 新增不信任來源的參考可能會危及安全性。
 
-     您也可以選取從 URL**地址**清單中，它會儲存先前的 15 個 Url 處找到有效的服務中繼資料。
+     您也可以從 [**通訊**] 清單中選取 URL, 這會儲存先前的15個 url, 也就是找到有效服務中繼資料的位置。
 
-     執行搜尋時，會顯示進度列。 您可以按一下即可停止搜尋隨時**停止**。
+     執行搜尋時, 會顯示進度列。 您隨時可以按一下 [**停止**] 來停止搜尋。
 
-3. 在  **Services**清單中，展開您想要使用選取的實體集服務的節點。
+3. 在 [**服務**] 清單中, 展開您想要使用之服務的節點, 然後選取實體集。
 
-4. 在 **命名空間**方塊中，輸入您想要針對參考使用的命名空間。
+4. 在 [**命名空間**] 方塊中, 輸入您要用於參考的命名空間。
 
-5. 按一下 **確定**加入至專案參考。
+5. 按一下 **[確定]** , 將參考加入至專案。
 
-     產生服務用戶端 (proxy)，並描述服務的中繼資料加入至*app.config*檔案。
+     會產生服務用戶端 (proxy), 並將描述服務的中繼資料新增至 app.config檔案。
 
-### <a name="to-add-a-reference-to-a-service-in-the-current-solution"></a>若要加入服務參考目前方案中
+### <a name="to-add-a-reference-to-a-service-in-the-current-solution"></a>若要在目前的方案中加入服務的參考
 
-1. 在 [**方案總管**，以滑鼠右鍵按一下您想要新增服務]，然後按一下專案名稱**加入服務參考**。
+1. 在**方案總管**中, 以滑鼠右鍵按一下您要新增服務的專案名稱, 然後按一下 [**加入服務參考**]。
 
-    **加入服務參考** 對話方塊隨即出現。
+    [**加入服務參考**] 對話方塊隨即出現。
 
-2. 按一下 **探索**。
+2. 按一下 [**探索**]。
 
-    所有服務 (同時[!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)]和 WCF 服務) 在目前的方案會加入至**Services**清單。
+    目前解決方案中的[!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)]所有服務 (包括和 WCF 服務) 都會加入至**服務**清單中。
 
-3. 在  **Services**清單中，展開您想要使用選取的實體集服務的節點。
+3. 在 [**服務**] 清單中, 展開您想要使用之服務的節點, 然後選取實體集。
 
-4. 在 **命名空間**方塊中，輸入您想要針對參考使用的命名空間。
+4. 在 [**命名空間**] 方塊中, 輸入您要用於參考的命名空間。
 
-5. 按一下 **確定**加入至專案參考。
+5. 按一下 **[確定]** , 將參考加入至專案。
 
-    產生服務用戶端 (proxy)，並描述服務的中繼資料加入至*app.config*檔案。
+    服務用戶端 (proxy) 會產生, 而描述服務的中繼資料則會新增至 app.config 檔案。
 
 ## <a name="update-a-service-reference"></a>更新服務參考
- 實體資料模型[!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)]有時會變更。 當發生這種情況時，您必須更新服務參考。
+[!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)]有時候會變更的實體資料模型。 發生這種情況時, 您必須更新服務參考。
 
 ### <a name="to-update-a-service-reference"></a>若要更新服務參考
 
-- 在 **方案總管**，以滑鼠右鍵按一下 服務參考，然後按一下**更新服務參考**。
+- 在**方案總管**中, 以滑鼠右鍵按一下服務參考, 然後按一下 [**更新服務參考**]。
 
-     參考會從其原始位置，更新和服務用戶端會重新產生以反映在中繼資料中的任何變更時，會顯示進度對話方塊。
+     [進度] 對話方塊會在參考從其原始位置更新時顯示, 而服務用戶端會重新產生以反映中繼資料中的任何變更。
 
 ## <a name="remove-a-service-reference"></a>移除服務參考
- 如果不再使用的服務參考，您可以從您的方案中移除它。
+如果服務參考不再使用, 您可以從方案中移除它。
 
 ### <a name="to-remove-a-service-reference"></a>若要移除服務參考
 
-- 在 **方案總管**，以滑鼠右鍵按一下 服務參考，然後按一下**刪除**。
+- 在**方案總管**中, 以滑鼠右鍵按一下服務參考, 然後按一下 [**刪除**]。
 
-     服務用戶端將會從方案中移除，並描述服務的中繼資料會移除*app.config*檔案。
+     服務用戶端將會從解決方案移除, 而描述服務的中繼資料將會從*app.config*檔案中移除。
 
     > [!NOTE]
-    > 您必須手動移除參考的服務參考的任何程式碼。
+    > 任何參考服務參考的程式碼都必須手動移除。
 
 ## <a name="see-also"></a>另請參閱
 

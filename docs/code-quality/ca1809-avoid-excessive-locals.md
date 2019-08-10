@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f4ac6947f8424c3b9aa7429ee378b4bb89be73ca
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8d1c2f76258be3b0be6409bffd002fd916883ab2
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62545237"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68921542"
 ---
 # <a name="ca1809-avoid-excessive-locals"></a>CA1809:避免在方法中包含過多區域變數
 
@@ -28,19 +28,19 @@ ms.locfileid: "62545237"
 |TypeName|AvoidExcessiveLocals|
 |CheckId|CA1809|
 |分類|Microsoft.Performance|
-|中斷變更|非重大|
+|中斷變更|不中斷|
 
 ## <a name="cause"></a>原因
- 成員包含超過 64 個區域變數，其中有些可能是編譯器所產生。
+成員包含超過64個區域變數, 其中有些可能是由編譯器所產生。
 
 ## <a name="rule-description"></a>規則描述
- 常見的效能最佳化作法是將值儲存在處理器暫存器而不是在記憶體中，這指*註冊 (enregistering)* 值。 Common language runtime 會視為最多 64 個區域變數 enregistration。 不是機率的變數會放在堆疊上，並且必須移至操作之前暫存器。 若要允許機會所有區域變數都能註冊、 限制為 64 的本機變數數目。
+常見的效能優化是將值儲存在處理器暫存器中, 而不是在記憶體中, 這稱為*enregistering*值。 通用語言執行時間會考慮最多64個區域變數來進行 enregistration。 未 enregistered 的變數會放在堆疊上, 而且必須在操作之前移動到暫存器。 若要允許所有區域變數都 enregistered, 請將本機變數的數目限制為64。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
- 若要修正此規則的違規情形，將實作重構為使用最多 64 個區域變數。
+若要修正此規則的違規, 請重構該執行, 以使用不超過64的區域變數。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
- 則隱藏這項規則的警告，或停用規則，如果效能不成問題。
+如果效能不是問題, 可以放心地隱藏此規則的警告, 或停用規則。
 
-## <a name="related-rules"></a>相關的規則
- [CA1804： 必須移除未使用的區域變數](../code-quality/ca1804-remove-unused-locals.md)
+## <a name="related-rules"></a>相關規則
+[CA1804 必須移除未使用的區域變數](../code-quality/ca1804-remove-unused-locals.md)

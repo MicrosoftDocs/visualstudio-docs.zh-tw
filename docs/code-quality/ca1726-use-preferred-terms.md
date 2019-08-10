@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 469025e5856f284f4d8887b351865a0304e4d35c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e4e068fee014d767b7afcdf8183ac6611b299f36
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62797154"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68921579"
 ---
 # <a name="ca1726-use-preferred-terms"></a>CA1726:建議使用慣用詞彙
 
@@ -27,17 +27,17 @@ ms.locfileid: "62797154"
 |TypeName|UsePreferredTerms|
 |CheckId|CA1726|
 |分類|Microsoft.Naming|
-|中斷變更|中斷-時引發的組件<br /><br /> 非中斷-時引發的類型參數|
+|中斷變更|中斷-在元件上引發時<br /><br /> 不中斷-在類型參數上引發時|
 
 ## <a name="cause"></a>原因
 
-外部可見的識別項名稱包含有替代慣用詞彙存在的詞彙。 或者，如果名稱包含詞彙的旗標或旗標。
+外部可見的識別項名稱包含有替代慣用詞彙存在的詞彙。 或者, 名稱包含詞彙旗標或旗標。
 
 ## <a name="rule-description"></a>規則描述
 
-此規則會剖析為語彙基元識別項。 每個單一的語彙基元和每個連續的雙重語彙基元組合進行比較建置成規則和任何自訂字典的已被取代區段中的條款。 下表顯示內建規則，其慣用的替代方案的條款。
+此規則會將識別碼剖析為標記。 每個單一權杖和每個連續雙重 token 組合都會與規則內建的詞彙和任何自訂字典的已被取代區段進行比較。 下表顯示規則內建的詞彙及其慣用的替代專案。
 
-|過時的詞彙|慣用的詞彙|
+|過時的詞彙|慣用詞彙|
 |-------------------|--------------------|
 |`Arent`|`AreNot`|
 |`Cancelled`|`Canceled`|
@@ -65,10 +65,10 @@ ms.locfileid: "62797154"
 |`Writeable`|`Writable`|
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
- 若要修正此規則的違規情形，請以慣用的替代詞彙取代的詞彙。
+若要修正此規則的違規情形, 請以慣用的替代詞彙取代詞彙。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
- 只有識別項的名稱是刻意設計的而且特別是與原始詞彙，而不是慣用的詞彙，請隱藏這個規則的警告。
+只有當識別碼的名稱是刻意的, 而且特別與原始詞彙 (而不是慣用的字詞) 相關聯時, 才會隱藏此規則的警告。
 
-## <a name="related-rules"></a>相關的規則
- [命名警告](../code-quality/naming-warnings.md)
+## <a name="related-rules"></a>相關規則
+[命名警告](../code-quality/naming-warnings.md)

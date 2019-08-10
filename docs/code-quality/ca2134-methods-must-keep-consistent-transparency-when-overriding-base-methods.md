@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 67114c20a7fcf5e8ff01773d8777b23d3caf3d91
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8ca28f364307d4a2b73235bc6541cb8aa01abd56
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62542320"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68920651"
 ---
 # <a name="ca2134-methods-must-keep-consistent-transparency-when-overriding-base-methods"></a>CA2134:覆寫基底方法時，方法必須保持一致的透明度
 
@@ -27,25 +27,25 @@ ms.locfileid: "62542320"
 |中斷變更|中斷|
 
 ## <a name="cause"></a>原因
- 以標記方法時，就會引發此規則<xref:System.Security.SecurityCriticalAttribute>覆寫的方法為透明或使用<xref:System.Security.SecuritySafeCriticalAttribute>。 當透明或使用的方法時，也會引發此規則<xref:System.Security.SecuritySafeCriticalAttribute>覆寫的方法標記著<xref:System.Security.SecurityCriticalAttribute>。
+當以標記的<xref:System.Security.SecurityCriticalAttribute>方法覆寫透明或<xref:System.Security.SecuritySafeCriticalAttribute>以標記的方法時, 就會引發此規則。 當透明或以標記的<xref:System.Security.SecuritySafeCriticalAttribute>方法覆寫以標記<xref:System.Security.SecurityCriticalAttribute>的方法時, 也會引發此規則。
 
- 覆寫虛擬方法或實作介面時會套用此規則。
+覆寫虛擬方法或實作介面時會套用此規則。
 
 ## <a name="rule-description"></a>規則描述
- 若要變更的方法進一步繼承鏈結上的安全性存取嘗試都會引發此規則。 比方說，如果透明或安全關鍵性的基底類別中的虛擬方法，然後在衍生的類別必須覆寫它使用透明或安全關鍵性的方法。 相反地，如果虛擬是安全性關鍵，衍生的類別必須覆寫它使用安全性關鍵方法。 實作介面方法適用於相同的規則。
+嘗試在繼承鏈上進一步變更方法的安全性存取範圍時, 就會引發此規則。 例如, 如果基類中的虛擬方法是透明或安全關鍵, 則衍生的類別必須以透明或安全關鍵的方法覆寫它。 相反地, 如果虛擬的安全性關鍵, 衍生的類別就必須使用安全性關鍵方法來覆寫它。 相同的規則適用于執行介面方法。
 
- 程式碼是 JIT 編譯而不是在執行階段，讓透明度計算沒有動態型別資訊時，會強制執行透明度規則。 因此，透明度計算的結果必須能夠判斷完全從進行 JIT 編譯，不論動態類型的靜態類型。
+當程式碼是以 JIT 編譯而不是在執行時間時, 會強制執行透明度規則, 而透明度計算則不會有動態類型資訊。 因此, 透明度計算的結果必須只能從進行 JIT 編譯的靜態類型來判斷, 而不論動態類型為何。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
- 若要修正此規則的違規情形，變更方法覆寫虛擬方法或實作介面，以比對透明度的虛擬或介面方法的透明度。
+若要修正此規則的違規, 請變更覆寫虛擬方法或執行介面的方法透明度, 以符合虛擬或介面方法的透明度。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
- 請勿隱藏這項規則的警告。 違反此規則會導致執行階段<xref:System.TypeLoadException>使用層級 2 透明度的組件。
+請勿隱藏此規則的警告。 違反此規則會導致使用層級 2 <xref:System.TypeLoadException>透明度之元件的執行時間。
 
 ## <a name="examples"></a>範例
 
 ### <a name="code"></a>程式碼
- [!code-csharp[FxCop.Security.CA2134.MethodsMustOverrideWithConsistentTransparency#1](../code-quality/codesnippet/CSharp/ca2134-methods-must-keep-consistent-transparency-when-overriding-base-methods_1.cs)]
+[!code-csharp[FxCop.Security.CA2134.MethodsMustOverrideWithConsistentTransparency#1](../code-quality/codesnippet/CSharp/ca2134-methods-must-keep-consistent-transparency-when-overriding-base-methods_1.cs)]
 
 ## <a name="see-also"></a>另請參閱
- [安全性透明程式碼，層級 2](/dotnet/framework/misc/security-transparent-code-level-2)
+[安全性透明的程式碼, 層級2](/dotnet/framework/misc/security-transparent-code-level-2)

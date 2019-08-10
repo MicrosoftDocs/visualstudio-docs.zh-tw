@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 2cd6e3228d67b8dd04cda15549f6b1d172d02916
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 03add1625c4d59bb180f9f0f08692e67bee8047b
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62546156"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68922070"
 ---
 # <a name="ca1404-call-getlasterror-immediately-after-pinvoke"></a>CA1404:必須在 P/Invoke 之後立即呼叫 GetLastError
 
@@ -31,16 +31,16 @@ ms.locfileid: "62546156"
 |TypeName|CallGetLastErrorImmediatelyAfterPInvoke|
 |CheckId|CA1404|
 |分類|Microsoft.Interoperability|
-|中斷變更|非重大|
+|中斷變更|不中斷|
 
 ## <a name="cause"></a>原因
 
-進行呼叫，以<xref:System.Runtime.InteropServices.Marshal.GetLastWin32Error%2A?displayProperty=fullName>方法或對等的 Win32`GetLastError`函式，並且出現前立即呼叫不到平台叫用方法。
+對<xref:System.Runtime.InteropServices.Marshal.GetLastWin32Error%2A?displayProperty=fullName>方法或對等的 Win32 `GetLastError`函式進行呼叫, 而緊接在前面的呼叫不是平台叫用方法。
 
 ## <a name="rule-description"></a>規則描述
- 平台叫用方法存取 unmanaged 程式碼，並使用定義`Declare`中的關鍵字[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]或<xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName>屬性。 通常，發生錯誤時，unmanaged 函式會呼叫 Win32`SetLastError`函式來設定失敗相關聯的錯誤碼。 呼叫端的失敗函式會呼叫 Win32`GetLastError`函式來擷取錯誤碼，並判斷失敗的原因。 會維護每個執行緒為基礎的錯誤碼，以及下一個呼叫會覆寫`SetLastError`。 Managed 程式碼的呼叫失敗的平台叫用方法之後，可以呼叫來擷取錯誤碼<xref:System.Runtime.InteropServices.Marshal.GetLastWin32Error%2A>方法。 因為內部呼叫其他 managed 的類別程式庫方法，將會覆寫的錯誤碼`GetLastError`或<xref:System.Runtime.InteropServices.Marshal.GetLastWin32Error%2A>方法應該在平台叫用方法呼叫之後立即呼叫。
+平台叫用方法會存取未受管理的程式碼, 並`Declare`使用中[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]的關鍵字<xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName>或屬性來定義。 一般來說, 在失敗時, 非受控函式`SetLastError`會呼叫 Win32 函數來設定與失敗相關聯的錯誤碼。 Failed 函式的呼叫端會呼叫 Win32 `GetLastError`函式來抓取錯誤碼, 並判斷失敗的原因。 錯誤碼是以每個執行緒為基礎進行維護, 並會在下一次呼叫`SetLastError`時覆寫。 呼叫失敗的平台叫用方法之後, managed 程式碼就可以藉由呼叫<xref:System.Runtime.InteropServices.Marshal.GetLastWin32Error%2A>方法來捕獲錯誤碼。 由於錯誤碼可以由其他 managed 類別庫方法的內部呼叫覆寫, `GetLastError`因此應該在平台叫用方法呼叫之後立即呼叫或<xref:System.Runtime.InteropServices.Marshal.GetLastWin32Error%2A>方法。
 
- 此規則會忽略下列呼叫受管理的成員，在平台的呼叫之間發生時叫用方法，並呼叫<xref:System.Runtime.InteropServices.Marshal.GetLastWin32Error%2A>。 這些成員不會變更錯誤程式碼，而且有助於決定成功的某些平台叫用方法呼叫。
+當呼叫平台叫用方法與呼叫<xref:System.Runtime.InteropServices.Marshal.GetLastWin32Error%2A>時, 此規則會忽略下列 managed 成員的呼叫。 這些成員不會變更錯誤碼, 而且適用于判斷某些平台叫用方法呼叫是否成功。
 
 - <xref:System.IntPtr.Zero?displayProperty=fullName>
 
@@ -51,24 +51,24 @@ ms.locfileid: "62546156"
 - <xref:System.Runtime.InteropServices.SafeHandle.IsInvalid%2A?displayProperty=fullName>
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
- 若要修正此規則的違規情形，呼叫移到<xref:System.Runtime.InteropServices.Marshal.GetLastWin32Error%2A>，讓它緊接在後面的呼叫平台叫用方法。
+若要修正此規則的違規, 請將呼叫移<xref:System.Runtime.InteropServices.Marshal.GetLastWin32Error%2A>至, 使其緊接在呼叫平台叫用方法之後。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
- 它可安全地隱藏此規則的警告，如果平台之間的程式碼叫用方法呼叫和<xref:System.Runtime.InteropServices.Marshal.GetLastWin32Error%2A>方法呼叫不明確或隱含的方式會導致錯誤程式碼變更。
+如果平台叫用方法呼叫和<xref:System.Runtime.InteropServices.Marshal.GetLastWin32Error%2A>方法呼叫之間的程式碼無法明確或隱含地導致錯誤碼變更, 就可以放心地隱藏此規則的警告。
 
 ## <a name="example"></a>範例
- 下列範例顯示違反規則方法，並符合規則的方法。
+下列範例顯示違反規則的方法, 以及符合規則的方法。
 
- [!code-vb[FxCop.Interoperability.LastErrorPInvoke#1](../code-quality/codesnippet/VisualBasic/ca1404-call-getlasterror-immediately-after-p-invoke_1.vb)]
- [!code-csharp[FxCop.Interoperability.LastErrorPInvoke#1](../code-quality/codesnippet/CSharp/ca1404-call-getlasterror-immediately-after-p-invoke_1.cs)]
+[!code-vb[FxCop.Interoperability.LastErrorPInvoke#1](../code-quality/codesnippet/VisualBasic/ca1404-call-getlasterror-immediately-after-p-invoke_1.vb)]
+[!code-csharp[FxCop.Interoperability.LastErrorPInvoke#1](../code-quality/codesnippet/CSharp/ca1404-call-getlasterror-immediately-after-p-invoke_1.cs)]
 
-## <a name="related-rules"></a>相關的規則
- [CA1060:將 P/Invokes 移到 NativeMethods 類別](../code-quality/ca1060-move-p-invokes-to-nativemethods-class.md)
+## <a name="related-rules"></a>相關規則
+[CA1060將 P/Invoke 移至 NativeMethods 類別](../code-quality/ca1060-move-p-invokes-to-nativemethods-class.md)
 
- [CA1400:P/Invoke 進入點應該要存在](../code-quality/ca1400-p-invoke-entry-points-should-exist.md)
+[CA1400P/Invoke 進入點應該存在](../code-quality/ca1400-p-invoke-entry-points-should-exist.md)
 
- [CA1401:P/Invokes 不應該為可見](../code-quality/ca1401-p-invokes-should-not-be-visible.md)
+[CA1401P/Invoke 不應為可見](../code-quality/ca1401-p-invokes-should-not-be-visible.md)
 
- [CA2101： 必須指定的 P/Invoke 字串引數封送處理](../code-quality/ca2101-specify-marshaling-for-p-invoke-string-arguments.md)
+[CA2101 必須指定 P/Invoke 字串引數的封送處理](../code-quality/ca2101-specify-marshaling-for-p-invoke-string-arguments.md)
 
- [CA2205： 必須使用 Win32 API 的 managed 對等項目](../code-quality/ca2205-use-managed-equivalents-of-win32-api.md)
+[CA2205 必須使用 WIN32 API 的受控對等專案](../code-quality/ca2205-use-managed-equivalents-of-win32-api.md)

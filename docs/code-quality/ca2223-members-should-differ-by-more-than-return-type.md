@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3e4e7aa59d273242bd8b97fd4f2777b7edcb5990
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: de64e0271370a3cdcc6f0963dbf06925621b9b65
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62806663"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68920193"
 ---
 # <a name="ca2223-members-should-differ-by-more-than-return-type"></a>CA2223:成員不應該只有在傳回類型上不同
 
@@ -31,19 +31,19 @@ ms.locfileid: "62806663"
 |中斷變更|中斷|
 
 ## <a name="cause"></a>原因
- 兩個公用或受保護的成員具有除了傳回型別之外完全相同的簽章。
+兩個公用或受保護成員具有相同的簽章, 但傳回類型除外。
 
 ## <a name="rule-description"></a>規則描述
- 雖然通用語言執行平台允許使用傳回的型別區分其他完全相同的成員，這項功能不在 Common Language Specification，也不是.NET 程式設計語言的常見功能。 當成員只有不同傳回型別時，開發人員和開發工具可能不正確區別。
+雖然通用語言執行平臺允許使用傳回型別來區分另一個相同的成員, 但這項功能並不在 Common Language Specification 中, 也不是 .NET 程式設計語言的常見功能。 當成員只有傳回類型不同時, 開發人員和開發工具可能不會正確地區別它們。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
- 若要修正此規則的違規情形，請變更成員的設計，讓它們都是唯一只根據其名稱與參數類型，或不公開的成員。
+若要修正此規則的違規, 請變更成員的設計, 使其僅根據其名稱和參數類型來唯一, 或不要公開成員。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
- 請勿隱藏此規則的警告。
+請勿隱藏此規則的警告。
 
 ## <a name="example"></a>範例
- 下列範例中，在 Microsoft intermediate language (MSIL)，顯示違反此規則的型別。 請注意，不能使用 C# 或 Visual Basic 違反此規則。
+下列範例 (在 Microsoft 中繼語言 (MSIL) 中) 顯示違反此規則的類型。 請注意, 使用C#或 Visual Basic 無法違反這項規則。
 
 ```
 .namespace UsageLibrary

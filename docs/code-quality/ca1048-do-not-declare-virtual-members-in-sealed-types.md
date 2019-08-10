@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 84db1db9061eff1373ee3ad4f0316a1f3dba0474
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 430ed0b23d62bd46a9764bfb0a3834e0decd476b
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62778706"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68922599"
 ---
 # <a name="ca1048-do-not-declare-virtual-members-in-sealed-types"></a>CA1048:不要在密封類型中宣告 virtual 成員
 
@@ -31,20 +31,20 @@ ms.locfileid: "62778706"
 |中斷變更|中斷|
 
 ## <a name="cause"></a>原因
- 公用型別密封格式，並宣告的方法，同時`virtual`(`Overridable` Visual Basic 中) 不是最後一個。 此規則不會報告違規的委派類型，必須遵循這個模式。
+公用類型是密封的, 而且會宣告同時`virtual`為 (`Overridable`在 Visual Basic 中) 且不是最終的方法。 此規則不會針對委派類型報告違規, 這必須遵循此模式。
 
 ## <a name="rule-description"></a>規則描述
- 類型會將方法宣告為 virtual，讓繼承類型可以覆寫 virtual 方法的實作。 根據定義，您無法繼承自密封型別，讓密封類型上的虛擬方法沒有任何意義。
+類型會將方法宣告為 virtual，讓繼承類型可以覆寫 virtual 方法的實作。 根據定義, 您無法繼承自密封型別, 而使密封型別上的虛擬方法毫無意義。
 
- Visual Basic 和 C# 編譯器不允許違反此規則的類型。
+Visual Basic 和C#編譯器不允許類型違反此規則。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
- 若要修正此規則的違規情形，請將方法設為非虛擬，或讓類型成為可繼承。
+若要修正此規則的違規, 請將方法設為非虛擬, 或讓類型成為可繼承。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
- 請勿隱藏此規則的警告。 類型在目前的狀態可能會造成維護問題並不提供任何好處。
+請勿隱藏此規則的警告。 讓類型處於目前狀態可能會造成維護問題, 而且不會提供任何好處。
 
 ## <a name="example"></a>範例
- 下列範例顯示違反此規則的型別。
+下列範例顯示違反此規則的類型。
 
- [!code-cpp[FxCop.Design.SealedVirtual#1](../code-quality/codesnippet/CPP/ca1048-do-not-declare-virtual-members-in-sealed-types_1.cpp)]
+[!code-cpp[FxCop.Design.SealedVirtual#1](../code-quality/codesnippet/CPP/ca1048-do-not-declare-virtual-members-in-sealed-types_1.cpp)]

@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 01a8a5609394f0dd428066e32fb425a2abb486c4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a70e999505bd900a7b3d89693ef4f6a1cef9de7d
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62542049"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68920416"
 ---
 # <a name="ca2146-types-must-be-at-least-as-critical-as-their-base-types-and-interfaces"></a>CA2146:類型至少必須和基底類型與介面一樣關鍵
 
@@ -27,16 +27,16 @@ ms.locfileid: "62542049"
 |中斷變更|中斷|
 
 ## <a name="cause"></a>原因
- 透明的類型衍生自標記為類型<xref:System.Security.SecuritySafeCriticalAttribute>或<xref:System.Security.SecurityCriticalAttribute>，或標示為類型<xref:System.Security.SecuritySafeCriticalAttribute>屬性衍生自類型標記為<xref:System.Security.SecurityCriticalAttribute>屬性。
+透明型<xref:System.Security.SecuritySafeCriticalAttribute>別衍生自以<xref:System.Security.SecurityCriticalAttribute>或標記的類型, 或以<xref:System.Security.SecuritySafeCriticalAttribute>屬性標記的類型衍生<xref:System.Security.SecurityCriticalAttribute>自以屬性標記的類型時。
 
 ## <a name="rule-description"></a>規則描述
- 當衍生類型有安全性透明屬性，且該屬性的重要性不如基底類型或已實作之介面時，就會引發這個規則。 只有關鍵類型可以衍生自關鍵基底類型或實作關鍵介面，而且只有關鍵或安全關鍵類型可以衍生自安全關鍵基底類型或實作安全關鍵介面。 此層級 2 透明度規則的違規會導致<xref:System.TypeLoadException>衍生的類型。
+當衍生類型有安全性透明屬性，且該屬性的重要性不如基底類型或已實作之介面時，就會引發這個規則。 只有關鍵類型可以衍生自關鍵基底類型或實作關鍵介面，而且只有關鍵或安全關鍵類型可以衍生自安全關鍵基底類型或實作安全關鍵介面。 在層級2透明度中違反這項規則會<xref:System.TypeLoadException>導致衍生類型的。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
- 若要修正此違規，標示為至少和基底類型或介面一樣關鍵的透明度屬性的衍生或實作類型。
+若要修正這個違規, 請使用與基底類型或介面至少一樣重要的透明度屬性來標記衍生或實類型。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
- 請勿隱藏此規則的警告。
+請勿隱藏此規則的警告。
 
 ## <a name="example"></a>範例
- [!code-csharp[FxCop.Security.CA2146.TypesMustBeAtLeastAsCriticalAsBaseTypes#1](../code-quality/codesnippet/CSharp/ca2146-types-must-be-at-least-as-critical-as-their-base-types-and-interfaces_1.cs)]
+[!code-csharp[FxCop.Security.CA2146.TypesMustBeAtLeastAsCriticalAsBaseTypes#1](../code-quality/codesnippet/CSharp/ca2146-types-must-be-at-least-as-critical-as-their-base-types-and-interfaces_1.cs)]

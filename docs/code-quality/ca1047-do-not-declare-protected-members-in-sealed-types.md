@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: c138c05d755b05275755f96776764604997cbbcd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5ab7cf2c5a4f17966ed5b4da30657e05a4683738
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62778781"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68922640"
 ---
 # <a name="ca1047-do-not-declare-protected-members-in-sealed-types"></a>CA1047:不要在密封類型中宣告 protected 成員
 
@@ -31,24 +31,24 @@ ms.locfileid: "62778781"
 |TypeName|DoNotDeclareProtectedMembersInSealedTypes|
 |CheckId|CA1047|
 |分類|Microsoft.Design|
-|中斷變更|非重大|
+|中斷變更|不中斷|
 
 ## <a name="cause"></a>原因
- 公用類型是`sealed`(`NotInheritable` Visual basic 中)，並宣告受保護的成員或受保護的巢狀型別。 此規則不會報告的違規<xref:System.Object.Finalize%2A>必須遵循這個模式的方法。
+公用類型為 ( `sealed` `NotInheritable`在 Visual basic 中為), 並宣告受保護的成員或受保護的巢狀型別。 此規則不會針對<xref:System.Object.Finalize%2A>必須遵循此模式的方法報告違規。
 
 ## <a name="rule-description"></a>規則描述
- 類型會宣告 protected 成員，如此繼承的類型即可存取或覆寫成員。 根據定義，您無法繼承自密封型別，也就是說，受保護的方法，密封類型上的無法呼叫。
+類型會宣告 protected 成員，如此繼承的類型即可存取或覆寫成員。 根據定義, 您無法從密封類型繼承, 這表示不能呼叫密封類型上的受保護方法。
 
- C# 編譯器會發出這項錯誤的警告。
+C#編譯器會發出此錯誤的警告。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
- 若要修正此規則的違規情形，變更成員的存取層級設為私用，或讓類型成為可繼承。
+若要修正此規則的違規, 請將成員的存取層級變更為 [私用], 或將類型設為 [可繼承]。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
- 請勿隱藏此規則的警告。 類型在目前的狀態可能會造成維護問題並不提供任何好處。
+請勿隱藏此規則的警告。 讓類型處於目前狀態可能會造成維護問題, 而且不會提供任何好處。
 
 ## <a name="example"></a>範例
- 下列範例顯示違反此規則的型別。
+下列範例顯示違反此規則的類型。
 
- [!code-vb[FxCop.Design.SealedNoProtected#1](../code-quality/codesnippet/VisualBasic/ca1047-do-not-declare-protected-members-in-sealed-types_1.vb)]
- [!code-csharp[FxCop.Design.SealedNoProtected#1](../code-quality/codesnippet/CSharp/ca1047-do-not-declare-protected-members-in-sealed-types_1.cs)]
+[!code-vb[FxCop.Design.SealedNoProtected#1](../code-quality/codesnippet/VisualBasic/ca1047-do-not-declare-protected-members-in-sealed-types_1.vb)]
+[!code-csharp[FxCop.Design.SealedNoProtected#1](../code-quality/codesnippet/CSharp/ca1047-do-not-declare-protected-members-in-sealed-types_1.cs)]

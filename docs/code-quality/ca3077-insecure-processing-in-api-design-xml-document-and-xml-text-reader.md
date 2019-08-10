@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dd3b17ad3449bebcab57344355f7cc7687ea6b19
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ca39cef1fb4f1bf1114673dd96a91a1ac8e105cc
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62541073"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68919882"
 ---
 # <a name="ca3077-insecure-processing-in-api-design-xml-document-and-xml-text-reader"></a>CA3077:API 設計、XML 文件和 XML 文字讀取器中的不安全處理
 
@@ -25,23 +25,23 @@ ms.locfileid: "62541073"
 |中斷變更|非中斷|
 
 ## <a name="cause"></a>原因
- 針對衍生自 XMLDocument 和 XMLTextReader 的 API 進行設計時，請留意 <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A>。  若在參考或解析外部實體來源時使用不安全的 DTDProcessing 執行個體，或在 XML 中設定不安全的值，都可能會導致資訊洩漏。
+針對衍生自 XMLDocument 和 XMLTextReader 的 API 進行設計時，請留意 <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A>。  若在參考或解析外部實體來源時使用不安全的 DTDProcessing 執行個體，或在 XML 中設定不安全的值，都可能會導致資訊洩漏。
 
 ## <a name="rule-description"></a>規則描述
- *文件類型定義 (DTD)* 是  [World Wide Web Consortium (W3C) Extensible Markup Language (XML) 1.0](http://www.w3.org/TR/2008/REC-xml-20081126/)中針對 XML 剖析器用來判斷文件有效性所定義之兩種方式的其中一種。 此規則會搜尋已接受不受信任之資料的屬性和執行個體，藉此警告開發人員潛在的 [Information Disclosure](/dotnet/framework/wcf/feature-details/information-disclosure) 威脅，這些威脅可能會導致 [Denial of Service (DoS)](/dotnet/framework/wcf/feature-details/denial-of-service) 攻擊。 下列情況會觸發此規則：
+*文件類型定義 (DTD)* 是  [World Wide Web Consortium (W3C) Extensible Markup Language (XML) 1.0](http://www.w3.org/TR/2008/REC-xml-20081126/)中針對 XML 剖析器用來判斷文件有效性所定義之兩種方式的其中一種。 此規則會搜尋已接受不受信任之資料的屬性和執行個體，藉此警告開發人員潛在的 [Information Disclosure](/dotnet/framework/wcf/feature-details/information-disclosure) 威脅，這些威脅可能會導致 [Denial of Service (DoS)](/dotnet/framework/wcf/feature-details/denial-of-service) 攻擊。 下列情況會觸發此規則：
 
-- <xref:System.Xml.XmlDocument> 或<xref:System.Xml.XmlTextReader>類別針對 DTD 處理會使用預設解析程式的值。
+- <xref:System.Xml.XmlDocument>或<xref:System.Xml.XmlTextReader>類別針對 DTD 處理使用預設解析程式值。
 
 - 未針對 XmlDocument 或 XmlTextReader 衍生的類別定義任何建構函式，或在 <xref:System.Xml.XmlResolver>中使用不安全的值。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
 
-- 可以攔截並處理所有 XmlTextReader 例外狀況，正確地以避免路徑資訊外洩。
+- 適當地攔截並處理所有的 XmlTextReader 例外狀況, 以避免路徑資訊洩漏。
 
-- 使用<xref:System.Xml.XmlSecureResolver>而不是 XmlResolver，以限制 XmlTextReader 可以存取的資源。
+- 使用<xref:System.Xml.XmlSecureResolver>而不是 XmlResolver 來限制 XmlTextReader 可以存取的資源。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
- 如果您無法確定輸入是否來自受信任的來源，請不要隱藏這個警告的規則。
+如果您無法確定輸入是否來自受信任的來源，請不要隱藏這個警告的規則。
 
 ## <a name="pseudo-code-examples"></a>虛擬程式碼範例
 

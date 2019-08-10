@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 41ab039d33155769eac13469a65f2a35c8ed7324
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 415b8c95dda3fca084fcb103dfa5e4f39e1a73da
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62778602"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68922534"
 ---
 # <a name="ca1049-types-that-own-native-resources-should-be-disposable"></a>CA1049:具有原生資源的類型應該要可呼叫 Dispose 方法明確釋放資源
 
@@ -31,38 +31,38 @@ ms.locfileid: "62778602"
 |TypeName|TypesThatOwnNativeResourcesShouldBeDisposable|
 |CheckId|CA1049|
 |分類|Microsoft.Design|
-|中斷變更|非重大|
+|中斷變更|不中斷|
 
 ## <a name="cause"></a>原因
 
-參考型別<xref:System.IntPtr?displayProperty=fullName> 欄位中， <xref:System.UIntPtr?displayProperty=fullName>  欄位中，或有<xref:System.Runtime.InteropServices.HandleRef?displayProperty=fullName>欄位中，但未實作<xref:System.IDisposable?displayProperty=fullName>。
+型別會參考<xref:System.IntPtr?displayProperty=fullName>欄位<xref:System.UIntPtr?displayProperty=fullName> 、欄位或<xref:System.Runtime.InteropServices.HandleRef?displayProperty=fullName>欄位, 但不會執行<xref:System.IDisposable?displayProperty=fullName>。
 
 ## <a name="rule-description"></a>規則描述
 
-這項規則假設<xref:System.IntPtr>， <xref:System.UIntPtr>，和<xref:System.Runtime.InteropServices.HandleRef>欄位儲存 unmanaged 資源的指標。 配置 unmanaged 的資源的類型應實作<xref:System.IDisposable>，讓呼叫者以釋出那些資源需求，並縮短持有資源物件的存留期。
+此規則假設<xref:System.IntPtr>、 <xref:System.UIntPtr>和<xref:System.Runtime.InteropServices.HandleRef>欄位儲存非受控資源的指標。 配置非受控資源的類型應該<xref:System.IDisposable>執行, 讓呼叫端視需要釋放這些資源, 並縮短保存資源之物件的存留期。
 
-清除 unmanaged 資源的建議的設計模式是提供隱含和明確的方法來釋放這些資源，使用<xref:System.Object.Finalize%2A?displayProperty=fullName>方法和<xref:System.IDisposable.Dispose%2A?displayProperty=fullName>方法，分別。 記憶體回收行程呼叫<xref:System.Object.Finalize%2A>之後物件判斷為不會再連線到某個不定時間點物件的方法。 之後<xref:System.Object.Finalize%2A>呼叫時，額外記憶體回收，才能釋放物件。 <xref:System.IDisposable.Dispose%2A>方法可讓呼叫端明確釋放依需求，會釋放資源，如果記憶體回收行程保留先前的資源。 它會清除的 unmanaged 資源之後,<xref:System.IDisposable.Dispose%2A>應該呼叫<xref:System.GC.SuppressFinalize%2A?displayProperty=fullName>方法，讓記憶體回收行程知道<xref:System.Object.Finalize%2A>再也不需要呼叫; 這就不需要額外的回收，並縮短物件存留期。
+清除非受控資源的建議設計模式是提供隱含和明確的方法, 分別使用<xref:System.Object.Finalize%2A?displayProperty=fullName>方法<xref:System.IDisposable.Dispose%2A?displayProperty=fullName>和方法來釋放這些資源。 當物件判斷為無法<xref:System.Object.Finalize%2A>再連線之後, 垃圾收集行程會在某些不定的時間呼叫物件的方法。 呼叫<xref:System.Object.Finalize%2A>之後, 需要額外的垃圾收集才能釋放物件。 <xref:System.IDisposable.Dispose%2A>方法可讓呼叫端視需要明確釋放資源, 早于資源會在離開垃圾收集行程時釋放。 在清除非受控資源之後, <xref:System.IDisposable.Dispose%2A>應該<xref:System.GC.SuppressFinalize%2A?displayProperty=fullName>呼叫方法, 讓垃圾收集行程知道<xref:System.Object.Finalize%2A>不再需要呼叫它, 這可免除額外垃圾收集的需求, 並縮短物件的存留期。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
- 若要修正此規則的違規情形，實作<xref:System.IDisposable>。
+若要修正此規則的違規, 請<xref:System.IDisposable>執行。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
- 它可安全地隱藏此規則的警告，如果類型未參考 unmanaged 的資源。 否則，請勿隱藏此規則的警告因為實作<xref:System.IDisposable>可能會導致變成無法使用或未充分使用的 unmanaged 的資源。
+如果類型未參考非受控資源, 則可以安全地隱藏此規則的警告。 否則, 請勿隱藏此規則的警告, 因為無法執行<xref:System.IDisposable> , 可能會導致非受控資源變得無法使用或未充分利用。
 
 ## <a name="example"></a>範例
- 下列範例示範實作的類型<xref:System.IDisposable>清除 unmanaged 資源。
+下列範例顯示的類型, 會<xref:System.IDisposable>執行以清除非受控資源。
 
- [!code-csharp[FxCop.Design.UnmanagedResources#1](../code-quality/codesnippet/CSharp/ca1049-types-that-own-native-resources-should-be-disposable_1.cs)]
- [!code-vb[FxCop.Design.UnmanagedResources#1](../code-quality/codesnippet/VisualBasic/ca1049-types-that-own-native-resources-should-be-disposable_1.vb)]
+[!code-csharp[FxCop.Design.UnmanagedResources#1](../code-quality/codesnippet/CSharp/ca1049-types-that-own-native-resources-should-be-disposable_1.cs)]
+[!code-vb[FxCop.Design.UnmanagedResources#1](../code-quality/codesnippet/VisualBasic/ca1049-types-that-own-native-resources-should-be-disposable_1.vb)]
 
-## <a name="related-rules"></a>相關的規則
- [CA2115:呼叫 GC。KeepAlive 時使用原生資源](../code-quality/ca2115-call-gc-keepalive-when-using-native-resources.md)
+## <a name="related-rules"></a>相關規則
+[CA2115呼叫 GC。使用原生資源時的 KeepAlive](../code-quality/ca2115-call-gc-keepalive-when-using-native-resources.md)
 
- [CA1816:呼叫 GC。SuppressFinalize 正確](../code-quality/ca1816-call-gc-suppressfinalize-correctly.md)
+[CA1816呼叫 GC。Gc.suppressfinalize 正確](../code-quality/ca1816-call-gc-suppressfinalize-correctly.md)
 
- [CA2216:可處置類型應該宣告完成項](../code-quality/ca2216-disposable-types-should-declare-finalizer.md)
+[CA2216可處置的類型應該宣告完成項](../code-quality/ca2216-disposable-types-should-declare-finalizer.md)
 
- [CA1001：具有可處置欄位的類型應該為可處置](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md)
+[CA1001：具有可處置欄位的類型應該為可處置](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md)
 
 ## <a name="see-also"></a>另請參閱
 

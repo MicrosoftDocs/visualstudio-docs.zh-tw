@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f9304fcd86a9b36a729b1436fe16471b449ac0d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d765bfda87fe184256304b86f145f4f02adb7db6
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62778719"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68922634"
 ---
 # <a name="ca1046-do-not-overload-operator-equals-on-reference-types"></a>CA1046:不要多載參考類型上的等號比較運算子
 
@@ -31,25 +31,25 @@ ms.locfileid: "62778719"
 |中斷變更|中斷|
 
 ## <a name="cause"></a>原因
- 公用或巢狀公用參考型別多載等號比較運算子。
+公用或嵌套的公用參考型別會多載等號比較運算子。
 
 ## <a name="rule-description"></a>規則描述
- 對參考類型而言，等號比較運算子的預設實作 (Implementation) 永遠都是正確的。 根據預設，只有當兩項參考都指向相同物件時才會相等。
+對參考類型而言，等號比較運算子的預設實作 (Implementation) 永遠都是正確的。 根據預設，只有當兩項參考都指向相同物件時才會相等。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
- 若要修正此規則的違規情形，移除位在相等運算子的實作。
+若要修正此規則的違規, 請移除等號比較運算子的執行。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
- 它是安全地隱藏此規則的警告，當參考類型的行為類似內建實值型別。 如果是類型的進行加法或減法運算執行個體上的有意義的則可能是類型的正確實作等號比較運算子，並隱藏此違規情形。
+當參考型別的行為類似內建實數值型別時, 可以安全地隱藏此規則的警告。 如果對類型的實例執行加法或減法有意義, 可能會正確地執行等號比較運算子並抑制違規。
 
 ## <a name="example"></a>範例
- 比較兩個參考時，下列範例會示範預設行為。
+下列範例示範比較兩個參考時的預設行為。
 
- [!code-csharp[FxCop.Design.RefTypesNoEqualityOp#1](../code-quality/codesnippet/CSharp/ca1046-do-not-overload-operator-equals-on-reference-types_1.cs)]
+[!code-csharp[FxCop.Design.RefTypesNoEqualityOp#1](../code-quality/codesnippet/CSharp/ca1046-do-not-overload-operator-equals-on-reference-types_1.cs)]
 
 ## <a name="example"></a>範例
 
-下列應用程式會比較某些參考。
+下列應用程式會比較一些參考。
 
 [!code-csharp[FxCop.Design.TestRefTypesNoEqualityOp#1](../code-quality/codesnippet/CSharp/ca1046-do-not-overload-operator-equals-on-reference-types_2.cs)]
 
@@ -62,9 +62,9 @@ b and a are == ? No
 c and a are == ? Yes
 ```
 
-## <a name="related-rules"></a>相關的規則
+## <a name="related-rules"></a>相關規則
 
-[CA1013:多載運算子等於多載加號和減號](../code-quality/ca1013-overload-operator-equals-on-overloading-add-and-subtract.md)
+[CA1013多載運算子等於 on 多載加和減](../code-quality/ca1013-overload-operator-equals-on-overloading-add-and-subtract.md)
 
 ## <a name="see-also"></a>另請參閱
 

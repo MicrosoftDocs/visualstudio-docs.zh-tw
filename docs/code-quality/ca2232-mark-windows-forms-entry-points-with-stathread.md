@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 1bea8ee43c90c0e6559846bad00b61ec434ec46f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: dd3f5b76015a3a54ee085b5cc2dd532920ff0795
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62541805"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68920181"
 ---
 # <a name="ca2232-mark-windows-forms-entry-points-with-stathread"></a>CA2232:Windows Forms 進入點必須標記 STAThread
 
@@ -34,22 +34,22 @@ ms.locfileid: "62541805"
 |中斷變更|非中斷|
 
 ## <a name="cause"></a>原因
- 組件參考<xref:System.Windows.Forms>命名空間，而它的進入點未標示為<xref:System.STAThreadAttribute?displayProperty=fullName>屬性。
+元件會參考<xref:System.Windows.Forms>命名空間, 而且其進入點不會<xref:System.STAThreadAttribute?displayProperty=fullName>以屬性標記。
 
 ## <a name="rule-description"></a>規則描述
- <xref:System.STAThreadAttribute> 表示的 COM 執行緒模型應用程式是單一執行緒 apartment。 在使用 Windows Form 的任何應用程式之進入點上必須有此屬性。如果省略的話，Windows 元件就無法正常運作。 如果屬性不存在，則應用程式會使用多執行緒的 apartment 模型不支援 Windows Form。
+ <xref:System.STAThreadAttribute>表示應用程式的 COM 執行緒模型是單一執行緒的單元。 在使用 Windows Form 的任何應用程式之進入點上必須有此屬性。如果省略的話，Windows 元件就無法正常運作。 如果屬性不存在, 應用程式會使用多執行緒的單元模型, 這不支援 Windows Forms。
 
 > [!NOTE]
-> [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 使用應用程式架構的專案不會將標示**Main** stathread 的方法。 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]編譯器自動執行。
+> [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]使用應用程式架構的專案不需要以 STAThread 標記**Main**方法。 編譯器[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]會自動執行此工作。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
- 若要修正此規則的違規情形，加入<xref:System.STAThreadAttribute>屬性至進入點。 如果<xref:System.MTAThreadAttribute?displayProperty=fullName>屬性存在，則將它移除。
+若要修正此規則的違規情形, 請<xref:System.STAThreadAttribute>將屬性新增至進入點。 <xref:System.MTAThreadAttribute?displayProperty=fullName>如果屬性存在, 請將它移除。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
- 安全地隱藏此規則的警告，如果您正在開發.NET Compact framework 中，為其<xref:System.STAThreadAttribute>屬性是不必要的和不受支援。
+如果您要針對 .NET Compact Framework 進行開發, <xref:System.STAThreadAttribute>而不需要且不支援屬性, 則可以放心地隱藏此規則的警告。
 
 ## <a name="example"></a>範例
- 下列範例示範如何正確使用<xref:System.STAThreadAttribute>:
+下列範例示範的正確用法<xref:System.STAThreadAttribute>:
 
- [!code-csharp[FxCop.Usage.StaThread#1](../code-quality/codesnippet/CSharp/ca2232-mark-windows-forms-entry-points-with-stathread_1.cs)]
- [!code-vb[FxCop.Usage.StaThread#1](../code-quality/codesnippet/VisualBasic/ca2232-mark-windows-forms-entry-points-with-stathread_1.vb)]
+[!code-csharp[FxCop.Usage.StaThread#1](../code-quality/codesnippet/CSharp/ca2232-mark-windows-forms-entry-points-with-stathread_1.cs)]
+[!code-vb[FxCop.Usage.StaThread#1](../code-quality/codesnippet/VisualBasic/ca2232-mark-windows-forms-entry-points-with-stathread_1.vb)]

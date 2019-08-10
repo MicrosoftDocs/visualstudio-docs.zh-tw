@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b3318a9f5bd65c6b9514519936cc52e037e0c215
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 505aa8cdc1371a3bc288772d77b49eb7a50e9830
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62541779"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68920149"
 ---
 # <a name="ca2230-use-params-for-variable-arguments"></a>CA2230:必須使用 params 作為變數引數
 
@@ -31,23 +31,23 @@ ms.locfileid: "62541779"
 |中斷變更|中斷|
 
 ## <a name="cause"></a>原因
- 公用或受保護的類型包含公用或受保護的方法使用`VarArgs`呼叫慣例。
+公用或受保護的類型包含使用`VarArgs`呼叫慣例的公用或受保護的方法。
 
 ## <a name="rule-description"></a>規則描述
- `VarArgs`呼叫慣例用於接受各種數目參數的特定方法定義。 方法使用`VarArgs`呼叫慣例不是 Common Language Specification (CLS) 相容，而且可能無法存取跨程式語言。
+`VarArgs`呼叫慣例會搭配採用可變數目參數的特定方法定義使用。 使用`VarArgs`呼叫慣例的方法不 Common Language Specification (CLS) 相容, 而且可能無法跨程式設計語言存取。
 
- 在 C# 中，`VarArgs`方法的參數清單的結尾時，呼叫慣例會使用`__arglist`關鍵字。 Visual Basic 不支援`VarArgs`呼叫慣例和視覺效果C++允許其使用僅在 unmanaged 程式碼使用省略符號`...`標記法。
+在C#中, `VarArgs`當方法的參數`__arglist`清單以關鍵字結尾時, 會使用呼叫慣例。 Visual Basic 不支援`VarArgs`呼叫慣例, 而且視覺效果C++只允許在使用橢圓形`...`標記法的非受控碼中使用。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
- 若要修正此規則的違規情形，C# 中，使用[params](/dotnet/csharp/language-reference/keywords/params)而不是關鍵字`__arglist`。
+若要修正中C#此規則的違規情形, 請使用[params](/dotnet/csharp/language-reference/keywords/params) `__arglist`關鍵字, 而不是。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
- 請勿隱藏此規則的警告。
+請勿隱藏此規則的警告。
 
 ## <a name="example"></a>範例
- 下列範例會示範兩種方法，其中一個違反規則，會滿足規則的其中一個。
+下列範例顯示兩個方法, 其中一個會違反規則, 另一個則符合規則。
 
- [!code-csharp[FxCop.Usage.UseParams#1](../code-quality/codesnippet/CSharp/ca2230-use-params-for-variable-arguments_1.cs)]
+[!code-csharp[FxCop.Usage.UseParams#1](../code-quality/codesnippet/CSharp/ca2230-use-params-for-variable-arguments_1.cs)]
 
 ## <a name="see-also"></a>另請參閱
 

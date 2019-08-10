@@ -25,12 +25,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 89c762fb9777af8ac5e24875e879d2f24d0249e0
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 766c93bb45380098af984db256d36d1e0948e56f
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 08/09/2019
-ms.locfileid: "68872124"
+ms.locfileid: "68926709"
 ---
 # <a name="custom-task-panes"></a>自訂工作窗格
   工作窗格是通常停駐在 Microsoft Office 應用程式視窗一側的使用者介面面板。 自訂工作窗格為您提供建立個人專屬工作窗格的方法，也為使用者提供了熟悉的介面，供他們用來存取您方案的功能。 例如，介面中可以包含控制項，而這些控制項則會執行程式碼來修改文件或顯示資料來源中的資料。
@@ -124,7 +124,7 @@ ms.locfileid: "68872124"
 
  若要在 VSTO 增益集仍執行時清除工作窗格使用的資源，請使用 <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Remove%2A> 或 <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.RemoveAt%2A> 方法。 這些方法會從 `CustomTaskPanes` 集合中移除指定的 <xref:Microsoft.Office.Tools.CustomTaskPane> 物件，並且呼叫該物件的 <xref:Microsoft.Office.Tools.CustomTaskPane.Dispose%2A> 方法。
 
- 當 VSTO 增益集卸載時，[!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 會自動清除自訂工作窗格使用的資源。 請不要在專案<xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Remove%2A>的<xref:Microsoft.Office.Tools.CustomTaskPaneCollection.RemoveAt%2A> `ThisAddIn_Shutdown`事件處理常式中呼叫或方法。 因為 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 會在呼叫 `ThisAddIn_Shutdown` 之前先清除 <xref:Microsoft.Office.Tools.CustomTaskPane> 物件使用的資源，所以這些方法會擲回 <xref:System.ObjectDisposedException>。 如需的詳細`ThisAddIn_Shutdown`資訊, 請參閱[Office 專案中的事件](../vsto/events-in-office-projects.md)
+ 當 VSTO 增益集卸載時，[!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 會自動清除自訂工作窗格使用的資源。 請不要在專案<xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Remove%2A>的<xref:Microsoft.Office.Tools.CustomTaskPaneCollection.RemoveAt%2A> `ThisAddIn_Shutdown`事件處理常式中呼叫或方法。 因為 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 會在呼叫 `ThisAddIn_Shutdown` 之前先清除 <xref:Microsoft.Office.Tools.CustomTaskPane> 物件使用的資源，所以這些方法會擲回 <xref:System.ObjectDisposedException>。 如需的詳細`ThisAddIn_Shutdown`資訊, 請參閱[Office 專案中的事件](../vsto/events-in-office-projects.md)。
 
 ## <a name="Managing"></a>管理多個應用程式視窗中的自訂工作窗格
  在使用多重視窗的應用程式中建立自訂工作窗格以顯示文件和其他項目時，需要採取額外步驟以確保工作窗格能夠在使用者需要時顯示。

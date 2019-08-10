@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 79448909dcffd9c55ecf78154295ac77a7538bdf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ec40eb3317f541bec92f06d8921fc2f545606d1a
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62541580"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68920078"
 ---
 # <a name="ca2238-implement-serialization-methods-correctly"></a>CA2238:必須正確實作序列化方法
 
@@ -31,13 +31,13 @@ ms.locfileid: "62541580"
 |TypeName|ImplementSerializationMethodsCorrectly|
 |CheckId|CA2238|
 |分類|Microsoft.Usage|
-|中斷變更|中斷-如果組件外部可見方法。<br /><br /> 非中斷-如果方法不是組件外部可見。|
+|中斷變更|中斷-如果此方法是在元件外部可見的。<br /><br /> 不中斷-如果在元件外部看不到方法。|
 
 ## <a name="cause"></a>原因
- 處理序列化事件的方法沒有正確的簽章、傳回型別或可視性。
+處理序列化事件的方法沒有正確的簽章、傳回型別或可視性。
 
 ## <a name="rule-description"></a>規則描述
- 方法所套用下列序列化事件屬性的其中一個指定的序列化事件處理常式：
+方法是藉由套用下列其中一個序列化事件屬性來指定序列化事件處理常式:
 
 - <xref:System.Runtime.Serialization.OnSerializingAttribute?displayProperty=fullName>
 
@@ -47,31 +47,31 @@ ms.locfileid: "62541580"
 
 - <xref:System.Runtime.Serialization.OnDeserializedAttribute?displayProperty=fullName>
 
-  序列化事件處理常式會接受單一參數型別的<xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName>、 return `void`，而且有`private`可見性。
+  序列化事件處理常式會接受類型<xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName>的單一參數`void`、傳回, 並`private`具有可見度。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
- 若要修正此規則的違規情形，請更正簽章、 傳回型別或序列化的事件處理常式的可見性。
+若要修正此規則的違規, 請更正序列化事件處理常式的簽章、傳回型別或可見度。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
- 請勿隱藏此規則的警告。
+請勿隱藏此規則的警告。
 
 ## <a name="example"></a>範例
- 下列範例會示範正確宣告的序列化事件處理常式。
+下列範例會顯示正確宣告的序列化事件處理常式。
 
- [!code-vb[FxCop.Usage.SerializationEventHandlers#1](../code-quality/codesnippet/VisualBasic/ca2238-implement-serialization-methods-correctly_1.vb)]
- [!code-csharp[FxCop.Usage.SerializationEventHandlers#1](../code-quality/codesnippet/CSharp/ca2238-implement-serialization-methods-correctly_1.cs)]
+[!code-vb[FxCop.Usage.SerializationEventHandlers#1](../code-quality/codesnippet/VisualBasic/ca2238-implement-serialization-methods-correctly_1.vb)]
+[!code-csharp[FxCop.Usage.SerializationEventHandlers#1](../code-quality/codesnippet/CSharp/ca2238-implement-serialization-methods-correctly_1.cs)]
 
-## <a name="related-rules"></a>相關的規則
- [CA2236： 必須ISerializable 類型上呼叫基底類別方法](../code-quality/ca2236-call-base-class-methods-on-iserializable-types.md)
+## <a name="related-rules"></a>相關規則
+[CA2236 必須在 ISerializable 類型上呼叫基類方法](../code-quality/ca2236-call-base-class-methods-on-iserializable-types.md)
 
- [CA2240:必須正確實作 ISerializable](../code-quality/ca2240-implement-iserializable-correctly.md)
+[CA2240 必須正確地執行 ISerializable](../code-quality/ca2240-implement-iserializable-correctly.md)
 
- [CA2229：必須實作序列化建構函式](../code-quality/ca2229-implement-serialization-constructors.md)
+[CA2229：必須實作序列化建構函式](../code-quality/ca2229-implement-serialization-constructors.md)
 
- [CA2235：必須標記所有不可序列化的欄位](../code-quality/ca2235-mark-all-non-serializable-fields.md)
+[CA2235：必須標記所有不可序列化的欄位](../code-quality/ca2235-mark-all-non-serializable-fields.md)
 
- [CA2237：Serializableattribute 標記 ISerializable 類型](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md)
+[CA2237：使用 SerializableAttribute 標記 ISerializable 類型](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md)
 
- [CA2239： 必須提供選擇性欄位的還原序列化方法](../code-quality/ca2239-provide-deserialization-methods-for-optional-fields.md)
+[CA2239 必須為選擇性欄位提供還原序列化方法](../code-quality/ca2239-provide-deserialization-methods-for-optional-fields.md)
 
- [CA2120： 必須保護序列化建構函式](../code-quality/ca2120-secure-serialization-constructors.md)
+ [CA2120 必須安全序列化的函式](../code-quality/ca2120-secure-serialization-constructors.md)

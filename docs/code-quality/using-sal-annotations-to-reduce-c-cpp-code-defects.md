@@ -12,52 +12,52 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ab90a2e03aae60f3027b61d1f3358c05f490ebdf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e968879e10456137033f53d57f7351de5522fe46
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62825262"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68923770"
 ---
 # <a name="using-sal-annotations-to-reduce-cc-code-defects"></a>使用 SAL 註釋減少 C/C++ 程式碼的缺失
-SAL 是 Microsoft 原始程式碼註釋語言。 藉由使用來源的程式碼註解，您可以讓其目的後置您的程式碼明確。 這些註解也會啟用透過來分析您的程式碼更精確地說，少了許多誤判和誤否定的自動化的靜態分析工具。
+SAL 是 Microsoft 原始程式碼注釋語言。 藉由使用原始程式碼注釋, 您可以將意圖放在程式碼的後方。 這些批註也可以讓自動化靜態分析工具更精確地分析您的程式碼, 而且有明顯較少的誤報和誤否定。
 
- 文件的本節文章討論 SAL 的層面，提供 SAL 的語法，參考並提供其用法範例。
+本檔的這一節中的文章會討論 SAL 的各個層面、提供 SAL 語法的參考, 並提供其用法的範例。
 
 - [了解 SAL](../code-quality/understanding-sal.md)
 
-     提供資訊和範例，說明核心 SAL 註釋。
+     提供顯示核心 SAL 注釋的資訊和範例。
 
 - [註釋函式參數和傳回值](../code-quality/annotating-function-parameters-and-return-values.md)
 
-     列出函式和函式參數的 SAL 註釋。
+     列出函數和函式參數的 SAL 注釋。
 
 - [註釋函式行為](../code-quality/annotating-function-behavior.md)
 
-     列出函式和函式行為的 SAL 註釋。
+     列出函數和函式行為的 SAL 注釋。
 
 - [註釋結構和類別](../code-quality/annotating-structs-and-classes.md)
 
-     列出的 SAL 註釋結構和類別。
+     列出結構和類別的 SAL 注釋。
 
 - [註釋鎖定行為](../code-quality/annotating-locking-behavior.md)
 
-     說明如何使用 SAL 註釋鎖定機制。
+     說明如何搭配使用 SAL 注釋與鎖定機制。
 
 - [指定套用註釋的時機和位置](../code-quality/specifying-when-and-where-an-annotation-applies.md)
 
-     列出指定的條件或其他的 SAL 註釋的範圍 （放置） 的 SAL 註釋。
+     列出指定其他 SAL 注釋的條件或範圍 (位置) 的 SAL 注釋。
 
 - [內建函式](../code-quality/intrinsic-functions.md)
 
-     列出的內建函式的 SAL 註釋。
+     列出內部 SAL 注釋。
 
 - [最佳做法和範例](../code-quality/best-practices-and-examples-sal.md)
 
-     提供示範如何使用 SAL 註釋的範例。 也會說明常見的錯誤。
+     提供示範如何使用 SAL 注釋的範例。 也會說明常見的陷阱。
 
 ## <a name="related-resources"></a>相關資源
- [程式碼分析小組部落格](http://go.microsoft.com/fwlink/?LinkId=251197)
+[程式碼分析小組 Blog](http://go.microsoft.com/fwlink/?LinkId=251197)
 
 ## <a name="see-also"></a>另請參閱
- [SAL 2.0 的 Windows 驅動程式的註解](http://go.microsoft.com/fwlink/?LinkId=250979)
+[適用于 Windows 驅動程式的 SAL 2.0 批註](http://go.microsoft.com/fwlink/?LinkId=250979)

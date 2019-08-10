@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 623416e557759ace1ad6403ef8ef977df01da39e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d83da42a029d746899bfaccf5d62f8856a040611
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62545481"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68921108"
 ---
 # <a name="ca2114-method-security-should-be-a-superset-of-type"></a>CA2114:方法安全性應該是類型的超集
 
@@ -31,28 +31,28 @@ ms.locfileid: "62545481"
 |中斷變更|中斷|
 
 ## <a name="cause"></a>原因
- 型別具有宣告式安全性與其中一個方法已宣告式安全性是否相同的安全性動作，且安全性動作不可[連結要求](/dotnet/framework/misc/link-demands)，並沒有權限的子集這種型別所檢查的權限。檢查方法。
+型別具有宣告式安全性, 其中一個方法具有相同安全性動作的宣告式安全性, 而且安全性動作不是[連結要求](/dotnet/framework/misc/link-demands), 而由型別檢查的許可權不是方法所檢查的許可權子集。
 
 ## <a name="rule-description"></a>規則描述
- 方法不應該已經在兩個相同的動作方法層級和類型層級宣告式安全性。 不會合併兩個檢查;套用方法層級需求。 例如，如果型別要求的權限`X`，和其中一個方法會要求權限`Y`，不需要具有權限的程式碼`X`執行方法。
+方法不應該同時具有相同動作的方法層級和類型層級宣告式安全性。 這兩個檢查不會合並;只會套用方法層級的要求。 例如, 如果某個型別要求許可權`X`, 而其中一個方法要求許可權`Y`, 則程式碼不必擁有執行方法的`X`許可權。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
- 檢閱您的程式碼，藉此確定這兩個動作所需。 如果這兩個動作是必要的請確定方法層級的動作，包含指定型別層級的安全性。 比方說，如果您的型別會要求權限`X`，而且它的方法也必須要求權限`Y`，此方法應該明確地要求`X`和`Y`。
+請檢查您的程式碼, 以確定這兩個動作都是必要的。 如果這兩個動作都是必要的, 請確定方法層級動作包含在類型層級指定的安全性。 例如, 如果您的型別要求`X`許可權, 而且其方法也必須要求`Y`許可權, 則方法應該明確`X`地`Y`要求和。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
- 它可安全地隱藏此規則的警告，如果方法不需要指定類型的安全性。 不過，這不是一般的案例，並可能表示需要謹慎設計檢閱。
+如果方法不需要類型所指定的安全性, 則可以安全地隱藏此規則的警告。 不過, 這不是一般案例, 而且可能表示需要謹慎的設計審查。
 
 ## <a name="example-1"></a>範例 1
 
-下列範例會使用環境的權限，來示範違反此規則的危險性。 在此範例中，應用程式程式碼會建立安全類型的執行個體之前拒絕類型所需的權限。 在真實世界的威脅的案例中，應用程式需要另一種方式取得物件的執行個體。
+下列範例會使用環境許可權來示範違反此規則的危險。 在此範例中, 應用程式程式碼會先建立安全類型的實例, 再拒絕該類型所需的許可權。 在真實世界的威脅案例中, 應用程式需要另一種方式來取得物件的實例。
 
-在下列範例中，程式庫會要求寫入類型的權限和讀取權限的方法。
+在下列範例中, 程式庫會要求類型的寫入權限, 以及方法的讀取權限。
 
 [!code-csharp[FxCop.Security.MethodLevelSecurity#1](../code-quality/codesnippet/CSharp/ca2114-method-security-should-be-a-superset-of-type_1.cs)]
 
 ## <a name="example-2"></a>範例 2
 
-下列應用程式程式碼示範的程式庫的弱點可能會藉由呼叫的方法，即使它不符合類型層級安全性需求。
+下列應用程式代碼會藉由呼叫方法來示範程式庫的弱點, 即使它不符合類型層級的安全性需求也一樣。
 
 [!code-csharp[FxCop.Security.TestMethodLevelSecurity#1](../code-quality/codesnippet/CSharp/ca2114-method-security-should-be-a-superset-of-type_2.cs)]
 
