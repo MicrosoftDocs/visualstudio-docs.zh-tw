@@ -8,32 +8,32 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f9d3c3e8ddffb72b04a9ca2fc0ec4df5eaac150
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5fe4ec69f879478566cce8d077bb66b34da86f3d
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62966701"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926767"
 ---
-# <a name="security-considerations-when-working-with-xml-data"></a>使用 XML 資料時的安全性考量
+# <a name="security-considerations-when-working-with-xml-data"></a>使用 XML 資料時的安全性考慮
 
-本主題討論您需要使用 XML 編輯器或 XSLT 偵錯工具時，了解的安全性問題。
+本主題討論使用 XML 編輯器或 XSLT 偵錯工具時, 您需要瞭解的安全性問題。
 
 ## <a name="xml-editor"></a>XML 編輯器
 
- XML 編輯器是以基礎上 Visual Studio 文字編輯器。 它依賴 <xref:System.Xml> 及 <xref:System.Xml.Xsl> 類別來處理許多 XML 處理序。
+XML 編輯器是以 Visual Studio 文字編輯器為基礎。 它依賴 <xref:System.Xml> 及 <xref:System.Xml.Xsl> 類別來處理許多 XML 處理序。
 
-- 會在新的應用程式定義域中執行 XSLT 轉換。 XSLT 轉換*沙箱*; 也就是您電腦的程式碼存取安全性原則用來判斷根據 XSLT 樣式表的位置限制的使用權限。 例如，來自網際網路位置的樣式表具有限制最嚴格的使用權限，但是複製到硬碟的樣式表則可以「完全信任」使用權限執行。
+- 會在新的應用程式定義域中執行 XSLT 轉換。 XSLT 轉換已*沙箱*化;也就是說, 您電腦的代碼啟用安全性原則是用來根據 XSLT 樣式表單所在的位置來判斷限制的許可權。 例如，來自網際網路位置的樣式表具有限制最嚴格的使用權限，但是複製到硬碟的樣式表則可以「完全信任」使用權限執行。
 
 - <xref:System.Xml.Xsl.XslCompiledTransform> 類別用於將 XSLT 編譯為 Microsoft Intermediate Language，以在執行期間獲得更快的效能。
 
-- XML 編輯器首次載入時，會自動下載類別目錄檔案的外部位置所指向的結構描述。 <xref:System.Xml.Schema.XmlSchemaSet> 類別用於編譯結構描述。 XML 編輯器隨附的類別目錄檔案並沒有任何外部結構描述的連結。 使用者必須明確加入外部結構描述的參考之前在 XML 編輯器結構描述會將檔案下載。 HTTP 下載可透過停用**其他工具選項**XML 編輯器的頁面。
+- 在 XML 編輯器第一次載入時, 會自動下載指向類別目錄檔案中外部位置的架構。 <xref:System.Xml.Schema.XmlSchemaSet> 類別用於編譯結構描述。 XML 編輯器隨附的類別目錄檔案沒有任何外部架構的連結。 在 XML 編輯器下載架構檔案之前, 使用者必須明確地加入外部架構的參考。 您可以透過 XML 編輯器的 [**其他工具**] [選項] 頁面來停用 HTTP 下載。
 
-- XML 編輯器使用<xref:System.Net>類別來下載結構描述
+- XML 編輯器會使用<xref:System.Net>類別來下載架構
 
 ## <a name="xslt-debugger"></a>XSLT 偵錯工具
 
- XSLT 偵錯工具會使用 Visual Studio Managed 偵錯引擎、<xref:System.Xml> 的類別及 <xref:System.Xml.Xsl> 命名空間。
+XSLT 偵錯工具會使用 Visual Studio Managed 偵錯引擎、<xref:System.Xml> 的類別及 <xref:System.Xml.Xsl> 命名空間。
 
 - XSLT 偵錯工具會在 sandboxed 應用程式定義域中執行每個 XSLT 轉換。 電腦的程式碼存取安全性原則會用於根據 XSLT 樣式表的位置，來決定限制的使用權限。 例如，來自網際網路位置的樣式表具有限制最嚴格的使用權限，但是複製到硬碟的樣式表則可以「完全信任」使用權限執行。
 

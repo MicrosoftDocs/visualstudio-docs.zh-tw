@@ -11,18 +11,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4e7f99f646d2a93878ec0a78f75cdc6ae1fb0d1c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 98185eb44bc598d83eddd2690d4a321f8880f014
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62570049"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68925697"
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>使用 ADO.NET 建立簡單的資料應用程式
 
-建立應用程式來管理資料庫中的資料時，您會執行基本工作，例如定義連接字串、插入資料及執行預存程序。 遵循本主題，您可以探索如何使用 Visual C# 或 Visual Basic 和 ADO.NET 與簡單的 Windows Forms 「 資料表單 」 應用程式內的資料庫互動。  所有的.NET 資料技術，包括資料集，LINQ to SQL 和 Entity Framework，最後執行非常類似於本文中所示的步驟。
+建立應用程式來管理資料庫中的資料時，您會執行基本工作，例如定義連接字串、插入資料及執行預存程序。 遵循本主題, 您可以探索如何使用 Visual C#或 Visual Basic 和 ADO.NET, 從簡單的 Windows Forms 「表單資料」應用程式內與資料庫互動。  所有 .NET 資料技術 (包括資料集、LINQ to SQL 和 Entity Framework) 最後都會執行與本文中所示類似的步驟。
 
-這篇文章示範簡單的方式，以快速的方式取得資料庫中的資料。 如果您的應用程式需要非一般的方式修改資料，並更新資料庫，您應該考慮使用 Entity Framework，並使用資料繫結至自動同步處理使用者介面控制項的基礎資料中的變更。
+本文示範以快速方式從資料庫中取得資料的簡單方式。 如果您的應用程式需要以不常用的方式修改資料並更新資料庫, 您應該考慮使用 Entity Framework 並使用資料系結, 將使用者介面控制項自動同步處理至基礎資料中的變更。
 
 > [!IMPORTANT]
 > 為了簡化程式碼，它不會包含已準備好投入生產環境的例外狀況處理。
@@ -33,33 +33,33 @@ ms.locfileid: "62570049"
 
 - Visual Studio。
 
-- SQL Server Express LocalDB。 如果您沒有 SQL Server Express LocalDB，您可以安裝從[SQL Server Express 下載頁面](https://www.microsoft.com/sql-server/sql-server-editions-express)。
+- SQL Server Express LocalDB。 如果您沒有 SQL Server Express LocalDB, 可以從[SQL Server Express 下載頁面](https://www.microsoft.com/sql-server/sql-server-editions-express)進行安裝。
 
-本主題假設您已熟悉使用 Visual Studio IDE 的基本功能和可以建立在 Windows Forms 應用程式，將表單加入專案中，將按鈕和其他控制項在表單上的設定屬性的控制項，以及編碼簡單事件。 如果您不熟悉這些工作，我們建議您先完成[開始使用 Visual C# 和 Visual Basic](../ide/quickstart-visual-basic-console.md)主題，然後再開始本逐步解說。
+本主題假設您熟悉 Visual Studio IDE 的基本功能, 而且可以建立 Windows Forms 應用程式、將表單加入專案、將按鈕和其他控制項放在表單上、設定控制項的屬性, 以及撰寫程式碼的簡單事件。 如果您不熟悉這些工作, 建議您先完成開始[使用視覺效果C#和 Visual Basic](../ide/quickstart-visual-basic-console.md)主題, 再開始進行本逐步解說。
 
 ## <a name="set-up-the-sample-database"></a>設定範例資料庫
 
-建立範例資料庫執行下列步驟：
+遵循下列步驟來建立範例資料庫:
 
-1. 在 Visual Studio 中開啟**伺服器總管**視窗。
+1. 在 Visual Studio 中, 開啟 [**伺服器總管**] 視窗。
 
-2. 以滑鼠右鍵按一下**資料連接**，然後選擇**建立新的 SQL Server 資料庫**。
+2. 以滑鼠右鍵按一下 [**資料連線**], 然後選擇 [**建立新的 SQL Server 資料庫**]。
 
-3. 在 **伺服器名稱**文字方塊中，輸入 **(localdb) \mssqllocaldb**。
+3. 在 [**伺服器名稱**] 文字方塊中, 輸入 **(localdb) \mssqllocaldb**。
 
-4. 在 **新的資料庫名稱**文字方塊中，輸入**銷售**，然後選擇 **確定**。
+4. 在 [**新資料庫名稱**] 文字方塊中, 輸入**Sales**, 然後選擇 **[確定]** 。
 
-     空**銷售**建立資料庫並將其加入至伺服器總管 中的資料連接節點。
+     空的**Sales**資料庫隨即建立, 並加入至伺服器總管中的 [資料連線] 節點。
 
-5. 以滑鼠右鍵按一下**銷售額**資料連接，然後選取**新的查詢**。
+5. 以滑鼠右鍵按一下**銷售**資料連線, 然後選取 [追加**查詢**]。
 
-     查詢編輯器視窗隨即開啟。
+     [查詢編輯器] 視窗隨即開啟。
 
-6. 複製[銷售的 TRANSACT-SQL 指令碼](https://github.com/MicrosoftDocs/visualstudio-docs/raw/master/docs/data-tools/samples/sales.sql)到剪貼簿。
+6. 將[Sales transact-sql 腳本](https://github.com/MicrosoftDocs/visualstudio-docs/raw/master/docs/data-tools/samples/sales.sql)複製到剪貼簿。
 
-7. 將 T-SQL 指令碼貼到查詢編輯器，然後選擇**Execute**  按鈕。
+7. 將 T-sql 腳本貼入查詢編輯器中, 然後選擇 [**執行**] 按鈕。
 
-     短時間之後，查詢完成執行，並建立資料庫物件。 資料庫包含兩個資料表：客戶和訂單。 這些資料表一開始，包含任何資料，但當您執行的應用程式，您將建立時，您可以加入資料。 資料庫也會包含四個簡單的預存程序。
+     在短時間之後, 查詢就會完成執行, 並建立資料庫物件。 資料庫包含兩個數據表:客戶和訂單。 這些資料表一開始不包含任何資料, 但您可以在執行您將建立的應用程式時加入資料。 資料庫也包含四個簡單的預存程式。
 
 ## <a name="create-the-forms-and-add-controls"></a>建立表單並加入控制項
 
@@ -90,9 +90,9 @@ ms.locfileid: "62570049"
 |按鈕|Name = btnGoToFillOrCancel|
 |按鈕|Name = btnExit|
 
- **NewCustomer 表單**
+**NewCustomer 表單**
 
- ![新增客戶以及下訂單](../data-tools/media/simpleappnewcust.png)
+![新增客戶以及下訂單](../data-tools/media/simpleappnewcust.png)
 
 |NewCustomer 表單的控制項|屬性|
 | - |----------------|
@@ -105,9 +105,9 @@ ms.locfileid: "62570049"
 |按鈕|Name = btnAddAnotherAccount|
 |按鈕|Name = btnAddFinish|
 
- **FillOrCancel 表單**
+**FillOrCancel 表單**
 
- ![填寫或取消訂單](../data-tools/media/simpleappcancelfill.png)
+![填寫或取消訂單](../data-tools/media/simpleappcancelfill.png)
 
 |FillOrCancel 表單的控制項|屬性|
 | - |----------------|
@@ -120,27 +120,27 @@ ms.locfileid: "62570049"
 |按鈕|Name = btnFinishUpdates|
 
 ## <a name="store-the-connection-string"></a>儲存連接字串
- 當您的應用程式嘗試開啟資料庫的連接時，應用程式必須存取連接字串。 若要避免手動輸入字串，每個表單上，將字串儲存在*App.config*檔案在您的專案，並建立從您的應用程式中的任何表單呼叫方法時，會傳回字串的方法。
+當您的應用程式嘗試開啟資料庫的連接時，應用程式必須存取連接字串。 若要避免在每個表單上手動輸入字串, 請將字串儲存在專案的 app.config 檔案中, 並建立方法, 以便在從應用程式中的任何表單呼叫方法時, 傳回字串。
 
- 您可以找到連接字串上按一下滑鼠右鍵**銷售額**中的資料連線**伺服器總管**，然後選擇**屬性**。 找出**ConnectionString**屬性，然後使用**Ctrl**+**A**， **Ctrl**+**C**選取，並將字串複製到剪貼簿。
+以滑鼠右鍵按一下**伺服器總管**中的 [**銷售**資料] 連接, 然後選擇 [**屬性**], 即可找到連接字串。 找出**ConnectionString**屬性, 然後使用**ctrl** + **A**、 **ctrl** + **C**來選取並將字串複製到剪貼簿。
 
-1. 如果您使用 C# 中，在**方案總管**，展開**屬性**節點下專案，然後開啟**Settings.settings**檔案。
-    如果您使用 Visual Basic 中，在**方案總管**，按一下**顯示所有檔案**，展開**我的專案**節點，然後再開啟**Settings.settings**檔案。
+1. 如果C#您使用的是, 請在**方案總管**中, 展開專案底下的 [**屬性**] 節點, 然後開啟 [**設定**] 檔案。
+    如果您使用 Visual Basic, 請在**方案總管**中按一下 [**顯示所有**檔案], 展開 [**我的專案**] 節點, 然後開啟 [**配置**檔案]。
 
-2. 在 **名稱**資料行中，輸入`connString`。
+2. 在 [**名稱**] 資料行`connString`中, 輸入。
 
-3. 在 **型別**清單中，選取 **（連接字串）**。
+3. 在 [**類型**] 清單中, 選取 **[(連接字串)** ]。
 
-4. 在 **領域**清單中，選取**應用程式**。
+4. 在 [**範圍**] 清單中, 選取 [**應用程式**]。
 
-5. 在 [**值**] 欄中，輸入您的連接字串 （不含任何外部引號括住），然後儲存變更。
+5. 在 [**值**] 資料行中, 輸入您的連接字串 (不含任何外引號), 然後儲存您的變更。
 
 > [!NOTE]
-> 在實際的應用程式中，您應該在連接字串安全地儲存中, 所述[連接字串和組態檔](/dotnet/framework/data/adonet/connection-strings-and-configuration-files)。
+> 在實際的應用程式中, 您應該安全地儲存連接字串, 如[連接字串和設定檔](/dotnet/framework/data/adonet/connection-strings-and-configuration-files)中所述。
 
 ## <a name="write-the-code-for-the-forms"></a>撰寫表單的程式碼
 
-本章節包含每個表單用途的簡短概觀。 它也提供按一下表單上的按鈕時，定義基礎邏輯的程式碼。
+本章節包含每個表單執行內容的簡要概述。 它也會提供程式碼, 以在按一下表單上的按鈕時定義基礎邏輯。
 
 ### <a name="navigation-form"></a>導覽表單
 
@@ -150,32 +150,32 @@ ms.locfileid: "62570049"
 
 如果您使用 C#，在 [方案總管] 中開啟 **Program.cs**，然後將 `Application.Run` 這一行變更如下：`Application.Run(new Navigation());`
 
-如果您使用 Visual Basic 中，在**方案總管**，開啟**屬性**視窗中，選取**應用程式**索引標籤，然後再選取  **SimpleDataApp.Navigation**中**啟動表單**清單。
+如果您使用 Visual Basic, 請在**方案總管**中開啟 [**屬性**] 視窗, 選取 [**應用程式**] 索引標籤, 然後選取 [**啟動表單**] 清單中的 [**命名為 simpledataapp]。**
 
 #### <a name="create-auto-generated-event-handlers"></a>建立自動產生的事件處理常式
 
-按兩下上瀏覽表單，以建立空的事件處理常式方法的三個按鈕。 按兩下按鈕也新增可讓按鈕點選，來引發事件的設計工具程式碼檔案中自動產生的程式碼。
+按兩下導覽表單上的三個按鈕, 以建立空的事件處理常式方法。 按兩下按鈕也會在設計工具程式碼檔案中加入自動產生的程式碼, 讓按一下按鈕來引發事件。
 
-#### <a name="add-code-for-the-navigation-form-logic"></a>加入導覽表單邏輯的程式碼
+#### <a name="add-code-for-the-navigation-form-logic"></a>新增導覽表單邏輯的程式碼
 
-在 瀏覽表單的字碼頁，完成方法主體的三個按鈕 click 事件處理常式中的下列程式碼所示。
+在流覽表單的字碼頁中, 完成三個按鈕 click 事件處理常式的方法主體, 如下列程式碼所示。
 
 [!code-csharp[Navigation#1](../data-tools/codesnippet/CSharp/SimpleDataApp/Navigation.cs#1)]
 [!code-vb[Navigation#1](../data-tools/codesnippet/VisualBasic/SimpleDataApp/Navigation.vb#1)]
 
 ### <a name="newcustomer-form"></a>NewCustomer 表單
 
-當您輸入客戶名稱，然後選取**建立帳戶**按鈕時，NewCustomer 表單建立客戶帳戶，並且與 SQL Server 會傳回 IDENTITY 值做為新的客戶識別碼。 您可以再訂購新的帳戶指定數量和訂單日期，然後選取**訂購** 按鈕。
+當您輸入客戶名稱, 然後選取 [**建立帳戶**] 按鈕時, NewCustomer 表單會建立客戶帳戶, 而 SQL Server 會傳回身分識別值做為新的客戶識別碼。 接著, 您可以指定金額和訂單日期, 然後選取 [訂購**單**] 按鈕, 以放置新帳戶的訂單。
 
 #### <a name="create-auto-generated-event-handlers"></a>建立自動產生的事件處理常式
 
-建立空白 Click 事件處理常式之每四個按鈕上按兩下 NewCustomer 表單上的每個按鈕。 按兩下按鈕也新增可讓按鈕點選，來引發事件的設計工具程式碼檔案中自動產生的程式碼。
+按兩下四個按鈕, 為 NewCustomer 表單上的每個按鈕建立空白 Click 事件處理常式。 按兩下按鈕也會在設計工具程式碼檔案中加入自動產生的程式碼, 讓按一下按鈕來引發事件。
 
-#### <a name="add-code-for-the-newcustomer-form-logic"></a>加入 NewCustomer 表單邏輯的程式碼
+#### <a name="add-code-for-the-newcustomer-form-logic"></a>新增 NewCustomer 表單邏輯的程式碼
 
-若要完成 NewCustomer 表單邏輯，請遵循下列步驟。
+若要完成 NewCustomer 表單邏輯, 請遵循下列步驟。
 
-1. 將`System.Data.SqlClient`進入範圍內的命名空間，讓您不必完整限定其成員的名稱。
+1. 將`System.Data.SqlClient`命名空間帶入範圍中, 讓您不需要完整限定其成員的名稱。
 
      ```csharp
      using System.Data.SqlClient;
@@ -185,29 +185,29 @@ ms.locfileid: "62570049"
      Imports System.Data.SqlClient
      ```
 
-2. 加入下列程式碼所示的類別的一些變數和協助程式方法。
+2. 將一些變數和 helper 方法新增至類別, 如下列程式碼所示。
 
      [!code-csharp[NewCustomer#1](../data-tools/codesnippet/CSharp/SimpleDataApp/NewCustomer.cs#1)]
      [!code-vb[NewCustomer#1](../data-tools/codesnippet/VisualBasic/SimpleDataApp/NewCustomer.vb#1)]
 
-3. 下列程式碼所示完成方法主體，四個按鈕的 click 事件處理常式。
+3. 完成四個按鈕 click 事件處理常式的方法主體, 如下列程式碼所示。
 
      [!code-csharp[NewCustomer#2](../data-tools/codesnippet/CSharp/SimpleDataApp/NewCustomer.cs#2)]
      [!code-vb[NewCustomer#2](../data-tools/codesnippet/VisualBasic/SimpleDataApp/NewCustomer.vb#2)]
 
 ### <a name="fillorcancel-form"></a>FillOrCancel 表單
 
-FillOrCancel 表單會執行查詢來傳回訂單，當您輸入訂單 ID，然後按一下**尋找訂單** 按鈕。 傳回的資料列會顯示在唯讀的資料格。 如果您選取，您可以將標記為已取消 (X) 的順序**取消訂單** 按鈕，或者您可以將訂單標示為已填寫 (F) 如果您選取**填寫訂單** 按鈕。 如果您選取**尋找訂單**同樣地，按鈕會顯示更新的資料列。
+當您輸入訂單識別碼, 然後按一下 [**尋找訂單**] 按鈕時, FillOrCancel 表單會執行查詢以傳回訂單。 傳回的資料列會顯示在唯讀的資料格。 如果您選取 [**取消訂單**] 按鈕, 可以將訂單標示為 [已取消] (X), 或者, 如果您選取 [**填滿訂單**] 按鈕, 則可以將訂單標示為已填滿 (F)。 如果您再次選取 [**尋找訂單**] 按鈕, 則會顯示更新的資料列。
 
 #### <a name="create-auto-generated-event-handlers"></a>建立自動產生的事件處理常式
 
-建立空白按一下 FillOrCancel 表單上的四個按鈕的事件處理常式，按兩下按鈕。 按兩下按鈕也新增可讓按鈕點選，來引發事件的設計工具程式碼檔案中自動產生的程式碼。
+按兩下按鈕, 為 FillOrCancel 表單上的四個按鈕建立空白的 Click 事件處理常式。 按兩下按鈕也會在設計工具程式碼檔案中加入自動產生的程式碼, 讓按一下按鈕來引發事件。
 
-#### <a name="add-code-for-the-fillorcancel-form-logic"></a>加入 FillOrCancel 表單邏輯的程式碼
+#### <a name="add-code-for-the-fillorcancel-form-logic"></a>新增 FillOrCancel 表單邏輯的程式碼
 
-若要完成 FillOrCancel 表單邏輯，請遵循下列步驟。
+若要完成 FillOrCancel 表單邏輯, 請遵循下列步驟。
 
-1. 將下列兩個命名空間帶到範圍，讓您不必完整限定其成員的名稱。
+1. 將下列兩個命名空間帶入範圍中, 讓您不需要完整限定其成員的名稱。
 
      ```csharp
      using System.Data.SqlClient;
@@ -219,12 +219,12 @@ FillOrCancel 表單會執行查詢來傳回訂單，當您輸入訂單 ID，然�
      Imports System.Text.RegularExpressions
      ```
 
-2. 將變數和協助程式方法加入類別，如下列程式碼所示。
+2. 將變數和 helper 方法新增至類別, 如下列程式碼所示。
 
      [!code-csharp[FillOrCancel#1](../data-tools/codesnippet/CSharp/SimpleDataApp/FillOrCancel.cs#1)]
      [!code-vb[FillOrCancel#1](../data-tools/codesnippet/VisualBasic/SimpleDataApp/FillOrCancel.vb#1)]
 
-3. 下列程式碼所示完成方法主體，四個按鈕的 click 事件處理常式。
+3. 完成四個按鈕 click 事件處理常式的方法主體, 如下列程式碼所示。
 
      [!code-csharp[FillOrCancel#2](../data-tools/codesnippet/CSharp/SimpleDataApp/FillOrCancel.cs#2)]
      [!code-vb[FillOrCancel#2](../data-tools/codesnippet/VisualBasic/SimpleDataApp/FillOrCancel.vb#2)]

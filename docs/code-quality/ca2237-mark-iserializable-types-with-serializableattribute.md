@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ccc7819de8e79cae86a60fd015e6b8268c2456c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4a047ec190652e3559e8bf83fe14834ed95d8a69
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62541645"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68920104"
 ---
 # <a name="ca2237-mark-iserializable-types-with-serializableattribute"></a>CA2237:ISerializable 類型必須標記 SerializableAttribute
 
@@ -34,34 +34,34 @@ ms.locfileid: "62541645"
 |中斷變更|非中斷|
 
 ## <a name="cause"></a>原因
- 外部可見的型別會實作<xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName>介面和類型未標示為<xref:System.SerializableAttribute?displayProperty=fullName>屬性。 此規則會忽略其基底型別不是可序列化的衍生型別。
+外部可見的類型會實<xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName>作為介面, 而類型不會<xref:System.SerializableAttribute?displayProperty=fullName>以屬性標記。 此規則會忽略基底類型不可序列化的衍生類型。
 
 ## <a name="rule-description"></a>規則描述
- 要由通用語言執行平台辨識為可序列化，類型必須標記為<xref:System.SerializableAttribute>屬性，即使型別會使用透過實作自訂序列化常式<xref:System.Runtime.Serialization.ISerializable>介面。
+若要由 common language runtime 辨識為可序列化, 即使類型透過<xref:System.SerializableAttribute> <xref:System.Runtime.Serialization.ISerializable>介面的實作為使用自訂序列化常式, 也必須以屬性標記類型。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
- 若要修正此規則的違規情形，套用<xref:System.SerializableAttribute>屬性型別。
+若要修正此規則的違規, 請將<xref:System.SerializableAttribute>屬性套用至類型。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
- 請勿隱藏這項規則的例外狀況類別的警告，因為它們必須是可序列化，以便跨應用程式定義域正常運作。
+請勿針對例外狀況類別隱藏此規則的警告, 因為它們必須是可序列化的, 才能在應用程式域間正常運作。
 
 ## <a name="example"></a>範例
- 下列範例顯示違反規則的型別。 取消註解<xref:System.SerializableAttribute>屬性符合規則的行。
+下列範例顯示違反規則的類型。 取消批註<xref:System.SerializableAttribute>屬性行以符合規則。
 
- [!code-vb[FxCop.Usage.MarkSerializable#1](../code-quality/codesnippet/VisualBasic/ca2237-mark-iserializable-types-with-serializableattribute_1.vb)]
- [!code-csharp[FxCop.Usage.MarkSerializable#1](../code-quality/codesnippet/CSharp/ca2237-mark-iserializable-types-with-serializableattribute_1.cs)]
+[!code-vb[FxCop.Usage.MarkSerializable#1](../code-quality/codesnippet/VisualBasic/ca2237-mark-iserializable-types-with-serializableattribute_1.vb)]
+[!code-csharp[FxCop.Usage.MarkSerializable#1](../code-quality/codesnippet/CSharp/ca2237-mark-iserializable-types-with-serializableattribute_1.cs)]
 
-## <a name="related-rules"></a>相關的規則
- [CA2236： 必須ISerializable 類型上呼叫基底類別方法](../code-quality/ca2236-call-base-class-methods-on-iserializable-types.md)
+## <a name="related-rules"></a>相關規則
+[CA2236 必須在 ISerializable 類型上呼叫基類方法](../code-quality/ca2236-call-base-class-methods-on-iserializable-types.md)
 
- [CA2240:必須正確實作 ISerializable](../code-quality/ca2240-implement-iserializable-correctly.md)
+[CA2240 必須正確地執行 ISerializable](../code-quality/ca2240-implement-iserializable-correctly.md)
 
- [CA2229：必須實作序列化建構函式](../code-quality/ca2229-implement-serialization-constructors.md)
+[CA2229：必須實作序列化建構函式](../code-quality/ca2229-implement-serialization-constructors.md)
 
- [CA2238： 請正確實作序列化方法](../code-quality/ca2238-implement-serialization-methods-correctly.md)
+[CA2238:正確地執行序列化方法](../code-quality/ca2238-implement-serialization-methods-correctly.md)
 
- [CA2235：必須標記所有不可序列化的欄位](../code-quality/ca2235-mark-all-non-serializable-fields.md)
+[CA2235：必須標記所有不可序列化的欄位](../code-quality/ca2235-mark-all-non-serializable-fields.md)
 
- [CA2239： 必須提供選擇性欄位的還原序列化方法](../code-quality/ca2239-provide-deserialization-methods-for-optional-fields.md)
+[CA2239 必須為選擇性欄位提供還原序列化方法](../code-quality/ca2239-provide-deserialization-methods-for-optional-fields.md)
 
- [CA2120： 必須保護序列化建構函式](../code-quality/ca2120-secure-serialization-constructors.md)
+[CA2120 必須安全序列化的函式](../code-quality/ca2120-secure-serialization-constructors.md)

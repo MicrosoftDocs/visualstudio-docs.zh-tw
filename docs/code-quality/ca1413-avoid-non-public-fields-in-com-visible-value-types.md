@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: ac998d8a0e3a8c1883afa07c2cfe16098a2461af
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3eb216af1b6cd742aff83b248b6752adea292345
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62546091"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68921844"
 ---
 # <a name="ca1413-avoid-non-public-fields-in-com-visible-value-types"></a>CA1413:避免在 COM 可見實值類型中使用非公用欄位
 
@@ -34,29 +34,29 @@ ms.locfileid: "62546091"
 |中斷變更|中斷|
 
 ## <a name="cause"></a>原因
- 特別標示為可見的元件物件模型 (COM) 實值型別宣告的非公用執行個體欄位。
+特別標示為「元件物件模型 (COM) 可見」的實值型別會宣告非公用實例欄位。
 
 ## <a name="rule-description"></a>規則描述
- COM 可見實值類型的非公用執行個體欄位對 COM 用戶端而言是可見的。 檢閱資訊，不應該公開，或將具有非預期的設計或安全性影響欄位的內容。
+COM 可見實值類型的非公用執行個體欄位對 COM 用戶端而言是可見的。 請參閱欄位內容, 以取得不應公開的資訊, 或將會有非預期的設計或安全性效果。
 
- 根據預設，所有公用實值型別會作為 COM 可見 不過，以減少誤判，此規則需要明確指示類型的 COM 的可視性。 包含組件必須標記為<xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName>設定為`false`且型別必須標示有<xref:System.Runtime.InteropServices.ComVisibleAttribute>設定為`true`。
+根據預設, COM 可以看到所有公用實數值型別。 不過, 若要減少誤報, 此規則需要明確陳述類型的 COM 可見度。 包含的<xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName>元件必須以設定為`false`的標記, 而且類型<xref:System.Runtime.InteropServices.ComVisibleAttribute>必須以設定為`true`的標記。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
- 若要修正此規則的違規情形，並保持隱藏的欄位，將實值型別變更為參考型別，或移除<xref:System.Runtime.InteropServices.ComVisibleAttribute>屬性從型別。
+若要修正此規則的違規, 並將欄位保留為隱藏狀態, 請將數值型別變更為參考型別<xref:System.Runtime.InteropServices.ComVisibleAttribute> , 或從類型中移除屬性。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
- 它可安全地隱藏此規則的警告，公開的欄位是否可接受的。
+如果可以接受欄位的公開曝光, 則可以安全地隱藏此規則的警告。
 
 ## <a name="example"></a>範例
- 下列範例顯示違反規則的型別。
+下列範例顯示違反規則的類型。
 
- [!code-csharp[FxCop.Interoperability.NonpublicField#1](../code-quality/codesnippet/CSharp/ca1413-avoid-non-public-fields-in-com-visible-value-types_1.cs)]
- [!code-vb[FxCop.Interoperability.NonpublicField#1](../code-quality/codesnippet/VisualBasic/ca1413-avoid-non-public-fields-in-com-visible-value-types_1.vb)]
+[!code-csharp[FxCop.Interoperability.NonpublicField#1](../code-quality/codesnippet/CSharp/ca1413-avoid-non-public-fields-in-com-visible-value-types_1.cs)]
+[!code-vb[FxCop.Interoperability.NonpublicField#1](../code-quality/codesnippet/VisualBasic/ca1413-avoid-non-public-fields-in-com-visible-value-types_1.vb)]
 
-## <a name="related-rules"></a>相關的規則
- [CA1407:避免在 COM 可見類型中的靜態成員](../code-quality/ca1407-avoid-static-members-in-com-visible-types.md)
+## <a name="related-rules"></a>相關規則
+[CA1407避免 COM 可見類型中的靜態成員](../code-quality/ca1407-avoid-static-members-in-com-visible-types.md)
 
- [CA1017:組件必須標記 comvisibleattribute](../code-quality/ca1017-mark-assemblies-with-comvisibleattribute.md)
+[CA1017以 ComVisibleAttribute 標記元件](../code-quality/ca1017-mark-assemblies-with-comvisibleattribute.md)
 
 ## <a name="see-also"></a>另請參閱
 

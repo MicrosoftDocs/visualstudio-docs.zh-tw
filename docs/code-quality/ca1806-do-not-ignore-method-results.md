@@ -16,12 +16,12 @@ dev_langs:
 - CSharp
 - VB
 manager: jillfra
-ms.openlocfilehash: d2a1dd9984601afa34e4aac7fa5ddc24061cf6ae
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2e68fb6b4c40c165a09ae2631a2ad0a64bf52fbc
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62797046"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68921548"
 ---
 # <a name="ca1806-do-not-ignore-method-results"></a>CA1806:不要忽略方法的結果
 
@@ -34,66 +34,66 @@ ms.locfileid: "62797046"
 
 ## <a name="cause"></a>原因
 
-有數個可能的原因，這個警告：
+此警告有幾個可能的原因:
 
-- 已建立新的物件，但從未使用過。
+- 已建立新的物件, 但從未使用過。
 
-- 呼叫的方法，建立並傳回新字串，以及新字串從未使用過。
+- 會呼叫建立並傳回新字串的方法, 而且永遠不會使用新的字串。
 
-- COM 或 P/Invoke 方法會傳回 HRESULT 或錯誤碼的程式碼，不會用到。 規則描述
+- COM 或 P/Invoke 方法, 會傳回從未使用的 HRESULT 或錯誤碼。 規則描述
 
-建立不必要的物件和未使用的物件相關聯的記憶體回收集合會降低效能。
+不需要建立物件, 且未使用物件的相關垃圾收集會降低效能。
 
-字串是不變，例如 String.ToUpper 方法會傳回字串而非修改字串呼叫方法中的執行個體的新執行個體。
+字串是不變的, 而 ToUpper 之類的方法會傳回字串的新實例, 而不是修改呼叫方法中的字串實例。
 
-忽略 HRESULT 或錯誤碼可能會導致非預期的行為，在錯誤條件或資源不足狀況。
+忽略 HRESULT 或錯誤碼可能會導致錯誤狀況或資源不足的狀況發生非預期的行為。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
- 如果方法的建立從未使用過的 B 物件的新執行個體，將執行個體做為引數傳遞給另一個方法，或指派給變數的執行個體。 如果不需要建立的物件，將它移除。-或-
+如果方法 A 建立從未使用之 B 物件的新實例, 請將實例當做引數傳遞至另一個方法, 或將實例指派給變數。 如果不需要建立物件, 請移除它。-或-
 
- 如果方法 A 呼叫 B，; 方法，但未使用 B 則方法會傳回新字串執行個體。 將執行個體做為引數傳遞給另一個方法，將執行個體指派給變數。 或如果不需要移除的呼叫。
+如果方法 A 會呼叫方法 B, 但不會使用方法 B 傳回的新字串實例。 將實例當做引數傳遞至另一個方法, 並將實例指派給變數。 或移除不必要的呼叫。
 
  -或-
 
- 如果方法的呼叫方法，B，但不會使用 HRESULT 或錯誤碼，這個方法傳回。 使用中的條件陳述式的結果、 將結果指派給變數，或將它做為引數傳遞給另一個方法。
+如果方法 A 呼叫方法 B, 但未使用方法傳回的 HRESULT 或錯誤碼。 使用條件陳述式中的結果、將結果指派給變數, 或將它當做引數傳遞至另一個方法。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
- 請勿隱藏此規則的警告，除非建立物件的動作有一些用途。
+除非建立物件的動作有某種用途, 否則請勿隱藏此規則的警告。
 
 ## <a name="example"></a>範例
- 下列範例顯示的類別，會忽略呼叫 String.Trim 的結果。
+下列範例顯示的類別會忽略呼叫字串. Trim 的結果。
 
- [!code-csharp[FxCop.Usage.DoNotIgnoreMethodResults3#1](../code-quality/codesnippet/CSharp/ca1806-do-not-ignore-method-results_1.cs)]
- [!code-vb[FxCop.Usage.DoNotIgnoreMethodResults3#1](../code-quality/codesnippet/VisualBasic/ca1806-do-not-ignore-method-results_1.vb)]
- [!code-cpp[FxCop.Usage.DoNotIgnoreMethodResults3#1](../code-quality/codesnippet/CPP/ca1806-do-not-ignore-method-results_1.cpp)]
-
-## <a name="example"></a>範例
- 下列範例會將前述的違規修正 String.Trim 的結果指派給所呼叫的變數。
-
- [!code-csharp[FxCop.Usage.DoNotIgnoreMethodResults4#1](../code-quality/codesnippet/CSharp/ca1806-do-not-ignore-method-results_2.cs)]
- [!code-vb[FxCop.Usage.DoNotIgnoreMethodResults4#1](../code-quality/codesnippet/VisualBasic/ca1806-do-not-ignore-method-results_2.vb)]
- [!code-cpp[FxCop.Usage.DoNotIgnoreMethodResults4#1](../code-quality/codesnippet/CPP/ca1806-do-not-ignore-method-results_2.cpp)]
+[!code-csharp[FxCop.Usage.DoNotIgnoreMethodResults3#1](../code-quality/codesnippet/CSharp/ca1806-do-not-ignore-method-results_1.cs)]
+[!code-vb[FxCop.Usage.DoNotIgnoreMethodResults3#1](../code-quality/codesnippet/VisualBasic/ca1806-do-not-ignore-method-results_1.vb)]
+[!code-cpp[FxCop.Usage.DoNotIgnoreMethodResults3#1](../code-quality/codesnippet/CPP/ca1806-do-not-ignore-method-results_1.cpp)]
 
 ## <a name="example"></a>範例
- 下列範例會示範不會使用它所建立物件的方法。
+下列範例會藉由指派字串的結果來修正先前的違規, 並將其傳回給呼叫它的變數。
+
+[!code-csharp[FxCop.Usage.DoNotIgnoreMethodResults4#1](../code-quality/codesnippet/CSharp/ca1806-do-not-ignore-method-results_2.cs)]
+[!code-vb[FxCop.Usage.DoNotIgnoreMethodResults4#1](../code-quality/codesnippet/VisualBasic/ca1806-do-not-ignore-method-results_2.vb)]
+[!code-cpp[FxCop.Usage.DoNotIgnoreMethodResults4#1](../code-quality/codesnippet/CPP/ca1806-do-not-ignore-method-results_2.cpp)]
+
+## <a name="example"></a>範例
+下列範例顯示不使用它所建立之物件的方法。
 
 > [!NOTE]
-> 無法在 Visual Basic 中重現此違規。
+> Visual Basic 中無法重現此違規。
 
- [!code-cpp[FxCop.Usage.DoNotIgnoreMethodResults5#1](../code-quality/codesnippet/CPP/ca1806-do-not-ignore-method-results_3.cpp)]
- [!code-csharp[FxCop.Usage.DoNotIgnoreMethodResults5#1](../code-quality/codesnippet/CSharp/ca1806-do-not-ignore-method-results_3.cs)]
+[!code-cpp[FxCop.Usage.DoNotIgnoreMethodResults5#1](../code-quality/codesnippet/CPP/ca1806-do-not-ignore-method-results_3.cpp)]
+[!code-csharp[FxCop.Usage.DoNotIgnoreMethodResults5#1](../code-quality/codesnippet/CSharp/ca1806-do-not-ignore-method-results_3.cs)]
 
 ## <a name="example"></a>範例
- 下列範例會將先前的違規修正藉由移除不必要建立物件。
+下列範例會藉由移除不必要的物件建立來修正先前的違規。
 
- [!code-csharp[FxCop.Usage.DoNotIgnoreMethodResults6#1](../code-quality/codesnippet/CSharp/ca1806-do-not-ignore-method-results_4.cs)]
- [!code-cpp[FxCop.Usage.DoNotIgnoreMethodResults6#1](../code-quality/codesnippet/CPP/ca1806-do-not-ignore-method-results_4.cpp)]
+[!code-csharp[FxCop.Usage.DoNotIgnoreMethodResults6#1](../code-quality/codesnippet/CSharp/ca1806-do-not-ignore-method-results_4.cs)]
+[!code-cpp[FxCop.Usage.DoNotIgnoreMethodResults6#1](../code-quality/codesnippet/CPP/ca1806-do-not-ignore-method-results_4.cpp)]
 
 <!-- Examples don't exist for the below... -->
 <!--
 ## Example
- The following example shows a method that ignores the error code that the native method GetShortPathName returns.
+The following example shows a method that ignores the error code that the native method GetShortPathName returns.
 
 ## Example
- The following example fixes the previous violation by checking the error code and throwing an exception when the call fails.
+The following example fixes the previous violation by checking the error code and throwing an exception when the call fails.
 -->

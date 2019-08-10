@@ -11,34 +11,34 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: d6a16b8f0752ca2ab063f8bbbaa966836856eb4f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 31933e2045981fd6a0f38fb19a9480787c9f282a
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62565804"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68925589"
 ---
 # <a name="typed-vs-untyped-datasets"></a>具類型資料集與不具類型資料集的比較
-具類型資料集是第一次衍生自基底的資料集<xref:System.Data.DataSet>類別，然後使用 從資訊**Dataset 設計工具**，均會儲存在一個.xsd 檔案，以產生新的強類型 dataset 類別。 從結構描述 （資料表、 資料行等等） 的資訊會產生，並編譯成這個新的資料集類別中，為一組的第一級物件和屬性。 因為具類型資料集繼承自基底<xref:System.Data.DataSet>類別，型別的類別假設所有的功能<xref:System.Data.DataSet>類別，並可接受的執行個體的方法與<xref:System.Data.DataSet>類別做為參數。
+具類型資料集是第一次衍生自基類<xref:System.Data.DataSet>的資料集, 然後使用來自**DataSet 設計工具**的資訊 (儲存在 .xsd 檔案中) 來產生新的強型別資料集類別。 架構 (資料表、資料行等等) 中的資訊會產生並編譯成這個新的資料集類別, 做為一組第一類物件和屬性。 因為具類型的資料集繼承自<xref:System.Data.DataSet>基類, 所以具類型的類別會假設<xref:System.Data.DataSet>類別的所有功能, 而且可以搭配<xref:System.Data.DataSet>接受類別實例做為參數的方法使用。
 
- 不具類型的資料集，相較之下，有沒有相對應的內建結構描述。 具類型的資料集，與不具類型的資料集包含資料表、 資料行，等等，但這些都顯露只做為集合。 (不過，您手動建立的資料表和其他資料元素中的不具類型的資料集之後，您可以匯出資料集的結構為結構描述使用的資料集<xref:System.Data.DataSet.WriteXmlSchema%2A>方法。)
+相反地, 不具類型的資料集沒有對應的內建架構。 如同在具類型的資料集中, 不具類型的資料集包含資料表、資料行等等, 但是只會以集合的形式公開。 (不過, 在不具類型的資料集中手動建立資料表和其他資料元素之後, 您可以使用資料集的<xref:System.Data.DataSet.WriteXmlSchema%2A>方法, 將資料集的結構匯出為架構)。
 
-## <a name="contrast-data-access-in-typed-and-untyped-datasets"></a>具型別和不具類型資料集的對比資料存取
- 具類型資料集的類別具有其屬性對資料表和資料行的實際名稱所在的物件模型。 例如，如果您正在使用具類型資料集，您可以使用如下所示的程式碼參考的資料行：
+## <a name="contrast-data-access-in-typed-and-untyped-datasets"></a>在具類型和不具類型的資料集中進行對比資料存取
+具類型資料集的類別具有物件模型, 其中的屬性會採用資料表和資料行的實際名稱。 例如, 如果您使用具類型的資料集, 則可以使用如下的程式碼來參考資料行:
 
- [!code-csharp[VbRaddataDatasets#4](../data-tools/codesnippet/CSharp/typed-vs-untyped-datasets_1.cs)]
- [!code-vb[VbRaddataDatasets#4](../data-tools/codesnippet/VisualBasic/typed-vs-untyped-datasets_1.vb)]
+[!code-csharp[VbRaddataDatasets#4](../data-tools/codesnippet/CSharp/typed-vs-untyped-datasets_1.cs)]
+[!code-vb[VbRaddataDatasets#4](../data-tools/codesnippet/VisualBasic/typed-vs-untyped-datasets_1.vb)]
 
- 相反地，如果您正在使用不具類型的資料集，是對等的程式碼：
+相反地, 如果您使用不具類型的資料集, 則對等的程式碼為:
 
- [!code-csharp[VbRaddataDatasets#5](../data-tools/codesnippet/CSharp/typed-vs-untyped-datasets_2.cs)]
- [!code-vb[VbRaddataDatasets#5](../data-tools/codesnippet/VisualBasic/typed-vs-untyped-datasets_2.vb)]
+[!code-csharp[VbRaddataDatasets#5](../data-tools/codesnippet/CSharp/typed-vs-untyped-datasets_2.cs)]
+[!code-vb[VbRaddataDatasets#5](../data-tools/codesnippet/VisualBasic/typed-vs-untyped-datasets_2.vb)]
 
- 具類型的存取不只更方便閱讀，但也完全支援 Visual Studio 中的 IntelliSense**程式碼編輯器**。 除了容易使用，具類型資料集的語法會提供類型檢查在編譯時期，大幅減少在指派值給資料集成員的錯誤的可能性。 如果您變更中的資料行名稱您<xref:System.Data.DataSet>類別，然後編譯您的應用程式中，您會收到建置錯誤。 按兩下的建置錯誤**工作清單**，您可以直接移至該程式行或參考舊的資料行名稱的行程式碼。 存取資料表和資料行中具類型資料集還有稍微快一些在執行階段，因為存取由決定在編譯時期，不是透過在執行階段的集合。
+輸入的存取權不僅更容易閱讀, 而且 IntelliSense 也會在 Visual Studio 程式**代碼編輯器**中受到完整支援。 除了更容易使用之外, 具類型資料集的語法也會在編譯時期提供類型檢查, 大幅降低將值指派給資料整合員時發生錯誤的可能性。 如果您在<xref:System.Data.DataSet>類別中變更資料行的名稱, 然後再編譯應用程式, 就會收到組建錯誤。 按兩下**工作清單**中的組建錯誤, 即可直接移至參考舊資料行名稱的一行或幾行程式碼。 在執行時間, 存取具類型資料集中的資料表和資料行也會稍微快速, 因為存取是在編譯時期決定, 而不是在執行時間透過集合。
 
- 雖然仍具類型資料集有許多優點，不具類型的資料集是以各種不同的情況下很有用。 最明顯的案例時，會提供資料集沒有結構描述。 這可能是，比方說，如果您的應用程式互動的元件，會傳回資料集，但您無法在預先知道其結構的功能。 同樣地，有時候是當您正在使用沒有靜態、 可預測的結構的資料。 在此情況下，它不適合使用具類型的資料集，因為您必須重新產生每個變更資料結構中的具類型資料集類別。
+雖然具類型的資料集有許多優點, 但不具類型的資料集在各種情況下都很有用。 最明顯的情況是當資料集沒有可用的架構時。 例如, 如果您的應用程式與傳回資料集的元件互動, 但您事先不知道它的結構為何, 就可能會發生這種情況。 同樣地, 在某些情況下, 您會使用沒有靜態、可預測結構的資料。 在這種情況下, 使用具型別資料集並不可行, 因為您必須重新產生具有資料結構中每個變更的具型別資料集類別。
 
- 一般來說，有許多次時您可能會以動態方式建立資料集，而不需要提供的結構描述。 在此情況下，資料集都是只是一個便利的結構，您可以在其中保留的詳細資訊，只要資料可以表示關聯式方法。 在此同時，您可以利用資料集的功能，例如要序列化的資訊傳遞至另一個處理序，或以寫出 XML 檔案的能力。
+更常見的情況是, 您可能會很多次地建立資料集, 而不需要有架構。 在此情況下, 資料集只是一個方便的結構, 您可以在其中保存資訊, 只要資料可以關聯式方式表示即可。 同時, 您可以利用資料集的功能, 例如, 將資訊序列化以傳遞至另一個進程, 或寫出 XML 檔案的功能。
 
 ## <a name="see-also"></a>另請參閱
 

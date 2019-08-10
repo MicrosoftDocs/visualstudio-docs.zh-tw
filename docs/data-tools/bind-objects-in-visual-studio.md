@@ -1,5 +1,5 @@
 ---
-title: 將資料繫結的自訂物件
+title: 資料系結自訂物件
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,133 +16,133 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4fb5a8c7a54871c7d948a458768c5551dbb5d550
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b9994d52c5ca39d744cf26dc019440e70e809ee8
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62824360"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68925667"
 ---
-# <a name="bind-objects-as-data-sources-in-visual-studio"></a>將物件繫結做為 Visual Studio 中的資料來源
+# <a name="bind-objects-as-data-sources-in-visual-studio"></a>在 Visual Studio 中將物件系結為數據源
 
-Visual Studio 會提供設計階段工具，為您的應用程式中的資料來源使用自訂的物件。 當您想要將資料庫中的資料儲存在您繫結至 UI 控制項的物件時，建議的方法是使用 Entity Framework 來產生類別。 Entity Framework 會自動產生所有的重複使用變更追蹤程式碼，這表示，對本機物件會自動保存至資料庫的 DbSet 物件上呼叫 AcceptChanges。 如需詳細資訊，請參閱 < [Entity Framework 文件](https://ef.readthedocs.org/en/latest/)。
+Visual Studio 提供設計階段工具, 可讓您在應用程式中使用自訂物件做為資料來源。 當您想要將資料庫中的資料儲存在您系結至 UI 控制項的物件中時, 建議的方法是使用 Entity Framework 來產生類別或類別。 Entity Framework 會自動產生所有的未定案變更追蹤程式碼, 這表示當您在 DbSet 物件上呼叫 AcceptChanges 時, 對本機物件所做的任何變更都會自動儲存到資料庫。 如需詳細資訊, 請參閱[Entity Framework 檔](https://ef.readthedocs.org/en/latest/)。
 
 > [!TIP]
-> 如果您的應用程式已經根據資料集，只應該被視為這篇文章中的物件繫結的方法。 如果您已熟悉的資料集，而且您要處理的資料是表格式和不太複雜或太大，您也可以使用這些方法。 如需甚至更簡單的範例，牽涉到將資料載入直接物件使用 DataReader，並以手動方式更新 UI 而不需要資料繫結，請參閱[使用 ADO.NET 建立簡單資料應用程式](../data-tools/create-a-simple-data-application-by-using-adonet.md)。
+> 只有在您的應用程式已根據資料集時, 才應該考慮本文中的物件系結方法。 如果您已經熟悉資料集, 也可以使用這些方法, 而您要處理的資料是表格式, 而且不太複雜或太大。 如需更簡單的範例, 包括使用 DataReader 直接將資料載入物件, 以及手動更新沒有資料系結的 UI, 請參閱[使用 ADO.NET 建立簡單的資料應用程式](../data-tools/create-a-simple-data-application-by-using-adonet.md)。
 
-## <a name="object-requirements"></a>物件的需求
+## <a name="object-requirements"></a>物件需求
 
-若要使用資料設計工具，在 Visual Studio 中的自訂物件的唯一需求是物件，必須至少一個公用屬性。
+自訂物件在 Visual Studio 中使用資料設計工具的唯一需求, 就是物件至少需要一個公用屬性。
 
-一般而言，自訂的物件不需要任何特定介面、 建構函式或做為應用程式的資料來源的屬性。 不過，如果您想要將物件從**資料來源**視窗的設計介面，以建立資料繫結控制項，而且如果物件實作<xref:System.ComponentModel.ITypedList>或<xref:System.ComponentModel.IListSource>介面，物件必須有預設值建構函式。 否則，Visual Studio 無法具現化的資料來源物件，而且它會顯示錯誤，當您將項目拖曳至設計介面。
+一般而言, 自訂物件不需要任何特定的介面、函式或屬性做為應用程式的資料來源。 不過, 如果您想要將物件從 [**資料來源**] 視窗拖曳至設計介面以建立資料繫結控制項, 而且如果物件<xref:System.ComponentModel.ITypedList>是執行或<xref:System.ComponentModel.IListSource>介面, 則物件必須具有預設的函式。 否則, Visual Studio 無法具現化資料來源物件, 而且當您將專案拖曳至設計介面時, 就會顯示錯誤。
 
 ## <a name="examples-of-using-custom-objects-as-data-sources"></a>使用自訂物件做為資料來源的範例
 
-雖然有無數的方式來實作您的應用程式邏輯，做為資料來源處理物件時，sql，資料庫有會是可簡化使用 Visual Studio 產生的 TableAdapter 物件的一些標準作業。 此頁面說明如何實作這些標準的程序，使用 Tableadapter。 它不是做為指南建立您的自訂物件。 例如，您通常會執行下列標準作業，不論特定實作的物件或應用程式的邏輯：
+雖然在使用物件當做資料來源時, 有無數的方式可以實作為您的應用程式邏輯, 但針對 SQL 資料庫, 有幾個標準作業可以使用 Visual Studio 產生的 TableAdapter 物件來簡化。 此頁面說明如何使用 Tableadapter 來執行這些標準處理常式。 其目的不是建立自訂物件的指南。 例如, 您通常會執行下列標準作業, 不論物件的特定執行或應用程式的邏輯為何:
 
-- 將資料載入物件 （通常是從資料庫中）。
+- 將資料載入物件 (通常是從資料庫)。
 
-- 建立物件的類型的集合。
+- 建立物件的具類型集合。
 
-- 將物件新增至，並移除集合中的物件。
+- 在集合中加入和移除物件。
 
-- 使用者在表單上顯示的物件資料。
+- 向使用者顯示表單上的物件資料。
 
-- 變更/編輯資料物件中。
+- 變更/編輯物件中的資料。
 
-- 將資料從物件儲存回資料庫。
+- 將物件中的資料儲存回資料庫。
 
 ### <a name="load-data-into-objects"></a>將資料載入物件
 
-例如，您將資料載入您的物件使用 Tableadapter。 根據預設，Tableadapter 會建立具有兩種方法，從資料庫擷取資料並填入資料的資料表。
+在此範例中, 您會使用 Tableadapter 將資料載入至物件。 根據預設, 會使用兩種方法來建立 Tableadapter, 以從資料庫提取資料並填入資料表。
 
-- `TableAdapter.Fill`方法傳回的資料填入現有的資料表。
+- `TableAdapter.Fill`方法會將傳回的資料填入現有的資料表。
 
-- `TableAdapter.GetData`方法會傳回新的資料資料表填入資料。
+- `TableAdapter.GetData`方法會傳回已填入資料的新資料表。
 
-載入您的自訂物件的資料最簡單方式是呼叫`TableAdapter.GetData`方法，傳回的資料表中的資料列集合執行迴圈，並將填入每個物件中每個資料列的值。 您可以建立`GetData`傳回填入的資料的資料表加入至 TableAdapter 的任何查詢的方法。
+若要以資料載入自訂物件, 最簡單的方法是`TableAdapter.GetData`呼叫方法, 並在傳回的資料表中, 對資料列集合進行迴圈, 然後在每個物件中填入每個資料列中的值。 您可以建立`GetData`方法, 針對加入 TableAdapter 的任何查詢, 傳回已填入的資料表。
 
 > [!NOTE]
-> Visual Studio 命名的 TableAdapter 查詢`Fill`和`GetData`根據預設，但您可以將這些名稱變更為任何有效的方法名稱。
+> Visual Studio 將 TableAdapter 查詢`Fill` `GetData`命名為, 但根據預設, 您可以將這些名稱變更為任何有效的方法名稱。
 
-下列範例示範如何在資料的資料表中，資料列執行迴圈，並填入具有資料的物件：
+下列範例示範如何對資料表中的資料列執行迴圈, 並將資料填入物件:
 
 [!code-csharp[VbRaddataConnecting#4](../data-tools/codesnippet/CSharp/bind-objects-in-visual-studio_1.cs)]
 [!code-vb[VbRaddataConnecting#4](../data-tools/codesnippet/VisualBasic/bind-objects-in-visual-studio_1.vb)]
 
-### <a name="create-a-typed-collection-of-objects"></a>建立具型別的物件的集合
+### <a name="create-a-typed-collection-of-objects"></a>建立物件的具類型集合
 
-您可以建立集合類別，針對您的物件，或使用自動提供的型別的集合[BindingSource 元件](/dotnet/framework/winforms/controls/bindingsource-component)。
+您可以為物件建立集合類別, 或使用[BindingSource 元件](/dotnet/framework/winforms/controls/bindingsource-component)自動提供的具類型集合。
 
-當您建立之物件的自訂集合類別時，我們建議您繼承自<xref:System.ComponentModel.BindingList%601>。 這個泛型類別會提供功能來管理您的集合，以及引發事件會傳送通知給 Windows Form 中的資料繫結基礎結構的能力。
+當您要建立物件的自訂集合類別時, 建議您從<xref:System.ComponentModel.BindingList%601>繼承。 這個泛型類別提供功能來管理您的集合, 以及引發事件的能力, 將通知傳送至 Windows Forms 中的資料系結基礎結構。
 
-在自動產生的集合<xref:System.Windows.Forms.BindingSource>使用<xref:System.ComponentModel.BindingList%601>其類型的集合。 如果您的應用程式不需要額外的功能，您可以維護您的集合內<xref:System.Windows.Forms.BindingSource>。 如需詳細資訊，請參閱 <<c0> <xref:System.Windows.Forms.BindingSource.List%2A> 屬性<xref:System.Windows.Forms.BindingSource>類別。
+在中<xref:System.Windows.Forms.BindingSource>自動產生的集合會<xref:System.ComponentModel.BindingList%601>針對其具類型的集合使用。 如果您的應用程式不需要額外的功能, 您可以在中維護<xref:System.Windows.Forms.BindingSource>您的集合。 如需詳細資訊, 請<xref:System.Windows.Forms.BindingSource.List%2A>參閱<xref:System.Windows.Forms.BindingSource>類別的屬性。
 
 > [!NOTE]
-> 如果您的集合需要的功能不提供的基底實作<xref:System.ComponentModel.BindingList%601>，因此您可以視需要新增至類別，您應該建立自訂的集合。
+> 如果您的集合所需的功能不是由的基<xref:System.ComponentModel.BindingList%601>底實作為提供, 您應該建立自訂集合, 讓您可以視需要新增至類別。
 
-下列程式碼示範如何建立強型別集合類別`Order`物件：
+下列程式碼示範如何為`Order`物件的強型別集合建立類別:
 
 [!code-csharp[VbRaddataConnecting#8](../data-tools/codesnippet/CSharp/bind-objects-in-visual-studio_2.cs)]
 [!code-vb[VbRaddataConnecting#8](../data-tools/codesnippet/VisualBasic/bind-objects-in-visual-studio_2.vb)]
 
-### <a name="add-objects-to-a-collection"></a>將物件加入至集合
+### <a name="add-objects-to-a-collection"></a>將物件新增至集合
 
-將物件新增至集合的藉由呼叫`Add`方法，或您的自訂集合類別的<xref:System.Windows.Forms.BindingSource>。
+您可以藉由呼叫`Add`自訂集合類別或<xref:System.Windows.Forms.BindingSource>的方法, 將物件加入至集合。
 
 > [!NOTE]
-> `Add`方法會自動提供為您自訂的集合。 當您繼承自<xref:System.ComponentModel.BindingList%601>。
+> 當您從<xref:System.ComponentModel.BindingList%601>繼承時, 會自動提供自訂集合的方法。`Add`
 
-下列程式碼示範如何將物件加入至具型別集合中<xref:System.Windows.Forms.BindingSource>:
+下列程式碼示範如何在中<xref:System.Windows.Forms.BindingSource>將物件加入至具類型的集合:
 
 [!code-csharp[VbRaddataConnecting#5](../data-tools/codesnippet/CSharp/bind-objects-in-visual-studio_3.cs)]
 [!code-vb[VbRaddataConnecting#5](../data-tools/codesnippet/VisualBasic/bind-objects-in-visual-studio_3.vb)]
 
- 下列程式碼示範如何將物件加入至繼承的型別集合<xref:System.ComponentModel.BindingList%601>:
+下列程式碼示範如何將物件加入至繼承自<xref:System.ComponentModel.BindingList%601>的具類型集合:
 
 > [!NOTE]
-> 在此範例中，`Orders`集合是屬性`Customer`物件。
+> 在此範例中, `Orders`集合是`Customer`物件的屬性。
 
 [!code-csharp[VbRaddataConnecting#6](../data-tools/codesnippet/CSharp/bind-objects-in-visual-studio_4.cs)]
 [!code-vb[VbRaddataConnecting#6](../data-tools/codesnippet/VisualBasic/bind-objects-in-visual-studio_4.vb)]
 
 ### <a name="remove-objects-from-a-collection"></a>從集合中移除物件
 
-從集合移除物件呼叫`Remove`或是`RemoveAt`方法，或您的自訂集合類別的<xref:System.Windows.Forms.BindingSource>。
+您可以藉由呼叫`Remove`自訂集合類別或的<xref:System.Windows.Forms.BindingSource>或`RemoveAt`方法, 從集合中移除物件。
 
 > [!NOTE]
-> `Remove`並`RemoveAt`方法會自動提供給您的自訂集合當您繼承自<xref:System.ComponentModel.BindingList%601>。
+> 當`Remove`您`RemoveAt` 從<xref:System.ComponentModel.BindingList%601>繼承時, 會自動為您的自訂集合提供和方法。
 
-下列程式碼顯示如何尋找及移除的具類型的集合中的物件<xref:System.Windows.Forms.BindingSource>與<xref:System.Windows.Forms.BindingSource.RemoveAt%2A>方法：
+下列程式碼示範如何<xref:System.Windows.Forms.BindingSource> <xref:System.Windows.Forms.BindingSource.RemoveAt%2A>使用方法, 在中從具類型的集合中找出並移除物件:
 
 [!code-csharp[VbRaddataConnecting#7](../data-tools/codesnippet/CSharp/bind-objects-in-visual-studio_5.cs)]
 [!code-vb[VbRaddataConnecting#7](../data-tools/codesnippet/VisualBasic/bind-objects-in-visual-studio_5.vb)]
 
-### <a name="display-object-data-to-users"></a>向使用者顯示物件的資料
+### <a name="display-object-data-to-users"></a>向使用者顯示物件資料
 
-若要顯示給使用者的物件資料，建立物件資料來源使用**資料來源組態**精靈，然後將整個物件或個別的屬性拖曳到您的表單，從**Zdroje dat**視窗。
+若要向使用者顯示物件中的資料, 請使用**資料來源**設定 wizard 建立物件資料來源, 然後從 [**資料來源**] 視窗將整個物件或個別屬性拖曳至表單上。
 
 ### <a name="modify-the-data-in-objects"></a>修改物件中的資料
 
-若要編輯資料繫結至 Windows Form 控制項的自訂物件中的資料，只需編輯繫結控制項 （或直接在物件的屬性中） 中的資料。 資料繫結架構更新之物件中的資料。
+若要在系結至 Windows Forms 控制項之資料系結的自訂物件中編輯資料, 只需編輯繫結控制項中的資料 (或直接在物件的屬性中)。 資料系結架構會更新物件中的資料。
 
-如果您的應用程式需要追蹤變更，並建議變更復原為其原始值，您必須在物件模型中實作這項功能。 如需如何資料資料表追蹤的提議的變更的範例，請參閱<xref:System.Data.DataRowState>， <xref:System.Data.DataSet.HasChanges%2A>，和<xref:System.Data.DataTable.GetChanges%2A>。
+如果您的應用程式需要追蹤變更, 並將建議的變更回復至其原始值, 則您必須在物件模型中執行這項功能。 如需資料表如何追蹤建議變更的範例, 請參閱<xref:System.Data.DataRowState>、 <xref:System.Data.DataSet.HasChanges%2A>和<xref:System.Data.DataTable.GetChanges%2A>。
 
-### <a name="save-data-in-objects-back-to-the-database"></a>將資料儲存在資料庫物件
+### <a name="save-data-in-objects-back-to-the-database"></a>將物件中的資料儲存回資料庫
 
-您的物件中的值傳遞至 TableAdapter 的 DBDirect 方法，將資料儲存回資料庫。
+藉由將物件的值傳遞至 TableAdapter 的 DBDirect 方法, 將資料儲存回資料庫。
 
-Visual Studio 會建立可直接對資料庫執行的 DBDirect 方法。 這些方法不需要 DataSet 或 DataTable 物件。
+Visual Studio 會建立可以直接針對資料庫執行的 DBDirect 方法。 這些方法不需要 DataSet 或 DataTable 物件。
 
-|TableAdapter DBDirect 方法|描述|
+|TableAdapter DBDirect 方法|說明|
 | - |-----------------|
-|`TableAdapter.Insert`|將新的記錄加入至資料庫，可讓您在個別的資料行值做為方法參數傳遞。|
-|`TableAdapter.Update`|更新現有的資料庫中的記錄。 更新方法會接受原始及新的資料行值作為方法參數。 原始的值用來找出原始記錄中，與新的值來更新該記錄。<br /><br /> `TableAdapter.Update`方法也會用來協調回資料庫，資料集內的變更，藉由採取<xref:System.Data.DataSet>， <xref:System.Data.DataTable>， <xref:System.Data.DataRow>，或陣列<xref:System.Data.DataRow>做為方法參數。|
-|`TableAdapter.Delete`|刪除現有記錄從資料庫根據原始的資料行值傳遞為方法參數。|
+|`TableAdapter.Insert`|將新記錄加入至資料庫, 可讓您傳入個別的資料行值做為方法參數。|
+|`TableAdapter.Update`|更新資料庫中的現有記錄。 Update 方法會採用原始和新的資料行值做為方法參數。 原始的值是用來尋找原始記錄, 而新值則是用來更新該記錄。<br /><br /> 方法`TableAdapter.Update`也會使用的<xref:System.Data.DataSet>、 <xref:System.Data.DataTable> <xref:System.Data.DataRow>、或的<xref:System.Data.DataRow>陣列做為方法參數, 藉此將 dataset 中的變更重新協調回資料庫。|
+|`TableAdapter.Delete`|根據當做方法參數傳入的原始資料行值, 從資料庫中刪除現有的記錄。|
 
-若要用於儲存的資料物件的集合，循環的 （例如，使用的下一個迴圈） 的物件集合。 使用 TableAdapter 的 DBDirect 方法，每個物件的值傳送至資料庫。
+若要儲存物件集合中的資料, 請在物件集合中執行迴圈 (例如, 使用 next 迴圈)。 使用 TableAdapter 的 DBDirect 方法, 將每個物件的值傳送至資料庫。
 
-下列範例示範如何使用`TableAdapter.Insert`DBDirect 方法來加入新的客戶，直接在資料庫：
+下列範例示範如何使用`TableAdapter.Insert` DBDirect 方法, 將新的客戶直接加入資料庫中:
 
 [!code-csharp[VbRaddataSaving#23](../data-tools/codesnippet/CSharp/bind-objects-in-visual-studio_6.cs)]
 [!code-vb[VbRaddataSaving#23](../data-tools/codesnippet/VisualBasic/bind-objects-in-visual-studio_6.vb)]

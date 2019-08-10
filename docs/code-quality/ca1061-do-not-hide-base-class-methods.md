@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: faa225178a50be080f92a728998e914025c17168
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8f13ac29028472384cfadbf9c397e578f6509670
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62788656"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68922418"
 ---
 # <a name="ca1061-do-not-hide-base-class-methods"></a>CA1061:不要隱藏基底類別方法
 
@@ -31,18 +31,18 @@ ms.locfileid: "62788656"
 |中斷變更|中斷|
 
 ## <a name="cause"></a>原因
- 衍生的型別宣告具有相同名稱和相同數目的參數做為其基底方法，其中一個方法一或多個參數是在基底方法; 中的對應參數的基底類型而且任何剩餘的參數具有相同基底方法中的對應參數的類型。
+衍生型別會宣告具有相同名稱的方法, 並使用與它的其中一個基底方法相同的參數數目;一或多個參數是基底方法中對應參數的基底類型;而且任何剩餘的參數都有與基底方法中對應參數相同的類型。
 
 ## <a name="rule-description"></a>規則描述
- 在衍生方法的參數簽章只有不同的類型還要弱衍生比基底方法的參數簽章中對應的類型時所衍生的型別中的相同具名方法隱藏基底類型中的方法。
+當衍生方法的參數簽章不同于基底方法的參數簽章中的對應類型較弱的類型時, 基底類型中的方法會由衍生類型中的相同名稱方法隱藏。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
- 若要修正此規則的違規情形，請移除或重新命名方法，或變更的參數簽章，使方法不會隱藏基底方法。
+若要修正此規則的違規, 請移除或重新命名方法, 或變更參數簽章, 讓方法不會隱藏基底方法。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
- 請勿隱藏此規則的警告。
+請勿隱藏此規則的警告。
 
 ## <a name="example"></a>範例
- 下列範例會示範違反規則的方法。
+下列範例顯示違反規則的方法。
 
- [!code-csharp[FxCop.Design.HideBaseMethod#1](../code-quality/codesnippet/CSharp/ca1061-do-not-hide-base-class-methods_1.cs)]
+[!code-csharp[FxCop.Design.HideBaseMethod#1](../code-quality/codesnippet/CSharp/ca1061-do-not-hide-base-class-methods_1.cs)]

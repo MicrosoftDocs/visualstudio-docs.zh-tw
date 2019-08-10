@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 61eced11a61b8da92d01d26c0e66ad5d9c49f72d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2dae77bf7783edc165305f9b3ba60969d4f126a8
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62778768"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68922897"
 ---
 # <a name="ca1038-enumerators-should-be-strongly-typed"></a>CA1038:列舉程式應該是強類型
 
@@ -31,7 +31,7 @@ ms.locfileid: "62778768"
 |中斷變更|中斷|
 
 ## <a name="cause"></a>原因
- 公用或受保護的型別會實作<xref:System.Collections.IEnumerator?displayProperty=fullName>但不提供強型別的版本<xref:System.Collections.IEnumerator.Current%2A?displayProperty=fullName>屬性。 衍生自下列類型的類型為免套用此規則：
+公用或受保護的類型<xref:System.Collections.IEnumerator?displayProperty=fullName>會執行, <xref:System.Collections.IEnumerator.Current%2A?displayProperty=fullName>但不會提供屬性的強型別版本。 衍生自下列類型的類型不受此規則所規範:
 
 - <xref:System.Collections.CollectionBase?displayProperty=fullName>
 
@@ -40,23 +40,23 @@ ms.locfileid: "62778768"
 - <xref:System.Collections.ReadOnlyCollectionBase?displayProperty=fullName>
 
 ## <a name="rule-description"></a>規則描述
- 這項規則要求<xref:System.Collections.IEnumerator>實作也提供強型別的版本<xref:System.Collections.IEnumerator.Current%2A>屬性，因此使用者不需要傳回值轉換成強型別時使用介面所提供的功能。 這項規則假設，實作型別<xref:System.Collections.IEnumerator>包含比強型別的執行個體的集合<xref:System.Object>。
+此規則要求<xref:System.Collections.IEnumerator>的<xref:System.Collections.IEnumerator.Current%2A>執行也會提供屬性的強型別版本, 因此使用者在使用介面所提供的功能時, 不需要將傳回值轉換成強式類型。 此規則假設所執行的類型<xref:System.Collections.IEnumerator>包含強于<xref:System.Object>之類型實例的集合。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
- 若要修正此規則的違規情形，實作介面屬性明確 (將它宣告為`IEnumerator.Current`)。 新增屬性，宣告為公用強型別的版本`Current`，並且會傳回強類型的物件。
+若要修正此規則的違規, 請明確地執行介面屬性 (將它`IEnumerator.Current`宣告為)。 加入屬性的公用強型別版本, 並將其`Current`宣告為, 並讓它傳回強型別物件。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
- 當您實作用於物件為基礎的集合，例如二進位樹狀目錄的物件為基礎的列舉值，則隱藏此規則的警告。 擴充新集合的型別會定義強型別列舉值，並公開 （expose） 的強型別的屬性。
+當您執行物件型列舉值以搭配以物件為基礎的集合 (例如二進位樹狀結構) 使用時, 請隱藏此規則的警告。 擴充新集合的類型將會定義強型別列舉值, 並公開強型別屬性。
 
 ## <a name="example"></a>範例
- 下列範例會示範正確的方式來實作強型別<xref:System.Collections.IEnumerator>型別。
+下列範例示範執行強<xref:System.Collections.IEnumerator>型別類型的正確方式。
 
- [!code-csharp[FxCop.Design.IEnumeratorStrongTypes#1](../code-quality/codesnippet/CSharp/ca1038-enumerators-should-be-strongly-typed_1.cs)]
+[!code-csharp[FxCop.Design.IEnumeratorStrongTypes#1](../code-quality/codesnippet/CSharp/ca1038-enumerators-should-be-strongly-typed_1.cs)]
 
-## <a name="related-rules"></a>相關的規則
- [CA1035:實作包含強類型成員](../code-quality/ca1035-icollection-implementations-have-strongly-typed-members.md)
+## <a name="related-rules"></a>相關規則
+[CA1035ICollection 實現具有強型別成員](../code-quality/ca1035-icollection-implementations-have-strongly-typed-members.md)
 
- [CA1039:清單為強類型](../code-quality/ca1039-lists-are-strongly-typed.md)
+[CA1039清單為強型別](../code-quality/ca1039-lists-are-strongly-typed.md)
 
 ## <a name="see-also"></a>另請參閱
 

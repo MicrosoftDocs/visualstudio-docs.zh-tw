@@ -1,5 +1,5 @@
 ---
-title: 排序、 篩選和分組在 XML 結構描述總管中
+title: 在 XML 架構瀏覽器中排序、篩選和分組
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 4a914de0-9ffc-4526-9603-92e460e52513
@@ -8,40 +8,40 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 740fd46d453a6e6a51285d418374d036d83bc598
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: daa629b4c26abf7b6ce801c30ea6f6fd41fbaa48
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62808102"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926723"
 ---
-# <a name="sorting-filtering-and-grouping-xml-schema-explorer"></a>排序、 篩選和群組 （XML 結構描述總管）
+# <a name="sorting-filtering-and-grouping-xml-schema-explorer"></a>排序、篩選和群組 (XML 架構瀏覽器)
 
-本主題描述的選項，都是透過**排序、 篩選與分組選項**上的功能表**XML 結構描述總管**工具列。
+本主題描述透過**XML 架構瀏覽器**工具列上的 [**排序]、[篩選] 和 [群組選項**] 功能表所提供的選項。
 
 ## <a name="filter-options"></a>篩選選項
 
- 以下是可用的篩選選項。 根據預設，**顯示命名空間**並**顯示結構描述檔案**選取選項。
+以下是可用的篩選選項。 預設會選取 [**顯示命名空間**] 和 [**顯示架構**檔案] 選項。
 
 - **顯示命名空間**。
 
-- **顯示結構描述檔案**。
+- **顯示架構**檔案。
 
-- **顯示撰寫 (sequence/choice/all)**。
+- **顯示撰寫 (sequence/choice/all)** 。
 
 ## <a name="sorting-options"></a>排序選項
 
- 以下是可用的排序選項。 預設值是**依類型排序**。 **排序依據**選項不適用於檔案與命名空間。
+以下是可用的排序選項。 預設值為 [**依類型排序**]。 [**排序依據**] 選項不會套用至檔案和命名空間。
 
 - **依類型排序**。
 
 - **依名稱排序**。
 
-- **文件順序**。
+- **檔順序**。
 
 ### <a name="sort-by-type"></a>依類型排序
 
- 當**依類型排序**選取選項，全域節點都會依照下列順序。 然後，節點會在每個群組內部依字母順序排序。
+選取 [**依類型排序**] 選項時, 全域節點會依照下列順序排序。 然後，節點會在每個群組內部依字母順序排序。
 
 1. `import` 節點。
 
@@ -63,7 +63,7 @@ ms.locfileid: "62808102"
 
 ### <a name="sort-by-name"></a>依名稱排序
 
- 當**依名稱排序**選取選項，全域節點都會依照下列順序：
+選取 [**依名稱排序**] 選項時, 全域節點會依照下列順序排序:
 
 1. `import` 節點 (依照命名空間的字母順序)。
 
@@ -75,8 +75,8 @@ ms.locfileid: "62808102"
 
 ### <a name="document-order"></a>文件順序
 
- **文件順序**選項時，可以使用**顯示結構描述檔案**選項。 當**文件順序**選取時，全域節點會顯示在其出現在結構描述檔案中的順序。
+選取 [**顯示架構**檔案] 選項時, 可以使用 [檔**順序**] 選項。 選取 [**檔順序**] 時, 全域節點會依照出現在架構檔案中的順序顯示。
 
 ## <a name="persisting-sortfilter-options"></a>持續排序/篩選選項
 
- 無論變更設定時開啟哪一個方案或檔案，排序、篩選與群組選項都會儲存至每位使用者的登錄。
+無論變更設定時開啟哪一個方案或檔案，排序、篩選與群組選項都會儲存至每位使用者的登錄。

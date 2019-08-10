@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 05dbe964a16f838088fe8b053d59c1916daf38f7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4196cb91e1b866453de54347b8a67edd3dc2dc96
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62546397"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68921886"
 ---
 # <a name="ca1409-com-visible-types-should-be-creatable"></a>CA1409:Com 可見類型應該是可建立的
 
@@ -28,26 +28,26 @@ ms.locfileid: "62546397"
 |TypeName|ComVisibleTypesShouldBeCreatable|
 |CheckId|CA1409|
 |分類|Microsoft.Interoperability|
-|中斷變更|非重大|
+|中斷變更|不中斷|
 
 ## <a name="cause"></a>原因
- 特別標示為可見的元件物件模型 (COM) 參考型別包含公用參數化建構函式，但不包含公用預設 （無參數） 建構函式。
+特別標示為「元件物件模型 (COM) 可見」的參考型別包含公用參數化的函式, 但不包含公用預設 (無參數) 的函式。
 
 ## <a name="rule-description"></a>規則描述
- COM 用戶端無法建立沒有公用預設建構函式的類型。 不過，類型可以仍可存取由 COM 用戶端如果另一個方法可建立類型，並將它傳遞給用戶端 （例如，透過方法呼叫的傳回值）。
+COM 用戶端無法建立沒有公用預設函式的類型。 不過, 如果有另一種方法可用來建立型別, 並將它傳遞給用戶端 (例如, 透過方法呼叫的傳回值), 則 COM 用戶端仍然可以存取型別。
 
- 此規則會忽略型別衍生自<xref:System.Delegate?displayProperty=fullName>。
+此規則會忽略衍生自<xref:System.Delegate?displayProperty=fullName>的類型。
 
- 根據預設，以下是為 COM 所見： 組件、 公用型別、 公用的型別中的公用執行個體成員和公用實值型別的所有成員。
+根據預設, COM 會看到下列內容: 元件、公用類型、公用類型中的公用實例成員, 以及公用實數值型別的所有成員。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
- 若要修正此規則的違規情形，加入公用預設建構函式，或移除<xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName>從型別。
+若要修正此規則的違規, 請新增公用預設的函式, <xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName>或從類型移除。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
- 它是安全地隱藏此規則的警告，如果提供的其他方式建立，並將物件傳遞給 COM 用戶端。
+如果提供其他方式來建立物件並將其傳遞給 COM 用戶端, 則可以安全地隱藏此規則的警告。
 
-## <a name="related-rules"></a>相關的規則
- [CA1017:組件必須標記 comvisibleattribute](../code-quality/ca1017-mark-assemblies-with-comvisibleattribute.md)
+## <a name="related-rules"></a>相關規則
+[CA1017以 ComVisibleAttribute 標記元件](../code-quality/ca1017-mark-assemblies-with-comvisibleattribute.md)
 
 ## <a name="see-also"></a>另請參閱
 

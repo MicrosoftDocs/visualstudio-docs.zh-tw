@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7f2ecd0adea8e3d71eebff6e532a44def68c01c8
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 9d2c85a4af986c62d3e3f3c3a3f4333baa2975ee
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 08/09/2019
-ms.locfileid: "68872045"
+ms.locfileid: "68926422"
 ---
 # <a name="powerpoint-solutions"></a>PowerPoint 方案
   Visual Studio 提供您可用來建立 Microsoft Office PowerPoint VSTO 增益集的專案範本。 您可以使用 VSTO 增益集來自動化 PowerPoint、擴充 PowerPoint 功能，或自訂 PowerPoint 使用者介面 (UI)。
@@ -58,7 +58,7 @@ ms.locfileid: "68872045"
  如需 PowerPoint PIA 設計的詳細資訊, 例如 PIA 中類別和介面的差異以及 PIA 中的事件的執行方式, 請參閱[Office 主要 interop 元件中的類別和介面總覽](http://go.microsoft.com/fwlink/?LinkId=199885)。
 
 ### <a name="vba-object-model-reference"></a>VBA 物件模型參考
- VBA 物件模型參考記載公開給 Visual Basic for Applications (VBA) 程式碼時的 PowerPoint 物件模型。 如需詳細資訊, 請參閱[PowerPoint 2010 物件模型參考](http://go.microsoft.com/fwlink/?LinkId=199770)
+ VBA 物件模型參考記載公開給 Visual Basic for Applications (VBA) 程式碼時的 PowerPoint 物件模型。 如需詳細資訊, 請參閱[PowerPoint 2010 物件模型參考](http://go.microsoft.com/fwlink/?LinkId=199770)。
 
  VBA 物件模型參考中的所有物件和成員都會對應至 PowerPoint 主要 Interop 組件 (PIA) 中的類型和成員。 例如, VBA 物件模型參考中的呈現物件會對應至 PowerPoint PIA 中的[呈現](/previous-versions/office/developer/office-2010/ff761925(v=office.14))類型。 雖然 VBA 物件模型參考提供大部分屬性、方法和事件的程式碼範例，但如果您想要在以 Visual Studio 建立的 PowerPoint VSTO 增益集專案中使用這些程式碼範例，則必須將這個參考中的 VBA 程式碼轉譯為 Visual Basic 或 Visual C#。
 
