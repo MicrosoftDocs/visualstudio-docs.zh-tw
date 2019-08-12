@@ -15,45 +15,45 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 15d9b81bd342ccd8a5ee3377323e140ab1167c10
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0526351d2b3e2c223aacbe0e58d9ee39bd1b19c4
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62899456"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68924550"
 ---
-# <a name="how-to-create-file-associations-for-a-clickonce-application"></a>HOW TO：建立 ClickOnce 應用程式的檔案關聯
-[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式可以與一或多個檔案名稱副檔名，相關聯，以便在使用者開啟這些類型的檔案時應用程式也會自動啟動。 新增檔案副檔名支援以[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式很簡單。
+# <a name="how-to-create-file-associations-for-a-clickonce-application"></a>作法：建立 ClickOnce 應用程式的檔案關聯
+[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式可以與一個或多個副檔名相關聯, 如此一來, 當使用者開啟這些類型的檔案時, 應用程式就會自動啟動。 將副檔名支援新增至[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式相當簡單。
 
 ### <a name="to-create-file-associations-for-a-clickonce-application"></a>若要建立 ClickOnce 應用程式的檔案關聯
 
-1. 建立[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式一般，或使用現有[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式。
+1. 以一般[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]方式建立應用程式, 或使用[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]您現有的應用程式。
 
-2. 使用文字編輯器或 XML 編輯器，例如 [記事本] 中開啟應用程式資訊清單。
+2. 使用文字或 XML 編輯器 (如 [記事本]) 開啟應用程式資訊清單。
 
 3. 尋找 `assembly` 項目。 如需詳細資訊，請參閱 [ClickOnce 應用程式資訊清單](../deployment/clickonce-application-manifest.md)。
 
-4. 為子系`assembly`項目，新增`fileAssociation`項目。 `fileAssociation`項目有四個屬性：
+4. 加入元素做為專案`assembly`的子系。 `fileAssociation` `fileAssociation`元素具有四個屬性:
 
-   - `extension`：您想要關聯到應用程式檔案名稱的副檔名。
+   - `extension`：您想要與應用程式建立關聯的副檔名。
 
-   - `description`：檔案類型，將會出現在 Windows shell 中的描述。
+   - `description`：檔案類型的描述, 會出現在 Windows shell 中。
 
-   - `progid`：字串，用來唯一識別檔案類型，將它標記在登錄中。
+   - `progid`：唯一識別檔案類型的字串, 用來將它標示在登錄中。
 
-   - `defaultIcon`：若要使用此檔案類型圖示。 圖示必須新增為應用程式資訊清單中的檔案資源。 如需詳細資訊，請參閱[如何：在 ClickOnce 應用程式中納入資料檔案](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md)。
+   - `defaultIcon`：要用於此檔案類型的圖示。 在應用程式資訊清單中, 必須將圖示新增為檔案資源。 如需詳細資訊，請參閱[如何：在 ClickOnce 應用程式中納入資料檔案](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md)。
 
-     如需`file`並`fileAssociation`項目，請參閱[ \<fileAssociation > 項目](../deployment/fileassociation-element-clickonce-application.md)。
+     如需`file`和`fileAssociation`元素的範例, 請參閱[ \<fileassociation extension > 元素](../deployment/fileassociation-element-clickonce-application.md)。
 
-5. 如果您想要一個以上的檔案類型關聯到應用程式，加入額外`fileAssociation`項目。 請注意，`progid`屬性應該為每個不同。
+5. 如果您想要將多個檔案類型與應用程式建立關聯, 請`fileAssociation`新增額外的元素。 請注意, `progid`每個的屬性應該都不同。
 
-6. 完成與應用程式資訊清單所述，重新簽署資訊清單。 您可以從命令列使用*Mage.exe*。
+6. 當您完成應用程式資訊清單之後, 請重新簽署資訊清單。 您可以從命令列使用*mage.exe*來執行這項操作。
 
     `mage -Sign WindowsFormsApp1.exe.manifest -CertFile mycert.pfx`
 
-    如需詳細資訊，請參閱 [Mage.exe (資訊清單產生和編輯工具)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)
+    如需詳細資訊，請參閱 [Mage.exe (資訊清單產生和編輯工具)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)。
 
 ## <a name="see-also"></a>另請參閱
-- [\<fileAssociation > 項目](../deployment/fileassociation-element-clickonce-application.md)
+- [\<Fileassociation extension > 元素](../deployment/fileassociation-element-clickonce-application.md)
 - [ClickOnce 應用程式資訊清單](../deployment/clickonce-application-manifest.md)
 - [Mage.exe (資訊清單產生和編輯工具)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)
