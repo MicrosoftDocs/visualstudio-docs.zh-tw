@@ -18,7 +18,7 @@
           href: tutorial-multicontainer.md
         - name: Visual Studio 中的 Kubernetes
           href: tutorial-kubernetes-tools.md
-    - name: 如何
+    - name: 作法
       items:
         - name: 對本機 Docker 容器中的應用程式偵錯
           href: edit-and-refresh.md
@@ -26,6 +26,8 @@
           href: hosting-web-apps-in-docker.md
         - name: 部署到 Azure App Service
           href: deploy-app-service.md
+        - name: 發佈至 Docker Hub
+          href: deploy-docker-hub.md
         - name: 檢視及診斷容器
           href: view-and-diagnose-containers.md
         - name: 設定容器工具
