@@ -1,26 +1,22 @@
 ---
 title: 馬上使用限定 Visual Studio 訂用帳戶中的 DataCamp 權益，以加強您的資料科學技巧。 | Microsoft Docs
 author: evanwindom
-ms.author: jaunger
-manager: evelynp
-ms.date: 12/19/2018
+ms.author: lank
+manager: lank
+ms.date: 07/30/2019
 ms.topic: conceptual
 description: 了解所選取 Visual Studio 訂用帳戶隨附的 DataCamp 訓練課程訂用帳戶。
-ms.openlocfilehash: 5f5b327bb5b1c328fe746fdbafc1a7550eefacd6
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 64176f5a58641bf51434c99eee914a8ac176da56
+ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67825339"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68681645"
 ---
 # <a name="the-datacamp-training-benefit-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶中的 DataCamp 訓練課程權益
-
 合格的 Visual Studio 訂閱包含 DataCamp 訂閱。  透過 DataCamp，您可以輕鬆從瀏覽器學習所需的所有資料科學技能。 您可以選擇何時學習及學習內容。 不需要安裝任何軟體且沒有任何特殊硬體需求，學習資料科學比以往更容易。
 
-DataCamp 權益的持續時間取決於您的 Visual Studio 訂用帳戶。
-
 ## <a name="activation-steps"></a>啟用步驟
-
 1. 登入 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)。
 
 2. 在 [Professional Development] (專業開發) 類別中，找到 DataCamp 權益磚，然後按一下 [啟用]  。
@@ -28,9 +24,7 @@ DataCamp 權益的持續時間取決於您的 Visual Studio 訂用帳戶。
    > ![DataCamp 權益磚](_img/vs-datacamp/vs-datacamp-tile-2.png)
 
 3. 在 DataCamp 頁面上，您可以建立新帳戶。  您可以選擇輸入電子郵件地址和密碼，或是使用現有的 Facebook、LinkedIn 或 Google 帳戶登入。  提供登入資訊之後，按一下 [Get Started] (開始)  。
-   > [!div class="mx-imgBorder"]
-   > ![DataCamp 建立新帳戶](_img/vs-datacamp/vs-datacamp-create-account.png)
-   >
+
    > [!NOTE]
    > 當您開始建立帳戶時，可能會收到下列錯誤訊息：「糟糕！  您的促銷代碼無效或已到期。」  由於您的促銷代碼會在建立後的數分鐘到期，因此可能發生這個情況。  若您收到此訊息，只要回到[權益](https://my.visualstudio.com/benefits)頁面並按一下 DataCamp 權益磚上的 [啟用]  連結即可。
 
@@ -62,7 +56,6 @@ DataCamp 權益的持續時間取決於您的 Visual Studio 訂用帳戶。
 > ![DataCamp 繼續訓練](_img/vs-datacamp/vs-datacamp-continue-training.png)
 
 ## <a name="eligibility"></a>資格
-
 | 訂用帳戶層級                                                 |     通道                                            | 優勢                                                          | 可續約？    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard)   | VL, Azure, 零售, | 3 個月       |  否。  僅提供給新訂閱者使用          |
@@ -86,3 +79,9 @@ DataCamp 權益的持續時間取決於您的 Visual Studio 訂用帳戶。
   - [提交支援要求](https://support.datacamp.com/hc/requests/new) \(英文\)
 - 如需 Visual Studio 訂用帳戶有關銷售、訂閱、帳戶與計費的協助，請聯繫 Visual Studio [訂用帳戶支援](https://visualstudio.microsoft.com/subscriptions/support/)。
 - 是否有關於 Visual Studio IDE、Azure DevOps Services 或其他 Visual Studio 產品或服務的問題？  前往 [Visual Studio 支援](https://visualstudio.microsoft.com/support/)
+
+## <a name="next-steps"></a>後續步驟
+查看您訂用帳戶中的更多專業開發機會：
+- [Pluralsight](vs-pluralsight.md)
+- [LinkedIn Learning](vs-linkedin-learning.md)
+- [MSDN Magazine](vs-msdn.md)

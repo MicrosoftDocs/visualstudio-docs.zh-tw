@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 759a1cbf711b4264478c1e7fc44a65b86328ce32
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 5f86ae2e14067a645bb39a1c8fdc0421f415a9e6
+ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63431979"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68681140"
 ---
 # <a name="rapid-web-site-profiling-with-vsperfaspnetcmd"></a>使用 VSPerfASPNETCmd 快速進行網站分析
 
@@ -41,6 +41,8 @@ ms.locfileid: "63431979"
 
  **vsperfaspnetcmd**  *websiteUrl*
 
+ 一個本機伺服器裝載的 *websiteUrl* 範例可能為 *http://localhost/MySite/default.aspx* 。 一個外部網站的範例為 *http://www.contoso.com* 。 如需詳細資訊，請參閱[對網站進行分析，但不在 Visual Studio 中開啟專案](how-to-collect-performance-data-for-a-web-site.md#to-profile-a-web-site-without-opening-a-project-in-visual-studio)。
+
 ## <a name="to-collect-detailed-timing-data-by-using-the-instrumentation-method"></a>使用檢測方法收集詳細的計時資料
 
 使用下列命令列從動態編譯的 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web 應用程式收集詳細的計時資料︰
@@ -61,14 +63,14 @@ ms.locfileid: "63431979"
 
  您也可以使用 **/Trace** 選項，包含有關 .NET 記憶體資料的詳細計時資訊︰
 
- **vsperfaspnetcmd /memory**[**:lifetime**] **/trace**`websiteUrl`
+ **vsperfaspnetcmd /memory**[ **:lifetime**] **/trace**`websiteUrl`
 
 ## <a name="to-collect-tier-interaction-data"></a>收集階層互動資料
 
 > [!WARNING]
 > 階層互動分析 (TIP) 資料可以使用任何版本的 Visual Studio 來收集。 不過，階層互動分析資料只能在 Visual Studio Enterprise 中檢視。
 >
-> 若要在 Windows 8 或 Windows Server 2012 上收集 TIP 資料，您必須使用檢測 (**/trace**) 選項。
+> 若要在 Windows 8 或 Windows Server 2012 上收集 TIP 資料，您必須使用檢測 ( **/trace**) 選項。
 
 透過取樣資料收集階層互動資料：
 
@@ -80,7 +82,7 @@ ms.locfileid: "63431979"
 
 透過 .NET 記憶體資料收集階層互動資料：
 
-**vsperfaspnetcmd /memory**[**:lifetime**] **/tip**_websiteUrl_
+**vsperfaspnetcmd /memory**[ **:lifetime**] **/tip**_websiteUrl_
 
 ## <a name="use-the-nowait-option"></a>使用 /NoWait 選項
 
@@ -88,7 +90,7 @@ ms.locfileid: "63431979"
 
 開始進行程式碼剖析：
 
-**vsperfaspnetcmd** [*/Options*] **/nowait**_websiteUrl_
+**vsperfaspnetcmd** [ */Options*] **/nowait**_websiteUrl_
 
 結束程式碼剖析：
 

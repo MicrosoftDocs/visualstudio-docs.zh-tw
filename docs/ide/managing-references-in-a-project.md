@@ -1,6 +1,6 @@
 ---
 title: 管理專案中的參考
-ms.date: 04/11/2018
+ms.date: 08/02/2019
 ms.topic: conceptual
 f1_keywords:
 - vs.ProjectPropertiesReferencePaths
@@ -21,12 +21,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 57cbff868cfdedb45b1973908ddb250ad09ea19e
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 77b52e66d0278d7e9f8446fe728cca285c8418fa
+ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66747044"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68787626"
 ---
 # <a name="manage-references-in-a-project"></a>管理專案中的參考
 
@@ -45,6 +45,8 @@ ms.locfileid: "66747044"
 - COM 元件
 
 - 其他組件或相同解決方案中專案的類別庫
+
+- 共用的專案
 
 - XML Web Service
 
@@ -109,16 +111,20 @@ Visual Basic、C#、C++ 和 JavaScript 通用 Windows 平台 (UWP) 應用程式�
 
 ## <a name="project-to-project-references"></a>專案對專案參考
 
-專案對專案參考是包含組件的專案參考；您可以使用 [專案]  索引標籤建立專案對專案參考。當給定專案路徑時，Visual Studio 即可找出組件。
+專案對專案參考是包含組件的專案參考；您可以使用 [參考管理員] 對話方塊的 [專案]  索引標籤來新增專案參考。 當給定專案路徑時，Visual Studio 即可找出組件。
 
 當您有會產生組件的專案時，您應該參考該專案，而不要使用檔案參考 (請參閱下文)。 專案對專案參考的優點是它會在組建系統中建立專案之間的相依性。 如果自上次建置的參考專案已變更，則將會建立相依專案。 檔案參考不會建立組建相依性，因此可以建置參考專案而不需建置相依專案，且參考可能會遭到淘汰。 (也就是專案可以參考先前建置的專案版本。)這會導致在 *bin* 目錄中需要單一 DLL 的數個版本，但這不可能達成。 當發生此衝突時，您會看到一則訊息，例如「警告: 無法將專案 'project' 中的相依性 'file' 複製至執行目錄，因為它會覆寫參考 'file'」。 如需詳細資訊，請參閱[針對中斷參考進行疑難排解](../ide/troubleshooting-broken-references.md)和[如何：建立及移除專案相依性](../ide/how-to-create-and-remove-project-dependencies.md)。
 
 > [!NOTE]
 > 如果某個專案的 .NET Framework 目標版本為 4.5 版，而其他專案的目標版本為第 2 版、第 3 版、3.5 版或 4.0 版，則會建立檔案參考而非專案對專案參考。
 
+## <a name="shared-project-references"></a>共用的專案參考
+
+與大多數其他專案類型不同，「共用的專案」  沒有任何二進位輸出。 取而代之的是，程式碼會編譯至參考它的每個專案中。 [共用的專案](/xamarin/cross-platform/app-fundamentals/shared-projects?tabs=windows)可讓您撰寫由一些不同應用程式專案所參考的通用程式碼。 此程式碼會編譯成每個參考專案的一部分，並且可以包含編譯器指示詞，以協助將平台專用功能併入到共用程式碼基底中。 在 [參考管理員] 對話方塊的 [共用的專案]  索引標籤上，新增對共用專案的參考。
+
 ## <a name="file-references"></a>檔案參考
 
-檔案參考是 Visual Studio 專案內容外部組件的直接參考。 您可以使用**參考管理員**的 [瀏覽]  索引標籤建立檔案參考。 當您只有組件或元件時，請使用檔案參考，不要使用會建立檔案參考作為輸出的專案。
+檔案參考是 Visual Studio 專案內容外部組件的直接參考。 您可以使用 [參考管理員] 對話方塊的 [瀏覽]  索引標籤來建立它們。 當您只有組件或元件時，請使用檔案參考，不要使用會建立檔案參考作為輸出的專案。
 
 ## <a name="see-also"></a>另請參閱
 

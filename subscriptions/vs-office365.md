@@ -3,15 +3,15 @@ title: Office 365 權益 | Microsoft Docs
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 12/19/2018
+ms.date: 08/02/2019
 ms.topic: conceptual
 description: 了解某些 Visual Studio 訂用帳戶中所含的 Office 365 權益。
-ms.openlocfilehash: 625d9ccf24c17b96afc9c79cc3b280c009e80fec
-ms.sourcegitcommit: f369ff7e84b0216f01570a486c7be80ca6d0e61a
+ms.openlocfilehash: ae28df2f66ff976fffd44f42c3063f790db9feb3
+ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68250773"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68787941"
 ---
 # <a name="office-365-proplus-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶中的 Office 365 專業增強版
 
@@ -70,3 +70,9 @@ ms.locfileid: "68250773"
 - 如需任何 EMS 元件的技術支援，請前往 https://support.microsoft.com/allproducts 並選取產品。
 - 如需 Visual Studio 訂用帳戶有關銷售、訂閱、帳戶與計費的協助，請聯繫 Visual Studio [訂用帳戶支援](https://visualstudio.microsoft.com/subscriptions/support/)。
 - 是否有關於 Visual Studio IDE、Azure DevOps 或其他 Visual Studio 產品或服務的問題？  前往 [Visual Studio 支援](https://visualstudio.microsoft.com/support/)
+
+## <a name="next-steps"></a>後續步驟
+請務必啟用這些絕佳的權益，以充分運用您的 Visual Studio 訂用帳戶：
+- [Visual Studio](vs-ide-benefit.md)
+- [Azure DevOps](vs-azure-devops.md)
+- [Azure 點數](vs-azure.md)

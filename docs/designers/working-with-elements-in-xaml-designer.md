@@ -6,14 +6,12 @@ ms.assetid: a29690bf-f212-4ac6-a77a-adc53d14102e
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.workload:
-- uwp
-ms.openlocfilehash: b8654c9a414549c4e1fee4515d359bfce4555df8
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: f80496cb54e8e7f4c99a819ddd3c07fbed5438ca
+ms.sourcegitcommit: 90c3187d804ad7544367829d07ed4b47d3f8a72d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67823819"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68821520"
 ---
 # <a name="work-with-elements-in-xaml-designer"></a>使用 XAML 設計工具中的項目
 
@@ -21,7 +19,7 @@ ms.locfileid: "67823819"
 
 ## <a name="add-an-element-to-a-layout"></a>將項目新增至版面配置
 
-「版面配置」  是調整 UI 項目大小以及定位項目的程序。 若要定位視覺效果項目，您必須將它們放在版面配置 [Panel](/uwp/api/Windows.UI.Xaml.Controls.Panel)。 `Panel` 有一個子屬性，這個屬性是 [FrameworkElement](/uwp/api/Windows.UI.Xaml.FrameworkElement) 類型的集合。 您可以使用各種 `Panel` 子項目 (例如 [Canvas](/uwp/api/Windows.UI.Xaml.Controls.Canvas)、[StackPanel](/uwp/api/Windows.UI.Xaml.Controls.StackPanel) 和 [Grid](/uwp/api/Windows.UI.Xaml.Controls.Grid)) 作為版面配置容器，並在頁面上定位和排列項目。
+「版面配置」  是調整 UI 項目大小以及定位項目的程序。 若要定位視覺效果項目，您必須將它們放在版面配置 [Panel](xref:Windows.UI.Xaml.Controls.Panel)。 `Panel` 有一個子屬性，此子屬性是 [FrameworkElement](xref:Windows.UI.Xaml.FrameworkElement) 類型的集合。 您可以使用各種 `Panel` 子元素 (例如 [Canvas](xref:Windows.UI.Xaml.Controls.Canvas)、[StackPanel](xref:Windows.UI.Xaml.Controls.StackPanel) 和 [Grid](xref:Windows.UI.Xaml.Controls.Grid)) 作為版面配置容器，並在頁面上定位和排列元素。
 
 根據預設，`Grid` 面板可做為頁面或表單中的最上層版面配置容器。 您可以在最上層頁面配置中加入配置面板、控制項或其他項目。
 
@@ -31,7 +29,7 @@ ms.locfileid: "67823819"
 
 - 將項目從 [工具箱]  拖曳至畫板。
 
-- 在 [工具箱]  中，選取其中一個繪圖工具 (例如 [Ellipse](/uwp/api/Windows.UI.Xaml.Shapes.Ellipse) 或 [Rectangle](/uwp/api/Windows.UI.Xaml.Shapes.Rectangle))，然後在使用中面板中繪製項目。
+- 在 [工具箱]  中，選取其中一個繪圖工具 (例如 [Ellipse](xref:Windows.UI.Xaml.Shapes.Ellipse) 或 [Rectangle](xref:Windows.UI.Xaml.Shapes.Rectangle))，然後在使用中面板中繪製項目。
 
 ## <a name="change-the-layering-order-of-elements"></a>變更項目的圖層順序
 
@@ -51,7 +49,7 @@ ms.locfileid: "67823819"
 
   - **移到最下層**可將項目移到這個順序的最下層。
 
-  在 [屬性] 視窗的 [版面配置]  區段中，變更 **ZIndex** 屬性。 如有重疊的項目，**ZIndex** 屬性會優先於 [文件大綱] 視窗中顯示的項目順序。 當元素重疊時，具有較高 **ZIndex** 值的元素會出現在前面。
+- 在 [屬性] 視窗的 [版面配置]  區段中，變更 **ZIndex** 屬性。 如有重疊的項目，**ZIndex** 屬性會優先於 [文件大綱] 視窗中顯示的項目順序。 當元素重疊時，具有較高 **ZIndex** 值的元素會出現在前面。
 
 ## <a name="change-the-alignment-of-an-element"></a>變更項目的對齊方式
 
@@ -88,7 +86,7 @@ XAML 設計工具中的邊界決定畫板上項目周圍的空白間距。 例�
 當您開啟邊界裝飾項但未設定相反側的邊界時，相反側的邊界會根據畫板中的項目位置設為正確的值。 請一律至少為相反側的邊界 (例如 [左]  和 [右]  邊界) 設定一個屬性。
 
 > [!IMPORTANT]
-> 放在某些配置容器 (如 <xref:Windows.UI.Xaml.Controls.Canvas>) 中的項目沒有邊界提示。 根據 <xref:Windows.UI.Xaml.Controls.StackPanel> 的方向而定，放在 `StackPanel` 內的項目具有左右邊界或上下邊界的邊界提示。
+> 放在某些版面配置容器 (例如 [Canvas](xref:Windows.UI.Xaml.Controls.Canvas)) 中的元素沒有邊界裝飾項。 視 `StackPanel` 的方向而定，放在 [StackPanel](xref:Windows.UI.Xaml.Controls.StackPanel) 內的元素會有左右邊界或上下邊界的邊界裝飾項。
 
 ## <a name="group-and-ungroup-elements"></a>將項目群組和取消群組
 
@@ -101,7 +99,7 @@ XAML 設計工具中的邊界決定畫板上項目周圍的空白間距。 例�
 2. 以滑鼠右鍵按一下選取的項目，並指向 [群組置入]  ，然後按一下您要置入群組的版面配置容器類型。
 
     > [!TIP]
-    > 如果您選取 <xref:Windows.UI.Xaml.Controls.Viewbox>、<xref:Windows.UI.Xaml.Controls.Border> 或 <xref:Windows.UI.Xaml.Controls.ScrollViewer> 來群組項目，這些項目會放在 <xref:Windows.UI.Xaml.Controls.Viewbox>、<xref:Windows.UI.Xaml.Controls.Border> 或 <xref:Windows.UI.Xaml.Controls.ScrollViewer> 的新 <xref:Windows.UI.Xaml.Controls.Grid> 面板中。 如果您將這其中一個配置容器中的項目取消群組，則只會刪除 <xref:Windows.UI.Xaml.Controls.Viewbox>、<xref:Windows.UI.Xaml.Controls.Border> 或 <xref:Windows.UI.Xaml.Controls.ScrollViewer>，並且將 <xref:Windows.UI.Xaml.Controls.Grid> 面板保留下來。 若要刪除 `Grid` 面板，請再次取消項目的群組。
+    > 如果您選取 [Viewbox](xref:Windows.UI.Xaml.Controls.Viewbox)、[Border](xref:Windows.UI.Xaml.Controls.Border) 或 [ScrollViewer](xref:Windows.UI.Xaml.Controls.ScrollViewer) 來將元素分組，元素就會放在 [Viewbox](xref:Windows.UI.Xaml.Controls.Viewbox), [Border](xref:Windows.UI.Xaml.Controls.Border)或 [ScrollViewer](xref:Windows.UI.Xaml.Controls.ScrollViewer) 內的新 [Grid](xref:Windows.UI.Xaml.Controls.Grid) 面板中。 如果您將這其中一個版面配置容器中的元素取消分組，則只會刪除 [Viewbox](xref:Windows.UI.Xaml.Controls.Viewbox)、[Border](xref:Windows.UI.Xaml.Controls.Border) 或 [ScrollViewer](xref:Windows.UI.Xaml.Controls.ScrollViewer)，[Grid](xref:Windows.UI.Xaml.Controls.Grid) 面板則會保留下來。 若要刪除 `Grid` 面板，請再次取消項目的群組。
 
 若要將項目取消群組並刪除版面配置，請以滑鼠右鍵按一下您要取消群組的群組，然後按一下 [取消群組]  。 您也可以以滑鼠右鍵按一下 [文件大綱] 視窗中的選取項目，然後按一下 [群組置入]  或 [取消群組]  ，將項目群組或取消群組。
 

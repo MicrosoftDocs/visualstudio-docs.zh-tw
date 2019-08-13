@@ -3,15 +3,15 @@ title: Visual Studio 訂用帳戶中軟體下載項目的產品可用性 |Micros
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/11/2019
+ms.date: 07/29/2019
 ms.topic: conceptual
 description: 了解 Visual Studio 訂用帳戶中軟體下載項目的產品可用性
-ms.openlocfilehash: 8377168808f3d143d3845cddf06e361f113f1642
-ms.sourcegitcommit: 57866dd72fd0e15ce61128df70729b427a2d02eb
+ms.openlocfilehash: 2b6e53ab959d91b269c4235a1438af36eae24e11
+ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "68315389"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68681699"
 ---
 # <a name="product-availability-for-software-downloads-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶中軟體下載項目的產品可用性
 您可以存取各種下載軟體，這是訂閱者權益的一部分。
@@ -38,4 +38,5 @@ ms.locfileid: "68315389"
 不確定您使用哪一個訂用帳戶？  連線到 [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) 以查看指派給您的電子郵件地址的所有訂用帳戶。 若沒有看到您的所有訂用帳戶，可能有一或多個訂用帳戶是指派到不同的電子郵件地址。  您必須以該電子郵件地址登入才能查看對應的訂用帳戶。
 
 ## <a name="next-steps"></a>後續步驟
-某些軟體下載項目可能需要產品金鑰，才能加以安裝及啟用。  如需如何取得及管理產品金鑰的詳細資料，請參閱我們的產品金鑰文章。 
+- 某些軟體下載項目可能需要產品金鑰，才能加以安裝及啟用。  如需有關如何取得及管理產品金鑰的詳細資料，請參閱我們的[產品金鑰](product-keys.md)一文。 
+- 了解如何[下載軟體](download-software.md)。

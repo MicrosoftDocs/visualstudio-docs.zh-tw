@@ -10,12 +10,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 435eb2571f709f3ed5df4effbfdf3b5f4970457b
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 153624ec6f0bdb13e4d89a92edf977d0badc7e62
+ms.sourcegitcommit: 3e74ec49a54e5c3da7631f4466128cdf4384af6b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65461402"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "68712222"
 ---
 # <a name="testing-tools-in-visual-studio"></a>Visual Studio 中的測試工具
 
@@ -26,9 +26,15 @@ Visual Studio 測試工具可協助您和小組開發及維持絕佳的高標準
 
 ## <a name="test-explorer"></a>測試總管
 
-[測試總管] 視窗可協助開發人員建立、管理及執行單元測試。 您可以使用 Microsoft 單元測試架構，或使用多種協力廠商架構和開放原始碼架構的其中一種。
+[測試總管]  視窗可協助開發人員建立、管理及執行單元測試。 您可以使用 Microsoft 單元測試架構，或使用多種協力廠商架構和開放原始碼架構的其中一種。
 
+::: moniker range="vs-2017"
 ![Visual Studio 測試總管](media/devtest-testexplorer.png)
+::: moniker-end
+
+::: moniker range="vs-2019"
+![Visual Studio 測試總管 16.2](media/vs-2019/test-explorer-16-2.PNG)
+::: moniker-end
 
 * [開始使用單元測試](unit-test-your-code.md)
 * [使用測試總管執行單元測試](run-unit-tests-with-test-explorer.md)

@@ -10,12 +10,12 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.Basic.Code_Style.General
 ms.workload:
 - multiple
-ms.openlocfilehash: c31a04d5471224ed8433bba70baa5bd1dae9125e
-ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
+ms.openlocfilehash: 4c7bb8f3e94a761023a19a5ea3361073b73d9f3b
+ms.sourcegitcommit: 90c3187d804ad7544367829d07ed4b47d3f8a72d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/22/2019
-ms.locfileid: "67328768"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68822423"
 ---
 # <a name="code-style-preferences"></a>程式碼樣式喜好設定
 
@@ -58,7 +58,7 @@ ms.locfileid: "67328768"
 
 ### <a name="preference-and-severity"></a>喜好設定和嚴重性
 
-對於此頁面上的各個程式碼樣式，您可以使用每一行的下拉式清單來設定 [喜好設定]  和 [嚴重性]  的值。 [嚴重性] 可設定為 [無]  、[建議]  、[警告]  或 [錯誤]  。 如果您想要針對程式碼樣式啟用[快速動作](../ide/quick-actions.md)，請務必將 [嚴重性]  設定為 [無]  以外的值。 當使用非慣用樣式時，會出現**快速動作**燈泡![燈泡](media/light-bulb-dropdown.png)、錯誤燈泡![錯誤燈泡](media/error-bulb.png)或螺絲起子![螺絲起子](media/screwdriver.png)圖示，而您可以選擇 [快速動作]  清單上的選項，以自動將程式碼重寫成慣用的樣式。
+對於此頁面上的各個程式碼樣式，您可以使用每一行的下拉式清單來設定 [喜好設定]  和 [嚴重性]  的值。 [嚴重性] 可設定為 [僅重構]  、[建議]  、[警告]  或 [錯誤]  。 如果您想要針對程式碼樣式啟用[快速動作](../ide/quick-actions.md)，請務必將 [嚴重性]  設定設為 [僅重構]  以外的值。 當使用非慣用樣式時，會出現**快速動作**燈泡![燈泡](media/light-bulb-dropdown.png)、錯誤燈泡![錯誤燈泡](media/error-bulb.png)或螺絲起子![螺絲起子](media/screwdriver.png)圖示，而您可以選擇 [快速動作]  清單上的選項，以自動將程式碼重寫成慣用的樣式。
 
 ## <a name="apply-code-styles"></a>套用程式碼樣式
 

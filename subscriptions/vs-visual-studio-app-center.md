@@ -1,17 +1,17 @@
 ---
 title: Visual Studio 訂用帳戶中的 Visual Studio App Center 權益 | Microsoft Docs
 author: evanwindom
-ms.author: jaunger
-manager: evelynp
-ms.date: 12/19/2018
+ms.author: lank
+manager: lank
+ms.date: 07/31/2019
 ms.topic: conceptual
 description: 了解 Visual Studio 訂用帳戶中所含的 Visual Studio App Center 權益。
-ms.openlocfilehash: 1f57f6518c82c0eb60cbea9636c9973d2c9fd624
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 1feb4660e52335f838c1e7c80428575aaf7a04cc
+ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67826209"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68787806"
 ---
 # <a name="visual-studio-app-center-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶中的 Visual Studio App Center
 
@@ -70,3 +70,6 @@ App Center 是應用程式的任務控制機制。
   - 查看完整的 [App Center 文件](/appcenter/)
 - 如需 Visual Studio 訂用帳戶有關銷售、訂閱、帳戶與計費的協助，請聯繫 Visual Studio [訂用帳戶支援](https://visualstudio.microsoft.com/subscriptions/support/)。
 - 是否有關於 Visual Studio IDE、Azure DevOps Services 或其他 Visual Studio 產品或服務的問題？  前往 [Visual Studio 支援](https://visualstudio.microsoft.com/support/)
+
+## <a name="next-steps"></a>後續步驟
+Azure 是您個人的開發/測試沙箱。  您可以佈建虛擬機器、雲端服務和其他 Azure 資源。 如果您尚未啟用您的 [Azure 權益](vs-azure.md)，請啟用。 
