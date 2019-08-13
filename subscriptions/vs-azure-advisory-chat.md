@@ -1,24 +1,22 @@
 ---
 title: Visual Studio 訂用帳戶中的 Azure 諮詢對談權益 | Microsoft Docs
 author: evanwindom
-ms.author: jaunger
-manager: evelynp
-ms.date: 12/19/2018
+ms.author: lank
+manager: lank
+ms.date: 07/29/2019
 ms.topic: conceptual
 description: 了解如何充分利用 Visual Studio 訂用帳戶中所含的 Azure 諮詢對談權益。
-ms.openlocfilehash: d3bdcdff9244a0ddab4f7be4fc030a0d4e189583
-ms.sourcegitcommit: f369ff7e84b0216f01570a486c7be80ca6d0e61a
+ms.openlocfilehash: bd5de6c74260ebdb040d16695a180a2eaed8e361
+ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68250832"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68681700"
 ---
 # <a name="azure-advisory-chat"></a>Azure 諮詢對談
-
 即時取得使用 Azure 的協助！ 包括 Azure PaaS 服務諮詢。  Visual Studio Enterprise Standard 與年度雲端訂用帳戶中包含「Azure 資訊對談」權益。
 
 ## <a name="activation-steps"></a>啟用步驟
-
 使用「Azure 諮詢對談」非常簡單。
 1. 登入 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)。
 2. 找到 [支援] 區段中的 [Azure 諮詢對談] 圖格，然後按一下 [立即對話]  。
@@ -34,7 +32,6 @@ ms.locfileid: "68250832"
     > ![Azure 諮詢對談](_img/vs-azure-advisory/vs-azure-advisory-chat.png)
 
 ## <a name="eligibility"></a>資格
-
 |                                                      訂用帳戶層級                                                      |     通道      |    優勢    | 可續約？ |
 |------------------------------------------------------------------------------------------------------------------------------|-------------------|---------------|------------|
 |                                      Visual Studio Enterprise (Standard)                                       | VL, Azure, 零售 |   一年    |    是     |
@@ -57,3 +54,6 @@ ms.locfileid: "68250832"
 ## <a name="support-resources"></a>支援資源
 - 如需 Visual Studio 訂用帳戶有關銷售、訂閱、帳戶與計費的協助，請聯繫 Visual Studio [訂用帳戶支援](https://visualstudio.microsoft.com/subscriptions/support/)。
 - 是否有關於 Visual Studio IDE、Azure DevOps Services 或其他 Visual Studio 產品或服務的問題？  前往 [Visual Studio 支援](https://visualstudio.microsoft.com/support/)
+
+## <a name="next-steps"></a>後續步驟
+許多 Visual Studio 訂用帳戶都包含 Azure 點數。  如果您尚未啟用您的點數，請查看 [Azure 權益](vs-azure.md)。 

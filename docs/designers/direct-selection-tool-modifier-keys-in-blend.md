@@ -1,5 +1,6 @@
 ---
-title: Blend 中的直接選取工具輔助按鍵
+title: 直接選取工具輔助按鍵
+titleSuffix: Blend for Visual Studio
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 21f9b951-dc2b-4d09-bd70-75caed8fb964
@@ -8,14 +9,15 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b606cbc3857ac1b30713e2c78b9c85045bcb42ff
-ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
+ms.openlocfilehash: 088c66e73c912ef6f282b7addb8debcd73b766e5
+ms.sourcegitcommit: 90c3187d804ad7544367829d07ed4b47d3f8a72d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66820396"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68821816"
 ---
-# <a name="direct-selection-tool-modifier-keys-in-blend"></a>Blend 中的直接選取工具輔助按鍵
+# <a name="direct-selection-tool-modifier-keys-in-blend-for-visual-studio"></a>Blend for Visual Studio 中的直接選取工具輔助按鍵
+
 下表列出您可以用來修改現有路徑圖形的 [直接選取]  工具 ![[直接選取] 工具](../designers/media/6dd6571f-c116-451d-8dd2-1f88b8406362.png) 快速鍵。 若要新增或移除現有路徑上的點，或結合兩個現有路徑，請使用**畫筆**工具。
 
 |若要執行這項操作|請執行|Pointer|
@@ -33,7 +35,6 @@ ms.locfileid: "66820396"
 
 ## <a name="see-also"></a>另請參閱
 
-- [鍵盤快速鍵和輔助按鍵](../designers/keyboard-shortcuts-and-modifier-keys-in-blend.md)
 - [畫板輔助按鍵](../designers/artboard-modifier-keys-in-blend.md)
 - [畫筆工具輔助按鍵](../designers/pen-tool-modifier-keys-in-blend.md)
 - [繪製圖案與路徑](../designers/draw-shapes-and-paths.md)

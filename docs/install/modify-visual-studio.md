@@ -3,7 +3,7 @@ title: 修改 Visual Studio 2017
 titleSuffix: ''
 description: 了解如何逐步修改 Visual Studio。
 ms.custom: H1Hack27Feb2017,seodec18
-ms.date: 06/25/2019
+ms.date: 07/31/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - modify Visual Studio
@@ -18,12 +18,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 287ad470a94689b92cacb443c2b5f88eb30f5a70
-ms.sourcegitcommit: 01c3c9dcade5d913bde2c7efa8c931a7b04e6cd0
+ms.openlocfilehash: ad5b8a0c261ed967710480b0abd3a2b9d34f01ce
+ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/25/2019
-ms.locfileid: "67365414"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68681377"
 ---
 # <a name="modify-visual-studio-by-adding-or-removing-workloads-and-components"></a>透過新增或移除工作負載和元件來修改 Visual Studio
 
@@ -86,7 +86,7 @@ ms.locfileid: "67365414"
 
      例如，在執行 Windows 10，的電腦上，選取 [開始]  ，然後捲動到字母 [V]  ，它在其中列為 [Visual Studio Installer]  。
 
-     ![開啟 Visual Studio 安裝程式](media/vs2019-visual-studio-installer.png "開啟 Visual Studio 安裝程式")
+     ![從 Windows 開啟 Visual Studio 安裝程式](media/vs-2019/vs-installer-windows-start.png "開啟 Visual Studio 安裝程式")
 
      > [!NOTE]
      > 您也可以在下列位置找到 Visual Studio 安裝程式：
@@ -97,7 +97,7 @@ ms.locfileid: "67365414"
 
 1. 請在安裝程式中尋找您安裝的 Visual Studio 版本，然後選擇 [修改]  。
 
-     ![更新或修改 Visual Studio](media/vs-2019/vs-installer-modify.png "更新或修改 Visual Studio 2017")
+     ![更新或修改 Visual Studio](media/vs-2019/vs-installer-modify.png "更新或修改 Visual Studio 2019")
 
 1. 在 [工作負載]  索引標籤中，選取或取消選取您想要安裝或解除安裝的工作負載。
 

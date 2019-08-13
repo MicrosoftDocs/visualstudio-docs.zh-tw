@@ -1,21 +1,22 @@
 ---
-title: Visual Studio 訂用帳戶中的 Azure 社群權益 | Microsoft Docs
+title: Visual Studio 訂用帳戶中的 Azure 社群支援權益 | Microsoft Docs
 author: evanwindom
-ms.author: jaunger
-manager: evelynp
-ms.date: 12/19/2018
+ms.author: lank
+manager: lank
+ms.date: 07/29/2019
 ms.topic: conceptual
-description: 了解所選取 Visual Studio 訂用帳戶中所含的 Azure 社群權益。
-ms.openlocfilehash: 9cd166d2e6be64713e6e79569133eea887568da1
-ms.sourcegitcommit: f369ff7e84b0216f01570a486c7be80ca6d0e61a
+description: 了解所選 Visual Studio 訂用帳戶中所包含的「Azure 社群支援」權益。
+ms.openlocfilehash: 0f03d269ab316801a75cbb3b1b618d722ec46b89
+ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68250827"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68681270"
 ---
-# <a name="azure-community"></a>Azure 社群
-
+# <a name="azure-community-support-forum-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶中的 Azure 社群支援論壇
 直接透過「Azure 社群」從精選支援論壇取得協助。  「Azure 社群」權益可讓您存取著重在 Azure 相關主題的論壇集合。
+
+## <a name="available-topics"></a>可用主題
 
 |                                       |                                                    |                                      |
 |---------------------------------------|----------------------------------------------------|--------------------------------------|
@@ -27,7 +28,7 @@ ms.locfileid: "68250827"
 | [Azure 管理入口網站](https://social.msdn.microsoft.com/Forums/home?forum=windowsazuremanagement&filter=alltypes&sort=lastpostdesc)               | [Azure 備份](https://social.msdn.microsoft.com/forums/home?forum=windowsazureonlinebackup&filter=alltypes&sort=lastpostdesc)                                       | [Azure Stack](https://social.msdn.microsoft.com/forums/home?forum=AzureStack&filter=alltypes&sort=lastpostdesc)                          |
 | [Azure 虛擬機器](https://social.msdn.microsoft.com/Forums/home?forum=WAVirtualMachinesforWindows&filter=alltypes&sort=lastpostdesc)                | [Azure Site Recovery](https://social.msdn.microsoft.com/forums/home?forum=hypervrecovmgr&filter=alltypes&sort=lastpostdesc)                                | [Azure Marketplace](https://social.msdn.microsoft.com/forums/home?forum=DataMarket&filter=alltypes&sort=lastpostdesc)                    |
 
-## <a name="activation-steps"></a>啟用步驟
+## <a name="get-started"></a>開始使用
 開始使用 Azure 社群非常簡單。
 1. 登入 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)。
 
@@ -66,3 +67,6 @@ Azure 社群權益的可用性取決於訂用帳戶層級，如下所示：
 - [Azure 文件](/azure/)。
 - 需要有關 Visual Studio 訂用帳戶銷售、訂用帳戶、帳戶與計費的協助？  請連絡 Visual Studio [訂用帳戶支援](https://visualstudio.microsoft.com/subscriptions/support/)。
 - 是否有關於 Visual Studio IDE、Azure DevOps Services 或其他 Visual Studio 產品或服務的問題？  前往 [Visual Studio 支援](https://visualstudio.microsoft.com/support/)
+
+## <a name="next-steps"></a>後續步驟
+您知道許多 Visual Studio 訂用帳戶都隨附 Azure 點數嗎？  了解如何[啟用](vs-azure.md)您的點數。

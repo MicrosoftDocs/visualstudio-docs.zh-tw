@@ -1,17 +1,17 @@
 ---
 title: Parasoft Virtualize/SOAtest Professional Desktop 權益 | Microsoft Docs
 author: evanwindom
-ms.author: jaunger
-manager: evelynp
-ms.date: 12/19/2018
+ms.author: lank
+manager: lank
+ms.date: 07/31/2019
 ms.topic: conceptual
 description: 了解如何啟用 Visual Studio 訂用帳戶中所含的 Parasoft Virtualize/SOA Test Professional 訂用帳戶。
-ms.openlocfilehash: bd867a47b4b42c3327d60ccab05735f0554409ad
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 64aa689780dc30a5a6fcadf3e31ec24d3289056a
+ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67824647"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68787727"
 ---
 # <a name="parasoft-virtualizesoatest-professional-desktop-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶中的 Parasoft Virtualize/SOAtest Professional Desktop
 
@@ -27,7 +27,10 @@ ms.locfileid: "67824647"
 
 3. 會將您重新導向至 Parasoft 網站，您將在其中建立帳戶。  只需要提供您的連絡資訊，然後按一下 [提交]  。
    > [!div class="mx-imgBorder"]
-   > ![Parasoft 權益建立帳戶](_img/vs-parasoft/vs-parasoft-account-cropped.png)
+   > ![Parasoft 權益建立帳戶](_img/vs-parasoft/vs-parasoft-new-account.png)
+
+   > [!Note]
+   > 頁面上的表格會顯示一整年的價格，再加上 Visual Studio 折扣。 在您使用您的 6 個月訂閱之後，便可適用此價格。  
 
 4. 您會在建立您的帳戶之後看到通知，告知已傳送給您一封包含下載指示的電子郵件  (如果您在收件匣中看不到該電子郵件，請記得檢查垃圾郵件資料夾)。
 
@@ -56,14 +59,12 @@ ms.locfileid: "67824647"
 14. 指定您要安裝應用程式捷徑的位置，然後按一下 [下一步]  。
 
 15. HTTPS 網站上的特定功能測試需要 SOAtest Web 根憑證授權單位憑證。  選擇是否安裝根 CA 憑證，然後按一下 [下一步]  。
-    > [!div class="mx-imgBorder"]
-    > ![Parasoft 權益根 CA 憑證](_img/vs-parasoft/vs-parasoft-install-root-ca.png)
+    > [!NOTE]
+    > Parasoft 強烈建議您選擇安裝憑證。
 
 16. 選擇是否要在安裝期間建立桌面和快速啟動圖示，然後按一下 [下一步]  。
 
 17. 確認您已選取的選項，然後按一下 [安裝]  開始安裝軟體。
-    > [!div class="mx-imgBorder"]
-    > ![Parasoft 權益已可開始安裝](_img/vs-parasoft/vs-parasoft-ready-to-install.png)
 
 18. 安裝程式完成時，請按一下 [完成]  。 您現在已準備好開始使用 Parasoft Virtualize/SOAtest Professional Desktop 權益！
 
@@ -89,3 +90,6 @@ ms.locfileid: "67824647"
   - Parasoft Resource Center： https://www.parasoft.com/resources/
 - 如需 Visual Studio 訂用帳戶有關銷售、訂閱、帳戶與計費的協助，請聯繫 Visual Studio [訂用帳戶支援](https://visualstudio.microsoft.com/subscriptions/support/)。
 - 是否有關於 Visual Studio IDE、Azure DevOps Services 或其他 Visual Studio 產品或服務的問題？  前往 [Visual Studio 支援](https://visualstudio.microsoft.com/support/)
+
+## <a name="next-steps"></a>後續步驟
+啟用您的 [Azure 點數](vs-azure.md)來運用您自己的開發沙箱。 

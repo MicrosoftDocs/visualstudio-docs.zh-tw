@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/19/2019
 ms.topic: conceptual
 description: 如何新增 Visual Studio 訂用帳戶的替代身分識別，以用於 Azure DevOps 和 Azure
-ms.openlocfilehash: 1c6f052f4e5c7d3382f8244dd8e551f9e400513f
-ms.sourcegitcommit: 485881e6ba872c7b28a7b17ceaede845e5bea4fe
+ms.openlocfilehash: 5a496af29e520b72e24348a68692efc582fff600
+ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68378044"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68681223"
 ---
 # <a name="identities-for-visual-studio-subscribers"></a>Visual Studio 訂閱者身分識別
 當您啟用 Visual Studio 訂用帳戶時，我們會連結您在 Visual Studio 訂用帳戶啟用期間所使用的身分識別 (或登入)。 這樣，我們就可以在 [Visual Studio 訂閱者入口網站](https://my.visualstudio.com?wt.mc_id=o~msft~docs)、Azure DevOps 與 Azure 中辨識您。
@@ -21,7 +21,7 @@ ms.locfileid: "68378044"
 
 在 Azure 中，當您啟用您訂閱者權益的[每月 Azure 點數](https://azure.microsoft.com/pricing/member-offers/credit-for-visual-studio-subscribers/)時，我們會檢查您的 Visual Studio 訂用帳戶狀態。
 
-在 [Visual Studio 訂閱者入口網站](https://my.visualstudio.com?wt.mc_id=o~msft~docs)中，您可以新增**替代身分識別** -- 除了啟用期間所使用的身分識別之外。 現在，如果您使用 Microsoft 帳戶啟用您的訂用帳戶，我們可讓您新增替代身分識別。 這樣您也可以新增公司或學校帳戶 (登入 Visual Studio、Office 365 或您公司或學校網路時所用的帳戶)，讓您使用個人帳戶和公司或學校帳戶來存取 Azure DevOps。
+在 [Visual Studio 訂閱者入口網站](https://my.visualstudio.com?wt.mc_id=o~msft~docs)中，您可以新增**替代身分識別** -- 除了啟用期間所使用的身分識別之外。 如果您使用 Microsoft 帳戶來啟用您的訂用帳戶，我們可讓您新增替代身分識別。 這樣您也可以新增公司或學校帳戶 (登入 Visual Studio、Office 365 或您公司或學校網路時所用的帳戶)，讓您使用個人帳戶和公司或學校帳戶來存取 Azure DevOps。
 
 ## <a name="add-an-alternate-account-to-your-subscription"></a>將替代帳戶新增至您的訂用帳戶
 將替代帳戶新增至 Visual Studio 訂用帳戶，可讓您使用與獲指派訂用帳戶不同的身分識別來存取訂用帳戶權益 (例如 Azure DevOps 和 Azure)。 過去，只有在將 Visual Studio (VS) 訂用帳戶指派給 Microsoft 帳戶 (MSA) 時，才能使用這項功能。 我們已擴充 Azure Active Directory (Azure AD) 中公司或學校帳戶的這個功能。

@@ -1,49 +1,33 @@
 ---
 title: Visual Studio 訂用帳戶的 MSDN Magazine 權益 | Microsoft Docs
 author: evanwindom
-ms.author: jaunger
-manager: evelynp
-ms.date: 12/19/2018
+ms.author: lank
+manager: lank
+ms.date: 07/30/2019
 ms.topic: conceptual
 description: 註冊以接收 Visual Studio 訂用帳戶中所含的 MSDN Magazine 訂用帳戶。
-ms.openlocfilehash: 8bc38545ce497c0f8f85dfe74db841ef1ae4ee78
-ms.sourcegitcommit: f369ff7e84b0216f01570a486c7be80ca6d0e61a
+ms.openlocfilehash: 0cc6757a77536a7bd8073418be8729802e8aaaae
+ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68250791"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68681570"
 ---
 # <a name="the-msdn-magazine-benefit-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶中的 MSDN Magazine 權益
-
 全面涵蓋適用於實用方案及實際問題的 Microsoft 技術。  根據您的訂用帳戶，您有權存取印出的雜誌，或提早存取數位版本。
 
 ## <a name="activation-steps"></a>啟用步驟
-啟用您權益的步驟取決於您選擇的版本。
-
-### <a name="digital-edition"></a>數位版
-數位版已可提供 Visual Studio Dev Essentials 成員使用。
-
-1. 若要存取 MSDN Magazine 數位版，請登入 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)。
+1. 若要訂閱 MSDN Magazine，請登入 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)。
 2. 在 [專業開發] 區段中，找出 MSDN Magazine 磚，並按一下 [存取]  。
-
-### <a name="printed-edition"></a>列印版
-1. 若要開始接收您的 MSDN Magazine 訂用帳戶，請登入 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)
-2. 在 [專業開發] 區段中，找出 MSDN Magazine 磚，並按一下 MSDN Magazine 訂用帳戶磚上的 [訂閱]  。 (按一下磚右下角的 [!] 以存取數位版。)
-   > [!div class="mx-imgBorder"]
-   > ![MSDN Magazine 權益磚](_img/vs-msdn/vs-msdn-tile.png)
-
 3. 在 [MSDN Magazine] 頁面上，選擇您慣用的訂用帳戶類型。  不論您居住在哪裏，都可以選擇免費的數位版本。  美國居民可以免費使用印出的版本。  印出的版本若傳送到非美國地址，則需要運費。
    > [!div class="mx-imgBorder"]
    > ![MSDN Magazine 權益訂用帳戶](_img/vs-msdn/vs-msdn-subs-page-resized.png)
-
 4. 提供要求的連絡資訊，然後按一下 [提交]   (所選取雜誌的版本會出現在 [Magazine Subscription] (雜誌訂用帳戶) 區段中。  如果您已選擇印出的版本，則第一個選項是 [Yes!  I want to receive 1 year (12 issues) of MSDN Magazine for FREE] (是! 我要免費接收 1 年 (12 個問題) 的 MSDN Magazine))。
    > [!div class="mx-imgBorder"]
    > ![MSDN Magazine 權益設定檔](_img/vs-msdn/vs-msdn-profile.png)
-
 5. 這樣就全部完成了。  根據您選擇的雜誌版本，請使用具有下個版本之最新線上版本的連結，開始接收印出的雜誌或電子郵件。  敬祝您使用愉快！
 
 ## <a name="eligibility"></a>資格
-
 | 訂用帳戶層級                                                 |     通道                                            | 優勢                                                          | 可續約？    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard)   | VL, Azure, 零售, 選取的 NFR<sup>1</sup> |列印版       |  否。  僅提供給新訂閱者使用          |
@@ -67,3 +51,9 @@ ms.locfileid: "68250791"
 ## <a name="support-resources"></a>支援資源
 - 如需 Visual Studio 訂用帳戶有關銷售、訂閱、帳戶與計費的協助，請聯繫 Visual Studio [訂用帳戶支援](https://visualstudio.microsoft.com/subscriptions/support/)。
 - 是否有關於 Visual Studio IDE、Azure DevOps Services 或其他 Visual Studio 產品或服務的問題？  前往 [Visual Studio 支援](https://visualstudio.microsoft.com/support/)
+
+## <a name="next-steps"></a>後續步驟
+查看您訂用帳戶中的更多專業開發機會：
+- [Pluralsight](vs-pluralsight.md)
+- [LinkedIn Learning](vs-linkedin-learning.md)
+- [DataCamp](vs-datacamp.md)
