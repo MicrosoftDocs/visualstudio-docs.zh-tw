@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f6d8249503ed775d584c913d685ae35473134be
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 14e2d6f2c753c56d1628d20e921b7dff2aa83471
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62950649"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926014"
 ---
 # <a name="showwebbrowser-command"></a>ShowWebBrowser 命令
 
@@ -31,30 +31,30 @@ View.ShowWebBrowser URL [/new][/ext]
 ```
 
 ## <a name="arguments"></a>引數
- `URL`
+`URL`
 
- 必要項。 網站 URL (統一資源定位器)。
+必要項。 網站 URL (統一資源定位器)。
 
 ## <a name="switches"></a>參數
- /new
+/new
 
- 選擇性。 指定頁面會出現在網頁瀏覽器的新執行個體。
+選擇性。 指定頁面會出現在網頁瀏覽器的新執行個體。
 
- /ext
+/ext
 
- 選擇性。 指定頁面會出現在 IDE 外面的預設網頁瀏覽器。
+選擇性。 指定頁面會出現在 IDE 外面的預設網頁瀏覽器。
 
 ## <a name="remarks"></a>備註
- **ShowWebBrowser** 命令的別名是 **navigate** 或 **nav**。
+**ShowWebBrowser** 命令的別名是 **navigate** 或 **nav**。
 
 ## <a name="example"></a>範例
- 下列範例會在 IDE 外部的網頁瀏覽器中顯示 Microsoft Docs 首頁。 如果已經開啟網頁瀏覽器執行個體，便會使用它，否則系統會啟動新的執行個體。
+下列範例會在 IDE 外部的網頁瀏覽器中顯示 Microsoft Docs 首頁。 如果已經開啟網頁瀏覽器執行個體，便會使用它，否則系統會啟動新的執行個體。
 
 ```cmd
 >View.ShowWebBrowser https://docs.microsoft.com /ext
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [Visual Studio 命令](../../ide/reference/visual-studio-commands.md)
 - [命令視窗](../../ide/reference/command-window.md)

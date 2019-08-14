@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e45a6c63cb1f886c1440b93d58f944458f61290
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 75afe1cdd0d1755d2953e6b9e6e3e85a089b3303
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62811696"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926131"
 ---
 # <a name="quick-watch-command"></a>快速監看式命令
 可顯示[快速監看式](../../debugger/watch-and-quickwatch-windows.md)視窗的 [運算式] 欄位中所選取或指定的文字。 您可以使用此對話方塊來計算偵錯工具辨識的變數或運算式目前的值，或暫存器的內容。 此外，您可以變更任何非 const 變數的值或任何暫存器的內容。
@@ -30,12 +30,13 @@ Debug.QuickWatchq [text]
 ```
 
 ## <a name="arguments"></a>引數
- `text`
 
- 選擇性。 要新增至 [快速監看式] 對話方塊的文字。
+`text`\
+選擇性。 要新增至 [快速監看式]  對話方塊的文字。
 
 ## <a name="remarks"></a>備註
- 如果省略 `text`，則會將游標處目前選取的文字或字組新增至監看式視窗。
+
+如果省略 `text`，則會將游標處目前選取的文字或字組新增至監看式視窗。
 
 ## <a name="example"></a>範例
 
@@ -43,7 +44,7 @@ Debug.QuickWatchq [text]
 >Debug.QuickWatch
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [在 Visual Studio 中使用監看式及快速監看式視窗在變數設定監看式](../../debugger/watch-and-quickwatch-windows.md)
 - [Visual Studio 命令](../../ide/reference/visual-studio-commands.md)

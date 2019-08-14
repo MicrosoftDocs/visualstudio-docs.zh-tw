@@ -15,12 +15,12 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: dd4ae23899871644f61f3bb903fc2c4ad7880b53
-ms.sourcegitcommit: 9fc8b144d4ed1c46aba87c0b7e1d24454e0eea9d
+ms.openlocfilehash: 1f4a055f62fe76c701858f82b4778f7a3b19fa0a
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "68493335"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68918780"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Visual Studio 2019 的新功能
 
@@ -65,7 +65,7 @@ C# 中有許多全新且非常有用的重構，讓您輕鬆就能組織您的�
 
 [Visual Studio IntelliCode](/visualstudio/intellicode/) 可使用人工智慧 (AI) 來強化您的軟體開發工作。 IntelliCode 在 GitHub 上的 2,000 個開放原始碼專案中訓練 (每個專案各有超過 100 顆星) 以產生建議。
 
- ![Visual Studio 2019 中的 IntelliCode 動畫](media/vs-2019/IntelliCode.gif)
+![Visual Studio 2019 中的 IntelliCode 動畫](media/vs-2019/IntelliCode.gif)
 
 以下是 Visual Studio IntelliCode 可協助提高生產力的幾種方式：
 

@@ -14,12 +14,12 @@ dev_langs:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a6f1c524b879d5d5476491a8979d86449f3d43c0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 49691b2031d1d935871a73833924e9dc4aa46dcd
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63002527"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68918413"
 ---
 # <a name="generate-and-run-a-coded-web-performance-test"></a>產生和執行 Web 效能測試程式碼
 
@@ -85,16 +85,16 @@ Web 效能測試是透過瀏覽您的 Web 應用程式來錄製。 測試包含�
 ## <a name="qa"></a>問與答
 
 ### <a name="q-can-i-run-more-than-one-test-at-a-time"></a>問：我可以同時執行多個測試嗎？
- **答：** 可以，請使用 [方案總管] 中的右鍵 (操作) 功能表。
+**答：** 可以，請使用 [方案總管]  中的右鍵 (操作) 功能表。
 
 ### <a name="q-should-i-add-a-data-source-before-or-after-i-generate-a-coded-test"></a>問：我應該在產生自動程式化測試之前或之後新增資料來源？
- **答：** 在您產生自動程式化測試之前，新增[資料來源](../test/add-a-data-source-to-a-web-performance-test.md)比較容易，因為會自動為您產生程式碼。
+**答：** 在您產生自動程式化測試之前，新增[資料來源](../test/add-a-data-source-to-a-web-performance-test.md)比較容易，因為會自動為您產生程式碼。
 
- 當您執行具有資料來源的程式碼測試時，可能會看到下列錯誤訊息：
+當您執行具有資料來源的程式碼測試時，可能會看到下列錯誤訊息：
 
- **無法在代理程式 \<<電腦名稱> 上執行測試 \<測試名稱>：並未將物件參考設為物件的執行個體。**
+**無法在代理程式 \<<電腦名稱> 上執行測試 \<測試名稱>：並未將物件參考設為物件的執行個體。**
 
- 發生此錯誤的原因是測試類別擁有已定義的 DataSourceAttribute，而沒有相對應的 DataBindingAttribute。 若要解決這個錯誤，請加入適當的 DataBindingAttribute、刪除它，或在程式碼註解它。
+發生此錯誤的原因是測試類別擁有已定義的 DataSourceAttribute，而沒有相對應的 DataBindingAttribute。 若要解決這個錯誤，請加入適當的 DataBindingAttribute、刪除它，或在程式碼註解它。
 
 ### <a name="q-should-i-add-validation-and-extraction-rules-before-or-after-i-generate-a-coded-test"></a>問：我應該在產生自動程式化測試之前或之後新增驗證和擷取規則？
- **答：** 在產生自動程式化測試之前新增驗證規則和擷取規則比較容易；不過建議您使用[自動程式化 UI 測試](../test/use-ui-automation-to-test-your-code.md)進行驗證。
+**答：** 在產生自動程式化測試之前新增驗證規則和擷取規則比較容易；不過建議您使用[自動程式化 UI 測試](../test/use-ui-automation-to-test-your-code.md)進行驗證。

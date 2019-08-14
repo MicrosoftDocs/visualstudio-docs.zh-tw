@@ -8,12 +8,12 @@ ms.assetid: de10dabb-02ed-403b-9e6f-0b735524988c
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3755a0ebc0227a62a2a23bc15d88d4d008ab733e
-ms.sourcegitcommit: 044bb54cb4552c8f4651feb11d62e52726117e75
+ms.openlocfilehash: 4d50303596cec88bd5463b2ad1df713991c8932c
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68662078"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68923666"
 ---
 # <a name="load-test-run-settings-properties"></a>負載測試回合設定屬性
 
@@ -45,7 +45,7 @@ ms.locfileid: "68662078"
 |**已完成之測試的儲存記錄檔頻率**|指定寫入測試記錄檔的頻率。 此數字表示次數，即測試每執行到輸入的次數，就會儲存至測試記錄檔。 例如，如果輸入值 10，即等於指定將第 10、20、30 次 (依此類推) 的測試寫入至測試記錄檔。 將值設定為 0 表示不儲存測試記錄檔。|
 |**測試失敗時儲存記錄檔**|布林值，用於判斷當負載測試中的測試失敗時是否要儲存測試記錄。 預設為 `True`。<br /><br /> 如需詳細資訊，請參閱[如何：指定測試失敗是否會儲存至測試記錄](../test/how-to-specify-if-test-failures-are-saved-to-test-logs.md)|
 
- 如需詳細資訊，請參閱[修改負載測試記錄設定](../test/modify-load-test-logging-settings.md)。
+如需詳細資訊，請參閱[修改負載測試記錄設定](../test/modify-load-test-logging-settings.md)。
 
 ## <a name="results-properties"></a>結果屬性
 
@@ -70,7 +70,7 @@ ms.locfileid: "68662078"
 |**測試反覆項目**|指定在負載測試完成之前所要執行的個別測試總數。 這個屬性只有在 [使用測試反覆項目] 屬性為 `True` 時才適用。|
 |**使用測試反覆項目**|如果 [使用測試反覆項目] 為 `True`，則負載測試將會反覆執行，直到負載測試內完成之個別測試數目達到 [測試反覆項目] 屬性所指定的數目為止。 在這種情況下，將會忽略以時間為主的設定，包括 [準備持續時間]、[執行持續時間] 和 [緩和持續時間]。 如果 [使用測試反覆項目] 為 `False`，則會套用所有時間設定，而會忽略 [測試反覆項目]。|
 
- 如需詳細資訊，請參閱[如何：在回合設定中指定測試反覆項目的數目](../test/how-to-specify-the-number-of-test-iterations-in-a-load-test.md)。
+如需詳細資訊，請參閱[如何：在回合設定中指定測試反覆項目的數目](../test/how-to-specify-the-number-of-test-iterations-in-a-load-test.md)。
 
 ## <a name="timing-properties"></a>計時屬性
 

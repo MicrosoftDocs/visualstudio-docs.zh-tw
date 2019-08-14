@@ -8,18 +8,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 67031266ce9b2ded595ab448d7c45674932b8751
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c99d8571480dd98726a5f1ae5772162e97e0baed
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62892541"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68925740"
 ---
 # <a name="walkthrough-linqtoxmldatabinding-example"></a>逐步解說：LinqToXmlDataBinding 範例
-此逐步解說描述 LinqToXmlDataBinding 範例，並描述其兩個主要原始程式檔 (L2DBForm.xaml 和 L2DBForm.xaml.cs) 一些更有趣的內容。
+此逐步解說描述 LinqToXmlDataBinding 範例，並描述其兩個主要原始程式檔 (L2DBForm.xaml  和 L2DBForm.xaml.cs  ) 一些更有趣的內容。
 
 ## <a name="prerequisites"></a>必要條件
- 在您閱讀此逐步解說前，強烈建議您建置並執行 LinqToXmlDataBinding 程式，如[如何：建置並執行 LinqToXmlDataBinding 範例](../designers/how-to-build-and-run-the-linqtoxmldatabinding-example.md)中所述。
+在您閱讀此逐步解說前，強烈建議您建置並執行 LinqToXmlDataBinding 程式，如[如何：建置並執行 LinqToXmlDataBinding 範例](../designers/how-to-build-and-run-the-linqtoxmldatabinding-example.md)中所述。
 
 ## <a name="remarks"></a>備註
  LinqToXmlDataBinding 程式是由 C# 和 XAML 原始程式檔撰寫的 Windows Presentation Foundation (WPF) 應用程式。 該程式包含定義書籍清單以及讓使用者檢視、加入、刪除與編輯這些項目的內嵌 XML 文件， 並以下列兩個主要原始程式檔組成：

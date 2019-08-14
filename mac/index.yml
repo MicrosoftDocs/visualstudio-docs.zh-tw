@@ -5,7 +5,7 @@ metadata:
   description: 本文介紹 Visual Studio for Mac 的功能。
   author: asb3993
   ms.author: amburns
-  ms.date: 04/02/2019
+  ms.date: 08/08/2019
   ms.topic: landing-page
   ms.prod: visual-studio-mac
   ms.technology: vs-ide-general
@@ -17,7 +17,7 @@ sections:
       - type: list
         style: cards
         className: cardsM
-        columns: 2
+        columns: 3
         items:
           - href: ~/installation.md
             html: <p></p>
@@ -29,6 +29,11 @@ sections:
             image:
               src: 'https://docs.microsoft.com/media/logos/logo_vs-mac.svg'
             title: 導覽 Visual Studio for Mac
+          - href: 'https://docs.microsoft.com/visualstudio/releasenotes/vs2019-mac-relnotes'
+            html: <p></p>
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_whats-new.svg'
+            title: Visual Studio for Mac 版本資訊
   - title: 我可以建置哪些應用程式？
     items:
       - type: paragraph
@@ -108,3 +113,15 @@ sections:
             image:
               src: 'https://docs.microsoft.com/media/common/i_pull-request.svg'
             title: 版本控制
+  - title: 我需要其他協助
+    items:
+      - type: paragraph
+        text: 其他實用內容的連結
+      - type: list
+        style: unordered
+        items:
+          - html: '<a href="https://visualstudio.microsoft.com/vs/support/mac/">Visual Studio for Mac 支援 – 常見問題集</a>'
+          - html: '<a href="https://visualstudio.microsoft.com/vs/pricing/">定價和訂用帳戶</a>'
+          - html: '<a href="https://visualstudio.microsoft.com/vs/compare/">比較版本</a>'
+          - html: '<a href="https://my.visualstudio.com/Downloads?q=Visual%20Studio%20for%20Mac">訂閱者存取 (包含較舊的下載內容)</a>'
+          - html: '<a href="https://code.visualstudio.com">Visual Studio Code</a>'

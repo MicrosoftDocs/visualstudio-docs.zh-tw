@@ -19,12 +19,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 81245640c8c73b77dc563c28f1d3d20168203029
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ec9b86958f2e3b3e768b321db17e707dced1d78b
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62793080"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926277"
 ---
 # <a name="accessibility-products-and-services-from-microsoft"></a>Microsoft 的協助工具產品和服務
 
@@ -46,19 +46,19 @@ Microsoft 致力於使其產品和服務對於每個人都更容易使用。 下
 
 ## <a name="windows"></a> Windows 協助工具功能
 
- Windows 作業系統具備許多內建的協助工具功能，方便無法打字或無法使用滑鼠、視障或弱視、失聰或聽障等人士使用。 這些功能會在安裝期間安裝。 如需這些功能的詳細資訊，請參閱 Windows 說明和 [Microsoft 協助工具](http://go.microsoft.com/fwlink/?LinkId=8431) \(英文\) 網站。
+Windows 作業系統具備許多內建的協助工具功能，方便無法打字或無法使用滑鼠、視障或弱視、失聰或聽障等人士使用。 這些功能會在安裝期間安裝。 如需這些功能的詳細資訊，請參閱 Windows 說明和 [Microsoft 協助工具](http://go.microsoft.com/fwlink/?LinkId=8431) \(英文\) 網站。
 
 ### <a name="free-step-by-step-tutorials"></a>免費逐步教學課程
 
- Microsoft 提供一系列逐步教學課程，提供在您的電腦上調整協助工具選項和設定的詳細程序。 這項資訊以逐步方式呈現，以便您可以了解如何使用滑鼠、鍵盤或兩者的組合。
+Microsoft 提供一系列逐步教學課程，提供在您的電腦上調整協助工具選項和設定的詳細程序。 這項資訊以逐步方式呈現，以便您可以了解如何使用滑鼠、鍵盤或兩者的組合。
 
- 若要尋找 Microsoft 產品的逐步教學課程，請參閱 [Microsoft 協助工具](http://go.microsoft.com/fwlink/?LinkId=8431)網站。
+若要尋找 Microsoft 產品的逐步教學課程，請參閱 [Microsoft 協助工具](http://go.microsoft.com/fwlink/?LinkId=8431)網站。
 
 ### <a name="assistive-technology-products-for-windows"></a>適用於 Windows 的輔助技術產品
 
- 有各式各樣的輔助技術產品可讓電腦更方便身障人士使用。 您可以在 [Microsoft 協助工具](http://go.microsoft.com/fwlink/?LinkId=8431) \(英文\) 網站上搜尋執行於 Windows 的輔助技術產品目錄。
+有各式各樣的輔助技術產品可讓電腦更方便身障人士使用。 您可以在 [Microsoft 協助工具](http://go.microsoft.com/fwlink/?LinkId=8431) \(英文\) 網站上搜尋執行於 Windows 的輔助技術產品目錄。
 
- 如果您使用輔助技術，請務必連絡輔助技術廠商，然後再升級軟體或硬體，以檢查是否有可能的相容性問題。
+如果您使用輔助技術，請務必連絡輔助技術廠商，然後再升級軟體或硬體，以檢查是否有可能的相容性問題。
 
 ## <a name="altfortmats"></a> 替代格式的文件
 

@@ -7,12 +7,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 889195101123e98207b0b25f05b0aa24355abc95
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 5c10a624d78c1dc362c9d0e5d7c0e58e24efc3cf
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65461622"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68918363"
 ---
 # <a name="overview-of-test-agents-and-test-controllers-for-running-load-tests"></a>用於執行負載測試的測試代理程式和測試控制器概觀
 
@@ -69,17 +69,17 @@ Visual Studio 可以使用實體或虛擬機器產生應用程式適用的模擬
 
 測試代理程式會以做為服務的方式執行，接聽來自測試控制器的要求以啟動新的測試。 當測試代理程式收到要求時，測試代理程式服務會啟動執行測試所在的處理序。 每個測試代理程式都會執行相同的負載測試。
 
- 測試代理程式由系統管理員指派權重，並根據測試代理程式的加權來分散負載。 例如，如果測試代理程式 1 的加權是 30，測試代理程式 2 的加權是 70，負載設定為 1000 位使用者，那麼測試代理程式 1 會模擬 300 位虛擬使用者，而測試代理程式 2 會模擬 700 位虛擬使用者。 請參閱[使用 Visual Studio 管理測試控制器和測試代理程式](../test/manage-test-controllers-and-test-agents.md)。
+測試代理程式由系統管理員指派權重，並根據測試代理程式的加權來分散負載。 例如，如果測試代理程式 1 的加權是 30，測試代理程式 2 的加權是 70，負載設定為 1000 位使用者，那麼測試代理程式 1 會模擬 300 位虛擬使用者，而測試代理程式 2 會模擬 700 位虛擬使用者。 請參閱[使用 Visual Studio 管理測試控制器和測試代理程式](../test/manage-test-controllers-and-test-agents.md)。
 
- 測試代理程式會以一組測試和一組模擬參數做為輸入。 重要概念是測試與執行測試所在的電腦並無關聯。
+測試代理程式會以一組測試和一組模擬參數做為輸入。 重要概念是測試與執行測試所在的電腦並無關聯。
 
 ## <a name="test-controller-and-test-agent-connection-points"></a>測試控制器和測試代理程式連接點
 
 下圖顯示測試控制器、測試代理程式與用戶端之間的連接點。 本文將概述哪些通訊埠會用於連入和連出連線，以及這些通訊埠所使用的安全性限制。
 
- ![測試控制器和測試代理程式的通訊埠與安全性](./media/test-controller-agent-firewall.png)
+![測試控制器和測試代理程式的通訊埠與安全性](./media/test-controller-agent-firewall.png)
 
- 如需詳細資訊，請參閱[設定測試控制器和測試代理程式的連接埠](../test/configure-ports-for-test-controllers-and-test-agents.md)。
+如需詳細資訊，請參閱[設定測試控制器和測試代理程式的連接埠](../test/configure-ports-for-test-controllers-and-test-agents.md)。
 
 ## <a name="test-controller-and-agent-installation-information"></a>測試控制器和代理程式安裝資訊
 

@@ -13,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 590e7917cdc37242b6fc73699aa8ce6b3e8ba24f
-ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
+ms.openlocfilehash: 0cb77021818fd77205a598f54a4a64a1929348f2
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68461473"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68919350"
 ---
 # <a name="advanced-compiler-settings-dialog-box-visual-basic"></a>進階編譯器設定對話方塊 (Visual Basic)
 
@@ -38,7 +38,7 @@ ms.locfileid: "68461473"
 
 ## <a name="optimizations"></a>最佳化
 
- 下列選項指定的最佳化，在某些情況下可能會讓程式檔較小、程式執行速度更快，或是加速建置程序。
+下列選項指定的最佳化，在某些情況下可能會讓程式檔較小、程式執行速度更快，或是加速建置程序。
 
 **移除整數的溢位檢查**
 
@@ -52,11 +52,11 @@ ms.locfileid: "68461473"
 
  **DLL 基底位址**
 
- 此文字方塊會以十六進位格式顯示預設的 DLL 基底位址。 在類別庫和控制項程式庫專案中，您可以使用這個文字方塊來指定在建立 DLL 時要使用的基底位址。
+此文字方塊會以十六進位格式顯示預設的 DLL 基底位址。 在類別庫和控制項程式庫專案中，您可以使用這個文字方塊來指定在建立 DLL 時要使用的基底位址。
 
  **產生偵錯資訊**
 
- 從清單中選取 [無]  、[完整]  或 [僅限 pdb]  。 [無]  會指定不產生任何偵錯資訊。 [完整]  指定要產生完整的偵錯資訊，而 [僅限 pdb]  則指定只應產生 PDB 偵錯資訊。 這個選項的預設值是 [完整]  。
+從清單中選取 [無]  、[完整]  或 [僅限 pdb]  。 [無]  會指定不產生任何偵錯資訊。 [完整]  指定要產生完整的偵錯資訊，而 [僅限 pdb]  則指定只應產生 PDB 偵錯資訊。 這個選項的預設值是 [完整]  。
 
 ## <a name="compilation-constants"></a>編譯常數
 
@@ -64,15 +64,15 @@ ms.locfileid: "68461473"
 
  **定義 DEBUG 常數**
 
- 根據預設，會選取此核取方塊，指定將設定 DEBUG 常數。
+根據預設，會選取此核取方塊，指定將設定 DEBUG 常數。
 
  **定義 TRACE 常數**
 
- 根據預設，會選取此核取方塊，指定將設定 TRACE 常數。
+根據預設，會選取此核取方塊，指定將設定 TRACE 常數。
 
  **自訂常數**
 
- 在此文字方塊中為您的應用程式輸入任何自訂常數。 項目應該使用這種形式以逗號分隔：**Name1="Value1",Name2="Value2",Name3="Value3"** 。
+在此文字方塊中為您的應用程式輸入任何自訂常數。 項目應該使用這種形式以逗號分隔：**Name1="Value1",Name2="Value2",Name3="Value3"** 。
 
 ## <a name="other-settings"></a>其他設定
 

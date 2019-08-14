@@ -19,12 +19,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 99f5f8e389e3dfe91252149fb4c3d3c1e59f38b0
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: e6fdf3fa790a29f94a5bf3b40bc0d2ada703bc5b
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68415576"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68925767"
 ---
 # <a name="how-to-create-and-edit-configurations"></a>作法：建立及編輯設定
 
@@ -44,7 +44,7 @@ ms.locfileid: "68415576"
 
 在 [Configuration Manager]  對話方塊中，您可以使用 [使用中的方案組態]  下拉式清單選取整個方案的組建組態、修改現有的組建組態，或建立新的組態。 您可以使用 [使用中的方案平台]  下拉式清單選取組態目標針對的平台、修改現有的方案平台，或新增平台。 [專案內容]  窗格會列出方案中的專案。 針對每個專案，您可以選取專案特定的組態與平台、修改現有的組態與平台，或建立新的組態或新增平台。 您也可以選取核取方塊，指出當您使用整個方案的組態來建置或部署方案時，是否包含每個專案。
 
- 設定您需要的組態之後，您可以設定適用於這些組態的專案屬性。
+設定您需要的組態之後，您可以設定適用於這些組態的專案屬性。
 
 ### <a name="set-properties-based-on-configurations"></a>根據組態來設定屬性
 

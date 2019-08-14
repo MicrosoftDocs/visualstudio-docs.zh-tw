@@ -11,18 +11,18 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8367400df14f9a5e5c846a6df52e1a5fc7b8ec21
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: 620ffa1ea23c2c892e8385bd9e81a07fb640411a
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68416731"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68918903"
 ---
 # <a name="specify-custom-build-events-in-visual-studio"></a>在 Visual Studio 中指定自訂建置事件
 
 您可以指定自訂建置事件，在建置開始之前或完成之後自動執行命令。 例如，您可以在建置開始之前執行 *.bat* 檔案，或在建置完成之後將新檔案複製到資料夾。 只有在建置成功到達建置流程中的這些點時，建置事件才會執行。
 
- 如需您所使用之程式設計語言的特定資訊，請參閱下列主題：
+如需您所使用之程式設計語言的特定資訊，請參閱下列主題：
 
 - Visual Basic--[如何：指定建置事件 (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md)。
 
@@ -34,13 +34,13 @@ ms.locfileid: "68416731"
 
 建置事件遵循與 DOS 命令相同的語法，不過您可以使用巨集更輕鬆地建立建置事件。 如需可用巨集的清單，請參閱[建置前事件/建置後事件命令列對話方塊](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md)。
 
- 為了獲得最佳結果，請依照下列格式秘訣：
+為了獲得最佳結果，請依照下列格式秘訣：
 
 - 在執行 *.bat* 檔案的所有建置事件之前新增 `call` 陳述式。
 
-   範例： `call C:\MyFile.bat`
+   範例：`call C:\MyFile.bat`
 
-   範例： `call C:\MyFile.bat call C:\MyFile2.bat`
+   範例：`call C:\MyFile.bat call C:\MyFile2.bat`
 
 - 以引號括住檔案路徑。
 
@@ -60,4 +60,4 @@ ms.locfileid: "68416731"
 - [編譯和建置](../ide/compiling-and-building-in-visual-studio.md)
 - [建置前事件/建置後事件命令列對話方塊](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md)
 - [MSBuild 特殊字元](../msbuild/msbuild-special-characters.md)
-- [逐步解說︰建置應用程式](../ide/walkthrough-building-an-application.md)
+- [逐步解說：建置應用程式](../ide/walkthrough-building-an-application.md)

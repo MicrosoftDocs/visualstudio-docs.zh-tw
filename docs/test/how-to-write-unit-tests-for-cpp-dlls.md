@@ -7,34 +7,34 @@ manager: markl
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 56608e5c930dc94afbb9e8e7d78a8e95b8e2f88b
-ms.sourcegitcommit: ab06cde69d862440b4277bcd9bf02e7b50593a1b
+ms.openlocfilehash: f9f17b129b0d5d85abacb0723b57703db74bcbea
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67132170"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926659"
 ---
 # <a name="write-unit-tests-for-c-dlls-in-visual-studio"></a>在 Visual Studio 中撰寫 C++ DLL 的單元測試
 
- 有幾種方式可以測試 DLL 程式碼，這取決於它是否匯出您要測試的函式。 請選擇下列其中一種方式：
+有幾種方式可以測試 DLL 程式碼，這取決於它是否匯出您要測試的函式。 請選擇下列其中一種方式：
 
- **單元測試只會呼叫從 DLL 匯出的函式：** 如[撰寫 C/C++ 的單元測試](writing-unit-tests-for-c-cpp.md)中所述，新增個別的測試專案。 在測試專案中，加入 DLL 專案的參考。
+**單元測試只會呼叫從 DLL 匯出的函式：** 如[撰寫 C/C++ 的單元測試](writing-unit-tests-for-c-cpp.md)中所述，新增個別的測試專案。 在測試專案中，加入 DLL 專案的參考。
 
- 移至[從 DLL 專案參考匯出的函式](#projectRef)程序。
+移至[從 DLL 專案參考匯出的函式](#projectRef)程序。
 
- **DLL 建置為 .exe 檔：** 加入個別的測試專案。 將它連結至輸出目的檔。
+**DLL 建置為 .exe 檔：** 加入個別的測試專案。 將它連結至輸出目的檔。
 
- 移至[將測試連結至物件或程式庫檔案](#objectRef)程序。
+移至[將測試連結至物件或程式庫檔案](#objectRef)程序。
 
- **單元測試會呼叫不是從 DLL 匯出的非成員函式，而 DLL 可建置為靜態程式庫：** 變更 DLL 專案，讓它編譯為 *.lib* 檔。 加入會參考受測專案的個別測試專案。
+**單元測試會呼叫不是從 DLL 匯出的非成員函式，而 DLL 可建置為靜態程式庫：** 變更 DLL 專案，讓它編譯為 *.lib* 檔。 加入會參考受測專案的個別測試專案。
 
- 這個方法有一個優點，就是可讓您的測試使用非匯出的成員，但仍然將測試保留在個別專案中。
+這個方法有一個優點，就是可讓您的測試使用非匯出的成員，但仍然將測試保留在個別專案中。
 
- 移至[將 DLL 變更為靜態程式庫](#staticLink)程序。
+移至[將 DLL 變更為靜態程式庫](#staticLink)程序。
 
- **單元測試必須呼叫未匯出的非成員函式，而程式碼必須建置為動態連結程式庫 (DLL)：** 將單元測試加入至與產品程式碼相同的專案中。
+**單元測試必須呼叫未匯出的非成員函式，而程式碼必須建置為動態連結程式庫 (DLL)：** 將單元測試加入至與產品程式碼相同的專案中。
 
- 請移至[在相同專案中新增單元測試](#sameProject)程序。
+請移至[在相同專案中新增單元測試](#sameProject)程序。
 
 ## <a name="create-the-tests"></a>建立測試
 
@@ -93,7 +93,7 @@ ms.locfileid: "67132170"
       1. 在 [檔案]  功能表上，選擇 [新增]   > [專案]  。 在 [新增專案]  對話方塊中，將 [語言]  設為 C++，並在搜尋方塊中鍵入 "test"。 然後選擇 [原生單元測試專案]  。
 
       ::: moniker-end
-      
+
       ::: moniker range="vs-2017"
 
       1. 在 [檔案]  功能表上，選擇 [新增]  > [專案]  > [Visual C++]  > [測試]  > [C++ 單元測試專案]  。

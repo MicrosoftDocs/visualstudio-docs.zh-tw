@@ -7,12 +7,12 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 605ad454d00387d9a9094a518b4afed279fcc190
-ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
+ms.openlocfilehash: b8d52114e742d5a8176166744a4edc2975f674a3
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68461592"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68925850"
 ---
 # <a name="configure-a-c-project-for-intellisense"></a>設定 C++ IntelliSense 專案
 
@@ -38,7 +38,7 @@ IntelliSense 能產生最多 1000 個錯誤。 如果來源檔案所包含的標
 
 ![VC++ [Include 目錄]](media/vcpp-intellisense-include-paths.png)
 
- 若要查看組建巨集 (例如 **VC_IncludePath**) 目前的值，請選取 [Include 目錄] 行，然後按一下右側的下拉式清單。 接著，選擇 \<編輯>  並按一下 [巨集]  按鈕。
+若要查看組建巨集 (例如 **VC_IncludePath**) 目前的值，請選取 [Include 目錄] 行，然後按一下右側的下拉式清單。 接著，選擇 \<編輯>  並按一下 [巨集]  按鈕。
 
 ### <a name="makefile-projects"></a>Makefile 專案
 
@@ -79,18 +79,18 @@ IntelliSense 能產生最多 1000 個錯誤。 如果來源檔案所包含的標
 [輸出視窗] 現在將會顯示傳遞至 IntelliSense 編譯器的命令列。 以下是範例輸出：
 
 ```output
- [IntelliSense] Configuration Name: Debug|Win32
- [IntelliSense] Toolset IntelliSense Identifier:
- [IntelliSense] command line options:
- /c
- /I.
- /IC:\Repo\Includes
- /DWIN32
- /DDEBUG
- /D_DEBUG
- /Zc:wchar_t-
- /Zc:forScope
- /Yustdafx.h
+[IntelliSense] Configuration Name: Debug|Win32
+[IntelliSense] Toolset IntelliSense Identifier:
+[IntelliSense] command line options:
+/c
+/I.
+/IC:\Repo\Includes
+/DWIN32
+/DDEBUG
+/D_DEBUG
+/Zc:wchar_t-
+/Zc:forScope
+/Yustdafx.h
 ```
 
 此資訊可能可以協助您了解 IntelliSense 提供不正確資訊的原因。 例如，如果您專案的 Include 目錄包含 **$(MyVariable)\Include**，而診斷記錄顯示 **/I\Include** 為 Include 路徑，這代表系統沒有評估 **$(MyVariable)** ，並已將它從最終的 Include 路徑中移除。
@@ -110,10 +110,10 @@ IntelliSense 組建並不會產生二進位檔，但它仍可能會失敗。 其
 錯誤訊息可能會指示您啟用設計階段追蹤：
 
 ```output
- error: Designtime build failed for project 'E:\src\MyProject\MyProject.vcxproj',
- configuration 'Debug|x64'. IntelliSense might be unavailable.
- Set environment variable TRACEDESIGNTIME=true and restart
- Visual Studio to investigate.
+error: Designtime build failed for project 'E:\src\MyProject\MyProject.vcxproj',
+configuration 'Debug|x64'. IntelliSense might be unavailable.
+Set environment variable TRACEDESIGNTIME=true and restart
+Visual Studio to investigate.
 ```
 
 如果您將環境變數 TRACEDESIGNTIME 設定為 true，然後重新啟動 Visual Studio，您將會在 %TEMP% 目錄中看見記錄檔，它可能可以協助診斷組建失敗。

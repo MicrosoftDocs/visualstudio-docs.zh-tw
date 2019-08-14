@@ -7,12 +7,12 @@ manager: markl
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: bcd75724e5124c280d5c3e54bfe870041c432790
-ms.sourcegitcommit: ab06cde69d862440b4277bcd9bf02e7b50593a1b
+ms.openlocfilehash: fd5780479da10da43c270bbf4ffc5a215cb86ad6
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67132135"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926682"
 ---
 # <a name="use-the-microsoft-unit-testing-framework-for-c-in-visual-studio"></a>在 Visual Studio 中使用適用於 C++ 的 Microsoft 單元測試架構
 
@@ -69,7 +69,7 @@ ms.locfileid: "67132135"
 #define TEST_MY_TRAIT(traitValue) TEST_METHOD_ATTRIBUTE(L"MyTrait", traitValue)
 ```
 
- 若要在單元測試中使用定義的特性：
+若要在單元測試中使用定義的特性：
 
 ```cpp
 BEGIN_TEST_METHOD_ATTRIBUTE(Method1)

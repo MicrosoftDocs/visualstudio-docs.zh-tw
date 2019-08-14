@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d5116c2a979a45414046f0058d85ccbf0d179e24
-ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
+ms.openlocfilehash: f351ffefae818beb1f51eaa41fbeea1eab81de16
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67046849"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68919467"
 ---
 # <a name="productivity-tips-for-visual-studio"></a>使用 Visual Studio 提高生產力的祕訣
 
@@ -46,7 +46,7 @@ ms.locfileid: "67046849"
 
 ## <a name="navigate-within-your-code"></a>在您的程式碼中巡覽
 
- 您可以利用各種技巧，更快速地尋找和移動至程式碼中的某個位置。
+您可以利用各種技巧，更快速地尋找和移動至程式碼中的某個位置。
 
 - **將數行程式碼加入書籤**。 您可以利用書籤來快速地巡覽至檔案中的特定幾行程式碼。
 

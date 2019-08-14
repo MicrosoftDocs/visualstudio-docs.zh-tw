@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 71a1be7841cb25cebafe951419006bb8b635093c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6dc4bddefe0240a8e53babeec1fdce4f83ce5ef1
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62970157"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926215"
 ---
 # <a name="list-disassembly-command"></a>列出反組譯碼命令
 開始偵錯處理序，並可讓您指定處理錯誤的方式。
@@ -32,31 +32,31 @@ Debug.ListDisassembly [/count:number] [/endaddress:expression]
 ```
 
 ## <a name="switches"></a>參數
- 每個參數都可以使用其完整格式或簡短形式叫用。
+每個參數都可以使用其完整格式或簡短形式叫用。
 
- /count: `number` [或] /c: `number` [或] /length: `number` [或] /l: `number`
+/count: `number` [或] /c: `number` [或] /length: `number` [或] /l: `number`
 
- 選擇性。 要顯示的指令數目。 預設值為 8。
+選擇性。 要顯示的指令數目。 預設值為 8。
 
- /endaddress: `expression` [或] /e: `expression`
+/endaddress: `expression` [或] /e: `expression`
 
- 選擇性。 停止反組譯碼的位址。
+選擇性。 停止反組譯碼的位址。
 
- /codebytes:`yes`&#124;`no` [或] /bytes:`yes`&#124;`no` [或] /b:`yes`&#124;`no`
+/codebytes:`yes`&#124;`no` [或] /bytes:`yes`&#124;`no` [或] /b:`yes`&#124;`no`
 
- 選擇性。 指出是否要顯示程式碼位元組。 預設值為 `no`。
+選擇性。 指出是否要顯示程式碼位元組。 預設值為 `no`。
 
- /source:`yes`&#124;`no` [或] /s:`yes`&#124;`no`
+/source:`yes`&#124;`no` [或] /s:`yes`&#124;`no`
 
- 選擇性。 指出是否要顯示來源程式碼。 預設值為 `no`。
+選擇性。 指出是否要顯示來源程式碼。 預設值為 `no`。
 
- /symbolnames:`yes`&#124;`no` [或] /names:`yes`&#124;`no` [或] /n:`yes`&#124;`no`
+/symbolnames:`yes`&#124;`no` [或] /names:`yes`&#124;`no` [或] /n:`yes`&#124;`no`
 
- 選擇性。 指出是否要顯示符號名稱。 預設值為 `yes`。
+選擇性。 指出是否要顯示符號名稱。 預設值為 `yes`。
 
  [/linenumbers:`yes`&#124;`no`]
 
- 選擇性。 啟用檢視與原始程式碼建立關聯的行號。 /source 參數的值必須為 `yes` 才能使用 /linenumbers 參數。
+選擇性。 啟用檢視與原始程式碼建立關聯的行號。 /source 參數的值必須為 `yes` 才能使用 /linenumbers 參數。
 
 ## <a name="example"></a>範例
 
@@ -64,7 +64,7 @@ Debug.ListDisassembly [/count:number] [/endaddress:expression]
 >Debug.ListDisassembly
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [列出呼叫堆疊命令](../../ide/reference/list-call-stack-command.md)
 - [列出執行緒命令](../../ide/reference/list-threads-command.md)

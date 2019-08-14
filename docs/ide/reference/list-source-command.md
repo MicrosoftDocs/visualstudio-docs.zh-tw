@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8dcecdaa206964e6c8a5aebcadc958fe2c1ee1e5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f162590fafaa263e9cc4233744e5f2ba39c8ce6f
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62946852"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926175"
 ---
 # <a name="list-source-command"></a>列出原始碼命令
 顯示指定的原始程式碼程式行。
@@ -32,34 +32,34 @@ Debug.ListSource [/Count:number] [/Current] [/File:filename]
 ```
 
 ## <a name="switches"></a>參數
- /Count:`number`
+/Count:`number`
 
- 選擇性。 指定要顯示的行數。
+選擇性。 指定要顯示的行數。
 
- /Current
+/Current
 
- 選擇性。 顯示目前這行。
+選擇性。 顯示目前這行。
 
- /File:`filename`
+/File:`filename`
 
- 選擇性。 要顯示之檔案的路徑。 如果未指定檔名，則此命令會顯示目前陳述式行的原始程式碼。
+選擇性。 要顯示之檔案的路徑。 如果未指定檔名，則此命令會顯示目前陳述式行的原始程式碼。
 
- /Line:`number`
+/Line:`number`
 
- 選擇性。 顯示特定行號。
+選擇性。 顯示特定行號。
 
- /ShowLineNumbers:`yes|no`
+/ShowLineNumbers:`yes|no`
 
- 選擇性。 指定是否顯示行號。
+選擇性。 指定是否顯示行號。
 
 ## <a name="example"></a>範例
- 此範例列出 Form1.vb 檔案第 4 行的原始程式碼，並顯示行號。
+此範例列出 Form1.vb 檔案第 4 行的原始程式碼，並顯示行號。
 
 ```
 Debug.ListSource /File:"C:\Visual Studio Projects\Form1.vb" /Line:4 /ShowLineNumbers:yes
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [Visual Studio 命令](../../ide/reference/visual-studio-commands.md)
 - [命令視窗](../../ide/reference/command-window.md)
