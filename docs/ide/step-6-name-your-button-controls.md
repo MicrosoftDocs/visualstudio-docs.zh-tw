@@ -11,12 +11,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2051ac669c52480d62ee0d0a79c5a165bff502fc
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: 46ad996f7c3b1eeff4a3eb928442879f0b7275aa
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68416603"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68925876"
 ---
 # <a name="step-6-name-your-button-controls"></a>步驟 6：命名按鈕控制項
 表單上只有一個 <xref:System.Windows.Forms.PictureBox>。 加入它時，IDE 會自動將它命名為 **pictureBox1**。 只有一個 <xref:System.Windows.Forms.CheckBox>，名稱為 **checkBox1**。 接著，您將撰寫一些程式碼，該程式碼會參考 CheckBox 和 PictureBox。 因為這些控制項都只有一個，所以您在程式碼中看到 **pictureBox1** 或 **checkBox1** 時就知道它們代表的意義。
@@ -24,9 +24,9 @@ ms.locfileid: "68416603"
 > [!NOTE]
 > 在 Visual Basic 中，任何控制項名稱的預設第一個字母都是大寫，所以是 **PictureBox1**、 **CheckBox1**，依此類推。
 
- 表單上有四個按鈕，IDE 將它們分別命名為 **button1**、 **button2**、 **button3**及 **button4**。 只從目前的名稱來看，並無法得知哪一個按鈕才是 [關閉]  按鈕，以及哪一個是 [顯示圖片]  按鈕。 這就是為按鈕控制項指定更具資訊性名稱會很有用的原因。
+表單上有四個按鈕，IDE 將它們分別命名為 **button1**、 **button2**、 **button3**及 **button4**。 只從目前的名稱來看，並無法得知哪一個按鈕才是 [關閉]  按鈕，以及哪一個是 [顯示圖片]  按鈕。 這就是為按鈕控制項指定更具資訊性名稱會很有用的原因。
 
- ![影片連結](../data-tools/media/playvideo.gif)如需本主題的影片版本，請參閱[教學課程 1：Create a picture viewer in Visual Basic - Video 3](http://go.microsoft.com/fwlink/?LinkId=205213) (教學課程 1：在 Visual Basic 中建立圖片檢視器 - 影片 3) 或 [Tutorial 1:Create a picture viewer in C# - Video 3](http://go.microsoft.com/fwlink/?LinkId=205202) (教學課程 1：在 C# 中建立圖片檢視器 - 影片 3)。 這些影片使用舊版 Visual Studio，因此有一些功能表命令以及某些使用者介面項目會有些微差異。 不過，概念和程序在目前 Visual Studio 版本中的運作方式雷同。
+![影片連結](../data-tools/media/playvideo.gif)如需本主題的影片版本，請參閱[教學課程 1：Create a picture viewer in Visual Basic - Video 3](http://go.microsoft.com/fwlink/?LinkId=205213) (教學課程 1：在 Visual Basic 中建立圖片檢視器 - 影片 3) 或 [Tutorial 1:Create a picture viewer in C# - Video 3](http://go.microsoft.com/fwlink/?LinkId=205202) (教學課程 1：在 C# 中建立圖片檢視器 - 影片 3)。 這些影片使用舊版 Visual Studio，因此有一些功能表命令以及某些使用者介面項目會有些微差異。 不過，概念和程序在目前 Visual Studio 版本中的運作方式雷同。
 
 ## <a name="to-name-your-button-controls"></a>命名您的按鈕控制項
 

@@ -12,20 +12,20 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c439a981573934215ecad8796e7980a5f9c8c2f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 406e8fbb16d3cac4b755b0532f3916fed486e466
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62934928"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68919008"
 ---
 # <a name="services-page-project-designer"></a>專案設計工具、服務頁
 
-用戶端應用程式服務簡化了對 [!INCLUDE[ajax_current_short](../../ide/reference/includes/ajax_current_short_md.md)] 登入、角色以及 Windows Forms 和 Windows Presentation Foundation (WPF) 應用程式的設定檔服務的存取。 您可以使用 [專案設計工具] 的 [服務] 頁面來啟用和設定專案的用戶端應用程式服務。
+用戶端應用程式服務簡化了對 [!INCLUDE[ajax_current_short](../../ide/reference/includes/ajax_current_short_md.md)] 登入、角色以及 Windows Forms 和 Windows Presentation Foundation (WPF) 應用程式的設定檔服務的存取。 您可以使用 [專案設計工具]  的 [服務]  頁面來啟用和設定專案的用戶端應用程式服務。
 
 使用用戶端應用程式服務，您可以使用集中式伺服器來驗證使用者、判斷每位使用者已獲指派的角色，以及儲存您可透過網路共用的個別使用者應用程式設定。 如需詳細資訊，請參閱[用戶端應用程式服務](/dotnet/framework/common-client-technologies/client-application-services)。
 
-若要存取 [服務] 頁面，請選取方案總管中的專案節點，然後按一下 [專案] 功能表上的 [屬性]。 [專案設計工具] 出現時，請按一下 [服務] 索引標籤。
+若要存取 [服務]  頁面，請選取方案總管  中的專案節點，然後按一下 [專案]  功能表上的 [屬性]  。 [專案設計工具]  出現時，請按一下 [服務]  索引標籤。
 
 ## <a name="task-list"></a>工作清單
 
@@ -35,43 +35,43 @@ ms.locfileid: "62934928"
 
  **組態**
 
- 在這個頁面上無法編輯此控制項。 如需此控制項的描述，請參閱[專案設計工具、編譯頁面 (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md) 或[專案設計工具、建置頁面 (C#)](../../ide/reference/build-page-project-designer-csharp.md)。
+在這個頁面上無法編輯此控制項。 如需此控制項的描述，請參閱[專案設計工具、編譯頁面 (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md) 或[專案設計工具、建置頁面 (C#)](../../ide/reference/build-page-project-designer-csharp.md)。
 
  **平台**
 
- 在這個頁面上無法編輯此控制項。 如需此控制項的描述，請參閱[專案設計工具、編譯頁面 (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md) 或[專案設計工具、建置頁面 (C#)](../../ide/reference/build-page-project-designer-csharp.md)。
+在這個頁面上無法編輯此控制項。 如需此控制項的描述，請參閱[專案設計工具、編譯頁面 (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md) 或[專案設計工具、建置頁面 (C#)](../../ide/reference/build-page-project-designer-csharp.md)。
 
  **啟用用戶端應用程式服務**
 
- 選取以啟用用戶端應用程式服務。 您必須在 [服務] 頁面上指定服務位置，以使用用戶端應用程式服務。
+選取以啟用用戶端應用程式服務。 您必須在 [服務]  頁面上指定服務位置，以使用用戶端應用程式服務。
 
  **使用 Windows 驗證**
 
- 指出驗證提供者將使用 Windows 驗證，也就是 Windows 作業系統所提供的身分識別。
+指出驗證提供者將使用 Windows 驗證，也就是 Windows 作業系統所提供的身分識別。
 
  **使用表單驗證**
 
- 指出驗證提供者將使用表單驗證。 這表示您的應用程式必須提供進行登入的使用者介面。 如需詳細資訊，請參閱[如何：使用用戶端應用程式服務實作使用者登入](/dotnet/framework/common-client-technologies/how-to-implement-user-login-with-client-application-services)。
+指出驗證提供者將使用表單驗證。 這表示您的應用程式必須提供進行登入的使用者介面。 如需詳細資訊，請參閱[如何：使用用戶端應用程式服務實作使用者登入](/dotnet/framework/common-client-technologies/how-to-implement-user-login-with-client-application-services)。
 
  **驗證服務位置**
 
- 只能與表單驗證搭配使用。 指定驗證服務的位置。
+只能與表單驗證搭配使用。 指定驗證服務的位置。
 
  **選擇性：認證提供者**
 
- 只能與表單驗證搭配使用。 指示 <xref:System.Web.ClientServices.Providers.IClientFormsAuthenticationCredentialsProvider> 實作，當您的應用程式呼叫 `static`<xref:System.Web.Security.Membership.ValidateUser%2A?displayProperty=fullName> 方法時，要使用驗證服務來顯示登入對話方塊，並針對參數傳遞空字串或 `null`。 如果此方塊保留空白，您就必須將有效使用者名稱和密碼傳遞給 <xref:System.Web.Security.Membership.ValidateUser%2A?displayProperty=fullName> 方法。 您必須將認證提供者指定為組件限定類型名稱。 如需詳細資訊，請參閱 <xref:System.Type.AssemblyQualifiedName%2A?displayProperty=fullName> 和[組件名稱](/dotnet/framework/app-domains/assembly-names)。 最簡單的組件限定類型名稱格式看起來類似下列範例：`MyNamespace.MyLoginClass, MyAssembly`
+只能與表單驗證搭配使用。 指示 <xref:System.Web.ClientServices.Providers.IClientFormsAuthenticationCredentialsProvider> 實作，當您的應用程式呼叫 `static`<xref:System.Web.Security.Membership.ValidateUser%2A?displayProperty=fullName> 方法時，要使用驗證服務來顯示登入對話方塊，並針對參數傳遞空字串或 `null`。 如果此方塊保留空白，您就必須將有效使用者名稱和密碼傳遞給 <xref:System.Web.Security.Membership.ValidateUser%2A?displayProperty=fullName> 方法。 您必須將認證提供者指定為組件限定類型名稱。 如需詳細資訊，請參閱 <xref:System.Type.AssemblyQualifiedName%2A?displayProperty=fullName> 和[組件名稱](/dotnet/framework/app-domains/assembly-names)。 最簡單的組件限定類型名稱格式看起來類似下列範例：`MyNamespace.MyLoginClass, MyAssembly`
 
  **角色服務位置**
 
- 指定角色服務的位置。
+指定角色服務的位置。
 
  **Web 設定服務位置**
 
- 指定設定檔 (Web 設定) 服務的位置。
+指定設定檔 (Web 設定) 服務的位置。
 
  **進階**
 
- 開啟可用來覆寫預設行為的[服務對話方塊的進階設定](../../ide/reference/advanced-settings-for-services-dialog-box.md)。 例如，您可以使用此對話方塊指定資料庫來進行離線儲存，而不是使用本機檔案系統。 如需詳細資訊，請參閱[服務對話方塊的進階設定](../../ide/reference/advanced-settings-for-services-dialog-box.md)。
+開啟可用來覆寫預設行為的[服務對話方塊的進階設定](../../ide/reference/advanced-settings-for-services-dialog-box.md)。 例如，您可以使用此對話方塊指定資料庫來進行離線儲存，而不是使用本機檔案系統。 如需詳細資訊，請參閱[服務對話方塊的進階設定](../../ide/reference/advanced-settings-for-services-dialog-box.md)。
 
 ## <a name="see-also"></a>另請參閱
 

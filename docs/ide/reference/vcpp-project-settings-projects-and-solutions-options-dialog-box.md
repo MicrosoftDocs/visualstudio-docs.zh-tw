@@ -18,22 +18,22 @@ ms.author: corob
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9410806cbb2fa7fc5579fc7c63cee8a6bed56f79
-ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
+ms.openlocfilehash: c7acd0d8f9c6d15f9f20c42f59c3bd5562884ac3
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68461567"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68918890"
 ---
-# <a name="vc-project-settings-projects-and-solutions-options-dialog-box"></a>選項對話方塊、專案和解決方案、VC++ 專案設定
+# <a name="vc-project-settings-projects-and-solutions-options-dialog-box"></a>選項對話方塊、專案和方案、VC++ 專案設定
 
 此對話方塊可讓您定義與記錄、效能和支援檔案類型相關的 C++ 組建和專案設定。
 
-## <a name="to-access-this-dialog-box"></a>存取此對話方塊
+## <a name="to-access-this-dialog-box"></a>若要存取此對話方塊
 
-1. 在 [工具]  功能表上按一下 [選項]  。
+1. 在 [ **工具** ] 功能表上按一下 [ **選項**]。
 
-2. 選取 [專案和解決方案]  ，然後選取 [VC++ 專案設定]  。
+2. 選取 [專案和方案]  ，然後選取 [VC++ 專案設定]  。
 
 ## <a name="build-logging"></a>建置記錄
 
@@ -49,11 +49,11 @@ ms.locfileid: "68461567"
 
  **是**
 
- 列出組建記錄檔中的環境變數。 此選項會指定將 C++ 專案建置期間的所有環境變數，反映到建置記錄檔中。
+列出組建記錄檔中的環境變數。 此選項會指定將 C++ 專案建置期間的所有環境變數，反映到建置記錄檔中。
 
  **No**
 
- 從組建記錄檔排除環境變數。
+從組建記錄檔排除環境變數。
 
 ## <a name="build-timing"></a>建置執行時間
 
@@ -63,7 +63,7 @@ ms.locfileid: "68461567"
 
  **No**
 
- 關閉建置執行時間。
+關閉建置執行時間。
 
 ## <a name="maximum-concurrent-c-compilations"></a>並行 C++ 編譯的最大數目
 

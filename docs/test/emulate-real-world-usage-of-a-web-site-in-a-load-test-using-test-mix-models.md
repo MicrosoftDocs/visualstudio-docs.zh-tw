@@ -9,12 +9,12 @@ ms.assetid: b7fae849-0538-40d1-ab35-2bb3a0fe4393
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1c946fa81c46af38daac469e0de7a00abafb3394
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 167dc55e5df18033a9bf16e8aa66e37db9fc6fea
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65461576"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68918344"
 ---
 # <a name="test-mix-models-overview"></a>測試混合模型概觀
 
@@ -52,7 +52,7 @@ ms.locfileid: "65461576"
 如果使用這些設定，下一個要啟動的測試會依據指派的百分比而決定。 執行這項操作時，不需考慮目前執行每個測試的虛擬使用者人數。
 
 ### <a name="PercentageBasedonVirtualUsers"></a> 按虛擬使用者的百分比
- 這個測試混合模型決定將執行特定測試的虛擬使用者的百分比。 如果使用這個測試混合模型，下一個要啟動的測試，不僅會依據指派的百分比，也會依據目前執行特定測試的虛擬使用者百分比而決定。 在負載測試的任何點中，執行特定測試的使用者人數，會盡可能符合指派的持續期間。
+這個測試混合模型決定將執行特定測試的虛擬使用者的百分比。 如果使用這個測試混合模型，下一個要啟動的測試，不僅會依據指派的百分比，也會依據目前執行特定測試的虛擬使用者百分比而決定。 在負載測試的任何點中，執行特定測試的使用者人數，會盡可能符合指派的持續期間。
 
 ### <a name="PacingTestMix"></a> 步調測試混合
 
@@ -66,29 +66,29 @@ ms.locfileid: "65461576"
 
 如果使用步調測試混合模型，負載測試執行階段引擎會保證啟動測試的實際比率會小於或等於指定比率。 當測試執行太久而無法完成指派數目時，就會傳回錯誤。
 
-使用步調測試混合時，[測試反覆項目間的考慮時間] 設定並不適用。
+使用步調測試混合時，[測試反覆項目間的考慮時間]  設定並不適用。
 
 #### <a name="apply-distribution-to-pacing-delay"></a>將分佈套用到步調延遲
- 負載測試情節中的 [將分佈套用到步調延遲] 屬性值可以設定為 true 或 false：
+負載測試情節中的 [將分佈套用到步調延遲]  屬性值可以設定為 true 或 false：
 
-- **True**：情節會套用 [編輯測試混合] 對話方塊中 [按每使用者每小時測試] 欄位值指定的一般統計分佈延遲。 如需詳細資訊，請參閱[編輯測試混合模型以指定虛擬使用者執行測試的可能性](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md)。
+- **True**：情節會套用 [編輯測試混合]  對話方塊中 [按每使用者每小時測試]  欄位值指定的一般統計分佈延遲。 如需詳細資訊，請參閱[編輯測試混合模型以指定虛擬使用者執行測試的可能性](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md)。
 
-   例如，假設您在 [編輯測試混合] 對話方塊中將測試的 [按每使用者每小時測試] 值設定為每小時 2 位使用者。 如果 [將分佈套用到步調延遲] 屬性設定為 [True]，則一般統計散發延遲會套用至測試之間的等待時間。 測試仍然會每小時執行 2 項測試，但是 2 項測試之間不一定會有 30 分鐘間隔。 第一項測試可能在 4 分鐘後執行，而第二項測試在 45 分鐘後執行。
+   例如，假設您在 [編輯測試混合]  對話方塊中將測試的 [按每使用者每小時測試]  值設定為每小時 2 位使用者。 如果 [將分佈套用到步調延遲]  屬性設定為 [True]  ，則一般統計散發延遲會套用至測試之間的等待時間。 測試仍然會每小時執行 2 項測試，但是 2 項測試之間不一定會有 30 分鐘間隔。 第一項測試可能在 4 分鐘後執行，而第二項測試在 45 分鐘後執行。
 
-- **False**：測試會依照您為 [編輯測試混合] 對話方塊中 [按每使用者每小時測試] 欄位值指定的特定步調按每使用者每小時測試執行。 如需詳細資訊，請參閱[編輯測試混合模型以指定虛擬使用者執行測試的可能性](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md)。
+- **False**：測試會依照您為 [編輯測試混合]  對話方塊中 [按每使用者每小時測試]  欄位值指定的特定步調按每使用者每小時測試執行。 如需詳細資訊，請參閱[編輯測試混合模型以指定虛擬使用者執行測試的可能性](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md)。
 
-   例如，假設您在 [編輯測試混合] 對話方塊中將測試的 [按每使用者每小時測試] 值設定為每小時 2 位使用者。 如果 [將分佈套用到步調延遲] 屬性設定為 [False]，則測試執行時基本上不會有任何延遲。 測試將會每 30 分鐘執行。 這樣可確保每小時執行 2 項測試。
+   例如，假設您在 [編輯測試混合]  對話方塊中將測試的 [按每使用者每小時測試]  值設定為每小時 2 位使用者。 如果 [將分佈套用到步調延遲]  屬性設定為 [False]  ，則測試執行時基本上不會有任何延遲。 測試將會每 30 分鐘執行。 這樣可確保每小時執行 2 項測試。
 
   如需詳細資訊，請參閱[如何：在以使用者步調測試混合模型時，將分佈套用到步調延遲](../test/how-to-apply-distribution-to-pacing-delay-when-using-a-user-pace-test-mix-model.md)。
 
 ### <a name="SequentialOrder"></a> 循序順序
- 選取 [依據循序測試順序] 選項，可讓每個虛擬使用者按測試的定義順序，執行情節中的所有測試。
+選取 [依據循序測試順序] 選項，可讓每個虛擬使用者按測試的定義順序，執行情節中的所有測試。
 
 ## <a name="test-iterations-property"></a>測試反覆項目屬性
- 在 [回合設定] 屬性中，您可以指定 [測試反覆項目] 屬性的值。 這個值是在負載測試中測試反覆項目要執行的次數。 啟動指定次數的測試反覆項目後，不論載入設定檔是如何設定的，都不會啟動額外的測試反覆項目。 完成指定次數的測試反覆項目後，負載測試就會結束。 如需詳細資訊，請參閱[如何：在回合設定中指定測試反覆項目的數目](../test/how-to-specify-the-number-of-test-iterations-in-a-load-test.md)。
+在 [回合設定] 屬性中，您可以指定 [測試反覆項目] 屬性的值。 這個值是在負載測試中測試反覆項目要執行的次數。 啟動指定次數的測試反覆項目後，不論載入設定檔是如何設定的，都不會啟動額外的測試反覆項目。 完成指定次數的測試反覆項目後，負載測試就會結束。 如需詳細資訊，請參閱[如何：在回合設定中指定測試反覆項目的數目](../test/how-to-specify-the-number-of-test-iterations-in-a-load-test.md)。
 
 ## <a name="initialize-and-terminate-tests"></a>初始化和結束測試
- 您可以選取在每個虛擬使用者負載測試工作階段的開始和結束時要執行的測試。 如需詳細資訊，請參閱[編輯測試混合模型以指定虛擬使用者執行測試的可能性](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md)。
+您可以選取在每個虛擬使用者負載測試工作階段的開始和結束時要執行的測試。 如需詳細資訊，請參閱[編輯測試混合模型以指定虛擬使用者執行測試的可能性](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md)。
 
 - **初始化測試**： 這個測試是在測試混合中任何測試執行前，由每個虛擬使用者所執行的。
 

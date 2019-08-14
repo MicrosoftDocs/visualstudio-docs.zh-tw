@@ -16,33 +16,33 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d7f9edfb6b0c10a37aade6a9d37a5689e587890d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 4fe707d82354a8c947dfa89a7323b41a489d0fa8
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438110"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68919299"
 ---
 # <a name="command-window"></a>命令視窗
-[命令] 視窗是用來直接在 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 整合式開發環境 (IDE) 中執行命令或別名。 您可以執行功能表命令以及不會出現在任何功能表上的命令。 若要顯示 [命令] 視窗，請從 [檢視] 功能表中選擇 [其他視窗]，然後選取 [命令視窗]。
+[命令]  視窗是用來直接在 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 整合式開發環境 (IDE) 中執行命令或別名。 您可以執行功能表命令以及不會出現在任何功能表上的命令。 若要顯示 [命令]  視窗，請從 [檢視]  功能表中選擇 [其他視窗]  ，然後選取 [命令視窗]  。
 
 ## <a name="displaying-the-values-of-variables"></a>顯示變數的值
- 若要檢查 `varA` 變數的值，請使用 [Print 命令](../../ide/reference/print-command.md)：
+若要檢查 `varA` 變數的值，請使用 [Print 命令](../../ide/reference/print-command.md)：
 
 ```cmd
 >Debug.Print varA
 ```
 
- 問號 (?) 是 `Debug.Print` 的別名，因此，此命令也可以撰寫為：
+問號 (?) 是 `Debug.Print` 的別名，因此，此命令也可以撰寫為：
 
 ```cmd
 >? varA
 ```
 
- 此命令的兩個版本都會傳回 `varA` 變數的值。
+此命令的兩個版本都會傳回 `varA` 變數的值。
 
 ## <a name="entering-commands"></a>輸入命令
- 大於符號 (`>`) 會出現在 [命令] 視窗的左邊緣作為新行的提示。 使用向上鍵和向下鍵來捲動先前所發出的命令。
+大於符號 (`>`) 會出現在 [命令] 視窗的左邊緣作為新行的提示。 使用向上鍵和向下鍵來捲動先前所發出的命令。
 
 |工作|方案|範例|
 |----------|--------------|-------------|
@@ -50,7 +50,7 @@ ms.locfileid: "63438110"
 |切換至 [即時運算] 視窗。|將 `immed` 輸入到視窗但沒有大於符號 (>)|`immed`|
 |從 [即時運算] 視窗切換回 [命令] 視窗。|將 `cmd` 輸入到視窗。|`>cmd`|
 
- 下列快速鍵可協助您在處於命令模式時進行巡覽。
+下列快速鍵可協助您在處於命令模式時進行巡覽。
 
 |動作|游標位置|按鍵繫結關係|
 |------------| - |----------------|
@@ -62,23 +62,23 @@ ms.locfileid: "63438110"
 > 您可以將整個或一部分的先前命令複製至輸入行，方法是捲動到它，並反白顯示它的全部或一部分，然後按 ENTER。
 
 ## <a name="mark-mode"></a>標記模式
- 當您按一下 [命令] 視窗中的任何先前行時，會自動切換至標記模式。 這可讓您像在任何文字編輯器中一樣地選取、編輯和複製先前命令的文字，並將它們貼入目前行。
+當您按一下 [命令]  視窗中的任何先前行時，會自動切換至標記模式。 這可讓您像在任何文字編輯器中一樣地選取、編輯和複製先前命令的文字，並將它們貼入目前行。
 
 ## <a name="the-equals--sign"></a>等號 (=)
- 用來輸入 `EvaluateStatement` 命令的視窗可判斷是否將等號 (=) 解譯為比較運算子或指派運算子。
+用來輸入 `EvaluateStatement` 命令的視窗可判斷是否將等號 (=) 解譯為比較運算子或指派運算子。
 
- 在 [命令] 視窗中，等號 (=) 會解譯為比較運算子。 您不能在 [命令] 視窗中使用指派運算子。 因此，比方說，如果 `varA` 和 `varB` 變數的值不同，則命令 `>Debug.EvaluateStatement(varA=varB)` 將傳回值 `False`。
+在 [命令]  視窗中，等號 (=) 會解譯為比較運算子。 您不能在 [命令]  視窗中使用指派運算子。 因此，比方說，如果 `varA` 和 `varB` 變數的值不同，則命令 `>Debug.EvaluateStatement(varA=varB)` 將傳回值 `False`。
 
- 相較之下，在 [即時運算] 視窗中，等號 (=) 會解譯為指派運算子。 因此，舉例來說，`>Debug.EvaluateStatement(varA=varB)` 命令會將 `varB` 變數的值指派給變數 `varA`。
+相較之下，在 [即時運算]  視窗中，等號 (=) 會解譯為指派運算子。 因此，舉例來說，`>Debug.EvaluateStatement(varA=varB)` 命令會將 `varB` 變數的值指派給變數 `varA`。
 
 ## <a name="parameters-switches-and-values"></a>參數、切換參數和值
- 部分 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 命令具有必要和選擇性引數、切換參數和值。 處理這類命令時會套用特定規則。 以下是釐清術語的豐富命令範例。
+部分 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 命令具有必要和選擇性引數、切換參數和值。 處理這類命令時會套用特定規則。 以下是釐清術語的豐富命令範例。
 
 ```cmd
 Edit.ReplaceInFiles /case /pattern:regex var[1-3]+ oldpar
 ```
 
- 在此範例中，
+在此範例中，
 
 - `Edit.ReplaceInFiles` 是命令
 
@@ -98,18 +98,18 @@ Edit.ReplaceInFiles /case /pattern:regex var[1-3]+ oldpar
 如果將多個簡短形式的切換參數合併成一個群組，並指定值，則該值會套用至每個切換參數。 例如，`/pgm:123` 等同於 `/p:123 /g:123 /m:123`。 如果群組中的任何切換參數不接受值，就會發生錯誤。
 
 ## <a name="escape-characters"></a>逸出字元
- 命令列中的插入號 (^) 字元表示緊接著的字元會解譯為常值字元，而不是控制字元。 這可用來在參數或參數的值中嵌入一般引號 (")、空格、前置斜線、插入號或任何其他常值字元，但參數名稱除外。 例如，套用至物件的
+命令列中的插入號 (^) 字元表示緊接著的字元會解譯為常值字元，而不是控制字元。 這可用來在參數或參數的值中嵌入一般引號 (")、空格、前置斜線、插入號或任何其他常值字元，但參數名稱除外。 例如，套用至物件的
 
 ```cmd
 >Edit.Find ^^t /regex
 ```
 
- 無論插入號位於引號內部或外部，功能都相同。 如果插入號是該程式行的最後一個字元，則會將其忽略。 這裡顯示的範例示範如何搜尋模式 "^t"。
+無論插入號位於引號內部或外部，功能都相同。 如果插入號是該程式行的最後一個字元，則會將其忽略。 這裡顯示的範例示範如何搜尋模式 "^t"。
 
 ## <a name="use-quotes-for-path-names-with-spaces"></a>使用引號括住包含空格的路徑名稱
- 例如，如果您想要開啟之檔案的路徑包含空格，則必須用雙引號括住包含空格的路徑或路徑區段：**C:\\"Program Files"** 或 **"C:\Program Files"**。
+例如，如果您想要開啟之檔案的路徑包含空格，則必須用雙引號括住包含空格的路徑或路徑區段：**C:\\"Program Files"** 或 **"C:\Program Files"** 。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
 - [Visual Studio 命令](../../ide/reference/visual-studio-commands.md)

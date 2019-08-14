@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 554fe9c8d8f30c13f667566a76349e237f5ddb0f
-ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
+ms.openlocfilehash: d9d60db348be719c4fa45243d22ca6b617b72407
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66432298"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68918456"
 ---
 # <a name="code-generation-compilation-and-naming-conventions-in-microsoft-fakes"></a>Microsoft Fakes 中的程式碼產生、編譯和命名慣例
 
@@ -110,9 +110,9 @@ Fakes 程式碼產生器會針對所產生之 Fakes 組件的可見類型產生�
 [assembly: InternalsVisibleTo("FileSystem.Tests")]
 ```
 
- **強式名稱組件中的內部類型**
+**強式名稱組件中的內部類型**
 
- 如果填充組件為強式名稱，而且您想要存取組件的內部類型：
+如果填充組件為強式名稱，而且您想要存取組件的內部類型：
 
 - 您的測試組件和 Fakes 組件都必須具有強式名稱。
 
@@ -179,11 +179,11 @@ Fakes 架構會使用相同金鑰來簽署所有產生的組件，因此，您�
 
 在 Team Build 環境中，所有組建輸出會合併到單一目錄。 如果多個專案使用 Fakes，可能會發生不同版本的 Fakes 組件彼此覆寫的情形。 例如，.NET Framework 2.0 的 TestProject1 fakes *mscorlib.dll* 與 .NET Framework 4 的 TestProject2 fakes *mscorlib.dll* 都會產生 *mscorlib.Fakes.dll* Fakes 組件。
 
- 若要避免這個問題，當新增 *.fakes* 檔時，Fakes 應該會自動為非專案參考建立版本限定的 Fakes 組件名稱。 當您建立 Fakes 組件名稱時，版本限定的 Fakes 組件名稱會嵌入版本號碼：
+若要避免這個問題，當新增 *.fakes* 檔時，Fakes 應該會自動為非專案參考建立版本限定的 Fakes 組件名稱。 當您建立 Fakes 組件名稱時，版本限定的 Fakes 組件名稱會嵌入版本號碼：
 
- 假設組件 MyAssembly 和版本 1.2.3.4，則 Fakes 組件名稱為 MyAssembly.1.2.3.4.Fakes。
+假設組件 MyAssembly 和版本 1.2.3.4，則 Fakes 組件名稱為 MyAssembly.1.2.3.4.Fakes。
 
- 您可以透過編輯 *.fakes* 中 Assembly 項目的 Version 屬性來變更或移除這個版本：
+您可以透過編輯 *.fakes* 中 Assembly 項目的 Version 屬性來變更或移除這個版本：
 
 ```xml
 attribute of the Assembly element in the .fakes:
@@ -197,7 +197,7 @@ attribute of the Assembly element in the .fakes:
 
 ### <a name="shim-type-and-stub-type-naming-conventions"></a>填充碼類型和虛設常式類型命名慣例
 
- **命名空間**
+**命名空間**
 
 - .Fakes 後置字元會加入命名空間。
 

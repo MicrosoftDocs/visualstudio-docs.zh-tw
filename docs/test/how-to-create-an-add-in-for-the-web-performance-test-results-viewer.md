@@ -9,12 +9,12 @@ ms.assetid: 1118c604-4b1b-4b21-a04e-45995b676fa8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b8548fb33e5a4b9156701e12231324e3f59c88f2
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: e2330f5d1c47c9fc3cc578f286be005710b08f59
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66747237"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68918193"
 ---
 # <a name="how-to-create-an-add-in-for-the-web-performance-test-results-viewer"></a>作法：建立 Web 效能測試結果檢視器的增益集
 
@@ -43,9 +43,9 @@ ms.locfileid: "66747237"
 
 增益集是編譯過的 DLL，可以在 Visual Studio 整合式開發環境 (IDE) 中執行。 編譯有助於保護您的智慧財產並且改進效能。 雖然您可以用手動方式建立增益集，但是使用 [增益集精靈]  要簡單許多。 這個精靈會建立基本但實用的增益集，建立完成之後便可立即執行。 當 [增益集精靈]  產生基本程式之後，您就可以加入程式碼並且進行自訂。
 
- [增益集精靈]  可讓您提供增益集的顯示名稱和描述。 這兩項資訊都會顯示在 [增益集管理員]  中。 您可以選擇由精靈產生程式碼，將開啟增益集的命令新增至 [工具]  功能表， 也可以選擇顯示增益集的自訂 [關於]  對話方塊。 當精靈完成時，您就會擁有一個新專案，其中僅包含一個實作增益集的類別。 該類別名為 Connect。
+[增益集精靈]  可讓您提供增益集的顯示名稱和描述。 這兩項資訊都會顯示在 [增益集管理員]  中。 您可以選擇由精靈產生程式碼，將開啟增益集的命令新增至 [工具]  功能表， 也可以選擇顯示增益集的自訂 [關於]  對話方塊。 當精靈完成時，您就會擁有一個新專案，其中僅包含一個實作增益集的類別。 該類別名為 Connect。
 
- 您將在本文的結尾使用 [增益集管理員]  。
+您將在本文的結尾使用 [增益集管理員]  。
 
 ### <a name="to-create-an-add-in-by-using-the-add-in-wizard"></a>若要使用增益集精靈建立增益集
 
@@ -326,9 +326,9 @@ ms.locfileid: "66747237"
 
 此外，這個選項頁還可讓您指定 Visual Studio 搜尋 *.AddIn* 登錄檔案的資料夾。 這樣做可讓您限制系統能讀取 *.AddIn* 登錄檔案的位置，藉以改善安全性。 這有助於避免您不小心使用惡意 *.AddIn* 檔案。
 
- **增益集安全性設定**
+**增益集安全性設定**
 
- 增益集安全性之選項頁中的設定如下：
+增益集安全性之選項頁中的設定如下：
 
 - **允許載入增益集元件**： 預設會選取。 當您選取此選項時，就可以在 Visual Studio 中載入增益集。 當您沒有選取此選項時，則禁止在 Visual Studio 中載入增益集。
 

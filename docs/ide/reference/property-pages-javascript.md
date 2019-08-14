@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 50b86a32cb055eded71535b84b6b09fd59f78595
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
+ms.openlocfilehash: 6883e556cd70adddd45fd442d338e10d1cafa1e2
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68605944"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926188"
 ---
 # <a name="property-pages-javascript"></a>JavaScript、屬性頁
 
@@ -40,11 +40,11 @@ ms.locfileid: "68605944"
 
  **組態**
 
- 指定要顯示或修改的組態設定。 這些設定包括 [偵錯]\  (預設值)、[發行]  、[所有組態]  或使用者定義的組態。 如需詳細資訊，請參閱[如何：在 Visual Studio 中設定偵錯和發行組態](../../debugger/how-to-set-debug-and-release-configurations.md)。
+指定要顯示或修改的組態設定。 這些設定包括 [偵錯]\  (預設值)、[發行]  、[所有組態]  或使用者定義的組態。 如需詳細資訊，請參閱[如何：在 Visual Studio 中設定偵錯和發行組態](../../debugger/how-to-set-debug-and-release-configurations.md)。
 
  **平台**
 
- 指定要顯示或修改的平台設定。 這些設定包括 [任何 CPU]\  ([!INCLUDE[win8_appname_long](../../debugger/includes/win8_appname_long_md.md)] 應用程式的預設值)、[x64]  、[ARM]  、[x86]  或使用者定義的平台。 如需詳細資訊，請參閱[如何：在 Visual Studio 中設定偵錯和發行組態](../../debugger/how-to-set-debug-and-release-configurations.md)。
+指定要顯示或修改的平台設定。 這些設定包括 [任何 CPU]\  ([!INCLUDE[win8_appname_long](../../debugger/includes/win8_appname_long_md.md)] 應用程式的預設值)、[x64]  、[ARM]  、[x86]  或使用者定義的平台。 如需詳細資訊，請參閱[如何：在 Visual Studio 中設定偵錯和發行組態](../../debugger/how-to-set-debug-and-release-configurations.md)。
 
 ## <a name="general-page"></a>一般頁面
 
@@ -55,13 +55,13 @@ ms.locfileid: "68605944"
 
  **輸出路徑**
 
- 指定專案組態的輸出檔位置。 路徑是相對的；如果您輸入絕對路徑，則會在專案中儲存絕對路徑。 預設路徑為 bin\Debug。
+指定專案組態的輸出檔位置。 路徑是相對的；如果您輸入絕對路徑，則會在專案中儲存絕對路徑。 預設路徑為 bin\Debug。
 
- 當您使用簡化的組建組態時，專案系統會決定要建置偵錯或發行版本。 不論您指定的 [輸出路徑]  為何，按一下 [偵錯]   > [開始偵錯]  (或按 **F5**) 時，組建均會放在偵錯位置。 但是，[建置]  功能表上的 [建置方案]  命令卻會將其放在您指定的位置。 若要啟用進階建置設定，請在功能表列上選擇 [工具]   > [選項]  。 在 [選項]  對話方塊中，展開 [專案和解決方案]  ，選取 [一般]  ，然後清除 [顯示進階組建組態]  核取方塊。 這麼做可以讓您手動控制所有組態值，以及建置的是偵錯或發行版本。
+當您使用簡化的組建組態時，專案系統會決定要建置偵錯或發行版本。 不論您指定的 [輸出路徑]  為何，按一下 [偵錯]   > [開始偵錯]  (或按 **F5**) 時，組建均會放在偵錯位置。 但是，[建置]  功能表上的 [建置方案]  命令卻會將其放在您指定的位置。 若要啟用進階建置設定，請在功能表列上選擇 [工具]   > [選項]  。 在 [選項]  對話方塊中，展開 [專案和方案]  ，選取 [一般]  ，然後清除 [顯示進階組建組態]  核取方塊。 這麼做可以讓您手動控制所有組態值，以及建置的是偵錯或發行版本。
 
  **預設語言**
 
- 指定專案的預設語言。 系統會將使用者的慣用語言指定為控制台 [時鐘、語言和區域]  中選取的語言。 當使用者的慣用語言不符合應用程式所提供的語言資源時，您可以指定專案預設語言，確保系統會使用指定的預設語言資源。
+指定專案的預設語言。 系統會將使用者的慣用語言指定為控制台 [時鐘、語言和區域]  中選取的語言。 當使用者的慣用語言不符合應用程式所提供的語言資源時，您可以指定專案預設語言，確保系統會使用指定的預設語言資源。
 
 ## <a name="debug-page"></a>偵錯頁面
 
@@ -72,7 +72,7 @@ ms.locfileid: "68605944"
 
  **要啟動的偵錯工具**
 
- 指定偵錯工具的預設主機。
+指定偵錯工具的預設主機。
 
 - 選取 [本機電腦]  ，在 Visual Studio 主機電腦上啟動應用程式。 如需詳細資訊，請參閱[在本機電腦上執行應用程式](../../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)。
 

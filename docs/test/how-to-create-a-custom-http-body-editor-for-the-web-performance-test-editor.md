@@ -8,12 +8,12 @@ ms.assetid: a0b2d8ff-3e2a-487e-9172-90047174f336
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 624d06dd44812269bcff1e67cf048fbb077e90ea
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 30ce24b0cb48e88ddb77cf3576d40f95ed022ba0
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66745819"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926520"
 ---
 # <a name="how-to-create-a-custom-http-body-editor-for-the-web-performance-test-editor"></a>作法：建立 Web 效能測試編輯器的自訂 HTTP 本文編輯器
 
@@ -117,9 +117,9 @@ ms.locfileid: "66745819"
 private MessageEditorControl messageEditorControl
 ```
 
- messageEditorControl 執行個體會裝載於 <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin.CreateEditor*> 方法建立的外掛程式對話方塊內。 此外，messageEditorControl 的 <xref:System.Windows.Forms.RichTextBox> 中會填入 <xref:Microsoft.VisualStudio.TestTools.WebTesting.IHttpBody> 的內容。 不過，除非 <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin.SupportsContentType*> 傳回 `true`，否則無法建立外掛程式。 以此編輯器為例，如果 <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin.SupportsContentType*> 中的 `true` 包含 "xml"，則 <xref:Microsoft.VisualStudio.TestTools.WebTesting.IHttpBody.ContentType*> 會傳回 <xref:Microsoft.VisualStudio.TestTools.WebTesting.IHttpBody>。
+messageEditorControl 執行個體會裝載於 <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin.CreateEditor*> 方法建立的外掛程式對話方塊內。 此外，messageEditorControl 的 <xref:System.Windows.Forms.RichTextBox> 中會填入 <xref:Microsoft.VisualStudio.TestTools.WebTesting.IHttpBody> 的內容。 不過，除非 <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin.SupportsContentType*> 傳回 `true`，否則無法建立外掛程式。 以此編輯器為例，如果 <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin.SupportsContentType*> 中的 `true` 包含 "xml"，則 <xref:Microsoft.VisualStudio.TestTools.WebTesting.IHttpBody.ContentType*> 會傳回 <xref:Microsoft.VisualStudio.TestTools.WebTesting.IHttpBody>。
 
- 當完成編輯字串內容而且使用者按一下外掛程式對話方塊中的 [確定]  時，便會呼叫 <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin.GetNewValue*>，以取得作為字串的已編輯文字，並且更新 [Web 測試效能編輯器] 之要求中的 [字串內容]  。
+當完成編輯字串內容而且使用者按一下外掛程式對話方塊中的 [確定]  時，便會呼叫 <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin.GetNewValue*>，以取得作為字串的已編輯文字，並且更新 [Web 測試效能編輯器] 之要求中的 [字串內容]  。
 
 ### <a name="create-a-class-and-implement-the-istringhttpbodyeditorplugin-interface"></a>建立類別並實作 IStringHttpBodyEditorPlugin 介面
 

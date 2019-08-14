@@ -8,17 +8,17 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c205a3c8e88603153ec4bfabaa2545d8ae8c62d3
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 74f6d64d515ac7fab454b123686e671d9bcd1d2d
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430788"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68918921"
 ---
 # <a name="step-2-run-your-program"></a>步驟 2：執行程式
 當您建立新的方案時，實際上就是建置要執行的程式。 它現在還沒有其他功能，只是顯示空白視窗，標題列中顯示 **Form1**。 但它真的可以執行，因為您即將進一步了解其做法。
 
- ![影片連結](../data-tools/media/playvideo.gif)如需本主題的影片版本，請參閱[教學課程 1：在 Visual Basic 中建立圖片檢視器 - 影片 1](http://go.microsoft.com/fwlink/?LinkId=205209) 或[教學課程 1：在 C# 中建立圖片檢視器 - 影片 1](http://go.microsoft.com/fwlink/?LinkId=205199)。 這些影片使用舊版 Visual Studio，因此有一些功能表命令以及某些使用者介面項目會有些微差異。 不過，概念和程序在目前 Visual Studio 版本中的運作方式雷同。
+![影片連結](../data-tools/media/playvideo.gif)如需本主題的影片版本，請參閱[教學課程 1：在 Visual Basic 中建立圖片檢視器 - 影片 1](http://go.microsoft.com/fwlink/?LinkId=205209) 或[教學課程 1：在 C# 中建立圖片檢視器 - 影片 1](http://go.microsoft.com/fwlink/?LinkId=205199)。 這些影片使用舊版 Visual Studio，因此有一些功能表命令以及某些使用者介面項目會有些微差異。 不過，概念和程序在目前 Visual Studio 版本中的運作方式雷同。
 
 ## <a name="to-run-your-program"></a>若要執行程式
 
@@ -26,14 +26,14 @@ ms.locfileid: "63430788"
 
     - 選擇 **F5** 鍵。
 
-    - 在功能表列上，依序選擇 [偵錯] > [開始偵錯]。
+    - 在功能表列上，依序選擇 [偵錯]   > [開始偵錯]  。
 
-    - 在工具列上選擇 [開始偵錯] 按鈕，如下所示。
+    - 在工具列上選擇 [開始偵錯]  按鈕，如下所示。
 
          ![[開始偵錯] 工具列按鈕](../ide/media/express_icondebug.png)
-[開始偵錯]**** 工具列按鈕
+[開始偵錯] **** 工具列按鈕
 
-2. Visual Studio 會執行您的程式，且稱為 [Form1] 的視窗會隨即出現。 下圖顯示您剛才建置的程式。 程式正在執行中，您很快就會加上更多功能。
+2. Visual Studio 會執行您的程式，且稱為 [Form1]  的視窗會隨即出現。 下圖顯示您剛才建置的程式。 程式正在執行中，您很快就會加上更多功能。
 
      ![執行中的 Windows Forms 應用程式](../ide/media/express_firstrun.png)
 執行中的 **Windows Form** 應用程式
@@ -45,11 +45,11 @@ ms.locfileid: "63430788"
 
 4. 使用下列其中一種方法停止您的程式。
 
-    - 在工具列上選擇 [停止偵錯] 按鈕。
+    - 在工具列上選擇 [停止偵錯]  按鈕。
 
-    - 在功能表列上，依序選擇 [偵錯] > [停止偵錯]。
+    - 在功能表列上，依序選擇 [偵錯]   > [停止偵錯]  。
 
-    - 選擇 [Form1] 視窗右上角的 **X** 按鈕。
+    - 選擇 [Form1]  視窗右上角的 **X** 按鈕。
 
     > [!NOTE]
     > 當您在 IDE 內部執行程式時，就稱為「偵錯」，因為通常這樣做可找出並修正程式碼中的 Bug (錯誤)。 雖然此程式很小，而且實際上不會有任何作用，但它仍然是真正的程式。 您遵循相同程序執行和偵錯其他程式。 若要深入了解偵錯，請參閱[偵錯工具簡介](../debugger/debugger-feature-tour.md)。

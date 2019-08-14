@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 94598cd14b25fa598cdfde4e3033bb2877bcbe40
-ms.sourcegitcommit: cc5fd59e5dc99181601b7db8b28d7f8a83a36bab
+ms.openlocfilehash: e35641371ebac33c7a89426290927b6045bc4e3e
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/11/2019
-ms.locfileid: "66836120"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68924083"
 ---
 # <a name="code-snippets-schema-reference"></a>程式碼片段結構描述參考
 
@@ -40,7 +40,7 @@ IntelliSense 程式碼片段是預先設計的程式碼片段，可用以插入�
 | - |-----------------|
 |[Reference 項目](../ide/code-snippets-schema-reference.md#reference-element)|包含有關程式碼片段所需之組件參考的資訊。|
 
- 需要文字值。 此文字會指定程式碼片段參考的組件。
+需要文字值。 此文字會指定程式碼片段參考的組件。
 
 ## <a name="author-element"></a>Author 元素
 
@@ -56,7 +56,7 @@ IntelliSense 程式碼片段是預先設計的程式碼片段，可用以插入�
 | - |-----------------|
 |[Header 項目](../ide/code-snippets-schema-reference.md#header-element)|包含有關該程式碼片段的一般資訊。|
 
- 需要文字值。 此文字會指定程式碼片段的作者。
+需要文字值。 此文字會指定程式碼片段的作者。
 
 ## <a name="code-element"></a>程式碼項目
 
@@ -212,7 +212,7 @@ $selected$ is a great color. I love $selected$.
 |[Literal 項目](../ide/code-snippets-schema-reference.md#literal-element)|定義您可以編輯之程式碼片段的常值欄位。|
 |[Object 項目](../ide/code-snippets-schema-reference.md#object-element)|定義您可以編輯之程式碼片段的物件欄位。|
 
- 需要文字值。 這項文字是指定填入您可以編輯的程式碼片段中，各欄位的常值或物件的預設值。
+需要文字值。 這項文字是指定填入您可以編輯的程式碼片段中，各欄位的常值或物件的預設值。
 
 ## <a name="description-element"></a>Description 元素
 
@@ -228,7 +228,7 @@ $selected$ is a great color. I love $selected$.
 | - |-----------------|
 |[Header 項目](../ide/code-snippets-schema-reference.md#header-element)|包含有關該程式碼片段的一般資訊。|
 
- 需要文字值。 此文字描述程式碼片段。
+需要文字值。 此文字描述程式碼片段。
 
 ## <a name="function-element"></a>Function 項目
 
@@ -248,7 +248,7 @@ $selected$ is a great color. I love $selected$.
 |[Literal 項目](../ide/code-snippets-schema-reference.md#literal-element)|定義您可以編輯之程式碼片段的常值欄位。|
 |[Object 項目](../ide/code-snippets-schema-reference.md#object-element)|定義您可以編輯之程式碼片段的物件欄位。|
 
- 需要文字值。 此文字指定常值或物件欄位在 Visual Studio 中得到焦點時要執行的函式。
+需要文字值。 此文字指定常值或物件欄位在 Visual Studio 中得到焦點時要執行的函式。
 
 ## <a name="header-element"></a>Header 元素
 
@@ -518,7 +518,7 @@ $selected$ is a great color. I love $selected$.
 | - |-----------------|
 |[Header 項目](../ide/code-snippets-schema-reference.md#header-element)|包含有關該程式碼片段的一般資訊。|
 
- 可選擇使用文字值。 此文字是做為插入程式碼片段的捷徑。
+可選擇使用文字值。 此文字是做為插入程式碼片段的捷徑。
 
 ## <a name="snippet-element"></a>Snippet 元素
 
@@ -599,7 +599,7 @@ $selected$ is a great color. I love $selected$.
 | - |-----------------|
 |[Header 項目](../ide/code-snippets-schema-reference.md#header-element)|指定有關程式碼片段的一般資訊。|
 
- 需要文字值。 此文字會指定程式碼片段的標題。
+需要文字值。 此文字會指定程式碼片段的標題。
 
 ## <a name="tooltip-element"></a>ToolTip 元素
 
@@ -616,7 +616,7 @@ $selected$ is a great color. I love $selected$.
 |[Literal 項目](../ide/code-snippets-schema-reference.md#literal-element)|定義您可以編輯之程式碼片段的常值欄位。|
 |[Object 項目](../ide/code-snippets-schema-reference.md#object-element)|定義您可以編輯之程式碼片段的物件欄位。|
 
- 需要文字值。 此文字會指定要與程式碼片段中的物件或常值相關聯的工具提示描述。
+需要文字值。 此文字會指定要與程式碼片段中的物件或常值相關聯的工具提示描述。
 
 ## <a name="type-element"></a>Type 項目
 

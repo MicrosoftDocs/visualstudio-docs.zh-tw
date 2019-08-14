@@ -9,12 +9,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2cbde88ee12118f9f59271f897e81ec18c24eb4e
-ms.sourcegitcommit: 044bb54cb4552c8f4651feb11d62e52726117e75
+ms.openlocfilehash: bfe1affaad05d2c20a27fb0e315fc1d3b263f22b
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68662055"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68923755"
 ---
 # <a name="live-unit-testing-with-visual-studio"></a>Visual Studio 的 Live Unit Testing
 
@@ -151,7 +151,7 @@ Live Unit Testing 適用於下表所列的三種熱門單元測試架構。 其�
 
 如果您的方案具有 10 個或更多的專案，當啟動 Live Unit Testing 而其中並沒有保留資料，或從最上層 Visual Studio 功能表選取 [測試]   > [Live Unit Testing]   > [重設清除]  選項時，Visual Studio 會顯示下列對話方塊，以警告在大型專案中動態執行大量測試可能會嚴重影響效能。 如果您選取 [確定]  ，Live Unit Testing 會執行方案中的所有測試。 如果您選取 [取消]  ，便可以選取要執行的測試。 如需執行這項操作的資訊，請參閱下面的[包含和排除測試專案與測試方法](#include-and-exclude-test-projects-and-test-methods)一節。
 
- ![針對大型專案的 Live Unit Testing 對話方塊](media/lut-large-project.png)
+![針對大型專案的 Live Unit Testing 對話方塊](media/lut-large-project.png)
 
 ## <a name="include-and-exclude-test-projects-and-test-methods"></a>包含和排除測試專案與測試方法
 

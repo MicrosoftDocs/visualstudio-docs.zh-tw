@@ -15,24 +15,24 @@ ms.assetid: 969ed346-cf2e-4d48-82b3-edb3e075e1c0
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4a7cd36fcb144eaa098acc30a7da550b1288684a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 011b010eaad5def8943fd18a84da9fefdb01eff5
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62823065"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68918630"
 ---
 # <a name="analyzing-threshold-rule-violations-in-load-tests-using-the-load-test-analyzer"></a>使用負載測試分析器來分析負載測試中的臨界值規則違規
 
 臨界值規則與特定的效能計數器有關，而違規指的是效能計數器超過或未達設定值。 當您執行負載測試時，可以針對事先設定的臨界值規則分析所發生的違規。
 
-如果發生違規，**負載測試分析器**的狀態列就會出現 [臨界值違規] 超連結，並指出發生的違規數量。 您可以選擇超連結顯示臨界值違規資料表。 您也可以在 [計數器] 視窗和圖形上檢視臨界值違規。
+如果發生違規，**負載測試分析器**的狀態列就會出現 [臨界值違規]  超連結，並指出發生的違規數量。 您可以選擇超連結顯示臨界值違規資料表。 您也可以在 [計數器]  視窗和圖形上檢視臨界值違規。
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="view-threshold-violations-in-the-table"></a>在資料表中檢視臨界值違規
 
- 臨界值違規資料表會顯示最前面的 1,000 個違規。 下表包含這些資料行：
+臨界值違規資料表會顯示最前面的 1,000 個違規。 下表包含這些資料行：
 
 |資料行|說明|預設為可見|
 |-|-|-|
@@ -46,33 +46,33 @@ ms.locfileid: "62823065"
 > [!NOTE]
 > 選擇資料行標頭即可排序資料表。
 
- 如需詳細資訊，請參閱[在資料表檢視中分析負載測試結果和錯誤](../test/analyze-load-test-results-and-errors-in-the-tables-view.md)。
+如需詳細資訊，請參閱[在資料表檢視中分析負載測試結果和錯誤](../test/analyze-load-test-results-and-errors-in-the-tables-view.md)。
 
 ## <a name="view-threshold-violations-in-the-counters-panel"></a>在計數器面板中檢視臨界值違規
 
- 您可以在 [計數器] 面板中，於列出負載測試之效能計數器的樹狀目錄中，檢閱臨界值違規。 [計數器] 面板中的圖示會傳達臨界值違規。 其圖示可以是下列其中之一：
+您可以在 [計數器]  面板中，於列出負載測試之效能計數器的樹狀目錄中，檢閱臨界值違規。 [計數器]  面板中的圖示會傳達臨界值違規。 其圖示可以是下列其中之一：
 
- 其圖示可以是下列其中之一：
+其圖示可以是下列其中之一：
 
- ![無臨界值違規](../test/media/icon_ltest_1.gif) 無臨界值違規。
+![無臨界值違規](../test/media/icon_ltest_1.gif) 無臨界值違規。
 
- ![最新間隔期間的嚴重臨界值違規](../test/media/icon_ltest_2.gif) 在最後一個間隔中發生了嚴重臨界值違規。
+![最新間隔期間的嚴重臨界值違規](../test/media/icon_ltest_2.gif) 在最後一個間隔中發生了嚴重臨界值違規。
 
- ![預先間隔期間的嚴重臨界值違規](../test/media/icon_ltest_3.gif) 在前一個間隔中發生了嚴重臨界值違規。
+![預先間隔期間的嚴重臨界值違規](../test/media/icon_ltest_3.gif) 在前一個間隔中發生了嚴重臨界值違規。
 
- ![最新間隔期間的警告臨界值違規](../test/media/icon_ltest_4.gif) 在最後一個間隔中發生了警告臨界值違規。
+![最新間隔期間的警告臨界值違規](../test/media/icon_ltest_4.gif) 在最後一個間隔中發生了警告臨界值違規。
 
- ![預先間隔期間的警告臨界值違規](../test/media/icon_ltest_5.gif) 在前一個間隔中發生了警告臨界值違規。
+![預先間隔期間的警告臨界值違規](../test/media/icon_ltest_5.gif) 在前一個間隔中發生了警告臨界值違規。
 
- 您也可以選擇在圖形上顯示臨界值違規。 臨界值圖示會出現在圖形上發生臨界值違規的資料點旁。
+您也可以選擇在圖形上顯示臨界值違規。 臨界值圖示會出現在圖形上發生臨界值違規的資料點旁。
 
- 在計數器樹狀目錄中，臨界值違規的圖示是從特定的計數器節點傳送過來的，最深可達根節點。 這會提醒您在樹狀目錄上可能看不到 (因為樹狀目錄未展開) 之計數器的違規。
+在計數器樹狀目錄中，臨界值違規的圖示是從特定的計數器節點傳送過來的，最深可達根節點。 這會提醒您在樹狀目錄上可能看不到 (因為樹狀目錄未展開) 之計數器的違規。
 
 ## <a name="view-threshold-violations-on-the-graph"></a>在圖形上檢視臨界值違規
 
- 您可以在圖形上檢視臨界值違規。 圖示與 [計數器] 面板類似，會在圖形上傳達臨界值違規。 在圖形上之資料旁邊出現的圖示，指出發生臨界值違規的位置。 如果臨界值違規是在圖形上未出現的計數器上發生，您可以將該計數器從 [計數器] 面板拖曳至圖形上，藉此將它新增至圖形。
+您可以在圖形上檢視臨界值違規。 圖示與 [計數器]  面板類似，會在圖形上傳達臨界值違規。 在圖形上之資料旁邊出現的圖示，指出發生臨界值違規的位置。 如果臨界值違規是在圖形上未出現的計數器上發生，您可以將該計數器從 [計數器]  面板拖曳至圖形上，藉此將它新增至圖形。
 
- 如需詳細資訊，請參閱[在圖形檢視中分析負載測試結果](../test/analyze-load-test-results-in-the-graphs-view.md)。
+如需詳細資訊，請參閱[在圖形檢視中分析負載測試結果](../test/analyze-load-test-results-in-the-graphs-view.md)。
 
 ## <a name="see-also"></a>另請參閱
 

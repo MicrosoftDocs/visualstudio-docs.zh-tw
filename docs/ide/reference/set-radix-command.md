@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 70b61dff4ebe7486c2e04e4fd3061cd4110feca1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 13341d8cb6a708f4e10f211bd47b79a75e1b6e2a
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62952031"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926032"
 ---
 # <a name="set-radix-command"></a>設定基數命令
 設定或傳回用來顯示整數值的數值基底。
@@ -30,18 +30,18 @@ Debug.SetRadix [10 | 16 | hex | dec]
 ```
 
 ## <a name="arguments"></a>引數
- `10`、`16`、`hex` 或 `dec`
+`10`、`16`、`hex` 或 `dec`
 
- 選擇性。 表示十進位 (10 或 dec) 或十六進位 (16 或 hex)。 如果省略引數，則會傳回目前基數值。
+選擇性。 表示十進位 (10 或 dec) 或十六進位 (16 或 hex)。 如果省略引數，則會傳回目前基數值。
 
 ## <a name="example"></a>範例
- 此範例設定環境以十六進位格式顯示整數值。
+此範例設定環境以十六進位格式顯示整數值。
 
 ```cmd
 >Debug.SetRadix hex
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [Visual Studio 命令](../../ide/reference/visual-studio-commands.md)
 - [命令視窗](../../ide/reference/command-window.md)

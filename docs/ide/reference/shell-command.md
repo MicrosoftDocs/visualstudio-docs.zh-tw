@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 98163080c44a46330a4ba792f2ddde680c75b074
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: cb6bfc98d5ef6f7b3d3b6291ea55530325836d56
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62990044"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68918951"
 ---
 # <a name="shell-command"></a>Shell 命令
 在 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 內啟動可執行程式。
@@ -35,31 +35,31 @@ Tools.Shell [/command] [/output] [/dir:folder] path [args]
 ```
 
 ## <a name="arguments"></a>引數
- `path`
+`path`
 
- 必要項。 要執行之檔案或要開啟之文件的路徑和檔案名稱。 如果指定的檔案不在 PATH 環境變數的其中一個目錄中，則需要完整路徑。
+必要項。 要執行之檔案或要開啟之文件的路徑和檔案名稱。 如果指定的檔案不在 PATH 環境變數的其中一個目錄中，則需要完整路徑。
 
- `args`
+`args`
 
- 選擇性。 任何要傳遞給已叫用程式的引數。
+選擇性。 任何要傳遞給已叫用程式的引數。
 
 ## <a name="switches"></a>參數
- /commandwindow [或] /command [或] /c [或] /cmd
+/commandwindow [或] /command [或] /c [或] /cmd
 
- 選擇性。 指定可執行檔的輸出會顯示在 [命令] 視窗中。
+選擇性。 指定可執行檔的輸出會顯示在 [命令]  視窗中。
 
- /dir:`folder` [或] /d: `folder`
+/dir:`folder` [或] /d: `folder`
 
- 選擇性。 指定要在執行程式時設定的工作目錄。
+選擇性。 指定要在執行程式時設定的工作目錄。
 
- /outputwindow [或] /output [或] /out [或] /o
+/outputwindow [或] /output [或] /out [或] /o
 
- 選擇性。 指定可執行檔的輸出會顯示在 [輸出] 視窗中。
+選擇性。 指定可執行檔的輸出會顯示在 [輸出]  視窗中。
 
 ## <a name="remarks"></a>備註
- 必須緊接在 `Tools.Shell` 後面指定 /dir /o /c 參數。 在可執行檔名稱後面指定的任何內容都是當成命令列引數傳遞給它。
+必須緊接在 `Tools.Shell` 後面指定 /dir /o /c 參數。 在可執行檔名稱後面指定的任何內容都是當成命令列引數傳遞給它。
 
- 預先定義的別名 `Shell` 可以用來取代 `Tools.Shell`。
+預先定義的別名 `Shell` 可以用來取代 `Tools.Shell`。
 
 > [!CAUTION]
 > 如果 `path` 引數提供目錄路徑和檔案名稱，您應該使用常值引號 (""") 括住整個路徑名稱，如下所述：
@@ -68,7 +68,7 @@ Tools.Shell [/command] [/output] [/dir:folder] path [args]
 Tools.Shell """C:\Program Files\SomeFile.exe"""
 ```
 
- `Shell` 處理器會將每組三個雙引號 (""") 解譯為單一雙引號字元。 因此，上述範例實際會將下列路徑字串傳遞給 `Shell` 命令：
+`Shell` 處理器會將每組三個雙引號 (""") 解譯為單一雙引號字元。 因此，上述範例實際會將下列路徑字串傳遞給 `Shell` 命令：
 
 ```cmd
 "C:\Program Files\SomeFile.exe"
@@ -78,13 +78,13 @@ Tools.Shell """C:\Program Files\SomeFile.exe"""
 > 如果您不要使用常值引號 (""") 括住路徑字串，則 Windows 只會使用字串部分，最多到第一個空格。 例如，如果上述路徑字串未正確地加上引號，則 Windows 會尋找名為 "Program" 且位在 C:\ 根目錄的檔案。 如果 C:\Program.exe 可執行檔實際可用 (即使是透過不正當竄改所安裝的可執行檔)，則 Windows 會嘗試執行該程式來取代所需 "c:\Program Files\SomeFile.exe" 程式。
 
 ## <a name="example"></a>範例
- 下列命令會使用 xcopy.exe 將 `MyText.txt` 檔案複製至 `Text` 資料夾。 xcopy.exe 的輸出會同時顯示在 [命令視窗] 和 [輸出] 視窗中。
+下列命令會使用 xcopy.exe 將 `MyText.txt` 檔案複製至 `Text` 資料夾。 xcopy.exe 的輸出會同時顯示在 [命令視窗]  和 [輸出]  視窗中。
 
 ```cmd
 >Tools.Shell /o /c xcopy.exe c:\MyText.txt c:\Text\MyText.txt
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [Visual Studio 命令](../../ide/reference/visual-studio-commands.md)
 - [命令視窗](../../ide/reference/command-window.md)

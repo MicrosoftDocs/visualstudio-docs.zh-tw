@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fb1a2361534f167a0b88b3f1b5b38c005915243d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 95edb5098d73e8fccb47f9f059473394afe5f542
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62422961"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68919103"
 ---
 # <a name="list-registers-command"></a>列出暫存器命令
 顯示所選暫存器的值，並讓您修改要顯示的暫存器清單。
@@ -33,39 +33,39 @@ Debug.ListRegisters [/Display [{register|registerGroup}...]] [/List]
 ```
 
 ## <a name="switches"></a>參數
- /Display [{`register`&#124;`registerGroup`}...]
+/Display [{`register`&#124;`registerGroup`}...]
 
- 顯示所指定 `register` 或 `registerGroup` 的值。 如果未指定 `register` 或 `registerGroup`，則會顯示暫存器的預設清單。 如果未指定參數，則行為是相同的。 例如：
+顯示所指定 `register` 或 `registerGroup` 的值。 如果未指定 `register` 或 `registerGroup`，則會顯示暫存器的預設清單。 如果未指定參數，則行為是相同的。 例如：
 
- `Debug.ListRegisters /Display eax`
+`Debug.ListRegisters /Display eax`
 
- 相當於
+相當於
 
- `Debug.ListRegisters eax`
+`Debug.ListRegisters eax`
 
- /List
+/List
 
- 顯示清單中的所有暫存器群組。
+顯示清單中的所有暫存器群組。
 
- /Watch [{`register`&#124;`registerGroup`}...]
+/Watch [{`register`&#124;`registerGroup`}...]
 
- 將一或多個 `register` 或 `registerGroup` 值新增至清單。
+將一或多個 `register` 或 `registerGroup` 值新增至清單。
 
- /Unwatch [{`register`&#124;`registerGroup`}...]
+/Unwatch [{`register`&#124;`registerGroup`}...]
 
- 從清單移除一或多個 `register` 或 `registerGroup` 值。
+從清單移除一或多個 `register` 或 `registerGroup` 值。
 
 ## <a name="remarks"></a>備註
- 別名 `r` 可以用來取代 `Debug.ListRegisters`。
+別名 `r` 可以用來取代 `Debug.ListRegisters`。
 
 ## <a name="example"></a>範例
- 這個範例會使用 `Debug.ListRegisters` 別名 `r` 顯示暫存器群組 `Flags` 的值。
+這個範例會使用 `Debug.ListRegisters` 別名 `r` 顯示暫存器群組 `Flags` 的值。
 
 ```cmd
 r /Display Flags
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [Visual Studio 命令](../../ide/reference/visual-studio-commands.md)
 - [偵錯基本概念：暫存器視窗](../../debugger/debugging-basics-registers-window.md)

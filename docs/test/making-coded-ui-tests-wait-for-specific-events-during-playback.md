@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3e2c83b74c2649681251ffa51f1366c0ce96d677
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 84a8ad1784ce33d30ce1023f0554feeb340b5703
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62788807"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68923640"
 ---
 # <a name="make-coded-ui-tests-wait-for-specific-events-during-playback"></a>讓自動程式化 UI 測試在播放期間等候特定事件
 
@@ -35,7 +35,7 @@ Visual Studio 企業版
 
 <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlEnabled%2A>
 
-當精靈藉由呼叫伺服器來執行輸入的一些非同步驗證時，等候啟用控制項。 例如，您可以命令方法等候精靈的 [下一步] 按鈕啟用 ()。 如需這個方法的範例，請參閱[逐步解說：建立、編輯及維護自動程式化 UI 測試](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)。
+當精靈藉由呼叫伺服器來執行輸入的一些非同步驗證時，等候啟用控制項。 例如，您可以命令方法等候精靈的 [下一步]  按鈕啟用 ()。 如需這個方法的範例，請參閱[逐步解說：建立、編輯及維護自動程式化 UI 測試](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)。
 
 <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlExist%2A>
 
@@ -47,7 +47,7 @@ Visual Studio 企業版
 
 <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlPropertyEqual%2A>
 
-等候控制項的指定屬性具有給定值。 例如，等候狀態文字變更為 [完成]。
+等候控制項的指定屬性具有給定值。 例如，等候狀態文字變更為 [完成]  。
 
 <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlPropertyNotEqual%2A>
 
@@ -55,7 +55,7 @@ Visual Studio 企業版
 
 <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlCondition%2A>
 
-等候指定的述詞傳回 `true`。 這可以用於指定控制項上的複雜等候作業 (例如 OR 條件)。 例如，您可以等到狀態文字變成 [成功] 或 [失敗]，如下列程式碼所示：
+等候指定的述詞傳回 `true`。 這可以用於指定控制項上的複雜等候作業 (例如 OR 條件)。 例如，您可以等到狀態文字變成 [成功]  或 [失敗]  ，如下列程式碼所示：
 
 ```csharp
 
@@ -72,7 +72,7 @@ statusText.WaitForControlCondition(IsStatusDone);
 
  <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForCondition%2A>
 
- 所有先前的方法都是 UITestControl 的執行個體方法。 此方法是靜態方法。 這個方法也會等候指定的述詞成為 `true`，但可用於多個控制項上的複雜等候作業 (例如 OR 條件)。 例如，您可以等到狀態文字變成 [成功] 或直到出現錯誤訊息，如下列程式碼所示：
+所有先前的方法都是 UITestControl 的執行個體方法。 此方法是靜態方法。 這個方法也會等候指定的述詞成為 `true`，但可用於多個控制項上的複雜等候作業 (例如 OR 條件)。 例如，您可以等到狀態文字變成 [成功]  或直到出現錯誤訊息，如下列程式碼所示：
 
 ```csharp
 
@@ -88,19 +88,19 @@ private static bool IsStatusDoneOrError(UITestControl[] controls)
 UITestControl.WaitForCondition<UITestControl[]>(new UITestControl[] { statusText, errorDialog }, IsStatusDoneOrError);
 ```
 
- 所有這些方法都具有下列行為：
+所有這些方法都具有下列行為：
 
- 如果等候成功，方法會傳回 true；如果等候失敗則傳回 false。
+如果等候成功，方法會傳回 true；如果等候失敗則傳回 false。
 
- 等候作業的隱含逾時是由 <xref:Microsoft.VisualStudio.TestTools.UITesting.PlaybackSettings.WaitForReadyTimeout%2A> 屬性指定。 此屬性的預設值是 60000 毫秒 (一分鐘)。
+等候作業的隱含逾時是由 <xref:Microsoft.VisualStudio.TestTools.UITesting.PlaybackSettings.WaitForReadyTimeout%2A> 屬性指定。 此屬性的預設值是 60000 毫秒 (一分鐘)。
 
- 方法具有可採用明確逾時 (以毫秒為單位) 的多載。 不過，當等候作業導致控制項的隱含搜尋，或當應用程式忙碌時，實際的等候時間可能會超過指定的逾時。
+方法具有可採用明確逾時 (以毫秒為單位) 的多載。 不過，當等候作業導致控制項的隱含搜尋，或當應用程式忙碌時，實際的等候時間可能會超過指定的逾時。
 
- 先前的函式功能強大且具有彈性，且幾乎可滿足所有條件。 不過，萬一這些方法無法滿足您的需求，而且您需要在程式碼中編碼 <xref:Microsoft.VisualStudio.TestTools.UITesting.Playback.Wait%2A> 或 <xref:System.Threading.Thread.Sleep%2A> 時，建議您使用 Playback.Wait() 而非 Thread.Sleep() API。 這樣做的原因是：
+先前的函式功能強大且具有彈性，且幾乎可滿足所有條件。 不過，萬一這些方法無法滿足您的需求，而且您需要在程式碼中編碼 <xref:Microsoft.VisualStudio.TestTools.UITesting.Playback.Wait%2A> 或 <xref:System.Threading.Thread.Sleep%2A> 時，建議您使用 Playback.Wait() 而非 Thread.Sleep() API。 這樣做的原因是：
 
- 您可以使用  <xref:Microsoft.VisualStudio.TestTools.UITesting.PlaybackSettings.ThinkTimeMultiplier%2A> 屬性以修改睡眠的持續時間。 根據預設，此變數是 1，但是您可以增加或減少以變更整個程式碼的等候時間。 例如，如果您要特意透過慢速網路測試，或處於某些效能較慢的情況中，您可以在某個位置上將這個變數 (或甚至在組態檔中) 變為 1.5，在所有位置額外增加 50%。
+您可以使用  <xref:Microsoft.VisualStudio.TestTools.UITesting.PlaybackSettings.ThinkTimeMultiplier%2A> 屬性以修改睡眠的持續時間。 根據預設，此變數是 1，但是您可以增加或減少以變更整個程式碼的等候時間。 例如，如果您要特意透過慢速網路測試，或處於某些效能較慢的情況中，您可以在某個位置上將這個變數 (或甚至在組態檔中) 變為 1.5，在所有位置額外增加 50%。
 
- 檢查使用者取消\中斷作業時，Playback.Wait() 會在 for 迴圈的較小區塊中內部呼叫 Thread.Sleep() (在上述計算後)。 換句話說，Playback.Wait() 可讓您在等候結束，且睡眠無法或擲回例外狀況之前，取消播放。
+檢查使用者取消\中斷作業時，Playback.Wait() 會在 for 迴圈的較小區塊中內部呼叫 Thread.Sleep() (在上述計算後)。 換句話說，Playback.Wait() 可讓您在等候結束，且睡眠無法或擲回例外狀況之前，取消播放。
 
 > [!TIP]
 > 自動程式碼 UI 測試編輯器可讓您輕鬆地修改自動程式碼 UI 測試。 您可以使用自動程式碼 UI 測試編輯器，尋找、檢視和編輯您的測試方法。 您也可以在 UI 控制項對應中編輯 UI 動作和其相關聯控制項。 如需詳細資訊，請參閱[使用自動程式化 UI 測試編輯器來編輯自動程式化 UI 測試](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md)。
