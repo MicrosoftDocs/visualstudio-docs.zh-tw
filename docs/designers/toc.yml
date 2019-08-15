@@ -8,7 +8,7 @@
       href: designing-xaml-in-visual-studio.md
     - name: XAML 設計工具
       items:
-        - name: 概觀
+        - name: 總覽
           displayName: XAML Designer
           href: creating-a-ui-by-using-xaml-designer-in-visual-studio.md
         - name: 運用元素
@@ -58,7 +58,7 @@
           href: wpf-data-binding-with-linq-to-xml-overview.md
         - name: LINQ to XML 動態屬性
           items:
-            - name: 概觀
+            - name: 總覽
               displayName: LINQ to XML dynamic properties
               href: linq-to-xml-dynamic-properties.md
             - name: XAttribute 類別動態屬性
@@ -93,9 +93,13 @@
                   href: l2dbform-xaml-cs-source-code.md
 - name: Windows Forms
   items:
+    - name: Windows Form 設計工具概觀
+      href: windows-forms-designer-overview.md
+    - name: 開始使用 Windows Form 設計工具
+      href: walkthrough-windows-forms-designer.md
     - name: '教學課程 1：建立圖片檢視器 (C#)'
       items:
-        - name: 概觀
+        - name: 總覽
           displayName: Tutorial 1 Picture viewer
           href: ../ide/tutorial-1-create-a-picture-viewer.md
         - name: 步驟 1：建立 Windows Forms 應用程式專案
@@ -122,7 +126,7 @@
           href: ../ide/step-11-run-your-program-and-try-other-features.md
     - name: '教學課程 2：建立計時數學測驗 (C#)'
       items:
-        - name: 概觀
+        - name: 總覽
           displayName: Tutorial 2 Timed math quiz
           href: ../ide/tutorial-2-create-a-timed-math-quiz.md
         - name: 步驟 1：建立專案並將標籤新增至表單
@@ -143,7 +147,7 @@
           href: ../ide/step-8-customize-the-quiz.md
     - name: '教學課程 3：建立配對遊戲 (C#)'
       items:
-        - name: 概觀
+        - name: 總覽
           displayName: Tutorial 3 Matching game
           href: ../ide/tutorial-3-create-a-matching-game.md
         - name: 步驟 1：建立專案並將資料表新增至表單
@@ -206,7 +210,7 @@
           href: shader-designer.md
         - name: 著色器設計工具節點
           items:
-            - name: 概觀
+            - name: 總覽
               displayName: Shader designer nodes
               href: shader-designer-nodes.md
             - name: 常數節點
