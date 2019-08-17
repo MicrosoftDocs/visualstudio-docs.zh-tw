@@ -1,6 +1,6 @@
 ---
 title: Office 主要 Interop 組件
-ms.date: 09/20/2018
+ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -14,32 +14,34 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1f6a8c3ca6c6c4015acc6c8be3914d4c458dfeb0
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 5c1038d0d7e7d20c28cdd0cb52804461376a4e89
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63447087"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69551706"
 ---
 # <a name="office-primary-interop-assemblies"></a>Office 主要 Interop 組件
 
 若要從 Office 專案使用 Microsoft Office 應用程式的功能，您必須使用應用程式的主要 Interop 組件 (PIA)。 PIA 可讓 Managed 程式碼與 Microsoft Office 應用程式的 COM 物件模型互動。
 
+[!include[Add-ins note](includes/addinsnote.md)]
+
 當您建立新的 Office 專案時，Visual Studio 會加入建置專案所需的 PIA 參考。 在某些情況下，您可能需要加入其他 PIA 的參考 (例如，如果您要在 Microsoft Office Excel 專案中使用 Microsoft Office Word 的功能)。
 
 本主題將說明在 Office 專案中使用 Microsoft Office PIA 的以下方面：
 
-- [主要 interop 組件分開，建置並執行的專案](#separateassemblies)
+- [分隔主要 interop 元件來建立和執行專案](#separateassemblies)
 
 - [在單一專案中使用多個 Microsoft Office 應用程式的功能](#usingfeatures)
 
 - [Microsoft Office 應用程式之主要 Interop 組件的完整清單](#pialist)
 
-如需有關主要 interop 組件的詳細資訊，請參閱 <<c0> [ 主要 interop 組件](/previous-versions/dotnet/netframework-4.0/aax7sdch(v=vs.100))。
+如需主要 interop 元件的詳細資訊, 請參閱[主要 interop 元件](/previous-versions/dotnet/netframework-4.0/aax7sdch(v=vs.100))。
 
 <a name="separateassemblies"></a>
 
-## <a name="separate-primary-interop-assemblies-to-build-and-run-projects"></a>主要 interop 組件分開，建置並執行的專案
+## <a name="separate-primary-interop-assemblies-to-build-and-run-projects"></a>分隔主要 interop 元件來建立和執行專案
 
 Visual Studio 在開發電腦上使用不同的 PIA 集合。 這些不同的組件集合位於下列位置：
 
@@ -51,27 +53,27 @@ Visual Studio 在開發電腦上使用不同的 PIA 集合。 這些不同的組
 
   進行某些開發工作期間會使用這些組件複本，例如執行或偵錯專案時。 Visual Studio 不會安裝及註冊這些組件，您必須自行完成此作業。
 
-### <a name="primary-interop-assemblies-in-the-program-files-directory"></a>在 program files 目錄中的主要 interop 組件
+### <a name="primary-interop-assemblies-in-the-program-files-directory"></a>Program files 目錄中的主要 interop 元件
 
 當您安裝 Visual Studio 時，會自動將 PIA 安裝到檔案系統的某個位置，此位置位於全域組件快取之外。 當您建立新專案時，Visual Studio 會自動將這些 PIA 複本的參考加入至專案。 當您在開發及建置專案時，Visual Studio 會使用這些 PIA 複本 (而不是全域組件快取中的組件) 來解析類型參考。
 
 如果在全域組件快取中註冊了不同版本的 PIA，這些 PIA 複本可協助 Visual Studio 避免發生一些開發問題。
 
-從 Visual Studio 2017 開始，這些 Pia 複本會在開發電腦上下列共用的位置安裝：
+從 Visual Studio 2017 開始, 這些 Pia 複本會安裝到開發電腦上的下列共用位置:
 
 - *%ProgramFiles%\Microsoft Visual Studio\Shared\Visual Studio Tools for Office\PIA\*
 
-- (或 * %programfiles (x86) %\Microsoft Visual Studio\Shared\Visual Studio Tools for Office\PIA\* 64 位元作業系統上)
+- (或 *% ProgramFiles (x86)% \ Microsoft Visual Studio\Shared\Visual Studio Tools for Office\PIA\* on 64-bit 作業系統)
 
 > [!NOTE]
-> 針對舊版的 Visual Studio 中，這些 Pia 會安裝到 Visual Studio Tools for Office\PIA 資料夾下 * %programfiles%資料夾，為該版本的 Visual Studio。  
-> 例如: * %programfiles (x86) %\Microsoft Visual Studio 14.0\Visual Studio Tools for Office\PIA\*
+> 針對較舊版本的 Visual Studio, 會將這些 Pia 安裝到該 Visual Studio 版本之 *% ProgramFiles% 資料夾下的 [Office\PIA] 資料夾 Visual Studio Tools。  
+> 例如: *% ProgramFiles (x86)% \ Microsoft Visual Studio 14.0 \ Visual Studio Tools 適用于 Office\PIA\*
 
-### <a name="primary-interop-assemblies-in-the-global-assembly-cache"></a>在全域組件快取中的主要 interop 組件
+### <a name="primary-interop-assemblies-in-the-global-assembly-cache"></a>全域組件快取中的主要 interop 元件
 
-為了執行特定開發工作，您必須在開發電腦的全域組件快取中安裝並註冊 PIA。 當您在開發電腦上安裝 Office 時，通常會自動安裝 PIA。 如需詳細資訊，請參閱 <<c0> [ 設定電腦以開發 Office 方案](../vsto/configuring-a-computer-to-develop-office-solutions.md)。
+為了執行特定開發工作，您必須在開發電腦的全域組件快取中安裝並註冊 PIA。 當您在開發電腦上安裝 Office 時，通常會自動安裝 PIA。 如需詳細資訊, 請參閱[設定電腦以開發 Office 方案](../vsto/configuring-a-computer-to-develop-office-solutions.md)。
 
-使用者電腦不需要 Office PIA 即可執行 Office 方案。 如需詳細資訊，請參閱 <<c0> [ 設計和建立 Office 方案](../vsto/designing-and-creating-office-solutions.md)。
+使用者電腦不需要 Office PIA 即可執行 Office 方案。 如需詳細資訊, 請參閱[設計和建立 Office 方案](../vsto/designing-and-creating-office-solutions.md)。
 
 <a name="usingfeatures"></a>
 
@@ -79,18 +81,18 @@ Visual Studio 在開發電腦上使用不同的 PIA 集合。 這些不同的組
 
 Visual Studio 中的每一個 Office 專案範本設計成只能搭配一個 Microsoft Office 應用程式使用。 若要使用多個 Microsoft Office 應用程式中的功能，或是要使用未在 Visual Studio 中擁有專案之應用程式或元件中的功能，您必須加入所需 PIA 的參考。
 
-在大部分情況下，您應該將參考加入至 Visual Studio 的 安裝 Pia`%ProgramFiles(x86)%\Microsoft Visual Studio\Shared\Visual Studio Tools for Office\PIA\`目錄。 這些版本的組件出現在**Framework**索引標籤**參考管理員** 對話方塊。 如需詳細資訊，請參閱[如何：目標 Office 應用程式可以透過主要 interop 組件](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)。
+在大部分的情況下, 您應該在`%ProgramFiles(x86)%\Microsoft Visual Studio\Shared\Visual Studio Tools for Office\PIA\`目錄底下新增 Visual Studio 所安裝的 pia 參考。 這些版本的元件會顯示在 [**參考管理員**] 對話方塊的 [**架構**] 索引標籤上。 如需詳細資訊，請參閱[如何：透過主要 interop 元件](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)以 Office 應用程式為目標。
 
-如果您已在全域組件快取中安裝及註冊 PIA，這些版本的組件會顯示在 [參考管理員]  對話方塊的 [COM]  索引標籤上。 您應該避免加入這些版本的組件參考，因為使用這些版本的組件參考可能會發生一些開發問題。 例如，如果您在全域組件快取中註冊了不同版本的 PIA，您的專案將會自動建置為最後註冊的組件版本 (即使在 [參考管理員]  對話方塊的 [COM]  索引標籤上指定了不同版本的組件亦然)。
+如果您已在全域組件快取中安裝及註冊 PIA，這些版本的組件會顯示在 [參考管理員] 對話方塊的 [COM] 索引標籤上。 您應該避免加入這些版本的組件參考，因為使用這些版本的組件參考可能會發生一些開發問題。 例如，如果您在全域組件快取中註冊了不同版本的 PIA，您的專案將會自動建置為最後註冊的組件版本 (即使在 [參考管理員] 對話方塊的 [COM] 索引標籤上指定了不同版本的組件亦然)。
 
 > [!NOTE]
-> 當您加入參考某些組件的單一組件時，系統會自動將這些組件加入至專案。 例如，若要參考*Office.dll*並*Microsoft.Vbe.Interop.dll*時您將參考加入至 Word、 Excel、 Outlook、 Microsoft Forms 或 Graph 組件會自動新增組件。
+> 當您加入參考某些組件的單一組件時，系統會自動將這些組件加入至專案。 例如, 當您新增 Word、Excel、Outlook、Microsoft Forms 或 Graph 元件的參考時, 會自動加入對*Office .dll*和- *Vbe*元件的參考。
 
 <a name="pialist"></a>
 
-## <a name="primary-interop-assemblies-for-microsoft-office-applications"></a>Microsoft Office 應用程式的主要 interop 組件
+## <a name="primary-interop-assemblies-for-microsoft-office-applications"></a>Microsoft Office 應用程式的主要 interop 元件
 
-下表列出主要 interop 組件可供[!INCLUDE[Office_16_short](../vsto/includes/office-16-short-md.md)]，[!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)]和[!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)]。
+下表列出[!INCLUDE[Office_16_short](../vsto/includes/office-16-short-md.md)]、 [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)]和[!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)]可用的主要 interop 元件。
 
 <br/>
 
@@ -110,29 +112,29 @@ Visual Studio 中的每一個 Office 專案範本設計成只能搭配一個 Mic
 |Microsoft Publisher 14.0 物件程式庫<br /><br /> Microsoft Publisher 15.0 物件程式庫|Microsoft.Office.Interop.Publisher.dll|
 |Microsoft SharePoint Designer 14.0 Web 物件參考庫|Microsoft.Office.Interop.SharePointDesigner.dll|
 |Microsoft SharePoint Designer 14.0 Page 物件參考庫|Microsoft.Office.Interop.SharePointDesignerPage.dll|
-|Microsoft Smart Tags 2.0 類型程式庫**附註：** 智慧標籤在 [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)] 和 [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)]中已被取代。|Microsoft.Office.Interop.SmartTag.dll|
+|Microsoft 智慧標籤2.0 型別程式庫**附注:** 智慧標籤在 [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)] 和 [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)]中已被取代。|Microsoft.Office.Interop.SmartTag.dll|
 |Microsoft Visio 14.0 類型程式庫<br /><br /> Microsoft Visio 15.0 類型程式庫|Microsoft.Office.Interop.Visio.dll|
 |Microsoft Visio 14.0 Save As Web 類型程式庫<br /><br /> Microsoft Visio 15.0 Save As Web 類型程式庫|Microsoft.Office.Interop.Visio.SaveAsWeb.dll|
 |Microsoft Visio 14.0 Drawing Control 類型程式庫<br /><br /> Microsoft Visio 15.0 Drawing Control 類型程式庫|Microsoft.Office.Interop.VisOcx.dll|
 |Microsoft Word 14.0 物件程式庫<br /><br /> Microsoft Word 15.0 物件程式庫|[Microsoft.Office.Interop.Word.dll](https://docs.microsoft.com/dotnet/api/microsoft.office.interop.word?view=word-pia)|
 |Microsoft Visual Basic for Applications Extensibility 5.3|Microsoft.Vbe.Interop.dll|
 
-### <a name="binding-redirect-assemblies"></a>繫結重新導向組件
+### <a name="binding-redirect-assemblies"></a>系結重新導向元件
 
-當您在全域組件快取中安裝及註冊 Office PIA 時 (使用 Office 或是安裝 PIA 的可轉散發套件)，只會在全域組件快取中安裝繫結重新導向組件。 這些組件可協助您確認正確的主要 interop 組件版本在執行階段載入。
+當您在全域組件快取中安裝及註冊 Office PIA 時 (使用 Office 或是安裝 PIA 的可轉散發套件)，只會在全域組件快取中安裝繫結重新導向組件。 這些元件可協助確保在執行時間載入正確版本的主要 interop 元件。
 
 例如，當參考 [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)] 組件的方案會在具有相同主要 Interop 組件之 [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] 版本的電腦上執行時，繫結重新導向組件會指示 [!INCLUDE[dnprdnshort](../sharepoint/includes/dnprdnshort-md.md)] 執行階段載入 [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] 版本的主要 Interop 組件。
 
-如需詳細資訊，請參閱[如何：啟用和停用自動繫結重新導向](/dotnet/framework/configure-apps/how-to-enable-and-disable-automatic-binding-redirection)。
+如需詳細資訊，請參閱[如何：啟用和停用自動](/dotnet/framework/configure-apps/how-to-enable-and-disable-automatic-binding-redirection)系結重新導向。
 
 ## <a name="see-also"></a>另請參閱
 
-- [如何：透過主要 interop 組件的目標 Office 應用程式](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)
-- [Excel 物件模型概觀](../vsto/excel-object-model-overview.md)
-- [InfoPath 方案](../vsto/infopath-solutions.md)
-- [Outlook 物件模型概觀](../vsto/outlook-object-model-overview.md)
+- [如何：透過主要 interop 元件以 Office 應用程式為目標](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)
+- [Excel 物件模型總覽](../vsto/excel-object-model-overview.md)
+- [InfoPath 解決方案](../vsto/infopath-solutions.md)
+- [Outlook 物件模型總覽](../vsto/outlook-object-model-overview.md)
 - [PowerPoint 方案](../vsto/powerpoint-solutions.md)
-- [專案的方案](../vsto/project-solutions.md)
-- [Visio 物件模型概觀](../vsto/visio-object-model-overview.md)
-- [Word 物件模型概觀](../vsto/word-object-model-overview.md)
-- [一般參考&#40;在 Visual Studio 中的 Office 程式開發&#41;](../vsto/general-reference-office-development-in-visual-studio.md)
+- [專案解決方案](../vsto/project-solutions.md)
+- [Visio 物件模型總覽](../vsto/visio-object-model-overview.md)
+- [Word 物件模型總覽](../vsto/word-object-model-overview.md)
+- [Visual Studio 中&#40;的一般參考 Office 開發&#41;](../vsto/general-reference-office-development-in-visual-studio.md)

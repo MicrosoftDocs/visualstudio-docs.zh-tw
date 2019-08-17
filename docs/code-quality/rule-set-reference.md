@@ -9,21 +9,21 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eeb6f4842bab5586cdea1db8ae2d2dd914c88b3c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d746756bdbb6af5fa9d8758ffb984907e371b119
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62825360"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69550824"
 ---
 # <a name="code-analysis-rule-set-reference"></a>程式碼分析規則集參考
 
-當您在 Visual Studio 中設定受管理的程式碼專案的靜態程式碼分析時，您可以從內建清單中選擇*規則集*。 您可以使用內建規則集，其中，或者您可以[自訂規則集](../code-quality/how-to-create-a-custom-rule-set.md)以符合您的專案需求。
+當您在 Visual Studio 中設定 managed 程式碼專案的舊版分析時, 可以從內建*規則集*清單中選擇。 您可以使用內建規則集，其中，或者您可以[自訂規則集](../code-quality/how-to-create-a-custom-rule-set.md)以符合您的專案需求。
 
 在本節中的主題描述的內建規則集和規則 （或警告） 包含。
 
 > [!NOTE]
-> 在本節中的規則集屬於靜態程式碼分析。 如需規則集適用於 Roslyn 分析器套件的資訊，請參閱 <<c0> [ 使用規則集使用 Roslyn 分析器](analyzer-rule-sets.md)。
+> 本節中的規則集與舊版分析相關。 如需適用于程式碼分析器封裝之規則集的詳細資訊, 請參閱搭配[使用規則集與程式碼](analyzer-rule-sets.md)分析器。
 
 - [所有規則規則集](all-rules-rule-set.md)
 - [適用於 Managed 程式碼的基本正確性規則規則集](basic-correctness-rules-rule-set-for-managed-code.md)

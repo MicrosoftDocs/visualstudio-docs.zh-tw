@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0415617c5e4106b72cc713f4296b48e94427e6e5
-ms.sourcegitcommit: cd21b38eefdea2cdefb53e68e7a30b868e78dd6b
+ms.openlocfilehash: 4dec35fb978b3c751e07cb6d0612ff5da27c74e5
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/22/2019
-ms.locfileid: "66037256"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69551123"
 ---
 # <a name="frequently-asked-questions-about-fxcop-and-fxcop-analyzers"></a>FxCop 和 FxCop 分析器的相關常見問題
 
@@ -31,11 +31,11 @@ FxCop 分析器是以 .NET Compiler Platform ("Roslyn") 為基礎。 您可以[�
 
 ## <a name="does-the-run-code-analysis-command-run-fxcop-analyzers"></a>[執行程式碼分析] 命令是否會執行 FxCop 分析器？
 
-否。 當您選取 [分析] > [執行程式碼分析] 時，它會執行靜態程式碼分析或舊版 FxCop。 [執行程式碼分析] 不會影響 Roslyn 型分析器，包括 Roslyn 型 FxCop 分析器。
+資料分割 當您選取 [**分析** > ] [**執行程式碼分析**] 時, 它會執行舊版分析。 [執行程式碼分析] 不會影響 Roslyn 型分析器，包括 Roslyn 型 FxCop 分析器。
 
 ## <a name="does-the-runcodeanalysis-msbuild-project-property-run-analyzers"></a>RunCodeAnalysis msbuild 專案屬性是否會執行分析器？
 
-否。 專案檔中的 **RunCodeAnalysis** 屬性 (例如 *.csproj*) 只會用來執行舊版 FxCop。 它會執行建置後 msbuild 工作，以叫用 **FxCopCmd.exe**。 這相當於在 Visual Studio 中選取 [分析] > [執行程式碼分析]。
+資料分割 專案檔中的 **RunCodeAnalysis** 屬性 (例如 *.csproj*) 只會用來執行舊版 FxCop。 它會執行建置後 msbuild 工作，以叫用 **FxCopCmd.exe**。 這相當於在 Visual Studio 中選取 [分析] > [執行程式碼分析]。
 
 ## <a name="so-how-do-i-run-fxcop-analyzers-then"></a>那麼要如何執行 FxCop 分析器？
 
@@ -43,7 +43,7 @@ FxCop 分析器是以 .NET Compiler Platform ("Roslyn") 為基礎。 您可以[�
 
 ## <a name="i-get-warning-ca0507-even-after-ive-installed-the-fxcop-analyzers-nuget-package"></a>即使我安裝了 FxCop 分析器 NuGet 套件，我也會收到警告 CA0507
 
-如果您已經安裝了 FxCop 分析器但仍然收到警告 CA0507 **[執行程式碼分析] 已淘汰，請改為使用 FxCop 分析器**，您可能需要將專案檔中的 **RunCodeAnalysis** msbuild 屬性設為 **false**。 否則，靜態程式碼分析將在每次建置之後執行。
+如果您已經安裝了 FxCop 分析器但仍然收到警告 CA0507 **[執行程式碼分析] 已淘汰，請改為使用 FxCop 分析器**，您可能需要將專案檔中的 **RunCodeAnalysis** msbuild 屬性設為 **false**。 否則, 會在每個組建之後執行舊版分析。
 
 ```xml
 <RunCodeAnalysis>false</RunCodeAnalysis>
@@ -51,7 +51,7 @@ FxCop 分析器是以 .NET Compiler Platform ("Roslyn") 為基礎。 您可以[�
 
 ## <a name="which-rules-have-been-ported-to-fxcop-analyzers"></a>哪些規則已移植到 FxCop 分析器？
 
-如需哪些靜態程式碼分析規則已移植到的資訊[FxCop 分析器](install-fxcop-analyzers.md)，請參閱[Fxcop 規則連接埠狀態](fxcop-rule-port-status.md)。
+如需哪些舊版分析規則已移植到[fxcop 分析器](install-fxcop-analyzers.md)的詳細資訊, 請參閱[fxcop 規則埠狀態](fxcop-rule-port-status.md)。
 
 ## <a name="see-also"></a>另請參閱
 

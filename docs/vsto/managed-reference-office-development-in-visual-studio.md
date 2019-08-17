@@ -1,6 +1,6 @@
 ---
-title: Managed 的參考 （在 Visual Studio 中的 Office 程式開發）
-ms.date: 02/02/2017
+title: Managed 參考 (Visual Studio 中的 Office 開發)
+ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -13,18 +13,17 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f8ff9a196fb459359502e4c9f8599fbdeff3e1ce
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: da10833f8340d5308321038bb0500ca8408b40bb
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438801"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69551776"
 ---
-# <a name="managed-reference-office-development-in-visual-studio"></a>Managed 的參考 （在 Visual Studio 中的 Office 程式開發）
-  本節包含命名空間的應用程式開發介面參考文件，和用在目標為 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 或 [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]之 Office 專案中的類型。 如需命名空間和類型的.NET Framework 3.5 為目標的 Office 專案所使用的 API 參考文件，請參閱 Visual Studio 文件中的下列參考章節： [ http://go.microsoft.com/fwlink/?LinkId=160658 ](http://go.microsoft.com/fwlink/?LinkId=160658)。
+# <a name="managed-reference-office-development-in-visual-studio"></a>Managed 參考 (Visual Studio 中的 Office 開發)
+  本節包含命名空間的應用程式開發介面參考文件，和用在目標為 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 或 [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]之 Office 專案中的類型。 如需有關以 .NET Framework 3.5 為目標的 Office 專案所使用之命名空間和類型的 API 參考檔, 請參閱 Visual Studio 檔中的下列參考[http://go.microsoft.com/fwlink/?LinkId=160658](http://go.microsoft.com/fwlink/?LinkId=160658)章節:。
 
-> [!NOTE]
-> 想要開發解決方案，擴充的 Office 體驗，跨[多個平台](https://dev.office.com/add-in-availability)嗎？ 查看新[Office 增益集模型](https://dev.office.com/docs/add-ins/overview/office-add-ins)。 Office 增益集較小的使用量，相較於 VSTO 增益集和解決方案，而且您可以使用幾乎任何 web 程式設計技術，例如 HTML5、 JavaScript、 CSS3、 以及 XML 來建置。
+[!include[Add-ins note](includes/addinsnote.md)]
 
 ## <a name="in-this-section"></a>本節內容
  <xref:Microsoft.Office.Tools>
@@ -72,7 +71,7 @@ ms.locfileid: "63438801"
  包含用於建置 Office 專案的 MSBuild 工作類別。
 
 ## <a name="see-also"></a>另請參閱
-- [Visual Studio tools for Office runtime 概觀](../vsto/visual-studio-tools-for-office-runtime-overview.md)
-- [開始使用&#40;在 Visual Studio 中的 Office 程式開發&#41;](../vsto/getting-started-office-development-in-visual-studio.md)
-- [Office 程式開發範例和逐步解說](../vsto/office-development-samples-and-walkthroughs.md)
+- [Office 執行時間的 Visual Studio 工具總覽](../vsto/visual-studio-tools-for-office-runtime-overview.md)
+- [開始&#40;在 Visual Studio 中進行 Office 開發&#41;](../vsto/getting-started-office-development-in-visual-studio.md)
+- [Office 開發範例和逐步解說](../vsto/office-development-samples-and-walkthroughs.md)
 - [設計和建立 Office 方案](../vsto/designing-and-creating-office-solutions.md)

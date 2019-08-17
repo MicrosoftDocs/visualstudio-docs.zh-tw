@@ -11,92 +11,92 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1afeb6f75648ce2ab1687fa9262ab28b658b0d70
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 284f33d9d7af885958ed13101e1449edc5c8f2be
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62820814"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69551096"
 ---
-# <a name="install-net-compiler-platform-analyzers"></a>安裝.NET Compiler Platform 分析器
+# <a name="install-net-compiler-platform-code-analyzers"></a>安裝 .NET Compiler Platform 程式碼分析器
 
-Visual Studio 包含一組核心.NET 編譯器平台 (*Roslyn*) 分析器。 這些分析器會永遠啟用。 您可以安裝其他的分析器，NuGet 套件，或是在 Visual Studio 擴充功能*VSIX*檔案。
+Visual Studio 包含一組核心的 .NET Compiler Platform (*Roslyn*) 分析器。 這些分析器一律是 on。 您可以將其他分析器安裝為 NuGet 套件, 或做為*VSIX*檔案中的 Visual Studio 延伸模組。
 
-## <a name="to-install-nuget-analyzer-packages"></a>若要安裝 NuGet 分析器套件
+## <a name="to-install-nuget-analyzer-packages"></a>安裝 NuGet 分析器套件
 
-1. 尋找您想要在 www.nuget.org 安裝分析器套件。
+1. 尋找您要安裝在 www.nuget.org 上的分析器套件。
 
-   例如，您可能想要[安裝 Microsoft FxCop 分析器](install-fxcop-analyzers.md#to-install-fxcop-analyzers-as-a-nuget-package)來檢查您的程式碼，如需安全性和效能問題，其他項目。 或者，安裝[StyleCopAnalyzers](https://www.nuget.org/packages/stylecop.analyzers/)來尋找程式碼基底中的樣式問題。
+   例如, 您可能會想要[安裝 Microsoft FxCop 分析器](install-fxcop-analyzers.md#to-install-fxcop-analyzers-as-a-nuget-package), 以檢查您的程式碼中是否有安全性和效能問題, 以及其他專案。 或者, 安裝[StyleCopAnalyzers](https://www.nuget.org/packages/stylecop.analyzers/)以尋找程式碼基底中的樣式問題。
 
-2. 在 Visual Studio 中，使用安裝套件[Package Manager Console](/nuget/quickstart/install-and-use-a-package-in-visual-studio#package-manager-console)或[套件管理員 UI](/nuget/quickstart/install-and-use-a-package-in-visual-studio#package-manager-console)。
+2. 使用 [[套件管理員主控台](/nuget/quickstart/install-and-use-a-package-in-visual-studio#package-manager-console)] 或 [[套件管理員] UI](/nuget/quickstart/install-and-use-a-package-in-visual-studio#package-manager-console), 在 Visual Studio 中安裝套件。
 
    > [!NOTE]
-   > 每個分析器套件的 www.nuget.org 頁面會顯示貼到命令**Package Manager Console**。 甚至還有一些好用的按鈕，以將文字複製到剪貼簿。
+   > 每個分析器套件的 [www.nuget.org] 頁面會顯示要貼入**封裝管理員主控台**的命令。 甚至還有一個方便的按鈕, 可將文字複製到剪貼簿。
 
-   分析器組件已安裝，並會出現在**方案總管**下方**參考** > **分析器**。
+   系統會安裝分析器元件, 並出現在 [**參考** > ]**分析器**底下的**方案總管**。
 
-## <a name="to-install-vsix-analyzers"></a>若要安裝 VSIX 分析器
+## <a name="to-install-vsix-analyzers"></a>安裝 VSIX 分析器
 
 ::: moniker range="vs-2017"
 
-1. 在 Visual Studio 中，選取**工具** > **擴充功能和更新**。
+1. 在 Visual Studio 中, 選取 [**工具** > ] [**擴充功能和更新**]。
 
-   [擴充功能和更新]  對話方塊隨即開啟。
+   [擴充功能和更新] 對話方塊隨即開啟。
 
    > [!NOTE]
-   > 或者，您可以在其中尋找並下載分析器擴充功能，直接從[Visual Studio Marketplace](https://marketplace.visualstudio.com)。
+   > 或者, 您也可以直接從[Visual Studio Marketplace](https://marketplace.visualstudio.com)尋找和下載分析器延伸模組。
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-1. 在 Visual Studio 中，選取**延伸模組** > **管理延伸模組**。
+1. 在 Visual Studio 中, 選取 [**擴充** >功能] [**管理擴充**功能]。
 
-   **管理延伸模組**對話方塊隨即開啟。
+   [**管理延伸**模組] 對話方塊隨即開啟。
 
    > [!NOTE]
-   > 或者，您可以在其中尋找並下載分析器擴充功能，直接從[Visual Studio Marketplace](https://marketplace.visualstudio.com)。
+   > 或者, 您也可以直接從[Visual Studio Marketplace](https://marketplace.visualstudio.com)尋找和下載分析器延伸模組。
 
 ::: moniker-end
 
-2. 依序展開**線上**左的窗格中，然後選取**Visual Studio Marketplace**。
+2. 在左窗格中展開 [**線上**], 然後選取 [ **Visual Studio Marketplace**]。
 
-3. 在 [搜尋] 方塊中，輸入您想要安裝的分析器延伸模組的名稱。 例如，您可能想要[安裝 Microsoft FxCop 分析器](install-fxcop-analyzers.md#to-install-fxcop-analyzers-as-a-vsix)來檢查您的程式碼，如需安全性和效能問題，其他項目。
+3. 在 [搜尋] 方塊中, 輸入您想要安裝之分析器擴充功能的名稱。 例如, 您可能會想要[安裝 Microsoft FxCop 分析器](install-fxcop-analyzers.md#to-install-fxcop-analyzers-as-a-vsix), 以檢查您的程式碼中是否有安全性和效能問題, 以及其他專案。
 
-4. 選取 **下載**。
+4. 選取 [**下載**]。
 
-   下載擴充功能。
+   已下載延伸模組。
 
-5. 選取  **確定**以關閉對話方塊，然後關閉 Visual Studio 啟動的所有執行個體**VSIX 安裝程式**。
+5. 選取 **[確定]** 以關閉對話方塊, 然後關閉 Visual Studio 的所有實例, 以啟動**VSIX 安裝程式**。
 
-   **VSIX 安裝程式**對話方塊隨即開啟。
+   [ **VSIX 安裝程式**] 對話方塊隨即開啟。
 
-   ![Microsoft 程式碼分析的 VSIX 安裝程式](media/vsix-installer-code-analysis.png)
+   ![適用于 Microsoft 程式碼分析的 VSIX 安裝程式](media/vsix-installer-code-analysis.png)
 
-6. 選取 **修改**開始安裝。
+6. 選取 [**修改**] 以開始安裝。
 
-7. 一或兩分鐘，安裝完成之後。 選取 [關閉]  。
+7. 一或兩分鐘後, 安裝就會完成。 選取 [關閉]。
 
-8. 重新開啟 Visual Studio。
+8. 再次開啟 Visual Studio。
 
 ::: moniker range="vs-2017"
 
-如果您想要檢查擴充功能是否已安裝，請選取**工具** > **擴充功能和更新**。 在**擴充功能和更新**對話方塊中，選取**已安裝**在左側的類別目錄，然後依名稱搜尋延伸模組。
+如果您想要檢查是否已安裝延伸模組, 請選取 [**工具** > ] [**擴充功能和更新**]。 在 [**擴充功能和更新**] 對話方塊中, 選取左側的 [**已安裝**] 類別, 然後依名稱搜尋延伸模組。
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-如果您想要檢查擴充功能是否已安裝，請選取**延伸模組** > **管理延伸模組**。 在**管理延伸模組**對話方塊中，選取**已安裝**在左側的類別目錄，然後依名稱搜尋延伸模組。
+如果您想要檢查是否已安裝延伸模組, 請選取 [**擴充** > 功能] [**管理延伸**模組]。 在 [**管理擴充**功能] 對話方塊中, 選取左側的 [**已安裝**] 類別, 然後依名稱搜尋延伸模組。
 
 ::: moniker-end
 
 ## <a name="next-steps"></a>後續步驟
 
 > [!div class="nextstepaction"]
-> [在 Visual Studio 中使用 Roslyn 分析器](../code-quality/use-roslyn-analyzers.md)
+> [在 Visual Studio 中使用程式碼分析器](../code-quality/use-roslyn-analyzers.md)
 
 ## <a name="see-also"></a>另請參閱
 
-- [在 Visual Studio 中的 Roslyn 分析器的概觀](../code-quality/roslyn-analyzers-overview.md)
+- [Visual Studio 中的程式碼分析器總覽](../code-quality/roslyn-analyzers-overview.md)
 - [安裝 FxCop 分析器](../code-quality/install-fxcop-analyzers.md)

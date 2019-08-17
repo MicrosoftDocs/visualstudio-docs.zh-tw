@@ -3,39 +3,39 @@ title: 分析器規則集
 ms.date: 04/22/2019
 ms.topic: conceptual
 helpviewer_keywords:
-- analyzers, rule sets
+- analyzer packages, rule sets
 - rule sets for analyzers
 author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 696e6bd46c17054494be2ea0e0f2a1af4fd703d7
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 3c0be66559802188503c3b8f8c1c2cf2955dbd8a
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65675478"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69547950"
 ---
-# <a name="rule-sets-for-roslyn-analyzers"></a>Roslyn 分析器的規則集
+# <a name="rule-sets-for-analyzer-packages"></a>分析器套件的規則集
 
-預先定義的規則集都包含一些 NuGet 分析器套件。 例如，規則集隨附[Microsoft.CodeAnalysis.FxCopAnalyzers](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/) NuGet 分析器套件 （從版本 2.6.2） 啟用或停用規則，根據其類別，例如安全性、 命名，或效能。 使用規則集可讓您輕鬆快速地查看 屬於特定分類規則的規則違規。
+預先定義的規則集包含在一些 NuGet 分析器套件中。 例如, [CodeAnalysis. FxCopAnalyzers](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/) NuGet analyzer 封裝 (從版本2.6.2 開始) 中所包含的規則集會根據其類別來啟用或停用規則, 例如安全性、命名或效能。 使用規則集可讓您輕鬆快速地只查看與特定規則分類相關的規則違規。
 
-如果您要從舊版的 「 FxCop 「 靜態程式碼分析中移轉至 Roslyn 分析器，這些規則集可讓您繼續使用您先前使用的相同規則組態。
+如果您要從舊版的 "FxCop" 分析遷移至以 .NET Compiler Platform 為基礎的程式碼分析, 這些規則集可讓您繼續使用先前使用的相同規則設定。
 
-## <a name="use-analyzer-rule-sets"></a>使用分析器規則集
+## <a name="use-analyzer-package-rule-sets"></a>流量分析器套件規則集
 
-之後您[安裝 nuget 分析器](install-roslyn-analyzers.md)，找出預先定義的規則中設定其*ruleset*目錄。 例如，如果您參考`Microsoft.CodeAnalysis.FxCopAnalyzers`分析器套件，則您可以找到其*ruleset*目錄 *%USERPROFILE%\\.nuget\packages\microsoft.codeanalysis.fxcopanalyzers\\\<版本\>\rulesets*。 從該處複製一或多個規則集，並包含 Visual Studio 專案的目錄中，或直接將它們貼**方案總管 中**。
+[安裝 NuGet 分析器套件](install-roslyn-analyzers.md)之後, 請在其*規則*集目錄中找出預先定義的規則集。 例如, 如果您`Microsoft.CodeAnalysis.FxCopAnalyzers`參考了分析器套件, 則可以在% USERPROFILE% *\\. nuget\packages\microsoft.codeanalysis.fxcopanalyzers\\ \<版本找到其規則集目錄。\rulesets\>* 。 從該處複製一或多個規則集, 並將它們貼入包含 Visual Studio 專案的目錄中, 或直接加入**方案總管**。
 
-您也可以[來自訂預先定義的規則集](how-to-create-a-custom-rule-set.md)為您的喜好設定。 比方說，變更一或多個規則的嚴重性，以便顯示為錯誤或警告的違規**錯誤清單**。
+您也可以將[預先定義的規則集自訂](how-to-create-a-custom-rule-set.md)為您的喜好設定。 例如, 您可以變更一或多個規則的嚴重性, 讓違規在**錯誤清單**中顯示為錯誤或警告。
 
-## <a name="set-the-active-rule-set"></a>設定作用中的規則集
+## <a name="set-the-active-rule-set"></a>設定作用中規則集
 
-設定使用中的規則集的程序會稍有不同，取決於您是否有.NET Core/.NET Standard 專案或.NET Framework 專案。
+設定作用中規則集的程式稍有不同, 視您是否有 .NET Core/NET Standard 專案或 .NET Framework 專案而定。
 
 ### <a name="net-core"></a>.NET Core
 
-若要讓規則集的作用中的規則集在.NET Core 或.NET Standard 專案中的分析，以手動方式新增**CodeAnalysisRuleSet**屬性，以您的專案檔。 例如，下列程式碼片段可設定`HelloWorld.ruleset`成為使用中的規則集。
+若要將規則設定為在 .NET Core 或 .NET Standard 專案中進行分析的作用中規則集, 請手動將**CodeAnalysisRuleSet**屬性新增至您的專案檔。 例如, 下列程式碼片段會設定`HelloWorld.ruleset`為使用中的規則集。
 
 ```xml
 <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -46,19 +46,19 @@ ms.locfileid: "65675478"
 
 ### <a name="net-framework"></a>.NET Framework
 
-若要讓規則集的作用中的規則集在.NET Framework 專案中的分析，以滑鼠右鍵按一下專案中**方案總管**，然後選擇**屬性**。 在 專案屬性頁中，選取**程式碼分析** 索引標籤。底下**執行此規則集**，選取**瀏覽**，然後選取 複製到專案目錄中您所需的規則集。 現在您只看到 vybranou 的 sadu pravidel 中啟用這些規則的規則違規。
+若要讓規則將 .NET Framework 專案中的作用中規則集設定為 [分析], 請以滑鼠右鍵按一下**方案總管**中的專案, 然後選擇 [**屬性**]。 在專案屬性頁中, 選取 [程式**代碼分析**] 索引標籤。在 [**執行此規則集**] 底下, 選取 **[流覽]** , 然後選取您要複製到專案目錄中的所需規則集。 現在, 您只會看到在選取的規則集內已啟用規則的規則違規。
 
 ## <a name="available-rule-sets"></a>可用的規則集
 
-預先定義的分析器規則集包含三個會影響封裝中的所有規則的 ruleset&mdash;分別，可讓它們全部、 停用，和一個接受每個規則的預設的嚴重性和啟用設定：
+預先定義的分析器規則集會包含三個會影響封裝&mdash;中所有規則的規則集, 其中一個會停用全部, 另一個則會接受每個規則的預設嚴重性和啟用設定:
 
 - AllRulesEnabled.ruleset
 - AllRulesDisabled.ruleset
 - AllRulesDefault.ruleset
 
-此外，還有每個規則，在封裝中，例如效能或安全性類別的兩個規則集。 一個規則集可讓類別的所有規則和一個規則集，會接受 「 類別目錄中的每個規則的預設嚴重性和啟用設定。
+此外, 封裝中的每個規則類別都有兩個規則集, 例如 [效能] 或 [安全性]。 一個規則集可啟用類別目錄的所有規則, 而一個規則集接受類別目錄中每個規則的預設嚴重性和啟用設定。
 
-[Microsoft.CodeAnalysis.FxCopAnalyzers](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/) NuGet 分析器套件包含下列類別，其會比對規則集適用於舊版的 「 FxCop 「 靜態程式碼分析規則集：
+[CodeAnalysis. FxCopAnalyzers](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/) NuGet analyzer 套件包含下列分類的規則集, 符合可供舊版分析使用的規則集:
 
 - 設計
 - 文件
@@ -74,5 +74,5 @@ ms.locfileid: "65675478"
 - [分析器常見問題集](analyzers-faq.md)
 - [.NET Compiler Platform 分析器概觀](roslyn-analyzers-overview.md)
 - [安裝分析器](install-roslyn-analyzers.md)
-- [使用分析器](use-roslyn-analyzers.md)
+- [流量分析器](use-roslyn-analyzers.md)
 - [使用規則集分組程式碼分析規則](using-rule-sets-to-group-code-analysis-rules.md)

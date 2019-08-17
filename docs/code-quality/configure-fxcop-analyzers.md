@@ -9,23 +9,23 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0152ae9f76ea1318f717c41a70d3d46351c9021a
-ms.sourcegitcommit: 2bbcba305fd0f8800fd3d9aa16f7647ee27f3a4b
+ms.openlocfilehash: 09d5fb41648a2cd2dbd844bfb0fa426fa704042f
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/17/2019
-ms.locfileid: "68300615"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69551140"
 ---
 # <a name="configure-fxcop-analyzers"></a>設定 FxCop 分析器
 
-[FxCop 分析器](install-fxcop-analyzers.md)是由靜態程式碼分析中最重要的 "FxCop" 規則所組成, 轉換成 Roslyn 分析器。 您可以透過兩種方式來設定 FxCop 程式碼分析器:
+[FxCop 分析器](install-fxcop-analyzers.md)包含舊版分析中最重要的 "FxCop" 規則, 轉換成以 .NET Compiler Platform 為基礎的程式碼分析器。 您可以透過兩種方式來設定 FxCop 程式碼分析器:
 
 - 使用[規則集](#fxcop-analyzer-rule-sets), 可讓您啟用或停用規則, 並設定個別規則違規的嚴重性。
 
 - 從2.6.3 的[CodeAnalysis. FxCopAnalyzers](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers) NuGet 套件的版本開始, 透過[editorconfig](#editorconfig-file)檔案。 可設定的[選項](fxcop-analyzer-options.md)可讓您精簡程式碼基底中要分析的部分。
 
 > [!TIP]
-> 如需 FxCop 靜態程式碼分析和 FxCop 分析器之間差異的詳細資訊, 請參閱[fxcop 分析器常見問題](fxcop-analyzers-faq.md)。
+> 如需舊版分析和 FxCop 分析器之間差異的詳細資訊, 請參閱[FxCop 分析器常見問題](fxcop-analyzers-faq.md)。
 
 ## <a name="fxcop-analyzer-rule-sets"></a>FxCop 分析器規則集
 
@@ -42,7 +42,7 @@ FxCop 分析器 NuGet 套件包含下列規則類別的預先定義規則集:
 - 安全性
 - 用法
 
-如需詳細資訊, 請參閱[Roslyn 分析器的規則集](analyzer-rule-sets.md)。
+如需詳細資訊, 請參閱[程式碼分析器的規則集](analyzer-rule-sets.md)。
 
 ## <a name="editorconfig-file"></a>EditorConfig 檔案
 
@@ -90,7 +90,7 @@ FxCop 分析器 NuGet 套件包含下列規則類別的預先定義規則集:
 4. 重載專案。
 
 > [!NOTE]
-> 您無法使用 editorconfig 檔案來設定舊版 FxCop 規則 (靜態程式碼分析 FxCop)。
+> 您無法使用 editorconfig 檔案來設定舊版 FxCop 規則。
 
 ## <a name="option-scopes"></a>選項範圍
 

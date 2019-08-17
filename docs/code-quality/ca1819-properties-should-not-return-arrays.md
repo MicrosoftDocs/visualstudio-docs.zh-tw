@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 2824be0ecc29965abb68519aaa8eb8a83af8e688
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 9fd738b0c16ede4f71c001036546c335d8ca7186
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65841373"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69547043"
 ---
 # <a name="ca1819-properties-should-not-return-arrays"></a>CA1819:屬性不應該傳回陣列
 
@@ -30,76 +30,76 @@ ms.locfileid: "65841373"
 |-|-|
 |TypeName|PropertiesShouldNotReturnArrays|
 |CheckId|CA1819|
-|分類|Microsoft.Performance|
+|Category|Microsoft.Performance|
 |中斷變更|中斷|
 
 ## <a name="cause"></a>原因
 
 屬性會傳回陣列。
 
-根據預設，此規則只會查看外部可見的屬性及型別，但這[可設定](#configurability)。
+根據預設, 此規則只會查看外部可見的屬性和類型, 但這是[可](#configurability)設定的。
 
 ## <a name="rule-description"></a>規則描述
 
-屬性所傳回的陣列不是寫入保護，即使屬性是唯讀的。 若要保持陣列為防止遭他人修改，屬性必須傳回陣列複本。 一般而言，使用者不了解呼叫這類屬性的不良效能影響。 具體來說，它們可能會使用屬性做為索引的屬性。
+屬性所傳回的陣列不會受到寫入保護, 即使屬性是唯讀也是一樣。 若要保持陣列為防止遭他人修改，屬性必須傳回陣列複本。 一般而言, 使用者不會瞭解呼叫這類屬性的不良效能含意。 具體而言, 它們可能會使用屬性做為索引屬性。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
 
-若要修正此規則的違規情形，將屬性設為方法或是變更要傳回集合的屬性。
+若要修正此規則的違規, 請將屬性設為方法, 或變更屬性以傳回集合。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
 
-您可以隱藏的屬性衍生自屬性，就會引發警告<xref:System.Attribute>類別。 屬性可以包含傳回陣列的屬性，但不能包含傳回集合的屬性。
+您可以針對衍生自<xref:System.Attribute>類別之屬性的屬性, 隱藏引發的警告。 屬性可以包含傳回陣列的屬性, 但不能包含傳回集合的屬性。
 
-您可以隱藏警告，如果屬性是屬於[資料傳輸物件 (DTO)](/previous-versions/msp-n-p/ff649585(v=pandp.10))類別。
+如果屬性是[資料傳輸物件 (DTO)](/previous-versions/msp-n-p/ff649585(v=pandp.10))類別的一部分, 您可以隱藏警告。
 
-否則，請勿隱藏此規則的警告。
+否則, 請勿隱藏此規則的警告。
 
-## <a name="configurability"></a>設定功能
+## <a name="configurability"></a>可設定性
 
-如果您執行這項規則，從[FxCop 分析器](install-fxcop-analyzers.md)（而不是透過靜態程式碼分析），您可以設定的哪些部分您程式碼基底上執行這項規則，根據其存取範圍。 比方說，若要指定執行規則時，應該只針對非公用 API 介面，將下列索引鍵 / 值組新增至專案中的.editorconfig 檔案：
+如果您是從[FxCop 分析器](install-fxcop-analyzers.md)執行此規則 (而不是使用舊版分析), 您可以根據其存取範圍, 設定程式碼基底中的哪些部分來執行此規則。 例如, 若要指定規則只針對非公用 API 介面執行, 請將下列機碼值組新增至專案中的 editorconfig 檔案:
 
 ```ini
 dotnet_code_quality.ca1819.api_surface = private, internal
 ```
 
-此類別 （效能） 中，您可以設定此選項，只是這項規則，所有規則，或所有的規則。 如需詳細資訊，請參閱 <<c0> [ 設定的 FxCop 分析器](configure-fxcop-analyzers.md)。
+您可以只針對此規則、所有規則或此類別中的所有規則 (效能) 設定此選項。 如需詳細資訊, 請參閱[設定 FxCop 分析器](configure-fxcop-analyzers.md)。
 
 ## <a name="example-violation"></a>範例違規
 
-下列範例顯示違反此規則的屬性：
+下列範例顯示違反此規則的屬性:
 
 [!code-csharp[FxCop.Performance.PropertyArrayViolation#1](../code-quality/codesnippet/CSharp/ca1819-properties-should-not-return-arrays_1.cs)]
 [!code-vb[FxCop.Performance.PropertyArrayViolation#1](../code-quality/codesnippet/VisualBasic/ca1819-properties-should-not-return-arrays_1.vb)]
 
-若要修正此規則的違規情形，將屬性設為方法或是變更要傳回的集合，而不是陣列的屬性。
+若要修正此規則的違規, 請將屬性設為方法, 或變更屬性以傳回集合, 而不是陣列。
 
 ### <a name="change-the-property-to-a-method"></a>將屬性變更為方法
 
-下列範例會藉由屬性變更為方法修正違規：
+下列範例會藉由將屬性變更為方法來修正違規:
 
 [!code-vb[FxCop.Performance.PropertyArrayFixedMethod#1](../code-quality/codesnippet/VisualBasic/ca1819-properties-should-not-return-arrays_2.vb)]
 [!code-csharp[FxCop.Performance.PropertyArrayFixedMethod#1](../code-quality/codesnippet/CSharp/ca1819-properties-should-not-return-arrays_2.cs)]
 
-### <a name="change-the-property-to-return-a-collection"></a>變更要傳回集合的屬性
+### <a name="change-the-property-to-return-a-collection"></a>變更屬性以傳回集合
 
-下列範例會藉由變更要傳回之屬性修正違規<xref:System.Collections.ObjectModel.ReadOnlyCollection%601?displayProperty=fullName>:
+下列範例會藉由變更屬性來傳回, 藉以<xref:System.Collections.ObjectModel.ReadOnlyCollection%601?displayProperty=fullName>修正違規:
 
 [!code-csharp[FxCop.Performance.PropertyArrayFixedCollection#1](../code-quality/codesnippet/CSharp/ca1819-properties-should-not-return-arrays_3.cs)]
 [!code-vb[FxCop.Performance.PropertyArrayFixedCollection#1](../code-quality/codesnippet/VisualBasic/ca1819-properties-should-not-return-arrays_3.vb)]
 
 ## <a name="allow-users-to-modify-a-property"></a>允許使用者修改屬性
 
-您可能想要讓取用者類別，來修改的屬性。 下列範例顯示違反此規則的讀取/寫入屬性：
+您可能想要允許類別的取用者修改屬性。 下列範例顯示違反此規則的讀取/寫入屬性:
 
 [!code-csharp[FxCop.Performance.PropertyModifyViolation#1](../code-quality/codesnippet/CSharp/ca1819-properties-should-not-return-arrays_4.cs)]
 [!code-vb[FxCop.Performance.PropertyModifyViolation#1](../code-quality/codesnippet/VisualBasic/ca1819-properties-should-not-return-arrays_4.vb)]
 
-下列範例會藉由變更要傳回之屬性修正違規<xref:System.Collections.ObjectModel.Collection%601?displayProperty=fullName>:
+下列範例會藉由變更屬性來傳回, 藉以<xref:System.Collections.ObjectModel.Collection%601?displayProperty=fullName>修正違規:
 
 [!code-vb[FxCop.Performance.PropertyModifyFixed#1](../code-quality/codesnippet/VisualBasic/ca1819-properties-should-not-return-arrays_5.vb)]
 [!code-csharp[FxCop.Performance.PropertyModifyFixed#1](../code-quality/codesnippet/CSharp/ca1819-properties-should-not-return-arrays_5.cs)]
 
-## <a name="related-rules"></a>相關的規則
+## <a name="related-rules"></a>相關規則
 
-- [CA1024:在適當時使用屬性](../code-quality/ca1024-use-properties-where-appropriate.md)
+- [CA1024 建議適當時使用屬性](../code-quality/ca1024-use-properties-where-appropriate.md)
