@@ -1,8 +1,8 @@
 ---
-title: 一般參考 （在 Visual Studio 中的 Office 程式開發）
+title: 一般參考 (Visual Studio 中的 Office 開發)
 titleSuffix: ''
 ms.custom: seodec18
-ms.date: 02/02/2017
+ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -14,23 +14,22 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2f1370dc0eb159b3f566e6ddcba6e1317cfb441a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 8e8b8dee20b67338bbe1c8c78ebe1d8bcc730175
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63427951"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69551512"
 ---
-# <a name="general-reference-office-development-in-visual-studio"></a>一般參考 （在 Visual Studio 中的 Office 程式開發）
-  本章節包含有關在 Visual Studio 中的 Microsoft Office 專案的技術詳細資料。
+# <a name="general-reference-office-development-in-visual-studio"></a>一般參考 (Visual Studio 中的 Office 開發)
+  本節包含有關 Visual Studio 中 Microsoft Office 專案的技術詳細資料。
 
-> [!NOTE]
-> 想要開發解決方案，擴充的 Office 體驗，跨[多個平台](https://dev.office.com/add-in-availability)嗎？ 查看新[Office 增益集模型](https://dev.office.com/docs/add-ins/overview/office-add-ins)。 Office 增益集較小的使用量，相較於 VSTO 增益集和解決方案，而且您可以使用幾乎任何 web 程式設計技術，例如 HTML5、 JavaScript、 CSS3、 以及 XML 來建置。
+[!include[Add-ins note](includes/addinsnote.md)]
 
 ## <a name="in-this-section"></a>本節內容
-- [Office 主要 interop 組件](../vsto/office-primary-interop-assemblies.md)
+- [Office 主要 interop 元件](../vsto/office-primary-interop-assemblies.md)
 
- 列出的主要 interop 組件可與 Office 安裝，並提供每個的簡短描述。
+ 列出可與 Office 一起安裝的主要 interop 元件, 並提供每個元件的簡短描述。
 
 - [Office 方案的應用程式資訊清單](../vsto/application-manifests-for-office-solutions.md)
 
@@ -38,25 +37,25 @@ ms.locfileid: "63427951"
 
 - [Office 方案的部署資訊清單](../vsto/deployment-manifests-for-office-solutions.md)
 
- 描述如何部署資訊清單是使用的 Office 方案。
+ 描述如何使用 Office 方案的部署資訊清單。
 
-- [使用者介面參考&#40;在 Visual Studio 中的 Office 程式開發&#41;](../vsto/user-interface-reference-office-development-in-visual-studio.md)
+- [Visual Studio 中的&#40;使用者介面參考 Office 開發&#41;](../vsto/user-interface-reference-office-development-in-visual-studio.md)
 
- 列出主題，說明的各種對話方塊、 視窗和其他使用者介面顯示的選項。
+ 列出說明出現在各種對話方塊、視窗和其他使用者介面上之選項的主題。
 
-- [錯誤訊息&#40;在 Visual Studio 中的 Office 程式開發&#41;](../vsto/error-messages-office-development-in-visual-studio.md)
+- [Visual Studio 中&#40;的 Office 開發錯誤訊息&#41;](../vsto/error-messages-office-development-in-visual-studio.md)
 
- 列出主題，說明 Office 專案的錯誤訊息。
+ 列出說明 Office 專案錯誤訊息的主題。
 
 ## <a name="related-sections"></a>相關章節
-- [開始使用&#40;在 Visual Studio 中的 Office 程式開發&#41;](../vsto/getting-started-office-development-in-visual-studio.md)
+- [開始&#40;在 Visual Studio 中進行 Office 開發&#41;](../vsto/getting-started-office-development-in-visual-studio.md)
 
- 提供安裝程式、 專案範本、 Office 主要的 interop 組件和中的 Office 程式開發最新消息的相關資訊的連結。
+ 提供有關安裝程式、專案範本、Office 主要 interop 元件, 以及 Office 開發新功能的資訊連結。
 
-- [Office 程式開發範例和逐步解說](../vsto/office-development-samples-and-walkthroughs.md)
+- [Office 開發範例和逐步解說](../vsto/office-development-samples-and-walkthroughs.md)
 
- 描述程式碼範例和逐步解說可協助您學習及實驗進行語法、 結構和技術用來建立 Office 方案中的 Visual Studio 中建立 Office 專案。
+ 描述在 Visual Studio 中建立 Office 專案的程式碼範例和逐步解說, 這可協助您學習和實驗用來建立 Office 方案的語法、結構和技術。
 
 - [設計和建立 Office 方案](../vsto/designing-and-creating-office-solutions.md)
 
- 提供有關如何開始建立使用 Visual Studio 的 Office 專案的資訊連結。
+ 提供如何使用 Visual Studio 開始建立 Office 專案之相關資訊的連結。

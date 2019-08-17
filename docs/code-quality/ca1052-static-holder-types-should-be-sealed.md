@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a574f7f77277255acf2150c218c3f4db061e75c
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
+ms.openlocfilehash: ba54b9f87fe8c8cd8bfdc86f39e3121135241e92
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68604773"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69547512"
 ---
 # <a name="ca1052-static-holder-types-should-be-static-or-notinheritable"></a>CA1052:靜態預留位置類型應為靜態或 NotInheritable
 
@@ -31,7 +31,7 @@ ms.locfileid: "68604773"
 |-|-|
 |TypeName|StaticHolderTypesAnalyzer|
 |CheckId|CA1052|
-|分類|Microsoft.Design|
+|Category|Microsoft.Design|
 |中斷變更|中斷|
 
 ## <a name="cause"></a>原因
@@ -59,7 +59,7 @@ ms.locfileid: "68604773"
 
 ## <a name="configurability"></a>可設定性
 
-如果您是從[FxCop 分析器](install-fxcop-analyzers.md)執行此規則 (而不是透過靜態程式碼分析), 您可以根據其存取範圍, 設定程式碼基底中的哪些部分, 以執行此規則。 例如, 若要指定規則只針對非公用 API 介面執行, 請將下列機碼值組新增至專案中的 EditorConfig 檔案:
+如果您是從[FxCop 分析器](install-fxcop-analyzers.md)執行此規則 (而不是使用舊版分析), 您可以根據其存取範圍, 設定程式碼基底中的哪些部分來執行此規則。 例如, 若要指定規則只針對非公用 API 介面執行, 請將下列機碼值組新增至專案中的 EditorConfig 檔案:
 
 ```ini
 dotnet_code_quality.ca1052.api_surface = private, internal

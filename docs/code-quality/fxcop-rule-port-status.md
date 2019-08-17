@@ -10,16 +10,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2e635f2cbbeda67c4fbed760eb7e57dfcf140d15
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
+ms.openlocfilehash: d6d891001bbb46e01049c2c8d71bb25372bb8c29
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68604876"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69551066"
 ---
 # <a name="fxcop-rule-port-status"></a>Fxcop 規則埠狀態
 
-如果您先前已在舊版的 Visual Studio 中使用靜態程式碼分析, 您可能會想知道哪些規則在目前的實作為[FxCop 分析器](install-fxcop-analyzers.md)中可供使用。 此頁面會列出已移植的規則, 以及尚未移植的規則, 以及是否有計劃要進行埠的通訊。
+如果您先前已在 Visual Studio 中使用靜態程式碼分析, 您可能會想知道哪些規則在目前的實作為[FxCop 分析器](install-fxcop-analyzers.md)中可供使用。 此頁面會列出已移植的規則, 以及尚未移植的規則, 以及是否有計劃要進行埠的通訊。
 
 ## <a name="ported-rules"></a>移植的規則
 
@@ -208,7 +208,7 @@ CA9999 | 分析器版本不符
 
 ### <a name="rules-that-may-be-ported"></a>可能會進行移植的規則
 
-下列 FxCop 靜態程式碼分析規則尚未實作為分析器, 但仍可能是。 這可能是因為封鎖技術的原因, 或只是規則較低的優先順序。 如需每個規則之移植狀態的詳細資訊, 請按一下 [**追蹤問題**] 資料行中的連結。
+下列 FxCop 舊版分析規則尚未實作為分析器, 但仍可能是。 這可能是因為封鎖技術的原因, 或只是規則較低的優先順序。 如需每個規則之移植狀態的詳細資訊, 請按一下 [**追蹤問題**] 資料行中的連結。
 
 規則識別碼 | 追蹤問題
 --- | ---
@@ -271,7 +271,7 @@ CA9999 | 分析器版本不符
 
 ### <a name="deprecated-rules"></a>已淘汰的規則
 
-下列 FxCop 靜態程式碼分析規則已被取代, 且不會實作為分析器。 如需進一步資訊, 您可以在 [ [roslyn-分析器 GitHub 問題] 頁面](https://github.com/dotnet/roslyn-analyzers/issues?utf8=%E2%9C%93&q=is:issue+label:FxCop-Port)上依據規則識別碼 (例如, **CA1009**) 進行搜尋。
+下列 FxCop 舊版分析規則已被取代, 且不會實作為分析器。 如需進一步資訊, 您可以在 [ [roslyn-分析器 GitHub 問題] 頁面](https://github.com/dotnet/roslyn-analyzers/issues?utf8=%E2%9C%93&q=is:issue+label:FxCop-Port)上依據規則識別碼 (例如, **CA1009**) 進行搜尋。
 
 - [CA1009](ca1009-declare-event-handlers-correctly.md)
 - [CA1020](ca1020-avoid-namespaces-with-few-types.md)

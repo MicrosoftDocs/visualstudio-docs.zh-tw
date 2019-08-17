@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bbe62c830b7cd3454adbde8b1d3081af11ef1a6b
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: b0d5afd33ffb73c47b0f373f70c56166dbfced6d
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65841655"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69547135"
 ---
 # <a name="ca1725-parameter-names-should-match-base-declaration"></a>CA1725:參數名稱應該符合基底類型的宣告
 
@@ -27,14 +27,14 @@ ms.locfileid: "65841655"
 |-|-|
 |TypeName|ParameterNamesShouldMatchBaseDeclaration|
 |CheckId|CA1725|
-|分類|Microsoft.Naming|
+|Category|Microsoft.Naming|
 |中斷變更|中斷|
 
 ## <a name="cause"></a>原因
 
-方法覆寫中的參數名稱不符合在基底方法宣告參數的名稱或介面宣告的方法中參數的名稱。
+方法覆寫中的參數名稱, 不符合方法之基底宣告中的參數名稱, 或方法的介面宣告中的參數名稱。
 
-根據預設，此規則只會查看外部可見的方法，但這[可設定](#configurability)。
+根據預設, 此規則只會查看外部可見的方法, 但這是[可](#configurability)設定的。
 
 ## <a name="rule-description"></a>規則描述
 
@@ -42,18 +42,18 @@ ms.locfileid: "65841655"
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
 
-若要修正此規則的違規情形，重新命名以符合基底宣告的參數。 修正方法是 COM 可見方法的重大變更。
+若要修正此規則的違規情形, 請重新具名引數以符合基底宣告。 修正是 COM 可見方法的重大變更。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
 
-請勿隱藏這項規則，除了先前所提供的程式庫中的 COM 可見方法的警告。
+除了先前隨附的程式庫中的 COM 可見方法以外, 請勿隱藏此規則的警告。
 
-## <a name="configurability"></a>設定功能
+## <a name="configurability"></a>可設定性
 
-如果您執行這項規則，從[FxCop 分析器](install-fxcop-analyzers.md)（而不是透過靜態程式碼分析），您可以設定的哪些部分您程式碼基底上執行這項規則，根據其存取範圍。 比方說，若要指定執行規則時，應該只針對非公用 API 介面，將下列索引鍵 / 值組新增至專案中的.editorconfig 檔案：
+如果您是從[FxCop 分析器](install-fxcop-analyzers.md)執行此規則 (而不是使用舊版分析), 您可以根據其存取範圍, 設定程式碼基底中的哪些部分來執行此規則。 例如, 若要指定規則只針對非公用 API 介面執行, 請將下列機碼值組新增至專案中的 editorconfig 檔案:
 
 ```ini
 dotnet_code_quality.ca1725.api_surface = private, internal
 ```
 
-此類別 （命名） 中，您可以設定此選項，只是這項規則，所有規則，或所有的規則。 如需詳細資訊，請參閱 <<c0> [ 設定的 FxCop 分析器](configure-fxcop-analyzers.md)。
+您可以只針對此規則、所有規則或此類別中的所有規則 (命名) 來設定此選項。 如需詳細資訊, 請參閱[設定 FxCop 分析器](configure-fxcop-analyzers.md)。

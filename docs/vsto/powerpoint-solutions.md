@@ -1,6 +1,6 @@
 ---
 title: PowerPoint 方案
-ms.date: 02/02/2017
+ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9d2c85a4af986c62d3e3f3c3a3f4333baa2975ee
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 70968682a8221b88859fd561c9f678aced2911b9
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926422"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69551465"
 ---
 # <a name="powerpoint-solutions"></a>PowerPoint 方案
   Visual Studio 提供您可用來建立 Microsoft Office PowerPoint VSTO 增益集的專案範本。 您可以使用 VSTO 增益集來自動化 PowerPoint、擴充 PowerPoint 功能，或自訂 PowerPoint 使用者介面 (UI)。
@@ -31,8 +31,7 @@ ms.locfileid: "68926422"
 
  [!INCLUDE[appliesto_pptallapp](../vsto/includes/appliesto-pptallapp-md.md)]
 
-> [!NOTE]
-> 想要開發可跨[多個平臺](https://dev.office.com/add-in-availability)擴充 Office 經驗的解決方案嗎？ 請參閱新的[Office 增益集模型](https://dev.office.com/docs/add-ins/overview/office-add-ins)。 相較于 VSTO 增益集和解決方案, Office 增益集的使用量很小, 而且您可以使用幾乎任何 web 程式設計技術 (例如 HTML5、JavaScript、CSS3 和 XML) 來建立它們。
+[!include[Add-ins note](includes/addinsnote.md)]
 
  ![影片連結](../vsto/media/playvideo.gif "影片連結")如需相關的影片示範, [請參閱如何?:建立適用于 Microsoft PowerPoint 的增益集？](http://go.microsoft.com/fwlink/?LinkId=132767).
 

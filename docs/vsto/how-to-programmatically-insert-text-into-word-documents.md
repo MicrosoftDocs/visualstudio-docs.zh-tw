@@ -1,6 +1,6 @@
 ---
-title: HOW TO：以程式設計方式將文字插入 Word 文件
-ms.date: 02/02/2017
+title: 作法：以程式設計方式將文字插入 Word 檔
+ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +16,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3e04f3b4420cc8f3b56eee304ae199cf87fa4a3a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 8ff5e0314e9834bd3d0f048bc82780d7e4af073d
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63412579"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69551811"
 ---
-# <a name="how-to-programmatically-insert-text-into-word-documents"></a>HOW TO：以程式設計方式將文字插入 Word 文件
+# <a name="how-to-programmatically-insert-text-into-word-documents"></a>HOW TO：以程式設計方式將文字插入 Word 檔
   在 Microsoft Office Word 文件中插入文字的方式主要有三種：
 
 - 在範圍中插入文字。
@@ -33,9 +33,11 @@ ms.locfileid: "63412579"
 - 使用 <xref:Microsoft.Office.Interop.Word.Selection.TypeText%2A> 物件的 <xref:Microsoft.Office.Interop.Word.Selection> 方法將文字插入游標或選取範圍。
 
 > [!NOTE]
-> 您也可以將文字插入內容控制項與書籤中。 如需詳細資訊，請參閱 <<c0> [ 內容控制項](../vsto/content-controls.md)並[書籤控制項](../vsto/bookmark-control.md)。
+> 您也可以將文字插入內容控制項與書籤中。 如需詳細資訊, 請參閱[內容控制項](../vsto/content-controls.md)和[書簽控制項](../vsto/bookmark-control.md)。
 
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
+
+[!include[Add-ins note](includes/addinsnote.md)]
 
 ## <a name="insert-text-in-a-range"></a>在範圍中插入文字
  使用 <xref:Microsoft.Office.Interop.Word.Range.Text%2A> 物件的 <xref:Microsoft.Office.Interop.Word.Range> 屬性將文字插入文件。
@@ -86,7 +88,7 @@ ms.locfileid: "63412579"
      [!code-vb[Trin_VstcoreWordAutomation#55](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#55)]
      [!code-csharp[Trin_VstcoreWordAutomation#55](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#55)]
 
-## <a name="insert-text-using-typetext"></a>插入文字時，使用 TypeText
+## <a name="insert-text-using-typetext"></a>使用 TypeText 插入文字
  <xref:Microsoft.Office.Interop.Word.Selection.TypeText%2A> 方法會在選取範圍插入文字。 <xref:Microsoft.Office.Interop.Word.Selection.TypeText%2A> 的行為方式會因使用者電腦上設定的選項而異。 下列程序中的程式碼宣告了 <xref:Microsoft.Office.Interop.Word.Selection> 物件變數，並且關閉 **Overtype** 選項 (如果是開啟的)。 如果啟用 **Overtype** 選項，則會覆寫游標後面的任何文字。
 
 ### <a name="to-insert-text-using-the-typetext-method"></a>若要使用 TypeText 方法插入文字
@@ -118,7 +120,7 @@ ms.locfileid: "63412579"
     [!code-vb[Trin_VstcoreWordAutomation#61](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#61)]
     [!code-csharp[Trin_VstcoreWordAutomation#61](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#61)]
 
-   您也可以使用<xref:Microsoft.Office.Interop.Word.Selection.TypeBackspace%2A>方法<xref:Microsoft.Office.Interop.Word.Selection>物件，可以模擬的功能**退格鍵**鍵盤上。 但是，如果要插入和處理文字， <xref:Microsoft.Office.Interop.Word.Range> 物件可以讓您有更多的控制能力。
+   您也可以使用<xref:Microsoft.Office.Interop.Word.Selection.TypeBackspace%2A> <xref:Microsoft.Office.Interop.Word.Selection>物件的方法, 它會模擬鍵盤上**Backspace**鍵的功能。 但是，如果要插入和處理文字， <xref:Microsoft.Office.Interop.Word.Range> 物件可以讓您有更多的控制能力。
 
    下列範例顯示完整程式碼。 若要使用這個範例，請從專案中的 `ThisDocument` 或 `ThisAddIn` 類別中執行程式碼。
 
@@ -126,6 +128,6 @@ ms.locfileid: "63412579"
    [!code-csharp[Trin_VstcoreWordAutomation#56](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#56)]
 
 ## <a name="see-also"></a>另請參閱
-- [如何：以程式設計方式在文件中的文字格式](../vsto/how-to-programmatically-format-text-in-documents.md)
-- [如何：以程式設計方式定義，並在文件中選取範圍](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)
-- [如何：以程式設計方式擴充文件中的範圍](../vsto/how-to-programmatically-extend-ranges-in-documents.md)
+- [如何：以程式設計方式格式化檔中的文字](../vsto/how-to-programmatically-format-text-in-documents.md)
+- [如何：以程式設計方式在檔中定義及選取範圍](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)
+- [如何：以程式設計方式擴充檔中的範圍](../vsto/how-to-programmatically-extend-ranges-in-documents.md)

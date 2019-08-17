@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ad062154b8213d021c8c265aaf287d3a9335d0e4
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 4b294b267aa7bb1a2912ed42807ac0f878c87838
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68922873"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69547666"
 ---
 # <a name="ca1032-implement-standard-exception-constructors"></a>CA1032:必須實作標準例外狀況建構函式
 
@@ -27,7 +27,7 @@ ms.locfileid: "68922873"
 |-|-|
 |TypeName|ImplementStandardExceptionConstructors|
 |CheckId|CA1032|
-|分類|Microsoft.Design|
+|Category|Microsoft.Design|
 |中斷變更|不中斷|
 
 ## <a name="cause"></a>原因
@@ -44,7 +44,7 @@ ms.locfileid: "68922873"
 
 - 公用 NewException (字串, 例外狀況)
 
-此外, 如果您執行的是舊版 FxCop 靜態程式碼分析, 而不是以[Roslyn 為基礎的 fxcop 分析器](../code-quality/roslyn-analyzers-overview.md), 則缺少第四個函數也會產生違規:
+此外, 如果您正在執行舊版 FxCop 分析, 而不是以[.NET Compiler Platform 為基礎的 fxcop 分析器](../code-quality/roslyn-analyzers-overview.md), 則缺少第四個函式也會產生違規:
 
 - protected 或 private NewException (SerializationInfo, StreamingCoNtext)
 

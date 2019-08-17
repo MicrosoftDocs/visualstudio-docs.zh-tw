@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3e2d314455b8b392c4e2f830101dae76c40e2865
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 3ee37aa03f69a14c5536b61d45df0d3d3785e791
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65704427"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69551892"
 ---
 # <a name="getting-started-with-wpf"></a>WPF 使用者入門
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,5 +34,5 @@ Windows Presentation Foundation (WPF) 是建立桌面用戶端應用程式的 UI
 ## <a name="see-also"></a>另請參閱  
  [類別庫 (WPF)](https://msdn.microsoft.com/library/ms753307\(v=vs.100\).aspx)   
  [應用程式開發概觀](https://msdn.microsoft.com/library/bb613549\(v=vs.100\).aspx)   
- [.NET Framework 開發人員中心](http://go.microsoft.com/fwlink/?LinkId=187437)   
+ [.NET Framework 開發人員中心](https://dotnet.microsoft.com/)   
  [使用 Windows Presentation Foundation 建立新式桌面應用程式](../designers/create-modern-desktop-applications-with-windows-presentation-foundation.md)
