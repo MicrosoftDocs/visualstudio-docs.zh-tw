@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3dfaa1fb344f11817cc67a074580c726f3d23036
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4eb49e4e84f61e817e3df8bbbdd20c6922d180ee
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62429169"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926734"
 ---
 # <a name="test-a-large-application-with-multiple-ui-maps"></a>測試含有多個 UI 對應的大型應用程式
 
@@ -27,7 +27,7 @@ ms.locfileid: "62429169"
 
 - Visual Studio 企業版
 
-當您建立新的自動程式化 UI 測試時，Visual Studio 測試架構預設會在 <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap> 類別中產生測試的程式碼。 如需如何錄製自動程式化 UI 測試的詳細資訊，請參閱[建立自動程式化 UI 測試](../test/use-ui-automation-to-test-your-code.md)和[自動程式化 UI 測試的結構](../test/anatomy-of-a-coded-ui-test.md)。
+當您建立新的自動程式化 UI 測試時，Visual Studio 測試架構預設會以 [UIMap](/previous-versions/dd580454(v=vs.140)) 類別針對測試產生程式碼。 如需如何錄製自動程式化 UI 測試的詳細資訊，請參閱[建立自動程式化 UI 測試](../test/use-ui-automation-to-test-your-code.md)和[自動程式化 UI 測試的結構](../test/anatomy-of-a-coded-ui-test.md)。
 
 為 UI 對應產生的程式碼會針對與測試互動的每個物件各包含一個類別。 針對每個產生的方法，系統會專門為該方法產生方法參數的附屬類別。 如果您的應用程式中有大量物件、頁面、表單和控制項，UI 對應可能會變得非常大。 此外，如果多人處理測試，只有單一大型 UI 對應檔的應用程式會變得不便使用。
 
@@ -40,7 +40,7 @@ ms.locfileid: "62429169"
 - 您可採累加的方式擴增應用程式 UI，對 UI 其他部分之測試的影響可降至最低。
 
 ## <a name="do-you-need-multiple-ui-maps"></a>您是否需要多個 UI 對應？
- 請在下列幾種情況下建立多個 UI 對應：
+請在下列幾種情況下建立多個 UI 對應：
 
 - 一起執行邏輯作業的多組複雜的複合 UI 控制項，例如網站上的註冊網頁或購物車的購買網頁。
 
@@ -50,28 +50,28 @@ ms.locfileid: "62429169"
 
 ### <a name="to-add-a-ui-map-to-your-coded-ui-test-project"></a>將 UI 對應加入至自動程式化 UI 測試專案
 
-1. 在 [方案總管] 的自動程式化 UI 測試專案中，建立資料夾以儲存所有 UI 對應、以滑鼠右鍵按一下自動程式化 UI 測試專案檔、指向 [新增]，然後選擇 [新增資料夾]。 例如，您可以將它命名為 `UIMaps`。
+1. 在 [方案總管]  的自動程式化 UI 測試專案中，建立資料夾以儲存所有 UI 對應、以滑鼠右鍵按一下自動程式化 UI 測試專案檔、指向 [新增]  ，然後選擇 [新增資料夾]  。 例如，您可以將它命名為 `UIMaps`。
 
     新資料夾隨即顯示在自動程式化 UI 測試專案底下。
 
-2. 以滑鼠右鍵按一下 `UIMaps` 資料夾，並指向 [新增]，然後選擇 [新增項目]。
+2. 以滑鼠右鍵按一下 `UIMaps` 資料夾，並指向 [新增]  ，然後選擇 [新增項目]  。
 
-    隨即顯示 [ 新增項目] 對話方塊。
+    隨即顯示 [ 新增項目]  對話方塊。
 
    > [!NOTE]
    > 您必須在自動程式化 UI 測試專案中，才能加入新的自動程式化 UI 測試對應。
 
-3. 從清單中選取 [自動程式碼 UI 測試對應]。
+3. 從清單中選取 [自動程式碼 UI 測試對應]  。
 
-    在 [名稱] 方塊中，輸入新 UI 對應的名稱。 使用該對應將代表的元件或頁面名稱，例如， `HomePageMap`。
+    在 [名稱]  方塊中，輸入新 UI 對應的名稱。 使用該對應將代表的元件或頁面名稱，例如， `HomePageMap`。
 
-4. 選擇 [新增]。
+4. 選擇 [新增]  。
 
-    [Visual Studio] 視窗會最小化，而 [自動程式化 UI 測試產生器] 對話方塊隨即顯示。
+    [Visual Studio] 視窗會最小化，而 [自動程式化 UI 測試產生器]  對話方塊隨即顯示。
 
-5. 錄製第一個方法的動作，然後選擇 [產生程式碼]。
+5. 錄製第一個方法的動作，然後選擇 [產生程式碼]  。
 
-6. 當您已錄製第一個元件或頁面的所有動作和判斷提示，並將它們群組在方法中之後，請關閉 [自動程式碼 UI 測試產生器] 對話方塊。
+6. 當您已錄製第一個元件或頁面的所有動作和判斷提示，並將它們群組在方法中之後，請關閉 [自動程式碼 UI 測試產生器]  對話方塊。
 
 7. 繼續建立 UI 對應。 錄製動作和判斷提示，將它們群組在每個元件的方法中，然後產生程式碼。
 
@@ -141,7 +141,7 @@ namespace ContosoProject
 
 ## <a name="see-also"></a>另請參閱
 
-- <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap>
+- [UIMap](/previous-versions/dd580454(v=vs.140))
 - <xref:Microsoft.VisualStudio.TestTools.UITesting.BrowserWindow.CopyFrom%2A>
 - [使用 UI 自動化來測試您的程式碼](../test/use-ui-automation-to-test-your-code.md)
 - [建立自動程式化 UI 測試](../test/use-ui-automation-to-test-your-code.md)

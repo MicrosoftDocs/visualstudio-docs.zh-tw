@@ -1,17 +1,17 @@
 ---
-title: 作法：在 Visual Studio for Mac 中開啟多個解決方案
+title: 作法：開啟多個解決方案
 description: 了解如何在 Visual Studio for Mac 中開啟多個方案，以及如何開啟應用程式的多個執行個體。
 author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 04/02/2019
 ms.assetid: 592BA4E3-8DEF-4FCD-8BA0-519A4CEEE03E
 ms.custom: video
-ms.openlocfilehash: 479ef72d2f14d0d1f9de5d193ca76ae2c6128daa
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.openlocfilehash: 4d676f6109c97ae883473a35721f9207e72a6da4
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67691377"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68872366"
 ---
 # <a name="open-multiple-solutions-or-instances-of-visual-studio-for-mac"></a>開啟 Visual Studio for Mac 的多個方案或執行個體
 

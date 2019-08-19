@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d6202a8287232c0226104be59bdab6a15fd00d95
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a3c9837f1babf3cb37d99eb1bb74c2c35c05eff9
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62785355"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68870325"
 ---
 # <a name="create-a-data-driven-coded-ui-test"></a>建立資料驅動自動程式碼 UI 測試
 
@@ -235,7 +235,7 @@ ms.locfileid: "62785355"
 
 ## <a name="see-also"></a>另請參閱
 
-- <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap>
+- [UIMap](/previous-versions/dd580454(v=vs.140))
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert>
 - [使用 UI 自動化來測試您的程式碼](../test/use-ui-automation-to-test-your-code.md)
 - [建立自動程式化 UI 測試](../test/use-ui-automation-to-test-your-code.md)

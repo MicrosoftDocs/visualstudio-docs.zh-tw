@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d6707d2e9ed8e001762939cb08ffee58f1c1cdc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d7a71a6d313ce12a40cd5c30470f53b1e2a1b69e
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62950903"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68919120"
 ---
 # <a name="new-file-command"></a>新增檔案命令
 建立新的檔案並開啟它。 檔案會顯示其他檔案資料夾之下。
@@ -30,45 +30,43 @@ File.NewFile [filename] [/t:templatename] [/editor:editorname]
 ```
 
 ## <a name="arguments"></a>引數
- `filename`
+`filename`
 
- 選擇性。 檔案名稱。 如果未提供名稱，會提供預設名稱。 如果未列出任何範本名稱，則會建立文字檔。
+選擇性。 檔案名稱。 如果未提供名稱，會提供預設名稱。 如果未列出任何範本名稱，則會建立文字檔。
 
 ## <a name="switches"></a>參數
- /t:`templatename`
+/t:`templatename`\
+選擇性。 指定要建立之檔案的類型。
 
- 選擇性。 指定要建立之檔案的類型。
+/t:`templatename` 引數語法會鏡像 [新增檔案] 對話方塊中所找到的資訊。 輸入分類名稱，緊接著一個反斜線 (`\`) 和範本名稱，並且以引號括住整個字串。
 
- /t:`templatename` 引數語法會鏡像 [新增檔案] 對話方塊中所找到的資訊。 輸入分類名稱，緊接著一個反斜線 (`\`) 和範本名稱，並且以引號括住整個字串。
-
- 例如，若要建立新的 [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] 原始程式檔，您將針對 /t:`templatename` 引數輸入下列項目。
+例如，若要建立新的 [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] 原始程式檔，您將針對 /t:`templatename` 引數輸入下列項目。
 
 ```cmd
 /t:"Visual C++\C++ File (.cpp)"
 ```
 
- 上述範例指出 C++ 檔案範本位於 [新增檔案] 對話方塊的 Visual C++ 分類。
+上述範例指出 C++ 檔案範本位於 [新增檔案]  對話方塊的 Visual C++ 分類。
 
- /e:`editorname`
+/e:`editorname`\
+選擇性。 將用來開啟檔案之編輯器的名稱。 如果指定此引數，但未提供編輯器名稱，則會出現 [開啟方式]  對話方塊。
 
- 選擇性。 將用來開啟檔案之編輯器的名稱。 如果指定此引數，但未提供編輯器名稱，則會出現 [開啟方式] 對話方塊。
+/e:`editorname` 引數語法會使用出現在 [開啟方式] 對話方塊並使用引號括住的編輯器名稱。
 
- /e:`editorname` 引數語法會使用出現在 [開啟方式] 對話方塊並使用引號括住的編輯器名稱。
-
- 例如，若要使用原始程式碼編輯器開啟檔案，您將針對 /e:`editorname` 引數輸入下列項目。
+例如，若要使用原始程式碼編輯器開啟檔案，您將針對 /e:`editorname` 引數輸入下列項目。
 
 ```cmd
 /e:"Source Code (text) Editor"
 ```
 
 ## <a name="example"></a>範例
- 這個範例會建立新的網頁 "test1.htm"，並在原始碼程式碼編輯器中開啟。
+這個範例會建立新的網頁 "test1.htm"，並在原始碼程式碼編輯器中開啟。
 
 ```cmd
 >File.NewFile test1 /t:"General\HTML Page" /e:"Source Code (text) Editor"
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [Visual Studio 命令](../../ide/reference/visual-studio-commands.md)
 - [命令視窗](../../ide/reference/command-window.md)

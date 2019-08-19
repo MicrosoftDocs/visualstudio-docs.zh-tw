@@ -9,34 +9,34 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: bb9daee86fec058fca68740eaea3b9436e5570d6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a73991702455fab54baf868499634e1a4f5bbf48
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62778537"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68870751"
 ---
-# <a name="options-text-editor-f-code-fixes"></a>選項、文字編輯器、F#、程式碼修正
+# <a name="options-text-editor--f--code-fixes"></a>選項:[文字編輯器] > [F#] > [程式碼修正]
 
-使用 [程式碼修正] 選項頁面來指定可協助找出程式碼錯誤並提供解決方案的設定。 若要存取此選項頁面，請選擇 [工具] > [選項]，然後選擇 [文字編輯器] > [F#] > [程式碼修正]。
+使用 [程式碼修正] 選項頁面來指定可協助找出程式碼錯誤並提供解決方案的設定。 若要存取此選項頁面，請選擇 [工具]   > [選項]  ，然後選擇 [文字編輯器]   > [F#]   > [程式碼修正]  。
 
 ## <a name="code-fixes"></a>程式碼修正
 
 - **簡化名稱 (移除不必要的限定詞)**
 
-   如果選取此核取方塊，則在不需要限定詞時會簡化完整名稱，例如經常使用的命名空間的成員。
+  如果選取此核取方塊，則在不需要限定詞時會簡化完整名稱，例如經常使用的命名空間的成員。
 
 - **一律將 open 陳述式放在最上層**
 
-   如果選取此核取方塊並在程式碼中輸入 open 陳述式，則將其置於最上層。
+  如果選取此核取方塊並在程式碼中輸入 `open` 陳述式，則會將其置於最上層。
 
 - **移除未使用的 open 陳述式**
 
-   如果選取此核取方塊，則會刪除目前檔案中未使用的 open 陳述式。
+  如果選取此核取方塊，則會針對未使用的 `open` 陳述式分析文件，且會顯示[快速控制項目](../quick-actions.md)燈泡，其具有移除所有未使用 `open` 陳述式的動作。
 
 - **分析並建議修正未使用的值**
 
-   如果選取此核取方塊，則工具會辨識程式碼中未使用的值。 然後，如果將滑鼠暫留在未使用的值上，它會建議您使用該值的方法。
+  如果選取此核取方塊，則工具會辨識程式碼中未使用的值。 然後，如果將滑鼠暫留在未使用的值上，它會建議您使用該值的方法。
 
 ## <a name="see-also"></a>另請參閱
 

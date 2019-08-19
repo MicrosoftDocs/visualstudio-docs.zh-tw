@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b7da41b1b82299bd32d1af805ea6226690e79115
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: f87513a8124b728568f78bee9efdf48fb35a5301
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66747387"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926378"
 ---
 # <a name="msbuild-toolset-toolsversion"></a>MSBuild Toolset (ToolsVersion)
 
@@ -60,7 +60,7 @@ MSBuild 使用工作、目標和工具的工具組建置應用程式。 一般�
 <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 ```
 
- 透過定義自訂工具組，您就可以修改 `MSBuildToolsPath` 的值。 如需詳細資訊，請參閱[標準和自訂工具組的組態](../msbuild/standard-and-custom-toolset-configurations.md)
+ 透過定義自訂工具組，您就可以修改 `MSBuildToolsPath` 的值。 如需詳細資訊，請參閱[標準和自訂工具組的組態](../msbuild/standard-and-custom-toolset-configurations.md)。
 
  當您在命令列上建置方案並針對 *msbuild.exe* 指定 `ToolsVersion` 時，所有專案及其專案對專案相依性都會根據該 `ToolsVersion` 建置，即使方案中的每個專案都指定其自己的 `ToolsVersion` 也是如此。 若要根據專案來定義 `ToolsVersion` 值，請參閱[覆寫 ToolsVersion 設定](../msbuild/overriding-toolsversion-settings.md)。
 
@@ -106,7 +106,7 @@ MSBuild 會提供兩種方法來存取工具組：
 
 - <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToDotNetFrameworkSdkFile%2A> 會傳回通常位於 Managed 工具資料夾中的檔案路徑。
 
-- <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToBuildTools%2A> 會傳回建置工具的路徑。
+- [GetPathToBuildTools](/previous-versions/visualstudio/visual-studio-2013/dn251121(v=vs.121)) 會傳回建置工具的路徑。
 
 ### <a name="sub-toolsets"></a>子工具組
 

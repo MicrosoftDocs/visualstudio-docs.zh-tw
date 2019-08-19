@@ -1,6 +1,6 @@
 ---
 title: EditorConfig 檔案的 .NET 命名慣例
-ms.date: 11/20/2017
+ms.date: 08/07/2019
 ms.topic: reference
 helpviewer_keywords:
 - naming conventions [EditorConfig]
@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 048fb4474caae6b7cc81a8c62061e879e7556c58
-ms.sourcegitcommit: 8562a337cc9f674c756a4a0b2c7e288ebd61b51e
+ms.openlocfilehash: ab118197c29ef950907839e8c04d6e49a9843f1a
+ms.sourcegitcommit: 6f3cf7a1bfc81a61f9a603461a1c34fd2221f100
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68345699"
+ms.lasthandoff: 08/12/2019
+ms.locfileid: "68957420"
 ---
 # <a name="net-naming-conventions-for-editorconfig"></a>EditorConfig 的 .NET 命名慣例
 
@@ -43,18 +43,18 @@ ms.locfileid: "68345699"
 
 - \*(請使用此值來指定所有符號)
 - namespace
-- class
+- Class - 類別
 - struct
 - interface
-- 列舉
+- enum
 - 屬性
-- method
-- field
-- 事件
+- 方法
+- Field - 欄位
+- Event - 事件
 - Delegate - 委派
 - 參數
 - type_parameter
-- local
+- 本機
 - local_function
 
 ### <a name="accessibility-levels-of-symbols"></a>符號的存取層級
@@ -66,13 +66,13 @@ ms.locfileid: "68345699"
 以下清單會顯示允許的值，您可以逗號分隔來指定多個值。
 
 - \* (請使用此值來指定所有存取層級)
-- 公開
+- public
 - internal 或 friend
-- 私用
+- private
 - protected
 - protected\_internal 或 protected_friend
 - private\_protected
-- local
+- 本機
 
    `local` 存取層級適用於在方法內定義的符號。 當符號的存取性無法在程式碼中定義時，這非常有用。 例如，如果您在常數的命名慣例 (`required_modifiers = const`) 上指定 `applicable_accessibilities = local`，則該規則只套用至在方法內定義的常數，而不套用至在型別中定義的。
 
@@ -112,7 +112,7 @@ ms.locfileid: "68345699"
 > [!TIP]
 > 不要為 `required_modifiers` 指定 `*` 的值。 相反地，只需完全省略 `required_modifiers` 屬性，而您的命名規則將套用至任何種類的修飾詞。
 
-## <a name="style"></a>Style
+## <a name="style"></a>樣式
 
 您已識別要套用命名規則的符號群組，現在您可以描述命名樣式。 樣式可以是包含特定前置詞或後置詞的名稱，或是名稱中的每個個別文字都以特定的字元分隔。 您也可以指定大寫樣式。 樣式屬性具有下列格式：
 
@@ -163,12 +163,13 @@ ms.locfileid: "68345699"
 
 下表顯示了允許的嚴重性值，以及其代表的意涵：
 
-嚴重性 | 效果
+嚴重性 | 作用
 ------------ | -------------
-無或無訊息 | 未遵循此樣式時，不要向使用者顯示任何內容；但自動產生的程式碼會遵循此樣式。
+none | 規則已完全隱藏。
+重構或無訊息 | 未遵循此樣式時，不要向使用者顯示任何內容；但自動產生的程式碼會遵循此樣式。
 建議 | 當未遵循此樣式時，向使用者顯示為建議 (在前兩個字元下方以點狀方式呈現)。 它在編譯時期沒有任何作用。
-警告 | 當未遵循此樣式時，在 [錯誤清單]  中顯示編譯器警告。
-錯誤 | 當未遵循此樣式時，在 [錯誤清單]  中顯示編譯器錯誤。
+warning | 當未遵循此樣式時，在 [錯誤清單]  中顯示編譯器警告。
+error | 當未遵循此樣式時，在 [錯誤清單]  中顯示編譯器錯誤。
 
 > [!NOTE]
 > 您不需要建置您的專案，也能看到違反命名規則的項目。 它們會在 [錯誤清單]  中 (或作為建議)，以編輯過後的程式碼方式呈現。

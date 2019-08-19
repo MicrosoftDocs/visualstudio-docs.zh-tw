@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3bf5a994d173a11a8515e166c3b0bc3044bdc587
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 1f51489b888a0b85b53856e413eb4704d24161b6
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63402901"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68925729"
 ---
 # <a name="visual-studio-emulator-for-android"></a>Visual Studio Emulator for Android
 
@@ -46,7 +46,7 @@ Visual Studio Emulator for Android 是模擬 Android 裝置的桌面應用程式
 > [!NOTE]
 > 解除安裝 Visual Studio 不會解除安裝此模擬器。 您必須個別解除安裝模擬器。
 
- 當您解除安裝 Visual Studio Emulator for Android 時，不會自動移除為了提供給模擬器使用所建立的 Hyper-V 虛擬乙太網路介面卡。 您可以手動移除這些虛擬介面卡 (若未使用)，方法是開啟 Hyper-V 管理員，從中選取一個模擬器 VHD 影像，再選擇 [網路] 索引標籤，然後為此索引標籤中所顯示的每個參數選擇 [移除]。
+ 當您解除安裝 Visual Studio Emulator for Android 時，不會自動移除為了提供給模擬器使用所建立的 Hyper-V 虛擬乙太網路介面卡。 您可以手動移除這些虛擬介面卡 (若未使用)，方法是開啟 Hyper-V 管理員，從中選取一個模擬器 VHD 影像，再選擇 [網路] 索引標籤，然後為此索引標籤中所顯示的每個參數選擇 [移除]  。
 
 ## <a name="Requirements"></a> 系統需求和回溯相容性
  如需 Visual Studio Emulator for Android 之硬體、軟體與組態需求的重要資訊，請參閱下列主題。
@@ -68,20 +68,20 @@ Visual Studio Emulator for Android 是模擬 Android 裝置的桌面應用程式
 
   若要了解模擬器的網路連線功能，請將它視為類似從您的 Android 手機連接到相同網路的 Wi-Fi 連線。 如果您的手機上執行的應用程式可以透過其 Wi-Fi 連線存取網路資源，則模擬器上執行的應用程式也可以存取相同的網路資源。
 
-  如需網路需求的詳細資訊，請參閱 [Visual Studio 的 Android 模擬器系統需求](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md)
+  如需網路需求的詳細資訊，請參閱 [Visual Studio Emulator for Android 的系統需求](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md)。
 
   如需針對網路問題進行疑難排解的詳細資訊，請參閱[針對 Visual Studio 的 Android 模擬器進行疑難排解](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md)。
 
 ## <a name="Configuring"></a> 設定 Visual Studio 的 Android 模擬器
  在各種大量的 Android 硬體之間測試 Android 應用程式的相容性可能是項挑戰。 市面上的 Android 手機和平板電腦橫跨各種版本和螢幕大小，並有許多不同的硬體組態 (RAM、CPU、架構等)。 Visual Studio Emulator for Android 簡化了使用裝置設定檔的這項工作。 我們提供了一組裝置設定檔，代表市面上最受歡迎的硬體，包括 Samsung、Motorola、Sony、LG 等裝置。
 
- 在 Visual Studio 2015 中，您可以使用模擬器管理員，來安裝、解除安裝及啟動裝置設定檔。 若要存取 [模擬器管理員]，請依序選擇 [工具] 和 [Visual Studio 的 Android 模擬器]。
+ 在 Visual Studio 2015 中，您可以使用模擬器管理員，來安裝、解除安裝及啟動裝置設定檔。 若要存取 [模擬器管理員]，請依序選擇 [工具]  和 [Visual Studio 的 Android 模擬器]  。
 
  ![Visual Studio 的 Android 模擬器管理員](../cross-platform/media/android_emu_manager.png "Android_Emu_Manager")
 
- 預設有四個預先安裝的裝置設定檔 (5 英吋的 KitKat 和 Lollipop 手機和和 7 英吋的平板電腦組態)，如白色文字和圖示所示。 直到您選擇 [安裝設定檔] 按鈕並完成安裝為止，清單中的其他設定檔都會呈現灰色。 您可以依應用程式開發介面層級篩選清單，然後按一下設定檔右下方的詳細資料箭號，以檢視其完整組態詳細資料。
+ 預設有四個預先安裝的裝置設定檔 (5 英吋的 KitKat 和 Lollipop 手機和和 7 英吋的平板電腦組態)，如白色文字和圖示所示。 直到您選擇 [安裝設定檔]  按鈕並完成安裝為止，清單中的其他設定檔都會呈現灰色。 您可以依應用程式開發介面層級篩選清單，然後按一下設定檔右下方的詳細資料箭號，以檢視其完整組態詳細資料。
 
- 一旦您安裝好目標設定檔集合，即可按綠色的 [播放] 按鈕，直接從管理員啟動這些新的設定檔。 這些設定檔也會出現在任何 Visual Studio 跨平台行動專案類型中的 [偵錯目標] 下拉式功能表中。
+ 一旦您安裝好目標設定檔集合，即可按綠色的 [播放]  按鈕，直接從管理員啟動這些新的設定檔。 這些設定檔也會出現在任何 Visual Studio 跨平台行動專案類型中的 [偵錯目標] 下拉式功能表中。
 
 ## <a name="FeaturesTest"></a> 您可以在模擬器中測試的功能
  如需可在模擬器中測試之功能的詳細資訊，請參閱此[部落格文章](https://devblogs.microsoft.com/devops/introducing-visual-studios-emulator-for-android/) \(英文\)。

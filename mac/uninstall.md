@@ -6,12 +6,12 @@ ms.author: amburns
 ms.date: 05/06/2018
 ms.technology: vs-ide-install
 ms.assetid: 4EB95F75-BC2E-4982-9564-2975805712D8
-ms.openlocfilehash: 65f5dedce42d6f2391c23bc82e37a5228bfe7242
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.openlocfilehash: 1ce74098cc8e6e4fa6856d94b7b8d99d96a1f3ab
+ms.sourcegitcommit: 6f3cf7a1bfc81a61f9a603461a1c34fd2221f100
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67691898"
+ms.lasthandoff: 08/12/2019
+ms.locfileid: "68957416"
 ---
 # <a name="uninstalling-visual-studio-for-mac"></a>解除安裝 Visual Studio for Mac
 
@@ -57,7 +57,7 @@ ms.locfileid: "67691898"
     sudo ./uninstall-vsmac.sh
     ```
 
-4. 最後，刪除解除安裝指令碼。
+4. 最後，刪除解除安裝指令碼，並從 Dock 移除 Visual Studio for Mac (如果有的話)。
 
 ### <a name="net-core-script"></a>.NET Core 指令碼
 
@@ -222,6 +222,12 @@ rm -rf ~/Library/Logs/VisualStudioInstaller/
 rm -rf ~/Library/Preferences/Xamarin/
 rm -rf "~/Library/Preferences/Visual Studio/"
 ```
+
+* * * 
+
+
+
+
 
 ## <a name="uninstall-visual-studio-2019-for-mac-preview"></a>解除安裝 Visual Studio 2019 for Mac Preview
 
