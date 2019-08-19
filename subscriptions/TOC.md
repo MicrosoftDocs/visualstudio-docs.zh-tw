@@ -10,7 +10,7 @@
 #### [搭配 GitHub Enterprise 的 Visual Studio](access-github.md)
 #### Microsoft 合作夥伴網路
 ##### [合作夥伴的訂用帳戶](program-mpn.md)
-##### [管理 MPN 的訂用帳戶](manage-mpn-subscriptions.md)
+##### [管理 MPN 的訂閱](manage-mpn-subscriptions.md)
 #### [Microsoft for Startups](program-startups.md)
 ### 登入 
 #### [啟用零售訂用帳戶](activate-store-subscriptions.md)
@@ -21,7 +21,7 @@
 #### [登入問題](sign-in-issues.md)
 #### [訂閱者資料的匿名](anonymization.md)
 ### [訂用帳戶入口網站概觀](using-the-subscriber-portal.md)
-### [管理訂用帳戶](manage-vs-subscriptions.md)
+### [管理您的訂閱](manage-vs-subscriptions.md)
 ### 優點
 #### 工具
 ##### [Azure 點數](vs-azure.md)
