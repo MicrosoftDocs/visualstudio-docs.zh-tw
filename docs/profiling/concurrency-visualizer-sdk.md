@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e2ade3e1b5a2317d16d668079275506509aeef7a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 33b8f0215e09dd43c265c7eb8ba08613132fabbc
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63001104"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68870300"
 ---
 # <a name="concurrency-visualizer-sdk"></a>並行視覺化檢視 SDK
 您可以使用並行視覺化檢視 SDK 檢測原始程式碼，以便在並行視覺化檢視中顯示其他資訊。 您可以在程式碼中將其他資料與階段和事件關聯。 這些額外的視覺效果稱為*標記*。  如需入門逐步解說，請參閱[並行視覺化檢視 SDK 簡介](http://go.microsoft.com/fwlink/?LinkId=235405)。
@@ -27,13 +27,13 @@ ms.locfileid: "63001104"
  並行視覺化檢視會顯示您可以用來產生標記的預設提供者。 提供者已經和並行視覺化檢視一起註冊，您不需要執行任何動作就能在 UI 中顯示標記。
 
 ### <a name="c-and-visual-basic"></a>C# 和 Visual Basic
- 在 C#、Visual Basic 和其他 managed 程式碼中，呼叫 <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Markers> 以使用預設提供者。 它會公開四個函式來產生標記︰<xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Markers.WriteFlag%2A>、<xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Markers.EnterSpan%2A>、<xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Markers.WriteMessage%2A> 和 <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Markers.WriteAlert%2A>。 視您是否要使用屬性的預設值而定，這些函式有多個多載。  最簡單的多載採用只有字串的參數，指定事件的描述。 描述會顯示在並行視覺化檢視報表中。
+ 在 C#、Visual Basic 和其他受控程式碼中，透過呼叫 [Markers](/previous-versions/hh694099(v=vs.140)) 類別中的方法來使用預設提供者。 它會公開四個方法來產生標記︰[WriteFlag](/previous-versions/hh694185%28v%3dvs.140%29)、[EnterSpan](/previous-versions/hh694205(v=vs.140))、[WriteMessage](/previous-versions/hh694161(v=vs.140)) 和 [WriteAlert](/previous-versions/hh694180(v=vs.140))。 視您是否要使用屬性的預設值而定，這些函式有多個多載。  最簡單的多載採用只有字串的參數，指定事件的描述。 描述會顯示在並行視覺化檢視報表中。
 
 ##### <a name="to-add-sdk-support-to-a-c-or-visual-basic-project"></a>在 C# 或 Visual Basic 專案中加入 SDK 支援
 
-1. 在功能表列上依序選擇 [分析]、[並行視覺化檢視]、[將 SDK 加入專案]。
+1. 在功能表列上依序選擇 [分析]  、[並行視覺化檢視]  、[將 SDK 加入專案]  。
 
-2. 選取您要存取 SDK 的專案，然後選擇 [將 SDK 加入選取的專案] 按鈕。
+2. 選取您要存取 SDK 的專案，然後選擇 [將 SDK 加入選取的專案]  按鈕。
 
 3. 在程式碼中加入 imports 或 using 陳述式。
 
@@ -50,9 +50,9 @@ ms.locfileid: "63001104"
 
 ##### <a name="to-add-sdk-support-to-a-c-or-c-project"></a>在 C++ 或 C 專案中加入 SDK 支援
 
-1. 在功能表列上依序選擇 [分析]、[並行視覺化檢視]、[將 SDK 加入專案]。
+1. 在功能表列上依序選擇 [分析]  、[並行視覺化檢視]  、[將 SDK 加入專案]  。
 
-2. 選取您要存取 SDK 的專案，然後選擇 [將 SDK 加入選取的專案] 按鈕。
+2. 選取您要存取 SDK 的專案，然後選擇 [將 SDK 加入選取的專案]  按鈕。
 
 3. 對於 C++，請包含 `cvmarkersobj.h`。 對於 C，請包含 `cvmarkers.h`。
 
@@ -76,19 +76,19 @@ ms.locfileid: "63001104"
 
 #### <a name="to-use-a-new-marker-provider-in-a-c-or-visual-basic-project"></a>在 C# 或 Visual Basic 專案中使用新的標記提供者
 
-1. 建立 <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.MarkerWriter> 物件。  建構函式取用 GUID。
+1. 建立 [MarkerWriter](/previous-versions/hh694138(v=vs.140)) 物件。  建構函式取用 GUID。
 
-2. 若要註冊提供者，請開啟並行視覺化檢視的 [[進階設定](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md)] 對話方塊。  選取 [標記] 索引標籤，然後選擇 [加入新提供者] 按鈕。 在 [[進階設定](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md)] 對話方塊中，輸入用來建立提供者的 GUID 和提供者的描述。
+2. 若要註冊提供者，請開啟並行視覺化檢視的 [[進階設定](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md)] 對話方塊。  選取 [標記]  索引標籤，然後選擇 [加入新提供者]  按鈕。 在 [[進階設定](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md)] 對話方塊中，輸入用來建立提供者的 GUID 和提供者的描述。
 
 #### <a name="to-use-a-new-marker-provider-in-a-c-or-c-project"></a>在 C++ 或 C 專案中使用新的標記提供者
 
 1. 使用 `CvInitProvider` 函式來初始化 PCV_PROVIDER。  建構函式取用 GUID* 和 PCV_PROVIDER\*。
 
-2. 若要註冊提供者，請開啟 [[進階設定](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md)] 對話方塊。  選取 [標記] 索引標籤，然後選擇 [加入新提供者] 按鈕。 在此對話方塊中，輸入用來建立提供者的 GUID 和提供者的描述。
+2. 若要註冊提供者，請開啟 [[進階設定](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md)] 對話方塊。  選取 [標記]  索引標籤，然後選擇 [加入新提供者]  按鈕。 在此對話方塊中，輸入用來建立提供者的 GUID 和提供者的描述。
 
 #### <a name="to-use-a-marker-series-in-a-c-or-visual-basic-project"></a>在 C# 或 Visual Basic 專案中使用標記系列
 
-1. 若要使用新的 <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.MarkerSeries>，請先使用 <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.MarkerWriter> 物件建立它，然後直接從新數列產生標記事件。
+1. 若要使用新的 [MarkerSeries](/previous-versions/hh694127(v=vs.140))，請先使用 [MarkerWriter](/previous-versions/hh694138(v=vs.140)) 物件來建立它，然後直接從新系列產生標記事件。
 
     ```csharp
     MarkerSeries series1 = myMarkerWriter.CreateMarkerSeries("Series 1");
@@ -125,5 +125,5 @@ ms.locfileid: "63001104"
 |-----------|-----------------|
 |[C++ 程式庫參考](../profiling/cpp-library-reference.md)|描述 C++ 的並行視覺化檢視 API。|
 |[C 程式庫參考](../profiling/c-library-reference.md)|描述 C 的並行視覺化檢視 API。|
-|<xref:Microsoft.ConcurrencyVisualizer.Instrumentation>|描述 Managed 程式碼的並行視覺化檢視 API。|
+|[檢測](/previous-versions/hh694104(v=vs.140))|描述 Managed 程式碼的並行視覺化檢視 API。|
 |[並行視覺化檢視](../profiling/concurrency-visualizer.md)|使用並行方法所產生且包含執行緒執行資料的分析資料檔案之檢視和報告的參考資訊。|

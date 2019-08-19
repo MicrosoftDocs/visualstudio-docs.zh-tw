@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c4c3922f8f41f950ede7065e2e15ece07890ba6
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 6328ea53c90b5a5a7ba50fde5a00e29fadacaaa7
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67825845"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68924511"
 ---
 # <a name="resource-details-view---contention-data"></a>資源詳細資料檢視 - 爭用資料
 資源詳細資料檢視會在時間軸圖形顯示因爭用所選取的資源而造成的封鎖事件。 因為另一個執行緒已鎖定資源的存取權時，所以會強制執行緒暫停執行而發生封鎖事件。
@@ -54,7 +54,7 @@ ms.locfileid: "67825845"
 
 - 在時間軸圖形中，按一下 [總計]  。
 
-     資源的爭用檢視隨即顯示。 如需詳細資訊，請參閱[資源爭用檢視](../profiling/resource-contentions-view-contention-data.md)
+     資源的爭用檢視隨即顯示。 如需詳細資訊，請參閱[資源爭用檢視](../profiling/resource-contentions-view-contention-data.md)。
 
 #### <a name="to-view-all-the-contention-events-of-a-thread"></a>檢視執行緒的所有爭用事件
 

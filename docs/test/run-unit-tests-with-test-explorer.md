@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 11ebe64bf1e3034230a9697fef0c072fc89ef282
-ms.sourcegitcommit: 3e74ec49a54e5c3da7631f4466128cdf4384af6b
+ms.openlocfilehash: 7a3839a28ce0c37c5ccf43ca1f8ddba1ecd52365
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "68711377"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68918176"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>使用測試總管執行單元測試
 
@@ -154,7 +154,7 @@ Visual Studio 2015 包含 Managed 程式碼和機器碼皆適用的 Microsoft �
 |群組|說明|
 |-|-----------------|
 |**持續期間**|依據執行時間群組測試：[快]  、[中]  和 [慢]  。|
-|**結果**|依執行結果將測試分組：[失敗的測試]  、[略過的測試]  、[成功的測試]  。|
+|**結果**|依據執行結果群組測試：[失敗的測試]  、[略過的測試]  、[成功的測試]  。|
 |**特性**|依據您定義的分類/值組群組測試。 指定特性分類和值的語法是由單元測試架構所定義。|
 |**專案**|依據名稱專案群組測試。|
 ::: moniker-end
@@ -162,14 +162,14 @@ Visual Studio 2015 包含 Managed 程式碼和機器碼皆適用的 Microsoft �
 |群組|說明|
 |-|-----------------|
 |**持續期間**|依執行時間將測試分組：[快]  、[中]  和 [慢]  。|
-|**狀態**|依執行結果將測試分組：[失敗的測試]  、[略過的測試]  、[成功的測試]  、[未執行] |
+|**狀態**|依據執行結果群組測試：[失敗的測試]  、[略過的測試]  、[成功的測試]  、[未執行] |
 |**目標 Framework** | 依其專案的目標架構將測試分組 |
 |**命名空間**|依上層命名空間將測試分組。|
 |**Project**|依上層專案將測試分組。|
 |**類別**|依上層類別將測試分組。|
 ::: moniker-end
 
-### <a name="group-by-traits"></a>依據特性群組
+### <a name="traits"></a>特性
 
 特性通常是分類名稱/值組，但也可以是單一分類。 您可將特性指派給方法，其中單元測試架構可將其識別為測試方法。 單元測試架構可以定義特性分類。 您可以將值加入特性分類以定義自己的分類名稱/值組。 指定特性分類和值的語法是由單元測試架構所定義。
 
@@ -187,7 +187,7 @@ Microsoft Managed 程式碼單元測試架構中，您可在  <xref:Microsoft.Vi
 
 **Microsoft C++ 單元測試架構中的特性**
 
- 請參閱[如何使用適用於 C++ 的 Microsoft 單元測試架構](how-to-use-microsoft-test-framework-for-cpp.md)。
+請參閱[如何使用適用於 C++ 的 Microsoft 單元測試架構](how-to-use-microsoft-test-framework-for-cpp.md)。
 
 ## <a name="create-custom-playlists"></a>建立自訂播放清單
 
@@ -215,7 +215,7 @@ Microsoft Managed 程式碼單元測試架構中，您可在  <xref:Microsoft.Vi
 
 ![播放清單會在個別的測試總管索引標籤中開啟](../test/media/vs-2019/test-explorer-playlist-tab-16-2.png)
 
-**若要將測試加入播放清單**，請在測試總管中選擇一或多項測試。 按一下滑鼠右鍵，然後選擇 [新增到播放清單]   > [新增播放清單]  。 
+**若要將測試加入播放清單**，請在測試總管中選擇一或多項測試。 按一下滑鼠右鍵，然後選擇 [新增到播放清單]   > [新增播放清單]  。
 
 **若要開啟播放清單**，選擇 Visual Studio 工具列中的播放清單圖是，然後從功能表中選取先前儲存的播放清單檔案。
 ::: moniker-end
@@ -229,7 +229,7 @@ Microsoft Managed 程式碼單元測試架構中，您可在  <xref:Microsoft.Vi
 
 ### <a name="filter-sort-and-rearrange-test-columns"></a>篩選、排序及重新排列測試資料行
 
-您可以篩選、排序及重新排列資料行。 
+您可以篩選、排序及重新排列資料行。
 * 若要篩選成特定特性，請按一下 [特性] 資料行頂端的篩選圖示。
 
   ![資料行篩選](../test/media/vs-2019/test-explorer-filter-column-16-2.png)
@@ -302,7 +302,7 @@ FilterName:"Criteria" -FilterName:"SubsetCriteria"
 
 ### <a name="analyze-unit-test-code-coverage"></a>分析單元測試程式碼涵蓋範圍
 
-您可以使用 Visual Studio 程式碼涵蓋範圍工具來判斷您的單元測試實際測試的產品程式碼數量。 您可以在方案中的所選測試或所有測試上執行程式碼涵蓋範圍。
+您可以使用 Visual Studio Enterprise 版中提供的 Visual Studio 程式碼涵蓋範圍工具，來判斷您的單元測試實際測試的產品程式碼數量。 您可以在方案中的所選測試或所有測試上執行程式碼涵蓋範圍。
 
 若要在方案中執行測試方法的程式碼涵蓋範圍：
 
@@ -331,6 +331,8 @@ FilterName:"Criteria" -FilterName:"SubsetCriteria"
 |-|------------------------|
 |TestExplorer.DebugAllTestsInContext|**Ctrl**+**R**、**Ctrl**+**T**|
 |TestExplorer.RunAllTestsInContext|**Ctrl**+**R**、**T**|
+|TestExplorer.RunAllTests|**Ctrl**+**R**、**A**|
+|TestExplorer.RepeatLastRun|**Ctrl**+**R**、**L**|
 
 > [!NOTE]
 > 您不能在抽象類別中執行測試，因為測試只定義於抽象類別，而不會具現化。 若要在抽象類別執行測試，請建立衍生自抽象類別的類別。

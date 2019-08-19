@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6a49f7fe74977495c3e2a99e7311d4349ccd67bd
-ms.sourcegitcommit: 0f5f7955076238742f2071d286ad8e896f3a6cad
+ms.openlocfilehash: a68b22b5a4fedb7d3548ac3aceda7c4dc109bebe
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "68483544"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68870862"
 ---
 # <a name="work-with-multiple-user-accounts"></a>Work with multiple user accounts
 
@@ -33,7 +33,7 @@ ms.locfileid: "68483544"
 
 ### <a name="access-your-azure-account-in-server-explorer"></a>在伺服器總管中存取您的 Azure 帳戶
 
-按 **Ctrl**+**Alt**+**S** 以開啟 [伺服器總管]  。 展開 [Azure]  節點，會看到其包含可用於 Azure 帳戶中的資源，該帳戶與您用以登入 Visual Studio 的帳戶建立關聯。 看起來類似下圖：
+若要開啟 [伺服器總管]，請選擇 [檢視]   > [伺服器總管]  (或者，如果您正在使用 [一般] [環境設定](../ide/environment-settings.md)，請按 **Ctrl**+**Alt**+**S**)。 展開 [Azure]  節點，會看到其包含可用於 Azure 帳戶中的資源，該帳戶與您用以登入 Visual Studio 的帳戶建立關聯。 看起來類似下圖：
 
 ![展開 Azure 節點的伺服器總管](../ide/media/work-with-multiple-user-accounts/server-explorer.png)
 

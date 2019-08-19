@@ -1,7 +1,7 @@
 ---
 title: 建立網路型安裝
 description: 了解如何建立網路安裝點以在企業內部署 Visual Studio。
-ms.date: 04/26/2019
+ms.date: 08/06/2019
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: c0ac63fda69290bef28604cda7524a318c01edc8
-ms.sourcegitcommit: 01c3c9dcade5d913bde2c7efa8c931a7b04e6cd0
+ms.openlocfilehash: 766e3a35c6f9b775373fb7a096000177cfee131d
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/25/2019
-ms.locfileid: "67365343"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68870780"
 ---
 # <a name="create-a-network-installation-of-visual-studio"></a>建立 Visual Studio 的網路安裝
 
@@ -85,6 +85,8 @@ ms.locfileid: "67365343"
 ## <a name="copy-the-layout-to-a-network-share"></a>將配置複製到網路共用
 
 在網路共用上裝載配置，以便能夠從其他電腦執行。
+
+下列範例會使用 [xcopy](/windows-server/administration/windows-commands/xcopy/)。 如果您想要的話，也可以使用 [robocopy](/windows-server/administration/windows-commands/robocopy/)。  
 
 ::: moniker range="vs-2017"
 

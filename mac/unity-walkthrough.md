@@ -1,5 +1,5 @@
 ---
-title: 在 Visual Studio for Mac 中使用 Unity 開始建置遊戲
+title: 開始使用 Unity 來建置遊戲
 description: 開始使用 Unity 和 Visual Studio for Mac
 author: asb3993
 ms.author: amburns
@@ -7,14 +7,14 @@ ms.date: 05/20/2019
 ms.topic: article
 ms.technology: vs-ide-general
 ms.assetid: D07FA43B-9D18-4DFA-8343-CD538FAD84DB
-ms.openlocfilehash: 8f14d21468336dba220a76ad8978f136d50f96f1
-ms.sourcegitcommit: cc5fd59e5dc99181601b7db8b28d7f8a83a36bab
+ms.openlocfilehash: dd69156b1397ba6232d9143f54b0de1ef4506ecc
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/11/2019
-ms.locfileid: "66836157"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68872923"
 ---
-# <a name="getting-started-building-games-with-unity-in-visual-studio-for-mac"></a>在 Visual Studio for Mac 中使用 Unity 開始建置遊戲 
+# <a name="getting-started-building-games-with-unity-in-visual-studio-for-mac"></a>在 Visual Studio for Mac 中使用 Unity 開始建置遊戲
 
 Unity 是一款遊戲引擎，可讓您使用 C# 開發遊戲。 本逐步解說示範如何使用 Visual Studio for Mac 和 Visual Studio for Mac Tools for Unity 延伸模組以及 Unity 環境，開始開發和偵錯 Unity 遊戲。
 
@@ -156,7 +156,7 @@ Visual Studio for Mac Tools for Unity 是免費的延伸模組，隨 Visual Stud
         public float Speed = 50;
         private Transform _playerTransform;
         private Transform _myTransform;
-        
+
         void Start()
         {
             var player = GameObject.FindGameObjectWithTag("Player");

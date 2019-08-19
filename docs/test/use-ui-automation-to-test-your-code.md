@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fcf217f2826bf618db2288107fafeff091e6a2bd
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: b0bda0d52a50ef3f92d8cecc4156922779f2af5e
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67824696"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926648"
 ---
 # <a name="use-coded-ui-test-to-test-your-code"></a>使用自動程式化 UI 測試來測試您的程式碼
 
@@ -158,7 +158,7 @@ ms.locfileid: "67824696"
 
 ## <a name="validate-the-properties-of-ui-controls"></a>驗證 UI 控制項的屬性
 
-您可以使用 [自動程式化 UI 測試產生器]  將使用者介面 (UI) 控制項加入測試的 <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap>，或產生可使用 UI 控制項判斷提示之驗證方法的程式碼。
+您可以使用 [自動程式化 UI 測試產生器]  將使用者介面 (UI) 控制項加入 [UIMap](/previous-versions/dd580454(v=vs.140)) 以進行測試，或產生可使用 UI 控制項判斷提示之驗證方法的程式碼。
 
 若要產生 UI 控制項的判斷提示，請選擇 [自動程式化 UI 測試產生器]  中的 [加入判斷提示]  工具，並將它拖曳至受測試應用程式上想要驗證是否正確的控制項。 有方塊括住控制項時，請放開滑鼠。 此控制類別程式碼會立即在 *UIMap.Designer.cs* 檔案中建立。
 
@@ -402,10 +402,10 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 
 您可以使用衍生自 <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl> 的控制項 (例如 [HtmlList](xref:Microsoft.VisualStudio.TestTools.UITesting.HtmlControls.HtmlList) 或 [WinComboBox](xref:Microsoft.VisualStudio.TestTools.UITesting.WinControls.WinComboBox))，直接取得或設定其屬性值。 下列程式碼提供了一些範例：
 
- ```csharp
- int i = myHtmlList.ItemCount;
- myWinCheckBox.Checked = true;
- ```
+```csharp
+int i = myHtmlList.ItemCount;
+myWinCheckBox.Checked = true;
+```
 
 ### <a name="to-get-properties-from-ui-test-controls"></a>從 UI 測試控制項取得屬性
 
@@ -455,7 +455,6 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 
 - [記錄和播放手動測試](/azure/devops/test/mtm/record-play-back-manual-tests?view=vsts)
 - [Xamarin.UITest](/appcenter/test-cloud/uitest/)
-- <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap>
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert>
 - [逐步解說：建立、編輯及維護自動程式化 UI 測試](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)
 - [建立自動程式化 UI 測試來測試 UWP 應用程式](test-uwp-app-with-coded-ui-test.md)

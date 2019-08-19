@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: ae7cbddb3ea7d7f94b23d723f6641a95dd28ed40
-ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
+ms.openlocfilehash: a9fcf54abf6227fe020d98d2fdc9aed6de021983
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66820336"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68869844"
 ---
 # <a name="use-the-mstest-framework-in-unit-tests"></a>在單元測試中使用 MSTest 架構
 
@@ -113,7 +113,7 @@ ClassInitialize 和 ClassCleanup 會在載入您的類別之後以及卸載您�
 
 ## <a name="test-configuration-classes"></a>測試組態類別
 
-- <xref:Microsoft.TeamFoundation.TestManagement.Client.ObjectTypes>
+- [ObjectTypes](/previous-versions/visualstudio/visual-studio-2013/dd987428(v=vs.120))
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestConfigurationSection>
 

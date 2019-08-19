@@ -9,12 +9,12 @@ ms.custom: seodec18
 ms.workload: azure-vs
 ms.date: 11/11/2016
 ms.author: ghogen
-ms.openlocfilehash: 5422d8cb56a9df1fad40857f6802e55ebd11b2ed
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 3f9094b4d668df37c25da075d0cee590052f910d
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65675502"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68919806"
 ---
 # <a name="optimizing-your-azure-code"></a>最佳化您的 Azure 程式碼
 當您在撰寫使用 Microsoft Azure 的應用程式時，請遵循某些程式碼撰寫實務，以避免應用程式在雲端環境中發生延展性、行為和效能方面的問題。 Microsoft 有提供 Azure Code Analysis 工具，可辨識並找出許多常見問題，並幫助您解決這些問題。 您可以在 Visual Studio 中透過 NuGet 下載此工具。
@@ -128,7 +128,7 @@ AP2002
 如果您呼叫的 **Receive** 不是使用其預設值，請確定 *ServerWaitTime* 值有超過一分鐘。 將 *ServerWaitTime* 設定為超過一分鐘可防止伺服器沒接收完訊息就逾時。
 
 ### <a name="solution"></a>方案
-請參閱下列程式碼範例以了解建議用法。 如需詳細資訊，請參閱 [QueueClient.OnMessage 方法 (Microsoft.ServiceBus.Messaging)](https://msdn.microsoft.com/library/microsoft.servicebus.messaging.queueclient.onmessage.aspx) 和 [QueueClient.Receive 方法 (Microsoft.ServiceBus.Messaging)](https://msdn.microsoft.com/library/microsoft.servicebus.messaging.queueclient.receive.aspx)。
+請參閱下列程式碼範例以了解建議用法。 如需詳細資料，請參閱 [QueueClient.OnMessage 方法 (Microsoft.ServiceBus.Messaging)](https://msdn.microsoft.com/library/microsoft.servicebus.messaging.queueclient.onmessage.aspx) \(英文\) 和 [QueueClient.Receive 方法 (Microsoft.ServiceBus.Messaging)](https://msdn.microsoft.com/library/microsoft.servicebus.messaging.queueclient.receive.aspx) \(英文\)。
 
 若要改善 Azure 傳訊基礎結構的效能，請參閱設計模式 [非同步傳訊入門](https://msdn.microsoft.com/library/dn589781.aspx)。
 
@@ -415,7 +415,7 @@ AP5000
 使用診斷組態設計工具將診斷設定移至診斷組態檔 (若是 SDK 2.5 和更新版本，則為 diagnostics.wadcfg 或 diagnostics.wadcfgx)。 也建議您安裝 [Azure SDK 2.5](http://go.microsoft.com/fwlink/?LinkId=513188) 並使用最新的診斷功能。
 
 1. 在您要設定之角色的捷徑功能表上，選擇 [屬性]，然後選擇 [組態] 索引標籤。
-2. 在 [診斷] 區段中，確定已選取 [啟用診斷] 核取方塊。
+2. 在 [診斷]  區段中，確定已選取 [啟用診斷]  核取方塊。
 3. 選擇 [設定]  按鈕。
 
    ![存取啟用診斷選項](./media/vs-azure-tools-optimizing-azure-code-in-visual-studio/IC796660.png)

@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6bdc9148b406d9d3806e5eb64f223dccb4b7c0b7
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: ac9e9c7bbafcf54e7bd31bde20469310c2ad3f81
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66744971"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68869765"
 ---
 # <a name="choose-toolbox-items-wpf-components"></a>選擇工具箱項目、WPF 元件
 
@@ -49,7 +49,7 @@ ms.locfileid: "66744971"
 
 **目錄**
 
-顯示 .NET 組件的位置。 所有組件的預設位置為 [全域組件快取]。 如需全域組件快取的進一步資訊，請參閱[使用組件和全域組件快取](/dotnet/framework/app-domains/working-with-assemblies-and-the-gac)。
+顯示 .NET 組件的位置。 所有組件的預設位置為 [全域組件快取]。 如需全域組件快取的詳細資訊，請參閱[使用組件和全域組件快取](/dotnet/framework/app-domains/working-with-assemblies-and-the-gac)。
 
 ## <a name="uielement-list"></a>UIElement 清單
 
@@ -77,11 +77,11 @@ ms.locfileid: "66744971"
 
 - 當您將方案組態從「偵錯」變更為「發行」或從「發行」變更為「偵錯」時，不會正確更新。 這是因為參考不是專案參考，而是針對磁碟上之組件的參考。 如果控制項是目前方案的一部分，當您從「偵錯」變更為「發行」時，專案會繼續參考「偵錯」版本的控制項。
 
-此外，如果將設計階段中繼資料套用至自訂控制項，而且此中繼資料指定 <xref:Microsoft.Windows.Design.ToolboxBrowsableAttribute> 設定為 `false`，則此控制項不會出現在工具箱中。
+此外，如果將設計階段中繼資料套用至自訂控制項，而且此中繼資料指定將 [Microsoft.Windows.Design.ToolboxBrowsableAttribute](/previous-versions/visualstudio/visual-studio-2010/bb547991(v=vs.100)) 設定為 `false`，則此控制項不會出現在 [工具箱] 中。
 
 您可以藉由對應控制項的命名空間和組件，直接在 XAML 檢視中參考控制項。
 
 ## <a name="see-also"></a>另請參閱
 
 - [工具箱](../../ide/reference/toolbox.md)
-- [WPF 使用者入門](../../designers/getting-started-with-wpf.md)
+- [開始使用 WPF](../../designers/getting-started-with-wpf.md)
