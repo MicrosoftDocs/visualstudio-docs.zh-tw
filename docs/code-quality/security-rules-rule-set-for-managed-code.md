@@ -8,15 +8,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 72182607369094781050b94b1003398479dfe2cb
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 1131f9cf0e77fd4fe68e4bc5c033491aa6dd34e1
+ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65459139"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "69585185"
 ---
 # <a name="security-rules-rule-set-for-managed-code"></a>適用於 Managed 程式碼的安全性規則規則集
-您應該包含 Microsoft 安全性規則規則集以最大化所報告的潛在安全性問題數目。
+
+使用 Microsoft 安全性規則規則集進行舊版程式碼分析, 將所報告的潛在安全性問題數目最大化。
 
 |規則|描述|
 |----------|-----------------|
@@ -54,7 +55,7 @@ ms.locfileid: "65459139"
 |[CA2138](../code-quality/ca2138-transparent-methods-must-not-call-methods-with-the-suppressunmanagedcodesecurity-attribute.md)|透明方法不可以使用 SuppressUnmanagedCodeSecurity 屬性呼叫方法|
 |[CA2139](../code-quality/ca2139-transparent-methods-may-not-use-the-handleprocesscorruptingexceptions-attribute.md)|透明方法不能使用 HandleProcessCorruptingExceptions 屬性|
 |[CA2140](../code-quality/ca2140-transparent-code-must-not-reference-security-critical-items.md)|透明程式碼不可以參考安全性關鍵項目|
-|[CA2141](../code-quality/ca2141-transparent-methods-must-not-satisfy-linkdemands.md)|透明方法不可以滿足 Linkdemand|
+|[CA2141](../code-quality/ca2141-transparent-methods-must-not-satisfy-linkdemands.md)|透明方法不能滿足 Linkdemand|
 |[CA2142](../code-quality/ca2142-transparent-code-should-not-be-protected-with-linkdemands.md)|透明程式碼不可以使用 LinkDemand 加以保護|
 |[CA2143](../code-quality/ca2143-transparent-methods-should-not-use-security-demands.md)|透明方法不可以使用安全性要求|
 |[CA2144](../code-quality/ca2144-transparent-code-should-not-load-assemblies-from-byte-arrays.md)|透明程式碼不可以從位元組陣列載入組件|
@@ -68,11 +69,11 @@ ms.locfileid: "65459139"
 |[CA2302](ca2302-ensure-binaryformatter-binder-is-set-before-calling-binaryformatter-deserialize.md)|呼叫 BinaryFormatter.Deserialize 之前，請務必先設定 BinaryFormatter.Binder|
 |[CA2305](ca2305-do-not-use-insecure-deserializer-losformatter.md)|請勿使用不安全的還原序列化程式 LosFormatter|
 |[CA2310](ca2310-do-not-use-insecure-deserializer-netdatacontractserializer.md)|請勿使用不安全的還原序列化程式 NetDataContractSerializer|
-|[CA2311](ca2311-do-not-deserialize-without-first-setting-netdatacontractserializer-binder.md)|無法還原序列化而不需要第一個設定 NetDataContractSerializer.Binder|
-|[CA2312](ca2312-ensure-netdatacontractserializer-binder-is-set-before-deserializing.md)|請確定 NetDataContractSerializer.Binder 設定後再進行還原序列化|
+|[CA2311](ca2311-do-not-deserialize-without-first-setting-netdatacontractserializer-binder.md)|未先設定 NetDataContractSerializer.Binder 之前，請勿還原序列化|
+|[CA2312](ca2312-ensure-netdatacontractserializer-binder-is-set-before-deserializing.md)|還原序列化之前，請務必先設定 NetDataContractSerializer.Binder|
 |[CA2315](ca2315-do-not-use-insecure-deserializer-objectstateformatter.md)|請勿使用不安全的還原序列化程式 ObjectStateFormatter|
-|[CA2321](ca2321.md)|無法還原序列化使用 SimpleTypeResolver JavaScriptSerializer 與|
-|[CA2322](ca2322.md)|請確定 JavaScriptSerializer SimpleTypeResolver 使用未初始化之前還原序列化|
+|[CA2321](ca2321.md)|請勿使用 SimpleTypeResolver 搭配 JavaScriptSerializer 來還原序列化|
+|[CA2322](ca2322.md)|還原序列化之前，請確定不會使用 SimpleTypeResolver 來將 JavaScriptSerializer 初始化|
 |[CA3001](../code-quality/ca3001-review-code-for-sql-injection-vulnerabilities.md)|檢閱程式碼是否有 SQL 插入式攻擊弱點|
 |[CA3002](../code-quality/ca3002-review-code-for-xss-vulnerabilities.md)|檢閱程式碼是否有 XSS 弱點|
 |[CA3003](../code-quality/ca3003-review-code-for-file-path-injection-vulnerabilities.md)|檢閱程式碼是否有檔案路徑插入式攻擊弱點|

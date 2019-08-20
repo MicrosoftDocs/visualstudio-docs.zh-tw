@@ -8,20 +8,20 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: cf5b486e8298b6438b774481a839c0f6433cdbed
-ms.sourcegitcommit: 92a04c57ac0a49f304fa2ea5043436f30068c3cd
+ms.openlocfilehash: b2270caa0cf7db230fa030cb620d51f1677d9dec
+ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/21/2019
-ms.locfileid: "65975896"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "69585073"
 ---
 # <a name="extended-design-guidelines-rules-rule-set-for-managed-code"></a>適用於 Managed 程式碼的擴充設計方針規則規則集
 
-若要最大化的可用性和可維護性問題所報告的基本設計方針規則擴充了 Microsoft 擴充設計方針規則規則集。 額外特別強調命名方針。 您應該考慮包含這個規則集，如果您的專案包含程式庫程式碼，或如果您想要強制執行最高的標準，來撰寫容易維護的程式碼。
+Microsoft 擴充設計指導方針規則規則集會擴充基本的設計指導方針規則, 以最大化所報告的可用性和可維護性問題。 額外的強調會放在命名指導方針上。 如果您的專案包含程式庫程式碼, 或者您想要強制最高的標準來撰寫容易維護的程式碼, 您應該考慮包含這個規則集。
 
-擴充設計方針規則包含所有 Microsoft 基本設計方針規則。 基本設計方針規則包含所有 Microsoft 最小建議規則。 如需詳細資訊，請參閱 < [managed 程式碼的基本設計方針規則規則集](../code-quality/basic-design-guideline-rules-rule-set-for-managed-code.md)和[managed 程式碼的 Managed 建議規則規則集](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md)
+擴充的設計指導方針規則包含[基本設計方針規則](../code-quality/basic-design-guideline-rules-rule-set-for-managed-code.md)規則集中的所有規則, 其中包括[受管理的建議規則](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md)規則集內的規則。
 
-下表描述中的 Microsoft 擴充設計方針規則規則集的所有規則。
+下表描述 Microsoft 擴充設計指導方針規則規則集中的所有規則。
 
 |規則|描述|
 |----------|-----------------|
@@ -65,7 +65,7 @@ ms.locfileid: "65975896"
 |[CA2137](../code-quality/ca2137-transparent-methods-must-contain-only-verifiable-il.md)|透明方法必須只包含可驗證的 IL|
 |[CA2138](../code-quality/ca2138-transparent-methods-must-not-call-methods-with-the-suppressunmanagedcodesecurity-attribute.md)|透明方法不可以使用 SuppressUnmanagedCodeSecurity 屬性呼叫方法|
 |[CA2140](../code-quality/ca2140-transparent-code-must-not-reference-security-critical-items.md)|透明程式碼不可以參考安全性關鍵項目|
-|[CA2141](../code-quality/ca2141-transparent-methods-must-not-satisfy-linkdemands.md)|透明方法不可以滿足 Linkdemand|
+|[CA2141](../code-quality/ca2141-transparent-methods-must-not-satisfy-linkdemands.md)|透明方法不能滿足 Linkdemand|
 |[CA2146](../code-quality/ca2146-types-must-be-at-least-as-critical-as-their-base-types-and-interfaces.md)|類型至少必須和基底類型與介面一樣關鍵|
 |[CA2147](../code-quality/ca2147-transparent-methods-may-not-use-security-asserts.md)|CA2147：透明方法不可以使用安全性判斷提示|
 |[CA2149](../code-quality/ca2149-transparent-methods-must-not-call-into-native-code.md)|透明方法不可以呼叫機器碼|

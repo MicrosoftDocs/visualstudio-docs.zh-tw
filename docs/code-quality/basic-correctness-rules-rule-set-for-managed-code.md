@@ -8,15 +8,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: ce48ece2801096b2b657df41bcaa0a744e67bd45
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: a76d1c5d2268c0119fc6822167537b500371cdb5
+ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68919561"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "69585007"
 ---
 # <a name="basic-correctness-rules-rule-set-for-managed-code"></a>適用於 Managed 程式碼的基本正確性規則規則集
-基本正確性規則規則集會著重于邏輯錯誤, 以及使用 framework Api 時的常見錯誤。 基本正確性規則包含最小建議規則規則集內的規則。 如需詳細資訊, 請參閱[適用于受控碼的 Managed 建議規則規則集](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md)您應該包含此規則集, 以在最小建議規則報告的警告清單中展開。
+
+基本正確性規則規則集會著重于邏輯錯誤, 以及使用 framework Api 時的常見錯誤。 基本正確性規則包含「[受管理的建議規則](managed-recommended-rules-rule-set-for-managed-code.md)」規則集中的規則。
 
 下表描述 Microsoft 基本正確性規則規則集中的所有規則。
 
