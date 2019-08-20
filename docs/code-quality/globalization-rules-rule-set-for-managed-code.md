@@ -8,21 +8,22 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 28199eb9fa09e2096939ffa8e678eb9812a61b1f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ffba6b69e1f67b369f3d99c1b54a88448df8a41b
+ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62816396"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "69584989"
 ---
 # <a name="globalization-rules-rule-set-for-managed-code"></a>適用於 Managed 程式碼的全球化規則規則集
-您可以使用 Microsoft 全球化規則規則集將焦點放在可能會導致資料不會正確出現在不同的語言、 地區設定中和文化特性的應用程式中的問題。 您應該包含這個規則集如果當地語系化您的應用程式，全球化，或兩者。
+
+使用 Microsoft 全球化規則規則集, 將焦點放在可能導致應用程式中的資料無法以不同的語言、地區設定和文化特性來正確顯示的問題。 如果您的應用程式已當地語系化、全球化或兩者皆是, 則應包含此規則集。
 
 |規則|描述|
 |----------|-----------------|
 |[CA1300](../code-quality/ca1300-specify-messageboxoptions.md)|必須指定 MessageBoxOptions|
 |[CA1301](../code-quality/ca1301-avoid-duplicate-accelerators.md)|避免使用重複的快速鍵|
-|[CA1302](../code-quality/ca1302-do-not-hardcode-locale-specific-strings.md)|不要以硬式編碼的方式加入適用於特定地區設定的字串|
+|[CA1302](../code-quality/ca1302-do-not-hardcode-locale-specific-strings.md)|不要硬式編碼地區設定特定字串|
 |[CA1303](../code-quality/ca1303-do-not-pass-literals-as-localized-parameters.md)|不要將常值當作已當地語系化的參數傳遞|
 |[CA1304](../code-quality/ca1304-specify-cultureinfo.md)|必須指定 CultureInfo|
 |[CA1305](../code-quality/ca1305-specify-iformatprovider.md)|必須指定 IFormatProvider|

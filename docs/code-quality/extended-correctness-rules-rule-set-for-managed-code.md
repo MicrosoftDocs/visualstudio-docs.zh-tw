@@ -8,21 +8,22 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 62d11a73d8e8e4510269f73cfb83d946b6ff864b
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 9ec1bdaf421e3976872a3460dc22fecd24b4386b
+ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68924002"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "69585118"
 ---
 # <a name="extended-correctness-rules-rule-set-for-managed-code"></a>適用於 Managed 程式碼的擴充正確性規則規則集
+
 Microsoft Extended 正確性規則規則集會將程式碼分析所報告的邏輯和架構使用錯誤最大化。 額外的強調會放在特定案例, 例如 COM 互通性和行動應用程式。 如果其中一個案例適用于您的專案, 或在您的專案中找出其他問題, 您應該考慮包含這個規則集。
 
-Microsoft Extended 正確性規則規則集包含 Microsoft Basic 正確性規則規則集內的規則。 基本正確性規則包括 Microsoft 最小建議規則規則集中的規則。 如需詳細資訊, 請參閱適用于 managed 程式[代碼的基本正確性規則規則集](../code-quality/basic-correctness-rules-rule-set-for-managed-code.md)和受控[碼的 managed 建議規則規則集](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md)
+Microsoft Extended 正確性規則規則集包含「[基本正確性規則](../code-quality/basic-correctness-rules-rule-set-for-managed-code.md)」規則集中的規則, 其中包含「[受管理的建議規則](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md)」規則集中的規則。
 
 下表描述 Microsoft Extended 正確性規則規則集中的所有規則。
 
-|規則|描述|
+|規則|說明|
 |----------|-----------------|
 |[CA1001](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md)|具有可處置欄位的類型應該為可處置|
 |[CA1009](../code-quality/ca1009-declare-event-handlers-correctly.md)|事件處理常式必須正確宣告|

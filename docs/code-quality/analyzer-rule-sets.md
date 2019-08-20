@@ -10,18 +10,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c0be66559802188503c3b8f8c1c2cf2955dbd8a
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 68410fd43f182873c27e3d5fed742bed7ba8a4ed
+ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69547950"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "69585143"
 ---
 # <a name="rule-sets-for-analyzer-packages"></a>分析器套件的規則集
 
 預先定義的規則集包含在一些 NuGet 分析器套件中。 例如, [CodeAnalysis. FxCopAnalyzers](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/) NuGet analyzer 封裝 (從版本2.6.2 開始) 中所包含的規則集會根據其類別來啟用或停用規則, 例如安全性、命名或效能。 使用規則集可讓您輕鬆快速地只查看與特定規則分類相關的規則違規。
 
-如果您要從舊版的 "FxCop" 分析遷移至以 .NET Compiler Platform 為基礎的程式碼分析, 這些規則集可讓您繼續使用先前使用的相同規則設定。
+如果您要從舊版的 "FxCop" 分析遷移至以 .NET Compiler Platform 為基礎的程式碼分析, 這些規則集可讓您繼續使用類似[先前所用的](rule-set-reference.md)規則設定。
 
 ## <a name="use-analyzer-package-rule-sets"></a>流量分析器套件規則集
 
@@ -58,7 +58,7 @@ ms.locfileid: "69547950"
 
 此外, 封裝中的每個規則類別都有兩個規則集, 例如 [效能] 或 [安全性]。 一個規則集可啟用類別目錄的所有規則, 而一個規則集接受類別目錄中每個規則的預設嚴重性和啟用設定。
 
-[CodeAnalysis. FxCopAnalyzers](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/) NuGet analyzer 套件包含下列分類的規則集, 符合可供舊版分析使用的規則集:
+[CodeAnalysis. FxCopAnalyzers](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/) NuGet analyzer 套件包含下列類別的規則集:
 
 - 設計
 - 文件

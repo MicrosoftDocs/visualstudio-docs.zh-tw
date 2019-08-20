@@ -8,17 +8,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 92b0d6b96adf75acc0b695466dca342f8dca59fa
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: d51796f7575e3dd5766655661927dfd520935c02
+ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68919532"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "69585093"
 ---
 # <a name="basic-design-guideline-rules-rule-set-for-managed-code"></a>適用於 Managed 程式碼的基本設計方針規則規則集
+
 您可以使用 Microsoft 基本的設計指導方針規則規則, 將焦點放在讓您的程式碼更容易瞭解和使用。 如果您的專案包含程式庫程式碼, 或如果您想要針對容易維護的程式碼強制執行最佳作法, 則應包含此規則集。
 
-基本的設計指導方針規則包含 Microsoft 最低 Recommeded 規則規則集中的所有規則。 如需最小規則的清單, 請參閱 managed[建議規則規則集 (適用于受控碼](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md))。
+基本的設計指導方針規則包含「[受管理的建議規則](managed-recommended-rules-rule-set-for-managed-code.md)」規則集中的所有規則。
 
 下表描述 Microsoft 基本設計指導方針規則規則集中的所有規則。
 
