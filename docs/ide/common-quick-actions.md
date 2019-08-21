@@ -11,12 +11,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 3364010ad9470d4431e6407e40b6a6b1cc96476a
-ms.sourcegitcommit: 0f5f7955076238742f2071d286ad8e896f3a6cad
+ms.openlocfilehash: 2ceedf18b936c0b1e8553ceb3bb1fdbc75035dfa
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "68483725"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69551450"
 ---
 # <a name="common-quick-actions"></a>一般的快速動作
 
@@ -159,7 +159,7 @@ public MyMethod()
 
 ### <a name="remove-type-from-default-value-expression"></a>從預設值運算式中移除類型
 
-這個快速動作會從 default 值運算式中移除實值型別，並在編譯器可推斷運算式的類型時使用[ default 常值](/dotnet/csharp/programming-guide/statements-expressions-operators/default-value-expressions#default-literal-and-type-inference)。
+這個快速動作會從 default 值運算式中移除實值型別，並在編譯器可推斷運算式的類型時使用[ default 常值](/dotnet/csharp/language-reference/operators/default#default-literal)。
 
 ```csharp
 // Before

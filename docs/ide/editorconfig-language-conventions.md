@@ -13,12 +13,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 7b88824e6be7dbb216aa14ca9a22fd692474ec2f
-ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
+ms.openlocfilehash: 2231d3637b4a016d1da783d65d4237b9f5d6bab2
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68787426"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69551413"
 ---
 # <a name="language-conventions"></a>語言慣例
 
@@ -38,11 +38,11 @@ Visual Studio 中 EditorConfig 的語言慣例分為兩類：適用於 Visual Ba
 
 您可以針對每個語言慣例，指定一個定義是否有偏好的樣式和偏好樣式使用時機的值。 許多規則接受 `true` 值 (喜歡此樣式) 或 `false` (不喜歡此樣式)；其他則接受像 `when_on_single_line` 或 `never` 這樣的值。 第二個部分、指定 [嚴重性]  的規則。
 
-### <a name="severity"></a>嚴重性
+### <a name="severity"></a>Severity
 
 語言慣例嚴重性可指定要強制執行該樣式的層級。 下表列出可能的嚴重性值及其效果：
 
-嚴重性 | 作用
+Severity | 作用
 :------- | ------
 `none` | 違反這項規則時，不向使用者顯示任何內容。 但程式碼產生功能會以此樣式產生程式碼。 嚴重性為 `none` 的規則永遠不會出現在 [快速動作及重構]  功能表中。 在大部分情況下，這會視為「已停用」或「已忽略」。
 `silent` (和 Visual Studio 2017 15.8 版和更新版本中的 `refactoring`) | 違反這項規則時，不向使用者顯示任何內容。 但程式碼產生功能會以此樣式產生程式碼。 `silent` 嚴重性的規則會影響清理，也會顯示在 [快速動作與重構]  功能表中。
@@ -1435,7 +1435,7 @@ csharp_prefer_simple_default_expression = true:suggestion
 
 #### <a name="csharp_prefer_simple_default_expression"></a>csharp\_prefer\_simple\_default_expression
 
-此樣式規則關於在編譯器能推斷運算式類型時，使用[預設值運算式的 `default` 常值](/dotnet/csharp/programming-guide/statements-expressions-operators/default-value-expressions#default-literal-and-type-inference)。
+此樣式規則關於在編譯器能推斷運算式類型時，使用[預設值運算式的 `default` 常值](/dotnet/csharp/language-reference/operators/default#default-literal)。
 
 |||
 |-|-|
