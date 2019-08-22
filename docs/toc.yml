@@ -350,8 +350,6 @@
                     - name: 總覽
                       displayName: refactoring
                       href: ide/refactoring-in-visual-studio.md
-                    - name: 為所有參數新增 Null 檢查
-                      href: ide/reference/add-null-checks-for-all-parameters.md
                     - name: 變更方法簽章
                       href: ide/reference/change-method-signature.md
                     - name: 將匿名型別轉換為類別
@@ -412,8 +410,10 @@
                       href: ide/reference/convert-var-to-explicit-type.md
                     - name: 使用 Lambda 運算式或區塊主體
                       href: ide/reference/use-block-body-lambda.md
-                    - name: 未使用的值指派，變數及參數
+                    - name: 未使用的值指派、變數及參數
                       href: ide/reference/unused-values-parameters.md
+                    - name: 換行並對齊呼叫鏈結
+                      href: ide/reference/wrap-and-align-call-chains.md
                     - name: 使參數換行、縮排及對齊
                       href: ide/reference/wrap-align-indent-parameters.md
                 - name: 逐步解說：使用時產生程式碼
