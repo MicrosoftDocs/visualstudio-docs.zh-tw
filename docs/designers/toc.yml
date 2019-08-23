@@ -107,7 +107,7 @@
       href: disable-dpi-awareness.md
     - name: 參考資料
       items:
-        - name: System.Windows.Forms API
+        - name: System.Windows.Forms API >>
           href: /dotnet/api/system.windows.forms
     - name: 教學課程
       items:

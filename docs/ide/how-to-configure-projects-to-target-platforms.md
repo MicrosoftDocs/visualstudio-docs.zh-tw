@@ -1,6 +1,6 @@
 ---
 title: 作法：將專案設定成以各種平台為目標
-ms.date: 11/04/2016
+ms.date: 08/16/2019
 ms.technology: vs-ide-compile
 ms.topic: conceptual
 helpviewer_keywords:
@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: faef9f55a88385953a121574f761193cc8c11ea9
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: 5d31d3a4f2e42981df646f9c38e13ee9b5f21122
+ms.sourcegitcommit: 9e5e8b6e9a3b6614723e71cc23bb434fe4218c9c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68416830"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69634914"
 ---
 # <a name="how-to-configure-projects-to-target-platforms"></a>作法：將專案設定成以各種平台為目標
 
@@ -64,9 +64,60 @@ Visual Studio 可讓您將應用程式的目標設定為不同的平台，包括
 
 - 若是 [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] 專案，請參閱 [/clr (Common Language Runtime 編譯)](/cpp/build/reference/clr-common-language-runtime-compilation)。
 
+## <a name="manually-editing-the-project-file"></a>手動編輯專案檔
+
+有時候，針對某些自訂組態您可能需要手動編輯專案檔。 其中一個範例是當您有無法在 IDE 中指定的條件時 (例如針對兩個不同平台使用不同的參考)，如下列範例所示。
+
+### <a name="example-referencing-x86-and-x64-assemblies-and-dlls"></a>範例：參考 x86 和 x64 組件及 DLL
+
+您可能會擁有同時具備 x86 和 x64 版本的 .NET 組件或 DLL。 若要設定您的專案使用這些參考，請先新增參考，然後開啟專案檔並編輯它來新增 `ItemGroup`，其中包含同時參考兩個組態及目標平台的條件。  例如，假設您正在參考的二進位檔是 ClassLibrary1，且針對 Debug 和 Release 組態以及 x86 和 x64 版本有不同的路徑。  然後，請使用四個 `ItemGroup` 元素，其中包含所有設定組合，如下所示：
+
+```xml
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <Platforms>AnyCPU;x64;x86</Platforms>
+  </PropertyGroup>
+
+  <ItemGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <Reference Include="ClassLibrary1">
+      <HintPath>..\..\ClassLibrary1\ClassLibrary1\bin\x64\Debug\netstandard2.0\ClassLibrary1.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64'">
+    <Reference Include="ClassLibrary1">
+      <HintPath>..\..\ClassLibrary1\ClassLibrary1\bin\x64\Release\netstandard2.0\ClassLibrary1.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <Reference Include="ClassLibrary1">
+      <HintPath>..\..\ClassLibrary1\ClassLibrary1\bin\x86\Debug\netstandard2.0\ClassLibrary1.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  
+  <ItemGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86'">
+    <Reference Include="ClassLibrary1">
+      <HintPath>..\..\ClassLibrary1\ClassLibrary1\bin\x86\Release\netstandard2.0\ClassLibrary1.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>
+```
+
+::: moniker range="vs-2017"
+> [!NOTE]
+> 在 Visual Studio 2017 中，您需要先卸載專案，才能編輯專案檔。 若要卸載專案，請以滑鼠右鍵按一下專案節點，然後選擇 [卸載專案]  。 完成編輯後，請儲存您的變更，然後以滑鼠右鍵按一下專案節點並選擇 [重新載入專案]  來重新載入專案。
+::: moniker-end
+
+如需專案檔的詳細資訊，請參閱 [MSBuild 專案檔結構描述參考](/visualstudio/msbuild/msbuild-project-file-schema-reference)。
+
 ## <a name="see-also"></a>另請參閱
 
 - [了解建置平台](../ide/understanding-build-platforms.md)
 - [/platform (C# 編譯器選項)](/dotnet/csharp/language-reference/compiler-options/platform-compiler-option)
 - [64 位元應用程式](/dotnet/framework/64-bit-apps)
 - [Visual Studio IDE 64 位元支援](../ide/visual-studio-ide-64-bit-support.md)
+- [了解專案檔](/aspnet/web-forms/overview/deployment/web-deployment-in-the-enterprise/understanding-the-project-file)

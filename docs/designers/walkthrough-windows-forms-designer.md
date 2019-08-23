@@ -7,12 +7,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e54a0957cb6b63c95c1cd914f7fc3eb72e581ac3
-ms.sourcegitcommit: 6b0503ed8d25454d6e39a8e606910b3fa58cf1d2
+ms.openlocfilehash: 64045221ad9200223264632d4bdbd33ff82d631f
+ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "68981644"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "69585351"
 ---
 # <a name="walkthrough-get-started-with-windows-forms-designer"></a>逐步解說：開始使用 Windows Form 設計工具
 
@@ -309,8 +309,10 @@ DemoCalculator 控制項可以用於其他複合控制項或是表單上。 下�
 
 ## <a name="next-steps"></a>後續步驟
 
-本文已示範如何建構簡易計算機的使用者介面。 若要繼續，您可以實作計算機邏輯來擴充其功能性。 或者，您可以繼續進行不同的教學課程並[使用 Windows Forms 建立圖片檢視器](../ide/tutorial-1-create-a-picture-viewer.md)。
+本文已示範如何建構簡易計算機的使用者介面。 若要繼續，您可以實作計算機邏輯來延伸其功能，然後[使用 ClickOnce 發佈應用程式](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)。 或者，您可以繼續進行不同的教學課程並[使用 Windows Forms 建立圖片檢視器](../ide/tutorial-1-create-a-picture-viewer.md)。
 
 ## <a name="see-also"></a>另請參閱
 
+- [Windows Forms 控制項](/dotnet/framework/winforms/controls/)
 - [適用於 Windows Forms 控制項的協助工具](/dotnet/framework/winforms/controls/providing-accessibility-information-for-controls-on-a-windows-form)
+- [使用 ClickOnce 進行發佈](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)

@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f351ffefae818beb1f51eaa41fbeea1eab81de16
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: e4f238046e671371a1fe83a3f5b9552b3956be8f
+ms.sourcegitcommit: 5b34052a1c7d86179d7898ed532babb2d9dad4a3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68919467"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69490660"
 ---
 # <a name="productivity-tips-for-visual-studio"></a>使用 Visual Studio 提高生產力的祕訣
 
@@ -142,6 +142,7 @@ ms.locfileid: "68919467"
 
 ## <a name="see-also"></a>另請參閱
 
+- [Visual Studio 祕訣和訣竅部落格文章](https://devblogs.microsoft.com/visualstudio/visual-studio-tips-and-tricks/)
 - [常用命令的預設鍵盤快速鍵](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md)
 - [如何：自訂功能表與工具列](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md)
 - [逐步解說：建立簡單的應用程式](../get-started/csharp/tutorial-wpf.md)
