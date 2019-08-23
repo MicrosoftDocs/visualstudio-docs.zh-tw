@@ -7,12 +7,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8280a60f1d265336d427079bdef6612b42ed4330
-ms.sourcegitcommit: 6b0503ed8d25454d6e39a8e606910b3fa58cf1d2
+ms.openlocfilehash: 0df8b7ec5955f472d716af2850d2ab0b776c6552
+ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "68981634"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "69585339"
 ---
 # <a name="windows-forms-designer-overview"></a>Windows Form 設計工具概觀
 
@@ -39,7 +39,7 @@ Visual Studio 中的 Windows Form 設計工具能針對建立以 Windows Forms �
 
 - [Windows Form 概觀](/dotnet/framework/winforms/windows-forms-overview)
 - [Windows Forms 控制項](/dotnet/framework/winforms/controls/)
-- [適用於 Windows Forms 控制項的協助工具](/dotnet/framework/winforms/controls/providing-accessibility-information-for-controls-on-a-windows-form)
 - [Windows Forms 中的使用者輸入](/dotnet/framework/winforms/user-input-in-windows-forms)
 - [Windows Forms 中的資料繫結](/dotnet/framework/winforms/windows-forms-data-binding)
 - [增強 Windows Forms 應用程式](/dotnet/framework/winforms/advanced/)
+- <xref:System.Windows.Forms?displayProperty=fullName> API 參考
