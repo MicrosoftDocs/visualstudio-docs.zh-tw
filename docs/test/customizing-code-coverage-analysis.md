@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 8749cd7757796a1b716b1ac9db086d3155f94694
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5bd7fa0bcff67573e61d40a2172e17620910a421
+ms.sourcegitcommit: 5b34052a1c7d86179d7898ed532babb2d9dad4a3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62965543"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69490620"
 ---
 # <a name="customize-code-coverage-analysis"></a>自訂程式碼涵蓋範圍分析
 
@@ -30,18 +30,38 @@ ms.locfileid: "62965543"
 
 1. 將回合設定檔新增至方案。 在 [方案總管]  中，於方案的捷徑功能表上，選擇 [新增]   > [新增項目]  ，然後選取 [XML 檔案]  。 儲存檔案，其名稱的格式必須是 CodeCoverage.runsettings  。
 
-1. 新增本文結尾處範例檔中的內容，然後遵循下列各節中的描述並根據您自己的需求進行自訂。
+2. 新增本文結尾處範例檔中的內容，然後遵循下列各節中的描述並根據您自己的需求進行自訂。
 
-1. 若要選取回合設定檔，請在 [測試]  功能表上，選擇 [測試設定]   > [選取測試設定檔]  。 若要指定從命令列或組建工作流程中執行測試的回合設定檔，請參閱[使用 .runsettings  檔案設定單元測試](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md#specify-a-run-settings-file)。
+::: moniker range="vs-2017"
+
+3. 若要選取回合設定檔，請在 [測試]  功能表上，選擇 [測試設定]   > [選取測試設定檔]  。 若要指定從命令列或組建工作流程中執行測試的回合設定檔，請參閱[使用 .runsettings  檔案設定單元測試](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md#specify-a-run-settings-file)。
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+3. 若要在 [測試總管]  中選取執行設定檔，請選取 [設定]  按鈕上的箭頭，然後選取 [選取設定檔]  。 若要指定從命令列或組建工作流程中執行測試的回合設定檔，請參閱[使用 .runsettings  檔案設定單元測試](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md#specify-a-run-settings-file)。
+
+::: moniker-end
 
    當您選取 [分析程式碼涵蓋範圍]  時，從回合設定檔讀取組態資訊。
 
    > [!TIP]
    > 當您執行測試或更新程式碼時，並不會自動隱藏之前的程式碼涵蓋範圍結果及程式碼著色。
 
-若要開啟和關閉自訂設定，請在 [測試]   > [測試設定]  功能表中取消選取或選取檔案。
+::: moniker range="vs-2017"
+
+若要關閉和開啟自訂設定，請在 [測試]  > [測試設定]  功能表中取消選取或選取檔案。
 
 ![具有自訂設定檔的測試設定功能表](../test/media/codecoverage-settingsfile.png)
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+若要關閉和開啟自訂設定，請在 [測試總管]  中的 [設定]  功能表上取消選取或選取檔案。
+
+::: moniker-end
 
 ### <a name="specify-symbol-search-paths"></a>指定符號搜尋路徑
 
@@ -89,7 +109,7 @@ ms.locfileid: "62965543"
 
 包含和排除節點使用規則運算式。 如需詳細資訊，請參閱[在 Visual Studio 中使用規則運算式](../ide/using-regular-expressions-in-visual-studio.md)。 規則運算式與萬用字元不同。 特別之處在於：
 
-- **.\\** * 會比對任何字元的字串
+- **.\*** 會比對任何字元的字串
 
 - **\\.** 會比對點 "."
 
