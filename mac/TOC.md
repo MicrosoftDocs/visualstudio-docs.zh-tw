@@ -31,6 +31,7 @@
 # 原始檔編輯器
 ## [編輯器功能](source-editor.md)
 ## [重構](refactoring.md)
+## [IntelliSense](intellisense.md)
 ## [註解](comments.md)
 ## [編輯器的行為](editor-behavior.md)
 ## [工作註解](task-comments.md)
