@@ -22,6 +22,7 @@
 #### [訂閱者資料的匿名](anonymization.md)
 ### [訂用帳戶入口網站概觀](using-the-subscriber-portal.md)
 ### [管理您的訂閱](manage-vs-subscriptions.md)
+### [連絡您的訂用帳戶管理員](contact-my-admin.md)
 ### 優點
 #### 工具
 ##### [Azure 點數](vs-azure.md)
@@ -58,17 +59,22 @@
 #### [尋找及索取金鑰](find-keys.md)
 #### [網際網路示範](internet-demos.md)
 ## 系統管理員
-### [系統管理員責任](admin-responsibilities.md)
+### 系統管理員責任
+#### [系統管理員責任](admin-responsibilities.md)
 #### [生產階段前清查](admin-inventory.md)
 #### [管理大型小組及外部承攬人](manage-teams.md)
 #### [追蹤使用者指派及處理訂單](assignments-orders.md)
-### 將組織上線
-#### [Open 和 Open License 移轉](open-migration.md)
+### 存取管理入口網站
+#### [大量授權](volume-license.md)
 #### [MPSA](mpsa.md)
 #### [雲端訂用帳戶](cloud-admin.md)
-#### [上線影片](https://youtu.be/plSu6fpi7UI)
+#### [為客戶進行管理的合作夥伴](open-migration.md)
+#### [影片教學課程：存取管理入口網站](https://youtu.be/plSu6fpi7UI)
 ### 使用管理入口網站
+#### [進階管理員與系統管理員](admin-roles.md)
+#### [設定合約喜好設定](admin-prefs.md)
 #### [概觀](using-admin-portal.md)
+#### [影片教學課程：使用管理入口網站](https://www.youtube.com/watch?v=XG-E-IDjA-w&list=PLReL099Y5nReJhZ6o8CQFPSBgzGCHX99_&index=3&t=0s)
 #### 指派訂用帳戶
 ##### [新增單一使用者](assign-license.md)
 ##### [新增多個使用者](assign-license-bulk.md)
@@ -81,7 +87,7 @@
 #### [過期的訂用帳戶](handle-expired-license.md)
 #### [使用別名的訂閱者](aliasing.md)
 #### [具有個人電子郵件登入的訂閱者](personal-email-sign-ins.md)
-### [管理搭配 GitHub Enterprise 的 Visual Studio](assign-github.md)
+#### [管理搭配 GitHub Enterprise 的 Visual Studio](assign-github.md)
 ## 資源
 ### [Visual Studio 授權技術白皮書](https://aka.ms/vslicensing)
 ### [比較訂閱選項和定價](https://visualstudio.microsoft.com/vs/pricing)
