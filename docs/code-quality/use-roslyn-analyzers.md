@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6362d3f14065aaf9661e85266753642e4201ca48
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 5c5af5c98be92e52c356e0f20eaf437f66878690
+ms.sourcegitcommit: 8a699df154464387f327691dce507d7c3d0e2aab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69548033"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "70060439"
 ---
 # <a name="use-code-analyzers"></a>使用程式碼分析器
 
@@ -62,6 +62,18 @@ ms.locfileid: "69548033"
 
 如果您將分析器[安裝](../code-quality/install-roslyn-analyzers.md)為 NuGet 套件, 您可以設定分析器規則或*診斷*的嚴重性。 下表顯示診斷的嚴重性選項:
 
+
+::: moniker range="vs-2019"
+|Severity|組建時間行為|編輯器行為|
+|-|-|-|
+|Error|違規在**錯誤清單**和命令列組建輸出中會顯示為*錯誤*, 並導致組建失敗。|有問題的程式碼會加上紅色波浪線, 並在捲軸中以小紅色方塊標示。|
+|警告|違規在**錯誤清單**和命令列組建輸出中會顯示為*警告*, 但不會導致組建失敗。|有問題的程式碼會加上綠色的彎曲, 並以捲軸中的小綠色方塊標示。|
+|建議|違規會在**錯誤清單**中顯示為*訊息*, 而不是在命令列組建輸出中。|有問題的程式碼會加上灰色的彎曲, 並以捲軸中的小型灰色方塊標示。|
+|安靜|使用者看不到。|使用者看不到。 不過, 診斷會回報給 IDE 診斷引擎。|
+|無|已完全隱藏。|已完全隱藏。|
+::: moniker-end
+
+::: moniker range="< vs-2019"
 |Severity|組建時間行為|編輯器行為|
 |-|-|-|
 |Error|違規在**錯誤清單**和命令列組建輸出中會顯示為*錯誤*, 並導致組建失敗。|有問題的程式碼會加上紅色波浪線, 並在捲軸中以小紅色方塊標示。|
@@ -69,6 +81,7 @@ ms.locfileid: "69548033"
 |資訊|違規會在**錯誤清單**中顯示為*訊息*, 而不是在命令列組建輸出中。|有問題的程式碼會加上灰色的彎曲, 並以捲軸中的小型灰色方塊標示。|
 |Hidden|使用者看不到。|使用者看不到。 不過, 診斷會回報給 IDE 診斷引擎。|
 |無|已完全隱藏。|已完全隱藏。|
+::: moniker-end
 
 此外, 您可以將規則設定為**預設值**, 以「重設」其嚴重性。 每個診斷都有預設的嚴重性, 可在 [**屬性**] 視窗中看到。
 
