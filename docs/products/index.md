@@ -6,12 +6,12 @@ description: 探索 Visual Studio 產品系列。
 ms.topic: landing-page
 ms.date: 07/02/2019
 searchScope: []
-ms.openlocfilehash: 41dd59cf67be1a476707a7ed3a18a263132fbfca
-ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
+ms.openlocfilehash: 82cff703b1ef538267c0d1b34d82111576cf66da
+ms.sourcegitcommit: 8a699df154464387f327691dce507d7c3d0e2aab
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/05/2019
-ms.locfileid: "67586779"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "70060431"
 ---
 <!-- markdownlint-disable MD033 -->
 <div id="main" class="v2">
@@ -82,7 +82,7 @@ ms.locfileid: "67586779"
                                 </a>
                             </li>
                             <li>
-                                <a href="/appcenter/" title="Visual Studio 應用程式中心">
+                                <a href="/appcenter/" title="Visual Studio App Center">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -119,49 +119,10 @@ ms.locfileid: "67586779"
                                     </div>
                                 </a>
                             </li>
-                            <li>
-                                <a href="/azure/devops/" title="Azure DevOps Services">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage">
-                                                        <img data-scaleimage="./images/vs-team-services.svg" src="./images/vs-team-services.svg" alt="Azure DevOps Services - formerly Visual Studio Team Services (VSTS)" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Azure DevOps Services</h3>
-                                                    <p>透過敏捷式專案工具和報告來提升團隊的生產力。 使用新式 CI/CD 工具從原始檔控制建置、測試並部署專案。</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/tfs/" title="Azure DevOps Server">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage">
-                                                        <img data-scaleimage="./images/vs-team-services.svg" src="./images/vs-team-services.svg" alt="Azure DevOps Server - formerly Team Foundation Server (TFS)" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Azure DevOps Server</h3>
-                                                    <p>安裝、升級和管理您的內部部署。</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
                         </ul>
                     </li>
                 </ul>
             </li>
         </ul>
-        <p>Visual Studio Team Services 已改稱為 Azure DevOps Services，Team Foundation Server (TFS) 則重新命名為 Azure DevOps Server。 請參閱<a href="/azure/devops/user-guide/what-happened-vsts?view=vsts">Visual Studio Team Services 發生什麼事？</a>與 <a href="/tfs/server/tfs-is-now-azure-devops-server">Team Foundation Server 現在稱為 Azure DevOps Server</a>。</p>
     </div>
 </div>
