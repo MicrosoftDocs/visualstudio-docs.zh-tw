@@ -1,20 +1,20 @@
 ---
-title: Open 和 Open License 訂單管理 | Microsoft Docs
+title: 為客戶管理 Visual Studio 訂用帳戶的合作夥伴 | Microsoft Docs
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/23/2019
+ms.date: 08/21/2019
 ms.topic: conceptual
-description: 了解如何使用 Open 和 Open License 程式來管理訂閱的訂單。
-ms.openlocfilehash: ecbd5c4b861683742ec8b9e3d9fca571932ae887
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
+description: 了解合作夥伴如何為其客戶管理 Visual Studio 訂用帳戶。
+ms.openlocfilehash: 8a1e0bcaac4cc66f0c1682010102a657c47e770b
+ms.sourcegitcommit: c90a998716b3dfa614dedc61a1bea515364efbec
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68605834"
+ms.lasthandoff: 08/23/2019
+ms.locfileid: "70000904"
 ---
-# <a name="open-and-open-license-management-for-new-orders"></a>新訂單的 Open 和 Open License 管理
-若要在 [Visual Studio 訂用帳戶系統管理入口網站](https://manage.visualstudio.com)中管理訂用帳戶，夥伴和客戶需要遵循一些步驟。 程序將會：
+# <a name="partners-managing-subscriptions-on-behalf-of-customers"></a>代替客戶管理訂用帳戶的合作夥伴
+若要在 [Visual Studio 訂用帳戶管理入口網站](https://manage.visualstudio.com)中管理訂用帳戶，他們需要遵循一些步驟。 程序將會：
 - 夥伴將代表客戶下單，並輸入客戶的公司電子郵件地址。
 - 客戶將會收到一則通知，邀請他們指派系統管理員並在 [Visual Studio 訂用帳戶管理入口網站](https://manage.visualstudio.com)中存取其訂用帳戶。
 - 若要讓夥伴代表客戶管理訂用帳戶，他們需要在系統管理入口網站上註冊。 下面列出取得存取權的各種方式 (與 add-open 程序類似)。
@@ -38,6 +38,7 @@ ms.locfileid: "68605834"
 
 > [!NOTE]
 > 客戶將收到一封通知電子郵件，通知他們已將夥伴新增至 Open License。 他們可以選擇移除夥伴的存取權。
+
 
 ## <a name="new-partners-visiting-the-visual-studio-subscriptions-administration-portal-directly"></a>直接瀏覽 Visual Studio 訂用帳戶管理入口網站的新夥伴
 此情節適用於下列新夥伴：這些夥伴已下新 Open License 訂單，但尚未在 [VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx) 上註冊，並直接前往 [Visual Studio 訂用帳戶管理入口網站](https://manage.visualstudio.com)。  請依照下列步驟：

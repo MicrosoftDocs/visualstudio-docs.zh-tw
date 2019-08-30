@@ -1,8 +1,10 @@
 ---
 title: Visual Studio 的協助工具功能
 description: 深入了解協助工具功能，並利用該功能協助讓 Windows 作業系統和 Visual Studio 開發人員套件更便於每個人存取，包括行動不便的人士。
-ms.date: 08/22/2017
+ms.date: 08/23/2019
 ms.topic: conceptual
+ms.prod: visual-studio-windows
+ms.technology: vs-ide-general
 helpviewer_keywords:
 - Visual Studio, accessibility
 - accessibility [Visual Studio]
@@ -12,17 +14,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 342d3288d647018af7faf42ab3e669bb8a62594f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6b91cc92abca856e3a23e7b1154e378c99923fcf
+ms.sourcegitcommit: 8a699df154464387f327691dce507d7c3d0e2aab
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62793153"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "70060379"
 ---
 # <a name="accessibility-features-of-visual-studio"></a>Visual Studio 的協助工具功能
-
-> [!TIP]
-> 若要深入了解最新的協助工具更新，請參閱 [Visual Studio 2017 15.3 版中的協助工具改善](https://devblogs.microsoft.com/visualstudio/accessibility-improvements-in-visual-studio-2017-version-15-3/) \(英文\) 部落格文章。
 
 除了 Windows 中的協助工具功能和公用程式之外，下列功能可讓行動不便者更方便存取 Visual Studio：
 
@@ -39,9 +38,6 @@ ms.locfileid: "62793153"
 > [!NOTE]
 > 本主題適用於 Windows 上的 Visual Studio。 針對 Visual Studio for Mac，請參閱 [Visual Studio for Mac 的協助工具](/visualstudio/mac/accessibility)。
 
-> [!IMPORTANT]
-> 本節中的資訊僅適用於美國地區的 Microsoft 產品授權使用者。 如果您在美國以外的地區取得本產品，您可以使用軟體套件隨附的子公司資訊卡，或者您可以前往 [Microsoft 支援服務的 [與我們連絡]](http://support.microsoft.com/ContactUs) 頁面，並按一下 [尋找世界各地的 Microsoft 分公司 ] 連結 (靠近頁面底部)。 此頁面提供 Microsoft 支援服務的電話號碼和地址清單。 您可以連絡當地分公司，以了解當地是否有提供本節所描述的產品和服務類型。 協助工具資訊也有提供其他語言，包括日文及法文。
-
 如需詳細資訊，請參閱下列主題：
 
 - [如何：設定 IDE 協助工具選項](../../ide/reference/how-to-set-ide-accessibility-options.md)
@@ -53,6 +49,16 @@ ms.locfileid: "62793153"
 - [協助工具祕訣和訣竅](../../ide/reference/accessibility-tips-and-tricks.md)
 
 - [如何：變更字型與色彩](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)
+
+> [!IMPORTANT]
+> 此頁面上資訊可能僅適用於美國地區的 Microsoft 產品授權使用者。 如果您在美國以外取得本產品，請瀏覽 [Microsoft 協助工具](http://go.microsoft.com/fwlink/?LinkId=8431)網站，以取得 Microsoft 支援服務電話號碼及地址的清單。 您可以連絡當地分公司，以了解當地是否有提供此頁面所描述的產品和服務類型。 協助工具資訊也提供其他語言版本。
+
+::: moniker range="vs-2017"
+
+> [!TIP]
+> 若要深入了解最新的協助工具更新，請參閱 [Visual Studio 2017 15.3 版中的協助工具改善](https://devblogs.microsoft.com/visualstudio/accessibility-improvements-in-visual-studio-2017-version-15-3/) \(英文\) 部落格文章。
+
+::: moniker-end
 
 ## <a name="see-also"></a>另請參閱
 

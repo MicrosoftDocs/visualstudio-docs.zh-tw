@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 01ccad0c1cdcde27d1d43b832ce7e4ca4da7b716
-ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
+ms.openlocfilehash: 5c3456ab48822873fb51ad8614ff9a6dd5f07598
+ms.sourcegitcommit: f42b5318c5c93e2b5ecff44f408fab8bcdfb193d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68461595"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "69976705"
 ---
 # <a name="how-to-sign-application-and-deployment-manifests"></a>作法：簽署應用程式與部署資訊清單
 
@@ -47,7 +47,7 @@ ms.locfileid: "68461595"
      [選取憑證]  對話方塊隨即出現，並顯示 Windows 憑證存放區的內容。
 
     > [!TIP]
-    > 如果您按一下 [按一下這裡檢視憑證屬性]  ，則會顯示 [憑證詳細資料]  對話方塊。 這個對話方塊包含憑證的詳細資訊與其他選項。 您可以按一下 [憑證]  檢視其他說明資訊。
+    > 如果您按一下 [按一下這裡檢視憑證屬性]  ，則會顯示 [憑證詳細資料]  對話方塊。 這個對話方塊包含憑證的詳細資訊與其他選項。 按一下 [憑證]  以檢視其他說明資訊。
 
 3. 選取您想要用來簽署資訊清單的憑證。
 
@@ -68,7 +68,10 @@ ms.locfileid: "68461595"
 
      [輸入密碼以開啟檔案]  對話方塊隨即出現。 (如果 *.pfx* 檔案是儲存在您的 Windows 憑證存放區，或未受密碼保護，系統就不會提示您輸入密碼)。
 
-4. 輸入密碼以存取金鑰檔，然後按 **ENTER**。
+4. 輸入密碼以存取金鑰檔，然後選取 **Enter**。
+
+> [!NOTE]
+> *.pfx* 檔案不能包含憑證鏈結資訊。 如果包含，則會發生下列匯入錯誤：**找不到用來解密的憑證和私密金鑰**。
 
 ## <a name="sign-using-a-test-certificate"></a>使用測試憑證簽署
 

@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1d012c0902aa82eb057f9d69c0b85b13262e847a
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: 97ecddfa317eb522a8ce29a53482df5581912dad
+ms.sourcegitcommit: 673b9364fc9a96b027662dcb4cf5d61cab60ef11
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66747615"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "69891238"
 ---
 # <a name="user-permissions-and-visual-studio"></a>使用者權限和 Visual Studio
 
@@ -40,7 +40,8 @@ ms.locfileid: "66747615"
 ||在 XAML 瀏覽器應用程式 (XBAP) 的區域中進行偵錯。|[WPF 主應用程式 (PresentationHost.exe)](/dotnet/framework/wpf/app-development/wpf-host-presentationhost-exe)|
 ||使用模擬器來對 Microsoft Azure 雲端服務專案進行偵錯。|[在 Visual Studio 中針對雲端服務進行偵錯](/azure/vs-azure-tools-debug-cloud-services-virtual-machines)|
 ||設定遠端偵錯的防火牆。|[遠端偵錯](../debugger/remote-debugging.md)|
-|效能工具|對應用程式進行程式碼剖析。|[效能分析的初級開發人員指南](../profiling/beginners-guide-to-performance-profiling.md)|
+|效能工具|附加至提升權限的應用程式。|[效能分析的初級開發人員指南](../profiling/beginners-guide-to-performance-profiling.md)|
+||使用 GPU 分析工具。|[GPU 分析](../profiling/gpu-usage.md)|
 |部署|將 Web 應用程式部署到本機電腦上的 Internet Information Services (IIS)。|[使用 Visual Studio 部署 ASP.NET Web 應用程式](/aspnet/web-forms/overview/older-versions-getting-started/deployment-to-a-hosting-provider/)|
 
 ## <a name="run-visual-studio-as-an-administrator"></a>以系統管理員身分執行 Visual Studio

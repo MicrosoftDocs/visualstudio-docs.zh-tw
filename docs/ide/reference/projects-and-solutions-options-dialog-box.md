@@ -13,16 +13,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 37d31f76a448933bb3809cd609ebd355c8e0a04b
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
+ms.openlocfilehash: 31d829a668a2c9690333315c30904623187fe51d
+ms.sourcegitcommit: f42b5318c5c93e2b5ecff44f408fab8bcdfb193d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68605946"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "69976743"
 ---
 # <a name="options-dialog-box-projects-and-solutions--general"></a>選項對話方塊：專案和解決方案 \> 一般
 
-您可以使用此頁面定義與專案和解決方案有關的 Visual Studio 行為。 若要存取這些選項，請選取 [工具]   > [選項]  來展開 [專案和解決方案]  ，然後選取 [一般]  。
+您可以使用此頁面定義與專案和解決方案有關的 Visual Studio 行為。 若要存取這些選項，請選取 [工具]   > [選項]  來展開 [專案和方案]  ，然後選取 [一般]  。
 
 下列選項位於 [一般]  頁面上。
 
@@ -70,14 +70,34 @@ ms.locfileid: "68605946"
 
 ## <a name="reopen-documents-on-solution-load"></a>在解決方案載入時重新開啟文件
 
-**已在 Visual Studio 2017 15.8 版引進**
-
 選取此選項時，會在開啟解決方案時，自動開啟上次關閉此解決方案時處於開啟狀態的文件。
 
 重新開啟特定類型的檔案或設計工具可能會導致方案載入延遲。 如果您不想要還原解決方案先前的內容，請將此選項取消選取以[提升解決方案載入效能](../../ide/visual-studio-performance-tips-and-tricks.md#disable-automatic-file-restore)。
 
+::: moniker range=">=vs-2019"
+
+## <a name="restore-solution-explorer-project-hierarchy-state-on-solution-load"></a>還原方案載入時的 [方案總管] 專案階層狀態
+
+選取時，會根據上次開啟方案時節點為展開或摺疊，來還原 [方案總管] 中的節點狀態。 取消選取此選項可減少大型方案的方案載入時間。
+
+> [!TIP]
+> 如果您停用此選項，您可以選取 [方案總管]  工具列中的 [與使用中文件同步]  ，輕鬆地巡覽至 [方案總管] 中的使用中文件。
+>
+> ![[方案總管] 中的 [與使用中文件同步]](media/sync-active-document.png)
+
+## <a name="open-sdk-style-project-files-with-double-click-or-the-enter-key"></a>按兩下或按 Enter 鍵以開啟 SDK 樣式專案檔
+
+選取此選項時，若在 [方案總管] 中按兩下 SDK 樣式專案節點，或是選取它，然後按 **Enter** 鍵，專案檔 (例如 \*.csproj 檔案) 就會在編輯器中以 XML 的形式開啟。 取消選取時，在 [方案總管] 中按兩下 SDK 樣式專案節點或選取它，然後按 **Enter**，只會有展開或摺疊節點的效果。
+
+如果您未選取此選項並想要編輯 SDK 樣式專案檔，請在 [方案總管] 中以滑鼠右鍵按一下專案節點，然後選取 [編輯專案檔]  。 針對其他專案類型，您必須先卸載專案，才能在 Visual Studio 中進行編輯。
+
+> [!TIP]
+> 「SDK 樣式專案」  或[專案 SDK](../../msbuild/how-to-use-project-sdk.md) 具有 MSBuild 15.0 所引進較新且更簡化的專案檔格式。 SDK 樣式專案包含 `Project` 元素的 `Sdk` 屬性，例如 `<Project Sdk="Microsoft.NET.Sdk">`。 例如，當您從其中一個 Visual Studio 範本建立新的 .NET Core 專案時，Visual Studio 會建立 SDK 樣式專案。
+
+::: moniker-end
+
 ## <a name="see-also"></a>另請參閱
 
 - [選項對話方塊：專案和解決方案 \> 位置](projects-solutions-locations-options.md)
-- [選項對話方塊、專案和解決方案、建置並執行](../../ide/reference/options-dialog-box-projects-and-solutions-build-and-run.md)
-- [選項對話方塊、專案和解決方案、Web 專案](../../ide/reference/options-dialog-box-projects-and-solutions-web-projects.md)
+- [選項對話方塊、專案和方案、建置並執行](../../ide/reference/options-dialog-box-projects-and-solutions-build-and-run.md)
+- [選項對話方塊、專案和方案、Web 專案](../../ide/reference/options-dialog-box-projects-and-solutions-web-projects.md)

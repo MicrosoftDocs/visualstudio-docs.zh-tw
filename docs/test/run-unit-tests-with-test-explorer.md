@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a3839a28ce0c37c5ccf43ca1f8ddba1ecd52365
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: d18f510b3b30207079b644e540d8b5db22609f97
+ms.sourcegitcommit: 673b9364fc9a96b027662dcb4cf5d61cab60ef11
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68918176"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "69891328"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>使用測試總管執行單元測試
 
@@ -96,7 +96,7 @@ Visual Studio 2015 包含 Managed 程式碼和機器碼皆適用的 Microsoft �
 
 ## <a name="view-test-results"></a>檢視測試結果
 
-當您執行、寫入、重新執行您的測試時，測試總管會顯示 [失敗的測試]  、[通過的測試]  、[略過的測試]  和 [未執行的測試]  群組中的結果。 在測試總管底部的詳細資料窗格會顯示測試回合的摘要。
+當您執行、寫入、重新執行您的測試時，測試總管會顯示 [失敗的測試]  、[通過的測試]  、[略過的測試]  和 [未執行的測試]  群組中的結果。 在 [測試總管] 底部或一側的詳細資料窗格會顯示測試回合的摘要。
 
 ### <a name="view-test-details"></a>檢視測試詳細資料
 
@@ -181,7 +181,7 @@ Microsoft Managed 程式碼單元測試架構中，您可在  <xref:Microsoft.Vi
 |-|-----------------|
 |<xref:Microsoft.VisualStudio.TestTools.UnitTesting.OwnerAttribute>|擁有者分類是由單元測試架構所定義，會要求您提供擁有者的字串值。|
 |<xref:Microsoft.VisualStudio.TestTools.UnitTesting.PriorityAttribute>|優先權分類是由單元測試架構所定義，會要求您提供優先權的整數值。|
-|<xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute>|TestCategory 屬性可讓您提供沒有值的分類。 TestCategory 屬性定義的分類也可以是 TestProperty 屬性的分類。|
+|<xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute>|TestCategory 屬性可讓您提供沒有值的分類。|
 |<xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute>|TestProperty 屬性可讓您定義特性分類/值組。|
 
 
@@ -215,7 +215,7 @@ Microsoft Managed 程式碼單元測試架構中，您可在  <xref:Microsoft.Vi
 
 ![播放清單會在個別的測試總管索引標籤中開啟](../test/media/vs-2019/test-explorer-playlist-tab-16-2.png)
 
-**若要將測試加入播放清單**，請在測試總管中選擇一或多項測試。 按一下滑鼠右鍵，然後選擇 [新增到播放清單]   > [新增播放清單]  。
+**若要建立播放清單**，請在測試總管中選擇一或多項測試。 按一下滑鼠右鍵，然後選擇 [新增到播放清單]   > [新增播放清單]  。
 
 **若要開啟播放清單**，選擇 Visual Studio 工具列中的播放清單圖是，然後從功能表中選取先前儲存的播放清單檔案。
 ::: moniker-end
@@ -236,7 +236,7 @@ Microsoft Managed 程式碼單元測試架構中，您可在  <xref:Microsoft.Vi
 
 * 若要變更資料行的順序，請按一下資料行標頭，然後將其向左或右拖曳。
 
-* 若要排序資料行，請按一下資料行標頭。 並非所有資料行都可排序。
+* 若要排序資料行，請按一下資料行標頭。 並非所有資料行都可排序。 您也可以按住 **Shift** 鍵，然後按一下其他的資料行標頭，依次要資料行進行排序。
 
   ![資料行排序](../test/media/vs-2019/test-explorer-sort-column-16-2.png)
 ::: moniker-end
@@ -253,7 +253,7 @@ Microsoft Managed 程式碼單元測試架構中，您可在  <xref:Microsoft.Vi
 
 2. 選擇新的準則。
 
-3. 在引號之間輸入篩選值。
+3. 在引號之間輸入篩選值。 如果您想要搜尋完全相符的字串，而不是包含的相符項目，請使用等號 (=)，而不是冒號 (:)。
 
 ::: moniker range="vs-2017"
 ![在 [測試總管] 中篩選測試](../test/media/ute_filtertestlist.png)
@@ -265,15 +265,28 @@ Microsoft Managed 程式碼單元測試架構中，您可在  <xref:Microsoft.Vi
 > [!NOTE]
 > 搜尋是區分大小寫且比對指定字串與準則值的任何部分。
 
+::: moniker range="vs-2017"
 |限定詞|說明|
 |-|-----------------|
 |**特性**|在特性分類和值中搜尋相符項目。 指定特性分類和值的語法是由單元測試架構所定義。|
 |**Project**|在測試專案名稱中搜尋相符項目。|
 |**錯誤訊息**|在失敗的判斷提示所傳回之使用者定義錯誤訊息中搜尋相符項目。|
 |**檔案路徑**|在測試來源檔的完整檔案名稱中搜尋相符項目。|
-|**完整名稱**|在測試命名空間、類別和方法的完整檔案名稱中搜尋相符項目。|
+|**完整名稱**|在測試命名空間、類別和方法的完整名稱中搜尋相符項目。|
 |**輸出**|搜尋寫入標準輸出 (stdout) 或標準錯誤 (stderr) 的使用者定義錯誤訊息。 指定輸出訊息的語法是由單元測試架構所定義。|
 |**結果**|在 [測試總管] 分類名稱中搜尋相符項目：[失敗的測試]  、[略過的測試]  、[成功的測試]  。|
+::: moniker-end
+::: moniker range=">=vs-2019"
+|限定詞|說明|
+|-|-----------------|
+|**狀態**|在 [測試總管] 分類名稱中搜尋相符項目：[失敗的測試]  、[略過的測試]  、[成功的測試]  。|
+|**特性**|在特性分類和值中搜尋相符項目。 指定特性分類和值的語法是由單元測試架構所定義。|
+|**完整名稱**|在測試命名空間、類別和方法的完整名稱中搜尋相符項目。|
+|**Project**|在測試專案名稱中搜尋相符項目。|
+|**目標 Framework**|在 [測試總管] 分類名稱中搜尋相符項目：[失敗的測試]  、[略過的測試]  、[成功的測試]  。|
+|**命名空間**|在測試命名空間中搜尋相符項目。|
+|**類別**|在測試類別名稱中搜尋相符項目。|
+::: moniker-end
 
 若要排除篩部分選條件的結果，請使用下列語法：
 

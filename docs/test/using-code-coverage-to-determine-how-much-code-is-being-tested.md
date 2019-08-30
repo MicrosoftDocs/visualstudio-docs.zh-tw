@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a25fbffa21a7caeab1cf5910e1da95d7fba09e5
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: f6aa9cb62bc0ae956a85acd75d1a9615a2283133
+ms.sourcegitcommit: f42b5318c5c93e2b5ecff44f408fab8bcdfb193d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68416453"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "69976771"
 ---
 # <a name="use-code-coverage-to-determine-how-much-code-is-being-tested"></a>使用程式碼涵蓋範圍來決定所測試的程式碼數量
 
@@ -36,7 +36,12 @@ ms.locfileid: "68416453"
 
 ## <a name="to-analyze-code-coverage-on-unit-tests-in-test-explorer"></a>在 [測試總管] 中分析單元測試的程式碼涵蓋範圍
 
+::: moniker range="vs-2017"
 1. 在 [測試]  功能表中選擇 [分析程式碼涵蓋範圍]  。
+::: moniker-end
+::: moniker range=">=vs-2019"
+1. 在 [測試總管]  中，從 [執行]  功能表選取 [分析程式碼涵蓋範圍]  。
+::: moniker-end
 
 2. 若要查看已執行的程式碼行，請選擇 ![顯示程式碼涵蓋範圍著色圖示](../test/media/codecoverage-showcoloringicon.png) **顯示程式碼涵蓋範圍著色**。
 
@@ -103,7 +108,7 @@ ms.locfileid: "68416453"
 > [!TIP]
 > 排除類別並不會排除其衍生類別。
 
-例如︰
+例如：
 
 ```csharp
 using System.Diagnostics.CodeAnalysis;
@@ -271,7 +276,7 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
 
    ::: moniker-end
 
-2. 在命令提示字元中，執行下列命令：
+2. 在命令提示字元中執行下列命令：
 
    ```shell
    vstest.console.exe MyTestAssembly.dll /EnableCodeCoverage

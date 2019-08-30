@@ -10,16 +10,16 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7442eebcd566470616382367fbdaad5cce774155
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 90035e99c13484bd1b49e59350489ed1090b5f4e
+ms.sourcegitcommit: 673b9364fc9a96b027662dcb4cf5d61cab60ef11
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62950351"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "69891273"
 ---
 # <a name="template-parameters"></a>範本參數
 
-將範本具現化時，您可以取代範本中的值。 若要設定這項功能，請使用「範本參數」。 範本參數可以用來取代範本中的值，例如類別名稱和命名空間。 當使用者新增項目或專案取代這些參數時，範本精靈會在背景中執行。
+將範本具現化時，您可以取代範本中的值。 若要設定這項功能，請使用「範本參數」  。 範本參數可以用來取代範本中的值，例如類別名稱和命名空間。 當使用者新增項目或專案取代這些參數時，範本精靈會在背景中執行。
 
 ## <a name="declare-and-enable-template-parameters"></a>宣告和啟用範本參數
 
@@ -57,7 +57,8 @@ ms.locfileid: "62950351"
 |projectname|建立專案時，使用者所提供的名稱。|
 |registeredorganization|來自 HKLM\Software\Microsoft\Windows NT\CurrentVersion\RegisteredOrganization 的登錄機碼值。|
 |rootnamespace|目前專案的根命名空間。 這個參數只適用於項目範本。|
-|safeitemname|與 `itemname` 相同，但移除了所有不安全的字元和空格。|
+|safeitemname|與 `itemname` 相同，但所有不安全的字元和空格都會以底線字元取代。|
+|safeitemrootname|與 `safeitemname` 相同。|
 |safeprojectname|使用者在建立專案時時提供的名稱，但已移除所有不安全的字元和空格。|
 |時間|目前的時間，格式為 DD/MM/YYYY 00:00:00。|
 |SpecificSolutionName|方案名稱。 若已核取 [建立方案目錄]，則 `SpecificSolutionName` 具有方案名稱。 若未核取 [建立方案目錄]，`SpecificSolutionName` 則為空白。|

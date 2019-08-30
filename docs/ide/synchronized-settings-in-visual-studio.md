@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f567e07ea085844672f04194e4a4ffc5a9318e4
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 6f670449be9b416d1c54bc83379bae4a6733d932
+ms.sourcegitcommit: f42b5318c5c93e2b5ecff44f408fab8bcdfb193d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67824806"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "69976730"
 ---
 # <a name="synchronize-visual-studio-settings-across-multiple-computers"></a>跨多部電腦同步處理 Visual Studio 設定
 
@@ -71,7 +71,7 @@ Visual Studio 的同步設定預設為開啟。 您可以移至 [工具]   > [�
 
 1. 升級至 Visual Studio 2017 15.3 版或更新版本。
 
-2. 使用 [匯入\匯出設定精靈]  將您所有現有的設定匯出至 *%localappdata%\Microsoft\VisualStudio\15.0_xxxxxxxx* 資料夾外的某個位置。
+2. 使用 [匯入和匯出設定精靈]  將您所有現有設定匯出至 *%localappdata%\Microsoft\VisualStudio\15.0_xxxxxxxx* 資料夾外的某個位置。
 
 3. 開啟 [VS 2017 的開發人員命令提示字元]  ，並執行 `devenv /resetuserdata`。
 
@@ -84,6 +84,10 @@ Visual Studio 的同步設定預設為開啟。 您可以移至 [工具]   > [�
 您無法於不同 Visual Studio 並存安裝之間共用特定設定 (例如工具視窗配置)。 *%userprofile%\Documents\Visual Studio 2019\Settings* 中的 *CurrentSettings.vssettings* 檔案位於安裝特定資料夾中，類似於 *%localappdata%\Microsoft\VisualStudio\16.0_xxxxxxxx\Settings*。
 
 ::: moniker-end
+
+## <a name="reset-synchronized-settings"></a>重設同步設定
+
+若要將所有設定重設為其預設值，請登入 Visual Studio，然後選取 [工具]   > [匯入和匯出設定]  以開啟 [匯入和匯出設定精靈]  。 選取 [重設所有設定]  ，然後遵循精靈的其餘步驟進行。
 
 ## <a name="see-also"></a>另請參閱
 
