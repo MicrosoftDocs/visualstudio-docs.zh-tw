@@ -22,12 +22,12 @@ caps.latest.revision: 27
 author: mikeblome
 ms.author: mblome
 manager: jillfra
-ms.openlocfilehash: fce0fb33f6c536386754b10b11e724a603f0a2a6
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 0a0e744e1eb41cf9da816f2214176b37bfe4c8bf
+ms.sourcegitcommit: b56dc6fadc6c924beed36bb4c2ccc16cf6bcfa1c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65698007"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "68740226"
 ---
 # <a name="code-analysis-for-cc-overview"></a>C/C++ 程式碼分析概觀
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +47,7 @@ C/C++ 程式碼分析工具會將其 C/C++ 原始程式碼中可能的缺失相�
  您可能想要所有原始程式碼簽入都要滿足特定的原則。 尤其您會想要確認在最新本機建置步驟中已執行分析。 如需啟用程式碼分析簽入原則的詳細資訊，請參閱[建立和使用程式碼分析簽入原則](../code-quality/creating-and-using-code-analysis-check-in-policies.md)  
   
 ## <a name="team-build-integration"></a>Team Build 整合  
- 您可以使用組建系統的整合式功能，在 [!INCLUDE[esprtfs](../includes/esprtfs-md.md)] 建置程序的步驟中執行程式碼分析工具。 如需詳細資訊，請參閱[建置應用程式](https://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)。  
+ 您可以使用組建系統的整合式功能，在 [!INCLUDE[esprtfs](../includes/esprtfs-md.md)] 建置程序的步驟中執行程式碼分析工具。 如需詳細資訊，請參閱[建置應用程式](/azure/devops/pipelines/index)。  
   
 ## <a name="command-line-support"></a>命令列支援  
  除了開發環境內的完整支援，開發人員也可以從命令列使用分析工具，如下列範例所示：  

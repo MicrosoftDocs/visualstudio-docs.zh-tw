@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 001983bf9ca182f89587b23e04828b93d12d98f1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9b3e34bec0e199e1eb0b49a88517e9551b9b13cd
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62545781"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68921634"
 ---
 # <a name="ca1719-parameter-names-should-not-match-member-names"></a>CA1719:參數名稱不應該和成員名稱相符
 
@@ -31,20 +31,20 @@ ms.locfileid: "62545781"
 |中斷變更|中斷|
 
 ## <a name="cause"></a>原因
- 外部可見成員的名稱中不區分大小寫的比較，其中一個參數的名稱比對。
+外部可見成員的名稱會與它的其中一個參數的名稱相符, 以不區分大小寫的比較。
 
 ## <a name="rule-description"></a>規則描述
- 參數名稱應該要能傳達參數的意義，而成員名稱應該要能傳達成員的意義。 兩者相同屬罕見的設計。 如果將參數命名為與成員名稱相同的名稱，則不僅會不容易了解，也會讓程式庫難以使用。
+參數名稱應該要能傳達參數的意義，而成員名稱應該要能傳達成員的意義。 兩者相同屬罕見的設計。 如果將參數命名為與成員名稱相同的名稱，則不僅會不容易了解，也會讓程式庫難以使用。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
- 選取的成員名稱不相符的參數名稱。
+請選取不符合成員名稱的參數名稱。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
- 新的開發，沒有已知的情況下會發生您必須在其中隱藏此規則的警告。 針對隨附的程式庫，您可能必須隱藏此規則的警告。
+針對新的開發, 在您必須隱藏此規則的警告的情況下, 不會發生任何已知的狀況。 針對運送媒體櫃, 您可能必須隱藏此規則的警告。
 
-## <a name="related-rules"></a>相關的規則
- [CA1709:識別項應該使用正確的大小寫](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
+## <a name="related-rules"></a>相關規則
+[CA1709識別碼的大小寫應該正確](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
 
- [CA1708:識別項應該不僅為大小寫不同](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
+[CA1708識別碼應該不同于大小寫](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
 
- [CA1707:識別項不應該包含底線](../code-quality/ca1707-identifiers-should-not-contain-underscores.md)
+[CA1707識別碼不應包含底線](../code-quality/ca1707-identifiers-should-not-contain-underscores.md)

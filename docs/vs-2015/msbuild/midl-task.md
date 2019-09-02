@@ -28,11 +28,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c1404ae5fce31eb59d2bb484ce1d97956f4cfefc
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60062031"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68191565"
 ---
 # <a name="midl-task"></a>MIDL 工作
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ ms.locfileid: "60062031"
   
      選擇性的 **String** 參數。  
   
-     命令列選項清單。 例如 **"**_/option1 /option2 /option#_"。 使用此參數，來指定任何其他 MIDL 工作參數未表示的命令列選項。  
+     命令列選項清單。 例如 **"** _/option1 /option2 /option#_ "。 使用此參數，來指定任何其他 MIDL 工作參數未表示的命令列選項。  
   
      如需詳細資訊，請參閱 [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) 網站上的＜MIDL 命令列參考＞。  
   
@@ -144,7 +144,7 @@ ms.locfileid: "60062031"
   
      如果是 `true`，即會檢查列舉值位於允許的範圍內。  
   
-     如需詳細資訊，請參閱 midl.exe 的命令列說明 (**/?**) 中的 **/error enum** 選項。  
+     如需詳細資訊，請參閱 midl.exe 的命令列說明 ( **/?** ) 中的 **/error enum** 選項。  
   
 - **ErrorCheckRefPointers**  
   
@@ -228,7 +228,7 @@ ms.locfileid: "60062031"
   
      選擇性的 **String** 參數。  
   
-     針對 COM 介面指定「介面識別項檔」的名稱。 這會覆寫透過在 IDL 檔名中加入 "_i.c" 而取得的預設名稱。  
+     針對 COM 介面指定「介面識別項檔」  的名稱。 這會覆寫透過在 IDL 檔名中加入 "_i.c" 而取得的預設名稱。  
   
      如需詳細資訊，請參閱 [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) 網站上＜MIDL 命令列參考＞中的 **/iid** 選項。  
   
@@ -236,7 +236,7 @@ ms.locfileid: "60062031"
   
      選擇性的 **int** 參數。  
   
-     指定「地區設定識別項」，讓您能夠在輸入檔、檔案名稱和目錄路徑中使用國際字元。 指定十進位的地區設定識別項。  
+     指定「地區設定識別項」  ，讓您能夠在輸入檔、檔案名稱和目錄路徑中使用國際字元。 指定十進位的地區設定識別項。  
   
      如需詳細資訊，請參閱 [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) 網站上＜MIDL 命令列參考＞中的 **/lcid** 選項。 另請參閱 MSDN 上的＜Microsoft 提供的地區設定識別項＞。  
   
@@ -260,7 +260,7 @@ ms.locfileid: "60062031"
   
      選擇性的 **String[]** 參數。  
   
-     指定一或多個「定義」；也就是要傳遞到 C 前置處理器的名稱和選擇性的值，如同透過 `#define` 指示詞。 每個定義的格式是 *name[=value]*。  
+     指定一或多個「定義」  ；也就是要傳遞到 C 前置處理器的名稱和選擇性的值，如同透過 `#define` 指示詞。 每個定義的格式是 *name[=value]* 。  
   
      如需詳細資訊，請參閱 [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) 網站上＜MIDL 命令列參考＞中的 **/D** 選項。 另請參閱此表格中的 **UndefinePreprocessorDefinitions** 參數。  
   
@@ -298,7 +298,7 @@ ms.locfileid: "60062031"
   
      選擇性的 **String** 參數。  
   
-     指定目標系統中結構的對應儲存 (「封裝層級」)。  
+     指定目標系統中結構的對應儲存 (「封裝層級」  )。  
   
      指定下列其中一個值；每個值會分別對應至一個命令列選項。  
   
@@ -404,7 +404,7 @@ ms.locfileid: "60062031"
   
      選擇性的 **String** 參數。  
   
-     指定要發出的警告嚴重性 (「警告層級」)。 值為 0，就會不發出任何警告。 否則，如果其警告層級是小於或等於指定值的數字，就會發出警告。  
+     指定要發出的警告嚴重性 (「警告層級」  )。 值為 0，就會不發出任何警告。 否則，如果其警告層級是小於或等於指定值的數字，就會發出警告。  
   
      指定下列其中一個值；每個值會分別對應至一個命令列選項。  
   
@@ -420,5 +420,5 @@ ms.locfileid: "60062031"
   
 ## <a name="remarks"></a>備註  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [工作參考](../msbuild/msbuild-task-reference.md)

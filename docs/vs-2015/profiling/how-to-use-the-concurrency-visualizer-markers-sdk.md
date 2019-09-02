@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 00957e742f5731d43881df4f0ff9e18bfd7cf773
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3df1139f34c17055703b1ffcbbe2711d5750b9a8
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62555538"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68870040"
 ---
 # <a name="how-to-use-the-concurrency-visualizer-markers-sdk"></a>如何：使用並行視覺化檢視標記 SDK
 
@@ -90,7 +90,7 @@ ms.locfileid: "62555538"
     using Microsoft.ConcurrencyVisualizer.Instrumentation;
     ```
 
-3. 加入在預設標記系列中建立三個範圍的程式碼，並在每個範圍各寫入一個旗標、訊息和警示。 您建立<xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Span>物件藉由呼叫靜態 [EnterSpan] （<!-- TODO: review code entity reference <xref:assetId:///EnterSpan?qualifyHint=False&amp;autoUpgrade=True>  -->) 方法。 若要寫入預設系列，請使用 <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Markers> 類別的靜態寫入方法。
+3. 加入在預設標記系列中建立三個範圍的程式碼，並在每個範圍各寫入一個旗標、訊息和警示。 您可以藉由呼叫靜態`EnterSpan`方法來建立 [Span](/previous-versions/hh694189(v=vs.140)) 物件。 若要寫入至預設數列, 請使用[標記](/previous-versions/hh694099(v=vs.140))類別的靜態 write 方法。
 
     ```vb
     Dim flagSpan As Span = Markers.EnterSpan("flag span")
@@ -132,7 +132,7 @@ ms.locfileid: "62555538"
 
      ![包含標記和警示的 [並行視覺化檢視]](../profiling/media/cvmarkersmanaged.png "CvMarkersManaged")
 
-5. 透過使用靜態 <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Markers.CreateMarkerSeries%2A> 方法，加入建立客戶標記系列的程式碼。 <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.MarkerSeries> 類別包含建立範圍及撰寫旗標、訊息和警示的方法。
+5. 使用靜態[CreateMarkerSeries](/previous-versions/hh694171(v=vs.140))方法加入程式碼, 以建立客戶標記系列。 [Microsoft.concurrencyvisualizer.instrumentation.markerseries>](/previous-versions/hh694127(v=vs.140))類別包含用來建立範圍和寫入旗標、訊息和警示的方法。
 
     ```vb
     Dim flagSeries As MarkerSeries = Markers.DefaultWriter.CreateMarkerSeries("flag series")

@@ -6,35 +6,35 @@ ms.topic: conceptual
 helpviewer_keywords:
 - build events, customizing
 ms.assetid: 69e935a5-e208-4bcd-865c-3e5f9b047ca8
-author: gewarren
-ms.author: gewarren
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c1acd55ad9ea2d671730a656a673fd1f2ca3aa19
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 620ffa1ea23c2c892e8385bd9e81a07fb640411a
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430887"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68918903"
 ---
 # <a name="specify-custom-build-events-in-visual-studio"></a>在 Visual Studio 中指定自訂建置事件
 
 您可以指定自訂建置事件，在建置開始之前或完成之後自動執行命令。 例如，您可以在建置開始之前執行 *.bat* 檔案，或在建置完成之後將新檔案複製到資料夾。 只有在建置成功到達建置流程中的這些點時，建置事件才會執行。
 
- 如需您所使用之程式設計語言的特定資訊，請參閱下列主題：
+如需您所使用之程式設計語言的特定資訊，請參閱下列主題：
 
 - Visual Basic--[如何：指定建置事件 (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md)。
 
 - C# 和 F#--[如何：指定建置事件 (C#)](../ide/how-to-specify-build-events-csharp.md)。
 
-- Visual C++ -- [指定建置事件](/cpp/ide/specifying-build-events)。
+- Visual C++ -- [指定建置事件](/cpp/build/specifying-build-events)。
 
 ## <a name="syntax"></a>語法
 
 建置事件遵循與 DOS 命令相同的語法，不過您可以使用巨集更輕鬆地建立建置事件。 如需可用巨集的清單，請參閱[建置前事件/建置後事件命令列對話方塊](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md)。
 
- 為了獲得最佳結果，請依照下列格式秘訣：
+為了獲得最佳結果，請依照下列格式秘訣：
 
 - 在執行 *.bat* 檔案的所有建置事件之前新增 `call` 陳述式。
 
@@ -50,7 +50,7 @@ ms.locfileid: "63430887"
 
 - 視需要包含萬用字元。
 
-   範例：`for %I in (*.txt *.doc *.html) do copy %I c:\`<我的目錄>`\`
+   範例：`for %I in (*.txt *.doc *.html) do copy %I c:\`<我的目錄>  `\`
 
   > [!NOTE]
   > 在批次指令碼中，上述程式碼中的 `%I` 應該是 `%%I`。

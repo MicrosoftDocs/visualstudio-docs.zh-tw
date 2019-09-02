@@ -1,32 +1,32 @@
 ---
 title: 選項、文字編輯器、JavaScript、Linting
 ms.date: 1/15/2019
-ms.technology: vs-ide-general
+ms.technology: vs-javascript
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.JavaScript.Linting.General
 - VS.ToolsOptionsPages.Text_Editor.JavaScript.Linting
 - VS.ToolsOptionsPages.Text_Editor.TypeScript.Linting.General
 - VS.ToolsOptionsPages.Text_Editor.TypeScript.Linting
-author: gewarren
-ms.author: gewarren
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 74cd522da1d29ce7f9a58737fc44ecec0909ed1f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1f8a194f3848b0737fc33af2b9948102987a5923
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62778335"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68605963"
 ---
-# <a name="options-text-editor-javascript-linting"></a>選項、文字編輯器、JavaScript、Linting
+# <a name="options-dialog-box-text-editor--javascripttypescript--linting"></a>選項對話方塊：文字編輯器 \> JavaScript/TypeScript \> Linting
 
-使用 [選項] 對話方塊的 [Linting] 頁面，設定在程式碼編輯器中分析程式碼的選項。 若要存取此頁面，請在功能表列上依序選擇 [工具] > [選項]，然後依序展開 [文字編輯器] > [JavaScript] > [Linting]。
+使用 [選項]  對話方塊的 [Linting]  頁面，設定在程式碼編輯器中分析程式碼的選項。 若要存取此頁面，請在功能表列上依序選擇 [工具]   > [選項]  ，然後依序展開 [文字編輯器]   > [JavaScript/TypeScript]   > [Linting]  。
 
 ## <a name="eslint-settings"></a>ESLint 設定
 
-這些選項可讓您啟用靜態 JavaScript 程式碼分析，並選擇要分析的檔案。 如需 ESLint 的詳細資訊，請參閱 [ESLint.org](https://eslint.org/)。
+這些選項可讓您啟用靜態 JavaScript 與 TypeSCript 程式碼分析，並選擇要分析的檔案。 如需 ESLint 的詳細資訊，請參閱 [ESLint.org](https://eslint.org/)。
 
 ### <a name="uielement-list"></a>UIElement 清單
 

@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: fc45c25dcc9de1cdf1991525401e2d53bd86cdb3
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 048e0409a5af77c512f0ee768d95d61259426fb9
+ms.sourcegitcommit: 9cfd3ef6c65f671a26322320818212a1ed5955fe
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66261993"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "68533368"
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>教學課程：在 Visual Studio 中建立 Node.js 和 React 應用程式
 
@@ -66,15 +66,15 @@ Webpack 搭配 JavaScript 檔案，讓它們可以在瀏覽器中執行。 它�
     如果您尚未安裝 Visual Studio 2017，請前往  [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/) 頁面免費進行安裝。
     ::: moniker-end
 
-    如果您需要安裝工作負載，但已安裝 Visual Studio，請移至 [工具] > [取得工具與功能...]，以開啟 Visual Studio 安裝程式。 選擇 [Node.js 開發] 工作負載，然後選擇 [修改]。
+    如果您需要安裝工作負載，但已安裝 Visual Studio，請移至 [工具]   > [取得工具與功能...]  ，以開啟 Visual Studio 安裝程式。 選擇 [Node.js 開發]  工作負載，然後選擇 [修改]  。
 
     ![VS 安裝程式中的 Node.js 工作負載](../ide/media/quickstart-nodejs-workload.png)
 
 * 您必須安裝 Node.js 執行階段。
 
-    本教學課程已使用 8.11.2 版進行測試。
+    本教學課程已使用 10.16.0 版進行測試。
 
-    如果您沒有安裝，請從 [Node.js](https://nodejs.org/en/download/) 網站安裝 LTS 版本。 一般而言，Visual Studio 會自動偵測已安裝的 Node.js 執行階段。 如果偵測不到已安裝的執行階段，您可以在屬性頁面中將專案設定為參考已安裝的執行階段 (建立專案之後，以滑鼠右鍵按一下專案節點，然後選擇 [屬性])。
+    如果您沒有安裝，請從 [Node.js](https://nodejs.org/en/download/) 網站安裝 LTS 版本。 一般而言，Visual Studio 會自動偵測已安裝的 Node.js 執行階段。 如果偵測不到已安裝的執行階段，您可以在屬性頁面中將專案設定為參考已安裝的執行階段 (建立專案之後，以滑鼠右鍵按一下專案節點，然後選擇 [屬性]  )。
 
 ## <a name="create-a-project"></a>建立專案
 
@@ -85,18 +85,18 @@ Webpack 搭配 JavaScript 檔案，讓它們可以在瀏覽器中執行。 它�
 1. 建立新的專案。
 
     ::: moniker range=">=vs-2019"
-    按 **Esc** 關閉開始視窗。 鍵入 **Ctrl + Q** 開啟 [搜尋] 方塊，再鍵入 **Node.js**，然後選擇 [空白的 Node.js Web 應用程式] (JavaScript)。 在出現的對話方塊中，選擇 [建立]。
+    按 **Esc** 關閉開始視窗。 鍵入 **Ctrl + Q** 開啟 [搜尋] 方塊，再鍵入 **Node.js**，然後選擇 [空白的 Node.js Web 應用程式]  (JavaScript)。 在出現的對話方塊中，選擇 [建立]  。
     ::: moniker-end
     ::: moniker range="vs-2017"
-    從頂端功能表列中，選擇 [檔案] > [新增] > [專案]。 在 [新增專案] 對話方塊的左窗格中，展開 **JavaScript**，然後選擇 **Node.js**。 在中間窗格中，選擇 [空白的 Node.js Web 應用程式]、輸入名稱 **NodejsWebAppBlank**，然後選擇 [確定]。
+    從頂端功能表列中，選擇 [檔案]   > [新增]   > [專案]  。 在 [新增專案]  對話方塊的左窗格中，展開 **JavaScript**，然後選擇 **Node.js**。 在中間窗格中，選擇 [空白的 Node.js Web 應用程式]  、輸入名稱 **NodejsWebAppBlank**，然後選擇 [確定]  。
     ::: moniker-end
-    如果您看不到 [空白的 Node.js Web 應用程式] 專案範本，則必須新增 **Node.js 開發**工作負載。 如需詳細指示，請參閱[必要條件](#prerequisites)。
+    如果您看不到 [空白的 Node.js Web 應用程式]  專案範本，則必須新增 **Node.js 開發**工作負載。 如需詳細指示，請參閱[必要條件](#prerequisites)。
 
     Visual Studio 會建立新的方案，並開啟專案。
 
     ![[方案總管] 中的 Node.js 專案](../javascript/media/tutorial-nodejs-react-project-structure.png)
 
-    (1) 以**粗體**反白顯示的項目就是您的專案，並使用您在 [新增專案] 對話方塊中所指定的名稱。 在檔案系統中，此專案是由專案資料夾中的 *.njsproj* 檔案所呈現。 您可以設定與專案建立關聯的屬性和環境變數，方法是以滑鼠右鍵按一下專案，然後選擇 [屬性]。 因為專案檔不會對 Node.js 專案來源進行自訂變更，所以您可以使用其他開發工具執行來回行程。
+    (1) 以**粗體**反白顯示的項目就是您的專案，並使用您在 [新增專案]  對話方塊中所指定的名稱。 在檔案系統中，此專案是由專案資料夾中的 *.njsproj* 檔案所呈現。 您可以設定與專案建立關聯的屬性和環境變數，方法是以滑鼠右鍵按一下專案，然後選擇 [屬性]  。 因為專案檔不會對 Node.js 專案來源進行自訂變更，所以您可以使用其他開發工具執行來回行程。
 
     (2) 最上層是方案，其名稱預設會與專案相同。 方案 (以磁碟上的 *.sln* 檔案呈現) 是一或多個相關專案的容器。
 
@@ -104,7 +104,7 @@ Webpack 搭配 JavaScript 檔案，讓它們可以在瀏覽器中執行。 它�
 
     (4) *package.json* 是 npm 用來管理本機安裝套件之套件相依性和套件版本的檔案。 如需這個檔案的詳細資訊，請參閱 [package.json 組態](../javascript/configure-packages-with-package-json.md)
 
-    (5) *server.js* 之類的專案檔會顯示在專案節點下。 *server.js* 是專案啟動檔案，這也是它會以**粗體**顯示的原因。 以滑鼠右鍵按一下專案中的檔案，然後選取 [設定為 Node.js 啟動檔案]，即可設定啟動檔案。
+    (5) *server.js* 之類的專案檔會顯示在專案節點下。 *server.js* 是專案啟動檔案，這也是它會以**粗體**顯示的原因。 以滑鼠右鍵按一下專案中的檔案，然後選取 [設定為 Node.js 啟動檔案]  ，即可設定啟動檔案。
 
 ## <a name="add-npm-packages"></a>新增 npm 套件
 
@@ -119,15 +119,15 @@ Webpack 搭配 JavaScript 檔案，讓它們可以在瀏覽器中執行。 它�
 * webpack
 * webpack-cli
 
-1. 在 [方案總管] (右窗格) 中，以滑鼠右鍵按一下專案中的 [npm] 節點，然後選擇 [安裝新的 npm 套件]。
+1. 在 [方案總管] (右窗格) 中，以滑鼠右鍵按一下專案中的 [npm]  節點，然後選擇 [安裝新的 npm 套件]  。
 
-    在 [安裝新的 npm 套件] 對話方塊中，您可以選擇安裝最新的套件版本或指定版本。 如果選擇安裝這些套件的目前版本，但稍後發生未預期的錯誤，您可能需要安裝這些步驟後面所述的確切套件版本。
+    在 [安裝新的 npm 套件]  對話方塊中，您可以選擇安裝最新的套件版本或指定版本。 如果選擇安裝這些套件的目前版本，但稍後發生未預期的錯誤，您可能需要安裝這些步驟後面所述的確切套件版本。
 
-1. 在 [安裝新的 npm 套件] 對話方塊中，搜尋 react 套件，然後選取 [安裝套件] 來安裝它。
+1. 在 [安裝新的 npm 套件]  對話方塊中，搜尋 react 套件，然後選取 [安裝套件]  來安裝它。
 
     ![安裝 npm 套件](../javascript/media/tutorial-nodejs-react-install-packages.png)
 
-    選取 [輸出] 視窗來查看安裝套件的進度 (選取 [顯示輸出來源] 欄位中的 [Npm])。 安裝後，套件會出現在 **npm** 節點下。
+    選取 [輸出]  視窗來查看安裝套件的進度 (選取 [顯示輸出來源]  欄位中的 [Npm]  )。 安裝後，套件會出現在 **npm** 節點下。
 
     專案的 *package.json* 檔案會以新的套件資訊 (包括套件版本) 進行更新。
 
@@ -148,16 +148,16 @@ Webpack 搭配 JavaScript 檔案，讓它們可以在瀏覽器中執行。 它�
 
     如果在您的空白範本版本中已經有 `dependencies` 區段，只需將它取代為上述 JSON 程式碼。 如需這個檔案的使用詳細資訊，請參閱 [package.json 組態](../javascript/configure-packages-with-package-json.md)
 
-1. 以滑鼠右鍵按一下專案中的 [npm] 節點，然後選擇 [更新 npm 套件]。
+1. 以滑鼠右鍵按一下專案中的 [npm]  節點，然後選擇 [更新 npm 套件]  。
 
-    在下方窗格中，選取 [輸出] 視窗以查看套件安裝進度。 安裝可能需要幾分鐘的時間，您可能無法立即查看結果。 若要查看輸出，請務必選取 [輸出] 視窗中 [顯示輸出來源] 欄位中的 [Npm]。
+    在下方窗格中，選取 [輸出]  視窗以查看套件安裝進度。 安裝可能需要幾分鐘的時間，您可能無法立即查看結果。 若要查看輸出，請務必選取 [輸出]  視窗中 [顯示輸出來源]  欄位中的 [Npm]  。
 
     以下是安裝後顯示在 [方案總管] 中的 npm 模組。
 
     ![npm 套件](../javascript/media/tutorial-nodejs-react-npm-modules.png)
 
     > [!NOTE]
-    > 如果您想要使用命令列來安裝 npm 套件，請以滑鼠右鍵按一下專案節點，然後選擇 [在這裡開啟命令提示字元]。 使用標準的 Node.js 命令來安裝套件。
+    > 如果您想要使用命令列來安裝 npm 套件，請以滑鼠右鍵按一下專案節點，然後選擇 [在這裡開啟命令提示字元]  。 使用標準的 Node.js 命令來安裝套件。
 
 ## <a name="add-project-files"></a>新增專案檔
 
@@ -170,15 +170,15 @@ Webpack 搭配 JavaScript 檔案，讓它們可以在瀏覽器中執行。 它�
 
 針對這個簡單的應用程式，您可以在專案根目錄中新增專案檔。 (在大部分的應用程式中，您通常會將檔案新增至子資料夾，並據以調整相對路徑參考。)
 
-1. 在 [方案總管] 中，以滑鼠右鍵按一下專案 **NodejsWebAppBlank**，然後選擇 [新增] > [新增項目]。
+1. 在 [方案總管] 中，以滑鼠右鍵按一下專案 **NodejsWebAppBlank**，然後選擇 [新增]   > [新增項目]  。
 
-1. 在 [新增項目] 對話方塊方塊中，選擇 [TypeScript JSX 檔案]，鍵入名稱 *app.tsx*，然後選取 [確定]。
+1. 在 [新增項目]  對話方塊方塊中，選擇 [TypeScript JSX 檔案]  ，鍵入名稱 *app.tsx*，然後選取 [確定]  。
 
-1. 重複這些步驟來新增 *webpack-config.js*。 選擇 [JavaScript 檔案]，而非 TypeScript JSX 檔案。
+1. 重複這些步驟來新增 *webpack-config.js*。 選擇 [JavaScript 檔案]  ，而非 TypeScript JSX 檔案。
 
-1. 重複相同的步驟，以將 *index.html* 新增至專案。 請選擇 [HTML 檔案]，而不是 JavaScript 檔案。
+1. 重複相同的步驟，以將 *index.html* 新增至專案。 請選擇 [HTML 檔案]  ，而不是 JavaScript 檔案。
 
-1. 重複相同的步驟，以將 *tsconfig.json* 新增至專案。 請選擇 [TypeScript JSON 組態檔]，而不是 JavaScript 檔案。
+1. 重複相同的步驟，以將 *tsconfig.json* 新增至專案。 請選擇 [TypeScript JSON 組態檔]  ，而不是 JavaScript 檔案。
 
 ## <a name="add-app-code"></a>新增應用程式程式碼
 
@@ -202,7 +202,7 @@ Webpack 搭配 JavaScript 檔案，讓它們可以在瀏覽器中執行。 它�
     });
     ```
 
-   上述程式碼會使用 Express 來啟動 Node.js 作為 Web 應用程式伺服器。 此程式碼會將連接埠設定為專案屬性中設定的連接埠號碼 (根據預設，連接埠在屬性中設定為 1337)。 若要開啟專案屬性，請以滑鼠右鍵按一下 [方案總管] 中的專案，然後選擇 [屬性]。
+   上述程式碼會使用 Express 來啟動 Node.js 作為 Web 應用程式伺服器。 此程式碼會將連接埠設定為專案屬性中設定的連接埠號碼 (根據預設，連接埠在屬性中設定為 1337)。 若要開啟專案屬性，請以滑鼠右鍵按一下 [方案總管] 中的專案，然後選擇 [屬性]  。
 
 1. 開啟 *app.tsx*，並新增下列程式碼：
 
@@ -296,7 +296,7 @@ Webpack 搭配 JavaScript 檔案，讓它們可以在瀏覽器中執行。 它�
 
 ## <a name="transpile-the-jsx"></a>轉換 JSX
 
-1. 在 [方案總管] 中，以滑鼠右鍵按一下專案節點，然後選擇 [在這裡開命令提示字元]。
+1. 在 [方案總管] 中，以滑鼠右鍵按一下專案節點，然後選擇 [在這裡開命令提示字元]  。
 
 1. 在命令提示字元中鍵入下列命令：
 
@@ -308,17 +308,29 @@ Webpack 搭配 JavaScript 檔案，讓它們可以在瀏覽器中執行。 它�
 
     如果看到任何錯誤，而不是上述的輸出，您必須在應用程式運作之前解決這些錯誤。 如果您的 npm 套件版本與本教學課程中顯示的版本不同，這可能是錯誤的來源。 修正錯誤的其中一種方法是使用先前步驟中所顯示的確切版本。 此外，如果這些套件版本的其中一或多個版本已遭取代而導致錯誤，您可能需要安裝較新的版本來修正錯誤。 如需使用 *package.json*控制 npm 套件版本的資訊，請參閱 [package.json 組態](../javascript/configure-packages-with-package-json.md)。
 
-1. 在 [方案總管] 中，以滑鼠右鍵按一下專案節點，並選擇 [新增] > [現有資料夾]，然後選擇 *dist* 資料夾，並選擇 [選取資料夾]。
+1. 在 [方案總管] 中，以滑鼠右鍵按一下專案節點，並選擇 [新增]   > [現有資料夾]  ，然後選擇 *dist* 資料夾，並選擇 [選取資料夾]  。
 
     Visual Studio 會將 *dist* 資料夾新增至專案，其中包含 *app-bundle.js* 和 *app-bundle.js.map*。
 
 1. 開啟 *app-bundle.js* 以查看轉換的 JavaScript 程式碼。
 
-1. 如果系統提示您重新載入外部修改的檔案，請選取 [全部皆是]。
+1. 如果系統提示您重新載入外部修改的檔案，請選取 [全部皆是]  。
 
     ![載入已修改的檔案](../javascript/media/tutorial-nodejs-react-reload-files.png)
 
-每次變更 *app.tsx* 時，您必須重新執行 webpack 命令。
+每次變更 *app.tsx* 時，您必須重新執行 webpack 命令。 若要將此步驟自動化，請新增組建指令碼來轉換 JSX。
+
+## <a name="add-a-build-script-to-transpile-the-jsx"></a>新增組建指令碼來轉換 JSX
+
+從 Visual Studio 2019 開始，需要組建指令碼。 您可以在從 Visual Studio 建置時轉換 JSX，而不是在命令列上轉譯 JSX (如上一節中所示)。
+
+* 開啟 *package.json*，並在 `dependencies` 區段之後新增下列區段：
+
+   ```json
+   "scripts": {
+    "build": "webpack-cli app.tsx --config webpack-config.js"
+   }
+   ```
 
 ## <a name="run-the-app"></a>執行應用程式
 
@@ -331,9 +343,9 @@ Webpack 搭配 JavaScript 檔案，讓它們可以在瀏覽器中執行。 它�
     ![選取 Chrome 作為偵錯目標](../javascript/media/tutorial-nodejs-react-debug-target.png)
     ::: moniker-end
 
-    如果您的電腦中有 Chrome 可供使用，但未顯示為選項，請從偵錯目標下拉式清單中選擇 [瀏覽方式]，並選取 Chrome 作為預設瀏覽器目標 (選擇 [設為預設值])。
+    如果您的電腦中有 Chrome 可供使用，但未顯示為選項，請從偵錯目標下拉式清單中選擇 [網頁瀏覽器 (瀏覽器名稱)]   > [Google Chrome]  ，並選取 Chrome 作為預設瀏覽器目標。
 
-1. 若要執行應用程式，請按 **F5** ([偵錯] > [開始偵錯]) 或綠色箭號按鈕。
+1. 若要執行應用程式，請按 **F5** ([偵錯]   > [開始偵錯]  ) 或綠色箭號按鈕。
 
     Node.js 主控台視窗隨即開啟，其中顯示偵錯工具正在接聽的通訊埠。
 
@@ -353,9 +365,9 @@ Webpack 搭配 JavaScript 檔案，讓它們可以在瀏覽器中執行。 它�
 
     中斷點是可靠偵錯最基本也最重要的功能。 中斷點會指出 Visual Studio 應暫停程式碼執行的地方，如此一來您可以查看變數的值或記憶體的行為，或查看程式碼分支是否正在執行。
 
-1. 若要執行應用程式，請按 **F5** ([偵錯] > [開始偵錯])。
+1. 若要執行應用程式，請按 **F5** ([偵錯]   > [開始偵錯]  )。
 
-    偵錯工具會在您設定的中斷點處暫停 (目前的陳述式以黃色標示)。 現在，您可以將滑鼠指標停留在目前位於範圍內的變數上，並使用偵錯工具視窗 (如 [區域變數] 和 [監看式] 視窗)，藉以檢查應用程式狀態。
+    偵錯工具會在您設定的中斷點處暫停 (目前的陳述式以黃色標示)。 現在，您可以將滑鼠指標停留在目前位於範圍內的變數上，並使用偵錯工具視窗 (如 [區域變數]  和 [監看式]  視窗)，藉以檢查應用程式狀態。
 
 1. 按 **F5** 繼續執行應用程式。
 
@@ -369,7 +381,7 @@ Webpack 搭配 JavaScript 檔案，讓它們可以在瀏覽器中執行。 它�
 
 1. 關閉所有 Chrome 視窗。
 
-2. 從 Windows [開始] 按鈕開啟 [執行] 命令 (按一下滑鼠右鍵，並選擇 [執行])，然後輸入下列命令：
+2. 從 Windows [開始]  按鈕開啟 [執行]  命令 (按一下滑鼠右鍵，並選擇 [執行]  )，然後輸入下列命令：
 
     `chrome.exe --remote-debugging-port=9222`
 
@@ -378,7 +390,7 @@ Webpack 搭配 JavaScript 檔案，讓它們可以在瀏覽器中執行。 它�
     ::: moniker range=">=vs-2019"
 
     > [!NOTE]
-    > 您也可以在瀏覽器啟動時設定 `--remote-debugging-port` 旗標，方法是從 [偵錯] 工具列中選取 [...瀏覽方式]，然後選擇 [新增]，然後在 [引數] 欄位中設定此旗標。 為瀏覽器使用不同的易記名稱，例如 **Chrome with Debugging**。 如需詳細資訊，請參閱[版本資訊](https://docs.microsoft.com/visualstudio/releases/2019/release-notes-preview)。
+    > 您也可以在瀏覽器啟動時設定 `--remote-debugging-port` 旗標，方法是從 [偵錯]  工具列中選取 [...瀏覽方式]  ，然後選擇 [新增]  ，然後在 [引數]  欄位中設定此旗標。 為瀏覽器使用不同的易記名稱，例如 **Chrome with Debugging**。 如需詳細資訊，請參閱[版本資訊](https://docs.microsoft.com/visualstudio/releases/2019/release-notes-preview)。
 
     ::: moniker-end
 
@@ -386,17 +398,17 @@ Webpack 搭配 JavaScript 檔案，讓它們可以在瀏覽器中執行。 它�
 
     ![設定中斷點](../javascript/media/tutorial-nodejs-react-set-breakpoint-client-code.png)
 
-    若要尋找 *app-bundle.js* 中的 `render()` 函式，請使用 **Ctrl**+**F** ([編輯] > 尋找和取代 > [快速尋找])。
+    若要尋找 *app-bundle.js* 中的 `render()` 函式，請使用 **Ctrl**+**F** ([編輯]   > 尋找和取代   > [快速尋找]  )。
 
-4. 將 Chrome 選取為 Visual Studio 的偵錯目標後，請按 **Ctrl**+**F5** ([偵錯] > [啟動但不偵錯]) 以在瀏覽器中執行應用程式。
+4. 將 Chrome 選取為 Visual Studio 的偵錯目標後，請按 **Ctrl**+**F5** ([偵錯]   > [啟動但不偵錯]  ) 以在瀏覽器中執行應用程式。
 
     應用程式會在新的瀏覽器索引標籤中開啟。
 
-5. 選擇 [偵錯] > [附加至處理序]。
+5. 選擇 [偵錯]   > [附加至處理序]  。
 
-6. 在 [附加至處理序] 對話方塊中，於 [附加至] 欄位中選擇 [Webkit 程式碼]，在篩選方塊中鍵入 **chrome** 以篩選搜尋結果。
+6. 在 [附加至處理序]  對話方塊中，於 [附加至]  欄位中選擇 [Webkit 程式碼]  ，在篩選方塊中鍵入 **chrome** 以篩選搜尋結果。
 
-7. 選取具有正確主機通訊埠 (在此範例中為 1337) 的 Chrome 處理序，然後選取 [附加]。
+7. 選取具有正確主機通訊埠 (在此範例中為 1337) 的 Chrome 處理序，然後選取 [附加]  。
 
     ![附加至處理序](../javascript/media/tutorial-nodejs-react-attach-to-process.png)
 
@@ -411,14 +423,14 @@ Webpack 搭配 JavaScript 檔案，讓它們可以在瀏覽器中執行。 它�
 
     根據您的環境和瀏覽器狀態而定，您可能會叫用 *app-bundle.js* 的中斷點，或它在 *app.tsx* 中對應的位置。 不論哪一種方式，您都可以逐步執行程式碼並檢查變數。
 
-   * 如果您需要在 *app.tsx* 內中斷程式碼，但無法這麼做，請使用上一步中所述的 [附加至處理序] 來附加偵錯工具。 然後藉由從 [方案總管] 開啟 [指令碼文件] > [app.tsx] 來開啟動態產生的 *app.tsx* 檔案，接著設定中斷點並在瀏覽器中重新整理頁面 (在允許中斷點的程式碼行中設定繼點，例如 `return` 陳述式或 `var` 宣告)。
+   * 如果您需要在 *app.tsx* 內中斷程式碼，但無法這麼做，請使用上一步中所述的 [附加至處理序]  來附加偵錯工具。 然後藉由從 [方案總管] 開啟 [指令碼文件]   > [app.tsx]  來開啟動態產生的 *app.tsx* 檔案，接著設定中斷點並在瀏覽器中重新整理頁面 (在允許中斷點的程式碼行中設定繼點，例如 `return` 陳述式或 `var` 宣告)。
 
        或者，如果您要在 *app.tsx* 內中斷程式碼，但而無法這樣做，請嘗試在 *app.tsx* 中使用 `debugger;` 陳述式，或改為在 Chrome 開發人員工具中設定中斷點。
 
    * 如果您要在 *app-bundle.js* 內中斷程式碼，但無法這麼做，請移除來源對應檔 (*app-bundle.js.map*)。
 
      > [!TIP]
-     > 依照下列步驟第一次附加至處理序之後，在 Visual Studio 2017 中選擇 [偵錯] > [重新附加至處理序]，即可快速地重新附加至相同的處理序。
+     > 依照下列步驟第一次附加至處理序之後，在 Visual Studio 2017 中選擇 [偵錯]   > [重新附加至處理序]  ，即可快速地重新附加至相同的處理序。
 
 ## <a name="next-steps"></a>後續步驟
 

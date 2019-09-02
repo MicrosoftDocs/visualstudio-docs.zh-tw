@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 037f629a205c7af24509b8ca2e409683d1f085ff
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e26daf68e0031358605427b310bb7284d43baf1b
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62546358"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68922140"
 ---
 # <a name="ca1401-pinvokes-should-not-be-visible"></a>CA1401:P/Invokes 不應該為可見的
 
@@ -34,19 +34,19 @@ ms.locfileid: "62546358"
 |中斷變更|中斷|
 
 ## <a name="cause"></a>原因
- 公用或受保護的方法，公用型別中具有<xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName>屬性 (也實作`Declare`中的關鍵字[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)])。
+公用類型中的公用或受保護方法具有<xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName>屬性 (也是由中[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]的`Declare`關鍵字來執行)。
 
 ## <a name="rule-description"></a>規則描述
- 方法標記著<xref:System.Runtime.InteropServices.DllImportAttribute>屬性 (或使用所定義的方法`Declare`中的關鍵字[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) 使用平台叫用服務來存取 unmanaged 程式碼。 但不得公開 (Expose) 此類方法。 私用或內部，請保留這些方法，您要確定您的程式庫不能用來允許呼叫端存取未受管理的 Api，它們無法呼叫破壞安全性項目。
+以<xref:System.Runtime.InteropServices.DllImportAttribute>屬性 (或在中`Declare` [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]使用關鍵字定義的方法) 標記的方法會使用平台叫用服務來存取未受管理的程式碼。 但不得公開 (Expose) 此類方法。 藉由將這些方法保留為私用或內部, 您可以藉由允許呼叫端存取非受控 Api (否則無法呼叫), 確保您的程式庫無法用來入侵安全性。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
- 若要修正此規則的違規情形，變更方法的存取層級。
+若要修正此規則的違規情形, 請變更方法的存取層級。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
- 請勿隱藏此規則的警告。
+請勿隱藏此規則的警告。
 
 ## <a name="example"></a>範例
- 下列範例會宣告方法違反此規則。
+下列範例會宣告違反此規則的方法。
 
- [!code-vb[FxCop.Interoperability.DllImports#1](../code-quality/codesnippet/VisualBasic/ca1401-p-invokes-should-not-be-visible_1.vb)]
- [!code-csharp[FxCop.Interoperability.DllImports#1](../code-quality/codesnippet/CSharp/ca1401-p-invokes-should-not-be-visible_1.cs)]
+[!code-vb[FxCop.Interoperability.DllImports#1](../code-quality/codesnippet/VisualBasic/ca1401-p-invokes-should-not-be-visible_1.vb)]
+[!code-csharp[FxCop.Interoperability.DllImports#1](../code-quality/codesnippet/CSharp/ca1401-p-invokes-should-not-be-visible_1.cs)]

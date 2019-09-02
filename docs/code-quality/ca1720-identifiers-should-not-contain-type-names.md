@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c596ddfa36beec696c275ea13b662ceebf8bde2c
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: a35bec2395ccec649443df71e87904c71bf635d8
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65841790"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69547105"
 ---
 # <a name="ca1720-identifiers-should-not-contain-type-names"></a>CA1720:識別項名稱不應該包含類型名稱
 
@@ -27,24 +27,24 @@ ms.locfileid: "65841790"
 |-|-|
 |TypeName|IdentifiersShouldNotContainTypeNames|
 |CheckId|CA1720|
-|分類|Microsoft.Naming|
+|Category|Microsoft.Naming|
 |中斷變更|中斷|
 
 ## <a name="cause"></a>原因
 
-成員中的參數名稱包含的資料型別名稱。
+成員中的參數名稱包含資料類型名稱。
 
 -或-
 
-成員的名稱包含語言特定資料型別名稱。
+成員的名稱包含特定語言的資料類型名稱。
 
-根據預設，此規則只會查看外部可見的成員，但這[可設定](#configurability)。
+根據預設, 此規則只會查看外部可見的成員, 但這是[可](#configurability)設定的。
 
 ## <a name="rule-description"></a>規則描述
 
-參數和成員的名稱最好用於傳達其意義說明其預期由開發工具所提供的類型。 名稱的成員，如果必須使用資料型別名稱，而不是特定語言使用的語言無關的名稱。 比方說，而不是C#型別名稱`int`，使用的語言無關的資料型別名稱，而`Int32`。
+參數和成員的名稱更適合用來傳達其意義, 而不是描述其類型, 這是開發工具應提供的。 對於成員的名稱, 如果必須使用資料類型名稱, 請使用與語言無關的名稱, 而不是特定語言的名稱。 例如, 而不是C#類型名稱`int`, 請使用與語言無關的`Int32`資料類型名稱。
 
-每個離散的權杖參數或成員的名稱已針對下列語言專屬的資料型別名稱不區分大小寫的方式：
+參數或成員名稱中的每個離散 token, 會以不區分大小寫的方式, 針對下列語言特定的資料類型名稱進行檢查:
 
 - Bool
 - WChar
@@ -64,7 +64,7 @@ ms.locfileid: "65841790"
 - Float32
 - Float64
 
-此外，參數的名稱也使核對下列的語言無關的資料型別名稱不區分大小寫的方式：
+此外, 也會以不區分大小寫的方式, 針對下列與語言無關的資料類型名稱, 檢查參數的名稱:
 
 - Object
 - Obj
@@ -81,7 +81,7 @@ ms.locfileid: "65841790"
 - Int64
 - UInt64
 - IntPtr
-- ptr
+- 指標
 - Pointer
 - UInptr
 - UPtr
@@ -93,31 +93,31 @@ ms.locfileid: "65841790"
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
 
-**如果針對參數引發：**
+**如果針對參數引發:**
 
-進一步描述其意義的詞彙或更泛型的詞彙如 'value' 取代參數名稱的資料類型識別項。
+將參數名稱中的資料類型識別碼取代為更清楚描述其意義的詞彙或更泛型的詞彙, 例如 ' value '。
 
-**如果成員針對引發：**
+**如果是針對成員引發:**
 
-語言特定資料型別識別項，該成員的名稱取代為一個詞彙，進一步說明其意義、 語言獨立對等項目或更泛型的詞彙如 'value'。
+將成員名稱中的語言特定資料類型識別碼取代為更清楚描述其意義的詞彙、與語言無關的對應, 或更泛型的詞彙, 例如 ' value '。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
 
-偶爾使用的類型為基礎的參數和成員的名稱可能是適當的。 不過，對於新的開發，沒有已知您應該在其中隱藏此規則的警告發生的案例。 如先前所提供的程式庫，您可能必須隱藏此規則的警告。
+偶爾使用以類型為基礎的參數和成員名稱可能是適當的。 不過, 如果是新的開發, 則不會發生任何已知案例, 您應該在此隱藏此規則的警告。 針對先前已發行的程式庫, 您可能必須隱藏此規則的警告。
 
-## <a name="configurability"></a>設定功能
+## <a name="configurability"></a>可設定性
 
-如果您執行這項規則，從[FxCop 分析器](install-fxcop-analyzers.md)（而不是透過靜態程式碼分析），您可以設定的哪些部分您程式碼基底上執行這項規則，根據其存取範圍。 比方說，若要指定執行規則時，應該只針對非公用 API 介面，將下列索引鍵 / 值組新增至專案中的.editorconfig 檔案：
+如果您是從[FxCop 分析器](install-fxcop-analyzers.md)執行此規則 (而不是使用舊版分析), 您可以根據其存取範圍, 設定程式碼基底中的哪些部分來執行此規則。 例如, 若要指定規則只針對非公用 API 介面執行, 請將下列機碼值組新增至專案中的 editorconfig 檔案:
 
 ```ini
 dotnet_code_quality.ca1720.api_surface = private, internal
 ```
 
-此類別 （命名） 中，您可以設定此選項，只是這項規則，所有規則，或所有的規則。 如需詳細資訊，請參閱 <<c0> [ 設定的 FxCop 分析器](configure-fxcop-analyzers.md)。
+您可以只針對此規則、所有規則或此類別中的所有規則 (命名) 來設定此選項。 如需詳細資訊, 請參閱[設定 FxCop 分析器](configure-fxcop-analyzers.md)。
 
-## <a name="related-rules"></a>相關的規則
+## <a name="related-rules"></a>相關規則
 
-- [CA1709:識別項應該使用正確的大小寫](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
-- [CA1708:識別項應該不僅為大小寫不同](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
-- [CA1707:識別項不應該包含底線](../code-quality/ca1707-identifiers-should-not-contain-underscores.md)
-- [CA1719:參數名稱不應該和成員名稱相符](../code-quality/ca1719-parameter-names-should-not-match-member-names.md)
+- [CA1709識別碼的大小寫應該正確](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
+- [CA1708識別碼應該不同于大小寫](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
+- [CA1707識別碼不應包含底線](../code-quality/ca1707-identifiers-should-not-contain-underscores.md)
+- [CA1719參數名稱不應與成員名稱相符](../code-quality/ca1719-parameter-names-should-not-match-member-names.md)

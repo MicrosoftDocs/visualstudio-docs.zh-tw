@@ -1,6 +1,6 @@
 ---
 title: MSBuild 工作 | Microsoft Docs
-ms.date: 11/04/2016
+ms.date: 07/30/2019
 ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#MSBuild
@@ -18,24 +18,26 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a58235b724f97e3934ab620677e530fbd9ba9726
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: d2689113da88246470032ed658b2472c3845adcd
+ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66747357"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68681363"
 ---
 # <a name="msbuild-task"></a>MSBuild 工作
+
 從另一個 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 專案建置[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 專案。
 
 ## <a name="parameters"></a>參數
+
  下表說明 `MSBuild` 工作的參數。
 
 | 參數 | 說明 |
 |-----------------------------------| - |
 | `BuildInParallel` | 選擇性的 `Boolean` 參數。<br /><br /> 如果是 `true`，同時也會建置 `Projects` 參數中指定的專案 (如果可能)。 預設為 `false`。 |
 | `Projects` | 必要的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 指定要建置的專案檔。 |
-| `Properties` | 選擇性的 `String` 參數。<br /><br /> 作為全域屬性套用至子專案的屬性名稱/值組的分號分隔清單。 當您指定此參數時，它在功能上相當於當您使用 [*MSBuild.exe*](../msbuild/msbuild-command-line-reference.md) 建置時，設定具有 **-property** 參數的屬性。 例如：<br /><br /> `Properties="Configuration=Debug;Optimize=$(Optimize)"`<br /><br /> 當您透過 `Properties` 參數將屬性傳遞至專案時，[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 會建立專案的新執行個體，即使已經載入專案檔也一樣。 建立專案的新執行個體之後，[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 會將它視為具有不同全域屬性，且可使用專案的其他執行個體同時建置的不同專案。 例如，Release 組態可以與 Debug 組態同時建置。 |
+| `Properties` | 選擇性的 `String` 參數。<br /><br /> 作為全域屬性套用至子專案的屬性名稱/值組的分號分隔清單。 當您指定此參數時，它在功能上相當於當您使用 [*MSBuild.exe*](../msbuild/msbuild-command-line-reference.md) 建置時，設定具有 **-property** 參數的屬性。 例如：<br /><br /> `Properties="Configuration=Debug;Optimize=$(Optimize)"`<br /><br /> 當您透過 `Properties` 參數將屬性傳遞給專案時，即使已經載入專案檔，[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 也可能建立新的專案執行個體。 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 會為指定的專案路徑和一組唯一的全域屬性建立單一專案執行個體。 例如，此行為可讓您建立多個呼叫 *myproject.proj* 的 MSBuild 工作，在 Configuration=Release 的情況下，您會獲得單一的 *myproject.proj* 執行個體 (如果工作中未指定任何唯一屬性)。 如果您指定 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 尚未看到的屬性，[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 就會建立新的專案執行個體，此執行個體可與專案的其他執行個體平行建置。 例如，Release 組態可以與 Debug 組態同時建置。|
 | `RebaseOutputs` | 選擇性的 `Boolean` 參數。<br /><br /> 如果是 `true`，已建置的專案中目標輸出項目的相對路徑就會將其路徑調整為相對於呼叫的專案。 預設為 `false`。 |
 | `RemoveProperties` | 選擇性的 `String` 參數。<br /><br /> 指定要移除的全域屬性組。 |
 | `RunEachTargetSeparately` | 選擇性的 `Boolean` 參數。<br /><br /> 如果是 `true`，[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 工作即會一次一個叫用傳遞至 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 之清單中的每個目標，而不是同時叫用。 將此參數設定為 `true`，可保證即使先前叫用的目標失敗，還是會叫用後續的目標。 否則，建置錯誤便會停止叫用所有後續的目標。 預設為 `false`。 |
@@ -49,6 +51,7 @@ ms.locfileid: "66747357"
 | `UseResultsCache` | 選擇性的 `Boolean` 參數。<br /><br /> 如果是 `true`，將會傳回快取的結果 (如果有的話)。<br /><br />  如果執行 MSBuild 工作，將會在範圍中快取其結果 <br /><br /> (ProjectFileName, GlobalProperties)[TargetNames]<br /><br /> 做為組建項目清單 |
 
 ## <a name="remarks"></a>備註
+
  除了上述所列的參數，此項工作還會繼承 <xref:Microsoft.Build.Tasks.TaskExtension> 類別中的參數，而該類別本身又繼承 <xref:Microsoft.Build.Utilities.Task> 類別。 如需這些其他參數的清單及其描述，請參閱 [TaskExtension 基底類別](../msbuild/taskextension-base-class.md)。
 
  不同於使用 [Exec 工作](../msbuild/exec-task.md)來啟動 *MSBuild.exe*，此工作會使用相同的 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 程序來建置子專案。 父組建和子組建之間能夠共用已經建置且可略過的目標清單。 此工作的速度也會比較快，因為不會建立新的 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 程序。
@@ -60,6 +63,7 @@ ms.locfileid: "66747357"
  從 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 3.5 開始，Solution 專案現在會呈現來自其所建置之所有子專案的 TargetOutputs。
 
 ## <a name="pass-properties-to-projects"></a>將屬性傳遞至專案
+
  在早於 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 3.5 的 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 版本中，將不同的專案組傳遞到 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 項目中所列的不同專案是一項挑戰。 如果您使用了 [MSBuild 工作](../msbuild/msbuild-task.md)的 Properties 屬性，則除非您批次處理了 [MSBuild 工作](../msbuild/msbuild-task.md)，並且有條件地針對項目清單中的每個專案提供不同的屬性，否則會將其設定套用到所有已建置的專案。
 
  不過，[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 3.5 提供兩個新的保留中繼資料項目 (Properties 和 AdditionalProperties)，讓您能夠彈性地使用 [MSBuild 工作](../msbuild/msbuild-task.md)，為建置的不同專案傳遞不同的屬性。
@@ -68,9 +72,13 @@ ms.locfileid: "66747357"
 > 這些新的中繼資料項目僅適用於 [MSBuild 工作](../msbuild/msbuild-task.md)的 Projects 屬性中所傳遞的項目。
 
 ## <a name="multi-processor-build-benefits"></a>多處理器組建的優點
+
  使用這個新中繼資料主要優點之一是發生在您於多處理器系統上同時建置專案時。 中繼資料可讓您將所有專案合併成單一 [MSBuild 工作](../msbuild/msbuild-task.md)呼叫，而不需執行任何批次處理或條件式 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 工作。 而且，當您只呼叫單一 [MSBuild 工作](../msbuild/msbuild-task.md)時，將會同時建置 Projects 屬性中列出的所有專案 (不過，只有在 `BuildInParallel=true` 屬性出現於 [MSBuild 工作](../msbuild/msbuild-task.md)時)。如需詳細資訊，請參閱[同時建置多個專案](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md)。
 
 ## <a name="properties-metadata"></a>Properties 中繼資料
+
+ 當指定時，Properties 中繼資料會覆寫工作的 Properties 參數，而 [AdditionalProperties](#additionalproperties-metadata) 中繼資料則會附加至該參數的定義。
+
  常見的案例是當您使用 [MSBuild 工作](../msbuild/msbuild-task.md)建置多個方案檔時，只會使用不同的建置組態。 您可能想要使用 Debug 組態來建置方案 a1，使用 Release 組態來建置方案 a2。 在 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 2.0 中，這個專案檔看起來如下：
 
 > [!NOTE]
@@ -125,6 +133,7 @@ ms.locfileid: "66747357"
 ```
 
 ## <a name="additionalproperties-metadata"></a>AdditionalProperties 中繼資料
+
  請考慮下列案例，您正在使用 [MSBuild 工作](../msbuild/msbuild-task.md)建置兩個方案檔，同時使用 Release 組態，但一個使用 x86 架構，而另一個使用 ia64 架構。 在 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 2.0 中，您必須建立 [MSBuild 工作](../msbuild/msbuild-task.md)的多個執行個體︰一個使用 Release 組態搭配 x86 架構建置專案，另一個則使用 Release 組態搭配 ia64 架構建置專案。 您的專案檔看起來如下：
 
 ### <a name="aproj"></a>a.proj
@@ -164,6 +173,7 @@ ms.locfileid: "66747357"
 ```
 
 ## <a name="example"></a>範例
+
  下列範例會使用 `MSBuild` 工作來建置 `ProjectReferences` 項目集合所指定的專案。 所產生的目標輸出會儲存在 `AssembliesBuiltByChildProjects` 項目集合中。
 
 ```xml
@@ -187,5 +197,6 @@ ms.locfileid: "66747357"
 ```
 
 ## <a name="see-also"></a>另請參閱
+
 - [工作](../msbuild/msbuild-tasks.md)
 - [工作參考](../msbuild/msbuild-task-reference.md)

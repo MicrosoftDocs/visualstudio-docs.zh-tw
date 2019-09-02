@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 43153f86ca9ee9a26465ad910b6918aee5292a87
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fd44fdc7e365bd07f25318740fb2dcc04fe0ea9d
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62431195"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926448"
 ---
 # <a name="supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings"></a>自動程式碼 UI 測試和動作記錄的支援組態和平台
 
@@ -36,7 +36,7 @@ Visual Studio 企業版的自動程式碼 UI 測試的支援組態與平台會�
 | 作業系統 | [!INCLUDE[win7](../debugger/includes/win7_md.md)]<br /><br /> [!INCLUDE[winsvr08_r2](../debugger/includes/winsvr08_r2_md.md)]<br /><br /> [!INCLUDE[win8](../debugger/includes/win8_md.md)]<br /><br /> Windows 10 |
 | 32 位元/ 64 位元支援 | 執行 32 位元 [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)] 的 32 位元 Windows 可以測試 32 位元應用程式。<br /><br /> 執行 32 位元 [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)] 的 64 位元 Windows，可以測試具有「UI 同步處理」的 32 位元 WOW 應用程式。<br /><br /> 執行 32 位元 [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)] 的 64 位元 Windows 可以測試沒有「UI 同步處理」的 64 位元 Windows Form 和 WPF 應用程式。 |
 | 架構 | x86 和 x64。**注意：** 除非在 [!INCLUDE[win8](../debugger/includes/win8_md.md)] 或更新版本執行，否則 64 位元模式不支援 Internet Explorer。 |
-| .NET | .NET 2.0、3.0、3.5、4 和 4.5。 **注意：**[!INCLUDE[TCMext](../misc/includes/tcmext_md.md)] 和 Visual Studio 都需要 .NET 4 才能運作。 然而，支援使用列出的 .NET 版本開發的應用程式。 |
+| .NET | .NET 2.0、3.0、3.5、4 和 4.5。 **注意：** [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)] 和 Visual Studio 都需要 .NET 4 才能運作。 然而，支援使用列出的 .NET 版本開發的應用程式。 |
 
 > [!NOTE]
 > 「*UI 同步處理* 」(UI Synchronization) 功能可在每個控制項的訊息佇列中驗證播放。 如果控制項沒有回應傳送至它的事件，則會重新傳送事件。
@@ -68,7 +68,7 @@ Visual Studio 企業版的自動程式碼 UI 測試的支援組態與平台會�
 | Citrix/終端機服務 | 我們不建議在終端機伺服器上錄製動作。 錄製器不支援同時執行多個執行個體。 |
 | PowerBuilder | 部分支援。<br /><br /> 支援的程度相當於啟用 PowerBuilder 控制項的協助工具。 |
 
- 如需如何建立延伸模組以支援其他平台的資訊，請參閱[啟用控制項的自動程式化 UI 測試](../test/enable-coded-ui-testing-of-your-controls.md)和[擴充自動程式化 UI 測試和動作記錄](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md)。
+如需如何建立延伸模組以支援其他平台的資訊，請參閱[啟用控制項的自動程式化 UI 測試](../test/enable-coded-ui-testing-of-your-controls.md)和[擴充自動程式化 UI 測試和動作記錄](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md)。
 
 ## <a name="see-also"></a>另請參閱
 

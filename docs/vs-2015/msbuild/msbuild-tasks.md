@@ -13,16 +13,16 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 756c19da1aeb8878c2d045f4ee471d8449d2a954
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59650588"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68154807"
 ---
 # <a name="msbuild-tasks"></a>MSBuild 工作
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-組建平台必須能夠在建置程序期間執行任意數目的動作。 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 會使用「工作」來執行這些動作。 工作是 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 用來執行不可部分完成之建置作業的可執行程式碼單元。  
+組建平台必須能夠在建置程序期間執行任意數目的動作。 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 會使用「工作」  來執行這些動作。 工作是 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 用來執行不可部分完成之建置作業的可執行程式碼單元。  
   
 ## <a name="task-logic"></a>工作邏輯  
  [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] XML 專案檔格式無法完全獨立執行建置作業，因此，必須在專案檔以外的地方實作工作邏輯。  
@@ -67,7 +67,7 @@ ms.locfileid: "59650588"
 ## <a name="overridden-tasks"></a>覆寫的工作  
  [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 會在數個位置中尋找工作。 第一個位置是在儲存於 .NET Framework 目錄中副檔名為 .OverrideTasks 的檔案中。 這些檔案中的工作會覆寫任何其他具有相同名稱的工作，包括專案檔中的工作。 第二個位置是在 .NET Framework 目錄中副檔名為 .Tasks 的檔案中。 如果在這兩個位置中找不到工作，就會使用專案檔中的工作。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [MSBuild 概念](../msbuild/msbuild-concepts.md)   
  [MSBuild](msbuild.md)   
  [工作撰寫](../msbuild/task-writing.md)   

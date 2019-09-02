@@ -15,11 +15,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 932dbc9e3971598748e462de92280ac7112f8c62
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59665112"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68199195"
 ---
 # <a name="list-call-stack-command"></a>列出呼叫堆疊命令
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -99,7 +99,7 @@ kb 2
 >Debug.CallStack /Count:4 /ShowTypes:yes  
 ```  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [列出反組譯碼命令](../../ide/reference/list-disassembly-command.md)   
  [列出執行緒命令](../../ide/reference/list-threads-command.md)   
  [Visual Studio 命令](../../ide/reference/visual-studio-commands.md)   

@@ -8,17 +8,17 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f091ea0841ac66cd106c3fa613f1219ddaaffcf
-ms.sourcegitcommit: aeb1a1135dd789551e15aa5124099a5fe3f0f32b
+ms.openlocfilehash: e69c75b00ddb98148e9985820e577031ead0a275
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "66501208"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68918825"
 ---
 # <a name="step-5-add-controls-to-your-form"></a>步驟 5：將控制項新增至表單
 在這個步驟中，您要將控制項 (例如 <xref:System.Windows.Forms.PictureBox> 控制項和 <xref:System.Windows.Forms.CheckBox> 控制項) 新增至表單。 然後將 <xref:System.Windows.Forms.Button> 控制項加入至表單。
 
- ![影片連結](../data-tools/media/playvideo.gif)如需本主題的影片版本，請參閱[教學課程 1：Create a picture viewer in Visual Basic - Video 2](http://go.microsoft.com/fwlink/?LinkId=205211) (教學課程 1：在 Visual Basic 中建立圖片檢視器 - 影片 2) 或 [Tutorial 1:Create a picture viewer in C# - Video 2](http://go.microsoft.com/fwlink/?LinkId=205200) (教學課程 1：在 C# 中建立圖片檢視器 - 影片 2)。 這些影片使用舊版 Visual Studio，因此有一些功能表命令以及某些使用者介面項目會有些微差異。 不過，概念和程序在目前 Visual Studio 版本中的運作方式雷同。
+![影片連結](../data-tools/media/playvideo.gif)如需本主題的影片版本，請參閱[教學課程 1：Create a picture viewer in Visual Basic - Video 2](http://go.microsoft.com/fwlink/?LinkId=205211) (教學課程 1：在 Visual Basic 中建立圖片檢視器 - 影片 2) 或 [Tutorial 1:Create a picture viewer in C# - Video 2](http://go.microsoft.com/fwlink/?LinkId=205200) (教學課程 1：在 C# 中建立圖片檢視器 - 影片 2)。 這些影片使用舊版 Visual Studio，因此有一些功能表命令以及某些使用者介面項目會有些微差異。 不過，概念和程序在目前 Visual Studio 版本中的運作方式雷同。
 
 ## <a name="to-add-controls-to-your-form"></a>若要將控制項加入至表單
 

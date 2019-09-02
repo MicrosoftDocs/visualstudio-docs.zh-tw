@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: dc94f3486a4a290dbcdff40303f58b8b42f3f9d9
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 7aef839027639770e60292210aaddf998c97fce0
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67825858"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926547"
 ---
 # <a name="troubleshoot-code-coverage"></a>對程式碼涵蓋範圍進行疑難排解
 
@@ -29,7 +29,7 @@ Visual Studio 中的程式碼涵蓋範圍分析工具會收集原生組件和 Ma
 ## <a name="possible-reasons-for-seeing-no-results-or-old-results"></a>看不見任何結果或看見舊結果的可能原因
 
 ### <a name="do-you-have-the-right-edition-of-visual-studio"></a>您的 Visual Studio 版本是否正確?
- 您需具備 Visual Studio 企業版。
+您需具備 Visual Studio 企業版。
 
 ### <a name="no-tests-were-executed"></a>沒有執行過任何測試
 

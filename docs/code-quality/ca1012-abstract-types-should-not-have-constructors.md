@@ -16,12 +16,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: f4023c993a153a64070bfb5e975a6d0f326b65d3
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: d8cc63e95792d64fc82dc3ad4af022dc5e9c292b
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65842453"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69547824"
 ---
 # <a name="ca1012-abstract-types-should-not-have-constructors"></a>CA1012:抽象類型不應該有建構函式
 
@@ -29,45 +29,45 @@ ms.locfileid: "65842453"
 |-|-|
 |TypeName|AbstractTypesShouldNotHaveConstructors|
 |CheckId|CA1012|
-|分類|Microsoft.Design|
-|中斷變更|非重大|
+|Category|Microsoft.Design|
+|中斷變更|不中斷|
 
 ## <a name="cause"></a>原因
 
-類型為抽象，並且具有建構函式。
+型別是抽象的, 而且具有一個函式。
 
-根據預設，此規則只會查看外部可見的類型，但這[可設定](#configurability)。
+根據預設, 此規則只會查看外部可見的類型, 但這是[可](#configurability)設定的。
 
 ## <a name="rule-description"></a>規則描述
 
-只有衍生類型 (Derived Type) 可以呼叫抽象類型上的建構函式。 因為公用建構函式建立類型執行個體，而且您無法建立抽象類型的執行個體，具有公用建構函式的抽象類型設計不正確。
+只有衍生類型 (Derived Type) 可以呼叫抽象類型上的建構函式。 因為公用的函式會建立類型的實例, 而且您無法建立抽象類別型的實例, 所以具有公用函數的抽象類別型設計不正確。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
 
-若要修正此規則的違規情形，讓受保護的建構函式或是未宣告為抽象型別。
+若要修正此規則的違規, 請將此方法設為受保護, 或不要將類型宣告為抽象。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
 
-請勿隱藏此規則的警告。 抽象型別具有公用建構函式。
+請勿隱藏此規則的警告。 抽象類別型具有公用的函式。
 
-## <a name="configurability"></a>設定功能
+## <a name="configurability"></a>可設定性
 
-如果您執行這項規則，從[FxCop 分析器](install-fxcop-analyzers.md)（而不是透過靜態程式碼分析），您可以設定的哪些部分您程式碼基底上執行這項規則，根據其存取範圍。 比方說，若要指定執行規則時，應該只針對非公用 API 介面，將下列索引鍵 / 值組新增至專案中的.editorconfig 檔案：
+如果您是從[FxCop 分析器](install-fxcop-analyzers.md)執行此規則 (而不是使用舊版分析), 您可以根據其存取範圍, 設定程式碼基底中的哪些部分來執行此規則。 例如, 若要指定規則只針對非公用 API 介面執行, 請將下列機碼值組新增至專案中的 editorconfig 檔案:
 
 ```ini
 dotnet_code_quality.ca1012.api_surface = private, internal
 ```
 
-此類別 （設計） 中，您可以設定此選項，只是這項規則，所有規則，或所有的規則。 如需詳細資訊，請參閱 <<c0> [ 設定的 FxCop 分析器](configure-fxcop-analyzers.md)。
+您可以只針對此規則、所有規則或此類別中的所有規則 (設計) 設定此選項。 如需詳細資訊, 請參閱[設定 FxCop 分析器](configure-fxcop-analyzers.md)。
 
 ## <a name="example"></a>範例
 
-下列程式碼片段包含違反此規則的抽象型別。
+下列程式碼片段包含違反此規則的抽象類別型。
 
 [!code-vb[FxCop.Design.AbstractTypeBad#1](../code-quality/codesnippet/VisualBasic/ca1012-abstract-types-should-not-have-constructors_1.vb)]
 [!code-csharp[FxCop.Design.AbstractTypeBad#1](../code-quality/codesnippet/CSharp/ca1012-abstract-types-should-not-have-constructors_1.cs)]
 
-下列程式碼片段會藉由變更從建構函式的協助工具修正上述違規`public`至`protected`。
+下列程式碼片段會藉由將函式的存取範圍從`public`變更為, 來`protected`修正先前的違規。
 
 [!code-csharp[FxCop.Design.AbstractTypeGood#1](../code-quality/codesnippet/CSharp/ca1012-abstract-types-should-not-have-constructors_2.cs)]
 [!code-vb[FxCop.Design.AbstractTypeGood#1](../code-quality/codesnippet/VisualBasic/ca1012-abstract-types-should-not-have-constructors_2.vb)]

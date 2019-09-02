@@ -1,5 +1,6 @@
 ---
-title: Blend 中的畫筆工具輔助按鍵
+title: 畫筆工具輔助按鍵
+titleSuffix: Blend for Visual Studio
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: c3ab14c6-a320-46db-a6b3-7fd1ca261587
@@ -8,14 +9,15 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f2aa8515dbe444ea3968714400b751d661b2a81
-ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
+ms.openlocfilehash: 7e68e06a371f039c7d08b56b89305b1fe932a54a
+ms.sourcegitcommit: 90c3187d804ad7544367829d07ed4b47d3f8a72d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66820450"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68822121"
 ---
-# <a name="pen-tool-modifier-keys-in-blend"></a>Blend 中的畫筆工具輔助按鍵
+# <a name="pen-tool-modifier-keys-in-blend-for-visual-studio"></a>Blend for Visual Studio 中的畫筆工具輔助按鍵
+
 下表列出當您使用 [畫筆]  工具 ![[畫筆] 工具](../designers/media/d514358f-185a-412f-a55d-36633b25dc8a.png) 建立路徑時，可用於修改路徑的快速鍵。 您也可以使用 [畫筆]  工具，加入或移除現有路徑上的點，或結合兩個現有路徑。
 
 |若要執行這項操作|請執行|Pointer|
@@ -36,7 +38,6 @@ ms.locfileid: "66820450"
 
 ## <a name="see-also"></a>另請參閱
 
-- [鍵盤快速鍵和輔助按鍵](../designers/keyboard-shortcuts-and-modifier-keys-in-blend.md)
 - [畫板輔助按鍵](../designers/artboard-modifier-keys-in-blend.md)
 - [直接選取工具輔助按鍵](../designers/direct-selection-tool-modifier-keys-in-blend.md)
 - [繪製圖案與路徑](../designers/draw-shapes-and-paths.md)

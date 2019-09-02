@@ -6,12 +6,12 @@ manager: evelynp
 ms.date: 12/19/2018
 ms.topic: conceptual
 description: 了解所選取 Visual Studio 訂用帳戶隨附的 Power BI Pro 訂用帳戶。
-ms.openlocfilehash: d696a72cc1ab411c9bd01671d9b57e335f751261
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 499a4ee168aaab7dfee2527bdbf10cc3b10313b8
+ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67824623"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68787968"
 ---
 # <a name="power-bi-pro-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶中的 Power BI Pro
 
@@ -33,8 +33,6 @@ ms.locfileid: "67824623"
    > ![Power BI Pro 權益現有帳戶](_img/vs-pbi/vs-pbi-existing-account.png)
 
 4. 若要建立新的帳戶，請提供您的連絡資訊，然後按一下 [下一步]  。
-   > [!div class="mx-imgBorder"]
-   > ![Power BI Pro 權益建立帳戶](_img/vs-pbi/vs-pbi-create-account-cropped.png)
 
 5. 接下來，建立您的使用者識別碼和密碼。  如果您已經有帳戶，但想要建立新帳戶，您必須提供和所用現有帳戶不同的公司名稱。  按一下 [Create my account] (建立我的帳戶)  。
    > [!div class="mx-imgBorder"]
@@ -45,8 +43,6 @@ ms.locfileid: "67824623"
    > ![Power BI Pro 權益不是傀儡程式](_img/vs-pbi/vs-pbi-robot1-cropped.png)
 
 7. 輸入您收到的驗證碼，然後按一下 [下一步]  。
-   > [!div class="mx-imgBorder"]
-   > ![Power BI Pro 權益不是傀儡程式 2](_img/vs-pbi/vs-pbi-robot2-cropped.png)
 
 8. 提供您的連絡資訊，然後按一下 [下一步]  。
    > [!div class="mx-imgBorder"]
@@ -59,8 +55,6 @@ ms.locfileid: "67824623"
     > ![Power BI Pro 權益連絡資訊](_img/vs-pbi/vs-pbi-payment-blurred-cropped.png)
 
 11. 下一個頁面會確認您已完成所有設定，可以開始使用 Power BI Pro。  頁面會提供登入頁面的連結。  建議您記下登入頁面連結及使用者識別碼。  (設定帳戶時提供的電子郵件地址也會收到歡迎郵件。)您可能也會看到自動化的 Office 365 [助理] 視窗，如有問題可以使用它。  按一下 [開始使用]  繼續。
-    > [!div class="mx-imgBorder"]
-    > ![Power BI Pro 權益設定完成](_img/vs-pbi/vs-pbi-all-set-cropped.png)
 
 12. 設定好 Power BI Pro 帳戶之後，就會看到 Office 365 系統管理中心，您可在此管理使用者和網域、安裝 Office 軟體，以及了解 Office 365。  就這麼容易！  隨時可以開始。
 

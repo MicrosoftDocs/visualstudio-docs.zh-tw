@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0c4216b52fa4a23848a82548c36c34592deacc0b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4a45b7061ae9d183ec7ee02a3b733ee9340b3689
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62545455"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68921309"
 ---
 # <a name="ca1901-pinvoke-declarations-should-be-portable"></a>CA1901:P/Invoke 宣告應該為可移植的
 
@@ -28,26 +28,26 @@ ms.locfileid: "62545455"
 |TypeName|PInvokeDeclarationsShouldBePortable|
 |CheckId|CA1901|
 |分類|Microsoft.Portability|
-|中斷變更|中斷-如果 P/Invoke 是組件外部可見。 非中斷-如果 P/Invoke 不是組件外部可見。|
+|中斷變更|中斷-如果 P/Invoke 在元件外部是可見的。 不中斷-如果在元件外部看不到 P/Invoke。|
 
 ## <a name="cause"></a>原因
- 此規則會評估每個參數的大小和 P/Invoke 的傳回值，並確認其大小，封送處理至 unmanaged 程式碼在 32 位元和 64 位元平台上時正確無誤。 此規則的最常見的違規是傳遞其中一個平台相依，指標大小的變數是必要的固定大小的整數。
+此規則會評估 P/Invoke 的每個參數和傳回值的大小, 並在32位和64位平臺上封送處理至未受管理的程式碼時, 驗證其大小是否正確。 此規則最常見的違規是傳遞固定大小的整數, 其中需要平臺相依的指標大小變數。
 
 ## <a name="rule-description"></a>規則描述
- 下列案例其中一種方法違反此規則就會發生：
+下列其中一種情況違反此規則:
 
-- 傳回值或參數的型別為固定大小的整數時應該鍵入為`IntPtr`。
+- 當傳回值或參數的類型`IntPtr`為時, 會將其類型設定為固定大小的整數。
 
-- 傳回值或參數的型別為`IntPtr`時它應該鍵入為固定大小的整數。
+- `IntPtr`當傳回值或參數的類型應為固定大小的整數時, 會將其類型設定為。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
- 您可以使用，以修正此違規`IntPtr`或是`UIntPtr`來表示控制代碼，而不是`Int32`或`UInt32`。
+`IntPtr`您可以使用`UInt32`或`UIntPtr`來表示控制碼, 而不是或,以修正此違規。`Int32`
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
- 您不應該隱藏這個警告。
+您不應該隱藏這個警告。
 
 ## <a name="example"></a>範例
- 下列範例會示範這項規則的違規情形。
+下列範例示範此規則的違規。
 
 ```csharp
 internal class NativeMethods
@@ -58,7 +58,7 @@ internal class NativeMethods
 }
 ```
 
- 在此範例中，`nIconIndex`參數宣告為`IntPtr`，這是 4 個位元組寬的 32 位元平台和 8 個位元組寬的 64 位元平台上。 在 unmanaged 宣告接下來，您可以看到`nIconIndex`是 4 位元組不帶正負號的整數，在所有平台上。
+在此範例中, `nIconIndex`參數會宣告`IntPtr`為, 在32位平臺上為4個位元組寬, 64 位平臺上為8個位元組寬。 在接下來的非受控宣告中, 您可以`nIconIndex`看到在所有平臺上都是4位元組不帶正負號的整數。
 
 ```csharp
 HICON ExtractIcon(HINSTANCE hInst, LPCTSTR lpszExeFileName,
@@ -66,7 +66,7 @@ HICON ExtractIcon(HINSTANCE hInst, LPCTSTR lpszExeFileName,
 ```
 
 ## <a name="example"></a>範例
- 若要修正此違規情形，請將宣告變更如下：
+若要修正違規, 請將宣告變更為下列內容:
 
 ```csharp
 internal class NativeMethods{
@@ -77,4 +77,4 @@ internal class NativeMethods{
 ```
 
 ## <a name="see-also"></a>另請參閱
- [Portability Warnings](../code-quality/portability-warnings.md)
+[Portability Warnings](../code-quality/portability-warnings.md)

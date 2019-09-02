@@ -10,11 +10,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9746b156d2ec959f2ffb5bbff41b3891516d130f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60074108"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68193615"
 ---
 # <a name="what39s-new-in-msbuild-120"></a>MSBuild 12.0 的新功能
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,5 +41,5 @@ MSBuild 現在是做為 Visual Studio 的一部分安裝，而非 .NET Framework
   
 - `MSBuildToolsPath` 和 `MSBuildFrameworkToolsPath` 擁有 32 位元對等項目，也就是 `MSBuildToolsPath32` 和 `MSBuildFrameworkToolsPath32`，無論使用的是 32 位元或 64 位元的 MSBuild，一律會指向 32 位元位置。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 [MSBuild](msbuild.md)

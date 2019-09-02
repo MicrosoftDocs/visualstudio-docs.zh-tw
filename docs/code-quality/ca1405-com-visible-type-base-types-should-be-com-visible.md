@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 65bddd599bb544e000ca1d1269b84e53f51843bb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 56e6e7a53f5f8b07d1afc8b68ef641c576524316
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62546068"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68922061"
 ---
 # <a name="ca1405-com-visible-type-base-types-should-be-com-visible"></a>CA1405:COM 可見類型的基底類型應該是 COM 可見
 
@@ -34,22 +34,22 @@ ms.locfileid: "62546068"
 |中斷變更|DependsOnFix|
 
 ## <a name="cause"></a>原因
- 元件物件模型 (COM) 可見的型別衍生自不是 COM 可見的類型。
+元件物件模型 (COM) 可見類型衍生自不是 COM 可見的類型。
 
 ## <a name="rule-description"></a>規則描述
- 當 COM 可見型別會將成員加入新的版本中時，它必須遵守嚴格的指導方針，以避免中斷繫結至目前版本的 COM 用戶端。 COM 看不到的型別會假設它沒有加入新成員時，請遵循這些 COM 的版本控制規則。 不過，如果 COM 可見型別衍生自 COM 可見型別，會公開類別介面的<xref:System.Runtime.InteropServices.ClassInterfaceType?displayProperty=fullName>或<xref:System.Runtime.InteropServices.ClassInterfaceType>（預設值），基底類型的所有公用成員 （除非有特別標示為 COM 可見，這會是備援）公開至 com。 如果基底型別會加入新成員，在後續版本中，可能會中斷任何繫結至衍生型別的類別介面的 COM 用戶端。 COM 可見類型應該只從 COM 可見的類型，以降低中斷 COM 用戶端的衍生。
+當 COM 可見類型在新版本中加入成員時, 必須遵守嚴格的方針, 以避免中斷系結至目前版本的 COM 用戶端。 COM 看不到的類型假設在加入新成員時, 不需要遵循這些 COM 版本控制規則。 不過, 如果 com 可見型別衍生自 com 不可見型別, 並公開<xref:System.Runtime.InteropServices.ClassInterfaceType?displayProperty=fullName>或<xref:System.Runtime.InteropServices.ClassInterfaceType>的類別介面 (預設值), 則基底型別的所有公用成員 (除非特別標示為 COM 隱藏, 而這會是多餘的)會公開至 COM。 如果基底類型在後續版本中加入新成員, 系結至衍生類型之類別介面的任何 COM 用戶端可能會中斷。 COM 可見類型應該只衍生自 COM 可見類型, 以減少中斷 COM 用戶端的機會。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
- 若要修正此規則的違規情形，讓 COM 可見的基底類型或衍生的型別 COM 變成不可見。
+若要修正此規則的違規情形, 請將基底類型設為可見, 或衍生類型 COM 不可見。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
- 請勿隱藏此規則的警告。
+請勿隱藏此規則的警告。
 
 ## <a name="example"></a>範例
- 下列範例顯示違反規則的型別。
+下列範例顯示違反規則的類型。
 
- [!code-vb[FxCop.Interoperability.ComBaseTypes#1](../code-quality/codesnippet/VisualBasic/ca1405-com-visible-type-base-types-should-be-com-visible_1.vb)]
- [!code-csharp[FxCop.Interoperability.ComBaseTypes#1](../code-quality/codesnippet/CSharp/ca1405-com-visible-type-base-types-should-be-com-visible_1.cs)]
+[!code-vb[FxCop.Interoperability.ComBaseTypes#1](../code-quality/codesnippet/VisualBasic/ca1405-com-visible-type-base-types-should-be-com-visible_1.vb)]
+[!code-csharp[FxCop.Interoperability.ComBaseTypes#1](../code-quality/codesnippet/CSharp/ca1405-com-visible-type-base-types-should-be-com-visible_1.cs)]
 
 ## <a name="see-also"></a>另請參閱
 

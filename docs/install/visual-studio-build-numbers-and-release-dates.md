@@ -2,24 +2,22 @@
 title: Visual Studio 組建編號和發行日期
 titleSuffix: ''
 description: Visual Studio 已發行版本和組件編號的清單，依日期排序。
-keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.date: 07/10/2019
+ms.date: 08/20/2019
 ms.topic: reference
-helpviewer_keywords: ''
 ms.custom: seodec18
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 5e9ed79d26c5bbb88aa28cbb8d23c82b29b3e1de
-ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
+ms.openlocfilehash: d9d67ce7365a60bd744e0237d95b41f9dea2c641
+ms.sourcegitcommit: 673b9364fc9a96b027662dcb4cf5d61cab60ef11
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67785032"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "69891303"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Visual Studio 組建編號和發行日期
 
@@ -31,6 +29,14 @@ ms.locfileid: "67785032"
 
 | **版本**| **通道** | **發行日期** | **組建版本** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.2.3 | 版本 | 2019 年 8 月 20 日 | 16.2.29215.179 |
+| 16.2.2 | 版本 | 2019 年 8 月 13 日 | 16.2.29209.62 |
+| 16.3.0 | Preview 2 | 2019 年 8 月 13 日 | 16.3.29209.152 |
+| 16.0.7 | 版本 | 2019 年 8 月 13 日 | 16.0.28803.571 |
+| 16.2.1 | 版本 | 2019 年 8 月 6 日 | 16.2.29201.188 |
+| 16.2.0 | 版本 | 2019 年 7 月 24 日 | 16.2.29123.88 |
+| 16.3.0 | Preview 1 | 2019 年 7 月 24 日 | 16.3.29123.89 |
+| 16.2.0 | Preview 4 | 2019 年 7 月 16 日 | 16.2.29111.141 |
 | 16.1.6 | 版本 | 2019 年 7 月 9 日 | 16.1.29102.190 |
 | 16.0.6 | 版本 | 2019 年 7 月 9 日 | 16.0.28803.540 |
 | 16.1.5 | 版本 | 2019 年 7 月 2 日 | 16.1.29025.244 |
@@ -85,6 +91,8 @@ ms.locfileid: "67785032"
 
 | **版本**| **通道** | **發行日期** | **組建版本** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 15.9.15 | 版本 | 2019 年 8 月 13 日 | 15.9.28307.812 |
+| 15.0.26 | 版本 | 2019 年 8 月 13 日 | 15.0.26228.96 |
 | 15.9.14 | 版本 | 2019 年 7 月 9 日 | 15.9.28307.770 |
 | 15.0.25 | 版本 | 2019 年 7 月 9 日 | 15.0.26228.92 |
 | 15.9.13 | 版本 | 2019 年 6 月 11 日 | 15.9.28307.718 |

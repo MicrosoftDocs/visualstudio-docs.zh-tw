@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b20cf3692cf76f602eb11b0a53a1669c919f1679
-ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
+ms.openlocfilehash: c4e461fd69e048e406fbe062ff297da9baab3696
+ms.sourcegitcommit: 8562a337cc9f674c756a4a0b2c7e288ebd61b51e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67043581"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68345726"
 ---
 # <a name="use-regular-expressions-in-visual-studio"></a>在 Visual Studio 中使用規則運算式
 
@@ -29,11 +29,11 @@ Visual Studio 會使用 [.NET 規則運算式](/dotnet/standard/base-types/regul
 
 ## <a name="regular-expression-examples"></a>規則運算式範例
 
-下表包含一些規則運算式字元、 運算子、 建構和模式的範例。 如需更完整的參考，請參閱[規則運算式語言](/dotnet/standard/base-types/regular-expression-language-quick-reference)。
+下表包含一些規則運算式字元、運算子、建構及模式的範例。 如需更完整的參考，請參閱[規則運算式語言](/dotnet/standard/base-types/regular-expression-language-quick-reference)。
 
-|用途|運算式|範例|
+|目的|運算是|範例|
 |-------------|----------------|-------------|
-|比對任何單一字元 (分行符號除外)。 如需詳細資訊，請參閱[任何字元](/dotnet/standard/base-types/character-classes-in-regular-expressions#any-character-)。|。|`a.o` 會比對 "around" 中的 "aro" 和 "about" 中的 "abo"，但不比對 "across" 中的 "acro"。|
+|比對任何單一字元 (分行符號除外)。 如需詳細資訊，請參閱[任何字元](/dotnet/standard/base-types/character-classes-in-regular-expressions#any-character-)。|上也提供本文中使用的原始碼。|`a.o` 會比對 "around" 中的 "aro" 和 "about" 中的 "abo"，但不比對 "across" 中的 "acro"。|
 |比對先前運算式中零個或多個項目 (比對的字元越多越好)。 如需詳細資訊，請參閱[比對零或多次](/dotnet/standard/base-types/quantifiers-in-regular-expressions#match-zero-or-more-times-)。|*|`a*r` 會比對 "rack" 中的 "r"、"ark" 中的 "ar"，以及 "aardvark" 中的 "aar"|
 |比對任何字元零或多次 (萬用字元 \*)|.*|`c.*e` 會比對 "racket" 中的 "cke"、"comment" 中的 "comme"，以及 "code" 中的 "code"|
 |比對先前運算式中一個或多個項目 (比對的字元越多越好)。 如需詳細資訊，請參閱[比對一或多次](/dotnet/standard/base-types/quantifiers-in-regular-expressions#match-one-or-more-times-)。|+|`e.+d` 會比對 "feeder" 中的 "eed"，但不比對 "ed"。|
@@ -45,7 +45,7 @@ Visual Studio 會使用 [.NET 規則運算式](/dotnet/standard/base-types/regul
 |將比對字串錨定至檔案結尾|$|`end$` 只會比對出現在檔案結尾的 "end"。|
 |比對集合中的任何單一字元|[abc]|`b[abc]` 會比對 "ba"、"bb" 和 "bc"。|
 |比對字元範圍之間的任何字元|[a-f]|`be[n-t]` 會比對 "between" 中的 "bet"、"beneath" 中的 "ben" 和 "beside" 中的 "bes"，但不比對 "below"。|
-|擷取和隱含編號包含在括號內的運算式|()|`([a-z])X\1` 會比對 "aXa" 和 "bXb"，但不比對 "aXb"。 "\1" 表示第一個運算式群組 "[a-z]"。|
+|擷取和隱含編號包含在括號內的運算式|()|`([a-z])X\1` 會比對 "aXa" 和 "bXb"，但不比對 "aXb"。 "\1" 表示第一個運算式群組 "[a-z]"。 如需詳細資訊，請參閱[擷取群組和取代模式](#capture-groups-and-replacement-patterns)。 |
 |使比對失效|(?!abc)|`real(?!ity)` 會比對 "realty" 和 "really" 中的 "real"，但不比對 "reality" 中的 "real"。 它也會在 "realityreal" 中找到第二個 "real" (但不是第一個 "real")。|
 |比對任何不在一組特定字元中的字元。 如需詳細資訊，請參閱[負字元群組](/dotnet/standard/base-types/character-classes-in-regular-expressions#negative-character-group-)。|[^abc]|`be[^n-t]` 會比對 "before" 中的 "bef"、"behind" 中的 "beh" 和 "below" 中的 "bel"，但不比對 "beneath"。|
 |比對符號之前或之後的運算式|&#124;|`(sponge\|mud) bath` 會比對 "sponge bath" 和 "mud bath"。|
@@ -91,7 +91,7 @@ Visual Studio 會使用 [.NET 規則運算式](/dotnet/standard/base-types/regul
 
 - **在規則運算式內**：使用 `\k<name>`。 例如，規則運算式 `(?<repeated>\w+)\s\k<repeated>` 中的 `\k<repeated>` 參考名稱為 `repeated` 且子運算式為 `\w+` 的擷取群組。
 
-- **在取代模式中**：使用 `${name}`。 例如，`${repeated}`。
+- **在取代模式中**：使用 `${name}`。 例如： `${repeated}` 。
 
 舉例來說，下圖顯示規則運算式 `(?<repeated>\w+)\s\k<repeated>` 和取代字串 `${repeated}`。 規則運算式和取代模式會參考名為 `repeated` 的擷取群組。 當您在 Visual Studio 的 [快速取代]  對話方塊中選擇 [全部取代]  時，會將重複的字組從文字中移除。
 

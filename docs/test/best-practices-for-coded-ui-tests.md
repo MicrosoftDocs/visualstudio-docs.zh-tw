@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fc2f56df75cd9abadde8474057f762118c6a840a
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 896531325b3630b97a5cc076955fae6201defac6
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67826085"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68870196"
 ---
 # <a name="best-practices-for-coded-ui-tests"></a>自動程式化 UI 測試的最佳做法
 
@@ -42,11 +42,11 @@ ms.locfileid: "67826085"
 
 - 如果使用者介面 (UI) 有所變更，請重新錄製測試方法或判斷提示方法，或重新錄製現有測試方法受影響的區段。
 
-- 為您受測試之應用程式中的每個模組建立個別的 <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap> 檔案。 如需詳細資訊，請參閱[測試含有多個 UI 對應的大型應用程式](../test/testing-a-large-application-with-multiple-ui-maps.md)。
+- 為您應用程式中受測試的每個模組建立個別的 [UIMap](/previous-versions/dd580454(v=vs.140)) 檔案。 如需詳細資訊，請參閱[測試含有多個 UI 對應的大型應用程式](../test/testing-a-large-application-with-multiple-ui-maps.md)。
 
 - 當您建立 UI 控制項時，應在受測試的應用程式中使用有意義的名稱。 使用有意義的名稱可讓自動產生的控制項名稱更加清楚且容易使用。
 
-- 如果要使用 API 撰寫程式碼以建立判斷提示，請為 UIMap.cs  檔案中屬於 <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap> 類別的每個判斷提示建立一個方法。 若要執行判斷提示，請從您的測試方法中呼叫此方法。
+- 如果要使用 API 撰寫程式碼以建立判斷提示，請為 [UIMap](/previous-versions/dd580454(v=vs.140)) 類別中屬於 *UIMap.cs* 檔案的每個判斷提示建立一個方法。 若要執行判斷提示，請從您的測試方法中呼叫此方法。
 
 - 如果要直接使用 API 撰寫程式碼，請盡可能在您的程式碼中使用 UIMap.Designer.cs  檔案所產生之類別中的屬性和方法。 這些類別會使您的工作更容易、更可靠，並且有助於您提高生產力。
 
@@ -87,7 +87,7 @@ Playback.PlaybackSettings.WaitForReadyLevel = WaitForReadyLevel.UIThreadOnly;
 
 ## <a name="see-also"></a>另請參閱
 
-- <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap>
+- [UIMap](/previous-versions/dd580454(v=vs.140))
 - <xref:Microsoft.VisualStudio.TestTools.UITesting>
 - [使用 UI 自動化來測試您的程式碼](../test/use-ui-automation-to-test-your-code.md)
 - [建立自動程式化 UI 測試](../test/use-ui-automation-to-test-your-code.md)

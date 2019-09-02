@@ -9,12 +9,12 @@ ms.date: 11/13/2017
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 15888341bf3cc7a4e9f4739ed37283e11c5ce75e
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: a81c1869bf7587aa30dbc02f0e9aec4c97776e5f
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67821412"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68918049"
 ---
 # <a name="installation"></a>安裝
 
@@ -37,14 +37,14 @@ Visual Studio Tools for AI 可以安裝在 Windows 64 位元作業系統上。
 
 ## <a name="prepare-your-local-machine"></a>準備本機電腦
 
-在本機電腦上為深度學習模型定型之前，請確定您已安裝適用的先決條件。 這包括確定您的 NVIDIA GPU (如果有的話) 有最新的驅動程式與程式庫。 您也應該確定已安裝 Python 和 Python 程式庫 (例如 NumPy、SciPy)，以及您打算在專案中使用的適當深度學習架構，例如 Microsoft Cognitive Toolkit (CNTK)、TensorFlow、Caffe2、MXNet、Keras、Theano、PyTorch 與 Chainer。
+在本機電腦上為深度學習模型定型之前，請確定您已安裝適用的先決條件。 這包括確定您的 NVIDIA GPU (如果有的話) 有最新的驅動程式與程式庫。 此外，請確定您已安裝 Python 和 Python 程式庫 (例如 NumPy、SciPy)，以及您打算在專案中使用的適當深度學習架構，例如 Microsoft Cognitive Toolkit (CNTK)、TensorFlow、Caffe2、MXNet、Keras、Theano、PyTorch 與 Chainer。
 
 > [!NOTE]
 > 以下各小節中的軟體簡介摘錄自其首頁。
 
 ### <a name="nvidia-gpu-driver"></a>NVIDIA GPU 驅動程式
 
-深度學習架構利用 NVIDIA GPU 讓電腦以近似真正人工智慧的速度、正確性和規模進行學習。 如果您的電腦有 NVIDIA GPU 卡，請前往[這裡](http://www.nvidia.com/Download/index.aspx)或嘗試更新作業系統以安裝最新的驅動程式。
+深度學習架構利用 NVIDIA GPU 讓電腦以近似真正人工智慧的速度、正確性和規模進行學習。 如果您的電腦有 NVIDIA GPU 卡，請參閱 [NVIDIA 驅動程式下載](http://www.nvidia.com/Download/index.aspx)或嘗試進行作業系統更新，以安裝最新的驅動程式。
 
 ### <a name="cuda"></a>CUDA
 
@@ -52,7 +52,7 @@ Visual Studio Tools for AI 可以安裝在 Windows 64 位元作業系統上。
 
 安裝 CUDA
 
-- 前往這個[網站](https://developer.nvidia.com/cuda-80-ga2-download-archive)、下載 CUDA 並加以安裝。
+- 造訪此[網站](https://developer.nvidia.com/cuda-80-ga2-download-archive) \(英文\)，下載 CUDA 並加以安裝。
 - 請務必安裝 CUDA 執行階段程式庫，然後將 CUDA 二進位檔路徑新增至 %PATH% 或 $Path 環境變數。
 - 在 Windows 上，這個路徑預設為 "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\bin"。
 
@@ -137,11 +137,11 @@ pip3.5 install -U numpy scipy
 > [!NOTE]
 > CNTK 目前不支援 macOS。
 
-若要安裝 CNTK Python 套件，請參閱[如何安裝 CNTK](https://docs.microsoft.com/cognitive-toolkit/Setup-CNTK-on-your-machine)
+若要安裝 CNTK Python 套件，請參閱[如何安裝 CNTK](https://docs.microsoft.com/cognitive-toolkit/Setup-CNTK-on-your-machine) \(英文\)。
 
 ### <a name="tensorflow"></a>Tensorflow
 
-[TensorFlow](https://www.tensorflow.org/) 是使用資料流程圖表進行數值計算的開放原始碼軟體程式庫。 如需詳細的安裝說明，請參閱[這裡](https://www.tensorflow.org/install/)。
+[TensorFlow](https://www.tensorflow.org/) \(英文\) 是使用資料流程圖表進行數值計算的開放原始碼軟體程式庫。 如需詳細的安裝說明，請參閱[這裡](https://www.tensorflow.org/install/)。
 
 > [!NOTE]
 > 從 1.2 版開始，TensorFlow 不再為 macOS 提供 GPU 支援。
@@ -174,7 +174,7 @@ pip3.5 install -U numpy scipy
 
 ### <a name="keras"></a>Keras
 
-[Keras](https://keras.io/) 是以 Python 撰寫且能夠在 CNTK、TensorFlow 或 Theano 上執行的高階類神經網路 API。 其開發重點在於加快試驗速度。 能夠盡可能以最低延遲來實現構想是進行理想研究的關鍵。
+[Keras](https://keras.io/) \(英文\) 是以 Python 撰寫，能夠在 CNTK、TensorFlow 或 Theano 上執行的高階類神經網路 API。 其開發重點在於加快試驗速度。 能夠盡可能以最低延遲來實現構想是進行理想研究的關鍵。
 
 若要安裝 Keras，請在終端機中執行下列命令：
 
@@ -239,7 +239,7 @@ pip3.5 install torchvision
 
 ### <a name="chainer"></a>Chainer
 
-[Chainer](https://chainer.org/) 是以彈性為目標的 Python 深度學習架構。 它提供以 **define-by-run 方法** 為基礎的自動區分 API (也稱為 動態計算圖表)，以及物件導向高階 API，來建置及定型類神經網路。
+[Chainer](https://chainer.org/) 是以彈性為目標的 Python 深度學習架構。 它提供以 define-by-run 方法為基礎的自動區分 API (也稱為動態計算圖表)，以及物件導向的高階 API 來建置及定型類神經網路。
 
 若要啟用 CUDA 支援，請安裝 [CuPy](https://github.com/cupy/cupy)：
 

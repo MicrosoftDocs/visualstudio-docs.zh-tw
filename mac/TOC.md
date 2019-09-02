@@ -31,6 +31,7 @@
 # 原始檔編輯器
 ## [編輯器功能](source-editor.md)
 ## [重構](refactoring.md)
+## [IntelliSense](intellisense.md)
 ## [註解](comments.md)
 ## [編輯器的行為](editor-behavior.md)
 ## [工作註解](task-comments.md)
@@ -104,3 +105,11 @@
 
 # [版本資訊](https://docs.microsoft.com/visualstudio/releasenotes/vs2019-mac-relnotes)
 # [預覽版本資訊](https://docs.microsoft.com/visualstudio/releasenotes/vs2019-mac-preview-relnotes)
+# 範例
+## [精選範例](samples.yml)
+## [所有 ASP.NET Core 範例](https://docs.microsoft.com/samples/browse/?products=aspnet-core)
+## [所有 .NET Core 範例](https://docs.microsoft.com/samples/browse/?products=dotnet-core)
+## [所有 Xamarin.Forms 範例](https://docs.microsoft.com/xamarin/xamarin-forms/samples/)
+## [所有 Xamarin.iOS 範例](https://docs.microsoft.com/xamarin/ios/samples/)
+## [所有 Xamarin.Android 範例](https://docs.microsoft.com/xamarin/android/samples/)
+## [所有 Xamarin.Mac 範例](https://docs.microsoft.com/xamarin/mac/samples/)

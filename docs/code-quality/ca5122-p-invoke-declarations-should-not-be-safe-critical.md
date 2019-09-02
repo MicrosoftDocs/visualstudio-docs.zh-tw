@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9abe71337b5eb09d44ec6a244dc17e656768847a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 79ebba23b26e0967bc29a79e719e02d834a29f1b
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62541047"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68919844"
 ---
 # <a name="ca5122-pinvoke-declarations-should-not-be-safe-critical"></a>CA5122 P/Invoke 宣告不可為安全關鍵
 
@@ -25,7 +25,7 @@ ms.locfileid: "62541047"
 |中斷變更|中斷|
 
 ## <a name="cause"></a>原因
- P/Invoke 宣告已用 <xref:System.Security.SecuritySafeCriticalAttribute>標記：
+P/Invoke 宣告已用 <xref:System.Security.SecuritySafeCriticalAttribute>標記：
 
 ```csharp
 [assembly: AllowPartiallyTrustedCallers]
@@ -39,13 +39,13 @@ public class C
    }
 ```
 
- 在此範例中，`C.Beep(...)` 已標記為安全性安全關鍵方法。
+在此範例中，`C.Beep(...)` 已標記為安全性安全關鍵方法。
 
 ## <a name="rule-description"></a>規則描述
- 在執行安全性敏感作業時，會將方法標記為 SecuritySafeCritical，但透明程式碼也能安全地使用。 安全性透明度模型的基本規則之一是透明程式碼不可直接透過 P/Invoke 呼叫機器碼。 因此，即使將 P/Invoke 標示為安全性安全關鍵，透明程式碼仍然不能呼叫它，而且會導致安全性分析錯誤。
+在執行安全性敏感作業時，會將方法標記為 SecuritySafeCritical，但透明程式碼也能安全地使用。 安全性透明度模型的基本規則之一是透明程式碼不可直接透過 P/Invoke 呼叫機器碼。 因此，即使將 P/Invoke 標示為安全性安全關鍵，透明程式碼仍然不能呼叫它，而且會導致安全性分析錯誤。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
- 若要讓透明程式碼可以使用 P/Invoke，須公開安全性安全關鍵包裝函式方法：
+若要讓透明程式碼可以使用 P/Invoke，須公開安全性安全關鍵包裝函式方法：
 
 ```csharp
 [assembly: AllowPartiallyTrustedCallers
@@ -65,4 +65,4 @@ class C
 ```
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
- 請勿隱藏此規則的警告。
+請勿隱藏此規則的警告。

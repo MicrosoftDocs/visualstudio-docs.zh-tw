@@ -1,5 +1,6 @@
 ---
-title: 鍵盤快速鍵 (Blend)
+title: 鍵盤快速鍵
+titleSuffix: Blend for Visual Studio
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 3a1b6830-30c2-4a36-bd14-6961f5edf9cb
@@ -8,14 +9,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c38eaaa42ae0869ae26f0a048f69a94684b240c3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c7dc340b25f5a900c9456f56587e39dede6e0ad2
+ms.sourcegitcommit: 90c3187d804ad7544367829d07ed4b47d3f8a72d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62844321"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68821746"
 ---
-# <a name="keyboard-shortcuts-in-blend"></a>鍵盤快速鍵 (Blend)
+# <a name="keyboard-shortcuts-in-blend-for-visual-studio"></a>Blend for Visual Studio 中的鍵盤快速鍵
 
 ## <a name="project-shortcuts"></a>專案快速鍵
 
@@ -72,10 +73,10 @@ ms.locfileid: "62844321"
 |自動調整高度|**Ctrl**+**Shift**+**6**|
 |將物件群組到版面配置面板中|**Ctrl**+**G**|
 |取消群組物件|**Ctrl**+**Shift**+**G**|
-|將選取的物件移到最上層|**Ctrl**+**Shift**+**]**|
-|上移一層|**Ctrl**+**]**|
-|將選取的物件傳送至最下層|**Ctrl**+**Shift**+**[**|
-|下移一層|**Ctrl**+**[**|
+|將選取的物件移到最上層|**Ctrl**+**Shift**+ **]**|
+|上移一層|**Ctrl**+ **]**|
+|將選取的物件傳送至最下層|**Ctrl**+**Shift**+ **[**|
+|下移一層|**Ctrl**+ **[**|
 |建立選取物件的使用者控制項 (WPF)|**F8**|
 |限制物件的比例|按住 **Shift** 同時拖曳物件|
 |以每次增加 15 度的方式旋轉物件|按住 **Shift** 同時旋轉物件|
@@ -94,9 +95,9 @@ ms.locfileid: "62844321"
 
 |若要執行此工作|請執行|
 |----------------|-------------|
-|切換 [設計]、[程式碼] 與 [分割] 檢視|**F11**|
-|放大畫板|**Ctrl**+**等號** (**=**)|
-|縮小畫板|**Ctrl**+**減號** (**-**)|
+|切換 [設計]  、[程式碼]  與 [分割]  檢視|**F11**|
+|放大畫板|**Ctrl**+**等號** ( **=** )|
+|縮小畫板|**Ctrl**+**減號** ( **-** )|
 |放大或縮小畫板|旋轉滑鼠滾輪|
 |向左或向右移動畫板|**Shift** 加旋轉滑鼠滾輪|
 |向上或向下移動畫板|**Ctrl** 加旋轉滑鼠滾輪|
@@ -104,16 +105,16 @@ ms.locfileid: "62844321"
 |以畫板的實際大小檢視|**Ctrl**+**1**|
 |顯示或隱藏控點|**F9**|
 |顯示或隱藏物件邊界|**Ctrl**+**Shift**+**H**|
-|切換 [設計]、[XAML] 與 [分割] 檢視|**F11**|
+|切換 [設計]  、[XAML]  與 [分割]  檢視|**F11**|
 
 ## <a name="workspace-shortcuts"></a>工作區快速鍵
 
 |若要執行此工作|請執行|
 |----------------|-------------|
-|切換 [動畫] 和 [設計] 工作區|**Ctrl**+**F11**|
-|顯示或隱藏 [資產] 面板|**Ctrl**+**句點**|
-|顯示或隱藏 [結果] 面板|**F12**|
+|切換 [動畫]  和 [設計]  工作區|**Ctrl**+**F11**|
+|顯示或隱藏 [資產]  面板|**Ctrl**+**句點**|
+|顯示或隱藏 [結果]  面板|**F12**|
 |顯示或隱藏所有面板|**F4**|
 |重設使用中的工作區版面配置|**Ctrl**+**Shift**+**R**|
 |移動瀏覽工作區|按住**空格鍵**|
-|暫時使用 [選取] 工具 (在其他工具仍為選取狀態時)|按住 **Ctrl**|
+|暫時使用 [選取]  工具 (在其他工具仍為選取狀態時)|按住 **Ctrl**|

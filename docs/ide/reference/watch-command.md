@@ -13,15 +13,15 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a6965378151bb44db1024ac4e9a49de618f410dc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0ac779dc902a331a45b600113a11db5364293f74
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62788996"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68925941"
 ---
 # <a name="watch-command"></a>Watch 命令
-建立並開啟 [監看式]  視窗的指定執行個體。 您可以使用 [監看式] 視窗來計算變數、運算式和暫存器的值，以編輯這些值，以及儲存結果。
+建立並開啟 [監看式]  視窗的指定執行個體。 您可以使用 [監看式]  視窗來計算變數、運算式和暫存器的值，以編輯這些值，以及儲存結果。
 
 ## <a name="syntax"></a>語法
 
@@ -30,12 +30,13 @@ Debug.Watch[index]
 ```
 
 ## <a name="arguments"></a>引數
- `index`
 
- 必要項。 監看式視窗的執行個體數目。
+`index`\
+必要項。 監看式視窗的執行個體數目。
 
 ## <a name="remarks"></a>備註
- `index` 必須是整數。 有效值為 1、2、3 或 4。
+
+`index` 必須是整數。 有效值為 1、2、3 或 4。
 
 ## <a name="example"></a>範例
 
@@ -43,7 +44,7 @@ Debug.Watch[index]
 >Debug.Watch1
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [[自動變數] 和 [區域變數] 視窗](../../debugger/autos-and-locals-windows.md)
 - [在 Visual Studio 中使用監看式及快速監看式視窗在變數設定監看式](../../debugger/watch-and-quickwatch-windows.md)

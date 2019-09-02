@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 04/17/2019
 ms.assetid: 2C4AAC2E-3B4A-4496-8BE0-1F5A7F81D1CA
-ms.openlocfilehash: 0ee6ffc7bd1567a86bc361f55e00c52ccecddd61
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 13b8d40a6ab31d7178e95a3896afa1c85c804f6c
+ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67824452"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68787647"
 ---
 # <a name="accessibility"></a>協助工具選項
 
@@ -57,7 +57,7 @@ Visual Studio for Mac 具有下列輔助功能，使具有不同能力的人更�
 
 若要啟用或停用 VoiceOver，請按 **&#8984; + F5**
 
-VoiceOver 命令在本指南中顯示為 **VO+*key***，其中 **VO** 指的是 [VoiceOver 公用程式]  應用程式中設定的輔助按鍵。 預設輔助按鍵為 **Ctrl + Alt**。例如，根據您的 VoiceOver 輔助按鍵，**VO + M** 將表示 **Ctrl + Alt + M**。為求簡潔，方向鍵將會稱為**左**和**右**，依此類推。
+VoiceOver 命令在本指南中顯示為 **VO+_key_** ，其中 **VO** 指的是 [VoiceOver 公用程式]  應用程式中設定的輔助按鍵。 預設輔助按鍵為 **Ctrl + Alt**。例如，根據您的 VoiceOver 輔助按鍵，**VO + M** 將表示 **Ctrl + Alt + M**。為求簡潔，方向鍵將會稱為**左**和**右**，依此類推。
 
 若要瀏覽 Visual Studio for Mac 使用者介面，請使用下列組合鍵：
 

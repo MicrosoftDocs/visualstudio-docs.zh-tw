@@ -10,11 +10,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e947fb28c92323f0d4d66c697c272699fc63450e
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54771052"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68161320"
 ---
 # <a name="console"></a>主控台
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ VSPerfCmd.exe /Launch:AppName /Console
 ```  
   
 #### <a name="parameters"></a>參數  
- 無  
+ None  
   
 ## <a name="required-options"></a>必要選項  
  **Console** 只能指定於也包含 **Launch** 選項的命令列。  
@@ -36,7 +36,7 @@ VSPerfCmd.exe /Launch:AppName /Console
  **Launch：** `AppName`  
  啟動分析工具及 `AppName` 指定的應用程式。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [VSPerfCmd](../profiling/vsperfcmd.md)   
  [對獨立應用程式進行程式碼剖析](../profiling/command-line-profiling-of-stand-alone-applications.md)   
  [對 ASP.NET Web 應用程式進行程式碼剖析](../profiling/command-line-profiling-of-aspnet-web-applications.md)   

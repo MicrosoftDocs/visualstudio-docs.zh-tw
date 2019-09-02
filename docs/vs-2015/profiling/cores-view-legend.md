@@ -14,11 +14,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 05f768f6ff928ab00ebbd503c1ae9826dab8cd38
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54780578"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68161298"
 ---
 # <a name="cores-view-legend"></a>核心檢視圖例
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,5 +38,5 @@ ms.locfileid: "54780578"
 |總計內容切換次數|在取樣期間內指定執行緒的內容切換總數。 每次當執行緒變更內容 (例如，從執行到同步處理) 時，就計算一次內容切換。|  
 |跨核心內容切換的百分比|以跨核心內容切換總數除以內容切換總數的百分比計算。 這個百分比越高，跨核心內容切換的負荷對於此特定執行緒的效能整體影響越大。|  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [核心檢視](../profiling/cores-view.md)

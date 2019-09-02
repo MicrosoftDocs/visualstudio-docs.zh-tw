@@ -14,12 +14,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e32c50530a33d55f89db6f202eaffd92946c3cef
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 35e84dc3ae817ab3c5346d83fc5f37934a34e0f9
+ms.sourcegitcommit: b56dc6fadc6c924beed36bb4c2ccc16cf6bcfa1c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65689582"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "68740170"
 ---
 # <a name="resources-for-designing-accessible-applications"></a>設計可及性應用程式的資源
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -36,21 +36,21 @@ ms.locfileid: "65689582"
   
 ## <a name="windows-applications"></a>Windows 應用程式  
   
-- [逐步解說：建立可存取的 Windows 架構的應用程式](https://msdn.microsoft.com/library/654c7f2f-1586-480b-9f12-9d9b8f5cc32b)本主題提供逐步指示的 Certified for Windows 」 標誌的五個協助工具需求納入範例 Windows 應用程式。  
+- [逐步解說：建立可存取的 Windows 架構應用](https://msdn.microsoft.com/library/654c7f2f-1586-480b-9f12-9d9b8f5cc32b)程式本主題提供逐步指示, 說明如何在範例 Windows 應用程式中, 包含適用于 windows 認證的五個協助工具需求。  
   
-- **Guidelines for Keyboard User Interface Design** (鍵盤使用者介面設計指導方針)：本技術文章說明如何設計 Windows 應用程式使用者介面，讓使用者可以從鍵盤巡覽。 如需詳細資訊，請參閱 [http://msdn2.microsoft.com/library/ms971323.aspx](http://msdn2.microsoft.com/library/ms971323.aspx)。  
+- [Guidelines for Keyboard User Interface Design](/previous-versions/windows/desktop/dnacc/guidelines-for-keyboard-user-interface-design) (鍵盤使用者介面設計指導方針)：本技術文章說明如何設計 Windows 應用程式使用者介面，讓使用者可以從鍵盤巡覽。  
   
-- **Console Accessibility** (主控台協助工具)：此技術文章說明可在 Windows XP 中公開協助工具輔助主控台的 API 和事件。 如需詳細資訊，請參閱 [http://msdn2.microsoft.com/library/ms971319.aspx](http://msdn2.microsoft.com/library/ms971319.aspx)。  
+- [Console Accessibility](/previous-versions/windows/desktop/dnacc/console-accessibility) (主控台協助工具)：此技術文章說明可在 Windows XP 中公開協助工具輔助主控台的 API 和事件。 
   
 ## <a name="web-sites"></a>網站  
   
-- [逐步解說：使用圖像控制項、 功能表控制項和 AutoPostBack 的協助工具方針](https://msdn.microsoft.com/library/ff7b5021-48b3-46bf-921f-9fe1e0e32202)本主題提供逐步指示，包括 Web 網頁範例，以及一些協助工具設計祕訣可存取的控制項。  
+- [逐步解說：使用影像控制項、功能表控制項和 AutoPostBack](https://msdn.microsoft.com/library/ff7b5021-48b3-46bf-921f-9fe1e0e32202)的協助工具方針本主題提供逐步指示, 說明如何在範例網頁中包含可存取的控制項, 以及 web 的一些協助工具設計秘訣。  
   
-- **Making Web Pages More Accessible** (讓網頁更容易存取)：此技術文章列出可存取的 HTML 3.2 項目，以及可在網站開發中存取使用的項目。 如需詳細資訊，請參閱 [http://msdn2.microsoft.com/library/ms971309.aspx](http://msdn2.microsoft.com/library/ms971309.aspx)。  
+- [Making Web Pages More Accessible](/previous-versions/windows/desktop/dnacc/making-web-pages-more-accessible) (讓網頁更容易存取)：此技術文章列出可存取的 HTML 3.2 項目，以及可在網站開發中存取使用的項目。 
   
-- **Creating Accessible Web Pages with DHTML** (建立含有 DHTML 的可存取網頁)：此技術文章列出可存取的 HTML 4.0 項目以及可存取的 Web 設計祕訣。 如需詳細資訊，請參閱 [http://msdn2.microsoft.com/library/ms528445.aspx](http://msdn2.microsoft.com/library/ms528445.aspx)。  
+- [Creating Accessible Web Pages with DHTML](/previous-versions//ms528445(v=vs.85)) (建立含有 DHTML 的可存取網頁)：此技術文章列出可存取的 HTML 4.0 項目以及可存取的 Web 設計祕訣。 
   
-- **Text Alternatives to Inaccessible Web Pages** (無法存取之網頁的文字替代項目)：本技術文章說明如何使用 XML 和 XSLT 來提供相同網頁的多個檢視，例如純文字版本。 如需詳細資訊，請參閱 [http://msdn2.microsoft.com/library/aa468593.aspx](http://msdn2.microsoft.com/library/aa468593.aspx)。  
+- [Text Alternatives to Inaccessible Web Pages](/previous-versions/windows/desktop/dnacc/text-alternatives-to-inaccessible-web-pages) (無法存取之網頁的文字替代項目)：本技術文章說明如何使用 XML 和 XSLT 來提供相同網頁的多個檢視，例如純文字版本。 
   
 ### <a name="third-party-resources"></a>協力廠商資源  
   

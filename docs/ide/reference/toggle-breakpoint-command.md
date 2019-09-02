@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 214897a0f938d8ea52306b8f605948b38f196111
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 18473fbd8ee0f7c4b415880da61c86de0bae6fc5
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62944957"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68925979"
 ---
 # <a name="toggle-breakpoint-command"></a>切換中斷點命令
 根據中斷點目前的狀態以及在檔案中的目前位置，將其開啟或關閉。
@@ -31,16 +31,18 @@ Debug.ToggleBreakpoint [text]
 ```
 
 ## <a name="arguments"></a>引數
- `text` 選擇項。 如果指定文字，則會將行標示為具名中斷點。 否則，行會標示為未命名中斷點，其與按 F9 時所發生的作業類似。
+
+`text`\
+選擇性。 如果指定文字，則會將行標示為具名中斷點。 否則，行會標示為未命名中斷點，其與按 F9 時所發生的作業類似。
 
 ## <a name="example"></a>範例
- 下列範例會切換目前中斷點。
+下列範例會切換目前中斷點。
 
 ```
 >Debug.ToggleBreakpoint
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [Visual Studio 命令](../../ide/reference/visual-studio-commands.md)
 - [命令視窗](../../ide/reference/command-window.md)

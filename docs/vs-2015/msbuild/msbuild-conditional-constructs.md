@@ -24,11 +24,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b7b22f63d5d3d6e0b1f7789561029bbfbfb4cdf4
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59667504"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68143751"
 ---
 # <a name="msbuild-conditional-constructs"></a>MSBuild 條件式建構
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -79,7 +79,7 @@ ms.locfileid: "59667504"
 </Project>  
 ```  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [Choose 項目 (MSBuild)](../msbuild/choose-element-msbuild.md)   
  [When 項目 (MSBuild)](../msbuild/when-element-msbuild.md)   
  [Otherwise 項目 (MSBuild)](../msbuild/otherwise-element-msbuild.md)   

@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 03948506d928f7d638b21c1fa4bc0a35818ec09a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f55c48583e47a4602f33d69799d1d86a6c9c3e56
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62545418"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68921149"
 ---
 # <a name="ca2116-aptca-methods-should-only-call-aptca-methods"></a>CA2116:APTCA 方法應該只呼叫 APTCA 方法
 
@@ -32,42 +32,42 @@ ms.locfileid: "62545418"
 
 ## <a name="cause"></a>原因
 
-組件中的方法<xref:System.Security.AllowPartiallyTrustedCallersAttribute?displayProperty=fullName>屬性並沒有屬性的組件中呼叫的方法。
+元件中具有<xref:System.Security.AllowPartiallyTrustedCallersAttribute?displayProperty=fullName>屬性的方法, 會呼叫元件中沒有該屬性的方法。
 
 ## <a name="rule-description"></a>規則描述
 
-根據預設，公用或受保護的方法，以強式名稱的組件中會以隱含方式受到[連結要求](/dotnet/framework/misc/link-demands)完全信任。 只有完全受信任呼叫端可以存取的強式名稱組件。 強式名稱組件標示<xref:System.Security.AllowPartiallyTrustedCallersAttribute>(APTCA) 屬性並沒有這項保護。 屬性會停用連結需求，讓呼叫端沒有完全信任，例如從近端內部網路或網際網路執行的程式碼可以存取組件。
+根據預設, 具有強式名稱之元件中的公用或受保護方法, 會以完全信任的[連結要求](/dotnet/framework/misc/link-demands)來隱含保護;只有完全受信任的呼叫端可以存取強式名稱的元件。 以<xref:System.Security.AllowPartiallyTrustedCallersAttribute> (APTCA) 屬性標記的強式名稱元件沒有此保護。 屬性會停用連結要求, 讓不具有完全信任的呼叫端可以存取元件, 例如從內部網路或網際網路執行的程式碼。
 
-當 APTCA 屬性存在於上是完全受信任的組件，組件不允許部分信任呼叫端的另一個組件中執行程式碼，就可以 產生安全性弱點。 如果兩個方法`M1`並`M2`符合下列條件，惡意呼叫端可以使用此方法`M1`略過隱含的完全信任的連結要求保護`M2`:
+當完全信任的元件上出現 APTCA 屬性, 而且元件在不允許部分信任呼叫端的另一個元件中執行程式碼時, 可能會有安全性攻擊。 如果兩種`M1`方法`M2`都符合下列條件, 惡意的呼叫者就可以`M1`使用方法, 略過保護`M2`的隱含完全信任連結要求:
 
-- `M1` 具有 APTCA 屬性的完全信任組件中宣告的公用方法。
+- `M1`是在具有 APTCA 屬性的完全信任元件中宣告的公用方法。
 
-- `M1` 呼叫方法`M2`外部`M1`的組件。
+- `M1`呼叫元件外部`M2` `M1`的方法。
 
-- `M2`組件不具有 APTCA 屬性，因此，不應執行或代表，都是部分信任呼叫端。
+- `M2`的元件沒有 APTCA 屬性, 因此不應該由或代表部分信任的呼叫端來執行。
 
-部分信任呼叫端`X`可以呼叫方法`M1`，而導致`M1`呼叫`M2`。 因為`M2`APTCA 屬性，其立即呼叫端沒有 (`M1`) 必須滿足連結要求完全信任。`M1`具有完全信任，因此滿足這項檢查。 安全性風險是，因為`X`不會參與滿足連結要求保護`M2`來自不受信任的呼叫者。 因此，若方法具有 APTCA 屬性必須呼叫不具有屬性的方法。
+部分信任的呼叫`X`端可以呼叫`M1`方法, `M1`因而導致`M2`呼叫。 因為`M2`沒有 APTCA 屬性, 所以其立即呼叫端 (`M1`) 必須滿足完全信任的連結要求;`M1`具有完全信任, 因此可滿足這種檢查。 安全性風險是因為`X`不會參與滿足不受信任呼叫者保護`M2`的連結要求。 因此, 具有 APTCA 屬性的方法不能呼叫沒有屬性的方法。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
- 如果需要 APCTA 屬性，使用需求來保護在完全信任組件呼叫的方法。 您的需求將取決於您的方法所公開的功能完全權限。 如果可能，保護以確保不會對部分信任呼叫端公開的基礎功能的完全信任要求的方法。 如果這不可行，請選取一組權限可有效保護公開的功能。
+如果需要 APCTA 屬性, 請使用要求來保護呼叫完全信任元件的方法。 您所要求的確切許可權將取決於您的方法所公開的功能。 如果可行, 請以完全信任的需求來保護方法, 以確保基礎功能不會公開給部分信任的呼叫端。 如果無法這麼做, 請選取一組可有效保護已公開功能的許可權。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
- 若要安全地隱藏此規則的警告，您必須確定，您的方法所公開的功能不會直接或間接允許來電者存取機密資訊、 作業或可以用於破壞性方式的資源。
+若要安全地隱藏這項規則的警告, 您必須確定方法所公開的功能不會直接或間接允許呼叫端存取機密資訊、作業, 或可利用破壞性方式使用的資源。
 
 ## <a name="example-1"></a>範例 1
- 下列範例會使用兩個組件和測試應用程式，說明這個規則偵測到的安全性弱點。 第一個組件並沒有 APTCA 屬性，而且應該無法存取部分信任呼叫端 (由`M2`中先前的討論)。
+下列範例會使用兩個元件和一個測試應用程式來說明此規則偵測到的安全性弱點。 第一個元件沒有 APTCA 屬性, 而且不應該存取部分信任的呼叫端 ( `M2`在先前的討論中表示)。
 
- [!code-csharp[FxCop.Security.NoAptca#1](../code-quality/codesnippet/CSharp/ca2116-aptca-methods-should-only-call-aptca-methods_1.cs)]
+[!code-csharp[FxCop.Security.NoAptca#1](../code-quality/codesnippet/CSharp/ca2116-aptca-methods-should-only-call-aptca-methods_1.cs)]
 
 ## <a name="example-2"></a>範例 2
- 第二個組件是完全受信任，並允許部分信任呼叫端 (由`M1`中先前的討論)。
+第二個元件是完全受信任, 並允許部分信任的`M1`呼叫端 (在先前的討論中表示)。
 
- [!code-csharp[FxCop.Security.YesAptca#1](../code-quality/codesnippet/CSharp/ca2116-aptca-methods-should-only-call-aptca-methods_2.cs)]
+[!code-csharp[FxCop.Security.YesAptca#1](../code-quality/codesnippet/CSharp/ca2116-aptca-methods-should-only-call-aptca-methods_2.cs)]
 
 ## <a name="example-3"></a>範例 3
- 測試應用程式 (由`X`中先前的討論) 是以部分信任。
+測試應用程式 ( `X`在先前的討論中表示) 是部分信任的。
 
- [!code-csharp[FxCop.Security.TestAptcaMethods#1](../code-quality/codesnippet/CSharp/ca2116-aptca-methods-should-only-call-aptca-methods_3.cs)]
+[!code-csharp[FxCop.Security.TestAptcaMethods#1](../code-quality/codesnippet/CSharp/ca2116-aptca-methods-should-only-call-aptca-methods_3.cs)]
 
 這個範例會產生下列輸出：
 
@@ -76,9 +76,9 @@ Demand for full trust:Request failed.
 ClassRequiringFullTrust.DoWork was called.
 ```
 
-## <a name="related-rules"></a>相關的規則
+## <a name="related-rules"></a>相關規則
 
-- [CA2117:APTCA 類型應該只擴充 APTCA 基底類型](../code-quality/ca2117-aptca-types-should-only-extend-aptca-base-types.md)
+- [CA2117APTCA 類型應該只擴充 APTCA 基底類型](../code-quality/ca2117-aptca-types-should-only-extend-aptca-base-types.md)
 
 ## <a name="see-also"></a>另請參閱
 

@@ -1,5 +1,5 @@
 ---
-title: 從 IDE 或命令列產生程式碼度量
+title: 從 IDE 或命令列產生程式碼計量
 ms.date: 11/02/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,33 +11,33 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4275e92b21289c5cf1e3243b2bc782a9e0821fde
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fbe82fc213937b7e494afd27bfd964347c17e2b8
+ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62823578"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70179988"
 ---
 # <a name="how-to-generate-code-metrics-data"></a>HOW TO：產生程式碼度量資料
 
-您可以透過三種方式產生程式碼計量資料：
+您可以用三種方式產生程式碼計量資料:
 
-- 藉由安裝[FxCop 分析器](#fxcop-analyzers-code-metrics-rules)並讓它包含四個程式碼度量 （可維護性） 規則。
+- 藉由安裝[FxCop 分析器](#fxcop-analyzers-code-metrics-rules)並啟用其包含的四個程式碼計量 (可維護性) 規則。
 
-- 藉由選擇[**分析** > **計算程式碼度量**](#calculate-code-metrics-menu-command) Visual Studio 中的功能表命令。
+- 在 Visual Studio 內選擇 [ [**分析** > ] [**計算程式碼計量**](#calculate-code-metrics-menu-command) ] 功能表命令。
 
-- 從[命令列](#command-line-code-metrics)的C#和 Visual Basic 專案。
+- 從的[命令列](#command-line-code-metrics) C#和 Visual Basic 專案。
 
-## <a name="fxcop-analyzers-code-metrics-rules"></a>FxCop 分析器，程式碼計量規則
+## <a name="fxcop-analyzers-code-metrics-rules"></a>FxCop 分析器程式碼計量規則
 
-[FxCopAnalyzers NuGet 套件](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers)包含數個程式碼度量[分析器](roslyn-analyzers-overview.md)規則：
+[FxCopAnalyzers NuGet 套件](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers)包含數個程式碼計量[分析器](roslyn-analyzers-overview.md)規則:
 
 - [CA1501](ca1501-avoid-excessive-inheritance.md)
 - [CA1502](ca1502-avoid-excessive-complexity.md)
 - [CA1505](ca1505-avoid-unmaintainable-code.md)
 - [CA1506](ca1506-avoid-excessive-class-coupling.md)
 
-預設會停用這些規則，但您也可以將它們從啟用[**方案總管**](use-roslyn-analyzers.md#set-rule-severity-from-solution-explorer)或在[規則集](using-rule-sets-to-group-code-analysis-rules.md)檔案。 例如，若要啟用規則 CA1502 為警告，.ruleset 檔案會包含下列項目：
+這些規則預設為停用, 但您可以從[**方案總管**](use-roslyn-analyzers.md#set-rule-severity-from-solution-explorer)或在[規則集](using-rule-sets-to-group-code-analysis-rules.md)檔案中啟用它們。 例如, 若要啟用規則 CA1502 做為警告, 則您的規則集檔案會包含下列專案:
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -50,19 +50,19 @@ ms.locfileid: "62823578"
 
 ### <a name="configuration"></a>組態
 
-您可以設定的 FxCop 分析器中的程式碼度量規則封裝火災的臨界值。
+您可以設定 FxCop 分析器封裝中的程式碼計量規則引發的臨界值。
 
-1. 建立文字檔 例如，您可以將它命名*CodeMetricsConfig.txt*。
+1. 建立文字檔 例如, 您可以將它命名為*CodeMetricsConfig .txt*。
 
-2. 以下列格式的文字檔案中加入想要的閾值：
+2. 以下列格式將所需的臨界值新增至文字檔:
 
    ```txt
    CA1502: 10
    ```
 
-   在此範例中，規則[CA1502](ca1502-avoid-excessive-complexity.md)設定方法的循環複雜度大於 10 時引發。
+   在此範例中, 規則[CA1502](ca1502-avoid-excessive-complexity.md)設定為在方法的圈複雜度大於10時引發。
 
-3. 在 **屬性**視窗的 Visual Studio，或在專案檔中，標示為組態檔的建置動作[ **AdditionalFiles**](../ide/build-actions.md#build-action-values)。 例如: 
+3. 在 Visual Studio 的 [**屬性**] 視窗中, 或在專案檔中, 將設定檔的 [建立] 動作標記為[**AdditionalFiles**](../ide/build-actions.md#build-action-values)。 例如：
 
    ```xml
    <ItemGroup>
@@ -72,46 +72,46 @@ ms.locfileid: "62823578"
 
 ## <a name="calculate-code-metrics-menu-command"></a>計算程式碼度量功能表命令
 
-使用在 IDE 中產生的一個或所有開啟的專案程式碼度量**分析** > **計算程式碼度量**功能表。
+使用 [**分析** > ] [**計算程式碼計量**] 功能表, 在 IDE 中為您的一個或所有開啟的專案產生程式碼計量。
 
-### <a name="generate-code-metrics-results-for-an-entire-solution"></a>產生整個方案的程式碼度量結果
+### <a name="generate-code-metrics-results-for-an-entire-solution"></a>產生整個解決方案的程式碼度量結果
 
-您可以使用下列任一方式來產生整個方案的程式碼度量結果：
+您可以使用下列任何方式來產生整個解決方案的程式碼計量結果:
 
-- 從功能表列中，選擇**分析** > **計算程式碼度量** > **方案**。
+- 從功能表列中, 選擇 [**分析** > ] [計算**方案的程式** **代碼計量** > ]。
 
-- 在 **方案總管**，以滑鼠右鍵按一下方案，然後選擇**計算程式碼度量**。
+- 在**方案總管**中, 以滑鼠右鍵按一下方案, 然後選擇 [**計算程式碼度量**]。
 
-- 在 **程式碼度量結果** 視窗中，選擇**計算方案的程式碼度量** 按鈕。
+- 在 [程式**代碼計量結果**] 視窗中, 選擇 [**計算方案的程式碼度量**] 按鈕。
 
-就會產生結果和**程式碼度量結果** 視窗隨即顯示。 若要檢視結果的詳細資訊，請展開 樹狀目錄中的**階層**資料行。
+系統會產生結果, 並顯示 [程式**代碼度量] 結果**視窗。 若要查看結果詳細資料, 請展開 [階層] 欄中的樹狀**結構**。
 
-### <a name="generate-code-metrics-results-for-one-or-more-projects"></a>產生一個或多個專案的程式碼度量結果
+### <a name="generate-code-metrics-results-for-one-or-more-projects"></a>產生一或多個專案的程式碼度量結果
 
-1. 在 [**方案總管] 中**，選取一或多個專案。
+1. 在 **方案總管**中, 選取一或多個專案。
 
-1. 從功能表列中，選擇**分析** > **計算程式碼度量** > **針對選取的專案**。
+1. 從功能表列中, 選擇 [**分析** > ] [計算**所選項目的程式** **代碼計量** > ]。
 
-就會產生結果和**程式碼度量結果** 視窗隨即顯示。 若要檢視結果的詳細資訊，請展開 樹狀目錄中的**階層**。
+系統會產生結果, 並顯示 [程式**代碼度量] 結果**視窗。 若要查看結果詳細資料, 請展開階層中的樹狀**結構**。
 
 ::: moniker range="vs-2017"
 
 > [!NOTE]
-> **計算程式碼度量**命令不適用於.NET Core 和.NET Standard 專案。 若要計算的.NET Core 或.NET Standard 專案的程式碼度量，您可以：
+> [**計算程式碼計量**] 命令不適用於 .net Core 和 .NET Standard 專案。 若要計算 .NET Core 或 .NET Standard 專案的程式碼計量, 您可以:
 >
-> - 計算從程式碼度量[命令列](#command-line-code-metrics)改為
+> - 改為從[命令列](#command-line-code-metrics)計算程式碼度量
 >
-> - 升級至[Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019)
+> - 升級至[Visual Studio 2019](https://visualstudio.microsoft.com/downloads)
 
 ::: moniker-end
 
-## <a name="command-line-code-metrics"></a>命令列程式碼度量
+## <a name="command-line-code-metrics"></a>命令列程式碼計量
 
-您可以從命令列來產生程式碼計量資料C#和.NET Framework、.NET Core 和.NET Standard 的應用程式的 Visual Basic 專案。 若要從命令列中執行程式碼度量資訊，請安裝[Microsoft.CodeAnalysis.Metrics NuGet 套件](#microsoftcodeanalysismetrics-nuget-package)或 建置[Metrics.exe](#metricsexe)可執行您自己。
+您可以從命令列產生程式C#代碼計量資料, 並針對 .NET FRAMEWORK、.net Core 和 .NET Standard 應用程式 Visual Basic 專案。 若要從命令列執行程式碼計量, 請安裝[CodeAnalysis NuGet 套件](#microsoftcodeanalysismetrics-nuget-package), 或自行建立[公制](#metricsexe)可執行檔。
 
-### <a name="microsoftcodeanalysismetrics-nuget-package"></a>Microsoft.CodeAnalysis.Metrics NuGet 套件
+### <a name="microsoftcodeanalysismetrics-nuget-package"></a>CodeAnalysis。計量 NuGet 套件
 
-若要從命令列產生程式碼度量資料的最簡單方式是安裝[Microsoft.CodeAnalysis.Metrics](https://www.nuget.org/packages/Microsoft.CodeAnalysis.Metrics/) NuGet 套件。 您已安裝封裝之後，執行`msbuild /t:Metrics`從包含您的專案檔的目錄。 例如：
+從命令列產生程式碼計量資料的最簡單方式, 就是安裝[CodeAnalysis](https://www.nuget.org/packages/Microsoft.CodeAnalysis.Metrics/) NuGet 套件。 安裝套件之後, 請從包含您`msbuild /t:Metrics`專案檔的目錄執行。 例如：
 
 ```shell
 C:\source\repos\ClassLibrary3\ClassLibrary3>msbuild /t:Metrics
@@ -134,7 +134,7 @@ Build succeeded.
     0 Error(s)
 ```
 
-您可以藉由指定覆寫輸出檔名稱`/p:MetricsOutputFile=<filename>`。 您也可以取得[舊式](#previous-versions)藉由指定的程式碼度量資料`/p:LEGACY_CODE_METRICS_MODE=true`。 例如: 
+您可以藉由指定`/p:MetricsOutputFile=<filename>`來覆寫輸出檔案名。 您也可以藉由指定`/p:LEGACY_CODE_METRICS_MODE=true`來取得[舊版樣式的程式](#previous-versions)代碼計量資料。 例如：
 
 ```shell
 C:\source\repos\ClassLibrary3\ClassLibrary3>msbuild /t:Metrics /p:LEGACY_CODE_METRICS_MODE=true /p:MetricsOutputFile="Legacy.xml"
@@ -158,9 +158,9 @@ Build succeeded.
     0 Error(s)
 ```
 
-### <a name="code-metrics-output"></a>程式碼度量資訊輸出
+### <a name="code-metrics-output"></a>程式碼度量輸出
 
-產生的 XML 輸出的格式如下：
+產生的 XML 輸出會採用下列格式:
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -213,25 +213,25 @@ Build succeeded.
 </CodeMetricsReport>
 ```
 
-### <a name="metricsexe"></a>Metrics.exe
+### <a name="metricsexe"></a>計量 .exe
 
-如果您不想要安裝 NuGet 套件，您可以產生，並使用*Metrics.exe*直接可執行檔。 若要產生*Metrics.exe*可執行檔：
+如果您不想要安裝 NuGet 套件, 您可以直接產生並使用*sn.exe*可執行檔。 若要產生*sn.exe*可執行檔:
 
-1. 複製品[dotnet/roslyn 分析器](https://github.com/dotnet/roslyn-analyzers)存放庫。
-2. 系統管理員身分開啟 Visual studio 的開發人員命令提示字元。
-3. 從根目錄**roslyn 分析器**存放庫中，執行下列命令： `Restore.cmd`
+1. 複製[dotnet/roslyn-分析器](https://github.com/dotnet/roslyn-analyzers)存放庫。
+2. 以系統管理員身分開啟 Visual Studio 的開發人員命令提示字元。
+3. 從**roslyn-分析器**存放庫的根目錄, 執行下列命令:`Restore.cmd`
 4. 將目錄變更為*src\Tools*。
-5. 執行下列命令來建置**Metrics.csproj**專案：
+5. 執行下列命令來建立**計量 .csproj**專案:
 
    ```shell
    msbuild /m /v:m /p:Configuration=Release Metrics.csproj
    ```
 
-   為可執行檔*Metrics.exe*就會發出*artifacts\bin*存放庫根目錄下的目錄。
+   在存放庫根目錄下的*artifacts\bin*目錄中, 會產生名為 sn.exe 的可執行檔 *。*
 
-#### <a name="metricsexe-usage"></a>Metrics.exe 使用量
+#### <a name="metricsexe-usage"></a>計量 .exe 使用方式
 
-若要執行*Metrics.exe*、 提供專案或方案，輸出 XML 檔案做為引數。 例如: 
+若要執行*sn.exe*, 請提供專案或方案和輸出 XML 檔做為引數。 例如：
 
 ```shell
 C:\>Metrics.exe /project:ConsoleApp20.csproj /out:report.xml
@@ -241,27 +241,27 @@ Writing output to 'report.xml'...
 Completed Successfully.
 ```
 
-#### <a name="legacy-mode"></a>傳統模式
+#### <a name="legacy-mode"></a>舊版模式
 
-您可以選擇建置*Metrics.exe*中*舊版模式*。 舊版模式版本的工具會產生計量的值接近什麼[舊版的工具產生](#previous-versions)。 此外，在舊版模式下， *Metrics.exe*相同方法的集合類型，舊版的工具產生的程式碼度量資訊會產生程式碼度量資訊。 比方說，它不會產生程式碼度量資料欄位和屬性的初始設定式。 基於回溯相容性，或如果您有閘道簽入的程式碼程式碼度量數字，則舊版模式會很有用。 命令，以建置*Metrics.exe*處於傳統模式：
+您可以選擇在*舊版模式*中建立*公制。* 此工具的舊版模式會產生[較接近舊版工具所產生](#previous-versions)的度量值。 此外, 在舊版模式中,*公制*會針對舊版工具針對所產生之程式碼計量的同一組方法類型來產生程式碼度量。 例如, 它不會產生欄位和屬性初始化運算式的程式碼計量資料。 舊版模式適用于回溯相容性, 或如果您有以程式碼計量編號為基礎的程式碼簽入閘道。 以舊版模式建立*計量*的命令為:
 
 ```shell
 msbuild /m /v:m /t:rebuild /p:LEGACY_CODE_METRICS_MODE=true Metrics.csproj
 ```
 
-如需詳細資訊，請參閱 <<c0> [ 啟用傳統模式產生程式碼度量](https://github.com/dotnet/roslyn-analyzers/pull/1841)。
+如需詳細資訊, 請參閱[啟用在舊版模式中產生程式碼計量](https://github.com/dotnet/roslyn-analyzers/pull/1841)。
 
 ### <a name="previous-versions"></a>舊版本
 
-Visual Studio 2015 包含也呼叫的命令列程式碼度量工具*Metrics.exe*。 這個舊版本的工具沒有二進位檔的分析，也就是組件為基礎的分析。 新*Metrics.exe*工具會改為分析原始程式碼。 因為新*Metrics.exe*工具是來源的程式碼為基礎、 命令列的程式碼度量結果有差異，以便產生由 Visual Studio IDE 和舊版的那些*Metrics.exe*。
+Visual Studio 2015 包含一個也稱為「*公制*」的命令列程式碼計量工具。 這個舊版的工具進行了二進位分析, 也就是以元件為基礎的分析。 新的*計量 .exe*工具會改為分析原始程式碼。 由於新的 wsdl.exe 工具是原始程式碼型的, 因此命令列程式碼計量結果與 Visual Studio IDE 和舊版的*公制*所產生的不同。
 
-新的命令列的程式碼度量工具會計算計量，即使來源的程式碼錯誤，只要載入方案和專案。
+新的命令列程式碼計量工具會在發生原始程式碼錯誤時計算計量, 只要可以載入方案和專案。
 
-#### <a name="metric-value-differences"></a>度量值的差異
+#### <a name="metric-value-differences"></a>度量值差異
 
-`LinesOfCode`度量是更精確且可靠，在新的命令列程式碼度量資訊工具。 它是獨立於任何 codegen 差異並不會變更為工具組或執行階段變更時。 新的工具會計算實際的程式碼，包括空白的行和註解的行數。
+在新的命令列程式碼計量工具中,度量更精確且可靠。`LinesOfCode` 它與任何 codegen 差異無關, 當工具組或執行時間變更時, 並不會變更。 新工具會計算實際的程式程式碼數, 包括空白行和留言。
 
-其他計量，例如`CyclomaticComplexity`並`MaintainabilityIndex`使用相同的公式為舊版*Metrics.exe*，但新的工具會計算數`IOperations`（邏輯來源指示） 而不是中繼language (IL) 指令。 數字會稍有不同所產生的 Visual Studio ide 和舊版*Metrics.exe*。
+其他度量 (例如`CyclomaticComplexity`和`MaintainabilityIndex` ) 會使用與先前版本的*公制*相同的公式, 但新`IOperations`的工具會計算 (邏輯來源指示) 的數目, 而不是中繼語言 (IL) 指令。 數位會與 Visual Studio IDE 和舊版的*公制*所產生的數目稍有不同。
 
 ## <a name="see-also"></a>另請參閱
 

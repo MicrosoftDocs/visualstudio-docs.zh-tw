@@ -1,7 +1,7 @@
 ---
 title: Visual Studio 協助工具祕訣和訣竅
 description: 深入了解可讓 Visual Studio 整合式開發環境 (IDE) 更便於每個人 (包括行動不便人士) 使用的祕訣和訣竅。
-ms.date: 02/21/2019
+ms.date: 08/06/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - accessibility [Visual Studio]
@@ -11,66 +11,78 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e86791e77d5c8f6eb1e6b88ac663e1f11cc53e1e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5828fb114a4df559c46dd6ae7f64887ab48e7429
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62793312"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68919527"
 ---
 # <a name="accessibility-tips-and-tricks-for-visual-studio"></a>Visual Studio 協助工具祕訣和訣竅
 
-> [!TIP]
-> 若要深入了解協助工具更新，請參閱 [Accessibility improvements in Visual Studio 2017 version 15.3](https://devblogs.microsoft.com/visualstudio/accessibility-improvements-in-visual-studio-2017-version-15-3/) (Visual Studio 2017 15.3 版中的協助工具改善) 部落格文章。
+Visual Studio 有與螢幕助讀程式和其他輔助技術相容的內建協助工具功能。 不論您是想要使用鍵盤快速鍵來瀏覽 IDE，還是使用高對比佈景主題來改善可見度，您都可以在此頁面上找到數個相關做法的秘訣和訣竅。
 
-Visual Studio 有與螢幕助讀程式和其他輔助技術相容的內建協助工具功能。 本主題列出的常見快速組合鍵，可用以執行只能使用鍵盤的工作，包括使用高對比佈景主題以改善可見性的相關資訊。 它也會向您示範如何使用註解顯示實用的程式碼資訊，以及如何設定組建和中斷點事件的音效提示。
+我們也說明了如何使用註釋來顯示程式碼的相關實用資訊，以及如何設定組建和中斷點事件的音效提示。
 
 > [!NOTE]
 > 本主題適用於 Windows 上的 Visual Studio。 針對 Visual Studio for Mac，請參閱 [Visual Studio for Mac 的協助工具](/visualstudio/mac/accessibility)。
 
 ## <a name="save-your-ide-settings"></a>儲存 IDE 設定
 
- 您可以儲存視窗配置、鍵盤對應配置和其他喜好設定，來自訂 IDE 體驗。 如需詳細資訊，請參閱[將 Visual Studio IDE 個人化](../../ide/personalizing-the-visual-studio-ide.md)。
+您可以儲存視窗配置、鍵盤對應配置和其他喜好設定，來自訂 IDE 體驗。 如需詳細資訊，請參閱[將 Visual Studio IDE 個人化](../../ide/personalizing-the-visual-studio-ide.md)。
 
 ## <a name="modify-your-ide-for-high-contrast-viewing"></a>修改您的 IDE 進行高對比檢視
 
-對有些人而言，部分色彩十分難以辨識。 如果希望提高程式碼的對比，但不想使用一般的「高對比」佈景主題，我們現在提供「藍色 (超對比)」佈景主題。
+對有些人而言，部分色彩十分難以辨識。 如果您想要在撰寫程式碼時有更高的對比，但不想要使用一般的 [高對比] 佈景主題，我們現在提供 [藍色 (更高對比)] 佈景主題。
 
-  ![比較藍色佈景主題和藍色 (超對比) 佈景主題](media/blue-extra-contrast-theme.png)
+  ![比較 [藍色] 佈景主題與 [藍色 (更高對比)] 佈景主題](media/blue-extra-contrast-theme.png "顯示 [藍色] 佈景主題與 [藍色 (更高對比)] 佈景主題之間差異的螢幕擷取畫面")
 
 ## <a name="use-annotations-to-reveal-useful-information-about-your-code"></a>使用註釋顯示程式碼的實用資訊
 
 Visual Studio 編輯器包含許多文字「裝飾」，讓您知道程式碼特定點的特性和功能，例如螺絲起子和燈泡圖示、錯誤和警告的「波浪線」、書籤等等。 您可以使用「顯示程式碼行註釋」命令集協助探索，然後巡覽這些裝飾。
 
-  ![使用「顯示程式碼行註釋」命令集](media/show-line-annotations-command-set.png)
+  ![使用 [顯示程式碼行註釋] 命令集](media/show-line-annotations-command-set.png "[顯示程式碼行註釋] 功能表項目的螢幕擷取畫面")
 
-## <a name="access-toolbars-by-using-shortcut-key-combinations"></a>使用快速鍵組合存取工具列
+## <a name="access-toolbars-by-using-keyboard-shortcuts"></a>使用鍵盤快速鍵來存取工具列
 
-Visual Studio IDE 工具列的作用與許多工具視窗相同。 下列快速鍵組合可協助您進行存取。
+Visual Studio IDE 工具列的作用與許多工具視窗相同。 下列鍵盤快速鍵可協助您存取它們。
 
-|功能|說明|按鍵組合|
+|功能|說明|鍵盤快速鍵|
 |-------------|-----------------| - |
-|IDE 工具列|選取 [標準] 工具列上的第一個按鈕。|**ALT**、**CTRL** + **TAB**|
-|工作視窗工具列|將焦點移至工具視窗中的工具列。 <br> <br> **注意：** 這適用於大部分的工具視窗，但只限焦點位於在工具視窗中時。 此外，您必須先選擇 SHIFT 鍵再選擇 ALT 鍵。 在部分工具視窗 (例如 Team Explorer) 中，您必須先按住 SHIFT 鍵再選擇 ALT 鍵。|**Shift** + **Alt**|
-|工具列|移至下一個工具列中的第一個項目 (當工具列有焦點時)。|**Ctrl** + **Tab**|
+|IDE 工具列|選取 [標準] 工具列上的第一個按鈕。|**ALT**、**CTRL**+**TAB**|
+|工作視窗工具列|將焦點移至工具視窗中的工具列。 <br> <br> **注意：** 這適用於大部分的工具視窗，但只限焦點位於在工具視窗中時。 此外，您必須先選擇 SHIFT 鍵再選擇 ALT 鍵。 在部分工具視窗 (例如 Team Explorer) 中，您必須先按住 SHIFT 鍵再選擇 ALT 鍵。|**Shift**+**Alt**|
+|工具列|移至下一個工具列中的第一個項目 (當工具列有焦點時)。|**Ctrl**+**Tab**|
 
-### <a name="other-useful-shortcut-key-combinations"></a>其他實用快速鍵組合
+### <a name="other-useful-keyboard-shortcuts"></a>其他實用的鍵盤快速鍵
 
-有些其他實用快速鍵組合包括下列項目。
+一些其他實用的鍵盤快速鍵包括下列各項。
 
-|功能|說明|按鍵組合|
+|功能|說明|鍵盤快速鍵|
 |-------------|-----------------| - |
-|IDE|開啟或關閉高對比。 <br> <br> **注意：** 標準 Windows 捷徑|**左 Alt + 左 Shift + PrtScn**|
-|對話方塊|選取或清除對話方塊中的核取方塊選項。 <br> <br> **注意：** 標準 Windows 捷徑|**空格鍵**|
-|操作功能表|開啟操作 (滑鼠右鍵) 功能表。 <br> <br> **注意：** 標準 Windows 捷徑|**Shift** + **F10**|
-|Menus|使用其快速鍵來快速存取功能表項目。 選擇 **Alt** 鍵加上功能表中加底線的字母來啟動命令。 例如，若要檢視 Visual Studio 中的 [開啟專案] 對話方塊，請選擇 **Alt** + **F** + **O** + **P**。  <br><br> **注意：** 標準 Windows 捷徑|**Alt** + **[字母]**|
-|搜尋方塊|使用 Visual Studio 中的搜尋功能。|**Ctrl** + **Q**|
-|[工具箱] 視窗|在 [工具箱] 索引標籤之間移動。|**Ctrl** + **向下鍵**<br /><br /> 和<br /><br /> **Ctrl** + **向上鍵**|
+|IDE|開啟或關閉高對比。 <br> <br> **注意：** 標準 Windows 鍵盤快速鍵|**左 Alt**+**左 Shift**+**PrtScn**|
+|對話方塊|選取或清除對話方塊中的核取方塊選項。 <br> <br> **注意：** 標準 Windows 鍵盤快速鍵|**空格鍵**|
+|操作功能表|開啟操作 (滑鼠右鍵) 功能表。 <br> <br> **注意：** 標準 Windows 鍵盤快速鍵|**Shift**+**F10**|
+|Menus|使用其快速鍵來快速存取功能表項目。 選擇 **Alt** 鍵加上功能表中加底線的字母來啟動命令。 例如，若要檢視 Visual Studio 中的 [開啟專案] 對話方塊，請選擇 **Alt**+**F**+**O**+**P**。  <br><br> **注意：** 標準 Windows 鍵盤快速鍵|**Alt** +  **[字母]**|
+|搜尋方塊|使用 Visual Studio 中的搜尋功能。|**Ctrl**+**Q**|
+|[工具箱] 視窗|在 [工具箱] 索引標籤之間移動。|**Ctrl**+**向上鍵**<br /><br /> 和<br /><br /> **Ctrl**+**向下鍵**|
 |[工具箱] 視窗|將控制項從 [工具箱] 新增至表單或設計工具。|**Enter**|
-|選項對話方塊：環境 > 鍵盤|刪除 [按快速鍵] 選項中所輸入的按鍵組合。|**退格鍵**|
+|選項對話方塊：環境 > 鍵盤|刪除 [按快速鍵]  選項中所輸入的按鍵組合。|**退格鍵**|
+|[通知] 工具視窗|使用兩個鍵盤快速鍵按鍵組合 (一個後面接著另一個) 來開啟 [通知] 工具視窗。 接著，使用方向鍵來選取通知以檢視該通知。| **Ctrl**+ **&#92;** 、**Ctrl**+**N**|
 
 > [!NOTE]
-> 根據您目前使用的設定或版本，您所看到的對話方塊與功能表命令可能會與 [說明] 中描述的不同。
+> 根據目前使用的設定與版本，您所看到的對話方塊與功能表命令可能會與 [說明] 中所描述的不同。
+
+## <a name="access-notifications-by-using-keyboard-shortcuts"></a>使用鍵盤快速鍵來存取通知
+
+當通知出現在 IDE 中時，以下是您可以使用鍵盤快速鍵來存取 [通知] 視窗的方式：
+
+1. 從 IDE 中的任何位置，依序一個接著一個按下列兩個鍵盤快速鍵：**Ctrl**+ **&#92;** ，然後 **Ctrl**+**N**。
+
+   [通知]  視窗隨即開啟。
+
+   ![Visual Studio IDE 中的 [通知] 工具視窗](media/toast-notification.png "Visual Studio IDE 中 [通知] 視窗的螢幕擷取畫面")
+
+1. 使用 **Tab**鍵或方向鍵來選取通知。
 
 ## <a name="use-the-sound-applet-to-set-build-and-breakpoint-cues"></a>使用音效小程式設定組建與中斷點提示
 
@@ -83,27 +95,35 @@ Visual Studio IDE 工具列的作用與許多工具視窗相同。 下列快速�
 
 方式如下：
 
-1. 在執行 Windows 10 電腦的 [搜尋] 方塊中鍵入**變更系統音效**。
+1. 在執行 Windows 10 電腦的 [搜尋]  方塊中鍵入**變更系統音效**。
 
-   ![Windows 10 中的搜尋方塊](media/type-here-to-search.png)
+   ![Windows 10 中的 [搜尋] 方塊](media/type-here-to-search.png "Windows 10 中 [搜尋] 方塊的螢幕擷取畫面")
 
    (或者，如啟用 Cortana，說出「嘿 Cortana」，接著說出「變更系統音效」。)
 
-2. 按兩下 [變更系統音效]。
+1. 按兩下 [變更系統音效]  。
 
-   ![Windows 10 中的搜尋結果](media/change-system-sounds.png)
+   ![Windows 10 中的搜尋結果](media/change-system-sounds.png "Windows 10 中 [變更系統音效] 搜尋結果的螢幕擷取畫面")
 
-3. 在 [音效] 對話方塊中，按一下 [音效] 索引標籤。 <br><br>
-   然後，在 [程式事件] 中捲動到 **Microsoft Visual Studio**，選取您想要套用至所選事件的音效。
+1. 在 [音效]  對話方塊中，按一下 [音效]  索引標籤。
 
-   ![Windows 10 中 [音效] 小程式的 [音效] 索引標籤](media/sound-applet.png)
+1. 在 [程式事件]  中，捲動至 [Microsoft Visual Studio]  ，然後選取要套用到所選事件的音效。
 
-4. 按一下 [確定]。
+   ![Windows 10 中 [音效] 小程式的 [音效] 索引標籤](media/sound-applet.png "Windows 10 中 [音效] 小程式的 [音效] 索引標籤")
+
+1. 按一下 [確定]  。
+
+::: moniker range="vs-2017"
+
+> [!TIP]
+> 若要深入了解協助工具更新，請參閱 [Accessibility improvements in Visual Studio 2017 version 15.3](https://devblogs.microsoft.com/visualstudio/accessibility-improvements-in-visual-studio-2017-version-15-3/) (Visual Studio 2017 15.3 版中的協助工具改善) 部落格文章。
+
+::: moniker-end
 
 ## <a name="see-also"></a>另請參閱
 
 * [Visual Studio 的協助工具功能](../../ide/reference/accessibility-features-of-visual-studio.md)
 * [如何：在 Visual Studio 中自訂功能表和工具列](../../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md)
 * [將 Visual Studio IDE 個人化](../../ide/personalizing-the-visual-studio-ide.md)
-* [Microsoft Accessibility](https://www.microsoft.com/Accessibility) (Microsoft 協助工具)
 * [協助工具 (Visual Studio for Mac)](/visualstudio/mac/accessibility)
+* [Microsoft Accessibility](https://www.microsoft.com/Accessibility) (Microsoft 協助工具)

@@ -1,6 +1,6 @@
 ---
 title: 單元測試基本概念
-ms.date: 06/06/2019
+ms.date: 08/07/2019
 ms.topic: conceptual
 f1_keywords:
 - vs.UnitTest.CreateUnitTest
@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c51042ee5a154c09245a28645cf2e432ff6e694c
-ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
+ms.openlocfilehash: 5060b2a3b532de26d78eca4ce16661768748bbd7
+ms.sourcegitcommit: 673b9364fc9a96b027662dcb4cf5d61cab60ef11
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66820761"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "69891347"
 ---
 # <a name="unit-test-basics"></a>單元測試基本概念
 
@@ -40,7 +40,12 @@ ms.locfileid: "66820761"
 
 在本文中，我們會使用稱為 `MyBank` 的虛構應用程式開發來作為範例。 您不需要實際程式碼來照著本主題中的說明進行。 測試方法是以 C# 所撰寫並使用 Microsoft 受控程式碼單元測試架構呈現。 不過，很容易就可以將概念移轉到其他語言與架構。
 
+::: moniker range="vs-2017"
 ![MyBank 方案](../test/media/ute_mybanksolution.png)
+::: moniker-end
+::: moniker range=">=vs-2019"
+![MyBank 解決方案 2019](../test/media/vs-2019/basics-mybank-solution.png)
+::: moniker-end
 
 我們第一次在 `MyBank` 應用程式的設計嘗試包括帳戶元件 (代表個別帳戶及其與銀行的交易)，和資料庫元件 (代表可彙總及管理個別帳戶的功能)。
 
@@ -69,7 +74,7 @@ public void Withdraw(double amount)
     }
     else
     {
-        throw new ArgumentException(amount, "Withdrawal exceeds balance!")
+        throw new ArgumentException(nameof(amount), "Withdrawal exceeds balance!");
     }
 }
 ```
@@ -84,18 +89,28 @@ public void Withdraw(double amount)
 
 1. 在程式碼編輯器視窗中，以滑鼠右鍵按一下並從右鍵功能表中選擇 [[**建立單元測試**]](create-unit-tests-menu.md)。
 
+   ::: moniker range="vs-2017"
    ![從編輯器視窗，檢視內容功能表](../test/media/createunittestsrightclick.png)
+   ::: moniker-end
+   ::: moniker range=">=vs-2019"
+   ![從編輯器視窗，檢視內容功能表](../test/media/vs-2019/basics-create-unit-tests.png)
+   ::: moniker-end
 
    > [!NOTE]
    > [建立單元測試]  功能表命令僅供以 .NET Framework 為目標 (非 .NET Core) 的受控程式碼使用。
 
 2. 按一下 [確定]  接受預設值來建立單元測試，或變更過去用來建立和命名單元測試專案和單元測試的值。 您可以選取預設加入此單元測試方法的程式碼。
 
-    ![Visual Studio 的 [建立單元測試] 對話方塊](../test/media/create-unit-tests.png)
+   ![Visual Studio 的 [建立單元測試] 對話方塊](../test/media/create-unit-tests.png)
 
 3. 會針對此類別中的所有方法，在新的單元測試專案中建立單元測試虛設常式。
 
-    ![隨即建立單元測試](../test/media/createunittestsstubs.png)
+   ::: moniker range="vs-2017"
+   ![隨即建立單元測試](../test/media/createunittestsstubs.png)
+   ::: moniker-end
+   ::: moniker range=">=vs-2019"
+   ![隨即建立單元測試](../test/media/vs-2019/basics-test-stub.png)
+   ::: moniker-end
 
 4. 現在往前跳至了解如何 [將程式碼加入單元測試方法](#write-your-tests) ，讓您的單元測試有意義，以及您可能會想加入的任何額外單元測試，藉此徹底測試程式碼。
 
@@ -194,7 +209,7 @@ public void Withdraw_AmountMoreThanBalance_Throws()
 
 ## <a name="set-timeouts-for-unit-tests"></a>設定單元測試逾時
 
-在個別的測試方法上設定逾時：
+如果您使用 MSTest 架構，您可以使用 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TimeoutAttribute> 在個別的測試方法上設定逾時：
 
 ```csharp
 [TestMethod]
@@ -218,9 +233,14 @@ public void My_Test ()
 
 在建置測試專案後，這些測試便會出現在 [測試總管]  中。 如果看不到 [測試總管]  ，請選擇 Visual Studio 功能表上的 [測試]  ，並選擇 [Windows]  ，然後選擇 [測試總管]  。
 
+::: moniker range="vs-2017"
 ![單元測試總管](../test/media/ute_failedpassednotrunsummary.png)
+::: moniker-end
+::: moniker range=">=vs-2019"
+![單元測試總管](../test/media/vs-2019/basics-test-explorer.png)
+::: moniker-end
 
-隨著您執行、撰寫及重新執行測試，[測試總管]  的預設檢視便會顯示 [失敗的測試]  、[通過的測試]  、[略過的測試]  及 [未執行的測試]  群組中的結果。 您可以選擇群組標題，以開啟顯示該群組中所有測試的檢視。
+在您執行、寫入和重新執行您的測試時，[測試總管]  可以顯示 [失敗的測試]  、[通過的測試]  、[略過的測試]  及 [未執行的測試]  群組中的結果。 您可以在工具列中以不同選項來選擇不同的群組。
 
 在搜尋方塊中找出全域層級中相符的文字或選取其中一個預先定義的篩選器，也能在任何檢視中篩選測試。 您可以隨時執行測試的任何選取範圍。 測試回合的結果會立即顯示在 [總管] 視窗上方的通過/失敗列中。 選取測試時，會顯示測試方法結果的詳細資料。
 
@@ -228,26 +248,56 @@ public void My_Test ()
 
 [測試總管]  工具列可協助您探索、組織和執行您有興趣的測試。
 
+::: moniker range="vs-2017"
 ![從 [測試總管] 的工具列執行測試](../test/media/ute_toolbar.png)
+::: moniker-end
+::: moniker range=">=vs-2019"
+![從 [測試總管] 的工具列執行測試](../test/media/vs-2019/test-explorer-toolbar-diagram-16-2.png)
+::: moniker-end
 
-您可以選擇 [全部執行]  以執行所有測試，或選擇 [執行]  以選擇要執行的一小組測試。 執行一組測試之後，測試回合的摘要會出現在 [測試總管]  視窗的底部。 在底部窗格中選取某個測試以檢視該測試的詳細資料。 從右鍵功能表中選擇 [開啟測試]  (鍵盤：**F12**) 以顯示所選測試的原始程式碼。
+您可以選擇 [全部執行]  以執行所有測試，或選擇 [執行]  以選擇要執行的一小組測試。 選取測試來在測試詳細資料窗格中檢視該測試的詳細資料。 從右鍵功能表中選擇 [開啟測試]  (鍵盤：**F12**) 以顯示所選測試的原始程式碼。
+
+::: moniker range="vs-2017"
 
 如果個別測試沒有任何會防止它們依任意順序執行的相依性，請使用工具列上的 ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png) 切換按鈕開啟平行測試執行。 這可大幅縮短執行所有測試所需的時間。
 
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+如果個別測試沒有任何會防止它們依任意順序執行的相依性，請使用工具列的設定功能表開啟平行測試執行。 這可大幅縮短執行所有測試所需的時間。
+
+::: moniker-end
+
 ### <a name="run-tests-after-every-build"></a>每次建置後執行測試
 
-> [!WARNING]
-> 只有 Visual Studio Enterprise 支援在每次建置之後執行單元測試。
+::: moniker range="vs-2017"
 
 |按鈕|說明|
 |-|-|
-|![建置後執行](../test/media/ute_runafterbuild_btn.png)|若要在每次本機組建之後執行單元測試，請選擇標準功能表上的 [測試]  ，然後在 [測試總管]  工具列上選擇 [建置之後執行測試]  。|
+|![建置後執行](../test/media/ute_runafterbuild_btn.png)|若要在每次本機建置之後執行單元測試，請在標準功能表中選擇 [測試]  ，然後選擇 [測試總管]  工具列上的 [建置之後執行測試]  。|
+
+> [!NOTE]
+> 您需要具備 Visual Studio 2017 Enterprise 版本或 Visual Studio 2019，才能在每次建置後執行單元測試。 在 Visual Studio 2019 中，除了 Enterprise 版本之外，您還可以在 Community 和 Professional 版本中使用該功能。
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+若要在每次進行本機建置之後執行單元測試，請開啟 [測試總管] 中的設定圖示，然後選取 [建置之後執行測試]  。
+
+::: moniker-end
 
 ### <a name="filter-and-group-the-test-list"></a>篩選與群組測試清單
 
-若有大量測試，您可以在 [測試總管]  搜尋方塊中鍵入文字，以依指定字串篩選清單。 您可以從篩選清單中選擇以進一步限制篩選事件。
+當您有大量的測試時，您可以在 [測試總管]  搜尋方塊中鍵入，以使用指定字串來篩選清單。 您可以從篩選清單中選擇以進一步限制篩選事件。
 
+::: moniker range="vs-2017"
 ![搜尋篩選條件分類](../test/media/ute_searchfilter.png)
+::: moniker-end
+::: moniker range=">=vs-2019"
+![搜尋篩選條件分類](../test/media/vs-2019/test-explorer-search-filter-16-2.png)
+::: moniker-end
 
 |按鈕|說明|
 |-|-|
@@ -272,9 +322,14 @@ public void My_Test ()
 
 **問：如果我使用 TDD，要如何從我的測試產生程式碼？**
 
-**答：** 您可以使用 IntelliSense 在您的專案程式碼中產生類別和方法。 在測試方法中撰寫可呼叫所要產生類別或方法的陳述式，然後開啟該呼叫下的 IntelliSense 功能表。 如果呼叫的是新類別的建構函式，請從功能表中選擇 [產生新的類型]  ，然後遵循精靈以將類別插入程式碼專案中。 如果呼叫的是方法，請從 IntelliSense 功能表中選擇 [產生新的方法]  。
+**答：** 請使用快速動作來在您的專案節點中產生類別和方法。 在測試方法中撰寫呼叫您希望產生類別或方法的陳述式，然後開啟出現在錯誤下方的燈泡。 若呼叫是針對新類別的建構函式，請從功能表中選擇 [產生型別]  ，然後遵循精靈來在您的程式碼專案中插入類別。 若呼叫針對方法，請從 IntelliSense 功能表中選擇 [產生方法]  。
 
-![[產生方法 Stub] IntelliSense 功能表](../test/media/ute_generatemethodstubintellisense.png)
+::: moniker range="vs-2017"
+![產生方法虛設常式快速動作功能表](../test/media/ute_generatemethodstubintellisense.png)
+::: moniker-end
+::: moniker range=">=vs-2019"
+![產生方法虛設常式快速動作功能表](../test/media/vs-2019/basics-generate-method-tdd.png)
+::: moniker-end
 
 **問：是否可以建立採用多個資料集作為輸入來執行測試的單元測試？**
 
@@ -310,7 +365,7 @@ public void AddIntegerHelper_DataDrivenValues_AllShouldPass()
 
 **問：是否可以檢視我的單元測試已測試了多少程式碼？**
 
-**答：** 可以。 您可以使用 Visual Studio 程式碼涵蓋範圍工具來判斷您的單元測試實際測試的程式碼數量。 原生和 Managed 語言，以及可由單元測試架構執行的所有單元測試架構都受支援。
+**答：** 可以。 您可以使用 Visual Studio Enterprise 中的 Visual Studio 程式碼涵蓋範圍工具，來判斷單元測試實際測試的程式碼數量。 原生和 Managed 語言，以及可由單元測試架構執行的所有單元測試架構都受支援。
 
 您可以在方案中的所選測試或所有測試上執行程式碼涵蓋範圍。 [程式碼涵蓋範圍結果]  視窗會顯示線條、函式、類別、命名空間及模組所運用的產品程式碼區塊的百分比。
 

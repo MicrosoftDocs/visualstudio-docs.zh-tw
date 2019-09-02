@@ -11,14 +11,15 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d998eee1965b9b28c1b8fde26c9232770d69f751
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 41e6a21278670a477bdd30e28a6f0cc4cac04757
+ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62969224"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68461362"
 ---
 # <a name="project-properties-reference"></a>專案屬性參考
+
 深入了解如何設定和自訂專案屬性。
 
 ## <a name="project-properties-pages"></a>專案屬性頁面
@@ -37,6 +38,6 @@ ms.locfileid: "62969224"
 | [專案設計工具、安全性頁面](../../ide/reference/security-page-project-designer.md) | 使用這個頁面來設定使用 [!INCLUDE[ndptecclick](../../deployment/includes/ndptecclick_md.md)] 部署所部署之應用程式的程式碼存取安全性設定。 |
 | [專案設計工具、簽署頁面](../../ide/reference/signing-page-project-designer.md) | 使用這個頁面來簽署應用程式和部署資訊清單，以及簽署組件。 |
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
-- [專案和方案](../../ide/solutions-and-projects-in-visual-studio.md)
+- [專案和解決方案](../../ide/solutions-and-projects-in-visual-studio.md)

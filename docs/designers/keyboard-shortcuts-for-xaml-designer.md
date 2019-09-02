@@ -1,19 +1,17 @@
 ---
 title: XAML 設計工具的鍵盤快速鍵
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: 40211cc7-294a-4943-85a4-941ad6418dad
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.workload:
-- uwp
-ms.openlocfilehash: 1d0f655fb4b5b2bb23b19f7fcaf5106307c10895
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e9a3260733ce67cde32aa8800b160314cf1ed8bb
+ms.sourcegitcommit: 90c3187d804ad7544367829d07ed4b47d3f8a72d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62896755"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68821785"
 ---
 # <a name="keyboard-shortcuts-for-xaml-designer"></a>XAML 設計工具的鍵盤快速鍵
 
@@ -31,7 +29,7 @@ XAML 設計工具中的鍵盤快速鍵可將需要點擊多次滑鼠按鈕的動
 |選取單一項目|按 **Tab** 鍵可依項目在文件中出現的順序來選取項目。 (您也可以使用方向鍵來選取項目)。|
 |選取多個項目|按住 **Shift** 鍵，同時選取每個項目|
 |選取多個不相鄰的項目|按住 **Ctrl** 鍵，同時選取第一個和最後一個項目|
-|移動選取的項目|按方向鍵 (按住 **Shift** 鍵可增加每次按下按鍵移動的距離)。|
+|移動選取的項目|按方向鍵。 (您可以按住 **Shift** 鍵來增加每次按下按鍵時要移動的距離)。|
 |以每次增加 15 度的方式旋轉項目|按住 **Shift** 鍵，同時旋轉項目|
 |選取所有項目|按 **Ctrl**+**A**|
 |清除選取所有項目|按 **Ctrl**+**Shift**+**A**|

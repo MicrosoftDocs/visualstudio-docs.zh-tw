@@ -11,12 +11,12 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 69ef227bb30703a41fe9519114a2bc9904e902f2
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: f26558a8e8d7e8446e3a992b7555116b5712c364
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66714809"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68924450"
 ---
 # <a name="wpf-overview"></a>WPF 概觀
 
@@ -239,7 +239,7 @@ End Namespace
 
 下列標記會將 <xref:System.Windows.Controls.TextBox> 繫結至自訂 `Person` 物件的執行個體。
 
- ```xaml
+```xaml
  <Window
      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -249,7 +249,7 @@ End Namespace
    <TextBox Name="personNameTextBox" Text="{Binding Path=Name}" />
 
  </Window>
- ```
+```
 
 [!code-vb[SimpleDataBindingSnippets#DataBindingCODEBEHIND](../designers/codesnippet/VisualBasic/introduction-to-wpf_6.vb)]
 [!code-csharp[SimpleDataBindingSnippets#DataBindingCODEBEHIND](../designers/codesnippet/CSharp/introduction-to-wpf_6.cs)]
@@ -597,7 +597,7 @@ WPF 控制項的預設使用者介面通常是從其他控制項和圖案建構�
 </ResourceDictionary>
 ```
 
- 下列範例會參考上述範例中定義的資源字典，以便在應用程式內部共用。
+下列範例會參考上述範例中定義的資源字典，以便在應用程式內部共用。
 
 ```xaml
 <Application

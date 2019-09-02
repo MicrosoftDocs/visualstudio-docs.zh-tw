@@ -17,17 +17,17 @@ ms.assetid: ad9e3eaa-ab86-436e-95b8-dc20eb1f8b2a
 caps.latest.revision: 87
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9e2cc2f08032d9281e3c86990201315fb8bf3937
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 54a050fc6d9d585be2613a27ca177dc77af61121
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67825534"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68871627"
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>使用 UI 自動化來測試您的程式碼
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-驅動應用程式通過其使用者介面 (UI) 的自動化測試稱為「自動程式化 UI 測試」  (CUIT)。 這些測試包括 UI 控制項的功能測試。 它們可讓您確認整個應用程式 (包括其使用者介面) 正確運作。 自動程式碼 UI 測試特別適用於使用者介面中有驗證或其他邏輯時 (例如，在網頁中)。 它們也經常用來自動化現有手動測試。
+驅動應用程式通過其使用者介面 (UI) 的自動化測試稱為「自動程式化 UI 測試」(CUIT)。 這些測試包括 UI 控制項的功能測試。 它們可讓您確認整個應用程式 (包括其使用者介面) 正確運作。 自動程式碼 UI 測試特別適用於使用者介面中有驗證或其他邏輯時 (例如，在網頁中)。 它們也經常用來自動化現有手動測試。
 
  如下圖所示，一般的開發體驗可能是一開始您只是建置應用程式 (F5) 並按一下 UI 控制項確認所有項目都正確運作。 然後，您可能決定建立自動程式碼測試，因此不需要繼續手動測試應用程式。 根據您應用程式中測試的特定功能，您可以撰寫程式碼來進行功能測試或者也許包括 UI 層級測試的整合測試。 如果您只想要直接存取某個商務邏輯，則可以編寫單元測試。 不過，在特定情況下，也可能對測試您應用程式中的各種 UI 控制項有所助益。 自動程式化 UI 測試可以自動化初始 (F5) 情節，確認程式碼變換不會影響您應用程式的功能。
 
@@ -69,7 +69,7 @@ ms.locfileid: "67825534"
 
 1. **建立自動程式化 UI 測試專案。**
 
-    自動程式化 UI 測試必須包含在自動程式化 UI 測試專案中。 如果您還沒有自動程式化 UI 測試專案，請予以建立。 在 [方案總管]  的方案捷徑功能表上，依序選擇 [加入]  和 [新增專案]  ，然後選取 [Visual Basic]  或 [Visual C#]  。 接著，依序選擇 [測試]  和 [自動程式化 UI 測試]  。
+    自動程式化 UI 測試必須包含在自動程式化 UI 測試專案中。 如果您還沒有自動程式化 UI 測試專案，請予以建立。 在 [方案總管] 的方案捷徑功能表上，依序選擇 [加入] 和 [新增專案]，然後選取 [Visual Basic] 或 [Visual C#]。 接著，依序選擇 [測試] 和 [自動程式化 UI 測試]。
 
    - <em>我看不到 [自動程式化 UI 測試]  專案範本。*
 
@@ -77,11 +77,11 @@ ms.locfileid: "67825534"
 
 2. **加入自動程式化 UI 測試檔案。**
 
-    如果您剛剛建立自動程式碼 UI 專案，則自動加入第一個 CUIT 檔案。 若要加入另一個測試檔案，請在自動程式化 UI 測試專案上開啟捷徑功能表，並指向 [加入]  ，然後選擇 [自動程式化 UI 測試]  。
+    如果您剛剛建立自動程式碼 UI 專案，則自動加入第一個 CUIT 檔案。 若要加入另一個測試檔案，請在自動程式化 UI 測試專案上開啟捷徑功能表，並指向 [加入]，然後選擇 [自動程式化 UI 測試]。
 
     ![建立自動程式化 UI 測試](../test/media/codedui-create.png "CodedUI_Create")
 
-    在 [產生自動程式化 UI 測試的程式碼]  對話方塊中，選擇 [錄製動作、編輯 UI 對應或加入判斷提示]  。
+    在 [產生自動程式化 UI 測試的程式碼] 對話方塊中，選擇 [錄製動作、編輯 UI 對應或加入判斷提示]。
 
     ![選取錄製動作](../test/media/codedui-codegendialogb.png "CodedUI_CodeGenDialogB")
 
@@ -91,24 +91,24 @@ ms.locfileid: "67825534"
 
 3. **錄製一連串的動作**。
 
-    **若要開始錄製**，請選擇 [錄製]  圖示。 執行您想要在應用程式中測試的動作 (包括在必要時啟動應用程式)。
+    **若要開始錄製**，請選擇 [錄製] 圖示。 執行您想要在應用程式中測試的動作 (包括在必要時啟動應用程式)。
 
     例如，如果您是測試 Web 應用程式，則可能會啟動瀏覽器，並巡覽到網站，然後登入應用程式。
 
-    **若要暫停錄製** (例如，如果您需要處理傳入的電子郵件)，請選擇 [暫停]  。
+    **若要暫停錄製** (例如，如果您需要處理傳入的電子郵件)，請選擇 [暫停]。
 
    > [!WARNING]
    > 將會錄製所有在桌面上執行的動作。 如果您執行的動作可能會導致在錄製中包括敏感性資料，則請暫停錄製。
 
-    **若要刪除錯誤錄製的動作**，請選擇 [編輯動作]  。
+    **若要刪除錯誤錄製的動作**，請選擇 [編輯動作]。
 
-    **若要產生複寫動作的程式碼**，請選擇 [產生程式碼]  圖示，並輸入自動程式化 UI 測試方法的名稱和描述。
+    **若要產生複寫動作的程式碼**，請選擇 [產生程式碼] 圖示，並輸入自動程式化 UI 測試方法的名稱和描述。
 
 4. **確認 UI 欄位 (例如文字方塊) 中的值**。
 
-    選擇自動程式化 UI 測試產生器中的 [加入判斷提示]  ，然後選擇您執行中應用程式內的 UI 控制項。 在顯示的屬性清單中選取屬性，例如，文字方塊中的 [文字]  。 在捷徑功能表上，選擇 [加入判斷提示]  。 在此對話方塊中，選取比較運算子、比較值和錯誤訊息。
+    選擇自動程式化 UI 測試產生器中的 [加入判斷提示]，然後選擇您執行中應用程式內的 UI 控制項。 在顯示的屬性清單中選取屬性，例如，文字方塊中的 [文字]。 在捷徑功能表上，選擇 [加入判斷提示]。 在此對話方塊中，選取比較運算子、比較值和錯誤訊息。
 
-    關閉判斷提示視窗，然後選擇 [產生程式碼]  。
+    關閉判斷提示視窗，然後選擇 [產生程式碼]。
 
     ![自動程式化 UI 測試目標項目](../test/media/codedui-1.png "CodedUI_1")
 
@@ -138,7 +138,7 @@ ms.locfileid: "67825534"
 
 6. **加入其他動作和判斷提示**。
 
-    將游標放在測試方法中的適當點，然後在捷徑功能表上選擇 [產生自動程式化 UI 測試的程式碼]  。 將會在該點插入新的程式碼。
+    將游標放在測試方法中的適當點，然後在捷徑功能表上選擇 [產生自動程式化 UI 測試的程式碼]。 將會在該點插入新的程式碼。
 
 7. **編輯測試動作和判斷提示的詳細資料**。
 
@@ -150,7 +150,7 @@ ms.locfileid: "67825534"
 
 8. **執行測試**。
 
-    使用 [測試總管]，或開啟測試方法中的捷徑功能表，然後選擇 [執行測試]  。 如需如何執行測試的詳細資訊，請參閱[使用測試總管執行單元測試](../test/run-unit-tests-with-test-explorer.md)以及本主題結尾[後續動作](#VerifyCodeUsingCUITWhatsNext)小節中的*執行自動程式化 UI 測試的其他選項*。
+    使用 [測試總管]，或開啟測試方法中的捷徑功能表，然後選擇 [執行測試]。 如需如何執行測試的詳細資訊，請參閱[使用測試總管執行單元測試](../test/run-unit-tests-with-test-explorer.md)以及本主題結尾[後續動作](#VerifyCodeUsingCUITWhatsNext)小節中的*執行自動程式化 UI 測試的其他選項*。
 
    本主題中的其餘各節提供此程序中各步驟的更多詳細資料。
 
@@ -159,7 +159,7 @@ ms.locfileid: "67825534"
 ### <a name="starting"></a> 啟動和停止受測試的應用程式
  *我不想要分別針對每個測試啟動和停止應用程式、瀏覽器或資料庫。我要如何避免這麼做？*
 
-- ![必要條件](../test/media/prereq.png "Prereq") 如果您不想要錄製可啟動受測試應用程式的動作，則必須先啟動應用程式，再選擇 [錄製]  圖示。
+- ![必要條件](../test/media/prereq.png "Prereq") 如果您不想要錄製可啟動受測試應用程式的動作，則必須先啟動應用程式，再選擇 [錄製] 圖示。
 
 - ![必要條件](../test/media/prereq.png "Prereq")在測試結束時，會終止在其中執行測試的流程。 如果您已在測試中啟動應用程式，則通常會關閉該應用程式。  如果您不想要測試在結束時關閉應用程式，則必須將 .runsettings 檔案加入至方案，並使用 `KeepExecutorAliveAfterLegacyRun` 選項。 如需詳細資訊，請參閱[使用 .runsettings 檔案設定單元測試](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md)。
 
@@ -168,15 +168,15 @@ ms.locfileid: "67825534"
 - ![必要條件](../test/media/prereq.png "Prereq") 您可以加入測試清除方法 (透過 [TestCleanup] 屬性予以識別)，此方法會在每個測試方法結束時執行程式碼。 例如，可以從 TestCleanup 方法呼叫關閉應用程式的方法。
 
 ### <a name="VerifyingCodeUsingCUITGenerateAssertions"></a> 驗證 UI 控制項的屬性
- 您可以使用 [自動程式化 UI 測試產生器]  將使用者介面 (UI) 控制項加入測試的 <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap>，或產生可使用 UI 控制項判斷提示之驗證方法的程式碼。
+ 您可以使用 [自動程式化**UI 測試**產生器] 將使用者介面 (ui) 控制項加入至測試的[UIMap](/previous-versions/dd580454(v=vs.140)) , 或為使用 UI 控制項之判斷提示的驗證方法產生程式碼。
 
- 若要產生 UI 控制項的判斷提示，請選擇自動程式化 UI 測試產生器中的 [加入判斷提示]  工具，並將它拖曳至受測試應用程式上想要驗證是否正確的控制項。 有方塊括住控制項時，請放開滑鼠。 此控制類別碼會立即在 `UIMap.Designer.cs` 檔案中建立。
+ 若要產生 UI 控制項的判斷提示，請選擇自動程式化 UI 測試產生器中的 [加入判斷提示] 工具，並將它拖曳至受測試應用程式上想要驗證是否正確的控制項。 有方塊括住控制項時，請放開滑鼠。 此控制類別碼會立即在 `UIMap.Designer.cs` 檔案中建立。
 
  ![自動程式化 UI 測試目標項目](../test/media/codedui-1.png "CodedUI_1")
 
- 此控制項的屬性現在會列在 [加入判斷提示]  對話方塊中。
+ 此控制項的屬性現在會列在 [加入判斷提示] 對話方塊中。
 
- 另一種巡覽至特定控制項的方式，是選擇箭號 **(<<)** 展開 [UI 控制項對應]  的檢視。 若要尋找父控制項、同層級控制項或子控制項，您可以按一下對應中的任何位置，並使用方向鍵在樹狀目錄中移動。
+ 另一種巡覽至特定控制項的方式，是選擇箭號 **(<<)** 展開 [UI 控制項對應] 的檢視。 若要尋找父控制項、同層級控制項或子控制項，您可以按一下對應中的任何位置，並使用方向鍵在樹狀目錄中移動。
 
  ![自動程式化 UI 測試屬性](../test/media/codedui-2.png "CodedUI_2")
 
@@ -184,13 +184,13 @@ ms.locfileid: "67825534"
 
    在應用程式程式碼中，您想要驗證的控制項必須要有唯一的 ID (例如 HTML ID 屬性) 或 WPF UId。 您可能需要更新應用程式程式碼以加入這些 ID。
 
-  接下來，開啟想要驗證之 UI 控制項的屬性的捷徑功能表，然後指向 [加入判斷提示]  。 在 [新增判斷提示]  對話方塊中，選取您判斷提示的 [比較子]  (例如 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual%2A>)，然後在 [比較值]  中輸入您判斷提示的值。
+  接下來，開啟想要驗證之 UI 控制項的屬性的捷徑功能表，然後指向 [加入判斷提示]。 在 [新增判斷提示] 對話方塊中，選取您判斷提示的 [比較子] (例如 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual%2A>)，然後在 [比較值] 中輸入您判斷提示的值。
 
   ![自動程式化 UI 測試判斷提示](../test/media/codedui-3.png "CodedUI_3")
 
-  加入您測試的所有判斷提示之後，請選擇 [確定]  。
+  加入您測試的所有判斷提示之後，請選擇 [確定]。
 
-  若要產生您判斷提示的程式碼，並將控制項加入至 UI 對應，請選擇 [產生程式碼]  圖示。 輸入您自動程式化 UI 測試方法的名稱以及該方法的描述，這些將加入為該方法的註解。 選擇 [加入並產生]  。 接下來，選擇 [關閉]  圖示關閉 [自動程式化 UI 測試產生器]  。 這樣會產生與下列程式碼類似的程式碼。 例如，如果您輸入的名稱是 `AssertForAddTwoNumbers`，則程式碼會與此範例類似：
+  若要產生您判斷提示的程式碼，並將控制項加入至 UI 對應，請選擇 [產生程式碼] 圖示。 輸入您自動程式化 UI 測試方法的名稱以及該方法的描述，這些將加入為該方法的註解。 選擇 [加入並產生]。 接下來，選擇 [關閉] 圖示關閉 [自動程式化 UI 測試產生器]。 這樣會產生與下列程式碼類似的程式碼。 例如，如果您輸入的名稱是 `AssertForAddTwoNumbers`，則程式碼會與此範例類似：
 
 - 將判斷提示方法 AssertForAddTwoNumbers 呼叫加入至您自動程式碼 UI 測試檔案中的測試方法：
 
@@ -203,7 +203,7 @@ ms.locfileid: "67825534"
   }
   ```
 
-   您可以編輯此檔案以變更步驟和判斷提示的順序，或是建立新的測試方法。 若要加入更多程式碼，請將游標放在測試方法上，並在捷徑功能表上選擇 [產生自動程式化 UI 測試的程式碼]  。
+   您可以編輯此檔案以變更步驟和判斷提示的順序，或是建立新的測試方法。 若要加入更多程式碼，請將游標放在測試方法上，並在捷徑功能表上選擇 [產生自動程式化 UI 測試的程式碼]。
 
 - 將稱為 `AssertForAddTwoNumbers` 的方法加入至 UI 對應 (UIMap.uitest)。 此檔案會在自動程式化 UI 測試編輯器中開啟，而您可以在此編輯器中編輯判斷提示。
 
@@ -220,8 +220,8 @@ ms.locfileid: "67825534"
   }
   ```
 
-  *我嘗試從 [自動程式碼 UI 測試產生器] 選取 [加入判斷提示] 工具時，想要選取的控制項失去焦點並消失。如何選取該控制項？* 
-  **選取隱藏的控制項，使用鍵盤**
+  *我嘗試從 [自動程式碼 UI 測試產生器] 選取 [加入判斷提示] 工具時，想要選取的控制項失去焦點並消失。如何? 選取控制項嗎？使用鍵盤**選取隱藏控制項** * 
+  
 
   有時，[加入控制項並驗證其屬性](#VerifyingCodeUsingCUITGenerateAssertions)時，您可能需要使用鍵盤。 例如，如果您嘗試錄製使用操作功能表控制項的自動程式化 UI 測試，則在嘗試從 [自動程式化 UI 測試產生器] 中選取 [加入判斷提示] 工具時，控制項中的功能表項目清單會失去焦點並消失。 這示範於下圖中，其中，如果您嘗試使用 [加入判斷提示] 工具選取 Internet Explorer 中的操作功能表，則該操作功能表會失去焦點並消失。
 
@@ -291,7 +291,7 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 ## <a name="VerifyingCodeCUITModify"></a> 自訂您的自動程式化 UI 測試
  在您建立自動程式化 UI 測試之後，就可以在 Visual Studio 中使用下列任何工具對其進行編輯：
 
-- **自動程式化的 UI 測試產生器：** 若要將其他控制項和驗證加入至您的測試中使用自動程式化 UI 測試產生器。 請參閱本主題中的[加入控制項並驗證其屬性](#VerifyingCodeUsingCUITGenerateAssertions)小節。
+- **自動程式碼 UI 測試產生器:** 使用自動程式碼 UI 測試產生器, 將其他控制項和驗證加入至您的測試。 請參閱本主題中的[加入控制項並驗證其屬性](#VerifyingCodeUsingCUITGenerateAssertions)小節。
 
 - **自動程式化 UI 測試編輯器：** 自動程式碼 UI 測試編輯器可讓您輕鬆地修改自動程式碼 UI 測試。 您可以使用自動程式碼 UI 測試編輯器，尋找、檢視和編輯您的測試方法。 您也可以在 UI 控制項對應中編輯 UI 動作和其相關聯控制項。 如需詳細資訊，請參閱[使用自動程式化 UI 測試編輯器來編輯自動程式化 UI 測試](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md)。
 
@@ -316,7 +316,7 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
     - [自動程式化 UI 測試和動作記錄的支援組態和平台](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
 
 ### <a name="generatedCode"></a> 產生的程式碼
- 當您選擇 [產生程式碼]  時，會建立數段程式碼：
+ 當您選擇 [產生程式碼] 時，會建立數段程式碼：
 
 - **測試方法中的行。**
 
@@ -449,7 +449,7 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 
 - [在 Microsoft Test Manager 中執行自動化測試](https://msdn.microsoft.com/0632f265-63fe-4859-a413-9bb934c66835)
 
-- [如何：設定和執行已排程的測試在建置您的應用程式之後](https://msdn.microsoft.com/32acfeb1-b1aa-4afb-8cfe-cc209e6183fd)
+- [如何：在建立應用程式之後設定和執行已排程的測試](https://msdn.microsoft.com/32acfeb1-b1aa-4afb-8cfe-cc209e6183fd)
 
 - [在建置流程中執行測試](https://msdn.microsoft.com/library/d05743a1-c5cf-447e-bed9-bed3cb595e38)
 
@@ -465,14 +465,14 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 
 - [擴充自動程式化 UI 測試和動作記錄以支援 Microsoft Excel](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md)
 
-  自動程式化 UI 測試經常用來自動化手動測試。 如需其他指引，請參閱[Testing for Continuous Delivery with Visual Studio 2012 – 第 5 章：自動化系統測試](http://go.microsoft.com/fwlink/?LinkID=255196)。 如需手動測試的詳細資訊，請參閱[&#91;已停用&#93;使用 Microsoft Test Manager 建立手動測試案例](https://msdn.microsoft.com/library/9989e184-c8e4-444b-998d-a1a5ec94461e)。 如需自動化系統測試的詳細資訊，請參閱[使用 Microsoft Test Manager 建立自動化測試](https://msdn.microsoft.com/7b5075ee-ddfe-411d-b1d4-94283550a5d0)。
+  自動程式化 UI 測試經常用來自動化手動測試。 如需其他指引, [請參閱使用 Visual Studio 2012 測試持續傳遞–第5章:自動化系統測試](http://go.microsoft.com/fwlink/?LinkID=255196)。 如需手動測試的詳細資訊，請參閱[&#91;已停用&#93;使用 Microsoft Test Manager 建立手動測試案例](https://msdn.microsoft.com/library/9989e184-c8e4-444b-998d-a1a5ec94461e)。 如需自動化系統測試的詳細資訊，請參閱[使用 Microsoft Test Manager 建立自動化測試](https://msdn.microsoft.com/7b5075ee-ddfe-411d-b1d4-94283550a5d0)。
 
 ## <a name="external-resources"></a>外部資源
 
 ### <a name="guidance"></a>指引
-- [測試 for Continuous Delivery with Visual Studio 2012 – 第 2 章：單元測試：測試內部](http://go.microsoft.com/fwlink/?LinkID=255188)
+- [使用 Visual Studio 2012 來測試持續傳遞–第2章:單元測試:測試內部](http://go.microsoft.com/fwlink/?LinkID=255188)
 
-- [測試 for Continuous Delivery with Visual Studio 2012 – Chapter 5:自動化系統測試](http://go.microsoft.com/fwlink/?LinkID=255196)
+- [使用 Visual Studio 2012 來測試持續傳遞–第5章:自動化系統測試](http://go.microsoft.com/fwlink/?LinkID=255196)
 
 ### <a name="faq"></a>常見問題集
 - [自動程式碼 UI 測試常見問題集 - 1](http://go.microsoft.com/fwlink/?LinkID=230576)
@@ -484,7 +484,7 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 
 ## <a name="see-also"></a>另請參閱
 
-- <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap>
+- [UIMap](/previous-versions/dd580454(v=vs.140))
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert>
 - [改善程式碼品質](https://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)
 - [逐步解說：建立、編輯及維護自動程式化 UI 測試](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)

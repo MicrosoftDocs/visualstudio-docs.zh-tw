@@ -12,11 +12,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 61fe6d3982828d1e2a8ae4aeaba3d89b1b75f4f9
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54803055"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68193323"
 ---
 # <a name="summary-view---net-memory-data"></a>摘要檢視 - .NET 記憶體資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "54803055"
 ## <a name="functions-allocating-most-memory"></a>配置最多記憶體的函式  
  列出在程式碼剖析執行時配置的記憶體位元組數最多的函式。  
   
-|資料行|描述|  
+|資料行|說明|  
 |------------|-----------------|  
 |**名稱**|函式的名稱。|  
 |**位元組 %**|在程式碼剖析執行時，由此函式所配置或由此函式所呼叫的子函式配置的所有配置位元組數百分比。|  
@@ -37,7 +37,7 @@ ms.locfileid: "54803055"
 ## <a name="types-with-most-memory-allocated"></a>配置最多記憶體的類型  
  列出在程式碼剖析執行時配置的記憶體位元組數最多的類型。  
   
-|資料行|描述|  
+|資料行|說明|  
 |------------|-----------------|  
 |**名稱**|型別的名稱。|  
 |**位元組 %**|在程式碼剖析執行時配置給此類型的所有配置位元組數百分比。|  
@@ -45,11 +45,11 @@ ms.locfileid: "54803055"
 ## <a name="types-with-most-instances"></a>具有最多執行個體的類型  
  列出在分析回合期間建立次數最多的類型。 具有  
   
-|資料行|描述|  
+|資料行|說明|  
 |------------|-----------------|  
 |**名稱**|型別的名稱。|  
 |**執行個體 %**|在程式碼剖析執行時建立為此類型執行個體的 .NET 物件總數百分比。|  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [摘要檢視](../profiling/summary-view-sampling-data.md)   
  [摘要檢視](../profiling/summary-view-instrumentation-data.md)

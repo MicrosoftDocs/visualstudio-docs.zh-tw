@@ -14,11 +14,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3390a2b38e82fc89a73a5ced82ef96d7c638a95a
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54785670"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68161979"
 ---
 # <a name="performance-report-views"></a>效能報告檢視
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,5 +47,5 @@ ms.locfileid: "54785670"
  [階層互動檢視](../profiling/tier-interactions-view.md)  
  包含階層互動資料的程式碼剖析資料檔案之互動檢視和報告的參考資訊。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [分析效能工具資料](../profiling/analyzing-performance-tools-data.md)

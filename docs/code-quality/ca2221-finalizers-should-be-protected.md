@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f3da7f0da3901511e0f14e48b3ff0500928e3774
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e88f22f25ff0620a88685dee93fd5658c302db74
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62806624"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68920234"
 ---
 # <a name="ca2221-finalizers-should-be-protected"></a>CA2221:Finalizer 方法應該為 protected
 
@@ -31,19 +31,19 @@ ms.locfileid: "62806624"
 |中斷變更|非中斷|
 
 ## <a name="cause"></a>原因
- 公用類型會實作完成項，不會指定系列 （受保護） 的存取。
+公用類型會執行未指定家族 (受保護) 存取的完成項。
 
 ## <a name="rule-description"></a>規則描述
- 完成項必須使用系列存取修飾詞 (Modifier)。 此規則會強制執行C#，Visual Basic 和 VisualC++編譯器。
+完成項必須使用系列存取修飾詞 (Modifier)。 此規則是由C#、Visual Basic 和 Visual C++編譯器強制執行。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
- 若要修正此規則的違規情形，變更系列存取完成項。
+若要修正此規則的違規情形, 請將完成項變更為可供家族存取。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
- 請勿隱藏此規則的警告。
+請勿隱藏此規則的警告。
 
 ## <a name="example"></a>範例
- 無法以任何高層級的.NET 語言; 違反此規則如果您正在撰寫 Microsoft Intermediate Language，它可以是違反了。
+在任何高階 .NET 語言中都不能違反這項規則;如果您要撰寫 Microsoft 中繼語言, 可能會違反此檔案。
 
 ```
 // =============== CLASS MEMBERS DECLARATION ===================

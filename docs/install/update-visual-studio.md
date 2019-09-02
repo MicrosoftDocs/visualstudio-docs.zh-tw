@@ -2,7 +2,7 @@
 title: 更新 Visual Studio 2017
 titleSuffix: ''
 description: 了解如何將 Visual Studio 逐步更新至最新版本。
-ms.date: 07/11/2019
+ms.date: 07/31/2019
 ms.custom: seodec18
 ms.topic: conceptual
 ms.prod: visual-studio-windows
@@ -17,12 +17,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9ed8ce37351d8129107711e6fd079622050d6aa0
-ms.sourcegitcommit: f369ff7e84b0216f01570a486c7be80ca6d0e61a
+ms.openlocfilehash: 80ee1a568e30a4898c767533a4f592e2301a097a
+ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68250559"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68681518"
 ---
 # <a name="update-visual-studio-to-the-most-recent-release"></a>將 Visual Studio 更新至最新版本
 
@@ -180,7 +180,7 @@ Visual Studio 會通知您何時有 Visual Studio 本身或任何元件的更新
 
 1. 開啟安裝程式。
 
-     ![開啟 Visual Studio 安裝程式](media/vs2019-visual-studio-installer.png "開啟 Visual Studio 安裝程式")
+     ![從 Windows 開啟 Visual Studio 安裝程式](media/vs-2019/vs-installer-windows-start.png "開啟 Visual Studio 安裝程式")
 
    您可能需要更新安裝程式才能繼續。 若是如此，請遵循提示。
 
@@ -188,15 +188,17 @@ Visual Studio 會通知您何時有 Visual Studio 本身或任何元件的更新
 
    例如，如果您之前已安裝 Visual&nbsp;Studio Community&nbsp;2019，且其有可用的更新，安裝程式中就會出現 [有可用的更新]  訊息。
 
-     ![請選取您要更新的 Visual Studio 2019 版本](media/vs2019-update-visual-studio-community-rc.png "請選取您要更新的 Visual Studio 2019 版本")
+     ![請選取您要更新的 Visual Studio 2019 版本](media/vs-2019/vs-installer-update-visual-studio-community.png "請選取您要更新的 Visual Studio 2019 版本")
 
 1. 選擇 [更新]  安裝更新。
 
-    ![請選取 [更新] 按鈕來安裝更新](media/vs2019-choose-update-visual-studio-community-rc.png "請選取 [更新] 按鈕來安裝更新")
+    ![請選取 [更新] 按鈕來安裝更新](media/vs-2019/vs-installer-choose-update-visual-studio-community.png "請選取 [更新] 按鈕來安裝更新")
 
-1. 更新完成後，請選擇 [啟動]  來啟動 Visual Studio。
+1. 在更新完成之後，可能會要求您重新啟動電腦。 若是這樣，請這麼做，然後像平常一樣啟動 Visual Studio。
 
-    ![請選取 [啟動] 按鈕來啟動 Visual Studio](media/vs2019-choose-launch-visual-studio-community-rc.png "請選取 [啟動] 按鈕來啟動 Visual Studio")
+   如果未要求您重新啟動電腦，請選擇 [啟動]  以從安裝程式啟動 Visual Studio。
+
+    ![請選取 [啟動] 按鈕來啟動 Visual Studio](media/vs-2019/choose-launch-visual-studio-community.png "請選取 [啟動] 按鈕來啟動 Visual Studio")
 
 ## <a name="use-the-ide"></a>使用 IDE
 
@@ -206,7 +208,7 @@ Visual Studio 會通知您何時有 Visual Studio 本身或任何元件的更新
 
 1. 從 Windows [開始]  功能表選擇 [Visual Studio 2019]  。
 
-    ![開啟 Visual Studio 2019](media/vs2019-visual-studio-rc.png "從 Windows 開啟 Visual Studio 2019")
+    ![開啟 Visual Studio 2019](media/vs-2019/vs-installer-visual-studio-2019.png "從 Windows 開啟 Visual Studio 2019")
 
 1. 在 [開始使用]  下，選擇任一選項開啟 IDE。
 
@@ -214,15 +216,15 @@ Visual Studio 會通知您何時有 Visual Studio 本身或任何元件的更新
 
     Visual Studio 隨即開啟。 在 IDE 中，會顯示 **Visual Studio 2019 更新**訊息。
 
-    ![IDE 中的「Visual Studio 2019 更新」訊息](media/vs2019-update-visual-studio-ide-message.png "IDE 中的「Visual Studio 2019 更新」訊息")
+    ![IDE 中的「Visual Studio 2019 更新」訊息](media/vs-2019/update-visual-studio-ide-message.png "IDE 中的「Visual Studio 2019 更新」訊息")
 
 1. 在 **Visual Studio 2019 更新**訊息中，選擇 [檢視詳細資料]  。
 
-   ![選擇 Visual Studio 2019 IDE 更新訊息中的 [檢視詳細資料] 按鈕](media/vs2019-update-visual-studio-ide-view-details.png "選擇 Visual Studio 2019 更新訊息中的 [檢視詳細資料] 按鈕")
+   ![選擇 Visual Studio 2019 IDE 更新訊息中的 [檢視詳細資料] 按鈕](media/vs-2019/update-visual-studio-ide-view-details.png "選擇 Visual Studio 2019 更新訊息中的 [檢視詳細資料] 按鈕")
 
 1. 在 [已下載更新，可以開始安裝]  對話方塊方塊中，選擇 [更新]  。
 
-     ![在 [已下載更新，可以開始安裝] 對話方塊中選擇 [更新] 按鈕](media/vs2019-update-visual-studio-community-rc-from-ide.png "在 [已下載更新，可以開始安裝] 對話方塊中選擇 [更新] 按鈕")
+     ![在 [已下載更新，可以開始安裝] 對話方塊中選擇 [更新] 按鈕](media/vs-2019/update-ready-install-visual-studio-community-from-ide.png "在 [已下載更新，可以開始安裝] 對話方塊中選擇 [更新] 按鈕")
 
    Visual Studio 隨即更新，然後關閉再重新開啟。
 
@@ -235,9 +237,9 @@ Visual Studio 會通知您何時有 Visual Studio 本身或任何元件的更新
     > [!NOTE]
     > 您也可以使用 IDE 中的搜尋方塊來檢查更新。 按下 **Ctrl**+**Q**，鍵入「查看是否有更新」，然後選擇符合的搜尋結果。
 
-1. 在 [已下載更新，可以開始安裝]  對話方塊方塊中，選擇 [更新]  。
+1. 在 [有可用的更新]  對話方塊中，選擇 [更新]  。
 
-     ![在 [已下載更新，可以開始安裝] 對話方塊中選擇 [更新] 按鈕](media/vs2019-update-visual-studio-community-rc-from-ide.png "在 [已下載更新，可以開始安裝] 對話方塊中選擇 [更新] 按鈕")
+     ![在 [已下載更新，可以開始安裝] 對話方塊中選擇 [更新] 按鈕](media/vs-2019/update-visual-studio-community-from-ide.png "在 [已下載更新，可以開始安裝] 對話方塊中選擇 [更新] 按鈕")
 
    Visual Studio 隨即更新，然後關閉再重新開啟。
 
@@ -256,7 +258,7 @@ Visual Studio 會通知您何時有 Visual Studio 本身或任何元件的更新
       > [!TIP]
       > Visual Studio 2019 的版本更新是累積性的，因此請選擇安裝版本號碼為最新的更新。
 
-1. 在 [已下載更新，可以開始安裝]  對話方塊方塊中，選擇 [更新]  。
+1. 在 [有可用的更新]  對話方塊中，選擇 [更新]  。
 
    Visual Studio 隨即更新，然後關閉再重新開啟。
 
@@ -290,6 +292,6 @@ Visual Studio 會通知您何時有 Visual Studio 本身或任何元件的更新
 * [並存安裝 Visual Studio 版本](install-visual-studio-versions-side-by-side.md)
 * [更新 Visual Studio 的網路型安裝](update-a-network-installation-of-visual-studio.md)
 * [在維護基底上時更新 Visual Studio](update-servicing-baseline.md)
-* [更新 Visual Studio for Mac](/visualstudio/mac/update)
+* [控制網路型 Visual Studio 部署的更新](controlling-updates-to-visual-studio-deployments.md)
 * [修改 Visual Studio](modify-visual-studio.md)
 * [解除安裝 Visual Studio](uninstall-visual-studio.md)

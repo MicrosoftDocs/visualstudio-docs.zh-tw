@@ -14,20 +14,20 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 18b455d3da5693e5a82dbf45e52d04b18edaef5d
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59664722"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68199099"
 ---
 # <a name="log-devenvexe"></a>/Log (devenv.exe)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 將所有活動記錄至記錄檔中，以進行疑難排解。 在您至少呼叫 `devenv /log` 一次之後這個檔案才會出現。 根據預設，此記錄檔為：  
   
- *%APPDATA%* \Microsoft\VisualStudio\\<版本>\ActivityLog.xml  
+ *%APPDATA%* \Microsoft\VisualStudio\\<版本>  \ActivityLog.xml  
   
- 其中 <版本> 是 Visual Studio 版本。 不過，您可以指定不同的路徑和檔案名稱。  
+ 其中 <版本>  是 Visual Studio 版本。 不過，您可以指定不同的路徑和檔案名稱。  
   
 ## <a name="syntax"></a>語法  
   
@@ -40,5 +40,5 @@ Devenv /log Path\NameOfLogFile
   
  只要是您使用 /log 參數叫用的所有 Visual Studio 執行個體，都會為其寫入記錄。 但不會記錄沒有使用此參數所叫用的 Visual Studio 執行個體。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [Devenv 命令列參數](../../ide/reference/devenv-command-line-switches.md)

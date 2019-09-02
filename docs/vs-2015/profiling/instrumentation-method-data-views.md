@@ -13,11 +13,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ac4e3bf3c5dfa20729fe2270121b7649041d9e59
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54801788"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68159613"
 ---
 # <a name="instrumentation-method-data-views"></a>檢測方法資料檢視
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,5 +57,5 @@ ms.locfileid: "54801788"
  [資源爭用資料檢視](../profiling/resource-contention-data-views.md)  
  使用執行緒爭用方法所產生的程式碼剖析工具資料檔案之檢視和報告的參考資訊。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [了解檢測資料值](../profiling/understanding-instrumentation-data-values.md)

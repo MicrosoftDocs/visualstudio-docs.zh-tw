@@ -12,12 +12,12 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: aa8ffe308f8a1181ed18af52ba7537c46007de94
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: b235576f21b63a7be4170f36abf58bed9fab9df3
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66317643"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68923862"
 ---
 # <a name="build-an-opengl-es-application-on-android-and-ios"></a>在 Android 和 iOS 上建置 OpenGL ES 應用程式
 
@@ -25,7 +25,7 @@ ms.locfileid: "66317643"
 
 ## <a name="requirements"></a>需求
 
-在您建立適用於 iOS 和 Android 的 OpenGL ES 應用程式之前，請確定符合所有系統需求。 否則，請安裝 Visual Studio Installer 中的「使用 C++ 進行行動開發」工作負載。 若要針對 iOS 建置，請納入選用的 C++ iOS 開發工具。 若要針對 Android 建置，請安裝 C++ Android 開發工具和所需的協力廠商工具：Android NDK、Apache Ant、Google Android Emulator 和 Intel Hardware Accelerated Execution Manager。 接下來，設定 Intel HAXM 和 Android Emulator，以便在您的系統上執行。 如需詳細資訊和詳細指示，請參閱[針對跨平台行動裝置應用程式開發安裝 Visual C++](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md)。 若要建置及測試 iOS 應用程式，您需要一部已根據安裝指示設定的 Mac 電腦。 如需如何設定 iOS 開發環境的詳細資訊，請參閱[I安裝和設定工具以使用 iOS 進行建置](../cross-platform/install-and-configure-tools-to-build-using-ios.md)
+在您建立適用於 iOS 和 Android 的 OpenGL ES 應用程式之前，請確定符合所有系統需求。 否則，請安裝 Visual Studio Installer 中的「使用 C++ 進行行動開發」工作負載。 若要針對 iOS 建置，請納入選用的 C++ iOS 開發工具。 若要針對 Android 建置，請安裝 C++ Android 開發工具和所需的協力廠商工具：Android NDK、Apache Ant、Google Android Emulator 和 Intel Hardware Accelerated Execution Manager。 接下來，設定 Intel HAXM 和 Android Emulator，以便在您的系統上執行。 如需詳細資訊和詳細指示，請參閱[針對跨平台行動裝置應用程式開發安裝 Visual C++](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md)。 若要建置及測試 iOS 應用程式，您需要一部已根據安裝指示設定的 Mac 電腦。 如需如何設定 iOS 開發環境的詳細資訊，請參閱[安裝和設定工具以使用 iOS 進行建置](../cross-platform/install-and-configure-tools-to-build-using-ios.md)。
 
 ## <a name="create-a-new-opengles-application-project"></a>建立新的 OpenGLES 應用程式專案
 
@@ -158,7 +158,7 @@ iOS 應用程式專案是在 Visual Studio 中建立及編輯，但由於授權�
 1. 在工具列上選擇您的 iOS 裝置，以便在連接到 Mac 的裝置上執行應用程式。 如果應用程式未啟動，請確認裝置是否授予已部署的應用程式在裝置上執行的權限。 您可以前往裝置上的 [設定]   > [一般]   > [裝置管理]  來設定此權限。 選取您的開發人員應用程式帳戶、信任您的帳戶，然後驗證應用程式。 再次嘗試從 Visual Studio 執行應用程式。
 
    ![iOS 裝置上的 iOS 應用程式](../cross-platform/media/cppmdd-opengles-iosdevice.png "CPPMDD_OpenGLES_iOSDevice")
-   
+
    在您的應用程式啟動之後，您可以設定中斷點，並使用 Visual Studio 偵錯工具來檢查區域變數、查看呼叫堆疊及監看值。
 
    ![位於 iOS 應用程式中斷點上的偵錯工具](../cross-platform/media/cppmdd_opengles_iosdebug.png "CPPMDD_OpenGLES_iOSDebug")

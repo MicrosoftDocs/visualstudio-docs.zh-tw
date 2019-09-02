@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aca4869126a6756c15b2eb2c2be61613b1a58e74
-ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
+ms.openlocfilehash: f494674acdf8b272029ad02a762897b379212ae4
+ms.sourcegitcommit: 9cfd3ef6c65f671a26322320818212a1ed5955fe
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "67032550"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "68533358"
 ---
 # <a name="first-look-at-deployment-in-visual-studio"></a>Visual Studio 中的部署簡介
 
@@ -105,7 +105,11 @@ ms.locfileid: "67032550"
 
 如果您需要比 [ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) 可提供的傳統型應用程式更複雜的安裝，您可以建立 Windows Installer 套件 (MSI 或 EXE 安裝檔案) 或自訂啟動載入器。
 
-- MSI 型安裝程式套件可以使用 [WiX 工具組 Visual Studio 2017 延伸模組](https://marketplace.visualstudio.com/items?itemName=RobMensching.WixToolsetVisualStudio2017Extension)來建立。 這是命令列工具組。
+- MSI 型安裝程式套件可以使用 [WiX Toolset Extension](https://marketplace.visualstudio.com/items?itemName=WixToolset.WiXToolset) 來建立。 這是命令列工具組。
+
+   ::: moniker range=">=vs-2019"
+   針對 Visual Studio 2019，請取得 [WiX Toolset Visual Studio 2019 Extension](https://marketplace.visualstudio.com/items?itemName=WixToolset.WixToolsetVisualStudio2019Extension) \(英文\)。
+   ::: moniker-end
 
 - 可以使用 Flexera Software 的 [InstallShield](https://www.flexerasoftware.com/producer/products/software-installation/installshield-software-installer/tab/requirements) 來建立 MSI 或 EXE 安裝程式套件。 InstallShield 可能會與 Visual Studio 2017 和更新版本 (不支援 Community Edition) 搭配使用。 請注意，InstallShield Limited Edition 不再隨附於 Visual Studio，且 Visual Studio 2017 和更新版本不支援該版本；請洽詢 [Flexera Software](http://learn.flexerasoftware.com/content/IS-EVAL-InstallShield-Limited-Edition-Visual-Studio) \(英文\) 以了解未來的供應狀況。
 

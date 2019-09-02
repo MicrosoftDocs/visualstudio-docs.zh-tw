@@ -1,5 +1,6 @@
 ---
 title: 一般的快速動作
+description: C# 和 Visual Basic 最熱門的快速動作包括修正拼字錯誤的關鍵字或符號、解決合併衝突、移除必要的匯入、產生型別、引進區域變數等等。
 ms.date: 03/28/2018
 ms.topic: reference
 author: gewarren
@@ -10,12 +11,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: f6f8872fa9acb2ca79010a87168c629dcbc3ac6e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2ceedf18b936c0b1e8553ceb3bb1fdbc75035dfa
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62976498"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69551450"
 ---
 # <a name="common-quick-actions"></a>一般的快速動作
 
@@ -158,7 +159,7 @@ public MyMethod()
 
 ### <a name="remove-type-from-default-value-expression"></a>從預設值運算式中移除類型
 
-這個快速動作會從 default 值運算式中移除實值型別，並在編譯器可推斷運算式的類型時使用[ default 常值](/dotnet/csharp/programming-guide/statements-expressions-operators/default-value-expressions#default-literal-and-type-inference)。
+這個快速動作會從 default 值運算式中移除實值型別，並在編譯器可推斷運算式的類型時使用[ default 常值](/dotnet/csharp/language-reference/operators/default#default-literal)。
 
 ```csharp
 // Before

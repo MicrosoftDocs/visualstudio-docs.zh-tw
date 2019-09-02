@@ -1,5 +1,5 @@
 ---
-title: 在 Visual Studio for Mac 中設定多個啟始專案
+title: 設定多個啟始專案
 description: 本文描述如何設定多個專案以在執行或偵錯時啟動。
 author: sayedihashimi
 ms.author: sayedha
@@ -7,12 +7,12 @@ ms.date: 02/21/2019
 ms.topic: conceptual
 ms.prod: visual-studio-mac
 ms.assetid: fd354fff-ce6b-4505-a815-84a2311e39ba
-ms.openlocfilehash: c692cf8907fcd232b7ba442cea351664bc8dd407
-ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
+ms.openlocfilehash: 55519960a6b84968ced43183833167a365e91b35
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67043607"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68872317"
 ---
 # <a name="set-multiple-startup-projects"></a>設定多個啟始專案
 

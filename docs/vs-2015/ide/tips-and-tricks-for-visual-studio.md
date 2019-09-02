@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 24c876edafaee848a050099fdb031f4637436f22
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5358c7e001a993c637cc4ac2dc267a668a7d6e13
+ms.sourcegitcommit: b56dc6fadc6c924beed36bb4c2ccc16cf6bcfa1c
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62430311"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "68740130"
 ---
 # <a name="tips-and-tricks-for-visual-studio"></a>Visual Studio 秘訣和訣竅
 
@@ -141,9 +141,8 @@ ms.locfileid: "62430311"
 
 請參閱[鍵盤快速鍵：Visual Studio Online、TFS 入口網站和 Team Explorer](/azure/devops/project/navigation/keyboard-shortcuts?view=vsts)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [Visual Studio 部落格](http://blogs.msdn.com/b/visualstudio)
 - [Visual Studio 秘訣和訣竅部落格](http://blogs.msdn.com/b/zainnab)
 - [Channel 9 上的 Visual Studio 工具箱](http://channel9.msdn.com/Shows/Visual-Studio-Toolbox)
-- [Visual Studio UserVoice](http://visualstudio.uservoice.com/forums/121579-visual-studio)

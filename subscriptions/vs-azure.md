@@ -1,26 +1,44 @@
 ---
 title: Microsoft Azure 權益 | Microsoft Docs
 author: evanwindom
-ms.author: jaunger
-manager: evelynp
-ms.date: 12/19/2018
+ms.author: lank
+manager: lank
+ms.date: 07/29/2019
 ms.topic: conceptual
 description: 了解如何啟用 Visual Studio 訂用帳戶所含的 Azure 權益。
-ms.openlocfilehash: 542f460e6c228564e05affd9467f6deaaf2b0506
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 923573b1079ddbfaa77837e57df1baa618db6e21
+ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67823751"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68681686"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>在 Visual Studio 訂用帳戶中使用 Microsoft Azure
-
-## <a name="overview"></a>總覽
-
 身為 Visual Studio 訂閱者，您不需要額外收費即可使用 Microsoft Azure。  使用[每月 Azure 信用額度](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/)，Azure 就是您進行開發/測試的個人沙箱。  您可以佈建虛擬機器、雲端服務和其他 Azure 資源。  信用額度會依訂用帳戶層級而異。
 
-## <a name="eligibility"></a>資格
+## <a name="activation-steps"></a>啟用步驟
+1. 登入 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)。
 
+2. 在 [權益] 頁面的 [工具] 區段中找到 Azure 磚，並按一下權益磚底部的 [啟用]  連結。
+   > [!div class="mx-imgBorder"]
+   > ![Azure 磚](_img/vs-azure/vs-azure-tile.png)
+
+3. 如果您沒有現有的 Azure 訂用帳戶，系統將會要求您填入建立 Azure 訂用帳戶所需的資訊、按一下核取方塊以接受條款和條件，然後按一下 [註冊]  ：
+   > [!div class="mx-imgBorder"]
+   > ![Azure 註冊](_img/vs-azure/vs-azure-sign-up-cropped.png) 如果您有現有的訂用帳戶，請按一下核取方塊來接受合約，然後按一下 [註冊]  。
+
+4. 您的帳戶就緒時，可以選擇 Azure 支援方案 (個別銷售)，或開始使用您的 Azure 訂用帳戶。
+   > [!div class="mx-imgBorder"]
+   > ![Azure 準備就緒](_img/vs-azure/vs-azure-getting-ready-cropped.png)
+
+5. 「Azure 儀表板快速入門中心」將會載入。  
+   > [!div class="mx-imgBorder"]
+   > ![Azure 儀表板](_img/vs-azure/vs-azure-dashboard-quickstart.png) 
+
+6. 將 [Azure 入口網站](https://portal.azure.com)加上書籤，方便您在未來進行存取。
+
+
+## <a name="eligibility"></a>資格
 |                 訂用帳戶等級/方案                 |           優勢           |                         可續約？                          |
 |--------------------------------------------------------------|-----------------------------|-------------------------------------------------------------|
 |              Visual Studio Enterprise Standard               |     每月信用點數 $150 美元     |                             是                             ||
@@ -46,30 +64,7 @@ ms.locfileid: "67823751"
 
 不確定您使用哪一個訂用帳戶？  連線到 [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) 以查看指派給您的電子郵件地址的所有訂用帳戶。 若沒有看到您的所有訂用帳戶，可能有一或多個訂用帳戶是指派到不同的電子郵件地址。  您必須以該電子郵件地址登入才能查看對應的訂用帳戶。
 
-## <a name="activation-steps"></a>啟用步驟
-
-1. 登入 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)。
-
-2. 在 [權益] 頁面的 [工具] 區段中找到 Azure 磚，並按一下權益磚底部的 [啟用]  連結。
-   > [!div class="mx-imgBorder"]
-   > ![Azure 磚](_img/vs-azure/vs-azure-tile.png)
-
-3. 填入建立 Azure 訂用帳戶所需的資訊，按一下核取方塊以接受條款和條件，然後按一下 [註冊]  ：
-   > [!div class="mx-imgBorder"]
-   > ![Azure 註冊](_img/vs-azure/vs-azure-sign-up-cropped.png)
-
-4. 您的帳戶就緒時，可以選擇 Azure 支援方案 (個別銷售)，或開始使用您的 Azure 訂用帳戶。
-   > [!div class="mx-imgBorder"]
-   > ![Azure 準備就緒](_img/vs-azure/vs-azure-getting-ready-cropped.png)
-
-5. 將會載入「Azure 儀表板」，而且在您第一次使用時可以選擇加入導覽。  本導覽包含一系列的螢幕提示，指出如何完成各種工作，並找到相關資訊。  完成或關閉導覽將會顯示「Azure 儀表板」。
-
-6. 將 [Azure 入口網站](https://portal.azure.com)加上書籤，方便您在未來進行存取。
-   > [!div class="mx-imgBorder"]
-   > ![Azure 儀表板](_img/vs-azure/vs-azure-dashboard-cropped.png)
-
-## <a name="faq"></a>常見問題集
-
+## <a name="frequently-asked-questions"></a>常見問題集
 ### <a name="q-how-do-i-submit-a-technical-support-incident-from-within-the-azure-portal"></a>問：如何在 Azure 入口網站內提交技術支援事件？
 答：從 Azure 入口網站提交支援事件包含三個步驟。
 1. 啟用您的技術支援權益，然後取得您的合約識別碼存取識別碼。
@@ -79,7 +74,6 @@ ms.locfileid: "67823751"
 如需完整的詳細資料，請瀏覽[技術支援](vs-tech-support.md)文件。
 
 ### <a name="q-ive-received-a-message-stating-that-my-access-to-azure-will-end-soon--what-can-i-do-to-continue-using-azure"></a>問：我收到一則訊息，指出我的 Azure 存取權很快將會結束。  我要怎麼做才能繼續使用 Azure？
-
 答：您收到這封電子郵件的原因，是因為您使用與您的 Visual Studio 訂用帳戶建立關聯的 Azure 權益，而該訂用帳戶已過期或已被移除。  若要繼續使用 Azure，您有數個選項：
 
 **建議的動作：**
@@ -105,9 +99,14 @@ ms.locfileid: "67823751"
 如果您確信不應該收到這封電子郵件，請連絡 [Azure 客戶支援](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade)。
 
 ## <a name="support-resources"></a>支援資源
-
 - 需要使用 Azure 的說明嗎？  請參閱這些資源：
   - 技術支援：[https://azure.microsoft.com/support/options/](https://azure.microsoft.com/support/options/)
   - [Azure 文件](/azure/)
 - 如需 Visual Studio 訂用帳戶有關銷售、訂閱、帳戶與計費的協助，請聯繫 Visual Studio [訂用帳戶支援](https://visualstudio.microsoft.com/subscriptions/support/)。
 - 是否有關於 Visual Studio IDE、Azure DevOps Services 或其他 Visual Studio 產品或服務的問題？  前往 [Visual Studio 支援](https://visualstudio.microsoft.com/support/)
+
+## <a name="next-steps"></a>後續步驟
+如需有關 Microsoft 工具與服務的詳細資訊，請參閱下列文件：
+- [Azure](/azure/)
+- [Azure DevOps](/azure/devops/)
+- [Visual Studio IDE](/visualstudio/)

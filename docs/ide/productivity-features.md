@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d5116c2a979a45414046f0058d85ccbf0d179e24
-ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
+ms.openlocfilehash: e4f238046e671371a1fe83a3f5b9552b3956be8f
+ms.sourcegitcommit: 5b34052a1c7d86179d7898ed532babb2d9dad4a3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67046849"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69490660"
 ---
 # <a name="productivity-tips-for-visual-studio"></a>使用 Visual Studio 提高生產力的祕訣
 
@@ -46,7 +46,7 @@ ms.locfileid: "67046849"
 
 ## <a name="navigate-within-your-code"></a>在您的程式碼中巡覽
 
- 您可以利用各種技巧，更快速地尋找和移動至程式碼中的某個位置。
+您可以利用各種技巧，更快速地尋找和移動至程式碼中的某個位置。
 
 - **將數行程式碼加入書籤**。 您可以利用書籤來快速地巡覽至檔案中的特定幾行程式碼。
 
@@ -142,6 +142,7 @@ ms.locfileid: "67046849"
 
 ## <a name="see-also"></a>另請參閱
 
+- [Visual Studio 祕訣和訣竅部落格文章](https://devblogs.microsoft.com/visualstudio/visual-studio-tips-and-tricks/)
 - [常用命令的預設鍵盤快速鍵](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md)
 - [如何：自訂功能表與工具列](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md)
 - [逐步解說：建立簡單的應用程式](../get-started/csharp/tutorial-wpf.md)

@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 897c3a82f5add84ad343c100b93fd8a4d2663610
-ms.sourcegitcommit: d4920babfc3d24a3fe1d4bf446ed3fe73b344467
+ms.openlocfilehash: 04a130528edbe8ab3aae0a24d69315b934b19d54
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "67160059"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69551437"
 ---
 # <a name="application-page-project-designer-c"></a>專案設計工具，應用程式頁 (C#)
 
@@ -97,13 +97,15 @@ ms.locfileid: "67160059"
 
 **圖示和資訊清單**
 
-預設會選取此選項按鈕，並啟用 [圖示]  和 [資訊清單]  選項。 這可讓您選取自己的圖示，或選取不同的資訊清單產生選項。 除非您要提供專案的資源檔，否則請保留選取此選項按鈕。
+預設會選取此選項按鈕，並啟用 [圖示]  和 [資訊清單]  選項。 這可讓您選取自己的圖示，或是選取不同的資訊清單產生選項。 除非您要提供專案的資源檔，否則請保留選取此選項按鈕。
 
 **圖示**
 
 設定想要用來當作程式圖示的 *.ico* 檔案。 按一下 [瀏覽]  以瀏覽現有圖形，或鍵入您所要檔案的名稱。 如需詳細資訊，請參閱 [/win32icon (C# 編譯器選項)](/dotnet/csharp/language-reference/compiler-options/win32icon-compiler-option)。
 
 若要以程式設計方式存取此屬性，請參閱 <xref:VSLangProj.ProjectProperties.ApplicationIcon%2A>。
+
+如需建立圖示的資訊，請參閱[圖示的影像編輯器](/cpp/windows/image-editor-for-icons)。
 
 **Manifest**
 
@@ -120,3 +122,5 @@ ms.locfileid: "67160059"
 提供專案的資源檔時，請選取此選項按鈕。 選取此選項會停用 [圖示]  和 [資訊清單]  選項。
 
 輸入路徑名稱，或使用 [瀏覽] 按鈕 ( **...** ) 將 Win32 資源檔新增至專案。
+
+如需詳細資訊，請參閱[建立 .NET 應用程式的資源檔](/dotnet/framework/resources/creating-resource-files-for-desktop-apps)。

@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d4a194229ccbe6720f4c8097422691974ab64b7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c144db920bfa04055c81227e4cc2c230ed2f097d
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62545468"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68921334"
 ---
 # <a name="ca1811-avoid-uncalled-private-code"></a>CA1811:避免使用未呼叫的私用程式碼
 
@@ -28,33 +28,33 @@ ms.locfileid: "62545468"
 |TypeName|AvoidUncalledPrivateCode|
 |CheckId|CA1811|
 |分類|Microsoft.Performance|
-|中斷變更|非重大|
+|中斷變更|不中斷|
 
 ## <a name="cause"></a>原因
- 私用或內部 （組件層級） 成員的組件中沒有呼叫端、 common language runtime 中，不會叫用和委派不會叫用。 此規則不會檢查下列成員：
+私用或內部 (元件層級) 成員在元件中沒有呼叫端, 不是由 common language runtime 叫用, 而且不是由委派叫用。 此規則不會檢查下列成員:
 
 - 明確介面成員。
 
-- 靜態建構函式。
+- 靜態的函式。
 
-- 序列化建構函式。
+- 序列化的函式。
 
-- 標記為<xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute?displayProperty=fullName>或<xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute?displayProperty=fullName>。
+- 以或<xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute?displayProperty=fullName> <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute?displayProperty=fullName>標記的方法。
 
-- 會覆寫的成員。
+- 覆寫的成員。
 
 ## <a name="rule-description"></a>規則描述
- 此規則可以報告如果進入點，在出現的誤判不會目前識別規則邏輯。 此外，編譯器可能會發出 noncallable 的程式碼的組件。
+如果目前未由規則邏輯識別的進入點出現, 此規則可以報告錯誤的陽性。 此外, 編譯器可能會發出 noncallable 程式碼到元件中。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
- 若要修正此規則的違規情形，移除 noncallable 的程式碼，或加入程式碼呼叫它。
+若要修正此規則的違規情形, 請移除 noncallable 程式碼或加入呼叫它的程式碼。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
- 它可安全地隱藏此規則的警告。
+您可以放心地隱藏此規則的警告。
 
-## <a name="related-rules"></a>相關的規則
- [CA1812:避免使用未執行個體化的內部類別](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md)
+## <a name="related-rules"></a>相關規則
+[CA1812避免未具現化的內部類別](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md)
 
- [CA1801： 必須檢閱未使用的參數](../code-quality/ca1801-review-unused-parameters.md)
+[CA1801 必須審查未使用的參數](../code-quality/ca1801-review-unused-parameters.md)
 
- [CA1804： 必須移除未使用的區域變數](../code-quality/ca1804-remove-unused-locals.md)
+[CA1804 必須移除未使用的區域變數](../code-quality/ca1804-remove-unused-locals.md)

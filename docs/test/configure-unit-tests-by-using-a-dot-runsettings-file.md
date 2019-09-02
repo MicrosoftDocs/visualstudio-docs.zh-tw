@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 9715edff9083a0e99fa52075426d11ea92b7b6e2
-ms.sourcegitcommit: d4920babfc3d24a3fe1d4bf446ed3fe73b344467
+ms.openlocfilehash: d9f47c54a530f58ea562fd942c1ef795bad37331
+ms.sourcegitcommit: 5b34052a1c7d86179d7898ed532babb2d9dad4a3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "67160199"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69490634"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>使用 *.runsettings* 檔案設定單元測試
 
@@ -26,11 +26,25 @@ ms.locfileid: "67160199"
 
 ### <a name="ide"></a>IDE
 
-若要在 IDE 中指定回合設定檔，請選取 [測試]   > [測試設定]   > [選取測試設定檔]  ，然後選取 *.runsettings* 檔案。
+::: moniker range="vs-2017"
 
-![在 Visual Studio 中選取測試設定檔案功能表](media/select-test-settings-file.png)
+若要在 IDE 中指定執行設定檔，請選取 [測試]  > [測試設定]  > [選取測試設定檔]  ，然後選取 *.runsettings* 檔案。
 
-該檔案隨即出現在 [測試設定]  功能表上，而且您可以加以選取或取消選取。 選取時，只要選取 [分析程式碼涵蓋範圍]  ，就會套用回合設定檔。
+![在 Visual Studio 2017 中選取測試設定檔的功能表](media/select-test-settings-file.png)
+
+檔案隨即出現在 [測試設定] 功能表中，且您可以選取或取消選取它。 選取時，只要選取 [分析程式碼涵蓋範圍]  ，就會套用回合設定檔。
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+若要在 IDE 中指定執行設定檔，請在 [測試總管]  中，選取 [設定]  按鈕上的箭頭，然後選取 [選取設定檔]  。 瀏覽並選取 *.runsettings* 檔案。
+
+![在 Visual Studio 2019 中選取測試設定檔的功能表](media/vs-2019/select-test-settings-file.png)
+
+該檔案隨即出現在 [測試總管] 的 [設定] 功能表上，且您可以選取或取消選取它。 選取時，只要選取 [分析程式碼涵蓋範圍]  ，就會套用回合設定檔。
+
+::: moniker-end
 
 ### <a name="command-line"></a>命令列
 
@@ -73,9 +87,19 @@ ms.locfileid: "67160199"
    > [!TIP]
    > 檔案名稱並不重要，只要使用的副檔名為 .runsettings  即可。
 
-1. 使用後續範例的 XML 取代檔案內容，並視需要自訂它。
+2. 使用後續範例的 XML 取代檔案內容，並視需要自訂它。
 
-1. 在 [測試]  功能表中選擇 [測試設定]   > [選取測試設定檔]  。 瀏覽至您建立的 .runsettings  檔案，然後選取 [確定]  。
+::: moniker range="vs-2017"
+
+3. 在 [測試]  功能表中選擇 [測試設定]   > [選取測試設定檔]  。 瀏覽至您建立的 .runsettings  檔案，然後選取 [確定]  。
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+3. 若要在 [測試總管]  中選取執行設定檔，請選取 [設定]  按鈕上的箭頭，然後選取 [選取設定檔]  。 瀏覽至您建立的 .runsettings  檔案，然後選取 [確定]  。
+
+::: moniker-end
 
    > [!TIP]
    > 您可以在方案中建立多個 .runsettings  檔案，然後視需要選取其中一個作為使用中測試設定檔。
@@ -94,7 +118,7 @@ ms.locfileid: "67160199"
     <ResultsDirectory>.\TestResults</ResultsDirectory>
 
     <!-- x86 or x64 -->
-    <!-- You can also change it from the top-level menu Test > Test Settings > Processor Architecture for AnyCPU Projects -->
+    <!-- You can also change it from the test settings menu; choose "Processor Architecture for AnyCPU Projects" -->
     <TargetPlatform>x86</TargetPlatform>
 
     <!-- Framework35 | [Framework40] | Framework45 -->
@@ -260,7 +284,7 @@ public void HomePageTest()
 |-|-|-|
 |**ForcedLegacyMode**|False|Visual Studio 2012 中的 MSTest 配接器已進行過最佳化，因此更快速且更具延展性。 某些行為 (例如測試執行順序) 可能與舊版 Visual Studio 稍有出入。 將此值設定為 **true**，以使用較舊的測試配接器。<br /><br />例如，如果您為單元測試指定 *app.config* 檔案，則可以使用此設定。<br /><br />建議您考慮重構測試，以便使用較新的配接器。|
 |**IgnoreTestImpact**|False|在 MSTest 或 Microsoft Test Manager 中執行時，測試影響功能會為最近變更所影響的測試設定優先權。 這項設定會停用該功能。 如需詳細資訊，請參閱[自從上次建置以來應該要執行哪些測試？](https://msdn.microsoft.com/library/dd286589)。|
-|**SettingsFile**||您可以指定與此處的 MS 測試配接器一起使用的測試設定檔。 您也可以選取 [測試]   > [測試設定]   > [選取測試設定檔]  來指定測試設定檔。<br /><br />如果您指定這個值，也必須將 [ **ForcedlegacyMode** ] 設定為 [ **true**]。<br /><br />`<ForcedLegacyMode>true</ForcedLegacyMode>`|
+|**SettingsFile**||您可以指定與此處的 MS 測試配接器一起使用的測試設定檔。 您也可以[從設定功能表](#ide)指定測試設定檔。<br /><br />如果您指定這個值，也必須將 [ **ForcedlegacyMode** ] 設定為 [ **true**]。<br /><br />`<ForcedLegacyMode>true</ForcedLegacyMode>`|
 |**KeepExecutorAliveAfterLegacyRun**|False|測試回合完成後，會關閉 MSTest。 所有在測試過程中啟動的處理序也都會終止。 如果您要讓測試執行程式保持運作，請將此值設定為 **true**。 例如，您可以使用此設定讓瀏覽器在不同的自動程式碼 UI 測試之間保持執行。|
 |**DeploymentEnabled**|true|如果您將此值設定為 **false**，就不會將您在測試方法中指定的部署項目複製到部署目錄中。|
 |**CaptureTraceOutput**|true|您可以使用 <xref:System.Diagnostics.Trace.WriteLine%2A?displayProperty=nameWithType> 從測試方法寫入偵錯追蹤。|

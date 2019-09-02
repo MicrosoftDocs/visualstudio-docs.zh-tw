@@ -3,17 +3,17 @@ title: Visual Studio 訂用帳戶的 Visual Studio IDE 權益 | Microsoft Docs
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 04/03/2019
+ms.date: 08/01/2019
 ms.topic: conceptual
 description: 了解如何下載和安裝 Visual Studio 訂用帳戶中所含的 Visual Studio IDE。
-ms.openlocfilehash: 6b3e53604eb275b6fec867ef2470c57d47aaa510
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 62992b2c9dc21063d78c135894368c93f07f76a8
+ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67824650"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68787873"
 ---
-# <a name="using-the-visual-studio-2019-benefit"></a>使用 Visual Studio 2019 權益
+# <a name="the-visual-studio-2019-benefit"></a>Visual Studio 2019 權益
 
 身為 Visual Studio 訂閱者，您可以存取 Visual Studio IDE。  特定版本將取決於您的訂用帳戶層級。  權益會以磚形式顯示在訂閱者入口網站之[權益](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)頁面的 [工具] 分類中
 
@@ -34,7 +34,7 @@ ms.locfileid: "67824650"
 5. 按一下藍色的 [下載] 按鈕。
    > [!div class="mx-imgBorder"]
    > ![Visual Studio Enterprise 下載詳細資料](_img/vs-ide-experience/vs-ide-download-details.png)
-6. 若要立即安裝，請按一下 [執行]  。
+6. 按一下所下載的安裝程式套件。  如果提示立即安裝，請按一下 [執行]  。
 7. 在 [使用者帳戶控制] 對話方塊中，按一下 [是]  。
 8. 按一下 [繼續]  接受授權條款。
 9. 安裝程式啟動時，請選擇您想要的工作負載、個別元件和語言套件，方法是在對應的索引標籤上選擇它們。
@@ -43,9 +43,9 @@ ms.locfileid: "67824650"
 
 10. 按一下 [安裝]  。
 
-11. 安裝完成時，您可以選擇修改安裝，或啟動 Visual Studio。  按一下 [啟動]  開始使用。
+11. 安裝完成時，您可以選擇修改安裝，或啟動 Visual Studio。  按一下 [啟動]  開始使用。  如果您安裝了多個版本，將會列出。
     > [!div class="mx-imgBorder"]
-    > ![啟動 Visual Studio Enterprise](_img/vs-ide-experience/vs-ide-launch-cropped.png)
+    > ![啟動 Visual Studio Enterprise](_img/vs-ide-experience/vs-ide-versions.png)
 
 12. 使用與 Visual Studio 訂用帳戶建立關聯的帳戶登入。
 
@@ -53,12 +53,9 @@ ms.locfileid: "67824650"
 
 14. Visual Studio 隨即開啟。 您已準備好開始使用 Visual Studio！
 
-    ::: moniker range="vs-2017"
-
     > [!div class="mx-imgBorder"]
     > ![開始使用 Visual Studio Enterprise](_img/vs-ide-experience/vs-ide-start-cropped.png)
 
-    ::: moniker-end
 
 ## <a name="eligibility"></a>資格
 
@@ -81,3 +78,9 @@ ms.locfileid: "67824650"
   - 技術支援：[https://visualstudio.microsoft.com/support/](https://visualstudio.microsoft.com/support/)
   - [文件](/visualstudio/)
 - 如需 Visual Studio 訂用帳戶有關銷售、訂閱、帳戶與計費的協助，請聯繫 Visual Studio [訂用帳戶支援](https://visualstudio.microsoft.com/subscriptions/support/)。
+
+## <a name="next-steps"></a>後續步驟
+安裝 Visual Studio 之後，請別忘了起用這些其他重要的權益：
+- [Azure DevOps](vs-azure-devops.md)
+- [Azure 點數](vs-azure.md)
+- [Windows 開發人員帳戶](vs-windows-dev.md)

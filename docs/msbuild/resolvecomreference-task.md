@@ -1,6 +1,6 @@
 ---
 title: ResolveComReference 工作 | Microsoft Docs
-ms.date: 11/04/2016
+ms.date: 07/25/2019
 ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#ResolveComReference
@@ -18,17 +18,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 123aa52b5062d8ac083f054074df2c65ba77f80d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: ecefab48babc2938a4995ec8232e0aa7a06dae3c
+ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63431280"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68681103"
 ---
 # <a name="resolvecomreference-task"></a>ResolveComReference 工作
+
 取得一或多個類型程式庫名稱或 *.tlb* 檔案的清單，並將那些類型程式庫解析至磁碟上的位置。
 
 ## <a name="parameters"></a>參數
+
  下表說明 `ResolveCOMReference` 工作的參數。
 
 |參數|說明|
@@ -52,6 +54,7 @@ ms.locfileid: "63431280"
 |`WrapperOutputDirectory`|選擇性的 `String` 參數。<br /><br /> 產生的 interop 組件在磁碟上所在位置。 如未指定此項目中繼資料，工作會使用專案檔所在目錄的絕對路徑。|
 
 ## <a name="typelibnames-item-metadata"></a>TypeLibNames 項目中繼資料
+
  下表描述將項目傳遞給 `TypeLibNames` 參數的可用項目中繼資料。
 
 |中繼資料|說明|
@@ -59,22 +62,29 @@ ms.locfileid: "63431280"
 |`GUID`|必要的項目中繼資料。<br /><br /> 類型程式庫的 GUID。 如未指定此項目中繼資料，則工作會失敗。|
 |`VersionMajor`|必要的項目中繼資料。<br /><br /> 類型程式庫的主要版本。 如未指定此項目中繼資料，則工作會失敗。|
 |`VersionMinor`|必要的項目中繼資料。<br /><br /> 類型程式庫的次要版本。 如未指定此項目中繼資料，則工作會失敗。|
+|`EmbedInteropTypes`|選擇性的 `Boolean` 中繼資料。<br /><br />  若為 `true`，就會將 Interop 類型從這個參考直接內嵌到您的組件中，而不是產生 Interop DLL。|
 |`LocaleIdentifier`|選擇性項目中繼資料。<br /><br /> 類型程式庫的地區設定識別碼 (或 LCID)。 這會指定為 32 位元值，識別使用者、區域或應用程式慣用的人類語言。 如未指定此項目中繼資料，工作會使用預設的地區設定識別碼 "0"。|
 |`WrapperTool`|選擇性項目中繼資料。<br /><br /> 指定為此類型程式庫產生組件包裝函式使用的包裝函式工具。 如未指定此項目中繼資料，工作會使用預設的包裝函式工具 "tlbimp"。 可用且不區分大小寫的 TypeLib 選項有：<br /><br /> -   `Primary`：當您想要使用 COM 元件已產生的主要 Interop 組件時，請使用此包裝函式工具。 當您使用此包裝函式工具時，請勿指定包裝函式的輸出目錄，因為這會造成工作失敗。<br />-   `TLBImp`：當您想要產生 COM 元件的 Interop 組件時，請使用此包裝函式工具。<br />-   `AXImp`：當您想要產生 ActiveX 控制項的 Interop 組件時，請使用此包裝函式工具。|
 
 ## <a name="typelibfiles-item-metadata"></a>TypeLibFiles 項目中繼資料
+
  下表描述將項目傳遞給 `TypeLibFiles` 參數的可用項目中繼資料。
 
 |中繼資料|說明|
 |--------------|-----------------|
+|`EmbedInteropTypes`|選擇性的 `Boolean` 參數。<br /><br />  若為 `true`，就會將 Interop 類型從這個參考直接內嵌到您的組件中，而不是產生 Interop DLL。|
 |`WrapperTool`|選擇性項目中繼資料。<br /><br /> 指定為此類型程式庫產生組件包裝函式使用的包裝函式工具。 如未指定此項目中繼資料，工作會使用預設的包裝函式工具 "tlbimp"。 可用且不區分大小寫的 TypeLib 選項有：<br /><br /> -   `Primary`：當您想要使用 COM 元件已產生的主要 Interop 組件時，請使用此包裝函式工具。 當您使用此包裝函式工具時，請勿指定包裝函式的輸出目錄，因為這會造成工作失敗。<br />-   `TLBImp`：當您想要產生 COM 元件的 Interop 組件時，請使用此包裝函式工具。<br />-   `AXImp`：當您想要產生 ActiveX 控制項的 Interop 組件時，請使用此包裝函式工具。|
 
 > [!NOTE]
 > 您為唯一識別類型程式庫所提供的資訊愈詳細，工作解析至正確磁碟檔案的可能性就愈大。
 
 ## <a name="remarks"></a>備註
- 除了上述所列的參數，這項工作也會從 <xref:Microsoft.Build.Utilities.Task> 類別繼承參數。 如需這些額外參數及其說明的清單，請參閱 [Task 基底類別](../msbuild/task-base-class.md)。
+
+除了上述所列的參數，這項工作也會從 <xref:Microsoft.Build.Utilities.Task> 類別繼承參數。 如需這些額外參數及其說明的清單，請參閱 [Task 基底類別](../msbuild/task-base-class.md)。
+
+COM DLL 無須在機器上註冊，此工作便能運作。
 
 ## <a name="see-also"></a>另請參閱
+
 - [工作](../msbuild/msbuild-tasks.md)
 - [工作參考](../msbuild/msbuild-task-reference.md)

@@ -17,11 +17,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 9c9526b2deaafb36e991afce6d29ace47f8564ba
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60091404"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68179328"
 ---
 # <a name="using-the-task-list"></a>使用工作清單
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +47,7 @@ ms.locfileid: "60091404"
   
 #### <a name="to-open-the-task-list"></a>開啟工作清單  
   
-- 在 [檢視] 功能表上，選擇 [工作清單]\(鍵盤：Ctrl+\\、T)。  
+- 在 [檢視]  功能表上，選擇 [工作清單]  \(鍵盤：Ctrl+\\、T)。  
   
      ![[工作清單] 視窗](../ide/media/vs2015-task-list.png "vs2015_task_list")  
   
@@ -109,22 +109,22 @@ ms.locfileid: "60091404"
   
 ##### <a name="to-turn-off-c-todo-comments"></a>若要關閉 C++ TODO 註解  
   
-1. 在 [工具] 功能表上，移至 [選項] &#124; [文字編輯器] &#124; [C/C++] &#124; [檢視] &#124; [列舉註解工作] 並將值設定為 false。  
+1. 在 [工具]  功能表上，移至 [選項] &#124; [文字編輯器] &#124; [C/C++] &#124; [檢視] &#124; [列舉註解工作]  並將值設定為 false。  
   
 2. 在 [ **選項** ] 對話方塊中，開啟 [ **文字編輯器**]。  
   
-3. 在 [C/C++] 下方，選擇 [檢視] ，然後將 [列舉註解工作]  設定為 **False**。  
+3. 在 [C/C++]  下方，選擇 [檢視]  ，然後將 [列舉註解工作]  設定為 **False**。  
   
 ## <a name="shortcuts"></a> 快速鍵  
- *捷徑* 是在 [工作清單] 內所追蹤程式碼中的書籤；它的圖示與一般書籤不同。 按兩下 [ **工作清單** ] 中的捷徑可移至程式碼中對應的位置。  
+ *捷徑* 是在 [工作清單]  內所追蹤程式碼中的書籤；它的圖示與一般書籤不同。 按兩下 [ **工作清單** ] 中的捷徑可移至程式碼中對應的位置。  
   
  ![Visual Studio 工作清單捷徑圖示](../ide/media/vs2015-task-list-bookmark.png "vs2015_task_list_bookmark")  
   
 #### <a name="to-create-a-shortcut"></a>建立捷徑  
   
-- 將指標插入要放置捷徑的程式碼中。 選擇 [編輯] &#124; [書籤] &#124; [加入工作清單捷徑] 或按 (鍵盤：Ctrl+K、Ctrl+H)。  
+- 將指標插入要放置捷徑的程式碼中。 選擇 [編輯] &#124; [書籤] &#124; [加入工作清單捷徑]  或按 (鍵盤：Ctrl+K、Ctrl+H)。  
   
      若要在程式碼中巡覽捷徑，請在清單中選擇捷徑，然後從捷徑功能表中選擇 [下一個工作]  或 [上一個工作]  。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [選項對話方塊、環境、工作清單](../ide/reference/task-list-environment-options-dialog-box.md)

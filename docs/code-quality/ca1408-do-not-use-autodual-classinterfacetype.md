@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: c811c7e2b6ba06c716179469c8b038fd26b3b38a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b79483e8703ea297634d0d81d5449c09b58c9fb7
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62546029"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68921976"
 ---
 # <a name="ca1408-do-not-use-autodual-classinterfacetype"></a>CA1408:不要使用 AutoDual ClassInterfaceType
 
@@ -34,29 +34,29 @@ ms.locfileid: "62546029"
 |中斷變更|中斷|
 
 ## <a name="cause"></a>原因
- 元件物件模型 (COM) 可見的型別會標示<xref:System.Runtime.InteropServices.ClassInterfaceAttribute>屬性設為`AutoDual`的值<xref:System.Runtime.InteropServices.ClassInterfaceType>。
+元件物件模型 (COM) 可見類型已標記<xref:System.Runtime.InteropServices.ClassInterfaceAttribute>為屬性設定為的`AutoDual`值<xref:System.Runtime.InteropServices.ClassInterfaceType>。
 
 ## <a name="rule-description"></a>規則描述
- 使用雙重介面 (Dual Interface) 的類型可讓用戶端繫結至特定的介面配置。 在未來版本中，若類型或任何基底類型 (Base Type) 的配置有所變更，將會中斷繫結至此介面的 COM 用戶端。 根據預設，如果<xref:System.Runtime.InteropServices.ClassInterfaceAttribute>屬性未指定，會使用僅分派介面。
+使用雙重介面 (Dual Interface) 的類型可讓用戶端繫結至特定的介面配置。 在未來版本中，若類型或任何基底類型 (Base Type) 的配置有所變更，將會中斷繫結至此介面的 COM 用戶端。 根據預設, 如果<xref:System.Runtime.InteropServices.ClassInterfaceAttribute>未指定屬性, 則會使用分派專用介面。
 
- 除非已標記，否則所有公用的非泛型型別會顯示為 COM;所有的非公用和泛型型別都看不到 COM
+除非另有標示, 否則 COM 可以看見所有公用非泛型型別;COM 不會看到所有非公用和泛型型別。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
- 若要修正此規則的違規情形，將變更的值<xref:System.Runtime.InteropServices.ClassInterfaceAttribute>屬性設定為`None`的值<xref:System.Runtime.InteropServices.ClassInterfaceType>明確定義介面。
+若要修正此規則的違規, 請將<xref:System.Runtime.InteropServices.ClassInterfaceAttribute>屬性的值變更為的`None`值<xref:System.Runtime.InteropServices.ClassInterfaceType> , 並明確定義介面。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
- 請勿隱藏此規則的警告，除非它是特定類型和其基底類型的配置不會在未來版本中變更。
+除非確定類型的配置及其基底類型的配置不會在未來版本中變更, 否則請勿隱藏此規則的警告。
 
 ## <a name="example"></a>範例
- 下列範例顯示違反此規則，並重新宣告要使用明確的介面之類別的類別。
+下列範例顯示的類別會違反規則, 並將類別的重新宣告為使用明確的介面。
 
- [!code-csharp[FxCop.Interoperability.AutoDual#1](../code-quality/codesnippet/CSharp/ca1408-do-not-use-autodual-classinterfacetype_1.cs)]
- [!code-vb[FxCop.Interoperability.AutoDual#1](../code-quality/codesnippet/VisualBasic/ca1408-do-not-use-autodual-classinterfacetype_1.vb)]
+[!code-csharp[FxCop.Interoperability.AutoDual#1](../code-quality/codesnippet/CSharp/ca1408-do-not-use-autodual-classinterfacetype_1.cs)]
+[!code-vb[FxCop.Interoperability.AutoDual#1](../code-quality/codesnippet/VisualBasic/ca1408-do-not-use-autodual-classinterfacetype_1.vb)]
 
-## <a name="related-rules"></a>相關的規則
- [CA1403:自動配置類型不應該是 COM 可見](../code-quality/ca1403-auto-layout-types-should-not-be-com-visible.md)
+## <a name="related-rules"></a>相關規則
+[CA1403自動設定類型不應該是 COM 可見](../code-quality/ca1403-auto-layout-types-should-not-be-com-visible.md)
 
- [CA1412:ComSource 介面標記為 IDispatch](../code-quality/ca1412-mark-comsource-interfaces-as-idispatch.md)
+[CA1412將 ComSource 介面標示為 IDispatch](../code-quality/ca1412-mark-comsource-interfaces-as-idispatch.md)
 
 ## <a name="see-also"></a>另請參閱
 

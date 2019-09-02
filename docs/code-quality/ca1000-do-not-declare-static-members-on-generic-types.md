@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: f354c8bff7348c6017034acc3449329b2382fe82
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: f10433330642ee06dd7f705cdd8e35333cd8a79d
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65842540"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69547919"
 ---
 # <a name="ca1000-do-not-declare-static-members-on-generic-types"></a>CA1000：不要在泛型類型上宣告靜態成員
 
@@ -30,18 +30,18 @@ ms.locfileid: "65842540"
 |-|-|
 |TypeName|DoNotDeclareStaticMembersOnGenericTypes|
 |CheckId|CA1000|
-|分類|Microsoft.Design|
+|Category|Microsoft.Design|
 |中斷變更|中斷|
 
 ## <a name="cause"></a>原因
 
-包含泛型型別`static`(`Shared` Visual Basic 中) 成員。
+泛型型別包含`static` (`Shared`在 Visual Basic) 成員中。
 
-根據預設，此規則只會查看外部可見的類型，但這[可設定](#configurability)。
+根據預設, 此規則只會查看外部可見的類型, 但這是[可](#configurability)設定的。
 
 ## <a name="rule-description"></a>規則描述
 
-當`static`泛型型別的成員呼叫、 型別引數必須指定的類型。 呼叫不支援介面的泛型執行個體 (Instance) 成員時，必須為成員指定類型引數。 在這兩種案例中指定的型別引數的語法是不同且容易混淆，示範下列呼叫：
+呼叫泛型型別的成員時,必須為類型指定類型引數。`static` 呼叫不支援介面的泛型執行個體 (Instance) 成員時，必須為成員指定類型引數。 在這兩種情況下指定類型引數的語法不同且容易混淆, 如下列呼叫所示:
 
 ```vb
 ' Shared method in a generic type.
@@ -59,35 +59,35 @@ GenericType<int>.StaticMethod();
 someObject.GenericMethod<int>();
 ```
 
-一般而言，這兩個先前宣告應避免，因此不需要呼叫成員時指定的型別引數。 這會導致語法中的泛型與非泛型的語法並無不同，呼叫的成員。 如需詳細資訊，請參閱[CA1004:泛型方法應該提供型別參數](../code-quality/ca1004-generic-methods-should-provide-type-parameter.md)。
+一般來說, 應該避免這兩個先前的宣告, 以便在呼叫成員時不需要指定類型引數。 這會導致在泛型中呼叫成員的語法, 與非泛型的語法不同。 如需詳細資訊, [請參閱 CA1004:泛型方法應該提供類型參數](../code-quality/ca1004-generic-methods-should-provide-type-parameter.md)。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
 
-若要修正此規則的違規情形，請移除靜態成員，或將它變更為執行個體成員。
+若要修正此規則的違規, 請移除靜態成員, 或將它變更為實例成員。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
 
-請勿隱藏此規則的警告。 提供了容易了解和使用的語法中的泛型減少時間，才能了解，並增加新的程式庫的採用率。
+請勿隱藏此規則的警告。 以易於瞭解和使用的語法提供泛型, 可減少學習及增加新程式庫採用率所需的時間。
 
-## <a name="configurability"></a>設定功能
+## <a name="configurability"></a>可設定性
 
-如果您執行這項規則，從[FxCop 分析器](install-fxcop-analyzers.md)（而不是透過靜態程式碼分析），您可以設定的哪些部分您程式碼基底上執行這項規則，根據其存取範圍。 比方說，若要指定執行規則時，應該只針對非公用 API 介面，將下列索引鍵 / 值組新增至專案中的.editorconfig 檔案：
+如果您是從[FxCop 分析器](install-fxcop-analyzers.md)執行此規則 (而不是使用舊版分析), 您可以根據其存取範圍, 設定程式碼基底中的哪些部分來執行此規則。 例如, 若要指定規則只針對非公用 API 介面執行, 請將下列機碼值組新增至專案中的 editorconfig 檔案:
 
 ```ini
 dotnet_code_quality.ca1000.api_surface = private, internal
 ```
 
-此類別 （設計） 中，您可以設定此選項，只是這項規則，所有規則，或所有的規則。 如需詳細資訊，請參閱 <<c0> [ 設定的 FxCop 分析器](configure-fxcop-analyzers.md)。
+您可以只針對此規則、所有規則或此類別中的所有規則 (設計) 設定此選項。 如需詳細資訊, 請參閱[設定 FxCop 分析器](configure-fxcop-analyzers.md)。
 
-## <a name="related-rules"></a>相關的規則
+## <a name="related-rules"></a>相關規則
 
-- [CA1005:避免在泛型類型上的過多參數](../code-quality/ca1005-avoid-excessive-parameters-on-generic-types.md)
-- [CA1010:集合應該實作泛型介面](../code-quality/ca1010-collections-should-implement-generic-interface.md)
-- [CA1002:不要公開泛型清單](../code-quality/ca1002-do-not-expose-generic-lists.md)
-- [CA1006:無法建立巢狀成員簽章中的泛型型別](../code-quality/ca1006-do-not-nest-generic-types-in-member-signatures.md)
-- [CA1004:泛型方法應該提供型別參數](../code-quality/ca1004-generic-methods-should-provide-type-parameter.md)
-- [CA1003： 必須使用一般事件處理常式執行個體](../code-quality/ca1003-use-generic-event-handler-instances.md)
-- [CA1007:在適當時使用泛型](../code-quality/ca1007-use-generics-where-appropriate.md)
+- [CA1005避免在泛型型別上有過多參數](../code-quality/ca1005-avoid-excessive-parameters-on-generic-types.md)
+- [CA1010集合應執行泛型介面](../code-quality/ca1010-collections-should-implement-generic-interface.md)
+- [CA1002不要公開泛型清單](../code-quality/ca1002-do-not-expose-generic-lists.md)
+- [CA1006不要在成員簽章中嵌套泛型型別](../code-quality/ca1006-do-not-nest-generic-types-in-member-signatures.md)
+- [CA1004泛型方法應該提供類型參數](../code-quality/ca1004-generic-methods-should-provide-type-parameter.md)
+- [CA1003 必須使用一般事件處理常式實例](../code-quality/ca1003-use-generic-event-handler-instances.md)
+- [CA1007 建議適當時使用泛型](../code-quality/ca1007-use-generics-where-appropriate.md)
 
 ## <a name="see-also"></a>另請參閱
 

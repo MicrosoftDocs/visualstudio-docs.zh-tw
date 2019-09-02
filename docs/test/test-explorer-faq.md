@@ -1,6 +1,6 @@
 ---
 title: 測試清單編輯器常見問題集
-ms.date: 11/07/2018
+ms.date: 08/14/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - Test Explorer
@@ -14,44 +14,60 @@ ms.workload:
 - multiple
 author: kendrahavens
 manager: jillfra
-ms.openlocfilehash: 2efecd936dea0d764058b795457e89cdc700d902
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a37cdea4206dafe657dc8cf8adbbcf98ce18afc9
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62429453"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69551855"
 ---
 # <a name="visual-studio-test-explorer-faq"></a>Visual Studio 測試總管常見問題集
+::: moniker range=">=vs-2019"
+
+## <a name="where-is-group-by-traits-in-visual-studio-2019"></a>Visual Studio 2019 中依據特性群組的位置為何？
+這個特性群組已移至資料行。 有了 Visual Studio 2019 16.2 版中多個且可自訂的階層，我們認為將特性納入為群組產生了不必要的視覺複雜度。 我們一定會聽取對這項設計的意見反映！ https://developercommunity.visualstudio.com/content/problem/588029/no-longer-able-to-group-by-trait-in-test-explorer.html
+
+現在您可以用滑鼠右鍵按一下 [測試總管] 中的資料行，然後選取 [資料行]。 檢查 [特性] 資料行，它會出現在 [測試總管] 中。 您現在可以依據您感興趣的特性來篩選此資料行。
+
+![顯示特性資料行](media/vs-2019/trait-column.png)
+![篩選特性資料行](media/vs-2019/trait-column-filter.png)
+::: moniker-end
 
 ## <a name="dynamic-test-discovery"></a>動態測試探索
 
 **[測試總管] 找不到動態定義的測試。(例如理論、自訂配接器、自訂特徵、#ifdef 等項目)我如何探索這些測試？**
 
-建置專案，然後確定已在 [工具]   > [選項]   > [測試]  中開啟以組件為基礎的探索。
-
-[即時測試探索](https://go.microsoft.com/fwlink/?linkid=862824)是來源型的測試探索。 其無法探索使用理論、自訂配接器、自訂特徵及 `#ifdef` 陳述式等項目的測試，因為這些項目均已在執行階段中定義。 需要組建才能準確找到這些測試。 在 Visual Studio 2017 15.6 版及更新版本中，以組件為基礎的探索 (傳統型探索) 只會在建置之後執行。 這項設定表示當您在編輯時，即時測試探索會盡可能找到更多測試，而組件型探索允許動態定義的測試在組建之後顯示。 即時測試探索改善了回應性，但仍然可讓您在組建之後取得完整且精確的結果。
+::: moniker range=">=vs-2019"
+建置專案來執行以組件為基礎的探索。
+::: moniker-end
+::: moniker range="vs-2017"
+建置專案並確保已在 [工具]  > [選項]  > [測試]  中開啟以組件為基礎的探索。
+::: moniker-end
+[即時測試探索](https://go.microsoft.com/fwlink/?linkid=862824)是來源型的測試探索。 其無法探索使用理論、自訂配接器、自訂特徵及 `#ifdef` 陳述式等項目的測試，因為這些項目均已在執行階段中定義。 需要組建才能準確找到這些測試。 在 Visual Studio 2017 15.6 版及更新版本中，以組件為基礎的探索 (傳統型探索) 只會在建置之後執行。 這項設定表示當您在編輯時，即時測試探索會盡可能找到更多測試，而組件型探索允許動態定義的測試在組建之後顯示。 即時測試探索會改善回應性，但仍然可讓您在建置後取得完整且精確的結果。
 
 ## <a name="test-explorer--plus-symbol"></a>測試總管 '+' (加號) 符號
 
 **顯示在測試總管最上面一行的 '+' (加號) 符號代表什麼？**
 
-'+' (加號) 符號代表建置之後可能探索到更多測試 (若已開啟以組件為基礎的探索)。 如果在專案中偵測到動態定義的測試，就會出現此符號。
+'+' (加號) 表示可以在執行以組件為基礎的探索時，在建置後探索更多測試。 如果在專案中偵測到動態定義的測試，就會出現此符號。
 
 ![加號摘要行](media/testex-plussymbol.png)
 
+::: moniker range="vs-2017"
 ## <a name="assembly-based-discovery"></a>以組件為基礎的探索
 
 **我的專案已經無法使用以組件為基礎的探索。如何再將它開啟？**
 
-移至 [工具]   > [選項]   > [測試]  ，然後核取 [在組建之後，另外從建置的組件中探索測試]  的方塊。
+前往 [工具]  > [選項]  > [測試]  ，然後選取 [在建置後從建置後的組件探索其他測試]  。
 
 ![以組件為基礎的選項](media/testex-toolsoptions.png)
+::: moniker-end
 
 ## <a name="real-time-test-discovery"></a>即時測試探索
 
 **現在當我打字時，測試會顯示在測試總管中，而不需要建置我的專案。哪些方面已變更？**
 
-此功能稱為[即時測試探索](https://go.microsoft.com/fwlink/?linkid=862824)。 這項功能使用 Roslyn 分析器來探索測試並即時填入 [測試總管]，因此不需要建置您的專案。 如需動態定義測試 (例如理論或自訂特徵) 的測試探索行為詳細資訊，請參閱常見問題集 #1。
+此功能稱為[即時測試探索](https://go.microsoft.com/fwlink/?linkid=862824)。 這項功能使用 Roslyn 分析器來探索測試並即時填入 [測試總管]，因此不需要建置您的專案。 如需動態定義測試 (例如理論或自訂特徵) 的測試探索行為詳細資訊，請參閱[動態測試探索](#dynamic-test-discovery)。
 
 ## <a name="real-time-test-discovery-compatibility"></a>即時測試探索相容性
 
@@ -81,7 +97,7 @@ ms.locfileid: "62429453"
 
 ## <a name="test-explorer-hierarchy-view"></a>測試總管階層檢視
 
-**在階層檢視中，專案、命名空間和類別群組旁有已傳遞、已失敗、已略過和未執行的圖示。這些圖示代表什麼意思？**
+**在階層檢視中，父節點群組旁邊會有通過、失敗、略過和未執行的圖示。這些圖示代表什麼意思？**
 
 專案、命名空間和類別群組旁的圖示，會顯示出該群組內的測試狀態。 請參閱下表。
 
@@ -99,6 +115,7 @@ Visual Studio 2017 15.7 版已移除 [測試總管]  搜尋方塊中的檔案路
 
 在 Visual Studio 2019 中，會移除一些先前標記為公用，但從未正式記載的測試視窗 API。 它們在 Visual Studio 2017 中標示為「已淘汰」，可為延伸模組維護人員提供初期警告。 據我們所知，很少有延伸模組發現及依存於這些 API。 這些包括 `IGroupByProvider`、`IGroupByProvider<T>`、`KeyComparer`、`ISearchFilter`、`ISearchFilterToken`、`ISearchToken` 和 `SearchFilterTokenType`。 如果這項變更會影響您的延伸模組，請在 [Developer Community](https://developercommunity.visualstudio.com) (開發人員社群) 提出 Bug 讓我們知道。
 
+::: moniker range="vs-2017"
 ## <a name="test-adapter-nuget-reference"></a>測試配接器 NuGet 參考
 
 **在 Visual Studio 2017 15.8 版中， 已探索到我的註冊，但不會執行。**
@@ -113,6 +130,7 @@ Visual Studio 2017 15.7 版已移除 [測試總管]  搜尋方塊中的檔案路
 > 如果您使用 NUnit 2 Test Adapter 且無法移轉至 NUnit 3 Test Adapter，您可以關閉這個新的探索行為，位置是 Visual Studio 15.8 版的 [工具]   > [選項]   > [測試]  。
 
 ![工具選項中的 [測試總管] 配接器行為](media/testex-adapterbehavior.png)
+::: moniker-end
 
 ## <a name="uwp-testcontainer-was-not-found"></a>找不到 UWP TestContainer
 

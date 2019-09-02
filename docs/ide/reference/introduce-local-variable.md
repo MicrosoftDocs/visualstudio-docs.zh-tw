@@ -1,5 +1,6 @@
 ---
 title: 引進區域變數
+description: 產生區域變數來取代現有的運算式。 選取運算式、按一下滑鼠右鍵並選取 [快速動作與重構] 功能表，然後選取 [為所有出現 'expression' 之處引進區域]。
 ms.date: 01/26/2018
 ms.topic: reference
 author: gewarren
@@ -7,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5564752fcecfe2d7a1b2d0bf7632a9cebe3d9353
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 43f54072d495cfdd6607ccb033ffd1a1713ad8bb
+ms.sourcegitcommit: 0f5f7955076238742f2071d286ad8e896f3a6cad
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62540995"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68483690"
 ---
 # <a name="introduce-a-local-variable-in-visual-studio"></a>在 Visual Studio 中引進區域變數
 
@@ -32,7 +33,7 @@ ms.locfileid: "62540995"
 
 1. 醒目標示您想要指派給新區域變數的運算式。
 
-   - C#: 
+   - C#:
 
        ![醒目提示的程式碼 C#](media/local-highlight-cs.png)
 
@@ -43,21 +44,21 @@ ms.locfileid: "62540995"
 2. 接著，執行下列其中一項操作：
 
    - **鍵盤**
-      - 在字行任何地方按 **Ctrl**+**.**， 以觸發 [快速動作與重構] 功能表。
+      - 在字行任何地方按 **Ctrl**+ **.** ， 以觸發 [快速動作與重構]  功能表。
    - **滑鼠**
-      - 以滑鼠右鍵按一下並選取 [快速動作與重構] 功能表。
+      - 以滑鼠右鍵按一下並選取 [快速動作與重構]  功能表。
       - 按一下 ![出現於左邊界的螺絲起子](media/screwdriver.png) 圖示，如果文字游標已經在含有醒目提示運算式的行上，此圖示就會出現在左邊界上。
 
    ![「引進區域」預覽](media/local-preview-cs.png)
 
-3. 從下拉功能表選取 [為 'expression' (的所有出現之處) 引進區域]。
+3. 從下拉功能表選取 [為 'expression' (的所有出現之處) 引進區域]  。
 
    > [!TIP]
-   > 請使用位於預覽視窗底部的 [預覽變更] 連結，以在進行選取之前先[查看將進行的所有變更](../../ide/preview-changes.md)。
+   > 請使用位於預覽視窗底部的 [預覽變更]  連結，以在進行選取之前先[查看將進行的所有變更](../../ide/preview-changes.md)。
 
    區域變數隨即建立，而類型會從使用方式推斷。 為新區域變數提供新名稱。
 
-   - C#: 
+   - C#:
 
        ![實作介面結果 C#](media/local-result-cs.png)
 
@@ -66,7 +67,7 @@ ms.locfileid: "62540995"
        ![實作介面結果 VB](media/local-result-vb.png)
 
    > [!NOTE]
-   > 您可以使用 [...所有出現之處...] 功能表選項來取代每個所選運算式，而不只是您已明確醒目提示的運算式。
+   > 您可以使用 [...所有出現之處...]  功能表選項來取代每個所選運算式，而不只是您已明確醒目提示的運算式。
 
 ## <a name="see-also"></a>另請參閱
 

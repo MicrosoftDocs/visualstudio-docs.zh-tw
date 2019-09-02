@@ -1,7 +1,7 @@
 ---
 title: 安裝離線安裝所需的憑證
 description: 了解如何安裝 Visual Studio 離線安裝的憑證。
-ms.date: 03/30/2019
+ms.date: 08/08/2019
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: bdf6f87fbcc412710be6653b83f8b623a6b4d865
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: c7139234ab9f36842e92ead9e43f8d0a0a71a00e
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67826290"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69551204"
 ---
 # <a name="install-certificates-required-for-visual-studio-offline-installation"></a>安裝 Visual Studio 離線安裝所需的憑證
 
@@ -150,25 +150,19 @@ Visual Studio 安裝程式引擎只會安裝受信任的內容。 它的作法�
   * 根憑證：**Microsoft Root Certificate Authority**
     * 必要項。 此憑證隨附於執行 Windows 7 或更新版本的系統。
 
-**更新**：針對 Visual Studio 2017 版本 15.8 Preview 2 或更新版本，Visual Studio 安裝程式只要求系統上必須安裝根憑證。
+**更新**：針對 Visual Studio 2017 版本 15.8 Preview 2 或更新版本，Visual Studio 安裝程式只要求系統上必須安裝根憑證。 這些憑證會儲存在 .cer 檔案中，而不是在 .p12 中。
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
-* **ManifestSignCertificates.p12** 包含：
-  * 中繼憑證：**Microsoft Code Signing PCA 2011**
-    * 不需要。 如果有的話，可改善某些案例的效能。
+* **ManifestSignCertificates.cer** 包含：
   * 根憑證：**Microsoft Root Certificate Authority 2011**
     * 在沒有安裝最新 Windows Updates 的 Windows 7 Service Pack 1 系統上需要。
-* **ManifestCounterSignCertificates.p12** 包含：
-  * 中繼憑證：**Microsoft Time-Stamp PCA 2010**
-    * 不需要。 如果有的話，可改善某些案例的效能。
+* **ManifestCounterSignCertificates.cer** 包含：
   * 根憑證：**Microsoft Root Certificate Authority 2010**
     * 在沒有安裝最新 Windows Updates 的 Windows 7 Service Pack 1 系統上需要。
-* **Vs_installer_opc.SignCertificates.p12** 包含：
-  * 中繼憑證：**Microsoft Code Signing PCA**
-    * 所有系統都需要。 請注意，從 Windows Update 套用所有更新的系統可能沒有此憑證。
+* **Vs_installer_opc.SignCertificates.cer** 包含：
   * 根憑證：**Microsoft Root Certificate Authority**
     * 必要項。 此憑證隨附於執行 Windows 7 或更新版本的系統。
 

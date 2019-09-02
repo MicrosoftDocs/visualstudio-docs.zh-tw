@@ -1,15 +1,15 @@
 ---
-title: 開始使用 Visual Studio for Mac 中的 Docker
+title: 開始使用 Docker
 description: 了解如何在 Visual Studio for Mac 中將 Docker 新增至您的專案
 author: asb3993
 ms.author: amburns
 ms.date: 06/17/2019
-ms.openlocfilehash: b539de8159c1f53543b195f90610017bf2cee873
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.openlocfilehash: b456b3d285c167f97570c39d9eb6fd1abfc27e45
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67691689"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68872229"
 ---
 # <a name="get-started-with-docker-in-visual-studio-for-mac"></a>開始使用 Visual Studio for Mac 中的 Docker
 
@@ -73,7 +73,7 @@ ENTRYPOINT ["dotnet", "DockerDemo.dll"]
 
 > [!TIP]
 > 在安裝 Docker Desktop 後第一次執行時，您可能會在進行偵錯時收到下列錯誤：`Cannot start service dockerdemo: Mounts denied`
-> 
+>
 > 請將 `/usr/local/share/dotnet/sdk/NuGetFallbackFolder` 新增到 Docker Desktop 中的 [File Sharing] \(檔案共用\) 索引標籤：
 >
 > ![將 [NuGetFallbackFolder] 資料夾新增至 [File Sharing] \(檔案共用\)](media/docker-quickstart-5.png)

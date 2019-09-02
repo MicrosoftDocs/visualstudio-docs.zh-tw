@@ -13,11 +13,11 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: 8eede58ab2e17d417f50cbdfe517bcfba99a6b6f
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59652273"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68165445"
 ---
 # <a name="install-multiple-language-versions-of-visual-studio"></a>安裝多個語言版本的 Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "59652273"
 
 - Visual Studio 服務套件套用至所有已安裝語言版本的 Visual Studio。 您不再需要為已安裝的 Visual Studio 每種語言版本安裝服務套件。
 
-- 您可以使用 Visual Studio 安裝程式的維護模式來解除安裝語言套件。 開啟 [控制台] ，開啟 [程式和功能] ，選擇您的 Visual Studio 版本，然後選擇 [解除安裝/變更] 。
+- 您可以使用 Visual Studio 安裝程式的維護模式來解除安裝語言套件。 開啟 [控制台]  ，開啟 [程式和功能]  ，選擇您的 Visual Studio 版本，然後選擇 [解除安裝/變更]  。
 
 ## <a name="see-also"></a>另請參閱
 

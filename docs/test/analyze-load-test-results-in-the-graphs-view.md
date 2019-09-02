@@ -15,12 +15,12 @@ ms.assetid: 4a919cd8-541c-40ee-be3b-352fabc56140
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 31bf74aba289e98e76fdd5b9a35d486d207bcc05
-ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
+ms.openlocfilehash: 8a0c9ca6f195640e3c356e9288300255570b196c
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66432027"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926472"
 ---
 # <a name="analyze-load-test-results-in-the-graphs-view-of-the-load-test-analyzer"></a>在負載測試分析器的圖形檢視中分析負載測試結果
 
@@ -47,20 +47,20 @@ ms.locfileid: "66432027"
 |控制器和代理程式|執行負載測試的電腦資訊。 這些資訊包含記憶體使用量、處理器、實體磁碟和處理序的相關資料。<br /><br /> 根據預設，只會收集 Available Mbytes 和 Processor Time 計數器。|
 |異動回應時間|負載測試期間所發生異動的平均回應時間。|
 
- 您可以在執行階段或執行測試之後，在圖形上顯示不同的計數器。
+您可以在執行階段或執行測試之後，在圖形上顯示不同的計數器。
 
 > [!NOTE]
 > 自動產生的回應時間圖形中僅能加入回應時間效能計數器。
 
- 計數器資訊將會在圖形和圖形底下的圖例中出現。 也可以放大圖形中的某個區段。 如需詳細資訊，請參閱[如何：放大圖表中的某個區域](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md)。
+計數器資訊將會在圖形和圖形底下的圖例中出現。 也可以放大圖形中的某個區段。 如需詳細資訊，請參閱[如何：放大圖表中的某個區域](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md)。
 
 ## <a name="counters-displayed-in-graphs"></a>圖形中顯示的計數器
 
- 圖形會顯示「計數器」  。 計數器代表負載測試期間收集到的資料，例如每秒測試數或平均測試時間。 如需計數器的詳細資訊，請參閱[在負載測試中指定電腦的計數器集合和臨界值規則](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md)。
+圖形會顯示「計數器」  。 計數器代表負載測試期間收集到的資料，例如每秒測試數或平均測試時間。 如需計數器的詳細資訊，請參閱[在負載測試中指定電腦的計數器集合和臨界值規則](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md)。
 
- 在圖形中顯示的計數器圖例，會顯示數欄有關負載測試回合的有用資料。 若要關閉圖形中任何資料的顯示，請清除圖例中，位於該列內的核取方塊。
+在圖形中顯示的計數器圖例，會顯示數欄有關負載測試回合的有用資料。 若要關閉圖形中任何資料的顯示，請清除圖例中，位於該列內的核取方塊。
 
- 圖例會包含下列欄位：
+圖例會包含下列欄位：
 
 |計數器|計數器的名稱|
 |-|-|
@@ -87,11 +87,11 @@ ms.locfileid: "66432027"
 
 ## <a name="related-tasks"></a>相關工作
 
- [在資料表檢視中分析負載測試結果和錯誤](../test/analyze-load-test-results-and-errors-in-the-tables-view.md)
+[在資料表檢視中分析負載測試結果和錯誤](../test/analyze-load-test-results-and-errors-in-the-tables-view.md)
 
- [如何：存取負載測試結果以進行分析](../test/how-to-access-load-test-results-for-analysis.md)
+[如何：存取負載測試結果以進行分析](../test/how-to-access-load-test-results-for-analysis.md)
 
- [分析負載測試結果](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
+[分析負載測試結果](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
 
 ## <a name="see-also"></a>另請參閱
 

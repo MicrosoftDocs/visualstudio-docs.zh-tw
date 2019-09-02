@@ -1,22 +1,22 @@
 ---
-title: Visual Studio for Mac 中的預設鍵盤快速鍵
+title: 預設鍵盤快速鍵
 description: 此文章列出 Visual Studio for Mac 中的預設鍵盤快速鍵
 ms.date: 03/14/2019
 author: bytesguy
-ms.author: adhartle
+ms.author: crdun
 ms.assetid: 48E06A61-7294-4EC8-A09D-1763C32AD910
-ms.openlocfilehash: 498cea9cdc32eab48d4f861f349e2076bb312bb2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 371f1e93405d3034bda4259831cee27c6f52a40c
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62997164"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68872248"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio-for-mac"></a>Visual Studio for Mac 中的預設鍵盤快速鍵
 
 如需鍵盤協助工具的相關資訊，請參閱[如何：使用鍵盤巡覽](accessibility.md#how-to-use-keyboard-navigation)。
 
-只需使用適當的鍵盤快速鍵，您就可以在 Visual Studio for Mac 中存取各種命令。 此文件列出 **Visual Studio** 按鍵繫結關係配置的預設快速鍵。 如需如何變更按鍵繫結關係配置的相關詳細資訊，請參閱[自訂 IDE](customizing-the-ide.md#key-bindings)。 您也可以使用 [Visual Studio for Mac] > [喜好設定] 功能表項目，然後在 [喜好設定] 視窗中選擇 [環境] > [按鍵繫結關係] 以自訂命令的捷徑。
+只需使用適當的鍵盤快速鍵，您就可以在 Visual Studio for Mac 中存取各種命令。 此文件列出 **Visual Studio** 按鍵繫結關係配置的預設快速鍵。 如需如何變更按鍵繫結關係配置的相關詳細資訊，請參閱[自訂 IDE](customizing-the-ide.md#key-bindings)。 您也可以使用 [Visual Studio for Mac]   > [喜好設定]  功能表項目，然後在 [喜好設定]  視窗中選擇 [環境]   > [按鍵繫結關係]  以自訂命令的捷徑。
 
 > [!TIP]
 > 此文件中顯示的鍵盤快速鍵，以及 Visual Studio for Mac 中的按鍵繫結關係喜好設定，都會使用 macOS 中常用的符號呈現。 如果不知道符號外觀，請檢閱 [macOS 按鍵符號查找表](#macos-key-symbols-lookup)。
@@ -36,7 +36,7 @@ ms.locfileid: "62997164"
 
 |命令|鍵盤快速鍵|
 |-|-|
-|啟用或停用中斷點|**⌥⌘/**, **⌘F9**|
+|啟用或停用中斷點|**⌥⌘/** , **⌘F9**|
 |暫停|**⌥⌘P**, **⌥⌘L5**|
 |移除所有中斷點|**⇧⌘F9**|
 |執行至游標處|**⌘F10**|
@@ -45,7 +45,7 @@ ms.locfileid: "62997164"
 |逐步執行|**⇧⌘I**, **⌘F11**|
 |跳離函式|**⇧⌘U**, **⇧⌘F11**|
 |不進入函式|**⇧⌘O**, **F10**|
-|切換中斷點|**⌘\\**, **F9**|
+|切換中斷點|**⌘\\** , **F9**|
 |檢視中斷點|**⌥⌘B**|
 
 ## <a name="designer"></a>Designer
@@ -225,8 +225,8 @@ ms.locfileid: "62997164"
 |顯示下一個|**⌥⌘↓**, **F8**|
 |顯示上一個|**⌥⌘↑**, **⇧F8**|
 |兩個編輯器資料行|**⌥⌘2**|
-|放大|**⌘+**, **⌘=**|
-|縮小|**⌘-**, **⌘_**|
+|放大|**⌘+** , **⌘=**|
+|縮小|**⌘-** , **⌘_**|
 
 ## <a name="window"></a>視窗
 
@@ -244,8 +244,8 @@ ms.locfileid: "62997164"
 |隱藏其他|**⌥⌘H**|
 |隱藏˙ Visual Studio|**⌘H**|
 |最小化|**⌘M**|
-|下一份文件|**⌘}**, **⌘F6**|
-|上一份文件|**⌘{**, **⇧⌘F6**|
+|下一份文件|**⌘}** , **⌘F6**|
+|上一份文件|**⌘{** , **⇧⌘F6**|
 |切換至下一份文件|**⌃⇥**|
 |切換至下一個|**⌃⌥⇥**|
 |切換至上一份文件|**⌃⇧⇥**|

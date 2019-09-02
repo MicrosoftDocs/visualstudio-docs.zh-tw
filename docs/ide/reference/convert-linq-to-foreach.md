@@ -1,5 +1,6 @@
 ---
 title: 重構程式碼以將 LINQ 查詢轉換為 foreach 陳述式
+description: 將以查詢語法撰寫的任何 LINQ 查詢語法轉換為 foreach 陳述式。
 ms.date: 05/15/2018
 ms.topic: reference
 author: gewarren
@@ -9,12 +10,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 237c6215971cbbac5dec25fd81c995cf87ed57c6
-ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
+ms.openlocfilehash: 446d0f3a4988552e8e1fbbac32ca150491975d94
+ms.sourcegitcommit: 0f5f7955076238742f2071d286ad8e896f3a6cad
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "67261732"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68483680"
 ---
 # <a name="refactoring-to-convert-linq-to-a-foreach-statement"></a>重構以將 LINQ 轉換為 foreach 陳述式
 

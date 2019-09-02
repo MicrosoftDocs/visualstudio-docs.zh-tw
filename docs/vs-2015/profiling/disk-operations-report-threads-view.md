@@ -14,11 +14,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: daace3e78cca67fd9b44144cd6c8a5608dbd9a1e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60111190"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68202432"
 ---
 # <a name="disk-operations-report-threads-view"></a>磁碟作業報告 (執行緒檢視)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,5 +45,5 @@ ms.locfileid: "60111190"
   
 - 寫入延遲 (以毫秒為單位)  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [執行緒檢視](../profiling/threads-view-parallel-performance.md)

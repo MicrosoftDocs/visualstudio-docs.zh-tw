@@ -1,5 +1,5 @@
 ---
-title: 使用文字範本中的 ModelBus |Microsoft Docs
+title: 在文字模板中使用 ModelBus |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -9,23 +9,23 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 58a7d726d08b80600e3351b6324733d6ffdcf611
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 672efc49d712d9cd800bf53a2ca8487c96d502b6
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444643"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68871686"
 ---
 # <a name="using-visual-studio-modelbus-in-a-text-template"></a>使用文字範本中的 Visual Studio ModelBus
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-如果您撰寫文字範本，以讀取模型，其中包含[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]ModelBus 參考，您可能想要解決存取目標模型的參考。 在此情況下，您必須調整文字範本和參考的特定領域語言 (Dsl):
+如果您撰寫的文字模板會讀取包含[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ModelBus 參考的模型, 您可能會想要解析參考以存取目標模型。 在此情況下，您必須調整文字範本和參考的特定領域語言 (Dsl):
 
 - 是一個參考目標 DSL 必須具有已設定為從文字範本存取的 ModelBus 配接器。 您也會從其他程式碼存取 DSL，重新設定配接器需要除了標準的 ModelBus 配接器。
 
-     配接器管理員必須繼承自<xref:Microsoft.VisualStudio.TextTemplating.Modeling.VsTextTemplatingModelingAdapterManager>必須有屬性和`[HostSpecific(HostName)]`。
+     介面卡管理員必須繼承自[VsTextTemplatingModelingAdapterManager](/previous-versions/ee844317(v=vs.140)) , 而且必須具有屬性`[HostSpecific(HostName)]`。
 
-- 範本必須繼承自<xref:Microsoft.VisualStudio.TextTemplating.Modeling.ModelBusEnabledTextTransformation>。
+- 範本必須繼承自[ModelBusEnabledTextTransformation](/previous-versions/ee844263(v=vs.140))。
 
 > [!NOTE]
 > 如果您想要讀取不包含 ModelBus 參考的 DSL 模型，您可以使用會在您的 DSL 專案中產生指示詞處理器。 如需詳細資訊，請參閱 <<c0> [ 文字範本存取模型](../modeling/accessing-models-from-text-templates.md)。
@@ -33,13 +33,13 @@ ms.locfileid: "63444643"
  如需文字範本的詳細資訊，請參閱[使用 T4 文字範本在設計階段的程式碼產生](../modeling/design-time-code-generation-by-using-t4-text-templates.md)。
 
 ## <a name="creating-a-model-bus-adapter-for-access-from-text-templates"></a>建立從文字範本存取模型匯流排配接器
- 若要解決 ModelBus 參考文字範本中的，目標 DSL 必須具有相容的配接器。 從不同的 AppDomain 中執行的文字範本[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]文件編輯器，且因此配接器載入而不是存取 DTE 透過模型。
+ 若要解決 ModelBus 參考文字範本中的，目標 DSL 必須具有相容的配接器。 文字模板會在[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]檔編輯器的不同 AppDomain 中執行, 因此, 介面卡必須載入模型, 而不是透過 DTE 來存取。
 
 #### <a name="to-create-a-modelbus-adapter-that-is-compatible-with-text-templates"></a>若要建立適用於文字範本的 ModelBus 配接器
 
 1. 如果目標 DSL 方案並沒有**ModelBusAdapter**專案中，建立一個使用 Modelbus 擴充功能精靈:
 
-    1. 下載並安裝[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]ModelBus 擴充功能，如果您還沒有這麼。 如需詳細資訊，請參閱 < [Visualization and Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=185579)。
+    1. 下載並安裝[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ModelBus 擴充功能 (如果您尚未這麼做)。 如需詳細資訊，請參閱 < [Visualization and Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=185579)。
 
     2. 開啟 DSL 定義檔。 以滑鼠右鍵按一下設計介面，然後按一下**啟用 Modelbus**。
 
@@ -81,7 +81,7 @@ ms.locfileid: "63444643"
 
 4. 在 AdapterManager.tt:
 
-    - 變更 AdapterManagerBase 的宣告，使它繼承自<xref:Microsoft.VisualStudio.TextTemplating.Modeling.VsTextTemplatingModelingAdapterManager>。
+    - 變更 AdapterManagerBase 的宣告, 使其繼承自[VsTextTemplatingModelingAdapterManager](/previous-versions/ee844317(v=vs.140))。
 
          `public partial class <#= dslName =>AdapterManagerBase :`
 
@@ -102,7 +102,7 @@ ms.locfileid: "63444643"
 ## <a name="writing-a-text-template-that-can-resolve-modelbus-references"></a>撰寫文字範本可以解析 ModelBus 參考
  一般而言，您會開始讀取，並產生從 「 來源 」 DSL 檔案的範本。 此範本會使用在來源 DSL 專案中讀取來源模型檔中所述的方式產生指示詞[文字範本存取模型](../modeling/accessing-models-from-text-templates.md)。 不過，來源 DSL 包含 「 目標 」 DSL 的 ModelBus 參考。 您因此想要讓範本程式碼，來解析的參考，以及存取目標 DSL。 您因此必須遵循下列步驟來配合範本：
 
-- 變更範本的基底類別<xref:Microsoft.VisualStudio.TextTemplating.Modeling.ModelBusEnabledTextTransformation>。
+- 將範本的基類變更為[ModelBusEnabledTextTransformation](/previous-versions/ee844263(v=vs.140))。
 
 - 包含`hostspecific="true"`範本指示詞中。
 
@@ -152,7 +152,7 @@ inherits="Microsoft.VisualStudio.TextTemplating.Modeling.ModelBusEnabledTextTran
 
  執行這個文字範本時，`SourceDsl`指示詞會載入該檔案`Sample.source`。 範本可以存取該模型，從開始的項目`this.ModelRoot`。 程式碼可以使用的網域類別和屬性的 DSL。
 
- 此外，範本可以解析 ModelBus 參考。 參考指向之目標模型時，其中的組件指示詞會讓程式碼使用的網域類別和屬性，該模型的 DSL。
+ 此外，範本可以解析 ModelBus 參考。 當參考指向目標模型時, 元件指示詞可讓程式碼使用該模型 DSL 的網域類別和屬性。
 
 - 如果您不要使用所產生的 DSL 專案的指示詞，您也應該包含下列。
 
@@ -163,7 +163,7 @@ inherits="Microsoft.VisualStudio.TextTemplating.Modeling.ModelBusEnabledTextTran
 
 - 使用`this.ModelBus`取得存取權的 ModelBus。
 
-## <a name="walkthrough-testing-a-text-template-that-uses-modelbus"></a>逐步解說：測試使用 ModelBus 的文字範本
+## <a name="walkthrough-testing-a-text-template-that-uses-modelbus"></a>逐步解說：測試使用 ModelBus 的文字模板
  在本逐步解說中，您可以遵循下列步驟：
 
 1. 建構兩個 Dsl。 同一個 DSL 中，*消費者*，已`ModelBusReference`DSL，可以參考的屬性*提供者*。
@@ -184,7 +184,7 @@ inherits="Microsoft.VisualStudio.TextTemplating.Modeling.ModelBusEnabledTextTran
 
 2. 在 DSL 定義圖表中，以滑鼠右鍵按一下最上方，不是圖表的空白部分，並再按**啟用 Modelbus**。
 
-   - 如果您看不見**啟用 Modelbus**，您必須下載並安裝 VMSDK ModelBus 擴充功能。 VMSDK 網站上找到：[Visualization and Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=185579)。
+   - 如果您看不見**啟用 Modelbus**，您必須下載並安裝 VMSDK ModelBus 擴充功能。 在 VMSDK 網站上尋找:[視覺效果和模型化 SDK](http://go.microsoft.com/fwlink/?LinkID=185579)。
 
 3. 在 **啟用 Modelbus**對話方塊中，選取**這個 DSL 公開給 ModelBus**，然後按一下 **確定**。
 
@@ -214,11 +214,11 @@ inherits="Microsoft.VisualStudio.TextTemplating.Modeling.ModelBusEnabledTextTran
 
     `<MefComponent>|T4ModelBusAdapter|</MefComponent>`
 
-7. 在 `T4ModelBusAdapter`專案中，加入的參考：**Microsoft.VisualStudio.TextTemplating.Modeling.11.0**
+7. `T4ModelBusAdapter`在專案中, 加入的參考:**Microsoft.VisualStudio.TextTemplating.Modeling.11.0**
 
 8. 開啟 T4ModelBusAdapter\AdapterManager.tt:
 
-   1. 將 AdapterManagerBase 的基底類別變更為 <xref:Microsoft.VisualStudio.TextTemplating.Modeling.VsTextTemplatingModelingAdapterManager>。 此組件的檔案現在會如下所示。
+   1. 將 AdapterManagerBase 的基類變更為[VsTextTemplatingModelingAdapterManager](/previous-versions/ee844317(v=vs.140))。 此組件的檔案現在會如下所示。
 
        ```
        namespace <#= CodeGenerationUtilities.GetPackageNamespace(this.Dsl) #>.T4ModelBusAdapters
@@ -288,13 +288,13 @@ inherits="Microsoft.VisualStudio.TextTemplating.Modeling.ModelBusEnabledTextTran
 
 #### <a name="create-a-modelbus-reference-to-another-file-in-the-solution"></a>在方案中建立另一個檔案的 ModelBus 參考
 
-1. 在 MBConsumer 解決方案中，按 CTRL + F5。 實驗執行個體[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]以開啟**MBConsumer\Debugging**專案。
+1. 在 MBConsumer 解決方案中，按 CTRL + F5。 的實驗實例[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]會在**MBConsumer\Debugging**專案中開啟。
 
 2. 新增一份要 Sample.provide **MBConsumer\Debugging**專案。 這是必要的因為 ModelBus 參考必須參考相同的方案中的檔案。
 
    1. 以滑鼠右鍵按一下 偵錯專案，指向**新增**，然後按一下**現有項目**。
 
-   2. 在 [**加入項目**] 對話方塊中，將篩選器設**的所有檔案 (\*。\*)**.
+   2. 在 [**加入項目**] 對話方塊中，將篩選器設**的所有檔案 (\*。\*)** .
 
    3. 瀏覽至`MBProvider\Debugging\Sample.provide`，然後按一下 **新增**。
 
@@ -304,13 +304,13 @@ inherits="Microsoft.VisualStudio.TextTemplating.Modeling.ModelBusEnabledTextTran
 
 5. 儲存檔案。
 
-    (請勿尚未關閉的實驗執行個體[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。)
+    (尚未關閉的實驗實例[!INCLUDE[vsprvs](../includes/vsprvs-md.md)])。
 
    您已建立包含另一個模型中項目的 ModelBus 參考的模型。
 
 #### <a name="resolve-a-modelbus-reference-in-a-text-template"></a>解析文字範本中的 ModelBus 參考
 
-1. 在實驗執行個體[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]，開啟範例文字範本檔案。 設定其內容如下所示。
+1. 在的實驗實例[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]中, 開啟範例文字模板檔案。 設定其內容如下所示。
 
     ```
     <#@ template debug="true" hostspecific="true" language="C#"
@@ -366,7 +366,7 @@ inherits="Microsoft.VisualStudio.TextTemplating.Modeling.ModelBusEnabledTextTran
 
 #### <a name="resolve-a-modelbus-reference-in-a-gesture-handler"></a>解決在軌跡處理常式中的 ModelBus 參考
 
-1. 關閉實驗執行個體[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]，如果它正在執行。
+1. 如果正在執行[!INCLUDE[vsprvs](../includes/vsprvs-md.md)], 請關閉的實驗實例。
 
 2. 加入檔案，名為 MBConsumer\Dsl\Custom.cs 並將其內容如下。
 
@@ -403,11 +403,11 @@ inherits="Microsoft.VisualStudio.TextTemplating.Modeling.ModelBusEnabledTextTran
 
 3. 按下 CTRL+F5。
 
-4. 在實驗執行個體[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]，開啟`Debugging\Sample.consume`。
+4. 在的實驗實例[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]中, 開啟。 `Debugging\Sample.consume`
 
 5. 按兩下一個圖形。
 
      如果您已將 MBR 該項目上，開啟 參考的模型，並選取參考的項目。
 
 ## <a name="see-also"></a>另請參閱
- [使用 Visual Studio Modelbus 整合模型](../modeling/integrating-models-by-using-visual-studio-modelbus.md)[程式碼產生和 T4 文字範本](../modeling/code-generation-and-t4-text-templates.md)
+ [使用 Visual Studio Modelbus 整合模型](../modeling/integrating-models-by-using-visual-studio-modelbus.md)程式[代碼產生和 T4 文字模板](../modeling/code-generation-and-t4-text-templates.md)

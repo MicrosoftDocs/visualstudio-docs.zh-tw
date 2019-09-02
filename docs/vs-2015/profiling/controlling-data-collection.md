@@ -13,16 +13,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e34c4db965cacefabe752774e393a4339042040e
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54780943"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68182705"
 ---
 # <a name="controlling-data-collection"></a>控制資料收集
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 分析工具可讓您控制在效能工作階段期間收集分析資料的時間，並指定分析的函式。 本節說明如何從 [效能總管] 和 [資料收集控制] 視窗啟動和停止資料收集，以及如何限制要收集其分析資料的物件。  
+[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 分析工具可讓您控制在效能工作階段期間收集分析資料的時間，並指定分析的函式。 本節說明如何從 [效能總管]  和 [資料收集控制]  視窗啟動和停止資料收集，以及如何限制要收集其分析資料的物件。  
   
 ## <a name="common-tasks"></a>一般工作  
   
@@ -34,5 +34,5 @@ ms.locfileid: "54780943"
 ## <a name="related-sections"></a>相關章節  
  [設定效能工作階段](../profiling/configuring-performance-sessions.md)  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [效能總管](../profiling/performance-explorer.md)

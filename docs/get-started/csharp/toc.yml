@@ -7,7 +7,7 @@
     - name: 程式碼編輯器概觀
       href: tutorial-editor.md
     - name: 專案與解決方案概觀
-      href: tutorial-projects-solutions.md
+      href: ../tutorial-projects-solutions.md?toc=/visualstudio/get-started/csharp/toc.json&bc=/visualstudio/get-started/csharp/breadcrumb/toc.json
     - name: 更多 Visual Studio 功能
       href: ../../ide/advanced-feature-overview.md?toc=/visualstudio/get-started/csharp/toc.json&bc=/visualstudio/get-started/csharp/breadcrumb/toc.json
 - name: 建立應用程式

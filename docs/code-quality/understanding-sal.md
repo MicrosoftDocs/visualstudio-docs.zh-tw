@@ -8,26 +8,26 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: f306e0a30dc8faa8f961cb7096a31a049547a70e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 59c5dfa3d7e1e47fbcd2b0d11a0671b2594125c9
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62820402"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68923804"
 ---
 # <a name="understanding-sal"></a>了解 SAL
 
-Microsoft 原始程式碼註釋語言 (SAL) 提供一組註釋，您可以使用來描述函式會使用其參數、 它對它們的假設和完成時的保證。 標頭檔中所定義的註解`<sal.h>`。 Visual Studio 程式碼分析，如C++若要修改其分析的函式中使用 SAL 註釋。 適用於 Windows 的驅動程式開發 SAL 2.0 的相關資訊，請參閱[SAL 2.0 註解的 Windows 驅動程式](http://go.microsoft.com/fwlink/?LinkId=250979)。
+Microsoft 原始程式碼注釋語言 (SAL) 提供一組批註, 您可以用來描述函式如何使用其參數、其相關假設, 以及它在完成時所進行的保證。 批註會定義在標頭檔`<sal.h>`中。 Visual Studio 的程式C++代碼分析會使用 SAL 注釋來修改其函式的分析。 如需有關 SAL 2.0 以進行 Windows 驅動程式開發的詳細資訊, 請參閱[適用于 Windows 驅動程式的 sal 2.0 注釋](http://go.microsoft.com/fwlink/?LinkId=250979)。
 
-原生，C 和C++提供適用於開發人員一致的方式表達意圖和不可變數只有有限的方式。 藉由使用 SAL 註釋中,，您可以描述您的函式，更詳細地使開發人員使用它們可以更了解如何使用它們。
+在原生、 C++ C 和中, 僅提供有限的方式讓開發人員一致地表達意圖和 invariance。 藉由使用 SAL 注釋, 您可以更詳細地描述您的函式, 讓使用它們的開發人員可以更瞭解如何使用它們。
 
-## <a name="what-is-sal-and-why-should-you-use-it"></a>什麼是 SAL 以及為什麼您應該使用它？
+## <a name="what-is-sal-and-why-should-you-use-it"></a>什麼是 SAL, 為什麼要使用它？
 
-SAL 簡單的說，是經濟的方式，讓編譯器為您檢查您的程式碼。
+單純地說, SAL 是讓編譯器為您檢查程式碼的一種經濟實惠的方式。
 
 ### <a name="sal-makes-code-more-valuable"></a>SAL 讓程式碼更有價值
 
-SAL 可協助您讓您的程式碼設計更容易了解，讓人和程式碼分析工具。 此範例會顯示 C 執行階段函式，請考慮`memcpy`:
+SAL 可協助您讓程式碼設計更容易理解, 適用于人類和程式碼分析工具。 請考慮下列顯示 C 運行`memcpy`時間函式的範例:
 
 ```cpp
 
@@ -38,18 +38,18 @@ void * memcpy(
 );
 ```
 
-您可以判斷此函式的功能嗎？ 當實作或呼叫函式時，必須維護特定屬性，以確保程式正確性。 只要查看宣告，例如範例中，您不知道是什麼。 不含 SAL 註釋，您必須依賴文件或程式碼註解。 以下是哪些 MSDN 文件`memcpy`說：
+您可以分辨此函式的作用嗎？ 執行或呼叫函式時, 必須維護某些屬性, 以確保程式的正確性。 只要查看範例中的宣告, 您就不知道它們是什麼。 如果沒有 SAL 注釋, 您就必須依賴檔或程式碼批註。 以下是的 MSDN 檔說明`memcpy` :
 
-> 「 複本計數的 src 到目的地的位元組。 如果來源和目的地重疊，memcpy 的行為是未定義的。 您可以使用 memmove 處理重疊的區域。
-> **安全性注意事項：** 確定目的地緩衝區與來源緩衝區是相同大小，或大於來源緩衝區。 如需詳細資訊，請參閱 「 避免緩衝區滿溢 」。
+> 「將 src 的計數位節複製到目的地。 如果來源和目的地重迭, memcpy 的行為會是未定義的。 使用 memmove 來處理重迭的區域。
+> **安全性注意事項：** 確定目的地緩衝區與來源緩衝區是相同大小，或大於來源緩衝區。 如需詳細資訊, 請參閱避免緩衝區溢位。
 
-文件包含幾個建議，您的程式碼必須維護特定的屬性，以確保程式正確性資訊位元：
+檔包含幾個部分的資訊, 建議您的程式碼必須維護特定屬性, 以確保程式的正確性:
 
-- `memcpy` 複製`count`的位元組從來源緩衝區複製到目的緩衝區。
+- `memcpy``count`將位元組的從來源緩衝區複製到目的緩衝區。
 
 - 目的緩衝區必須至少與來源緩衝區一樣大。
 
-不過，編譯器無法讀取文件或非正式的註解。 它並不知道兩個緩衝區之間沒有關聯性和`count`，它也無法有效地猜發生了解關聯性。 SAL 可以提供更清楚的內容和實作的函式，如下所示：
+不過, 編譯器無法讀取檔或非正式批註。 這並不知道這兩個緩衝區與`count`之間有關聯性, 而且也無法有效地猜測關聯性。 SAL 可以更清楚地瞭解函式的屬性和實作用, 如下所示:
 
 ```cpp
 
@@ -60,7 +60,7 @@ void * memcpy(
 );
 ```
 
-請注意這些註解類似的 MSDN 文件中的資訊，但它們是更為精簡，而且它們會遵循語意的模式。 當您閱讀這段程式碼時，您可以快速了解此函式的屬性，以及如何避免緩衝區滿溢安全性問題。 更棒的是，SAL 提供的語意模式可以改善效率與效能的潛在錯誤的早期探索中的自動程式碼分析工具。 假設有人撰寫這個不良實作`wmemcpy`:
+請注意, 這些批註與 MSDN 檔中的資訊類似, 但它們比較簡潔, 而且遵循語義模式。 當您閱讀此程式碼時, 您可以快速瞭解此函式的屬性, 以及如何避免緩衝區溢位的安全性問題。 更棒的是, SAL 提供的語義模式可以改善自動化程式碼分析工具在早期探索潛在 bug 時的效率和效率。 假設有人寫了這個錯誤的`wmemcpy`實現:
 
 ```cpp
 
@@ -77,60 +77,60 @@ wchar_t * wmemcpy(
 }
 ```
 
-這項實作包含常見的關閉一個錯誤。 幸運的是，程式碼作者包含 SAL 緩衝區大小註釋，程式碼分析工具可以藉由分析此函式會獨自攔截錯誤。
+此實作為包含常見的不同錯誤。 幸運的是, 程式碼作者包含 SAL 緩衝區大小注釋, 程式碼分析工具可以單獨分析此函數來攔截 bug。
 
 ### <a name="sal-basics"></a>SAL 基本概念
- SAL 定義四種基本依使用量模式分類的參數。
+SAL 定義四種基本類型的參數, 依使用模式分類。
 
-|分類|參數註釋|描述|
+|分類|參數注釋|描述|
 |--------------|--------------------------|-----------------|
-|**輸入要呼叫的函式**|`_In_`|資料會傳遞至呼叫的函式，並以唯讀狀態，都會被視為。|
-|**輸入呼叫函式，並輸出至呼叫端**|`_Inout_`|可用的資料會傳遞至函式，並可能遭到修改。|
-|**呼叫端的輸出**|`_Out_`|呼叫端只會提供要寫入所呼叫函式的空間。 呼叫的函式會將資料寫入該空間。|
-|**指標，呼叫端的輸出**|`_Outptr_`|像是**的輸出傳送至呼叫端**。 呼叫的函式所傳回的值是指標。|
+|**輸入至呼叫的函式**|`_In_`|資料會傳遞至所呼叫的函式, 並被視為唯讀。|
+|**輸入至所呼叫的函式, 並輸出至呼叫端**|`_Inout_`|可用的資料會傳遞至函式中, 而且可能會遭到修改。|
+|**輸出至呼叫端**|`_Out_`|呼叫端只會為要寫入的呼叫函式提供空間。 被呼叫的函式會將資料寫入該空間。|
+|**呼叫端指標的輸出**|`_Outptr_`|Like**輸出至呼叫**端。 所呼叫函式所傳回的值是指標。|
 
- 這些四個基本的註解可以設為更明確以各種方式。 根據預設，註解式的指標參數會假設為必要，他們必須為非 NULL 函式才會成功。 基本的註解的最常用的變化表示的指標參數為選擇性，如果它是 NULL，函式仍可以成功執行其工作。
+這四個基本批註可以透過各種方式來進行更明確的。 根據預設, 批註的指標參數會假設為必要--它們必須為非 Null, 函式才會成功。 基本注釋最常使用的變化表示指標參數是選擇性的, 如果它是 Null, 函式仍然可以成功執行其工作。
 
- 此表顯示如何區分必要和選擇性參數：
+下表顯示如何區別必要和選擇性的參數:
 
-||都是必要參數|參數是選擇性參數|
+||需要參數|參數是選擇性的|
 |-|-----------------------------|-----------------------------|
-|**輸入要呼叫的函式**|`_In_`|`_In_opt_`|
-|**輸入呼叫函式，並輸出至呼叫端**|`_Inout_`|`_Inout_opt_`|
-|**呼叫端的輸出**|`_Out_`|`_Out_opt_`|
-|**指標，呼叫端的輸出**|`_Outptr_`|`_Outptr_opt_`|
+|**輸入至呼叫的函式**|`_In_`|`_In_opt_`|
+|**輸入至所呼叫的函式, 並輸出至呼叫端**|`_Inout_`|`_Inout_opt_`|
+|**輸出至呼叫端**|`_Out_`|`_Out_opt_`|
+|**呼叫端指標的輸出**|`_Outptr_`|`_Outptr_opt_`|
 
- 這些註解協助您識別可能未初始化的值和無效的 null 指標會使用型式和精確的方式。 將 NULL 傳遞到必要的參數可能會造成當機，或它可能會導致傳回 「 已失敗 」 的錯誤程式碼。 無論如何，函式不能在執行其工作成功。
+這些批註有助於找出可能未初始化的值, 而不正確 null 指標會以正式且正確的方式使用。 將 Null 傳遞給必要的參數可能會導致當機, 或可能會導致傳回「失敗」的錯誤碼。 無論如何, 函式都無法成功執行其作業。
 
 ## <a name="sal-examples"></a>SAL 範例
- 此區段會顯示基本的 SAL 註釋的程式碼範例。
+本節顯示基本 SAL 注釋的程式碼範例。
 
-### <a name="using-the-visual-studio-code-analysis-tool-to-find-defects"></a>使用 Visual Studio 程式碼分析工具找出缺陷錯誤
- 在範例中，Visual Studio 程式碼分析工具搭配 SAL 註釋，以尋找程式碼缺失。 以下是如何執行該動作。
+### <a name="using-the-visual-studio-code-analysis-tool-to-find-defects"></a>使用 Visual Studio Code 分析工具來尋找瑕疵
+在範例中, Visual Studio Code 分析工具會與 SAL 注釋一起使用, 以找出程式碼缺失。 以下是如何執行此動作的方法。
 
 #### <a name="to-use-visual-studio-code-analysis-tools-and-sal"></a>若要使用 Visual Studio 程式碼分析工具和 SAL
 
-1. 在 Visual Studio 中開啟C++專案，其中包含 SAL 註釋。
+1. 在 Visual Studio 中, 開啟C++包含 SAL 注釋的專案。
 
-2. 在功能表列上選擇 **建置**，**針對方案執行程式碼分析**。
+2. 在功能表列上, 選擇 [**組建**]、[**針對方案執行程式碼分析**]。
 
-     請考慮\_在\_這一節的範例。 如果您在其上執行程式碼分析，會顯示此警告：
+     請考慮\_本節\_中的範例。 如果您對其執行程式碼分析, 則會顯示此警告:
 
-    > **C6387 無效的參數值**'pInt' 可能是 '0': 這不會遵守 'InCallee' 函式規格。
+    > **C6387 不正確參數值**' pInt ' 可以是 ' 0 ': 這不符合函數 ' InCallee ' 的規格。
 
-### <a name="example-the-in-annotation"></a>範例：\_在\_註釋
+### <a name="example-the-_in_-annotation"></a>範例：批註\_中\_的
 
-`_In_`註解表示：
+`_In_`批註指出:
 
-- 參數必須有效，而且將不會修改。
+- 參數必須有效, 而且不會修改。
 
-- 此函式只會從單一項目緩衝區讀取。
+- 函式只會從單一元素緩衝區讀取。
 
-- 呼叫端必須提供緩衝區，並將它初始化。
+- 呼叫端必須提供緩衝區, 並將它初始化。
 
-- `_In_` 指定 「 唯讀 」。 常見的錯誤是套用`_In_`應有的參數`_Inout_`註釋改。
+- `_In_`指定「唯讀」。 常見的錯誤是將`_In_`套用到應該`_Inout_`改用批註的參數。
 
-- `_In_` 但會忽略非指標純量上分析器所允許的。
+- `_In_`在非指標純量上, 允許但分析器忽略。
 
 ```cpp
 void InCallee(_In_ int *pInt)
@@ -154,11 +154,11 @@ void BadInCaller()
 }
 ```
 
-如果您使用 Visual Studio 程式碼分析，在此範例中，它會驗證呼叫端傳遞非 Null 指標，來初始化緩衝區`pInt`。 在此情況下，`pInt`指標不能是 NULL。
+如果您在此範例上使用 Visual Studio Code 分析, 它會驗證呼叫端會將非 Null 指標傳遞給的初始化緩衝區`pInt`。 在此情況下`pInt` , 指標不可以是 Null。
 
-### <a name="example-the-inopt-annotation"></a>範例：\_中\_opt\_註釋
+### <a name="example-the-_in_opt_-annotation"></a>範例：\_Opt \_注釋中\_的
 
-`_In_opt_` 等同於`_In_`，差異在於允許的輸入的參數是 NULL，因此，此函式應該檢查這個。
+`_In_opt_`與相同`_In_`, 不同之處在于輸入參數允許為 Null, 因此函式應該檢查是否有此。
 
 ```cpp
 
@@ -182,11 +182,11 @@ void InOptCaller()
 }
 ```
 
-Visual Studio 程式碼分析驗證才能存取緩衝區的函式將會檢查 null。
+Visual Studio Code 分析會驗證函式會先檢查是否有 Null, 然後再存取緩衝區。
 
-### <a name="example-the-out-annotation"></a>範例：\_出\_註釋
+### <a name="example-the-_out_-annotation"></a>範例：\_Out注釋\_
 
-`_Out_` 支援常見的案例，在其中傳入指向的項目緩衝區的非 NULL 指標和函式會初始化項目。 呼叫端沒有呼叫; 之前將緩衝區初始化將它初始化，它會傳回前能夠呼叫的函式。
+`_Out_`支援常見的案例, 其中指向專案緩衝區的非 Null 指標會傳入, 而函式會初始化元素。 呼叫端不需要在呼叫之前初始化緩衝區。被呼叫的函式會承諾在傳回之前將它初始化。
 
 ```cpp
 void GoodOutCallee(_Out_ int *pInt)
@@ -208,11 +208,11 @@ void OutCaller()
 }
 ```
 
-Visual Studio 程式碼分析工具會驗證呼叫端傳遞非 NULL 指標，如緩衝區`pInt`，它會傳回之前將緩衝區初始化函式。
+Visual Studio Code 分析工具會驗證呼叫端是否將非 Null 指標傳遞給的緩衝區`pInt` , 並在函式傳回之前, 由函式初始化緩衝區。
 
-### <a name="example-the-outopt-annotation"></a>範例：\_放大\_opt\_註釋
+### <a name="example-the-_out_opt_-annotation"></a>範例：\_ Out\_opt注釋\_
 
-`_Out_opt_` 等同於`_Out_`，差異在於參數可為 NULL，因此，此函式應該檢查這個。
+`_Out_opt_`與相同`_Out_`, 不同之處在于參數允許為 Null, 因此函式應該檢查是否有此。
 
 ```cpp
 void GoodOutOptCallee(_Out_opt_ int *pInt)
@@ -235,14 +235,14 @@ void OutOptCaller()
 }
 ```
 
-Visual Studio 程式碼分析會驗證這個函數會檢查 null 之前`pInt`已取值，而且如果`pInt`不是 NULL，它會傳回之前，由函式來初始化緩衝區。
+Visual Studio Code 分析會驗證此函式會在取值`pInt`前檢查是否有 null `pInt` , 如果不是 null, 則會在函式傳回之前, 先初始化緩衝區。
 
-### <a name="example-the-inout-annotation"></a>範例：\_Inout\_註釋
+### <a name="example-the-_inout_-annotation"></a>範例：\_Inout注釋\_
 
-`_Inout_` 用來加上註解可能會變更函式的指標參數。 滑鼠指標必須指向有效的初始化資料呼叫前，，即使它會變更，它必須在傳回時，仍有有效的值。 註解會指定函式可以自由的讀取和寫入至其中一個元素的緩衝區。 呼叫端必須提供緩衝區，並將它初始化。
+`_Inout_`是用來標注函式可能變更的指標參數。 指標必須在呼叫之前指向有效的初始化資料, 即使它有變更, 它仍必須具有傳回的有效值。 批註會指定函式可以自由地讀取和寫入單一元素緩衝區。 呼叫端必須提供緩衝區, 並將它初始化。
 
 > [!NOTE]
-> 像是`_Out_`，`_Inout_`必須套用至可修改的值。
+> 就`_Out_`像`_Inout_`一樣, 必須套用至可修改的值。
 
 ```cpp
 void InOutCallee(_Inout_ int *pInt)
@@ -266,11 +266,11 @@ void BadInOutCaller()
 }
 ```
 
-Visual Studio 程式碼分析可讓您驗證呼叫端傳遞非 NULL 指標，來初始化緩衝區`pInt`，而且，在傳回時之前,`pInt`仍然是非 null 並將緩衝區初始化。
+Visual Studio Code 分析會驗證呼叫端將非 Null 指標傳遞給已初始化的`pInt`緩衝區, 而且在傳回之前, `pInt`仍為非 null 且緩衝區已初始化。
 
-### <a name="example-the-inoutopt-annotation"></a>範例：\_Inout\_opt\_註釋
+### <a name="example-the-_inout_opt_-annotation"></a>範例：\_ Inout\_opt注釋\_
 
-`_Inout_opt_` 等同於`_Inout_`，差異在於允許的輸入的參數是 NULL，因此，此函式應該檢查這個。
+`_Inout_opt_`與相同`_Inout_`, 不同之處在于輸入參數允許為 Null, 因此函式應該檢查是否有此。
 
 ```cpp
 void GoodInOutOptCallee(_Inout_opt_ int *pInt)
@@ -295,11 +295,11 @@ void InOutOptCaller()
 }
 ```
 
-Visual Studio 程式碼分析會驗證它所存取之緩衝區之前，而且如果此函式將會檢查 null`pInt`不是 NULL，它會傳回之前，由函式來初始化緩衝區。
+Visual Studio Code 分析會驗證此函式在存取緩衝區之前檢查是否有 Null, 如果`pInt`不是 null, 則會在函式傳回之前, 先初始化緩衝區。
 
-### <a name="example-the-outptr-annotation"></a>範例：\_Outptr\_註釋
+### <a name="example-the-_outptr_-annotation"></a>範例：\_Outptr注釋\_
 
-`_Outptr_` 用來標註的參數，目的是要傳回的指標。  參數本身不能為 NULL，並呼叫的函式中傳回非 NULL 指標，該指標指向已初始化的資料。
+`_Outptr_`是用來標注用於傳回指標的參數。  參數本身不應為 Null, 而且被呼叫的函式會在其中傳回非 Null 指標, 而該指標會指向已初始化的資料。
 
 ```cpp
 void GoodOutPtrCallee(_Outptr_ int **pInt)
@@ -325,11 +325,11 @@ void OutPtrCaller()
 }
 ```
 
-Visual Studio 程式碼分析可讓您驗證呼叫端傳遞非 NULL 指標， `*pInt`，而且它會傳回之前將緩衝區初始化函式。
+Visual Studio Code 分析會驗證呼叫端是否`*pInt`傳遞的非 Null 指標, 並在傳回之前由函式初始化緩衝區。
 
-### <a name="example-the-outptropt-annotation"></a>範例：\_Outptr\_opt\_註釋
+### <a name="example-the-_outptr_opt_-annotation"></a>範例：\_ Outptr\_opt注釋\_
 
-`_Outptr_opt_` 等同於`_Outptr_`，只不過是選擇性參數，呼叫端可以為參數傳遞 NULL 指標。
+`_Outptr_opt_`與相同`_Outptr_`, 不同之處在于參數是選擇性的, 而呼叫端可以傳入參數的 Null 指標。
 
 ```cpp
 void GoodOutPtrOptCallee(_Outptr_opt_ int **pInt)
@@ -357,11 +357,11 @@ void OutPtrOptCaller()
 }
 ```
 
-Visual Studio 程式碼分析會驗證這個函數會檢查之前的 null`*pInt`已取值，而且它會傳回之前將緩衝區初始化函式。
+Visual Studio Code 分析會驗證此函式會先`*pInt`檢查是否有 Null, 再取值, 而且緩衝區會在傳回之前由函式初始化。
 
-### <a name="example-the-success-annotation-in-combination-with-out"></a>範例：\_成功\_結合的註解\_出\_
+### <a name="example-the-_success_-annotation-in-combination-with-_out_"></a>範例：\_結合\_ Out的成功\_注釋\_
 
-註解可以套用至大部分的物件。  特別是，您可以標註的整個函式。  其中一個函式的最明顯的特性是它可以成功或失敗。 但像是緩衝區和它的大小，C 之間的關聯 /C++無法表示函式成功或失敗。 使用`_Success_`註解，您可以說出成功的函式如下所示。  參數以`_Success_`註釋不只是，當為 true 表示已成功函式的運算式。 運算式可以是任何註解剖析器可以處理的項目。 函式成功時，都只適用於函式傳回之後的註釋的效果。 此範例示範如何`_Success_`互動`_Out_`執行適當的動作。 您可以使用關鍵字`return`來代表傳回的值。
+批註可以套用至大部分的物件。  特別是, 您可以標注整個函式。  函式最明顯的特性之一, 就是它可以成功或失敗。 但是就像緩衝區和其大小之間的關聯, C/C++無法表示函數成功或失敗。 藉由使用`_Success_`注釋, 您可以說函式的成功外觀。  `_Success_`注釋的參數只是當其為 true 時的運算式, 表示函式已成功。 運算式可以是批註剖析器可以處理的任何專案。 在函式傳回之後, 批註的效果只適用于函式成功時。 這個範例示範如何`_Success_`與`_Out_`互動, 以執行正確的動作。 您可以使用關鍵字`return`來表示傳回值。
 
 ```cpp
 _Success_(return != false) // Can also be stated as _Success_(return)
@@ -376,33 +376,33 @@ bool GetValue(_Out_ int *pInt, bool flag)
 }
 ```
 
-`_Out_`註釋會導致 Visual Studio 程式碼分析，來驗證呼叫端傳遞非 NULL 指標，如緩衝區`pInt`，而且它會傳回之前將緩衝區初始化函式。
+批註會導致 Visual Studio Code 分析`pInt`, 以驗證呼叫端將非 Null 指標傳遞給的緩衝區, 並在函式傳回之前由函式初始化緩衝區。 `_Out_`
 
-## <a name="sal-best-practice"></a>SAL 最佳作法
+## <a name="sal-best-practice"></a>SAL 最佳做法
 
-### <a name="adding-annotations-to-existing-code"></a>將註解加入至現有的程式碼
+### <a name="adding-annotations-to-existing-code"></a>將注釋加入至現有程式碼
 
-SAL 是一種功能強大的技術，可協助您提升的安全性和可靠性的程式碼。 您將了解 SAL 之後，您可以套用到您的每日工作的新技能。 在新的程式碼，您可以使用 SAL 型規格; 整個設計在舊版的程式碼，您可以以累加方式新增註解，並每次您更新，進而提升的優點。
+SAL 是一項功能強大的技術, 可協助您改善程式碼的安全性和可靠性。 在您學習 SAL 之後, 就可以將新技能套用到您的每日工作。 在新程式碼中, 您可以在整個設計中使用 SAL 架構的規格。在較舊的程式碼中, 您可以累加地新增批註, 並藉此增加每次更新時的權益。
 
-Microsoft 公用標頭已標註。 因此，我們建議，在您的專案中您第一次標註分葉節點函式和函式，呼叫 Win32 Api 來取得最大效益。
+Microsoft 公用標頭已標注。 因此, 建議您在專案中先標注分葉節點函式和函式, 這些函式會呼叫 Win32 Api 以取得最大效益。
 
-### <a name="when-do-i-annotate"></a>何時我加上註解？
+### <a name="when-do-i-annotate"></a>我何時標注？
 
-以下是一些指導方針：
+以下是一些指導方針:
 
-- 所有的指標參數加上註解。
+- 標注所有指標參數。
 
-- 使程式碼分析，才能確保緩衝區和指標的安全性，加上註解的值範圍的註解。
+- 標注值範圍的注釋, 讓程式碼分析可以確保緩衝區和指標的安全。
 
-- 標註鎖定規則和鎖定的副作用。 如需詳細資訊，請參閱 <<c0> [ 註釋鎖定行為](../code-quality/annotating-locking-behavior.md)。
+- 標注鎖定規則和鎖定副作用。 如需詳細資訊, 請參閱[標注鎖定行為](../code-quality/annotating-locking-behavior.md)。
 
-- 驅動程式屬性和其他網域特有的屬性加上註解。
+- 標注驅動程式屬性和其他特定網域的屬性。
 
-或者，您可以標註，使整個您意圖清除，並讓您輕鬆查看註解，完成所有的參數。
+或者您可以為所有參數加上批註, 讓您的意圖清楚明瞭, 讓您可以輕鬆地檢查批註是否已經完成。
 
 ## <a name="related-resources"></a>相關資源
 
-[程式碼分析小組部落格](http://go.microsoft.com/fwlink/p/?LinkId=251197)
+[程式碼分析小組 Blog](http://go.microsoft.com/fwlink/p/?LinkId=251197)
 
 ## <a name="see-also"></a>另請參閱
 

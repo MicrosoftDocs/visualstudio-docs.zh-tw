@@ -1,18 +1,18 @@
 ---
 title: 自訂程式碼涵蓋範圍分析
-ms.date: 11/04/2016
+ms.date: 08/21/2019
 ms.topic: conceptual
 ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 8749cd7757796a1b716b1ac9db086d3155f94694
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e78487628a7604245d59f44220b91be73249e7fb
+ms.sourcegitcommit: f42b5318c5c93e2b5ecff44f408fab8bcdfb193d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62965543"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "69976765"
 ---
 # <a name="customize-code-coverage-analysis"></a>自訂程式碼涵蓋範圍分析
 
@@ -30,22 +30,42 @@ ms.locfileid: "62965543"
 
 1. 將回合設定檔新增至方案。 在 [方案總管]  中，於方案的捷徑功能表上，選擇 [新增]   > [新增項目]  ，然後選取 [XML 檔案]  。 儲存檔案，其名稱的格式必須是 CodeCoverage.runsettings  。
 
-1. 新增本文結尾處範例檔中的內容，然後遵循下列各節中的描述並根據您自己的需求進行自訂。
+2. 新增本文結尾處範例檔中的內容，然後遵循下列各節中的描述並根據您自己的需求進行自訂。
 
-1. 若要選取回合設定檔，請在 [測試]  功能表上，選擇 [測試設定]   > [選取測試設定檔]  。 若要指定從命令列或組建工作流程中執行測試的回合設定檔，請參閱[使用 .runsettings  檔案設定單元測試](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md#specify-a-run-settings-file)。
+::: moniker range="vs-2017"
+
+3. 若要選取回合設定檔，請在 [測試]  功能表上，選擇 [測試設定]   > [選取測試設定檔]  。 若要指定從命令列執行測試的回合設定檔，請參閱[設定單元測試](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md#command-line)。
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+3. 若要在 [測試總管]  中選取執行設定檔，請選取 [設定]  按鈕上的箭頭，然後選取 [選取設定檔]  。 若要指定從命令列執行測試的回合設定檔，請參閱[設定單元測試](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md#command-line)。
+
+::: moniker-end
 
    當您選取 [分析程式碼涵蓋範圍]  時，從回合設定檔讀取組態資訊。
 
    > [!TIP]
-   > 當您執行測試或更新程式碼時，並不會自動隱藏之前的程式碼涵蓋範圍結果及程式碼著色。
+   > 當您執行測試或更新程式碼時，並不會自動隱藏任何之前的程式碼涵蓋範圍結果及程式碼著色。
 
-若要開啟和關閉自訂設定，請在 [測試]   > [測試設定]  功能表中取消選取或選取檔案。
+::: moniker range="vs-2017"
 
-![具有自訂設定檔的測試設定功能表](../test/media/codecoverage-settingsfile.png)
+若要關閉和開啟自訂設定，請在 [測試]  > [測試設定]  功能表中取消選取或選取檔案。
+
+![Visual Studio 2017 中具有自訂設定檔的測試設定功能表](../test/media/codecoverage-settingsfile.png)
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+若要關閉和開啟自訂設定，請在 [測試總管]  中的 [設定]  功能表上取消選取或選取檔案。
+
+::: moniker-end
 
 ### <a name="specify-symbol-search-paths"></a>指定符號搜尋路徑
 
-程式碼涵蓋範圍需要組件的符號檔 (.pdb  檔案)。 在您的方案所建置的組件中，符號檔通常會和二進位檔一起出現，而且程式碼涵蓋範圍會自動運作。 但是在某些情況下，您可以在程式碼涵蓋範圍分析中加入參考的組件。 在此類情況下，.pdb  檔案不可以和二進位檔同時出現，不過您可以在 .runsettings  檔案中指定符號搜尋路徑。
+程式碼涵蓋範圍需要組件的符號檔 (.pdb  檔案)。 在您的方案所建置的組件中，符號檔案通常會和二進位檔一起出現，而且程式碼涵蓋範圍會自動運作。 在某些情況下，您可以在程式碼涵蓋範圍分析中加入參考的組件。 在此類情況下，.pdb  檔案不可以和二進位檔同時出現，不過您可以在 .runsettings  檔案中指定符號搜尋路徑。
 
 ```xml
 <SymbolSearchPaths>
@@ -70,7 +90,7 @@ ms.locfileid: "62965543"
 </ModulePaths>
 ```
 
-或者，您可以指定應包含的組件。 這種方法的缺點是，當您將其他組件加入至方案時，必須記得將它們加入至清單：
+或者，您可以指定應包含的組件。 這種方法的缺點是，當您將其他組件新增至方案時，必須記得將它們新增至清單：
 
 ```xml
 <ModulePaths>
@@ -81,15 +101,13 @@ ms.locfileid: "62965543"
 </ModulePaths>
 ```
 
-如果 **Include** 是空的，則程式碼涵蓋範圍處理會包括所有已載入以及可以找到其 .pdb  檔案的組件。 程式碼涵蓋範圍不包含與 **Exclude** 清單中子句相符的項目。
-
-**Include** 是在 **Exclude** 之前處理。
+如果 **Include** 是空的，則程式碼涵蓋範圍處理會包括所有已載入以及可以找到其 *.pdb* 檔案的組件。 程式碼涵蓋範圍不包含與 **Exclude** 清單中子句相符的項目。 **Include** 是在 **Exclude** 之前處理。
 
 ### <a name="regular-expressions"></a>規則運算式
 
-包含和排除節點使用規則運算式。 如需詳細資訊，請參閱[在 Visual Studio 中使用規則運算式](../ide/using-regular-expressions-in-visual-studio.md)。 規則運算式與萬用字元不同。 特別之處在於：
+包含和排除節點使用與萬用字元不同的規則運算式。 如需詳細資訊，請參閱[在 Visual Studio 中使用規則運算式](../ide/using-regular-expressions-in-visual-studio.md)。 部分範例如下：
 
-- **.\\** * 會比對任何字元的字串
+- **.\*** 會比對任何字元的字串
 
 - **\\.** 會比對點 "."
 
@@ -133,7 +151,10 @@ ms.locfileid: "62965543"
 
 - **Source** - 依原始檔案路徑名稱的定義方式比對項目。
 
-- **Attribute** - 比對附加特定屬性的項目。 指定屬性的完整名稱，並在名稱結尾包括 "Attribute"。
+- **Attribute** - 比對附加特定屬性的項目。 指定屬性的完整名稱，例如 `<Attribute>^System\.Diagnostics\.DebuggerHiddenAttribute$</Attribute>`。
+
+  > [!TIP]
+  > 如果您排除 <xref:System.Runtime.CompilerServices.CompilerGeneratedAttribute> 屬性，則會從程式碼涵蓋範圍分析中排除使用語言功能 (例如 `async`、`await`、`yield return`) 和自動實作屬性的程式碼。 若要排除真正產生的程式碼，只要排除 <xref:System.CodeDom.Compiler.GeneratedCodeAttribute> 屬性即可。
 
 - **Function** - 依完整名稱比對程序、函式或方法。 若要比對函式名稱，規則運算式必須符合函式的完整名稱，包括命名空間、類別名稱、方法名稱和參數清單。 例如：
 
@@ -223,9 +244,8 @@ Included items must then not match any entries in the exclude list to remain inc
                 <!-- Don't forget "Attribute" at the end of the name -->
                 <Attribute>^System\.Diagnostics\.DebuggerHiddenAttribute$</Attribute>
                 <Attribute>^System\.Diagnostics\.DebuggerNonUserCodeAttribute$</Attribute>
-                <Attribute>^System\.Runtime\.CompilerServices.CompilerGeneratedAttribute$</Attribute>
-                <Attribute>^System\.CodeDom\.Compiler.GeneratedCodeAttribute$</Attribute>
-                <Attribute>^System\.Diagnostics\.CodeAnalysis.ExcludeFromCodeCoverageAttribute$</Attribute>
+                <Attribute>^System\.CodeDom\.Compiler\.GeneratedCodeAttribute$</Attribute>
+                <Attribute>^System\.Diagnostics\.CodeAnalysis\.ExcludeFromCodeCoverageAttribute$</Attribute>
               </Exclude>
             </Attributes>
 

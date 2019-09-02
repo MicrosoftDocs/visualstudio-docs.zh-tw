@@ -2,7 +2,7 @@
 title: Visual Studio 2019 的新功能
 titleSuffix: ''
 description: 了解 Visual Studio 2019 中的新功能。
-ms.date: 06/29/2019
+ms.date: 07/23/2019
 helpviewer_keywords:
 - Visual Studio, what's new
 - what's new [Visual Studio]
@@ -15,16 +15,16 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b5387fa61686d85e02c200a0a50cffa9e5aa155
-ms.sourcegitcommit: c7b9ab1bc19d74b635c19b1937e92c590dafd736
+ms.openlocfilehash: 1f4a055f62fe76c701858f82b4778f7a3b19fa0a
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67552871"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68918780"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Visual Studio 2019 的新功能
 
-已針對 [16.1 版](/visualstudio/releases/2019/release-notes/)更新 
+已針對 [16.2 版](/visualstudio/releases/2019/release-notes/)更新 
 
 >[!div class="button"]
 >[下載 Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2019)
@@ -65,7 +65,7 @@ C# 中有許多全新且非常有用的重構，讓您輕鬆就能組織您的�
 
 [Visual Studio IntelliCode](/visualstudio/intellicode/) 可使用人工智慧 (AI) 來強化您的軟體開發工作。 IntelliCode 在 GitHub 上的 2,000 個開放原始碼專案中訓練 (每個專案各有超過 100 顆星) 以產生建議。
 
- ![Visual Studio 2019 中的 IntelliCode 動畫](media/vs-2019/IntelliCode.gif)
+![Visual Studio 2019 中的 IntelliCode 動畫](media/vs-2019/IntelliCode.gif)
 
 以下是 Visual Studio IntelliCode 可協助提高生產力的幾種方式：
 
@@ -101,6 +101,12 @@ Visual Studio 2019 的發行，代表我們正著手將 Visual Studio 調整為�
    ![Visual Studio 2019 中的個別監視器感知 (PMA) 轉譯](media/vs-2019/pma-dpi-scaling.png)
 
 如需詳細資訊，請參閱[使用 Visual Studio 2019 獲得更好的多監視器體驗](https://devblogs.microsoft.com/visualstudio/a-better-multi-monitor-experience-with-visual-studio-2019/) \(英文\) 部落格文章。
+
+### <a name="test-explorer"></a>測試總管
+
+**16.2 中的新功能**：我們已經更新測試總管以提供更有效的大型測試集處理方式、更容易篩選及探索的命令，以及可讓您微調要顯示哪些測試資訊的可自訂欄。
+
+   ![顯示測試總管中的使用者介面改良功能的螢幕擷取畫面](media/vs-2019/test-explorer-ui.png)
 
 ## <a name="collaborate"></a>共同作業
 
@@ -178,6 +184,12 @@ Visual Studio 2019 預設會安裝這項服務。
 
 如需詳細資訊請參閱[使用快照偵錯工具針對即時 ASP.NET Azure 應用程式進行偵錯](../debugger/debug-live-azure-applications.md)頁面，以及[介紹 Visual Studio Enterprise 2019 的時間移動偵錯](https://devblogs.microsoft.com/visualstudio/introducing-time-travel-debugging-for-visual-studio-enterprise-2019/) \(英文\) 部落格文章。
 
+### <a name="microsoft-edge-insider-support"></a>Microsoft Edge Insider 支援
+
+**16.2 中的新功能**：您可以透過使用 [Microsoft Edge Insider](https://www.microsoftedgeinsider.com/) 瀏覽器，在 JavaScript 應用程式中設定中斷點並啟動偵錯工作階段。 當您這樣做的時候，Visual Studio 會在已啟用偵錯功能的情況下開啟新的瀏覽器視窗，讓您可以用來在 Visual Studio 內逐步執行應用程式 JavaScript。
+
+   ![瀏覽器中顯示 JavaScript 程式碼轉譯的螢幕擷取畫面](media/vs-2019/edge-chromium-breakpoint.png)
+
 ## <a name="whats-next"></a>後續步驟
 
 我們對 Visual Studio 2019 的更新通常附帶可大幅改善您開發體驗的新功能。 若要深入了解我們最新的創新功能，請參閱 [Visual Studio 部落格](https://devblogs.microsoft.com/visualstudio/)。 有關我們迄今為止在預覽中發行之內容的記錄，請查看[預覽版本資訊](/visualstudio/releases/2019/release-notes-preview/)。
@@ -194,9 +206,8 @@ Visual Studio 2019 預設會安裝這項服務。
 
 ## <a name="see-also"></a>另請參閱
 
-* [隆重發表 Visual Studio 2019](https://devblogs.microsoft.com/visualstudio/visual-studio-2019-code-faster-work-smarter-create-the-future/)
 * [Visual Studio 2019 版本資訊](/visualstudio/releases/2019/release-notes/)
 * [Visual Studio 2019 SDK 的新功能](../extensibility/whats-new-visual-studio-2019-sdk.md)
-* [Visual Studio 2019 for Mac 現已推出](https://devblogs.microsoft.com/visualstudio/visual-studio-2019-for-mac-is-now-available/)
+* [Visual Studio 2019 for Mac 版本資訊](/visualstudio/releasenotes/vs2019-mac-relnotes/)
 * [Microsoft Build 2019 會議](https://www.microsoft.com/build)
 * [Microsoft Connect(); 2018 會議](https://www.microsoft.com/connectevent)

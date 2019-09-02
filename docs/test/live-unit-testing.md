@@ -9,12 +9,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: ce9a1a2da7397dbc7ce4235391c962cada7d59eb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bfe1affaad05d2c20a27fb0e315fc1d3b263f22b
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62786473"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68923755"
 ---
 # <a name="live-unit-testing-with-visual-studio"></a>Visual Studio 的 Live Unit Testing
 
@@ -36,14 +36,14 @@ Live Unit Testing 適用於下表所列的三種熱門單元測試架構。 其�
 
 如果您的舊版 MSTest 測試專案參考 `Microsoft.VisualStudio.QualityTools.UnitTestFramework`，但您不想要移至新版 MSTest NuGet 套件，請升級至 Visual Studio 2017 15.4 版或更新版本。
 
-在某些情況下，您可能需要明確地還原方案中的專案所參考的 NuGet 封裝，才能使 Live Unit Testing 運作。 若要執行此動作，您可以在啟用 Live Unit Testing 之前，明確地建置方案 (從最上層的 Visual Studio 功能表中依序選取 [建置] > [重建方案])，或是在方案中還原套件 (以滑鼠右鍵按一下方案，然後選取 [還原 NuGet 套件])。
+在某些情況下，您可能需要明確地還原方案中的專案所參考的 NuGet 封裝，才能使 Live Unit Testing 運作。 若要執行此動作，您可以在啟用 Live Unit Testing 之前，明確地建置方案 (從最上層的 Visual Studio 功能表中依序選取 [建置]   > [重建方案]  )，或是在方案中還原套件 (以滑鼠右鍵按一下方案，然後選取 [還原 NuGet 套件]  )。
 
 ## <a name="configure-live-unit-testing"></a>設定 Live Unit Testing
 
-您可以設定 Live Unit Testing，方法是從最上層的 Visual Studio 功能表列中依序選取 [工具] > [選項]，然後在 [選項] 對話方塊的左窗格中選取 [Live Unit Testing]。
+您可以設定 Live Unit Testing，方法是從最上層的 Visual Studio 功能表列中依序選取 [工具]   > [選項]  ，然後在 [選項]  對話方塊的左窗格中選取 [Live Unit Testing]  。
 
 > [!TIP]
-> 只要啟用了 Live Unit Testing (請參閱下一節[啟動、暫停和停止 Live Unit Testing](#start-pause-and-stop-live-unit-testing))，您就也可以選取 [測試] > [Live Unit Testing] > [選項] 以開啟 [選項] 對話方塊。
+> 只要啟用了 Live Unit Testing (請參閱下一節[啟動、暫停和停止 Live Unit Testing](#start-pause-and-stop-live-unit-testing))，您就也可以選取 [測試]   > [Live Unit Testing]   > [選項]  以開啟 [選項]  對話方塊。
 
 下圖顯示對話方塊中提供的 Live Unit Testing 組態選項：
 
@@ -69,32 +69,32 @@ Live Unit Testing 適用於下表所列的三種熱門單元測試架構。 其�
 
 - Live Unit Testing 程序可以使用的記憶體數量上限。
 
-- 寫入至 Live Unit Testing [輸出] 視窗的資訊層級。
+- 寫入至 Live Unit Testing [輸出]  視窗的資訊層級。
 
-   選項包括不記錄 ([無])、僅限錯誤訊息 ([錯誤])、錯誤與資訊訊息 ([資訊]，預設值) 或所有詳細資料 ([詳細資訊])。
+   選項包括不記錄 ([無]  )、僅限錯誤訊息 ([錯誤]  )、錯誤與資訊訊息 ([資訊]  ，預設值) 或所有詳細資料 ([詳細資訊]  )。
 
-   您也可以在 Live Unit Testing 的 [輸出] 視窗中顯示詳細資訊輸出，方法是將 "1" 的值指派給名為 `VS_UTE_DIAGNOSTICS` 的使用者層級環境變數，然後重新啟動 Visual Studio。
+   您也可以在 Live Unit Testing 的 [輸出]  視窗中顯示詳細資訊輸出，方法是將 "1" 的值指派給名為 `VS_UTE_DIAGNOSTICS` 的使用者層級環境變數，然後重新啟動 Visual Studio。
 
    若要在檔案中擷取來自 Live Unit Testing 的詳細 MSBuild 記錄訊息，請將 `LiveUnitTesting_BuildLog` 使用者層級環境變數設為該檔案的名稱，以包含記錄。
 
 ## <a name="start-pause-and-stop-live-unit-testing"></a>啟動、暫停和停止 Live Unit Testing
 
-您可以從最上層的 Visual Studio 功能表依序選取 [測試] > [Live Unit Testing] > [啟動]，來啟用 Live Unit Testing。 啟用 Live Unit Testing 時，[Live Unit Testing] 功能表上的可用選項會從單一項目 ([啟動]) 變更為 [暫停]、[停止] 與 [重新啟動]。
+您可以從最上層的 Visual Studio 功能表依序選取 [測試]   > [Live Unit Testing]   > [啟動]  ，來啟用 Live Unit Testing。 啟用 Live Unit Testing 時，[Live Unit Testing]  功能表上的可用選項會從單一項目 ([啟動]  ) 變更為 [暫停]  、[停止]  與 [重新啟動]  。
 
 > [!NOTE]
-> 如果您在未包含單元測試專案的方案中啟動 Live Unit Testing，則 [暫停]、[停止] 和 [Reset Clean] (全新重設) 選項會出現在 [Live Unit Testing] 功能表上，但不會啟動 Live Unit Testing。 [輸出] 視窗會顯示開頭如下的訊息：「此方案未參考支援的測試配接器...」
+> 如果您在未包含單元測試專案的方案中啟動 Live Unit Testing，則 [暫停]  、[停止]  和 [Reset Clean] (全新重設)  選項會出現在 [Live Unit Testing]  功能表上，但不會啟動 Live Unit Testing。 [輸出]  視窗會顯示開頭如下的訊息：「此方案未參考支援的測試配接器...」
 
 您隨時都能暫時停止或完全停止 Live Unit Testing。 例如，如果您正在進行重構，並知道測試會因此中斷一段時間，則您可能會想要執行此動作。 這三個功能表選項如下：
 
 - **暫停**：它會暫時停止 Live Unit Testing。
 
-    當 Live Unit Testing 暫停時，您涵蓋範圍的視覺效果不會出現在編輯器中，但會保留所有已收集的資料。 若要繼續進行 Live Unit Testing，請選取 [Live Unit Testing] 功能表中的 [繼續]。 Live Unit Testing 會執行必要的工作來更新在暫停期間所做的所有編輯，並會適當地更新字符。
+    當 Live Unit Testing 暫停時，您涵蓋範圍的視覺效果不會出現在編輯器中，但會保留所有已收集的資料。 若要繼續進行 Live Unit Testing，請選取 [Live Unit Testing] 功能表中的 [繼續]  。 Live Unit Testing 會執行必要的工作來更新在暫停期間所做的所有編輯，並會適當地更新字符。
 
 - **停止**：可完全停止 Live Unit Testing。 Live Unit Testing 會捨棄所有已收集的資料。
 
 - **重設清除**，這會停止 Live Unit Testing、刪除保存資料，並重新啟動 Live Unit Testing。
 
-- **選項**，這會開啟[設定 Live Unit Testing](#configure-live-unit-testing) 一節所述的 [選項] 對話方塊。
+- **選項**，這會開啟[設定 Live Unit Testing](#configure-live-unit-testing) 一節所述的 [選項]  對話方塊。
 
 ## <a name="view-coverage-visualization-in-the-editor-as-you-type"></a>在鍵入期間於編輯器中檢視涵蓋範圍的視覺效果
 
@@ -130,28 +130,28 @@ Live Unit Testing 適用於下表所列的三種熱門單元測試架構。 其�
 
 ## <a name="live-unit-testing-and-test-explorer"></a>Live Unit Testing 和測試總管
 
-一般而言，[測試總管] 會提供介面，讓您能夠針對測試結果進行執行、偵錯及分析。 Live Unit Testing 會與 [測試總管] 整合。 若未啟用或已停止 Live Unit Testing，[測試總管] 就會顯示上次執行測試時的單元測試狀態。 原始程式碼變更需要您重新執行測試。 相反地，啟用 Live Unit Testing 時，[測試總管] 中的單元測試狀態會立即更新。 您不再需要明確地執行單元測試。
+一般而言，[測試總管]  會提供介面，讓您能夠針對測試結果進行執行、偵錯及分析。 Live Unit Testing 會與 [測試總管]  整合。 若未啟用或已停止 Live Unit Testing，[測試總管]  就會顯示上次執行測試時的單元測試狀態。 原始程式碼變更需要您重新執行測試。 相反地，啟用 Live Unit Testing 時，[測試總管]  中的單元測試狀態會立即更新。 您不再需要明確地執行單元測試。
 
 > [!NOTE]
-> 您可以依序選取最上層 Visual Studio 功能表中的 [測試] > [視窗] > [測試總管] 來開啟 [測試總管]。
+> 您可以依序選取最上層 Visual Studio 功能表中的 [測試]   > [視窗]   > [測試總管]  來開啟 [測試總管]  。
 
-您可能會發現 [測試總管] 視窗中的某些測試呈現淡出效果。例如，當您在開啟先前儲存的專案之後啟用 Live Unit Testing 時，[測試總管] 視窗以淡出效果顯示失敗之測試以外的所有測試，如下圖所示。 在此案例中，Live Unit Testing 已重新執行失敗的測試，但尚未重新執行成功的測試，因為 Live Unit Testing 的保存資料指出上次測試成功執行之後，資料並未變更。
+您可能會發現 [測試總管]  視窗中的某些測試呈現淡出效果。例如，當您在開啟先前儲存的專案之後啟用 Live Unit Testing 時，[測試總管]  視窗以淡出效果顯示失敗之測試以外的所有測試，如下圖所示。 在此案例中，Live Unit Testing 已重新執行失敗的測試，但尚未重新執行成功的測試，因為 Live Unit Testing 的保存資料指出上次測試成功執行之後，資料並未變更。
 
   ![Image](media/lut-test-explorer.png)
 
-您可以從 [測試總管] 功能表選取 [全部執行] 或 [執行] 選項；或選取 [測試總管] 功能表中的一或多個測試並按一下滑鼠右鍵，然後從快顯功能表選取 [執行選取的測試] 或 [偵錯選取的測試]，以重新執行任何以淡出效果顯示的測試。 當測試執行時，它們會浮現在最上方。
+您可以從 [測試總管]  功能表選取 [全部執行]  或 [執行]  選項；或選取 [測試總管]  功能表中的一或多個測試並按一下滑鼠右鍵，然後從快顯功能表選取 [執行選取的測試]  或 [偵錯選取的測試]  ，以重新執行任何以淡出效果顯示的測試。 當測試執行時，它們會浮現在最上方。
 
-在 Live Unit Testing 自動執行並更新測試結果，以及從 [測試總管] 明確執行測試之間，具有一些差異。 這些差異包括：
+在 Live Unit Testing 自動執行並更新測試結果，以及從 [測試總管]  明確執行測試之間，具有一些差異。 這些差異包括：
 
 - 從 [測試總管] 視窗針對測試進行執行或偵錯會執行一般的二進位檔，而 Live Unit Testing 會執行已檢測的二進位檔。
-- Live Unit Testing 不會建立新的應用程式定義域來執行測試，而是從預設的定義域執行測試。 從 [測試總管] 視窗執行的測試會建立新的應用程式定義域。
-- Live Unit Testing 會循序執行每個測試組件中的測試。 如果您從 [測試總管] 視窗執行多個測試，並選取 [平行執行測試] 按鈕，測試會平行執行。
+- Live Unit Testing 不會建立新的應用程式定義域來執行測試，而是從預設的定義域執行測試。 從 [測試總管]  視窗執行的測試會建立新的應用程式定義域。
+- Live Unit Testing 會循序執行每個測試組件中的測試。 您可以在 [測試總管]  視窗中，選擇並行執行多項測試的選項。
 
 ## <a name="live-unit-testing-and-large-solutions"></a>Live Unit Testing 與大型方案
 
-如果您的方案具有 10 個或更多的專案，當啟動 Live Unit Testing 而其中並沒有保留資料，或從最上層 Visual Studio 功能表選取 [測試] > [Live Unit Testing] > [重設清除] 選項時，Visual Studio 會顯示下列對話方塊，以警告在大型專案中動態執行大量測試可能會嚴重影響效能。 如果您選取 [確定]，Live Unit Testing 會執行方案中的所有測試。 如果您選取 [取消]，便可以選取要執行的測試。 如需執行這項操作的資訊，請參閱下面的[包含和排除測試專案與測試方法](#include-and-exclude-test-projects-and-test-methods)一節。
+如果您的方案具有 10 個或更多的專案，當啟動 Live Unit Testing 而其中並沒有保留資料，或從最上層 Visual Studio 功能表選取 [測試]   > [Live Unit Testing]   > [重設清除]  選項時，Visual Studio 會顯示下列對話方塊，以警告在大型專案中動態執行大量測試可能會嚴重影響效能。 如果您選取 [確定]  ，Live Unit Testing 會執行方案中的所有測試。 如果您選取 [取消]  ，便可以選取要執行的測試。 如需執行這項操作的資訊，請參閱下面的[包含和排除測試專案與測試方法](#include-and-exclude-test-projects-and-test-methods)一節。
 
- ![針對大型專案的 Live Unit Testing 對話方塊](media/lut-large-project.png)
+![針對大型專案的 Live Unit Testing 對話方塊](media/lut-large-project.png)
 
 ## <a name="include-and-exclude-test-projects-and-test-methods"></a>包含和排除測試專案與測試方法
 
@@ -161,12 +161,12 @@ Live Unit Testing 適用於下表所列的三種熱門單元測試架構。 其�
 
 若要在單元測試中選取個別專案，請在啟動 Live Unit Testing 之後執行下列動作：
 
-1. 以滑鼠右鍵按一下 [方案總管] 中的方案，然後依序選擇 [即時測試] > [排除] 來排除整個方案。
-1. 以滑鼠右鍵按一下您想要包含於測試中的每個測試專案，然後依序選擇 [即時測試] > [包含]。
+1. 以滑鼠右鍵按一下 [方案總管]  中的方案，然後依序選擇 [即時測試]   > [排除]  來排除整個方案。
+1. 以滑鼠右鍵按一下您想要包含於測試中的每個測試專案，然後依序選擇 [即時測試]   > [包含]  。
 
 **從程式碼編輯器視窗排除個別測試**
 
-您可以使用程式碼編輯器視窗來包含或排除個別的測試方法。 以滑鼠右鍵按一下程式碼編輯器視窗中測試方法的簽章，然後選取 [即時測試] > [包含 [選取的方法]]、[即時測試] > [排除 [選取的方法]] 或 [即時測試] > [全部排除 [選取的方法除外]]，其中「選取的方法」是您在程式碼視窗中選取之方法的名稱。
+您可以使用程式碼編輯器視窗來包含或排除個別的測試方法。 以滑鼠右鍵按一下程式碼編輯器視窗中測試方法的簽章，然後選取 [即時測試]   > [包含 [選取的方法]]  、[即時測試]   > [排除 [選取的方法]]  或 [即時測試]   > [全部排除 [選取的方法除外]]  ，其中「選取的方法」是您在程式碼視窗中選取之方法的名稱。
 
 **以程式設計方式排除測試**
 

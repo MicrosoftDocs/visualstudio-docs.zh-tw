@@ -13,11 +13,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3a590d3dc3053c5b857917dc358e32a2c7d5247c
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59651743"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68192863"
 ---
 # <a name="using-multiple-processors-to-build-projects"></a>使用多個處理器來建置專案
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,6 +41,6 @@ MSBuild 可運用有多個處理器或多核心處理器的系統。 針對每�
   
  若要避免此問題，但仍啟用多處理器建置，[!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 會使用「處理序隔離」。 透過使用處理序隔離，[!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 可以建立最多 `n` 個處理序，其中 `n` 等於系統上可用的處理器數目。 例如，如果 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 在具備兩個處理器的系統上建置方案，則只會建立兩個建置流程。 這些處理序會重複使用來建置方案中的所有專案。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [以平行方式建置多個專案](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md)   
  [工作](../msbuild/msbuild-tasks.md)

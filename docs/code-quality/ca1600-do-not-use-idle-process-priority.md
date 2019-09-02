@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a1774b3feb2da4939420bf75506892aac6dedd72
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c37affc585653807912d00c1cfe365853fd6260b
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62797521"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68921815"
 ---
 # <a name="ca1600-do-not-use-idle-process-priority"></a>CA1600:不要使用 Idle 處理序優先順序
 
@@ -31,13 +31,13 @@ ms.locfileid: "62797521"
 |中斷變更|中斷|
 
 ## <a name="cause"></a>原因
- 處理程序設定為時，就會發生這項規則`ProcessPriorityClass.Idle`。
+當進程設定為時, `ProcessPriorityClass.Idle`就會發生此規則。
 
 ## <a name="rule-description"></a>規則描述
- 請勿將處理序優先權設定為 Idle。 處理程序`System.Diagnostics.ProcessPriorityClass.Idle`會佔用 CPU，它會處於閒置狀態，並因而阻礙待命時。
+請勿將處理序優先權設定為 Idle。 當處理常式`System.Diagnostics.ProcessPriorityClass.Idle`會閒置時, 將會佔用 CPU, 因此會封鎖待命。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
- 設定處理程序為`ProcessPriorityClass.BelowNormal`。
+將處理常式`ProcessPriorityClass.BelowNormal`設定為。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
- 閒置處理序優先權，而且可以安全地忽略行動力考量時，才應該隱藏此規則。
+只有在需要閒置進程優先順序, 而且可以安全地忽略行動性考慮時, 才應該抑制此規則。

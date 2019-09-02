@@ -13,11 +13,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 02a4c36f3969ca0f9ef61e817afb82eb8247f041
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54780313"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68203490"
 ---
 # <a name="ltsignaturegt-javascript"></a>&lt;簽章&gt;(JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,10 +40,10 @@ ms.locfileid: "54780313"
  選擇性。 指定在其中尋找檔案的名稱`externalid`。 如果沒有，則會忽略這個屬性`externalid`存在。 這是選擇性的屬性。 預設值是檔案的副檔名為.xml，而不是檔案的.js 但目前的名稱。 根據預設，當地語系化的受管理的資源查閱規則用來找出檔案。  
   
  `helpKeyword`  
- 選擇性。 F1 說明關鍵字。  
+ 選擇性。 F1 說明的關鍵字。  
   
  `locid`  
- 選擇性。 如需欄位的當地語系化資訊識別項。 識別項是成員識別碼或其對應至`name`屬性 OpenAjax 中繼資料所定義的訊息組合中的值。 識別項型別取決於所指定的格式[ \<loc >](../ide/loc-javascript.md)標記。  
+ 選擇性。 如需欄位的當地語系化資訊識別項。 該識別項會是成員識別碼，或對應由 OpenAjax 中繼資料所定義訊息包中的 `name` 屬性值。 識別項類型會依據在 [\<loc>](../ide/loc-javascript.md) 標籤中指定的格式而有所不同。  
   
 ## <a name="remarks"></a>備註  
  使用其中一個`<signature>`項目，每個多載函式描述中的.js 檔案或使用下列其中一個`<signature>`指定每個外部成員識別碼的項目。  
@@ -51,7 +51,7 @@ ms.locfileid: "54780313"
  `<signature>`項目必須放在任何陳述式之前的函式主體。 使用時[\<摘要 >](../ide/summary-javascript.md)， [ \<param >](../ide/param-javascript.md)，或[\<傳回 >](../ide/returns-javascript.md)項目`<signature>`項目，將其他項目放`<signature>`區塊。  
   
 ## <a name="example"></a>範例  
- 下列程式碼範例示範如何使用`<signature>`項目。  
+ 下列程式碼範例示範如何使用 `<signature>` 元素。  
   
 ```javascript  
 // Use of <signature> with externalid.  
@@ -93,5 +93,5 @@ function add(a, b) {
 }  
 ```  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [XML 文件註解](../ide/xml-documentation-comments-javascript.md)

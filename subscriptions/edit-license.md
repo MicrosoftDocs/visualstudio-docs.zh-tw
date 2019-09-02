@@ -1,23 +1,22 @@
 ---
-title: 在管理入口網站編輯訂用帳戶 | Microsoft Docs
+title: 在系統管理入口網站編輯訂用帳戶 | Microsoft Docs
 author: evanwindom
-ms.author: jaunger
-manager: evelynp
-ms.date: 10/03/2017
+ms.author: lank
+manager: lank
+ms.date: 07/28/2019
 ms.topic: conceptual
 description: 了解系統管理員如何編輯訂用帳戶指派。
-ms.openlocfilehash: 7245facbaf966593160bc44dc15bc2fd71622347
-ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
+ms.openlocfilehash: e55cee74f861973e3cc29e3f19dc9b31a107f437
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67783481"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68605647"
 ---
-# <a name="editing-visual-studio-subscription-assignments"></a>編輯 Visual Studio 訂用帳戶指派
-
+# <a name="edit-visual-studio-subscription-assignments"></a>編輯 Visual Studio 訂用帳戶指派
 身為訂用帳戶管理員，您可以變更指派給您組織內個人的訂用帳戶。  本文章討論您可以進行的變更類型，並提供必要的步驟。
 
-## <a name="making-changes-to-subscriber-information"></a>變更訂閱者資訊
+## <a name="change-subscriber-information"></a>變更訂閱者資訊
 您可以編輯訂閱者資訊，以更正錯誤或更新資訊。
 
 若要編輯訂閱者，請選取滑鼠停留在訂閱者電子郵件地址上時，旁邊出現的省略符號 (…)。 隨即顯示下拉式清單。  選取 [編輯]  修改訂閱者的詳細資料。 您也可以按兩下格線中的訂閱者資料列，開啟 [編輯] 視窗。
@@ -29,8 +28,7 @@ ms.locfileid: "67783481"
    > [!NOTE]
    > 如果需要變更訂閱者的訂用帳戶層級，您必須從入口網站刪除使用者，然後再次新增他們。 訂用帳戶層級不可編輯。
 
-## <a name="editing-multiple-subscribers-using-bulk-edit"></a>使用大量編輯來編輯多名訂閱者
-
+## <a name="edit-multiple-subscribers-using-bulk-edit"></a>使用大量編輯來編輯多名訂閱者
 您可以使用大量編輯程序一次編輯多名訂閱者。 這項功能主要用於公司電子郵件地址變更過的組織，或已決定限制下載存取的組織。
 
    > [!IMPORTANT]
@@ -49,3 +47,7 @@ ms.locfileid: "67783481"
    > ![編輯授權 - 大量編輯檔案上傳](_img/edit-license/edit-license-bulk-file-upload1.png)
 
 5. 上傳檔案後，您會看到通知，讓您知道作業已順利完成。 此時，您的編輯會反映在訂閱者資訊中。
+
+## <a name="next-steps"></a>後續步驟
+- 如需協助以尋找特定的訂閱，請參閱[搜尋訂閱](search-license.md)。
+- 需要建立您所有訂閱項目的清單嗎？  參閱[匯出訂用帳戶](exporting-subscriptions.md)。

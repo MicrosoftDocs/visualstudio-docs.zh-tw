@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 581bc75c22326275dcb3657910f60c2977094037
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fae67f8c1ffa3b4e6d7cc2f0fbbaf670733f9ff4
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62779742"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68923302"
 ---
 # <a name="ca1001-types-that-own-disposable-fields-should-be-disposable"></a>CA1001：具有可處置欄位的類型應該為可處置
 
@@ -31,31 +31,31 @@ ms.locfileid: "62779742"
 |TypeName|TypesThatOwnDisposableFieldsShouldBeDisposable|
 |CheckId|CA1001|
 |分類|Microsoft.Design|
-|中斷變更|非分行-如果類型不是組件外部可見。<br /><br /> 中斷-如果組件外部可見的型別。|
+|中斷變更|不中斷-如果在元件外部看不到此類型。<br /><br /> 中斷-如果類型在元件外部是可見的。|
 
 ## <a name="cause"></a>原因
- 類別會宣告及實作是執行個體欄位<xref:System.IDisposable?displayProperty=fullName>型別和該類別未實作<xref:System.IDisposable>。
+類別會宣告並實作為<xref:System.IDisposable?displayProperty=fullName>類型的實例欄位, 而類別不會執行。 <xref:System.IDisposable>
 
 ## <a name="rule-description"></a>規則描述
- 類別會實作<xref:System.IDisposable>處置 unmanaged 資源，其所擁有的介面。 是的執行個體欄位<xref:System.IDisposable>類型表示欄位擁有 unmanaged 的資源。 宣告的類別<xref:System.IDisposable>欄位間接擁有 unmanaged 的資源，且應實作<xref:System.IDisposable>介面。 如果類別未直接擁有任何 unmanaged 的資源，它應該不會實作完成項。
+類別會執行<xref:System.IDisposable>介面來處置它所擁有的非受控資源。 屬於<xref:System.IDisposable>類型的實例欄位表示該欄位擁有非受控資源。 宣告<xref:System.IDisposable>欄位的類別會間接擁有非受控資源, 而且應該會<xref:System.IDisposable>執行介面。 如果類別未直接擁有任何非受控資源, 則不應執行完成項。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
- 若要修正此規則的違規情形，實作<xref:System.IDisposable>進出<xref:System.IDisposable.Dispose%2A?displayProperty=fullName>方法呼叫<xref:System.IDisposable.Dispose%2A>欄位的方法。
+若要修正此規則的違規, 請<xref:System.IDisposable>在<xref:System.IDisposable.Dispose%2A?displayProperty=fullName>方法中執行和, <xref:System.IDisposable.Dispose%2A>並呼叫欄位的方法。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
- 請勿隱藏此規則的警告。
+請勿隱藏此規則的警告。
 
 ## <a name="example"></a>範例
- 下列範例顯示違反規則的類別和類別，藉由實作會滿足規則<xref:System.IDisposable>。 類別未實作完成項，因為類別並未直接擁有任何 unmanaged 的資源。
+下列範例顯示違反規則的類別, 以及藉由執行<xref:System.IDisposable>來滿足規則的類別。 類別不會執行完成項, 因為類別不會直接擁有任何非受控資源。
 
- [!code-vb[FxCop.Design.DisposableFields#1](../code-quality/codesnippet/VisualBasic/ca1001-types-that-own-disposable-fields-should-be-disposable_1.vb)]
- [!code-csharp[FxCop.Design.DisposableFields#1](../code-quality/codesnippet/CSharp/ca1001-types-that-own-disposable-fields-should-be-disposable_1.cs)]
+[!code-vb[FxCop.Design.DisposableFields#1](../code-quality/codesnippet/VisualBasic/ca1001-types-that-own-disposable-fields-should-be-disposable_1.vb)]
+[!code-csharp[FxCop.Design.DisposableFields#1](../code-quality/codesnippet/CSharp/ca1001-types-that-own-disposable-fields-should-be-disposable_1.cs)]
 
-## <a name="related-rules"></a>相關的規則
- [CA2213：可處置的欄位應該受到處置](../code-quality/ca2213-disposable-fields-should-be-disposed.md)
+## <a name="related-rules"></a>相關規則
+[CA2213：可處置的欄位應該受到處置](../code-quality/ca2213-disposable-fields-should-be-disposed.md)
 
- [CA2216:可處置類型應該宣告完成項](../code-quality/ca2216-disposable-types-should-declare-finalizer.md)
+[CA2216可處置的類型應該宣告完成項](../code-quality/ca2216-disposable-types-should-declare-finalizer.md)
 
- [CA2215:方法應該呼叫基底類別處置](../code-quality/ca2215-dispose-methods-should-call-base-class-dispose.md)
+[CA2215Dispose 方法應該呼叫基類處置](../code-quality/ca2215-dispose-methods-should-call-base-class-dispose.md)
 
- [CA1049:擁有原生資源的類型應該是可處置的](../code-quality/ca1049-types-that-own-native-resources-should-be-disposable.md)
+[CA1049:擁有原生資源的類型應該是可處置的](../code-quality/ca1049-types-that-own-native-resources-should-be-disposable.md)

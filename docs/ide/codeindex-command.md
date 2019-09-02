@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d472ec7d35b886dbc2294d2c3172b61d3b1e7702
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: edd794d647d0af63edd133a65fbaad569e067e21
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62974952"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68924095"
 ---
 # <a name="codeindex-command"></a>CodeIndex 命令
 
@@ -47,8 +47,8 @@ TFSConfig CodeIndex /indexingStatus | /setIndexing:[ on | off | keepupOnly ] | /
 |**選項**|**描述**|
 |----------------| - |
 |**/indexingStatus**|顯示程式碼索引服務的狀態和組態。|
-|**/setIndexing:**[ on &#124; off &#124; keepupOnly ]|-   **on**：開始為所有變更集編製索引。<br />-   **off**：停止為所有變更集編製索引。<br />-   **keepupOnly**：停止為先前建立的變更集編製索引，並開始只為新的變更集編製索引。|
-|**/ignoreList:**[ add &#124; remove &#124; removeAll &#124; view ] `ServerPath`<br /><br /> 您可以在伺服器路徑的開頭、結尾或兩端使用萬用字元 (*)。|指定您不要編製索引之程式碼檔及其路徑的清單。<br /><br /> -   **add**：將您不要編製索引的檔案，新增至忽略的檔案清單中。<br />-   **remove**：從忽略的檔案清單中，移除您要編製索引的檔案。<br />-   **removeAll**：清除忽略的檔案清單，並開始為所有的檔案編製索引。<br />-   **view**：查看未編製索引的所有檔案。|
+|**/setIndexing:** [ on &#124; off &#124; keepupOnly ]|-   **on**：開始為所有變更集編製索引。<br />-   **off**：停止為所有變更集編製索引。<br />-   **keepupOnly**：停止為先前建立的變更集編製索引，並開始只為新的變更集編製索引。|
+|**/ignoreList:** [ add &#124; remove &#124; removeAll &#124; view ] `ServerPath`<br /><br /> 您可以在伺服器路徑的開頭、結尾或兩端使用萬用字元 (*)。|指定您不要編製索引之程式碼檔及其路徑的清單。<br /><br /> -   **add**：將您不要編製索引的檔案，新增至忽略的檔案清單中。<br />-   **remove**：從忽略的檔案清單中，移除您要編製索引的檔案。<br />-   **removeAll**：清除忽略的檔案清單，並開始為所有的檔案編製索引。<br />-   **view**：查看未編製索引的所有檔案。|
 |**/listLargeFiles [/fileCount:** `FileCount` **/minSize:** `MinSize`]|顯示超過指定大小 (KB) 的指定檔案數。 然後，您就可以使用 **/ignoreList** 選項來排除這些檔案，不為其編製索引。|
 |**/reindexAll**|清除先前索引資料，並重新開始編製索引。|
 |**/destroyCodeIndex [/noPrompt]**|刪除程式碼索引，並移除所有索引資料。 如果您使用 **/noPrompt** 選項，則不需要確認。|
@@ -62,61 +62,61 @@ TFSConfig CodeIndex /indexingStatus | /setIndexing:[ on | off | keepupOnly ] | /
 > [!NOTE]
 > 此處所描述的範例公司、組織、產品、網域名稱、電子郵件地址、商標、人員、地點與事件均屬虛構。  並非影射任何真實的公司、組織、產品、網域名稱、電子郵件地址、商標、人員、地點或事件。
 
- 若要查看程式碼索引狀態和組態：
+若要查看程式碼索引狀態和組態：
 
 ```cmd
 TFSConfig CodeIndex /indexingStatus /collectionName:"Fabrikam Website"
 ```
 
- 若要開始為索引所有變更集編製索引：
+若要開始為索引所有變更集編製索引：
 
 ```cmd
 TFSConfig CodeIndex /setIndexing:on /collectionName:"Fabrikam Website"
 ```
 
- 若要停止為先前建立的變更集編製索引，並且開始只為新變更集編製索引：
+若要停止為先前建立的變更集編製索引，並且開始只為新變更集編製索引：
 
 ```cmd
 TFSConfig CodeIndex /setIndexing:keepupOnly /collectionName:"Fabrikam Website"
 ```
 
- 若要找出最多 50 個大於 10 KB 的檔案：
+若要找出最多 50 個大於 10 KB 的檔案：
 
 ```cmd
 TFSConfig CodeIndex /listLargeFiles /fileCount:50 /minSize:10 /collectionName:"Fabrikam Website"
 ```
 
- 若要從索引排除特定檔案，並將它加入至忽略的檔案清單：
+若要從索引排除特定檔案，並將它加入至忽略的檔案清單：
 
 ```cmd
 TFSConfig CodeIndex /ignoreList:add "$/Fabrikam Website/Catalog.cs" /collectionName:"Fabrikam Website"
 ```
 
- 查看未編製索引的所有檔案：
+查看未編製索引的所有檔案：
 
 ```cmd
 TFSConfig CodeIndex /ignoreList:view
 ```
 
- 若要清除先前編製索引的資料，並重新開始編製索引：
+若要清除先前編製索引的資料，並重新開始編製索引：
 
 ```cmd
 TFSConfig CodeIndex /reindexAll /collectionName:"Fabrikam Website"
 ```
 
- 若要儲存所有變更集記錄：
+若要儲存所有變更集記錄：
 
 ```cmd
 TFSConfig CodeIndex /indexHistoryPeriod:all /collectionName:"Fabrikam Website"
 ```
 
- 若要移除 CodeLens 暫存資料的大小限制，並繼續編製索引，而不管暫存資料大小：
+若要移除 CodeLens 暫存資料的大小限制，並繼續編製索引，而不管暫存資料大小：
 
 ```cmd
 TFSConfig CodeIndex /temporaryDataSizeLimit:disable /collectionName:"Fabrikam Website"
 ```
 
- 若要刪除經過確認的程式碼索引：
+若要刪除經過確認的程式碼索引：
 
 ```cmd
 TFSConfig CodeIndex /destroyCodeIndex /collectionName:"Fabrikam Website"

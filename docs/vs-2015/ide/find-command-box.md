@@ -14,29 +14,29 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: b8bddc27eb4a59b65796c7837ae4561e5d56a5d5
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54801221"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68160662"
 ---
 # <a name="findcommand-box"></a>尋找/命令方塊
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-您可以從 [尋找/命令] 方塊中搜尋文字，並執行 Visual Studio 命令。 [尋找/命令] 方塊仍然是工具列控制項，但不再預設為可見。 您可以選擇 [標準] 工具列上的 [新增或移除按鈕]，然後選擇 [尋找]，以顯示 [尋找/命令] 方塊。  
+您可以從 [尋找/命令]  方塊中搜尋文字，並執行 Visual Studio 命令。 [尋找/命令]  方塊仍然是工具列控制項，但不再預設為可見。 您可以選擇 [標準]  工具列上的 [新增或移除按鈕]  ，然後選擇 [尋找]  ，以顯示 [尋找/命令]  方塊。  
   
  若要執行 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 命令，請在它前面加上大於 (>) 符號。  
   
- [尋找/命令] 方塊會保留輸入的最後 20 個項目，並以下拉式清單予以顯示。 您可以選擇方向鍵來巡覽清單。  
+ [尋找/命令]  方塊會保留輸入的最後 20 個項目，並以下拉式清單予以顯示。 您可以選擇方向鍵來巡覽清單。  
   
  ![尋找&#47;命令方塊](../ide/media/findcommandbox.png "FindCommandBox")  
 尋找/命令方塊  
   
 ## <a name="searching-for-text"></a>搜尋文字  
- 如果您在 [尋找/命令] 方塊中指定文字，然後選擇 ENTER 鍵，則 Visual Studio 預設會使用 [檔案中尋找] 對話方塊中所指定的選項來搜尋目前文件或工具視窗。 如需詳細資訊，請參閱 [Finding and Replacing Text](../ide/finding-and-replacing-text.md)。  
+ 如果您在 [尋找/命令]  方塊中指定文字，然後選擇 ENTER 鍵，則 Visual Studio 預設會使用 [檔案中尋找]  對話方塊中所指定的選項來搜尋目前文件或工具視窗。 如需詳細資訊，請參閱 [Finding and Replacing Text](../ide/finding-and-replacing-text.md)。  
   
 ## <a name="entering-commands"></a>輸入命令  
- 若要使用 [尋找/命令] 方塊來發出單一 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 命令或別名，而不是搜尋文字，請輸入 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 命令，並在前面加上大於 (>) 符號。 例如：  
+ 若要使用 [尋找/命令]  方塊來發出單一 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 命令或別名，而不是搜尋文字，請輸入 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 命令，並在前面加上大於 (>) 符號。 例如：  
   
 ```  
 >File.NewFile c:\temp\MyFile /t:"General\Text File"  
@@ -53,6 +53,6 @@ ms.locfileid: "54801221"
   
  無論插入號位於引號內部或外部，功能都相同。 如果插入號是該程式行的最後一個字元，則會將其忽略。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [命令視窗](../ide/reference/command-window.md)   
  [尋找和取代文字](../ide/finding-and-replacing-text.md)

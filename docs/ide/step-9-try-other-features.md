@@ -8,17 +8,17 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 41a3313f6393290a5f55c47653d11dba646dbb1b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 24637ba56c3dfa2d9ce9c7e70452bcdc6788b51b
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430992"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68918721"
 ---
 # <a name="step-9-try-other-features"></a>步驟 9：嘗試其他功能
 若要了解詳細資訊，請試著變更圖示和色彩、加入遊戲計時器，以及加入音效。 若要讓遊戲更具挑戰性，請試著使戲局變大並調整計時器。
 
- 若要下載這個範例的完整版，請參閱[完整的配對遊戲教學課程範例](https://code.msdn.microsoft.com/Complete-Matching-Game-4cffddba) \(英文\)。
+若要下載這個範例的完整版，請參閱[完整的配對遊戲教學課程範例](https://code.msdn.microsoft.com/Complete-Matching-Game-4cffddba) \(英文\)。
 
 ## <a name="to-try-other-features"></a>若要嘗試其他功能
 

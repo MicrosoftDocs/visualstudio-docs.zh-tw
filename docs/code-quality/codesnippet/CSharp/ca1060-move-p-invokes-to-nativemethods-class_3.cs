@@ -1,25 +1,25 @@
 using System;   
 using System.Runtime.InteropServices;   
-using System.Security;   
-using System.Security.Permissions;           
-
-public static class Cursor   
+using System.Security;  
+         
+public static class Environment   
 {       
-    // Callers do not require UnmanagedCode permission, however,       
-    // they do require UIPermissionWindow.AllWindows       
-    public static void Hide()          
+    // Callers do not require UnmanagedCode permission       
+    public static int TickCount        
     {           
-        // Need to demand an appropriate permission           
-        // in  place of UnmanagedCode permission as            
-        // ShowCursor is not considered a safe method           
-        new UIPermission(UIPermissionWindow.AllWindows).Demand();           
-        UnsafeNativeMethods.ShowCursor(false);       
+        get           
+        {              
+            // No need to demand a permission in place of               
+            // UnmanagedCode as GetTickCount is considered              
+            // a safe method              
+            return SafeNativeMethods.GetTickCount();           
+        }       
     }   
 }            
 
 [SuppressUnmanagedCodeSecurityAttribute]   
-internal static class UnsafeNativeMethods   
+internal static class SafeNativeMethods   
 {       
-    [DllImport("user32.dll", CharSet = CharSet.Auto, ExactSpelling = true)]       
-    internal static extern int ShowCursor([MarshalAs(UnmanagedType.Bool)]bool bShow);   
+    [DllImport("kernel32.dll", CharSet=CharSet.Auto, ExactSpelling=true)]       
+    internal static extern int GetTickCount();   
 }

@@ -1,10 +1,10 @@
 - name: 程式碼分析文件
   href: index.md
-- name: 受控碼的程式碼分析
+- name: 分析受控程式碼
   items:
     - name: 總覽
       href: code-analysis-for-managed-code-overview.md
-    - name: Roslyn 分析器 (來源分析)
+    - name: 程式碼分析
       items:
         - name: 總覽
           displayName: 'roslyn analyzers, source analysis'
@@ -17,12 +17,12 @@
           href: how-to-enable-and-disable-full-solution-analysis-for-managed-code.md
         - name: 常見問題集
           href: analyzers-faq.md
-    - name: Binary 分析器 (靜態程式碼分析)
+    - name: 舊版分析
       items:
         - name: 總覽
           displayName: 'static code analysis, binary analysis'
           href: static-code-analysis-for-managed-code-overview.md
-        - name: 靜態程式碼分析逐步解說
+        - name: 舊版分析逐步解說
           href: walkthrough-analyzing-managed-code-for-code-defects.md
         - name: 移轉
           href: fxcop-analyzers.yml
@@ -30,19 +30,19 @@
           href: how-to-run-code-analysis-manually-for-managed-code.md
         - name: Configuration
           items:
-            - name: 為二進位分析器設定程式碼分析
+            - name: 設定舊版分析
               href: how-to-configure-code-analysis-for-a-managed-code-project.md
-            - name: 啟用自動程式碼分析
+            - name: 啟用自動舊版程式碼分析
               href: how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md
-            - name: 自訂程式碼分析字典
+            - name: 自訂舊版程式碼分析字典
               href: how-to-customize-the-code-analysis-dictionary.md
         - name: 隱藏
           items:
-            - name: 隱藏所產生程式碼的靜態程式碼分析警告
+            - name: 隱藏所產生之程式碼的舊版分析警告
               href: how-to-suppress-code-analysis-warnings-for-generated-code.md
-        - name: 程式碼分析應用程式錯誤
+        - name: 舊版分析應用程式錯誤
           items:
-            - name: 程式碼分析原則錯誤
+            - name: 舊版分析原則錯誤
               href: code-analysis-policy-errors.md
             - name: 總覽
               href: code-analysis-application-errors.md
@@ -104,7 +104,7 @@
           items:
             - name: 如何建立或更新簽入原則
               href: how-to-create-or-update-standard-code-analysis-check-in-policies.md
-            - name: 實作程式碼分析簽入原則
+            - name: 實作舊版分析簽入原則
               href: implementing-custom-code-analysis-check-in-policies-for-managed-code.md
             - name: 強制執行容易維護的程式碼
               href: how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy.md
@@ -127,7 +127,7 @@
               href: fxcop-analyzer-options.md
         - name: 常見問題集
           href: fxcop-analyzers-faq.md
-    - name: 從靜態分析移轉到 FxCop 分析器
+    - name: 從舊版分析移轉到 FxCop 分析器
       items:
         - name: 總覽
           href: fxcop-analyzers.yml
@@ -162,31 +162,31 @@
           items:
             - name: 總覽
               href: rule-set-reference.md
-            - name: 所有規則規則集
+            - name: 所有規則
               href: all-rules-rule-set.md
-            - name: 適用於 Managed 程式碼的基本正確性規則規則集
+            - name: 基本正確性規則
               href: basic-correctness-rules-rule-set-for-managed-code.md
-            - name: 適用於 Managed 程式碼的基本設計方針規則規則集
+            - name: 基本設計指導方針規則
               href: basic-design-guideline-rules-rule-set-for-managed-code.md
-            - name: 適用於 Managed 程式碼的擴充正確性規則規則集
+            - name: 延伸正確性規則
               href: extended-correctness-rules-rule-set-for-managed-code.md
-            - name: 適用於 Managed 程式碼的擴充設計方針規則規則集
+            - name: 延伸設計指導方針規則
               href: extended-design-guidelines-rules-rule-set-for-managed-code.md
-            - name: 適用於 Managed 程式碼的全球化規則規則集
+            - name: 全球化規則
               href: globalization-rules-rule-set-for-managed-code.md
-            - name: 適用於受控碼的受控最小規則規則集
+            - name: 受控最小規則
               href: managed-minimum-rules-rule-set-for-managed-code.md
-            - name: 適用於 Managed 程式碼的 Managed 建議規則規則集
+            - name: 受控建議規則
               href: managed-recommended-rules-rule-set-for-managed-code.md
-            - name: 混合最小規則規則集
+            - name: 混合最小規則
               href: mixed-minimum-rules-rule-set.md
-            - name: 混合建議規則規則集
+            - name: 混合建議規則
               href: mixed-recommended-rules-rule-set.md
-            - name: 原生最小規則規則集
+            - name: 原生最小規則
               href: native-minimum-rules-rule-set.md
-            - name: 原生建議規則規則集
+            - name: 原生建議規則
               href: native-recommended-rules-rule-set.md
-            - name: 適用於 Managed 程式碼的安全性規則規則集
+            - name: 安全性規則
               href: security-rules-rule-set-for-managed-code.md
         - name: 隱藏警告
           href: in-source-suppression-overview.md
@@ -658,6 +658,16 @@
                   href: ca2321.md
                 - name: CA2322：還原序列化之前，請確定不會使用 SimpleTypeResolver 來將 JavaScriptSerializer 初始化
                   href: ca2322.md
+                - name: 'CA2326:請勿使用「無」以外的 TypeNameHandling 值'
+                  href: ca2326.md
+                - name: 'CA2327:請勿使用不安全的 JsonSerializerSettings'
+                  href: ca2327.md
+                - name: 'CA2328:確定 JsonSerializerSettings 安全'
+                  href: ca2328.md
+                - name: 'CA2329:請勿使用不安全的組態來還原序列化 JsonSerializer'
+                  href: ca2329.md
+                - name: 'CA2330:在還原序列化時，請確認 JsonSerializer 有安全的組態'
+                  href: ca2330.md
                 - name: CA3001：檢閱程式碼是否有 SQL 插入式攻擊弱點
                   href: ca3001-review-code-for-sql-injection-vulnerabilities.md
                 - name: CA3002：檢閱程式碼是否有 XSS 弱點
@@ -698,6 +708,10 @@
                   href: ca5378.md
                 - name: 'CA5386:避免將 SecurityProtocolType 值寫入程式碼'
                   href: ca5386.md
+                - name: CA5397：請勿使用已過時的 SslProtocols 通訊協定
+                  href: ca5397.md
+                - name: CA5398：避免以硬式編碼方式寫入 SslProtocols 值
+                  href: ca5398.md
             - name: 用法警告
               items:
                 - name: 總覽
@@ -791,7 +805,7 @@
                   href: ca2243-attribute-string-literals-should-parse-correctly.md
             - name: 自動功能暫停
               href: automatic-feature-suspension.md
-- name: C/C++ 的程式碼分析
+- name: 分析 C/C++ 程式碼
   items:
     - name: 總覽
       displayName: C++ code analysis
@@ -956,6 +970,8 @@
           href: C26476.md
         - name: C26477
           href: C26477.md
+        - name: C26478
+          href: c26478.md
         - name: C26481
           href: C26481.md
         - name: C26482
@@ -990,6 +1006,10 @@
           href: C26497.md
         - name: C26498
           href: C26498.md
+        - name: C26812
+          href: c26812.md
+        - name: C26814
+          href: c26814.md
     - name: C/C++ 警告
       items:
         - name: 總覽

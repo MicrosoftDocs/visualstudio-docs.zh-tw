@@ -1,6 +1,6 @@
 ---
 title: EditorConfig 的 .NET 語言慣例
-ms.date: 06/17/2019
+ms.date: 07/17/2019
 ms.topic: reference
 dev_langs:
 - CSharp
@@ -13,23 +13,22 @@ manager: jillfra
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 0ddb6173095b8d4fd552e108f458a271321511c7
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 2231d3637b4a016d1da783d65d4237b9f5d6bab2
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67823309"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69551413"
 ---
 # <a name="language-conventions"></a>語言慣例
 
-Visual Studio 中 EditorConfig 的語言慣例分為兩類：
-
-- [.NET 程式碼樣式設定](#net-code-style-settings)
-
-- [C# 程式碼樣式設定](#c-code-style-settings)
+Visual Studio 中 EditorConfig 的語言慣例分為兩類：適用於 Visual Basic 和 C# 的語言慣例，以及 C# 特定的語言慣例。 語言慣例會影響程式設計語言各個層面的使用方式，例如修飾詞和括弧。
 
 > [!TIP]
-> 若要查看慣用程式設計語言的程式碼範例，請使用瀏覽器視窗右上角的語言選擇器選擇它。
+> - 請使用**本文內容**連結以跳至頁面的不同章節。
+> - 若要查看慣用程式設計語言的程式碼範例，請使用瀏覽器視窗右上角的語言選擇器選擇它。
+>
+>   ![程式碼語言選擇器控制項](media/code-language-picker.png)
 
 ## <a name="rule-format"></a>規則格式
 
@@ -39,11 +38,11 @@ Visual Studio 中 EditorConfig 的語言慣例分為兩類：
 
 您可以針對每個語言慣例，指定一個定義是否有偏好的樣式和偏好樣式使用時機的值。 許多規則接受 `true` 值 (喜歡此樣式) 或 `false` (不喜歡此樣式)；其他則接受像 `when_on_single_line` 或 `never` 這樣的值。 第二個部分、指定 [嚴重性]  的規則。
 
-### <a name="severity"></a>嚴重性
+### <a name="severity"></a>Severity
 
 語言慣例嚴重性可指定要強制執行該樣式的層級。 下表列出可能的嚴重性值及其效果：
 
-嚴重性 | 作用
+Severity | 作用
 :------- | ------
 `none` | 違反這項規則時，不向使用者顯示任何內容。 但程式碼產生功能會以此樣式產生程式碼。 嚴重性為 `none` 的規則永遠不會出現在 [快速動作及重構]  功能表中。 在大部分情況下，這會視為「已停用」或「已忽略」。
 `silent` (和 Visual Studio 2017 15.8 版和更新版本中的 `refactoring`) | 違反這項規則時，不向使用者顯示任何內容。 但程式碼產生功能會以此樣式產生程式碼。 `silent` 嚴重性的規則會影響清理，也會顯示在 [快速動作與重構]  功能表中。
@@ -83,6 +82,7 @@ Visual Studio 中 EditorConfig 的語言慣例分為兩類：
   - dotnet\_style\_prefer\_is\_null\_check\_over\_reference\_equality\_method
   - dotnet\_style\_prefer\_conditional\_expression\_over\_assignment
   - dotnet\_style\_prefer\_conditional\_expression\_over\_return
+  - dotnet\_style\_prefer\_compound\_assignment
 - ["Null" 檢查喜好設定](#null-checking-preferences)
   - dotnet\_style\_coalesce_expression
   - dotnet\_style\_null_propagation
@@ -102,7 +102,7 @@ dotnet_style_qualification_for_method = false:suggestion
 dotnet_style_qualification_for_event = false:suggestion
 ```
 
-#### <a name="dotnetstylequalificationforfield"></a>dotnet\_style\_qualification\_for_field
+#### <a name="dotnet_style_qualification_for_field"></a>dotnet\_style\_qualification\_for_field
 
 |||
 |-|-|
@@ -130,7 +130,7 @@ Me.capacity = 0
 capacity = 0
 ```
 
-#### <a name="dotnetstylequalificationforproperty"></a>dotnet\_style\_qualification\_for_property
+#### <a name="dotnet_style_qualification_for_property"></a>dotnet\_style\_qualification\_for_property
 
 |||
 |-|-|
@@ -158,7 +158,7 @@ Me.ID = 0
 ID = 0
 ```
 
-#### <a name="dotnetstylequalificationformethod"></a>dotnet\_style\_qualification\_for_method
+#### <a name="dotnet_style_qualification_for_method"></a>dotnet\_style\_qualification\_for_method
 
 |||
 |-|-|
@@ -186,7 +186,7 @@ Me.Display()
 Display()
 ```
 
-#### <a name="dotnetstylequalificationforevent"></a>dotnet\_style\_qualification\_for_event
+#### <a name="dotnet_style_qualification_for_event"></a>dotnet\_style\_qualification\_for_event
 
 |||
 |-|-|
@@ -227,7 +227,7 @@ dotnet_style_predefined_type_for_locals_parameters_members = true:suggestion
 dotnet_style_predefined_type_for_member_access = true:suggestion
 ```
 
-#### <a name="dotnetstylepredefinedtypeforlocalsparametersmembers"></a>dotnet\_style\_predefined\_type\_for\_locals\_parameters_members
+#### <a name="dotnet_style_predefined_type_for_locals_parameters_members"></a>dotnet\_style\_predefined\_type\_for\_locals\_parameters_members
 
 |||
 |-|-|
@@ -255,7 +255,7 @@ Private _member As Integer
 Private _member As Int32
 ```
 
-#### <a name="dotnetstylepredefinedtypeformemberaccess"></a>dotnet\_style\_predefined\_type\_for\_member_access
+#### <a name="dotnet_style_predefined_type_for_member_access"></a>dotnet\_style\_predefined\_type\_for\_member_access
 
 |||
 |-|-|
@@ -304,7 +304,7 @@ csharp_preferred_modifier_order = public,private,protected,internal,static,exter
 visual_basic_preferred_modifier_order = Partial,Default,Private,Protected,Public,Friend,NotOverridable,Overridable,MustOverride,Overloads,Overrides,MustInherit,NotInheritable,Static,Shared,Shadows,ReadOnly,WriteOnly,Dim,Const,WithEvents,Widening,Narrowing,Custom,Async:suggestion
 ```
 
-#### <a name="dotnetstylerequireaccessibilitymodifiers"></a>dotnet\_style\_require\_accessibility_modifiers
+#### <a name="dotnet_style_require_accessibility_modifiers"></a>dotnet\_style\_require\_accessibility_modifiers
 
 |||
 |-|-|
@@ -332,7 +332,7 @@ class MyClass
 }
 ```
 
-#### <a name="csharppreferredmodifierorder"></a>csharp_preferred_modifier_order
+#### <a name="csharp_preferred_modifier_order"></a>csharp_preferred_modifier_order
 
 |||
 |-|-|
@@ -356,7 +356,7 @@ class MyClass
 }
 ```
 
-#### <a name="visualbasicpreferredmodifierorder"></a>visual_basic_preferred_modifier_order
+#### <a name="visual_basic_preferred_modifier_order"></a>visual_basic_preferred_modifier_order
 
 |||
 |-|-|
@@ -379,7 +379,7 @@ Public Class MyClass
 End Class
 ```
 
-#### <a name="dotnetstylereadonlyfield"></a>dotnet_style_readonly_field
+#### <a name="dotnet_style_readonly_field"></a>dotnet_style_readonly_field
 
 |||
 |-|-|
@@ -422,7 +422,7 @@ dotnet_style_parentheses_in_other_binary_operators = always_for_clarity:silent
 dotnet_style_parentheses_in_other_operators = never_if_unnecessary:silent
 ```
 
-#### <a name="dotnetstyleparenthesesinarithmeticbinaryoperators"></a>dotnet\_style\_parentheses\_in\_arithmetic\_binary_operators
+#### <a name="dotnet_style_parentheses_in_arithmetic_binary_operators"></a>dotnet\_style\_parentheses\_in\_arithmetic\_binary_operators
 
 |||
 |-|-|
@@ -451,7 +451,7 @@ Dim v = a + (b * c)
 Dim v = a + b * c
 ```
 
-#### <a name="dotnetstyleparenthesesinrelationalbinaryoperators"></a>dotnet\_style\_parentheses\_in\_relational\_binary_operators
+#### <a name="dotnet_style_parentheses_in_relational_binary_operators"></a>dotnet\_style\_parentheses\_in\_relational\_binary_operators
 
 |||
 |-|-|
@@ -480,7 +480,7 @@ Dim v = (a < b) = (c > d)
 Dim v = a < b = c > d
 ```
 
-#### <a name="dotnetstyleparenthesesinotherbinaryoperators"></a>dotnet\_style\_parentheses\_in\_other\_binary_operators
+#### <a name="dotnet_style_parentheses_in_other_binary_operators"></a>dotnet\_style\_parentheses\_in\_other\_binary_operators
 
 |||
 |-|-|
@@ -509,7 +509,7 @@ Dim v = a OrElse (b AndAlso c)
 Dim v = a OrElse b AndAlso c
 ```
 
-#### <a name="dotnetstyleparenthesesinotheroperators"></a>dotnet\_style\_parentheses\_in\_other_operators
+#### <a name="dotnet_style_parentheses_in_other_operators"></a>dotnet\_style\_parentheses\_in\_other_operators
 
 |||
 |-|-|
@@ -555,9 +555,10 @@ dotnet_style_prefer_inferred_anonymous_type_member_names = true:suggestion
 dotnet_style_prefer_auto_properties = true:silent
 dotnet_style_prefer_conditional_expression_over_assignment = true:suggestion
 dotnet_style_prefer_conditional_expression_over_return = true:suggestion
+dotnet_style_prefer_compound_assignment = true:suggestion
 ```
 
-#### <a name="dotnetstyleobjectinitializer"></a>dotnet\_style\_object_initializer
+#### <a name="dotnet_style_object_initializer"></a>dotnet\_style\_object_initializer
 
 |||
 |-|-|
@@ -587,7 +588,7 @@ Dim c = New Customer()
 c.Age = 21
 ```
 
-#### <a name="dotnetstylecollectioninitializer"></a>dotnet\_style\_collection_initializer
+#### <a name="dotnet_style_collection_initializer"></a>dotnet\_style\_collection_initializer
 
 |||
 |-|-|
@@ -621,7 +622,7 @@ list.Add(2)
 list.Add(3)
 ```
 
-#### <a name="dotnetstyleexplicittuplenames"></a>dotnet\_style\_explicit\_tuple_names
+#### <a name="dotnet_style_explicit_tuple_names"></a>dotnet\_style\_explicit\_tuple_names
 
 |||
 |-|-|
@@ -653,7 +654,7 @@ Dim customer As (name As String, age As Integer) = GetCustomer()
 Dim name = customer.Item1
 ```
 
-#### <a name="dotnetstylepreferinferredtuplenames"></a>dotnet\_style\_prefer\_inferred\_tuple_names
+#### <a name="dotnet_style_prefer_inferred_tuple_names"></a>dotnet\_style\_prefer\_inferred\_tuple_names
 
 |||
 |-|-|
@@ -682,7 +683,7 @@ Dim tuple = (name, age)
 Dim tuple = (name:=name, age:=age)
 ```
 
-#### <a name="dotnetstylepreferinferredanonymoustypemembernames"></a>dotnet\_style\_prefer\_inferred\_anonymous\_type\_member_names
+#### <a name="dotnet_style_prefer_inferred_anonymous_type_member_names"></a>dotnet\_style\_prefer\_inferred\_anonymous\_type\_member_names
 
 |||
 |-|-|
@@ -711,7 +712,7 @@ Dim anon = New With {name, age}
 Dim anon = New With {.name = name, .age = age}
 ```
 
-#### <a name="dotnetstylepreferautoproperties"></a>dotnet\_style\_prefer\_auto\_properties
+#### <a name="dotnet_style_prefer_auto_properties"></a>dotnet\_style\_prefer\_auto\_properties
 
 |||
 |-|-|
@@ -754,7 +755,7 @@ Public ReadOnly Property Age As Integer
 End Property
 ```
 
-#### <a name="dotnetstylepreferisnullcheckoverreferenceequalitymethod"></a>dotnet\_style\_prefer\_is\_null\_check\_over\_reference\_equality\_method
+#### <a name="dotnet_style_prefer_is_null_check_over_reference_equality_method"></a>dotnet\_style\_prefer\_is\_null\_check\_over\_reference\_equality\_method
 
 |||
 |-|-|
@@ -789,7 +790,7 @@ If Object.ReferenceEquals(value, Nothing)
 End If
 ```
 
-#### <a name="dotnetstylepreferconditionalexpressionoverassignment"></a>dotnet\_style\_prefer\_conditional\_expression\_over_assignment
+#### <a name="dotnet_style_prefer_conditional_expression_over_assignment"></a>dotnet\_style\_prefer\_conditional\_expression\_over_assignment
 
 |||
 |-|-|
@@ -831,7 +832,7 @@ Else
 End If
 ```
 
-#### <a name="dotnetstylepreferconditionalexpressionoverreturn"></a>dotnet\_style\_prefer\_conditional\_expression\_over_return
+#### <a name="dotnet_style_prefer_conditional_expression_over_return"></a>dotnet\_style\_prefer\_conditional\_expression\_over_return
 
 |||
 |-|-|
@@ -871,6 +872,34 @@ Else
 End If
 ```
 
+#### <a name="dotnet_style_prefer_compound_assignment"></a>dotnet\_style\_prefer\_compound\_assignment
+
+|||
+|-|-|
+| **規則名稱** | dotnet_style_prefer_compound_assignment |
+| **規則識別碼** | IDE0054 |
+| **適用語言** | C# 和 Visual Basic |
+| **值** | `true` - 偏好[複合指派](/dotnet/csharp/language-reference/operators/assignment-operator#compound-assignment)運算式<br /><br />`false`不偏好複合指派運算式 |
+| **Visul Studio 預設值** | `true:suggestion` |
+
+程式碼範例：
+
+```csharp
+// dotnet_style_prefer_compound_assignment = true
+x += 1;
+
+// dotnet_style_prefer_compound_assignment = false
+x = x + 1;
+```
+
+```vb
+' dotnet_style_prefer_compound_assignment = true
+x += 1
+
+' dotnet_style_prefer_compound_assignment = false
+x = x + 1
+```
+
 ### <a name="null-checking-preferences"></a>Null 檢查喜好設定
 
 本節中的樣式規則涉及 null 檢查喜好設定。
@@ -884,7 +913,7 @@ dotnet_style_coalesce_expression = true:suggestion
 dotnet_style_null_propagation = true:suggestion
 ```
 
-#### <a name="dotnetstylecoalesceexpression"></a>dotnet\_style\_coalesce_expression
+#### <a name="dotnet_style_coalesce_expression"></a>dotnet\_style\_coalesce_expression
 
 |||
 |-|-|
@@ -914,7 +943,7 @@ Dim v = If(x Is Nothing, y, x) ' or
 Dim v = If(x IsNot Nothing, x, y)
 ```
 
-#### <a name="dotnetstylenullpropagation"></a>dotnet\_style\_null_propagation
+#### <a name="dotnet_style_null_propagation"></a>dotnet\_style\_null_propagation
 
 |||
 |-|-|
@@ -944,6 +973,57 @@ Dim v = If(o Is Nothing, Nothing, o.ToString()) ' or
 Dim v = If(o IsNot Nothing, o.ToString(), Nothing)
 ```
 
+## <a name="net-code-quality-settings"></a>.NET 程式碼品質設定
+
+本節中的品質規則適用於 C# 和 Visual Basic 程式碼。 它們可用來設定 Visual Studio 整合式開發環境 (IDE) 中內建的程式碼分析器。 如需使用 EditorConfig 檔設定 FxCop 分析器的資訊，請參閱[設定 FxCop 分析器](../code-quality/configure-fxcop-analyzers.md)。
+
+- [參數喜好設定](#parameter-preferences)
+  - dotnet\_code\_quality\_unused\_parameters
+
+### <a name="parameter-preferences"></a>參數喜好設定
+
+本節中的品質規則涉及方法參數。
+
+這些規則可能會出現在 .editorconfig  檔案中，如下所示：
+
+```ini
+# CSharp and Visual Basic code quality settings:
+[*.{cs,vb}]
+dotnet_code_quality_unused_parameters = all:suggestion
+```
+
+#### <a name="dotnet_code_quality_unused_parameters"></a>dotnet\_code\_quality\_unused\_parameters
+
+|||
+|-|-|
+| **規則名稱** | dotnet_code_quality_unused_parameters |
+| **規則識別碼** | IDE0060 |
+| **適用語言** | C# 和 Visual Basic |
+| **值** | `all` - 將具有包含未使用參數的協助工具方法加上旗標<br /><br />`non_public` - 僅將包含未使用參數的非公用方法加上旗標 |
+| **Visul Studio 預設值** | `all:suggestion` |
+
+程式碼範例：
+
+```csharp
+// dotnet_code_quality_unused_parameters = all:suggestion
+public int GetNum() { return 1; }
+
+// dotnet_code_quality_unused_parameters = non_public:suggestion
+public int GetNum(int arg1) { return 1; }
+```
+
+```vb
+' dotnet_code_quality_unused_parameters = all:suggestion
+Public Function GetNum()
+    Return 1
+End Function
+
+' dotnet_code_quality_unused_parameters = non_public:suggestion
+Public Function GetNum(arg1 As Integer)
+    Return 1
+End Function
+```
+
 ## <a name="c-code-style-settings"></a>C# 程式碼樣式設定
 
 本節中的樣式規則只適用於 C#。
@@ -959,20 +1039,33 @@ Dim v = If(o IsNot Nothing, o.ToString(), Nothing)
   - csharp\_style\_expression\_bodied_properties
   - csharp\_style\_expression\_bodied_indexers
   - csharp\_style\_expression\_bodied_accessors
+  - csharp\_style\_expression\_bodied_lambdas
+  - csharp\_style\_expression\_bodied\_local_functions
 - [模式比對](#pattern-matching)
   - csharp\_style\_pattern\_matching\_over\_is\_with\_cast_check
   - csharp\_style\_pattern\_matching\_over\_as\_with\_null_check
 - [內嵌變數宣告](#inlined-variable-declarations)
   - csharp\_style\_inlined\_variable_declaration
-- [運算式層級喜好設定](#expression-level-preferences)
+- [運算式層級喜好設定](#c-expression-level-preferences)
   - csharp\_prefer\_simple\_default_expression
-  - csharp\_style\_deconstructed\_variable_declaration
-  - csharp\_style\_pattern\_local\_over\_anonymous_function
-- ["Null" 檢查喜好設定](#null-checking-preferences)
+- ["Null" 檢查喜好設定](#c-null-checking-preferences)
   - csharp\_style\_throw_expression
   - csharp\_style\_conditional\_delegate_call
 - [程式碼區塊喜好設定](#code-block-preferences)
   - csharp\_prefer_braces
+- [未使用的值喜好設定](#unused-value-preferences)
+  - csharp\_style\_unused\_value\_expression\_statement_preference
+  - csharp\_style\_unused\_value\_assignment_preference
+- [索引和範圍喜好設定](#index-and-range-preferences)
+  - csharp\_style\_prefer\_index_operator
+  - csharp\_style\_prefer\_range_operator
+- [其他喜好設定](#miscellaneous-preferences)
+  - csharp\_style\_deconstructed\_variable_declaration
+  - csharp\_style\_pattern\_local\_over\_anonymous_function
+  - csharp\_using\_directive\_placement
+  - csharp\_prefer\_static\_local_function
+  - csharp\_prefer\_simple\_using_statement
+  - csharp\_style\_prefer\_switch_expression
 
 ### <a name="implicit-and-explicit-types"></a>隱含和明確類型
 
@@ -988,7 +1081,7 @@ csharp_style_var_when_type_is_apparent = true:suggestion
 csharp_style_var_elsewhere = true:suggestion
 ```
 
-#### <a name="csharpstylevarforbuiltintypes"></a>csharp\_style\_var\_for\_built\_in_types
+#### <a name="csharp_style_var_for_built_in_types"></a>csharp\_style\_var\_for\_built\_in_types
 
 |||
 |-|-|
@@ -1008,7 +1101,7 @@ var x = 5;
 int x = 5;
 ```
 
-#### <a name="csharpstylevarwhentypeisapparent"></a>csharp\_style\_var\_when\_type\_is_apparent
+#### <a name="csharp_style_var_when_type_is_apparent"></a>csharp\_style\_var\_when\_type\_is_apparent
 
 |||
 |-|-|
@@ -1028,7 +1121,7 @@ var obj = new Customer();
 Customer obj = new Customer();
 ```
 
-#### <a name="csharpstylevarelsewhere"></a>csharp\_style\_var_elsewhere
+#### <a name="csharp_style_var_elsewhere"></a>csharp\_style\_var_elsewhere
 
 |||
 |-|-|
@@ -1063,16 +1156,18 @@ csharp_style_expression_bodied_operators = false:silent
 csharp_style_expression_bodied_properties = true:suggestion
 csharp_style_expression_bodied_indexers = true:suggestion
 csharp_style_expression_bodied_accessors = true:suggestion
+csharp_style_expression_bodied_lambdas = true:silent
+csharp_style_expression_bodied_local_functions = false:silent
 ```
 
-#### <a name="csharpstyleexpressionbodiedmethods"></a>csharp\_style\_expression\_bodied_methods
+#### <a name="csharp_style_expression_bodied_methods"></a>csharp\_style\_expression\_bodied_methods
 
 |||
 |-|-|
 | **規則名稱** | csharp_style_expression_bodied_methods |
 | **規則識別碼** | IDE0022 |
 | **適用語言** | C# 6.0+  |
-| **值** | `true` - 偏好針對方法使用運算式主體的成員<br /><br />`when_on_single_line` - 當所有方法都在同一行時，偏好針對方法使用運算式主體的成員<br /><br />`false` - 偏好針對方法使用區塊主體 |
+| **值** | `true` - 偏好針對方法使用運算式主體<br /><br />`when_on_single_line` - 當所有方法都在同一行時，偏好針對方法使用運算式主體<br /><br />`false` - 偏好針對方法使用區塊主體 |
 | **Visul Studio 預設值** | `false:silent` |
 
 程式碼範例：
@@ -1085,14 +1180,14 @@ public int GetAge() => this.Age;
 public int GetAge() { return this.Age; }
 ```
 
-#### <a name="csharpstyleexpressionbodiedconstructors"></a>csharp\_style\_expression\_bodied_constructors
+#### <a name="csharp_style_expression_bodied_constructors"></a>csharp\_style\_expression\_bodied_constructors
 
 |||
 |-|-|
 | **規則名稱** | csharp_style_expression_bodied_constructors |
 | **規則識別碼** | IDE0021 |
-| **適用語言** | C# 7.0+  |
-| **值** | `true` - 偏好針對建構函式使用運算式主體的成員<br /><br />`when_on_single_line` - 當所有建構函式都在同一行時，偏好針對建構函式使用運算式主體的成員<br /><br />`false` - 偏好針對建構函式使用區塊主體 |
+| **適用語言** | C# 7.0+ |
+| **值** | `true` - 偏好針對建構函式使用運算式主體<br /><br />`when_on_single_line` - 當所有建構函式都在同一行時，偏好針對建構函式使用運算式主體<br /><br />`false` - 偏好針對建構函式使用區塊主體 |
 | **Visul Studio 預設值** | `false:silent` |
 
 程式碼範例：
@@ -1105,14 +1200,14 @@ public Customer(int age) => Age = age;
 public Customer(int age) { Age = age; }
 ```
 
-#### <a name="csharpstyleexpressionbodiedoperators"></a>csharp\_style\_expression\_bodied_operators
+#### <a name="csharp_style_expression_bodied_operators"></a>csharp\_style\_expression\_bodied_operators
 
 |||
 |-|-|
 | **規則名稱** | csharp_style_expression_bodied_operators |
 | **規則識別碼** | IDE0023 和 IDE0024 |
-| **適用語言** | C# 7.0+  |
-| **值** | `true` - 偏好針對運算子使用運算式主體的成員<br /><br />`when_on_single_line` - 當所有運算子都在同一行時，偏好針對運算子使用運算式主體的成員<br /><br />`false` - 偏好針對運算子使用區塊主體 |
+| **適用語言** | C# 7.0+ |
+| **值** | `true` - 偏好針對運算子使用運算式主體<br /><br />`when_on_single_line` - 當所有運算子都在同一行時，偏好針對運算子使用運算式主體<br /><br />`false` - 偏好針對運算子使用區塊主體 |
 | **Visul Studio 預設值** | `false:silent` |
 
 程式碼範例：
@@ -1127,14 +1222,14 @@ public static ComplexNumber operator + (ComplexNumber c1, ComplexNumber c2)
 { return new ComplexNumber(c1.Real + c2.Real, c1.Imaginary + c2.Imaginary); }
 ```
 
-#### <a name="csharpstyleexpressionbodiedproperties"></a>csharp\_style\_expression\_bodied_properties
+#### <a name="csharp_style_expression_bodied_properties"></a>csharp\_style\_expression\_bodied_properties
 
 |||
 |-|-|
 | **規則名稱** | csharp_style_expression_bodied_properties |
 | **規則識別碼** | IDE0025 |
-| **適用語言** | C# 7.0+  |
-| **值** | `true` - 偏好針對屬性使用運算式主體的成員<br /><br />`when_on_single_line` - 當所有屬性都在同一行時，偏好針對屬性使用運算式主體的成員<br /><br />`false` - 偏好針對屬性使用區塊主體 |
+| **適用語言** | C# 7.0+ |
+| **值** | `true` - 偏好針對屬性使用運算式主體<br /><br />`when_on_single_line` - 當所有屬性都在同一行時，偏好針對屬性使用運算式主體<br /><br />`false` - 偏好針對屬性使用區塊主體 |
 | **Visul Studio 預設值** | `true:silent` |
 
 程式碼範例：
@@ -1147,14 +1242,14 @@ public int Age => _age;
 public int Age { get { return _age; }}
 ```
 
-#### <a name="csharpstyleexpressionbodiedindexers"></a>csharp\_style\_expression\_bodied_indexers
+#### <a name="csharp_style_expression_bodied_indexers"></a>csharp\_style\_expression\_bodied_indexers
 
 |||
 |-|-|
 | **規則名稱** | csharp_style_expression_bodied_indexers |
 | **規則識別碼** | IDE0026 |
-| **適用語言** | C# 7.0+  |
-| **值** | `true` - 偏好針對索引子使用運算式主體的成員<br /><br />`when_on_single_line` - 當所有索引子都在同一行時，偏好針對索引子使用運算式主體的成員<br /><br />`false` - 偏好針對索引子使用區塊主體 |
+| **適用語言** | C# 7.0+ |
+| **值** | `true` - 偏好針對索引子使用運算式主體<br /><br />`when_on_single_line` - 當所有索引子都在同一行時，偏好針對索引子使用運算式主體<br /><br />`false` - 偏好針對索引子使用區塊主體 |
 | **Visul Studio 預設值** | `true:silent` |
 
 程式碼範例：
@@ -1167,14 +1262,14 @@ public T this[int i] => _values[i];
 public T this[int i] { get { return _values[i]; } }
 ```
 
-#### <a name="csharpstyleexpressionbodiedaccessors"></a>csharp\_style\_expression\_bodied_accessors
+#### <a name="csharp_style_expression_bodied_accessors"></a>csharp\_style\_expression\_bodied_accessors
 
 |||
 |-|-|
 | **規則名稱** | csharp_style_expression_bodied_accessors |
 | **規則識別碼** | IDE0027 |
-| **適用語言** | C# 7.0+  |
-| **值** | `true` - 偏好針對存取子使用運算式主體的成員<br /><br />`when_on_single_line` - 當所有存取子都在同一行時，偏好針對存取子使用運算式主體的成員<br /><br />`false` - 偏好針對存取子使用區塊主體 |
+| **適用語言** | C# 7.0+ |
+| **值** | `true` - 偏好針對存取子使用運算式主體<br /><br />`when_on_single_line` - 當所有存取子都在同一行時，偏好針對存取子使用運算式主體<br /><br />`false` - 偏好針對存取子使用區塊主體 |
 | **Visul Studio 預設值** | `true:silent` |
 
 程式碼範例：
@@ -1185,6 +1280,58 @@ public int Age { get => _age; set => _age = value; }
 
 // csharp_style_expression_bodied_accessors = false
 public int Age { get { return _age; } set { _age = value; } }
+```
+
+#### <a name="csharp_style_expression_bodied_lambdas"></a>csharp\_style\_expression\_bodied_lambdas
+
+|||
+|-|-|
+| **規則名稱** | csharp_style_expression_bodied_lambdas |
+| **規則識別碼** | IDE0053 |
+| **值** | `true` - 偏好針對 Lambda 使用運算式主體<br /><br />`when_on_single_line` - 當所有 Lambda 都在同一行時，偏好針對 Lambda 使用運算式主體<br /><br />`false` - 偏好針對 Lambda 使用區塊主體 |
+| **Visul Studio 預設值** | `true:silent` |
+
+程式碼範例：
+
+```csharp
+// csharp_style_expression_bodied_lambdas = true
+Func<int, int> square = x => x * x;
+
+// csharp_style_expression_bodied_lambdas = false
+Func<int, int> square = x => { return x * x; };
+```
+
+#### <a name="csharp_style_expression_bodied_local_functions"></a>csharp\_style\_expression\_bodied\_local_functions
+
+從 C# 7.0 開始，C# 支援[區域函式](/dotnet/csharp/programming-guide/classes-and-structs/local-functions)。 區域函式是另一個成員中巢狀型別的私用方法。
+
+|||
+|-|-|
+| **規則名稱** | csharp_style_expression_bodied_local_functions |
+| **規則識別碼** | IDE0061 |
+| **適用語言** | C# 7.0+ |
+| **值** | `true` - 偏好針對區域函式使用運算式主體<br /><br />`when_on_single_line` - 當所有區域函式都在同一行時，偏好針對區域函式使用運算式主體<br /><br />`false` - 偏好針對區域函式使用區塊主體 |
+| **Visul Studio 預設值** | `false:silent` |
+
+程式碼範例：
+
+```csharp
+// csharp_style_expression_bodied_local_functions = true
+void M()
+{
+    Hello();
+    void Hello() => Console.WriteLine("Hello");
+}
+
+// csharp_style_expression_bodied_local_functions = false
+void M()
+{
+    Hello();
+    void Hello()
+    {
+        Console.WriteLine("Hello");
+    }
+}
 ```
 
 ### <a name="pattern-matching"></a>模式比對
@@ -1200,13 +1347,13 @@ csharp_style_pattern_matching_over_is_with_cast_check = true:suggestion
 csharp_style_pattern_matching_over_as_with_null_check = true:suggestion
 ```
 
-#### <a name="csharpstylepatternmatchingoveriswithcastcheck"></a>csharp\_style\_pattern\_matching\_over\_is\_with\_cast_check
+#### <a name="csharp_style_pattern_matching_over_is_with_cast_check"></a>csharp\_style\_pattern\_matching\_over\_is\_with\_cast_check
 
 |||
 |-|-|
 | **規則名稱** | csharp_style_pattern_matching_over_is_with_cast_check |
 | **規則識別碼** | IDE0020 |
-| **適用語言** | C# 7.0+  |
+| **適用語言** | C# 7.0+ |
 | **值** | `true` - 偏好模式比對，而非具有類型轉換的 `is` 運算式<br /><br />`false` - 偏好具有類型轉換的 `is` 運算式，而非模式比對 |
 | **Visul Studio 預設值** | `true:suggestion` |
 
@@ -1220,13 +1367,13 @@ if (o is int i) {...}
 if (o is int) {var i = (int)o; ... }
 ```
 
-#### <a name="csharpstylepatternmatchingoveraswithnullcheck"></a>csharp\_style\_pattern\_matching\_over\_as\_with\_null_check
+#### <a name="csharp_style_pattern_matching_over_as_with_null_check"></a>csharp\_style\_pattern\_matching\_over\_as\_with\_null_check
 
 |||
 |-|-|
 | **規則名稱** | csharp_style_pattern_matching_over_as_with_null_check |
 | **規則識別碼** | IDE0019 |
-| **適用語言** | C# 7.0+  |
+| **適用語言** | C# 7.0+ |
 | **值** | `true` - 偏好使用模式比對，而非具有 Null 檢查的 `as` 運算式，以判斷是否為特定類型<br /><br />`false` - 偏好使用具有 Null 檢查的 `as` 運算式，而非模式比對，以判斷是否為特定類型 |
 | **Visul Studio 預設值** | `true:suggestion` |
 
@@ -1245,13 +1392,13 @@ if (s != null) {...}
 
 這個樣式規則考量 `out` 變數是否宣告內嵌。 從 C# 7 開始，您可以[在方法呼叫的引數清單中宣告 out 變數](/dotnet/csharp/language-reference/keywords/out-parameter-modifier#calling-a-method-with-an-out-argument)，而非在其他的變數中宣告。
 
-#### <a name="csharpstyleinlinedvariabledeclaration"></a>csharp\_style\_inlined\_variable_declaration
+#### <a name="csharp_style_inlined_variable_declaration"></a>csharp\_style\_inlined\_variable_declaration
 
 |||
 |-|-|
 | **規則名稱** | csharp_style_inlined_variable_declaration |
 | **規則識別碼** | IDE0018 |
-| **適用語言** | C# 7.0+  |
+| **適用語言** | C# 7.0+ |
 | **值** | `true` - 偏好盡可能在方法呼叫的引數清單中宣告 `out` 變數內嵌<br /><br />`false` - 偏好先宣告 `out` 變數再宣告方法呼叫 |
 | **Visul Studio 預設值** | `true:suggestion` |
 
@@ -1274,9 +1421,9 @@ Editorconfig  檔案範例︰
 csharp_style_inlined_variable_declaration = true:suggestion
 ```
 
-### <a name="expression-level-preferences"></a>運算式層級喜好設定
+### <a name="c-expression-level-preferences"></a>C# 運算式層級喜好設定
 
-本節中的樣式規則與運算式層級喜好設定有關，包括使用[預設運算式](/dotnet/csharp/programming-guide/statements-expressions-operators/default-value-expressions#default-literal-and-type-inference)、解構的變數，以及使用區域函式而不是匿名函式。
+本節中的樣式規則涉及算式層級喜好設定。
 
 Editorconfig  檔案範例︰
 
@@ -1284,13 +1431,11 @@ Editorconfig  檔案範例︰
 # CSharp code style settings:
 [*.cs]
 csharp_prefer_simple_default_expression = true:suggestion
-csharp_style_deconstructed_variable_declaration = true:suggestion
-csharp_style_pattern_local_over_anonymous_function = true:suggestion
 ```
 
-#### <a name="csharpprefersimpledefaultexpression"></a>csharp\_prefer\_simple\_default_expression
+#### <a name="csharp_prefer_simple_default_expression"></a>csharp\_prefer\_simple\_default_expression
 
-此樣式規則關於在編譯器能推斷運算式類型時，使用[預設值運算式的 `default` 常值](/dotnet/csharp/programming-guide/statements-expressions-operators/default-value-expressions#default-literal-and-type-inference)。
+此樣式規則關於在編譯器能推斷運算式類型時，使用[預設值運算式的 `default` 常值](/dotnet/csharp/language-reference/operators/default#default-literal)。
 
 |||
 |-|-|
@@ -1310,62 +1455,7 @@ void DoWork(CancellationToken cancellationToken = default) { ... }
 void DoWork(CancellationToken cancellationToken = default(CancellationToken)) { ... }
 ```
 
-#### <a name="csharpstyledeconstructedvariabledeclaration"></a>csharp\_style\_deconstructed\_variable_declaration
-
-|||
-|-|-|
-| **規則名稱** | csharp_style_deconstructed_variable_declaration |
-| **規則識別碼** | IDE0042 |
-| **適用語言** | C# 7.0+  |
-| **值** | `true` - 偏好使用解構的變數宣告<br /><br />`false` - 偏好不使用解構的變數宣告 |
-| **Visul Studio 預設值** | `true:suggestion` |
-
-程式碼範例：
-
-```csharp
-// csharp_style_deconstructed_variable_declaration = true
-var (name, age) = GetPersonTuple();
-Console.WriteLine($"{name} {age}");
-
-(int x, int y) = GetPointTuple();
-Console.WriteLine($"{x} {y}");
-
-// csharp_style_deconstructed_variable_declaration = false
-var person = GetPersonTuple();
-Console.WriteLine($"{person.name} {person.age}");
-
-(int x, int y) point = GetPointTuple();
-Console.WriteLine($"{point.x} {point.y}");
-```
-
-#### <a name="csharpstylepatternlocaloveranonymousfunction"></a>csharp\_style\_pattern\_local\_over\_anonymous_function
-
-|||
-|-|-|
-| **規則名稱** | csharp_style_pattern_local_over_anonymous_function |
-| **規則識別碼** | IDE0039 |
-| **適用語言** | C# 7.0+  |
-| **值** | `true` - 偏好使用區域函式而不是匿名函式<br /><br />`false` - 偏好使用匿名函式而不是區域函式 |
-| **Visul Studio 預設值** | `true:suggestion` |
-
-程式碼範例：
-
-```csharp
-// csharp_style_pattern_local_over_anonymous_function = true
-int fibonacci(int n)
-{
-    return n <= 1 ? 1 : fibonacci(n-1) + fibonacci(n-2);
-}
-
-// csharp_style_pattern_local_over_anonymous_function = false
-Func<int, int> fibonacci = null;
-fibonacci = (int n) =>
-{
-    return n <= 1 ? 1 : fibonacci(n - 1) + fibonacci(n - 2);
-};
-```
-
-### <a name="null-checking-preferences"></a>Null 檢查喜好設定
+### <a name="c-null-checking-preferences"></a>C# Null 檢查喜好設定
 
 這些樣式規則是關於 `null` 檢查的語法，包括使用 `throw` 運算式或 `throw` 陳述式，以及叫用 [lambda 運算式](/dotnet/csharp/lambda-expressions)時要執行 null 檢查還是使用條件式聯合運算子 (`?.`)。
 
@@ -1378,13 +1468,13 @@ csharp_style_throw_expression = true:suggestion
 csharp_style_conditional_delegate_call = false:suggestion
 ```
 
-#### <a name="csharpstylethrowexpression"></a>csharp\_style\_throw_expression
+#### <a name="csharp_style_throw_expression"></a>csharp\_style\_throw_expression
 
 |||
 |-|-|
 | **規則名稱** | csharp_style_throw_expression |
 | **規則識別碼** | IDE0016 |
-| **適用語言** | C# 7.0+  |
+| **適用語言** | C# 7.0+ |
 | **值** | `true` - 偏好使用 `throw` 運算式，而不是 `throw` 陳述式<br /><br />`false` - 偏好使用 `throw` 陳述式，而不是 `throw` 運算式 |
 | **Visul Studio 預設值** | `true:suggestion` |
 
@@ -1399,7 +1489,7 @@ if (s == null) { throw new ArgumentNullException(nameof(s)); }
 this.s = s;
 ```
 
-#### <a name="csharpstyleconditionaldelegatecall"></a>csharp\_style\_conditional\_delegate_call
+#### <a name="csharp_style_conditional_delegate_call"></a>csharp\_style\_conditional\_delegate_call
 
 |||
 |-|-|
@@ -1431,7 +1521,7 @@ Editorconfig  檔案範例︰
 csharp_prefer_braces = true:silent
 ```
 
-#### <a name="csharppreferbraces"></a>csharp\_prefer\_braces
+#### <a name="csharp_prefer_braces"></a>csharp\_prefer\_braces
 
 |||
 |-|-|
@@ -1449,6 +1539,320 @@ if (test) { this.Display(); }
 
 // csharp_prefer_braces = false
 if (test) this.Display();
+```
+
+### <a name="unused-value-preferences"></a>未使用的值喜好設定
+
+這些樣式規則涉及未使用的運算式和值指派。
+
+Editorconfig  檔案範例︰
+
+```ini
+# CSharp code style settings:
+[*.cs]
+csharp_style_unused_value_expression_statement_preference = discard_variable:silent
+csharp_style_unused_value_assignment_preference = discard_variable:suggestion
+```
+
+#### <a name="csharp_style_unused_value_expression_statement_preference"></a>csharp_style_unused_value_expression_statement_preference
+
+|||
+|-|-|
+| **規則名稱** | csharp_style_unused_value_expression_statement_preference |
+| **規則識別碼** | IDE0058 |
+| **適用語言** | C# |
+| **值** | `discard_variable` - 偏好將未使用的運算式指派給 [discard](/dotnet/csharp/discards) <br /><br />`unused_local_variable` - 偏好將未使用的運算式指派給區域變數 |
+| **Visul Studio 預設值** | `discard_variable:silent` |
+
+程式碼範例：
+
+```csharp
+// Original code:
+System.Convert.ToInt32("35");
+
+// After code fix for IDE0058:
+
+// csharp_style_unused_value_expression_statement_preference = discard_variable
+_ = System.Convert.ToInt32("35");
+
+// csharp_style_unused_value_expression_statement_preference = unused_local_variable
+var unused = Convert.ToInt32("35");
+```
+
+#### <a name="csharp_style_unused_value_assignment_preference"></a>csharp_style_unused_value_assignment_preference
+
+|||
+|-|-|
+| **規則名稱** | csharp_style_unused_value_assignment_preference |
+| **規則識別碼** | IDE0059 |
+| **適用語言** | C# |
+| **值** | `discard_variable` - 指派未使用的值時，偏好使用 [discard](/dotnet/csharp/discards)<br /><br />`unused_local_variable` - 指派未使用的值時，偏好使用區域變數 |
+| **Visul Studio 預設值** | `discard_variable:suggestion` |
+
+程式碼範例：
+
+```csharp
+// csharp_style_unused_value_assignment_preference = discard_variable
+int GetCount(Dictionary<string, int> wordCount, string searchWord)
+{
+    _ = wordCount.TryGetValue(searchWord, out var count);
+    return count;
+}
+
+// csharp_style_unused_value_assignment_preference = unused_local_variable
+int GetCount(Dictionary<string, int> wordCount, string searchWord)
+{
+    var unused = wordCount.TryGetValue(searchWord, out var count);
+    return count;
+}
+```
+
+### <a name="index-and-range-preferences"></a>索引和範圍喜好設定
+
+這些樣式規則涉及使用 C# 8.0 和更新版本中可用的索引和範圍運算子。
+
+Editorconfig  檔案範例︰
+
+```ini
+# CSharp code style settings:
+[*.cs]
+csharp_style_prefer_index_operator = true:suggestion
+csharp_style_prefer_range_operator = true:suggestion
+```
+
+#### <a name="csharp_style_prefer_index_operator"></a>csharp\_style\_prefer\_index_operator
+
+|||
+|-|-|
+| **規則名稱** | csharp_style_prefer_index_operator |
+| **規則識別碼** | IDE0056 |
+| **適用語言** | C# 8.0+ |
+| **值** | `true` - 從集合結尾計算索引時，偏好使用 `^` 運算子<br /><br />`false` - 從集合結尾計算索引時，不偏好使用 `^` 運算子 |
+| **Visul Studio 預設值** | `true:suggestion` |
+
+程式碼範例：
+
+```csharp
+// csharp_style_prefer_index_operator = true
+string[] names = { "Archimedes", "Pythagoras", "Euclid" };
+var index = names[^1];
+
+// csharp_style_prefer_index_operator = false
+string[] names = { "Archimedes", "Pythagoras", "Euclid" };
+var index = names[names.Length - 1];
+```
+
+#### <a name="csharp_style_prefer_range_operator"></a>csharp\_style\_prefer\_range_operator
+
+|||
+|-|-|
+| **規則名稱** | csharp_style_prefer_range_operator |
+| **規則識別碼** | IDE0057 |
+| **適用語言** | C# 8.0+ |
+| **值** | `true` - 擷取集合的「配量」時，偏好使用範圍運算子 `..`<br /><br />`false` - 擷取集合的「配量」時，不偏好使用範圍運算子 `..` |
+| **Visul Studio 預設值** | `true:suggestion` |
+
+程式碼範例：
+
+```csharp
+// csharp_style_prefer_range_operator = true
+string sentence = "the quick brown fox";
+var sub = sentence[0..^4];
+
+// csharp_style_prefer_range_operator = false
+string sentence = "the quick brown fox";
+var sub = sentence.Substring(0, sentence.Length - 4);
+```
+
+### <a name="miscellaneous-preferences"></a>其他喜好設定
+
+本節包含其他樣式規則。
+
+Editorconfig  檔案範例︰
+
+```ini
+# CSharp code style settings:
+[*.cs]
+csharp_style_deconstructed_variable_declaration = true:suggestion
+csharp_style_pattern_local_over_anonymous_function = true:suggestion
+csharp_using_directive_placement = outside_namespace:silent
+csharp_prefer_static_local_function = true:suggestion
+csharp_prefer_simple_using_statement = true:suggestion
+csharp_style_prefer_switch_expression = true:suggestion
+```
+
+#### <a name="csharp_style_deconstructed_variable_declaration"></a>csharp\_style\_deconstructed\_variable_declaration
+
+|||
+|-|-|
+| **規則名稱** | csharp_style_deconstructed_variable_declaration |
+| **規則識別碼** | IDE0042 |
+| **適用語言** | C# 7.0+ |
+| **值** | `true` - 偏好使用解構的變數宣告<br /><br />`false` - 偏好不使用解構的變數宣告 |
+| **Visul Studio 預設值** | `true:suggestion` |
+
+程式碼範例：
+
+```csharp
+// csharp_style_deconstructed_variable_declaration = true
+var (name, age) = GetPersonTuple();
+Console.WriteLine($"{name} {age}");
+
+(int x, int y) = GetPointTuple();
+Console.WriteLine($"{x} {y}");
+
+// csharp_style_deconstructed_variable_declaration = false
+var person = GetPersonTuple();
+Console.WriteLine($"{person.name} {person.age}");
+
+(int x, int y) point = GetPointTuple();
+Console.WriteLine($"{point.x} {point.y}");
+```
+
+#### <a name="csharp_style_pattern_local_over_anonymous_function"></a>csharp\_style\_pattern\_local\_over\_anonymous_function
+
+從 C# 7.0 開始，C# 支援[區域函式](/dotnet/csharp/programming-guide/classes-and-structs/local-functions)。 區域函式是另一個成員中巢狀型別的私用方法。
+
+|||
+|-|-|
+| **規則名稱** | csharp_style_pattern_local_over_anonymous_function |
+| **規則識別碼** | IDE0039 |
+| **適用語言** | C# 7.0+ |
+| **值** | `true` - 偏好使用區域函式而不是匿名函式<br /><br />`false` - 偏好使用匿名函式而不是區域函式 |
+| **Visul Studio 預設值** | `true:suggestion` |
+
+程式碼範例：
+
+```csharp
+// csharp_style_pattern_local_over_anonymous_function = true
+int fibonacci(int n)
+{
+    return n <= 1 ? 1 : fibonacci(n-1) + fibonacci(n-2);
+}
+
+// csharp_style_pattern_local_over_anonymous_function = false
+Func<int, int> fibonacci = null;
+fibonacci = (int n) =>
+{
+    return n <= 1 ? 1 : fibonacci(n - 1) + fibonacci(n - 2);
+};
+```
+
+#### <a name="csharp_using_directive_placement"></a>csharp\_using\_directive_placement
+
+|||
+|-|-|
+| **規則名稱** | csharp_using_directive_placement |
+| **規則識別碼** | IDE0065 |
+| **適用語言** | C# |
+| **值** | `outside_namespace` - 偏好將 `using` 指示詞放在命名空間外<br /><br />`inside_namespace` - 偏好將 `using` 指示詞放在命名空間內 |
+| **Visul Studio 預設值** | `outside_namespace:silent` |
+
+程式碼範例：
+
+```csharp
+// csharp_using_directive_placement = outside_namespace
+using System;
+
+namespace Conventions
+{
+    ...
+}
+
+// csharp_using_directive_placement = inside_namespace
+namespace Conventions
+{
+    using System;
+    ...
+}
+```
+
+#### <a name="csharp_prefer_static_local_function"></a>csharp\_prefer\_static\_local_function
+
+|||
+|-|-|
+| **規則名稱** | csharp_prefer_static_local_function |
+| **規則識別碼** | IDE0062 |
+| **適用語言** | C# 8.0+ |
+| **值** | `true` - 偏好將區域函式標記為 `static`<br /><br />`false` - 不偏好將區域函式標記為 `static` |
+| **Visul Studio 預設值** | `true:suggestion` |
+
+程式碼範例：
+
+```csharp
+// csharp_prefer_static_local_function = true
+void M()
+{
+    Hello();
+    static void Hello()
+    {
+        Console.WriteLine("Hello");
+    }
+}
+
+// csharp_prefer_static_local_function = false
+void M()
+{
+    Hello();
+    void Hello()
+    {
+        Console.WriteLine("Hello");
+    }
+}
+```
+
+#### <a name="csharp_prefer_simple_using_statement"></a>csharp\_prefer\_simple\_using_statement
+
+|||
+|-|-|
+| **規則名稱** | csharp_prefer_simple_using_statement |
+| **規則識別碼** | IDE0063 |
+| **適用語言** | C# 8.0+ |
+| **值** | `true` - 偏好使用「簡單的」  `using` 陳述式<br /><br />`false` - 不偏好使用「簡單的」  `using` 陳述式 |
+| **Visul Studio 預設值** | `true:suggestion` |
+
+程式碼範例：
+
+```csharp
+// csharp_prefer_simple_using_statement = true
+using var a = b;
+
+// csharp_prefer_simple_using_statement = false
+using (var a = b) { }
+```
+
+#### <a name="csharp_style_prefer_switch_expression"></a>csharp\_style\_prefer\_switch_expression
+
+|||
+|-|-|
+| **規則名稱** | csharp_style_prefer_switch_expression |
+| **規則識別碼** | IDE0066 |
+| **適用語言** | C# 8.0+ |
+| **值** | `true` - 偏好使用 `switch` 運算式 (隨 C# 8.0 引進)<br /><br />`false` - 偏好使用 [switch 陳述式](/dotnet/csharp/language-reference/keywords/switch) |
+| **Visul Studio 預設值** | `true:suggestion` |
+| **引進的版本** | Visual Studio 2019 16.2 版 |
+
+程式碼範例：
+
+```csharp
+// csharp_style_prefer_switch_expression = true
+return x switch
+{
+    1 => 1 * 1,
+    2 => 2 * 2,
+    _ => 0,
+};
+
+// csharp_style_prefer_switch_expression = false
+switch (x)
+{
+    case 1:
+        return 1 * 1;
+    case 2:
+        return 2 * 2;
+    default:
+        return 0;
+}
 ```
 
 ## <a name="see-also"></a>另請參閱

@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: ef3afd9dda70d02698abec5459b36e6acc2c5ed0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 08a45219eb2fceeaa9c58a140990ea577c941ff7
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62779612"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68923031"
 ---
 # <a name="ca1023-indexers-should-not-be-multidimensional"></a>CA1023:不應該使用多維索引子
 
@@ -35,25 +35,25 @@ ms.locfileid: "62779612"
 |中斷變更|中斷|
 
 ## <a name="cause"></a>原因
- 公用或受保護的類型包含公用或受保護的索引子，會使用一個以上的索引。
+公用或受保護的類型包含使用一個以上索引的公用或受保護索引子。
 
 ## <a name="rule-description"></a>規則描述
- 索引子，也就是索引的屬性，應該使用單一索引。 多維索引子可以大幅降低程式庫的可用性。 如果設計需要多個索引，請重新考慮類型是否表示的邏輯資料存放區。 否則，請使用方法。
+索引子 (也就是索引的屬性) 應該使用單一索引。 多維度索引子可能會大幅降低程式庫的可用性。 如果設計需要多個索引, 請重新考慮類型是否代表邏輯資料存放區。 如果不是, 請使用方法。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
- 若要修正此規則的違規情形，變更設計，以使用獨立的整數或字串的索引，或使用的方法，而不是索引子。
+若要修正此規則的違規情形, 請將設計變更為使用單獨的整數或字串索引, 或使用方法, 而不是索引子。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
- 隱藏這項規則只有在仔細地考量需要非標準的索引子之後的警告。
+請只在仔細考慮非標準索引子的需求之後, 才隱藏此規則的警告。
 
 ## <a name="example"></a>範例
- 下列範例示範一個型別， `DayOfWeek03`，違反規則多維索引子。 索引子可以視為一種轉換，因此更適當地公開為方法。 型別在重新設計`RedesignedDayOfWeek03`來滿足的規則。
+下列範例顯示型別, `DayOfWeek03`其中包含違反規則的多維度索引子。 索引子可以視為轉換類型, 因此會更適當地公開為方法。 類型已在中`RedesignedDayOfWeek03`重新設計, 以符合規則。
 
- [!code-vb[FxCop.Design.OneDimensionForIndexer#1](../code-quality/codesnippet/VisualBasic/ca1023-indexers-should-not-be-multidimensional_1.vb)]
- [!code-cpp[FxCop.Design.OneDimensionForIndexer#1](../code-quality/codesnippet/CPP/ca1023-indexers-should-not-be-multidimensional_1.cpp)]
- [!code-csharp[FxCop.Design.OneDimensionForIndexer#1](../code-quality/codesnippet/CSharp/ca1023-indexers-should-not-be-multidimensional_1.cs)]
+[!code-vb[FxCop.Design.OneDimensionForIndexer#1](../code-quality/codesnippet/VisualBasic/ca1023-indexers-should-not-be-multidimensional_1.vb)]
+[!code-cpp[FxCop.Design.OneDimensionForIndexer#1](../code-quality/codesnippet/CPP/ca1023-indexers-should-not-be-multidimensional_1.cpp)]
+[!code-csharp[FxCop.Design.OneDimensionForIndexer#1](../code-quality/codesnippet/CSharp/ca1023-indexers-should-not-be-multidimensional_1.cs)]
 
-## <a name="related-rules"></a>相關的規則
- [CA1043： 必須使用索引子的整數類或字串引數](../code-quality/ca1043-use-integral-or-string-argument-for-indexers.md)
+## <a name="related-rules"></a>相關規則
+[CA1043 必須針對索引子使用整數或字串引數](../code-quality/ca1043-use-integral-or-string-argument-for-indexers.md)
 
- [CA1024:在適當時使用屬性](../code-quality/ca1024-use-properties-where-appropriate.md)
+[CA1024 建議適當時使用屬性](../code-quality/ca1024-use-properties-where-appropriate.md)

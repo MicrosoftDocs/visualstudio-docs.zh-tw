@@ -12,11 +12,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e43541ddb75b067faa23437d315ce5f239256b1a
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54796774"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68180224"
 ---
 # <a name="process-view---contention-data"></a>處理序檢視 - 爭用資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ ms.locfileid: "54796774"
   
  下表說明處理序檢視資料表中資料行的值。  
   
-|資料行|描述|  
+|資料行|說明|  
 |------------|-----------------|  
 |**開始時間**|從程式碼剖析開始到處理序或執行緒開始的毫秒數或處理器週期數。|  
 |**封鎖時間**|處理序或執行緒的函式遭到封鎖而無法執行期間的時間總計。|  
@@ -41,6 +41,6 @@ ms.locfileid: "54796774"
 |**名稱**|處理序或執行緒的名稱。|  
 |**唯一 ID**|分析工具產生的唯一處理程序或執行緒識別碼。|  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [如何：自訂報表檢視資料行](../profiling/how-to-customize-report-view-columns.md)   
  [處理序檢視](../profiling/process-view.md)

@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 4c019e98e7f1311b6521dff563cb8e7bb0a2356e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 02e69a97468675cd6f7530793581c15717465d6f
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62544009"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68921054"
 ---
 # <a name="ca2119-seal-methods-that-satisfy-private-interfaces"></a>CA2119:密封方法以滿足私用介面的要求
 
@@ -35,40 +35,40 @@ ms.locfileid: "62544009"
 |中斷變更|中斷|
 
 ## <a name="cause"></a>原因
- 可繼承的公用類型提供的可覆寫方法實作`internal`(`Friend` Visual Basic 中) 介面。
+可繼承的公用類型會提供`internal` (`Friend`在 Visual Basic) 介面中可覆寫的方法執行。
 
 ## <a name="rule-description"></a>規則描述
- 介面方法具有公用存取範圍，不能變更所實作的型別。 內部介面會建立不是要定義的介面組件外部實作的合約。 公用類型會實作內部介面使用的方法`virtual`(`Overridable` Visual Basic 中) 修飾詞可讓由衍生的型別，會在組件外覆寫的方法。 如果在定義組件中的第二個型別呼叫方法，並預期僅供內部使用的合約，相反地，覆寫的方法，在外部組件中執行時，可能會受到危害的行為。 這會造成安全性漏洞。
+介面方法具有公用存取範圍, 無法由實作為類型變更。 內部介面會建立一個不打算在定義介面之元件外部執行的合約。 使用`virtual` (`Overridable`在 Visual Basic 中) 修飾詞來實作為內部介面方法的公用類型, 可讓該方法由元件外部的衍生類型覆寫。 如果定義元件中的第二個類型呼叫方法, 並預期僅供內部使用的合約, 則在執行外部元件中的覆寫方法時, 行為可能會受到危害。 這會產生安全性弱點。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
- 若要修正此規則的違規情形，防止方法遭到覆寫外部組件使用下列其中一項：
+若要修正此規則的違規情形, 請使用下列其中一項, 防止在元件外部覆寫方法:
 
-- 請宣告的型別`sealed`(`NotInheritable` Visual Basic 中)。
+- 建立宣告類型`sealed` (`NotInheritable`在 Visual Basic 中)。
 
-- 變更要宣告型別的存取範圍`internal`(`Friend` Visual Basic 中)。
+- 將宣告類型的存取範圍變更為`internal` (`Friend`在 Visual Basic 中)。
 
-- 移除的宣告型別中的所有公用建構函式。
+- 從宣告類型移除所有公用的函式。
 
-- 實作方法，而不需使用`virtual`修飾詞。
+- 在不使用`virtual`修飾詞的情況下, 執行方法。
 
-- 明確實作的方法。
+- 明確地執行方法。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
- 它可安全地隱藏這個警告規則在仔細檢閱之後, 沒有安全性問題存在，可能是如果在組件外覆寫此方法可利用來攻擊。
+如果在仔細審查之後, 不會有任何安全性問題存在, 如果在元件外部覆寫該方法, 就可以放心地隱藏此規則的警告。
 
 ## <a name="example-1"></a>範例 1
- 下列範例示範一個型別， `BaseImplementation`，會違反此規則。
+下列範例顯示違反此規則的`BaseImplementation`類型。
 
- [!code-cpp[FxCop.Security.SealMethods1#1](../code-quality/codesnippet/CPP/ca2119-seal-methods-that-satisfy-private-interfaces_1.cpp)]
- [!code-csharp[FxCop.Security.SealMethods1#1](../code-quality/codesnippet/CSharp/ca2119-seal-methods-that-satisfy-private-interfaces_1.cs)]
- [!code-vb[FxCop.Security.SealMethods1#1](../code-quality/codesnippet/VisualBasic/ca2119-seal-methods-that-satisfy-private-interfaces_1.vb)]
+[!code-cpp[FxCop.Security.SealMethods1#1](../code-quality/codesnippet/CPP/ca2119-seal-methods-that-satisfy-private-interfaces_1.cpp)]
+[!code-csharp[FxCop.Security.SealMethods1#1](../code-quality/codesnippet/CSharp/ca2119-seal-methods-that-satisfy-private-interfaces_1.cs)]
+[!code-vb[FxCop.Security.SealMethods1#1](../code-quality/codesnippet/VisualBasic/ca2119-seal-methods-that-satisfy-private-interfaces_1.vb)]
 
 ## <a name="example-2"></a>範例 2
- 下列範例會利用上述範例的虛擬方法實作。
+下列範例會利用上一個範例的虛擬方法執行。
 
- [!code-cpp[FxCop.Security.SealMethods2#1](../code-quality/codesnippet/CPP/ca2119-seal-methods-that-satisfy-private-interfaces_2.cpp)]
- [!code-csharp[FxCop.Security.SealMethods2#1](../code-quality/codesnippet/CSharp/ca2119-seal-methods-that-satisfy-private-interfaces_2.cs)]
- [!code-vb[FxCop.Security.SealMethods2#1](../code-quality/codesnippet/VisualBasic/ca2119-seal-methods-that-satisfy-private-interfaces_2.vb)]
+[!code-cpp[FxCop.Security.SealMethods2#1](../code-quality/codesnippet/CPP/ca2119-seal-methods-that-satisfy-private-interfaces_2.cpp)]
+[!code-csharp[FxCop.Security.SealMethods2#1](../code-quality/codesnippet/CSharp/ca2119-seal-methods-that-satisfy-private-interfaces_2.cs)]
+[!code-vb[FxCop.Security.SealMethods2#1](../code-quality/codesnippet/VisualBasic/ca2119-seal-methods-that-satisfy-private-interfaces_2.vb)]
 
 ## <a name="see-also"></a>另請參閱
 

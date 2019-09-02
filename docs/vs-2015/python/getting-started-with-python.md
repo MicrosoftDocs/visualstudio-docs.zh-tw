@@ -1,5 +1,5 @@
 ---
-title: 開始使用 Python |Microsoft Docs
+title: 使用 Python 的消費者入門 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-python
@@ -9,45 +9,45 @@ caps.latest.revision: 13
 author: kraigb
 ms.author: kraigb
 manager: jillfra
-ms.openlocfilehash: 9c18ae2731d92e6d128d13e7687bac77ae76dc8a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5c5cea89b337f4da586ba4ca1954e49b96c84638
+ms.sourcegitcommit: 3cda0d58c5cf1985122b8977b33a171c7359f324
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62575646"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "70154939"
 ---
 # <a name="getting-started-with-python"></a>開始使用 Python
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Python Tools for Visual Studio (PTVS)，是免費，[開放原始碼](https://github.com/Microsoft/ptvs)plug-in for Visual Studio 的強大的 Python 開發體驗。  
+適用於 Visual Studio 的 Python 工具 (PTVS) 是免費的[開放原始](https://github.com/Microsoft/ptvs)碼外掛程式, 適用于 Visual Studio, 這是功能強大的 Python 開發體驗。  
   
 ## <a name="python-the-language"></a>Python 語言
   
-Python 是受歡迎的程式設計語言，可由許多大學、 科學家、 應用程式指令碼撰寫人員、 業餘開發人員和專業開發人員，處理應用程式、 網站和雲端服務。
+Python 是一種熱門的程式設計語言, 可供許多大學、科學家、應用程式腳本撰寫者、一般開發人員和專業開發人員使用, 以處理應用程式、網站和雲端服務。
 
-做為程式設計語言中，Python 是：
+作為程式設計語言, Python 是:
   
 - 可靠的。
-- 通常適用於指令碼快速的程式、 指令碼應用程式、 傳統型應用程式、 web 伺服器、 web 服務和科學運算。
+- 通常適用于編寫快速程式、應用程式腳本、桌面應用程式、網頁伺服器、web 服務和科學運算的腳本。
 - 易於學習及良好的設計有助於撰寫高品質程式碼 (許多大學使用它作為程式設計的入門課程)。
-- 有彈性，支援命令式、 功能和物件導向程式設計的樣式。
+- 彈性、支援命令式、功能和麵向物件的程式設計樣式。
 - 免費且開放的原始碼。
-- 在所有主流作業系統上順利執行。  
-- 支援許多免費、 有用且設計良好的程式庫。  
-- 支援大量文件、 範例和強大的開發人員社群。  
+- 在所有主要的作業系統上都能順利執行。  
+- 由許多免費、實用且設計良好的程式庫所支援。  
+- 由許多檔、範例和強大的開發人員社區支援。  
 
-若要深入了解語言，著手[適用於初學者的 Python](https://www.python.org/about/gettingstarted/) python.org 上。
+若要深入瞭解此語言, 請從 python.org 上的[適用于初學者的 Python](https://www.python.org/about/gettingstarted/)開始。
 
-若要安裝 Python，請瀏覽[ https://www.python.org/download/ ](https://www.python.org/download/)。
+若要安裝 Python 本身, [https://www.python.org/download/](https://www.python.org/download/)請造訪。
 
 ## <a name="python-tools-for-visual-studio"></a>Python Tools for Visual Studio
   
-Python Tools for Visual Studio 中，您可以從安裝[visualstudio.com](https://www.visualstudio.com/explore/python-vs)，提供下列功能：  
+您可以從[visualstudio.com](https://www.visualstudio.com/explore/python-vs)安裝的適用於 Visual Studio 的 Python 工具提供下列功能:  
   
 - 支援多個解譯器：CPython、IronPython 及 IPython 的各種版本  
 - 以隱含方式讀取 Python 程式碼資料夾結構的專案系統，您也可以明確地控制，以便清楚什麼是應用程式程式碼、測試程式碼、網頁、JavaScript、建置指令碼等等的專案系統。  
 - 適用於主控台、網路、Azure、資料科學，及其他類型的專案。    
-- Azure SDK for Python （請參閱下文）    
+- Azure SDK for Python (請參閱下文)    
 - 豐富的編輯和程式碼理解功能：語法著色、所有程式碼和程式庫的自動完成、簽章說明、類別檢視、移至定義、尋找所有參考、重構等等。    
 - 互動 (REPL) 視窗
 - 包含資料視覺效果的 IPython。
@@ -60,20 +60,20 @@ Python Tools for Visual Studio 中，您可以從安裝[visualstudio.com](https:
 
 - [安裝指南 (英文)](https://github.com/Microsoft/PTVS/wiki/PTVS-Installation)    
 - [快速入門及深度剖析影片 (英文)](https://www.youtube.com/playlist?list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff)  
-- 安裝和功能示範 （27 分鐘）] (https://www.youtube.com/watch?v=JNNAOypc6Ek)  
+- 安裝和功能示範 (27 分鐘)] (https://www.youtube.com/watch?v=JNNAOypc6Ek)  
 - [文件](https://github.com/Microsoft/PTVS/wiki)  
 
-請注意，Visual Studio 不在目前提供方法來建立獨立的可執行檔使用 Python，這基本上表示內嵌的 Python 解譯器的程式。 不過，若要這樣做，Python 社群中提供多種方式，如 [StackOverflow](http://stackoverflow.com/questions/5458048/how-to-make-a-python-script-standalone-executable-to-run-without-any-dependency) 中所述。 CPython 也支援在原生的應用程式中內嵌，如[使用 CPython 可內嵌的 Zip 檔案](https://devblogs.microsoft.com/python/cpython-embeddable-zip-file/)部落格文章中所述。
+請注意, Visual Studio 目前不提供使用 Python 建立獨立可執行檔的方法, 這基本上是指具有內嵌 Python 解譯器的程式。 不過，若要這樣做，Python 社群中提供多種方式，如 [StackOverflow](http://stackoverflow.com/questions/5458048/how-to-make-a-python-script-standalone-executable-to-run-without-any-dependency) 中所述。 CPython 也支援在原生的應用程式中內嵌，如[使用 CPython 可內嵌的 Zip 檔案](https://devblogs.microsoft.com/python/cpython-embeddable-zip-file/)部落格文章中所述。
   
-## <a name="building-ui-with-python"></a>建置 UI，使用 Python  
+## <a name="building-ui-with-python"></a>使用 Python 建立 UI  
 
-主要供應項目建置 UI，以使用 Python [Qt 專案](https://www.qt.io/qt-for-application-development/)，又稱為 Python 的繫結[PySide （正式繫結）](http://wiki.qt.io/PySide) (另請參閱[PySide 下載](https://download.qt.io/official_releases/pyside/.)) 和[PyQt](https://wiki.python.org/moin/PyQt)。 目前，Visual Studio 中的 Python 支援不包含任何特定的 UI 開發工具。
+使用 Python 建立 UI 的主要供應[專案是 Qt 專案](https://www.qt.io/qt-for-application-development/), 其中包含 python 的系結, 稱為[其 pyside (官方](http://wiki.qt.io/PySide)系結) (也請參閱[其 pyside 下載](https://download.qt.io/official_releases/pyside/.)) 和[PyQt](https://wiki.python.org/moin/PyQt)。 目前，Visual Studio 中的 Python 支援不包含任何特定的 UI 開發工具。
 
 ## <a name="azure-sdk-for-python"></a>Azure SDK for Python
   
 Azure SDK for Python 支援 Windows、Mac 和 Linux，可讓您更容易使用及管理 Microsoft Azure 服務。 詳細資料請參閱下列資源： 
 
-- 若要安裝 SDK，請使用 [Python 封裝索引 (英文)](https://pypi.python.org/pypi/azure)，或遵循 Azure 文件中的[安裝 Python 和 SDK](https://azure.microsoft.com/documentation/articles/python-how-to-install/)。 
+- 若要安裝 SDK，請使用 [Python 封裝索引 (英文)](https://pypi.python.org/pypi/azure)，或遵循 Azure 文件中的[安裝 Python 和 SDK](https://docs.microsoft.com/azure/python/python-sdk-azure-install)。 
 - [Azure SDK for Python 開發人員中心](https://azure.microsoft.com/develop/python/)中具有從安裝到具有教學課程之文件的大量說明。  一些重點如下：  
 - 作法指南：
   - [儲存體 Blob](https://azure.microsoft.com/develop/python/how-to-guides/blob-service/)  
@@ -91,9 +91,9 @@ Azure SDK for Python 支援 Windows、Mac 和 Linux，可讓您更容易使用�
   
 ## <a name="see-also"></a>另請參閱  
 
-[PTVS 入門：設定 Visual Studio](../python/getting-started-with-ptvs-setting-up-visual-studio.md)
-[ptvs 快速入門：開始撰寫程式碼 （專案）](../python/getting-started-with-ptvs-start-coding-projects.md)
-[ptvs 快速入門：編輯程式碼](../python/getting-started-with-ptvs-editing-code.md)
-[ptvs 快速入門：偵錯](../python/getting-started-with-ptvs-debugging.md)
-[ptvs 快速入門：互動式 Python](../python/getting-started-with-ptvs-interactive-python.md)
-[ptvs 快速入門：在 Azure 中建置網站](../python/getting-started-with-ptvs-building-a-website-in-azure.md)
+[PTVS 入門：使用 PTVS 設定](../python/getting-started-with-ptvs-setting-up-visual-studio.md)Visual Studio
+ [消費者入門:使用 PTVS 開始撰寫程式](../python/getting-started-with-ptvs-start-coding-projects.md)代碼 (專案)
+ [消費者入門:使用 PTVS](../python/getting-started-with-ptvs-editing-code.md)編輯程式碼
+ [消費者入門:使用](../python/getting-started-with-ptvs-debugging.md)PTVS 進行消費者入門的調試
+ [:具有 PTVS](../python/getting-started-with-ptvs-interactive-python.md)的互動式 Python
+ [消費者入門:在 Azure 中建置網站](../python/getting-started-with-ptvs-building-a-website-in-azure.md)

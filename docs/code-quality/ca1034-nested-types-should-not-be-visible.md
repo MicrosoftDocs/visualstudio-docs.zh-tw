@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: fb01065fed41a30f26e15d7295fabc03fb3f1f4f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a086ad80bd13fb18f866769db34d72cae3e67496
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62779074"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68922868"
 ---
 # <a name="ca1034-nested-types-should-not-be-visible"></a>CA1034:巢狀類型不應該為可見的
 
@@ -36,26 +36,26 @@ ms.locfileid: "62779074"
 
 ## <a name="cause"></a>原因
 
-外部可見的型別包含為外部可見的型別宣告。 巢狀的列舉與受保護的類型是 免套用此規則。
+外部可見的類型包含外部可見的類型宣告。 此規則會豁免嵌套列舉和受保護的類型。
 
 ## <a name="rule-description"></a>規則描述
- 巢狀型別是另一種類型的範圍內宣告的類型。 巢狀型別可用於封裝為包含類型的私用實作詳細資料。 因為有這樣的用途，所以巢狀類型不應為外部可見的。
+巢狀型別是在另一個類型的範圍內宣告的類型。 巢狀型別適用于封裝包含類型的私用實作為詳細資料。 因為有這樣的用途，所以巢狀類型不應為外部可見的。
 
- 邏輯群組，或避免發生名稱衝突，請不要使用外部可見的巢狀的類型相反地，使用命名空間。
+請不要針對邏輯群組使用外部可見的巢狀型別, 或避免名稱衝突;請改用命名空間。
 
- 巢狀型別包含成員存取範圍，某些程式設計人員不清楚地了解的概念。
+巢狀型別包含成員存取範圍的概念, 而有些程式設計人員並不清楚瞭解。
 
- 受保護的類型可以用於子類別以及進階的自訂案例中的巢狀型別。
+在預先自訂的情況下, 可在子類別和巢狀型別中使用受保護的類型。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
- 如果您不想要為外部可見的巢狀型別，變更型別的存取範圍。 否則，從其父代移除巢狀型別。 如果巢狀的目的是要分類的巢狀的類型，請改為建立階層中使用的命名空間。
+如果您不想要讓巢狀型別成為外部可見的, 請變更類型的存取範圍。 否則, 請從其父系移除巢狀型別。 如果嵌套的目的是要將巢狀型別分類, 請改用命名空間來建立階層。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
- 請勿隱藏此規則的警告。
+請勿隱藏此規則的警告。
 
 ## <a name="example"></a>範例
- 下列範例顯示違反規則的型別。
+下列範例顯示違反規則的類型。
 
- [!code-cpp[FxCop.Design.NestedTypes#1](../code-quality/codesnippet/CPP/ca1034-nested-types-should-not-be-visible_1.cpp)]
- [!code-csharp[FxCop.Design.NestedTypes#1](../code-quality/codesnippet/CSharp/ca1034-nested-types-should-not-be-visible_1.cs)]
- [!code-vb[FxCop.Design.NestedTypes#1](../code-quality/codesnippet/VisualBasic/ca1034-nested-types-should-not-be-visible_1.vb)]
+[!code-cpp[FxCop.Design.NestedTypes#1](../code-quality/codesnippet/CPP/ca1034-nested-types-should-not-be-visible_1.cpp)]
+[!code-csharp[FxCop.Design.NestedTypes#1](../code-quality/codesnippet/CSharp/ca1034-nested-types-should-not-be-visible_1.cs)]
+[!code-vb[FxCop.Design.NestedTypes#1](../code-quality/codesnippet/VisualBasic/ca1034-nested-types-should-not-be-visible_1.vb)]

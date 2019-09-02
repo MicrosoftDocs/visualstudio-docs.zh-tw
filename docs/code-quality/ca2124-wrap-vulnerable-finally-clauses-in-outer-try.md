@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c35a15e9ce1468edd2882396192a27a3fcc2c86
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c75c7c240f694b18caacefc0f9b1ee07f54faf36
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62796790"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68920793"
 ---
 # <a name="ca2124-wrap-vulnerable-finally-clauses-in-outer-try"></a>CA2124:必須將有弱點的 finally 子句包裝在外層 try 中
 
@@ -31,23 +31,23 @@ ms.locfileid: "62796790"
 |中斷變更|非中斷|
 
 ## <a name="cause"></a>原因
- 在 1.0 和 1.1 版的.NET Framework，包含公用或受保護的方法`try` / `catch` / `finally`區塊。 `finally`區塊似乎會重設安全性狀態，並不會使用括住`finally`區塊。
+在 .NET Framework 的版本1.0 和1.1 中, 公用或受保護的方法包含`try` / / `catch` `finally`區塊。 區塊會出現以重設安全性狀態, 而且不會包含`finally`在區塊中。 `finally`
 
 ## <a name="rule-description"></a>規則描述
- 此規則會找出`try` / `finally`版本 1.0 和 1.1 版，可能會很容易出現呼叫堆疊中的惡意的例外狀況篩選條件的.NET framework 為目標的程式碼中的區塊。 如果敏感的作業，例如模擬就會發生在 try 區塊中，而且會擲回例外狀況，可以執行篩選條件之前`finally`區塊。 模擬範例中，這表示篩選條件會執行以模擬的使用者。 篩選條件是目前實作，只要在 Visual Basic 中。
+此規則`try` / 會找出程式碼中以版本1.0和1.1為目標的區塊,此.NETFramework可能容易受到呼叫堆疊中出現的惡意例外狀況`finally`篩選器影響。 如果在 try 區塊中發生諸如模擬之類的敏感作業, 且擲回例外狀況, 則篩選準則可以在`finally`區塊之前執行。 針對模擬範例, 這表示篩選準則會以模擬的使用者身分執行。 篩選目前只能在 Visual Basic 中能實作。
 
 > [!NOTE]
-> 在版本 2.0 和更新版本的.NET framework 中，執行階段自動保護`try` / `catch` /  `finally`阻止惡意的例外狀況篩選條件，如果直接在方法內發生的重設，包含例外狀況區塊。
+> 在 .NET Framework 的版本2.0 和更新版本中, 如果在方法中`try`直接進行重設, 則執行時間會自動保護/  / `catch` `finally`區塊免于惡意的例外狀況篩選準則。包含例外狀況區塊。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
- 將未包裝`try` / `finally`外部 try 區塊中。 請參閱接下來的第二個範例。 這會強制`finally`篩選程式碼之前執行。
+將未包裝`try` /的放在外部try區塊中`finally` 。 請參閱接下來的第二個範例。 這會強制`finally`在篩選程式代碼之前執行。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
- 請勿隱藏此規則的警告。
+請勿隱藏此規則的警告。
 
 ## <a name="pseudo-code-example"></a>虛擬程式碼範例
 
-### <a name="description"></a>描述
+### <a name="description"></a>說明
 
 下列虛擬程式碼會說明這個規則偵測到的模式。
 
@@ -63,7 +63,7 @@ finally {
 }
 ```
 
-下列虛擬程式碼顯示的模式，您可用來保護您的程式碼，並符合此規則。
+下列虛擬程式碼顯示您可以用來保護程式碼並滿足此規則的模式。
 
 ```csharp
 try {

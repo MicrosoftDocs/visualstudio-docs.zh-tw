@@ -2,18 +2,21 @@
 title: 步驟 7：新增乘法及除法問題
 ms.date: 11/04/2016
 ms.topic: conceptual
+dev_langs:
+- csharp
+- vb
 ms.assetid: e638959e-f6a4-4eb4-b2e9-f63b7855cf8f
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e60cb6c289fa582eb27137483f44b7557d4e426d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 887af3a439e1f6e0f21d5ca68061d2f9977dfac7
+ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62996324"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68416544"
 ---
 # <a name="step-7-add-multiplication-and-division-problems"></a>步驟 7：新增乘法及除法問題
 在本教學課程的第七個部分中，您將加入乘法和除法問題，不過要先思考如何進行這項變更。 思考初始步驟，其中牽涉到儲存值。

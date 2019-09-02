@@ -12,35 +12,35 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 02ef55b44d57cecadb690637c17c0a35e9cb0659
-ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
+ms.openlocfilehash: bdf19530461d52523bc581835e14fcaabe0e9a76
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "65531620"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68605438"
 ---
 # <a name="how-to-manage-word-wrap-in-the-editor"></a>作法：管理編輯器中的自動換行
 
-您可以設定和清除 [自動換行] 選項。 設定這個選項時，過長的行超出目前程式碼編輯器視窗寬度的部分會顯示在下一行。 清除這個選項時，例如，為了方便使用行號，您可以捲動到右邊以看到過長行的結尾。
+您可以設定和清除 [自動換行]  選項。 設定這個選項時，過長的行超出目前程式碼編輯器視窗寬度的部分會顯示在下一行。 清除這個選項時，例如，為了方便使用行號，您可以捲動到右邊以看到過長行的結尾。
 
 > [!NOTE]
 > 本主題僅適用於 Windows 上的 Visual Studio。 Visual Studio for Mac 目前不支援自動換行。
 
 ## <a name="to-set-word-wrap-preferences"></a>設定自動換行喜好設定
 
-1. 在 [工具] 功能表上，選取 [選項]。
+1. 在 [工具]  功能表上，選取 [選項]  。
 
-2. 在 [文字編輯器] 資料夾中，選擇 [所有語言] 子資料夾中的 [一般] 選項，全域設定這個選項。
+2. 在 [文字編輯器]  資料夾中，選擇 [所有語言]  子資料夾中的 [一般]  選項，全域設定這個選項。
 
      — 或 —
 
-     選擇您進行程式設計所用語言子資料夾中的 [一般] 選項。
+     選擇您進行程式設計所用語言子資料夾中的 [一般]  選項。
 
-3. 在 [設定] 下，選取或清除 [自動換行] 選項。
+3. 在 [設定]  下，選取或清除 [自動換行]  選項。
 
-     選取 [自動換行] 選項時，會啟用 [顯示自動換行的視覺化圖像] 選項。
+     選取 [自動換行]  選項時，會啟用 [顯示自動換行的視覺化圖像]  選項。
 
-4. 如果您想要在過長的行換行到第二行之處顯示傳回箭號指標，請選取 [顯示自動換行的視覺化圖像] 選項。 如果您不想顯示指示器箭號，請清除這個選項。
+4. 如果您想要在過長的行換行到第二行之處顯示傳回箭號指標，請選取 [顯示自動換行的視覺化圖像]  選項。 如果您不想顯示指示器箭號，請清除這個選項。
 
     > [!NOTE]
     > 這些提醒箭頭不會新增到程式碼：僅供顯示之用。
@@ -55,5 +55,4 @@ ms.locfileid: "65531620"
 
 ## <a name="see-also"></a>另請參閱
 
-- [文字編輯器選項對話方塊](../../ide/reference/text-editor-options-dialog-box.md)
 - [程式碼編輯器的功能](../../ide/writing-code-in-the-code-and-text-editor.md)

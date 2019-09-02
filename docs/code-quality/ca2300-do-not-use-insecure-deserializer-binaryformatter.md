@@ -13,12 +13,12 @@ ms.workload:
 f1_keywords:
 - CA2300
 - DoNotUseInsecureDeserializerBinaryFormatter
-ms.openlocfilehash: 13b50e9eba49ff3457aff41d59448f1a0dfc2ea7
-ms.sourcegitcommit: db30651dc0ce4d0b274479b23a6bd102a5559098
+ms.openlocfilehash: 8a2bc2929b53843749d939f16057a11c0e944e33
+ms.sourcegitcommit: 673b9364fc9a96b027662dcb4cf5d61cab60ef11
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65083878"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "69891214"
 ---
 # <a name="ca2300-do-not-use-insecure-deserializer-binaryformatter"></a>CA2300：請勿使用不安全的還原序列化程式 BinaryFormatter
 
@@ -26,31 +26,31 @@ ms.locfileid: "65083878"
 |-|-|
 |TypeName|DoNotUseInsecureDeserializerBinaryFormatter|
 |CheckId|CA2300|
-|分類|Microsoft.Security|
+|Category|Microsoft.Security|
 |中斷變更|非中斷|
 
 ## <a name="cause"></a>原因
 
-A<xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter?displayProperty=nameWithType>還原序列化方法已呼叫或參考。
+<xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter?displayProperty=nameWithType>已呼叫或參考還原序列化方法。
 
 ## <a name="rule-description"></a>規則描述
 
 [!INCLUDE[insecure-deserializers-description](includes/insecure-deserializers-description-md.md)]
 
-此規則會尋找<xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter?displayProperty=nameWithType>還原序列化方法呼叫或參考。 如果您想要還原序列化時，才<xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Binder>屬性設定為 限制類型、 停用此規則及啟用規則[CA2301](ca2301-do-not-call-binaryformatter-deserialize-without-first-setting-binaryformatter-binder.md)並[CA2302](ca2302-ensure-binaryformatter-binder-is-set-before-calling-binaryformatter-deserialize.md)改。
+此規則會<xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter?displayProperty=nameWithType>尋找還原序列化方法呼叫或參考。 如果您只想要在<xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Binder>屬性設為 [限制類型] 時還原序列化, 請停用此規則, 並改為啟用規則[CA2301](ca2301-do-not-call-binaryformatter-deserialize-without-first-setting-binaryformatter-binder.md)和[CA2302](ca2302-ensure-binaryformatter-binder-is-set-before-calling-binaryformatter-deserialize.md) 。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
 
-- 可能的話，請改用安全的序列化程式，並**不會讓攻擊者指定要還原序列化的任意型別**。 某些更安全的序列化程式包括：
+- 可能的話, 請改為使用安全的序列化程式, 而**不允許攻擊者指定要還原序列化的任意類型**。 一些較安全的序列化套裝程式括:
   - <xref:System.Runtime.Serialization.DataContractSerializer?displayProperty=nameWithType>
   - <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer?displayProperty=nameWithType>
-  - <xref:System.Web.Script.Serialization.JavaScriptSerializer?displayProperty=nameWithType> -永不使用<xref:System.Web.Script.Serialization.SimpleTypeResolver?displayProperty=nameWithType>。 如果您必須使用型別解析程式，限制為預期的清單已還原序列化的型別。
+  - <xref:System.Web.Script.Serialization.JavaScriptSerializer?displayProperty=nameWithType>-永不使用<xref:System.Web.Script.Serialization.SimpleTypeResolver?displayProperty=nameWithType>。 如果您必須使用類型解析程式, 請將還原序列化的類型限制為預期的清單。
   - <xref:System.Xml.Serialization.XmlSerializer?displayProperty=nameWithType>
-  - Newtonsoft Json.NET-使用 TypeNameHandling.None。 如果 TypeNameHandling 中，您必須使用另一個值，限制與自訂 ISerializationBinder 預期清單還原序列化的型別。
-  - Protocol Buffers
-- 使序列化的資料竄改。 在序列化以密碼編譯方式登入序列化的資料。 在還原序列化時之前, 驗證密碼編譯簽章。 保護從被公開的密碼編譯金鑰和金鑰輪替的設計。
-- 限制已還原序列化的類型。 實作自訂<xref:System.Runtime.Serialization.SerializationBinder?displayProperty=nameWithType>。 之前與還原序列化<xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter>，將<xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Binder>執行個體的自訂屬性<xref:System.Runtime.Serialization.SerializationBinder>。 在 覆寫<xref:System.Runtime.Serialization.SerializationBinder.BindToType%2A>方法，如果類型是預期的情況，會擲回的例外狀況。
-- 如果您限制已還原序列化的型別時，您可能想要停用此規則，然後啟用規則[CA2301](ca2301-do-not-call-binaryformatter-deserialize-without-first-setting-binaryformatter-binder.md)並[CA2302](ca2302-ensure-binaryformatter-binder-is-set-before-calling-binaryformatter-deserialize.md)。 規則[CA2301](ca2301-do-not-call-binaryformatter-deserialize-without-first-setting-binaryformatter-binder.md)並[CA2302](ca2302-ensure-binaryformatter-binder-is-set-before-calling-binaryformatter-deserialize.md)的協助，請確認<xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Binder>屬性永遠會設定再還原序列化。
+  - Newtonsoft Json.NET-使用 TypeNameHandling。 如果您必須使用另一個值來進行 TypeNameHandling, 請將已還原序列化的類型限制為具有自訂 ISerializationBinder 的預期清單。
+  - 通訊協定緩衝區
+- 將序列化的資料進行篡改。 序列化之後, 以密碼編譯方式簽署序列化的資料。 在還原序列化之前, 請驗證密碼編譯簽章。 保護密碼編譯金鑰免于洩漏, 並設計金鑰輪替。
+- 限制還原序列化的類型。 執行自訂<xref:System.Runtime.Serialization.SerializationBinder?displayProperty=nameWithType>。 在還原序列化<xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter>之前, 請<xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Binder>將屬性設定為自訂<xref:System.Runtime.Serialization.SerializationBinder>的實例。 在覆寫<xref:System.Runtime.Serialization.SerializationBinder.BindToType%2A>的方法中, 如果類型不是預期的, 則會擲回例外狀況以停止還原序列化。
+  - 如果您限制還原序列化的類型, 您可能會想要停用此規則, 並啟用規則[CA2301](ca2301-do-not-call-binaryformatter-deserialize-without-first-setting-binaryformatter-binder.md)和[CA2302](ca2302-ensure-binaryformatter-binder-is-set-before-calling-binaryformatter-deserialize.md)。 [規則[CA2301](ca2301-do-not-call-binaryformatter-deserialize-without-first-setting-binaryformatter-binder.md) ] 和 [ [CA2302](ca2302-ensure-binaryformatter-binder-is-set-before-calling-binaryformatter-deserialize.md) ] 可<xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Binder>協助確保在還原序列化之前, 一律會設定屬性。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
 
@@ -86,8 +86,8 @@ Public Class ExampleClass
 End Class
 ```
 
-## <a name="related-rules"></a>相關的規則
+## <a name="related-rules"></a>相關規則
 
-[CA2301:如果沒有第一個設定 BinaryFormatter.Binder 不呼叫 BinaryFormatter.Deserialize](ca2301-do-not-call-binaryformatter-deserialize-without-first-setting-binaryformatter-binder.md)
+[CA2301:請勿呼叫 BinaryFormatter, 而不先設定 BinaryFormatter。](ca2301-do-not-call-binaryformatter-deserialize-without-first-setting-binaryformatter-binder.md)
 
-[CA2302:請確定呼叫 BinaryFormatter.Deserialize 之前設定 BinaryFormatter.Binder](ca2302-ensure-binaryformatter-binder-is-set-before-calling-binaryformatter-deserialize.md)
+[CA2302:請先確定已設定 BinaryFormatter, 再呼叫 BinaryFormatter。還原序列化](ca2302-ensure-binaryformatter-binder-is-set-before-calling-binaryformatter-deserialize.md)

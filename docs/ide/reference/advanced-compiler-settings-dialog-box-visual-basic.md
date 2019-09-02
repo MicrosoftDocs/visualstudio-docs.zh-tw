@@ -1,43 +1,44 @@
 ---
 title: 進階編譯器設定對話方塊 (Visual Basic)
 ms.date: 11/04/2016
+ms.technology: vs-ide-compile
 ms.topic: reference
 f1_keywords:
 - vb.ProjectPropertiesAdvancedCompile
 helpviewer_keywords:
 - Advanced Compiler Settings dialog box
 ms.assetid: 1f81133a-293f-4dba-bc1c-8baafb01d857
-author: gewarren
-ms.author: gewarren
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c8aec1862424be0182e99285ac3772cc9c4bb19f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0cb77021818fd77205a598f54a4a64a1929348f2
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62792227"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68919350"
 ---
 # <a name="advanced-compiler-settings-dialog-box-visual-basic"></a>進階編譯器設定對話方塊 (Visual Basic)
 
-使用 [專案設計工具] 的 [進階編譯器設定] 對話方塊，以指定專案的進階組建組態屬性。 此對話方塊只適用於 Visual Basic 專案。
+使用 [專案設計工具]  的 [進階編譯器設定]  對話方塊，以指定專案的進階組建組態屬性。 此對話方塊只適用於 Visual Basic 專案。
 
 ## <a name="to-access-this-dialog-box"></a>若要存取此對話方塊
 
-1. 在方案總管中，選擇專案節點 (而不是 [方案] 節點)。
+1. 在方案總管  中，選擇專案節點 (而不是 [方案]  節點)。
 
-2. 在 [專案] 功能表上，按一下 [屬性]。 [專案設計工具] 出現時，請按一下 [編譯] 索引標籤。
+2. 在 [專案]  功能表上，按一下 [屬性]  。 [專案設計工具]  出現時，請按一下 [編譯]  索引標籤。
 
-3. 在[專案設計工具、編譯頁 (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md)，選取 [設定] 和 [平台]。 在簡化的組建設定中，不會顯示 [設定] 和 [平台] 清單。 如需詳細資訊，請參閱[如何：設定偵錯和版本組態](../../debugger/how-to-set-debug-and-release-configurations.md)。
+3. 在[專案設計工具、編譯頁 (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md)，選取 [設定]  和 [平台]  。 在簡化的組建設定中，不會顯示 [設定]  和 [平台]  清單。 如需詳細資訊，請參閱[如何：設定偵錯和版本組態](../../debugger/how-to-set-debug-and-release-configurations.md)。
 
-4. 按一下 [進階編譯選項]。
+4. 按一下 [進階編譯選項]  。
 
 [!INCLUDE[note_settings_general](../../data-tools/includes/note_settings_general_md.md)]
 
 ## <a name="optimizations"></a>最佳化
 
- 下列選項指定的最佳化，在某些情況下可能會讓程式檔較小、程式執行速度更快，或是加速建置程序。
+下列選項指定的最佳化，在某些情況下可能會讓程式檔較小、程式執行速度更快，或是加速建置程序。
 
 **移除整數的溢位檢查**
 
@@ -51,11 +52,11 @@ ms.locfileid: "62792227"
 
  **DLL 基底位址**
 
- 此文字方塊會以十六進位格式顯示預設的 DLL 基底位址。 在類別庫和控制項程式庫專案中，您可以使用這個文字方塊來指定在建立 DLL 時要使用的基底位址。
+此文字方塊會以十六進位格式顯示預設的 DLL 基底位址。 在類別庫和控制項程式庫專案中，您可以使用這個文字方塊來指定在建立 DLL 時要使用的基底位址。
 
  **產生偵錯資訊**
 
- 從清單中選取 [無]、[完整] 或 [僅限 pdb]。 [無] 會指定不產生任何偵錯資訊。 [完整] 指定要產生完整的偵錯資訊，而 [僅限 pdb] 則指定只應產生 PDB 偵錯資訊。 這個選項的預設值是 [完整]。
+從清單中選取 [無]  、[完整]  或 [僅限 pdb]  。 [無]  會指定不產生任何偵錯資訊。 [完整]  指定要產生完整的偵錯資訊，而 [僅限 pdb]  則指定只應產生 PDB 偵錯資訊。 這個選項的預設值是 [完整]  。
 
 ## <a name="compilation-constants"></a>編譯常數
 
@@ -63,21 +64,21 @@ ms.locfileid: "62792227"
 
  **定義 DEBUG 常數**
 
- 根據預設，會選取此核取方塊，指定將設定 DEBUG 常數。
+根據預設，會選取此核取方塊，指定將設定 DEBUG 常數。
 
  **定義 TRACE 常數**
 
- 根據預設，會選取此核取方塊，指定將設定 TRACE 常數。
+根據預設，會選取此核取方塊，指定將設定 TRACE 常數。
 
  **自訂常數**
 
- 在此文字方塊中為您的應用程式輸入任何自訂常數。 項目應該使用這種形式以逗號分隔：**Name1="Value1",Name2="Value2",Name3="Value3"**。
+在此文字方塊中為您的應用程式輸入任何自訂常數。 項目應該使用這種形式以逗號分隔：**Name1="Value1",Name2="Value2",Name3="Value3"** 。
 
 ## <a name="other-settings"></a>其他設定
 
 **產生序列化組件**
 
-此設定指定編譯器是否會建立 XML 序列化組件。 如果您已在程式碼中使用該類別將類型序列化，則序列化組件可提升 <xref:System.Xml.Serialization.XmlSerializer> 的啟動效能。 這個選項的預設值是 [自動]。[自動] 指定只有您已在程式碼中使用 <xref:System.Xml.Serialization.XmlSerializer> 將型別編碼為 XML 時，才會產生序列化組件。 [關閉] 指定不論您的程式碼是否使用 <xref:System.Xml.Serialization.XmlSerializer>，永遠不會產生序列化組件。 **On** 指定永遠會產生序列化組件。 序列化組件將命名為 `TypeName`.XmlSerializers.dll。
+此設定指定編譯器是否會建立 XML 序列化組件。 如果您已在程式碼中使用該類別將類型序列化，則序列化組件可提升 <xref:System.Xml.Serialization.XmlSerializer> 的啟動效能。 這個選項的預設值是 [自動]  。[自動]  指定只有您已在程式碼中使用 <xref:System.Xml.Serialization.XmlSerializer> 將型別編碼為 XML 時，才會產生序列化組件。 [關閉]  指定不論您的程式碼是否使用 <xref:System.Xml.Serialization.XmlSerializer>，永遠不會產生序列化組件。 **On** 指定永遠會產生序列化組件。 序列化組件將命名為 `TypeName`.XmlSerializers.dll。
 
 ## <a name="see-also"></a>另請參閱
 

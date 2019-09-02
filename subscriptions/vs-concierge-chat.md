@@ -1,21 +1,20 @@
 ---
 title: Visual Studio 訂用帳戶中的指引對談權益 | Microsoft Docs
 author: evanwindom
-ms.author: jaunger
-manager: evelynp
-ms.date: 12/19/2018
+ms.author: lank
+manager: lank
+ms.date: 07/29/2019
 ms.topic: conceptual
 description: 了解 Visual Studio 訂用帳戶中所含的指引對談權益。
-ms.openlocfilehash: 043ced3654c8bf43feebcc584fb46bb033d96e78
-ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
+ms.openlocfilehash: 543fee937437141aa38d53707cb6e5bf84031e94
+ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67784616"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68681171"
 ---
-# <a name="concierge-chat"></a>指引對談
-
-「指引對談」服務提供的協助可協助您尋找產品資訊與技術文件，以及協助您使用您的 Visual Studio 訂用帳戶權益。
+# <a name="concierge-chat-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶中的指引對談
+「指引對談」服務除了協助您使用您的 Visual Studio 訂用帳戶權益之外，也提供尋找產品資訊與技術文件的協助。
 
 此服務每天 24 小時、全年無休，但目前僅提供英文 (有關帳戶、計費與訂用帳戶)。
 
@@ -36,7 +35,6 @@ ms.locfileid: "67784616"
     > ![指引對談工作階段](_img/vs-concierge-chat/vs-concierge-chat-session.png)
 
 ## <a name="eligibility"></a>資格
-
 | 訂用帳戶層級                                                 |     通道                                            | 優勢                                                          | 可續約？    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard)   | VL, Azure, 零售, 選取的 NFR<sup>1</sup> | 可用       |  是          |
@@ -53,10 +51,15 @@ ms.locfileid: "67784616"
 不確定您使用哪一個訂用帳戶？  連線到 [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) 以查看指派給您的電子郵件地址的所有訂用帳戶。 若沒有看到您的所有訂用帳戶，可能有一或多個訂用帳戶是指派到不同的電子郵件地址。  您必須以該電子郵件地址登入才能查看對應的訂用帳戶。
 
 ## <a name="frequently-asked-questions"></a>常見問題集
-
 ### <a name="q--is-the-chat-service-available-in-multiple-languages"></a>問：對談服務支援多個語言嗎？
    答：有關帳戶、計費與訂用帳戶問題的協助支援多個語言。  有關尋找產品資訊與技術文件的協助只提供英文。
 
 ## <a name="support-resources"></a>支援資源
 - 如需 Visual Studio 訂用帳戶有關銷售、訂閱、帳戶與計費的協助，請聯繫 Visual Studio [訂用帳戶支援](https://visualstudio.microsoft.com/subscriptions/support/)。
 - 是否有關於 Visual Studio IDE、Azure DevOps Services 或其他 Visual Studio 產品或服務的問題？  前往 [Visual Studio 支援](https://visualstudio.microsoft.com/support/)
+
+## <a name="next-steps"></a>後續步驟
+如需有關 Microsoft 工具與服務的詳細資訊，請參閱下列文件：
+- [Azure](/azure/)
+- [Azure DevOps](/azure/devops/)
+- [Visual Studio IDE](/visualstudio/)

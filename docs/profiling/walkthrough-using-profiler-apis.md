@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b1b6817b31272bf01c92e77ff5b04dfff35f6ad
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 203952f712fb3b28b93d570f99e6d36f56b5f2b5
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63428120"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68870282"
 ---
 # <a name="walkthrough-using-profiler-apis"></a>逐步解說：使用分析工具 API
 
@@ -37,7 +37,7 @@ ms.locfileid: "63428120"
  針對機器碼，Visual Studio 分析工具 API 位在 *VSPerf.dll* 中。 標頭檔 (*VSPerf.h*) 和匯入程式庫 (*VSPerf.lib*) 位在 *Microsoft Visual Studio\2017\Team Tools\Performance Tools\PerfSDK* 目錄中。  針對 64 位元應用程式，資料夾為 *Microsoft Visual Studio\2017\Team Tools\Performance Tools\x64\PerfSDK*
  ::: moniker-end
 
- 針對受控碼，分析工具 API 位在 *Microsoft.VisualStudio.Profiler.dll* 中。 這個 DLL 位於 *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools* 目錄。 針對 64 位元應用程式，資料夾為 *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools\x64*。 如需詳細資訊，請參閱<xref:Microsoft.VisualStudio.Profiler>。
+ 針對受控碼，分析工具 API 位在 *Microsoft.VisualStudio.Profiler.dll* 中。 這個 DLL 位於 *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools* 目錄。 針對 64 位元應用程式，資料夾為 *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools\x64*。 如需詳細資訊，請參閱[分析工具](/previous-versions/ms242704(v=vs.140))。
 
 ## <a name="prerequisites"></a>必要條件
  本逐步解說假設您所選擇的開發環境設定成支援偵錯和取樣。 下列主題概述這些必要條件：
@@ -126,15 +126,15 @@ DataCollection.CurrentId);
 
 #### <a name="to-collect-and-view-data-in-the-visual-studio-ide"></a>在 Visual Studio IDE 中收集和檢視資料
 
-1. 開啟 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE。 在 [分析] 功能表上，指向 [分析工具]，然後選取 [新增效能工作階段]。
+1. 開啟 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE。 在 [分析]  功能表上，指向 [分析工具]  ，然後選取 [新增效能工作階段]  。
 
-2. 在 [效能總管] 視窗中，將已編譯的二進位檔新增至 [目標] 清單。 以滑鼠右鍵按一下 [目標]，然後選取 [新增目標二進位檔]。 在 [新增目標二進位檔] 對話方塊中，找到二進位檔，然後按一下 [開啟]。
+2. 在 [效能總管]  視窗中，將已編譯的二進位檔新增至 [目標]  清單。 以滑鼠右鍵按一下 [目標]  ，然後選取 [新增目標二進位檔]  。 在 [新增目標二進位檔]  對話方塊中，找到二進位檔，然後按一下 [開啟]  。
 
-3. 在 [效能總管] 工具列的 [方法] 清單中，選取 [檢測]。
+3. 在 [效能總管]  工具列的 [方法]  清單中，選取 [檢測]  。
 
-4. 按一下 [啟動並啟用分析]。
+4. 按一下 [啟動並啟用分析]  。
 
-    分析工具會檢測和執行二進位檔，並建立效能報表檔案。 效能報表檔案會出現在 [效能總管] 的 [報表] 節點中。
+    分析工具會檢測和執行二進位檔，並建立效能報表檔案。 效能報表檔案會出現在 [效能總管]  的 [報表]  節點中。
 
 5. 開啟產生的效能報表檔案。
 
@@ -170,7 +170,7 @@ DataCollection.CurrentId);
 
 ## <a name="see-also"></a>另請參閱
 
-- <xref:Microsoft.VisualStudio.Profiler>
+- [程式碼剖析工具](/previous-versions/ms242704(v=vs.140))
 - [Visual Studio 分析工具 API 參考 (原生)](../profiling/visual-studio-profiler-api-reference-native.md)
 - [快速入門](../profiling/getting-started-with-performance-tools.md)
 - [從命令列進行分析](../profiling/using-the-profiling-tools-from-the-command-line.md)

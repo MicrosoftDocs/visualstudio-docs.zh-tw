@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 47faa5e496585940f61f94bb6dfb0b8d9d70f752
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 893844741c848bee759f56dd027c9976a21902e8
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62797507"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68922783"
 ---
 # <a name="ca1306-set-locale-for-data-types"></a>CA1306:必須設定資料類型的地區設定
 
@@ -28,24 +28,24 @@ ms.locfileid: "62797507"
 |TypeName|SetLocaleForDataTypes|
 |CheckId|CA1306|
 |分類|Microsoft.Globalization|
-|中斷變更|非重大|
+|中斷變更|不中斷|
 
 ## <a name="cause"></a>原因
- 方法或建構函式會建立一或多個<xref:System.Data.DataTable?displayProperty=fullName>或是<xref:System.Data.DataSet?displayProperty=fullName>執行個體，並在未明確設定地區設定屬性 (<xref:System.Data.DataTable.Locale%2A?displayProperty=fullName>或<xref:System.Data.DataSet.Locale%2A?displayProperty=fullName>)。
+方法或函式已建立一或<xref:System.Data.DataTable?displayProperty=fullName>多<xref:System.Data.DataSet?displayProperty=fullName>個或實例, 但未明確設定 locale 屬性<xref:System.Data.DataTable.Locale%2A?displayProperty=fullName> ( <xref:System.Data.DataSet.Locale%2A?displayProperty=fullName>或)。
 
 ## <a name="rule-description"></a>規則描述
- 地區設定會決定資料，例如用於數值、 貨幣符號和排序順序設定格式化的文化特性特定展示項目。 當您建立<xref:System.Data.DataTable>或<xref:System.Data.DataSet>，您應該明確設定的地區設定。 根據預設，這些類型的地區設定會是目前的文化特性。 資料會儲存在資料庫或檔案，都共用這個全域地區設定應該通常設定為文化特性而異 (<xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=fullName>)。 當資料共用跨文化特性時，使用預設的地區設定可能會導致的內容<xref:System.Data.DataTable>或<xref:System.Data.DataSet>呈現或不正確地解譯。
+地區設定會決定資料的文化特性 (culture) 特定呈現元素, 例如數值、貨幣符號和排序次序所使用的格式。 當您建立<xref:System.Data.DataTable>或<xref:System.Data.DataSet>時, 您應該明確地設定地區設定。 根據預設, 這些類型的地區設定是目前的文化特性。 對於儲存在資料庫或檔案中且會全域共用的資料, 地區設定通常應設為不因文化特性而異<xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=fullName>()。 當資料在文化特性之間共用時, 使用預設地區設定可能會導致<xref:System.Data.DataTable>或<xref:System.Data.DataSet>的內容顯示或轉譯錯誤。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
- 若要修正此規則的違規情形，明確設定的地區設定<xref:System.Data.DataTable>或<xref:System.Data.DataSet>。
+若要修正此規則的違規情形, 請明確設定<xref:System.Data.DataTable>或<xref:System.Data.DataSet>的地區設定。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
- 它是安全的程式庫或應用程式適用於限制的本機使用者、 不共用資料，或預設設定會產生所要的行為，在所有支援的案例時隱藏此規則的警告。
+當程式庫或應用程式適用于有限的本機物件、不共用資料, 或預設設定會在所有支援的案例中產生所需的行為時, 可以安全地隱藏此規則的警告。
 
 ## <a name="example"></a>範例
- 下列範例會建立兩個<xref:System.Data.DataTable>執行個體。
+下列範例會建立兩<xref:System.Data.DataTable>個實例。
 
- [!code-csharp[FxCop.Globalization.DataTable#1](../code-quality/codesnippet/CSharp/ca1306-set-locale-for-data-types_1.cs)]
+[!code-csharp[FxCop.Globalization.DataTable#1](../code-quality/codesnippet/CSharp/ca1306-set-locale-for-data-types_1.cs)]
 
 ## <a name="see-also"></a>另請參閱
 

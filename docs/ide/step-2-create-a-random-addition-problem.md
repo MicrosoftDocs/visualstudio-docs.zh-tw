@@ -2,18 +2,21 @@
 title: 步驟 2：建立隨機加法問題
 ms.date: 11/04/2016
 ms.topic: conceptual
+dev_langs:
+- csharp
+- vb
 ms.assetid: 6461c4cf-f2aa-4bf5-91ed-06820a4f893d
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fd8af04bc320201ad5f17613c850e0140eb2596b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: d5b83edaec6b81c3a2c5699184c62dbd70d71913
+ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430778"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68416884"
 ---
 # <a name="step-2-create-a-random-addition-problem"></a>步驟 2：建立隨機加法問題
 在本教學課程的第二個部分中，您會加入以隨機數字為基礎的數學問題，藉此增加測驗的挑戰性。 您也會建立名為 `StartTheQuiz()` 的方法，這個方法會填入問題並啟動倒數計時器。 稍後在本教學課程中，您將加入減法、乘法和除法問題。
@@ -25,7 +28,7 @@ ms.locfileid: "63430778"
 
 1. 在表單設計工具中選擇表單 (**Form1**)。
 
-2. 在功能表列上依序選擇 [檢視] > [程式碼]。
+2. 在功能表列上依序選擇 [檢視]   > [程式碼]  。
 
      依您使用的程式設計語言而定，會出現 *Form1.cs* 或 *Form1.vb*，如此您就可以檢視表單的後置程式碼。
 
@@ -69,9 +72,9 @@ ms.locfileid: "63430778"
      [!code-csharp[VbExpressTutorial3Step2#18](../ide/codesnippet/CSharp/step-2-create-a-random-addition-problem_4.cs)]
      [!code-vb[VbExpressTutorial3Step2#18](../ide/codesnippet/VisualBasic/step-2-create-a-random-addition-problem_4.vb)]
 
-     這些陳述式會設定 [plusLeftLabel] 和 [plusRightLabel] 的 [Text] 屬性，讓它們顯示兩個隨機數字。 您必須使用整數的 `ToString()` 方法將數字轉換為文字。 在程式設計中，字串表示文字。 Label 控制項只會顯示文字，不會顯示數字。
+     這些陳述式會設定 [plusLeftLabel]  和 [plusRightLabel]  的 [Text]  屬性，讓它們顯示兩個隨機數字。 您必須使用整數的 `ToString()` 方法將數字轉換為文字。 在程式設計中，字串表示文字。 Label 控制項只會顯示文字，不會顯示數字。
 
-6. 在設計視窗中，按兩下 [開始] 按鈕，或是選擇該按鈕，然後選擇 **Enter** 鍵。
+6. 在設計視窗中，按兩下 [開始]  按鈕，或是選擇該按鈕，然後選擇 **Enter** 鍵。
 
      當受測者選擇這個按鈕時，測驗就會開始，而您剛加入了 Click 事件處理常式來實作該行為。
 
@@ -80,9 +83,9 @@ ms.locfileid: "63430778"
      [!code-csharp[VbExpressTutorial3Step2#4](../ide/codesnippet/CSharp/step-2-create-a-random-addition-problem_5.cs)]
      [!code-vb[VbExpressTutorial3Step2#4](../ide/codesnippet/VisualBasic/step-2-create-a-random-addition-problem_5.vb)]
 
-     第一個陳述式會呼叫新的 `StartTheQuiz()` 方法。 第二個陳述式會將 [startButton] 控制項的 [Enabled] 屬性設定為 [False]，如此受測者就無法在測驗期間選擇該按鈕。
+     第一個陳述式會呼叫新的 `StartTheQuiz()` 方法。 第二個陳述式會將 [startButton]  控制項的 [Enabled]  屬性設定為 [False]  ，如此受測者就無法在測驗期間選擇該按鈕。
 
-8. 儲存您的程式碼，並執行程式碼，然後選擇 [開始] 按鈕。
+8. 儲存您的程式碼，並執行程式碼，然後選擇 [開始]  按鈕。
 
      隨機加法問題就會出現，如下圖所示。
 

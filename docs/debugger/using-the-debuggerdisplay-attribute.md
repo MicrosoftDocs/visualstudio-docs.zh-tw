@@ -1,5 +1,5 @@
 ---
-title: 顯示自訂資訊使用 DebuggerDisplay |Microsoft Docs
+title: 使用 DebuggerDisplay 顯示自訂資訊 |Microsoft Docs
 ms.date: 01/09/2019
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,27 +12,27 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: af666497deb20f3c2d9125b4beb452f24cabbbd2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1f8046ba598873329e6aa9fcea344504f15b4dbc
+ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62929613"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68680594"
 ---
-# <a name="tell-the-debugger-what-to-show-using-the-debuggerdisplay-attribute-c-visual-basic-f-ccli"></a>告知偵錯工具来示範如何使用 DebuggerDisplay 屬性的項目 (C#，Visual Basic 中， F#， C++/CLI)
-<xref:System.Diagnostics.DebuggerDisplayAttribute> 控制物件、屬性或欄位在偵錯工具變數視窗中顯示的方式。 這個屬性可以適用於類型、委派、屬性、欄位和組件。
+# <a name="tell-the-debugger-what-to-show-using-the-debuggerdisplay-attribute-c-visual-basic-f-ccli"></a>使用 DebuggerDisplay 屬性 (C#, Visual Basic, F#, C++/cli) 告訴偵錯工具要顯示的內容
+<xref:System.Diagnostics.DebuggerDisplayAttribute> 控制物件、屬性或欄位在偵錯工具變數視窗中顯示的方式。 這個屬性可以適用於類型、委派、屬性、欄位和組件。 如果套用至基底類型, 則屬性也適用于子類別。
 
 `DebuggerDisplay` 屬性有單一引數，這是要在類型執行個體的 [值] 一欄中顯示的字串。 這個字串可以包含括號 (`{` 和 `}`)。 一對括號內的文字會評估為欄位、屬性或方法。
 
 如果類別具有覆寫的 `ToString()` 方法，偵錯工具會使用覆寫的方法，而非預設的 `{<typeName>}`。 因此，如果您已覆寫 `ToString()` 方法，偵錯工具就會使用覆寫的方法，而非預設的`{<typeName>}`，而且您不需要使用 `DebuggerDisplay`。 若兩者都使用，`DebuggerDisplay` 屬性會優先於覆寫的 `ToString()` 方法。
 
-偵錯工具是否評估這個隱含 `ToString()` 呼叫，是取決於 [工具 / 選項 / 偵錯]  對話方塊中的使用者設定。 Visual Basic 並未實作這個隱含 `ToString()` 評估。
+偵錯工具是否評估這個隱含 `ToString()` 呼叫，是取決於 [工具 / 選項 / 偵錯] 對話方塊中的使用者設定。 Visual Basic 並未實作這個隱含 `ToString()` 評估。
 
 > [!IMPORTANT]
-> 如果已核取 [工具/選項 / 偵錯]  對話方塊中的 [在變數視窗中顯示物件的原始結構]  核取方塊，即忽略 `DebuggerDisplay` 屬性。
+> 如果已核取 [工具/選項 / 偵錯] 對話方塊中的 [在變數視窗中顯示物件的原始結構] 核取方塊，即忽略 `DebuggerDisplay` 屬性。
 
 > [!NOTE]
-> 原生程式碼，支援這個屬性只能在C++/CLI 程式碼。
+> 針對機器碼, 只有C++/cli 程式碼才支援這個屬性。
 
 下表說明 `DebuggerDisplay` 屬性的一些可能用法和範例輸出。
 
@@ -90,7 +90,7 @@ public sealed class MyClass
 }
 ```
 
-」，nq"後置詞告訴顯示最終的值時，請移除引號，運算式評估工具 (nq = 沒有引號)。
+", Nq" 後置詞會告訴運算式評估工具, 在顯示最終值 (nq = no 引號) 時移除引號。
 
 ## <a name="example"></a>範例
 下列程式碼範例將示範如何使用 `DebuggerDisplay`搭配 `DebuggerBrowseable` 和 `DebuggerTypeProxy`。 在偵錯工具變數視窗中檢視時 (例如 [ **監看式** ] 視窗)，它會產生類似下面所示的展開：

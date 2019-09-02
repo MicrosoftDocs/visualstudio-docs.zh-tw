@@ -9,14 +9,16 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9124054dec08fde94ec98ca9e3ebdfb6e48d7384
-ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
+helpviewer_keywords:
+- add missing usings
+ms.openlocfilehash: d971bcdaca4efdf587c7e441f1b0b28d21388dee
+ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "65531621"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68416474"
 ---
-# <a name="generate-usings-in-visual-studio"></a>在 Visual Studio 中產生 using
+# <a name="add-missing-usings-in-visual-studio"></a>在 Visual Studio 中新增遺漏的 using
 
 此程式碼產生適用於：
 
@@ -28,18 +30,18 @@ ms.locfileid: "65531621"
 
 **原因：** 因為快速控制項目會自動新增必要的匯入，所以您不需要手動複製您程式碼需要的 `using` 陳述式。
 
-## <a name="generate-usings-refactoring"></a>產生 using 重構
+## <a name="add-missing-usings-refactoring"></a>新增遺漏的 using 重構
 
 1. 從檔案複製程式碼並貼上到新檔案中，但不包含必要的 `using` 陳述式。 產生的錯誤現在會伴隨程式碼修正，該修正會新增遺失的 `using` 陳述式。
 
     > [!NOTE]
-    > 您需要在 [工具] > [選項] > [文字編輯器] > [C#] > [進階] > [Using 指示詞] 中啟用此建議。
+    > 您需要在 [工具] > [選項] > [文字編輯器] > [C#] > [進階] > [Using 指示詞]  中啟用此建議。
 
-2. 選取 Ctrl+. 以開啟 [快速動作與重構] 功能表。
+2. 選取 Ctrl+. 以開啟 [快速動作與重構]  功能表。
 
     ![產生 using](media/generate-using-codefix.png)
 
-3. 選取 [使用\<您的參考\>] 以新增遺失的參考。
+3. 選取 [使用\<您的參考\>]  以新增遺失的參考。
 
     ![產生 using 結果](media/generate-using-result.png)
 

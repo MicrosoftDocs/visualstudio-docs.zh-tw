@@ -7,12 +7,12 @@ ms.author: ghogen
 ms.date: 11/15/2016
 ms.topic: include
 manager: jillfra
-ms.openlocfilehash: d16cdc30788ad8b05f5e794241be2f4b3fc5dba6
-ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
+ms.openlocfilehash: d71f84899bc3d49b11c5e28c1298364505f63367
+ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "68141854"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70197106"
 ---
 > [!Note]
-> 本文適用於 Visual Studio 2015。 如果您在尋找最新的 Visual Studio 版本，請使用左上角的版本選取器。 建議您升級為 Visual Studio 2019。 [請在這裡下載](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019)
+> 本文適用於 Visual Studio 2015。 如果您在尋找最新的 Visual Studio 版本，請使用左上角的版本選取器。 建議您升級為 Visual Studio 2019。 [請在這裡下載](https://visualstudio.microsoft.com/downloads)

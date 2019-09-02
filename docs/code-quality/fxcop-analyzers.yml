@@ -1,9 +1,9 @@
 ### YamlMime:YamlDocument
 documentType: LandingData
-title: 從二進位檔分析 (FxCop) 移轉至來源分析 （FxCop 分析器）
+title: 從二進位分析 (FxCop) 遷移至來源分析 (FxCop 分析器)
 metadata:
-  title: FxCop 移轉文件
-  description: 了解如何從舊版的二進位檔分析 (FxCop) 移至來源分析 （FxCop 分析器），當您分析程式碼。
+  title: FxCop 遷移檔
+  description: '瞭解如何在分析程式碼時, 從舊版二進位分析 (FxCop) 移至來源分析 (FxCop 分析器)。'
   ms.date: 07/11/2019
   ms.prod: visual-studio-dev16
   ms.technology: vs-ide-code-analysis
@@ -14,10 +14,10 @@ metadata:
   author: gewarren
   manager: jillfra
 abstract:
-  description: 了解如何分析程式碼第一次或如何從二進位檔分析 (FxCop) 移轉至新的方式，分析 managed 程式碼使用來源分析 （FxCop 分析器）。
+  description: '瞭解如何第一次分析程式碼, 或如何從二進位分析 (FxCop) 遷移至使用來源分析 (FxCop 分析器) 分析 managed 程式碼的新方式。'
   aside:
     image:
-      alt: 常見的管理工作標誌
+      alt: 一般管理工作標誌
       height: 133
       width: 48
       src: 'https://docs.microsoft.com/media/illustrations/bcs-partner-advanced-management-settings-8.svg'
@@ -25,8 +25,8 @@ abstract:
 sections:
   - title: 常見問題集
     items:
-      - html: 取得一些解答<a href="fxcop-analyzers-faq.md">常見問題集</a>二進位檔的 FxCop 分析和 FxCop 分析器中使用的來源分析之間差異的詳細資訊。
-  - title: 如果您還不熟悉程式碼分析...
+      - html: '使用 FxCop 分析器, 取得二進位 FxCop 分析與來源分析之間差異的一些<a href="fxcop-analyzers-faq.md">常見問題</a>的解答。'
+  - title: 如果您不熟悉程式碼分析 。
     items:
       - type: list
         style: cards
@@ -34,54 +34,54 @@ sections:
         columns: 2
         items:
           - href: roslyn-analyzers-overview.md
-            html: <p>了解分析器是什麼。</p>
+            html: <p>瞭解什麼是分析器。</p>
             image:
               src: 'https://docs.microsoft.com/media/common/i_learn-about.svg'
-            title: 分析器概觀
+            title: 分析器總覽
           - href: install-roslyn-analyzers.md
-            html: <p>了解如何安裝為 NuGet 套件或 Visual Studio 擴充功能的分析器。</p>
+            html: <p>瞭解如何將分析器安裝為 NuGet 套件或 Visual Studio 延伸模組。</p>
             image:
               src: 'https://docs.microsoft.com/media/common/i_setup.svg'
             title: 安裝分析器
           - href: use-roslyn-analyzers.md
-            html: '<p>了解如何使用分析器和隱藏的違規C#或 Visual Basic 程式碼。</p>'
+            html: '<p>瞭解如何流量分析器, 並隱藏或 Visual Basic C#程式碼的違規。</p>'
             image:
               src: 'https://docs.microsoft.com/media/common/i_config-tools.svg'
-            title: 設定規則的嚴重性，並隱藏錯誤
+            title: 設定規則嚴重性和隱藏錯誤
           - href: 'use-roslyn-analyzers.md#command-line-usage'
-            html: <p>了解如何使用從命令列分析器。</p>
+            html: <p>瞭解如何從命令列流量分析器。</p>
             image:
               src: 'https://docs.microsoft.com/media/common/i_cligeneric.svg'
             title: 命令列使用方式
-  - title: 如果您目前正在使用二進位檔分析 (FxCop)...
+  - title: 如果您目前使用的是二進位分析 (FxCop) 。
     items:
       - type: list
         style: cards
         className: cardsM
         columns: 2
         items:
-          - href: 'roslyn-analyzers-overview.md#roslyn-analyzers-vs-static-code-analysis'
-            html: <p>了解二進位檔分析 (FxCop) 和原始檔分析 （FxCop 分析器） 之間的差異。</p>
+          - href: 'roslyn-analyzers-overview.md#net-compiler-platform-based-analysis-versus-legacy-analysis'
+            html: <p>瞭解二進位分析 (FxCop) 與來源分析 (FxCop 分析器) 之間的差異。</p>
             image:
               src: 'https://docs.microsoft.com/media/common/i_learn-about.svg'
             title: 有何不同？
           - href: install-fxcop-analyzers.md
-            html: <p>了解如何安裝 FxCop 分析器套件。</p>
+            html: <p>瞭解如何安裝 FxCop 分析器套件。</p>
             image:
               src: 'https://docs.microsoft.com/media/common/i_setup.svg'
             title: 安裝 FxCop 分析器
           - href: fxcop-rule-port-status.md
-            html: <p>列出已移植到來源分析 （FxCop 分析器） 的二進位檔分析 (FxCop) 規則。</p>
+            html: <p>列出已移植至來源分析 (FxCop 分析器) 的二進位分析 (FxCop) 規則。</p>
             image:
               src: 'https://docs.microsoft.com/media/common/i_upgrade.svg'
-            title: 移植和 unported license 規則
+            title: 已移植和 unported license 規則
           - href: 'use-roslyn-analyzers.md#command-line-usage'
-            html: <p>如果您通常會從命令列執行程式碼分析，了解如何使用從命令列分析器。</p>
+            html: '<p>如果您通常是從命令列執行程式碼分析, 請瞭解如何從命令列流量分析器。</p>'
             image:
               src: 'https://docs.microsoft.com/media/common/i_cligeneric.svg'
             title: 命令列使用方式
           - href: analyzer-rule-sets.md
-            html: <p>深入了解分析器套件規則集。</p>
+            html: <p>瞭解分析器套件規則集。</p>
             image:
               src: 'https://docs.microsoft.com/media/common/i_code-samples.svg'
             title: 規則集
@@ -93,12 +93,12 @@ sections:
         columns: 2
         items:
           - href: code-analysis-for-c-cpp-overview.md
-            html: <p>了解如何執行程式碼分析原生C++程式碼。 分析 managedC++程式碼已被取代。</p>
+            html: <p>瞭解如何在機器碼上C++執行程式碼分析。 Managed C++程式碼的分析已被取代。</p>
             image:
               src: 'https://docs.microsoft.com/media/logos/logo_Cplusplus.svg'
             title: C++ 程式碼分析
           - href: code-metrics-values.md
-            html: <p>了解如何取得程式碼度量資訊。 程式碼度量資訊的使用者體驗會維持不變。</p>
+            html: <p>瞭解如何取得程式碼度量。 程式碼計量的使用者體驗會保持不變。</p>
             image:
               src: 'https://docs.microsoft.com/media/common/i_data-collection.svg'
             title: 程式碼度量

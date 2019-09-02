@@ -10,12 +10,12 @@ manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: ce4184cd3864cad787a4e4f8afc084445fa3c828
-ms.sourcegitcommit: 01c3c9dcade5d913bde2c7efa8c931a7b04e6cd0
+ms.openlocfilehash: aee0029553391c30fb29eb1f9fa7aba01968e5ed
+ms.sourcegitcommit: b56dc6fadc6c924beed36bb4c2ccc16cf6bcfa1c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/25/2019
-ms.locfileid: "67365303"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "68740148"
 ---
 # <a name="quickstart-create-your-first-python-web-app-using-visual-studio"></a>快速入門：使用 Visual Studio 建立您的第一個 Python Web 應用程式
 
@@ -165,7 +165,7 @@ Python 中的 Web 應用程式幾乎一律使用許多可用的 Python 程式庫
 
 **問題：哪裡可以深入了解 Flask？**
 
-**答**：請從 [Flask Quickstart](http://flask.pocoo.org/docs/0.12/quickstart/#quickstart) (Flask 快速入門) 開始參考 Flask 文件。
+**答**：請從 [Flask Quickstart](https://flask.palletsprojects.com/en/1.1.x/quickstart/#quickstart) (Flask 快速入門) 開始參考 Flask 文件。
 
 ## <a name="run-the-application"></a>執行應用程式
 

@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3db7155a991b1badbdb4ef8dadb8ccfa63817c80
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2d97ea90963f70d3a06c669f08473bab27fa08bd
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62996177"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68870336"
 ---
 # <a name="how-to-use-the-concurrency-visualizer-markers-sdk"></a>如何：使用並行視覺化檢視標記 SDK
 本主題說明如何使用並行視覺化檢視 SDK 建立範圍和寫入旗標、訊息和警示。
@@ -24,17 +24,14 @@ ms.locfileid: "62996177"
 
 2. 加入 SDK 的 `include` 陳述式和 `using` 陳述式。
 
-    ```C++
-
+    ```cpp
     #include <cvmarkersobj.h>
     using namespace Concurrency::diagnostic;
-
     ```
 
 3. 加入在預設標記系列中建立三個範圍的程式碼，並在每個範圍各寫入一個旗標、訊息和警示。 寫入旗標、訊息和警示的方法是 [marker_series](../profiling/marker-series-class.md) 類別的成員。 [span](../profiling/span-class.md) 類別的建構函式需要 `marker_series` 物件，使每個範圍與特定的標記系列相關聯。 `span` 一經刪除就會結束。
 
-    ```C++
-
+    ```cpp
     marker_series series;
     span *flagSpan = new span(series, 1, _T("flag span"));
     series.write_flag(_T("Here is the flag."));
@@ -47,17 +44,15 @@ ms.locfileid: "62996177"
     span *alertSpan = new span(series, 3, _T("alert span"));
     series.write_flag(_T("Here is the alert."));
     delete alertSpan;
-
     ```
 
-4. 在功能表列上選擇 [分析]、[並行視覺化檢視]、[從目前專案開始]，以執行應用程式並顯示 [並行視覺化檢視]。 下圖顯示 [並行視覺化檢視] 中的三個範圍和三個標記。
+4. 在功能表列上選擇 [分析]  、[並行視覺化檢視]  、[從目前專案開始]  ，以執行應用程式並顯示 [並行視覺化檢視]。 下圖顯示 [並行視覺化檢視] 中的三個範圍和三個標記。
 
      ![包含 3 個標記和警示的 [並行視覺化檢視]](../profiling/media/cvmarkersnative.png "CvMarkersNative")
 
 5. 透過呼叫 `marker_series`的建構函式以加入建立其他自訂標記系列的程式碼，而該建構函式接受標記系列的字串名稱。
 
-    ```C++
-
+    ```cpp
     marker_series flagSeries(_T("flag series"));
     span *flagSeriesSpan = new span(flagSeries, 1, _T("flag span"));
     flagSeries.write_flag(1, _T("flag"));
@@ -71,7 +66,6 @@ ms.locfileid: "62996177"
     // Sleep to even out the display in the Concurrency Visualizer.
     Sleep(50);
     delete messageSeriesSpan;
-
     ```
 
 6. 啟動目前的專案以顯示 [並行視覺化檢視]。 兩個標記序列會出現在 [執行緒] 檢視中其所屬的行。 下圖顯示兩個新範圍。
@@ -84,19 +78,17 @@ ms.locfileid: "62996177"
 
 2. 加入 SDK 的 `using` 或 `Imports` 陳述式。
 
-    ```VB
+    ```vb
     Imports Microsoft.ConcurrencyVisualizer.Instrumentation
-
     ```
 
     ```csharp
     using Microsoft.ConcurrencyVisualizer.Instrumentation;
     ```
 
-3. 加入在預設標記系列中建立三個範圍的程式碼，並在每個範圍各寫入一個旗標、訊息和警示。 您可以藉由呼叫靜態 `EnterSpan` 方法建立 <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Span> 物件。 若要寫入預設系列，請使用 <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Markers> 類別的靜態寫入方法。
+3. 加入在預設標記系列中建立三個範圍的程式碼，並在每個範圍各寫入一個旗標、訊息和警示。 您會透過呼叫靜態 `EnterSpan` 方法來建立 [Span](/previous-versions/hh694189(v=vs.140)) 物件。 若要寫入預設系列，請使用 [Markers](/previous-versions/hh694099(v=vs.140)) 類別的靜態寫入方法。
 
-    ```VB
-
+    ```vb
     Dim flagSpan As Span = Markers.EnterSpan("flag span")
     Markers.WriteFlag("Here is the flag.")
     flagSpan.Leave()
@@ -112,11 +104,9 @@ ms.locfileid: "62996177"
     System.Threading.Thread.Sleep(1)
     Markers.WriteAlert("Here is an alert")
     alertSpan.Leave()
-
     ```
 
     ```csharp
-
     Span flagSpan = Markers.EnterSpan("flag span");
     Markers.WriteFlag("Here is the flag.");
     flagSpan.Leave();
@@ -134,11 +124,11 @@ ms.locfileid: "62996177"
     alertSpan.Leave();
     ```
 
-4. 在功能表列上選擇 [分析]、[並行視覺化檢視]、[從目前專案開始]，以執行應用程式並顯示 [並行視覺化檢視]。 下圖顯示 [並行視覺化檢視] 的 [執行緒] 檢視中的三個範圍和三個標記。
+4. 在功能表列上選擇 [分析]  、[並行視覺化檢視]  、[從目前專案開始]  ，以執行應用程式並顯示 [並行視覺化檢視]。 下圖顯示 [並行視覺化檢視] 的 [執行緒] 檢視中的三個範圍和三個標記。
 
      ![包含標記和警示的 [並行視覺化檢視]](../profiling/media/cvmarkersmanaged.png "CvMarkersManaged")
 
-5. 透過使用靜態 <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Markers.CreateMarkerSeries%2A> 方法，加入建立客戶標記系列的程式碼。 <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.MarkerSeries> 類別包含建立範圍及撰寫旗標、訊息和警示的方法。
+5. 透過使用靜態 [CreateMarkerSeries](/previous-versions/hh694171(v=vs.140)) 方法來加入建立客戶標記系列的程式碼。 [MarkerSeries](/previous-versions/hh694127(v=vs.140)) 類別包含建立範圍及撰寫旗標、訊息和警示的方法。
 
     ```VB
 

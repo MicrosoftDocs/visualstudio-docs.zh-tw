@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4e8d8b5b522f805bd7e8826cea5ced394c50064f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 06fe8d4fbd4def14bfb8a24f4f211a121c809930
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62546670"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68922244"
 ---
 # <a name="ca1308-normalize-strings-to-uppercase"></a>CA1308:必須將字串標準化為大寫字母
 
@@ -28,19 +28,19 @@ ms.locfileid: "62546670"
 |TypeName|NormalizeStringsToUppercase|
 |CheckId|CA1308|
 |分類|Microsoft.Globalization|
-|中斷變更|非重大|
+|中斷變更|不中斷|
 
 ## <a name="cause"></a>原因
- 作業會正規化為小寫字串。
+作業會將字串標準化為小寫。
 
 ## <a name="rule-description"></a>規則描述
- 字串應該標準化為大寫字母。 小組的字元，它們會轉換成小寫字母時，無法構成來回行程。 若要在來回行程將字元轉換從一個地區設定為以不同的方式表示字元資料的另一個地區設定，然後以精確地表示會擷取原始的字元從已轉換的字元。
+字串應該標準化為大寫字母。 一小組字元, 當它們轉換成小寫時, 就無法進行來回行程。 若要進行來回行程, 請將一個地區設定的字元轉換成另一個地區設定, 以不同的方式表示字元資料, 然後正確地從轉換後的字元中取出原始字元。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
- 變更作業，將字串轉換成小寫，以便將字串轉換成改為大寫。 例如，將 `String.ToLower(CultureInfo.InvariantCulture)` 變更為 `String.ToUpper(CultureInfo.InvariantCulture)`。
+將字串轉換成小寫的作業, 以便將字串改成大寫。 例如，將 `String.ToLower(CultureInfo.InvariantCulture)` 變更為 `String.ToUpper(CultureInfo.InvariantCulture)`。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
- 它會安全地隱藏警告訊息，當您不進行 （例如，當您要將它顯示在 UI 中） 的結果為基礎的安全性決策。
+當您不是根據結果來進行安全性決策時 (例如, 當您在 UI 中顯示時), 可以放心地隱藏警告訊息。
 
 ## <a name="see-also"></a>另請參閱
- [全球化警告](../code-quality/globalization-warnings.md)
+[全球化警告](../code-quality/globalization-warnings.md)

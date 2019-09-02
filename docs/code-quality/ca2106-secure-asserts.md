@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c8d80c4e9a21c29ce7b34a3998e241b11713f355
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: df19d31abe88c6d12bafc933ba740badb832eb16
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62545696"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68921077"
 ---
 # <a name="ca2106-secure-asserts"></a>CA2106:必須保護判斷提示
 
@@ -31,16 +31,16 @@ ms.locfileid: "62545696"
 |中斷變更|中斷|
 
 ## <a name="cause"></a>原因
- 方法會判斷提示權限，而且不會執行安全性檢查呼叫端上。
+方法會判斷提示許可權, 且不會對呼叫端執行任何安全性檢查。
 
 ## <a name="rule-description"></a>規則描述
- 判斷提示安全性權限但未執行任何安全性檢查，會在您的程式碼中留下可能遭利用的安全性弱點。 判斷提示安全性權限，就會停止安全性堆疊查核行程。 如果您判斷提示的權限，而不執行任何檢查呼叫端上的，呼叫端可以間接執行程式碼使用您的權限。 允許您是否確定判斷提示不能用於有害的方式沒有安全性檢查，便會判斷提示。 如果您呼叫的程式碼是無害的則使用者無法將任意資訊傳遞給呼叫程式碼，判斷提示是無害的。
+判斷提示安全性權限但未執行任何安全性檢查，會在您的程式碼中留下可能遭利用的安全性弱點。 當安全性許可權被判斷提示時, 安全性堆疊就會停止。 如果您判斷提示許可權, 但未對呼叫端執行任何檢查, 呼叫者可以使用您的許可權間接執行程式碼。 如果您確定無法以有害方式使用判斷提示, 則允許不含安全性檢查的判斷提示。 如果您呼叫的程式碼無害, 或使用者無法將任意資訊傳遞給您呼叫的程式碼, 則判斷提示是無害的。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
- 若要修正此規則的違規情形，加入安全性要求的方法或其宣告的型別。
+若要修正此規則的違規, 請將安全性需求新增至方法或其宣告類型。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
- 隱藏這項規則只有在仔細的安全性檢閱之後的警告。
+只有在仔細的安全性審查之後, 才隱藏此規則的警告。
 
 ## <a name="see-also"></a>另請參閱
 

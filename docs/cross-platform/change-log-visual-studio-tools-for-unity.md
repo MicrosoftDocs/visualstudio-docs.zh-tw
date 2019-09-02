@@ -1,7 +1,7 @@
 ---
 title: 變更記錄檔 (Visual Studio Tools for Unity，Windows) | Microsoft Docs
 ms.custom: ''
-ms.date: 05/28/2019
+ms.date: 07/29/2019
 ms.technology: vs-unity-tools
 ms.topic: conceptual
 ms.assetid: ea490b7e-fc0d-44b1-858a-a725ce20e396
@@ -10,16 +10,40 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 365476e0e87f5bb8c71041ad8afbdd7db6e6f952
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: d9b89be226ca7cafbfe66a14cd606f50678a013a
+ms.sourcegitcommit: 044bb54cb4552c8f4651feb11d62e52726117e75
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67821340"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68661950"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-windows"></a>變更記錄檔 (Visual Studio Tools for Unity，Windows)
 
 Visual Studio Tools for Unity 變更記錄。
+
+## <a name="4201"></a>4.2.0.1
+
+2019 年 7 月 24 日發行
+
+### <a name="new-features"></a>新功能
+
+- **整合：**
+
+  - 已加入新的選項，現在可以從 Unity Project Explorer 建立任何類型的檔案。
+  
+  - 改善使用適用於 Unity 專案的快速建置的診斷快取。
+
+### <a name="bug-fixes"></a>錯誤 (Bug) 修正
+
+- **整合：**
+
+  - 已修正未由任何知名的編輯器處理副檔名時的問題。
+
+  - 已修正 Unity Project Explorer 中對自訂副檔名的支援。
+
+  - 已修正將設定儲存在主要對話外部的問題。
+
+  - 已移除舊版 Microsoft.VisualStudio.MPF 相依性。
 
 ## <a name="4110"></a>4.1.1.0
 
@@ -31,7 +55,7 @@ Visual Studio Tools for Unity 變更記錄。
 
   - 已將 MonoBehaviour API 更新為 2019.1。
 
-### <a name="bug-fixes"></a>Bug 修正
+### <a name="bug-fixes"></a>錯誤 (Bug) 修正
 
 - **整合：**
 
@@ -49,7 +73,7 @@ Visual Studio Tools for Unity 變更記錄。
 
   - 已新增對新批次 API 的支援，以便更快地重新載入專案。
 
-  - 已停用 Unity 專案的完整組建，改為使用 IntelliSense 錯誤和警告。 事實上，Unity 會使用代表 Unity 內部工作的類別庫專案，建立一個 Visual Studio 方案。 也就是說，當 Unity 的編譯管線遭到關閉時，它永遠不會使用或挑選 Visual Studio 中的組建結果。 在 Visual Studio 中建置只是消耗資源而已。 如果您因為有相依的工具或設定而需要完整組建，您可以停用此最佳化 (工具/選項/Tools for Unity/停用專案的完整組建)。
+  - 已停用 Unity 專案的完整建置，改為使用 IntelliSense 錯誤和警告。 事實上，Unity 會使用代表 Unity 內部工作的類別庫專案，建立一個 Visual Studio 方案。 也就是說，當 Unity 的編譯管線遭到關閉時，它永遠不會使用或挑選 Visual Studio 中的組建結果。 在 Visual Studio 中建置只是消耗資源而已。 如果您因為有相依的工具或設定而需要完整建置，您可以停用此最佳化 (工具/選項/Tools for Unity/停用專案的完整建置)。
 
   - 載入 Unity 專案時，自動顯示 Unity 專案總管 (UPE)。 UPE 將會停駐 [方案總管] 旁邊。
 
@@ -67,7 +91,7 @@ Visual Studio Tools for Unity 變更記錄。
 
   - 已新增對 ```pointer[index]``` 表單的支援，即語意上與指標取值 ```*(pointer+index)``` 表單相同。
 
-### <a name="bug-fixes"></a>Bug 修正
+### <a name="bug-fixes"></a>錯誤 (Bug) 修正
 
 - **整合：**
 
@@ -87,7 +111,7 @@ Visual Studio Tools for Unity 變更記錄。
 
 發行於 2019 年 2 月 27 日
 
-### <a name="bug-fixes"></a>Bug 修正
+### <a name="bug-fixes"></a>錯誤 (Bug) 修正
 
 - **整合：**
 
@@ -129,7 +153,7 @@ Visual Studio Tools for Unity 變更記錄。
 
   - 已新增對虛擬變數 (例外狀況和物件識別碼) 的支援。
 
-### <a name="bug-fixes"></a>Bug 修正
+### <a name="bug-fixes"></a>錯誤 (Bug) 修正
 
 - **整合：**
 
@@ -147,7 +171,7 @@ Visual Studio Tools for Unity 變更記錄。
 
 發行於 2019 年 1 月 23 日
 
-### <a name="bug-fixes"></a>Bug 修正
+### <a name="bug-fixes"></a>錯誤 (Bug) 修正
 
 - **整合：**
 
@@ -181,7 +205,7 @@ Visual Studio Tools for Unity 變更記錄。
 
   - 已新增在儲存時自動重新整理 Unity 資產資料庫的支援。 這預設會啟用，且在 Visual Studio 中儲存指令碼時，會觸發在 Unity 端的重新編譯。 您可以在 [工具]\[選項]\[Tools for Unity]\[儲存時重新整理 Unity 的 AssetDatabase] 中停用此功能。
 
-### <a name="bug-fixes"></a>Bug 修正
+### <a name="bug-fixes"></a>錯誤 (Bug) 修正
 
 - **整合：**
 
@@ -217,7 +241,7 @@ Visual Studio Tools for Unity 變更記錄。
 
 發行時間：2018 年 11 月 28 日
 
-### <a name="bug-fixes"></a>Bug 修正
+### <a name="bug-fixes"></a>錯誤 (Bug) 修正
 
 - **整合：**
 
@@ -227,7 +251,7 @@ Visual Studio Tools for Unity 變更記錄。
 
 發行時間：2018 年 11 月 19 日
 
-### <a name="bug-fixes"></a>Bug 修正
+### <a name="bug-fixes"></a>錯誤 (Bug) 修正
 
 - **偵錯工具：**
 
@@ -237,7 +261,7 @@ Visual Studio Tools for Unity 變更記錄。
 
 發行時間：2018 年 11 月 15 日
 
-### <a name="bug-fixes"></a>Bug 修正
+### <a name="bug-fixes"></a>錯誤 (Bug) 修正
 
 - **整合：**
 
@@ -247,7 +271,7 @@ Visual Studio Tools for Unity 變更記錄。
 
 發行時間：2018 年 11 月 13 日
 
-### <a name="bug-fixes"></a>Bug 修正
+### <a name="bug-fixes"></a>錯誤 (Bug) 修正
 
 - **Project Generation:**
 
@@ -257,7 +281,7 @@ Visual Studio Tools for Unity 變更記錄。
 
 於 2018 年 9 月 20 日發行
 
-### <a name="bug-fixes"></a>Bug 修正
+### <a name="bug-fixes"></a>錯誤 (Bug) 修正
 
 - **偵錯工具：**
 
@@ -267,7 +291,7 @@ Visual Studio Tools for Unity 變更記錄。
 
 發行於 2018 年 8 月 27 日
 
-### <a name="bug-fixes"></a>Bug 修正
+### <a name="bug-fixes"></a>錯誤 (Bug) 修正
 
 - **整合：**
 
@@ -277,7 +301,7 @@ Visual Studio Tools for Unity 變更記錄。
 
 發行於 2018 年 8 月 20 日
 
-### <a name="bug-fixes"></a>Bug 修正
+### <a name="bug-fixes"></a>錯誤 (Bug) 修正
 
 - **整合：**
 
@@ -295,7 +319,7 @@ Visual Studio Tools for Unity 變更記錄。
 
   - 新增泛型方法的支援。
 
-### <a name="bug-fixes"></a>Bug 修正
+### <a name="bug-fixes"></a>錯誤 (Bug) 修正
 
 - **整合：**
 
@@ -305,7 +329,7 @@ Visual Studio Tools for Unity 變更記錄。
 
 2018 年 7 月 24 日發行
 
-### <a name="bug-fixes"></a>Bug 修正
+### <a name="bug-fixes"></a>錯誤 (Bug) 修正
 
 - **Project Generation:**
 
@@ -315,7 +339,7 @@ Visual Studio Tools for Unity 變更記錄。
 
 發行於 2018 年 7 月 7 日
 
-### <a name="bug-fixes"></a>Bug 修正
+### <a name="bug-fixes"></a>錯誤 (Bug) 修正
 
 - **Project Generation:**
 
@@ -333,7 +357,7 @@ Visual Studio Tools for Unity 變更記錄。
 
   - 新增延遲類型載入支援 (最適用於網路負載和偵錯工具回應延遲)。
 
-### <a name="bug-fixes"></a>Bug 修正
+### <a name="bug-fixes"></a>錯誤 (Bug) 修正
 
 - **評估：**
 
@@ -355,7 +379,7 @@ Visual Studio Tools for Unity 變更記錄。
 
   - 新增著色器的 TextMate 文法支援 (著色器程式碼上色不再需要 C++ 工作負載)。
 
-### <a name="bug-fixes"></a>Bug 修正
+### <a name="bug-fixes"></a>錯誤 (Bug) 修正
 
 - **Project Generation:**
 
@@ -365,7 +389,7 @@ Visual Studio Tools for Unity 變更記錄。
 
 發行於 2018 年 5 月 7 日
 
-### <a name="bug-fixes"></a>Bug 修正
+### <a name="bug-fixes"></a>錯誤 (Bug) 修正
 
 - **安裝程式：**
 
@@ -391,7 +415,7 @@ Visual Studio Tools for Unity 變更記錄。
 
   - 已改善監看視窗評估體驗。
 
-### <a name="bug-fixes"></a>Bug 修正
+### <a name="bug-fixes"></a>錯誤 (Bug) 修正
 
 - **整合：**
 
@@ -411,7 +435,7 @@ Visual Studio Tools for Unity 變更記錄。
 
   - 已新增 Unity 2018.1 中新專案產生器的支援。
 
-### <a name="bug-fixes"></a>Bug 修正
+### <a name="bug-fixes"></a>錯誤 (Bug) 修正
 
 - **整合：**
 
@@ -425,7 +449,7 @@ Visual Studio Tools for Unity 變更記錄。
 
 2018 年 3 月 5 日發行
 
-### <a name="bug-fixes"></a>Bug 修正
+### <a name="bug-fixes"></a>錯誤 (Bug) 修正
 
 - **Project Generation:**
 
@@ -445,7 +469,7 @@ Visual Studio Tools for Unity 變更記錄。
 
   - 已新增 .NET Standard 的支援。
 
-### <a name="bug-fixes"></a>Bug 修正
+### <a name="bug-fixes"></a>錯誤 (Bug) 修正
 
 - **Project Generation:**
 
@@ -465,7 +489,7 @@ Visual Studio Tools for Unity 變更記錄。
 
   - 更新 2017.3 的 UnityMessage API 介面。
 
-### <a name="bug-fixes"></a>Bug 修正
+### <a name="bug-fixes"></a>錯誤 (Bug) 修正
 
 - **整合：**
 
@@ -475,7 +499,7 @@ Visual Studio Tools for Unity 變更記錄。
 
 2018 年 1 月 24 日發行
 
-### <a name="bug-fixes"></a>Bug 修正
+### <a name="bug-fixes"></a>錯誤 (Bug) 修正
 
 - **整合：**
 
@@ -505,7 +529,7 @@ Visual Studio Tools for Unity 變更記錄。
 
   - 導入針對精靈的「最新」版本。
 
-### <a name="bug-fixes"></a>Bug 修正
+### <a name="bug-fixes"></a>錯誤 (Bug) 修正
 
 - **Project Generation:**
 
@@ -523,7 +547,7 @@ Visual Studio Tools for Unity 變更記錄。
 
 發行於 2018 年 1 月 9 日
 
-### <a name="bug-fixes"></a>Bug 修正
+### <a name="bug-fixes"></a>錯誤 (Bug) 修正
 
 - **整合：**
 
@@ -545,7 +569,7 @@ Visual Studio Tools for Unity 變更記錄。
 
   - 已新增可攜式偵錯符號檔的支援。
 
-### <a name="bug-fixes"></a>Bug 修正
+### <a name="bug-fixes"></a>錯誤 (Bug) 修正
 
 - **整合：**
 
@@ -583,7 +607,7 @@ Visual Studio Tools for Unity 變更記錄。
 
   - 已新增隱含/明確轉換的支援。
 
-### <a name="bug-fixes"></a>Bug 修正
+### <a name="bug-fixes"></a>錯誤 (Bug) 修正
 
 - **評估：**
 
@@ -599,7 +623,7 @@ Visual Studio Tools for Unity 變更記錄。
 
 發行於 2017 年 8 月 15 日
 
-### <a name="bug-fixes"></a>Bug 修正
+### <a name="bug-fixes"></a>錯誤 (Bug) 修正
 
 - **Project Generation:**
 
@@ -617,7 +641,7 @@ Visual Studio Tools for Unity 變更記錄。
 
   - 已新增指標的極簡支援。
 
-### <a name="bug-fixes"></a>Bug 修正
+### <a name="bug-fixes"></a>錯誤 (Bug) 修正
 
 - **評估：**
 
@@ -645,7 +669,7 @@ Visual Studio Tools for Unity 變更記錄。
 
   - 已新增清除 MEF 快取的支援。
 
-### <a name="bug-fixes"></a>Bug 修正
+### <a name="bug-fixes"></a>錯誤 (Bug) 修正
 
 - **程式碼編輯器：**
 
@@ -673,7 +697,7 @@ Visual Studio Tools for Unity 變更記錄。
 
   - 已新增在使用 Windows 市集平台和 il2cpp 後端時對 "Player" 專案產生的支援。
 
-### <a name="bug-fixes"></a>Bug 修正
+### <a name="bug-fixes"></a>錯誤 (Bug) 修正
 
 - **程式碼編輯器：**
 
@@ -692,7 +716,7 @@ Visual Studio Tools for Unity 變更記錄。
 ## <a name="2820---30-preview-3"></a>2.8.2.0 - 3.0 Preview 3
 發行於 2017 年 1 月 25 日
 
-### <a name="bug-fixes"></a>Bug 修正
+### <a name="bug-fixes"></a>錯誤 (Bug) 修正
 
 - **專案產生：**
 
@@ -701,7 +725,7 @@ Visual Studio Tools for Unity 變更記錄。
 ## <a name="2810---30-preview-2"></a>2.8.1.0 - 3.0 Preview 2
 發行於 2017 年 1 月 23 日
 
-### <a name="bug-fixes"></a>Bug 修正
+### <a name="bug-fixes"></a>錯誤 (Bug) 修正
 
 - **程式碼編輯器：**
 
@@ -770,7 +794,7 @@ Visual Studio Tools for Unity 變更記錄。
 
   - 已切換至 Roslyn，以插入並格式化 Unity 訊息。
 
-### <a name="bug-fixes"></a>Bug 修正
+### <a name="bug-fixes"></a>錯誤 (Bug) 修正
 
 - **偵錯工具：**
 
@@ -812,7 +836,7 @@ Visual Studio Tools for Unity 變更記錄。
 
   - 已新增遺漏的 MonoBehaviors。
 
-### <a name="bug-fixes"></a>Bug 修正
+### <a name="bug-fixes"></a>錯誤 (Bug) 修正
 
 - **一般：**
 
@@ -848,7 +872,7 @@ Visual Studio Tools for Unity 變更記錄。
 
   - 已移除與 Unity 專案無關的 Visual Studio 屬性頁。
 
-### <a name="bug-fixes"></a>Bug 修正
+### <a name="bug-fixes"></a>錯誤 (Bug) 修正
 
 - **專案產生：**
 
@@ -884,7 +908,7 @@ Visual Studio Tools for Unity 變更記錄。
 
 - Unity 5.2 支援
 
-### <a name="bug-fixes"></a>Bug 修正
+### <a name="bug-fixes"></a>錯誤 (Bug) 修正
 
 - 在 Unity < 4.2 顯示功能表項目
 
@@ -902,7 +926,7 @@ Visual Studio Tools for Unity 變更記錄。
 
 發行於 2015 年 7 月 20 日
 
-### <a name="bug-fixes"></a>Bug 修正
+### <a name="bug-fixes"></a>錯誤 (Bug) 修正
 
 - **Unity 整合：**
 
@@ -983,7 +1007,7 @@ Visual Studio Tools for Unity 變更記錄。
 
 - **UI：** 在 Visual Studio 中新增 Visual Studio Tools for Unity [選項]  對話方塊。
 
-### <a name="bug-fixes"></a>Bug 修正
+### <a name="bug-fixes"></a>錯誤 (Bug) 修正
 
 - **Unity Project Explorer：**
 
@@ -1052,7 +1076,7 @@ Visual Studio Tools for Unity 變更記錄。
 
 - 支援從 Unity 開啟 Visual Studio 中的著色器。
 
-### <a name="bug-fixes"></a>Bug 修正
+### <a name="bug-fixes"></a>錯誤 (Bug) 修正
 
 - 在 Visual Studio 中觸發附加並播放之後，於 Unity 中啟動遊戲之前清除通訊端。 這會修正使用附加並播放時，Unity 和 VS 之間的一些連接穩定性問題。
 
@@ -1074,7 +1098,7 @@ Visual Studio Tools for Unity 變更記錄。
 
 - 如果沒有本機文件，預設會是線上 Unity 文件。
 
-### <a name="bug-fixes"></a>Bug 修正
+### <a name="bug-fixes"></a>錯誤 (Bug) 修正
 
 - 修正網域重新載入之後遇到中斷點時，可能發生的 Unity 損毀。
 
@@ -1102,7 +1126,7 @@ Visual Studio Tools for Unity 變更記錄。
 
 - 從 Visual Studio 刪除或重新命名檔案時，會刪除並重新命名 .meta 檔。
 
-### <a name="bug-fixes"></a>Bug 修正
+### <a name="bug-fixes"></a>錯誤 (Bug) 修正
 
 - 修正 Visual Studio 佈景主題的處理。 之前，黑色佈景主題的對話方塊可能會顯示為空白。
 
@@ -1160,7 +1184,7 @@ Visual Studio Tools for Unity 變更記錄。
 
 - 新增命令，以同步處理 Unity Project Explorer 與目前文件。
 
-### <a name="bug-fixes"></a>Bug 修正
+### <a name="bug-fixes"></a>錯誤 (Bug) 修正
 
 - 修正條件式中斷點，其條件會在啟動偵錯工具之前設定。
 
@@ -1199,7 +1223,7 @@ Visual Studio Tools for Unity 變更記錄。
 
 - 新增設定，以停用 mdb 偵錯符號的產生。 如果您要自行產生 mdb，這會很有用。
 
-### <a name="bug-fixes"></a>Bug 修正
+### <a name="bug-fixes"></a>錯誤 (Bug) 修正
 
 - 修正在 VS 中開啟 Unity >= 4.2 的檔案會失去 IntelliSense 時的回復。
 
@@ -1223,7 +1247,7 @@ Visual Studio Tools for Unity 變更記錄。
 
 - 修飾 Debug.Log 的呼叫，不包含訊息中的 StackTrace 開頭。
 
-### <a name="bug-fixes"></a>Bug 修正
+### <a name="bug-fixes"></a>錯誤 (Bug) 修正
 
 - 修正我們可能對 Visual Studio 中 JavaScript 檔案的預設處理造成干擾的 Bug。
 
@@ -1265,7 +1289,7 @@ Visual Studio Tools for Unity 變更記錄。
 
 - 改進遠端偵錯預覽的遠端編輯器探索。
 
-### <a name="bug-fixes"></a>Bug 修正
+### <a name="bug-fixes"></a>錯誤 (Bug) 修正
 
 - 修正中斷連接偵錯工具之後，VS 中的執行緒可能會遺漏的 Bug。
 
@@ -1289,7 +1313,7 @@ Visual Studio Tools for Unity 變更記錄。
 
 發行於 2013 年 7 月 9 日
 
-### <a name="bug-fixes"></a>Bug 修正
+### <a name="bug-fixes"></a>錯誤 (Bug) 修正
 
 - 處理運算式評估工具中的完整名稱。
 
@@ -1313,7 +1337,7 @@ Visual Studio Tools for Unity 變更記錄。
 
 發行於 2013 年 4 月 9 日
 
-### <a name="bug-fixes"></a>Bug 修正
+### <a name="bug-fixes"></a>錯誤 (Bug) 修正
 
 - 針對發生 IO 錯誤時的程式碼完成 (例如唯讀檔案或 Visual Studio 鎖定的檔案)，修正 Unity 組件的本機部署。
 
@@ -1357,7 +1381,7 @@ Visual Studio Tools for Unity 變更記錄。
 
 - UnityVS 現在會在 VS 建置專案時要求重新整理組建，而不是在儲存檔案時。
 
-### <a name="bug-fixes"></a>Bug 修正
+### <a name="bug-fixes"></a>錯誤 (Bug) 修正
 
 - 修正我們的自訂 .NET 設定檔
 
@@ -1453,7 +1477,7 @@ Visual Studio Tools for Unity 變更記錄。
 
 - 新增 [應用程式開發介面](../cross-platform/share-the-unity-log-callback-with-vstu.md) ，讓使用者參與 LogCallback。
 
-### <a name="bug-fixes"></a>Bug 修正
+### <a name="bug-fixes"></a>錯誤 (Bug) 修正
 
 - 修正 Visual Studio 2012 中 Unity Project Explorer 的背景回復。
 
@@ -1470,7 +1494,7 @@ Visual Studio Tools for Unity 變更記錄。
 ## <a name="10100"></a>1.0.10.0
 發行於 2012 年 10 月 9 日
 
-### <a name="bug-fixes"></a>Bug 修正
+### <a name="bug-fixes"></a>錯誤 (Bug) 修正
 
 - 修正 Visual Studio 2010 中 Unity Project Explorer 的背景。
 
@@ -1484,7 +1508,7 @@ Visual Studio Tools for Unity 變更記錄。
 
 發行於 2012 年 10 月 3 日
 
-### <a name="bug-fixes"></a>Bug 修正
+### <a name="bug-fixes"></a>錯誤 (Bug) 修正
 
 - 修正 Unity 專案包含實際 JavaScript 資產時的專案產生。
 
@@ -1504,7 +1528,7 @@ Visual Studio Tools for Unity 變更記錄。
 
 發行於 2012 年 9 月 26 日
 
-### <a name="bug-fixes"></a>Bug 修正
+### <a name="bug-fixes"></a>錯誤 (Bug) 修正
 
 - 修正指令碼開啟工具取得專案路徑的方式，以確保能夠同時開啟 Visual Studio 和指令碼。
 
@@ -1520,7 +1544,7 @@ Visual Studio Tools for Unity 變更記錄。
 
 - Visual Studio 2012 支援。
 
-### <a name="bug-fixes"></a>Bug 修正
+### <a name="bug-fixes"></a>錯誤 (Bug) 修正
 
 - 修正 Editor 和 Plugins 專案檔的產生，以符合 Unity 的行為。
 
@@ -1536,7 +1560,7 @@ Visual Studio Tools for Unity 變更記錄。
 
 發行於 2012 年 9 月 10 日
 
-### <a name="bug-fixes"></a>Bug 修正
+### <a name="bug-fixes"></a>錯誤 (Bug) 修正
 
 - 修正指令碼或著色器有無效的 xml 字元時的專案檔產生。
 
@@ -1552,7 +1576,7 @@ Visual Studio Tools for Unity 變更記錄。
 
     如果您的 Asset 資料夾中有 .NET .dll 組件及其關聯的 .pdb，只要重新匯入組件，UnityVS 便會將 .pdb 轉換成 Unity 指令碼引擎了解的偵錯符號檔，並且您能夠從 UnityVS 逐步執行 .NET 組件。
 
-### <a name="bug-fixes"></a>Bug 修正
+### <a name="bug-fixes"></a>錯誤 (Bug) 修正
 
 - 修正 Unity 內的方法或屬性擲回之例外狀況造成偵錯時所發生的 UnityVS 損毀。
 
@@ -1564,7 +1588,7 @@ Visual Studio Tools for Unity 變更記錄。
 
 - 新增組態選項，以停用 UnityVS 從 Unity 開啟檔案的用法。
 
-### <a name="bug-fixes"></a>Bug 修正
+### <a name="bug-fixes"></a>錯誤 (Bug) 修正
 
 - 修正非編輯器專案之 UnityEditor 參考的產生。
 
@@ -1576,7 +1600,7 @@ Visual Studio Tools for Unity 變更記錄。
 
 發行於 2012 年 8 月 30 日
 
-### <a name="bug-fixes"></a>Bug 修正
+### <a name="bug-fixes"></a>錯誤 (Bug) 修正
 
 - 修正與 PythonTools 偵錯工具的衝突。
 

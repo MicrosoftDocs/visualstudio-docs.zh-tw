@@ -9,12 +9,12 @@ ms.author: seiyer
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 840c8af686783a365608c1fe01661569e345add1
-ms.sourcegitcommit: 16bcaca215de75479695738d3c2d703c78c3500e
+ms.openlocfilehash: 519c7f233866bf71bb342d4f740b3e0a90a4ba72
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/21/2019
-ms.locfileid: "67309804"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68925988"
 ---
 # <a name="overview-report-a-problem"></a>概觀：回報問題
 
@@ -110,7 +110,7 @@ ms.locfileid: "67309804"
 
 建議您使用搜尋來確保您即將回報的問題尚未回報。 如果發現符合您問題的現有項目，請追蹤該問題票證並對其進行投票。
 
- 請提供可協助我們小組重現您所遭遇問題的一切資訊。  這項資訊包含所需的重現步驟、程式碼片段、螢幕擷取畫面、重現記錄、記錄檔和其他成品。  以下是[如何在 Visual Studio 中回報問題](./how-to-report-a-problem-with-visual-studio.md)。
+請提供可協助我們小組重現您所遭遇問題的一切資訊。  這項資訊包含所需的重現步驟、程式碼片段、螢幕擷取畫面、重現記錄、記錄檔和其他成品。  以下是[如何在 Visual Studio 中回報問題](./how-to-report-a-problem-with-visual-studio.md)。
 
 ### <a name="how-is-my-feedback-prioritized"></a>如何設定意見反應的優先順序？
 

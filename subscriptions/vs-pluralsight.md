@@ -1,17 +1,17 @@
 ---
 title: Visual Studio 訂用帳戶的 Pluralsight 權益 | Microsoft Docs
 author: evanwindom
-ms.author: jaunger
-manager: evelynp
-ms.date: 01/25/2019
+ms.author: lank
+manager: lank
+ms.date: 08/02/2019
 ms.topic: conceptual
 description: 了解有關隨附於所選 Visual Studio 訂用帳戶的 Pluralsight 訓練課程訂用帳戶。
-ms.openlocfilehash: bc80d8d799a0cca92bfa78cb1e96424f227fe9ef
-ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
+ms.openlocfilehash: 897790684420c35d173f1d8144f735815ca4034f
+ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67784887"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68787649"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶中的 Pluralsight 訓練課程權益
 
@@ -32,36 +32,27 @@ ms.locfileid: "67784887"
    > **「請注意： 如果您先前透過 Visual Studio 訂用帳戶啟用其他 Pluralsight 供應項目，此代碼可能無法讓您建立新的 Pluralsight 帳戶。」**
 
 2. 您會收到已成功擷取優待券代碼的通知。  按一下 [啟用]  。
-   > [!div class="mx-imgBorder"]
-   > ![Pluralsight 權益啟用](_img/vs-pluralsight/vs-pluralsight-activate.png)
 
 3. 系統會將您重新導向至 Visual Studio 訂閱隨附的 Pluralsight 權益頁面。
    - 在表單中提供要求的連絡資訊
    - 按一下核取方塊，接受使用條款和隱私權原則
    - 按一下 [I agree, activate benefit] (我同意，啟用權益)  。
-     > [!div class="mx-imgBorder"]
-     > ![Pluralsight 權益啟用](_img/vs-pluralsight/vs-pluralsight-create-account-no-code.png)  
-     > [!div class="mx-imgBorder"]
-     > ![Pluralsight 權益條款](_img/vs-pluralsight/vs-pluralsight-terms.png)
+   > [!div class="mx-imgBorder"]
+   > ![Pluralsight 啟用您的權益](_img/vs-pluralsight/vs-pluralsight-create-account.png)
 
 5. 可能需要一點時間來設定您的帳戶。  完成之後，您將會在頁面上看到確認訊息，並收到一封電子郵件，其中包含您的登入資訊。  此電子郵件將會傳送至您在建立帳戶時所指定的別名。  如果找不到此郵件，請務必檢查您的垃圾郵件資料夾。
-   > [!div class="mx-imgBorder"]
-   > ![Pluralsight 權益確認](_img/vs-pluralsight/vs-pluralsight-confirmation-vse.png)
-   >
+
    > [!NOTE]
    > 如果您的帳戶不符合兌換新供應項目的資格，您收到的電子郵件將會說明由於不符合資格，因此無法建立您的帳戶。  它也會包含可協助您連絡 Pluralsight 支援小組的資訊，該小組可回答您對帳戶可能有的任何疑問。
+   
 
 6. 一旦成功建立您的帳戶，您會收到一封電子郵件，其中包含您的使用者名稱，並要求您建立密碼。  請提供您的密碼，再次輸入加以確認，然後按一下 [Log in to Pluralsight (登入 Pluralsight)]  。
    > [!div class="mx-imgBorder"]
    > ![Pluralsight 權益歡迎電子郵件](_img/vs-pluralsight/vs-pluralsight-welcome-email.png)
 
 7. 輸入歡迎電子郵件中所提供的使用者名稱，以及您剛才建立的密碼，然後按一下 [Sign in (登入)]  。
-   > [!div class="mx-imgBorder"]
-   > ![Pluralsight 權益登入](_img/vs-pluralsight/vs-pluralsight-login.png)
 
 8. 就這麼容易！  您現在準備好要開始學習數以千計的 Pluralsight 課程！
-   > [!div class="mx-imgBorder"]
-   > ![Pluralsight 權益首頁](_img/vs-pluralsight/vs-pluralsight-home.png)
 
 ## <a name="eligibility"></a>資格
 
