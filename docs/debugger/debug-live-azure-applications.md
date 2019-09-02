@@ -12,12 +12,12 @@ manager: jillfra
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: fae6be8932731e5589dbc27f5084bcbc509680c1
-ms.sourcegitcommit: 9fc8b144d4ed1c46aba87c0b7e1d24454e0eea9d
+ms.openlocfilehash: 6944c930ba6357fffeebba417a32cd167bd4debd
+ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "68493310"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70179832"
 ---
 # <a name="debug-live-aspnet-azure-apps-using-the-snapshot-debugger"></a>使用快照偵錯工具針對即時 ASP.NET Azure 應用程式進行偵錯
 
@@ -37,7 +37,7 @@ ms.locfileid: "68493310"
 * 快照偵錯工具只有從 Visual Studio 2017 Enterprise 15.5 版或更高版本的**Azure 開發工作負載**開始提供。 (您可以在 [個別元件] 索引標籤下的 [偵錯和測試] > [快照偵錯工具]底下找到它。)
 
    ::: moniker range=">=vs-2019"
-   如果尚未安裝, 請安裝[Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019)。 如果您是從先前的 Visual Studio 安裝進行更新, 請執行 Visual Studio 安裝程式, 並檢查 [ **ASP.NET 和 網頁程式開發] 工作負載**中的 [快照偵錯工具] 元件。
+   如果尚未安裝, 請安裝[Visual Studio 2019](https://visualstudio.microsoft.com/downloads)。 如果您是從先前的 Visual Studio 安裝進行更新, 請執行 Visual Studio 安裝程式, 並檢查 [ **ASP.NET 和 網頁程式開發] 工作負載**中的 [快照偵錯工具] 元件。
    ::: moniker-end
    ::: moniker range="<=vs-2017"
    如果尚未安裝，請安裝 [Visual Studio 2017 Enterprise 15.5 版](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)或更新版本。 如果您要從先前的 Visual Studio 2017 安裝進行更新, 請執行 Visual Studio 安裝程式, 並檢查**ASP.NET 和 網頁程式開發工作負載**中的快照偵錯工具元件。

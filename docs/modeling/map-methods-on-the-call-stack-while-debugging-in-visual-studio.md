@@ -28,12 +28,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8641a677ae36ad5a3c1f0f4344fc5c12b8798d7d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 061204de382e95349e141e3321aa033fcf9ccdbc
+ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445149"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70180067"
 ---
 # <a name="map-methods-on-the-call-stack-while-debugging-in-visual-studio"></a>在 Visual Studio 中進行偵錯時對應呼叫堆疊上的方法
 
@@ -51,7 +51,7 @@ ms.locfileid: "63445149"
 
 ::: moniker range="vs-2019"
 
-- [Visual Studio 企業版](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019)
+- [Visual Studio 企業版](https://visualstudio.microsoft.com/downloads)
 
 ::: moniker-end
 
@@ -59,7 +59,7 @@ ms.locfileid: "63445149"
 
   請參閱：
 
-- [影片：使用 Code Map 偵錯工具整合 (Channel 9) 以視覺化方式進行偵錯](http://go.microsoft.com/fwlink/?LinkId=293418)
+- [影片：使用 Code Map 偵錯工具整合以視覺化方式進行偵錯工具 (Channel 9)](http://go.microsoft.com/fwlink/?LinkId=293418)
 
 - [對應呼叫堆疊](#MapStack)
 
@@ -79,7 +79,7 @@ ms.locfileid: "63445149"
 
 1. 開始偵錯。 (鍵盤：**F5**)
 
-2. 您的應用程式進入中斷模式或是您逐步執行函式之後，請選擇**Code Map**。 (鍵盤：**Ctrl** + **Shift** + **`**)
+2. 您的應用程式進入中斷模式或是您逐步執行函式之後，請選擇**Code Map**。 (鍵盤：**Ctrl**  +  **Shift**) +  **`**
 
      ![選擇 [Code Map] 開始對應堆疊呼叫](../debugger/media/debuggermap_choosecodemap.png)
 
@@ -105,7 +105,7 @@ ms.locfileid: "63445149"
 
  現在您已經有對應-什麼接下來？ 如果您正在使用 C# 或 Visual Basic 中，新增項目，例如欄位、 屬性和其他方法，來追蹤程式碼中的情況。
 
- 按兩下某個方法以查看它的程式碼定義，或使用方法的捷徑功能表 (鍵盤：選取的方法，在地圖，然後按**F12**)
+ 按兩下某個方法以查看它的程式碼定義，或使用方法的捷徑功能表 (鍵盤：選取地圖上的方法, 然後按**F12**)
 
  ![移至 Code Map 上方法的程式碼定義](../debugger/media/debuggermap_gotocodedefinition.png)
 
@@ -156,7 +156,7 @@ ms.locfileid: "63445149"
 
    變更對應圖不會影響以任何方式的程式碼。 請放心地重新命名、移動或移除對應圖上的任何項目。
 
-- **此訊息是什麼意思：「 圖表可能根據舊版程式碼 」？**
+- **這則訊息的意義:「圖表可能是以較舊版本的程式碼為基礎」嗎？**
 
    從您上次更新對應圖之後，程式碼可能已經變更。 例如，對應圖上的某個呼叫可能已經不再存在於程式碼中。 關閉訊息，然後先嘗試重建方案後再更新對應圖。
 
@@ -178,7 +178,7 @@ ms.locfileid: "63445149"
 
 - **如何停止自動加入新的呼叫堆疊的對應？**
 
-   選擇![按鈕&#45;顯示呼叫堆疊 code map 上自動](../debugger/media/debuggermap_automaticupdateicon.gif)map 工具列上。 若要手動新增至對應的目前呼叫堆疊，請按**Ctrl** + **Shift** + **`**。
+   選擇![按鈕&#45;顯示呼叫堆疊 code map 上自動](../debugger/media/debuggermap_automaticupdateicon.gif)map 工具列上。 若要手動新增至對應的目前呼叫堆疊，請按**Ctrl** + **Shift** +  **`** 。
 
    偵錯時，將現有的呼叫堆疊，在地圖上反白顯示對應圖會繼續。
 

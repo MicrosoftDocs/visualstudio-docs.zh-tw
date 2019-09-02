@@ -1,6 +1,6 @@
 # [Visual Studio 訂閱](index.md)
 ## [新功能](whats-new-in-subscriptions.md)
-## 訂閱
+## 訂用帳戶
 ### 購買訂用帳戶
 #### [零售](https://visualstudio.microsoft.com/vs/pricing)
 #### 雲端 
@@ -45,10 +45,9 @@
 ##### [MSDN Magazine 訂閱](vs-msdn.md)
 ##### [Pluralsight](vs-pluralsight.md)
 #### 支援 
-##### [Azure 諮詢對談](vs-azure-advisory-chat.md)
 ##### [Azure 社群](vs-azure-community.md)
 ##### [指引支援](vs-concierge-chat.md)
-##### [技術支援](vs-tech-support.md)
+##### [技術支援事宜](vs-tech-support.md)
 ## 軟體與金鑰
 ### 軟體下載
 #### [產品可用性](product-availability.md)
