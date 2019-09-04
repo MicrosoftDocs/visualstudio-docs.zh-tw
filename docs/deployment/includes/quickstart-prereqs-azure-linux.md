@@ -1,16 +1,16 @@
 ---
-ms.openlocfilehash: 29aedc73173de34723f0db846a26c82cbde64f41
-ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
+ms.openlocfilehash: 6c2065eee7663b627623bf7c68a4a94027c9be57
+ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "68143629"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70197107"
 ---
 ## <a name="prerequisites"></a>必要條件
 
 ::: moniker range=">=vs-2019"
 
-* [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019)，已安裝您所選語言適用的工作負載：
+* [Visual Studio 2019](https://visualstudio.microsoft.com/downloads)，已安裝您所選語言適用的工作負載：
   * ASP.NET：**ASP.NET 與網頁程式開發**
 ::: moniker-end
 ::: moniker range="vs-2017"

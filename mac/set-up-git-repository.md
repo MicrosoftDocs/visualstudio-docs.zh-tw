@@ -3,14 +3,14 @@ title: 設定 Git 存放庫
 description: 在 Visual Studio for Mac 中使用 Git 和 Subversion。
 author: jmatthiesen
 ms.author: jomatthi
-ms.date: 02/15/2018
+ms.date: 02/15/2019
 ms.assetid: E992FA1D-B2AD-4A28-ADC6-47E4FC471060
-ms.openlocfilehash: 4fbee486a2e0263621f501b511d62abddbda8059
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.openlocfilehash: 9b21ed322d2b22be619a71e474a3b5078607bbe5
+ms.sourcegitcommit: cf8c0fef2b9690595e99ce3802586cdd55fd37c2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67692400"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70107895"
 ---
 # <a name="set-up-a-git-repository"></a>設定 Git 存放庫
 
@@ -81,7 +81,7 @@ Git 是一種分散式版本控制系統，可讓小組同時處理相同的文�
 
     ![版本控制功能表](media/version-control-git10.png)
 
-10. 在您開始進行其他變更時，請選取 [推送變更] ****   以將變更推送至 **遠端** 存放庫。 這將允許所有適當的使用者在 github.com 上進行檢視：
+10. 在您開始進行其他變更時，請選取 [推送變更]  以將變更推送到 **remote** 存放庫。 這將允許所有適當的使用者在 github.com 上進行檢視：
 
     ![將變更推送到遠端存放庫](media/version-control-git11.png)
 

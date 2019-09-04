@@ -4,15 +4,14 @@ description: 在 Visual Studio for Mac 中使用 Azure Functions。
 author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
-ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 38FD2070-5151-482E-B0A9-993715128736
-ms.openlocfilehash: f1c619bbddd5116ad2d425909d80e30ca99e06c3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1a2dd0f797d362edf5d75f798ff4578cc3c2b50c
+ms.sourcegitcommit: cf8c0fef2b9690595e99ce3802586cdd55fd37c2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62934252"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70108016"
 ---
 # <a name="tutorial-getting-started-with-azure-functions"></a>教學課程：開始使用 Azure Functions
 
@@ -34,13 +33,13 @@ ms.locfileid: "62934252"
 
 1. 啟動 **Visual Studio for Mac**。
 
-2. 選取 [檔案] > [新增方案]。
+2. 選取 [檔案] > [新增方案]  。
 
-3. 從 [雲端] > [一般] 類別，選取 [Azure Functions] 範本。 您將使用 C# 建立 .NET 類別庫來裝載 Azure 函式。 按 [ **下一步**]。
+3. 從 [雲端] > [一般]  類別，選取 [Azure Functions]  範本。 您將使用 C# 建立 .NET 類別庫來裝載 Azure 函式。 按 [ **下一步**]。
 
     ![選取 [Azure Functions] 範本](media/azure-functions-lab-image1.png)
 
-4. 將 [專案名稱] 設定為 **"AzureFunctionsLab"**，然後按一下 [建立]。
+4. 將 [專案名稱]  設定為 **"AzureFunctionsLab"** ，然後按一下 [建立]  。
 
     ![命名及建立您的 Azure Functions 專案](media/azure-functions-lab-image2.png)
 
@@ -57,25 +56,25 @@ ms.locfileid: "62934252"
 
 1. 登入您的 Azure 帳戶 (網址為 [https://portal.azure.com](https://portal.azure.com))。
 
-1. 在畫面左側的 [我的最愛] 區段下，選取 [儲存體帳戶]：
+1. 在畫面左側的 [我的最愛]  區段下，選取 [儲存體帳戶]  ：
 
     ![Azure 入口網站的 [我的最愛] 區段顯示 [儲存體帳戶] 項目](media/azure-functions-lab-image4.png)
 
-1. 選取 [新增] 建立新的儲存體帳戶：
+1. 選取 [新增]  建立新的儲存體帳戶：
 
     ![新增儲存體帳戶的按鈕](media/azure-functions-lab-image5.png)
 
-1. 在 [名稱] 中輸入全域唯一名稱，並在 [資源群組] 中重複使用。 您可以保留所有其他項目的預設值。
+1. 在 [名稱]  中輸入全域唯一名稱，並在 [資源群組]  中重複使用。 您可以保留所有其他項目的預設值。
 
     ![新儲存體帳戶的詳細資料](media/azure-functions-lab-image6.png)
 
-1. 按一下 [建立] 。 建立儲存體帳戶可能需要幾分鐘的時間。 成功建立之後，您會收到通知。
+1. 按一下 [建立]  。 建立儲存體帳戶可能需要幾分鐘的時間。 成功建立之後，您會收到通知。
 
     ![部署成功通知](media/azure-functions-lab-image7.png)
 
-1. 從 [通知] 選取 [前往資源] 按鈕。
+1. 從 [通知] 選取 [前往資源]  按鈕。
 
-1. 選取 [存取金鑰] 索引標籤。
+1. 選取 [存取金鑰]  索引標籤。
 
     ![存取金鑰設定](media/azure-functions-lab-image8.png)
 
@@ -89,11 +88,11 @@ ms.locfileid: "62934252"
 
 ## <a name="example-3-creating-and-debugging-an-azure-function"></a>範例 3：建立及偵錯 Azure 函式
 
-1. 您現在已準備好開始新增一些程式碼。 使用 .NET 類別庫時，Azure 函式會新增為靜態方法。 從 **Solution Pad**，以滑鼠右鍵按一下 [AzureFunctions] 專案節點，然後選取 [新增] > [新增函式]：
+1. 您現在已準備好開始新增一些程式碼。 使用 .NET 類別庫時，Azure 函式會新增為靜態方法。 從 **Solution Pad**，以滑鼠右鍵按一下 [AzureFunctions]  專案節點，然後選取 [新增] > [新增函式]  ：
 
     ![[新增函式] 選項](media/azure-functions-lab-image11.png)
 
-1. 在 [新增 Azure 函式] 對話方塊中，選取 [Generic WebHook] \(一般 WebHook\) 範本。 將 [名稱] 設定為 **Add**，然後按一下 [確定] 建立您的函式：
+1. 在 [新增 Azure 函式] 對話方塊中，選取 [Generic WebHook] \(一般 WebHook\) 範本。 將 [名稱]  設定為 **Add**，然後按一下 [確定]  建立您的函式：
 
     ![[新增 Azure 函式] 對話方塊](media/azure-functions-lab-image12.png)
 
@@ -131,7 +130,7 @@ ms.locfileid: "62934252"
 
     ![醒目提示初始設定方法的新 Run 方法](media/azure-functions-lab-image14.png)
 
-1. 第一個參數以 **HttpTrigger** 屬性標示，表示此方法是由 HTTP 要求叫用。 該屬性也會指定方法的授權層級，以及其支援的動詞命令 (在本例中只支援 **"GET"**)。 您也可以選擇性地定義 **Route** 來覆寫方法的路徑，並提供方法來自動從路徑擷取變數。 由於 **Route** 在這裡為 Null，因此這個方法的路徑將預設為 **/api/Add**。
+1. 第一個參數以 **HttpTrigger** 屬性標示，表示此方法是由 HTTP 要求叫用。 該屬性也會指定方法的授權層級，以及其支援的動詞命令 (在本例中只支援 **"GET"** )。 您也可以選擇性地定義 **Route** 來覆寫方法的路徑，並提供方法來自動從路徑擷取變數。 由於 **Route** 在這裡為 Null，因此這個方法的路徑將預設為 **/api/Add**。
 
     ![醒目提示參數的新 Run 方法](media/azure-functions-lab-image15.png)
 
@@ -143,7 +142,7 @@ ms.locfileid: "62934252"
 
     ![在換行中設定中斷點](media/azure-functions-lab-image17.png)
 
-1. 按 **F5** 鍵或選取 [執行] > [開始偵錯]，在偵錯工作階段中建置並執行專案。 您也可以按一下 [執行] 按鈕。 這些選項都會執行相同的工作。 此實驗室的其餘部分參考 **F5**，但您可以使用最慣用的方法。
+1. 按 **F5** 鍵或選取 [執行] > [開始偵錯]  ，在偵錯工作階段中建置並執行專案。 您也可以按一下 [執行]  按鈕。 這些選項都會執行相同的工作。 此實驗室的其餘部分參考 **F5**，但您可以使用最慣用的方法。
 
     ![建置並執行專案](media/azure-functions-lab-image18.png)
 
@@ -165,9 +164,9 @@ ms.locfileid: "62934252"
 
 1. 按 **F5** 鍵繼續執行。
 
-1. 在瀏覽器中，會呈現方法的 XML 結果。 如預期般，硬式編碼的加法運算會產生可能的總和。 請注意，如果您在 Safari 中只看到 "3"，請移至 [Safari] > [Preferences] \(喜好設定\) > [Advanced] \(進階\)，然後勾選 [Show Develop menu in menu bar] \(在功能表列中顯示開發功能表\) 核取方塊並重新載入頁面。
+1. 在瀏覽器中，會呈現方法的 XML 結果。 如預期般，硬式編碼的加法運算會產生可能的總和。 請注意，如果您在 Safari 中只看到 "3"，請移至 [Safari] > [Preferences] \(喜好設定\) > [Advanced] \(進階\)  ，然後勾選 [Show Develop menu in menu bar] \(在功能表列中顯示開發功能表\)  核取方塊並重新載入頁面。
 
-1. 在 [Visual Studio for Mac] 中，按一下 [停止] 按鈕以結束偵錯工作階段。 為了確保套用新的變更，別忘了重新啟動 (停止後再執行) 偵錯工作階段。
+1. 在 [Visual Studio for Mac]  中，按一下 [停止]  按鈕以結束偵錯工作階段。 為了確保套用新的變更，別忘了重新啟動 (停止後再執行) 偵錯工作階段。
 
     ![停止偵錯選項](media/azure-functions-lab-image22.png)
 
@@ -193,7 +192,7 @@ ms.locfileid: "62934252"
 
 ## <a name="exercise-4-working-with-functionjson"></a>練習 4：使用 function.json
 
-1. 在先前的練習中提到，Visual Studio for Mac 已為程式庫中定義的 Azure 函式「產生」作業函式。 這是因為 Azure Functions 不會真的在執行階段使用方法屬性，而是使用編譯時間檔案系統慣例來設定 Azure Functions 可供使用的位置及方式。 從 **Solution Pad**，以滑鼠右鍵按一下您的專案節點，然後選取 [在尋找工具中顯示]。
+1. 在先前的練習中提到，Visual Studio for Mac 已為程式庫中定義的 Azure 函式「產生」作業函式。 這是因為 Azure Functions 不會真的在執行階段使用方法屬性，而是使用編譯時間檔案系統慣例來設定 Azure Functions 可供使用的位置及方式。 從 **Solution Pad**，以滑鼠右鍵按一下您的專案節點，然後選取 [在尋找工具中顯示]  。
 
      ![[在尋找工具中顯示] 功能表選項](media/azure-functions-lab-image23.png)
 
@@ -201,19 +200,19 @@ ms.locfileid: "62934252"
 
     ![檔案目錄中的 function.json](media/azure-functions-lab-image24.png)
 
-1. 透過本教學課程的上述步驟，您應該對 C# 屬性有基本的了解。 考慮到這點，此 JSON 看起來應該很熟悉。 不過，有些項目並未涵蓋在先前的練習中。 例如，每個**繫結**必須已設定其**方向**。 您可能猜得到，**"in"** 表示參數為輸入，而 **"out"** 表示參數為傳回值 (透過 **$return**) 或方法的 **out** 參數。 您也必須指定組件中的 **scriptFile** (相對於此最終位置) 和 **entryPoint** 方法 (public static)。 在接下來幾個步驟中，您將使用此模型新增自訂函式路徑，因此請將此檔案內容複製到剪貼簿。
+1. 透過本教學課程的上述步驟，您應該對 C# 屬性有基本的了解。 考慮到這點，此 JSON 看起來應該很熟悉。 不過，有些項目並未涵蓋在先前的練習中。 例如，每個**繫結**必須已設定其**方向**。 您可能猜得到， **"in"** 表示參數為輸入，而 **"out"** 表示參數為傳回值 (透過 **$return**) 或方法的 **out** 參數。 您也必須指定組件中的 **scriptFile** (相對於此最終位置) 和 **entryPoint** 方法 (public static)。 在接下來幾個步驟中，您將使用此模型新增自訂函式路徑，因此請將此檔案內容複製到剪貼簿。
 
     ![Visual Studio for Mac 中開啟的 function.json 檔案](media/azure-functions-lab-image25.png)
 
-1. 在 **Solution Pad** 中，以滑鼠右鍵按一下 **AzureFunctionsLab** 專案節點，然後選取 [新增] > [新增資料夾]。 將新的資料夾命名為 **Adder**。 根據預設慣例，此資料夾的名稱會定義 API 的路徑，例如 **api/Adder**。
+1. 在 **Solution Pad** 中，以滑鼠右鍵按一下 **AzureFunctionsLab** 專案節點，然後選取 [新增] > [新增資料夾]  。 將新的資料夾命名為 **Adder**。 根據預設慣例，此資料夾的名稱會定義 API 的路徑，例如 **api/Adder**。
 
     ![[新增資料夾] 選項](media/azure-functions-lab-image26.png)
 
-1. 以滑鼠右鍵按一下 **Adder** 資料夾，然後選取 [新增] > [新增檔案]。
+1. 以滑鼠右鍵按一下 **Adder** 資料夾，然後選取 [新增] > [新增檔案]  。
 
     ![[新增檔案] 選項](media/azure-functions-lab-image27.png)
 
-1. 選取 [Web] 類別和 [空的 JSON 檔案] 範本。 將 [名稱] 設定為 **function**，然後按一下 [新增]。
+1. 選取 [Web]  類別和 [空的 JSON 檔案]  範本。 將 [名稱]  設定為 **function**，然後按一下 [新增]  。
 
     ![[空的 JSON 檔案] 選項](media/azure-functions-lab-image28.png)
 
@@ -226,7 +225,7 @@ ms.locfileid: "62934252"
     "generatedBy":"Microsoft.NET.Sdk.Functions-1.0.13",
     ```
 
-1. 在第一個繫結結尾 (**"name": "req"** 行之後)，新增下列屬性。 別忘了在前一行包含逗號。 此屬性會覆寫預設根目錄，因此它現在會從路徑擷取 **int** 參數，並放入名為 **x** 和 **y** 的方法參數。
+1. 在第一個繫結結尾 ( **"name": "req"** 行之後)，新增下列屬性。 別忘了在前一行包含逗號。 此屬性會覆寫預設根目錄，因此它現在會從路徑擷取 **int** 參數，並放入名為 **x** 和 **y** 的方法參數。
 
     ```json
     "direction": "in",
@@ -276,7 +275,7 @@ ms.locfileid: "62934252"
     }
     ```
 
-1. 完成此工作的最後一個必要步驟，就是指示 Visual Studio for Mac 在每次這個檔案變更時，都將它複製到輸出目錄的同一個相對路徑。 選取檔案時，從右側導覽列選擇 [屬性] 索引標籤，然後針對 [複製到輸出目錄] 選取 [有更新時才複製]：
+1. 完成此工作的最後一個必要步驟，就是指示 Visual Studio for Mac 在每次這個檔案變更時，都將它複製到輸出目錄的同一個相對路徑。 選取檔案時，從右側導覽列選擇 [屬性] 索引標籤，然後針對 [複製到輸出目錄]  選取 [有更新時才複製]  ：
 
     ![JSON 檔案的 [屬性] 選項](media/azure-functions-lab-image30.png)
 
@@ -299,7 +298,7 @@ ms.locfileid: "62934252"
 
     ![HTTP 函式的 URL](media/azure-functions-lab-image31.png)
 
-1. 返回瀏覽器視窗並巡覽至 **http://localhost:7071/api/Adder/3/5**。
+1. 返回瀏覽器視窗並巡覽至 **http://localhost:7071/api/Adder/3/5** 。
 
 1. 此時，方法再次有效，可從路徑提取參數並產生總和。
 
@@ -348,7 +347,7 @@ ms.locfileid: "62934252"
 
 1. 按 **F5** 鍵建置並執行專案。
 
-1. 在瀏覽器索引標籤中，巡覽至 **http://localhost:7071/api/Process/4/6**。 這會將另一則訊息放入佇列，最後會導致將另一個資料列新增至資料表。
+1. 在瀏覽器索引標籤中，巡覽至 **http://localhost:7071/api/Process/4/6** 。 這會將另一則訊息放入佇列，最後會導致將另一個資料列新增至資料表。
 
 1. 返回**終端機**並留意 **4 + 6** 的連入要求。
 
@@ -362,7 +361,7 @@ ms.locfileid: "62934252"
 
 1. 結束偵錯工作階段。
 
-1. 為了減輕錯誤，請將下列參數新增至緊接在 **TraceWriter** 參數前面的方法定義。 此參數會指示 Azure Functions 平台從我們用來儲存結果之 **PartitionKey** 的 [結果] 資料表，嘗試擷取 **TableRow**。 不過，當您注意到 **RowKey** 根據相同方法的其他 **x** 和 **y** 參數動態產生時，才能體會一些真正的魅力。 如果該資料列已存在，則 **tableRow** 會在方法開始時就有該資料列，而不需要開發人員執行額外的工作。 如果該資料列不存在，則會為 Null。 這類效率可讓開發人員專注於重要的商務邏輯，而不是基礎結構。
+1. 為了減輕錯誤，請將下列參數新增至緊接在 **TraceWriter** 參數前面的方法定義。 此參數會指示 Azure Functions 平台從我們用來儲存結果之 **PartitionKey** 的 [結果]  資料表，嘗試擷取 **TableRow**。 不過，當您注意到 **RowKey** 根據相同方法的其他 **x** 和 **y** 參數動態產生時，才能體會一些真正的魅力。 如果該資料列已存在，則 **tableRow** 會在方法開始時就有該資料列，而不需要開發人員執行額外的工作。 如果該資料列不存在，則會為 Null。 這類效率可讓開發人員專注於重要的商務邏輯，而不是基礎結構。
 
     ```csharp
     [Table("Results", "sums", "{x}_{y}")]
@@ -385,7 +384,7 @@ ms.locfileid: "62934252"
 
     ![終端機輸出顯示資料表資料列已存在](media/azure-functions-lab-image33.png)
 
-1. 更新 URL 以反映尚未測試的組合，例如 **http://localhost:7071/api/Process/5/7**。 注意終端機中的訊息，其指出找不到資料表資料列 (符合預期)。
+1. 更新 URL 以反映尚未測試的組合，例如 **http://localhost:7071/api/Process/5/7** 。 注意終端機中的訊息，其指出找不到資料表資料列 (符合預期)。
 
     ![終端機輸出顯示新的處理序](media/azure-functions-lab-image34.png)
 

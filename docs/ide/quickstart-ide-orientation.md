@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 063024605f142cd2d836eb9322274e7b81cdd9f0
-ms.sourcegitcommit: 0f5f7955076238742f2071d286ad8e896f3a6cad
+ms.openlocfilehash: 4875d88f521917a038ae3d7257396c7db80a2a9c
+ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "68483757"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70180096"
 ---
 # <a name="quickstart-first-look-at-the-visual-studio-ide"></a>快速入門：Visual Studio 整合式開發環境 (IDE) 初探
 
@@ -27,7 +27,7 @@ ms.locfileid: "68483757"
 
 ::: moniker range=">=vs-2019"
 
-如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019)頁面免費進行安裝。
+如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads)頁面免費進行安裝。
 
 ::: moniker-end
 
@@ -143,7 +143,7 @@ Visual Studio 頂端的功能表列可將命令依類別分組。 例如，[專�
 
 1. 在 IDE 右上角尋找 [快速啟動]  搜尋方塊。 (或者，按下 **Ctrl**+**Q** 加以存取。)
 
-2. 在搜尋方塊中，輸入**詳細資訊**。 從顯示的結果中，選擇 [選項]  類別下的 [專案和解決方案] --> [建置並執行]  。
+2. 在搜尋方塊中，輸入**詳細資訊**。 從顯示的結果中，選擇 [選項]  類別下的 [專案和方案] --> [建置並執行]  。
 
    ![Visual Studio 2017 中的 [快速啟動] 搜尋方塊](media/quickstart-IDE-quick-launch.png)
 

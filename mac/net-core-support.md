@@ -3,14 +3,14 @@ title: .NET Core 支援
 description: 本文件涵蓋 Visual Studio for Mac 中所支援的 .NET Core 版本
 author: sayedihashimi
 ms.author: sayedha
-ms.date: 06/13/2019
+ms.date: 08/20/2019
 ms.assetid: 8B8CEBE8-00DA-4AD1-8193-77F58B57F244
-ms.openlocfilehash: 2788529a72b556bcf97001ff1c75c9056e4e87f5
-ms.sourcegitcommit: 9e5e8b6e9a3b6614723e71cc23bb434fe4218c9c
+ms.openlocfilehash: 5939978b7e823f4430fec2f9a73d593b0a15d9ed
+ms.sourcegitcommit: cf8c0fef2b9690595e99ce3802586cdd55fd37c2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/20/2019
-ms.locfileid: "69634795"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70108050"
 ---
 # <a name="net-core-support"></a>.NET Core 支援
 

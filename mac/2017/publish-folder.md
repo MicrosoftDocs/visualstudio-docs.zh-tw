@@ -1,7 +1,6 @@
 ---
 title: 發行至資料夾
 ms.date: 01/22/2019
-ms.topic: quickstart
 helpviewer_keywords:
 - deployment, website
 ms.assetid: e963fb4b-6d32-4d45-86bb-ef7e4d3028b0
@@ -9,12 +8,12 @@ author: sayedihashimi
 ms.author: sayedha
 manager: unniravindranathan
 ms.prod: visual-studio-mac
-ms.openlocfilehash: 9fbcdb0bd9b9bab2afc69a8896cc00bedb98998b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ff8635db2b472ee3dd79e9082de9d9cc6bd555cb
+ms.sourcegitcommit: fe212f8960d7882a1b0fdae9e22f008996aacf3c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62991538"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70222671"
 ---
 # <a name="publish-a-web-app-to-a-folder-using-visual-studio-for-mac"></a>使用 Visual Studio for Mac 將 Web 應用程式發佈到資料夾
 
@@ -29,19 +28,19 @@ ms.locfileid: "62991538"
 
 使用 Visual Studio for Mac 時，您可以透過 [發佈] 工具將 ASP.NET Core 專案發佈到資料夾。 發佈到資料夾之後，您就可以將檔案傳輸到網頁伺服器，以便匯入不同的環境。 若要發佈到資料夾，請執行下列步驟。
 
- 1. 在 Solution Pad 中，以滑鼠右鍵按一下專案，然後選擇 [發佈]。
+ 1. 在 Solution Pad 中，以滑鼠右鍵按一下專案，然後選擇 [發佈]  。
 
     ![[發佈] 操作功能表](media/publish-context-menu.png)
 
  2. 如果您之前已發佈此專案，您將會在功能表中看到發行設定檔。 選取該發行設定檔即可啟動發佈程序。
 
- 3. 若是第一次將此專案發佈到資料夾，請選取 [發佈到資料夾]
+ 3. 若是第一次將此專案發佈到資料夾，請選取 [發佈到資料夾] 
 
     ![[發佈到資料夾] 操作功能表](media/publish-to-folder-context-menu.png)
 
- 4. [發佈到資料夾] 對話方塊會隨即出現。 在此對話方塊中，您可以自訂要發佈專案的資料夾。 您可以使用 [瀏覽] 按鈕來執行這項作業，或貼至路徑。
+ 4. [發佈到資料夾]  對話方塊會隨即出現。 在此對話方塊中，您可以自訂要發佈專案的資料夾。 您可以使用 [瀏覽]  按鈕來執行這項作業，或貼至路徑。
 
- 5. 按一下 [發佈] 之後，會發生幾件事。 首先會建立發行設定檔。 發行設定檔是發佈程序期間匯入專案的 MSBuild 檔。 其中包含發佈程序期間所使用的屬性。 這些檔案會儲存在 `Properties/PublishProfiles` 中並具有副檔名 `.pubxml`。 接著會啟動發佈程序。 您可以在 Visual Studio for Mac 中監看狀態列來監視進度。
+ 5. 按一下 [發佈]  之後，會發生幾件事。 首先會建立發行設定檔。 發行設定檔是發佈程序期間匯入專案的 MSBuild 檔。 其中包含發佈程序期間所使用的屬性。 這些檔案會儲存在 `Properties/PublishProfiles` 中並具有副檔名 `.pubxml`。 接著會啟動發佈程序。 您可以在 Visual Studio for Mac 中監看狀態列來監視進度。
 
     ![具有發佈狀態的 IDE 狀態列](media/publish-to-folder-status-bar.png)
 

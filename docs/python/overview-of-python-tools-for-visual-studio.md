@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: c137b6bd8a38ac606a547ce961c4f040e60c6d87
-ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
+ms.openlocfilehash: 24bbfd276b30444742b329f30c346ac1857c2cc9
+ms.sourcegitcommit: 3cda0d58c5cf1985122b8977b33a171c7359f324
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67043360"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "70154960"
 ---
 # <a name="work-with-python-in-visual-studio-on-windows"></a>在 Windows 的 Visual Studio 中使用 Python
 
@@ -157,7 +157,7 @@ Visual Studio 的其中一個優點是功能強大的偵錯工具。 特別是�
 
 適用於 Python 的 Azure 程式庫能簡化從 Windows、Mac OS X 及 Linux 應用程式使用 Azure 服務的程序。 您可以用它們來建立及管理 Azure 資源，以及連線至 Azure 服務。 
 
-如需詳細資訊，請參閱 [Azure SDK for Python](/python/azure/?view=azure-python) 和[適用於 Python 的 Azure 程式庫](/python/azure/python-sdk-azure-overview?view=azure-python)。
+如需詳細資訊，請參閱 [Azure SDK for Python](/azure/python/) 和[適用於 Python 的 Azure 程式庫](/azure/python/python-sdk-azure-overview)。
 
 ## <a name="questions-and-answers"></a>問與答
 
