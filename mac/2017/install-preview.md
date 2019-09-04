@@ -4,15 +4,14 @@ description: 針對更新 Visual Studio for Mac 以及存取預覽版本的指�
 author: conceptdev
 ms.author: crdun
 ms.date: 11/03/2018
-ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 0E1EF257-9DE4-4653-9DF4-805CE007A1A1
-ms.openlocfilehash: afb542e60eeae34bbe7d05694b1ffc8330ed2958
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 16fea3d68c7d418d7a0a56dbdcd83af107f91b4a
+ms.sourcegitcommit: cf8c0fef2b9690595e99ce3802586cdd55fd37c2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62997943"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70107797"
 ---
 # <a name="install-a-preview-release"></a>安裝預覽版本
 
@@ -29,9 +28,9 @@ Visual Studio for Mac 的新版本正式發行之前，會先提供預覽版本�
 
 若要安裝 Visual Studio for Mac 的預覽版本，請使用下列步驟：
 
-1. 移至 [Visual Studio] > [檢查更新]。
-2. 在更新通道下拉式方塊中，選取 [Beta]。
-3. 選取 [切換通道] 按鈕切換至選取的通道，並開始下載新的更新。
-4. 選取 [重新啟動和安裝更新] 按鈕開始安裝更新。
+1. 移至 [Visual Studio] > [檢查更新]  。
+2. 在更新通道下拉式方塊中，選取 [Beta]  。
+3. 選取 [切換通道]  按鈕切換至選取的通道，並開始下載新的更新。
+4. 選取 [重新啟動和安裝更新]  按鈕開始安裝更新。
 
 如需在 Visual Studio for Mac 中更新的詳細資訊，請參閱[更新](update.md)一文。

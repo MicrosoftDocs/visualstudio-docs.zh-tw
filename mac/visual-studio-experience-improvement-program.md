@@ -1,16 +1,17 @@
 ---
 title: Visual Studio 客戶經驗改進計畫
 description: 了解如何管理 Visual Studio for Mac 中的隱私權設定。
+ms.topic: troubleshooting
 author: therealjohn
 ms.author: johmil
 ms.date: 06/18/2019
 ms.assetid: 6F2ECF5A-E195-4890-8399-12A88C7D62FD
-ms.openlocfilehash: 7c2e2dc1cc0171e9e7a8ab81f820ff6be0f389c2
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.openlocfilehash: 4c8f967ee7637f99e85297847f5984a80eb1cbe3
+ms.sourcegitcommit: cf8c0fef2b9690595e99ce3802586cdd55fd37c2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67692204"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70108206"
 ---
 # <a name="visual-studio-customer-experience-improvement-program"></a>Visual Studio 客戶經驗改進計畫
 

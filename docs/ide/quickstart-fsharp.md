@@ -11,12 +11,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: c24803f3817aa8461f9445e390fe44853d2d27c5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 990106f7f3ca97ae38a20170ca6ed2e1d699d4e4
+ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62953314"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70180321"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-service-in-f"></a>快速入門：使用 Visual Studio 以 F\# 建立您的第一個 ASP.NET Core Web 服務
 
@@ -30,7 +30,7 @@ ms.locfileid: "62953314"
 
 ::: moniker range="vs-2019"
 
-如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019)頁面免費進行安裝。
+如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads)頁面免費進行安裝。
 
 ::: moniker-end
 
@@ -42,15 +42,15 @@ ms.locfileid: "62953314"
 
 1. 開啟 Visual Studio。
 
-2. 從頂端功能表列中，選擇 [檔案] > [新增] > [專案]。
+2. 從頂端功能表列中，選擇 [檔案]  > [新增]  > [專案]  。
 
-3. 在 [新增專案] 對話方塊的左窗格中，展開 [Visual F#]，然後選擇 [Web]。 在中間窗格中，選擇 [ASP.NET Web 應用程式]，然後選擇 [確定]。
+3. 在 [新增專案]  對話方塊的左窗格中，展開 [Visual F#]  ，然後選擇 [Web]  。 在中間窗格中，選擇 [ASP.NET Web 應用程式]  ，然後選擇 [確定]  。
 
-     如果您看不到 [.NET Core] 專案範本類別，請選擇左窗格中的 [開啟 Visual Studio 安裝程式] 連結。 Visual Studio 安裝程式即會啟動。 選擇 [ASP.NET 與網頁程式開發] 工作負載，然後選擇 [修改]。
+     如果您看不到 [.NET Core]  專案範本類別，請選擇左窗格中的 [開啟 Visual Studio 安裝程式]  連結。 Visual Studio 安裝程式即會啟動。 選擇 [ASP.NET 與網頁程式開發]  工作負載，然後選擇 [修改]  。
 
      ![VS 安裝程式中的 ASP.NET 工作負載](../ide/media/quickstart-aspnet-workload.png)
 
-4. 在 [新增 ASP.NET Core Web 應用程式] 對話方塊中，從上方的下拉式功能表中選取 [ASP.NET Core 2.1] (如果您在清單中看不到 [ASP.NET Core 2.1]，請遵循應該出現在接近對話方塊頂端之黃色列中的 [下載] 連結來進行安裝)。選擇 [確定] 。
+4. 在 [新增 ASP.NET Core Web 應用程式]  對話方塊中，從上方的下拉式功能表中選取 [ASP.NET Core 2.1]  (如果您在清單中看不到 [ASP.NET Core 2.1]  ，請遵循應該出現在接近對話方塊頂端之黃色列中的 [下載]  連結來進行安裝)。選擇 [確定]  。
 
 ::: moniker-end
 
@@ -58,19 +58,19 @@ ms.locfileid: "62953314"
 
 1. 開啟 Visual Studio。
 
-2. 在開始視窗中，選擇 [建立新專案]。
+2. 在開始視窗中，選擇 [建立新專案]  。
 
-3. 在 [建立新專案] 頁面上，於搜尋方塊中輸入 **f# web**，然後選擇 [ASP.NET Core Web 應用程式] 專案範本。 選擇 [下一步]。
+3. 在 [建立新專案]  頁面上，於搜尋方塊中輸入 **f# web**，然後選擇 [ASP.NET Core Web 應用程式]  專案範本。 選擇 [下一步]  。
 
-4. 在 [設定新專案] 頁面上輸入名稱，然後選擇 [建立]。
+4. 在 [設定新專案]  頁面上輸入名稱，然後選擇 [建立]  。
 
-5. 在 [建立新的 ASP.NET Core Web 應用程式] 頁面上，從上方的下拉式功能表中選取 [ASP.NET Core 2.1]，然後選擇 [建立]。
+5. 在 [建立新的 ASP.NET Core Web 應用程式]  頁面上，從上方的下拉式功能表中選取 [ASP.NET Core 2.1]  ，然後選擇 [建立]  。
 
 ::: moniker-end
 
 ## <a name="explore-the-ide"></a>探索 IDE
 
-1. 在方案總管工具列中，展開 [Controllers] 資料夾，然後選擇 [ValuesController.fs] 以在編輯器中予以開啟。
+1. 在方案總管  工具列中，展開 [Controllers]  資料夾，然後選擇 [ValuesController.fs]  以在編輯器中予以開啟。
 
    ![F# Web API 專案中展開 Controllers 資料夾的方案總管](../ide/media/hello-world-fs-sln-explorer.png)
 

@@ -14,12 +14,12 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 2ecfba0dceb7e7695a077464151e50f4dc042526
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c7da73ac3f47b6b63817ff905923b71e3354b06c
+ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62953546"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70180091"
 ---
 # <a name="quickstart-create-your-first-console-app-in-visual-studio-with-visual-basic"></a>快速入門：使用 Visual Basic 在 Visual Studio 中建立您的第一個主控台應用程式
 
@@ -33,7 +33,7 @@ ms.locfileid: "62953546"
 
 ::: moniker range="vs-2019"
 
-如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019)頁面免費進行安裝。
+如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads)頁面免費進行安裝。
 
 ::: moniker-end
 
@@ -45,17 +45,17 @@ ms.locfileid: "62953546"
 
 1. 開啟 Visual Studio 2017。
 
-2. 從頂端功能表列中，選擇 [檔案] > [新增] > [專案]。
+2. 從頂端功能表列中，選擇 [檔案]  > [新增]  > [專案]  。
 
-3. 在 [新增專案] 對話方塊的左窗格中，展開 [Visual Basic]，然後選擇 [.NET Core]。 在中間窗格中，選擇 [主控台應用程式 (.NET Core)]。 然後將專案命名為 *HelloWorld*。
+3. 在 [新增專案]  對話方塊的左窗格中，展開 [Visual Basic]  ，然後選擇 [.NET Core]  。 在中間窗格中，選擇 [主控台應用程式 (.NET Core)]  。 然後將專案命名為 *HelloWorld*。
 
    ![Visual Studio IDE 的 [新增專案] 對話方塊中的主控台應用程式 (.NET Core) 專案範本](../ide/media/new-project-vb-dotnetcore-helloworld-console-app.png)
 
-     如果您看不到 [主控台應用程式 (.NET Core)] 專案範本，請在 [新增專案] 對話方塊的左窗格中，按一下 [開啟 Visual Studio 安裝程式] 連結。
+     如果您看不到 [主控台應用程式 (.NET Core)]  專案範本，請在 [新增專案]  對話方塊的左窗格中，按一下 [開啟 Visual Studio 安裝程式]  連結。
 
    ![按一下 [新增專案] 對話方塊中的 [開啟 Visual Studio 安裝程式] 連結](../ide/media/vb-open-visual-studio-installer-hello-world.png)
 
-     Visual Studio 安裝程式即會啟動。 選擇 [.NET Core 跨平台開發] 工作負載，然後選擇 [修改]。
+     Visual Studio 安裝程式即會啟動。 選擇 [.NET Core 跨平台開發]  工作負載，然後選擇 [修改]  。
 
      ![Visual Studio 安裝程式中的 .NET Core 跨平台開發工作負載](../ide/media/dot-net-core-xplat-dev-workload.png)
 
@@ -68,18 +68,18 @@ ms.locfileid: "62953546"
 
 1. 開啟 Visual Studio 2019。
 
-1. 在開始視窗中，選擇 [建立新專案]。
+1. 在開始視窗中，選擇 [建立新專案]  。
 
    ![檢視 [建立新專案] 視窗](../get-started/media/vs-2019/create-new-project-dark-theme.png)
 
-1. 在 [建立新專案] 視窗的搜尋方塊中輸入或鍵入 ASP.NET。 接下來，從語言清單中選擇 **Visual Basic**，然後從平台清單中選擇 **Windows**。 
+1. 在 [建立新專案]  視窗的搜尋方塊中輸入或鍵入 ASP.NET  。 接下來，從語言清單中選擇 **Visual Basic**，然後從平台清單中選擇 **Windows**。 
 
-   在您套用語言和平台的篩選條件之後，請選擇 [主控台應用程式 (.NET Core)] 範本，然後選擇 [下一步]。
+   在您套用語言和平台的篩選條件之後，請選擇 [主控台應用程式 (.NET Core)]  範本，然後選擇 [下一步]  。
 
    ![選擇主控台應用程式 (.NET Framework) 的 Visual Basic 專案範本](../get-started/visual-basic/media/vs-2019/vb-create-new-project-search-console-net-core-filtered.png)
 
    > [!NOTE]
-   > 如果您未看到 [主控台應用程式 (.NET Core)] 範本，您可以從 [建立新專案] 視窗中安裝。 在 [找不到您要找的資料嗎?] 訊息中，選擇 [安裝更多工具和功能] 連結。
+   > 如果您未看到 [主控台應用程式 (.NET Core)]  範本，您可以從 [建立新專案]  視窗中安裝。 在 [找不到您要找的資料嗎?]  訊息中，選擇 [安裝更多工具和功能]  連結。
    >
    > ![[建立新專案] 視窗中 [找不到您要找的資料嗎?] 訊息的 [安裝更多的工具和功能] 連結](../get-started/media/vs-2019/not-finding-what-looking-for.png) 
    > 
@@ -87,9 +87,9 @@ ms.locfileid: "62953546"
    >
    > ![Visual Studio 安裝程式中的 .NET Core 跨平台開發工作負載](../get-started/media/dot-net-core-xplat-dev-workload.png)
    >
-   > 接著，選擇Visual Studio 安裝程式中的 [修改] 按鈕。 系統可能會提示您儲存工作，若收到提示，請依提示執行。 接下來，選擇 [繼續] 以安裝工作負載。 然後，返回至「[建立專案](#create-a-project)」程序中的步驟 2。
+   > 接著，選擇Visual Studio 安裝程式中的 [修改]  按鈕。 系統可能會提示您儲存工作，若收到提示，請依提示執行。 接下來，選擇 [繼續]  以安裝工作負載。 然後，返回至「[建立專案](#create-a-project)」程序中的步驟 2。
 
-1. 在 [設定您的新專案] 視窗的 [專案名稱] 方塊中鍵入或輸入 *WhatIsYourName*。 接著，選擇 [建立]。
+1. 在 [設定您的新專案]  視窗的 [專案名稱]  方塊中鍵入或輸入 *WhatIsYourName*。 接著，選擇 [建立]  。
 
    ![在 [設定您的新專案] 視窗中，以 'WhatIsYourName' 命名您的專案](../get-started/visual-basic/media/vs-2019/vb-name-your-project-whatname.png)
 
@@ -103,7 +103,7 @@ ms.locfileid: "62953546"
 
 ![從範本檢視預設 Hello World 程式碼](../ide/media/vb-console-helloworld-template.png)
 
-如果您按一下 IDE 中的 [HelloWorld] 按鈕，則可以在 [偵錯] 模式下執行程式。
+如果您按一下 IDE 中的 [HelloWorld]  按鈕，則可以在 [偵錯] 模式下執行程式。
 
   ![按一下 Hello World 按鈕，以在 [偵錯] 模式下執行程式](../ide/media/vb-console-hello-world-button.png)
 
@@ -122,13 +122,13 @@ ms.locfileid: "62953546"
 
     除非您按任一鍵，否則這會暫停程式。
 
-2. 在功能表列中，選取 [組建]  >  [組建方案]。
+2. 在功能表列中，選取 [組建]   >  [組建方案]  。
 
    這會將您的程式編譯成中繼語言 (IL)，而該語言是由 Just-In-Time (JIT) 編譯器轉換為二進位程式碼。
 
 ## <a name="run-the-application"></a>執行應用程式
 
-1. 按一下工具列上的 [HelloWorld] 按鈕。
+1. 按一下工具列上的 [HelloWorld]  按鈕。
 
    ![按一下 Hello World 按鈕，以從工具列執行程式](../ide/media/vb-console-hello-world-button.png)
 

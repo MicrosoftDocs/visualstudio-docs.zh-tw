@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 734a192a00ee0c509ed16e71a8629837155888ae
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c540dfef9d2d46bb621432b3e37438e0b6b07298
+ms.sourcegitcommit: 3cda0d58c5cf1985122b8977b33a171c7359f324
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62957008"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "70154900"
 ---
 # <a name="step-5-use-the-polls-flask-web-project-template"></a>步驟 5：使用 Polls Flask Web 專案範本
 
@@ -36,15 +36,15 @@ Visual Studio 也提供「投票 Flask/Jade Web 專案」範本，此範本會�
 
 ## <a name="step-5-1-create-the-project"></a>步驟 5-1：建立專案
 
-1. 在 Visual Studio 中，移至 [方案總管]，在本教學課程稍早建立的 [LearningFlask] 方案上按一下滑鼠右鍵，然後選取 [新增] > [新增專案]。 (或者，如果您想要使用新的方案，請依序選取 [檔案] > [新增] > [專案])。
+1. 在 Visual Studio 中，移至 [方案總管]  ，在本教學課程稍早建立的 [LearningFlask]  方案上按一下滑鼠右鍵，然後選取 [新增]   > [新增專案]  。 (或者，如果您想要使用新的方案，請依序選取 [檔案]   > [新增]   > [專案]  )。
 
-1. 在 [新增專案] 對話方塊中，搜尋並選取 [投票 Flask Web 專案] 範本，將專案命名為 "FlaskPolls"，然後選取 [確定]。
+1. 在 [新增專案] 對話方塊中，搜尋並選取 [投票 Flask Web 專案]  範本，將專案命名為 "FlaskPolls"，然後選取 [確定]  。
 
-1. 一如 Visual Studio 中的其他專案範本，「投票 Flask Web 專案」範本也有 *requirements.txt* 檔案，Visual Studio 會詢問您這些相依性的安裝位置。 選擇 [安裝至虛擬環境] 選項，然後在 [新增虛擬環境] 對話方塊中，選取 [建立] 並接受預設值。 (此範本需要 Flask、azure-storage 與 pymongo 套件，「投票 Flask/Jade Web 專案」還需要 pyjade)。
+1. 一如 Visual Studio 中的其他專案範本，「投票 Flask Web 專案」範本也有 *requirements.txt* 檔案，Visual Studio 會詢問您這些相依性的安裝位置。 選擇 [安裝至虛擬環境]  選項，然後在 [新增虛擬環境]  對話方塊中，選取 [建立]  並接受預設值。 (此範本需要 Flask、azure-storage 與 pymongo 套件，「投票 Flask/Jade Web 專案」還需要 pyjade)。
 
-1. 將 **FlaskPolls** 專案設定為 Visual Studio 方案的預設專案，方法是在 [方案總管] 中該專案上按一下滑鼠右鍵，然後選取 [設定為啟始專案]。 以粗體字型顯示的起始專案，會在您啟動偵錯工具時執行。
+1. 將 **FlaskPolls** 專案設定為 Visual Studio 方案的預設專案，方法是在 [方案總管]  中該專案上按一下滑鼠右鍵，然後選取 [設定為啟始專案]  。 以粗體字型顯示的起始專案，會在您啟動偵錯工具時執行。
 
-1. 依序選取 [偵錯] > [開始偵錯] (**F5**)，或使用工具列上的 [網頁伺服器] 按鈕來執行伺服器：
+1. 依序選取 [偵錯]   > [開始偵錯]  (**F5**)，或使用工具列上的 [網頁伺服器]  按鈕來執行伺服器：
 
     ![Visual Studio 中的 [執行網頁伺服器] 工具列按鈕](media/django/run-web-server-toolbar-button.png)
 
@@ -52,7 +52,7 @@ Visual Studio 也提供「投票 Flask/Jade Web 專案」範本，此範本會�
 
     ![「投票 Flask Web 專案」應用程式的完整檢視](media/flask/step06-full-app-view.png)
 
-1. 在首頁上，[Create Sample Polls] \(建立範例投票項目\) 按鈕會以 *models/samples.json* 頁面所述的三種不同投票將應用程式資料存放區初始化。 此應用程式預設會使用記憶體內部資料庫 (如 [About] \(關於\) 頁面所示)，每次重新啟動應用程式時都會重設此資料庫。 此應用程式也包含與「Azure 儲存體」和 Mongo DB 搭配運作的程式碼，如本文稍後所述。
+1. 在首頁上，[Create Sample Polls] \(建立範例投票項目\)  按鈕會以 *models/samples.json* 頁面所述的三種不同投票將應用程式資料存放區初始化。 此應用程式預設會使用記憶體內部資料庫 (如 [About] \(關於\) 頁面所示)，每次重新啟動應用程式時都會重設此資料庫。 此應用程式也包含與「Azure 儲存體」和 Mongo DB 搭配運作的程式碼，如本文稍後所述。
 
 1. 在您將資料存放區初始化之後，即可在不同的投票項目中進行投票，如首頁所示 (為了簡潔起見，已省略導覽列和頁尾)：
 
@@ -68,7 +68,7 @@ Visual Studio 也提供「投票 Flask/Jade Web 專案」範本，此範本會�
 
 1. 您可以讓這個應用程式繼續執行，在接下來的各節中都會用到它。
 
-    如果您想停止應用程式並[認可對原始檔控制所做的變更](learn-flask-visual-studio-step-02-create-app.md#commit-to-source-control)，請先開啟 [Team Explorer] 中的 [變更] 頁面，接著在虛擬環境的資料夾 (可能是 **env**) 上按一下滑鼠右鍵，然後選取 [略過這些本機項目]。
+    如果您想停止應用程式並[認可對原始檔控制所做的變更](learn-flask-visual-studio-step-02-create-app.md#commit-to-source-control)，請先開啟 [Team Explorer]  中的 [變更]  頁面，接著在虛擬環境的資料夾 (可能是 **env**) 上按一下滑鼠右鍵，然後選取 [略過這些本機項目]  。
 
 ### <a name="examine-the-project-contents"></a>檢查專案內容
 
@@ -187,7 +187,7 @@ class Choice(object):
 
 ### <a name="seed-the-data-store-from-samplesjson"></a>從 samples.json 植入資料存放區
 
-一開始，所選的任何資料存放區都不包含任何投票項目，因此應用程式的首頁會顯示隨附 [Create Sample Polls] \(建立範例投票項目\) 按鈕的 **No polls available** (沒有可用的投票項目) 訊息。 不過，選取該按鈕之後，檢視就會變更為顯示可用的投票項目。 這個切換會透過 *templates\index.html* 中的條件式標籤進行 (為了簡潔起見，已省略一些空白行)：
+一開始，所選的任何資料存放區都不包含任何投票項目，因此應用程式的首頁會顯示隨附 [Create Sample Polls] \(建立範例投票項目\)  按鈕的 **No polls available** (沒有可用的投票項目) 訊息。 不過，選取該按鈕之後，檢視就會變更為顯示可用的投票項目。 這個切換會透過 *templates\index.html* 中的條件式標籤進行 (為了簡潔起見，已省略一些空白行)：
 
 ```html
 {% extends "layout.html" %}
@@ -218,7 +218,7 @@ class Choice(object):
 
 範本中的 `polls` 變數來自對 `repository.get_polls` 的呼叫，這會在資料存放區初始化之後，才會傳回資料。
 
-選取 [Create Sample Polls] \(建立範例投票項目\) 按鈕會瀏覽至 /seed URL。 該路由的處理常式是在 *views.py* 中定義的：
+選取 [Create Sample Polls] \(建立範例投票項目\)  按鈕會瀏覽至 /seed URL。 該路由的處理常式是在 *views.py* 中定義的：
 
 ```python
 @app.route('/seed', methods=['POST'])
@@ -296,7 +296,7 @@ def details(key):
 {% endblock %}
 ```
 
-由於 [Vote] \(投票\) 按鈕包含 `type="submit"`，因此選取它會產生 POST 要求，此要求會送回給再次路由傳送至 `details` 的同一個 URL。 不過，這次它會從表單資料擷取選項，然後重新導向到 /results/\<choice\>。
+由於 [Vote] \(投票\)  按鈕包含 `type="submit"`，因此選取它會產生 POST 要求，此要求會送回給再次路由傳送至 `details` 的同一個 URL。 不過，這次它會從表單資料擷取選項，然後重新導向到 /results/\<choice\>。
 
 接著，會將 /results/\<key\> URL 路由傳送到 *views.py* 中的 `results` 函式，由此函式接著呼叫投票項目的 `calculate_stats` 方法並採用 *templates\results.html* 來進行轉譯：
 
@@ -354,6 +354,6 @@ def results(key):
 
 - 將 Web 應用程式部署到生產伺服器，例如 Azure App Service。 請參閱[發佈至 Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md)。
 
-- 新增使用另一個生產環境層級資料存放區 (例如 PostgreSQL、MySQL 及 SQL Server；這些全都可以裝載在 Azure 上) 的存放庫實作。 您也可以使用 [Azure SDK for Python](/python/azure/?view=azure-python) 來除了搭配 Cosmos DB 運作之外，也可以搭配 Azure 儲存體服務 (例如資料表和 Blob) 運作。
+- 新增使用另一個生產環境層級資料存放區 (例如 PostgreSQL、MySQL 及 SQL Server；這些全都可以裝載在 Azure 上) 的存放庫實作。 您也可以使用 [Azure SDK for Python](/azure/python/) 來除了搭配 Cosmos DB 運作之外，也可以搭配 Azure 儲存體服務 (例如資料表和 Blob) 運作。
 
 - 在 Azure DevOps 此類的服務上設定持續整合/持續部署管線。 除了操作原始檔控制 (透過 Azure Repos、GitHub 或其他位置)，您可以設定 Azure DevOps 專案來自動執行單元測試作為發行必要條件，另外也請設定管線來部署至預備伺服器，以便進行傳統測試，之後再部署至生產環境伺服器中。 此外，Azure DevOps 還會與 App Insights 等監視解決方案整合，並使用敏捷式規劃工具來關閉整個週期。 如需詳細資訊，請參閱[使用 Azure DevOps 專案建立 Python 的 CI/CD 管線](/azure/devops-project/azure-devops-project-python?view=vsts)，以及一般的[Azure DevOps 文件](/azure/devops/?view=vsts)。

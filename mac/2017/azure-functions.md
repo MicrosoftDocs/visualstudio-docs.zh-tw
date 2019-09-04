@@ -4,15 +4,14 @@ description: 在 Visual Studio for Mac 使用 Azure 函式。
 author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
-ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 25CD47A4-5B32-4734-8EF3-E24A02AABF29
-ms.openlocfilehash: 6f12a4071a15372da7c71836ae303e40d6858f3f
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: cf3fa0bf2c0e0ff112a176b10eb7e50e07f83d5a
+ms.sourcegitcommit: cf8c0fef2b9690595e99ce3802586cdd55fd37c2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67824418"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70107878"
 ---
 # <a name="introduction-to-azure-functions"></a>Azure Functions 簡介
 
