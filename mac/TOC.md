@@ -57,7 +57,6 @@
 
 # 版本控制
 ## [概觀](version-control.md)
-## [TF 版本控制](tf-version-control.md)
 ## [設定 Git 存放庫](set-up-git-repository.md)
 ## [使用 Git](working-with-git.md)
 ## [設定 Subversion 存放庫](set-up-subversion-repository.md)
@@ -100,6 +99,7 @@
 ## [記錄和例外狀況](troubleshooting.md)
 ## [Visual Studio 客戶經驗改進計畫](visual-studio-experience-improvement-program.md)
 ## [回報問題](report-a-problem.md)
+## [疑難排解：Visual Studio for Mac 是否支援 Team Foundation 版本控制？](tf-version-control.md)
 ## [疑難排解：為什麼我看不到所有範本？](troubleshooting-no-templates.md)
 ## [疑難排解：更新程式在擷取資訊時發生錯誤](updater-troubleshooting.md)
 
