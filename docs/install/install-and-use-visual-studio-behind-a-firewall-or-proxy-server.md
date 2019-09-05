@@ -17,20 +17,20 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 38a243c965199e75622ceff43e742424d3e4977a
-ms.sourcegitcommit: 92a04c57ac0a49f304fa2ea5043436f30068c3cd
+ms.openlocfilehash: e102636793c306a4e8141294ad2573b57f03e889
+ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/21/2019
-ms.locfileid: "65976208"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70180011"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>在防火牆或 Proxy 伺服器後方安裝並使用 Visual Studio 和 Azure 服務
 
 如果您或組織使用防火牆或 Proxy 伺服器等安全性措施，建議您將部分網域 URL 新增至「允許清單」，並開啟某些連接埠和通訊協定，以在安裝及使用 Visual Studio 及 Azure 服務時取得最佳體驗。
 
-* **[安裝 Visual Studio](#install-visual-studio)**：這些表格包含要新增至允許清單的網域 URL，以便您存取所需的所有元件和工作負載。
+* **[安裝 Visual Studio](#install-visual-studio)** ：這些表格包含要新增至允許清單的網域 URL，以便您存取所需的所有元件和工作負載。
 
-* **[使用 Visual Studio 和 Azure 服務](#use-visual-studio-and-azure-services)**：此表格包含要新增至允許清單的網域 URL，以及要開啟的連接埠和通訊協定，以便您存取所需的所有功能和服務。
+* **[使用 Visual Studio 和 Azure 服務](#use-visual-studio-and-azure-services)** ：此表格包含要新增至允許清單的網域 URL，以及要開啟的連接埠和通訊協定，以便您存取所需的所有功能和服務。
 
 > [!NOTE]
 > 本文針對 Windows 上的 Visual Studio 撰寫，但特定資訊也適用於在防火牆或 Proxy 伺服器後方[安裝 Visual Studio for Mac](/visualstudio/mac/install-behind-a-firewall-or-proxy-server)。
@@ -43,7 +43,7 @@ ms.locfileid: "65976208"
 
 #### <a name="microsoft-domains"></a>Microsoft 網域
 
-| Domain | 用途 |
+| 網域 | 用途 |
 | - | - |
 | go.microsoft.com | 安裝 URL 解析 |
 | aka.ms | 安裝 URL 解析 |
@@ -63,7 +63,7 @@ ms.locfileid: "65976208"
 
 #### <a name="non-microsoft-domains"></a>非 Microsoft 網域
 
-| Domain | 安裝這些工作負載 |
+| 網域 | 安裝這些工作負載 |
 | - | - |
 | archive.apache.org | 使用 JavaScript 進行行動開發 (Cordova) |
 | cocos2d-x.org | 使用 C++ 進行遊戲開發 (Cocos) |
@@ -122,7 +122,7 @@ ms.locfileid: "65976208"
 | Azure 串流分析 <br><br>HDInsight | Management.azure.com | https | 443 | 用來檢視、提交、執行及管理 ASA 作業 <br><br> 用來瀏覽 HDI 叢集，以及對 HDI 作業進行提交、診斷及偵錯 |
 | Azure Data Lake | &#42;.azuredatalakestore.net <br>&#42;.azuredatalakeanalytics.net | https | 443 | 用來對作業進行編譯、提交、檢視、診斷及偵錯；用來瀏覽 ADLS 檔案；用來上傳及下載檔案 |
 | 封裝服務 | [account].visualstudio.com <br/> [帳戶].\*.visualstudio.com <br/> \*.blob.core.windows.net <br/> registry.npmjs.org </br> nodejs.org <br/> dist.nuget.org <br/> nuget.org | https | 443 | 只有在特定建置工作案例中，才需要 \*.npmjs.org、\*.nuget.org，以及 \*.nodejs.org (例如：NuGet 工具安裝程式、Node 工具安裝程式) 或是當您想要搭配您的摘要使用公用上游時。 封裝服務的核心功能則需要使用其他三個網域。 |
-| Azure DevOps Services | \*.vsassets.io <br/> static2.sharepointonline.com | | | 用來與 Azure DevOps Services 連線 |
+| Azure DevOps Services | \*.vsassets.io <br/> static2.sharepointonline.com <br/> dev.azure.com | | | 用來與 Azure DevOps Services 連線 |
 | | | | | |
 
 ## <a name="troubleshoot-network-related-errors"></a>對網路相關錯誤進行疑難排解
