@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f494674acdf8b272029ad02a762897b379212ae4
-ms.sourcegitcommit: 9cfd3ef6c65f671a26322320818212a1ed5955fe
-ms.translationtype: HT
+ms.openlocfilehash: cf78e17d4d804c94392da045a90c98869319d185
+ms.sourcegitcommit: fe212f8960d7882a1b0fdae9e22f008996aacf3c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68533358"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70222620"
 ---
 # <a name="first-look-at-deployment-in-visual-studio"></a>Visual Studio 中的部署簡介
 
@@ -96,6 +96,13 @@ ms.locfileid: "68533358"
 - **Windows 桌面**：從 Visual Studio 2017 15.4 版開始，您可以使用傳統型橋接器部署至 Microsoft Store。 若要這樣做，請先建立 Windows 應用程式封裝專案。 如需詳細資訊，請參閱[為 Microsoft Store 封裝傳統型應用程式 (傳統型橋接器)](/windows/uwp/porting/desktop-to-uwp-packaging-dot-net)。
 
     ![傳統型橋接器](../deployment/media/feature-tour-desktop-bridge.png)
+
+## <a name="deploy-net-packages-to-nugetorg"></a>將 .NET 套件部署到 NuGet.org
+
+若要將套件組合程式碼部署到包含 已編譯程式碼 (編譯為 DLL) 與取用這些套件之專案中需要之內容的 "packages"，您可以使用 Visual Studio 來建立 NuGet 套件與 CLI 工具來發出最終部署命令。
+
+- [建立及發行 .NET Standard 套件](/nuget/quickstart/create-and-publish-a-package-using-visual-studio)
+- [建立及發行 .NET Framework 套件](/nuget/quickstart/create-and-publish-a-package-using-visual-studio-net-framework)
 
 ## <a name="deploy-to-a-device-uwp"></a>部署至裝置 (UWP)
 
