@@ -75,7 +75,7 @@ ms.locfileid: "69490614"
      下列程式碼範例會以新的名稱儲存使用中的檔。 若要使用這個程式碼範例，請從專案的 `ThisDocument` 或 `ThisAddIn` 類別中執行它。
 
     > [!NOTE]
-    > 如果<xref:Microsoft.Office.Interop.Word._Document.SaveAs%2A>目標目錄不存在, 或如果儲存檔案時發生其他問題, 方法就會擲回例外狀況。 最好的作法是使用**try .。。** 方法<xref:Microsoft.Office.Interop.Word._Document.SaveAs%2A>周圍或呼叫方法內的 catch 區塊。
+    > 如果<xref:Microsoft.Office.Interop.Word._Document.SaveAs%2A>目標目錄不存在, 或如果儲存檔案時發生其他問題, 方法就會擲回例外狀況。 最好的作法是使用**try ...** 方法<xref:Microsoft.Office.Interop.Word._Document.SaveAs%2A>周圍或呼叫方法內的 catch 區塊。
 
      [!code-vb[Trin_VstcoreWordAutomationAddIn#10](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#10)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#10](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#10)]
