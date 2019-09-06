@@ -60,7 +60,7 @@ Visual Studio 專案針對您的程式具有不同的版本和偵錯組態。 �
 
 * 在工具列的 [解決方案組態] 清單中，選擇 [偵錯] 或 [發行]。
 
-  ![工具列組建]設定(../debugger/media/toolbarbuildconfiguration.png "ToolbarBuildConfiguration")
+  ![工具列組建 設定](../debugger/media/toolbarbuildconfiguration.png "ToolbarBuildConfiguration")
 
 ## <a name="BKMK_symbols_release"></a>產生組建的符號 (.pdb) 檔 (C#、 C++、Visual Basic、) F#
 
