@@ -20,12 +20,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 4833c6e8e1391028fbb034ff96967450d006356a
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
-ms.translationtype: HT
+ms.openlocfilehash: ac40a7e7d62417d2d89302304501fb2b3ecd34f4
+ms.sourcegitcommit: 9c07ae6fb18204ea080c8248994a683fa12e5c82
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66263734"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "70293710"
 ---
 # <a name="install-visual-studio"></a>安裝 Visual Studio
 
@@ -112,7 +112,7 @@ ms.locfileid: "66263734"
 ::: moniker range="vs-2019"
 
  > [!div class="button"]
- > [下載 Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2019)
+ > [下載 Visual Studio](https://visualstudio.microsoft.com/downloads)
 
 ::: moniker-end
 
