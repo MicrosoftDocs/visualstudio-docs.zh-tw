@@ -6,12 +6,12 @@ manager: lank
 ms.date: 08/21/2019
 ms.topic: conceptual
 description: 了解如何連絡您的訂用帳戶管理員以協助解決問題。
-ms.openlocfilehash: cc6ce20d97531cca7c6b08d82ba949fb19e6bddc
-ms.sourcegitcommit: c90a998716b3dfa614dedc61a1bea515364efbec
-ms.translationtype: HT
+ms.openlocfilehash: a1769140db7800798c91d583f835e3cad8488397
+ms.sourcegitcommit: 9c07ae6fb18204ea080c8248994a683fa12e5c82
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/23/2019
-ms.locfileid: "70000968"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "70293528"
 ---
 # <a name="get-assistance-from-your-subscriptions-adminstrator"></a>取得訂用帳戶管理員的協助
 如果您的 Visual Studio 訂用帳戶是由公司或學校提供給您，則其可能是由訂用帳戶管理員 (或「管理員」) 指派給您。  管理員可以指派或移除訂用帳戶、變更登入電子郵件地址、判斷您是否能夠下載軟體，以及執行與訂用帳戶相關的其他功能。
@@ -20,13 +20,16 @@ ms.locfileid: "70000968"
 
 ## <a name="how-to-contact-your-admin"></a>如何連絡您的管理員
 1. 登入訂閱者入口網站，網址為 https://my.visualstudio.com
-2. 按一下 [訂閱]  索引標籤。 
-3. 按一下右上方的 [Contact my Admin] \(連絡我的管理員\)  按鈕。 
+2. 按一下 [訂閱] 索引標籤。 
+3. 按一下右上方的 [Contact my Admin] \(連絡我的管理員\) 按鈕。 
    > [!div class="mx-imgBorder"]
    > ![連絡我的管理員](_img/contact-my-admin/contact-my-admin-button.png)
 4. 輸入給管理員的訊息。
-5. 如果您想要收到傳送給管理員的訊息複本，請按一下 [Send me a copy] \(傳送複本給我\)  核取方塊。 
-6. 最後，按一下 [傳送]  。
+5. 如果您想要收到傳送給管理員的訊息複本，請按一下 [Send me a copy] \(傳送複本給我\) 核取方塊。 
+6. 最後，按一下 [傳送]。
+
+> [!NOTE]
+> **超級管理員：** 若要設定傳送「連絡人我的系統管理員」要求的電子郵件地址，請在 [[協定喜好](admin-prefs.md#contact-email-address)設定] 中指定該位址。
 
 ## <a name="resources"></a>資源
 - [Visual Studio 管理與訂閱支援](https://visualstudio.microsoft.com/support/support-overview-vs)

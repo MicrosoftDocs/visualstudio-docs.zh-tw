@@ -15,19 +15,19 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 1f4a055f62fe76c701858f82b4778f7a3b19fa0a
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+ms.openlocfilehash: 2c9526a0cbf33278bbc3cab8120bb20ab0f5377a
+ms.sourcegitcommit: 9c07ae6fb18204ea080c8248994a683fa12e5c82
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68918780"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "70293723"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Visual Studio 2019 的新功能
 
-已針對 [16.2 版](/visualstudio/releases/2019/release-notes/)更新 
+已針對 [16.2 版](/visualstudio/releases/2019/release-notes/)更新
 
 >[!div class="button"]
->[下載 Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2019)
+>[下載 Visual Studio 2019](https://visualstudio.microsoft.com/downloads)
 
 使用 Visual Studio 2019，您會獲得同類產品中最佳的工具和服務，任何開發人員、任何應用程式及任何平台均適用。 無論您是第一次使用 Visual Studio，或是已使用多年，這個新版本還是有許多好用的功能！
 

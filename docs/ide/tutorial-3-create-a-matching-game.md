@@ -1,23 +1,27 @@
 ---
 title: 教學課程 3：建立配對遊戲
 ms.date: 11/04/2016
-ms.topic: conceptual
 ms.assetid: 525815c8-2845-45e8-be96-100d1f144725
+ms.topic: tutorial
+ms.technology: vs-ide-general
+ms.devlang:
+- csharp
+- vb
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 151b9be68b82f2b9fdcb20cd105890914333a2b6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: bc8e39b32fdda2e16cc70fd2d06460c00011c715
+ms.sourcegitcommit: 9c07ae6fb18204ea080c8248994a683fa12e5c82
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62821518"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "70293462"
 ---
 # <a name="tutorial-3-create-a-matching-game"></a>教學課程 3：建立配對遊戲
 
-在本教學課程中，您會建置一個配對遊戲，而遊戲玩家必須配對隱藏的圖示。 您將學習如何：
+在本教學課程中，您會建置一個配對遊戲，而遊戲玩家必須配對隱藏的圖示。 您會了解如何：
 
 - 在 <xref:System.Collections.Generic.List%601> 物件中儲存物件 (例如圖示)。
 
