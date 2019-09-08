@@ -17,12 +17,12 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: 98dadaed75cf16ae6ae35da9d6589355a63bd35c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 89de993337ecd214c7771faf17b24f90fa5e0110
+ms.sourcegitcommit: 0f44ec8ba0263056ad04d2d0dc904ad4206ce8fc
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62975231"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70766261"
 ---
 # <a name="code-snippets"></a>程式碼片段
 
@@ -31,7 +31,7 @@ ms.locfileid: "62975231"
 > [!NOTE]
 > 本主題適用於 Windows 上的 Visual Studio。 針對 Visual Studio for Mac，請參閱[程式碼片段 (Visual Studio for Mac)](/visualstudio/mac/snippets)。
 
-程式碼片段可使用的語言包括 C#、C++、Visual Basic、XML 和 T-SQL 等等。 若要檢視所有已安裝可用的程式碼片段語言，請從 Visual Studio 功能表的 [工具] 開啟 [程式碼片段管理員]，並從頂端下拉功能表中選擇語言。
+程式碼片段可使用的語言包括 C#、C++、Visual Basic、XML 和 T-SQL 等等。 若要查看某個語言所有可用的已安裝程式碼片段，請從 [**工具**] 功能表開啟 [**程式碼片段管理員**] （或按**ctrl** + **K**、 **ctrl** + **B**），然後從上方的下拉式功能表。
 
 ![[程式碼片段管理員] 對話方塊](media/code-snippets-manager.png)
 
@@ -41,7 +41,7 @@ ms.locfileid: "62975231"
 
 - 以滑鼠右鍵按一下操作功能表，或是從程式碼編輯器中，選擇 [片段] > [插入程式碼片段]
 
-- 或者，您也可以從鍵盤按 **Ctrl**+**K**+**X**
+- 從鍵盤按**ctrl** + **K**、**ctrl** + **X**
 
 ## <a name="expansion-snippets-and-surround-with-snippets"></a>擴充程式碼片段和範圍陳述式程式碼片段
 
