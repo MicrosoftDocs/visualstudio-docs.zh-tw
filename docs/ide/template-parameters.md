@@ -10,16 +10,16 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 90035e99c13484bd1b49e59350489ed1090b5f4e
-ms.sourcegitcommit: 673b9364fc9a96b027662dcb4cf5d61cab60ef11
-ms.translationtype: HT
+ms.openlocfilehash: 2fbc9d95a6e334c3dcd788c4b686a222c417b0df
+ms.sourcegitcommit: 0f44ec8ba0263056ad04d2d0dc904ad4206ce8fc
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/21/2019
-ms.locfileid: "69891273"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70766118"
 ---
 # <a name="template-parameters"></a>範本參數
 
-將範本具現化時，您可以取代範本中的值。 若要設定這項功能，請使用「範本參數」  。 範本參數可以用來取代範本中的值，例如類別名稱和命名空間。 當使用者新增項目或專案取代這些參數時，範本精靈會在背景中執行。
+將範本具現化時，您可以取代範本中的值。 若要設定這項功能，請使用「範本參數」。 範本參數可以用來取代範本中的值，例如類別名稱和命名空間。 當使用者新增項目或專案取代這些參數時，範本精靈會在背景中執行。
 
 ## <a name="declare-and-enable-template-parameters"></a>宣告和啟用範本參數
 
@@ -47,10 +47,10 @@ ms.locfileid: "69891273"
 
 下表列出可用於任何範本的保留範本參數：
 
-|參數|說明|
+|參數|描述|
 |---------------|-----------------|
 |clrversion|通用語言執行平台 (CLR) 的最新版本。|
-|ext_*|將 `ext_` 前置詞新增至任何參數，以參考父代範本的變數。 例如，`ext_safeprojectname`。|
+|ext_*|將 `ext_` 前置詞新增至任何參數，以參考父代範本的變數。 例如： `ext_safeprojectname` 。|
 |guid[1-10]|GUID；用來取代專案檔中的專案 GUID。 您最多可以指定 10 個唯一的 GUID (例如，`guid1`)。|
 |itemname|正在使用該參數的檔案名稱。|
 |machinename|目前的電腦名稱 (例如，Computer01)。|
@@ -61,7 +61,7 @@ ms.locfileid: "69891273"
 |safeitemrootname|與 `safeitemname` 相同。|
 |safeprojectname|使用者在建立專案時時提供的名稱，但已移除所有不安全的字元和空格。|
 |時間|目前的時間，格式為 DD/MM/YYYY 00:00:00。|
-|SpecificSolutionName|方案名稱。 若已核取 [建立方案目錄]，則 `SpecificSolutionName` 具有方案名稱。 若未核取 [建立方案目錄]，`SpecificSolutionName` 則為空白。|
+|specifiedSolutionName|方案名稱。 若已核取 [建立方案目錄]，則 `specifiedSolutionName` 具有方案名稱。 若未核取 [建立方案目錄]，`specifiedSolutionName` 則為空白。|
 |userdomain|目前的使用者網域。|
 |username|目前的使用者名稱。|
 |webnamespace|目前網站的名稱。 這個參數用於 Web 表單範本，以保證唯一的類別名稱。 如果網站位於 Web 伺服器的根目錄，此範本參數會解析為 Web 伺服器的根目錄。|
