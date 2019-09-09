@@ -31,7 +31,7 @@ Visual Studio 包含一組核心的 .NET Compiler Platform (*Roslyn*) 分析器�
 2. 使用 [[套件管理員主控台](/nuget/quickstart/install-and-use-a-package-in-visual-studio#package-manager-console)] 或 [[套件管理員] UI](/nuget/quickstart/install-and-use-a-package-in-visual-studio#package-manager-console), 在 Visual Studio 中安裝套件。
 
    > [!NOTE]
-   > 每個分析器套件的 [www.nuget.org] 頁面會顯示要貼入**封裝管理員主控台**的命令。 甚至還有一個方便的按鈕, 可將文字複製到剪貼簿。
+   > 每個分析器套件的 www.nuget.org 頁面會顯示要貼入**封裝管理員主控台**的命令。 甚至還有一個方便的按鈕, 可將文字複製到剪貼簿。
 
    系統會安裝分析器元件, 並出現在 [**參考** > ]**分析器**底下的**方案總管**。
 
