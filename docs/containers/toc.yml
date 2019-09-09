@@ -18,7 +18,7 @@
           href: tutorial-multicontainer.md
         - name: Visual Studio 中的 Kubernetes
           href: tutorial-kubernetes-tools.md
-    - name: 作法
+    - name: 如何
       items:
         - name: 對本機 Docker 容器中的應用程式偵錯
           href: edit-and-refresh.md
@@ -42,3 +42,7 @@
       items:
         - name: 適用於容器專案的 MSBuild 屬性
           href: container-msbuild-properties.md
+        - name: Docker Compose 專案的設定
+          href: docker-compose-properties.md
+        - name: 啟動設定
+          href: container-launch-settings.md
