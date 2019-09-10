@@ -1,6 +1,6 @@
 ---
 title: 步驟 2：執行程式
-ms.date: 08/30/2019
+ms.date: 09/06/2019
 ms.assetid: 9a8fe90e-c97b-4e98-b6c8-0c6b3962c49d
 ms.topic: tutorial
 ms.prod: visual-studio-windows
@@ -13,14 +13,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 18db6e663284e7d4550f22f5f3f774925bd52dab
-ms.sourcegitcommit: 9c07ae6fb18204ea080c8248994a683fa12e5c82
+ms.openlocfilehash: 12ae2a50b114c34f72f4e25ec52db40fc77943d3
+ms.sourcegitcommit: bd4e45f1697a8fbfdbc0a7c6b531c8f7b9fb8a48
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "70293594"
+ms.lasthandoff: 09/09/2019
+ms.locfileid: "70808794"
 ---
-# <a name="step-2-run-your-program"></a>步驟 2：執行程式
+# <a name="step-2-run-your-pictureviewer-app"></a>步驟 2：執行您的 PictureViewer 應用程式
 
 當您建立 Windows Forms 應用程式專案時，實際上會建立一個執行的程式。 在本教學課程中，您的*PictureViewer*應用程式&mdash;還不會有太大的功能。 不過，現在它只會顯示一個空白視窗，顯示標題列中的**Form1** 。
 
