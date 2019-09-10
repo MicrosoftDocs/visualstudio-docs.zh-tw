@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c14f48c3f6fc5b3b4cbdf9dfb5d36919de6884f
-ms.sourcegitcommit: 9c07ae6fb18204ea080c8248994a683fa12e5c82
+ms.openlocfilehash: 1506f4303cf5344c4035642cfdd3e42c98396b02
+ms.sourcegitcommit: bd4e45f1697a8fbfdbc0a7c6b531c8f7b9fb8a48
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "70293536"
+ms.lasthandoff: 09/09/2019
+ms.locfileid: "70808770"
 ---
 # <a name="tutorial-1-create-a-picture-viewer"></a>教學課程 1：建立圖片檢視器
 
@@ -52,7 +52,7 @@ ms.locfileid: "70293536"
 |標題|描述|
 |-----------|-----------------|
 |[步驟 1：建立 Windows Forms 應用程式專案](../ide/step-1-create-a-windows-forms-application-project.md)|從建立 Windows Forms 應用程式專案開始。|
-|[步驟 2：執行程式](../ide/step-2-run-your-program.md)|執行您在上一個步驟中建立的 Windows Forms 應用程式。|
+|[步驟 2：執行您的應用程式](../ide/step-2-run-your-program.md)|執行您在上一個步驟中建立的 Windows Forms 應用程式。|
 |[步驟 3：設定表單屬性](../ide/step-3-set-your-form-properties.md)|使用 [屬性] 視窗變更表單的外觀。|
 |[步驟 4：使用 TableLayoutPanel 控制項來配置表單](../ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md)|新增 `TableLayoutPanel` 控制項至表單。|
 |[步驟 5：將控制項新增至表單](../ide/step-5-add-controls-to-your-form.md)|將控制項 (例如 `PictureBox` 控制項和 `CheckBox` 控制項) 新增至表單。 將按鈕加入至表單。|
