@@ -11,7 +11,7 @@
           href: roslyn-analyzers-overview.md
         - name: 安裝
           href: install-roslyn-analyzers.md
-        - name: Configuration
+        - name: 組態
           href: use-roslyn-analyzers.md
         - name: 啟用完整解決方案分析
           href: how-to-enable-and-disable-full-solution-analysis-for-managed-code.md
@@ -28,7 +28,7 @@
           href: fxcop-analyzers.yml
         - name: 手動執行程式碼分析
           href: how-to-run-code-analysis-manually-for-managed-code.md
-        - name: Configuration
+        - name: 組態
           items:
             - name: 設定舊版分析
               href: how-to-configure-code-analysis-for-a-managed-code-project.md
@@ -119,7 +119,7 @@
           href: fxcop-analyzers.yml
         - name: 安裝
           href: install-fxcop-analyzers.md
-        - name: Configuration
+        - name: 組態
           items:
             - name: 總覽
               href: configure-fxcop-analyzers.md
@@ -692,6 +692,8 @@
                   href: ca3011-review-code-for-dll-injection-vulnerabilities.md
                 - name: CA3012：檢閱程式碼是否有 regex 插入式攻擊弱點
                   href: ca3012-review-code-for-regex-injection-vulnerabilities.md
+                - name: CA3061：請勿透過 URL 新增結構描述
+                  href: ca3061.md
                 - name: 'CA3075:不安全的 DTD 處理'
                   href: ca3075-insecure-dtd-processing.md
                 - name: 'CA3076:不安全的 XSLT 指令碼執行'
@@ -702,12 +704,30 @@
                   href: ca3147-mark-verb-handlers-with-validateantiforgerytoken.md
                 - name: 'CA5361:請勿為安全通道停用強式密碼編譯'
                   href: ca5361.md
+                - name: CA5363：請勿停用要求驗證
+                  href: ca5363.md
                 - name: 'CA5364:請勿使用已取代的安全性通訊協定'
                   href: ca5364.md
+                - name: CA5369：請使用 XmlReader 進行還原序列化
+                  href: ca5369.md
+                - name: CA5370：請使用 XmlReader 驗證讀取器
+                  href: ca5370.md
+                - name: CA5371：請使用 XmlReader 讀取結構描述
+                  href: ca5371.md
+                - name: CA5372：請為 XPathDocument 使用 XmlReader
+                  href: ca5372.md
+                - name: CA5373：不使用已過時的金鑰衍生函式
+                  href: ca5373.md
                 - name: 'CA5378:請勿停用 ServicePointManagerSecurityProtocols'
                   href: ca5378.md
+                - name: CA5380：不新增憑證至根存放區
+                  href: ca5380.md
+                - name: CA5381：確保憑證不新增至根存放區
+                  href: ca5381.md
                 - name: 'CA5386:避免將 SecurityProtocolType 值寫入程式碼'
                   href: ca5386.md
+                - name: CA5389：不將封存項目路徑新增至目標檔案系統路徑
+                  href: ca5389.md
                 - name: CA5397：請勿使用已過時的 SslProtocols 通訊協定
                   href: ca5397.md
                 - name: CA5398：避免以硬式編碼方式寫入 SslProtocols 值
