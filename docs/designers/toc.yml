@@ -118,7 +118,7 @@
               href: ../ide/tutorial-1-create-a-picture-viewer.md
             - name: 步驟 1：建立 Windows Forms 應用程式專案
               href: ../ide/step-1-create-a-windows-forms-application-project.md
-            - name: 步驟 2：執行程式
+            - name: 步驟 2：執行應用程式
               href: ../ide/step-2-run-your-program.md
             - name: 步驟 3：設定表單屬性
               href: ../ide/step-3-set-your-form-properties.md
@@ -136,7 +136,7 @@
               href: ../ide/step-9-review-comment-and-test-your-code.md
             - name: 步驟 10：為其他按鈕及核取方塊撰寫程式碼
               href: ../ide/step-10-write-code-for-additional-buttons-and-a-check-box.md
-            - name: 步驟 11：執行您的程式並嘗試其他功能
+            - name: 步驟 11：執行您的應用程式及嘗試其他功能
               href: ../ide/step-11-run-your-program-and-try-other-features.md
         - name: '教學課程 2：建立計時數學測驗 (C#)'
           items:
