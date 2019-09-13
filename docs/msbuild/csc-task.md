@@ -18,15 +18,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 39287eb2b1aec27dcb0c08c40875ce579b3a6bea
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
-ms.translationtype: HT
+ms.openlocfilehash: 9df54befff79b82703cb363fea92536285c68232
+ms.sourcegitcommit: 4dfe098ac0df294aad63e6b384d6575980798ca3
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66745788"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70888024"
 ---
 # <a name="csc-task"></a>Csc 工作
-包裝 csc.exe  ，並產生可執行檔 (.*exe* 檔案)、動態連結程式庫 ( *.dll* 檔案) 或程式碼模組 (.netmodule  檔案)。 如需 *csc.exe* 的詳細資訊，請參閱 [C# 編譯器選項](/dotnet/csharp/language-reference/compiler-options/index)。
+包裝 csc.exe，並產生可執行檔 (.*exe* 檔案)、動態連結程式庫 ( *.dll* 檔案) 或程式碼模組 (.netmodule 檔案)。 如需 *csc.exe* 的詳細資訊，請參閱 [C# 編譯器選項](/dotnet/csharp/language-reference/compiler-options/index)。
 
 ## <a name="parameters"></a>參數
 下表說明 `Csc` 工作的參數。
@@ -42,7 +42,7 @@ ms.locfileid: "66745788"
 | `CodePage` | 選擇性的 `Int32` 參數。<br /><br /> 指定編譯過程中所有原始程式碼檔使用的字碼頁。 如需詳細資訊，請參閱 [-codepage (C# 編譯器選項)](/dotnet/csharp/language-reference/compiler-options/codepage-compiler-option)。 |
 | `DebugType` | 選擇性的 `String` 參數。<br /><br /> 指定偵錯類型。 `DebugType` 可以是 `full` 或 `pdbonly`。 預設值是 `full`，會將偵錯工具附加至執行中的程式。 指定 `pdbonly`，讓原始程式碼在偵錯工具中啟動程式時進行偵錯，但只有在將執行中的程式附加到偵錯工具時，才會顯示組譯工具。<br /><br /> 此參數會覆寫 `EmitDebugInformation` 參數。<br /><br /> 如需詳細資訊，請參閱 [-debug (C# 編譯器選項)](/dotnet/csharp/language-reference/compiler-options/debug-compiler-option)。 |
 | `DefineConstants` | 選擇性的 `String` 參數。<br /><br /> 定義前置處理器符號。 如需詳細資訊，請參閱 [-define (C# 編譯器選項)](/dotnet/csharp/language-reference/compiler-options/define-compiler-option)。 |
-| `DelaySign` | 選擇性的 `Boolean` 參數。<br /><br /> 如果是 `true`，即表示您想要完整的簽署組件。 如果是 `false`，則表示您只想將公開金鑰放置於組件中。<br /><br /> 除非與 `KeyFile` 或 `KeyContainer` 參數搭配使用，否則此參數沒有任何作用。<br /><br /> 如需詳細資訊，請參閱 [-delaysign (C# 編譯器選項)](/dotnet/csharp/language-reference/compiler-options/delaysign-compiler-option)。 |
+| `DelaySign` | 選擇性的 `Boolean` 參數。<br /><br /> 如果是 `true`，則表示您只想將公開金鑰放置於組件中。 如果`false`為，則指定您想要完整簽署的元件<br /><br /> 除非與 `KeyFile` 或 `KeyContainer` 參數搭配使用，否則此參數沒有任何作用。<br /><br /> 如需詳細資訊，請參閱 [-delaysign (C# 編譯器選項)](/dotnet/csharp/language-reference/compiler-options/delaysign-compiler-option)。 |
 | `Deterministic` | 選擇性的 `Boolean` 參數。<br/><br/> 若為 `true`，可讓編譯器輸出在輸入相同時編譯之間二進位內容相同的組件。<br/><br/>如需詳細資訊，請參閱 [-deterministic (C# 編譯器選項)](/dotnet/csharp/language-reference/compiler-options/deterministic-compiler-option)。 |
 | `DisabledWarnings` | 選擇性的 `String` 參數。<br /><br /> 指定要停用的警告清單。 如需詳細資訊，請參閱 [-nowarn (C# 編譯器選項)](/dotnet/csharp/language-reference/compiler-options/nowarn-compiler-option)。 |
 | `DocumentationFile` | 選擇性的 `String` 參數。<br /><br /> 將文件註解處理成 XML 檔案。 如需詳細資訊，請參閱 [-doc (C# 編譯器選項)](/dotnet/csharp/language-reference/compiler-options/doc-compiler-option)。 |
@@ -76,7 +76,7 @@ ms.locfileid: "66745788"
 | `WarningLevel` | 選擇性的 `Int32` 參數。<br /><br /> 指定要針對編譯器顯示的警告層級。 如需詳細資訊，請參閱 [-warn (C# 編譯器選項)](/dotnet/csharp/language-reference/compiler-options/warn-compiler-option)。 |
 | `WarningsAsErrors` | 選擇性的 `String` 參數。<br /><br /> 指定要視為錯誤的警告清單。 如需詳細資訊，請參閱 [-warnaserror (C# 編譯器選項)](/dotnet/csharp/language-reference/compiler-options/warnaserror-compiler-option)。<br /><br /> 此參數會覆寫 `TreatWarningsAsErrors` 參數。 |
 | `WarningsNotAsErrors` | 選擇性的 `String` 參數。<br /><br /> 指定不要視為錯誤的警告清單。 如需詳細資訊，請參閱 [-warnaserror (C# 編譯器選項)](/dotnet/csharp/language-reference/compiler-options/warnaserror-compiler-option)。<br /><br /> 唯有將 `TreatWarningsAsErrors` 參數設為 `true` 時，此參數才有用。 |
-| `Win32Icon` | 選擇性的 `String` 參數。<br /><br /> 在組件中插入 *.ico* 檔案，讓輸出檔在 [檔案總管]  中具有所需的外觀。 如需詳細資訊，請參閱 [-win32icon (C# 編譯器選項)](/dotnet/csharp/language-reference/compiler-options/win32icon-compiler-option)。 |
+| `Win32Icon` | 選擇性的 `String` 參數。<br /><br /> 在組件中插入 *.ico* 檔案，讓輸出檔在 [檔案總管] 中具有所需的外觀。 如需詳細資訊，請參閱 [-win32icon (C# 編譯器選項)](/dotnet/csharp/language-reference/compiler-options/win32icon-compiler-option)。 |
 | `Win32Manifest` | 選擇性的 `String` 參數。<br /><br /> 指定要包含的 Win32 資訊清單。 |
 | `Win32Resource` | 選擇性的 `String` 參數。<br /><br /> 將 Win32 資源檔 ( *.res*) 插入輸出檔中。 如需詳細資訊，請參閱 [-win32res (C# 編譯器選項)](/dotnet/csharp/language-reference/compiler-options/win32res-compiler-option)。 |
 

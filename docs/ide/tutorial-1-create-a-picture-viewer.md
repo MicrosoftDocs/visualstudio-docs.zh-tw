@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1506f4303cf5344c4035642cfdd3e42c98396b02
-ms.sourcegitcommit: bd4e45f1697a8fbfdbc0a7c6b531c8f7b9fb8a48
+ms.openlocfilehash: 2c0f867179fd78ecb753a9b66cfbdb8479e16c3b
+ms.sourcegitcommit: b60a00ac3165364ee0e53f7f6faef8e9fe59ec4a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2019
-ms.locfileid: "70808770"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70913274"
 ---
 # <a name="tutorial-1-create-a-picture-viewer"></a>教學課程 1：建立圖片檢視器
 
@@ -43,7 +43,7 @@ ms.locfileid: "70808770"
 
 * 撰寫事件處理常式方法。
 
-當您完成時，您的程式看起來應該類似下圖：
+當您完成時，您的應用程式看起來應該類似下圖：
 
 ![您在本教學課程中建立的圖片檢視器應用程式](../ide/media/express_pictureviewerdone.png)
 
@@ -52,7 +52,7 @@ ms.locfileid: "70808770"
 |標題|描述|
 |-----------|-----------------|
 |[步驟 1：建立 Windows Forms 應用程式專案](../ide/step-1-create-a-windows-forms-application-project.md)|從建立 Windows Forms 應用程式專案開始。|
-|[步驟 2：執行您的應用程式](../ide/step-2-run-your-program.md)|執行您在上一個步驟中建立的 Windows Forms 應用程式。|
+|[步驟 2：執行您的圖片檢視器應用程式](../ide/step-2-run-your-program.md)|執行您在上一個步驟中建立的 Windows Forms 應用程式專案。|
 |[步驟 3：設定表單屬性](../ide/step-3-set-your-form-properties.md)|使用 [屬性] 視窗變更表單的外觀。|
 |[步驟 4：使用 TableLayoutPanel 控制項來配置表單](../ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md)|新增 `TableLayoutPanel` 控制項至表單。|
 |[步驟 5：將控制項新增至表單](../ide/step-5-add-controls-to-your-form.md)|將控制項 (例如 `PictureBox` 控制項和 `CheckBox` 控制項) 新增至表單。 將按鈕加入至表單。|
@@ -61,7 +61,7 @@ ms.locfileid: "70808770"
 |[步驟 8：為顯示圖片按鈕事件處理常式撰寫程式碼](../ide/step-8-write-code-for-the-show-a-picture-button-event-handler.md)|使用 IntelliSense 工具撰寫程式碼。|
 |[步驟 9：檢閱、註解及測試您的程式碼](../ide/step-9-review-comment-and-test-your-code.md)|檢閱和測試程式碼。 視需要加入註解。|
 |[步驟 10：為其他按鈕及核取方塊撰寫程式碼](../ide/step-10-write-code-for-additional-buttons-and-a-check-box.md)|使用 IntelliSense 撰寫程式碼讓其他按鈕和核取方塊發揮作用。|
-|[步驟 11：執行您的程式並嘗試其他功能](../ide/step-11-run-your-program-and-try-other-features.md)|執行程式並設定背景色彩。 嘗試其他功能，例如變更色彩、字型和框線。|
+|[步驟 11：執行您的應用程式並嘗試其他功能](../ide/step-11-run-your-program-and-try-other-features.md)|執行您的應用程式並設定背景色彩。 嘗試其他功能，例如變更色彩、字型和框線。|
 
 ## <a name="next-steps"></a>後續步驟
 

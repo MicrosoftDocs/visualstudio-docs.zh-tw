@@ -16,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 794244bcdb814f78338a119d27ec0b0299023e59
-ms.sourcegitcommit: 9c07ae6fb18204ea080c8248994a683fa12e5c82
+ms.openlocfilehash: fc843cceea35d196e3f9719a0690764611865600
+ms.sourcegitcommit: 4dfe098ac0df294aad63e6b384d6575980798ca3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "70293495"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70887972"
 ---
 # <a name="step-6-name-your-button-controls"></a>步驟 6：命名按鈕控制項
 
@@ -71,14 +71,14 @@ ms.locfileid: "70293495"
    > [!IMPORTANT]
    > 使用此頁面右上方的程式設計語言控制項，以查看C#程式碼片段或 Visual Basic 程式碼片段。<br><br>![Docs.Microsoft.com 的程式設計語言控制項](../ide/media/docs-programming-language-control.png)
 
-   您正在查看名`showButton_Click()`為的程式碼（ `ShowButton_Click()`也就是）。 當您開啟 **showButton** 按鈕的程式碼檔時，IDE 已將此加入至表單的程式碼。 在設計階段，當您開啟表單中的控制項程式碼檔案時，如果該控制項的程式碼不存在，會產生程式碼。 這個程式碼稱為 *「方法」* (method)，當您執行程式並選取控制項 (在此例中，[顯示圖片] 按鈕) 時執行它。
+   您正在查看名`showButton_Click()`為的程式碼（ `ShowButton_Click()`也就是）。 當您開啟 **showButton** 按鈕的程式碼檔時，IDE 已將此加入至表單的程式碼。 在設計階段，當您開啟表單中的控制項程式碼檔案時，如果該控制項的程式碼不存在，會產生程式碼。 這個程式碼稱為*方法*，會在您執行應用程式並選擇控制項（在此案例中為 [**顯示圖片**] 按鈕）時執行。
 
 1. 再次選擇 [ **Windows Form 設計工具**] 索引標籤（ **[Form1.cs [Design]]** ），然後開啟 [**清除圖片**] 按鈕的程式碼檔，在表單的程式碼中建立其方法。 針對其他兩個按鈕重複此步驟。 IDE 每一次都會將新的方法加入至表單的程式碼檔案。
 
 1. 若要再加入一個方法，在 [Windows Forms 設計工具] 中開啟 **CheckBox** 控制項的程式碼檔案，讓 IDE 加入 `checkBox1_CheckedChanged()` 方法。 每當使用者選取或清除核取方塊時就會呼叫該方法。
 
    > [!TIP]
-   > 在設計程式時，您通常會在程式碼編輯器和 **Windows Forms 設計工具**之間移動。 IDE 可讓您在專案中輕鬆巡覽。 使用**方案總管**在 Visual Basic C#中*按兩下或 form1.vb 中的*[ *Form1.cs* ] 來開啟**Windows Form 設計工具**，或是在功能表列上選擇 [**視圖** > **設計**工具]。
+   > 在應用程式上工作時，您通常會在程式碼編輯器和**Windows Form 設計工具**之間移動。 IDE 可讓您在專案中輕鬆巡覽。 使用**方案總管**在 Visual Basic C#中*按兩下或 form1.vb 中的*[ *Form1.cs* ] 來開啟**Windows Form 設計工具**，或是在功能表列上選擇 [**視圖** > **設計**工具]。
 
     下列顯示您在程式碼編輯器中看到的新程式碼。
 
@@ -86,7 +86,7 @@ ms.locfileid: "70293495"
     
     [!code-vb[VbExpressTutorial1Step6_#2](../ide/codesnippet/VisualBasic/step-6-name-your-button-controls_2.vb)]
 
-    您加入的五個方法稱為「 *事件處理常式*」(Event Handler)，因為每當事件發生時 (例如使用者選擇按鈕或選取方塊)，程式就會呼叫這些方法。
+    您加入的五個方法稱為「*事件處理常式*」，因為每當事件發生時（例如使用者選擇按鈕或選取方塊），您的應用程式就會呼叫它們。
 
     當您在設計階段於 IDE 檢視控制項的程式碼時，Visual Studio 會加入控制項的事件處理常式方法 (如果不存在)。 例如，當您按兩下按鈕時，IDE 會為其 <xref:System.Windows.Forms.Control.Click> 事件加入事件處理常式 (每當使用者選擇按鈕時，就會呼叫)。 當您按兩下核取方塊時，IDE 會為其 <xref:System.Windows.Forms.CheckBox.CheckedChanged> 事件加入事件處理常式 (每當使用者選取或清除方塊時，就會呼叫)。
 
@@ -100,7 +100,7 @@ ms.locfileid: "70293495"
 
 ## <a name="next-steps"></a>後續步驟
 
-* 若要前往下一個教學課程步驟，請參閱[步驟 7：將對話方塊元件新增至表單](../ide/step-7-add-dialog-components-to-your-form.md)。
+* 若要移至下一個教學課程步驟 **，請參閱[步驟7：將對話方塊元件新增至您](../ide/step-7-add-dialog-components-to-your-form.md)的表單**。
 
 * 若要回到上一個教學課程步驟，請參閱[步驟 5：將控制項新增至表單](../ide/step-5-add-controls-to-your-form.md)。
 

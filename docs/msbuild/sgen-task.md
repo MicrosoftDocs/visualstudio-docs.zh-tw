@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7da05a71d5de4a8f1ec6ef5fbb27a2e74220a1ef
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: c326dc31f6ce80026f1c83c5b71f8e27faabf93e
+ms.sourcegitcommit: 4dfe098ac0df294aad63e6b384d6575980798ca3
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62993224"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70887626"
 ---
 # <a name="sgen-task"></a>SGen 工作
 針對指定組件中的型別建立 XML 序列化組件。 此工作會包裝 XML 序列化程式產生器工具 (*Sgen.exe*)。 如需詳細資訊，請參閱 [XML 序列化程式產生器工具 (Sgen.exe)](/dotnet/framework/serialization/xml-serializer-generator-tool-sgen-exe)。
@@ -31,11 +31,11 @@ ms.locfileid: "62993224"
 ## <a name="parameters"></a>參數
  下表說明 `SGen` 工作的參數。
 
-| 參數 | 說明 |
+| 參數 | 描述 |
 |-----------------------------| - |
 | `BuildAssemblyName` | 必要的 `String` 參數。<br /><br /> 產生序列化程式碼的組件。 |
 | `BuildAssemblyPath` | 必要的 `String` 參數。<br /><br /> 用來產生序列化程式碼之組件的路徑。 |
-| `DelaySign` | 選擇性的 `Boolean` 參數。<br /><br /> 如果是 `true`，即表示您想要完整的簽署組件。 如果是 `false`，則表示您只想將公開金鑰放置於組件中。<br /><br /> 除非與 `KeyFile` 或 `KeyContainer` 參數搭配使用，否則此參數沒有任何作用。 |
+| `DelaySign` | 選擇性的 `Boolean` 參數。<br /><br /> 如果是 `true`，則表示您只想將公開金鑰放置於組件中。 如果是 `false`，即表示您想要完整的簽署組件。<br /><br /> 除非與 `KeyFile` 或 `KeyContainer` 參數搭配使用，否則此參數沒有任何作用。 |
 | `KeyContainer` | 選擇性的 `String` 參數。<br /><br /> 指定保留金鑰組的容器。 這樣會藉由將公開金鑰插入組件資訊清單中的方式簽署組件。 然後工作將會使用私密金鑰簽署最終組件。 |
 | `KeyFile` | 選擇性的 `String` 參數。<br /><br /> 指定用來簽署組件的金鑰組或公開金鑰。 編譯器會將公開金鑰插入組件資訊清單中，然後使用私密金鑰簽署最終組件。 |
 | `Platform` | 選擇性的 `String` 參數。<br /><br /> 取得或設定用來產生輸出組件的編譯器平台。 此參數可以具有 `x86`、`x64` 或 `anycpu` 的值。 預設為 `anycpu`。 |

@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 66b0a22fcef06f69f5c8adfa2afa0b6fdadc9f01
-ms.sourcegitcommit: 9c07ae6fb18204ea080c8248994a683fa12e5c82
+ms.openlocfilehash: 5ff85034d7185e68a43ed8b4c70f68787414ddd9
+ms.sourcegitcommit: b60a00ac3165364ee0e53f7f6faef8e9fe59ec4a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "70293570"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70913167"
 ---
 # <a name="step-5-add-controls-to-your-form"></a>步驟 5：將控制項新增至表單
 
@@ -85,7 +85,7 @@ ms.locfileid: "70293570"
 
 ## <a name="to-continue-or-review"></a>若要繼續或檢視
 
-* 若要前往下一個教學課程步驟，請參閱[步驟 6：命名按鈕控制項](../ide/step-6-name-your-button-controls.md)。
+* 若要移至下一個教學課程步驟 **，請參閱[步驟6：命名您的按鈕](../ide/step-6-name-your-button-controls.md)控制項**。
 
 * 若要回到上一個教學課程步驟，請參閱[步驟 4：使用 TableLayoutPanel 控制項來配置表單](../ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md)。
 

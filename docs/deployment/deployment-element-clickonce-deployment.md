@@ -1,5 +1,5 @@
 ---
-title: '&lt;部署&gt;項目 （ClickOnce 部署） |Microsoft Docs'
+title: '&lt;deployment&gt;元素（ClickOnce 部署） |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -21,14 +21,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 90168dd760ba5619e2d50c864f54122b01ed66fa
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 988ce0859ab24377395cc4077f9e6fa42e0487a5
+ms.sourcegitcommit: 4dfe098ac0df294aad63e6b384d6575980798ca3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62928935"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70887851"
 ---
-# <a name="ltdeploymentgt-element-clickonce-deployment"></a>&lt;部署&gt;項目 （ClickOnce 部署）
+# <a name="ltdeploymentgt-element-clickonce-deployment"></a>&lt;deployment&gt;元素（ClickOnce 部署）
 識別用於更新部署及公開至系統的屬性。
 
 ## <a name="syntax"></a>語法
@@ -58,57 +58,57 @@ ms.locfileid: "62928935"
 ```
 
 ## <a name="elements-and-attributes"></a>元素和屬性
- `deployment` 項目是必要的，且位於 `urn:schemas-microsoft-com:asm.v1` 命名空間。 該項目具有下列屬性。
+ `deployment` 項目是必要的，且位於 `urn:schemas-microsoft-com:asm.v2` 命名空間。 該項目具有下列屬性。
 
 | 屬性 | 描述 |
 |--------------------------| - |
-| `install` | 必要項。 指定此應用程式是否定義在 Windows 上出現**開始** 功能表和控制項台中**新增或移除程式**應用程式。 有效值為 `true` 和 `false`。 如果`false`，[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]一律會從網路中，執行此應用程式的最新版本並不會辨識`subscription`項目。 |
-| `minimumRequiredVersion` | 選擇性。 指定可以在用戶端執行此應用程式的最小版本。 如果應用程式的版本號碼小於提供的部署資訊清單中的版本號碼，將不會執行應用程式。 必須以格式指定版本號碼`N.N.N.N`，其中`N`是一個不帶正負號的整數。 如果`install`屬性是`false`，`minimumRequiredVersion`就不能設定。 |
-| `mapFileExtensions` | 選擇性。 預設值為 `false`。 如果`true`，部署中的所有檔案必須都有.deploy 副檔名。 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 會關閉這些檔案移除此延伸模組，因為它會將它們從 Web 伺服器下載。 如果您發行應用程式使用[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]，它會自動加入此延伸模組的所有檔案。 此參數可讓內的所有檔案[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]區塊的結尾為"unsafe"的擴充功能，例如.exe 的檔案傳輸的網頁伺服器從下載部署。 |
-| `disallowUrlActivation` | 選擇性。 預設值為 `false`。 如果`true`，防止藉由按一下 URL，或將 URL 輸入 Internet Explorer 正在啟動已安裝應用程式。 如果`install`屬性不存在，會忽略此屬性。 |
-| `trustURLParameters` | 選擇性。 預設值為 `false`。 如果`true`、 允許的 URL 包含查詢字串參數傳遞至應用程式、 多 like 的命令列引數傳遞至命令列應用程式。 如需詳細資訊，請參閱[如何：在線上 ClickOnce 應用程式中擷取查詢字串資訊](../deployment/how-to-retrieve-query-string-information-in-an-online-clickonce-application.md)。<br /><br /> 如果`disallowUrlActivation`屬性是`true`，`trustUrlParameters`必須是從資訊清單中，排除，或明確設定為`false`。 |
+| `install` | 必要項。 指定此應用程式是否會在 Windows [**開始**] 功能表和 [控制台] [**新增或移除程式**] 應用程式中定義目前狀態。 有效值為 `true` 和 `false`。 如果`false`是[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] ，一律會從網路執行這個應用程式的最新版本， `subscription`而且不會辨識元素。 |
+| `minimumRequiredVersion` | 選擇性。 指定此應用程式可在用戶端上執行的最小版本。 如果應用程式的版本號碼小於部署資訊清單中提供的版本號碼，應用程式將不會執行。 版本號碼必須以格式`N.N.N.N`指定，其中`N`是不帶正負號的整數。 如果屬性為`false` ，`minimumRequiredVersion`則不得設定。 `install` |
+| `mapFileExtensions` | 選擇性。 預設值為 `false`。 如果`true`為，則部署中的所有檔案都必須具有 .deploy 副檔名。 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]當這些檔案從 Web 服務器下載時，將會立即從這些檔案中去除。 如果您使用[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]來發行應用程式，它會自動將此延伸模組新增至所有檔案。 此參數可從 Web 服務器下載[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]部署中的所有檔案，以封鎖以「不安全」副檔名結尾的檔案（例如 .exe）的傳輸。 |
+| `disallowUrlActivation` | 選擇性。 預設值為 `false`。 如果`true`是，請在 Internet Explorer 中按一下 url 或輸入 url，以防止已安裝的應用程式啟動。 `install`如果屬性不存在，則會忽略這個屬性。 |
+| `trustURLParameters` | 選擇性。 預設值為 `false`。 如果`true`是，允許 URL 包含傳入應用程式的查詢字串參數，就像命令列引數一樣，會傳遞至命令列應用程式。 如需詳細資訊，請參閱[如何：在線上 ClickOnce 應用程式中擷取查詢字串資訊](../deployment/how-to-retrieve-query-string-information-in-an-online-clickonce-application.md)。<br /><br /> 如果屬性為`true` `false`， `trustUrlParameters`則必須從資訊清單中排除，或明確地設定為。 `disallowUrlActivation` |
 
- `deployment`元素也包含下列子元素。
+ `deployment`元素也包含下列子項目。
 
 ## <a name="subscription"></a>訂用帳戶
- 選擇性。 包含`update`項目。 `subscription` 項目沒有任何屬性。 如果`subscription`項目不存在，[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式永遠不會掃描是否有更新。 如果`install`的屬性`deployment`項目是`false`，則`subscription`項目會被忽略，因為[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]會一律從網路啟動的應用程式使用最新版本。
+ 選擇性。 `update`包含元素。 `subscription` 項目沒有任何屬性。 如果元素不存在，應用程式永遠不會掃描更新。 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] `subscription` 如果`deployment`元素`install`的屬性為`false`，則會忽略`subscription`元素，因為從網路啟動的應用程式一律使用[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]最新版本。
 
 ## <a name="update"></a>更新
- 必要項。 這是元素的子系`subscription`項目和包含`beforeApplicationStartup`或`expiration`項目。 `beforeApplicationStartup` 和`expiration`不可同時指定相同的部署資訊清單中。
+ 必要項。 這個元素是`subscription`元素的子系，而且包含`beforeApplicationStartup`或`expiration`專案。 `beforeApplicationStartup`和`expiration`不能同時在相同的部署資訊清單中指定。
 
  `update` 項目沒有任何屬性。
 
 ## <a name="beforeapplicationstartup"></a>beforeApplicationStartup
- 選擇性。 這是元素的子系`update`項目並沒有任何屬性。 當`beforeApplicationStartup`項目存在，應用程式將會封鎖[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]檢查更新，如果用戶端在線上。 如果這個項目不存在，[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]會先掃描是否有指定的值為基礎的更新`expiration`項目。 `beforeApplicationStartup` 和`expiration`不可同時指定相同的部署資訊清單中。
+ 選擇性。 這個元素是`update`元素的子系，而且沒有任何屬性。 當元素存在時，如果用戶端在線上， [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]則會在檢查更新時封鎖應用程式。 `beforeApplicationStartup` 如果這個元素不存在， [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]將會先根據為`expiration`元素指定的值來掃描更新。 `beforeApplicationStartup`和`expiration`不能同時在相同的部署資訊清單中指定。
 
 ## <a name="expiration"></a>到期
- 選擇性。 這是元素的子系`update`項目，並沒有子系。 `beforeApplicationStartup` 和`expiration`不可同時指定相同的部署資訊清單中。 時不會進行更新檢查，並偵測到更新的版本，執行現有的版本時，會快取新的版本。 下一步 啟動再安裝新版本[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式。
+ 選擇性。 這個元素是`update`元素的子系，而且沒有子系。 `beforeApplicationStartup`和`expiration`不能同時在相同的部署資訊清單中指定。 當更新檢查發生並偵測到更新的版本時，新版本會在現有版本執行時快取。 新版本接著會在下一次啟動[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式時安裝。
 
- `expiration`項目支援下列屬性。
+ `expiration`元素支援下列屬性。
 
 |屬性|描述|
 |---------------|-----------------|
-|`maximumAge`|必要項。 識別多久目前的更新應該就之前在應用程式執行更新檢查。 時間單位由`unit`屬性。|
-|`unit`|必要項。 識別的時間單位`maximumAge`。 有效的單位是`hours`， `days`，和`weeks`。|
+|`maximumAge`|必要項。 識別目前的更新在應用程式執行更新檢查之前應如何成為舊的版本。 時間單位是由`unit`屬性所決定。|
+|`unit`|必要項。 識別的時間`maximumAge`單位。 有效的單位`hours`為`days`、和`weeks`。|
 
 ## <a name="deploymentprovider"></a>deploymentProvider
- .NET Framework 2.0 中，則需要這個元素如果部署資訊清單包含`subscription`一節。 適用於.NET Framework 3.5 和更新版本，這個元素是選擇性的並將預設為伺服器和部署資訊清單已探索到的檔案路徑。
+ 針對 .NET Framework 2.0，如果部署資訊清單包含`subscription`區段，則需要這個元素。 針對 .NET Framework 3.5 和更新版本，這個元素是選擇性的，而且會預設為探索到部署資訊清單的伺服器和檔案路徑。
 
  這個元素是 `deployment` 元素的子項，並具有下列屬性。
 
 | 屬性 | 描述 |
 |------------| - |
-| `codebase` | 必要項。 識別的位置，做為統一資源識別元 (URI)，用來更新的部署資訊清單[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式。 此項目也允許轉送的 CD 安裝的更新位置。 必須是有效的 URI。 |
+| `codebase` | 必要項。 識別用來更新[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式之部署資訊清單的「統一資源識別元（URI）」位置。 此元素也允許轉送以 CD 為基礎之安裝的更新位置。 必須是有效的 URI。 |
 
 ## <a name="remarks"></a>備註
- 您可以設定您[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]掃描在啟動時，更新的應用程式啟動之後，掃描更新，或永遠不檢查更新。 若要在啟動更新掃描，請確認`beforeApplicationStartup`下的項目存在`update`項目。 若要在啟動之後，以掃描更新，請確定`expiration`下的項目存在`update`項目，並會提供 更新間隔。
+ 您可以將[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式設定為在啟動時掃描更新、在啟動後掃描更新，或永遠不檢查更新。 若要在啟動時掃描更新，請確定`beforeApplicationStartup`專案是否存在於`update`元素之下。 若要在啟動之後掃描更新，請確定`expiration` `update`專案位於元素底下，而且已提供更新間隔。
 
- 若要停用檢查更新，請移除`subscription`項目。 當您指定在部署資訊清單中，永遠不會掃描更新時，您可以仍然手動檢查更新使用<xref:System.Deployment.Application.ApplicationDeployment.CheckForUpdate%2A>方法。
+ 若要停用更新檢查，請`subscription`移除元素。 當您在部署資訊清單中指定永遠不會掃描更新時，您仍然可以使用<xref:System.Deployment.Application.ApplicationDeployment.CheckForUpdate%2A>方法來手動檢查更新。
 
- 如需有關 deploymentProvider 如何與更新相關聯的詳細資訊，請參閱[選擇 ClickOnce 更新策略](../deployment/choosing-a-clickonce-update-strategy.md)。
+ 如需有關 deploymentProvider 如何與更新產生關聯的詳細資訊，請參閱[選擇 ClickOnce 更新策略](../deployment/choosing-a-clickonce-update-strategy.md)。
 
 ## <a name="examples"></a>範例
- 下列程式碼範例說明`deployment`中的項目[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]部署資訊清單。 此範例會使用`deploymentProvider`元素，以指定慣用的更新位置。
+ 下列程式碼範例說明`deployment` [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]部署資訊清單中的元素。 此範例會使用`deploymentProvider`專案來表示慣用的更新位置。
 
 ```xml
 <deployment install="true" minimumRequiredVersion="2.0.0.0" mapFileExtension="true" trustUrlParameters="true">

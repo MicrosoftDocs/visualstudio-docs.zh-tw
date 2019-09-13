@@ -13,16 +13,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dc2b21edcae4cd825ade551b92f98853da8f2516
-ms.sourcegitcommit: 9c07ae6fb18204ea080c8248994a683fa12e5c82
+ms.openlocfilehash: 65339eabcffdf0f333036442ea8473ecf8c8f06e
+ms.sourcegitcommit: 4dfe098ac0df294aad63e6b384d6575980798ca3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "70293675"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70888018"
 ---
-# <a name="step-1-create-a-windows-forms-application-project"></a>步驟 1：建立 Windows Forms 應用程式專案
+# <a name="step-1-create-a-windows-forms-app-project"></a>步驟 1：建立 Windows Forms 應用程式專案
 
-建立圖片檢視器的第一個步驟是建立 Windows Forms 應用程式專案。
+當您建立圖片檢視器時，第一個步驟是建立 Windows Forms 應用程式專案。
 
 ::: moniker range="vs-2017"
 
@@ -70,9 +70,9 @@ ms.locfileid: "70293675"
 
 ::: moniker-end
 
-Visual Studio 會為您的程式建立方案。 方案會做為您程式所需的全部專案和檔案的容器。 本教學課程稍後將會詳細說明這些詞彙。
+Visual Studio 會為您的應用程式建立解決方案。 解決方案會作為應用程式所需之所有專案和檔案的容器。 本教學課程稍後將會詳細說明這些詞彙。
 
-## <a name="about-the-windows-forms-application-project"></a>關於 Windows Forms 應用程式專案
+## <a name="about-the-windows-forms-app-project"></a>關於 Windows Forms 應用程式專案
 
 1. 開發環境包含三個視窗：主視窗、[方案總管] 和 [屬性] 視窗。
 
@@ -96,7 +96,7 @@ Visual Studio 會為您的程式建立方案。 方案會做為您程式所需�
 
     * **方案總管視窗**：在這個視窗中，您可以檢視和巡覽至方案中的所有項目。
 
-       如果您選擇一個檔案，[屬性] 視窗的內容會隨著變更。 如果您開啟程式碼檔案（在 Visual Basic 中以 *.cs*結尾C# ，而在中則是 *.vb* ），程式碼檔或程式碼檔的設計工具隨即出現。 設計工具是一個視覺化介面，您可以將控制項 (例如按鈕和清單) 加入該介面中。 Visual Studio 表單的設計工具稱為 **Windows Forms 設計工具**。
+    如果您選擇一個檔案，[屬性] 視窗的內容會隨著變更。 如果您開啟程式碼檔案（在 Visual Basic 中以 *.cs*結尾C# ，而在中則是 *.vb* ），程式碼檔或程式碼檔的設計工具隨即出現。 設計工具是一個視覺化介面，您可以將控制項 (例如按鈕和清單) 加入該介面中。 Visual Studio 表單的設計工具稱為 **Windows Forms 設計工具**。
 
     * **屬性視窗**：在這個視窗中，您可以變更在其他視窗中所選擇項目的屬性。 例如，如果您選擇 Form1，可以設定 **Text** 屬性變更其標題，也可以設定 **Backcolor** 屬性變更背景色彩。
 
@@ -114,7 +114,7 @@ Visual Studio 會為您的程式建立方案。 方案會做為您程式所需�
 
 ## <a name="next-steps"></a>後續步驟
 
-* 若要前往下一個教學課程步驟，請參閱[步驟 2：執行程式](../ide/step-2-run-your-program.md)。
+* 若要移至下一個教學課程步驟 **，請參閱[步驟2：執行您的](../ide/step-2-run-your-program.md)應用程式。**
 
 * 若要回到概觀主題，請參閱[教學課程 1：建立圖片檢視器](../ide/tutorial-1-create-a-picture-viewer.md)。
 

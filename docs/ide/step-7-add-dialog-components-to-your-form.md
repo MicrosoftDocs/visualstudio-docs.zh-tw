@@ -13,16 +13,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 58721610a493283ff0bed8fca9cf6e6f6d668c4d
-ms.sourcegitcommit: 9c07ae6fb18204ea080c8248994a683fa12e5c82
+ms.openlocfilehash: 402d24ae90c6a7523398b21bfc77eb1b30bdf04f
+ms.sourcegitcommit: 4dfe098ac0df294aad63e6b384d6575980798ca3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "70293471"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70887880"
 ---
 # <a name="step-7-add-dialog-components-to-your-form"></a>步驟 7：將對話方塊元件新增至您的表單
 
-若要讓程式開啟圖片檔並選擇背景色彩，請在這個步驟中，將 <xref:System.Windows.Forms.OpenFileDialog> 元件和 <xref:System.Windows.Forms.ColorDialog> 元件新增至表單。
+若要讓您的應用程式開啟圖片檔並選擇背景色彩，請在此步驟中， <xref:System.Windows.Forms.OpenFileDialog>將元件<xref:System.Windows.Forms.ColorDialog>和元件新增至您的表單。
 
 元件在某些方面就像控制項一樣。 您可以使用 [工具箱] 將元件新增至表單，並使用 [屬性] 視窗設定該元件的屬性。 但與控制項不同，將元件加入至表單並不會加入可讓使用者在表單上看見的項目。 相反地，只會提供可讓您透過程式碼來觸發的某些行為。 它是一個可開啟 [開啟檔案] 對話方塊的元件。
 
@@ -54,7 +54,7 @@ ms.locfileid: "70293471"
 
 ## <a name="next-steps"></a>後續步驟
 
-* 若要前往下一個教學課程步驟，請參閱[步驟 8：為顯示圖片按鈕事件處理常式撰寫程式碼](../ide/step-8-write-code-for-the-show-a-picture-button-event-handler.md)。
+* 若要移至下一個教學課程步驟 **，請參閱[步驟8：為 [顯示圖片] 按鈕事件處理常式撰寫](../ide/step-8-write-code-for-the-show-a-picture-button-event-handler.md)程式**代碼。
 
 * 若要回到上一個教學課程步驟，請參閱[步驟 6：命名按鈕控制項](../ide/step-6-name-your-button-controls.md)。
 

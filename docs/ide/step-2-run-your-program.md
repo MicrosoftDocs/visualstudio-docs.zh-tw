@@ -1,5 +1,5 @@
 ---
-title: 步驟 2：執行程式
+title: 步驟 2：執行您的圖片檢視器應用程式
 ms.date: 09/06/2019
 ms.assetid: 9a8fe90e-c97b-4e98-b6c8-0c6b3962c49d
 ms.topic: tutorial
@@ -13,18 +13,18 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 12ae2a50b114c34f72f4e25ec52db40fc77943d3
-ms.sourcegitcommit: bd4e45f1697a8fbfdbc0a7c6b531c8f7b9fb8a48
+ms.openlocfilehash: a6c7e90f8113f5fa03da907db5dbb8f374a564e7
+ms.sourcegitcommit: 4dfe098ac0df294aad63e6b384d6575980798ca3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2019
-ms.locfileid: "70808794"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70887927"
 ---
-# <a name="step-2-run-your-pictureviewer-app"></a>步驟 2：執行您的 PictureViewer 應用程式
+# <a name="step-2-run-your-picture-viewer-app"></a>步驟 2：執行您的圖片檢視器應用程式
 
-當您建立 Windows Forms 應用程式專案時，實際上會建立一個執行的程式。 在本教學課程中，您的*PictureViewer*應用程式&mdash;還不會有太大的功能。 不過，現在它只會顯示一個空白視窗，顯示標題列中的**Form1** 。
+當您建立 Windows Forms 應用程式專案時，實際上會建立一個執行的程式。 在本教學課程中，您的圖片檢視器應用&mdash;程式尚未執行太多動作，雖然它會這麼做。 目前，它會顯示一個空白視窗，顯示標題列中的 [ **Form1** ]。
 
-以下是執行程式的方法。 
+以下是執行應用程式的方式。 
 
 1. 選擇下列其中一種方法：
 
@@ -37,17 +37,17 @@ ms.locfileid: "70808794"
       ![開始調試工具列按鈕](../ide/media/express_icondebug.png)<br>
       ***開始調試****工具列按鈕*
 
-1. Visual Studio 會執行您的程式，且稱為 [Form1] 的視窗會隨即出現。 下列螢幕擷取畫面顯示您剛建立的程式。 程式正在執行，您很快就會新增到其中。
+1. Visual Studio 會執行您的應用程式，而名為**Form1**的視窗隨即出現。 下列螢幕擷取畫面顯示您剛建立的應用程式。 應用程式正在執行，您很快就會新增到其中。
 
-     ![Windows Form 應用程式正在執行](../ide/media/express_firstrun.png)<br>
-***Windows Forms****應用程式，* 執行
+     ![Windows Forms 應用程式正在執行](../ide/media/express_firstrun.png)<br>
+***Windows Forms 應用程式*** *，執行*
 
-1. 回到 Visual Studio 的整合式開發環境（IDE），然後查看新的工具列。 當您執行程式時，其他按鈕會出現在工具列上。 這些按鈕讓您執行動作如停止和啟動程式，並協助搜尋程式的所有錯誤 (Bug)。 在此範例中，我們會使用它來啟動和停止程式。
+1. 回到 Visual Studio 的整合式開發環境（IDE），然後查看新的工具列。 當您執行應用程式時，工具列上會出現其他按鈕。 這些按鈕可讓您執行停止和啟動應用程式之類的動作，並協助您追蹤任何可能發生的錯誤（bug）。 在此範例中，我們會使用它來啟動和停止應用程式。
 
      ![調試工具列](../ide/media/express_debugtoolbar.png)<br>
 ***調試****工具列*
 
-1. 使用下列其中一種方法來停止您的程式：
+1. 使用下列其中一種方法來停止您的應用程式：
 
     - 在工具列上選擇 [停止偵錯] 按鈕。
 
@@ -58,11 +58,11 @@ ms.locfileid: "70808794"
     - 選擇 [Form1] 視窗右上角的 **X** 按鈕。
 
     > [!NOTE]
-    > 當您從 IDE 內部執行程式時，它稱為「偵測」，因為您通常會這麼做，以便找出並修正程式中的 bug （錯誤）。 雖然此程式很小，而且實際上不會有任何作用，但它仍然是真正的程式。 您遵循相同程序執行和偵錯其他程式。 若要深入了解偵錯，請參閱[偵錯工具簡介](../debugger/debugger-feature-tour.md)。
+    > 當您從 IDE 內部執行應用程式時，它稱為「偵錯工具」，因為您通常會這麼做，以便找出並修正應用程式中的 bug （錯誤）。 雖然此應用程式很小，而且實際上不會執行任何動作，但仍是真正的程式。 您遵循相同程序執行和偵錯其他程式。 若要深入了解偵錯，請參閱[偵錯工具簡介](../debugger/debugger-feature-tour.md)。
 
 ## <a name="next-steps"></a>後續步驟
 
-* 若要前往下一個教學課程步驟，請參閱[步驟 3：設定表單屬性](../ide/step-3-set-your-form-properties.md)。
+* 若要移至下一個教學課程步驟 **，請參閱[步驟3：設定您的窗](../ide/step-3-set-your-form-properties.md)體屬性。**
 
 * 若要回到上一個教學課程步驟，請參閱[步驟 1：建立 Windows Forms 應用程式專案](../ide/step-1-create-a-windows-forms-application-project.md)。
 
