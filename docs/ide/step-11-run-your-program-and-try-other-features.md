@@ -1,6 +1,6 @@
 ---
-title: 步驟 11：執行您的程式並嘗試其他功能
-ms.date: 08/30/2019
+title: 步驟 11：執行您的圖片檢視器應用程式並嘗試其他功能
+ms.date: 09/11/2019
 ms.assetid: 656614d0-4fe7-4a67-8edc-c10919377d09
 ms.topic: tutorial
 ms.prod: visual-studio-windows
@@ -13,18 +13,18 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5486aa4d2effa3feb03b31bace7a9cfc86fd9925
-ms.sourcegitcommit: 9c07ae6fb18204ea080c8248994a683fa12e5c82
+ms.openlocfilehash: 672156f9c1274189e904c79eb74a0c01e10f3a60
+ms.sourcegitcommit: b60a00ac3165364ee0e53f7f6faef8e9fe59ec4a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "70293600"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70913121"
 ---
-# <a name="step-11-run-your-program-and-try-other-features"></a>步驟 11：執行您的程式並嘗試其他功能
+# <a name="step-11-run-your-picture-viewer-app-and-try-other-features"></a>步驟 11：執行您的圖片檢視器應用程式並嘗試其他功能
 
-您的程式已完成，可以開始執行。 您可以執行程式並設定 <xref:System.Windows.Forms.PictureBox> 的背景色彩。 若要進一步了解，請試著變更表單的色彩、自訂按鈕和核取方塊並變更表單的屬性，以改善程式。
+您的圖片檢視器應用程式已完成，並已準備好可執行。 您可以執行您的應用程式，並設定的背景<xref:System.Windows.Forms.PictureBox>色彩。 若要深入瞭解，請嘗試變更表單的色彩、自訂按鈕和核取方塊，以及變更表單的屬性，以改善應用程式。
 
-## <a name="how-to-run-your-program-and-set-the-background-color"></a>如何執行您的程式並設定背景色彩
+## <a name="how-to-run-your-app-and-set-the-background-color"></a>如何執行您的應用程式並設定背景色彩
 
 1. 選擇 **F5**，或在功能表列上依序選擇 [偵錯] > [開始偵錯]。
 
@@ -38,7 +38,7 @@ ms.locfileid: "70293600"
     > [!NOTE]
     > 您可以將圖片的 URL 貼至 [開啟檔案] 對話方塊中，即可從網際網路載入圖片。 試著尋找透明背景的影像，以呈現您的背景色彩。
 
-1. 選擇 [清除圖片] 按鈕，確定將圖片清除。 然後，選擇 [關閉] 按鈕結束程式。
+1. 選擇 [清除圖片] 按鈕，確定將圖片清除。 然後，選擇 [關閉] 按鈕**結束**應用程式。
 
 ## <a name="try-other-features"></a>嘗試其他功能
 
@@ -48,7 +48,7 @@ ms.locfileid: "70293600"
 
 * 變更表單的 **FormBorderStyle** 和 **ControlBox** 屬性。
 
-* 使用表單的 **AcceptButton** 和 **CancelButton** 屬性，如此就會在使用者選擇 **Enter** 或 **Esc** 鍵時，自動選擇這些按鈕。 讓程式在使用者選擇 **Enter** 鍵時開啟 [開啟檔案] 對話方塊，以及在使用者選擇 **Esc** 鍵時關閉對話方塊。
+* 使用表單的 **AcceptButton** 和 **CancelButton** 屬性，如此就會在使用者選擇 **Enter** 或 **Esc** 鍵時，自動選擇這些按鈕。 讓應用程式在使用者選擇**Enter**鍵時開啟 [**開啟**檔案] 對話方塊，並在使用者選擇 [ **Esc**] 時關閉此方塊。
 
 ## <a name="next-steps"></a>後續步驟
 

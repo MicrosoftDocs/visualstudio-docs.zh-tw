@@ -16,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 281c98ca52b6dd18ee726e3191d47d6755fd8326
-ms.sourcegitcommit: 9c07ae6fb18204ea080c8248994a683fa12e5c82
+ms.openlocfilehash: 9763026a4ef1c219bcb9f5b5270ac5d3b48e2e14
+ms.sourcegitcommit: 4dfe098ac0df294aad63e6b384d6575980798ca3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "70293611"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70887876"
 ---
 # <a name="step-10-write-code-for-additional-buttons-and-a-check-box"></a>步驟 10：為其他按鈕及核取方塊撰寫程式碼
 
@@ -30,7 +30,7 @@ ms.locfileid: "70293611"
 這個程式碼會在您之前加入的按鈕上加入功能。 若沒有這個程式碼，按鈕就不會有任何作用。 按鈕會在其 <xref:System.Windows.Forms.Control.Click> 事件中使用程式碼 (而核取方塊會使用 <xref:System.Windows.Forms.CheckBox.CheckedChanged> 事件)，在您啟動控制項時執行不同的動作。 例如， `clearButton_Click` `ClearButton_Click`（或）事件會在您選擇 [**清除圖片**] 按鈕時啟動，藉由將目前影像的**image**屬性設為**null** （或不提供**任何**專案）來清除。 程式碼中的每個事件都包括註解，用於說明程式碼的功能。
 
 > [!TIP]
-> 最佳做法：一律為程式碼加上註解。 註解是供使用者閱讀的資訊，值得花時間讓您的程式碼變得更易於理解。 程式會忽略註解行上的任何文字。 在C#中，您會在開頭（//）輸入兩個正斜線來批註一行，而在 Visual Basic 您會以單引號（'）開頭來批註一行。
+> 最佳做法：一律為程式碼加上註解。 註解是供使用者閱讀的資訊，值得花時間讓您的程式碼變得更易於理解。 應用程式會忽略批註行上的所有內容。 在C#中，您會在開頭（//）輸入兩個正斜線來批註一行，而在 Visual Basic 您會以單引號（'）開頭來批註一行。
 
 ## <a name="how-to-write-code-for-additional-buttons-and-a-check-box"></a>如何撰寫其他按鈕和核取方塊的程式碼
 
@@ -44,7 +44,7 @@ ms.locfileid: "70293611"
 
 ## <a name="next-steps"></a>後續步驟
 
-* 若要前往下一個教學課程步驟，請參閱[步驟 11：執行您的程式並嘗試其他功能](../ide/step-11-run-your-program-and-try-other-features.md)。
+* 若要移至下一個教學課程步驟 **，請參閱[步驟11：執行您的應用程式並嘗試](../ide/step-11-run-your-program-and-try-other-features.md)其他功能。**
 
 * 若要回到上一個教學課程步驟，請參閱[步驟 9：檢閱、註解和測試您的程式碼](../ide/step-9-review-comment-and-test-your-code.md)。
 

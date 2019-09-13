@@ -1,5 +1,5 @@
 ---
-title: 支援的程式碼變更 (C#和 Visual Basic) |Microsoft Docs
+title: 支援的程式碼C#變更（和 Visual Basic） |Microsoft Docs
 ms.date: 10/11/2018
 ms.topic: conceptual
 dev_langs:
@@ -16,34 +16,34 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: f20f61ffc4a6e4105a96b58c3dc73e7154e7c9cd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c5f54a2b50447125b0abffd8cc62ba9c2a1d2b37
+ms.sourcegitcommit: 4dfe098ac0df294aad63e6b384d6575980798ca3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62929723"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70887781"
 ---
-# <a name="supported-code-changes-c-and-visual-basic"></a>支援的程式碼變更 (C#和 Visual Basic)
+# <a name="supported-code-changes-c-and-visual-basic"></a>支援的程式碼C#變更（和 Visual Basic）
 [編輯後繼續] 會處理方法主體內大多數程式碼的變更。 但是在偵錯期間，無法套用方法主體外的變更和方法主體內的某些變更。 若要套用這些不支援的變更，您必須停止偵錯，然後使用新版程式碼重新啟動偵錯。
 
-## <a name="supported-changes-to-code"></a>支援的變更程式碼
+## <a name="supported-changes-to-code"></a>支援的程式碼變更
 
-下表顯示的變更，可能會對C#和 Visual Basic 程式碼，不需要重新啟動工作階段的偵錯工作階段。
+下表顯示在不需重新開機會話的情況C#下，可能會對程式碼進行的變更，以及在偵錯工具中 Visual Basic 程式碼。
 
-|語言項目/功能|支援的編輯作業|限制|
+|語言元素/功能|支援的編輯作業|限制|
 |-|-|-|
-|型別|加入方法、 欄位、 建構函式、 et al|[是](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits)|
+|型別|加入方法、欄位、構造函式、et al|[是](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits)|
 |迭代器|新增或修改|否|
 |async/await 運算式|新增或修改|[是](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits)|
 |動態物件|新增或修改|否|
 |Lambda 運算式|新增或修改|[是](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits)|
-|LINQ 運算式|新增或修改|[Lambda 運算式與相同](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits)|
+|LINQ 運算式|新增或修改|[與 lambda 運算式相同](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits)|
 
 > [!NOTE]
-> 較新的語言功能，例如字串內插補點和 null 條件運算子通常支援編輯後繼續。 最新的資訊，請參閱[Enc 支援編輯](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits)頁面。
+> [編輯後繼續] 通常會支援較新的語言功能，例如字串插補和 null 條件運算子。 如需最新的資訊，請參閱[Enc 支援的編輯](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits)頁面。
 
-## <a name="unsupported-changes-to-code"></a>不支援的變更程式碼
- 下列變更無法套用至C#和 Visual Basic 程式碼偵錯工作階段：
+## <a name="unsupported-changes-to-code"></a>不支援的程式碼變更
+ 在偵錯工具期間，無法將C#下列變更套用至和 Visual Basic 程式碼：
 
 - 變更目前的陳述式或任何其他使用中陳述式。
 
@@ -51,41 +51,42 @@ ms.locfileid: "62929723"
 
      目前的陳述式在來源視窗中會以黃色背景標示。 其他使用中陳述式會以灰色背景標示，而且是唯讀的。 這些預設色彩可以在 [選項] 對話方塊中進行變更。
 
-- 下表顯示不支援的變更程式碼的語言項目。
+- 下表顯示不支援的程式碼變更（依語言元素）。
 
-|語言項目/功能|不支援的編輯作業|
+|語言元素/功能|不支援的編輯作業|
 |-|-|
-|所有的程式碼項目|重新命名|
+|所有程式碼元素|重新命名|
 |命名空間|新增|
-|命名空間、 類型、 成員|刪除|
+|命名空間、類型、成員|刪除|
 |泛型|新增或修改|
 |介面|修改|
-|型別|新增抽象或虛擬成員，並新增覆寫 (請參閱[詳細資料](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits))|
+|型別|新增抽象或虛擬成員，新增覆寫（請參閱[詳細資料](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits)）|
 |型別|新增解構函式|
-|成員|修改成員，其參考屬於內嵌 interop 類型|
-|成員 (Visual Basic)|修改成員，以使用 On Error 或 Resume 陳述式|
-|成員 (Visual Basic)|修改成員，其中包含彙總、 Group By、 簡單的聯結，或群組加入 LINQ 查詢子句|
+|成員|修改參考內嵌 interop 類型的成員|
+|成員|在已執行程式碼存取之後修改靜態成員|
+|成員（Visual Basic）|在 Error 或 Resume 語句上修改成員|
+|成員（Visual Basic）|修改包含匯總、群組依據、簡單聯結或群組聯結 LINQ 查詢子句的成員|
 |方法|修改簽章|
-|方法|藉由新增 tělo metody 讓抽象方法變成非抽象|
+|方法|藉由新增方法主體，讓抽象方法變成非抽象|
 |方法|刪除方法主體|
 |屬性|新增或修改|
-|事件或屬性|修改類型參數、 基底型別，委派類型，或傳回型別 |
-|操作員 」 或 「 索引子|修改類型參數、 基底型別，委派類型，或傳回型別 |
-|catch 區塊|它包含現用陳述式時，修改|
-|請嘗試為 try-catch-finally 區塊|它包含現用陳述式時，修改|
+|事件或屬性|修改型別參數、基底型別、委派型別或傳回型別 |
+|運算子或索引子|修改型別參數、基底型別、委派型別或傳回型別 |
+|catch 區塊|當它包含作用中的語句時進行修改|
+|try-catch-finally 區塊|當它包含作用中的語句時進行修改|
 |Using 陳述式|新增|
-|非同步方法/lambda|修改非同步方法/lambda 中以.NET Framework 4 為目標的專案，並降低 (請參閱[詳細資料](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits))|
-|迭代器|修改迭代器，在以.NET Framework 4 為目標的專案，並降低 (請參閱[詳細資料](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits))|
+|async 方法/lambda|在目標為 .NET Framework 4 和更低版本的專案中修改非同步方法/lambda （請參閱[詳細資料](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits)）|
+|迭代器|修改專案中以 .NET Framework 4 和更低版本為目標的反覆運算器（請參閱[詳細資料](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits)）|
 
 ## <a name="unsafe-code"></a>Unsafe 程式碼
- 變更 Unsafe 程式碼的限制與變更 Safe 程式碼的限制相同，但前者多了下列這一項額外限制：編輯後繼續不支援包含的方法內的 unsafe 程式碼變更`stackalloc`運算子。
+ 變更 Unsafe 程式碼的限制與變更 Safe 程式碼的限制相同，但前者多了下列這一項額外限制：[編輯後繼續] 不支援變更在包含`stackalloc`運算子的方法內結束的 unsafe 程式碼。
 
 ## <a name="unsupported-app-scenarios"></a>不支援的應用程式案例
 
-不支援的應用程式與平台包含 ASP.NET 5、 Silverlight 5 和 Windows 8.1。
+不支援的應用程式和平臺包括 ASP.NET 5、Silverlight 5 和 Windows 8.1。
 
 > [!NOTE]
-> 支援的應用程式在 Windows 10 和 x86 和 x64.NET Framework 4.6 為目標的應用程式中包含 UWP 桌面或更新版本的版本 （.NET Framework 是僅限桌面版本）。
+> 支援的應用程式包括 Windows 10 中的 UWP，以及以 .NET Framework 4.6 desktop 或更新版本為目標的 x86 和 x64 應用程式（.NET Framework 僅限桌上出版）。
 
 ## <a name="unsupported-scenarios"></a>不支援的情節
  [編輯後繼續] 無法用於下列偵錯案例中：
@@ -98,7 +99,7 @@ ms.locfileid: "62929723"
 
 - 偵錯內嵌的執行階段應用程式。
 
-- 偵錯應用程式使用附加至處理序 (**偵錯 > připojit k procesu**) 而不是藉由選擇執行應用程式**開始**從**偵錯**功能表。
+- 從 [**調試**程式] 功能表選擇 [**啟動**]，而不是執行應用程式，而是使用 [附加至進程] （**Debug > 附加至進程**）來進行應用程式的
 
 - 偵錯最佳化程式碼
 

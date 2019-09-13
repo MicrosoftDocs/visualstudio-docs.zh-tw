@@ -16,20 +16,20 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ab10700e984f50089a3e66b6b89f449d963fd208
-ms.sourcegitcommit: 9c07ae6fb18204ea080c8248994a683fa12e5c82
+ms.openlocfilehash: 26bfd4d74580fecd15b1891895e5ae28a18f3296
+ms.sourcegitcommit: 4dfe098ac0df294aad63e6b384d6575980798ca3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "70293546"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70887963"
 ---
 # <a name="step-8-write-code-for-the-show-a-picture-button-event-handler"></a>步驟 8：為顯示圖片按鈕事件處理常式撰寫程式碼
 
 在此步驟中，您會讓 [**顯示圖片**] 按鈕的工作如下：
 
-- 當使用者選擇該按鈕時，程式會開啟一個 <xref:System.Windows.Forms.OpenFileDialog> 方塊。
+- 當使用者選擇該按鈕時，應用程式會開啟<xref:System.Windows.Forms.OpenFileDialog>一個 box。
 
-- 如果使用者開啟圖片檔案，程式會在 <xref:System.Windows.Forms.PictureBox> 中顯示該圖片。
+- 如果使用者開啟圖片檔案，應用程式會在中<xref:System.Windows.Forms.PictureBox>顯示該圖片。
 
 IDE 提供一個功能強大的工具，稱為 IntelliSense，可幫助您撰寫程式碼。 當您鍵入程式碼時，IDE 會針對您輸入的部分文字，開啟包含建議的自動完成的方塊。
 
@@ -69,7 +69,7 @@ IntelliSense 會嘗試決定接下來要執行的動作，並自動跳至您從�
  1. 當您在控制項或元件上使用方法時 (稱為「呼叫方法」)，需要新增括號。 因此，在 `ShowDialog` 中緊接 "g" 之後輸入左括弧和右括弧：`()`。現在這應該看起來像 "openFileDialog1.ShowDialog()"。
 
     > [!NOTE]
-    > 方法在任何程式中都很重要，本教學課程已展示幾種使用方法的做法。 您可以呼叫元件的方法來指示元件執行動作，就像您呼叫 **OpenFileDialog** 元件的 `ShowDialog()` 方法一樣。 您可以建立自己的方法來指示程式執行動作，例如您正在建置名為 `showButton_Click()` 的方法，當使用者選擇按鈕時，就會開啟對話方塊和圖片。
+    > 方法是任何應用程式中很重要的一部分，而本教學課程已示範數種使用方法的方式。 您可以呼叫元件的方法來指示元件執行動作，就像您呼叫 **OpenFileDialog** 元件的 `ShowDialog()` 方法一樣。 您可以建立自己的方法，讓您的應用程式執行一些動作，像是您現在所建立的`showButton_Click()`專案，稱為方法，當使用者選擇按鈕時，會開啟對話方塊和圖片。
 
  1. 針對C#新增空格，然後新增兩個等號（`==`）。 在 Visual Basic 中，新增空格，然後使用單一等號 (`=`) （C#和 Visual Basic 使用不同的等號比較運算子）。
 
@@ -102,7 +102,7 @@ IntelliSense 會嘗試決定接下來要執行的動作，並自動跳至您從�
 
 ## <a name="next-steps"></a>後續步驟
 
-* 若要前往下一個教學課程步驟，請參閱[步驟 9：檢閱、註解和測試您的程式碼](../ide/step-9-review-comment-and-test-your-code.md)。
+* 若要移至下一個教學課程步驟 **，請參閱[步驟9：審查、批註及測試您的程式](../ide/step-9-review-comment-and-test-your-code.md)代碼**。
 
 * 若要回到上一個教學課程步驟，請參閱[步驟 7：將對話方塊元件新增至您的表單](../ide/step-7-add-dialog-components-to-your-form.md)。
 

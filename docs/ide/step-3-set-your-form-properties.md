@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 123a843676a7562478710bf607f62c92743c462d
-ms.sourcegitcommit: 9c07ae6fb18204ea080c8248994a683fa12e5c82
+ms.openlocfilehash: 1cf71ca26a26aecceb605c0483499bc0b0e24d30
+ms.sourcegitcommit: b60a00ac3165364ee0e53f7f6faef8e9fe59ec4a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "70293572"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70913154"
 ---
 # <a name="step-3-set-your-form-properties"></a>步驟 3：設定表單屬性
 
@@ -31,7 +31,7 @@ ms.locfileid: "70293572"
 1. 選擇表單 [Form1] 內的任何位置來選取它。 查看 [屬性] 視窗，現在應該會顯示表單的屬性。 表單有各種屬性。 例如，您可以設定前景和背景色彩、表單頂端顯示的標題文字、表單的大小和其他屬性。
 
    > [!NOTE]
-   > 如果 [屬性] 視窗沒有出現，請選擇工具列上的 [停止偵錯] 方形按鈕，或直接關閉視窗以停止程式。 如果程式停止，而您仍然看不到 [屬性] 視窗，請在功能表列上依序選擇 [檢視] > [屬性視窗]。
+   > 如果 [**屬性**] 視窗沒有出現，請選擇工具列上的 [**停止調試**程式] 按鈕，或直接關閉視窗，以停止您的應用程式。 如果應用程式已停止，而您仍然看不到 [**屬性**] 視窗，請在功能表列上選擇 [**視圖** > **屬性視窗]** 。
 
 1. 選取表單之後，在 [屬性] 視窗中尋找 [文字] 屬性。 根據清單排序的方式，您可能需要向下捲動。 選擇 [文字]，鍵入 **Picture Viewer**，然後選擇 **Enter**。  您的表單現在應該會在其標題列中顯示 [文字**圖片檢視器**]，而 [**屬性**] 視窗看起來應該類似下列螢幕擷取畫面。
 
@@ -50,7 +50,7 @@ ms.locfileid: "70293572"
 
 1. 查看 [屬性] 視窗，並注意 **Size** 屬性已變更。 每當您調整表單的大小時，**Size** 屬性就會變更。 嘗試拖曳表單的控點，將其調整為大約 **550, 350** (不需要很精確) 的表單大小，這樣應該很適合此專案。 或者，您可以直接在 **Size** 屬性中輸入值，然後選擇 **Enter** 鍵。
 
-1. 重新執行程式。 請記住，您可以使用下列任何一個方法執行程式。
+1. 再次執行您的應用程式。 請記住，您可以使用下列任何方法來執行您的應用程式。
 
    - 選擇 **F5** 鍵。
 
@@ -61,9 +61,9 @@ ms.locfileid: "70293572"
       ![開始調試工具列按鈕](../ide/media/express_icondebug.png)<br>
      ***開始調試****工具列按鈕*
 
-     如同先前一樣，IDE 會建置並執行您的程式，且視窗隨即出現。
+     就像之前一樣，IDE 會建立並執行您的應用程式，而視窗隨即出現。
 
-1. 在繼續下一個步驟之前，請停止程式，因為當程式執行時，IDE 不會允許您變更程式。 請記住，您可以使用下列任何一個方法停止程式。
+1. 在進行下一個步驟之前，請停止您的應用程式，因為 IDE 不會讓您在應用程式執行時加以變更。 請記住，您可以使用下列任何方法來停止您的應用程式。
 
    - 在工具列上選擇 [停止偵錯] 按鈕。
 
@@ -75,9 +75,9 @@ ms.locfileid: "70293572"
 
 ## <a name="next-steps"></a>後續步驟
 
-* 若要前往下一個教學課程步驟，請參閱[步驟 4：使用 TableLayoutPanel 控制項來配置表單](../ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md)。
+* 若要移至下一個教學課程步驟 **，請參閱[步驟4：使用 TableLayoutPanel 控制項](../ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md)** 來配置您的表單。
 
-* 若要回到上一個教學課程步驟，請參閱[步驟 2：執行程式](../ide/step-2-run-your-program.md)。
+* 若要回到上一個教學課程步驟，請參閱[步驟 2：執行您的圖片查看](../ide/step-2-run-your-program.md)器應用程式。
 
 ## <a name="see-also"></a>另請參閱
 
