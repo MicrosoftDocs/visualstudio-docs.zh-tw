@@ -16,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fc843cceea35d196e3f9719a0690764611865600
-ms.sourcegitcommit: 4dfe098ac0df294aad63e6b384d6575980798ca3
+ms.openlocfilehash: b739e3a786d3765721b562538148f044416d38d4
+ms.sourcegitcommit: 0e482cfc15f809b564c3de61646f29ecd7bfcba6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70887972"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "70987907"
 ---
 # <a name="step-6-name-your-button-controls"></a>步驟 6：命名按鈕控制項
 
@@ -52,7 +52,7 @@ ms.locfileid: "70887972"
 *包含程式碼C#的*Form1.cs 索引標籤
 
     > [!NOTE]
-    > 您的 [Form1.cs] 索引標籤可能會改為顯示**showButton**為**showButton** 。
+    > 您的 Form1.cs 的 form1.vb 索引標籤可能會改以**showButton**的形式顯示**showButton** 。
 
 1. 注意這部分程式碼。
 
@@ -85,6 +85,9 @@ ms.locfileid: "70887972"
     [!code-csharp[VbExpressTutorial1Step6_#2](../ide/codesnippet/CSharp/step-6-name-your-button-controls_2.cs)]
     
     [!code-vb[VbExpressTutorial1Step6_#2](../ide/codesnippet/VisualBasic/step-6-name-your-button-controls_2.vb)]
+
+    > [!NOTE]
+    > 您的程式碼可能不會以 "camelCase" 字母顯示事件處理常式。 
 
     您加入的五個方法稱為「*事件處理常式*」，因為每當事件發生時（例如使用者選擇按鈕或選取方塊），您的應用程式就會呼叫它們。
 
