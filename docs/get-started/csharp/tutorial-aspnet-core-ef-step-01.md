@@ -17,12 +17,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 6668648668ab71e033d1341d71ecf5c7c2a47554
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
-ms.translationtype: HT
+ms.openlocfilehash: 1851c497579d45aa45c36dc1cd20945ce2b9c1e1
+ms.sourcegitcommit: 6c55c40da74ed8969dcba56acbd30458fdb69c5a
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66261728"
+ms.lasthandoff: 09/13/2019
+ms.locfileid: "70977452"
 ---
 # <a name="tutorial-create-your-first-aspnet-core-app-using-entity-framework-with-visual-studio-2019"></a>教學課程：使用 Entity Framework 和 Visual Studio 2019 建立您的第一個 ASP.NET Core 應用程式
 
@@ -88,7 +88,7 @@ Visual Studio 可以用於許多不同種類的開發，且工作負載讓您輕
 - 公司或學校帳戶公司或學校帳戶。 此選項使用 Active Directory、Azure AD 或 Office 365 來驗證。
 - Windows 驗證。 適合內部網路應用程式。
 
-選取標準 Web 應用程式範本並使用 [無驗證]，然後按一下 [確定]。
+選取 [沒有驗證的標準 Web 應用程式] 範本，然後按一下 [**建立**]。
 
 ![Visual Studio 2019 選擇 ASP.NET Core 專案選項](media/vs-2019/vs2019-choose-aspnetcore-project.png)
 

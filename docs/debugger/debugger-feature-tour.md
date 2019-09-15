@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a5c37466ea3f37bca80933cdc069d40f84099790
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
-ms.translationtype: HT
+ms.openlocfilehash: 249b8aa88b11643ed0b353df25bef3a054ef5e55
+ms.sourcegitcommit: 0e482cfc15f809b564c3de61646f29ecd7bfcba6
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65679755"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "70987783"
 ---
 # <a name="first-look-at-the-visual-studio-debugger"></a>Visual Studio 偵錯工具初探
 
@@ -116,6 +116,16 @@ F10 鍵會推進偵錯工具，而不需要逐步執行應用程式程式碼中�
 
 如果您想要停止偵錯工具並回到程式碼編輯器中，您可以按下紅色的停止 [停止偵錯]![](../debugger/media/dbg-tour-stop-debugging.png "停止偵錯") 按鈕，而非 [重新啟動]。
 
+## <a name="edit-your-code-and-continue-debugging-c-vb-c-xaml"></a>編輯您的程式碼並繼續C#進行偵錯工具C++（、VB、、XAML）
+
+在 Visual Studio 支援的大部分語言中，您可以在偵錯工具的中間編輯您的程式碼，並繼續進行偵錯工具。 若要使用這項功能，請在偵錯工具中暫停時，按一下游標所在的程式碼，進行編輯，然後按**F5**、 **F10**或**F11**繼續進行調試。
+
+![編輯後繼續的調試](../debugger/media/dbg-tips-edit-and-continue.gif "EditAndContinue")
+
+如需有關使用功能和功能限制的詳細資訊，請參閱[編輯後繼續](../debugger/edit-and-continue.md)。
+
+若要在偵錯工具期間修改 XAML 程式碼，請參閱[使用 Xaml 熱重載來撰寫和](xaml-hot-reload.md)偵測執行 xaml 程式碼。
+
 ## <a name="inspect-variables-with-data-tips"></a>使用資料提示來檢查變數
 
 現在您已稍為了解工作環境，接下來正好可以使用偵錯工具開始檢查應用程式狀態 (變數)。 可讓您檢查變數的功能是偵錯工具最實用功能之一，而且有不同的方法來完成此作業。 通常當您嘗試偵錯問題時，您會嘗試確定變數是否會儲存您希望其在特定應用程式狀態具有的值。
@@ -173,7 +183,7 @@ F10 鍵會推進偵錯工具，而不需要逐步執行應用程式程式碼中�
 
 您可以按兩下某一行的程式碼來查看其原始程式碼，這也會變更偵錯工具所檢查的目前範圍。 這不會讓偵錯工具往前推進。
 
-您也可以從 [呼叫堆疊] 視窗使用滑鼠右鍵功能表來執行其他動作。 例如，您可以在特定的函式中插入中斷點，使用 [執行至游標處] 重新啟動應用程式，並檢查原始程式碼。 請參閱[如何：檢查呼叫堆疊](../debugger/how-to-use-the-call-stack-window.md)。
+您也可以從 [呼叫堆疊] 視窗使用滑鼠右鍵功能表來執行其他動作。 例如，您可以在特定的函式中插入中斷點，使用 [執行至游標處] 重新啟動應用程式，並檢查原始程式碼。 請參閱[How to:檢查呼叫堆疊](../debugger/how-to-use-the-call-stack-window.md)。
 
 ## <a name="exception"></a> 檢查例外狀況
 

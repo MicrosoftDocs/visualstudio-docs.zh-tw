@@ -12,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c0c7f3695be87f6cb4081b3aa02fc7a129869a4c
-ms.sourcegitcommit: 9c07ae6fb18204ea080c8248994a683fa12e5c82
+ms.openlocfilehash: 51bda0a85735bf2b1dae5044b9e4ab8e5384f8ae
+ms.sourcegitcommit: 0e482cfc15f809b564c3de61646f29ecd7bfcba6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "70293701"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "70987868"
 ---
 # <a name="tutorial-2-create-a-timed-math-quiz"></a>教學課程 2：建立計時的數學測驗
 
@@ -31,7 +31,7 @@ ms.locfileid: "70293701"
 
 - 在程式碼中執行基本的算術運算。
 
-完成後的測驗看起來如下圖所示，只有數字會不相同：
+當您完成時，您的測驗看起來會類似下列螢幕擷取畫面，不同的數位除外：
 
 ![包含四個問題的數學測驗](../ide/media/express_finishedquiz.png)
 
@@ -40,7 +40,7 @@ ms.locfileid: "70293701"
 若要下載完整版的測驗，請參閱[完整的數學測驗教學課程範例](https://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c) \(英文\)。
 
 > [!NOTE]
-> 本教學課程中同時涵蓋 Visual C# 和 Visual Basic，所以請將焦點放在您使用的程式語言專屬資訊。
+> 本教學課程涵蓋C#和 Visual Basic，因此請專注于您所使用之程式設計語言的特定資訊。
 
 ## <a name="related-topics"></a>相關主題
 

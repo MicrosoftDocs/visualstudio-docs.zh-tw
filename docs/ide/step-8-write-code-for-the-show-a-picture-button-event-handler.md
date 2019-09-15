@@ -16,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 26bfd4d74580fecd15b1891895e5ae28a18f3296
-ms.sourcegitcommit: 4dfe098ac0df294aad63e6b384d6575980798ca3
+ms.openlocfilehash: 2b5502101bb2e199830b68c0fe0b929608a427ed
+ms.sourcegitcommit: 0e482cfc15f809b564c3de61646f29ecd7bfcba6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70887963"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "70987934"
 ---
 # <a name="step-8-write-code-for-the-show-a-picture-button-event-handler"></a>步驟 8：為顯示圖片按鈕事件處理常式撰寫程式碼
 
@@ -42,6 +42,9 @@ IntelliSense 會嘗試決定接下來要執行的動作，並自動跳至您從�
 1. 在兩個大括弧 `{ }` 之間的空白行上鍵入 `i` (在 Visual Basic 中，請在 `Private Sub...` 與 `End Sub`之間的空白行上鍵入)。**IntelliSense**視窗隨即開啟，如下圖所示。
 
     ![包含 Visual C&#35; 程式碼的 IntelliSense](../ide/media/express_ifintellisense.png)
+
+    > [!NOTE]
+    > 您的程式碼可能不會以 "camelCase" 字母顯示事件處理常式。 
 
 1. [ **IntelliSense** ] 視窗應該會反`if`白顯示單字。 (如果沒有，請輸入小寫 `f`，這樣就會反白顯示)。請注意 [ **IntelliSense** ] 視窗旁的 [*工具提示*] 方塊如何顯示，以及描述 [ **if 語句的程式碼片段**]。 (在 Visual Basic 中，該工具提示也會指出這是程式碼片段，只是說法稍微不同)。您要使用該程式碼片段，因此選擇 **Tab** 鍵將 `if` 插入至程式碼。 然後再次選擇 **Tab** 鍵來使用 `if` 程式碼片段。 (如果您選擇其他位置並造成 [IntelliSense] 視窗消失，請按退格鍵刪除 `i` 並重新鍵入，[IntelliSense] 視窗就會再次開啟)。
 
