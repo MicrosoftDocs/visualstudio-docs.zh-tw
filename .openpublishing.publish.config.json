@@ -2,21 +2,6 @@
   "build_entry_point": "docs",
   "docsets_to_publish": [
     {
-      "docset_name": "scripting-docs",
-      "build_source_folder": "scripting-docs",
-      "build_output_subfolder": "scripting-docs",
-      "locale": "zh-tw",
-      "monikers": [],
-      "open_to_public_contributors": true,
-      "type_mapping": {
-        "Conceptual": "Content",
-        "ManagedReference": "Content",
-        "RestApi": "Content"
-      },
-      "build_entry_point": "docs",
-      "template_folder": "_themes"
-    },
-    {
       "docset_name": "subscriptions",
       "build_source_folder": "subscriptions",
       "build_output_subfolder": "subscriptions",
