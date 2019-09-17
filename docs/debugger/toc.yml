@@ -126,8 +126,12 @@
               href: edit-and-continue-visual-basic.md
             - name: 以編輯後繼續在中斷模式中套用編輯
               href: how-to-apply-edits-in-break-mode-with-edit-and-continue.md
-        - name: 撰寫 XAML 程式碼及針對其執行進行偵錯
-          href: xaml-hot-reload.md
+        - name: XAML 熱重新載入
+          items:
+            - name: 撰寫 XAML 程式碼及針對其執行進行偵錯
+              href: xaml-hot-reload.md
+            - name: 對 XAML 熱重新載入進行疑難排解
+              href: xaml-hot-reload-troubleshooting.md
         - name: 'F# 不支援編輯後繼續'
           href: edit-and-continue-not-supported-for-f-hash.md
     - name: 檢視偵錯工具資料
@@ -282,7 +286,7 @@
               href: remote-debugging-errors-and-troubleshooting.md
             - name: 遠端電腦上的 Microsoft Visual Studio 遠端偵錯監視沒有連線至這部電腦的權限
               href: error-the-microsoft-visual-studio-remote-debugging-monitor-no-permission.md
-            - name: 嘗試聯繫遠端電腦時，發生 DCOM 錯誤。 存取被拒絕。
+            - name: 嘗試聯繫遠端電腦時，發生 DCOM 錯誤。 存取遭到拒絕。
               href: a-dcom-error-occurred-trying-to-contact-the-remote-computer-access-is-denied.md
             - name: 遠端電腦上的 Microsoft Visual Studio 遠端偵錯監視，目前是以不同的使用者身分在執行
               href: error-the-microsoft-visual-studio-remote-debugging-monitor-on-the-remote-computer-is-running-as-a-different-user.md
