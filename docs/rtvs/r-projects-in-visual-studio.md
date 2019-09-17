@@ -8,16 +8,16 @@ ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: a24f887b5e8d12a757098eb94768ad110a5cb727
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: bcdef95935c0522c8b93a972d7f44fbd7632c53b
+ms.sourcegitcommit: b02c40c1ba193e38b5ace14590a6d57590d3270f
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62809892"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71012615"
 ---
 # <a name="create-r-projects-in-visual-studio"></a>在 Visual Studio 中建立 R 專案
 
-R 專案 (*.rxproj* 檔案) 會識別與您專案建立關聯的所有來源和內容檔案。 它也會包含每個檔案的建置資訊、維護要與來源控制系統整合的資訊，以及協助您將應用程式組織成邏輯元件。 不過，工作區相關資訊 (例如已安裝的套件清單) 會分別在工作區中自行維護。
+R 專案 ( *.rxproj* 檔案) 會識別與您專案建立關聯的所有來源和內容檔案。 它也會包含每個檔案的建置資訊、維護要與來源控制系統整合的資訊，以及協助您將應用程式組織成邏輯元件。 不過，工作區相關資訊 (例如已安裝的套件清單) 會分別在工作區中自行維護。
 
 您一律是在 Visual Studio 的「方案」內管理專案，方案中可以包含任意數目且彼此參考的專案。 請參閱[使用 Visual Studio 中的多個專案類型](#use-multiple-project-types-in-visual-studio)。
 
@@ -37,9 +37,9 @@ R 專案 (*.rxproj* 檔案) 會識別與您專案建立關聯的所有來源和�
 
 *rproject.rproj* 檔案會維護某些本來由 Visual Studio 管理的 R 特定專案設定：
 
-| 屬性 | 預設值 | 說明 |
+| 屬性 | 預設值 | 描述 |
 | --- | --- | --- |
-| 版本 | 1.0 | 建立專案所使用的 Visual Studio R 工具版本。 |
+| Version | 1.0 | 建立專案所使用的 Visual Studio R 工具版本。 |
 | RestoreWorkspace | 預設 | 自動從專案目錄的 `.RData` 檔案中載入之前的工作區變數。 |
 | SaveWorkspace | 預設 | 關閉專案時，將目前的工作區變數儲存在專案目錄的 `.RData` 檔案。 |
 | AlwaysSaveHistory | 預設 | 關閉專案時，將目前的互動式視窗歷程記錄儲存在專案目錄的 `.RHistory` 檔案。 |
@@ -48,7 +48,7 @@ R 專案 (*.rxproj* 檔案) 會識別與您專案建立關聯的所有來源和�
 | NumSpacesForTab | 2 | 如果 UseSpacesForTab 為 Yes，要插入的空格數目。 |
 | 編碼 | UTF-8 | `.R` 檔案的預設編碼。 |
 | RnwWeave | Sweave | 編排 Rnw 檔案時要使用的套件。 |
-| LaTeX | pdfLaTeX | 將 RMarkdwon 轉換成 PDF 時要使用的文件庫。 |
+| LaTeX | pdfLaTeX | 將 RMarkdown 轉換成 PDF 時要使用的程式庫。 |
 
 ### <a name="converting-a-folder-of-files-to-an-r-project"></a>將檔案資料夾轉換成 R 專案
 
@@ -76,7 +76,7 @@ R 專案 (*.rxproj* 檔案) 會識別與您專案建立關聯的所有來源和�
 
 Visual Studio 專案透過滑鼠右鍵功能表和 [專案] 功能表支援多個一般命令。 如需這些一般功能的詳細資料，請參閱 [Visual Studio 中的解決方案和專案](../ide/solutions-and-projects-in-visual-studio.md)。 不過，請記住 Visual Studio R 工具 (RTVS) 會將多個專屬命令新增至 R 專案以及專案中檔案和資料夾的快顯功能表。
 
-| 命令 | 說明 |
+| 命令 | 描述 |
 | --- | --- |
 | 在此設定工作目錄 | 將 [R 互動] 視窗的工作目錄設定為專案資料夾，而專案資料夾也可以用在專案內的任何子資料夾上。 |
 | 開啟包含的資料夾 | 在所選檔案位置開啟 Windows 檔案總管。 |
@@ -99,7 +99,7 @@ RTVS 包含特定檔案類型的多個範本。 範本的存取方式是以滑�
 | R 文件 | 僅包含名稱、別名和標題欄位的一般 R 文件檔案。 |
 | R 文件 (函式) | 包含許多欄位及描述函式之註解的 R 文件檔案。 |
 | R 文件 (資料集) | 包含許多欄位及描述資料集之註解的 R 文件檔案。 |
-| SQL 查詢 | 和空的 *.sql* 檔案。 請參閱[使用 SQL Server 和 R](integrating-sql-server-with-r.md)。 |
+| SQL 查詢 | 空的 *.sql*檔案。 請參閱[使用 SQL Server 和 R](integrating-sql-server-with-r.md)。 |
 | 使用 R 的預存程序 | 具有子系 SQL 查詢和子系預存程序範本檔案的 R 檔案。 請參閱[使用 SQL Server 和 R](integrating-sql-server-with-r.md)。 |
 
 ## <a name="use-multiple-project-types-in-visual-studio"></a>使用 Visual Studio 中的多個專案類型
