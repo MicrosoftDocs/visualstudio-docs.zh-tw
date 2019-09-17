@@ -1,6 +1,6 @@
 ---
 title: 使用規則運算式
-ms.date: 06/12/2019
+ms.date: 09/13/2019
 ms.topic: conceptual
 f1_keywords:
 - vsregularexpressionhelp
@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aaea2e8a2c4fbbead563bd9565cf84466e00c75c
-ms.sourcegitcommit: 9c07ae6fb18204ea080c8248994a683fa12e5c82
+ms.openlocfilehash: 380201259cc19c15b68ea9142308f21b901a9241
+ms.sourcegitcommit: b02c40c1ba193e38b5ace14590a6d57590d3270f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "70293430"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71012576"
 ---
 # <a name="use-regular-expressions-in-visual-studio"></a>在 Visual Studio 中使用規則運算式
 
@@ -35,36 +35,33 @@ Visual Studio 會使用 [.NET 規則運算式](/dotnet/standard/base-types/regul
 |-------------|----------------|-------------|
 |比對任何單一字元 (分行符號除外)。 如需詳細資訊，請參閱[任何字元](/dotnet/standard/base-types/character-classes-in-regular-expressions#any-character-)。|.|`a.o`比對「關於」中的「aro」和「關於」中的「abo」，但不符合「跨」中的「acro」|
 |比對先前運算式中零個或多個項目 (比對的字元越多越好)。 如需詳細資訊，請參閱[比對零或多次](/dotnet/standard/base-types/quantifiers-in-regular-expressions#match-zero-or-more-times-)。|*|`a*r` 會比對 "rack" 中的 "r"、"ark" 中的 "ar"，以及 "aardvark" 中的 "aar"|
-|比對任何字元零或多次 (萬用字元 \*)|.*|`c.*e` 會比對 "racket" 中的 "cke"、"comment" 中的 "comme"，以及 "code" 中的 "code"|
-|比對先前運算式中一個或多個項目 (比對的字元越多越好)。 如需詳細資訊，請參閱[比對一或多次](/dotnet/standard/base-types/quantifiers-in-regular-expressions#match-one-or-more-times-)。|+|`e.+d`比對 "eed" 中的 "饋送"，但不符合 "ed"|
-|比對任何字元一或多次 (萬用字元 ?)|.+|`e.+e`比對「送紙器」中的 "對 feeder"，但不符合 "ee"|
-|比對先前運算式中零個或多個項目 (比對的字元越少越好)。 如需詳細資訊，請參閱[比對零或多次 (Lazy (忽略優先) 比對)](/dotnet/standard/base-types/quantifiers-in-regular-expressions#match-zero-or-more-times-lazy-match-)。|*?|`e.*?e`比對「送紙器」中的「ee」，但不符合 "對 feeder"|
-|比對先前運算式中一個或多個項目 (比對的字元越少越好)。 如需詳細資訊，請參閱[比對一或多次 (Lazy (忽略優先) 比對)](/dotnet/standard/base-types/quantifiers-in-regular-expressions#match-one-or-more-times-lazy-match-)。|+?|`e.+?e`比對 "enterprise" 中的 "ente" 和 "enterprise erprise"，但不符合整個單字 "enterprise"|
+|比對任何字元零或多次。|.*|`c.*e` 會比對 "racket" 中的 "cke"、"comment" 中的 "comme"，以及 "code" 中的 "code"|
+|比對先前運算式中一個或多個項目 (比對的字元越多越好)。 如需詳細資訊，請參閱[比對一或多次](/dotnet/standard/base-types/quantifiers-in-regular-expressions#match-one-or-more-times-)。|+|`e+d`比對 "eed" 中的 "輸送" 和 "ed" （淡出）|
+|一或多次比對任何字元。|.+|`e.+e`符合「送紙器」中的「對 feeder」，但在「摘要」中找不到相符專案|
+|比對先前運算式中零個或多個項目 (比對的字元越少越好)。 如需詳細資訊，請參閱[比對零或多次 (Lazy (忽略優先) 比對)](/dotnet/standard/base-types/quantifiers-in-regular-expressions#match-zero-or-more-times-lazy-match-)。|*?|`\w*?d`比對 "fad" 和 "ed" （在 "褪色" 中），但不符合整個單字 "褪色"，因為延遲比對|
+|比對先前運算式中一個或多個項目 (比對的字元越少越好)。 如需詳細資訊，請參閱[比對一或多次 (Lazy (忽略優先) 比對)](/dotnet/standard/base-types/quantifiers-in-regular-expressions#match-one-or-more-times-lazy-match-)。|+?|`e\w+?`在「睡眠」和「ed」中比對 "ee" （在 "褪色" 中），但在「淡化」中找不到相符專案|
 |將比對字串錨定至[行首或字串開頭](/dotnet/standard/base-types/anchors-in-regular-expressions#start-of-string-or-line-)|^|`^car`只有當它出現在行首時，才符合 "car" 這個字|
-|將比對字串錨定至[行尾](/dotnet/standard/base-types/anchors-in-regular-expressions#end-of-string-or-line-)|\r?$|`end\r?$`只有當它出現在行尾時，才會比對 "end"|
-|將比對字串錨定至檔案結尾|$|`end$`只有當它出現在檔案結尾時，才會比對 "end"|
+|將比對字串錨定至[行尾](/dotnet/standard/base-types/anchors-in-regular-expressions#end-of-string-or-line-)|\r?$|`car\r?$`只有當它出現在行尾時，才符合 "car"|
+|將比對字串錨定至檔案結尾|$|`car$`只有當它出現在檔案結尾時，才會符合 "car"|
 |比對集合中的任何單一字元|[abc]|`b[abc]`符合 "ba"、"bb" 和 "bc"|
-|比對字元範圍之間的任何字元|[a-f]|`be[n-t]`會比對 "between"、"ben" （在 "底下" 中）和 "be" （在 [下一節] 中），但不符合 "底下"|
+|比對字元範圍之間的任何字元|[a-f]|`be[n-t]`會比對 "between"、"ben" （在「底下」）和「旁」中的「be」，但在「下面」中找不到相符專案|
 |擷取和隱含編號包含在括號內的運算式|()|`([a-z])X\1` 會比對 "aXa" 和 "bXb"，但不比對 "aXb"。 "\1" 表示第一個運算式群組 "[a-z]"。 如需詳細資訊，請參閱[擷取群組和取代模式](#capture-groups-and-replacement-patterns)。 |
 |使比對失效|(?!abc)|`real(?!ity)` 會比對 "realty" 和 "really" 中的 "real"，但不比對 "reality" 中的 "real"。 它也會在 "realityreal" 中找到第二個 "real" (但不是第一個 "real")。|
-|比對任何不在一組特定字元中的字元。 如需詳細資訊，請參閱[負字元群組](/dotnet/standard/base-types/character-classes-in-regular-expressions#negative-character-group-)。|[^abc]|`be[^n-t]`比對 "before"、"beh" 中 "bef" 和 "bel" 的 ""，但不符合 "底下"|
+|比對任何不在一組特定字元中的字元。 如需詳細資訊，請參閱[負字元群組](/dotnet/standard/base-types/character-classes-in-regular-expressions#negative-character-group-)。|[^abc]|`be[^n-t]`比對 "before"、"beh" 中 "bef" 和 "bel" 的 ""，但在 "底下" 中找不到相符專案|
 |比對符號之前或之後的運算式|&#124;|`(sponge|mud) bath`符合「海綿浴缸」和「mud 浴缸」|
 |[逸出反斜線之後的字元](/dotnet/standard/base-types/character-escapes-in-regular-expressions)| \\ |`\^`符合字元 ^|
 |指定前置字元或群組的出現次數。 如需詳細資訊，請參閱[比對 n 次](/dotnet/standard/base-types/quantifiers-in-regular-expressions#match-exactly-n-times-n)。|{n}，其中 'n' 是發生次數|`x(ab){2}x`符合 "對 xababx"<br/>`x(ab){2,3}x`比對 "對 xababx" 和 "xabababx"，但不符合 "比對 xababababx"|
 |[比對 Unicode 類別中的文字](/dotnet/standard/base-types/character-classes-in-regular-expressions#unicode-category-or-unicode-block-p)。 如需 Unicode 字元類別的詳細資訊，請參閱 [Unicode Standard 5.2 字元屬性](http://www.unicode.org/versions/Unicode5.2.0/ch04.pdf)。|\p{X}，其中 "X" 是 Unicode 數字。|`\p{Lu}`符合 "Thomas Doe" 中的 "T" 和 "D"|
-|[比對字邊界](/dotnet/standard/base-types/anchors-in-regular-expressions#word-boundary-b)|\b (在字元類別之外 `\b` 會指定字邊界，在字元類別 `\b` 內則會指定退格鍵。)|`\bin`符合「內部」中的 "in"，而非 "pinto"|
+|[比對字邊界](/dotnet/standard/base-types/anchors-in-regular-expressions#word-boundary-b)|\b (在字元類別之外 `\b` 會指定字邊界，在字元類別 `\b` 內則會指定退格鍵。)|`\bin`符合「內部」中的 "in"，但在 "pinto" 中找不到相符專案|
 |比對分行符號 (即歸位字元後面接著新行)|\r?\n|`End\r?\nBegin`只有在 "End" 是一行的最後一個字串，且 "Begin" 是下一行的第一個字串時，才會比對 "End" 和 "Begin"|
 |比對任何[文字字元](/dotnet/standard/base-types/character-classes-in-regular-expressions#word-character-w)|\w|`a\wd`比對 "add" 和 "a1d"，但不符合 "a d"|
 |比對任何[空白字元](/dotnet/standard/base-types/character-classes-in-regular-expressions#whitespace-character-s)|\s|`Public\sInterface`符合片語「公用介面」|
-|比對任何[十進位數字字元](/dotnet/standard/base-types/character-classes-in-regular-expressions#decimal-digit-character-d)|\d|`\d`符合 "3456" 中的 "3"、"2" （23 "）和" 1 "（" 1 "）|
-|比對 Unicode 字元|\uXXXX，其中 XXXX 指定 Unicode 字元值。|`\u0065`符合字元 "e"|
-|比對識別項|\b[\_\w-[0-9]][\_\w]*\b|比對 "type1"，但不符合 "& type1" 或 "#define"|
-|比對引號內的字串|((\\".+?\\")&#124;('.+?'))|符合單引號或雙引號內的任何字串|
-|比對十六進位數字|\b0[xX]([0-9a-fA-F]+\)\b|比對 "對 0xc67f"，但不符合 "0xc67g"|
-|比對整數和小數|\b[0-9]*\\.\*[0-9]+\b|符合 "1.333"|
+|比對任何[十進位數字字元](/dotnet/standard/base-types/character-classes-in-regular-expressions#decimal-digit-character-d)|\d|`\d`符合 "wd40" 中的 "4" 和 "0"|
+
+結合一些運算子和結構以符合十六進位數位的範例正則運算式為`\b0[xX]([0-9a-fA-F]+\)\b`。 這個運算式會比對 "對 0xc67f"，但不符合 "0xc67g"。
 
 > [!TIP]
-> 在 Windows 作業系統中，大部分的程式行都是以 "\r\n" 結尾 (歸位字元後面接著新行)。 這些字元並不可見，但是會顯示在編輯器中，並傳遞至 .NET 規則運算式服務。
+> 在 Windows 作業系統中，大部分的程式行都是以 "\r\n" 結尾 (歸位字元後面接著新行)。 這些字元並不可見，但會出現在編輯器中，並傳遞至 .NET 正則運算式服務。
 
 ## <a name="capture-groups-and-replacement-patterns"></a>擷取群組和取代模式
 
