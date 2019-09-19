@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: e78487628a7604245d59f44220b91be73249e7fb
-ms.sourcegitcommit: f42b5318c5c93e2b5ecff44f408fab8bcdfb193d
-ms.translationtype: HT
+ms.openlocfilehash: 0395e2d6e54e737af9a98d8c24b8ea29eff7577a
+ms.sourcegitcommit: 6eed0372976c0167b9a6d42ba443f9a474b8bb91
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2019
-ms.locfileid: "69976765"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71118683"
 ---
 # <a name="customize-code-coverage-analysis"></a>自訂程式碼涵蓋範圍分析
 
@@ -20,7 +20,7 @@ ms.locfileid: "69976765"
 
 若要從程式碼涵蓋範圍結果中排除測試程式碼，並且只包括應用程式程式碼，請將 <xref:System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverageAttribute> 屬性新增至測試類別。
 
-若要包括不屬於您方案的組件，請取得這些組件的 .pdb  檔案，並將這些檔案複製到組件 .dll  檔案的相同資料夾。
+若要包括不屬於您方案的組件，請取得這些組件的 .pdb 檔案，並將這些檔案複製到組件 .dll 檔案的相同資料夾。
 
 ## <a name="run-settings-file"></a>回合設定檔
 
@@ -28,30 +28,30 @@ ms.locfileid: "69976765"
 
 若要自訂程式碼涵蓋範圍，請遵循下列步驟：
 
-1. 將回合設定檔新增至方案。 在 [方案總管]  中，於方案的捷徑功能表上，選擇 [新增]   > [新增項目]  ，然後選取 [XML 檔案]  。 儲存檔案，其名稱的格式必須是 CodeCoverage.runsettings  。
+1. 將回合設定檔新增至方案。 在 [方案總管] 中，於方案的捷徑功能表上，選擇 [新增] > [新增項目]，然後選取 [XML 檔案]。 儲存檔案，其名稱的格式必須是 CodeCoverage.runsettings。
 
 2. 新增本文結尾處範例檔中的內容，然後遵循下列各節中的描述並根據您自己的需求進行自訂。
 
 ::: moniker range="vs-2017"
 
-3. 若要選取回合設定檔，請在 [測試]  功能表上，選擇 [測試設定]   > [選取測試設定檔]  。 若要指定從命令列執行測試的回合設定檔，請參閱[設定單元測試](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md#command-line)。
+3. 若要選取回合設定檔，請在 [測試] 功能表上，選擇 [測試設定] > [選取測試設定檔]。 若要指定從命令列執行測試的回合設定檔，請參閱[設定單元測試](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md#command-line)。
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-3. 若要在 [測試總管]  中選取執行設定檔，請選取 [設定]  按鈕上的箭頭，然後選取 [選取設定檔]  。 若要指定從命令列執行測試的回合設定檔，請參閱[設定單元測試](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md#command-line)。
+3. 若要在 [測試總管] 中選取執行設定檔，請選取 [設定] 按鈕上的箭頭，然後選取 [選取設定檔]。 若要指定從命令列執行測試的回合設定檔，請參閱[設定單元測試](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md#command-line)。
 
 ::: moniker-end
 
-   當您選取 [分析程式碼涵蓋範圍]  時，從回合設定檔讀取組態資訊。
+   當您選取 [分析程式碼涵蓋範圍] 時，從回合設定檔讀取組態資訊。
 
    > [!TIP]
    > 當您執行測試或更新程式碼時，並不會自動隱藏任何之前的程式碼涵蓋範圍結果及程式碼著色。
 
 ::: moniker range="vs-2017"
 
-若要關閉和開啟自訂設定，請在 [測試]  > [測試設定]  功能表中取消選取或選取檔案。
+若要關閉和開啟自訂設定，請在 [測試] > [測試設定] 功能表中取消選取或選取檔案。
 
 ![Visual Studio 2017 中具有自訂設定檔的測試設定功能表](../test/media/codecoverage-settingsfile.png)
 
@@ -59,13 +59,13 @@ ms.locfileid: "69976765"
 
 ::: moniker range=">=vs-2019"
 
-若要關閉和開啟自訂設定，請在 [測試總管]  中的 [設定]  功能表上取消選取或選取檔案。
+若要關閉和開啟自訂設定，請在 [測試總管] 中的 [設定] 功能表上取消選取或選取檔案。
 
 ::: moniker-end
 
 ### <a name="specify-symbol-search-paths"></a>指定符號搜尋路徑
 
-程式碼涵蓋範圍需要組件的符號檔 (.pdb  檔案)。 在您的方案所建置的組件中，符號檔案通常會和二進位檔一起出現，而且程式碼涵蓋範圍會自動運作。 在某些情況下，您可以在程式碼涵蓋範圍分析中加入參考的組件。 在此類情況下，.pdb  檔案不可以和二進位檔同時出現，不過您可以在 .runsettings  檔案中指定符號搜尋路徑。
+程式碼涵蓋範圍需要組件的符號檔 (.pdb 檔案)。 在您的方案所建置的組件中，符號檔案通常會和二進位檔一起出現，而且程式碼涵蓋範圍會自動運作。 在某些情況下，您可以在程式碼涵蓋範圍分析中加入參考的組件。 在此類情況下，.pdb 檔案不可以和二進位檔同時出現，不過您可以在 .runsettings 檔案中指定符號搜尋路徑。
 
 ```xml
 <SymbolSearchPaths>
@@ -75,7 +75,7 @@ ms.locfileid: "69976765"
 ```
 
 > [!NOTE]
-> 符號解析可能需要一些時間，特別是在使用具有許多組件的遠端檔案位置時。 因此，請考慮將 .pdb  檔案複製到二進位 (.dll  和 .exe  ) 檔案在本機中的位置。
+> 符號解析可能需要一些時間，特別是在使用具有許多組件的遠端檔案位置時。 因此，請考慮將 .pdb 檔案複製到二進位 (.dll 和 .exe) 檔案在本機中的位置。
 
 ### <a name="exclude-and-include"></a>排除和包含
 
@@ -105,7 +105,7 @@ ms.locfileid: "69976765"
 
 ### <a name="regular-expressions"></a>規則運算式
 
-包含和排除節點使用與萬用字元不同的規則運算式。 如需詳細資訊，請參閱[在 Visual Studio 中使用規則運算式](../ide/using-regular-expressions-in-visual-studio.md)。 部分範例如下：
+包含和排除節點使用與萬用字元不同的規則運算式。 如需詳細資訊，請參閱[在 Visual Studio 中使用規則運算式](../ide/using-regular-expressions-in-visual-studio.md)。 一些範例如下：
 
 - **.\*** 會比對任何字元的字串
 
@@ -282,9 +282,14 @@ Included items must then not match any entries in the exclude list to remain inc
             </PublicKeyTokens>
 
             <!-- We recommend you do not change the following values: -->
+            
+            <!-- Set this to True to collect coverage information for functions marked with the "SecuritySafeCritical" attribute. Instead of writing directly into a memory location from such functions, code coverage inserts a probe that redirects to another function, which in turns writes into memory. -->
             <UseVerifiableInstrumentation>True</UseVerifiableInstrumentation>
+            <!-- When set to True, collects coverage information from child processes that are launched with low-level ACLs, for example, UWP apps. -->
             <AllowLowIntegrityProcesses>True</AllowLowIntegrityProcesses>
+            <!-- When set to True, collects coverage information from child processes that are launched by test or production code. -->
             <CollectFromChildProcesses>True</CollectFromChildProcesses>
+            <!-- When set to True, restarts the IIS process and collects coverage information from it. -->
             <CollectAspDotNet>False</CollectAspDotNet>
 
           </CodeCoverage>

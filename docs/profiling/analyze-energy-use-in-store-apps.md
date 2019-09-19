@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: e16261020a737651fc79c3fb3eb1da6a539cee34
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 1259f92b89fc6d83bb0b7296cc07844bf25df705
+ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62777183"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71128326"
 ---
 # <a name="analyze-energy-use-in-uwp-apps"></a>分析 UWP App 中的能源耗用量
 
@@ -35,7 +35,7 @@ Visual Studio [能源消耗] 分析工具可協助您分析 UWP App 在全部或
 
 [能源消耗] 分析工具使用下列「 *功率* 」(Power) 和「 *能源*」(Energy) 的定義：
 
-- 「*功率* 」(Power) 用於測量在某段時間內完成工作的用電速率。 在電子學中，功率的標準單位是「 *瓦*」(Watt)，其定義為一安培電流流經一伏特電位差時，工作完成的速率。 在 [用電量]  圖形上，單位顯示為毫瓦 **mW** ，相當於千分之一瓦特。
+- 「*功率* 」(Power) 用於測量在某段時間內完成工作的用電速率。 在電子學中，功率的標準單位是「 *瓦*」(Watt)，其定義為一安培電流流經一伏特電位差時，工作完成的速率。 在 [用電量] 圖形上，單位顯示為毫瓦 **mW** ，相當於千分之一瓦特。
 
    請注意，由於功率是一種速率，因此有方向 (工作在某段時間內可能增加或減少) 和速度 (工作增加或減少的量)。
 
@@ -88,7 +88,7 @@ if (performance && performance.mark) {
 
 ## <a name="collect-energy-profile-data-for-your-app"></a>收集應用程式的能源分析資料
 
-1. 在 [偵錯]  功能表上，選擇 [啟動診斷但不偵錯] 。
+1. 在 [偵錯] 功能表上，選擇 [啟動診斷但不偵錯]。
 
      ![選擇診斷中樞內的 [能源消耗]](../profiling/media/energyprof_diagnosticshub.png "ENERGYPROF_DiagnosticsHub")
 
@@ -157,5 +157,5 @@ if (performance && performance.mark) {
 
 ## <a name="see-also"></a>另請參閱
 
-- [Visual Studio 中的分析](../profiling/index.md)
+- [Visual Studio 中的分析](../profiling/index.yml)
 - [初步認識分析工具](../profiling/profiling-feature-tour.md)

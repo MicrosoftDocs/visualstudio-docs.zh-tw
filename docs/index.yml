@@ -10,12 +10,12 @@ metadata:
   monikerRange: '>=vs-2017'
   f1_keywords:
   - MSDNSTART
-  ms.openlocfilehash: 0853a20309869e5cde753685f20584bbd0a3e7dd
-  ms.sourcegitcommit: 78e2637e4fbfadd4509b55276816b64f5c24c606
+  ms.openlocfilehash: f8d8ed358779471d68a460ae923df5f9d316c2b0
+  ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
   ms.translationtype: HT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 09/10/2019
-  ms.locfileid: "70864666"
+  ms.lasthandoff: 09/19/2019
+  ms.locfileid: "71128265"
 highlightedContent:
   items:
   - title: 設定與安裝
@@ -138,7 +138,7 @@ additionalContent:
       url: test/improve-code-quality.md
     - title: 部署
       summary: 使用 Web Deploy、InstallShield、NuGet 和持續整合等功能，共用您的應用程式與程式碼。
-      url: deployment/index.md
+      url: deployment/index.yml
     - title: 版本控制
       summary: 使用 Git 和 TFVC 等版本控制技術來共用程式碼。
       url: version-control/index.md
@@ -147,7 +147,7 @@ additionalContent:
       url: /azure/devops
     - title: 測量效能
       summary: 識別瓶頸，並使用診斷工具將程式碼效能最佳化。
-      url: profiling/index.md
+      url: profiling/index.yml
     - title: 擴充
       summary: 將您自己的功能加入至 Visual Studio IDE 來改善您的開發經驗。
       url: extensibility/index.md

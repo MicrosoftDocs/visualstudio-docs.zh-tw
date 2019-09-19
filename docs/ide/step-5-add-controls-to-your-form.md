@@ -5,20 +5,17 @@ ms.assetid: dc2746f4-0b5c-4674-9ef7-f40f94150f52
 ms.topic: tutorial
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
-ms.devlang:
-- csharp
-- vb
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ff85034d7185e68a43ed8b4c70f68787414ddd9
-ms.sourcegitcommit: b60a00ac3165364ee0e53f7f6faef8e9fe59ec4a
+ms.openlocfilehash: b88af1a0ac1ec51f57d3aa339c2c2ec4adb45134
+ms.sourcegitcommit: 6eed0372976c0167b9a6d42ba443f9a474b8bb91
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70913167"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71119005"
 ---
 # <a name="step-5-add-controls-to-your-form"></a>步驟 5：將控制項新增至表單
 
