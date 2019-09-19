@@ -1,7 +1,7 @@
 ---
 title: 針對安裝或升級問題進行疑難排解
 description: 有時可能會發生一些問題。 如果您的 Visual Studio 安裝或升級失敗，則這個頁面會有所幫助。
-ms.date: 03/30/2019
+ms.date: 09/13/2019
 ms.custom: seodec18
 ms.topic: troubleshooting
 helpviewer_keywords:
@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: ce451ecdeb6d196e6520acffb9a6c76add36f5bf
-ms.sourcegitcommit: b60a00ac3165364ee0e53f7f6faef8e9fe59ec4a
+ms.openlocfilehash: f9612d9943c425a91bb3d01ea3bb5b1e37f270d3
+ms.sourcegitcommit: 2db01751deeee7b2bdb1db25419ea6706e6fcdf8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70913262"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71062817"
 ---
 # <a name="troubleshoot-visual-studio-installation-and-upgrade-issues"></a>針對 Visual Studio 安裝和升級問題進行疑難排解
 
@@ -114,12 +114,14 @@ Visual Studio 安裝程式啟動載入器是最小的輕量型可執行檔，可
 
 ## <a name="offline-installations"></a>離線安裝
 
-下表列出從本機配置進行安裝時的已知問題與一些可能有幫助的因應措施。
+以下是已知問題和一些因應措施的表格，當您建立[離線安裝](create-an-offline-installation-of-visual-studio.md)，然後從本機配置進行安裝時，可能會有一些因應措施可協助您。
 
 | 問題       | 項目                   | 方案 |
 | ----------- | ---------------------- | -------- |
 | 使用者沒有檔案的存取權。 | 權限 (ACL) | 請務必在您共用離線安裝「之前」調整權限 (ACL)，讓它們將「讀取權」授與其他使用者。 |
 | 無法安裝新的工作負載、元件或語言。  | `--layout`  | 如果是以部分配置來安裝，並選取該部分配置中先前未下載的工作負載、元件或語言，請確定可以存取網際網路。 |
+
+如需如何解決[網路安裝](create-a-network-installation-of-visual-studio.md)問題的詳細資訊，請參閱[當您安裝或使用 Visual Studio 時，針對網路相關錯誤進行疑難排解](troubleshooting-network-related-errors-in-visual-studio.md)。
 
 ## <a name="installation-logs"></a>安裝記錄檔
 

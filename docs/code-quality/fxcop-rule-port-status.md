@@ -10,22 +10,22 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: d6d891001bbb46e01049c2c8d71bb25372bb8c29
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 07a5130edd534008b4343ab439bf20bf63bc3cde
+ms.sourcegitcommit: 2db01751deeee7b2bdb1db25419ea6706e6fcdf8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69551066"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71062406"
 ---
 # <a name="fxcop-rule-port-status"></a>Fxcop 規則埠狀態
 
-如果您先前已在 Visual Studio 中使用靜態程式碼分析, 您可能會想知道哪些規則在目前的實作為[FxCop 分析器](install-fxcop-analyzers.md)中可供使用。 此頁面會列出已移植的規則, 以及尚未移植的規則, 以及是否有計劃要進行埠的通訊。
+如果您先前已在 Visual Studio 中使用靜態程式碼分析，您可能會想知道哪些規則在目前的實作為[FxCop 分析器](install-fxcop-analyzers.md)中可供使用。 此頁面會列出已移植的規則，以及尚未移植的規則，以及是否有計劃要進行埠的通訊。
 
 ## <a name="ported-rules"></a>移植的規則
 
-Roslyn 分析器存放庫中自動產生的[檔頁面](https://github.com/dotnet/roslyn-analyzers/blob/master/src/Microsoft.CodeAnalysis.FxCopAnalyzers/Microsoft.CodeAnalysis.FxCopAnalyzers.md), 具有已移植到 FxCop 分析器的最新規則清單。 該頁面也有其他資訊, 例如規則是否預設為啟用, 以及是否有相關聯的*程式碼修正*。 ([程式碼修正](../ide/quick-actions.md)是 Visual Studio 的燈泡圖示功能表中, 可使用的單鍵修正)。
+Roslyn 分析器存放庫中自動產生的[檔頁面](https://github.com/dotnet/roslyn-analyzers/blob/master/src/Microsoft.CodeAnalysis.FxCopAnalyzers/Microsoft.CodeAnalysis.FxCopAnalyzers.md)，具有已移植到 FxCop 分析器的最新規則清單。 該頁面也有其他資訊，例如規則是否預設為啟用，以及是否有相關聯的*程式碼修正*。 （[程式碼修正](../ide/quick-actions.md)是 Visual Studio 的燈泡圖示功能表中，可使用的單鍵修正）。
 
-從這個頁面的日期開始, 已移植到[fxcop 分析器](install-fxcop-analyzers.md)的 FxCop 規則清單包含:
+從這個頁面的日期開始，已移植到[fxcop 分析器](install-fxcop-analyzers.md)的 FxCop 規則清單包含：
 
 規則識別碼 | 標題
 --------|---------
@@ -56,7 +56,7 @@ Roslyn 分析器存放庫中自動產生的[檔頁面](https://github.com/dotnet
 [CA1050](ca1050-declare-types-in-namespaces.md) | 類型必須在命名空間中宣告
 [CA1051](ca1051-do-not-declare-visible-instance-fields.md) | 不要宣告可見的執行個體欄位
 [CA1052](ca1052-static-holder-types-should-be-sealed.md) | 靜態預留位置類型應為靜態或 NotInheritable
-[CA1053](ca1053-static-holder-types-should-not-have-constructors.md) | 靜態預留位置類型不應該有任何函式 (CA1053 是 FxCop 分析器的[CA1052](ca1052-static-holder-types-should-be-sealed.md)的一部分)
+[CA1053](ca1053-static-holder-types-should-not-have-constructors.md) | 靜態預留位置類型不應該有任何函式（CA1053 是 FxCop 分析器的[CA1052](ca1052-static-holder-types-should-be-sealed.md)的一部分）
 [CA1054](ca1054-uri-parameters-should-not-be-strings.md) | Uri 參數不應為字串
 [CA1055](ca1055-uri-return-values-should-not-be-strings.md) | Uri 傳回值不應為字串
 [CA1056](ca1056-uri-properties-should-not-be-strings.md) | Uri 屬性不應為字串
@@ -67,9 +67,9 @@ Roslyn 分析器存放庫中自動產生的[檔頁面](https://github.com/dotnet
 [CA1063](ca1063-implement-idisposable-correctly.md) | 正確地執行 IDisposable
 [CA1064](ca1064-exceptions-should-be-public.md) | 例外狀況必須是公用
 [CA1065](ca1065-do-not-raise-exceptions-in-unexpected-locations.md) | 不要在非預期的位置中引發例外狀況
-CA1066 | 類型{0}應執行 IEquatable\<T >, 因為它會覆寫 Equals
-CA1067 | 在執行 IEquatable\<T 時覆寫 object.equals (object) >
-CA1068 | CancellationToken 參數必須是最後的
+CA1066 | 類型{0}應執行 IEquatable\<T >，因為它會覆寫 Equals
+CA1067 | 在執行 IEquatable\<T 時覆寫 object.equals （object） >
+[CA1068](ca1068.md) | CancellationToken 參數必須是最後的
 CA1200 | 避免使用具有前置詞的 cref 標記
 [CA1303](ca1303-do-not-pass-literals-as-localized-parameters.md) | 不要將常值當作已當地語系化的參數傳遞
 [CA1304](ca1304-specify-cultureinfo.md) | 必須指定 CultureInfo
@@ -142,7 +142,7 @@ CA2010 | 一律使用以 PreserveSigAttribute 標記的方法所傳回的值
 [CA2227](ca2227-collection-properties-should-be-read-only.md) | 集合屬性應該為唯讀
 [CA2229](ca2229-implement-serialization-constructors.md) | 必須實作序列化建構函式
 [CA2231](ca2231-overload-operator-equals-on-overriding-valuetype-equals.md) | 覆寫運算子 equals 覆寫數值型別 Equals
-[CA2234](ca2234-pass-system-uri-objects-instead-of-strings.md) | 傳遞系統 uri 物件, 而不是字串
+[CA2234](ca2234-pass-system-uri-objects-instead-of-strings.md) | 傳遞系統 uri 物件，而不是字串
 [CA2235](ca2235-mark-all-non-serializable-fields.md) | 必須標記所有不可序列化的欄位
 [CA2237](ca2237-mark-iserializable-types-with-serializableattribute.md) | 以可序列化標記 ISerializable 類型
 [CA2241](ca2241-provide-correct-arguments-to-formatting-methods.md) | 必須提供格式化方法的正確引數
@@ -193,7 +193,7 @@ CA5369 | 使用 XmlReader 進行還原序列化
 CA5370 | 使用 XmlReader 來驗證讀取器
 CA5371 | 使用 XmlReader 讀取架構
 CA5372 | 針對 XPathDocument 使用 XmlReader
-CA5373 | 請勿使用過時的金鑰衍生函式
+CA5373 | 不使用已過時的金鑰衍生函式
 CA5374 | 不要使用 XslTransform
 CA5375 | 不使用帳戶共用存取簽章
 CA5376 | 使用 SharedAccessProtocol HttpsOnly
@@ -204,11 +204,11 @@ CA9999 | 分析器版本不符
 
 ## <a name="unported-rules"></a>Unported license 規則
 
-尚未移植到[FxCop 分析器](install-fxcop-analyzers.md)的規則集, 是由尚未[進行移植](#rules-that-may-be-ported)的規則, 以及已被取代且[不會移植](#deprecated-rules)的規則所組成。
+尚未移植到[FxCop 分析器](install-fxcop-analyzers.md)的規則集，是由尚未[進行移植](#rules-that-may-be-ported)的規則，以及已被取代且[不會移植](#deprecated-rules)的規則所組成。
 
 ### <a name="rules-that-may-be-ported"></a>可能會進行移植的規則
 
-下列 FxCop 舊版分析規則尚未實作為分析器, 但仍可能是。 這可能是因為封鎖技術的原因, 或只是規則較低的優先順序。 如需每個規則之移植狀態的詳細資訊, 請按一下 [**追蹤問題**] 資料行中的連結。
+下列 FxCop 舊版分析規則尚未實作為分析器，但仍可能是。 這可能是因為封鎖技術的原因，或只是規則較低的優先順序。 如需每個規則之移植狀態的詳細資訊，請按一下 [**追蹤問題**] 資料行中的連結。
 
 規則識別碼 | 追蹤問題
 --- | ---
@@ -271,7 +271,7 @@ CA9999 | 分析器版本不符
 
 ### <a name="deprecated-rules"></a>已淘汰的規則
 
-下列 FxCop 舊版分析規則已被取代, 且不會實作為分析器。 如需進一步資訊, 您可以在 [ [roslyn-分析器 GitHub 問題] 頁面](https://github.com/dotnet/roslyn-analyzers/issues?utf8=%E2%9C%93&q=is:issue+label:FxCop-Port)上依據規則識別碼 (例如, **CA1009**) 進行搜尋。
+下列 FxCop 舊版分析規則已被取代，且不會實作為分析器。 如需進一步資訊，您可以在 [ [roslyn-分析器 GitHub 問題] 頁面](https://github.com/dotnet/roslyn-analyzers/issues?utf8=%E2%9C%93&q=is:issue+label:FxCop-Port)上依據規則識別碼（例如， **CA1009**）進行搜尋。
 
 - [CA1009](ca1009-declare-event-handlers-correctly.md)
 - [CA1020](ca1020-avoid-namespaces-with-few-types.md)
@@ -337,7 +337,7 @@ CA9999 | 分析器版本不符
 - [CA2210](ca2210-assemblies-should-have-valid-strong-names.md)
 - [CA2220](ca2220-finalizers-should-call-base-class-finalizer.md)
 - [CA2221](ca2221-finalizers-should-be-protected.md)
-- [CA2222](ca2222-do-not-decrease-inherited-member-visibility.md)([理由](https://github.com/dotnet/roslyn-analyzers/issues/1378))
+- [CA2222](ca2222-do-not-decrease-inherited-member-visibility.md)（[理由](https://github.com/dotnet/roslyn-analyzers/issues/1378)）
 - [CA2223](ca2223-members-should-differ-by-more-than-return-type.md)
 - [CA2228](ca2228-do-not-ship-unreleased-resource-formats.md)
 - [CA2230](ca2230-use-params-for-variable-arguments.md)
