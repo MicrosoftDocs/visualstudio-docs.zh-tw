@@ -11,7 +11,7 @@
           href: roslyn-analyzers-overview.md
         - name: 安裝
           href: install-roslyn-analyzers.md
-        - name: 組態
+        - name: Configuration
           href: use-roslyn-analyzers.md
         - name: 啟用完整解決方案分析
           href: how-to-enable-and-disable-full-solution-analysis-for-managed-code.md
@@ -28,7 +28,7 @@
           href: fxcop-analyzers.yml
         - name: 手動執行程式碼分析
           href: how-to-run-code-analysis-manually-for-managed-code.md
-        - name: 組態
+        - name: Configuration
           items:
             - name: 設定舊版分析
               href: how-to-configure-code-analysis-for-a-managed-code-project.md
@@ -119,7 +119,7 @@
           href: fxcop-analyzers.yml
         - name: 安裝
           href: install-fxcop-analyzers.md
-        - name: 組態
+        - name: Configuration
           items:
             - name: 總覽
               href: configure-fxcop-analyzers.md
@@ -332,8 +332,17 @@
                   href: ca1064-exceptions-should-be-public.md
                 - name: 'CA1065:不要在非預期的位置中引發例外狀況'
                   href: ca1065-do-not-raise-exceptions-in-unexpected-locations.md
+                - name: CA1068：CancellationToken 參數必須位於最後
+                  href: ca1068.md
                 - name: 'CA2210:組件應該具備有效的強式名稱'
                   href: ca2210-assemblies-should-have-valid-strong-names.md
+            - name: 文件警告
+              items:
+                - name: 總覽
+                  displayName: documentation warnings
+                  href: documentation-warnings.md
+                - name: CA1200：請避免使用具有前置詞的 cref 標記
+                  href: ca1200.md
             - name: 全球化警告
               items:
                 - name: 總覽
@@ -514,6 +523,8 @@
                   href: ca1823-avoid-unused-private-fields.md
                 - name: 'CA1824:組件必須標記 NeutralResourcesLanguageAttribute'
                   href: ca1824-mark-assemblies-with-neutralresourceslanguageattribute.md
+                - name: CA1825：請避免長度為零的陣列配置
+                  href: ca1825.md
             - name: 可攜性警告
               items:
                 - name: 總覽
