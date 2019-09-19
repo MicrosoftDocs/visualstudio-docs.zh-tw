@@ -42,6 +42,8 @@
       items:
         - name: 使用中斷點
           href: using-breakpoints.md
+        - name: 使用追蹤點
+          href: using-tracepoints.md
         - name: 針對中斷點進行疑難排解
           href: troubleshooting-breakpoints.md
     - name: 資料檢查
