@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c0f867179fd78ecb753a9b66cfbdb8479e16c3b
-ms.sourcegitcommit: b60a00ac3165364ee0e53f7f6faef8e9fe59ec4a
-ms.translationtype: MT
+ms.openlocfilehash: 803bd02b43b290cba4a3afe7bc7040e0dee1e2eb
+ms.sourcegitcommit: 6993bcb0d2b0067b1b7b7899bfba52c31c70b7e7
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70913274"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71095340"
 ---
 # <a name="tutorial-1-create-a-picture-viewer"></a>教學課程 1：建立圖片檢視器
 
@@ -49,7 +49,7 @@ ms.locfileid: "70913274"
 
 ## <a name="tutorial-links"></a>教學課程的連結
 
-|標題|描述|
+|標題|說明|
 |-----------|-----------------|
 |[步驟 1：建立 Windows Forms 應用程式專案](../ide/step-1-create-a-windows-forms-application-project.md)|從建立 Windows Forms 應用程式專案開始。|
 |[步驟 2：執行您的圖片檢視器應用程式](../ide/step-2-run-your-program.md)|執行您在上一個步驟中建立的 Windows Forms 應用程式專案。|
@@ -71,4 +71,4 @@ ms.locfileid: "70913274"
 
 * [其他C#教學課程](/visualstudio/get-started/csharp/)
 * [Visual Basic 教學課程](/visualstudio/get-started/visual-basic/)
-* [C++教程](../ide/getting-started-with-cpp-in-visual-studio.md)
+* [C++教程](/cpp/get-started/tutorial-console-cpp)

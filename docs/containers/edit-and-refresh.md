@@ -1,20 +1,20 @@
 ---
 title: 在本機 Docker 容器中偵錯工具 |Microsoft Docs
 description: 瞭解如何修改在本機 Docker 容器中執行的應用程式、透過 [編輯] 和 [重新整理] 重新整理容器，然後設定 [偵錯工具中斷點]。
+ms.author: ghogen
 author: ghogen
 manager: jillfra
 ms.assetid: 480e3062-aae7-48ef-9701-e4f9ea041382
 ms.topic: conceptual
 ms.workload: multiple
 ms.date: 07/25/2019
-ms.author: ghogen
 ms.technology: vs-azure
-ms.openlocfilehash: d7a7fa83fe0976ee1e08c6c614a11f783178a285
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
+ms.openlocfilehash: 5af092bbcb987f45b10121f37d40eaa5466c3da5
+ms.sourcegitcommit: 2db01751deeee7b2bdb1db25419ea6706e6fcdf8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70312269"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71062179"
 ---
 # <a name="debug-apps-in-a-local-docker-container"></a>在本機 Docker 容器中的偵錯工具
 
@@ -48,14 +48,14 @@ Docker 容器適用于 .NET Framework 和 .NET Core 專案。 讓我們來看以
 [!INCLUDE [create-aspnet5-app](../azure/includes/create-aspnet5-app.md)]
 ::: moniker-end
 ::: moniker range=">= vs-2019"
-[!包含[aspnet5-app-2019](../azure/includes/vs-2019/create-aspnet5-app-2019.md)
+[!INCLUDE [create-aspnet5-app-2019](../azure/includes/vs-2019/create-aspnet5-app-2019.md)]
 ::: moniker-end
 
 ### <a name="edit-your-code-and-refresh"></a>編輯您的程式碼並重新整理
 
 若要快速反復查看變更，您可以在容器中啟動應用程式。 然後，繼續進行變更，如同使用 IIS Express 一樣加以查看。
 
-1. 將**解決方案**設定設為**Debug**。 然後，按下 Ctrl + F5 來建立您的 Docker 映射，並在本機執行。
+1. 將**解決方案**設定設為**Debug**。 然後，按下**Ctrl** + **F5**來建立您的 Docker 映射，並在本機執行。
 
     建立容器映射並在 Docker 容器中執行時，Visual Studio 會在預設瀏覽器中啟動 web 應用程式。
 
