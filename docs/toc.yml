@@ -139,7 +139,7 @@
       displayName: Feature tour
       href: ide/quickstart-ide-orientation.md
     - name: C++：建立主控台應用程式
-      href: ide/getting-started-with-cpp-in-visual-studio.md
+      href: /cpp/get-started/tutorial-console-cpp
     - name: Python：建立 Web 應用程式
       href: ide/quickstart-python.md
     - name: Node.js：建立 Web 應用程式
