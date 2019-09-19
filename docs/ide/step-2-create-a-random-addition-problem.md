@@ -8,28 +8,28 @@ ms.devlang:
 - csharp
 - vb
 dev_langs:
-- csharp
-- vb
+- CSharp
+- VB
 ms.assetid: 6461c4cf-f2aa-4bf5-91ed-06820a4f893d
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d1eee0c161de486740b7576b184f869bffd7fb98
-ms.sourcegitcommit: 0e482cfc15f809b564c3de61646f29ecd7bfcba6
+ms.openlocfilehash: 941cc454220848d95ed2bf161fa4709868a6ac74
+ms.sourcegitcommit: 541a0556958201ad6626bc8638406ad02640f764
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "70987707"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71079599"
 ---
 # <a name="step-2-create-a-random-addition-problem"></a>步驟 2：建立隨機加法問題
 
 在本教學課程的第二個部分中，您會加入以隨機數字為基礎的數學問題，藉此增加測驗的挑戰性。 您也會建立名為 `StartTheQuiz()` 的方法，這個方法會填入問題並啟動倒數計時器。 稍後在本教學課程中，您將加入減法、乘法和除法問題。
 
 > [!NOTE]
-> 這個主題是有關基本程式碼撰寫概念的教學課程系列的一部分。 
-> - 如需教學課程的概觀，請參閱[教學課程 2：建立計時的數學測驗](../ide/tutorial-2-create-a-timed-math-quiz.md)。 
+> 這個主題是有關基本程式碼撰寫概念的教學課程系列的一部分。
+> - 如需教學課程的概觀，請參閱[教學課程 2：建立計時的數學測驗](../ide/tutorial-2-create-a-timed-math-quiz.md)。
 > - 若要下載已完成的程式碼版本，請參閱[完整的數學測驗教學課程範例](https://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c)。
 
 ## <a name="to-create-a-random-addition-problem"></a>若要建立隨機加法問題

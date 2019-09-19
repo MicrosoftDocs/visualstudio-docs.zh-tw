@@ -9,19 +9,19 @@ ms.devlang:
 - csharp
 - vb
 dev_langs:
-- csharp
-- vb
+- CSharp
+- VB
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c35ee154dd0656f1eb29fd8a03e8c1b63876ed2
-ms.sourcegitcommit: 0e482cfc15f809b564c3de61646f29ecd7bfcba6
+ms.openlocfilehash: 2d2e77b3bfd62bf1dfdf15ff083b07459bd3bf77
+ms.sourcegitcommit: 2db01751deeee7b2bdb1db25419ea6706e6fcdf8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "70987690"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71062663"
 ---
 # <a name="step-10-write-code-for-additional-buttons-and-a-check-box"></a>步驟 10：為其他按鈕及核取方塊撰寫程式碼
 
@@ -43,7 +43,7 @@ ms.locfileid: "70987690"
   [!code-vb[VbExpressTutorial1Step9_10#2](../ide/codesnippet/VisualBasic/step-10-write-code-for-additional-buttons-and-a-check-box_1.vb)]
 
 > [!NOTE]
-> 您的程式碼可能不會顯示 "camelCase" 字母。 
+> 您的程式碼可能不會顯示 "camelCase" 字母。
 
 ## <a name="next-steps"></a>後續步驟
 

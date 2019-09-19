@@ -1,21 +1,24 @@
 ---
 title: 步驟 1：建立專案並將資料表新增至表單
 ms.date: 05/31/2019
-ms.topic: conceptual
+ms.topic: tutorial
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
+ms.devlang:
+- csharp
+- vb
 ms.assetid: 1cac4ba4-f3cd-43bd-ad5d-50fc599234e8
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b57164938f8256743f314d1c302a24547f6074d
-ms.sourcegitcommit: 0e482cfc15f809b564c3de61646f29ecd7bfcba6
+ms.openlocfilehash: 0e7d11f023cc239a3aaa4124cb1ac12a4e4ae9eb
+ms.sourcegitcommit: 541a0556958201ad6626bc8638406ad02640f764
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "70987802"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71079614"
 ---
 # <a name="step-1-create-a-project-and-add-a-table-to-your-form"></a>步驟 1：建立專案並將資料表新增至表單
 

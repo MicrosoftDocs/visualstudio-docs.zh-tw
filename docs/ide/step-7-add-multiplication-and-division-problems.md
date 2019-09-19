@@ -8,28 +8,28 @@ ms.devlang:
 - csharp
 - vb
 dev_langs:
-- csharp
-- vb
+- CSharp
+- VB
 ms.assetid: e638959e-f6a4-4eb4-b2e9-f63b7855cf8f
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 182ab3c06ef0956d6c0d97c4276a44c3f3239875
-ms.sourcegitcommit: 0e482cfc15f809b564c3de61646f29ecd7bfcba6
+ms.openlocfilehash: b367c83b449959e102e1adff124d9c871eff9a23
+ms.sourcegitcommit: 541a0556958201ad6626bc8638406ad02640f764
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "70987855"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71079297"
 ---
 # <a name="step-7-add-multiplication-and-division-problems"></a>步驟 7：新增乘法及除法問題
 
 在本教學課程的第七個部分中，您將加入乘法和除法問題，不過要先思考如何進行這項變更。 思考初始步驟，其中牽涉到儲存值。
 
 > [!NOTE]
-> 這個主題是有關基本程式碼撰寫概念的教學課程系列的一部分。 
-> - 如需教學課程的概觀，請參閱[教學課程 2：建立計時的數學測驗](../ide/tutorial-2-create-a-timed-math-quiz.md)。 
+> 這個主題是有關基本程式碼撰寫概念的教學課程系列的一部分。
+> - 如需教學課程的概觀，請參閱[教學課程 2：建立計時的數學測驗](../ide/tutorial-2-create-a-timed-math-quiz.md)。
 > - 若要下載已完成的程式碼版本，請參閱[完整的數學測驗教學課程範例](https://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c)。
 
 ## <a name="to-add-multiplication-and-division-problems"></a>若要加入乘法和除法問題

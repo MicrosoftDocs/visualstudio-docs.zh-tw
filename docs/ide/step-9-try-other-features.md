@@ -1,19 +1,24 @@
 ---
 title: 步驟 9：嘗試其他功能
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: tutorial
+ms.prod: visual-studio-windows
+ms.technology: vs-ide-general
+ms.devlang:
+- csharp
+- vb
 ms.assetid: 1b0c5c80-e5a6-4f69-a4a4-0e89a82d4de0
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 24637ba56c3dfa2d9ce9c7e70452bcdc6788b51b
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+ms.openlocfilehash: 6745b320d7f8c2d4d0434bf2410dc2ab37a288aa
+ms.sourcegitcommit: 541a0556958201ad6626bc8638406ad02640f764
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68918721"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71079338"
 ---
 # <a name="step-9-try-other-features"></a>步驟 9：嘗試其他功能
 若要了解詳細資訊，請試著變更圖示和色彩、加入遊戲計時器，以及加入音效。 若要讓遊戲更具挑戰性，請試著使戲局變大並調整計時器。

@@ -1,5 +1,5 @@
 ---
-title: HOW TO：簽署應用程式與部署資訊清單
+title: 作法：簽署應用程式與部署資訊清單
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
 ms.topic: conceptual
@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f3f9c0f4913c80e1cf2f2fee24dbed5ad910ca75
-ms.sourcegitcommit: 4dfe098ac0df294aad63e6b384d6575980798ca3
+ms.openlocfilehash: 2edc0e1e63a716f5e2e649660a9b0333ec8bc923
+ms.sourcegitcommit: 541a0556958201ad6626bc8638406ad02640f764
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70887790"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71079361"
 ---
 # <a name="how-to-sign-application-and-deployment-manifests"></a>作法：簽署應用程式與部署資訊清單
 
@@ -71,7 +71,7 @@ ms.locfileid: "70887790"
 4. 輸入密碼以存取金鑰檔，然後選取 **Enter**。
 
 > [!NOTE]
-> *.pfx* 檔案不能包含憑證鏈結資訊。 如果包含，則會發生下列匯入錯誤：**找不到用來解密的憑證和私密金鑰**。 若要移除憑證連結資訊，您可以使用*certmgr.msc* ，並停用在匯出 * .pfx 檔案時**包含所有憑證**[的選項](/previous-versions/aa730868(v=vs.80)?redirectedfrom=MSDN#rsvssign_topic3)。
+> *.pfx* 檔案不能包含憑證鏈結資訊。 如果包含，則會發生下列匯入錯誤：**找不到用來解密的憑證和私密金鑰**。 若要移除憑證連結資訊，您可以使用*certmgr.msc* ，並停用在匯出 * .pfx 檔案時**包含所有憑證**[的選項](/previous-versions/aa730868(v=vs.80))。
 
 ## <a name="sign-using-a-test-certificate"></a>使用測試憑證簽署
 

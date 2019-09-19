@@ -8,28 +8,28 @@ ms.devlang:
 - csharp
 - vb
 dev_langs:
-- csharp
-- vb
+- CSharp
+- VB
 ms.assetid: c66f3831-b4a0-40bc-a109-8f46f4db35ed
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8c40150c3fbcd07abfad4a10155722750cbe4849
-ms.sourcegitcommit: 0e482cfc15f809b564c3de61646f29ecd7bfcba6
+ms.openlocfilehash: 4c940893f74697bdbf51c5910e08e925fedf26db
+ms.sourcegitcommit: 541a0556958201ad6626bc8638406ad02640f764
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "70987691"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71079419"
 ---
 # <a name="step-4-add-the-checktheanswer-method"></a>步驟 4：新增 CheckTheAnswer() 方法
 
 在本教學課程的第四個部分中，您將撰寫 `CheckTheAnswer()` 這個方法，用於判斷數學問題的答案是否正確。 這個主題是有關基本程式碼撰寫概念的教學課程系列的一部分。 如需教學課程的概觀，請參閱[教學課程 2：建立計時的數學測驗](../ide/tutorial-2-create-a-timed-math-quiz.md)。
 
 > [!NOTE]
-> 這個主題是有關基本程式碼撰寫概念的教學課程系列的一部分。 
-> - 如需教學課程的概觀，請參閱[教學課程 2：建立計時的數學測驗](../ide/tutorial-2-create-a-timed-math-quiz.md)。 
+> 這個主題是有關基本程式碼撰寫概念的教學課程系列的一部分。
+> - 如需教學課程的概觀，請參閱[教學課程 2：建立計時的數學測驗](../ide/tutorial-2-create-a-timed-math-quiz.md)。
 > - 若要下載已完成的程式碼版本，請參閱[完整的數學測驗教學課程範例](https://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c)。
 
 ## <a name="to-verify-whether-the-answers-are-correct"></a>若要驗證答案是否正確

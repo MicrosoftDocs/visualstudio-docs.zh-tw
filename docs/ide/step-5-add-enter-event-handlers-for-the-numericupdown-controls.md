@@ -16,20 +16,20 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 718a24b5afbd1196fdb1fb382cc45197975a0242
-ms.sourcegitcommit: 0e482cfc15f809b564c3de61646f29ecd7bfcba6
+ms.openlocfilehash: 9566e5bb8bd5be3c1a44ff79690fb1f8107b40f9
+ms.sourcegitcommit: 541a0556958201ad6626bc8638406ad02640f764
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "70987895"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71079471"
 ---
 # <a name="step-5-add-enter-event-handlers-for-the-numericupdown-controls"></a>步驟 5：新增 NumericUpDown 控制項的 Enter 事件處理常式
 
 在本教學課程的第五個部分中，您將加入 <xref:System.Windows.Forms.Control.Enter> 事件處理常式，讓輸入測驗問題的答案時更加容易。 只要受測者選擇並開始輸入不同的值，這個程式碼就會選取並清除每個 <xref:System.Windows.Forms.NumericUpDown> 控制項中的目前值。
 
 > [!NOTE]
-> 這個主題是有關基本程式碼撰寫概念的教學課程系列的一部分。 
-> - 如需教學課程的概觀，請參閱[教學課程 2：建立計時的數學測驗](../ide/tutorial-2-create-a-timed-math-quiz.md)。 
+> 這個主題是有關基本程式碼撰寫概念的教學課程系列的一部分。
+> - 如需教學課程的概觀，請參閱[教學課程 2：建立計時的數學測驗](../ide/tutorial-2-create-a-timed-math-quiz.md)。
 > - 若要下載已完成的程式碼版本，請參閱[完整的數學測驗教學課程範例](https://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c)。
 
 ## <a name="to-verify-the-default-behavior"></a>若要驗證預設行為
