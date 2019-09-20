@@ -1,20 +1,20 @@
 ---
-title: Visual Studio + GitHub Enterprise 搭售方案 | Microsoft Docs
+title: Visual Studio + GitHub Enterprise 供應專案 |Microsoft Docs
 author: evanwindom
 ms.author: lank
 manager: lank
 ms.date: 07/28/2019
 ms.topic: conceptual
-description: 在管理 Visual Studio + GitHub Enterprise 搭售方案中管理訂用帳戶
-ms.openlocfilehash: 0f297eac1d6b2bc5fe322be305fab7f268f3d041
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
-ms.translationtype: HT
+description: 管理 Visual Studio + GitHub Enterprise 供應專案中的訂用帳戶
+ms.openlocfilehash: 29df2d7c43f934e44b7585e975e0f77328305ba5
+ms.sourcegitcommit: a2df993dc5e11c5131dbfcba686f0028a589068f
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68605396"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71150141"
 ---
 # <a name="manage-visual-studio-subscriptions-with-github-enterprise"></a>管理含 GitHub Enterprise 的 Visual Studio 訂閱
-與 Microsoft 之間簽有 Enterprise 合約 (EA) 的客戶即符合新訂用帳戶搭售方案的購買資格，這個方案結合了 Visual Studio 標準訂用帳戶與 GitHub Enterprise。 Visual Studio 訂閱者若想取得 GitHub Enterprise，這是個既簡單又經濟實惠的方法。 
+具有 Microsoft Enterprise 合約（EA）的客戶有資格購買新的訂用帳戶供應專案，以結合 Visual Studio 標準訂閱和 GitHub Enterprise。 Visual Studio 訂閱者若想取得 GitHub Enterprise，這是個既簡單又經濟實惠的方法。 
 
 當您的組織購買含 GitHub Enterprise 的 Visual Studio 訂用帳戶時，會分成兩部份佈建及管理。
 

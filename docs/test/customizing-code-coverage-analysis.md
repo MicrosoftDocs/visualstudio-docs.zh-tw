@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 0395e2d6e54e737af9a98d8c24b8ea29eff7577a
-ms.sourcegitcommit: 6eed0372976c0167b9a6d42ba443f9a474b8bb91
+ms.openlocfilehash: a22bdbc30fc222e26c01a10afdd7a666eebcb9f6
+ms.sourcegitcommit: a2df993dc5e11c5131dbfcba686f0028a589068f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71118683"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71150115"
 ---
 # <a name="customize-code-coverage-analysis"></a>自訂程式碼涵蓋範圍分析
 
@@ -63,7 +63,7 @@ ms.locfileid: "71118683"
 
 ::: moniker-end
 
-### <a name="specify-symbol-search-paths"></a>指定符號搜尋路徑
+## <a name="symbol-search-paths"></a>符號搜尋路徑
 
 程式碼涵蓋範圍需要組件的符號檔 (.pdb 檔案)。 在您的方案所建置的組件中，符號檔案通常會和二進位檔一起出現，而且程式碼涵蓋範圍會自動運作。 在某些情況下，您可以在程式碼涵蓋範圍分析中加入參考的組件。 在此類情況下，.pdb 檔案不可以和二進位檔同時出現，不過您可以在 .runsettings 檔案中指定符號搜尋路徑。
 
@@ -77,9 +77,11 @@ ms.locfileid: "71118683"
 > [!NOTE]
 > 符號解析可能需要一些時間，特別是在使用具有許多組件的遠端檔案位置時。 因此，請考慮將 .pdb 檔案複製到二進位 (.dll 和 .exe) 檔案在本機中的位置。
 
-### <a name="exclude-and-include"></a>排除和包含
+## <a name="include-or-exclude-assemblies-and-members"></a>包含或排除元件和成員
 
-您可以在程式碼涵蓋範圍分析中排除指定的組件。 例如：
+您可以從程式碼涵蓋範圍分析中包含或排除元件或特定類型和成員。 如果 [**包含**] 區段是空的或省略，則會包含所有載入並具有相關聯 PDB 檔案的元件。 如果元件或成員符合**Exclude**區段中的子句，則會從程式碼涵蓋範圍中排除它。 [**排除**] 區段的優先順序高於 [**包含**] 區段：如果元件同時列在 [**包含**] 和 [**排除**] 中，則不會包含在程式碼涵蓋範圍內。
+
+例如，下列 XML 會藉由指定名稱來排除單一元件：
 
 ```xml
 <ModulePaths>
@@ -90,7 +92,7 @@ ms.locfileid: "71118683"
 </ModulePaths>
 ```
 
-或者，您可以指定應包含的組件。 這種方法的缺點是，當您將其他組件新增至方案時，必須記得將它們新增至清單：
+下列範例會指定只有單一元件應該包含在程式碼涵蓋範圍內：
 
 ```xml
 <ModulePaths>
@@ -101,11 +103,20 @@ ms.locfileid: "71118683"
 </ModulePaths>
 ```
 
-如果 **Include** 是空的，則程式碼涵蓋範圍處理會包括所有已載入以及可以找到其 *.pdb* 檔案的組件。 程式碼涵蓋範圍不包含與 **Exclude** 清單中子句相符的項目。 **Include** 是在 **Exclude** 之前處理。
+下表顯示可比對元件和成員以在程式碼涵蓋範圍中包含或排除的各種方式。
+
+| XML 元素 | 符合專案 |
+| - | - |
+| ModulePath | 符合元件名稱或檔案路徑所指定的元件。 |
+| CompanyName | 符合**Company**屬性的元件。 |
+| 公開金鑰 | 依據公開金鑰標記比對已簽署的元件。 |
+| 原始程式檔 | 依據專案定義所在之來源檔案的路徑名稱比對元素。 |
+| 屬性 | 符合具有指定之屬性的元素。 指定屬性的完整名稱，例如 `<Attribute>^System\.Diagnostics\.DebuggerHiddenAttribute$</Attribute>`。<br/><br/>如果您排除 <xref:System.Runtime.CompilerServices.CompilerGeneratedAttribute> 屬性，則會從程式碼涵蓋範圍分析中排除使用語言功能 (例如 `async`、`await`、`yield return`) 和自動實作屬性的程式碼。 若要排除真正產生的程式碼，只要排除 <xref:System.CodeDom.Compiler.GeneratedCodeAttribute> 屬性即可。 |
+| 功能 | 依照完整限定名稱（包括參數清單）來比對程式、函式或方法。 您也可以使用[正則運算式](#regular-expressions)來比對部分的名稱。<br/><br/>例如：<br/><br/>`Fabrikam.Math.LocalMath.SquareRoot(double);` (C#)<br/><br/>`Fabrikam::Math::LocalMath::SquareRoot(double)`(C++) |
 
 ### <a name="regular-expressions"></a>規則運算式
 
-包含和排除節點使用與萬用字元不同的規則運算式。 如需詳細資訊，請參閱[在 Visual Studio 中使用規則運算式](../ide/using-regular-expressions-in-visual-studio.md)。 一些範例如下：
+包含和排除節點使用與萬用字元不同的規則運算式。 所有相符項目皆不區分大小寫。 一些範例如下：
 
 - **.\*** 會比對任何字元的字串
 
@@ -119,9 +130,7 @@ ms.locfileid: "71118683"
 
 - **$** 會比對字串的結尾
 
-所有相符項目皆不區分大小寫。
-
-例如：
+下列 XML 顯示如何使用正則運算式來包含和排除特定元件：
 
 ```xml
 <ModulePaths>
@@ -138,48 +147,27 @@ ms.locfileid: "71118683"
 </ModulePaths>
 ```
 
+下列 XML 顯示如何使用正則運算式來包含和排除特定的函式：
+
+```xml
+<Functions>
+  <Include>
+    <!-- Include methods in the Fabrikam namespace: -->
+    <Function>^Fabrikam\..*</Function>
+    <!-- Include all methods named EqualTo: -->
+    <Function>.*\.EqualTo\(.*</Function>
+  </Include>
+  <Exclude>
+    <!-- Exclude methods in a class or namespace named UnitTest: -->
+    <Function>.*\.UnitTest\..*</Function>
+  </Exclude>
+</Functions>
+```
+
 > [!WARNING]
 > 如果規則運算式出現錯誤 (例如未逸出或不成對的括弧)，則不會執行程式碼涵蓋範圍分析。
 
-### <a name="other-ways-to-include-or-exclude-elements"></a>包含或排除項目的其他方法
-
-- **ModulePath** - 比對組件檔案路徑所指定的組件。
-
-- **CompanyName** - 會依 **Company** 屬性比對組件。
-
-- **PublicKeyToken** - 會依公開金鑰權杖比對已簽署的組件。
-
-- **Source** - 依原始檔案路徑名稱的定義方式比對項目。
-
-- **Attribute** - 比對附加特定屬性的項目。 指定屬性的完整名稱，例如 `<Attribute>^System\.Diagnostics\.DebuggerHiddenAttribute$</Attribute>`。
-
-  > [!TIP]
-  > 如果您排除 <xref:System.Runtime.CompilerServices.CompilerGeneratedAttribute> 屬性，則會從程式碼涵蓋範圍分析中排除使用語言功能 (例如 `async`、`await`、`yield return`) 和自動實作屬性的程式碼。 若要排除真正產生的程式碼，只要排除 <xref:System.CodeDom.Compiler.GeneratedCodeAttribute> 屬性即可。
-
-- **Function** - 依完整名稱比對程序、函式或方法。 若要比對函式名稱，規則運算式必須符合函式的完整名稱，包括命名空間、類別名稱、方法名稱和參數清單。 例如：
-
-   ```csharp
-   Fabrikam.Math.LocalMath.SquareRoot(double);
-   ```
-
-   ```cpp
-   Fabrikam::Math::LocalMath::SquareRoot(double)
-   ```
-
-   ```xml
-   <Functions>
-     <Include>
-       <!-- Include methods in the Fabrikam namespace: -->
-       <Function>^Fabrikam\..*</Function>
-       <!-- Include all methods named EqualTo: -->
-       <Function>.*\.EqualTo\(.*</Function>
-     </Include>
-     <Exclude>
-       <!-- Exclude methods in a class or namespace named UnitTest: -->
-       <Function>.*\.UnitTest\..*</Function>
-     </Exclude>
-   </Functions>
-   ```
+如需正則運算式的詳細資訊，請參閱[在 Visual Studio 中使用正則運算式](../ide/using-regular-expressions-in-visual-studio.md)。
 
 ## <a name="sample-runsettings-file"></a>範例 .runsettings 檔案
 

@@ -1,21 +1,21 @@
 ---
-title: Visual Studio + GitHub 搭售方案 | Microsoft Docs
+title: Visual Studio + GitHub 供應專案 |Microsoft Docs
 author: evanwindom
 ms.author: lank
 manager: lank
 ms.date: 07/19/2019
 ms.topic: conceptual
-description: 了解新的 Visual Studio + GitHub 搭售方案
-ms.openlocfilehash: 1d7b55a32c796747d50fac8dae14d6af2f847c46
-ms.sourcegitcommit: 485881e6ba872c7b28a7b17ceaede845e5bea4fe
-ms.translationtype: HT
+description: 瞭解新的 Visual Studio + GitHub 供應專案
+ms.openlocfilehash: 6c34ecc37285166135584a98453a1e92393073ab
+ms.sourcegitcommit: a2df993dc5e11c5131dbfcba686f0028a589068f
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68377643"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71150085"
 ---
 # <a name="introducing-visual-studio-subscriptions-with-github-enterprise"></a>含 GitHub Enterprise 的 Visual Studio 訂用帳戶簡介  
 
-與 Microsoft 之間簽有 Enterprise 合約 (EA) 的客戶即符合新訂用帳戶搭售方案的購買資格，這個方案結合了 Visual Studio 標準訂用帳戶與 GitHub Enterprise。 Visual Studio 訂閱者若想取得 GitHub Enterprise，這是個既簡單又經濟實惠的方法。 
+具有 Microsoft Enterprise 合約（EA）的客戶有資格購買新的訂用帳戶供應專案，以結合 Visual Studio 標準訂閱和 GitHub Enterprise。 Visual Studio 訂閱者若想取得 GitHub Enterprise，這是個既簡單又經濟實惠的方法。 
 
 - 利用 Visual Studio 與 GitHub 安全地為您的 IDE 與工作流程帶來開放原始碼、社群及最佳做法，以實現大規模創新。
 - 使用開發人員適用的頂尖開發工具與服務，搭配一組最全方位的資源，來建立、部署及管理出色的應用程式。 
@@ -28,7 +28,7 @@ ms.locfileid: "68377643"
 - 含 GitHub Enterprise 的 Visual Studio Enterprise
 - 含 GitHub Enterprise 的 Visual Studio Professional
 
-如果您的組織有尚未約滿的 EA，可以購買「升級」SKU，將 GitHub Enterprise 新增到您現有的 Visual Studio Enterprise 或 Visual Studio Professional 訂用帳戶。  當您的合約續約時，您就可以購買搭售方案。
+如果您的組織有尚未約滿的 EA，可以購買「升級」SKU，將 GitHub Enterprise 新增到您現有的 Visual Studio Enterprise 或 Visual Studio Professional 訂用帳戶。 然後，當您的合約續約時，您就可以購買供應專案。
 
 Visual Studio Enterprise、Visual Studio Professional 與 GitHub Enterprise 的現有 SKU 也會各自繼續開放使用。 
 
@@ -40,7 +40,7 @@ Visual Studio + GitHub Enterprise 訂用帳戶分成兩部份指派：
 1. Visual Studio 訂用帳戶 (Enterprise 或 Professional)
 2. GitHub Enterprise 訂用帳戶
 
-當您的組織購買訂用帳戶時，系統管理員會負責指派。  Visual Studio 訂用帳戶與 GitHub Enterprise 訂用帳戶會分開指派。  
+當您的組織購買訂用帳戶時，系統管理員會負責指派。 Visual Studio 訂用帳戶與 GitHub Enterprise 訂用帳戶會分開指派。  
 
 若您獲指派 Visual Studio + GitHub 訂用帳戶，會收到一封電子郵件，告知您 Visual Studio 訂用帳戶系統管理員指派了訂用帳戶給您。  屆時，您就可在 https://my.visualstudio.com/subscriptions 中看到該訂用帳戶。  
 
@@ -50,7 +50,7 @@ Visual Studio + GitHub Enterprise 訂用帳戶分成兩部份指派：
 
 若您剛接觸 GitHub，以下這些資源可能會對您有幫助：
 
-| 主體                                  | GitHub 說明主題                                     |
+| 主旨                                  | GitHub 說明主題                                     |
 |------------------------------------------|-------------------------------------------------------|
 | 一般問題/資訊          | [GitHub 說明](https://help.github.com/en)             |
 | GitHub 是什麼？  如何深入了解？  | [About GitHub](https://help.github.com/en/categories/about-github) (關於 GitHub)                                       |
@@ -65,7 +65,7 @@ Visual Studio + GitHub Enterprise 訂用帳戶分成兩部份指派：
 答：設定 GitHub 訂用帳戶的過程可能需要一段時間。  若您已等待多時，而尚未收到任何消息，建議您與 GitHub 系統管理員連絡。  這可能是因為您的系統管理員仍在處理指派，或 決定不指派 GitHub 訂用帳戶給您。 
 
 ### <a name="q--how-do-i-reach-my-github-administrator"></a>問：如何與 GitHub 系統管理員連絡？
-答：若您使用的是 GitHub Enterprise Server，可以按一下位於用戶端底部的 [支援]  連結，與您的系統管理員聯繫。
+答：若您使用的是 GitHub Enterprise Server，可以按一下位於用戶端底部的 [支援] 連結，與您的系統管理員聯繫。
 
 ### <a name="q-do-i-get-the-full-visual-studio-subscription-professional-or-enterprise-or-do-i-just-get-the-ide-with-this-offering"></a>問：我會從這個供應項目得到完整的 Visual Studio 訂用帳戶 (Professional 或 Enterprise)，還是只會得到 IDE？
 答：您會連同 GitHub Enterprise 收到完整的 Visual Studio 訂用帳戶。  您可獲得這些訂用帳戶中包含的所有權益，例如軟體下載、雲端服務、技術支援及合作夥伴權益，就如同單獨購買訂用帳戶。
