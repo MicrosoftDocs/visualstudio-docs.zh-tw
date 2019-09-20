@@ -660,12 +660,12 @@
       href: test/improve-code-quality.md
     - name: 測量效能 >>
       displayName: Profiling
-      href: profiling/index.md
+      href: profiling/index.yml
     - name: 分析程式碼品質 >>
       displayName: Code analysis FxCop Analyzers
       href: code-quality/index.md
     - name: 部署 >>
-      href: deployment/index.md
+      href: deployment/index.yml
     - name: 延伸 Visual Studio >>
       displayName: Visual Studio SDK
       href: extensibility/visual-studio-sdk.md
