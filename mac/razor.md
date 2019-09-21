@@ -6,37 +6,34 @@ ms.author: sayedha
 ms.date: 05/03/2018
 ms.technology: vs-ide-general
 ms.assetid: F898CB6E-05ED-44CD-8DB6-427B2592CCC6
-ms.openlocfilehash: 964b949d20d63a4564615fef0e719b85ae41762d
-ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
+ms.openlocfilehash: 791182255448db01a1c43796da72bedeec9f2f96
+ms.sourcegitcommit: 9a227faafdd0bad6f017ace607dc61eb56b32d72
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71128374"
+ms.lasthandoff: 09/21/2019
+ms.locfileid: "71175444"
 ---
 # <a name="create-razor-web-apps"></a>建立 Razor web 應用程式
 
 本指南提供建立您的第一個 Razor web 應用程式的簡介。 如需更深入的指引，請參閱[ASP.NET Core 中的 Razor Pages 簡介](https://docs.microsoft.com/aspnet/core/razor-pages/index)。
 
-Visual Studio for Mac 提供對 Razor 編輯的支援，包含 *.cshtml* 檔案中的 IntelliSense 和語法醒目提示。
+Visual Studio for Mac 提供對 Razor 編輯的支援，包含 *.cshtml* 檔案中的 IntelliSense 和語法醒目提示。 Mac 8.3 + Visual Studio 2019 的新功能是在 Razor 檔案中具有內容感知 IntelliSense 的能力，因此您會收到符合您目前在檔中編輯之語言的 IntelliSense。
 
-![Visual Studio for Mac 中的 Razor 編輯](media/razor-editor.png)
+![Visual Studio for Mac 中的 Razor 編輯](media/razor-2019.png)
 
 ## <a name="creating-a-new-razor-project"></a>建立新的 Razor 專案
 
 1. 在 [歡迎使用] 畫面上，選取 [**新增**] 以建立新的專案：
 
-     ![Visual Studio for Mac [新增] 對話方塊](media/razor-new.png)
-
+   ![Visual Studio for Mac [新增] 對話方塊](media/razor-new.png)
 1. 在 [**新增專案**] 對話方塊中，移至 [ **.net Core**  > **應用** > **程式 Web 應用程式**] 並選取 **[下一步]** ：
 
-     ![Razor 專案範本](media/razor-new-project1.png)
-
+   ![Razor 專案範本](media/razor-new-project1.png)
 1. 選取您的 .NET Core 目標 framework （建議為2.2 版或更新版本），然後選取 **[下一步]** 。 選擇專案的名稱，並在必要時新增 Git 支援。 選取 [**建立**] 以建立專案。
 
-     ![Razor 專案名稱](media/razor-new-project2.png)
+   ![Razor 專案名稱](media/razor-new-project2.png)
 
    Visual Studio for Mac 會在 [程式碼配置] 視窗中開啟您的專案。
-
 1. 使用**Command + Option + F5**執行專案，而不進行任何偵錯工具。
 
    Visual Studio 啟動[Kestrel](https://docs.microsoft.com/aspnet/core/fundamentals/servers/kestrel)，將瀏覽器開啟`https://localhost:5001`至，並顯示您的第一個 Razor web 應用程式。
