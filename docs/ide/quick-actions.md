@@ -10,12 +10,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 1a08e54025ac0826b88a3d3fcee299beef245d13
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 71ec5cf14f4cd336b8f92c15b4f0859c7a613354
+ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62811977"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71186820"
 ---
 # <a name="quick-actions"></a>快速動作
 
@@ -25,7 +25,17 @@ ms.locfileid: "62811977"
 
 - 針對[程式碼分析器](../code-quality/roslyn-analyzers-overview.md)規則的違規情況套用程式碼修正
 
+::: moniker range=">=vs-2019"
+
+- [隱藏](../code-quality/use-roslyn-analyzers.md#suppress-violations)程式碼分析器規則違規或[設定](../code-quality/use-roslyn-analyzers.md#automatically-configure-rule-severity)其嚴重性
+
+::: moniker-end
+
+::: moniker range="vs-2017"
+
 - [隱藏](../code-quality/use-roslyn-analyzers.md#suppress-violations)程式碼分析器規則的違規情況
+
+::: moniker-end
 
 - 套用重構作業 (例如，[內嵌暫存變數](../ide/reference/inline-temporary-variable.md))
 
@@ -34,7 +44,7 @@ ms.locfileid: "62811977"
 > [!NOTE]
 > 本主題適用於 Windows 上的 Visual Studio。 針對 Visual Studio for Mac，請參閱[重構 (Visual Studio for Mac)](/visualstudio/mac/refactoring)。
 
-快速動作的套用方式包括使用燈泡 ![燈泡圖示](media/light-bulb-icon.png) 或螺絲起子 ![螺絲起子圖示](media/screwdriver-icon.png) 圖示，以及按 **Ctrl**+**.** 當游標位於可使用動作的程式碼行上時。 如果有紅色波浪線指出錯誤，而且 Visual Studio 有適用於該錯誤的修正，您將會看到錯誤燈泡 ![錯誤燈泡圖示](media/error-light-bulb-icon.png)。
+快速動作的套用方式包括使用燈泡 ![燈泡圖示](media/light-bulb-icon.png) 或螺絲起子 ![螺絲起子圖示](media/screwdriver-icon.png) 圖示，以及按 **Ctrl**+ **.** 當游標位於可使用動作的程式碼行上時。 如果有紅色波浪線指出錯誤，而且 Visual Studio 有適用於該錯誤的修正，您將會看到錯誤燈泡 ![錯誤燈泡圖示](media/error-light-bulb-icon.png)。
 
 例如，協力廠商可以針對任何語言，在 SDK 當中提供自訂診斷和建議，而 Visual Studio 燈泡會依據那些規則來顯示。
 
@@ -62,6 +72,6 @@ ms.locfileid: "62811977"
 
 - [Visual Studio 中的程式碼產生](../ide/code-generation-in-visual-studio.md)
 - [常用的快速動作](../ide/common-quick-actions.md)
-- [程式碼樣式及快速動作](../ide/code-styles-and-quick-actions.md)
+- [程式碼樣式及快速動作](../ide/code-styles-and-code-cleanup.md)
 - [撰寫和重構程式碼 (C++)](/cpp/ide/writing-and-refactoring-code-cpp)
 - [重構 (Visual Studio for Mac)](/visualstudio/mac/refactoring)

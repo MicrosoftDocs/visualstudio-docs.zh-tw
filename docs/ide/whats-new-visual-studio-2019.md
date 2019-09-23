@@ -2,7 +2,7 @@
 title: Visual Studio 2019 的新功能
 titleSuffix: ''
 description: 了解 Visual Studio 2019 中的新功能。
-ms.date: 07/23/2019
+ms.date: 09/23/2019
 helpviewer_keywords:
 - Visual Studio, what's new
 - what's new [Visual Studio]
@@ -15,16 +15,16 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c9526a0cbf33278bbc3cab8120bb20ab0f5377a
-ms.sourcegitcommit: 9c07ae6fb18204ea080c8248994a683fa12e5c82
+ms.openlocfilehash: c2caed210edbed5f17d74ee78a55612aa0afa4cb
+ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "70293723"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71186471"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Visual Studio 2019 的新功能
 
-已針對 [16.2 版](/visualstudio/releases/2019/release-notes/)更新
+**已針對[16.3 版本](/visualstudio/releases/2019/release-notes/)更新**
 
 >[!div class="button"]
 >[下載 Visual Studio 2019](https://visualstudio.microsoft.com/downloads)
