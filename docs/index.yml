@@ -10,12 +10,12 @@ metadata:
   monikerRange: '>=vs-2017'
   f1_keywords:
   - MSDNSTART
-  ms.openlocfilehash: f8d8ed358779471d68a460ae923df5f9d316c2b0
-  ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
+  ms.openlocfilehash: a85cf7898a13482cc19bfc338b7533c2b8650a04
+  ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
   ms.translationtype: HT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 09/19/2019
-  ms.locfileid: "71128265"
+  ms.lasthandoff: 09/24/2019
+  ms.locfileid: "71211225"
 highlightedContent:
   items:
   - title: 設定與安裝
@@ -132,7 +132,7 @@ additionalContent:
       url: ide/compiling-and-building-in-visual-studio.md
     - title: 偵錯
       summary: 調查及修正程式碼中的 Bug。
-      url: debugger/index.md
+      url: debugger/index.yml
     - title: 測試
       summary: 對專案執行測試。
       url: test/improve-code-quality.md

@@ -654,7 +654,7 @@
         - name: 逐步解說：建立多電腦建置環境
           href: ide/walkthrough-creating-a-multiple-computer-build-environment.md
     - name: 偵錯 >>
-      href: debugger/index.md
+      href: debugger/index.yml
     - name: 測試 >>
       displayName: Unit testing
       href: test/improve-code-quality.md
