@@ -1,6 +1,6 @@
 - name: 部署文件
-  href: index.md
-- name: 概觀
+  href: index.yml
+- name: 總覽
   items:
     - name: 部署概觀
       href: deploying-applications-services-and-components-resources.md
@@ -22,8 +22,8 @@
       items:
         - name: 使用發行工具部署 .NET Core 應用程式
           href: /dotnet/core/deploying/deploy-with-vs
-        - name: 為 Microsoft Store 封裝桌面應用程式 (傳統型橋接器)
-          href: /windows/uwp/porting/desktop-to-uwp-packaging-dot-net
+        - name: 為 Microsoft Store 封裝傳統型應用程式
+          href: /windows/msix/desktop/desktop-to-uwp-packaging-dot-net
         - name: 使用 ClickOnce 部署傳統型應用程式
           href: how-to-publish-a-clickonce-application-using-the-publish-wizard.md
         - name: 從命令列建置 ClickOnce 應用程式
@@ -38,14 +38,12 @@
           href: tutorial-import-publish-settings-azure.md
         - name: 使用 Git 將 ASP.NET Core 持續部署到 Azure
           href: /aspnet/core/publishing/azure-continuous-deployment
-        - name: 利用 Visual Studio Kubernetes 工具發行至 Kubernetes
-          href: ../containers/tutorial-kubernetes-tools.md?toc=/visualstudio/deployment/toc.json
     - name: C++
       items:
         - name: 部署 C/C++ 應用程式
           href: /cpp/ide/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project
-        - name: 為 Microsoft Store 封裝桌面應用程式 (傳統型橋接器)
-          href: /windows/uwp/porting/desktop-to-uwp-packaging-dot-net
+        - name: 為 Microsoft Store 封裝傳統型應用程式
+          href: /windows/msix/desktop/desktop-to-uwp-packaging-dot-net
         - name: 使用 ClickOnce 部署 C++/CLR 應用程式...
           href: /cpp/ide/clickonce-deployment-for-visual-cpp-applications
     - name: UWP
@@ -238,7 +236,7 @@
           href: how-to-create-a-localized-bootstrapper-package.md
         - name: 逐步解說：建立具有隱私權提示的自訂啟動載入器
           href: walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt.md
-        - name: 產品和套件結構描述參考
+        - name: 產品和封裝結構描述參考
           items:
             - name: 產品和套件結構描述參考的概觀
               href: product-and-package-schema-reference.md
