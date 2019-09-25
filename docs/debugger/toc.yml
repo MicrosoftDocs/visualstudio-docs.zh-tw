@@ -1,5 +1,5 @@
 - name: 偵錯工具文件
-  href: index.md
+  href: index.yml
 - name: 總覽
   items:
     - name: 什麼是偵錯？
@@ -450,7 +450,7 @@
               href: how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio.md
             - name: 預先擷取 Microsoft Store 應用程式的內容
               href: prefetch-content-for-windows-store-apps.md
-        - name: Managed 程式碼
+        - name: '受控程式碼 (C#、Visual Basic、F#)'
           items:
             - name: 對受控碼進行偵錯
               href: debugging-managed-code.md
@@ -494,7 +494,7 @@
                   href: how-to-display-wpf-trace-information.md
             - name: '對 F# 進行偵錯'
               href: debugging-f-hash.md
-        - name: 機器碼
+        - name: C/C++ 程式碼
           items:
             - name: 對機器碼進行偵錯
               href: debugging-native-code.md
@@ -582,7 +582,7 @@
                   href: com-debugging-tools.md
             - name: 對插入程式碼進行偵錯
               href: how-to-debug-injected-code.md
-        - name: 對 GPU 程式碼進行偵錯
+        - name: GPU 程式碼
           href: debugging-gpu-code.md
         - name: 圖形診斷
           href: graphics/toc.yml
@@ -632,6 +632,10 @@
                       href: error-the-web-server-could-not-find-the-requested-resource.md
                     - name: 未正確設定 Web 伺服器
                       href: error-the-web-server-is-not-configured-correctly.md
+        - name: Python
+          href: ../python/tutorial-working-with-python-in-visual-studio-step-04-debugging.md
+        - name: JavaScript 和 TypeScript
+          href: ../javascript/debug-nodejs.md
         - name: Web 應用程式
           items:
             - name: 對 Web 應用程式進行偵錯

@@ -1,0 +1,76 @@
+### YamlMime:Landing
+title: Visual Studio 偵錯工具文件
+summary: Visual Studio 偵錯工具協助您觀察程式的執行階段行為，並找出問題。
+metadata:
+  title: Visual Studio 偵錯
+  description: 了解如何使用 Visual Studio 針對應用程式與程式碼進行偵錯。
+  ms.topic: landing-page
+  author: mikejo5000
+  ms.author: mikejo
+  manager: jillfra
+  ms.date: 09/20/2019
+  ms.openlocfilehash: 2ce5c3c8c9baf6f513f7dca4b4072e02e461a62a
+  ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+  ms.translationtype: HT
+  ms.contentlocale: zh-TW
+  ms.lasthandoff: 09/24/2019
+  ms.locfileid: "71213594"
+landingContent:
+- title: 關於偵錯
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: 什麼是偵錯？
+      url: what-is-debugging.md
+    - text: 偵錯技術和工具
+      url: write-better-code-with-visual-studio.md
+    - text: 偵錯工具簡介
+      url: debugger-feature-tour.md
+- title: 開始使用
+  linkLists:
+  - linkListType: tutorial
+    links:
+    - text: 適合完全初學者的偵錯
+      url: debugging-absolute-beginners.md
+    - text: 了解如何對 C# 偵錯
+      url: /visualstudio/get-started/csharp/tutorial-debugger?toc=/visualstudio/debugger/toc.json
+    - text: 了解如何對 C++ 偵錯
+      url: getting-started-with-the-debugger-cpp.md
+    - text: 了解如何對 Visual Basic 偵錯
+      url: /visualstudio/get-started/visual-basic/tutorial-debugger?toc=/visualstudio/debugger/toc.json
+    - text: 在偵錯工具中執行 Python 程式碼 >>
+      url: ../python/tutorial-working-with-python-in-visual-studio-step-04-debugging.md
+- title: 暫停及瀏覽程式碼
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: 使用偵錯工具巡覽程式碼
+      url: navigating-through-code-with-the-debugger.md
+    - text: 使用中斷點
+      url: using-breakpoints.md
+    - text: 編輯程式碼並繼續偵錯
+      url: edit-and-continue.md
+- title: 檢查資料
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: 檢查變數
+      url: autos-and-locals-windows.md
+    - text: 在變數上設定監看式
+      url: watch-and-quickwatch-windows.md
+    - text: 檢視呼叫堆疊
+      url: how-to-use-the-call-stack-window.md
+- title: 進一步利用偵錯工具
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: 偵錯工具祕訣與技巧
+      url: debugger-tips-and-tricks.md
+    - text: 撰寫 XAML 程式碼及針對其執行進行偵錯
+      url: xaml-hot-reload.md
+    - text: 對即時 Azure 應用程式進行偵錯
+      url: debug-live-azure-applications.md
+    - text: 告訴偵錯工具要顯示的項目
+      url: using-the-debuggerdisplay-attribute.md
+    - text: 遠端偵錯
+      url: remote-debugging.md
