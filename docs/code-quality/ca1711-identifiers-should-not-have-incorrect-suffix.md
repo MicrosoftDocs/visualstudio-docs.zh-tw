@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8b047669b962d5e38cd37132f84ae653ba30f9dc
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 2e04487a9bfcd8ef9a0e9a15bc76a93b221f9ce1
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69547302"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71234134"
 ---
 # <a name="ca1711-identifiers-should-not-have-incorrect-suffix"></a>CA1711:識別項名稱不應該使用不正確的後置字元
 
@@ -27,25 +27,25 @@ ms.locfileid: "69547302"
 |-|-|
 |TypeName|IdentifiersShouldNotHaveIncorrectSuffix|
 |CheckId|CA1711|
-|Category|Microsoft.Naming|
-|中斷變更|中斷|
+|分類|Microsoft.Naming|
+|重大變更|中斷|
 
 ## <a name="cause"></a>原因
 
 識別碼的尾碼不正確。
 
-根據預設, 此規則只會查看外部可見的識別碼, 但這是[可](#configurability)設定的。
+根據預設，此規則只會查看外部可見的識別碼，但這是[可](#configurability)設定的。
 
 ## <a name="rule-description"></a>規則描述
 
-依照慣例, 只有擴充特定基底類型或會執行特定介面的類型名稱, 或是從這些類型衍生的類型, 才應該以特定的保留尾碼做為結尾。 其他類型名稱不得使用這些保留的後置字元。
+依照慣例，只有擴充特定基底類型或會執行特定介面的類型名稱，或是從這些類型衍生的類型，才應該以特定的保留尾碼做為結尾。 其他類型名稱不得使用這些保留的後置字元。
 
-下表列出保留尾碼, 以及與它們相關聯的基底類型和介面。
+下表列出保留尾碼，以及與它們相關聯的基底類型和介面。
 
 |尾碼|基底類型/介面|
 |------------|--------------------------|
 |屬性|<xref:System.Attribute?displayProperty=fullName>|
-|Collection|<xref:System.Collections.ICollection?displayProperty=fullName><br /><br /> <xref:System.Collections.IEnumerable?displayProperty=fullName><br /><br /> <xref:System.Collections.Queue?displayProperty=fullName><br /><br /> <xref:System.Collections.Stack?displayProperty=fullName><br /><br /> <xref:System.Collections.Generic.ICollection%601?displayProperty=fullName><br /><br /> <xref:System.Data.DataSet?displayProperty=fullName><br /><br /> <xref:System.Data.DataTable?displayProperty=fullName>|
+|集合|<xref:System.Collections.ICollection?displayProperty=fullName><br /><br /> <xref:System.Collections.IEnumerable?displayProperty=fullName><br /><br /> <xref:System.Collections.Queue?displayProperty=fullName><br /><br /> <xref:System.Collections.Stack?displayProperty=fullName><br /><br /> <xref:System.Collections.Generic.ICollection%601?displayProperty=fullName><br /><br /> <xref:System.Data.DataSet?displayProperty=fullName><br /><br /> <xref:System.Data.DataTable?displayProperty=fullName>|
 |字典|<xref:System.Collections.IDictionary?displayProperty=fullName><br /><br /> <xref:System.Collections.Generic.IDictionary%602?displayProperty=fullName>|
 |EventArgs|<xref:System.EventArgs?displayProperty=fullName>|
 |EventHandler|事件處理常式委派|
@@ -55,17 +55,17 @@ ms.locfileid: "69547302"
 |堆疊|<xref:System.Collections.Stack?displayProperty=fullName>|
 |資料流|<xref:System.IO.Stream?displayProperty=fullName>|
 
-此外,**不**應使用下列尾碼:
+此外，**不**應使用下列尾碼：
 
 - `Delegate`
 
 - `Enum`
 
-- `Impl`(請`Core`改用)
+- `Impl`（請`Core`改用）
 
-- `Ex`或類似的尾碼, 以與相同類型的舊版進行區別
+- `Ex`或類似的尾碼，以與相同類型的舊版進行區別
 
-命名慣例提供以通用語言執行時間為目標之程式庫的常見外觀。 這可減少新軟體程式庫所需的學習曲線, 並提高客戶對於開發 managed 程式碼專業知識的人員所開發的信心。
+命名慣例提供以通用語言執行時間為目標之程式庫的常見外觀。 這可減少新軟體程式庫所需的學習曲線，並提高客戶對於開發 managed 程式碼專業知識的人員所開發的信心。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
 
@@ -77,13 +77,13 @@ ms.locfileid: "69547302"
 
 ## <a name="configurability"></a>可設定性
 
-如果您是從[FxCop 分析器](install-fxcop-analyzers.md)執行此規則 (而不是使用舊版分析), 您可以根據其存取範圍, 設定程式碼基底中的哪些部分來執行此規則。 例如, 若要指定規則只針對非公用 API 介面執行, 請將下列機碼值組新增至專案中的 editorconfig 檔案:
+如果您是從[FxCop 分析器](install-fxcop-analyzers.md)執行此規則（而不是使用舊版分析），您可以根據其存取範圍，設定程式碼基底中的哪些部分來執行此規則。 例如，若要指定規則只針對非公用 API 介面執行，請將下列機碼值組新增至專案中的 editorconfig 檔案：
 
 ```ini
 dotnet_code_quality.ca1711.api_surface = private, internal
 ```
 
-您可以只針對此規則、所有規則或此類別中的所有規則 (命名) 來設定此選項。 如需詳細資訊, 請參閱[設定 FxCop 分析器](configure-fxcop-analyzers.md)。
+您可以只針對此規則、所有規則或此類別中的所有規則（命名）來設定此選項。 如需詳細資訊，請參閱[設定 FxCop 分析器](configure-fxcop-analyzers.md)。
 
 ## <a name="related-rules"></a>相關規則
 

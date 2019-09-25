@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 8422427997db291aa24bc8a8bacfdc59abe35998
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 5cb5631da1bcf455874d459a69216b45062a5754
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68923070"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71236225"
 ---
 # <a name="ca1019-define-accessors-for-attribute-arguments"></a>CA1019:定義屬性引數的存取子
 
@@ -31,40 +31,40 @@ ms.locfileid: "68923070"
 |TypeName|DefineAccessorsForAttributeArguments|
 |CheckId|CA1019|
 |分類|Microsoft.Design|
-|中斷變更|不中斷|
+|重大變更|不中斷|
 
 ## <a name="cause"></a>原因
-在它的函式中, 屬性會定義沒有對應屬性的引數。
+在它的函式中，屬性會定義沒有對應屬性的引數。
 
 ## <a name="rule-description"></a>規則描述
 屬性可以定義必須在將屬性套用至目標時指定的強制引數。 這些引數也稱為位置引數，因為它們會當做位置參數提供給屬性建構函式。 對於每個強制引數而言，屬性 (Attribute) 還須提供對應的唯讀屬性 (Property)，才可以在執行時期擷取引數值。 此規則會檢查每個函式參數是否已定義對應的屬性。
 
 屬性也可以定義選擇性引數，也稱為具名引數。 這些引數會依照名稱提供給屬性 (Attribute) 建構函式，且必須有對應的讀取/寫入屬性 (Property)。
 
-對於必要和選擇性引數, 對應的屬性和函式參數應使用相同的名稱, 但大小寫不同。 屬性使用 Pascal 大小寫, 而參數則使用 camel 大小寫。
+對於必要和選擇性引數，對應的屬性和函式參數應使用相同的名稱，但大小寫不同。 屬性使用 Pascal 大小寫，而參數則使用 camel 大小寫。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
-若要修正此規則的違規情形, 請為每個不具有一個的函式參數新增唯讀屬性。
+若要修正此規則的違規情形，請為每個不具有一個的函式參數新增唯讀屬性。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
-如果您不想要讓強制引數的值可供使用, 請隱藏此規則的警告。
+如果您不想要讓強制引數的值可供使用，請隱藏此規則的警告。
 
 ## <a name="custom-attributes-example"></a>自訂屬性範例
 
-下列範例顯示兩個定義強制 (位置) 參數的屬性。 屬性的第一個執行定義不正確。 第二個執行是正確的。
+下列範例顯示兩個定義強制（位置）參數的屬性。 屬性的第一個執行定義不正確。 第二個執行是正確的。
 
 [!code-csharp[FxCop.Design.AttributeAccessors#1](../code-quality/codesnippet/CSharp/ca1019-define-accessors-for-attribute-arguments_1.cs)]
 [!code-vb[FxCop.Design.AttributeAccessors#1](../code-quality/codesnippet/VisualBasic/ca1019-define-accessors-for-attribute-arguments_1.vb)]
 
 ## <a name="positional-and-named-arguments"></a>位置和具名引數
 
-位置和具名引數會讓您的程式庫取用者清楚瞭解屬性的引數是必要的, 而哪些引數是選擇性的。
+位置和具名引數會讓您的程式庫取用者清楚瞭解屬性的引數是必要的，而哪些引數是選擇性的。
 
-下列範例顯示具有位置和具名引數的屬性的執行:
+下列範例顯示具有位置和具名引數的屬性的執行：
 
 [!code-csharp[FxCop.Design.AttributeAccessorsNamed#1](../code-quality/codesnippet/CSharp/ca1019-define-accessors-for-attribute-arguments_2.cs)]
 
-下列範例顯示如何將自訂屬性套用至兩個屬性:
+下列範例顯示如何將自訂屬性套用至兩個屬性：
 
 [!code-csharp[FxCop.Design.AttributeAccessorsNamedApplied#1](../code-quality/codesnippet/CSharp/ca1019-define-accessors-for-attribute-arguments_3.cs)]
 

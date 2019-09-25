@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d972198898dd1a4cafa5280c129db38bb3e4982
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 704972127130cc7be991213249ff41212fa40676
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68921292"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71233274"
 ---
 # <a name="ca1903-use-only-api-from-targeted-framework"></a>CA1903:只使用來自目標架構的 API
 
@@ -28,31 +28,31 @@ ms.locfileid: "68921292"
 |TypeName|UseOnlyApiFromTargetedFramework|
 |CheckId|CA1903|
 |分類|Microsoft.Portability|
-|中斷變更|中斷-針對外部可見成員或類型的簽章引發。<br /><br /> 非中斷-在方法的主體中引發時。|
+|重大變更|中斷-針對外部可見成員或類型的簽章引發。<br /><br /> 非中斷-在方法的主體中引發時。|
 
 ## <a name="cause"></a>原因
-成員或類型使用的成員或類型, 不是在專案的目標架構所包含的 Service Pack 中。
+成員或類型使用的成員或類型，不是在專案的目標架構所包含的 Service Pack 中。
 
 ## <a name="rule-description"></a>規則描述
-新成員和類型包含在 .NET Framework 2.0 Service Pack 1 和 2, .NET Framework 3.0 Service Pack 1 和 2, 以及 .NET Framework 3.5 Service Pack 1。 以 .NET Framework 的主要版本為目標的專案, 可能會不小心地對這些新的 Api 採取相依性。 為避免此相依性, 此規則會在任何新成員和類型的使用方式下引發, 而此專案的目標架構預設並不包含該物件。
+新成員和類型包含在 .NET Framework 2.0 Service Pack 1 和2，.NET Framework 3.0 Service Pack 1 和2，以及 .NET Framework 3.5 Service Pack 1。 以 .NET Framework 的主要版本為目標的專案，可能會不小心地對這些新的 Api 採取相依性。 為避免此相依性，此規則會在任何新成員和類型的使用方式下引發，而此專案的目標架構預設並不包含該物件。
 
 **目標 Framework 和 Service Pack 相依性**
 
 |||
 |-|-|
 |當目標 framework 為|在中引進的成員使用方式時引發|
-|.NET Framework 2.0|.NET Framework 2.0 SP1, .NET Framework 2.0 SP2|
+|.NET Framework 2.0|.NET Framework 2.0 SP1，.NET Framework 2.0 SP2|
 |.NET Framework 3.0|.NET Framework 2.0 SP1、.NET Framework 2.0 SP2、.NET Framework 3.0 SP1、.NET Framework 3.0 SP2|
 |.NET Framework 3.5|.NET Framework 3.5 SP1|
 |.NET Framework 4|N/A|
 
-若要變更專案的目標 framework, 請[參閱如何:以 .NET 的一個版本為目標](../ide/how-to-target-a-version-of-the-dotnet-framework.md)。
+若要變更專案的目標 framework，請[參閱如何：以 .NET 的一個版本為目標](../ide/how-to-target-a-version-of-the-dotnet-framework.md)。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
-若要移除 Service Pack 的相依性, 請移除新成員或類型的所有使用方式。 如果這是有意的相依性, 請隱藏警告或關閉此規則。
+若要移除 Service Pack 的相依性，請移除新成員或類型的所有使用方式。 如果這是有意的相依性，請隱藏警告或關閉此規則。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
-如果這不是刻意依賴指定的 Service Pack, 請勿隱藏此規則的警告。 在此情況下, 您的應用程式可能無法在未安裝此 Service Pack 的系統上執行。 如果這是刻意的相依性, 請隱藏警告或關閉此規則。
+如果這不是刻意依賴指定的 Service Pack，請勿隱藏此規則的警告。 在此情況下，您的應用程式可能無法在未安裝此 Service Pack 的系統上執行。 如果這是刻意的相依性，請隱藏警告或關閉此規則。
 
 ## <a name="example"></a>範例
 下列範例顯示的類別會使用僅適用于 .NET 2.0 Service Pack 1 的 DateTimeOffset 類型。 這個範例需要在專案屬性的 [目標 Framework] 下拉式清單中選取 .NET Framework 2.0。
@@ -60,7 +60,7 @@ ms.locfileid: "68921292"
 [!code-csharp[FxCop.Portability.UseOnlyApiFromTargetedFramework#1](../code-quality/codesnippet/CSharp/ca1903-use-only-api-from-targeted-framework_1.cs)]
 
 ## <a name="example"></a>範例
-下列範例會以 DateTime 類型取代 DateTimeOffset 類型的用法, 藉以修正先前描述的違規。
+下列範例會以 DateTime 類型取代 DateTimeOffset 類型的用法，藉以修正先前描述的違規。
 
 [!code-csharp[FxCop.Portability.UseOnlyApiFromTargetedFramework2#1](../code-quality/codesnippet/CSharp/ca1903-use-only-api-from-targeted-framework_2.cs)]
 

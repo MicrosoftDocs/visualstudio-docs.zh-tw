@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c144db920bfa04055c81227e4cc2c230ed2f097d
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 92a7542499eceeccbd62ce327b386dc099b726b2
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68921334"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71233626"
 ---
 # <a name="ca1811-avoid-uncalled-private-code"></a>CA1811:避免使用未呼叫的私用程式碼
 
@@ -28,10 +28,10 @@ ms.locfileid: "68921334"
 |TypeName|AvoidUncalledPrivateCode|
 |CheckId|CA1811|
 |分類|Microsoft.Performance|
-|中斷變更|不中斷|
+|重大變更|不中斷|
 
 ## <a name="cause"></a>原因
-私用或內部 (元件層級) 成員在元件中沒有呼叫端, 不是由 common language runtime 叫用, 而且不是由委派叫用。 此規則不會檢查下列成員:
+私用或內部（元件層級）成員在元件中沒有呼叫端，不是由 common language runtime 叫用，而且不是由委派叫用。 此規則不會檢查下列成員：
 
 - 明確介面成員。
 
@@ -44,10 +44,10 @@ ms.locfileid: "68921334"
 - 覆寫的成員。
 
 ## <a name="rule-description"></a>規則描述
-如果目前未由規則邏輯識別的進入點出現, 此規則可以報告錯誤的陽性。 此外, 編譯器可能會發出 noncallable 程式碼到元件中。
+如果目前未由規則邏輯識別的進入點出現，此規則可以報告錯誤的陽性。 此外，編譯器可能會發出 noncallable 程式碼到元件中。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
-若要修正此規則的違規情形, 請移除 noncallable 程式碼或加入呼叫它的程式碼。
+若要修正此規則的違規情形，請移除 noncallable 程式碼或加入呼叫它的程式碼。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
 您可以放心地隱藏此規則的警告。

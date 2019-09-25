@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a43be698fd908737c96f9de3cf346b48e84f27fc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 30ee7364ba925eebb18d66fc8ede2b7983d46116
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62798782"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71211365"
 ---
 # <a name="make-code-work-in-visual-studio"></a>讓程式碼在 Visual Studio 中運作
 
@@ -98,7 +98,19 @@ Visual Studio 包含一組內建的 [.NET Compiler Platform 分析器](../code-q
 
 ![文字：No quick actions available here (沒有任何可用的快速動作)](../ide/media/vs_ide_gs_debug_light_bulb_no_options.png)
 
-有經驗之後，您可以快速地使用方向鍵和 **Ctrl**+**.** 找出輕鬆重構的機會，並清除您的程式碼！
+有經驗之後，您可以快速地使用方向鍵和 **Ctrl**+ **.** 找出輕鬆重構的機會，並清除您的程式碼！
+
+::: moniker range="vs-2019"
+
+## <a name="run-code-cleanup"></a>執行程式碼清理
+
+Visual Studio 會透過編輯器底部的 [程式**代碼清除**] 按鈕，提供[程式C#代碼檔案的隨選格式化](code-styles-and-code-cleanup.md#apply-code-styles)，包括程式碼樣式喜好設定。
+
+![Visual Studio 2019 中的 [程式碼清除] 按鈕](media/execute-code-cleanup.png)
+
+除了將檔案的格式設定為空格、縮排、et 等等，程式**代碼清理**也會套用一組您定義的程式碼樣式慣例。 系統會從 [EditorConfig 檔案](code-styles-and-code-cleanup.md#code-styles-in-editorconfig-files) (如果您針對專案有該檔案的話) 讀取您針對每個程式碼樣式的偏好設定，或是從 [選項] 對話方塊中的[程式碼樣式設定](code-styles-and-code-cleanup.md#code-styles-in-the-options-dialog-box)讀取那些偏好設定。
+
+::: moniker-end
 
 ## <a name="debug-your-running-code"></a>偵錯您執行的程式碼
 
@@ -106,7 +118,7 @@ Visual Studio 包含一組內建的 [.NET Compiler Platform 分析器](../code-q
 
 ![Visual Studio 自動變數和呼叫堆疊視窗](../ide/media/vs_ide_gs_debug_autos_and_call_stack.png)
 
-您可以按 **Shift**+**F5** 或按一下 [停止] 按鈕停止應用程式。 或者，您只需關閉應用程式的主視窗 (或命令列對話方塊)。
+您可以按 **Shift**+**F5** 或按一下 [停止] 按鈕停止應用程式。 或者，您可以直接關閉應用程式的主視窗（或命令列對話方塊）。
 
 如果您的程式碼完美地如預期運作，那麼恭喜您！ 不過，如果它停止回應或當機，或是提供給您一些奇怪的結果，那麼您需找出這些問題的來源，並修正 Bug。
 
@@ -157,5 +169,5 @@ Visual Studio 包含一組內建的 [.NET Compiler Platform 分析器](../code-q
 ## <a name="see-also"></a>另請參閱
 
 - [偵錯工具簡介](../debugger/debugger-feature-tour.md)
-- [深入了解使用偵錯工具](../debugger/index.md)
+- [深入了解使用偵錯工具](../debugger/index.yml)
 - [產生及修正程式碼](../ide/code-generation-in-visual-studio.md)

@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 287f906ab947f549748865899a5ced52e0c53562
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e922be19db0128f515b63157be32cec84d81313d
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62852753"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71211184"
 ---
 # <a name="debugger-settings-and-preparation"></a>偵錯設定及準備
 本章節說明與偵錯工具相關的屬性設定，以及使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 偵錯工具偵錯程式時所需的準備。 如果您是在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中使用專案範本建立程式，這些設定會正確設定在偵錯組態中。
@@ -31,19 +31,19 @@ ms.locfileid: "62852753"
  如需詳細資訊，請參閱[如何：設定偵錯和發行組態](../debugger/how-to-set-debug-and-release-configurations.md)。
 
 ## <a name="in-this-section"></a>本節內容
- [偵錯工具專案設定](../debugger/debugger-project-settings.md)說明如何指定偵錯工具設定、 如何設定偵錯和發行組態，以及如何管理符號和原始程式碼。 也會說明 C++、C#、F#、Visual Basic 偵錯組態和 Web 專案的適當專案設定。
+ [偵錯工具專案設定](../debugger/debugger-project-settings.md)說明如何指定偵錯工具設定、如何設定 debug 和 release configuration，以及如何管理符號和原始程式碼。 也會說明 C++、C#、F#、Visual Basic 偵錯組態和 Web 專案的適當專案設定。
 
- [偵錯 DLL 專案](../debugger/debugging-dll-projects.md)說明建議的專案設定進行偵錯 DLL 專案、 如何從 DLL 專案進行偵錯、 如何在混合模式中，偵錯和如何偵錯 managed 程式碼 Web 控制項程式庫。
+ [調試 DLL 專案](../debugger/debugging-dll-projects.md)描述偵錯工具 DLL 專案的建議專案設定、如何從 DLL 專案進行調試、如何在混合模式中進行調試，以及如何調試 managed 程式碼 Web 控制項程式庫。
 
- [主控台專案](../debugger/debugging-preparation-console-projects.md)提供有關如何設定主控台專案偵錯的指示。
+ [主控台專案](../debugger/debugging-preparation-console-projects.md)提供如何設定主控台專案以進行偵錯工具的指示。
 
- [如何：偵錯可執行檔不屬於 Visual Studio 方案](../debugger/how-to-debug-an-executable-not-part-of-a-visual-studio-solution.md)說明如何偵錯的可執行檔不會建立為 Visual Studio 專案的一部分。
+ [如何：不屬於 Visual Studio 方案](../debugger/how-to-debug-an-executable-not-part-of-a-visual-studio-solution.md)的可執行檔，說明如何在 Visual Studio 專案中，對不是建立的可執行檔進行偵錯工具。
 
- [偵錯 64 位元應用程式](../debugger/debug-64-bit-applications.md)描述如何偵錯 64 位元應用程式。
+ [Debug 64 位應用程式](../debugger/debug-64-bit-applications.md)說明如何 debug 64 位應用程式。
 
- [如何：指定.NET Framework 版本的偵錯](../debugger/how-to-specify-a-dotnet-framework-version-for-debugging.md)描述如何設定登錄機碼，指出偵錯工具要使用的版本。
+ [如何：指定調試](../debugger/how-to-specify-a-dotnet-framework-version-for-debugging.md)程式的 .NET Framework 版本說明如何設定登錄機碼，以向偵錯工具表示要使用的版本。
 
 ## <a name="see-also"></a>另請參閱
 - [偵錯工具安全性](../debugger/debugger-security.md)
-- [Visual Studio 偵錯](../debugger/index.md)
+- [Visual Studio 偵錯](../debugger/index.yml)
 - [偵錯工具簡介](../debugger/debugger-feature-tour.md)

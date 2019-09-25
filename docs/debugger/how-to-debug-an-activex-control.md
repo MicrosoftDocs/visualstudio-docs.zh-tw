@@ -1,5 +1,5 @@
 ---
-title: HOW TO：Debug an ActiveX Control |Microsoft Docs
+title: 作法：對 ActiveX 控制項進行偵錯工具 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c76167468d9eb6fbe93c3bef0c4ae8c15634fc5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c1d02cb4d581a7234ad2dd950fa51f46a5d128b2
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62894426"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71211091"
 ---
 # <a name="how-to-debug-an-activex-control"></a>HOW TO：對 ActiveX 控制項進行偵錯
 
@@ -42,7 +42,7 @@ ms.locfileid: "62894426"
 
 1. 在 [方案總管] 中選取專案。
 
-2. 從**檢視**功能表上，選擇**屬性頁**。
+2. 從 [ **View** ] 功能表選擇 [**屬性頁**]。
 
 3. 在 [專案屬性頁] 對話方塊中，開啟 [組態屬性] 資料夾，並選取 [偵錯]。
 
@@ -52,7 +52,7 @@ ms.locfileid: "62894426"
 
 6. 如果您指定 Internet Explorer 作為容器，而且您正使用 Active Desktop，請在 [命令引數] 方塊中鍵入 `/new`。
 
-7. 按一下 [確定] 。
+7. 按一下 [確定]。
 
      若您未在 [專案屬性頁] 對話方塊中指定容器，您也可以在開始偵錯時指定容器。 當您選取執行命令以開始偵錯時，將會出現[偵錯工作階段的可執行檔對話方塊](../debugger/executable-for-debugging-session-dialog-box.md)。 在對話方塊中指定容器的路徑名稱。
 
@@ -61,5 +61,5 @@ ms.locfileid: "62894426"
 - [ActiveX 控制項](/cpp/mfc/activex-controls)
 - [使用測試容器測試屬性和事件](/cpp/mfc/testing-properties-and-events-with-test-container)
 - [偵錯 COM 和 ActiveX](../debugger/com-and-activex-debugging.md)
-- [Visual Studio 偵錯](../debugger/index.md)
+- [Visual Studio 偵錯](../debugger/index.yml)
 - [偵錯工具簡介](../debugger/debugger-feature-tour.md)

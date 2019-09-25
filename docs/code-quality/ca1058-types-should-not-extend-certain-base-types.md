@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 38d92194a5aa2b46a0cb65a1525bc01d9de67b86
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: fa1ffbb393700647f12c455c8d1307a77548f2d1
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69547365"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71235486"
 ---
 # <a name="ca1058-types-should-not-extend-certain-base-types"></a>CA1058:類型不應該擴充特定基底類型
 
@@ -27,12 +27,12 @@ ms.locfileid: "69547365"
 |-|-|
 |TypeName|TypesShouldNotExtendCertainBaseTypes|
 |CheckId|CA1058|
-|Category|Microsoft.Design|
-|中斷變更|中斷|
+|分類|Microsoft.Design|
+|重大變更|中斷|
 
 ## <a name="cause"></a>原因
 
-類型會擴充下列其中一個基底類型:
+類型會擴充下列其中一個基底類型：
 
 - <xref:System.ApplicationException?displayProperty=fullName>
 - <xref:System.Xml.XmlDocument?displayProperty=fullName>
@@ -43,17 +43,17 @@ ms.locfileid: "69547365"
 - <xref:System.Collections.SortedList?displayProperty=fullName>
 - <xref:System.Collections.Stack?displayProperty=fullName>
 
-根據預設, 此規則只會查看外部可見的類型, 但這是[可](#configurability)設定的。
+根據預設，此規則只會查看外部可見的類型，但這是[可](#configurability)設定的。
 
 ## <a name="rule-description"></a>規則描述
 
 例外狀況應該衍生<xref:System.Exception?displayProperty=fullName>自或其<xref:System>命名空間中的其中一個子類別。
 
-<xref:System.Xml.XmlDocument>如果您想要建立基礎物件模型或資料來源的 XML 視圖, 請勿建立的子類別。
+<xref:System.Xml.XmlDocument>如果您想要建立基礎物件模型或資料來源的 XML 視圖，請勿建立的子類別。
 
 ### <a name="non-generic-collections"></a>非泛型集合
 
-盡可能使用和 (或) 延伸泛型集合。 請勿擴充程式碼中的非泛型集合, 除非您先前已寄出。
+盡可能使用和（或）延伸泛型集合。 請勿擴充程式碼中的非泛型集合，除非您先前已寄出。
 
 **不正確的使用方式範例**
 
@@ -81,18 +81,18 @@ public class MyReadOnlyCollection : ReadOnlyCollection<T>
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
 
-若要修正此規則的違規, 請從不同的基底類型或泛型集合衍生類型。
+若要修正此規則的違規，請從不同的基底類型或泛型集合衍生類型。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
 
-請勿隱藏此規則中有關<xref:System.ApplicationException>的違規警告。 您可以放心地隱藏此規則中有關<xref:System.Xml.XmlDocument>違規的警告。 如果先前已發行程式碼, 就可以放心地隱藏非泛型集合的相關警告。
+請勿隱藏此規則中有關<xref:System.ApplicationException>的違規警告。 您可以放心地隱藏此規則中有關<xref:System.Xml.XmlDocument>違規的警告。 如果先前已發行程式碼，就可以放心地隱藏非泛型集合的相關警告。
 
 ## <a name="configurability"></a>可設定性
 
-如果您是從[FxCop 分析器](install-fxcop-analyzers.md)執行此規則 (而不是使用舊版分析), 您可以根據其存取範圍, 設定程式碼基底中的哪些部分來執行此規則。 例如, 若要指定規則只針對非公用 API 介面執行, 請將下列機碼值組新增至專案中的 editorconfig 檔案:
+如果您是從[FxCop 分析器](install-fxcop-analyzers.md)執行此規則（而不是使用舊版分析），您可以根據其存取範圍，設定程式碼基底中的哪些部分來執行此規則。 例如，若要指定規則只針對非公用 API 介面執行，請將下列機碼值組新增至專案中的 editorconfig 檔案：
 
 ```ini
 dotnet_code_quality.ca1058.api_surface = private, internal
 ```
 
-您可以只針對此規則、所有規則或此類別中的所有規則 (設計) 設定此選項。 如需詳細資訊, 請參閱[設定 FxCop 分析器](configure-fxcop-analyzers.md)。
+您可以只針對此規則、所有規則或此類別中的所有規則（設計）設定此選項。 如需詳細資訊，請參閱[設定 FxCop 分析器](configure-fxcop-analyzers.md)。

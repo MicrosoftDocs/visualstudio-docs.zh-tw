@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ecc30f3fe16b283c0eb9cc1f369458bb1d7f952
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 3b5bd062ca37ae477f5ab7d52d56fd7e4b4fb71b
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68920817"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71232483"
 ---
 # <a name="ca2123-override-link-demands-should-be-identical-to-base"></a>CA2123:覆寫連結要求應該與基底相同
 
@@ -28,18 +28,18 @@ ms.locfileid: "68920817"
 |TypeName|OverrideLinkDemandsShouldBeIdenticalToBase|
 |CheckId|CA2123|
 |分類|Microsoft.Security|
-|中斷變更|中斷|
+|重大變更|中斷|
 
 ## <a name="cause"></a>原因
-公用型別中的公用或受保護方法會覆寫方法或實作為介面, 而且不會有與介面或虛擬方法相同的[連結要求](/dotnet/framework/misc/link-demands)。
+公用型別中的公用或受保護方法會覆寫方法或實作為介面，而且不會有與介面或虛擬方法相同的[連結要求](/dotnet/framework/misc/link-demands)。
 
 ## <a name="rule-description"></a>規則描述
-這項規則會使方法符合它的基底方法，即另一個類型中的介面或虛擬方法，然後比較每個方法上的連結要求。 如果方法或基底方法有連結要求, 而另一個不是, 則會回報違規。
+這項規則會使方法符合它的基底方法，即另一個類型中的介面或虛擬方法，然後比較每個方法上的連結要求。 如果方法或基底方法有連結要求，而另一個不是，則會回報違規。
 
-如果違反這項規則, 惡意的呼叫者只要呼叫不安全的方法, 就可以略過連結要求。
+如果違反這項規則，惡意的呼叫者只要呼叫不安全的方法，就可以略過連結要求。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
-若要修正此規則的違規情形, 請將相同的連結要求套用至覆寫方法或執行。 如果無法這麼做, 請使用完整的要求來標示方法, 或完全移除屬性。
+若要修正此規則的違規情形，請將相同的連結要求套用至覆寫方法或執行。 如果無法這麼做，請使用完整的要求來標示方法，或完全移除屬性。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
 請勿隱藏此規則的警告。

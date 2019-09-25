@@ -10,12 +10,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: e60d0fad1262138b57f079485bc7455e55c7ec25
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 0226c0e2e66a6543b81cd8ee674a743766b65f3e
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65841336"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71237278"
 ---
 # <a name="ca3007-review-code-for-open-redirect-vulnerabilities"></a>CA3007：檢閱程式碼是否有開放式重新導向弱點
 
@@ -24,37 +24,37 @@ ms.locfileid: "65841336"
 |TypeName|ReviewCodeForOpenRedirectVulnerabilities|
 |CheckId|CA3007|
 |分類|Microsoft.Security|
-|中斷變更|非中斷|
+|重大變更|不中斷|
 
 ## <a name="cause"></a>原因
 
-可能不受信任的 HTTP 要求輸入連至的 HTTP 回應重新導向。
+可能未受信任的 HTTP 要求輸入會到達 HTTP 回應重新導向。
 
 ## <a name="rule-description"></a>規則描述
 
-當使用不受信任的輸入，留意開啟重新導向弱點。 攻擊者可以開啟重新導向弱點的合法的 URL，但重新導向至網路釣魚或其他惡意的網頁遲疑不前訪客使用您的網站。
+使用不受信任的輸入時，請留意開啟的重新導向弱點。 攻擊者可以利用開啟的重新導向弱點，使用您的網站提供合法 URL 的外觀，但是將不受歡迎的訪客重新導向至網路釣魚或其他惡意網頁。
 
-此規則會嘗試尋找達到 HTTP 重新導向 URL 的 HTTP 要求中的輸入。
-
-> [!NOTE]
-> 此規則無法追蹤多個組件的資料。 比方說，如果一個組件會讀取 HTTP 要求輸入，並再將它傳遞至回應的 HTTP 重新導向的另一個組件，此規則將不會產生警告。
+此規則會嘗試從 HTTP 要求尋找到達 HTTP 重新導向 URL 的輸入。
 
 > [!NOTE]
-> 沒有可設定的限制，深度此規則會分析資料流不同的方法呼叫。 請參閱[分析器組態](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis)如何 EditorConfig 檔案中設定限制。
+> 此規則無法跨元件追蹤資料。 例如，如果一個元件讀取 HTTP 要求輸入，然後將它傳遞給另一個使用 HTTP 重新導向回應的元件，此規則就不會產生警告。
+
+> [!NOTE]
+> 此規則會在方法呼叫中分析資料流的深度有一個可設定的限制。 如需如何在 EditorConfig 檔中設定限制的詳細說明，請參閱[分析器](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis)設定。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
 
-若要修正開啟重新導向弱點的一些方法包括：
+修正開啟重新導向弱點的一些方法包括：
 
 - 不允許使用者起始重新導向。
-- 不允許使用者重新導向情節中指定 URL 的任何一部分。
-- 限制 重新導向至預先定義 「 允許清單 」 的 Url。
+- 不允許使用者在重新導向案例中指定 URL 的任何部分。
+- 將重新導向限制為預先定義的 Url 「允許清單」。
 - 驗證重新導向 Url。
-- 如果適用的話，請考慮使用免責聲明頁面上，當使用者被重新導向遠離您的網站。
+- 如果適用的話，當使用者從您的網站重新導向時，請考慮使用免責聲明頁面。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
 
-如果您知道您已驗證的輸入限制為預期的 Url，就可以隱藏這個警告。
+如果您知道您已驗證要限制為預定 Url 的輸入，就可以隱藏這個警告。
 
 ## <a name="pseudo-code-examples"></a>虛擬程式碼範例
 

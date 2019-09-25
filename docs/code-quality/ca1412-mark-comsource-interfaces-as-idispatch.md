@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: e0a7214ce37aa48d69b9261d686960fa0a4c308c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: caaae787d5e4801f3fc3b8d881b386595fb2eca4
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62546345"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71234681"
 ---
 # <a name="ca1412-mark-comsource-interfaces-as-idispatch"></a>CA1412:ComSource 介面必須標記為 IDispatch
 
@@ -31,19 +31,19 @@ ms.locfileid: "62546345"
 |TypeName|MarkComSourceInterfacesAsIDispatch|
 |CheckId|CA1412|
 |分類|Microsoft.Interoperability|
-|中斷變更|中斷|
+|重大變更|中斷|
 
 ## <a name="cause"></a>原因
 
-類型會標示<xref:System.Runtime.InteropServices.ComSourceInterfacesAttribute>屬性和至少一個指定的介面不以標示<xref:System.Runtime.InteropServices.InterfaceTypeAttribute>屬性設為`InterfaceIsDispatch`值。
+類型是以<xref:System.Runtime.InteropServices.ComSourceInterfacesAttribute>屬性標記，而且至少有一個指定的介面未標記<xref:System.Runtime.InteropServices.InterfaceTypeAttribute>為屬性設定為`InterfaceIsDispatch`值。
 
 ## <a name="rule-description"></a>規則描述
 
-<xref:System.Runtime.InteropServices.ComSourceInterfacesAttribute> 用來識別類別會公開元件物件模型 (COM) 用戶端的事件介面。 這些介面必須公開為`InterfaceIsIDispatch`讓 Visual Basic 6 COM 用戶端接收事件通知。 根據預設，如果介面不以標示<xref:System.Runtime.InteropServices.InterfaceTypeAttribute>屬性，它會公開為雙重介面。
+<xref:System.Runtime.InteropServices.ComSourceInterfacesAttribute>是用來識別類別公開給元件物件模型（COM）用戶端的事件介面。 這些介面必須公開為`InterfaceIsIDispatch` ，才能讓 Visual Basic 6 COM 用戶端接收事件通知。 根據預設，如果介面未以<xref:System.Runtime.InteropServices.InterfaceTypeAttribute>屬性標示，則會公開為雙重介面。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
 
-若要修正此規則的違規情形，加入或修改<xref:System.Runtime.InteropServices.InterfaceTypeAttribute>屬性，讓其值設定為所指定的所有介面 InterfaceIsIDispatch<xref:System.Runtime.InteropServices.ComSourceInterfacesAttribute>屬性。
+若要修正此規則的違規，請新增或修改<xref:System.Runtime.InteropServices.InterfaceTypeAttribute>屬性，使其值設定為 cominterfacetype.interfaceisidispatch，適用于<xref:System.Runtime.InteropServices.ComSourceInterfacesAttribute>以屬性指定的所有介面。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
 
@@ -51,14 +51,14 @@ ms.locfileid: "62546345"
 
 ## <a name="example"></a>範例
 
-下列範例示範類別其中一個介面違反規則的位置。
+下列範例顯示一個類別，其中其中一個介面違反規則。
 
 [!code-csharp[FxCop.Interoperability.MarkIDispatch#1](../code-quality/codesnippet/CSharp/ca1412-mark-comsource-interfaces-as-idispatch_1.cs)]
 [!code-vb[FxCop.Interoperability.MarkIDispatch#1](../code-quality/codesnippet/VisualBasic/ca1412-mark-comsource-interfaces-as-idispatch_1.vb)]
 
-## <a name="related-rules"></a>相關的規則
+## <a name="related-rules"></a>相關規則
 
-[CA1408:不要使用 AutoDual ClassInterfaceType](../code-quality/ca1408-do-not-use-autodual-classinterfacetype.md)
+[CA1408請勿使用 AutoDual ClassInterfaceType](../code-quality/ca1408-do-not-use-autodual-classinterfacetype.md)
 
 ## <a name="see-also"></a>另請參閱
 

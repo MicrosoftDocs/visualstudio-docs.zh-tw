@@ -3,14 +3,14 @@ title: 登入 Visual Studio for Mac
 description: 如何登入 Visual Studio for Mac
 author: asb3993
 ms.author: amburns
-ms.date: 08/08/2019
+ms.date: 09/18/2019
 ms.assetid: E4CFD03C-03AF-48CA-B409-6DB1CA45E991
-ms.openlocfilehash: a3911826314710f5b47fb248e452b4a10b56e2dd
-ms.sourcegitcommit: 6f3cf7a1bfc81a61f9a603461a1c34fd2221f100
-ms.translationtype: HT
+ms.openlocfilehash: 7b1e912583cf0ac63307bf1c75912059c39fe427
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/12/2019
-ms.locfileid: "68957404"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71213668"
 ---
 # <a name="sign-in-to-visual-studio-for-mac"></a>登入 Visual Studio for Mac
 
@@ -29,37 +29,37 @@ ms.locfileid: "68957404"
 > [!TIP]
 > 登入 Visual Studio for Mac 之前，請確定您已連線至網際網路。 > 訂用帳戶只能在線上啟用。 如果您未連線，請選擇 [我稍後會執行此動作]，並在連線時透過功能表登入。
 
-若要登入 Visual Studio for Mac，請執行下列步驟：
+若要在第一次啟動時登入 Visual Studio for Mac，請執行下列步驟：
 
-1. 按一下登入視窗的 [使用 Microsoft 帳戶登入]  按鈕：
+1. 按一下登入視窗的 [使用 Microsoft 帳戶登入] 按鈕：
 
-    ![Visual Studio for Mac 中的帳戶對話方塊](media/signing-in-image12.png)
+    ![Visual Studio for Mac 中的帳戶對話方塊](media/ide-tour-2019-start-signin.png)
 
 2. 輸入 Microsoft 認證：
 
     ![Microsoft 認證對話方塊](media/signing-in-image13.png)
 
-3. 登入之後，您會看到 Visual Studio 2019 for Mac 的開始視窗。 您可以在此開啟或建立新的專案：
+4. 登入之後，您會看到選取鍵盤快速鍵的選項。 選擇您想要使用並**繼續**的選項。 系統會接著提示您輸入 Visual Studio 2019 for Mac 開始視窗。 您可以在此開啟或建立新的專案：
 
     ![登入成功](media/signing-in-image14.png)
 
-或者，您可以使用 [Visual Studio] > [登入]  功能表項目以隨時登入和登出。
+或者，您可以使用 [Visual Studio] > [登入] 功能表項目以隨時登入和登出。
 
 ## <a name="adding-multiple-user-accounts"></a>新增多個使用者帳戶
 
 Visual Studio for Mac 支援將多個帳戶新增至您的個人化帳戶。 這些額外帳戶可讓您從任何已新增的帳戶存取資源 (例如 Azure)。
 
-若要新增其他使用者帳戶，請從 Visual Studio for mac 選擇 [Visual Studio] > [帳戶]  功能表。 按一下 [新增]  按鈕，輸入其他的帳戶認證。
+若要新增其他使用者帳戶，請從 Visual Studio for mac 選擇 [Visual Studio] > [帳戶] 功能表。 按一下 [新增] 按鈕，輸入其他的帳戶認證。
 
 ![管理帳戶](media/signing-in-image15.png)
 
 ## <a name="view-or-change-your-profile-information"></a>檢視或變更您的設定檔資訊
 
-1. 前往 [Visual Studio] > [帳戶]  並選取 [我的設定檔]  按鈕。
+1. 前往 [Visual Studio] > [帳戶] 並選取 [我的設定檔] 按鈕。
 
-2. 在瀏覽器視窗中，選取 [編輯設定檔]  並變更所要的設定。
+2. 在瀏覽器視窗中，選取 [編輯設定檔] 並變更所要的設定。
 
-3. 當您完成時，請選擇 [儲存變更]  。
+3. 當您完成時，請選擇 [儲存變更]。
 
 ## <a name="see-also"></a>另請參閱
 

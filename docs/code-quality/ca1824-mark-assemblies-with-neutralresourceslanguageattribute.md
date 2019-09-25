@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 40cb2a3674884a9fb4f1449c9afa2e0a2d27050f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: df5c0db4e9e141e5833893bbbb447328eab8851e
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62808556"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71233350"
 ---
 # <a name="ca1824-mark-assemblies-with-neutralresourceslanguageattribute"></a>CA1824:組件必須標記 NeutralResourcesLanguageAttribute
 
@@ -28,43 +28,43 @@ ms.locfileid: "62808556"
 |TypeName|MarkAssembliesWithNeutralResourcesLanguage|
 |CheckId|CA1824|
 |分類|Microsoft.Performance|
-|中斷變更|非重大|
+|重大變更|不中斷|
 
 ## <a name="cause"></a>原因
 
-組件包含**ResX**-基礎資源，但並沒有<xref:System.Resources.NeutralResourcesLanguageAttribute?displayProperty=fullName>套用到它。
+元件包含以**ResX**為基礎的資源，但未<xref:System.Resources.NeutralResourcesLanguageAttribute?displayProperty=fullName>套用至它。
 
 ## <a name="rule-description"></a>規則描述
 
-<xref:System.Resources.NeutralResourcesLanguageAttribute>屬性會通知應用程式的預設文化特性的資源管理員。 如果預設文化特性的資源內嵌在應用程式的主要組件，並<xref:System.Resources.ResourceManager>來擷取屬於相同的文化特性，與預設文化特性的資源具有<xref:System.Resources.ResourceManager>會自動使用位於主要組件中的資源而不是搜尋的附屬組件。 這會略過一般組件探查，可改善查詢效能，您載入，並可減少您的工作集的第一個資源。
+<xref:System.Resources.NeutralResourcesLanguageAttribute>屬性會通知資源管理員應用程式的預設文化特性。 如果預設文化特性的資源內嵌在應用程式的主要元件中，而且<xref:System.Resources.ResourceManager>必須取出屬於與預設文化特性相同文化特性的資源，則<xref:System.Resources.ResourceManager>會自動使用位於主要元件中的資源而不是搜尋附屬元件。 這會略過一般的元件探查、改善您載入的第一個資源的查閱效能，並可減少您的工作集。
 
 > [!TIP]
-> 請參閱[封裝和部署資源](/dotnet/framework/resources/packaging-and-deploying-resources-in-desktop-apps)處理程序，<xref:System.Resources.ResourceManager>用來探查資源檔。
+> 如需使用探查資源檔的進程， <xref:System.Resources.ResourceManager>請參閱[封裝和部署資源](/dotnet/framework/resources/packaging-and-deploying-resources-in-desktop-apps)。
 
 ## <a name="fix-violations"></a>修正違規
 
-若要修正此規則的違規情形，將屬性新增至組件，並指定語言的中性文化特性的資源。
+若要修正此規則的違規，請將屬性新增至元件，並指定中性文化特性之資源的語言。
 
 ### <a name="to-specify-the-neutral-language-for-resources"></a>若要指定資源的中性語言
 
-1. 在 **方案總管**，以滑鼠右鍵按一下您的專案，然後選取**屬性**。
+1. 在**方案總管**中，以滑鼠右鍵按一下您的專案，然後選取 [**屬性**]。
 
-2. 選取 **應用程式**索引標籤，然後按**組件資訊**。
+2. 選取 [**應用程式**] 索引標籤，然後選取 [**元件資訊**]。
 
    > [!NOTE]
-   > 如果您的專案的.NET Standard 或.NET Core 專案，請選取**封裝** 索引標籤。
+   > 如果您的專案是 .NET Standard 或 .NET Core 專案，請選取 [**封裝**] 索引標籤。
 
-3. 選取的語言從**中性語言**或是**組件的中性語言**下拉式清單。
+3. 從 [**中性語言**] 或 [**元件中性語言**] 下拉式清單中選取語言。
 
 4. 選取 [確定]。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
 
-就可以隱藏此規則的警告。 不過，可能會降低啟動效能。
+允許隱藏此規則的警告。 不過，啟動效能可能會降低。
 
 ## <a name="see-also"></a>另請參閱
 
 - <xref:System.Resources.NeutralResourcesLanguageAttribute>
-- [桌面應用程式 (.NET) 中的資源](/dotnet/framework/resources/)
-- [CA1703-資源字串應該使用正確的拼字](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)
-- [CA1701-資源字串複合字應該使用正確的大小寫](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)
+- [桌面應用程式中的資源（.NET）](/dotnet/framework/resources/)
+- [CA1703-資源字串應該拼寫正確](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)
+- [CA1701-資源字串複合字應該是正確的大小寫](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)

@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4196cb91e1b866453de54347b8a67edd3dc2dc96
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 54630b7fba69ef96a2c08486e535ae45d8e614b8
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68921886"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71234770"
 ---
 # <a name="ca1409-com-visible-types-should-be-creatable"></a>CA1409:Com 可見類型應該是可建立的
 
@@ -28,23 +28,23 @@ ms.locfileid: "68921886"
 |TypeName|ComVisibleTypesShouldBeCreatable|
 |CheckId|CA1409|
 |分類|Microsoft.Interoperability|
-|中斷變更|不中斷|
+|重大變更|不中斷|
 
 ## <a name="cause"></a>原因
-特別標示為「元件物件模型 (COM) 可見」的參考型別包含公用參數化的函式, 但不包含公用預設 (無參數) 的函式。
+特別標示為「元件物件模型（COM）可見」的參考型別包含公用參數化的函式，但不包含公用預設（無參數）的函式。
 
 ## <a name="rule-description"></a>規則描述
-COM 用戶端無法建立沒有公用預設函式的類型。 不過, 如果有另一種方法可用來建立型別, 並將它傳遞給用戶端 (例如, 透過方法呼叫的傳回值), 則 COM 用戶端仍然可以存取型別。
+COM 用戶端無法建立沒有公用預設函式的類型。 不過，如果有另一種方法可用來建立型別，並將它傳遞給用戶端（例如，透過方法呼叫的傳回值），則 COM 用戶端仍然可以存取型別。
 
 此規則會忽略衍生自<xref:System.Delegate?displayProperty=fullName>的類型。
 
-根據預設, COM 會看到下列內容: 元件、公用類型、公用類型中的公用實例成員, 以及公用實數值型別的所有成員。
+根據預設，COM 會看到下列內容：元件、公用類型、公用類型中的公用實例成員，以及公用實數值型別的所有成員。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
-若要修正此規則的違規, 請新增公用預設的函式, <xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName>或從類型移除。
+若要修正此規則的違規，請新增公用預設的函式， <xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName>或從類型移除。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
-如果提供其他方式來建立物件並將其傳遞給 COM 用戶端, 則可以安全地隱藏此規則的警告。
+如果提供其他方式來建立物件並將其傳遞給 COM 用戶端，則可以安全地隱藏此規則的警告。
 
 ## <a name="related-rules"></a>相關規則
 [CA1017以 ComVisibleAttribute 標記元件](../code-quality/ca1017-mark-assemblies-with-comvisibleattribute.md)

@@ -2,7 +2,7 @@
 title: Visual Studio 2019 的新功能
 titleSuffix: ''
 description: 了解 Visual Studio 2019 中的新功能。
-ms.date: 09/23/2019
+ms.date: 09/24/2019
 helpviewer_keywords:
 - Visual Studio, what's new
 - what's new [Visual Studio]
@@ -15,12 +15,12 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: c2caed210edbed5f17d74ee78a55612aa0afa4cb
-ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
+ms.openlocfilehash: 5871e782ee84e49762d26a925380ad481e3623d1
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71186471"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71211327"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Visual Studio 2019 的新功能
 
@@ -107,6 +107,12 @@ Visual Studio 2019 的發行，代表我們正著手將 Visual Studio 調整為�
 **16.2 中的新功能**：我們已經更新測試總管以提供更有效的大型測試集處理方式、更容易篩選及探索的命令，以及可讓您微調要顯示哪些測試資訊的可自訂欄。
 
    ![顯示測試總管中的使用者介面改良功能的螢幕擷取畫面](media/vs-2019/test-explorer-ui.png)
+
+### <a name="net-core"></a>.NET Core
+
+**16.3 的新**功能：我們已包含 .NET Core 3.0 的支援。 跨平臺、開放原始&mdash;碼，並受到 Microsoft 的完整支援。 
+
+如需詳細資訊，請參閱[宣佈 .Net Core 3.0](https://devblogs.microsoft.com/dotnet/announcing-net-core-3-0/)的 blog 文章。
 
 ## <a name="collaborate"></a>共同作業
 

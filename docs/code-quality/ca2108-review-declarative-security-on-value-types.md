@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 37f4cac83c83b47fda5cf9cde85a3e14d857d2bc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4107800a5623de29448a9213184dd44feed2cac9
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62545534"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71232810"
 ---
 # <a name="ca2108-review-declarative-security-on-value-types"></a>CA2108:必須檢閱實值類型上的宣告式安全性
 
@@ -28,33 +28,33 @@ ms.locfileid: "62545534"
 |TypeName|ReviewDeclarativeSecurityOnValueTypes|
 |CheckId|CA2108|
 |分類|Microsoft.Security|
-|中斷變更|非中斷|
+|重大變更|不中斷|
 
 ## <a name="cause"></a>原因
 
-公用或受保護的實值型別會受到[資料與模型化](/dotnet/framework/data/index)或是[連結要求](/dotnet/framework/misc/link-demands)。
+公用或受保護的實值型別會受到[資料和模型](/dotnet/framework/data/index)化或[連結要求](/dotnet/framework/misc/link-demands)的保護。
 
 ## <a name="rule-description"></a>規則描述
 
-配置及其他建構函式執行之前，其預設建構函式來初始化實值型別。 如果實值型別會受到 Demand 或 LinkDemand 的比較，而且呼叫端沒有滿足安全性檢查，而任何建構函式以外的權限預設值將會失敗，並將擲回安全性例外狀況。 實值型別不會取消配置;它會處於其預設建構函式所設定的狀態。 請勿假設呼叫端傳遞實值型別的執行個體具有建立或存取執行個體的權限。
+實值型別會由其預設的函式來配置及初始化，然後再執行其他的函式 如果實值型別受到需求或 LinkDemand 的保護，而且呼叫端沒有符合安全性檢查的許可權，則預設值以外的任何其他任何函式都會失敗，而且會擲回安全性例外狀況。 數值型別不會解除配置;它會保留在預設的函式所設定的狀態中。 請勿假設傳遞實數值型別之實例的呼叫端具有建立或存取實例的許可權。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
 
-除非您從類型 中移除安全性檢查，並使用方法層級安全性檢查在其位置中，您無法修正此規則的違規情形。 以這種方式修正違規無法防止具有足夠的權限，無法取得實值型別的執行個體的呼叫端。 您必須確保執行個體的值型別，在其預設狀態下，不會公開機密資訊，且不能用於有害的方式。
+除非您從類型移除安全性檢查，並在其位置使用方法層級安全性檢查，否則無法修正此規則的違規。 以這種方式修正違規，並不會防止許可權不足的呼叫端取得實數值型別的實例。 您必須確保實值型別的實例（其預設狀態）不會公開機密資訊，而且無法以有害的方式使用。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
 
-如果任何呼叫端可以取得實值型別，其預設狀態中的執行個體，而不造成安全性威脅，您可以隱藏此規則的警告。
+如果任何呼叫者可以取得其預設狀態的實數值型別實例，而不會對安全性造成威脅，您可以隱藏此規則的警告。
 
 ## <a name="example-1"></a>範例 1
 
-下列範例示範包含違反這項規則實值型別程式庫。 `StructureManager`類型會假設呼叫端傳遞實值型別的執行個體具有建立或存取執行個體的權限。
+下列範例顯示的程式庫包含違反此規則的實數值型別。 `StructureManager`型別假設傳遞實值型別實例的呼叫端具有建立或存取實例的許可權。
 
 [!code-csharp[FxCop.Security.DemandOnValueType#1](../code-quality/codesnippet/CSharp/ca2108-review-declarative-security-on-value-types_1.cs)]
 
 ## <a name="example-2"></a>範例 2
 
-下列應用程式示範程式庫的弱點。
+下列應用程式會示範程式庫的弱點。
 
 [!code-csharp[FxCop.Security.TestDemandOnValueType#1](../code-quality/codesnippet/CSharp/ca2108-review-declarative-security-on-value-types_2.cs)]
 

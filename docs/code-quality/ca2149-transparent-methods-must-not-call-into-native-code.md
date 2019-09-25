@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 725bf599d8d13d345767f5af4d38db619263c23d
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 8e75b12b820b3ff3ac5a26f83148a49ca87c12ad
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68920389"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71231959"
 ---
 # <a name="ca2149-transparent-methods-must-not-call-into-native-code"></a>CA2149:透明方法不可以呼叫機器碼
 
@@ -24,16 +24,16 @@ ms.locfileid: "68920389"
 |TypeName|TransparentMethodsMustNotCallNativeCode|
 |CheckId|CA2149|
 |分類|Microsoft.Security|
-|中斷變更|中斷|
+|重大變更|中斷|
 
 ## <a name="cause"></a>原因
-方法會透過方法存根 (例如 P/Invoke) 呼叫原生函式。
+方法會透過方法存根（例如 P/Invoke）呼叫原生函式。
 
 ## <a name="rule-description"></a>規則描述
-此規則會在直接呼叫機器碼 (例如透過 P/Invoke) 的任何透明方法上引發。 違反此規則會導致層級<xref:System.MethodAccessException> 2 透明度模型中的成為, 層級1透明度模型<xref:System.Security.Permissions.SecurityPermissionAttribute.UnmanagedCode%2A>中的完整需求。
+此規則會在直接呼叫機器碼（例如透過 P/Invoke）的任何透明方法上引發。 違反此規則會導致層級<xref:System.MethodAccessException> 2 透明度模型中的成為，層級1透明度模型<xref:System.Security.Permissions.SecurityPermissionAttribute.UnmanagedCode%2A>中的完整需求。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
-若要修正此規則的違規情形, 請將呼叫機器碼<xref:System.Security.SecurityCriticalAttribute>的方法標記為或<xref:System.Security.SecuritySafeCriticalAttribute>屬性。
+若要修正此規則的違規情形，請將呼叫機器碼<xref:System.Security.SecurityCriticalAttribute>的方法標記為或<xref:System.Security.SecuritySafeCriticalAttribute>屬性。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
 請勿隱藏此規則的警告。

@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: f71e17eae1e728ab755d048daee2c0d156425964
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
-ms.translationtype: HT
+ms.openlocfilehash: fef50748942aaa800cf1181e4c8f8b8a030f99ee
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66747590"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71211310"
 ---
 # <a name="develop-with-visual-f-in-visual-studio"></a>在 Visual Studio 中使用 Visual F# 進行開發
 
@@ -23,7 +23,7 @@ ms.locfileid: "66747590"
 
 ## <a name="install-f-support"></a>安裝 F# 支援
 
-若要在 Visual Studio 中使用 F# 進行開發，請先安裝 **.NET 桌面開發**工作負載 (若尚未安裝的話)。 您可以透過 Visual Studio 安裝程式安裝 Visual Studio 工作負載，選取 [工具]   > [取得工具與功能]  即可開啟該安裝程式。
+若要在 Visual Studio 中使用 F# 進行開發，請先安裝 **.NET 桌面開發**工作負載 (若尚未安裝的話)。 您可以透過 Visual Studio 安裝程式安裝 Visual Studio 工作負載，選取 [工具] > [取得工具與功能] 即可開啟該安裝程式。
 
 ![Visual Studio 中的 .NET 桌面開發工作負載](media/dotnet-desktop-development-workload.png)
 
@@ -56,9 +56,9 @@ ms.locfileid: "66747590"
 
 ## <a name="project-designer"></a>專案設計工具
 
-[專案設計工具]  包含依相關功能分組的數個專案屬性頁。 可用於 F# 專案的頁面大部分是可用於其他語言的頁面子集，下表將描述這些頁面。 還提供了對應至 C# [專案設計工具]  頁面的連結。
+[專案設計工具] 包含依相關功能分組的數個專案屬性頁。 可用於 F# 專案的頁面大部分是可用於其他語言的頁面子集，下表將描述這些頁面。 還提供了對應至 C# [專案設計工具] 頁面的連結。
 
-|[專案設計工具] 頁面|相關連結|說明|
+|[專案設計工具] 頁面|相關連結|描述|
 | - |-------------|-----------|
 |應用程式|[專案設計工具、應用程式頁面](reference/application-page-project-designer-csharp.md)|可讓您指定應用程式層級設定和屬性，例如您正在建立程式庫還是可執行檔、應用程式是以哪個 .NET 版本為目標，以及應用程式使用的資源檔儲存所在位置的相關資訊。|
 |組建|[專案設計工具、建置頁](reference/build-page-project-designer-csharp.md)|可讓您控制如何編譯程式碼。|
@@ -72,7 +72,7 @@ ms.locfileid: "66747590"
 
 下表摘要說明 F# 專用的設定：
 
-|[專案設計工具] 頁面|設定|說明|
+|[專案設計工具] 頁面|設定|描述|
 | - |-------|-----------|
 |組建|產生 tail 呼叫|如果選取此設定，則可讓您使用尾端 Microsoft Intermediate Language (MSIL) 指令。 這會導致堆疊框架重複用於尾端遞迴函式。 相當於 `--tailcalls` 編譯器選項。|
 |組建|其他旗標|可讓您指定其他編譯器命令列選項。|
@@ -81,7 +81,7 @@ ms.locfileid: "66747590"
 
 F# 支援 Visual Studio 程式碼和文字編輯器的下列功能：
 
-|功能|說明|F# 支援？|
+|功能|描述|F# 支援？|
 |-------|-----------|----------------|
 |自動註解|可讓您註解或取消註解程式碼區段。|是|
 |自動格式化|使用標準的縮排和樣式重新格式化程式碼。|否|
@@ -113,7 +113,7 @@ F# 支援 Visual Studio 程式碼和文字編輯器的下列功能：
 
 下表摘要說明 F# 支援和不支援的 IntelliSense 功能：
 
-|功能|說明|F# 支援？|
+|功能|描述|F# 支援？|
 |-------|-----------|----------------|
 |自動實作介面|產生介面方法的程式碼虛設常式。|是|
 |程式碼片段|將來自常見程式碼建構程式庫的程式碼插入主題中。|否|
@@ -133,7 +133,7 @@ F# 支援 Visual Studio 程式碼和文字編輯器的下列功能：
 
 下表摘要說明對 F# 程式碼進行偵錯時可供使用的功能：
 
-|功能|說明|F# 支援？|
+|功能|描述|F# 支援？|
 |-------|-----------|----------------|
 |自動變數視窗|顯示自動或暫存變數。|否|
 |中斷點|可讓您在偵錯期間的特定時間點暫停程式碼執行。|是|
@@ -146,13 +146,13 @@ F# 支援 Visual Studio 程式碼和文字編輯器的下列功能：
 |逐步執行|可讓您繼續執行，並移入任何函式呼叫。|是|
 |不進入函式|可讓您在目前的堆疊框架中繼續執行，並跳過任何函式呼叫。|是|
 
-如需 Visual Studio 偵錯工具的一般資訊，請參閱[在 Visual Studio 中偵錯](../debugger/index.md)。
+如需 Visual Studio 偵錯工具的一般資訊，請參閱[在 Visual Studio 中偵錯](../debugger/index.yml)。
 
 ## <a name="additional-tools"></a>其他工具
 
 下表摘要說明 Visual Studio 工具中的 F# 支援。
 
-|工具|說明|F# 支援？|
+|工具|描述|F# 支援？|
 |----|-----------|----------------|
 |呼叫階層|顯示程式碼中函式呼叫的巢狀結構。|否|
 |程式碼度量|收集程式碼的相關資訊，例如行數。|否|

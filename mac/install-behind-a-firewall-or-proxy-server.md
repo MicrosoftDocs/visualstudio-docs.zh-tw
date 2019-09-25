@@ -5,13 +5,13 @@ ms.topic: troubleshooting
 ms.assetid: 79C0F1A3-0C13-4E55-A820-1138A4082B77
 author: asb3993
 ms.author: amburns
-ms.date: 10/23/2018
-ms.openlocfilehash: 7e7e8c3cd5f3ffded3387deb896df18d5b2ec705
-ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
-ms.translationtype: HT
+ms.date: 09/18/2019
+ms.openlocfilehash: 3c5fce37b7cb26ef9aeceaba700e72e79e809d7d
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/05/2019
-ms.locfileid: "67586877"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71213633"
 ---
 # <a name="install-and-use-visual-studio-for-mac-behind-a-firewall-or-proxy-server"></a>在防火牆或 Proxy 伺服器後方安裝及使用 Visual Studio for Mac
 

@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: fafa4782762e18f1ced8c7f929720e995986ac7a
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: b5826633737c3bb7d8f358ff090f0b1a55ac8eef
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69546862"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71231048"
 ---
 # <a name="ca2231-overload-operator-equals-on-overriding-valuetypeequals"></a>CA2231:在覆寫 ValueType.Equals 上多載等號運算子
 
@@ -31,20 +31,20 @@ ms.locfileid: "69546862"
 |-|-|
 |TypeName|OverloadOperatorEqualsOnOverridingValueTypeEquals|
 |CheckId|CA2231|
-|Category|Microsoft.Usage|
-|中斷變更|非中斷|
+|分類|Microsoft.Usage|
+|重大變更|不中斷|
 
 ## <a name="cause"></a>原因
 
-實值型別<xref:System.Object.Equals%2A?displayProperty=fullName>會覆寫, 但不會執行等號比較運算子。
+實值型別<xref:System.Object.Equals%2A?displayProperty=fullName>會覆寫，但不會執行等號比較運算子。
 
-根據預設, 此規則只會查看外部可見的類型, 但這是[可](#configurability)設定的。
+根據預設，此規則只會查看外部可見的類型，但這是[可](#configurability)設定的。
 
 ## <a name="rule-description"></a>規則描述
 
-在大部分的程式設計語言中, 實數值型別的等號比較運算子 (= =) 並沒有預設的執行方式。 如果您的程式設計語言支援運算子多載, 您應該考慮執行等號比較運算子。 其行為應該與相同<xref:System.Object.Equals%2A>。
+在大部分的程式設計語言中，實數值型別的等號比較運算子（= =）並沒有預設的執行方式。 如果您的程式設計語言支援運算子多載，您應該考慮執行等號比較運算子。 其行為應該與相同<xref:System.Object.Equals%2A>。
 
-在等號比較運算子的多載執行中, 不能使用預設的等號比較運算子。 這麼做會造成堆疊溢位。 若要執行等號比較運算子, 請在您的執行中使用 Equals 方法。 例如：
+在等號比較運算子的多載執行中，不能使用預設的等號比較運算子。 這麼做會造成堆疊溢位。 若要執行等號比較運算子，請在您的執行中使用 Equals 方法。 例如：
 
 ```vb
 If (Object.ReferenceEquals(left, Nothing)) Then
@@ -62,25 +62,25 @@ return left.Equals(right);
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
 
-若要修正此規則的違規, 請執行等號比較運算子。
+若要修正此規則的違規，請執行等號比較運算子。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
 
-您可以放心地隱藏此規則的警告;不過, 我們建議您盡可能提供等號比較運算子。
+您可以放心地隱藏此規則的警告;不過，我們建議您盡可能提供等號比較運算子。
 
 ## <a name="configurability"></a>可設定性
 
-如果您是從[FxCop 分析器](install-fxcop-analyzers.md)執行此規則 (而不是使用舊版分析), 您可以根據其存取範圍, 設定程式碼基底中的哪些部分來執行此規則。 例如, 若要指定規則只針對非公用 API 介面執行, 請將下列機碼值組新增至專案中的 editorconfig 檔案:
+如果您是從[FxCop 分析器](install-fxcop-analyzers.md)執行此規則（而不是使用舊版分析），您可以根據其存取範圍，設定程式碼基底中的哪些部分來執行此規則。 例如，若要指定規則只針對非公用 API 介面執行，請將下列機碼值組新增至專案中的 editorconfig 檔案：
 
 ```ini
 dotnet_code_quality.ca2231.api_surface = private, internal
 ```
 
-您可以只針對此規則、所有規則或此類別中的所有規則 (使用方式) 設定此選項。 如需詳細資訊, 請參閱[設定 FxCop 分析器](configure-fxcop-analyzers.md)。
+您可以只針對此規則、所有規則或此類別中的所有規則（使用方式）設定此選項。 如需詳細資訊，請參閱[設定 FxCop 分析器](configure-fxcop-analyzers.md)。
 
 ## <a name="example"></a>範例
 
-下列範例會定義違反此規則的類型:
+下列範例會定義違反此規則的類型：
 
 [!code-csharp[FxCop.Usage.EqualsGetHashCode#1](../code-quality/codesnippet/CSharp/ca2231-overload-operator-equals-on-overriding-valuetype-equals_1.cs)]
 

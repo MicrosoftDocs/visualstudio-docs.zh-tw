@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5dbd8580f5aaeb88c08d35b50258510cb1a85ba2
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 8699e3434dc9c4cf9d3eccc37916c20ff7f34015
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68920294"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71231191"
 ---
 # <a name="ca2218-override-gethashcode-on-overriding-equals"></a>CA2218:覆寫 Equals 時必須一併覆寫 GetHashCode
 
@@ -28,13 +28,13 @@ ms.locfileid: "68920294"
 |TypeName|OverrideGetHashCodeOnOverridingEquals|
 |CheckId|CA2218|
 |分類|Microsoft.Usage|
-|中斷變更|非中斷|
+|重大變更|不中斷|
 
 ## <a name="cause"></a>原因
-公用類型會覆<xref:System.Object.Equals%2A?displayProperty=fullName>寫, 但不<xref:System.Object.GetHashCode%2A?displayProperty=fullName>會覆寫。
+公用類型會覆<xref:System.Object.Equals%2A?displayProperty=fullName>寫，但不<xref:System.Object.GetHashCode%2A?displayProperty=fullName>會覆寫。
 
 ## <a name="rule-description"></a>規則描述
- <xref:System.Object.GetHashCode%2A>根據目前的實例傳回值, 這適合用於雜湊演算法和資料結構 (例如雜湊資料表)。 相同類型且相等的兩個物件, 必須傳回相同的雜湊碼, 以確保下列類型的實例能夠正常運作:
+ <xref:System.Object.GetHashCode%2A>根據目前的實例傳回值，這適合用於雜湊演算法和資料結構（例如雜湊資料表）。 相同類型且相等的兩個物件，必須傳回相同的雜湊碼，以確保下列類型的實例能夠正常運作：
 
 - <xref:System.Collections.Hashtable?displayProperty=fullName>
 
@@ -55,7 +55,7 @@ ms.locfileid: "68920294"
 - 執行的類型<xref:System.Collections.Generic.IEqualityComparer%601?displayProperty=fullName>
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
-若要修正此規則的違規情形, 請提供的<xref:System.Object.GetHashCode%2A>執行。 對於相同類型的一對物件, 您必須確定如果的實<xref:System.Object.Equals%2A> `true`作為的傳回, 則此實作為會傳回相同的值。
+若要修正此規則的違規情形，請提供的<xref:System.Object.GetHashCode%2A>執行。 對於相同類型的一對物件，您必須確定如果的實<xref:System.Object.Equals%2A> `true`作為的傳回，則此實作為會傳回相同的值。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
 請勿隱藏此規則的警告。
@@ -63,7 +63,7 @@ ms.locfileid: "68920294"
 ## <a name="class-example"></a>類別範例
 
 ### <a name="description"></a>描述
-下列範例顯示違反此規則的類別 (參考型別)。
+下列範例顯示違反此規則的類別（參考型別）。
 
 ### <a name="code"></a>程式碼
 [!code-csharp[FxCop.Usage.GetHashCodeErrorClass#1](../code-quality/codesnippet/CSharp/ca2218-override-gethashcode-on-overriding-equals_1.cs)]
@@ -76,8 +76,8 @@ ms.locfileid: "68920294"
 
 ## <a name="structure-example"></a>結構範例
 
-### <a name="description"></a>說明
-下列範例顯示違反此規則的結構 (實值型別)。
+### <a name="description"></a>描述
+下列範例顯示違反此規則的結構（實值型別）。
 
 ### <a name="code"></a>程式碼
 [!code-csharp[FxCop.Usage.GetHashCodeErrorStruct#1](../code-quality/codesnippet/CSharp/ca2218-override-gethashcode-on-overriding-equals_3.cs)]

@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 98b75a9f67a24fd8bea1ecc3a8782b6bd9e6b34b
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 8ae8f507f17a1c64cb9fdfc5872ffa22e3c0f170
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68920600"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71232223"
 ---
 # <a name="ca2137-transparent-methods-must-contain-only-verifiable-il"></a>CA2137:透明方法必須只包含可驗證的 IL
 
@@ -24,7 +24,7 @@ ms.locfileid: "68920600"
 |TypeName|TransparentMethodsMustBeVerifiable|
 |CheckId|CA2137|
 |分類|Microsoft.Security|
-|中斷變更|中斷|
+|重大變更|中斷|
 
 ## <a name="cause"></a>原因
 方法包含無法驗證的程式碼，或以傳址方式傳回類型。
@@ -32,15 +32,15 @@ ms.locfileid: "68920600"
 ## <a name="rule-description"></a>規則描述
 當安全性透明程式碼嘗試執行無法驗證的 MSIL (Microsoft Intermediate Language) 時，就會引發此規則。 不過，此規則不包含完整的 IL 驗證器，並是使用啟發式來擷取多數的 MSIL 驗證違規情形。
 
-若要確定您的程式碼只包含可驗證的 MSIL, 請在您的元件上執行[Peverify (Peverify 工具)](/dotnet/framework/tools/peverify-exe-peverify-tool) 。 使用 **/transparent**選項來執行 PEVerify, 這會將輸出限制為只有無法驗證的透明方法會造成錯誤。 如果未使用/transparent 選項, PEVerify 也會驗證允許包含無法驗證之程式碼的重要方法。
+若要確定您的程式碼只包含可驗證的 MSIL，請在您的元件上執行[Peverify （Peverify 工具）](/dotnet/framework/tools/peverify-exe-peverify-tool) 。 使用 **/transparent**選項來執行 PEVerify，這會將輸出限制為只有無法驗證的透明方法會造成錯誤。 如果未使用/transparent 選項，PEVerify 也會驗證允許包含無法驗證之程式碼的重要方法。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
-若要修正此規則的違規, 請使用<xref:System.Security.SecurityCriticalAttribute>或<xref:System.Security.SecuritySafeCriticalAttribute>屬性來標記方法, 或移除無法驗證的程式碼。
+若要修正此規則的違規，請使用<xref:System.Security.SecurityCriticalAttribute>或<xref:System.Security.SecuritySafeCriticalAttribute>屬性來標記方法，或移除無法驗證的程式碼。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
 請勿隱藏此規則的警告。
 
 ## <a name="example"></a>範例
-這個範例中的方法使用無法驗證的程式碼, 而且應該<xref:System.Security.SecurityCriticalAttribute>以<xref:System.Security.SecuritySafeCriticalAttribute>或屬性標記。
+這個範例中的方法使用無法驗證的程式碼，而且應該<xref:System.Security.SecurityCriticalAttribute>以<xref:System.Security.SecuritySafeCriticalAttribute>或屬性標記。
 
 [!code-csharp[FxCop.Security.CA2137.TransparentMethodsMustBeVerifiable#1](../code-quality/codesnippet/CSharp/ca2137-transparent-methods-must-contain-only-verifiable-il_1.cs)]

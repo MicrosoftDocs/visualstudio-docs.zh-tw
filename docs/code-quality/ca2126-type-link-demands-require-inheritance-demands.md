@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 2be42519f87c3c040c1f80c80d53d490853d986e
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 4f01ba5af7640521333093e4bba1f36a95363b60
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68920757"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71232458"
 ---
 # <a name="ca2126-type-link-demands-require-inheritance-demands"></a>CA2126:必須同時具有類型連結要求和繼承要求
 
@@ -32,16 +32,16 @@ ms.locfileid: "68920757"
 |TypeName|TypeLinkDemandsRequireInheritanceDemands|
 |CheckId|CA2126|
 |分類|Microsoft.Security|
-|中斷變更|中斷|
+|重大變更|中斷|
 
 ## <a name="cause"></a>原因
-公用未密封型別受到連結要求的保護, 具有可覆寫的方法, 而且型別和方法都不會受到繼承要求的保護。
+公用未密封型別受到連結要求的保護，具有可覆寫的方法，而且型別和方法都不會受到繼承要求的保護。
 
 ## <a name="rule-description"></a>規則描述
-方法或其宣告類型的連結要求需要方法的立即呼叫端具有指定的許可權。 方法的繼承需求需要覆寫方法, 才能擁有指定的許可權。 類型的繼承需求需要衍生類別具有指定的許可權。
+方法或其宣告類型的連結要求需要方法的立即呼叫端具有指定的許可權。 方法的繼承需求需要覆寫方法，才能擁有指定的許可權。 類型的繼承需求需要衍生類別具有指定的許可權。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
-若要修正此規則的違規情形, 請使用與連結要求相同之許可權的繼承要求來保護類型或方法。
+若要修正此規則的違規情形，請使用與連結要求相同之許可權的繼承要求來保護類型或方法。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
 請勿隱藏此規則的警告。

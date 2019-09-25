@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 89edba30a95d61268aebb26de8d973f6201c0fcf
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: 54f7d3a0efc2f6199c030c8dd488de3b5b158240
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66714760"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71231716"
 ---
 # <a name="ca2210-assemblies-should-have-valid-strong-names"></a>CA2210:組件應該具備有效的強式名稱
 
@@ -28,73 +28,73 @@ ms.locfileid: "66714760"
 |TypeName|AssembliesShouldHaveValidStrongNames|
 |CheckId|CA2210|
 |分類|Microsoft.Design|
-|中斷變更|非中斷|
+|重大變更|不中斷|
 
 ## <a name="cause"></a>原因
 
-未使用強式名稱簽署組件無法驗證強式名稱，或無法有效目前登錄設定的電腦沒有強式名稱。
+元件不是以強式名稱簽署、無法驗證強式名稱，或如果沒有電腦目前的登錄設定，強式名稱就會無效。
 
 ## <a name="rule-description"></a>規則描述
 
-此規則會擷取並驗證組件的強式名稱。 如果下列任一項成立，就會發生違規：
+此規則會抓取並驗證元件的強式名稱。 如果下列任何一項為真，就會發生違規：
 
-- 組件沒有強式名稱。
+- 元件沒有強式名稱。
 
-- 登入後，組件已遭修改。
+- 元件在簽署後已改變。
 
-- 組件是延遲簽章。
+- 元件會延遲簽署。
 
-- 不正確地簽署組件，或簽署失敗。
+- 元件的簽章不正確，或簽署失敗。
 
-- 組件需要登錄設定，才能通過驗證。 比方說，強式名稱工具 (Sn.exe) 用來略過組件的驗證。
+- 元件需要登錄設定，才能通過驗證。 例如，強式名稱工具（Sn.exe）是用來略過元件的驗證。
 
-強式名稱可避免用戶端在不知情的狀況下，載入已遭他人修改的組件。 除了極少數的案例以外，您都應該避免部署沒有強式名稱的組件。 如果您共用或散發未正確簽署的組件，表示這個組件或許已遭他人修改，通用語言執行平台可能不會載入組件，或是使用者可能必須停用電腦上的驗證作業。 沒有強式名稱的組件具有下列缺點：
+強式名稱可避免用戶端在不知情的狀況下，載入已遭他人修改的組件。 除了極少數的案例以外，您都應該避免部署沒有強式名稱的組件。 如果您共用或散發未正確簽署的組件，表示這個組件或許已遭他人修改，通用語言執行平台可能不會載入組件，或是使用者可能必須停用電腦上的驗證作業。 沒有強式名稱的元件具有下列缺點：
 
-- 無法驗證它的起源。
+- 無法驗證其原始來源。
 
-- Common language runtime 不警告使用者組件的內容已被竄改。
+- 如果元件的內容已更改，common language runtime 就無法警告使用者。
 
-- 它不能載入至全域組件快取。
+- 它無法載入全域組件快取中。
 
-請注意，載入和分析的延遲簽署組件，您必須停用組件的驗證。
+請注意，若要載入和分析延遲簽署的元件，您必須停用元件的驗證。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
 
-### <a name="create-a-key-file"></a>建立金鑰檔案
+### <a name="create-a-key-file"></a>建立金鑰檔
 
-使用下列程序的其中一個：
+請使用下列其中一個程式：
 
-- 使用[組件連結器工具 (Al.exe)](/dotnet/framework/tools/al-exe-assembly-linker)。
+- 使用[元件連結器工具（al.exe）](/dotnet/framework/tools/al-exe-assembly-linker)。
 
-- 如需.NET Framework 2.0 中，使用`/keyfile`或是`/keycontainer`編譯器選項[/KEYFILE （指定金鑰或金鑰組以簽署組件）](/cpp/build/reference/keyfile-specify-key-or-key-pair-to-sign-an-assembly)或[/KEYCONTAINER （指定金鑰容器以簽署組件）](/cpp/build/reference/keycontainer-specify-a-key-container-to-sign-an-assembly)中的連結器選項C++)。
+- 針對`/keyfile` .NET Framework 2.0，請在中C++使用或`/keycontainer`編譯器選項[/KEYFILE （指定金鑰或金鑰組來簽署元件）](/cpp/build/reference/keyfile-specify-key-or-key-pair-to-sign-an-assembly)或[/KEYCONTAINER （指定要簽署元件的金鑰容器）](/cpp/build/reference/keycontainer-specify-a-key-container-to-sign-an-assembly)連結器選項。
 
-- 針對.NET Framework v1.0 或 v1.1，使用任何一種<xref:System.Reflection.AssemblyKeyFileAttribute?displayProperty=fullName>或<xref:System.Reflection.AssemblyKeyNameAttribute?displayProperty=fullName>屬性。
+- 針對 .NET Framework v1.0 或1.1 版，請使用<xref:System.Reflection.AssemblyKeyFileAttribute?displayProperty=fullName>或<xref:System.Reflection.AssemblyKeyNameAttribute?displayProperty=fullName>屬性。
 
-### <a name="sign-your-assembly-with-a-strong-name-in-visual-studio"></a>在 Visual Studio 中以強式名稱組件簽章
+### <a name="sign-your-assembly-with-a-strong-name-in-visual-studio"></a>在 Visual Studio 中使用強式名稱簽署元件
 
-1. 在 Visual Studio 中，開啟您的解決方案。
+1. 在 Visual Studio 中，開啟您的方案。
 
-2. 在 **方案總管**，以滑鼠右鍵按一下您的專案，然後按一下**屬性。**
+2. 在**方案總管**中，以滑鼠右鍵按一下您的專案，然後按一下 [**屬性]。**
 
-3. 按一下  **Signing**索引標籤，然後選取**簽署組件**核取方塊。
+3. 按一下 [**簽署**] 索引標籤，然後選取 [**簽署元件**] 核取方塊。
 
-4. 從**選擇強式名稱金鑰檔**，選取**新增**。
+4. 從 **[選擇強式名稱金鑰**檔] 中，選取 [**新增**]。
 
-   **建立強式名稱金鑰**視窗會顯示。
+   [**建立強式名稱金鑰**] 視窗隨即顯示。
 
-5. 在 **金鑰檔名稱**，輸入強式名稱金鑰的名稱。
+5. 在 [**金鑰檔名稱**] 中，輸入強式名稱金鑰的名稱。
 
-6. 選擇是否要保護的金鑰與密碼，然後按一下**確定**。
+6. 選擇是否要使用密碼來保護金鑰，然後按一下 **[確定]** 。
 
-7. 在 **方案總管**，以滑鼠右鍵按一下您的專案，然後按一下**建置**。
+7. 在**方案總管**中，以滑鼠右鍵按一下您的專案，然後按一下 [**建立**]。
 
-### <a name="sign-your-assembly-with-a-strong-name-outside-visual-studio"></a>Visual Studio 外部的強式名稱組件簽章
+### <a name="sign-your-assembly-with-a-strong-name-outside-visual-studio"></a>使用外的強式名稱簽署元件 Visual Studio
 
-使用[強式名稱工具 (Sn.exe)](/dotnet/framework/tools/sn-exe-strong-name-tool)。
+使用[強式名稱工具（sn.exe）](/dotnet/framework/tools/sn-exe-strong-name-tool)。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
 
-只有隱藏此規則的警告，如果環境中使用組件位置竄改內容不是問題。
+只有在不考慮與內容進行篡改的環境中使用元件時，才隱藏此規則的警告。
 
 ## <a name="see-also"></a>另請參閱
 

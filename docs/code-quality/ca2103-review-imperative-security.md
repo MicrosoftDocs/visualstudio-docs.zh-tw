@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7acbb9d0127dd2ddb6668e72db8fa88124ec2b3c
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: a2792f1cccad26fe5bb073af800a2fcf0ebcb4b4
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68921420"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71232988"
 ---
 # <a name="ca2103-review-imperative-security"></a>CA2103:必須檢閱命令式安全性
 
@@ -28,21 +28,21 @@ ms.locfileid: "68921420"
 |TypeName|ReviewImperativeSecurity|
 |CheckId|CA2103|
 |分類|Microsoft.Security|
-|中斷變更|中斷|
+|重大變更|中斷|
 
 ## <a name="cause"></a>原因
 方法會使用命令式安全性，而且可能會利用只要要求正在使用中就可能變更的狀態資訊或傳回值建構權限。
 
 ## <a name="rule-description"></a>規則描述
-相較于宣告式安全性, 命令式安全性會使用 managed 物件來指定程式碼執行期間的許可權和安全性動作, 這會使用屬性來儲存中繼資料中的許可權和動作。 命令式安全性非常有彈性, 因為您可以設定權限物件的狀態, 並使用在執行時間之前無法使用的資訊來選取安全性動作。 這項彈性的風險在於, 只要動作作用中, 您用來判斷許可權狀態的執行時間資訊就不會保持不變。
+相較于宣告式安全性，命令式安全性會使用 managed 物件來指定程式碼執行期間的許可權和安全性動作，這會使用屬性來儲存中繼資料中的許可權和動作。 命令式安全性非常有彈性，因為您可以設定權限物件的狀態，並使用在執行時間之前無法使用的資訊來選取安全性動作。 這項彈性的風險在於，只要動作作用中，您用來判斷許可權狀態的執行時間資訊就不會保持不變。
 
 請盡可能使用宣告式安全性。 宣告式需求比較容易瞭解。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
-請檢查命令式安全性需求, 確保許可權的狀態不依賴在使用許可權時可能變更的資訊。
+請檢查命令式安全性需求，確保許可權的狀態不依賴在使用許可權時可能變更的資訊。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
-如果許可權不依賴變更的資料, 則可以安全地隱藏此規則的警告。 不過, 最好將命令式需求變更為其宣告式對應項。
+如果許可權不依賴變更的資料，則可以安全地隱藏此規則的警告。 不過，最好將命令式需求變更為其宣告式對應項。
 
 ## <a name="see-also"></a>另請參閱
 

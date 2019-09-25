@@ -10,12 +10,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 383011e53b14ec2cc7dd7474cd050f05295a2a73
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 6bcf32401abdeae499097bc5187d11154e7dfc6e
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65841475"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71237410"
 ---
 # <a name="ca3002-review-code-for-xss-vulnerabilities"></a>CA3002：檢閱程式碼是否有 XSS 弱點
 
@@ -24,37 +24,37 @@ ms.locfileid: "65841475"
 |TypeName|ReviewCodeForXssVulnerabilities|
 |CheckId|CA3002|
 |分類|Microsoft.Security|
-|中斷變更|非中斷|
+|重大變更|不中斷|
 
 ## <a name="cause"></a>原因
 
-可能不受信任的 HTTP 要求輸入連至原始的 HTML 輸出。
+可能不受信任的 HTTP 要求輸入會到達原始 HTML 輸出。
 
 ## <a name="rule-description"></a>規則描述
 
-當使用不受信任的輸入，從 web 要求，留意跨網站指令碼 (XSS) 攻擊。 XSS 攻擊會將未受信任的輸入插入原始 HTML 輸出，讓攻擊者執行惡意指令碼或惡意修改在網頁中的內容。 典型的技巧會讓`<script>`輸入中的惡意程式碼的項目。 如需詳細資訊，請參閱 < [OWASP 的 XSS](https://www.owasp.org/index.php/Cross-site_Scripting_(XSS))。
+使用來自 web 要求的未受信任輸入時，請留意跨網站腳本（XSS）攻擊。 XSS 攻擊會將不受信任的輸入插入原始 HTML 輸出中，讓攻擊者能夠執行惡意腳本或惡意修改網頁中的內容。 典型的技巧是將`<script>`具有惡意程式碼的元素放入輸入。 如需詳細資訊，請參閱[OWASP 的 XSS](https://www.owasp.org/index.php/Cross-site_Scripting_(XSS))。
 
-此規則會嘗試尋找達到原始 HTML 輸出的 HTTP 要求中的輸入。
-
-> [!NOTE]
-> 此規則無法追蹤多個組件的資料。 比方說，如果一個組件會讀取 HTTP 要求輸入，並再將它傳遞給輸出原始 HTML 的另一個組件，此規則將不會產生警告。
+此規則會嘗試從 HTTP 要求尋找到達原始 HTML 輸出的輸入。
 
 > [!NOTE]
-> 沒有可設定的限制，深度此規則會分析資料流不同的方法呼叫。 請參閱[分析器組態](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis)如何 EditorConfig 檔案中設定限制。
+> 此規則無法跨元件追蹤資料。 例如，如果一個元件讀取 HTTP 要求輸入，然後將它傳遞給另一個輸出原始 HTML 的元件，此規則就不會產生警告。
+
+> [!NOTE]
+> 此規則會在方法呼叫中分析資料流的深度有一個可設定的限制。 如需如何在 EditorConfig 檔中設定限制的詳細說明，請參閱[分析器](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis)設定。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
 
-- 而不是輸出原始 HTML，使用方法或屬性的第一個 HTML 編碼輸入。
-- HTML 編碼不受信任的資料，然後才會輸出原始 HTML。
+- 請改用方法或屬性，它會先對其輸入進行 HTML 編碼，而不是輸出原始 HTML。
+- 在輸出原始 HTML 之前，對不受信任的資料進行 HTML 編碼。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
 
-它可安全地隱藏此規則的警告，如果：
-- 您知道輸入已驗證對已知安全的一組字元不包含 HTML。
-- 您知道資料是 HTML 編碼的方式，此規則偵測不到。
+在下列情況下，您可以放心地隱藏此規則中的警告：
+- 您知道輸入是針對一組不包含 HTML 的已知安全字元進行驗證。
+- 您知道資料是以 HTML 編碼，以此規則不會偵測到的方式。
 
 > [!NOTE]
-> 此規則可能會誤判報告的一些方法或屬性的 HTML 編碼其輸入。
+> 此規則可能會針對某些方法或屬性（以 HTML 編碼其輸入）報告誤報。
 
 ## <a name="pseudo-code-examples"></a>虛擬程式碼範例
 

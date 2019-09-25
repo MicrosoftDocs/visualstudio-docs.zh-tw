@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f0075a6296e839030448c0209c77f1717a5fcb1
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: a9a3070abc1f2bab3f3658589db54b656a635e2b
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68920128"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71238074"
 ---
 # <a name="ca2236-call-base-class-methods-on-iserializable-types"></a>CA2236:必須呼叫 ISerializable 類型上的基底類別方法
 
@@ -31,26 +31,26 @@ ms.locfileid: "68920128"
 |TypeName|CallBaseClassMethodsOnISerializableTypes|
 |CheckId|CA2236|
 |分類|Microsoft.Usage|
-|中斷變更|非中斷|
+|重大變更|不中斷|
 
 ## <a name="cause"></a>原因
-型別衍生自實<xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName>介面的型別, 而下列其中一個條件為 true:
+型別衍生自實<xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName>介面的型別，而下列其中一個條件為 true：
 
-- 型別會實作為序列化的函式, 也就是具有<xref:System.Runtime.Serialization.SerializationInfo?displayProperty=fullName>、 <xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName>參數簽章的函式, 但不會呼叫基底型別的序列化函式。
+- 型別會實作為序列化的函式，也就是具有<xref:System.Runtime.Serialization.SerializationInfo?displayProperty=fullName>、 <xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName>參數簽章的函式，但不會呼叫基底型別的序列化函式。
 
-- 類型<xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A?displayProperty=fullName>會執行方法, 但不會呼叫基<xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A>底類型的方法。
+- 類型<xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A?displayProperty=fullName>會執行方法，但不會呼叫基<xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A>底類型的方法。
 
 ## <a name="rule-description"></a>規則描述
-在自訂序列化程式中, 型別會<xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A>實作為序列化其欄位的方法, 以及將欄位還原序列化的序列化函式。 如果類型衍生自實<xref:System.Runtime.Serialization.ISerializable>介面的類型, 則應該呼叫基底類型<xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A>方法和序列化的函式, 以序列化/還原序列化基底類型的欄位。 否則, 類型將不會正確地序列化和還原序列化。 請注意, 如果衍生的型別不會加入任何新的欄位, 則型別不需要<xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A>實作為方法, 也不會呼叫基底型別的對等專案。
+在自訂序列化程式中，型別會<xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A>實作為序列化其欄位的方法，以及將欄位還原序列化的序列化函式。 如果類型衍生自實<xref:System.Runtime.Serialization.ISerializable>介面的類型，則應該呼叫基底類型<xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A>方法和序列化的函式，以序列化/還原序列化基底類型的欄位。 否則，類型將不會正確地序列化和還原序列化。 請注意，如果衍生的型別不會加入任何新的欄位，則型別不需要<xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A>實作為方法，也不會呼叫基底型別的對等專案。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
-若要修正此規則的違規, 請從對應的<xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A>衍生類型方法或函式呼叫基底類型方法或序列化的函式。
+若要修正此規則的違規，請從對應的<xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A>衍生類型方法或函式呼叫基底類型方法或序列化的函式。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
 請勿隱藏此規則的警告。
 
 ## <a name="example"></a>範例
-下列範例會藉由呼叫基類的序列化函式和<xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A>方法, 顯示符合規則的衍生型別。
+下列範例會藉由呼叫基類的序列化函式和<xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A>方法，顯示符合規則的衍生型別。
 
 [!code-vb[FxCop.Usage.CallBaseISerializable#1](../code-quality/codesnippet/VisualBasic/ca2236-call-base-class-methods-on-iserializable-types_1.vb)]
 [!code-csharp[FxCop.Usage.CallBaseISerializable#1](../code-quality/codesnippet/CSharp/ca2236-call-base-class-methods-on-iserializable-types_1.cs)]

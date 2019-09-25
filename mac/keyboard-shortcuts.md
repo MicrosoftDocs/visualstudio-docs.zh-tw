@@ -5,18 +5,18 @@ ms.date: 03/14/2019
 author: asb3993
 ms.author: amburns
 ms.assetid: 48E06A61-7294-4EC8-A09D-1763C32AD910
-ms.openlocfilehash: bb0d92496412792643ae67745afae2fec51fca90
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
-ms.translationtype: HT
+ms.openlocfilehash: 3e6ae24ea9e9a5dea263c2449a9b23b6027f7a96
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68872081"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71211317"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio-for-mac"></a>Visual Studio for Mac 中的預設鍵盤快速鍵
 
 如需鍵盤協助工具的相關資訊，請參閱[如何：使用鍵盤巡覽](~/accessibility.md#how-to-use-keyboard-navigation)。
 
-只需使用適當的鍵盤快速鍵，您就可以在 Visual Studio for Mac 中存取各種命令。 此文件列出 **Visual Studio** 按鍵繫結關係配置的預設快速鍵。 如需如何變更按鍵繫結關係配置的相關詳細資訊，請參閱[自訂 IDE](~/customizing-the-ide.md#key-bindings)。 您也可以使用 [Visual Studio for Mac]   > [喜好設定]  功能表項目，然後在 [喜好設定]  視窗中選擇 [環境]   > [按鍵繫結關係]  以自訂命令的捷徑。
+只需使用適當的鍵盤快速鍵，您就可以在 Visual Studio for Mac 中存取各種命令。 本檔列出**Visual Studio for Mac**金鑰系結配置的預設快捷方式。 如需如何變更按鍵繫結關係配置的相關詳細資訊，請參閱[自訂 IDE](~/customizing-the-ide.md#key-bindings)。 您也可以使用 [Visual Studio for Mac] > [喜好設定] 功能表項目，然後在 [喜好設定] 視窗中選擇 [環境] > [按鍵繫結關係] 以自訂命令的捷徑。
 
 > [!TIP]
 > 此文件中顯示的鍵盤快速鍵，以及 Visual Studio for Mac 中的按鍵繫結關係喜好設定，都會使用 macOS 中常用的符號呈現。 如果不知道符號外觀，請檢閱 [macOS 按鍵符號查找表](#macos-key-symbols-lookup)。

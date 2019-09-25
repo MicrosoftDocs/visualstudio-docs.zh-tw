@@ -9,12 +9,12 @@ metadata:
   ms.author: mikejo
   manager: jillfra
   ms.date: 09/17/2019
-  ms.openlocfilehash: e682940552de083c167ac573b37d1ba5b7f10a4a
-  ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
+  ms.openlocfilehash: a2fc975c390283104fc4aa2c79244dba7e4e669e
+  ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
   ms.translationtype: HT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 09/19/2019
-  ms.locfileid: "71130597"
+  ms.lasthandoff: 09/24/2019
+  ms.locfileid: "71238096"
 landingContent:
 - title: 關於部署
   linkLists:
@@ -63,7 +63,7 @@ landingContent:
   - linkListType: tutorial
     links:
     - text: 將 ASP.NET Core 發佈到 Azure
-      url: /aspnet/core/tutorials/publish-to-azure-webapp-using-vsd
+      url: /aspnet/core/tutorials/publish-to-azure-webapp-using-vs
     - text: 匯入發佈設定並部署至 IIS
       url: tutorial-import-publish-settings-iis.md
     - text: 使用 Git 發佈
@@ -73,7 +73,7 @@ landingContent:
   - linkListType: how-to-guide
     links:
     - text: 使用安裝專案部署 (C/C++)
-      url: /cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project.md
+      url: /cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project
     - text: 封裝適用於 Microsoft Store 的傳統型應用程式
       url: /windows/msix/desktop/desktop-to-uwp-packaging-dot-net
 - title: 部署 Python 應用程式

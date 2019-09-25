@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6de817e3aaecbdd1c89cc2174e91126ea39d99d7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 42efb51dfe9c447538fe8f01bdd37c73bf993d8f
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62541112"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71237123"
 ---
 # <a name="ca3075-insecure-dtd-processing"></a>CA3075:不安全的 DTD 處理
 
@@ -22,7 +22,7 @@ ms.locfileid: "62541112"
 |TypeName|InsecureDTDProcessing|
 |CheckId|CA3075|
 |分類|Microsoft.Security|
-|中斷變更|非中斷|
+|重大變更|不中斷|
 
 ## <a name="cause"></a>原因
 
@@ -30,41 +30,41 @@ ms.locfileid: "62541112"
 
 ## <a name="rule-description"></a>規則描述
 
-*文件類型定義 (DTD)* 是  [World Wide Web Consortium (W3C) Extensible Markup Language (XML) 1.0](http://www.w3.org/TR/2008/REC-xml-20081126/)中針對 XML 剖析器用來判斷文件有效性所定義之兩種方式的其中一種。 此規則會搜尋屬性和執行個體不受信任的資料已接受的警告開發人員潛在[資訊洩漏](/dotnet/framework/wcf/feature-details/information-disclosure)威脅或[阻絕服務 (DoS)](/dotnet/framework/wcf/feature-details/denial-of-service)攻擊。 下列情況會觸發此規則：
+*文件類型定義 (DTD)* 是  [World Wide Web Consortium (W3C) Extensible Markup Language (XML) 1.0](http://www.w3.org/TR/2008/REC-xml-20081126/)中針對 XML 剖析器用來判斷文件有效性所定義之兩種方式的其中一種。 此規則會搜尋接受不受信任資料的屬性和實例，以警告開發人員潛在的[資訊洩漏](/dotnet/framework/wcf/feature-details/information-disclosure)威脅或[拒絕服務（DoS）](/dotnet/framework/wcf/feature-details/denial-of-service)攻擊。 下列情況會觸發此規則：
 
 - <xref:System.Xml.XmlReader> 執行個體上已啟用 DtdProcessing，它會使用 <xref:System.Xml.XmlUrlResolver>解析外部 XML 項目。
 
 - XML 中有設定 <xref:System.Xml.XmlNode.InnerXml%2A> 屬性。
 
-- <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A> 屬性設定為 剖析。
+- <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A>屬性設定為 Parse。
 
-- 未受信任的輸入處理使用<xref:System.Xml.XmlResolver>而不是<xref:System.Xml.XmlSecureResolver>。
+- 不受信任的<xref:System.Xml.XmlResolver> <xref:System.Xml.XmlSecureResolver>輸入是使用來處理，而不是。
 
-- <xref:System.Xml.XmlReader.Create%2A?displayProperty=nameWithType>方法會叫用不安全<xref:System.Xml.XmlReaderSettings>執行個體或完全沒有執行個體。
+- 使用不安全<xref:System.Xml.XmlReaderSettings>的實例或完全沒有實例來叫用方法。<xref:System.Xml.XmlReader.Create%2A?displayProperty=nameWithType>
 
-- <xref:System.Xml.XmlReader> 建立不安全的預設值或值。
+- <xref:System.Xml.XmlReader>會使用不安全的預設設定或值來建立。
 
-在每個這種情況下，結果會是相同： 其中一個檔案系統或網路共用位置處理 XML 的機器的內容將會公開給攻擊者，或 DTD 處理可用來當做 DoS 向量。
+在上述每一種情況下，結果都相同：從處理 XML 的電腦上的檔案系統或網路共用的內容將會公開給攻擊者，或者 DTD 處理可以當做 DoS 向量使用。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
 
-- 可以攔截並處理所有 XmlTextReader 例外狀況，正確地以避免路徑資訊外洩。
+- 適當地攔截並處理所有的 XmlTextReader 例外狀況，以避免路徑資訊洩漏。
 
-- 使用<xref:System.Xml.XmlSecureResolver>來限制 XmlTextReader 可以存取的資源。
+- <xref:System.Xml.XmlSecureResolver>使用來限制 XmlTextReader 可以存取的資源。
 
 - 藉由將 <xref:System.Xml.XmlReader> 屬性設為 <xref:System.Xml.XmlResolver> null **，來禁止**開啟外部資源。
 
-- 請確認<xref:System.Data.DataViewManager.DataViewSettingCollectionString%2A?displayProperty=nameWithType>屬性會被指派來自受信任的來源。
+- 請確定已從信任的來源指派屬性。<xref:System.Data.DataViewManager.DataViewSettingCollectionString%2A?displayProperty=nameWithType>
 
 **.NET 3.5 和更早版本**
 
-- 停用 DTD 處理，如果您正在處理不受信任的來源藉由設定<xref:System.Xml.XmlReaderSettings.ProhibitDtd%2A>屬性，以 **，則為 true**。
+- 如果您正在處理不受信任的來源，請將<xref:System.Xml.XmlReaderSettings.ProhibitDtd%2A>屬性設定為**true**以停用 DTD 處理。
 
 - XmlTextReader 類別具有完全信任的繼承要求。
 
 **.NET 4 和更新版本**
 
-- 避免啟用 DtdProcessing，如果您正在處理不受信任的來源，藉由設定<xref:System.Xml.XmlReaderSettings.DtdProcessing%2A?displayProperty=nameWithType>屬性，以**禁止**或是**忽略**。
+- 如果您正在處理不受信任的來源，請將屬性<xref:System.Xml.XmlReaderSettings.DtdProcessing%2A?displayProperty=nameWithType>設定為 [**禁止**] 或 [**忽略**]，以避免啟用 DtdProcessing。
 
 - 請確認在所有 InnerXml 案例中 Load() 方法皆會使用 XmlReader 執行個體。
 

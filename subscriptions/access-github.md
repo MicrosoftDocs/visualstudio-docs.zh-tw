@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/19/2019
 ms.topic: conceptual
 description: 瞭解新的 Visual Studio + GitHub 供應專案
-ms.openlocfilehash: 6c34ecc37285166135584a98453a1e92393073ab
-ms.sourcegitcommit: a2df993dc5e11c5131dbfcba686f0028a589068f
+ms.openlocfilehash: 09168bffbdb8caf9e6366335f5d08f5bf81573f9
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "71150085"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71238139"
 ---
 # <a name="introducing-visual-studio-subscriptions-with-github-enterprise"></a>含 GitHub Enterprise 的 Visual Studio 訂用帳戶簡介  
 
@@ -32,7 +32,7 @@ ms.locfileid: "71150085"
 
 Visual Studio Enterprise、Visual Studio Professional 與 GitHub Enterprise 的現有 SKU 也會各自繼續開放使用。 
 
-若要深入了解權益、選項及定價，請瀏覽 https://visualstudio.microsoft.com/subscriptions/visual-studio-github 。 
+若要深入瞭解權益和選項，請 https://visualstudio.microsoft.com/subscriptions/visual-studio-github 造訪。 
 
 ## <a name="getting-your-subscriptions"></a>取得您的訂用帳戶
 

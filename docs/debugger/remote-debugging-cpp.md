@@ -1,5 +1,5 @@
 ---
-title: 遠端偵錯視覺效果C++專案 |Microsoft Docs
+title: 遠端 Debug a Visual C++專案 |Microsoft Docs
 ms.custom: remotedebugging
 ms.date: 08/14/2018
 ms.topic: conceptual
@@ -17,49 +17,49 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fbfdb246769ac55afd7f164d91673e39e293f4c4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 81a5ebba2d14a0e091b3b0bcd78a066ef50ed759
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62903495"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71211106"
 ---
-# <a name="remote-debugging-a-visual-c-project-in-visual-studio"></a>遠端偵錯視覺效果C++在 Visual Studio 中的專案
-若要偵錯在不同電腦上的 Visual Studio 應用程式安裝，您將在其中部署您的應用程式的電腦上執行遠端工具，設定您的專案從 Visual Studio 中，連接到遠端電腦，然後部署並執行您的應用程式。
+# <a name="remote-debugging-a-visual-c-project-in-visual-studio"></a>在 Visual Studio 中遠端C++調試視覺化專案
+若要在不同的電腦上進行 Visual Studio 應用程式的偵測，請在您要部署應用程式的電腦上安裝並執行遠端工具、將專案設定為從 Visual Studio 連接到遠端電腦，然後部署並執行您的應用程式。
 
-![遠端偵錯工具元件](../debugger/media/remote-debugger-client-apps.png "Remote_debugger_components")
+![遠端偵錯程式元件](../debugger/media/remote-debugger-client-apps.png "Remote_debugger_components")
 
-如需遠端偵錯通用 Windows App (UWP) 的資訊，請參閱[偵錯 Installed App Package](debug-installed-app-package.md)。
+如需遠端偵測通用 Windows 應用程式（UWP）的相關資訊，請參閱[Debug 已安裝的應用程式套件](debug-installed-app-package.md)。
 
 ## <a name="requirements"></a>需求
 
-遠端偵錯工具會支援在 Windows 7 及更新版本 (不 phone) 和開頭為 Windows Server 2008 Service Pack 2 的 Windows server 的版本。 需求的完整清單，請參閱 <<c0> [ 需求](../debugger/remote-debugging.md#requirements_msvsmon)。
+從 Windows Server 2008 Service Pack 2 開始，Windows 7 和更新版本（非電話）和 Windows Server 版本都支援遠端偵錯程式。 如需完整的需求清單，請參閱[需求](../debugger/remote-debugging.md#requirements_msvsmon)。
 
 > [!NOTE]
-> 不支援透過 proxy 連線的兩部電腦之間的偵錯。 透過高延遲或低頻寬連線，例如撥號網際網路，或透過網際網路偵錯跨國家/地區不建議使用和可能失敗或非常慢。
+> 不支援透過 proxy 連線的兩部電腦之間的調試。 不建議透過高延遲或低頻寬的連線（例如撥號網際網路，或透過網際網路跨國家/地區）進行調試，而且可能會失敗，或速度變慢。
 
 ## <a name="download-and-install-the-remote-tools"></a>下載及安裝遠端工具
 
 [!INCLUDE [remote-debugger-download](../debugger/includes/remote-debugger-download.md)]
 
 > [!TIP]
-> 在某些情況下，它可以是最有效率，若要從檔案共用執行遠端偵錯工具。 如需詳細資訊，請參閱 <<c0> [ 從檔案共用執行遠端偵錯工具](../debugger/remote-debugging.md#fileshare_msvsmon)。
+> 在某些情況下，從檔案共用執行遠端偵錯程式會是最有效率的作法。 如需詳細資訊，請參閱[從檔案共用執行遠端偵錯程式](../debugger/remote-debugging.md#fileshare_msvsmon)。
 
 ## <a name="BKMK_setup"></a> 設定遠端偵錯工具
 
 [!INCLUDE [remote-debugger-configuration](../debugger/includes/remote-debugger-configuration.md)]
 
 > [!NOTE]
-> 如果您需要新增額外的使用者的權限變更驗證模式或遠端偵錯工具連接埠號碼，請參閱[設定遠端偵錯工具](../debugger/remote-debugging.md#configure_msvsmon)。
+> 如果您需要為其他使用者新增許可權，請變更遠端偵錯程式的驗證模式或埠號碼，請參閱[設定遠端偵錯程式](../debugger/remote-debugging.md#configure_msvsmon)。
 
 ## <a name="remote_cplusplus"></a> 遠端對 Visual C++ 專案進行偵錯
- 在下列程序中，名稱和專案的路徑是 C:\remotetemp\MyMfc，而遠端電腦的名稱是**MJO DL**。
+ 在下列程式中，專案的名稱和路徑是 C:\remotetemp\MyMfc，而遠端電腦的名稱是**MJO-DL**。
 
 1. 建立名為 **mymfc** 的 MFC 應用程式。
 
 2. 在應用程式某處設定容易達到的中斷點，例如在 **MainFrm.cpp** 其中 `CMainFrame::OnCreate` 的開頭。
 
-3. 在 [方案總管] 中，以滑鼠右鍵按一下專案，然後選取**屬性**。 開啟 [偵錯] 索引標籤。
+3. 在方案總管中，以滑鼠右鍵按一下專案，然後選取 [**屬性**]。 開啟 [偵錯] 索引標籤。
 
 4. 將 [要啟動的偵錯工具] 設為 [遠端 Windows 偵錯工具]。
 
@@ -71,15 +71,15 @@ ms.locfileid: "62903495"
    |-|-|
    |遠端命令|C:\remotetemp\mymfc.exe|
    |工作目錄|C:\remotetemp|
-   |遠端伺服器名稱|MJO DL:*連接埠號碼*|
+   |遠端伺服器名稱|MJO-DL：*portnumber*|
    |連線|遠端使用 Windows 驗證|
    |偵錯工具類型|僅限原生|
    |部署目錄|C:\remotetemp.|
    |要部署的其他檔案|C:\data\mymfcdata.txt.|
 
-    如果您部署其他檔案 （選擇性） 時，資料夾必須存在兩台電腦上。
+    如果您部署其他檔案（選擇性），則此資料夾必須存在於兩部電腦上。
 
-6. 在 [方案總管] 中，以滑鼠右鍵按一下方案，然後選擇**Configuration Manager**。
+6. 在方案總管中，以滑鼠右鍵按一下方案，然後選擇 [ **Configuration Manager**]。
 
 7. 在 [偵錯] 組態中，選取 [部署] 核取方塊。
 
@@ -89,25 +89,25 @@ ms.locfileid: "62903495"
 
 9. 可執行檔會自動部署到遠端電腦。
 
-10. 出現提示時，輸入網路認證以連接到遠端電腦。
+10. 如果出現提示，請輸入網路認證以連線到遠端電腦。
 
-     您的網路安全性組態的特定所需的認證。 比方說，網域的電腦上，您可能會選擇安全性憑證，或輸入您的網域名稱和密碼。 在非網域電腦上，您可能輸入的機器名稱和有效的使用者帳戶名稱，例如<strong>MJO-DL\name@something.com</strong>，以及正確的密碼。
+     所需的認證是您的網路安全性設定所特有。 例如，在網域電腦上，您可以選擇安全性憑證，或輸入您的功能變數名稱和密碼。 在非網域電腦上，您可能會輸入電腦名稱稱和有效的使用者帳戶名稱（例如<strong>MJO-DL\name@something.com</strong>），以及正確的密碼。
 
 11. 在 Visual Studio 的電腦上，您應該會看到執行過程在中斷點停止。
 
     > [!TIP]
     > 或者，您可以另外執行一個步驟來部署檔案。 在 [方案總管] 中，以滑鼠右鍵按一下 [mymfc] 節點，然後選擇 [部署]。
 
-    如果您有應用程式所需的非程式碼檔案，您可以指定在**其他要部署的檔案**上**遠端 Windows 偵錯工具**頁面。
+    如果您有應用程式所需的非程式碼檔案，您可以在 [**遠端 Windows 偵錯工具**] 頁面上，將它們指定**于要部署的其他**檔案中。
 
-    或者，您可以將檔案納入您的專案，並設定**內容**屬性設**是**中**屬性**每個檔案的頁面。 這些檔案會複製到**部署目錄**上指定**遠端 Windows 偵錯工具**頁面。 您也可以變更**項目類型**要**複製檔案**並指定額外的屬性，如果您需要的檔案複製到的子資料夾**部署目錄**。
+    或者，您可以在專案中包含檔案，並在每個檔案的 [**屬性**] 頁面中，將 [**內容**] 屬性設定為 **[是]** 。 這些檔案會複製到 [**遠端 Windows 偵錯工具**] 頁面上指定的**部署目錄**。 如果您需要將檔案複製到**部署目錄**的子資料夾，您也可以將**專案類型**變更為 [**複製**檔案]，並指定其他屬性。
 
 ## <a name="set-up-debugging-with-remote-symbols"></a>設定遠端符號偵錯
 
 [!INCLUDE [remote-debugger-symbols](../debugger/includes/remote-debugger-symbols.md)]
 
 ## <a name="see-also"></a>另請參閱
-- [Visual Studio 偵錯](../debugger/index.md)
+- [Visual Studio 偵錯](../debugger/index.yml)
 - [偵錯工具簡介](../debugger/debugger-feature-tour.md)
 - [設定 Windows 防火牆進行遠端偵錯](../debugger/configure-the-windows-firewall-for-remote-debugging.md)
 - [遠端偵錯工具連接埠指派](../debugger/remote-debugger-port-assignments.md)

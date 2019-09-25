@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 3eb216af1b6cd742aff83b248b6752adea292345
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 0d4fed5b16120ec069eaa4101670c88ad8f3a247
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68921844"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71234642"
 ---
 # <a name="ca1413-avoid-non-public-fields-in-com-visible-value-types"></a>CA1413:避免在 COM 可見實值類型中使用非公用欄位
 
@@ -31,21 +31,21 @@ ms.locfileid: "68921844"
 |TypeName|AvoidNonpublicFieldsInComVisibleValueTypes|
 |CheckId|CA1413|
 |分類|Microsoft.Interoperability|
-|中斷變更|中斷|
+|重大變更|中斷|
 
 ## <a name="cause"></a>原因
-特別標示為「元件物件模型 (COM) 可見」的實值型別會宣告非公用實例欄位。
+特別標示為「元件物件模型（COM）可見」的實值型別會宣告非公用實例欄位。
 
 ## <a name="rule-description"></a>規則描述
-COM 可見實值類型的非公用執行個體欄位對 COM 用戶端而言是可見的。 請參閱欄位內容, 以取得不應公開的資訊, 或將會有非預期的設計或安全性效果。
+COM 可見實值類型的非公用執行個體欄位對 COM 用戶端而言是可見的。 請參閱欄位內容，以取得不應公開的資訊，或將會有非預期的設計或安全性效果。
 
-根據預設, COM 可以看到所有公用實數值型別。 不過, 若要減少誤報, 此規則需要明確陳述類型的 COM 可見度。 包含的<xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName>元件必須以設定為`false`的標記, 而且類型<xref:System.Runtime.InteropServices.ComVisibleAttribute>必須以設定為`true`的標記。
+根據預設，COM 可以看到所有公用實數值型別。 不過，若要減少誤報，此規則需要明確陳述類型的 COM 可見度。 包含的<xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName>元件必須以設定為`false`的標記，而且類型<xref:System.Runtime.InteropServices.ComVisibleAttribute>必須以設定為`true`的標記。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
-若要修正此規則的違規, 並將欄位保留為隱藏狀態, 請將數值型別變更為參考型別<xref:System.Runtime.InteropServices.ComVisibleAttribute> , 或從類型中移除屬性。
+若要修正此規則的違規，並將欄位保留為隱藏狀態，請將數值型別變更為參考型別<xref:System.Runtime.InteropServices.ComVisibleAttribute> ，或從類型中移除屬性。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
-如果可以接受欄位的公開曝光, 則可以安全地隱藏此規則的警告。
+如果可以接受欄位的公開曝光，則可以安全地隱藏此規則的警告。
 
 ## <a name="example"></a>範例
 下列範例顯示違反規則的類型。

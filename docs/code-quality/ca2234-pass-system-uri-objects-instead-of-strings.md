@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 74484c5f014c9a677c321a0d9fed649f016ea3c9
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: b52d98716a774c05ca085e2b7023a5d1faa69baa
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69546878"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71237956"
 ---
 # <a name="ca2234-pass-systemuri-objects-instead-of-strings"></a>CA2234:必須傳遞 System.Uri 物件而非字串
 
@@ -31,40 +31,40 @@ ms.locfileid: "69546878"
 |-|-|
 |TypeName|PassSystemUriObjectsInsteadOfStrings|
 |CheckId|CA2234|
-|Category|Microsoft.Usage|
-|中斷變更|非中斷|
+|分類|Microsoft.Usage|
+|重大變更|不中斷|
 
 ## <a name="cause"></a>原因
 
-對方法進行呼叫, 其名稱包含 "uri"、"uri"、"urn"、"urn"、"url" 或 "url", 且方法的宣告類型包含具有<xref:System.Uri?displayProperty=fullName>參數的對應方法多載。
+對方法進行呼叫，其名稱包含 "uri"、"uri"、"urn"、"urn"、"url" 或 "url"，且方法的宣告類型包含具有<xref:System.Uri?displayProperty=fullName>參數的對應方法多載。
 
-根據預設, 此規則只會查看外部可見的方法和類型, 但這是[可](#configurability)設定的。
+根據預設，此規則只會查看外部可見的方法和類型，但這是[可](#configurability)設定的。
 
 ## <a name="rule-description"></a>規則描述
 
-參數名稱會根據 camel 大小寫慣例分割成權杖, 然後檢查每個標記, 以查看它是否等於 "uri"、"Uri"、"urn"、"Urn"、"url" 或 "Url"。 如果相符, 則會假設參數代表統一資源識別元 (URI)。 URI 的字串表示方式容易發生剖析和編碼錯誤，並且可能因此產生安全性弱點。 <xref:System.Uri>類別以安全且安全的方式提供這些服務。 當兩個多載之間有不同的選擇, 但只有與 URI 的表示有差異時, 使用者應該選擇接受<xref:System.Uri>引數的多載。
+參數名稱會根據 camel 大小寫慣例分割成權杖，然後檢查每個標記，以查看它是否等於 "uri"、"Uri"、"urn"、"Urn"、"url" 或 "Url"。 如果相符，則會假設參數代表統一資源識別元（URI）。 URI 的字串表示方式容易發生剖析和編碼錯誤，並且可能因此產生安全性弱點。 <xref:System.Uri>類別以安全且安全的方式提供這些服務。 當兩個多載之間有不同的選擇，但只有與 URI 的表示有差異時，使用者應該選擇接受<xref:System.Uri>引數的多載。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
 
-若要修正此規則的違規, 請呼叫接受<xref:System.Uri>引數的多載。
+若要修正此規則的違規，請呼叫接受<xref:System.Uri>引數的多載。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
 
-如果 string 參數不代表 URI, 就可以安全地隱藏此規則的警告。
+如果 string 參數不代表 URI，就可以安全地隱藏此規則的警告。
 
 ## <a name="configurability"></a>可設定性
 
-如果您是從[FxCop 分析器](install-fxcop-analyzers.md)執行此規則 (而不是使用舊版分析), 您可以根據其存取範圍, 設定程式碼基底中的哪些部分來執行此規則。 例如, 若要指定規則只針對非公用 API 介面執行, 請將下列機碼值組新增至專案中的 editorconfig 檔案:
+如果您是從[FxCop 分析器](install-fxcop-analyzers.md)執行此規則（而不是使用舊版分析），您可以根據其存取範圍，設定程式碼基底中的哪些部分來執行此規則。 例如，若要指定規則只針對非公用 API 介面執行，請將下列機碼值組新增至專案中的 editorconfig 檔案：
 
 ```ini
 dotnet_code_quality.ca2234.api_surface = private, internal
 ```
 
-您可以只針對此規則、所有規則或此類別中的所有規則 (使用方式) 設定此選項。 如需詳細資訊, 請參閱[設定 FxCop 分析器](configure-fxcop-analyzers.md)。
+您可以只針對此規則、所有規則或此類別中的所有規則（使用方式）設定此選項。 如需詳細資訊，請參閱[設定 FxCop 分析器](configure-fxcop-analyzers.md)。
 
 ## <a name="example"></a>範例
 
-下列範例顯示的方法`ErrorProne`違反規則, 以及可正確呼叫<xref:System.Uri>多載的`SaferWay`方法:
+下列範例顯示的方法`ErrorProne`違反規則，以及可正確呼叫<xref:System.Uri>多載的`SaferWay`方法：
 
 [!code-vb[FxCop.Usage.PassUri#1](../code-quality/codesnippet/VisualBasic/ca2234-pass-system-uri-objects-instead-of-strings_1.vb)]
 [!code-cpp[FxCop.Usage.PassUri#1](../code-quality/codesnippet/CPP/ca2234-pass-system-uri-objects-instead-of-strings_1.cpp)]
