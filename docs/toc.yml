@@ -1,4 +1,4 @@
-- name: Visual Studio 文件
+- name: Visual Studio IDE 文件
   href: ide/index.yml
   pdf_name: Visual Studio documentation
 - name: 總覽
