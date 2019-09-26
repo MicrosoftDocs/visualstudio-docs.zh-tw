@@ -5,24 +5,20 @@ ms.topic: reference
 author: kendrahavens
 ms.author: kehavens
 manager: jillfra
-dev_langs:
-- CSharp
-- VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: ccddc3aef24ba14245dc568ca5f369e38ce8eba0
-ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
-ms.translationtype: HT
+ms.openlocfilehash: 3572682fe68d9b0b1bc4adee537de5cd056a8906
+ms.sourcegitcommit: 9a3972eb85de5443ac2bc03964c5a251c39b2921
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "65531641"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "71301685"
 ---
 # <a name="convert-a-local-function-to-a-method"></a>將區域函式轉換為方法
 
 此重構適用於：
 
 - C#
-- Visual Basic
 
 **功能：** 將區域函式轉換為方法。
 
@@ -36,7 +32,7 @@ ms.locfileid: "65531641"
 
     ![將區域函式轉換為方法程式碼範例](media/convert-local-function-to-method.png)
 
-2. 在字行任何地方按 **Ctrl**+**.**， 以觸發 [快速動作與重構] 功能表。
+2. 在字行任何地方按 **Ctrl**+ **.** ， 以觸發 [快速動作與重構] 功能表。
 
     ![將區域函式轉換為方法程式碼修正範例](media/convert-local-function-to-method-codefix.png)
 
