@@ -8,26 +8,26 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: a5ae70462079589ba2b63ee50cf0b7a0570e056a
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 11c5c7d3c8078aa420074e9e32bb132489b169c8
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65457832"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71252950"
 ---
 # <a name="this-related-method-is-the-backing-method-for-the-following-default-insert-update-or-delete-methods"></a>此關聯方法是下列預設插入、更新或刪除方法的支援方法
 
-此關聯方法是下列預設的支援方法`Insert`， `Update`，或`Delete`方法。 如果刪除它，這些方法也會被刪除。 是否要繼續?
+此關聯方法是下列預設`Insert`、 `Update`或`Delete`方法的支援方法。 如果刪除它，這些方法也會被刪除。 是否要繼續?
 
-所選`DataContext`方法目前正做為其中一個`Insert`， `Update`，或`Delete`上的實體類別的其中一個方法**O/R Designer**。 刪除選取的方法會使要還原為預設執行階段行為，執行插入，使用這個方法的實體類別更新，或在更新期間刪除。
+選取`DataContext`的方法目前會當做**O/R 設計**工具`Update`上其中`Delete`一個實體類別的`Insert`、或方法的其中一個。 刪除選取的方法會導致使用此方法的實體類別還原為預設的執行時間行為，以便在更新期間執行插入、更新或刪除作業。
 
 ## <a name="selected-method-options"></a>選取的方法選項
 
-- 若要刪除選取的方法，讓實體類別使用執行階段更新，按一下**是**。
+- 若要刪除選取的方法，使實體類別使用執行時間更新，請按一下 **[是]** 。
 
-   會刪除選取的方法，而且任何使用這個方法覆寫更新行為的類別都會還原成使用預設 LINQ to SQL 執行階段行為。
+   系統會刪除選取的方法，而且任何使用此方法覆寫更新行為的類別都會還原成使用預設 LINQ to SQL 執行時間行為。
 
-- 若要關閉訊息方塊中，保留選取的方法不會變更，按一下**No**。
+- 若要關閉訊息方塊，讓選取的方法保持不變，請按一下 [**否**]。
 
    會關閉訊息方塊，不進行任何變更。
 

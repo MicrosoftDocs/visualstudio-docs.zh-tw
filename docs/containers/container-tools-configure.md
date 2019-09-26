@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.topic: conceptual
 ms.date: 03/20/2019
 ms.technology: vs-azure
-ms.openlocfilehash: 90f90f4e7f085dc4f7ea188833edb3462cbe7e3e
-ms.sourcegitcommit: db30651dc0ce4d0b274479b23a6bd102a5559098
+ms.openlocfilehash: f05eb5d92c0cdaa1242f0d98c3d877eebae27bb1
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "70312065"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71253165"
 ---
 # <a name="how-to-configure-visual-studio-container-tools"></a>如何設定 Visual Studio 容器工具
 
@@ -59,7 +59,7 @@ ms.locfileid: "70312065"
 
 下表描述**單一專案**和**Docker Compose**設定：
 
-| 名稱 | 預設設定 | 適用於 | 說明 |
+| 名稱 | 預設設定 | 適用於 | 描述 |
 | -----|:---------------:|:----------:| ----------- |
 | 在專案開啟時提取所需的 Docker 映射 | True | 單一專案，Docker Compose | 為了提高載入專案時的效能，Visual Studio 會在背景中啟動 Docker 提取作業，因此當您準備好要執行程式碼時，映像已下載或正在下載中。 如果您只是要載入專案和流覽程式碼，您可以將設定為**False** ，以避免下載不需要的容器映射。 |
 | 在專案開啟時執行容器 | True | 單一專案，Docker Compose | 同樣地，為了提高效能，Visual Studio 會在一段時間後建立容器，以便在您建立和執行容器時準備就緒。 如果您想要控制建立容器的時間，請將設定為**False**。 |
@@ -67,7 +67,7 @@ ms.locfileid: "70312065"
 
 ::: moniker-end
 > [!WARNING]
-> 如果 localhost SSL 憑證不受信任，且您核取隱藏提示的方塊，則 HTTPS Web 要求可能會在應用程式或服務的執行階段失敗。 在此情況下，請取消核取 [不要提示] 核取方塊，執行您的專案，並在提示時表示信任。
+> 如果 localhost SSL 憑證不受信任，且您核取 [隱藏提示] 方塊，則 HTTPS web 要求可能會在執行時間于您的應用程式或服務中失敗。 在此情況下，請取消核取 [不要提示] 核取方塊，執行您的專案，並在提示時表示信任。
 
 ## <a name="next-steps"></a>後續步驟
 

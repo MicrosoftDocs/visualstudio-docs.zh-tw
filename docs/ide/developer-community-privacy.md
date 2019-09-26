@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 447a06d64691af1d77a634179631ce7822b6d43d
-ms.sourcegitcommit: 78e2637e4fbfadd4509b55276816b64f5c24c606
+ms.openlocfilehash: a40cbc30850edc96b569bd8d716b14b5d2035089
+ms.sourcegitcommit: 528178a304e66c0cb7ab98b493fe3c409f87493a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2019
-ms.locfileid: "70864669"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71273401"
 ---
 # <a name="developer-community-data-privacy"></a>開發人員社群資料隱私權
 
@@ -70,10 +70,6 @@ ms.locfileid: "70864669"
 
 - Windows Forms 記錄（如果有的話）
 
-> [!NOTE]
-> 只有當您透過提交內含的問題報告來提供許可權時，才會將記錄檔傳送給 Microsoft。 您可以看到哪些檔案包含在 [回報問題] 視窗的 [摘要] 步驟中（請參閱此附注中包含的螢幕擷取畫面）。 收集的記錄會儲存在% temp% 資料夾中，並且會在每次上傳後定期清除。 如果您不想要在問題報告中包含記錄檔，請先從% temp% 資料夾中刪除檔案，然後再提交報告。  
-  > ![回報問題-收集的記錄摘要](media/report-a-problem-logs-collected.png)
-
 - 螢幕擷取畫面 (若您選擇包含它的話)
   
 - 記錄資料 (若您選擇要包含記錄的話)，其中包括：
@@ -84,8 +80,10 @@ ms.locfileid: "70864669"
 
   - 傾印檔案
 
-  > [!NOTE]
-  > 您可以刪除任何不想在提交報表之前提交的記錄資料。
+> [!NOTE]
+> 只有當您透過提交內含的問題報告來提供許可權時，才會將記錄檔、螢幕擷取畫面和記錄資料傳送至 Microsoft。 您可以看到哪些檔案包含在 [回報問題] 視窗的 [摘要] 步驟中（請參閱此附注中包含的螢幕擷取畫面）。 收集的記錄檔和檔案會儲存在% temp% 資料夾中，並且會在每次上傳後定期清除。 如果您不想要在問題報告中包含記錄檔，請先從% temp% 資料夾中刪除檔案，然後再提交報告。  
+  > ![回報問題-收集的記錄摘要](media/report-a-problem-logs-collected.png)
+ 
 
 ## <a name="see-also"></a>另請參閱
 

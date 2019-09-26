@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 595b8ea35799effd36e4a8599c61b3ab42efb940
-ms.sourcegitcommit: a1e899248adaf104697fa7dea32a36e69e9cc119
+ms.openlocfilehash: 365037d3eeeec5077d724ca72d43cce5dcbe0ebd
+ms.sourcegitcommit: 528178a304e66c0cb7ab98b493fe3c409f87493a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "71159973"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71273367"
 ---
 # <a name="create-a-database-and-add-tables-in-visual-studio"></a>建立資料庫並在 Visual Studio 中新增資料表
 
@@ -68,6 +68,9 @@ ms.locfileid: "71159973"
 
 - 或者，如果該視窗尚未開啟，您可以選取 [ **View**  > **伺服器總管**]。 展開 [**資料連線**] 節點，以滑鼠右鍵按一下 [ *sampledatabase.mdf*]，然後選取 [**屬性**]，以開啟 [屬性視窗]。
 
+  > [!TIP]
+  > 如果您無法展開 [資料連線] 節點，或未列出 [Sampledatabase.mdf] 連接，請選取 [伺服器總管] 工具列中的 [**連接到資料庫]** 按鈕。 在 [**加入連接**] 對話方塊中，確定已在 [**資料來源**] 下選取 [ **Microsoft SQL Server 資料庫**檔案]，然後流覽至 sampledatabase.mdf .mdf 檔案並加以選取。 選取 **[確定**] 以完成新增連接。
+
 ## <a name="create-tables-and-keys-by-using-table-designer"></a>使用資料表設計工具建立資料表和索引鍵
 
 在本節中，您將建立兩個數據表、每個資料表中的主鍵，以及幾個範例資料列。 您也會建立外鍵，以指定單一資料表中的記錄如何對應至另一個資料表中的記錄。
@@ -75,6 +78,8 @@ ms.locfileid: "71159973"
 ### <a name="create-the-customers-table"></a>建立 Customers 資料表
 
 1. 在**伺服器總管**中，展開 [**資料連線**] 節點，然後展開 [ **sampledatabase.mdf** ] 節點。
+
+   如果您無法展開 [資料連線] 節點，或未列出 [Sampledatabase.mdf] 連接，請選取 [伺服器總管] 工具列中的 [**連接到資料庫]** 按鈕。 在 [**加入連接**] 對話方塊中，確定已在 [**資料來源**] 下選取 [ **Microsoft SQL Server 資料庫**檔案]，然後流覽至 sampledatabase.mdf .mdf 檔案並加以選取。 選取 **[確定**] 以完成新增連接。
 
 2. 以滑鼠右鍵按一下 [**資料表]** ，然後選取 [**加入新的資料表**]。
 

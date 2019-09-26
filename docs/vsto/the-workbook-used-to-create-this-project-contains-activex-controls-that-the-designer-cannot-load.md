@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0087841e7f37d49da40817e1487b8529af1f87df
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 27feb1c6a85740d8a9287ce3a2a47800595e178a
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62978923"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71253782"
 ---
 # <a name="the-workbook-used-to-create-this-project-contains-activex-controls-that-the-designer-cannot-load"></a>用來建立此專案的活頁簿包含設計工具無法載入的 ActiveX 控制項
   當您以程式設計的方式將控制項加入至 Word 文件或 Excel 工作表、儲存文件或活頁簿，然後根據文件或活頁簿建立新的文件層級方案，則會出現這個錯誤。
@@ -28,10 +28,10 @@ ms.locfileid: "62978923"
 
 1. 開啟文件或活頁簿。
 
-2. 移除在執行階段所加入的控制項。 您可以執行這項操作，請選取圖形中的文件或活頁簿和按下**刪除**索引鍵。
+2. 移除在執行階段所加入的控制項。 若要這麼做，您可以在檔或活頁簿中選取它們，然後按下**Delete**鍵。
 
 3. 根據文件或活頁簿建立文件層級的方案。
 
 ## <a name="see-also"></a>另請參閱
 - [如何：在 Visual Studio 中建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)
-- [將控制項加入 Office 文件，在執行階段](../vsto/adding-controls-to-office-documents-at-run-time.md)
+- [在執行時間將控制項加入 Office 檔](../vsto/adding-controls-to-office-documents-at-run-time.md)

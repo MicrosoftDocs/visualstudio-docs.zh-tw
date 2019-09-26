@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 36442ad0792ef712acd322d17688d8ceb21444cb
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 0179a9609907adc07dc6d8a085eb9a2a0c38c065
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71231897"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71253228"
 ---
 # <a name="ca2153-avoid-handling-corrupted-state-exceptions"></a>CA2153:避免處理損毀狀態例外狀況
 
@@ -39,7 +39,7 @@ CSE 指出處理序的狀態已損毀且系統不予攔截。 在損毀狀態的
 
 若要解決這個警告，請執行下列其中一項動作：
 
-- 移除 <xref:System.Runtime.ExceptionServices.HandleProcessCorruptedStateExceptionsAttribute> 屬性。 這會還原到預設的執行階段行為，不將 CSE 傳遞至 catch 處理常式。
+- 移除 <xref:System.Runtime.ExceptionServices.HandleProcessCorruptedStateExceptionsAttribute> 屬性。 這會還原為預設的執行時間行為，其中 Cse 不會傳遞至 catch 處理常式。
 
 - 移除一般 catch 處理常式，而非移除攔截特定例外狀況類型的處理常式。 這可能包括 Cse，假設處理常式程式碼可以安全地處理（罕見）。
 

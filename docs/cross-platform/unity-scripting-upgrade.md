@@ -8,12 +8,12 @@ ms.assetid: E2C9420F-A5D5-4472-9020-2B63FB27A133
 ms.technology: vs-unity-tools
 ms.workload:
 - unity
-ms.openlocfilehash: 82556ea0ed043c11cb9098383daf912ff17372ef
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 0fb4560a196404687c60ce67f39b9c0754a24769
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62818394"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71253135"
 ---
 # <a name="using-net-4x-in-unity"></a>在 Unity 中使用 .NET 4.x
 
@@ -230,7 +230,7 @@ TAP 是一個複雜主題，而開發人員應該考慮其 Unity 特定細微差
 這些秘訣可協助您在 Unity 中開始使用 TAP：
 
 * 要等待的非同步函數應該有傳回型別 [`Task`](https://docs.microsoft.com/dotnet/api/system.threading.tasks.task) 或 [`Task<TResult>`](https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1)。
-* 傳回工作的非同步函數應該在其名稱附加尾碼 **"Async"**。 "Async" 尾碼有助於指出應該一律等候函數。
+* 傳回工作的非同步函數應該在其名稱附加尾碼 **"Async"** 。 "Async" 尾碼有助於指出應該一律等候函數。
 * 只會使用可從傳統同步程式碼引發 async 函數之函數的 `async void` 傳回型別。 這類函數本身無法等候，而且不應該在其名稱中有 "Async" 尾碼。
 * 根據預設，Unity 使用 UnitySynchronizationContext 確保在主要執行緒上執行 async 函數。 Unity API 無法在主要執行緒外部存取。
 * 使用 [`Task.Run`](https://msdn.microsoft.com/library/hh195051.aspx) 和 [`Task.ConfigureAwait(false)`](https://msdn.microsoft.com/library/system.threading.tasks.task.configureawait.aspx) 這類方法，可以在背景執行緒執行工作。 這項技術適用於卸載主要執行緒的耗費資源作業，以提高效能。 不過，使用背景執行緒可能會導致很難偵錯的問題 (例如[競爭條件](https://wikipedia.org/wiki/Race_condition))。
@@ -335,7 +335,7 @@ public class UsingStaticExample: MonoBehaviour
 
 將遊戲匯出至 iOS 這類平台時，Unity 將使用其 IL2CPP 引擎以將 IL「轉換」為 C++ 程式碼，而且接著會使用目標平台的原生編譯器來編譯 C++ 程式碼。 在此情節中，有幾項不支援的 .NET 功能，例如反映的組件和 `dynamic` 關鍵字的用法。 雖然您可以利用自己的程式碼控制這些功能的使用，但是請注意，使用未以 Unity 和 IL2CPP 撰寫的協力廠商 DLL 和 SDK 可能會發生問題。 如需本主題的詳細資訊，請參閱 Unity 網站上的 [Scripting Restrictions](https://docs.unity3d.com/Manual/ScriptingRestrictions.html) (指令碼限制) 文件。
 
-此外，如上述 Json.NET 範例所述，Unity 將嘗試在 IL2CPP 匯出程序期間去除未使用的程式碼。  雖然這通常不是問題，但是利用使用反映的程式庫，可能會不小心地去除將在執行階段呼叫而且無法在匯出時間決定的屬性或方法。  若要修正這些問題，請將 **link.xml** 檔案新增至專案，而專案包含不要對其執行去除程序的組件和命名空間清單。  如需完整詳細資料，請參閱[位元組程式碼去除的 Unity 文件](https://docs.unity3d.com/Manual/IL2CPP-BytecodeStripping.html)。
+此外，如上述 Json.NET 範例所述，Unity 將嘗試在 IL2CPP 匯出程序期間去除未使用的程式碼。  雖然這通常不是問題，但如果程式庫使用反映，它可能會不小心去除在執行時間呼叫的屬性或方法，而無法在匯出時間判斷。  若要修正這些問題，請將 **link.xml** 檔案新增至專案，而專案包含不要對其執行去除程序的組件和命名空間清單。  如需完整詳細資料，請參閱[位元組程式碼去除的 Unity 文件](https://docs.unity3d.com/Manual/IL2CPP-BytecodeStripping.html)。
 
 ## <a name="net-4x-sample-unity-project"></a>.NET 4.x 範例 Unity 專案
 

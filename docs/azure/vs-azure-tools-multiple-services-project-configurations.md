@@ -9,18 +9,18 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2017
 ms.author: ghogen
-ms.openlocfilehash: dfb58c9eabb135b69033c065fa606511043a2c8b
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
-ms.translationtype: HT
+ms.openlocfilehash: 5314e92065cb29691aca75d424a331d10284a558
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66260643"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71253425"
 ---
 # <a name="configuring-your-azure-project-in-visual-studio-to-use-multiple-service-configurations"></a>在 Visual Studio 中設定 Azure 專案，以便使用多個服務組態
 
 Visual Studio 中的 Azure 雲端服務專案包含三個組態檔：`ServiceDefinition.csdef`、`ServiceConfiguration.Local.cscfg` 和 `ServiceConfiguration.Cloud.cscfg`：
 
-- `ServiceDefinition.csdef` 會部署至 Azure，以描述雲端服務及其角色的需求，並提供適用於所有執行個體的設定。 在執行階段可以使用 Azure 服務裝載執行階段 API 來讀取設定。 唯有當雲端服務停止時，您才可以在 Azure 上更新此檔案。
+- `ServiceDefinition.csdef` 會部署至 Azure，以描述雲端服務及其角色的需求，並提供適用於所有執行個體的設定。 您可以在執行時間使用 Azure 服務裝載執行時間 API 來讀取設定。 唯有當雲端服務停止時，您才可以在 Azure 上更新此檔案。
 - `ServiceConfiguration.Local.cscfg` 和 `ServiceConfiguration.Cloud.cscfg` 提供定義檔中的設定值，並指定每個角色要執行的執行個體數目。 "Local" 檔案含有用於本機偵錯的值；"Cloud" 檔案會部署至 Azure 以做為 `ServiceConfiguration.cscfg`，並提供伺服器環境的設定。 當您的雲端服務在 Azure 中執行時，可以更新此檔案。
 
 您可以在 Visual Studio 中使用適當角色的屬性頁來管理和修改組態設定 (以滑鼠右鍵按一下角色，然後選取 [屬性]，或按兩下角色)。 您可以將變更的範圍限定為在 [服務組態] 下拉式清單中選擇的任何組態。 除了以下各節描述的內容之外，Web 與背景工作角色的屬性相去不遠。
@@ -37,7 +37,7 @@ Visual Studio 中的 Azure 雲端服務專案包含三個組態檔：`ServiceDef
 
 ### <a name="instances"></a>執行個體
 
-將 [執行個體]  計數屬性設定為服務應對此角色執行的執行個體數目。
+將 [執行個體] 計數屬性設定為服務應對此角色執行的執行個體數目。
 
 將 [VM 大小] 屬性設為 [超小]、[小型]、[中型]、[大型] 或 [特大]。  如需詳細資訊，請參閱 [雲端服務的大小](/azure/cloud-services/cloud-services-sizes-specs)。
 
@@ -45,7 +45,7 @@ Visual Studio 中的 Azure 雲端服務專案包含三個組態檔：`ServiceDef
 
 設定此屬性，可指定當您開始偵錯時，Visual Studio 應針對 HTTP 端點或 HTTPS 端點或兩者啟動網頁瀏覽器。
 
-只有在您已為角色定義 HTTPS 端點時，才可使用 **HTTPS 端點**選項。 您可以在 [端點]  屬性頁面上定義 HTTPS 端點。
+只有在您已為角色定義 HTTPS 端點時，才可使用 **HTTPS 端點**選項。 您可以在 [端點] 屬性頁面上定義 HTTPS 端點。
 
 如果您已新增 HTTPS 端點，則預設會啟用 HTTPS 端點選項，而在您開始偵錯時，Visual Studio 除了會為 HTTP 端點啟動瀏覽器之外，還會為此端點啟動瀏覽器 (假設兩種啟動選項均已啟用)。
 
@@ -55,7 +55,7 @@ Web 角色預設會啟用診斷。 Azure 雲端服務專案和儲存體帳戶已
 
 ## <a name="settings-page"></a>設定頁面
 
-在 [設定] 頁面上，您可以利用成對的名稱和數值形式將設定加入組態。 在角色中執行的程式碼可以在執行階段使用 [Azure 受控程式庫](http://go.microsoft.com/fwlink?LinkID=171026) 所提供的類別 (具體而言，使用 [GetConfigurationSettingValue](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleenvironment.getconfigurationsettingvalue.aspx) 方法) 讀取組態設定的值。
+在 [設定] 頁面上，您可以利用成對的名稱和數值形式將設定加入組態。 在角色中執行的程式碼可以使用[Azure Managed 程式庫](http://go.microsoft.com/fwlink?LinkID=171026)所提供的類別（尤其是[GetConfigurationSettingValue](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleenvironment.getconfigurationsettingvalue.aspx)方法），在執行時間讀取您的設定值。
 
 ### <a name="configuring-a-connection-string-for-a-storage-account"></a>設定儲存體帳戶的連接字串
 
@@ -86,16 +86,16 @@ Web 角色預設會啟用診斷。 Azure 雲端服務專案和儲存體帳戶已
 Web 角色通常會有一個位於連接埠 80 的 HTTP 端點。 另一方面，背景工作角色可以有任意數目的 HTTP、HTTPS 或 TCP 端點。 端點可以是可供外部用戶端使用的輸入端點，或是可供在服務中執行的其他角色使用的內部端點。
 
 - 若要讓 HTTP 端點可供外部用戶端和網頁瀏覽器使用，請將端點類型變更為輸入，並指定名稱和公用連接埠號碼。
-- 若要讓 HTTPS 端點可供外部用戶端和網頁瀏覽器使用，請將端點類型變更為 [輸入] ，並指定名稱、公用連接埠號碼和管理憑證名稱。 您必須先在 [憑證]  屬性頁面上定義憑證，才可以指定管理憑證。
+- 若要讓 HTTPS 端點可供外部用戶端和網頁瀏覽器使用，請將端點類型變更為 [輸入]，並指定名稱、公用連接埠號碼和管理憑證名稱。 您必須先在 [憑證] 屬性頁面上定義憑證，才可以指定管理憑證。
 - 若要讓端點可供雲端服務中的其他角色用於內部存取，請將端點類型變更為內部，並指定此端點的名稱和可能的私人連接埠。
 
 ## <a name="local-storage-page"></a>本機儲存體頁面
 
-您可以使用 [本機儲存體]  屬性頁面，為角色保留一或多個本機儲存體資源。 本機儲存體資源是執行中角色執行個體所在之 Azure 虛擬機器的檔案系統中的保留目錄。
+您可以使用 [本機儲存體] 屬性頁面，為角色保留一或多個本機儲存體資源。 本機儲存體資源是執行中角色執行個體所在之 Azure 虛擬機器的檔案系統中的保留目錄。
 
 ## <a name="certificates-page"></a>憑證頁面
 
-[憑證]  屬性頁面會將憑證的相關資訊新增至您的服務組態。 請注意，您的憑證不會與您的服務一起封裝；您必須透過 [Azure 入口網站](http://portal.azure.com)將憑證分別上傳至 Azure。
+[憑證] 屬性頁面會將憑證的相關資訊新增至您的服務組態。 請注意，您的憑證不會與您的服務一起封裝；您必須透過 [Azure 入口網站](http://portal.azure.com)將憑證分別上傳至 Azure。
 
 在這裡新增憑證會將憑證的相關資訊新增至您的服務組態。 憑證不會與您的服務一起封裝；您必須透過 Azure 入口網站分別上傳憑證。
 

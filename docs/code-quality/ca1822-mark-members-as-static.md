@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 11f210b9d37f15b3ea92b92112e48eecd3c8b9e1
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 7ebbbbe01f1dd23dfc560e019133dacd3517b388
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71233414"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71253457"
 ---
 # <a name="ca1822-mark-members-as-static"></a>CA1822:將成員標記為 static
 
@@ -34,7 +34,7 @@ ms.locfileid: "71233414"
 未存取實例資料的成員未標記為靜態（在中[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]為 Shared）。
 
 ## <a name="rule-description"></a>規則描述
-不會存取執行個體資料或不會呼叫執行個體方法的成員，可以標記為 static (在 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 中為 Shared)。 將方法標記為 static 之後，編譯器將對這些成員發出非虛擬呼叫位置。 發出非虛擬的呼叫位置，將可防止每個呼叫的執行時間檢查，以確保目前的物件指標為非 null。 這麼做可讓效能敏感的程式碼獲得顯著的效能提升。 在某些情況下，存取目前物件實例的失敗表示正確性的問題。
+不會存取執行個體資料或不會呼叫執行個體方法的成員，可以標記為 static (在 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 中為 Shared)。 將方法標記為 static 之後，編譯器將對這些成員發出非虛擬呼叫位置。 發出非虛擬呼叫位置將會在執行時間防止檢查每個呼叫，以確定目前的物件指標不是 null。 這麼做可讓效能敏感的程式碼獲得顯著的效能提升。 在某些情況下，存取目前物件實例的失敗表示正確性的問題。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
 將成員標記為靜態（或在中[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]為 Shared），或在方法主體中使用 ' this '/' Me ' （如果適用的話）。

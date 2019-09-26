@@ -10,16 +10,16 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 2ee3b0d82251d01e8ede22be238dc1bca5a4e092
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: d50cbfbd517073544ebd172627d24bd7c3878fa5
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62536278"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71254208"
 ---
 # <a name="python-projects-in-visual-studio"></a>Visual Studio 中的 Python 專案
 
-定義 Python 應用程式時，通常僅使用資料夾和檔案，但隨著應用程式變得越來越大，此結構會變得相當複雜，且可能牽涉到自動產生的檔案、Web 應用程式的 JavaScript 等。 Visual Studio 專案有利於管理此複雜部分。 專案 (*.pyproj* 檔案) 會識別與您專案建立關聯的所有來源和內容檔案、包含每個檔案的組建資訊、維護要與來源控制系統整合的資訊，以及協助您將應用程式整理成邏輯元件。
+定義 Python 應用程式時，通常僅使用資料夾和檔案，但隨著應用程式變得越來越大，此結構會變得相當複雜，且可能牽涉到自動產生的檔案、Web 應用程式的 JavaScript 等。 Visual Studio 專案有利於管理此複雜部分。 專案 ( *.pyproj* 檔案) 會識別與您專案建立關聯的所有來源和內容檔案、包含每個檔案的組建資訊、維護要與來源控制系統整合的資訊，以及協助您將應用程式整理成邏輯元件。
 
 ![[方案總管] 中的 Python 專案](media/projects-solution-explorer.png)
 
@@ -77,7 +77,7 @@ Visual Studio 提供您一些方法來建立 Python 專案，不論是從頭開�
 
 下表摘要說明 Visual Studio 2017 和更新版本中可用的範本 (並非所有範本在所有舊版中都有提供)：
 
-| 範本 | 說明 |
+| 範本 | 描述 |
 | --- | --- |
 | [**從現有 Python 程式碼**](#create-project-from-existing-files) | 從資料夾結構中的現有 Python 程式碼建立 Visual Studio 專案。  |
 | **Python 應用程式** | 具有單一空白原始程式檔的新 Python 應用程式基本專案結構。 根據預設，專案會在預設全域環境的主控台解譯器中執行，您可以透過[指派不同的環境](selecting-a-python-environment-for-a-project.md)來變更此環境。 |
@@ -131,7 +131,7 @@ Visual Studio 提供您一些方法來建立 Python 專案，不論是從頭開�
 
 您無法重新命名連結的檔案。
 
-## <a name="references"></a>參考
+## <a name="references"></a>reference
 
 Visual Studio 專案支援新增對專案和延伸模組的參考，這些參考會顯示在 [方案總管] 中的 [參考] 節點底下：
 
@@ -143,7 +143,7 @@ Visual Studio 專案支援新增對專案和延伸模組的參考，這些參考
 
 對 *.pyd* 檔案的參考可以為產生的模組啟用 IntelliSense。 Visual Studio 會將 *.pyd* 檔案載入到 Python 解譯器，並自我檢查其類型和函式。 它也會嘗試剖析文件字串來找出提供簽章說明的函式。
 
-在任何時候，只要更新磁碟上的延伸模組，Visual Studio 就會在背景中重新分析該模組。 此動作不會影響執行階段行為，但在分析完成前，可能會無法使用某些完成。
+在任何時候，只要更新磁碟上的延伸模組，Visual Studio 就會在背景中重新分析該模組。 此動作不會影響執行時間行為，但在分析完成之前，無法使用部分完成。
 
 您可能也需要新增包含該模組之資料夾的[搜尋路徑](search-paths.md)。
 
@@ -167,5 +167,8 @@ from System.Windows.Forms import *
 ### <a name="webpi-projects"></a>WebPI 專案
 
 您可以新增對 WebPI 產品項目的參考以供部署到 Microsoft Azure 雲端服務，然後在該處透過 WebPI 摘要來安裝額外的元件。 根據預設，顯示的摘要為 Python 特定，並且包含 Django、CPython 及其他核心元件。 您也可以選取自己的摘要，如以下所示。 當發佈到 Microsoft Azure 時，安裝作業將會安裝所有參考的產品。
+
+> [!IMPORTANT]
+> 在 Visual Studio 2017 或 Visual Studio 2019 中無法使用 WebPI 專案。
 
 ![WebPI 參考](media/projects-webPI-components.png)

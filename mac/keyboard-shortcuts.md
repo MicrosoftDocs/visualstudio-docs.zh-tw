@@ -5,16 +5,16 @@ ms.date: 03/14/2019
 author: asb3993
 ms.author: amburns
 ms.assetid: 48E06A61-7294-4EC8-A09D-1763C32AD910
-ms.openlocfilehash: 3e6ae24ea9e9a5dea263c2449a9b23b6027f7a96
-ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.openlocfilehash: b569887005d22a4eab7289c4ab940c9d9539d040
+ms.sourcegitcommit: 528178a304e66c0cb7ab98b493fe3c409f87493a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71211317"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71273324"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio-for-mac"></a>Visual Studio for Mac 中的預設鍵盤快速鍵
 
-如需鍵盤協助工具的相關資訊，請參閱[如何：使用鍵盤巡覽](~/accessibility.md#how-to-use-keyboard-navigation)。
+如需鍵盤協助工具的相關資訊，請參閱[如何：使用鍵盤巡覽](~/accessibility-keyboard.md)。
 
 只需使用適當的鍵盤快速鍵，您就可以在 Visual Studio for Mac 中存取各種命令。 本檔列出**Visual Studio for Mac**金鑰系結配置的預設快捷方式。 如需如何變更按鍵繫結關係配置的相關詳細資訊，請參閱[自訂 IDE](~/customizing-the-ide.md#key-bindings)。 您也可以使用 [Visual Studio for Mac] > [喜好設定] 功能表項目，然後在 [喜好設定] 視窗中選擇 [環境] > [按鍵繫結關係] 以自訂命令的捷徑。
 

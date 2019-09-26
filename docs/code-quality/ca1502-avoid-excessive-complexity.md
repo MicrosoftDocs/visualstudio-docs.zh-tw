@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: db4f767aa2ecb31bca3a5530e1b4bbf5ce15729d
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 4f26faf16cc8a9a8235596aef68e5af5c3b4401e
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71234552"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71253294"
 ---
 # <a name="ca1502-avoid-excessive-complexity"></a>CA1502:避免造成過度複雜的方法
 

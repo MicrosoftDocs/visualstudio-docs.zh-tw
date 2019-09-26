@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 67d1a1c37a1c39e07dd5b8754fef223bfa8ad7a2
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 517588826983613c71a74296914b1dfeb3eaa2b4
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71232284"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71253308"
 ---
 # <a name="ca2134-methods-must-keep-consistent-transparency-when-overriding-base-methods"></a>CA2134:覆寫基底方法時，方法必須保持一致的透明度
 
@@ -34,13 +34,13 @@ ms.locfileid: "71232284"
 ## <a name="rule-description"></a>規則描述
 嘗試在繼承鏈上進一步變更方法的安全性存取範圍時，就會引發此規則。 例如，如果基類中的虛擬方法是透明或安全關鍵，則衍生的類別必須以透明或安全關鍵的方法覆寫它。 相反地，如果虛擬的安全性關鍵，衍生的類別就必須使用安全性關鍵方法來覆寫它。 相同的規則適用于執行介面方法。
 
-當程式碼是以 JIT 編譯而不是在執行時間時，會強制執行透明度規則，而透明度計算則不會有動態類型資訊。 因此，透明度計算的結果必須只能從進行 JIT 編譯的靜態類型來判斷，而不論動態類型為何。
+當程式碼是以 JIT 編譯而不是在執行時間時，會強制執行透明度規則，因此透明度計算沒有動態類型資訊。 因此，透明度計算的結果必須只能從進行 JIT 編譯的靜態類型來判斷，而不論動態類型為何。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
 若要修正此規則的違規，請變更覆寫虛擬方法或執行介面的方法透明度，以符合虛擬或介面方法的透明度。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
-請勿隱藏此規則的警告。 違反此規則會導致使用層級 2 <xref:System.TypeLoadException>透明度之元件的執行時間。
+請勿隱藏此規則的警告。 此規則的違規會導致使用層級 2 <xref:System.TypeLoadException>透明度之元件的執行時間。
 
 ## <a name="examples"></a>範例
 

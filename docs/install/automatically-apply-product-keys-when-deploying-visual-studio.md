@@ -1,7 +1,7 @@
 ---
 title: 自動套用產品金鑰
 description: 了解部署 Visual Studio 時如何以程式設計方式套用產品金鑰。
-ms.date: 04/10/2019
+ms.date: 09/24/2019
 ms.custom: seodec18
 ms.topic: conceptual
 ms.assetid: d79260be-6234-4fd3-89b5-a9756b4a93c1
@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: dabaf63e205d3e76432767743e323c90ed389846
-ms.sourcegitcommit: 673b9364fc9a96b027662dcb4cf5d61cab60ef11
-ms.translationtype: HT
+ms.openlocfilehash: 85fe84878dabc1270c60be24b6d6f644b284c045
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/21/2019
-ms.locfileid: "69891315"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71253830"
 ---
 # <a name="automatically-apply-product-keys-when-deploying-visual-studio"></a>在部署 Visual Studio 時自動套用產品金鑰
 
@@ -99,10 +99,10 @@ ms.locfileid: "69891315"
 | `PID_ACTION_FAILURE`      | 5    |
 | `PID_ACTION_NOUPGRADE`    | 6    |
 
-[!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
-
 > [!NOTE]
-> 若要針對虛擬執行個體進行疑難排解，請執行 *C:\Program Files (x86)\Microsoft Visual Studio \<版本\>\Common7\IDE\DDConfigCA.exe*。
+> 當您執行 Visual Studio 的虛擬實例時，請確定您也將本機 AppData 資料夾和登錄虛擬化。 若要針對虛擬實例進行疑難排解，請執行*C:\Program Files （x86） \Microsoft\> Visual Studio \ < 版本 \Common7\IDE\DDConfigCA.exe*。  
+
+[!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
 ## <a name="see-also"></a>另請參閱
 

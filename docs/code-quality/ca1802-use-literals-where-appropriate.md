@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: b8be913ab1f66e82038afce776bc326e5f91c7f2
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 435eb5a9fd7e41a69c873df4c728e42551734a37
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71233796"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71253371"
 ---
 # <a name="ca1802-use-literals-where-appropriate"></a>CA1802:建議在適當時使用常值
 
@@ -43,7 +43,7 @@ ms.locfileid: "71233796"
 
 呼叫宣告類型的`static readonly`靜態函式時，會在執行時間計算欄位的值。 `static readonly`如果欄位在宣告時初始化，而且未明確宣告靜態的函式，則編譯器會發出靜態的函式來初始化欄位。
 
-`const`欄位的值會在編譯時期計算並儲存在中繼資料中，這會在與`static readonly`欄位比較時增加執行時間效能。
+`const`欄位的值會在編譯時期進行計算並儲存在中繼資料中，這會在與`static readonly`欄位比較時增加執行時間效能。
 
 因為指派給目標欄位的值是在編譯時期可，所以請將宣告變更為`const`欄位，以便在編譯時期（而不是在執行時間）計算該值。
 
