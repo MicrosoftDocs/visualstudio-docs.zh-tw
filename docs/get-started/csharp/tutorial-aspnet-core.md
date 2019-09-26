@@ -16,12 +16,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: b719c78bd4800121e36346a095c2a4141b7e2de3
-ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
+ms.openlocfilehash: 4c2e9c890b0b676216a02a526cad5380df4ceb57
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71186773"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71252464"
 ---
 # <a name="tutorial-get-started-with-c-and-aspnet-core-in-visual-studio"></a>教學課程：Visual Studio 中的 C# 和 ASP.NET Core 使用者入門
 
@@ -170,7 +170,7 @@ ms.locfileid: "71186773"
 
     您可以直接在想要的路徑中放置靜態網站內容，像是 CSS、影像及 JavaScript 程式庫。
 
- 1. 專案也包含在執行階段管理 Web 應用程式的組態檔。 預設應用程式[設定](/aspnet/core/fundamentals/configuration)是儲存在 *appsettings.json* 中。 不過，您可以使用 *appsettings.Development.json*來覆寫這些設定。 展開 **appsettings.json** 檔案以檢視 **appsettings.Development.json** 檔案。
+ 1. 專案也包含在運行時間管理 web 應用程式的設定檔。 預設應用程式[設定](/aspnet/core/fundamentals/configuration)是儲存在 *appsettings.json* 中。 不過，您可以使用 *appsettings.Development.json*來覆寫這些設定。 展開 **appsettings.json** 檔案以檢視 **appsettings.Development.json** 檔案。
 
      ![Visual Studio 中方案總管的組態檔](media/csharp-aspnet-razor-solution-explorer-appsettingsjson.png)
 
@@ -273,7 +273,7 @@ ms.locfileid: "71186773"
 
     您可以直接在想要的路徑中放置靜態網站內容，像是 CSS、影像及 JavaScript 程式庫。
 
- 1. 專案也包含在執行階段管理 Web 應用程式的組態檔。 預設應用程式[設定](/aspnet/core/fundamentals/configuration)是儲存在 *appsettings.json* 中。 不過，您可以使用 *appsettings.Development.json*來覆寫這些設定。 展開 **appsettings.json** 檔案以檢視 **appsettings.Development.json** 檔案。
+ 1. 專案也包含在運行時間管理 web 應用程式的設定檔。 預設應用程式[設定](/aspnet/core/fundamentals/configuration)是儲存在 *appsettings.json* 中。 不過，您可以使用 *appsettings.Development.json*來覆寫這些設定。 展開 **appsettings.json** 檔案以檢視 **appsettings.Development.json** 檔案。
 
      ![Visual Studio 中方案總管的組態檔](media/csharp-aspnet-razor-solution-explorer-appsettingsjson.png)
 
@@ -304,7 +304,7 @@ ms.locfileid: "71186773"
 
 1. 現在，讓我們進行程式碼變更。 選擇 [ **Privacy.cshtml.cs**]。 然後，使用下列快速鍵清除檔案頂端的 `using` 指示詞：
 
-   選擇任何呈現灰色的 `using` 指示詞，而且[快速動作燈泡](../../ide/quick-actions.md)會顯示在插入點正下方或左邊界中。 選擇燈泡，然後將滑鼠停留在 [**移除不必要的 using**] 上方。 
+   選擇任何呈現灰色的 `using` 指示詞，而且[快速動作燈泡](../../ide/quick-actions.md)會顯示在插入點正下方或左邊界中。 選擇燈泡，然後將滑鼠停留在 [**移除不必要的 using**] 上方。
 
    ![在 Privacy.cshtml.cs 檔案中移除不必要的 Using](media/vs-2019/csharp-aspnet-remove-unnecessary-usings.png)
 
