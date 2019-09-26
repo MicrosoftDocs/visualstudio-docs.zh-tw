@@ -10,16 +10,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ab118197c29ef950907839e8c04d6e49a9843f1a
-ms.sourcegitcommit: 6f3cf7a1bfc81a61f9a603461a1c34fd2221f100
-ms.translationtype: HT
+ms.openlocfilehash: 644c73dea58936773acde98ccc535dfc61979288
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/12/2019
-ms.locfileid: "68957420"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71251696"
 ---
 # <a name="net-naming-conventions-for-editorconfig"></a>EditorConfig 的 .NET 命名慣例
 
-命名慣例關係到程式碼項目的命名，例如類別、屬性和方法。 例如，您可以指定公用成員必須以大寫形式命名，或非同步方法必須以 "Async" 結尾。 您可以藉由在 [.editorconfig 檔案](../ide/create-portable-custom-editor-options.md)中指定來強制執行這些規則。 違反命名規則的項目會出現在 [錯誤清單]  或在名稱下方以建議的形式出現，取決於您為規則選擇的嚴重性。 您不需要建置專案，也能看見違規項目。
+命名慣例關係到程式碼項目的命名，例如類別、屬性和方法。 例如，您可以指定公用成員必須以大寫形式命名，或非同步方法必須以 "Async" 結尾。 您可以藉由在 [.editorconfig 檔案](../ide/create-portable-custom-editor-options.md)中指定來強制執行這些規則。 違反命名規則的項目會出現在 [錯誤清單] 或在名稱下方以建議的形式出現，取決於您為規則選擇的嚴重性。 您不需要建置專案，也能看見違規項目。
 
 針對每一個命名慣例，您必須使用以下描述的屬性來指定其適用的符號、命名樣式以及嚴重性，以強制執行慣例。 屬性的順序不重要。
 
@@ -50,9 +50,9 @@ ms.locfileid: "68957420"
 - 屬性
 - 方法
 - Field - 欄位
-- Event - 事件
+- event
 - Delegate - 委派
-- 參數
+- 參數 (parameter)
 - type_parameter
 - 本機
 - local_function
@@ -107,7 +107,7 @@ ms.locfileid: "68957420"
    > [!NOTE]
    > 如果您有 `static` 或 `shared` 符號的命名規則，則它也套用到 `const` 符號，因為它們是隱含靜態的。 如果您不想要 `static` 命名規則套用到 `const` 符號，請針對 `const` 符號建立個別的命名規則。
 
-命名規則會比對擁有 `required_modifiers` 中指定之「所有」  修飾詞的簽章。 如果您省略此屬性時，則會使用空白清單的預設值；換句話說，不需要比對特定修飾詞。 這表示不論是否套用此規則，符號的修飾詞都不會造成影響。
+命名規則會比對擁有 `required_modifiers` 中指定之「所有」修飾詞的簽章。 如果您省略此屬性時，則會使用空白清單的預設值；換句話說，不需要比對特定修飾詞。 這表示不論是否套用此規則，符號的修飾詞都不會造成影響。
 
 > [!TIP]
 > 不要為 `required_modifiers` 指定 `*` 的值。 相反地，只需完全省略 `required_modifiers` 屬性，而您的命名規則將套用至任何種類的修飾詞。
@@ -155,7 +155,7 @@ ms.locfileid: "68957420"
 > [!NOTE]
 > 您必須將大寫樣式指定為您命名樣式的一部分，否則您的命名樣式可能會遭到忽略。
 
-## <a name="severity"></a>嚴重性
+## <a name="severity"></a>Severity
 
 若要描述違反您命名規則的嚴重性，請使用下列格式指定一個屬性：
 
@@ -163,16 +163,16 @@ ms.locfileid: "68957420"
 
 下表顯示了允許的嚴重性值，以及其代表的意涵：
 
-嚴重性 | 作用
+Severity | 作用
 ------------ | -------------
 none | 規則已完全隱藏。
 重構或無訊息 | 未遵循此樣式時，不要向使用者顯示任何內容；但自動產生的程式碼會遵循此樣式。
 建議 | 當未遵循此樣式時，向使用者顯示為建議 (在前兩個字元下方以點狀方式呈現)。 它在編譯時期沒有任何作用。
-warning | 當未遵循此樣式時，在 [錯誤清單]  中顯示編譯器警告。
-error | 當未遵循此樣式時，在 [錯誤清單]  中顯示編譯器錯誤。
+warning | 當未遵循此樣式時，在 [錯誤清單] 中顯示編譯器警告。
+error | 當未遵循此樣式時，在 [錯誤清單] 中顯示編譯器錯誤。
 
 > [!NOTE]
-> 您不需要建置您的專案，也能看到違反命名規則的項目。 它們會在 [錯誤清單]  中 (或作為建議)，以編輯過後的程式碼方式呈現。
+> 您不需要建置您的專案，也能看到違反命名規則的項目。 它們會在 [錯誤清單] 中 (或作為建議)，以編輯過後的程式碼方式呈現。
 
 ## <a name="rule-order"></a>規則順序
 
@@ -184,7 +184,7 @@ error | 當未遵循此樣式時，在 [錯誤清單]  中顯示編譯器錯誤�
 
 ::: moniker range=">=vs-2019"
 
-從 Visual Studio 2019 16.2 版開始，在 EditorConfig 檔案中定義命名規則的順序並不重要。 相反地，Visual Studio 會根據規則本身的定義自動排序命名規則。 [EditorConfig 語言服務延伸模組](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.EditorConfig)可以分析 EditorConfig 檔案和報表案例，其中檔案規則順序與編譯器在執行階段使用的規則順序不同。
+從 Visual Studio 2019 16.2 版開始，在 EditorConfig 檔案中定義命名規則的順序並不重要。 相反地，Visual Studio 會根據規則本身的定義自動排序命名規則。 [EditorConfig 語言服務延伸](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.EditorConfig)模組可以分析 EditorConfig 檔案和報表案例，其中檔案中的規則順序與編譯器在執行時間會使用的不同。
 
 如果您使用的是舊版 Visual Studio，則 EditorConfig 檔案中的命名慣例應該以最為明確到最不明確的順序排序。 第一個遇到的可套用規則，會是唯一套用的規則。 但是，如果有多個具有相同名稱的規則*屬性*，則最近找到具有該名稱的屬性優先。 如需詳細資訊，請參閱[檔案階層和優先順序](create-portable-custom-editor-options.md#file-hierarchy-and-precedence)。
 
@@ -200,7 +200,7 @@ error | 當未遵循此樣式時，在 [錯誤清單]  中顯示編譯器錯誤�
 
 ## <a name="example"></a>範例
 
-下列 .editorconfig  檔案所包含的命名慣例指定公用屬性、方法、欄位、事件及委派必須為大寫。 請注意，此命名慣例指定了多種要套用規則的符號類型，並使用逗號分隔值。
+下列 .editorconfig 檔案所包含的命名慣例指定公用屬性、方法、欄位、事件及委派必須為大寫。 請注意，此命名慣例指定了多種要套用規則的符號類型，並使用逗號分隔值。
 
 ```ini
 # Public members must be capitalized (public_members_must_be_capitalized)
@@ -226,7 +226,7 @@ dotnet_naming_rule.public_members_must_be_capitalized.severity = suggestion
 dotnet_naming_rule.public_members_must_be_capitalized.severity = warning
 ```
 
-如果您關閉並重新開啟程式碼檔，則相較於之前於名稱違規下方可看見建議的情況，您現在會在 [錯誤清單]  中看見彎曲的綠色警告：
+如果您關閉並重新開啟程式碼檔，則相較於之前於名稱違規下方可看見建議的情況，您現在會在 [錯誤清單] 中看見彎曲的綠色警告：
 
 ![命名規則警告](media/editorconfig-naming-rule-warning.png)
 

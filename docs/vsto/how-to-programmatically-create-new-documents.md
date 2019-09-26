@@ -1,5 +1,5 @@
 ---
-title: HOW TO：以程式設計方式建立新文件
+title: 作法：以程式設計方式建立新檔
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,19 +14,19 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4940b5f5064fdb47439ad6b38b855785ae06c781
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 71610d0bd2e957d932e31d83d06aca914bf8b585
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62575126"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71251956"
 ---
-# <a name="how-to-programmatically-create-new-documents"></a>HOW TO：以程式設計方式建立新文件
-  當您以程式設計方式建立文件時，新的文件就是原生的 <xref:Microsoft.Office.Interop.Word.Document> 物件。 這個物件沒有 <xref:Microsoft.Office.Tools.Word.Document> 主項目的其他事件和資料繫結功能。 如需詳細資訊，請參閱 <<c0> [ 主項目和主控制項的程式設計限制](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)。
+# <a name="how-to-programmatically-create-new-documents"></a>作法：以程式設計方式建立新檔
+  當您以程式設計方式建立文件時，新的文件就是原生的 <xref:Microsoft.Office.Interop.Word.Document> 物件。 這個物件沒有 <xref:Microsoft.Office.Tools.Word.Document> 主項目的其他事件和資料繫結功能。 如需詳細資訊，請參閱[主專案和主控制項的程式設計限制](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)。
 
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
 
- 當您開發文件層級專案時，您無法以程式設計方式在專案中加入 <xref:Microsoft.Office.Tools.Word.Document> 主項目。 在 VSTO 增益集專案中，您可以在執行階段將任何 <xref:Microsoft.Office.Interop.Word.Document> 物件轉換成 <xref:Microsoft.Office.Tools.Word.Document> 主項目。 如需詳細資訊，請參閱 <<c0> [ 擴充 Word 文件和 VSTO 增益集在執行階段中的 Excel 活頁簿](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)。
+ 當您開發文件層級專案時，您無法以程式設計方式在專案中加入 <xref:Microsoft.Office.Tools.Word.Document> 主項目。 在 VSTO 增益集專案中，您可以在執行階段將任何 <xref:Microsoft.Office.Interop.Word.Document> 物件轉換成 <xref:Microsoft.Office.Tools.Word.Document> 主項目。 如需詳細資訊，請參閱[在 VSTO 增益集的執行時間中擴充 Word 檔和 Excel 活頁簿](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)。
 
 ## <a name="to-create-a-new-document-based-on-the-normal-template"></a>根據 Normal 範本建立新文件
 
@@ -36,7 +36,7 @@ ms.locfileid: "62575126"
      [!code-csharp[Trin_VstcoreWordAutomation#1](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#1)]
 
 ## <a name="use-custom-templates"></a>使用自訂範本
- <xref:Microsoft.Office.Interop.Word.Documents.Add%2A>方法具有選擇性*範本*引數，以建立新的文件根據 Normal 範本以外的範本。 您必須提供範本的檔案名稱和完整路徑。
+ 方法具有選擇性樣板引數，可根據一般範本以外的範本來建立新的檔。 <xref:Microsoft.Office.Interop.Word.Documents.Add%2A> 您必須提供範本的檔案名稱和完整路徑。
 
 ### <a name="to-create-a-new-document-based-on-a-custom-template"></a>根據自訂範本建立新文件
 
@@ -46,7 +46,7 @@ ms.locfileid: "62575126"
      [!code-csharp[Trin_VstcoreWordAutomation#2](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#2)]
 
 ## <a name="see-also"></a>另請參閱
-- [如何：以程式設計方式開啟現有文件](../vsto/how-to-programmatically-open-existing-documents.md)
-- [主項目和主控制項概觀](../vsto/host-items-and-host-controls-overview.md)
-- [主項目和主控制項的程式設計限制](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)
+- [如何：以程式設計方式開啟現有檔](../vsto/how-to-programmatically-open-existing-documents.md)
+- [主專案和主控制項總覽](../vsto/host-items-and-host-controls-overview.md)
+- [主專案和主控制項的程式設計限制](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)
 - [Office 方案中的選擇性參數](../vsto/optional-parameters-in-office-solutions.md)

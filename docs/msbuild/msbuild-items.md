@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e7000e8a95dbe115e5afe853c9dd55a797d23ec3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: cebf824785fed39cfd824b9b90f9d19be5df8c64
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62842301"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71251704"
 ---
 # <a name="msbuild-items"></a>MSBuild 項目
 MSBuild 項目是建置系統的輸入，而且它們通常代表檔案 (檔案是在 `Include` 屬性中指定)。 項目 (Item) 會依據它們的項目 (Element) 名稱分組為項目 (Item) 類型。 項目類型是具名的項目清單，可用來做為工作的參數。 工作會使用項目值來執行建置程序的步驟。
@@ -179,7 +179,7 @@ MSBuild 項目是建置系統的輸入，而且它們通常代表檔案 (檔案�
  從 .NET Framework 3.5 開始，`Target` 項目可能會包含 [ItemGroup](../msbuild/itemgroup-element-msbuild.md) 項目，其中可能包含 Item 項目。 如果已針對 `ItemGroup` (位於 `Target`) 中的項目指定本節中的屬性，則它們是有效的。
 
 ### <a name="BKMK_RemoveAttribute"></a> Remove 屬性
- `Remove` 屬性會移除項目類型中的特定項目 (檔案)。 此屬性在 .NET Framework 3.5 中引進，但 MSBuild 15.0 之前只在目標內支援。
+ `Remove` 屬性會移除項目類型中的特定項目 (檔案)。 此屬性是在 .NET Framework 3.5 中引進（僅限在目標內）。 從 MSBuild 15.0 開始支援內部和外部目標。
 
  下列範例會從 Compile 項目類型移除每個 *.config* 檔案。
 
