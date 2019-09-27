@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: abd5075d04f26b9795695bfcd4fcd387e1a15d24
-ms.sourcegitcommit: 541a0556958201ad6626bc8638406ad02640f764
+ms.openlocfilehash: 6416045f040e9825bab6eeb33dd4b75478166ee3
+ms.sourcegitcommit: 689ba54ea14257d13031de881f5d4fe937a36f56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71079583"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71342483"
 ---
 # <a name="troubleshoot-code-coverage"></a>對程式碼涵蓋範圍進行疑難排解
 
@@ -29,6 +29,7 @@ Visual Studio 中的程式碼涵蓋範圍分析工具會收集原生組件和 Ma
 ## <a name="possible-reasons-for-seeing-no-results-or-old-results"></a>看不見任何結果或看見舊結果的可能原因
 
 ### <a name="do-you-have-the-right-edition-of-visual-studio"></a>您的 Visual Studio 版本是否正確?
+
 您需具備 Visual Studio 企業版。
 
 ### <a name="no-tests-were-executed"></a>沒有執行過任何測試
@@ -43,7 +44,7 @@ Visual Studio 中的程式碼涵蓋範圍分析工具會收集原生組件和 Ma
 
 當您修改並重新執行測試時，可能仍會顯示先前的程式碼涵蓋範圍結果，包括在先前執行時著色的程式碼。
 
-1. 執行 [分析程式碼涵蓋範圍]。
+1. 執行 [**分析程式碼涵蓋範圍**]。
 
 2. 請務必在 [程式碼涵蓋範圍結果] 視窗中選取最新的一組結果。
 

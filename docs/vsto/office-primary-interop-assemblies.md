@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 385b2d451d8202356d56ab7b1a5fd5158d267f1c
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 6a709a59e85f65cf2e0caa0551610dd496bedda5
+ms.sourcegitcommit: 689ba54ea14257d13031de881f5d4fe937a36f56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71253745"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71342499"
 ---
 # <a name="office-primary-interop-assemblies"></a>Office 主要 Interop 組件
 
@@ -61,13 +61,13 @@ Visual Studio 在開發電腦上使用不同的 PIA 集合。 這些不同的組
 
 從 Visual Studio 2017 開始，這些 Pia 複本會安裝到開發電腦上的下列共用位置：
 
-- *%ProgramFiles%\Microsoft Visual Studio\Shared\Visual Studio Tools for Office\PIA\*
+- `%ProgramFiles%\Microsoft Visual Studio\Shared\Visual Studio Tools for Office\PIA\`
 
-- （或 *% ProgramFiles （x86）% \ Microsoft Visual Studio\Shared\Visual Studio Tools for Office\PIA\* on 64-bit 作業系統）
+- （或64位作業系統上的 `%ProgramFiles(x86)%\Microsoft Visual Studio\Shared\Visual Studio Tools for Office\PIA\`）
 
 > [!NOTE]
-> 針對較舊版本的 Visual Studio，會將這些 Pia 安裝到該 Visual Studio 版本之 *% ProgramFiles% 資料夾下的 [Office\PIA] 資料夾 Visual Studio Tools。
-> 例如： *% ProgramFiles （x86）% \ Microsoft Visual Studio 14.0 \ Visual Studio Tools 適用于 Office\PIA\*
+> 針對較舊版本的 Visual Studio，這些 Pia 會安裝到該版本 Visual Studio 的 @no__t 0 資料夾下的 [Office\PIA] 資料夾 Visual Studio Tools。
+> 例如： `%ProgramFiles(x86)%\Microsoft Visual Studio 14.0\Visual Studio Tools for Office\PIA\`
 
 ### <a name="primary-interop-assemblies-in-the-global-assembly-cache"></a>全域組件快取中的主要 interop 元件
 
@@ -86,7 +86,7 @@ Visual Studio 中的每一個 Office 專案範本設計成只能搭配一個 Mic
 如果您已在全域組件快取中安裝及註冊 PIA，這些版本的組件會顯示在 [參考管理員] 對話方塊的 [COM] 索引標籤上。 您應該避免加入這些版本的組件參考，因為使用這些版本的組件參考可能會發生一些開發問題。 例如，如果您在全域組件快取中註冊了不同版本的 PIA，您的專案將會自動建置為最後註冊的組件版本 (即使在 [參考管理員] 對話方塊的 [COM] 索引標籤上指定了不同版本的組件亦然)。
 
 > [!NOTE]
-> 當您加入參考某些組件的單一組件時，系統會自動將這些組件加入至專案。 例如，當您新增 Word、Excel、Outlook、Microsoft Forms 或 Graph 元件的參考時，會自動加入對*Office .dll*和- *Vbe*元件的參考。
+> 當您加入參考某些組件的單一組件時，系統會自動將這些組件加入至專案。 例如，當您新增 Word、Excel、Outlook、Microsoft Forms 或 Graph 元件的參考時，會自動加入 `Office.dll` 和 @no__t 1 元件的參考。
 
 <a name="pialist"></a>
 

@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: faf7738019680085020b9650094931d5860bc29b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 2e7330e750d0f636979f52eacf398ca7d496c523
+ms.sourcegitcommit: 689ba54ea14257d13031de881f5d4fe937a36f56
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62577358"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71342415"
 ---
 # <a name="verifyfilehash-task"></a>VerifyFileHash 工作
 
@@ -32,11 +32,10 @@ ms.locfileid: "62577358"
 
  下表說明 `VerifyFileHash` 工作的參數。
 
-|參數|說明|
+|參數|描述|
 |---------------|-----------------|
 |`File`|必要的 <xref:Microsoft.Build.Framework.ITaskItem> 參數。<br /><br />要雜湊處理及驗證的檔案。|
 |`Hash`|必要的 `String` 參數。<br /><br />檔案的預期雜湊。|
-|`Items`|<xref:Microsoft.Build.Framework.ITaskItem>`[]` 輸出參數。<br /><br />`Files` 輸入含設定至檔案雜湊的其他中繼資料。|
 |`Algorithm`|選擇性的 `String` 參數。<br /><br />演算法。 允許值：`SHA256`、`SHA384`、`SHA512`。 預設值 = `SHA256`。|
 |`HashEncoding`|選擇性的 `String` 參數。<br /><br />要用於產生雜湊的編碼。 預設值為 `hex`。 允許值：`hex`、`base64`。|
 

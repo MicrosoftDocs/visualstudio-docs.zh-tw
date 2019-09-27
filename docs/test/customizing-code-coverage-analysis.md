@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: a22bdbc30fc222e26c01a10afdd7a666eebcb9f6
-ms.sourcegitcommit: a2df993dc5e11c5131dbfcba686f0028a589068f
+ms.openlocfilehash: 517f3f5911df6c7de1f59232a4e836bcdc84c448
+ms.sourcegitcommit: 689ba54ea14257d13031de881f5d4fe937a36f56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "71150115"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71342367"
 ---
 # <a name="customize-code-coverage-analysis"></a>自訂程式碼涵蓋範圍分析
 
@@ -40,7 +40,7 @@ ms.locfileid: "71150115"
 
 ::: moniker range=">=vs-2019"
 
-3. 若要在 [測試總管] 中選取執行設定檔，請選取 [設定] 按鈕上的箭頭，然後選取 [選取設定檔]。 若要指定從命令列執行測試的回合設定檔，請參閱[設定單元測試](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md#command-line)。
+3. 若要選取回合設定檔案，請在 [**測試**] 功能表上選擇 [**選取設定檔**]。 若要指定從命令列執行測試的回合設定檔，請參閱[設定單元測試](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md#command-line)。
 
 ::: moniker-end
 
@@ -59,7 +59,7 @@ ms.locfileid: "71150115"
 
 ::: moniker range=">=vs-2019"
 
-若要關閉和開啟自訂設定，請在 [測試總管] 中的 [設定] 功能表上取消選取或選取檔案。
+若要關閉和關閉自訂設定，請取消選取或選取 [**測試**] 功能表上的檔案。
 
 ::: moniker-end
 
@@ -110,9 +110,9 @@ ms.locfileid: "71150115"
 | ModulePath | 符合元件名稱或檔案路徑所指定的元件。 |
 | CompanyName | 符合**Company**屬性的元件。 |
 | 公開金鑰 | 依據公開金鑰標記比對已簽署的元件。 |
-| 原始程式檔 | 依據專案定義所在之來源檔案的路徑名稱比對元素。 |
+| Source | 依據專案定義所在之來源檔案的路徑名稱比對元素。 |
 | 屬性 | 符合具有指定之屬性的元素。 指定屬性的完整名稱，例如 `<Attribute>^System\.Diagnostics\.DebuggerHiddenAttribute$</Attribute>`。<br/><br/>如果您排除 <xref:System.Runtime.CompilerServices.CompilerGeneratedAttribute> 屬性，則會從程式碼涵蓋範圍分析中排除使用語言功能 (例如 `async`、`await`、`yield return`) 和自動實作屬性的程式碼。 若要排除真正產生的程式碼，只要排除 <xref:System.CodeDom.Compiler.GeneratedCodeAttribute> 屬性即可。 |
-| 功能 | 依照完整限定名稱（包括參數清單）來比對程式、函式或方法。 您也可以使用[正則運算式](#regular-expressions)來比對部分的名稱。<br/><br/>例如：<br/><br/>`Fabrikam.Math.LocalMath.SquareRoot(double);` (C#)<br/><br/>`Fabrikam::Math::LocalMath::SquareRoot(double)`(C++) |
+| 函數 | 依照完整限定名稱（包括參數清單）來比對程式、函式或方法。 您也可以使用[正則運算式](#regular-expressions)來比對部分的名稱。<br/><br/>例如：<br/><br/>`Fabrikam.Math.LocalMath.SquareRoot(double);` (C#)<br/><br/>`Fabrikam::Math::LocalMath::SquareRoot(double)`(C++) |
 
 ### <a name="regular-expressions"></a>規則運算式
 
@@ -270,7 +270,7 @@ Included items must then not match any entries in the exclude list to remain inc
             </PublicKeyTokens>
 
             <!-- We recommend you do not change the following values: -->
-            
+
             <!-- Set this to True to collect coverage information for functions marked with the "SecuritySafeCritical" attribute. Instead of writing directly into a memory location from such functions, code coverage inserts a probe that redirects to another function, which in turns writes into memory. -->
             <UseVerifiableInstrumentation>True</UseVerifiableInstrumentation>
             <!-- When set to True, collects coverage information from child processes that are launched with low-level ACLs, for example, UWP apps. -->
