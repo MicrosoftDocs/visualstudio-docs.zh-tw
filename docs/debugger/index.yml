@@ -9,12 +9,12 @@ metadata:
   ms.author: mikejo
   manager: jillfra
   ms.date: 09/20/2019
-  ms.openlocfilehash: 2ce5c3c8c9baf6f513f7dca4b4072e02e461a62a
-  ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+  ms.openlocfilehash: be124cf1dc4a594575347d58439902f8ed99b803
+  ms.sourcegitcommit: 9a3972eb85de5443ac2bc03964c5a251c39b2921
   ms.translationtype: HT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 09/24/2019
-  ms.locfileid: "71213594"
+  ms.lasthandoff: 09/26/2019
+  ms.locfileid: "71301660"
 landingContent:
 - title: 關於偵錯
   linkLists:
@@ -74,3 +74,9 @@ landingContent:
       url: using-the-debuggerdisplay-attribute.md
     - text: 遠端偵錯
       url: remote-debugging.md
+- title: 共同作業
+  linkLists:
+  - linkListType: tutorial
+    links:
+    - text: 使用 Live Share 撰寫程式碼及對其偵錯 >>
+      url: /visualstudio/liveshare/use/vs

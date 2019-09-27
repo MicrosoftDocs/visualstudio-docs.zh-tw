@@ -34,7 +34,7 @@
       href: view-historical-application-state.md
     - name: 適合完全初學者的偵錯
       href: debugging-absolute-beginners.md
-- name: 作法指南
+- name: 使用說明指南
   items:
     - name: 使用偵錯工具巡覽程式碼
       href: navigating-through-code-with-the-debugger.md
@@ -146,7 +146,7 @@
               href: how-to-find-which-dll-your-program-crashed-in.md
         - name: 檢視指令碼文件
           href: how-to-view-script-documents.md
-    - name: 秘訣和訣竅
+    - name: 秘訣與技巧
       items:
         - name: 偵錯工具祕訣與技巧
           href: debugger-tips-and-tricks.md
@@ -666,6 +666,10 @@
               href: how-to-step-into-wcf-services.md
             - name: 對自我裝載的 WCF 服務進行偵錯
               href: how-to-debug-a-self-hosted-wcf-service.md
+    - name: 共同作業
+      items:
+        - name: 使用 Live Share 撰寫程式碼及對其偵錯
+          href: /visualstudio/liveshare/use/vs
     - name: 傾印檔案
       items:
         - name: 使用傾印檔案
@@ -828,7 +832,7 @@
                   href: how-to-search-for-a-process-in-processes-view.md
                 - name: 顯示處理序屬性
                   href: how-to-display-process-properties.md
-            - name: 執行緒
+            - name: Threads
               items:
                 - name: 執行緒檢視
                   href: threads-view.md
