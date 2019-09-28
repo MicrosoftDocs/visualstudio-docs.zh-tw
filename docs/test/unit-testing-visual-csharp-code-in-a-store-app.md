@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - uwp
 author: gewarren
-ms.openlocfilehash: 359f2f8b078c197f12a6db09858ca7c9da5a621a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: dfb0ed5775e011471ba32d4962b0bf25cfcda2b1
+ms.sourcegitcommit: 16175e0cea6af528e9ec76f0b94690faaf1bed30
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62809625"
+ms.lasthandoff: 09/28/2019
+ms.locfileid: "71481881"
 ---
 # <a name="unit-test-c-code"></a>對 C# 程式碼進行單元測試
 
@@ -167,7 +167,7 @@ ms.locfileid: "62809625"
        {
            double expected = v;
            double actual = rooter.SquareRoot(v*v);
-           double tolerance = ToleranceHelper(expected);
+           double tolerance = expected/1000;
            Assert.AreEqual(expected, actual, tolerance);
        }
    }
@@ -255,7 +255,7 @@ ms.locfileid: "62809625"
 
     1. 在 `SquareRoot` 函式的開頭設定中斷點。
 
-    2. 在失敗測試的捷徑功能表上，選擇 [偵錯選取的測試] 。
+    2. 在失敗測試的捷徑功能表上，選擇 [偵錯選取的測試]。
 
         當在中斷點停止執行時，逐步執行程式碼。
 

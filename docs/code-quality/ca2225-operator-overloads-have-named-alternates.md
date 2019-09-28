@@ -12,14 +12,14 @@ ms.assetid: af8f7ab1-63ad-4861-afb9-b7a7a2be15e1
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.workload:
-- multiple
-ms.openlocfilehash: c027bc4581919f814b4d93eacba77248349fdf8b
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+dev_langs:
+- CSharp
+ms.openlocfilehash: b4db3074d334fe32f95c4d1b8446921c4e4d47ba
+ms.sourcegitcommit: 16175e0cea6af528e9ec76f0b94690faaf1bed30
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71231080"
+ms.lasthandoff: 09/28/2019
+ms.locfileid: "71481765"
 ---
 # <a name="ca2225-operator-overloads-have-named-alternates"></a>CA2225:運算子多載必須有具名的替代方法
 
@@ -27,7 +27,7 @@ ms.locfileid: "71231080"
 |-|-|
 |TypeName|OperatorOverloadsHaveNamedAlternates|
 |CheckId|CA2225|
-|分類|Microsoft.Usage|
+|Category|Microsoft.Usage|
 |重大變更|不中斷|
 
 ## <a name="cause"></a>原因
@@ -38,12 +38,16 @@ ms.locfileid: "71231080"
 
 ## <a name="rule-description"></a>規則描述
 
-運算子多載允許使用符號來代表類型的計算。 例如，多載加號（+）以進行加法的類型，通常會有一個名為 ' Add ' 的替代成員。 已命名的替代成員可存取與運算子相同的功能，並為以不支援多載運算子的語言設計程式的開發人員提供。
+運算子多載允許使用符號來代表類型的計算。 例如，多載加號 `+` 的類型，通常會有一個名為 `Add` 的替代成員。 已命名的替代成員提供與運算子相同功能的存取權。 它是針對以不支援多載運算子的語言設計程式的開發人員所提供。
 
-此規則會檢查下表所列的運算子。
+此規則會檢查：
 
-|C#|Visual Basic|C++|替代名稱|
-|---------|------------------|-----------|--------------------|
+- 藉由檢查名為 `To<typename>` 和 `From<typename>` 的方法，在類型中隱含和明確轉換運算子。
+
+- 下表列出的運算子：
+
+|C#|Visual Basic|C++|替代方法名稱|
+|-|-|-|-|
 |+ （二進位）|+|+ （二進位）|新增|
 |+=|+=|+=|新增|
 |&|和|&|BitwiseAnd|
@@ -56,14 +60,14 @@ ms.locfileid: "71231080"
 |==|=|==|等於|
 |^|Xor|^|Xor|
 |^=|Xor =|^=|Xor|
-|>|>|>|比較|
-|>=|>=|>=|比較|
+|>|>|>|CompareTo 或比較|
+|>=|>=|>=|CompareTo 或比較|
 |++|N/A|++|遞增|
-|<>|!=|等於|
+|!=|<>|!=|等於|
 |<<|<<|<<|LeftShift|
 |<<=|<<=|<<=|LeftShift|
-|<|<|<|比較|
-|<=|<=|\<=|比較|
+|<|<|<|CompareTo 或比較|
+|<=|<=|\<=|CompareTo 或比較|
 |&&|N/A|&&|LogicalAnd|
 |&#124;&#124;|N/A|&#124;&#124;|LogicalOr|
 |!|N/A|!|LogicalNot|
@@ -79,17 +83,16 @@ ms.locfileid: "71231080"
 |true|IsTrue|N/A|IsTrue （屬性）|
 |-（一元）|N/A|-|反|
 |+ （一元）|N/A|+|增加|
-|False|IsFalse|False|IsTrue （屬性）|
+|false|IsFalse|偽|IsTrue （屬性）|
 
-N/A = = 無法以選取的語言多載。
+\* N/A 表示運算子無法以選取的語言多載。
 
-此規則也會藉由檢查名`SomeType` `ToSomeType`為和`FromSomeType`的方法，檢查類型（）中的隱含和明確轉換運算子。
-
-在C#中，當二元運算子多載時，對應的指派運算子（如果有的話）也會隱含地多載。
+> [!NOTE]
+> 在C#中，當二元運算子多載時，對應的指派運算子（如果有的話）也會隱含地多載。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
 
-若要修正此規則的違規，請執行運算子的替代方法。使用建議的替代名稱將其命名為。
+若要修正此規則的違規情形，請執行運算子的替代方法。 使用建議的替代名稱將其命名為。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
 
