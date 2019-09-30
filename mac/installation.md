@@ -42,7 +42,7 @@ ms.locfileid: "71211452"
 
     [![安裝程式會檢查您系統的已安裝元件](media/install-checking-sml.png)](media/install-checking.png#lightbox)
 
-5. 系統會出現要求您確認隱私權和授權條款的警示。 請前往連結並加以閱讀；如果您同意即可按 [繼續]：
+5. 系統會出現要求您確認隱私權和授權條款的警示。 請點擊連結並閱讀；如果您同意即可按 [繼續] ：
 
     [![前往隱私權和條款的連結；如果您同意，請繼續執行](media/install-privacy.png)](media/install-privacy.png#lightbox)
 
@@ -57,7 +57,7 @@ ms.locfileid: "71211452"
 |---------|---------|---------|---------|
 |**使用 Xamarin 的應用程式**| Xamarin.Forms|選取**Android**和**iOS**平臺 |您將需要安裝[ **Xcode**](https://developer.apple.com/xcode/) |
 ||僅限 iOS|選取**iOS**平臺|您將需要安裝[ **Xcode**](https://developer.apple.com/xcode/)|
-||僅限 Android|選取**Android**平臺|請注意，您也應該選取相關的相依性|
+||僅 Android|選取 [**Android**] 平台|請注意，您也必須選取有相依性的開發工具。|
 ||僅限 Mac|選取**macOS （Cocoa）** 平臺|您將需要安裝[ **Xcode**](https://developer.apple.com/xcode/)|
 |**.NET Core 應用程式**|         |選取 [ **.Net Core**平臺]。|         |
 |**ASP.NET Core Web 應用程式**|         |選取 [ **.Net Core**平臺]。|         |
