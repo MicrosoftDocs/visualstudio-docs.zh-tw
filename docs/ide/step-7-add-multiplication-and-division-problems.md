@@ -4,9 +4,6 @@ ms.date: 11/04/2016
 ms.topic: tutorial
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
-ms.devlang:
-- csharp
-- vb
 dev_langs:
 - CSharp
 - VB
@@ -16,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b367c83b449959e102e1adff124d9c871eff9a23
-ms.sourcegitcommit: 541a0556958201ad6626bc8638406ad02640f764
+ms.openlocfilehash: 834d7c5825759298ab083ec0d0a0553e87e6173e
+ms.sourcegitcommit: 6eed0372976c0167b9a6d42ba443f9a474b8bb91
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71079297"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71118614"
 ---
 # <a name="step-7-add-multiplication-and-division-problems"></a>步驟 7：新增乘法及除法問題
 

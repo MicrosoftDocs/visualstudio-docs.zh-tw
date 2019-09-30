@@ -11,16 +11,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dad84145200b09cfbddab63bd9994096d0ba3e17
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 0627a96bf100232987ace5a42430310912f97b8c
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62537283"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71252083"
 ---
 # <a name="manage-application-settings-net"></a>管理應用程式設定 (.NET)
 
-應用程式設定可讓您動態儲存應用程式資訊。 設定可以讓您在用戶端電腦上儲存不應包含在應用程式程式碼中的資訊 (例如連接字串)、使用者喜好設定和執行階段所需的其他資訊。
+應用程式設定可讓您動態儲存應用程式資訊。 設定可讓您在用戶端電腦上儲存不應包含在應用程式代碼中的資訊（例如連接字串）、使用者喜好設定，以及您在執行時間所需的其他資訊。
 
 應用程式設定會取代舊版 Visual Studio 中使用的動態屬性。
 
@@ -38,7 +38,7 @@ ms.locfileid: "62537283"
 
 - 使用者範圍的設定可用於保留表單最後一個位置或字型偏好設定等資訊。 使用者可以在執行階段變更這些值。
 
-您可以使用 [範圍]  屬性變更設定的類型。
+您可以使用 [範圍] 屬性變更設定的類型。
 
 專案系統會將應用程式設定儲存在兩個 XML 檔案中：
 
@@ -50,7 +50,7 @@ ms.locfileid: "62537283"
 
 ## <a name="create-application-settings-at-design-time"></a>在設計階段建立應用程式設定
 
-在設計階段建立應用程式設定有兩種方式：使用 [專案設計工具]  的 [設定] 頁面，或是使用表單或控制項的 [屬性]  視窗，這個視窗可讓您將設定繫結至屬性。
+在設計階段建立應用程式設定有兩種方式：使用 [專案設計工具] 的 [設定]頁面，或是使用表單或控制項的 [屬性] 視窗，這個視窗可讓您將設定繫結至屬性。
 
 當您建立應用程式範圍的設定 (例如資料庫連接字串或伺服器資源參考) 時，[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 會將設定儲存在 *app.config* 中的 `<applicationSettings>` 標記下。 (連接字串儲存在 `<connectionStrings>` 標記之下)。
 
@@ -70,7 +70,7 @@ ms.locfileid: "62537283"
 
 您可以在專案中加入自訂設定檔，以便於管理設定群組。 單一檔案中所包含的設定會以單元方式載入和儲存。 將設定儲存在經常使用及不常使用群組的個別檔案中，可以節省載入和儲存設定的時間。
 
-例如，您可以將檔案 (例如 *SpecialSettings.settings*) 新增至專案中。 雖然 `SpecialSettings` 類別不會出現在 `My` 命名空間中，但是 [檢視程式碼]  仍可讀取包含 `Partial Class SpecialSettings`的自訂設定檔。
+例如，您可以將檔案 (例如 *SpecialSettings.settings*) 新增至專案中。 雖然 `SpecialSettings` 類別不會出現在 `My` 命名空間中，但是 [檢視程式碼] 仍可讀取包含 `Partial Class SpecialSettings`的自訂設定檔。
 
 [設定設計工具] 首先會搜尋專案系統所建立的 *Settings.settings* 檔案，也就是 [專案設計工具]在 [設定] 索引標籤中所顯示的預設檔案。[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 專案的 *Settings.settings* 位於 *My Project* 資料夾，而 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 專案的這個檔案則位於 *Properties* 資料夾。 然後，[專案設計工具] 會搜尋專案根資料夾中的其他設定檔。 因此，您應該將自訂設定檔放在此。 如果您將 *.settings* 檔案新增至專案中的其他地方，[專案設計工具] 就無法找到該檔案。
 

@@ -12,18 +12,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e5219e6e3977be59d89b7835413092f1fbeb200
-ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
+ms.openlocfilehash: 5fe671b10a701bb355a476ff9bc577bb4cdca71b
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68680624"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71252523"
 ---
-# <a name="using-the-intellitrace-stand-alone-collector-c-visual-basic"></a>使用 IntelliTrace 獨立收集器 (C#, Visual Basic)
+# <a name="using-the-intellitrace-stand-alone-collector-c-visual-basic"></a>使用 IntelliTrace 獨立收集器（C#，Visual Basic）
 
 **IntelliTrace 獨立收集器** 可讓您收集生產伺服器或其他環境上 App 的 IntelliTrace 診斷資料，而不需要在目標電腦上安裝 Visual Studio，而且不需要變更目標系統的環境。 IntelliTrace 獨立收集器適用於 Web、Sharepoint、WPF 和 Windows Forms App。 完成資料收集時，只要刪除收集器，就可以將其解除安裝。
 
- 觀看 IntelliTrace 實際操作:[收集和分析生產環境中的 IntelliTrace 資料以進行偵錯工具 (Channel 9 影片)](http://go.microsoft.com/fwlink/?LinkID=251851)
+ 觀看 IntelliTrace 實際操作：[收集和分析生產環境中的 IntelliTrace 資料以進行偵錯工具（Channel 9 影片）](http://go.microsoft.com/fwlink/?LinkID=251851)
 
 > [!NOTE]
 > 您也可以透過 **Trace** 模式使用 **Microsoft Monitoring Agent** ，即可收集遠端電腦上執行之 Web 和 Sharepoint App 的相同 IntelliTrace 資料。
@@ -52,7 +52,7 @@ ms.locfileid: "68680624"
 
 ## <a name="WhatApps"></a> 哪些 App 與收集器搭配使用？
 
-- ASP.NET 裝載于 Internet Information Services (IIS) 版本7.0、7.5、8.0、12.0 和16.0 的 Web 應用程式
+- ASP.NET 裝載于 Internet Information Services （IIS）版本7.0、7.5、8.0、12.0 和16.0 的 Web 應用程式
 
 - SharePoint 2010 和 SharePoint 2013 應用程式
 
@@ -82,7 +82,7 @@ ms.locfileid: "68680624"
 
 2. 從[Microsoft 下載中心](https://visualstudio.microsoft.com/downloads/#intellitrace-standalone-collector-for-visual-studio-2019)、 [My.visualstudio.com](https://my.visualstudio.com/Downloads?q=intellitrace%20standalone%20collector%20visual%20studio%202017)或 Visual Studio 2013 Update 3 安裝資料夾取得收集器。 [IntelliTrace Collector for Visual Studio 2013 Update 4](https://www.microsoft.com/en-us/download/details.aspx?id=44909)::
 
-   - **Microsoft 下載中心**或**my.visualstudio.com**:
+   - **Microsoft 下載中心**或**my.visualstudio.com**：
 
      1. 選擇 **IntelliTraceCollector.exe**旁邊的 [下載]。
 
@@ -94,11 +94,11 @@ ms.locfileid: "68680624"
 
    - **Visual Studio 安裝資料夾**：
 
-     1. 從安裝收集器的資料夾複製 Start-intellitracecollection, 例如:
+     1. 從安裝收集器的資料夾複製 Start-intellitracecollection，例如：
 
           **..\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\CommonExtensions\Microsoft\IntelliTrace**
 
-          或者, 針對舊版的 Visual Studio:
+          或者，針對舊版的 Visual Studio：
 
           **..\Microsoft Visual Studio 12.0\Common7\IDE\CommonExtensions\Microsoft\IntelliTrace\12.0.0**
 
@@ -203,9 +203,9 @@ ms.locfileid: "68680624"
 
      2. 在 [安全性] 索引標籤上，依序選擇 [編輯]和 [新增]。
 
-     3. 請確認 [內建安全性主體] 出現在 [選取這個物件類型] 方塊中。 如果未出現，請選擇 [物件類型]  ，以將它加入。
+     3. 請確認 [內建安全性主體] 出現在 [選取這個物件類型] 方塊中。 如果未出現，請選擇 [物件類型]，以將它加入。
 
-     4. 請確認您的本機電腦出現在 [從這個位置] 方塊中。 如果未出現，請選擇 [位置]  變更它。
+     4. 請確認您的本機電腦出現在 [從這個位置] 方塊中。 如果未出現，請選擇 [位置] 變更它。
 
      5. 在 [輸入要選取的物件名稱] 方塊中，加入 Web App 或 SharePoint 應用程式的應用程式集區。
 
@@ -238,7 +238,7 @@ ms.locfileid: "68680624"
 
 2. 重現問題。
 
-3. 若要建立 .Itrace 檔案的檢查點, 請使用下列語法:
+3. 若要建立 .Itrace 檔案的檢查點，請使用下列語法：
 
      `Checkpoint-IntelliTraceCollection` `"` *\<ApplicationPool>* `"`
 
@@ -315,7 +315,7 @@ ms.locfileid: "68680624"
 
   - 您可以停用與 App 無關的事件，以減少啟動時間。 例如，針對未使用 Windows Workflow 的 App 停用 Windows Workflow 事件。
 
-  - 您可以停用可存取登錄但未顯示登錄設定問題之 App 的登錄事件，以改善啟動和執行階段效能。
+  - 您可以藉由停用存取登錄的應用程式登錄事件，但不顯示登錄設定的問題，來改善啟動和執行時間效能。
 
 - 檢閱 IntelliTrace 在收集計劃中為其收集資料的模組。 編輯收集計劃，使其只包括您感興趣的模組：
 

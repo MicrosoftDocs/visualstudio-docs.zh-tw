@@ -1,6 +1,6 @@
 ---
-title: 偵錯 Managed 程式碼 |Microsoft Docs
-ms.date: 11/04/2016
+title: 對 Managed 程式碼進行偵錯工具 |Microsoft Docs
+ms.date: 09/23/2019
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -16,16 +16,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a5cf348b06bca6127690c7b5a7301881bdf75078
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c94de629026cfa1b78429aaf2209b81eead7da4f
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62851883"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71211196"
 ---
-# <a name="debugging-managed-code"></a>偵錯 Managed 程式碼
+# <a name="debug-managed-code-c-visual-basic-f-ccli"></a>Debug Managed 程式碼C#（，Visual Basic F#， C++，/cli）
 
-本節針對 Managed 應用程式或是以 Common Language Runtime 為目標的程式語言 (例如 Visual Basic、C# 和 C++) 所撰寫的應用程式，說明常見的偵錯問題和技術。 本文所說明的技術屬於高階技術。 [偵錯工具簡介](../debugger/debugger-feature-tour.md)。
+本節涵蓋 managed 應用程式的常見調試問題和技術，或是以通用語言執行時間為目標之語言撰寫的應用程式，例如C#Visual Basic、 C++和/cli 本文所說明的技術屬於高階技術。 [偵錯工具簡介](../debugger/debugger-feature-tour.md)。
 
 ## <a name="in-this-section"></a>本節內容
 
@@ -38,7 +38,7 @@ ms.locfileid: "62851883"
 [Visual Basic 中的 Stop 陳述式](../debugger/stop-statements-in-visual-basic.md)\
 描述提供另一種設定中斷點方式的 `Stop` 陳述式。 同時也提供一段範例程式碼，比較 `Stop` 陳述式和 `End` 陳述式，以及 `Stop` 和 `Assert` 陳述式。
 
-[逐步解說：偵錯 Windows Form](../debugger/walkthrough-debugging-a-windows-form.md)\
+[逐步解說：Windows Form 的調試](../debugger/walkthrough-debugging-a-windows-form.md)\
 提供建立 Windows Form 和偵錯這個表單的逐步指示說明。 Windows Form 是 Managed Windows 應用程式的標準元件，也是最常用的 Managed 應用程式。 此逐步解說會使用 Visual C# 和 Visual Basic 語言，不過，利用 C++ 建立 Windows Form 的技術大致與這兩種語言相似。
 
 [針對 OnStart 方法進行偵錯](../debugger/how-to-debug-the-onstart-method.md)\
@@ -47,22 +47,22 @@ ms.locfileid: "62851883"
 [混合模式偵錯](../debugger/debugging-mixed-mode-applications.md)\
 說明偵錯混合模式應用程式的方法。 也就是結合機器碼和 Managed 程式碼的任何應用程式。
 
-[錯誤：無法進行偵錯，系統會啟動核心偵錯](../debugger/error-debugging-isn-t-possible-because-a-kernel-debugger-is-enabled-on-the-system.md)\
+[錯誤：無法進行調試，因為系統上已啟用內核偵錯工具](../debugger/error-debugging-isn-t-possible-because-a-kernel-debugger-is-enabled-on-the-system.md)\
 描述如果您嘗試在以偵錯模式啟動且執行 [!INCLUDE[win7](../debugger/includes/win7_md.md)]、[!INCLUDE[wiprlhext](../debugger/includes/wiprlhext_md.md)]、[!INCLUDE[winxp](../code-quality/includes/winxp_md.md)]、[!INCLUDE[Win2kFamily](../code-quality/includes/win2kfamily_md.md)] 或 Windows NT 的系統上，對 Managed 程式碼進行偵錯時會產生的錯誤訊息。
 
-[JIT 最佳化和偵錯](../debugger/jit-optimization-and-debugging.md)\
+\[JIT 最佳化和偵錯](../debugger/jit-optimization-and-debugging.md)
 描述 JIT 最佳化對偵錯的影響。
 
 [針對 LINQ 和 DLINQ 進行偵錯](../debugger/debugging-linq.md)\
 討論對 LINQ 查詢進行偵錯的技術。
 
-[逐步解說：偵錯平行應用程式](../debugger/walkthrough-debugging-a-parallel-application.md)\
+[逐步解說：調試平行應用程式](../debugger/walkthrough-debugging-a-parallel-application.md)\
 描述如何使用 [平行工作] 和 [平行堆疊] 工具視窗來偵錯平行應用程式。
 
 ## <a name="related-sections"></a>相關章節
 
 [IntelliTrace](../debugger/intellitrace.md)\
-使用 IntelliTrace 錄製應用程式的執行記錄，就能更快、更容易尋找 Bug。 向後和向前逐步執行記錄的事件和呼叫，以檢查關鍵時間點的應用程式狀態。 進行程式碼偵錯，而不需要設定許多中斷點或經常重新啟動應用程式。 您必須安裝 Visual Studio Enterprise。
+使用 IntelliTrace 錄製應用程式的執行記錄，就能更快、更容易尋找 Bug。 向後和向前逐步執行記錄的事件和呼叫，以檢查關鍵時間點的應用程式狀態。 進行程式碼偵錯，而不需要設定許多中斷點或經常重新啟動應用程式。 需要 Visual Studio Enterprise。
 
 [追蹤和檢測應用程式](/dotnet/framework/debug-trace-profile/tracing-and-instrumenting-applications)\
 說明可以讓您在執行應用程式時監視其執行情形的追蹤方法，以及在程式碼的策略性位置上放置和使用追蹤陳述式。 本主題也提供包含介紹檢測和追蹤、追蹤參數、追蹤接聽程式、應用程式中的追蹤程式碼、在應用程式程式碼中加入追蹤陳述式，以及使用 <xref:System.Diagnostics.Debug> 和 <xref:System.Diagnostics.Trace> 進行條件式編譯的連結。
@@ -81,7 +81,7 @@ ms.locfileid: "62851883"
 
 ## <a name="see-also"></a>另請參閱
 
-- [逐步解說：在設計階段偵錯自訂的 Windows Form 控制項](/dotnet/framework/winforms/controls/walkthrough-debugging-custom-windows-forms-controls-at-design-time)
+- [逐步解說：在設計階段時，Debug 自訂 Windows Forms 控制項](/dotnet/framework/winforms/controls/walkthrough-debugging-custom-windows-forms-controls-at-design-time)
 - [偵錯工具安全性](../debugger/debugger-security.md)
-- [Visual Studio 偵錯](../debugger/index.md)
+- [Visual Studio 偵錯](../debugger/index.yml)
 - [偵錯工具簡介](../debugger/debugger-feature-tour.md)

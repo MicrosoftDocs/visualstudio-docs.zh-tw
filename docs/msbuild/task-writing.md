@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: de860c8d177a12d8283ae4f3a9b0f36dab1cc96d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 9cf7f82d628c0c093e0d807920b379263c20ff0b
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440002"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71238202"
 ---
 # <a name="task-writing"></a>工作撰寫
 提供在建置流程期間執行之程式碼的工作。 工作是包含在目標中。 一般工作程式庫會隨附於[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]，您也可以建立自己的工作。 如需隨附於 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 之工作程式庫的詳細資訊，請參閱[工作參考](../msbuild/msbuild-task-reference.md)。
@@ -141,10 +141,35 @@ public string RequiredProperty { get; set; }
 
  <xref:Microsoft.Build.Framework.RequiredAttribute> 在 <xref:Microsoft.Build.Framework> 命名空間中定義 `[Required]` 屬性。
 
+## <a name="how-includevstecmsbuildextensibilityinternalsincludesvstecmsbuild_mdmd-invokes-a-task"></a>如何[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]叫用工作
+
+叫用工作時， [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]會先將工作類別具現化，然後針對在專案檔的 task 元素中設定的工作參數，呼叫該物件的屬性 setter。 如果 task 專案未指定參數，或如果元素中指定的運算式評估為空字串，則不會呼叫屬性 setter。
+
+例如，在專案中
+
+```xml
+<Project>
+ <Target Name="InvokeCustomTask">
+  <CustomTask Input1=""
+              Input2="$(PropertyThatIsNotDefined)"
+              Input3="value3" />
+ </Target>
+</Project>
+```
+
+只`Input3`會呼叫的 setter。
+
+工作不應該相依于參數屬性 setter 調用的任何相對順序。
+
+### <a name="task-parameter-types"></a>工作參數類型
+
+原生`string`處理、 `bool`和`ITaskItem[]`類型的屬性。 `ITaskItem` [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 如果工作接受不同類型的參數， [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] <xref:System.Convert.ChangeType%2A>則會叫用來從`string` （已展開所有屬性和專案參考）轉換為目的地類型。 如果任何輸入參數的轉換失敗， [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]則會發出錯誤，而且不會呼叫工作的`Execute()`方法。
+
 ## <a name="example"></a>範例
 
-### <a name="description"></a>說明
- 以下 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 類別會示範衍生自 <xref:Microsoft.Build.Utilities.Task> 協助程式類別的工作。 此工作會傳回 `true`，指出是否成功。
+### <a name="description"></a>描述
+
+以下 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 類別會示範衍生自 <xref:Microsoft.Build.Utilities.Task> 協助程式類別的工作。 此工作會傳回 `true`，指出是否成功。
 
 ### <a name="code"></a>程式碼
 
@@ -167,8 +192,9 @@ namespace SimpleTask1
 
 ## <a name="example"></a>範例
 
-### <a name="description"></a>說明
- 以下 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 類別會示範實作 <xref:Microsoft.Build.Framework.ITask> 介面的工作。 此工作會傳回 `true`，指出是否成功。
+### <a name="description"></a>描述
+
+以下 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 類別會示範實作 <xref:Microsoft.Build.Framework.ITask> 介面的工作。 此工作會傳回 `true`，指出是否成功。
 
 ### <a name="code"></a>程式碼
 
@@ -202,16 +228,19 @@ namespace SimpleTask2
 
 ## <a name="example"></a>範例
 
-### <a name="description"></a>說明
- 此 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 類別會示範衍生自 <xref:Microsoft.Build.Utilities.Task> 協助程式類別的工作。 它具有必要的字串屬性，會引發所有已註冊記錄器顯示的事件。
+### <a name="description"></a>描述
+
+此 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 類別會示範衍生自 <xref:Microsoft.Build.Utilities.Task> 協助程式類別的工作。 它具有必要的字串屬性，會引發所有已註冊記錄器顯示的事件。
 
 ### <a name="code"></a>程式碼
- [!code-csharp[msbuild_SimpleTask3#1](../msbuild/codesnippet/CSharp/task-writing_1.cs)]
+
+[!code-csharp[msbuild_SimpleTask3#1](../msbuild/codesnippet/CSharp/task-writing_1.cs)]
 
 ## <a name="example"></a>範例
 
-### <a name="description"></a>說明
- 下例示範的專案檔會叫用前一個範例的工作：SimpleTask3。
+### <a name="description"></a>描述
+
+下例示範的專案檔會叫用前一個範例的工作：SimpleTask3。
 
 ### <a name="code"></a>程式碼
 
@@ -227,4 +256,5 @@ namespace SimpleTask2
 ```
 
 ## <a name="see-also"></a>另請參閱
+
 - [工作參考](../msbuild/msbuild-task-reference.md)

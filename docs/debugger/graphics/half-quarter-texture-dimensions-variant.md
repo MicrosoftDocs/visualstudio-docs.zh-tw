@@ -1,5 +1,5 @@
 ---
-title: 半 / 四分之一紋理維度變異 |Microsoft Docs
+title: 半季材質維度變異 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 282e9bbb-51aa-4cd0-8e5c-0901268c29e5
@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ff7a0595da00aa6f575999499c9596ffc1424fc4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 620300d1727adc41d5655bd33dde87ad592bba1c
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62895621"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71252981"
 ---
 # <a name="halfquarter-texture-dimensions-variant"></a>半/四分之一紋理維度變異
 減少非呈現目標的紋理上的紋理維度。
@@ -41,7 +41,7 @@ ms.locfileid: "62895621"
   如果啟用紋理的 MIP 對應，則變異也會據此減少 MIP 層級數目 (縮放為一半大小時會少一個層級，縮放為四分之一大小時則會少兩個層級)。
 
 ## <a name="example"></a>範例
- 此變異會先在執行階段調整紋理大小，再呼叫 `CreateTexture2D`。 建議您不要對實際執行程式碼使用此方式，因為完整大小的紋理會耗用較多的磁碟空間，而且因為額外步驟可能會增加應用程式中的載入時間，特別是針對壓縮過的紋理，畢竟這類紋理需要大量計算資源來進行編碼。 建議您改用屬於您組建管線的影像編輯器或影像處理器，來離線調整紋理大小。 這些方式會減少磁碟空間需求，並去除應用程式中的執行階段額外負荷，以及提供更多的處理時間，讓您可以在壓縮紋理時保留最佳影像品質。
+ 這個變異會在呼叫`CreateTexture2D`之前，于執行時間調整紋理大小。 建議您不要對實際執行程式碼使用此方式，因為完整大小的紋理會耗用較多的磁碟空間，而且因為額外步驟可能會增加應用程式中的載入時間，特別是針對壓縮過的紋理，畢竟這類紋理需要大量計算資源來進行編碼。 建議您改用屬於您組建管線的影像編輯器或影像處理器，來離線調整紋理大小。 這些方式會減少磁碟空間需求，並去除應用程式中的執行階段額外負荷，以及提供更多的處理時間，讓您可以在壓縮紋理時保留最佳影像品質。
 
 ## <a name="see-also"></a>另請參閱
 - [Mip-map 產生變異](mip-map-generation-variant.md)

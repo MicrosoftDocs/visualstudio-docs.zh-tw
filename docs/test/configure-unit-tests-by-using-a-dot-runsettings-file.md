@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: bb338caa145ad8186b7a27fe94a7822e94c09a02
-ms.sourcegitcommit: b60a00ac3165364ee0e53f7f6faef8e9fe59ec4a
+ms.openlocfilehash: 799d3f23a6b4e269c08bc889461596178e71b4c8
+ms.sourcegitcommit: 689ba54ea14257d13031de881f5d4fe937a36f56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70913300"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71342495"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>使用 *.runsettings* 檔案設定單元測試
 
@@ -38,11 +38,11 @@ ms.locfileid: "70913300"
 
 ::: moniker range=">=vs-2019"
 
-若要在 IDE 中指定執行設定檔，請在 [測試總管] 中，選取 [設定] 按鈕上的箭頭，然後選取 [選取設定檔]。 瀏覽並選取 *.runsettings* 檔案。
+若要在 IDE 中指定回合設定檔案，請選取 [**測試** > ] [**選取設定檔**]。 瀏覽並選取 *.runsettings* 檔案。
 
-![在 Visual Studio 2019 中選取測試設定檔的功能表](media/vs-2019/select-test-settings-file.png)
+![在 Visual Studio 2019 中選取測試設定檔的功能表](media/vs-2019/select-settings-file.png)
 
-該檔案隨即出現在 [測試總管] 的 [設定] 功能表上，且您可以選取或取消選取它。 選取時，只要選取 [分析程式碼涵蓋範圍]，就會套用回合設定檔。
+檔案會出現在 [測試] 功能表上，您可以選取或取消選取它。 選取時，只要選取 [分析程式碼涵蓋範圍]，就會套用回合設定檔。
 
 ::: moniker-end
 
@@ -97,7 +97,7 @@ ms.locfileid: "70913300"
 
 ::: moniker range=">=vs-2019"
 
-3. 若要在 [測試總管] 中選取執行設定檔，請選取 [設定] 按鈕上的箭頭，然後選取 [選取設定檔]。 瀏覽至您建立的 .runsettings 檔案，然後選取 [確定]。
+3. 若要選取回合設定檔案，請選擇 [**測試** > ] [**選取設定檔**]。 瀏覽至您建立的 .runsettings 檔案，然後選取 [確定]。
 
 ::: moniker-end
 
@@ -118,7 +118,7 @@ ms.locfileid: "70913300"
     <ResultsDirectory>.\TestResults</ResultsDirectory>
 
     <!-- x86 or x64 -->
-    <!-- You can also change it from the test settings menu; choose "Processor Architecture for AnyCPU Projects" -->
+    <!-- You can also change it from the Test menu; choose "Processor Architecture for AnyCPU Projects" -->
     <TargetPlatform>x86</TargetPlatform>
 
     <!-- Framework35 | [Framework40] | Framework45 -->
@@ -157,7 +157,7 @@ ms.locfileid: "70913300"
       <DataCollector uri="datacollector://microsoft/VideoRecorder/1.0" assemblyQualifiedName="Microsoft.VisualStudio.TestTools.DataCollection.VideoRecorder.VideoRecorderDataCollector, Microsoft.VisualStudio.TestTools.DataCollection.VideoRecorder, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" friendlyName="Screen and Voice Recorder">
         <!--Video data collector was introduced in Visual Studio 2017 version 15.5 -->
         <Configuration>
-           <!-- Change to "false" to only add video attachments to failed tests -->
+          <!-- Change to "false" to only add video attachments to failed tests -->
           <MediaRecorder sendRecordedMediaForPassedTestCase="true" xmlns="" />
         </Configuration>
       </DataCollector>
@@ -165,7 +165,7 @@ ms.locfileid: "70913300"
     </DataCollectors>
   </DataCollectionRunSettings>
 
-  <!-- Parameters used by tests at runtime -->
+  <!-- Parameters used by tests at run time -->
   <TestRunParameters>
     <Parameter name="webAppUrl" value="http://localhost" />
     <Parameter name="webAppUserName" value="Admin" />
@@ -256,7 +256,7 @@ ms.locfileid: "70913300"
 </TestRunParameters>
 ```
 
-測試回合參數提供方法，定義可供在執行階段的測試使用的變數和值。 使用 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.Properties%2A?displayProperty=nameWithType> 屬性存取參數：
+測試回合參數提供一種方法，可定義在執行時間可供測試使用的變數和值。 使用 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.Properties%2A?displayProperty=nameWithType> 屬性存取參數：
 
 ```csharp
 [TestMethod]

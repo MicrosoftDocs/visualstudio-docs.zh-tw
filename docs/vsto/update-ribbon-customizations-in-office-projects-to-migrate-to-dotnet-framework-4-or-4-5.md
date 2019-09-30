@@ -1,5 +1,5 @@
 ---
-title: 更新 Office 專案中的功能區自訂項目移轉至.NET Framework 4、 4.5
+title: 更新 Office 專案中的功能區自訂已遷移至 .NET Framework 4，4。5
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,26 +12,26 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 03424ecb477a32ecff31a83d341a6eef178a31e0
-ms.sourcegitcommit: cc5fd59e5dc99181601b7db8b28d7f8a83a36bab
+ms.openlocfilehash: c7d7ab5755f592e57e76dcd68f3dcb9dc2a7eab9
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/11/2019
-ms.locfileid: "66836070"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71254355"
 ---
-# <a name="update-ribbon-customizations-in-office-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>更新您移轉至.NET Framework 4 或.NET Framework 4.5 的 Office 專案中的功能區自訂
-  如果您的專案包含使用所建立的功能區自訂**功能區 （視覺化設計工具）** 專案項目，您必須進行下列變更您的專案程式碼，如果目標 framework 變更為[!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]或更新版本。
+# <a name="update-ribbon-customizations-in-office-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>更新您遷移至 .NET Framework 4 或 .NET Framework 4.5 之 Office 專案中的功能區自訂
+  如果您的專案包含使用 [**功能區（視覺化設計工具）** ] 專案專案建立的功能區自訂，當目標 framework 變更為[!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]或更新版本時，您必須對專案程式碼進行下列變更。
 
 - 修改產生的功能區程式碼。
 
-- 修改可在執行階段執行個體化功能區控制項、處理功能區事件，或是以程式設計方式設定功能區元件位置的任何程式碼。
+- 修改在執行時間具現化功能區控制項的任何程式碼、處理功能區事件，或以程式設計方式設定功能區元件的位置。
 
 ## <a name="update-the-generated-ribbon-code"></a>更新產生的功能區程式碼
  如果專案的目標 Framework 變更為 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 或更新版本，您必須執行下列步驟變更功能區項目產生的程式碼。 您需要更新的程式碼檔是根據程式語言和您建立專案的方式而定：
 
-- 在 Visual Basic 專案，或在 Visual C# 專案中建立[!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)]或是[!INCLUDE[vs_dev10_long](../sharepoint/includes/vs-dev10-long-md.md)]功能區程式碼後置檔案中執行的所有步驟 (*YourRibbonItem*。Designer.cs 或*YourRibbonItem*.Designer.vb)。 若要查看 Visual Basic 專案中的程式碼後置檔案，請按一下**顯示所有檔案**按鈕**方案總管 中**。
+- 在 Visual Basic 專案中，或在C#您于[!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)]或[!INCLUDE[vs_dev10_long](../sharepoint/includes/vs-dev10-long-md.md)]中建立的 Visual 專案中，執行功能區程式碼後置檔案（*YourRibbonItem*中的所有步驟。Designer.cs 或*YourRibbonItem*。設計工具 .vb）。 若要查看 Visual Basic 專案中的程式碼後置檔案，請按一下**方案總管**中的 [**顯示所有**檔案] 按鈕。
 
-- Visual C# 專案，您在 Visual Studio 2008 中建立並升級至[!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)]，在功能區程式碼檔案執行前兩個步驟 (*YourRibbonItem*.cs 或*YourRibbonItem*.vb)，以及在功能區程式碼後置檔案中執行其餘的步驟。
+- 在您C#于 Visual Studio 2008 中建立然後升級至[!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)]的 Visual 專案中，執行功能區程式碼檔案（*YourRibbonItem*.cs 或*YourRibbonItem*）中的前兩個步驟，並執行中的其餘步驟。功能區程式碼後置檔案。
 
 ### <a name="to-change-the-generated-ribbon-code"></a>變更產生的功能區程式碼
 
@@ -97,30 +97,30 @@ ms.locfileid: "66836070"
     this.button1 = this.Factory.CreateRibbonButton();
     ```
 
-     如需功能區控制項之協助程式方法的完整清單，請參閱[具現化的功能區控制項](#ribboncontrols)。
+     如需功能區控制項 helper 方法的完整清單，請參閱具現[化功能區控制項](#ribboncontrols)。
 
 4. 在 Visual C# 專案中，將 `InitializeComponent` 方法中任何使用 <xref:System.EventHandler%601> 委派的程式碼行，修改為使用特定功能區委派。
 
      例如，假設在目標為 .NET Framework 3.5 的專案中，您的檔案包含下列處理 <xref:Microsoft.Office.Tools.Ribbon.RibbonButton.Click> 事件的程式碼行。
 
-    \<CodeContentPlaceHolder > 8</CodeContentPlaceHolder>為目標的專案中[!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]或更新版本中，您必須改為使用下列程式碼。
+    \<在以[!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]或</CodeContentPlaceHolder>更新版本為目標的專案中，CodeContentPlaceHolder > 8，您必須改用下列程式碼。
 
-    \<CodeContentPlaceHolder > 9</CodeContentPlaceHolder>功能區委派的完整清單，請參閱[處理功能區事件](#ribbonevents)。
+    \<如需功能</CodeContentPlaceHolder>區委派的完整清單，請 CodeContentPlaceHolder > 9，請參閱[處理功能區事件](#ribbonevents)。
 
 5. 在 Visual Basic 專案中，尋找位於檔案結尾的 `ThisRibbonCollection` 類別。 修改此類別的宣告，使其不再繼承自 `Microsoft.Office.Tools.Ribbon.RibbonReadOnlyCollection`。
 
-## <a name="ribboncontrols"></a> 具現化功能區控制項
+## <a name="ribboncontrols"></a>具現化功能區控制項
  您必須修改可動態執行個體化功能區控制項的任何程式碼。 在目標為 .NET Framework 3.5 的專案中，功能區控制項是您在特定案例中可以直接執行個體化的類別。 在目標為 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 或更新版本的專案中，這些控制項是您無法直接執行個體化的介面。 您必須使用 <xref:Microsoft.Office.Tools.Ribbon.RibbonFactory> 物件提供的方法建立控制項。
 
  有兩種方法可以存取 <xref:Microsoft.Office.Tools.Ribbon.RibbonFactory> 物件：
 
 - 使用功能區類別的 Factory 屬性。 請從功能區類別中的程式碼使用此方法。
 
-- 使用 `Globals.Factory.GetRibbonFactory` 方法。 請從功能區類別外的程式碼使用此方法。 如需 Globals 類別的詳細資訊，請參閱[全域存取 Office 專案中的物件](../vsto/global-access-to-objects-in-office-projects.md)。
+- 使用 `Globals.Factory.GetRibbonFactory` 方法。 請從功能區類別外的程式碼使用此方法。 如需全域類別的詳細資訊，請參閱[全域存取 Office 專案中的物件](../vsto/global-access-to-objects-in-office-projects.md)。
 
   下列程式碼範例示範如何為目標為 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 或更新版本的專案，在功能區類別中建立 <xref:Microsoft.Office.Tools.Ribbon.RibbonButton>。
 
-\<CodeContentPlaceHolder > 10</CodeContentPlaceHolder> \<CodeContentPlaceHolder > 11</CodeContentPlaceHolder>下表列出您可以透過程式設計方式建立這些控制項，而且要用來在目標專案中建立控制項的方法[!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]或更新版本。
+\<CodeContentPlaceHolder > 10</CodeContentPlaceHolder> \<CodeContentPlaceHolder > 11</CodeContentPlaceHolder>下表列出您可以用程式設計方式建立的控制項，以及用來在目標為的專案中建立控制項的方法[!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]或更新版本。
 
 |控制項|用於 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 和更新版本專案的 RibbonFactory 方法|
 |-------------| - |
@@ -142,7 +142,7 @@ ms.locfileid: "66836070"
 |<xref:Microsoft.Office.Tools.Ribbon.RibbonTab>|<xref:Microsoft.Office.Tools.Ribbon.RibbonFactory.CreateRibbonTab%2A>|
 |<xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton>|<xref:Microsoft.Office.Tools.Ribbon.RibbonFactory.CreateRibbonToggleButton%2A>|
 
-## <a name="ribbonevents"></a> 處理功能區事件
+## <a name="ribbonevents"></a>處理功能區事件
  您必須修改可處理功能區控制項事件的任何程式碼。 在目標為 .NET Framework 3.5 的專案中，這些事件是由泛型 <xref:System.EventHandler%601> 委派處理。 在目標為 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 或更新版本的專案中，這些事件現在是由其他委派處理。
 
  下表列出目標為 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 或更新版本專案中的功能區事件以及它們的相關委派。
@@ -160,7 +160,7 @@ ms.locfileid: "66836070"
 
 - 使用功能區類別的 `Factory` 屬性。 請從功能區類別中的程式碼使用此方法。
 
-- 使用 `Globals.Factory.GetRibbonFactory` 方法。 請從功能區類別外的程式碼使用此方法。 如需 Globals 類別的詳細資訊，請參閱[全域存取 Office 專案中的物件](../vsto/global-access-to-objects-in-office-projects.md)。
+- 使用 `Globals.Factory.GetRibbonFactory` 方法。 請從功能區類別外的程式碼使用此方法。 如需全域類別的詳細資訊，請參閱[全域存取 Office 專案中的物件](../vsto/global-access-to-objects-in-office-projects.md)。
 
   下列程式碼範例示範如何為目標為 .NET Framework 3.5 的專案，在功能區類別中設定索引標籤的 `Position` 屬性。
 
@@ -183,5 +183,5 @@ this.tab1.Position = this.Factory.RibbonPosition.AfterOfficeId("TabHome");
 ```
 
 ## <a name="see-also"></a>另請參閱
-- [移轉至.NET Framework 4 或更新版本的 Office 方案](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)
+- [將 Office 方案遷移至 .NET Framework 4 或更新版本](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)
 - [功能區設計工具](../vsto/ribbon-designer.md)

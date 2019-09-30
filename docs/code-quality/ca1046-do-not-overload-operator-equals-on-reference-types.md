@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d765bfda87fe184256304b86f145f4f02adb7db6
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 23358d104c891ff9e230f0daad0f5e6ca57b46c2
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68922634"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71235770"
 ---
 # <a name="ca1046-do-not-overload-operator-equals-on-reference-types"></a>CA1046:不要多載參考類型上的等號比較運算子
 
@@ -28,7 +28,7 @@ ms.locfileid: "68922634"
 |TypeName|DoNotOverloadOperatorEqualsOnReferenceTypes|
 |CheckId|CA1046|
 |分類|Microsoft.Design|
-|中斷變更|中斷|
+|重大變更|中斷|
 
 ## <a name="cause"></a>原因
 公用或嵌套的公用參考型別會多載等號比較運算子。
@@ -37,10 +37,10 @@ ms.locfileid: "68922634"
 對參考類型而言，等號比較運算子的預設實作 (Implementation) 永遠都是正確的。 根據預設，只有當兩項參考都指向相同物件時才會相等。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
-若要修正此規則的違規, 請移除等號比較運算子的執行。
+若要修正此規則的違規，請移除等號比較運算子的執行。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
-當參考型別的行為類似內建實數值型別時, 可以安全地隱藏此規則的警告。 如果對類型的實例執行加法或減法有意義, 可能會正確地執行等號比較運算子並抑制違規。
+當參考型別的行為類似內建實數值型別時，可以安全地隱藏此規則的警告。 如果對類型的實例執行加法或減法有意義，可能會正確地執行等號比較運算子並抑制違規。
 
 ## <a name="example"></a>範例
 下列範例示範比較兩個參考時的預設行為。

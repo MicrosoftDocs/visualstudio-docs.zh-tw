@@ -1,5 +1,5 @@
 ---
-title: HOW TO：從文件移除 managed 程式碼擴充功能
+title: HOW TO：從檔移除 managed 程式碼擴充
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,46 +13,46 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 438658af3f182ea732d0fefef0f5a5d6ecbefa03
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 83bd57c8ffdcb268a560431c74806ddb6544d4e8
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62961588"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71252161"
 ---
-# <a name="how-to-remove-managed-code-extensions-from-documents"></a>HOW TO：從文件移除 managed 程式碼擴充功能
-  您可以透過程式設計方式移除自訂組件的文件或 Microsoft Office Word 或 Microsoft Office Excel 文件層級自訂一部分的活頁簿。 使用者可以開啟文件並檢視其內容，但不是會出現您的文件中加入任何自訂使用者介面 (UI)，並不會執行您的程式碼。
+# <a name="how-to-remove-managed-code-extensions-from-documents"></a>作法：從檔移除 managed 程式碼擴充
+  您可以透過程式設計的方式，從檔或活頁簿移除自訂群組件，這是 Microsoft Office Word 或 Microsoft Office Excel 的檔層級自訂的一部分。 使用者接著可以開啟檔並查看內容，但是您加入檔的任何自訂使用者介面（UI）都不會出現，而且您的程式碼也不會執行。
 
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]
 
- 您可以使用其中一個，以便移除自訂組件`RemoveCustomization`所提供的方法[!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]。 您使用哪一種方法，取決於您是否要移除在執行階段自訂 （亦即，這個字時自訂中執行程式碼文件或 Excel 活頁簿是開啟），或如果您想要移除已關閉的文件或文件的自訂該 i沒有安裝 Microsoft Office 安裝的伺服器上是 s。
+ 您可以使用所提供`RemoveCustomization` [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]的其中一個方法來移除自訂群組件。 您所使用的方法取決於您是否想要在執行時間移除自訂（也就是在 Word 檔或 Excel 活頁簿開啟時，在自訂中執行程式碼），還是要從已關閉的檔或我所建立的檔中移除自訂在未安裝 Microsoft Office 的伺服器上。
 
- ![影片連結](../vsto/media/playvideo.gif "影片連結")如需相關的影片示範，請參閱[How DO i附加或中斷連結的 Word 文件從 VSTO 組件嗎？](http://go.microsoft.com/fwlink/?LinkId=136782).
+ ![影片連結](../vsto/media/playvideo.gif "影片連結")如需相關的影片示範， [請參閱如何：附加或卸離 Word 檔中的 VSTO 元件？](http://go.microsoft.com/fwlink/?LinkId=136782).
 
-## <a name="to-remove-the-customization-assembly-at-runtime"></a>若要移除自訂組件，在執行階段
+## <a name="to-remove-the-customization-assembly-at-run-time"></a>若要在執行時間移除自訂群組件
 
-1. 在您的自訂程式碼，呼叫<xref:Microsoft.Office.Tools.Word.Document.RemoveCustomization%2A>（針對 Word) 的方法或<xref:Microsoft.Office.Tools.Excel.Workbook.RemoveCustomization%2A>（針對 Excel) 的方法。 不再需要自訂之後，才應該呼叫這個方法。
+1. 在您的自訂程式碼<xref:Microsoft.Office.Tools.Word.Document.RemoveCustomization%2A>中，呼叫方法（適用于<xref:Microsoft.Office.Tools.Excel.Workbook.RemoveCustomization%2A> Word）或方法（適用于 Excel）。 只有在不再需要自訂之後，才應該呼叫這個方法。
 
-     程式碼中呼叫這個方法，端視您的自訂的使用方式而定。 比方說，如果客戶使用您的自訂功能，直到他們準備好要將文件傳送給其他用戶端，只需要對文件本身 （不是自訂），您可以提供會呼叫某些 UI`RemoveCustomization`當客戶按一下它。 或者，如果您的自訂會填入資料的文件，第一次開啟時，但自訂不會提供直接存取客戶的任何其他功能時，您可以呼叫和快取盡速以您的自訂完成初始化文件。
+     您在程式碼中呼叫這個方法的位置，取決於您的自訂使用方式。 例如，如果客戶使用您的自訂功能，直到準備好將檔傳送給只需要檔本身（而非自訂）的其他用戶端時，您可以提供一些 UI，以`RemoveCustomization`在客戶按一下時呼叫。 或者，如果您的自訂在第一次開啟時將資料填入檔，但自訂並未提供客戶直接存取的任何其他功能，則您可以在自訂之後立即呼叫 RemoveCustomization完成檔的初始化。
 
-## <a name="to-remove-the-customization-assembly-from-a-closed-document-or-a-document-on-a-server"></a>若要移除已關閉的文件或在伺服器上的文件的自訂組件
+## <a name="to-remove-the-customization-assembly-from-a-closed-document-or-a-document-on-a-server"></a>若要從已關閉的檔或伺服器上的檔移除自訂群組件
 
-1. 在專案中，而無須 Microsoft Office，例如主控台應用程式或 Windows Form 專案，加入的參考*Microsoft.VisualStudio.Tools.Applications.ServerDocument.dll*組件。
+1. 在不需要 Microsoft Office （例如主控台應用程式或 Windows Forms 專案）的專案中，新增 VisualStudio 的參考。 *ServerDocument .dll*元件。
 
-2. 新增下列**匯入**或是**使用**陳述式，以您的程式碼檔案頂端。
+2. 在程式碼檔案的頂端新增下列**Imports**或**using**語句。
 
      [!code-csharp[Trin_VstcoreDeployment#1](../vsto/codesnippet/CSharp/Trin_VstcoreDeploymentCS/Program.cs#1)]
      [!code-vb[Trin_VstcoreDeployment#1](../vsto/codesnippet/VisualBasic/Trin_VstcoreDeploymentVB/Program.vb#1)]
 
-3. 呼叫靜態<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.RemoveCustomization%2A>方法的<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument>類別，並指定解決方案的文件路徑參數。
+3. 呼叫<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument>類別的<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.RemoveCustomization%2A>靜態方法，並指定參數的方案檔路徑。
 
-     下列程式碼範例假設您要從名為文件移除自訂*WordDocument1.docx* ，是在桌面上。
+     下列程式碼範例假設您要從桌上型電腦上名為*worddocument1.docx*的檔中移除自訂。
 
      [!code-csharp[Trin_VstcoreDeployment#2](../vsto/codesnippet/CSharp/Trin_VstcoreDeploymentCS/Program.cs#2)]
      [!code-vb[Trin_VstcoreDeployment#2](../vsto/codesnippet/VisualBasic/Trin_VstcoreDeploymentVB/Program.vb#2)]
 
-4. 建置專案，並執行您要移除自訂應用程式的電腦上。 電腦必須擁有 Visual Studio 2010 Tools for Office runtime 安裝。
+4. 建立專案，並在您想要移除自訂的電腦上執行應用程式。 電腦必須安裝適用于 Office runtime 的 Visual Studio 2010 工具。
 
 ## <a name="see-also"></a>另請參閱
-- [使用 ServerDocument 類別管理伺服器上的文件](../vsto/managing-documents-on-a-server-by-using-the-serverdocument-class.md)
-- [如何：將 Managed 程式碼擴充附加至文件](../vsto/how-to-attach-managed-code-extensions-to-documents.md)
+- [使用 ServerDocument 類別管理伺服器上的檔](../vsto/managing-documents-on-a-server-by-using-the-serverdocument-class.md)
+- [如何：將 Managed 程式碼擴充附加至檔](../vsto/how-to-attach-managed-code-extensions-to-documents.md)

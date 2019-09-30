@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.date: 06/06/2019
 ms.technology: vs-azure
 ms.topic: conceptual
-ms.openlocfilehash: 9f2da112bfeebe4e0bce976736eee5696d888105
-ms.sourcegitcommit: c7b9ab1bc19d74b635c19b1937e92c590dafd736
+ms.openlocfilehash: edc4674e2468124ecb46b25a1411043ed4b66a2a
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "70312257"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71253110"
 ---
 # <a name="building-containerized-apps-using-visual-studio-or-the-command-line"></a>使用 Visual Studio 或命令列建立容器化應用程式
 

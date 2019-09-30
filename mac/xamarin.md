@@ -5,16 +5,24 @@ author: therealjohn
 ms.author: johmil
 ms.date: 06/18/2019
 ms.assetid: 339F6051-5F90-48DC-8237-EBBC8A03A32B
-ms.openlocfilehash: 4eec080655c0f47823810dfd689fe49a6f7e43eb
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
-ms.translationtype: HT
+ms.openlocfilehash: c8b6bddac92a9ec6b40ba08ebcdc3fe3577b0bc8
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68872342"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71211481"
 ---
 # <a name="xamarin-mobile-app-development"></a>Xamarin 行動裝置應用程式開發
 
 [Xamarin](/xamarin) 的第一級支援可讓您開發 Android、macOS、iOS、tvOS 和 watchOS 的豐富原生體驗。 Xamarin.Forms 跨平台應用程式可協助您在 Android、iOS 與 macOS 之間共用 XAML UI 程式碼，而不限制原生功能的存取權。
+
+## <a name="xamarinforms"></a>Xamarin.Forms
+
+適用于 Xamarin 的 XAML 熱重載。表單內建于8.3 版和更新版本中的 Visual Studio for Mac。 啟用這項功能後，每次您儲存檔案時，變更都會立即反映在執行中的應用程式中。
+
+若要啟用 XAML 熱重載，可以在**Visual Studio > 喜好設定 > 專案 > Xamarin 熱重載** 上，勾選 **啟用 Xamarin 熱重載** 核取方塊。
+
+如需有關熱重載的詳細資訊，請參閱檔中的適用于[Xamarin 的 XAML 熱重載指南](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/xaml/hot-reload)。
 
 ## <a name="android"></a>Android
 

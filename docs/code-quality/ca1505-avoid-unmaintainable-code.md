@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 740ef26af6f1f84d23ef27de5176df1b3de98b34
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c3ba027ef2e663870d0af50bc6d2154133f7980c
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62797321"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71234549"
 ---
 # <a name="ca1505-avoid-unmaintainable-code"></a>CA1505:應避免撰寫無法維護的程式碼
 
@@ -28,7 +28,7 @@ ms.locfileid: "62797321"
 |TypeName|AvoidUnmantainableCode|
 |CheckId|CA1505|
 |分類|Microsoft.Maintainability|
-|中斷變更|非重大|
+|重大變更|不中斷|
 
 ## <a name="cause"></a>原因
 
@@ -36,19 +36,19 @@ ms.locfileid: "62797321"
 
 ## <a name="rule-description"></a>規則描述
 
-可維護性指數的計算方式是使用下列計量： 程式碼、 計劃的磁碟區和循環複雜度。 程式磁碟區是深入了解型別或方法為基礎的運算子和程式碼中的運算元數目的困難度的量值。 循環複雜度是複雜性的結構化型別或方法的量值。 您可以深入了解在程式碼度量[量值的複雜度和維護的 managed 程式碼](../code-quality/code-metrics-values.md)。
+可維護性索引是使用下列計量來計算：程式程式碼、程式卷和圈複雜度。 「程式量」是一種難以瞭解的類型或方法，這是根據程式碼中的運算子和運算元數目而定。 圈複雜度是類型或方法的結構複雜度測量。 您可以在[管理程式碼的複雜度和維護性](../code-quality/code-metrics-values.md)中深入瞭解程式碼計量。
 
-低維護性指數表示的型別或方法可能難以維護，而且會重新設計的良好候選項目。
+低維護性索引表示類型或方法可能很容易維護，而且很適合用來重新設計。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
 
-若要修正此違規，重新設計的類型或方法，並嘗試將它分割為較小且更受關注的型別或方法。
+若要修正此違規，請重新設計類型或方法，並嘗試將它分割成較小且更具焦點的類型或方法。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
 
-型別或方法無法分割，或被視為可維護性，儘管其大小太大時，您可以隱藏這個警告。
+您可以在無法分割類型或方法時隱藏此警告，或即使其大小很大，也會視為可維護。
 
 ## <a name="see-also"></a>另請參閱
 
-- [維護性警告](../code-quality/maintainability-warnings.md)
+- [可維護性警告](../code-quality/maintainability-warnings.md)
 - [測量受控程式碼的複雜度和維護性](../code-quality/code-metrics-values.md)

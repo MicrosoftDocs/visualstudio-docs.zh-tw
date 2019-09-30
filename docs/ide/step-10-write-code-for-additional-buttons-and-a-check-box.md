@@ -5,9 +5,6 @@ ms.assetid: 185cf370-ab39-4ac0-b6bc-601d5b95a4a2
 ms.topic: tutorial
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
-ms.devlang:
-- csharp
-- vb
 dev_langs:
 - CSharp
 - VB
@@ -16,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2d2e77b3bfd62bf1dfdf15ff083b07459bd3bf77
-ms.sourcegitcommit: 2db01751deeee7b2bdb1db25419ea6706e6fcdf8
+ms.openlocfilehash: e99e3bf3f6b8adc88eca94be4d9f5a1bb9b8c7a7
+ms.sourcegitcommit: 6eed0372976c0167b9a6d42ba443f9a474b8bb91
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71062663"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71118932"
 ---
 # <a name="step-10-write-code-for-additional-buttons-and-a-check-box"></a>步驟 10：為其他按鈕及核取方塊撰寫程式碼
 

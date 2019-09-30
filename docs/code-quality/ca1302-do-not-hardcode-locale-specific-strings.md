@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b3789b5e786038c2bf1fe5e823a1b0fb4f7a7c9
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 69b6256f2c6ae54467eb21cc17d50119b3c67a9f
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68922718"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71235182"
 ---
 # <a name="ca1302-do-not-hardcode-locale-specific-strings"></a>CA1302:不要以硬式編碼的方式加入適用於特定地區設定的字串
 
@@ -31,24 +31,24 @@ ms.locfileid: "68922718"
 |TypeName|DoNotHardcodeLocaleSpecificStrings|
 |CheckId|CA1302|
 |分類|Microsoft.Globalization|
-|中斷變更|不中斷|
+|重大變更|不中斷|
 
 ## <a name="cause"></a>原因
-方法會使用字串常值, 表示特定系統資料夾的部分路徑。
+方法會使用字串常值，表示特定系統資料夾的部分路徑。
 
 ## <a name="rule-description"></a>規則描述
-<xref:System.Environment.SpecialFolder?displayProperty=fullName>列舉包含參考特殊系統資料夾的成員。 這些資料夾的位置在不同的作業系統上可能會有不同的值, 使用者可以變更部分位置, 並將位置當地語系化。 特殊資料夾的範例是 System 資料夾, 其為 "C:\WINDOWS\system32" [!INCLUDE[winxp](../code-quality/includes/winxp_md.md)] , 但 "C:\WINNT\system32" on。 [!INCLUDE[win2kfamily](../code-quality/includes/win2kfamily_md.md)] 方法會傳回<xref:System.Environment.SpecialFolder>與列舉相關聯的位置。 <xref:System.Environment.GetFolderPath%2A?displayProperty=fullName> 所傳回<xref:System.Environment.GetFolderPath%2A>的位置已當地語系化, 適用于目前執行中的電腦。
+<xref:System.Environment.SpecialFolder?displayProperty=fullName>列舉包含參考特殊系統資料夾的成員。 這些資料夾的位置在不同的作業系統上可能會有不同的值，使用者可以變更部分位置，並將位置當地語系化。 特殊資料夾的範例是 System 資料夾，其為 "C:\WINDOWS\system32" [!INCLUDE[winxp](../code-quality/includes/winxp_md.md)] ，但 "C:\WINNT\system32" on。 [!INCLUDE[win2kfamily](../code-quality/includes/win2kfamily_md.md)] 方法會傳回<xref:System.Environment.SpecialFolder>與列舉相關聯的位置。 <xref:System.Environment.GetFolderPath%2A?displayProperty=fullName> 所傳回<xref:System.Environment.GetFolderPath%2A>的位置已當地語系化，適用于目前執行中的電腦。
 
-此規則會 token 化使用<xref:System.Environment.GetFolderPath%2A>方法抓取到不同目錄層級的資料夾路徑。 每個字串常值都會與標記進行比較。 如果找到相符的結果, 則會假設方法正在建立一個字串, 而該字串會參考與該 token 相關聯的系統位置。 如需可攜性和當地語系化<xref:System.Environment.GetFolderPath%2A>能力, 請使用方法來抓取特殊系統資料夾的位置, 而不是使用字串常值。
+此規則會 token 化使用<xref:System.Environment.GetFolderPath%2A>方法抓取到不同目錄層級的資料夾路徑。 每個字串常值都會與標記進行比較。 如果找到相符的結果，則會假設方法正在建立一個字串，而該字串會參考與該 token 相關聯的系統位置。 如需可攜性和當地語系化<xref:System.Environment.GetFolderPath%2A>能力，請使用方法來抓取特殊系統資料夾的位置，而不是使用字串常值。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
-若要修正此規則的違規情形, 請使用<xref:System.Environment.GetFolderPath%2A>方法來取出位置。
+若要修正此規則的違規情形，請使用<xref:System.Environment.GetFolderPath%2A>方法來取出位置。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
-如果未使用字串常值來參考與<xref:System.Environment.SpecialFolder>列舉相關聯的其中一個系統位置, 則可以放心地隱藏此規則的警告。
+如果未使用字串常值來參考與<xref:System.Environment.SpecialFolder>列舉相關聯的其中一個系統位置，則可以放心地隱藏此規則的警告。
 
 ## <a name="example"></a>範例
-下列範例會建立通用應用程式資料檔案夾的路徑, 這會產生來自此規則的三個警告。 接下來, 此範例會使用<xref:System.Environment.GetFolderPath%2A>方法來抓取路徑。
+下列範例會建立通用應用程式資料檔案夾的路徑，這會產生來自此規則的三個警告。 接下來，此範例會使用<xref:System.Environment.GetFolderPath%2A>方法來抓取路徑。
 
 [!code-csharp[FxCop.Globalization.HardcodedLocaleStrings#1](../code-quality/codesnippet/CSharp/ca1302-do-not-hardcode-locale-specific-strings_1.cs)]
 [!code-vb[FxCop.Globalization.HardcodedLocaleStrings#1](../code-quality/codesnippet/VisualBasic/ca1302-do-not-hardcode-locale-specific-strings_1.vb)]

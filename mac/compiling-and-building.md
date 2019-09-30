@@ -4,14 +4,14 @@ description: 本文描述如何在 Visual Studio for Mac 中編譯和建置專�
 ms.topic: overview
 author: heiligerdankgesang
 ms.author: dominicn
-ms.date: 08/29/2018
+ms.date: 08/29/2019
 ms.assetid: FB253757-DB00-4889-A6BF-E44722E25BD1
-ms.openlocfilehash: 666027835699763dd42139b0b3b20e55fe250892
-ms.sourcegitcommit: fe212f8960d7882a1b0fdae9e22f008996aacf3c
+ms.openlocfilehash: b4f1cfc3dfdffcc3dd4cb90cd7d29d4333578b9a
+ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70222710"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71128412"
 ---
 # <a name="compiling-and-building-in-visual-studio-for-mac"></a>在 Visual Studio for Mac 中編譯和建置
 
@@ -31,7 +31,7 @@ Visual Studio for Mac 可用來在專案開發期間建置應用程式和建立�
 
 
 > [!NOTE]
-> 此主題適用於 Visual Studio for Mac。 針對 Windows 上的 Visual Studio，請參閱[在 Visual Studio 中編譯與建置](/visualstudio/ide/compiling-and-building-in-visual-studio)。
+> 本主題適用於 Visual Studio for Mac。 針對 Windows 上的 Visual Studio，請參閱[在 Visual Studio 中編譯與建置](/visualstudio/ide/compiling-and-building-in-visual-studio)。
 
 
 ## <a name="building-from-the-ide"></a>從 IDE 建置

@@ -11,7 +11,7 @@
           href: roslyn-analyzers-overview.md
         - name: 安裝
           href: install-roslyn-analyzers.md
-        - name: Configuration
+        - name: 設定
           href: use-roslyn-analyzers.md
         - name: 啟用完整解決方案分析
           href: how-to-enable-and-disable-full-solution-analysis-for-managed-code.md
@@ -28,7 +28,7 @@
           href: fxcop-analyzers.yml
         - name: 手動執行程式碼分析
           href: how-to-run-code-analysis-manually-for-managed-code.md
-        - name: Configuration
+        - name: 設定
           items:
             - name: 設定舊版分析
               href: how-to-configure-code-analysis-for-a-managed-code-project.md
@@ -119,12 +119,14 @@
           href: fxcop-analyzers.yml
         - name: 安裝
           href: install-fxcop-analyzers.md
-        - name: Configuration
+        - name: 設定
           items:
             - name: 總覽
               href: configure-fxcop-analyzers.md
-            - name: EditorConfig 選項
+            - name: 領域選項
               href: fxcop-analyzer-options.md
+            - name: 預先定義的規則集
+              href: analyzer-rule-sets.md
         - name: 常見問題集
           href: fxcop-analyzers-faq.md
     - name: 從舊版分析移轉到 FxCop 分析器
@@ -137,8 +139,6 @@
       items:
         - name: 總覽
           href: using-rule-sets-to-group-code-analysis-rules.md
-        - name: 分析器套件的規則集
-          href: analyzer-rule-sets.md
         - name: 設定規則集
           href: how-to-configure-code-analysis-for-a-managed-code-project.md
         - name: 設定 ASP.NET Web 應用程式的程式碼分析

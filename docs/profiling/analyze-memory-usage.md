@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e8f54b63847fca87eacc7dd19eccba6d285764a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 124b792e134b31a5964c8f202c7870a58bc0878b
+ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62777342"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71128243"
 ---
 # <a name="analyze-memory-usage"></a>分析記憶體使用量
 使用與偵錯工具整合的 [記憶體使用量] 診斷工具，來找出記憶體遺漏和記憶體使用沒有效率等問題。 記憶體使用量工具可讓您擷取 Managed 和原生記憶體堆積的一個或多個 *「快照」* (Snapshot)。 您可以收集 .NET、ASP.NET、原生或混合模式 (.NET 和原生) 應用程式的快照。
@@ -34,5 +34,5 @@ ms.locfileid: "62777342"
 
 ## <a name="see-also"></a>另請參閱
 
-- [Visual Studio 中的分析](../profiling/index.md)
+- [Visual Studio 中的分析](../profiling/index.yml)
 - [初步認識分析工具](../profiling/profiling-feature-tour.md)

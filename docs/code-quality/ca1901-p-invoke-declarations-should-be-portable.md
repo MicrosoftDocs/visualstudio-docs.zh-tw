@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a45b7061ae9d183ec7ee02a3b733ee9340b3689
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: d878572c4391805773a9a711ee88e7b58f507c65
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68921309"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71233301"
 ---
 # <a name="ca1901-pinvoke-declarations-should-be-portable"></a>CA1901:P/Invoke 宣告應該為可移植的
 
@@ -28,20 +28,20 @@ ms.locfileid: "68921309"
 |TypeName|PInvokeDeclarationsShouldBePortable|
 |CheckId|CA1901|
 |分類|Microsoft.Portability|
-|中斷變更|中斷-如果 P/Invoke 在元件外部是可見的。 不中斷-如果在元件外部看不到 P/Invoke。|
+|重大變更|中斷-如果 P/Invoke 在元件外部是可見的。 不中斷-如果在元件外部看不到 P/Invoke。|
 
 ## <a name="cause"></a>原因
-此規則會評估 P/Invoke 的每個參數和傳回值的大小, 並在32位和64位平臺上封送處理至未受管理的程式碼時, 驗證其大小是否正確。 此規則最常見的違規是傳遞固定大小的整數, 其中需要平臺相依的指標大小變數。
+此規則會評估 P/Invoke 的每個參數和傳回值的大小，並在32位和64位平臺上封送處理至未受管理的程式碼時，驗證其大小是否正確。 此規則最常見的違規是傳遞固定大小的整數，其中需要平臺相依的指標大小變數。
 
 ## <a name="rule-description"></a>規則描述
-下列其中一種情況違反此規則:
+下列其中一種情況違反此規則：
 
-- 當傳回值或參數的類型`IntPtr`為時, 會將其類型設定為固定大小的整數。
+- 當傳回值或參數的類型`IntPtr`為時，會將其類型設定為固定大小的整數。
 
-- `IntPtr`當傳回值或參數的類型應為固定大小的整數時, 會將其類型設定為。
+- `IntPtr`當傳回值或參數的類型應為固定大小的整數時，會將其類型設定為。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
-`IntPtr`您可以使用`UInt32`或`UIntPtr`來表示控制碼, 而不是或,以修正此違規。`Int32`
+`IntPtr`您可以使用`UInt32`或`UIntPtr`來表示控制碼，而不是或，以修正此違規。`Int32`
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
 您不應該隱藏這個警告。
@@ -58,7 +58,7 @@ internal class NativeMethods
 }
 ```
 
-在此範例中, `nIconIndex`參數會宣告`IntPtr`為, 在32位平臺上為4個位元組寬, 64 位平臺上為8個位元組寬。 在接下來的非受控宣告中, 您可以`nIconIndex`看到在所有平臺上都是4位元組不帶正負號的整數。
+在此範例中， `nIconIndex`參數會宣告`IntPtr`為，在32位平臺上為4個位元組寬，64位平臺上為8個位元組寬。 在接下來的非受控宣告中，您可以`nIconIndex`看到在所有平臺上都是4位元組不帶正負號的整數。
 
 ```csharp
 HICON ExtractIcon(HINSTANCE hInst, LPCTSTR lpszExeFileName,
@@ -66,7 +66,7 @@ HICON ExtractIcon(HINSTANCE hInst, LPCTSTR lpszExeFileName,
 ```
 
 ## <a name="example"></a>範例
-若要修正違規, 請將宣告變更為下列內容:
+若要修正違規，請將宣告變更為下列內容：
 
 ```csharp
 internal class NativeMethods{

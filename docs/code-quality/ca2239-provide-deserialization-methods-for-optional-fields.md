@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: c0cd59ec30ce45c94ac3422c4271959d74073bff
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: cf2e30956879c0c61bb57d65b89445962f34959a
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68920055"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71237899"
 ---
 # <a name="ca2239-provide-deserialization-methods-for-optional-fields"></a>CA2239:必須為選擇性欄位提供還原序列化方法
 
@@ -31,19 +31,19 @@ ms.locfileid: "68920055"
 |TypeName|ProvideDeserializationMethodsForOptionalFields|
 |CheckId|CA2239|
 |分類|Microsoft.Usage|
-|中斷變更|非中斷|
+|重大變更|不中斷|
 
 ## <a name="cause"></a>原因
-型別具有以<xref:System.Runtime.Serialization.OptionalFieldAttribute?displayProperty=fullName>屬性標記的欄位, 而且型別不提供還原序列化事件處理方法。
+型別具有以<xref:System.Runtime.Serialization.OptionalFieldAttribute?displayProperty=fullName>屬性標記的欄位，而且型別不提供還原序列化事件處理方法。
 
 ## <a name="rule-description"></a>規則描述
-<xref:System.Runtime.Serialization.OptionalFieldAttribute>屬性不會影響序列化; 以屬性標記的欄位會序列化。 不過, 還原序列化時會忽略欄位, 並保留與其類型相關聯的預設值。 還原序列化的事件處理常式應該宣告為在還原序列化過程中設定欄位。
+<xref:System.Runtime.Serialization.OptionalFieldAttribute>屬性不會影響序列化; 以屬性標記的欄位會序列化。 不過，還原序列化時會忽略欄位，並保留與其類型相關聯的預設值。 還原序列化的事件處理常式應該宣告為在還原序列化過程中設定欄位。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
-若要修正此規則的違規, 請將還原序列化事件處理方法加入至類型。
+若要修正此規則的違規，請將還原序列化事件處理方法加入至類型。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
-如果在還原序列化程式期間應該忽略欄位, 則可以放心地隱藏此規則的警告。
+如果在還原序列化程式期間應該忽略欄位，則可以放心地隱藏此規則的警告。
 
 ## <a name="example"></a>範例
 下列範例顯示具有選擇性欄位和還原序列化事件處理方法的類型。

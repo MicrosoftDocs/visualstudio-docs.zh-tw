@@ -3,28 +3,28 @@ title: Visual Studio for Mac 教學課程
 description: Visual Studio for Mac 提供整合式的開發環境，以在 macOS 上建置 .NET 應用程式，包括 ASP.NET Core 網站，和適用於 iOS、Android、Mac 和 Xamarin.Forms 的 Xamarin 專案。
 author: asb3993
 ms.author: amburns
-ms.date: 04/02/2019
+ms.date: 09/18/2019
 ms.assetid: 7DC64A52-AA41-4F3A-A8A1-8A20BCD81CC7
 ms.custom: video
-ms.openlocfilehash: aabb6b575edb68f3e72cad06f2497b8176e950fe
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
-ms.translationtype: HT
+ms.openlocfilehash: 60691ef47b3a3dfdb2fa1148507697a27a99ef7b
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67691502"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71213726"
 ---
 # <a name="visual-studio-2019-for-mac-tour"></a>Visual Studio 2019 for Mac 導覽
 
 Visual Studio for Mac 是 Mac 上的 _.NET 整合式開發環境_，可用來編輯、偵錯及建置程式碼，然後發佈應用程式。 除了必備功能 (如標準編輯器和偵錯工具) 外，Visual Studio for Mac 還有編譯器、程式碼完成工具、圖形設計工具和原始檔控制，讓軟體開發程序變得輕鬆容易。
 
 Visual Studio for Mac 支援的檔案類型很多都與 Windows 相同，例如 `.csproj`、`.fsproj`或 `.sln` 檔案，也支援 EditorConfig 這類功能，也就是說，您可以使用最適合您的 IDE。
-建立、開啟及開發應用程式，對於先前在 Windows 上使用 Visual Studio 的任何人而言，將會是熟悉的經驗。 此外，Visual Studio for Mac 採用許多功能強大的工具，這些工具讓其 Windows 對等項目成為功能如此強大的 IDE。 Roslyn 編譯器平台用於重構和 IntelliSense。 其專案系統和組建引擎會使用 MSBuild，而其原始檔編輯器則支援 TextMate 組合。 它為 Xamarin 與 .NET Core 應用程式使用相同的偵錯工具引擎，並為 Xamarin.iOS 和 Xamarin.Android 使用相同的設計工具。
+建立、開啟及開發應用程式，對於先前在 Windows 上使用 Visual Studio 的任何人而言，將會是熟悉的經驗。 此外，Visual Studio for Mac 採用許多功能強大的工具，這些工具讓其 Windows 對等項目成為功能如此強大的 IDE。 Roslyn 編譯器平台用於重構和 IntelliSense。 它的專案系統和組建引擎會使用 MSBuild，而其來源編輯器會使用與 Windows 上 Visual Studio 相同的基礎。 它為 Xamarin 與 .NET Core 應用程式使用相同的偵錯工具引擎，並為 Xamarin.iOS 和 Xamarin.Android 使用相同的設計工具。
 
 ## <a name="what-can-i-do-in-visual-studio-for-mac"></a>Visual Studio for Mac 內含哪些功能
 
 Visual Studio for Mac 支援下列幾種開發作業：
 
-- 使用 C#、F# 開發 ASP.NET Core web 應用程式，並支援 Razor Pages、JavaScript 和 TypeScript
+- 使用C#、 F#和支援 Razor 頁面、JavaScript 和 TypeScript ASP.NET Core web 應用程式
 - 使用 C# 或 F# 開發 .NET Core 主控台應用程式
 - 使用 C# 開發跨平台 Unity 遊戲和應用程式
 - 使用 C# 或 F# 和 XAML 在 Xamarin 中開發 Android、iOS、tvOS 和 watchOS 應用程式
@@ -36,11 +36,15 @@ Visual Studio for Mac 支援下列幾種開發作業：
 
 Visual Studio for Mac 分成數個區段，以便管理應用程式檔案和設定、建立應用程式程式碼及偵錯。
 
-## <a name="start-window"></a>啟動視窗
+## <a name="getting-started"></a>使用者入門
 
-當您啟動 Visual Studio 2019 for Mac 時，新的使用者會看到登入視窗。 使用您的 Microsoft 帳戶登入以啟動付費授權 (如果有的話) 或 Azure 訂用帳戶的連結。 您可以按 [略過]  ，於稍後透過 Visual Studio > [登入]  功能表項目登入：
+當您啟動 Visual Studio 2019 for Mac 時，新的使用者會看到登入視窗。 使用您的 Microsoft 帳戶登入以啟動付費授權 (如果有的話) 或 Azure 訂用帳戶的連結。 您可以稍後再按 [ **Visual Studio > 登入**] 功能表項目，稍後再**進行**登入：
 
 ![登入 Microsoft 帳戶](media/ide-tour-2019-start-signin.png)
+
+接著，您可以選擇自訂 IDE，方法是選取您慣用的鍵盤快速鍵：Visual Studio for Mac、Visual Studio、Visual Studio Code 或 Xcode：
+
+![選取您最愛的鍵盤快速鍵](media/ide-tour-2019-keyboard-shortcut.png)
 
 使用者登入後，會看到新的_開始視窗_，其中顯示一份最近使用的專案清單，以及開啟現有專案或建立新專案的按鈕：
 
@@ -70,7 +74,7 @@ Solution Pad 能組織方案中的專案：
 
 ![Solution Pad 中的 [參考] 資料夾](media/ide-tour-image19.png)
 
-其他參考資料是使用 [編輯參考]  對話方塊來新增，其顯示方法是在 [參考] 資料夾上按兩下，或在其操作功能表動作上選取 [編輯參考]  ：
+其他參考資料是使用 [編輯參考] 對話方塊來新增，其顯示方法是在 [參考] 資料夾上按兩下，或在其操作功能表動作上選取 [編輯參考]：
 
 ![[編輯參考] 對話方塊](media/ide-tour-image20.png)
 
@@ -82,11 +86,36 @@ Solution Pad 能組織方案中的專案：
 
 NuGet 是適用於 .NET 開發最受歡迎的套件管理員。 使用 Visual Studio 的 NuGet 支援，您可以輕鬆地搜尋並新增套件至您的應用程式專案。
 
-若要將相依性新增至應用程式，請以滑鼠右鍵按一下 [相依性] / [套件] 資料夾，然後選取 [新增套件]  ：
+若要將相依性新增至應用程式，請以滑鼠右鍵按一下 [相依性] / [套件] 資料夾，然後選取 [新增套件]：
 
 ![新增 NuGet 套件](media/ide-tour-image21.png)
 
 在應用程式中使用 NuGet 套件的相關資訊，可於[在專案中包含 NuGet 專案](/visualstudio/mac/nuget-walkthrough)一文中找到。
+
+## <a name="source-editor"></a>原始檔編輯器
+
+無論您是以C#、XAML 或 JAVAscript 撰寫，程式碼編輯器都會與 Visual Studio 視窗共用相同的核心元件，並具有完全原生的使用者介面。
+
+這會引進下列部分功能：
+
+* 原生 macOS (以 Cocoa 為基礎) 使用者介面 (工具提示、編輯器介面、邊界裝飾、文字轉譯、IntelliSense)
+* IntelliSense 類型篩選和「顯示匯入專案」
+* 原生文字輸入的支援
+* RTL/BiDi 語言支援
+* Roslyn 3
+* 多個插入點的支援
+* 自動換行
+* 已更新 IntelliSense UI
+* 改良的尋找/取代
+* 程式碼片段支援 
+* 格式選取
+* 內嵌燈泡
+
+如需在 Visual Studio for Mac 中使用來源編輯器的詳細資訊，請參閱[原始檔編輯器](/visualstudio/mac/source-editor)檔。
+
+若要讓索引標籤隨時可見，您可以利用釘選這些索引標籤。 這可確保每次您啟動專案時，您所需的索引標籤一律會出現。 若要釘選索引標籤，將滑鼠停留在索引標籤上，然後按一下_釘_選圖示：
+
+![釘選索引標籤](media/ide-tour-tabpin.png)
 
 ## <a name="refactoring"></a>重構
 
@@ -96,7 +125,7 @@ Visual Studio for Mac 提供兩種有用的方式來重構程式碼：內容動�
 
 Visual Studio for Mac 具有原生偵錯工具，能夠支援 Xamarin.iOS、 Xamarin.Mac 和 Xamarin.Android 應用程式的偵錯。 Visual Studio for Mac 使用 Mono Soft Debugger，它實作到 Mono 執行階段之中，讓 IDE 能跨所有平台進行 Managed 程式碼的偵錯。 如需偵錯的詳細資訊，請瀏覽[偵錯](/visualstudio/mac/debugging)一文。
 
-偵錯工具包含豐富的視覺化檢視，適用於特殊類型，例如字串、色彩、URL、大小、座標，以及貝茲曲線。
+偵錯工具包含適用于特殊類型的豐富視覺化檢視，例如字串、色彩、Url，以及大小、座標和貝茲曲線。
 
 如需偵錯工具之資料視覺效果的詳細資訊，請瀏覽[資料視覺效果](/visualstudio/mac/data-visualizations)一文。
 

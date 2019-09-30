@@ -9,20 +9,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 97ed8dda2ea5d338bc7d60be845fafad6a30b47f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: a368a9b8f6d25753993a2cc10ea9ca94734d6709
+ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62777516"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71128282"
 ---
 # <a name="analyze-resource-consumption-and-ui-thread-activity-xaml"></a>分析資源耗用量和 UI 執行緒活動 (XAML)
 
-使用 [應用程式時間軸]  程式碼剖析工具來找出並修正 XAML 應用程式中的應用程式互動相關效能問題。 此工具可透過顯示應用程式資源耗用量的詳細檢視，來協助改善 XAML 應用程式的效能。 您可以分析應用程式準備 UI 框架 (版面配置和轉譯)、服務網路和磁碟要求，以及像是應用程式啟動、頁面載入和視窗大小調整等情況所花費的時間。
+使用 [應用程式時間軸] 程式碼剖析工具來找出並修正 XAML 應用程式中的應用程式互動相關效能問題。 此工具可透過顯示應用程式資源耗用量的詳細檢視，來協助改善 XAML 應用程式的效能。 您可以分析應用程式準備 UI 框架 (版面配置和轉譯)、服務網路和磁碟要求，以及像是應用程式啟動、頁面載入和視窗大小調整等情況所花費的時間。
 
 [應用程式時間軸] 是可透過 [偵錯] > [效能分析工具] 命令啟動的工具之一。
 
-此工具會取代 [XAML UI 回應性]  工具，而後者為 Visual Studio 2013 診斷工具組的一部分。
+此工具會取代 [XAML UI 回應性] 工具，而後者為 Visual Studio 2013 診斷工具組的一部分。
 
 您可以在下列平台上使用此工具：
 
@@ -32,7 +32,7 @@ ms.locfileid: "62777516"
 - Windows 7
 
 > [!NOTE]
-> 除了 [時間軸]  資料之外，您還可以收集並分析 CPU 使用量資料和能源消耗資料。 請參閱[使用或不使用偵錯工具來執行分析工具](../profiling/running-profiling-tools-with-or-without-the-debugger.md)。
+> 除了 [時間軸] 資料之外，您還可以收集並分析 CPU 使用量資料和能源消耗資料。 請參閱[使用或不使用偵錯工具來執行分析工具](../profiling/running-profiling-tools-with-or-without-the-debugger.md)。
 
 ## <a name="collect-application-timeline-data"></a>收集應用程式時間軸資料
 
@@ -47,14 +47,14 @@ ms.locfileid: "62777516"
 
 2. 按一下 [偵錯/效能分析工具]。 您應該會在 .diagsession 視窗中看到一份程式碼剖析工具清單。
 
-3. 選取 [應用程式時間軸]  ，然後在視窗底部按一下 [開始]  。
+3. 選取 [應用程式時間軸] ，然後在視窗底部按一下 [開始] 。
 
    > [!NOTE]
    > 您可能會看到 [使用者帳戶控制] 視窗，其要求您提供執行 *VsEtwCollector.exe* 的權限。 按一下 [ **是**]。
 
 4. 執行您感興趣用來在應用程式中程式碼剖析的案例，來收集效能資料。
 
-5. 若要停止程式碼剖析，請切換回 .diagsession 視窗，並在視窗頂端按一下 [停止]  。
+5. 若要停止程式碼剖析，請切換回 .diagsession 視窗，並在視窗頂端按一下 [停止] 。
 
    Visual Studio 會分析收集到的資料並顯示結果。
 
@@ -70,7 +70,7 @@ ms.locfileid: "62777516"
 
 ### <a name="BKMK_Report_scenarios_categories_and_events"></a> 報告情節、分類和事件
 
-[應用程式時間軸]  工具會顯示與 XAML 效能相關之情節、分類和事件的計時資料。
+[應用程式時間軸] 工具會顯示與 XAML 效能相關之情節、分類和事件的計時資料。
 
 ### <a name="BKMK_Diagnostic_session_timeline"></a>診斷工作階段時間軸
 
@@ -84,7 +84,7 @@ ms.locfileid: "62777516"
 
 ![CPU 使用率圖形](../profiling/media/timeline_cpuutilization.png "TIMELINE_CpuUtilization")
 
-[UI 執行緒使用率 (%)]  圖是顯示某項分類在收集時間範圍內相對花費之時間量的橫條圖。
+[UI 執行緒使用率 (%)] 圖是顯示某項分類在收集時間範圍內相對花費之時間量的橫條圖。
 
 ### <a name="BKMK_Visual_throughput_FPS_graph"></a>視覺輸送量 (FPS) 圖
 
@@ -108,16 +108,16 @@ ms.locfileid: "62777516"
 |**XAML 其他**|執行 XAML 執行階段程式碼所花費的時間。|
 
 > [!TIP]
-> 當您開始進行程式碼剖析以檢視 UI 執行緒上所執行的應用程式時，請選擇 [CPU 使用量]  工具和 [應用程式時間軸]  工具。 將長時間執行的應用程式程式碼移到背景執行緒可以改善 UI 回應性。
+> 當您開始進行程式碼剖析以檢視 UI 執行緒上所執行的應用程式時，請選擇 [CPU 使用量] 工具和 [應用程式時間軸] 工具。 將長時間執行的應用程式程式碼移到背景執行緒可以改善 UI 回應性。
 
 #### <a name="BKMK_Customizing_Timeline_details_"></a> 自訂時間軸詳細資料
 
-您可以使用 [時間軸詳細資料]  工具列來排序、篩選及指定 [時間軸詳細資料]  檢視項目的註釋。
+您可以使用 [時間軸詳細資料] 工具列來排序、篩選及指定 [時間軸詳細資料] 檢視項目的註釋。
 
 |||
 |-|-|
 |**排序依據**|依開始時間或事件長度排序。|
-|![依畫面格分組事件](../profiling/media/timeline_groupbyframes.png "TIMELINE_GroupByFrames")|加入或移除依框架分組事件的最上層 [框架]  分類。|
+|![依畫面格分組事件](../profiling/media/timeline_groupbyframes.png "TIMELINE_GroupByFrames")|加入或移除依框架分組事件的最上層 [框架] 分類。|
 |![篩選時間軸詳細資料清單](../profiling/media/timeline_filter.png "TIMELINE_Filter")|依選取的分類和事件長度篩選清單。|
 |![自訂時間軸詳細資料資訊](../profiling/media/timeline_viewsettings.png "TIMELINE_ViewSettings")|可讓您指定事件的註釋。|
 
@@ -126,5 +126,5 @@ ms.locfileid: "62777516"
 - [WPF 小組部落格：New UI performance analysis tool for WPF applications](https://blogs.msdn.microsoft.com/wpf/2015/01/16/new-ui-performance-analysis-tool-for-wpf-applications/) (WPF 應用程式的新 UI 效能分析工具)
 - [使用 C++、C# 及 Visual Basic 的 UWP App 效能最佳做法](/previous-versions/windows/apps/hh750313\(v\=win.10\))
 - [最佳化 WPF 應用程式效能](/dotnet/framework/wpf/advanced/optimizing-wpf-application-performance)
-- [Visual Studio 中的分析](../profiling/index.md)
+- [Visual Studio 中的分析](../profiling/index.yml)
 - [初步認識分析工具](../profiling/profiling-feature-tour.md)

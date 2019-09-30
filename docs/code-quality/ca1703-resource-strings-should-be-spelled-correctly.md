@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2643ff7cb8ce401462be7e5c1e52d5f985896f3a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: edd3945953a07b10aee5c2690a25aafe446e2c10
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62546267"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71234316"
 ---
 # <a name="ca1703-resource-strings-should-be-spelled-correctly"></a>CA1703:資源字串應該使用正確的拼字
 
@@ -28,7 +28,7 @@ ms.locfileid: "62546267"
 |TypeName|ResourceStringsShouldBeSpelledCorrectly|
 |CheckId|CA1703|
 |分類|Microsoft.Naming|
-|中斷變更|非重大|
+|重大變更|不中斷|
 
 ## <a name="cause"></a>原因
 
@@ -36,28 +36,28 @@ ms.locfileid: "62546267"
 
 ## <a name="rule-description"></a>規則描述
 
-此規則會將資源字串剖析成單字 （token 化的複合字），並檢查每個字/語彙基元的拼字。 如需剖析演算法的詳細資訊，請參閱[CA1704:識別項應該使用正確的拼字](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)。
+此規則會將資源字串剖析成單字（token 化的複合字組），並檢查每個單字/token 的拼寫。 如需剖析演算法的詳細資訊， [請參閱 CA1704：識別碼應該正確](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)拼寫。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
 
-若要修正此規則的違規情形，使用完整的文字拼寫正確，或將文字加入自訂字典。 如需如何使用自訂字典的詳細資訊，請參閱[CA1704:識別項應該使用正確的拼字](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)。
+若要修正此規則的違規情形，請使用正確拼寫的完整單字，或將單字加入自訂字典。 如需如何使用自訂字典的詳細資訊[，請參閱 CA1704：識別碼應該正確](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)拼寫。
 
-## <a name="change-the-dictionary-language"></a>變更的字典語言
+## <a name="change-the-dictionary-language"></a>變更字典語言
 
-預設情況下，會使用英文 (en) 版本的拼字檢查程式。 如果您想要變更的拼字檢查程式語言，您可以這樣做加上下列其中一個屬性到您*AssemblyInfo.cs*或是*AssemblyInfo.vb*檔案：
+根據預設，會使用拼寫檢查的英文（en）版本。 如果您想要變更拼寫檢查的語言，您可以將下列其中一個屬性新增至*AssemblyInfo.cs*或*AssemblyInfo .vb*檔案來執行此動作：
 
-- 使用<xref:System.Reflection.AssemblyCultureAttribute>指定的文化特性，如果您的資源位於附屬組件。
-- 使用<xref:System.Resources.NeutralResourcesLanguageAttribute>來指定*中性文化特性*您組件，如果您的資源位於與您的程式碼相同的組件。
+- 如果<xref:System.Reflection.AssemblyCultureAttribute>您的資源是在附屬元件中，請使用來指定文化特性。
+- 如果<xref:System.Resources.NeutralResourcesLanguageAttribute>您的資源與您的程式碼位於相同的元件，請使用來指定元件的*中性文化*特性。
 
 > [!IMPORTANT]
-> 如果您將文化特性設定為以英文為基礎的文化特性以外的任何項目時，此程式碼分析規則是以無訊息模式停用。
+> 如果您將文化特性設定為英文文化特性以外的任何專案，則會以無訊息模式停用此程式碼分析規則。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
 
-請勿隱藏此規則的警告。 正確拼寫的字會減少所需了解新的軟體程式庫的時間。
+請勿隱藏此規則的警告。 拼寫正確的文字會減少學習新軟體程式庫所需的時間。
 
-## <a name="related-rules"></a>相關的規則
+## <a name="related-rules"></a>相關規則
 
-- [CA1701:資源字串複合字應該使用正確的大小寫](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)
-- [CA1704:識別項應該使用正確的拼字](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)
-- [CA2204:常值應該使用正確的拼字](../code-quality/ca2204-literals-should-be-spelled-correctly.md)
+- [CA1701資源字串複合字應該是正確的大小寫](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)
+- [CA1704識別碼應該正確拼寫](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)
+- [CA2204常值的拼寫應該正確](../code-quality/ca2204-literals-should-be-spelled-correctly.md)

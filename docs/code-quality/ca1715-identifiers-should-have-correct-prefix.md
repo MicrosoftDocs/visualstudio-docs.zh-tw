@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a793f0a359cadc58c262861ee0495f92188d0b7
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 7323fd044675eda2f528788ffc40943d071bf12b
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69547186"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71234069"
 ---
 # <a name="ca1715-identifiers-should-have-correct-prefix"></a>CA1715:識別項名稱應該使用正確的前置字元
 
@@ -31,8 +31,8 @@ ms.locfileid: "69547186"
 |-|-|
 |TypeName|IdentifiersShouldHaveCorrectPrefix|
 |CheckId|CA1715|
-|Category|Microsoft.Naming|
-|中斷變更|中斷-在介面上引發。<br /><br /> 不中斷-在泛型型別參數上引發時。|
+|分類|Microsoft.Naming|
+|重大變更|中斷-在介面上引發。<br /><br /> 不中斷-在泛型型別參數上引發時。|
 
 ## <a name="cause"></a>原因
 
@@ -42,25 +42,25 @@ ms.locfileid: "69547186"
 
 類型或方法上的[泛型型別參數](/dotnet/csharp/programming-guide/generics/generic-type-parameters)名稱開頭不是大寫 '。
 
-根據預設, 此規則只會查看外部可見介面、類型和方法, 但這是[可](#configurability)設定的。
+根據預設，此規則只會查看外部可見介面、類型和方法，但這是[可](#configurability)設定的。
 
 ## <a name="rule-description"></a>規則描述
 
-依照慣例, 某些程式設計項目的名稱會以特定前置詞開頭。
+依照慣例，某些程式設計項目的名稱會以特定前置詞開頭。
 
-介面名稱的開頭應該是大寫的 ' I ', 後面接著另一個大寫字母。 此規則會報告對介面名稱的違規, 例如 ' MyInterface ' 和 ' IsolatedInterface '。
+介面名稱的開頭應該是大寫的 ' I '，後面接著另一個大寫字母。 此規則會報告對介面名稱的違規，例如 ' MyInterface ' 和 ' IsolatedInterface '。
 
-泛型型別參數名稱的開頭應該是大寫的 ' t ', 且選擇性後面可能接著另一個大寫字母。 此規則會報告泛型型別參數名稱 (例如 ' V ' 和 ' Type ') 的違規。
+泛型型別參數名稱的開頭應該是大寫的 ' t '，且選擇性後面可能接著另一個大寫字母。 此規則會報告泛型型別參數名稱（例如 ' V ' 和 ' Type '）的違規。
 
-命名慣例提供以通用語言執行時間為目標之程式庫的常見外觀。 這可減少新軟體程式庫所需的學習曲線, 並提高客戶對於開發 managed 程式碼專業知識的人員所開發的信心。
+命名慣例提供以通用語言執行時間為目標之程式庫的常見外觀。 這可減少新軟體程式庫所需的學習曲線，並提高客戶對於開發 managed 程式碼專業知識的人員所開發的信心。
 
 ## <a name="configurability"></a>可設定性
 
-如果您是從[FxCop 分析器](install-fxcop-analyzers.md)執行此規則 (而不是使用舊版分析), 您可以設定此規則要分析的程式碼部分。 如需詳細資訊, 請參閱[設定 FxCop 分析器](configure-fxcop-analyzers.md)。
+如果您是從[FxCop 分析器](install-fxcop-analyzers.md)執行此規則（而不是使用舊版分析），您可以設定此規則要分析的程式碼部分。 如需詳細資訊，請參閱[設定 FxCop 分析器](configure-fxcop-analyzers.md)。
 
 ### <a name="single-character-type-parameters"></a>單一字元類型參數
 
-您可以設定是否要排除此規則中的單一字元類型參數。 例如, 若要指定此規則*不應*分析單一字元類型參數, 請將下列其中一個索引鍵/值組新增至專案中的 editorconfig 檔案:
+您可以設定是否要排除此規則中的單一字元類型參數。 例如，若要指定此規則*不應*分析單一字元類型參數，請將下列其中一個索引鍵/值組新增至專案中的 editorconfig 檔案：
 
 ```ini
 # Package version 2.9.0 and later
@@ -71,21 +71,21 @@ dotnet_code_quality.CA2007.allow_single_letter_type_parameters = true
 ```
 
 > [!NOTE]
-> 此規則永遠不會針對名`T`為的型別參數引發, `Collection<T>`例如。
+> 此規則永遠不會針對名`T`為的型別參數引發， `Collection<T>`例如。
 
 ### <a name="api-surface"></a>API 介面
 
-您可以根據其存取範圍, 設定程式碼基底中要執行此規則的部分。 例如, 若要指定規則只針對非公用 API 介面執行, 請將下列機碼值組新增至專案中的 editorconfig 檔案:
+您可以根據其存取範圍，設定程式碼基底中要執行此規則的部分。 例如，若要指定規則只針對非公用 API 介面執行，請將下列機碼值組新增至專案中的 editorconfig 檔案：
 
 ```ini
 dotnet_code_quality.ca1715.api_surface = private, internal
 ```
 
-您可以只針對此規則、所有規則或此類別中的所有規則 (命名) 來設定此選項。
+您可以只針對此規則、所有規則或此類別中的所有規則（命名）來設定此選項。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
 
-重新命名識別碼, 使其正確地加上前置詞。
+重新命名識別碼，使其正確地加上前置詞。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
 
@@ -93,13 +93,13 @@ dotnet_code_quality.ca1715.api_surface = private, internal
 
 ## <a name="interface-naming-example"></a>介面命名範例
 
-下列程式碼片段顯示不正確命名的介面:
+下列程式碼片段顯示不正確命名的介面：
 
 [!code-cpp[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix#1](../code-quality/codesnippet/CPP/ca1715-identifiers-should-have-correct-prefix_1.cpp)]
 [!code-vb[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix#1](../code-quality/codesnippet/VisualBasic/ca1715-identifiers-should-have-correct-prefix_1.vb)]
 [!code-csharp[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix#1](../code-quality/codesnippet/CSharp/ca1715-identifiers-should-have-correct-prefix_1.cs)]
 
-下列程式碼片段會在介面前面加上 ' I ', 藉以修正先前的違規:
+下列程式碼片段會在介面前面加上 ' I '，藉以修正先前的違規：
 
 [!code-csharp[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix2#1](../code-quality/codesnippet/CSharp/ca1715-identifiers-should-have-correct-prefix_2.cs)]
 [!code-cpp[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix2#1](../code-quality/codesnippet/CPP/ca1715-identifiers-should-have-correct-prefix_2.cpp)]
@@ -107,13 +107,13 @@ dotnet_code_quality.ca1715.api_surface = private, internal
 
 ## <a name="type-parameter-naming-example"></a>型別參數命名範例
 
-下列程式碼片段顯示不正確命名的泛型型別參數:
+下列程式碼片段顯示不正確命名的泛型型別參數：
 
 [!code-cpp[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix3#1](../code-quality/codesnippet/CPP/ca1715-identifiers-should-have-correct-prefix_3.cpp)]
 [!code-vb[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix3#1](../code-quality/codesnippet/VisualBasic/ca1715-identifiers-should-have-correct-prefix_3.vb)]
 [!code-csharp[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix3#1](../code-quality/codesnippet/CSharp/ca1715-identifiers-should-have-correct-prefix_3.cs)]
 
-下列程式碼片段會在泛型型別參數前面加上 ' t ', 藉以修正先前的違規:
+下列程式碼片段會在泛型型別參數前面加上 ' t '，藉以修正先前的違規：
 
 [!code-cpp[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix4#1](../code-quality/codesnippet/CPP/ca1715-identifiers-should-have-correct-prefix_4.cpp)]
 [!code-csharp[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix4#1](../code-quality/codesnippet/CSharp/ca1715-identifiers-should-have-correct-prefix_4.cs)]

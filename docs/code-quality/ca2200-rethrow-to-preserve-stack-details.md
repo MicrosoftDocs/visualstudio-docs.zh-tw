@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 55c58f098616a5c3c2d6ad72f56e8eda51f689be
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5cf7fc6e31b9250392fc3ea447a5b91225640a50
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62796841"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71231900"
 ---
 # <a name="ca2200-rethrow-to-preserve-stack-details"></a>CA2200:必須重新擲回以保存堆疊詳細資料
 
@@ -31,19 +31,19 @@ ms.locfileid: "62796841"
 |TypeName|RethrowToPreserveStackDetails|
 |CheckId|CA2200|
 |分類|Microsoft.Usage|
-|中斷變更|非中斷|
+|重大變更|不中斷|
 
 ## <a name="cause"></a>原因
 
-重新擲回例外狀況和例外狀況會明確指定在`throw`陳述式。
+系統會重新擲回例外狀況，並在`throw`語句中明確指定例外狀況。
 
 ## <a name="rule-description"></a>規則描述
 
-一旦擲回例外狀況，它所攜帶的資訊的一部分為堆疊追蹤。 堆疊追蹤是一份方法呼叫階層開頭的方法，就會擲回例外狀況，並攔截到例外狀況的方法的結尾。 如果重新擲回例外狀況的例外狀況中指定`throw`陳述式的堆疊追蹤會在目前的方法來進行重新啟動，並擲回例外狀況的原始方法和目前方法之間呼叫的方法清單將會遺失。 若要保留與例外狀況的原始堆疊追蹤資訊，請使用`throw`但未指定例外狀況的陳述式。
+一旦擲回例外狀況，它所攜帶的部分資訊就是堆疊追蹤。 堆疊追蹤是方法呼叫階層的清單，其開頭為會擲回例外狀況的方法，並以攔截例外狀況的方法做為結尾。 如果在`throw`語句中指定例外狀況來重新擲回例外狀況，則會在目前的方法上重新開機堆疊追蹤，並在原始方法（擲回例外狀況）和目前方法之間遺失方法呼叫的清單。 若要保留原始堆疊追蹤資訊與例外狀況，請使用`throw`語句，而不指定例外狀況。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
 
-若要修正此規則的違規情形，重新擲回但未明確指定例外狀況的例外狀況。
+若要修正此規則的違規，請重新擲回例外狀況，而不明確指定例外狀況。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
 
@@ -51,7 +51,7 @@ ms.locfileid: "62796841"
 
 ## <a name="example"></a>範例
 
-下列範例示範的方法中， `CatchAndRethrowExplicitly`，這會違反此規則和方法， `CatchAndRethrowImplicitly`，這會滿足規則。
+下列範例顯示的方法`CatchAndRethrowExplicitly`違反規則，以及符合規則的`CatchAndRethrowImplicitly`方法。
 
 [!code-csharp[FxCop.Usage.Rethrow#1](../code-quality/codesnippet/CSharp/ca2200-rethrow-to-preserve-stack-details_1.cs)]
 [!code-vb[FxCop.Usage.Rethrow#1](../code-quality/codesnippet/VisualBasic/ca2200-rethrow-to-preserve-stack-details_1.vb)]

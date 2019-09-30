@@ -26,15 +26,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5c8837c1c95dc5f032a10773645f93a46ec29662
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 3cef71cc5f6c4e25d04e6045be7059d81c06b484
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69551216"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71254933"
 ---
 # <a name="word-solutions"></a>Word 方案
-  Visual Studio 提供的專案範本，可用以建立 Microsoft Office Word 的文件層級自訂和 VSTO 增益集。 您可以使用這些解決方案自動化 Word、擴充 Word 功能和自訂 Word 使用者介面 (UI)。 如需檔層級自訂和 VSTO 增益集之間差異的詳細資訊, 請參閱[Office 方案開發&#40;總覽&#41;](../vsto/office-solutions-development-overview-vsto.md)。
+  Visual Studio 提供的專案範本，可用以建立 Microsoft Office Word 的文件層級自訂和 VSTO 增益集。 您可以使用這些解決方案自動化 Word、擴充 Word 功能和自訂 Word 使用者介面 (UI)。 如需檔層級自訂和 VSTO 增益集之間差異的詳細資訊，請參閱[Office 方案開發&#40;總覽&#41;](../vsto/office-solutions-development-overview-vsto.md)。
 
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
 
@@ -51,24 +51,24 @@ ms.locfileid: "69551216"
 - [自訂 Word 的使用者介面](#UI)。
 
 ## <a name="automating"></a>自動執行 Word
- Word 物件模型會公開您可用來自動化 Word 的許多類型。 例如，您可以程式設計方式建立資料表、格式化文件，以及設定範圍和段落中的文字。 如需詳細資訊, 請參閱[Word 物件模型總覽](../vsto/word-object-model-overview.md)。
+ Word 物件模型會公開您可用來自動化 Word 的許多類型。 例如，您可以程式設計方式建立資料表、格式化文件，以及設定範圍和段落中的文字。 如需詳細資訊，請參閱[Word 物件模型總覽](../vsto/word-object-model-overview.md)。
 
- 在 Visual Studio 中開發 Word 方案時，您也可以在解決方案中使用 *「主項目」* (host items) 和 *「主控制項」* (host controls)。 這些都是在 Word 物件模型中擴充某些常用物件的物件，例如 <xref:Microsoft.Office.Interop.Word.Document> 和 <xref:Microsoft.Office.Interop.Word.ContentControl> 物件。 這些擴充物件的行為與它們所根據的 Word 物件一樣，但是這些物件會在物件中加入額外的事件和資料繫結功能。 如需詳細資訊, 請參閱[使用擴充物件自動化 Word](../vsto/automating-word-by-using-extended-objects.md)。
+ 在 Visual Studio 中開發 Word 方案時，您也可以在解決方案中使用 *「主項目」* (host items) 和 *「主控制項」* (host controls)。 這些都是在 Word 物件模型中擴充某些常用物件的物件，例如 <xref:Microsoft.Office.Interop.Word.Document> 和 <xref:Microsoft.Office.Interop.Word.ContentControl> 物件。 這些擴充物件的行為與它們所根據的 Word 物件一樣，但是這些物件會在物件中加入額外的事件和資料繫結功能。 如需詳細資訊，請參閱[使用擴充物件自動化 Word](../vsto/automating-word-by-using-extended-objects.md)。
 
 ## <a name="doclevel"></a>開發 Word 的檔層級自訂
  Microsoft Office Word 文件層級自訂是由與特定文件相關聯的組件所組成。 組件通常是透過自訂 UI 及自動化 Word 來擴充文件。 不同於與 Word 本身相關聯的 VSTO 增益集，您在自訂中實作的功能只有在 Word 中開啟相關聯的文件時才能使用。
 
  若要建立 Word 的文件層級自訂專案，請使用 Visual Studio [新增專案] 對話方塊中的 Word 文件或 Word 範本專案範本。 如需詳細資訊，請參閱[如何：在 Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)中建立 Office 專案。
 
- 如需檔層級自訂如何工作的詳細資訊, 請閱讀[檔層級自訂的架構](../vsto/architecture-of-document-level-customizations.md)。
+ 如需檔層級自訂如何工作的詳細資訊，請閱讀[檔層級自訂的架構](../vsto/architecture-of-document-level-customizations.md)。
 
 ### <a name="word-customization-programming-model"></a>Word 自訂程式設計模型
  當您建立 Word 文件層級專案時，Visual Studio 會產生名為 `ThisDocument`的類別，這是解決方案的基礎。 這個類別代表與解決方案相關聯的文件，並提供撰寫程式碼的起點。
 
- 如需檔層級`ThisDocument`專案中可用之類別和其他功能的詳細資訊, 請參閱[程式檔層級自訂](../vsto/programming-document-level-customizations.md)。
+ 如需檔層級`ThisDocument`專案中可用之類別和其他功能的詳細資訊，請參閱[程式檔層級自訂](../vsto/programming-document-level-customizations.md)。
 
 ## <a name="applevel"></a>開發 Word 的 VSTO 增益集
- Microsoft Office Word 的 VSTO 增益集是由 Word 載入的組件所組成。 組件通常是透過自訂 UI 及自動化 Word 來擴充 Word。 不同于與特定檔相關聯的檔層級自訂, 您在 VSTO 增益集中所執行的功能不會限制為任何單一檔。
+ Microsoft Office Word 的 VSTO 增益集是由 Word 載入的組件所組成。 組件通常是透過自訂 UI 及自動化 Word 來擴充 Word。 不同于與特定檔相關聯的檔層級自訂，您在 VSTO 增益集中所執行的功能不會限制為任何單一檔。
 
  若要建立 Word 的 VSTO 增益集專案，請使用 Visual Studio [新增專案] 對話方塊中的 Word 增益集專案範本。 如需詳細資訊，請參閱[如何：在 Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)中建立 Office 專案。
 
@@ -77,7 +77,7 @@ ms.locfileid: "69551216"
 ### <a name="word-add-in-programming-model"></a>Word 增益集程式設計模型
  當您建立 Word VSTO 增益集專案時，Visual Studio 會產生名為 `ThisAddIn`的類別，這是方案的基礎。 這個類別會提供撰寫程式碼的起點，還會向 VSTO 增益集公開 Word 物件模型。
 
- 如需您可以在`ThisAddIn` VSTO 增益集中使用之類別和其他功能的詳細資訊, 請參閱[Program VSTO 增益集](../vsto/programming-vsto-add-ins.md)。
+ 如需您可以在`ThisAddIn` VSTO 增益集中使用之類別和其他功能的詳細資訊，請參閱[Program VSTO 增益集](../vsto/programming-vsto-add-ins.md)。
 
 ## <a name="UI"></a>自訂 Word 的使用者介面
  有幾種不同的方式可以自訂 Word 的使用者介面。 有些選項適用於所有專案類型，有些選項則僅限 VSTO 增益集或文件層級自訂使用。

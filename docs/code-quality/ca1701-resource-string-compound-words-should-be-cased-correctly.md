@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8fdae06137586f11de1a30a73894c46c7fb18fa6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ed5ae8c0845755fe626e7e801f500389f9263cf5
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62546280"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71234367"
 ---
 # <a name="ca1701-resource-string-compound-words-should-be-cased-correctly"></a>CA1701:資源字串複合字應該使用正確的大小寫
 
@@ -28,43 +28,43 @@ ms.locfileid: "62546280"
 |TypeName|ResourceStringCompoundWordsShouldBeCasedCorrectly|
 |CheckId|CA1701|
 |分類|Microsoft.Naming|
-|中斷變更|非重大|
+|重大變更|不中斷|
 
 ## <a name="cause"></a>原因
 
-資源字串，包含似乎不正確的大小寫的複合字。
+資源字串包含不是以正確的大小寫呈現的複合字。
 
 ## <a name="rule-description"></a>規則描述
 
-資源字串中的每個單字會分割成權杖為基礎的大小寫。 連續兩個語彙基元的組合都由 Microsoft 拼字檢查程式庫進行檢查。 如果可以辨識，這個字便會產生規則違規。 造成違規的複合字的範例是"CheckSum"和"MultiPart 」，這應該使用的大小寫為"Checksum"和"Multipart"，分別。 由於先前的常見用法，幾個例外狀況內建規則，並標示數個單字，例如"工具列"和"Filename"，應該使用的大小寫成兩個不同的單字。 在此範例中，就會標示 「 工具列 」 且"FileName"。
+資源字串中的每個單字都會分割成以大小寫為基礎的權杖。 連續兩個語彙基元的組合都由 Microsoft 拼字檢查程式庫進行檢查。 如果可以辨識，這個字便會產生規則違規。 造成違規的複合單字範例包括「總和檢查碼」和「多部分」，分別應該以「總和檢查碼」和「多部分」為大小寫。 由於先前的常見用法，規則中內建了數個例外狀況，而且有幾個單字標示為旗標，例如「工具列」和「檔案名」，其大小寫應為兩個不同的字組。 在此範例中，「工具列」和「檔案名」會加上旗標。
 
-命名慣例提供了通用程式庫 common language runtime 為目標。 這可降低學習曲線，需要新的軟體程式庫，並增加程式庫，開發人員專業開發的 managed 程式碼中的其他人的客戶信心。
+命名慣例提供以通用語言執行時間為目標之程式庫的常見外觀。 這可減少新軟體程式庫所需的學習曲線，並提高客戶對於開發 managed 程式碼專業知識的人員所開發的信心。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
 
-文字變更為正確的大小寫。
+變更單字，使其大小寫正確。
 
-## <a name="change-the-dictionary-language"></a>變更的字典語言
+## <a name="change-the-dictionary-language"></a>變更字典語言
 
-預設情況下，會使用英文 (en) 版本的拼字檢查程式。 如果您想要變更的拼字檢查程式語言，您可以這樣做加上下列其中一個屬性到您*AssemblyInfo.cs*或是*AssemblyInfo.vb*檔案：
+根據預設，會使用拼寫檢查的英文（en）版本。 如果您想要變更拼寫檢查的語言，您可以將下列其中一個屬性新增至*AssemblyInfo.cs*或*AssemblyInfo .vb*檔案來執行此動作：
 
-- 使用<xref:System.Reflection.AssemblyCultureAttribute>指定的文化特性，如果您的資源位於附屬組件。
-- 使用<xref:System.Resources.NeutralResourcesLanguageAttribute>來指定*中性文化特性*您組件，如果您的資源位於與您的程式碼相同的組件。
+- 如果<xref:System.Reflection.AssemblyCultureAttribute>您的資源是在附屬元件中，請使用來指定文化特性。
+- 如果<xref:System.Resources.NeutralResourcesLanguageAttribute>您的資源與您的程式碼位於相同的元件，請使用來指定元件的*中性文化*特性。
 
 > [!IMPORTANT]
-> 如果您將文化特性設定為以英文為基礎的文化特性以外的任何項目時，此程式碼分析規則是以無訊息模式停用。
+> 如果您將文化特性設定為英文文化特性以外的任何專案，則會以無訊息模式停用此程式碼分析規則。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
 
-它可安全地隱藏此規則的警告，如果拼字檢查字典所辨識的複合字的兩個部分，且其目的是要使用兩個字。
+如果拼寫字典能夠辨識複合單字的兩個部分，而且其目的是要使用兩個字組，則可放心地隱藏此規則的警告。
 
-您也可以新增至拼字檢查程式的自訂字典的複合字。 自訂字典中的文字不會導致違規。 如需詳細資訊，請參閱[如何：自訂程式碼分析字典](../code-quality/how-to-customize-the-code-analysis-dictionary.md)。
+您也可以在拼寫檢查的自訂字典中加入複合字組。 自訂字典中的單字不會造成違規。 如需詳細資訊，請參閱[如何：自訂程式碼分析](../code-quality/how-to-customize-the-code-analysis-dictionary.md)字典。
 
-## <a name="related-rules"></a>相關的規則
+## <a name="related-rules"></a>相關規則
 
-- [CA1702:複合字應該使用正確的大小寫](../code-quality/ca1702-compound-words-should-be-cased-correctly.md)
-- [CA1709:識別項應該使用正確的大小寫](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
-- [CA1708:識別項應該不僅為大小寫不同](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
+- [CA1702複合字的大小寫應該正確](../code-quality/ca1702-compound-words-should-be-cased-correctly.md)
+- [CA1709識別碼的大小寫應該正確](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
+- [CA1708識別碼應該不同于大小寫](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
 
 ## <a name="see-also"></a>另請參閱
 

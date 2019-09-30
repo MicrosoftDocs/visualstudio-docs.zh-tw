@@ -1,5 +1,5 @@
 ---
-title: HOW TO：以程式設計方式保護工作表
+title: 作法：以程式設計方式保護工作表
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,14 +15,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7d6fb66684bd51c75e655bc2403cb6a9fb5846a2
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 931bfba9aeac76132ca2dd5e6115abef9869a1df
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438806"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71254592"
 ---
-# <a name="how-to-programmatically-protect-worksheets"></a>HOW TO：以程式設計方式保護工作表
+# <a name="how-to-programmatically-protect-worksheets"></a>作法：以程式設計方式保護工作表
   Microsoft Office Excel 中的保護功能有助於防止使用者和程式碼修改工作表中的物件。 根據預設，開啟保護之後所有的儲存格都會鎖定。
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
@@ -36,19 +36,19 @@ ms.locfileid: "63438806"
 
 ### <a name="to-protect-a-worksheet-in-the-designer"></a>若要用設計工具保護工作表
 
-1. 在 **變更**的群組**檢閱**索引標籤上，按一下 **保護工作表**。
+1. 在 [**審查**] 索引標籤的 [**變更**] 群組中，按一下 [**保護工作表**]。
 
-    **保護工作表** 對話方塊隨即出現。 您可以設定密碼，並且選擇性地指定允許使用者對工作表執行某些動作 (例如格式化儲存格或插入列)。
+    [**保護工作表**] 對話方塊隨即出現。 您可以設定密碼，並且選擇性地指定允許使用者對工作表執行某些動作 (例如格式化儲存格或插入列)。
 
    您也可以允許使用者在受保護的工作表中編輯特定的範圍。
 
 ### <a name="to-allow-editing-in-specific-ranges"></a>若要允許在特定範圍中進行編輯
 
-1. 在 **變更**的群組**檢閱**索引標籤上，按一下 **允許使用者編輯範圍**。
+1. 在 [**審查**] 索引標籤的 [**變更**] 群組中，按一下 [**允許使用者編輯範圍**]。
 
-     **允許使用者編輯範圍** 對話方塊隨即出現。 您可以指定需要使用密碼才能解除鎖定的範圍，以及不需要密碼就可以編輯範圍的使用者。
+     [**允許使用者編輯範圍**] 對話方塊隨即出現。 您可以指定需要使用密碼才能解除鎖定的範圍，以及不需要密碼就可以編輯範圍的使用者。
 
-## <a name="use-code-at-runtime"></a>在執行階段使用程式碼
+## <a name="use-code-at-run-time"></a>在執行時間使用程式碼
  下列程式碼會設定密碼 (使用變數 getPasswordFromUser，它含有從使用者取得的密碼)，並且只允許排序。
 
 ### <a name="to-protect-a-worksheet-by-using-code-in-a-document-level-customization"></a>若要在文件層級自訂中使用程式碼保護工作表
@@ -70,7 +70,7 @@ ms.locfileid: "63438806"
 - [如何：以程式設計方式移除工作表的保護](../vsto/how-to-programmatically-remove-protection-from-worksheets.md)
 - [如何：以程式設計方式保護活頁簿](../vsto/how-to-programmatically-protect-workbooks.md)
 - [如何：以程式設計方式隱藏工作表](../vsto/how-to-programmatically-hide-worksheets.md)
-- [主項目和主控制項概觀](../vsto/host-items-and-host-controls-overview.md)
-- [工作表主項目](../vsto/worksheet-host-item.md)
+- [主專案和主控制項總覽](../vsto/host-items-and-host-controls-overview.md)
+- [工作表主專案](../vsto/worksheet-host-item.md)
 - [全域存取 Office 專案中的物件](../vsto/global-access-to-objects-in-office-projects.md)
 - [Office 方案中的選擇性參數](../vsto/optional-parameters-in-office-solutions.md)

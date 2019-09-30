@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f78ea4f44c48d2740df58def03a6335bce6637a2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5480d3dde926dfe31b018a5cd0b1ea6a5813063b
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62545928"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71234340"
 ---
 # <a name="ca1702-compound-words-should-be-cased-correctly"></a>CA1702:複合字應該使用正確的大小寫
 
@@ -28,7 +28,7 @@ ms.locfileid: "62545928"
 |TypeName|CompoundWordsShouldBeCasedCorrectly|
 |CheckId|CA1702|
 |分類|Microsoft.Naming|
-|中斷變更|組件中斷時引發。<br /><br /> 非-中斷-引發時的類型參數。|
+|重大變更|中斷-在元件上引發。<br /><br /> 非中斷-在型別參數上引發時。|
 
 ## <a name="cause"></a>原因
 
@@ -36,19 +36,19 @@ ms.locfileid: "62545928"
 
 ## <a name="rule-description"></a>規則描述
 
-識別項的名稱會分割成文字為基礎的大小寫。 每個連續的兩個字組合會檢查 Microsoft 拼字檢查程式庫。 如果辨識出它是，識別項會產生規則的違規情形。 造成違規的複合字的範例是"CheckSum"和"MultiPart 」，這應該使用的大小寫為"Checksum"和"Multipart"，分別。 因為前一個常見的用法，幾個例外狀況內建規則，以及數個單字會加上旗標，例如"工具列"和"Filename"，，應該使用的大小寫成兩個不同的單字 （在此情況下，在"工具列"和"FileName"）。
+識別碼的名稱會分割成以大小寫為基礎的單字。 Microsoft 拼寫檢查程式庫會檢查每個連續的兩個單字組合。 如果可辨識，識別碼會產生規則違規。 造成違規的複合單字範例包括「總和檢查碼」和「多部分」，分別應該以「總和檢查碼」和「多部分」為大小寫。 由於先前的常見用法，規則中內建了數個例外狀況，而且有數個單字標示為「工具列」和「檔案名」，其大小寫應為兩個不同的字組（在此案例中為「工具列」和「檔案名」）。
 
-命名慣例提供了通用程式庫 common language runtime 為目標。 這可降低學習曲線，需要新的軟體程式庫，並增加程式庫，開發人員專業開發的 managed 程式碼中的其他人的客戶信心。
+命名慣例提供以通用語言執行時間為目標之程式庫的常見外觀。 這可減少新軟體程式庫所需的學習曲線，並提高客戶對於開發 managed 程式碼專業知識的人員所開發的信心。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
 
-是正確的大小寫，請變更名稱。
+請變更名稱，使其大小寫正確。
 
 ## <a name="language"></a>語言
 
-拼字檢查工具目前會檢查只會針對英文版為基礎的文化特性的字典。 您可以加入，以變更您的專案在專案檔中的文化特性**CodeAnalysisCulture**項目。
+「拼寫檢查」目前只會針對以英文為基礎的文化特性字典進行檢查。 您可以藉由新增**CodeAnalysisCulture**元素，在專案檔中變更專案的文化特性。
 
-例如: 
+例如：
 
 ```xml
 <Project ...>
@@ -57,17 +57,17 @@ ms.locfileid: "62545928"
 ```
 
 > [!IMPORTANT]
-> 如果您將文化特性設定為以英文為基礎的文化特性以外的任何項目時，此程式碼分析規則是以無訊息模式停用。
+> 如果您將文化特性設定為英文文化特性以外的任何專案，則會以無訊息模式停用此程式碼分析規則。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
 
-它可安全地隱藏此規則的警告，如果拼字檢查字典中，所能辨識的複合字的兩個部分，且其目的是要使用兩個字。
+如果拼寫字典可以辨識複合單字的兩個部分，且目的是要使用兩個單字，則可以安全地隱藏此規則的警告。
 
-## <a name="related-rules"></a>相關的規則
+## <a name="related-rules"></a>相關規則
 
-- [CA1701:資源字串複合字應該使用正確的大小寫](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)
-- [CA1709:識別項應該使用正確的大小寫](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
-- [CA1708:識別項應該不僅為大小寫不同](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
+- [CA1701資源字串複合字應該是正確的大小寫](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)
+- [CA1709識別碼的大小寫應該正確](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
+- [CA1708識別碼應該不同于大小寫](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
 
 ## <a name="see-also"></a>另請參閱
 

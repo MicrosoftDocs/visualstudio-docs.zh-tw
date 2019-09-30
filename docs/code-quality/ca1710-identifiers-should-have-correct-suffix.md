@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 93fd892baaf54d79c3a2387b8961a2f4c1bb2cdb
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 50c67c614c4ece8f1925f4133f749a1c5747fe31
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69547321"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71234161"
 ---
 # <a name="ca1710-identifiers-should-have-correct-suffix"></a>CA1710:識別項應該使用正確的後置字元
 
@@ -27,20 +27,20 @@ ms.locfileid: "69547321"
 |-|-|
 |TypeName|IdentifiersShouldHaveCorrectSuffix|
 |CheckId|CA1710|
-|Category|Microsoft.Naming|
-|中斷變更|中斷|
+|分類|Microsoft.Naming|
+|重大變更|中斷|
 
 ## <a name="cause"></a>原因
 
 識別碼沒有正確的後置詞。
 
-根據預設, 此規則只會查看外部可見的識別碼, 但這是[可](#configurability)設定的。
+根據預設，此規則只會查看外部可見的識別碼，但這是[可](#configurability)設定的。
 
 ## <a name="rule-description"></a>規則描述
 
-依照慣例, 擴充特定基底類型或執行特定介面的類型名稱, 或衍生自這些類型的類型, 會有與基底類型或介面相關聯的尾碼。
+依照慣例，擴充特定基底類型或執行特定介面的類型名稱，或衍生自這些類型的類型，會有與基底類型或介面相關聯的尾碼。
 
-命名慣例提供以通用語言執行時間為目標之程式庫的常見外觀。 這可減少新軟體程式庫所需的學習曲線, 並提高客戶對於開發 managed 程式碼專業知識的人員所開發的信心。
+命名慣例提供以通用語言執行時間為目標之程式庫的常見外觀。 這可減少新軟體程式庫所需的學習曲線，並提高客戶對於開發 managed 程式碼專業知識的人員所開發的信心。
 
 下表列出具有相關聯尾碼的基底類型和介面。
 
@@ -49,12 +49,12 @@ ms.locfileid: "69547321"
 |<xref:System.Attribute?displayProperty=fullName>|屬性|
 |<xref:System.EventArgs?displayProperty=fullName>|EventArgs|
 |<xref:System.Exception?displayProperty=fullName>|例外|
-|<xref:System.Collections.ICollection?displayProperty=fullName>|Collection|
+|<xref:System.Collections.ICollection?displayProperty=fullName>|集合|
 |<xref:System.Collections.IDictionary?displayProperty=fullName>|字典|
-|<xref:System.Collections.IEnumerable?displayProperty=fullName>|Collection|
+|<xref:System.Collections.IEnumerable?displayProperty=fullName>|集合|
 |<xref:System.Collections.Queue?displayProperty=fullName>|集合或佇列|
 |<xref:System.Collections.Stack?displayProperty=fullName>|集合或堆疊|
-|<xref:System.Collections.Generic.ICollection%601?displayProperty=fullName>|Collection|
+|<xref:System.Collections.Generic.ICollection%601?displayProperty=fullName>|集合|
 |<xref:System.Collections.Generic.IDictionary%602?displayProperty=fullName>|字典|
 |<xref:System.Data.DataSet?displayProperty=fullName>|資料集|
 |<xref:System.Data.DataTable?displayProperty=fullName>|Collection 或 DataTable|
@@ -63,11 +63,11 @@ ms.locfileid: "69547321"
 |<xref:System.Security.Policy.IMembershipCondition?displayProperty=fullName>|條件|
 |事件處理常式委派。|EventHandler|
 
-<xref:System.Collections.ICollection>實作為類型的資料結構 (例如字典、堆疊或佇列) 的型別, 是允許的名稱, 這些型別可提供有關類型的預定使用方式的有意義資訊。
+<xref:System.Collections.ICollection>實作為類型的資料結構（例如字典、堆疊或佇列）的型別，是允許的名稱，這些型別可提供有關類型的預定使用方式的有意義資訊。
 
-<xref:System.Collections.ICollection>實作為特定專案集合的型別, 其名稱會以 ' collection ' 這個字為結尾。 例如, <xref:System.Collections.Queue>物件的集合名稱會是 ' QueueCollection '。 ' Collection ' 後置詞表示可以使用`foreach` (`For Each` in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) 語句來列舉集合的成員。
+<xref:System.Collections.ICollection>實作為特定專案集合的型別，其名稱會以 ' collection ' 這個字為結尾。 例如， <xref:System.Collections.Queue>物件的集合名稱會是 ' QueueCollection '。 ' Collection ' 後置詞表示可以使用`foreach` （`For Each` in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]）語句來列舉集合的成員。
 
-執行<xref:System.Collections.IDictionary>的型別具有以「字典」單字結尾的名稱, 即使類型<xref:System.Collections.IEnumerable>也會執行或<xref:System.Collections.ICollection>。 「集合」和「字典」尾碼的命名慣例可讓使用者區分下列兩種列舉模式。
+執行<xref:System.Collections.IDictionary>的型別具有以「字典」單字結尾的名稱，即使類型<xref:System.Collections.IEnumerable>也會執行或<xref:System.Collections.ICollection>。 「集合」和「字典」尾碼的命名慣例可讓使用者區分下列兩種列舉模式。
 
 具有 ' Collection ' 尾碼的類型會遵循此列舉模式。
 
@@ -81,27 +81,27 @@ foreach(SomeType x in SomeCollection) { }
 foreach(SomeType x in SomeDictionary.Values) { }
 ```
 
-物件是由<xref:System.Data.DataTable>物件的集合<xref:System.Data.DataColumn?displayProperty=fullName>所組成, 其中包含和<xref:System.Data.DataRow?displayProperty=fullName>物件的集合, 還有其他專案。 <xref:System.Data.DataSet> 這些集合會<xref:System.Collections.ICollection>透過基類<xref:System.Data.InternalDataCollectionBase?displayProperty=fullName>來執行。
+物件是由<xref:System.Data.DataTable>物件的集合<xref:System.Data.DataColumn?displayProperty=fullName>所組成，其中包含和<xref:System.Data.DataRow?displayProperty=fullName>物件的集合，還有其他專案。 <xref:System.Data.DataSet> 這些集合會<xref:System.Collections.ICollection>透過基類<xref:System.Data.InternalDataCollectionBase?displayProperty=fullName>來執行。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
 
-重新命名類型, 使其後綴正確的字詞。
+重新命名類型，使其後綴正確的字詞。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
 
-如果類型是可以擴充的一般化資料結構, 或是會保存任意一組不同的專案, 則隱藏警告以使用 ' Collection ' 尾碼是安全的。 在此情況下, 提供有關資料結構之執行、效能或其他特性的有意義資訊的名稱可能有意義 (例如, BinaryTree)。 如果類型代表特定類型的集合 (例如, StringCollection), 請勿隱藏此規則的警告, 因為後置詞表示可以使用`foreach`語句來列舉該類型。
+如果類型是可以擴充的一般化資料結構，或是會保存任意一組不同的專案，則隱藏警告以使用 ' Collection ' 尾碼是安全的。 在此情況下，提供有關資料結構之執行、效能或其他特性的有意義資訊的名稱可能有意義（例如，BinaryTree）。 如果類型代表特定類型的集合（例如，StringCollection），請勿隱藏此規則的警告，因為後置詞表示可以使用`foreach`語句來列舉該類型。
 
-若為其他尾碼, 請勿隱藏此規則的警告。 尾碼可讓您從類型名稱中看出預期的使用方式。
+若為其他尾碼，請勿隱藏此規則的警告。 尾碼可讓您從類型名稱中看出預期的使用方式。
 
 ## <a name="configurability"></a>可設定性
 
-如果您是從[FxCop 分析器](install-fxcop-analyzers.md)執行此規則 (而不是使用舊版分析), 您可以根據其存取範圍, 設定程式碼基底中的哪些部分來執行此規則。 例如, 若要指定規則只針對非公用 API 介面執行, 請將下列機碼值組新增至專案中的 editorconfig 檔案:
+如果您是從[FxCop 分析器](install-fxcop-analyzers.md)執行此規則（而不是使用舊版分析），您可以根據其存取範圍，設定程式碼基底中的哪些部分來執行此規則。 例如，若要指定規則只針對非公用 API 介面執行，請將下列機碼值組新增至專案中的 editorconfig 檔案：
 
 ```ini
 dotnet_code_quality.ca1710.api_surface = private, internal
 ```
 
-您可以只針對此規則、所有規則或此類別中的所有規則 (命名) 來設定此選項。 如需詳細資訊, 請參閱[設定 FxCop 分析器](configure-fxcop-analyzers.md)。
+您可以只針對此規則、所有規則或此類別中的所有規則（命名）來設定此選項。 如需詳細資訊，請參閱[設定 FxCop 分析器](configure-fxcop-analyzers.md)。
 
 ## <a name="related-rules"></a>相關規則
 

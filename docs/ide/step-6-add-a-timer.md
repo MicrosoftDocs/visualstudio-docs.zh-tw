@@ -4,9 +4,6 @@ ms.date: 11/04/2016
 ms.topic: tutorial
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
-ms.devlang:
-- csharp
-- vb
 dev_langs:
 - CSharp
 - VB
@@ -16,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 521467f7948f9ed62540028ab8c8b116e8cbbac9
-ms.sourcegitcommit: 541a0556958201ad6626bc8638406ad02640f764
+ms.openlocfilehash: bd5958c089998d35dea4324c59f85c368adf900c
+ms.sourcegitcommit: 6eed0372976c0167b9a6d42ba443f9a474b8bb91
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71079424"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71118983"
 ---
 # <a name="step-6-add-a-timer"></a>步驟 6：新增計時器
 接下來，您可以將 <xref:System.Windows.Forms.Timer> 控制項新增至配對遊戲。 計時器會等候指定的毫秒數，然後引發事件，稱為「刻度」。 這對於定期啟動動作或重複動作非常有用。 在這個案例中，您將使用計時器讓玩家選擇兩個圖示，如果圖示不相符，則在短時間之後再次隱藏兩個圖示。

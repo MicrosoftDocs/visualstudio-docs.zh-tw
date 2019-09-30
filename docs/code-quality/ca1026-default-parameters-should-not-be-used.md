@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 888e1b5d551e357eb732dfe3f7661d51cbdf089d
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 62de7654083f3fd64f95401f95e5ee593effb27d
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68923134"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71236123"
 ---
 # <a name="ca1026-default-parameters-should-not-be-used"></a>CA1026:不應該使用預設參數
 
@@ -28,24 +28,24 @@ ms.locfileid: "68923134"
 |TypeName|DefaultParametersShouldNotBeUsed|
 |CheckId|CA1026|
 |分類|Microsoft.Design|
-|中斷變更|中斷|
+|重大變更|中斷|
 
 ## <a name="cause"></a>原因
-外部可見的類型包含外部可見的方法, 它會使用預設參數。
+外部可見的類型包含外部可見的方法，它會使用預設參數。
 
 ## <a name="rule-description"></a>規則描述
-在 Common Language Specification (CLS) 下允許使用預設參數的方法;不過, CLS 允許編譯器忽略指派給這些參數的值。 針對忽略預設參數值的編譯器所撰寫的程式碼, 必須明確為每個預設參數提供引數。 若要在程式設計語言之間維護您想要的行為, 使用預設參數的方法多載應該會以提供預設參數的方法多載來取代。
+在 Common Language Specification （CLS）下允許使用預設參數的方法;不過，CLS 允許編譯器忽略指派給這些參數的值。 針對忽略預設參數值的編譯器所撰寫的程式碼，必須明確為每個預設參數提供引數。 若要在程式設計語言之間維護您想要的行為，使用預設參數的方法多載應該會以提供預設參數的方法多載來取代。
 
-編譯器會在存取 managed 程式碼C++時, 忽略 managed 擴充功能的預設參數值。 Visual Basic 編譯器支援具有使用[選擇性](/dotnet/visual-basic/language-reference/modifiers/optional)關鍵字之預設參數的方法。
+編譯器會在存取 managed 程式碼C++時，忽略 managed 擴充功能的預設參數值。 Visual Basic 編譯器支援具有使用[選擇性](/dotnet/visual-basic/language-reference/modifiers/optional)關鍵字之預設參數的方法。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
-若要修正此規則的違規, 請將使用預設參數的方法取代為提供預設參數的方法多載。
+若要修正此規則的違規，請將使用預設參數的方法取代為提供預設參數的方法多載。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
 請勿隱藏此規則的警告。
 
 ## <a name="example"></a>範例
-下列範例顯示使用預設參數的方法, 以及提供對等功能的多載方法。
+下列範例顯示使用預設參數的方法，以及提供對等功能的多載方法。
 
 [!code-vb[FxCop.Design.DefaultParameters#1](../code-quality/codesnippet/VisualBasic/ca1026-default-parameters-should-not-be-used_1.vb)]
 

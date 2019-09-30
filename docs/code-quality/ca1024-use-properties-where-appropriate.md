@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 2763d7dd167ad0027509c44b8f9d43523f03976b
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: d312618c80abb6a4ce6e1a2676903d85867f4989
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69547789"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71236150"
 ---
 # <a name="ca1024-use-properties-where-appropriate"></a>CA1024:建議在適當時使用屬性
 
@@ -30,24 +30,24 @@ ms.locfileid: "69547789"
 |-|-|
 |TypeName|UsePropertiesWhereAppropriate|
 |CheckId|CA1024|
-|Category|Microsoft.Design|
-|中斷變更|中斷|
+|分類|Microsoft.Design|
+|重大變更|中斷|
 
 ## <a name="cause"></a>原因
 
-方法的名稱開頭為`Get`、不接受任何參數, 而且會傳回不是陣列的值。
+方法的名稱開頭為`Get`、不接受任何參數，而且會傳回不是陣列的值。
 
-根據預設, 此規則只會查看公用和受保護的方法, 但這是[可](#configurability)設定的。
+根據預設，此規則只會查看公用和受保護的方法，但這是[可](#configurability)設定的。
 
 ## <a name="rule-description"></a>規則描述
 
-在大部分情況下, 屬性代表資料和方法會執行動作。 屬性的存取方式就像欄位一樣, 讓使用者更容易使用。 如果其中一項條件存在, 方法就很適合成為屬性:
+在大部分情況下，屬性代表資料和方法會執行動作。 屬性的存取方式就像欄位一樣，讓使用者更容易使用。 如果其中一項條件存在，方法就很適合成為屬性：
 
-- 不接受任何引數, 並傳回物件的狀態資訊。
+- 不接受任何引數，並傳回物件的狀態資訊。
 
-- 接受單一引數, 以設定物件狀態的某些部分。
+- 接受單一引數，以設定物件狀態的某些部分。
 
-屬性的行為應該如同欄位一樣。如果方法不能, 則不應該將它變更為屬性。 在下列情況下, 方法會優於屬性:
+屬性的行為應該如同欄位一樣。如果方法不能，則不應該將它變更為屬性。 在下列情況下，方法會優於屬性：
 
 - 方法會執行耗時的作業。 方法的 perceivably 速度比設定或取得欄位值所需的時間慢。
 
@@ -57,35 +57,35 @@ ms.locfileid: "69547789"
 
 - 執行的順序很重要。 設定欄位的值不會依賴其他作業的出現次數。
 
-- 連續呼叫方法兩次, 會產生不同的結果。
+- 連續呼叫方法兩次，會產生不同的結果。
 
-- 方法是靜態的, 但會傳回可由呼叫端變更的物件。 抓取欄位的值不允許呼叫者變更欄位所儲存的資料。
+- 方法是靜態的，但會傳回可由呼叫端變更的物件。 抓取欄位的值不允許呼叫者變更欄位所儲存的資料。
 
 - 方法會傳回陣列。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
 
-若要修正此規則的違規情形, 請將方法變更為屬性。
+若要修正此規則的違規情形，請將方法變更為屬性。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
 
-如果方法至少符合先前列出的其中一個準則, 請隱藏此規則的警告。
+如果方法至少符合先前列出的其中一個準則，請隱藏此規則的警告。
 
 ## <a name="configurability"></a>可設定性
 
-如果您是從[FxCop 分析器](install-fxcop-analyzers.md)執行此規則 (而不是使用舊版分析), 您可以根據其存取範圍, 設定程式碼基底中的哪些部分來執行此規則。 例如, 若要指定規則只針對非公用 API 介面執行, 請將下列機碼值組新增至專案中的 editorconfig 檔案:
+如果您是從[FxCop 分析器](install-fxcop-analyzers.md)執行此規則（而不是使用舊版分析），您可以根據其存取範圍，設定程式碼基底中的哪些部分來執行此規則。 例如，若要指定規則只針對非公用 API 介面執行，請將下列機碼值組新增至專案中的 editorconfig 檔案：
 
 ```ini
 dotnet_code_quality.ca1024.api_surface = private, internal
 ```
 
-您可以只針對此規則、所有規則或此類別中的所有規則 (設計) 設定此選項。 如需詳細資訊, 請參閱[設定 FxCop 分析器](configure-fxcop-analyzers.md)。
+您可以只針對此規則、所有規則或此類別中的所有規則（設計）設定此選項。 如需詳細資訊，請參閱[設定 FxCop 分析器](configure-fxcop-analyzers.md)。
 
 ## <a name="control-property-expansion-in-the-debugger"></a>偵錯工具中的控制項屬性展開
 
-程式設計人員避免使用屬性的原因之一, 是因為它們不想讓偵錯工具將它自動展開。 例如, 屬性可能牽涉到配置大型物件或呼叫 P/Invoke, 但實際上可能不會有任何可觀察的副作用。
+程式設計人員避免使用屬性的原因之一，是因為它們不想讓偵錯工具將它自動展開。 例如，屬性可能牽涉到配置大型物件或呼叫 P/Invoke，但實際上可能不會有任何可觀察的副作用。
 
-您可以藉由<xref:System.Diagnostics.DebuggerBrowsableAttribute?displayProperty=fullName>套用, 讓偵錯工具無法 autoexpanding 屬性。 下列範例顯示此屬性會套用至實例屬性。
+您可以藉由<xref:System.Diagnostics.DebuggerBrowsableAttribute?displayProperty=fullName>套用，讓偵錯工具無法 autoexpanding 屬性。 下列範例顯示此屬性會套用至實例屬性。
 
 ```vb
 Imports System
@@ -135,6 +135,6 @@ namespace Microsoft.Samples
 
 ## <a name="example"></a>範例
 
-下列範例包含數個應該轉換成屬性的方法, 而不應將其視為像欄位一樣的行為。
+下列範例包含數個應該轉換成屬性的方法，而不應將其視為像欄位一樣的行為。
 
 [!code-csharp[FxCop.Design.MethodsProperties#1](../code-quality/codesnippet/CSharp/ca1024-use-properties-where-appropriate_1.cs)]

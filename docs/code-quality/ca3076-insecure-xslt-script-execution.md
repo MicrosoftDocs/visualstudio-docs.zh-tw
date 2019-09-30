@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f98b022aef49a4d98ad4864793aa55732f8de6c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1c6c5df0109a8cff3cefcc308ea27077ef0fbe03
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62541086"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71237083"
 ---
 # <a name="ca3076-insecure-xslt-script-execution"></a>CA3076:不安全的 XSLT 指令碼執行
 
@@ -21,21 +21,21 @@ ms.locfileid: "62541086"
 |TypeName|InsecureXSLTScriptExecution|
 |CheckId|CA3076|
 |分類|Microsoft.Security|
-|中斷變更|非中斷|
+|重大變更|不中斷|
 
 ## <a name="cause"></a>原因
 
-如果您在 .NET 應用程式中以不安全的方式執行可延伸樣式表語言轉換 (XSLT)，處理器可能會解析不受信任的 URI 參考，而這些參考可能會將機密資訊洩漏給攻擊者，導致拒絕服務和跨網站攻擊。 如需詳細資訊，請參閱 < [XSLT 安全性 Considerations(.NET Guide)](/dotnet/standard/data/xml/xslt-security-considerations)。
+如果您在 .NET 應用程式中以不安全的方式執行可延伸樣式表語言轉換 (XSLT)，處理器可能會解析不受信任的 URI 參考，而這些參考可能會將機密資訊洩漏給攻擊者，導致拒絕服務和跨網站攻擊。 如需詳細資訊，請參閱[XSLT 安全性考慮（.Net 指南）](/dotnet/standard/data/xml/xslt-security-considerations)。
 
 ## <a name="rule-description"></a>規則描述
 
-**XSLT** 是全球資訊網協會 (W3C) 針對 XML 資料轉換的一項標準。 XSLT 通常用來寫入 XML 將資料轉換成其他格式，例如 HTML、 固定長度的文字，以逗號分隔的文字或使用不同的 XML 格式的樣式表。 雖然預設為禁止使用，您仍可以針對專案選擇啟用此項目。
+**XSLT** 是全球資訊網協會 (W3C) 針對 XML 資料轉換的一項標準。 XSLT 通常用來撰寫樣式表單，將 XML 資料轉換成其他格式，例如 HTML、固定長度的文字、逗號分隔的文字，或不同的 XML 格式。 雖然預設為禁止使用，您仍可以針對專案選擇啟用此項目。
 
-若要確保您不會公開受攻擊面，此規則會觸發每當 XslCompiledTransform。<xref:System.Xml.Xsl.XslCompiledTransform.Load%2A> 接收的不安全組合執行個體<xref:System.Xml.Xsl.XsltSettings>和<xref:System.Xml.XmlResolver>，可讓惡意指令碼處理。
+為了確保您不會公開受攻擊面，此規則會在 XslCompiledTransform 時觸發。<xref:System.Xml.Xsl.XslCompiledTransform.Load%2A> 會接收和<xref:System.Xml.Xsl.XsltSettings> <xref:System.Xml.XmlResolver>的不安全性群組合實例，以允許惡意的腳本處理。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
 
-- 不安全的 XsltSettings 引數取代為 XsltSettings。<xref:System.Xml.Xsl.XsltSettings.Default%2A> 或執行個體的已停用文件函式和指令碼執行。
+- 以 XsltSettings 取代不安全的 XsltSettings 引數。<xref:System.Xml.Xsl.XsltSettings.Default%2A> 或使用已停用檔功能和腳本執行的實例。
 
 - 將 <xref:System.Xml.XmlResolver> 引數取代為 null 或 <xref:System.Xml.XmlSecureResolver> 執行個體。
 
@@ -45,7 +45,7 @@ ms.locfileid: "62541086"
 
 ## <a name="pseudo-code-examples"></a>虛擬程式碼範例
 
-### <a name="violation-that-uses-xsltsettingstrustedxslt"></a>使用 XsltSettings.TrustedXslt 的違規
+### <a name="violation-that-uses-xsltsettingstrustedxslt"></a>使用 XsltSettings 的違規。 TrustedXslt
 
 ```csharp
 using System.Xml;
@@ -66,7 +66,7 @@ namespace TestNamespace
 }
 ```
 
-### <a name="solution-that-uses-xsltsettingsdefault"></a>使用 XsltSettings.Default 解決方案
+### <a name="solution-that-uses-xsltsettingsdefault"></a>使用 XsltSettings 的解決方案
 
 ```csharp
 using System.Xml;
@@ -87,7 +87,7 @@ namespace TestNamespace
 }
 ```
 
-### <a name="violationmdashdocument-function-and-script-execution-not-disabled"></a>違規&mdash;文件未停用的函式和指令碼執行
+### <a name="violationmdashdocument-function-and-script-execution-not-disabled"></a>違規&mdash;檔功能和腳本執行未停用
 
 ```csharp
 using System.Xml;
@@ -112,7 +112,7 @@ namespace TestNamespace
 }
 ```
 
-### <a name="solutionmdashdisable-document-function-and-script-execution"></a>方案&mdash;停用文件函式和指令碼執行
+### <a name="solutionmdashdisable-document-function-and-script-execution"></a>解決方案&mdash;停用檔功能和腳本執行
 
 ```csharp
 using System.Xml;
@@ -141,4 +141,4 @@ namespace TestNamespace
 
 ## <a name="see-also"></a>另請參閱
 
-- [XSLT 安全性考量 （.NET 指南）](/dotnet/standard/data/xml/xslt-security-considerations)
+- [XSLT 安全性考慮（.NET 指南）](/dotnet/standard/data/xml/xslt-security-considerations)

@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 20bee606fd8cd98482a7304e068aaa7cbd5773a7
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 45ff4831875150df02d04553e75cebcab9a9f572
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68923231"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71236512"
 ---
 # <a name="ca1006-do-not-nest-generic-types-in-member-signatures"></a>CA1006：不要在成員簽章中將泛型類型巢狀化
 
@@ -31,7 +31,7 @@ ms.locfileid: "68923231"
 |TypeName|DoNotNestGenericTypesInMemberSignatures|
 |CheckId|CA1006|
 |分類|Microsoft.Design|
-|中斷變更|中斷|
+|重大變更|中斷|
 
 ## <a name="cause"></a>原因
 外部可見成員的簽章包含一個巢狀型別引數。
@@ -40,13 +40,13 @@ ms.locfileid: "68923231"
 巢狀型別引數就是也是泛型類型的型別引數。 若要呼叫其簽章含有巢狀型別引數的成員，則使用者必須具現化 (Instantiate) 一個泛型類型，並將這個類型傳遞給第二個泛型類型的建構函式。 必要程序及語法十分複雜，且應予以避免。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
-若要修正此規則的違規情形, 請將設計變更為移除 nested 類型引數。
+若要修正此規則的違規情形，請將設計變更為移除 nested 類型引數。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
-請勿隱藏此規則的警告。 以易於瞭解和使用的語法提供泛型, 可減少學習及增加新程式庫採用率所需的時間。
+請勿隱藏此規則的警告。 以易於瞭解和使用的語法提供泛型，可減少學習及增加新程式庫採用率所需的時間。
 
 ## <a name="example"></a>範例
-下列範例顯示違反規則的方法, 以及呼叫違規方法所需的語法。
+下列範例顯示違反規則的方法，以及呼叫違規方法所需的語法。
 
 [!code-vb[FxCop.Design.NestedGenerics#1](../code-quality/codesnippet/VisualBasic/ca1006-do-not-nest-generic-types-in-member-signatures_1.vb)]
 [!code-csharp[FxCop.Design.NestedGenerics#1](../code-quality/codesnippet/CSharp/ca1006-do-not-nest-generic-types-in-member-signatures_1.cs)]

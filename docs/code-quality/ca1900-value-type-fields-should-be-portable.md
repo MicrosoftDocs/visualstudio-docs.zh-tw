@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f734d0cf28a5aec28ebbf635dd384efe176b1774
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 4bef51c547d4a1614137e0691343bef635aed50d
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68921324"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71233281"
 ---
 # <a name="ca1900-value-type-fields-should-be-portable"></a>CA1900:實值類型欄位應該為可移植的
 
@@ -28,16 +28,16 @@ ms.locfileid: "68921324"
 |TypeName|ValueTypeFieldsShouldBePortable|
 |CheckId|CA1900|
 |分類|Microsoft.Portability|
-|中斷變更|中斷-如果欄位可以在元件外部顯示。<br /><br /> 不中斷-如果在元件外部看不到該欄位。|
+|重大變更|中斷-如果欄位可以在元件外部顯示。<br /><br /> 不中斷-如果在元件外部看不到該欄位。|
 
 ## <a name="cause"></a>原因
-此規則會檢查在64位作業系統上封送處理至未受管理的程式碼時, 以明確配置宣告的結構是否會正確對齊。 IA-64 不允許未配置的記憶體存取, 如果未修正此違規, 進程將會損毀。
+此規則會檢查在64位作業系統上封送處理至未受管理的程式碼時，以明確配置宣告的結構是否會正確對齊。 IA-64 不允許未配置的記憶體存取，如果未修正此違規，進程將會損毀。
 
 ## <a name="rule-description"></a>規則描述
-具有明確配置的結構 (包含未對齊的欄位) 會導致64位作業系統當機。
+具有明確配置的結構（包含未對齊的欄位）會導致64位作業系統當機。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
-小於8個位元組的所有欄位都必須有其大小倍數的位移, 而且8個位元組以上的欄位必須有8個倍數的位移。 另一個解決方案是使用`LayoutKind.Sequential` `LayoutKind.Explicit`, 而不是 (如果合理的話)。
+小於8個位元組的所有欄位都必須有其大小倍數的位移，而且8個位元組以上的欄位必須有8個倍數的位移。 另一個解決方案是使用`LayoutKind.Sequential` `LayoutKind.Explicit`，而不是（如果合理的話）。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
-只有在發生錯誤時, 才應該抑制此警告。
+只有在發生錯誤時，才應該抑制此警告。

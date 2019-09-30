@@ -19,12 +19,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: b3ba92e154e3091f6ec483ba469c3fe60f50ec61
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: 837abb051467135b6332b53b2c59e5016d3adff6
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66744802"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71233057"
 ---
 # <a name="ca2100-review-sql-queries-for-security-vulnerabilities"></a>CA2100:必須檢閱 SQL 查詢中是否有安全性弱點
 
@@ -33,23 +33,23 @@ ms.locfileid: "66744802"
 |TypeName|ReviewSqlQueriesForSecurityVulnerabilities|
 |CheckId|CA2100|
 |分類|Microsoft.Security|
-|中斷變更|非重大|
+|重大變更|不中斷|
 
 ## <a name="cause"></a>原因
 
-方法會設定<xref:System.Data.IDbCommand.CommandText%2A?displayProperty=fullName>所使用的字串，內建字串引數之方法的屬性。
+方法會使用從<xref:System.Data.IDbCommand.CommandText%2A?displayProperty=fullName>字串引數建立到方法的字串，來設定屬性。
 
 ## <a name="rule-description"></a>規則描述
 
-這項規則假設字串引數包含使用者輸入。 從使用者輸入所建置的 SQL 命令字串很容易遭到 SQL 插入 (SQL Injection) 攻擊。 在 SQL 資料隱碼攻擊，惡意使用者所提供的改變查詢的設計嘗試損毀或未經授權存取基礎資料庫中的輸入。 典型的技術包括資料隱碼攻擊的單引號或縮寫符號，也就是 SQL 常值字串分隔符號中;兩個連字號，這表示 SQL 註解;和分號，這表示，新的命令如下所示。 如果使用者輸入必須是查詢的一部份，下列程式碼，使用其中一個列出的有效性，為了降低攻擊風險。
+這項規則假設字串引數包含使用者輸入。 從使用者輸入所建置的 SQL 命令字串很容易遭到 SQL 插入 (SQL Injection) 攻擊。 在 SQL 插入式攻擊中，惡意使用者會提供會改變查詢設計的輸入，以嘗試損毀或取得未經授權的基礎資料庫存取權。 典型的技術包括插入單引號或單引號，也就是 SQL 常值字串分隔符號;兩個虛線，表示 SQL 批註;和分號，表示會遵循新的命令。 如果使用者輸入必須是查詢的一部分，請使用下列其中一項（依有效性列出）來降低攻擊的風險。
 
-- 使用預存程序。
+- 使用預存程式。
 
-- 使用參數化的命令的字串。
+- 使用參數化命令字串。
 
-- 建置命令字串之前，請驗證使用者輸入的類型和內容。
+- 建立命令字串之前，請先驗證類型和內容的使用者輸入。
 
-下列.NET 類型會實作<xref:System.Data.IDbCommand.CommandText%2A>屬性或建構函式，使用字串引數設定的屬性。
+下列 .net 類型會執行<xref:System.Data.IDbCommand.CommandText%2A>屬性，或提供使用字串引數來設定屬性的函式。
 
 - <xref:System.Data.Odbc.OdbcCommand?displayProperty=fullName> 和 <xref:System.Data.Odbc.OdbcDataAdapter?displayProperty=fullName>
 
@@ -59,16 +59,16 @@ ms.locfileid: "66744802"
 
 - <xref:System.Data.SqlClient.SqlCommand?displayProperty=fullName> 和 <xref:System.Data.SqlClient.SqlDataAdapter?displayProperty=fullName>
 
-請注意，在明確或隱含使用 ToString 方法的型別時，違反此規則來建構查詢字串。 下列為範例。
+請注意，當使用類型的 ToString 方法明確或隱含地用來建立查詢字串時，會違反此規則。 下列為範例。
 
 ```csharp
 int x = 10;
 string query = "SELECT TOP " + x.ToString() + " FROM Table";
 ```
 
-因為惡意使用者可以覆寫 tostring （） 方法違反此規則。
+違反了此規則，因為惡意使用者可以覆寫 ToString （）方法。
 
-也會隱含地使用 ToString 時，會違反規則。
+隱含使用 ToString 時，也會違反此規則。
 
 ```csharp
 int x = 10;
@@ -77,15 +77,15 @@ string query = String.Format("SELECT TOP {0} FROM Table", x);
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
 
-若要修正此規則的違規情形，請使用參數化的查詢。
+若要修正此規則的違規情形，請使用參數化查詢。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
 
-它可安全地隱藏此規則的警告，如果命令文字不包含任何使用者輸入。
+如果命令文字不包含任何使用者輸入，則可以安全地隱藏此規則的警告。
 
 ## <a name="example"></a>範例
 
-下列範例示範的方法中， `UnsafeQuery`，，違反規則和方法， `SaferQuery`，使用參數化的命令字串符合規則。
+下列範例顯示的方法`UnsafeQuery`違反規則，以及使用參數化命令字串來滿足規則的`SaferQuery`方法。
 
 [!code-vb[FxCop.Security.ReviewSqlQueries#1](../code-quality/codesnippet/VisualBasic/ca2100-review-sql-queries-for-security-vulnerabilities_1.vb)]
 [!code-csharp[FxCop.Security.ReviewSqlQueries#1](../code-quality/codesnippet/CSharp/ca2100-review-sql-queries-for-security-vulnerabilities_1.cs)]

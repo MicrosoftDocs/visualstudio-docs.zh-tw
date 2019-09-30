@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 03634b5a2bd1417e75f843fd9026712313f1923d
-ms.sourcegitcommit: 0e482cfc15f809b564c3de61646f29ecd7bfcba6
+ms.openlocfilehash: db4756107bb9f5e7e766634897013649db351faa
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "70987634"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71211019"
 ---
 # <a name="general-debugging-options"></a>一般調試選項
 
@@ -176,5 +176,5 @@ ms.locfileid: "70987634"
 
 ## <a name="see-also"></a>另請參閱
 
-- [Visual Studio 偵錯](../debugger/index.md)
+- [Visual Studio 偵錯](../debugger/index.yml)
 - [偵錯工具簡介](../debugger/debugger-feature-tour.md)

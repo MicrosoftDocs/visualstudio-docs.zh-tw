@@ -14,12 +14,12 @@ ms.workload:
 - multiple
 author: kendrahavens
 manager: jillfra
-ms.openlocfilehash: 1f51b8d3e75d7db19e1b92e909638cee99303c48
-ms.sourcegitcommit: 541a0556958201ad6626bc8638406ad02640f764
+ms.openlocfilehash: dca1fbb8f199db56563f4107ec88b832ec445bde
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71079618"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71254554"
 ---
 # <a name="visual-studio-test-explorer-faq"></a>Visual Studio 測試總管常見問題集
 ::: moniker range=">=vs-2019"
@@ -43,7 +43,7 @@ ms.locfileid: "71079618"
 ::: moniker range="vs-2017"
 建置專案並確保已在 [工具] > [選項] > [測試] 中開啟以組件為基礎的探索。
 ::: moniker-end
-[即時測試探索](https://go.microsoft.com/fwlink/?linkid=862824)是來源型的測試探索。 其無法探索使用理論、自訂配接器、自訂特徵及 `#ifdef` 陳述式等項目的測試，因為這些項目均已在執行階段中定義。 需要組建才能準確找到這些測試。 在 Visual Studio 2017 15.6 版及更新版本中，以組件為基礎的探索 (傳統型探索) 只會在建置之後執行。 這項設定表示當您在編輯時，即時測試探索會盡可能找到更多測試，而組件型探索允許動態定義的測試在組建之後顯示。 即時測試探索會改善回應性，但仍然可讓您在建置後取得完整且精確的結果。
+[即時測試探索](https://go.microsoft.com/fwlink/?linkid=862824)是來源型的測試探索。 其無法探索使用理論、自訂介面卡、自訂特性`#ifdef` 、語句等的測試，因為它們是在執行時間定義的。 需要組建才能準確找到這些測試。 在 Visual Studio 2017 15.6 版及更新版本中，以組件為基礎的探索 (傳統型探索) 只會在建置之後執行。 這項設定表示當您在編輯時，即時測試探索會盡可能找到更多測試，而組件型探索允許動態定義的測試在組建之後顯示。 即時測試探索會改善回應性，但仍然可讓您在建置後取得完整且精確的結果。
 
 ## <a name="test-explorer--plus-symbol"></a>測試總管 '+' (加號) 符號
 

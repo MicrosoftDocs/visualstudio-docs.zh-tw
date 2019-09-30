@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9a74f6313f90a31d43cf39443b1c44d78f0628f8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: eb6d28e15870907034479e698ba8e7464f4f5159
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62545185"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71232729"
 ---
 # <a name="ca2115-call-gckeepalive-when-using-native-resources"></a>CA2115:使用原生資源時必須呼叫 GC.KeepAlive
 
@@ -28,38 +28,38 @@ ms.locfileid: "62545185"
 |TypeName|CallGCKeepAliveWhenUsingNativeResources|
 |CheckId|CA2115|
 |分類|Microsoft.Security|
-|中斷變更|非中斷|
+|重大變更|不中斷|
 
 ## <a name="cause"></a>原因
 
-在具有完成項的型別中宣告的方法參考<xref:System.IntPtr?displayProperty=fullName>或是<xref:System.UIntPtr?displayProperty=fullName>欄位中，但不會呼叫<xref:System.GC.KeepAlive%2A?displayProperty=fullName>。
+在具有完成項的類型中宣告的方法會<xref:System.IntPtr?displayProperty=fullName>參考<xref:System.UIntPtr?displayProperty=fullName>或欄位，但不會<xref:System.GC.KeepAlive%2A?displayProperty=fullName>呼叫。
 
 ## <a name="rule-description"></a>規則描述
 
-如果 managed 程式碼中有多個參考，記憶體回收會終結物件。 未受管理的物件的參考不會防止記憶體回收。 此規則所偵測的錯誤，可能是因為在 Unmanaged 程式碼仍在使用 Unmanaged 資源時，就完成 Unmanaged 資源所致。
+如果在 managed 程式碼中沒有其他參考，則垃圾收集會完成物件。 物件的非受控參考不會防止垃圾收集。 此規則所偵測的錯誤，可能是因為在 Unmanaged 程式碼仍在使用 Unmanaged 資源時，就完成 Unmanaged 資源所致。
 
-這項規則假設<xref:System.IntPtr>和<xref:System.UIntPtr>欄位儲存 unmanaged 資源的指標。 因為完成項的用途是釋放 unmanaged 的資源，此規則會假設完成項會釋放指標欄位所指向的 unmanaged 的資源。 這項規則也會假設方法參考傳遞至 unmanaged 程式碼的 unmanaged 的資源的指標欄位。
+此規則假設和<xref:System.IntPtr> <xref:System.UIntPtr>欄位儲存非受控資源的指標。 因為完成項的目的是要釋放非受控資源，此規則會假設完成項將會釋放指標欄位所指向的非受控資源。 此規則也假設方法正在參考指標欄位，以將非受控資源傳遞給非受控碼。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
 
-若要修正此規則的違規情形，將呼叫加入<xref:System.GC.KeepAlive%2A>方法，並傳遞目前執行個體 (`this`在C#和C++) 做為引數。 位置呼叫程式碼的最後一行之後，物件必須加以保護以免記憶體回收。 若要在呼叫之後立即<xref:System.GC.KeepAlive%2A>，物件一次視為已準備好進行記憶體回收假設沒有受管理的參考它。
+若要修正此規則的違規，請將對的<xref:System.GC.KeepAlive%2A>呼叫新增至方法，並將目前的`this`實例C# （ C++在和中）當做引數傳遞。 將呼叫放在程式碼的最後一行之後，其中物件必須受到保護，以防止垃圾收集。 在呼叫<xref:System.GC.KeepAlive%2A>之後，物件會再次被視為已準備好進行垃圾收集，假設沒有受控參考。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
 
-此規則可讓一些可能會導致誤判的假設。 您可以安全地隱藏此規則的警告，如果：
+此規則會做出一些假設，可能會導致誤報。 您可以在下列情況中，安全地隱藏此規則中的警告：
 
-- 完成項不會釋放的內容<xref:System.IntPtr>或<xref:System.UIntPtr>方法所參考的欄位。
+- 完成項不會釋放方法所參考之<xref:System.IntPtr>或<xref:System.UIntPtr>欄位的內容。
 
-- 此方法不會通過<xref:System.IntPtr>或<xref:System.UIntPtr>欄位至 unmanaged 程式碼。
+- 方法不會將<xref:System.IntPtr>或<xref:System.UIntPtr>欄位傳遞至未受管理的程式碼。
 
-請仔細檢閱其他訊息之前排除它們。 此規則會偵測難以重現及偵錯的錯誤。
+請仔細檢查其他訊息，再將它們排除。 此規則會偵測不容易重現和 debug 的錯誤。
 
 ## <a name="example"></a>範例
 
-在下列範例中，`BadMethod`不包含呼叫`GC.KeepAlive`且因此違反此規則。 `GoodMethod` 包含已更正的程式碼。
+在下列範例中， `BadMethod`不包含對的`GC.KeepAlive`呼叫，因此會違反規則。 `GoodMethod`包含已更正的程式碼。
 
 > [!NOTE]
-> 這個範例是虛擬程式碼。 雖然程式碼會編譯並執行，因為尚未建立或釋放 unmanaged 的資源，並不會引發警告。
+> 這個範例是虛擬程式碼。 雖然程式碼會進行編譯和執行，但不會引發警告，因為不會建立或釋放非受控資源。
 
 [!code-csharp[FxCop.Security.IntptrAndFinalize#1](../code-quality/codesnippet/CSharp/ca2115-call-gc-keepalive-when-using-native-resources_1.cs)]
 

@@ -1,5 +1,5 @@
 - name: 分析文件
-  href: index.md
+  href: index.yml
 - name: 總覽
   href: profiling-overview.md
 - name: 快速入門

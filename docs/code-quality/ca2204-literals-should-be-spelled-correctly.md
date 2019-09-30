@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 82146c2ac997a0202c20e15492becb89a293f427
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6763fd9f8999bd590511026f6571db6a747c43bc
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62541919"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71231849"
 ---
 # <a name="ca2204-literals-should-be-spelled-correctly"></a>CA2204:常值必須使用正確的拼字
 
@@ -28,27 +28,27 @@ ms.locfileid: "62541919"
 |TypeName|LiteralsShouldBeSpelledCorrectly|
 |CheckId|CA2204|
 |分類|Microsoft.Usage|
-|中斷變更|非中斷|
+|重大變更|不中斷|
 
 ## <a name="cause"></a>原因
 
-常值的字串會傳遞做為引數是可當地語系化的參數，或可當地語系化的屬性，以及字串包含一或多個 Microsoft 拼字檢查程式庫無法辨識的字。
+常值字串會當做可當地語系化參數的引數，或當地語系化的屬性傳遞，而此字串包含一或多個 Microsoft 拼寫檢查程式庫無法辨識的文字。
 
 ## <a name="rule-description"></a>規則描述
 
-此規則會檢查常值字串做為值傳遞至參數或屬性，當一或多個下列情況為 true:
+當下列一或多個情況成立時，此規則會檢查當做值傳遞給參數或屬性的常值字串：
 
-- <xref:System.ComponentModel.LocalizableAttribute>參數或屬性的屬性設定為 true。
+- 參數或屬性的屬性設定為true。<xref:System.ComponentModel.LocalizableAttribute>
 
-- 參數或屬性名稱中包含 「 文字 」、 「 訊息 」，或 「 標題 」。
+- 參數或屬性名稱包含 "Text"、"Message" 或 "Caption"。
 
-- 傳遞至字串變數的名稱<xref:System.Console.Write%2A>或<xref:System.Console.WriteLine>方法為"value"format"。
+- 傳遞至<xref:System.Console.Write%2A>或<xref:System.Console.WriteLine>方法的字串變數名稱可以是 "value" 或 "format"。
 
-此規則會將常值字串剖析成單字、 token 化複合字，並檢查每個字組 」 或 「 語彙基元的拼字。 如需剖析演算法的詳細資訊，請參閱[CA1704:識別項應該使用正確的拼字](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)。
+此規則會將常值字串剖析成單字、token 化複合字組，並檢查每個單字或標記的拼寫。 如需剖析演算法的詳細資訊， [請參閱 CA1704：識別碼應該正確](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)拼寫。
 
 ## <a name="language"></a>語言
 
-拼字檢查工具目前會檢查只會針對英文版為基礎的文化特性的字典。 您可以加入，以變更您的專案在專案檔中的文化特性**CodeAnalysisCulture**項目。
+「拼寫檢查」目前只會針對以英文為基礎的文化特性字典進行檢查。 您可以藉由新增**CodeAnalysisCulture**元素，在專案檔中變更專案的文化特性。
 
 例如：
 
@@ -59,17 +59,17 @@ ms.locfileid: "62541919"
 ```
 
 > [!IMPORTANT]
-> 如果您將文化特性設定為以英文為基礎的文化特性以外的任何項目時，此程式碼分析規則是以無訊息模式停用。
+> 如果您將文化特性設定為英文文化特性以外的任何專案，則會以無訊息模式停用此程式碼分析規則。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
 
-若要修正此規則的違規情形，更正這個字的拼字，或將該字加入至自訂字典。 如需如何使用自訂字典的詳細資訊，請參閱[How to:自訂程式碼分析字典](../code-quality/how-to-customize-the-code-analysis-dictionary.md)。
+若要修正此規則的違規情形，請更正單字的拼寫，或將此單字加入自訂字典。 如需如何使用自訂字典的詳細資訊[，請參閱如何：自訂程式碼分析](../code-quality/how-to-customize-the-code-analysis-dictionary.md)字典。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
 
-請勿隱藏此規則的警告。 正確拼寫的字會減少新的軟體程式庫所需的學習曲線。
+請勿隱藏此規則的警告。 拼寫正確的文字會減少新軟體程式庫所需的學習曲線。
 
-## <a name="related-rules"></a>相關的規則
+## <a name="related-rules"></a>相關規則
 
-- [CA1704:識別項應該使用正確的拼字](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)
-- [CA1703:資源字串應該使用正確的拼字](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)
+- [CA1704識別碼應該正確拼寫](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)
+- [CA1703資源字串的拼寫應該正確](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)

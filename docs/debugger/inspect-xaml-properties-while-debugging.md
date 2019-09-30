@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: fdb973718e56279e7bfb04c9d412bcd83410223d
-ms.sourcegitcommit: 0e482cfc15f809b564c3de61646f29ecd7bfcba6
+ms.openlocfilehash: 182c9e37764a247ec24b4b477975ccb7b8811c4b
+ms.sourcegitcommit: 4d2620bee4688fb881e09a07ea4a264b99f0743e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "70987744"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71322540"
 ---
 # <a name="inspect-xaml-properties-while-debugging"></a>在偵錯時檢查 XAML 屬性
 您可以使用 [即時視覺化樹狀結構] 和 [即時屬性總管] 來即時檢視正在執行的 XAML 程式碼。 這些工具提供您執行中之 XAML 應用程式 UI 項目的樹狀檢閱，並且顯示任何您所選取之 UI 項目的執行階段屬性。
@@ -81,7 +81,10 @@ private void button_Click(object sender, RoutedEventArgs e)
 
 回到應用程式視窗並再加入一些項目。 您應該會看到多個清單方塊項目出現在 [即時視覺化樹狀結構] 中。
 
-現在讓我們看看其中一個清單方塊項目的屬性。 選取 [即時視覺化樹狀結構] 中的第一個清單方塊項目，然後按一下工具列上的**顯示屬性**圖示。 應該就會顯示 [即時屬性總管]。 請注意 [內容] 欄位是 "Item1"，且 [背景] 欄位是 **#FFFFFFE0** (淺黃色)。 返回 [即時視覺化樹狀結構] 並選取第二個清單方塊項目。 [即時屬性總管] 應該會顯示 [內容] 欄位是 "Item2"，且 [背景] 欄位是 **#FFD3D3D3** (淺灰色)。
+現在讓我們看看其中一個清單方塊項目的屬性。 選取 [即時視覺化樹狀結構] 中的第一個清單方塊項目，然後按一下工具列上的**顯示屬性**圖示。 應該就會顯示 [即時屬性總管]。 請注意，[**內容**] 欄位是 "Item1"，而 [**背景** > **色彩**] 欄位則是 **#FFFFFFE0**。 返回 [即時視覺化樹狀結構] 並選取第二個清單方塊項目。 [**即時屬性瀏覽器**] 應該會顯示 [**內容**] 欄位是 "Item2"，而 [**背景** > **色彩**] 欄位則是 **#FFD3D3D3**。
+
+> [!NOTE]
+> **即時屬性瀏覽器**中的屬性周圍有一個黃色框線，表示屬性值是透過系結（例如`Color = {BindingExpression}`）所設定。 綠色框線表示此值是使用資源（例如`Color = {StaticResource MyBrush}`）所設定。
 
 XAML 的實際結構有許多您可能不會直接感興趣的項目，如果您不熟悉此程式碼，可能很難在巡覽樹狀結構時找到您要尋找的項目。 因此 [即時視覺化樹狀結構] 有好幾種方式可讓您使用應用程式的 UI 來協助找出您想要檢查的項目。
 

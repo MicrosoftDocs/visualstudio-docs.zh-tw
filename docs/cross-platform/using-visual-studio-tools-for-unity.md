@@ -10,12 +10,12 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 15c4ba33dda8e1e3220d8285e35000061fedd99f
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
-ms.translationtype: HT
+ms.openlocfilehash: 39be02226a46aaa95742caa760e94fe6be4efdf4
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65676720"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71253046"
 ---
 # <a name="use-visual-studio-tools-for-unity"></a>使用 Visual Studio Tools for Unity
 
@@ -194,14 +194,14 @@ Visual Studio Tools for Unity 可讓您使用 Visual Studio 的強大偵錯工�
 
    ![將 DLL 的目標 Framework 設定為 Unity 架構。](../cross-platform/media/vstu_debugging_dll_target_framework.png "vstu_debugging_dll_target_framework")
 
-3. 將 DLL 複製到 Unity 專案的 Assets 資料夾。 在 Unity 中，資產是與 Unity 應用程式一起封裝及部署的檔案，以便可以在執行階段載入。 由於 DLL 是在執行階段連結，因此您必須將 DLL 部署為資產。 為了將 DLL 部署為資產，Unity Editor 會要求將 DLL 放在 Unity 專案的 [Assets] 資料夾中。 有兩種方式可讓您完成這個步驟：
+3. 將 DLL 複製到 Unity 專案的 Assets 資料夾。 在 Unity 中，資產是與 Unity 應用程式一起封裝及部署的檔案，以便可以在執行階段載入。 由於 Dll 會在執行時間連結，因此 Dll 必須部署為資產。 為了將 DLL 部署為資產，Unity Editor 會要求將 DLL 放在 Unity 專案的 [Assets] 資料夾中。 有兩種方式可讓您完成這個步驟：
 
    - 修改 DLL 專案的組建設定，以包含將輸出 DLL 和 PDB 檔案從其輸出資料夾複製到 Unity 專案之 [Assets] 資料夾的建置後工作。
 
    - 修改 DLL 專案的組建設定，將其輸出資料夾設定為 Unity 專案的 [Assets] 資料夾。 DLL 和 PDB 檔案都會被放在 [Assets] 資料夾中。
 
    由於 PDB 檔案包含 DLL 的偵錯符號，並將 DLL 程式碼對應至其原始程式碼形式，因此偵錯時會需要這些檔案。 如果您是以舊版執行階段為目標，Visual Studio Tools for Unity 將會使用 DLL 和 PDB 中的資訊來建立 DLL.MDB 檔案，這是舊版 Unity 指令碼引擎所使用的偵錯符號格式。 如果您是以新的執行階段為目標，並使用可攜式 PDB，則 Visual Studio Tools for Unity 將不會嘗試執行任何的符號轉換，因為新的 Unity 執行階段是以原生方式使用可攜式 PDB。
-   
+
    有關產生 PDB 的更多資訊，請參閱[此處](https://docs.microsoft.com/visualstudio/debugger/how-to-set-debug-and-release-configurations)。 如果您是以新的執行階段為目標，請確定 [偵錯資訊] 設定為 [可攜式]，以便正確地產生可攜式 PDB。 如果您是以舊版執行階段為目標，則需要使用 [完整]。
 
 4. 為程式碼偵錯。 您現在可以連同 Unity 專案的原始程式碼一起為 DLL 原始程式碼偵錯，並使用您慣用的所有偵錯功能，例如中斷點和逐步執行程式碼。

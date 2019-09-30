@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aedc785a86966cf6425dfe35c5925efc9b78a509
-ms.sourcegitcommit: b02c40c1ba193e38b5ace14590a6d57590d3270f
+ms.openlocfilehash: ff5e70d4ec2831df18ce1b100e70730e2978201e
+ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71012609"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71186565"
 ---
 # <a name="write-and-debug-running-xaml-code-with-xaml-hot-reload-in-visual-studio"></a>在 Visual Studio 中使用 XAML 熱重載來撰寫和偵測執行中的 XAML 程式碼
 
@@ -38,7 +38,7 @@ XAML 熱重載可讓您在應用程式執行時變更 XAML 程式碼，以協助
 
 下圖顯示如何使用 [即時視覺化樹狀] 來開啟您的原始程式碼，然後按 [XAML 熱重載] 來變更按鈕文字和按鈕色彩。
 
-![XAML 熱重載](../debugger/media/xaml-hot-reload-using.gif)
+![XAML 熱重新載入](../debugger/media/xaml-hot-reload-using.gif)
 
 > [!NOTE]
 > 目前只有當您在已附加偵錯工具的 Visual Studio 或 Blend for Visual Studio 中執行應用程式時，才支援 Visual Studio XAML 熱重載（**F5**或**開始進行調試**程式）。 除非您[手動設定環境變數](xaml-hot-reload-troubleshooting.md#verify-that-you-use-start-debugging-rather-than-attach-to-process)，否則無法使用 [[附加至進程] 來](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)啟用此體驗。
@@ -50,7 +50,7 @@ XAML 熱重載可讓您在應用程式執行時變更 XAML 程式碼，以協助
 |限制|WPF|UWP|注意|
 |-|-|-|-|
 |在應用程式執行時將事件接線至控制項|不支援|不支援|請參閱錯誤：*確定事件失敗*。 請注意，在 WPF 中，您可以參考現有的事件處理常式。 在 UWP 應用程式中，不支援參考現有的事件處理常式。|
-|在資源字典中建立資源物件，例如在應用程式的頁面/視窗或*應用程式中。 xaml*|從 Visual Studio 2019 Update 2 開始支援|支援|範例：將`SolidColorBrush`加入至資源字典以當做使用`StaticResource`。</br>注意:使用 XAML 熱重載時，可以套用/使用靜態資源、樣式轉換器，以及寫入至資源字典的其他元素。 不支援建立資源。</br> 變更資源字典`Source`屬性。|
+|在資源字典中建立資源物件，例如在應用程式的頁面/視窗或*應用程式中。 xaml*|從 Visual Studio 2019 Update 2 開始支援|支援|範例：將`SolidColorBrush`加入至資源字典以當做使用`StaticResource`。</br>注意：使用 XAML 熱重載時，可以套用/使用靜態資源、樣式轉換器，以及寫入至資源字典的其他元素。 不支援建立資源。</br> 變更資源字典`Source`屬性。|
 |當應用程式正在執行時，將新的控制項、類別、視窗或其他檔案加入至您的專案|不支援|不支援|None|
 |管理 NuGet 套件（新增/移除/更新套件）|不支援|不支援|None|
 |變更使用 {x:Bind} 標記延伸的資料系結|N/A|從 Visual Studio 2019 開始支援|這需要 Windows 10 版本1809（組建10.0.17763）。 Visual Studio 2017 或先前版本中不支援。|
@@ -68,3 +68,4 @@ XAML 熱重載可讓您在應用程式執行時變更 XAML 程式碼，以協助
 
 * [疑難排解 XAML 熱重載](xaml-hot-reload-troubleshooting.md)
 * [適用于 Xamarin 的 XAML 熱重載](/xamarin/xamarin-forms/xaml/hot-reload)
+* [編輯後繼續 (Visual C#)](../debugger/edit-and-continue-visual-csharp.md)

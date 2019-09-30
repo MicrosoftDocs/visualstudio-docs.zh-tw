@@ -5,20 +5,17 @@ ms.assetid: 3071d6df-2b2f-4e95-ab68-bef727323136
 ms.topic: tutorial
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
-ms.devlang:
-- csharp
-- vb
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 803bd02b43b290cba4a3afe7bc7040e0dee1e2eb
-ms.sourcegitcommit: 6993bcb0d2b0067b1b7b7899bfba52c31c70b7e7
-ms.translationtype: HT
+ms.openlocfilehash: 7d9a525ef9da6583a37d5e4d26bfec7d0558cde4
+ms.sourcegitcommit: 6eed0372976c0167b9a6d42ba443f9a474b8bb91
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71095340"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71118662"
 ---
 # <a name="tutorial-1-create-a-picture-viewer"></a>教學課程 1：建立圖片檢視器
 
@@ -49,7 +46,7 @@ ms.locfileid: "71095340"
 
 ## <a name="tutorial-links"></a>教學課程的連結
 
-|標題|說明|
+|標題|描述|
 |-----------|-----------------|
 |[步驟 1：建立 Windows Forms 應用程式專案](../ide/step-1-create-a-windows-forms-application-project.md)|從建立 Windows Forms 應用程式專案開始。|
 |[步驟 2：執行您的圖片檢視器應用程式](../ide/step-2-run-your-program.md)|執行您在上一個步驟中建立的 Windows Forms 應用程式專案。|

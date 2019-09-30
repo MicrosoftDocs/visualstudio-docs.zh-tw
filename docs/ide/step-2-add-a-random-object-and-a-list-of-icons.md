@@ -4,9 +4,6 @@ ms.date: 11/04/2016
 ms.topic: tutorial
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
-ms.devlang:
-- csharp
-- vb
 dev_langs:
 - CSharp
 - VB
@@ -16,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f1a8a6c6ec1535e36eae5ebc2e8f56282ef03fc
-ms.sourcegitcommit: 541a0556958201ad6626bc8638406ad02640f764
+ms.openlocfilehash: 31058afee1dc9fc0c9f24c773b9bdc3e5d1fb49a
+ms.sourcegitcommit: 6eed0372976c0167b9a6d42ba443f9a474b8bb91
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71079575"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71118955"
 ---
 # <a name="step-2-add-a-random-object-and-a-list-of-icons"></a>步驟 2：新增隨機物件和圖示清單
 在這個步驟中，您會為遊戲建立一組配對符號。 每個符號會加入至表單上 TableLayoutPanel 中的兩個隨機儲存格。 若要這麼做，您必須使用兩個 `new` 陳述式來建立兩個物件。 第一個是 <xref:System.Random> 物件，就像是您用於數學測驗遊戲中的物件。 該物件在這個程式碼中會用來隨機選擇 TableLayoutPanel 中的儲存格。 第二個物件 (您可能不熟悉) 是一個 <xref:System.Collections.Generic.List%601> 物件，用來儲存隨機選擇的符號。

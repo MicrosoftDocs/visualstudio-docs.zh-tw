@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b5fb70baa17bee484dc3c31d7c6ce9b302019403
-ms.sourcegitcommit: 2bbcba305fd0f8800fd3d9aa16f7647ee27f3a4b
+ms.openlocfilehash: 7c7fa7756383426f990e18225995a768de9fefbd
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/17/2019
-ms.locfileid: "68300606"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71231730"
 ---
 # <a name="ca2202-do-not-dispose-objects-multiple-times"></a>CA2202:不要多次處置物件的 Dispose 方法
 
@@ -28,7 +28,7 @@ ms.locfileid: "68300606"
 |TypeName|DoNotDisposeObjectsMultipleTimes|
 |CheckId|CA2202|
 |分類|Microsoft.Usage|
-|中斷變更|非中斷|
+|重大變更|不中斷|
 
 ## <a name="cause"></a>原因
 

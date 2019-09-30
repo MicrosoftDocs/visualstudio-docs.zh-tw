@@ -6,7 +6,7 @@ keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.date: 05/22/2019
+ms.date: 09/23/2019
 ms.topic: reference
 helpviewer_keywords:
 - workload ID, Visual Studio
@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 58494fc3-12de-4761-bd4a-74b54f72bfb3
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: f415281dc465166fabdcc2886cc56a8111a578cd
-ms.sourcegitcommit: cd21b38eefdea2cdefb53e68e7a30b868e78dd6b
-ms.translationtype: HT
+ms.openlocfilehash: b4ea7fc28569e66c3e58c32be201a8f79c265641
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/22/2019
-ms.locfileid: "66037552"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71211408"
 ---
 # <a name="visual-studio-community-component-directory"></a>Visual Studio Community 元件目錄
 

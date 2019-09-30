@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: c91de575abe8b19a5d8f6fca864e2bc452da7cb2
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 47a934a6e35296927eea64465ff8e7007219bec5
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69547653"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71236088"
 ---
 # <a name="ca1028-enum-storage-should-be-int32"></a>CA1028:列舉儲存區應該是 Int32
 
@@ -30,36 +30,36 @@ ms.locfileid: "69547653"
 |-|-|
 |TypeName|EnumStorageShouldBeInt32|
 |CheckId|CA1028|
-|Category|Microsoft.Design|
-|中斷變更|中斷|
+|分類|Microsoft.Design|
+|重大變更|中斷|
 
 ## <a name="cause"></a>原因
 
 列舉的基礎類型不<xref:System.Int32?displayProperty=fullName>是。
 
-根據預設, 此規則只會查看公用列舉, 但這是[可](#configurability)設定的。
+根據預設，此規則只會查看公用列舉，但這是[可](#configurability)設定的。
 
 ## <a name="rule-description"></a>規則描述
 
-列舉類型是一種實值類型 (Value Type)，用以定義一組相關的具名常數。 根據預設, <xref:System.Int32?displayProperty=fullName>資料類型會用來儲存常數值。 雖然您可以變更此基礎類型, 但在大部分的情況下並不需要或不建議這麼做。 使用小於的資料類型<xref:System.Int32>, 就不會有顯著的效能提升。 如果您無法使用預設資料類型, 您應該使用其中一個通用語言系統 (CLS) <xref:System.Byte>相容整數類型、 <xref:System.Int16> <xref:System.Int32>、、或<xref:System.Int64> , 以確保列舉的所有值都可以在中表示符合 CLS 標準的程式設計語言。
+列舉類型是一種實值類型 (Value Type)，用以定義一組相關的具名常數。 根據預設， <xref:System.Int32?displayProperty=fullName>資料類型會用來儲存常數值。 雖然您可以變更此基礎類型，但在大部分的情況下並不需要或不建議這麼做。 使用小於的資料類型<xref:System.Int32>，就不會有顯著的效能提升。 如果您無法使用預設資料類型，您應該使用其中一個通用語言系統（CLS） <xref:System.Byte>相容整數類型、 <xref:System.Int16> <xref:System.Int32>、、或<xref:System.Int64> ，以確保列舉的所有值都可以在中表示符合 CLS 標準的程式設計語言。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
 
-若要修正此規則的違規, 除非存在大小或相容性問題, <xref:System.Int32>請使用。 對於不夠大<xref:System.Int32>而無法保存值的情況, 請使用。 <xref:System.Int64> 如果回溯相容性需要較小的資料類型<xref:System.Byte> , <xref:System.Int16>請使用或。
+若要修正此規則的違規，除非存在大小或相容性問題， <xref:System.Int32>請使用。 對於不夠大<xref:System.Int32>而無法保存值的情況，請使用。 <xref:System.Int64> 如果回溯相容性需要較小的資料類型<xref:System.Byte> ， <xref:System.Int16>請使用或。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
 
-只有在回溯相容性問題需要時, 才隱藏此規則的警告。 在應用程式中, 如果無法符合此規則, 通常不會造成問題。 在需要語言互通性的程式庫中, 如果不符合此規則, 可能會對使用者造成不良影響。
+只有在回溯相容性問題需要時，才隱藏此規則的警告。 在應用程式中，如果無法符合此規則，通常不會造成問題。 在需要語言互通性的程式庫中，如果不符合此規則，可能會對使用者造成不良影響。
 
 ## <a name="configurability"></a>可設定性
 
-如果您是從[FxCop 分析器](install-fxcop-analyzers.md)執行此規則 (而不是使用舊版分析), 您可以根據其存取範圍, 設定程式碼基底中的哪些部分來執行此規則。 例如, 若要指定規則只針對非公用 API 介面執行, 請將下列機碼值組新增至專案中的 editorconfig 檔案:
+如果您是從[FxCop 分析器](install-fxcop-analyzers.md)執行此規則（而不是使用舊版分析），您可以根據其存取範圍，設定程式碼基底中的哪些部分來執行此規則。 例如，若要指定規則只針對非公用 API 介面執行，請將下列機碼值組新增至專案中的 editorconfig 檔案：
 
 ```ini
 dotnet_code_quality.ca1028.api_surface = private, internal
 ```
 
-您可以只針對此規則、所有規則或此類別中的所有規則 (設計) 設定此選項。 如需詳細資訊, 請參閱[設定 FxCop 分析器](configure-fxcop-analyzers.md)。
+您可以只針對此規則、所有規則或此類別中的所有規則（設計）設定此選項。 如需詳細資訊，請參閱[設定 FxCop 分析器](configure-fxcop-analyzers.md)。
 
 ## <a name="example-of-a-violation"></a>違規的範例
 
@@ -70,7 +70,7 @@ dotnet_code_quality.ca1028.api_surface = private, internal
 
 ## <a name="example-of-how-to-fix"></a>如何修正的範例
 
-下列範例會將基礎資料類型變更為, 藉以<xref:System.Int32>修正先前的違規。
+下列範例會將基礎資料類型變更為，藉以<xref:System.Int32>修正先前的違規。
 
 [!code-csharp[FxCop.Design.EnumIntegralTypeFixed#1](../code-quality/codesnippet/CSharp/ca1028-enum-storage-should-be-int32_2.cs)]
 [!code-vb[FxCop.Design.EnumIntegralTypeFixed#1](../code-quality/codesnippet/VisualBasic/ca1028-enum-storage-should-be-int32_2.vb)]

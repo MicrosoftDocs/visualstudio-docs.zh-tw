@@ -4,9 +4,6 @@ ms.date: 11/04/2016
 ms.topic: tutorial
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
-ms.devlang:
-- csharp
-- vb
 dev_langs:
 - CSharp
 - VB
@@ -16,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 01eba06b569d48a6ab49174183438fcea96cb5c7
-ms.sourcegitcommit: 541a0556958201ad6626bc8638406ad02640f764
+ms.openlocfilehash: d0216d778278f02f7fc63630f4ff6ce90c755e3c
+ms.sourcegitcommit: 6eed0372976c0167b9a6d42ba443f9a474b8bb91
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71079305"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71118654"
 ---
 # <a name="step-7-keep-pairs-visible"></a>步驟 7：讓配對保持可見
 只要玩家僅選擇不相符的圖示配對，遊戲都可以運作良好。 但是，請考慮當玩家選擇相符的配對時會發生的情況。 遊戲不用藉由啟動計時器使圖示消失 (使用 <xref:System.Windows.Forms.Timer.Start> 方法)，而是應該本身進行重設，如此它就不會再使用 `firstClicked` 和 `secondClicked` 參考變數來追蹤任何標籤，但不需要重設已選擇之兩個標籤的色彩。

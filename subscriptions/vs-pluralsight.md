@@ -6,12 +6,12 @@ manager: lank
 ms.date: 08/02/2019
 ms.topic: conceptual
 description: 了解有關隨附於所選 Visual Studio 訂用帳戶的 Pluralsight 訓練課程訂用帳戶。
-ms.openlocfilehash: 897790684420c35d173f1d8144f735815ca4034f
-ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
-ms.translationtype: HT
+ms.openlocfilehash: 25a699f0e97f88fefaaf5b62f752ef579c0cd736
+ms.sourcegitcommit: 689ba54ea14257d13031de881f5d4fe937a36f56
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68787649"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71342369"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶中的 Pluralsight 訓練課程權益
 
@@ -22,7 +22,7 @@ ms.locfileid: "68787649"
  根據所擁有的訂閱類型，並非所有先前使用透過 Visual Studio 訂閱提供之 Pluralsight 訂閱的「訂閱者」，都將能夠兌換新的 Pluralsight 權益供應項目。 如果您不符合兌換額外 Pluralsight 訓練課程權益的資格，則當您嘗試在 Pluralsight 網站啟用權益時，將會收到通知。
 
 ## <a name="activation-steps"></a>啟用步驟
-1. 若要啟用您的訂用帳戶，請連線到 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)，並按一下 Pluralsight 權益磚上的 [取得代碼]  連結 (位於 [專業開發] 區段)。
+1. 若要啟用您的訂用帳戶，請連線到 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)，並按一下 Pluralsight 權益磚上的 [取得代碼] 連結 (位於 [專業開發] 區段)。
    > [!div class="mx-imgBorder"]
    > ![Pluralsight 權益磚](_img/vs-pluralsight/vs-pluralsight-3month-tile.png)
    >
@@ -31,12 +31,12 @@ ms.locfileid: "68787649"
    >
    > **「請注意： 如果您先前透過 Visual Studio 訂用帳戶啟用其他 Pluralsight 供應項目，此代碼可能無法讓您建立新的 Pluralsight 帳戶。」**
 
-2. 您會收到已成功擷取優待券代碼的通知。  按一下 [啟用]  。
+2. 您會收到已成功擷取優待券代碼的通知。  按一下 **[啟用]** 。
 
 3. 系統會將您重新導向至 Visual Studio 訂閱隨附的 Pluralsight 權益頁面。
    - 在表單中提供要求的連絡資訊
    - 按一下核取方塊，接受使用條款和隱私權原則
-   - 按一下 [I agree, activate benefit] (我同意，啟用權益)  。
+   - 按一下 [I agree, activate benefit] (我同意，啟用權益)。
    > [!div class="mx-imgBorder"]
    > ![Pluralsight 啟用您的權益](_img/vs-pluralsight/vs-pluralsight-create-account.png)
 
@@ -46,11 +46,9 @@ ms.locfileid: "68787649"
    > 如果您的帳戶不符合兌換新供應項目的資格，您收到的電子郵件將會說明由於不符合資格，因此無法建立您的帳戶。  它也會包含可協助您連絡 Pluralsight 支援小組的資訊，該小組可回答您對帳戶可能有的任何疑問。
    
 
-6. 一旦成功建立您的帳戶，您會收到一封電子郵件，其中包含您的使用者名稱，並要求您建立密碼。  請提供您的密碼，再次輸入加以確認，然後按一下 [Log in to Pluralsight (登入 Pluralsight)]  。
-   > [!div class="mx-imgBorder"]
-   > ![Pluralsight 權益歡迎電子郵件](_img/vs-pluralsight/vs-pluralsight-welcome-email.png)
+6. 成功建立您的帳戶之後，您收到的電子郵件將會包含您的使用者名稱，並要求您建立密碼。  請提供您的密碼，再次輸入加以確認，然後按一下 [Log in to Pluralsight (登入 Pluralsight)]。
 
-7. 輸入歡迎電子郵件中所提供的使用者名稱，以及您剛才建立的密碼，然後按一下 [Sign in (登入)]  。
+7. 輸入歡迎電子郵件中所提供的使用者名稱，以及您剛才建立的密碼，然後按一下 [Sign in (登入)]。
 
 8. 就這麼容易！  您現在準備好要開始學習數以千計的 Pluralsight 課程！
 
@@ -98,4 +96,4 @@ ms.locfileid: "68787649"
 - 是否有關於 Visual Studio IDE、Azure DevOps Services 或其他 Visual Studio 產品或服務的問題？  前往 [Visual Studio 支援](https://visualstudio.microsoft.com/support/)
 
 ## <a name="next-steps"></a>後續步驟
-一旦您的帳戶建立完成，即準備好開始訓練課程。  請前往 [https://www.pluralsight.com](http://www.pluralsight.com)，然後點選頁面右上角的 [登入]  開始新的課程，或返回已在進行中的課程。
+一旦您的帳戶建立完成，即準備好開始訓練課程。  請前往 [https://www.pluralsight.com](http://www.pluralsight.com)，然後點選頁面右上角的 [登入] 開始新的課程，或返回已在進行中的課程。

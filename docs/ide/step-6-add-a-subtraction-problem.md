@@ -4,9 +4,6 @@ ms.date: 11/04/2016
 ms.topic: tutorial
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
-ms.devlang:
-- csharp
-- vb
 dev_langs:
 - CSharp
 - VB
@@ -16,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c15bc7b3f1312d588699758d9be3e969d2db052
-ms.sourcegitcommit: 541a0556958201ad6626bc8638406ad02640f764
+ms.openlocfilehash: 47932e8a647cb9a5ae555de09778fcd67da397e2
+ms.sourcegitcommit: 6eed0372976c0167b9a6d42ba443f9a474b8bb91
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71079386"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71118729"
 ---
 # <a name="step-6-add-a-subtraction-problem"></a>步驟 6：新增減法問題
 在本教學課程的第六個部分中，您將加入減法問題並學習如何執行下列工作：
@@ -66,12 +63,12 @@ ms.locfileid: "71079386"
      您可以透過多種方式呼叫 Random 類別的 `Next()` 方法，也就是您在本教學課程前段中命名為 "randomizer" 的方法。 能夠以多種方式呼叫的方法稱為「多載」(Overload)，您可以使用 IntelliSense 來了解這些方法。 再看一次 `Next()` 方法的 [IntelliSense] 視窗工具提示。
 
      ![IntelliSense 視窗工具提示](../ide/media/express_overloads.png)<br/>
-***IntelliSense****視窗工具提示*
+***IntelliSense*** *視窗工具提示*
 
      工具提示會顯示 [(+ 2 多載)]，也就是說，您可以透過另外兩種方式呼叫 `Next()` 方法。 多載包含不同數目或類型的引數，因此彼此之間的運作方式會稍有不同。 例如，某個方法可能會接受單一整數引數，且其中一個多載可能會接受一個整數和一個字串。 您可以依據需要的功能選擇正確的多載。 當您將程式碼新增至 `StartTheQuiz()` 方法時，只要輸入 `randomizer.Next(`，[IntelliSense] 視窗就會顯示詳細資訊。 若要循環瀏覽這些多載，請選擇**向上鍵**和**向下鍵**，如下圖所示：
 
      ![IntelliSense 中 Next&#40;&#41; 方法的多載](../ide/media/express_nextoverload.png)<br/>
-*的*多載***下一個（）****中的方法****IntelliSense***
+*的* 多載 ***下一個（）*** *中的方法* ***IntelliSense***
 
      在這個案例中，您想要選擇最後一個多載，因為這樣就可以指定最小值和最大值。
 
@@ -92,7 +89,7 @@ ms.locfileid: "71079386"
      您的程式包括減法問題，如下圖所示：
 
      ![包含減法問題的數學測驗](../ide/media/express_addsubtract.png)<br/>
-***數學測驗****有減法問題*
+***數學測驗*** *有減法問題*
 
 ## <a name="to-continue-or-review"></a>若要繼續或檢視
 

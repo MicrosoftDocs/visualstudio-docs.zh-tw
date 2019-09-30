@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f6f40308255e0496b2bcccddf4299e83ea93100
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: e9582fb6bbdbda8aefbb60e2c69d16380eec3dff
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68922044"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71234749"
 ---
 # <a name="ca1411-com-registration-methods-should-not-be-visible"></a>CA1411:COM 註冊方法不應該為可見的
 
@@ -31,17 +31,17 @@ ms.locfileid: "68922044"
 |TypeName|ComRegistrationMethodsShouldNotBeVisible|
 |CheckId|CA1411|
 |分類|Microsoft.Interoperability|
-|中斷變更|中斷|
+|重大變更|中斷|
 
 ## <a name="cause"></a>原因
 
 <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute?displayProperty=fullName> 以<xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute?displayProperty=fullName>或屬性標記的方法會在外部顯示。
 
 ## <a name="rule-description"></a>規則描述
-以元件物件模型 (COM) 註冊元件時, 會將專案加入至元件中每個 COM 可見類型的登錄。 標記<xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute>為和<xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute>屬性的方法會分別在註冊和取消註冊程式期間呼叫, 以執行登錄/取消註冊這些類型的特定使用者程式碼。 這段程式碼不應該在這些進程之外呼叫。
+以元件物件模型（COM）註冊元件時，會將專案加入至元件中每個 COM 可見類型的登錄。 標記<xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute>為和<xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute>屬性的方法會分別在註冊和取消註冊程式期間呼叫，以執行登錄/取消註冊這些類型的特定使用者程式碼。 這段程式碼不應該在這些進程之外呼叫。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
-若要修正此規則的違規, 請將方法的存取範圍變更`private`為`internal`或`Friend` ( [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]在中為)。
+若要修正此規則的違規，請將方法的存取範圍變更`private`為`internal`或`Friend` （ [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]在中為）。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
 請勿隱藏此規則的警告。

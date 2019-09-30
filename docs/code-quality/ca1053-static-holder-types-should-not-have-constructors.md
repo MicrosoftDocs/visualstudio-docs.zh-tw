@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fec59e1d683c7867eb1cad9ae4e796a0815200d4
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
+ms.openlocfilehash: 44bdb8c12b48a983b88e6a035fc1522856b306be
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68604779"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71235577"
 ---
 # <a name="ca1053-static-holder-types-should-not-have-default-constructors"></a>CA1053:靜態預留位置類型不應該有預設的構造函式
 
@@ -28,23 +28,23 @@ ms.locfileid: "68604779"
 |TypeName|StaticHolderTypesShouldNotHaveConstructors|
 |CheckId|CA1053|
 |分類|Microsoft.Design|
-|中斷變更|中斷|
+|重大變更|中斷|
 
 > [!NOTE]
-> 規則 CA1053 會結合為[CA1052:靜態預留位置類型在](ca1052-static-holder-types-should-be-sealed.md) [FxCop 分析器](fxcop-analyzers.yml)中應該是密封的。
+> 規則 CA1053 會結合為[CA1052：靜態預留位置類型在](ca1052-static-holder-types-should-be-sealed.md) [FxCop 分析器](fxcop-analyzers.yml)中應該是密封的。
 
 ## <a name="cause"></a>原因
 
-公用或嵌套公用類型只會宣告靜態成員, 而且具有預設的函式。
+公用或嵌套公用類型只會宣告靜態成員，而且具有預設的函式。
 
 ## <a name="rule-description"></a>規則描述
 
-預設的函式是不必要的, 因為呼叫靜態成員不需要類型的實例。 此外, 因為類型沒有非靜態成員, 所以建立實例並不會提供任何類型成員的存取權。
+預設的函式是不必要的，因為呼叫靜態成員不需要類型的實例。 此外，因為類型沒有非靜態成員，所以建立實例並不會提供任何類型成員的存取權。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
 
-若要修正此規則的違規情形, 請移除預設的函式。
+若要修正此規則的違規情形，請移除預設的函式。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
 
-請勿隱藏此規則的警告。 預設的函式存在時, 表示該類型不是靜態類型。
+請勿隱藏此規則的警告。 預設的函式存在時，表示該類型不是靜態類型。

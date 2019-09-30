@@ -1,5 +1,8 @@
 # [Visual Studio for Mac](index.yml)
-# [IDE 導覽](ide-tour.md)
+
+# 快速入門
+## [IDE 導覽](ide-tour.md)
+## [適用於 Windows 使用者的 Visual Studio for Mac](vsmac-for-windows-users.md)
 
 # 安裝
 ## [安裝 Visual Studio 2019 for Mac](installation.md)
@@ -26,7 +29,7 @@
 ### [概觀](managing-references-in-a-project.md)
 ### [逐步解說 - 包括專案的 NuGet 套件](nuget-walkthrough.md)
 ## [管理應用程式資源](managing-app-resources.md)
-## [操作說明：開啟多個解決方案或執行個體](open-multiple-solutions.md)
+## [如何：開啟多個解決方案或執行個體](open-multiple-solutions.md)
 
 # 原始檔編輯器
 ## [編輯器功能](source-editor.md)
@@ -41,7 +44,7 @@
 ## [EditorConfig](editorconfig.md)
 ## [預設鍵盤快速鍵](keyboard-shortcuts.md)
 
-# Debugging
+# 偵錯
 ## [概觀](debugging.md)
 ## [資料視覺效果](data-visualizations.md)
 
@@ -49,7 +52,7 @@
 ## [概觀](compiling-and-building.md)
 ## [建置和清除專案與方案](building-and-cleaning-projects-and-solutions.md)
 ## [建置動作](build-actions.md)
-## [操作說明：設定多個啟始專案](set-startup-projects.md)
+## [如何：設定多個啟始專案](set-startup-projects.md)
 ## [自訂組建系統](customizing-build-system.md)
 ## 組態
 ### [了解組建組態](configurations.md)
@@ -75,25 +78,34 @@
 ### [在 Visual Studio for Mac 中建置 ASP.NET Core 應用程式](building-asp-net-core.md)
 ### [Razor](razor.md)
 ### [JavaScript 和 TypeScript](javascript.md)
+### [launchSettings.json](launch-settings.md)
 ## Azure
 ### [概觀](azure-workload.md)
 ### [Azure Functions 簡介](azure-functions.md)
 ### [教學課程：Azure Functions](azure-functions-lab.md)
-### [連接的服務](connected-services.md)
+### [已連線的服務](connected-services.md)
 ## Docker
 ### [開始使用 Docker](docker-quickstart.md)
 ### [使用 Docker Compose 建立多容器應用程式](docker-multi-container.md)
 
 ## Unity 遊戲開發
 ### [Unity 遊戲開發](unity-tools.md)
-### [設定](setup-vsmac-tools-unity.md)
+### [安裝](setup-vsmac-tools-unity.md)
 ### [Unity 使用者入門](unity-walkthrough.md)
 ### [使用 Unity 工具](using-vsmac-tools-unity.md)
 ### [在 Unity 中使用 .NET 4.x](/visualstudio/cross-platform/unity-scripting-upgrade/?context=visualstudio/mac/context)
 ### [變更記錄](/visualstudio/cross-platform/change-log-visual-studio-tools-for-unity-mac/?context=visualstudio/mac/context)
 ## [使用 Xamarin 開發行動裝置應用程式](/visualstudio/mac/xamarin)
 
-# [協助工具選項](accessibility.md)
+# 協助工具選項
+## [概觀](accessibility.md)
+## [設定 IDE 協助工具選項](accessibility-ide-options.md)
+## macOS 協助工具和功能
+### [使用 macOS 協助工具](accessibility-macos.md)
+### [使用鍵盤瀏覽](accessibility-keyboard.md)
+### [使用 VoiceOver](accessibility-voiceover.md)
+
+# [適用於 Windows 使用者的 Visual Studio for Mac](vsmac-for-windows-users.md)
 
 # 疑難排解
 ## [記錄和例外狀況](troubleshooting.md)

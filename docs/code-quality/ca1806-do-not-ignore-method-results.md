@@ -16,12 +16,12 @@ dev_langs:
 - CSharp
 - VB
 manager: jillfra
-ms.openlocfilehash: 2e68fb6b4c40c165a09ae2631a2ad0a64bf52fbc
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 2bf4833aebdb6a92b9bd05294dd314dc2967738e
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68921548"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71233679"
 ---
 # <a name="ca1806-do-not-ignore-method-results"></a>CA1806:不要忽略方法的結果
 
@@ -30,35 +30,35 @@ ms.locfileid: "68921548"
 |TypeName|DoNotIgnoreMethodResults|
 |CheckId|CA1806|
 |分類|Microsoft.Usage|
-|中斷變更|非中斷|
+|重大變更|不中斷|
 
 ## <a name="cause"></a>原因
 
-此警告有幾個可能的原因:
+此警告有幾個可能的原因：
 
-- 已建立新的物件, 但從未使用過。
+- 已建立新的物件，但從未使用過。
 
-- 會呼叫建立並傳回新字串的方法, 而且永遠不會使用新的字串。
+- 會呼叫建立並傳回新字串的方法，而且永遠不會使用新的字串。
 
-- COM 或 P/Invoke 方法, 會傳回從未使用的 HRESULT 或錯誤碼。 規則描述
+- COM 或 P/Invoke 方法，會傳回從未使用的 HRESULT 或錯誤碼。 規則描述
 
-不需要建立物件, 且未使用物件的相關垃圾收集會降低效能。
+不需要建立物件，且未使用物件的相關垃圾收集會降低效能。
 
-字串是不變的, 而 ToUpper 之類的方法會傳回字串的新實例, 而不是修改呼叫方法中的字串實例。
+字串是不變的，而 ToUpper 之類的方法會傳回字串的新實例，而不是修改呼叫方法中的字串實例。
 
 忽略 HRESULT 或錯誤碼可能會導致錯誤狀況或資源不足的狀況發生非預期的行為。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
-如果方法 A 建立從未使用之 B 物件的新實例, 請將實例當做引數傳遞至另一個方法, 或將實例指派給變數。 如果不需要建立物件, 請移除它。-或-
+如果方法 A 建立從未使用之 B 物件的新實例，請將實例當做引數傳遞至另一個方法，或將實例指派給變數。 如果不需要建立物件，請移除它。-或-
 
-如果方法 A 會呼叫方法 B, 但不會使用方法 B 傳回的新字串實例。 將實例當做引數傳遞至另一個方法, 並將實例指派給變數。 或移除不必要的呼叫。
+如果方法 A 會呼叫方法 B，但不會使用方法 B 傳回的新字串實例。 將實例當做引數傳遞至另一個方法，並將實例指派給變數。 或移除不必要的呼叫。
 
  -或-
 
-如果方法 A 呼叫方法 B, 但未使用方法傳回的 HRESULT 或錯誤碼。 使用條件陳述式中的結果、將結果指派給變數, 或將它當做引數傳遞至另一個方法。
+如果方法 A 呼叫方法 B，但未使用方法傳回的 HRESULT 或錯誤碼。 使用條件陳述式中的結果、將結果指派給變數，或將它當做引數傳遞至另一個方法。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
-除非建立物件的動作有某種用途, 否則請勿隱藏此規則的警告。
+除非建立物件的動作有某種用途，否則請勿隱藏此規則的警告。
 
 ## <a name="example"></a>範例
 下列範例顯示的類別會忽略呼叫字串. Trim 的結果。
@@ -68,7 +68,7 @@ ms.locfileid: "68921548"
 [!code-cpp[FxCop.Usage.DoNotIgnoreMethodResults3#1](../code-quality/codesnippet/CPP/ca1806-do-not-ignore-method-results_1.cpp)]
 
 ## <a name="example"></a>範例
-下列範例會藉由指派字串的結果來修正先前的違規, 並將其傳回給呼叫它的變數。
+下列範例會藉由指派字串的結果來修正先前的違規，並將其傳回給呼叫它的變數。
 
 [!code-csharp[FxCop.Usage.DoNotIgnoreMethodResults4#1](../code-quality/codesnippet/CSharp/ca1806-do-not-ignore-method-results_2.cs)]
 [!code-vb[FxCop.Usage.DoNotIgnoreMethodResults4#1](../code-quality/codesnippet/VisualBasic/ca1806-do-not-ignore-method-results_2.vb)]
