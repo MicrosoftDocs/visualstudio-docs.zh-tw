@@ -1,26 +1,26 @@
 ---
 title: 對 Visual C# 程式碼進行單元測試
-ms.date: 11/04/2016
+ms.date: 09/27/2019
 ms.topic: conceptual
 ms.author: gewarren
+author: gewarren
 manager: jillfra
 ms.workload:
 - uwp
-author: gewarren
-ms.openlocfilehash: dfb0ed5775e011471ba32d4962b0bf25cfcda2b1
-ms.sourcegitcommit: 16175e0cea6af528e9ec76f0b94690faaf1bed30
+ms.openlocfilehash: 0a724ab273401994faeb88ae197966ef538e842a
+ms.sourcegitcommit: 13decf878b33fc0c5d665a88067170c2861b261b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/28/2019
-ms.locfileid: "71481881"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "71681598"
 ---
 # <a name="unit-test-c-code"></a>對 C# 程式碼進行單元測試
 
-本文描述如何在 UWP 應用程式中建立 C# 類別的單元測試。 Rooter 類別會藉由實作計算某數值的平方根估計數的函式，示範微積分中極限理論的模糊記憶。 然後 Maths 應用程式就可以使用這個函式向使用者展現許多可運用數學運算執行的有趣作業。
+本文描述如何在 UWP 應用程式中建立 C# 類別的單元測試。
 
-本文示範如何使用單元測試作為開發工作的第一步。 採用這種方式時，您會先撰寫測試方法，用來驗證要測試之系統中的特定行為，然後撰寫通過測試的程式碼。 依照下列程序的順序進行變更，您就可以反轉策略，先撰寫要測試的程式碼，再撰寫單元測試。
+**Rooter**類別是受測的類別，它會執行函式來計算指定數位之平方根的估計值。
 
-本文還會建立單一 Visual Studio 方案，以及用於單元測試和要測試之 DLL 的個別專案。 您也可以直接在 DLL 專案中包含單元測試，或是針對單元測試和 DLL 建立個別方案。
+本文示範以*測試為導向的開發*。 在這種方法中，您會先撰寫測試來驗證您要測試之系統中的特定行為，然後撰寫通過測試的程式碼。
 
 ## <a name="create-the-solution-and-the-unit-test-project"></a>建立方案和單元測試專案
 
@@ -28,47 +28,17 @@ ms.locfileid: "71481881"
 
 2. 搜尋並選取 [空白應用程式 (通用 Windows)] 專案範本。
 
-3. 將專案命名為 `Maths`。
+3. 將專案命名為**Maths**。
 
-4. 在 [方案總管] 中選擇方案名稱，並從捷徑功能表選擇 [新增]，然後選擇 [新增專案]。
+4. 在**方案總管**中，以滑鼠右鍵按一下方案，然後選擇 [**加入** > **新增專案**]。
 
 5. 搜尋並選取 [單元測試應用程式 (通用 Windows)] 專案範本。
 
-6. 在 Visual Studio 編輯器中開啟 *UnitTest1.cs*。
-
-   ```csharp
-   using System;
-   using System.Collections.Generic;
-   using System.Linq;
-   using System.Text;
-   using Microsoft.VisualStudio.TestTools.UnitTesting;
-   using Maths;
-
-   namespace RooterTests
-   {
-       [TestClass]
-       public class UnitTest1
-
-           [TestMethod]
-           public void TestMethod1()
-           {
-
-           }
-   ```
-
-   請注意：
-
-   - 每一項測試都是使用 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute> 屬性定義。 測試方法必須傳回 void，而且不可以有任何參數。
-
-   - 測試方法必須在以 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute> 屬性裝飾的類別中。
-
-        在測試執行時，會建立每個測試類別的執行個體。 將會以非指定的順序來呼叫測試方法。
-
-   - 您可以定義在每個模組、類別或方法之前和之後叫用的特殊方法。 如需詳細資訊，請參閱[在單元測試中使用 MSTest 架構](../test/using-microsoft-visualstudio-testtools-unittesting-members-in-unit-tests.md)。
+6. 將測試專案命名為**RooterTests**。
 
 ## <a name="verify-that-the-tests-run-in-test-explorer"></a>驗證測試總管中執行的測試
 
-1. 在 *UnitTest1.cs* 檔案的 TestMethod1 中插入一些測試程式碼：
+1. 在*UnitTest.cs*檔案的**TestMethod1**中插入一些測試程式碼：
 
    ```csharp
    [TestMethod]
@@ -78,21 +48,29 @@ ms.locfileid: "71481881"
    }
    ```
 
-   請注意， <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert> 類別提供數個靜態方法，可讓您在測試方法中用來驗證結果。
+   @No__t 0 類別提供數個靜態方法，可讓您用來驗證測試方法中的結果。
 
-2. 選擇 [測試] 功能表上的 [執行]，然後選擇 [全部執行]。
+::: moniker range="vs-2017"
 
-   測試專案隨即建置並執行。 [測試總管] 視窗隨即開啟，而且測試會在 [通過的測試] 底下列出。 視窗底部的 [摘要] 窗格會提供有關所選取測試的其他詳細資料。
+2. 在 [**測試**] 功能表上，選擇 [**執行**> 個] [**所有測試**]。
 
-   ![測試總管](../test/media/ute_cpp_testexplorer_testmethod1.png)
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+2. 在 [**測試**] 功能表上，選擇 [**執行所有測試**]。
+
+::: moniker-end
+
+   測試專案隨即建置並執行。 請耐心等候，因為這可能需要一些時間。 [測試總管] 視窗隨即開啟，而且測試會在 [通過的測試] 底下列出。 視窗底部的 [摘要] 窗格會提供有關所選取測試的其他詳細資料。
 
 ## <a name="add-the-rooter-class-to-the-maths-project"></a>將 Rooter 類別新增至 Maths 專案
 
-1. 在 [方案總管] 中，選擇 **Maths** 專案名稱。 從捷徑功能表中選擇 [新增]，然後選擇 [類別]。
+1. 在**方案總管**中，以滑鼠右鍵按一下**Maths**專案，然後選擇 [**加入** > **類別**]。
 
 2. 將類別檔案命名為 *Rooter.cs*。
 
-3. 將下列程式碼新增至 Rooter 類別 *Rooter.cs* 檔案：
+3. 將下列程式碼新增至**Rooter**類別*Rooter.cs*檔案：
 
    ```csharp
    public Rooter()
@@ -106,23 +84,27 @@ ms.locfileid: "71481881"
    }
    ```
 
-   `Rooter` 類別會宣告建構函式和 `SquareRoot` 評估工具方法。
+   **Rooter**類別會宣告一個函式和**SquareRoot**估計工具方法。 **SquareRoot**方法只是最小的實作為，足以測試測試設定的基本結構。
 
-4. `SquareRoot` 方法只是最簡單的實作，剛好足夠進行測試設定的基本結構測試。
+4. 將 `public` 關鍵字新增至**Rooter**類別宣告，讓測試程式碼可以存取它。
 
-## <a name="couple-the-test-project-to-the-app-project"></a>將測試專案與應用程式專案結合
+   ```csharp
+   public class Rooter
+   ```
 
-1. 將 Maths 應用程式的參考新增至 RooterTests 專案。
+## <a name="add-a-project-reference"></a>新增專案參考
 
-    1. 在 [方案總管] 中選擇 **RooterTests** 專案，然後在捷徑功能表上選擇 [新增參考]。
+1. 將 RooterTests 專案的參考新增至 Maths 應用程式。
 
-    2. 在 [新增參考 - RooterTests] 對話方塊中，展開 [方案] 並選擇 [專案]。 然後選取 **Maths** 項目。
+    1. 在**方案總管**中，以滑鼠右鍵按一下**RooterTests**專案，然後選擇 [**加入** > **參考**]。
+
+    2. 在 [新增參考 - RooterTests] 對話方塊中，展開 [方案] 並選擇 [專案]。 選取 [ **Maths** ] 專案。
 
         ![加入 Maths 專案的參考](../test/media/ute_cs_windows_addreference.png)
 
-2. 將 using 陳述式加入至 *UnitTest1.cs* 檔案：
+2. 將 `using` 語句加入至*UnitTest.cs*檔案：
 
-    1. 開啟 *UnitTest1.cs*。
+    1. 開啟*UnitTest.cs*。
 
     2. 將這個程式碼新增至 `using Microsoft.VisualStudio.TestTools.UnitTesting;` 這一行下方：
 
@@ -130,7 +112,7 @@ ms.locfileid: "71481881"
        using Maths;
        ```
 
-3. 新增使用 Rooter 函式的測試。 將下列程式碼加入至 *UnitTest1.cs*：
+3. 加入使用**Rooter**函數的測試。 將下列程式碼新增至*UnitTest.cs*：
 
    ```csharp
    [TestMethod]
@@ -144,19 +126,35 @@ ms.locfileid: "71481881"
    }
    ```
 
-4. 建置方案。
-
    新測試會出現在 [測試總管] 的 [未執行的測試] 節點中。
 
-5. 在 [測試總管] 中，選擇 [全部執行]。
+4. 若要避免「裝載包含兩個或多個具有相同目的地路徑的檔案」錯誤，請在**方案總管**中，展開**Maths**專案下的 [**屬性**] 節點，然後*刪除 [default.aspx* ] 檔案。
 
-   ![成功的基本測試](../test/media/ute_cpp_testexplorer_basictest.png)
+::: moniker range="vs-2017"
 
-您已經設定測試和程式碼專案，並確認您可以執行在程式碼專案中執行函式的測試。 現在您可以開始撰寫真正的測試和程式碼。
+6. 在 [測試總管] 中，選擇 [全部執行]。
+
+   解決方案組建和測試會執行並通過。
+
+   ![在測試瀏覽器中傳遞的 BasicTest](../test/media/ute_cpp_testexplorer_basictest.png)
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+6. 在 [**測試] Explorer**中，選擇 [**執行所有測試**]。
+
+   解決方案組建和測試會執行並通過。
+
+   ![測試瀏覽器中通過的基本測試](../test/media/vs-2019/test-explorer-uwp-app.png)
+
+::: moniker-end
+
+您已設定測試和應用程式專案，並確認您可以執行可在應用程式專案中呼叫函式的測試。 現在您可以開始撰寫真正的測試和程式碼。
 
 ## <a name="iteratively-augment-the-tests-and-make-them-pass"></a>反覆擴大測試範圍並使其通過
 
-1. 加入新的測試：
+1. 新增名為**RangeTest**的新測試：
 
    ```csharp
    [TestMethod]
@@ -174,20 +172,16 @@ ms.locfileid: "71481881"
    ```
 
    > [!TIP]
-   > 建議您不要變更已通過的測試。 相反地，請加入新的測試，更新程式碼，使測試通過，然後再加入另一個測試，依此類推。
-   >
-   > 當您的使用者變更他們的需求時，請停用已不再正確的測試。 以相同的累加方式，撰寫新的測試，一次使一個測試生效。
+   > 建議您不要變更已通過的測試。 請改為加入新的測試。
 
-2. 在 [測試總管] 中，選擇 [全部執行]。
-
-3. 測試失敗。
+2. 執行**RangeTest**測試並確認它失敗。
 
    ![RangeTest 失敗](../test/media/ute_cpp_testexplorer_rangetest_fail.png)
 
    > [!TIP]
-   > 在您撰寫每一項測試之後立即確認其失敗。 這樣有助於避免撰寫永遠不會失敗的測試這種易犯的錯誤。
+   > 在您撰寫測試之後，請立即執行它來確認它是否失敗。 這樣有助於避免撰寫永遠不會失敗的測試這種易犯的錯誤。
 
-4. 透過測試強化程式碼，讓新的測試都成功。 將 *Rooter.cs* 中的 `SquareRoot` 函式變更如下：
+3. 透過測試強化程式碼，讓新的測試都成功。 將*Rooter.cs*中的**SquareRoot**函數變更為：
 
    ```csharp
    public double SquareRoot(double x)
@@ -204,101 +198,49 @@ ms.locfileid: "71481881"
    }
    ```
 
-5. 建置方案，然後在 [測試總管] 中選擇 [全部執行]。
+::: moniker range="vs-2017"
+
+4. 在 [測試總管] 中，選擇 [全部執行]。
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+4. 在 [**測試] Explorer**中，選擇 [**執行所有測試**]。
+
+::: moniker-end
 
    現在三項測試都會成功。
 
 > [!TIP]
 > 開發程式碼時，一次加入一個測試。 確定所有測試在每次反覆之後都通過。
 
-## <a name="debug-a-failing-test"></a>偵錯失敗的測試
-
-1. 將另一個測試新增至 *UnitTest1.cs*：
-
-    ```csharp
-    // Verify that negative inputs throw an exception.
-    [TestMethod]
-    public void NegativeRangeTest()
-    {
-        string message;
-        Rooter rooter = new Rooter();
-        for (double v = -0.1; v > -3.0; v = v - 0.5)
-        {
-            try
-            {
-                // Should raise an exception:
-                double actual = rooter.SquareRoot(v);
-
-                message = String.Format("No exception for input {0}", v);
-                Assert.Fail(message);
-            }
-            catch (ArgumentOutOfRangeException ex)
-            {
-                continue; // Correct exception.
-            }
-            catch (Exception e)
-            {
-                message = String.Format("Incorrect exception for {0}", v);
-                Assert.Fail(message);
-            }
-        }
-    }
-    ```
-
-2. 在 [測試總管] 中，選擇 [全部執行]。
-
-   測試失敗。 在 [測試總管] 中選擇測試名稱。 失敗的判斷提示會反白顯示。 [測試總管] 的詳細資料窗格中會顯示失敗的訊息。
-
-   ![NegativeRangeTests 失敗](../test/media/ute_cpp_testexplorer_negativerangetest_fail.png)
-
-3. 若要查看測試失敗的原因，請逐步執行函式：
-
-    1. 在 `SquareRoot` 函式的開頭設定中斷點。
-
-    2. 在失敗測試的捷徑功能表上，選擇 [偵錯選取的測試]。
-
-        當在中斷點停止執行時，逐步執行程式碼。
-
-    3. 將程式碼新增至 Rooter 方法以擷取例外狀況：
-
-        ```csharp
-        public double SquareRoot(double x)
-        {
-            if (x < 0.0)
-            {
-                throw new ArgumentOutOfRangeException();
-        }
-        ```
-
-4. 在 [測試總管] 中，選擇 [全部執行] 測試修正過的方法，並確定並未導入迴歸。
-
-現在所有測試都通過了。
-
-![所有測試都成功](../test/media/ute_ult_alltestspass.png)
-
 ## <a name="refactor-the-code"></a>重構程式碼
 
-**簡化 SquareRoot 函式中的主要計算。**
+在本節中，您會重構應用程式和測試程式碼，然後重新執行測試以確定它們仍然通過。
 
-1. 變更結果實作
+### <a name="simplify-the-square-root-estimation"></a>簡化平方根的估計
+
+1. 藉由變更一行程式碼，簡化**SquareRoot**函式中的中央計算，如下所示：
 
     ```csharp
-    // old code
-    //result = result - (result*result - v)/(2*result);
-    // new code
-    result = (result + v/result) / 2.0;
+    // Old code
+    //estimate = estimate - (estimate * estimate - x) / (2 * estimate);
+
+    // New code
+    estimate = (estimate + x/estimate) / 2.0;
     ```
 
-2. 選擇 [全部執行] 測試重構的方法，並確定並未導入迴歸。
+2. 執行所有測試，以確定您尚未導入回歸。 它們都應該通過。
 
 > [!TIP]
 > 一組穩定而良好的單元測試，可確認您並未在變更程式碼時引入錯誤。
 
-**重構測試程式碼以消除重複的程式碼。**
+### <a name="eliminate-duplicated-code"></a>消除重複的程式碼
 
-請注意，`tolerance` 方法會對傳遞至 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert> 方法之 `RangeTest` 變數的分母採用硬式編碼。 如果您打算新增其他使用相同容錯計算的測試，則在多個位置使用硬式編碼值可能導致錯誤。
+**RangeTest**方法會將傳遞給 @no__t 2 方法之*容錯*變數的分母硬式編碼。 如果您打算加入其他使用相同容錯計算的測試，則在多個位置使用硬式編碼的值，會使程式碼更難維護。
 
-1. 將私用方法加入至 Unit1Test 類別以計算容錯值，然後改為呼叫該方法。
+1. 將私用 helper 方法新增至**unittest1.cpp**類別以計算容錯值，然後從**RangeTest**呼叫該方法。
 
     ```csharp
     private double ToleranceHelper(double expected)
@@ -312,16 +254,20 @@ ms.locfileid: "71481881"
     public void RangeTest()
     {
         ...
-        // old code
+        // Old code
         // double tolerance = expected/1000;
-        // new code
+
+        // New code
         double tolerance = ToleranceHelper(expected);
-        Assert.AreEqual(expected, actual, tolerance);
     }
     ...
     ```
 
-2. 選擇 [全部執行] 以測試重構的方法，並確定並未導入錯誤。
+2. 執行**RangeTest**以確保它仍會通過。
 
-> [!NOTE]
-> 如果您將 helper 方法加入測試類別，而不希望該測試類別出現在 [測試總管] 中，請勿將 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute> 屬性加入方法。
+> [!TIP]
+> 如果您將 helper 方法加入至測試類別，而不想讓它出現在 [**測試瀏覽器**] 中，請不要將 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute> 屬性加入至方法。
+
+## <a name="see-also"></a>另請參閱
+
+- [逐步解說：使用 Test Explorer @ no__t 的測試導向開發-0
