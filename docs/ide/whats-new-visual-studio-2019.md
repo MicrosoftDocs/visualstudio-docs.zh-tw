@@ -33,9 +33,9 @@ ms.locfileid: "71211327"
 
 以下是新增功能的概要回顧：
 
-* **[開發](#develop)** ：透過改善的效能、即時程式碼清除及更好的搜尋結果，專注於目標並保持生產力。
-* **[共同作業](#collaborate)** ：透過 Git 優先工作流程、即時編輯和偵錯，以及直接在 Visual Studio 中檢閱程式碼，享受自然的共同作業。
-* **[偵錯](#debug)** ：反白顯示並巡覽至特定值、最佳化記憶體使用，然後自動建立應用程式執行的快照集。
+* **[開發](#develop)**：透過改善的效能、即時程式碼清除及更好的搜尋結果，專注於目標並保持生產力。
+* **[共同作業](#collaborate)**：透過 Git 優先工作流程、即時編輯和偵錯，以及直接在 Visual Studio 中檢閱程式碼，享受自然的共同作業。
+* **[偵錯](#debug)**：反白顯示並巡覽至特定值、最佳化記憶體使用，然後自動建立應用程式執行的快照集。
 
 如需此版本中所有新功能的完整清單，請參閱[版本資訊](/visualstudio/releases/2019/release-notes/)。
 
@@ -55,11 +55,11 @@ ms.locfileid: "71211327"
 
 ### <a name="refactorings"></a>重構
 
-C# 中有許多全新且非常有用的重構，讓您輕鬆就能組織您的程式碼。 它們顯示為燈泡中的建議，且包含動作，如將成員移動至介面或基底類別、調整命名空間以符合資料夾結構、將 foreach 迴圈轉換為 Linq 查詢等等。
+C# 中有許多全新且非常有用的重構，讓您輕鬆就能組織您的程式碼。 它們以燈泡的方式顯示隱藏的建議，且包含動作，如將成員移動至介面或基底類別、調整命名空間以符合資料夾結構、將 foreach 迴圈轉換為 Linq 查詢等等。
 
    ![Visual Studio 2019 中的重構體驗動畫](media/vs-2019/refactorings.gif)
 
-只要按下 **Ctrl+.** ，來叫用重構 然後選取您想要採取的動作。
+只要按下 **Ctrl+.**，來叫用重構 然後選取您想要採取的動作。
 
 ### <a name="intellicode"></a>IntelliCode
 
@@ -94,7 +94,7 @@ C# 中有許多全新且非常有用的重構，讓您輕鬆就能組織您的�
 
 ### <a name="per-monitor-aware-pma-rendering"></a>個別監視器感知 (PMA) 轉譯
 
-如果您以不同顯示比例因素設定監視器，或從遠端連線到具有不同於您主要裝置顯示比例因素的機器，您可能會發現 Visual Studio 的顯示模糊，或以錯誤的比例轉譯。
+如果您所使用的監視器設定為不同的縮放比例，或從遠端連線到具有不同於您主要裝置設定的縮放顯示比例的機器，您可能會發現 Visual Studio 的顯示模糊，或以錯誤的比例轉譯。
 
 Visual Studio 2019 的發行，代表我們正著手將 Visual Studio 調整為個別監視器感知 (PMA) 應用程式。 現在，不論您使用的顯示縮放比例為何，Visual Studio 均可正確轉譯。
 
@@ -136,7 +136,7 @@ Visual Studio 2019 的發行，代表我們正著手將 Visual Studio 調整為�
 
 ### <a name="live-share"></a>Live Share
 
-[Visual Studio Live Share](https://visualstudio.microsoft.com/services/live-share/) 這項開發人員服務可讓您與組員共用程式碼庫和其中的內容，並直接從 Visual Stuido 中進行即時雙向共同作業。 組員可透過 Live Share 來閱讀、瀏覽、編輯和偵錯您與其共用的專案，過程相當自然且安全。
+[Visual Studio Live Share](https://visualstudio.microsoft.com/services/live-share/) 這項開發人員服務可讓您與組員共用程式碼庫和其中的內容，並直接從 Visual Stuido 中進行即時雙向共同作業。 組員可透過 Live Share 來閱讀、瀏覽、編輯和偵錯您與其共用的專案，過程相當流暢且安全。
 
 Visual Studio 2019 預設會安裝這項服務。
 
@@ -160,7 +160,7 @@ Visual Studio 2019 預設會安裝這項服務。
 
 ### <a name="performance-gains"></a>效能提升
 
-我們採用僅一次的專屬 C++ 資料中斷點，並加以修改以用於 .NET Core 應用程式。
+我們採用獨一無二的 C++ 資料中斷點，並加以修改以用於 .NET Core 應用程式。
 
    ![在 Visual Studio 2019 中顯示偵錯資料中斷點的動畫](media/vs-2019/debug-data-breakpoints.gif)
 

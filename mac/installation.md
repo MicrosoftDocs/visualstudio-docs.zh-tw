@@ -66,7 +66,7 @@ ms.locfileid: "71211452"
 
 
 7. 選取完成之後，請按 [安裝] 按鈕。
-8. 安裝程式會顯示下載和安裝 Visual Studio for Mac 的進度，並顯示選取的工作負載。 系統會提示您輸入密碼，以授與安裝所需的許可權。：
+8. 安裝程式會顯示下載和安裝 Visual Studio for Mac 以及所選取的工作負載的進度。 系統會提示您輸入密碼，以授與安裝所需的許可權。：
 
     [![選擇您想要安裝的選擇性工作負載功能](media/installation-progress.png)](media/installation-progress.png#lightbox)
 
@@ -93,7 +93,7 @@ ms.locfileid: "71211452"
 
 ## <a name="next-steps"></a>後續步驟
 
-安裝 Visual Studio for Mac 可讓您開始撰寫應用程式的程式碼。 以下指示提供您下一步撰寫及部署專案的逐步指示。
+安裝 Visual Studio for Mac 可讓您開始撰寫應用程式的程式碼。 提供以下指南以協助您完成編寫和部署專案的後續步驟。
 
 ### <a name="ios"></a>iOS
 
