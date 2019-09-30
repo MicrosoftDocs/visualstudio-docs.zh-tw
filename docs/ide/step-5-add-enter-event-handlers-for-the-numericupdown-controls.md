@@ -1,29 +1,33 @@
 ---
 title: 步驟 5：針對 NumericUpDown 控制項新增 Enter 事件處理常式
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: tutorial
+ms.prod: visual-studio-windows
+ms.technology: vs-ide-general
+dev_langs:
+- CSharp
+- VB
 ms.assetid: 45a99a5d-c881-4298-b74d-adb481dec5ee
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-dev_langs:
-- CSharp
-- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a2687c423f6b2facaa2fa1c3504888c65345888
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
-ms.translationtype: HT
+ms.openlocfilehash: 8edebff5af7affebf166ea07ca7aa813037c13c2
+ms.sourcegitcommit: 6eed0372976c0167b9a6d42ba443f9a474b8bb91
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66263104"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71118745"
 ---
 # <a name="step-5-add-enter-event-handlers-for-the-numericupdown-controls"></a>步驟 5：新增 NumericUpDown 控制項的 Enter 事件處理常式
 
 在本教學課程的第五個部分中，您將加入 <xref:System.Windows.Forms.Control.Enter> 事件處理常式，讓輸入測驗問題的答案時更加容易。 只要受測者選擇並開始輸入不同的值，這個程式碼就會選取並清除每個 <xref:System.Windows.Forms.NumericUpDown> 控制項中的目前值。
 
 > [!NOTE]
-> 這個主題是有關基本程式碼撰寫概念的教學課程系列的一部分。 如需教學課程的概觀，請參閱[教學課程 2：建立計時的數學測驗](../ide/tutorial-2-create-a-timed-math-quiz.md)。
+> 這個主題是有關基本程式碼撰寫概念的教學課程系列的一部分。
+> - 如需教學課程的概觀，請參閱[教學課程 2：建立計時的數學測驗](../ide/tutorial-2-create-a-timed-math-quiz.md)。
+> - 若要下載已完成的程式碼版本，請參閱[完整的數學測驗教學課程範例](https://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c)。
 
 ## <a name="to-verify-the-default-behavior"></a>若要驗證預設行為
 
@@ -58,7 +62,10 @@ ms.locfileid: "66263104"
      [!code-vb[VbExpressTutorial3Step5_6#11](../ide/codesnippet/VisualBasic/step-5-add-enter-event-handlers-for-the-numericupdown-controls_1.vb)]
      [!code-csharp[VbExpressTutorial3Step5_6#11](../ide/codesnippet/CSharp/step-5-add-enter-event-handlers-for-the-numericupdown-controls_1.cs)]
 
-     這個程式碼看似複雜，但是逐步查看後就能了解它。 首先，查看方法的頂端：C# 中的 `object sender` 或 Visual Basic 中的 `sender As System.Object`。 這個參數會參考要引發其事件的物件，稱為 sender。 在這個案例中，sender 物件為 NumericUpDown 控制項。 因此，在方法的第一行中，您會指定 sender 不是一般物件，而是更具體的 NumericUpDown 控制項  (每一個 NumericUpDown 控制項都是物件，但不是每一個物件都是 NumericUpDown 控制項)。NumericUpDown 控制項在這個方法中名為 **answerBox**，因為它會供表單上的所有 NumericUpDown 控制項使用，而不只是 sum NumericUpDown 控制項。 由於您是在這個方法中宣告 answerBox 變數，因此其範圍僅適用於這個方法。 換句話說，變數只能夠在這個方法內使用。
+     > [!IMPORTANT]
+     > 使用此頁面右上方的程式設計語言控制項，以查看C#程式碼片段或 Visual Basic 程式碼片段。<br><br>![Docs.Microsoft.com 的程式設計語言控制項](../ide/media/docs-programming-language-control.png)
+
+     這個程式碼看似複雜，但是逐步查看後就能了解它。 首先，查看方法的頂端：C# 中的 `object sender` 或 Visual Basic 中的 `sender As System.Object`。 這個參數會參考要引發其事件的物件，稱為 sender。 在這個案例中，sender 物件為 NumericUpDown 控制項。 因此，在方法的第一行中，您會指定 sender 不是一般物件，而是更具體的 NumericUpDown 控制項 (每一個 NumericUpDown 控制項都是物件，但不是每一個物件都是 NumericUpDown 控制項)。NumericUpDown 控制項在這個方法中名為 **answerBox**，因為它會供表單上的所有 NumericUpDown 控制項使用，而不只是 sum NumericUpDown 控制項。 由於您是在這個方法中宣告 answerBox 變數，因此其範圍僅適用於這個方法。 換句話說，變數只能夠在這個方法內使用。
 
      下一行驗證 answerBox 是否已成功從物件轉換 (轉型) 為 NumericUpDown 控制項。 如果轉換失敗，變數的值會是 `null` (C#) 或 `Nothing` (Visual Basic)。 第三行會取得 NumericUpDown 控制項中所出現答案的長度，而第四行會根據這個長度選取控制項中的目前值。 現在，當受測者選擇控制項時，Visual Studio 就會引發這個事件，進而選取目前的答案。 一旦受測者開始輸入不同的答案，就會立即清除上一個答案，並以新的答案取代。
 
@@ -74,6 +81,6 @@ ms.locfileid: "66263104"
 
 ## <a name="to-continue-or-review"></a>若要繼續或檢視
 
-- 若要前往下一個教學課程步驟，請參閱[步驟 6：新增減法問題](../ide/step-6-add-a-subtraction-problem.md)。
+- 若要移至下一個教學課程步驟 **，請參閱[步驟6：新增減法問題](../ide/step-6-add-a-subtraction-problem.md)。**
 
 - 若要回到上一個教學課程步驟，請參閱[步驟 4：新增 CheckTheAnswer() 方法](../ide/step-4-add-the-checktheanswer-parens-method.md)。

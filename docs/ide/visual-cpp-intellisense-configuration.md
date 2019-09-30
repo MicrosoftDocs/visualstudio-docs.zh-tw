@@ -7,12 +7,12 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b8d52114e742d5a8176166744a4edc2975f674a3
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 5c95990eb875c52a66cd0efa5579c9d39eab5469
+ms.sourcegitcommit: 3cda0d58c5cf1985122b8977b33a171c7359f324
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68925850"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "70154910"
 ---
 # <a name="configure-a-c-project-for-intellisense"></a>設定 C++ IntelliSense 專案
 
@@ -48,7 +48,7 @@ IntelliSense 能產生最多 1000 個錯誤。 如果來源檔案所包含的標
 
 ### <a name="open-folder-projects"></a>「開啟資料夾」專案
 
-針對 CMake 專案，請確定已針對 CMakeLists.txt 中的所有設定正確指定 #include 路徑。 其他專案類型可能會需要 CppProperties.json 檔案。 如需詳細資訊，請參閱[使用 CppProperties.json 設定 IntelliSense](/cpp/build/open-folder-projects-cpp#configure-intellisense-and-browsing-hints-with-cpppropertiesjson)。 確定定義於檔案中之每個設定的路徑皆正確無誤。
+針對 CMake 專案，請確定已針對 CMakeLists.txt 中的所有設定正確指定 #include 路徑。 其他專案類型可能會需要 CppProperties.json 檔案。 如需詳細資訊，請參閱[使用 CppProperties.json 設定 IntelliSense](/cpp/build/open-folder-projects-cpp#configure-code-navigation-with-cpppropertiesjson)。 確定定義於檔案中之每個設定的路徑皆正確無誤。
 
 如果 CppProperties.json 檔案中有語法錯誤，受影響檔案中的 IntelliSense 將會不正確。 Visual Studio 將會在 [輸出視窗] 中顯示該錯誤。
 

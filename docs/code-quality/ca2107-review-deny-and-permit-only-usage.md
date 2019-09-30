@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c7f3bdc6351f30d5cad60a7ed9663824fa3d434
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: fdb2bab3231613772b1eda1895d925f8dd40ee93
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66714707"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71232834"
 ---
 # <a name="ca2107-review-deny-and-permit-only-usage"></a>CA2107:必須檢閱 Deny 和 Permit Only 的使用方式
 
@@ -28,47 +28,47 @@ ms.locfileid: "66714707"
 |TypeName|ReviewDenyAndPermitOnlyUsage|
 |CheckId|CA2107|
 |分類|Microsoft.Security|
-|中斷變更|中斷|
+|重大變更|中斷|
 
 ## <a name="cause"></a>原因
 
-方法包含指定的 PermitOnly 或 Deny 安全性動作的安全性檢查。
+方法包含指定 PermitOnly 或 Deny 安全性動作的安全性檢查。
 
 ## <a name="rule-description"></a>規則描述
 
-<xref:System.Security.CodeAccessPermission.Deny%2A?displayProperty=fullName>安全性動作應只由知曉進階.NET 安全性的任何人。 而使用這些安全性動作的程式碼應該接受安全性檢閱。
+<xref:System.Security.CodeAccessPermission.Deny%2A?displayProperty=fullName>安全性動作應僅供具有 .net 安全性先進知識的人員使用。 而使用這些安全性動作的程式碼應該接受安全性檢閱。
 
-拒絕會改變以回應安全性需求，就會發生堆疊查核行程的預設行為。 它可讓您指定必須不被拒絕的方法，不論實際的權限，呼叫堆疊中的呼叫端的持續期間授與的權限。 如果堆疊查核行程偵測到的方法，受到拒絕，而且如果要求的權限包含在拒絕的權限時，堆疊查核行程失敗。 PermitOnly 也會改變堆疊查核行程的預設行為。 它可讓程式碼，以指定可以授與，不論呼叫端的權限的權限。 如果堆疊查核行程偵測受到 PermitOnly 方法和要求的權限不會納入 PermitOnly 所指定的權限，就會失敗的堆疊查核行程。
+[拒絕] 會改變回應安全性需求時，所發生之堆疊逐步解說的預設行為。 它可讓您指定拒絕方法期間不得授與的許可權，而不論呼叫堆疊中呼叫端的實際許可權為何。 如果堆疊演練偵測到受拒絕保護的方法，而且如果要求的許可權包含在拒絕的許可權中，堆疊的逐步解說就會失敗。 PermitOnly 也會改變堆疊逐步解說的預設行為。 它可讓程式碼只指定可授與的許可權，而不論呼叫端的許可權為何。 如果堆疊逐步解說偵測到受到 PermitOnly 保護的方法，而且如果要求的許可權未包含在 PermitOnly 所指定的許可權中，堆疊就會失敗。
 
-這些動作所依賴的程式碼應謹慎評估有安全性弱點因為他們有限的實用性和細微的行為。 請考慮下列事項：
+依賴這些動作的程式碼應該仔細評估是否有安全性弱點，因為其實用性和細微行為有限。 請考慮下列事項：
 
-- [連結要求](/dotnet/framework/misc/link-demands)不會受到 Deny 或 PermitOnly。
+- [連結要求](/dotnet/framework/misc/link-demands)不會受到拒絕或 PermitOnly 的影響。
 
-- 如果 Deny 或 PermitOnly 發生在同一個堆疊框架會導致堆疊查核行程的需求，安全性動作會有任何作用。
+- 如果拒絕或 PermitOnly 發生在造成堆疊引導的需求所在的相同堆疊框架中，安全性動作就不會有任何作用。
 
-- 通常可以透過多種方式指定值，用來建構路徑為基礎的權限。 拒絕存取路徑的一種形式時，不會拒絕所有形式的存取。 例如，如果檔案共用\\\Server\Share 會對應到網路磁碟機 x:，拒絕存取的檔案共用上，則必須拒絕\\\Server\Share\File、 X:\File 和每個其他存取檔案的路徑。
+- 用來建立路徑型許可權的值通常可以用多種方式來指定。 拒絕存取某一種形式的路徑並不會拒絕所有表單的存取。 例如，如果檔案共用\\\Server\Share 對應到網路磁碟機 X：，若要拒絕存取共用上的檔案，您必須拒絕\\\Server\Share\File、X:\File，以及存取該檔案的所有其他路徑。
 
-- <xref:System.Security.CodeAccessPermission.Assert%2A?displayProperty=fullName>可能會達到 Deny 或 PermitOnly 之前終止，堆疊查核行程。
+- <xref:System.Security.CodeAccessPermission.Assert%2A?displayProperty=fullName>可以在達到拒絕或 PermitOnly 之前終止堆疊的逐步解說。
 
-- 如果拒絕具有任何作用，也就是，當呼叫端具有封鎖的 Deny 權限呼叫端可以存取受保護的資源，以直接略過 Deny。 同樣地，如果呼叫端並沒有拒絕的權限，堆疊查核行程將會失敗而拒絕不。
+- 如果拒絕有任何作用，亦即，當呼叫者具有拒絕的許可權時，呼叫端可以直接存取受保護的資源，略過拒絕。 同樣地，如果呼叫端沒有拒絕的許可權，堆疊的逐步執行就會失敗，而不會有拒絕。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
 
-任何使用這些安全性動作會造成違規。 若要修正違規情形，請勿使用這些安全性動作。
+任何使用這些安全性動作都會導致違規。 若要修正違規，請勿使用這些安全性動作。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
 
-只有在您完成安全性檢閱之後，才，則隱藏此規則的警告。
+只有在您完成安全性審查之後，才會隱藏此規則的警告。
 
 ## <a name="example-1"></a>範例 1
 
-下列範例示範拒絕某些的限制。 程式庫包含具有兩個方法，除了保護它們的安全性需求之外完全相同的類別。
+下列範例示範拒絕的一些限制。 程式庫包含的類別具有兩個完全相同的方法，但保護它們的安全性要求除外。
 
 [!code-csharp[FxCop.Security.PermitAndDeny#1](../code-quality/codesnippet/CSharp/ca2107-review-deny-and-permit-only-usage_1.cs)]
 
 ## <a name="example-2"></a>範例 2
 
-下列應用程式會示範拒絕對受保護的方法，從程式庫。
+下列應用程式會示範拒絕程式庫中受保護的方法所造成的影響。
 
 [!code-csharp[FxCop.Security.TestPermitAndDeny#1](../code-quality/codesnippet/CSharp/ca2107-review-deny-and-permit-only-usage_2.cs)]
 

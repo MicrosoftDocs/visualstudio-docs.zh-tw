@@ -12,27 +12,51 @@ manager: jillfra
 ms.workload:
 - uwp
 author: gewarren
-ms.openlocfilehash: 1284dc529e4f150b282dcab2d919e027c9b606c4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: a123657e148e4c19c0fab1c1a9bf567ad2ea6fa8
+ms.sourcegitcommit: 9a3972eb85de5443ac2bc03964c5a251c39b2921
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62976431"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "71301719"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-uwp-apps"></a>逐步解說：建立並執行 UWP App 的單元測試
 
-Visual Studio 包含進行通用 Windows 平台 (UWP) 應用程式單元測試的支援。 它包含 Visual C#、Visual Basic 和 Visual C++ 的單元測試專案範本。
+Visual Studio 包含進行通用 Windows 平台 (UWP) 應用程式單元測試的支援。 Visual Studio 提供、Visual Basic 和C# C++的單元測試專案範本。
 
 > [!TIP]
 > 如需開發 UWP 應用程式的詳細資訊，請參閱 [UWP 應用程式入門](/windows/uwp/get-started/)。
 
-下列程序說明用來建立、執行和偵錯 UWP 應用程式的單元測試之步驟。
+下列程式說明建立、執行和測試 UWP 應用程式單元測試的步驟。
 
 ## <a name="create-a-unit-test-project-for-a-uwp-app"></a>建立 UWP 應用程式的單元測試專案
 
+::: moniker range=">=vs-2019"
+
+1. 開啟 Visual Studio。 在開始視窗中，選擇 [建立新專案]。
+
+2. 在 [**建立新專案**] 頁面的 [搜尋] 方塊中，輸入「**單元測試**」。
+
+   範本清單會篩選為用於單元測試的範本。
+
+3. 選取C#或 Visual Basic 的 [**單元測試應用程式（通用 Windows）** ] 範本，然後選取 **[下一步]** 。
+
+   ![在 Visual Studio 中建立新的 UWP 單元測試應用程式](media/vs-2019/new-uwp-unit-test-app.png)
+
+4. 選擇性地變更 [專案] 或 [方案名稱] 和 [位置]，然後選取 [**建立**]。
+
+5. 選擇性地變更目標和最小平臺版本，然後選取 **[確定]** 。
+
+完成這些步驟之後，就會建立單元測試專案，並顯示在方案總管中。
+
+![方案總管中的 UWP 單元測試專案](media/vs-2019/uwp-unit-test-project-solution-explorer.png)
+
+::: moniker-end
+
+::: moniker range="vs-2017"
+
 1. 從 [ **檔案** ] 功能表選擇 [ **新增專案**]。
 
-     [新增專案] 對話方塊隨即顯示。
+   [新增專案] 對話方塊隨即顯示。
 
 2. 在 [範本] 下，選擇您要用來建立單元測試的程式設計語言，然後選擇相關聯的 Windows 通用單元測試程式庫。 例如，依序選擇 [Visual C#]、[Windows 通用] 和 [單元測試程式庫 (通用 Windows)]。
 
@@ -44,26 +68,26 @@ Visual Studio 包含進行通用 Windows 平台 (UWP) 應用程式單元測試�
 
 6. 保留選取 [ **為方案建立目錄** ] 選項，並選擇 [ **確定** ] 按鈕。
 
-     ![量身打造的單元測試程式庫](../test/media/unit_test_win8_1.png)
+   ![量身打造的單元測試程式庫](../test/media/unit_test_win8_1.png)
 
-     您的 UWP 單元測試專案隨即填入 [方案總管] 中，並且程式碼編輯器中會顯示預設的單元測試標題 - UnitTest1。
+   您的 UWP 單元測試專案隨即填入 [方案總管] 中，並且程式碼編輯器中會顯示預設的單元測試標題 - UnitTest1。
 
-     ![新量身打造的單元測試專案](../test/media/unit_test_win8_unittestexplorer_newprojectcreated.png)
+   ![新量身打造的單元測試專案](../test/media/unit_test_win8_unittestexplorer_newprojectcreated.png)
+
+::: moniker-end
 
 ## <a name="edit-the-unit-test-projects-uwp-application-manifest-file"></a>編輯單元測試專案的 UWP 應用程式資訊清單檔
 
 1. 在 [方案總管] 中，以滑鼠右鍵按一下 *Package.appxmanifest* 檔案並選擇 [開啟]。
 
-     [資訊清單設計工具] 隨即顯示，可供編輯。
-
 2. 在 [資訊清單設計工具] 中，選擇 [功能] 索引標籤。
 
 3. 在 [ **功能**] 底下的清單中，選取您要讓單元測試及其所測試之程式碼具有的功能。 例如，如果單元測試需要且測試中的程式碼必須有存取網際網路的能力時，則選擇 [ **網際網路** ] 核取方塊。
 
-    > [!NOTE]
-    > 您選取的功能應該只包含讓單元測試正常運作的功能。
+   > [!NOTE]
+   > 您選取的功能應該只包含讓單元測試正常運作的功能。
 
-     ![單元測試資訊清單](../test/media/unit_test_win8_.png)
+   ![單元測試資訊清單](../test/media/unit_test_win8_.png)
 
 ## <a name="code-the-unit-test-for-a-uwp-app"></a>撰寫 UWP 應用程式的單元測試程式碼
 
@@ -71,38 +95,33 @@ Visual Studio 包含進行通用 Windows 平台 (UWP) 應用程式單元測試�
 
 ## <a name="run-unit-tests"></a>執行單元測試
 
-### <a name="to-build-the-solution-and-run-the-unit-test-using-test-explorer"></a>若要使用測試總管建置方案與執行單元測試
+若要建立方案並使用測試瀏覽器執行單元測試：
 
 1. 在 [ **測試** ] 功能表上，選擇 [ **Windows**]，然後選擇 [ **測試總管**]。
 
-     [測試總管] 隨即顯示，但沒有列出您的測試。
-
 2. 從 [ **建置** ] 功能表中，選擇 [ **建置方案**]。
 
-     現在列出了您的單元測試。
+   您的單元測試現在會顯示在 [測試瀏覽器] 中。
 
-    > [!NOTE]
-    > 您必須建置方案以更新 [測試總管] 中的單元測試清單。
+   > [!NOTE]
+   > 您必須建置方案以更新 [測試總管] 中的單元測試清單。
 
 3. 在 [測試總管] 中，選擇您建立的單元測試。
 
-    > [!TIP]
-    > [測試總管] 會在 [ **來源:**] 旁邊提供原始程式碼的連結。
-
 4. 選擇 [ **全部執行**]。
 
-     ![單元測試總管 &#45; 執行單元測試](../test/media/unit_test_win8_unittestexplorer_contextmenurun.png)
+   ![單元測試總管 &#45; 執行單元測試](../test/media/unit_test_win8_unittestexplorer_contextmenurun.png)
 
-    > [!TIP]
-    > 您可以選取 [測試總管] 中列出的一個或多個單元測試，然後以滑鼠右鍵按一下並選擇 [ **執行選取的測試**]。
-    >
-    > 此外，您可以選擇 [ **偵錯選取的測試**]、[ **開啟測試**]，並使用 [ **屬性** ] 選項。
-    >
-    > ![[單元測試總管] &#45; 單元測試操作功能表](../test/media/unit_test_win8_unittestexplorer_contextmenu.png)
+   > [!TIP]
+   > 您可以選取 [測試瀏覽器] 中所列的一或多個單元測試，然後以滑鼠右鍵按一下並選擇 [**執行選取的測試**]。
+   >
+   > 此外，您可以選擇 [ **偵錯選取的測試**]、[ **開啟測試**]，並使用 [ **屬性** ] 選項。
+   >
+   > ![單元測試流覽&#45;器單元測試操作功能表](../test/media/unit_test_win8_unittestexplorer_contextmenu.png)
 
-    單元測試隨即執行。 完成時，[測試總管] 會顯示測試狀態、已耗用時間並提供來源連結。
+   單元測試隨即執行。 完成時，[測試瀏覽器] 會顯示測試狀態和經過時間，並提供來源的連結。
 
-    ![單元測試總管 &#45; 測試完成](../test/media/unit_test_win8_unittestexplorer_done.png)
+   ![單元測試總管 &#45; 測試完成](../test/media/unit_test_win8_unittestexplorer_done.png)
 
 ## <a name="see-also"></a>另請參閱
 

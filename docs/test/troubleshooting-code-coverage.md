@@ -7,20 +7,20 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 7aef839027639770e60292210aaddf998c97fce0
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+ms.openlocfilehash: 6416045f040e9825bab6eeb33dd4b75478166ee3
+ms.sourcegitcommit: 689ba54ea14257d13031de881f5d4fe937a36f56
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926547"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71342483"
 ---
 # <a name="troubleshoot-code-coverage"></a>對程式碼涵蓋範圍進行疑難排解
 
-Visual Studio 中的程式碼涵蓋範圍分析工具會收集原生組件和 Managed 組件 ( *.dll* 或 *.exe* 檔) 的資料。 不過，在某些情況下，[程式碼涵蓋範圍結果]  視窗會顯示類似「產生空白的結果:...」的錯誤。有幾種原因可能會導致您取得空的結果。 本文可協助您解決這些問題。
+Visual Studio 中的程式碼涵蓋範圍分析工具會收集原生組件和 Managed 組件 ( *.dll* 或 *.exe* 檔) 的資料。 不過，在某些情況下，[程式碼涵蓋範圍結果] 視窗會顯示類似「產生空白的結果:...」的錯誤。有幾種原因可能會導致您取得空的結果。 本文可協助您解決這些問題。
 
 ## <a name="what-you-should-see"></a>您應該會看見
 
-如果您選擇 [測試]  功能表上的 [分析程式碼涵蓋範圍]  命令，而且組建和測試皆順利執行，則您應該會在 [程式碼涵蓋範圍]  視窗中看見結果清單。 您可能必須展開項目才能查看詳細資料。
+如果您選擇 [測試] 功能表上的 [分析程式碼涵蓋範圍] 命令，而且組建和測試皆順利執行，則您應該會在 [程式碼涵蓋範圍] 視窗中看見結果清單。 您可能必須展開項目才能查看詳細資料。
 
 ![顯示著色內容的程式碼涵蓋範圍結果](../test/media/codecoverage1.png)
 
@@ -29,23 +29,24 @@ Visual Studio 中的程式碼涵蓋範圍分析工具會收集原生組件和 Ma
 ## <a name="possible-reasons-for-seeing-no-results-or-old-results"></a>看不見任何結果或看見舊結果的可能原因
 
 ### <a name="do-you-have-the-right-edition-of-visual-studio"></a>您的 Visual Studio 版本是否正確?
+
 您需具備 Visual Studio 企業版。
 
 ### <a name="no-tests-were-executed"></a>沒有執行過任何測試
 
-分析&mdash;請查看輸出視窗。 在 [顯示輸出來源]  下拉式清單中選擇 [測試]  。 檢查是否有記錄任何警告或錯誤。
+分析&mdash;請查看輸出視窗。 在 [顯示輸出來源] 下拉式清單中選擇 [測試]。 檢查是否有記錄任何警告或錯誤。
 
 說明&mdash;程式碼涵蓋範圍分析會在執行測試時進行。 這項分析只包括在執行測試時載入記憶體的組件。 如果沒有執行任何測試，程式碼涵蓋範圍就不會產生任何報告。
 
-解決方式&mdash;在 [測試總管] 中，選擇 [全部執行]  ，確認所執行的測試是否成功。 在使用 [分析程式碼涵蓋範圍]  之前修正所有錯誤。
+解決方式&mdash;在 [測試總管] 中，選擇 [全部執行]，確認所執行的測試是否成功。 在使用 [分析程式碼涵蓋範圍] 之前修正所有錯誤。
 
 ### <a name="youre-looking-at-a-previous-result"></a>您看到的是之前的結果
 
 當您修改並重新執行測試時，可能仍會顯示先前的程式碼涵蓋範圍結果，包括在先前執行時著色的程式碼。
 
-1. 執行 [分析程式碼涵蓋範圍]。
+1. 執行 [**分析程式碼涵蓋範圍**]。
 
-2. 請務必在 [程式碼涵蓋範圍結果]  視窗中選取最新的一組結果。
+2. 請務必在 [程式碼涵蓋範圍結果] 視窗中選取最新的一組結果。
 
 ### <a name="pdb-symbol-files-are-unavailable"></a>.pdb (符號) 檔案無法使用
 
@@ -55,7 +56,9 @@ Visual Studio 中的程式碼涵蓋範圍分析工具會收集原生組件和 Ma
 
 產生 *.pdb* 檔的組建必須是產生 *.dll* 或 *.exe* 檔案的組建。
 
-解決方式&mdash;請確定您的組建設定會產生 *.pdb* 檔。 如果建置專案時沒有更新 *.pdb* 檔案，請開啟專案屬性，選取 [組建]  頁面，選擇 [進階]  ，然後檢查 [偵錯資訊]  。
+解決方式&mdash;請確定您的組建設定會產生 *.pdb* 檔。 如果建置專案時沒有更新 *.pdb* 檔案，請開啟專案屬性，選取 [組建] 頁面，選擇 [進階]，然後檢查 [偵錯資訊]。
+
+針對C++專案，請確定產生的 .pdb 檔案具有完整的偵錯工具資訊。 開啟 [專案屬性]，並確認 [**連結器** >   > ] [**產生** **的偵錯工具**] 設定為 **[產生針對共用和發行優化的偵錯工具資訊（/debug： FULL）** ]。
 
 如果 *.pdb* 和 *.dll* 或 *.exe* 檔案在不同的位置，請將 *.pdb* 檔複製到同一個目錄中。 將程式碼涵蓋範圍引擎設定成搜尋另一個位置的 *.pdb* 檔也是可行的。 如需詳細資訊，請參閱[自訂程式碼涵蓋範圍分析](../test/customizing-code-coverage-analysis.md)。
 

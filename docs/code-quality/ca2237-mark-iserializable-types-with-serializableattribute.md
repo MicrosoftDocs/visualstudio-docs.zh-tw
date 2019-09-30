@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a047ec190652e3559e8bf83fe14834ed95d8a69
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 53d049cad426201a8aaa48662061a4a424116b26
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68920104"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71237933"
 ---
 # <a name="ca2237-mark-iserializable-types-with-serializableattribute"></a>CA2237:ISerializable 類型必須標記 SerializableAttribute
 
@@ -31,19 +31,19 @@ ms.locfileid: "68920104"
 |TypeName|MarkISerializableTypesWithSerializable|
 |CheckId|CA2237|
 |分類|Microsoft.Usage|
-|中斷變更|非中斷|
+|重大變更|不中斷|
 
 ## <a name="cause"></a>原因
-外部可見的類型會實<xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName>作為介面, 而類型不會<xref:System.SerializableAttribute?displayProperty=fullName>以屬性標記。 此規則會忽略基底類型不可序列化的衍生類型。
+外部可見的類型會實<xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName>作為介面，而類型不會<xref:System.SerializableAttribute?displayProperty=fullName>以屬性標記。 此規則會忽略基底類型不可序列化的衍生類型。
 
 ## <a name="rule-description"></a>規則描述
-若要由 common language runtime 辨識為可序列化, 即使類型透過<xref:System.SerializableAttribute> <xref:System.Runtime.Serialization.ISerializable>介面的實作為使用自訂序列化常式, 也必須以屬性標記類型。
+若要由 common language runtime 辨識為可序列化，即使類型透過<xref:System.SerializableAttribute> <xref:System.Runtime.Serialization.ISerializable>介面的實作為使用自訂序列化常式，也必須以屬性標記類型。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
-若要修正此規則的違規, 請將<xref:System.SerializableAttribute>屬性套用至類型。
+若要修正此規則的違規，請將<xref:System.SerializableAttribute>屬性套用至類型。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
-請勿針對例外狀況類別隱藏此規則的警告, 因為它們必須是可序列化的, 才能在應用程式域間正常運作。
+請勿針對例外狀況類別隱藏此規則的警告，因為它們必須是可序列化的，才能在應用程式域間正常運作。
 
 ## <a name="example"></a>範例
 下列範例顯示違反規則的類型。 取消批註<xref:System.SerializableAttribute>屬性行以符合規則。

@@ -8,12 +8,14 @@ metadata:
   description: 了解如何使用 Visual Studio，以您選擇的語言，為任何平台或裝置開發應用程式、服務及工具。
   ms.topic: hub-page
   monikerRange: '>=vs-2017'
-  ms.openlocfilehash: b24bc5b3e1427a6f3675398e05a639b45c376571
-  ms.sourcegitcommit: d2b234e0a4a875c3cba09321cdf246842670d872
+  f1_keywords:
+  - MSDNSTART
+  ms.openlocfilehash: f754d62f95dee9531429f9421571982307af9966
+  ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
   ms.translationtype: HT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 07/01/2019
-  ms.locfileid: "67493708"
+  ms.lasthandoff: 09/24/2019
+  ms.locfileid: "71238132"
 highlightedContent:
   items:
   - title: 設定與安裝
@@ -130,13 +132,13 @@ additionalContent:
       url: ide/compiling-and-building-in-visual-studio.md
     - title: 偵錯
       summary: 調查及修正程式碼中的 Bug。
-      url: debugger/index.md
+      url: debugger/index.yml
     - title: 測試
       summary: 對專案執行測試。
       url: test/improve-code-quality.md
     - title: 部署
-      summary: 使用 Web Deploy、InstallShield 和連續整合等等，來共用您的應用程式。
-      url: deployment/index.md
+      summary: 使用 Web Deploy、InstallShield、NuGet 和持續整合等功能，共用您的應用程式與程式碼。
+      url: deployment/index.yml
     - title: 版本控制
       summary: 使用 Git 和 TFVC 等版本控制技術來共用程式碼。
       url: version-control/index.md
@@ -145,7 +147,7 @@ additionalContent:
       url: /azure/devops
     - title: 測量效能
       summary: 識別瓶頸，並使用診斷工具將程式碼效能最佳化。
-      url: profiling/index.md
+      url: profiling/index.yml
     - title: 擴充
       summary: 將您自己的功能加入至 Visual Studio IDE 來改善您的開發經驗。
       url: extensibility/index.md
@@ -192,7 +194,7 @@ additionalContent:
         url: cross-platform/visual-studio-tools-for-unity.md
       - text: 使用 JavaScript 的行動裝置程式開發
         url: /visualstudio/cross-platform/tools-for-cordova/?view=toolsforcordova-2017
-        note: (Visual Studio 2017 and 2015 only)
+        note: (僅 Visual Studio 2017 與 2015)
       - text: 使用 C++ 的行動裝置程式開發
         url: /visualstudio/cross-platform/
       - text: 使用 C++ 的遊戲程式開發

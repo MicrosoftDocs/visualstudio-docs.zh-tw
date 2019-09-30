@@ -1,6 +1,6 @@
 # [Visual Studio 訂閱](index.md)
 ## [新功能](whats-new-in-subscriptions.md)
-## 訂用帳戶
+## 訂閱
 ### 購買訂用帳戶
 #### [零售](https://visualstudio.microsoft.com/vs/pricing)
 #### 雲端 
@@ -35,11 +35,13 @@
 ##### [Office 365 訂閱](vs-office365.md)
 ##### [Parasoft](vs-parasoft.md)
 ##### [Power BI Pro](vs-pbi.md)
+##### [RStudio](vs-rstudio.md)
 ##### [Visual Studio App Center](vs-visual-studio-app-center.md)
 ##### [Visual Studio IDE](vs-ide-benefit.md)
 ##### [WhiteSource Bolt](vs-whitesource.md)
 ##### [Windows 開發人員帳戶](vs-windows-dev.md)
 #### 專業開發
+##### [CODE Magazine](vs-code-magazine.md)
 ##### [DataCamp](vs-datacamp.md)
 ##### [LinkedIn Learning](vs-linkedin-learning.md)
 ##### [MSDN Magazine 訂閱](vs-msdn.md)
@@ -47,7 +49,7 @@
 #### 支援 
 ##### [Azure 社群](vs-azure-community.md)
 ##### [指引支援](vs-concierge-chat.md)
-##### [技術支援事宜](vs-tech-support.md)
+##### [技術支援](vs-tech-support.md)
 ## 軟體與金鑰
 ### 軟體下載
 #### [產品可用性](product-availability.md)

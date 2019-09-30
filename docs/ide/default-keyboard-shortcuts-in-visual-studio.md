@@ -13,16 +13,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 32335f010db2d030d64ae1319f3cc893526a30e0
-ms.sourcegitcommit: d4920babfc3d24a3fe1d4bf446ed3fe73b344467
-ms.translationtype: HT
+ms.openlocfilehash: 106a2be4797bc3c442006f74bce98e4f1e8c9a5c
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "67160040"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71238206"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Visual Studio 中的預設鍵盤快速鍵
 
-只需選擇適當的鍵盤快速鍵，您就可以在 Visual Studio 中存取各種[命令](reference/visual-studio-commands.md)和視窗。 此頁面會針對您可能已經在安裝 Visual Studio 時選擇的 [一般]  設定檔，列出預設命令捷徑。 不管您選擇哪一個設定檔，都可以開啟 [選項]  對話方塊、展開 [環境]  節點，然後選擇 [鍵盤]  來[識別命令的捷徑](identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)。 您也可以為指定的命令指派不同的捷徑，以自訂捷徑。
+只需選擇適當的鍵盤快速鍵，您就可以在 Visual Studio 中存取各種[命令](reference/visual-studio-commands.md)和視窗。 此頁面會針對您可能已經在安裝 Visual Studio 時選擇的 [一般] 設定檔，列出預設命令捷徑。 不管您選擇哪一個設定檔，都可以開啟 [選項] 對話方塊、展開 [環境] 節點，然後選擇 [鍵盤] 來[識別命令的捷徑](identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)。 您也可以為指定的命令指派不同的捷徑，以自訂捷徑。
 
 如需常用鍵盤快速鍵的清單和其他產能資訊，請參閱：
 
@@ -341,9 +341,13 @@ ms.locfileid: "67160040"
 |--------------| - |
 |TestExplorer.DebugAllTests|**Ctrl+R、Ctrl+A**|
 |TestExplorer.DebugAllTestsInContext|**Ctrl+R、Ctrl+T**|
+|TestExplorer.DebugLastRun|**Ctrl + R、D**|
 |TestExplorer.RepeatLastRun|**Ctrl+R、L**|
 |TestExplorer.RunAllTests|**Ctrl+R、A**|
 |TestExplorer.RunAllTestsInContext|**Ctrl+R、T**|
+|TestExplorer.ShowTestExplorer|**Ctrl + E、T**|
+|LiveUnitTesting.OpenTab|**Ctrl + E、L**|
+|CodeCoverageResults|**Ctrl+E、C**|
 
 ### <a name="bkmk_tools"></a> 工具
 
@@ -401,6 +405,7 @@ ms.locfileid: "67160040"
 |View.WebBrowser|**Ctrl+Alt+R**|
 |View.ZoomIn|**Ctrl+Shift+.**|
 |View.ZoomOut|**Ctrl+Shift+,**|
+|TestExplorer.ShowTestExplorer|**Ctrl + E、T**|
 
 ### <a name="bkmk_window"></a> Window
 
@@ -789,7 +794,7 @@ ms.locfileid: "67160040"
 | Edit.CollapseCurrentRegion | **Ctrl+M、Ctrl+S** |
 | Edit.CollapseTag | **Ctrl+M、Ctrl+T** |
 | Edit.CollapseToDefinitions | **Ctrl+M、Ctrl+O** (字母 'O') |
-| Edit.ContractSelection | **Shift+Alt+** (僅限非 C++) |
+| Edit.ContractSelection | **Shift+Alt+-** |
 | Edit.CommentSelection | **Ctrl+K、Ctrl+C** |
 | Edit.CompleteWord | **Ctrl+空格鍵**<br /><br /> 或<br /><br /> **Alt+向右鍵** |
 | Edit.CopyParameterTip | **Ctrl+Shift+Alt+C** |
@@ -802,7 +807,7 @@ ms.locfileid: "67160040"
 | Edit.DocumentStartExtend | **Ctrl+Shift+Home** |
 | Edit.ExpandAllOutlining | **Ctrl+M、Ctrl+X** |
 | Edit.ExpandCurrentRegion | **Ctrl+M、Ctrl+E** |
-| Edit.ExpandSelection | **Shift+Alt+=** (僅限非 C++) |
+| Edit.ExpandSelection | **Shift+Alt+=** |
 | Edit.ExpandSelectiontoContainingBlock | **Shift+Alt+]** |
 | Edit.FormatDocument | **Ctrl+K、Ctrl+D** |
 | Edit.FormatSelection | **Ctrl+K、Ctrl+F** |

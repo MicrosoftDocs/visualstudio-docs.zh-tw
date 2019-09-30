@@ -1,34 +1,39 @@
 ---
 title: 步驟 2：建立隨機加法問題
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: tutorial
+ms.prod: visual-studio-windows
+ms.technology: vs-ide-general
 dev_langs:
-- csharp
-- vb
+- CSharp
+- VB
 ms.assetid: 6461c4cf-f2aa-4bf5-91ed-06820a4f893d
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d5b83edaec6b81c3a2c5699184c62dbd70d71913
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
-ms.translationtype: HT
+ms.openlocfilehash: d35d807cbe849e4b5385f7bf63e15760b0e4b3a5
+ms.sourcegitcommit: 6eed0372976c0167b9a6d42ba443f9a474b8bb91
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68416884"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71118826"
 ---
 # <a name="step-2-create-a-random-addition-problem"></a>步驟 2：建立隨機加法問題
+
 在本教學課程的第二個部分中，您會加入以隨機數字為基礎的數學問題，藉此增加測驗的挑戰性。 您也會建立名為 `StartTheQuiz()` 的方法，這個方法會填入問題並啟動倒數計時器。 稍後在本教學課程中，您將加入減法、乘法和除法問題。
 
 > [!NOTE]
-> 這個主題是有關基本程式碼撰寫概念的教學課程系列的一部分。 如需教學課程的概觀，請參閱[教學課程 2：建立計時的數學測驗](../ide/tutorial-2-create-a-timed-math-quiz.md)。
+> 這個主題是有關基本程式碼撰寫概念的教學課程系列的一部分。
+> - 如需教學課程的概觀，請參閱[教學課程 2：建立計時的數學測驗](../ide/tutorial-2-create-a-timed-math-quiz.md)。
+> - 若要下載已完成的程式碼版本，請參閱[完整的數學測驗教學課程範例](https://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c)。
 
 ## <a name="to-create-a-random-addition-problem"></a>若要建立隨機加法問題
 
 1. 在表單設計工具中選擇表單 (**Form1**)。
 
-2. 在功能表列上依序選擇 [檢視]   > [程式碼]  。
+2. 在功能表列上依序選擇 [檢視] > [程式碼]。
 
      依您使用的程式設計語言而定，會出現 *Form1.cs* 或 *Form1.vb*，如此您就可以檢視表單的後置程式碼。
 
@@ -36,6 +41,9 @@ ms.locfileid: "68416884"
 
      [!code-csharp[VbExpressTutorial3Step2#1](../ide/codesnippet/CSharp/step-2-create-a-random-addition-problem_1.cs)]
      [!code-vb[VbExpressTutorial3Step2#1](../ide/codesnippet/VisualBasic/step-2-create-a-random-addition-problem_1.vb)]
+
+   > [!IMPORTANT]
+   > 使用此頁面右上方的程式設計語言控制項，以查看C#程式碼片段或 Visual Basic 程式碼片段。<br><br>![Docs.Microsoft.com 的程式設計語言控制項](../ide/media/docs-programming-language-control.png)
 
      您已將一個隨機物件加入至表單，並將物件命名為 **randomizer**。
 
@@ -60,7 +68,8 @@ ms.locfileid: "68416884"
 
      請注意，您在程式碼中的 `randomizer` 後面輸入點 (.) 時，[IntelliSense] 視窗便會開啟，並顯示可以呼叫的所有隨機物件的方法。 例如，IntelliSense 會列出 `Next()` 方法，如下所示。
 
-     ![Next 方法](../ide/media/express_randomwhite.png) Next 方法
+     ![Next 方法](../ide/media/express_randomwhite.png)<br/>
+*Next 方法*
 
      您在物件後面輸入一個點時，IntelliSense 會顯示物件的成員清單，例如屬性、方法和事件。
 
@@ -72,9 +81,9 @@ ms.locfileid: "68416884"
      [!code-csharp[VbExpressTutorial3Step2#18](../ide/codesnippet/CSharp/step-2-create-a-random-addition-problem_4.cs)]
      [!code-vb[VbExpressTutorial3Step2#18](../ide/codesnippet/VisualBasic/step-2-create-a-random-addition-problem_4.vb)]
 
-     這些陳述式會設定 [plusLeftLabel]  和 [plusRightLabel]  的 [Text]  屬性，讓它們顯示兩個隨機數字。 您必須使用整數的 `ToString()` 方法將數字轉換為文字。 在程式設計中，字串表示文字。 Label 控制項只會顯示文字，不會顯示數字。
+     這些陳述式會設定 [plusLeftLabel] 和 [plusRightLabel] 的 [Text] 屬性，讓它們顯示兩個隨機數字。 您必須使用整數的 `ToString()` 方法將數字轉換為文字。 在程式設計中，字串表示文字。 Label 控制項只會顯示文字，不會顯示數字。
 
-6. 在設計視窗中，按兩下 [開始]  按鈕，或是選擇該按鈕，然後選擇 **Enter** 鍵。
+6. 在設計視窗中，按兩下 [開始] 按鈕，或是選擇該按鈕，然後選擇 **Enter** 鍵。
 
      當受測者選擇這個按鈕時，測驗就會開始，而您剛加入了 Click 事件處理常式來實作該行為。
 
@@ -83,18 +92,19 @@ ms.locfileid: "68416884"
      [!code-csharp[VbExpressTutorial3Step2#4](../ide/codesnippet/CSharp/step-2-create-a-random-addition-problem_5.cs)]
      [!code-vb[VbExpressTutorial3Step2#4](../ide/codesnippet/VisualBasic/step-2-create-a-random-addition-problem_5.vb)]
 
-     第一個陳述式會呼叫新的 `StartTheQuiz()` 方法。 第二個陳述式會將 [startButton]  控制項的 [Enabled]  屬性設定為 [False]  ，如此受測者就無法在測驗期間選擇該按鈕。
+     第一個陳述式會呼叫新的 `StartTheQuiz()` 方法。 第二個陳述式會將 [startButton] 控制項的 [Enabled] 屬性設定為 [False]，如此受測者就無法在測驗期間選擇該按鈕。
 
-8. 儲存您的程式碼，並執行程式碼，然後選擇 [開始]  按鈕。
+8. 儲存您的程式碼，並執行程式碼，然後選擇 [開始] 按鈕。
 
-     隨機加法問題就會出現，如下圖所示。
+     此時會出現隨機加法問題，如下列螢幕擷取畫面所示。
 
-     ![隨機加法問題](../ide/media/express_additionproblem.png) 隨機加法問題
+     ![隨機加法問題](../ide/media/express_additionproblem.png)<br/>
+*隨機加法問題*
 
      在本教學課程的下一個步驟中，您將加入總和。
 
 ## <a name="to-continue-or-review"></a>若要繼續或檢視
 
-- 若要前往下一個教學課程步驟，請參閱[步驟 3：新增倒數計時器](../ide/step-3-add-a-countdown-timer.md)。
+- 若要移至下一個教學課程步驟 **，請參閱[步驟3：新增倒數計時器](../ide/step-3-add-a-countdown-timer.md)。**
 
 - 若要回到上一個教學課程步驟，請參閱[步驟 1：建立專案並將標籤新增至表單](../ide/step-1-create-a-project-and-add-labels-to-your-form.md)。

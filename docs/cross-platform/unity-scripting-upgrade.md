@@ -8,41 +8,41 @@ ms.assetid: E2C9420F-A5D5-4472-9020-2B63FB27A133
 ms.technology: vs-unity-tools
 ms.workload:
 - unity
-ms.openlocfilehash: 82556ea0ed043c11cb9098383daf912ff17372ef
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 0fb4560a196404687c60ce67f39b9c0754a24769
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62818394"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71253135"
 ---
 # <a name="using-net-4x-in-unity"></a>在 Unity 中使用 .NET 4.x
 
-C# 和 .NET (以 Unity 指令碼為基礎的技術) 持續接收到更新，因為 Microsoft 一開始是在 2002 年發行它們。 但是，Unity 開發人員可能察覺不到穩定新增至 C# 語言和.NET Framework 的新功能。 原因是在 Unity 2017.1 之前，Unity 使用 .NET 3.5 對等指令碼執行階段，因而遺失數年的更新。
+C# 和 .NET (以 Unity 指令碼為基礎的技術) 持續接收到更新，因為 Microsoft 一開始是在 2002 年發行它們。 但是，Unity 開發人員可能察覺不到穩定新增至 C# 語言和.NET Framework 的新功能。 原因是在 Unity 2017.1 之前，Unity 使用 .NET 3.5 對等 Scripting runtime，因而遺失數年的更新。
 
-隨著 Unity 2017.1 的發行，Unity 引進將其指令碼執行階段升級至 .NET 4.6 (C# 6 相容版本) 的實驗性版本。 在 Unity 2018.1 中，不再將 .NET 4.x 對等執行階段視為實驗性，現在會將舊版 .NET 3.5 對等執行階段視為舊版本。 而隨著 Unity 2018.3 的發行，Unity 預測會將已升級的指令碼執行階段設為預設選取項目，甚至進一步更新為 C# 7。 如需本藍圖的詳細資訊和最新更新，請閱讀 Unity 的[部落格文章](https://blogs.unity3d.com/2018/07/11/scripting-runtime-improvements-in-unity-2018-2/)，或瀏覽其 [Experimental Scripting Previews 論壇](https://forum.unity.com/forums/experimental-scripting-previews.107/)。 在此同時，請參閱下列各節，來深入了解 .NET 4.x 指令碼執行階段現在可用的新功能。
+隨著 Unity 2017.1 的發行，Unity 引進將其 Scripting runtime 升級至 .NET 4.6 (C# 6 相容版本) 的實驗性版本。 在 Unity 2018.1 中，不再將 .NET 4.x 對等執行階段視為實驗性，現在會將舊版 .NET 3.5 對等執行階段視為舊版本。 而隨著 Unity 2018.3 的發行，Unity 計畫會將已升級的指令碼執行階段設為預設選取項目，甚至進一步更新到 C# 7。 如需本藍圖的詳細資訊和最新更新，請閱讀 Unity 的[部落格文章](https://blogs.unity3d.com/2018/07/11/scripting-runtime-improvements-in-unity-2018-2/)，或瀏覽其 [Experimental Scripting Previews 論壇](https://forum.unity.com/forums/experimental-scripting-previews.107/)。 在此同時，請參閱下列各節，來深入了解 .NET 4.x Scripting runtime 現在可用的新功能。
 
 ## <a name="prerequisites"></a>必要條件
 
 * [Unity 2017.1 或更新版本](https://unity3d.com/) (建議使用 2018.2)
 * [Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)
 
-## <a name="enabling-the-net-4x-scripting-runtime-in-unity"></a>在 Unity 中啟用 .NET 4.x 指令碼執行階段
+## <a name="enabling-the-net-4x-scripting-runtime-in-unity"></a>在 Unity 中啟用 .NET 4.x Scripting runtime
 
-若要在 Unity 中啟用 .NET 4.x 指令碼執行階段，請採取下列步驟：
+若要在 Unity 中啟用 .NET 4.x Scripting runtime，請採取下列步驟：
 
 1. 選取 [編輯] > [專案設定] > [Player] \(播放程式\)，以在 Unity Inspector 中開啟 PlayerSettings。
 
-1. 在 [組態] 標題下，按一下 [Scripting Runtime Version] \(指令碼執行階段版本\) 下拉式清單，然後選取 [.NET 4.x Equivalent] \(.NET 4.x 對等項目\)。 系統將提示您重新啟動 Unity。
+1. 在 [組態] 標題下，按一下 [Scripting Runtime Version] \(Scripting runtime 版本\) 下拉式清單，然後選取 [.NET 4.x Equivalent] \(.NET 4.x 對等項目\)。 系統將提示您重新啟動 Unity。
 
 ![選取 [.NET 4.x Equivalent] \(.NET 4.x 對等項目\)](media/vstu_scripting-runtime-version.png)
 
 ## <a name="choosing-between-net-4x-and-net-standard-20-profiles"></a>選擇 .NET 4.x 或 .NET Standard 2.0 設定檔
 
-在您切換到 .NET 4.x 對等指令碼執行階段之後，即可使用 PlayerSettings 中的下拉式功能表 ([編輯] > [專案設定] > [Player] \(播放程式\)) 指定 [Api Compatibility Level] \(API 相容性層級\)。 有兩個選項：
+在您切換到 .NET 4.x 對等 Scripting runtime 之後，即可使用 PlayerSettings 中的下拉式功能表 ([編輯] > [專案設定] > [Player] \(播放程式\)) 指定 [Api Compatibility Level] \(API 相容性層級\)。 有兩個選項：
 
-* [.NET Standard 2.0]。 此設定檔符合 .NET Foundation 所發行的 [.NET Standard 2.0 設定檔](https://github.com/dotnet/standard/blob/master/docs/versions/netstandard2.0.md)。 Unity 建議將 .NET Standard 2.0 用於新專案。 這小於適用於大小受限平台的 .NET 4.x。 此外，Unity 致力於跨 Unity 所支援的所有平台支援此設定檔。
+* [.NET Standard 2.0]： 此設定檔符合 .NET Foundation 所發行的 [.NET Standard 2.0 設定檔](https://github.com/dotnet/standard/blob/master/docs/versions/netstandard2.0.md)。 Unity 建議將 .NET Standard 2.0 用於新專案。 它的大小小於 .NET 4.x，對於大小受限的平台很有利。 此外，在所有 Unity 支援的平台上，Unity 致力於支援此設定檔。
 
-* [.NET 4.x]。 此設定檔提供對最新 .NET 4 API 的存取。 它包含 .NET Framework 類別庫中所有可用的程式碼，同時支援 .NET Standard 2.0 設定檔。 如果您的專案需要 .NET Standard 2.0 設定檔中未包含的 API 部分，則請使用 .NET 4.x 設定檔。 不過，Unity 的所有平台上可能都不支援此 API 的某些部分。
+* [.NET 4.x]： 此設定檔提供對最新 .NET 4 API 的存取。 它包含 .NET Framework 類別庫中所有可用的程式碼，同時支援 .NET Standard 2.0 設定檔。 如果您的專案需要 .NET Standard 2.0 設定檔中未包含的 API 部分，則請使用 .NET 4.x 設定檔。 不過，可能有些 Unity 平台不支援此 API 的部分功能。
 
 您可以在 Unity 的[部落格文章](https://blogs.unity3d.com/2018/03/28/updated-scripting-runtime-in-unity-2018-1-what-does-the-future-hold/)中深入了解這些選項。
 
@@ -60,17 +60,17 @@ Visual Studio 會在每次開啟 Unity 專案時重新產生其 .csproj 和 .sln
 
 1. 在 Unity 專案的根 **Assets** 目錄中，建立名為 **mcs.rsp** 的新文字檔。
 
-1. 在空文字檔中的第一行，輸入：`-r:System.Net.Http.dll`，然後儲存檔案。 您可以將 "System.Net.Http.dll" 取代為任何可能遺漏參考的內含組件。
+1. 在空文字檔中的第一行輸入：`-r:System.Net.Http.dll`，然後儲存檔案。 您可以將 "System.Net.Http.dll" 取代為任何可能遺漏參考的內含組件。
 
 1. 重新啟動 Unity 編輯器。
 
 ## <a name="taking-advantage-of-net-compatibility"></a>利用 .NET 相容性
 
-除了新 C# 語法和語言功能之外，.NET 4.x 指令碼執行階段還可讓 Unity 使用者存取與舊版 .NET 3.5 指令碼執行階段不相容之 .NET 套件的超大型程式庫。
+除了新 C# 語法和語言功能之外，.NET 4.x Scripting runtime 還可讓 Unity 使用者存取與舊版 .NET 3.5 Scripting runtime 不相容之 .NET 套件的超大型程式庫。
 
 ### <a name="add-packages-from-nuget-to-a-unity-project"></a>將套件從 NuGet 新增至 Unity 專案
 
-[NuGet](https://www.nuget.org/) 是適用於 .NET 的套件管理員。 NuGet 整合到 Visual Studio。 不過，Unity 專案需要新增 NuGet 套件的特殊程序。 這是因為當您在 Unity 中開啟專案時，會重新產生其 Visual Studio 專案檔，並復原所需的組態。 若要將套件從 NuGet 新增至 Unity 專案，請執行下列作業：
+[NuGet](https://www.nuget.org/) 是 .NET 的套件管理員。 NuGet 整合到 Visual Studio。 不過，Unity 專案需要一個特殊的程序來新增 NuGet 套件。 這是因為當您在 Unity 中開啟專案時，會重新產生其 Visual Studio 專案檔，並復原所需的組態。 若要將套件從 NuGet 新增至 Unity 專案，請執行下列作業：
 
 1. 瀏覽 NuGet 以找到您要新增的相容套件 (.NET Standard 2.0 或 .NET 4.x)。 此範例示範如何將 [Json.NET](https://www.nuget.org/packages/Newtonsoft.Json/) (使用 JSON 的熱門套件) 新增至 .NET Standard 2.0 專案。
 
@@ -86,7 +86,7 @@ Visual Studio 會在每次開啟 Unity 專案時重新產生其 .csproj 和 .sln
 
 1. 將 **Newtonsoft.Json.dll** 檔案貼入 Unity 專案的 **Plugins** 目錄。
 
-1. 在 Unity 專案的 **Assets** 目錄中，建立名為 **link.xml** 的檔案，並新增下列 XML。  這將確保 Unity 的位元組程式碼去除程序不會在匯出至 IL2CPP 平台時移除必要資料。  此步驟是這個程式庫特有的步驟時，以類似方式使用反映的其他程式庫可能會發生問題。  如需詳細資訊，請參閱本主題的 [Unity 文件](https://docs.unity3d.com/Manual/IL2CPP-BytecodeStripping.html)。
+1. 在 Unity 專案的 **Assets** 目錄中，建立名為 **link.xml** 的檔案，並新增下列 XML。  這將確保 Unity 的位元組程式碼去除程序不會在匯出至 IL2CPP 平台時移除必要資料。  由於此步驟是這個程式庫特有的，以此類似方式使用在其他反映的程式庫時，可能會發生問題。  如需詳細資訊，請參閱本主題的 [Unity 文件](https://docs.unity3d.com/Manual/IL2CPP-BytecodeStripping.html)。
 
     ```xml
     <linker>
@@ -126,15 +126,15 @@ public class JSONTest : MonoBehaviour
 }
 ```
 
-這個簡單範例使用沒有相依性的程式庫。 NuGet 套件依賴其他 NuGet 套件時，您需要手動下載這些相依性，並使用相同的方式將其新增至專案。
+這是個沒有使用相依性的程式庫的簡單範例。 當NuGet 套件依賴其他 NuGet 套件時，您需要手動下載這些相依性，並使用相同的方式將其新增至專案。
 
 ## <a name="new-syntax-and-language-features"></a>新的語法和語言功能
 
-使用更新過的指令碼執行階段可讓 Unity 開發人員存取 C# 6 和一堆新語言功能和語法。
+使用更新過的 Scripting runtime 可讓 Unity 開發人員存取 C# 6 和一堆新語言功能和語法。
 
 ### <a name="auto-property-initializers"></a>Auto 屬性初始設定式
 
-在 Unity 的 .NET 3.5 指令碼執行階段中，auto-property 語法可讓您輕鬆地快速定義未初始化的屬性，但必須在指令碼的其他位置初始化。 現在使用 .NET 4.x 執行階段，就可以初始化同一行的 auto-properties：
+在 Unity 的 .NET 3.5 Scripting runtime 中，auto-property 語法可讓您輕鬆地快速定義未初始化的屬性，但必須在指令碼的其他位置初始化。 現在使用 .NET 4.x 執行階段，就可以初始化同一行的 auto-properties：
 
 ```csharp
 // .NET 3.5
@@ -223,15 +223,15 @@ public class AsyncAwaitExample : MonoBehaviour
 }
 ```
 
-TAP 是一個複雜主題，而開發人員應該考慮其 Unity 特定細微差別。 因此，TAP 不是 Unity 中協同程式的通用取代項目；不過，它是另一個要運用的工具。 此功能的範圍不在本文範圍內，但在下面提供一些一般最佳做法和秘訣。
+TAP 是一個複雜主題，而開發人員應該考慮其 Unity 特定細微差別。 因此，TAP 不是 Unity 中協同程式的通用取代項目；不過，它是另一個要運用的工具。 此功能的範圍不在本文範圍內，但在下面提供一些一般最佳做法和提示。
 
 #### <a name="getting-started-reference-for-tap-with-unity"></a>利用 Unity 開始使用 TAP 的參考
 
-這些秘訣可協助您在 Unity 中開始使用 TAP：
+這些提示可協助您在 Unity 中開始使用 TAP：
 
 * 要等待的非同步函數應該有傳回型別 [`Task`](https://docs.microsoft.com/dotnet/api/system.threading.tasks.task) 或 [`Task<TResult>`](https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1)。
-* 傳回工作的非同步函數應該在其名稱附加尾碼 **"Async"**。 "Async" 尾碼有助於指出應該一律等候函數。
-* 只會使用可從傳統同步程式碼引發 async 函數之函數的 `async void` 傳回型別。 這類函數本身無法等候，而且不應該在其名稱中有 "Async" 尾碼。
+* 傳回工作的非同步函數應該在其名稱附加尾碼 **"Async"** 。 "Async" 尾碼有助於指出一個函數應該一直處於等待的狀態。
+* 只使用可從傳統同步程式碼引發 async 函數的 `async void` 回傳函數。 這類函數本身無法等候，而且在其名稱中不應該有 ''Async'' 尾碼。
 * 根據預設，Unity 使用 UnitySynchronizationContext 確保在主要執行緒上執行 async 函數。 Unity API 無法在主要執行緒外部存取。
 * 使用 [`Task.Run`](https://msdn.microsoft.com/library/hh195051.aspx) 和 [`Task.ConfigureAwait(false)`](https://msdn.microsoft.com/library/system.threading.tasks.task.configureawait.aspx) 這類方法，可以在背景執行緒執行工作。 這項技術適用於卸載主要執行緒的耗費資源作業，以提高效能。 不過，使用背景執行緒可能會導致很難偵錯的問題 (例如[競爭條件](https://wikipedia.org/wiki/Race_condition))。
 * Unity API 無法在主要執行緒外部存取。
@@ -247,7 +247,7 @@ TAP 是一個複雜主題，而開發人員應該考慮其 Unity 特定細微差
 * 此時，Unity 不建議使用 TAP 完全取代協同程式。 分析是知道其中一種方法與任何指定專案另一種方法之特定結果的唯一方式。
 
 > [!NOTE]
-> 截自 Unity 2018.2，完全不支援偵錯含中斷點的 async 方法；不過，[Unity 2018.3 預期會有此功能](https://twitter.com/jbevain/status/900043560665235456)。
+> 截自 Unity 2018.2，不完全支援偵錯含中斷點的 async 方法；不過，[Unity 2018.3 預期會有此功能](https://twitter.com/jbevain/status/900043560665235456)。
 
 ### <a name="nameof-operator"></a>nameof 運算子
 
@@ -335,7 +335,7 @@ public class UsingStaticExample: MonoBehaviour
 
 將遊戲匯出至 iOS 這類平台時，Unity 將使用其 IL2CPP 引擎以將 IL「轉換」為 C++ 程式碼，而且接著會使用目標平台的原生編譯器來編譯 C++ 程式碼。 在此情節中，有幾項不支援的 .NET 功能，例如反映的組件和 `dynamic` 關鍵字的用法。 雖然您可以利用自己的程式碼控制這些功能的使用，但是請注意，使用未以 Unity 和 IL2CPP 撰寫的協力廠商 DLL 和 SDK 可能會發生問題。 如需本主題的詳細資訊，請參閱 Unity 網站上的 [Scripting Restrictions](https://docs.unity3d.com/Manual/ScriptingRestrictions.html) (指令碼限制) 文件。
 
-此外，如上述 Json.NET 範例所述，Unity 將嘗試在 IL2CPP 匯出程序期間去除未使用的程式碼。  雖然這通常不是問題，但是利用使用反映的程式庫，可能會不小心地去除將在執行階段呼叫而且無法在匯出時間決定的屬性或方法。  若要修正這些問題，請將 **link.xml** 檔案新增至專案，而專案包含不要對其執行去除程序的組件和命名空間清單。  如需完整詳細資料，請參閱[位元組程式碼去除的 Unity 文件](https://docs.unity3d.com/Manual/IL2CPP-BytecodeStripping.html)。
+此外，如上述 Json.NET 範例所述，Unity 將嘗試在 IL2CPP 匯出程序期間去除未使用的程式碼。  雖然這通常不是問題，但如果程式庫使用反映，它可能會不小心去除在執行時間呼叫的屬性或方法，而無法在匯出時間判斷。  若要修正這些問題，請將 **link.xml** 檔案新增至專案，而專案包含不要對其執行去除程序的組件和命名空間清單。  如需完整詳細資料，請參閱[位元組程式碼去除的 Unity 文件](https://docs.unity3d.com/Manual/IL2CPP-BytecodeStripping.html)。
 
 ## <a name="net-4x-sample-unity-project"></a>.NET 4.x 範例 Unity 專案
 
@@ -343,8 +343,8 @@ public class UsingStaticExample: MonoBehaviour
 
 ## <a name="additional-resources"></a>其他資源
 
-* [Unity Blog - Scripting Runtime Improvements in Unity 2018.2](https://blogs.unity3d.com/2018/07/11/scripting-runtime-improvements-in-unity-2018-2/) (Unity 部落格 - Unity 2018.2 中的指令碼執行階段改善)
-* [C# 的歷程記錄](https://docs.microsoft.com/dotnet/csharp/whats-new/csharp-version-history)
+* [Unity Blog - Scripting Runtime Improvements in Unity 2018.2](https://blogs.unity3d.com/2018/07/11/scripting-runtime-improvements-in-unity-2018-2/) (Unity 部落格 - Unity 2018.2 中的 Scripting runtime 改善)
+* [C# 的歷史](https://docs.microsoft.com/dotnet/csharp/whats-new/csharp-version-history)
 * [C# 6 的新功能](https://docs.microsoft.com/dotnet/csharp/whats-new/csharp-6)
 * [Asynchronous programming in Unity, Using Coroutine and TAP](https://blogs.msdn.microsoft.com/appconsult/2017/09/01/unity-coroutine-tap) (Unity 中使用協同程式和 TAP 的非同步程式設計)
 * [Async-Await Instead of Coroutines in Unity 2017](http://www.stevevermeulen.com/index.php/2017/09/using-async-await-in-unity3d-2017/) (Unity 2017 中的 Async-Await 而非協同程式)

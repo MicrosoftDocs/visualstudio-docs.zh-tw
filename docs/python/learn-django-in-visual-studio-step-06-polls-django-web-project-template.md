@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 93771033dd83ae988340ed355066992990f22f50
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 5e9220df4f9abdb806495e6108fb6039b28e0b7b
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62961808"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71254374"
 ---
 # <a name="step-6-use-the-polls-django-web-project-template"></a>步驟 6：使用 Polls Django Web 專案範本
 
@@ -43,7 +43,7 @@ ms.locfileid: "62961808"
 
 1. 與 Visual Studio 中的其他專案範本一樣，「投票 Django Web 專案」範本也包含一個 *requirements.txt* 檔案，Visual Studio 提示會詢問您要將這些相依性安裝到何處。 選擇 [安裝至虛擬環境] 選項，然後在 [新增虛擬環境] 對話方塊中，選取 [建立] 並接受預設值。
 
-1. Python 設定好虛擬環境後，在顯示的 *readme.html* 中會有相關操作方法，請遵循指示來初始化並建立 Django 進階使用者 (也就是系統管理員)。 步驟前後順序就是先在 [方案總管] 中的 **DjangoPolls** 專案按一下滑鼠右鍵，接著依序選取 [Python] > [Django 遷移] 命令，然後再一次在專案上按一下滑鼠右鍵，依序選取 [Python] > [Django 建立 Superuser] 命令，並遵循畫面上的提示操作。 (如果您試著先建立進階使用者，將會看到錯誤訊息，原因是資料庫尚未初始化)。
+1. Python 設定好虛擬環境後，在顯示的 *readme.html* 中會有相關操作方法，請遵循指示來初始化並建立 Django 進階使用者 (也就是系統管理員)。 步驟前後順序就是先在 [方案總管]中的 **DjangoPolls** 專案按一下滑鼠右鍵，接著依序選取 [Python] > [Django 遷移] 命令，然後再一次在專案上按一下滑鼠右鍵，依序選取 [Python] > [Django 建立 Superuser] 命令，並遵循畫面上的提示操作。 (如果您試著先建立進階使用者，將會看到錯誤訊息，原因是資料庫尚未初始化)。
 
 1. 您可以到 [方案總管] 中的 **DjangoPolls** 專案按一下滑鼠右鍵，然後選取 [設定為啟始專案]，即可將該專案設定為 Visual Studio 方案的預設專案。 以粗體字型顯示的起始專案，會在您啟動偵錯工具時執行。
 
@@ -112,9 +112,9 @@ class Choice(models.Model):
         return self.text
 ```
 
-如您所見，Poll 會在其 `text` 欄位中保留一段描述，以及在 `pub_date` 中保留一個發行日期。 這些欄位是針對資料庫的 Poll 而唯一存在的欄位；`total_votes` 會在執行階段進行計算。
+如您所見，Poll 會在其 `text` 欄位中保留一段描述，以及在 `pub_date` 中保留一個發行日期。 這些欄位是資料庫中的輪詢唯一存在的欄位;`total_votes`欄位是在執行時間計算。
 
-Choice 是透過 `poll` 欄位與 Poll 產生關聯，而且在 `text` 包含一段描述，以及在 `votes` 保留該選擇的一個計數。 `votes_percentage` 欄位會在執行階段進行計算，而且在資料庫中找不到它。
+Choice 是透過 `poll` 欄位與 Poll 產生關聯，而且在 `text` 包含一段描述，以及在 `votes` 保留該選擇的一個計數。 欄位`votes_percentage`是在執行時間計算的，而且在資料庫中找不到。
 
 欄位類型的完整清單是 `CharField` (有限文字) `TextField` (無限文字)、`EmailField`、`URLField`、`DateTimeField`、`IntegerField`、`DecimalField`、`BooleanField`、`ForeignKey` 和 `ManyToMany`。 每個欄位都會採用一些屬性，例如 `max_length`。 `blank=True` 屬性表示欄位是選擇性的。`null=true` 表示值是選擇性的。 另外還有一個 `choices` 屬性，它會將值限制為資料值/顯示值 tuple 陣列中旳值。 (請參閱 Django 文件中的[模型欄位參考](https://docs.djangoproject.com/en/2.0/ref/models/fields/))。
 
@@ -182,8 +182,8 @@ Django 會追蹤哪些已套用至任何特定資料庫的遷移，所以只要�
     author = models.CharField(max_length=100, blank=True)
     ```
 
-1. 儲存檔案，然後在 [方案總管] 的 **DjangoPolls** 專案上按一下滑鼠右鍵，接下來依序選取 [Python] > [Django 遷移] 命令。
-1. 依序選取 [專案] > [顯示所有檔案] 命令，查看 **migrations** 資料夾中產生的新指令碼，其名稱開頭為 **002_auto_**。 在檔案上按一下滑鼠右鍵，然後選取 [App_Data] 資料夾，然後選取 [包括在專案中]。 然後您可以再次依序選取 [專案] >  [顯示所有檔案] 來還原原始的檢視。 (請參閱下方的第二個問題，了解這個步驟的詳細資料)。
+1. 儲存檔案，然後在 [方案總管]的 **DjangoPolls** 專案上按一下滑鼠右鍵，接下來依序選取 [Python] > [Django 遷移] 命令。
+1. 依序選取 [專案] > [顯示所有檔案] 命令，查看 **migrations** 資料夾中產生的新指令碼，其名稱開頭為 **002_auto_** 。 在檔案上按一下滑鼠右鍵，然後選取 [App_Data] 資料夾，然後選取 [包括在專案中]。 然後您可以再次依序選取 [專案] >  [顯示所有檔案] 來還原原始的檢視。 (請參閱下方的第二個問題，了解這個步驟的詳細資料)。
 1. 如有需要，開啟這個檔案並檢查 Django 指令碼如伺記錄模型從舊狀態到新狀態狀態之間的變動過程。
 1. 再次到 Visual Studio 專案上按一下滑鼠右鍵，然後依序選取 [Python] > [Django 遷移]，將狀態變更套用至資料庫。
 1. 如有需要，請在適當的檢視器中開啟資料庫，以確認變更。
@@ -192,9 +192,9 @@ Django 會追蹤哪些已套用至任何特定資料庫的遷移，所以只要�
 
 ### <a name="question-what-happens-if-i-forget-to-run-the-migrate-command-after-making-changes-to-models"></a>問題：萬一我對模型做了一些變更，但之後卻忘了執行移轉命令，該怎麼辦？
 
-回答：如果模型與資料庫的內容不相符，Django 就會在執行階段因適用的例外狀況而失敗。 例如，如果您忘記遷移前一節顯示的模型變更，就會看到**沒有這種資料行：app_poll.author** 錯誤訊息：
+回答：如果模型不符合資料庫中的內容，Django 會在執行時間失敗，並出現適當的例外狀況。 例如，如果您忘記遷移前一節顯示的模型變更，就會看到**沒有這種資料行：app_poll.author** 錯誤訊息：
 
-![當模型變更尚未遷移時，就會顯示錯誤](media/django/step06-exception-when-forgetting-to-migrate.png)。
+![當模型變更尚未遷移時，就會顯示錯誤](media/django/step06-exception-when-forgetting-to-migrate.png)執行個體時提供 SQL Server 登入。
 
 ### <a name="question-why-doesnt-solution-explorer-show-newly-generated-scripts-after-running-django-make-migrations"></a>問題：為什麼執行 Django 移轉之後，[方案總管] 不顯示產生的新指令碼？
 
@@ -374,6 +374,6 @@ admin.site.register(Poll, PollAdmin)
 
 - 在 *tests.py* 中編寫單位測試；您可以在 Visual Studio 專案範本的基礎上再進行設計，而且 Django 文件中的 [Writing your first Django app, part 5 - testing](https://docs.djangoproject.com/en/2.0/intro/tutorial05/) (編寫第一個 Django 應用程式，第 5 部分 - 測試) 以及 [Testing in Django](https://docs.djangoproject.com/en/2.0/topics/testing/) (在 Django 中進行測試) 都有相關的詳細資訊。
 
-- 將 SQLite 的應用程式變更為生產層級資料存放區，例如 PostgreSQL、MySQL 和 SQL Server (它們全部可以在 Azure 上託管)。 如同[何時使用 SQLite](https://www.sqlite.org/whentouse.html) (sqlite.org) 所述，SQLite 適合低到中等流量而且每日點擊量不足 100K 的站台，超過此限，不建議使用。 而且也只許在一台電腦上使用，因此任何多伺服器案例均不列入考慮，例如負載平衡和地理複寫。 如需 Django 支援的其他資料庫相關資訊，請參閱[資料庫安裝](https://docs.djangoproject.com/en/2.0/intro/tutorial02/#database-setup)。 您也可以使用 [Azure SDK for Python](/python/azure/?view=azure-python) 來操作 Azure 儲存體服務，例如資料表和 blob。
+- 將 SQLite 的應用程式變更為生產層級資料存放區，例如 PostgreSQL、MySQL 和 SQL Server (它們全部可以在 Azure 上託管)。 如同[何時使用 SQLite](https://www.sqlite.org/whentouse.html) (sqlite.org) 所述，SQLite 適合低到中等流量而且每日點擊量不足 100K 的站台，超過此限，不建議使用。 而且也只許在一台電腦上使用，因此任何多伺服器案例均不列入考慮，例如負載平衡和地理複寫。 如需 Django 支援的其他資料庫相關資訊，請參閱[資料庫安裝](https://docs.djangoproject.com/en/2.0/intro/tutorial02/#database-setup)。 您也可以使用 [Azure SDK for Python](/azure/python/) 來操作 Azure 儲存體服務，例如資料表和 blob。
 
 - 在 Azure DevOps 此類的服務上設定持續整合/持續部署管線。 除了操作原始檔控制 (透過 Azure Repos、GitHub 或其他位置)，您可以設定 Azure DevOps 專案來自動執行單元測試作為發行必要條件，另外也請設定管線來部署至預備伺服器，以便進行傳統測試，之後再部署至生產環境伺服器中。 此外，Azure DevOps 還會與 App Insights 等監視解決方案整合，並使用敏捷式規劃工具來關閉整個週期。 如需詳細資訊，請參閱[使用 Azure DevOps 專案建立 Python 的 CI/CD 管線](/azure/devops-project/azure-devops-project-python?view=vsts)，以及一般的 [Azure DevOps 文件](/azure/devops/?view=vsts)。

@@ -12,12 +12,12 @@ f1_keywords:
 - vs.performancecenter
 ms.workload:
 - multiple
-ms.openlocfilehash: bdc605b614fab5b11c2efc8466480ebf49a1fee7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c34755fdffb9dd2084f9999aafb01bd6b9fdb4f0
+ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62569845"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70180120"
 ---
 # <a name="optimize-visual-studio-performance"></a>最佳化 Visual Studio 效能
 
@@ -25,7 +25,7 @@ ms.locfileid: "62569845"
 
 ## <a name="upgrade-visual-studio"></a>升級 Visual Studio
 
-如果您目前使用 Visual Studio 2015，請免費下載 [Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) 或 [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) 以查看其改善的效能。 其方案載入速度比 Visual Studio 2015 快二到三倍，而其他領域的效能亦有改善。 Visual Studio 2015 與 Visual Studio 2017 和 Visual Studio 2019 並存相容，試用看看並不會造成任何損失。
+如果您目前使用 Visual Studio 2015，請免費下載 [Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) 或 [Visual Studio 2019](https://visualstudio.microsoft.com/downloads) 以查看其改善的效能。 其方案載入速度比 Visual Studio 2015 快二到三倍，而其他領域的效能亦有改善。 Visual Studio 2015 與 Visual Studio 2017 和 Visual Studio 2019 並存相容，試用看看並不會造成任何損失。
 
 ::: moniker range="vs-2017"
 
@@ -49,7 +49,7 @@ ms.locfileid: "62569845"
 
 ## <a name="help-us-improve"></a>協助我們改善
 
-您的意見反應可協助我們改善。 使用 [回報問題] 功能，「記錄」追蹤，並將它傳送給我們。 選取 [快速啟動] 旁的意見反應圖示，或從功能表列中選取 [說明] > [傳送意見反應] > [回報問題]。 如需詳細資訊，請參閱[如何回報 Visual Studio 的問題](../ide/how-to-report-a-problem-with-visual-studio.md)。
+您的意見反應可協助我們改善。 使用 [回報問題]  功能，「記錄」追蹤，並將它傳送給我們。 選取 [快速啟動]  旁的意見反應圖示，或從功能表列中選取 [說明]   > [傳送意見反應]   > [回報問題]  。 如需詳細資訊，請參閱[如何回報 Visual Studio 的問題](../ide/how-to-report-a-problem-with-visual-studio.md)。
 
 ## <a name="see-also"></a>另請參閱
 

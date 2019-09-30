@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a9269a0862dacf928cffb31f722f382271d5f0e7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3cca385c346a7daa8aaddb377f999506ffb1abaa
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62542115"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71232044"
 ---
 # <a name="ca2145-transparent-methods-should-not-be-decorated-with-the-suppressunmanagedcodesecurityattribute"></a>CA2145:透明方法不可以使用 SuppressUnmanagedCodeSecurityAttribute 來裝飾
 
@@ -24,19 +24,19 @@ ms.locfileid: "62542115"
 |TypeName|TransparentMethodsShouldNotUseSuppressUnmanagedCodeSecurity|
 |CheckId|CA2145|
 |分類|Microsoft.Security|
-|中斷變更|中斷|
+|重大變更|中斷|
 
 ## <a name="cause"></a>原因
 
-透明方法，這個方法標記為<xref:System.Security.SecuritySafeCriticalAttribute>方法或包含一種方法的類型以標記<xref:System.Security.SuppressUnmanagedCodeSecurityAttribute>屬性。
+透明方法、使用<xref:System.Security.SecuritySafeCriticalAttribute>方法標記的方法，或包含方法的類型會<xref:System.Security.SuppressUnmanagedCodeSecurityAttribute>以屬性標記。
 
 ## <a name="rule-description"></a>規則描述
 
-方法使用裝飾<xref:System.Security.SuppressUnmanagedCodeSecurityAttribute>屬性有任何方法呼叫它時放置隱含的 LinkDemand。 這個 LinkDemand 會要求呼叫程式碼具備安全性關鍵。 標記使用 SuppressUnmanagedCodeSecurity 的方法<xref:System.Security.SecurityCriticalAttribute>屬性會讓這項需求更為明顯的方法呼叫者。
+以<xref:System.Security.SuppressUnmanagedCodeSecurityAttribute>屬性裝飾的方法會在呼叫它的任何方法上放置隱含的 LinkDemand。 這個 LinkDemand 會要求呼叫程式碼具備安全性關鍵。 將使用 SuppressUnmanagedCodeSecurity <xref:System.Security.SecurityCriticalAttribute>的方法標記為屬性，可讓方法的呼叫端更清楚這項需求。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
 
-若要修正此規則的違規情形，標記方法，或輸入具有<xref:System.Security.SecurityCriticalAttribute>屬性。
+若要修正此規則的違規情形，請使用<xref:System.Security.SecurityCriticalAttribute>屬性來標記方法或類型。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
 

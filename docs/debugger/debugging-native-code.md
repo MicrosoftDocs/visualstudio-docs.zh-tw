@@ -1,5 +1,5 @@
 ---
-title: 偵錯原生程式碼 |Microsoft Docs
+title: 偵錯工具機器碼 |Microsoft Docs
 ms.date: 04/11/2017
 ms.topic: conceptual
 f1_keywords:
@@ -20,45 +20,45 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5a7cf0b150c45037941010bf7e611f4bc21252c7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8115d16b64096af343adb918ba4855d9655d4df0
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62851902"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71211153"
 ---
 # <a name="debugging-native-code"></a>偵錯機器碼
-本章節內容涵蓋原生應用程式一些常見的偵錯問題和技術。 本章節所涵蓋的技術屬高階技術。 使用 Visual Studio 偵錯工具的機制，請參閱 <<c0> [ 第一次查看偵錯工具](../debugger/debugger-feature-tour.md))。
+本章節內容涵蓋原生應用程式一些常見的偵錯問題和技術。 本章節所涵蓋的技術屬高階技術。 如需使用 Visual Studio 偵錯工具的機制，請參閱[偵錯工具的第一次](../debugger/debugger-feature-tour.md)查看）。
 
 ## <a name="in-this-section"></a>本節內容
- [如何：偵錯最佳化程式碼](../debugger/how-to-debug-optimized-code.md)提供提示，偵錯最佳化程式碼，明確地說，為什麼您應該進行偵錯您的程式，偵錯和發行組態的預設最佳化設定非最佳化的版本而且秘訣的尋找僅限 bug，會出現在最佳化程式碼 （開啟偵錯組建組態中最佳化）。
+ [如何：「偵錯工具](../debugger/how-to-debug-optimized-code.md)優化程式碼」提供了用來對優化程式碼進行偵錯工具的秘訣，具體來說，就是為什麼您應該要為程式的未優化版本、debug 和 Release 設定的預設優化設定，以及尋找僅限會出現在優化程式碼中（在「偵錯工具」組建設定中開啟優化）。
 
- [DebugBreak 和 __debugbreak](../debugger/debugbreak-and-debugbreak.md)描述 Win32`DebugBreak`函式，並提供其平台 SDK 中的參考主題的連結。 同時也說明 `__debugbreak` 內建函式。
+ [DebugBreak 和 __debugbreak](../debugger/debugbreak-and-debugbreak.md)描述 Win32 `DebugBreak`函式，並提供其在 Platform SDK 中參考主題的連結。 同時也說明 `__debugbreak` 內建函式。
 
- [C /C++判斷提示](../debugger/c-cpp-assertions.md)討論判斷提示陳述式、 其運作方式、 使用 （攔截邏輯錯誤，檢查作業的結果和測試錯誤條件），它們的優點與他們互動`_DEBUG`，以及的類型支援的判斷提示[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。
+ [C/C++判斷](../debugger/c-cpp-assertions.md)提示會討論判斷提示語句、其運作方式、使用它們的優點（攔截邏輯錯誤、檢查作業的結果，以及測試錯誤狀況）、與其的`_DEBUG`互動，以及判斷提示的類型中的[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]支援。
 
- [如何：偵錯內嵌組譯碼](../debugger/how-to-debug-inline-assembly-code.md)提供簡短指示使用反組譯碼視窗來檢視組譯碼指令和暫存器視窗來檢視暫存器內容，並提供關於這些視窗的主題連結。
+ [如何：Debug 內嵌組解碼](../debugger/how-to-debug-inline-assembly-code.md)程式碼提供使用 [反組解碼] 視窗來查看元件指示和 [暫存器] 視窗以查看暫存器內容的簡短指示，並提供有關這些視窗的主題連結。
 
- [MFC 偵錯技術](../debugger/mfc-debugging-techniques.md)連結至偵錯技術的 MFC 程式，包括： afxDebugBreak、 TRACE 巨集，偵測記憶體流失的問題在 MFC 中，MFC 判斷提示，並減少 MFC 偵錯的大小建立。
+ [MFC 調試技術](../debugger/mfc-debugging-techniques.md)連結至 MFC 程式的調試技術，包括： afxDebugBreak、追蹤宏、偵測 MFC 中的記憶體流失、MFC 判斷提示，以及減少 MFC Debug 組建的大小。
 
- [CRT 偵錯技術](../debugger/crt-debugging-techniques.md)連結至偵錯技術的 C 執行階段程式庫，包括使用 CRT 偵錯程式庫、 報告巨集、 malloc 和 _malloc_dbg、 撰寫偵錯攔截函式和 CRT 偵錯堆積之間的差異。
+ [CRT 調試技術](../debugger/crt-debugging-techniques.md)連結至 C 執行時間程式庫的偵錯工具技術，包括使用 CRT Debug 程式庫、用於報告的宏、malloc 和 _malloc_dbg 之間的差異、撰寫 Debug 攔截函式，以及 CRT Debug 堆積。
 
- [偵錯原生程式碼的常見問題集](../debugger/debugging-native-code-faqs.md)提供有關偵錯視覺效果的常見問題集解答C++程式
+ [原生程式碼常見問題的調試](../debugger/debugging-native-code-faqs.md)程式提供有關調試C++程式的常見問題的解答
 
- [COM 和 ActiveX 進行偵錯](../debugger/com-and-activex-debugging.md)提供偵錯 COM 和 ActiveX 應用程式，包括您可以使用的工具來 COM 和 ActiveX 進行偵錯資訊。
+ [COM 和 ActiveX 調試](../debugger/com-and-activex-debugging.md)提供有關偵測 COM 和 ActiveX 應用程式的資訊，包括您可以用於 COM 和 ActiveX 偵錯工具的工具。
 
- [如何：偵錯插入程式碼](../debugger/how-to-debug-injected-code.md)提供偵錯會使用屬性的程式碼的指引。 包含如何開啟來源附註、如何檢視插入程式碼，以及如何在目前的執行點上檢視反組譯碼程式碼的指示。
+ [如何：[偵錯工具](../debugger/how-to-debug-injected-code.md) ] 插入的程式碼提供使用屬性的偵錯工具代碼的指引。 包含如何開啟來源附註、如何檢視插入程式碼，以及如何在目前的執行點上檢視反組譯碼程式碼的指示。
 
- [逐步解說：偵錯平行應用程式](../debugger/walkthrough-debugging-a-parallel-application.md)描述如何使用**平行工作**並**平行堆疊**工具視窗來偵錯平行應用程式。
+ [逐步解說：調試平行應用程式](../debugger/walkthrough-debugging-a-parallel-application.md)說明如何使用 [**平行**工作] 和 [**平行堆疊**] 工具視窗來進行平行應用程式的 debug。
 
 ## <a name="related-sections"></a>相關章節
- [視覺化C++專案類型](../debugger/debugging-preparation-visual-cpp-project-types.md)提供的主題會說明如何建立視覺效果的原生專案類型進行偵錯的連結C++專案範本。
+ [視覺C++效果專案類型](../debugger/debugging-preparation-visual-cpp-project-types.md)提供主題的連結，描述如何對視覺化C++專案範本所建立的原生專案類型進行偵錯工具。
 
- [偵錯 DLL 專案](../debugger/debugging-dll-projects.md)提供有關如何偵錯原生和 managed Dll 的資訊。
+ [調試 DLL 專案](../debugger/debugging-dll-projects.md)提供如何對原生和 managed Dll 進行調試的相關資訊。
 
- [第一次查看偵錯工具](../debugger/debugger-feature-tour.md)提供較大的區段的 偵錯文件的連結。 這些資訊包括：偵錯工具的新功能、設定和準備、中斷點、例外狀況處理、編輯後繼續、偵錯 Managed 程式碼、偵錯機器碼、偵錯 SQL，以及使用者介面的參考。
+ [第一次查看偵錯工具](../debugger/debugger-feature-tour.md)提供調試檔之較大區段的連結。 這些資訊包括：偵錯工具的新功能、設定和準備、中斷點、例外狀況處理、編輯後繼續、偵錯 Managed 程式碼、偵錯機器碼、偵錯 SQL，以及使用者介面的參考。
 
 ## <a name="see-also"></a>另請參閱
 
 - [偵錯工具安全性](../debugger/debugger-security.md)
-- [Visual Studio 偵錯](../debugger/index.md)
+- [Visual Studio 偵錯](../debugger/index.yml)

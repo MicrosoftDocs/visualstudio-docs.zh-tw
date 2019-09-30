@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a09d06a521c4751e3aea78b72b99a8126f4e7ff
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: f4c5f9c001505a76f19f2d675d552124c611f3d5
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68923258"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71236619"
 ---
 # <a name="ca1004-generic-methods-should-provide-type-parameter"></a>CA1004：泛型方法應該提供類型參數
 
@@ -31,22 +31,22 @@ ms.locfileid: "68923258"
 |TypeName|GenericMethodsShouldProvideTypeParameter|
 |CheckId|CA1004|
 |分類|Microsoft.Design|
-|中斷變更|中斷|
+|重大變更|中斷|
 
 ## <a name="cause"></a>原因
 外部可見泛型方法的參數簽章不包含對應至方法之所有型別參數的類型。
 
 ## <a name="rule-description"></a>規則描述
-推斷是指如何利用傳遞到泛型方法的引數類型，而不是利用型別引數的明確規格，來決定泛型方法的型別引數。 若要啟用推斷，泛型方法的參數簽章必須包含與方法之型別參數具有相同類型的參數。 在上述情形中，不必指定類型引數。 當您對所有型別參數使用推斷時, 呼叫泛型和非泛型實例方法的語法完全相同。 這可簡化泛型方法的可用性。
+推斷是指如何利用傳遞到泛型方法的引數類型，而不是利用型別引數的明確規格，來決定泛型方法的型別引數。 若要啟用推斷，泛型方法的參數簽章必須包含與方法之型別參數具有相同類型的參數。 在上述情形中，不必指定類型引數。 當您對所有型別參數使用推斷時，呼叫泛型和非泛型實例方法的語法完全相同。 這可簡化泛型方法的可用性。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
-若要修正此規則的違規, 請變更設計, 讓參數簽章針對方法的每個類型參數包含相同的類型。
+若要修正此規則的違規，請變更設計，讓參數簽章針對方法的每個類型參數包含相同的類型。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
-請勿隱藏此規則的警告。 以易於瞭解和使用的語法提供泛型, 可減少學習及增加新程式庫採用率所需的時間。
+請勿隱藏此規則的警告。 以易於瞭解和使用的語法提供泛型，可減少學習及增加新程式庫採用率所需的時間。
 
 ## <a name="example"></a>範例
-下列範例顯示呼叫兩個泛型方法的語法。 `InferredTypeArgument`會推斷的型別引數, 而且`NotInferredTypeArgument`必須明確指定的型別引數。
+下列範例顯示呼叫兩個泛型方法的語法。 `InferredTypeArgument`會推斷的型別引數，而且`NotInferredTypeArgument`必須明確指定的型別引數。
 
 [!code-vb[FxCop.Design.Inference#1](../code-quality/codesnippet/VisualBasic/ca1004-generic-methods-should-provide-type-parameter_1.vb)]
 [!code-csharp[FxCop.Design.Inference#1](../code-quality/codesnippet/CSharp/ca1004-generic-methods-should-provide-type-parameter_1.cs)]

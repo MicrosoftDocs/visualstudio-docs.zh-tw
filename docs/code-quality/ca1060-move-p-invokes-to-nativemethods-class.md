@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c05c0b17bc9866edd7c07874be14578ed4cf884
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: cfa705654a5cc4122e5ee554fe050722d7883970
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68922551"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71235473"
 ---
 # <a name="ca1060-move-pinvokes-to-nativemethods-class"></a>CA1060:必須將 P/Invokes 移到 NativeMethods 類別
 
@@ -31,38 +31,38 @@ ms.locfileid: "68922551"
 |TypeName|MovePInvokesToNativeMethodsClass|
 |CheckId|CA1060|
 |分類|Microsoft.Design|
-|中斷變更|中斷|
+|重大變更|中斷|
 
 ## <a name="cause"></a>原因
 
-方法使用平台叫用服務來存取未受管理的程式碼, 而且不是其中一個**NativeMethods**類別的成員。
+方法使用平台叫用服務來存取未受管理的程式碼，而且不是其中一個**NativeMethods**類別的成員。
 
 ## <a name="rule-description"></a>規則描述
 
-平台叫用方法 (例如使用<xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName>屬性 (attribute) 標記), 或在中`Declare` [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]使用關鍵字所定義的方法, 會存取非受控碼。 這些方法應該是下列其中一個類別:
+平台叫用方法（例如使用<xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName>屬性（attribute）標記），或在中`Declare` [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]使用關鍵字所定義的方法，會存取非受控碼。 這些方法應該是下列其中一個類別：
 
-- **NativeMethods** -此類別不會隱藏非受控程式碼許可權的堆疊逐步解說。 (<xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName>不得套用至此類別)。這個類別適用于可在任何地方使用的方法, 因為將會執行堆疊的逐步解說。
+- **NativeMethods** -此類別不會隱藏非受控程式碼許可權的堆疊逐步解說。 （<xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName>不得套用至此類別）。這個類別適用于可在任何地方使用的方法，因為將會執行堆疊的逐步解說。
 
-- **SafeNativeMethods** -這個類別會隱藏非受控程式碼許可權的堆疊逐步解說。 (<xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName>會套用至這個類別)。這個類別適用于任何人都可以呼叫的安全方法。 這些方法的呼叫端不一定要執行完整的安全性審查, 以確保使用方式是安全的, 因為方法對任何呼叫者而言都無害。
+- **SafeNativeMethods** -這個類別會隱藏非受控程式碼許可權的堆疊逐步解說。 （<xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName>會套用至這個類別）。這個類別適用于任何人都可以呼叫的安全方法。 這些方法的呼叫端不一定要執行完整的安全性審查，以確保使用方式是安全的，因為方法對任何呼叫者而言都無害。
 
-- **UnsafeNativeMethods** -這個類別會隱藏非受控程式碼許可權的堆疊逐步解說。 (<xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName>會套用至這個類別)。此類別適用于可能危險的方法。 這些方法的任何呼叫端都必須執行完整的安全性審查, 以確保使用方式是安全的, 因為不會執行任何堆疊的逐步解說。
+- **UnsafeNativeMethods** -這個類別會隱藏非受控程式碼許可權的堆疊逐步解說。 （<xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName>會套用至這個類別）。此類別適用于可能危險的方法。 這些方法的任何呼叫端都必須執行完整的安全性審查，以確保使用方式是安全的，因為不會執行任何堆疊的逐步解說。
 
-這些類別會宣告為`internal` (`Friend`, 在 Visual Basic 中), 並宣告私用的函式, 以防止建立新的實例。 這些類別中的方法應該是`static`和`internal` (`Shared`以及`Friend` Visual Basic 中的)。
+這些類別會宣告為`internal` （`Friend`，在 Visual Basic 中），並宣告私用的函式，以防止建立新的實例。 這些類別中的方法應該是`static`和`internal` （`Shared`以及`Friend` Visual Basic 中的）。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
-若要修正此規則的違規情形, 請將方法移至適當的**NativeMethods**類別。 對於大部分的應用程式而言, 將 P/Invoke 移至名為**NativeMethods**的新類別就已足夠。
+若要修正此規則的違規情形，請將方法移至適當的**NativeMethods**類別。 對於大部分的應用程式而言，將 P/Invoke 移至名為**NativeMethods**的新類別就已足夠。
 
-不過, 如果您要開發用於其他應用程式的程式庫, 您應該考慮定義其他兩個稱為**SafeNativeMethods**和**UnsafeNativeMethods**的類別。 這些類別與**NativeMethods**類別類似;不過, 它們會使用稱為**SuppressUnmanagedCodeSecurityAttribute**的特殊屬性來標示。 套用此屬性時, 執行時間不會執行完整的堆疊逐步解說, 以確保所有呼叫端都具有**UnmanagedCode**許可權。 執行時間通常會在啟動時檢查這個許可權。 由於不會執行檢查, 因此可以大幅改善對這些未受管理方法之呼叫的效能, 它也可讓具有有限許可權的程式碼呼叫這些方法。
+不過，如果您要開發用於其他應用程式的程式庫，您應該考慮定義其他兩個稱為**SafeNativeMethods**和**UnsafeNativeMethods**的類別。 這些類別與**NativeMethods**類別類似;不過，它們會使用稱為**SuppressUnmanagedCodeSecurityAttribute**的特殊屬性來標示。 套用此屬性時，執行時間不會執行完整的堆疊逐步解說，以確保所有呼叫端都具有**UnmanagedCode**許可權。 執行時間通常會在啟動時檢查這個許可權。 由於不會執行檢查，因此可以大幅改善對這些未受管理方法之呼叫的效能，它也可讓具有有限許可權的程式碼呼叫這些方法。
 
-不過, 您應該非常小心地使用這個屬性。 如果未正確執行, 可能會有嚴重的安全性影響。
+不過，您應該非常小心地使用這個屬性。 如果未正確執行，可能會有嚴重的安全性影響。
 
-如需如何執行方法的詳細資訊, 請參閱**NativeMethods**範例、 **SafeNativeMethods**範例和**UnsafeNativeMethods**範例。
+如需如何執行方法的詳細資訊，請參閱**NativeMethods**範例、 **SafeNativeMethods**範例和**UnsafeNativeMethods**範例。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
 請勿隱藏此規則的警告。
 
 ## <a name="example"></a>範例
-下列範例會宣告違反此規則的方法。 若要更正違規, 應將**RemoveDirectory** P/Invoke 移至專為只保存 P/invoke 而設計的適當類別。
+下列範例會宣告違反此規則的方法。 若要更正違規，應將**RemoveDirectory** P/Invoke 移至專為只保存 P/invoke 而設計的適當類別。
 
 [!code-vb[FxCop.Design.DllImportNativeMethods#1](../code-quality/codesnippet/VisualBasic/ca1060-move-p-invokes-to-nativemethods-class_1.vb)]
 [!code-csharp[FxCop.Design.DllImportNativeMethods#1](../code-quality/codesnippet/CSharp/ca1060-move-p-invokes-to-nativemethods-class_1.cs)]
@@ -70,7 +70,7 @@ ms.locfileid: "68922551"
 ## <a name="nativemethods-example"></a>NativeMethods 範例
 
 ### <a name="description"></a>描述
-由於**NativeMethods**類別不應使用**SuppressUnmanagedCodeSecurityAttribute**來標記, 因此 put 中的 P/invoke 將需要**UnmanagedCode**許可權。 因為大部分的應用程式都是從本機電腦執行, 並與完全信任一起執行, 這通常不是問題。 不過, 如果您正在開發可重複使用的程式庫, 您應該考慮定義**SafeNativeMethods**或**UnsafeNativeMethods**類別。
+由於**NativeMethods**類別不應使用**SuppressUnmanagedCodeSecurityAttribute**來標記，因此 put 中的 P/invoke 將需要**UnmanagedCode**許可權。 因為大部分的應用程式都是從本機電腦執行，並與完全信任一起執行，這通常不是問題。 不過，如果您正在開發可重複使用的程式庫，您應該考慮定義**SafeNativeMethods**或**UnsafeNativeMethods**類別。
 
 下列範例顯示從**若要 messagebeep**函式包裝的**互動聲嗶**方法。 **若要 messagebeep** P/Invoke 會放在**NativeMethods**類別中。
 
@@ -80,10 +80,10 @@ ms.locfileid: "68922551"
 
 ## <a name="safenativemethods-example"></a>SafeNativeMethods 範例
 
-### <a name="description"></a>說明
-P/Invoke 方法可以安全地公開給任何應用程式, 而且沒有任何副作用應該放在名為**SafeNativeMethods**的類別中。 您不需要要求許可權, 也不需要特別注意呼叫它們的位置。
+### <a name="description"></a>描述
+P/Invoke 方法可以安全地公開給任何應用程式，而且沒有任何副作用應該放在名為**SafeNativeMethods**的類別中。 您不需要要求許可權，也不需要特別注意呼叫它們的位置。
 
-下列範例顯示**TickCount**屬性, 它會從 Kernel32.dll 包裝**GetTickCount**函數。
+下列範例顯示**TickCount**屬性，它會從 Kernel32.dll 包裝**GetTickCount**函數。
 
 ### <a name="code"></a>程式碼
 [!code-vb[FxCop.Design.NativeMethodsSafe#1](../code-quality/codesnippet/VisualBasic/ca1060-move-p-invokes-to-nativemethods-class_3.vb)]
@@ -91,8 +91,8 @@ P/Invoke 方法可以安全地公開給任何應用程式, 而且沒有任何副
 
 ## <a name="unsafenativemethods-example"></a>UnsafeNativeMethods 範例
 
-### <a name="description"></a>說明
-P/Invoke 無法安全呼叫, 而且可能造成副作用的方法, 應該放在名為**UnsafeNativeMethods**的類別中。 應嚴格檢查這些方法, 以確保它們不會在無意中向使用者公開。 規則[CA2118:閱讀 SuppressUnmanagedCodeSecurityAttribute 的](../code-quality/ca2118-review-suppressunmanagedcodesecurityattribute-usage.md)使用方式有助於解決此情況。 或者, 這些方法在使用時, 應該有另一個要求的許可權, 而不是**UnmanagedCode** 。
+### <a name="description"></a>描述
+P/Invoke 無法安全呼叫，而且可能造成副作用的方法，應該放在名為**UnsafeNativeMethods**的類別中。 應嚴格檢查這些方法，以確保它們不會在無意中向使用者公開。 規則[CA2118：閱讀 SuppressUnmanagedCodeSecurityAttribute 的](../code-quality/ca2118-review-suppressunmanagedcodesecurityattribute-usage.md)使用方式有助於解決此情況。 或者，這些方法在使用時，應該有另一個要求的許可權，而不是**UnmanagedCode** 。
 
 下列範例會顯示資料**指標。隱藏**方法會將**ShowCursor**函式從 user32 中包裝。
 

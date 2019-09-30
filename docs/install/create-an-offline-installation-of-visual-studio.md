@@ -16,12 +16,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 616c27f16b4fca9be6f8dab3cdf70fafae52f193
-ms.sourcegitcommit: 0f5f7955076238742f2071d286ad8e896f3a6cad
-ms.translationtype: HT
+ms.openlocfilehash: 1c210498b88ab1a4fd149870fc3528ddc869ecd6
+ms.sourcegitcommit: 4d2620bee4688fb881e09a07ea4a264b99f0743e
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "68483512"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71322560"
 ---
 # <a name="create-an-offline-installation-of-visual-studio"></a>建立 Visual Studio 的離線安裝
 
@@ -33,7 +33,7 @@ ms.locfileid: "68483512"
 
 ::: moniker range="vs-2019"
 
-Visual Studio 2019 的設計適用於各種網路和電腦組態。 雖然建議您嘗試 [Visual Studio Web 安裝程式](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) (這是小型檔案，並可讓您掌握所有最新修正程式和功能)，但我們了解您可能無法這麼做。
+Visual Studio 2019 的設計適用於各種網路和電腦組態。 雖然建議您嘗試 [Visual Studio Web 安裝程式](https://visualstudio.microsoft.com/downloads) (這是小型檔案，並可讓您掌握所有最新修正程式和功能)，但我們了解您可能無法這麼做。
 
 ::: moniker-end
 
@@ -46,7 +46,7 @@ Visual Studio 2019 的設計適用於各種網路和電腦組態。 雖然建議
 
 ::: moniker range="vs-2017"
 
-[**15.8 版的新功能**](/visualstudio/releasenotes/vs2017-relnotes-v15.8#install)：在您下載 Web 安裝程式之後，請從 Visual Studio 安裝程式中選取新的 [全部下載後安裝]  選項。 然後，繼續執行您的安裝。
+[**15.8 版的新功能**](/visualstudio/releasenotes/vs2017-relnotes-v15.8#install)：在您下載 Web 安裝程式之後，請從 Visual Studio 安裝程式中選取新的 [全部下載後安裝] 選項。 然後，繼續執行您的安裝。
 
    ![[全部下載後安裝] 選項](media/download-all-then-install.png)
 
@@ -54,7 +54,7 @@ Visual Studio 2019 的設計適用於各種網路和電腦組態。 雖然建議
 
 ::: moniker range="vs-2019"
 
-在您下載 Web 安裝程式之後，請從 Visual Studio 安裝程式中選取新的 [全部下載後安裝]  選項。 然後，繼續執行您的安裝。
+在您下載 Web 安裝程式之後，請從 Visual Studio 安裝程式中選取新的 [全部下載後安裝] 選項。 然後，繼續執行您的安裝。
 
    ![[全部下載後安裝] 選項](media/vs-2019/download-all-then-install-from-installer.png)
 
@@ -84,6 +84,7 @@ Visual Studio 2019 的設計適用於各種網路和電腦組態。 雖然建議
 | Visual Studio Community    | [vs_community.exe](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=community&rel=15&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=offline+install&utm_content=download+vs2017)       |
 | Visual Studio Professional | [vs_professional.exe](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=professional&rel=15&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=offline+install&utm_content=download+vs2017) |
 | Visual Studio Enterprise   | [vs_enterprise.exe](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=enterprise&rel=15&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=offline+install&utm_content=download+vs2017)     |
+| Visual Studio Build Tools   | [vs_buildtools .exe](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=buildtools&rel=15&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=offline+install&utm_content=download+vs2017)     |
 
 ::: moniker-end
 
@@ -94,6 +95,7 @@ Visual Studio 2019 的設計適用於各種網路和電腦組態。 雖然建議
 | Visual Studio Community    | [vs_community.exe](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=community&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=offline+install&utm_content=download+vs2019)       |
 | Visual Studio Professional | [vs_professional.exe](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=professional&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=offline+install&utm_content=download+vs2019) |
 | Visual Studio Enterprise   | [vs_enterprise.exe](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=enterprise&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=offline+install&utm_content=download+vs2019)     |
+| Visual Studio Build Tools   | [vs_buildtools .exe](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=buildtools&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=offline+install&utm_content=download+vs2019)     |
 
 ::: moniker-end
 

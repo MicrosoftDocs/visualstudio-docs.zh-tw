@@ -1,61 +1,69 @@
 ---
-title: 步驟 2：執行程式
-ms.date: 11/04/2016
-ms.topic: conceptual
+title: 步驟 2：執行您的圖片檢視器應用程式
+ms.date: 09/06/2019
 ms.assetid: 9a8fe90e-c97b-4e98-b6c8-0c6b3962c49d
+ms.topic: tutorial
+ms.prod: visual-studio-windows
+ms.technology: vs-ide-general
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 74f6d64d515ac7fab454b123686e671d9bcd1d2d
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+ms.openlocfilehash: 772b80452c20d84b1145a5b8762365f2fe3a8e69
+ms.sourcegitcommit: 6eed0372976c0167b9a6d42ba443f9a474b8bb91
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68918921"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71118832"
 ---
-# <a name="step-2-run-your-program"></a>步驟 2：執行程式
-當您建立新的方案時，實際上就是建置要執行的程式。 它現在還沒有其他功能，只是顯示空白視窗，標題列中顯示 **Form1**。 但它真的可以執行，因為您即將進一步了解其做法。
+# <a name="step-2-run-your-picture-viewer-app"></a>步驟 2：執行您的圖片檢視器應用程式
 
-![影片連結](../data-tools/media/playvideo.gif)如需本主題的影片版本，請參閱[教學課程 1：在 Visual Basic 中建立圖片檢視器 - 影片 1](http://go.microsoft.com/fwlink/?LinkId=205209) 或[教學課程 1：在 C# 中建立圖片檢視器 - 影片 1](http://go.microsoft.com/fwlink/?LinkId=205199)。 這些影片使用舊版 Visual Studio，因此有一些功能表命令以及某些使用者介面項目會有些微差異。 不過，概念和程序在目前 Visual Studio 版本中的運作方式雷同。
+當您建立 Windows Forms 應用程式專案時，實際上會建立一個執行的程式。 在本教學課程中，您的圖片檢視器應用&mdash;程式尚未執行太多動作，雖然它會這麼做。 目前，它會顯示一個空白視窗，顯示標題列中的 [ **Form1** ]。
 
-## <a name="to-run-your-program"></a>若要執行程式
+以下是執行應用程式的方式。 
 
-1. 使用下列其中一種方法執行您的程式。
+1. 選擇下列其中一種方法：
 
     - 選擇 **F5** 鍵。
 
-    - 在功能表列上，依序選擇 [偵錯]   > [開始偵錯]  。
+    - 在功能表列上，依序選擇 [偵錯] > [開始偵錯]。
 
-    - 在工具列上選擇 [開始偵錯]  按鈕，如下所示。
+    - 在工具列上，選擇 [**開始調試**] 按鈕，如下所示：
 
-         ![[開始偵錯] 工具列按鈕](../ide/media/express_icondebug.png)
-[開始偵錯] **** 工具列按鈕
+      ![開始調試工具列按鈕](../ide/media/express_icondebug.png)<br>
+      ***開始調試****工具列按鈕*
 
-2. Visual Studio 會執行您的程式，且稱為 [Form1]  的視窗會隨即出現。 下圖顯示您剛才建置的程式。 程式正在執行中，您很快就會加上更多功能。
+1. Visual Studio 會執行您的應用程式，而名為**Form1**的視窗隨即出現。 下列螢幕擷取畫面顯示您剛建立的應用程式。 應用程式正在執行，您很快就會新增到其中。
 
-     ![執行中的 Windows Forms 應用程式](../ide/media/express_firstrun.png)
-執行中的 **Windows Form** 應用程式
+     ![Windows Forms 應用程式正在執行](../ide/media/express_firstrun.png)<br>
+***Windows Forms 應用程式*** *，執行*
 
-3. 返回 Visual Studio 整合式開發環境 (IDE)，並查看新的工具列。 當您執行程式時，其他按鈕會出現在工具列上。 這些按鈕讓您執行動作如停止和啟動程式，並協助搜尋程式的所有錯誤 (Bug)。 在這個範例中，我們只會使用它啟動和停止程式。
+1. 回到 Visual Studio 的整合式開發環境（IDE），然後查看新的工具列。 當您執行應用程式時，工具列上會出現其他按鈕。 這些按鈕可讓您執行停止和啟動應用程式之類的動作，並協助您追蹤任何可能發生的錯誤（bug）。 在此範例中，我們會使用它來啟動和停止應用程式。
 
-     ![偵錯工具列](../ide/media/express_debugtoolbar.png)
-**偵錯**工具列
+     ![調試工具列](../ide/media/express_debugtoolbar.png)<br>
+***調試****工具列*
 
-4. 使用下列其中一種方法停止您的程式。
+1. 使用下列其中一種方法來停止您的應用程式：
 
-    - 在工具列上選擇 [停止偵錯]  按鈕。
+    - 在工具列上選擇 [停止偵錯] 按鈕。
 
-    - 在功能表列上，依序選擇 [偵錯]   > [停止偵錯]  。
+    - 在功能表列上，依序選擇 [偵錯] > [停止偵錯]。
 
-    - 選擇 [Form1]  視窗右上角的 **X** 按鈕。
+    - 使用您的鍵盤，然後按**Shift** + **F5**。
+
+    - 選擇 [Form1] 視窗右上角的 **X** 按鈕。
 
     > [!NOTE]
-    > 當您在 IDE 內部執行程式時，就稱為「偵錯」，因為通常這樣做可找出並修正程式碼中的 Bug (錯誤)。 雖然此程式很小，而且實際上不會有任何作用，但它仍然是真正的程式。 您遵循相同程序執行和偵錯其他程式。 若要深入了解偵錯，請參閱[偵錯工具簡介](../debugger/debugger-feature-tour.md)。
+    > 當您從 IDE 內部執行應用程式時，它稱為「偵錯工具」，因為您通常會這麼做，以便找出並修正應用程式中的 bug （錯誤）。 雖然此應用程式很小，而且實際上不會執行任何動作，但仍是真正的程式。 您遵循相同程序執行和偵錯其他程式。 若要深入了解偵錯，請參閱[偵錯工具簡介](../debugger/debugger-feature-tour.md)。
 
-## <a name="to-continue-or-review"></a>若要繼續或檢視
+## <a name="next-steps"></a>後續步驟
 
-- 若要前往下一個教學課程步驟，請參閱[步驟 3：設定表單屬性](../ide/step-3-set-your-form-properties.md)。
+* 若要移至下一個教學課程步驟 **，請參閱[步驟3：設定您的窗](../ide/step-3-set-your-form-properties.md)體屬性。**
 
-- 若要回到上一個教學課程步驟，請參閱[步驟 1：建立 Windows Forms 應用程式專案](../ide/step-1-create-a-windows-forms-application-project.md)。
+* 若要回到上一個教學課程步驟，請參閱[步驟 1：建立 Windows Forms 應用程式專案](../ide/step-1-create-a-windows-forms-application-project.md)。
+
+## <a name="see-also"></a>另請參閱
+
+* [教學課程 2：建立計時的數學測驗](tutorial-2-create-a-timed-math-quiz.md)
+* [教學課程 3：建立配對遊戲](tutorial-3-create-a-matching-game.md)

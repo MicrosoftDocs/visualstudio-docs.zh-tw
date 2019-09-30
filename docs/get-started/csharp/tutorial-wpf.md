@@ -14,33 +14,37 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8803bf6992608a496d560b68b71545d764803760
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+ms.openlocfilehash: facd2ed28ae4eb3e34843bff331567c4c8c55526
+ms.sourcegitcommit: 78e2637e4fbfadd4509b55276816b64f5c24c606
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68924355"
+ms.lasthandoff: 09/10/2019
+ms.locfileid: "70864770"
 ---
 # <a name="tutorial-create-a-simple-application-with-c"></a>教學課程：使用 C\# 建立一個簡單的應用程式
 
 藉由完成這個教學課程，讓自己更熟悉許多可在使用 Visual Studio 開發應用程式時運用的工具、對話方塊和設計工具。 當您在學習如何使用整合式開發環境 ([IDE](visual-studio-ide.md)) 時，您會建立簡單的 "Hello, World" 應用程式、設計 UI、新增程式碼，以及進行偵錯。
 
+## <a name="prerequisites"></a>必要條件
+
 ::: moniker range="vs-2017"
-如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)頁面免費進行安裝。
+如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://visualstudio.microsoft.com/vs/older-downloads/?)頁面免費進行安裝。
 ::: moniker-end
 ::: moniker range=">=vs-2019"
-如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019)頁面免費進行安裝。
+
+- 如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/)頁面免費進行安裝。
+- 在本教學課程中，您可以使用 .NET Framework 或 .NET Core。 .NET Core 是較新、現代化的架構。 .NET Core 需要 Visual Studio 2019 16.3 版或更新版本。
 ::: moniker-end
 
 ## <a name="configure-the-ide"></a>設定 IDE
 
 ::: moniker range="vs-2017"
 
-當您第一次開啟 Visual Studio 時，系統會提示您登入。 這在此教學課程中為選擇性步驟。 接下來您可能會看到對話方塊，要求您選擇開發設定和色彩佈景主題。 保留預設值，然後選擇 [啟動 Visual Studio]  。
+當您第一次開啟 Visual Studio 時，系統會提示您登入。 這在此教學課程中為選擇性步驟。 接下來您可能會看到對話方塊，要求您選擇開發設定和色彩佈景主題。 保留預設值，然後選擇 [啟動 Visual Studio]。
 
 ![選擇設定對話方塊](../media/exploreide-settings.png)
 
-Visual Studio 啟動後，您會看到工具視窗、功能表和工具列，以及主視窗空間。 工具視窗會停駐在應用程式視窗的左右端，同時 [ **快速啟動**]、功能表列和標準工具列則位於視窗的上方。 位於應用程式視窗中央的是 [ **起始頁**]。 當您載入方案或專案時，編輯器和設計工具會出現在 [起始頁]  所在的空間中。 在開發應用程式時，您大部分時間都會在此中央區域工作。
+Visual Studio 啟動後，您會看到工具視窗、功能表和工具列，以及主視窗空間。 工具視窗會停駐在應用程式視窗的左右端，同時 [ **快速啟動**]、功能表列和標準工具列則位於視窗的上方。 位於應用程式視窗中央的是 [ **起始頁**]。 當您載入方案或專案時，編輯器和設計工具會出現在 [起始頁] 所在的空間中。 在開發應用程式時，您大部分時間都會在此中央區域工作。
 
 ![已套用一般設定的 Visual Studio 2017 IDE](../media/exploreide-idewithgeneralsettings.png "已套用一般設定的 Visual Studio 2017 IDE 的螢幕擷取畫面")
 
@@ -48,7 +52,7 @@ Visual Studio 啟動後，您會看到工具視窗、功能表和工具列，以
 
 ::: moniker range=">=vs-2019"
 
-當您啟動 Visual Studio 時，會先開啟 [開始] 視窗。 選取 [不使用程式碼繼續]  以開啟開發環境。 您會看到工具視窗、功能表和工具列，以及主視窗空間。 [工具] 視窗會停駐在應用程式視窗的左側和右側，搜尋方塊、功能表列和標準工具列則位於視窗上方。 當您載入方案或專案時，編輯器和設計工具會出現在應用程式視窗的中央區域。 在開發應用程式時，您大部分時間都會在此中央區域工作。
+當您啟動 Visual Studio 時，會先開啟 [開始] 視窗。 選取 [不使用程式碼繼續] 以開啟開發環境。 您會看到工具視窗、功能表和工具列，以及主視窗空間。 [工具] 視窗會停駐在應用程式視窗的左側和右側，搜尋方塊、功能表列和標準工具列則位於視窗上方。 當您載入方案或專案時，編輯器和設計工具會出現在應用程式視窗的中央區域。 在開發應用程式時，您大部分時間都會在此中央區域工作。
 
 ::: moniker-end
 
@@ -58,11 +62,11 @@ Visual Studio 啟動後，您會看到工具視窗、功能表和工具列，以
 
 ::: moniker range="vs-2017"
 
-1. 建立新的專案。 在功能表列上，選取 [檔案]   > [新增]   > [專案]  。
+1. 建立新的專案。 在功能表列上，選取 [檔案] > [新增] > [專案]。
 
      ![在功能表列上，依序選擇 [檔案]，[新增]，[專案]](../media/exploreide-filenewproject.png "可選擇 [檔案]，[新增]，[專案] 之功能表列的螢幕擷取畫面")
 
-1. 在 [新增專案]  對話方塊中，選取 [已安裝]   > [Visual C#]   > [Windows 桌面]  類別，然後選取 [WPF 應用程式 (.NET Framework)]  範本。 將專案命名為 **HelloWPFApp**，然後選取 [確定]  。
+1. 在 [新增專案] 對話方塊中，選取 [已安裝] > [Visual C#] > [Windows 桌面] 類別，然後選取 [WPF 應用程式 (.NET Framework)] 範本。 將專案命名為 **HelloWPFApp**，然後選取 [確定]。
 
      ![Visual Studio [新增專案] 對話方塊中的 WPF 應用程式範本](media/exploreide-newprojectcsharp.png "[新增專案] 對話方塊中 WPF 應用程式範本的螢幕擷取畫面")
 
@@ -72,15 +76,18 @@ Visual Studio 啟動後，您會看到工具視窗、功能表和工具列，以
 
 1. 開啟 Visual Studio 2019。
 
-1. 在開始視窗中，選擇 [建立新專案]  。
+1. 在開始視窗中，選擇 [建立新專案]。
 
    ![檢視 [建立新專案] 視窗](../../get-started/media/vs-2019/start-window-create-new-project.png "[建立新專案] 視窗的螢幕擷取畫面")
 
-1. 在 [建立新專案]  畫面上，搜尋 "WPF"、選擇 [WPF 應用程式 (.NET Framework)]  ，然後選擇 [下一步]  。
+1. 在 [**建立新專案**] 畫面上，搜尋 "wpf"，選擇 [ **wpf 應用程式（.net Core）** ]，然後選擇 **[下一步]** 。
 
    ![[建立新專案] 對話方塊中的 WPF 應用程式範本](media/vs-2019/exploreide-newprojectcsharp-vs2019.png "[建立新專案] 對話方塊中 WPF 應用程式範本的螢幕擷取畫面")
 
-1. 在下一個畫面上，為專案指定名稱 **HelloWPFApp**，然後選擇 [建立]  。
+   > [!NOTE]
+   > 您可能會發現兩個 WPF 桌面範本，一個用於 .NET Framework，另一個用於 .NET Core。 .NET Core 範本適用于 Visual Studio 2019 16.3 版和更新版本。 您可以在本教學課程中使用其中一種，但我們建議用於新開發的 .NET Core。
+
+1. 在下一個畫面上，為專案指定名稱 **HelloWPFApp**，然後選擇 [建立]。
 
    ![將專案命名為 'HelloWPFApp'](./media/vs-2019/exploreide-nameproject.png "您可為專案命名之視窗的螢幕擷取畫面")
 
@@ -93,37 +100,29 @@ Visual Studio 會建立 HelloWPFApp 專案和方案，而且**方案總管**會�
 > [!NOTE]
 > 如需 XAML (eXtensible Application Markup Language) 的詳細資訊，請參閱 [WPF 的 XAML 概觀](/dotnet/framework/wpf/advanced/xaml-overview-wpf)頁面。
 
-建立專案之後，您可以進行自訂。 若要這麼做，請選擇 [檢視]  功能表中的 [屬性]  視窗，或按 **F4**。 然後，您可以顯示和變更應用程式中專案項目、控制項及其他項目的選項。
+建立專案之後，您可以進行自訂。 若要這麼做，請選擇 [檢視] 功能表中的 [屬性] 視窗，或按 **F4**。 然後，您可以顯示和變更應用程式中專案項目、控制項及其他項目的選項。
 
    ![[屬性] 視窗](../media/exploreide-hellowpfappfiles.png "包含 WPF 檔案應用程式名稱之 [屬性] 視窗的螢幕擷取畫面")   
 
 ### <a name="change-the-name-of-mainwindowxaml"></a>變更 MainWindow.xaml 的名稱
 
-讓我們給 MainWindow 一個更具體的名稱。
-
-1. 在 [方案總管]  中，選取 *MainWindow.xaml*。 您應該會看到 [屬性]  視窗；如果沒有，請選擇 [檢視]  功能表和 [屬性視窗]  項目。 (或按 **F4**。)
-
-1. 將 [ **檔案名稱** ] 屬性變更為 `Greetings.xaml`。
-
-     ![已醒目提示檔案名稱的 [屬性] 視窗](../media/exploreide-filenameinpropertieswindow.png "已醒目提示檔案名稱之 [屬性] 視窗的螢幕擷取畫面")
-
-     [方案總管]  現在顯示的檔案名稱是 *Greetings.xaml*，而巢狀程式碼檔案的名稱現在是 *Greetings.xaml.cs*。 這個程式碼檔案是巢狀在 *.xaml* 檔案節點下，以顯示它們彼此密切相關。
-
-     ![包含 Greetings 檔案名稱的 [屬性] 視窗和 [方案總管] 視窗](../media/exploreide-greetingsfilename.png "包含 Greetings 檔案名稱的 [屬性] 視窗和 [方案總管] 視窗的螢幕擷取畫面")     
+讓我們給 MainWindow 一個更具體的名稱。 在**方案總管**中，以滑鼠右鍵按一下 [ *mainwindow.xaml* ]，然後選擇 [**重新命名**]。 將檔案重新命名為*問候. xaml*。
 
 ## <a name="design-the-user-interface-ui"></a>設計使用者介面 (UI)
+
+如果設計工具尚未開啟，請選取 [*問候語*]，然後按**Shift** + **F7**來開啟設計工具。
 
 我們會將三種類型的控制項新增至這個應用程式：一個 <xref:System.Windows.Controls.TextBlock> 控制項、兩個 <xref:System.Windows.Controls.RadioButton> 控制項和一個 <xref:System.Windows.Controls.Button> 控制項。
 
 ### <a name="add-a-textblock-control"></a>新增 TextBlock 控制項
 
-1. 輸入 **Ctrl**+**Q** 啟動搜尋方塊，然後鍵入**工具箱**。 從結果清單中選擇 [檢視] > [工具箱]  。
+1. 按**Ctrl** + **Q**啟動搜尋方塊，然後鍵入**工具箱**。 從結果清單中選擇 [檢視] > [工具箱]。
 
-1. 在 [工具箱]  中展開 [通用 WPF 控制項]  節點以查看 TextBlock 控制項。
+1. 在 [工具箱] 中展開 [通用 WPF 控制項] 節點以查看 TextBlock 控制項。
 
      ![已醒目提示 TextBlock 控制項的 [工具箱]](../media/exploreide-textblocktoolbox.png "已醒目提示 TextBlock 控制項之 [工具箱] 視窗的螢幕擷取畫面")
 
-1. 選擇 TextBlock 項目並將它拖曳至設計介面上的視窗，即可將 **TextBlock** 控制項加入設計介面。 將控制項置中靠近視窗頂端。
+1. 選擇 TextBlock 項目並將它拖曳至設計介面上的視窗，即可將 **TextBlock** 控制項加入設計介面。 將控制項置中靠近視窗頂端。 在 Visual Studio 2019 和更新版本中，您可以使用紅色指導方針來將控制項置中。
 
     您的視窗應該會和下圖類似：
 
@@ -149,17 +148,17 @@ Visual Studio 會建立 HelloWPFApp 專案和方案，而且**方案總管**會�
    </Grid>
    ```
 
-1. 視需要再次將 TextBlock 置中，然後按 **Ctrl+S** 或使用 [檔案]  功能表項目來儲存您的變更。
+1. 視需要再次將 TextBlock 置中，然後按 **Ctrl+S** 或使用 [檔案] 功能表項目來儲存您的變更。
 
 接下來，您會將兩個 [RadioButton](/dotnet/framework/wpf/controls/radiobutton) 控制項新增至表單。
 
 ### <a name="add-radio-buttons"></a>新增選項按鈕
 
-1. 在 [工具箱]  中，尋找 **RadioButton** 控制項。
+1. 在 [工具箱] 中，尋找 **RadioButton** 控制項。
 
      ![已選取 RadioButton 控制項的 [工具箱] 視窗](../media/exploreide-radiobuttontoolbox.png "已選取 RadioButton 控制項之 [工具箱] 視窗的螢幕擷取畫面")
 
-1. 選擇 **RadioButton** 項目並將它拖曳至設計介面的視窗，即可將兩個 RadioButton 控制項新增至設計介面。 移動按鈕 (選取它們並使用方向鍵)，讓按鈕並排顯示於 TextBlock 控制項下。
+1. 選擇 **RadioButton** 項目並將它拖曳至設計介面的視窗，即可將兩個 RadioButton 控制項新增至設計介面。 移動按鈕 (選取它們並使用方向鍵)，讓按鈕並排顯示於 TextBlock 控制項下。 使用紅色的指導方針來對齊控制項。
 
    您的視窗應該會像這樣：
 
@@ -169,17 +168,13 @@ Visual Studio 會建立 HelloWPFApp 專案和方案，而且**方案總管**會�
 
     ![RadioButton [屬性] 視窗](../media/exploreide-buttonproperties.png "RadioButton [屬性] 視窗的螢幕擷取畫面")
 
-1. 在右邊 RadioButton 控制項的 [屬性]  視窗中，將 [名稱]  屬性變更為 `GoodbyeButton`，然後儲存您的變更。
+1. 在右邊 RadioButton 控制項的 [屬性] 視窗中，將 [名稱] 屬性變更為 `GoodbyeButton`，然後儲存您的變更。
 
 接下來，您將會為每個 RadioButton 控制項加入顯示文字。 下列步驟會更新 RadioButton 控制項的 [ **內容** ] 屬性。
 
 ### <a name="add-display-text-for-each-radio-button"></a>為每個選項按鈕新增顯示的文字
 
-1. 在設計介面上，以滑鼠右鍵按一下 HelloButton 開啟 HelloButton 捷徑功能表，選擇 [編輯文字]  ，然後輸入 `Hello`。
-
-1. 以滑鼠右鍵按一下 GoodbyeButton 開啟 GoodbyeButton 捷徑功能表，選擇 [編輯文字]  ，然後輸入 `Goodbye`。
-
-   XAML 標記現在看起來應該會類似下列範例：
+1. 在 XAML中，將`HelloButton`和`GoodbyeButton`的內容`"Hello"`屬性`"Goodbye"`更新為和。 XAML 標記現在看起來應該會類似下列範例：
 
    ```xaml
    <Grid>
@@ -211,9 +206,9 @@ Visual Studio 會建立 HelloWPFApp 專案和方案，而且**方案總管**會�
 
 ### <a name="add-the-button-control"></a>新增按鈕控制項
 
-1. 在 [工具箱]  中尋找 **Button** 控制項，然後將它拖曳至設計檢視中的表單，將它新增至設計介面的 RadioButton 控制項底下。
+1. 在 [工具箱] 中尋找 **Button** 控制項，然後將它拖曳至設計檢視中的表單，將它新增至設計介面的 RadioButton 控制項底下。 如果您使用 Visual Studio 2019 或更新版本，則會有紅線協助您將控制項置中。
 
-1. 在 XAML 檢視中，將 Button 控制項的 [內容]  值從 `Content="Button"` 變更為 `Content="Display"`，然後儲存變更。
+1. 在 XAML 檢視中，將 Button 控制項的 [內容] 值從 `Content="Button"` 變更為 `Content="Display"`，然後儲存變更。
 
      您的視窗應該會和下圖類似。
 
@@ -232,14 +227,14 @@ Visual Studio 會建立 HelloWPFApp 專案和方案，而且**方案總管**會�
 
 ### <a name="add-code-to-the-display-button"></a>將程式碼新增至顯示按鈕
 
-此應用程式執行時，會在使用者選擇選項按鈕並選擇 [顯示]  按鈕之後顯示訊息方塊。 一個訊息方塊會顯示 Hello，而另外一個會顯示 Goodbye。 若要建立這個行為，您必須將程式碼新增至 *Greetings.xaml.cs* 中的 `Button_Click` 事件。
+此應用程式執行時，會在使用者選擇選項按鈕並選擇 [顯示] 按鈕之後顯示訊息方塊。 一個訊息方塊會顯示 Hello，而另外一個會顯示 Goodbye。 若要建立這個行為，您必須將程式碼新增至 *Greetings.xaml.cs* 中的 `Button_Click` 事件。
 
 1. 在設計介面上，按兩下 [ **顯示** ] 按鈕。
 
      *Greetings.xaml.cs* 隨即開啟，並將游標置於 `Button_Click` 事件中。
 
     ```csharp
-    private void Button_Click_1(object sender, RoutedEventArgs e)
+    private void Button_Click(object sender, RoutedEventArgs e)
     {
 
     }
@@ -270,27 +265,36 @@ Visual Studio 會建立 HelloWPFApp 專案和方案，而且**方案總管**會�
 
 #### <a name="start-debugging-and-find-the-error"></a>開始偵錯並找出錯誤
 
-1. 按 **F5** 或依序選取 [偵錯]  和 [開始偵錯]  ，來啟動偵錯工具。
+1. 按 **F5** 或依序選取 [偵錯] 和 [開始偵錯]，來啟動偵錯工具。
 
-   [中斷模式]  視窗隨即出現，而 [輸出]  視窗會指出發生了 IOException：找不到資源 'mainwindow.xaml'。
+   [中斷模式] 視窗隨即出現，而 [輸出] 視窗會指出發生了 IOException：找不到資源 'mainwindow.xaml'。
 
    ![IOException 訊息](../media/exploreide-ioexception.png "IOException 訊息的螢幕擷取畫面")
 
-1. 選擇 [偵錯]   > [停止偵錯]  停止偵錯工具。
+1. 選擇 [偵錯] > [停止偵錯] 停止偵錯工具。
 
 我們已在這個教學課程開始時，將 *MainWindow.xaml* 重新命名為 *Greetings.xaml*，但程式碼仍會參考 *MainWindow.xaml* 作為應用程式的啟動 URI，因此專案無法啟動。
 
 #### <a name="specify-greetingsxaml-as-the-startup-uri"></a>指定 Greetings.xaml 作為啟動 URI
 
-1. 在 [方案總管]  中，開啟 *App.xaml* 檔。
+1. 在 [方案總管]中，開啟 *App.xaml* 檔。
 
 1. 將 `StartupUri="MainWindow.xaml"` 變更為 `StartupUri="Greetings.xaml"`，然後儲存變更。
 
-再次啟動偵錯工具 (按 **F5**)。 您應該會看到應用程式的 **Greetings** 視窗。 立即關閉應用程式視窗停止偵錯。
+再次啟動偵錯工具 (按 **F5**)。 您應該會看到應用程式的 **Greetings** 視窗。
+
+::: moniker range="vs-2017"
+![正在執行的應用程式螢幕擷取畫面](media/exploreide-wpf-running-app.png)
+::: moniker-end
+::: moniker range=">=vs-2019"
+![正在執行的應用程式螢幕擷取畫面](media/vs-2019/exploreide-wpf-running-app.png)
+::: moniker-end
+
+立即關閉應用程式視窗停止偵錯。
 
 ### <a name="debug-with-breakpoints"></a>使用中斷點進行偵錯
 
-新增一些中斷點，即可在偵錯時測試程式碼。 您可以選擇 [偵錯]   > [切換中斷點]  ，或是在您要中斷的程式碼行旁邊，按一下編輯器的左邊界，或按 **F9** 來新增中斷點。
+新增一些中斷點，即可在偵錯時測試程式碼。 您可以選擇 [偵錯] > [切換中斷點]，或是在您要中斷的程式碼行旁邊，按一下編輯器的左邊界，或按 **F9** 來新增中斷點。
 
 #### <a name="add-breakpoints"></a>新增中斷點
 
@@ -310,7 +314,7 @@ Visual Studio 會建立 HelloWPFApp 專案和方案，而且**方案總管**會�
 
     ![偵錯工具中的中斷點](media/exploreide-debugbreakpoint.png "偵錯工具中之中斷點的螢幕擷取畫面")
 
-1. 在功能表列上，選擇 [偵錯]   > [跳離函式]  。
+1. 在功能表列上，選擇 [偵錯] > [跳離函式]。
 
      應用程式會繼續執行，而且會顯示含有文字 "Hello" 的訊息方塊。
 
@@ -324,17 +328,23 @@ Visual Studio 會建立 HelloWPFApp 專案和方案，而且**方案總管**會�
 
 1. 關閉應用程式視窗停止偵錯。
 
-1. 在功能表列上，選擇 [偵錯]   > [停用所有中斷點]  。
+1. 在功能表列上，選擇 [偵錯] > [停用所有中斷點]。
+
+### <a name="view-a-representation-of-the-ui-elements"></a>查看 UI 元素的標記法
+
+在執行中的應用程式中，您應該會看到出現在視窗頂端的 widget。 這是一個執行時間協助程式，可讓您快速存取一些實用的偵錯工具功能。 按一下第一個按鈕，**移至 [即時視覺化樹狀結構**]。 您應該會看到一個具有樹狀結構的視窗，其中包含頁面的所有視覺元素。 展開節點，以尋找您新增的按鈕。
+
+![[即時視覺化樹狀結構] 視窗的螢幕擷取畫面](media/vs-2019/exploreide-live-visual-tree.png)
 
 ### <a name="build-a-release-version-of-the-application"></a>建置應用程式的發行版本
 
 既然已經驗證應用程式的運作一切正常，您就可以準備其發行組建。
 
-1. 在主功能表上，選取 [組建]   > [清除方案]  ，刪除在上一個組建期間建立的中繼檔和輸出檔。 這並非必要動作，但它可清除偵錯組建輸出。
+1. 在主功能表上，選取 [組建] > [清除方案]，刪除在上一個組建期間建立的中繼檔和輸出檔。 這並非必要動作，但它可清除偵錯組建輸出。
 
-1. 使用工具列上的下拉式控制項 (它目前的名稱是 "Debug")，將 HelloWPFApp 的建置組態從 [偵錯]  變更為 [發行]  。
+1. 使用工具列上的下拉式控制項 (它目前的名稱是 "Debug")，將 HelloWPFApp 的建置組態從 [偵錯] 變更為 [發行]。
 
-1. 選擇 [建置]   > [建置方案]  來建置方案。
+1. 選擇 [建置] > [建置方案] 來建置方案。
 
 恭喜您完成此教學課程！ 您可在方案和專案目錄 ( *...\HelloWPFApp\HelloWPFApp\bin\Release*) 下找到您建置的 *.exe*。
 

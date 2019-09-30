@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 73f8b69b120b1c21de92a8706eab0dbbcbb6e38e
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
-ms.translationtype: HT
+ms.openlocfilehash: 2f2587d621715e6e04edade779116e22d021072c
+ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65703854"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71128187"
 ---
 # <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-c"></a>快速入門：在 Visual Studio 中分析 CPU 使用量資料 (C++)
 
@@ -186,5 +186,5 @@ Windows 8 及更新版本必須執行附有偵錯工具的分析工具 ([診斷�
 
 ## <a name="see-also"></a>另請參閱
 
-- [Visual Studio 中的分析](../profiling/index.md)
+- [Visual Studio 中的分析](../profiling/index.yml)
 - [初步認識分析工具](../profiling/profiling-feature-tour.md)

@@ -13,12 +13,12 @@ ms.workload:
 f1_keywords:
 - CA2312
 - EnsureNetDataContractSerializerBinderIsSetBeforeDeserializing
-ms.openlocfilehash: 38495a3c8d5a2efb5e5e96785cecbd6d50e9cd00
-ms.sourcegitcommit: 673b9364fc9a96b027662dcb4cf5d61cab60ef11
+ms.openlocfilehash: 03d3e6c4f5e7a3cf4da9f998b75260df522e019f
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/21/2019
-ms.locfileid: "69891114"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71237708"
 ---
 # <a name="ca2312-ensure-netdatacontractserializerbinder-is-set-before-deserializing"></a>CA2312：還原序列化之前，請務必先設定 NetDataContractSerializer.Binder
 
@@ -26,30 +26,30 @@ ms.locfileid: "69891114"
 |-|-|
 |TypeName|EnsureNetDataContractSerializerBinderIsSetBeforeDeserializing|
 |CheckId|CA2312|
-|Category|Microsoft.Security|
-|中斷變更|非中斷|
+|分類|Microsoft.Security|
+|重大變更|不中斷|
 
 ## <a name="cause"></a>原因
 
-已呼叫或參考還原序列化方法<xref:System.Runtime.Serialization.NetDataContractSerializer.Binder> , 而且屬性可能是 null。 <xref:System.Runtime.Serialization.NetDataContractSerializer?displayProperty=nameWithType>
+已呼叫或參考還原序列化方法<xref:System.Runtime.Serialization.NetDataContractSerializer.Binder> ，而且屬性可能是 null。 <xref:System.Runtime.Serialization.NetDataContractSerializer?displayProperty=nameWithType>
 
 ## <a name="rule-description"></a>規則描述
 
 [!INCLUDE[insecure-deserializers-description](includes/insecure-deserializers-description-md.md)]
 
-當可能是<xref:System.Runtime.Serialization.NetDataContractSerializer?displayProperty=nameWithType> null 時, <xref:System.Runtime.Serialization.NetDataContractSerializer.Binder>此規則會尋找還原序列化方法呼叫或參考。 如果您想<xref:System.Runtime.Serialization.NetDataContractSerializer>要不使用任何<xref:System.Runtime.Serialization.NetDataContractSerializer.Binder>屬性來禁止任何還原序列化, 請停用此規則並[CA2311](ca2311-do-not-deserialize-without-first-setting-netdatacontractserializer-binder.md), 然後啟用規則[CA2310](ca2310-do-not-use-insecure-deserializer-netdatacontractserializer.md)。
+當可能是<xref:System.Runtime.Serialization.NetDataContractSerializer?displayProperty=nameWithType> null 時， <xref:System.Runtime.Serialization.NetDataContractSerializer.Binder>此規則會尋找還原序列化方法呼叫或參考。 如果您想<xref:System.Runtime.Serialization.NetDataContractSerializer>要不使用任何<xref:System.Runtime.Serialization.NetDataContractSerializer.Binder>屬性來禁止任何還原序列化，請停用此規則並[CA2311](ca2311-do-not-deserialize-without-first-setting-netdatacontractserializer-binder.md)，然後啟用規則[CA2310](ca2310-do-not-use-insecure-deserializer-netdatacontractserializer.md)。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
 
-- 可能的話, 請改為使用安全的序列化程式, 而**不允許攻擊者指定要還原序列化的任意類型**。 一些較安全的序列化套裝程式括:
+- 可能的話，請改為使用安全的序列化程式，而**不允許攻擊者指定要還原序列化的任意類型**。 一些較安全的序列化套裝程式括：
   - <xref:System.Runtime.Serialization.DataContractSerializer?displayProperty=nameWithType>
   - <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer?displayProperty=nameWithType>
-  - <xref:System.Web.Script.Serialization.JavaScriptSerializer?displayProperty=nameWithType>-永不使用<xref:System.Web.Script.Serialization.SimpleTypeResolver?displayProperty=nameWithType>。 如果您必須使用類型解析程式, 請將還原序列化的類型限制為預期的清單。
+  - <xref:System.Web.Script.Serialization.JavaScriptSerializer?displayProperty=nameWithType>-永不使用<xref:System.Web.Script.Serialization.SimpleTypeResolver?displayProperty=nameWithType>。 如果您必須使用類型解析程式，請將還原序列化的類型限制為預期的清單。
   - <xref:System.Xml.Serialization.XmlSerializer?displayProperty=nameWithType>
-  - Newtonsoft Json.NET-使用 TypeNameHandling。 如果您必須使用另一個值來進行 TypeNameHandling, 請將已還原序列化的類型限制為具有自訂 ISerializationBinder 的預期清單。
+  - Newtonsoft Json.NET-使用 TypeNameHandling。 如果您必須使用另一個值來進行 TypeNameHandling，請將已還原序列化的類型限制為具有自訂 ISerializationBinder 的預期清單。
   - 通訊協定緩衝區
-- 將序列化的資料進行篡改。 序列化之後, 以密碼編譯方式簽署序列化的資料。 在還原序列化之前, 請驗證密碼編譯簽章。 保護密碼編譯金鑰免于洩漏, 並設計金鑰輪替。
-- 限制還原序列化的類型。 執行自訂<xref:System.Runtime.Serialization.SerializationBinder?displayProperty=nameWithType>。 在還原序列化<xref:System.Runtime.Serialization.NetDataContractSerializer>之前, 請<xref:System.Runtime.Serialization.NetDataContractSerializer.Binder>將屬性設定為自訂<xref:System.Runtime.Serialization.SerializationBinder>的實例。 在覆寫<xref:System.Runtime.Serialization.SerializationBinder.BindToType%2A>的方法中, 如果類型不是預期的, 則會擲回例外狀況以停止還原序列化。
+- 將序列化的資料進行篡改。 序列化之後，以密碼編譯方式簽署序列化的資料。 在還原序列化之前，請驗證密碼編譯簽章。 保護密碼編譯金鑰免于洩漏，並設計金鑰輪替。
+- 限制還原序列化的類型。 執行自訂<xref:System.Runtime.Serialization.SerializationBinder?displayProperty=nameWithType>。 在還原序列化<xref:System.Runtime.Serialization.NetDataContractSerializer>之前，請<xref:System.Runtime.Serialization.NetDataContractSerializer.Binder>將屬性設定為自訂<xref:System.Runtime.Serialization.SerializationBinder>的實例。 在覆寫<xref:System.Runtime.Serialization.SerializationBinder.BindToType%2A>的方法中，如果類型不是預期的，則會擲回例外狀況以停止還原序列化。
   - 請確定所有程式碼路徑都<xref:System.Runtime.Serialization.NetDataContractSerializer.Binder>已設定屬性。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機

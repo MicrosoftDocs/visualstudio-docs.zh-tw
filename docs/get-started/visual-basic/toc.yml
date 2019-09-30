@@ -37,6 +37,6 @@
     - name: 單元測試
       href: ../../test/getting-started-with-unit-testing.md?toc=/visualstudio/get-started/visual-basic/toc.json&bc=/visualstudio/get-started/visual-basic/breadcrumb/toc.json
     - name: 部署您的專案
-      href: ../../deployment/index.md
+      href: ../../deployment/index.yml
     - name: 存取資料
       href: ../../data-tools/create-a-sql-database-by-using-a-designer.md?toc=/visualstudio/get-started/visual-basic/toc.json&bc=/visualstudio/get-started/visual-basic/breadcrumb/toc.json

@@ -1,22 +1,24 @@
 ---
 title: 步驟 3：將隨機圖示指派給每一個標籤
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: tutorial
+ms.prod: visual-studio-windows
+ms.technology: vs-ide-general
 dev_langs:
-- csharp
-- vb
+- CSharp
+- VB
 ms.assetid: 0ba5ed7a-9aaa-41f4-95d2-e3c2d567bc79
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ae4b635f86eb67f04db3ba6243e7b0ba4634bfb4
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
-ms.translationtype: HT
+ms.openlocfilehash: 598ed320e910f1f2e40e9ff84b7c317bff704741
+ms.sourcegitcommit: 6eed0372976c0167b9a6d42ba443f9a474b8bb91
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68416674"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71118768"
 ---
 # <a name="step-3-assign-a-random-icon-to-each-label"></a>步驟 3：將隨機圖示指派給每一個標籤
 如果讓圖示在每個遊戲的相同儲存格中顯示，這樣就不夠有挑戰性。 若要避免此情形，請使用 `AssignIconsToSquares()` 方法，在表單上將圖示隨機指派給 Label 控制項。
@@ -49,7 +51,7 @@ ms.locfileid: "68416674"
 
      請記住，如果您不確定程式碼某些部分所執行的動作，可以將滑鼠指標放在程式碼項目上並檢閱顯示的工具提示。 使用 Visual Studio 偵錯工具時，您也可以在程式執行時對每一行程式碼進行逐步執行。 如需詳細資訊，請參閱[如何：在 Visual Studio 中逐步執行偵錯工具](https://msdn.microsoft.com/vstudio/ee672313.aspx)或[使用偵錯工具巡覽程式碼](../debugger/navigating-through-code-with-the-debugger.md)。
 
-3. 若要在程式啟動時使用圖示填滿遊戲面板，您必須呼叫 `AssignIconsToSquares()` 方法。 如果您使用的是 Visual C#，請在 **Form1**「建構函式」  中，將陳述式新增至 `InitializeComponent()` 方法的呼叫正下方，如此您的表單會呼叫新方法，在表單顯示之前自行設定。 當您建立新的物件 (例如類別或結構) 時會呼叫建構函式。 如需詳細資訊，請參閱[建構函式 (C# 程式設計手冊)](/dotnet/csharp/programming-guide/classes-and-structs/constructors)，若是在 Visual Basic 中，則請參閱[使用建構函式和解構函式](/previous-versions/visualstudio/visual-studio-2008/2z08e49e\(v\=vs.90\))。
+3. 若要在程式啟動時使用圖示填滿遊戲面板，您必須呼叫 `AssignIconsToSquares()` 方法。 如果您使用的是 Visual C#，請在 **Form1**「建構函式」中，將陳述式新增至 `InitializeComponent()` 方法的呼叫正下方，如此您的表單會呼叫新方法，在表單顯示之前自行設定。 當您建立新的物件 (例如類別或結構) 時會呼叫建構函式。 如需詳細資訊，請參閱[建構函式 (C# 程式設計手冊)](/dotnet/csharp/programming-guide/classes-and-structs/constructors)，若是在 Visual Basic 中，則請參閱[使用建構函式和解構函式](/previous-versions/visualstudio/visual-studio-2008/2z08e49e\(v\=vs.90\))。
 
      [!code-csharp[VbExpressTutorial4Step2_3_4#13](../ide/codesnippet/CSharp/step-3-assign-a-random-icon-to-each-label_4.cs)]
 
@@ -77,7 +79,7 @@ ms.locfileid: "68416674"
      [!code-csharp[VbExpressTutorial4Step2_3_4#15](../ide/codesnippet/CSharp/step-3-assign-a-random-icon-to-each-label_5.cs)]
      [!code-vb[VbExpressTutorial4Step2_3_4#15](../ide/codesnippet/VisualBasic/step-3-assign-a-random-icon-to-each-label_5.vb)]
 
-7. 在功能表列上，選擇 [全部儲存]  按鈕以儲存您的程式，然後執行它。 圖示似乎都已消失，只有一個藍色背景會出現。 不過，會隨機指派圖示，而且都還在那裡。 因為圖示與背景的色彩相同，所以玩家會看不見它。 畢竟，如果玩家可以立即查看所有圖示，這就不是一個非常具有挑戰性的遊戲了！
+7. 在功能表列上，選擇 [全部儲存] 按鈕以儲存您的程式，然後執行它。 圖示似乎都已消失，只有一個藍色背景會出現。 不過，會隨機指派圖示，而且都還在那裡。 因為圖示與背景的色彩相同，所以玩家會看不見它。 畢竟，如果玩家可以立即查看所有圖示，這就不是一個非常具有挑戰性的遊戲了！
 
 ## <a name="to-continue-or-review"></a>若要繼續或檢視
 

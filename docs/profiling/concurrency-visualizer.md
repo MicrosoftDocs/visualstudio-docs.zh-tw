@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3e19cdb633528c3304d500fe268a583c542f1e4d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: d1e9109493ea78542afaedabbcce3841e3eac0e7
+ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63001026"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71128124"
 ---
 # <a name="concurrency-visualizer"></a>並行視覺化檢視
 
@@ -42,7 +42,7 @@ ms.locfileid: "63001026"
 
 ## <a name="related-topics"></a>相關主題
 
-|標題|說明|
+|標題|描述|
 |-----------|-----------------|
 |[使用率檢視](../profiling/utilization-view.md)|說明如何跨所有處理器檢視和分析系統活動。|
 |[執行緒檢視](../profiling/threads-view-parallel-performance.md)|說明如何分析程式中執行緒之間的互動。|
@@ -55,5 +55,5 @@ ms.locfileid: "63001026"
 
 ## <a name="see-also"></a>另請參閱
 
-- [Visual Studio 中的分析](../profiling/index.md)
+- [Visual Studio 中的分析](../profiling/index.yml)
 - [初步認識分析工具](../profiling/profiling-feature-tour.md)

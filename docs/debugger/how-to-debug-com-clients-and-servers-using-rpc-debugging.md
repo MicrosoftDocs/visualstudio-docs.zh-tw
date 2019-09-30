@@ -1,5 +1,5 @@
 ---
-title: 使用 RPC 偵錯對 COM 用戶端和伺服器 |Microsoft Docs
+title: 使用 RPC 調試進行調試的 COM 用戶端和伺服器 |Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -26,14 +26,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f5c98405b424dd5402a903a236b1c5549a43616d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 2cca09e917cddffd0d1d844db14ae8a4ca4f0088
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63387503"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71211070"
 ---
-# <a name="how-to-debug-com-clients-and-servers-using-rpc-debugging"></a>HOW TO：使用 RPC 偵錯對 COM 用戶端和伺服器進行偵錯
+# <a name="how-to-debug-com-clients-and-servers-using-rpc-debugging"></a>作法：使用 RPC 偵錯對 COM 用戶端和伺服器進行偵錯
 您可使用遠端程序呼叫 (Remote Procedure Call，RPC) 偵錯功能，對 COM 用戶端/伺服器應用程式偵錯。 您必須啟用 RPC 偵錯才能使用它。 啟用 RPC 偵錯後，當您從用戶端逐步執行伺服器呼叫時，偵錯工具會附加至伺服器，讓您偵錯其程式碼。 附加偵錯工具後，您就能夠對用戶端和伺服器處理序，使用偵錯工具的所有功能。
 
 ### <a name="to-enable-rpc-debugging"></a>若要啟用 RPC 偵錯
@@ -54,5 +54,5 @@ ms.locfileid: "63387503"
 
 ## <a name="see-also"></a>另請參閱
 - [COM 伺服器和容器偵錯](../debugger/com-server-and-container-debugging.md)
-- [Visual Studio 偵錯](../debugger/index.md)
+- [Visual Studio 偵錯](../debugger/index.yml)
 - [偵錯工具簡介](../debugger/debugger-feature-tour.md)

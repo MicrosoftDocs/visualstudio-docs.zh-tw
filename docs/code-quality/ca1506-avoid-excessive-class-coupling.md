@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b655609548d3de293abe2adc0ec3fb5c6fcf297b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1721fd52c00c5b312c88f19d48b668b12d28f050
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62546104"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71234487"
 ---
 # <a name="ca1506-avoid-excessive-class-coupling"></a>CA1506:應避免使用結合過度的類別
 
@@ -28,25 +28,25 @@ ms.locfileid: "62546104"
 |TypeName|AvoidExcessiveClassCoupling|
 |CheckId|CA1506|
 |分類|Microsoft.Maintainability|
-|中斷變更|中斷|
+|重大變更|中斷|
 
 ## <a name="cause"></a>原因
 
-型別或方法被搭配許多其他類型。
+類型或方法與許多其他類型結合。
 
 ## <a name="rule-description"></a>規則描述
 
 這個規則會測量類別的耦合，方法是計算類型或方法包含的唯一類型參考數目。
 
-類型和類別結合程度高程度的方法很難維護。 它是個不錯的做法有型別和呈現低結合 」 和 「 高內聚的方法。
+具有高程度類別結合的類型和方法可能很容易維護。 有一個很好的作法，就是讓型別和方法展現低耦合和高一致性。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
 
-若要修正此違規，請嘗試重新設計的類型或方法，以降低的類型，它會結合的數目。
+若要修正此違規，請嘗試重新設計類型或方法，以減少其結合的類型數目。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
 
-當型別或方法被視為可維護性，儘管其大量的其他類型的相依性時，請排除這個警告。
+當類型或方法被視為可維護時，不論其他類型的相依性有多大，請排除這個警告。
 
 ## <a name="see-also"></a>另請參閱
 

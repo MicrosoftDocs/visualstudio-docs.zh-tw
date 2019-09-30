@@ -13,20 +13,20 @@ manager: jillfra
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 4ba419c1dc20b46a08460e20a437e7edf21f2857
-ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
-ms.translationtype: HT
+ms.openlocfilehash: d8be11a8705686ade370a8107aad826b7cab9851
+ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "67253717"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71186549"
 ---
 # <a name="net-coding-convention-settings-for-editorconfig"></a>EditorConfig 的 .NET 編碼慣例設定
 
 您可以使用 [EditorConfig](../ide/create-portable-custom-editor-options.md) 檔案定義程式碼基底的程式碼樣式並維持一致。 EditorConfig 包含數個核心格式設定屬性，例如 `indent_style` 和 `indent_size`。 在 Visual Studio 中，也可以使用 EditorConfig 檔案來設定 .NET 編碼慣例設定。 您可以啟用或停用個別的 .NET 編碼慣例，並設定您希望強制執行每個規則的程度 (透過嚴重性等級)。
 
 > [!TIP]
-> - 當您在 .editorconfig 檔案中定義編碼慣例時，需設定您希望 Visual Studio 內建的[程式碼樣式分析器](../code-quality/roslyn-analyzers-overview.md)用來分析程式碼的方式。 .editorconfig 檔案為適用於這些分析器的設定檔。
-> - 您也可以在[文字編輯器的 [選項]](code-styles-and-code-cleanup.md) 對話方塊中，設定適用於 Visual Studio 的程式碼樣式喜好設定。 不過，.editorconfig 設定具有較高的優先順序，而您在 [選項]  中設定的喜好設定不會與特定專案建立關聯。
+> - 當您在 EditorConfig 檔案中定義編碼慣例時，您會設定您想要的程式[代碼樣式分析器](../code-quality/roslyn-analyzers-overview.md)如何內建于分析您的程式碼 Visual Studio。 EditorConfig 檔案是這些分析器的設定檔。
+> - 您也可以在[文字編輯器的 [選項]](code-styles-and-code-cleanup.md) 對話方塊中，設定適用於 Visual Studio 的程式碼樣式喜好設定。 不過，EditorConfig 設定的優先順序與您在 [**選項**] 中設定的喜好設定不會與特定專案相關聯。
 
 ## <a name="convention-categories"></a>慣例類別
 

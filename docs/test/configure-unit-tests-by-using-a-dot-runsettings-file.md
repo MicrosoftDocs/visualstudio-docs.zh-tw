@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: d9f47c54a530f58ea562fd942c1ef795bad37331
-ms.sourcegitcommit: 5b34052a1c7d86179d7898ed532babb2d9dad4a3
-ms.translationtype: HT
+ms.openlocfilehash: 799d3f23a6b4e269c08bc889461596178e71b4c8
+ms.sourcegitcommit: 689ba54ea14257d13031de881f5d4fe937a36f56
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69490634"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71342495"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>使用 *.runsettings* 檔案設定單元測試
 
@@ -28,21 +28,21 @@ ms.locfileid: "69490634"
 
 ::: moniker range="vs-2017"
 
-若要在 IDE 中指定執行設定檔，請選取 [測試]  > [測試設定]  > [選取測試設定檔]  ，然後選取 *.runsettings* 檔案。
+若要在 IDE 中指定執行設定檔，請選取 [測試] > [測試設定] > [選取測試設定檔]，然後選取 *.runsettings* 檔案。
 
 ![在 Visual Studio 2017 中選取測試設定檔的功能表](media/select-test-settings-file.png)
 
-檔案隨即出現在 [測試設定] 功能表中，且您可以選取或取消選取它。 選取時，只要選取 [分析程式碼涵蓋範圍]  ，就會套用回合設定檔。
+檔案隨即出現在 [測試設定] 功能表中，且您可以選取或取消選取它。 選取時，只要選取 [分析程式碼涵蓋範圍]，就會套用回合設定檔。
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-若要在 IDE 中指定執行設定檔，請在 [測試總管]  中，選取 [設定]  按鈕上的箭頭，然後選取 [選取設定檔]  。 瀏覽並選取 *.runsettings* 檔案。
+若要在 IDE 中指定回合設定檔案，請選取 [**測試** > ] [**選取設定檔**]。 瀏覽並選取 *.runsettings* 檔案。
 
-![在 Visual Studio 2019 中選取測試設定檔的功能表](media/vs-2019/select-test-settings-file.png)
+![在 Visual Studio 2019 中選取測試設定檔的功能表](media/vs-2019/select-settings-file.png)
 
-該檔案隨即出現在 [測試總管] 的 [設定] 功能表上，且您可以選取或取消選取它。 選取時，只要選取 [分析程式碼涵蓋範圍]  ，就會套用回合設定檔。
+檔案會出現在 [測試] 功能表上，您可以選取或取消選取它。 選取時，只要選取 [分析程式碼涵蓋範圍]，就會套用回合設定檔。
 
 ::: moniker-end
 
@@ -54,13 +54,13 @@ ms.locfileid: "69490634"
 
    ::: moniker range="vs-2017"
 
-   在 Windows 的 [開始]  功能表中，選擇 [Visual Studio 2017]  >[VS 2017 開發人員命令提示字元]  。
+   在 Windows 的 [開始] 功能表中，選擇 [Visual Studio 2017] >[VS 2017 開發人員命令提示字元]。
 
    ::: moniker-end
 
    ::: moniker range=">=vs-2019"
 
-   在 Windows 的 [開始]  功能表中，選擇 [Visual Studio 2019]  >[VS 2019 開發人員命令提示字元]  。
+   在 Windows 的 [開始] 功能表中，選擇 [Visual Studio 2019] >[VS 2019 開發人員命令提示字元]。
 
    ::: moniker-end
 
@@ -80,33 +80,33 @@ ms.locfileid: "69490634"
 
 ## <a name="customize-tests"></a>自訂測試
 
-若要使用 .runsettings  檔案自訂您的測試，請遵循下列步驟：
+若要使用 .runsettings 檔案自訂您的測試，請遵循下列步驟：
 
-1. 將 XML 檔案新增至 Visual Studio 方案，並將它儲存為 test.runsettings  。
+1. 將 XML 檔案新增至 Visual Studio 方案，並將它儲存為 test.runsettings。
 
    > [!TIP]
-   > 檔案名稱並不重要，只要使用的副檔名為 .runsettings  即可。
+   > 檔案名稱並不重要，只要使用的副檔名為 .runsettings 即可。
 
 2. 使用後續範例的 XML 取代檔案內容，並視需要自訂它。
 
 ::: moniker range="vs-2017"
 
-3. 在 [測試]  功能表中選擇 [測試設定]   > [選取測試設定檔]  。 瀏覽至您建立的 .runsettings  檔案，然後選取 [確定]  。
+3. 在 [測試] 功能表中選擇 [測試設定] > [選取測試設定檔]。 瀏覽至您建立的 .runsettings 檔案，然後選取 [確定]。
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-3. 若要在 [測試總管]  中選取執行設定檔，請選取 [設定]  按鈕上的箭頭，然後選取 [選取設定檔]  。 瀏覽至您建立的 .runsettings  檔案，然後選取 [確定]  。
+3. 若要選取回合設定檔案，請選擇 [**測試** > ] [**選取設定檔**]。 瀏覽至您建立的 .runsettings 檔案，然後選取 [確定]。
 
 ::: moniker-end
 
    > [!TIP]
-   > 您可以在方案中建立多個 .runsettings  檔案，然後視需要選取其中一個作為使用中測試設定檔。
+   > 您可以在方案中建立多個 .runsettings 檔案，然後視需要選取其中一個作為使用中測試設定檔。
 
 ## <a name="example-runsettings-file"></a>*.runsettings* 檔案範例
 
-下列 XML 顯示一般 .runsettings  檔案的內容。 檔案的每個項目都有預設值，因此為選擇性。
+下列 XML 顯示一般 .runsettings 檔案的內容。 檔案的每個項目都有預設值，因此為選擇性。
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -118,7 +118,7 @@ ms.locfileid: "69490634"
     <ResultsDirectory>.\TestResults</ResultsDirectory>
 
     <!-- x86 or x64 -->
-    <!-- You can also change it from the test settings menu; choose "Processor Architecture for AnyCPU Projects" -->
+    <!-- You can also change it from the Test menu; choose "Processor Architecture for AnyCPU Projects" -->
     <TargetPlatform>x86</TargetPlatform>
 
     <!-- Framework35 | [Framework40] | Framework45 -->
@@ -156,12 +156,16 @@ ms.locfileid: "69490634"
 
       <DataCollector uri="datacollector://microsoft/VideoRecorder/1.0" assemblyQualifiedName="Microsoft.VisualStudio.TestTools.DataCollection.VideoRecorder.VideoRecorderDataCollector, Microsoft.VisualStudio.TestTools.DataCollection.VideoRecorder, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" friendlyName="Screen and Voice Recorder">
         <!--Video data collector was introduced in Visual Studio 2017 version 15.5 -->
+        <Configuration>
+          <!-- Change to "false" to only add video attachments to failed tests -->
+          <MediaRecorder sendRecordedMediaForPassedTestCase="true" xmlns="" />
+        </Configuration>
       </DataCollector>
 
     </DataCollectors>
   </DataCollectionRunSettings>
 
-  <!-- Parameters used by tests at runtime -->
+  <!-- Parameters used by tests at run time -->
   <TestRunParameters>
     <Parameter name="webAppUrl" value="http://localhost" />
     <Parameter name="webAppUserName" value="Admin" />
@@ -184,7 +188,7 @@ ms.locfileid: "69490634"
 </RunSettings>
 ```
 
-## <a name="elements-of-a-runsettings-file"></a>.runsettings  檔案的項目
+## <a name="elements-of-a-runsettings-file"></a>.runsettings 檔案的項目
 
 以下各節詳細說明 *.runsettings* 檔案的項目。
 
@@ -208,7 +212,7 @@ ms.locfileid: "69490634"
 |**ResultsDirectory**||放置測試結果的目錄。|
 |**TargetFrameworkVersion**|Framework40|`FrameworkCore10` 適用於 .NET Core 來源、`FrameworkUap10` 適用於 UWP 型來源、`Framework45` 適用於 .NET Framework 4.5 和更新版本、`Framework40` 適用於 .NET Framework 4.0，而 `Framework35` 則適用於 .NET Framework 3.5。<br /><br />此設定會指定用來尋找及執行測試的單元測試架構版本。 它可以與您在單元測試專案建置屬性中指定的 .NET 平台版本不同。<br /><br />如果您從 *.runsettings* 檔案省略 `TargetFrameworkVersion` 元素，平台會根據組建二進位檔自動判斷架構版本。|
 |**TargetPlatform**|x86|x86、x64|
-|**TreatTestAdapterErrorsAsWarnings**|False|false、true|
+|**TreatTestAdapterErrorsAsWarnings**|false|false、true|
 |**TestAdaptersPaths**||TestAdapters 所在目錄的一或多個路徑|
 |**MaxCpuCount**|1|此設定會使用電腦上的可用核心，在執行單元測試時控制平行測試執行的程度。 測試執行引擎會在各個可用核心上作為不同的處理序啟動，並將要執行測試的容器提供給每個核心。 容器可以是組件、DLL 或相關成品。 測試容器是排程單元。 在每個容器中，會根據測試架構執行測試。 如果有許多容器，當處理序執行完容器中的測試時，就會將下一個可用的容器提供給處理序。<br /><br />MaxCpuCount 可以是：<br /><br />n，其中 1 <= n <= 核心數目：最多會啟動 n 個處理序<br /><br />n，其中 n = 任何其他值：啟動的處理序數目最多可以是可用核心數目|
 |**TestSessionTimeout**||當測試工作階段超過指定的逾時之時，允許使用者終止測試工作階段。 設定逾時可確保資源能被充分取用，且可將測試工作階段限制在設定的時間內。 **Visual Studio 2017 15.5** 版和更新版本提供這項設定。|
@@ -252,7 +256,7 @@ ms.locfileid: "69490634"
 </TestRunParameters>
 ```
 
-測試回合參數提供方法，定義可供在執行階段的測試使用的變數和值。 使用 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.Properties%2A?displayProperty=nameWithType> 屬性存取參數：
+測試回合參數提供一種方法，可定義在執行時間可供測試使用的變數和值。 使用 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.Properties%2A?displayProperty=nameWithType> 屬性存取參數：
 
 ```csharp
 [TestMethod]
@@ -280,18 +284,18 @@ public void HomePageTest()
 
 這些是執行具有 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute> 屬性之測試方法的測試配接器專屬的設定。
 
-|Configuration|預設|值|
+|組態|預設|值|
 |-|-|-|
-|**ForcedLegacyMode**|False|Visual Studio 2012 中的 MSTest 配接器已進行過最佳化，因此更快速且更具延展性。 某些行為 (例如測試執行順序) 可能與舊版 Visual Studio 稍有出入。 將此值設定為 **true**，以使用較舊的測試配接器。<br /><br />例如，如果您為單元測試指定 *app.config* 檔案，則可以使用此設定。<br /><br />建議您考慮重構測試，以便使用較新的配接器。|
-|**IgnoreTestImpact**|False|在 MSTest 或 Microsoft Test Manager 中執行時，測試影響功能會為最近變更所影響的測試設定優先權。 這項設定會停用該功能。 如需詳細資訊，請參閱[自從上次建置以來應該要執行哪些測試？](https://msdn.microsoft.com/library/dd286589)。|
+|**ForcedLegacyMode**|false|Visual Studio 2012 中的 MSTest 配接器已進行過最佳化，因此更快速且更具延展性。 某些行為 (例如測試執行順序) 可能與舊版 Visual Studio 稍有出入。 將此值設定為 **true**，以使用較舊的測試配接器。<br /><br />例如，如果您為單元測試指定 *app.config* 檔案，則可以使用此設定。<br /><br />建議您考慮重構測試，以便使用較新的配接器。|
+|**IgnoreTestImpact**|false|在 MSTest 或 Microsoft Test Manager 中執行時，測試影響功能會為最近變更所影響的測試設定優先權。 這項設定會停用該功能。 如需詳細資訊，請參閱[自從上次建置以來應該要執行哪些測試？](https://msdn.microsoft.com/library/dd286589)。|
 |**SettingsFile**||您可以指定與此處的 MS 測試配接器一起使用的測試設定檔。 您也可以[從設定功能表](#ide)指定測試設定檔。<br /><br />如果您指定這個值，也必須將 [ **ForcedlegacyMode** ] 設定為 [ **true**]。<br /><br />`<ForcedLegacyMode>true</ForcedLegacyMode>`|
-|**KeepExecutorAliveAfterLegacyRun**|False|測試回合完成後，會關閉 MSTest。 所有在測試過程中啟動的處理序也都會終止。 如果您要讓測試執行程式保持運作，請將此值設定為 **true**。 例如，您可以使用此設定讓瀏覽器在不同的自動程式碼 UI 測試之間保持執行。|
+|**KeepExecutorAliveAfterLegacyRun**|false|測試回合完成後，會關閉 MSTest。 所有在測試過程中啟動的處理序也都會終止。 如果您要讓測試執行程式保持運作，請將此值設定為 **true**。 例如，您可以使用此設定讓瀏覽器在不同的自動程式碼 UI 測試之間保持執行。|
 |**DeploymentEnabled**|true|如果您將此值設定為 **false**，就不會將您在測試方法中指定的部署項目複製到部署目錄中。|
 |**CaptureTraceOutput**|true|您可以使用 <xref:System.Diagnostics.Trace.WriteLine%2A?displayProperty=nameWithType> 從測試方法寫入偵錯追蹤。|
 |**DeleteDeploymentDirectoryAfterTestRunIsComplete**|true|若要在測試回合之後保留部署目錄，請將此值設定為 **false**。|
-|**MapInconclusiveToFailed**|False|如果測試完成，但狀態結果不明，則通常對應至 [測試總管]  中的已略過狀態。 如果您要讓結果不明的測試顯示為 [失敗]，請將此值設定為 **true**。|
-|**InProcMode**|False|如果您要在 MSTest 配接器的相同處理序中執行測試，請將此值設定為 **true**。 這個設定提供較小效能。 但如果測試因例外狀況而結束，則不會執行其餘測試。|
-|**AssemblyResolution**|False|您可以在求解及執行單元測試時，指定其他組件的路徑。 例如，您可以針對與測試組件位於不同目錄的相依性組件，使用這些路徑。 若要指定路徑，請使用**目錄路徑**項目。 路徑可以包括環境變數。<br /><br />`<AssemblyResolution>  <Directory Path="D:\myfolder\bin\" includeSubDirectories="false"/> </AssemblyResolution>`|
+|**MapInconclusiveToFailed**|false|如果測試完成，但狀態結果不明，則通常對應至 [測試總管] 中的已略過狀態。 如果您要讓結果不明的測試顯示為 [失敗]，請將此值設定為 **true**。|
+|**InProcMode**|false|如果您要在 MSTest 配接器的相同處理序中執行測試，請將此值設定為 **true**。 這個設定提供較小效能。 但如果測試因例外狀況而結束，則不會執行其餘測試。|
+|**AssemblyResolution**|false|您可以在求解及執行單元測試時，指定其他組件的路徑。 例如，您可以針對與測試組件位於不同目錄的相依性組件，使用這些路徑。 若要指定路徑，請使用**目錄路徑**項目。 路徑可以包括環境變數。<br /><br />`<AssemblyResolution>  <Directory Path="D:\myfolder\bin\" includeSubDirectories="false"/> </AssemblyResolution>`|
 
 ## <a name="see-also"></a>另請參閱
 

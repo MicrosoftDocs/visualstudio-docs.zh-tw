@@ -1,57 +1,49 @@
 ---
 title: 在專案中包含 NuGet 套件
-description: 本文件涵蓋如何在 Xamarin 專案中包含 NuGet 套件。 它會逐步尋找和下載套件，以及介紹 IDE 整合功能。
+description: 本檔涵蓋如何使用 Visual Studio for Mac 在專案中包含 NuGet 套件。 它會逐步尋找和下載套件，以及介紹 IDE 整合功能。
 author: jmatthiesen
 ms.author: jomatthi
-ms.date: 04/24/2019
+ms.date: 09/18/2019
 ms.assetid: 5C800815-0B13-4B27-B017-95FCEF1A0EA2
-ms.custom: video
-ms.openlocfilehash: 5d38afb0dd3adc1db253b7b2c290925716bd5bf9
-ms.sourcegitcommit: 78e4836fe0f45b7079271330aff449dff6fd9685
-ms.translationtype: HT
+ms.custom: conceptual
+ms.openlocfilehash: 55b4691a7adb03d4ee8fd5e05e7bd9d7daa28f13
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/17/2019
-ms.locfileid: "68303866"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71213696"
 ---
-# <a name="include-a-nuget-package-in-your-project"></a>在專案中包含 NuGet 套件
+# <a name="install-and-manage-nuget-packages-in-visual-studio-for-mac"></a>在 Visual Studio for Mac 中安裝和管理 NuGet 套件
 
-NuGet 是進行 .NET 開發的最受歡迎套件管理員，並內建於 Visual Studio for Mac 以及 Windows 上的 Visual Studio。 您可以使用任一 IDE 來搜尋套件，並將其新增至 Xamarin、.NET Core 及 ASP.NET 專案。
+Visual Studio for Mac 中的 NuGet 套件管理員 UI 可讓您輕鬆地安裝、卸載和更新專案和方案中的 NuGet 套件。 您可以搜尋並將封裝新增至您的 .NET Core、ASP.NET Core 和 Xamarin 專案。
 
 本文描述如何在專案中包含 NuGet 套件，並示範讓處理序順暢處理的工具鏈。
 
-## <a name="nuget-in-visual-studio-for-mac"></a>Visual Studio for Mac 中的 NuGet
+如需在 Visual Studio for Mac 中使用 NuGet 的簡介， [請參閱快速入門：在 Visual Studio for Mac 中安裝和使用套件](/nuget/quickstart/install-and-use-a-package-in-visual-studio-mac)
 
-為了示範 NuGet 套件功能，我們會先逐步建立新的應用程式，並在其中新增套件。 接著，我們將討論可協助管理套件的 IDE 功能。
+## <a name="find-and-install-a-package"></a>尋找並安裝套件
 
-## <a name="create-a-new-project"></a>建立新專案
+1. 在 Visual Studio for Mac 中開啟專案時，在**Solution Pad**中以滑鼠右鍵按一下 [相依性] 資料夾（如果使用 Xamarin 專案，則**封裝**資料夾），然後選取 [**管理 NuGet 套件 ...** **]** 。
 
-首先，建立名為 `HelloNuget` 的專案，如下所示。 此範例顯示「iOS 單一檢視應用程式」範本，但會使用任何支援的專案類型：
+    ![新增 NuGet 套件內容動作](media/nuget-walkthrough-packages-menu.png)
 
-![建立新 iOS 專案](media/nuget-walkthrough-NewProject.png)
+2. 這會啟動 [**管理 NuGet 封裝**] 視窗。 確定對話方塊左上角的 [來源] 下拉式設定為`nuget.org`[]。
 
-## <a name="adding-a-package"></a>新增套件
+    ![列出 NuGet 套件](media/nuget-walkthrough-add-packages1.png)
 
-在 Visual Studio for Mac 中開啟專案時，以滑鼠右鍵按一下 [Solution Pad]  中的 [套件]  資料夾，然後選取 [新增 NuGet 套件]  ：
+3. 使用右上角的 [搜尋] 方塊來尋找特定套件，例如 `EntityFramework`。 當您發現想要使用的套件時，請選取該套件，然後按一下 [新增套件] 按鈕開始安裝。
 
-![新增 NuGet 套件內容動作](media/nuget-walkthrough-PackagesMenu.png)
+    ![新增 EntityFramework NuGet 套件](media/nuget-walkthrough-add-packages2.png)
 
-這會啟動 [新增套件]  視窗。 確定 [來源] 下拉式清單設定為 `nuget.org`：
+4. 套件在下載之後就會新增至您的專案。 解決方案會根據您要編輯的專案類型而變更：
 
-![來源清單下拉式清單](media/nuget-walkthrough-Source.png)
+    **Xamarin 專案**
+    * [參考] 節點將包含屬於 NuGet 套件一部分的所有組件清單。
+    * [套件] 節點會顯示您已下載的每個 NuGet 套件。 您可以更新或移除此清單中的套件。
+    
+    **.NET Core 專案**
 
-開啟視窗時，會從預設套件來源載入套件清單：nuget.org。初始結果如下：
-
-![列出 NuGet 套件](media/nuget-walkthrough-AddPackages1.png)
-
-使用右上角的 [搜尋] 方塊來尋找特定套件，例如 `azure mobile`。 當您發現想要使用的套件時，請選取該套件，然後按一下 [新增套件]  按鈕開始安裝。
-
-![新增 Azure NuGet 套件](media/nuget-walkthrough-AddPackages2.png)
-
-套件在下載之後就會新增至您的專案。 會如下變更方案：
-
-* [參考]  節點將包含屬於 NuGet 套件一部分的所有組件清單。
-* [套件]  節點會顯示您已下載的每個 NuGet 套件。 您可以更新或移除此清單中的套件。
-* **packages.config** 檔案將會新增至專案。 IDE 使用此 XML 檔案來追蹤這個專案中所參考的套件版本。 這個檔案不應該手動進行編輯，但您應該將它保留在版本控制中。 請注意，可以使用 project.json 檔案，而不要使用 packages.config 檔案。 project.json 檔案是支援可轉移還原之 NuGet 3 引進的新套件檔案格式。 如需 project.json 的詳細資訊，請參閱 [NuGet 文件](https://docs.microsoft.com/NuGet/Schema/Project-Json)。 需要手動新增 project.json 檔案，以及先關閉並重新開啟專案，再將 project.json 檔案用於 Visual Studio for Mac 中。
+    * [相依性 **> NuGet]** 節點會顯示您已下載的每個 NuGet 套件。 您可以更新或移除此清單中的套件。
 
 ## <a name="using-nuget-packages"></a>使用 NuGet 套件
 
@@ -63,31 +55,32 @@ NuGet 是進行 .NET 開發的最受歡迎套件管理員，並內建於 Visual 
 using Newtonsoft.Json;
 ```
 
-大部分 NuGet 都會提供其他資訊，例如 Nuget 來源的 README 或專案頁面連結。 您通常可以在 [新增套件] 頁面的套件簡介上找到此項目的連結：
-
-[檢視專案頁面連結](media/nuget-walkthrough-project-page.png)
-
 <a name="Package_Updates" class="injected"></a>
 
-## <a name="package-updates"></a>套件更新
+## <a name="updating-packages"></a>更新套件
 
-以滑鼠右鍵按一下 [套件]  節點，或分別以滑鼠右鍵按一下每個元件，即可一次完成所有套件更新。
+封裝更新可以一次完成，方法是以滑鼠右鍵按一下 [相依性 **]** 節點（Xamarin 專案的 [**封裝**] 節點），或在每個封裝上個別進行。 當有新版本的 NuGet 套件可供使用時，更新圖示就![會以圓形](media/nuget-walkthrough-update-icon.png)顯示向上箭號。
 
-以滑鼠右鍵按一下 [套件]  來存取操作功能表：
+以滑鼠右鍵按一下 [相依性] 以存取內容功能表，然後選擇 [**更新** **]** 以更新所有套件：
 
-![套件功能表](media/nuget-walkthrough-PackagesMenu.png)
+![套件功能表](media/nuget-walkthrough-packages-menu-update.png)
 
-* **新增 NuGet 套件** - 開啟視窗以將更多套件新增至專案。
+* **管理 NuGet 套件**-開啟視窗，將更多套件新增至專案。
 * **更新** - 檢查每個套件的來源伺服器，然後下載任何較新版本。
 * **還原** - 下載任何遺漏的套件 (不會將現有套件更新為較新版本)。
 
 方案層級也會提供 [更新] 和 [還原] 選項，而且這些選項會影響方案中的所有專案。
 
-您也可以以滑鼠右鍵按一下個別套件，來存取操作功能表：
+從 [solution pad] 中，您可以查看目前已安裝的套件版本，並以滑鼠右鍵按一下要更新的套件。
 
-![套件功能表](media/nuget-walkthrough-PackageMenu.png)
+![包含更新、移除、重新整理選項的套件功能表](media/nuget-walkthrough-PackageMenu.png)
 
-* **版本號碼** - 版本號碼是停用的功能表項目；這僅供參考。
+當封裝的新版本可用時，您也會在套件名稱旁看到通知，讓您可以決定是否要更新它。
+
+![當有新的封裝版本可用時顯示的通知](media/nuget-walkthrough-package-update-available.png)
+
+在顯示的功能表中，您有兩個選項：
+
 * **更新** - 檢查來源伺服器，然後下載較新版本 (如果已存在)。
 * **移除** - 從這個專案中移除套件，並從專案的參考中移除相關組件。
 
@@ -95,11 +88,11 @@ using Newtonsoft.Json;
 
 一開始會從 nuget.org 擷取可用於安裝的套件。不過，您可以將其他套件位置新增至 Visual Studio for Mac。 這適用於測試您自己正在開發的 NuGet 套件，或在公司或組織內使用私用 NuGet 伺服器。
 
-在 Visual Studio for Mac 中，巡覽至 [Visual Studio] > [喜好設定] > [NuGet] > [來源]  來檢視和編輯套件來源清單。 請注意，來源可以是遠端伺服器 (由 URL 指定) 或本機目錄。
+在 Visual Studio for Mac 中，巡覽至 [Visual Studio] > [喜好設定] > [NuGet] > [來源] 來檢視和編輯套件來源清單。 請注意，來源可以是遠端伺服器 (由 URL 指定) 或本機目錄。
 
 ![套件來源](media/nuget-walkthrough-PackageSource.png)
 
-按一下 [新增]  設定新來源。 輸入套件來源的易記名稱和 URL (或檔案路徑)。 如果來源是安全網頁伺服器，也請輸入使用者名稱和密碼，否則請將這些項目留白：
+按一下 [新增] 設定新來源。 輸入套件來源的易記名稱和 URL (或檔案路徑)。 如果來源是安全網頁伺服器，也請輸入使用者名稱和密碼，否則請將這些項目留白：
 
 ![新增套件來源](media/nuget-walkthrough-PackageSource2.png)
 

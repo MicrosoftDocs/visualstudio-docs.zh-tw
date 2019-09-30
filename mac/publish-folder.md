@@ -1,33 +1,32 @@
 ---
 title: 發行至資料夾
 ms.date: 04/02/2019
-ms.topic: quickstart
 helpviewer_keywords:
-- deployment, website
+- deployment, website, console, publish
 ms.assetid: e963fb4b-6d32-4d45-86bb-ef7e4d3028b0
 author: sayedihashimi
 ms.author: sayedha
 manager: unniravindranathan
 ms.prod: visual-studio-mac
-ms.openlocfilehash: 8bff4b6079818a7e6d4e3500830a036ae6ab28cd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 165cfc38b8289946e0966083785defd18ca87d77
+ms.sourcegitcommit: 6993bcb0d2b0067b1b7b7899bfba52c31c70b7e7
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62937039"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71095415"
 ---
-# <a name="publish-a-web-app-to-a-folder-using-visual-studio-for-mac"></a>使用 Visual Studio for Mac 將 Web 應用程式發佈到資料夾
+# <a name="publish-to-a-folder-using-visual-studio-for-mac"></a>使用 Visual Studio for Mac 發行至資料夾
 
-您可以使用 [發佈] 工具，將 ASP.NET Core 應用程式發佈到資料夾。
+您可以使用 [發佈] 工具，將 .NET Core 主控台或 ASP.NET Core 應用程式發行至資料夾。
 
 ## <a name="prerequisites"></a>必要條件
 
-- 在已啟用 ASP.NET Core 的情況下安裝 [Visual Studio 2019 for Mac](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs4mac2019)。
-- ASP.NET Core 專案。 如果您還沒有專案，可以[建立新的專案](https://docs.microsoft.com/visualstudio/mac/create-new-projects?view=vsmac-2019)。
+- 已啟用 .NET Core 的[Visual Studio 2019 For Mac](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs4mac2019) 。
+- .NET Core 主控台或 ASP.NET Core 專案。 如果您還沒有專案，可以[建立新的專案](https://docs.microsoft.com/visualstudio/mac/create-new-projects?view=vsmac-2019)。
 
 ## <a name="publish-to-folder"></a>發佈到資料夾
 
-使用 Visual Studio for Mac 時，您可以透過 [發佈] 工具將 ASP.NET Core 專案發佈到資料夾。 發佈到資料夾之後，您就可以將檔案傳輸到網頁伺服器，以便匯入不同的環境。 若要發佈到資料夾，請執行下列步驟。
+使用 Visual Studio for Mac 您可以使用 [發行] 工具，將您的 .NET Core 專案發行至資料夾。 發行至資料夾之後，您可以將檔案傳輸到不同的環境。 若要發佈到資料夾，請執行下列步驟。
 
  1. 在 Solution Pad 中，以滑鼠右鍵按一下專案，然後選擇 [發佈]。
 

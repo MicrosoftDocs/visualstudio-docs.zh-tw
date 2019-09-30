@@ -1,5 +1,5 @@
 ---
-title: HOW TO：捲動工作表中的資料庫記錄
+title: 作法：在工作表中流覽資料庫記錄
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,33 +15,33 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0b3ee44c6666a887552f1babfcbbf028e9215e95
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f0b3c6a8a9292ceda03c9d0020b78d9518ca49d9
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62961224"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71252037"
 ---
-# <a name="how-to-scroll-through-database-records-in-a-worksheet"></a>HOW TO：捲動工作表中的資料庫記錄
-  下列程序示範如何使用設計工具來顯示控制項，可讓使用者以捲動所有記錄在 Microsoft Office Excel 工作表，從資料庫資料表的單一欄位。
+# <a name="how-to-scroll-through-database-records-in-a-worksheet"></a>作法：在工作表中流覽資料庫記錄
+  下列程式會示範如何使用設計工具，從 Microsoft Office Excel 工作表中的資料庫資料表顯示單一欄位，並提供可讓使用者在所有記錄中進行滾動的控制項。
 
- 您可以使用設計工具只能在文件層級專案中。 不過，您也可以新增控制項並繫結至資料，以程式設計方式在執行階段。 如需詳細資訊，請參閱[逐步解說：在 VSTO 增益集專案中的簡單資料繫結](../vsto/walkthrough-simple-data-binding-in-vsto-add-in-project.md)。
+ 您只能在檔層級專案中使用設計工具。 不過，您也可以加入控制項，並在執行時間以程式設計方式將它們系結至資料。 如需詳細資訊，請參閱[逐步解說：VSTO 增益集專案](../vsto/walkthrough-simple-data-binding-in-vsto-add-in-project.md)中的簡單資料系結。
 
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]
 
-## <a name="to-scroll-through-database-records-in-a-worksheet"></a>捲動工作表中的資料庫記錄
+## <a name="to-scroll-through-database-records-in-a-worksheet"></a>若要在工作表中流覽資料庫記錄
 
-1. Visual Studio 中開啟 Excel 應用程式專案。
+1. 在 Visual Studio 中開啟 Excel 應用程式專案。
 
-2. 開啟**Zdroje dat**視窗，並從資料庫建立資料來源。 如需詳細資訊，請參閱 <<c0> [ 新增連線](../data-tools/add-new-connections.md)。
+2. 開啟 [**資料來源**] 視窗，並從資料庫建立資料來源。 如需詳細資訊，請參閱[新增連接](../data-tools/add-new-connections.md)。
 
-3. 展開包含您想要顯示，資料的資料表，然後選取特定的資料行。
+3. 展開包含您要顯示之資料的資料表，然後選取特定的資料行。
 
-4. 開啟清單控制項，然後選取**NamedRange**。
+4. 開啟控制項清單，然後選取 [ **NamedRange**]。
 
-5. 拖曳<xref:Microsoft.Office.Tools.Excel.NamedRange>控制項拖曳至您想要顯示資料的儲存格。
+5. <xref:Microsoft.Office.Tools.Excel.NamedRange>將控制項拖曳至您想要顯示資料的儲存格。
 
-6. 從**Windows Forms**索引標籤**工具箱**，新增<xref:System.Windows.Forms.BindingNavigator>控制項加入您的工作表，並設定您想要使用的控制項。 如需詳細資訊，請參閱 < [BindingNavigator 控制項概觀&#40;Windows Forms&#41;](/dotnet/framework/winforms/controls/bindingnavigator-control-overview-windows-forms)。
+6. 從 [**工具箱**] 的 [ **Windows Forms** ] 索引卷<xref:System.Windows.Forms.BindingNavigator>標中，將控制項新增至您的工作表，然後設定您想要使用的控制項。 如需詳細資訊，請參閱[BindingNavigator &#40;控制項&#41;總覽 Windows Forms](/dotnet/framework/winforms/controls/bindingnavigator-control-overview-windows-forms)。
 
 ## <a name="see-also"></a>另請參閱
-- [資料繫結至 Office 方案中的控制項](../vsto/binding-data-to-controls-in-office-solutions.md)
+- [將資料系結至 Office 方案中的控制項](../vsto/binding-data-to-controls-in-office-solutions.md)

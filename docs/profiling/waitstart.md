@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6307dcad45b7e2c8164aa892c4598d577e4ea464
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: a409a4fe4ffe843df536e3c9e17a3a5a3b6560db
+ms.sourcegitcommit: 4d2620bee4688fb881e09a07ea4a264b99f0743e
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62998961"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71322487"
 ---
 # <a name="waitstart"></a>WaitStart
 WaitStart 選項會導致 *VSPerfCmd.exe* Start 子命令僅在分析工具已初始化時，或者超過指定秒數時才返回。 根據預設，Start 命令會立即返回。 如果 Start 子命令返回而沒有初始化分析工具，則會傳回錯誤。 如果未指定秒數，Start 命令就會無限期等待。
@@ -23,7 +23,7 @@ WaitStart 選項會導致 *VSPerfCmd.exe* Start 子命令僅在分析工具已�
 ## <a name="syntax"></a>語法
 
 ```cmd
-VSPerfCmd.exe /Start:Method /Output:FileName[Options] /StartWait[:Seconds]
+VSPerfCmd.exe /Start:Method /Output:FileName[Options] /WaitStart[:Seconds]
 ```
 
 #### <a name="parameters"></a>參數
@@ -32,7 +32,7 @@ VSPerfCmd.exe /Start:Method /Output:FileName[Options] /StartWait[:Seconds]
 ## <a name="required-options"></a>必要選項
  WaitStart 選項只能搭配 Start 子命令使用。
 
- **輸出：**`filename` 指定輸出檔名稱。
+ **輸出：** `filename` 指定輸出檔名稱。
 
 ## <a name="remarks"></a>備註
 

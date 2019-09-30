@@ -1,17 +1,18 @@
 ---
 title: 更新程式在擷取資訊時發生錯誤
 description: 當您看到錯誤 [擷取更新資訊時發生錯誤] 時，該如何修正的指示。 在 Visual Studio 2019 for Mac 中
+ms.topic: troubleshooting
 author: asb3993
 ms.author: amburns
 ms.date: 04/13/2019
 ms.technology: vs-ide-install
 ms.assetid: 31AF914A-C66B-4CD3-9429-39695E0E94AE
-ms.openlocfilehash: ef0d1f7516c410475f467ecaadecbb0aeaac71a3
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 5ba295defe19c6f3c6c56d5bccc7cc3fa367bb50
+ms.sourcegitcommit: cf8c0fef2b9690595e99ce3802586cdd55fd37c2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67825720"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70107775"
 ---
 # <a name="troubleshooting-updater-has-errors-retrieving-information"></a>疑難排解：更新程式在擷取資訊時發生錯誤
 

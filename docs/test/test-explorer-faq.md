@@ -14,12 +14,12 @@ ms.workload:
 - multiple
 author: kendrahavens
 manager: jillfra
-ms.openlocfilehash: a37cdea4206dafe657dc8cf8adbbcf98ce18afc9
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
-ms.translationtype: HT
+ms.openlocfilehash: dca1fbb8f199db56563f4107ec88b832ec445bde
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69551855"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71254554"
 ---
 # <a name="visual-studio-test-explorer-faq"></a>Visual Studio 測試總管常見問題集
 ::: moniker range=">=vs-2019"
@@ -41,9 +41,9 @@ ms.locfileid: "69551855"
 建置專案來執行以組件為基礎的探索。
 ::: moniker-end
 ::: moniker range="vs-2017"
-建置專案並確保已在 [工具]  > [選項]  > [測試]  中開啟以組件為基礎的探索。
+建置專案並確保已在 [工具] > [選項] > [測試] 中開啟以組件為基礎的探索。
 ::: moniker-end
-[即時測試探索](https://go.microsoft.com/fwlink/?linkid=862824)是來源型的測試探索。 其無法探索使用理論、自訂配接器、自訂特徵及 `#ifdef` 陳述式等項目的測試，因為這些項目均已在執行階段中定義。 需要組建才能準確找到這些測試。 在 Visual Studio 2017 15.6 版及更新版本中，以組件為基礎的探索 (傳統型探索) 只會在建置之後執行。 這項設定表示當您在編輯時，即時測試探索會盡可能找到更多測試，而組件型探索允許動態定義的測試在組建之後顯示。 即時測試探索會改善回應性，但仍然可讓您在建置後取得完整且精確的結果。
+[即時測試探索](https://go.microsoft.com/fwlink/?linkid=862824)是來源型的測試探索。 其無法探索使用理論、自訂介面卡、自訂特性`#ifdef` 、語句等的測試，因為它們是在執行時間定義的。 需要組建才能準確找到這些測試。 在 Visual Studio 2017 15.6 版及更新版本中，以組件為基礎的探索 (傳統型探索) 只會在建置之後執行。 這項設定表示當您在編輯時，即時測試探索會盡可能找到更多測試，而組件型探索允許動態定義的測試在組建之後顯示。 即時測試探索會改善回應性，但仍然可讓您在建置後取得完整且精確的結果。
 
 ## <a name="test-explorer--plus-symbol"></a>測試總管 '+' (加號) 符號
 
@@ -58,7 +58,7 @@ ms.locfileid: "69551855"
 
 **我的專案已經無法使用以組件為基礎的探索。如何再將它開啟？**
 
-前往 [工具]  > [選項]  > [測試]  ，然後選取 [在建置後從建置後的組件探索其他測試]  。
+前往 [工具] > [選項] > [測試]，然後選取 [在建置後從建置後的組件探索其他測試]。
 
 ![以組件為基礎的選項](media/testex-toolsoptions.png)
 ::: moniker-end
@@ -79,7 +79,7 @@ ms.locfileid: "69551855"
 
 **如何開啟測試總管的記錄？**
 
-巡覽至 [工具]   > [選項]   > [測試]  並於該處尋找 [記錄] 區段。
+巡覽至 [工具] > [選項] > [測試] 並於該處尋找 [記錄] 區段。
 
 ## <a name="uwp-test-discovery"></a>UWP 測試探索
 
@@ -107,7 +107,7 @@ ms.locfileid: "69551855"
 
 **在 [測試總管] 搜尋方塊中，已無「檔案路徑」篩選條件。**
 
-Visual Studio 2017 15.7 版已移除 [測試總管]  搜尋方塊中的檔案路徑篩選條件。 此功能的使用率很低，且排除這項功能可讓 [測試總管] 更快速地擷取測試方法。 如果此變更中斷您的開發流程，請在[開發人員社群](https://developercommunity.visualstudio.com/)提交意見反應來告訴我們。
+Visual Studio 2017 15.7 版已移除 [測試總管] 搜尋方塊中的檔案路徑篩選條件。 此功能的使用率很低，且排除這項功能可讓 [測試總管] 更快速地擷取測試方法。 如果此變更中斷您的開發流程，請在[開發人員社群](https://developercommunity.visualstudio.com/)提交意見反應來告訴我們。
 
 ## <a name="remove-undocumented-interfaces"></a>移除未記載的介面
 
@@ -115,7 +115,6 @@ Visual Studio 2017 15.7 版已移除 [測試總管]  搜尋方塊中的檔案路
 
 在 Visual Studio 2019 中，會移除一些先前標記為公用，但從未正式記載的測試視窗 API。 它們在 Visual Studio 2017 中標示為「已淘汰」，可為延伸模組維護人員提供初期警告。 據我們所知，很少有延伸模組發現及依存於這些 API。 這些包括 `IGroupByProvider`、`IGroupByProvider<T>`、`KeyComparer`、`ISearchFilter`、`ISearchFilterToken`、`ISearchToken` 和 `SearchFilterTokenType`。 如果這項變更會影響您的延伸模組，請在 [Developer Community](https://developercommunity.visualstudio.com) (開發人員社群) 提出 Bug 讓我們知道。
 
-::: moniker range="vs-2017"
 ## <a name="test-adapter-nuget-reference"></a>測試配接器 NuGet 參考
 
 **在 Visual Studio 2017 15.8 版中， 已探索到我的註冊，但不會執行。**
@@ -126,8 +125,9 @@ Visual Studio 2017 15.7 版已移除 [測試總管]  搜尋方塊中的檔案路
 
 專案必須使用測試配接器 NuGet 套件，而非使用測試配接器延伸模組。 使用持續整合時，此需求可大幅改善效能並減少問題的發生。 在[版本資訊](/visualstudio/releasenotes/vs2017-relnotes-v15.8#testadapterextension)深入了解 .NET 測試配接器延伸模組淘汰。
 
+::: moniker range="vs-2017"
 > [!NOTE]
-> 如果您使用 NUnit 2 Test Adapter 且無法移轉至 NUnit 3 Test Adapter，您可以關閉這個新的探索行為，位置是 Visual Studio 15.8 版的 [工具]   > [選項]   > [測試]  。
+> 如果您使用 NUnit 2 Test Adapter 且無法移轉至 NUnit 3 Test Adapter，您可以關閉這個新的探索行為，位置是 Visual Studio 15.8 版的 [工具] > [選項] > [測試]。
 
 ![工具選項中的 [測試總管] 配接器行為](media/testex-adapterbehavior.png)
 ::: moniker-end
@@ -136,7 +136,7 @@ Visual Studio 2017 15.7 版已移除 [測試總管]  搜尋方塊中的檔案路
 
 **我無法在 Visual Studio 2017 15.7 版及更新版本中執行 UWP 測試。**
 
-最近的 UWP 測試專案指定一個測試平台建置屬性，可讓識別測試應用程式時的效能更佳。 如果您有在 Visual Studio 15.7 版之前初始化的 UWP 測試專案，您可能會在 [輸出]   > [測試]  中看到此錯誤：
+最近的 UWP 測試專案指定一個測試平台建置屬性，可讓識別測試應用程式時的效能更佳。 如果您有在 Visual Studio 15.7 版之前初始化的 UWP 測試專案，您可能會在 [輸出] > [測試] 中看到此錯誤：
 
 **System.AggregateException:One or more errors occurred. ---> System.InvalidOperationException:The following TestContainer was not found {} at Microsoft.VisualStudio.TestWindow.Controller.TestContainerProvider \<GetTestContainerAsync>d__61.MoveNext()**
 

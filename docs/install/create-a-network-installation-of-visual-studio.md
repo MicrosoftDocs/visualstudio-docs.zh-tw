@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 766e3a35c6f9b775373fb7a096000177cfee131d
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 1d18d3a3de423cc63569911bbe49477b5e6f5f26
+ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68870780"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70180300"
 ---
 # <a name="create-a-network-installation-of-visual-studio"></a>建立 Visual Studio 的網路安裝
 
@@ -249,7 +249,7 @@ vs_enterprise.exe --layout c:\VSLayout --all
 ::: moniker range="vs-2019"
 
 > [!NOTE]
-> [visualstudio.microsoft.com](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) 所提供 Visual Studio 啟動載入器，會下載並安裝執行時可用的最新版 Visual Studio。
+> [visualstudio.microsoft.com](https://visualstudio.microsoft.com/downloads) 所提供 Visual Studio 啟動載入器，會下載並安裝執行時可用的最新版 Visual Studio。
 >
 > 因此，如果您今天下載 Visual Studio「啟動載入器」  ，並在六個月後執行，則其會安裝您在執行啟動載入器時的最新版 Visual Studio。
 >

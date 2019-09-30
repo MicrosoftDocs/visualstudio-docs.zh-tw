@@ -1,5 +1,5 @@
 ---
-title: 圖表控制項
+title: Chart 控制項
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -16,25 +16,25 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 21ca64f6661c4f0d7182bf20887ff8bdf754a6fc
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 864422aac695fbf474e6ed6b8cf6d765247eabf9
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440320"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71255296"
 ---
-# <a name="chart-control"></a>圖表控制項
+# <a name="chart-control"></a>Chart 控制項
   <xref:Microsoft.Office.Tools.Excel.Chart> 控制項是一個會公開事件的圖表物件。 當您將圖表加入工作表時，Visual Studio 會建立 <xref:Microsoft.Office.Tools.Excel.Chart> 物件，以便您直接對這個物件進行程式設計，而不必周遊 Microsoft Office Excel 物件模型。
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
 
 ## <a name="create-the-control"></a>建立控制項
- 您可以新增<xref:Microsoft.Office.Tools.Excel.Chart>Microsoft Office Excel 工作表在設計階段或在執行階段在文件層級專案中的控制項。
+ 您可以透過文件層級專案，在設計階段或執行階段將 <xref:Microsoft.Office.Tools.Excel.Chart> 控制項加入 Microsoft Office Excel 工作表。
 
- 您可以新增<xref:Microsoft.Office.Tools.Excel.Chart>控制項加入工作表，在執行階段中的 VSTO 增益集。 如需詳細資訊，請參閱[如何：將圖表控制項加入工作表](../vsto/how-to-add-chart-controls-to-worksheets.md)。
+ 在 VSTO 增益集中，您可以在執行階段將 <xref:Microsoft.Office.Tools.Excel.Chart> 控制項加入工作表。 如需詳細資訊，請參閱[如何：將圖表控制項加入至](../vsto/how-to-add-chart-controls-to-worksheets.md)工作表。
 
 > [!NOTE]
-> 當工作表關閉時，動態建立的圖表物件不會保存為工作表中的主控制項。 如需詳細資訊，請參閱 <<c0> [ 將控制項加入 Office 文件，在執行階段](../vsto/adding-controls-to-office-documents-at-run-time.md)。
+> 當工作表關閉時，動態建立的圖表物件不會保存為工作表中的主控制項。 如需詳細資訊，請參閱[在執行時間將控制項加入 Office 檔](../vsto/adding-controls-to-office-documents-at-run-time.md)。
 
 ## <a name="formatting"></a>格式化
  可套用至 <xref:Microsoft.Office.Interop.Excel.Chart> 的任何格式，皆可套用至 <xref:Microsoft.Office.Tools.Excel.Chart> 控制項。 其包括框線、字型、圖表類型、格線、圖例和資料標籤。
@@ -73,11 +73,11 @@ ms.locfileid: "63440320"
 - <xref:Microsoft.Office.Tools.Excel.Chart.SeriesChange>
 
 ## <a name="see-also"></a>另請參閱
-- [Office 程式開發範例和逐步解說](../vsto/office-development-samples-and-walkthroughs.md)
-- [擴充 Word 文件和 Excel 活頁簿，VSTO 增益集在執行階段](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)
-- [Office 文件上的控制項](../vsto/controls-on-office-documents.md)
-- [將控制項加入 Office 文件，在執行階段](../vsto/adding-controls-to-office-documents-at-run-time.md)
-- [使用擴充的物件自動化 Excel](../vsto/automating-excel-by-using-extended-objects.md)
-- [如何：將圖表控制項加入工作表](../vsto/how-to-add-chart-controls-to-worksheets.md)
-- [資料繫結至 Office 方案中的控制項](../vsto/binding-data-to-controls-in-office-solutions.md)
-- [主項目和主控制項的程式設計限制](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)
+- [Office 開發範例和逐步解說](../vsto/office-development-samples-and-walkthroughs.md)
+- [在 VSTO 增益集的執行時間中擴充 Word 檔和 Excel 活頁簿](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)
+- [Office 檔上的控制項](../vsto/controls-on-office-documents.md)
+- [在執行時間將控制項加入 Office 檔](../vsto/adding-controls-to-office-documents-at-run-time.md)
+- [使用擴充物件自動化 Excel](../vsto/automating-excel-by-using-extended-objects.md)
+- [如何：將圖表控制項新增至工作表](../vsto/how-to-add-chart-controls-to-worksheets.md)
+- [將資料系結至 Office 方案中的控制項](../vsto/binding-data-to-controls-in-office-solutions.md)
+- [主專案和主控制項的程式設計限制](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)

@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8ba13514ca886ab822367bbd61aaebdc8527ec45
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6c5ca98219444515d01baf670489120238cb8dda
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62545039"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71232332"
 ---
 # <a name="ca2132-default-constructors-must-be-at-least-as-critical-as-base-type-default-constructors"></a>CA2132:預設建構函式至少必須和基底類型的預設建構函式一樣關鍵
 
@@ -24,28 +24,28 @@ ms.locfileid: "62545039"
 |TypeName|DefaultConstructorsMustHaveConsistentTransparency|
 |CheckId|CA2132|
 |分類|Microsoft.Security|
-|中斷變更|中斷|
+|重大變更|中斷|
 
 > [!NOTE]
-> 這個警告只會套用至執行 CoreCLR （CLR 的 Silverlight web 應用程式特定的版本） 的程式碼中。
+> 此警告僅適用于執行 CoreCLR 的程式碼（Silverlight web 應用程式專屬的 CLR 版本）。
 
 ## <a name="cause"></a>原因
 
-在衍生類別中的預設建構函式的透明度屬性不是重要性不如基底類別的透明度。
+衍生類別之預設函式的透明度屬性，與基類的透明度並不重要。
 
 ## <a name="rule-description"></a>規則描述
 
-型別和成員具有<xref:System.Security.SecurityCriticalAttribute>不可由 Silverlight 應用程式程式碼。 重視安全性的類型以及成員，只能夠由 .NET Framework for Silverlight 類別庫中的受信任程式碼使用。 由於衍生類別中的公用或受保護建構所具有的透明度必須大於或等於其基底類別，因此應用程式中的類別不可衍生自標記為 SecurityCritical 的類別。
+具有的<xref:System.Security.SecurityCriticalAttribute>類型和成員無法由 Silverlight 應用程式代碼使用。 重視安全性的類型以及成員，只能夠由 .NET Framework for Silverlight 類別庫中的受信任程式碼使用。 由於衍生類別中的公用或受保護建構所具有的透明度必須大於或等於其基底類別，因此應用程式中的類別不可衍生自標記為 SecurityCritical 的類別。
 
-CoreCLR 平台程式碼，如果基底型別具有公用或保護之不透明的預設建構函式再衍生的型別必須遵守的預設建構函式繼承規則。 衍生的型別也必須擁有預設建構函式，該建構函式必須至少為重要的預設建構函式的基底型別。
+針對 CoreCLR 平臺程式碼，如果基底類型具有公用或受保護的非透明預設的函式，則衍生的類型必須遵守預設的函數繼承規則。 衍生類型也必須有預設的函式，且該函式必須至少是基底類型的關鍵預設函式。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
 
-若要修正此違規情形，請移除類型或不是衍生自安全性不透明的類型。
+若要修正違規，請移除類型，或不要衍生自安全性非透明類型。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
 
-請勿隱藏這項規則的警告。 違反此規則應用程式程式碼將會導致拒絕載入的型別與 CoreCLR <xref:System.TypeLoadException>。
+請勿隱藏此規則的警告。 應用程式代碼違反此規則會導致 CoreCLR 拒絕載入具有的<xref:System.TypeLoadException>型別。
 
 ### <a name="code"></a>程式碼
 

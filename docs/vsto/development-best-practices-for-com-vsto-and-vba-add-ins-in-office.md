@@ -1,5 +1,5 @@
 ---
-title: 開發最佳做法：COM、 VSTO 及 VBA 增益集 Office
+title: 開發最佳作法：Office 中的 COM、VSTO、& 的 VBA 增益集
 ms.date: 07/25/2017
 ms.topic: conceptual
 dev_langs:
@@ -11,57 +11,57 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4689f14a6ce66f509a7af1f4a9a1d50a0f8d37cd
-ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
+ms.openlocfilehash: 35b39aef2865f0438e6165bd6bf2c5418e8fbcb0
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66401426"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71254649"
 ---
-# <a name="development-best-practices-for-com-vsto-and-vba-add-ins-in-office"></a>COM、 VSTO 和 VBA 增益集 Office 的開發最佳作法
-  如果您正在適用於 Office 開發 COM、 VSTO 或 VBA 增益集，請遵循本文中所述的開發最佳作法。   這有助於確保：
+# <a name="development-best-practices-for-com-vsto-and-vba-add-ins-in-office"></a>Office 中 COM、VSTO 及 VBA 增益集的開發最佳作法
+  如果您要開發適用于 Office 的 COM、VSTO 或 VBA 增益集，請遵循本文中所述的開發最佳作法。   這將有助於確保:
 
-- 您的增益集跨不同版本和部署的 Office 相容性。
-- 降低您的使用者和 IT 系統管理員的增益集部署的複雜度。
-- 不會發生非預期的安裝或執行階段失敗的增益集。
+- 跨不同版本和 Office 部署的增益集的相容性。
+- 為您的使用者和 IT 系統管理員降低增益集部署的複雜性。
+- 增益集不會發生非預期的安裝或執行階段錯誤。
 
->注意:使用[傳統型橋接器](/windows/uwp/porting/desktop-to-uwp-root)來準備您的 COM、 VSTO 或 VBA 增益集不支援 Windows 市集。 無法在 Windows 市集 」 或 「 Office 市集散發 COM、 VSTO 和 VBA 增益集。
+>注意：不支援使用[桌面橋接器](/windows/uwp/porting/desktop-to-uwp-root)來準備適用于 Windows STORE 的 COM、VSTO 或 VBA 增益集。 COM、VSTO 及 VBA 增益集無法散發于 Windows Store 或 Office Store。
 
-## <a name="do-not-check-for-office-during-installation"></a>不要在安裝期間檢查 Office
- 我們不建議具有偵測增益集安裝程序期間是否已安裝 Office 增益集。 如果未安裝 Office，您可以安裝增益集，以及使用者將能夠存取它，在安裝 Office 之後。
+## <a name="do-not-check-for-office-during-installation"></a>在安裝期間不檢查 Office
+ 建議您不要讓增益集偵測到在增益集安裝過程中是否已安裝 Office。 如果未安裝 Office，您可以安裝增益集，而且使用者將能夠在安裝 Office 之後存取它。
 
-## <a name="use-embedded-interop-types-nopia"></a>使用內嵌的 Interop 類型 (NoPIA)
-如果您的方案會使用.NET 4.0 或更新版本中，使用內嵌的 interop 類型 (NoPIA) 而不是取決於 Office 主要 Interop 組件 (PIA) 可轉散發套件。 使用內嵌型別可縮小安裝您的方案，並確保未來的相容性。 Office 2010 為 Office PIA 可轉散發套件隨附的最後一個版本。 如需詳細資訊，請參閱[逐步解說：從 Microsoft Office 組件內嵌類型資訊](https://msdn.microsoft.com/library/ee317478.aspx)並[類型等價和內嵌 interop 類型](/windows/uwp/porting/desktop-to-uwp-root)。
+## <a name="use-embedded-interop-types-nopia"></a>使用內嵌的 Interop 類型（NoPIA）
+如果您的方案使用 .NET 4.0 或更新版本，請使用內嵌的 interop 類型（NoPIA），而不是根據 Office 主要 Interop 元件（PIA）可轉散發套件。 使用類型內嵌可減少解決方案的安裝大小，並確保未來的相容性。 Office 2010 是隨附 PIA 可轉散發套件的最後一個 Office 版本。 如需詳細資訊，請參閱[逐步解說：從 Microsoft Office 元件](https://msdn.microsoft.com/library/ee317478.aspx)和[類型等價和內嵌 interop 類型](/windows/uwp/porting/desktop-to-uwp-root)嵌入類型資訊。
 
-如果您的方案會使用較早版本的.NET，我們建議您更新您的解決方案，以使用.NET 4.0 或更新版本。 使用.NET 4.0 或更新版本，可減少在較新版本的 Windows 上的執行階段必要條件。
+如果您的解決方案使用舊版的 .NET，建議您將方案更新為使用 .NET 4.0 或更新版本。 使用 .NET 4.0 或更新版本可減少較新版本 Windows 的執行時間必要條件。
 
-## <a name="avoid-depending-on-specific-office-versions"></a>避免特定的 Office 版本而定。
-如果您的解決方案會使用僅供以較新版本的 Office 的功能，請確認在執行階段 （例如，使用例外狀況處理，或藉由檢查版本） 的功能存在 （可能的話，請在功能層級）。 驗證最小版本，而不是特定的版本，在物件模型中，使用支援的 Api，例如[Application.Version 屬性](<xref:Microsoft.Office.Interop.Excel._Application.Version%2A>)。 我們不建議您需要 Office 二進位中繼資料、 安裝路徑，或登錄機碼，因為這些可以在安裝、 環境和版本之間變更。
+## <a name="avoid-depending-on-specific-office-versions"></a>避免視特定 Office 版本而定
+如果您的解決方案使用的功能僅適用于較新版本的 Office，請在執行時間確認功能是否存在（如果可能的話）（例如，使用例外狀況處理或藉由檢查版本）。 使用物件模型中支援的 Api，例如[Application. Version 屬性](<xref:Microsoft.Office.Interop.Excel._Application.Version%2A>)，驗證最小版本，而不是特定版本。 我們不建議您依賴 Office 二進位中繼資料、安裝路徑或登錄機碼，因為這些可能會在安裝、環境和版本之間變更。
 
-## <a name="enable-both-32-bit-and-64-bit-office-usage"></a>啟用 32 位元和 64 位元 Office 使用
-預設的 build 目標應支援 (x86) 32 位元和 64 位元 (x64)，除非您的解決方案視只適用於特定的位元的程式庫。 64 位元版本的 Office 增加的採用，尤其是在巨量資料環境。 支援 32 位元和 64 位元更容易為您的使用者，32 位元和 64 位元版本 Office 之間的轉換。
+## <a name="enable-both-32-bit-and-64-bit-office-usage"></a>同時啟用32位和64位的 Office 使用方式
+除非您的解決方案相依于僅適用于特定位的程式庫，否則您的預設組建目標應該同時支援32位（x86）和64位（x64）。 64位版本的 Office 會隨著採用而增加，尤其是在大型資料環境中。 同時支援32位和64位，可讓您的使用者更輕鬆地在32位和64位版本的 Office 之間轉換。
 
-在撰寫 VBA 程式碼，使用 64 位元安全 declare 陳述式，並轉換為適當的變數。 此外，請確定，可以藉由提供每一個位元程式碼執行 Office 32 位元或 64 位元版本的使用者之間共用文件。 如需詳細資訊，請參閱 <<c0> [ 應用程式概觀的 64 位元 Visual Basic](/office/vba/Language/Concepts/Getting-Started/64-bit-visual-basic-for-applications-overview)。
+撰寫 VBA 程式碼時，請使用64位安全的 declare 語句，並適當地轉換變數。 此外，請確定可以在執行32位或64位版本 Office 的使用者之間共用檔，方法是為每個位提供程式碼。 如需詳細資訊，請參閱[適用于應用程式的64位 Visual Basic 總覽](/office/vba/Language/Concepts/Getting-Started/64-bit-visual-basic-for-applications-overview)。
 
-## <a name="support-restricted-environments"></a>支援限制的環境
-您的解決方案應該不需要使用者帳戶提高權限或系統管理員權限。 此外，解決方案不應該相依於設定或變更：
+## <a name="support-restricted-environments"></a>支援受限制的環境
+您的解決方案不應要求使用者帳戶許可權提升或系統管理員許可權。 此外，此解決方案不應該相依于設定或改變：
 
 - 目前的工作目錄。
 - DLL 載入目錄。
-- 路徑變數中。
+- PATH 變數。
 
-## <a name="change-the-save-location-of-shared-data-and-settings"></a>變更儲存共用的資料和設定的位置
-如果方案是由增益集和外部 Office 處理序所組成，請勿使用使用者的應用程式資料資料夾或登錄來交換資料或增益集和外部處理序之間的設定。 相反地，請考慮使用使用者的暫存資料夾、 文件 資料夾中或您方案的安裝目錄。
+## <a name="change-the-save-location-of-shared-data-and-settings"></a>變更共用資料和設定的儲存位置
+如果方案是由增益集和 Office 外部的進程所組成，請勿使用使用者的 [應用程式資料] 資料夾或登錄來交換增益集與外部進程之間的資料或設定。 相反地，請考慮使用使用者的暫存資料夾、documents 資料夾或您方案的安裝目錄。
 
-## <a name="increment-the-version-number-with-each-update"></a>遞增版本號碼，每次更新
-設定方案中的二進位檔的版本號碼，並增加每次更新。 這會讓使用者更輕鬆地找出版本之間變更，並評估相容性。
+## <a name="increment-the-version-number-with-each-update"></a>每次更新時遞增版本號碼
+在您的方案中設定二進位檔的版本號碼，並隨著每次更新而遞增。 這可讓使用者更輕鬆地識別版本之間的變更，以及評估相容性。
 
-## <a name="provide-support-statements-for-the-latest-versions-of-office"></a>提供 Office 的最新版本的支援聲明
-客戶都詢問 Isv 能夠提供其 COM、 VSTO 和 VBA 增益集，在 Office 中執行的支援聲明。 列出您使用 Office 365 ProPlus 的明確支援陳述式可協助客戶準備就緒工具了解您的支援人員。
+## <a name="provide-support-statements-for-the-latest-versions-of-office"></a>提供最新 Office 版本的支援聲明
+客戶會要求 Isv 針對在 Office 中執行的 COM、VSTO 及 VBA 增益集提供支援聲明。 列出您的明確支援聲明可協助使用 Office 365 ProPlus 準備就緒工具的客戶瞭解您的支援。
 
-若要提供 Office 用戶端應用程式 （例如 Word 或 Excel） 的支援聲明，先確認您的增益集執行在目前的 Office 版本中，然後認可來提供更新，如果您的增益集中斷在未來的版本。 您沒有 Microsoft 發行新的組建或 Office 的更新時，測試您的增益集。 Microsoft 很少變更在 Office 中的 COM、 VSTO 和 VBA 擴充性平台，這些變更將會有完善的記載。
+若要提供 Office 用戶端應用程式（例如 Word 或 Excel）的支援聲明，請先確認您的增益集是在目前的 Office 版本中執行，然後在您的增益集于未來的版本中時，認可以提供更新。 當 Microsoft 發行新組建或 Office 更新時，您不需要測試增益集。 Microsoft 很少會變更 Office 中的 COM、VSTO 和 VBA 擴充性平臺，而且這些變更將會妥善記載。
 
->重要事項：Microsoft 會維護一份支援增益集的就緒程度報告和 ISV 的連絡資訊。 若要取得增益集內所列，請參閱[ https://aka.ms/readyforwindows ](https://aka.ms/readyforwindows)。
+>重要事項：Microsoft 會針對就緒性報告和 ISV 連絡人資訊，維護一份支援的增益集清單。 若要列出您的增益集，請[https://aka.ms/readyforwindows](https://aka.ms/readyforwindows)參閱。
 
-## <a name="use-process-monitor-to-help-debug-installation-or-loading-issues"></a>使用處理序監視器，以協助偵錯安裝或載入問題
-如果增益集有在安裝或負載期間的相容性問題，他們可能會與檔案或登錄存取問題。 使用[處理序監視](/sysinternals/downloads/procmon)或類似的偵錯工具，來記錄和比較行為的工作環境，以協助找出問題。
+## <a name="use-process-monitor-to-help-debug-installation-or-loading-issues"></a>使用進程監視器來協助偵測安裝或載入問題
+如果您的增益集在安裝或載入期間發生相容性問題，它們可能與檔案或登錄存取的問題有關。 使用[進程監視器](/sysinternals/downloads/procmon)或類似的偵錯工具，針對工作環境記錄和比較行為，以協助識別問題。

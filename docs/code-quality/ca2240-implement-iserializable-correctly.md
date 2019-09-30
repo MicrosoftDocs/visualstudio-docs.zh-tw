@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 1a6d9acc3a74505f766fbf9cfe26fc6878fdbb4b
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 2640fddcde0d8777363a3c56e398e7ff307a20c7
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68920039"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71237872"
 ---
 # <a name="ca2240-implement-iserializable-correctly"></a>CA2240:必須正確實作 ISerializable
 
@@ -32,23 +32,23 @@ ms.locfileid: "68920039"
 |TypeName|ImplementISerializableCorrectly|
 |CheckId|CA2240|
 |分類|Microsoft.Usage|
-|中斷變更|非中斷|
+|重大變更|不中斷|
 
 ## <a name="cause"></a>原因
 
-外部可見類型可指派給<xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName>介面, 而下列其中一個條件為 true:
+外部可見類型可指派給<xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName>介面，而下列其中一個條件為 true：
 
-- 型別會繼承, 但不會<xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A?displayProperty=fullName>覆寫方法, 而且型別會宣告未<xref:System.NonSerializedAttribute?displayProperty=fullName>以屬性標記的實例欄位。
+- 型別會繼承，但不會<xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A?displayProperty=fullName>覆寫方法，而且型別會宣告未<xref:System.NonSerializedAttribute?displayProperty=fullName>以屬性標記的實例欄位。
 
-- 型別不是密封的, 而且型別<xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A>會實作為外部可見且可覆寫的方法。
+- 型別不是密封的，而且型別<xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A>會實作為外部可見且可覆寫的方法。
 
 ## <a name="rule-description"></a>規則描述
-在繼承<xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName>介面的類型中宣告的實例欄位不會自動包含在序列化進程中。 若要包含欄位, 類型必須執行<xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A>方法和序列化的函式。 如果欄位不應序列化, 請將<xref:System.NonSerializedAttribute>屬性套用至欄位, 以明確指出決策。
+在繼承<xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName>介面的類型中宣告的實例欄位不會自動包含在序列化進程中。 若要包含欄位，類型必須執行<xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A>方法和序列化的函式。 如果欄位不應序列化，請將<xref:System.NonSerializedAttribute>屬性套用至欄位，以明確指出決策。
 
-在未密封的類型中, <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A>方法的執行應該是外部可見的。 因此, 方法可由衍生型別呼叫, 而且可以覆寫。
+在未密封的類型中， <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A>方法的執行應該是外部可見的。 因此，方法可由衍生型別呼叫，而且可以覆寫。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
-若要修正此規則的違規, 請將<xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A>方法設為可見且可覆寫, 並確定所有實例欄位都包含在序列化程式中, <xref:System.NonSerializedAttribute>或明確地以屬性標示。
+若要修正此規則的違規，請將<xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A>方法設為可見且可覆寫，並確定所有實例欄位都包含在序列化程式中， <xref:System.NonSerializedAttribute>或明確地以屬性標示。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
 請勿隱藏此規則的警告。
@@ -61,7 +61,7 @@ ms.locfileid: "68920039"
 [!code-vb[FxCop.Usage.ImplementISerializableCorrectly#1](../code-quality/codesnippet/VisualBasic/ca2240-implement-iserializable-correctly_1.vb)]
 
 ## <a name="example"></a>範例
-下列範例會藉由在 Book 類別<xref:System.Runtime.Serialization.ISerializable.GetObjectData>上提供的覆寫執行, 並在程式庫類別上提供的`GetObjectData`執行, 以修正前述的兩個違規。
+下列範例會藉由在 Book 類別<xref:System.Runtime.Serialization.ISerializable.GetObjectData>上提供的覆寫執行，並在程式庫類別上提供的`GetObjectData`執行，以修正前述的兩個違規。
 
 [!code-cpp[FxCop.Usage.ImplementISerializableCorrectly2#1](../code-quality/codesnippet/CPP/ca2240-implement-iserializable-correctly_2.cpp)]
 [!code-csharp[FxCop.Usage.ImplementISerializableCorrectly2#1](../code-quality/codesnippet/CSharp/ca2240-implement-iserializable-correctly_2.cs)]

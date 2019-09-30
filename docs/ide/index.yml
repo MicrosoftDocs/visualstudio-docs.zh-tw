@@ -1,109 +1,80 @@
-### YamlMime:YamlDocument
-documentType: LandingData
+### YamlMime:Landing
 title: Visual Studio IDE 文件
+summary: 整合式開發環境 (IDE) 是功能豐富的應用程式，可用於軟體開發的許多層面。 Visual Studio IDE 讓您輕鬆編輯、偵錯、建立及發佈您的應用程式。
 metadata:
-  title: Visual Studio 文件 | Microsoft Docs
-  description: 關於如何學習使用 Visual Studio 的教學課程和概念性文章。
-  author: ghogen
-  manager: jillfra
+  title: Visual Studio IDE 文件
+  titleSuffix: ''
+  description: 瀏覽到其他頁面，有助於您了解如何使用 Visual Studio 互動式開發環境。
   ms.prod: visual-studio-windows
-  ms.technology: vs-ide
+  ms.technology: vs-ide-general
   ms.topic: landing-page
-  ms.date: 11/12/2018
-  ms.author: ghogen
-  ms.custom: seodec18
-sections:
-  - title: Visual Studio 使用者入門
-    items:
-      - type: paragraph
-        text: 安裝和了解 Visual Studio 整合式開發環境 (IDE)
-      - type: list
-        style: cards
-        className: cardsM
-        columns: 4
-        items:
-          - href: ../install/install-visual-studio.md
-            html: <p></p>
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_setup.svg'
-            title: 安裝 Visual Studio
-          - href: ../get-started/visual-studio-ide.md?toc=/visualstudio/csharp/toc.json&bc=/visualstudio/csharp/breadcrumb/toc.json
-            html: <p></p>
-            image:
-              src: 'https://docs.microsoft.com/media/logos/logo_visual-studio.svg'
-            title: 體驗 Visual Studio IDE
-          - href: ../ide/whats-new-visual-studio-2017.md
-            html: <p></p>
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_whats-new.svg'
-            title: Visual Studio 2017 的新功能
-          - href: ../ide/whats-new-visual-studio-2019.md
-            html: <p></p>
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_whats-new.svg'
-            title: Visual Studio 2019 的新功能
-  - title: 教學課程
-    items:
-      - type: paragraph
-        text: 開始以您選擇的語言使用 Visual Studio。
-      - type: list
-        style: icon48
-        items:
-          - image:
-              src: 'https://docs.microsoft.com/media/logos/logo_csharp.svg'
-            text: 'C#'
-            href: /visualstudio/get-started/csharp/
-          - image:
-              src: 'https://docs.microsoft.com/media/logos/logo_fsharp.svg'
-            text: 'F#'
-            href: /dotnet/fsharp
-          - image:
-              src: 'https://docs.microsoft.com/media/logos/logo_vb.svg'
-            text: Visual Basic
-            href: /visualstudio/get-started/visual-basic/
-          - image:
-              src: 'https://docs.microsoft.com/media/logos/logo_cplusplus.svg'
-            text: C++
-            href: /cpp/get-started/tutorial-console-cpp
-          - image:
-              src: 'https://docs.microsoft.com/media/logos/logo_python.svg'
-            text: Python
-            href: /visualstudio/python/
-          - image:
-              src: 'https://docs.microsoft.com/media/logos/logo_js.svg'
-            text: JavaScript
-            href: /visualstudio/javascript/
-  - title: 開發應用程式
-    items:
-      - type: paragraph
-        text: 透過更深入的教學課程，來更加了解如何使用 Visual Studio 來開發和測試應用程式
-      - type: list
-        style: cards
-        className: cardsM
-        columns: 3
-        items:
-          - href: ../ide/index-writing-code.md
-            html: <p>充分利用 Visual Studio 程式碼編輯器</p>
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_code-edit.svg'
-            title: 撰寫和編輯程式碼
-          - href: ../ide/compiling-and-building-in-visual-studio.md
-            html: <p>設定您的編譯器並建置您的應用程式。</p>
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_build.svg'
-            title: 編譯和建置
-          - href: ../debugger/debugger-feature-tour.md
-            html: <p>在偵錯工具下執行您的應用程式來調查問題。</p>
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_debug.svg'
-            title: 偵錯
-          - href: ../test/getting-started-with-unit-testing.md
-            html: <p>使用 Visual Studio 來管理單元測試和自動程式化 UI 測試。</p>
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_test.svg'
-            title: 測試
-          - href: ../data-tools/create-a-sql-database-by-using-a-designer.md
-            html: <p>使用 Visual Studio 資料庫設計工具來建立 SQL 資料庫。</p>
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_generic-database.svg'
-            title: 存取資料
+  author: gewarren
+  ms.author: gewarren
+  ms.date: 09/24/2019
+  ms.openlocfilehash: f45e063db85f782f7b51b3cc71b69cca61589f27
+  ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+  ms.translationtype: HT
+  ms.contentlocale: zh-TW
+  ms.lasthandoff: 09/25/2019
+  ms.locfileid: "71254556"
+landingContent:
+- title: 開始使用
+  linkLists:
+  - linkListType: download
+    links:
+    - text: 下載 Visual Studio
+      url: https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=navigation+cta&utm_content=download+vs2019
+  - linkListType: get-started
+    links:
+    - text: 安裝 Visual Studio
+      url: ../install/install-visual-studio.md
+  - linkListType: overview
+    links:
+    - text: Visual Studio 概觀
+      url: ../get-started/visual-studio-ide.md
+- title: 使用 Visual Studio
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: 使用程式碼編輯器
+      url: ../get-started/tutorial-editor.md
+    - text: 編譯和建置
+      url: ../ide/compiling-and-building-in-visual-studio.md
+    - text: 偵錯程式碼
+      url: ../debugger/debugger-feature-tour.md
+    - text: 撰寫測試
+      url: ../test/getting-started-with-unit-testing.md
+    - text: 分析程式碼品質
+      url: ../code-quality/roslyn-analyzers-overview.md
+    - text: 發佈網站
+      url: ../deployment/quickstart-deploy-to-a-web-site.md
+    - text: 存取資料
+      url: ../data-tools/create-a-simple-data-application-by-using-adonet.md
+    - text: 個人化 IDE
+      url: ../ide/quickstart-personalize-the-ide.md
+    - text: 生產力功能
+      url: ../ide/productivity-features.md
+- title: 以您的語言進行開發
+  linkLists:
+  - linkListType: tutorial
+    links:
+    - text: C#
+      url: ../get-started/csharp/tutorial-console.md
+    - text: C++
+      url: /cpp/get-started/tutorial-console-cpp
+    - text: Visual Basic
+      url: ../get-started/visual-basic/tutorial-console.md
+    - text: Python
+      url: ../python/tutorial-working-with-python-in-visual-studio-step-00-installation.md
+    - text: JavaScript
+      url: /visualstudio/javascript/tutorial-nodejs
+    - text: F#
+      url: /dotnet/fsharp/get-started/get-started-visual-studio
+- title: 探索新功能
+  linkLists:
+  - linkListType: whats-new
+    links:
+    - text: Visual Studio 2019 的新功能
+      url: ../ide/whats-new-visual-studio-2019.md
+    - text: Visual Studio 2017 的新功能
+      url: ../ide/whats-new-visual-studio-2017.md

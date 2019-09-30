@@ -6,7 +6,7 @@ keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.date: 05/30/2019
+ms.date: 09/23/2019
 ms.topic: reference
 helpviewer_keywords:
 - workload ID, Visual Studio
@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: be73e3af-d87b-4d14-bd08-2e4bda074fb3
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: e45583b2fee54450cbcf613849119997cc49e2cf
-ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
-ms.translationtype: HT
+ms.openlocfilehash: 09ac371a4fd64419a8eceeac6b1b9fdf30cb5d8c
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66432072"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71211403"
 ---
 # <a name="visual-studio-enterprise-component-directory"></a>Visual Studio Enterprise 元件目錄
 

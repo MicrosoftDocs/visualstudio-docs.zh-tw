@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f9af307158ecd8d5a1f93ebd1f8575cad5cf51e5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f2729e74e3abf6be2ae5b17a836d920c1376decd
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62540855"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71236943"
 ---
 # <a name="ca5351-do-not-use-broken-cryptographic-algorithms"></a>CA5351 不要使用中斷的密碼編譯演算法
 
@@ -22,7 +22,7 @@ ms.locfileid: "62540855"
 |TypeName|DoNotUseBrokenCryptographicAlgorithms|
 |CheckId|CA5351|
 |分類|Microsoft.Cryptography|
-|中斷變更|非中斷|
+|重大變更|不中斷|
 
 > [!NOTE]
 > 上次於 2015 年 11 月更新此警告。
@@ -35,7 +35,7 @@ ms.locfileid: "62540855"
 
 ## <a name="rule-description"></a>規則描述
 
-中斷的密碼編譯演算法較不安全，建議您不要使用它們。 MD5 雜湊演算法容易受到已知的衝突攻擊，但是特定的弱點會因使用的內容而不同。  用來確保資料完整性 （例如，檔案簽章或數位憑證） 的雜湊演算法是特別容易受到攻擊。  在這種情況下，攻擊者可能會產生兩個不同的資料部分，讓良性資料可以取代為惡意資料，而不會變更雜湊值，或讓相關聯的數位簽章失效。
+中斷的密碼編譯演算法較不安全，建議您不要使用它們。 MD5 雜湊演算法容易受到已知的衝突攻擊，但是特定的弱點會因使用的內容而不同。  用來確保資料完整性的雜湊演算法（例如，檔案簽章或數位憑證）特別容易受到攻擊。  在這種情況下，攻擊者可能會產生兩個不同的資料部分，讓良性資料可以取代為惡意資料，而不會變更雜湊值，或讓相關聯的數位簽章失效。
 
 針對加密演算法：
 
@@ -49,7 +49,7 @@ ms.locfileid: "62540855"
 
 使用密碼編譯較強的選項：
 
-- 針對 MD5，使用雜湊[sha-2](/windows/desktop/SecCrypto/hash-and-signature-algorithms)系列 (例如<xref:System.Security.Cryptography.SHA512>， <xref:System.Security.Cryptography.SHA384>， <xref:System.Security.Cryptography.SHA256>)。
+- 針對 MD5，請使用[sha-1](/windows/desktop/SecCrypto/hash-and-signature-algorithms)系列中的雜湊（ <xref:System.Security.Cryptography.SHA512> <xref:System.Security.Cryptography.SHA384> <xref:System.Security.Cryptography.SHA256>例如、、）。
 
 - 針對 DES 和 RC2，使用 <xref:System.Security.Cryptography.Aes> 加密。
 
@@ -59,7 +59,7 @@ ms.locfileid: "62540855"
 
 ## <a name="pseudo-code-examples"></a>虛擬程式碼範例
 
-下列虛擬程式碼範例會說明偵測到此規則，並可能替代方案的模式。
+下列虛擬程式碼範例說明此規則偵測到的模式，以及可能的替代方式。
 
 ### <a name="md5-hashing-violation"></a>MD5 雜湊違規
 

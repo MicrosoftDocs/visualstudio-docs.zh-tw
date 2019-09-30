@@ -2,7 +2,7 @@
 title: 教學課程：開始使用 Visual Basic
 description: 逐步了解如何在 Visual Studio 中建立 Visual Basic 主控台應用程式。
 ms.custom: seodec18, get-started
-ms.date: 03/23/2019
+ms.date: 09/11/2019
 ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
 ms.topic: tutorial
@@ -14,12 +14,12 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 234a2d1070a39c0f9d9dbf5b0ae706b02b660abf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: eb0bbc0cdf7aff548053c813cdf1b29ed1fed080
+ms.sourcegitcommit: b60a00ac3165364ee0e53f7f6faef8e9fe59ec4a
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62972461"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70913314"
 ---
 # <a name="tutorial-get-started-with-visual-basic-in-visual-studio"></a>教學課程：Visual Studio 中的 Visual Basic 使用者入門
 
@@ -33,7 +33,7 @@ ms.locfileid: "62972461"
 
 ::: moniker range="vs-2019"
 
-如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019)頁面免費進行安裝。
+如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads)頁面免費進行安裝。
 
 ::: moniker-end
 
@@ -47,7 +47,7 @@ ms.locfileid: "62972461"
 
 2. 從頂端功能表列中，選擇 [檔案] > [新增] > [專案]。
 
-3. 在 [新增專案] 對話方塊的左窗格中，展開 [Visual Basic]，然後選擇 [.NET Core]。 在中間窗格中，選擇 [主控台應用程式 (.NET Core)]。 然後將檔案命名為 *HelloWorld*。
+3. 在 [新增專案] 對話方塊的左窗格中，展開 [Visual Basic]，然後選擇 [.NET Core]。 在中間窗格中，選擇 [主控台應用程式 (.NET Core)]。 然後將專案命名為*WhatIsYourName*。
 
    ![Visual Studio IDE 的 [新增專案] 對話方塊中的主控台應用程式 (.NET Core) 專案範本](media/new-project-vb-dotnetcore-whatisyourname-console-app.png)
 
@@ -255,7 +255,7 @@ Visual Studio 是開發人員生產力工具的整合式開發套件。 請將�
 
 ### <a name="what-is-net-core"></a>什麼是 .NET Core？
 
-.NET Core 是 .NET Framework 的下一個進化步驟。 如果 .NET Framework 可讓您跨程式設計語言來共用程式碼，則 .NET Core 會新增跨平台共用程式碼的能力。 更好的是，它是開放原始碼  (.NET Framework 和 .NET Core 包含預先建置功能的程式庫以及 Common Language Runtime (CLR)，而後者作為在其中執行程式碼的虛擬機器)。
+.NET Core 是 .NET Framework 的下一個進化步驟。 如果 .NET Framework 可讓您跨程式設計語言來共用程式碼，則 .NET Core 會新增跨平台共用程式碼的能力。 更好的是，它是開放原始碼 (.NET Framework 和 .NET Core 包含預先建置功能的程式庫以及 Common Language Runtime (CLR)，而後者作為在其中執行程式碼的虛擬機器)。
 
 ## <a name="next-steps"></a>後續步驟
 

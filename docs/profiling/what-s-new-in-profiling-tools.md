@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - multiple
 monikerRange: vs-2017
-ms.openlocfilehash: 8fcd01198877ef06eb398ce99fe467deb923546c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 0512c6e95f0a26184593f7af5ba08c31c33a3299
+ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62999237"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71128331"
 ---
-# <a name="whats-new-in-profiling-tools-in-includevsdev15miscincludesvsdev15mdmd"></a>[!include[vs_dev15](../misc/includes/vs_dev15_md.md)] 中分析工具的新功能
+# <a name="whats-new-in-profiling-tools-in-includevs_dev15miscincludesvs_dev15_mdmd"></a>[!include[vs_dev15](../misc/includes/vs_dev15_md.md)] 中分析工具的新功能
 
 診斷工具所包含的新視覺效果可協助您識別 App 中需要修正的問題。 診斷工具現已支援 ASP.NET App。
 
@@ -36,5 +36,5 @@ CPU 使用量工具有[新的視覺效果](../profiling/Beginners-Guide-to-Perfo
 
 ## <a name="see-also"></a>另請參閱
 
-- [在 Visual Studio 中分析](../profiling/index.md)
+- [在 Visual Studio 中分析](../profiling/index.yml)
 - [初步認識分析工具](../profiling/profiling-feature-tour.md)

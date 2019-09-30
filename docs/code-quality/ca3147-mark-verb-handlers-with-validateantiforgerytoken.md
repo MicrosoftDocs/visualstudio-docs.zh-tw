@@ -9,12 +9,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 0cd54f932a99ea79bf792ebe4175ddc6a031ddcb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 01b290a4e4656aef079b27ce3abb2a66d7adeb75
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62541060"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71236989"
 ---
 # <a name="ca3147-mark-verb-handlers-with-validateantiforgerytoken"></a>CA3147:使用 ValidateAntiForgeryToken 標示動詞處理常式
 
@@ -23,37 +23,37 @@ ms.locfileid: "62541060"
 |TypeName|MarkVerbHandlersWithValidateAntiForgeryToken|
 |CheckId|CA3147|
 |分類|Microsoft.Security|
-|中斷變更|非中斷|
+|重大變更|不中斷|
 
 ## <a name="cause"></a>原因
 
-ASP.NET MVC 控制器動作方法不與標示[ValidateAntiForgeryTokenAttribute](/previous-versions/aspnet/dd492108(v=vs.118))，或指定的 HTTP 指令動詞，例如屬性[HttpGetAttribute](/previous-versions/aspnet/ee470993(v%3dvs.118))或[AcceptVerbsAttribute](/previous-versions/aspnet/dd470553%28v%3dvs.118%29)。
+ASP.NET MVC 控制器動作方法未標示[ValidateAntiForgeryTokenAttribute](/previous-versions/aspnet/dd492108(v=vs.118))，或指定 HTTP 指令動詞的屬性，例如[HttpGetAttribute](/previous-versions/aspnet/ee470993(v%3dvs.118))或[AcceptVerbsAttribute](/previous-versions/aspnet/dd470553%28v%3dvs.118%29)。
 
 ## <a name="rule-description"></a>規則描述
 
-當設計 ASP.NET MVC 控制器，請留意跨網站偽造要求攻擊。 跨網站要求偽造攻擊可以從已驗證的使用者傳送惡意要求到您的 ASP.NET MVC 控制站。 如需詳細資訊，請參閱 < [ASP.NET MVC 和 web 網頁中的 XSRF/CSRF 防護](/aspnet/mvc/overview/security/xsrfcsrf-prevention-in-aspnet-mvc-and-web-pages)。
+在設計 ASP.NET MVC 控制器時，請注意跨網站偽造要求攻擊。 跨網站要求偽造攻擊可能會將來自已驗證使用者的惡意要求傳送至您的 ASP.NET MVC 控制器。 如需詳細資訊，請參閱[ASP.NET MVC 和 web pages 中的 XSRF/CSRF 防護](/aspnet/mvc/overview/security/xsrfcsrf-prevention-in-aspnet-mvc-and-web-pages)。
 
-此規則會檢查該 ASP.NET MVC 控制器動作方法可能是：
+此規則會檢查 ASP.NET MVC 控制器動作方法：
 
-- 已[ValidateAntiforgeryTokenAttribute](/previous-versions/aspnet/dd492108%28v%3dvs.118%29)並指定允許的 HTTP 動詞命令，不包括 HTTP GET。
+- 具有[ValidateAntiforgeryTokenAttribute](/previous-versions/aspnet/dd492108%28v%3dvs.118%29)並指定允許的 HTTP 動詞命令，而不包括 HTTP GET。
 
-- 指定 HTTP GET 為允許的動詞命令。
+- 指定 HTTP GET 做為允許的動詞。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
 
-- 適用於 ASP.NET MVC 控制器動作，以處理 HTTP GET 要求，並不會有潛在危險的副作用，新增[HttpGetAttribute](/previous-versions/aspnet/ee470993%28v%3dvs.118%29)方法。
+- 針對處理 HTTP GET 要求且沒有潛在有害副作用的 ASP.NET MVC 控制器動作，請將[HttpGetAttribute](/previous-versions/aspnet/ee470993%28v%3dvs.118%29)新增至方法。
 
-   如果您有 ASP.NET MVC 控制器動作，以處理 HTTP GET 要求，並具有例如修改機密資料可能會造成損害的副作用，您的應用程式是容易遭受跨網站偽造要求攻擊。  您必須重新設計應用程式，因此只有 HTTP POST、 PUT 或 DELETE 要求執行敏感性作業。
+   如果您有 ASP.NET 的 MVC 控制器動作可處理 HTTP GET 要求，而且有潛在的有害副作用，例如修改敏感性資料，則您的應用程式很容易遭受跨網站偽造要求攻擊。  您必須重新設計應用程式，讓只有 HTTP POST、PUT 或 DELETE 要求執行敏感性作業。
 
-- 適用於 ASP.NET MVC 控制器動作處理 HTTP POST、 PUT 或 DELETE 要求，新增[ValidateAntiForgeryTokenAttribute](/previous-versions/aspnet/dd492108(v=vs.118))並指定允許的 HTTP 動詞命令的屬性 ([AcceptVerbsAttribute](/previous-versions/aspnet/dd470553%28v%3dvs.118%29)[HttpPostAttribute](/previous-versions/aspnet/ee264023%28v%3dvs.118%29)， [HttpPutAttribute](/previous-versions/aspnet/ee470909%28v%3dvs.118%29)，或[HttpDeleteAttribute](/previous-versions/aspnet/ee470917%28v%3dvs.118%29))。 此外，您必須呼叫[HtmlHelper.AntiForgeryToken()](/previous-versions/aspnet/dd504812%28v%3dvs.118%29)從您的 MVC 檢視或 Razor 網頁的方法。 如需範例，請參閱[檢查編輯方法與編輯檢視](/aspnet/mvc/overview/getting-started/introduction/examining-the-edit-methods-and-edit-view)。
+- 針對處理 HTTP POST、PUT 或 DELETE 要求的 ASP.NET MVC 控制器動作，請新增[ValidateAntiForgeryTokenAttribute](/previous-versions/aspnet/dd492108(v=vs.118))和屬性，並指定允許的 HTTP 動詞命令（[AcceptVerbsAttribute](/previous-versions/aspnet/dd470553%28v%3dvs.118%29)、 [HttpPostAttribute](/previous-versions/aspnet/ee264023%28v%3dvs.118%29)、 [HttpPutAttribute](/previous-versions/aspnet/ee470909%28v%3dvs.118%29)或[HttpDeleteAttribute](/previous-versions/aspnet/ee470917%28v%3dvs.118%29)）。 此外，您必須從 MVC 視圖或 Razor 網頁呼叫[HtmlHelper. AntiForgeryToken （）](/previous-versions/aspnet/dd504812%28v%3dvs.118%29)方法。 如需範例，請參閱[檢查編輯方法和編輯檢視](/aspnet/mvc/overview/getting-started/introduction/examining-the-edit-methods-and-edit-view)。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
 
-它可安全地隱藏此規則的警告，如果：
+在下列情況下，您可以放心地隱藏此規則中的警告：
 
-- ASP.NET MVC 控制器動作有沒有會造成損害的副作用。
+- ASP.NET MVC 控制器動作沒有有害的副作用。
 
-- 應用程式會驗證 antiforgery 權杖，以不同方式。
+- 應用程式會以不同的方式驗證 antiforgery token。
 
 ## <a name="validateantiforgerytoken-attribute-example"></a>ValidateAntiForgeryToken 屬性範例
 

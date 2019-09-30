@@ -14,21 +14,21 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 60aefd40c48dc3789ab84ee5873aa6a53f4ee3fe
-ms.sourcegitcommit: b56dc6fadc6c924beed36bb4c2ccc16cf6bcfa1c
+ms.openlocfilehash: 74a43a0c601fa8a96c8737644bf5bd0261f59796
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "68740112"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71254049"
 ---
 # <a name="walkthrough-bind-to-data-from-a-service-in-a-vsto-add-in-project"></a>逐步解說：從 VSTO 增益集專案中的服務系結至資料
   您可以將資料繫結至 VSTO 增益集專案中的主控制項。 本逐步解說示範如何將控制項加入 Microsoft Office Word 文件、將控制項繫結至從 MSDN 內容服務擷取的資料，以及在執行階段回應事件。
 
- **適用於：** 本主題中的資訊適用于 Word 2010 的應用層級專案。 如需詳細資訊，請參閱[依 Office 應用程式和專案類型提供的功能](../vsto/features-available-by-office-application-and-project-type.md)。
+ **適用於：** 本主題中的資訊適用于 Word 2010 的應用層級專案。 如需詳細資訊，請參閱 [Features Available by Office Application and Project Type](../vsto/features-available-by-office-application-and-project-type.md)。
 
  這個逐步解說將說明下列工作：
 
-- 在執行時間將控制項新增至檔。<xref:Microsoft.Office.Tools.Word.RichTextContentControl>
+- 在設計階段將 <xref:Microsoft.Office.Tools.Word.RichTextContentControl> 控制項加入文件。
 
 - <xref:Microsoft.Office.Tools.Word.RichTextContentControl>將控制項系結至 web 服務的資料。
 
@@ -55,7 +55,7 @@ ms.locfileid: "68740112"
      Visual Studio 隨即開啟 `ThisAddIn.vb` 或 `ThisAddIn.cs` 檔案，並將專案加入 **方案總管**。
 
 ## <a name="add-a-web-service"></a>新增 web 服務
- 在此逐步解說中, 請使用稱為 MTPS 內容服務的 web 服務。 此 web 服務會以 XML 字串或純文字的形式, 從指定的 MSDN 文章傳回信息。 接下來的步驟示範如何在內容控制項中顯示傳回的資訊。
+ 在此逐步解說中，請使用稱為 MTPS 內容服務的 web 服務。 此 web 服務會以 XML 字串或純文字的形式，從指定的 MSDN 文章傳回信息。 接下來的步驟示範如何在內容控制項中顯示傳回的資訊。
 
 ### <a name="to-add-the-mtps-content-service-to-the-project"></a>若要將 MTPS 內容服務新增至專案
 
@@ -65,7 +65,7 @@ ms.locfileid: "68740112"
 
 3. 在 [位址] 欄位中，輸入下列 URL：
 
-     **HTTP:\//services.msdn.microsoft.com/ContentServices/ContentService.asmx**
+     **HTTP：\//services.msdn.microsoft.com/ContentServices/ContentService.asmx**
 
 4. 按一下 [ **Go**]。
 
@@ -73,8 +73,8 @@ ms.locfileid: "68740112"
 
 6. 在 [加入參考精靈] 對話方塊中，按一下 [完成]。
 
-## <a name="add-a-content-control-and-bind-to-data-at-runtime"></a>在執行時間加入內容控制項並系結至資料
- 在 VSTO 增益集專案中, 您可以在執行時間新增和系結控制項。 在此逐步解說中, 設定內容控制項, 以便在使用者按一下控制項內部時, 從 web 服務中取出資料。
+## <a name="add-a-content-control-and-bind-to-data-at-run-time"></a>在執行時間加入內容控制項並系結至資料
+ 在 VSTO 增益集專案中，您會在執行階段加入及繫結控制項。 在此逐步解說中，設定內容控制項，以便在使用者按一下控制項內部時，從 web 服務中取出資料。
 
 ### <a name="to-add-a-content-control-and-bind-to-data"></a>加入內容控制項並繫結至資料
 

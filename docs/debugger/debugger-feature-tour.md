@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a5c37466ea3f37bca80933cdc069d40f84099790
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
-ms.translationtype: HT
+ms.openlocfilehash: 249b8aa88b11643ed0b353df25bef3a054ef5e55
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65679755"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "70987783"
 ---
 # <a name="first-look-at-the-visual-studio-debugger"></a>Visual Studio 偵錯工具初探
 
@@ -115,6 +115,16 @@ F10 鍵會推進偵錯工具，而不需要逐步執行應用程式程式碼中�
 相對於停止應用程式並重新啟動偵錯工具，按下 [重新啟動] 可讓您節省時間。 偵錯工具會在執行程式碼叫用的第一個中斷點處暫停。
 
 如果您想要停止偵錯工具並回到程式碼編輯器中，您可以按下紅色的停止 [停止偵錯]![](../debugger/media/dbg-tour-stop-debugging.png "停止偵錯") 按鈕，而非 [重新啟動]。
+
+## <a name="edit-your-code-and-continue-debugging-c-vb-c-xaml"></a>編輯您的程式碼並繼續C#進行偵錯工具C++（、VB、、XAML）
+
+在 Visual Studio 支援的大部分語言中，您可以在偵錯工具的中間編輯您的程式碼，並繼續進行偵錯工具。 若要使用這項功能，請在偵錯工具中暫停時，按一下游標所在的程式碼，進行編輯，然後按**F5**、 **F10**或**F11**繼續進行調試。
+
+![編輯後繼續的調試](../debugger/media/dbg-tips-edit-and-continue.gif "EditAndContinue")
+
+如需有關使用功能和功能限制的詳細資訊，請參閱[編輯後繼續](../debugger/edit-and-continue.md)。
+
+若要在偵錯工具期間修改 XAML 程式碼，請參閱[使用 Xaml 熱重載來撰寫和](xaml-hot-reload.md)偵測執行 xaml 程式碼。
 
 ## <a name="inspect-variables-with-data-tips"></a>使用資料提示來檢查變數
 

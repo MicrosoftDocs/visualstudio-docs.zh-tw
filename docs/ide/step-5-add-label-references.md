@@ -1,22 +1,24 @@
 ---
 title: 步驟 5：新增標籤參考
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: tutorial
+ms.prod: visual-studio-windows
+ms.technology: vs-ide-general
 dev_langs:
-- csharp
-- vb
+- CSharp
+- VB
 ms.assetid: d418350c-0396-494e-8149-71fa61b395c5
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e35224529e556afee673aafa8e5e8b68e61157f7
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
-ms.translationtype: HT
+ms.openlocfilehash: a076c4475b9e65d59aec08eac1774728b42cd77c
+ms.sourcegitcommit: 6eed0372976c0167b9a6d42ba443f9a474b8bb91
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68416572"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71118978"
 ---
 # <a name="step-5-add-label-references"></a>步驟 5：新增標籤參考
 程式需要追蹤玩家所選擇的 Label 控制項。 現在，程式會顯示玩家選擇的所有標籤。 但是，我們將要變更該行為。 在選擇第一個標籤之後，程式應該會顯示標籤的圖示。 在選擇第二個標籤之後，程式應該要短暫顯示這兩個圖示，然後再次隱藏這兩個圖示。 您的程式現在將會使用*參考變數*，追蹤第一次和第二次選擇的 Label 控制項。

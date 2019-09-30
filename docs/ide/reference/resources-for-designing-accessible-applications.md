@@ -1,8 +1,10 @@
 ---
 title: 設計無障礙應用程式的資源
 description: 了解如何建立無障礙應用程式，使它們更易於身心障礙人士使用。
-ms.date: 11/04/2016
+ms.date: 08/27/2019
 ms.topic: conceptual
+ms.prod: visual-studio-windows
+ms.technology: vs-ide-general
 helpviewer_keywords:
 - accessibility, Windows applications
 - Windows applications, accessibility
@@ -14,16 +16,19 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7fe2a4b57fda3ab861b5471e1af70cd4bfcc55e6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: f8ac7beac67a2f1d0010ee64ae7af31108d7ec3b
+ms.sourcegitcommit: cf8c0fef2b9690595e99ce3802586cdd55fd37c2
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62811777"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70107841"
 ---
 # <a name="resources-for-designing-accessible-applications"></a>設計無障礙應用程式的資源
 
-您可以使用下列連結來尋找支援無障礙設計的技術，以及用來開發可存取之 Windows 應用程式和網站的祕訣和範例等相關資訊。 您可以在下列網站線上找到協助工具的一般資訊，網址為：[http://www.microsoft.com/enable/](http://www.microsoft.com/enable/)。
+深入了解支援無障礙設計的技術。 我們也包括可協助您開發無障礙 Windows 應用程式與網站的祕訣與教學課程連結。
+
+>[!NOTE]
+>如需有關我們如何開發可協助所有人更容易存取之產品的詳細資訊，請參閱 [Microsoft 無障礙中心](https://www.microsoft.com/accessibility/) \(英文\)。
 
 ## <a name="technologies"></a>技術
 
@@ -35,7 +40,7 @@ ms.locfileid: "62811777"
 
 ## <a name="windows-applications"></a>Windows 應用程式
 
-* **[逐步解說：建立 Windows 型無障礙應用程式](/dotnet/framework/winforms/advanced/walkthrough-creating-an-accessible-windows-based-application)**：本文提供逐步指示，說明如何將 "Certified for Windows" 標誌的五個協助工具需求納入 Windows 範例應用程式中。
+* **[逐步解說：建立 Windows 型無障礙應用程式](/dotnet/framework/winforms/advanced/walkthrough-creating-an-accessible-windows-based-application)** ：本文提供逐步指示，說明如何將 "Certified for Windows" 標誌的五個協助工具需求納入 Windows 範例應用程式中。
 
 * **鍵盤使用者介面設計指導方針**：本技術文章描述如何設計可讓使用者從鍵盤巡覽的 Windows 應用程式。 如需詳細資訊，請參閱[鍵盤使用者介面設計指導方針](/previous-versions/windows/desktop/dnacc/guidelines-for-keyboard-user-interface-design)。
 
@@ -53,4 +58,5 @@ ms.locfileid: "62811777"
 
 ## <a name="see-also"></a>另請參閱
 
-[Visual Studio 的協助工具功能](../../ide/reference/accessibility-features-of-visual-studio.md)
+* [Visual Studio 的協助工具功能](../../ide/reference/accessibility-features-of-visual-studio.md)
+* [Visual Studio for Mac 的協助工具](/visualstudio/mac/accessibility/)

@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/19/2019
 ms.topic: conceptual
 description: 了解無法存取訂用帳戶時，訂閱者資料的匿名方式。
-ms.openlocfilehash: 8ba1a462083281c2228f2d6e25c42485ead8aa19
-ms.sourcegitcommit: 485881e6ba872c7b28a7b17ceaede845e5bea4fe
-ms.translationtype: HT
+ms.openlocfilehash: d15fce8d5e1a64066a42cea69b770f55c9607f06
+ms.sourcegitcommit: 02acadb912faced7eaffe27c2c19104bf0428bcd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68377955"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70936918"
 ---
 # <a name="anonymization-of-visual-studio-subscriber-information"></a>將 Visual Studio 訂閱者資訊匿名化
 發生禁止訂閱者使用訂用帳戶的事件時 (例如訂用帳戶到期或刪除訂閱者的登入帳戶)，使用者的個人資訊 (例如名稱和登入帳戶) 基本上會變碼使其無法使用。  這麼做是為了保護訂閱者的個人資訊。
@@ -31,10 +31,15 @@ ms.locfileid: "68377955"
 
 ## <a name="faq"></a>常見問題集
 ### <a name="q--does-the-anonymization-of-the-subscribers-personal-information-cause-them-to-lose-access-to-the-subscription"></a>問：訂閱者的個人資訊匿名化會導致其無法存取訂用帳戶嗎？
-答：沒有。  匿名化會回應導致無法存取訂用帳戶的事件，但並不會導致缺乏存取權。
+答：資料分割  匿名化會回應導致無法存取訂用帳戶的事件，但並不會導致缺乏存取權。
 
 ### <a name="q--im-an-administrator-for-my-organizations-subscriptions--if-one-of-my-subscribers-information-is-anonymized-can-that-subscription-be-reassigned-to-another-user"></a>問：我是組織訂用帳戶的系統管理員。  如果訂閱者的其中一項資訊已匿名化，可以將該訂用帳戶重新指派給另一位使用者嗎？
 答：可以，只要訂用帳戶尚未過期，可以將其重新指派給另一位訂閱者。
 
+### <a name="q-how-can-i-prevent-anonymization-caused-by-deleting-a-sign-in-email-address"></a>問：如何避免因刪除登入電子郵件地址而造成匿名？
+答：有兩種方式可避免此問題：
+- 部署單一身分識別管理系統 (MSA 或 AAD)，但不能同時部署。  
+- 透過租用戶建立 AAD 與 MSA 身分識別的關聯。 
+
 ## <a name="next-steps"></a>後續步驟
-了解如何透過[連結 MSA 與 AAD 身分識別](/azure/active-directory/b2b/add-users-administrator)來禁止匿名化。
+瞭解如何藉由建立[MSA 和 AAD](/azure/active-directory/b2b/add-users-administrator)身分識別的關聯來避免匿名。

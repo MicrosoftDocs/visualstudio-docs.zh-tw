@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: e78487628a7604245d59f44220b91be73249e7fb
-ms.sourcegitcommit: f42b5318c5c93e2b5ecff44f408fab8bcdfb193d
-ms.translationtype: HT
+ms.openlocfilehash: 517f3f5911df6c7de1f59232a4e836bcdc84c448
+ms.sourcegitcommit: 689ba54ea14257d13031de881f5d4fe937a36f56
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2019
-ms.locfileid: "69976765"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71342367"
 ---
 # <a name="customize-code-coverage-analysis"></a>自訂程式碼涵蓋範圍分析
 
@@ -20,7 +20,7 @@ ms.locfileid: "69976765"
 
 若要從程式碼涵蓋範圍結果中排除測試程式碼，並且只包括應用程式程式碼，請將 <xref:System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverageAttribute> 屬性新增至測試類別。
 
-若要包括不屬於您方案的組件，請取得這些組件的 .pdb  檔案，並將這些檔案複製到組件 .dll  檔案的相同資料夾。
+若要包括不屬於您方案的組件，請取得這些組件的 .pdb 檔案，並將這些檔案複製到組件 .dll 檔案的相同資料夾。
 
 ## <a name="run-settings-file"></a>回合設定檔
 
@@ -28,30 +28,30 @@ ms.locfileid: "69976765"
 
 若要自訂程式碼涵蓋範圍，請遵循下列步驟：
 
-1. 將回合設定檔新增至方案。 在 [方案總管]  中，於方案的捷徑功能表上，選擇 [新增]   > [新增項目]  ，然後選取 [XML 檔案]  。 儲存檔案，其名稱的格式必須是 CodeCoverage.runsettings  。
+1. 將回合設定檔新增至方案。 在 [方案總管] 中，於方案的捷徑功能表上，選擇 [新增] > [新增項目]，然後選取 [XML 檔案]。 儲存檔案，其名稱的格式必須是 CodeCoverage.runsettings。
 
 2. 新增本文結尾處範例檔中的內容，然後遵循下列各節中的描述並根據您自己的需求進行自訂。
 
 ::: moniker range="vs-2017"
 
-3. 若要選取回合設定檔，請在 [測試]  功能表上，選擇 [測試設定]   > [選取測試設定檔]  。 若要指定從命令列執行測試的回合設定檔，請參閱[設定單元測試](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md#command-line)。
+3. 若要選取回合設定檔，請在 [測試] 功能表上，選擇 [測試設定] > [選取測試設定檔]。 若要指定從命令列執行測試的回合設定檔，請參閱[設定單元測試](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md#command-line)。
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-3. 若要在 [測試總管]  中選取執行設定檔，請選取 [設定]  按鈕上的箭頭，然後選取 [選取設定檔]  。 若要指定從命令列執行測試的回合設定檔，請參閱[設定單元測試](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md#command-line)。
+3. 若要選取回合設定檔案，請在 [**測試**] 功能表上選擇 [**選取設定檔**]。 若要指定從命令列執行測試的回合設定檔，請參閱[設定單元測試](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md#command-line)。
 
 ::: moniker-end
 
-   當您選取 [分析程式碼涵蓋範圍]  時，從回合設定檔讀取組態資訊。
+   當您選取 [分析程式碼涵蓋範圍] 時，從回合設定檔讀取組態資訊。
 
    > [!TIP]
    > 當您執行測試或更新程式碼時，並不會自動隱藏任何之前的程式碼涵蓋範圍結果及程式碼著色。
 
 ::: moniker range="vs-2017"
 
-若要關閉和開啟自訂設定，請在 [測試]  > [測試設定]  功能表中取消選取或選取檔案。
+若要關閉和開啟自訂設定，請在 [測試] > [測試設定] 功能表中取消選取或選取檔案。
 
 ![Visual Studio 2017 中具有自訂設定檔的測試設定功能表](../test/media/codecoverage-settingsfile.png)
 
@@ -59,13 +59,13 @@ ms.locfileid: "69976765"
 
 ::: moniker range=">=vs-2019"
 
-若要關閉和開啟自訂設定，請在 [測試總管]  中的 [設定]  功能表上取消選取或選取檔案。
+若要關閉和關閉自訂設定，請取消選取或選取 [**測試**] 功能表上的檔案。
 
 ::: moniker-end
 
-### <a name="specify-symbol-search-paths"></a>指定符號搜尋路徑
+## <a name="symbol-search-paths"></a>符號搜尋路徑
 
-程式碼涵蓋範圍需要組件的符號檔 (.pdb  檔案)。 在您的方案所建置的組件中，符號檔案通常會和二進位檔一起出現，而且程式碼涵蓋範圍會自動運作。 在某些情況下，您可以在程式碼涵蓋範圍分析中加入參考的組件。 在此類情況下，.pdb  檔案不可以和二進位檔同時出現，不過您可以在 .runsettings  檔案中指定符號搜尋路徑。
+程式碼涵蓋範圍需要組件的符號檔 (.pdb 檔案)。 在您的方案所建置的組件中，符號檔案通常會和二進位檔一起出現，而且程式碼涵蓋範圍會自動運作。 在某些情況下，您可以在程式碼涵蓋範圍分析中加入參考的組件。 在此類情況下，.pdb 檔案不可以和二進位檔同時出現，不過您可以在 .runsettings 檔案中指定符號搜尋路徑。
 
 ```xml
 <SymbolSearchPaths>
@@ -75,11 +75,13 @@ ms.locfileid: "69976765"
 ```
 
 > [!NOTE]
-> 符號解析可能需要一些時間，特別是在使用具有許多組件的遠端檔案位置時。 因此，請考慮將 .pdb  檔案複製到二進位 (.dll  和 .exe  ) 檔案在本機中的位置。
+> 符號解析可能需要一些時間，特別是在使用具有許多組件的遠端檔案位置時。 因此，請考慮將 .pdb 檔案複製到二進位 (.dll 和 .exe) 檔案在本機中的位置。
 
-### <a name="exclude-and-include"></a>排除和包含
+## <a name="include-or-exclude-assemblies-and-members"></a>包含或排除元件和成員
 
-您可以在程式碼涵蓋範圍分析中排除指定的組件。 例如：
+您可以從程式碼涵蓋範圍分析中包含或排除元件或特定類型和成員。 如果 [**包含**] 區段是空的或省略，則會包含所有載入並具有相關聯 PDB 檔案的元件。 如果元件或成員符合**Exclude**區段中的子句，則會從程式碼涵蓋範圍中排除它。 [**排除**] 區段的優先順序高於 [**包含**] 區段：如果元件同時列在 [**包含**] 和 [**排除**] 中，則不會包含在程式碼涵蓋範圍內。
+
+例如，下列 XML 會藉由指定名稱來排除單一元件：
 
 ```xml
 <ModulePaths>
@@ -90,7 +92,7 @@ ms.locfileid: "69976765"
 </ModulePaths>
 ```
 
-或者，您可以指定應包含的組件。 這種方法的缺點是，當您將其他組件新增至方案時，必須記得將它們新增至清單：
+下列範例會指定只有單一元件應該包含在程式碼涵蓋範圍內：
 
 ```xml
 <ModulePaths>
@@ -101,11 +103,20 @@ ms.locfileid: "69976765"
 </ModulePaths>
 ```
 
-如果 **Include** 是空的，則程式碼涵蓋範圍處理會包括所有已載入以及可以找到其 *.pdb* 檔案的組件。 程式碼涵蓋範圍不包含與 **Exclude** 清單中子句相符的項目。 **Include** 是在 **Exclude** 之前處理。
+下表顯示可比對元件和成員以在程式碼涵蓋範圍中包含或排除的各種方式。
+
+| XML 元素 | 符合專案 |
+| - | - |
+| ModulePath | 符合元件名稱或檔案路徑所指定的元件。 |
+| CompanyName | 符合**Company**屬性的元件。 |
+| 公開金鑰 | 依據公開金鑰標記比對已簽署的元件。 |
+| Source | 依據專案定義所在之來源檔案的路徑名稱比對元素。 |
+| 屬性 | 符合具有指定之屬性的元素。 指定屬性的完整名稱，例如 `<Attribute>^System\.Diagnostics\.DebuggerHiddenAttribute$</Attribute>`。<br/><br/>如果您排除 <xref:System.Runtime.CompilerServices.CompilerGeneratedAttribute> 屬性，則會從程式碼涵蓋範圍分析中排除使用語言功能 (例如 `async`、`await`、`yield return`) 和自動實作屬性的程式碼。 若要排除真正產生的程式碼，只要排除 <xref:System.CodeDom.Compiler.GeneratedCodeAttribute> 屬性即可。 |
+| 函數 | 依照完整限定名稱（包括參數清單）來比對程式、函式或方法。 您也可以使用[正則運算式](#regular-expressions)來比對部分的名稱。<br/><br/>例如：<br/><br/>`Fabrikam.Math.LocalMath.SquareRoot(double);` (C#)<br/><br/>`Fabrikam::Math::LocalMath::SquareRoot(double)`(C++) |
 
 ### <a name="regular-expressions"></a>規則運算式
 
-包含和排除節點使用與萬用字元不同的規則運算式。 如需詳細資訊，請參閱[在 Visual Studio 中使用規則運算式](../ide/using-regular-expressions-in-visual-studio.md)。 部分範例如下：
+包含和排除節點使用與萬用字元不同的規則運算式。 所有相符項目皆不區分大小寫。 一些範例如下：
 
 - **.\*** 會比對任何字元的字串
 
@@ -119,9 +130,7 @@ ms.locfileid: "69976765"
 
 - **$** 會比對字串的結尾
 
-所有相符項目皆不區分大小寫。
-
-例如：
+下列 XML 顯示如何使用正則運算式來包含和排除特定元件：
 
 ```xml
 <ModulePaths>
@@ -138,48 +147,27 @@ ms.locfileid: "69976765"
 </ModulePaths>
 ```
 
+下列 XML 顯示如何使用正則運算式來包含和排除特定的函式：
+
+```xml
+<Functions>
+  <Include>
+    <!-- Include methods in the Fabrikam namespace: -->
+    <Function>^Fabrikam\..*</Function>
+    <!-- Include all methods named EqualTo: -->
+    <Function>.*\.EqualTo\(.*</Function>
+  </Include>
+  <Exclude>
+    <!-- Exclude methods in a class or namespace named UnitTest: -->
+    <Function>.*\.UnitTest\..*</Function>
+  </Exclude>
+</Functions>
+```
+
 > [!WARNING]
 > 如果規則運算式出現錯誤 (例如未逸出或不成對的括弧)，則不會執行程式碼涵蓋範圍分析。
 
-### <a name="other-ways-to-include-or-exclude-elements"></a>包含或排除項目的其他方法
-
-- **ModulePath** - 比對組件檔案路徑所指定的組件。
-
-- **CompanyName** - 會依 **Company** 屬性比對組件。
-
-- **PublicKeyToken** - 會依公開金鑰權杖比對已簽署的組件。
-
-- **Source** - 依原始檔案路徑名稱的定義方式比對項目。
-
-- **Attribute** - 比對附加特定屬性的項目。 指定屬性的完整名稱，例如 `<Attribute>^System\.Diagnostics\.DebuggerHiddenAttribute$</Attribute>`。
-
-  > [!TIP]
-  > 如果您排除 <xref:System.Runtime.CompilerServices.CompilerGeneratedAttribute> 屬性，則會從程式碼涵蓋範圍分析中排除使用語言功能 (例如 `async`、`await`、`yield return`) 和自動實作屬性的程式碼。 若要排除真正產生的程式碼，只要排除 <xref:System.CodeDom.Compiler.GeneratedCodeAttribute> 屬性即可。
-
-- **Function** - 依完整名稱比對程序、函式或方法。 若要比對函式名稱，規則運算式必須符合函式的完整名稱，包括命名空間、類別名稱、方法名稱和參數清單。 例如：
-
-   ```csharp
-   Fabrikam.Math.LocalMath.SquareRoot(double);
-   ```
-
-   ```cpp
-   Fabrikam::Math::LocalMath::SquareRoot(double)
-   ```
-
-   ```xml
-   <Functions>
-     <Include>
-       <!-- Include methods in the Fabrikam namespace: -->
-       <Function>^Fabrikam\..*</Function>
-       <!-- Include all methods named EqualTo: -->
-       <Function>.*\.EqualTo\(.*</Function>
-     </Include>
-     <Exclude>
-       <!-- Exclude methods in a class or namespace named UnitTest: -->
-       <Function>.*\.UnitTest\..*</Function>
-     </Exclude>
-   </Functions>
-   ```
+如需正則運算式的詳細資訊，請參閱[在 Visual Studio 中使用正則運算式](../ide/using-regular-expressions-in-visual-studio.md)。
 
 ## <a name="sample-runsettings-file"></a>範例 .runsettings 檔案
 
@@ -282,9 +270,14 @@ Included items must then not match any entries in the exclude list to remain inc
             </PublicKeyTokens>
 
             <!-- We recommend you do not change the following values: -->
+
+            <!-- Set this to True to collect coverage information for functions marked with the "SecuritySafeCritical" attribute. Instead of writing directly into a memory location from such functions, code coverage inserts a probe that redirects to another function, which in turns writes into memory. -->
             <UseVerifiableInstrumentation>True</UseVerifiableInstrumentation>
+            <!-- When set to True, collects coverage information from child processes that are launched with low-level ACLs, for example, UWP apps. -->
             <AllowLowIntegrityProcesses>True</AllowLowIntegrityProcesses>
+            <!-- When set to True, collects coverage information from child processes that are launched by test or production code. -->
             <CollectFromChildProcesses>True</CollectFromChildProcesses>
+            <!-- When set to True, restarts the IIS process and collects coverage information from it. -->
             <CollectAspDotNet>False</CollectAspDotNet>
 
           </CodeCoverage>

@@ -12,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fe8528b9e6ad302319f1fb1ebb010c7f55b93932
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
-ms.translationtype: HT
+ms.openlocfilehash: 2c99408530344c72d2e9669178c5e79f7c34d551
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68416591"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71211253"
 ---
 # <a name="compile-and-build-in-visual-studio"></a>在 Visual Studio 中編譯與建置
 
@@ -25,7 +25,7 @@ ms.locfileid: "68416591"
 
 經常建置程式碼讓您可以迅速識別編譯錯誤，例如語法不正確、關鍵字拼字錯誤和類型不相符。 您也可以藉由建置和執行程式碼的偵錯版本，偵測並修正執行階段錯誤，例如邏輯錯誤和語意錯誤。
 
-成功的組建會驗證應用程式的原始程式碼包含了正確語法，而且所有對程式庫、組件及其他元件的靜態參考均可解析。 如此會產生可執行的應用程式，不僅可在[偵錯環境](../debugger/index.md)中測試其正常運作，也可透過各種手動和自動測試來[驗證程式碼品質](../test/improve-code-quality.md)。 應用程式一經完整測試，您便可編譯發行版本以部署到您的客戶。 如需此流程的簡介，請參閱[逐步解說：建置應用程式](../ide/walkthrough-building-an-application.md)。
+成功的組建會驗證應用程式的原始程式碼包含了正確語法，而且所有對程式庫、組件及其他元件的靜態參考均可解析。 如此會產生可執行的應用程式，不僅可在[偵錯環境](../debugger/index.yml)中測試其正常運作，也可透過各種手動和自動測試來[驗證程式碼品質](../test/improve-code-quality.md)。 應用程式一經完整測試，您便可編譯發行版本以部署到您的客戶。 如需此流程的簡介，請參閱[逐步解說：建置應用程式](../ide/walkthrough-building-an-application.md)。
 
 您可以使用下列任一種方法來建置應用程式：Visual Studio IDE、MSBuild 命令列工具，以及 Azure Pipelines：
 

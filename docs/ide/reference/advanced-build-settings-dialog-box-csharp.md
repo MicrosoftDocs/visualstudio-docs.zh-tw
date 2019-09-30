@@ -1,6 +1,6 @@
 ---
 title: 進階建置設定對話方塊 (C#)
-ms.date: 06/20/2017
+ms.date: 08/05/2019
 ms.technology: vs-ide-compile
 ms.topic: reference
 f1_keywords:
@@ -13,16 +13,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 306cecc6bdc194e0022c056ac0a87e2ab063d20b
-ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
-ms.translationtype: HT
+ms.openlocfilehash: c4a1c902047b76ef3b29814d10cfc112ab9c7274
+ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68461889"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71186783"
 ---
-# <a name="advanced-build-settings-dialog-box-c"></a>進階建置設定對話方塊 (C#)
+# <a name="advanced-build-settings-dialog-box-c"></a>[高級組建設定] 對話方塊C#（）
 
-使用 [專案設計工具]  的 [進階建置設定]  對話方塊，以指定專案的進階組建組態屬性。 此對話方塊只適用於 [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] 專案。
+使用 [專案設計工具] 的 [進階建置設定] 對話方塊，以指定專案的進階組建組態屬性。 這個對話方塊只適用于C#專案。
 
 ## <a name="general"></a>一般
 
@@ -30,23 +30,23 @@ ms.locfileid: "68461889"
 
 **語言版本**
 
-指定要使用的語言版本。 每個版本的功能集都不同，因此這個選項可用來強制編譯器只允許已實作功能的子集，或只啟用與現有標準相容的功能。 此設定具有下列選項：
+::: moniker range=">=vs-2019"
 
-- **default**
+[/Langversion （C#編譯器選項）](/dotnet/csharp/language-reference/compiler-options/langversion-compiler-option)的連結，提供如何根據專案的目標架構選擇預設語言版本的相關資訊。
 
-   以目前版本為目標。
+::: moniker-end
 
-- **ISO-1** 和 **ISO-2**
+::: moniker range="vs-2017"
 
-   分別以 ISO-1 和 ISO-2 標準功能為目標。
+指定要使用的語言版本。 每個版本的功能集都不同，因此這個選項可用來強制編譯器只允許已實作功能的子集，或只啟用與現有標準相容的功能。
 
-- **C# [版本號碼]**
+預設值為C# 7.0。
 
-   以 C# 的特定版本為目標。 如需詳細資訊，請參閱 [/langversion (C# 編譯器選項)](/dotnet/csharp/language-reference/compiler-options/langversion-compiler-option)。
+::: moniker-end
 
 **報告內部編譯器錯誤**
 
-指定是否要向 Microsoft 報告編譯器錯誤。 如果設定為 [提示]  \(預設值)，您會在發生內部編譯器錯誤時收到提示，讓您選擇以電子方式將錯誤報告傳送給 Microsoft。 如果設定為 [傳送]  ，則會自動傳送錯誤報告。 如果設定為 [佇列]  ，則會將錯誤報告排入佇列。 如果設定為 [無]  ，則會以編譯器的文字輸出報告錯誤。 如需詳細資訊，請參閱 [/errorreport (C# 編譯器選項)](/dotnet/csharp/language-reference/compiler-options/errorreport-compiler-option)。
+指定是否要向 Microsoft 報告編譯器錯誤。 如果設定為 [提示]\(預設值)，您會在發生內部編譯器錯誤時收到提示，讓您選擇以電子方式將錯誤報告傳送給 Microsoft。 如果設定為 [傳送]，則會自動傳送錯誤報告。 如果設定為 [佇列]，則會將錯誤報告排入佇列。 如果設定為 [無]，則會以編譯器的文字輸出報告錯誤。 如需詳細資訊，請參閱 [/errorreport (C# 編譯器選項)](/dotnet/csharp/language-reference/compiler-options/errorreport-compiler-option)。
 
 **檢查算術溢位/反向溢位**
 

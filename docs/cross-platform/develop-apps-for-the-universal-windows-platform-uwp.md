@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: f0bd256f293cefc037a8950bdecd3615fad483f3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3bfe4b1a172158740705e392c573de7911016583
+ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62819560"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70179863"
 ---
 # <a name="develop-apps-for-the-universal-windows-platform-uwp"></a>開發適用於通用 Windows 平台 (UWP) 的應用程式
 
@@ -52,7 +52,7 @@ ms.locfileid: "62819560"
 
 - [Windows 10](http://windows.microsoft.com/windows/downloads)。 Visual Studio 2019 只支援在 Windows 10 上開發 UWP。 如需詳細資料，請參閱 Visual Studio 的[平台目標](/visualstudio/releases/2019/compatibility/)和[系統需求](/visualstudio/releases/2019/system-requirements/)。
 
-- [Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019)。 您也需要選用的通用 Windows 平台開發工作負載。
+- [Visual Studio](https://visualstudio.microsoft.com/downloads)。 您也需要選用的通用 Windows 平台開發工作負載。
 
      ![UWP 工作負載](media/uwp_workload.png)
 

@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 79ebba23b26e0967bc29a79e719e02d834a29f1b
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 7922681307b576f8da523cdd08fb808fb36b3d8c
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68919844"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71236995"
 ---
 # <a name="ca5122-pinvoke-declarations-should-not-be-safe-critical"></a>CA5122 P/Invoke 宣告不可為安全關鍵
 
@@ -22,7 +22,7 @@ ms.locfileid: "68919844"
 |TypeName|PInvokesShouldNotBeSafeCriticalFxCopRule|
 |CheckId|CA5122|
 |分類|Microsoft.Security|
-|中斷變更|中斷|
+|重大變更|中斷|
 
 ## <a name="cause"></a>原因
 P/Invoke 宣告已用 <xref:System.Security.SecuritySafeCriticalAttribute>標記：

@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1a160d28a3953196a53673b64ae7d9ef9974a731
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
-ms.translationtype: HT
+ms.openlocfilehash: 00d64b060b340302107ddffaf1d69cad802a283b
+ms.sourcegitcommit: b60a00ac3165364ee0e53f7f6faef8e9fe59ec4a
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66747440"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70913279"
 ---
 # <a name="visual-studio-integration-msbuild"></a>Visual Studio 整合 (MSBuild)
 Visual Studio 會裝載 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] ，用於載入及建置 Managed 專案。 由於 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 是負責處理專案，因此幾乎任何 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 格式的專案都可以成功地用在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]中，即使專案是用不同的工具撰寫，而且含有自訂的建置處理序，也不會有問題。
@@ -54,7 +54,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 會查看 `PropertyGroup`、 `ItemGroup`、 `Import`、屬性和項目的條件，以便建立這份清單。
 
 ## <a name="additional-build-actions"></a>其他建置動作
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 可以讓您利用 [檔案屬性]  視窗的 [建置動作]  屬性，變更專案中檔案的項目類型名稱。 **Compile**、**EmbeddedResource**、**Content** 和 **None** 項目類型名稱會一直列在這個功能表中，另外還會列出專案中既有的其他項目類型名稱。 若要確保自訂的項目類型名稱都會一直列在這個功能表中，您可以將其名稱加入至名為 `AvailableItemName`的項目類型中。 例如，如果在專案檔中加入下列程式碼，就會將自訂類型 **JScript** 加入至所有會匯入此類型之專案的這個功能表中：
+ [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 可以讓您利用 [檔案屬性] 視窗的 [建置動作] 屬性，變更專案中檔案的項目類型名稱。 **Compile**、**EmbeddedResource**、**Content** 和 **None** 項目類型名稱會一直列在這個功能表中，另外還會列出專案中既有的其他項目類型名稱。 若要確保自訂的項目類型名稱都會一直列在這個功能表中，您可以將其名稱加入至名為 `AvailableItemName`的項目類型中。 例如，如果在專案檔中加入下列程式碼，就會將自訂類型 **JScript** 加入至所有會匯入此類型之專案的這個功能表中：
 
 ```xml
 <ItemGroup>
@@ -101,7 +101,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 
  具有任意名稱的屬性不會顯示在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]中。 若要修改 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]中的任意屬性，必須在 XML 編輯器中開啟專案檔，然後以手動方式編輯屬性。 如需詳細資訊，請參閱本主題稍後的[在 Visual Studio 中編輯專案檔](#edit-project-files-in-visual-studio)一節。
 
- 根據預設，在專案中以任意項目類型名稱定義的項目會顯示在 [方案總管]  中的專案節點下方。 若要隱藏項目，請將 `Visible` 中繼資料設定為 `false`。 例如，下列項目將會參與建置處理序，但是不會顯示在 [方案總管]  中。
+ 根據預設，在專案中以任意項目類型名稱定義的項目會顯示在 [方案總管] 中的專案節點下方。 若要隱藏項目，請將 `Visible` 中繼資料設定為 `false`。 例如，下列項目將會參與建置處理序，但是不會顯示在 [方案總管] 中。
 
 ```xml
 <ItemGroup>
@@ -111,14 +111,14 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 </ItemGroup>
 ```
 
- 根據預設，在檔案中宣告並匯入至專案的項目不會顯示出來。 在建置處理序期間所建立的項目永遠不會顯示在 [方案總管]  中。
+ 根據預設，在檔案中宣告並匯入至專案的項目不會顯示出來。 在建置處理序期間所建立的項目永遠不會顯示在 [方案總管] 中。
 
 ## <a name="conditions-on-items-and-properties"></a>項目和屬性的條件
  在組建期間，必須確實遵守所有的條件。
 
  在決定要顯示的屬性值時， [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 會以不同的方式來評估它認為與組態相關的屬性以及它認為與組態無關的屬性。 如果是它認為與組態相關的屬性， [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 就會適當地設定 `Configuration` 和 `Platform` 屬性，並且指示 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 重新評估專案。 如果是它認為與組態無關的屬性，則不會決定條件的評估方式。
 
- 在決定項目是否要顯示在 [方案總管]  中時，一律會忽略項目的條件運算式。
+ 在決定項目是否要顯示在 [方案總管] 中時，一律會忽略項目的條件運算式。
 
 ## <a name="debugging"></a>偵錯
  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 必須正確定義 `OutputPath`、 `AssemblyName`和 `OutputType` 屬性，才能找到並啟動輸出組件以及連接到偵錯工具。 如果建置處理序未能使編譯器產生 *.pdb* 檔，將會無法連接到偵錯工具。
@@ -135,7 +135,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 
      專案便會標記為 [ **(無法使用)** ]。
 
-2. 在方案總管  中，開啟無法使用之專案的捷徑功能表，然後選擇 [編輯 \<專案檔>]  。
+2. 在方案總管中，開啟無法使用之專案的捷徑功能表，然後選擇 [編輯 \<專案檔>]。
 
      專案檔隨即在 [Visual Studio XML 編輯器] 中開啟。
 
@@ -176,7 +176,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
    專案系統使用已知名稱 `ResolveNativeReferences`呼叫目標。 這個目標應該以項目類型名稱 `NativeReferenceFile`來產生項目。 除了名為 `OriginalItemSpec`的新的中繼資料 (包含參考的原始項目規格) 以外，項目應該傳遞輸入項目中的所有中繼資料。
 
 ## <a name="performance-shortcuts"></a>效能捷徑
- 如果您在 Visual Studio UI 中開始進行偵錯 (透過選擇 F5 鍵，或是選擇功能表列上的 [偵錯]   > [開始偵錯]  )，建置流程會使用快速更新檢查改善效能。 在某些情況下，自訂組建會建立輪流建置的檔案，此時快速更新檢查就無法正確識別變更的檔案。 需要更完整更新檢查的專案可以藉由設定環境變數 `DISABLEFASTUPTODATECHECK=1`關閉快速檢查。 或者，專案可以在專案中或專案匯入的檔案中將此設為 MSBuild 屬性。
+ 如果您使用 Visual Studio IDE 來啟動偵錯工具（選擇 F5 鍵或在功能表列上選擇 [ **Debug**  > ] [**開始調試**程式]），或建立您的專案（例如，**組建** > **組建方案**），組建程式會使用快速更新檢查來改善效能。 在某些情況下，自訂組建會建立輪流建置的檔案，此時快速更新檢查就無法正確識別變更的檔案。 需要更完整更新檢查的專案可以藉由設定環境變數 `DISABLEFASTUPTODATECHECK=1`關閉快速檢查。 或者，專案可以在專案中或專案匯入的檔案中將此設為 MSBuild 屬性。
 
  快速更新檢查並不適用 Visual Studio 中的定期組建，而且專案的建置方式就如同您在命令提示字元中叫用組建一般。
 

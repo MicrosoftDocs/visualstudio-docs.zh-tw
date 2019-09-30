@@ -1,19 +1,20 @@
 ---
 title: 教學課程 2：建立計時的數學測驗
 ms.date: 11/04/2016
-ms.topic: conceptual
 ms.assetid: d7165d08-ace3-457d-b57d-fb8f80760a6f
+ms.topic: tutorial
+ms.technology: vs-ide-general
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ececa58d04ea7cfebe6178faae724038e353f06
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 39550eb3e2d5fe78e50257b51b52642740781600
+ms.sourcegitcommit: 6eed0372976c0167b9a6d42ba443f9a474b8bb91
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62821616"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71118866"
 ---
 # <a name="tutorial-2-create-a-timed-math-quiz"></a>教學課程 2：建立計時的數學測驗
 
@@ -27,7 +28,7 @@ ms.locfileid: "62821616"
 
 - 在程式碼中執行基本的算術運算。
 
-完成後的測驗看起來如下圖所示，只有數字會不相同：
+當您完成時，您的測驗看起來會類似下列螢幕擷取畫面，不同的數位除外：
 
 ![包含四個問題的數學測驗](../ide/media/express_finishedquiz.png)
 
@@ -36,11 +37,11 @@ ms.locfileid: "62821616"
 若要下載完整版的測驗，請參閱[完整的數學測驗教學課程範例](https://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c) \(英文\)。
 
 > [!NOTE]
-> 本教學課程中同時涵蓋 Visual C# 和 Visual Basic，所以請將焦點放在您使用的程式語言專屬資訊。
+> 本教學課程涵蓋C#和 Visual Basic，因此請專注于您所使用之程式設計語言的特定資訊。
 
 ## <a name="related-topics"></a>相關主題
 
-|標題|說明|
+|標題|描述|
 |-----------|-----------------|
 |[步驟 1：建立專案並將標籤新增至表單](../ide/step-1-create-a-project-and-add-labels-to-your-form.md)|從建立專案、變更屬性，然後新增 `Label` 控制項開始。|
 |[步驟 2：建立隨機加法問題](../ide/step-2-create-a-random-addition-problem.md)|建立加法問題，並使用 `Random` 類別產生隨機數字。|

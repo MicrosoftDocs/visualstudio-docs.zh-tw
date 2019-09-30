@@ -9,15 +9,19 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e955eaacd2f290558c5d786439373a9cc8febb35
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4ecd7a4d237a53a19286790346f790b82b981f60
+ms.sourcegitcommit: 2db01751deeee7b2bdb1db25419ea6706e6fcdf8
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68158279"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71062881"
 ---
 # <a name="user-accounts-and-updates"></a>使用者帳戶和更新
+
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
+> [!WARNING]
+> Visual Studio 2015 無法存取為條件式存取設定的資源。 若要使用這些資源，請升級至 Visual Studio 2017 或更新版本。
 
 Visual Studio 本身為連線的環境。 透過登入可存取所有與您使用者帳戶及連結至該帳戶的所有帳戶相關聯的服務。 無論您在何處使用 Visual Studio，您的帳戶設定皆與您一同漫遊。 您可以針對個別使用者的特定 Visual Studio 執行個體設定使用權限層級。 此外，Visual Studio 會在任何安裝元件 (例如 SDK) 有可用更新時通知您。  
   
@@ -31,5 +35,6 @@ Visual Studio 本身為連線的環境。 透過登入可存取所有與您使�
 |[如何解除鎖定 Visual Studio](../ide/how-to-unlock-visual-studio.md)|描述如何在各種情況中解除鎖定 Visual Studio。|  
 |[通知](../ide/visual-studio-notifications.md)|描述 Visual Studio 如何在元件 (例如 SDK) 或本身有可用更新時通知您。|  
   
-## <a name="see-also"></a>另請參閱  
- [Visual Studio IDE](../ide/visual-studio-ide.md)
+## <a name="see-also"></a>另請參閱
+
+- [Visual Studio IDE](../ide/visual-studio-ide.md)

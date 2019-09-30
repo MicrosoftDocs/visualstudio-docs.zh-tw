@@ -1,5 +1,5 @@
 ---
-title: CA2315:請勿使用不安全的還原序列化程式 ObjectStateFormatter
+title: CA2315：請勿使用不安全的還原序列化程式 ObjectStateFormatter
 ms.date: 05/01/2019
 ms.topic: reference
 author: dotpaul
@@ -13,31 +13,31 @@ ms.workload:
 f1_keywords:
 - CA2315
 - DoNotUseInsecureDeserializerObjectStateFormatter
-ms.openlocfilehash: 793fa9df333eed7e485d7d8829849ae30d9c93a2
-ms.sourcegitcommit: db30651dc0ce4d0b274479b23a6bd102a5559098
+ms.openlocfilehash: 30e9d55fa5aa9c909c29935988f76107a4b5556d
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65135486"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71237679"
 ---
-# <a name="ca2315-do-not-use-insecure-deserializer-objectstateformatter"></a>CA2315:請勿使用不安全的還原序列化程式 ObjectStateFormatter
+# <a name="ca2315-do-not-use-insecure-deserializer-objectstateformatter"></a>CA2315：請勿使用不安全的還原序列化程式 ObjectStateFormatter
 
 |||
 |-|-|
 |TypeName|DoNotUseInsecureDeserializerObjectStateFormatter|
 |CheckId|CA2315|
 |分類|Microsoft.Security|
-|中斷變更|非中斷|
+|重大變更|不中斷|
 
 ## <a name="cause"></a>原因
 
-A<xref:System.Web.UI.ObjectStateFormatter?displayProperty=nameWithType>還原序列化方法已呼叫或參考。
+<xref:System.Web.UI.ObjectStateFormatter?displayProperty=nameWithType>已呼叫或參考還原序列化方法。
 
 ## <a name="rule-description"></a>規則描述
 
 [!INCLUDE[insecure-deserializers-description](includes/insecure-deserializers-description-md.md)]
 
-此規則會尋找<xref:System.Web.UI.ObjectStateFormatter?displayProperty=nameWithType>還原序列化方法呼叫或參考。
+此規則會<xref:System.Web.UI.ObjectStateFormatter?displayProperty=nameWithType>尋找還原序列化方法呼叫或參考。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
 

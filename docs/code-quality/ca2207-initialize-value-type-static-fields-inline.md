@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d2caeb78af5fed0c74c02c6e3f578fa34e765355
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 46f579b6776ffab6d0ed3b2e216e29d36d2065ee
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68920364"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71231698"
 ---
 # <a name="ca2207-initialize-value-type-static-fields-inline"></a>CA2207:必須將實值類型的靜態欄位內嵌初始化
 
@@ -28,18 +28,18 @@ ms.locfileid: "68920364"
 |TypeName|InitializeValueTypeStaticFieldsInline|
 |CheckId|CA2207|
 |分類|Microsoft.Usage|
-|中斷變更|非中斷|
+|重大變更|不中斷|
 
 ## <a name="cause"></a>原因
 實值型別會宣告明確的靜態函數。
 
 ## <a name="rule-description"></a>規則描述
-當宣告實值型別時, 它會經歷預設的初始化, 其中所有的數值型別欄位都設定為零, 而且所有的參考型別`null`欄位`Nothing`都會設定為 (在 Visual Basic 中)。 只有在呼叫類型的實例或靜態成員之前, 才保證會執行明確的靜態函數。 因此, 如果在沒有呼叫實例的函式的情況下建立型別, 則不保證會執行靜態的函數。
+當宣告實值型別時，它會經歷預設的初始化，其中所有的數值型別欄位都設定為零，而且所有的參考型別`null`欄位`Nothing`都會設定為（在 Visual Basic 中）。 只有在呼叫類型的實例或靜態成員之前，才保證會執行明確的靜態函數。 因此，如果在沒有呼叫實例的函式的情況下建立型別，則不保證會執行靜態的函數。
 
-如果所有靜態資料都是以內嵌方式初始化, 而且未宣告明確的C#靜態函式, 則`beforefieldinit`和 Visual Basic 編譯器會將旗標加入至 MSIL 類別定義。 編譯器也會加入包含靜態初始化程式碼的私用靜態函式。 這個私用靜態的函式保證會在存取類型的任何靜態欄位之前執行。
+如果所有靜態資料都是以內嵌方式初始化，而且未宣告明確的C#靜態函式，則`beforefieldinit`和 Visual Basic 編譯器會將旗標加入至 MSIL 類別定義。 編譯器也會加入包含靜態初始化程式碼的私用靜態函式。 這個私用靜態的函式保證會在存取類型的任何靜態欄位之前執行。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
-若要修正此規則的違規, 請在宣告所有靜態資料時將其初始化, 並移除靜態的函式。
+若要修正此規則的違規，請在宣告所有靜態資料時將其初始化，並移除靜態的函式。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
 請勿隱藏此規則的警告。

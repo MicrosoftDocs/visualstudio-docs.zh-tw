@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8faaf3c6557065188c795d75ea9bbe4e78998709
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9f5e4e7eb28207cb37824b23acbbac02b6df380d
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62806983"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71233141"
 ---
 # <a name="ca2003-do-not-treat-fibers-as-threads"></a>CA2003:不要將 Fiber 視為執行緒
 
@@ -28,20 +28,20 @@ ms.locfileid: "62806983"
 |TypeName|DoNotTreatFibersAsThreads|
 |CheckId|CA2003|
 |分類|Microsoft.Reliability|
-|中斷變更|非重大|
+|重大變更|不中斷|
 
 ## <a name="cause"></a>原因
 
-Managed 的執行緒會被視為 Win32 執行緒。
+Managed 執行緒被視為 Win32 執行緒。
 
 ## <a name="rule-description"></a>規則描述
 
-請不要假設 managed 的執行緒是 Win32 執行緒;它是 fiber。 Common language runtime (CLR) 會以 fiber 的 SQL 所擁有的實際執行緒內容中執行的 managed 的執行緒。 這些執行緒可以共用跨 Appdomain 和甚至是資料庫，在 SQL Server 處理序。 使用受管理的執行緒本機儲存體的運作方式，但您不可能使用 unmanaged 的執行緒區域儲存區，或假設程式碼會再次執行目前的 OS 執行緒上。 不會變更設定，例如執行緒的地區設定。 請勿呼叫 CreateCriticalSection 或 CreateMutex 經由 P/Invoke，因為它們需要進入鎖定的執行緒必須一併結束鎖定。 當您在使用 fiber，進入鎖定的執行緒不結束鎖定，因為 Win32 關鍵區段和 mutex 是毫無用處的 SQL。 您可能會以安全地使用大部分狀態上 managed<xref:System.Threading.Thread>物件，包括 managed 的執行緒區域儲存區和執行緒的目前使用者介面 (UI) 文化特性。 不過，基於程式設計模型考量，您無法再變更目前執行緒文化特性，當您使用 SQL。 透過新的權限，將會強制執行這項限制。
+不要假設 managed 執行緒是 Win32 執行緒;它是一個光纖。 Common language runtime （CLR）會在 SQL 所擁有的實際執行緒內容中，以纖程的形式執行 managed 執行緒。 這些執行緒可以在 Appdomain 之間共用，甚至是在 SQL Server 進程中的資料庫。 使用 managed 執行緒區域儲存區可以運作，但您可能不會使用非受控執行緒區域儲存區，也不會假設您的程式碼將會在目前的 OS 執行緒上再次執行。 請勿變更設定，例如執行緒的地區設定。 請勿透過 P/Invoke 呼叫 CreateCriticalSection 或 CreateMutex，因為它們需要進入鎖定的執行緒也必須結束鎖定。 因為進入鎖定的執行緒不會在您使用纖維時結束鎖定，所以 Win32 關鍵區段和 mutex 在 SQL 中毫無用處。 您可以安全地使用受管理<xref:System.Threading.Thread>物件上的大部分狀態，包括 managed 執行緒區域儲存區和執行緒目前的使用者介面（UI）文化特性。 不過，基於程式設計模型的原因，當您使用 SQL 時，您將無法變更執行緒目前的文化特性。 這項限制將會透過新的許可權來強制執行。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
 
-檢查您的執行緒之使用量，並據以變更您的程式碼。
+檢查您的執行緒使用狀況，並據以變更您的程式碼。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
 
-請勿隱藏這項規則。
+請勿隱藏此規則。

@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 340d8f0a45506f15cdd9281f7ecda463583c3144
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 6850cee67a0dfed4b386eef5ed7cb021d3c76a4d
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68920831"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71232518"
 ---
 # <a name="ca2122-do-not-indirectly-expose-methods-with-link-demands"></a>CA2122:不要間接公開具有連結要求的方法
 
@@ -28,22 +28,22 @@ ms.locfileid: "68920831"
 |TypeName|DoNotIndirectlyExposeMethodsWithLinkDemands|
 |CheckId|CA2122|
 |分類|Microsoft.Security|
-|中斷變更|非中斷|
+|重大變更|不中斷|
 
 ## <a name="cause"></a>原因
-公用或受保護成員具有[連結要求](/dotnet/framework/misc/link-demands), 而且是由不會執行任何安全性檢查的成員所呼叫。
+公用或受保護成員具有[連結要求](/dotnet/framework/misc/link-demands)，而且是由不會執行任何安全性檢查的成員所呼叫。
 
 ## <a name="rule-description"></a>規則描述
-連結要求只會檢查立即呼叫端的使用權限。 如果成員`X`沒有呼叫端的安全性要求, 而且呼叫受連結要求保護的程式碼, 則沒有必要許可權的呼叫端可以使用`X`來存取受保護的成員。
+連結要求只會檢查立即呼叫端的使用權限。 如果成員`X`沒有呼叫端的安全性要求，而且呼叫受連結要求保護的程式碼，則沒有必要許可權的呼叫端可以使用`X`來存取受保護的成員。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
-新增安全性[資料, 並](/dotnet/framework/data/index)將需求模型化或連結至成員, 使其不再提供對連結要求保護成員的不安全存取。
+新增安全性[資料，並](/dotnet/framework/data/index)將需求模型化或連結至成員，使其不再提供對連結要求保護成員的不安全存取。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
-若要安全地隱藏這項規則的警告, 您必須確定您的程式碼並未授與呼叫者存取可透過破壞性方式使用的作業或資源。
+若要安全地隱藏這項規則的警告，您必須確定您的程式碼並未授與呼叫者存取可透過破壞性方式使用的作業或資源。
 
 ## <a name="example-1"></a>範例 1
-下列範例顯示的程式庫違反規則, 以及示範程式庫的弱點的應用程式。 範例程式庫提供兩個同時違反規則的方法。 `EnvironmentSetting`方法會受到連結要求的保護, 以進行不受限制的環境變數存取。 方法`DomainInformation`在呼叫`EnvironmentSetting`之前, 不會對其呼叫端進行任何安全性要求。
+下列範例顯示的程式庫違反規則，以及示範程式庫的弱點的應用程式。 範例程式庫提供兩個同時違反規則的方法。 `EnvironmentSetting`方法會受到連結要求的保護，以進行不受限制的環境變數存取。 方法`DomainInformation`在呼叫`EnvironmentSetting`之前，不會對其呼叫端進行任何安全性要求。
 
 [!code-csharp[FxCop.Security.UnsecuredDoNotCall#1](../code-quality/codesnippet/CSharp/ca2122-do-not-indirectly-expose-methods-with-link-demands_1.cs)]
 

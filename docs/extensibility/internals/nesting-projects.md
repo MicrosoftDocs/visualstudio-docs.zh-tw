@@ -14,20 +14,20 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 289062a15c35641d5558409c7643301e346b6e65
-ms.sourcegitcommit: f42b5318c5c93e2b5ecff44f408fab8bcdfb193d
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2019
+ms.lasthandoff: 09/25/2019
 ms.locfileid: "69976696"
 ---
 # <a name="nesting-projects"></a>巢狀專案
-使用您的 VS 套件的企業應用程式開發人員可以使用*專案嵌套*, 輕鬆[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]地在中將類似類型的專案群組在一起。 例如, 企業範本專案會使用嵌套專案, 將專案分組為類別目錄。 商務外觀專案、Web UI 專案等等會在一個類別中群組在一起。
+使用您的 VS 套件的企業應用程式開發人員可以使用*專案嵌套*，輕鬆[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]地在中將類似類型的專案群組在一起。 例如，企業範本專案會使用嵌套專案，將專案分組為類別目錄。 商務外觀專案、Web UI 專案等等會在一個類別中群組在一起。
 
- 在此案例中, 開發人員可以在每個父專案底下嵌套的專案數沒有任何限制, 但開發人員可以透過程式設計方式提供限制。 這種類型的群組也可以設為遞迴, 在此情況下, 與子專案相同類型的專案可以嵌套在子系底下, 成為子系的子專案, 也就是父系的子專案。
+ 在此案例中，開發人員可以在每個父專案底下嵌套的專案數沒有任何限制，但開發人員可以透過程式設計方式提供限制。 這種類型的群組也可以設為遞迴，在此情況下，與子專案相同類型的專案可以嵌套在子系底下，成為子系的子專案，也就是父系的子專案。
 
- 專案嵌套不是的內[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]建部分。 您必須撰寫程式碼, 才能在子專案中啟用嵌套和子專案的嵌套。 父專案是特殊的 VSPackage 或專案類型, 已建立並註冊自己的 GUID, 其中包含執行專案嵌套所需的程式碼。
+ 專案嵌套不是的內[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]建部分。 您必須撰寫程式碼，才能在子專案中啟用嵌套和子專案的嵌套。 父專案是特殊的 VSPackage 或專案類型，已建立並註冊自己的 GUID，其中包含執行專案嵌套所需的程式碼。
 
- 如需如何將專案嵌套在[如何:執行嵌套專案](../../extensibility/internals/how-to-implement-nested-projects.md)。
+ 如需如何將專案嵌套在[如何：執行嵌套專案](../../extensibility/internals/how-to-implement-nested-projects.md)。
 
 ## <a name="nested-projects-example"></a>嵌套專案範例
  ![嵌套專案解決方案](../../extensibility/internals/media/vsnestedprojects.gif "vsNestedProjects")嵌套專案範例

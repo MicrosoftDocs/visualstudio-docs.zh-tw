@@ -4,15 +4,14 @@ description: 在 Visual Studio for Mac 中使用 Azure Functions。
 author: sayedihashimi
 ms.author: sayedha
 ms.date: 05/06/2018
-ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 38FD2070-5151-482E-B0A9-993715128736
-ms.openlocfilehash: aebee9f649f183995f209568d78ef08fbde1ef1a
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.openlocfilehash: 6bea12b37bc7fe1f608c27cd72e48c7cdc7e13d8
+ms.sourcegitcommit: cf8c0fef2b9690595e99ce3802586cdd55fd37c2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67692893"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70108135"
 ---
 # <a name="tutorial-getting-started-with-azure-functions"></a>教學課程：開始使用 Azure Functions
 

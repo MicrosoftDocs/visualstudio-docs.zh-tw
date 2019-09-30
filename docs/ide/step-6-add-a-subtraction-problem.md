@@ -1,22 +1,24 @@
 ---
 title: 步驟 6：新增減法問題
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: tutorial
+ms.prod: visual-studio-windows
+ms.technology: vs-ide-general
 dev_langs:
-- csharp
-- vb
+- CSharp
+- VB
 ms.assetid: 59204ef9-24bd-4f81-b85f-e3168e518a3e
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d429d2921f252e97bfe7c233a9fe963f7f91299b
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
-ms.translationtype: HT
+ms.openlocfilehash: 47932e8a647cb9a5ae555de09778fcd67da397e2
+ms.sourcegitcommit: 6eed0372976c0167b9a6d42ba443f9a474b8bb91
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68416558"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71118729"
 ---
 # <a name="step-6-add-a-subtraction-problem"></a>步驟 6：新增減法問題
 在本教學課程的第六個部分中，您將加入減法問題並學習如何執行下列工作：
@@ -29,12 +31,20 @@ ms.locfileid: "68416558"
 
 - 更新計時器的 <xref:System.Windows.Forms.Timer.Tick> 事件處理常式，讓事件處理常式在時間結束時填入正確答案。
 
+> [!NOTE]
+> 這個主題是有關基本程式碼撰寫概念的教學課程系列的一部分。
+> - 如需教學課程的概觀，請參閱[教學課程 2：建立計時的數學測驗](../ide/tutorial-2-create-a-timed-math-quiz.md)。
+> - 若要下載已完成的程式碼版本，請參閱[完整的數學測驗教學課程範例](https://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c)。
+
 ## <a name="to-add-a-subtraction-problem"></a>若要加入減法問題
 
 1. 將減法問題的兩個整數變數加入至表單中，並且放置在加法問題的整數變數與計時器之間。 程式碼看起來應該如下所示。
 
      [!code-vb[VbExpressTutorial3Step5_6#12](../ide/codesnippet/VisualBasic/step-6-add-a-subtraction-problem_1.vb)]
      [!code-csharp[VbExpressTutorial3Step5_6#12](../ide/codesnippet/CSharp/step-6-add-a-subtraction-problem_1.cs)]
+
+     > [!IMPORTANT]
+     > 使用此頁面右上方的程式設計語言控制項，以查看C#程式碼片段或 Visual Basic 程式碼片段。<br><br>![Docs.Microsoft.com 的程式設計語言控制項](../ide/media/docs-programming-language-control.png)
 
      新的整數變數名稱 **minuend** 和 **subtrahend** 並不是程式設計詞彙。 這兩個名稱是算術中的減數 (subtrahend) 和從中減去減數之被減數 (minuend) 的慣用名稱。 差等於被減數減去減數。 您可以使用其他名稱，因為您程式中的變數、控制項、元件或方法不需要特定名稱。 您必須遵循規則 (例如，名稱開頭不可使用數字)，但是通常可以使用 x1、x2、x3 或 x4 這類名稱。 不過，一般名稱可能使程式碼不易閱讀，而且幾乎難以追蹤問題。 為了讓變數名稱保持唯一且實用，稍後在本教學課程中，您將在乘法 (被乘數 × 乘數 = 乘積) 和除法 (被除數 ÷ 除數 = 商數) 中使用慣用名稱。
 
@@ -52,12 +62,13 @@ ms.locfileid: "68416558"
 
      您可以透過多種方式呼叫 Random 類別的 `Next()` 方法，也就是您在本教學課程前段中命名為 "randomizer" 的方法。 能夠以多種方式呼叫的方法稱為「多載」(Overload)，您可以使用 IntelliSense 來了解這些方法。 再看一次 `Next()` 方法的 [IntelliSense] 視窗工具提示。
 
-     ![IntelliSense 視窗工具提示](../ide/media/express_overloads.png)
-**IntelliSense** 視窗工具提示
+     ![IntelliSense 視窗工具提示](../ide/media/express_overloads.png)<br/>
+***IntelliSense*** *視窗工具提示*
 
-     工具提示會顯示 [(+ 2 多載)]  ，也就是說，您可以透過另外兩種方式呼叫 `Next()` 方法。 多載包含不同數目或類型的引數，因此彼此之間的運作方式會稍有不同。 例如，某個方法可能會接受單一整數引數，且其中一個多載可能會接受一個整數和一個字串。 您可以依據需要的功能選擇正確的多載。 當您將程式碼新增至 `StartTheQuiz()` 方法時，只要輸入 `randomizer.Next(`，[IntelliSense] 視窗就會顯示詳細資訊。 若要循環瀏覽這些多載，請選擇**向上鍵**和**向下鍵**，如下圖所示：
+     工具提示會顯示 [(+ 2 多載)]，也就是說，您可以透過另外兩種方式呼叫 `Next()` 方法。 多載包含不同數目或類型的引數，因此彼此之間的運作方式會稍有不同。 例如，某個方法可能會接受單一整數引數，且其中一個多載可能會接受一個整數和一個字串。 您可以依據需要的功能選擇正確的多載。 當您將程式碼新增至 `StartTheQuiz()` 方法時，只要輸入 `randomizer.Next(`，[IntelliSense] 視窗就會顯示詳細資訊。 若要循環瀏覽這些多載，請選擇**向上鍵**和**向下鍵**，如下圖所示：
 
-     ![IntelliSense 中 Next&#40;&#41; 方法的多載](../ide/media/express_nextoverload.png) **IntelliSense** 中 **Next()** 方法的多載
+     ![IntelliSense 中 Next&#40;&#41; 方法的多載](../ide/media/express_nextoverload.png)<br/>
+*的* 多載 ***下一個（）*** *中的方法* ***IntelliSense***
 
      在這個案例中，您想要選擇最後一個多載，因為這樣就可以指定最小值和最大值。
 
@@ -77,11 +88,11 @@ ms.locfileid: "68416558"
 
      您的程式包括減法問題，如下圖所示：
 
-     ![包含減法問題的數學測驗](../ide/media/express_addsubtract.png)
-包含減法問題的**數學測驗**
+     ![包含減法問題的數學測驗](../ide/media/express_addsubtract.png)<br/>
+***數學測驗*** *有減法問題*
 
 ## <a name="to-continue-or-review"></a>若要繼續或檢視
 
-- 若要前往下一個教學課程步驟，請參閱[步驟 7：新增乘法及除法問題](../ide/step-7-add-multiplication-and-division-problems.md)。
+- 若要移至下一個教學課程步驟 **，請參閱[步驟7：新增乘法和除法問題](../ide/step-7-add-multiplication-and-division-problems.md)。**
 
 - 若要回到上一個教學課程步驟，請參閱[步驟 5：新增 NumericUpDown 控制項的 Enter 事件處理常式](../ide/step-5-add-enter-event-handlers-for-the-numericupdown-controls.md)。

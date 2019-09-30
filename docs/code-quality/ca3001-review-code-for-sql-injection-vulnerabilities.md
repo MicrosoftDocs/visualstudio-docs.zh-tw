@@ -10,12 +10,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 603dc08650ca5e54cac3f590f5d32de98e3ae5da
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: bd454ffad1efc9d7df84d88630fe71eebc8ca6fc
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65841464"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71238113"
 ---
 # <a name="ca3001-review-code-for-sql-injection-vulnerabilities"></a>CA3001：檢閱程式碼是否有 SQL 插入式攻擊弱點
 
@@ -24,31 +24,31 @@ ms.locfileid: "65841464"
 |TypeName|ReviewCodeForSqlInjectionsVulnerabilities|
 |CheckId|CA3001|
 |分類|Microsoft.Security|
-|中斷變更|非中斷|
+|重大變更|不中斷|
 
 ## <a name="cause"></a>原因
 
-可能不受信任的 HTTP 要求輸入達到 SQL 命令的文字。
+可能不受信任的 HTTP 要求輸入會到達 SQL 命令的文字。
 
 ## <a name="rule-description"></a>規則描述
 
-當使用不受信任的輸入和 SQL 命令，留意 SQL 插入式攻擊。 SQL 資料隱碼攻擊都可以執行惡意的 SQL 命令，危害您的應用程式的完整性與安全性。 典型的技術，包括分隔常值字串的註解中，兩個連字號和分號結束陳述式的使用單引號 （或單引號）。 如需詳細資訊，請參閱 < [SQL 資料隱碼](/sql/relational-databases/security/sql-injection)。
+使用不受信任的輸入和 SQL 命令時，請留意 SQL 插入式攻擊。 SQL 插入式攻擊可能會執行惡意的 SQL 命令，因而危及應用程式的安全性和完整性。 典型的技術包括使用單引號或單引號來分隔常值字串、批註的兩個虛線和語句結尾的分號。 如需詳細資訊，請參閱[SQL 插入](/sql/relational-databases/security/sql-injection)。
 
-此規則會嘗試尋找 HTTP 要求到達的 SQL 命令文字中的輸入。
-
-> [!NOTE]
-> 此規則無法追蹤多個組件的資料。 比方說，如果一個組件會讀取 HTTP 要求輸入，並再將它傳遞至執行 SQL 命令的另一個組件，此規則將不會產生警告。
+此規則會嘗試從 HTTP 要求尋找到達 SQL 命令文字的輸入。
 
 > [!NOTE]
-> 沒有可設定的限制，深度此規則會分析資料流不同的方法呼叫。 請參閱[分析器組態](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis)如何 EditorConfig 檔案中設定限制。
+> 此規則無法跨元件追蹤資料。 例如，如果一個元件讀取 HTTP 要求輸入，然後將它傳遞給另一個執行 SQL 命令的元件，此規則就不會產生警告。
+
+> [!NOTE]
+> 此規則會在方法呼叫中分析資料流的深度有一個可設定的限制。 如需如何在 EditorConfig 檔中設定限制的詳細說明，請參閱[分析器](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis)設定。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
 
-參數化的 SQL 命令或預存程序，使用包含不受信任的輸入參數。
+使用參數化的 SQL 命令或預存程式，其中包含不受信任的輸入。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
 
-它是安全地隱藏此規則的警告，如果您知道輸入一律會針對已知安全的一組字元進行驗證。
+如果您知道輸入一律會針對一組已知的安全字元進行驗證，則可以安全地隱藏此規則的警告。
 
 ## <a name="pseudo-code-examples"></a>虛擬程式碼範例
 
@@ -107,7 +107,7 @@ Namespace VulnerableWebApp
 End Namespace
 ```
 
-### <a name="parameterized-solution"></a>參數化的解決方案
+### <a name="parameterized-solution"></a>參數化解決方案
 
 ```csharp
 using System;
@@ -165,7 +165,7 @@ Namespace VulnerableWebApp
 End Namespace
 ```
 
-### <a name="stored-procedure-solution"></a>預存程序的方案
+### <a name="stored-procedure-solution"></a>預存程式方案
 
 ```csharp
 using System;

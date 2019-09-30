@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4462bb8ef65fdf593ab0bf64813c19af5d390d97
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d4f02938aed7456762f1ef51da716b6b96bdf437
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62545025"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71232153"
 ---
 # <a name="ca2140-transparent-code-must-not-reference-security-critical-items"></a>CA2140:透明程式碼不可以參考安全性關鍵項目
 
@@ -30,41 +30,41 @@ ms.locfileid: "62545025"
 |TypeName|TransparentMethodsMustNotReferenceCriticalCode|
 |CheckId|CA2140|
 |分類|Microsoft.Security|
-|中斷變更|中斷|
+|重大變更|中斷|
 
 ## <a name="cause"></a>原因
 
-透明的方法：
+透明方法：
 
-- 處理安全性關鍵的安全性例外狀況類型
+- 處理安全性關鍵安全性例外狀況類型
 
-- 具有參數標記為安全性關鍵類型
+- 有一個標記為安全性關鍵類型的參數
 
-- 具有安全性關鍵條件約束的泛型參數
+- 具有具有安全性關鍵條件約束的泛型參數
 
 - 具有安全性關鍵類型的本機變數
 
-- 參考的類型會標示為安全性關鍵，
+- 參考標記為安全性關鍵的類型
 
-- 呼叫標記為安全性關鍵方法
+- 呼叫標記為安全性關鍵的方法
 
-- 參考的欄位標記為安全性關鍵
+- 參考標記為安全性關鍵的欄位
 
-- 傳回標記為安全性關鍵類型
+- 傳回標記為安全性關鍵的類型
 
 ## <a name="rule-description"></a>規則描述
 
-標示的程式碼項目<xref:System.Security.SecurityCriticalAttribute>屬性是安全性關鍵。 透明方法不能使用安全性關鍵項目。 如果透明類型嘗試使用安全性關鍵類型<xref:System.TypeAccessException>， <xref:System.MethodAccessException> ，或<xref:System.FieldAccessException>，就會引發。
+以<xref:System.Security.SecurityCriticalAttribute>屬性標示的程式碼專案是安全性關鍵。 透明方法不能使用安全性關鍵項目。 如果透明類型嘗試使用安全性關鍵類型<xref:System.TypeAccessException>，則會引發、 <xref:System.MethodAccessException>或。 <xref:System.FieldAccessException>
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
 
-若要修正此規則的違規情形，請執行下列其中一項：
+若要修正此規則的違規情形，請執行下列其中一項動作：
 
-- 標記會使用安全性關鍵程式碼與程式碼項目<xref:System.Security.SecurityCriticalAttribute>屬性
+- 將使用安全性關鍵程式碼<xref:System.Security.SecurityCriticalAttribute>的程式碼專案標記為屬性
 
      \-或-
 
-- 移除<xref:System.Security.SecurityCriticalAttribute>從程式碼項目會標示為安全性關鍵，而是將它們與標記的屬性<xref:System.Security.SecuritySafeCriticalAttribute>或<xref:System.Security.SecurityTransparentAttribute>屬性。
+- 從標記為安全性關鍵的程式碼專案中移除<xref:System.Security.SecuritySafeCriticalAttribute> <xref:System.Security.SecurityTransparentAttribute> <xref:System.Security.SecurityCriticalAttribute>屬性，並改為使用或屬性來加以標記。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
 
@@ -72,7 +72,7 @@ ms.locfileid: "62545025"
 
 ## <a name="example"></a>範例
 
-在下列範例中，透明方法會嘗試參考安全性關鍵泛型集合、 安全性關鍵欄位，以及安全性關鍵方法。
+在下列範例中，透明方法會嘗試參考安全性關鍵泛型集合、安全性關鍵字段和安全性關鍵方法。
 
 [!code-csharp[FxCop.Security.CA2140.TransparentMethodsMustNotReferenceCriticalCode#1](../code-quality/codesnippet/CSharp/ca2140-transparent-code-must-not-reference-security-critical-items_1.cs)]
 

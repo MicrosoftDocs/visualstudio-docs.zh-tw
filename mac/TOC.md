@@ -1,5 +1,8 @@
 # [Visual Studio for Mac](index.yml)
-# [IDE 導覽](ide-tour.md)
+
+# 快速入門
+## [IDE 導覽](ide-tour.md)
+## [適用於 Windows 使用者的 Visual Studio for Mac](vsmac-for-windows-users.md)
 
 # 安裝
 ## [安裝 Visual Studio 2019 for Mac](installation.md)
@@ -57,7 +60,6 @@
 
 # 版本控制
 ## [概觀](version-control.md)
-## [TF 版本控制](tf-version-control.md)
 ## [設定 Git 存放庫](set-up-git-repository.md)
 ## [使用 Git](working-with-git.md)
 ## [設定 Subversion 存放庫](set-up-subversion-repository.md)
@@ -76,6 +78,7 @@
 ### [在 Visual Studio for Mac 中建置 ASP.NET Core 應用程式](building-asp-net-core.md)
 ### [Razor](razor.md)
 ### [JavaScript 和 TypeScript](javascript.md)
+### [launchSettings.json](launch-settings.md)
 ## Azure
 ### [概觀](azure-workload.md)
 ### [Azure Functions 簡介](azure-functions.md)
@@ -94,19 +97,28 @@
 ### [變更記錄](/visualstudio/cross-platform/change-log-visual-studio-tools-for-unity-mac/?context=visualstudio/mac/context)
 ## [使用 Xamarin 開發行動裝置應用程式](/visualstudio/mac/xamarin)
 
-# [協助工具選項](accessibility.md)
+# 協助工具選項
+## [概觀](accessibility.md)
+## [設定 IDE 協助工具選項](accessibility-ide-options.md)
+## macOS 協助工具和功能
+### [使用 macOS 協助工具](accessibility-macos.md)
+### [使用鍵盤瀏覽](accessibility-keyboard.md)
+### [使用 VoiceOver](accessibility-voiceover.md)
+
+# [適用於 Windows 使用者的 Visual Studio for Mac](vsmac-for-windows-users.md)
 
 # 疑難排解
 ## [記錄和例外狀況](troubleshooting.md)
 ## [Visual Studio 客戶經驗改進計畫](visual-studio-experience-improvement-program.md)
 ## [回報問題](report-a-problem.md)
+## [疑難排解：Visual Studio for Mac 是否支援 Team Foundation 版本控制？](tf-version-control.md)
 ## [疑難排解：為什麼我看不到所有範本？](troubleshooting-no-templates.md)
 ## [疑難排解：更新程式在擷取資訊時發生錯誤](updater-troubleshooting.md)
 
 # [版本資訊](https://docs.microsoft.com/visualstudio/releasenotes/vs2019-mac-relnotes)
 # [預覽版本資訊](https://docs.microsoft.com/visualstudio/releasenotes/vs2019-mac-preview-relnotes)
 # 範例
-## [精選範例](samples.yml)
+## [精選範例](samples/index.yml)
 ## [所有 ASP.NET Core 範例](https://docs.microsoft.com/samples/browse/?products=aspnet-core)
 ## [所有 .NET Core 範例](https://docs.microsoft.com/samples/browse/?products=dotnet-core)
 ## [所有 Xamarin.Forms 範例](https://docs.microsoft.com/xamarin/xamarin-forms/samples/)

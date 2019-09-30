@@ -1,5 +1,5 @@
 ---
-title: Azure 服務進行偵錯 |Microsoft Docs
+title: Azure 服務的 Debug |Microsoft Docs
 ms.date: 09/14/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,29 +10,29 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - azure
-ms.openlocfilehash: 9cf5752c43e22f2df73fa6701374805cf4770a82
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 940097c58d6c18e3be5f6659d764007b16cd4859
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62563356"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71211272"
 ---
-# <a name="debug-azure-services-in-visual-studio"></a>偵錯 Visual Studio 中的 Azure 服務
+# <a name="debug-azure-services-in-visual-studio"></a>在 Visual Studio 中調試 Azure 服務
 
-您可以使用 Visual Studio 來偵錯在不同案例中的 Azure 服務：
+在不同的案例中，您可以使用 Visual Studio 來進行 Azure 服務的調試：
 
-- 若要偵錯 Azure App Service 中裝載生產應用程式，請參閱[偵錯即時 ASP.NET 應用程式中使用快照集偵錯工具](../debugger/debug-live-azure-applications.md)。
+- 若要對 Azure App Service 中裝載的實際執行應用程式進行檢查，請參閱[使用快照偵錯工具來進行即時 ASP.NET 應用程式的 debug](../debugger/debug-live-azure-applications.md)。
 
-- 若要偵錯生產應用程式裝載於 Azure 虛擬機器或 Azure 虛擬機器擴展集，請參閱[偵錯即時 ASP.NET Azure 虛擬機器與 Azure 虛擬機器擴展集使用快照集偵錯工具](../debugger/debug-live-azure-virtual-machines.md)。
+- 若要針對 Azure 虛擬機器或 Azure 虛擬機器擴展集內裝載的生產應用程式進行檢查，請參閱[使用快照偵錯工具來進行即時 ASP.NET azure 虛擬機器和 azure 虛擬機器擴展集](../debugger/debug-live-azure-virtual-machines.md)的偵測。
 
-- 若要偵錯 Azure Kubernetes Service 中裝載生產應用程式，請參閱[偵錯即時 ASP.NET Azure Kubernetes 服務使用快照集偵錯工具](../debugger/debug-live-azure-kubernetes.md)。
+- 若要對 Azure Kubernetes Service 中裝載的實際執行應用程式進行檢查，請參閱[使用快照偵錯工具來進行即時 ASP.NET Azure Kubernetes Services 的 debug](../debugger/debug-live-azure-kubernetes.md)。
 
-- 若要使用 Application Insights 的生產應用程式進行偵錯和裝載於 Azure App Service 或 Service Fabric 中，請參閱[偵錯.NET 應用程式中的例外狀況的快照集](/azure/application-insights/app-insights-snapshot-debugger)。
+- 若要使用 Application Insights 和裝載于 Azure App Service 或 Service Fabric 中的來對生產應用程式進行檢查，請參閱[在 .net 應用程式中的例外狀況上的 debug](/azure/application-insights/app-insights-snapshot-debugger)
 
-- 若要遠端偵錯 ASP.NET 在 IIS （Azure App Service 或 Azure VM） 上，請參閱[Remote Debugging ASP.NET on Azure](remote-debugging-azure.md)。
+- 若要在 IIS 上進行遠端偵錯程式 ASP.NET （Azure App Service 或 Azure VM），請參閱[Azure 上的遠端偵錯程式 ASP.NET](remote-debugging-azure.md)。
 
-- 若要遠端偵錯 Azure Service Fabric 上的 ASP.NET，請參閱[偵錯遠端 Service Fabric 應用程式](/azure/service-fabric/service-fabric-debugging-your-application#debug-a-remote-service-fabric-application)
+- 若要在 Azure Service Fabric 上遠端偵錯程式 ASP.NET，請參閱[debug a remote Service Fabric application](/azure/service-fabric/service-fabric-debugging-your-application#debug-a-remote-service-fabric-application)
 
 ## <a name="see-also"></a>另請參閱
 
-- [Visual Studio 偵錯](../debugger/index.md)
+- [Visual Studio 偵錯](../debugger/index.yml)

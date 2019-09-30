@@ -1,5 +1,5 @@
 - name: 偵錯工具文件
-  href: index.md
+  href: index.yml
 - name: 總覽
   items:
     - name: 什麼是偵錯？
@@ -34,7 +34,7 @@
       href: view-historical-application-state.md
     - name: 適合完全初學者的偵錯
       href: debugging-absolute-beginners.md
-- name: 作法指南
+- name: 使用說明指南
   items:
     - name: 使用偵錯工具巡覽程式碼
       href: navigating-through-code-with-the-debugger.md
@@ -42,6 +42,8 @@
       items:
         - name: 使用中斷點
           href: using-breakpoints.md
+        - name: 使用追蹤點
+          href: using-tracepoints.md
         - name: 針對中斷點進行疑難排解
           href: troubleshooting-breakpoints.md
     - name: 資料檢查
@@ -126,8 +128,12 @@
               href: edit-and-continue-visual-basic.md
             - name: 以編輯後繼續在中斷模式中套用編輯
               href: how-to-apply-edits-in-break-mode-with-edit-and-continue.md
-        - name: 撰寫 XAML 程式碼及針對其執行進行偵錯
-          href: xaml-hot-reload.md
+        - name: XAML 熱重新載入
+          items:
+            - name: 撰寫 XAML 程式碼及針對其執行進行偵錯
+              href: xaml-hot-reload.md
+            - name: 對 XAML 熱重新載入進行疑難排解
+              href: xaml-hot-reload-troubleshooting.md
         - name: 'F# 不支援編輯後繼續'
           href: edit-and-continue-not-supported-for-f-hash.md
     - name: 檢視偵錯工具資料
@@ -140,7 +146,7 @@
               href: how-to-find-which-dll-your-program-crashed-in.md
         - name: 檢視指令碼文件
           href: how-to-view-script-documents.md
-    - name: 秘訣和訣竅
+    - name: 秘訣與技巧
       items:
         - name: 偵錯工具祕訣與技巧
           href: debugger-tips-and-tricks.md
@@ -282,7 +288,7 @@
               href: remote-debugging-errors-and-troubleshooting.md
             - name: 遠端電腦上的 Microsoft Visual Studio 遠端偵錯監視沒有連線至這部電腦的權限
               href: error-the-microsoft-visual-studio-remote-debugging-monitor-no-permission.md
-            - name: 嘗試聯繫遠端電腦時，發生 DCOM 錯誤。 存取被拒絕。
+            - name: 嘗試聯繫遠端電腦時，發生 DCOM 錯誤。 存取遭到拒絕。
               href: a-dcom-error-occurred-trying-to-contact-the-remote-computer-access-is-denied.md
             - name: 遠端電腦上的 Microsoft Visual Studio 遠端偵錯監視，目前是以不同的使用者身分在執行
               href: error-the-microsoft-visual-studio-remote-debugging-monitor-on-the-remote-computer-is-running-as-a-different-user.md
@@ -444,7 +450,7 @@
               href: how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio.md
             - name: 預先擷取 Microsoft Store 應用程式的內容
               href: prefetch-content-for-windows-store-apps.md
-        - name: Managed 程式碼
+        - name: '受控程式碼 (C#、Visual Basic、F#)'
           items:
             - name: 對受控碼進行偵錯
               href: debugging-managed-code.md
@@ -488,7 +494,7 @@
                   href: how-to-display-wpf-trace-information.md
             - name: '對 F# 進行偵錯'
               href: debugging-f-hash.md
-        - name: 機器碼
+        - name: C/C++ 程式碼
           items:
             - name: 對機器碼進行偵錯
               href: debugging-native-code.md
@@ -576,7 +582,7 @@
                   href: com-debugging-tools.md
             - name: 對插入程式碼進行偵錯
               href: how-to-debug-injected-code.md
-        - name: 對 GPU 程式碼進行偵錯
+        - name: GPU 程式碼
           href: debugging-gpu-code.md
         - name: 圖形診斷
           href: graphics/toc.yml
@@ -626,6 +632,10 @@
                       href: error-the-web-server-could-not-find-the-requested-resource.md
                     - name: 未正確設定 Web 伺服器
                       href: error-the-web-server-is-not-configured-correctly.md
+        - name: Python
+          href: ../python/tutorial-working-with-python-in-visual-studio-step-04-debugging.md
+        - name: JavaScript 和 TypeScript
+          href: ../javascript/debug-nodejs.md
         - name: Web 應用程式
           items:
             - name: 對 Web 應用程式進行偵錯
@@ -656,6 +666,10 @@
               href: how-to-step-into-wcf-services.md
             - name: 對自我裝載的 WCF 服務進行偵錯
               href: how-to-debug-a-self-hosted-wcf-service.md
+    - name: 共同作業
+      items:
+        - name: 使用 Live Share 撰寫程式碼及對其偵錯
+          href: /visualstudio/liveshare/use/vs
     - name: 傾印檔案
       items:
         - name: 使用傾印檔案
@@ -818,7 +832,7 @@
                   href: how-to-search-for-a-process-in-processes-view.md
                 - name: 顯示處理序屬性
                   href: how-to-display-process-properties.md
-            - name: 執行緒
+            - name: Threads
               items:
                 - name: 執行緒檢視
                   href: threads-view.md

@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e4baee9f532c0351feeced07ce9403245ccee14a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1616e889b3892aa656692a3e5b0895d4b131b7f1
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62541867"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71231260"
 ---
 # <a name="ca2216-disposable-types-should-declare-finalizer"></a>CA2216:可處置的類型應該宣告完成項
 
@@ -28,15 +28,15 @@ ms.locfileid: "62541867"
 |TypeName|DisposableTypesShouldDeclareFinalizer|
 |CheckId|CA2216|
 |分類|Microsoft.Usage|
-|中斷變更|非中斷|
+|重大變更|不中斷|
 
 ## <a name="cause"></a>原因
 
-型別可實作<xref:System.IDisposable?displayProperty=fullName>，且建議使用的 unmanaged 資源的欄位，不會實作完成項，如所述<xref:System.Object.Finalize%2A?displayProperty=fullName>。
+型<xref:System.IDisposable?displayProperty=fullName>別會執行，而且有欄位會建議使用非受控資源，並不會依照<xref:System.Object.Finalize%2A?displayProperty=fullName>所述的方式來實作為完成項。
 
 ## <a name="rule-description"></a>規則描述
 
-如果可處置型別包含下列類型的欄位，就會報告這項規則的違規情形：
+如果可處置的類型包含下列類型的欄位，則會報告此規則的違規：
 
 - <xref:System.IntPtr?displayProperty=fullName>
 
@@ -46,23 +46,23 @@ ms.locfileid: "62541867"
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
 
-若要修正此規則的違規情形，實作完成項，會呼叫您<xref:System.IDisposable.Dispose%2A>方法。
+若要修正此規則的違規，請執行呼叫您<xref:System.IDisposable.Dispose%2A>方法的完成項。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
 
-它可安全地隱藏此規則的警告，如果類型未實作<xref:System.IDisposable>用於釋放 unmanaged 的資源。
+如果型別不是為了釋出非受控資源而執行<xref:System.IDisposable> ，則隱藏此規則的警告是安全的。
 
 ## <a name="example"></a>範例
 
-下列範例顯示違反此規則的型別。
+下列範例顯示違反此規則的類型。
 
 [!code-csharp[FxCop.Usage.DisposeNoFinalize#1](../code-quality/codesnippet/CSharp/ca2216-disposable-types-should-declare-finalizer_1.cs)]
 
-## <a name="related-rules"></a>相關的規則
+## <a name="related-rules"></a>相關規則
 
-[CA2115:呼叫 GC。KeepAlive 時使用原生資源](../code-quality/ca2115-call-gc-keepalive-when-using-native-resources.md)
+[CA2115呼叫 GC。使用原生資源時的 KeepAlive](../code-quality/ca2115-call-gc-keepalive-when-using-native-resources.md)
 
-[CA1816:呼叫 GC。SuppressFinalize 正確](../code-quality/ca1816-call-gc-suppressfinalize-correctly.md)
+[CA1816呼叫 GC。Gc.suppressfinalize 正確](../code-quality/ca1816-call-gc-suppressfinalize-correctly.md)
 
 [CA1049:擁有原生資源的類型應該是可處置的](../code-quality/ca1049-types-that-own-native-resources-should-be-disposable.md)
 

@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 813f06f55b6ae8f03a8d5a8e452ca05c4fe2054c
-ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
+ms.openlocfilehash: ceda2dd4e85c8db5b66ef753a748977204b8caab
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/05/2019
-ms.locfileid: "67586845"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71211209"
 ---
 # <a name="frequently-asked-questions-for-snapshot-debugging-in-visual-studio"></a>Visual Studio 中快照集偵錯的常見問題集
 
@@ -49,44 +49,44 @@ ms.locfileid: "67586845"
 
 可透過下列步驟，在 App Service 上解除安裝快照偵錯工具網站延伸模組：
 
-1. 關閉您的 App Service 透過 Visual Studio 中的 [雲端總管] 或 Azure 入口網站。
-1. 瀏覽至您 App Service 的 Kudu 網站 (也就是 yourappservice.**scm**.azurewebsites.net)，並瀏覽至 [網站延伸模組]  。
+1. 請透過 Visual Studio 或 Azure 入口網站中的 Cloud Explorer 關閉您的 App Service。
+1. 瀏覽至您 App Service 的 Kudu 網站 (也就是 yourappservice.**scm**.azurewebsites.net)，並瀏覽至 [網站延伸模組]。
 1. 按一下快照偵錯工具網站延伸模組上的 X 即可將它移除。
 
 #### <a name="why-are-ports-opened-during-a-snapshot-debugger-session"></a>為什麼會在快照偵錯工具工作階段期間開啟連接埠？
 
 快照偵錯工具必須開啟一組連接埠，才能針對在 Azure 中建立的快照集進行偵錯，這些和進行遠端偵錯時所需的連接埠相同。 [您可以在此處找到連接埠清單](../debugger/remote-debugger-port-assignments.md)。
 
-#### <a name="how-do-i-disable-the-remote-debugger-extension"></a>如何停用遠端偵錯工具擴充功能？
+#### <a name="how-do-i-disable-the-remote-debugger-extension"></a>如何? 停用遠端偵錯程式擴充功能嗎？
 
-應用程式服務：
-1. 停用遠端偵錯工具延伸模組，透過 Azure 入口網站，以您的 App Service。
-2. Azure 入口網站 > 您的應用程式服務資源刀鋒視窗 >*應用程式設定*
-3. 瀏覽至*偵錯*區段，然後按一下*Off*按鈕*遠端偵錯*。
+針對應用程式服務：
+1. 透過 App Service 的 Azure 入口網站停用遠端偵錯程式延伸模組。
+2. Azure 入口網站 > 您的應用程式服務資源分頁 >*應用程式設定*
+3. 流覽至 [*調試*程式] 區段，然後按一下 [*關閉*] 按鈕進行*遠端偵錯*。
 
-供 AKS 使用：
-1. 更新您的 Dockerfile，以移除對應的章節[上的 Docker 映像 Visual Studio 的快照集偵錯工具](https://github.com/Microsoft/vssnapshotdebugger-docker)。
-2. 重建並重新部署修改過的 Docker 映像。
+針對 AKS：
+1. 更新您的 Dockerfile，以移除與[Docker 映射上的 Visual Studio 快照偵錯工具](https://github.com/Microsoft/vssnapshotdebugger-docker)對應的區段。
+2. 重建並重新部署已修改的 Docker 映射。
 
-虛擬機器/虛擬機器擴展集移除遠端偵錯工具擴充功能中，憑證 KeyVaults 和輸入 NAT 集區，如下所示：
+針對虛擬機器/虛擬機器擴展集，請移除遠端偵錯程式擴充功能、憑證、KeyVaults 和輸入 NAT 集區，如下所示：
 
-1. 移除遠端偵錯工具擴充功能
+1. 移除遠端偵錯程式延伸模組
 
-   有數種方式來停用遠端偵錯工具的虛擬機器和虛擬機器擴展集：
+   有數種方式可以停用虛擬機器和虛擬機器擴展集的遠端偵錯程式：
 
-      - 停用透過 Cloud Explorer 中的遠端偵錯工具
+      - 透過 Cloud Explorer 停用遠端偵錯程式
 
-         - Cloud Explorer > 您的虛擬機器資源 > 停用偵錯 （停用偵錯不存在的虛擬機器擴展集上雲端總管）。
+         - Cloud Explorer > 您的虛擬機器資源 > 停用偵錯工具（Cloud Explorer 上的虛擬機器擴展集不存在停用偵錯工具）。
 
-      - 停用遠端偵錯工具使用 PowerShell 指令碼/指令程式
+      - 使用 PowerShell 腳本/Cmdlet 停用遠端偵錯程式
 
-         針對虛擬機器：
+         針對 [虛擬機器]：
 
          ```powershell
          Remove-AzVMExtension -ResourceGroupName $rgName -VMName $vmName -Name Microsoft.VisualStudio.Azure.RemoteDebug.VSRemoteDebugger
          ```
 
-         虛擬機器擴展集：
+         針對虛擬機器擴展集：
 
          ```powershell
          $vmss = Get-AzVmss -ResourceGroupName $rgName -VMScaleSetName $vmssName
@@ -94,20 +94,20 @@ ms.locfileid: "67586845"
          Remove-AzVmssExtension -VirtualMachineScaleSet $vmss -Name $extension
          ```
 
-      - 停用遠端偵錯工具在 Azure 入口網站
-         - Azure 入口網站 > 虛擬機器/虛擬機器調整規模設定資源刀鋒視窗 > 延伸模組
-         - 解除安裝 Microsoft.VisualStudio.Azure.RemoteDebug.VSRemoteDebugger 延伸模組
+      - 透過 Azure 入口網站停用遠端偵錯程式
+         - Azure 入口網站 > 您的虛擬機器/虛擬機器擴展集資源 blade > 擴充功能
+         - 卸載 VisualStudio. Microsoft.visualstudio.windowsazure.remotedebug. VSRemoteDebugger 擴充功能
 
          > [!NOTE]
-         > 虛擬機器擴展集-入口網站不允許移除 DebuggerListener 連接埠。 您必須使用 Azure PowerShell。 如需詳細資訊，請參閱下方。
+         > 虛擬機器擴展集-入口網站不允許移除 DebuggerListener 埠。 您將需要使用 Azure PowerShell。 如需詳細資訊，請參閱下方。
 
-2. 移除憑證和 Azure 金鑰保存庫
+2. 移除憑證和 Azure KeyVault
 
-   安裝時虛擬機器或虛擬機器擴展集的遠端偵錯工具擴充功能，會建立用戶端和伺服器的憑證，驗證與用戶端與 Azure 虛擬機器/虛擬機器擴展集資源。
+   為虛擬機器或虛擬機器擴展集安裝遠端偵錯程式擴充功能時，會建立用戶端和伺服器憑證，以使用 Azure 虛擬機器/虛擬機器擴展集資源來驗證 VS 用戶端。
 
    - 用戶端憑證
 
-      此憑證是自我簽署的憑證位於 Cert: / CurrentUser/My /
+      此憑證是位於 Cert：/CurrentUser/My/的自我簽署憑證
 
       ```
       Thumbprint                                Subject
@@ -116,7 +116,7 @@ ms.locfileid: "67586845"
       1234123412341234123412341234123412341234  CN=ResourceName
       ```
 
-      從電腦移除此憑證的其中一個方法是透過 PowerShell
+      從您的電腦移除此憑證的其中一種方式是透過 PowerShell
 
       ```powershell
       $ResourceName = 'ResourceName' # from above
@@ -124,27 +124,27 @@ ms.locfileid: "67586845"
       ```
 
    - 伺服器憑證
-      - 對應的伺服器憑證指紋會部署至 Azure key Vault 的祕密。 VS 會嘗試尋找] 或 [使用前置詞 MSVSAZ * 對應到虛擬機器的區域中建立金鑰保存庫，或虛擬機器擴展集資源。 所有虛擬機器或虛擬機器都擴展集部署到該區域的資源，因此會共用相同的金鑰保存庫。
-      - 若要刪除的伺服器憑證指紋祕密，請移至 Azure 入口網站並尋找 MSVSAZ * 金鑰保存庫相同的區域中裝載您的資源。 刪除密碼應該標示為 `remotedebugcert<<ResourceName>>`
-      - 您也必須從您的資源，透過 PowerShell 刪除伺服器密碼。
+      - 對應的伺服器憑證指紋會部署為 Azure KeyVault 的秘密。 VS 會嘗試在對應至虛擬機器或虛擬機器擴展集資源的區域中，尋找或建立具有前置詞 MSVSAZ * 的 KeyVault。 因此，所有部署到該區域的虛擬機器或虛擬機器擴展集資源，將會共用相同的 KeyVault。
+      - 若要刪除伺服器憑證指紋密碼，請移至 Azure 入口網站，並在裝載資源的相同區域中尋找 MSVSAZ * KeyVault。 刪除應該加上標籤的密碼`remotedebugcert<<ResourceName>>`
+      - 您也必須透過 PowerShell 從您的資源刪除伺服器密碼。
 
-      虛擬機器：
+      針對虛擬機器：
 
       ```powershell
       $vm.OSProfile.Secrets[0].VaultCertificates.Clear()
       Update-AzVM -ResourceGroupName $rgName -VM $vm
       ```
 
-      虛擬機器擴展集：
+      針對虛擬機器擴展集：
 
       ```powershell
       $vmss.VirtualMachineProfile.OsProfile.Secrets[0].VaultCertificates.Clear()
       Update-AzVmss -ResourceGroupName $rgName -VMScaleSetName $vmssName -VirtualMachineScaleSet $vmss
       ```
 
-3. 移除所有 DebuggerListener 輸入 NAT 集區 （虛擬機器擴展集只）
+3. 移除所有 DebuggerListener 的輸入 NAT 集區（僅限虛擬機器擴展集）
 
-   遠端偵錯工具導入了 DebuggerListener 傳入 NAT 集區，可套用至擴展集的負載平衡器。
+   遠端偵錯程式會引進 DebuggerListener 的系結 NAT 集區，並將其套用至您的擴展集負載平衡器。
 
    ```powershell
    $inboundNatPools = $vmss.VirtualMachineProfile.NetworkProfile.NetworkInterfaceConfigurations.IpConfigurations.LoadBalancerInboundNatPools
@@ -158,30 +158,30 @@ ms.locfileid: "67586845"
    }
    ```
 
-#### <a name="how-do-i-disable-snapshot-debugger"></a>如何停用快照集偵錯工具？
+#### <a name="how-do-i-disable-snapshot-debugger"></a>如何? 停用快照偵錯工具嗎？
 
-適用於 App Service:
-1. 針對您的 App Service，快照集偵錯工具停用透過 Azure 入口網站。
-2. Azure 入口網站 > 您的應用程式服務資源刀鋒視窗 >*應用程式設定*
-3. 刪除 Azure 入口網站中的下列應用程式設定，並儲存變更。
+針對 App Service：
+1. 透過 App Service 的 Azure 入口網站停用快照偵錯工具。
+2. Azure 入口網站 > 您的應用程式服務資源分頁 >*應用程式設定*
+3. 刪除 Azure 入口網站中的下列應用程式設定，並儲存您的變更。
    - INSTRUMENTATIONENGINE_EXTENSION_VERSION
    - SNAPSHOTDEBUGGER_EXTENSION_VERSION
 
    > [!WARNING]
-   > 應用程式設定的任何變更將會起始應用程式重新啟動。 如需有關應用程式設定的詳細資訊，請參閱[在 Azure 入口網站中設定 App Service 應用程式](/azure/app-service/web-sites-configure)。
+   > 對應用程式設定所做的任何變更都會起始應用程式重新開機。 如需應用程式設定的詳細資訊，請參閱[Azure 入口網站中的設定 App Service 應用程式](/azure/app-service/web-sites-configure)。
 
-供 AKS 使用：
-1. 更新您的 Dockerfile，以移除對應的章節[上的 Docker 映像 Visual Studio 的快照集偵錯工具](https://github.com/Microsoft/vssnapshotdebugger-docker)。
-2. 重建並重新部署修改過的 Docker 映像。
+針對 AKS：
+1. 更新您的 Dockerfile，以移除與[Docker 映射上的 Visual Studio 快照偵錯工具](https://github.com/Microsoft/vssnapshotdebugger-docker)對應的區段。
+2. 重建並重新部署已修改的 Docker 映射。
 
-虛擬機器/虛擬機器擴展集：
+針對虛擬機器/虛擬機器擴展集：
 
-有數種方式來停用快照集偵錯工具：
+停用快照偵錯工具的方法有好幾種：
 - Cloud Explorer > 您的虛擬機器/虛擬機器擴展集資源 > 停用診斷
 
-- Azure 入口網站 > 虛擬機器/虛擬機器擴展集資源刀鋒視窗 > 擴充功能 > 解除安裝 Microsoft.Insights.VMDiagnosticsSettings 延伸模組
+- Azure 入口網站 > 您的虛擬機器/虛擬機器擴展集資源 blade > 延伸模組 > 卸載 VMDiagnosticsSettings 擴充功能
 
-- PowerShell Cmdlet，從[Az PowerShell](https://docs.microsoft.com/powershell/azure/overview)
+- 來自[Az powershell](https://docs.microsoft.com/powershell/azure/overview)的 powershell Cmdlet
 
    虛擬機器：
 
@@ -198,8 +198,8 @@ ms.locfileid: "67586845"
 
 ## <a name="see-also"></a>另請參閱
 
-- [Visual Studio 偵錯](../debugger/index.md)
-- [使用快照集偵錯工具的即時 ASP.NET 應用程式進行偵錯](../debugger/debug-live-azure-applications.md)
-- [偵錯即時 ASP.NET Azure 虛擬 Machines\Virtual 機器擴展集使用快照集偵錯工具](../debugger/debug-live-azure-virtual-machines.md)
-- [偵錯即時 ASP.NET Azure Kubernetes 中使用快照集偵錯工具](../debugger/debug-live-azure-kubernetes.md)
-- [疑難排解和已知問題的快照集偵錯](../debugger/debug-live-azure-apps-troubleshooting.md)
+- [Visual Studio 偵錯](../debugger/index.yml)
+- [使用快照偵錯工具來進行即時 ASP.NET 應用程式的 Debug](../debugger/debug-live-azure-applications.md)
+- [使用快照偵錯工具來進行即時 ASP.NET Azure 虛擬 Machines\Virtual 機擴展集的調試](../debugger/debug-live-azure-virtual-machines.md)
+- [使用快照偵錯工具進行即時 ASP.NET Azure Kubernetes 的調試](../debugger/debug-live-azure-kubernetes.md)
+- [快照集偵錯工具的疑難排解和已知問題](../debugger/debug-live-azure-apps-troubleshooting.md)

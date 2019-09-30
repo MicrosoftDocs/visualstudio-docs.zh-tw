@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e4e068fee014d767b7afcdf8183ac6611b299f36
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 3f359f7aa24ada0edf2c98a7d527ed715df85086
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68921579"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71233914"
 ---
 # <a name="ca1726-use-preferred-terms"></a>CA1726:建議使用慣用詞彙
 
@@ -27,11 +27,11 @@ ms.locfileid: "68921579"
 |TypeName|UsePreferredTerms|
 |CheckId|CA1726|
 |分類|Microsoft.Naming|
-|中斷變更|中斷-在元件上引發時<br /><br /> 不中斷-在類型參數上引發時|
+|重大變更|中斷-在元件上引發時<br /><br /> 不中斷-在類型參數上引發時|
 
 ## <a name="cause"></a>原因
 
-外部可見的識別項名稱包含有替代慣用詞彙存在的詞彙。 或者, 名稱包含詞彙旗標或旗標。
+外部可見的識別項名稱包含有替代慣用詞彙存在的詞彙。 或者，名稱包含詞彙旗標或旗標。
 
 ## <a name="rule-description"></a>規則描述
 
@@ -65,10 +65,10 @@ ms.locfileid: "68921579"
 |`Writeable`|`Writable`|
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
-若要修正此規則的違規情形, 請以慣用的替代詞彙取代詞彙。
+若要修正此規則的違規情形，請以慣用的替代詞彙取代詞彙。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
-只有當識別碼的名稱是刻意的, 而且特別與原始詞彙 (而不是慣用的字詞) 相關聯時, 才會隱藏此規則的警告。
+只有當識別碼的名稱是刻意的，而且特別與原始詞彙（而不是慣用的字詞）相關聯時，才會隱藏此規則的警告。
 
 ## <a name="related-rules"></a>相關規則
 [命名警告](../code-quality/naming-warnings.md)

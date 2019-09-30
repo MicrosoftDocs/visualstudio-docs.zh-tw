@@ -10,12 +10,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e8c8c58a01b9527df472907c8b55a9d175dd91d
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 4965c9df3c2256511b8e44de8d388a9155d0d8f9
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65841599"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71237382"
 ---
 # <a name="ca3004-review-code-for-information-disclosure-vulnerabilities"></a>CA3004：檢閱程式碼是否有資訊洩漏弱點
 
@@ -24,31 +24,31 @@ ms.locfileid: "65841599"
 |TypeName|ReviewCodeForInformationDisclosureVulnerabilities|
 |CheckId|CA3004|
 |分類|Microsoft.Security|
-|中斷變更|非中斷|
+|重大變更|不中斷|
 
 ## <a name="cause"></a>原因
 
-例外狀況的訊息、 堆疊追蹤或字串表示法會到達 web 輸出。
+例外狀況的訊息、堆疊追蹤或字串表示達到 web 輸出。
 
 ## <a name="rule-description"></a>規則描述
 
-例外狀況資訊洩漏讓攻擊者深入了解您的應用程式，可協助攻擊者的內部資訊找到其他的弱點惡意探索。
+公開例外狀況資訊可讓攻擊者深入瞭解應用程式的內部，以協助攻擊者找出其他弱點來入侵。
 
-此規則會嘗試尋找例外狀況訊息、 堆疊追蹤或要輸出至 HTTP 回應的字串表示。
-
-> [!NOTE]
-> 此規則無法追蹤多個組件的資料。 比方說，如果一個組件會攔截到例外狀況，並再將它傳遞給輸出例外狀況的另一個組件，此規則將不會產生警告。
+此規則會嘗試尋找要輸出至 HTTP 回應的例外狀況訊息、堆疊追蹤或字串表示。
 
 > [!NOTE]
-> 沒有可設定的限制，深度此規則會分析資料流不同的方法呼叫。 請參閱[分析器組態](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis)如何 EditorConfig 檔案中設定限制。
+> 此規則無法跨元件追蹤資料。 例如，如果某個元件攔截例外狀況，然後將它傳遞給另一個輸出例外狀況的元件，此規則就不會產生警告。
+
+> [!NOTE]
+> 此規則會在方法呼叫中分析資料流的深度有一個可設定的限制。 如需如何在 EditorConfig 檔中設定限制的詳細說明，請參閱[分析器](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis)設定。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
 
-不會輸出至 HTTP 回應的例外狀況資訊。 相反地，提供一般錯誤訊息。 請參閱[OWASP 的錯誤處理頁面](https://www.owasp.org/index.php/Error_Handling)如需詳細指引。
+不要將例外狀況資訊輸出至 HTTP 回應。 相反地，請提供一般錯誤訊息。 如需詳細指引，請參閱[OWASP 的錯誤處理頁面](https://www.owasp.org/index.php/Error_Handling)。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
 
-如果您知道您的 web 輸出是您的應用程式信任界限內，而且永遠不會公開之外，可以隱藏這個警告。 這個狀況非常罕見。 請考量您的應用程式信任界限以及資料流可能會隨著時間改變。
+如果您知道 web 輸出是在應用程式的信任界限內，而且永遠不會公開于外，就可以隱藏這個警告。 這種情況很罕見。 請注意，應用程式的信任界限和資料流程可能會隨著時間而改變。
 
 ## <a name="pseudo-code-examples"></a>虛擬程式碼範例
 

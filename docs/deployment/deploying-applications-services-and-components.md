@@ -23,16 +23,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f494674acdf8b272029ad02a762897b379212ae4
-ms.sourcegitcommit: 9cfd3ef6c65f671a26322320818212a1ed5955fe
-ms.translationtype: HT
+ms.openlocfilehash: 02e8beae03dc2828d81b80813325300fe31b3cea
+ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68533358"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71128149"
 ---
 # <a name="first-look-at-deployment-in-visual-studio"></a>Visual Studio 中的部署簡介
 
-透過部署應用程式、服務或元件，就可以將它散發到其他電腦、裝置、伺服器或雲端上進行安裝。 請在 Visual Studio 中針對您需要的部署類型選擇適當的方法。 (許多應用程式類型支援此處未描述的其他部署工具，例如命令列部署或 NuGet 等)。
+透過部署應用程式、服務或元件，就可以將它散發到其他電腦、裝置、伺服器或雲端上進行安裝。 請在 Visual Studio 中針對您需要的部署類型選擇適當的方法。 （許多應用程式類型都支援其他部署工具，例如此處未描述的命令列部署）。
 
 請參閱快速入門和教學課程以取得逐步部署指示。 如需部署選項的概觀，請參閱[適合我的發行選項為何？](deploying-applications-services-and-components-resources.md#what-publishing-options-are-right-for-me)。
 
@@ -40,11 +40,11 @@ ms.locfileid: "68533358"
 
 部署至本機資料夾通常用於測試，或是用來開始使用另一個工具進行最終部署的分段部署。
 
-- **ASP.NET**、**ASP.NET Core**、**Node.js**、**Python** 及 .**NET Core**：使用發行工具部署至本機資料夾。 確切的可用選項取決於您的應用程式類型。 在 [方案總管] 中，以滑鼠右鍵按一下專案，然後選擇 [發行]  (如果您之前尚未設定任何發佈設定檔，則必須按一下 [建立新設定檔]  )。接下來，選擇 [資料夾]  。 如需詳細資訊，請參閱[部署至本機資料夾](quickstart-deploy-to-local-folder.md)。
+- **ASP.NET**、**ASP.NET Core**、**Node.js**、**Python** 及 .**NET Core**：使用發行工具部署至本機資料夾。 確切的可用選項取決於您的應用程式類型。 在 [方案總管] 中，以滑鼠右鍵按一下專案，然後選擇 [發行] (如果您之前尚未設定任何發佈設定檔，則必須按一下 [建立新設定檔])。接下來，選擇 [資料夾]。 如需詳細資訊，請參閱[部署至本機資料夾](quickstart-deploy-to-local-folder.md)。
 
     ![選擇 [發行]](../deployment/media/quickstart-publish.png)
 
-- **Windows 傳統型**：使用 ClickOnce 部署可以將 Windows 傳統型應用程式發行至資料夾。 使用者只要按一下，就可以安裝應用程式。 如需詳細資訊，請參閱[使用 ClickOnce 部署傳統型應用程式](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) (C# 和 Visual Basic)。 針對 C++/CLR，請參閱[使用 ClickOnce 部署原生應用程式](/cpp/windows/clickonce-deployment-for-visual-cpp-applications)，針對 C/C++，請參閱[使用安裝專案部署原生應用程式](/cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project)。
+- **Windows 傳統型**：使用 ClickOnce 部署可以將 Windows 傳統型應用程式發行至資料夾。 使用者只要按一下，就可以安裝應用程式。 如需詳細資訊，請參閱[使用 ClickOnce 部署傳統型應用程式](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) (C# 和 Visual Basic)。 針對C++/cli，請參閱[使用 ClickOnce 部署原生應用程式](/cpp/windows/clickonce-deployment-for-visual-cpp-applications)，若為C++C/，請參閱[使用安裝專案部署原生應用](/cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project)程式。
 
 ## <a name="publish-to-azure"></a>發佈至 Azure
 
@@ -52,11 +52,11 @@ ms.locfileid: "68533358"
 
   - 針對連續 (或自動) 部署應用程式，使用 Azure DevOps 與 [Azure Pipelines](https://docs.microsoft.com/azure/devops/pipelines/get-started-yaml?view=azdevops)。
 
-  - 針對一次 (或手動) 部署應用程式，請使用 Visual Studio 中的 [發行]  工具。
+  - 針對一次 (或手動) 部署應用程式，請使用 Visual Studio 中的 [發行] 工具。
 
-  針對提供伺服器自訂組態的部署，您也可以使用 [發行]  工具將應用程式部署至 Azure 虛擬機器。
+  針對提供伺服器自訂組態的部署，您也可以使用 [發行] 工具將應用程式部署至 Azure 虛擬機器。
 
-  若要使用 [發行]  工具，以滑鼠右鍵按一下 [方案總管] 中的專案，然後選擇 [發行]  。 (如果您之前已設定任何發行設定檔，則必須按一下 [建立新設定檔]  )。在 [發行] 對話方塊中，選擇 [App Service]  或 [Azure 虛擬機器]  ，然後遵循設定步驟。
+  若要使用 [發行] 工具，以滑鼠右鍵按一下 [方案總管] 中的專案，然後選擇 [發行]。 (如果您之前已設定任何發行設定檔，則必須按一下 [建立新設定檔])。在 [發行] 對話方塊中，選擇 [App Service] 或 [Azure 虛擬機器]，然後遵循設定步驟。
 
   ![選擇 [Azure App Service]](../deployment/media/quickstart-publish-azure.png "選擇 [Azure App Service]")
 
@@ -75,7 +75,7 @@ ms.locfileid: "68533358"
 
 - **ASP.NET**、**ASP.NET Core**、**Node.js** 及 **Python**：您可以使用發行工具，來利用 FTP 或 Web Deploy 部署至網站。 如需詳細資訊，請參閱[部署至網站](quickstart-deploy-to-a-web-site.md)。
 
-    在方案總管中，以滑鼠右鍵按一下專案，然後選擇 [發行]  。 (如果您之前已設定任何發行設定檔，則必須按一下 [建立新設定檔]  )。在發行工具中，選擇您想要的選項並遵循設定步驟。
+    在方案總管中，以滑鼠右鍵按一下專案，然後選擇 [發行]。 (如果您之前已設定任何發行設定檔，則必須按一下 [建立新設定檔])。在發行工具中，選擇您想要的選項並遵循設定步驟。
 
     ![選擇 [IIS、FTP 等等]。](../deployment/media/quickstart-publish-iis-ftp.png)
 
@@ -83,7 +83,7 @@ ms.locfileid: "68533358"
 
     您也可以使用許多其他方式來部署 ASP.NET 應用程式和服務。 如需詳細資訊，請參閱[部署 ASP.NET Web 應用程式和服務](http://www.asp.net/aspnet/overview/deployment)。
 
-- **Windows 傳統型**：使用 ClickOnce 部署可以將 Windows 傳統型應用程式發行至 Web 伺服器或網路檔案共用。 使用者只要按一下，就可以安裝應用程式。 如需詳細資訊，請參閱[使用 ClickOnce 部署傳統型應用程式](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) (C# 和 Visual Basic)。 針對 C++/CLR，請參閱[使用 ClickOnce 部署原生應用程式](/cpp/windows/clickonce-deployment-for-visual-cpp-applications)，針對 C/C++，請參閱[使用安裝專案部署原生應用程式](/cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project)。
+- **Windows 傳統型**：使用 ClickOnce 部署可以將 Windows 傳統型應用程式發行至 Web 伺服器或網路檔案共用。 使用者只要按一下，就可以安裝應用程式。 如需詳細資訊，請參閱[使用 ClickOnce 部署傳統型應用程式](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) (C# 和 Visual Basic)。 針對C++/cli，請參閱[使用 ClickOnce 部署原生應用程式](/cpp/windows/clickonce-deployment-for-visual-cpp-applications)，若為C++C/，請參閱[使用安裝專案部署原生應用](/cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project)程式。
 
 ## <a name="publish-to-microsoft-store"></a>發行至 Microsoft Store
 
@@ -93,9 +93,16 @@ ms.locfileid: "68533358"
 
     ![建立應用程式套件](../deployment/media/feature-tour-create-app-package.jpg)
 
-- **Windows 桌面**：從 Visual Studio 2017 15.4 版開始，您可以使用傳統型橋接器部署至 Microsoft Store。 若要這樣做，請先建立 Windows 應用程式封裝專案。 如需詳細資訊，請參閱[為 Microsoft Store 封裝傳統型應用程式 (傳統型橋接器)](/windows/uwp/porting/desktop-to-uwp-packaging-dot-net)。
+- **Windows 桌面**：從 Visual Studio 2017 15.4 版開始，您可以部署到 Microsoft Store。 若要這樣做，請先建立 Windows 應用程式封裝專案。 如需詳細資訊，請參閱[封裝適用于 Microsoft Store 的桌面應用程式](/windows/msix/desktop/desktop-to-uwp-packaging-dot-net)。
 
-    ![傳統型橋接器](../deployment/media/feature-tour-desktop-bridge.png)
+    ![封裝桌面應用程式](../deployment/media/feature-tour-desktop-bridge.png)
+
+## <a name="deploy-net-packages-to-nugetorg"></a>將 .NET 套件部署到 NuGet.org
+
+若要將套件組合程式碼部署到包含 已編譯程式碼 (編譯為 DLL) 與取用這些套件之專案中需要之內容的 "packages"，您可以使用 Visual Studio 來建立 NuGet 套件與 CLI 工具來發出最終部署命令。
+
+- [建立及發行 .NET Standard 套件](/nuget/quickstart/create-and-publish-a-package-using-visual-studio)
+- [建立及發行 .NET Framework 套件](/nuget/quickstart/create-and-publish-a-package-using-visual-studio-net-framework)
 
 ## <a name="deploy-to-a-device-uwp"></a>部署至裝置 (UWP)
 

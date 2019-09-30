@@ -1,5 +1,5 @@
 ---
-title: 分析 CPU 使用量資料 (受控碼)
+title: 分析 CPU 使用量資料（C#，Visual Basic）
 description: 在 C++ 和 Visual Basic 中使用 CPU 使用量診斷工具測量應用程式效能
 ms.custom: mvc
 ms.date: 08/06/2018
@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 05dbbf5bc6e13b36e5918a880d0a767968a78f30
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
-ms.translationtype: HT
+ms.openlocfilehash: 7d13a97c3fb228cb72040313c98b70e14fc44099
+ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65703861"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71128188"
 ---
-# <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-managed-code"></a>快速入門：在 Visual Studio 中分析 CPU 使用量資料 (受控碼)
+# <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-c-visual-basic"></a>快速入門：分析 Visual Studio （C#，Visual Basic）中的 CPU 使用量資料
 
 Visual Studio 提供許多功能強大的功能，可協助您分析應用程式中的效能問題。 本主題提供了解一些基本功能的快速方法。 在這裡，我們會查看工具，找出因高 CPU 使用量而造成的效能瓶頸。 診斷工具可用於 Visual Studio 中的 .NET 開發 (包括 ASP.NET) 和原生/C++ 開發。
 
@@ -237,5 +237,5 @@ Windows 8 及更新版本必須執行附有偵錯工具的分析工具 ([診斷�
 
 ## <a name="see-also"></a>另請參閱
 
-- [Visual Studio 中的分析](../profiling/index.md)
+- [Visual Studio 中的分析](../profiling/index.yml)
 - [初步認識分析工具](../profiling/profiling-feature-tour.md)

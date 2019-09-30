@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 47a2ad3b64055584551a63a2333e29286783d8cf
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 5f0aa23ff93e193ee06509c1cb635404ec827793
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68921365"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71233355"
 ---
 # <a name="ca1823-avoid-unused-private-fields"></a>CA1823:避免包含未使用的私用欄位
 
@@ -28,16 +28,16 @@ ms.locfileid: "68921365"
 |TypeName|AvoidUnusedPrivateFields|
 |CheckId|CA1823|
 |分類|Microsoft.Performance|
-|中斷變更|不中斷|
+|重大變更|不中斷|
 
 ## <a name="cause"></a>原因
-當程式碼中的私用欄位存在, 但沒有任何程式碼路徑使用時, 就會回報此規則。
+當程式碼中的私用欄位存在，但沒有任何程式碼路徑使用時，就會回報此規則。
 
 ## <a name="rule-description"></a>規則描述
 偵測到似乎不能在組件內存取的私用欄位。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
-若要修正此規則的違規情形, 請移除欄位或加入使用它的程式碼。
+若要修正此規則的違規情形，請移除欄位或加入使用它的程式碼。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
 您可以放心地隱藏此規則的警告。

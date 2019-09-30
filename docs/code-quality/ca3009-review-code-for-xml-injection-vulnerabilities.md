@@ -10,12 +10,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f0b0ba39c8edee9b2b8df608b47a00e6353538f
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 37ba7e8664c6fa24e302dbebd38643a0c451114c
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65841073"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71237250"
 ---
 # <a name="ca3009-review-code-for-xml-injection-vulnerabilities"></a>CA3009：檢閱程式碼是否有 XML 插入式攻擊弱點
 
@@ -24,33 +24,33 @@ ms.locfileid: "65841073"
 |TypeName|ReviewCodeForXmlInjectionVulnerabilities|
 |CheckId|CA3009|
 |分類|Microsoft.Security|
-|中斷變更|非中斷|
+|重大變更|不中斷|
 
 ## <a name="cause"></a>原因
 
-可能不受信任的 HTTP 要求輸入連至原始的 XML 輸出。
+可能未受信任的 HTTP 要求輸入會到達原始 XML 輸出。
 
 ## <a name="rule-description"></a>規則描述
 
-當使用不受信任的輸入，留意 XML 插入式攻擊。 攻擊者可以使用 XML 資料隱碼攻擊，將特殊字元插入 XML 文件，使得文件無效 XML。 或者，攻擊者可能遭到惡意插入他們所選擇的 XML 節點。
+使用不受信任的輸入時，請留意 XML 插入式攻擊。 攻擊者可以使用 XML 插入，將特殊字元插入 XML 檔中，使檔成為不正確 XML。 或者，攻擊者可能會惡意地插入自己選擇的 XML 節點。
 
-此規則會嘗試尋找達到原始資料的 XML 寫入 HTTP 要求中的輸入。
-
-> [!NOTE]
-> 此規則無法追蹤多個組件的資料。 例如，如果一個組件會讀取 HTTP 要求輸入，然後將它傳遞給寫入原始 XML 的另一個組件這項規則將不會產生警告。
+此規則會嘗試從 HTTP 要求尋找到達原始 XML 寫入的輸入。
 
 > [!NOTE]
-> 沒有可設定的限制，深度此規則會分析資料流不同的方法呼叫。 請參閱[分析器組態](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis)如何 EditorConfig 檔案中設定限制。
+> 此規則無法跨元件追蹤資料。 例如，如果一個元件讀取 HTTP 要求輸入，然後將它傳遞給另一個會寫入原始 XML 的元件，此規則就不會產生警告。
+
+> [!NOTE]
+> 此規則會在方法呼叫中分析資料流的深度有一個可設定的限制。 如需如何在 EditorConfig 檔中設定限制的詳細說明，請參閱[分析器](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis)設定。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
 
-不要撰寫原始 XML。 相反地，使用方法或屬性的 XML 編碼其輸入。
+請勿撰寫原始 XML。 相反地，請使用 XML 編碼其輸入的方法或屬性。
 
-或者，XML 編碼的輸入，才會寫入未經處理的 XML。
+或者，在撰寫原始 XML 之前，先對輸入進行 XML 編碼。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
 
-請勿隱藏這項規則的警告。
+請勿隱藏此規則的警告。
 
 ## <a name="pseudo-code-examples"></a>虛擬程式碼範例
 

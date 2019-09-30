@@ -20,12 +20,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 4833c6e8e1391028fbb034ff96967450d006356a
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
-ms.translationtype: HT
+ms.openlocfilehash: 5d83086720a94c23d0ceb3f07d9398a7d5256f68
+ms.sourcegitcommit: 6993bcb0d2b0067b1b7b7899bfba52c31c70b7e7
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66263734"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71095359"
 ---
 # <a name="install-visual-studio"></a>安裝 Visual Studio
 
@@ -112,7 +112,7 @@ ms.locfileid: "66263734"
 ::: moniker range="vs-2019"
 
  > [!div class="button"]
- > [下載 Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2019)
+ > [下載 Visual Studio](https://visualstudio.microsoft.com/downloads)
 
 ::: moniker-end
 
@@ -236,7 +236,7 @@ ms.locfileid: "66263734"
 
 3. 選取專案類型。
 
-   例如，若要[建置 C++ 應用程式](../ide/getting-started-with-cpp-in-visual-studio.md)，請選擇 [已安裝]，展開 [Visual C++]，然後選擇您要建置的 C++ 專案類型。
+   例如，若要[建置 C++ 應用程式](/cpp/get-started/tutorial-console-cpp)，請選擇 [已安裝]，展開 [Visual C++]，然後選擇您要建置的 C++ 專案類型。
 
    若要[建置 C# 應用程式](../get-started/csharp/tutorial-console.md)，請選擇 [已安裝]，展開 [Visual C#]，然後選擇您要建置的 C# 專案類型。
 

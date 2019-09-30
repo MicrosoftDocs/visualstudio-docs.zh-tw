@@ -4,15 +4,14 @@ description: 開始使用 Unity 和 Visual Studio for Mac
 author: asb3993
 ms.author: amburns
 ms.date: 05/20/2019
-ms.topic: article
 ms.technology: vs-ide-general
 ms.assetid: D07FA43B-9D18-4DFA-8343-CD538FAD84DB
-ms.openlocfilehash: dd69156b1397ba6232d9143f54b0de1ef4506ecc
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: ff8fe1b2b4efe7ff91d3b363c58183be534a1441
+ms.sourcegitcommit: cf8c0fef2b9690595e99ce3802586cdd55fd37c2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68872923"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70108420"
 ---
 # <a name="getting-started-building-games-with-unity-in-visual-studio-for-mac"></a>在 Visual Studio for Mac 中使用 Unity 開始建置遊戲
 

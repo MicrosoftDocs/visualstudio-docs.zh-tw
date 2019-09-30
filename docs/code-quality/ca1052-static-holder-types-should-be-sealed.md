@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: ba54b9f87fe8c8cd8bfdc86f39e3121135241e92
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 757b6b46e0c0892f5eb4c868b15654b29cd51c0e
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69547512"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71235624"
 ---
 # <a name="ca1052-static-holder-types-should-be-static-or-notinheritable"></a>CA1052:靜態預留位置類型應為靜態或 NotInheritable
 
@@ -31,45 +31,45 @@ ms.locfileid: "69547512"
 |-|-|
 |TypeName|StaticHolderTypesAnalyzer|
 |CheckId|CA1052|
-|Category|Microsoft.Design|
-|中斷變更|中斷|
+|分類|Microsoft.Design|
+|重大變更|中斷|
 
 ## <a name="cause"></a>原因
 
-非抽象類別型只包含靜態成員 (不是可能的預設函式), 而且不會使用[static](/dotnet/csharp/language-reference/keywords/static)或[Shared](/dotnet/visual-basic/language-reference/modifiers/shared)修飾詞來宣告。
+非抽象類別型只包含靜態成員（不是可能的預設函式），而且不會使用[static](/dotnet/csharp/language-reference/keywords/static)或[Shared](/dotnet/visual-basic/language-reference/modifiers/shared)修飾詞來宣告。
 
-根據預設, 此規則只會查看外部可見的類型, 但這是[可](#configurability)設定的。
+根據預設，此規則只會查看外部可見的類型，但這是[可](#configurability)設定的。
 
 ## <a name="rule-description"></a>規則描述
 
-規則 CA1052 假設僅包含靜態成員的類型不是為了繼承而設計, 因為該類型不會提供可在衍生類型中覆寫的任何功能。 不想要繼承的類型應該在中`static` C#以修飾詞標記, 以禁止其作為基底類型使用。 此外, 應該移除其預設的函式。 在 Visual Basic 中, 類別應該轉換成[模組](/dotnet/visual-basic/language-reference/statements/module-statement)。
+規則 CA1052 假設僅包含靜態成員的類型不是為了繼承而設計，因為該類型不會提供可在衍生類型中覆寫的任何功能。 不想要繼承的類型應該在中`static` C#以修飾詞標記，以禁止其作為基底類型使用。 此外，應該移除其預設的函式。 在 Visual Basic 中，類別應該轉換成[模組](/dotnet/visual-basic/language-reference/statements/module-statement)。
 
-對於具有基類的抽象類別或類別, 不會引發此規則。 不過, 此規則會針對支援空白介面的類別引發。
+對於具有基類的抽象類別或類別，不會引發此規則。 不過，此規則會針對支援空白介面的類別引發。
 
 > [!NOTE]
-> 在此規則的 FxCop 分析器執行中, 它也包含[規則 CA1053](../code-quality/ca1053-static-holder-types-should-not-have-constructors.md)的功能。
+> 在此規則的 FxCop 分析器執行中，它也包含[規則 CA1053](../code-quality/ca1053-static-holder-types-should-not-have-constructors.md)的功能。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
 
-若要修正此規則的違規, 請將類型標記`static`為, 並移除預設的C#函式 (), 或將它轉換成模組 (Visual Basic)。
+若要修正此規則的違規，請將類型標記`static`為，並移除預設的C#函式（），或將它轉換成模組（Visual Basic）。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
 
-只有當類型設計為要繼承時, 才隱藏此規則的警告。 缺少`static`修飾詞, 會建議型別相當適合做為基底型別。
+只有當類型設計為要繼承時，才隱藏此規則的警告。 缺少`static`修飾詞，會建議型別相當適合做為基底型別。
 
 ## <a name="configurability"></a>可設定性
 
-如果您是從[FxCop 分析器](install-fxcop-analyzers.md)執行此規則 (而不是使用舊版分析), 您可以根據其存取範圍, 設定程式碼基底中的哪些部分來執行此規則。 例如, 若要指定規則只針對非公用 API 介面執行, 請將下列機碼值組新增至專案中的 EditorConfig 檔案:
+如果您是從[FxCop 分析器](install-fxcop-analyzers.md)執行此規則（而不是使用舊版分析），您可以根據其存取範圍，設定程式碼基底中的哪些部分來執行此規則。 例如，若要指定規則只針對非公用 API 介面執行，請將下列機碼值組新增至專案中的 EditorConfig 檔案：
 
 ```ini
 dotnet_code_quality.ca1052.api_surface = private, internal
 ```
 
-您可以只針對此規則、所有規則或此類別中的所有規則 (設計) 設定此選項。 如需詳細資訊, 請參閱[設定 FxCop 分析器](configure-fxcop-analyzers.md)。
+您可以只針對此規則、所有規則或此類別中的所有規則（設計）設定此選項。 如需詳細資訊，請參閱[設定 FxCop 分析器](configure-fxcop-analyzers.md)。
 
 ## <a name="example-of-a-violation"></a>違規的範例
 
-下列範例顯示違反規則的類型:
+下列範例顯示違反規則的類型：
 
 [!code-csharp[FxCop.Design.StaticMembers#1](../code-quality/codesnippet/CSharp/ca1052-static-holder-types-should-be-sealed_1.cs)]
 [!code-vb[FxCop.Design.StaticMembers#1](../code-quality/codesnippet/VisualBasic/ca1052-static-holder-types-should-be-sealed_1.vb)]
@@ -77,7 +77,7 @@ dotnet_code_quality.ca1052.api_surface = private, internal
 
 ## <a name="fix-with-the-static-modifier"></a>使用靜態修飾詞修正
 
-下列範例顯示如何在中`static` C#以修飾詞標記類型, 以修正此規則的違規:
+下列範例顯示如何在中`static` C#以修飾詞標記類型，以修正此規則的違規：
 
 ```csharp
 public static class StaticMembers

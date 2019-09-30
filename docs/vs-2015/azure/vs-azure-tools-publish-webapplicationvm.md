@@ -12,11 +12,11 @@ ms.topic: conceptual
 ms.date: 11/11/2016
 ms.author: ghogen
 ms.openlocfilehash: e35f5decee2a908a9d1075ff3f6365a1d358c7b2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: HT
+ms.sourcegitcommit: dae5dfd626277b58ebd7b21a75757f683f1eacc5
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58941343"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70739314"
 ---
 # <a name="publish-webapplicationvm-windows-powershell-script"></a>Publish-WebApplicationVM (Windows PowerShell 指令碼)
 將 Web 應用程式部署到虛擬機器。 指令碼會在您的 Azure 訂用帳戶中建立所需的資源 (如果它們不存在)。

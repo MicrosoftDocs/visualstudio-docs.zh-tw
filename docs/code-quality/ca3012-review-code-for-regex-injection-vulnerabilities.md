@@ -10,12 +10,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: b66e28804e85b04b1492a20828c42a9b5efd3cf8
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 42808b3961b18a23f594800f9d0782c908c9b1ba
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65841043"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71237183"
 ---
 # <a name="ca3012-review-code-for-regex-injection-vulnerabilities"></a>CA3012：檢閱程式碼是否有 regex 插入式攻擊弱點
 
@@ -24,36 +24,36 @@ ms.locfileid: "65841043"
 |TypeName|ReviewCodeForRegexInjectionVulnerabilities|
 |CheckId|CA3012|
 |分類|Microsoft.Security|
-|中斷變更|非中斷|
+|重大變更|不中斷|
 
 ## <a name="cause"></a>原因
 
-可能不受信任的 HTTP 要求輸入達到規則運算式。
+可能未受信任的 HTTP 要求輸入達到正則運算式。
 
 ## <a name="rule-description"></a>規則描述
 
-當使用不受信任的輸入，留意 regex 資料隱碼攻擊。 攻擊者可以使用 regex 資料隱碼攻擊，惡意修改規則運算式進行比對非預期的結果，regex，或將 regex 會耗用大量的 CPU，因而導致阻絕服務攻擊。
+使用不受信任的輸入時，請注意 RegEx 插入式攻擊。 攻擊者可以使用 RegEx 插入來惡意修改正則運算式，讓 RegEx 符合非預期的結果，或讓 RegEx 耗用過多的 CPU，因而導致阻絕服務攻擊。
 
-此規則會嘗試尋找達到規則運算式的 HTTP 要求中的輸入。
-
-> [!NOTE]
-> 此規則無法追蹤多個組件的資料。 例如，如果一個組件會讀取 HTTP 要求輸入，然後將它傳遞給另一個組件所建立的規則運算式這個規則將不會產生警告。
+此規則會嘗試從 HTTP 要求尋找到達正則運算式的輸入。
 
 > [!NOTE]
-> 沒有可設定的限制，深度此規則會分析資料流不同的方法呼叫。 請參閱[分析器組態](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis)如何 EditorConfig 檔案中設定限制。
+> 此規則無法跨元件追蹤資料。 例如，如果一個元件讀取 HTTP 要求輸入，然後將它傳遞給另一個建立正則運算式的元件，此規則就不會產生警告。
+
+> [!NOTE]
+> 此規則會在方法呼叫中分析資料流的深度有一個可設定的限制。 如需如何在 EditorConfig 檔中設定限制的詳細說明，請參閱[分析器](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis)設定。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
 
-預防 regex 插入式攻擊的一些風險降低方式包括：
+針對 RegEx 插入的一些緩和措施包括：
 
-- 一律使用[比對逾時](/dotnet/standard/base-types/best-practices#use-time-out-values)時使用規則運算式。
-- 請避免使用根據使用者輸入的規則運算式。
-- 使用者輸入的逸出特殊字元，藉由呼叫<xref:System.Text.RegularExpressions.Regex.Escape%2A?displayProperty=fullName>或另一種方法。
-- 允許從使用者輸入的只有非特殊字元。
+- 使用正則運算式時，請一律使用比對[超時](/dotnet/standard/base-types/best-practices#use-time-out-values)。
+- 避免使用以使用者輸入為基礎的正則運算式。
+- 藉由呼叫<xref:System.Text.RegularExpressions.Regex.Escape%2A?displayProperty=fullName>或其他方法，從使用者輸入中避開特殊字元。
+- 僅允許使用者輸入的非特殊字元。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
 
-如果您知道您使用[比對逾時](/dotnet/standard/base-types/best-practices#use-time-out-values)和使用者的輸入是免費的特殊字元，可以隱藏這個警告。
+如果您知道您使用的是比對[超時](/dotnet/standard/base-types/best-practices#use-time-out-values)，而使用者輸入沒有特殊字元，就可以隱藏這個警告。
 
 ## <a name="pseudo-code-examples"></a>虛擬程式碼範例
 

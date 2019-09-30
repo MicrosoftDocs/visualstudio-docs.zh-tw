@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e35641371ebac33c7a89426290927b6045bc4e3e
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+ms.openlocfilehash: 8db5921b7f4ce4722389ca10765f079db10bf04a
+ms.sourcegitcommit: fe212f8960d7882a1b0fdae9e22f008996aacf3c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68924083"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70222685"
 ---
 # <a name="code-snippets-schema-reference"></a>程式碼片段結構描述參考
 
@@ -121,7 +121,7 @@ $selected$ is a great color. I love $selected$.
    |`SQL`|識別 SQL 程式碼片段。|
    |`HTML`|識別 HTML 程式碼片段。|
 
-- **Kind** - _Optional_ 屬性，指定程式碼片段包含的程式碼種類，以及程式碼片段必須插入以供編譯的位置。 值可以是下列其中一項：
+- **類型** - _選擇性_ 屬性，它指定程式碼片段包含的程式碼類型。 值可以是下列其中一項：
 
    |值|說明|
    |-----|-----------|

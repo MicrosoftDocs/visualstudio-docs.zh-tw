@@ -17,12 +17,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 942a9911d0dadbf5f130344735ca9aa504cb71fd
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 85d168e97f422a3965096a334cb2a448406604f9
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68921588"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71233847"
 ---
 # <a name="ca1800-do-not-cast-unnecessarily"></a>CA1800:不要執行不必要的轉換
 
@@ -31,35 +31,35 @@ ms.locfileid: "68921588"
 |TypeName|DoNotCastUnnecessarily|
 |CheckId|CA1800|
 |分類|Microsoft.Performance|
-|中斷變更|不中斷|
+|重大變更|不中斷|
 
 ## <a name="cause"></a>原因
 方法會對其中一個引數或區域變數執行重複的轉換。
 
-如需此規則的完整分析, 必須使用偵錯工具來建立已測試的元件, 且關聯的程式資料庫 (.pdb) 檔案必須可用。
+如需此規則的完整分析，必須使用偵錯工具來建立已測試的元件，且關聯的程式資料庫（.pdb）檔案必須可用。
 
 ## <a name="rule-description"></a>規則描述
-重複轉型會降低效能，尤其是在精簡型態的反覆運算陳述式中執行轉型時。 對於明確的重複轉換作業, 請將轉換的結果儲存在本機變數中, 並使用區域變數, 而不是重複的轉換作業。
+重複轉型會降低效能，尤其是在精簡型態的反覆運算陳述式中執行轉型時。 對於明確的重複轉換作業，請將轉換的結果儲存在本機變數中，並使用區域變數，而不是重複的轉換作業。
 
-C# `as`如果使用運算子來測試轉換是否會在執行實際轉換之前成功,請考慮改為測試運算子的`is`結果。 這會提供相同的功能, 而不需要由`is`運算子執行的隱含轉換作業。 或者, 在C# 7.0 和更新版本中, `is`使用運算子[搭配模式](/dotnet/csharp/language-reference/keywords/is#pattern-matching-with-is)比對來檢查類型轉換, 並在一個步驟中將運算式轉換成該類型的變數。
+C# `as`如果使用運算子來測試轉換是否會在執行實際轉換之前成功，請考慮改為測試運算子的`is`結果。 這會提供相同的功能，而不需要由`is`運算子執行的隱含轉換作業。 或者，在C# 7.0 和更新版本中， `is`使用運算子[搭配模式](/dotnet/csharp/language-reference/keywords/is#pattern-matching-with-is)比對來檢查類型轉換，並在一個步驟中將運算式轉換成該類型的變數。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
-若要修正此規則的違規, 請修改方法執行, 將轉換作業的數目降至最低。
+若要修正此規則的違規，請修改方法執行，將轉換作業的數目降至最低。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
-您可以放心地隱藏此規則的警告, 或完全忽略此規則 (如果效能不是問題)。
+您可以放心地隱藏此規則的警告，或完全忽略此規則（如果效能不是問題）。
 
 ## <a name="examples"></a>範例
-下列範例顯示使用C# `is`運算子來違反規則的方法。 第二種方法會將`is`運算子取代為`as`運算子結果的測試, 以滿足規則, 這會減少從二到一次反覆運算的轉換作業數目。 第三個方法也會使用`is` [搭配模式](/dotnet/csharp/language-reference/keywords/is#pattern-matching-with-is)比對來建立所需類型的變數 (如果類型轉換成功的話), 以滿足規則。
+下列範例顯示使用C# `is`運算子來違反規則的方法。 第二種方法會將`is`運算子取代為`as`運算子結果的測試，以滿足規則，這會減少從二到一次反覆運算的轉換作業數目。 第三個方法也會使用`is` [搭配模式](/dotnet/csharp/language-reference/keywords/is#pattern-matching-with-is)比對來建立所需類型的變數（如果類型轉換成功的話），以滿足規則。
 
 [!code-csharp[FxCop.Performance.UnnecessaryCastsAsIs#1](../code-quality/codesnippet/CSharp/ca1800-do-not-cast-unnecessarily_1.cs)]
 
-下列範例顯示方法, `start_Click`其具有多個重複的明確轉換 (違反規則) 和方法 ( `reset_Click`可在本機變數中儲存轉換來滿足規則)。
+下列範例顯示方法， `start_Click`其具有多個重複的明確轉換（違反規則）和方法（ `reset_Click`可在本機變數中儲存轉換來滿足規則）。
 
 [!code-vb[FxCop.Performance.UnnecessaryCasts#1](../code-quality/codesnippet/VisualBasic/ca1800-do-not-cast-unnecessarily_2.vb)]
 [!code-csharp[FxCop.Performance.UnnecessaryCasts#1](../code-quality/codesnippet/CSharp/ca1800-do-not-cast-unnecessarily_2.cs)]
 
 ## <a name="see-also"></a>另請參閱
 
-- [as (C#參考)](/dotnet/csharp/language-reference/keywords/as)
-- [is (C# reference)](/dotnet/csharp/language-reference/keywords/is)
+- [as （C#參考）](/dotnet/csharp/language-reference/keywords/as)
+- [is （C# reference）](/dotnet/csharp/language-reference/keywords/is)

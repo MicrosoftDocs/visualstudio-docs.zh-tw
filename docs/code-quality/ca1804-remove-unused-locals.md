@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: bd3e9c56bb02995d9b99b57bb2799ab69b51a42d
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 0a83d0afffc50c7697fad98c4dc49e31770d63d4
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68921572"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71233744"
 ---
 # <a name="ca1804-remove-unused-locals"></a>CA1804:必須移除未使用的區域變數
 
@@ -31,23 +31,23 @@ ms.locfileid: "68921572"
 |TypeName|RemoveUnusedLocals|
 |CheckId|CA1804|
 |分類|Microsoft.Performance|
-|中斷變更|不中斷|
+|重大變更|不中斷|
 
 ## <a name="cause"></a>原因
-方法會宣告區域變數, 但不會使用變數, 但可能是指派語句的收件者。 針對此規則的分析, 必須以偵錯工具建立已測試的元件, 且關聯的程式資料庫 (.pdb) 檔案必須可供使用。
+方法會宣告區域變數，但不會使用變數，但可能是指派語句的收件者。 針對此規則的分析，必須以偵錯工具建立已測試的元件，且關聯的程式資料庫（.pdb）檔案必須可供使用。
 
 ## <a name="rule-description"></a>規則描述
 未使用的區域變數和不必要的設定，會增加組件的大小並降低效能。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
 
-若要修正此規則的違規, 請移除或使用本機變數。
+若要修正此規則的違規，請移除或使用本機變數。
 
 > [!NOTE]
-> 啟用C#此選項時, 編譯器會移除`optimize`未使用的區域變數。
+> 啟用C#此選項時，編譯器會移除`optimize`未使用的區域變數。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
-如果變數是編譯器發出, 則隱藏此規則的警告。 如果效能和程式碼維護不是主要考慮, 也可以安全地隱藏此規則的警告, 或停用規則。
+如果變數是編譯器發出，則隱藏此規則的警告。 如果效能和程式碼維護不是主要考慮，也可以安全地隱藏此規則的警告，或停用規則。
 
 ## <a name="example"></a>範例
 下列範例顯示數個未使用的區域變數。

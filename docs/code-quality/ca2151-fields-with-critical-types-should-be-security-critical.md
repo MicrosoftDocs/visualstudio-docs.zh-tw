@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b75425d35e51125b0cfe1f76c8c18d7f155a12c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 46cb99f00bbbd9969899121f82ba591980b5b288
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62796733"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71231911"
 ---
 # <a name="ca2151-fields-with-critical-types-should-be-security-critical"></a>CA2151:具有關鍵類型的欄位應為安全性關鍵
 
@@ -22,11 +22,11 @@ ms.locfileid: "62796733"
 |TypeName||
 |CheckId|CA2151|
 |分類|Microsoft.Security|
-|中斷變更|中斷|
+|重大變更|中斷|
 
 ## <a name="cause"></a>原因
 
-已宣告安全性透明欄位或安全性關鍵欄位。 它的指定類型為安全性關鍵類型。 例如: 
+已宣告安全性透明欄位或安全性關鍵欄位。 它的指定類型為安全性關鍵類型。 例如：
 
 ```csharp
 [assembly: AllowPartiallyTrustedCallers]
@@ -48,7 +48,7 @@ ms.locfileid: "62796733"
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
 
-若要修正此規則的違規情形，進而將欄位標示與<xref:System.Security.SecurityCriticalAttribute>屬性，或是會將類型欄位所參考安全性透明或安全關鍵。
+若要修正此規則的違規情形，請使用<xref:System.Security.SecurityCriticalAttribute>屬性來標記欄位，或將欄位所參考的類型設為安全性透明或安全關鍵。
 
 ```csharp
 // Fix 1: Make the referencing field security critical

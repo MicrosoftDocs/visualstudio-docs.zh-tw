@@ -10,12 +10,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 4c9fbb4b8b11b0fce7d3e7530eef80af19b35b73
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: a459be8c8ab028581c850f5b5770a95cb70e3510
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65841023"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71237197"
 ---
 # <a name="ca3011-review-code-for-dll-injection-vulnerabilities"></a>CA3011：檢閱程式碼是否有 DLL 插入式攻擊弱點
 
@@ -24,31 +24,31 @@ ms.locfileid: "65841023"
 |TypeName|ReviewCodeForDllInjectionVulnerabilities|
 |CheckId|CA3011|
 |分類|Microsoft.Security|
-|中斷變更|非中斷|
+|重大變更|不中斷|
 
 ## <a name="cause"></a>原因
 
-可能不受信任的 HTTP 要求輸入達到方法，載入組件。
+可能不受信任的 HTTP 要求輸入會到達載入元件的方法。
 
 ## <a name="rule-description"></a>規則描述
 
-當使用不受信任的輸入，留意載入未受信任的程式碼。 如果您的 web 應用程式會載入未受信任的程式碼，攻擊者可以您的程序插入惡意的 Dll 並執行惡意程式碼。
+使用不受信任的輸入時，請注意載入不受信任的程式碼。 如果您的 web 應用程式載入不受信任的程式碼，攻擊者可能可以將惡意 Dll 插入您的進程，並執行惡意程式碼。
 
-此規則會嘗試尋找輸入 HTTP 要求，達到載入組件的方法。
-
-> [!NOTE]
-> 此規則無法追蹤多個組件的資料。 比方說，如果一個組件會讀取 HTTP 要求輸入，然後將它傳遞給另一個組件，載入組件，此規則將不會產生警告。
+此規則會嘗試從 HTTP 要求尋找輸入，以取得載入元件的方法。
 
 > [!NOTE]
-> 沒有可設定的限制，深度此規則會分析資料流不同的方法呼叫。 請參閱[分析器組態](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis)如何 EditorConfig 檔案中設定限制。
+> 此規則無法跨元件追蹤資料。 例如，如果一個元件讀取 HTTP 要求輸入，然後將它傳遞給另一個載入元件的元件，此規則就不會產生警告。
+
+> [!NOTE]
+> 此規則會在方法呼叫中分析資料流的深度有一個可設定的限制。 如需如何在 EditorConfig 檔中設定限制的詳細說明，請參閱[分析器](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis)設定。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
 
-不要載入來自使用者輸入的不受信任的 Dll。
+不要從使用者輸入載入不受信任的 Dll。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
 
-請勿隱藏這項規則的警告。
+請勿隱藏此規則的警告。
 
 ## <a name="pseudo-code-examples"></a>虛擬程式碼範例
 
