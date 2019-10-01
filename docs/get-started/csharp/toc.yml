@@ -21,6 +21,8 @@
       href: tutorial-uwp.md
     - name: 建立 WPF 應用程式
       href: tutorial-wpf.md
+    - name: 建立 Windows Forms 應用程式
+      href: ../../ide/create-csharp-winform-visual-studio.md?toc=/visualstudio/get-started/csharp/toc.json&bc=/visualstudio/get-started/csharp/breadcrumb/toc.json
     - name: 影片教學課程 - 建立 ASP.NET Core Web 應用程式
       items:
         - name: 1 - 安裝 Visual Studio
