@@ -8,18 +8,20 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a1e4f59b672049ee8148c94dbbf51e560e22c31e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: b6c785b755b64f0dd7e367a01d9c05c1981ea558
+ms.sourcegitcommit: d3e423a9a4ed773a54d14b247e1b5bfc95de8816
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62581996"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "71693005"
 ---
 # <a name="visual-studio-customer-experience-improvement-program"></a>Visual Studio 客戶經驗改進計畫
 
 Visual Studio 客戶經驗改進計畫 (VSCEIP) 是設計來協助 Microsoft 隨著時間改善 Visual Studio。 此計畫會[收集有關錯誤](../ide/diagnostic-data-collection.md)、電腦硬體以及使用者如何使用 Visual Studio 的資訊，而不會中斷使用者在電腦上的工作。 所收集的資訊可協助 Microsoft 找出應改善的功能。 本文討論如何選擇加入或退出 VSCEIP。
 
 [!INCLUDE [gdpr-hybrid-note](../misc/includes/gdpr-hybrid-note.md)]
+> [!NOTE]
+> VSCEIP 遙測加入宣告或登出設定不適用於 Visual Studio 中的 [回報問題]。 當您回報問題記錄檔時，只有在您按一下 [Submit] 提供許可權時，才會收集並傳送給 Microsoft。 如果您想要在提交至「回報問題」之前記錄管理，請參閱[意見資料隱私權](./developer-community-privacy.md)以取得詳細資訊。
 
 ## <a name="opt-in-or-out"></a>選擇加入或退出
 
@@ -70,7 +72,7 @@ VSCEIP 預設為開啟。 您可以遵循下列指示將它關閉，或重新開
 ## <a name="see-also"></a>另請參閱
 
 * [Visual Studio 所收集的診斷資訊](diagnostic-data-collection.md)
-* [告訴我們](../ide/talk-to-us.md)
+* [Visual Studio 意見反應選項](../ide/feedback-options.md)
 * [如何回報 Visual Studio 的問題](../ide/how-to-report-a-problem-with-visual-studio.md)
 * [Visual Studio 開發人員社群](https://developercommunity.visualstudio.com/)
 * [Microsoft 隱私權聲明](https://privacy.microsoft.com/privacystatement)
