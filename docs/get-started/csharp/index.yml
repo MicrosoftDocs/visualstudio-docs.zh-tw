@@ -14,12 +14,12 @@ metadata:
   ms.technology: vs-acquisition
   dev_langs:
   - CSharp
-  ms.openlocfilehash: 6c7e810e4370b1ea1fc0be5fbcd196b2e0ecf301
-  ms.sourcegitcommit: 13decf878b33fc0c5d665a88067170c2861b261b
+  ms.openlocfilehash: b4db5aef6d4a91d684a588971ec23fa673aa98da
+  ms.sourcegitcommit: d3e423a9a4ed773a54d14b247e1b5bfc95de8816
   ms.translationtype: HT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 09/30/2019
-  ms.locfileid: "71681561"
+  ms.lasthandoff: 10/01/2019
+  ms.locfileid: "71693039"
 landingContent:
 - title: 開始使用
   linkLists:
@@ -39,8 +39,6 @@ landingContent:
       url: tutorial-console.md
     - text: 建立 Web 應用程式
       url: tutorial-aspnet-core.md
-    - text: 建立 ASP.NET Core 應用程式
-      url: tutorial-aspnet-core-ef-step-01.md
     - text: 建立通用 Windows 平台應用程式
       url: tutorial-uwp.md
     - text: 建立 Windows Desktop 應用程式
@@ -49,6 +47,10 @@ landingContent:
       url: ../../ide/create-csharp-winform-visual-studio.md
     - text: 了解 C# 語言
       url: /dotnet/csharp/tutorials/intro-to-csharp/
+  - linkListType: video
+    links:
+    - text: 建立 ASP.NET Core 應用程式
+      url: tutorial-aspnet-core-ef-step-01.md
 - title: 了解 Visual Studio
   linkLists:
   - linkListType: tutorial
