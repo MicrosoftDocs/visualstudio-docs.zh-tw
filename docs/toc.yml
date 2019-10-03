@@ -250,7 +250,7 @@
               href: ide/visual-studio-ide-64-bit-support.md
         - name: 不使用專案或方案來開發
           items:
-            - name: 作法：在不使用專案的情況下開發
+            - name: HOW TO：在不使用專案的情況下開發
               displayName: Open folder
               href: ide/develop-code-in-visual-studio-without-projects-or-solutions.md
             - name: 自訂建置與偵錯工作
@@ -708,7 +708,7 @@
         - name: 啟動行為
           displayName: Start page window
           href: ide/customizing-the-start-page-for-visual-studio.md
-        - name: 尋找和使用 Visual Studio 延伸模組
+        - name: 管理延伸模組
           href: ide/finding-and-using-visual-studio-extensions.md
           displayName: 'marketplace, gallery, vsix'
         - name: 管理外部工具
