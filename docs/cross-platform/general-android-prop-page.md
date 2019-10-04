@@ -5,8 +5,8 @@ ms.date: 10/23/2017
 ms.technology: vs-ide-mobile
 ms.topic: conceptual
 ms.assetid: 65f4868b-b864-4989-a275-1e51869ef599
-author: corob
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: jillfra
 f1_keywords:
 - VC.Project.VCConfiguration.OutputDirectory
@@ -22,16 +22,16 @@ f1_keywords:
 - VC.Project.VCConfiguration.ThumbMode
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: 4bb6f26fe40b639b43cb803577a785fa9b48823d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 4526a329b4e047a449995b7b5ef66362aff1cc8f
+ms.sourcegitcommit: 6ae0a289f1654dec63b412bfa22035511a2ef5ad
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62818943"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71950591"
 ---
 # <a name="general-project-properties-android-c"></a>一般專案屬性 (Android C++)
 
-屬性 | 說明 | 選擇
+屬性 | 描述 | 選擇
 --- | ---| ---
 輸出目錄 | 指定輸出檔案目錄的相對路徑；可包含環境變數。
 中繼目錄 | 指定中繼檔案目錄的相對路徑；可包含環境變數。
@@ -40,7 +40,7 @@ ms.locfileid: "62818943"
 清除時要刪除的副檔名 | 清除或重建時中繼目錄中要刪除的檔案。檔案名稱以萬用字元表示，項目之間以分號區隔。
 建置記錄檔 | 指定啟用組建記錄時，要寫入的組建記錄檔。
 平台工具組 | 指定用於建置目前組態的工具組；如果未設定，則使用預設工具組。
-組態類型 | 指定此組態所產生的輸出類型。 | **動態程式庫 (.so)** - 動態程式庫 (*.so*)<br>**靜態程式庫 (.a)** - 靜態程式庫 (*.a*)<br>**公用程式** - 公用程式<br>**Makefile** - Makefile<br>
+組態類型 | 指定此組態所產生的輸出類型。 | **動態程式庫 (.so)** - 動態程式庫 ( *.so*)<br>**靜態程式庫 (.a)** - 靜態程式庫 ( *.a*)<br>**公用程式** - 公用程式<br>**Makefile** - Makefile<br>
 目標 API 層級 | 這個組態的目標 Android NDK API 層級。
 STL 的使用 | 指定要用於這個組態的 C++ 標準程式庫。 | **最小 C++ 執行階段程式庫 (系統)**<br>**C++ 執行階段靜態程式庫 (gabi++_static)**<br>**C++ 執行階段共用程式庫 (gabi++_shared)**<br>**STLport 執行階段靜態程式庫 (stlport_static)**<br>**STLport 執行階段共用程式庫 (stlport_shared)**<br>**GNU STL 靜態程式庫 (gnustl_static)**<br>**GNU STL 共用程式庫 (gnustl_shared)**<br>**LLVM libc++ 靜態程式庫 (c++_static)**<br>**LLVM libc++ 共用程式庫 (c++_shared)**<br>
 Thumb 模式 | 產生為 Thumb 微架構所執行的程式碼。 這僅適用於 ARM 架構。 | **Thumb**<br>**ARM**<br>**已停用**<br>

@@ -5,8 +5,8 @@ ms.date: 10/23/2017
 ms.technology: vs-ide-mobile
 ms.topic: conceptual
 ms.assetid: d901c572-16c4-402a-b230-7ae59ce9fad4
-author: corob
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: jillfra
 f1_keywords:
 - VC.Project.VCNMakeTool.BuildCommandLine
@@ -18,16 +18,16 @@ f1_keywords:
 - VC.Project.VCNMakeTool.ForcedIncludes
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: ba13da583e5ea5dd6cc625e165902bbf6c408f28
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 9a04acc335d86aaa895fdb399ce7086868e9770d
+ms.sourcegitcommit: 6ae0a289f1654dec63b412bfa22035511a2ef5ad
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62815710"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71950618"
 ---
 # <a name="nmake-properties-android-c"></a>NMake 屬性 (Android C++)
 
-屬性 | 說明
+屬性 | 描述
 --- | ---
 Build 命令列 | 指定執行 'Build' 命令的命令列。
 Rebuild All 命令列 | 指定執行 'Rebuild All' 命令的命令列。

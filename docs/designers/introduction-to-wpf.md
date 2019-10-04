@@ -11,12 +11,12 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: f26558a8e8d7e8446e3a992b7555116b5712c364
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+ms.openlocfilehash: bb88c5b718c0f949825a2542b5a084d4e8ca15b9
+ms.sourcegitcommit: dc12a7cb66124596089f01d3e939027ae562ede9
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68924450"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71962968"
 ---
 # <a name="wpf-overview"></a>WPF 概觀
 
@@ -36,7 +36,7 @@ WPF 包含可增強屬性和事件的額外程式設計建構： [相依性屬�
 
 ## <a name="markup-and-code-behind"></a>標記和程式碼後置
 
-WPF 可讓您使用「標記」  和「程式碼後置」  來開發應用程式，這是 ASP.NET 開發人員應該很熟悉的功能。 您通常會使用 XAML 標記來實作應用程式的外觀，同時使用 Managed 程式設計語言 (程式碼後置) 來實作其行為。 將外觀與行為區隔開來的優點如下：
+WPF 可讓您使用「標記」和「程式碼後置」來開發應用程式，這是 ASP.NET 開發人員應該很熟悉的功能。 您通常會使用 XAML 標記來實作應用程式的外觀，同時使用 Managed 程式設計語言 (程式碼後置) 來實作其行為。 將外觀與行為區隔開來的優點如下：
 
 - 由於外觀特定標記未與行為特定程式碼緊密結合，因此可降低開發和維護成本。
 
@@ -147,7 +147,7 @@ End Namespace
 
 ## <a name="controls"></a>控制項
 
-應用程式模型所傳遞的使用者體驗是已建構的控制項。 在 WPF 中，「控制項」  是一個籠統的名詞，泛指裝載於視窗或頁面上之具有使用者介面並實作一些行為的某種 WPF 類別。
+應用程式模型所傳遞的使用者體驗是已建構的控制項。 在 WPF 中，「控制項」是一個籠統的名詞，泛指裝載於視窗或頁面上之具有使用者介面並實作一些行為的某種 WPF 類別。
 
 如需詳細資訊，請參閱 [控制項](/dotnet/framework/wpf/controls/index)。
 
@@ -195,17 +195,17 @@ End Namespace
 
 版面配置系統會透過基底 WPF 類別公開給子控制項。 WPF 針對格線、堆疊和停駐等常見版面配置，提供了數個版面配置控制項：
 
-- <xref:System.Windows.Controls.Canvas>：子控制項會提供自己的版面配置。
+- <xref:System.Windows.Controls.Canvas>:子控制項會提供自己的版面配置。
 
-- <xref:System.Windows.Controls.DockPanel>：子控制項會沿著面板邊緣對齊。
+- <xref:System.Windows.Controls.DockPanel>:子控制項會沿著面板邊緣對齊。
 
-- <xref:System.Windows.Controls.Grid>：子控制項會依資料列和資料行定位。
+- <xref:System.Windows.Controls.Grid>:子控制項會依資料列和資料行定位。
 
-- <xref:System.Windows.Controls.StackPanel>：子控制項會垂直或水平堆疊。
+- <xref:System.Windows.Controls.StackPanel>:子控制項會垂直或水平堆疊。
 
-- <xref:System.Windows.Controls.VirtualizingStackPanel>：子控制項會依水平或垂直方向，以單行顯示及排列。
+- <xref:System.Windows.Controls.VirtualizingStackPanel>:子控制項會依水平或垂直方向，以單行顯示及排列。
 
-- <xref:System.Windows.Controls.WrapPanel>：子控制項會從左至右排序定位，並在目前這一行的控制項超出空間所允許的數目時，換至下一行。
+- <xref:System.Windows.Controls.WrapPanel>:子控制項會從左至右排序定位，並在目前這一行的控制項超出空間所允許的數目時，換至下一行。
 
 下列範例使用 <xref:System.Windows.Controls.DockPanel> 來配置多個 <xref:System.Windows.Controls.TextBox> 控制項：
 
@@ -428,7 +428,7 @@ WPF 動畫支援可讓您將控制項設為放大、搖晃、旋轉和淡出，�
 
 ### <a name="triggers"></a>觸發程序
 
-雖然 XAML 標記的主要目的是要實作應用程式的外觀，您也可以使用 XAML 來實作某些方面的應用程式行為。 其中一個範例是使用觸發程序，根據使用者互動來變更應用程式的外觀。 如需詳細資訊，請參閱[設定樣式和範本](/dotnet/framework/wpf/controls/styling-and-templating)。
+雖然 XAML 標記的主要目的是要實作應用程式的外觀，您也可以使用 XAML 來實作某些方面的應用程式行為。 其中一個範例是使用觸發程序，根據使用者互動來變更應用程式的外觀。 如需詳細資訊，請參閱[樣式和範本](/dotnet/desktop-wpf/fundamentals/styles-templates-overview)。
 
 ### <a name="control-templates"></a>控制項範本
 
@@ -545,7 +545,7 @@ WPF 控制項的預設使用者介面通常是從其他控制項和圖案建構�
 
 ![兩個橙色按鈕](../designers/media/wpfintrofigure20.png)
 
-如需詳細資訊，請參閱[設定樣式和範本](/dotnet/framework/wpf/controls/styling-and-templating)。
+如需詳細資訊，請參閱[樣式和範本](/dotnet/desktop-wpf/fundamentals/styles-templates-overview)。
 
 ### <a name="resources"></a>資源
 
@@ -654,7 +654,7 @@ WPF 控制項的預設使用者介面通常是從其他控制項和圖案建構�
 
 ## <a name="wpf-best-practices"></a>WPF 最佳做法
 
-如同任何開發平台，您可以透過各種方式來使用 WPF，以取得想要的結果。 為了確保您的 WPF 應用程式提供所需的使用者體驗，並符合一般大眾的需求，已針對協助工具、全球化和當地語系化，以及效能提供了建議的最佳作法。 如需詳細資訊，請參閱:
+如同任何開發平台，您可以透過各種方式來使用 WPF，以取得想要的結果。 為了確保您的 WPF 應用程式提供所需的使用者體驗，並符合一般大眾的需求，已針對協助工具、全球化和當地語系化，以及效能提供了建議的最佳作法。 如需詳細資訊，請參閱：
 
 - [協助工具選項](/dotnet/framework/ui-automation/accessibility-best-practices)
 - [WPF 全球化和當地語系化](/dotnet/framework/wpf/advanced/wpf-globalization-and-localization-overview)
