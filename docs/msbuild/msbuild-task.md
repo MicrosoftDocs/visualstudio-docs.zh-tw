@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d2689113da88246470032ed658b2472c3845adcd
-ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
-ms.translationtype: HT
+ms.openlocfilehash: 3d0b2b0c4cee2a372bccb8ad461ed195fc5519d7
+ms.sourcegitcommit: 0554b59a2a251661e56824fb9cd6e9b1f326cef1
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68681363"
+ms.lasthandoff: 10/03/2019
+ms.locfileid: "71831858"
 ---
 # <a name="msbuild-task"></a>MSBuild 工作
 
@@ -33,11 +33,11 @@ ms.locfileid: "68681363"
 
  下表說明 `MSBuild` 工作的參數。
 
-| 參數 | 說明 |
+| 參數 | 描述 |
 |-----------------------------------| - |
 | `BuildInParallel` | 選擇性的 `Boolean` 參數。<br /><br /> 如果是 `true`，同時也會建置 `Projects` 參數中指定的專案 (如果可能)。 預設為 `false`。 |
 | `Projects` | 必要的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 指定要建置的專案檔。 |
-| `Properties` | 選擇性的 `String` 參數。<br /><br /> 作為全域屬性套用至子專案的屬性名稱/值組的分號分隔清單。 當您指定此參數時，它在功能上相當於當您使用 [*MSBuild.exe*](../msbuild/msbuild-command-line-reference.md) 建置時，設定具有 **-property** 參數的屬性。 例如：<br /><br /> `Properties="Configuration=Debug;Optimize=$(Optimize)"`<br /><br /> 當您透過 `Properties` 參數將屬性傳遞給專案時，即使已經載入專案檔，[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 也可能建立新的專案執行個體。 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 會為指定的專案路徑和一組唯一的全域屬性建立單一專案執行個體。 例如，此行為可讓您建立多個呼叫 *myproject.proj* 的 MSBuild 工作，在 Configuration=Release 的情況下，您會獲得單一的 *myproject.proj* 執行個體 (如果工作中未指定任何唯一屬性)。 如果您指定 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 尚未看到的屬性，[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 就會建立新的專案執行個體，此執行個體可與專案的其他執行個體平行建置。 例如，Release 組態可以與 Debug 組態同時建置。|
+| `Properties` | 選擇性的 `String` 參數。<br /><br /> 作為全域屬性套用至子專案的屬性名稱/值組的分號分隔清單。 當您指定此參數時，它在功能上相當於當您使用 [*MSBuild.exe*](../msbuild/msbuild-command-line-reference.md) 建置時，設定具有 **-property** 參數的屬性。 例如:<br /><br /> `Properties="Configuration=Debug;Optimize=$(Optimize)"`<br /><br /> 當您透過 `Properties` 參數將屬性傳遞給專案時，即使已經載入專案檔，[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 也可能建立新的專案執行個體。 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 會為指定的專案路徑和一組唯一的全域屬性建立單一專案執行個體。 例如，此行為可讓您建立多個呼叫 *myproject.proj* 的 MSBuild 工作，在 Configuration=Release 的情況下，您會獲得單一的 *myproject.proj* 執行個體 (如果工作中未指定任何唯一屬性)。 如果您指定 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 尚未看到的屬性，[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 就會建立新的專案執行個體，此執行個體可與專案的其他執行個體平行建置。 例如，Release 組態可以與 Debug 組態同時建置。|
 | `RebaseOutputs` | 選擇性的 `Boolean` 參數。<br /><br /> 如果是 `true`，已建置的專案中目標輸出項目的相對路徑就會將其路徑調整為相對於呼叫的專案。 預設為 `false`。 |
 | `RemoveProperties` | 選擇性的 `String` 參數。<br /><br /> 指定要移除的全域屬性組。 |
 | `RunEachTargetSeparately` | 選擇性的 `Boolean` 參數。<br /><br /> 如果是 `true`，[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 工作即會一次一個叫用傳遞至 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 之清單中的每個目標，而不是同時叫用。 將此參數設定為 `true`，可保證即使先前叫用的目標失敗，還是會叫用後續的目標。 否則，建置錯誤便會停止叫用所有後續的目標。 預設為 `false`。 |
@@ -47,8 +47,6 @@ ms.locfileid: "68681363"
 | `TargetOutputs` | 選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 唯讀輸出參數。<br /><br /> 傳回所有專案檔中建置目標的輸出。 只會傳回所指定目標的輸出，而非可能存在於這些目標所依存的任何輸出。<br /><br /> `TargetOutputs` 參數也會包含下列中繼資料：<br /><br /> -   `MSBuildSourceProjectFile`：[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 專案檔，包含設定輸出的目標。<br />-   `MSBuildSourceTargetName`：設定輸出的目標。 **注意：** 如果您想要分別找出每個專案檔或目標的輸出，請針對每個專案檔或目標個別執行 `MSBuild` 工作。 如果您只執行 `MSBuild` 工作一次來建置所有專案檔，即會將所有目標的輸出收集到一個陣列。 |
 | `Targets` | 選擇性的 `String` 參數。<br /><br /> 指定要在專案檔中建置的一或多個目標。 請使用分號分隔目標名稱清單。 如果未在 `MSBuild` 工作中指定目標，即會建置專案檔中指定的預設目標。 **注意：** 目標必須存在於所有的專案檔中。 如果沒有，就會發生建置錯誤。 |
 | `ToolsVersion` | 選擇性的 `String` 參數。<br /><br /> 指定要在將建置中專案傳遞給此工作時使用 `ToolsVersion`。<br /><br /> 讓 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 工作能夠建置目標與專案中所指定的 .NET Framework 不同版本的專案。 有效值為 `2.0`、`3.0` 及 `3.5`。 預設值為 `3.5`。 |
-| `UnloadProjectsOnCompletion` | 選擇性的 `Boolean` 參數。<br /><br /> 如果是 `true`，將會在作業完成之後卸載專案。 |
-| `UseResultsCache` | 選擇性的 `Boolean` 參數。<br /><br /> 如果是 `true`，將會傳回快取的結果 (如果有的話)。<br /><br />  如果執行 MSBuild 工作，將會在範圍中快取其結果 <br /><br /> (ProjectFileName, GlobalProperties)[TargetNames]<br /><br /> 做為組建項目清單 |
 
 ## <a name="remarks"></a>備註
 

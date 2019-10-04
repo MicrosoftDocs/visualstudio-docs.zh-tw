@@ -9,12 +9,12 @@ metadata:
   ms.author: mikejo
   manager: jillfra
   ms.date: 09/20/2019
-  ms.openlocfilehash: be124cf1dc4a594575347d58439902f8ed99b803
-  ms.sourcegitcommit: 9a3972eb85de5443ac2bc03964c5a251c39b2921
+  ms.openlocfilehash: 9ddd78b13e3281c4285d0bb2aaf4ee0a34af5369
+  ms.sourcegitcommit: 8a3545329a58e446672181cfed2083f850e1ad14
   ms.translationtype: HT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 09/26/2019
-  ms.locfileid: "71301660"
+  ms.lasthandoff: 10/02/2019
+  ms.locfileid: "71814311"
 landingContent:
 - title: 關於偵錯
   linkLists:
@@ -26,6 +26,8 @@ landingContent:
       url: write-better-code-with-visual-studio.md
     - text: 偵錯工具簡介
       url: debugger-feature-tour.md
+    - text: 尋找您的偵錯工作
+      url: find-your-debugging-task.md
 - title: 開始使用
   linkLists:
   - linkListType: tutorial
