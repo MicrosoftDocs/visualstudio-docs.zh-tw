@@ -14,12 +14,12 @@ metadata:
   ms.technology: vs-acquisition
   dev_langs:
   - CSharp
-  ms.openlocfilehash: b4db5aef6d4a91d684a588971ec23fa673aa98da
-  ms.sourcegitcommit: d3e423a9a4ed773a54d14b247e1b5bfc95de8816
+  ms.openlocfilehash: 0e61a2b9d54fc4e40a84e7107ab653a2e90f52de
+  ms.sourcegitcommit: dc12a7cb66124596089f01d3e939027ae562ede9
   ms.translationtype: HT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 10/01/2019
-  ms.locfileid: "71693039"
+  ms.lasthandoff: 10/04/2019
+  ms.locfileid: "71962855"
 landingContent:
 - title: 開始使用
   linkLists:
@@ -56,7 +56,7 @@ landingContent:
   - linkListType: tutorial
     links:
     - text: 從存放庫開啟程式碼
-      url: ../tutorial-open-project-from-repo.md?
+      url: ../tutorial-open-project-from-repo.md
     - text: 撰寫和編輯程式碼
       url: tutorial-editor.md
     - text: 編譯和建置

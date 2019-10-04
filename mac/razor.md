@@ -6,12 +6,12 @@ ms.author: sayedha
 ms.date: 05/03/2018
 ms.technology: vs-ide-general
 ms.assetid: F898CB6E-05ED-44CD-8DB6-427B2592CCC6
-ms.openlocfilehash: 791182255448db01a1c43796da72bedeec9f2f96
-ms.sourcegitcommit: 9a227faafdd0bad6f017ace607dc61eb56b32d72
+ms.openlocfilehash: d9a9df56074cde8735b54c12bbbf15a79e727497
+ms.sourcegitcommit: dc12a7cb66124596089f01d3e939027ae562ede9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/21/2019
-ms.locfileid: "71175444"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71962917"
 ---
 # <a name="create-razor-web-apps"></a>建立 Razor web 應用程式
 
@@ -26,7 +26,7 @@ Visual Studio for Mac 提供對 Razor 編輯的支援，包含 *.cshtml* 檔案�
 1. 在 [歡迎使用] 畫面上，選取 [**新增**] 以建立新的專案：
 
    ![Visual Studio for Mac [新增] 對話方塊](media/razor-new.png)
-1. 在 [**新增專案**] 對話方塊中，移至 [ **.net Core**  > **應用** > **程式 Web 應用程式**] 並選取 **[下一步]** ：
+1. 在 [**新增專案**] 對話方塊中，移至 [ **.net Core**]  > **應用**程式  > **Web 應用程式**，然後選取 **[下一步]** ：
 
    ![Razor 專案範本](media/razor-new-project1.png)
 1. 選取您的 .NET Core 目標 framework （建議為2.2 版或更新版本），然後選取 **[下一步]** 。 選擇專案的名稱，並在必要時新增 Git 支援。 選取 [**建立**] 以建立專案。
@@ -36,7 +36,7 @@ Visual Studio for Mac 提供對 Razor 編輯的支援，包含 *.cshtml* 檔案�
    Visual Studio for Mac 會在 [程式碼配置] 視窗中開啟您的專案。
 1. 使用**Command + Option + F5**執行專案，而不進行任何偵錯工具。
 
-   Visual Studio 啟動[Kestrel](https://docs.microsoft.com/aspnet/core/fundamentals/servers/kestrel)，將瀏覽器開啟`https://localhost:5001`至，並顯示您的第一個 Razor web 應用程式。
+   Visual Studio 啟動[Kestrel](https://docs.microsoft.com/aspnet/core/fundamentals/servers/kestrel)，開啟瀏覽器以 `https://localhost:5001`，並顯示您的第一個 Razor web 應用程式。
 
    ![Safari 中的 Razor Web 應用程式](media/razor-webapp.png)
 
@@ -47,8 +47,8 @@ Razor web 應用程式包含下列元件。
 ### <a name="pages-folder"></a>Pages 資料夾
 
 此資料夾包含專案的網頁，以及每個的程式碼後置：
-* 用於 HTML 標記與 Razor 語法的 * *.cshtml* 檔案。
-* 用於您 C# 程式碼後置的 *.cshtml.cs* 檔案 (用於處以頁面事件)。
+   - @No__t-1 HTML 標籤和 Razor 語法的 *. cshtml*檔案。
+   - 用於處理頁面事件之程式C#代碼後置的 *@no__t 1.cshtml.cs*檔案。
 
 支援檔案的名稱以底線開頭。 例如，_Layout.cshtml 檔案會設定所有頁面通用的 UI 元素。 此檔案會設定頁面頂端的導覽功能表和底部的著作權注意事項。 如需詳細資訊，請參 [ASP.NET 中的配置](https://docs.microsoft.com/aspnet/core/mvc/views/layout)。
 

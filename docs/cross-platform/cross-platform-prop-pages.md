@@ -5,17 +5,17 @@ ms.date: 10/23/2017
 ms.technology: vs-ide-mobile
 ms.topic: reference
 ms.assetid: 3a7ba14f-a628-4c1b-bb89-73b9195769f1
-author: corob
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: jillfra
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: cfe6ca9ad59ae6e4952f83e095c15dcc4427ca0f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 30b614a8845ebdc5e1460d1b330e2e74c0f6c843
+ms.sourcegitcommit: 6ae0a289f1654dec63b412bfa22035511a2ef5ad
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62819253"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71950596"
 ---
 # <a name="c-cross-platform-property-page-reference"></a>C++ 跨平台屬性頁參考
 

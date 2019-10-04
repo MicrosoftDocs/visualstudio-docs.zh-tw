@@ -11,16 +11,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1ee8633a9ad58981297f00338cd6c375c5cf721e
-ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.openlocfilehash: 27df4c097d829a4d28a77b9b1ad96eb389f4096c
+ms.sourcegitcommit: dc12a7cb66124596089f01d3e939027ae562ede9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71211246"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71962935"
 ---
 # <a name="troubleshooting-and-known-issues-for-snapshot-debugging-in-visual-studio"></a>Visual Studio 中快照集偵錯的疑難排解和已知問題
 
-如果本文所述的步驟無法解決您的問題，請在[開發人員的論壇](https://developercommunity.visualstudio.com/spaces/8/index.html)上搜尋問題，**或選擇 [**  > 說明] [**傳送意見** > 反應] [回報視覺效果中**的問題**] 來報告新的問題Studio.
+如果本文所述的步驟無法解決您的問題，請在[開發人員的社區](https://developercommunity.visualstudio.com/spaces/8/index.html)上搜尋問題，**或選擇 [說明] 來回報**新的問題，方法是選擇 [說明]  >  [**傳送意見**反應]  >  回報 Visual Studio 中**的問題**。
 
 ## <a name="issue-attach-snapshot-debugger-encounters-an-http-status-code-error"></a>問題：「附加快照偵錯工具」遇到 HTTP 狀態碼錯誤
 
@@ -34,7 +34,7 @@ ms.locfileid: "71211246"
 
 請執行下列步驟：
 
-* 請確定您的 Visual Studio 個人化帳戶具有您要附加的 Azure 訂用帳戶和資源的許可權。 若要判斷這種情況，您可以透過 [ **Debug**  >  **Attach 快照偵錯工具 ...** ] 來檢查對話方塊中的資源是否可用Azure 資源**選取 [現有**]，或在 Cloud Explorer 中。  >   > 
+* 請確定您的 Visual Studio 個人化帳戶具有您要附加的 Azure 訂用帳戶和資源的許可權。 若要判斷這種情況，您可以從 [ **Debug**]  >  [**附加快照偵錯工具 ...** ] 對話方塊中，檢查資源是否可用 > **Azure 資源** > **選取 [現有**] 或 [在 Cloud Explorer 中]。
 * 如果此錯誤持續存在，請使用本文開頭所述的其中一個意見反應通道。
 
 ### <a name="403-forbidden"></a>（403）禁止
@@ -54,7 +54,8 @@ ms.locfileid: "71211246"
 請執行下列步驟：
 
 * 確認您已在您要附加的 App Service 資源上部署並執行網站。
-* 確認網站可在 HTTPs://\<資源\>上取得。 azurewebsites.net
+* 確認網站可以在 HTTPs://\<resource\>.azurewebsites.net
+* 在 HTTPs://\<resource\>.azurewebsites.net 時，確認您正確執行的自訂 web 應用程式未傳回狀態碼404
 * 如果此錯誤持續存在，請使用本文開頭所述的其中一個意見反應通道。
 
 ### <a name="406-not-acceptable"></a>（406）無法接受
@@ -63,7 +64,7 @@ ms.locfileid: "71211246"
 
 請執行下列步驟：
 
-* 確認您的網站可在 HTTPs://\<資源\>中取得。 azurewebsites.net
+* 確認您的網站可以在 HTTPs://\<resource\>.azurewebsites.net
 * 確認您的網站尚未遷移至新的實例。 快照偵錯工具會使用 ARRAffinity 的概念，將要求路由傳送至特定實例，這可能會間歇產生此錯誤。
 * 如果此錯誤持續存在，請使用本文開頭所述的其中一個意見反應通道。
 
@@ -156,11 +157,11 @@ ms.locfileid: "71211246"
 
 Visual Studio 2019 在您的 Azure App Service 上需要較新版本的快照偵錯工具網站延伸模組。  此版本與 Visual Studio 2017 使用的舊版快照偵錯工具網站延伸模組不相容。  如果您嘗試將 Visual Studio 2019 中的快照偵錯工具附加至先前已由 Visual Studio 2017 中的快照偵錯工具所進行的 Azure App Service，您會收到下列錯誤：
 
-![快照偵錯工具網站延伸模組 Visual Studio 2019 不相容](../debugger/media/snapshot-troubleshooting-incompatible-vs2019.png "快照偵錯工具網站延伸模組 Visual Studio 2019 不相容")
+![不相容的快照偵錯工具網站延伸模組 Visual Studio 2019](../debugger/media/snapshot-troubleshooting-incompatible-vs2019.png "不相容快照偵錯工具網站延伸模組 Visual Studio 2019")
 
 相反地，如果您使用 Visual Studio 2017 將快照偵錯工具附加至先前已由 Visual Studio 2019 中的快照偵錯工具所進行的 Azure App Service，您會收到下列錯誤：
 
-![快照偵錯工具網站延伸模組 Visual Studio 2017 不相容](../debugger/media/snapshot-troubleshooting-incompatible-vs2017.png "快照偵錯工具網站延伸模組 Visual Studio 2017 不相容")
+![不相容的快照偵錯工具網站延伸模組 Visual Studio 2017](../debugger/media/snapshot-troubleshooting-incompatible-vs2017.png "不相容快照偵錯工具網站延伸模組 Visual Studio 2017")
 
 若要修正此問題，請在 Azure 入口網站中刪除下列應用程式設定並再次附加快照偵錯工具：
 
@@ -189,7 +190,7 @@ Visual Studio 2019 在您的 Azure App Service 上需要較新版本的快照偵
 您可以在下列位置找到檢測記錄：
 
 - App Service：
-  - 錯誤記錄會自動傳送至 D:\Home\LogFiles\eventlog.xml，事件會以`<Provider Name="Instrumentation Engine" />`或「生產中斷點」標記
+  - 錯誤記錄會自動傳送至 D:\Home\LogFiles\eventlog.xml，事件會以 `<Provider Name="Instrumentation Engine" />` 或「生產中斷點」標記
 - VM/VMSS：
   - 登入您的 VM 並開啟事件檢視器。
   - 開啟下列視圖：*Windows 記錄 > 應用程式*。
