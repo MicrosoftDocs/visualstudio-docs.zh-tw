@@ -6,6 +6,8 @@
       href: what-is-debugging.md
     - name: 偵錯技術和工具
       href: write-better-code-with-visual-studio.md
+    - name: 尋找您的偵錯工作
+      href: find-your-debugging-task.md
 - name: 快速入門
   items:
     - name: 偵錯工具簡介
@@ -34,7 +36,7 @@
       href: view-historical-application-state.md
     - name: 適合完全初學者的偵錯
       href: debugging-absolute-beginners.md
-- name: 使用說明指南
+- name: 作法指南
   items:
     - name: 使用偵錯工具巡覽程式碼
       href: navigating-through-code-with-the-debugger.md
@@ -146,7 +148,7 @@
               href: how-to-find-which-dll-your-program-crashed-in.md
         - name: 檢視指令碼文件
           href: how-to-view-script-documents.md
-    - name: 秘訣與技巧
+    - name: 秘訣和訣竅
       items:
         - name: 偵錯工具祕訣與技巧
           href: debugger-tips-and-tricks.md
@@ -236,7 +238,7 @@
                   href: visual-cpp-custom-visualizer-compatibility.md
             - name: 自訂檢視 (受控)
               items:
-                - name: 建立受控物件的自訂檢視
+                - name: 建立物件的自訂檢視
                   href: create-custom-views-of-dot-managed-objects.md
                 - name: 告訴偵錯工具要顯示的項目
                   href: using-the-debuggerdisplay-attribute.md
@@ -352,9 +354,9 @@
               href: how-to-use-the-gpu-threads-window.md
         - name: 對多重處理序進行偵錯
           href: debug-multiple-processes.md
-        - name: '逐步解說：使用 [執行緒] 視窗進行偵錯'
+        - name: '使用 [執行緒] 視窗進行偵錯'
           href: how-to-use-the-threads-window.md
-        - name: 逐步解說：偵錯平行應用程式
+        - name: 偵錯平行應用程式
           href: walkthrough-debugging-a-parallel-application.md
         - name: 在偵錯時切換到另一個執行緒
           href: how-to-switch-to-another-thread-while-debugging.md
@@ -832,7 +834,7 @@
                   href: how-to-search-for-a-process-in-processes-view.md
                 - name: 顯示處理序屬性
                   href: how-to-display-process-properties.md
-            - name: Threads
+            - name: 執行緒
               items:
                 - name: 執行緒檢視
                   href: threads-view.md
