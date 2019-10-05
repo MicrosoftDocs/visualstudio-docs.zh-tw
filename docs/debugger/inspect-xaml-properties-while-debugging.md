@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 182c9e37764a247ec24b4b477975ccb7b8811c4b
-ms.sourcegitcommit: 4d2620bee4688fb881e09a07ea4a264b99f0743e
+ms.openlocfilehash: e1d26886eecf09ff8195b7a38338fa62e7f1d0bf
+ms.sourcegitcommit: 39a04f42d23597b70053686d7e927ba78f38a9a8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "71322540"
+ms.lasthandoff: 10/05/2019
+ms.locfileid: "71974957"
 ---
 # <a name="inspect-xaml-properties-while-debugging"></a>在偵錯時檢查 XAML 屬性
 您可以使用 [即時視覺化樹狀結構] 和 [即時屬性總管] 來即時檢視正在執行的 XAML 程式碼。 這些工具提供您執行中之 XAML 應用程式 UI 項目的樹狀檢閱，並且顯示任何您所選取之 UI 項目的執行階段屬性。
@@ -71,20 +71,22 @@ private void button_Click(object sender, RoutedEventArgs e)
 
 建置此專案並開始偵錯。 (組建組態必須為偵錯，而非發行。 如需組建組態的詳細資訊，請參閱[了解組建組態](../ide/understanding-build-configurations.md)。)
 
-視窗出現時，請按幾下 [新增項目] 按鈕。 您應該會看到類似下面的內容：
+當視窗出現時，您應該會看到應用程式中的工具列顯示在執行中的應用程式內。 
 
-![應用程式的主視窗](../debugger/media/livevisualtree-app.png "LiveVIsualTree-應用程式")
+應用程式(../debugger/media/livevisualtree-app.png "LiveVIsualTree")應用程式的![主視窗]
 
-現在開啟 [即時視覺化樹狀結構] 視窗 ([偵錯] > [視窗] > [即時視覺化樹狀結構]，或沿著此 IDE 的左側尋找)。 將其從停駐位置拖曳出，如此我們便可並排查看此視窗和 [即時屬性] 視窗。 在 [即時視覺化樹狀結構] 視窗中，展開 [ContentPresenter] 節點。 其應包含按鈕和清單方塊的節點。 展開清單方塊 (然後展開 [ScrollContentPresenter] 和 [ItemsPresenter]) 來尋找清單方塊項目。 視窗類似下圖所示：
+現在，按一下 [**加入專案**] 按鈕幾次，將新專案加入清單中。
 
-![即時視覺化樹狀結構中的 listboxitem](../debugger/media/livevisualtree-listboxitems.png "LiveVisualTree-listboxitem")
+接下來，按一下應用程式中工具列的左上角按鈕（或移至 [ **Debug] > Windows > [即時視覺化樹狀結構**]），開啟 [**即時視覺化樹狀結構**] 視窗。 開啟後，將其從停駐位置拖曳出來，讓我們可以並排查看此視窗和 [**即時屬性**] 視窗。 在 [即時視覺化樹狀結構] 視窗中，展開 [ContentPresenter] 節點。 其應包含按鈕和清單方塊的節點。 展開清單方塊 (然後展開 [ScrollContentPresenter] 和 [ItemsPresenter]) 來尋找清單方塊項目。 視窗類似下圖所示：
+
+![即時視覺化樹狀結構 LiveVisualTree 中的 listboxitem](../debugger/media/livevisualtree-listboxitems.png "-listboxitem")
 
 回到應用程式視窗並再加入一些項目。 您應該會看到多個清單方塊項目出現在 [即時視覺化樹狀結構] 中。
 
-現在讓我們看看其中一個清單方塊項目的屬性。 選取 [即時視覺化樹狀結構] 中的第一個清單方塊項目，然後按一下工具列上的**顯示屬性**圖示。 應該就會顯示 [即時屬性總管]。 請注意，[**內容**] 欄位是 "Item1"，而 [**背景** > **色彩**] 欄位則是 **#FFFFFFE0**。 返回 [即時視覺化樹狀結構] 並選取第二個清單方塊項目。 [**即時屬性瀏覽器**] 應該會顯示 [**內容**] 欄位是 "Item2"，而 [**背景** > **色彩**] 欄位則是 **#FFD3D3D3**。
+現在讓我們看看其中一個清單方塊項目的屬性。 選取 [即時視覺化樹狀結構] 中的第一個清單方塊項目，然後按一下工具列上的**顯示屬性**圖示。 應該就會顯示 [即時屬性總管]。 請注意，[**內容**] 欄位是 "Item1"，而 [**背景** > ]**色彩**欄位是 **#FFFFFFE0**。 返回 [即時視覺化樹狀結構] 並選取第二個清單方塊項目。 [**即時屬性瀏覽器**] 應該會顯示 [**內容**] 欄位是 "Item2"，而**背景** > **色彩**欄位 **#FFD3D3D3**。
 
 > [!NOTE]
-> **即時屬性瀏覽器**中的屬性周圍有一個黃色框線，表示屬性值是透過系結（例如`Color = {BindingExpression}`）所設定。 綠色框線表示此值是使用資源（例如`Color = {StaticResource MyBrush}`）所設定。
+> **即時屬性瀏覽器**中的屬性周圍有一個黃色框線，表示屬性值是透過系結（例如 `Color = {BindingExpression}`）來設定。 綠色框線表示此值是使用資源（例如 `Color = {StaticResource MyBrush}`）所設定。
 
 XAML 的實際結構有許多您可能不會直接感興趣的項目，如果您不熟悉此程式碼，可能很難在巡覽樹狀結構時找到您要尋找的項目。 因此 [即時視覺化樹狀結構] 有好幾種方式可讓您使用應用程式的 UI 來協助找出您想要檢查的項目。
 
@@ -92,7 +94,7 @@ XAML 的實際結構有許多您可能不會直接感興趣的項目，如果您
 
 **在執行中應用程式顯示版面配置提示**。 只要選取緊鄰 [啟用選取範圍] 按鈕右邊的按鈕時，即可啟用此模式。 [顯示版面配置提示] 開啟時，會使此應用程式視窗沿著所選取物件的界限顯示水平及垂直線條，讓您能夠查看其向何處對齊，以及查看顯示此邊界的矩形。 例如，同時開啟 [啟用選取範圍] 和 [顯示版面配置]，並在應用程式中選取 [新增項目] 文字區塊。 您應該會看到 [即時視覺化樹狀結構] 中的文字區塊節點和 [即時屬性檢閱器] 中的文字區塊屬性，以及文字區塊界限內的水平和垂直線條。
 
-![DisplayLayout 中的 LivePropertyViewer](../debugger/media/livevisualtreelivepropertyviewer-displaylayout.png "LiveVisualTreeLivePropertyViewer-DisplayLayout")
+![DisplayLayout LiveVisualTreeLivePropertyViewer 中](../debugger/media/livevisualtreelivepropertyviewer-displaylayout.png "的 LivePropertyViewer-DisplayLayout")
 
 **預覽選取範圍**。 只要選取 [即時視覺化樹狀] 工具列上從左邊數來的第三個按鈕，即可啟用這個模式。 如果您可存取該應用程式的原始程式碼，則此模式會顯示宣告此項目的 XAML。 選取 [啟用選取範圍] 和 [預覽選取範圍]，然後選取在我們測試應用程式中的按鈕。 MainWindow.xaml 檔案會在 Visual Studio 中開啟，而且游標會置於定義按鈕位置的那一行。
 
