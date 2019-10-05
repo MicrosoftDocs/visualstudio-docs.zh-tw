@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1845647dc1848a7fcd99ef59c29eb163bece979d
-ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
+ms.openlocfilehash: 3222509ccc5ec20cd1433d215ca3d69609af6bcb
+ms.sourcegitcommit: 39a04f42d23597b70053686d7e927ba78f38a9a8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71186024"
+ms.lasthandoff: 10/05/2019
+ms.locfileid: "71975026"
 ---
 # <a name="use-code-analyzers"></a>使用程式碼分析器
 
@@ -28,7 +28,7 @@ ms.locfileid: "71186024"
 
 ![方案總管中的分析器節點](media/analyzers-expanded-in-solution-explorer.png)
 
-您可以在 [**屬性**] 視窗中，查看診斷的屬性，包括其描述和預設嚴重性。 若要查看屬性，請以滑鼠右鍵按一下規則並選取 [**屬性**]，或選取規則，然後按下**Alt** + **enter**。
+您可以在 [**屬性**] 視窗中，查看診斷的屬性，包括其描述和預設嚴重性。 若要查看屬性，請以滑鼠右鍵按一下規則並選取 [**屬性**]，或選取規則，然後按**Alt**+**enter**鍵。
 
 ![屬性視窗中的診斷屬性](media/analyzer-diagnostic-properties.png)
 
@@ -62,7 +62,7 @@ ms.locfileid: "71186024"
 
 | 嚴重性（方案總管） | 嚴重性（EditorConfig 檔案） | 組建時間行為 | 編輯器行為 |
 |-|-|-|
-| 錯誤 | `error` | 違規在錯誤清單和命令列組建輸出中會顯示為*錯誤*，並導致組建失敗。| 有問題的程式碼會加上紅色波浪線，並在捲軸中以小紅色方塊標示。 |
+| Error | `error` | 違規在錯誤清單和命令列組建輸出中會顯示為*錯誤*，並導致組建失敗。| 有問題的程式碼會加上紅色波浪線，並在捲軸中以小紅色方塊標示。 |
 | 警告 | `warning` | 違規在錯誤清單和命令列組建輸出中會顯示為*警告*，但不會導致組建失敗。 | 有問題的程式碼會加上綠色的彎曲，並以捲軸中的小綠色方塊標示。 |
 | 資訊 | `suggestion` | 違規會在錯誤清單中顯示為*訊息*，而不是在命令列組建輸出中。 | 有問題的程式碼會加上灰色的彎曲，並以捲軸中的小型灰色方塊標示。 |
 | Hidden | `silent` | 使用者看不到。 | 使用者看不到。 不過，診斷會回報給 IDE 診斷引擎。 |
@@ -93,7 +93,7 @@ ms.locfileid: "71186024"
 
 1. 如果您的專案還沒有 EditorConfig 檔案，請[加入一個](../ide/create-portable-custom-editor-options.md#add-an-editorconfig-file-to-a-project)檔案。
 
-2. 在對應的副檔名底下，為您要設定的每個規則新增一個專案。 例如，若要將檔案的[CA1822](ca1822-mark-members-as-static.md) `error` C#嚴重性設定為，此專案的外觀如下：
+2. 在對應的副檔名底下，為您要設定的每個規則新增一個專案。 例如，若要針對檔案將[CA1822](ca1822-mark-members-as-static.md)的嚴重性設定為 @no__t- C# 1，則專案看起來如下：
 
    ```ini
    [*.cs]
@@ -101,15 +101,15 @@ ms.locfileid: "71186024"
    ```
 
 > [!NOTE]
-> 針對 IDE 程式碼樣式分析器，您也可以使用不同的語法（例如） `dotnet_style_qualification_for_field = false:suggestion`，在 EditorConfig 檔案中進行設定。 不過，如果您使用`dotnet_diagnostic`語法來設定嚴重性，它的優先順序會較高。 如需詳細資訊，請參閱[EditorConfig 的語言慣例](../ide/editorconfig-language-conventions.md)。
+> 針對 IDE 程式碼樣式分析器，您也可以使用不同的語法（例如 `dotnet_style_qualification_for_field = false:suggestion`）在 EditorConfig 檔案中進行設定。 不過，如果您使用 `dotnet_diagnostic` 語法來設定嚴重性，則優先順序會較高。 如需詳細資訊，請參閱[EditorConfig 的語言慣例](../ide/editorconfig-language-conventions.md)。
 
 #### <a name="automatically-configure-rule-severity"></a>自動設定規則嚴重性
 
 Visual Studio 提供一個便利的方式，從 [[快速動作](../ide/quick-actions.md)] 燈泡功能表設定規則的嚴重性。
 
-1. 發生違規之後，將滑鼠停留在編輯器中的違規波浪上，然後開啟燈泡功能表。 或者，將游標放在行上，然後按**Ctrl** + **。** (句點)。
+1. 發生違規之後，將滑鼠停留在編輯器中的違規波浪上，然後開啟燈泡功能表。 或者，將游標放在行上，然後按**Ctrl**+ **。** (句點)。
 
-2. 從燈泡功能表中，選取 [**設定] 或 [隱藏問題** > ] [  **\<設定規則識別碼 > 嚴重性**]。
+2. 從燈泡功能表中，選取 **設定或隱藏問題** >**設定 @no__t 3rule 識別碼 > 嚴重性**。
 
    ![從 Visual Studio 中的燈泡功能表設定規則嚴重性](media/configure-rule-severity.png)
 
@@ -126,7 +126,7 @@ Visual Studio 提供一個便利的方式，從 [[快速動作](../ide/quick-act
 
 ### <a name="set-rule-severity-from-solution-explorer"></a>從方案總管設定規則嚴重性
 
-1. 在**方案總管**中，展開 [**參考** >  **]**  > **分析器**（或適用于 .net Core 專案的相依性**分析器**）。
+1. 在**方案總管**中，展開 [**參考**]  > **分析器**（或適用于 .net Core 專案的 [相依性 **]**  > **分析器**）。
 
 1. 展開包含您要為其設定嚴重性之規則的元件。
 
@@ -138,9 +138,9 @@ Visual Studio 提供一個便利的方式，從 [[快速動作](../ide/quick-act
 
 ![方案總管中的規則集檔案](media/ruleset-in-solution-explorer.png)
 
-1. 在**方案總管**中按兩下作用中的[規則集](analyzer-rule-sets.md)檔案，然後在 [**參考** > **分析器**] 節點的右鍵功能表上選取 [開啟作用中**規則集**]，或選取 [**開啟**于]專案的 [程式**代碼分析**] 屬性頁。
+1. 在**方案總管**中按兩下作用中的[規則集](analyzer-rule-sets.md)檔案，然後在 [**參考** > **分析器**] 節點的右鍵功能表上選取 [開啟作用中**規則集**]，或選取 [ **開啟于]** 專案的 [程式碼分析] 屬性頁。
 
-   如果這是您第一次編輯規則集，Visual Studio 會建立預設規則集檔案的複本，並將其 *\<* 命名為專案名稱 >。 此自訂規則集也會成為專案的作用中規則集。
+   如果這是您第一次編輯規則集，Visual Studio 會建立預設規則集檔案的複本，並將其命名為 *@no__t 1projectname > 規則*集，並將它新增至您的專案。 此自訂規則集也會成為專案的作用中規則集。
 
    > [!NOTE]
    > .NET Core 和 .NET Standard 專案不支援**方案總管**中規則集的功能表命令，例如，**開啟 Active rule Set**。 若要為 .NET Core 或 .NET Standard 專案指定非預設的規則集，請以手動方式[將**CodeAnalysisRuleSet**屬性新增](using-rule-sets-to-group-code-analysis-rules.md#specify-a-rule-set-for-a-project)至專案檔。 您仍然可以在 Visual Studio 規則集編輯器 UI 中的規則集內設定規則。
@@ -159,13 +159,21 @@ Visual Studio 提供一個便利的方式，從 [[快速動作](../ide/quick-act
 
 - 在**EditorConfig**檔案中
 
-  將嚴重性設定為`none`， `dotnet_diagnostic.CA1822.severity = none`例如。
-
-::: moniker-end
+  將嚴重性設定為 `none`，例如 `dotnet_diagnostic.CA1822.severity = none`。
 
 - 從 [**分析**] 功能表
 
-  選取 [**分析** > ] [**執行程式碼分析] 並隱藏**功能表列上的 [作用中問題]，以隱藏所有目前的違規 這有時稱為「基準化」。
+  選取 [**分析** > **組建]，並隱藏**功能表列上的 [作用中問題]，以隱藏所有目前的違規。 這有時稱為「基準化」。
+
+::: moniker-end
+
+::: moniker range="vs-2017"
+
+- 從 [**分析**] 功能表
+
+  選取 [**分析** > ] [**執行程式碼分析] 並隱藏**功能表列上的 [作用中問題]，以隱藏所有目前的違規。 這有時稱為「基準化」。
+
+::: moniker-end
 
 - 從**方案總管**
 
@@ -177,19 +185,19 @@ Visual Studio 提供一個便利的方式，從 [[快速動作](../ide/quick-act
 
 - 從程式**代碼編輯器**
 
-  將游標放在含有違規的程式程式碼中，然後按**Ctrl** +**句號（.）** 來開啟 [**快速動作**] 功能表。 選取 [隱藏**來源/** 隱藏專案檔中的**CAXXXX**  > ]。
+  將游標放在含有違規的程式程式碼中，然後按**Ctrl**+**句號（.）** 來開啟 [**快速動作**] 功能表。 選取 [在隱藏專案檔**中** **隱藏 CAXXXX** > ]。
 
   ![隱藏 [快速動作] 功能表中的診斷](media/suppress-diagnostic-from-editor.png)
 
 - 從**錯誤清單**
 
-  選取您想要隱藏的規則，然後以滑鼠右鍵按一下並選取 [**在來源/** 隱藏專案檔中**隱藏** > ]。
+  選取您要隱藏的規則，然後以滑鼠右鍵按一下並選取 [**隱藏** **來源/** 檔案中的  > ]。
 
   - 如果您**在 [來源] 中**隱藏，[**預覽變更**] 對話方塊隨即開啟， C#並顯示已新增至原始程式碼的[#pragma 警告](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-pragma-warning)或 Visual Basic [#Disable 警告](/dotnet/visual-basic/language-reference/directives/directives)指示詞的預覽。
 
     ![在程式碼檔案中新增 #pragma 警告的預覽](media/pragma-warning-preview.png)
 
-  - 如果您選取 [**在隱藏**專案檔中]，[**預覽變更**] 對話方塊隨即開啟<xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> ，並顯示已新增至全域隱藏專案檔案的屬性預覽。
+  - 如果您選取 [**在隱藏**專案檔中]，[**預覽變更**] 對話方塊隨即開啟，並顯示新增至全域隱藏專案檔案的 @no__t 2 屬性預覽。
 
     ![將 SuppressMessage 屬性新增至隱藏專案檔案的預覽](media/preview-changes-in-suppression-file.png)
 

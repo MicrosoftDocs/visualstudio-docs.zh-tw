@@ -1,5 +1,5 @@
 ---
-title: 同步處理專案規則集與簽入原則
+title: 使用簽入原則同步處理專案規則集
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -10,57 +10,65 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 80d13afe27eab28c88d2513b6c8be986ab1c960a
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 3a35ba1b9d54507883882fbe62c0533805882560
+ms.sourcegitcommit: 39a04f42d23597b70053686d7e927ba78f38a9a8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66260854"
+ms.lasthandoff: 10/05/2019
+ms.locfileid: "71975064"
 ---
-# <a name="how-to-synchronize-code-project-rule-sets-with-an-azure-devops-project-check-in-policy"></a>作法：Azure DevOps 專案簽入原則與同步處理程式碼專案規則集
+# <a name="how-to-synchronize-code-project-rule-sets-with-an-azure-devops-project-check-in-policy"></a>HOW TO：同步處理常式代碼專案規則集與 Azure DevOps 專案簽入原則
 
-您可以同步至 Azure 的 DevOps 專案的簽入原則的程式碼專案的程式碼分析設定藉由指定規則集，其中包含最少的規則集簽入原則中指定的規則。 您的名稱和位置的規則集簽入原則，就會通知您的開發人員潛在客戶。 您可以使用下列選項之一，確保專案的程式碼分析會使用一組正確的規則：
+您可以藉由指定規則集，將程式碼專案的程式碼分析設定同步處理至 Azure DevOps 專案的簽入原則，其方式是在簽入原則的規則集中指定至少包含規則。 您的開發人員主管可以通知您簽入原則的規則集名稱和位置。 您可以使用下列其中一個選項，以確保專案的程式碼分析會使用正確的規則集：
 
-- 簽入原則會使用其中一個 Microsoft 內建規則集，如果開啟的程式碼專案的 屬性 對話方塊中，顯示程式碼分析 頁面中，並選取規則集的程式碼專案設定的程式碼分析 頁面上。 Microsoft 標準規則集隨 Visual Studio 自動安裝設定為唯讀，並不應編輯。 如果不編輯規則集，保證中的原則和本機規則集的規則比對。
+- 如果簽入原則使用其中一個 Microsoft 內建規則集，請開啟程式碼專案的 [屬性] 對話方塊，顯示 [程式碼分析] 頁面，然後選取規則集。 Microsoft standard 規則集會自動安裝，Visual Studio 設定為唯讀且不應編輯。 如果未編輯規則集，則會保證原則和本機規則集中的規則會符合。
 
-- 如果簽入原則會使用自訂規則集，執行規則集檔案的 「 取得 」 作業建立的本機複本的版本控制中。 然後該區域中指定位置的程式碼專案的程式碼分析設定。 規則来符合的規則集簽入原則的最新狀態是否保證。
+- 如果簽入原則使用自訂規則集，請在版本控制中的規則集檔案上執行 get 作業，以建立本機複本。 然後在程式碼專案的程式碼分析設定中指定該本機位置。 如果簽入原則的規則集是最新狀態，則保證規則會相符。
 
-     如果您將版本控制的位置對應至本機資料夾中程式碼專案的相同 Azure DevOps 專案根關聯性時，規則的位置會設定使用相對路徑。 相對路徑可確保程式碼分析的程式碼專案設定，可以移至其他電腦。
+     如果您將版本控制位置對應至與 Azure DevOps 專案根目錄相同的本機資料夾，做為您的程式碼專案，則會使用相對路徑來設定規則的位置。 相對路徑可確保程式碼分析的程式碼專案設定可移至其他電腦。
 
-- 自訂規則集簽入原則中的程式碼專案的複本。 請確定新的規則集包含簽入原則中的所有規則和任何其他您想要包含的規則。 您必須確定規則集包含所有規則，在簽入原則設定的規則。
+- 針對程式碼專案的簽入原則自訂規則集的複本。 請確定新的規則集包含簽入原則中的所有規則，以及您想要包含的任何其他規則。 您必須確定您的規則集包含簽入原則之規則集中的所有規則。
 
-## <a name="to-specify-a-microsoft-standard-rule-set"></a>若要指定的 Microsoft 標準規則設定
+## <a name="to-specify-a-microsoft-standard-rule-set"></a>若要指定 Microsoft standard 規則集
 
 1. 在 **方案總管**，以滑鼠右鍵按一下程式碼專案，然後按一下 **屬性**。
 
-2. 按一下 **程式碼分析**。
+2. 按一下 [程式**代碼分析**]。
 
-3. 在 **執行此規則集**清單中，按一下 簽入原則規則集。
+::: moniker range="vs-2017"
 
-## <a name="to-specify-a-custom-check-in-policy-rule-set"></a>若要指定自訂簽入原則規則設定
+3. 在 [**執行此規則集**] 清單中，選取 [簽入原則] 規則集。
 
-1. 如有必要，執行指定的簽入原則的規則集檔案的 「 取得 」 作業。
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+3. 在 [作用中**規則**] 清單中，選取 [簽入原則] 規則集。
+
+::: moniker-end
+
+## <a name="to-specify-a-custom-check-in-policy-rule-set"></a>若要指定自訂簽入原則規則集
+
+1. 如有必要，請在指定簽入原則的規則集檔案上執行 get 作業。
 
 2. 在 **方案總管**，以滑鼠右鍵按一下程式碼專案，然後按一下 **屬性**。
 
-3. 按一下 **程式碼分析**。
+3. 按一下 [程式**代碼分析**]。
 
-4. 在 [**執行此規則集**清單中，按一下 **\<瀏覽]>** 。
+::: moniker range="vs-2017"
 
-5. 在 **開啟**對話方塊方塊中，指定的簽入原則規則集檔案。
+4. 在 [**執行此規則集**] 清單中，按一下 [ **\<Browse >** ]。
 
-## <a name="to-create-a-custom-rule-set-for-a-code-project"></a>若要建立自訂規則設定程式碼專案
+::: moniker-end
 
-1. 請遵循下列其中一個稍早在本主題來選取 Azure DevOps 專案在專案的 [設定] 對話方塊的 [程式碼分析] 頁面上的簽入原則中的程序。
+::: moniker range=">=vs-2019"
 
-2. 按一下 [開啟]  。
+4. 在 [作用中**規則**] 清單中，按一下 [ **\<Browse >** ]。
 
-3. 新增或移除規則，使用[規則集編輯器](../code-quality/working-in-the-code-analysis-rule-set-editor.md)。
+::: moniker-end
 
-4. 儲存修改過的規則設定為 本機電腦上的.ruleset 檔案或 UNC 路徑。
+5. 在 [**開啟**] 對話方塊中，指定簽入原則規則集檔案。
 
-5. 開啟 [屬性] 對話方塊中，程式碼專案，並顯示**程式碼分析**頁面。
+## <a name="to-create-a-custom-rule-set-for-a-code-project"></a>若要建立程式碼專案的自訂規則集
 
-6. 在 [**執行此規則集**清單中，按一下 **\<瀏覽]>** 。
-
-7. 在 **開啟**對話方塊方塊中，指定的規則集檔案。
+如需建立自訂規則集的詳細資訊，請參閱[自訂規則集](how-to-create-a-custom-rule-set.md)。

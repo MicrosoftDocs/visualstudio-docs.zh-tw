@@ -1,5 +1,5 @@
 ---
-title: 自訂程式碼分析簽入原則，針對 managed 程式碼
+title: 受控碼的自訂程式碼分析簽入原則
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6619e3bb988a555fba5718f609ff3a5f0584063b
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 55294f7418de085cb4ceccd4063a4b2b55cbc6c4
+ms.sourcegitcommit: 39a04f42d23597b70053686d7e927ba78f38a9a8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66260833"
+ms.lasthandoff: 10/05/2019
+ms.locfileid: "71975027"
 ---
 # <a name="implement-custom-code-analysis-check-in-policies-for-managed-code"></a>為受控碼實作自訂程式碼分析簽入原則
 
@@ -110,10 +110,18 @@ ms.locfileid: "66260833"
 
 4. 如有必要，按一下適當的選項，在**組態**並**平台**列出。
 
-5. 若要執行程式碼分析程式碼專案使用指定的組態建置每次，請選取**啟用建置程式碼分析 （定義 CODE_ANALYSIS 常數）** 核取方塊。
+::: moniker range="vs-2017"
 
-6. 若要忽略來自其他公司元件中的程式碼，請選取**隱藏所產生的程式碼的結果** 核取方塊。
+5. 若要在每次使用指定的設定來建立程式碼專案時執行程式碼分析，請選取 [**在組建上啟用程式碼分析**]。
 
-7. 在 [**執行此規則集**清單中，按一下 **\<瀏覽]>** 。
+::: moniker-end
 
-8. 指定簽入原則的規則集檔案的本機版本。
+::: moniker range=">=vs-2019"
+
+5. 若要在每次使用指定的設定來建立程式碼專案時執行程式碼分析，請選取 [**二進位分析器**] 區段中的 [**在組建上執行**]。
+
+::: moniker-end
+
+6. 在 [**執行此規則集**] 清單中，按一下 [ **\<Browse >** ]。
+
+8. 選取簽入原則規則集檔案的本機版本。

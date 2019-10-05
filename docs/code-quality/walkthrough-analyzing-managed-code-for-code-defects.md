@@ -10,34 +10,28 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4a00fdb2a41a03554113f2ecb626185aab2c74d5
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 74a772bbe915227bca001f9370980cbc7d3212a5
+ms.sourcegitcommit: 39a04f42d23597b70053686d7e927ba78f38a9a8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69548006"
+ms.lasthandoff: 10/05/2019
+ms.locfileid: "71974896"
 ---
 # <a name="walkthrough-use-static-code-analysis-to-find-code-defects"></a>逐步解說：使用靜態程式碼分析來尋找程式碼缺失
 
-在此逐步解說中, 您將使用舊版程式碼分析, 分析 managed 專案中的程式碼缺失。
+在此逐步解說中，您將使用舊版程式碼分析，分析 managed 專案中的程式碼缺失。
 
-本文會逐步引導您使用舊版分析來分析您的 .NET managed 程式碼元件, 以符合 .NET 設計方針。
+本文會逐步引導您使用舊版分析來分析您的 .NET managed 程式碼元件，以符合 .NET 設計方針。
 
 ## <a name="create-a-class-library"></a>建立類別庫
 
-### <a name="to-create-a-class-library"></a>若要建立類別庫
+1. 開啟 Visual Studio，然後從 [**類別庫] （.NET Framework）** 範本建立新的專案。
 
-1. 在 [檔案] 功能表上，選擇 [新增] > [專案]。
+1. 將專案命名為**CodeAnalysisManagedDemo**。
 
-1. 在 [**新增專案**] 對話方塊中, 展開 [**已安裝** > 的**視覺效果C#** ], 然後選擇 [ **Windows 桌面**]。
+1. 建立專案之後，請開啟*Class1.cs*檔案。
 
-1. 選擇 [**類別庫 (.NET Framework)** ] 範本。
-
-1. 在 [**名稱**] 文字方塊中, 輸入**CodeAnalysisManagedDemo** , 然後按一下 **[確定]** 。
-
-1. 建立專案之後, 請開啟*Class1.cs*檔案。
-
-1. 將 Class1.cs 中的現有文字取代為下列程式碼:
+1. 將 Class1.cs 中的現有文字取代為下列程式碼：
 
    ```csharp
    using System;
@@ -55,85 +49,73 @@ ms.locfileid: "69548006"
 
 1. 儲存 Class1.cs 檔案。
 
-## <a name="analyze-the-project"></a>分析專案
-
-### <a name="to-analyze-a-managed-project-for-code-defects"></a>若要分析 managed 專案的程式碼缺失
+## <a name="analyze-the-project-for-code-defects"></a>分析專案中的程式碼缺失
 
 1. 在**方案總管**中選取 [CodeAnalysisManagedDemo] 專案。
 
-1. 在 [專案] 功能表上，按一下 [屬性]。
+2. 在 [專案] 功能表上，按一下 [屬性]。
 
-     [CodeAnalysisManagedDemo 屬性] 頁面隨即顯示。
+   [CodeAnalysisManagedDemo 屬性] 頁面隨即顯示。
 
-1. 選擇 [程式**代碼分析**] 索引標籤。
+3. 選擇 [程式**代碼分析**] 索引標籤。
 
-1. 請確定已核取 [**在組建上啟用程式碼分析**]。
+::: moniker range="vs-2017"
 
-1. 從 [**執行此規則集**] 下拉式清單中, 選取 [ **Microsoft 所有規則**]。
+4. 請確定已選取 [**在組建上啟用程式碼分析**]。
 
-1. 在 [檔案] 功能表上, 按一下 [**儲存選取的專案**], 然後關閉 [屬性] 頁面。
+5. 從 [**執行此規則集**] 下拉式清單中，選取 [ **Microsoft 所有規則**]。
 
-1. 在 [**建立**] 功能表上, 按一下 [**建立 CodeAnalysisManagedDemo**]。
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+4. 請確定已在 [**二進位分析器**] 區段中選取 [**在組建上執行**]。
+
+5. 從 [作用中**規則**] 下拉式清單中，選取 [ **Microsoft 所有規則**]。
+
+::: moniker-end
+
+6. **在 [檔案**] 功能表上，按一下 [**儲存選取的專案**]，然後關閉 [屬性] 頁面。
+
+7. 在 [**建立**] 功能表上，按一下 [**建立 CodeAnalysisManagedDemo**]。
 
     [**錯誤清單**] 和 [**輸出**] 視窗中會顯示 CodeAnalysisManagedDemo 專案組建警告。
 
 ## <a name="correct-the-code-analysis-issues"></a>更正程式碼分析問題
 
-### <a name="to-correct-code-analysis-rule-violations"></a>更正程式碼分析規則違規
+1. 在 [ **View** ] 功能表上，選擇 [**錯誤清單**]。
 
-1. 在 [ **View** ] 功能表上, 選擇 [**錯誤清單**]。
-
-    視您選擇的開發人員設定檔而定, 您可能必須指向 [ **View** ] 功能表上的 [**其他視窗**], 然後選擇 [**錯誤清單**]。
+    視您選擇的開發人員設定檔而定，您可能必須指向 [ **View** ] 功能表上的 [**其他視窗**]，然後選擇 [**錯誤清單**]。
 
 1. 在 [方案總管] 中選擇 [顯示所有檔案]。
 
-1. 展開 [屬性] 節點, 然後開啟*AssemblyInfo.cs*檔案。
+1. 展開 [屬性] 節點，然後開啟*AssemblyInfo.cs*檔案。
 
-1. 使用下列秘訣來更正警告:
+1. 使用下列秘訣來更正警告：
 
-   [CA1014以 CLSCompliantAttribute](../code-quality/ca1014-mark-assemblies-with-clscompliantattribute.md)標記元件:Microsoft. Design: ' demo ' 應該以 CLSCompliantAttribute 標記, 其值應為 true。
+   [CA1014：以 CLSCompliantAttribute @ no__t-0 標記元件：將 `[assembly: CLSCompliant(true)]` 的程式碼新增至 AssemblyInfo.cs 檔案的結尾。
 
-   1. 將程式碼`using System;`新增至 AssemblyInfo.cs 檔案。
+   [CA1032：執行標準例外狀況構造函式 @ no__t-0：將 `public demo (String s) : base(s) { }` 的函式新增至類別 `demo`。
 
-   1. 接下來, 將程式`[assembly: CLSCompliant(true)]`代碼新增至 AssemblyInfo.cs 檔案的結尾。
+   [CA1032：執行標準例外狀況構造函式 @ no__t-0：將 `public demo (String s, Exception e) : base(s, e) { }` 的函式新增至類別 `demo`。
 
-   [CA1032 必須執行標準的例外](../code-quality/ca1032-implement-standard-exception-constructors.md)狀況構造函式:Microsoft. Design:將下列函式新增至這個類別: 公用示範 (字串)
+   [CA1032：執行標準例外狀況構造函式 @ no__t-0：將 `protected demo (SerializationInfo info, StreamingContext context) : base(info, context) { }` 的函數新增至類別示範。 您也需要為 <xref:System.Runtime.Serialization?displayProperty=fullName> 新增 `using` 語句。
 
-   1. 將此函數`public demo (String s) : base(s) { }`新增至類別`demo`。
+   [CA1032：執行標準例外狀況構造函式 @ no__t-0：將 `public demo () : base() { }` 的函式新增至類別 `demo`。
 
-   [CA1032 必須執行標準的例外](../code-quality/ca1032-implement-standard-exception-constructors.md)狀況構造函式:Microsoft. Design:將下列函式新增至這個類別: 公用示範 (String、Exception)
+   [CA1709：識別碼的大小寫應正確 @ no__t-0：將命名空間的大小寫 `testCode` 變更為 `TestCode`。
 
-   1. 將此函數`public demo (String s, Exception e) : base(s, e) { }`新增至類別`demo`。
+   [CA1709：識別碼的大小寫應正確 @ no__t-0：將成員的名稱變更為 `Demo`。
 
-   [CA1032 必須執行標準的例外](../code-quality/ca1032-implement-standard-exception-constructors.md)狀況構造函式:Microsoft. Design:將下列函式新增至這個類別: 受保護的示範 (SerializationInfo、StreamingCoNtext)
+   [CA1709：識別碼的大小寫應正確 @ no__t-0：將成員的名稱變更為 `Item`。
 
-   1. 將程式碼`using System.Runtime.Serialization;`新增至 Class1.cs 檔案的開頭。
+   [CA1710：識別碼應該有正確的後置字元 @ no__t-0：將類別的名稱和其構造函式變更為 `DemoException`。
 
-   1. 接下來, 新增此函式`protected demo (SerializationInfo info, StreamingContext context) : base(info, context) { } to the class demo.`
+   [CA2237：將 ISerializable 類型標記為 SerializableAttribute @ no__t-0：將 `[Serializable ()]` 屬性新增至類別 `demo`。
 
-   [CA1032 必須執行標準的例外](../code-quality/ca1032-implement-standard-exception-constructors.md)狀況構造函式:Microsoft. Design:將下列函式新增至這個類別: 公用示範 ()
+   [CA2210：元件應該具有有效的強式名稱 @ no__t-0：使用強式名稱金鑰來簽署 ' CodeAnalysisManagedDemo '：
 
-   1. 將此函數`public demo () : base() { }`新增至類別`demo` **。**
-
-   [CA1709識別碼的大小寫應](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)正確:Microsoft。命名:將命名空間名稱 ' testCode ' 變更為 ' TestCode ', 藉此修正其大小寫。
-
-   1. 將命名空間`testCode`的大小寫變更`TestCode`為。
-
-   [CA1709識別碼的大小寫應](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)正確:Microsoft。命名:將類型名稱「示範」變更為「示範」, 以更正其大小寫。
-
-   1. 將成員的名稱變更為`Demo`。
-
-   [CA1709識別碼的大小寫應](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)正確:Microsoft。命名:將成員名稱 ' item ' 的大小寫變更為 ' Item ', 以更正其大小寫。
-
-   1. 將成員的名稱變更為`Item`。
-
-   [CA1710識別碼應該有正確的](../code-quality/ca1710-identifiers-should-have-correct-suffix.md)尾碼:Microsoft。命名:將 ' testCode ' 重新命名為 ' Exception ' 結尾。
-
-   1. 將類別的名稱和其構造函式變更`DemoException`為。
-
-   [CA2210元件應該具有有效的強](../code-quality/ca2210-assemblies-should-have-valid-strong-names.md)名稱:以強式名稱金鑰簽署 ' CodeAnalysisManagedDemo '。
-
-   1. 在 [**專案**] 功能表上, 選擇 [ **CodeAnalysisManagedDemo 屬性**]。
+   1. 在 [**專案**] 功能表上，選擇 [ **CodeAnalysisManagedDemo 屬性**]。
 
       專案屬性隨即出現。
 
@@ -141,21 +123,17 @@ ms.locfileid: "69548006"
 
    1. 選取 [**簽署元件**] 核取方塊。
 
-   1. 在 **選擇字串名稱金鑰檔**清單中，選取 **\<新增...>** 。
+   1. 在 [**選擇字串名稱金鑰**檔] 清單中，選取 [ **\<New >** ]。
 
       [**建立強式名稱金鑰**] 對話方塊隨即出現。
 
-   1. 在機**碼檔案名**中, 輸入 y。
+   1. 針對 [**金鑰檔名稱**]，輸入**y**。
 
-   1. 輸入密碼, 然後選擇 **[確定]** 。
+   1. 輸入密碼，然後選擇 **[確定]** 。
 
-   1. 在 [檔案] 功能表上, 選擇 [**儲存選取的專案**], 然後關閉屬性頁。
+   1. 在 [檔案 **] 功能表上，選擇 [** **儲存選取的專案**]，然後關閉屬性頁。
 
-   [CA2237：使用 SerializableAttribute](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md)標記 ISerializable 類型:Microsoft。使用方式:將 [Serializable] 屬性加入至類型 ' demo ', 因為此類型會執行 ISerializable。
-
-   1. 將屬性加入至類別`demo`。 `[Serializable ()]`
-
-   完成變更之後, Class1.cs 檔案看起來應該如下所示:
+   完成所有變更之後，Class1.cs 檔案看起來應該如下所示：
 
    ```csharp
    using System;
@@ -182,11 +160,11 @@ ms.locfileid: "69548006"
 
 ## <a name="exclude-code-analysis-warnings"></a>排除程式碼分析警告
 
-1. 針對每個剩餘的警告, 執行下列動作:
+1. 針對每個剩餘的警告，執行下列動作：
 
     1. 在 **錯誤清單**中選取警告。
 
-    1. 從右鍵功能表 (操作功能表), 選擇 [**在隱藏**專案檔中**隱藏** > ]。
+    1. 從右鍵功能表（操作功能表），選擇 [**隱藏** **隱藏專案中**的  > ]。
 
 1. 重建專案。
 
