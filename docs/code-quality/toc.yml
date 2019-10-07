@@ -4,7 +4,8 @@
   items:
     - name: 總覽
       href: code-analysis-for-managed-code-overview.md
-    - name: 程式碼分析
+    - name: 原始程式碼分析
+      expanded: true
       items:
         - name: 總覽
           displayName: 'roslyn analyzers, source analysis'
@@ -13,10 +14,35 @@
           href: install-roslyn-analyzers.md
         - name: 設定
           href: use-roslyn-analyzers.md
+        - name: 停用程式碼分析
+          href: disable-code-analysis.md
         - name: 啟用完整解決方案分析
           href: how-to-enable-and-disable-full-solution-analysis-for-managed-code.md
         - name: 常見問題集
           href: analyzers-faq.md
+        - name: FxCop 分析器
+          items:
+            - name: 總覽
+              displayName: fxcop analyzers
+              href: fxcop-analyzers.yml
+            - name: 安裝
+              href: install-fxcop-analyzers.md
+            - name: 設定
+              items:
+                - name: 總覽
+                  href: configure-fxcop-analyzers.md
+                - name: 領域選項
+                  href: fxcop-analyzer-options.md
+                - name: 預先定義的規則集
+                  href: analyzer-rule-sets.md
+            - name: 常見問題集
+              href: fxcop-analyzers-faq.md
+        - name: 從舊版分析移轉到 FxCop 分析器
+          items:
+            - name: 總覽
+              href: fxcop-analyzers.yml
+            - name: 移植的規則
+              href: fxcop-rule-port-status.md
     - name: 舊版分析
       items:
         - name: 總覽
@@ -112,37 +138,12 @@
               href: how-to-synchronize-code-project-rule-sets-with-team-project-check-in-policy.md
             - name: 版本相容性
               href: version-compatibility-for-code-analysis-check-in-policies.md
-    - name: FxCop 分析器
-      items:
-        - name: 總覽
-          displayName: fxcop analyzers
-          href: fxcop-analyzers.yml
-        - name: 安裝
-          href: install-fxcop-analyzers.md
-        - name: 設定
-          items:
-            - name: 總覽
-              href: configure-fxcop-analyzers.md
-            - name: 領域選項
-              href: fxcop-analyzer-options.md
-            - name: 預先定義的規則集
-              href: analyzer-rule-sets.md
-        - name: 常見問題集
-          href: fxcop-analyzers-faq.md
-    - name: 從舊版分析移轉到 FxCop 分析器
-      items:
-        - name: 總覽
-          href: fxcop-analyzers.yml
-        - name: 移植的規則
-          href: fxcop-rule-port-status.md
     - name: 規則集
       items:
         - name: 總覽
           href: using-rule-sets-to-group-code-analysis-rules.md
         - name: 設定規則集
           href: how-to-configure-code-analysis-for-a-managed-code-project.md
-        - name: 設定 ASP.NET Web 應用程式的程式碼分析
-          href: how-to-configure-code-analysis-for-an-aspnet-web-application.md
         - name: 建立自訂規則集
           href: how-to-create-a-custom-rule-set.md
         - name: 使用規則集編輯器
@@ -558,6 +559,7 @@
             - name: 安全性警告
               items:
                 - name: 總覽
+                  displayName: security warnings
                   href: security-warnings.md
                 - name: 'CA2100:必須檢閱 SQL 查詢中是否有安全性弱點'
                   href: ca2100-review-sql-queries-for-security-vulnerabilities.md
