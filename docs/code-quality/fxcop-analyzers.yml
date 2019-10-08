@@ -13,12 +13,12 @@ metadata:
   ms.author: gewarren
   manager: jillfra
   ms.date: 09/24/2019
-  ms.openlocfilehash: c0f2a4bfbeebac879359955e9e4b23a8d3fc6356
-  ms.sourcegitcommit: 528178a304e66c0cb7ab98b493fe3c409f87493a
+  ms.openlocfilehash: 5da2ad0c0fbede17efc4246fca52a28124a4f2cd
+  ms.sourcegitcommit: 7825d4163e52d724e59f6c0da209af5fbef673f7
   ms.translationtype: MT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 09/25/2019
-  ms.locfileid: "71273291"
+  ms.lasthandoff: 10/07/2019
+  ms.locfileid: "72000131"
 landingContent:
 - title: 程式碼分析簡介
   linkLists:
@@ -41,7 +41,7 @@ landingContent:
   - linkListType: overview
     links:
     - text: 有何不同
-      url: roslyn-analyzers-overview.md#net-compiler-platform-based-analysis-versus-legacy-analysis
+      url: roslyn-analyzers-overview.md#source-code-analysis-versus-legacy-analysis
   - linkListType: get-started
     links:
     - text: FxCop 分析器的常見問題
