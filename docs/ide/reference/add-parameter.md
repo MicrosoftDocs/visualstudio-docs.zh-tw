@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3e1461afe5c4d6026f8532896ba837e971fed652
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 4dbed81809cb3b69814fbf10dde7129b45396eaa
+ms.sourcegitcommit: 7825d4163e52d724e59f6c0da209af5fbef673f7
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62792253"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72000204"
 ---
 # <a name="add-a-parameter-to-a-method-using-a-quick-action"></a>使用快速動作將參數新增至方法
 
@@ -32,14 +32,14 @@ ms.locfileid: "62792253"
 
 1. 為方法呼叫新增額外的引數。
 
-   在您呼叫它的方法名稱下面會出現一個紅色的「曲線」。
+   在您呼叫它的方法名稱底下會出現紅色波浪線。
 
-2. 將指標置於紅色「曲線」上，直到出現 [快速動作] 功能表。 選取 [快速動作] 功能表上的**向下鍵**，然後選取 [將參數新增至 [方法]]。
+2. 將指標放在紅色曲線上，直到 [快速動作] 功能表出現為止。 選取 [快速動作] 功能表上的**向下鍵**，然後選取 [將參數新增至 [方法]]。
 
    ![在 Visual Studio 中將參數新增至方法快速動作](media/add-parameter-to-method.png)
 
    > [!TIP]
-   > 您也可以透過將游標放在方法呼叫的行上，然後按 **Ctrl**+**.** 或選取檔案邊界中的燈泡圖示，來存取 [快速動作] 功能表。
+   > 您也可以透過將游標放在方法呼叫的行上，然後按 **Ctrl**+ **.** （期間），或選取檔案邊界中的燈泡圖示。
 
    Visual Studio 會將新參數新增至方法宣告中。
 

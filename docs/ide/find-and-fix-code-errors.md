@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 30ee7364ba925eebb18d66fc8ede2b7983d46116
-ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.openlocfilehash: 331c346e7322543bef0814818a776c705b773846
+ms.sourcegitcommit: 7825d4163e52d724e59f6c0da209af5fbef673f7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71211365"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72000188"
 ---
 # <a name="make-code-work-in-visual-studio"></a>讓程式碼在 Visual Studio 中運作
 
@@ -74,7 +74,7 @@ Visual Studio 提供一組強大的整合式專案建置和偵錯工具。 在�
 
 ### <a name="c-and-visual-basic-code-analysis"></a>C# 和 Visual Basic 程式碼分析
 
-Visual Studio 包含一組內建的 [.NET Compiler Platform 分析器](../code-quality/roslyn-analyzers-overview.md)，其會檢查您鍵入的 C# 和 Visual Basic 程式碼。 您可以將其他分析器安裝為 Visual Studio 延伸模組或 NuGet 套件。 如果發現違反規則，則會在程式碼編輯器中將違反的程式碼加上波浪底線，並在 [錯誤清單] 中回報這些違規。
+Visual Studio 包含一組內建的 [.NET Compiler Platform 分析器](../code-quality/roslyn-analyzers-overview.md)，其會檢查您鍵入的 C# 和 Visual Basic 程式碼。 您可以將其他分析器安裝為 Visual Studio 延伸模組或 NuGet 套件。 如果發現違反規則，則會在錯誤清單和程式碼編輯器中，將其報告為違規程序代碼下的波浪線。
 
 ### <a name="c-code-analysis"></a>C++ 程式碼分析
 

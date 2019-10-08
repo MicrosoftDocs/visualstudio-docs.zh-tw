@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 644c73dea58936773acde98ccc535dfc61979288
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 13da6cd34df3996fe837aee89ce4f379027dd409
+ms.sourcegitcommit: 7825d4163e52d724e59f6c0da209af5fbef673f7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71251696"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72000154"
 ---
 # <a name="net-naming-conventions-for-editorconfig"></a>EditorConfig 的 .NET 命名慣例
 
@@ -226,7 +226,7 @@ dotnet_naming_rule.public_members_must_be_capitalized.severity = suggestion
 dotnet_naming_rule.public_members_must_be_capitalized.severity = warning
 ```
 
-如果您關閉並重新開啟程式碼檔，則相較於之前於名稱違規下方可看見建議的情況，您現在會在 [錯誤清單] 中看見彎曲的綠色警告：
+如果您關閉並重新開啟程式碼檔案，而不是在名稱違規之下看到建議，您會在錯誤清單中看到綠色波浪線和警告：
 
 ![命名規則警告](media/editorconfig-naming-rule-warning.png)
 

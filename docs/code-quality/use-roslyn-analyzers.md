@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3222509ccc5ec20cd1433d215ca3d69609af6bcb
-ms.sourcegitcommit: 39a04f42d23597b70053686d7e927ba78f38a9a8
+ms.openlocfilehash: c50eadf9c26eaca4c5495dfbc55a1b266aecdb90
+ms.sourcegitcommit: 7825d4163e52d724e59f6c0da209af5fbef673f7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/05/2019
-ms.locfileid: "71975026"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72000009"
 ---
 # <a name="use-code-analyzers"></a>使用程式碼分析器
 
@@ -62,9 +62,9 @@ ms.locfileid: "71975026"
 
 | 嚴重性（方案總管） | 嚴重性（EditorConfig 檔案） | 組建時間行為 | 編輯器行為 |
 |-|-|-|
-| Error | `error` | 違規在錯誤清單和命令列組建輸出中會顯示為*錯誤*，並導致組建失敗。| 有問題的程式碼會加上紅色波浪線，並在捲軸中以小紅色方塊標示。 |
-| 警告 | `warning` | 違規在錯誤清單和命令列組建輸出中會顯示為*警告*，但不會導致組建失敗。 | 有問題的程式碼會加上綠色的彎曲，並以捲軸中的小綠色方塊標示。 |
-| 資訊 | `suggestion` | 違規會在錯誤清單中顯示為*訊息*，而不是在命令列組建輸出中。 | 有問題的程式碼會加上灰色的彎曲，並以捲軸中的小型灰色方塊標示。 |
+| Error | `error` | 違規在錯誤清單和命令列組建輸出中會顯示為*錯誤*，並導致組建失敗。| 有問題的程式碼會加上紅色波浪線，並以捲軸中的小紅色方塊標示。 |
+| 警告 | `warning` | 違規在錯誤清單和命令列組建輸出中會顯示為*警告*，但不會導致組建失敗。 | 有問題的程式碼會加上綠色波浪線，並以捲軸中的小綠色方塊標示。 |
+| 資訊 | `suggestion` | 違規會在錯誤清單中顯示為*訊息*，而不是在命令列組建輸出中。 | 有問題的程式碼會加上灰色波浪線，並以捲軸中的小型灰色方塊標示。 |
 | Hidden | `silent` | 使用者看不到。 | 使用者看不到。 不過，診斷會回報給 IDE 診斷引擎。 |
 | None | `none` | 已完全隱藏。 | 已完全隱藏。 |
 | 預設 | `default` | 對應至規則的預設嚴重性。 若要判斷規則的預設值是什麼，請查看屬性視窗。 | 對應至規則的預設嚴重性。 |
