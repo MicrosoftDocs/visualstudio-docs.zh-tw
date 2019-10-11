@@ -12,7 +12,7 @@
           href: roslyn-analyzers-overview.md
         - name: 安裝
           href: install-roslyn-analyzers.md
-        - name: 組態
+        - name: 設定
           href: use-roslyn-analyzers.md
         - name: 停用程式碼分析
           href: disable-code-analysis.md
@@ -27,13 +27,13 @@
               href: fxcop-analyzers.yml
             - name: 安裝
               href: install-fxcop-analyzers.md
-            - name: 組態
+            - name: 設定
               items:
                 - name: 總覽
                   href: configure-fxcop-analyzers.md
                 - name: 領域選項
                   href: fxcop-analyzer-options.md
-                - name: 預先定義的規則集
+                - name: 啟用規則的類別
                   href: analyzer-rule-sets.md
             - name: 常見問題集
               href: fxcop-analyzers-faq.md
@@ -54,7 +54,7 @@
           href: fxcop-analyzers.yml
         - name: 手動執行程式碼分析
           href: how-to-run-code-analysis-manually-for-managed-code.md
-        - name: 組態
+        - name: 設定
           items:
             - name: 設定舊版分析
               href: how-to-configure-code-analysis-for-a-managed-code-project.md
@@ -532,30 +532,30 @@
                   displayName: portability warnings
                   href: portability-warnings.md
                 - name: 'CA1900:實值類型欄位應該為可移植的'
-                  href: ca1900-value-type-fields-should-be-portable.md
+                  href: ca1900.md
                 - name: 'CA1901:P-Invoke 宣告應該為可移植的'
-                  href: ca1901-p-invoke-declarations-should-be-portable.md
+                  href: ca1901.md
                 - name: 'CA1903:只使用來自目標架構的 API'
-                  href: ca1903-use-only-api-from-targeted-framework.md
+                  href: ca1903.md
             - name: 可靠性警告
               items:
                 - name: 總覽
                   displayName: reliability warnings
                   href: reliability-warnings.md
                 - name: 'CA2000:必須在超出範圍前處置物件'
-                  href: ca2000-dispose-objects-before-losing-scope.md
+                  href: ca2000.md
                 - name: 'CA2001:避免呼叫有問題的方法'
-                  href: ca2001-avoid-calling-problematic-methods.md
+                  href: ca2001.md
                 - name: 'CA2002:不要鎖定具有弱式識別的物件'
-                  href: ca2002-do-not-lock-on-objects-with-weak-identity.md
+                  href: ca2002.md
                 - name: 'CA2003:不要將 Fiber 視為執行緒'
-                  href: ca2003-do-not-treat-fibers-as-threads.md
+                  href: ca2003.md
                 - name: 'CA2004:必須移除對 GC.KeepAlive 的呼叫'
-                  href: ca2004-remove-calls-to-gc-keepalive.md
+                  href: ca2004.md
                 - name: 'CA2006:必須使用 SafeHandle 封裝原生資源'
-                  href: ca2006-use-safehandle-to-encapsulate-native-resources.md
+                  href: ca2006.md
                 - name: 'CA2007:不直接等候工作'
-                  href: ca2007-do-not-directly-await-task.md
+                  href: ca2007.md
             - name: 安全性警告
               items:
                 - name: 總覽
@@ -847,7 +847,7 @@
       href: quick-start-code-analysis-for-c-cpp.md
     - name: 分析 C/C++ 程式碼的缺失
       href: walkthrough-analyzing-c-cpp-code-for-defects.md
-    - name: 示範範例
+    - name: 範例專案
       href: demo-sample.md
     - name: 使用 C++ Core Guidelines 檢查工具
       href: using-the-cpp-core-guidelines-checkers.md
@@ -855,6 +855,8 @@
       href: how-to-set-code-analysis-properties-for-c-cpp-projects.md
     - name: C++ 程式碼的規則集
       href: using-rule-sets-to-specify-the-cpp-rules-to-run.md
+    - name: 使用 Clang-Tidy
+      href: clang-tidy.md
     - name: 使用 SAL 註釋以減少程式碼的缺失
       items:
         - name: 總覽

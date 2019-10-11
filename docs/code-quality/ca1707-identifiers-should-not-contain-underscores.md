@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: adfa0ccd63d0433d367b0e7278693608bb83d685
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 5ba9e8dda927edca08565b088cbde90d63443908
+ms.sourcegitcommit: 3e94d9fb6dc56fa8b23fbacd5d11cf8d6e7e18f1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71234275"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "72252580"
 ---
 # <a name="ca1707-identifiers-should-not-contain-underscores"></a>CA1707:識別項名稱不應該包含底線
 
@@ -27,7 +27,7 @@ ms.locfileid: "71234275"
 |-|-|
 |TypeName|IdentifiersShouldNotContainUnderscores|
 |CheckId|CA1707|
-|分類|Microsoft.Naming|
+|Category|Microsoft.Naming|
 |重大變更|中斷-在元件上引發時<br /><br /> 不中斷-在類型參數上引發時|
 
 ## <a name="cause"></a>原因
@@ -46,9 +46,9 @@ ms.locfileid: "71234275"
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
 
-請勿隱藏此規則的警告。
+請勿隱藏實際執行程式碼的警告。 不過，針對測試程式碼隱藏此警告是安全的。 您可以將其[嚴重性](use-roslyn-analyzers.md#rule-severity)設定為 [**無**]，以隱藏來自此規則的警告。 
 
 ## <a name="related-rules"></a>相關規則
 
-- [CA1709識別碼的大小寫應該正確](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
-- [CA1708識別碼應該不同于大小寫](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
+- [CA1709：識別碼的大小寫應正確 @ no__t-0
+- [CA1708：識別碼應該不同于 case @ no__t-0

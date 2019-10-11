@@ -21,25 +21,25 @@ f1_keywords:
 ms.assetid: b8278a4a-c86e-4845-aa2a-70da21a1dd52
 author: mikeblome
 ms.author: mblome
-manager: wpickett
+manager: markl
 ms.workload:
 - multiple
-ms.openlocfilehash: 35be465064c9524eb0e1339794b6a19b7a595da1
-ms.sourcegitcommit: d2b234e0a4a875c3cba09321cdf246842670d872
+ms.openlocfilehash: 1cff36760a84821a33dcdb1ee4cc6842cd40aee0
+ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2019
-ms.locfileid: "67493641"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72015975"
 ---
 # <a name="annotating-structs-and-classes"></a>註釋結構和類別
 
 您可以使用作用類似非變異項目的註釋為結構和類別加上附註，在包含封入結構做為參數或結果值的任何函式呼叫或函式進入/結束點，會假定這些註釋為真。
 
-## <a name="struct-and-class-annotations"></a>結構和類別的註解
+## <a name="struct-and-class-annotations"></a>結構和類別注釋
 
 - `_Field_range_(low, high)`
 
-     欄位是在範圍中 （含） 從`low`至`high`。  相當於使用適當的前置或後置條件套用至已標註物件的 `_Satisfies_(_Curr_ >= low && _Curr_ <= high)`。
+     欄位位於 `low` 到 `high` 的範圍內（含）。  相當於使用適當的前置或後置條件套用至已標註物件的 `_Satisfies_(_Curr_ >= low && _Curr_ <= high)`。
 
 - `_Field_size_(size)`, `_Field_size_opt_(size)`, `_Field_size_bytes_(size)`, `_Field_size_bytes_opt_(size)`
 
@@ -55,11 +55,11 @@ ms.locfileid: "67493641"
 
 - `_Field_z_`
 
-     具有 null 結尾字串的欄位。
+     具有以 null 終止之字串的欄位。
 
 - `_Struct_size_bytes_(size)`
 
-     適用於結構或類別的宣告。  指出該類型的有效物件可能大於所宣告的類型，其位元組數目是由 `size` 所指定。  例如:
+     適用于結構或類別宣告。  指出該類型的有效物件可能大於所宣告的類型，其位元組數目是由 `size` 所指定。  例如:
 
     ```cpp
 
@@ -71,7 +71,7 @@ ms.locfileid: "67493641"
 
     ```
 
-     緩衝區大小，以位元組為單位的參數`pM`型別的`MyStruct *`便會進入是：
+     @No__t-1 類型 `pM` 的緩衝區大小（以位元組為單位）會被視為：
 
     ```cpp
     min(pM->nSize, sizeof(MyStruct))
@@ -104,11 +104,11 @@ struct MyBuffer
 };
 ```
 
-此範例的注意事項：
+此範例的附注：
 
-- `_Field_z_` 相當於 `_Null_terminated_`。  `_Field_z_` 名稱欄位會指定 [名稱] 欄位是以 null 結束的字串。
-- `_Field_range_` 針對`bufferSize`指定的值`bufferSize`應該介於 1 和`MaxBufferSize`（兩者皆含）。
-- 最終結果`_Struct_size_bytes_`和`_Field_size_`是相等的註解。 結構或類別具有類似的版面配置中，`_Field_size_`是您更輕鬆地閱讀和維護，因為它具有較少的參考和比對等計算`_Struct_size_bytes_`註釋。 `_Field_size_` 不需要轉換成位元組大小。 位元組大小是唯一的選項，例如 void 指標 欄位中，如果`_Field_size_bytes_`可用。 如果兩個`_Struct_size_bytes_`和`_Field_size_`存在，都將可供工具使用。 這是由工具的兩個的註釋不同意時該怎麼辦。
+- `_Field_z_` 相當於 `_Null_terminated_`。  [名稱] 欄位 `_Field_z_` 指定 [名稱] 欄位是以 null 結束的字串。
+- @no__t 的 `_Field_range_`-1 指定 `bufferSize` 的值應該在1和 `MaxBufferSize` （兩者皆包含）中。
+- @No__t-0 和 @no__t 1 注釋的最終結果是相同的。 對於具有類似配置的結構或類別，`_Field_size_` 較容易閱讀和維護，因為它的參考和計算比對等的 `_Struct_size_bytes_` 注釋少。 `_Field_size_` 不需要轉換成位元組大小。 如果 [位元組大小] 是唯一的選項（例如，針對 void 指標欄位），則可以使用 `_Field_size_bytes_`。 如果 `_Struct_size_bytes_` 和 `_Field_size_` 都存在，則這兩個工具都可供使用。 如果這兩個批註不同意，該怎麼辦。
 
 ## <a name="see-also"></a>另請參閱
 
