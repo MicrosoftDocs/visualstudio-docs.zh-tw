@@ -8,15 +8,15 @@ helpviewer_keywords:
 - code analysis,C/C++
 author: mikeblome
 ms.author: mblome
-manager: wpickett
+manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c3132db62de6f2775a739adb82b24c759e4767dc
-ms.sourcegitcommit: 39a04f42d23597b70053686d7e927ba78f38a9a8
-ms.translationtype: MT
+ms.openlocfilehash: b14737c09cf7ff2b14eda1f61408b531b9c22c14
+ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/05/2019
-ms.locfileid: "71974906"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72018363"
 ---
 # <a name="quickstart-code-analysis-for-cc"></a>快速入門：C/C++ 的程式碼分析
 

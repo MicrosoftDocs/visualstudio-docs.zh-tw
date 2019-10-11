@@ -1,5 +1,5 @@
 ---
-title: 尋找您的偵錯工具工作
+title: 尋找您的偵錯工作
 description: 識別可協助您對應用程式進行錯用的偵錯工具功能
 ms.custom: ''
 ms.date: 10/01/2019
@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f8d971792fb55789fb6dcd7e0d90829ac723ba6
-ms.sourcegitcommit: 8a3545329a58e446672181cfed2083f850e1ad14
+ms.openlocfilehash: 21ce539296f02599a1f8afa0344413fb556eea45
+ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71817521"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72018774"
 ---
 # <a name="find-your-debugging-task-in-visual-studio"></a>在 Visual Studio 中尋找您的偵錯工具工作
 
@@ -34,7 +34,10 @@ ms.locfileid: "71817521"
 
 ### <a name="pause-code-only-when-a-specific-objects-property-or-value-changes"></a>只有當特定物件的屬性或值變更時，才暫停程式碼
 
-針對C++，設定[資料中斷點](using-breakpoints.md#BKMK_set_a_data_breakpoint_native_cplusplus)。 針對使用 .NET Core 3 的應用程式，您也可以設定[資料中斷點](using-breakpoints.md#BKMK_set_a_data_breakpoint_managed)。
+針對C++，設定[資料中斷點](using-breakpoints.md#BKMK_set_a_data_breakpoint_native_cplusplus)。 
+::: moniker range=">= vs-2019"
+針對使用 .NET Core 3 的應用程式，您也可以設定[資料中斷點](using-breakpoints.md#BKMK_set_a_data_breakpoint_managed)。
+::: moniker-end
 
 否則，僅C#適用F#于和，您可以[使用條件式中斷點追蹤物件識別碼](using-breakpoints.md#using-object-ids-in-breakpoint-conditions-c-and-f)。
 
