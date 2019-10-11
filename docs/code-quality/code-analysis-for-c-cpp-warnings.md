@@ -15,18 +15,18 @@ helpviewer_keywords:
 ms.assetid: 28f3fda6-35e8-485b-9755-1991aaccec3f
 author: mikeblome
 ms.author: mblome
-manager: wpickett
+manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: dc3f09575085039986a0b2fbbf3eb386ee5f5e1b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a8a1c77a7db2a16b05c1b6b0eeb5e02abef4c9c3
+ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62540777"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72018469"
 ---
 # <a name="code-analysis-for-cc-warnings"></a>C/C++ 程式碼分析警告
-此區段會列出 C /C++程式碼分析警告，但不包括由引發[C++核心指南檢查工具](code-analysis-for-cpp-corecheck.md)。 如需程式碼分析的資訊，請參閱 < [/analyze （程式碼分析）](/cpp/build/reference/analyze-code-analysis)和[快速入門：適用於 C 的程式碼分析 /C++](../code-quality/quick-start-code-analysis-for-c-cpp.md)。
+本節列出 C/C++程式碼分析警告，但[ C++核心指導方針檢查](code-analysis-for-cpp-corecheck.md)程式所引發的例外狀況除外。 如需程式碼分析的詳細資訊，請參閱[/analyze （程式碼分析）](/cpp/build/reference/analyze-code-analysis)和 @no__t 1Quick 開始：C/C++@no__t 的程式碼分析-1。
 
 ## <a name="see-also"></a>另請參閱
 

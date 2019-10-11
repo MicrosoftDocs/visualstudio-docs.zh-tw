@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: c9670182432b1c6bc1e763e014b04b193c399330
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
-ms.translationtype: HT
+ms.openlocfilehash: 1d3a86d9ef5823b5935ad99facd6a82bf3af9789
+ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65461211"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72018935"
 ---
 # <a name="how-to-generate-unit-tests-by-using-intellitest"></a>作法：使用 IntelliTest 產生單元測試
 
@@ -40,7 +40,7 @@ IntelliTest 會探索您的 .NET 程式碼，從而產生測試資料及單元�
 
 1. 在 Visual Studio 中開啟您的解決方案，然後開啟擁有您欲測試方法的類別檔案。
 
-2. 在方法上按一下滑鼠右鍵，然後選擇 [執行 IntelliTest] ，為方法中的程式碼產生單元測試。
+2. 在方法上按一下滑鼠右鍵，然後選擇 [執行 IntelliTest]，為方法中的程式碼產生單元測試。
 
    ![以滑鼠右鍵按一下您的方法，以產生單元測試](../test/media/runpex.png)
 
@@ -142,12 +142,9 @@ IntelliTest 會探索您的 .NET 程式碼，從而產生測試資料及單元�
 ### <a name="q-can-i-use-other-unit-test-frameworks-with-intellitest"></a>問：是否可以使用其他單元測試架構搭配 IntelliTest？
 
 **答：** 可以，請遵循[尋找並安裝其他架構](../test/install-third-party-unit-test-frameworks.md)中的步驟。
-Visual Studio Marketplace 也提供測試架構延伸模組︰
+測試架構延伸模組也可在 Visual Studio Marketplace 中取得，例如[NUnit 測試](https://marketplace.visualstudio.com/items?itemName=NUnitDevelopers.TestGeneratorNUnitextension-18371)產生器。
 
-* [測試產生器的 NUnit 延伸模組](https://marketplace.visualstudio.com/items?itemName=NUnitDevelopers.TestGeneratorNUnitextension-18371)
-* [測試產生器的 xUnit.net 延伸模組](https://marketplace.visualstudio.com/items?itemName=BradWilson.xUnitnetTestExtensions)
-
-重新啟動 Visual Studio 並重新開啟方案之後，以滑鼠右鍵按一下類別或方法，然後選擇 [建立 IntelliTest] 。 於此處選取您已安裝的架構：
+重新啟動 Visual Studio 並重新開啟方案之後，以滑鼠右鍵按一下類別或方法，然後選擇 [建立 IntelliTest]。 於此處選取您已安裝的架構：
 
 ![選取 IntelliTest 的其他單元測試架構](../test/media/pexcreateintellitestextensions.png)
 

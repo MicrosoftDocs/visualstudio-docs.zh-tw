@@ -7,18 +7,26 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 27d254ac50b8127ab5cef9ba4cf914d14c0cfba5
-ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
+ms.openlocfilehash: c6eb32357998f0867b00a5ef0e9119c3c357ed1b
+ms.sourcegitcommit: b23d73c86ec7720c4cd9a58050860bc559623a3d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71186392"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "72172736"
 ---
 # <a name="rule-scope-options-for-fxcop-analyzers"></a>FxCop 分析器的規則範圍選項
 
 某些 FxCop 分析器規則可讓您精簡程式碼基底中應該套用的部分。 此頁面會列出可用的範圍設定選項、其允許的值，以及它們可以套用的規則。 若要使用這些選項，請在[EditorConfig](../ide/create-portable-custom-editor-options.md#add-an-editorconfig-file-to-a-project)檔案中指定它們。
 
 這些設定選項可從[CodeAnalysis FxCopAnalyzers](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers) NuGet 套件的版本2.6.3 中取得。
+
+> [!TIP]
+> 若要查看特定 FxCopAnalyzers 封裝版本可用的完整選項清單，請查看*套件的檔資料夾中*的*分析器 Configuration.md*檔案。 檔案位於 *% USERPROFILE% \\. nuget\packages\microsoft.codeanalysis.fxcopanalyzers @ no__t-2 @ no__t-3version @ no__t-4\documentation\Analyzer Configuration.md*。 此設定檔檔案包含在套件的每個版本中，從版本2.6.5 開始。 以下是在*分析器 Configuration.md*檔中記載選項的範例：
+>
+> 選項名稱： `sufficient_IterationCount_for_weak_KDF_algorithm` @ no__t-1
+> 選項值：整數值 \
+> 預設值：針對每個可設定的規則（根據預設，大部分規則為 ' 100000 '） \
+> 範例：`dotnet_code_quality.CA5387.sufficient_IterationCount_for_weak_KDF_algorithm = 100000`
 
 ## <a name="api_surface"></a>api_surface
 
@@ -33,19 +41,19 @@ ms.locfileid: "71186392"
 | 是否要忽略不會傳回值的非同步方法 | `true`<br/>`false` | `false` | [CA2007](ca2007-do-not-directly-await-task.md) |
 
 > [!NOTE]
-> 在 [版本 2.6.3] 和舊版的分析器套件中，此選項`skip_async_void_methods`的名稱為。
+> 在 [版本 2.6.3] 和舊版的分析器套件中，此選項的名稱為 `skip_async_void_methods`。
 
 ## <a name="exclude_single_letter_type_parameters"></a>exclude_single_letter_type_parameters
 
 | 描述 | 允許的值 | 預設值 | 可設定的規則 |
 | - | - | - | - |
-| 是否要排除規則中的單一字元[類型參數](/dotnet/csharp/programming-guide/generics/generic-type-parameters)，例如， `S`中的`Collection<S>` | `true`<br/>`false` | `false` | [CA1715](ca1715-identifiers-should-have-correct-prefix.md) |
+| 是否要排除規則中的單一字元[類型參數](/dotnet/csharp/programming-guide/generics/generic-type-parameters)，例如 `Collection<S>` 中的 `S` | `true`<br/>`false` | `false` | [CA1715](ca1715-identifiers-should-have-correct-prefix.md) |
 
 > [!NOTE]
-> 在 [版本 2.6.3] 和舊版的分析器套件中，此選項`allow_single_letter_type_parameters`的名稱為。
+> 在 [版本 2.6.3] 和舊版的分析器套件中，此選項的名稱為 `allow_single_letter_type_parameters`。
 
 ## <a name="output_kind"></a>output_kind
 
 | 描述 | 允許的值 | 預設值 | 可設定的規則 |
 | - | - | - | - |
-| 指定要分析專案中產生此類型元件的程式碼 | 列舉的<xref:Microsoft.CodeAnalysis.OutputKind>一或多個欄位<br/><br/>以逗號（，）分隔多個值 | 所有輸出類型 | [CA2007](ca2007-do-not-directly-await-task.md) |
+| 指定要分析專案中產生此類型元件的程式碼 | @No__t-0 列舉的一或多個欄位<br/><br/>以逗號（，）分隔多個值 | 所有輸出類型 | [CA2007](ca2007-do-not-directly-await-task.md) |

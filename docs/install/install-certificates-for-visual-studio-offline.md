@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: c7139234ab9f36842e92ead9e43f8d0a0a71a00e
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
-ms.translationtype: HT
+ms.openlocfilehash: 11b05a7993d2fcd6bc52b53edfde2e97a566574c
+ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69551204"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72018823"
 ---
 # <a name="install-certificates-required-for-visual-studio-offline-installation"></a>安裝 Visual Studio 離線安裝所需的憑證
 
@@ -89,9 +89,9 @@ Visual Studio 安裝程式引擎只會安裝受信任的內容。 它的作法�
    或是使用以下命令，來建立使用 certutil.exe (隨附於 Windows) 的批次檔：
    
       ```cmd
-   certutil.exe -addstore -f "Root" "[layout path]\certificates\manifestRootCertificate.cer
+   certutil.exe -addstore -f "Root" "[layout path]\certificates\manifestRootCertificate.cer"
 
-   certutil.exe -addstore -f "Root" [layout path]\certificates\manifestCounterSignRootCertificate.cer"
+   certutil.exe -addstore -f "Root" "[layout path]\certificates\manifestCounterSignRootCertificate.cer"
 
    certutil.exe -addstore -f "Root" "[layout path]\certificates\vs_installer_opc.RootCertificate.cer"
    ```
@@ -179,23 +179,23 @@ Visual Studio 安裝程式只要求系統上必須安裝根憑證。
 在安裝系統上的一個檢查方法是遵循下列步驟：
 
 1. 執行 **mmc.exe**。<br/>
-  a. 按一下 [檔案]  ，然後選取 [新增/移除嵌入式管理單元]  。<br/>
-  b. 按兩下 [憑證]  ，並選取 [電腦帳戶]  ，然後按一下 [下一步]  。<br/>
-  c. 選取 [本機電腦]  ，並按一下 [完成]  ，然後按一下 [確定]  。<br/>
-  d. 展開 [憑證 (本機電腦)]  。<br/>
-  e. 展開 [信任的根憑證授權]  ，然後選取 [憑證]  。<br/>
+  a. 按一下 [檔案]，然後選取 [新增/移除嵌入式管理單元]。<br/>
+  b. 按兩下 [憑證]，並選取 [電腦帳戶]，然後按一下 [下一步]。<br/>
+  c. 選取 [本機電腦]，並按一下 [完成]，然後按一下 [確定]。<br/>
+  d. 展開 [憑證 (本機電腦)]。<br/>
+  e. 展開 [信任的根憑證授權]，然後選取 [憑證]。<br/>
     * 檢查這份必要根憑證清單。<br/>
 
-   f. 展開 [中繼憑證授權]  ，然後選取 [憑證]  。<br/>
+   f. 展開 [中繼憑證授權]，然後選取 [憑證]。<br/>
     * 檢查這份必要中繼憑證清單。<br/>
 
-2. 按一下 [檔案]  ，然後選取 [新增/移除嵌入式管理單元]  。<br/>
-  a. 按兩下 [憑證]  ，並選取 [我的使用者帳戶]  ，然後依序按一下 [完成]  和 [確定]  。<br/>
-  b. 展開 [憑證 - 目前的使用者]  。<br/>
-  c. 展開 [中繼憑證授權]  ，然後選取 [憑證]  。<br/>
+2. 按一下 [檔案]，然後選取 [新增/移除嵌入式管理單元]。<br/>
+  a. 按兩下 [憑證]，並選取 [我的使用者帳戶]，然後依序按一下 [完成] 和 [確定]。<br/>
+  b. 展開 [憑證 - 目前的使用者]。<br/>
+  c. 展開 [中繼憑證授權]，然後選取 [憑證]。<br/>
     * 檢查這份必要中繼憑證清單。<br/>
 
-如果憑證名稱不在 [Issued To]\(核發給)  資料行中，則必須予以安裝。  如果中繼憑證只位於 [目前使用者]  中繼憑證存放區中，則只有已登入的使用者才能使用它。 您可能需要為其他使用者安裝。
+如果憑證名稱不在 [Issued To]\(核發給) 資料行中，則必須予以安裝。  如果中繼憑證只位於 [目前使用者] 中繼憑證存放區中，則只有已登入的使用者才能使用它。 您可能需要為其他使用者安裝。
 
 ## <a name="install-visual-studio"></a>安裝 Visual Studio
 

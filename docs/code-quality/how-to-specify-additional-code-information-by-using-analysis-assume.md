@@ -1,5 +1,5 @@
 ---
-title: 使用 _analysis_assume 來針對程式碼分析提示
+title: 針對程式碼分析提示使用 _Analysis_assume
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,32 +9,32 @@ helpviewer_keywords:
 ms.assetid: 51205d97-4084-4cf4-a5ed-3eeaf67deb1b
 author: mikeblome
 ms.author: mblome
-manager: wpickett
+manager: markl
 ms.workload:
 - multiple
-ms.openlocfilehash: 1d3c80f0780dcd577356de69944dcc76cca7133c
-ms.sourcegitcommit: ab06cde69d862440b4277bcd9bf02e7b50593a1b
+ms.openlocfilehash: 186ea6ac58736098720d60c644c30801073b7453
+ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67132110"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72018726"
 ---
-# <a name="how-to-specify-additional-code-information-by-using-analysisassume"></a>HOW TO：使用 _Analysis_assume 來指定其他程式碼資訊
+# <a name="how-to-specify-additional-code-information-by-using-_analysis_assume"></a>作法：使用 _Analysis_assume 來指定其他程式碼資訊
 
-您可以提供提示給程式碼分析工具，適用於 C /C++可協助分析處理，並減少警告的程式碼。 若要提供其他資訊，請使用下列函式：
+您可以為 C/C++ code 提供程式碼分析工具的提示，以協助分析程式並減少警告。 若要提供其他資訊，請使用下列函數：
 
 `_Analysis_assume(`  `expr`  `)`
 
-`expr` -假設為評估為 true 的任何運算式。
+`expr`-假設評估為 true 的任何運算式。
 
-程式碼分析工具假設條件運算式所代表之處函式隨即出現，並保持為 true，直到運算式改變，例如，藉由指派給變數，則為 true。
+程式碼分析工具假設運算式所表示的條件在函式出現的時間點為 true，而且在改變運算式之前會保持為 true，例如，藉由將指派給變數。
 
 > [!NOTE]
-> `_Analysis_assume` 不會影響程式碼最佳化。 外部程式碼分析工具，`_Analysis_assume`定義為執行任何作業。
+> `_Analysis_assume` 不會影響程式碼優化。 在程式碼分析工具之外，`_Analysis_assume` 會定義為無 op。
 
 ## <a name="example"></a>範例
 
-下列程式碼會使用`_Analysis_assume`若要修正程式碼分析警告[C6388](../code-quality/c6388.md):
+下列程式碼會使用 `_Analysis_assume` 來更正程式碼分析警告[C6388](../code-quality/c6388.md)：
 
 ```cpp
 #include<windows.h>

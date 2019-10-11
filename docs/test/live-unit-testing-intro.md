@@ -1,46 +1,42 @@
 ---
-title: Live Unit Testing 簡介
+title: 簡介 Live Unit Testing
 description: 了解 Live Unit Testing 優點，以及在對專案進行單元測試時如何使用它。
 ms.date: 09/11/2017
 ms.topic: conceptual
 helpviewer_keywords:
-- Visual Studio ALM
 - Live Unit Testing
-author: rpetrusha
-ms.author: ronpet
+author: gewarren
+ms.author: gewarren
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a5acf1857309236727cd0bab4d9d981d814292b9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 87242c99fe2692b799ff6a5d965249ad5d944cf9
+ms.sourcegitcommit: 1a3c2ca995fd44fc72741b3a100c6e57f4f8702c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62786077"
+ms.lasthandoff: 10/11/2019
+ms.locfileid: "72262311"
 ---
-# <a name="live-unit-testing-introduction"></a>Live Unit Testing 簡介
+# <a name="live-unit-testing-overview"></a>Live Unit Testing 總覽
 
-Live Unit Testing 是在 Visual Studio 2017 中引進的技術。 它會在您變更程式碼時自動執行即時單元測試。
+Live Unit Testing 會在您進行程式碼變更時，自動執行單元測試。 這可讓您更安心地重構和變更程式碼。 當您編輯程式碼時，Live Unit Testing 會自動執行所有受影響的測試，以確保您的變更不會引進回歸。
 
-即時單元測試：
+Live Unit Testing 指出您的單元測試是否充分涵蓋您的程式碼。 它會以圖形方式即時描述程式碼涵蓋範圍。 您可以一眼就看到有多少測試涵蓋每一行程式碼，以及任何單元測試未涵蓋的線條。
 
-- 可讓您有更大的自信可重構和變更程式碼。 Live Unit Testing 會在您編輯程式碼時自動執行所有受影響的測試，確保您的變更不會中斷測試。
-
-- 指出您的單元測試是否足以涵蓋您的程式碼，以及顯示單元測試未涵蓋的程式碼。 Live Unit Testing 會以圖形方式即時說明程式碼涵蓋範圍，讓您可以一眼看到有多少測試涵蓋每個程式碼行以及任何單元測試都未涵蓋的程式碼行。
-
-如果您的方案包含一或多個單元測試專案，則可以從最上層 Visual Studio 功能表中選取 [測試] > [Live Unit Testing] > [啟動]，來啟用 Live Unit Testing。
+如果您的方案包含一或多個單元測試專案，您**可以從 Visual Studio 中的**最上層功能表列選取 [**測試** > **Live Unit Testing**@no__t] 來啟用 Live Unit Testing。
 
 > [!NOTE]
-> 只有 Visual Studio Enterprise Edition 才能使用 Live Unit Testing。
+> Live Unit Testing 僅適用于 Visual Studio Enterprise edition。
 
 深入了解 Live Unit Testing：
 
-- 試用簡介教學課程，[開始使用 Live Unit Testing](live-unit-testing-start.md)。
+- 嘗試簡介教學課程：[開始使用 Live Unit Testing](live-unit-testing-start.md)。
 
-- 閱讀詳細文件：[搭配使用 Live Unit Testing 與 Visual Studio Enterprise Edition](live-unit-testing.md)。
+- 閱讀詳細檔：搭配[Visual Studio Enterprise 版本使用 Live Unit Testing](live-unit-testing.md)。
 
-- 閱讀 [Live Unit Testing 常見問題集](live-unit-testing-faq.md)，了解 Live Unit Testing 新功能，以及閱讀祕訣和技巧。
+- 閱讀[LIVE UNIT TESTING 常見問題](live-unit-testing-faq.md)以瞭解 Live Unit Testing 的新功能，以及秘訣和技巧。
 
-- 觀看 Channel 9 影片，以了解 Live Unit Testing 和其功能的概觀。 </p>
+- 觀看 Channel 9 影片，以了解 Live Unit Testing 和其功能的概觀。</p>
 
    > [!VIDEO https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2017-Launch/T105/player]
 

@@ -4,15 +4,15 @@ ms.date: 04/28/2018
 ms.topic: conceptual
 author: mikeblome
 ms.author: mblome
-manager: wpickett
+manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7e14602c3eeb204255f699b0ff07164616da4a25
-ms.sourcegitcommit: 39a04f42d23597b70053686d7e927ba78f38a9a8
-ms.translationtype: MT
+ms.openlocfilehash: 061b52a683992bdc2fe5792ab05e00f788434a0f
+ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/05/2019
-ms.locfileid: "71974910"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72018217"
 ---
 # <a name="use-rule-sets-to-specify-the-c-rules-to-run"></a>使用規則集指定要執行C++的規則
 

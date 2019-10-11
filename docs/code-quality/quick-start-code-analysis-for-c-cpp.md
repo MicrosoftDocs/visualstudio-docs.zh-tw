@@ -11,12 +11,12 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b14737c09cf7ff2b14eda1f61408b531b9c22c14
-ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
-ms.translationtype: HT
+ms.openlocfilehash: 2c68bb94a66be2c9fc1da4365cb77adf8d1330a1
+ms.sourcegitcommit: e95dd8cedcd180e0bce6a75c86cf861757918290
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72018363"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "72163013"
 ---
 # <a name="quickstart-code-analysis-for-cc"></a>快速入門：C/C++ 的程式碼分析
 
@@ -26,24 +26,11 @@ ms.locfileid: "72018363"
 
 1. 在**方案總管**中，開啟專案名稱的快捷方式功能表，然後選擇 [**屬性**]。
 
-2. 下列是選用的步驟：
+2. （選擇性 **）在 [** 設定] 和 [**平臺**] 清單中，選擇 [組建設定] 和 [目標平臺]。
 
-    1. **在 [設定] 和 [** **平臺**] 清單中，選擇 [組建設定] 和 [目標平臺]。
+3. 若要執行程式碼分析，每次使用選取的組態建置專案時，請選取**建置時啟用程式碼分析**核取方塊。 您也可以開啟 [**分析**] 功能表，然後選擇 [在*專案名稱***上執行程式碼分析**] 或 [檔案**上執行**程式碼分析]，手動執行程式碼分析。
 
-    2. 根據預設，程式碼分析不會報告從外部工具自動產生的程式碼警告。 若要檢視產生程式碼的警告，請清除**隱藏所產生的程式碼的結果** 核取方塊。
-
-        > [!NOTE]
-        > 這個選項不會在表單和範本中出現錯誤和警告時，抑制來自產生的程式碼的程式碼分析錯誤和警告。 您可以同時檢視及維護表單或範本的原始程式碼。
-
-3. 若要在每次使用選取的設定建立專案時執行程式碼分析，請選取 [**啟用 C/C++ on Build 的程式碼分析**] 核取方塊。 您也可以開啟 [**分析**] 功能表，然後選擇 [在*專案名稱***上執行程式碼分析**]，以手動方式執行程式碼分析。
-
-4. 在 **執行此規則集**清單中，執行下列其中之一：
-
-    - 選擇想要使用的規則集。
-
-    - 選擇 [ **\<Browse >** ]，指定不在清單中的現有自訂規則集。
-
-    - 定義[自訂規則集](../code-quality/how-to-create-a-custom-rule-set.md)。
+4. 選擇您想要使用的[規則集](../code-quality/using-rule-sets-to-specify-the-cpp-rules-to-run.md)，或建立[自訂規則集](../code-quality/how-to-create-a-custom-rule-set.md)。 如果使用 LLVM/clang-cl，請參閱[在 Visual Studio 中使用 clang](../code-quality/clang-tidy.md) ，以設定 clang 整齊的分析選項。
 
 ### <a name="standard-cc-rule-sets"></a>標準 C/C++ 規則集
 
@@ -56,17 +43,23 @@ Visual Studio 包含兩組標準的原生程式碼規則：
 
 ## <a name="run-code-analysis"></a>執行程式碼分析
 
-在專案屬性頁面的 [程式碼分析] 頁面上，您可以設定程式碼分析在每次建置專案時執行。 您也可以手動執行程式碼分析。
+在 [專案屬性] 頁面的 [程式碼分析] 頁面上，您可以設定在每次建立專案時執行程式碼分析。 您也可以手動執行程式碼分析。
 
 若要針對方案執行程式碼分析：
 
-- 在 [建置] 功能表上，選擇 [針對方案執行程式碼分析]。
+- 在 [**建立**] 功能表中，選擇 [**針對方案執行程式碼分析**]。
 
 若要針對專案執行程式碼分析：
 
-1. 在 [方案總管] 中，選擇專案的名稱。
+1. 在 方案總管中，選取專案的名稱。
 
-2. 在 **建置**功能表上，選擇**上執行程式碼分析** *專案名稱*。
+2. 在 [**建立**] 功能表中，選擇 [針對*專案名稱***執行程式碼分析**]。
+
+若要對檔案執行程式碼分析：
+
+1. 在 方案總管中，選取檔案名。
+
+2. 在 [**建立**] 功能表中，選擇 [**在檔案上執行程式碼分析**] 或按**Ctrl + Shift + Alt + F7**。
 
    編譯專案或方案並執行程式碼分析。 結果會出現在錯誤清單中。
 
@@ -116,4 +109,4 @@ Visual Studio 包含兩組標準的原生程式碼規則：
 
 ## <a name="see-also"></a>另請參閱
 
-[C/的程式碼分析C++](../code-quality/code-analysis-for-c-cpp-overview.md)
+- [C/的程式碼分析C++](../code-quality/code-analysis-for-c-cpp-overview.md)

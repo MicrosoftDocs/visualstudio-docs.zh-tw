@@ -2,7 +2,7 @@
 title: 使用命令列參數來安裝 Visual Studio
 titleSuffix: ''
 description: 了解如何使用命令列參數來控制或自訂您的 Visual Studio 安裝。
-ms.date: 09/11/2019
+ms.date: 10/07/2019
 ms.custom: seodec18
 ms.topic: conceptual
 f1_keywords:
@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 1f9e5d1dadd9caf95b8e6cb8e5fec70daf984ac9
-ms.sourcegitcommit: b60a00ac3165364ee0e53f7f6faef8e9fe59ec4a
+ms.openlocfilehash: 306928b7a28465923ae0a5e2cc7773094458594e
+ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70913237"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72018796"
 ---
 # <a name="use-command-line-parameters-to-install-visual-studio"></a>使用命令列參數來安裝 Visual Studio
 
@@ -32,17 +32,17 @@ ms.locfileid: "70913237"
 - 自動化安裝程序。
 - 建立安裝檔案的快取 (配置)，以供稍後使用。
 
-命令列選項會搭配安裝程式啟動載入器使用，這是起始下載程式的小型（1 MB）檔案。 當您從 Visual Studio 網站下載時，啟動載入器是第一個啟動的可執行檔。 您可以從下列連結，直接連結到要安裝之產品版本的最新版啟動載入器：
+命令列選項會搭配安裝程式啟動載入器使用，這是起始下載程式的小型（1 MB）檔案。 當您從 Visual Studio 網站下載時，啟動載入器是第一個啟動的可執行檔。
 
 ::: moniker range="vs-2017"
 
-- [Visual Studio 2017 Enterprise](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=enterprise&rel=15&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=link+cta&utm_content=download+commandline+parameters+vs2017)
-- [Visual Studio 2017 Professional](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=professional&rel=15&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=link+cta&utm_content=download+commandline+parameters+vs2017)
-- [Visual Studio 2017 Community](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=community&rel=15&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=link+cta&utm_content=download+commandline+parameters+vs2017)
+若要取得 Visual Studio 2017 的啟動載入器，請參閱[**Visual Studio 舊版**](https://visualstudio.microsoft.com/vs/older-downloads/)下載頁面，以取得如何執行此操作的詳細資訊。
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
+
+您可以從下列連結，直接連結到要安裝之產品版本的最新版啟動載入器：
 
 - [Visual Studio 2019 Enterprise](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=enterprise&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=link+cta&utm_content=download+commandline+parameters+vs2019+rc)
 - [Visual Studio 2019 Professional](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=professional&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=link+cta&utm_content=download+commandline+parameters+vs2019+rc)
@@ -50,13 +50,20 @@ ms.locfileid: "70913237"
 
 ::: moniker-end
 
+
+您的啟動載入器檔案應符合或類似下列其中一項：
+
+* vs_enterprise.exe
+* vs_professional.exe
+* vs_community.exe
+
 ## <a name="command-line-parameters"></a>命令列參數
 
  Visual Studio 命令列參數區分大小寫。
 
 > 語法：`vs_enterprise.exe [command] <options>...`
 
-針對`vs_enterprise.exe`您要安裝的產品版本，適當地取代。 （或者，您可以使用`vs_installer.exe`）。
+針對您要安裝的產品版本，將 `vs_enterprise.exe` 取代為適當的。 （或者，您可以使用 `vs_installer.exe`）。
 
 >[!TIP]
 > 如需如何使用命令列安裝 Visual Studio 的更多範例，請參閱[命令列參數範例](command-line-parameter-examples.md)頁面。
@@ -112,7 +119,7 @@ ms.locfileid: "70913237"
 | **進階安裝選項** | **描述** |
 | ----------------------- | --------------- |
 | `--channelId <id>` | **選擇性**：要安裝執行個體的通道識別碼。 這對安裝命令是必要的，對其他指定了 `--installPath` 的命令則會予以略過。 |
-| `--channelUri <uri>` | **選擇性**：通道資訊清單的 URI。 如果不想要更新， `--channelUri`可以指向不存在的檔案（例如，--channelUri C:\doesntExist.chman）。 此選項可用於安裝命令，但針對其他命令則會予以略過。 |
+| `--channelUri <uri>` | **選擇性**：通道資訊清單的 URI。 如果不想要更新，`--channelUri` 可以指向不存在的檔案（例如，--channelUri C:\doesntExist.chman）。 此選項可用於安裝命令，但針對其他命令則會予以略過。 |
 | `--installChannelUri <uri>` | **選擇性**：要用於安裝的通道資訊清單 URI。 `--channelUri` 指定的 URI (指定 `--installChannelUri` 時必須指定) 會用來偵測更新。 此選項可用於安裝命令，但針對其他命令則會予以略過。 |
 | `--installCatalogUri <uri>` | **選擇性**：要用於安裝的目錄資訊清單 URI。 如有指定，通道管理員會嘗試從此 URI 下載目錄資訊清單，再於安裝通道資訊清單中使用此 URI。 此參數可用來支援離線安裝，在此安裝中會使用已下載的產品目錄來建立配置快取。 此選項可用於安裝命令，但針對其他命令則會予以略過。 |
 | `--productId <id>` | **選擇性**：要安裝之執行個體的產品識別碼。 在一般安裝情況中會預先填入此識別碼。 |
