@@ -7,24 +7,24 @@ helpviewer_keywords:
 ms.assetid: f1429463-136e-41ed-8a75-a8dbf0b4fd89
 author: mikeblome
 ms.author: mblome
-manager: wpickett
+manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0b725d0ee49590062ebdde9a1ef27f838678ccf5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fc6c7c1dbc5009129e9e793f3b8eea1f7927b2bb
+ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62540790"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72018445"
 ---
 # <a name="c-core-guidelines-checker-reference"></a>C + + Core Guidelines 檢查工具參考
 
-本章節列出 c + + 核心指南檢查工具警告。 如需程式碼分析的資訊，請參閱 < [/analyze （程式碼分析）](/cpp/build/reference/analyze-code-analysis)和[快速入門：適用於 C 的程式碼分析 /C++](../code-quality/quick-start-code-analysis-for-c-cpp.md)。
+本章節列出 c + + 核心指南檢查工具警告。 如需程式碼分析的詳細資訊，請參閱[/analyze （程式碼分析）](/cpp/build/reference/analyze-code-analysis)和 @no__t 1Quick 開始：C/C++@no__t 的程式碼分析-1。
 
 > [!NOTE]
 > 某些警告屬於一個以上的群組，且並非所有的警告有完整的參考主題。
 
-## <a name="ownerpointer-group"></a>OWNER_POINTER 群組
+## <a name="owner_pointer-group"></a>OWNER_POINTER 群組
 
 [C26402 DONT_HEAP_ALLOCATE_MOVABLE_RESULT](C26402.md)有移動建構函式會傳回範圍的物件，而不是堆積配置。 請參閱[c + + Core Guidelines R.3](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rr-ptr)。
 
@@ -44,7 +44,7 @@ ms.locfileid: "62540790"
 
 [C26431 DONT_TEST_NOTNULL](C26431.md)運算式 '%expr%' 的類型已經是 gsl:: not_null。 請勿測試其 null 值。 請參閱[c + + Core Guidelines F.23](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#f23-use-a-not_nullt-to-indicate-that-null-is-not-a-valid-value)。
 
-## <a name="rawpointer-group"></a>RAW_POINTER 群組
+## <a name="raw_pointer-group"></a>RAW_POINTER 群組
 
 [C26400 NO_RAW_POINTER_ASSIGNMENT](c26400.md)請勿將配置或函式呼叫的結果指派具有擁有者\<T > 傳回給原始指標的值; 使用擁有者\<T > 改用。 請參閱[c + + Core Guidelines I.11](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Ri-raw)。
 
@@ -65,9 +65,9 @@ ms.locfileid: "62540790"
 [C26481 NO_POINTER_ARITHMETIC](C26481.md)不使用指標算術。 請改用 span。 請參閱[c + + 核心指南 Bounds.1](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-bounds)。
 
 [C26485 NO_ARRAY_TO_POINTER_DECAY](C26485.md)。
-'%Expr%' 的運算式：沒有指標衰減陣列。 請參閱[c + + 核心指南 Bounds.3](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-bounds)。
+運算式 '% expr% '：沒有陣列指向指標衰減。 請參閱[c + + 核心指南 Bounds.3](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-bounds)。
 
-## <a name="uniquepointer-group"></a>UNIQUE_POINTER 群組
+## <a name="unique_pointer-group"></a>UNIQUE_POINTER 群組
 
 [C26410 NO_REF_TO_CONST_UNIQUE_PTR](C26410.md)參數 '%參數 %' 是參考`const`唯一指標，使用 const T * 或 const T& 改用。 請參閱[c + + Core Guidelines R.32](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rr-uniqueptrparam)。
 
@@ -77,7 +77,7 @@ ms.locfileid: "62540790"
 
 [C26415 SMART_PTR_NOT_NEEDED](C26415.md)智慧指標參數 '%符號 %' 只會用於存取自主的指標。 使用 T * 或 T& 改用。 請參閱[c + + Core Guidelines R.30](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rr-smartptrparam)。
 
-## <a name="sharedpointer-group"></a>SHARED_POINTER 群組
+## <a name="shared_pointer-group"></a>SHARED_POINTER 群組
 
 [C26414 RESET_LOCAL_SMART_PTR](C26414.md)移動、 複製、 重新指派，或重設本機智慧指標 '%符號 %'。 請參閱[c + + Core Guidelines R.5](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rr-scoped)。
 
@@ -95,21 +95,21 @@ ms.locfileid: "62540790"
 
 [C26427 NO_GLOBAL_INIT_EXTERNS](C26427.md)全域初始設定式會存取外部物件 '%符號 %'。 請參閱[c + + Core Guidelines I.22](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#i22-avoid-complex-initialization-of-global-objects)。
 
-[C26444 NO_UNNAMED_RAII_OBJECTS](c26444.md)避免未命名的物件具有自訂建構和解構。 請參閱[ES.84:請勿 （嘗試） 宣告區域變數但沒有名稱](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md)。
+[C26444 NO_UNNAMED_RAII_OBJECTS](c26444.md)避免未命名的物件具有自訂建構和解構。 請參閱 [ES 84：不要（嘗試）宣告沒有名稱 @ no__t-0 的本機變數。
 
 ## <a name="class-group"></a>類別群組
 
 [C26432 DEFINE_OR_DELETE_SPECIAL_OPS](C26432.md)如果您定義或刪除任何預設作業類型 '%符號 %' 中的，定義或刪除它們全部。 請參閱[c + + Core Guidelines C.21](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#c21-if-you-define-or-delete-any-default-operation-define-or-delete-them-all)。
 
-[C26433 OVERRIDE_EXPLICITLY](c26433.md)應該與 'override' 標記的函式 '%符號 %'。 請參閱[C.128:虛擬函式應指定剛好一個虛擬的覆寫，或最後一個](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#c128-virtual-functions-should-specify-exactly-one-of-virtual-override-or-final)。
+[C26433 OVERRIDE_EXPLICITLY](c26433.md)應該與 'override' 標記的函式 '%符號 %'。 請參閱 [C. 128：虛擬函式應該只指定其中一個虛擬、覆寫或最終 @ no__t-0。
 
 [C26434 DONT_HIDE_METHODS](C26434.md)函式 '%symbol_1%' 會隱藏非虛擬函式 '%symbol_2%'。 請參閱[c + + Core Guidelines C.128](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#c128-virtual-functions-should-specify-exactly-one-of-virtual-override-or-final)。
 
-[C26435 SINGLE_VIRTUAL_SPECIFICATION](c26435.md)函式 '%符號 %' 應指定剛好一個 'virtual'、 'override' 或 'final'。 請參閱[C.128:虛擬函式應指定剛好一個虛擬的覆寫，或最後一個](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md)。
+[C26435 SINGLE_VIRTUAL_SPECIFICATION](c26435.md)函式 '%符號 %' 應指定剛好一個 'virtual'、 'override' 或 'final'。 請參閱 [C. 128：虛擬函式應該只指定其中一個虛擬、覆寫或最終 @ no__t-0。
 
 [C26436 NEED_VIRTUAL_DTOR](C26436.md)具有虛擬函式的 ' %符號 %' 的類型必須是公用虛擬或受保護非虛擬解構函式。 請參閱[c + + Core Guidelines C.35](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#c35-a-base-class-destructor-should-be-either-public-and-virtual-or-protected-and-nonvirtual)。
 
-[C26443 NO_EXPLICIT_DTOR_OVERRIDE](c26443.md)覆寫解構函式不應使用明確的 'override' virtual' 的規範。 請參閱[C.128:虛擬函式應指定剛好一個虛擬的覆寫，或最後一個](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md)。
+[C26443 NO_EXPLICIT_DTOR_OVERRIDE](c26443.md)覆寫解構函式不應使用明確的 'override' virtual' 的規範。 請參閱 [C. 128：虛擬函式應該只指定其中一個虛擬、覆寫或最終 @ no__t-0。
 
 ## <a name="type-group"></a>型別群組
 
@@ -126,7 +126,7 @@ ms.locfileid: "62540790"
 [C26440 DECLARE_NOEXCEPT](C26440.md)可以宣告為函式 '%符號 %' `noexcept`。 請參閱[c + + Core Guidelines F.6](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#f6-if-your-function-may-not-throw-declare-it-noexcept)。
 
 [C26447 DONT_THROW_IN_NOEXCEPT](c26447.md)函式宣告**noexcept**但 calls 函式可能擲回例外狀況。
-請參閱[C++核心的指導方針：F.6:如果您的函式可能不會擲回，將它宣告 noexcept](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#f6-if-your-function-may-not-throw-declare-it-noexcept)。
+請參閱 @no__t-C++ 0 核心指導方針：F. 6：如果您的函數可能不會擲回，請將它宣告為 noexcept @ no__t-0。
 
 ## <a name="concurrency-group"></a>並行存取群組
 
@@ -136,7 +136,7 @@ ms.locfileid: "62540790"
 
 [C26460 USE_CONST_REFERENCE_ARGUMENTS](c26460.md)函式 '%函式 %' 的參考引數 '%引數 %' 可標示為`const`。 請參閱[c + + 核心指南 con.3](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rconst-ref)。
 
-[C26461 USE_CONST_POINTER_ARGUMENTS](c26461.md):函式 '%函式 %' 的指標引數 '%引數 %' 可標示為指標`const`。 請參閱[c + + 核心指南 con.3](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rconst-ref)。
+[C26461 USE_CONST_POINTER_ARGUMENTS](c26461.md)：函數 '% function% ' 的指標引數 '% argument% ' 可以標記為 `const` 的指標。 請參閱[c + + 核心指南 con.3](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rconst-ref)。
 
 [C26462 USE_CONST_POINTER_FOR_VARIABLE](c26462.md)指向的 '%變數 %' 的值會指派一次、 將它標示為指標`const`。 請參閱[c + + 核心指南 con.4](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#con4-use-const-to-define-objects-with-values-that-do-not-change-after-construction)。
 
@@ -180,7 +180,7 @@ ms.locfileid: "62540790"
 
 ## <a name="bounds-group"></a>界限群組
 
-[C26446 USE_GSL_AT](c26446.md)偏好使用`gsl::at()`而不是未檢查的註標運算子。 請參閱[C++核心的指導方針：Bounds.4:不使用標準程式庫函式和類型沒有檢查界限](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#probounds-bounds-safety-profile)。
+[C26446 USE_GSL_AT](c26446.md)偏好使用`gsl::at()`而不是未檢查的註標運算子。 請參閱 @no__t-C++ 0 核心指導方針：界限4：請勿使用標準程式庫函式和非範圍檢查 @ no__t-0 的類型。
 
 [C26481 NO_POINTER_ARITHMETIC](C26481.md)。
 請勿使用指標算術。 請改用 span。 請參閱[c + + 核心指南 Bounds.1](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-bounds)
@@ -189,19 +189,19 @@ ms.locfileid: "62540790"
 
 [C26483 STATIC_INDEX_OUT_OF_RANGE](c26483.md)值 %value%超出界限 （0，繫結的 %） 的變數 '%變數 %'。 只使用索引進入陣列的陣列界限內的常數運算式。 請參閱[c + + 核心指南 Bounds.2](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-bounds)
 
-[C26485 NO_ARRAY_TO_POINTER_DECAY](C26485.md)運算式 '%expr%':沒有指標衰減陣列。 請參閱[c + + 核心指南 Bounds.3](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-bounds)
+[C26485 NO_ARRAY_TO_POINTER_DECAY](C26485.md)運算式 '% expr% '：沒有陣列指向指標衰減。 請參閱[c + + 核心指南 Bounds.3](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-bounds)
 
 ## <a name="gsl-group"></a>GSL 群組
 
 [C26445 NO_SPAN_REF](c26445.md)的參考`gsl::span`或`std::string_view`可能表示存留期問題。
-請參閱[C++核心 GSL.view 指導方針：檢視](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#gslview-views)
+請參閱 @no__t-C++ 0 核心指導方針 GSL。 view：Views @ no__t-0
 
-[C26446 USE_GSL_AT](c26446.md)偏好使用`gsl::at()`而不是未檢查的註標運算子。 請參閱[C++核心的指導方針：Bounds.4:不使用標準程式庫函式和類型沒有檢查界限](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#probounds-bounds-safety-profile)。
+[C26446 USE_GSL_AT](c26446.md)偏好使用`gsl::at()`而不是未檢查的註標運算子。 請參閱 @no__t-C++ 0 核心指導方針：界限4：請勿使用標準程式庫函式和非範圍檢查 @ no__t-0 的類型。
 
-[C26448 USE_GSL_FINALLY](c26448.md)請考慮使用`gsl::finally`如果是最後一個動作。 請參閱[C++核心的指導方針：GSL.util:公用程式](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-utilities)。
+[C26448 USE_GSL_FINALLY](c26448.md)如果想要執行最後的動作，請考慮使用 `gsl::finally`。 請參閱 @no__t-C++ 0 核心指導方針：GSL. util：公用程式 @ no__t-0。
 
 [C26449 NO_SPAN_FROM_TEMPORARY](c26449.md) 
- `gsl::span`或`std::string_view`從 temporary 所建立也會失效時 temporary 已經失效。 請參閱[C++核心的指導方針：GSL.view:檢視](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#gslview-views)。
+ `gsl::span`或`std::string_view`從 temporary 所建立也會失效時 temporary 已經失效。 請參閱 @no__t-C++ 0 核心指導方針：GSL。 view：Views @ no__t-0。
 
 ## <a name="deprecated-warnings"></a>已被取代的警告
 

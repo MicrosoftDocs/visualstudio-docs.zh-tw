@@ -6,17 +6,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - Live Unit Testing
 - Live Unit Testing What's New
-author: rpetrusha
-ms.author: ronpet
+author: gewarren
+ms.author: gewarren
 ms.workload:
 - dotnet
 monikerRange: vs-2017
-ms.openlocfilehash: 86ed90e6a4fe211d162f12785b0f3f555802ad17
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
-ms.translationtype: HT
+ms.openlocfilehash: 6a96089de8f9998c12cbc2e12765d128b1d2195b
+ms.sourcegitcommit: 1a3c2ca995fd44fc72741b3a100c6e57f4f8702c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67823760"
+ms.lasthandoff: 10/11/2019
+ms.locfileid: "72262278"
 ---
 # <a name="whats-new-in-live-unit-testing-for-visual-studio-2017"></a>Visual Studio 2017 中 Live Unit Testing 的新功能
 
@@ -38,7 +38,7 @@ ms.locfileid: "67823760"
 
 - **可靠性與效能**：Live Unit Testing 現在確保系統可以進一步偵測尚未完成完全載入專案的時間，並避免 Live Unit Testing 損毀。 組建效能改善也可在系統知道專案檔中沒有任何變更的情況下，避免對 MSBuild 專案進行重新評估。
 
-- **其他使用者介面精簡**：按一下滑鼠右鍵手勢中令人混淆的 [Live Test Set - Include/Exclude] \(即時測試集 - 包含/排除\)  選項已重新命名為 [Live Unit Testing Include/Exclude] \(Live Unit Testing 包含/排除\)  。 已移除 [測試]   > [Live Unit Testing]  功能表上的 [Reset clean] \(全新重設\)  選項。 現在選取 [工具]   > [選項]   > [Live Unit Testing]  ，然後選取 [Delete Persisted Data] \(刪除持續性資料\)  即可予以存取。
+- **其他使用者介面精簡**：按一下滑鼠右鍵手勢中令人混淆的 [Live Test Set - Include/Exclude] \(即時測試集 - 包含/排除\) 選項已重新命名為 [Live Unit Testing Include/Exclude] \(Live Unit Testing 包含/排除\)。 已移除 [測試] > [Live Unit Testing] 功能表上的 [Reset clean] \(全新重設\) 選項。 現在選取 [工具] > [選項] > [Live Unit Testing]，然後選取 [Delete Persisted Data] \(刪除持續性資料\) 即可予以存取。
 
 ## <a name="version-153"></a>15.3 版本
 
@@ -56,7 +56,7 @@ ms.locfileid: "67823760"
 
 - 已將數個額外的可設定選項新增至 [工具]/[選項]/[Live Unit Testing]/[一般]。 您可以限制用於 Live Unit Testing 的記憶體。 您也可以針對開啟的方案，以指定保存 Live Unit Testing 資料的檔案路徑。
 
-- 已將數個額外的功能表項目新增至 [測試]/[Live Unit Testing] 的功能表列底下。 [重設清除]  會刪除保存資料並再次產生它。 [選項]  會跳至 [工具]/[選項]/[Live Unit Testing]/[一般]。
+- 已將數個額外的功能表項目新增至 [測試]/[Live Unit Testing] 的功能表列底下。 [重設清除] 會刪除保存資料並再次產生它。 [選項] 會跳至 [工具]/[選項]/[Live Unit Testing]/[一般]。
 
 - 您現在可以使用下列屬性，以在原始程式碼中指定要從 Live Unit Testing 排除已設定目標的測試方法：
 

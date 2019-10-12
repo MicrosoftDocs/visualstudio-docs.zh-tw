@@ -2,7 +2,7 @@
 title: 安裝 Visual Studio
 titleSuffix: ''
 description: 了解如何逐步安裝 Visual Studio。
-ms.date: 04/16/2019
+ms.date: 10/07/2019
 ms.custom: seodec18
 ms.topic: conceptual
 f1_keywords:
@@ -20,12 +20,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 5d83086720a94c23d0ceb3f07d9398a7d5256f68
-ms.sourcegitcommit: 6993bcb0d2b0067b1b7b7899bfba52c31c70b7e7
+ms.openlocfilehash: 6cd91fadea397955b756461383ed8e17030b4c3b
+ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71095359"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72018848"
 ---
 # <a name="install-visual-studio"></a>安裝 Visual Studio
 
@@ -82,7 +82,7 @@ ms.locfileid: "71095359"
 
 1. 重新開機。 重新開機可以確保不會有任何擱置的安裝或更新會阻礙 Visual Studio 安裝。
 
-1. 釋出空間。 透過執行 [磁碟清理] 應用程式之類的方式，將不必要的檔案及應用程式從 %SystemDrive% 移除。 
+1. 釋出空間。 透過執行 [磁碟清理] 應用程式之類的方式，將不必要的檔案及應用程式從 %SystemDrive% 移除。
 
 ::: moniker-end
 
@@ -100,16 +100,17 @@ ms.locfileid: "71095359"
 
 ## <a name="step-2---download-visual-studio"></a>步驟 2：下載 Visual Studio
 
-接下來，請下載 Visual Studio 啟動載入器檔案。 若要這麼做，請依序選擇下列按鈕、您想要的 Visual Studio 版本、[儲存] 和 [開啟資料夾]。
+接下來，請下載 Visual Studio 啟動載入器檔案。
 
 ::: moniker range="vs-2017"
 
- > [!div class="button"]
- > [下載 Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)
+若要取得 Visual Studio 2017 的啟動載入器，請參閱[Visual Studio 舊版](https://visualstudio.microsoft.com/vs/older-downloads/)下載頁面，以取得如何執行此操作的詳細資訊。
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
+
+若要這麼做，請依序選擇下列按鈕、您想要的 Visual Studio 版本、[儲存] 和 [開啟資料夾]。
 
  > [!div class="button"]
  > [下載 Visual Studio](https://visualstudio.microsoft.com/downloads)
@@ -250,7 +251,7 @@ ms.locfileid: "71095359"
 
 1. 在搜尋方塊中，輸入您想要建立的應用程式類型，以查看可用的範本清單。 範本清單取決於您在安裝期間所選擇的工作負載。 若要查看不同的範本，請選擇不同的工作負載。
 
-   您也可以使用 [語言] 下拉式清單來篩選搜尋特定的程式設計語言。 您也可以使用 [平台] 清單和 [專案類型] 清單篩選。 
+   您也可以使用 [語言] 下拉式清單來篩選搜尋特定的程式設計語言。 您也可以使用 [平台] 清單和 [專案類型] 清單篩選。
 
 1. Visual Studio 會開啟您的新專案，而您已準備好撰寫程式碼！
 

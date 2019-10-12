@@ -21,12 +21,12 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 493db26aed1a4e5f41acdd054dba266577159809
-ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
-ms.translationtype: HT
+ms.openlocfilehash: 3a20637b7c7c3afcf594d1498b6030c685e4be72
+ms.sourcegitcommit: e95dd8cedcd180e0bce6a75c86cf861757918290
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72018496"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "72163055"
 ---
 # <a name="code-analysis-for-cc-overview"></a>C/C++ 程式碼分析概觀
 
@@ -46,7 +46,7 @@ C/C++ Code Analysis 工具會提供 c/C++原始程式碼中可能缺失的相關
 C:\>cl /analyze Sample.cpp
 ```
 
-**Visual Studio 2017 15.7 版和更新**版本您可以從命令列使用任何組建系統（包括 CMake）來執行此工具。
+**Visual Studio 2017 15.7 版和更新版本：** 您可以從命令列使用任何組建系統（包括 CMake）來執行此工具。
 
 ## <a name="pragma-support"></a>#pragma 支援
 

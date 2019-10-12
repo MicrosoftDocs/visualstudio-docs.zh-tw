@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: c50eadf9c26eaca4c5495dfbc55a1b266aecdb90
-ms.sourcegitcommit: 7825d4163e52d724e59f6c0da209af5fbef673f7
+ms.openlocfilehash: a4c7d0aa4da7e672db06675c65e008d1f71f8bc7
+ms.sourcegitcommit: b23d73c86ec7720c4cd9a58050860bc559623a3d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72000009"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "72172809"
 ---
 # <a name="use-code-analyzers"></a>使用程式碼分析器
 
@@ -138,7 +138,7 @@ Visual Studio 提供一個便利的方式，從 [[快速動作](../ide/quick-act
 
 ![方案總管中的規則集檔案](media/ruleset-in-solution-explorer.png)
 
-1. 在**方案總管**中按兩下作用中的[規則集](analyzer-rule-sets.md)檔案，然後在 [**參考** > **分析器**] 節點的右鍵功能表上選取 [開啟作用中**規則集**]，或選取 [ **開啟于]** 專案的 [程式碼分析] 屬性頁。
+1. 在**方案總管**中按兩下作用中的規則集檔案，然後在 [**參考** > **分析器**] 節點的右鍵功能表上選取 [開啟作用中**規則集**]，或選取程式碼上的 [**開啟**]專案的 [分析] 屬性頁。
 
    如果這是您第一次編輯規則集，Visual Studio 會建立預設規則集檔案的複本，並將其命名為 *@no__t 1projectname > 規則*集，並將它新增至您的專案。 此自訂規則集也會成為專案的作用中規則集。
 

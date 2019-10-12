@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: bdf67f78d1a4cc7e2d17336a7272b919fcc6fba9
-ms.sourcegitcommit: d3e423a9a4ed773a54d14b247e1b5bfc95de8816
+ms.openlocfilehash: 4194a392eee1d5c9beaa0640f4006d1f01ebbace
+ms.sourcegitcommit: 1a3c2ca995fd44fc72741b3a100c6e57f4f8702c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "71693018"
+ms.lasthandoff: 10/11/2019
+ms.locfileid: "72262322"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>使用 *.runsettings* 檔案設定單元測試
 
@@ -252,8 +252,7 @@ ms.locfileid: "71693018"
 ```xml
 <TestRunParameters>
     <Parameter name="webAppUrl" value="http://localhost" />
-    <Parameter name="webAppUserName" value="Admin" />
-    <Parameter name="webAppPassword" value="Password" />
+    <Parameter name="docsUrl" value="https://docs.microsoft.com" />
 </TestRunParameters>
 ```
 

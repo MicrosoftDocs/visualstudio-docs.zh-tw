@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5aec8c26a827a39abdfeacfc0e3d6dea4a62db43
-ms.sourcegitcommit: 7825d4163e52d724e59f6c0da209af5fbef673f7
+ms.openlocfilehash: 12e6681490c6c933369d3fef064ec88f240e3a99
+ms.sourcegitcommit: b23d73c86ec7720c4cd9a58050860bc559623a3d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71999971"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "72172765"
 ---
 # <a name="code-analysis-faq"></a>程式碼分析常見問題
 
@@ -24,24 +24,30 @@ ms.locfileid: "71999971"
 
 **問**：我應該使用程式碼分析或 EditorConfig 來檢查程式碼樣式嗎？
 
-**答**：程式碼分析和 EditorConfig 檔會手上工作。 當您[在 EditorConfig](../ide/editorconfig-code-style-settings-reference.md)檔或 [[文字編輯器] 選項](../ide/code-styles-and-code-cleanup.md)頁面上定義程式碼樣式時，實際上是設定 Visual Studio 內建的程式碼分析器。 EditorConfig 檔案也可以用來設定某些 NuGet 分析器套件，例如[FxCop 分析器](configure-fxcop-analyzers.md)。
+**答**：程式碼分析和 EditorConfig 檔會手上工作。 當您[在 EditorConfig](../ide/editorconfig-code-style-settings-reference.md)檔或 [[文字編輯器] 選項](../ide/code-styles-and-code-cleanup.md)頁面上定義程式碼樣式時，實際上是設定 Visual Studio 內建的程式碼分析器。 EditorConfig 檔案可用來啟用或停用分析器規則，也可以設定一些 NuGet 分析器套件，例如[FxCop](configure-fxcop-analyzers.md)分析器。
 
 ## <a name="editorconfig-versus-rule-sets"></a>EditorConfig 與規則集的比較
 
 **問**：我應該使用規則集或 EditorConfig 檔來設定分析器嗎？
 
-**答**：規則集和 EditorConfig 檔可以並存，而且可以用來設定分析器。 [規則集](analyzer-rule-sets.md)可讓您啟用和停用規則，並設定其嚴重性。 EditorConfig 檔案提供其他方式來設定規則。 針對 FxCop 分析器，EditorConfig files 可讓您[定義要分析的程式碼類型](fxcop-analyzer-options.md)。 對於內建于 Visual Studio 的程式碼樣式分析器，EditorConfig 檔案可讓您定義程式碼基底[慣用的程式碼樣式](../ide/editorconfig-code-style-settings-reference.md)。
+**答**：規則集和 EditorConfig 檔可以並存，而且可以用來設定分析器。 EditorConfig 檔案和規則集都可讓您啟用和停用規則，並設定其嚴重性。
+
+不過，EditorConfig 檔案也提供其他方式來設定規則：
+
+- 針對 FxCop 分析器，EditorConfig files 可讓您[定義要分析的程式碼類型](fxcop-analyzer-options.md)。
+- 對於內建于 Visual Studio 的程式碼樣式分析器，EditorConfig 檔案可讓您定義程式碼基底[慣用的程式碼樣式](../ide/editorconfig-code-style-settings-reference.md)。
 
 除了規則集和 EditorConfig 檔以外，有些分析器是透過使用標示為C#和 VB 編譯器之[其他](../ide/build-actions.md#build-action-values)檔案的文字檔來設定。
 
 > [!NOTE]
-> EditorConfig 檔案無法用來設定舊版分析，而規則集可以。
+> - EditorConfig 檔案只能用來啟用規則，並在 Visual Studio 2019 16.3 版和更新版本中設定其嚴重性。
+> - EditorConfig 檔案無法用來設定舊版分析，而規則集可以。
 
 ## <a name="code-analysis-in-ci-builds"></a>CI 組建中的程式碼分析
 
 **問**：以 .NET Compiler Platform 為基礎的程式碼分析在持續整合（CI）組建中運作嗎？
 
-**答**：是的。 針對從 NuGet 封裝安裝的分析器，這些規則會[在組建階段強制執行](roslyn-analyzers-overview.md#build-errors)，包括在 CI 組建期間。 CI 組建中使用的分析器會遵循[規則集](analyzer-rule-sets.md)和[editorconfig](configure-fxcop-analyzers.md)檔案中的規則設定。 目前內建在 Visual Studio 中的程式碼分析器無法做為 NuGet 套件使用，因此這些規則無法在 CI 組建中強制執行。
+**答**：是的。 針對從 NuGet 封裝安裝的分析器，這些規則會[在組建階段強制執行](roslyn-analyzers-overview.md#build-errors)，包括在 CI 組建期間。 CI 組建中使用的分析器會遵循規則集和 EditorConfig 檔中的規則設定。 目前內建在 Visual Studio 中的程式碼分析器無法做為 NuGet 套件使用，因此這些規則無法在 CI 組建中強制執行。
 
 ## <a name="ide-analyzers-versus-stylecop"></a>IDE 分析器與 Stylecop 能夠的比較
 

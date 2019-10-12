@@ -1,7 +1,7 @@
 ---
 title: 建立網路型安裝
 description: 了解如何建立網路安裝點以在企業內部署 Visual Studio。
-ms.date: 10/01/2019
+ms.date: 10/07/2019
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 0c6de85e6f2c5849567751b3232668ec2940cff9
-ms.sourcegitcommit: 6ae0a289f1654dec63b412bfa22035511a2ef5ad
+ms.openlocfilehash: b297e99c3fbaaabed178930dfad1ac13d5ab1cd8
+ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71950701"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72018886"
 ---
 # <a name="create-a-network-installation-of-visual-studio"></a>建立 Visual Studio 的網路安裝
 
@@ -33,23 +33,27 @@ ms.locfileid: "71950701"
 
 ## <a name="download-the-visual-studio-bootstrapper"></a>下載 Visual Studio 啟動載入器
 
-下載您要的 Visual Studio 版本。 請務必按一下 [儲存]，然後按一下 [開啟資料夾]。
-
-您的安裝程式可執行檔 (具體而言，即為啟動載入器檔案) 應該符合下列其中一個檔案。
+下載您想要的 Visual Studio 版本的啟動載入器檔案。 請務必選擇 [**儲存**]，然後選擇 [**開啟資料夾**]。
 
 ::: moniker range="vs-2017"
 
-|版本 | 下載|
-|-------------|-----------------------|
-|Visual Studio 企業版 | [**vs_enterprise.exe**](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=enterprise&rel=15&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=network+install&utm_content=download+vs2017) |
-|Visual Studio Professional | [**vs_professional.exe**](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=professional&rel=15&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=network+install&utm_content=download+vs2017) |
-| Visual Studio Build Tools   | [**vs_buildtools .exe**](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=buildtools&rel=15&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=offline+install&utm_content=download+vs2017) |
+若要取得 Visual Studio 2017 的啟動載入器，請參閱[Visual Studio 舊版](https://visualstudio.microsoft.com/vs/older-downloads/)下載頁面，以取得如何執行此操作的詳細資訊。
 
-其他支援的啟動載入器包括[vs_feedbackclient](https://aka.ms/vs/15/release/vs_feedbackclient.exe)、 [vs_teamexplorer](https://aka.ms/vs/15/release/vs_teamexplorer.exe)、 [vs_testagent](https://aka.ms/vs/15/release/vs_testagent.exe)、 [vs_testcontroller](https://aka.ms/vs/15/release/vs_testcontroller.exe)和[vs_testprofessional](https://aka.ms/vs/15/release/vs_testprofessional.exe).exe。
+您的安裝程式可執行檔 @ no__t-0or 更明確，啟動載入器檔案 @ no__t-1should 符合下列其中一項。
+
+| 版本 | Filename |
+|-------------|-----------------------|
+|Visual Studio 企業版 | **vs_enterprise.exe** |
+|Visual Studio Professional | **vs_professional.exe** |
+|Visual Studio Build Tools   | **vs_buildtools .exe** |
+
+其他支援的啟動載入器包括**vs_feedbackclient**、 **vs_teamexplorer**、 **vs_testagent**、 **vs_testcontroller**和**vs_testprofessional**.exe。
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
+
+您的安裝程式可執行檔 (具體而言，即為啟動載入器檔案) 應該符合下列其中一個檔案。
 
 |版本 | 下載|
 |-------------|-----------------------|

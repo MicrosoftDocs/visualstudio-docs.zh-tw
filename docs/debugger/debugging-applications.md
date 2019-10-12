@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9848b666df985ddc7c2c4d0cf56f9ae4cafcb347
-ms.sourcegitcommit: dc12a7cb66124596089f01d3e939027ae562ede9
+ms.openlocfilehash: 159f641b1ae5d05233e997d8dc41513a484eae75
+ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71962893"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72018794"
 ---
 # <a name="debugging-applications"></a>對應用程式進行偵錯
 下列各節將說明特定類型應用程式的偵錯。 不同的應用程式類型與不同的語言，需要不同的設定及技術，其呈現出來需要偵錯的問題也不相同。
@@ -34,6 +34,6 @@ ms.locfileid: "71962893"
 |[圖形診斷 (偵錯 DirectX 圖形)](/visualstudio/debugger/graphics/visual-studio-graphics-diagnostics)|說明如何對 DirectX 圖形進行偵錯。|
 |[對 ASP.NET 應用程式進行偵錯](../debugger/how-to-enable-debugging-for-aspnet-applications.md)|說明如何調試 ASP.NET 應用程式。|
 |[對 Python 程式碼進行偵錯工具](../python/tutorial-working-with-python-in-visual-studio-step-04-debugging.md)|說明如何對 Python 程式碼進行偵錯工具|
-|[Debug JavaScript 和 TypeScript 應用程式](/javascript/debug-nodejs)|說明如何調試 JavaScript、TypeScript 和 node.js 應用程式|
+|[Debug JavaScript 和 TypeScript 應用程式](../javascript/debug-nodejs.md)|說明如何調試 JavaScript、TypeScript 和 node.js 應用程式|
 |[對 Web 應用程式進行偵錯](../debugger/debugging-web-applications.md)|說明如何調試 Web 應用程式和腳本。|
 |[對 WCF 服務進行偵錯](../debugger/debugging-wcf-services.md)|說明如何對 Windows Communication Foundation 服務進行偵錯。|

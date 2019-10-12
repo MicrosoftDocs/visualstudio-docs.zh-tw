@@ -10,28 +10,28 @@ f1_keywords:
 ms.assetid: 8e4f4f9c-5dfa-4835-87df-ecd1698fc650
 author: mikeblome
 ms.author: mblome
-manager: wpickett
+manager: markl
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c7adb310db9eece1d8d4a2881057cc1acde1062
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 37bee4665040b8792cdc0fa521fc75cbfe9ae1de
+ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68923821"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72018353"
 ---
 # <a name="specifying-when-and-where-an-annotation-applies"></a>指定套用註釋的時機和位置
-當注釋是條件式時, 它可能需要其他注釋來指定分析器的批註。  例如, 如果函式有可以是同步或非同步變數, 函式的行為會如下所示:在同步的情況下, 它一律會成功, 但在非同步情況下, 它會報告錯誤 (如果它無法立即成功)。 以同步方式呼叫函式時, 檢查結果值不會對程式碼分析器提供任何值, 因為它不會傳回。  不過, 當以非同步方式呼叫函式, 但未檢查函數結果時, 可能會發生嚴重的錯誤。 這個範例說明您可以使用`_When_`批註的情況 (如本文稍後所述) 來啟用檢查。
+當注釋是條件式時，它可能需要其他注釋來指定分析器的批註。  例如，如果函式有可以是同步或非同步變數，函式的行為會如下所示：在同步的情況下，它一律會成功，但在非同步情況下，它會報告錯誤（如果它無法立即成功）。 以同步方式呼叫函式時，檢查結果值不會對程式碼分析器提供任何值，因為它不會傳回。  不過，當以非同步方式呼叫函式，但未檢查函數結果時，可能會發生嚴重的錯誤。 這個範例說明您可以使用 `_When_` 注釋的情況（如本文稍後所述）來啟用檢查。
 
 ## <a name="structural-annotations"></a>結構化注釋
-若要控制批註的套用時機和位置, 請使用下列結構化注釋。
+若要控制批註的套用時機和位置，請使用下列結構化注釋。
 
 |註釋|描述|
 |----------------|-----------------|
-|`_At_(expr, anno-list)`|`expr`這是產生左值的運算式。 中`anno-list`的批註會套用至所`expr`命名的物件。 針對中`anno-list`的每個`expr`批註, 如果批註是在前置條件中轉譯, 則會在前置條件中解讀, 如果批註是在後置條件中轉譯, 則會在後置條件中轉譯。|
-|`_At_buffer_(expr, iter, elem-count, anno-list)`|`expr`這是產生左值的運算式。 中`anno-list`的批註會套用至所`expr`命名的物件。 針對中`anno-list`的每個`expr`批註, 如果批註在前置條件中被解讀, 則會在預先條件中解讀, 如果批註是在後置條件中轉譯, 則會在後置條件中轉譯。<br /><br /> `iter`這是以注釋為範圍的變數名稱 (包含`anno-list`)。 `iter`具有隱含類型`long`。 任何封閉範圍中的名稱相同的變數都會從評估中隱藏出來。<br /><br /> `elem-count`這是評估為整數的運算式。|
-|`_Group_(anno-list)`|中`anno-list`的注釋全都視為具有套用至每個注釋之群組批註的任何限定詞。|
-|`_When_(expr, anno-list)`|`expr`這是可以轉換成`bool`的運算式。 若為非零 (`true`), 則會將中`anno-list`指定的注釋視為適用。<br /><br /> 根據預設, 如果注釋是前置`anno-list`條件`expr` , 則會將中的每個注釋轉譯為使用輸入值, 如果注釋是後置條件, 則會使用輸出值。 若要覆寫預設值, 您可以`_Old_`在評估後置條件時使用內建, 以指出應該使用輸入值。 **注意：** 由於前置條件中的評估結果可能會與`_When_`在後置條件中評估的`expr`結果`*pLength`不同, 因此在使用時, 可能會啟用不同的注釋, 因為此值會因為先決條件而產生。|
+|`_At_(expr, anno-list)`|`expr` 是產生左值的運算式。 @No__t-0 中的批註會套用至由 `expr` 命名的物件。 針對 `anno-list` 中的每個批註，如果批註是在前置條件中轉譯，則會在前置條件中解讀 `expr`; 如果批註是在後置條件中轉譯，則會在後置條件中轉譯。|
+|`_At_buffer_(expr, iter, elem-count, anno-list)`|`expr` 是產生左值的運算式。 @No__t-0 中的批註會套用至由 `expr` 命名的物件。 針對 `anno-list` 中的每個批註，如果批註在前置條件中被解讀，則會在預先條件中解讀 `expr`; 如果批註是在後置條件中轉譯，則會在後置條件中轉譯。<br /><br /> `iter` 是以注釋為範圍的變數名稱（包含 `anno-list`）。 `iter` 的隱含類型 `long`。 任何封閉範圍中的名稱相同的變數都會從評估中隱藏出來。<br /><br /> `elem-count` 是評估為整數的運算式。|
+|`_Group_(anno-list)`|@No__t-0 中的注釋全都視為具有套用至每個注釋之群組批註的任何限定詞。|
+|`_When_(expr, anno-list)`|`expr` 是可以轉換成 `bool` 的運算式。 若為非零（`true`），則會將 `anno-list` 中指定的注釋視為適用。<br /><br /> 根據預設，針對 `anno-list` 中的每個批註，如果注釋是前置條件，則 `expr` 會解讀為使用輸入值，而如果注釋為後置條件，則會使用輸出值。 若要覆寫預設值，您可以在評估後置條件時使用 `_Old_` 內建，以指出應該使用輸入值。 **注意：** 如果牽涉到可變動的值（例如 `*pLength`），則可能會 @no__t 啟用不同的注釋，因為前置條件中 `expr` 的評估結果可能與在後置條件中的評估結果不同。|
 
 ## <a name="see-also"></a>另請參閱
 
