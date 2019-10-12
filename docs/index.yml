@@ -10,12 +10,12 @@ metadata:
   monikerRange: '>=vs-2017'
   f1_keywords:
   - MSDNSTART
-  ms.openlocfilehash: f754d62f95dee9531429f9421571982307af9966
-  ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+  ms.openlocfilehash: 753172144647fcbf699ddc85328dd5e2a94ae87b
+  ms.sourcegitcommit: a5a54b147e772dc39e519da74ec41a0c25d99628
   ms.translationtype: HT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 09/24/2019
-  ms.locfileid: "71238132"
+  ms.lasthandoff: 10/12/2019
+  ms.locfileid: "72289579"
 highlightedContent:
   items:
   - title: 設定與安裝
@@ -141,7 +141,7 @@ additionalContent:
       url: deployment/index.yml
     - title: 版本控制
       summary: 使用 Git 和 TFVC 等版本控制技術來共用程式碼。
-      url: version-control/index.md
+      url: /azure/devops/repos/index
     - title: DevOps
       summary: 利用 Azure DevOps Services 持續在雲端建置及發行您的應用程式及施行敏捷式運作。
       url: /azure/devops

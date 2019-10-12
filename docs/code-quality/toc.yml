@@ -562,95 +562,95 @@
                   displayName: security warnings
                   href: security-warnings.md
                 - name: 'CA2100:必須檢閱 SQL 查詢中是否有安全性弱點'
-                  href: ca2100-review-sql-queries-for-security-vulnerabilities.md
+                  href: ca2100.md
                 - name: 'CA2102:必須使用一般處理常式攔截非 CLSCompliant 例外狀況'
-                  href: ca2102-catch-non-clscompliant-exceptions-in-general-handlers.md
+                  href: ca2102.md
                 - name: 'CA2103:必須檢閱命令式安全性'
-                  href: ca2103-review-imperative-security.md
+                  href: ca2103.md
                 - name: 'CA2104:不要宣告唯讀的可變動參考類型'
-                  href: ca2104-do-not-declare-read-only-mutable-reference-types.md
+                  href: ca2104.md
                 - name: 'CA2105:陣列欄位不應該為唯讀'
-                  href: ca2105-array-fields-should-not-be-read-only.md
+                  href: ca2105.md
                 - name: 'CA2106:必須保護判斷提示'
-                  href: ca2106-secure-asserts.md
+                  href: ca2106.md
                 - name: 'CA2107:必須檢閱 Deny 和 Permit Only 的使用方式'
-                  href: ca2107-review-deny-and-permit-only-usage.md
+                  href: ca2107.md
                 - name: 'CA2108:必須檢閱實值類型上的宣告式安全性'
-                  href: ca2108-review-declarative-security-on-value-types.md
+                  href: ca2108.md
                 - name: 'CA2109:必須檢閱可見的事件處理常式'
-                  href: ca2109-review-visible-event-handlers.md
+                  href: ca2109.md
                 - name: 'CA2111:指標不應該為可見的'
-                  href: ca2111-pointers-should-not-be-visible.md
+                  href: ca2111.md
                 - name: 'CA2112:受保護類型不應該公開欄位'
-                  href: ca2112-secured-types-should-not-expose-fields.md
+                  href: ca2112.md
                 - name: 'CA2114:方法安全性應該是類型的超集'
-                  href: ca2114-method-security-should-be-a-superset-of-type.md
+                  href: ca2114.md
                 - name: 'CA2115:使用原生資源時必須呼叫 GC.KeepAlive'
-                  href: ca2115-call-gc-keepalive-when-using-native-resources.md
+                  href: ca2115.md
                 - name: 'CA2116:APTCA 方法應該只呼叫 APTCA 方法'
-                  href: ca2116-aptca-methods-should-only-call-aptca-methods.md
+                  href: ca2116.md
                 - name: 'CA2117:APTCA 類型應該只擴充 APTCA 基底類型'
-                  href: ca2117-aptca-types-should-only-extend-aptca-base-types.md
+                  href: ca2117.md
                 - name: 'CA2118:檢閱 SuppressUnmanagedCodeSecurityAttribute 使用方法'
-                  href: ca2118-review-suppressunmanagedcodesecurityattribute-usage.md
+                  href: ca2118.md
                 - name: 'CA2119:密封方法以滿足私用介面的要求'
-                  href: ca2119-seal-methods-that-satisfy-private-interfaces.md
+                  href: ca2119.md
                 - name: 'CA2120:必須保護序列化建構函式'
-                  href: ca2120-secure-serialization-constructors.md
+                  href: ca2120.md
                 - name: 'CA2121:靜態建構函式應該為私用的'
-                  href: ca2121-static-constructors-should-be-private.md
+                  href: ca2121.md
                 - name: 'CA2122:不要間接公開具有連結要求的方法'
-                  href: ca2122-do-not-indirectly-expose-methods-with-link-demands.md
+                  href: ca2122.md
                 - name: 'CA2123:覆寫連結要求應該與基底相同'
-                  href: ca2123-override-link-demands-should-be-identical-to-base.md
+                  href: ca2123.md
                 - name: 'CA2124:必須將有弱點的 finally 子句包裝在外層 try 中'
-                  href: ca2124-wrap-vulnerable-finally-clauses-in-outer-try.md
+                  href: ca2124.md
                 - name: 'CA2126:必須同時具有類型連結要求和繼承要求'
-                  href: ca2126-type-link-demands-require-inheritance-demands.md
+                  href: ca2126.md
                 - name: 'CA2130:安全性關鍵常數應該是透明的'
-                  href: ca2130-security-critical-constants-should-be-transparent.md
+                  href: ca2130.md
                 - name: 'CA2131:安全性關鍵類型可能未參與類型等價'
-                  href: ca2131-security-critical-types-may-not-participate-in-type-equivalence.md
+                  href: ca2131.md
                 - name: 'CA2132:預設建構函式至少必須和基底類型的預設建構函式一樣關鍵'
-                  href: ca2132-default-constructors-must-be-at-least-as-critical-as-base-type-default-constructors.md
+                  href: ca2132.md
                 - name: 'CA2133:委派必須繫結至具有一致透明度的方法'
-                  href: ca2133-delegates-must-bind-to-methods-with-consistent-transparency.md
+                  href: ca2133.md
                 - name: 'CA2134:覆寫基底方法時，方法必須保持一致的透明度'
-                  href: ca2134-methods-must-keep-consistent-transparency-when-overriding-base-methods.md
+                  href: ca2134.md
                 - name: 'CA2135:層級 2 組件不應該包含 LinkDemand'
-                  href: ca2135-level-2-assemblies-should-not-contain-linkdemands.md
+                  href: ca2135.md
                 - name: 'CA2136:成員不應該具有衝突的透明度註釋'
-                  href: ca2136-members-should-not-have-conflicting-transparency-annotations.md
+                  href: ca2136.md
                 - name: 'CA2137:透明方法必須只包含可驗證的 IL'
-                  href: ca2137-transparent-methods-must-contain-only-verifiable-il.md
+                  href: ca2137.md
                 - name: 'CA2138:透明方法不可以使用 SuppressUnmanagedCodeSecurity 屬性呼叫方法'
-                  href: ca2138-transparent-methods-must-not-call-methods-with-the-suppressunmanagedcodesecurity-attribute.md
+                  href: ca2138.md
                 - name: 'CA2139:透明方法不能使用 HandleProcessCorruptingExceptions 屬性'
-                  href: ca2139-transparent-methods-may-not-use-the-handleprocesscorruptingexceptions-attribute.md
+                  href: ca2139.md
                 - name: 'CA2140:透明程式碼不可以參考安全性關鍵項目'
-                  href: ca2140-transparent-code-must-not-reference-security-critical-items.md
+                  href: ca2140.md
                 - name: CA2141：透明方法不可以滿足 LinkDemand
-                  href: ca2141-transparent-methods-must-not-satisfy-linkdemands.md
+                  href: ca2141.md
                 - name: 'CA2142:透明程式碼不可以使用 LinkDemand 加以保護'
-                  href: ca2142-transparent-code-should-not-be-protected-with-linkdemands.md
+                  href: ca2142.md
                 - name: 'CA2143:透明方法不可以使用安全性要求'
-                  href: ca2143-transparent-methods-should-not-use-security-demands.md
+                  href: ca2143.md
                 - name: 'CA2144:透明程式碼不可以從位元組陣列載入組件'
-                  href: ca2144-transparent-code-should-not-load-assemblies-from-byte-arrays.md
+                  href: ca2144.md
                 - name: 'CA2145:透明方法不可以使用 SuppressUnmanagedCodeSecurityAttribute 來裝飾'
-                  href: ca2145-transparent-methods-should-not-be-decorated-with-the-suppressunmanagedcodesecurityattribute.md
+                  href: ca2145.md
                 - name: 'CA2146:類型至少必須和基底類型與介面一樣關鍵'
-                  href: ca2146-types-must-be-at-least-as-critical-as-their-base-types-and-interfaces.md
+                  href: ca2146.md
                 - name: 'CA2147:CA2147：透明方法不可以使用安全性判斷提示'
-                  href: ca2147-transparent-methods-may-not-use-security-asserts.md
+                  href: ca2147.md
                 - name: 'CA2149:透明方法不可以呼叫機器碼'
-                  href: ca2149-transparent-methods-must-not-call-into-native-code.md
+                  href: ca2149.md
                 - name: 'CA2151:具有關鍵類型的欄位應為安全性關鍵'
-                  href: ca2151-fields-with-critical-types-should-be-security-critical.md
+                  href: ca2151.md
                 - name: CA5122 P-Invoke 宣告不可為安全關鍵
-                  href: ca5122-p-invoke-declarations-should-not-be-safe-critical.md
+                  href: ca5122.md
                 - name: 'CA2153:避免處理損毀狀態例外狀況'
-                  href: ca2153-avoid-handling-corrupted-state-exceptions.md
+                  href: ca2153.md
                 - name: CA2300：請勿使用不安全的還原序列化程式 BinaryFormatter
                   href: ca2300.md
                 - name: CA2301：未先設定 BinaryFormatter.Binder 之前，請勿呼叫 BinaryFormatter.Deserialize
@@ -708,13 +708,13 @@
                 - name: CA3061：請勿透過 URL 新增結構描述
                   href: ca3061.md
                 - name: 'CA3075:不安全的 DTD 處理'
-                  href: ca3075-insecure-dtd-processing.md
+                  href: ca3075.md
                 - name: 'CA3076:不安全的 XSLT 指令碼執行'
-                  href: ca3076-insecure-xslt-script-execution.md
+                  href: ca3076.md
                 - name: 'CA3077:API 設計、XML 文件和 XML 文字讀取器中的不安全處理'
-                  href: ca3077-insecure-processing-in-api-design-xml-document-and-xml-text-reader.md
+                  href: ca3077.md
                 - name: 'CA3147:使用 ValidateAntiForgeryToken 標示動詞處理常式'
-                  href: ca3147-mark-verb-handlers-with-validateantiforgerytoken.md
+                  href: ca3147.md
                 - name: 'CA5361:請勿為安全通道停用強式密碼編譯'
                   href: ca5361.md
                 - name: CA5363：請勿停用要求驗證
