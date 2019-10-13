@@ -2,7 +2,7 @@
 title: 使用命令列參數來安裝 Visual Studio
 titleSuffix: ''
 description: 了解如何使用命令列參數來控制或自訂您的 Visual Studio 安裝。
-ms.date: 10/07/2019
+ms.date: 10/11/2019
 ms.custom: seodec18
 ms.topic: conceptual
 f1_keywords:
@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 306928b7a28465923ae0a5e2cc7773094458594e
-ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
+ms.openlocfilehash: 0043cabf5a134d5891b66f5dbd2ae77360d206fb
+ms.sourcegitcommit: a5a54b147e772dc39e519da74ec41a0c25d99628
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72018796"
+ms.lasthandoff: 10/12/2019
+ms.locfileid: "72289575"
 ---
 # <a name="use-command-line-parameters-to-install-visual-studio"></a>使用命令列參數來安裝 Visual Studio
 
@@ -56,6 +56,9 @@ ms.locfileid: "72018796"
 * vs_enterprise.exe
 * vs_professional.exe
 * vs_community.exe
+
+>[!TIP]
+>如果您先前已下載啟動載入器檔案，而且想要驗證其版本，以下說明。 在 Windows 中，開啟 [檔案瀏覽器]，以滑鼠右鍵按一下啟動載入器檔案，選擇 [**屬性**]，選擇 [**詳細資料**] 索引標籤，然後查看**產品版本**號碼。 若要將該號碼與 Visual Studio 的版本相符，請參閱[Visual Studio 組建編號和發行日期](visual-studio-build-numbers-and-release-dates.md)頁面。
 
 ## <a name="command-line-parameters"></a>命令列參數
 

@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8d71f9e145d78d1d1bf7f6e9bb132e9fc084afd0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: cd8ebd706d9228d23eb5d5ce3b1429063bae55e5
+ms.sourcegitcommit: a5a54b147e772dc39e519da74ec41a0c25d99628
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62810464"
+ms.lasthandoff: 10/12/2019
+ms.locfileid: "72289713"
 ---
 # <a name="step-6-work-with-git"></a>步驟 6：使用 Git
 
@@ -56,7 +56,7 @@ Visual Studio 在 GitHub 和 Azure Repos 之類的服務上，提供與本機 Gi
 
 如需從遠端 Git 存放庫建立專案的簡短逐步解說，請參閱[快速入門：在 Visual Studio 中複製 Python 程式碼的存放庫](quickstart-03-python-in-visual-studio-project-from-repository.md)。
 
-如需包括處理合併衝突、檢閱具有提取要求的程式碼、重定基底，以及揀選分支之間的變更等更完整的教學課程，請參閱 [Git 與 Azure Repos 使用者入門](/azure/devops/repos/git/gitquickstart?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json&view=vsts&tabs=visual-studio)。
+如需包括處理合併衝突、檢閱具有提取要求的程式碼、重定基底，以及揀選分支之間的變更等更完整的教學課程，請參閱 [Git 與 Azure Repos 使用者入門](/azure/devops/repos/git/gitquickstart)。
 
 ## <a name="tutorial-review"></a>教學課程檢閱
 
