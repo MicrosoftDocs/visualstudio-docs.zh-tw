@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 705ddc48e37c557a1d0c77fc3f1ca82cbb3995e7
-ms.sourcegitcommit: 6eed0372976c0167b9a6d42ba443f9a474b8bb91
+ms.openlocfilehash: 7b60f9bb1fffb9fb36311ad3fda504c1ff2260ce
+ms.sourcegitcommit: a5a54b147e772dc39e519da74ec41a0c25d99628
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71118761"
+ms.lasthandoff: 10/12/2019
+ms.locfileid: "72289693"
 ---
 # <a name="step-4-add-a-click-event-handler-to-each-label"></a>步驟 4：將 Click 事件處理常式新增至每個標籤
 
@@ -48,6 +48,9 @@ ms.locfileid: "71118761"
 
      [!code-csharp[VbExpressTutorial4Step2_3_4#4](../ide/codesnippet/CSharp/step-4-add-a-click-event-handler-to-each-label_1.cs)]
      [!code-vb[VbExpressTutorial4Step2_3_4#4](../ide/codesnippet/VisualBasic/step-4-add-a-click-event-handler-to-each-label_1.vb)]
+
+     > [!IMPORTANT]
+     > 使用此頁面右上方的程式設計語言控制項，以查看C#程式碼片段或 Visual Basic 程式碼片段。<br><br>檔的 @no__t 0Programming 語言控制項。 Microsoft .com @ no__t-1
 
     > [!NOTE]
     > 如果您是透過複製並貼上 `label_Click()` 程式碼區塊而非手動輸入程式碼，請務必取代現有的 `label_Click()` 程式碼。 否則，您將會產生重複的程式碼區塊。

@@ -1,7 +1,7 @@
 ---
 title: 建立網路型安裝
 description: 了解如何建立網路安裝點以在企業內部署 Visual Studio。
-ms.date: 10/07/2019
+ms.date: 10/11/2019
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: b297e99c3fbaaabed178930dfad1ac13d5ab1cd8
-ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
+ms.openlocfilehash: 521b29f87db6379a011a0b46dfd1405b374ab9ba
+ms.sourcegitcommit: a5a54b147e772dc39e519da74ec41a0c25d99628
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72018886"
+ms.lasthandoff: 10/12/2019
+ms.locfileid: "72289650"
 ---
 # <a name="create-a-network-installation-of-visual-studio"></a>建立 Visual Studio 的網路安裝
 
@@ -39,7 +39,7 @@ ms.locfileid: "72018886"
 
 若要取得 Visual Studio 2017 的啟動載入器，請參閱[Visual Studio 舊版](https://visualstudio.microsoft.com/vs/older-downloads/)下載頁面，以取得如何執行此操作的詳細資訊。
 
-您的安裝程式可執行檔 @ no__t-0or 更明確，啟動載入器檔案 @ no__t-1should 符合下列其中一項。
+您的安裝程式可執行檔 @ no__t-0or 更明確，啟動載入器檔案 @ no__t-1should 相符，或類似下列其中一項。
 
 | 版本 | Filename |
 |-------------|-----------------------|
@@ -53,7 +53,7 @@ ms.locfileid: "72018886"
 
 ::: moniker range="vs-2019"
 
-您的安裝程式可執行檔 (具體而言，即為啟動載入器檔案) 應該符合下列其中一個檔案。
+您的安裝程式可執行檔 @ no__t-0or 更明確，啟動載入器檔案 @ no__t-1should 相符，或類似下列其中一項。
 
 |版本 | 下載|
 |-------------|-----------------------|
@@ -64,6 +64,9 @@ ms.locfileid: "72018886"
 其他支援的啟動載入器包括[vs_teamexplorer .exe](https://aka.ms/vs/16/release/vs_teamexplorer.exe)、 [vs_testagent](https://aka.ms/vs/16/release/vs_testagent.exe)和[vs_testcontroller](https://aka.ms/vs/16/release/vs_testcontroller.exe)。
 
 ::: moniker-end
+
+>[!TIP]
+>如果您先前已下載啟動載入器檔案，而且想要驗證其版本，以下說明。 在 Windows 中，開啟 [檔案瀏覽器]，以滑鼠右鍵按一下啟動載入器檔案，選擇 [**屬性**]，選擇 [**詳細資料**] 索引標籤，然後查看**產品版本**號碼。 若要將該號碼與 Visual Studio 的版本相符，請參閱[Visual Studio 組建編號和發行日期](visual-studio-build-numbers-and-release-dates.md)頁面。
 
 ## <a name="create-an-offline-installation-folder"></a>建立離線安裝資料夾
 

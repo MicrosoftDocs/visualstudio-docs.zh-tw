@@ -1,7 +1,7 @@
 ---
 title: 建立離線安裝
 description: 了解如何在有不可靠網際網路連線或低頻寬時離線安裝 Visual Studio。
-ms.date: 10/07/2019
+ms.date: 10/11/2019
 ms.custom: seodec18
 ms.topic: conceptual
 f1_keywords:
@@ -16,12 +16,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 28351407e80c723c0b60640b7e56177c85c2a476
-ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
+ms.openlocfilehash: 3a39f1b89cd8a0e0bbf27742688bcaec3da6f912
+ms.sourcegitcommit: a5a54b147e772dc39e519da74ec41a0c25d99628
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72018840"
+ms.lasthandoff: 10/12/2019
+ms.locfileid: "72289619"
 ---
 # <a name="create-an-offline-installation-of-visual-studio"></a>建立 Visual Studio 的離線安裝
 
@@ -79,7 +79,7 @@ Visual Studio 2019 的設計適用於各種網路和電腦組態。 雖然建議
 
 若要取得 Visual Studio 2017 的啟動載入器，請參閱[Visual Studio 舊版](https://visualstudio.microsoft.com/vs/older-downloads/)下載頁面，以取得如何執行此操作的詳細資訊。
 
-您的安裝程式可執行檔 @ no__t-0or 更明確，啟動載入器檔案 @ no__t-1should 符合下列其中一項。
+您的安裝程式可執行檔 @ no__t-0or 更明確，啟動載入器檔案 @ no__t-1should 相符，或類似下列其中一項。
 
 | 版本 | Filename |
 |-------------|-----------------------|
@@ -102,6 +102,9 @@ Visual Studio 2019 的設計適用於各種網路和電腦組態。 雖然建議
 | Visual Studio Build Tools   | [vs_buildtools .exe](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=buildtools&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=offline+install&utm_content=download+vs2019)     |
 
 ::: moniker-end
+
+>[!TIP]
+>如果您先前已下載啟動載入器檔案，而且想要驗證其版本，以下說明。 在 Windows 中，開啟 [檔案瀏覽器]，以滑鼠右鍵按一下啟動載入器檔案，選擇 [**屬性**]，選擇 [**詳細資料**] 索引標籤，然後查看**產品版本**號碼。 若要將該號碼與 Visual Studio 的版本相符，請參閱[Visual Studio 組建編號和發行日期](visual-studio-build-numbers-and-release-dates.md)頁面。
 
 ### <a name="step-2---create-a-local-install-cache"></a>步驟 2 - 建立本機安裝快取
 
