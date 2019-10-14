@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1616e889b3892aa656692a3e5b0895d4b131b7f1
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 3ac52bdb17aeb7d04e434d2b02ff9a905eab49a2
+ms.sourcegitcommit: 034c503ae04e22cf840ccb9770bffd012e40fb2d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71231260"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72305924"
 ---
 # <a name="ca2216-disposable-types-should-declare-finalizer"></a>CA2216:可處置的類型應該宣告完成項
 
@@ -27,12 +27,12 @@ ms.locfileid: "71231260"
 |-|-|
 |TypeName|DisposableTypesShouldDeclareFinalizer|
 |CheckId|CA2216|
-|分類|Microsoft.Usage|
+|Category|Microsoft.Usage|
 |重大變更|不中斷|
 
 ## <a name="cause"></a>原因
 
-型<xref:System.IDisposable?displayProperty=fullName>別會執行，而且有欄位會建議使用非受控資源，並不會依照<xref:System.Object.Finalize%2A?displayProperty=fullName>所述的方式來實作為完成項。
+一個型別，它會執行 <xref:System.IDisposable?displayProperty=fullName>，而且有一些欄位會建議使用非受控資源，而不會如 <xref:System.Object.Finalize%2A?displayProperty=fullName> 所述來實作為完成項。
 
 ## <a name="rule-description"></a>規則描述
 
@@ -46,11 +46,11 @@ ms.locfileid: "71231260"
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
 
-若要修正此規則的違規，請執行呼叫您<xref:System.IDisposable.Dispose%2A>方法的完成項。
+若要修正此規則的違規，請執行呼叫 <xref:System.IDisposable.Dispose%2A> 方法的完成項。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
 
-如果型別不是為了釋出非受控資源而執行<xref:System.IDisposable> ，則隱藏此規則的警告是安全的。
+如果類型未針對釋放非受控資源的目的而執行 <xref:System.IDisposable>，則可放心地隱藏此規則的警告。
 
 ## <a name="example"></a>範例
 
@@ -60,11 +60,11 @@ ms.locfileid: "71231260"
 
 ## <a name="related-rules"></a>相關規則
 
-[CA2115呼叫 GC。使用原生資源時的 KeepAlive](../code-quality/ca2115-call-gc-keepalive-when-using-native-resources.md)
+[CA2115：呼叫 GC。使用原生資源時的 KeepAlive @ no__t-0
 
-[CA1816呼叫 GC。Gc.suppressfinalize 正確](../code-quality/ca1816-call-gc-suppressfinalize-correctly.md)
+[CA1816：呼叫 GC。Gc.suppressfinalize 正確 @ no__t-0
 
-[CA1049:擁有原生資源的類型應該是可處置的](../code-quality/ca1049-types-that-own-native-resources-should-be-disposable.md)
+[CA1049：擁有原生資源的類型應該是可處置的 @ no__t-0
 
 ## <a name="see-also"></a>另請參閱
 

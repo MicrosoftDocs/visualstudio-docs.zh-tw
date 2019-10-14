@@ -8,16 +8,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a76d1c5d2268c0119fc6822167537b500371cdb5
-ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
+ms.openlocfilehash: 6f895506d27c98daf9d69be1a2ea4db5fbe158b7
+ms.sourcegitcommit: 034c503ae04e22cf840ccb9770bffd012e40fb2d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "69585007"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72305469"
 ---
 # <a name="basic-correctness-rules-rule-set-for-managed-code"></a>適用於 Managed 程式碼的基本正確性規則規則集
 
-基本正確性規則規則集會著重于邏輯錯誤, 以及使用 framework Api 時的常見錯誤。 基本正確性規則包含「[受管理的建議規則](managed-recommended-rules-rule-set-for-managed-code.md)」規則集中的規則。
+基本正確性規則規則集會著重于邏輯錯誤，以及使用 framework Api 時的常見錯誤。 基本正確性規則包含「[受管理的建議規則](managed-recommended-rules-rule-set-for-managed-code.md)」規則集中的規則。
 
 下表描述 Microsoft 基本正確性規則規則集中的所有規則。
 
@@ -40,7 +40,7 @@ ms.locfileid: "69585007"
 |[CA1405](../code-quality/ca1405-com-visible-type-base-types-should-be-com-visible.md)|COM 可見類型的基底類型應該是 COM 可見|
 |[CA1410](../code-quality/ca1410-com-registration-methods-should-be-matched.md)|應該和 COM 註冊方法對應|
 |[CA1415](../code-quality/ca1415-declare-p-invokes-correctly.md)|P/Invokes 必須正確宣告|
-|[CA1821](../code-quality/ca1821-remove-empty-finalizers.md)|必須移除空的完成項|
+|[CA1821](../code-quality/ca1821.md)|必須移除空的完成項|
 |[CA1900](../code-quality/ca1900-value-type-fields-should-be-portable.md)|實值類型欄位應該為可移植的|
 |[CA1901](../code-quality/ca1901-p-invoke-declarations-should-be-portable.md)|P/Invoke 宣告應該為可移植的|
 |[CA2002](../code-quality/ca2002-do-not-lock-on-objects-with-weak-identity.md)|不要鎖定具有弱式識別的物件|
@@ -89,10 +89,10 @@ ms.locfileid: "69585007"
 |[CA1013](../code-quality/ca1013-overload-operator-equals-on-overloading-add-and-subtract.md)|多載加號和減號運算子時必須一併多載等號比較運算子|
 |[CA1303](../code-quality/ca1303-do-not-pass-literals-as-localized-parameters.md)|不要將常值當作已當地語系化的參數傳遞|
 |[CA1308](../code-quality/ca1308-normalize-strings-to-uppercase.md)|必須將字串標準化為大寫字母|
-|[CA1806](../code-quality/ca1806-do-not-ignore-method-results.md)|不要忽略方法的結果|
-|[CA1816](../code-quality/ca1816-call-gc-suppressfinalize-correctly.md)|正確呼叫 GC.SuppressFinalize|
-|[CA1819](../code-quality/ca1819-properties-should-not-return-arrays.md)|屬性不應該傳回陣列|
-|[CA1820](../code-quality/ca1820-test-for-empty-strings-using-string-length.md)|應該使用字串長度測試空白字串|
+|[CA1806](../code-quality/ca1806.md)|不要忽略方法的結果|
+|[CA1816](../code-quality/ca1816.md)|正確呼叫 GC.SuppressFinalize|
+|[CA1819](../code-quality/ca1819.md)|屬性不應該傳回陣列|
+|[CA1820](../code-quality/ca1820.md)|應該使用字串長度測試空白字串|
 |[CA1903](../code-quality/ca1903-use-only-api-from-targeted-framework.md)|只使用來自目標架構的 API|
 |[CA2004](../code-quality/ca2004-remove-calls-to-gc-keepalive.md)|必須移除對 GC.KeepAlive 的呼叫|
 |[CA2006](../code-quality/ca2006-use-safehandle-to-encapsulate-native-resources.md)|必須使用 SafeHandle 封裝原生資源|

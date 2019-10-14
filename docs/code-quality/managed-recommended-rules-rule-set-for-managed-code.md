@@ -8,20 +8,20 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2060c9c2db3dd3d60efb07b1e23c445a47d54b5d
-ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
+ms.openlocfilehash: 4a4257327e8f1346ce99ce44aad9bcf4f6a466cd
+ms.sourcegitcommit: 034c503ae04e22cf840ccb9770bffd012e40fb2d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "69585055"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72305647"
 ---
 # <a name="managed-recommended-rules-rule-set-for-managed-code"></a>適用於 Managed 程式碼的 Managed 建議規則規則集
 
-使用 Microsoft 受管理的建議規則規則集, 將焦點放在 Managed 程式碼中最嚴重的問題, 包括潛在的安全性漏洞、應用程式損毀, 以及其他重要的邏輯和設計錯誤。 此規則集包含「[受管理的最小規則](managed-minimum-rules-rule-set-for-managed-code.md)」規則集中的所有規則。
+使用 Microsoft 受管理的建議規則規則集，將焦點放在 Managed 程式碼中最嚴重的問題，包括潛在的安全性漏洞、應用程式損毀，以及其他重要的邏輯和設計錯誤。 此規則集包含「[受管理的最小規則](managed-minimum-rules-rule-set-for-managed-code.md)」規則集中的所有規則。
 
 將此規則集包含在您為專案建立的任何自訂規則集中。
 
-|規則|說明|
+|規則|描述|
 |----------|-----------------|
 |[CA1001](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md)|具有可處置欄位的類型應該為可處置|
 |[CA1009](../code-quality/ca1009-declare-event-handlers-correctly.md)|事件處理常式必須正確宣告|
@@ -40,7 +40,7 @@ ms.locfileid: "69585055"
 |[CA1405](../code-quality/ca1405-com-visible-type-base-types-should-be-com-visible.md)|COM 可見類型的基底類型應該是 COM 可見|
 |[CA1410](../code-quality/ca1410-com-registration-methods-should-be-matched.md)|應該和 COM 註冊方法對應|
 |[CA1415](../code-quality/ca1415-declare-p-invokes-correctly.md)|P/Invokes 必須正確宣告|
-|[CA1821](../code-quality/ca1821-remove-empty-finalizers.md)|必須移除空的完成項|
+|[CA1821](../code-quality/ca1821.md)|必須移除空的完成項|
 |[CA1900](../code-quality/ca1900-value-type-fields-should-be-portable.md)|實值類型欄位應該為可移植的|
 |[CA1901](../code-quality/ca1901-p-invoke-declarations-should-be-portable.md)|P/Invoke 宣告應該為可移植的|
 |[CA2002](../code-quality/ca2002-do-not-lock-on-objects-with-weak-identity.md)|不要鎖定具有弱式識別的物件|

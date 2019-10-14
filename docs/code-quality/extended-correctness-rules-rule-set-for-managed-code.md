@@ -8,22 +8,22 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9ec1bdaf421e3976872a3460dc22fecd24b4386b
-ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
+ms.openlocfilehash: 4d2f123301eb2dd4df662891f2a9248b0cac7173
+ms.sourcegitcommit: 034c503ae04e22cf840ccb9770bffd012e40fb2d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "69585118"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72305859"
 ---
 # <a name="extended-correctness-rules-rule-set-for-managed-code"></a>適用於 Managed 程式碼的擴充正確性規則規則集
 
-Microsoft Extended 正確性規則規則集會將程式碼分析所報告的邏輯和架構使用錯誤最大化。 額外的強調會放在特定案例, 例如 COM 互通性和行動應用程式。 如果其中一個案例適用于您的專案, 或在您的專案中找出其他問題, 您應該考慮包含這個規則集。
+Microsoft Extended 正確性規則規則集會將程式碼分析所報告的邏輯和架構使用錯誤最大化。 額外的強調會放在特定案例，例如 COM 互通性和行動應用程式。 如果其中一個案例適用于您的專案，或在您的專案中找出其他問題，您應該考慮包含這個規則集。
 
-Microsoft Extended 正確性規則規則集包含「[基本正確性規則](../code-quality/basic-correctness-rules-rule-set-for-managed-code.md)」規則集中的規則, 其中包含「[受管理的建議規則](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md)」規則集中的規則。
+Microsoft Extended 正確性規則規則集包含「[基本正確性規則](../code-quality/basic-correctness-rules-rule-set-for-managed-code.md)」規則集中的規則，其中包含「[受管理的建議規則](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md)」規則集中的規則。
 
 下表描述 Microsoft Extended 正確性規則規則集中的所有規則。
 
-|規則|說明|
+|規則|描述|
 |----------|-----------------|
 |[CA1001](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md)|具有可處置欄位的類型應該為可處置|
 |[CA1009](../code-quality/ca1009-declare-event-handlers-correctly.md)|事件處理常式必須正確宣告|
@@ -42,7 +42,7 @@ Microsoft Extended 正確性規則規則集包含「[基本正確性規則](../c
 |[CA1405](../code-quality/ca1405-com-visible-type-base-types-should-be-com-visible.md)|COM 可見類型的基底類型應該是 COM 可見|
 |[CA1410](../code-quality/ca1410-com-registration-methods-should-be-matched.md)|應該和 COM 註冊方法對應|
 |[CA1415](../code-quality/ca1415-declare-p-invokes-correctly.md)|P/Invokes 必須正確宣告|
-|[CA1821](../code-quality/ca1821-remove-empty-finalizers.md)|必須移除空的完成項|
+|[CA1821](../code-quality/ca1821.md)|必須移除空的完成項|
 |[CA1900](../code-quality/ca1900-value-type-fields-should-be-portable.md)|實值類型欄位應該為可移植的|
 |[CA1901](../code-quality/ca1901-p-invoke-declarations-should-be-portable.md)|P/Invoke 宣告應該為可移植的|
 |[CA2002](../code-quality/ca2002-do-not-lock-on-objects-with-weak-identity.md)|不要鎖定具有弱式識別的物件|
@@ -91,10 +91,10 @@ Microsoft Extended 正確性規則規則集包含「[基本正確性規則](../c
 |[CA1013](../code-quality/ca1013-overload-operator-equals-on-overloading-add-and-subtract.md)|多載加號和減號運算子時必須一併多載等號比較運算子|
 |[CA1303](../code-quality/ca1303-do-not-pass-literals-as-localized-parameters.md)|不要將常值當作已當地語系化的參數傳遞|
 |[CA1308](../code-quality/ca1308-normalize-strings-to-uppercase.md)|必須將字串標準化為大寫字母|
-|[CA1806](../code-quality/ca1806-do-not-ignore-method-results.md)|不要忽略方法的結果|
-|[CA1816](../code-quality/ca1816-call-gc-suppressfinalize-correctly.md)|正確呼叫 GC.SuppressFinalize|
-|[CA1819](../code-quality/ca1819-properties-should-not-return-arrays.md)|屬性不應該傳回陣列|
-|[CA1820](../code-quality/ca1820-test-for-empty-strings-using-string-length.md)|應該使用字串長度測試空白字串|
+|[CA1806](../code-quality/ca1806.md)|不要忽略方法的結果|
+|[CA1816](../code-quality/ca1816.md)|正確呼叫 GC.SuppressFinalize|
+|[CA1819](../code-quality/ca1819.md)|屬性不應該傳回陣列|
+|[CA1820](../code-quality/ca1820.md)|應該使用字串長度測試空白字串|
 |[CA1903](../code-quality/ca1903-use-only-api-from-targeted-framework.md)|只使用來自目標架構的 API|
 |[CA2004](../code-quality/ca2004-remove-calls-to-gc-keepalive.md)|必須移除對 GC.KeepAlive 的呼叫|
 |[CA2006](../code-quality/ca2006-use-safehandle-to-encapsulate-native-resources.md)|必須使用 SafeHandle 封裝原生資源|
@@ -132,7 +132,7 @@ Microsoft Extended 正確性規則規則集包含「[基本正確性規則](../c
 |[CA1414](../code-quality/ca1414-mark-boolean-p-invoke-arguments-with-marshalas.md)|以 MarshalAs 標記布林 P/Invoke 引數|
 |[CA1600](../code-quality/ca1600-do-not-use-idle-process-priority.md)|不要使用 Idle 處理序優先順序|
 |[CA1601](../code-quality/ca1601-do-not-use-timers-that-prevent-power-state-changes.md)|不要使用會妨礙電源狀態變更的計時器|
-|[CA1824](../code-quality/ca1824-mark-assemblies-with-neutralresourceslanguageattribute.md)|組件必須標記 NeutralResourcesLanguageAttribute|
+|[CA1824](../code-quality/ca1824.md)|組件必須標記 NeutralResourcesLanguageAttribute|
 |[CA2001](../code-quality/ca2001-avoid-calling-problematic-methods.md)|避免呼叫有問題的方法|
 |[CA2003](../code-quality/ca2003-do-not-treat-fibers-as-threads.md)|不要將 Fiber 視為執行緒|
 |[CA2135](../code-quality/ca2135-level-2-assemblies-should-not-contain-linkdemands.md)|層級 2 組件不應該包含 LinkDemand|
