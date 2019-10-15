@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 04a4738181c579617711150da4eb99e08aeb039c
-ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
+ms.openlocfilehash: e784627f0c9c6aa865d53db49d6ea43c4e49d0eb
+ms.sourcegitcommit: 034c503ae04e22cf840ccb9770bffd012e40fb2d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72018430"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72305786"
 ---
 # <a name="fxcop-rule-port-status"></a>Fxcop 規則埠狀態
 
@@ -98,21 +98,21 @@ CA1509 | 程式碼度量規則規格檔案中的專案無效
 [CA1721](ca1721-property-names-should-not-match-get-methods.md) | 屬性名稱不應該和其中有 get 的方法名稱相符
 [CA1724](ca1724-type-names-should-not-match-namespaces.md) | 類型名稱不應與命名空間相符
 [CA1725](ca1725-parameter-names-should-match-base-declaration.md) | 參數名稱應該符合基底類型的宣告
-[CA1801](ca1801-review-unused-parameters.md) | 必須檢閱未使用的參數
-[CA1802](ca1802-use-literals-where-appropriate.md) | 適當時使用常值
-[CA1806](ca1806-do-not-ignore-method-results.md) | 不要忽略方法的結果
-[CA1810](ca1810-initialize-reference-type-static-fields-inline.md) | 必須將參考類型內部的靜態欄位初始化
-[CA1812](ca1812-avoid-uninstantiated-internal-classes.md) | 避免使用未執行個體化的內部類別
-[CA1813](ca1813-avoid-unsealed-attributes.md) | 避免使用非密封屬性
-[CA1814](ca1814-prefer-jagged-arrays-over-multidimensional.md) | 建議使用不規則陣列取代多維陣列
-[CA1815](ca1815-override-equals-and-operator-equals-on-value-types.md) | 必須覆寫實值類型上的 Equals 方法和等號比較運算子
-[CA1816](ca1816-call-gc-suppressfinalize-correctly.md) | Dispose 方法應該呼叫 Gc.suppressfinalize
-[CA1819](ca1819-properties-should-not-return-arrays.md) | 屬性不應該傳回陣列
-[CA1820](ca1820-test-for-empty-strings-using-string-length.md) | 應該使用字串長度測試空白字串
-[CA1821](ca1821-remove-empty-finalizers.md) | 移除空的完成項
-[CA1822](ca1822-mark-members-as-static.md) | 將成員標記為 static
-[CA1823](ca1823-avoid-unused-private-fields.md) | 避免包含未使用的私用欄位
-[CA1824](ca1824-mark-assemblies-with-neutralresourceslanguageattribute.md) | 組件必須標記 NeutralResourcesLanguageAttribute
+[CA1801](ca1801.md) | 必須檢閱未使用的參數
+[CA1802](ca1802.md) | 適當時使用常值
+[CA1806](ca1806.md) | 不要忽略方法的結果
+[CA1810](ca1810.md) | 必須將參考類型內部的靜態欄位初始化
+[CA1812](ca1812.md) | 避免使用未執行個體化的內部類別
+[CA1813](ca1813.md) | 避免使用非密封屬性
+[CA1814](ca1814.md) | 建議使用不規則陣列取代多維陣列
+[CA1815](ca1815.md) | 必須覆寫實值類型上的 Equals 方法和等號比較運算子
+[CA1816](ca1816.md) | Dispose 方法應該呼叫 Gc.suppressfinalize
+[CA1819](ca1819.md) | 屬性不應該傳回陣列
+[CA1820](ca1820.md) | 應該使用字串長度測試空白字串
+[CA1821](ca1821.md) | 移除空的完成項
+[CA1822](ca1822.md) | 將成員標記為 static
+[CA1823](ca1823.md) | 避免包含未使用的私用欄位
+[CA1824](ca1824.md) | 組件必須標記 NeutralResourcesLanguageAttribute
 CA1825 | 避免長度為零的陣列配置。
 CA1826 | 請勿在可編制索引的集合上使用可列舉的方法。 改為直接使用集合
 [CA2000](ca2000-dispose-objects-before-losing-scope.md) | 必須在超出範圍前處置物件
@@ -252,8 +252,8 @@ CA9999 | 分析器版本不符
 [CA1719](ca1719-parameter-names-should-not-match-member-names.md) | [https://github.com/dotnet/roslyn-analyzers/issues/453](https://github.com/dotnet/roslyn-analyzers/issues/453)
 [CA1722](ca1722-identifiers-should-not-have-incorrect-prefix.md) | [https://github.com/dotnet/roslyn-analyzers/issues/455](https://github.com/dotnet/roslyn-analyzers/issues/455)
 [CA1726](ca1726-use-preferred-terms.md) | [https://github.com/dotnet/roslyn-analyzers/issues/458](https://github.com/dotnet/roslyn-analyzers/issues/458)
-[CA1804](ca1804-remove-unused-locals.md) | [https://github.com/dotnet/roslyn-analyzers/issues/461](https://github.com/dotnet/roslyn-analyzers/issues/461)
-[CA1811](ca1811-avoid-uncalled-private-code.md) | [https://github.com/dotnet/roslyn-analyzers/issues/464](https://github.com/dotnet/roslyn-analyzers/issues/464)
+[CA1804](ca1804.md) | [https://github.com/dotnet/roslyn-analyzers/issues/461](https://github.com/dotnet/roslyn-analyzers/issues/461)
+[CA1811](ca1811.md) | [https://github.com/dotnet/roslyn-analyzers/issues/464](https://github.com/dotnet/roslyn-analyzers/issues/464)
 [CA1900](ca1900-value-type-fields-should-be-portable.md) | [https://github.com/dotnet/roslyn-analyzers/issues/474](https://github.com/dotnet/roslyn-analyzers/issues/474)
 [CA2001](ca2001-avoid-calling-problematic-methods.md) | [https://github.com/dotnet/roslyn-analyzers/issues/477](https://github.com/dotnet/roslyn-analyzers/issues/477)
 [CA2004](ca2004-remove-calls-to-gc-keepalive.md) | [https://github.com/dotnet/roslyn-analyzers/issues/479](https://github.com/dotnet/roslyn-analyzers/issues/479)
@@ -288,8 +288,8 @@ CA9999 | 分析器版本不符
 - [CA1701](ca1701-resource-string-compound-words-should-be-cased-correctly.md)
 - [CA1702](ca1702-compound-words-should-be-cased-correctly.md)
 - [CA1703](ca1703-resource-strings-should-be-spelled-correctly.md)
-- [CA1800](ca1800-do-not-cast-unnecessarily.md)
-- [CA1809](ca1809-avoid-excessive-locals.md)
+- [CA1800](ca1800.md)
+- [CA1809](ca1809.md)
 - [CA1901](ca1901-p-invoke-declarations-should-be-portable.md)
 - [CA1903](ca1903-use-only-api-from-targeted-framework.md)
 - [CA2003](ca2003-do-not-treat-fibers-as-threads.md)

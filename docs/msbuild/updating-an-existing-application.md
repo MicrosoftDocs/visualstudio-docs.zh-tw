@@ -7,12 +7,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cf1c226fceff6ea17a7f83d750a93d6406a31c7d
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
-ms.translationtype: HT
+ms.openlocfilehash: cf2b8669fe9b516f3150829612d6999895cc69f8
+ms.sourcegitcommit: 034c503ae04e22cf840ccb9770bffd012e40fb2d
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66263716"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72306246"
 ---
 # <a name="update-an-existing-application-for-msbuild-15"></a>MSBuild 15 的現有應用程式更新
 
@@ -65,7 +65,7 @@ MSBuild 套件的主要和次要版本，必須小於或等於您要支援的 Vi
 
 #### <a name="binding-redirects"></a>繫結重新導向
 
-參考 Microsoft.Build.Locator 套件，以確保您的應用程式自動使用所有版本 MSBuild 組件的必要繫結重新導向至 `15.1.0.0`。
+參考 Microsoft. Build. 定位器套件，以確保您的應用程式會自動使用所需的系結重新導向至版本15.1.0.0。 此版本的系結重新導向支援 MSBuild 15 和 MSBuild 16。
 
 ### <a name="ensure-output-is-clean"></a>確定輸出是乾淨的
 

@@ -8,18 +8,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: b2270caa0cf7db230fa030cb620d51f1677d9dec
-ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
+ms.openlocfilehash: 3ad443a149b1c3a49c4bbbc260a4121d0a721aed
+ms.sourcegitcommit: 034c503ae04e22cf840ccb9770bffd012e40fb2d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "69585073"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72305833"
 ---
 # <a name="extended-design-guidelines-rules-rule-set-for-managed-code"></a>適用於 Managed 程式碼的擴充設計方針規則規則集
 
-Microsoft 擴充設計指導方針規則規則集會擴充基本的設計指導方針規則, 以最大化所報告的可用性和可維護性問題。 額外的強調會放在命名指導方針上。 如果您的專案包含程式庫程式碼, 或者您想要強制最高的標準來撰寫容易維護的程式碼, 您應該考慮包含這個規則集。
+Microsoft 擴充設計指導方針規則規則集會擴充基本的設計指導方針規則，以最大化所報告的可用性和可維護性問題。 額外的強調會放在命名指導方針上。 如果您的專案包含程式庫程式碼，或者您想要強制最高的標準來撰寫容易維護的程式碼，您應該考慮包含這個規則集。
 
-擴充的設計指導方針規則包含[基本設計方針規則](../code-quality/basic-design-guideline-rules-rule-set-for-managed-code.md)規則集中的所有規則, 其中包括[受管理的建議規則](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md)規則集內的規則。
+擴充的設計指導方針規則包含[基本設計方針規則](../code-quality/basic-design-guideline-rules-rule-set-for-managed-code.md)規則集中的所有規則，其中包括[受管理的建議規則](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md)規則集內的規則。
 
 下表描述 Microsoft 擴充設計指導方針規則規則集中的所有規則。
 
@@ -42,7 +42,7 @@ Microsoft 擴充設計指導方針規則規則集會擴充基本的設計指導�
 |[CA1405](../code-quality/ca1405-com-visible-type-base-types-should-be-com-visible.md)|COM 可見類型的基底類型應該是 COM 可見|
 |[CA1410](../code-quality/ca1410-com-registration-methods-should-be-matched.md)|應該和 COM 註冊方法對應|
 |[CA1415](../code-quality/ca1415-declare-p-invokes-correctly.md)|P/Invokes 必須正確宣告|
-|[CA1821](../code-quality/ca1821-remove-empty-finalizers.md)|必須移除空的完成項|
+|[CA1821](../code-quality/ca1821.md)|必須移除空的完成項|
 |[CA1900](../code-quality/ca1900-value-type-fields-should-be-portable.md)|實值類型欄位應該為可移植的|
 |[CA1901](../code-quality/ca1901-p-invoke-declarations-should-be-portable.md)|P/Invoke 宣告應該為可移植的|
 |[CA2002](../code-quality/ca2002-do-not-lock-on-objects-with-weak-identity.md)|不要鎖定具有弱式識別的物件|
@@ -138,19 +138,19 @@ Microsoft 擴充設計指導方針規則規則集會擴充基本的設計指導�
 |[CA1502](../code-quality/ca1502-avoid-excessive-complexity.md)|避免造成過度複雜的方法|
 |[CA1708](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)|識別項名稱不應該只靠大小寫區別|
 |[CA1716](../code-quality/ca1716-identifiers-should-not-match-keywords.md)|識別項名稱不應該和關鍵字相符|
-|[CA1801](../code-quality/ca1801-review-unused-parameters.md)|必須檢閱未使用的參數|
-|[CA1804](../code-quality/ca1804-remove-unused-locals.md)|必須移除未使用的區域變數|
-|[CA1809](../code-quality/ca1809-avoid-excessive-locals.md)|避免在方法中包含過多區域變數|
-|[CA1810](../code-quality/ca1810-initialize-reference-type-static-fields-inline.md)|必須將參考類型內部的靜態欄位初始化|
-|[CA1811](../code-quality/ca1811-avoid-uncalled-private-code.md)|避免使用未呼叫的私用程式碼|
-|[CA1812](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md)|避免使用未執行個體化的內部類別|
-|[CA1813](../code-quality/ca1813-avoid-unsealed-attributes.md)|避免使用非密封屬性|
-|[CA1814](../code-quality/ca1814-prefer-jagged-arrays-over-multidimensional.md)|建議使用不規則陣列取代多維陣列|
-|[CA1815](../code-quality/ca1815-override-equals-and-operator-equals-on-value-types.md)|必須覆寫實值類型上的 Equals 方法和等號比較運算子|
-|[CA1819](../code-quality/ca1819-properties-should-not-return-arrays.md)|屬性不應該傳回陣列|
-|[CA1820](../code-quality/ca1820-test-for-empty-strings-using-string-length.md)|應該使用字串長度測試空白字串|
-|[CA1822](../code-quality/ca1822-mark-members-as-static.md)|將成員標記為 static|
-|[CA1823](../code-quality/ca1823-avoid-unused-private-fields.md)|避免包含未使用的私用欄位|
+|[CA1801](../code-quality/ca1801.md)|必須檢閱未使用的參數|
+|[CA1804](../code-quality/ca1804.md)|必須移除未使用的區域變數|
+|[CA1809](../code-quality/ca1809.md)|避免在方法中包含過多區域變數|
+|[CA1810](../code-quality/ca1810.md)|必須將參考類型內部的靜態欄位初始化|
+|[CA1811](../code-quality/ca1811.md)|避免使用未呼叫的私用程式碼|
+|[CA1812](../code-quality/ca1812.md)|避免使用未執行個體化的內部類別|
+|[CA1813](../code-quality/ca1813.md)|避免使用非密封屬性|
+|[CA1814](../code-quality/ca1814.md)|建議使用不規則陣列取代多維陣列|
+|[CA1815](../code-quality/ca1815.md)|必須覆寫實值類型上的 Equals 方法和等號比較運算子|
+|[CA1819](../code-quality/ca1819.md)|屬性不應該傳回陣列|
+|[CA1820](../code-quality/ca1820.md)|應該使用字串長度測試空白字串|
+|[CA1822](../code-quality/ca1822.md)|將成員標記為 static|
+|[CA1823](../code-quality/ca1823.md)|避免包含未使用的私用欄位|
 |[CA2201](../code-quality/ca2201-do-not-raise-reserved-exception-types.md)|不要引發保留的例外狀況類型|
 |[CA2205](../code-quality/ca2205-use-managed-equivalents-of-win32-api.md)|必須使用 Win32 API 的受控對應項|
 |[CA2208](../code-quality/ca2208-instantiate-argument-exceptions-correctly.md)|必須正確執行個體化引數例外狀況|

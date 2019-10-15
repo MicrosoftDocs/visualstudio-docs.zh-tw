@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ce9f55dd54dbe85f64226c1ca7f0b4f75b1cdfc
-ms.sourcegitcommit: 6eed0372976c0167b9a6d42ba443f9a474b8bb91
+ms.openlocfilehash: 22bc479ccd29a9eaf76e50f630061699856502ea
+ms.sourcegitcommit: 034c503ae04e22cf840ccb9770bffd012e40fb2d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71118696"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72306230"
 ---
 # <a name="step-6-name-your-button-controls"></a>步驟 6：命名按鈕控制項
 
@@ -33,7 +33,7 @@ ms.locfileid: "71118696"
 
 1. 在表單上，選擇 [關閉] 按鈕。 (如果仍然已選取所有按鈕，請選擇 **Esc** 鍵取消選取)。在 [屬性] 視窗中捲動，直到看到 **(Name)** 屬性為止 (屬性依字母順序排列時， **(Name)** 屬性會靠近頂端)。將名稱變更為**closeButton**，如下列螢幕擷取畫面所示。
 
-    ![包含 closeButton 名稱的 [屬性] 視窗](../ide/media/express_setnameproperty.png)<br>***屬性****具有的視窗****closeButton****名稱*
+    ![包含 closeButton 名稱的 [屬性] 視窗](../ide/media/express_setnameproperty.png)<br>具有***closeButton*** *名稱*的 [***屬性*** *] 視窗*
 
     > [!NOTE]
     > 嘗試將按鈕的名稱變更為 [關閉]**按鈕**，並在 [關閉] 和 [按鈕] 這兩個字之間加上空格。 當您這麼做時，IDE 會顯示錯誤訊息：「屬性值無效」。 控制項名稱中不允許空格 (和其他一些字元)。
@@ -65,17 +65,16 @@ ms.locfileid: "71118696"
     End Sub
     ```
 
-   > [!IMPORTANT]
-   > 使用此頁面右上方的程式設計語言控制項，以查看C#程式碼片段或 Visual Basic 程式碼片段。<br><br>![Docs.Microsoft.com 的程式設計語言控制項](../ide/media/docs-programming-language-control.png)
+   [!INCLUDE [devlang-control](./includes/devlang-control.md)]
 
-   您正在查看名`showButton_Click()`為的程式碼（ `ShowButton_Click()`也就是）。 當您開啟 **showButton** 按鈕的程式碼檔時，IDE 已將此加入至表單的程式碼。 在設計階段，當您開啟表單中的控制項程式碼檔案時，如果該控制項的程式碼不存在，會產生程式碼。 這個程式碼稱為*方法*，會在您執行應用程式並選擇控制項（在此案例中為 [**顯示圖片**] 按鈕）時執行。
+   您正在查看名為 `showButton_Click()` 的程式碼（也就是 `ShowButton_Click()`）。 當您開啟 **showButton** 按鈕的程式碼檔時，IDE 已將此加入至表單的程式碼。 在設計階段，當您開啟表單中的控制項程式碼檔案時，如果該控制項的程式碼不存在，會產生程式碼。 這個程式碼稱為*方法*，會在您執行應用程式並選擇控制項（在此案例中為 [**顯示圖片**] 按鈕）時執行。
 
 1. 再次選擇 [ **Windows Form 設計工具**] 索引標籤（ **[Form1.cs [Design]]** ），然後開啟 [**清除圖片**] 按鈕的程式碼檔，在表單的程式碼中建立其方法。 針對其他兩個按鈕重複此步驟。 IDE 每一次都會將新的方法加入至表單的程式碼檔案。
 
 1. 若要再加入一個方法，在 [Windows Forms 設計工具] 中開啟 **CheckBox** 控制項的程式碼檔案，讓 IDE 加入 `checkBox1_CheckedChanged()` 方法。 每當使用者選取或清除核取方塊時就會呼叫該方法。
 
    > [!TIP]
-   > 在應用程式上工作時，您通常會在程式碼編輯器和**Windows Form 設計工具**之間移動。 IDE 可讓您在專案中輕鬆巡覽。 使用**方案總管**在 Visual Basic C#中*按兩下或 form1.vb 中的*[ *Form1.cs* ] 來開啟**Windows Form 設計工具**，或是在功能表列上選擇 [**視圖** > **設計**工具]。
+   > 在應用程式上工作時，您通常會在程式碼編輯器和**Windows Form 設計工具**之間移動。 IDE 可讓您在專案中輕鬆巡覽。 使用**方案總管** C#在 Visual Basic 中*按兩下或 form1.vb 中的*[ *Form1.cs* ] 來開啟**Windows Form 設計工具**，或在功能表列上選擇 [**視圖**] [ > **設計**工具]。
 
     下列顯示您在程式碼編輯器中看到的新程式碼。
 
@@ -94,17 +93,17 @@ ms.locfileid: "71118696"
 
     當您建置程式時，名稱很重要，而方法 (包括事件處理常式) 則可以具有您想要的任何名稱。 當您使用 IDE 加入事件處理常式時，IDE 會根據控制項的名稱和所處理的事件來建立名稱。
 
-    例如，名為**showButton**之按鈕的 Click 事件稱為`showButton_Click()` （也`ShowButton_Click()`就是）事件處理常式方法。 此外，方法名稱後面通常會加上左括弧和右括弧 `()`，以表示目前所討論的是方法。
+    例如，名為**showButton**之按鈕的 Click 事件稱為 `showButton_Click()` （也就是 `ShowButton_Click()`）事件處理常式方法。 此外，方法名稱後面通常會加上左括弧和右括弧 `()`，以表示目前所討論的是方法。
 
     如果您決定要變更程式碼變數名稱，請用滑鼠右鍵按一下程式碼中的變數，然後依序選擇 [重構] > [重新命名]。 會重新命名該變數在程式碼中的所有執行個體。 如需詳細資訊，請參閱[重新命名重構](../ide/reference/rename.md)。
 
 ## <a name="next-steps"></a>後續步驟
 
-* 若要移至下一個教學課程步驟 **，請參閱[步驟7：將對話方塊元件新增至您](../ide/step-7-add-dialog-components-to-your-form.md)的表單**。
+* 若要移至下一個教學課程步驟，請參閱 ** @ no__t-1Step 7：將對話方塊元件新增至您的表單 @ no__t-0 @ no__t-1。
 
 * 若要回到上一個教學課程步驟，請參閱[步驟 5：將控制項新增至表單](../ide/step-5-add-controls-to-your-form.md)。
 
 ## <a name="see-also"></a>另請參閱
 
-* [教學課程 2：建立計時的數學測驗](tutorial-2-create-a-timed-math-quiz.md)
-* [教學課程 3：建立配對遊戲](tutorial-3-create-a-matching-game.md)
+* [教學課程 2：建立計時的數學測驗 @ no__t-0
+* [教學課程 3：建立配對遊戲 @ no__t-0

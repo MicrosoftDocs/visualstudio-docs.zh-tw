@@ -18,12 +18,12 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d097a67c9a62a6847ff6ab0bb882257c082ca6f
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: be864812cc7355f80700bd3e270178c9626d4180
+ms.sourcegitcommit: 034c503ae04e22cf840ccb9770bffd012e40fb2d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71231307"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72305906"
 ---
 # <a name="ca2227-collection-properties-should-be-read-only"></a>CA2227:集合屬性應該為唯讀
 
@@ -31,18 +31,18 @@ ms.locfileid: "71231307"
 |-|-|
 |TypeName|CollectionPropertiesShouldBeReadOnly|
 |CheckId|CA2227|
-|分類|Microsoft.Usage|
+|Category|Microsoft.Usage|
 |重大變更|中斷|
 
 ## <a name="cause"></a>原因
 
-外部可見、可寫入的屬性屬於可執行檔類型<xref:System.Collections.ICollection?displayProperty=fullName>。 此規則會忽略陣列、索引子（名稱為 ' Item ' 的屬性）和許可權集合。
+外部可見、可寫入的屬性屬於實 <xref:System.Collections.ICollection?displayProperty=fullName> 的類型。 此規則會忽略陣列、索引子（名稱為 ' Item ' 的屬性）和許可權集合。
 
 ## <a name="rule-description"></a>規則描述
 
-可寫入的集合屬性允許使用者以完全不同的集合來取代集合。 唯讀屬性會阻止集合被取代，但仍然允許設定個別成員。 如果取代集合是目標，則慣用的設計模式是包含從集合中移除所有專案的方法，以及重新擴展集合的方法。 如需此<xref:System.Collections.ArrayList.AddRange%2A>模式的範例<xref:System.Collections.ArrayList?displayProperty=fullName> ，請參閱類別的和方法。 <xref:System.Collections.ArrayList.Clear%2A>
+可寫入的集合屬性允許使用者以完全不同的集合來取代集合。 唯讀屬性會阻止集合被取代，但仍然允許設定個別成員。 如果取代集合是目標，則慣用的設計模式是包含從集合中移除所有專案的方法，以及重新擴展集合的方法。 如需此模式的範例，請參閱 @no__t 2 類別的 <xref:System.Collections.ArrayList.Clear%2A> 和 @no__t 1 方法。
 
-二進位和 XML 序列化都支援集合的唯讀屬性。 類別具有實作為<xref:System.Collections.ICollection>並<xref:System.Collections.IEnumerable?displayProperty=fullName>可序列化之型別的特定需求。 <xref:System.Xml.Serialization.XmlSerializer?displayProperty=fullName>
+二進位和 XML 序列化都支援集合的唯讀屬性。 @No__t-0 類別對於實 <xref:System.Collections.ICollection> 和 <xref:System.Collections.IEnumerable?displayProperty=fullName> 的型別有特定的需求，以便可序列化。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
 
@@ -56,7 +56,7 @@ ms.locfileid: "71231307"
 
 ## <a name="example"></a>範例
 
-下列範例會顯示具有可寫入集合屬性的類型，並顯示如何直接取代集合。 此外，它也會顯示使用`Clear`和`AddRange`方法取代唯讀集合屬性的慣用方式。
+下列範例會顯示具有可寫入集合屬性的類型，並顯示如何直接取代集合。 此外，它也會顯示使用 `Clear` 和 @no__t 1 方法來取代唯讀集合屬性的慣用方式。
 
 [!code-csharp[FxCop.Usage.PropertiesReturningCollections#1](../code-quality/codesnippet/CSharp/ca2227-collection-properties-should-be-read-only_1.cs)]
 [!code-vb[FxCop.Usage.PropertiesReturningCollections#1](../code-quality/codesnippet/VisualBasic/ca2227-collection-properties-should-be-read-only_1.vb)]
@@ -64,4 +64,4 @@ ms.locfileid: "71231307"
 
 ## <a name="related-rules"></a>相關規則
 
-- [CA1819屬性不應傳回陣列](../code-quality/ca1819-properties-should-not-return-arrays.md)
+- [CA1819：屬性不應傳回陣列 @ no__t-0
