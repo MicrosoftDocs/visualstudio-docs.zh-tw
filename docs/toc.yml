@@ -170,8 +170,8 @@
   items:
     - name: 開發
       items:
-        - name: 索引：使用 IDE 撰寫程式碼
-          href: ide/index-writing-code.md
+        - name: 開始使用
+          href: ide/index-writing-code.yml
         - name: 在 IDE 中四處移動
           href: ide/how-to-move-around-in-the-visual-studio-ide.md
         - name: 方案和專案
