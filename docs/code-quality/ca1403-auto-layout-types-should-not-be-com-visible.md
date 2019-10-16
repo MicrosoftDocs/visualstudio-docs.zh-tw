@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: ef7b693a881aaa1457004c84968ebc80936fc2b2
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: 4e590514247444d32d0d9a31b2bbc409434cf53c
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66714855"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71234826"
 ---
 # <a name="ca1403-auto-layout-types-should-not-be-com-visible"></a>CA1403:自動配置類型不應該是 COM 可見
 
@@ -31,21 +31,21 @@ ms.locfileid: "66714855"
 |TypeName|AutoLayoutTypesShouldNotBeComVisible|
 |CheckId|CA1403|
 |分類|Microsoft.Interoperability|
-|中斷變更|中斷|
+|重大變更|中斷|
 
 ## <a name="cause"></a>原因
 
-元件物件模型 (COM) 可見實值類型會標示<xref:System.Runtime.InteropServices.StructLayoutAttribute?displayProperty=fullName>屬性設為<xref:System.Runtime.InteropServices.LayoutKind.Auto?displayProperty=fullName>。
+元件物件模型（COM）可見實數值型別已標記<xref:System.Runtime.InteropServices.StructLayoutAttribute?displayProperty=fullName>為屬性設定為。 <xref:System.Runtime.InteropServices.LayoutKind.Auto?displayProperty=fullName>
 
 ## <a name="rule-description"></a>規則描述
 
-<xref:System.Runtime.InteropServices.LayoutKind> 配置類型是由通用語言執行平台管理。 這些類型的配置可以變更版本之間的.NET，而中斷 COM 用戶端預期特定的版面配置。 如果<xref:System.Runtime.InteropServices.StructLayoutAttribute>未指定屬性，則C#，Visual Basic 中，和C++指定編譯器[實](<xref:System.Runtime.InteropServices.LayoutKind.Auto>)實值型別。
+<xref:System.Runtime.InteropServices.LayoutKind>版面配置類型是由 common language runtime 所管理。 這些類型的配置可能會在 .NET 版本之間變更，這會中斷需要特定版面配置的 COM 用戶端。 如果未指定C# C++ 屬性，、Visual Basic 和編譯器會為實數值型別指定 [LayoutKind.Auto](<xref:System.Runtime.InteropServices.LayoutKind.Auto>) 標示。<xref:System.Runtime.InteropServices.StructLayoutAttribute>
 
-除非已標記，否則所有的公用、 非泛型型別為 COM 可見，而所有的非公用和泛型型別看不到 com。 不過，以減少誤判，此規則需要明確指示類型的 COM 的可視性。 包含組件必須標記為<xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName>設定為`false`且型別必須標示有<xref:System.Runtime.InteropServices.ComVisibleAttribute>設定為`true`。
+除非另有標記，否則 COM 可以看到所有公用的非泛型型別，而且 COM 看不到所有的非公用和泛型型別。 不過，若要減少誤報，此規則需要明確陳述類型的 COM 可見度。 包含的<xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName>元件必須以設定為`false`的標記，而且類型<xref:System.Runtime.InteropServices.ComVisibleAttribute>必須以設定為`true`的標記。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
 
-若要修正此規則的違規情形，將變更的值<xref:System.Runtime.InteropServices.StructLayoutAttribute>屬性設定為[LayoutKind.Explicit](<xref:System.Runtime.InteropServices.LayoutKind.Explicit>)或是[LayoutKind.Sequential](<xref:System.Runtime.InteropServices.LayoutKind.Sequential>)，或對 COM 不可見的型別
+若要修正此規則的違規，請將<xref:System.Runtime.InteropServices.StructLayoutAttribute>屬性的值變更為[layoutkind.sequential 標示](<xref:System.Runtime.InteropServices.LayoutKind.Explicit>)或[layoutkind.sequential 標示](<xref:System.Runtime.InteropServices.LayoutKind.Sequential>)，或讓該類型不會被 COM 隱藏。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
 
@@ -53,16 +53,16 @@ ms.locfileid: "66714855"
 
 ## <a name="example"></a>範例
 
-下列範例顯示違反規則的類型，以及滿足規則的型別。
+下列範例顯示違反規則的類型，以及符合規則的類型。
 
 [!code-csharp[FxCop.Interoperability.AutoLayout#1](../code-quality/codesnippet/CSharp/ca1403-auto-layout-types-should-not-be-com-visible_1.cs)]
 [!code-vb[FxCop.Interoperability.AutoLayout#1](../code-quality/codesnippet/VisualBasic/ca1403-auto-layout-types-should-not-be-com-visible_1.vb)]
 
-## <a name="related-rules"></a>相關的規則
+## <a name="related-rules"></a>相關規則
 
-[CA1408:不要使用 AutoDual ClassInterfaceType](../code-quality/ca1408-do-not-use-autodual-classinterfacetype.md)
+[CA1408請勿使用 AutoDual ClassInterfaceType](../code-quality/ca1408-do-not-use-autodual-classinterfacetype.md)
 
 ## <a name="see-also"></a>另請參閱
 
-- [限定互通的.NET 類型](/dotnet/framework/interop/qualifying-net-types-for-interoperation)
-- [與 unmanaged 程式碼交互操作](/dotnet/framework/interop/index)
+- [限定交互操作的 .NET 類型](/dotnet/framework/interop/qualifying-net-types-for-interoperation)
+- [與非受控程式碼交互操作](/dotnet/framework/interop/index)
