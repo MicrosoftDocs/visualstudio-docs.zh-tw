@@ -14,29 +14,29 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 74a43a0c601fa8a96c8737644bf5bd0261f59796
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 75d984617b56525e640a74aa4badd6f520c0b892
+ms.sourcegitcommit: e82baa50bf5a65858c410882c2e86a552c2c1921
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71254049"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72381323"
 ---
 # <a name="walkthrough-bind-to-data-from-a-service-in-a-vsto-add-in-project"></a>逐步解說：從 VSTO 增益集專案中的服務系結至資料
   您可以將資料繫結至 VSTO 增益集專案中的主控制項。 本逐步解說示範如何將控制項加入 Microsoft Office Word 文件、將控制項繫結至從 MSDN 內容服務擷取的資料，以及在執行階段回應事件。
 
- **適用於：** 本主題中的資訊適用于 Word 2010 的應用層級專案。 如需詳細資訊，請參閱 [Features Available by Office Application and Project Type](../vsto/features-available-by-office-application-and-project-type.md)。
+ **適用對象：** 本主題資訊適用於 Word 2010 的應用程式層級專案。 如需詳細資訊，請參閱[依 Office 應用程式和專案類型提供的功能](../vsto/features-available-by-office-application-and-project-type.md)。
 
  這個逐步解說將說明下列工作：
 
 - 在設計階段將 <xref:Microsoft.Office.Tools.Word.RichTextContentControl> 控制項加入文件。
 
-- <xref:Microsoft.Office.Tools.Word.RichTextContentControl>將控制項系結至 web 服務的資料。
+- 將 <xref:Microsoft.Office.Tools.Word.RichTextContentControl> 控制項系結至 web 服務的資料。
 
 - 回應 <xref:Microsoft.Office.Tools.Word.ContentControlBase.Entering> 控制項的 <xref:Microsoft.Office.Tools.Word.RichTextContentControl> 事件。
 
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>Prerequisites
  您需要下列元件才能完成此逐步解說：
 
 - [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
@@ -46,11 +46,11 @@ ms.locfileid: "71254049"
 ## <a name="create-a-new-project"></a>建立新專案
  第一步是建立 Word VSTO 增益集專案。
 
-### <a name="to-create-a-new-project"></a>建立新的專案
+### <a name="to-create-a-new-project"></a>若要建立新的專案
 
 1. 使用 Visual Basic 或 C#，建立名稱為 [MTPS 內容服務]的 Word VSTO 增益集專案。
 
-     如需詳細資訊，請參閱[如何：在 Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)中建立 Office 專案。
+     如需詳細資訊，請參閱[如何：在 Visual Studio 中建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)。
 
      Visual Studio 隨即開啟 `ThisAddIn.vb` 或 `ThisAddIn.cs` 檔案，並將專案加入 **方案總管**。
 
@@ -65,7 +65,7 @@ ms.locfileid: "71254049"
 
 3. 在 [位址] 欄位中，輸入下列 URL：
 
-     **HTTP：\//services.msdn.microsoft.com/ContentServices/ContentService.asmx**
+   `http://services.msdn.microsoft.com/ContentServices/ContentService.asmx`
 
 4. 按一下 [ **Go**]。
 
@@ -114,5 +114,5 @@ ms.locfileid: "71254049"
 
      資訊會從 MTPS 內容服務下載並顯示在內容控制項內。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [將資料系結至 Office 方案中的控制項](../vsto/binding-data-to-controls-in-office-solutions.md)

@@ -1,5 +1,5 @@
 ---
-title: CA1019:定義屬性引數的存取子
+title: CA1019：必須定義屬性引數的存取子
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,20 +17,20 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: c53fe96163a3913c024eefeb5deb8a47df691e1f
-ms.sourcegitcommit: 034c503ae04e22cf840ccb9770bffd012e40fb2d
+ms.openlocfilehash: 96e001287efa743e21deff85c00d945f9f6bb9ee
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "72306142"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72441597"
 ---
-# <a name="ca1019-define-accessors-for-attribute-arguments"></a>CA1019:定義屬性引數的存取子
+# <a name="ca1019-define-accessors-for-attribute-arguments"></a>CA1019：必須定義屬性引數的存取子
 
 |||
 |-|-|
 |TypeName|DefineAccessorsForAttributeArguments|
 |CheckId|CA1019|
-|Category|Microsoft.Design|
+|分類|Microsoft. Design|
 |重大變更|不中斷|
 
 ## <a name="cause"></a>原因
@@ -69,7 +69,7 @@ ms.locfileid: "72306142"
 [!code-csharp[FxCop.Design.AttributeAccessorsNamedApplied#1](../code-quality/codesnippet/CSharp/ca1019-define-accessors-for-attribute-arguments_3.cs)]
 
 ## <a name="related-rules"></a>相關規則
-[CA1813：避免未密封的屬性 @ no__t-0
+[CA1813：避免使用非密封屬性](../code-quality/ca1813.md)
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 [屬性](/dotnet/standard/design-guidelines/attributes)

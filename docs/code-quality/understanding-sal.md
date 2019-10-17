@@ -8,12 +8,12 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - multiple
-ms.openlocfilehash: 61a1f74d964c2d6f43608f23b9898054048bb86b
-ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
+ms.openlocfilehash: e3740b9a7544d6cc6d5b9eceb548ae66e7d3f474
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72018243"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72445604"
 ---
 # <a name="understanding-sal"></a>了解 SAL
 
@@ -41,7 +41,7 @@ void * memcpy(
 您可以分辨此函式的作用嗎？ 執行或呼叫函式時，必須維護某些屬性，以確保程式的正確性。 只要查看範例中的宣告，您就不知道它們是什麼。 如果沒有 SAL 注釋，您就必須依賴檔或程式碼批註。 以下是 `memcpy` 的 MSDN 檔指出：
 
 > 「將 src 的計數位節複製到目的地。 如果來源和目的地重迭，memcpy 的行為會是未定義的。 使用 memmove 來處理重迭的區域。
-> **安全性注意事項：** 確定目的地緩衝區與來源緩衝區是相同大小，或大於來源緩衝區。 如需詳細資訊，請參閱避免緩衝區溢位。
+> **安全性注意事項：** 請確定目的地緩衝區的大小等於或大於來源緩衝區。 如需詳細資訊，請參閱避免緩衝區溢位。
 
 檔包含幾個部分的資訊，建議您的程式碼必須維護特定屬性，以確保程式的正確性：
 
@@ -82,7 +82,7 @@ wchar_t * wmemcpy(
 ### <a name="sal-basics"></a>SAL 基本概念
 SAL 定義四種基本類型的參數，依使用模式分類。
 
-|Category|參數注釋|描述|
+|分類|參數注釋|描述|
 |--------------|--------------------------|-----------------|
 |**輸入至呼叫的函式**|`_In_`|資料會傳遞至所呼叫的函式，並被視為唯讀。|
 |**輸入至所呼叫的函式，並輸出至呼叫端**|`_Inout_`|可用的資料會傳遞至函式中，而且可能會遭到修改。|
@@ -118,7 +118,7 @@ SAL 定義四種基本類型的參數，依使用模式分類。
 
     > **C6387 不正確參數值**' pInt ' 可以是 ' 0 '：這不符合函數 ' InCallee ' 的規格。
 
-### <a name="example-the-_in_-annotation"></a>範例：@No__t-0In @ no__t-1 注釋
+### <a name="example-the-_in_-annotation"></a>範例： \_In @ no__t-1 注釋
 
 @No__t-0 注釋表示：
 
@@ -156,7 +156,7 @@ void BadInCaller()
 
 如果您在此範例上使用 Visual Studio Code 分析，它會驗證呼叫端會將非 Null 指標傳遞給 `pInt` 的初始化緩衝區。 在此情況下，`pInt` 指標不可以是 Null。
 
-### <a name="example-the-_in_opt_-annotation"></a>範例：@No__t-0In @ no__t-1opt @ no__t-2 注釋
+### <a name="example-the-_in_opt_-annotation"></a>範例： \_In @ no__t-1opt @ no__t-2 注釋
 
 `_In_opt_` 與 `_In_` 相同，不同之處在于輸入參數允許為 Null，因此函式應該檢查是否有此。
 
@@ -184,7 +184,7 @@ void InOptCaller()
 
 Visual Studio Code 分析會驗證函式會先檢查是否有 Null，然後再存取緩衝區。
 
-### <a name="example-the-_out_-annotation"></a>範例：@No__t-0Out @ no__t-1 注釋
+### <a name="example-the-_out_-annotation"></a>範例： \_Out @ no__t-1 注釋
 
 `_Out_` 支援一種常見的案例，其中指向元素緩衝區的非 Null 指標會傳入，而函式會初始化元素。 呼叫端不需要在呼叫之前初始化緩衝區。被呼叫的函式會承諾在傳回之前將它初始化。
 
@@ -210,7 +210,7 @@ void OutCaller()
 
 Visual Studio Code 分析工具會驗證呼叫端是否將非 Null 指標傳遞給 `pInt` 的緩衝區，並在傳回之前由函式初始化緩衝區。
 
-### <a name="example-the-_out_opt_-annotation"></a>範例：@No__t-0Out @ no__t-1opt @ no__t-2 注釋
+### <a name="example-the-_out_opt_-annotation"></a>範例： \_Out @ no__t-1opt @ no__t-2 注釋
 
 `_Out_opt_` 與 `_Out_` 相同，不同之處在于參數允許為 Null，因此函式應該檢查是否有此。
 
@@ -237,7 +237,7 @@ void OutOptCaller()
 
 Visual Studio Code 分析會驗證此函式會先檢查是否有 Null，再取值 `pInt`; 如果 `pInt` 不是 Null，則會在傳回之前由函式初始化緩衝區。
 
-### <a name="example-the-_inout_-annotation"></a>範例：@No__t-0Inout @ no__t-1 注釋
+### <a name="example-the-_inout_-annotation"></a>範例： \_Inout @ no__t-1 注釋
 
 `_Inout_` 是用來標注函式可能變更的指標參數。 指標必須在呼叫之前指向有效的初始化資料，即使它有變更，它仍必須具有傳回的有效值。 批註會指定函式可以自由地讀取和寫入單一元素緩衝區。 呼叫端必須提供緩衝區，並將它初始化。
 
@@ -268,7 +268,7 @@ void BadInOutCaller()
 
 Visual Studio Code 分析會驗證呼叫端是否將非 Null 指標傳遞給 `pInt` 的初始化緩衝區，而且在傳回之前，`pInt` 仍為非 Null 且緩衝區已初始化。
 
-### <a name="example-the-_inout_opt_-annotation"></a>範例：@No__t-0Inout @ no__t-1opt @ no__t-2 注釋
+### <a name="example-the-_inout_opt_-annotation"></a>範例： \_Inout @ no__t-1opt @ no__t-2 注釋
 
 `_Inout_opt_` 與 `_Inout_` 相同，不同之處在于輸入參數允許為 Null，因此函式應該檢查是否有此。
 
@@ -297,7 +297,7 @@ void InOutOptCaller()
 
 Visual Studio Code 分析會驗證此函式在存取緩衝區之前檢查是否有 Null，如果 `pInt` 不是 Null，則會在傳回之前將緩衝區初始化。
 
-### <a name="example-the-_outptr_-annotation"></a>範例：@No__t-0Outptr @ no__t-1 注釋
+### <a name="example-the-_outptr_-annotation"></a>範例： \_Outptr @ no__t-1 注釋
 
 `_Outptr_` 是用來標注用於傳回指標的參數。  參數本身不應為 Null，而且被呼叫的函式會在其中傳回非 Null 指標，而該指標會指向已初始化的資料。
 
@@ -327,7 +327,7 @@ void OutPtrCaller()
 
 Visual Studio Code 分析會驗證呼叫端是否將非 Null 指標傳遞給 `*pInt`，並在傳回之前由函式初始化緩衝區。
 
-### <a name="example-the-_outptr_opt_-annotation"></a>範例：@No__t-0Outptr @ no__t-1opt @ no__t-2 注釋
+### <a name="example-the-_outptr_opt_-annotation"></a>範例： \_Outptr @ no__t-1opt @ no__t-2 注釋
 
 `_Outptr_opt_` 與 `_Outptr_` 相同，不同之處在于參數是選擇性的，呼叫者可以傳入參數的 Null 指標。
 
@@ -359,7 +359,7 @@ void OutPtrOptCaller()
 
 Visual Studio Code 分析會驗證此函式會先檢查是否有 Null，然後才會取值 `*pInt`，而且該緩衝區會在傳回之前由函式初始化。
 
-### <a name="example-the-_success_-annotation-in-combination-with-_out_"></a>範例：@No__t-0Success @ no__t-1 注釋結合 \_Out @ no__t-3
+### <a name="example-the-_success_-annotation-in-combination-with-_out_"></a>範例： \_Success @ no__t-1 注釋結合 \_Out @ no__t-3
 
 批註可以套用至大部分的物件。  特別是，您可以標注整個函式。  函式最明顯的特性之一，就是它可以成功或失敗。 但是就像緩衝區和其大小之間的關聯，C/C++無法表示函數成功或失敗。 藉由使用 [`_Success_`] 注釋，您可以說出函式的成功樣子。  @No__t-0 注釋的參數只是一個運算式，當它為 true 時，表示函數已成功。 運算式可以是批註剖析器可以處理的任何專案。 在函式傳回之後，批註的效果只適用于函式成功時。 這個範例會示範 @no__t 0 如何與 `_Out_` 互動，以執行正確的動作。 您可以使用關鍵字 `return` 來表示傳回值。
 
@@ -404,7 +404,7 @@ Microsoft 公用標頭已標注。 因此，建議您在專案中先標注分葉
 
 [程式碼分析小組 Blog](http://go.microsoft.com/fwlink/p/?LinkId=251197)
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [使用 SAL 註釋減少 C/C++ 程式碼的缺失](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)
 - [註釋函式參數和傳回值](../code-quality/annotating-function-parameters-and-return-values.md)

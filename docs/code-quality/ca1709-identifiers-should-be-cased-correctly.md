@@ -1,5 +1,5 @@
 ---
-title: CA1709:識別項名稱應該使用正確的大小寫
+title: CA1709：識別項名稱應該使用正確的大小寫
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,20 +14,20 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9ff614d9fdc4b250bd91abf24908b33d71a182df
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: bbc066709fc5f90944b91130c1ef57a5120b1844
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71234156"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72443948"
 ---
-# <a name="ca1709-identifiers-should-be-cased-correctly"></a>CA1709:識別項名稱應該使用正確的大小寫
+# <a name="ca1709-identifiers-should-be-cased-correctly"></a>CA1709：識別項名稱應該使用正確的大小寫
 
 |||
 |-|-|
 |TypeName|IdentifiersShouldBeCasedCorrectly|
 |CheckId|CA1709|
-|分類|Microsoft.Naming|
+|分類|Microsoft. 命名|
 |重大變更|中斷-在元件、命名空間、類型、成員和參數上引發時。<br /><br /> 非中斷-在泛型型別參數上引發時。|
 
 ## <a name="cause"></a>原因
@@ -46,11 +46,11 @@ ms.locfileid: "71234156"
 
 命名慣例提供以通用語言執行時間為目標之程式庫的常見外觀。 這種一致性可減少新軟體程式庫所需的學習曲線，並提高客戶對於開發 managed 程式碼專業知識的人員所開發之程式庫的信心。
 
-依照慣例，參數名稱會使用 camel 大小寫，而命名空間、類型和成員名稱則會使用 Pascal 大小寫。 在 camel 大小寫名稱中，第一個字母是小寫，而名稱中任何其餘單字的第一個字母是大寫。 Camel 大小寫名稱的範例包括`packetSniffer`、 `ioFile`和`fatalErrorCode`。 在 Pascal 大小寫名稱中，第一個字母是大寫，而名稱中任何其餘單字的第一個字母是大寫。 Pascal 大小寫名稱的範例包括`PacketSniffer`、 `IOFile`和`FatalErrorCode`。
+依照慣例，參數名稱會使用 camel 大小寫，而命名空間、類型和成員名稱則會使用 Pascal 大小寫。 在 camel 大小寫名稱中，第一個字母是小寫，而名稱中任何其餘單字的第一個字母是大寫。 Camel 大小寫名稱的範例為 `packetSniffer`、`ioFile` 和 `fatalErrorCode`。 在 Pascal 大小寫名稱中，第一個字母是大寫，而名稱中任何其餘單字的第一個字母是大寫。 Pascal 大小寫名稱的範例為 `PacketSniffer`、`IOFile` 和 `FatalErrorCode`。
 
 此規則會根據大小寫將名稱分割成單字，並檢查兩個字母的單字是否符合一份共通的兩個字母單字，例如 "In" 或 "My"。 如果找不到相符的文字，則會假設為縮寫。 此外，此規則假設在名稱結尾的資料列中，名稱包含四個大寫字母或三個大寫字母的縮寫時，它就會找到縮略字。
 
-依照慣例，兩個字母的縮寫會使用全部大寫字母，而三個或更多字元的縮略字會使用 Pascal 大小寫。 下列範例會使用此命名慣例：' DB '、' CR '、' Cpa ' 和 ' Ecma '。 下列範例違反慣例：' Io '、' XML ' 和 ' DoD '，以及非參數名稱、' xp ' 和 ' cpl '。
+依照慣例，兩個字母的縮寫會使用全部大寫字母，而三個或更多字元的縮略字會使用 Pascal 大小寫。 下列範例會使用此命名慣例： ' DB '、' CR '、' Cpa ' 和 ' Ecma '。 下列範例違反慣例： ' Io '、' XML ' 和 ' DoD '，以及非參數名稱、' xp ' 和 ' cpl '。
 
 ' ID ' 具有特殊大小寫，因而導致此規則違規。 'Id' 不是縮略字，而是 'identification' 的縮寫。
 
@@ -62,8 +62,8 @@ ms.locfileid: "71234156"
 
 如果您有自己的命名慣例，或識別碼代表適當的名稱，例如公司或技術的名稱，則隱藏此警告是安全的。
 
-您也可以在程式碼分析自訂字典中加入特定詞彙、縮寫和縮略字。 在自訂字典中指定的詞彙不會造成此規則違規。 如需詳細資訊，請參閱[如何：自訂程式碼分析](../code-quality/how-to-customize-the-code-analysis-dictionary.md)字典。
+您也可以在程式碼分析自訂字典中加入特定詞彙、縮寫和縮略字。 在自訂字典中指定的詞彙不會造成此規則違規。 如需詳細資訊，請參閱[如何：自訂程式碼分析字典](../code-quality/how-to-customize-the-code-analysis-dictionary.md)。
 
 ## <a name="related-rules"></a>相關規則
 
-[CA1708識別碼應該不同于大小寫](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
+[CA1708：識別項名稱不應該只靠大小寫區別](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)

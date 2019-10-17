@@ -1,5 +1,5 @@
 ---
-title: CA1722:識別項名稱不應該使用不正確的前置字元
+title: CA1722：識別項不應使用不正確的前置字元
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,20 +14,20 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eb41f2ad4548933d10137e7f72cae59643d33043
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 39fa5860e8ae1d1d06a3fbce64110ce665d5d477
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71233882"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72443484"
 ---
-# <a name="ca1722-identifiers-should-not-have-incorrect-prefix"></a>CA1722:識別項名稱不應該使用不正確的前置字元
+# <a name="ca1722-identifiers-should-not-have-incorrect-prefix"></a>CA1722：識別項不應使用不正確的前置字元
 
 |||
 |-|-|
 |TypeName|IdentifiersShouldNotHaveIncorrectPrefix|
 |CheckId|CA1722|
-|分類|Microsoft.Naming|
+|分類|Microsoft. 命名|
 |重大變更|中斷|
 
 ## <a name="cause"></a>原因
@@ -47,4 +47,4 @@ ms.locfileid: "71233882"
 請勿隱藏此規則的警告。
 
 ## <a name="related-rules"></a>相關規則
-[CA1715識別碼應該有正確的前置詞](../code-quality/ca1715-identifiers-should-have-correct-prefix.md)
+[CA1715：識別項名稱應該使用正確的前置字元](../code-quality/ca1715-identifiers-should-have-correct-prefix.md)

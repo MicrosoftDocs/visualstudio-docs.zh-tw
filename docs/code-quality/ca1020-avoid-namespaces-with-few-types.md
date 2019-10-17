@@ -1,5 +1,5 @@
 ---
-title: CA1020:避免在命名空間中包含過少的類型
+title: CA1020：避免在命名空間中包含過少的類型
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,20 +14,20 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6e5c50f607253304b05dd7ab9350646a0df05e70
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: d13f4e9308e77cc723703394a4295273b5facef1
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71236235"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72441627"
 ---
-# <a name="ca1020-avoid-namespaces-with-few-types"></a>CA1020:避免在命名空間中包含過少的類型
+# <a name="ca1020-avoid-namespaces-with-few-types"></a>CA1020：避免在命名空間中包含過少的類型
 
 |||
 |-|-|
 |TypeName|AvoidNamespacesWithFewTypes|
 |CheckId|CA1020|
-|分類|Microsoft.Design|
+|分類|Microsoft. Design|
 |重大變更|中斷|
 
 ## <a name="cause"></a>原因
@@ -36,10 +36,10 @@ ms.locfileid: "71236235"
 
 ## <a name="rule-description"></a>規則描述
 
-請確定每個命名空間都有邏輯組織，而且有一個有效的原因，就是將類型放在稀疏填入的命名空間中。 命名空間應該包含在大部分情況下一起使用的類型。 當其應用程式互斥時，類型應該位於不同的命名空間。 例如， <xref:System.Web.UI>命名空間包含在 web 應用程式中使用的類型， <xref:System.Windows.Forms>而命名空間包含用於[!INCLUDE[TLA#tla_mswin](../code-quality/includes/tlasharptla_mswin_md.md)]架構應用程式的類型。 雖然這兩個命名空間都有可控制使用者介面層面的類型，但這些類型並不是設計用於相同的應用程式中。 因此，它們位於不同的命名空間。 仔細命名空間組織也會很有説明，因為它會增加功能的可搜尋性。 藉由檢查命名空間階層，程式庫取用者應該能夠找出用來執行功能的類型。
+請確定每個命名空間都有邏輯組織，而且有一個有效的原因，就是將類型放在稀疏填入的命名空間中。 命名空間應該包含在大部分情況下一起使用的類型。 當其應用程式互斥時，類型應該位於不同的命名空間。 例如，@no__t 0 命名空間包含 web 應用程式中使用的類型，而 @no__t 1 命名空間包含用於 [!INCLUDE[TLA#tla_mswin](../code-quality/includes/tlasharptla_mswin_md.md)] 架構應用程式中的類型。 雖然這兩個命名空間都有可控制使用者介面層面的類型，但這些類型並不是設計用於相同的應用程式中。 因此，它們位於不同的命名空間。 仔細命名空間組織也會很有説明，因為它會增加功能的可搜尋性。 藉由檢查命名空間階層，程式庫取用者應該能夠找出用來執行功能的類型。
 
 > [!NOTE]
-> 設計階段類型和許可權不應合併到其他命名空間，以符合此指導方針。 這些類型屬於您主要命名空間底下的自己命名空間，而命名空間則分別`.Design`以`.Permissions`和結尾。
+> 設計階段類型和許可權不應合併到其他命名空間，以符合此指導方針。 這些類型屬於您主要命名空間底下的專屬命名空間，而命名空間的結尾應該是 `.Design`，而 `.Permissions`。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
 

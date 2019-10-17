@@ -1,5 +1,5 @@
 ---
-title: CA1016:組件必須標記 AssemblyVersionAttribute
+title: CA1016：以 AssemblyVersionAttribute 標記組件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,20 +18,20 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 140037b025db88230762bc0d540d933cec7a5119
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 85a8d2d9efe83f62bd0bd40021ffe0e752cf4666
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71236317"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72441612"
 ---
-# <a name="ca1016-mark-assemblies-with-assemblyversionattribute"></a>CA1016:組件必須標記 AssemblyVersionAttribute
+# <a name="ca1016-mark-assemblies-with-assemblyversionattribute"></a>CA1016：以 AssemblyVersionAttribute 標記組件
 
 |||
 |-|-|
 |TypeName|MarkAssembliesWithAssemblyVersion|
 |CheckId|CA1016|
-|分類|Microsoft.Design|
+|分類|Microsoft. Design|
 |重大變更|不中斷|
 
 ## <a name="cause"></a>原因
@@ -54,7 +54,7 @@ ms.locfileid: "71236317"
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
 
-若要修正此規則的違規情形，請使用<xref:System.Reflection.AssemblyVersionAttribute?displayProperty=fullName>屬性，將版本號碼新增至元件。
+若要修正此規則的違規情形，請使用 <xref:System.Reflection.AssemblyVersionAttribute?displayProperty=fullName> 屬性，將版本號碼新增至元件。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
 
@@ -62,13 +62,13 @@ ms.locfileid: "71236317"
 
 ## <a name="example"></a>範例
 
-下列範例顯示已<xref:System.Reflection.AssemblyVersionAttribute>套用屬性的元件。
+下列範例顯示已套用 <xref:System.Reflection.AssemblyVersionAttribute> 屬性的元件。
 
 [!code-csharp[FxCop.Design.AssembliesVersion#1](../code-quality/codesnippet/CSharp/ca1016-mark-assemblies-with-assemblyversionattribute_1.cs)]
 [!code-vb[FxCop.Design.AssembliesVersion#1](../code-quality/codesnippet/VisualBasic/ca1016-mark-assemblies-with-assemblyversionattribute_1.vb)]
 [!code-cpp[FxCop.Design.AssembliesVersion#1](../code-quality/codesnippet/CPP/ca1016-mark-assemblies-with-assemblyversionattribute_1.cpp)]
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [元件版本控制](/dotnet/framework/app-domains/assembly-versioning)
 - [如何：建立發行者原則](/dotnet/framework/configure-apps/how-to-create-a-publisher-policy)

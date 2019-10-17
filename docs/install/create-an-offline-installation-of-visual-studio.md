@@ -16,12 +16,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 3a39f1b89cd8a0e0bbf27742688bcaec3da6f912
-ms.sourcegitcommit: a5a54b147e772dc39e519da74ec41a0c25d99628
+ms.openlocfilehash: 2268d71f9119cc36bdb18161a62fbe930a37b2ff
+ms.sourcegitcommit: e82baa50bf5a65858c410882c2e86a552c2c1921
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2019
-ms.locfileid: "72289619"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72381099"
 ---
 # <a name="create-an-offline-installation-of-visual-studio"></a>建立 Visual Studio 的離線安裝
 
@@ -37,7 +37,7 @@ Visual Studio 2019 的設計適用於各種網路和電腦組態。 雖然建議
 
 ::: moniker-end
 
-例如，您可能有不可靠網際網路連線，或具有低頻寬的連線。 若是如此，您有幾個選項：您可以使用新的 [全部下載後安裝] 功能來下載檔案後再安裝，也可以使用命令列來建立檔案的本機快取。
+例如，您可能有不可靠網際網路連線，或具有低頻寬的連線。 因此，您有幾個選項：您可以使用新的 [全部下載後安裝] 功能來下載檔案後再安裝，也可以使用命令列來建立檔案的本機快取。
 
 > [!NOTE]
 > 如果您是企業系統管理員，想要將 Visual Studio 部署至已啟用網際網路防火牆的用戶端工作站網路，請參閱[建立 Visual Studio 的網路安裝](../install/create-a-network-installation-of-visual-studio.md)和[安裝 Visual Studio 離線安裝所需憑證](../install/install-certificates-for-visual-studio-offline.md)頁面。
@@ -46,7 +46,7 @@ Visual Studio 2019 的設計適用於各種網路和電腦組態。 雖然建議
 
 ::: moniker range="vs-2017"
 
-[**15.8 版的新功能**](/visualstudio/releasenotes/vs2017-relnotes-v15.8#install)：在您下載 Web 安裝程式之後，請從 Visual Studio 安裝程式中選取新的 [全部下載後安裝] 選項。 然後，繼續執行您的安裝。
+[**15.8 版的新**](/visualstudio/releasenotes/vs2017-relnotes-v15.8#install)功能：下載 web 安裝程式之後，請從 [Visual Studio 安裝程式] 中選取 [新增] [**全部下載] 和 [安裝**] 選項。 然後，繼續執行您的安裝。
 
    ![[全部下載後安裝] 選項](media/download-all-then-install.png)
 
@@ -54,7 +54,7 @@ Visual Studio 2019 的設計適用於各種網路和電腦組態。 雖然建議
 
 ::: moniker range="vs-2019"
 
-在您下載 Web 安裝程式之後，請從 Visual Studio 安裝程式中選取新的 [全部下載後安裝] 選項。 然後，繼續執行您的安裝。
+下載 web 安裝程式之後，請從 Visual Studio 安裝程式中選取 新增 **全部下載 和 安裝** 選項。 然後，繼續執行您的安裝。
 
    ![[全部下載後安裝] 選項](media/vs-2019/download-all-then-install-from-installer.png)
 
@@ -98,7 +98,7 @@ Visual Studio 2019 的設計適用於各種網路和電腦組態。 雖然建議
 |----------------------------|-------------------------------------------------------------------------|
 | Visual Studio Community    | [vs_community.exe](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=community&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=offline+install&utm_content=download+vs2019)       |
 | Visual Studio Professional | [vs_professional.exe](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=professional&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=offline+install&utm_content=download+vs2019) |
-| Visual Studio Enterprise   | [vs_enterprise.exe](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=enterprise&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=offline+install&utm_content=download+vs2019)     |
+| Visual Studio 企業版   | [vs_enterprise.exe](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=enterprise&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=offline+install&utm_content=download+vs2019)     |
 | Visual Studio Build Tools   | [vs_buildtools .exe](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=buildtools&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=offline+install&utm_content=download+vs2019)     |
 
 ::: moniker-end
@@ -163,6 +163,12 @@ Visual Studio 2019 的設計適用於各種網路和電腦組態。 雖然建議
 > [!TIP]
 > 當您從本機安裝快取執行時，安裝程式會使用每個檔案的本機版本。 但如果您在安裝期間選取不存在於快取中的元件，則安裝程式會嘗試從網際網路下載它們。
 
+::: moniker range="vs-2019"
+
+> 對於使用16.1 和更新版本的安裝和更新，如果您在離線系統上收到「找不到符合下列參數的產品」錯誤，請使用16.3.5 或更新版本的--noweb 參數。
+
+::: moniker-end
+
 若要確定您只會安裝先前下載的檔案，請使用您用來建立配置快取的相同命令列選項。 例如，如果您已使用下列命令建立配置快取：
 
 ```cmd
@@ -199,7 +205,7 @@ c:\vslayout\vs_community.exe --add Microsoft.VisualStudio.Workload.ManagedDeskto
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [建立 Visual Studio 的網路安裝](../install/create-a-network-installation-of-visual-studio.md)
 - [更新 Visual Studio 的網路型安裝](update-a-network-installation-of-visual-studio.md)

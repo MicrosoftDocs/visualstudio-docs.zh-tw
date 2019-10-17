@@ -1,5 +1,5 @@
 ---
-title: 快速入門：C/C++ 的程式碼分析
+title: 快速入門：C/C++ 程式碼分析
 description: 在 Visual Studio 的程式C++代碼上執行靜態分析，以偵測常見的編碼問題和瑕疵。
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -11,12 +11,12 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2c68bb94a66be2c9fc1da4365cb77adf8d1330a1
-ms.sourcegitcommit: e95dd8cedcd180e0bce6a75c86cf861757918290
+ms.openlocfilehash: 4beaff14e896eae15d4ce68acf35331d03203246
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "72163013"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72445642"
 ---
 # <a name="quickstart-code-analysis-for-cc"></a>快速入門：C/C++ 的程式碼分析
 
@@ -28,7 +28,7 @@ ms.locfileid: "72163013"
 
 2. （選擇性 **）在 [** 設定] 和 [**平臺**] 清單中，選擇 [組建設定] 和 [目標平臺]。
 
-3. 若要執行程式碼分析，每次使用選取的組態建置專案時，請選取**建置時啟用程式碼分析**核取方塊。 您也可以開啟 [**分析**] 功能表，然後選擇 [在*專案名稱***上執行程式碼分析**] 或 [檔案**上執行**程式碼分析]，手動執行程式碼分析。
+3. 若要在每次使用選取的設定建立專案時執行程式碼分析，請選取 [**在組建上啟用程式碼分析**] 核取方塊。 您也可以開啟 [**分析**] 功能表，然後選擇 [在*專案名稱***上執行程式碼分析**] 或 [檔案**上執行**程式碼分析]，手動執行程式碼分析。
 
 4. 選擇您想要使用的[規則集](../code-quality/using-rule-sets-to-specify-the-cpp-rules-to-run.md)，或建立[自訂規則集](../code-quality/how-to-create-a-custom-rule-set.md)。 如果使用 LLVM/clang-cl，請參閱[在 Visual Studio 中使用 clang](../code-quality/clang-tidy.md) ，以設定 clang 整齊的分析選項。
 
@@ -107,6 +107,6 @@ Visual Studio 包含兩組標準的原生程式碼規則：
 
 - **若要依嚴重性篩選警告**：根據預設，系統會將**警告**的嚴重性指派給程式碼分析訊息。 在自訂規則集中，您可以將一或多個訊息的嚴重性指派為 [**錯誤**]。 在**錯誤清單**的 [**嚴重性**] 資料行上，選擇下拉箭號，然後選取篩選圖示。 選擇 [**警告**] 或 [**錯誤**]，只顯示指派給個別嚴重性的訊息。 選擇 [**全選**] 以顯示所有訊息。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [C/的程式碼分析C++](../code-quality/code-analysis-for-c-cpp-overview.md)

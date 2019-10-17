@@ -1,5 +1,5 @@
 ---
-title: CA1401:P-Invokes 不應該為可見的
+title: CA1401：P/Invokes 不應該為可見
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,27 +17,27 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: d4a0a1c001407d947988497c422fdb8e88dd7c83
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: b06aa26b046743b06f8fdd274da7a804a5ec06f6
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71234888"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72440716"
 ---
-# <a name="ca1401-pinvokes-should-not-be-visible"></a>CA1401:P/Invokes 不應該為可見的
+# <a name="ca1401-pinvokes-should-not-be-visible"></a>CA1401：P/Invokes 不應該為可見的
 
 |||
 |-|-|
 |TypeName|PInvokesShouldNotBeVisible|
 |CheckId|CA1401|
-|分類|Microsoft.Interoperability|
+|分類|Microsoft. 互通性|
 |重大變更|中斷|
 
 ## <a name="cause"></a>原因
-公用類型中的公用或受保護方法具有<xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName>屬性（也是由中[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]的`Declare`關鍵字來執行）。
+公用類型中的公用或受保護方法具有 <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName> 屬性（也會由 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 中的 `Declare` 關鍵字來執行）。
 
 ## <a name="rule-description"></a>規則描述
-以<xref:System.Runtime.InteropServices.DllImportAttribute>屬性（或在中`Declare` [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]使用關鍵字定義的方法）標記的方法會使用平台叫用服務來存取未受管理的程式碼。 但不得公開 (Expose) 此類方法。 藉由將這些方法保留為私用或內部，您可以藉由允許呼叫端存取非受控 Api （否則無法呼叫），確保您的程式庫無法用來入侵安全性。
+以 <xref:System.Runtime.InteropServices.DllImportAttribute> 屬性（或在 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 中使用 `Declare` 關鍵字定義的方法）標記的方法，會使用平台叫用服務來存取非受控碼。 但不得公開 (Expose) 此類方法。 藉由將這些方法保留為私用或內部，您可以藉由允許呼叫端存取非受控 Api （否則無法呼叫），確保您的程式庫無法用來入侵安全性。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
 若要修正此規則的違規情形，請變更方法的存取層級。

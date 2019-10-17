@@ -1,5 +1,5 @@
 ---
-title: CA1044:屬性不應該為唯寫的
+title: CA1044：屬性不應為唯寫
 ms.date: 03/11/2019
 ms.topic: reference
 f1_keywords:
@@ -17,20 +17,20 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 0fb424627d88ede6c0677b8c45de4aab487ae498
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 6a3eb46adbf0eabc18adb423209c09b6e1a63c18
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71235823"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72449205"
 ---
-# <a name="ca1044-properties-should-not-be-write-only"></a>CA1044:屬性不應該為唯寫的
+# <a name="ca1044-properties-should-not-be-write-only"></a>CA1044：屬性不應為唯寫
 
 |||
 |-|-|
 |TypeName|PropertiesShouldNotBeWriteOnly|
 |CheckId|CA1044|
-|分類|Microsoft.Design|
+|分類|Microsoft. Design|
 |重大變更|中斷|
 
 ## <a name="cause"></a>原因
@@ -63,7 +63,7 @@ dotnet_code_quality.ca1044.api_surface = private, internal
 
 ## <a name="example"></a>範例
 
-在下列範例中， `BadClassWithWriteOnlyProperty`是具有寫入屬性的類型。 `GoodClassWithReadWriteProperty`包含已更正的程式碼。
+在下列範例中，`BadClassWithWriteOnlyProperty` 是具有僅限寫入屬性的類型。 `GoodClassWithReadWriteProperty` 包含已更正的程式碼。
 
 [!code-vb[FxCop.Design.PropertiesNotWriteOnly#1](../code-quality/codesnippet/VisualBasic/ca1044-properties-should-not-be-write-only_1.vb)]
 [!code-csharp[FxCop.Design.PropertiesNotWriteOnly#1](../code-quality/codesnippet/CSharp/ca1044-properties-should-not-be-write-only_1.cs)]

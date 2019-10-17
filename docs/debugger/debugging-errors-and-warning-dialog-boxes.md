@@ -1,5 +1,5 @@
 ---
-title: 偵錯錯誤和警告對話方塊 |Microsoft Docs
+title: '[調試錯誤] 和 [警告] 對話方塊 |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -21,24 +21,24 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e13d6d323264136c6cab4c753ba53d40acd5a628
-ms.sourcegitcommit: da4079f5b6ec884baf3108cbd0519d20cb64c70b
+ms.openlocfilehash: f261eac1c3cbc73bb12323c089ae88f4ffc6b120
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "67852229"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72431671"
 ---
 # <a name="debugging-errors-and-warning-dialog-boxes"></a>偵錯錯誤和警告對話方塊
 底下列出一些偵錯應用程式時可能會碰到的錯誤和警告對話方塊。
 
-## <a name="in-this-section"></a>本節內容
+## <a name="in-this-section"></a>本章節內容
  [判斷提示失敗對話方塊](../debugger/assertion-failed-dialog-box.md)
 
  [無法變更值對話方塊](../debugger/cannot-change-value-dialog-box.md)
 
  [偵錯工具無法顯示原始程式碼或反組譯碼](../debugger/debugger-cannot-display-source-code-or-disassembly.md)
  
- [記憶體不足的服務偵錯工具](../debugger/error-debugger-services-no-memory.md)
+ [偵錯工具服務記憶體不足](../debugger/error-debugger-services-no-memory.md)
 
  [偵錯工作階段的可執行檔對話方塊](../debugger/executable-for-debugging-session-dialog-box.md)
 
@@ -56,10 +56,10 @@ ms.locfileid: "67852229"
 
  [無法連線至電腦](../debugger/error-unable-to-connect-to-the-machine-name-the-machine-cannot-be-found-on-the-network.md)
 
- [錯誤：無法進行偵錯，因為系統中已啟動核心偵錯工具](../debugger/error-debugging-isn-t-possible-because-a-kernel-debugger-is-enabled-on-the-system.md)
+ [錯誤：無法進行偵錯，系統中已啟動一個核心偵錯工具](../debugger/error-debugging-isn-t-possible-because-a-kernel-debugger-is-enabled-on-the-system.md)
 
 ## <a name="related-sections"></a>相關章節
- [偵錯指令碼和 Web:錯誤和疑難排解](../debugger/debugging-web-applications-errors-and-troubleshooting.md)
+ [Debugging Script and Web: Errors and Troubleshooting](../debugger/debugging-web-applications-errors-and-troubleshooting.md) (對指令碼和 Web 進行偵錯：錯誤和疑難排解)
 
  [遠端偵錯錯誤](../debugger/remote-debugging-errors-and-troubleshooting.md)
 
@@ -67,6 +67,6 @@ ms.locfileid: "67852229"
 
  [針對 SQL 偵錯安裝程式進行疑難排解](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/s7ahaxtd(v=vs.100))
 
- [偵錯 Visual C++ 常見問題集](../debugger/debugging-native-code-faqs.md)
+ [對機器碼進行偵錯的常見問題集](../debugger/debugging-native-code-faqs.md)
 
  [偵錯工具安全性](../debugger/debugger-security.md)

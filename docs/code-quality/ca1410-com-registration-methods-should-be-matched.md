@@ -1,5 +1,5 @@
 ---
-title: CA1410:應該和 COM 註冊方法對應
+title: CA1410：應該符合 COM 註冊方法
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,29 +17,29 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: bca9e06c861ab2bcaceead8bf8ee195b64e45c83
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: c7c7c20ece08bc5167887727e423a3f7cdf7ee19
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71234741"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72440200"
 ---
-# <a name="ca1410-com-registration-methods-should-be-matched"></a>CA1410:應該和 COM 註冊方法對應
+# <a name="ca1410-com-registration-methods-should-be-matched"></a>CA1410：應該符合 COM 註冊方法
 
 |||
 |-|-|
 |TypeName|ComRegistrationMethodsShouldBeMatched|
 |CheckId|CA1410|
-|分類|Microsoft.Interoperability|
+|分類|Microsoft. 互通性|
 |重大變更|不中斷|
 
 ## <a name="cause"></a>原因
 
-類型會宣告以<xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute?displayProperty=fullName>屬性標記的方法，但不會宣告<xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute?displayProperty=fullName>以屬性標記的方法，反之亦然。
+類型會宣告以 <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute?displayProperty=fullName> 屬性標記的方法，但不會宣告標記為 <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute?displayProperty=fullName> 屬性的方法，反之亦然。
 
 ## <a name="rule-description"></a>規則描述
 
-若要讓元件物件模型（COM）用戶端建立 .NET 類型，必須先註冊該類型。 如果可以使用，則會在註冊過程中呼叫以<xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute>屬性標記的方法，以執行使用者指定的程式碼。 在取消註冊的過程中，會<xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute>呼叫以屬性標記的對應方法，以反轉登錄方法的作業。
+若要讓元件物件模型（COM）用戶端建立 .NET 類型，必須先註冊該類型。 如果可以使用，則會在註冊過程中呼叫標記為 <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute> 屬性的方法，以執行使用者指定的程式碼。 在取消註冊程式期間，會呼叫標記為 <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute> 屬性的對應方法，以反轉登錄方法的作業。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
 
@@ -58,9 +58,9 @@ ms.locfileid: "71234741"
 
 ## <a name="related-rules"></a>相關規則
 
-[CA1411COM 註冊方法不應該為可見的](../code-quality/ca1411-com-registration-methods-should-not-be-visible.md)
+[CA1411：COM 註冊方法不應該為可見的](../code-quality/ca1411-com-registration-methods-should-not-be-visible.md)
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - <xref:System.Runtime.InteropServices.RegistrationServices?displayProperty=fullName>
 - [向 COM 註冊元件](/dotnet/framework/interop/registering-assemblies-with-com)

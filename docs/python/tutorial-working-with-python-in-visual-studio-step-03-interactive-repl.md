@@ -11,16 +11,16 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 15e0b45fd77096ba2227391736aad5c895014d1c
-ms.sourcegitcommit: 0554b59a2a251661e56824fb9cd6e9b1f326cef1
+ms.openlocfilehash: 7b2de511b0d24df9c4e156ccef37ff053005af98
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "71831863"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72450441"
 ---
 # <a name="step-3-use-the-interactive-repl-window"></a>步驟 3：使用互動式 REPL 視窗
 
-**先前步驟：[撰寫並執行程式碼](tutorial-working-with-python-in-visual-studio-step-02-writing-code.md)**
+**上一個步驟：[撰寫並執行程式碼](tutorial-working-with-python-in-visual-studio-step-02-writing-code.md)**
 
 適用於 Python 的 Visual Studio **互動式**視窗提供一個豐富的「讀取、求值、輸出」迴圈 (REPL) 體驗，可大幅縮短一般「編輯-建置-偵錯」循環。 **互動式**視窗提供 Python 命令列之 REPL 體驗的所有功能。 它也讓在 Visual Studio 編輯器中與原始程式檔交換程式碼變得極為簡單，而使用命令列來執行此作業則會十分麻煩。
 
@@ -54,7 +54,7 @@ ms.locfileid: "71831863"
         return ' ' * int(20 * cos(radians(x)) + 20) + 'o'
     ```
 
-1. 選取 *.py*檔案中的 `import`、`from` 和 @no__t 2 函式語句，並按一下滑鼠右鍵，然後選取 [**傳送至互動式**] （或按**Ctrl**+**enter**）。 程式碼片段會立即貼入至**互動式**視窗並執行。 現在選取 `make_dot_string` 函式，並重複相同的命令，以再次執行該程式碼片段。 因為程式碼定義函式，您可以呼叫該函式數次以快速測試它：
+1. 選取 *.py*檔案中的 `import`、`from` 和 @no__t 2 函式語句，並按一下滑鼠右鍵，然後選取 [**傳送至互動式**] （或按**Ctrl**+**enter**）。 程式碼片段會立即貼入至**互動式**視窗並執行。 因為程式碼已定義函式，所以您可以藉由呼叫下列幾次來快速測試該函式：
 
     ![將程式碼傳送至互動式視窗並進行測試](media/vs-getting-started-python-14-interactive4.png)
 

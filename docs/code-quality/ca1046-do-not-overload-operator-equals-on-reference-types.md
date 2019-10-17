@@ -1,5 +1,5 @@
 ---
-title: CA1046:不要多載參考類型上的等號比較運算子
+title: CA1046：請勿多載參考類型上的等號比較運算子
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,20 +14,20 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 23358d104c891ff9e230f0daad0f5e6ca57b46c2
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 31fd841117e3036cfb9068523914abd2d5f7797a
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71235770"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72449175"
 ---
-# <a name="ca1046-do-not-overload-operator-equals-on-reference-types"></a>CA1046:不要多載參考類型上的等號比較運算子
+# <a name="ca1046-do-not-overload-operator-equals-on-reference-types"></a>CA1046：請勿多載參考類型上的等號比較運算子
 
 |||
 |-|-|
 |TypeName|DoNotOverloadOperatorEqualsOnReferenceTypes|
 |CheckId|CA1046|
-|分類|Microsoft.Design|
+|分類|Microsoft. Design|
 |重大變更|中斷|
 
 ## <a name="cause"></a>原因
@@ -64,9 +64,9 @@ c and a are == ? Yes
 
 ## <a name="related-rules"></a>相關規則
 
-[CA1013多載運算子等於 on 多載加和減](../code-quality/ca1013-overload-operator-equals-on-overloading-add-and-subtract.md)
+[CA1013：多載加號和減號運算子時必須一併多載等號比較運算子](../code-quality/ca1013-overload-operator-equals-on-overloading-add-and-subtract.md)
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - <xref:System.Object.Equals%2A?displayProperty=fullName>
 - [等號比較運算子](/dotnet/standard/design-guidelines/equality-operators)

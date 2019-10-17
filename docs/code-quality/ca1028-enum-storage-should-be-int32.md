@@ -1,5 +1,5 @@
 ---
-title: CA1028:列舉儲存區應該是 Int32
+title: CA1028：列舉儲存區應該是 Int32
 ms.date: 03/11/2019
 ms.topic: reference
 f1_keywords:
@@ -17,35 +17,35 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 47a934a6e35296927eea64465ff8e7007219bec5
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 0ece210d20a675cf2f55b5b619a1c1b526638582
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71236088"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72449251"
 ---
-# <a name="ca1028-enum-storage-should-be-int32"></a>CA1028:列舉儲存區應該是 Int32
+# <a name="ca1028-enum-storage-should-be-int32"></a>CA1028：列舉儲存區應該是 Int32
 
 |||
 |-|-|
 |TypeName|EnumStorageShouldBeInt32|
 |CheckId|CA1028|
-|分類|Microsoft.Design|
+|分類|Microsoft. Design|
 |重大變更|中斷|
 
 ## <a name="cause"></a>原因
 
-列舉的基礎類型不<xref:System.Int32?displayProperty=fullName>是。
+列舉的基礎類型不 <xref:System.Int32?displayProperty=fullName>。
 
 根據預設，此規則只會查看公用列舉，但這是[可](#configurability)設定的。
 
 ## <a name="rule-description"></a>規則描述
 
-列舉類型是一種實值類型 (Value Type)，用以定義一組相關的具名常數。 根據預設， <xref:System.Int32?displayProperty=fullName>資料類型會用來儲存常數值。 雖然您可以變更此基礎類型，但在大部分的情況下並不需要或不建議這麼做。 使用小於的資料類型<xref:System.Int32>，就不會有顯著的效能提升。 如果您無法使用預設資料類型，您應該使用其中一個通用語言系統（CLS） <xref:System.Byte>相容整數類型、 <xref:System.Int16> <xref:System.Int32>、、或<xref:System.Int64> ，以確保列舉的所有值都可以在中表示符合 CLS 標準的程式設計語言。
+列舉類型是一種實值類型 (Value Type)，用以定義一組相關的具名常數。 預設會使用 @no__t 0 資料類型來儲存常數值。 雖然您可以變更此基礎類型，但在大部分的情況下並不需要或不建議這麼做。 使用小於 <xref:System.Int32> 的資料類型，就不會有顯著的效能提升。 如果您無法使用預設資料類型，您應該使用其中一個通用語言系統（CLS）相容整數類型，<xref:System.Byte>，<xref:System.Int16>，<xref:System.Int32> 或 <xref:System.Int64>，以確保列舉的所有值都可以在符合 CLS 標準的程式設計中表示語言。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
 
-若要修正此規則的違規，除非存在大小或相容性問題， <xref:System.Int32>請使用。 對於不夠大<xref:System.Int32>而無法保存值的情況，請使用。 <xref:System.Int64> 如果回溯相容性需要較小的資料類型<xref:System.Byte> ， <xref:System.Int16>請使用或。
+若要修正此規則的違規，除非有大小或相容性問題，否則請使用 <xref:System.Int32>。 在 <xref:System.Int32> 不夠大而無法容納值的情況下，請使用 <xref:System.Int64>。 如果回溯相容性需要較小的資料類型，請使用 <xref:System.Byte> 或 <xref:System.Int16>。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
 
@@ -70,20 +70,20 @@ dotnet_code_quality.ca1028.api_surface = private, internal
 
 ## <a name="example-of-how-to-fix"></a>如何修正的範例
 
-下列範例會將基礎資料類型變更為，藉以<xref:System.Int32>修正先前的違規。
+下列範例會將基礎資料類型變更為 <xref:System.Int32>，藉以修正先前的違規。
 
 [!code-csharp[FxCop.Design.EnumIntegralTypeFixed#1](../code-quality/codesnippet/CSharp/ca1028-enum-storage-should-be-int32_2.cs)]
 [!code-vb[FxCop.Design.EnumIntegralTypeFixed#1](../code-quality/codesnippet/VisualBasic/ca1028-enum-storage-should-be-int32_2.vb)]
 
 ## <a name="related-rules"></a>相關規則
 
-- [CA1008列舉的值應該為零](../code-quality/ca1008-enums-should-have-zero-value.md)
-- [CA1027 必須使用 FlagsAttribute 標記列舉](../code-quality/ca1027-mark-enums-with-flagsattribute.md)
-- [CA2217不要以 FlagsAttribute 標記列舉](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)
-- [CA1700不要將列舉值命名為「Reserved」](../code-quality/ca1700-do-not-name-enum-values-reserved.md)
-- [CA1712不要使用類型名稱做為列舉值的前置詞](../code-quality/ca1712-do-not-prefix-enum-values-with-type-name.md)
+- [CA1008：列舉值中應該要有值為零的成員](../code-quality/ca1008-enums-should-have-zero-value.md)
+- [CA1027：必須以 FlagsAttribute 標記列舉](../code-quality/ca1027-mark-enums-with-flagsattribute.md)
+- [CA2217：不要以 FlagsAttribute 標記列舉](../code-quality/ca2217.md)
+- [CA1700：不要在列舉值名稱中包含 'Reserved'](../code-quality/ca1700-do-not-name-enum-values-reserved.md)
+- [CA1712：不要使用類型名稱做為列舉值的前置字元](../code-quality/ca1712-do-not-prefix-enum-values-with-type-name.md)
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - <xref:System.Byte?displayProperty=fullName>
 - <xref:System.Int16?displayProperty=fullName>

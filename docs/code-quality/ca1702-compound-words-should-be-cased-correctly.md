@@ -1,5 +1,5 @@
 ---
-title: CA1702:複合字應該使用正確的大小寫
+title: CA1702：複合字應該使用正確的大小寫
 ms.date: 03/28/2018
 ms.topic: reference
 f1_keywords:
@@ -14,20 +14,20 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5480d3dde926dfe31b018a5cd0b1ea6a5813063b
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: ea3285bfd5769a2bd37363d5a9eb6179b9cef563
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71234340"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72439907"
 ---
-# <a name="ca1702-compound-words-should-be-cased-correctly"></a>CA1702:複合字應該使用正確的大小寫
+# <a name="ca1702-compound-words-should-be-cased-correctly"></a>CA1702：複合字應該使用正確的大小寫
 
 |||
 |-|-|
 |TypeName|CompoundWordsShouldBeCasedCorrectly|
 |CheckId|CA1702|
-|分類|Microsoft.Naming|
+|分類|Microsoft. 命名|
 |重大變更|中斷-在元件上引發。<br /><br /> 非中斷-在型別參數上引發時。|
 
 ## <a name="cause"></a>原因
@@ -48,7 +48,7 @@ ms.locfileid: "71234340"
 
 「拼寫檢查」目前只會針對以英文為基礎的文化特性字典進行檢查。 您可以藉由新增**CodeAnalysisCulture**元素，在專案檔中變更專案的文化特性。
 
-例如：
+例如:
 
 ```xml
 <Project ...>
@@ -65,11 +65,11 @@ ms.locfileid: "71234340"
 
 ## <a name="related-rules"></a>相關規則
 
-- [CA1701資源字串複合字應該是正確的大小寫](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)
-- [CA1709識別碼的大小寫應該正確](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
-- [CA1708識別碼應該不同于大小寫](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
+- [CA1701：資源字串複合字應該使用正確的大小寫](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)
+- [CA1709：識別項名稱應該使用正確的大小寫](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
+- [CA1708：識別項名稱不應該只靠大小寫區別](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [命名方針](/dotnet/standard/design-guidelines/naming-guidelines)
 - [大小寫慣例](/dotnet/standard/design-guidelines/capitalization-conventions)

@@ -1,5 +1,5 @@
 ---
-title: CA1050:類型必須在命名空間中宣告
+title: CA1050：在命名空間中宣告類型
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,20 +17,20 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 8127c68cfe7eb541b8adea8affad99027e0c1fe7
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 4d7b132a2840afcc581dda8d341f0193c27f0ef2
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71235758"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72449194"
 ---
-# <a name="ca1050-declare-types-in-namespaces"></a>CA1050:類型必須在命名空間中宣告
+# <a name="ca1050-declare-types-in-namespaces"></a>CA1050：在命名空間中宣告類型
 
 |||
 |-|-|
 |TypeName|DeclareTypesInNamespaces|
 |CheckId|CA1050|
-|分類|Microsoft.Design|
+|分類|Microsoft. Design|
 |重大變更|中斷|
 
 ## <a name="cause"></a>原因
@@ -52,7 +52,7 @@ ms.locfileid: "71235758"
 [!code-vb[FxCop.Design.TypesLiveInNamespaces#1](../code-quality/codesnippet/VisualBasic/ca1050-declare-types-in-namespaces_1.vb)]
 
 ## <a name="example"></a>範例
-下列應用程式會使用先前定義的程式庫。 請注意，當命名空間未限定名稱`Test`時，會建立在命名空間外部宣告的類型。 另請注意，若要`Test`存取中`Goodspace`的類型，則需要命名空間名稱。
+下列應用程式會使用先前定義的程式庫。 請注意，當名稱 `Test` 不是由命名空間限定時，會建立在命名空間外宣告的類型。 另請注意，若要存取 `Goodspace` 中的 `Test` 類型，則需要命名空間名稱。
 
 [!code-csharp[FxCop.Design.TestTypesLive#1](../code-quality/codesnippet/CSharp/ca1050-declare-types-in-namespaces_2.cs)]
 [!code-vb[FxCop.Design.TestTypesLive#1](../code-quality/codesnippet/VisualBasic/ca1050-declare-types-in-namespaces_2.vb)]

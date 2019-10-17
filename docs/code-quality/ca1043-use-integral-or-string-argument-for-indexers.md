@@ -1,5 +1,5 @@
 ---
-title: CA1043:必須針對索引子使用整數或字串引數
+title: CA1043：必須針對索引子使用整數類或字串引數
 ms.date: 03/11/2019
 ms.topic: reference
 f1_keywords:
@@ -18,31 +18,31 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 298c92263903c3799f1e7e184a554f896366566c
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 10424344abc52d4911b7caf60e02b03e6ed6e96f
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71235837"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72446630"
 ---
-# <a name="ca1043-use-integral-or-string-argument-for-indexers"></a>CA1043:必須針對索引子使用整數或字串引數
+# <a name="ca1043-use-integral-or-string-argument-for-indexers"></a>CA1043：必須針對索引子使用整數類或字串引數
 
 |||
 |-|-|
 |TypeName|UseIntegralOrStringArgumentForIndexers|
 |CheckId|CA1043|
-|分類|Microsoft.Design|
+|分類|Microsoft. Design|
 |重大變更|中斷|
 
 ## <a name="cause"></a>原因
 
-類型包含使用<xref:System.Int32?displayProperty=fullName>、 <xref:System.Int64?displayProperty=fullName>、 <xref:System.Object?displayProperty=fullName>或<xref:System.String?displayProperty=fullName>以外之索引類型的索引子。
+類型包含使用 <xref:System.Int32?displayProperty=fullName>、<xref:System.Int64?displayProperty=fullName>、<xref:System.Object?displayProperty=fullName> 或 <xref:System.String?displayProperty=fullName> 以外之索引類型的索引子。
 
 根據預設，此規則只會查看公用和受保護的類型，但這是[可](#configurability)設定的。
 
 ## <a name="rule-description"></a>規則描述
 
-索引子（也就是索引的屬性）應該使用整數或字串類型做為索引。 這些類型通常用於編制資料結構的索引，並增加程式庫的可用性。 在設計階段無法指定特定整數或字串類型的情況下，使用類型應該受到限制。<xref:System.Object> 如果設計需要其他類型的索引，請重新考慮類型是否代表邏輯資料存放區。 如果它不代表邏輯資料存放區，請使用方法。
+索引子（也就是索引的屬性）應該使用整數或字串類型做為索引。 這些類型通常用於編制資料結構的索引，並增加程式庫的可用性。 只有在設計階段無法指定特定整數或字串類型的情況下，才應限制使用 <xref:System.Object> 類型。 如果設計需要其他類型的索引，請重新考慮類型是否代表邏輯資料存放區。 如果它不代表邏輯資料存放區，請使用方法。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
 
@@ -64,7 +64,7 @@ dotnet_code_quality.ca1043.api_surface = private, internal
 
 ## <a name="example"></a>範例
 
-下列範例顯示使用<xref:System.Int32>索引的索引子。
+下列範例顯示使用 <xref:System.Int32> 索引的索引子。
 
 [!code-csharp[FxCop.Design.IntegralOrStringIndexers#1](../code-quality/codesnippet/CSharp/ca1043-use-integral-or-string-argument-for-indexers_1.cs)]
 [!code-cpp[FxCop.Design.IntegralOrStringIndexers#1](../code-quality/codesnippet/CPP/ca1043-use-integral-or-string-argument-for-indexers_1.cpp)]
@@ -72,5 +72,5 @@ dotnet_code_quality.ca1043.api_surface = private, internal
 
 ## <a name="related-rules"></a>相關規則
 
-- [CA1023索引子不應為多維度](../code-quality/ca1023-indexers-should-not-be-multidimensional.md)
-- [CA1024 建議適當時使用屬性](../code-quality/ca1024-use-properties-where-appropriate.md)
+- [CA1023：不應該使用多維索引子](../code-quality/ca1023-indexers-should-not-be-multidimensional.md)
+- [CA1024：建議在適當時使用屬性](../code-quality/ca1024-use-properties-where-appropriate.md)

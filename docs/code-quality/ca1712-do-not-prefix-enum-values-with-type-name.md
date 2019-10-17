@@ -1,5 +1,5 @@
 ---
-title: CA1712:不要使用類型名稱作為列舉值的前置字元
+title: CA1712：不要使用類型名稱做為列舉值的前置字元
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,20 +18,20 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b5966c9685bc4bbc5ba997f8acf47abbbfca1a2
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 9bf4d7d2ee0df2a6c5330fcfb8fe6bd168e318c9
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71234114"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72439404"
 ---
-# <a name="ca1712-do-not-prefix-enum-values-with-type-name"></a>CA1712:不要使用類型名稱作為列舉值的前置字元
+# <a name="ca1712-do-not-prefix-enum-values-with-type-name"></a>CA1712：不要使用類型名稱做為列舉值的前置字元
 
 |||
 |-|-|
 |TypeName|DoNotPrefixEnumValuesWithTypeName|
 |CheckId|CA1712|
-|分類|Microsoft.Naming|
+|分類|Microsoft. 命名|
 |重大變更|中斷|
 
 ## <a name="cause"></a>原因
@@ -56,12 +56,12 @@ ms.locfileid: "71234114"
 [!code-vb[FxCop.Naming.EnumValues#1](../code-quality/codesnippet/VisualBasic/ca1712-do-not-prefix-enum-values-with-type-name_1.vb)]
 
 ## <a name="related-rules"></a>相關規則
-[CA1711識別碼不應有不正確的尾碼](../code-quality/ca1711-identifiers-should-not-have-incorrect-suffix.md)
+[CA1711：識別項名稱不應該使用不正確的後置字元](../code-quality/ca1711-identifiers-should-not-have-incorrect-suffix.md)
 
-[CA1027 必須使用 FlagsAttribute 標記列舉](../code-quality/ca1027-mark-enums-with-flagsattribute.md)
+[CA1027：必須以 FlagsAttribute 標記列舉](../code-quality/ca1027-mark-enums-with-flagsattribute.md)
 
-[CA2217不要以 FlagsAttribute 標記列舉](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)
+[CA2217：不要以 FlagsAttribute 標記列舉](../code-quality/ca2217.md)
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - <xref:System.Enum?displayProperty=fullName>

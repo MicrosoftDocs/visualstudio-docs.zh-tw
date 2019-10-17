@@ -1,5 +1,5 @@
 ---
-title: CA1724:類型名稱不應該和命名空間相符
+title: CA1724：類型名稱不應該和命名空間相符
 ms.date: 09/28/2018
 ms.topic: reference
 f1_keywords:
@@ -14,20 +14,20 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3554a352cb1c32879397e91dba3ce53f31a14bd0
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 2e5ab83a73da6035df985b93294f850b5a49248f
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71233849"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72443443"
 ---
-# <a name="ca1724-type-names-should-not-match-namespaces"></a>CA1724:類型名稱不應與命名空間相符
+# <a name="ca1724-type-names-should-not-match-namespaces"></a>CA1724：類型名稱不應與命名空間相符
 
 |||
 |-|-|
 |TypeName|TypeNamesShouldNotMatchNamespaces|
 |CheckId|CA1724|
-|分類|Microsoft.Naming|
+|分類|Microsoft. 命名|
 |重大變更|中斷|
 
 ## <a name="cause"></a>原因

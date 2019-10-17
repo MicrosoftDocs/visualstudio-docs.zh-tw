@@ -1,5 +1,5 @@
 ---
-title: COM 和 ActiveX 進行偵錯 |Microsoft Docs
+title: COM 和 ActiveX 調試 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -21,27 +21,27 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b37522fec0438278f8cf063637132b146b3d3748
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 701a0096e89123fc9c5445805bb43777735c0924
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62563903"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72435924"
 ---
 # <a name="com-and-activex-debugging"></a>偵錯 COM 和 ActiveX
 本章節提供有關偵錯 COM 應用程式和 ActiveX 控制項的秘訣。
 
-## <a name="in-this-section"></a>本節內容
- [COM 伺服器和容器偵錯](../debugger/com-server-and-container-debugging.md)偵錯 COM 應用程式時，提及的特殊考量。 涉及的問題包含：在同一方案中使用兩個專案偵錯 COM 伺服器和容器 (Container)、跨處理序 (Process) 界限追蹤呼叫、設定回呼函式 (Callback Function) 的中斷點，以及逐步跨和進入容器和伺服器等的問題。
+## <a name="in-this-section"></a>本章節內容
+ [COM 伺服器和容器的調試](../debugger/com-server-and-container-debugging.md)提及在偵測 COM 應用程式時的特殊考慮。 涉及的問題包含：在同一方案中使用兩個專案偵錯 COM 伺服器和容器 (Container)、跨處理序 (Process) 界限追蹤呼叫、設定回呼函式 (Callback Function) 的中斷點，以及逐步跨和進入容器和伺服器等的問題。
 
- [如何：偵錯 ActiveX 控制項](../debugger/how-to-debug-an-activex-control.md)包含偵錯 ActiveX 控制項的相關資訊。 其中包括：指定偵錯工作階段的容器以查看您 ActiveX 控制項中的程式碼如何執行、偵錯資料繫結的 ActiveX 控制項、模擬特定的容器，以及逐步執行容器的程式碼。
+ [如何：對 ActiveX 控制項進行偵錯工具](../debugger/how-to-debug-an-activex-control.md)包含有關調試 ActiveX 控制項的資訊。 其中包括：指定偵錯工作階段的容器以查看您 ActiveX 控制項中的程式碼如何執行、偵錯資料繫結的 ActiveX 控制項、模擬特定的容器，以及逐步執行容器的程式碼。
 
- [COM 偵錯工具](../debugger/com-debugging-tools.md)列出檢視器和適用於偵錯 COM 應用程式的範例應用程式。
+ [COM 調試工具](../debugger/com-debugging-tools.md)列出檢視器和範例應用程式，在對您的 COM 應用程式進行調試時可能會很有用。
 
 ## <a name="related-sections"></a>相關章節
- [第一次查看偵錯工具](../debugger/debugger-feature-tour.md)提供較大的區段的 偵錯文件的連結。 這些資訊包括：偵錯工具的新功能、設定和準備、中斷點、例外狀況處理、編輯後繼續、Managed 程式碼的偵錯、Visual C++ 專案的偵錯、COM 和 ActiveX 的偵錯、DLL 偵錯、SQL 偵錯，以及使用者介面的參考。
+ [第一次查看偵錯工具](../debugger/debugger-feature-tour.md)提供調試檔之較大區段的連結。 資訊包括：偵錯工具的新功能、設定和準備、中斷點、處理例外狀況、編輯後繼續、偵測 managed 程式碼、 C++偵錯工具、偵錯工具和 ActiveX、偵錯工具、偵錯工具和使用者介面參考。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [偵錯工具安全性](../debugger/debugger-security.md)
 - [COM 簡介](/cpp/atl/introduction-to-com)

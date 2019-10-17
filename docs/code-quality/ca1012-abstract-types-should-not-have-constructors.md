@@ -1,5 +1,5 @@
 ---
-title: CA1012:抽象類型不應該有建構函式
+title: CA1012：抽象類型不應具有建構函式
 ms.date: 03/11/2019
 ms.topic: reference
 f1_keywords:
@@ -16,20 +16,20 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: ef4bff83b1921b3cf15b25aaf225645379478f38
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 6ba7a88e2167f5e67eb5cefe706bfc2cf1abfccd
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71236344"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72441659"
 ---
-# <a name="ca1012-abstract-types-should-not-have-constructors"></a>CA1012:抽象類型不應該有建構函式
+# <a name="ca1012-abstract-types-should-not-have-constructors"></a>CA1012：抽象類型不應具有建構函式
 
 |||
 |-|-|
 |TypeName|AbstractTypesShouldNotHaveConstructors|
 |CheckId|CA1012|
-|分類|Microsoft.Design|
+|分類|Microsoft. Design|
 |重大變更|不中斷|
 
 ## <a name="cause"></a>原因
@@ -67,7 +67,7 @@ dotnet_code_quality.ca1012.api_surface = private, internal
 [!code-vb[FxCop.Design.AbstractTypeBad#1](../code-quality/codesnippet/VisualBasic/ca1012-abstract-types-should-not-have-constructors_1.vb)]
 [!code-csharp[FxCop.Design.AbstractTypeBad#1](../code-quality/codesnippet/CSharp/ca1012-abstract-types-should-not-have-constructors_1.cs)]
 
-下列程式碼片段會藉由將函式的存取範圍從`public`變更為，來`protected`修正先前的違規。
+下列程式碼片段會藉由將函式的存取範圍從 `public` 變更為 `protected`，藉以修正先前的違規。
 
 [!code-csharp[FxCop.Design.AbstractTypeGood#1](../code-quality/codesnippet/CSharp/ca1012-abstract-types-should-not-have-constructors_2.cs)]
 [!code-vb[FxCop.Design.AbstractTypeGood#1](../code-quality/codesnippet/VisualBasic/ca1012-abstract-types-should-not-have-constructors_2.vb)]

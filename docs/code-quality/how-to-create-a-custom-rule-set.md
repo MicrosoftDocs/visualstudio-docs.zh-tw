@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b52bb573b9a98c5a797f67cdbd4608f8b8636da
-ms.sourcegitcommit: 39a04f42d23597b70053686d7e927ba78f38a9a8
+ms.openlocfilehash: 33d8d97a5d036a2bd931bfa951fea2715569830a
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/05/2019
-ms.locfileid: "71975092"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72448993"
 ---
 # <a name="customize-a-rule-set"></a>自訂規則集
 
@@ -51,7 +51,7 @@ ms.locfileid: "71975092"
 4. 選取 [**開啟**] 以在規則集編輯器中顯示規則。
 
 > [!NOTE]
-> 如果您有 .NET Core 或 .NET Standard 專案，則程式會有些不同，因為沒有 [程式**代碼分析**] 屬性索引標籤。遵循下列步驟，將[預先定義的規則集複製到您的專案，並將它設定為使用中的規則集](analyzer-rule-sets.md)。 複製規則集之後，您可以[在 Visual Studio 規則集編輯器中加以編輯](working-in-the-code-analysis-rule-set-editor.md)，方法是從**方案總管**開啟它。
+> 如果您有 .NET Core 或 .NET Standard 專案，則程式會有些不同，因為沒有 [程式**代碼分析**] 屬性索引標籤。請遵循下列步驟，將[預先定義的規則集複製到您的專案，並將它設定為使用中的規則集](analyzer-rule-sets.md)。 複製規則集之後，您可以[在 Visual Studio 規則集編輯器中加以編輯](working-in-the-code-analysis-rule-set-editor.md)，方法是從**方案總管**開啟它。
 
 ## <a name="create-a-new-rule-set"></a>建立新的規則集
 
@@ -111,7 +111,7 @@ ms.locfileid: "71975092"
 
 - 如果相同的規則在具有*相同*嚴重性的規則集內列出兩次以上，您可能會在**錯誤清單**中看到下列警告：
 
-   **CA0063：無法載入規則集檔案 ' \[your]。規則集 ' 或其相依規則集的其中一個。檔案不符合規則集架構。**
+   **CA0063：無法載入規則集檔案 ' \[your]。規則集 ' 或它的其中一個相依規則集檔案。檔案不符合規則集架構。**
 
 - 如果規則集包含使用**Include**標記設定的子規則，而子系和父規則集同時列出相同的規則，但具有不同的嚴重性，則會優先使用父系規則集的嚴重性。 例如:
 
@@ -145,7 +145,7 @@ ms.locfileid: "71975092"
 > [!div class="nextstepaction"]
 > [修改規則集編輯器中的規則](../code-quality/working-in-the-code-analysis-rule-set-editor.md)
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
-- [如何：設定受控碼專案的程式碼分析 @ no__t-0
+- [如何：設定 Managed 程式碼專案的程式碼分析](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md)
 - [程式碼分析規則集參考](../code-quality/rule-set-reference.md)
