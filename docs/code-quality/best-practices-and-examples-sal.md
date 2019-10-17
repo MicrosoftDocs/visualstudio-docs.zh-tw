@@ -7,12 +7,12 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - multiple
-ms.openlocfilehash: cd5e07f1e9ce83f36e6ecfbae148c84d18f40ff1
-ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
+ms.openlocfilehash: ccb18a704c2e8a2c185d3751483736631b0bba68
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72015947"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72448639"
 ---
 # <a name="best-practices-and-examples-sal"></a>最佳作法和範例 (SAL)
 以下是取得原始程式碼注釋語言（SAL）最大的一些方式，並避免一些常見的問題。
@@ -236,7 +236,7 @@ _Ret_maybenull_ void *MightReturnNullPtr2();
 
 在此範例中，`_Out_opt_` 表示指標可能是 Null，做為前置條件的一部分。 不過，前置條件無法套用至傳回值。 在此情況下，正確的注釋會 `_Ret_maybenull_`。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 [使用 SAL 註釋減少 C/C++ 程式碼的缺失](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)  
 [了解 SAL](../code-quality/understanding-sal.md)  
@@ -245,4 +245,4 @@ _Ret_maybenull_ void *MightReturnNullPtr2();
 [註釋結構和類別](../code-quality/annotating-structs-and-classes.md)  
 [註釋鎖定行為](../code-quality/annotating-locking-behavior.md)  
 [指定套用註釋的時機和位置](../code-quality/specifying-when-and-where-an-annotation-applies.md)  
-[內建函式](../code-quality/intrinsic-functions.md)  
+[內建函式](../code-quality/intrinsic-functions.md)

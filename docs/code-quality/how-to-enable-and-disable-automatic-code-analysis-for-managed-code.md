@@ -5,14 +5,14 @@ ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c00a66a856dccb0ccb488937b935d9150ffc0266
-ms.sourcegitcommit: 39a04f42d23597b70053686d7e927ba78f38a9a8
+ms.openlocfilehash: 656b36e6d0a90bb44eaa5745312f1a57e1ea3474
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/05/2019
-ms.locfileid: "71975085"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72448945"
 ---
-# <a name="how-to-enable-and-disable-binary-code-analysis-for-managed-code"></a>HOW TO：啟用和停用受控碼的二進位程式碼分析
+# <a name="how-to-enable-and-disable-binary-code-analysis-for-managed-code"></a>如何：啟用和停用受控碼的二進位程式碼分析
 
 您可以設定在每個 managed 程式碼專案組建之後執行舊版程式碼分析（二進位分析）。 您也可以針對每個組建設定（例如，[debug] 和 [發行]）提供不同的設定。
 

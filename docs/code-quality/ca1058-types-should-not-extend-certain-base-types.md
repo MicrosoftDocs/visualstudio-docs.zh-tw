@@ -1,5 +1,5 @@
 ---
-title: CA1058:類型不應該擴充特定基底類型
+title: CA1058：類型不應該擴充特定的基底類型
 ms.date: 03/11/2019
 ms.topic: reference
 f1_keywords:
@@ -14,20 +14,20 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fa1ffbb393700647f12c455c8d1307a77548f2d1
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 8bec913e5352c0028859f03ebda7c5f112db654f
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71235486"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72446553"
 ---
-# <a name="ca1058-types-should-not-extend-certain-base-types"></a>CA1058:類型不應該擴充特定基底類型
+# <a name="ca1058-types-should-not-extend-certain-base-types"></a>CA1058：類型不應該擴充特定的基底類型
 
 |||
 |-|-|
 |TypeName|TypesShouldNotExtendCertainBaseTypes|
 |CheckId|CA1058|
-|分類|Microsoft.Design|
+|分類|Microsoft. Design|
 |重大變更|中斷|
 
 ## <a name="cause"></a>原因
@@ -47,9 +47,9 @@ ms.locfileid: "71235486"
 
 ## <a name="rule-description"></a>規則描述
 
-例外狀況應該衍生<xref:System.Exception?displayProperty=fullName>自或其<xref:System>命名空間中的其中一個子類別。
+例外狀況應該衍生自 @no__t 1 命名空間中的 <xref:System.Exception?displayProperty=fullName> 或它的其中一個子類別。
 
-<xref:System.Xml.XmlDocument>如果您想要建立基礎物件模型或資料來源的 XML 視圖，請勿建立的子類別。
+如果您想要建立基礎物件模型或資料來源的 XML 視圖，請勿建立 <xref:System.Xml.XmlDocument> 的子類別。
 
 ### <a name="non-generic-collections"></a>非泛型集合
 
@@ -85,7 +85,7 @@ public class MyReadOnlyCollection : ReadOnlyCollection<T>
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
 
-請勿隱藏此規則中有關<xref:System.ApplicationException>的違規警告。 您可以放心地隱藏此規則中有關<xref:System.Xml.XmlDocument>違規的警告。 如果先前已發行程式碼，就可以放心地隱藏非泛型集合的相關警告。
+請勿隱藏此規則中有關 <xref:System.ApplicationException> 違規的警告。 請放心隱藏此規則中有關 <xref:System.Xml.XmlDocument> 違規的警告。 如果先前已發行程式碼，就可以放心地隱藏非泛型集合的相關警告。
 
 ## <a name="configurability"></a>可設定性
 

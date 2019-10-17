@@ -1,5 +1,5 @@
 ---
-title: CA1054:URI 參數不應該為字串
+title: CA1054：URI 參數不應該為字串
 ms.date: 03/11/2019
 ms.topic: reference
 f1_keywords:
@@ -18,35 +18,35 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 49788b900eb8aed9fac6e4da4844377bae67efbf
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 79ab405e6019dd93fdb9ffa89b5274f6f3d679e8
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71235563"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72446572"
 ---
-# <a name="ca1054-uri-parameters-should-not-be-strings"></a>CA1054:URI 參數不應該為字串
+# <a name="ca1054-uri-parameters-should-not-be-strings"></a>CA1054：URI 參數不應該為字串
 
 |||
 |-|-|
 |TypeName|UriParametersShouldNotBeStrings|
 |CheckId|CA1054|
-|分類|Microsoft.Design|
+|分類|Microsoft. Design|
 |重大變更|中斷|
 
 ## <a name="cause"></a>原因
 
-類型宣告了一個方法，其字串參數的名稱包含 "uri"、"uri"、"urn"、"urn"、"url" 或 "url"，而類型未宣告採用<xref:System.Uri?displayProperty=fullName>參數的對應多載。
+類型宣告了一個方法，其字串參數的名稱包含 "uri"、"Uri"、"urn"、"Urn"、"url" 或 "Url"，而類型未宣告採用 <xref:System.Uri?displayProperty=fullName> 參數的對應多載。
 
 根據預設，此規則只會查看外部可見的類型，但這是[可](#configurability)設定的。
 
 ## <a name="rule-description"></a>規則描述
 
-此規則會根據 camel 大小寫慣例，將參數名稱分割成權杖，並檢查每個權杖是否等於 "uri"、"Uri"、"urn"、"Urn"、"url" 或 "Url"。 如果相符，此規則會假設參數代表統一資源識別元（URI）。 URI 的字串表示方式容易發生剖析和編碼錯誤，並且可能因此產生安全性弱點。 如果方法接受 URI 的字串表示，則應提供對應的多載，以取得<xref:System.Uri>類別的實例，這會以安全且安全的方式提供這些服務。
+此規則會根據 camel 大小寫慣例，將參數名稱分割成權杖，並檢查每個權杖是否等於 "uri"、"Uri"、"urn"、"Urn"、"url" 或 "Url"。 如果相符，此規則會假設參數代表統一資源識別元（URI）。 URI 的字串表示方式容易發生剖析和編碼錯誤，並且可能因此產生安全性弱點。 如果方法接受 URI 的字串標記法，則應提供對應的多載，以接受 @no__t 0 類別的實例，這會以安全且安全的方式提供這些服務。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
 
-若要修正此規則的違規情形，請將參數變更<xref:System.Uri>為類型，這是一項重大變更。 或者，提供接受<xref:System.Uri>參數之方法的多載，這是不中斷的變更。
+若要修正此規則的違規，請將參數變更為 <xref:System.Uri> 類型;這是一種重大變更。 或者，提供接受 <xref:System.Uri> 參數之方法的多載;這是不中斷的變更。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
 
@@ -64,7 +64,7 @@ dotnet_code_quality.ca1054.api_surface = private, internal
 
 ## <a name="example"></a>範例
 
-下列範例顯示違反此規則的`ErrorProne`類型，以及符合規則的`SaferWay`類型。
+下列範例顯示違反此規則的類型 `ErrorProne`，以及符合規則的類型 `SaferWay`。
 
 [!code-csharp[FxCop.Design.UriNotString#1](../code-quality/codesnippet/CSharp/ca1054-uri-parameters-should-not-be-strings_1.cs)]
 [!code-vb[FxCop.Design.UriNotString#1](../code-quality/codesnippet/VisualBasic/ca1054-uri-parameters-should-not-be-strings_1.vb)]
@@ -72,7 +72,7 @@ dotnet_code_quality.ca1054.api_surface = private, internal
 
 ## <a name="related-rules"></a>相關規則
 
-- [CA1056URI 屬性不應為字串](../code-quality/ca1056-uri-properties-should-not-be-strings.md)
-- [CA1055URI 傳回值不應為字串](../code-quality/ca1055-uri-return-values-should-not-be-strings.md)
-- [CA2234 必須傳遞 System.object 物件，而不是字串](../code-quality/ca2234-pass-system-uri-objects-instead-of-strings.md)
-- [CA1057字串 URI 多載呼叫 System.object 多載](../code-quality/ca1057-string-uri-overloads-call-system-uri-overloads.md)
+- [CA1056：URI 屬性不應該為字串](../code-quality/ca1056-uri-properties-should-not-be-strings.md)
+- [CA1055：URI 傳回值不應該為字串](../code-quality/ca1055-uri-return-values-should-not-be-strings.md)
+- [CA2234：必須傳遞 System.Uri 物件而非字串](../code-quality/ca2234.md)
+- [CA1057：字串 URI 多載呼叫 System.Uri 多載](../code-quality/ca1057-string-uri-overloads-call-system-uri-overloads.md)

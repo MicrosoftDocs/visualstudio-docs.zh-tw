@@ -44,8 +44,6 @@
       items:
         - name: 使用中斷點
           href: using-breakpoints.md
-        - name: 使用追蹤點
-          href: using-tracepoints.md
         - name: 針對中斷點進行疑難排解
           href: troubleshooting-breakpoints.md
     - name: 資料檢查
@@ -138,6 +136,8 @@
               href: xaml-hot-reload-troubleshooting.md
         - name: 'F# 不支援編輯後繼續'
           href: edit-and-continue-not-supported-for-f-hash.md
+    - name: 紀錄到輸出視窗
+      href: using-tracepoints.md
     - name: 檢視偵錯工具資料
       items:
         - name: 模組
@@ -238,7 +238,7 @@
                   href: visual-cpp-custom-visualizer-compatibility.md
             - name: 自訂檢視 (受控)
               items:
-                - name: 建立物件的自訂檢視
+                - name: 建立受控物件的自訂檢視
                   href: create-custom-views-of-dot-managed-objects.md
                 - name: 告訴偵錯工具要顯示的項目
                   href: using-the-debuggerdisplay-attribute.md

@@ -7,16 +7,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5195d42783efc6e9aeb0230b29e801acaeef094a
-ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
+ms.openlocfilehash: bc18859e84262e9b2a40efde7ed9733fce701a6c
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "69585233"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72448828"
 ---
 # <a name="native-recommended-rules-rule-set"></a>原生建議規則規則集
 
-原生建議規則著重于機器碼中最重要的問題, 包括潛在的安全性漏洞和應用程式損毀。 此規則集包含「[原生最小規則](native-minimum-rules-rule-set.md)」規則集中的所有規則。
+原生建議規則著重于機器碼中最重要的問題，包括潛在的安全性漏洞和應用程式損毀。 此規則集包含「[原生最小規則](native-minimum-rules-rule-set.md)」規則集中的所有規則。
 
 將此規則集包含在您為原生專案建立的任何自訂規則集中。
 
@@ -74,7 +74,7 @@ ms.locfileid: "69585233"
 |[C6285](../code-quality/c6285.md)|常數的邏輯 Or|
 |[C6286](../code-quality/c6286.md)|非零的邏輯或遺失的副作用|
 |[C6287](../code-quality/c6287.md)|多餘的測試|
-|[C6288](../code-quality/c6288.md)|透過邏輯與的相互包含, 為 False|
+|[C6288](../code-quality/c6288.md)|透過邏輯與的相互包含，為 False|
 |[C6289](../code-quality/c6289.md)|透過邏輯 Or 進行相互排除的條件為 True|
 |[C6290](../code-quality/c6290.md)|邏輯 NOT 位元 AND 優先順序|
 |[C6291](../code-quality/c6291.md)|邏輯 NOT 位元 OR 優先順序|
@@ -96,7 +96,7 @@ ms.locfileid: "69585233"
 |[C6317](../code-quality/c6317.md)|不互補|
 |[C6318](../code-quality/c6318.md)|例外狀況繼續搜尋|
 |[C6319](../code-quality/c6319.md)|由逗號忽略|
-|[C6324](../code-quality/c6324.md)|字串複製, 而不是字串比較|
+|[C6324](../code-quality/c6324.md)|字串複製，而不是字串比較|
 |[C6328](../code-quality/c6328.md)|引數類型可能不符|
 |[C6331](../code-quality/c6331.md)|VirtualFree 不正確旗標|
 |[C6332](../code-quality/c6332.md)|VirtualFree 不正確參數|
@@ -127,7 +127,7 @@ ms.locfileid: "69585233"
 |[C6518](../code-quality/c6518.md)|不能寫入的緩衝區上的可寫入大小|
 |[C6522](../code-quality/c6522.md)|無效的大小字串類型|
 |[C6525](../code-quality/c6525.md)|無效的大小字串不可能執行到的位置|
-|[C6527](../code-quality/c6527.md)|不正確注釋:' NeedsRelease ' 屬性不可用於 void 類型的值|
+|[C6527](../code-quality/c6527.md)|無效的註釋：'NeedsRelease' 屬性不能用於 void 類型的值|
 |[C6530](../code-quality/c6530.md)|無法辨認的格式字串樣式|
 |[C6540](../code-quality/c6540.md)|在這個函式上使用屬性註釋會使其所有現有的 __declspec 註釋無效。|
 |[C6551](../code-quality/c6551.md)|無效的大小規格: 無法剖析運算式|
@@ -154,37 +154,37 @@ ms.locfileid: "69585233"
 |[C28020](../code-quality/c28020.md)|此呼叫的運算式不是 true|
 |[C28021](../code-quality/c28021.md)|所標註的參數必須是指標|
 |[C28022](../code-quality/c28022.md)|此函式上的函式類別不符合用來定義它的 typedef 上的函式類別。|
-|[C28023](../code-quality/c28023.md)|所指派或傳遞的函式應該至少\_有\_一個\_類別的函式類別注釋|
-|[C28024](../code-quality/c28024.md)|要指派給的函式指標會以函式類別標注, 而函式類別不包含在函式類別清單中。|
+|[C28023](../code-quality/c28023.md)|所指派或傳遞的函式應該至少有一個類別的 @no__t 0Function @ no__t-1class @ no__t-2 注釋|
+|[C28024](../code-quality/c28024.md)|要指派給的函式指標會以函式類別標注，而函式類別不包含在函式類別清單中。|
 |[C28039](../code-quality/c28039.md)|實際參數的類型應完全符合類型|
 |[C28112](../code-quality/c28112.md)|透過連鎖函式存取的變數必須一律透過連鎖函數存取。|
 |[C28113](../code-quality/c28113.md)|透過連鎖函式存取本機變數|
 |[C28125](../code-quality/c28125.md)|必須從 try/except 區塊內呼叫函式|
-|[C28137](../code-quality/c28137.md)|Variable 引數應該改為 (常值) 常數|
+|[C28137](../code-quality/c28137.md)|Variable 引數應該改為（常值）常數|
 |[C28138](../code-quality/c28138.md)|常數引數應該改為變數|
 |[C28159](../code-quality/c28159.md)|請考慮改用另一個函式。|
 |[C28160](../code-quality/c28160.md)|Error 註釋|
 |[C28163](../code-quality/c28163.md)|絕不能從 try/except 區塊內呼叫函式|
-|[C28164](../code-quality/c28164.md)|正在將引數傳遞至預期物件指標的函式 (不是指標指標)|
+|[C28164](../code-quality/c28164.md)|正在將引數傳遞至預期物件指標的函式（不是指標指標）|
 |[C28182](../code-quality/c28182.md)|取值的指標為 NULL。 指標所包含的 NULL 值與另一個指標相同。|
-|[C28183](../code-quality/c28183.md)|引數可以是一個值, 而是在指標中找到之值的複本。|
+|[C28183](../code-quality/c28183.md)|引數可以是一個值，而是在指標中找到之值的複本。|
 |[C28193](../code-quality/c28193.md)|變數包含必須檢查的值|
-|[C28196](../code-quality/c28196.md)|不滿足需求。 (運算式不會評估為 true)。|
+|[C28196](../code-quality/c28196.md)|不滿足需求。 （運算式不會評估為 true）。|
 |[C28202](../code-quality/c28202.md)|非靜態成員的參考不合法|
 |[C28203](../code-quality/c28203.md)|類別成員的參考模稜兩可。|
-|[C28205](../code-quality/c28205.md)|\_不\_合法的\_內容\_中所使用的成功或\_失敗|
+|[C28205](../code-quality/c28205.md)|\_Success @ no__t-1 或 \_On @ no__t-3failure @ no__t-4 用於不合法的內容中|
 |[C28206](../code-quality/c28206.md)|左運算元指向結構，請使用 '->'|
 |[C28207](../code-quality/c28207.md)|左運算元是結構，請使用 '.'|
 |[C28209](../code-quality/c28209.md)|符號的宣告具有衝突的宣告|
 |[C28210](../code-quality/c28210.md)|_On_failure_ 內容的註釋不能在明確 pre context 中|
 |[C28211](../code-quality/c28211.md)|SAL_context 需要靜態內容名稱|
 |[C28212](../code-quality/c28212.md)|註釋需要指標運算式|
-|[C28213](../code-quality/c28213.md)|[ \_使用\_extended-decl-modifier-seq\_注釋]注釋必須在先前的宣告中用來參考,而不需要修改。\_|
+|[C28213](../code-quality/c28213.md)|@No__t-0Use @ no__t-1decl @ no__t-2annotations @ no__t-3 注釋必須在先前的宣告中用來參考，而不需要修改。|
 |[C28214](../code-quality/c28214.md)|屬性參數名稱必須是 p1...p9|
 |[C28215](../code-quality/c28215.md)|typefix 不能套用到已經有 typefix 的參數|
 |[C28216](../code-quality/c28216.md)|checkReturn 註釋只適用於特定函式參數的後置條件。|
 |[C28217](../code-quality/c28217.md)|對於函式，註釋的參數數目不符合檔案中找到的參數數目|
-|[C28218](../code-quality/c28218.md)|針對函式參數, 注釋的參數不符合檔案中找到的|
+|[C28218](../code-quality/c28218.md)|針對函式參數，注釋的參數不符合檔案中找到的|
 |[C28219](../code-quality/c28219.md)|註釋中標註的參數需要列舉的成員|
 |[C28220](../code-quality/c28220.md)|註釋中標註的參數需要整數運算式|
 |[C28221](../code-quality/c28221.md)|註釋中的參數需要字串運算式|
@@ -222,7 +222,7 @@ ms.locfileid: "69585233"
 |[C28267](../code-quality/c28267.md)|在函式 (隸屬於註釋) 中找到註釋的語法錯誤。|
 |[C28272](../code-quality/c28272.md)|函式參數的註釋在檢查時，與函式宣告不一致|
 |[C28273](../code-quality/c28273.md)|對於函式，線索與函式宣告不一致|
-|[C28275](../code-quality/c28275.md)|\_宏\_值的\_參數為 null|
+|[C28275](../code-quality/c28275.md)|@No__t-0Macro @ no__t-1value @ no__t-2 的參數為 null|
 |[C28279](../code-quality/c28279.md)|找到符號的 'begin'，但沒有相符的 'end'|
 |[C28280](../code-quality/c28280.md)|找到符號的 'end'，但沒有相符的 'begin'|
 |[C28282](../code-quality/c28282.md)|格式字串必須在前置條件中|
@@ -230,7 +230,7 @@ ms.locfileid: "69585233"
 |[C28286](../code-quality/c28286.md)|對於函式，結尾附近發生語法錯誤|
 |[C28287](../code-quality/c28287.md)|函式的 \_At\_() 註釋中有語法錯誤 (無法辨認的參數名稱)|
 |[C28288](../code-quality/c28288.md)|函式的 \_At\_() 註釋中有語法錯誤 (無效的參數名稱)|
-|[C28289](../code-quality/c28289.md)|For function:ReadableTo 或 Writableto 有限沒有做為參數的限制規格|
+|[C28289](../code-quality/c28289.md)|對於函式：ReadableTo 或 WritableTo 沒有有限的規格做為參數|
 |[C28290](../code-quality/c28290.md)|函式的註釋包含比實際參數數目還多的外部|
 |[C28291](../code-quality/c28291.md)|位於 deref 層級 0 的 post null/notnull 對函式是無意義的。|
 |[C28300](../code-quality/c28300.md)|運算子的運算式運算元類型不相容|

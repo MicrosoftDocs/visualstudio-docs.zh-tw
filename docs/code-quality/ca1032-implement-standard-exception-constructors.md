@@ -1,5 +1,5 @@
 ---
-title: CA1032:必須實作標準例外狀況建構函式
+title: CA1032：必須實作標準例外狀況建構函式
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,25 +14,25 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 06fdc566abd9bd16758f224f8a9fe805cddb2c61
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: a73a615c08b538f4580a8d40765dcd7603722aa1
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71236053"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72446715"
 ---
-# <a name="ca1032-implement-standard-exception-constructors"></a>CA1032:必須實作標準例外狀況建構函式
+# <a name="ca1032-implement-standard-exception-constructors"></a>CA1032：必須實作標準例外狀況建構函式
 
 |||
 |-|-|
 |TypeName|ImplementStandardExceptionConstructors|
 |CheckId|CA1032|
-|分類|Microsoft.Design|
+|分類|Microsoft. Design|
 |重大變更|不中斷|
 
 ## <a name="cause"></a>原因
 
-型別會<xref:System.Exception?displayProperty=fullName>擴充，但不會宣告所有必要的函式。
+型別會擴充 <xref:System.Exception?displayProperty=fullName>，但不會宣告所有必要的函式。
 
 ## <a name="rule-description"></a>規則描述
 
@@ -48,9 +48,9 @@ ms.locfileid: "71236053"
 
 - protected 或 private NewException （SerializationInfo，StreamingCoNtext）
 
-無法提供整組的建構函式會導致難以正確地處理例外狀況。 例如，具有`NewException(string, Exception)`簽章的函式會用來建立其他例外狀況所造成的例外狀況。 如果沒有這個函式，您就無法建立和擲回自訂例外狀況的實例，其中包含內部（嵌套）例外狀況，這是 managed 程式碼在這種情況下應該執行的動作。
+無法提供整組的建構函式會導致難以正確地處理例外狀況。 例如，具有簽章 `NewException(string, Exception)` 的函式會用來建立其他例外狀況所造成的例外狀況。 如果沒有這個函式，您就無法建立和擲回自訂例外狀況的實例，其中包含內部（嵌套）例外狀況，這是 managed 程式碼在這種情況下應該執行的動作。
 
-前三個例外狀況的函式會依照慣例公開。 第四個函式會在未密封的類別中受到保護，並在密封類別中進行私用 如需詳細資訊， [請參閱 CA2229：執行序列化](../code-quality/ca2229-implement-serialization-constructors.md)的函式。
+前三個例外狀況的函式會依照慣例公開。 第四個函式會在未密封的類別中受到保護，並在密封類別中進行私用 如需詳細資訊，請參閱[CA2229：執行序列化](../code-quality/ca2229.md)程式。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
 
@@ -58,7 +58,7 @@ ms.locfileid: "71236053"
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
 
-當違規是針對公用的函式使用不同的存取層級所造成時，可以安全地隱藏此規則的警告。 此外，如果您要建立可移植的類別庫`NewException(SerializationInfo, StreamingContext)` （PCL），可以隱藏此函式的警告。
+當違規是針對公用的函式使用不同的存取層級所造成時，可以安全地隱藏此規則的警告。 此外，如果您要建立可移植的類別庫（PCL），可以隱藏 `NewException(SerializationInfo, StreamingContext)` 的函式的警告。
 
 ## <a name="example"></a>範例
 
@@ -66,6 +66,6 @@ ms.locfileid: "71236053"
 
 [!code-csharp[FxCop.Design.ExceptionMultipleCtors#1](../code-quality/codesnippet/CSharp/ca1032-implement-standard-exception-constructors_1.cs)]
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
-[CA2229：必須實作序列化建構函式](../code-quality/ca2229-implement-serialization-constructors.md)
+[CA2229：必須實作序列化建構函式](../code-quality/ca2229.md)

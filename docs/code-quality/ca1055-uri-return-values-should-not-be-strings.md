@@ -1,5 +1,5 @@
 ---
-title: CA1055:URI 傳回值不應該為字串
+title: CA1055：URI 傳回值不應該為字串
 ms.date: 03/11/2019
 ms.topic: reference
 f1_keywords:
@@ -18,20 +18,20 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c0a03f68ed15e790ea8a43a9ae2b476dd2f6f5d
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 41099f0803d6432736e051a1a6ef61c7a6e85160
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71235538"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72446592"
 ---
-# <a name="ca1055-uri-return-values-should-not-be-strings"></a>CA1055:URI 傳回值不應該為字串
+# <a name="ca1055-uri-return-values-should-not-be-strings"></a>CA1055：URI 傳回值不應該為字串
 
 |||
 |-|-|
 |TypeName|UriReturnValuesShouldNotBeStrings|
 |CheckId|CA1055|
-|分類|Microsoft.Design|
+|分類|Microsoft. Design|
 |重大變更|中斷|
 
 ## <a name="cause"></a>原因
@@ -42,11 +42,11 @@ ms.locfileid: "71235538"
 
 ## <a name="rule-description"></a>規則描述
 
-此規則會根據 Pascal 大小寫慣例，將方法名稱分割成權杖，並檢查每個權杖是否等於 "uri"、"Uri"、"urn"、"Urn"、"url" 或 "Url"。 如果相符，此規則會假設方法會傳回統一資源識別元（URI）。 URI 的字串表示方式容易發生剖析和編碼錯誤，並且可能因此產生安全性弱點。 <xref:System.Uri?displayProperty=fullName>類別以安全且安全的方式提供這些服務。
+此規則會根據 Pascal 大小寫慣例，將方法名稱分割成權杖，並檢查每個權杖是否等於 "uri"、"Uri"、"urn"、"Urn"、"url" 或 "Url"。 如果相符，此規則會假設方法會傳回統一資源識別元（URI）。 URI 的字串表示方式容易發生剖析和編碼錯誤，並且可能因此產生安全性弱點。 @No__t 0 類別以安全且安全的方式提供這些服務。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
 
-若要修正此規則的違規情形，請將傳回型別<xref:System.Uri>變更為。
+若要修正此規則的違規情形，請將傳回類型變更為 <xref:System.Uri>。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
 
@@ -64,7 +64,7 @@ dotnet_code_quality.ca1055.api_surface = private, internal
 
 ## <a name="example"></a>範例
 
-下列範例顯示違反此規則的`ErrorProne`類型，以及符合規則的`SaferWay`類型。
+下列範例顯示違反此規則的類型 `ErrorProne`，以及符合規則的類型 `SaferWay`。
 
 [!code-csharp[FxCop.Design.UriNotString#1](../code-quality/codesnippet/CSharp/ca1055-uri-return-values-should-not-be-strings_1.cs)]
 [!code-vb[FxCop.Design.UriNotString#1](../code-quality/codesnippet/VisualBasic/ca1055-uri-return-values-should-not-be-strings_1.vb)]
@@ -72,7 +72,7 @@ dotnet_code_quality.ca1055.api_surface = private, internal
 
 ## <a name="related-rules"></a>相關規則
 
-- [CA1056URI 屬性不應為字串](../code-quality/ca1056-uri-properties-should-not-be-strings.md)
-- [CA1054URI 參數不應為字串](../code-quality/ca1054-uri-parameters-should-not-be-strings.md)
-- [CA2234 必須傳遞 System.object 物件，而不是字串](../code-quality/ca2234-pass-system-uri-objects-instead-of-strings.md)
-- [CA1057字串 URI 多載呼叫 System.object 多載](../code-quality/ca1057-string-uri-overloads-call-system-uri-overloads.md)
+- [CA1056：URI 屬性不應該為字串](../code-quality/ca1056-uri-properties-should-not-be-strings.md)
+- [CA1054：URI 參數不應該為字串](../code-quality/ca1054-uri-parameters-should-not-be-strings.md)
+- [CA2234：必須傳遞 System.Uri 物件而非字串](../code-quality/ca2234.md)
+- [CA1057：字串 URI 多載呼叫 System.Uri 多載](../code-quality/ca1057-string-uri-overloads-call-system-uri-overloads.md)

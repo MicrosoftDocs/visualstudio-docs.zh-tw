@@ -1,5 +1,5 @@
 ---
-title: CA1006：不要在成員簽章中將泛型類型巢狀化
+title: CA1006：不要在成員簽章中巢狀化泛型類型
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,20 +17,20 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 45ff4831875150df02d04553e75cebcab9a9f572
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 8e69a32e7215e9609d1e1cb2c23572997b11a7fc
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71236512"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72446899"
 ---
-# <a name="ca1006-do-not-nest-generic-types-in-member-signatures"></a>CA1006：不要在成員簽章中將泛型類型巢狀化
+# <a name="ca1006-do-not-nest-generic-types-in-member-signatures"></a>CA1006：不要在成員簽章中巢狀化泛型類型
 
 |||
 |-|-|
 |TypeName|DoNotNestGenericTypesInMemberSignatures|
 |CheckId|CA1006|
-|分類|Microsoft.Design|
+|分類|Microsoft. Design|
 |重大變更|中斷|
 
 ## <a name="cause"></a>原因
@@ -52,19 +52,19 @@ ms.locfileid: "71236512"
 [!code-csharp[FxCop.Design.NestedGenerics#1](../code-quality/codesnippet/CSharp/ca1006-do-not-nest-generic-types-in-member-signatures_1.cs)]
 
 ## <a name="related-rules"></a>相關規則
-[CA1005避免在泛型型別上有過多參數](../code-quality/ca1005-avoid-excessive-parameters-on-generic-types.md)
+[CA1005：避免在泛型型別上包含過多參數](../code-quality/ca1005-avoid-excessive-parameters-on-generic-types.md)
 
-[CA1010集合應執行泛型介面](../code-quality/ca1010-collections-should-implement-generic-interface.md)
+[CA1010：集合應該實作泛型介面](../code-quality/ca1010-collections-should-implement-generic-interface.md)
 
-[CA1000不要在泛型型別上宣告靜態成員](../code-quality/ca1000-do-not-declare-static-members-on-generic-types.md)
+[CA1000：不要在泛型型別上宣告靜態成員](../code-quality/ca1000-do-not-declare-static-members-on-generic-types.md)
 
-[CA1002不要公開泛型清單](../code-quality/ca1002-do-not-expose-generic-lists.md)
+[CA1002：不要公開泛型清單](../code-quality/ca1002-do-not-expose-generic-lists.md)
 
-[CA1004泛型方法應該提供類型參數](../code-quality/ca1004-generic-methods-should-provide-type-parameter.md)
+[CA1004：泛型方法應該提供類型參數](../code-quality/ca1004-generic-methods-should-provide-type-parameter.md)
 
-[CA1003 必須使用一般事件處理常式實例](../code-quality/ca1003-use-generic-event-handler-instances.md)
+[CA1003：必須使用一般事件處理常式執行個體](../code-quality/ca1003-use-generic-event-handler-instances.md)
 
-[CA1007 建議適當時使用泛型](../code-quality/ca1007-use-generics-where-appropriate.md)
+[CA1007：建議在適當時使用泛型](../code-quality/ca1007-use-generics-where-appropriate.md)
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 [泛型](/dotnet/csharp/programming-guide/generics/index)
