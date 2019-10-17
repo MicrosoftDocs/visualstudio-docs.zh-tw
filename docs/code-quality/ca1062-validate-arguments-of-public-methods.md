@@ -1,5 +1,5 @@
 ---
-title: CA1062:必須驗證公用方法的引數
+title: CA1062：驗證公用方法的引數
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,35 +17,35 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 8106a4c0244cbd79e88a2bdc50e04ea74627dab4
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 6019956d37d420b72275223148c2a3468a820884
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71235342"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72440715"
 ---
-# <a name="ca1062-validate-arguments-of-public-methods"></a>CA1062:必須驗證公用方法的引數
+# <a name="ca1062-validate-arguments-of-public-methods"></a>CA1062：驗證公用方法的引數
 
 |||
 |-|-|
 |TypeName|ValidateArgumentsOfPublicMethods|
 |CheckId|CA1062|
-|分類|Microsoft.Design|
+|分類|Microsoft. Design|
 |重大變更|不中斷|
 
 ## <a name="cause"></a>原因
 
-外部可見的方法會對其中一個參考引數取值，而不會`null`驗證`Nothing`該引數是否為（在 Visual Basic 中）。
+外部可見的方法會對其中一個參考引數取值，而不會驗證該引數是否 `null` （Visual Basic 中的 `Nothing`）。
 
 ## <a name="rule-description"></a>規則描述
 
-所有傳遞至外部可見方法的參考引數都應該針對`null`進行檢查。 如果適當的話， <xref:System.ArgumentNullException>當引數為時，會`null`擲回。
+所有傳遞至外部可見方法的參考引數都應該針對 `null` 進行檢查。 如果適當的話，當引數 `null` 時，就會擲回 <xref:System.ArgumentNullException>。
 
-如果方法可以從未知的元件呼叫，因為它是宣告為公用或受保護的，您應該驗證該方法的所有參數。 如果方法設計成隻由已知元件呼叫，您應該將方法設為內部，並將<xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute>屬性套用至包含方法的元件。
+如果方法可以從未知的元件呼叫，因為它是宣告為公用或受保護的，您應該驗證該方法的所有參數。 如果方法設計成隻由已知元件呼叫，您應該將方法設為內部，並將 <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> 屬性套用至包含方法的元件。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
 
-若要修正此規則的違規情形，請針對`null`每個參考引數進行驗證。
+若要修正此規則的違規，請對 `null` 驗證每個參考引數。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
 
@@ -76,7 +76,7 @@ namespace DesignLibrary
         {
             if (input == null)
             {
-                throw new ArgumentNullException("input");
+                throw new ArgumentNullException(nameof(input));
             }
             if (input.Length != 0)
             {
@@ -107,7 +107,7 @@ Namespace DesignLibrary
         Sub Validate(ByVal input As String)
 
             If input Is Nothing Then
-                Throw New ArgumentNullException("input")
+                Throw New ArgumentNullException(NameOf(input))
             End If
 
             If input.Length <> 0 Then
@@ -123,9 +123,9 @@ End Namespace
 
 ## <a name="example"></a>範例
 
-填入屬於參考物件之欄位或屬性的複製函式，也可能違反 CA1062 規則。 發生違規的原因是，傳遞至複製的函式的複製物件可能`null`是`Nothing` （在 Visual Basic 中）。 若要解決違規，請使用靜態（在 Visual Basic 中為 Shared）方法來檢查複製的物件是否不是 null。
+填入屬於參考物件之欄位或屬性的複製函式，也可能違反 CA1062 規則。 發生違規的原因是，傳遞至複製的函式的複製物件可能 `null` （Visual Basic 中 `Nothing`）。 若要解決違規，請使用靜態（在 Visual Basic 中為 Shared）方法來檢查複製的物件是否不是 null。
 
-在下列`Person`類別範例中`other` ，傳遞至`Person`複製函數的物件可能是`null`。
+在下列 `Person` 類別範例中，傳遞至 @no__t 2 複製的函式的 `other` 物件可能會 `null`。
 
 ```csharp
 public class Person
@@ -150,7 +150,7 @@ public class Person
 
 ## <a name="example"></a>範例
 
-在下列已修改`Person`的範例中`other` ，會先在`PassThroughNonNull`方法中檢查傳遞至複製檢查程式的物件是否為 null。
+在下列修訂的 `Person` 範例中，會先檢查傳遞至複製檢查程式的 `other` 物件是否為 @no__t 2 方法中的 null。
 
 ```csharp
 public class Person
@@ -175,7 +175,7 @@ public class Person
     private static Person PassThroughNonNull(Person person)
     {
         if (person == null)
-            throw new ArgumentNullException("person");
+            throw new ArgumentNullException(nameof(person));
         return person;
     }
 }

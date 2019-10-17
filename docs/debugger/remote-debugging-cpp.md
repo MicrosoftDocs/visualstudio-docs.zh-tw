@@ -1,5 +1,5 @@
 ---
-title: 遠端 Debug a Visual C++專案 |Microsoft Docs
+title: 遠端 Debug C++專案 |Microsoft Docs
 ms.custom: remotedebugging
 ms.date: 08/14/2018
 ms.topic: conceptual
@@ -17,14 +17,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 81a5ebba2d14a0e091b3b0bcd78a066ef50ed759
-ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.openlocfilehash: 2b9cd6f120d5699464c9e7311721898a727bf47e
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71211106"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72450433"
 ---
-# <a name="remote-debugging-a-visual-c-project-in-visual-studio"></a>在 Visual Studio 中遠端C++調試視覺化專案
+# <a name="remote-debugging-a-c-project-in-visual-studio"></a>在 Visual Studio 中C++遠端偵錯專案
 若要在不同的電腦上進行 Visual Studio 應用程式的偵測，請在您要部署應用程式的電腦上安裝並執行遠端工具、將專案設定為從 Visual Studio 連接到遠端電腦，然後部署並執行您的應用程式。
 
 ![遠端偵錯程式元件](../debugger/media/remote-debugger-client-apps.png "Remote_debugger_components")
@@ -52,7 +52,7 @@ ms.locfileid: "71211106"
 > [!NOTE]
 > 如果您需要為其他使用者新增許可權，請變更遠端偵錯程式的驗證模式或埠號碼，請參閱[設定遠端偵錯程式](../debugger/remote-debugging.md#configure_msvsmon)。
 
-## <a name="remote_cplusplus"></a> 遠端對 Visual C++ 專案進行偵錯
+## <a name="remote_cplusplus"></a>遠端 debug C++專案
  在下列程式中，專案的名稱和路徑是 C:\remotetemp\MyMfc，而遠端電腦的名稱是**MJO-DL**。
 
 1. 建立名為 **mymfc** 的 MFC 應用程式。
@@ -106,7 +106,7 @@ ms.locfileid: "71211106"
 
 [!INCLUDE [remote-debugger-symbols](../debugger/includes/remote-debugger-symbols.md)]
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [Visual Studio 偵錯](../debugger/index.yml)
 - [偵錯工具簡介](../debugger/debugger-feature-tour.md)
 - [設定 Windows 防火牆進行遠端偵錯](../debugger/configure-the-windows-firewall-for-remote-debugging.md)

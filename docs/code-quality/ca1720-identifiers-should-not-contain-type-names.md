@@ -1,5 +1,5 @@
 ---
-title: CA1720:識別項名稱不應該包含類型名稱
+title: CA1720：識別項不應包含類型名稱
 ms.date: 03/11/2019
 ms.topic: reference
 f1_keywords:
@@ -14,20 +14,20 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a2677c2ef5342b795bb684f3ab06bc7cf5195cf7
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 64fd1aee2a778c72a81f82a0d435ce37d408c9a5
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71233887"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72443796"
 ---
-# <a name="ca1720-identifiers-should-not-contain-type-names"></a>CA1720:識別項名稱不應該包含類型名稱
+# <a name="ca1720-identifiers-should-not-contain-type-names"></a>CA1720：識別項不應包含類型名稱
 
 |||
 |-|-|
 |TypeName|IdentifiersShouldNotContainTypeNames|
 |CheckId|CA1720|
-|分類|Microsoft.Naming|
+|分類|Microsoft. 命名|
 |重大變更|中斷|
 
 ## <a name="cause"></a>原因
@@ -42,7 +42,7 @@ ms.locfileid: "71233887"
 
 ## <a name="rule-description"></a>規則描述
 
-參數和成員的名稱更適合用來傳達其意義，而不是描述其類型，這是開發工具應提供的。 對於成員的名稱，如果必須使用資料類型名稱，請使用與語言無關的名稱，而不是特定語言的名稱。 例如，而不是C#類型名稱`int`，請使用與語言無關的`Int32`資料類型名稱。
+參數和成員的名稱更適合用來傳達其意義，而不是描述其類型，這是開發工具應提供的。 對於成員的名稱，如果必須使用資料類型名稱，請使用與語言無關的名稱，而不是特定語言的名稱。 例如，而不是C#類型名稱 `int`，請使用與語言無關的資料類型名稱，`Int32`。
 
 參數或成員名稱中的每個離散 token，會以不區分大小寫的方式，針對下列語言特定的資料類型名稱進行檢查：
 
@@ -89,7 +89,7 @@ ms.locfileid: "71233887"
 - Single
 - Double
 - Decimal
-- Guid
+- GUID
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
 
@@ -117,7 +117,7 @@ dotnet_code_quality.ca1720.api_surface = private, internal
 
 ## <a name="related-rules"></a>相關規則
 
-- [CA1709識別碼的大小寫應該正確](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
-- [CA1708識別碼應該不同于大小寫](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
-- [CA1707識別碼不應包含底線](../code-quality/ca1707-identifiers-should-not-contain-underscores.md)
-- [CA1719參數名稱不應與成員名稱相符](../code-quality/ca1719-parameter-names-should-not-match-member-names.md)
+- [CA1709：識別項名稱應該使用正確的大小寫](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
+- [CA1708：識別項名稱不應該只靠大小寫區別](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
+- [CA1707：識別項名稱不應該包含底線](../code-quality/ca1707-identifiers-should-not-contain-underscores.md)
+- [CA1719：參數名稱不應該和成員名稱相符](../code-quality/ca1719-parameter-names-should-not-match-member-names.md)

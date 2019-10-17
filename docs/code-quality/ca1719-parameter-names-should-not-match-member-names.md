@@ -1,5 +1,5 @@
 ---
-title: CA1719:參數名稱不應該和成員名稱相符
+title: CA1719：參數名稱不應符合成員名稱
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,20 +14,20 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2aa55993758df24346b78eb4d9ad022014d9d81c
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 86e9fe7b06f16474376d3cc672607bb2ef54746a
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71233979"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72438972"
 ---
-# <a name="ca1719-parameter-names-should-not-match-member-names"></a>CA1719:參數名稱不應該和成員名稱相符
+# <a name="ca1719-parameter-names-should-not-match-member-names"></a>CA1719：參數名稱不應符合成員名稱
 
 |||
 |-|-|
 |TypeName|ParameterNamesShouldNotMatchMemberNames|
 |CheckId|CA1719|
-|分類|Microsoft.Naming|
+|分類|Microsoft. 命名|
 |重大變更|中斷|
 
 ## <a name="cause"></a>原因
@@ -43,8 +43,8 @@ ms.locfileid: "71233979"
 針對新的開發，在您必須隱藏此規則的警告的情況下，不會發生任何已知的狀況。 針對運送媒體櫃，您可能必須隱藏此規則的警告。
 
 ## <a name="related-rules"></a>相關規則
-[CA1709識別碼的大小寫應該正確](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
+[CA1709：識別項名稱應該使用正確的大小寫](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
 
-[CA1708識別碼應該不同于大小寫](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
+[CA1708：識別項名稱不應該只靠大小寫區別](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
 
-[CA1707識別碼不應包含底線](../code-quality/ca1707-identifiers-should-not-contain-underscores.md)
+[CA1707：識別項名稱不應該包含底線](../code-quality/ca1707-identifiers-should-not-contain-underscores.md)

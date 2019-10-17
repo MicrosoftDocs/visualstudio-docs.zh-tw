@@ -1,5 +1,5 @@
 ---
-title: 作法：使用原生執行時間檢查 |Microsoft Docs
+title: 如何：使用原生執行時間檢查 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -37,15 +37,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: aeebdd8a86cb8ca6ffc1358a8558654d1e4d0b92
-ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.openlocfilehash: 3cef755721a9c5b917b080fa10f1819055a18ed7
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71211036"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72430563"
 ---
-# <a name="how-to-use-native-run-time-checks"></a>作法：使用原生執行階段檢查
-您可以在 Visual C++ 中使用原生 [runtime_checks](/cpp/preprocessor/runtime-checks) 來攔截最常見的執行階段錯誤，例如：
+# <a name="how-to-use-native-run-time-checks"></a>如何：使用原生執行階段檢查
+在 Visual Studio C++專案中，您可以使用原生[runtime_checks](/cpp/preprocessor/runtime-checks)來攔截常見的執行階段錯誤，例如：
 
 - 堆疊指標損壞
 
@@ -77,7 +77,7 @@ ms.locfileid: "71211036"
 
 - 使用 `runtime_checks` Pragma。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [Visual Studio 偵錯](../debugger/index.yml)
 - [偵錯工具簡介](../debugger/debugger-feature-tour.md)
 - [runtime_checks](/cpp/preprocessor/runtime-checks)

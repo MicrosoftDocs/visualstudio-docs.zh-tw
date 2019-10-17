@@ -1,5 +1,5 @@
 ---
-title: CA1715:識別項名稱應該使用正確的前置字元
+title: CA1715：識別項名稱應該使用正確的前置字元
 ms.date: 03/11/2019
 ms.topic: reference
 f1_keywords:
@@ -18,20 +18,20 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 7323fd044675eda2f528788ffc40943d071bf12b
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 875e0b4052cdc7287b264899620d4e083ac6b153
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71234069"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72443868"
 ---
-# <a name="ca1715-identifiers-should-have-correct-prefix"></a>CA1715:識別項名稱應該使用正確的前置字元
+# <a name="ca1715-identifiers-should-have-correct-prefix"></a>CA1715：識別項名稱應該使用正確的前置字元
 
 |||
 |-|-|
 |TypeName|IdentifiersShouldHaveCorrectPrefix|
 |CheckId|CA1715|
-|分類|Microsoft.Naming|
+|分類|Microsoft. 命名|
 |重大變更|中斷-在介面上引發。<br /><br /> 不中斷-在泛型型別參數上引發時。|
 
 ## <a name="cause"></a>原因
@@ -71,7 +71,7 @@ dotnet_code_quality.CA2007.allow_single_letter_type_parameters = true
 ```
 
 > [!NOTE]
-> 此規則永遠不會針對名`T`為的型別參數引發， `Collection<T>`例如。
+> 此規則永遠不會針對名為 `T` 的類型參數引發，例如 `Collection<T>`。
 
 ### <a name="api-surface"></a>API 介面
 
@@ -121,4 +121,4 @@ dotnet_code_quality.ca1715.api_surface = private, internal
 
 ## <a name="related-rules"></a>相關規則
 
-- [CA1722識別碼不應有不正確的前置詞](../code-quality/ca1722-identifiers-should-not-have-incorrect-prefix.md)
+- [CA1722：識別項名稱不應該使用不正確的前置字元](../code-quality/ca1722-identifiers-should-not-have-incorrect-prefix.md)

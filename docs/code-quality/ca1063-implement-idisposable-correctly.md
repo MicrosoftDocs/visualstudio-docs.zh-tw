@@ -1,5 +1,5 @@
 ---
-title: CA1063:必須正確實作 IDisposable
+title: CA1063：必須正確實作 IDisposable
 ms.date: 03/11/2019
 ms.topic: reference
 f1_keywords:
@@ -16,55 +16,55 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 8b29c9ed644c223488261333e79f17229bd4b7a3
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 0fd4ba8d5dd5568dc7fca50ed61739b490bdcba7
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71235292"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72440610"
 ---
-# <a name="ca1063-implement-idisposable-correctly"></a>CA1063:必須正確實作 IDisposable
+# <a name="ca1063-implement-idisposable-correctly"></a>CA1063：必須正確實作 IDisposable
 
 |||
 |-|-|
 |TypeName|ImplementIDisposableCorrectly|
 |CheckId|CA1063|
-|分類|Microsoft.Design|
+|分類|Microsoft. Design|
 |重大變更|不中斷|
 
 ## <a name="cause"></a>原因
 
-<xref:System.IDisposable?displayProperty=nameWithType>介面未正確執行。 可能的原因包括：
+未正確執行 <xref:System.IDisposable?displayProperty=nameWithType> 介面。 可能的原因包括：
 
-- <xref:System.IDisposable>在類別中根據重新實作。
+- <xref:System.IDisposable> 會在類別中根據重新實作。
 
-- `Finalize`會再次覆寫。
+- `Finalize` 會再次遭到覆寫。
 
-- `Dispose()`已覆寫。
+- `Dispose()` 會遭到覆寫。
 
-- 方法不是公用、[密封](/dotnet/csharp/language-reference/keywords/sealed)或名為**Dispose。** `Dispose()`
+- @No__t-0 方法不是公用、[密封](/dotnet/csharp/language-reference/keywords/sealed)或名為**Dispose**。
 
-- `Dispose(bool)`未受保護、虛擬或未密封。
+- `Dispose(bool)` 未受保護、虛擬或未密封。
 
-- 在未密封的`Dispose()`類型中`Dispose(true)`，必須呼叫。
+- 在未密封的類型中，`Dispose()` 必須呼叫 `Dispose(true)`。
 
-- 針對未密封的類型`Finalize` ，此實作為不會呼叫`Dispose(bool)`或兩者或基類完成項。
+- 若為未密封的類型，@no__t 0 的實作用不會呼叫或兩者都是 `Dispose(bool)` 或基類完成項。
 
 違反任何一種模式會觸發警告 CA1063 必須。
 
-宣告和<xref:System.IDisposable>執行介面的每個未密封型別都必須`protected virtual void Dispose(bool)`提供自己的方法。 `Dispose()`應該呼叫`Dispose(true)`，而完成項應該呼叫`Dispose(false)`。 如果您建立宣告和<xref:System.IDisposable>執行介面的未密封型別，則必須定義`Dispose(bool)`並呼叫它。 如需詳細資訊，請參閱[清除非受控資源（.net 指南）](/dotnet/standard/garbage-collection/unmanaged)和[處置模式](/dotnet/standard/design-guidelines/dispose-pattern)。
+宣告並實 @no__t 0 介面的每個未密封類型，都必須提供自己的 @no__t 1 方法。 `Dispose()` 應呼叫 `Dispose(true)`，而完成項應呼叫 `Dispose(false)`。 如果您建立宣告和執行 @no__t 0 介面的未密封型別，您必須定義 `Dispose(bool)`，並呼叫它。 如需詳細資訊，請參閱[清除非受控資源（.net 指南）](/dotnet/standard/garbage-collection/unmanaged)和[處置模式](/dotnet/standard/design-guidelines/dispose-pattern)。
 
 根據預設，此規則只會查看外部可見的類型，但這是[可](#configurability)設定的。
 
 ## <a name="rule-description"></a>規則描述
 
-所有<xref:System.IDisposable>類型都應該正確地執行[處置模式](/dotnet/standard/design-guidelines/dispose-pattern)。
+所有 @no__t 0 類型都應該正確地實作為[處置模式](/dotnet/standard/design-guidelines/dispose-pattern)。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
 
 檢查您的程式碼，並判斷下列哪一個解決方法會修正此違規：
 
-- 從<xref:System.IDisposable>您的類型所實作為介面的清單中移除，並改為覆寫基類處置執行。
+- 從您的類型所實的介面清單中移除 <xref:System.IDisposable>，並改為覆寫基類處置執行。
 
 - 從您的型別中移除完成項、覆寫 Dispose （bool 處置），然後將完成邏輯放在程式碼路徑中，其中 ' 處置 ' 為 false。
 
@@ -76,11 +76,11 @@ ms.locfileid: "71235292"
 
 - 請確定 Dispose （bool）宣告為 protected、virtual 和未密封。
 
-- 修改 dispose （），使其呼叫 dispose （true），然後在<xref:System.GC.SuppressFinalize%2A>目前的物件實例（`this`或`Me` Visual Basic）上呼叫，然後傳回。
+- 修改 Dispose （），使其呼叫 Dispose （true），然後在目前的物件實例上呼叫 <xref:System.GC.SuppressFinalize%2A> （`this`，或在 Visual Basic 中為 `Me`），然後傳回。
 
 - 修改您的完成項，使其呼叫 Dispose （false），然後傳回。
 
-- 如果您建立宣告和<xref:System.IDisposable> <xref:System.IDisposable>執行介面的未密封類型，請確定的實作為本節稍早所述的模式。
+- 如果您建立宣告並執行 <xref:System.IDisposable> 介面的未密封類型，請確定 <xref:System.IDisposable> 的實行遵循本節前面所述的模式。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
 
@@ -144,7 +144,7 @@ public class Resource : IDisposable
 }
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [Dispose 模式（架構設計方針）](/dotnet/standard/design-guidelines/dispose-pattern)
 - [清除非受控資源（.NET 指南）](/dotnet/standard/garbage-collection/unmanaged)

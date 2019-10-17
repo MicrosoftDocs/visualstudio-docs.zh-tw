@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a09c44962b2737407a3ce7274ccb9c9664908dcf
-ms.sourcegitcommit: 39a04f42d23597b70053686d7e927ba78f38a9a8
+ms.openlocfilehash: b86ab80e98b7e9609576002c4682bf01c388cd1d
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/05/2019
-ms.locfileid: "71974944"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72445840"
 ---
 # <a name="install-net-compiler-platform-code-analyzers"></a>安裝 .NET Compiler Platform 程式碼分析器
 
@@ -31,7 +31,7 @@ Visual Studio 包含一組核心的 .NET Compiler Platform （*Roslyn*）分析�
 2. 使用 [[套件管理員主控台](/nuget/quickstart/install-and-use-a-package-in-visual-studio#package-manager-console)] 或 [[套件管理員] UI](/nuget/quickstart/install-and-use-a-package-in-visual-studio#package-manager-console)，在 Visual Studio 中安裝套件。
 
    > [!NOTE]
-   > 每個分析器套件的 www.nuget.org 頁面會顯示要貼入**封裝管理員主控台**的命令。 甚至還有一個方便的按鈕，可將文字複製到剪貼簿。
+   > 每個分析器套件的 [www.nuget.org] 頁面會顯示要貼入**封裝管理員主控台**的命令。 甚至還有一個方便的按鈕，可將文字複製到剪貼簿。
 
    分析器元件會安裝並顯示在**方案總管**的 [**參考**]  > **分析器**底下。
 
@@ -96,7 +96,7 @@ Visual Studio 包含一組核心的 .NET Compiler Platform （*Roslyn*）分析�
 > [!div class="nextstepaction"]
 > [在 Visual Studio 中使用程式碼分析器](../code-quality/use-roslyn-analyzers.md)
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [Visual Studio 中的程式碼分析器總覽](../code-quality/roslyn-analyzers-overview.md)
 - [安裝 FxCop 分析器](../code-quality/install-fxcop-analyzers.md)

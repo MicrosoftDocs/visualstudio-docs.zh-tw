@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 521b29f87db6379a011a0b46dfd1405b374ab9ba
-ms.sourcegitcommit: a5a54b147e772dc39e519da74ec41a0c25d99628
+ms.openlocfilehash: da4da0a106d37b081e0a7c57fe905048f3314174
+ms.sourcegitcommit: e82baa50bf5a65858c410882c2e86a552c2c1921
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2019
-ms.locfileid: "72289650"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72381082"
 ---
 # <a name="create-a-network-installation-of-visual-studio"></a>建立 Visual Studio 的網路安裝
 
@@ -226,6 +226,13 @@ vs_enterprise.exe --layout c:\VSLayout --all
 > 如果企業系統管理員想要對已完成的安裝執行進一步動作 (例如，[將產品金鑰套用至成功安裝](automatically-apply-product-keys-when-deploying-visual-studio.md))，則這十分有用，但是必須等待安裝完成才能處理來自該安裝的傳回碼。
 >
 > 如果您未使用 `--wait`，則 `vs_enterprise.exe` 程序會在安裝完成之前結束，並傳回未代表安裝作業狀態的不正確結束代碼。
+>
+
+::: moniker range="vs-2019"
+
+> 若是離線安裝，如果您收到錯誤訊息，指出「找不到符合下列參數的專案」，請確定您使用的是--noweb 參數搭配版本16.3.5 或更新版本。
+
+::: moniker-end
 
 當您從配置進行安裝時，會從配置中取得已安裝的內容。 不過，如果您選取的元件不在配置中，則會從網際網路取得。  如果您想要防止 Visual Studio 安裝程式下載您配置中遺漏的任何內容，請使用 `--noWeb` 選項。 如果使用 `--noWeb`，而且配置遺失已選取要安裝的任何內容，則安裝程式會失敗。
 
@@ -247,7 +254,7 @@ vs_enterprise.exe --layout c:\VSLayout --all
 ::: moniker range="vs-2017"
 
 > [!NOTE]
-> [visualstudio.microsoft.com](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) 所提供 Visual Studio 啟動載入器會下載並安裝執行時可用的最新版 Visual Studio。
+> [visualstudio.microsoft.com](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) 所提供 Visual Studio 啟動載入器，會下載並安裝執行時可用的最新版 Visual Studio。
 >
 > 因此，如果您今天下載 Visual Studio「啟動載入器」，並在六個月後執行，則其會安裝您在執行啟動載入器時的最新版 Visual Studio。
 >
@@ -276,7 +283,7 @@ vs_enterprise.exe --layout c:\VSLayout --all
 
 我們也提供其他支援選項。 如需清單，請參閱我們的[意見反應](../ide/feedback-options.md)頁面。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [Visual Studio 系統管理員指南](visual-studio-administrator-guide.md)
 - [更新 Visual Studio 的網路型安裝](update-a-network-installation-of-visual-studio.md)

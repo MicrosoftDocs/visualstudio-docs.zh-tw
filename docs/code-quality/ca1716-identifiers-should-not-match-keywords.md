@@ -1,5 +1,5 @@
 ---
-title: CA1716:識別項名稱不應該和關鍵字相符
+title: CA1716：識別項名稱不應該和關鍵字相符
 ms.date: 03/11/2019
 ms.topic: reference
 f1_keywords:
@@ -14,20 +14,20 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a3f030c9c64d975d93aa2aeee90d37f765a6a63
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: b52fb16d2cf5e56ded5cf8f4ed9e8e25c942d7c9
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71234048"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72438984"
 ---
-# <a name="ca1716-identifiers-should-not-match-keywords"></a>CA1716:識別項名稱不應該和關鍵字相符
+# <a name="ca1716-identifiers-should-not-match-keywords"></a>CA1716：識別項名稱不應該和關鍵字相符
 
 |||
 |-|-|
 |TypeName|IdentifiersShouldNotMatchKeywords|
 |CheckId|CA1716|
-|分類|Microsoft.Naming|
+|分類|Microsoft. 命名|
 |重大變更|中斷|
 
 ## <a name="cause"></a>原因

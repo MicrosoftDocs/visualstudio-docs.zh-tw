@@ -1,5 +1,5 @@
 ---
-title: CA1023:不應該使用多維索引子
+title: CA1023：不應該使用多維索引子
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,20 +18,20 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: f788ded21ef5dd9c84d218cedb55ec8dcf7eff2d
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 9b9488d3f28567e3e39f86355b353f6d1d9d84d9
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71236170"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72441430"
 ---
-# <a name="ca1023-indexers-should-not-be-multidimensional"></a>CA1023:不應該使用多維索引子
+# <a name="ca1023-indexers-should-not-be-multidimensional"></a>CA1023：不應該使用多維索引子
 
 |||
 |-|-|
 |TypeName|IndexersShouldNotBeMultidimensional|
 |CheckId|CA1023|
-|分類|Microsoft.Design|
+|分類|Microsoft. Design|
 |重大變更|中斷|
 
 ## <a name="cause"></a>原因
@@ -47,13 +47,13 @@ ms.locfileid: "71236170"
 請只在仔細考慮非標準索引子的需求之後，才隱藏此規則的警告。
 
 ## <a name="example"></a>範例
-下列範例顯示型別， `DayOfWeek03`其中包含違反規則的多維度索引子。 索引子可以視為轉換類型，因此會更適當地公開為方法。 類型已在中`RedesignedDayOfWeek03`重新設計，以符合規則。
+下列範例顯示類型 `DayOfWeek03`，其中包含違反規則的多維度索引子。 索引子可以視為轉換類型，因此會更適當地公開為方法。 類型已在 `RedesignedDayOfWeek03` 中重新設計，以符合規則。
 
 [!code-vb[FxCop.Design.OneDimensionForIndexer#1](../code-quality/codesnippet/VisualBasic/ca1023-indexers-should-not-be-multidimensional_1.vb)]
 [!code-cpp[FxCop.Design.OneDimensionForIndexer#1](../code-quality/codesnippet/CPP/ca1023-indexers-should-not-be-multidimensional_1.cpp)]
 [!code-csharp[FxCop.Design.OneDimensionForIndexer#1](../code-quality/codesnippet/CSharp/ca1023-indexers-should-not-be-multidimensional_1.cs)]
 
 ## <a name="related-rules"></a>相關規則
-[CA1043 必須針對索引子使用整數或字串引數](../code-quality/ca1043-use-integral-or-string-argument-for-indexers.md)
+[CA1043：必須針對索引子使用整數類或字串引數](../code-quality/ca1043-use-integral-or-string-argument-for-indexers.md)
 
-[CA1024 建議適當時使用屬性](../code-quality/ca1024-use-properties-where-appropriate.md)
+[CA1024：建議在適當時使用屬性](../code-quality/ca1024-use-properties-where-appropriate.md)

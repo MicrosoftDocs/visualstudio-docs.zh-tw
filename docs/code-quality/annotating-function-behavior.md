@@ -20,12 +20,12 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - multiple
-ms.openlocfilehash: 1bb0e8bdbb2bd62fa637b9cecce64adf98f71013
-ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
+ms.openlocfilehash: b77379d0bb9dbd80f01eadf5209353b3fd12eb1c
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72016057"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72446304"
 ---
 # <a name="annotating-function-behavior"></a>註釋函式行為
 除了標注函式[參數和傳回值](../code-quality/annotating-function-parameters-and-return-values.md)之外，您還可以標注整個函數的屬性。
@@ -53,7 +53,7 @@ ms.locfileid: "72016057"
 |`_Return_type_success_(expr)`|可套用至 typedef。 指出傳回該類型且未明確擁有 `_Success_` 的所有函式，都會標註為如同擁有 `_Success_(expr)`。 `_Return_type_success_` 無法在函式或函式指標 typedef 上使用。|
 |`_Success_(expr)`|`expr` 是產生右值的運算式。 當 `_Success_` 註釋出現在函式宣告或定義上時，函式上和後置條件中每個註釋 (`anno`) 的行為就如同撰寫為 `_When_(expr, anno)` 程式碼一樣。 `_Success_` 註釋只能在函式上使用，而不能在其參數或傳回型別上使用。 函式上最多只能有一個 `_Success_` 註釋，而且不能在任何 `_When_`、`_At_` 或 `_Group_` 中。 如需詳細資訊，請參閱[指定批註的套用時機和位置](../code-quality/specifying-when-and-where-an-annotation-applies.md)。|
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [使用 SAL 註釋減少 C/C++ 程式碼的缺失](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)
 - [了解 SAL](../code-quality/understanding-sal.md)

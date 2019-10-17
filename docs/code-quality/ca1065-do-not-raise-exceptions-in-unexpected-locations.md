@@ -1,5 +1,5 @@
 ---
-title: CA1065:不要在非預期的位置中引發例外狀況
+title: CA1065：不要在非預期的位置中引發例外狀況
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,20 +14,20 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 257100be0eb2766ef413854795c934b230e29370
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 93233f4c4fe7d718b128d569ae2fa55858f2453b
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71235251"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72440590"
 ---
-# <a name="ca1065-do-not-raise-exceptions-in-unexpected-locations"></a>CA1065:不要在非預期的位置中引發例外狀況
+# <a name="ca1065-do-not-raise-exceptions-in-unexpected-locations"></a>CA1065：不要在非預期的位置中引發例外狀況
 
 |||
 |-|-|
 |TypeName|DoNotRaiseExceptionsInUnexpectedLocations|
 |CheckId|CA1065|
-|分類|Microsoft.Design|
+|分類|Microsoft. Design|
 |重大變更|不中斷|
 
 ## <a name="cause"></a>原因
@@ -66,13 +66,13 @@ ms.locfileid: "71235251"
 
 下列例外狀況可以從屬性 get 方法擲回：
 
-- <xref:System.InvalidOperationException?displayProperty=fullName>和所有衍生的（ <xref:System.ObjectDisposedException?displayProperty=fullName>包括）
+- <xref:System.InvalidOperationException?displayProperty=fullName> 和所有衍生的（包括 <xref:System.ObjectDisposedException?displayProperty=fullName>）
 
-- <xref:System.NotSupportedException?displayProperty=fullName>和所有衍生
+- <xref:System.NotSupportedException?displayProperty=fullName> 和所有衍生
 
-- <xref:System.ArgumentException?displayProperty=fullName>（僅限來自索引的 get）
+- <xref:System.ArgumentException?displayProperty=fullName> （僅從索引的 get 取得）
 
-- <xref:System.Collections.Generic.KeyNotFoundException>（僅限來自索引的 get）
+- <xref:System.Collections.Generic.KeyNotFoundException> （僅從索引的 get 取得）
 
 ### <a name="event-accessor-methods"></a>事件存取子方法
 
@@ -80,11 +80,11 @@ ms.locfileid: "71235251"
 
 下列例外狀況可以從事件存取子擲回：
 
-- <xref:System.InvalidOperationException?displayProperty=fullName>和所有衍生的（ <xref:System.ObjectDisposedException?displayProperty=fullName>包括）
+- <xref:System.InvalidOperationException?displayProperty=fullName> 和所有衍生的（包括 <xref:System.ObjectDisposedException?displayProperty=fullName>）
 
-- <xref:System.NotSupportedException?displayProperty=fullName>和所有衍生
+- <xref:System.NotSupportedException?displayProperty=fullName> 和所有衍生
 
-- <xref:System.ArgumentException>和衍生
+- <xref:System.ArgumentException> 和衍生
 
 ### <a name="equals-methods"></a>Equals 方法
 
@@ -94,7 +94,7 @@ ms.locfileid: "71235251"
 
 - <xref:System.IEquatable%601.Equals%2A>
 
-**Equals**方法應該會傳回`true`或`false` ，而不是擲回例外狀況。 例如，如果將 Equals 傳遞兩個不相符的`false` <xref:System.ArgumentException>類型，則應該只傳回，而不是擲回。
+**Equals**方法應該傳回 `true` 或 `false`，而不是擲回例外狀況。 例如，如果將 Equals 傳遞兩個不相符的類型，則應該只傳回 `false`，而不是擲回 <xref:System.ArgumentException>。
 
 ### <a name="gethashcode-methods"></a>GetHashCode 方法
 
@@ -106,11 +106,11 @@ ms.locfileid: "71235251"
 
 **GetHashCode**應該一律會傳回值。 否則，您可能會遺失雜湊表中的專案。
 
-接受引數的**GetHashCode**版本可能會擲<xref:System.ArgumentException>回。 不過， **GetHashCode**應該永遠不會擲回例外狀況。
+接受引數的**GetHashCode**版本可能會擲回 <xref:System.ArgumentException>。 不過， **GetHashCode**應該永遠不會擲回例外狀況。
 
 ### <a name="tostring-methods"></a>ToString 方法
 
-偵錯工具會<xref:System.Object.ToString%2A?displayProperty=fullName>使用來協助以字串格式顯示物件的相關資訊。 因此， **ToString**不應變更物件的狀態，也不應該擲回例外狀況。
+偵錯工具會使用 <xref:System.Object.ToString%2A?displayProperty=fullName>，協助以字串格式顯示物件的相關資訊。 因此， **ToString**不應變更物件的狀態，也不應該擲回例外狀況。
 
 ### <a name="static-constructors"></a>靜態建構函式
 
@@ -122,13 +122,13 @@ ms.locfileid: "71235251"
 
 ### <a name="dispose-methods"></a>Dispose 方法
 
-<xref:System.IDisposable.Dispose%2A?displayProperty=fullName>方法不應該擲回例外狀況。 處置通常會在`finally`子句中當做清除邏輯的一部分來呼叫。 因此，從 Dispose 明確擲回例外狀況，會強制使用者在`finally`子句內新增例外狀況處理。
+@No__t-0 方法不應該擲回例外狀況。 Dispose 通常會當做 @no__t 0 子句中清除邏輯的一部分來呼叫。 因此，從 Dispose 明確擲回例外狀況，會強制使用者在 `finally` 子句內新增例外狀況處理。
 
 **Dispose （false）** 程式碼路徑絕對不會擲回例外狀況，因為處置幾乎一律從完成項呼叫。
 
 ### <a name="equality-operators--"></a>等號比較運算子（= =、！ =）
 
-如同 Equals 方法，等號比較運算子應該`true`會`false`傳回或，而且不應該擲回例外狀況。
+如同 Equals 方法，等號比較運算子應該傳回 `true` 或 `false`，而且不應該擲回例外狀況。
 
 ### <a name="implicit-cast-operators"></a>隱含轉換運算子
 
@@ -146,8 +146,8 @@ ms.locfileid: "71235251"
 
 ## <a name="related-rules"></a>相關規則
 
-- [CA2219不要在 exception 子句中引發例外狀況](../code-quality/ca2219-do-not-raise-exceptions-in-exception-clauses.md)
+- [CA2219：不要在 exception 子句中引發例外狀況](../code-quality/ca2219.md)
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [設計警告](../code-quality/design-warnings.md)
