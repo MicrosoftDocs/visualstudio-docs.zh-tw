@@ -1,5 +1,5 @@
 ---
-title: CA1505:應避免撰寫無法維護的程式碼
+title: CA1505：應避免撰寫無法維護的程式碼
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,20 +14,20 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c3ba027ef2e663870d0af50bc6d2154133f7980c
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: f39b6b909722c35edb16ebaf1cee43507f22215d
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71234549"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72440071"
 ---
-# <a name="ca1505-avoid-unmaintainable-code"></a>CA1505:應避免撰寫無法維護的程式碼
+# <a name="ca1505-avoid-unmaintainable-code"></a>CA1505：應避免撰寫無法維護的程式碼
 
 |||
 |-|-|
 |TypeName|AvoidUnmantainableCode|
 |CheckId|CA1505|
-|分類|Microsoft.Maintainability|
+|分類|Microsoft。可維護性|
 |重大變更|不中斷|
 
 ## <a name="cause"></a>原因
@@ -48,7 +48,7 @@ ms.locfileid: "71234549"
 
 您可以在無法分割類型或方法時隱藏此警告，或即使其大小很大，也會視為可維護。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [可維護性警告](../code-quality/maintainability-warnings.md)
 - [測量受控程式碼的複雜度和維護性](../code-quality/code-metrics-values.md)

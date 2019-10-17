@@ -1,5 +1,5 @@
 ---
-title: CA1501:避免在物件間過度繼承
+title: CA1501：避免過度繼承
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,20 +17,20 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 88464effce80b6957dc8945ad17f5a39b4f449c8
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: fceabd5487b28d4cf16b5cc0d61cd81de2aeb23a
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71234523"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72444155"
 ---
-# <a name="ca1501-avoid-excessive-inheritance"></a>CA1501:避免在物件間過度繼承
+# <a name="ca1501-avoid-excessive-inheritance"></a>CA1501：避免過度繼承
 
 |||
 |-|-|
 |TypeName|AvoidExcessiveInheritance|
 |CheckId|CA1501|
-|分類|Microsoft.Maintainability|
+|分類|Microsoft。可維護性|
 |重大變更|中斷|
 
 ## <a name="cause"></a>原因

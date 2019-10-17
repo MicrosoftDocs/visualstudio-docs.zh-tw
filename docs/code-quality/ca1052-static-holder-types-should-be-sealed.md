@@ -1,5 +1,5 @@
 ---
-title: CA1052:靜態預留位置類型應為靜態或 NotInheritable
+title: CA1052：靜態預留位置類型應為靜態或 NotInheritable
 ms.date: 07/25/2019
 ms.topic: reference
 f1_keywords:
@@ -18,20 +18,20 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 757b6b46e0c0892f5eb4c868b15654b29cd51c0e
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 7fb332a293e30bfba38e1487576d5a28b1a3be36
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71235624"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72446594"
 ---
-# <a name="ca1052-static-holder-types-should-be-static-or-notinheritable"></a>CA1052:靜態預留位置類型應為靜態或 NotInheritable
+# <a name="ca1052-static-holder-types-should-be-static-or-notinheritable"></a>CA1052：靜態預留位置類型應為靜態或 NotInheritable
 
 |||
 |-|-|
 |TypeName|StaticHolderTypesAnalyzer|
 |CheckId|CA1052|
-|分類|Microsoft.Design|
+|分類|Microsoft. Design|
 |重大變更|中斷|
 
 ## <a name="cause"></a>原因
@@ -42,7 +42,7 @@ ms.locfileid: "71235624"
 
 ## <a name="rule-description"></a>規則描述
 
-規則 CA1052 假設僅包含靜態成員的類型不是為了繼承而設計，因為該類型不會提供可在衍生類型中覆寫的任何功能。 不想要繼承的類型應該在中`static` C#以修飾詞標記，以禁止其作為基底類型使用。 此外，應該移除其預設的函式。 在 Visual Basic 中，類別應該轉換成[模組](/dotnet/visual-basic/language-reference/statements/module-statement)。
+規則 CA1052 假設僅包含靜態成員的類型不是為了繼承而設計，因為該類型不會提供可在衍生類型中覆寫的任何功能。 不想要繼承的類型應該使用中C#的 `static` 修飾詞加以標記，以禁止其作為基底類型使用。 此外，應該移除其預設的函式。 在 Visual Basic 中，類別應該轉換成[模組](/dotnet/visual-basic/language-reference/statements/module-statement)。
 
 對於具有基類的抽象類別或類別，不會引發此規則。 不過，此規則會針對支援空白介面的類別引發。
 
@@ -51,11 +51,11 @@ ms.locfileid: "71235624"
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
 
-若要修正此規則的違規，請將類型標記`static`為，並移除預設的C#函式（），或將它轉換成模組（Visual Basic）。
+若要修正此規則的違規，請將類型標記為 `static`，並移除預設的C#函式（），或將它轉換成模組（Visual Basic）。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
 
-只有當類型設計為要繼承時，才隱藏此規則的警告。 缺少`static`修飾詞，會建議型別相當適合做為基底型別。
+只有當類型設計為要繼承時，才隱藏此規則的警告。 缺少 `static` 修飾詞，表示型別相當適合作為基底型別。
 
 ## <a name="configurability"></a>可設定性
 
@@ -77,7 +77,7 @@ dotnet_code_quality.ca1052.api_surface = private, internal
 
 ## <a name="fix-with-the-static-modifier"></a>使用靜態修飾詞修正
 
-下列範例顯示如何在中`static` C#以修飾詞標記類型，以修正此規則的違規：
+下列範例顯示如何在中C#使用 `static` 修飾詞來標記類型，以修正此規則的違規：
 
 ```csharp
 public static class StaticMembers

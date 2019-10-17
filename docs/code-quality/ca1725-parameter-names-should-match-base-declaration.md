@@ -1,5 +1,5 @@
 ---
-title: CA1725:參數名稱應該符合基底類型的宣告
+title: CA1725：參數名稱應該符合基底宣告
 ms.date: 03/11/2019
 ms.topic: reference
 f1_keywords:
@@ -14,20 +14,20 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 75f214809d5bfab660b1d559e21d3de3c5ea75fa
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 417e03f5d682ad448372d74fa8c9a5c31b798ccc
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71233868"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72438924"
 ---
-# <a name="ca1725-parameter-names-should-match-base-declaration"></a>CA1725:參數名稱應該符合基底類型的宣告
+# <a name="ca1725-parameter-names-should-match-base-declaration"></a>CA1725：參數名稱應該符合基底宣告
 
 |||
 |-|-|
 |TypeName|ParameterNamesShouldMatchBaseDeclaration|
 |CheckId|CA1725|
-|分類|Microsoft.Naming|
+|分類|Microsoft. 命名|
 |重大變更|中斷|
 
 ## <a name="cause"></a>原因

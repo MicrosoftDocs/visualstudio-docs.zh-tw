@@ -1,5 +1,5 @@
 ---
-title: CA1041:必須提供 ObsoleteAttribute 訊息
+title: CA1041：提供 ObsoleteAttribute 訊息
 ms.date: 03/11/2019
 ms.topic: reference
 f1_keywords:
@@ -18,39 +18,39 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 6620ac646c7fe20de856185708effc9e1a331e57
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 51427ec499c223c50fbe72523a3be44ed0ce9094
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71235858"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72449227"
 ---
-# <a name="ca1041-provide-obsoleteattribute-message"></a>CA1041:必須提供 ObsoleteAttribute 訊息
+# <a name="ca1041-provide-obsoleteattribute-message"></a>CA1041：提供 ObsoleteAttribute 訊息
 
 |||
 |-|-|
 |TypeName|ProvideObsoleteAttributeMessage|
 |CheckId|CA1041|
-|分類|Microsoft.Design|
+|分類|Microsoft. Design|
 |重大變更|不中斷|
 
 ## <a name="cause"></a>原因
 
-類型或成員是使用<xref:System.ObsoleteAttribute?displayProperty=fullName>未指定其<xref:System.ObsoleteAttribute.Message%2A?displayProperty=fullName>屬性的屬性來標記。
+類型或成員是使用未指定其 <xref:System.ObsoleteAttribute.Message%2A?displayProperty=fullName> 屬性的 @no__t 0 屬性來標記。
 
 根據預設，此規則只會查看外部可見的類型和成員，但這是[可](#configurability)設定的。
 
 ## <a name="rule-description"></a>規則描述
 
-<xref:System.ObsoleteAttribute>用來標示已取代的程式庫類型和成員。 程式庫取用者應避免使用標示為已淘汰的任何類型或成員。 這是因為它可能不受支援，而且最終會從程式庫的較新版本中移除。 當編譯使用<xref:System.ObsoleteAttribute>標記的類型或成員時<xref:System.ObsoleteAttribute.Message%2A> ，會顯示內容（attribute）的屬性（property）。 以便提供使用者有關過時類型或成員的資訊。 這項資訊通常包含程式庫設計工具支援過時類型或成員的時間長度，以及使用的慣用取代。
+<xref:System.ObsoleteAttribute> 是用來標示已取代的程式庫類型和成員。 程式庫取用者應避免使用標示為已淘汰的任何類型或成員。 這是因為它可能不受支援，而且最終會從程式庫的較新版本中移除。 當編譯使用 <xref:System.ObsoleteAttribute> 標記的類型或成員時，會顯示內容的 <xref:System.ObsoleteAttribute.Message%2A> 屬性。 以便提供使用者有關過時類型或成員的資訊。 這項資訊通常包含程式庫設計工具支援過時類型或成員的時間長度，以及使用的慣用取代。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
 
-若要修正此規則的違規情形，請`message`將參數新增<xref:System.ObsoleteAttribute>至此函式。
+若要修正此規則的違規，請將 `message` 參數新增至 <xref:System.ObsoleteAttribute> 的函式。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
 
-請勿隱藏此規則中的警告，因為<xref:System.ObsoleteAttribute.Message%2A>屬性會提供有關過時類型或成員的重要資訊。
+請勿隱藏此規則中的警告，因為 <xref:System.ObsoleteAttribute.Message%2A> 屬性會提供有關過時類型或成員的重要資訊。
 
 ## <a name="configurability"></a>可設定性
 
@@ -64,12 +64,12 @@ dotnet_code_quality.ca1041.api_surface = private, internal
 
 ## <a name="example"></a>範例
 
-下列範例顯示已正確<xref:System.ObsoleteAttribute>宣告的過時成員。
+下列範例顯示已正確宣告 <xref:System.ObsoleteAttribute> 的過時成員。
 
 [!code-cpp[FxCop.Design.ObsoleteAttributeOnMember#1](../code-quality/codesnippet/CPP/ca1041-provide-obsoleteattribute-message_1.cpp)]
 [!code-csharp[FxCop.Design.ObsoleteAttributeOnMember#1](../code-quality/codesnippet/CSharp/ca1041-provide-obsoleteattribute-message_1.cs)]
 [!code-vb[FxCop.Design.ObsoleteAttributeOnMember#1](../code-quality/codesnippet/VisualBasic/ca1041-provide-obsoleteattribute-message_1.vb)]
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - <xref:System.ObsoleteAttribute?displayProperty=fullName>

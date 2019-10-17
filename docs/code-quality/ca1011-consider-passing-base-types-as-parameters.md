@@ -1,5 +1,5 @@
 ---
-title: CA1011:建議將基底類型當作參數傳遞
+title: CA1011：建議將基底類型當做參數傳遞
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,20 +18,20 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: dcb5937f58088684e7bfc204ab4143434b0684ae
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: fbb807f7146c781d2b97cf80f2e78c8beb5c38b4
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71236401"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72441665"
 ---
-# <a name="ca1011-consider-passing-base-types-as-parameters"></a>CA1011:建議將基底類型當作參數傳遞
+# <a name="ca1011-consider-passing-base-types-as-parameters"></a>CA1011：建議將基底類型當做參數傳遞
 
 |||
 |-|-|
 |TypeName|ConsiderPassingBaseTypesAsParameters|
 |CheckId|CA1011|
-|分類|Microsoft.Design|
+|分類|Microsoft. Design|
 |重大變更|中斷|
 
 ## <a name="cause"></a>原因
@@ -60,7 +60,7 @@ ms.locfileid: "71236401"
 
 ## <a name="example"></a>範例
 
-下列範例顯示的方法， `ManipulateFileStream`只能<xref:System.IO.FileStream>與違反此規則的物件搭配使用。 第二個方法`ManipulateAnyStream`會使用<xref:System.IO.Stream>來<xref:System.IO.FileStream>取代參數，以滿足規則。
+下列範例顯示的方法 `ManipulateFileStream`，只能搭配 @no__t 1 物件使用，這會違反此規則。 第二個方法 `ManipulateAnyStream`，藉由使用 <xref:System.IO.Stream> 來取代 <xref:System.IO.FileStream> 參數，以滿足規則。
 
 [!code-csharp[FxCop.Design.ConsiderPassingBaseTypes#1](../code-quality/codesnippet/CSharp/ca1011-consider-passing-base-types-as-parameters_1.cs)]
 [!code-cpp[FxCop.Design.ConsiderPassingBaseTypes#1](../code-quality/codesnippet/CPP/ca1011-consider-passing-base-types-as-parameters_1.cpp)]
@@ -68,4 +68,4 @@ ms.locfileid: "71236401"
 
 ## <a name="related-rules"></a>相關規則
 
-[CA1059成員不應該公開特定的具象類型](../code-quality/ca1059-members-should-not-expose-certain-concrete-types.md)
+[CA1059：成員不應該公開特定的具象類型](../code-quality/ca1059-members-should-not-expose-certain-concrete-types.md)

@@ -24,12 +24,12 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - multiple
-ms.openlocfilehash: 1cff36760a84821a33dcdb1ee4cc6842cd40aee0
-ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
+ms.openlocfilehash: ac3d6225bc765ec404784589d2faa06f155265ab
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72015975"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72446291"
 ---
 # <a name="annotating-structs-and-classes"></a>註釋結構和類別
 
@@ -41,15 +41,15 @@ ms.locfileid: "72015975"
 
      欄位位於 `low` 到 `high` 的範圍內（含）。  相當於使用適當的前置或後置條件套用至已標註物件的 `_Satisfies_(_Curr_ >= low && _Curr_ <= high)`。
 
-- `_Field_size_(size)`, `_Field_size_opt_(size)`, `_Field_size_bytes_(size)`, `_Field_size_bytes_opt_(size)`
+- `_Field_size_(size)`、`_Field_size_opt_(size)`、`_Field_size_bytes_(size)``_Field_size_bytes_opt_(size)`
 
      欄位，其可寫入的大小是由 `size` 以項目 (或位元組) 為單位指定。
 
-- `_Field_size_part_(size, count)`, `_Field_size_part_opt_(size, count)`,         `_Field_size_bytes_part_(size, count)`, `_Field_size_bytes_part_opt_(size, count)`
+- `_Field_size_part_(size, count)`，`_Field_size_part_opt_(size, count)`，`_Field_size_bytes_part_(size, count)`，`_Field_size_bytes_part_opt_(size, count)`
 
      欄位，其可寫入的大小是由 `size` 以項目 (或位元組) 為單位指定，而且可以讀取這些項目 (位元組) 的 `count`。
 
-- `_Field_size_full_(size)`, `_Field_size_full_opt_(size)`, `_Field_size_bytes_full_(size)`, `_Field_size_bytes_full_opt_(size)`
+- `_Field_size_full_(size)`、`_Field_size_full_opt_(size)`、`_Field_size_bytes_full_(size)``_Field_size_bytes_full_opt_(size)`
 
      具有可讀取及可寫入大小的欄位，其大小是以 `size` 所指定的項目 (或位元組) 為單位表示。
 
@@ -110,7 +110,7 @@ struct MyBuffer
 - @no__t 的 `_Field_range_`-1 指定 `bufferSize` 的值應該在1和 `MaxBufferSize` （兩者皆包含）中。
 - @No__t-0 和 @no__t 1 注釋的最終結果是相同的。 對於具有類似配置的結構或類別，`_Field_size_` 較容易閱讀和維護，因為它的參考和計算比對等的 `_Struct_size_bytes_` 注釋少。 `_Field_size_` 不需要轉換成位元組大小。 如果 [位元組大小] 是唯一的選項（例如，針對 void 指標欄位），則可以使用 `_Field_size_bytes_`。 如果 `_Struct_size_bytes_` 和 `_Field_size_` 都存在，則這兩個工具都可供使用。 如果這兩個批註不同意，該怎麼辦。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [使用 SAL 註釋減少 C/C++ 程式碼的缺失](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)
 - [了解 SAL](../code-quality/understanding-sal.md)

@@ -1,5 +1,5 @@
 ---
-title: CA1051:不要宣告可見的執行個體欄位
+title: CA1051：不要宣告可見的執行個體欄位
 ms.date: 03/11/2019
 ms.topic: reference
 f1_keywords:
@@ -14,20 +14,20 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 296e8cb4753d487573957de1108a8cb27778ef4c
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 69fb85c396da1acde40cd9bc46150ca5f1386c17
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71235796"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72449134"
 ---
-# <a name="ca1051-do-not-declare-visible-instance-fields"></a>CA1051:不要宣告可見的執行個體欄位
+# <a name="ca1051-do-not-declare-visible-instance-fields"></a>CA1051：不要宣告可見的執行個體欄位
 
 |||
 |-|-|
 |TypeName|DoNotDeclareVisibleInstanceFields|
 |CheckId|CA1051|
-|分類|Microsoft.Design|
+|分類|Microsoft. Design|
 |重大變更|中斷|
 
 ## <a name="cause"></a>原因
@@ -38,15 +38,15 @@ ms.locfileid: "71235796"
 
 ## <a name="rule-description"></a>規則描述
 
-欄位的主要用法應該是當做實作詳細資料。 欄位應該是`private`或`internal` ，而且應該使用屬性來公開。 存取屬性的方式很簡單，因為存取欄位時，屬性存取子中的程式碼可能會變更，因為類型的功能會展開，而不會引入中斷性變更。
+欄位的主要用法應該是當做實作詳細資料。 欄位應該 `private` 或 `internal`，而且應該使用屬性來公開。 存取屬性的方式很簡單，因為存取欄位時，屬性存取子中的程式碼可能會變更，因為類型的功能會展開，而不會引入中斷性變更。
 
-只傳回私用或內部欄位值的屬性，已經過優化，可在存取欄位時進行比對。使用外部可見欄位而非屬性的效能提升是最小的。 *外部可見* `public`指的是`protected`、和`protected internal` （`Public` `Protected Friend` Visual Basic 中的、和）存取範圍層級。 `Protected`
+只傳回私用或內部欄位值的屬性，已經過優化，可在存取欄位時進行比對。使用外部可見欄位而非屬性的效能提升是最小的。 *外部可見*的是指 `public`、`protected` 和 `protected internal` （@no__t 中的 `Public`、`Protected` 和 Visual Basic-6）存取範圍層級。
 
-此外，公用欄位無法受到[連結要求](/dotnet/framework/misc/link-demands)的保護。 如需詳細資訊， [請參閱 CA2112：受保護的類型不應該](../code-quality/ca2112-secured-types-should-not-expose-fields.md)公開欄位。 （連結要求不適用於 .NET Core 應用程式）。
+此外，公用欄位無法受到[連結要求](/dotnet/framework/misc/link-demands)的保護。 如需詳細資訊，請參閱[CA2112：安全的類型不應該公開欄位](../code-quality/ca2112.md)。 （連結要求不適用於 .NET Core 應用程式）。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
 
-若要修正此規則的違規，請將欄位`private`設`internal`為或，並使用外部可見的屬性加以公開。
+若要修正此規則的違規情形，請將欄位 `private` 或 `internal`，並使用外部可見的屬性加以公開。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
 
@@ -55,7 +55,7 @@ ms.locfileid: "71235796"
 在下列情況下，取用者可能需要存取欄位：
 
 - 在 ASP.NET Web Forms 內容控制項中
-- 當目標平臺`ref`利用來修改欄位時，例如適用于 WPF 和 UWP 的模型視圖 viewmodel （MVVM）架構
+- 當目標平臺使用 `ref` 來修改欄位時，例如適用于 WPF 和 UWP 的模型視圖 viewmodel （MVVM）架構
 
 ## <a name="configurability"></a>可設定性
 
@@ -69,14 +69,14 @@ dotnet_code_quality.ca1051.api_surface = private, internal
 
 ## <a name="example"></a>範例
 
-下列範例顯示違反此規則的`BadPublicInstanceFields`類型（）。 `GoodPublicInstanceFields`顯示已更正的程式碼。
+下列範例顯示違反此規則的類型（`BadPublicInstanceFields`）。 `GoodPublicInstanceFields` 會顯示已更正的程式碼。
 
 [!code-csharp[FxCop.Design.TypesPublicInstanceFields#1](../code-quality/codesnippet/CSharp/ca1051-do-not-declare-visible-instance-fields_1.cs)]
 
 ## <a name="related-rules"></a>相關規則
 
-- [CA2112受保護的類型不應該公開欄位](../code-quality/ca2112-secured-types-should-not-expose-fields.md)
+- [CA2112：受保護類型不應該公開欄位](../code-quality/ca2112.md)
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [連結要求](/dotnet/framework/misc/link-demands)

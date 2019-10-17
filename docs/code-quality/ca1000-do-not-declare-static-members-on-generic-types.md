@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 4cc33c51af7d596fb9c784b76f8cc2f255ddf5a5
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 54bc6eab1806ce6174c60e996427ec1f7cdee335
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71236709"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72432111"
 ---
 # <a name="ca1000-do-not-declare-static-members-on-generic-types"></a>CA1000：不要在泛型類型上宣告靜態成員
 
@@ -30,18 +30,18 @@ ms.locfileid: "71236709"
 |-|-|
 |TypeName|DoNotDeclareStaticMembersOnGenericTypes|
 |CheckId|CA1000|
-|分類|Microsoft.Design|
+|分類|Microsoft. Design|
 |重大變更|中斷|
 
 ## <a name="cause"></a>原因
 
-泛型型別包含`static` （`Shared`在 Visual Basic）成員中。
+泛型型別包含 `static` （Visual Basic 中的 `Shared`）成員。
 
 根據預設，此規則只會查看外部可見的類型，但這是[可](#configurability)設定的。
 
 ## <a name="rule-description"></a>規則描述
 
-呼叫泛型型別的成員時，必須為類型指定類型引數。`static` 呼叫不支援介面的泛型執行個體 (Instance) 成員時，必須為成員指定類型引數。 在這兩種情況下指定類型引數的語法不同且容易混淆，如下列呼叫所示：
+呼叫泛型型別的 @no__t 0 成員時，必須為類型指定類型引數。 呼叫不支援介面的泛型執行個體 (Instance) 成員時，必須為成員指定類型引數。 在這兩種情況下指定類型引數的語法不同且容易混淆，如下列呼叫所示：
 
 ```vb
 ' Shared method in a generic type.
@@ -59,7 +59,7 @@ GenericType<int>.StaticMethod();
 someObject.GenericMethod<int>();
 ```
 
-一般來說，應該避免這兩個先前的宣告，以便在呼叫成員時不需要指定類型引數。 這會導致在泛型中呼叫成員的語法，與非泛型的語法不同。 如需詳細資訊， [請參閱 CA1004：泛型方法應該提供類型參數](../code-quality/ca1004-generic-methods-should-provide-type-parameter.md)。
+一般來說，應該避免這兩個先前的宣告，以便在呼叫成員時不需要指定類型引數。 這會導致在泛型中呼叫成員的語法，與非泛型的語法不同。 如需詳細資訊，請參閱[CA1004：泛型方法應該提供類型參數](../code-quality/ca1004-generic-methods-should-provide-type-parameter.md)。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
 
@@ -81,14 +81,14 @@ dotnet_code_quality.ca1000.api_surface = private, internal
 
 ## <a name="related-rules"></a>相關規則
 
-- [CA1005避免在泛型型別上有過多參數](../code-quality/ca1005-avoid-excessive-parameters-on-generic-types.md)
-- [CA1010集合應執行泛型介面](../code-quality/ca1010-collections-should-implement-generic-interface.md)
-- [CA1002不要公開泛型清單](../code-quality/ca1002-do-not-expose-generic-lists.md)
-- [CA1006不要在成員簽章中嵌套泛型型別](../code-quality/ca1006-do-not-nest-generic-types-in-member-signatures.md)
-- [CA1004泛型方法應該提供類型參數](../code-quality/ca1004-generic-methods-should-provide-type-parameter.md)
-- [CA1003 必須使用一般事件處理常式實例](../code-quality/ca1003-use-generic-event-handler-instances.md)
-- [CA1007 建議適當時使用泛型](../code-quality/ca1007-use-generics-where-appropriate.md)
+- [CA1005：避免在泛型型別上包含過多參數](../code-quality/ca1005-avoid-excessive-parameters-on-generic-types.md)
+- [CA1010：集合應該實作泛型介面](../code-quality/ca1010-collections-should-implement-generic-interface.md)
+- [CA1002：不要公開泛型清單](../code-quality/ca1002-do-not-expose-generic-lists.md)
+- [CA1006：不要在成員簽章中巢狀化泛型類型](../code-quality/ca1006-do-not-nest-generic-types-in-member-signatures.md)
+- [CA1004：泛型方法應該提供類型參數](../code-quality/ca1004-generic-methods-should-provide-type-parameter.md)
+- [CA1003：必須使用一般事件處理常式執行個體](../code-quality/ca1003-use-generic-event-handler-instances.md)
+- [CA1007：建議在適當時使用泛型](../code-quality/ca1007-use-generics-where-appropriate.md)
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [泛型](/dotnet/csharp/programming-guide/generics/index)

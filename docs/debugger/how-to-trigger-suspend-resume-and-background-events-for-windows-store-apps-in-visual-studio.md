@@ -15,23 +15,23 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 8f5f650860c520f5fbe62ff49bbbb6190e163af8
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: d15a176fb378159407589af0b720d8310de8e29c
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68925464"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72450409"
 ---
-# <a name="how-to-trigger-suspend-resume-and-background-events-while-debugging-uwp-apps-in-visual-studio"></a>在 Visual Studio 中偵測 UWP 應用程式時, 如何觸發暫止、繼續和背景事件
+# <a name="how-to-trigger-suspend-resume-and-background-events-while-debugging-uwp-apps-in-visual-studio"></a>在 Visual Studio 中偵測 UWP 應用程式時，如何觸發暫止、繼續和背景事件
 
 不在偵錯模式時，由 Windows **處理程序生命週期管理** (PLM) 控制您應用程式的執行狀態：啟動、暫停、繼續和終止應用程式，以便回應使用者動作和裝置的狀態。 而處於偵錯模式時，Windows 會停用這些啟用事件。 本主題說明如何在偵錯工具中引發這些事件。
 
-本主題也將說明如何對 **背景工作**偵錯。 背景工作可讓您在背景進程中執行某些作業, 即使您的應用程式未執行也是如此。 您可以使用偵錯工具，將您的應用程式置於偵錯模式，接著無須啟動 UI，就能啟動背景工作並對其偵錯。
+本主題也將說明如何對 **背景工作**偵錯。 背景工作可讓您在背景進程中執行某些作業，即使您的應用程式未執行也是如此。 您可以使用偵錯工具，將您的應用程式置於偵錯模式，接著無須啟動 UI，就能啟動背景工作並對其偵錯。
 
-如需處理常式生命週期管理和背景工作的詳細資訊, 請參閱[啟動、繼續和多工](/windows/uwp/launch-resume/index)。
+如需處理常式生命週期管理和背景工作的詳細資訊，請參閱[啟動、繼續和多工](/windows/uwp/launch-resume/index)。
 
 ## <a name="BKMK_Trigger_Process_Lifecycle_Management_events"></a> 觸發處理程序生命週期管理事件
- 當使用者切換離開應用程式, 或當 Windows 進入低電源狀態時, windows 就會暫停您的應用程式。 您可以回應 `Suspending` 事件，將相關的應用程式和使用者資料儲存至永久儲存區，以便釋放資源。 當應用程式從「 **暫停** 」狀態繼續時，它會進入「 **執行中** 」狀態，並從上次暫停的地方繼續進行。 您可以回應 `Resuming` 事件，還原或重新整理應用程式狀態，以便回收資源。
+ 當使用者切換離開應用程式，或當 Windows 進入低電源狀態時，windows 就會暫停您的應用程式。 您可以回應 `Suspending` 事件，將相關的應用程式和使用者資料儲存至永久儲存區，以便釋放資源。 當應用程式從「 **暫停** 」狀態繼續時，它會進入「 **執行中** 」狀態，並從上次暫停的地方繼續進行。 您可以回應 `Resuming` 事件，還原或重新整理應用程式狀態，以便回收資源。
 
  Windows 會在記憶體中盡可能保留暫停的應用程式，但如果沒有足夠的資源得以在記憶體中保留這些應用程式，Windows 會終止它們。 使用者也可以明確關閉您的應用程式。 沒有特定事件用來指出使用者已關閉應用程式。
 
@@ -45,10 +45,10 @@ ms.locfileid: "68925464"
 
      ![暫止、繼續、結束和背景工作](../debugger/media/dbg_suspendresumebackground.png)
 
-     [**暫停] 和 [終止**] 會關閉應用程式, 並結束「debug」會話。
+     [**暫停] 和 [終止**] 會關閉應用程式，並結束「debug」會話。
 
 ## <a name="BKMK_Trigger_background_tasks"></a> 觸發背景工作
- 任何應用程式都可以登錄背景工作，以回應特定的系統事件 (即使應用程式並未執行)。 背景工作不能執行直接更新 UI 的程式碼，但它們可以透過動態磚更新、徽章更新和快顯通知，對使用者顯示資訊。 如需詳細資訊, 請參閱[使用背景工作支援您的應用程式](https://msdn.microsoft.com/library/4c7bb148-eb1f-4640-865e-41f627a46e8e)。
+ 任何應用程式都可以登錄背景工作，以回應特定的系統事件 (即使應用程式並未執行)。 背景工作不能執行直接更新 UI 的程式碼，但它們可以透過動態磚更新、徽章更新和快顯通知，對使用者顯示資訊。 如需詳細資訊，請參閱[使用背景工作支援您的應用程式](https://msdn.microsoft.com/library/4c7bb148-eb1f-4640-865e-41f627a46e8e)。
 
  您可以從偵錯工具觸發事件，啟動應用程式的背景工作。
 
@@ -73,17 +73,17 @@ ms.locfileid: "68925464"
 
 2. 開啟啟始專案的偵錯屬性頁。 在 [方案總管] 中選取專案。 在 [ **偵錯** ] 功能表上，選擇 [ **屬性**]。
 
-     針對C++ [專案], 展開 [設定**屬性**], 然後選擇 [**調試**程式]。
+     針對C++ [專案]，展開 [設定**屬性**]，然後選擇 [**調試**程式]。
 
 3. 執行下列任一步驟：
 
     - 若是 Visual C# 和 Visual Basic 專案，請選擇 [ **不啟動，但在我的程式碼啟動時進行偵錯**]。
 
-         ![ &#35;C&#47;VB debug 啟動應用程式屬性](../debugger/media/dbg_csvb_dontlaunchapp.png "DBG_CsVb_DontLaunchApp")
+         ![C&#35;&#47;VB debug 啟動應用程式屬性](../debugger/media/dbg_csvb_dontlaunchapp.png "DBG_CsVb_DontLaunchApp")
 
-    - 針對 Visual C++專案, 從 [**啟動應用程式**] 清單中選擇 [**否**]。
+    - 針對C++專案，從 [**啟動應用程式**] 清單中選擇 [**否**]。
 
-         ![ &#43;C&#43;VB&#47;啟動應用程式的 debug 屬性](../debugger/media/dbg_cppjs_dontlaunchapp.png "DBG_CppJs_DontLaunchApp")
+         ![&#43; &#43;C&#47;VB 啟動應用程式的 debug 屬性](../debugger/media/dbg_cppjs_dontlaunchapp.png "DBG_CppJs_DontLaunchApp")
 
 4. 按 **F5** 將應用程式置入偵錯模式。 請注意，[ **偵錯位置** ] 工具列的 [ **處理** ] 清單會顯示應用程式封裝名稱，表示您正處於偵錯模式。
 
@@ -91,10 +91,10 @@ ms.locfileid: "68925464"
 
 5. 從 [ **偵錯位置** ] 工具列的事件清單中，選擇您想要啟動的背景工作。
 
-     ![暫止、繼續、終止和背景]工作(../debugger/media/dbg_suspendresumebackground.png "DBG_SuspendResumeBackground")
+     ![暫止、繼續、終止和背景工作](../debugger/media/dbg_suspendresumebackground.png "DBG_SuspendResumeBackground")
 
 ## <a name="BKMK_Trigger_Process_Lifetime_Management_events_and_background_tasks_from_an_installed_app"></a> 從已安裝的應用程式觸發處理程序生命週期管理事件和背景工作
- 使用 [**已安裝的應用程式套件**] 對話方塊, 將已安裝的應用程式載入至偵錯工具。 例如, 您可能會在有應用程式的來源檔案, 而不是應用程式的 Visual Studio 專案時, 針對從 Microsoft Store 安裝的應用程式, 或在應用程式中進行 debug。 [**已安裝的應用程式套件**] 對話方塊可讓您在 Visual Studio 機或遠端裝置上, 以「偵測」模式啟動應用程式, 或將應用程式設定為以「偵測」模式執行, 但不啟動它。 如需詳細資訊, 請參閱[Debug 已安裝的應用程式套件](../debugger/debug-installed-app-package.md)。
+ 使用 [**已安裝的應用程式套件**] 對話方塊，將已安裝的應用程式載入至偵錯工具。 例如，您可能會在有應用程式的來源檔案，而不是應用程式的 Visual Studio 專案時，針對從 Microsoft Store 安裝的應用程式，或在應用程式中進行 debug。 [**已安裝的應用程式套件**] 對話方塊可讓您在 Visual Studio 機或遠端裝置上，以「偵測」模式啟動應用程式，或將應用程式設定為以「偵測」模式執行，但不啟動它。 如需詳細資訊，請參閱[Debug 已安裝的應用程式套件](../debugger/debug-installed-app-package.md)。
 
  將應用程式載入至偵錯工具後，您就能使用上述任何程序。
 
@@ -109,7 +109,7 @@ ms.locfileid: "68925464"
 
 4. 選擇 [ **診斷** ] 記錄檔。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [使用 Visual Studio 測試 UWP App](../test/testing-store-apps-with-visual-studio.md)
 - [在 Visual Studio 中偵錯應用程式](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps)
 - [應用程式生命週期](/windows/uwp/launch-resume/app-lifecycle)

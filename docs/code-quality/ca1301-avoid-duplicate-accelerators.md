@@ -1,5 +1,5 @@
 ---
-title: CA1301:避免使用重複的快速鍵
+title: CA1301：避免使用重複的快速鍵
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,24 +14,24 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f50be12f4d601161ec20659bbb6b710e5a7cf24
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 1970eefee70fa14179c77566f23f213f09026646
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71235170"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72444390"
 ---
-# <a name="ca1301-avoid-duplicate-accelerators"></a>CA1301:避免使用重複的快速鍵
+# <a name="ca1301-avoid-duplicate-accelerators"></a>CA1301：避免使用重複的快速鍵
 
 |||
 |-|-|
 |TypeName|AvoidDuplicateAccelerators|
 |CheckId|CA1301|
-|分類|Microsoft.Globalization|
+|分類|Microsoft。全球化|
 |重大變更|不中斷|
 
 ## <a name="cause"></a>原因
-型別會<xref:System.Windows.Forms.Control?displayProperty=fullName>擴充並包含兩個或多個具有相同存取金鑰（儲存在資源檔中）的最上層控制項。
+型別會擴充 <xref:System.Windows.Forms.Control?displayProperty=fullName>，並包含兩個或多個具有儲存在資源檔中相同存取金鑰的最上層控制項。
 
 ## <a name="rule-description"></a>規則描述
 
@@ -46,11 +46,11 @@ ms.locfileid: "71235170"
 請勿隱藏此規則的警告。
 
 ## <a name="example"></a>範例
-下列範例顯示的是包含兩個具有相同存取金鑰之控制項的最小表單。 金鑰會儲存在資源檔中，而不會顯示。 不過，它們的值會出現在已`checkBox.Text`加上批註的行中。 您可以藉由交換`checkBox.Text`行與其批註化的對應項，來檢查重複快速鍵的行為。 不過，在此情況下，此範例不會從規則產生警告。
+下列範例顯示的是包含兩個具有相同存取金鑰之控制項的最小表單。 金鑰會儲存在資源檔中，而不會顯示。 不過，它們的值會出現在已加上批註的 `checkBox.Text` 行中。 您可以藉由交換 `checkBox.Text` 行與其批註化的對應專案，來檢查重複快速鍵的行為。 不過，在此情況下，此範例不會從規則產生警告。
 
 [!code-csharp[FxCop.Globalization.AvoidDuplicateAccels#1](../code-quality/codesnippet/CSharp/ca1301-avoid-duplicate-accelerators_1.cs)]
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - <xref:System.Resources.ResourceManager?displayProperty=fullName>
 - [桌面應用程式中的資源](/dotnet/framework/resources/index)

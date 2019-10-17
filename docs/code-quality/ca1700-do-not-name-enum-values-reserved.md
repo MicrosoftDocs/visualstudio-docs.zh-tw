@@ -1,5 +1,5 @@
 ---
-title: CA1700:不要為保留的列舉&#39;值命名&#39;
+title: CA1700：不要為保留的列舉&#39;值命名&#39;
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,20 +14,20 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5171123827481c99bbc35c10b04aaf942a15fabb
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 7642885a953f4974a9440acced027552bd64f72e
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71234381"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72439989"
 ---
-# <a name="ca1700-do-not-name-enum-values-39reserved39"></a>CA1700:不要為保留的列舉&#39;值命名&#39;
+# <a name="ca1700-do-not-name-enum-values-39reserved39"></a>CA1700：不要為保留的列舉&#39;值命名&#39;
 
 |||
 |-|-|
 |TypeName|DoNotNameEnumValuesReserved|
 |CheckId|CA1700|
-|分類|Microsoft.Naming|
+|分類|Microsoft. 命名|
 |重大變更|中斷|
 
 ## <a name="cause"></a>原因
@@ -40,11 +40,11 @@ ms.locfileid: "71234381"
 
 不使用保留成員，而是在未來版本的列舉中加入新成員。 在大多數情況下，加入新成員不是重大變更，只要加法不會造成原始成員的值變更。
 
-在有限的情況下，即使原始成員保留其原始值，新增成員也是一項重大變更。 主要而言，新成員無法從現有的程式碼路徑傳回，而不會中斷`switch`呼叫端[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]在包含整個成員清單並于中擲回例外狀況的呼叫端。`Select`預設案例。 次要考慮的是，用戶端程式代碼可能不會處理反映方法（例如） <xref:System.Enum.IsDefined%2A?displayProperty=fullName>的行為變更。 因此，如果新成員必須從現有的方法傳回，或已知的應用程式不相容，因為反映使用量不佳，則唯一不間斷的解決方案是：
+在有限的情況下，即使原始成員保留其原始值，新增成員也是一項重大變更。 主要而言，新成員無法從現有的程式碼路徑傳回，而不會中斷呼叫端（在包含整個成員清單的傳回值上使用 `switch` （@no__t-@no__t 1）語句，而且會在預設情況下擲回例外狀況。 次要考慮是用戶端程式代碼可能不會處理反映方法（例如 <xref:System.Enum.IsDefined%2A?displayProperty=fullName>）的行為變更。 因此，如果新成員必須從現有的方法傳回，或已知的應用程式不相容，因為反映使用量不佳，則唯一不間斷的解決方案是：
 
 1. 加入包含原始和新成員的新列舉。
 
-2. 將原始列舉標記為<xref:System.ObsoleteAttribute?displayProperty=fullName>屬性。
+2. 將原始列舉標記為 <xref:System.ObsoleteAttribute?displayProperty=fullName> 屬性。
 
    針對任何外部可見的類型或公開原始列舉的成員，遵循相同的程式。
 
@@ -58,12 +58,12 @@ ms.locfileid: "71234381"
 
 ## <a name="related-rules"></a>相關規則
 
-[CA2217不要以 FlagsAttribute 標記列舉](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)
+[CA2217：不要以 FlagsAttribute 標記列舉](../code-quality/ca2217.md)
 
-[CA1712不要使用類型名稱做為列舉值的前置詞](../code-quality/ca1712-do-not-prefix-enum-values-with-type-name.md)
+[CA1712：不要使用類型名稱做為列舉值的前置字元](../code-quality/ca1712-do-not-prefix-enum-values-with-type-name.md)
 
-[CA1028列舉儲存區應該是 Int32](../code-quality/ca1028-enum-storage-should-be-int32.md)
+[CA1028：列舉儲存區應該是 Int32](../code-quality/ca1028-enum-storage-should-be-int32.md)
 
-[CA1008列舉的值應該為零](../code-quality/ca1008-enums-should-have-zero-value.md)
+[CA1008：列舉值中應該要有值為零的成員](../code-quality/ca1008-enums-should-have-zero-value.md)
 
-[CA1027 必須使用 FlagsAttribute 標記列舉](../code-quality/ca1027-mark-enums-with-flagsattribute.md)
+[CA1027：必須以 FlagsAttribute 標記列舉](../code-quality/ca1027-mark-enums-with-flagsattribute.md)

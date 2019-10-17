@@ -1,5 +1,5 @@
 ---
-title: CA1721:屬性名稱不應該和其中有 get 的方法名稱相符
+title: CA1721：屬性名稱不能和其中有 get 的方法名稱相符
 ms.date: 03/11/2019
 ms.topic: reference
 f1_keywords:
@@ -17,20 +17,20 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 805ceb7abf7096df29894a23be6c8e7b1f6bd5b2
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 719f5ffe3cd3fd7a897aeaff270a1e32661ae590
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71233911"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72438935"
 ---
-# <a name="ca1721-property-names-should-not-match-get-methods"></a>CA1721:屬性名稱不應該和其中有 get 的方法名稱相符
+# <a name="ca1721-property-names-should-not-match-get-methods"></a>CA1721：屬性名稱不能和其中有 get 的方法名稱相符
 
 |||
 |-|-|
 |TypeName|PropertyNamesShouldNotMatchGetMethods|
 |CheckId|CA1721|
-|分類|Microsoft.Naming|
+|分類|Microsoft. 命名|
 |重大變更|中斷|
 
 ## <a name="cause"></a>原因
@@ -75,4 +75,4 @@ dotnet_code_quality.ca1721.api_surface = private, internal
 
 ## <a name="related-rules"></a>相關規則
 
-- [CA1024 建議適當時使用屬性](../code-quality/ca1024-use-properties-where-appropriate.md)
+- [CA1024：建議在適當時使用屬性](../code-quality/ca1024-use-properties-where-appropriate.md)

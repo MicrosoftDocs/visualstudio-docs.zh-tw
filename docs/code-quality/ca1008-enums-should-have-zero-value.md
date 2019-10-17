@@ -1,5 +1,5 @@
 ---
-title: CA1008:列舉值中應該要有值為零的成員
+title: CA1008：列舉值中應該要有值為零的成員
 ms.date: 03/11/2019
 ms.topic: reference
 f1_keywords:
@@ -18,25 +18,25 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: c9b6e48fb82be5a41c420827a32926630bb725ed
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: f981d7ec12d49acc0e3d33ded5b27e855d9f0923
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71236495"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72441690"
 ---
-# <a name="ca1008-enums-should-have-zero-value"></a>CA1008:列舉值中應該要有值為零的成員
+# <a name="ca1008-enums-should-have-zero-value"></a>CA1008：列舉值中應該要有值為零的成員
 
 |||
 |-|-|
 |TypeName|EnumsShouldHaveZeroValue|
 |CheckId|CA1008|
-|分類|Microsoft.Design|
+|分類|Microsoft. Design|
 |重大變更|不中斷-當系統提示您將**None**值新增至非旗標列舉時。 中斷-當系統提示您重新命名或移除任何列舉值時。|
 
 ## <a name="cause"></a>原因
 
-未套用的列舉<xref:System.FlagsAttribute?displayProperty=fullName>不會定義值為零的成員。 或者，已<xref:System.FlagsAttribute>套用的列舉會定義值為零的成員，但其名稱不是 ' None '。 或者，列舉會定義多個零值的成員。
+沒有套用 <xref:System.FlagsAttribute?displayProperty=fullName> 的列舉不會定義值為零的成員。 或者，已套用 <xref:System.FlagsAttribute> 的列舉會定義值為零的成員，但其名稱不是 ' None '。 或者，列舉會定義多個零值的成員。
 
 根據預設，此規則只會查看外部可見的列舉，但這是[可](#configurability)設定的。
 
@@ -44,7 +44,7 @@ ms.locfileid: "71236495"
 
 未初始化列舉的預設值與其他實數值型別一樣，是零。 非旗標屬性列舉應定義值為零的成員，讓預設值是列舉的有效值。 如有需要，請將成員命名為 ' None '。 否則，請將零指派給最常使用的成員。 根據預設，如果宣告中未設定第一個列舉成員的值，其值為零。
 
-如果已套用的<xref:System.FlagsAttribute>列舉定義了零值成員，其名稱應該是 ' None '，表示列舉中未設定任何值。 針對任何其他目的使用零值成員，會與使用<xref:System.FlagsAttribute>相同，因為和和或位運算子對成員毫無用處。 這表示應該只將值零指派給一個成員。 如果有多個值為零的成員出現在旗標屬性列舉中`Enum.ToString()` ，則會針對非零的成員傳回不正確的結果。
+如果套用了 <xref:System.FlagsAttribute> 的列舉定義了零值的成員，其名稱應該是 ' None '，表示列舉中未設定任何值。 針對任何其他目的使用零值成員，與使用 <xref:System.FlagsAttribute> 相反，因為和和或位運算子對成員毫無用處。 這表示應該只將值零指派給一個成員。 如果有多個值為零的成員出現在旗標屬性列舉中，`Enum.ToString()` 會針對不是零的成員傳回不正確的結果。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
 
@@ -66,7 +66,7 @@ dotnet_code_quality.ca1008.api_surface = private, internal
 
 ## <a name="example"></a>範例
 
-下列範例顯示兩個符合規則的列舉，以及違反規則的`BadTraceOptions`列舉。
+下列範例顯示兩個符合規則的列舉，以及違反規則 @no__t 0。
 
 [!code-cpp[FxCop.Design.EnumsZeroValue#1](../code-quality/codesnippet/CPP/ca1008-enums-should-have-zero-value_1.cpp)]
 [!code-csharp[FxCop.Design.EnumsZeroValue#1](../code-quality/codesnippet/CSharp/ca1008-enums-should-have-zero-value_1.cs)]
@@ -74,12 +74,12 @@ dotnet_code_quality.ca1008.api_surface = private, internal
 
 ## <a name="related-rules"></a>相關規則
 
-- [CA2217不要以 FlagsAttribute 標記列舉](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)
-- [CA1700不要將列舉值命名為「Reserved」](../code-quality/ca1700-do-not-name-enum-values-reserved.md)
-- [CA1712不要使用類型名稱做為列舉值的前置詞](../code-quality/ca1712-do-not-prefix-enum-values-with-type-name.md)
-- [CA1028列舉儲存區應該是 Int32](../code-quality/ca1028-enum-storage-should-be-int32.md)
-- [CA1027 必須使用 FlagsAttribute 標記列舉](../code-quality/ca1027-mark-enums-with-flagsattribute.md)
+- [CA2217：不要以 FlagsAttribute 標記列舉](../code-quality/ca2217.md)
+- [CA1700：不要在列舉值名稱中包含 'Reserved'](../code-quality/ca1700-do-not-name-enum-values-reserved.md)
+- [CA1712：不要使用類型名稱做為列舉值的前置字元](../code-quality/ca1712-do-not-prefix-enum-values-with-type-name.md)
+- [CA1028：列舉儲存區應該是 Int32](../code-quality/ca1028-enum-storage-should-be-int32.md)
+- [CA1027：必須以 FlagsAttribute 標記列舉](../code-quality/ca1027-mark-enums-with-flagsattribute.md)
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - <xref:System.Enum?displayProperty=fullName>

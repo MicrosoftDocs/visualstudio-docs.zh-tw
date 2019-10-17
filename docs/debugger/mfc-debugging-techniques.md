@@ -1,5 +1,5 @@
 ---
-title: MFC 偵錯技術 |Microsoft Docs
+title: MFC 調試技術 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -25,12 +25,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f2cd5345de8dfe62e56722a8e36713c6062b3cb
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.openlocfilehash: 1380cf2cfd4d1ffe729fdd4a6ce9cfb2ba7d9ab6
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67693037"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72435653"
 ---
 # <a name="mfc-debugging-techniques"></a>MFC 偵錯技術
 如果您正在偵錯 MFC 程式，這些偵錯技術可能很有幫助。
@@ -97,7 +97,7 @@ TRACE( "x = %d and y = %d\n", x, y );
 TRACE( "x = %d and y = %x and z = %f\n", x, y, z );
 ```
 
-TRACE 巨集適當地處理這兩個 char\*和 wchar_t\*參數。 下列範例示範搭配不同類型的字串參數來使用 TRACE 巨集。
+TRACE 宏會適當地處理 char @ no__t-0 和 wchar_t @ no__t-1 參數。 下列範例示範搭配不同類型的字串參數來使用 TRACE 巨集。
 
 ```cpp
 TRACE( "This is a test of the TRACE macro that uses an ANSI string: %s %d\n", "The number is:", 2);
@@ -185,7 +185,7 @@ MFC 架構的偵錯版本會自動使用 `DEBUG_NEW` ，但是您的程式碼不
     #endif
     ```
 
-    請注意，記憶體檢查陳述式會括住 **#ifdef _DEBUG / #endif**區塊，使得它們只會中編譯程式的偵錯版本。
+    請注意，記憶體檢查語句會以 **#ifdef _debug/#endif**組塊括住，因此它們只會在程式的 DEBUG 版本中進行編譯。
 
     您知道有記憶體流失的狀況存在之後，可以使用另一個成員函式 [CMemoryState::DumpStatistics](/cpp/mfc/reference/cmemorystate-structure#dumpstatistics) 幫助您尋找流失的記憶體。
 
@@ -227,7 +227,7 @@ Total allocations: 67 bytes
 [本主題內容](#BKMK_In_this_topic)
 
 ### <a name="BKMK_Taking_object_dumps"></a> 取得物件傾印
-在 MFC 程式中，您可以使用[cmemorystate:: Dumpallobjectssince](/cpp/mfc/reference/cmemorystate-structure#dumpallobjectssince)傾印堆積上尚未解除配置的所有物件的描述。 `DumpAllObjectsSince` 會傾印從上一個 [CMemoryState::Checkpoint](/cpp/mfc/reference/cmemorystate-structure#checkpoint)。 如果沒有發生 `Checkpoint` 呼叫， `DumpAllObjectsSince` 會傾印目前在記憶體的所有物件和非物件。
+在 MFC 程式中，您可以使用[CMemoryState：:D umpallobjectssince](/cpp/mfc/reference/cmemorystate-structure#dumpallobjectssince)來傾印堆積上尚未解除配置之所有物件的描述。 `DumpAllObjectsSince` 會傾印從上一個 [CMemoryState::Checkpoint](/cpp/mfc/reference/cmemorystate-structure#checkpoint)。 如果沒有發生 `Checkpoint` 呼叫， `DumpAllObjectsSince` 會傾印目前在記憶體的所有物件和非物件。
 
 > [!NOTE]
 > 您必須先 [啟用診斷追蹤](#BKMK_Enabling_memory_diagnostics)，才能使用 MFC 物件傾印。
@@ -413,16 +413,16 @@ pMyPerson->Dump( afxDump );
 ## <a name="BKMK_Reducing_the_size_of_an_MFC_Debug_build"></a> 減少 MFC 偵錯組建的大小
 大型 MFC 應用程式的偵錯資訊可能需要大量的磁碟空間。 您可以使用下列其中一項程序縮減大小：
 
-1. 重建使用 MFC 程式庫[/z7，/Zi，/ZI （偵錯資訊格式）](/cpp/build/reference/z7-zi-zi-debug-information-format)選項，而不是 **/z7**。 這些選項會建置包含整個程式庫的偵錯資訊，以降低重複性並且節省空間的單一程式資料庫 (PDB) 檔。
+1. 使用[/Z7、/zi、/zi （Debug 資訊格式）](/cpp/build/reference/z7-zi-zi-debug-information-format)選項重建 MFC 程式庫，而不是 **/Z7**。 這些選項會建置包含整個程式庫的偵錯資訊，以降低重複性並且節省空間的單一程式資料庫 (PDB) 檔。
 
-2. 重建 MFC 程式庫，沒有偵錯資訊 (沒有[/z7，/Zi，/ZI （偵錯資訊格式）](/cpp/build/reference/z7-zi-zi-debug-information-format)選項)。 在這個範例裡，缺乏偵錯資訊讓您無法在 MFC 程式庫程式碼裡使用大多數的偵錯工具設施，然而由於 MFC 程式庫已經充分偵錯過了，所以這不是問題。
+2. 重建不含 debug 資訊的 MFC 程式庫（無[/Z7、/zi、/zi （Debug 資訊格式）](/cpp/build/reference/z7-zi-zi-debug-information-format)選項）。 在這個範例裡，缺乏偵錯資訊讓您無法在 MFC 程式庫程式碼裡使用大多數的偵錯工具設施，然而由於 MFC 程式庫已經充分偵錯過了，所以這不是問題。
 
 3. 只以選取模組的偵錯資訊建置您自己的應用程式，如下所述。
 
     [本主題內容](#BKMK_In_this_topic)
 
 ### <a name="BKMK_Building_an_MFC_app_with_debug_information_for_selected_modules"></a> 以選取的模組之偵錯資訊來建置 MFC 應用程式
-以 MFC 偵錯程式庫建置選取模組，可以讓您在這些模組裡使用逐步執行的方法和其他偵錯設施。 這個程序利用 Visual C++ Makefile 的偵錯和發行模式，因此必要的變更說明如下列步驟 (此外在需要完整發行組建時，「全部重建」是必須的)：
+以 MFC 偵錯程式庫建置選取模組，可以讓您在這些模組裡使用逐步執行的方法和其他偵錯設施。 此程式會使用專案的「偵錯工具」和「發行」設定，因此會強制下列步驟中所述的變更（當需要完整發行組建時，也會進行「全部重建」必要）。
 
 1. 在 [方案總管] 中選取專案。
 
@@ -430,15 +430,15 @@ pMyPerson->Dump( afxDump );
 
 3. 首先，您要建立新專案組態。
 
-   1. 在 [\<專案> 屬性頁]  對話方塊中，按一下 [組態管理員]  按鈕。
+   1. 在 [\<專案> 屬性頁] 對話方塊中，按一下 [組態管理員] 按鈕。
 
-   2. 在 [組態管理員對話方塊](/previous-versions/visualstudio/visual-studio-2010/t1hy4dhz(v=vs.100))裡，在方格中尋找專案。 在 [組態]  一欄中，選取 [\<新增...>]  。
+   2. 在 [組態管理員對話方塊](/previous-versions/visualstudio/visual-studio-2010/t1hy4dhz(v=vs.100))裡，在方格中尋找專案。 在 [組態] 一欄中，選取 [\<新增...>]。
 
    3. 在 [新增專案組態對話方塊](/previous-versions/visualstudio/visual-studio-2010/0eh8w4cf(v=vs.100))裡，於 [ **專案組態名稱** ] 方塊內輸入新組態的名稱，例如「部分偵錯」。
 
    4. 在 [ **複製設定值** ] 清單裡，選擇 [ **發行**]。
 
-   5. 按一下 [ **[確定]** 以關閉**新的專案組態**] 對話方塊。
+   5. 按一下 **[確定]** 以關閉 [**新增專案**設定] 對話方塊。
 
    6. 關閉 [ **組態管理員** ] 對話方塊。
 
@@ -468,11 +468,11 @@ pMyPerson->Dump( afxDump );
 
    4. 在 [ **屬性頁** ] 對話方塊的 [ **組態設定** ] 資料夾底下，開啟 [ **C/C++** ] 資料夾，然後選取 [ **一般** ] 分類。
 
-   5. 在屬性方格中，尋找 [偵錯資訊格式]。 
+   5. 在屬性方格中，尋找 [偵錯資訊格式]。
 
    6. 按一下 [ **偵錯資訊格式** ] 設定並且選取偵錯資訊需要的選項 (通常是 [ **/ZI**])。
 
-   7. 如果您要使用應用程式精靈所產生的應用程式，或者您有先行編譯的標頭，則必須關閉先行編譯的標頭，或在編譯其他模組之前重新編譯這些標頭。 否則，您會收到警告 C4650 和錯誤訊息 C2855。 若要關閉先行編譯標頭檔，可以變更 [\<專案> 屬性]  對話方塊中的 [建立/使用先行編譯標頭檔]  設定 (依序選取 [組態屬性]  資料夾、[C/C++]  子資料夾、[先行編譯標頭檔]  分類)。
+   7. 如果您要使用應用程式精靈所產生的應用程式，或者您有先行編譯的標頭，則必須關閉先行編譯的標頭，或在編譯其他模組之前重新編譯這些標頭。 否則，您會收到警告 C4650 和錯誤訊息 C2855。 若要關閉先行編譯標頭檔，可以變更 [\<專案> 屬性] 對話方塊中的 [建立/使用先行編譯標頭檔] 設定 (依序選取 [組態屬性] 資料夾、[C/C++] 子資料夾、[先行編譯標頭檔] 分類)。
 
 7. 從 [ **建置** ] 功能表，選取 [ **建置** ] 來重建過期的專案檔案。
 
@@ -480,5 +480,5 @@ pMyPerson->Dump( afxDump );
 
    [本主題內容](#BKMK_In_this_topic)
 
-## <a name="see-also"></a>另請參閱
-[偵錯 Visual C++](../debugger/debugging-native-code.md)
+## <a name="see-also"></a>請參閱
+[偵錯機器碼](../debugger/debugging-native-code.md)

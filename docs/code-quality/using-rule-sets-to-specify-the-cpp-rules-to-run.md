@@ -9,12 +9,12 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 64421350f74a2fadcb8a4d4845d8aa00a5f5813b
-ms.sourcegitcommit: e95dd8cedcd180e0bce6a75c86cf861757918290
+ms.openlocfilehash: 8e25e28c2ff20a628058d5dfa71de0368fbe9249
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "72163094"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72445617"
 ---
 # <a name="use-rule-sets-to-specify-the-c-rules-to-run"></a>使用規則集指定要執行C++的規則
 
@@ -38,7 +38,7 @@ ms.locfileid: "72163094"
 
      \-或-
 
-   - 選擇 **\<瀏覽>** ，指定現有的規則集不在清單中。
+   - 選擇 **\<Browse .。。>** ，指定不在清單中的現有規則集。
 
 4. 選擇 [**開啟**] 以顯示規則集編輯器中的規則。
 
@@ -66,7 +66,7 @@ ms.locfileid: "72163094"
 
 - 若要折迭所有群組中的規則，**請選擇 [全部折**迭]。
 
-- 若要變更規則分組依據的欄位，請從 [**分組方式**] 清單中選擇欄位。 若要顯示未分組的規則，請選擇 **\<無>** 。
+- 若要變更規則分組依據的欄位，請從 [**分組方式**] 清單中選擇欄位。 若要顯示未分組的規則，請選擇 [ **\<None >** ]。
 
 - 若要在規則資料行中新增或移除欄位，請選擇 [**資料行選項**]。
 

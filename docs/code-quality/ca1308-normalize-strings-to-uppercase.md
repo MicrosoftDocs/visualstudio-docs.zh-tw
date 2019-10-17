@@ -1,5 +1,5 @@
 ---
-title: CA1308:必須將字串標準化為大寫字母
+title: CA1308：必須將字串標準化為大寫字母
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,20 +14,20 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c33f4b0b55728d659c34e0ffc8723f555a6d074d
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: a217e3882cbf90365f507623347a3846ed30187a
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71234920"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72444314"
 ---
-# <a name="ca1308-normalize-strings-to-uppercase"></a>CA1308:必須將字串標準化為大寫字母
+# <a name="ca1308-normalize-strings-to-uppercase"></a>CA1308：必須將字串標準化為大寫字母
 
 |||
 |-|-|
 |TypeName|NormalizeStringsToUppercase|
 |CheckId|CA1308|
-|分類|Microsoft.Globalization|
+|分類|Microsoft。全球化|
 |重大變更|不中斷|
 
 ## <a name="cause"></a>原因
@@ -42,5 +42,5 @@ ms.locfileid: "71234920"
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
 當您不是根據結果來進行安全性決策時（例如，當您在 UI 中顯示時），可以放心地隱藏警告訊息。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 [全球化警告](../code-quality/globalization-warnings.md)

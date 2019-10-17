@@ -1,5 +1,5 @@
 ---
-title: CA1717:只有 FlagsAttribute 列舉應該使用複數名稱
+title: CA1717：只有 FlagsAttribute 列舉應該使用複數名稱
 ms.date: 03/11/2019
 ms.topic: reference
 f1_keywords:
@@ -14,39 +14,39 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b352d8f49cb92f70b449427179229fd882dbc9ce
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: f0b17c4bff325fd87ebd5ac0311c412e40bccb30
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71234065"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72443850"
 ---
-# <a name="ca1717-only-flagsattribute-enums-should-have-plural-names"></a>CA1717:只有 FlagsAttribute 列舉應該使用複數名稱
+# <a name="ca1717-only-flagsattribute-enums-should-have-plural-names"></a>CA1717：只有 FlagsAttribute 列舉應該使用複數名稱
 
 |||
 |-|-|
 |TypeName|OnlyFlagsEnumsShouldHavePluralNames|
 |CheckId|CA1717|
-|分類|Microsoft.Naming|
+|分類|Microsoft. 命名|
 |重大變更|中斷|
 
 ## <a name="cause"></a>原因
 
-列舉的名稱會以複數單字結束，而且列舉不會以<xref:System.FlagsAttribute?displayProperty=fullName>屬性標記。
+列舉的名稱會以複數字尾結束，而且列舉不會以 <xref:System.FlagsAttribute?displayProperty=fullName> 屬性標記。
 
 根據預設，此規則只會查看外部可見的列舉，但這是[可](#configurability)設定的。
 
 ## <a name="rule-description"></a>規則描述
 
-命名慣例規定列舉的複數名稱表示可以同時指定一個以上的列舉值。 會<xref:System.FlagsAttribute>告訴編譯器，應將列舉視為位欄位，以便在列舉上啟用位運算。
+命名慣例規定列舉的複數名稱表示可以同時指定一個以上的列舉值。 @No__t-0 會告訴編譯器，應將列舉視為位欄位，以啟用列舉的位運算。
 
-如果一次只能指定一個列舉值，則列舉的名稱應該是單數單字。 例如，定義一周天數的列舉可能會用於可指定多天的應用程式中。 此列舉應該具有<xref:System.FlagsAttribute> ，而且可以稱為「天」。 只允許指定一天的類似列舉不會有屬性，而且可以稱為「天」。
+如果一次只能指定一個列舉值，則列舉的名稱應該是單數單字。 例如，定義一周天數的列舉可能會用於可指定多天的應用程式中。 此列舉應具有 <xref:System.FlagsAttribute>，而且可以稱為「天」。 只允許指定一天的類似列舉不會有屬性，而且可以稱為「天」。
 
 命名慣例提供以通用語言執行時間為目標之程式庫的常見外觀。 這可減少學習新軟體程式庫所需的時間，並提高客戶對於開發 managed 程式碼的專業知識而開發之程式庫的信心。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
 
-將列舉的名稱設為單數單字，或加入<xref:System.FlagsAttribute>。
+將列舉的名稱設為單數單字，或加入 <xref:System.FlagsAttribute>。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
 
@@ -64,11 +64,11 @@ dotnet_code_quality.ca1717.api_surface = private, internal
 
 ## <a name="related-rules"></a>相關規則
 
-- [CA1714旗標列舉應具有複數名稱](../code-quality/ca1714-flags-enums-should-have-plural-names.md)
-- [CA1027 必須使用 FlagsAttribute 標記列舉](../code-quality/ca1027-mark-enums-with-flagsattribute.md)
-- [CA2217不要以 FlagsAttribute 標記列舉](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)
+- [CA1714：旗標列舉應該使用複數名稱](../code-quality/ca1714-flags-enums-should-have-plural-names.md)
+- [CA1027：必須以 FlagsAttribute 標記列舉](../code-quality/ca1027-mark-enums-with-flagsattribute.md)
+- [CA2217：不要以 FlagsAttribute 標記列舉](../code-quality/ca2217.md)
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - <xref:System.FlagsAttribute?displayProperty=fullName>
 - [列舉設計](/dotnet/standard/design-guidelines/enum)

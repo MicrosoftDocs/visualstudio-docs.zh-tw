@@ -1,5 +1,5 @@
 ---
-title: CA1701:資源字串複合字應該使用正確的大小寫
+title: CA1701：資源字串複合字應該使用正確的大小寫
 ms.date: 03/28/2018
 ms.topic: reference
 f1_keywords:
@@ -14,20 +14,20 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ed5ae8c0845755fe626e7e801f500389f9263cf5
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: c5d7aa3c29ca8ba82f6c50b070c5210cf10d1884
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71234367"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72443925"
 ---
-# <a name="ca1701-resource-string-compound-words-should-be-cased-correctly"></a>CA1701:資源字串複合字應該使用正確的大小寫
+# <a name="ca1701-resource-string-compound-words-should-be-cased-correctly"></a>CA1701：資源字串複合字應該使用正確的大小寫
 
 |||
 |-|-|
 |TypeName|ResourceStringCompoundWordsShouldBeCasedCorrectly|
 |CheckId|CA1701|
-|分類|Microsoft.Naming|
+|分類|Microsoft. 命名|
 |重大變更|不中斷|
 
 ## <a name="cause"></a>原因
@@ -48,8 +48,8 @@ ms.locfileid: "71234367"
 
 根據預設，會使用拼寫檢查的英文（en）版本。 如果您想要變更拼寫檢查的語言，您可以將下列其中一個屬性新增至*AssemblyInfo.cs*或*AssemblyInfo .vb*檔案來執行此動作：
 
-- 如果<xref:System.Reflection.AssemblyCultureAttribute>您的資源是在附屬元件中，請使用來指定文化特性。
-- 如果<xref:System.Resources.NeutralResourcesLanguageAttribute>您的資源與您的程式碼位於相同的元件，請使用來指定元件的*中性文化*特性。
+- 如果您的資源是在附屬元件中，請使用 <xref:System.Reflection.AssemblyCultureAttribute> 來指定文化特性。
+- 如果您的資源與您的程式碼位於相同的元件，請使用 <xref:System.Resources.NeutralResourcesLanguageAttribute> 來指定元件的*中性文化*特性。
 
 > [!IMPORTANT]
 > 如果您將文化特性設定為英文文化特性以外的任何專案，則會以無訊息模式停用此程式碼分析規則。
@@ -58,15 +58,15 @@ ms.locfileid: "71234367"
 
 如果拼寫字典能夠辨識複合單字的兩個部分，而且其目的是要使用兩個字組，則可放心地隱藏此規則的警告。
 
-您也可以在拼寫檢查的自訂字典中加入複合字組。 自訂字典中的單字不會造成違規。 如需詳細資訊，請參閱[如何：自訂程式碼分析](../code-quality/how-to-customize-the-code-analysis-dictionary.md)字典。
+您也可以在拼寫檢查的自訂字典中加入複合字組。 自訂字典中的單字不會造成違規。 如需詳細資訊，請參閱[如何：自訂程式碼分析字典](../code-quality/how-to-customize-the-code-analysis-dictionary.md)。
 
 ## <a name="related-rules"></a>相關規則
 
-- [CA1702複合字的大小寫應該正確](../code-quality/ca1702-compound-words-should-be-cased-correctly.md)
-- [CA1709識別碼的大小寫應該正確](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
-- [CA1708識別碼應該不同于大小寫](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
+- [CA1702：複合字應該使用正確的大小寫](../code-quality/ca1702-compound-words-should-be-cased-correctly.md)
+- [CA1709：識別項名稱應該使用正確的大小寫](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
+- [CA1708：識別項名稱不應該只靠大小寫區別](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [大小寫慣例](/dotnet/standard/design-guidelines/capitalization-conventions)
 - [命名方針](/dotnet/standard/design-guidelines/naming-guidelines)

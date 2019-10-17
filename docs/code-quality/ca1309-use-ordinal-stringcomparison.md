@@ -1,5 +1,5 @@
 ---
-title: CA1309:使用循序的 StringComparison
+title: CA1309：使用循序的 StringComparison
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,38 +14,38 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eff846cfacb30d97c28cadd14b86f7724b1d2ce4
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: e5274352a867c4c25c5fc68fd674c1e4c4855c2d
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71234929"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72440624"
 ---
-# <a name="ca1309-use-ordinal-stringcomparison"></a>CA1309:使用循序的 StringComparison
+# <a name="ca1309-use-ordinal-stringcomparison"></a>CA1309：使用循序的 StringComparison
 
 |||
 |-|-|
 |TypeName|UseOrdinalStringComparison|
 |CheckId|CA1309|
-|分類|Microsoft.Globalization|
+|分類|Microsoft。全球化|
 |重大變更|不中斷|
 
 ## <a name="cause"></a>原因
 
-Nonlinguistic 的字串比較運算不會將<xref:System.StringComparison>參數設定為**序數**或**OrdinalIgnoreCase**。
+Nonlinguistic 的字串比較作業並不會將 <xref:System.StringComparison> 參數設定為**序數**或**OrdinalIgnoreCase**。
 
 ## <a name="rule-description"></a>規則描述
-許多字串作業（最重要的<xref:System.String.Compare%2A?displayProperty=fullName>是<xref:System.String.Equals%2A?displayProperty=fullName>和方法）現在提供<xref:System.StringComparison?displayProperty=fullName>可接受列舉值做為參數的多載。
+許多字串作業（最重要的是 <xref:System.String.Compare%2A?displayProperty=fullName> 和 @no__t 1 方法）現在提供可接受 @no__t 2 列舉值做為參數的多載。
 
 當您指定**StringComparison**或**StringComparison**時，字串比較為非語言。 也就是說，在進行比較決策時，會忽略自然語言特有的功能。 忽略自然語言功能表示決策是根據簡單的位元組比較，而不是以文化特性參數化的大小寫或等價資料表為基礎。 因此，藉由明確地將參數設定為**StringComparison**或**StringComparison**，您的程式碼通常會獲得速度、提高正確性，而且變得更可靠。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
-若要修正此規則的違規情形，請將字串比較方法變更為接受<xref:System.StringComparison?displayProperty=fullName>列舉的多載，並指定**序數**或**OrdinalIgnoreCase**。 例如，將 `String.Compare(str1, str2)` 變更為 `String.Compare(str1, str2, StringComparison.Ordinal)`。
+若要修正此規則的違規，請將字串比較方法變更為可接受 <xref:System.StringComparison?displayProperty=fullName> 列舉做為參數的多載，並指定**序數**或**OrdinalIgnoreCase**。 例如，將 `String.Compare(str1, str2)` 變更為 `String.Compare(str1, str2, StringComparison.Ordinal)`。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
 當程式庫或應用程式適用于有限的本機物件，或應該使用目前文化特性的語義時，可以安全地隱藏此規則的警告。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [全球化警告](../code-quality/globalization-warnings.md)
-- [CA1307:指定 StringComparison](../code-quality/ca1307-specify-stringcomparison.md)
+- [CA1307：必須指定 StringComparison](../code-quality/ca1307-specify-stringcomparison.md)

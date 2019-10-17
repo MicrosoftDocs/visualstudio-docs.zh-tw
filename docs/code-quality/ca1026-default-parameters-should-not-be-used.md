@@ -1,5 +1,5 @@
 ---
-title: CA1026:不應該使用預設參數
+title: CA1026：不應使用預設參數
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,20 +14,20 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 62de7654083f3fd64f95401f95e5ee593effb27d
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 7bf388af2b39c9a10b58645f274a03739d60f23e
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71236123"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72449283"
 ---
-# <a name="ca1026-default-parameters-should-not-be-used"></a>CA1026:不應該使用預設參數
+# <a name="ca1026-default-parameters-should-not-be-used"></a>CA1026：不應使用預設參數
 
 |||
 |-|-|
 |TypeName|DefaultParametersShouldNotBeUsed|
 |CheckId|CA1026|
-|分類|Microsoft.Design|
+|分類|Microsoft. Design|
 |重大變更|中斷|
 
 ## <a name="cause"></a>原因
@@ -50,7 +50,7 @@ ms.locfileid: "71236123"
 [!code-vb[FxCop.Design.DefaultParameters#1](../code-quality/codesnippet/VisualBasic/ca1026-default-parameters-should-not-be-used_1.vb)]
 
 ## <a name="related-rules"></a>相關規則
-[CA1025 必須以 params 陣列取代重複的引數](../code-quality/ca1025-replace-repetitive-arguments-with-params-array.md)
+[CA1025：必須以參數陣列取代重複的引數](../code-quality/ca1025-replace-repetitive-arguments-with-params-array.md)
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 [語言獨立性以及與語言無關的元件](/dotnet/standard/language-independence-and-language-independent-components)

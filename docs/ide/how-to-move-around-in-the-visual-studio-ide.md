@@ -17,14 +17,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5933d89e38d040b088879f10911f2f1fff049aab
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 8764ccc5a662a40559b6b7ab4f19cdff0e2d555e
+ms.sourcegitcommit: e82baa50bf5a65858c410882c2e86a552c2c1921
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62547673"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72381335"
 ---
-# <a name="how-to-move-around-in-the-visual-studio-ide"></a>HOW TO：在 Visual Studio IDE 中四處移動
+# <a name="how-to-move-around-in-the-visual-studio-ide"></a>如何：在 Visual Studio IDE 中四處移動
 
 整合式開發環境 (IDE) 經過設計，可讓您使用數種不同方式，執行視窗至視窗以及檔案至檔案之間的移動 (根據您的喜好或專案需求而定)。 您可選擇在編輯器中循環瀏覽開啟的檔案，或是在 IDE 中循環瀏覽所有使用中的工具視窗。 您亦可在編輯器中直接切換至任何開啟的檔案，而忽略上次存取檔案的順序。 這些功能可協助您提升使用 IDE 工作時的生產力。
 
@@ -43,9 +43,9 @@ ms.locfileid: "62547673"
 
 ### <a name="to-move-through-open-files-in-order-of-use"></a>依使用順序移動開啟的檔案
 
-- 若要依最近存取的順序啟動開啟的文件，請按 **Ctrl**+**-**。
+- 若要依照最近接觸的順序啟動開啟的檔，請按**Ctrl**+ **-** （連字號）。
 
-- 若要依相反順序啟動開啟的文件，請按 **Ctrl**+**Shift**+**-**。
+- 若要以相反順序啟動開啟的檔，請按**Ctrl**+**Shift**+ **-** （連字號）。
 
     > [!NOTE]
     > [向後巡覽] 和 [向前巡覽] 位於 [檢視] 功能表中。
@@ -92,7 +92,7 @@ ms.locfileid: "62547673"
     > [!TIP]
     > 若要反轉瀏覽 [使用中工具視窗] 清單的順序，請按住 **Shift**+**Alt** 鍵並按 **F7**。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [自訂視窗版面配置](../ide/customizing-window-layouts-in-visual-studio.md)
 - [預設鍵盤快速鍵](../ide/default-keyboard-shortcuts-in-visual-studio.md)

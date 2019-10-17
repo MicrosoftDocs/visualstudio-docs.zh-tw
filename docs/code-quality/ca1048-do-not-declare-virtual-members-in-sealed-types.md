@@ -1,5 +1,5 @@
 ---
-title: CA1048:不要在密封類型中宣告 virtual 成員
+title: CA1048：不要在密封類型中宣告 virtual 成員
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,24 +14,24 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: be0e1b4865b19930f8ddf7163a36b71123bb3a55
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: d0b4e930af332c5486bca5ef6b93cef8e2376f31
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71235719"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72446611"
 ---
-# <a name="ca1048-do-not-declare-virtual-members-in-sealed-types"></a>CA1048:不要在密封類型中宣告 virtual 成員
+# <a name="ca1048-do-not-declare-virtual-members-in-sealed-types"></a>CA1048：不要在密封類型中宣告 virtual 成員
 
 |||
 |-|-|
 |TypeName|DoNotDeclareVirtualMembersInSealedTypes|
 |CheckId|CA1048|
-|分類|Microsoft.Design|
+|分類|Microsoft. Design|
 |重大變更|中斷|
 
 ## <a name="cause"></a>原因
-公用類型是密封的，而且會宣告同時`virtual`為（`Overridable`在 Visual Basic 中）且不是最終的方法。 此規則不會針對委派類型報告違規，這必須遵循此模式。
+公用類型是密封的，並且宣告的方法同時為 `virtual` （在 Visual Basic 中 `Overridable`），而不是最終。 此規則不會針對委派類型報告違規，這必須遵循此模式。
 
 ## <a name="rule-description"></a>規則描述
 類型會將方法宣告為 virtual，讓繼承類型可以覆寫 virtual 方法的實作。 根據定義，您無法繼承自密封型別，而使密封型別上的虛擬方法毫無意義。

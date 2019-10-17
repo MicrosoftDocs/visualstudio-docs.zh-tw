@@ -1,5 +1,5 @@
 ---
-title: CA1413:避免在 COM 可見實值類型中使用非公用欄位
+title: CA1413：避免在 COM 可見的實值類型中使用非公用欄位
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,20 +17,20 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d4fed5b16120ec069eaa4101670c88ad8f3a247
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: d47a7ff2633b94de73435168136060e741080de7
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71234642"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72444189"
 ---
-# <a name="ca1413-avoid-non-public-fields-in-com-visible-value-types"></a>CA1413:避免在 COM 可見實值類型中使用非公用欄位
+# <a name="ca1413-avoid-non-public-fields-in-com-visible-value-types"></a>CA1413：避免在 COM 可見的實值類型中使用非公用欄位
 
 |||
 |-|-|
 |TypeName|AvoidNonpublicFieldsInComVisibleValueTypes|
 |CheckId|CA1413|
-|分類|Microsoft.Interoperability|
+|分類|Microsoft. 互通性|
 |重大變更|中斷|
 
 ## <a name="cause"></a>原因
@@ -39,10 +39,10 @@ ms.locfileid: "71234642"
 ## <a name="rule-description"></a>規則描述
 COM 可見實值類型的非公用執行個體欄位對 COM 用戶端而言是可見的。 請參閱欄位內容，以取得不應公開的資訊，或將會有非預期的設計或安全性效果。
 
-根據預設，COM 可以看到所有公用實數值型別。 不過，若要減少誤報，此規則需要明確陳述類型的 COM 可見度。 包含的<xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName>元件必須以設定為`false`的標記，而且類型<xref:System.Runtime.InteropServices.ComVisibleAttribute>必須以設定為`true`的標記。
+根據預設，COM 可以看到所有公用實數值型別。 不過，若要減少誤報，此規則需要明確陳述類型的 COM 可見度。 包含的元件必須標記為 <xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName> 設定為 `false`，而且類型必須標記為 <xref:System.Runtime.InteropServices.ComVisibleAttribute> 設定為 `true`。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
-若要修正此規則的違規，並將欄位保留為隱藏狀態，請將數值型別變更為參考型別<xref:System.Runtime.InteropServices.ComVisibleAttribute> ，或從類型中移除屬性。
+若要修正此規則的違規，並將欄位保留為隱藏狀態，請將實數值型別變更為參考型別，或從類型中移除 <xref:System.Runtime.InteropServices.ComVisibleAttribute> 屬性。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
 如果可以接受欄位的公開曝光，則可以安全地隱藏此規則的警告。
@@ -54,11 +54,11 @@ COM 可見實值類型的非公用執行個體欄位對 COM 用戶端而言是�
 [!code-vb[FxCop.Interoperability.NonpublicField#1](../code-quality/codesnippet/VisualBasic/ca1413-avoid-non-public-fields-in-com-visible-value-types_1.vb)]
 
 ## <a name="related-rules"></a>相關規則
-[CA1407避免 COM 可見類型中的靜態成員](../code-quality/ca1407-avoid-static-members-in-com-visible-types.md)
+[CA1407：避免在 COM 可見類型中使用靜態成員](../code-quality/ca1407-avoid-static-members-in-com-visible-types.md)
 
-[CA1017以 ComVisibleAttribute 標記元件](../code-quality/ca1017-mark-assemblies-with-comvisibleattribute.md)
+[CA1017：組件必須標記 ComVisibleAttribute](../code-quality/ca1017-mark-assemblies-with-comvisibleattribute.md)
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [與 Unmanaged 程式碼互通](/dotnet/framework/interop/index)
 - [限定互通的 .NET 類型](/dotnet/framework/interop/qualifying-net-types-for-interoperation)

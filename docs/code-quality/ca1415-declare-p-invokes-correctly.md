@@ -1,5 +1,5 @@
 ---
-title: CA1415:P-Invokes 必須正確宣告。
+title: CA1415：P/Invokes 必須正確宣告
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,27 +14,27 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 99274abee2c05a1bd33e34c9eb02cc928c1b54b0
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 8ee4c74fa57811a7f5484dba4b2c3fa27a74437f
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71234618"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72443980"
 ---
-# <a name="ca1415-declare-pinvokes-correctly"></a>CA1415:P/Invokes 必須正確宣告
+# <a name="ca1415-declare-pinvokes-correctly"></a>CA1415：P/Invokes 必須正確宣告
 
 |||
 |-|-|
 |TypeName|DeclarePInvokesCorrectly|
 |CheckId|CA1415|
-|分類|Microsoft.Interoperability|
+|分類|Microsoft. 互通性|
 |重大變更|不中斷-如果宣告參數的 P/Invoke 無法在元件外部看到，則為。 中斷-如果宣告參數的 P/Invoke 可以在元件外部看到，則為。|
 
 ## <a name="cause"></a>原因
 平台叫用方法宣告不正確。
 
 ## <a name="rule-description"></a>規則描述
-平台叫用方法會存取未受管理的程式碼，並`Declare`使用或[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName>中的關鍵字來定義。 目前，此規則會尋找以具有重迭結構參數指標的 Win32 函式為目標的平台叫用方法宣告，而且對應的 managed 參數不是<xref:System.Threading.NativeOverlapped?displayProperty=fullName>結構的指標。
+平台叫用方法會存取未受管理的程式碼，並使用 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 或 <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName> 中的 `Declare` 關鍵字來定義。 目前，此規則會尋找以具有重迭結構參數指標的 Win32 函式為目標的平台叫用方法宣告，而且對應的 managed 參數不是 <xref:System.Threading.NativeOverlapped?displayProperty=fullName> 結構的指標。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
 若要修正此規則的違規，請正確宣告平台叫用方法。
@@ -47,5 +47,5 @@ ms.locfileid: "71234618"
 
 [!code-csharp[FxCop.Interoperability.DeclarePInvokes#1](../code-quality/codesnippet/CSharp/ca1415-declare-p-invokes-correctly_1.cs)]
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 [與 Unmanaged 程式碼互通](/dotnet/framework/interop/index)

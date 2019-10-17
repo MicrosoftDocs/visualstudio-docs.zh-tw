@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ed996aa19f9fda1310dccc117f8abfb6efa29e1f
-ms.sourcegitcommit: 034c503ae04e22cf840ccb9770bffd012e40fb2d
+ms.openlocfilehash: 3d941022427cbfa8d16efe98f716feceff980583
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "72305540"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72445670"
 ---
 # <a name="mixed-minimum-rules-rule-set"></a>混合最小規則規則集
 
@@ -71,7 +71,7 @@ Microsoft 混合最小規則著重于支援 Common Language Runtime 之C++專案
 |[C6518](../code-quality/c6518.md)|不能寫入的緩衝區上的可寫入大小|
 |[C6522](../code-quality/c6522.md)|無效的大小字串類型|
 |[C6525](../code-quality/c6525.md)|無效的大小字串不可能執行到的位置|
-|[C6527](../code-quality/c6527.md)|不正確注釋：' NeedsRelease ' 屬性不可用於 void 類型的值|
+|[C6527](../code-quality/c6527.md)|無效的註釋：'NeedsRelease' 屬性不能用於 void 類型的值|
 |[C6530](../code-quality/c6530.md)|無法辨認的格式字串樣式|
 |[C6540](../code-quality/c6540.md)|在這個函式上使用屬性註釋會使其所有現有的 __declspec 註釋無效。|
 |[C6551](../code-quality/c6551.md)|無效的大小規格: 無法剖析運算式|
@@ -142,7 +142,7 @@ Microsoft 混合最小規則著重于支援 Common Language Runtime 之C++專案
 |[C28286](../code-quality/c28286.md)|對於函式，結尾附近發生語法錯誤|
 |[C28287](../code-quality/c28287.md)|函式的 \_At\_() 註釋中有語法錯誤 (無法辨認的參數名稱)|
 |[C28288](../code-quality/c28288.md)|函式的 \_At\_() 註釋中有語法錯誤 (無效的參數名稱)|
-|[C28289](../code-quality/c28289.md)|For function：ReadableTo 或 Writableto 有限沒有做為參數的限制規格|
+|[C28289](../code-quality/c28289.md)|對於函式：ReadableTo 或 WritableTo 沒有有限的規格做為參數|
 |[C28290](../code-quality/c28290.md)|函式的註釋包含比實際參數數目還多的外部|
 |[C28291](../code-quality/c28291.md)|位於 deref 層級 0 的 post null/notnull 對函式是無意義的。|
 |[C28300](../code-quality/c28300.md)|運算子的運算式運算元類型不相容|
@@ -153,7 +153,7 @@ Microsoft 混合最小規則著重于支援 Common Language Runtime 之C++專案
 |[C28305](../code-quality/c28305.md)|剖析語彙基元時發現錯誤。|
 |[C28350](../code-quality/c28350.md)|註釋描述了條件不適用的狀況。|
 |[C28351](../code-quality/c28351.md)|註釋描述條件中不可以使用動態值 (變數)。|
-|[CA1001](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md)|具有可處置欄位的類型應該為可處置|
-|[CA1821](../code-quality/ca1821.md)|必須移除空的完成項|
-|[CA2213](../code-quality/ca2213-disposable-fields-should-be-disposed.md)|可處置的欄位應該受到處置|
-|[CA2231](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md)|在覆寫 ValueType.Equals 上多載等號運算子|
+|[CA1001 具有](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md)|具有可處置欄位的類型應該為可處置|
+|[CA1821 必須](../code-quality/ca1821.md)|必須移除空的完成項|
+|[CA2213](../code-quality/ca2213.md)|可處置的欄位應該受到處置|
+|[CA2231](../code-quality/ca2231.md)|在覆寫 ValueType.Equals 上多載等號運算子|

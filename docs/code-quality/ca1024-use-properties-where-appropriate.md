@@ -1,5 +1,5 @@
 ---
-title: CA1024:建議在適當時使用屬性
+title: CA1024：建議在適當時使用屬性
 ms.date: 03/11/2019
 ms.topic: reference
 f1_keywords:
@@ -17,25 +17,25 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: d312618c80abb6a4ce6e1a2676903d85867f4989
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 2ba4a7a16675bf6da0aa465a515b73c907aa80ac
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71236150"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72449305"
 ---
-# <a name="ca1024-use-properties-where-appropriate"></a>CA1024:建議在適當時使用屬性
+# <a name="ca1024-use-properties-where-appropriate"></a>CA1024：建議在適當時使用屬性
 
 |||
 |-|-|
 |TypeName|UsePropertiesWhereAppropriate|
 |CheckId|CA1024|
-|分類|Microsoft.Design|
+|分類|Microsoft. Design|
 |重大變更|中斷|
 
 ## <a name="cause"></a>原因
 
-方法的名稱開頭為`Get`、不接受任何參數，而且會傳回不是陣列的值。
+方法的名稱開頭為 `Get`，不接受任何參數，且會傳回不是陣列的值。
 
 根據預設，此規則只會查看公用和受保護的方法，但這是[可](#configurability)設定的。
 
@@ -85,7 +85,7 @@ dotnet_code_quality.ca1024.api_surface = private, internal
 
 程式設計人員避免使用屬性的原因之一，是因為它們不想讓偵錯工具將它自動展開。 例如，屬性可能牽涉到配置大型物件或呼叫 P/Invoke，但實際上可能不會有任何可觀察的副作用。
 
-您可以藉由<xref:System.Diagnostics.DebuggerBrowsableAttribute?displayProperty=fullName>套用，讓偵錯工具無法 autoexpanding 屬性。 下列範例顯示此屬性會套用至實例屬性。
+您可以套用 <xref:System.Diagnostics.DebuggerBrowsableAttribute?displayProperty=fullName> 來防止偵錯工具 autoexpanding 屬性。 下列範例顯示此屬性會套用至實例屬性。
 
 ```vb
 Imports System

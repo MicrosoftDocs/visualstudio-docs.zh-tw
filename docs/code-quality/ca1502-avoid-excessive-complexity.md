@@ -1,5 +1,5 @@
 ---
-title: CA1502:避免造成過度複雜的方法
+title: CA1502：避免過度複雜
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,20 +18,20 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f26faf16cc8a9a8235596aef68e5af5c3b4401e
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 8eaaaa8b810e79b2bd1a4da0ab1d9887c8a46380
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71253294"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72440122"
 ---
-# <a name="ca1502-avoid-excessive-complexity"></a>CA1502:避免造成過度複雜的方法
+# <a name="ca1502-avoid-excessive-complexity"></a>CA1502：避免過度複雜
 
 |||
 |-|-|
 |TypeName|AvoidExcessiveComplexity|
 |CheckId|CA1502|
-|分類|Microsoft.Maintainability|
+|分類|Microsoft。可維護性|
 |重大變更|不中斷|
 
 ## <a name="cause"></a>原因
@@ -56,15 +56,15 @@ ms.locfileid: "71253294"
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
 
-如果無法輕易降低複雜性，而且方法很容易瞭解、測試和維護，就可以放心地隱藏此規則的警告。 特別的是，包含大型`switch` （`Select` in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]）語句的方法是排除的候選項。 在開發週期中不穩定程式碼基底的風險，或在先前隨附的程式碼中引進執行時間行為的非預期變更，可能會超過重構程式碼的維護性優勢。
+如果無法輕易降低複雜性，而且方法很容易瞭解、測試和維護，就可以放心地隱藏此規則的警告。 特別的是，包含大型 `switch` 的方法（在 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 中 `Select`）語句是排除的候選項。 在開發週期中不穩定程式碼基底的風險，或在先前隨附的程式碼中引進執行時間行為的非預期變更，可能會超過重構程式碼的維護性優勢。
 
 ## <a name="how-cyclomatic-complexity-is-calculated"></a>如何計算圈複雜度
 
 迴圈複雜度的計算方式是將1新增至下列內容：
 
-- 分支的數目（例如`if`、 `while`和`do`）
+- 分支的數目（例如 `if`、`while` 和 `do`）
 
-- 中的`case`語句數目`switch`
+- @No__t 中的 `case` 語句數-1
 
 ## <a name="example"></a>範例
 
@@ -102,8 +102,8 @@ ms.locfileid: "71253294"
 
 ## <a name="related-rules"></a>相關規則
 
-[CA1501避免過度繼承](../code-quality/ca1501-avoid-excessive-inheritance.md)
+[CA1501：避免在物件間過度繼承](../code-quality/ca1501-avoid-excessive-inheritance.md)
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [測量 Managed 程式碼的複雜度和維護性](../code-quality/code-metrics-values.md)

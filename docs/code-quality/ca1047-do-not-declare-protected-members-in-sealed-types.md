@@ -1,5 +1,5 @@
 ---
-title: CA1047:不要在密封類型中宣告 protected 成員
+title: CA1047：不要在密封類型中宣告 protected 成員
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,24 +17,24 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 3114ea004c425567ae479343e0449d2cbc3aa669
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: b55da06cdaee07e0d5c30dc6c5220ef2d50f8d0b
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71235694"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72449099"
 ---
-# <a name="ca1047-do-not-declare-protected-members-in-sealed-types"></a>CA1047:不要在密封類型中宣告 protected 成員
+# <a name="ca1047-do-not-declare-protected-members-in-sealed-types"></a>CA1047：不要在密封類型中宣告 protected 成員
 
 |||
 |-|-|
 |TypeName|DoNotDeclareProtectedMembersInSealedTypes|
 |CheckId|CA1047|
-|分類|Microsoft.Design|
+|分類|Microsoft. Design|
 |重大變更|不中斷|
 
 ## <a name="cause"></a>原因
-公用類型為（ `sealed` `NotInheritable`在 Visual basic 中為），並宣告受保護的成員或受保護的巢狀型別。 此規則不會針對<xref:System.Object.Finalize%2A>必須遵循此模式的方法報告違規。
+公用類型為 `sealed` （在 Visual basic 中為 `NotInheritable`），並宣告受保護的成員或受保護的巢狀型別。 此規則不會報告 <xref:System.Object.Finalize%2A> 方法的違規，這必須遵循此模式。
 
 ## <a name="rule-description"></a>規則描述
 類型會宣告 protected 成員，如此繼承的類型即可存取或覆寫成員。 根據定義，您無法從密封類型繼承，這表示不能呼叫密封類型上的受保護方法。

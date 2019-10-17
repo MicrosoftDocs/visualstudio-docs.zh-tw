@@ -1,5 +1,5 @@
 ---
-title: CA1305:必須指定 IFormatProvider
+title: CA1305：指定 IFormatProvider
 ms.date: 06/30/2018
 ms.topic: reference
 f1_keywords:
@@ -16,27 +16,27 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: a9f6c8fd44749de43d86bf8037df0130ad682321
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 5a759b6eefe92b4168684b098b4025f589893b4b
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71235039"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72444423"
 ---
-# <a name="ca1305-specify-iformatprovider"></a>CA1305:必須指定 IFormatProvider
+# <a name="ca1305-specify-iformatprovider"></a>CA1305：指定 IFormatProvider
 
 |||
 |-|-|
 |TypeName|SpecifyIFormatProvider|
 |CheckId|CA1305|
-|分類|Microsoft.Globalization|
+|分類|Microsoft。全球化|
 |重大變更|不中斷|
 
 ## <a name="cause"></a>原因
 
-方法或函式會呼叫具有接受<xref:System.IFormatProvider?displayProperty=fullName>參數之多載的一個或多個成員，而方法或函式不會呼叫<xref:System.IFormatProvider>採用參數的多載。
+方法或函式會呼叫具有接受 @no__t 0 參數之多載的一或多個成員，而且方法或函式不會呼叫接受 <xref:System.IFormatProvider> 參數的多載。
 
-此規則會忽略已記載為忽略<xref:System.IFormatProvider>參數之 .net 方法的呼叫。 此規則也會忽略下列方法：
+此規則會忽略已記載為略過 <xref:System.IFormatProvider> 參數之 .NET 方法的呼叫。 此規則也會忽略下列方法：
 
 - <xref:System.Activator.CreateInstance%2A?displayProperty=nameWithType>
 - <xref:System.Resources.ResourceManager.GetObject%2A?displayProperty=nameWithType>
@@ -44,11 +44,11 @@ ms.locfileid: "71235039"
 
 ## <a name="rule-description"></a>規則描述
 
-未提供<xref:System.IFormatProvider>或物件時，多載成員所提供的預設值可能不會在所有地區設定中有您想要的效果。 <xref:System.Globalization.CultureInfo?displayProperty=nameWithType> 此外，.NET 成員也會根據可能對程式碼不正確的假設，選擇預設的文化特性和格式。 為確保程式碼在您的案例中如預期般運作，您應該根據下列指導方針提供特定文化特性的資訊：
+未提供 <xref:System.Globalization.CultureInfo?displayProperty=nameWithType> 或 @no__t 1 物件時，多載成員所提供的預設值可能不會在所有地區設定中有您想要的效果。 此外，.NET 成員也會根據可能對程式碼不正確的假設，選擇預設的文化特性和格式。 為確保程式碼在您的案例中如預期般運作，您應該根據下列指導方針提供特定文化特性的資訊：
 
-- 如果值將顯示給使用者，請使用目前的文化特性。 請參閱 <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=nameWithType>。
+- 如果值將顯示給使用者，請使用目前的文化特性。 請參閱<xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=nameWithType>.
 
-- 如果值將由軟體儲存和存取（保存到檔案或資料庫），請使用不因文化特性而異。 請參閱 <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=nameWithType>。
+- 如果值將由軟體儲存和存取（保存到檔案或資料庫），請使用不因文化特性而異。 請參閱<xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=nameWithType>.
 
 - 如果您不知道值的目的地，請讓資料取用者或提供者指定文化特性。
 
@@ -56,7 +56,7 @@ ms.locfileid: "71235039"
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
 
-若要修正此規則的違規情形，請使用接受<xref:System.IFormatProvider>引數的多載。 或者，使用[ C#插入字串](/dotnet/csharp/tutorials/string-interpolation)並將<xref:System.FormattableString.Invariant%2A?displayProperty=nameWithType>它傳遞給方法。
+若要修正此規則的違規情形，請使用接受 <xref:System.IFormatProvider> 引數的多載。 或者，使用[ C#插入字串](/dotnet/csharp/tutorials/string-interpolation)並將它傳遞給 @no__t 2 方法。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
 
@@ -64,7 +64,7 @@ ms.locfileid: "71235039"
 
 ## <a name="example"></a>範例
 
-在下列程式碼中， `example1`字串違反規則 CA1305。 字串會藉由將實作為<xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=nameWithType> <xref:System.IFormatProvider>，傳遞給來<xref:System.String.Format(System.IFormatProvider,System.String,System.Object)?displayProperty=nameWithType>滿足規則 CA1305。 `example2` 字串會藉由將字串插值傳遞至，來<xref:System.FormattableString.Invariant%2A?displayProperty=fullName]>滿足規則 CA1305。 `example3`
+在下列程式碼中，`example1` 字串違反規則 CA1305。 @No__t 0 字串藉由傳遞 <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=nameWithType> （其會執行 <xref:System.IFormatProvider>）到 <xref:System.String.Format(System.IFormatProvider,System.String,System.Object)?displayProperty=nameWithType>，來滿足規則 CA1305。 @No__t 0 字串會藉由將插入字串傳遞給 <xref:System.FormattableString.Invariant%2A?displayProperty=fullName]>，來滿足規則 CA1305。
 
 ```csharp
 string name = "Georgette";
@@ -81,8 +81,8 @@ string example3 = FormattableString.Invariant($"Hello {name}");
 
 ## <a name="related-rules"></a>相關規則
 
-- [CA1304:指定 CultureInfo](../code-quality/ca1304-specify-cultureinfo.md)
+- [CA1304：必須指定 CultureInfo](../code-quality/ca1304-specify-cultureinfo.md)
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [使用 CultureInfo 類別](/dotnet/standard/globalization-localization/globalization#work-with-culture-specific-settings)

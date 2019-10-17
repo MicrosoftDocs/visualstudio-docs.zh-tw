@@ -1,5 +1,5 @@
 ---
-title: 支援的程式碼變更 (C++) |Microsoft Docs
+title: 支援的程式碼C++變更（） |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -20,17 +20,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7d029d5cb3deb886faa4423d24ae8d5282f80e6a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8e38123be6b780aa9f37dc2b329ec36e3f18e793
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62901957"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72430577"
 ---
 # <a name="supported-code-changes-c"></a>支援的程式碼變更 (C++)
-Visual C++ 的 [編輯後繼續] 可處理大多數的程式碼變更類型。 不過，有些變更無法在程式執行期間套用。 若要套用這些變更，您必須停止執行，並建置新版的程式碼。
+專案的 [編輯C++後繼續] 可處理大部分類型的程式碼變更。 不過，有些變更無法在程式執行期間套用。 若要套用這些變更，您必須停止執行，並建置新版的程式碼。
 
- 如需在 Visual Studio 中使用 C++ 的 [編輯後繼續] 的相關資訊，請參閱 [Edit and Continue (Visual C++)](../debugger/edit-and-continue-visual-cpp.md) 。
+ 如需在 Visual Studio 中使用 [編輯後繼續] 的C++相關資訊，請參閱編輯後[繼續（C++）](../debugger/edit-and-continue-visual-cpp.md) 。
 
 ## <a name="BKMK_Unsupported_changes"></a> 不支援的變更
  偵錯工作階段期間不能套用下列 C/C++ 變更：
@@ -66,7 +66,7 @@ Visual C++ 的 [編輯後繼續] 可處理大多數的程式碼變更類型。 �
 
 - 偵錯以 [/Zo (增強最佳化偵錯)](/cpp/build/reference/zo-enhance-optimized-debugging)編譯的原生應用程式
 
-- 在 Visual Studio 2015 Update 1，偵錯 UWP 應用程式或元件之前的 Visual Studio 版本。 從 Visual Studio 2015 Update 1 中，您可以使用 編輯後繼續在 UWP 中C++應用程式和 DirectX 應用程式，因為它現在支援`/ZI`編譯器參數和`/bigobj`切換。 您也可以搭配以 `/FASTLINK` 參數。
+- 在 Visual Studio 2015 Update 1 之前的 Visual Studio 版本中，將 UWP 應用程式或元件進行偵測。 從 Visual Studio 2015 Update 1 開始，您可以在 UWP C++應用程式和 DirectX 應用程式中使用 [編輯後繼續]，因為它現在支援具有 `/bigobj` 參數的 @no__t 1 編譯器參數。 您也可以搭配以 `/FASTLINK` 參數。
 
 - 在 Windows 98 上偵錯。
 
@@ -80,7 +80,7 @@ Visual C++ 的 [編輯後繼續] 可處理大多數的程式碼變更類型。 �
 
 - 在未選取 [ **發生未處理的例外狀況時回溯呼叫堆疊** ] 選項的情況下，於發生未處理的例外狀況後編輯程式碼。
 
-- 使用 [附加至]  來進行應用程式偵錯，而不要選擇 [偵錯]  功能表上的 [啟動]  來執行應用程式。
+- 使用 [附加至] 來進行應用程式偵錯，而不要選擇 [偵錯] 功能表上的 [啟動] 來執行應用程式。
 
 - 偵錯最佳化程式碼
 
@@ -118,7 +118,7 @@ Visual C++ 的 [編輯後繼續] 可處理大多數的程式碼變更類型。 �
 
 1. 在 [ **偵錯** ] 功能表上選擇 [ **選項和設定**]。
 
-2. 在 [選項]  對話方塊的 [偵錯]  節點下，選取 [編輯後繼續]  節點。
+2. 在 [選項] 對話方塊的 [偵錯] 節點下，選取 [編輯後繼續] 節點。
 
 3. 清除 [ **偵錯後重新連結程式碼變更** ] 核取方塊。
 
@@ -129,12 +129,12 @@ Visual C++ 的 [編輯後繼續] 可處理大多數的程式碼變更類型。 �
 
 1. 在 [ **偵錯** ] 功能表上選擇 [ **選項和設定**]。
 
-2. 在 [選項]  對話方塊的 [偵錯]  節點下，選取 [編輯後繼續]  節點。
+2. 在 [選項] 對話方塊的 [偵錯] 節點下，選取 [編輯後繼續] 節點。
 
 3. 清除 [ **允許先行編譯** ] 核取方塊。
 
 ## <a name="BKMK_IDL_Attribute_Limitations"></a> IDL 屬性的限制
  [編輯後繼續] 不會重新產生介面定義 (IDL) 檔， 所以您偵錯時並不會反映出 IDL 屬性的變更。 若要看到 IDL 屬性的變更結果，就必須停止偵錯並重建應用程式。 如果 IDL 屬性有所變更，[編輯後繼續] 並不會產生錯誤或警告。 如需詳細資訊，請參閱 [IDL 屬性](/cpp/windows/idl-attributes)。
 
-## <a name="see-also"></a>另請參閱
-- [Edit and Continue (Visual C++)](../debugger/edit-and-continue-visual-cpp.md)
+## <a name="see-also"></a>請參閱
+- [編輯後繼續（C++）](../debugger/edit-and-continue-visual-cpp.md)

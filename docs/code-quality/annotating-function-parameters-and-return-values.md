@@ -1,6 +1,6 @@
 ---
 title: 註釋函式參數和傳回值
-ms.date: 07/11/2019
+ms.date: 10/15/2019
 ms.topic: conceptual
 f1_keywords:
 - _Outptr_opt_result_bytebuffer_to_
@@ -128,12 +128,12 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - multiple
-ms.openlocfilehash: 1001b37509432a7ae95a565d90d972d2043fdeab
-ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
+ms.openlocfilehash: ca1e66defbce50a9119e817155bcc2a98d01af9d
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72016003"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72442405"
 ---
 # <a name="annotating-function-parameters-and-return-values"></a>註釋函式參數和傳回值
 本文描述簡單函式參數（純量）和結構和類別的指標，以及大多數類型的緩衝區之注釋的一般用法。  本文也會說明批註的常見使用模式。 如需與函式相關的其他批註，請參閱批註函式[行為](../code-quality/annotating-function-behavior.md)。
@@ -200,34 +200,6 @@ ms.locfileid: "72016003"
      `_Inout_updates_bytes_(s)`
 
      陣列的指標，在函式中讀取和寫入。  其大小 `s` 個元素，且在前置狀態和後置狀態中有效。
-
-     @No__t-0 variant 會提供以位元組為單位的大小，而不是元素。 只有當大小無法以元素表示時，才使用此專案。  例如，只有在使用 `wchar_t` 的類似函式為時，`char` 字串才會使用 `_bytes_` 變體。
-
-- `_Inout_updates_z_(s)`
-
-     陣列的指標，其以 null 結束且具有已知的大小。 完成 null 結束字元的元素（必須存在）必須是前置狀態和後置狀態中的有效專案。  後置狀態中的值會假設為與前置狀態中的值不同。這包括 null 結束字元的位置。 如果大小是以位元組為單位，則依元素大小 `s` 進行縮放。
-
-- `_Out_writes_to_(s,c)`
-
-     `_Out_writes_bytes_to_(s,c)`
-
-     `_Out_writes_all_(s)`
-
-     `_Out_writes_bytes_all_(s)`
-
-     @No__t 0 元素陣列的指標。  元素在預先狀態中不一定是有效的。  在後置狀態中，最多 @no__t 4.9.0-個元素的元素必須有效。  如果大小是以位元組為單位，則縮放 `s`，並依元素大小 `c`，或使用 `_bytes_` variant，其定義為：
-
-     `_Out_writes_to_(_Old_(s), _Old_(s))    _Out_writes_bytes_to_(_Old_(s), _Old_(s))`
-
-     換句話說，在前置狀態下，緩衝區中的每個存在於 `s` 的元素在後置狀態中都是有效的。  例如:
-
-     `void *memcpy(_Out_writes_bytes_all_(s) char *p1,    _In_reads_bytes_(s) char *p2,    _In_ int s); void * wordcpy(_Out_writes_all_(s) DWORD *p1,     _In_reads_(s) DWORD *p2,    _In_ int s);`
-
-- `_Inout_updates_to_(s,c)`
-
-     `_Inout_updates_bytes_to_(s,c)`
-
-     陣列的指標，這是函式的讀取和寫入。  其大小 `s` 個元素，全部都必須在前置狀態中有效，而 @no__t 1 個元素在後置狀態中必須是有效的。
 
      @No__t-0 variant 會提供以位元組為單位的大小，而不是元素。 只有當大小無法以元素表示時，才使用此專案。  例如，只有在使用 `wchar_t` 的類似函式為時，`char` 字串才會使用 `_bytes_` 變體。
 
@@ -547,7 +519,7 @@ ms.locfileid: "72016003"
 
 [程式碼分析小組 Blog](http://go.microsoft.com/fwlink/?LinkId=251197)
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [使用 SAL 註釋減少 C/C++ 程式碼的缺失](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)
 - [了解 SAL](../code-quality/understanding-sal.md)

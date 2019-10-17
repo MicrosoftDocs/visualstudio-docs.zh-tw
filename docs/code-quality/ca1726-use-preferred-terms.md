@@ -1,5 +1,5 @@
 ---
-title: CA1726:建議使用慣用詞彙
+title: CA1726：建議使用慣用詞彙
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,20 +13,20 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f359f7aa24ada0edf2c98a7d527ed715df85086
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: e9842e52607af0d7ec886660a14450ea89c23459
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71233914"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72438920"
 ---
-# <a name="ca1726-use-preferred-terms"></a>CA1726:建議使用慣用詞彙
+# <a name="ca1726-use-preferred-terms"></a>CA1726：建議使用慣用詞彙
 
 |||
 |-|-|
 |TypeName|UsePreferredTerms|
 |CheckId|CA1726|
-|分類|Microsoft.Naming|
+|分類|Microsoft. 命名|
 |重大變更|中斷-在元件上引發時<br /><br /> 不中斷-在類型參數上引發時|
 
 ## <a name="cause"></a>原因

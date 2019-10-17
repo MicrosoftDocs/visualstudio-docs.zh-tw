@@ -1,5 +1,5 @@
 ---
-title: CA1049:具有原生資源的類型應該要可呼叫 Dispose 方法明確釋放資源
+title: CA1049：擁有原生資源的類型應為可處置
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,20 +17,20 @@ dev_langs:
 - VB
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 03b8d222fc2349022ef324c9905279677fc86849
-ms.sourcegitcommit: 034c503ae04e22cf840ccb9770bffd012e40fb2d
+ms.openlocfilehash: c685e0d12ebb8f76d61687dd138e90c51a9cc8f5
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "72306113"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72440820"
 ---
-# <a name="ca1049-types-that-own-native-resources-should-be-disposable"></a>CA1049:具有原生資源的類型應該要可呼叫 Dispose 方法明確釋放資源
+# <a name="ca1049-types-that-own-native-resources-should-be-disposable"></a>CA1049：擁有原生資源的類型應為可處置
 
 |||
 |-|-|
 |TypeName|TypesThatOwnNativeResourcesShouldBeDisposable|
 |CheckId|CA1049|
-|Category|Microsoft.Design|
+|分類|Microsoft. Design|
 |重大變更|不中斷|
 
 ## <a name="cause"></a>原因
@@ -56,15 +56,15 @@ ms.locfileid: "72306113"
 [!code-vb[FxCop.Design.UnmanagedResources#1](../code-quality/codesnippet/VisualBasic/ca1049-types-that-own-native-resources-should-be-disposable_1.vb)]
 
 ## <a name="related-rules"></a>相關規則
-[CA2115：呼叫 GC。使用原生資源時的 KeepAlive @ no__t-0
+[CA2115：使用原生資源時必須呼叫 GC.KeepAlive](../code-quality/ca2115.md)
 
-[CA1816：呼叫 GC。Gc.suppressfinalize 正確 @ no__t-0
+[CA1816：正確呼叫 GC.SuppressFinalize](../code-quality/ca1816.md)
 
-[CA2216：可處置的類型應該宣告完成項 @ no__t-0
+[CA2216：可處置的類型應該宣告完成項](../code-quality/ca2216.md)
 
-[CA1001：具有可處置欄位的類型應該為可處置](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md)
+[CA1001：具有可處置欄位的類型應該是可處置的](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md)
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [清除 Unmanaged 資源](/dotnet/standard/garbage-collection/unmanaged)
 - [Dispose 模式](/dotnet/standard/design-guidelines/dispose-pattern)

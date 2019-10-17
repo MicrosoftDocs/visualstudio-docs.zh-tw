@@ -1,5 +1,5 @@
 ---
-title: CA1711:識別項名稱不應該使用不正確的後置字元
+title: CA1711：識別項名稱不應該使用不正確的後置字元
 ms.date: 03/11/2019
 ms.topic: reference
 f1_keywords:
@@ -14,20 +14,20 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e04487a9bfcd8ef9a0e9a15bc76a93b221f9ce1
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 1a2ae438091c55c9e0e6b14350ca2527907ab33c
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71234134"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72443915"
 ---
-# <a name="ca1711-identifiers-should-not-have-incorrect-suffix"></a>CA1711:識別項名稱不應該使用不正確的後置字元
+# <a name="ca1711-identifiers-should-not-have-incorrect-suffix"></a>CA1711：識別項名稱不應該使用不正確的後置字元
 
 |||
 |-|-|
 |TypeName|IdentifiersShouldNotHaveIncorrectSuffix|
 |CheckId|CA1711|
-|分類|Microsoft.Naming|
+|分類|Microsoft. 命名|
 |重大變更|中斷|
 
 ## <a name="cause"></a>原因
@@ -61,9 +61,9 @@ ms.locfileid: "71234134"
 
 - `Enum`
 
-- `Impl`（請`Core`改用）
+- `Impl` （改用 `Core`）
 
-- `Ex`或類似的尾碼，以與相同類型的舊版進行區別
+- `Ex` 或類似的尾碼，以與相同類型的舊版進行區別
 
 命名慣例提供以通用語言執行時間為目標之程式庫的常見外觀。 這可減少新軟體程式庫所需的學習曲線，並提高客戶對於開發 managed 程式碼專業知識的人員所開發的信心。
 
@@ -87,9 +87,9 @@ dotnet_code_quality.ca1711.api_surface = private, internal
 
 ## <a name="related-rules"></a>相關規則
 
-- [CA1710識別碼應該有正確的尾碼](../code-quality/ca1710-identifiers-should-have-correct-suffix.md)
+- [CA1710：識別項應該使用正確的後置字元](../code-quality/ca1710-identifiers-should-have-correct-suffix.md)
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [屬性](/dotnet/standard/design-guidelines/attributes)
 - [處理和引發事件](/dotnet/standard/events/index)

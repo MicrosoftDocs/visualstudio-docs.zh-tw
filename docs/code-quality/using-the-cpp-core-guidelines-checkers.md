@@ -7,12 +7,12 @@ ms.author: mblome
 manager: markl
 dev_langs:
 - CPP
-ms.openlocfilehash: 57c8d6daf75987bfb5c6a6642b89f198693a5dce
-ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
+ms.openlocfilehash: fee4478f52cd107d2173919617aca8acd07234eb
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72018411"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72445650"
 ---
 # <a name="use-the-c-core-guidelines-checkers"></a>使用 C++ Core Guidelines 檢查工具
 
@@ -59,7 +59,7 @@ int main()
 
 - C26485 是規則界限。3：沒有陣列到指標的衰減。
 
-- C26481 是規則界限。1：請勿使用指標算術。 請改用 `span`。
+- C26481 是規則界限。1：不要使用指標算術。 請改用 `span` 。
 
 當您C++編譯此程式碼時，如果已安裝並啟用核心檢查程式碼分析規則集，則前兩個警告為輸出，但第三個是隱藏的。 以下是範例程式碼的組建輸出：
 
@@ -253,6 +253,6 @@ msbuild /p:EnableCppCoreCheck=true /p:RunCodeAnalysis=true /p:CodeAnalysisRuleSe
 
    NuGet 套件會將額外的 MSBuild *.targets*檔案新增至您的專案，當您在專案上啟用程式碼分析時，就會叫用這個檔案。 這個 *.targets*檔案會將C++核心檢查規則新增為 Visual Studio 程式碼分析工具的額外延伸模組。 安裝封裝之後，您可以使用 [屬性頁] 對話方塊來啟用或停用已釋放和實驗性規則。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [Visual Studio C++核心檢查參考](code-analysis-for-cpp-corecheck.md)

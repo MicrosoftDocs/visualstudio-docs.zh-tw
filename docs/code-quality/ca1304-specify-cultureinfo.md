@@ -1,5 +1,5 @@
 ---
-title: CA1304:必須指定 CultureInfo
+title: CA1304：指定 CultureInfo
 ms.date: 06/30/2018
 ms.topic: reference
 f1_keywords:
@@ -14,25 +14,25 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2539cef9e6b2fe20513943f686aeaa1ff7a79013
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 50f4726b21b51b963074ee9ae1c161872f6a5e5a
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71235097"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72444432"
 ---
-# <a name="ca1304-specify-cultureinfo"></a>CA1304:必須指定 CultureInfo
+# <a name="ca1304-specify-cultureinfo"></a>CA1304：指定 CultureInfo
 
 |||
 |-|-|
 |TypeName|SpecifyCultureInfo|
 |CheckId|CA1304|
-|分類|Microsoft.Globalization|
+|分類|Microsoft。全球化|
 |重大變更|不中斷|
 
 ## <a name="cause"></a>原因
 
-方法或函式會呼叫具有接受<xref:System.Globalization.CultureInfo?displayProperty=nameWithType>參數之多載的成員，而且方法或函式不會呼叫<xref:System.Globalization.CultureInfo>接受參數的多載。 此規則會忽略下列方法的呼叫：
+方法或函式會呼叫具有多載的成員，而此多載會接受 <xref:System.Globalization.CultureInfo?displayProperty=nameWithType> 參數，而方法或函式不會呼叫接受 <xref:System.Globalization.CultureInfo> 參數的多載。 此規則會忽略下列方法的呼叫：
 
 - <xref:System.Activator.CreateInstance%2A?displayProperty=nameWithType>
 - <xref:System.Resources.ResourceManager.GetObject%2A?displayProperty=nameWithType>
@@ -40,22 +40,22 @@ ms.locfileid: "71235097"
 
 ## <a name="rule-description"></a>規則描述
 
-未提供<xref:System.IFormatProvider?displayProperty=nameWithType>或物件時，多載成員所提供的預設值可能不會在所有地區設定中有您想要的效果。 <xref:System.Globalization.CultureInfo> 此外，.NET 成員也會根據可能對程式碼不正確的假設，選擇預設的文化特性和格式。 若要確保程式碼在您的案例中如預期般運作，您應該根據下列指導方針提供特定文化特性的資訊：
+未提供 <xref:System.Globalization.CultureInfo> 或 @no__t 1 物件時，多載成員所提供的預設值可能不會在所有地區設定中有您想要的效果。 此外，.NET 成員也會根據可能對程式碼不正確的假設，選擇預設的文化特性和格式。 若要確保程式碼在您的案例中如預期般運作，您應該根據下列指導方針提供特定文化特性的資訊：
 
-- 如果值將顯示給使用者，請使用目前的文化特性。 請參閱 <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=nameWithType>。
+- 如果值將顯示給使用者，請使用目前的文化特性。 請參閱<xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=nameWithType>.
 
-- 如果值將由軟體儲存及存取，亦即保存到檔案或資料庫中，請使用不因文化特性而異。 請參閱 <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=nameWithType>。
+- 如果值將由軟體儲存及存取，亦即保存到檔案或資料庫中，請使用不因文化特性而異。 請參閱<xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=nameWithType>.
 
 - 如果您不知道值的目的地，請讓資料取用者或提供者指定文化特性。
 
 即使多載成員的預設行為適合您的需求，最好還是明確地呼叫文化特性特定的多載，讓您的程式碼可以自我記錄並更容易維護。
 
 > [!NOTE]
-> <xref:System.Globalization.CultureInfo.CurrentUICulture%2A?displayProperty=nameWithType>僅用於使用<xref:System.Resources.ResourceManager?displayProperty=nameWithType>類別的實例來取得當地語系化的資源。
+> <xref:System.Globalization.CultureInfo.CurrentUICulture%2A?displayProperty=nameWithType> 僅用於使用 <xref:System.Resources.ResourceManager?displayProperty=nameWithType> 類別的實例來取出當地語系化的資源。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
 
-若要修正此規則的違規情形，請使用接受<xref:System.Globalization.CultureInfo>引數的多載。
+若要修正此規則的違規情形，請使用接受 <xref:System.Globalization.CultureInfo> 引數的多載。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
 
@@ -63,13 +63,13 @@ ms.locfileid: "71235097"
 
 ## <a name="example-showing-how-to-fix-violations"></a>顯示如何修正違規的範例
 
-在下列範例中， `BadMethod`會造成這項規則的兩個違規。 `GoodMethod`藉由將不因文化特性而傳遞至<xref:System.String.Compare%2A?displayProperty=nameWithType>來更正第一個違規，並藉由將目前的<xref:System.String.ToLower%2A?displayProperty=nameWithType>文化`string3`特性傳遞給來更正第二個違規，因為會向使用者顯示。
+在下列範例中，`BadMethod` 會造成這項規則的兩個違規。 `GoodMethod` 會藉由將不因文化特性（culture）傳遞給 <xref:System.String.Compare%2A?displayProperty=nameWithType> 來更正第一個違規，並藉由將目前文化特性傳遞至 <xref:System.String.ToLower%2A?displayProperty=nameWithType> 來更正第二個違規，因為會向使用者顯示 `string3`。
 
 [!code-csharp[FxCop.Globalization.CultureInfo#1](../code-quality/codesnippet/CSharp/ca1304-specify-cultureinfo_1.cs)]
 
 ## <a name="example-showing-formatted-output"></a>顯示格式化輸出的範例
 
-下列範例顯示目前文化特性在<xref:System.IFormatProvider> <xref:System.DateTime>類型選取的預設值上的效果。
+下列範例顯示 <xref:System.DateTime> 類型所選取之預設 <xref:System.IFormatProvider> 的目前文化特性的效果。
 
 [!code-csharp[FxCop.Globalization.IFormatProvider#1](../code-quality/codesnippet/CSharp/ca1304-specify-cultureinfo_2.cs)]
 
@@ -82,8 +82,8 @@ ms.locfileid: "71235097"
 
 ## <a name="related-rules"></a>相關規則
 
-- [CA1305指定 IFormatProvider](../code-quality/ca1305-specify-iformatprovider.md)
+- [CA1305：指定 IFormatProvider](../code-quality/ca1305-specify-iformatprovider.md)
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [使用 CultureInfo 類別](/dotnet/standard/globalization-localization/globalization#work-with-culture-specific-settings)

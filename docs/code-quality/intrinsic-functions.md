@@ -15,17 +15,17 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - multiple
-ms.openlocfilehash: e5b754f32edb86d10b4dd722ea7c6486f8179af6
-ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
+ms.openlocfilehash: b9236a5135d1339f46aeb6f2dd1a11658adf01c2
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72018743"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72445714"
 ---
 # <a name="intrinsic-functions"></a>內建函式
 SAL 中的運算式可以是 C/C++ 運算式 (假設該運算式沒有副作用的話)，例如 ++、-- 和函式呼叫在這個內容中全都有副作用。  不過，SAL 會提供一些類似函式的物件，以及一些可在 SAL 運算式中使用的保留符號。 這些稱為*內建函式*。
 
-## <a name="general-purpose"></a>一般目的
+## <a name="general-purpose"></a>一般用途
 下列內建函式註釋提供 SAL 的一般公用程式。
 
 |註釋|描述|
@@ -46,7 +46,7 @@ SAL 中的運算式可以是 C/C++ 運算式 (假設該運算式沒有副作用�
 |`strlen(param)`|`param` 是字串中最多但不包括 null 結束字元的元素數目。 此注釋會保留供字元陣列使用，而且類似 C 執行時間函式[strlen （）](/cpp/c-runtime-library/reference/strlen-wcslen-mbslen-mbslen-l-mbstrlen-mbstrlen-l)。|
 |`wcslen(param)`|`param` 是字串中最多（但不包括） null 結束字元的元素數目。 這個批註已保留供寬字元陣列使用，而且類似 C 執行時間函式[wcslen （）](/cpp/c-runtime-library/reference/strlen-wcslen-mbslen-mbslen-l-mbstrlen-mbstrlen-l)。|
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [使用 SAL 註釋減少 C/C++ 程式碼的缺失](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)
 - [了解 SAL](../code-quality/understanding-sal.md)

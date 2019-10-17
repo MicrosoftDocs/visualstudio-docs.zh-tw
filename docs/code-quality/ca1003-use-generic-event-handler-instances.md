@@ -1,5 +1,5 @@
 ---
-title: CA1003：使用一般事件處理常式執行個體
+title: CA1003：必須使用一般事件處理常式執行個體
 ms.date: 03/11/2019
 ms.topic: reference
 f1_keywords:
@@ -17,20 +17,20 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: c654da177e4a9cf820887cf74977a4c3da5a57b6
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 42e40acfc8034f27c8b9131b6d5c8f8bb2f95dcb
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71236651"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72441728"
 ---
-# <a name="ca1003-use-generic-event-handler-instances"></a>CA1003：使用一般事件處理常式執行個體
+# <a name="ca1003-use-generic-event-handler-instances"></a>CA1003：必須使用一般事件處理常式執行個體
 
 |||
 |-|-|
 |TypeName|UseGenericEventHandlerInstances|
 |CheckId|CA1003|
-|分類|Microsoft.Design|
+|分類|Microsoft. Design|
 |重大變更|中斷|
 
 ## <a name="cause"></a>原因
@@ -41,13 +41,13 @@ ms.locfileid: "71236651"
 
 ## <a name="rule-description"></a>規則描述
 
-在 .net 之前，為了將自訂資訊傳遞至事件處理常式，必須宣告新的委派，以指定衍生自<xref:System.EventArgs?displayProperty=fullName>類別的類別。 在 .net 中，泛型<xref:System.EventHandler%601?displayProperty=fullName>委派可讓衍生自<xref:System.EventArgs>的任何類別與事件處理常式一起使用。
+在 .NET 之前，為了將自訂資訊傳遞至事件處理常式，必須宣告新的委派，以指定衍生自 @no__t 0 類別的類別。 在 .NET 中，泛型 <xref:System.EventHandler%601?displayProperty=fullName> 委派可讓衍生自 <xref:System.EventArgs> 的任何類別與事件處理常式一起使用。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
 
-若要修正此規則的違規，請移除委派，並使用<xref:System.EventHandler%601?displayProperty=fullName>委派取代其使用方式。
+若要修正此規則的違規，請移除委派，並使用 <xref:System.EventHandler%601?displayProperty=fullName> 委派來取代其使用方式。
 
-如果委派是由 Visual Basic 編譯器自動產生，請將事件宣告的語法變更為使用<xref:System.EventHandler%601?displayProperty=fullName>委派。
+如果委派是由 Visual Basic 編譯器自動產生，請將事件宣告的語法變更為使用 <xref:System.EventHandler%601?displayProperty=fullName> 委派。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
 
@@ -70,20 +70,20 @@ dotnet_code_quality.ca1003.api_surface = private, internal
 [!code-vb[FxCop.Design.CustomEventHandler#1](../code-quality/codesnippet/VisualBasic/ca1003-use-generic-event-handler-instances_1.vb)]
 [!code-csharp[FxCop.Design.CustomEventHandler#1](../code-quality/codesnippet/CSharp/ca1003-use-generic-event-handler-instances_1.cs)]
 
-下列程式碼片段會移除上一個範例中符合規則的委派宣告。 它會使用`ClassThatRaisesEvent` `ClassThatHandlesEvent` 委派<xref:System.EventHandler%601?displayProperty=fullName>來取代和方法中的使用。
+下列程式碼片段會移除上一個範例中符合規則的委派宣告。 它會使用 @no__t 2 委派來取代 @no__t 0 和 @no__t 1 方法中的使用方式。
 
 [!code-csharp[FxCop.Design.GenericEventHandler#1](../code-quality/codesnippet/CSharp/ca1003-use-generic-event-handler-instances_2.cs)]
 
 ## <a name="related-rules"></a>相關規則
 
-- [CA1005避免在泛型型別上有過多參數](../code-quality/ca1005-avoid-excessive-parameters-on-generic-types.md)
-- [CA1010集合應執行泛型介面](../code-quality/ca1010-collections-should-implement-generic-interface.md)
-- [CA1000不要在泛型型別上宣告靜態成員](../code-quality/ca1000-do-not-declare-static-members-on-generic-types.md)
-- [CA1002不要公開泛型清單](../code-quality/ca1002-do-not-expose-generic-lists.md)
-- [CA1006不要在成員簽章中嵌套泛型型別](../code-quality/ca1006-do-not-nest-generic-types-in-member-signatures.md)
-- [CA1004泛型方法應該提供類型參數](../code-quality/ca1004-generic-methods-should-provide-type-parameter.md)
-- [CA1007 建議適當時使用泛型](../code-quality/ca1007-use-generics-where-appropriate.md)
+- [CA1005：避免在泛型型別上包含過多參數](../code-quality/ca1005-avoid-excessive-parameters-on-generic-types.md)
+- [CA1010：集合應該實作泛型介面](../code-quality/ca1010-collections-should-implement-generic-interface.md)
+- [CA1000：不要在泛型型別上宣告靜態成員](../code-quality/ca1000-do-not-declare-static-members-on-generic-types.md)
+- [CA1002：不要公開泛型清單](../code-quality/ca1002-do-not-expose-generic-lists.md)
+- [CA1006：不要在成員簽章中巢狀化泛型類型](../code-quality/ca1006-do-not-nest-generic-types-in-member-signatures.md)
+- [CA1004：泛型方法應該提供類型參數](../code-quality/ca1004-generic-methods-should-provide-type-parameter.md)
+- [CA1007：建議在適當時使用泛型](../code-quality/ca1007-use-generics-where-appropriate.md)
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [泛型](/dotnet/csharp/programming-guide/generics/index)
