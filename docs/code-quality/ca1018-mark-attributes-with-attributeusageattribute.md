@@ -1,5 +1,5 @@
 ---
-title: CA1018:必須以 AttributeUsageAttribute 標記屬性
+title: CA1018：以 AttributeUsageAttribute 標記屬性
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,20 +17,20 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 133ee073398817c037af95e2009c5acc98e1e5a2
-ms.sourcegitcommit: 034c503ae04e22cf840ccb9770bffd012e40fb2d
+ms.openlocfilehash: 041555ed8036c145963f00295365fb204f1879dd
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "72306129"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72446762"
 ---
-# <a name="ca1018-mark-attributes-with-attributeusageattribute"></a>CA1018:必須以 AttributeUsageAttribute 標記屬性
+# <a name="ca1018-mark-attributes-with-attributeusageattribute"></a>CA1018：以 AttributeUsageAttribute 標記屬性
 
 |||
 |-|-|
 |TypeName|MarkAttributesWithAttributeUsage|
 |CheckId|CA1018|
-|Category|Microsoft.Design|
+|分類|Microsoft. Design|
 |重大變更|中斷|
 
 ## <a name="cause"></a>原因
@@ -48,16 +48,16 @@ ms.locfileid: "72306129"
 您應該修正此規則的違規，而不是排除訊息。 即使屬性繼承 <xref:System.AttributeUsageAttribute>，該屬性也應該存在，以簡化程式碼維護。
 
 ## <a name="example"></a>範例
-下列範例會定義兩個屬性。 `BadCodeMaintainerAttribute` 不正確地省略 <xref:System.AttributeUsageAttribute> 語句，而 `GoodCodeMaintainerAttribute` 會正確地執行本節稍早所述的屬性。 請注意，設計規則 [CA1019 需要屬性 `DeveloperName`：定義屬性引數 @ no__t-0 的存取子，並納入完整性。
+下列範例會定義兩個屬性。 `BadCodeMaintainerAttribute` 不正確地省略 <xref:System.AttributeUsageAttribute> 語句，而 `GoodCodeMaintainerAttribute` 會正確地執行本節稍早所述的屬性。 請注意，設計規則 Ca1019 必須需要 `DeveloperName` 的屬性[：定義屬性引數的存取](../code-quality/ca1019-define-accessors-for-attribute-arguments.md)子，並納入完整性。
 
 [!code-csharp[FxCop.Design.AttributeUsage#1](../code-quality/codesnippet/CSharp/ca1018-mark-attributes-with-attributeusageattribute_1.cs)]
 [!code-vb[FxCop.Design.AttributeUsage#1](../code-quality/codesnippet/VisualBasic/ca1018-mark-attributes-with-attributeusageattribute_1.vb)]
 
 ## <a name="related-rules"></a>相關規則
-[CA1019：定義屬性引數的存取子 @ no__t-0
+[CA1019：必須定義屬性引數的存取子](../code-quality/ca1019-define-accessors-for-attribute-arguments.md)
 
-[CA1813：避免未密封的屬性 @ no__t-0
+[CA1813：避免使用非密封屬性](../code-quality/ca1813.md)
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [屬性](/dotnet/standard/design-guidelines/attributes)

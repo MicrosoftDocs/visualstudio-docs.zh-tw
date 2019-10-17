@@ -9,14 +9,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0b192b29190d530d22943e8ba2a396ae1fe9ad87
-ms.sourcegitcommit: 39a04f42d23597b70053686d7e927ba78f38a9a8
+ms.openlocfilehash: 26cd267f80f8c7c220771a5c2220d22b66929051
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/05/2019
-ms.locfileid: "71975118"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72448933"
 ---
-# <a name="how-to-enable-and-disable-full-solution-analysis-for-managed-code"></a>HOW TO：啟用和停用 managed 程式碼的完整解決方案分析
+# <a name="how-to-enable-and-disable-full-solution-analysis-for-managed-code"></a>如何：啟用和停用 managed 程式碼的完整解決方案分析
 
 *完整的解決方案分析*表示程式碼分析會檢查C#方案中的所有或 Visual Basic 檔案，不論它們是否已在編輯器中開啟。 根據預設，會*啟用*Visual Basic 的完整解決方案分析，並針對C#*停用*。
 
@@ -44,4 +44,4 @@ ms.locfileid: "71975118"
 
 如果 Visual Studio 偵測到 200 MB 或更少的系統記憶體可供使用，它會自動停用完整解決方案分析（以及其他功能）（如果已啟用）。 如果發生這種情況，則會出現警示，通知您 Visual Studio 已停用某些功能。 按鈕可讓您視需要重新啟用完整的解決方案分析。
 
-![警示文字中暫停完整解決方案分析](../code-quality/media/fsa_alert.png)
+![暫停完整解決方案分析的警示文字](../code-quality/media/fsa_alert.png)

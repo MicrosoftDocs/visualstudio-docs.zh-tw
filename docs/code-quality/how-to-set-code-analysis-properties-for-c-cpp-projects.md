@@ -1,5 +1,5 @@
 ---
-title: 作法：為 C/C++ 專案設定程式碼分析屬性
+title: 如何：為 C/C++ 專案設定程式碼分析屬性
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -18,14 +18,14 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4c27300244998765d13d485d617c17c5032bad7b
-ms.sourcegitcommit: e95dd8cedcd180e0bce6a75c86cf861757918290
+ms.openlocfilehash: 27f3d68d28b8d1799c52fcf83c6a00dc5f81f48a
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "72163040"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72448912"
 ---
-# <a name="how-to-set-code-analysis-properties-for-cc-projects"></a>作法：為 C/C++ 專案設定程式碼分析屬性
+# <a name="how-to-set-code-analysis-properties-for-cc-projects"></a>如何：為 C/C++ 專案設定程式碼分析屬性
 
 您可以設定程式碼分析工具使用哪些規則來分析專案的每個設定中的程式碼。 此外，您可以指示程式碼分析，將警告從由協力廠商工具產生並新增至專案的程式碼隱藏。
 
@@ -47,7 +47,7 @@ ms.locfileid: "72163040"
 
 在 CMake projects 中，變更 `CMakeSettings.json` 內 `enableMicrosoftCodeAnalysis` 和 `enableClangTidyCodeAnalysis` 索引鍵的值，以啟用或停用程式碼分析。 如需詳細資訊，請參閱[在 Visual Studio 中使用 Clang-整齊](../code-quality/clang-tidy.md)。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [分析 Managed 程式碼品質](../code-quality/code-analysis-for-managed-code-overview.md)
 - [C/C++ 程式碼分析警告](../code-quality/code-analysis-for-c-cpp-warnings.md)
