@@ -91,7 +91,7 @@
         - name: 檢視記憶體以尋找變數
           href: memory-windows.md
         - name: 在偵錯時檢查 XAML 屬性
-          href: inspect-xaml-properties-while-debugging.md
+          href: ../xaml-tools/inspect-xaml-properties-while-debugging.md?toc=/visualstudio/debugger/toc.json
     - name: 呼叫堆疊
       items:
         - name: 檢視呼叫堆疊
@@ -108,9 +108,9 @@
           href: how-to-enable-and-disable-edit-and-continue.md
         - name: 停止程式碼變更
           href: how-to-stop-code-changes.md
-        - name: Edit and Continue (Visual C++)
+        - name: 編輯後繼續 (C++)
           items:
-            - name: Visual C++ 的編輯後繼續
+            - name: C++ 編輯後繼續
               href: edit-and-continue-visual-cpp.md
             - name: 支援的程式碼變更 (C++)
               href: supported-code-changes-cpp.md
@@ -131,9 +131,9 @@
         - name: XAML 熱重新載入
           items:
             - name: 撰寫 XAML 程式碼及針對其執行進行偵錯
-              href: xaml-hot-reload.md
+              href: ../xaml-tools/xaml-hot-reload.md?toc=/visualstudio/debugger/toc.json
             - name: 對 XAML 熱重新載入進行疑難排解
-              href: xaml-hot-reload-troubleshooting.md
+              href: ../xaml-tools/xaml-hot-reload-troubleshooting.md?toc=/visualstudio/debugger/toc.json
         - name: 'F# 不支援編輯後繼續'
           href: edit-and-continue-not-supported-for-f-hash.md
     - name: 紀錄到輸出視窗
@@ -202,7 +202,7 @@
                   items:
                     - name: C++ 偵錯組態的專案設定
                       href: project-settings-for-a-cpp-debug-configuration.md
-                    - name: 啟用 Visual C++ 中的偵錯功能 (-D_DEBUG)
+                    - name: 啟用 C++ 中的偵錯功能 (-D_DEBUG)
                       href: enabling-debug-features-in-visual-cpp-d-debug.md
                 - name: Web 專案的屬性頁設定
                   href: property-pages-settings-for-web-projects.md
@@ -234,7 +234,7 @@
               items:
                 - name: 建立 C++ 物件的自訂檢視
                   href: create-custom-views-of-native-objects.md
-                - name: Visual C++ 自訂視覺化檢視相容性
+                - name: C++ 自訂視覺化檢視相容性
                   href: visual-cpp-custom-visualizer-compatibility.md
             - name: 自訂檢視 (受控)
               items:
@@ -435,7 +435,7 @@
             - name: 對已安裝的應用程式套件進行偵錯
               href: debug-installed-app-package.md
             - name: 在 Blend 中偵錯 XAML
-              href: debug-xaml-in-blend.md
+              href: ../xaml-tools/debug-xaml-in-blend.md?toc=/visualstudio/debugger/toc.json
             - name: HTML 和 CSS
               items:
                 - name: 偵錯 HTML 和 CSS
@@ -500,7 +500,7 @@
           items:
             - name: 對機器碼進行偵錯
               href: debugging-native-code.md
-            - name: 偵錯準備：Visual C++ 專案類型
+            - name: 偵錯準備：C++ 專案類型
               href: debugging-preparation-visual-cpp-project-types.md
             - name: 對最佳化程式碼進行偵錯
               href: how-to-debug-optimized-code.md

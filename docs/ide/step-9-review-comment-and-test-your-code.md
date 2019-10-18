@@ -1,5 +1,5 @@
 ---
-title: 步驟 9：檢閱、註解及測試您的程式碼
+title: 步驟 9：檢閱、註解和測試您的程式碼
 ms.date: 08/30/2019
 ms.assetid: f26f79ba-c91b-4164-b87f-679a1b231c09
 ms.topic: tutorial
@@ -13,14 +13,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d0504f994c05ed9c924b3758a7f83838c67df44
-ms.sourcegitcommit: 6eed0372976c0167b9a6d42ba443f9a474b8bb91
-ms.translationtype: MT
+ms.openlocfilehash: 31a66556e9476631fa0372b14e73eb8c6241fc63
+ms.sourcegitcommit: 98b02f87c7aa1f5eb7f0d1c86bfa36efa8580c57
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71118721"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72314196"
 ---
-# <a name="step-9-review-comment-and-test-your-code"></a>步驟 9：檢閱、註解及測試您的程式碼
+# <a name="step-9-review-comment-and-test-your-code"></a>步驟 9：檢閱、註解和測試您的程式碼
 
 您接下來要將註解加入至程式碼。 批註是不會變更應用程式行為方式的附注。 它可讓讀取程式碼的人容易了解您的程式碼有何用途。 將註解加入至您的程式碼是個好習慣。
 
@@ -30,9 +30,9 @@ ms.locfileid: "71118721"
 
 - 當您在 **Windows Forms 設計工具**中按兩下 [顯示圖片] 按鈕時，IDE 會自動將*方法*新增至程式的程式碼。
 
-- 方法是組織程式碼的方式：這是將程式碼群組在一起的方式。
+- 方法是用來組織程式碼的方式，也就是將程式碼組合在一起的方式。
 
-- 在大部分的情況下，方法會以特定循序執行少量的動作，像是您`showButton_Click()` （或`ShowButton_Click()`）方法如何顯示對話方塊，然後載入圖片。
+- 在大部分的情況下，方法會以特定循序執行少量的動作，例如您的 `showButton_Click()` （或 `ShowButton_Click()`）方法如何顯示對話方塊，然後載入圖片。
 
 - 方法是由程式碼「陳述式」或程式碼行所構成。 可將方法視為將程式碼陳述式配套起來的機制。
 
@@ -48,25 +48,24 @@ ms.locfileid: "71118721"
   pictureBox1.Load(openFileDialog1.FileName)
   ```
 
-   陳述式就是讓程式執行動作的機制。 在C#中，語句的結尾一律是分號。 在 Visual Basic 中，行尾就代表陳述式結尾 (Visual Basic 中不需要分號)。上一個陳述式指示 <xref:System.Windows.Forms.PictureBox> 控制項載入使用者以 **OpenFileDialog** 元件選取的檔案。
+   陳述式就是讓程式執行動作的機制。 在C#中，語句的結尾一律是分號。 在 Visual Basic 中，行尾就代表陳述式結尾 （Visual Basic 中不需要分號）。上述語句會告訴您的 <xref:System.Windows.Forms.PictureBox> 控制項載入使用者以**OpenFileDialog**元件選取的檔案。
 
 ## <a name="to-add-comments"></a>加入註解
 
 1. 將下列註解加入至程式碼。
 
-    > [!IMPORTANT]
-    > 使用此頁面右上方的程式設計語言控制項，以查看C#程式碼片段或 Visual Basic 程式碼片段。<br><br>![Docs.Microsoft.com 的程式設計語言控制項](../ide/media/docs-programming-language-control.png)
+     [!INCLUDE [devlang-control-csharp-vb](./includes/devlang-control-csharp-vb.md)]
 
      [!code-csharp[VbExpressTutorial1Step9_10#1](../ide/codesnippet/CSharp/step-9-review-comment-and-test-your-code_1.cs)]
 
      [!code-vb[VbExpressTutorial1Step9_10#1](../ide/codesnippet/VisualBasic/step-9-review-comment-and-test-your-code_1.vb)]
 
-    **showButton** 按鈕的 <xref:System.Windows.Forms.Control.Click> 事件處理常式現在已完成，可以運作。 您已從 `if` 陳述式開始撰寫程式碼。 `if`語句就是您告訴應用程式的方式：「檢查這一件事，如果是 true，請執行這些動作」。 在此情況下，您會告訴應用程式開啟 [**開啟**檔案] 對話方塊，而如果使用者選取檔案並選擇 [**確定]** 按鈕，則會在**PictureBox**中載入該檔案。
+    **showButton** 按鈕的 <xref:System.Windows.Forms.Control.Click> 事件處理常式現在已完成，可以運作。 您已從 `if` 陳述式開始撰寫程式碼。 @No__t_0 的陳述是告訴您的應用程式，「檢查這一件事，如果是 true，請執行這些動作」。 在此情況下，您會告訴應用程式開啟 [**開啟**檔案] 對話方塊，而如果使用者選取檔案並選擇 [**確定]** 按鈕，則會在**PictureBox**中載入該檔案。
 
     > [!TIP]
     > 建置 IDE 可讓您輕鬆撰寫程式碼，而「程式碼片段」就是它基於此目的而提供的一種方式。 程式碼片段是捷徑，可展開成一小段程式碼區塊。
     >
-    >  您可以看到所有可用的程式碼片段。 在功能表列上，依序選擇 [工具] > [程式碼片段管理員]。 針對C#， `if`程式碼片段是在**視覺C#效果**中。 在 Visual Basic 中，`if` 程式碼片段位於 [條件和迴圈] > [程式碼模式] 中。 您可以使用此管理員來瀏覽現有的程式碼片段或加入您自己的程式碼片段。
+    >  您可以看到所有可用的程式碼片段。 在功能表列上，依序選擇 [工具] > [程式碼片段管理員]。 在C#中，`if` 程式碼片段是**在C#視覺效果**中。 在 Visual Basic 中，`if` 程式碼片段位於 [條件和迴圈] > [程式碼模式] 中。 您可以使用此管理員來瀏覽現有的程式碼片段或加入您自己的程式碼片段。
     >
     >  若要在輸入程式碼時啟動程式碼片段，請輸入程式碼並選擇 **Tab** 鍵。 許多程式碼片段會出現在 [IntelliSense] 視窗中，這就是為何選擇兩次 **Tab** 鍵的原因：第一次是從 [IntelliSense] 視窗中選取程式碼片段，第二次是指示 IDE 使用該程式碼片段。 (IntelliSense 支援 `if` 程式碼片段，但不支援 `ifelse` 程式碼片段)。
 
@@ -75,7 +74,7 @@ ms.locfileid: "71118721"
      ![[全部儲存] 工具列按鈕](../ide/media/express_iconsaveall.png)<br>
 ***全部儲存****按鈕*
 
-     或者，若要儲存您的應用程式，請從功能表**欄選擇** > [檔案] [**全部儲存**] （或按**Ctrl** + **Shift** + **S**）。 最好養成儘早並經常儲存的習慣。
+     或者，若要儲存您的應用程式，請從功能表**欄選擇 [** 檔案]  >  [**全部儲存**] （或按**Ctrl** +**Shift** +**S**）。 最好養成儘早並經常儲存的習慣。
 
      當它執行時，您的程式看起來應該如下圖所示。
 
@@ -94,13 +93,13 @@ ms.locfileid: "71118721"
 
      就在此時，更大的圖片超過圖片檢視器的範圍框線。 在下一個步驟中，您會加入程式碼，將圖片調整為符合視窗大小。
 
-## <a name="to-continue-or-review"></a>若要繼續或檢視
+## <a name="to-continue-or-review"></a>繼續或檢視
 
-- 若要移至下一個教學課程步驟 **，請參閱[步驟10：為其他按鈕和核取方塊](../ide/step-10-write-code-for-additional-buttons-and-a-check-box.md)** 撰寫程式碼。
+- 若要移至下一個教學課程步驟，請參閱 **[步驟10：撰寫其他按鈕和核取方塊的程式碼](../ide/step-10-write-code-for-additional-buttons-and-a-check-box.md)** 。
 
 - 若要回到上一個教學課程步驟，請參閱[步驟 8：為顯示圖片按鈕事件處理常式撰寫程式碼](../ide/step-8-write-code-for-the-show-a-picture-button-event-handler.md)。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
-* [教學課程 2：建立計時的數學測驗](tutorial-2-create-a-timed-math-quiz.md)
-* [教學課程 3：建立配對遊戲](tutorial-3-create-a-matching-game.md)
+* [教學課程2：建立計時的數學測驗](tutorial-2-create-a-timed-math-quiz.md)
+* [教學課程3：建立配對遊戲](tutorial-3-create-a-matching-game.md)

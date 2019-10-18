@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 21ce539296f02599a1f8afa0344413fb556eea45
-ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
+ms.openlocfilehash: a4667fc630d86691d95e9dc9cd205b29f7b0f525
+ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72018774"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72349699"
 ---
 # <a name="find-your-debugging-task-in-visual-studio"></a>在 Visual Studio 中尋找您的偵錯工具工作
 
@@ -65,6 +65,12 @@ ms.locfileid: "72018774"
 
 您可以從 [反組解碼[] 視窗設定中斷點](using-breakpoints.md#BKMK_Set_a_breakpoint_from_debugger_windows)來執行這項操作。
 
+## <a name="execute-code"></a>執行程式碼
+
+### <a name="learn-the-commands-to-step-through-your-code-while-debugging"></a>瞭解在偵錯工具中逐步執行程式碼的命令
+
+如需詳細資訊，請參閱[使用偵錯工具流覽程式碼](navigating-through-code-with-the-debugger.md)。
+
 ## <a name="inspect-data"></a>檢查資料
 
 ### <a name="check-the-value-of-variables-while-running-your-app"></a>在執行您的應用程式時檢查變數的值
@@ -79,19 +85,7 @@ ms.locfileid: "72018774"
 
 在進行調試時，開啟內建的[字串視覺化檢視](view-strings-visualizer.md)。
 
-## <a name="additional-tasks"></a>其他工作
-
-### <a name="learn-the-commands-to-step-through-your-code-while-debugging"></a>瞭解在偵錯工具中逐步執行程式碼的命令
-
-如需詳細資訊，請參閱[使用偵錯工具流覽程式碼](navigating-through-code-with-the-debugger.md)。
-
-### <a name="edit-code-during-a-debugging-session"></a>在偵錯工具期間編輯程式碼
-
-使用 [[編輯後繼續](edit-and-continue.md)]。 若是 XAML，請使用[Xaml 熱重載](xaml-hot-reload.md)。
-
-### <a name="send-messages-to-the-output-window-without-modifying-code"></a>將訊息傳送至 [輸出] 視窗而不修改程式碼
-
-設定追蹤點。 如需詳細資訊，請參閱[使用追蹤點](using-tracepoints.md)。
+## <a name="configure-debugging"></a>設定偵錯
 
 ### <a name="customize-information-shown-in-the-debugger"></a>自訂偵錯工具中顯示的資訊
 
@@ -102,6 +96,16 @@ ms.locfileid: "72018774"
 ### <a name="configure-debugger-settings"></a>設定偵錯工具設定
 
 若要設定偵錯工具選項和偵錯工具專案設定，請參閱[偵錯工具設定和準備](debugger-settings-and-preparation.md)。
+
+## <a name="additional-tasks"></a>其他工作
+
+### <a name="edit-code-during-a-debugging-session"></a>在偵錯工具期間編輯程式碼
+
+使用 [[編輯後繼續](edit-and-continue.md)]。 若是 XAML，請使用[Xaml 熱重載](xaml-hot-reload.md)。
+
+### <a name="send-messages-to-the-output-window-without-modifying-code"></a>將訊息傳送至 [輸出] 視窗而不修改程式碼
+
+設定追蹤點。 如需詳細資訊，請參閱[使用追蹤點](using-tracepoints.md)。
 
 ### <a name="debug-on-remote-machines"></a>在遠端電腦上進行調試
 
