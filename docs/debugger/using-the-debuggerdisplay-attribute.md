@@ -12,19 +12,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9fbe3ff31d00945ef462c5c20eb1c4b33c250f97
-ms.sourcegitcommit: 4dfe098ac0df294aad63e6b384d6575980798ca3
-ms.translationtype: MT
+ms.openlocfilehash: 866ad705f16e9eabb097e9c0c9064d2c379ebf9f
+ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70887758"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72349629"
 ---
 # <a name="tell-the-debugger-what-to-show-using-the-debuggerdisplay-attribute-c-visual-basic-f-ccli"></a>使用 DebuggerDisplay 屬性（C#，Visual Basic， F#， C++/cli）告訴偵錯工具要顯示的內容
+
 <xref:System.Diagnostics.DebuggerDisplayAttribute> 控制物件、屬性或欄位在偵錯工具變數視窗中顯示的方式。 這個屬性可以適用於類型、委派、屬性、欄位和組件。 如果套用至基底類型，則屬性也適用于子類別。
 
 `DebuggerDisplay` 屬性有單一引數，這是要在類型執行個體的 [值] 一欄中顯示的字串。 這個字串可以包含括號 (`{` 和 `}`)。 一對括號內的文字會評估為欄位、屬性或方法。
 
-如果類別具有覆寫的 `ToString()` 方法，偵錯工具會使用覆寫的方法，而非預設的 `{<typeName>}`。 因此，如果您已覆寫 `ToString()` 方法，偵錯工具就會使用覆寫的方法，而非預設的`{<typeName>}`，而且您不需要使用 `DebuggerDisplay`。 若兩者都使用，`DebuggerDisplay` 屬性會優先於覆寫的 `ToString()` 方法。 屬性也優先于子類別中的`ToString()`覆寫方法。 `DebuggerDisplay`
+如果類別具有覆寫的 `ToString()` 方法，偵錯工具會使用覆寫的方法，而非預設的 `{<typeName>}`。 因此，如果您已覆寫 `ToString()` 方法，偵錯工具就會使用覆寫的方法，而非預設的`{<typeName>}`，而且您不需要使用 `DebuggerDisplay`。 若兩者都使用，`DebuggerDisplay` 屬性會優先於覆寫的 `ToString()` 方法。 @No__t_0 屬性也會優先于子類別中覆寫的 `ToString()` 方法。
 
 偵錯工具是否評估這個隱含 `ToString()` 呼叫，是取決於 [工具 / 選項 / 偵錯] 對話方塊中的使用者設定。 Visual Basic 並未實作這個隱含 `ToString()` 評估。
 
@@ -45,8 +46,8 @@ ms.locfileid: "70887758"
 
 |參數|用途|
 |----------------|-------------|
-|`Name`, `Type`|這些參數會影響變數視窗的 [ **名稱** ] 和 [ **類型** ] 欄 (它們可以設定為與建構函式使用相同語法的字串)。過度使用或不當使用這些參數，會造成輸出混淆。|
-|`Target`, `TargetTypeName`|指定屬性在組件層級使用時的目標類型。|
+|`Name`、 `Type`|這些參數會影響變數視窗的 [ **名稱** ] 和 [ **類型** ] 欄 (它們可以設定為與建構函式使用相同語法的字串)。過度使用或不當使用這些參數，會造成輸出混淆。|
+|`Target`、 `TargetTypeName`|指定屬性在組件層級使用時的目標類型。|
 
 Autoexp.cs 檔案會在組件層級使用 DebuggerDisplay 屬性。 Autoexp.cs 檔案會決定 Visual Studio 用於 .NET 物件使用的預設展開 (Expansion)。 您可以檢查 autoexp.cs 檔案以取得如何使用 DebuggerDisplay 屬性的範例，或修改和編譯 autoexp.cs 檔案以變更預設展開 (Expansion)。 請務必先備份 autoexp.cs 檔案，再進行修改。
 
@@ -97,7 +98,7 @@ public sealed class MyClass
 
 |**名稱**|**值**|**Type**|
 |--------------|---------------|--------------|
-|Key|"three"|object {string}|
+|機碼|"three"|object {string}|
 |值|3|object {int}|
 
 ```csharp
@@ -178,7 +179,7 @@ class MyHashtable
 }
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [使用 DebuggerTypeProxy 屬性](../debugger/using-debuggertypeproxy-attribute.md)
 - [建立 Managed 物件的自訂檢視](../debugger/create-custom-views-of-dot-managed-objects.md)

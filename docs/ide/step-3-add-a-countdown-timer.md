@@ -1,5 +1,5 @@
 ---
-title: 步驟 3：新增倒數計時器
+title: 步驟 3：加入倒數計時器
 ms.date: 11/04/2016
 ms.topic: tutorial
 ms.prod: visual-studio-windows
@@ -13,14 +13,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 197a52894a8c0ed3c2c38b9036a521a558c1005d
-ms.sourcegitcommit: 6eed0372976c0167b9a6d42ba443f9a474b8bb91
+ms.openlocfilehash: f5ee65126fb89f2725b69d196e0659c622d9c389
+ms.sourcegitcommit: 98b02f87c7aa1f5eb7f0d1c86bfa36efa8580c57
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71118785"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72314113"
 ---
-# <a name="step-3-add-a-countdown-timer"></a>步驟 3：新增倒數計時器
+# <a name="step-3-add-a-countdown-timer"></a>步驟 3：加入倒數計時器
 
 在本教學課程的第三個部分中，您將加入倒數計時器來追蹤受測者可完成作答的剩餘秒數。
 
@@ -36,8 +36,7 @@ ms.locfileid: "71118785"
      [!code-vb[VbExpressTutorial3Step3#5](../ide/codesnippet/VisualBasic/step-3-add-a-countdown-timer_1.vb)]
      [!code-csharp[VbExpressTutorial3Step3#5](../ide/codesnippet/CSharp/step-3-add-a-countdown-timer_1.cs)]
 
-   > [!IMPORTANT]
-   > 使用此頁面右上方的程式設計語言控制項，以查看C#程式碼片段或 Visual Basic 程式碼片段。<br><br>![Docs.Microsoft.com 的程式設計語言控制項](../ide/media/docs-programming-language-control.png)
+     [!INCLUDE [devlang-control-csharp-vb](./includes/devlang-control-csharp-vb.md)]
 
      現在您需要實際計算秒數的方法，例如計時器，它會在經過您指定的時間後引發事件。
 
@@ -113,8 +112,8 @@ ms.locfileid: "71118785"
      ![數學測驗正進行中](../ide/media/express_addcountdown.png)<br/>
 *數學測驗正進行中*
 
-## <a name="to-continue-or-review"></a>若要繼續或檢視
+## <a name="to-continue-or-review"></a>繼續或檢視
 
-- 若要移至下一個教學課程步驟 **，請參閱[步驟4：新增 CheckTheAnswer （）方法](../ide/step-4-add-the-checktheanswer-parens-method.md)。**
+- 若要移至下一個教學課程步驟，請參閱 **[步驟4：新增 CheckTheAnswer （）方法](../ide/step-4-add-the-checktheanswer-parens-method.md)** 。
 
 - 若要回到上一個教學課程步驟，請參閱[步驟 2：建立隨機加法問題](../ide/step-2-create-a-random-addition-problem.md)。

@@ -1,5 +1,5 @@
 ---
-title: 步驟 6：新增減法問題
+title: 步驟 6：加入減法問題
 ms.date: 11/04/2016
 ms.topic: tutorial
 ms.prod: visual-studio-windows
@@ -13,14 +13,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 47932e8a647cb9a5ae555de09778fcd67da397e2
-ms.sourcegitcommit: 6eed0372976c0167b9a6d42ba443f9a474b8bb91
-ms.translationtype: MT
+ms.openlocfilehash: 8acc67aa82bb0d7cf81cf6794bfdbb4e0c912ebe
+ms.sourcegitcommit: 98b02f87c7aa1f5eb7f0d1c86bfa36efa8580c57
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71118729"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72314239"
 ---
-# <a name="step-6-add-a-subtraction-problem"></a>步驟 6：新增減法問題
+# <a name="step-6-add-a-subtraction-problem"></a>步驟 6：加入減法問題
 在本教學課程的第六個部分中，您將加入減法問題並學習如何執行下列工作：
 
 - 儲存減法的值。
@@ -43,8 +43,7 @@ ms.locfileid: "71118729"
      [!code-vb[VbExpressTutorial3Step5_6#12](../ide/codesnippet/VisualBasic/step-6-add-a-subtraction-problem_1.vb)]
      [!code-csharp[VbExpressTutorial3Step5_6#12](../ide/codesnippet/CSharp/step-6-add-a-subtraction-problem_1.cs)]
 
-     > [!IMPORTANT]
-     > 使用此頁面右上方的程式設計語言控制項，以查看C#程式碼片段或 Visual Basic 程式碼片段。<br><br>![Docs.Microsoft.com 的程式設計語言控制項](../ide/media/docs-programming-language-control.png)
+     [!INCLUDE [devlang-control-csharp-vb](./includes/devlang-control-csharp-vb.md)]
 
      新的整數變數名稱 **minuend** 和 **subtrahend** 並不是程式設計詞彙。 這兩個名稱是算術中的減數 (subtrahend) 和從中減去減數之被減數 (minuend) 的慣用名稱。 差等於被減數減去減數。 您可以使用其他名稱，因為您程式中的變數、控制項、元件或方法不需要特定名稱。 您必須遵循規則 (例如，名稱開頭不可使用數字)，但是通常可以使用 x1、x2、x3 或 x4 這類名稱。 不過，一般名稱可能使程式碼不易閱讀，而且幾乎難以追蹤問題。 為了讓變數名稱保持唯一且實用，稍後在本教學課程中，您將在乘法 (被乘數 × 乘數 = 乘積) 和除法 (被除數 ÷ 除數 = 商數) 中使用慣用名稱。
 
@@ -62,7 +61,7 @@ ms.locfileid: "71118729"
 
      您可以透過多種方式呼叫 Random 類別的 `Next()` 方法，也就是您在本教學課程前段中命名為 "randomizer" 的方法。 能夠以多種方式呼叫的方法稱為「多載」(Overload)，您可以使用 IntelliSense 來了解這些方法。 再看一次 `Next()` 方法的 [IntelliSense] 視窗工具提示。
 
-     ![IntelliSense 視窗工具提示](../ide/media/express_overloads.png)<br/>
+     ![IntelliSense 視窗工具提示 ](../ide/media/express_overloads.png)<br/>
 ***IntelliSense*** *視窗工具提示*
 
      工具提示會顯示 [(+ 2 多載)]，也就是說，您可以透過另外兩種方式呼叫 `Next()` 方法。 多載包含不同數目或類型的引數，因此彼此之間的運作方式會稍有不同。 例如，某個方法可能會接受單一整數引數，且其中一個多載可能會接受一個整數和一個字串。 您可以依據需要的功能選擇正確的多載。 當您將程式碼新增至 `StartTheQuiz()` 方法時，只要輸入 `randomizer.Next(`，[IntelliSense] 視窗就會顯示詳細資訊。 若要循環瀏覽這些多載，請選擇**向上鍵**和**向下鍵**，如下圖所示：
@@ -91,8 +90,8 @@ ms.locfileid: "71118729"
      ![包含減法問題的數學測驗](../ide/media/express_addsubtract.png)<br/>
 ***數學測驗*** *有減法問題*
 
-## <a name="to-continue-or-review"></a>若要繼續或檢視
+## <a name="to-continue-or-review"></a>繼續或檢視
 
-- 若要移至下一個教學課程步驟 **，請參閱[步驟7：新增乘法和除法問題](../ide/step-7-add-multiplication-and-division-problems.md)。**
+- 若要移至下一個教學課程步驟，請參閱 **[步驟7：新增乘法和除法問題](../ide/step-7-add-multiplication-and-division-problems.md)** 。
 
 - 若要回到上一個教學課程步驟，請參閱[步驟 5：新增 NumericUpDown 控制項的 Enter 事件處理常式](../ide/step-5-add-enter-event-handlers-for-the-numericupdown-controls.md)。
