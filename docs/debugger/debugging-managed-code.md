@@ -16,18 +16,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: c94de629026cfa1b78429aaf2209b81eead7da4f
-ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.openlocfilehash: f6dd305b55e1ff7dd11b46f023906a8422b5504f
+ms.sourcegitcommit: 08c144d290da373df841f04fc799e3133540a541
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71211196"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72536054"
 ---
 # <a name="debug-managed-code-c-visual-basic-f-ccli"></a>Debug Managed 程式碼C#（，Visual Basic F#， C++，/cli）
 
 本節涵蓋 managed 應用程式的常見調試問題和技術，或是以通用語言執行時間為目標之語言撰寫的應用程式，例如C#Visual Basic、 C++和/cli 本文所說明的技術屬於高階技術。 [偵錯工具簡介](../debugger/debugger-feature-tour.md)。
 
-## <a name="in-this-section"></a>本節內容
+## <a name="in-this-section"></a>本章節內容
 
 [輸出視窗中的診斷訊息](../debugger/diagnostic-messages-in-the-output-window.md)\
 描述 <xref:System.Diagnostics.Debug> 和 <xref:System.Diagnostics.Trace> 類別，您可以使用它們將執行階段訊息寫入 [輸出] 視窗。 這兩個類別包括能夠讓資訊輸出的方法，有些資訊輸出不會中斷執行，有些則會在指定條件失敗時中斷執行。
@@ -38,7 +38,7 @@ ms.locfileid: "71211196"
 [Visual Basic 中的 Stop 陳述式](../debugger/stop-statements-in-visual-basic.md)\
 描述提供另一種設定中斷點方式的 `Stop` 陳述式。 同時也提供一段範例程式碼，比較 `Stop` 陳述式和 `End` 陳述式，以及 `Stop` 和 `Assert` 陳述式。
 
-[逐步解說：Windows Form 的調試](../debugger/walkthrough-debugging-a-windows-form.md)\
+[逐步解說：偵錯 Windows Form](../debugger/walkthrough-debugging-a-windows-form.md)\
 提供建立 Windows Form 和偵錯這個表單的逐步指示說明。 Windows Form 是 Managed Windows 應用程式的標準元件，也是最常用的 Managed 應用程式。 此逐步解說會使用 Visual C# 和 Visual Basic 語言，不過，利用 C++ 建立 Windows Form 的技術大致與這兩種語言相似。
 
 [針對 OnStart 方法進行偵錯](../debugger/how-to-debug-the-onstart-method.md)\
@@ -47,7 +47,7 @@ ms.locfileid: "71211196"
 [混合模式偵錯](../debugger/debugging-mixed-mode-applications.md)\
 說明偵錯混合模式應用程式的方法。 也就是結合機器碼和 Managed 程式碼的任何應用程式。
 
-[錯誤：無法進行調試，因為系統上已啟用內核偵錯工具](../debugger/error-debugging-isn-t-possible-because-a-kernel-debugger-is-enabled-on-the-system.md)\
+[錯誤：無法進行偵錯，因為系統上已啟用核心偵錯工具](../debugger/error-debugging-isn-t-possible-because-a-kernel-debugger-is-enabled-on-the-system.md)\
 描述如果您嘗試在以偵錯模式啟動且執行 [!INCLUDE[win7](../debugger/includes/win7_md.md)]、[!INCLUDE[wiprlhext](../debugger/includes/wiprlhext_md.md)]、[!INCLUDE[winxp](../code-quality/includes/winxp_md.md)]、[!INCLUDE[Win2kFamily](../code-quality/includes/win2kfamily_md.md)] 或 Windows NT 的系統上，對 Managed 程式碼進行偵錯時會產生的錯誤訊息。
 
 \[JIT 最佳化和偵錯](../debugger/jit-optimization-and-debugging.md)
@@ -56,7 +56,7 @@ ms.locfileid: "71211196"
 [針對 LINQ 和 DLINQ 進行偵錯](../debugger/debugging-linq.md)\
 討論對 LINQ 查詢進行偵錯的技術。
 
-[逐步解說：調試平行應用程式](../debugger/walkthrough-debugging-a-parallel-application.md)\
+[逐步解說：針對平行應用程式進行偵錯](../debugger/walkthrough-debugging-a-parallel-application.md)\6
 描述如何使用 [平行工作] 和 [平行堆疊] 工具視窗來偵錯平行應用程式。
 
 ## <a name="related-sections"></a>相關章節
@@ -74,14 +74,14 @@ ms.locfileid: "71211196"
 提供偵錯 Windows 服務應用程式所需考量的因素，包括設定、附加到處理序、偵錯服務的 `OnStart` 方法程式碼和 Main 方法中的程式碼、設定中斷點，以及使用服務控制管理員啟動、停止、暫停和繼續服務。
 
 [偵錯和分析](/dotnet/framework/debug-trace-profile/index)\
-討論偵錯 .NET Framework 應用程式，及其組態需求。
+討論如何調試 .NET 應用程式和設定需求。
 
 [針對指令碼和 Web 應用程式進行偵錯](/visualstudio/debugger/how-to-enable-debugging-for-aspnet-applications)\
 描述您在偵錯指令碼和 Web 應用程式時會遇到的一般偵錯問題和技術。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
-- [逐步解說：在設計階段時，Debug 自訂 Windows Forms 控制項](/dotnet/framework/winforms/controls/walkthrough-debugging-custom-windows-forms-controls-at-design-time)
+- [逐步解說：在設計階段時，對自訂 Windows Forms 控制項進行調試](/dotnet/framework/winforms/controls/walkthrough-debugging-custom-windows-forms-controls-at-design-time)
 - [偵錯工具安全性](../debugger/debugger-security.md)
 - [Visual Studio 偵錯](../debugger/index.yml)
 - [偵錯工具簡介](../debugger/debugger-feature-tour.md)

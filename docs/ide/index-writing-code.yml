@@ -10,12 +10,12 @@ metadata:
   author: gewarren
   ms.author: gewarren
   ms.date: 10/15/2019
-  ms.openlocfilehash: 275ac40ff1c2edf70a8388b09e50fc3d496e8050
-  ms.sourcegitcommit: e82baa50bf5a65858c410882c2e86a552c2c1921
+  ms.openlocfilehash: 30345839ca1c5f4f07b3c36415f7aad277693069
+  ms.sourcegitcommit: 6244689e742e551e7b6933959bd42df56928ece3
   ms.translationtype: MT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 10/16/2019
-  ms.locfileid: "72391460"
+  ms.lasthandoff: 10/17/2019
+  ms.locfileid: "72516822"
 landingContent:
 - title: 開啟或建立專案
   linkLists:
@@ -45,6 +45,8 @@ landingContent:
       url: code-styles-and-code-cleanup.md
     - text: 程式碼分析
       url: ../code-quality/roslyn-analyzers-overview.md
+    - text: IntelliCode
+      url: /visualstudio/intellicode/intellicode-visual-studio
 - title: 開始使用程式設計語言
   linkLists:
   - linkListType: tutorial

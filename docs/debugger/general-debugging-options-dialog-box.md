@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d3fa7ae62c19a7af45188bab08ce9b3144032b7d
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
-ms.translationtype: MT
+ms.openlocfilehash: cd90cb5eb55143a4a1916dfcee3f108ba7afb759
+ms.sourcegitcommit: 08c144d290da373df841f04fc799e3133540a541
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72435715"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72536039"
 ---
 # <a name="general-debugging-options"></a>一般調試選項
 
@@ -99,7 +99,7 @@ ms.locfileid: "72435715"
 
 **在模組載入時隱藏 jit 優化（僅限 Managed）** ：在載入模組時停用 managed 程式碼的 jit 優化，並在附加偵錯工具時編譯 jit。 停用最佳化可更容易偵錯一些問題，但消耗較多效能。 如果正在使用 Just My Code，隱藏 JIT 最佳化會使非使用者程式碼顯示為使用者程式碼 ("My Code")。 如需詳細資訊，請參閱[JIT 優化和調試](../debugger/jit-optimization-and-debugging.md)程式。
 
-**啟用 ASP.NET （Chrome、Edge 及 IE）的 JavaScript 調試**程式：啟用 ASP.NET 應用程式的腳本偵錯工具。 第一次在 Chrome 中使用時，您可能需要登入瀏覽器，以啟用您已安裝的 Chrome 延伸模組。 停用此選項以還原成舊版行為。
+**啟用 ASP.NET 的 JavaScript 偵錯工具（Chrome、Microsoft Edge 和 IE）** ：啟用 ASP.NET 應用程式的腳本偵錯工具。 第一次在 Chrome 中使用時，您可能需要登入瀏覽器，以啟用您已安裝的 Chrome 延伸模組。 停用此選項以還原成舊版行為。
 
 **啟用適用于 Uwp JAVAscript 應用程式的 Edge 開發人員工具（實驗性）** ：在 Microsoft Edge 中啟用適用于 uwp javascript 應用程式的開發人員工具。
 
@@ -117,7 +117,7 @@ ms.locfileid: "72435715"
 
 **使用 Managed 相容性模式**：以舊版取代預設的調試引擎，以啟用這些案例：
 
-- 您所使用的 .NET Framework 語言不是C#、Visual Basic，或是F#提供自己的運算式評估工具（這包括C++/cli）。
+- 您使用的 .NET 語言不是C#、Visual Basic，或是F#提供自己的運算式評估工具（這包括C++/cli）。
 
 - 您想要在混合模式的調試C++程式期間啟用專案的 [編輯後繼續]。
 

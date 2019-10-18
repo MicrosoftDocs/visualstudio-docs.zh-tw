@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/30/2019
 ms.topic: conceptual
 description: MSDN Magazine 即將淘汰
-ms.openlocfilehash: 8addfcf6c32b8c7d01223ff1ae6bb4cc4b32562c
-ms.sourcegitcommit: 673b9364fc9a96b027662dcb4cf5d61cab60ef11
-ms.translationtype: HT
+ms.openlocfilehash: de9d81369d1a616b2511ec553d41a077b2edb359
+ms.sourcegitcommit: 6244689e742e551e7b6933959bd42df56928ece3
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/21/2019
-ms.locfileid: "69891249"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72516844"
 ---
 # <a name="the-msdn-magazine-benefit-in-visual-studio-subscriptions-has-been-discontinued"></a>Visual Studio 訂用帳戶的 MSDN Magazine 權益已中止
 
@@ -29,8 +29,8 @@ MSDN Magazine 最近宣告將於 2019 年 11 月發行其最後一期。  這項
     Subscribers of MSDN Magazine who have paid for their subscriptions will receive a pro-rated refund, based on time remaining on their subscription. The refund checks will be mailed out to those subscribers after the November issue has published."
 
 ## <a name="frequently-asked-questions"></a>常見問題集
-### <a name="q-how-does-the-refund-process-work"></a>問：退款流程如何運作？
-答：退款會寄送至您訂用帳戶的存檔地址。 如果您對退款有其他疑問，請連絡 **1105 Media**。  您可以在 msdn.microsoft.com 上的[部落格文章](https://msdn.microsoft.com/magazine/mt833502.aspx?)中取得 1105 Media 的完整連絡人資訊。  
+### <a name="q-how-does-the-refund-process-work"></a>問：退款程式如何運作？
+答：退款將會寄送至您訂用帳戶的檔案位址。 如果您對退款有其他疑問，請連絡 **1105 Media**。  您可以在 msdn.microsoft.com 上的[部落格文章](https://msdn.microsoft.com/magazine/mt833502.aspx?)中取得 1105 Media 的完整連絡人資訊。  
 
 ## <a name="support-resources"></a>支援資源
 - 如需 Visual Studio 訂用帳戶有關銷售、訂閱、帳戶與計費的協助，請聯繫 Visual Studio [訂用帳戶支援](https://visualstudio.microsoft.com/subscriptions/support/)。
@@ -38,6 +38,7 @@ MSDN Magazine 最近宣告將於 2019 年 11 月發行其最後一期。  這項
 
 ## <a name="next-steps"></a>後續步驟
 查看您訂用帳戶中的更多專業開發機會：
+- [CODE Magazine](vs-code-magazine.md)
 - [Pluralsight](vs-pluralsight.md)
 - [LinkedIn Learning](vs-linkedin-learning.md)
 - [DataCamp](vs-datacamp.md)
