@@ -10,12 +10,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - multiple
-ms.openlocfilehash: fcf28d844124b7a2ae8a0b380739433261c5a3ef
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: eea38f8109069f6d6526b2ccb920565f09b98043
+ms.sourcegitcommit: 08c144d290da373df841f04fc799e3133540a541
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62816103"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72535670"
 ---
 # <a name="cross-platform-mobile-development-in-visual-studio"></a>Visual Studio 中的跨平台行動裝置應用程式開發
 
@@ -34,7 +34,7 @@ ms.locfileid: "62816103"
 |**進一步了解**|
 |--------------------|
 |[安裝 Visual Studio](http://visualstudio.microsoft.com/products/visual-studio-community-vs) (VisualStudio.com)|
-|[了解 Visual Studio 的 Xamarin](https://visualstudio.microsoft.com/xamarin/) (VisualStudio.com)|
+|[了解 Visual Studio 中的 Xamarin](https://visualstudio.microsoft.com/xamarin/) (VisualStudio.com)|
 |[Xamarin 行動應用程式開發文件](/xamarin/) |
 |[使用 Xamarin 應用程式進行 DevOps](/xamarin/tools/ci/devops/) |
 |[了解 Visual Studio 的通用 Windows app](https://visualstudio.microsoft.com/vs/universal-windows-platform/) (VisualStudio.com)|
@@ -60,7 +60,7 @@ ms.locfileid: "62816103"
 
  如果您不使用 Xamarin.Forms，並選擇針對每個平台個別設計，您可以在平台專案 (Android、iOS 和 Windows) 之間共用大部分的非 UI 程式碼。 這包括任何商務邏輯、雲端整合、資料庫存取，或以 .NET Framework 為目標的其他任何程式碼。 唯一無法共用的程式碼是以特定平台為目標的程式碼。
 
- ![在 Windows、iOS 和 Android UI 之間共用程式碼](../cross-platform/media/sharecode.png "ShareCode")
+ ![在 Windows、iOs 和 Android UI 之間共用程式碼](../cross-platform/media/sharecode.png "ShareCode")
 
  您可以使用共用專案和 (或) 可攜式類別庫專案來共用您的程式碼。 您可能會發現某些程式碼最適合用於共用專案，而某些程式碼在可攜式類別庫專案內較有意義。
 
@@ -84,6 +84,8 @@ ms.locfileid: "62816103"
 |[開發適用於通用 Windows 平台 (UWP) 的應用程式](../cross-platform/develop-apps-for-the-universal-windows-platform-uwp.md)|
 |[將應用程式移轉至通用 Windows 平台 (UWP)](https://msdn.microsoft.com/library/mt148501.aspx)|
 
+::: moniker range="vs-2017"
+
 ## <a name="HTML"></a> 建置 Android、iOS 和 Windows 的應用程式 (HTML/JavaScript)
 
  ![Windows、iOS 和 Android 裝置](../cross-platform/media/homedevices.png "Windows、iOS 和 Android 裝置")
@@ -94,7 +96,7 @@ ms.locfileid: "62816103"
 
  因為這些 API 是跨平台的，您可以在所有三個平台之間共用您撰寫的大部分內容。 這會降低開發與維護的成本。 另外，也不需要從頭開始。 如果您已建立其他類型的 Web 應用程式，可以與 Cordova 應用程式共用那些檔案，而不需要以任何方式修改或重新設計。
 
- ![具有 Javascript 的 Multi-Device Hybrid App](../cross-platform/media/multidevicehybridapps.png "具有 Javascript 的 Multi-Device Hybrid App")
+ ![使用 JAVAscript 的多重裝置混合式應用程式](../cross-platform/media/multidevicehybridapps.png "使用 JAVAscript 的多重裝置混合式應用程式")
 
  首先，安裝 Visual Studio，然後在設定期間選擇 [使用 JavaScript 進行行動開發] 功能。 Cordova 工具會自動安裝建置多重平台應用程式所需的所有協力廠商軟體。
 
@@ -108,18 +110,20 @@ ms.locfileid: "62816103"
 |--------------------|
 |[安裝 Visual Studio](http://visualstudio.microsoft.com/products/visual-studio-community-vs) (VisualStudio.com)|
 |[開始使用 Visual Studio Tools for Apache Cordova](/visualstudio/cross-platform/tools-for-cordova/)|
-|[了解 Visual Studio Emulator for Android](http://visualstudio.microsoft.com/explore/msft-android-emulator-vs) (VisualStudio.com)|
+|[了解 Visual Studio 的 Android 模擬器](http://visualstudio.microsoft.com/explore/msft-android-emulator-vs) (VisualStudio.com)|
+
+::: moniker-end
 
 <a name="CPP"></a>
 
 ## <a name="build-an-app-for-android-and-windows-c"></a>建置 Android 和 Windows 的應用程式 (C++)
- ![使用 C&#43;&#43; 為 Android、 iOS 和 Windows 建置](../cross-platform/media/cross_plat_cpp_intro_image.png "Cross_Plat_CPP_Intro_Image")
+ ![使用 C&#43; &#43;針對 Android、iOS 和 Windows 建立](../cross-platform/media/cross_plat_cpp_intro_image.png "Cross_Plat_CPP_Intro_Image")
 
  首先，安裝 Visual Studio 2017 及 [使用 C++ 進行行動開發] 工作負載。 然後，您可以建置 Android 的 Native-Activity 應用程式，或以 Windows 為目標的應用程式。 目前尚未提供以 iOS 為目標的 C++ 範本。 您可以視需要在同一個方案以 Android 和 Windows 為目標，然後使用跨平台靜態或動態共用程式庫，在這兩者間共用程式碼。
 
  如果您必須建置需要任何進階圖形操作類型 (例如遊戲) 的 Android 應用程式，可使用 C++ 來執行此動作。 從**原生活動應用程式 (Android)** 專案開始。 這個專案提供對 Clang 工具鏈的完整支援。
 
- ![Native Activity 專案範本](../cross-platform/media/cross-plat_cpp_native.png "Native Activity 專案範本")
+ ![Native activity 專案範本](../cross-platform/media/cross-plat_cpp_native.png "Native Activity 專案範本")
 
  當您準備好要執行應用程式及查看其外觀時，請使用適用於 Android 模擬器。 這項工具不僅快速可靠，而且容易安裝及設定。
 
@@ -139,7 +143,7 @@ ms.locfileid: "62816103"
 |[安裝跨平台行動裝置開發適用的 Visual C++ 工具。](https://msdn.microsoft.com/library/dn707591.aspx) (MSDN Library)。|
 |[進一步了解如何使用 C++ 來將多個平台作為目標。](https://visualstudio.microsoft.com/vs/cplusplus-mdd/) (VisualStudio.com)|
 |[安裝所需項目，然後建立 Android 原生活動應用程式](https://msdn.microsoft.com/library/dn707595.aspx) (MSDN Library)|
-|[深入了解與 Android 及 Windows 應用程式共用 C++ 程式碼](https://visualstudio.microsoft.com/vs/cplusplus-mdd/) (VisualStudio.com)|
+|[深入了解如何與 Android 和 Windows 應用程式共用 C++ 程式碼](https://visualstudio.microsoft.com/vs/cplusplus-mdd/) (VisualStudio.com)|
 |[適用於 C++ 的跨平台行動開發範例](https://msdn.microsoft.com/library/dn707596.aspx) (MSDN Library)|
 |[其他適用於 C++ 的跨平台行動開發範例](https://code.msdn.microsoft.com/site/search?f%5B0%5D.Type=SearchText&f%5B0%5D.Value=android&f%5B1%5D.Type=ProgrammingLanguage&f%5B1%5D.Value=C%2B%2B&f%5B1%5D.Text=C%2B%2B) (code.msdn)|
 
@@ -149,7 +153,7 @@ ms.locfileid: "62816103"
 
  Visual Studio Tools for Unity 是將 Visual Studio 的強大程式碼編輯、生產力和偵錯工具與 *Unity* 整合的免費 Visual Studio 延伸模組，這個熱門的跨平台遊戲/圖形引擎和開發環境適用於以 Windows、iOS、Android 和其他平台為目標的沉浸式應用程式。
 
- ![VSTU 開發環境](../cross-platform/media/vstu_overview.png "Visual Studio Tools for Unity 概觀")
+ ![VSTU 開發環境](../cross-platform/media/vstu_overview.png "Visual Studio Tools for Unity 總覽")
 
  透過 Visual Studio Tools for Unity (VSTU)，您可以在 C# 中使用 Visual Studio 來撰寫遊戲和編輯器指令碼，然後使用其強大的偵錯工具來尋找及修正錯誤。 最新版的 VSTU 包含對 Unity 2018.1 的支援，且包括 Unity 的 ShaderLab 著色器語言的語法著色、與 Unity 的更佳同步化、更豐富的偵錯，以及 MonoBehavior 精靈的改善式程式碼產生。 VSTU 也會將您的 Unity 專案檔案、主控台訊息和啟動遊戲的功能整合到 Visual Studio 中，以便您可以在撰寫程式碼時，花較少的時間來切換 Unity Editor。
 
