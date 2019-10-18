@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 905f3323f4ede33ba8a7e1547bed7a81c43be96d
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: 4a4aa987c58ace1bb2fa8c0a2dfac3c0aecd87d7
+ms.sourcegitcommit: 08c144d290da373df841f04fc799e3133540a541
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72449041"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72535872"
 ---
 # <a name="globalization-rules-rule-set-for-managed-code"></a>適用於 Managed 程式碼的全球化規則規則集
 
@@ -21,14 +21,14 @@ ms.locfileid: "72449041"
 
 |規則|描述|
 |----------|-----------------|
-|[CA1300](../code-quality/ca1300-specify-messageboxoptions.md)|必須指定 MessageBoxOptions|
-|[CA1301](../code-quality/ca1301-avoid-duplicate-accelerators.md)|避免使用重複的快速鍵|
-|[CA1302](../code-quality/ca1302-do-not-hardcode-locale-specific-strings.md)|不要硬式編碼地區設定特定字串|
-|[CA1303](../code-quality/ca1303-do-not-pass-literals-as-localized-parameters.md)|不要將常值當作已當地語系化的參數傳遞|
-|[CA1304](../code-quality/ca1304-specify-cultureinfo.md)|必須指定 CultureInfo|
-|[CA1305](../code-quality/ca1305-specify-iformatprovider.md)|必須指定 IFormatProvider|
-|[CA1306](../code-quality/ca1306-set-locale-for-data-types.md)|必須設定資料類型的地區設定|
-|[CA1307](../code-quality/ca1307-specify-stringcomparison.md)|必須指定 StringComparison|
-|[CA1308 必須](../code-quality/ca1308-normalize-strings-to-uppercase.md)|必須將字串標準化為大寫字母|
-|[CA1309](../code-quality/ca1309-use-ordinal-stringcomparison.md)|使用循序的 StringComparison|
+|[CA1300](../code-quality/ca1300.md)|必須指定 MessageBoxOptions|
+|[CA1301](../code-quality/ca1301.md)|避免使用重複的快速鍵|
+|[CA1302](../code-quality/ca1302.md)|不要硬式編碼地區設定特定字串|
+|[CA1303](../code-quality/ca1303.md)|不要將常值當作已當地語系化的參數傳遞|
+|[CA1304](../code-quality/ca1304.md)|必須指定 CultureInfo|
+|[CA1305](../code-quality/ca1305.md)|必須指定 IFormatProvider|
+|[CA1306](../code-quality/ca1306.md)|必須設定資料類型的地區設定|
+|[CA1307](../code-quality/ca1307.md)|必須指定 StringComparison|
+|[CA1308 必須](../code-quality/ca1308.md)|必須將字串標準化為大寫字母|
+|[CA1309](../code-quality/ca1309.md)|使用循序的 StringComparison|
 |[CA2101 必須](../code-quality/ca2101.md)|必須指定 P/Invoke 字串引數的封送處理|

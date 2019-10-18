@@ -1,5 +1,5 @@
 ---
-title: 使用者程式碼，Just My code 偵錯 |Microsoft Docs
+title: 使用 Just My Code 來對使用者程式碼進行偵錯工具 |Microsoft Docs
 ms.date: 02/13/2019
 ms.topic: conceptual
 ms.assetid: 0f0df097-bbaf-46ad-9ad1-ef5f40435079
@@ -8,116 +8,116 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: edb78ed49add85b35f3fb89b4ba424d44f52bf8b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9c1d474b388dd8f116eb53febb8a472d4c5b8150
+ms.sourcegitcommit: 08c144d290da373df841f04fc799e3133540a541
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62905749"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72535991"
 ---
-# <a name="debug-only-user-code-with-just-my-code"></a>只有使用 Just My Code 的使用者程式碼進行偵錯
+# <a name="debug-only-user-code-with-just-my-code"></a>僅使用 Just My Code 來進行僅限 Debug 的使用者程式碼
 
-*Just My Code*超出 Visual Studio 偵錯功能自動步驟系統、 架構和其他非使用者程式碼的呼叫。 在 [**呼叫堆疊**] 視窗中，Just My Code 會摺疊這些呼叫 **[外部程式碼]** 框架。
+*Just My Code*是一項 Visual Studio 的偵錯工具，它會自動逐步執行對系統、架構和其他非使用者程式碼的呼叫。 在 [**呼叫堆疊**] 視窗中，Just My Code 將這些呼叫折迭至 **[外部程式碼]** 框架。
 
-Just My Code 的運作方式不同.NET Framework 中C++，和 JavaScript 專案。
+在 .NET、 C++和 JavaScript 專案中，Just My Code 的運作方式不同。
 
 ## <a name="BKMK_Enable_or_disable_Just_My_Code"></a> 啟用或停用 Just My Code
 
-對於大部分的程式設計語言，預設會啟用 Just My Code。
+對於大部分的程式設計語言而言，預設會啟用 Just My Code。
 
-- 若要啟用或停用 Just My Code，Visual Studio 中，在底下**工具** > **選項**(或**偵錯** > **選項**) >**偵錯** > **一般**中，選取或取消選取**啟用 Just My Code**。
+- 若要啟用或停用 Visual Studio 中的 Just My Code，請在 **[** **工具**] [ > **選項**] （或 [ **Debug**  > **選項**]）下 > [**啟用  > ** **] Just My Code**
 
-![啟用 Just My Code，在 [選項] 對話方塊](../debugger/media/dbg_justmycode_options.png "啟用 Just My Code")
+![在 [選項] 對話方塊中啟用 Just My Code](../debugger/media/dbg_justmycode_options.png "啟用 Just My Code")
 
 > [!NOTE]
-> **啟用 Just My Code**是適用於所有語言中的所有 Visual Studio 專案的全域設定。
+> [**啟用 Just My Code** ] 是套用至所有語言之所有 Visual Studio 專案的全域設定。
 
 ## <a name="just-my-code-debugging"></a>Just My Code 偵錯
 
-偵錯工作階段中，**模組**視窗中顯示哪些程式碼偵錯工具視為 My Code （使用者程式碼） 的模組以及其符號載入狀態。 如需詳細資訊，請參閱 <c0> [ 更熟悉的偵錯工具附加至您的應用程式的方式](../debugger/debugger-tips-and-tricks.md#modules_window)。
+在偵測會話期間，[**模組**] 視窗會顯示偵錯工具視為 My Code （使用者程式碼）的程式碼模組，以及其符號載入狀態。 如需詳細資訊，請參閱[更熟悉偵錯工具如何附加至您的應用程式](../debugger/debugger-tips-and-tricks.md#modules_window)。
 
-![在 [模組] 視窗中的使用者程式碼](../debugger/media/dbg_justmycode_module.png "[模組] 視窗中的使用者程式碼")
+![[模組] 視窗中的使用者程式碼](../debugger/media/dbg_justmycode_module.png "[模組] 視窗中的使用者程式碼")
 
-在 [**呼叫堆疊**或是**工作**] 視窗中，Just My Code 將非使用者程式碼摺疊至標記為灰色註解的程式碼框架`[External Code]`。
+在 [**呼叫堆疊**]**或**[工作] 視窗中，Just My Code 將非使用者程式碼折迭成標示為 `[External Code]` 的灰色批註程式碼框架。
 
-![在 [呼叫堆疊] 視窗中的外部程式碼框架](../debugger/media/dbg_justmycode_externalcode.png "外部程式碼框架")
+![[呼叫堆疊] 視窗中的外部程式碼框架](../debugger/media/dbg_justmycode_externalcode.png "外部程式碼框架")
 
 >[!TIP]
->若要開啟 **模組**，**呼叫堆疊**，**工作**，或大部分其他偵錯視窗，您必須在偵錯工作階段。 偵錯時，底下**偵錯** > **Windows**，選取您想要開啟的視窗。
+>若要開啟 [**模組**]、[**呼叫堆疊** **]、[** 工作] 或其他大部分的調試時間視窗，您必須在 [調試] 會話中。 在調試過程中，于 [ **Debug**  > **windows**] 底下，選取您想要開啟的視窗。
 
-<a name="BKMK_Override_call_stack_filtering"></a> 若要檢視中摺疊程式碼 **[外部程式碼]** 框架中，以滑鼠右鍵按一下**呼叫堆疊**或是**工作**視窗中，然後選取**顯示外部程式碼**從內容功能表。 展開的外部程式碼行取代 **[外部程式碼**] 框架。
+<a name="BKMK_Override_call_stack_filtering"></a>若要在折迭的 **[外部程式碼]** 框架中查看程式碼，請在 [**呼叫堆疊**]**或 [** 工作] 視窗中按一下滑鼠右鍵，然後從內容功能表中選取 [**顯示外部程式碼**]。 展開的外部程式程式碼取代 **[外部程式碼**] 框架。
 
 ![在 [呼叫堆疊] 視窗中顯示外部程式碼](../debugger/media/dbg_justmycode_showexternalcode.png "顯示外部程式碼")
 
 > [!NOTE]
-> **顯示外部程式碼**目前的使用者分析工具，設定會套用到使用者所開啟的所有語言中的所有專案。
+> [**顯示外部程式碼**] 是目前的使用者 profiler 設定，適用于使用者所開啟之所有語言的所有專案。
 
-按兩下在展開的外部程式碼行**呼叫堆疊**視窗會反白顯示呼叫端的程式碼行，以在原始程式碼中的綠色。 Dll 或其他模組找不到或載入，符號或原始程式找不到可能會開啟頁面。
+按兩下 [**呼叫堆疊**] 視窗中展開的外部程式程式碼，會在原始程式碼中反白顯示綠色的呼叫程式程式碼。 若為找不到或未載入的 Dll 或其他模組，可能會開啟 [找不到符號或來源] 頁面。
 
-## <a name="BKMK__NET_Framework_Just_My_Code"></a>.NET Framework Just My Code
+## <a name="BKMK__NET_Framework_Just_My_Code"></a>.NET Just My Code
 
-在.NET Framework 專案中，Just My Code 會使用符號 (*.pdb*) 檔案和程式最佳化分類使用者和非使用者程式碼。 .NET Framework 偵錯工具會考慮最佳化二進位檔和非粗體 *.pdb*非使用者程式碼的檔案。
+在 .NET 專案中，Just My Code 會使用符號（ *.pdb*）檔案和程式優化來分類使用者和非使用者程式碼。 .NET 偵錯工具會將優化的二進位檔和未載入的 *.pdb*檔案視為非使用者程式碼。
 
-三個編譯器屬性也會影響.NET 偵錯工具會考慮使用者程式碼：
+有三個編譯器屬性也會影響 .NET 偵錯工具視為使用者程式碼的內容：
 
-- <xref:System.Diagnostics.DebuggerNonUserCodeAttribute> 告知偵錯工具，它會套用到的程式碼不是使用者程式碼。
+- <xref:System.Diagnostics.DebuggerNonUserCodeAttribute> 會告訴偵錯工具，它所套用的程式碼不是使用者程式碼。
 - <xref:System.Diagnostics.DebuggerHiddenAttribute> 會對偵錯工具隱藏程式碼，即使 Just My Code 已關閉。
-- <xref:System.Diagnostics.DebuggerStepThroughAttribute> 會告知偵錯工具逐步執行程式碼，它會套用到，而不是逐步執行程式碼。
+- <xref:System.Diagnostics.DebuggerStepThroughAttribute> 會告訴偵錯工具逐步執行它所套用的程式碼，而不是逐步執行程式碼。
 
-.NET Framework 偵錯工具會考慮所有使用者程式碼的程式碼。
+.NET 偵錯工具會將所有其他程式碼視為使用者程式碼。
 
-在.NET Framework 偵錯：
+在 .NET 調試過程中：
 
-- **偵錯** > **逐步**(或**F11**) 上非使用者程式碼不進入程式碼至下一行使用者程式碼。
-- **偵錯** > **跳離函式**(或**Shift**+**F11**) 在非使用者程式碼會執行到下一行使用者程式碼。
+- **Debug**  >  在非使用者程式碼上**執行的逐步**執行（或**F11**），將程式碼移至下一行使用者程式碼。
+- 在非使用者程式碼執行時， **Debug**  > **跳出**（或**Shift** +**F11**）至下一行使用者程式碼。
 
-如果沒有更多的使用者程式碼，繼續進行偵錯直到結束、 叫用另一個中斷點，或擲回錯誤。
+如果沒有其他使用者程式碼，則會繼續進行，直到結束為止、命中另一個中斷點，或擲回錯誤。
 
-<a name="BKMK_NET_Breakpoint_behavior"></a> 如果偵錯工具中斷非使用者程式碼中 (比方說，您會使用**偵錯** > **全部中斷** 和 在非使用者程式碼中的暫停)，則**沒有來源** 視窗隨即出現。 然後您可以使用**偵錯** > **步驟**命令來移至下一行使用者程式碼。
+<a name="BKMK_NET_Breakpoint_behavior"></a>如果偵錯工具在非使用者程式碼中中斷（例如，您使用**Debug**  > **全部中斷**並在非使用者程式碼中暫停），則不會顯示 [**來源**] 視窗。 接著，您可以使用**Debug**  > **Step**命令來移至下一行使用者程式碼。
 
-如果非使用者程式碼中發生未處理的例外狀況，偵錯工具會中斷使用者程式碼行，產生的例外狀況。
+如果非使用者程式碼中發生未處理的例外狀況，偵錯工具會在產生例外狀況的使用者程式程式碼中斷。
 
-如果啟用 例外狀況的第一個可能的例外狀況，則呼叫使用者程式碼行是以在原始程式碼中的綠色反白顯示。 **呼叫堆疊** 視窗會顯示標示為標註的框架 **[外部程式碼]**。
+如果已針對例外狀況啟用第一個例外狀況，則會在原始程式碼中以綠色反白顯示呼叫的使用者程式程式碼。 [**呼叫堆疊**] 視窗會顯示標示為 **[外部程式碼]** 的標注框架。
 
 ## <a name="BKMK_C___Just_My_Code"></a> C++ Just My Code
 
-啟動 Visual Studio 2017 版本 15.8，Just My Code 程式碼中逐步執行，也支援。 這項功能也需要使用[/JMC （只 my code 偵錯）](/cpp/build/reference/jmc)編譯器參數。 根據預設，在啟用參數C++專案。 針對**呼叫堆疊**視窗和呼叫堆疊支援 Just My Code，/JMC 交換器不需要。
+從 Visual Studio 2017 15.8 版開始，也支援程式碼逐步執行的 Just My Code。 這項功能也需要使用[/JMC （只是我的程式碼偵錯工具）](/cpp/build/reference/jmc)編譯器參數。 預設會在專案中C++啟用此參數。 在 Just My Code 的 [**呼叫堆疊**] 視窗和 [呼叫堆疊] 支援中，不需要/JMC 參數。
 
-<a name="BKMK_CPP_User_and_non_user_code"></a> 若要歸類為使用者程式碼，必須載入二進位檔包含使用者程式碼 PDB 偵錯工具 (使用**模組**視窗來檢查這)。
+<a name="BKMK_CPP_User_and_non_user_code"></a>若要將分類為使用者程式碼，偵錯工具必須載入包含使用者程式碼之二進位檔的 PDB （使用 [**模組**] 視窗來檢查此項）。
 
-呼叫堆疊行為，例如在**呼叫堆疊** 視窗中，Just My Code 在C++會考慮這些是函式*非使用者程式碼*:
+對於呼叫堆疊行為（例如在 [**呼叫堆疊**] 視窗中）， C++中的 Just My Code 會將這些函式視為*非使用者程式碼*：
 
 - 在其符號檔中已移除來源資訊之函式。
 - 符號檔表示沒有與堆疊框架對應的原始程式檔之函式。
-- 中指定的函式 *\*.natjmc*中的檔案 *%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers*資料夾。
+- 在 *%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers*資料夾中 *\* natjmc*檔案中指定的函數。
 
-程式碼逐步執行行為，Just My Code 中的C++會考慮這些是函式*非使用者程式碼*:
+針對程式碼逐步執行行為， C++中的 Just My Code 會將這些函式視為*非使用者程式碼*：
 
-- 為其對應的 PDB 檔案尚未載入偵錯工具中的函式。
-- 中指定的函式 *\*.natjmc*中的檔案 *%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers*資料夾。
+- 未在偵錯工具中載入對應 PDB 檔案之的函式。
+- 在 *%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers*資料夾中 *\* natjmc*檔案中指定的函數。
 
 > [!NOTE]
-> 程式碼逐步執行 Just My Code，支援C++程式碼必須使用在 Visual Studio 15.8 Preview 3 或更新版本，在 MSVC 編譯器進行編譯，而且必須啟用 /JMC 編譯器參數 （它預設啟用）。 如需詳細資訊，請參閱 <c0> [ 自訂C++的呼叫堆疊和程式碼逐步執行行為](#BKMK_CPP_Customize_call_stack_behavior))，而這[部落格文章](https://devblogs.microsoft.com/cppblog/announcing-jmc-stepping-in-visual-studio/)。</c0> 使用舊版的編譯器編譯的程式碼 *.natstepfilter*檔案是唯一的辦法自訂程式碼逐步執行，也就是獨立的 Just My Code。 請參閱[自訂C++逐步執行行為](#BKMK_CPP_Customize_stepping_behavior)。
+> 針對 Just My Code 中的程式碼逐步C++支援，必須使用 Visual Studio 15.8 Preview 3 或更新版本中的 MSVC 編譯器來編譯器代碼，而且必須啟用/JMC 編譯器參數（預設為啟用）。 如需其他詳細資料，請參閱[自C++定義呼叫堆疊和程式碼逐步執行行為](#BKMK_CPP_Customize_call_stack_behavior)）和此[blog 文章](https://devblogs.microsoft.com/cppblog/announcing-jmc-stepping-in-visual-studio/)。 針對使用舊版編譯器編譯的程式碼， *natstepfilter*檔案是自訂程式碼逐步執行的唯一方法，這與 Just My Code 無關。 請[參閱C++自訂逐步執行行為](#BKMK_CPP_Customize_stepping_behavior)。
 
-<a name="BKMK_CPP_Stepping_behavior"></a> 在C++偵錯：
+<a name="BKMK_CPP_Stepping_behavior"></a>在C++調試過程中：
 
-- **偵錯** > **逐步**(或**F11**) 上非使用者程式碼不進入程式碼至下一行使用者程式碼。
-- **偵錯** > **跳離函式**(或**Shift**+**F11**) 在非使用者程式碼會執行到下一行使用者程式碼。
+- **Debug**  >  在非使用者程式碼上**執行的逐步**執行（或**F11**），將程式碼移至下一行使用者程式碼。
+- 在非使用者程式碼執行時， **Debug**  > **跳出**（或**Shift** +**F11**）至下一行使用者程式碼。
 
-如果沒有更多的使用者程式碼，繼續進行偵錯直到結束、 叫用另一個中斷點，或擲回錯誤。
+如果沒有其他使用者程式碼，則會繼續進行，直到結束為止、命中另一個中斷點，或擲回錯誤。
 
-如果偵錯工具中斷非使用者程式碼中 (例如，您使用**偵錯** > **全部中斷**和非使用者程式碼中暫停)，在非使用者程式碼繼續逐步執行。
+如果偵錯工具在非使用者程式碼中中斷（例如，您使用**Debug**  > **全部中斷**並在非使用者程式碼中暫停），則在非使用者程式碼中繼續執行。
 
-如果偵錯工具叫用例外狀況時，它會停止的例外狀況，無論是在使用者或非使用者程式碼。 **使用者未處理**中的選項**例外狀況設定**對話方塊都會被忽略。
+如果偵錯工具叫用例外狀況，它會在例外狀況時停止，不論它是在使用者或非使用者程式碼中。 [**例外狀況設定**] 對話方塊中的**使用者未處理**的選項會被忽略。
 
-### <a name="BKMK_CPP_Customize_call_stack_behavior"></a> 自訂C++的呼叫堆疊和程式碼逐步執行行為
+### <a name="BKMK_CPP_Customize_call_stack_behavior"></a>自C++定義呼叫堆疊和程式碼逐步執行行為
 
-針對C++專案中，您可以指定模組、 原始程式檔和函式**呼叫堆疊**藉由指定在視窗會將視為非使用者程式碼 *\*.natjmc*檔案。 這項自訂也適用於逐步執行，如果您使用最新編譯器的程式碼 (請參閱[ C++ Just My Code](#BKMK_CPP_User_and_non_user_code))。
+針對C++專案，您可以在 *\* natjmc*檔案中指定模組、原始程式檔和**呼叫堆疊**視窗視為非使用者程式碼的函數。 如果您使用最新的編譯器，則此自訂也適用于程式碼逐步執行（請參閱[ C++ Just My Code](#BKMK_CPP_User_and_non_user_code)）。
 
-- 若要指定非使用者程式碼，在 Visual Studio 電腦的所有使用者，新增 *.natjmc*的檔案 *%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers*資料夾。
-- 若要指定非使用者程式碼，針對個別使用者，新增 *.natjmc*的檔案 *%USERPROFILE%\My Documents\\< Visual Studio 版本\>\Visualizers*資料夾。
+- 若要為 Visual Studio 機的所有使用者指定非使用者程式碼，請將*natjmc*檔案新增至 *%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers*資料夾。
+- 若要為個別使用者指定非使用者程式碼，請將*natjmc*檔案新增至 *%USERPROFILE%\My 檔 \\ < Visual Studio 版本 \> \visualizers*  資料夾。
 
-A *.natjmc*檔案是 XML 檔案使用此語法：
+*Natjmc*檔案是具有下列語法的 XML 檔案：
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -143,8 +143,8 @@ A *.natjmc*檔案是 XML 檔案使用此語法：
 
 |屬性|描述|
 |---------------|-----------------|
-|`Name`|必要項。 該模組的完整路徑。 您可以使用 Windows 萬用字元`?`（零或一個字元） 和`*`（零或多個字元）。 例如，套用至物件的<br /><br /> `<Module Name="?:\3rdParty\UtilLibs\*" />`<br /><br /> 會告知偵錯工具中的所有模組都視為 *\3rdParty\UtilLibs* 為外部程式碼的任何磁碟機上。|
-|`Company`|選擇性。 發行內嵌於可執行檔之模組的公司名稱。 您可以使用這個屬性使模組意義清楚。|
+|`Name`|必要項。 該模組的完整路徑。 您可以使用 Windows 萬用字元 `?` （零或一個字元），並 `*` （零或多個字元）。 例如，套用至物件的<br /><br /> `<Module Name="?:\3rdParty\UtilLibs\*" />`<br /><br /> 會告知偵錯工具中的所有模組都視為 *\3rdParty\UtilLibs* 為外部程式碼的任何磁碟機上。|
+|`Company`|選擇項。 發行內嵌於可執行檔之模組的公司名稱。 您可以使用這個屬性使模組意義清楚。|
 
  **檔案項目屬性**
 
@@ -157,17 +157,17 @@ A *.natjmc*檔案是 XML 檔案使用此語法：
 |屬性|描述|
 |---------------|-----------------|
 |`Name`|必要項。 要視為外部程式碼的函式之完整名稱。|
-|`Module`|選擇性。 包含此函式的模組名稱或完整路徑。 您可以使用這個屬性使具有相同名稱的函式意義清楚。|
+|`Module`|選擇項。 包含此函式的模組名稱或完整路徑。 您可以使用這個屬性使具有相同名稱的函式意義清楚。|
 |`ExceptionImplementation`|當設定為 `true` 時，此呼叫堆疊會顯示擲回例外狀況的函式，而不是這個函式。|
 
-### <a name="BKMK_CPP_Customize_stepping_behavior"></a> 自訂C++逐步執行行為獨立於 Just My Code 設定
+### <a name="BKMK_CPP_Customize_stepping_behavior"></a>自C++定義與 Just My Code 設定無關的逐步執行行為
 
-在C++專案中，您可以指定函式依其列出中的非使用者程式碼逐步 *\*.natstepfilter*檔案。 函式中所列 *\*.natstepfilter*檔案不相依於 Just My Code 設定值。
+在C++專案中，您可以指定要逐步執行的函式，方法是在 *\* natstepfilter*檔案中，將它們列為非使用者程式碼。 *@No__t_1*中列出的函式不會相依于 Just My Code 設定。
 
-- 若要指定非使用者程式碼，為所有本機 Visual Studio 使用者，新增 *.natstepfilter*的檔案 *%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers*資料夾。
-- 若要指定非使用者程式碼，針對個別使用者，新增 *.natstepfilter*的檔案 *%USERPROFILE%\My Documents\\< Visual Studio 版本\>\Visualizers*資料夾。
+- 若要為所有本機 Visual Studio 使用者指定非使用者程式碼，請將*natstepfilter*檔案新增至 *%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers*資料夾。
+- 若要為個別使用者指定非使用者程式碼，請將*natstepfilter*檔案新增至 *%USERPROFILE%\My 檔 \\ < Visual Studio 版本 \> \visualizers*  資料夾。
 
-A *.natstepfilter*檔案是 XML 檔案使用此語法：
+*Natstepfilter*檔案是具有下列語法的 XML 檔案：
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -188,9 +188,9 @@ A *.natstepfilter*檔案是 XML 檔案使用此語法：
 |項目|描述|
 |-------------|-----------------|
 |`Function`|必要項。 指定一個或多個函式做為非使用者函式。|
-|`Name`|必要項。 指定要比對的完整函式名稱之 ECMA-262 格式化規則運算式。 例如: <br /><br /> `<Name>MyNS::MyClass.*</Name>`<br /><br /> 告知偵錯工具在 `MyNS::MyClass` 中的所有方法要視為非使用者程式碼。 該比對會區分大小寫。|
-|`Module`|選擇性。 指定包含此函式的模組之完整路徑的 ECMA-262 格式化規則運算式。 該比對不區分大小寫。|
-|`Action`|必要項。 區分大小寫值的其中之一：<br /><br /> `NoStepInto`  -會告知偵錯工具不進入函式。<br /> `StepInto`  -會告知偵錯工具逐步執行函式中，覆寫任何其他`NoStepInto`相符的函式。|
+|`Name`|必要項。 指定要比對的完整函式名稱之 ECMA-262 格式化規則運算式。 例如:<br /><br /> `<Name>MyNS::MyClass.*</Name>`<br /><br /> 告知偵錯工具在 `MyNS::MyClass` 中的所有方法要視為非使用者程式碼。 該比對會區分大小寫。|
+|`Module`|選擇項。 指定包含此函式的模組之完整路徑的 ECMA-262 格式化規則運算式。 該比對不區分大小寫。|
+|`Action`|必要項。 區分大小寫值的其中之一：<br /><br /> `NoStepInto`-指示偵錯工具不進入函式。<br /> `StepInto`-指示偵錯工具逐步執行函式，並覆寫相符函式的任何其他 `NoStepInto`。|
 
 ## <a name="BKMK_JavaScript_Just_My_Code"></a> JavaScript Just My Code
 
@@ -199,57 +199,57 @@ A *.natstepfilter*檔案是 XML 檔案使用此語法：
 |||
 |-|-|
 |**MyCode**|您所擁有並控制的使用者程式碼。|
-|**LibraryCode**|從您經常使用的程式庫和您的應用程式的非使用者程式碼依賴運作正確 （例如 WinJS 或 jQuery）。|
-|**UnrelatedCode**|您不屬於您的應用程式和您的應用程式中的非使用者程式碼不依賴才能正確運作。 例如，廣告顯示廣告的 SDK 可能 UnrelatedCode。 在 UWP 專案中，載入至您的應用程式，從 HTTP 或 HTTPS URI 的任何程式碼也會被視為 UnrelatedCode。|
+|**LibraryCode**|您經常使用的程式庫中的非使用者程式碼，而且您的應用程式會依賴正常運作（例如 WinJS 或 jQuery）。|
+|**UnrelatedCode**|您的應用程式中不會擁有且您的應用程式不會依賴正常運作的非使用者程式碼。 例如，可能會 UnrelatedCode 顯示廣告的廣告 SDK。 在 UWP 專案中，從 HTTP 或 HTTPS URI 載入至應用程式的任何程式碼也會被視為 UnrelatedCode。|
 
-JavaScript 偵錯工具會將分類為使用者或依此順序的非使用者程式碼：
+JavaScript 偵錯工具會依照下列順序，將程式碼分類為使用者或非使用者：
 
 1. 預設分類。
-   - 執行由傳遞字串給主機所提供的指令碼`eval`函式**MyCode**。
-   - 執行由傳遞字串給指令碼`Function`建構函式**LibraryCode**。
-   - Framework 參考，例如 WinJS 或 Azure SDK 中的指令碼**LibraryCode**。
-   - 執行由傳遞字串給指令碼`setTimeout`， `setImmediate`，或`setInterval`函式會**UnrelatedCode**。
+   - 藉由將字串傳遞至主機提供的 `eval` 函式來執行的腳本為**MyCode**。
+   - 藉由將字串傳遞至 `Function` 的函式來執行腳本是**LibraryCode**。
+   - 架構參考中的腳本（例如 WinJS 或 Azure SDK）是**LibraryCode**。
+   - 藉由將字串傳遞給 `setTimeout`、`setImmediate` 或 `setInterval` 函數所執行的腳本**UnrelatedCode**。
 
-2. 針對所有的 Visual Studio JavaScript 專案中指定的分類 *%VSInstallDirectory%\JavaScript\JustMyCode\mycode.default.wwa.json*檔案。
+2. 針對 *%VSInstallDirectory%\JavaScript\JustMyCode\mycode.default.wwa.json*檔案中的所有 Visual Studio JavaScript 專案指定的分類。
 
-3. 中的分類*mycode.json*目前專案的檔案。
+3. 目前專案的*mycode*中的分類。
 
 每個分類步驟都會覆寫先前的步驟。
 
 所有其他程式碼會分類為 **MyCode**。
 
-您可以修改預設分類，並為使用者或非使用者程式碼，分類特定檔案和 Url，加上 *.json*檔案名*mycode.json*到 JavaScript 專案的根資料夾。 請參閱[自訂 JavaScript Just My Code](#BKMK_JS_Customize_Just_My_Code)。
+您可以修改預設分類，並將特定檔案和 Url 分類為使用者或非使用者程式碼，方法是將名為*mycode*的 *. json*檔案新增至 JavaScript 專案的根資料夾。 請參閱[自訂 JavaScript Just My Code](#BKMK_JS_Customize_Just_My_Code)。
 
-<a name="BKMK_JS_Stepping_behavior"></a> 在 JavaScript 偵錯：
+<a name="BKMK_JS_Stepping_behavior"></a>在 JavaScript 調試過程中：
 
-- 如果函式為非使用者程式碼中，**偵錯** > **逐步**(或**F11**) 的行為與相同**偵錯** > **不進入函式**(或**F10**)。
-- 如果在步驟一開始會處於非使用者 (**LibraryCode**或是**UnrelatedCode**) 程式碼，逐步執行暫時的行為就如同 Just My Code 未啟用。 當您倒退回使用者程式碼，Just My Code 逐步執行隨即重新啟用。
-- 當使用者程式碼步驟造成離開目前的執行內容時，偵錯工具停止於下一步 執行的使用者程式碼。 例如，如果回呼於 **LibraryCode** 程式碼中執行，則偵錯工具會繼續執行，直到下一行使用者程式碼執行為止。
-- **跳離函式**(或**Shift**+**F11**) 會停止在下一行使用者程式碼。
+- 如果函式是非使用者程式碼， **debug**  >  逐步**執行（或** **F11**）的行為與**debug**  >  不**進入**（或**F10**）。
+- 如果步驟是以非使用者（**LibraryCode**或**UnrelatedCode**）程式碼開始，則逐步執行的行為會如同未啟用 Just My Code。 當您跳回使用者程式碼時，Just My Code 逐步執行會重新啟用。
+- 當使用者程式碼步驟導致離開目前的執行內容時，偵錯工具會在下一個執行的使用者程式碼停止。 例如，如果回呼於 **LibraryCode** 程式碼中執行，則偵錯工具會繼續執行，直到下一行使用者程式碼執行為止。
+- **跳出**（或**Shift** +**F11**）會在下一行使用者程式碼停止。
 
-如果沒有更多的使用者程式碼，繼續進行偵錯直到結束、 叫用另一個中斷點，或擲回錯誤。
+如果沒有其他使用者程式碼，則會繼續進行，直到結束為止、命中另一個中斷點，或擲回錯誤。
 
-程式碼中設定的中斷點一定會叫用，但程式碼之分類。
+程式碼中所設定的中斷點一律會被叫用，但會將代碼分類。
 
-- 如果`debugger`出現在關鍵字**LibraryCode**，偵錯工具一定中斷。
-- 如果`debugger`出現在關鍵字**UnrelatedCode**，並不會停止偵錯工具。
+- 如果 `debugger` 關鍵字出現在**LibraryCode**中，則偵錯工具一律會中斷。
+- 如果 `debugger` 關鍵字出現在**UnrelatedCode**中，則偵錯工具不會停止。
 
-<a name="BKMK_JS_Exception_behavior"></a> 如果在發生未處理的例外狀況**MyCode**或是**LibraryCode**程式碼，偵錯工具一定中斷。
+<a name="BKMK_JS_Exception_behavior"></a>如果**MyCode**或**LibraryCode**程式碼中發生未處理的例外狀況，則偵錯工具一律會中斷。
 
-如果在發生未處理的例外狀況**UnrelatedCode**，和**MyCode**或是**LibraryCode**位於呼叫堆疊偵錯工具中斷。
+如果**UnrelatedCode**中發生未處理的例外狀況，而**MyCode**或**LibraryCode**位於呼叫堆疊上，則偵錯工具會中斷。
 
-如果啟用 first-chance 例外狀況的例外狀況，並在發生例外狀況**LibraryCode**或是**UnrelatedCode**:
+如果例外狀況啟用了第一個例外狀況，且例外狀況發生在**LibraryCode**或**UnrelatedCode**中：
 
 - 如果已經處理此例外狀況，則偵錯工具不會中斷。
 - 如果例外狀況未經處理，則偵錯工具會中斷。
 
-### <a name="BKMK_JS_Customize_Just_My_Code"></a> 自訂 JavaScript Just My Code
+### <a name="BKMK_JS_Customize_Just_My_Code"></a>自訂 JavaScript Just My Code
 
-分類使用者和非使用者程式碼，為單一的 JavaScript 專案，您可以加入 *.json*檔案名*mycode.json*到專案的根資料夾。
+若要將單一 JavaScript 專案的使用者和非使用者程式碼分類，您可以將名為*mycode*的*json*檔案加入至專案的根資料夾。
 
-此檔案中的規格覆寫預設分類並*mycode.default.wwa.json*檔案。 *Mycode.json*檔案不需要列出所有的機碼值組。 **MyCode**，**程式庫**，並**Unrelated**值可以是空的陣列。
+此檔案中的規格會覆寫預設分類和*mycode. wwa. json*檔案。 *Mycode*不需要列出所有的機碼值組。 **MyCode**、連結**庫**和不**相關**的值可以是空陣列。
 
-*Mycode.json*檔案使用此語法：
+*Mycode 的 json*檔案使用此語法：
 
 ```json
 {
@@ -301,4 +301,4 @@ JavaScript 偵錯工具會將分類為使用者或依此順序的非使用者程
 |**Libraries**|分類為 **LibraryCode** 的 URL 陣列或檔案陣列。|
 |**Unrelated**|分類為 **UnrelatedCode** 的 URL 陣列或檔案陣列。|
 
-URL 或檔案字串可以有一或多個`*`比對零或多個字元的字元。 `*` 規則運算式與相同`.*`。
+URL 或檔案字串可以有一或多個 `*` 字元，以符合零或多個字元。 `*` 與正則運算式 `.*` 相同。

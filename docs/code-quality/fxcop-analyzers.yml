@@ -13,12 +13,12 @@ metadata:
   ms.author: gewarren
   manager: jillfra
   ms.date: 09/24/2019
-  ms.openlocfilehash: 5da2ad0c0fbede17efc4246fca52a28124a4f2cd
-  ms.sourcegitcommit: 7825d4163e52d724e59f6c0da209af5fbef673f7
+  ms.openlocfilehash: 0b86e42acaab7cf50443cc404eb81c257c9e352e
+  ms.sourcegitcommit: 08c144d290da373df841f04fc799e3133540a541
   ms.translationtype: MT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 10/07/2019
-  ms.locfileid: "72000131"
+  ms.lasthandoff: 10/17/2019
+  ms.locfileid: "72535874"
 landingContent:
 - title: 程式碼分析簡介
   linkLists:

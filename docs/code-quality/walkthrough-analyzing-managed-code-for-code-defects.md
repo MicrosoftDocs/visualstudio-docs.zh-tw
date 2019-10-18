@@ -10,12 +10,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 79855f6915bbb0ed15bfd09f99fab0403290f09e
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: ab1e0b890d6241742770ed38ff61fc1c2c0ed2f4
+ms.sourcegitcommit: 08c144d290da373df841f04fc799e3133540a541
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72448713"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72535699"
 ---
 # <a name="walkthrough-use-static-code-analysis-to-find-code-defects"></a>逐步解說：使用靜態程式碼分析來尋找程式碼缺失
 
@@ -93,23 +93,23 @@ ms.locfileid: "72448713"
 
 1. 使用下列秘訣來更正警告：
 
-   [CA1014：使用 CLSCompliantAttribute 標記元件](../code-quality/ca1014-mark-assemblies-with-clscompliantattribute.md)：將程式碼 `[assembly: CLSCompliant(true)]` 新增至 AssemblyInfo.cs 檔案的結尾。
+   [CA1014：使用 CLSCompliantAttribute 標記元件](../code-quality/ca1014.md)：將程式碼 `[assembly: CLSCompliant(true)]` 新增至 AssemblyInfo.cs 檔案的結尾。
 
-   [Ca1032 必須：實作為標準例外](../code-quality/ca1032-implement-standard-exception-constructors.md)狀況的函式：將 `public demo (String s) : base(s) { }` 的函數新增至類別 `demo`。
+   [Ca1032 必須：實作為標準例外](../code-quality/ca1032.md)狀況的函式：將 `public demo (String s) : base(s) { }` 的函數新增至類別 `demo`。
 
-   [Ca1032 必須：實作為標準例外](../code-quality/ca1032-implement-standard-exception-constructors.md)狀況的函式：將 `public demo (String s, Exception e) : base(s, e) { }` 的函數新增至類別 `demo`。
+   [Ca1032 必須：實作為標準例外](../code-quality/ca1032.md)狀況的函式：將 `public demo (String s, Exception e) : base(s, e) { }` 的函數新增至類別 `demo`。
 
-   [Ca1032 必須：執行標準例外](../code-quality/ca1032-implement-standard-exception-constructors.md)狀況的函式：將 `protected demo (SerializationInfo info, StreamingContext context) : base(info, context) { }` 的函數新增至類別示範。 您也需要為 <xref:System.Runtime.Serialization?displayProperty=fullName> 新增 `using` 語句。
+   [Ca1032 必須：執行標準例外](../code-quality/ca1032.md)狀況的函式：將 `protected demo (SerializationInfo info, StreamingContext context) : base(info, context) { }` 的函數新增至類別示範。 您也需要為 <xref:System.Runtime.Serialization?displayProperty=fullName> 新增 `using` 語句。
 
-   [Ca1032 必須：實作為標準例外](../code-quality/ca1032-implement-standard-exception-constructors.md)狀況的函式：將 `public demo () : base() { }` 的函數新增至類別 `demo`。
+   [Ca1032 必須：實作為標準例外](../code-quality/ca1032.md)狀況的函式：將 `public demo () : base() { }` 的函數新增至類別 `demo`。
 
-   [CA1709：識別碼的大小寫應正確](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)：將命名空間的大小寫 `testCode` 變更為 `TestCode`。
+   [CA1709：識別碼的大小寫應正確](../code-quality/ca1709.md)：將命名空間的大小寫 `testCode` 變更為 `TestCode`。
 
-   [CA1709：識別碼的大小寫應正確](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)：將成員的名稱變更為 `Demo`。
+   [CA1709：識別碼的大小寫應正確](../code-quality/ca1709.md)：將成員的名稱變更為 `Demo`。
 
-   [CA1709：識別碼的大小寫應正確](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)：將成員的名稱變更為 `Item`。
+   [CA1709：識別碼的大小寫應正確](../code-quality/ca1709.md)：將成員的名稱變更為 `Item`。
 
-   [CA1710：識別碼應具有正確的後](../code-quality/ca1710-identifiers-should-have-correct-suffix.md)置詞：將類別的名稱和其函式變更為 `DemoException`。
+   [CA1710：識別碼應具有正確的後](../code-quality/ca1710.md)置詞：將類別的名稱和其函式變更為 `DemoException`。
 
    [Ca2237 必須：將 ISerializable 類型標記為 SerializableAttribute](../code-quality/ca2237.md)：將 `[Serializable ()]` 屬性新增至類別 `demo`。
 

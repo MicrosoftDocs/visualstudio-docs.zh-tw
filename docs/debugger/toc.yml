@@ -239,7 +239,7 @@
             - name: 自訂檢視 (受控)
               items:
                 - name: 建立受控物件的自訂檢視
-                  href: create-custom-views-of-dot-managed-objects.md
+                  href: create-custom-views-of-managed-objects.md
                 - name: 告訴偵錯工具要顯示的項目
                   href: using-the-debuggerdisplay-attribute.md
                 - name: 告訴偵錯工具要顯示的類型

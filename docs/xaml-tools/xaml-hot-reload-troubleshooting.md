@@ -12,12 +12,12 @@ manager: jillfra
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 020577cfe692d5d306a555e763d08807ab191074
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: 40be42871bac0a138d15b11b86f34419f2a6c67d
+ms.sourcegitcommit: 08c144d290da373df841f04fc799e3133540a541
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72450937"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72535298"
 ---
 # <a name="troubleshooting-xaml-hot-reload"></a>對 XAML 熱重新載入進行疑難排解
 
@@ -45,7 +45,10 @@ WPF 和 UWP 應用程式支援 XAML 熱重載。 如需作業系統和工具需�
 
 ## <a name="verify-that-you-use-start-debugging-rather-than-attach-to-process"></a>確認您使用的是 [啟動偵錯工具]，而不是 [附加至進程]
 
-XAML 熱重載需要在應用程式啟動時，將環境變數 `ENABLE_XAML_DIAGNOSTICS_SOURCE_INFO` 設為1。 Visual Studio 會在**Debug** > **開始調試**（或**F5**）命令中自動設定此項。 如果您想要在**Debug** >  [**附加至進程**] 命令時使用 XAML 熱重載，請自行設定環境變數。
+XAML 熱重載需要在應用程式啟動時，環境變數 `ENABLE_XAML_DIAGNOSTICS_SOURCE_INFO` 設為1。 Visual Studio 會在**Debug** > **開始調試**（或**F5**）命令中自動設定此項。 如果您想要在**Debug** >  [**附加至進程**] 命令時使用 XAML 熱重載，請自行設定環境變數。
+
+> [!NOTE]
+> 若要設定環境變數，請搜尋「環境變數」，然後選擇 [**編輯系統內容變數**]。 在開啟的對話方塊中，選擇 [**環境變數**]，然後將它新增為使用者變數，並將值設定為 [`1`]。 若要清除，請在完成調試時移除變數。
 
 ## <a name="verify-that-your-msbuild-properties-are-correct"></a>請確認您的 MSBuild 屬性是否正確
 

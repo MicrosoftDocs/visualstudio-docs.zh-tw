@@ -29,12 +29,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d0b9fb6e809f1124a10a6a2b4e35bc59806787a6
-ms.sourcegitcommit: 8a3545329a58e446672181cfed2083f850e1ad14
+ms.openlocfilehash: 21573f1f8bd49782739027f7dfc2034bb7501a2f
+ms.sourcegitcommit: 08c144d290da373df841f04fc799e3133540a541
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71814338"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72535986"
 ---
 # <a name="view-the-call-stack-and-use-the-call-stack-window-in-the-debugger"></a>查看呼叫堆疊，並在偵錯工具中使用 [呼叫堆疊] 視窗
 
@@ -54,7 +54,7 @@ ms.locfileid: "71814338"
 
 - 進行調試時，請在 [**調試**] 功能表中選取 [ **Windows > 呼叫堆疊**]。
 
-  [![呼叫堆疊] 視窗](../debugger/media/dbg_basics_callstack_window.png "CallStackWindow")
+  ![[呼叫堆疊] 視窗](../debugger/media/dbg_basics_callstack_window.png "CallStackWindow")
 
 執行指標目前所在的堆疊框架位置會以黃色箭頭識別。 這個堆疊框架的資訊預設會出現在 [來源]、[區域變數] **、[** 自動**變數** **]、[監看式]** 和 [反組解碼] 若要將偵錯工具內容變更為堆疊上的另一個框架，請[切換至另一個堆疊框架](#bkmk_switch)。
 
@@ -96,11 +96,11 @@ ms.locfileid: "71814338"
 
 在 Visual Studio Enterprise （僅限）中，您可以在進行偵錯工具時，查看呼叫堆疊的 code map。
 
-- 在 [呼叫堆疊] 視窗中，開啟捷徑功能表。 選擇**Code Map 上的 [顯示呼叫堆疊**] （**Ctrl** + **Shift** +  **`** ）。
+- 在 [呼叫堆疊] 視窗中，開啟捷徑功能表。 選擇**Code Map 上的 [顯示呼叫堆疊**] （**Ctrl**  + **Shift**  +  **`** ）。
 
     如需詳細資訊，請參閱在[偵錯工具時對應呼叫堆疊上的方法](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)。
 
-![在 Code Map ShowCallStackOnCodeMap 上顯示呼叫堆疊](../debugger/media/dbg_basics_show_call_stack_on_code_map.gif " ")
+![在 Code Map 上顯示呼叫堆疊](../debugger/media/dbg_basics_show_call_stack_on_code_map.gif "ShowCallStackOnCodeMap")
 
 ## <a name="view-the-disassembly-code-for-a-function-on-the-call-stack-c-c-visual-basic-f"></a>在呼叫堆疊上查看函式的反組解碼程式C#代碼C++（、、 F#Visual Basic、）
 
@@ -108,11 +108,11 @@ ms.locfileid: "71814338"
 
 ## <a name="change-the-optional-information-displayed"></a>變更所顯示的選擇性資訊
 
-- 以滑鼠右鍵按一下 [**呼叫堆疊**] 視窗，並設定或清除 [**顯示 \<** ]_您想要的資訊_ **>** 。
+- 以滑鼠右鍵按一下 **呼叫堆疊** 視窗，並設定或清除 **顯示 \<** _您要 > 的資訊_。
 
 ## <a name="bkmk_symbols"></a>載入模組的符號（C#、 C++、Visual Basic、） F#
 
-在 [呼叫堆疊] 視窗中，您可以載入目前尚未載入符號之程式碼的偵錯符號。 這些符號可能是從 Microsoft 公用符號伺服器下載的 .NET Framework 或系統符號，或是您所偵錯之電腦上符號路徑中的符號。
+在 [呼叫堆疊] 視窗中，您可以載入目前尚未載入符號之程式碼的偵錯符號。 這些符號可以是從 Microsoft 公用符號伺服器下載的 .NET 或系統符號，或是您要進行偵錯工具之電腦上符號路徑中的符號。
 
 請參閱[指定符號 (.pdb) 和原始程式檔](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)。
 
@@ -138,7 +138,7 @@ ms.locfileid: "71814338"
 
 5. 選取 **[確定]** 以關閉 [**選項**] 對話方塊。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [呼叫堆疊視窗內的混合程式碼和遺失的資訊](../debugger/mixed-code-and-missing-information-in-the-call-stack-window.md)
 - [在偵錯工具中檢視資料](../debugger/viewing-data-in-the-debugger.md)
