@@ -9,12 +9,12 @@ ms.author: sashe
 manager: AndSter
 ms.workload:
 - multiple
-ms.openlocfilehash: 7680b305fad6f8ea1d7961ec5a70ddafd578c77d
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 263657213f1720eaca7a0462bb31585adaacf9bb
+ms.sourcegitcommit: 6244689e742e551e7b6933959bd42df56928ece3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71095258"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72516401"
 ---
 # <a name="use-tracepoints-in-the-visual-studio-debugger"></a>在 Visual Studio 偵錯工具中使用追蹤點
 
@@ -22,7 +22,7 @@ ms.locfileid: "71095258"
 
 ## <a name="let39s-take-an-example"></a>讓&#39;我們來看一個範例
 
-下列範例程式是一個簡單`for`的迴圈，其中計數器變數會在每次迴圈執行另一個反復專案時增加一個。
+下列範例程式是一個簡單的 `for` 迴圈，其中包含一個 counter 變數，每次迴圈執行另一個反復專案時，都會增加一個。
 
 ![計數器範例](../debugger/media/counterexample.png "計數器範例")
 
@@ -41,25 +41,25 @@ ms.locfileid: "71095258"
 
 4. 選取 [**動作**] 核取方塊。
 
-   [![已檢查的動作]] 方塊[(../debugger/media/checkedactionsbox.png "已檢查的動作")] 方塊
+   ![[已檢查的動作] 方塊](../debugger/media/checkedactionsbox.png "[已檢查的動作] 方塊")
 
    請注意紅色圓形如何變更為菱形，表示您已從中斷點切換到追蹤點。
 
 5. 在 [**輸出視窗**] 文字方塊中輸入您想要登入的訊息（如需詳細資訊，請參閱本文稍後的章節）。
 
-   現在已設定您的追蹤點。 如果您&quot;想&quot;要執行的動作是將一些資訊記錄到輸出視窗，請按 [關閉] 按鈕。
+   現在已設定您的追蹤點。 如果您只想要將一些資訊記錄到輸出視窗，請按 [&quot;Close &quot;] 按鈕。
 
 6. 如果您想要新增條件來判斷是否顯示您的訊息，請選取 [**條件**] 核取方塊。
 
-   ![核]取的條件方塊(../debugger/media/checkedconditionsbox.png "核")取的條件方塊
+   ![核取的條件方塊](../debugger/media/checkedconditionsbox.png "核取的條件方塊")
 
-   您有三個條件選擇：**條件運算式**、**篩選**和**計數**。
+   您有三個條件選擇： [**條件運算式**]、[**篩選**] 和 [**計數**]。
 
 ## <a name="actions-menu"></a>動作功能表
 
 此功能表可讓您將訊息記錄至 [輸出] 視窗。 在訊息方塊中輸入您要輸出的字串（不需要引號）。 如果您想要顯示變數的值，請務必將其括在大括弧內。
 
-例如，如果您想要在輸出主控台中顯示`counter`變數的值，請在 [訊息] 文字方塊中輸入 {counter}。
+例如，如果您想要在輸出主控台中顯示 `counter` 變數的值，請在 [訊息] 文字方塊中輸入 {counter}。
 
 ![計數器輸出訊息](../debugger/media/counteroutputmessage.png "計數器輸出訊息")
 
@@ -88,11 +88,11 @@ ms.locfileid: "71095258"
 ### <a name="conditional-expression"></a>條件運算式
 針對條件運算式，只有在符合特定條件時，才會顯示輸出訊息。
 
-針對條件運算式，您可以設定追蹤點，以便在特定條件為 true 或變更時輸出訊息。 例如，如果您只想要在`for`迴圈的反覆運算期間顯示計數器的值，您可以選取 [**為 true** ] 選項，然後在 [訊息`i%2 == 0` ] 文字方塊中輸入。
+針對條件運算式，您可以設定追蹤點，以便在特定條件為 true 或變更時輸出訊息。 例如，如果您只想要在 `for` 迴圈的反復專案中顯示計數器的值，您可以選取 [**為 true** ] 選項，然後在 [消息] 文字方塊中輸入 `i%2 == 0`。
 
 ![條件運算式為 True](../debugger/media/conditionalexpressionistrue.png "條件運算式為 True")
 
-如果您想要在`for`迴圈的反復專案變更時列印計數器的值，請選取 [**變更時**] 選項， `i`並在 [訊息] 文字方塊中輸入。
+如果您想要在 `for` 迴圈的反復專案變更時列印計數器的值，請選取 [**變更時**] 選項，並在 [訊息] 文字方塊中輸入 `i`。
 
 ![變更時的條件運算式](../debugger/media/conditionalexpressionwhenchanged.png "變更時的條件運算式")
 
@@ -101,7 +101,7 @@ ms.locfileid: "71095258"
 - 針對機器碼，偵錯工具不會將條件的第一個評估視為變更，因此不會在第一次評估時叫用追蹤點。
 - 對於 managed 程式碼，偵錯工具會在選取 [**變更時**] 之後的第一次評估時叫用追蹤點。
 
-如需更完整的查看您可以在設定條件時使用的有效運算式，請參閱[偵錯工具中的運算式](expressions-in-the-debugger.md)
+如需更完整的查看您可以在設定條件時使用的有效運算式，請參閱[偵錯工具中的運算式](expressions-in-the-debugger.md)。
 
 ### <a name="hit-count"></a>計數
 計數條件可讓您只在設定了追蹤點的程式程式碼執行指定的次數之後，才傳送輸出。
@@ -110,7 +110,7 @@ ms.locfileid: "71095258"
 
 ![條件運算式計數](../debugger/media/conditionalexpressionhitcount.png "條件運算式計數")
 
-### <a name="filter"></a>篩選器
+### <a name="filter"></a>篩選
 針對篩選準則，指定顯示的裝置、進程或執行緒輸出。
 
 ![條件運算式篩選](../debugger/media/conditionalexpressionfilter.png "條件運算式篩選")
@@ -123,7 +123,7 @@ ms.locfileid: "71095258"
 - ThreadId = 值
 - ThreadName = "名稱"
 
-以雙引號括住字串（例如名稱）。 可以輸入沒有引號的值。 `&`您可以使用（`AND`）、 `||` （`OR`）、`NOT`（）和括弧結合子句。 `!`
+以雙引號括住字串（例如名稱）。 可以輸入沒有引號的值。 您可以使用 `&` （`AND`）、`||` （`OR`）、`!` （`NOT`）和括弧來結合子句。
 
 ## <a name="considerations"></a>考量
 
@@ -131,12 +131,15 @@ ms.locfileid: "71095258"
 
 有時候當您檢查物件的屬性或屬性時，其值可能會變更。 這不是追蹤點功能本身所造成的 bug，但值得一提的是，使用追蹤點來檢查物件並不會避免這些意外的修改。
 
-在 [**動作**] 訊息方塊中評估運算式的方式，可能與您目前用來開發的語言不同。 例如，若要輸出字串，您不需要以引號括住訊息，即使您在使用`Debug.WriteLine()`或`console.log()`時通常會這麼做。 此外，對輸出運算式的大`{ }`括弧語法（），也可能與在開發語言中輸出值的慣例不同。 （不過，大括弧（`{ }`）內的內容仍應使用您的開發語言語法來撰寫）。
+在 [**動作**] 訊息方塊中評估運算式的方式，可能與您目前用來開發的語言不同。 例如，若要輸出字串，您不需要以引號括住訊息，即使您通常會在使用 `Debug.WriteLine()` 或 `console.log()` 時也一樣。 此外，對輸出運算式的大括弧語法（`{ }`）也可能與在開發語言中輸出值的慣例不同。 （不過，大括弧（`{ }`）內的內容仍應使用您的開發語言語法來撰寫）。
 
-## <a name="see-also"></a>另請參閱
+如果您想要檢查即時應用程式並尋找類似的功能，請查看快照偵錯工具中的記錄點功能。 快照偵錯工具是用來調查生產應用程式中問題的工具。 記錄點也可讓您將訊息傳送至輸出視窗，而不需要修改原始程式碼，也不會影響執行中的應用程式。 如需詳細資訊，請參閱[即時 Azure 應用程式](../debugger/debug-live-azure-applications.md)。
+
+## <a name="see-also"></a>請參閱
 
 - [什麼是偵錯？](../debugger/what-is-debugging.md)
 - [使用 Visual Studio C#撰寫更好的程式碼](../debugger/write-better-code-with-visual-studio.md)
 - [第一次查看調試](../debugger/debugger-feature-tour.md)
 - [偵錯工具中的運算式](expressions-in-the-debugger.md)
 - [使用中斷點](../debugger/using-breakpoints.md)
+- [即時調試 Azure 應用程式](../debugger/debug-live-azure-applications.md)

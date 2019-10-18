@@ -16,12 +16,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 2268d71f9119cc36bdb18161a62fbe930a37b2ff
-ms.sourcegitcommit: e82baa50bf5a65858c410882c2e86a552c2c1921
+ms.openlocfilehash: b9c8b60914e814ab6957ee9ec9307b12d9c3d1ba
+ms.sourcegitcommit: 6244689e742e551e7b6933959bd42df56928ece3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72381099"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72516877"
 ---
 # <a name="create-an-offline-installation-of-visual-studio"></a>建立 Visual Studio 的離線安裝
 
@@ -79,7 +79,7 @@ Visual Studio 2019 的設計適用於各種網路和電腦組態。 雖然建議
 
 若要取得 Visual Studio 2017 的啟動載入器，請參閱[Visual Studio 舊版](https://visualstudio.microsoft.com/vs/older-downloads/)下載頁面，以取得如何執行此操作的詳細資訊。
 
-您的安裝程式可執行檔 @ no__t-0or 更明確，啟動載入器檔案 @ no__t-1should 相符，或類似下列其中一項。
+您的安裝程式可執行檔 &mdash;or 更明確，啟動載入器檔案 &mdash;should 相符，或類似于下列其中一項。
 
 | 版本 | Filename |
 |-------------|-----------------------|
@@ -164,9 +164,9 @@ Visual Studio 2019 的設計適用於各種網路和電腦組態。 雖然建議
 > 當您從本機安裝快取執行時，安裝程式會使用每個檔案的本機版本。 但如果您在安裝期間選取不存在於快取中的元件，則安裝程式會嘗試從網際網路下載它們。
 
 ::: moniker range="vs-2019"
-
-> 對於使用16.1 和更新版本的安裝和更新，如果您在離線系統上收到「找不到符合下列參數的產品」錯誤，請使用16.3.5 或更新版本的--noweb 參數。
-
+> [!IMPORTANT]
+> 針對離線安裝，如果您收到錯誤訊息，指出「找不到符合下列參數的產品」，請確定您使用的是16.3.5 或更新版本的 `--noweb` 參數。
+>
 ::: moniker-end
 
 若要確定您只會安裝先前下載的檔案，請使用您用來建立配置快取的相同命令列選項。 例如，如果您已使用下列命令建立配置快取：

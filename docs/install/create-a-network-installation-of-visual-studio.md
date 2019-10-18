@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: da4da0a106d37b081e0a7c57fe905048f3314174
-ms.sourcegitcommit: e82baa50bf5a65858c410882c2e86a552c2c1921
+ms.openlocfilehash: fcc4a3d3d99deab62971c40b26c9a4252367438f
+ms.sourcegitcommit: 6244689e742e551e7b6933959bd42df56928ece3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72381082"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72516330"
 ---
 # <a name="create-a-network-installation-of-visual-studio"></a>建立 Visual Studio 的網路安裝
 
@@ -39,7 +39,7 @@ ms.locfileid: "72381082"
 
 若要取得 Visual Studio 2017 的啟動載入器，請參閱[Visual Studio 舊版](https://visualstudio.microsoft.com/vs/older-downloads/)下載頁面，以取得如何執行此操作的詳細資訊。
 
-您的安裝程式可執行檔 @ no__t-0or 更明確，啟動載入器檔案 @ no__t-1should 相符，或類似下列其中一項。
+您的安裝程式可執行檔 &mdash;or 更明確，啟動載入器檔案 &mdash;should 相符，或類似于下列其中一項。
 
 | 版本 | Filename |
 |-------------|-----------------------|
@@ -53,7 +53,7 @@ ms.locfileid: "72381082"
 
 ::: moniker range="vs-2019"
 
-您的安裝程式可執行檔 @ no__t-0or 更明確，啟動載入器檔案 @ no__t-1should 相符，或類似下列其中一項。
+您的安裝程式可執行檔 &mdash;or 更明確，啟動載入器檔案 &mdash;should 相符，或類似下列其中一項。
 
 |版本 | 下載|
 |-------------|-----------------------|
@@ -229,9 +229,9 @@ vs_enterprise.exe --layout c:\VSLayout --all
 >
 
 ::: moniker range="vs-2019"
-
-> 若是離線安裝，如果您收到錯誤訊息，指出「找不到符合下列參數的專案」，請確定您使用的是--noweb 參數搭配版本16.3.5 或更新版本。
-
+> [!IMPORTANT]
+> 針對離線安裝，如果您收到錯誤訊息，指出「找不到符合下列參數的產品」，請確定您使用的是16.3.5 或更新版本的 `--noweb` 參數。
+>
 ::: moniker-end
 
 當您從配置進行安裝時，會從配置中取得已安裝的內容。 不過，如果您選取的元件不在配置中，則會從網際網路取得。  如果您想要防止 Visual Studio 安裝程式下載您配置中遺漏的任何內容，請使用 `--noWeb` 選項。 如果使用 `--noWeb`，而且配置遺失已選取要安裝的任何內容，則安裝程式會失敗。
