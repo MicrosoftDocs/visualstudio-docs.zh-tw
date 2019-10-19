@@ -17,14 +17,14 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: faca5ef7bc89bc16d646f66fb897f1dc44eb831a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8c56a8b135a0aa9a4f8ddf91e146d4d64367bb2b
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62955356"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572643"
 ---
-# <a name="breakpointstate-enumeration"></a>BREAKPOINT_STATE 列舉
+# <a name="breakpoint_state-enumeration"></a>BREAKPOINT_STATE 列舉
 指出中斷點的狀態。  
   
 ## <a name="syntax"></a>語法  
@@ -37,13 +37,13 @@ typedef enum tagBREAKPOINT_STATE {
 } BREAKPOINT_STATE;  
 ```  
   
-## <a name="members"></a>成員  
+## <a name="members"></a>Members  
   
 |成員|描述|  
 |------------|-----------------|  
-|BREAKPOINT_DELETED|中斷點不存在，但仍有它的參考。|  
-|BREAKPOINT_DISABLED|中斷點會存在，但已停用。|  
-|BREAKPOINT_ENABLED|中斷點會存在，而且已啟用。|  
+|BREAKPOINT_DELETED|中斷點已不存在，但仍有其參考。|  
+|BREAKPOINT_DISABLED|中斷點存在，但已停用。|  
+|BREAKPOINT_ENABLED|中斷點存在且已啟用。|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [動態指令碼偵錯工具的常數、列舉和結構](../../winscript/reference/active-script-debugger-constants-enumerations-and-structures.md)

@@ -1,5 +1,5 @@
 ---
-title: 'Ijsdebugframe:: Getdocumentpositionwithid 方法 |Microsoft Docs'
+title: IJsDebugFrame：： GetDocumentPositionWithId 方法 |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -15,15 +15,15 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 741fe323e787c57f5f05a25461eae87c98dba70f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f35f6fb84db95950fe83d571c9f5e5e7db9de1e8
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62558134"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573865"
 ---
 # <a name="ijsdebugframegetdocumentpositionwithid-method"></a>IJsDebugFrame::GetDocumentPositionWithId 方法
-傳回此堆疊框架，在使用者層級文件中的目前位置。  
+傳回此堆疊框架在使用者層級檔中的目前位置。  
   
 ## <a name="syntax"></a>語法  
   
@@ -37,18 +37,18 @@ HRESULT GetDocumentPositionWithId(
   
 #### <a name="parameters"></a>參數  
  `pDocumentId`  
- [out]來源文件 （IDebugDocumentText 的指標） 的唯一識別碼。  
+ 脫銷來源文件的唯一識別碼（IDebugDocumentText 的指標）。  
   
  `pCharacterOffset`  
- [out]從指令碼開頭以零為起始的字元位移。  
+ 脫銷從腳本開頭以零為起始的字元位移。  
   
  `pStatementCharCount`  
- [out]開始的目前陳述式的長度 * pCharacterOffset，以字元為單位。  
+ 脫銷目前語句的長度，以字元為開頭，從 * pCharacterOffset 開始。  
   
 ## <a name="return-value"></a>傳回值  
   
 ## <a name="requirements"></a>需求  
- **標頭：** jscript9diag.h  
+ **標頭：** jscript9diag。h  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IJsDebugFrame 介面](../../winscript/reference/ijsdebugframe-interface.md)

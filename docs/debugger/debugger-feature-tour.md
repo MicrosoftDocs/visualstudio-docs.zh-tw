@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 06665aa6a30d67e27f654e92029dcbd3d2aea2ef
-ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
+ms.sourcegitcommit: 8a96a65676fd7a2a03b0803d7eceae65f3fa142b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/15/2019
+ms.lasthandoff: 10/18/2019
 ms.locfileid: "72349739"
 ---
 # <a name="first-look-at-the-visual-studio-debugger"></a>Visual Studio 偵錯工具初探
@@ -33,7 +33,7 @@ ms.locfileid: "72349739"
 
 ![設定中斷點](../debugger/media/dbg-tour-set-a-breakpoint.gif "設定中斷點")
 
-按下 **F5** 鍵 ([偵錯] > [開始偵錯]) 或在偵錯工具列中按下 [開始偵錯] 按鈕 ![開始偵錯](../debugger/media/dbg-tour-start-debugging.png "開始偵錯")，偵錯工具會執行它遇到的第一個中斷點。 如果尚未執行應用程式，則 F5 鍵會啟動偵錯工具並在第一個中斷點停止。
+按**F5** （**debug > 開始進行調試**程式），![或在調試](../debugger/media/dbg-tour-start-debugging.png "開始偵錯")程式列中按下 [**開始**偵錯工具] 按鈕，然後偵錯工具會執行至它所遇到的第一個中斷點。 如果尚未執行應用程式，則 F5 鍵會啟動偵錯工具並在第一個中斷點停止。
 
 如果您知道要詳細檢查的程式碼行或程式碼區段，則中斷點是一個很有用的功能。
 
@@ -43,7 +43,7 @@ ms.locfileid: "72349739"
 
 若要啟動已附加偵錯工具的應用程式，請按下 **F11** 鍵 ([偵錯] > [逐步執行])。 F11 鍵是**逐步執行**命令，可將應用程式執行一次往前推進一個陳述式。 當您使用 F11 鍵啟動應用程式時，偵錯工具會在執行的第一個陳述式上中斷。
 
-![F11 鍵逐步執行](../debugger/media/dbg-tour-f11.png "F11 鍵逐步執行")
+![F11 逐步執行](../debugger/media/dbg-tour-f11.png "F11 逐步執行")
 
 黃色箭號表示偵錯工具暫停時的陳述式，這也表示會在相同的點暫停執行應用程式 (尚未執行此陳述式)。
 
@@ -64,17 +64,17 @@ F10 鍵會推進偵錯工具，而不需要逐步執行應用程式程式碼中�
 
 以滑鼠右鍵按一下屬性或欄位，並選擇 [逐步執行至特定處]，然後選擇其中一個可用的選項。
 
-![逐步執行至特定處](../debugger/media/dbg-tour-step-into-specific.png "逐步執行至特定處")
+![逐步執行特定](../debugger/media/dbg-tour-step-into-specific.png "逐步執行特定")
 
 在此範例中，[逐步執行至特定處] 會將我們帶到 `Path.set` 的程式碼。
 
-![逐步執行至特定處](../debugger/media/dbg-tour-step-into-specific-2.png "逐步執行至特定處")
+![逐步執行特定](../debugger/media/dbg-tour-step-into-specific-2.png "逐步執行特定")
 
 ## <a name="run-to-a-point-in-your-code-quickly-using-the-mouse"></a>使用滑鼠快速執行至程式碼中的某一點
 
-位在偵錯工具中時，請將滑鼠指標停留在程式碼行上方，直到 [執行至點選處] (執行到這裡) 按鈕 ![執行至點選處](../debugger/media/dbg-tour-run-to-click.png "RunToClick") 出現在左側為止。
+在偵錯工具中，將滑鼠停留在一行程式碼上，直到 [執行**至**這裡![] 按鈕（[執行](../debugger/media/dbg-tour-run-to-click.png "處 runtoclick")到這裡）] 按鈕出現在左側。
 
-![執行至點選處](../debugger/media/dbg-tour-run-to-click-2.png "執行至點選處")
+![執行以按一下](../debugger/media/dbg-tour-run-to-click-2.png "執行至點選處")
 
 > [!NOTE]
 > [執行至點選處] (執行到這裡) 按鈕會於 [!include[vs_dev15](../misc/includes/vs_dev15_md.md)] 開始提供。
@@ -93,7 +93,7 @@ F10 鍵會推進偵錯工具，而不需要逐步執行應用程式程式碼中�
 
 ## <a name="run-to-cursor"></a>執行至游標處
 
-按下紅色的 [停止偵錯] 按鈕 ![停止偵錯](../debugger/media/dbg-tour-stop-debugging.png "停止偵錯")或 **Shift** + **F5** 來停止偵錯工具。
+按下 [**停止**偵測] 紅色按鈕![停止調試](../debugger/media/dbg-tour-stop-debugging.png "停止偵錯")程式，或按**Shift**  + **F5**來停止偵錯工具。
 
 以滑鼠右鍵按一下應用程式中的程式碼行，然後選擇 [執行至游標處]。 此命令會開始偵錯，並在目前這一行程式碼上設定暫時中斷點。
 
@@ -110,17 +110,17 @@ F10 鍵會推進偵錯工具，而不需要逐步執行應用程式程式碼中�
 
 ## <a name="restart-your-app-quickly"></a>快速重新啟動您的應用程式
 
-按一下偵錯工具列中的 [重新啟動] ![重新啟動應用程式](../debugger/media/dbg-tour-restart.png "重新啟動應用程式") 按鈕 (**Ctrl + Shift +F5**)。
+按一下 [偵錯工具] 工具列中的 [**重新**啟動![重新開機應用程式](../debugger/media/dbg-tour-restart.png "重新開機應用程式")] 按鈕（**Ctrl + Shift + F5**）。
 
 相對於停止應用程式並重新啟動偵錯工具，按下 [重新啟動] 可讓您節省時間。 偵錯工具會在執行程式碼叫用的第一個中斷點處暫停。
 
-如果您想要停止偵錯工具並回到程式碼編輯器中，您可以按下紅色的停止 [停止偵錯]![](../debugger/media/dbg-tour-stop-debugging.png "停止偵錯") 按鈕，而非 [重新啟動]。
+如果您想要停止偵錯工具，並回到 [程式碼編輯器]，您可以按下紅色的 [停止![停止調試](../debugger/media/dbg-tour-stop-debugging.png "停止偵錯")] 按鈕，而不是 [**重新開機**]。
 
 ## <a name="edit-your-code-and-continue-debugging-c-vb-c-xaml"></a>編輯您的程式碼並繼續C#進行偵錯工具C++（、VB、、XAML）
 
 在 Visual Studio 支援的大部分語言中，您可以在偵錯工具的中間編輯您的程式碼，並繼續進行偵錯工具。 若要使用這項功能，請在偵錯工具中暫停時，按一下游標所在的程式碼，進行編輯，然後按**F5**、 **F10**或**F11**繼續進行調試。
 
-![編輯後繼續調試](../debugger/media/dbg-tips-edit-and-continue.gif "EditAndContinue")
+![編輯後繼續的調試](../debugger/media/dbg-tips-edit-and-continue.gif "EditAndContinue")
 
 如需有關使用功能和功能限制的詳細資訊，請參閱[編輯後繼續](../debugger/edit-and-continue.md)。
 
@@ -132,7 +132,7 @@ F10 鍵會推進偵錯工具，而不需要逐步執行應用程式程式碼中�
 
 在偵錯工具中暫停時，請使用滑鼠將指標移至物件上方，您會看到它的預設屬性值 (在此範例中，檔案名稱 `market 031.jpg` 是預設屬性值)。
 
-![檢視資料提示](../debugger/media/dbg-tour-data-tips.gif "檢視資料提示")
+![查看資料提示](../debugger/media/dbg-tour-data-tips.gif "查看資料提示")
 
 展開物件以查看其所有屬性 (例如此範例中的 `FullPath` 屬性)。
 
@@ -145,7 +145,7 @@ F10 鍵會推進偵錯工具，而不需要逐步執行應用程式程式碼中�
 
 進行偵錯時，請查看程式碼編輯器底部的 [自動變數] 視窗。
 
-![[自動變數] 視窗](../debugger/media/dbg-tour-autos-window.png "[自動變數] 視窗")
+![自動變數視窗](../debugger/media/dbg-tour-autos-window.png "自動變數視窗")
 
 在 [自動變數] 視窗中，您會看到變數及其目前值和其類型。 [自動變數] 視窗會顯示目前這一行或上一行中使用的所有變數 (在 C++ 中，此視窗會顯示前三行程式碼中的變數。 請參閱文件以了解語言特定行為)。
 
@@ -164,7 +164,7 @@ F10 鍵會推進偵錯工具，而不需要逐步執行應用程式程式碼中�
 
 進行偵錯時，請以滑鼠右鍵按一下物件，然後選擇 [新增監看式]。
 
-![[監看式] 視窗](../debugger/media/dbg-tour-watch-window.png "[監看式] 視窗")
+![監看式視窗](../debugger/media/dbg-tour-watch-window.png "監看式視窗")
 
 在此範例中，您已於 `f` 物件上設定監看式，當您在偵錯工具中移動時，就可以看到其值的變更。 不同於其他變數視窗，[監看式] 視窗一律會顯示所監看的變數 (它們在超出範圍時會呈現灰色)。
 
@@ -214,7 +214,7 @@ F10 鍵會推進偵錯工具，而不需要逐步執行應用程式程式碼中�
 
 **快照偵錯工具**會在您感興趣的程式碼執行時，擷取生產環境應用程式的快照集。 若要指示偵錯工具擷取快照集，您可以在程式碼中設定快照點和記錄點。 偵錯工具可讓您清楚了解發生什麼問題，而不會影響實際執行應用程式的流量。 快照集偵錯工具可協助您大幅縮短為解決出現在生產環境之問題所花費的時間。
 
-![啟動快照集偵錯工具](../debugger/media/snapshot-launch.png "啟動快照集偵錯工具")
+![啟動快照偵錯工具](../debugger/media/snapshot-launch.png "啟動快照偵錯工具")
 
 快照集合適用於 Azure App Service 中執行的 ASP.NET 應用程式。 ASP.NET 應用程式必須在 .NET Framework 4.6.1 或更新版本上執行，而 ASP.NET Core 應用程式必須在 Windows 的 .NET Core 2.0 或更新版本上執行。
 
@@ -226,7 +226,7 @@ F10 鍵會推進偵錯工具，而不需要逐步執行應用程式程式碼中�
 
 您可以使用[偵錯] 工具列的 [逐步返回] 和 [逐步前進] 按鈕，來巡覽及檢視快照集。 這些按鈕可巡覽出現在 [診斷工具] 視窗之 [事件] 索引標籤中的事件。
 
-![[逐步返回] 和 [逐步前進] 按鈕](../debugger/media/intellitrace-step-back-icons-description.png  "[逐步返回] 和 [逐步前進] 按鈕")
+![[逐步執行] 和 [下一頁] 按鈕](../debugger/media/intellitrace-step-back-icons-description.png  "[逐步執行] 和 [下一頁] 按鈕")
 
 如需詳細資訊，請參閱[使用 IntelliTrace 檢查先前的應用程式狀態](../debugger/view-historical-application-state.md)頁面。
 

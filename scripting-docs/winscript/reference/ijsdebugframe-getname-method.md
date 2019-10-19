@@ -1,5 +1,5 @@
 ---
-title: 'Ijsdebugframe:: Getname 方法 |Microsoft Docs'
+title: IJsDebugFrame：： GetName 方法 |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -15,15 +15,15 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 314a365a76533343ef14db513856a7ab16168677
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e78bd7c5b63737cd1a34d50ca6629eb173f40efb
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62558225"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573874"
 ---
 # <a name="ijsdebugframegetname-method"></a>IJsDebugFrame::GetName 方法
-取得的堆疊框架的使用者易記名稱。  
+取得堆疊框架的使用者易記名稱。  
   
 ## <a name="syntax"></a>語法  
   
@@ -35,12 +35,12 @@ HRESULT GetName(
   
 #### <a name="parameters"></a>參數  
  `pName`  
- [out]堆疊框架的名稱。  
+ 脫銷堆疊框架的名稱。  
   
 ## <a name="return-value"></a>傳回值  
   
 ## <a name="requirements"></a>需求  
- **標頭：** jscript9diag.h  
+ **標頭：** jscript9diag。h  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IJsDebugFrame 介面](../../winscript/reference/ijsdebugframe-interface.md)

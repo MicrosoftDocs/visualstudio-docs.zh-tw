@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptParseProcedure32 | Microsoft Docs
+title: IActiveScriptParseProcedure32 |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -10,22 +10,22 @@ ms.assetid: 387a856b-f5dc-4371-8620-bd574e046c2c
 caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
-ms.openlocfilehash: 10cdff328216d06a3326dd3595ef8fc78bc9cfc9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1993cbef966a4d73a2a3ed55c3317db444702232
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62993146"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574867"
 ---
 # <a name="iactivescriptparseprocedure32"></a>IActiveScriptParseProcedure32
-如果 Windows 指令碼引擎可讓您可以加入至指令碼的程序的來源的程式碼文字，它會實作`IActiveScriptParseProcedure32`介面。 解譯的指令碼語言具有無獨立的撰寫環境，例如 VBScript，這會提供替代機制 (而非`IActiveScriptParse32`或`IPersist`*) 加入命名空間中的指令碼程序。  
+如果 Windows 腳本引擎允許將程式的原始程式碼文字加入至腳本，它就會執行 `IActiveScriptParseProcedure32` 介面。 對於沒有獨立撰寫環境的解讀式指令碼語言（例如 VBScript），這會提供替代機制（不是 `IActiveScriptParse32` 或 `IPersist` *）來將腳本程式新增至命名空間。  
   
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法  
   
 |||  
 |-|-|  
 |方法|描述|  
-|[IActiveScriptParseProcedure32::ParseProcedureText](../../winscript/reference/iactivescriptparseprocedure32-parseproceduretext.md)|剖析指定的程式碼程序，並將程式新增至命名空間。|  
+|[IActiveScriptParseProcedure32::ParseProcedureText](../../winscript/reference/iactivescriptparseprocedure32-parseproceduretext.md)|剖析指定的程式碼程式，並將程式新增至命名空間。|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [動態指令碼介面](../../winscript/reference/active-script-interfaces.md)

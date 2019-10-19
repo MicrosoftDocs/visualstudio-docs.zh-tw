@@ -1,5 +1,5 @@
 ---
-title: IDebugApplication::AddStackFrameSniffer | Microsoft Docs
+title: IDebugApplication：： AddStackFrameSniffer |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 16fb941a91482c548284dc3d4317a472fd9be641
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a461c24b6f62f1e0ece88915e097faf0c59f15e7
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62991055"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575025"
 ---
 # <a name="idebugapplicationaddstackframesniffer"></a>IDebugApplication::AddStackFrameSniffer
-將此應用程式中的堆疊框架的列舉值提供者。  
+將堆疊框架列舉值提供者加入此應用程式。  
   
 ## <a name="syntax"></a>語法  
   
@@ -38,10 +38,10 @@ HRESULT AddStackFrameSniffer(
   
 #### <a name="parameters"></a>參數  
  `pdsfs`  
- [in]堆疊框架列舉值提供者加入至這個應用程式。  
+ 在要加入此應用程式的堆疊框架列舉值提供者。  
   
  `pdwCookie`  
- [out]用來從應用程式移除此堆疊框架列舉值提供者的 cookie。  
+ 脫銷用來從應用程式移除這個堆疊框架列舉值提供者的 cookie。  
   
 ## <a name="return-value"></a>傳回值  
  方法會傳回 `HRESULT`。 可能的值包括 (但不限於) 下表中的這些值。  
@@ -51,9 +51,9 @@ HRESULT AddStackFrameSniffer(
 |`S_OK`|方法成功。|  
   
 ## <a name="remarks"></a>備註  
- 雖然語言引擎通常會呼叫這個方法來公開 （expose） 它們的堆疊框架，偵錯工具，它可能會公開堆疊框架的其他實體。  
+ 雖然語言引擎通常會呼叫這個方法，將其堆疊框架公開給偵錯工具，但其他實體也可能公開堆疊框架。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDebugApplication 介面](../../winscript/reference/idebugapplication-interface.md)   
- [IDebugApplication::RemoveStackFrameSniffer](../../winscript/reference/idebugapplication-removestackframesniffer.md)   
+ [IDebugApplication：： RemoveStackFrameSniffer](../../winscript/reference/idebugapplication-removestackframesniffer.md)    
  [IDebugStackFrameSniffer 介面](../../winscript/reference/idebugstackframesniffer-interface.md)

@@ -1,5 +1,5 @@
 ---
-title: IScriptNode::CreateChildEntry |Microsoft Docs
+title: IScriptNode：： CreateChildEntry |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 75369df719b0cd140ce621e916215eb18cf30a9e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c58ff83c43a1418e6fb7bd8945afa181af60c68a
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62787615"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573609"
 ---
-# <a name="iscriptnode-createchildentry"></a>IScriptNode::CreateChildEntry
-新增子執行個體的`IScriptEntry`。  
+# <a name="iscriptnode-createchildentry"></a>IScriptNode:: CreateChildEntry
+加入 `IScriptEntry` 的子實例。  
   
 ## <a name="syntax"></a>語法  
   
@@ -40,28 +40,28 @@ HRESULT CreateChildEntry(
   
 #### <a name="parameters"></a>參數  
  `isn`  
- [in]與父系之子系的索引。  
+ 在父系中子系的索引。  
   
  `dwCookie`  
- [in]應用程式定義的值，用來與主機物件關聯的子系項目。  
+ 在應用程式定義的值，用來將子專案與主物件產生關聯。  
   
  `pszDelimiter`  
- [in]End 的指令碼區塊分隔符號的位址。 進行剖析，主應用程式通常會使用分隔符號 （例如兩個單引號），偵測到指令碼區塊的結尾。  
+ 在結束腳本區塊分隔符號的位址。 對於剖析，主機通常會使用分隔符號（例如兩個單引號）來偵測腳本區塊的結尾。  
   
- 分隔符號可以讓撰寫引擎提供前置處理指令碼。 比方說，引擎可能會取代一個單引號兩個單引號以做為分隔符號。 引擎會決定如何使用分隔符號。  
+ 分隔符號可讓腳本撰寫引擎提供前置處理。 例如，引擎可能會使用兩個單引號來取代單引號，以作為分隔符號。 引擎會決定分隔符號的使用方式。  
   
- 如果分隔符號不會標記指令碼區塊的結尾，則設為 NULL。  
+ 如果分隔符號不會標示腳本區塊的結尾，則設定為 Null。  
   
  `ppse`  
- [out]收到的指標變數的位址`IScriptEntry`子執行個體的介面。  
+ 脫銷接收子實例之 `IScriptEntry` 介面指標的變數位址。  
   
- 針對`IScriptNode`代表網頁的物件，這個參數傳回`IScriptEntry`指定指令碼區塊的執行個體。  
+ 對於代表網頁的 `IScriptNode` 物件，此參數會傳回指定腳本區塊的 `IScriptEntry` 實例。  
   
- 針對`IScriptEntry`代表的指令碼區塊的物件，這個參數傳回`IScriptEntry`指定函式物件的執行個體。  
+ 對於代表腳本區塊的 `IScriptEntry` 物件，此參數會傳回指定函式物件的 `IScriptEntry` 實例。  
   
- 針對`IScriptEntry`物件代表的函式的物件，這個方法會失敗。  
+ 若為代表函式物件的 `IScriptEntry` 物件，這個方法會失敗。  
   
- 針對`IScriptScriptlet`物件，這個方法會失敗。  
+ 若為 `IScriptScriptlet` 物件，這個方法會失敗。  
   
 ## <a name="return-value"></a>傳回值  
  `HRESULT`。 可能的值包括 (但不限於) 下表中的這些值。  
@@ -71,8 +71,8 @@ HRESULT CreateChildEntry(
 |`S_OK`|方法成功。|  
   
 ## <a name="remarks"></a>備註  
- `IScriptNode`介面代表網頁或其項目。 `IScriptEntry`介面 (衍生自`IScriptNode`) 代表的指令碼區塊或函式物件。 `IScriptScriptlet`介面 (衍生自`IScriptEntry`) 代表的事件處理常式。  
+ @No__t_0 介面表示網頁或其元素。 @No__t_0 介面（衍生自 `IScriptNode`）代表腳本區塊或函式物件。 @No__t_0 介面（衍生自 `IScriptEntry`）代表事件處理常式。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IScriptNode 介面](../../winscript/reference/iscriptnode-interface.md)   
  [IScriptEntry 介面](../../winscript/reference/iscriptentry-interface.md)

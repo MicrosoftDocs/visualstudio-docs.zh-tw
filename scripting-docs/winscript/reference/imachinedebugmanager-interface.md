@@ -13,25 +13,25 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6db8989fc6c932723a9b95017854635396b0deda
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9d491b03ba04d346e3a14a08d5e2b6b9d34c7d97
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62977639"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573926"
 ---
 # <a name="imachinedebugmanager-interface"></a>IMachineDebugManager 介面
-機器偵錯管理員主要介面。 這個介面是類似於`IMachineDebugManagerCookie`介面。  
+電腦 Debug Manager 的主要介面。 這個介面類別似于 `IMachineDebugManagerCookie` 介面。  
   
- 除了繼承自方法`IUnknown`，則`IMachineDebugManager`介面會公開下列方法。  
+ 除了繼承自 `IUnknown` 的方法之外，`IMachineDebugManager` 介面也會公開下列方法。  
   
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法  
   
 |方法|描述|  
 |------------|-----------------|  
-|[IMachineDebugManager::AddApplication](../../winscript/reference/imachinedebugmanager-addapplication.md)|新增應用程式執行的應用程式清單。|  
-|[IMachineDebugManager::RemoveApplication](../../winscript/reference/imachinedebugmanager-removeapplication.md)|移除應用程式從執行的應用程式清單。|  
-|[IMachineDebugManager::EnumApplications](../../winscript/reference/imachinedebugmanager-enumapplications.md)|傳回目前執行中應用程式清單的列舉值。|  
+|[IMachineDebugManager::AddApplication](../../winscript/reference/imachinedebugmanager-addapplication.md)|將應用程式新增至執行中的應用程式清單。|  
+|[IMachineDebugManager::RemoveApplication](../../winscript/reference/imachinedebugmanager-removeapplication.md)|從執行中的應用程式清單中移除應用程式。|  
+|[IMachineDebugManager::EnumApplications](../../winscript/reference/imachinedebugmanager-enumapplications.md)|傳回目前正在執行之應用程式清單的列舉值。|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IMachineDebugManagerCookie 介面](../../winscript/reference/imachinedebugmanagercookie-interface.md)

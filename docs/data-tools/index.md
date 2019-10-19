@@ -3,17 +3,17 @@ title: 開發資料解決方案
 description: 了解用來在 Visual Studio 中開發資料解決方案的不同工具，包括 .NET 工具、SQL Server Data Tools、Azure Data Lake、Azure HDInsight 與 Azure 串流分析。
 layout: LandingPage
 ms.date: 01/01/2018
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 ms.topic: landing-page
 ms.workload:
 - data-storage
-ms.openlocfilehash: 768d3d1f130c3ef7b81da9706559e9d6b5f159ee
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: 38b0d25539b4fe02d81463e9bc4e481c3b45010e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66715050"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72648330"
 ---
 # <a name="use-data-tools-in-visual-studio-to-develop-data-solutions"></a>使用 Visual Studio 中的資料工具來開發資料解決方案
 

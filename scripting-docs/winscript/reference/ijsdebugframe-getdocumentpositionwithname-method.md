@@ -1,5 +1,5 @@
 ---
-title: 'Ijsdebugframe:: Getdocumentpositionwithname 方法 |Microsoft Docs'
+title: IJsDebugFrame：： GetDocumentPositionWithName 方法 |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -15,15 +15,15 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4d3b909f3a3ebc672bf6d0a014b519de685b1677
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b818ca4dc1ec4402973026668972507861c86f22
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62558147"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575115"
 ---
 # <a name="ijsdebugframegetdocumentpositionwithname-method"></a>IJsDebugFrame::GetDocumentPositionWithName 方法
-傳回此堆疊框架，在使用者層級文件中的目前位置。  
+傳回此堆疊框架在使用者層級檔中的目前位置。  
   
 ## <a name="syntax"></a>語法  
   
@@ -37,18 +37,18 @@ HRESULT GetDocumentPositionWithName(
   
 #### <a name="parameters"></a>參數  
  `pDocumentName`  
- [out]為靜態的指令碼、 文件的 URL。 針對動態指令碼，會傳回包含指令碼 （例如，評估程式碼，函式程式碼等） 的類型名稱。  
+ 脫銷若為靜態腳本，則為檔的 URL。 若為動態腳本，則會傳回包含腳本類型的名稱（例如，評估程式碼、函式程式碼等）。  
   
  `pLine`  
- [out] 文件中的以 1 起始的行位置。  
+ [out] 檔中以1為基礎的行位置。  
   
  `pColumn`  
- [out] 文件中的以 1 起始的行位置。  
+ [out] 檔中以1為基礎的行位置。  
   
 ## <a name="return-value"></a>傳回值  
   
 ## <a name="requirements"></a>需求  
- **標頭：** jscript9diag.h  
+ **標頭：** jscript9diag。h  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IJsDebugFrame 介面](../../winscript/reference/ijsdebugframe-interface.md)

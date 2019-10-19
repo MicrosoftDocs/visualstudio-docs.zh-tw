@@ -1,5 +1,5 @@
 ---
-title: IRemoteDebugApplicationThread::GetApplication |Microsoft Docs
+title: IRemoteDebugApplicationThread：： GetApplication |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: abe33d75f7e03944eb0a6f533f2955871ddee342
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b21715345d698e6bd42c1946e06002da2b97d5b3
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62788228"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575278"
 ---
 # <a name="iremotedebugapplicationthreadgetapplication"></a>IRemoteDebugApplicationThread::GetApplication
-傳回與這個執行緒相關聯的應用程式物件。  
+傳回與此執行緒相關聯的應用程式物件。  
   
 ## <a name="syntax"></a>語法  
   
@@ -37,7 +37,7 @@ HRESULT GetApplication(
   
 #### <a name="parameters"></a>參數  
  `pprda`  
- [out]這個執行緒相關聯的應用程式物件。  
+ 脫銷與這個執行緒相關聯的應用程式物件。  
   
 ## <a name="return-value"></a>傳回值  
  方法會傳回 `HRESULT`。 可能的值包括 (但不限於) 下表中的這些值。  
@@ -47,7 +47,7 @@ HRESULT GetApplication(
 |`S_OK`|方法成功。|  
   
 ## <a name="remarks"></a>備註  
- 這個方法會傳回此執行緒相關聯的應用程式物件。  
+ 這個方法會傳回與此執行緒相關聯的應用程式物件。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IRemoteDebugApplicationThread 介面](../../winscript/reference/iremotedebugapplicationthread-interface.md)

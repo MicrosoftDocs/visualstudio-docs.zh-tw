@@ -14,21 +14,21 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ed8ff0361396deaaffd46f14ca1fc38869988593
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 477374d93e4d8d5139197dcd49fef0e930e5ff32
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63422454"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572697"
 ---
 # <a name="active-script-debugger-interfaces"></a>動態指令碼偵錯工具的介面
-Activdbg.h 和 activdbg100.h 標頭檔會提供介面、 列舉和結構列在這一節。 也就是進行偵錯指令碼。  
+Activdbg 和 activdbg100 標頭檔提供本節所列的介面、列舉和結構。 它們是用於偵錯工具腳本。  
   
 > [!NOTE]
-> `IJSDebug*`介面和`IEnumJsStackFrames`介面初次發行時在 Internet Explorer 11 中使用指令碼的原生程式碼偵錯。 這些介面的標頭檔是 jscript9diag.h。  
+> @No__t_0 介面和 `IEnumJsStackFrames` 介面首次發行于 Internet Explorer 11 中，以使用腳本來進行機器碼的偵錯工具。 這些介面的標頭檔是 jscript9diag。  
   
-## <a name="in-this-section"></a>本節內容  
- 下列介面允許非語言相關、 非主機相關偵錯：  
+## <a name="in-this-section"></a>本章節內容  
+ 下列介面允許非語言相關的主機中性調試：  
   
 - [動態指令碼偵錯工具的常數、列舉和結構](../../winscript/reference/active-script-debugger-constants-enumerations-and-structures.md)  
   
@@ -178,9 +178,9 @@ Activdbg.h 和 activdbg100.h 標頭檔會提供介面、 列舉和結構列在�
   
 - [IWebAppDiagnosticsObjectInitialization 介面](../../winscript/reference/iwebappdiagnosticsobjectinitialization-interface.md)  
   
-  下節列出的常數、 列舉和結構用於偵錯：  
+  下一節列出用來進行偵錯工具的常數、列舉和結構：  
   
 - [動態指令碼偵錯工具的常數、列舉和結構](../../winscript/reference/active-script-debugger-constants-enumerations-and-structures.md)  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [動態指令碼偵錯概觀](../../winscript/active-script-debugging-overview.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugSessionProviderEx:CanJITDebug | Microsoft Docs
+title: IDebugSessionProviderEx： CanJITDebug |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -15,15 +15,15 @@ caps.latest.revision: 3
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 295be698e02264c81522b70d0377c2030da6190e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d1ad9192d8faac9931cd3d14e688ee2f54e46687
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62979005"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574930"
 ---
 # <a name="idebugsessionproviderexcanjitdebug"></a>IDebugSessionProviderEx:CanJITDebug
-判斷指定的處理序是否可偵錯的 Just In Time 偵錯。  
+判斷是否可以使用即時偵錯工具來調試指定的進程。  
   
 ## <a name="syntax"></a>語法  
   
@@ -35,7 +35,7 @@ HRESULT CanJITDebug(
   
 #### <a name="parameters"></a>參數  
  `pid`  
- [in]處理序進行偵錯處理序識別碼。  
+ 在要進行調試之進程的處理序識別碼。  
   
 ## <a name="return-value"></a>傳回值  
  方法會傳回 `HRESULT`。 可能的值包括 (但不限於) 下表中的這些值。  
@@ -46,5 +46,5 @@ HRESULT CanJITDebug(
   
 ## <a name="remarks"></a>備註  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDebugSessionProviderEx 介面](../../winscript/reference/idebugsessionproviderex-interface.md)

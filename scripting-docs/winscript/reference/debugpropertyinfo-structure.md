@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 99208626b41f2463178bccecf73c21a1d15fa765
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 793c83b467460f0744abffe3f161f7510f56257a
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62955259"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575074"
 ---
 # <a name="debugpropertyinfo-structure"></a>DebugPropertyInfo 結構
-描述的階層式本質上具有名稱、 類型和值的物件。 它用來描述的本機變數、 參數、 監看變數和運算式，偵錯 屬性，並註冊。  
+描述具有名稱、類型和值的階層式本質物件。 它是用來描述本機變數、參數、監看變數和運算式，以及暫存器的 debug 屬性。  
   
 ## <a name="syntax"></a>語法  
   
@@ -41,29 +41,29 @@ typedef struct DebugPropertyInfo{
 };  
 ```  
   
-## <a name="members"></a>成員  
+## <a name="members"></a>Members  
  dwValidFields  
- 用來指定哪些欄位會初始化列舉的資料型別。  
+ 列舉的資料類型，用來指定要初始化的欄位。  
   
  bstrName  
- 在內容屬性名稱。  
+ 內容中的屬性名稱。  
   
  bstrType  
- 屬性類型，為格式化的字串。  
+ 屬性類型，格式為字串。  
   
  bstrValue  
- 屬性值，為格式化的字串。  
+ 屬性值，格式為字串。  
   
  bstrFullName  
  屬性的完整名稱。  
   
  dwAttrib  
- 列舉型別，指定偵錯屬性的屬性的旗標。  
+ 列舉，指定 debug 屬性屬性的旗標。  
   
  pDebugProp  
- `IDebugProperty`所述的資訊，在此所`DebugPropertyInfo`結構。  
+ 此 `DebugPropertyInfo` 結構中的資訊所描述的 `IDebugProperty`。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDebugProperty 介面](../../winscript/reference/idebugproperty-interface.md)   
- [DBGPROP_ATTRIB_FLAGS](../../winscript/reference/dbgprop-attrib-flags.md)   
+ [DBGPROP_ATTRIB_FLAGS](../../winscript/reference/dbgprop-attrib-flags.md)    
  [DBGPROP_INFO_FLAGS](../../winscript/reference/dbgprop-info-flags.md)
