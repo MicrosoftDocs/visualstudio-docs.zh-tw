@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e07e2612e01453115cf4cd6120d92bfd5b0168bd
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.sourcegitcommit: 8a96a65676fd7a2a03b0803d7eceae65f3fa142b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/25/2019
+ms.lasthandoff: 10/18/2019
 ms.locfileid: "70222648"
 ---
 # <a name="navigate-through-code-with-the-visual-studio-debugger"></a>使用 Visual Studio 偵錯工具流覽程式碼
@@ -28,9 +28,9 @@ Visual Studio 偵錯工具可協助您流覽程式碼，以檢查應用程式的
 
 ## <a name="basic-debugging"></a>基本偵錯
 
-若要在附加偵錯工具的情況下啟動應用程式，請按**F5**、選取 [ **Debug**  > ] [**開始調試**]，或選取 [Visual Studio] 工具列中的綠色箭號。
+若要在附加偵錯工具的情況下啟動應用程式，請按**F5**、選取 [ **Debug** ]  >  [**開始調試**]，或選取 [Visual Studio] 工具列中的綠色箭號。
 
- ![DBG&#95;Basics&#95;Start&#95;Debugging](../debugger/media/dbg_basics_start_debugging.png "DBG_Basics_Start_Debugging")
+ ![DBG&#95;基本&#95;概念&#95;開始調試](../debugger/media/dbg_basics_start_debugging.png "DBG_Basics_Start_Debugging")
 
 當您正在進行偵錯工具時，黃色醒目提示會顯示接下來要執行的程式程式碼。
 
@@ -52,7 +52,7 @@ Visual Studio 偵錯工具可協助您流覽程式碼，以檢查應用程式的
 
 ### <a name="BKMK_Step_into__over__or_out_of_the_code"></a>逐行逐步執行程式碼
 
-若要在偵錯工具時于每一行程式碼或語句上停止，請使用**Debug**  >  **Step Into**，或按**F11**鍵。
+若要在偵錯工具時停止每一行程式碼或語句，請使用**Debug**  > **逐步**執行，或按**F11**鍵。
 
 偵錯工具會逐步執行程式碼語句，而不是實體行。 例如 `if` 子句可以寫在一行上：
 
@@ -70,7 +70,7 @@ Visual Studio 偵錯工具可協助您流覽程式碼，以檢查應用程式的
 
 不過，當您逐步執行這一行時，偵錯工具會將條件視為一個步驟，並將結果視為另一個。 在上述範例中，條件為 true。
 
-[ **逐步執行** ] 會在巢狀函式呼叫中逐步執行最深的巢狀函式。 例如，如果您在類似`Func1(Func2())`的呼叫中使用 [**逐步執行**]，偵錯工具就會`Func2`逐步執行函式。
+[ **逐步執行** ] 會在巢狀函式呼叫中逐步執行最深的巢狀函式。 例如，如果您在 `Func1(Func2())` 之類的呼叫中使用 [**逐步**執行]，偵錯工具就會逐步執行 `Func2` 的函式。
 
 >[!TIP]
 >當您執行每一行程式碼時，您可以將滑鼠停留在變數上以查看其值，或使用 [[區域變數](autos-and-locals-windows.md)] 和[[監看](watch-and-quickwatch-windows.md)式] 視窗來監看這些值的變更。 您也可以在逐步執行函式時，以視覺化方式追蹤呼叫堆疊。 請參閱在進行[調試時，呼叫堆疊上的對應方法](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)。
@@ -90,7 +90,7 @@ Visual Studio 偵錯工具可協助您流覽程式碼，以檢查應用程式的
 
 ### <a name="run-to-a-breakpoint-in-code"></a>在程式碼中執行至中斷點
 
-若要在程式碼中設定簡單的中斷點，請按一下您要暫停執行之程式程式碼旁邊的最左邊界。 您也可以選取該行並按**F9**、選取 [**調試** > 程式] [**切換中斷點**]，或按一下滑鼠右鍵並選取 [**中斷點** > ] [**插入中斷點**]。 中斷點會在程式程式碼旁的左邊界中顯示為紅點。 偵錯工具會在執行這行之前暫停執行。
+若要在程式碼中設定簡單的中斷點，請按一下您要暫停執行之程式程式碼旁邊的最左邊界。 您也可以選取該行並按**F9**、選取  **Debug**   > **切換中斷點**，或按一下滑鼠右鍵，然後選取 **中斷點**  > **插入中斷點**。 中斷點會在程式程式碼旁的左邊界中顯示為紅點。 偵錯工具會在執行這行之前暫停執行。
 
 ![設定中斷點](../debugger/media/dbg_basics_setbreakpoint.png "設定中斷點")
 
@@ -102,42 +102,42 @@ Visual Studio 的中斷點提供一組豐富的其他功能，例如條件式中
 
 **依名稱指定函數中斷點**
 
-1. 選取 [ **Debug**  >  **New 中斷點** > **函數中斷點**]
+1. 選取 [ **Debug** ]  > **新中斷點** > **函數中斷點**
 
 1. 在 [**新增**函式中斷點] 對話方塊中，輸入函數的名稱，然後選取其語言。
 
-   [新增函式![中斷點] 對話方塊](../debugger/media/dbg_execution_newbreakpoint.png "新增")函式中斷點
+   ![[新增函式中斷點] 對話方塊](../debugger/media/dbg_execution_newbreakpoint.png "新增函式中斷點")
 
 1. 選取 [確定]。
 
 如果函式已多載或在一個以上的命名空間中，您可以在 [**中斷點**] 視窗中選擇您要的一個。
 
-多載函式![中斷點]多載函式(../debugger/media/dbg_execution_overloadedbreakpoints.png "中斷點")
+![多載函式中斷點](../debugger/media/dbg_execution_overloadedbreakpoints.png "多載函式中斷點")
 
 **從呼叫堆疊選取函數中斷點**
 
-1. 在進行調試時，選取 [**調試** > 程式] [**Windows**  > **呼叫堆疊**] 以開啟 [**呼叫堆疊**] 視窗。
+1. 在偵錯工具中，選取 [ **Debug**  > **Windows**  > **呼叫堆疊**] 來開啟 [**呼叫堆疊**] 視窗。
 
-1. 在 [**呼叫堆疊**] 視窗中，以滑鼠右鍵按一下函數，然後選取 [**執行至游標處**]，或按**Ctrl** + **F10**。
+1. 在 [**呼叫堆疊**] 視窗中，以滑鼠右鍵按一下函數，然後選取 [**執行至游標處**]，或按**Ctrl** +**F10**。
 
 若要以視覺化方式追蹤呼叫堆疊，請參閱在進行[調試時，在呼叫堆疊上對應方法](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)。
 
 ### <a name="run-to-a-cursor-location"></a>執行至游標位置
 
-若要執行至游標位置，請在 [原始程式碼] 或 [**呼叫堆疊**] 視窗中，選取您要中斷的行，按一下滑鼠右鍵並選取 [**執行至游標**處]，或按**Ctrl** + **F10**。 選取 [**執行至游標處**] 就像設定暫時中斷點。
+若要執行至游標位置，請在 [原始程式碼] 或 [**呼叫堆疊**] 視窗中，選取您要中斷的行，按一下滑鼠右鍵，然後選取 [**執行至游標**處]，或按**Ctrl** +**F10**。 選取 [**執行至游標處**] 就像設定暫時中斷點。
 
 ### <a name="run-to-click"></a>執行至點選處
 
 在偵錯工具中暫停時，您**可以將滑鼠**停留在 [原始程式碼] 或 [反組解碼] 視窗中的語句上方，然後選取 [執行**到這裡**綠色箭號] 圖示。 使用 [**執行至] 按一下**就不需要設定暫時中斷點。
 
-![執行至點選處](../debugger/media/dbg-run-to-click.png "執行至點選處")
+![執行以按一下](../debugger/media/dbg-run-to-click.png "執行至點選處")
 
 > [!NOTE]
-> 從開始[!include[vs_dev15](../misc/includes/vs_dev15_md.md)]，可使用 [**執行] 來按一下**[可用]。
+> 從 [!include[vs_dev15](../misc/includes/vs_dev15_md.md)] 開始 **，即可按一下 [執行**]。
 
 ### <a name="manually-break-into-code"></a>手動中斷程式碼
 
-若要在執行中應用程式中的下一行程式碼中中斷，請選取 [**全部** **調試** > 程式中斷]，或按**Ctrl** + **Alt** + **break**。
+若要在執行中應用程式中的下一個可用程式程式碼中中斷，請選取 [ **Debug** ]  >  [**全部中斷**]，或按**Ctrl** +**Alt** +**break**。
 
 ## <a name="BKMK_Set_the_next_statement_to_execute"></a>移動指標以變更執行流程
 
@@ -164,7 +164,7 @@ Visual Studio 的中斷點提供一組豐富的其他功能，例如條件式中
 
 根據預設，偵錯工具會藉由啟用名為*Just My Code*的設定，來嘗試僅進行應用程式程式碼的驗證。 如需有關這項功能適用于不同專案類型和語言的詳細資訊，以及如何進行自訂的詳細資料，請參閱[Just My Code](../debugger/just-my-code.md)。
 
-若要查看在進行偵錯工具時的架構程式碼、協力廠商程式庫程式碼或系統呼叫，您可以停用 Just My Code。 在 **工具** （或  **Debug**） >**選項** >  **調試** 中，清除 **啟用 Just My Code**  核取方塊。 停用 Just My Code 時，非使用者程式碼會出現在偵錯工具視窗中，而偵錯工具可以逐步執行非使用者程式碼。
+若要查看在進行偵錯工具時的架構程式碼、協力廠商程式庫程式碼或系統呼叫，您可以停用 Just My Code。 在 **工具** （或  **Debug** **）中 >** **選項**  >  偵測，清除 **啟用 Just My Code**  核取方塊。 停用 Just My Code 時，非使用者程式碼會出現在偵錯工具視窗中，而偵錯工具可以逐步執行非使用者程式碼。
 
 > [!NOTE]
 > 裝置專案不支援 Just My Code。
@@ -177,14 +177,14 @@ Visual Studio 的中斷點提供一組豐富的其他功能，例如條件式中
 
 **若要載入特定系統元件的符號：**
 
-1. 當您正在進行偵錯工具時，請選取 [ **Debug**  >  **Windows**  > **模組**] 或按**Ctrl** + **Alt** + **U**來開啟 [**模組**] 視窗。
+1. 當您正在進行偵錯工具時，請選取 [ **Debug**  > **Windows**  > **模組**]，或按**Ctrl** +**Alt** +**U**，以開啟 [**模組**] 視窗。
 
 1. 在 [**模組**] 視窗中，您可以分辨哪些模組在 [**符號狀態**] 欄中已載入符號。 以滑鼠右鍵按一下您要載入其符號的模組，然後選取 [**載入符號**]。
 
 ## <a name="BKMK_Step_into_properties_and_operators_in_managed_code"></a> 逐步執行 Managed 程式碼中的屬性及運算子
- 偵錯工具預設為不進入 Managed 程式碼中的屬性及運算子。 在大部分情況下，這會產生比較令人滿意的偵錯經驗。 若要啟用逐步執行屬性或運算子，請選擇 [**調試** > **選項**]。 在 [偵錯] > [一般] 頁面上，清除 [不進入屬性和運算子 (僅限受控)] 核取方塊。
+ 偵錯工具預設為不進入 Managed 程式碼中的屬性及運算子。 在大部分情況下，這會產生比較令人滿意的偵錯經驗。 若要啟用逐步執行屬性或運算子，請選擇 [ **Debug**  > **選項**]。 在 [偵錯] > [一般] 頁面上，清除 [不進入屬性和運算子 (僅限受控)] 核取方塊。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [什麼是偵錯？](../debugger/what-is-debugging.md)
 - [偵錯技術和工具](../debugger/write-better-code-with-visual-studio.md)
 - [第一次查看調試](../debugger/debugger-feature-tour.md)
