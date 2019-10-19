@@ -1,5 +1,5 @@
 ---
-title: 'Ijsdebugdatatarget:: Allocatevirtualmemory 方法 |Microsoft Docs'
+title: IJsDebugDataTarget：： AllocateVirtualMemory 方法 |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -15,15 +15,15 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c04bf21882ec39054c74f060eaa2c6f65ac0b4d6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 30ad8a3eb277823271fbfb4c2e10364b8602775c
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62583063"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577647"
 ---
 # <a name="ijsdebugdatatargetallocatevirtualmemory-method"></a>IJsDebugDataTarget::AllocateVirtualMemory 方法
-保留和 （或) 認可目標處理序虛擬位址空間中的記憶體區域。  
+保留及/或認可目標進程的虛擬位址空間內的記憶體區域。  
   
 ## <a name="syntax"></a>語法  
   
@@ -39,27 +39,27 @@ HRESULT AllocateVirtualMemory(
   
 #### <a name="parameters"></a>參數  
  `address`  
- [in]目標處理序應該認可或保留的記憶體內的位址。 這個值通常是的零，情況下，系統會選擇位址。  
+ 在目標進程內應認可或保留記憶體的位址。 這個值通常是零，在這種情況下，系統會選擇位址。  
   
  `size`  
- [in]要搜尋的配置，以位元組為單位的記憶體區域的大小。 系統將自動捨入為下一個分頁界限。  
+ 在要配置的記憶體區域大小（以位元組為單位）。 系統會自動進位到下一個頁面界限。  
   
  `allocationType`  
- [in]表示要執行配置的類型。 這通常是 MEM_COMMIT &#124; MEM_RESERVE (0x3000) 保留並認可配置，在一個步驟中的。  
+ 在表示要執行的配置類型。 這通常是 MEM_COMMIT &#124; MEM_RESERVE （0x3000），會在一個步驟中保留並認可配置。  
   
  `pageProtection`  
- [in]頁面配置記憶體保護區。 如果要認可頁面，您可以指定任何一個記憶體保護常數 （例如，PAGE_READWRITE、 PAGE_EXECUTE）。  
+ 在要配置之頁面區域的記憶體保護。 如果正在認可頁面，您可以指定任何一個記憶體保護常數（例如，PAGE_READWRITE、PAGE_EXECUTE）。  
   
  `pAllocatedAddress`  
- [out]配置的頁面區域的基底位址。  
+ 脫銷配置的頁面區域基底位址。  
   
 ## <a name="return-value"></a>傳回值  
   
 ## <a name="remarks"></a>備註  
- 除非 mem_reset，否則，函式會初始化為零，它會配置的記憶體。 如需詳細資訊，請參閱 VirtualAlloc Win32 API。  
+ 除非使用 MEM_RESET，否則函式會將它所配置的記憶體初始化為零。 如需詳細資訊，請參閱 VirtualAlloc WIN32 API。  
   
 ## <a name="requirements"></a>需求  
- **標頭：** jscript9diag.h  
+ **標頭：** jscript9diag。h  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IJsDebugDataTarget 介面](../../winscript/reference/ijsdebugdatatarget-interface.md)

@@ -1,5 +1,5 @@
 ---
-title: IActiveScript::GetScriptThreadState | Microsoft Docs
+title: IActiveScript：： GetScriptThreadState |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a0066894830c111a8e0ad18f7acdc09d6114162e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 38f6ef4b0acdf6e3b746316bef8abe9a3f0f8225
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62935601"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72578001"
 ---
 # <a name="iactivescriptgetscriptthreadstate"></a>IActiveScript::GetScriptThreadState
-擷取的指令碼執行緒的目前狀態。  
+抓取腳本執行緒的目前狀態。  
   
 ## <a name="syntax"></a>語法  
   
@@ -38,27 +38,27 @@ HRESULT GetScriptThreadState(
   
 #### <a name="parameters"></a>參數  
  `stidThread`  
- [in]想要的狀態，執行緒的識別項或其中一個下列特殊的執行緒識別碼：  
+ 在需要狀態之執行緒的識別碼，或下列其中一個特殊執行緒識別碼：  
   
 |值|意義|  
 |-----------|-------------|  
-|SCRIPTTHREADID_BASE|基底執行緒中;也就是已經具現化所在的指令碼引擎的執行緒。|  
-|SCRIPTTHREADID_CURRENT|目前正在執行的執行緒。|  
+|SCRIPTTHREADID_BASE|基底線程;也就是在其中具現化腳本引擎的執行緒。|  
+|SCRIPTTHREADID_CURRENT|目前執行的執行緒。|  
   
  `pstsState`  
- [out]接收指定執行緒的狀態變數的位址。 狀態會表示所定義之具名常值的其中一個[SCRIPTTHREADSTATE 列舉](../../winscript/reference/scriptthreadstate-enumeration.md)列舉型別。 如果這個參數不會識別目前的執行緒，可能會隨時變更狀態。  
+ 脫銷接收指定之執行緒狀態的變數位址。 狀態是由[SCRIPTTHREADSTATE 列舉](../../winscript/reference/scriptthreadstate-enumeration.md)列舉所定義的其中一個已命名的常數值所表示。 如果此參數未識別目前的執行緒，則狀態可能會隨時變更。  
   
 ## <a name="return-value"></a>傳回值  
- 會傳回下列值之一：  
+ 傳回下列其中一個值：  
   
 |傳回值|意義|  
 |------------------|-------------|  
 |`S_OK`|成功。|  
-|`E_POINTER`|指定了無效的指標。|  
-|`E_UNEXPECTED`|不需要呼叫 （例如，指令碼引擎有尚未載入或初始化）。|  
+|`E_POINTER`|指定了不正確指標。|  
+|`E_UNEXPECTED`|不需要呼叫（例如，腳本引擎尚未載入或初始化）。|  
   
 ## <a name="remarks"></a>備註  
- 可以從非基底執行緒呼叫這個方法，不會導致主機物件或非基底圖說[IActiveScriptSite](../../winscript/reference/iactivescriptsite.md)介面。  
+ 這個方法可以從非基底線程呼叫，而不會產生非基底的標注來裝載物件或[IActiveScriptSite](../../winscript/reference/iactivescriptsite.md)介面。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IActiveScript](../../winscript/reference/iactivescript.md)

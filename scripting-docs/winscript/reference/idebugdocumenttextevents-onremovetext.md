@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentTextEvents::onRemoveText | Microsoft Docs
+title: IDebugDocumentTextEvents：： onRemoveText |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 506d7c5349cf074ce4a4cbe60e33459a09a91b67
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c302a3b1850db42824f35a306e7e94eaa8a6aa41
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62946709"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576266"
 ---
 # <a name="idebugdocumenttexteventsonremovetext"></a>IDebugDocumentTextEvents::onRemoveText
-表示文字具有從文件中移除。  
+表示已從檔中移除文字。  
   
 ## <a name="syntax"></a>語法  
   
@@ -38,10 +38,10 @@ HRESULT onRemoveText(
   
 #### <a name="parameters"></a>參數  
  `cCharacterPosition`  
- [in]移除第一個字元的字元位置。  
+ 在移除之第一個字元的字元位置。  
   
  `cNumToRemove`  
- [in]移除的字元數。  
+ 在已移除的字元數。  
   
 ## <a name="return-value"></a>傳回值  
  方法會傳回 `HRESULT`。 可能的值包括 (但不限於) 下表中的這些值。  
@@ -51,8 +51,8 @@ HRESULT onRemoveText(
 |`S_OK`|方法成功。|  
   
 ## <a name="remarks"></a>備註  
- 這個方法表示文字具有從文件中移除。  
+ 這個方法表示文字已從檔中移除。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDebugDocumentTextEvents 介面](../../winscript/reference/idebugdocumenttextevents-interface.md)   
  [IDebugDocumentTextEvents::onInsertText](../../winscript/reference/idebugdocumenttextevents-oninserttext.md)

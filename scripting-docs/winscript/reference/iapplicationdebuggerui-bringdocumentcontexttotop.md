@@ -1,5 +1,5 @@
 ---
-title: IApplicationDebuggerUI::BringDocumentContextToTop | Microsoft Docs
+title: IApplicationDebuggerUI：： BringDocumentCoNtextToTop |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 596f9357a8553bf6c39140a6948d8ae3085c3210
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8648a4377e901908df20cdb5f413ee73ede5c1a6
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62991112"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577816"
 ---
 # <a name="iapplicationdebuggeruibringdocumentcontexttotop"></a>IApplicationDebuggerUI::BringDocumentContextToTop
-會包含偵錯工具使用者介面中的第一個指定的文件內容的視窗，以及捲動視窗至內容。  
+將包含給定檔內容的視窗帶入偵錯工具使用者介面中的頂端，並將視窗滾動至內容。  
   
 ## <a name="syntax"></a>語法  
   
@@ -37,7 +37,7 @@ HRESULT BringDocumentContextToTop(
   
 #### <a name="parameters"></a>參數  
  `pddc`  
- [in]在偵錯工具使用者介面中將顯示在上面的文件內容。  
+ 在要在偵錯工具使用者介面中帶入頂端的檔內容。  
   
 ## <a name="return-value"></a>傳回值  
  方法會傳回 `HRESULT`。 可能的值包括 (但不限於) 下表中的這些值。  
@@ -45,10 +45,10 @@ HRESULT BringDocumentContextToTop(
 |值|描述|  
 |-----------|-----------------|  
 |`S_OK`|方法成功。|  
-|`E_INVALIDARG`|所指定的內容`pddc`未知。|  
+|`E_INVALIDARG`|@No__t_0 所指定的內容是未知的。|  
   
 ## <a name="remarks"></a>備註  
- 這個方法會包含偵錯工具使用者介面中的第一個指定的文件內容的視窗，並捲動視窗至內容。  
+ 這個方法會將包含給定檔內容的視窗帶入偵錯工具使用者介面中的頂端，並將視窗滾動至內容。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IApplicationDebuggerUI 介面](../../winscript/reference/iapplicationdebuggerui-interface.md)

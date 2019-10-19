@@ -1,5 +1,5 @@
 ---
-title: IApplicationDebugger::onDebuggerEvent |Microsoft Docs
+title: IApplicationDebugger：： onDebuggerEvent |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b78bb3345463dfd682534dc60a216f3e0e8fdf2a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0f8edb2a3c39d639b5b6722707d7b6c0b57a5c19
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62991368"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577858"
 ---
 # <a name="iapplicationdebuggerondebuggerevent"></a>IApplicationDebugger::onDebuggerEvent
-處理自訂的應用程式事件。  
+處理自訂應用程式事件。  
   
 ## <a name="syntax"></a>語法  
   
@@ -38,10 +38,10 @@ HRESULT onDebuggerEvent(
   
 #### <a name="parameters"></a>參數  
  `riid`  
- [in]物件的介面識別碼。  
+ 在物件的介面識別碼。  
   
  `punk`  
- [in]事件物件，它會實作所定義的介面`riid`。  
+ 在事件物件，它會執行 `riid` 所定義的介面。  
   
 ## <a name="return-value"></a>傳回值  
  方法會傳回 `HRESULT`。 可能的值包括 (但不限於) 下表中的這些值。  
@@ -49,15 +49,15 @@ HRESULT onDebuggerEvent(
 |值|描述|  
 |-----------|-----------------|  
 |`S_OK`|方法成功。|  
-|`E_NOTIMPL`|目前尚未實作方法。|  
+|`E_NOTIMPL`|目前未執行方法。|  
   
 ## <a name="remarks"></a>備註  
- 語意`IUnknown`完全是 application/偵錯工具所定義。  
+ @No__t_0 的語義會定義完整的應用程式/偵錯工具。  
   
- 這個方法可讓針對自訂延伸模組的偵錯工具模型中;它是目前尚未實作。  
+ 這個方法允許偵錯工具模型的自訂擴充功能;目前未執行。  
   
- 這個方法時，會呼叫`IDebugApplication::FireDebuggerEvent`呼叫。  
+ 呼叫 `IDebugApplication::FireDebuggerEvent` 時，會呼叫這個方法。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IApplicationDebugger 介面](../../winscript/reference/iapplicationdebugger-interface.md)   
  [IDebugApplication::FireDebuggerEvent](../../winscript/reference/idebugapplication-firedebuggerevent.md)

@@ -1,5 +1,5 @@
 ---
-title: 必須是識別項、 字串或數字 |Microsoft Docs
+title: 必須是識別碼、字串或數位 |Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
@@ -14,15 +14,15 @@ ms.assetid: f6bb8398-4fd6-4312-b4be-9617a2834cc4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a3bd991a1d8beb355456e3b8cf7f864975b499cd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: adc34a0605561852885087151796cceb20aead5b
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62934882"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577585"
 ---
 # <a name="expected-identifier-string-or-number"></a>必須是識別項、字串或數字
-您用來宣告物件常值的常值語法不正確。 物件常值的屬性必須是識別項、 字串或數字。 物件常值 （也稱為 「 物件初始設定 」） 是由逗號分隔的清單括號括住所有被封入的屬性： 值配對所組成。 例如：  
+您使用了不正確的常值語法來宣告物件常值。 物件常值的屬性必須是識別碼、字串或數位。 物件常值（也稱為「物件初始化運算式」）包含以逗號分隔的屬性：值配對清單，全都以方括弧括住。 例如:  
   
 ```JavaScript  
 var point = {x:1.2, y:-3.4};  
@@ -30,7 +30,7 @@ var point = {x:1.2, y:-3.4};
   
 ### <a name="to-correct-this-error"></a>更正這個錯誤  
   
-- 請確定使用適當的常值語法。  
+- 請確定您使用正確的常值語法。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [逗號運算子 (,)](../../javascript/reference/comma-operator-decrement-javascript.md)

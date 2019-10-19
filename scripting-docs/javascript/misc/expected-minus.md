@@ -14,20 +14,20 @@ ms.assetid: a31d161a-4a51-43a9-9d65-d8b765ce3c19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e897133b39110f65dfadc091f77855cfef1f6f6b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 42283773fc68c08ec3734937d2895c9613a6893f
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62934895"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577559"
 ---
 # <a name="expected--"></a>必須是 '-'
-您嘗試建立的規則運算式常值，但不是包含斜線 （/） 的其中一個。 就像字串常值會寫入為一對引號內的字元，規則運算式常值會表示為斜線 （/） 字元的一組內的字元。  
+您嘗試建立正則運算式常值，但未包含其中一個斜線（/）。 就像字串常值是以字元的形式寫入一組引號內，正則運算式常值會以一對斜線（/）字元內的字元來表示。  
   
 ### <a name="to-correct-this-error"></a>更正這個錯誤  
   
-- 插入標記的規則運算式的結尾終止正斜線。  
+- 插入終止的正斜線，以標示正則運算式的結尾。  
   
-## <a name="see-also"></a>另請參閱  
- [規則運算式物件](../../javascript/reference/regular-expression-object-javascript.md)   
- [規則運算式語法 (JavaScript)](https://msdn.microsoft.com/library/1400241x)
+## <a name="see-also"></a>請參閱  
+ [正則運算式物件](../../javascript/reference/regular-expression-object-javascript.md)   
+ [正則運算式語法（JavaScript）](https://msdn.microsoft.com/library/1400241x)

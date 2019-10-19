@@ -11,15 +11,15 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 20d755250960ad2f5b22cc7b645ad24b91c4875f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 46a09c4bbf5ce97441f9e60c8832854356ad48d4
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62583642"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577753"
 ---
 # <a name="ijsdebug-interface"></a>IJsDebug 介面
-JavaScript 偵錯的進入點。  
+JavaScript 偵錯工具的進入點。  
   
 ## <a name="syntax"></a>語法  
   
@@ -27,16 +27,16 @@ JavaScript 偵錯的進入點。
 IJsDebug : public IUnknown;  
 ```  
   
-## <a name="members"></a>成員  
+## <a name="members"></a>Members  
   
 ### <a name="public-methods"></a>公用方法  
   
-|名稱|描述|  
+|[屬性]|描述|  
 |----------|-----------------|  
-|[IJsDebug::OpenVirtualProcess 方法](../../winscript/reference/ijsdebug-openvirtualprocess-method.md)|用來建立新的虛擬程序物件的 factory 方法。|  
+|[IJsDebug::OpenVirtualProcess 方法](../../winscript/reference/ijsdebug-openvirtualprocess-method.md)|用來建立新虛擬進程物件的 Factory 方法。|  
   
 ## <a name="requirements"></a>需求  
- **標頭：** jscript9diag.h  
+ **標頭：** jscript9diag。h  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Windows 指令碼介面參考](../../winscript/reference/windows-script-interfaces-reference.md)
