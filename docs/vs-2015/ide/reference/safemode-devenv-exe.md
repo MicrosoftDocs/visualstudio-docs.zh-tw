@@ -10,38 +10,38 @@ helpviewer_keywords:
 - SafeMode switch
 ms.assetid: b191f6a5-8f12-47ec-bcc7-b68149a22aa8
 caps.latest.revision: 9
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 94e8e87f4440644f76906a70ea09a46282b109c2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 28480399238c1c915056d3929f8fd188cfff7eca
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68163371"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72665502"
 ---
 # <a name="safemode-devenvexe"></a>/SafeMode (devenv.exe)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-以安全模式啟動 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]，並且只載入預設環境和服務。  
-  
-## <a name="syntax"></a>語法  
-  
-```  
-devenv /SafeMode   
-```  
-  
-## <a name="remarks"></a>備註  
- 此參數會在啟動 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 時防止載入所有協力廠商 VSPackages，因而確保穩定執行。  
-  
-## <a name="description"></a>說明  
- 下列範例會以安全模式啟動 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]。  
-  
-## <a name="code"></a>程式碼  
-  
-```  
-Devenv.exe /SafeMode  
-```  
-  
-## <a name="see-also"></a>另請參閱  
+以安全模式啟動 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]，並且只載入預設環境和服務。
+
+## <a name="syntax"></a>語法
+
+```
+devenv /SafeMode
+```
+
+## <a name="remarks"></a>備註
+ 此參數會在啟動 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 時防止載入所有協力廠商 VSPackages，因而確保穩定執行。
+
+## <a name="description"></a>說明
+ 下列範例會以安全模式啟動 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]。
+
+## <a name="code"></a>程式碼
+
+```
+Devenv.exe /SafeMode
+```
+
+## <a name="see-also"></a>另請參閱
  [Devenv 命令列參數](../../ide/reference/devenv-command-line-switches.md)

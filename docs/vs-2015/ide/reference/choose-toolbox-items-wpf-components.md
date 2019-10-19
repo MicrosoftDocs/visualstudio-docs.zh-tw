@@ -11,15 +11,15 @@ helpviewer_keywords:
 - Choose Toolbox Items dialog box, WPF Components tab
 ms.assetid: 6ce1d178-88c0-4295-8915-59fdeedabb11
 caps.latest.revision: 17
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 3f17ac56038c5f6c1d4de026546410ece438e375
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 5c7967635d8e5d64907587fcd1a9b4d84a31d569
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68869923"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72660921"
 ---
 # <a name="choose-toolbox-items-wpf-components"></a>選擇工具箱項目，WPF 元件
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -40,20 +40,20 @@ ms.locfileid: "68869923"
 
   名稱列出電腦登錄中有專案的 WPF 控制項的名稱。
 
-  命名空間: 顯示定義元件結構之「 [.NET Framework 類別庫](https://msdn.microsoft.com/6c4f3a62-6a0f-41f2-9d52-ee0b13686f29)」命名空間的階層。 依此欄排序即可列出安裝在您電腦上之每個 .NET Framework 命名空間內的可用元件清單。
+  命名空間：顯示定義元件結構之「 [.NET Framework 類別庫](https://msdn.microsoft.com/6c4f3a62-6a0f-41f2-9d52-ee0b13686f29)」命名空間的階層。 依此欄排序即可列出安裝在您電腦上之每個 .NET Framework 命名空間內的可用元件清單。
 
-  元件名稱顯示 .NET Framework 元件的名稱, 其中包含每個元件的命名空間。 依此欄排序即可列出安裝在您電腦上之每個 .NET Framework 組件中所包含的命名空間清單。
+  元件名稱顯示 .NET Framework 元件的名稱，其中包含每個元件的命名空間。 依此欄排序即可列出安裝在您電腦上之每個 .NET Framework 組件中所包含的命名空間清單。
 
   目錄顯示 .NET Framework 元件的位置。 所有組件的預設位置為 [全域組件快取]。 如需全域組件快取的進一步資訊，請參閱[使用組件和全域組件快取](https://msdn.microsoft.com/library/8a18e5c2-d41d-49ef-abcb-7c27e2469433)。
 
 ## <a name="uielement-list"></a>UIElement 清單
- **篩選**根據您在文字方塊中提供的字串, 篩選 WPF 控制項的清單。 這會顯示四個欄位中的所有相符項。
+ **篩選**根據您在文字方塊中提供的字串，篩選 WPF 控制項的清單。 這會顯示四個欄位中的所有相符項。
 
  **清除**清除篩選字串。
 
- **流覽**開啟 [**開啟**] 對話方塊, 可讓您流覽至包含 WPF 控制項的元件。 請使用此選項載入不在全域組件快取中的組件。
+ **流覽**開啟 [**開啟**] 對話方塊，可讓您流覽至包含 WPF 控制項的元件。 請使用此選項載入不在全域組件快取中的組件。
 
- **語言**顯示元件的當地語系化語言, 其中包含選取的 WPF 控制項。
+ **語言**顯示元件的當地語系化語言，其中包含選取的 WPF 控制項。
 
 ## <a name="limitations"></a>限制
  將自訂控制項或 <xref:System.Windows.Controls.UserControl> 新增至工具箱的限制如下。
@@ -62,7 +62,7 @@ ms.locfileid: "68869923"
 
 - 當您將方案組態從「偵錯」變更為「發行」或從「發行」變更為「偵錯」時，不會正確更新。 這是因為參考不是專案參考，而是針對磁碟上之組件的參考。 如果控制項是目前方案的一部分，當您從「偵錯」變更為「發行」時，專案會繼續參考「偵錯」版本的控制項。
 
-  此外, 如果設計階段中繼資料套用至自訂控制項, 而且此中繼資料指定[ToolboxBrowsableAttribute](/previous-versions/visualstudio/visual-studio-2010/bb547991(v=vs.100))設定為`false`, 則控制項不會出現在 [工具箱] 中。
+  此外，如果設計階段中繼資料套用至自訂控制項，而且此中繼資料指定[ToolboxBrowsableAttribute](/previous-versions/visualstudio/visual-studio-2010/bb547991(v=vs.100))設定為 `false`，則控制項不會出現在 [工具箱] 中。
 
   您可以藉由對應控制項的命名空間和組件，直接在 XAML 檢視中參考控制項。 如需詳細資訊，請參閱[如何：將命名空間匯入 XAML](https://msdn.microsoft.com/6cda7c7a-369c-47dd-9c2d-13a35dcf737c)。
 
