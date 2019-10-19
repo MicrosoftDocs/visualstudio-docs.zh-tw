@@ -1,5 +1,5 @@
 ---
-title: IProcessDebugManager::GetDefaultApplication | Microsoft Docs
+title: IProcessDebugManager：： GetDefaultApplication |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6fec84a60863b426f2f65c26e2375262b109d635
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b3532177c32e0d7eb0b7a67a445845cee753d316
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62953968"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576803"
 ---
 # <a name="iprocessdebugmanagergetdefaultapplication"></a>IProcessDebugManager::GetDefaultApplication
-傳回目前的處理序的預設應用程式物件。  
+傳回目前進程的預設應用程式物件。  
   
 ## <a name="syntax"></a>語法  
   
@@ -37,7 +37,7 @@ HRESULT GetDefaultApplication(
   
 #### <a name="parameters"></a>參數  
  `ppda`  
- [out]此應用程式偵錯應用程式物件。  
+ 脫銷這個應用程式的 debug 應用程式物件。  
   
 ## <a name="return-value"></a>傳回值  
  方法會傳回 `HRESULT`。 可能的值包括 (但不限於) 下表中的這些值。  
@@ -47,9 +47,9 @@ HRESULT GetDefaultApplication(
 |`S_OK`|方法成功。|  
   
 ## <a name="remarks"></a>備註  
- 這個方法會建立新的偵錯應用程式物件，並將它新增至執行應用程式清單中，如有必要。  
+ 這個方法會建立新的 debug 應用程式物件，並視需要將它新增至執行中的應用程式清單。  
   
- 語言引擎應該使用指定的應用程式`GetDefaultApplication`如果它們不會提供應用程式的主機上執行的方法。  
+ 如果語言引擎在不提供應用程式的主機上執行，則應該使用 `GetDefaultApplication` 方法所指定的應用程式。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IProcessDebugManager 介面](../../winscript/reference/iprocessdebugmanager-interface.md)

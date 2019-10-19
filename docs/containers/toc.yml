@@ -28,7 +28,7 @@
           href: deploy-app-service.md
         - name: 發佈至 Docker Hub
           href: deploy-docker-hub.md
-        - name: 檢視及診斷容器
+        - name: 檢視及診斷容器與映像
           href: view-and-diagnose-containers.md
         - name: 設定容器工具
           href: container-tools-configure.md

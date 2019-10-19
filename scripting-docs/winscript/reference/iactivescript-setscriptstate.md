@@ -1,5 +1,5 @@
 ---
-title: IActiveScript::SetScriptState | Microsoft Docs
+title: IActiveScript：： SetScriptState |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 16a13b545ddd482f8aa143d289d46447370e23ac
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ea947e00ffd5a3498261f4a3a8acd4791e8ace60
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62935527"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577995"
 ---
 # <a name="iactivescriptsetscriptstate"></a>IActiveScript::SetScriptState
-指令碼引擎放在指定的狀態。 可以從非基底執行緒呼叫這個方法，不會導致主機物件或非基底圖說[IActiveScriptSite](../../winscript/reference/iactivescriptsite.md)介面。  
+將腳本引擎放入指定的狀態。 這個方法可以從非基底線程呼叫，而不會產生非基底的標注來裝載物件或[IActiveScriptSite](../../winscript/reference/iactivescriptsite.md)介面。  
   
 ## <a name="syntax"></a>語法  
   
@@ -37,25 +37,25 @@ HRESULT SetScriptState(
   
 #### <a name="parameters"></a>參數  
  `ss`  
- [in]將指令碼引擎設定為指定的狀態。 可以是其中一個值中定義[SCRIPTSTATE 列舉](../../winscript/reference/scriptstate-enumeration.md)列舉型別。  
+ 在將腳本引擎設定為指定的狀態。 可以是[SCRIPTSTATE 列舉](../../winscript/reference/scriptstate-enumeration.md)列舉中所定義的其中一個值。  
   
 ## <a name="return-value"></a>傳回值  
- 會傳回下列值之一：  
+ 傳回下列其中一個值：  
   
 |傳回值|意義|  
 |------------------|-------------|  
 |`S_OK`|成功。|  
-|`E_FAIL`|指令碼引擎不支援為初始化的狀態轉換。 主機必須捨棄此指令碼引擎並建立、 初始化及載入新的指令碼引擎，來達到相同的效果。|  
-|`E_UNEXPECTED`|不需要呼叫 （例如，指令碼引擎有尚未載入或初始化），因此失敗。|  
-|`OLESCRIPT_S_PENDING`|方法已排入佇列成功，但是狀態未變更。 當狀態變更站台會傳回透過呼叫[IActiveScriptSite::OnStateChange](../../winscript/reference/iactivescriptsite-onstatechange.md)方法。|  
-|`S_FALSE`|此方法成功，但指令碼已存在於指定的狀態。|  
+|`E_FAIL`|腳本引擎不支援轉換回已初始化的狀態。 主機必須捨棄此腳本引擎，並建立、初始化和載入新的腳本引擎，以達到相同的效果。|  
+|`E_UNEXPECTED`|不需要呼叫（例如，腳本引擎尚未載入或初始化），因此失敗。|  
+|`OLESCRIPT_S_PENDING`|已成功將方法排入佇列，但狀態尚未變更。 當狀態變更時，會透過[IActiveScriptSite：： OnStateChange](../../winscript/reference/iactivescriptsite-onstatechange.md)方法來回呼網站。|  
+|`S_FALSE`|方法成功，但腳本已處於指定的狀態。|  
   
 ## <a name="remarks"></a>備註  
- 如需指令碼引擎狀態的詳細資訊，請參閱指令碼引擎狀態一節[Windows 指令碼引擎](../../winscript/windows-script-engines.md)。  
+ 如需腳本引擎狀態的詳細資訊，請參閱[Windows 腳本引擎](../../winscript/windows-script-engines.md)的腳本引擎狀態一節。  
   
-## <a name="see-also"></a>另請參閱  
- [IActiveScript::Clone](../../winscript/reference/iactivescript-clone.md)   
- [IActiveScript::GetScriptDispatch](../../winscript/reference/iactivescript-getscriptdispatch.md)   
- [IActiveScript::InterruptScriptThread](../../winscript/reference/iactivescript-interruptscriptthread.md)   
- [IActiveScriptParse::ParseScriptText](../../winscript/reference/iactivescriptparse-parsescripttext.md)   
+## <a name="see-also"></a>請參閱  
+ [IActiveScript：： Clone](../../winscript/reference/iactivescript-clone.md)    
+ [IActiveScript：： GetScriptDispatch](../../winscript/reference/iactivescript-getscriptdispatch.md)    
+ [IActiveScript：： InterruptScriptThread](../../winscript/reference/iactivescript-interruptscriptthread.md)    
+ [IActiveScriptParse：:P arsescripttext](../../winscript/reference/iactivescriptparse-parsescripttext.md)    
  [IActiveScriptSite::GetItemInfo](../../winscript/reference/iactivescriptsite-getiteminfo.md)

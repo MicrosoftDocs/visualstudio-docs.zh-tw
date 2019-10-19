@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptAuthor::AddScriptlet | Microsoft Docs
+title: IActiveScriptAuthor：： AddScriptlet |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 64df7bd4c0d0dde303cdc15d7111688d14c7dc49
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3a349a848f282e6b3a228c7b17009e0261801be5
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62935454"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577978"
 ---
 # <a name="iactivescriptauthoraddscriptlet"></a>IActiveScriptAuthor::AddScriptlet
-將程式碼的程式碼片段加入做為子系的根層級`IScriptNode`物件。 在主機中，程式碼片段的完整的名稱被允許將只有兩個層級。  
+加入程式碼程式碼片段做為根層級 `IScriptNode` 物件的子系。 在主機中，程式碼片段的完整名稱只允許有兩個層級。  
   
 ## <a name="syntax"></a>語法  
   
@@ -44,28 +44,28 @@ HRESULT AddScriptlet(
   
 #### <a name="parameters"></a>參數  
  `pszDefaultName`  
- [in]與 scriptlet 相關聯的預設名稱的位址。  
+ 在要與程式碼片段建立關聯的預設名稱位址。  
   
  `pszCode`  
- [in]Scriptlet 文字的位址。  
+ 在程式碼片段文字的位址。  
   
  `pszItemName`  
- [in]最上層的識別項的主應用程式中的完整程式碼片段名稱的緩衝區位址。  
+ 在主機中完整程式碼片段名稱的最上層識別碼的緩衝區位址。  
   
  `pszSubItemName`  
- [in]第二個層級識別項的主應用程式中的完整程式碼片段名稱的緩衝區位址。 如果名稱有只有一個層級，請設為 NULL。  
+ 在主機中完整程式碼片段名稱的第二層識別碼的緩衝區位址。 如果名稱只有一個層級，則設定為 Null。  
   
  `pszEventName`  
- [in]包含程式碼片段的事件處理常式的事件名稱的緩衝區位址。  
+ 在緩衝區的位址，其中包含程式碼片段為事件處理常式的事件名稱。  
   
  `pszDelimiter`  
- [in]End 的指令碼區塊分隔符號的位址。 當`pszCode`剖析文字資料流，從主應用程式通常會使用分隔符號 （例如兩個單引號），來偵測指令碼區塊的結尾。 如果分隔符號不會標記指令碼區塊的結尾，請設定此參數為 NULL。  
+ 在結束腳本區塊分隔符號的位址。 從文字的資料流程剖析 `pszCode` 時，主機通常會使用分隔符號（例如兩個單引號）來偵測腳本區塊的結尾。 如果分隔符號不會標示腳本區塊的結尾，請將此參數設定為 Null。  
   
  `dwCookie`  
- [in]應用程式定義值，用來與主機物件產生關聯的程式碼片段。  
+ 在應用程式定義的值，用來將程式碼片段與主機物件產生關聯。  
   
  `dwFlags`  
- [in]不使用。  
+ 在未使用。  
   
 ## <a name="return-value"></a>傳回值  
  `HRESULT`。 可能的值包括 (但不限於) 下表中的這些值。  
@@ -76,5 +76,5 @@ HRESULT AddScriptlet(
   
 ## <a name="remarks"></a>備註  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IActiveScriptAuthor 介面](../../winscript/reference/iactivescriptauthor-interface.md)

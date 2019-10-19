@@ -1,5 +1,5 @@
 ---
-title: IDebugExtendedProperty::GetExtendedPropertyInfo | Microsoft Docs
+title: IDebugExtendedProperty：： GetExtendedPropertyInfo |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 89067720b6643c8c187e6340fb529989f2439933
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 77167c46e02bcf2bf5d3ce5836ad5de103176e93
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62946098"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576381"
 ---
 # <a name="idebugextendedpropertygetextendedpropertyinfo"></a>IDebugExtendedProperty::GetExtendedPropertyInfo
-擷取擴充屬性，也就是比簡單的詳細資訊的延伸的資訊`IDebugProperty`。  
+提取擴充屬性的擴充資訊，這是比更簡單的 `IDebugProperty` 更多的資訊。  
   
 ## <a name="syntax"></a>語法  
   
@@ -39,18 +39,18 @@ HRESULT GetExtendedPropertyInfo(
   
 #### <a name="parameters"></a>參數  
  `dwFieldSpec`  
- [in]指定決定填寫欄位 EX_DBGPROP_INFO_FLAGS 常數`ExtendedDebugPropertyInfo`結構。  
+ 在指定 EX_DBGPROP_INFO_FLAGS 常數，以決定要在 `ExtendedDebugPropertyInfo` 結構中填寫的欄位。  
   
  `nRadix`  
- [in]用於解譯任何數字資訊的基數。  
+ 在用來解讀任何數值資訊的基數。  
   
  `pExtendedPropertyInfo`  
- [out]傳回`ExtendedDebugPropertyInfo`結構描述屬性。  
+ 脫銷傳回描述屬性的 `ExtendedDebugPropertyInfo` 結構。  
   
 ## <a name="return-value"></a>傳回值  
- 會傳回有效`HRESULT`，通常是`S_OK`。  
+ 傳回有效的 `HRESULT`，通常是 `S_OK`。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDebugExtendedProperty 介面](../../winscript/reference/idebugextendedproperty-interface.md)   
- [EX_DBGPROP_INFO_FLAGS](../../winscript/reference/ex-dbgprop-info-flags.md)   
+ [EX_DBGPROP_INFO_FLAGS](../../winscript/reference/ex-dbgprop-info-flags.md)    
  [ExtendedDebugPropertyInfo 結構](../../winscript/reference/extendeddebugpropertyinfo-structure.md)

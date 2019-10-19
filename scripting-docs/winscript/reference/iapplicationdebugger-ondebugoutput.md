@@ -1,5 +1,5 @@
 ---
-title: IApplicationDebugger::onDebugOutput |Microsoft Docs
+title: IApplicationDebugger：： onDebugOutput |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ffe4d56357a96dac8d5155ac2f8bd5182adef47e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5ebbb7fb9f69af2f0977434a29015d79e8cf9178
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62991083"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577852"
 ---
 # <a name="iapplicationdebuggerondebugoutput"></a>IApplicationDebugger::onDebugOutput
-處理偵錯輸出事件。  
+處理 debug 輸出事件。  
   
 ## <a name="syntax"></a>語法  
   
@@ -37,7 +37,7 @@ HRESULT onDebugOutput(
   
 #### <a name="parameters"></a>參數  
  `pstr`  
- [in]偵錯工具中顯示的字串。  
+ 在要在偵錯工具中顯示的字串。  
   
 ## <a name="return-value"></a>傳回值  
  方法會傳回 `HRESULT`。 可能的值包括 (但不限於) 下表中的這些值。  
@@ -47,10 +47,10 @@ HRESULT onDebugOutput(
 |`S_OK`|方法成功。|  
   
 ## <a name="remarks"></a>備註  
- 偵錯工具通常會顯示`pstr`輸出 視窗中。  
+ 偵錯工具通常會在 [輸出] 視窗中顯示 `pstr`。  
   
- 這個方法時，會呼叫`IDebugApplication::DebugOutput`呼叫。  
+ 呼叫 `IDebugApplication::DebugOutput` 時，會呼叫這個方法。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IApplicationDebugger 介面](../../winscript/reference/iapplicationdebugger-interface.md)   
  [IDebugApplication::DebugOutput](../../winscript/reference/idebugapplication-debugoutput.md)

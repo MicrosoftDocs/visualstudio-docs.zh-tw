@@ -1,5 +1,5 @@
 ---
-title: IDebugSyncOperation::InProgressAbort | Microsoft Docs
+title: IDebugSyncOperation：： InProgressAbort |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a794ea70d6d2fe937afb311e6961d53f22bd7ac2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 40974c738c071e52648297ac90a0ab89d9681435
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63004841"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576673"
 ---
 # <a name="idebugsyncoperationinprogressabort"></a>IDebugSyncOperation::InProgressAbort
-取消進行中的作業，另一個執行緒上。  
+取消在另一個執行緒上進行的作業。  
   
 ## <a name="syntax"></a>語法  
   
@@ -34,7 +34,7 @@ HRESULT InProgressAbort();
 ```  
   
 #### <a name="parameters"></a>參數  
- 這個方法會接受任何參數。  
+ 這個方法不接受任何參數。  
   
 ## <a name="return-value"></a>傳回值  
  方法會傳回 `HRESULT`。 可能的值包括 (但不限於) 下表中的這些值。  
@@ -46,9 +46,9 @@ HRESULT InProgressAbort();
 |`E_ABORT`|無法完成作業。|  
   
 ## <a name="remarks"></a>備註  
- 程序進行偵錯管理員呼叫此方法中取消的作業正在進行另一個執行緒中的偵錯工具執行緒。  
+ 進程 Debug Manager 會從偵錯工具執行緒中呼叫這個方法，以取消正在另一個執行緒中進行的作業。  
   
- 如果`InProgressAbort`方法無法完成作業，它會傳回`E_ABORT`儘速。 這個方法可以傳回`E_NOTIMPL`如果無法取消作業。  
+ 如果 `InProgressAbort` 方法無法完成作業，它會儘快傳回 `E_ABORT`。 如果無法取消作業，這個方法就會傳回 `E_NOTIMPL`。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDebugSyncOperation 介面](../../winscript/reference/idebugsyncoperation-interface.md)

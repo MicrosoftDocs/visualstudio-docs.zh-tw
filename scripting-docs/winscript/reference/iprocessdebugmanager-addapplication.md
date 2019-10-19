@@ -1,5 +1,5 @@
 ---
-title: IProcessDebugManager::AddApplication | Microsoft Docs
+title: IProcessDebugManager：： AddApplication |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 206baa92ae8d2803b2b07f4966565755a1785d61
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 47ad8132b9b51efa5f5c2f260e48441e5da64c42
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62944971"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576805"
 ---
 # <a name="iprocessdebugmanageraddapplication"></a>IProcessDebugManager::AddApplication
-新增機器偵錯管理員的清單執行應用程式的應用程式。  
+將應用程式新增至電腦 debug manager 的執行中應用程式清單。  
   
 ## <a name="syntax"></a>語法  
   
@@ -38,10 +38,10 @@ HRESULT AddApplication(
   
 #### <a name="parameters"></a>參數  
  `pda`  
- [in]偵錯應用程式新增至執行中應用程式清單。  
+ 在要新增至執行中應用程式清單的 debug 應用程式。  
   
  `pdwAppCookie`  
- [out]用來移除機器偵錯管理員的應用程式的 cookie。  
+ 脫銷用來從機器 debug manager 移除應用程式的 cookie。  
   
 ## <a name="return-value"></a>傳回值  
  方法會傳回 `HRESULT`。 可能的值包括 (但不限於) 下表中的這些值。  
@@ -51,8 +51,8 @@ HRESULT AddApplication(
 |`S_OK`|方法成功。|  
   
 ## <a name="remarks"></a>備註  
- 此方法會將應用程式執行中機器偵錯管理員的應用程式清單。  
+ 這個方法會將應用程式新增至機器偵錯工具中的執行中應用程式清單。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IProcessDebugManager 介面](../../winscript/reference/iprocessdebugmanager-interface.md)   
  [IProcessDebugManager::RemoveApplication](../../winscript/reference/iprocessdebugmanager-removeapplication.md)

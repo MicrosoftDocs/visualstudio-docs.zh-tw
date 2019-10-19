@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 460eb832b94a1826d2d8f990b76a2afe90f992c8
-ms.sourcegitcommit: 98b02f87c7aa1f5eb7f0d1c86bfa36efa8580c57
-ms.translationtype: HT
+ms.openlocfilehash: bb6f0600d8bdfe8c736305ffd31788edb9d817a6
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72314093"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576285"
 ---
 # <a name="step-2-create-a-random-addition-problem"></a>步驟 2：建立隨機加法問題
 
@@ -73,7 +73,7 @@ ms.locfileid: "72314093"
      您在物件後面輸入一個點時，IntelliSense 會顯示物件的成員清單，例如屬性、方法和事件。
 
     > [!NOTE]
-    > 當您使用 `Next()` 方法搭配 `Random` 物件時 (例如，當您呼叫 `randomizer.Next(50)` 時)，會得到小於 50 (從 0 到 49) 的隨機數字。 在這個範例中，您呼叫了 `randomizer.Next(51)`。 您使用 51 而不是 50，如此這兩個數字就會相加並得出從 0 到 100 的答案。 如果您將 50 傳給 `Next()` 方法，它會選擇 0 至 49 的數字，所以可能的最大答案是 98，而不是 100。 當方法中的前兩個陳述式執行之後，**addend1** 和 **addend2** 這兩個整數變數會各自保存一個從 0 至 50 的隨機數字。 這個螢幕擷取畫面會顯示 Visual C# 程式碼，不過，IntelliSense 對於 Visual Basic 運作的方式一樣。
+    > 當您使用 `Next()` 方法搭配 `Random` 物件時 (例如，當您呼叫 `randomizer.Next(50)` 時)，會得到小於 50 (從 0 到 49) 的隨機數字。 在這個範例中，您呼叫了 `randomizer.Next(51)`。 您使用 51 而不是 50，如此這兩個數字就會相加並得出從 0 到 100 的答案。 如果您將 50 傳給 `Next()` 方法，它會選擇 0 至 49 的數字，所以可能的最大答案是 98，而不是 100。 當方法中的前兩個陳述式執行之後，**addend1** 和 **addend2** 這兩個整數變數會各自保存一個從 0 至 50 的隨機數字。 這個螢幕擷取畫面C#顯示程式碼，但 IntelliSense 的運作方式與 Visual Basic 相同。
 
      仔細查看這些陳述式。
 

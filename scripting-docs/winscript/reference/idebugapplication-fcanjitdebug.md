@@ -1,5 +1,5 @@
 ---
-title: IDebugApplication::FCanJitDebug | Microsoft Docs
+title: IDebugApplication：： FCanJitDebug |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2d5dc03d7d2511f5b50969c062104759e78fcf03
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d68240ffd86935e9936642c09d5131f70b46e9ab
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62990937"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576869"
 ---
 # <a name="idebugapplicationfcanjitdebug"></a>IDebugApplication::FCanJitDebug
-判斷是否已登錄在 just-in-time (JIT) 偵錯工具。  
+判斷是否已註冊即時（JIT）偵錯工具。  
   
 ## <a name="syntax"></a>語法  
   
@@ -34,13 +34,13 @@ BOOL FCanJitDebug();
 ```  
   
 #### <a name="parameters"></a>參數  
- 這個方法會接受任何參數。  
+ 這個方法不接受任何參數。  
   
 ## <a name="return-value"></a>傳回值  
- 如果方法成功，而且在註冊 JIT 偵錯工具，此方法會傳回`TRUE`。 否則，它會傳回 `FALSE`。  
+ 如果方法成功且已註冊 JIT 偵錯程式，則方法會傳回 `TRUE`。 否則它會傳回 `FALSE`。  
   
 ## <a name="remarks"></a>備註  
- 這個方法會判斷是否已登錄的 JIT 偵錯工具。  
+ 這個方法會判斷是否已註冊 JIT 偵錯程式。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDebugApplication 介面](../../winscript/reference/idebugapplication-interface.md)

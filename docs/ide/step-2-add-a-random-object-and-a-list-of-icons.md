@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 71941b545a1059024ee6812ae64a15b08b8c4198
-ms.sourcegitcommit: 6244689e742e551e7b6933959bd42df56928ece3
-ms.translationtype: HT
+ms.openlocfilehash: 97352f60bfc40df28876731ec1e8aee1bff1773c
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72516634"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576271"
 ---
 # <a name="step-2-add-a-random-object-and-a-list-of-icons"></a>步驟 2：新增隨機物件和圖示清單
 
@@ -40,7 +40,7 @@ ms.locfileid: "72516634"
 
       如果您使用C#的是，請務必將程式碼放在左大括弧後面，然後緊接在類別宣告（`public partial class Form1 : Form`）之後。 如果使用的是 Visual Basic，請將程式碼放在類別宣告 (`Public Class Form1`) 的後面。
 
-3. 新增清單物件時，請注意開啟的 **IntelliSense** 視窗。 以下是 Visual C# 範例，不過，類似的文字會在您於 Visual Basic 中加入清單時顯示。
+3. 新增清單物件時，請注意開啟的 **IntelliSense** 視窗。 以下是C#範例，但當您在 Visual Basic 中新增清單時，會出現類似的文字。
 
      ![顯示 Click 事件的 [屬性] 視窗](../ide/media/express_listintellisense.png)<br/>***IntelliSense**視窗*
 
@@ -49,9 +49,9 @@ ms.locfileid: "72516634"
 
      如果您查看小型區段中的程式碼 (和備註)，就很容易了解。 您的程式可以使用清單物件來追蹤許多不同類型的項目。 清單可存放數字、true/false 值、文字或其他物件。 您的清單物件中甚至還可以包含其他的清單物件。 清單中的項目稱為元素，而每個清單只能保有一種類型的元素。 因此數字清單只可以保有數字，您無法將文字加入至此種清單。 同樣地，您無法將數字加入至 true/false 值的清單。
 
-     當您使用 `List` 陳述式建立 `new` 物件時，必須指定您想在其中儲存的資料類型。 這就是為什麼在 **IntelliSense** 視窗頂端的工具提示會顯示清單中的項目類型。 而且，這就是 `List<string>` (在 Visual C# 中) 和 `List(Of String)` (在 Visual Basic 中) 的含意：它是一個保有 `List` 資料類型項目的 `string` 物件。 字串是程式用來存放文字的項目，該文字就是 **IntelliSense** 視窗右邊的工具提示所告訴您的內容。
+     當您使用 `List` 陳述式建立 `new` 物件時，必須指定您想在其中儲存的資料類型。 這就是為什麼在 **IntelliSense** 視窗頂端的工具提示會顯示清單中的項目類型。 此外，這也是 `List<string>` （在C#中）和 `List(Of String)` （在 Visual Basic 中）的意義：它是一個 `List` 物件，其中包含 `string` 資料類型的元素。 字串是程式用來存放文字的項目，該文字就是 **IntelliSense** 視窗右邊的工具提示所告訴您的內容。
 
-4. 請考慮為何在 Visual Basic 中必須先建立暫存陣列，但是在 Visual C# 中，您可以使用一個陳述式建立清單。 這是因為 Visual C# 語言具有「集合初始設定式」，用於準備接受值的清單。 在 Visual Basic 中，您可以使用集合初始設定式。 不過，為了與舊版的 Visual Basic 相容，建議您使用上述程式碼。
+4. 請考慮為什麼必須先建立暫存陣列 Visual Basic，但是在中C#，可以使用一個語句來建立清單。 這是因為C#語言具有*集合初始化運算式*，這會準備清單以接受值。 在 Visual Basic 中，您可以使用集合初始設定式。 不過，為了與舊版的 Visual Basic 相容，建議您使用上述程式碼。
 
      當您使用含有 `new` 陳述式的集合初始設定式時，在建立新的清單物件之後，程式會以您在大括號內提供的資料來填入該物件。 在這種情況下，您會取得名為 icons 的字串清單，而且該清單將會初始化，使其包含十六個字串。 每一個字串都是單一字母，而且會對應到標籤中的圖示。 所以遊戲將會有一對驚嘆號、一對大寫字母 N、一對逗號等 （當這些字元設定為 Webdings 字型時，它們會顯示為符號，例如匯流排、自行車、蜘蛛等等）。您的清單物件將會有十六個字串，其中一個用於 TableLayoutPanel 面板中的每個資料格。
 

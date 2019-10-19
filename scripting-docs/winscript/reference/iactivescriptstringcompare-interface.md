@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptStringCompare Interface | Microsoft Docs
+title: IActiveScriptStringCompare 介面 |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,21 +17,21 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b46bf4b715ca15d735d6bc86092c66f9f7c50ac5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c149893ce7b6cce2e741c98761a981acc86778a4
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62991158"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577950"
 ---
 # <a name="iactivescriptstringcompare-interface"></a>IActiveScriptStringCompare 介面
-`IActiveScriptCompare`介面用來定義指令碼引擎的字串比較方法。  
+@No__t_0 介面是用來定義腳本引擎的字串比較方法。  
   
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法  
   
 |方法|描述|  
 |------------|-----------------|  
-|[IActiveScriptStringCompare::StrComp](../../winscript/reference/iactivescriptstringcompare-strcomp.md)|定義指令碼引擎的字串比較方法。|  
+|[IActiveScriptStringCompare::StrComp](../../winscript/reference/iactivescriptstringcompare-strcomp.md)|定義腳本引擎的字串比較方法。|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [動態指令碼介面](../../winscript/reference/active-script-interfaces.md)

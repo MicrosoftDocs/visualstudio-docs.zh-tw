@@ -1,5 +1,5 @@
 ---
-title: 'Idebugdocumenthelper:: Init |Microsoft Docs'
+title: IDebugDocumentHelper：： Init |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3b399f51fc042aa1ed297ab30a7bf2c9bc4befca
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 13e6379052707aa44c0fa52f4cb30db2c4c4fa99
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63000986"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576868"
 ---
 # <a name="idebugdocumenthelperinit"></a>IDebugDocumentHelper::Init
-`Init`方法會初始化偵錯文件協助程式使用的名稱和初始屬性。  
+@No__t_0 方法會使用名稱和初始屬性來初始化 debug document helper。  
   
 ## <a name="syntax"></a>語法  
   
@@ -40,16 +40,16 @@ HRESULT Init(
   
 #### <a name="parameters"></a>參數  
  `pda`  
- [in]這份文件相關的偵錯應用程式。  
+ 在與此檔相關聯的 debug 應用程式。  
   
  `pszShortName`  
- [in]以 null 結束的字串，包含文件的簡短名稱。  
+ 在以 null 終止的字串，其中包含檔的簡短名稱。  
   
  `pszLongName`  
- [in]以 null 結束的字串，包含文件的完整名稱。  
+ 在以 null 終止的字串，其中包含檔的完整名稱。  
   
  `docAttr`  
- [in]指定文字的文件屬性。  
+ 在指定文字檔案屬性。  
   
 ## <a name="return-value"></a>傳回值  
  方法會傳回 `HRESULT`。 可能的值包括 (但不限於) 下表中的這些值。  
@@ -59,11 +59,11 @@ HRESULT Init(
 |`S_OK`|方法成功。|  
   
 ## <a name="remarks"></a>備註  
- 這個方法會初始化偵錯文件協助程式使用的名稱和初始屬性。  
+ 這個方法會使用名稱和初始屬性來初始化 debug 檔協助程式。  
   
- 這份文件不會出現在樹狀目錄中，直到`IDebugDocumentHelper::Attach`呼叫。  
+ 這份檔不會出現在樹狀結構中，直到呼叫 `IDebugDocumentHelper::Attach` 為止。  
   
-## <a name="see-also"></a>另請參閱  
- [IDebugDocumentHelper::Attach](../../winscript/reference/idebugdocumenthelper-attach.md)   
+## <a name="see-also"></a>請參閱  
+ [IDebugDocumentHelper：： Attach](../../winscript/reference/idebugdocumenthelper-attach.md)    
  [IDebugDocumentHelper 介面](../../winscript/reference/idebugdocumenthelper-interface.md)   
  [TEXT_DOC_ATTR 常數](../../winscript/reference/text-doc-attr-constants.md)

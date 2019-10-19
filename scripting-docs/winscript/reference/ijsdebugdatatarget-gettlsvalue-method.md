@@ -1,5 +1,5 @@
 ---
-title: 'Ijsdebugdatatarget:: Gettlsvalue 方法 |Microsoft Docs'
+title: IJsDebugDataTarget：： GetTlsValue 方法 |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -15,15 +15,15 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 458aaab05f274983fdaf69c6e702502974665403
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: eecf9acf370656d5310a03d68ed74e10671a0bc2
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62582806"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577597"
 ---
 # <a name="ijsdebugdatatargetgettlsvalue-method"></a>IJsDebugDataTarget::GetTlsValue 方法
-正在進行偵錯的執行緒，擷取所指定 TLS 索引的執行緒區域儲存區 (TLS) 位置中的值。  
+對於正在進行調試的執行緒，會針對指定的 TLS 索引，抓取執行緒區域儲存區（TLS）插槽中的值。  
   
 ## <a name="syntax"></a>語法  
   
@@ -37,21 +37,21 @@ HRESULT GetTlsValue(
   
 #### <a name="parameters"></a>參數  
  `threadId`  
- [in]從讀取目標處理序中執行的執行緒。  
+ 在要從中讀取的目標進程中執行的執行緒。  
   
  `tlsIndex`  
- [in]目標處理序呼叫 TlsAlloc 函式時所配置的 TLS 索引。  
+ 在當目標進程呼叫 TlsAlloc 函式時，所配置的 TLS 索引。  
   
  `pValue`  
- [out]指標大小的值是儲存在執行緒的 TLS 位置。 如果目標執行緒為 32 位元，上方 32 位元的這個值會是零。  
+ 脫銷指標大小值，儲存線上程的 TLS 位置。 如果目標執行緒是32位，此值的上32位會是零。  
   
 ## <a name="return-value"></a>傳回值  
   
 ## <a name="remarks"></a>備註  
- 每個執行緒的處理程序有它自己的每個 TLS 索引的位置。  
+ 進程的每個執行緒都有自己的每個 TLS 索引位置。  
   
 ## <a name="requirements"></a>需求  
- **標頭：** jscript9diag.h  
+ **標頭：** jscript9diag。h  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IJsDebugDataTarget 介面](../../winscript/reference/ijsdebugdatatarget-interface.md)
