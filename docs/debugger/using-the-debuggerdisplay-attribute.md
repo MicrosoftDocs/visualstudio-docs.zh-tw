@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 866ad705f16e9eabb097e9c0c9064d2c379ebf9f
-ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
-ms.translationtype: HT
+ms.openlocfilehash: f16040408def290536ac5dadfec77ade9577c821
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72349629"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72568917"
 ---
 # <a name="tell-the-debugger-what-to-show-using-the-debuggerdisplay-attribute-c-visual-basic-f-ccli"></a>使用 DebuggerDisplay 屬性（C#，Visual Basic， F#， C++/cli）告訴偵錯工具要顯示的內容
 
@@ -182,6 +182,6 @@ class MyHashtable
 ## <a name="see-also"></a>請參閱
 
 - [使用 DebuggerTypeProxy 屬性](../debugger/using-debuggertypeproxy-attribute.md)
-- [建立 Managed 物件的自訂檢視](../debugger/create-custom-views-of-dot-managed-objects.md)
+- [建立 Managed 物件的自訂檢視](../debugger/create-custom-views-of-managed-objects.md)
 - [C# 中的格式規範](../debugger/format-specifiers-in-csharp.md)
 - [使用偵錯工具顯示屬性增強偵錯功能](/dotnet/framework/debug-trace-profile/enhancing-debugging-with-the-debugger-display-attributes)

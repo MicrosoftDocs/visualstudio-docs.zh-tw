@@ -17,15 +17,15 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 906a309b25a1fe606fb37f8cbab70040e5a4c46f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bc4ef840310c27ccbadce2ed4f632514b555ef98
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62840183"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575648"
 ---
 # <a name="scriptthreadstate-enumeration"></a>SCRIPTTHREADSTATE 列舉
-指定在指令碼引擎的執行緒的狀態。 這個列舉型別由[IActiveScript::GetScriptThreadState](../../winscript/reference/iactivescript-getscriptthreadstate.md)方法。  
+指定腳本引擎中的執行緒狀態。 [IActiveScript：： GetScriptThreadState](../../winscript/reference/iactivescript-getscriptthreadstate.md)方法會使用這個列舉。  
   
 ## <a name="syntax"></a>語法  
   
@@ -40,8 +40,8 @@ typedef enum tagSCRIPTTHREADSTATE {
   
 |||  
 |-|-|  
-|SCRIPTTHREADSTATE_NOTINSCRIPT|指定的執行緒目前不是服務的已編寫指令碼的事件，立即執行的處理指令碼文字，或執行指令碼巨集。|  
-|SCRIPTTHREADSTATE_RUNNING|指定的執行緒主動維護一個已編寫指令碼的事件，立即執行的處理指令碼文字，或執行指令碼巨集。|  
+|SCRIPTTHREADSTATE_NOTINSCRIPT|指定的執行緒目前未提供已編寫腳本的事件、處理立即執行的腳本文字，或正在執行腳本宏。|  
+|SCRIPTTHREADSTATE_RUNNING|指定的執行緒正在主動服務已編寫腳本的事件、處理立即執行的腳本文字，或執行腳本宏。|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [動態指令碼的常數、列舉和錯誤碼](../../winscript/reference/active-script-constants-enumerations-and-error-codes.md)

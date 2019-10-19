@@ -1,5 +1,5 @@
 ---
-title: IScriptEntry::SetSignature | Microsoft Docs
+title: IScriptEntry：： SetSignature |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 42740a0e6261317443b8c9cc23559a2f92f66540
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e381e642462fe56e661de9da0d8974dc7bf18b18
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62787185"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575343"
 ---
 # <a name="iscriptentrysetsignature"></a>IScriptEntry::SetSignature
-設定類型資訊`IScriptEntry`函式物件。  
+設定 `IScriptEntry` 函式物件的類型資訊。  
   
 ## <a name="syntax"></a>語法  
   
@@ -38,10 +38,10 @@ HRESULT SetSignature(
   
 #### <a name="parameters"></a>參數  
  `pti`  
- [in]型別資訊。  
+ 在類型資訊。  
   
  `iMethod`  
- [in]中的方法索引`ITypeInfo`物件。  
+ 在@No__t_0 物件中的方法索引。  
   
 ## <a name="return-value"></a>傳回值  
  `HRESULT`。 可能的值包括 (但不限於) 下表中的這些值。  
@@ -51,7 +51,7 @@ HRESULT SetSignature(
 |`S_OK`|方法成功。|  
   
 ## <a name="remarks"></a>備註  
- 使用設定類型資訊`IScriptEntry::SetSignature`或是[IScriptNode::CreateChildHandler](../../winscript/reference/iscriptnode-createchildhandler.md)。 根據內部函式表示的項目也可以產生型別資訊。  
+ 您可以使用 `IScriptEntry::SetSignature` 或[IScriptNode：： CreateChildHandler](../../winscript/reference/iscriptnode-createchildhandler.md)來設定型別資訊。 型別資訊也可以根據內部函式標記法來產生。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IScriptEntry 介面](../../winscript/reference/iscriptentry-interface.md)

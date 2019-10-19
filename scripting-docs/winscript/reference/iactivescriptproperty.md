@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptProperty | Microsoft Docs
+title: IActiveScriptProperty |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -13,15 +13,15 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 62b0d49ea4ebccfe70955c2f5315918807121447
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5b68c777652ec411addfb64643ec0c8db67c29a1
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62992782"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72571244"
 ---
 # <a name="iactivescriptproperty"></a>IActiveScriptProperty
-`IActiveScriptProperty`介面用來取得和設定組態屬性。  
+@No__t_0 介面是用來取得和設定 configuration 屬性。  
   
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法  
   
@@ -30,5 +30,5 @@ ms.locfileid: "62992782"
 |[GetProperty](../../winscript/reference/iactivescriptproperty-getproperty.md)|取得參數所指定的屬性。|  
 |[SetProperty](../../winscript/reference/iactivescriptproperty-setproperty.md)|設定參數所指定的屬性。|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [動態指令碼介面](../../winscript/reference/active-script-interfaces.md)

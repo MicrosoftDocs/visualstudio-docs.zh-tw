@@ -1,5 +1,5 @@
 ---
-title: IScriptScriptlet::GetSubItemName | Microsoft Docs
+title: IScriptScriptlet：： GetSubItemName |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0c48517b7f9f5fab3250b8cff68ad288525145b9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b36f6dd98534b8122a6814f1fd154eca7882251a
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62786793"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72571926"
 ---
 # <a name="iscriptscriptletgetsubitemname"></a>IScriptScriptlet::GetSubItemName
-傳回最後一個識別項中的程式碼片段物件主控件的完整名稱。  
+傳回程式碼片段物件主機之完整名稱中的最後一個識別碼。  
   
 ## <a name="syntax"></a>語法  
   
@@ -37,9 +37,9 @@ HRESULT GetSubItemName(
   
 #### <a name="parameters"></a>參數  
  `pbstr`  
- [out]如果主應用程式的完整程式碼片段名稱有一個以上的層級，`pbstr`傳回第二個層級的識別項的緩衝區位址。  
+ 脫銷如果主機的完整程式碼片段名稱有一個以上的層級，`pbstr` 會在第二個層級傳回識別碼的緩衝區位址。  
   
- 如果主應用程式的完整程式碼片段名稱有一個層級，`pbstr`傳回第一個層級的識別項的緩衝區位址。  
+ 如果主機的完整程式碼片段名稱有一個層級，`pbstr` 會傳回第一個層級之識別碼的緩衝區位址。  
   
 ## <a name="return-value"></a>傳回值  
  `HRESULT`。 可能的值包括 (但不限於) 下表中的這些值。  
@@ -50,5 +50,5 @@ HRESULT GetSubItemName(
   
 ## <a name="remarks"></a>備註  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IScriptScriptlet 介面](../../winscript/reference/iscriptscriptlet-interface.md)

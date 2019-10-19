@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentInfo::GetDocumentClassId | Microsoft Docs
+title: IDebugDocumentInfo：： GetDocumentClassId |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c9e86c42954fafd4135956845f9465629cde9990
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 996e6d751807bba1e1a74cbb7e579db25193c32b
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62971078"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72569078"
 ---
 # <a name="idebugdocumentinfogetdocumentclassid"></a>IDebugDocumentInfo::GetDocumentClassId
-傳回`CLSID`識別文件類型。  
+傳回識別檔案類型的 `CLSID`。  
   
 ## <a name="syntax"></a>語法  
   
@@ -37,7 +37,7 @@ HRESULT GetDocumentClassId(
   
 #### <a name="parameters"></a>參數  
  `pclsidDocument`  
- [out]A`CLSID`識別文件類型。  
+ 脫銷識別檔案類型的 `CLSID`。  
   
 ## <a name="return-value"></a>傳回值  
  方法會傳回 `HRESULT`。 可能的值包括 (但不限於) 下表中的這些值。  
@@ -47,9 +47,9 @@ HRESULT GetDocumentClassId(
 |`S_OK`|方法成功。|  
   
 ## <a name="remarks"></a>備註  
- 這個方法可讓偵錯工具 IDE 主應用程式的自訂檢視器，這份文件。  
+ 這個方法可讓偵錯工具 IDE 裝載此檔的自訂檢視器。  
   
- 如果文件並沒有可檢視的資料，傳回值`pclsidDocument`是`CLSID_NULL`。  
+ 如果檔沒有可查看的資料，則會 `CLSID_NULL` `pclsidDocument` 的傳回值。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDebugDocumentInfo 介面](../../winscript/reference/idebugdocumentinfo-interface.md)

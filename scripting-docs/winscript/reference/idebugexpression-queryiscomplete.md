@@ -1,5 +1,5 @@
 ---
-title: IDebugExpression::QueryIsComplete | Microsoft Docs
+title: IDebugExpression：： QueryIsComplete |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0c74ff962585d4295ea4c2d21a1ee31fdfc817af
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c260ac5c02052f11f70e479588d65b71b4971267
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62946312"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72571971"
 ---
 # <a name="idebugexpressionqueryiscomplete"></a>IDebugExpression::QueryIsComplete
-判斷作業是否完成。  
+判斷作業是否已完成。  
   
 ## <a name="syntax"></a>語法  
   
@@ -34,18 +34,18 @@ HRESULT QueryIsComplete();
 ```  
   
 #### <a name="parameters"></a>參數  
- 這個方法會接受任何參數。  
+ 這個方法不接受任何參數。  
   
 ## <a name="return-value"></a>傳回值  
  方法會傳回 `HRESULT`。 可能的值包括 (但不限於) 下表中的這些值。  
   
 |值|描述|  
 |-----------|-----------------|  
-|`S_OK`|此方法成功，並表示作業已完成。|  
-|`S_FALSE`|此作業仍然是暫止。|  
+|`S_OK`|方法成功，且作業已完成。|  
+|`S_FALSE`|作業仍在暫止狀態。|  
   
 ## <a name="remarks"></a>備註  
- 這個方法會判斷作業是否完成。  
+ 這個方法會判斷作業是否已完成。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDebugExpression 介面](../../winscript/reference/idebugexpression-interface.md)

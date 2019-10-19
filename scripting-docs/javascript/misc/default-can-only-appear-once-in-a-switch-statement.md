@@ -1,5 +1,5 @@
 ---
-title: "'default' 只能在 'switch' 陳述式中一次出現 |Microsoft Docs"
+title: "' default ' 只可以在 ' switch ' 語句中出現一次 |Microsoft Docs"
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
@@ -14,21 +14,21 @@ ms.assetid: a94100f4-6ee5-4759-b635-9d309e47111e
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 24162efcc720d9c0073f8a5799c6278b8d3c8c62
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 90652e44a4bd0362f679be71d0d6401165487aec
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62946351"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572890"
 ---
 # <a name="default-can-only-appear-once-in-a-switch-statement"></a>'default' 只可以出現在 'switch' 陳述式中一次
-您嘗試使用**預設**不止一次在 switch 陳述式內的陳述式。 預設的情況中一律是 switch 陳述式 （它是 fall-through 大小寫） 中的最後一個 case 陳述式。  
+您嘗試在 switch 語句中多次使用**default**語句。 預設案例一律為 switch 語句中的最後一個 case 語句（這是迴圈式案例）。  
   
 ### <a name="to-correct-this-error"></a>更正這個錯誤  
   
-- 移除任何額外**預設**case 陳述式，從您`switch`陳述式 （在大部分的一個預設 case 陳述式，您的 switch 陳述式中使用）。  
+- 從您的 `switch` 語句中移除任何額外的**預設**case 語句（在 switch 語句中最多使用一個預設 case 語句）。  
   
-## <a name="see-also"></a>另請參閱  
- [switch 陳述式](../../javascript/reference/switch-statement-javascript.md)   
+## <a name="see-also"></a>請參閱  
+ [Switch 語句](../../javascript/reference/switch-statement-javascript.md)   
  [控制程式流程](../../javascript/controlling-program-flow-javascript.md)   
  [JavaScript 保留字](../../javascript/reference/javascript-reserved-words.md)

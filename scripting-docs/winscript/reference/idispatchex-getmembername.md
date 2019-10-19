@@ -1,5 +1,5 @@
 ---
-title: IDispatchEx::GetMemberName |Microsoft Docs
+title: IDispatchEx：： GetMemberName |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 155c8db6e772460ae8ad4e8b5a70ae5e67b49ec1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f68b0157e8e352b34885ae94d14026a51c4a6e97
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63000873"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574101"
 ---
 # <a name="idispatchexgetmembername"></a>IDispatchEx::GetMemberName
-擷取成員的名稱。  
+抓取成員的名稱。  
   
 ## <a name="syntax"></a>語法  
   
@@ -38,18 +38,18 @@ HRESULT GetMemberName(
   
 #### <a name="parameters"></a>參數  
  `id`  
- 辨識成員。 會使用`GetDispID`或`GetNextDispID`取得的分派識別項。  
+ 辨識成員。 使用 `GetDispID` 或 `GetNextDispID` 來取得分派識別碼。  
   
  `pbstrName`  
- 解決的`BSTR`接收成員的名稱。 呼叫的應用程式會負責釋放此值。  
+ 接收成員名稱之 `BSTR` 的位址。 呼叫應用程式會負責釋放此值。  
   
 ## <a name="return-value"></a>傳回值  
- 會傳回下列值之一：  
+ 傳回下列其中一個值：  
   
 |||  
 |-|-|  
 |`S_OK`|成功。|  
-|`DISP_E_UNKNOWNNAME`|不知道名稱。|  
+|`DISP_E_UNKNOWNNAME`|未知的名稱。|  
   
 ## <a name="example"></a>範例  
   
@@ -74,7 +74,7 @@ HRESULT hr;
    }  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDispatchEx 介面](../../winscript/reference/idispatchex-interface.md)   
- [IDispatchEx::GetDispID](../../winscript/reference/idispatchex-getdispid.md)   
+ [IDispatchEx：： GetDispID](../../winscript/reference/idispatchex-getdispid.md)    
  [IDispatchEx::GetNextDispID](../../winscript/reference/idispatchex-getnextdispid.md)

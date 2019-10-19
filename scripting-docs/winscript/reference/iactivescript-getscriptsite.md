@@ -1,5 +1,5 @@
 ---
-title: IActiveScript::GetScriptSite | Microsoft Docs
+title: IActiveScript：： GetScriptSite |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b57c4282b7ec77eb4af2ffa983479ae77388e1c9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 567c7b5c1ead5388e6ec9c67d6ab6f9f580adf20
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62935767"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575750"
 ---
 # <a name="iactivescriptgetscriptsite"></a>IActiveScript::GetScriptSite
-擷取與 Windows 指令碼引擎相關聯的站台物件。  
+抓取與 Windows 腳本引擎相關聯的網站物件。  
   
 ## <a name="syntax"></a>語法  
   
@@ -38,21 +38,21 @@ HRESULT GetScriptSite(
   
 #### <a name="parameters"></a>參數  
  `iid`  
- [in]要求的介面識別碼。  
+ 在所要求介面的識別碼。  
   
  `ppvSiteObject`  
- [out]接收主機的站台物件的介面指標的位置的位址。  
+ 脫銷接收主機網站物件之介面指標的位置位址。  
   
 ## <a name="return-value"></a>傳回值  
- 會傳回下列值之一：  
+ 傳回下列其中一個值：  
   
 |傳回值|意義|  
 |------------------|-------------|  
 |`S_OK`|成功。|  
 |`E_INVALIDARG`|引數無效。|  
 |`E_NOINTERFACE`|不支援指定的介面。|  
-|`E_POINTER`|指定了無效的指標。|  
-|`S_FALSE`|不是站台已設定;`ppvSiteObject`參數設為`NULL`。|  
+|`E_POINTER`|指定了不正確指標。|  
+|`S_FALSE`|尚未設定任何網站;`ppvSiteObject` 參數設定為 `NULL`。|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IActiveScript](../../winscript/reference/iactivescript.md)

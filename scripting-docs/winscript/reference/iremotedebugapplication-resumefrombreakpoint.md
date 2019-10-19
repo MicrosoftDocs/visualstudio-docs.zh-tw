@@ -1,5 +1,5 @@
 ---
-title: IRemoteDebugApplication::ResumeFromBreakPoint | Microsoft Docs
+title: IRemoteDebugApplication：： ResumeFromBreakPoint |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5844381188cb03c99ab0a44ed9b9e0fdbab67e6e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7fead9c14efbe73bd006a5ff3e1cfb10ad40404b
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62944163"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577465"
 ---
 # <a name="iremotedebugapplicationresumefrombreakpoint"></a>IRemoteDebugApplication::ResumeFromBreakPoint
-會繼續目前位於中斷點的應用程式。  
+繼續目前在中斷點中的應用程式。  
   
 ## <a name="syntax"></a>語法  
   
@@ -39,13 +39,13 @@ HRESULT ResumeFromBreakPoint(
   
 #### <a name="parameters"></a>參數  
  `prptFocus`  
- [in]逐步執行模式，也就是受到逐步執行模式的執行緒。  
+ 在針對逐步執行模式，這是要受逐步執行模式影響的執行緒。  
   
  `bra`  
- [in]要在繼續執行應用程式時所採取的動作。  
+ 在繼續應用程式時要採取的動作。  
   
  `era`  
- [in]因為發生錯誤而停止應用程式的情況下採取的動作。  
+ 在應用程式因錯誤而停止的情況所採取的動作。  
   
 ## <a name="return-value"></a>傳回值  
  方法會傳回 `HRESULT`。 可能的值包括 (但不限於) 下表中的這些值。  
@@ -55,9 +55,9 @@ HRESULT ResumeFromBreakPoint(
 |`S_OK`|方法成功。|  
   
 ## <a name="remarks"></a>備註  
- 這個方法會繼續目前位於中斷點的應用程式。  
+ 這個方法會繼續目前在中斷點中的應用程式。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IRemoteDebugApplication 介面](../../winscript/reference/iremotedebugapplication-interface.md)   
  [BREAKRESUMEACTION 列舉](../../winscript/reference/breakresumeaction-enumeration.md)   
  [ERRORRESUMEACTION 列舉](../../winscript/reference/errorresumeaction-enumeration.md)

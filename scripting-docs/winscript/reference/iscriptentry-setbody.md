@@ -1,5 +1,5 @@
 ---
-title: IScriptEntry::SetBody | Microsoft Docs
+title: IScriptEntry：： SetBody |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 46ebccb57885480d34d79cbd27e99dc6a35b343d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1af865c8366481204ee413377a083b09d8c97383
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62787641"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575386"
 ---
 # <a name="iscriptentrysetbody"></a>IScriptEntry::SetBody
-設定的主體中的文字`IScriptEntry`指令碼區塊或`IScriptScriptlet`程式碼片段。  
+設定 `IScriptEntry` 腳本區塊或 `IScriptScriptlet` 程式碼片段主體中的文字。  
   
 ## <a name="syntax"></a>語法  
   
@@ -37,11 +37,11 @@ HRESULT SetBody(
   
 #### <a name="parameters"></a>參數  
  `psz`  
- [in]針對`IScriptEntry`指令碼區塊`psz`是指令碼標記括住的文字。  
+ 在針對 `IScriptEntry` 腳本區塊，`psz` 是包含在腳本標記中的文字。  
   
- 針對`IScriptEntry`函式區塊`psz`是函式主體。  
+ 針對 `IScriptEntry` 函式區塊，`psz` 是函式主體。  
   
- 針對`IScriptScriptlet`物件 (衍生自`IScriptEntry`)，`psz`是程式碼片段的指令碼文字。  
+ 對於 `IScriptScriptlet` 物件（衍生自 `IScriptEntry`），`psz` 是程式碼片段的腳本文字。  
   
 ## <a name="return-value"></a>傳回值  
  `HRESULT`。 可能的值包括 (但不限於) 下表中的這些值。  
@@ -52,6 +52,6 @@ HRESULT SetBody(
   
 ## <a name="remarks"></a>備註  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IScriptEntry 介面](../../winscript/reference/iscriptentry-interface.md)   
  [IScriptEntry::GetBody](../../winscript/reference/iscriptentry-getbody.md)

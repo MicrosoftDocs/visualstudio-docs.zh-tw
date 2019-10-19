@@ -1,5 +1,5 @@
 ---
-title: IActiveScript::AddTypeLib | Microsoft Docs
+title: IActiveScript：： AddTypeLib |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c4943d1305c2f25de4eec9e782949a66827de879
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 254a5133d42689020eaaae290a1016de4b848100
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62955087"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575815"
 ---
 # <a name="iactivescriptaddtypelib"></a>IActiveScript::AddTypeLib
-將指令碼的命名空間中的型別程式庫。 這是類似`#include`指示詞 C /C++。 它可讓一組預先定義的項目類別定義，例如`typedefs`，與具名常數可以加入至可供指令碼的執行階段環境。  
+將類型程式庫加入至腳本的命名空間。 這類似于 C/C++中的 `#include` 指示詞。 它允許將一組預先定義的專案（例如類別定義、`typedefs` 和命名常數）加入至腳本可用的執行時間環境。  
   
 ## <a name="syntax"></a>語法  
   
@@ -40,30 +40,30 @@ HRESULT AddTypeLib(
   
 #### <a name="parameters"></a>參數  
  `guidTypeLib`  
- [in]將類型程式庫的 CLSID。  
+ 在要加入之類型程式庫的 CLSID。  
   
  `dwMaj`  
- [in]主要版本號碼。  
+ 在主要版本號碼。  
   
  `dwMin`  
- [in]次要版本號碼。  
+ 在次要版本號碼。  
   
  `dwFlags`  
- [in]選項旗標。 可以是下列：  
+ 在選項旗標。 可以是下列內容：  
   
 |值|意義|  
 |-----------|-------------|  
-|SCRIPTTYPELIB_ISCONTROL|型別程式庫描述主機所使用的 ActiveX 控制項。|  
+|SCRIPTTYPELIB_ISCONTROL|類型程式庫描述主機所使用的 ActiveX 控制項。|  
   
 ## <a name="return-value"></a>傳回值  
- 會傳回下列值之一：  
+ 傳回下列其中一個值：  
   
 |傳回值|意義|  
 |------------------|-------------|  
 |`S_OK`|成功。|  
 |`E_INVALIDARG`|引數無效。|  
-|`E_UNEXPECTED`|不需要呼叫 （例如，指令碼引擎有尚未載入或初始化）。|  
-|`TYPE_E_CANTLOADLIBRARY`|無法載入指定的型別程式庫。|  
+|`E_UNEXPECTED`|不需要呼叫（例如，腳本引擎尚未載入或初始化）。|  
+|`TYPE_E_CANTLOADLIBRARY`|無法載入指定的類型程式庫。|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IActiveScript](../../winscript/reference/iactivescript.md)

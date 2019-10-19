@@ -1,5 +1,5 @@
 ---
-title: IScriptEntry::GetRange | Microsoft Docs
+title: IScriptEntry：： GetRange |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7baa284be4fa7f45f247df7f4b3d140869f254b1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0a6e1b1600c93aa05bbe9669fb57a23a8c9344a1
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62787733"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575427"
 ---
 # <a name="iscriptentrygetrange"></a>IScriptEntry::GetRange
-傳回的起始位置和長度的項目。  
+傳回專案的開始位置和長度。  
   
 ## <a name="syntax"></a>語法  
   
@@ -38,18 +38,18 @@ HRESULT GetRange(
   
 #### <a name="parameters"></a>參數  
  `pichMin`  
- [out]針對`IScriptEntry`物件，以指定指令碼區塊，會傳回 0。  
+ 脫銷對於指定腳本區塊的 `IScriptEntry` 物件，會傳回0。  
   
- 針對`IScriptEntry`物件，以指定函式物件，傳回目前的指令碼區塊中的函式的起始位置。  
+ 對於指定函式物件的 `IScriptEntry` 物件，會傳回目前腳本區塊中函式的開始位置。  
   
- 針對`IScriptScriptlet`物件，會傳回 0。  
+ 若為 `IScriptScriptlet` 物件，會傳回0。  
   
  `pcch`  
- [out]針對`IScriptEntry`物件，以指定指令碼區塊，傳回文字的長度。  
+ 脫銷針對指定腳本區塊的 `IScriptEntry` 物件，會傳回文字的長度。  
   
- 針對`IScriptEntry`物件，以指定函式物件，傳回的函式定義的長度。  
+ 對於指定函式物件的 `IScriptEntry` 物件，會傳回函數定義的長度。  
   
- 針對`IScriptScriptlet`物件，則會傳回項目的長度。  
+ 針對 `IScriptScriptlet` 物件，傳回專案的長度。  
   
 ## <a name="return-value"></a>傳回值  
  `HRESULT`。 可能的值包括 (但不限於) 下表中的這些值。  
@@ -60,5 +60,5 @@ HRESULT GetRange(
   
 ## <a name="remarks"></a>備註  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IScriptEntry 介面](../../winscript/reference/iscriptentry-interface.md)

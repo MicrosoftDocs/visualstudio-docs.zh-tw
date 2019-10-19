@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e2f58e969f96d05828a4b3a5e640ede364abca10
-ms.sourcegitcommit: a5a54b147e772dc39e519da74ec41a0c25d99628
-ms.translationtype: MT
+ms.openlocfilehash: 1364ce26b4a6f54f99267ce3e1288160f75ca148
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2019
-ms.locfileid: "72289632"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72562527"
 ---
 # <a name="step-6-add-a-timer"></a>步驟 6：新增計時器
 接下來，您可以將 <xref:System.Windows.Forms.Timer> 控制項新增至配對遊戲。 計時器會等候指定的毫秒數，然後引發事件，稱為「刻度」。 這對於定期啟動動作或重複動作非常有用。 在這個案例中，您將使用計時器讓玩家選擇兩個圖示，如果圖示不相符，則在短時間之後再次隱藏兩個圖示。
@@ -41,9 +41,9 @@ ms.locfileid: "72289632"
      [!code-vb[VbExpressTutorial4Step6#7](../ide/codesnippet/VisualBasic/step-6-add-a-timer_1.vb)]
 
       > [!IMPORTANT]
-      > 使用此頁面右上方的程式設計語言控制項，以查看C#程式碼片段或 Visual Basic 程式碼片段。<br><br>檔的 @no__t 0Programming 語言控制項。 Microsoft .com @ no__t-1
+      > 使用此頁面右上方的程式設計語言控制項，以查看C#程式碼片段或 Visual Basic 程式碼片段。<br><br>Docs.Microsoft.com ](../ide/media/docs-programming-language-control.png) 的 ![Programming 語言控制項
 
-     刻度事件處理常式會執行下列三件事情：首先，它會呼叫 <xref:System.Windows.Forms.Timer.Stop> 方法來確定計時器並未執行。 接著，它會使用兩個參考變數 `firstClicked` 和 `secondClicked`，確定玩家所選的兩個標籤的圖示再次看不見。 最後，它會將 `firstClicked` 和 `secondClicked` 參考變數重設為 Visual C# 中的 `null` 和 Visual Basic 中的 `Nothing`。 這個步驟很重要，因為這就是程式本身重設的方式。 現在它不會追蹤任何的 <xref:System.Windows.Forms.Label> 控制項，而且已準備好讓玩家再度選擇標籤。
+     Tick 事件處理常式會執行下列三件事情：首先，它會呼叫 <xref:System.Windows.Forms.Timer.Stop> 方法來確定計時器並未執行。 接著，它會使用兩個參考變數 `firstClicked` 和 `secondClicked`，確定玩家所選的兩個標籤的圖示再次看不見。 最後，它會重設 `firstClicked`，並 `secondClicked` 參考變數加入C# Visual Basic 中的 `null` 和 `Nothing`。 這個步驟很重要，因為這就是程式本身重設的方式。 現在它不會追蹤任何的 <xref:System.Windows.Forms.Label> 控制項，而且已準備好讓玩家再度選擇標籤。
 
     > [!NOTE]
     > Timer 物件具有一個 `Start()` 方法可以啟動計時器，還有一個 `Stop()` 方法可以停止計時器。 當您在 [屬性] 視窗中將計時器的 [Enabled] 屬性設為 [True] 時，計時器會在程式開始時立即開始計時。 但是，當您將它設為 [False] 時，則要等到呼叫其 `Start()` 方法時才會開始計時。 通常，計時器會不斷地引發其 Tick 事件，並使用 [Interval] 屬性來決定在刻度之間要等待多少毫秒。 您可能已注意到在 Tick 事件內呼叫計時器之 `Stop()` 方法的方式。 該方式會使計時器進入「一次性模式」，表示在呼叫 `Start()` 方法時，它會等候指定的間隔、觸發單一 Tick 事件，然後停止。
@@ -61,8 +61,8 @@ ms.locfileid: "72289632"
 
 6. 請選擇其他圖示。 它會短暫出現，然後這兩個圖示會消失。 重複此動作許多次。 表單現在會追蹤您選擇的第一個和第二個圖示，並使用計時器在圖示消失之前暫停追蹤。
 
-## <a name="to-continue-or-review"></a>若要繼續或檢視
+## <a name="to-continue-or-review"></a>繼續或檢視
 
-- 若要前往下一個教學課程步驟，請參閱[步驟 7：讓配對保持可見](../ide/step-7-keep-pairs-visible.md)。
+- 若要移至下一個教學課程步驟，請參閱[步驟 7：讓配對保持可見](../ide/step-7-keep-pairs-visible.md)。
 
-- 若要回到上一個教學課程步驟，請參閱[步驟 5：新增標籤參考](../ide/step-5-add-label-references.md)。
+- 若要返回上一個教學課程步驟，請參閱[步驟 5：新增標籤參考](../ide/step-5-add-label-references.md)。

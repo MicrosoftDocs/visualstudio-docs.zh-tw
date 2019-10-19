@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentTextEvents::onUpdateTextAttributes |Microsoft Docs
+title: IDebugDocumentTextEvents：： onUpdateTextAttributes |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 746339cb281d4d039759f350bb5516456ce142cf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 044eec93516bc4e16044c4bf982b48d91269ebaa
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62989805"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575989"
 ---
 # <a name="idebugdocumenttexteventsonupdatetextattributes"></a>IDebugDocumentTextEvents::onUpdateTextAttributes
-表示基礎的字元位置範圍相關聯的文字屬性已變更。  
+表示與基礎字元位置範圍相關聯的文字屬性已變更。  
   
 ## <a name="syntax"></a>語法  
   
@@ -38,10 +38,10 @@ HRESULT onUpdateTextAttributes(
   
 #### <a name="parameters"></a>參數  
  `cCharacterPosition`  
- [in]屬性已變更的第一個字元的字元位置。  
+ 在屬性已變更之第一個字元的字元位置。  
   
  `cNumToUpdate`  
- [in]範圍中的字元數。  
+ 在範圍中的字元數。  
   
 ## <a name="return-value"></a>傳回值  
  方法會傳回 `HRESULT`。 可能的值包括 (但不限於) 下表中的這些值。  
@@ -51,7 +51,7 @@ HRESULT onUpdateTextAttributes(
 |`S_OK`|方法成功。|  
   
 ## <a name="remarks"></a>備註  
- 這個方法會指出基礎的字元位置範圍相關聯的文字屬性已變更。  
+ 這個方法表示與基礎字元位置範圍相關聯的文字屬性已經變更。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDebugDocumentTextEvents 介面](../../winscript/reference/idebugdocumenttextevents-interface.md)

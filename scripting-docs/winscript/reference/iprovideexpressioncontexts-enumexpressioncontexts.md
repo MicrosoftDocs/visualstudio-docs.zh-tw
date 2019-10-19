@@ -1,5 +1,5 @@
 ---
-title: IProvideExpressionContexts::EnumExpressionContexts | Microsoft Docs
+title: IProvideExpressionCoNtexts：： EnumExpressionCoNtexts |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 965147083bdc11a3544561fdd96cd85221ccd443
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: f161c1591267af1398d5c04d00623381cfae2ad4
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63410143"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572396"
 ---
 # <a name="iprovideexpressioncontextsenumexpressioncontexts"></a>IProvideExpressionContexts::EnumExpressionContexts
-傳回這個元件的已知的運算式內容的列舉值。  
+傳回此元件所知之運算式內容的列舉值。  
   
 ## <a name="syntax"></a>語法  
   
@@ -37,7 +37,7 @@ HRESULT EnumExpressionContexts(
   
 #### <a name="parameters"></a>參數  
  `ppedec`  
- [out]列舉值的已知此元件的運算式內容。  
+ 脫銷此元件所知之運算式內容的列舉值。  
   
 ## <a name="return-value"></a>傳回值  
  方法會傳回 `HRESULT`。 可能的值包括 (但不限於) 下表中的這些值。  
@@ -47,10 +47,10 @@ HRESULT EnumExpressionContexts(
 |`S_OK`|方法成功。|  
   
 ## <a name="remarks"></a>備註  
- 處理序偵錯管理員會使用此方法來尋找與指定的執行緒相關聯的所有全域運算式內容。  
+ 進程 debug manager 會使用這個方法來尋找與指定執行緒相關聯的所有全域運算式內容。  
   
 > [!NOTE]
-> 這個方法會從感興趣的執行緒內呼叫。 它是由實作者找出目前的執行緒，並傳回適當的列舉值。  
+> 這個方法是從相關的執行緒中呼叫。 由實施者負責識別目前的執行緒，並傳回適當的列舉值。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IProvideExpressionContexts 介面](../../winscript/reference/iprovideexpressioncontexts-interface.md)

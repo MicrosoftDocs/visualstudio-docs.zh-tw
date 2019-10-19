@@ -13,18 +13,18 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 404d3939e0a328beb5e2413d25885fddf8478ead
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: c69d419732786442cda275bf85c74ab2b9d3e870
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443643"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574555"
 ---
-# <a name="scriptdebuggeroptions-enumeration"></a>SCRIPT_DEBUGGER_OPTIONS 列舉
-表示一組選項和/或套用至附加偵錯工具的功能。 用於[IDebugApplicationNode100::GetExcludedDocuments](../../winscript/reference/idebugapplicationnode100-getexcludeddocuments.md)和[IDebugApplicationNode100::SetFilterForEventSink](../../winscript/reference/idebugapplicationnode100-setfilterforeventsink.md)  
+# <a name="script_debugger_options-enumeration"></a>SCRIPT_DEBUGGER_OPTIONS 列舉
+表示套用至附加偵錯工具的一組選項和（或）功能。 用於[IDebugApplicationNode100：： GetExcludedDocuments](../../winscript/reference/idebugapplicationnode100-getexcludeddocuments.md)和[IDebugApplicationNode100：： SetFilterForEventSink](../../winscript/reference/idebugapplicationnode100-setfilterforeventsink.md)  
   
 > [!IMPORTANT]
-> 這些常數會實作由 PDM v10.0 和更新版本。 可在 activdbg100.h 中找到。  
+> 這些常數是由 PDM 10.0 和更新版本所執行。 可在 activdbg100.h 中找到。  
   
 ## <a name="syntax"></a>語法  
   
@@ -32,13 +32,13 @@ ms.locfileid: "63443643"
 typedef SCRIPT_DEBUGGER_OPTIONS  
 ```  
   
-## <a name="members"></a>成員  
+## <a name="members"></a>Members  
   
 |成員|值|描述|  
 |------------|-----------|-----------------|  
-|SDO_NONE|0x00000000|未設定選項。|  
-|SDO_ENABLE_FIRST_CHANCE_EXCEPTIONS|0x00000001|表示指令碼執行階段應該引發 BREAKREASON_ERROR 事件時擲回例外狀況。 這個選項可能會設定偵錯工具，或由使用者程式碼，透過設定`Debug.enableFirstChanceExceptions(<true&#124;false>)`。|  
-|SDO_ENABLE_WEB_WORKER_SUPPORT|0x00000002|表示附加的偵錯工具支援 web 背景工作。|  
+|SDO_NONE|0x00000000|未設定任何選項。|  
+|SDO_ENABLE_FIRST_CHANCE_EXCEPTIONS|0x00000001|指出當擲回例外狀況時，腳本執行時間應該引發 BREAKREASON_ERROR 事件。 此選項可由偵錯工具設定，或透過 `Debug.enableFirstChanceExceptions(<true&#124;false>)` 由使用者程式碼設定。|  
+|SDO_ENABLE_WEB_WORKER_SUPPORT|0x00000002|指出附加的偵錯工具支援 web 背景工作。|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [動態指令碼偵錯工具的常數、列舉和結構](../../winscript/reference/active-script-debugger-constants-enumerations-and-structures.md)

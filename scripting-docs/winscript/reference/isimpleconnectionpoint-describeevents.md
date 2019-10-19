@@ -1,5 +1,5 @@
 ---
-title: ISimpleConnectionPoint::DescribeEvents |Microsoft Docs
+title: ISimpleConnectionPoint：:D escribeEvents |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1b5824f945ad25f177fc169b58157377bf53bcce
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b5000689d588fe3f63ec5408893187bba8d13d63
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62786415"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72571815"
 ---
 # <a name="isimpleconnectionpointdescribeevents"></a>ISimpleConnectionPoint::DescribeEvents
-在指定範圍的事件中傳回的 DISPID 和每個事件的名稱。  
+傳回指定的事件範圍內，每個事件的 DISPID 和名稱。  
   
 ## <a name="syntax"></a>語法  
   
@@ -41,19 +41,19 @@ HRESULT DescribeEvents(
   
 #### <a name="parameters"></a>參數  
  `iEvent`  
- [in]要擷取的第一個事件的索引。  
+ 在要取出之第一個事件的索引。  
   
  `cEvents`  
- [in]要擷取的事件數目。  
+ 在要取出的事件數目。  
   
  `prgid`  
- [out]事件的 DISPID 值的陣列。  
+ 脫銷事件 DISPID 值的陣列。  
   
  `prgbstr`  
- [out]事件名稱的陣列。  
+ 脫銷事件名稱的陣列。  
   
  `pcEventsFetched`  
- [out]實際擷取的事件數目。  
+ 脫銷所提取的實際事件數目。  
   
 ## <a name="return-value"></a>傳回值  
  方法會傳回 `HRESULT`。 可能的值包括 (但不限於) 下表中的這些值。  
@@ -61,11 +61,11 @@ HRESULT DescribeEvents(
 |值|描述|  
 |-----------|-----------------|  
 |`S_OK`|方法成功。|  
-|`S_FALSE`|提供比要求更多的事件。 無法使用的事件會表示 DISPID_NULL 與 null 的 BSTR。|  
-|`E_INVALIDARG`|無法擷取任何項目。|  
+|`S_FALSE`|要求的事件數超過可用的數目。 無法使用的事件會以 DISPID_Null 和 Null BSTR 來表示。|  
+|`E_INVALIDARG`|無法提取任何元素。|  
   
 ## <a name="remarks"></a>備註  
- 這個方法會傳回的 DISPID 和每個事件的名稱在指定範圍的事件。  
+ 這個方法會針對指定範圍內的事件，傳回每個事件的 DISPID 和名稱。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [ISimpleConnectionPoint 介面](../../winscript/reference/isimpleconnectionpoint-interface.md)

@@ -1,5 +1,5 @@
 ---
-title: 作用中的指令碼撰寫介面 |Microsoft Docs
+title: 動態指令碼撰寫介面 |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -14,18 +14,18 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 00b041b4cb2009d247572d1e47dfff40d8548927
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 22e06b9723100141a0e3679e401d1bc339dddad5
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63003621"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72562205"
 ---
 # <a name="active-script-authoring-interfaces"></a>動態指令碼撰寫的介面
-ActivAut.h 標頭檔提供本節所列的介面。  
+ActivAut 標頭檔提供本節所列的介面。  
   
-## <a name="in-this-section"></a>本節內容  
- 下列介面讓網頁撰寫：  
+## <a name="in-this-section"></a>本章節內容  
+ 下列介面可啟用網頁撰寫：  
   
 - [IActiveScriptAuthor 介面](../../winscript/reference/iactivescriptauthor-interface.md)  
   
@@ -37,5 +37,5 @@ ActivAut.h 標頭檔提供本節所列的介面。
   
 - [IScriptScriptlet 介面](../../winscript/reference/iscriptscriptlet-interface.md)  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Windows 指令碼介面參考](../../winscript/reference/windows-script-interfaces-reference.md)

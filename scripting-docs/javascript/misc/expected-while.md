@@ -1,5 +1,5 @@
 ---
-title: 必須是 'while' |Microsoft Docs
+title: 必須是 ' while ' |Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
@@ -14,20 +14,20 @@ ms.assetid: 867c10d0-7df6-4ba3-bbe6-7d5b3900cb22
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4ec06ea25a6a6486a444d430e3ef15b888760650
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 89f744413b7ffa60b0a85d7ce0208ba2d529c96d
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62433758"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575908"
 ---
 # <a name="expected-while"></a>必須是 'while'
-您未包含`while`狀況`do...while`迴圈。 A**請勿**陳述式必須有對應`while`測試的程式碼區塊的結尾。  
+您未在 `do...while` 迴圈中包含 `while` 條件。 **Do**語句在程式碼區塊的結尾必須有對應的 `while` 測試。  
   
 ### <a name="to-correct-this-error"></a>更正這個錯誤  
   
-- 包含`while`測試右大括號之後的陳述式。  
+- 在右大括弧後面包含 `while` 測試語句。  
   
-## <a name="see-also"></a>另請參閱  
- [while 陳述式](../../javascript/reference/while-statement-javascript.md)   
+## <a name="see-also"></a>請參閱  
+ [While 語句](../../javascript/reference/while-statement-javascript.md)   
  [控制程式流程](../../javascript/controlling-program-flow-javascript.md)

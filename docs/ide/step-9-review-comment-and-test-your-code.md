@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 31a66556e9476631fa0372b14e73eb8c6241fc63
-ms.sourcegitcommit: 98b02f87c7aa1f5eb7f0d1c86bfa36efa8580c57
-ms.translationtype: HT
+ms.openlocfilehash: 39be6feffb70dd43823af2af0fce719daafc6f78
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72314196"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572479"
 ---
 # <a name="step-9-review-comment-and-test-your-code"></a>步驟 9：檢閱、註解和測試您的程式碼
 
@@ -65,7 +65,7 @@ ms.locfileid: "72314196"
     > [!TIP]
     > 建置 IDE 可讓您輕鬆撰寫程式碼，而「程式碼片段」就是它基於此目的而提供的一種方式。 程式碼片段是捷徑，可展開成一小段程式碼區塊。
     >
-    >  您可以看到所有可用的程式碼片段。 在功能表列上，依序選擇 [工具] > [程式碼片段管理員]。 在C#中，`if` 程式碼片段是**在C#視覺效果**中。 在 Visual Basic 中，`if` 程式碼片段位於 [條件和迴圈] > [程式碼模式] 中。 您可以使用此管理員來瀏覽現有的程式碼片段或加入您自己的程式碼片段。
+    >  您可以看到所有可用的程式碼片段。 在功能表列上，依序選擇 [工具] > [程式碼片段管理員]。 在C#中，`if` 程式碼片段是**在C#視覺效果**中。 針對 Visual Basic，`if` 程式碼片段會  > **條件和迴圈**的程式**代碼模式**。 您可以使用此管理員來瀏覽現有的程式碼片段或加入您自己的程式碼片段。
     >
     >  若要在輸入程式碼時啟動程式碼片段，請輸入程式碼並選擇 **Tab** 鍵。 許多程式碼片段會出現在 [IntelliSense] 視窗中，這就是為何選擇兩次 **Tab** 鍵的原因：第一次是從 [IntelliSense] 視窗中選取程式碼片段，第二次是指示 IDE 使用該程式碼片段。 (IntelliSense 支援 `if` 程式碼片段，但不支援 `ifelse` 程式碼片段)。
 

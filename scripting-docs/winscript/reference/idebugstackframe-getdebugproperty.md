@@ -1,5 +1,5 @@
 ---
-title: IDebugStackFrame::GetDebugProperty |Microsoft Docs
+title: IDebugStackFrame：： GetDebugProperty |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c6c8726474bee28a0022e0d86a7c051dbfda308d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 452c08bb0319167c0dfc1de86bf38a993e3cbad8
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62934669"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574272"
 ---
 # <a name="idebugstackframegetdebugproperty"></a>IDebugStackFrame::GetDebugProperty
-傳回目前的框架屬性瀏覽器。  
+傳回目前框架的屬性瀏覽器。  
   
 ## <a name="syntax"></a>語法  
   
@@ -37,7 +37,7 @@ HRESULT GetDebugProperty(
   
 #### <a name="parameters"></a>參數  
  `ppDebugProp`  
- [out]目前的框架屬性瀏覽器。  
+ 脫銷目前框架的屬性瀏覽器。  
   
 ## <a name="return-value"></a>傳回值  
  方法會傳回 `HRESULT`。 可能的值包括 (但不限於) 下表中的這些值。  
@@ -47,7 +47,7 @@ HRESULT GetDebugProperty(
 |`S_OK`|方法成功。|  
   
 ## <a name="remarks"></a>備註  
- 這個方法會傳回目前的框架屬性瀏覽器。  
+ 這個方法會傳回目前框架的屬性瀏覽器。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDebugStackFrame 介面](../../winscript/reference/idebugstackframe-interface.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty::GetParent |Microsoft Docs
+title: IDebugProperty：： GetParent |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2aeac5e23ec38aa79e5ff5057847429ac97dbb23
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5ca05935ea3565cb8e6237c36ed60b412bdcd418
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62979132"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72562357"
 ---
 # <a name="idebugpropertygetparent"></a>IDebugProperty::GetParent
 取得屬性的父屬性。  
@@ -37,10 +37,10 @@ HRESULT GetParent (
   
 #### <a name="parameters"></a>參數  
  `ppParent`  
- [out]傳回`IDebugProperty`介面，表示屬性的父代。  
+ 脫銷傳回表示屬性父系的 `IDebugProperty` 介面。  
   
 ## <a name="return-value"></a>傳回值  
- 會傳回有效`HRESULT`，通常是`S_OK`。  
+ 傳回有效的 `HRESULT`，通常是 `S_OK`。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDebugProperty 介面](../../winscript/reference/idebugproperty-interface.md)

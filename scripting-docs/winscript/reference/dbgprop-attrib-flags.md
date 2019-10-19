@@ -1,5 +1,5 @@
 ---
-title: DBGPROP_ATTRIB_FLAGS | Microsoft Docs
+title: DBGPROP_ATTRIB_FLAGS |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -19,14 +19,14 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0324353d716430148b4b3c7b8adf9262e0dc3b7b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3170e310aa3177e2ca7a1dd81ead02bcc4050114
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62955272"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572604"
 ---
-# <a name="dbgpropattribflags"></a>DBGPROP_ATTRIB_FLAGS
+# <a name="dbgprop_attrib_flags"></a>DBGPROP_ATTRIB_FLAGS
 描述 `IDebugProperty` 的各種屬性。 `DebugPropertyInfo` 結構的成員。  
   
 ## <a name="syntax"></a>語法  
@@ -54,7 +54,7 @@ DBGPROP_ATTRIB_NO_ATTRIB  =0x00000000,
   
 ```  
   
-## <a name="members"></a>成員  
+## <a name="members"></a>Members  
  DBGPROP_ATTRIB_NO_ATTRIB  
  表示沒有屬性。  
   
@@ -109,6 +109,6 @@ DBGPROP_ATTRIB_NO_ATTRIB  =0x00000000,
 ## <a name="remarks"></a>備註  
  這些旗標也可用來篩選物件的子系。 其值可與位元 OR 結合。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDebugProperty 介面](../../winscript/reference/idebugproperty-interface.md)   
  [DebugPropertyInfo 結構](../../winscript/reference/debugpropertyinfo-structure.md)

@@ -1,5 +1,5 @@
 ---
-title: DBGPROP_INFO_FLAGS | Microsoft Docs
+title: DBGPROP_INFO_FLAGS |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -19,15 +19,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c63cf941bca1965fc4a2e3997f0c0b50ebc44035
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5b8131531292e0f88108942648073883050dd609
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62955298"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572588"
 ---
-# <a name="dbgpropinfoflags"></a>DBGPROP_INFO_FLAGS
-用來指定`DebugPropertyInfo`欄位  
+# <a name="dbgprop_info_flags"></a>DBGPROP_INFO_FLAGS
+用來指定 `DebugPropertyInfo` 欄位  
   
 ## <a name="syntax"></a>語法  
   
@@ -43,28 +43,28 @@ enum {
 };  
 ```  
   
-## <a name="members"></a>成員  
+## <a name="members"></a>Members  
  DBGPROP_INFO_NAME  
- 初始化`bstrName`欄位。  
+ 初始化 `bstrName` 欄位。  
   
  DBGPROP_INFO_TYPE  
- 初始化`bstrType`欄位。  
+ 初始化 `bstrType` 欄位。  
   
  DBGPROP_INFO_VALUE  
- 初始化`bstrValue`欄位。  
+ 初始化 `bstrValue` 欄位。  
   
  DBGPROP_INFO_FULLNAME  
- 初始化`bstrFullName`欄位。  
+ 初始化 `bstrFullName` 欄位。  
   
  DBGPROP_INFO_ATTRIBUTES  
- 初始化`dwAttrib`欄位。  
+ 初始化 `dwAttrib` 欄位。  
   
  DBGPROP_INFO_DEBUGPROP  
- 初始化`pDebugProp`欄位包含`IDebugProperty`介面。  
+ 初始化包含 `IDebugProperty` 介面的 `pDebugProp` 欄位。  
   
  DBGPROP_INFO_AUTOEXPAND  
- 指定 [值] 欄位應該包含自動擴充的值，是否有的話，這種類型的物件。  
+ 指定值欄位應包含此類型物件的自動擴充值（如果有的話）。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [DebugPropertyInfo 結構](../../winscript/reference/debugpropertyinfo-structure.md)   
  [IDebugProperty 介面](../../winscript/reference/idebugproperty-interface.md)

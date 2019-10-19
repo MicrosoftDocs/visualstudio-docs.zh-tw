@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentText::GetText |Microsoft Docs
+title: IDebugDocumentText：： GetText |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 63e1fee3531272f18c85c23ea83b8ca12920bd2a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e6472c40802fff4dad6e5ecc8f2729c95459e09f
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62970857"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572076"
 ---
 # <a name="idebugdocumenttextgettext"></a>IDebugDocumentText::GetText
-擷取字元和/或字元相關聯的屬性中的字元位置範圍。  
+抓取字元和（或）與字元位置範圍相關聯的字元屬性。  
   
 ## <a name="syntax"></a>語法  
   
@@ -41,19 +41,19 @@ HRESULT GetText(
   
 #### <a name="parameters"></a>參數  
  `cCharacterPosition`  
- [in]開始位置的字元位置範圍。  
+ 在字元位置範圍的開始位置。  
   
  `pcharText`  
- [in、 out]字元的文字緩衝。 緩衝區必須夠大，無法保存`cMaxChars`字元。 如果此參數為 NULL，此方法沒有傳回字元。  
+ [in、out]字元文本緩衝區。 緩衝區必須夠大，才能容納 `cMaxChars` 個字元。 如果此參數為 Null，則方法不會傳回字元。  
   
  `pstaTextAttr`  
- [in、 out]字元屬性緩衝區。 緩衝區必須夠大，無法保存`cMaxChars`字元。 如果此參數為 NULL，此方法沒有傳回屬性。  
+ [in、out]字元屬性緩衝區。 緩衝區必須夠大，才能容納 `cMaxChars` 個字元。 如果此參數為 Null，則方法不會傳回屬性。  
   
  `pcNumChars`  
- [in、 out]傳回字元/屬性數目。 這個參數必須設定為零之前呼叫這個方法。  
+ [in、out]傳回的字元/屬性數目。 呼叫這個方法之前，必須將這個參數設定為零。  
   
  `cMaxChars`  
- [in]字元位置範圍中的字元數。 也會指定要傳回字元的數目上限。  
+ 在字元位置範圍中的字元數。 也會指定要傳回的最大字元數。  
   
 ## <a name="return-value"></a>傳回值  
  方法會傳回 `HRESULT`。 可能的值包括 (但不限於) 下表中的這些值。  
@@ -63,8 +63,8 @@ HRESULT GetText(
 |`S_OK`|方法成功。|  
   
 ## <a name="remarks"></a>備註  
- 這個方法會擷取字元和/或字元相關聯的屬性中的字元位置範圍。 字元位置和字元數所指定的字元位置範圍。  
+ 這個方法會抓取字元和（或）與字元位置範圍相關聯的字元屬性。 字元位置範圍是由字元位置和數個字元所指定。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDebugDocumentText 介面](../../winscript/reference/idebugdocumenttext-interface.md)   
  [SOURCE_TEXT_ATTR 列舉](../../winscript/reference/source-text-attr-enumeration.md)

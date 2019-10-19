@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentHost::GetPathName | Microsoft Docs
+title: IDebugDocumentHost：： GetPathName |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 09e36411cdd378e78ac3bc59df5330eb8ecb47b6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 33ebcde4cf1db28e199f13fae720374bd1b64763
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63008744"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72569289"
 ---
 # <a name="idebugdocumenthostgetpathname"></a>IDebugDocumentHost::GetPathName
-傳回文件的原始程式檔的完整路徑和檔案名稱。  
+傳回檔原始程式檔的完整路徑和檔案名。  
   
 ## <a name="syntax"></a>語法  
   
@@ -38,10 +38,10 @@ HRESULT GetPathName(
   
 #### <a name="parameters"></a>參數  
  `pbstrLongName`  
- [out]字串，包含完整的名稱。  
+ 脫銷包含完整名稱的字串。  
   
  `pfIsOriginalFile`  
- [out]旗標，也就是如果`pbstrLongName`否則參考文件，則為 false 的原始檔。  
+ 脫銷如果 `pbstrLongName` 參考檔的原始檔案，則為 true 的旗標，否則為 false。  
   
 ## <a name="return-value"></a>傳回值  
  方法會傳回 `HRESULT`。 可能的值包括 (但不限於) 下表中的這些值。  
@@ -49,10 +49,10 @@ HRESULT GetPathName(
 |值|描述|  
 |-----------|-----------------|  
 |`S_OK`|方法成功。|  
-|`E_FAIL`|沒有原始程式檔就可以建立或決定。|  
+|`E_FAIL`|不能建立或判斷來源檔案。|  
   
 ## <a name="remarks"></a>備註  
- 這個方法會傳回文件的原始程式檔的完整路徑和檔案名稱。  
+ 這個方法會傳回檔原始程式檔的完整路徑和檔案名。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDebugDocumentHost 介面](../../winscript/reference/idebugdocumenthost-interface.md)

@@ -1,5 +1,5 @@
 ---
-title: 'Idebugdocumenthost:: Getdeferredtext |Microsoft Docs'
+title: IDebugDocumentHost：： GetDeferredText |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3e5800a6de15d2d59208022fa44d3c2f4c931e14
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 273b4eb52b7263d34c347dff3a00479945b809df
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63446577"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72569432"
 ---
 # <a name="idebugdocumenthostgetdeferredtext"></a>IDebugDocumentHost::GetDeferredText
-傳回已加入使用的字元範圍`IDebugDocumentHelper::AddDeferredText`方法，在原始的主機文件。  
+傳回在原始主控制項檔中，使用 `IDebugDocumentHelper::AddDeferredText` 方法新增的字元範圍。  
   
 ## <a name="syntax"></a>語法  
   
@@ -41,19 +41,19 @@ HRESULT GetDeferredText(
   
 #### <a name="parameters"></a>參數  
  `dwTextStartCookie`  
- [in]主應用程式定義的 cookie，代表文字的開始位置。  
+ 在主機定義的 cookie，代表文字的開始位置。  
   
  `pcharText`  
- [in、 out]字元的文字緩衝。 這個方法不會傳回字元，如果這個參數是`NULL`。  
+ [in、out]字元文本緩衝區。 如果 `NULL` 此參數，則這個方法不會傳回字元。  
   
  `pstaTextAttr`  
- [in、 out]字元屬性緩衝區。 這個方法不會傳回屬性，如果這個參數是`NULL`。  
+ [in、out]字元屬性緩衝區。 如果 `NULL` 此參數，則這個方法不會傳回屬性。  
   
  `pcNumChars`  
- [in、 out]表示傳回的字元/屬性的實際數目。 這個參數必須設定為零之前呼叫這個方法。  
+ [in、out]表示傳回的實際字元/屬性數目。 呼叫這個方法之前，必須將這個參數設定為零。  
   
  `cMaxChars`  
- [in]要傳回的字元數目上限。  
+ 在要傳回的最大字元數。  
   
 ## <a name="return-value"></a>傳回值  
  方法會傳回 `HRESULT`。 可能的值包括 (但不限於) 下表中的這些值。  
@@ -61,15 +61,15 @@ HRESULT GetDeferredText(
 |值|描述|  
 |-----------|-----------------|  
 |`S_OK`|方法成功。|  
-|`E_NOTIMPL`|未實作方法。|  
+|`E_NOTIMPL`|未執行方法。|  
   
 ## <a name="remarks"></a>備註  
- 這個方法可能會傳回`E_NOTIMPL`，如果主應用程式不會呼叫`IDebugDocumentHelper::AddDeferredText`。  
+ 如果主機未呼叫 `IDebugDocumentHelper::AddDeferredText`，這個方法可能會傳回 `E_NOTIMPL`。  
   
 > [!NOTE]
-> 這個方法會傳回原始文件的文字。 主應用程式不會不追蹤的編輯動作或其他文件的變更。  
+> 這個方法會傳回原始檔案中的文字。 主機不會追蹤檔的編輯或其他變更。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDebugDocumentHost 介面](../../winscript/reference/idebugdocumenthost-interface.md)   
- [IDebugDocumentHelper::AddDeferredText](../../winscript/reference/idebugdocumenthelper-adddeferredtext.md)   
+ [IDebugDocumentHelper：： AddDeferredText](../../winscript/reference/idebugdocumenthelper-adddeferredtext.md)    
  [SOURCE_TEXT_ATTR 列舉](../../winscript/reference/source-text-attr-enumeration.md)

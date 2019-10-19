@@ -15,14 +15,14 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 597764d1e55b895c30e2b00981a7a1be53e16022
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3645e95859e2c2b785e01c7ee9a3cbee8155138d
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62968655"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72571725"
 ---
-# <a name="jspropertymembers-enumeration"></a>JS_PROPERTY_MEMBERS 列舉
+# <a name="js_property_members-enumeration"></a>JS_PROPERTY_MEMBERS 列舉
 旗標，用於指定在物件成員的要求中傳回的資訊類型。  
   
 ## <a name="syntax"></a>語法  
@@ -31,17 +31,17 @@ ms.locfileid: "62968655"
 enum JS_PROPERTY_MEMBERS{   JS_PROPERTY_MEMBERS_ALL = 0,   JS_PROPERTY_MEMBERS_ARGUMENTS = 1} JS_PROPERTY_MEMBERS;  
 ```  
   
-## <a name="members"></a>成員  
+## <a name="members"></a>Members  
   
 ### <a name="values"></a>值  
   
-|名稱|描述|  
+|[屬性]|描述|  
 |----------|-----------------|  
-|`JS_PROPERTY_MEMBERS_ALL`|代表要列舉所有成員的要求。|  
-|`JS_PROPERTY_MEMBERS_ARGUMENTS`|表示列舉引數僅要求。|  
+|`JS_PROPERTY_MEMBERS_ALL`|表示列舉所有成員的要求。|  
+|`JS_PROPERTY_MEMBERS_ARGUMENTS`|表示只列舉引數的要求。|  
   
 ## <a name="requirements"></a>需求  
- **標頭：** jscript9diag.h  
+ **標頭：** jscript9diag。h  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Windows 指令碼介面參考](../../winscript/reference/windows-script-interfaces-reference.md)

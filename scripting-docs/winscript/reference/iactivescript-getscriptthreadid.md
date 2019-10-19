@@ -1,5 +1,5 @@
 ---
-title: IActiveScript::GetScriptThreadID | Microsoft Docs
+title: IActiveScript：： GetScriptThreadID |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d329e08e6a17d9edcdf26e14b468c3c56f036c00
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2a0fb1eebfcb6ed100056289fab6bce662f86a7b
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62935688"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575710"
 ---
 # <a name="iactivescriptgetscriptthreadid"></a>IActiveScript::GetScriptThreadID
-擷取與指定的 Win32 執行緒相關聯執行緒的指令碼引擎-定義識別碼。  
+針對與指定的 Win32 執行緒相關聯的執行緒，抓取腳本引擎定義的識別碼。  
   
 ## <a name="syntax"></a>語法  
   
@@ -38,24 +38,24 @@ HRESULT GetScriptThreadID(
   
 #### <a name="parameters"></a>參數  
  `dwWin32ThreadID` ,  
- [in]目前的處理序中執行的 Win32 執行緒的執行緒識別項。 使用[IActiveScript::GetCurrentScriptThreadID](../../winscript/reference/iactivescript-getcurrentscriptthreadid.md)函式來擷取目前執行中執行緒的執行緒識別碼。  
+ 在目前進程中執行中 Win32 執行緒的執行緒識別碼。 使用[IActiveScript：： GetCurrentScriptThreadID](../../winscript/reference/iactivescript-getcurrentscriptthreadid.md)函式來抓取目前正在執行之執行緒的執行緒識別碼。  
   
  `pstidThread` ,  
- [out]接收指定的 Win32 執行緒相關聯的指令碼執行緒識別碼的變數位址。 這個識別項的解譯會保留給指令碼引擎，但它可以是只是 Windows 執行緒識別碼的複本。 請注意，是否 Win32 執行緒終止時，這個識別碼就會變成未指派，接著可能會指派到另一個執行緒。  
+ 脫銷接收與指定的 Win32 執行緒相關聯之腳本執行緒識別碼的變數位址。 此識別碼的解讀會留給腳本引擎，但它可以只是 Windows 執行緒識別碼的複本。 請注意，如果 Win32 執行緒終止，此識別碼就會變成未指派，而且之後可能會指派給另一個執行緒。  
   
 ## <a name="return-value"></a>傳回值  
- 會傳回下列值之一：  
+ 傳回下列其中一個值：  
   
 |傳回值|意義|  
 |------------------|-------------|  
 |`S_OK`|成功。|  
-|`E_POINTER`|指定了無效的指標。|  
-|`E_UNEXPECTED`|不需要呼叫 （例如，指令碼引擎有尚未載入或初始化），因此失敗。|  
+|`E_POINTER`|指定了不正確指標。|  
+|`E_UNEXPECTED`|不需要呼叫（例如，腳本引擎尚未載入或初始化），因此失敗。|  
   
 ## <a name="remarks"></a>備註  
- 擷取的識別碼可用於指令碼的執行緒執行控制方法的後續呼叫這類[iactivescript:: Interruptscriptthread](../../winscript/reference/iactivescript-interruptscriptthread.md)方法。  
+ 抓取的識別碼可用於腳本執行緒執行控制方法的後續呼叫，例如[IActiveScript：： InterruptScriptThread](../../winscript/reference/iactivescript-interruptscriptthread.md)方法。  
   
- 可以從非基底執行緒呼叫這個方法，不會導致主機物件或非基底圖說[iactivescript:: Interruptscriptthread](../../winscript/reference/iactivescript-interruptscriptthread.md)介面。  
+ 這個方法可以從非基底線程呼叫，而不會產生非基底的標注來裝載物件或[IActiveScript：： InterruptScriptThread](../../winscript/reference/iactivescript-interruptscriptthread.md)介面。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IActiveScript](../../winscript/reference/iactivescript.md)

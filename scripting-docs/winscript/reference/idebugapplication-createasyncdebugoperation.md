@@ -1,5 +1,5 @@
 ---
-title: IDebugApplication::CreateAsyncDebugOperation | Microsoft Docs
+title: IDebugApplication：： CreateAsyncDebugOperation |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c60c84dbd3be9248e2bd075e65d53f7f9361d0b5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1feb8207fb7e7a7faf4427be189c4952139ef32c
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62991008"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575565"
 ---
 # <a name="idebugapplicationcreateasyncdebugoperation"></a>IDebugApplication::CreateAsyncDebugOperation
-提供指定的同步偵錯作業的非同步存取。  
+提供給定同步 debug 作業的非同步存取。  
   
 ## <a name="syntax"></a>語法  
   
@@ -38,10 +38,10 @@ HRESULT CreateAsyncDebugOperation(
   
 #### <a name="parameters"></a>參數  
  `psdo`  
- [in]同步的偵錯作業物件中。  
+ 在同步的 debug 工作物件。  
   
  `ppado`  
- [out]非同步偵錯作業物件中。  
+ 脫銷非同步 debug 工作物件。  
   
 ## <a name="return-value"></a>傳回值  
  方法會傳回 `HRESULT`。 可能的值包括 (但不限於) 下表中的這些值。  
@@ -51,9 +51,9 @@ HRESULT CreateAsyncDebugOperation(
 |`S_OK`|方法成功。|  
   
 ## <a name="remarks"></a>備註  
- 此方法允許語言引擎來以非同步方式評估運算式，而不明確同步處理與偵錯工具執行緒。 如需詳細資訊，請參閱 < [IDebugSyncOperation 介面](../../winscript/reference/idebugsyncoperation-interface.md)並[IDebugAsyncOperation 介面](../../winscript/reference/idebugasyncoperation-interface.md)。  
+ 這個方法可讓語言引擎以非同步方式評估運算式，而不需要明確地與偵錯工具執行緒同步處理。 如需詳細資訊，請參閱[IDebugSyncOperation 介面](../../winscript/reference/idebugsyncoperation-interface.md)和[IDebugAsyncOperation 介面](../../winscript/reference/idebugasyncoperation-interface.md)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDebugApplication 介面](../../winscript/reference/idebugapplication-interface.md)   
  [IDebugSyncOperation 介面](../../winscript/reference/idebugsyncoperation-interface.md)   
  [IDebugAsyncOperation 介面](../../winscript/reference/idebugasyncoperation-interface.md)

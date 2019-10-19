@@ -15,12 +15,12 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8aeb2dcfc116c8c735cda95fc9d7ab9da97cab3b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f6c6470386414158a53794d1a5c580492edc0e15
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62968642"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572293"
 ---
 # <a name="jsdebugpropertyinfo-structure"></a>JsDebugPropertyInfo 結構
 指出有關屬性的資訊。  
@@ -31,7 +31,7 @@ ms.locfileid: "62968642"
 typedef struct tagJsDebugPropertyInfo{   BSTR name;   BSTR type;   BSTR value;   BSTR fullName;   JS_PROPERTY_ATTRIBUTES attr;} JsDebugPropertyInfo;  
 ```  
   
-## <a name="members"></a>成員  
+## <a name="members"></a>Members  
  `name`  
  屬性的名稱。  
   
@@ -45,10 +45,10 @@ typedef struct tagJsDebugPropertyInfo{   BSTR name;   BSTR type;   BSTR value;  
  屬性的完整名稱。  
   
  `attr`  
- 列舉型別，表示該屬性的屬性。  
+ 表示屬性屬性的列舉。  
   
 ## <a name="requirements"></a>需求  
- **標頭：** jscript9diag.h  
+ **標頭：** jscript9diag。h  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Windows 指令碼介面參考](../../winscript/reference/windows-script-interfaces-reference.md)

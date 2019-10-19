@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptAuthor::ParseScriptText | Microsoft Docs
+title: IActiveScriptAuthor：:P arseScriptText |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fe6870f3b19c5727fdbea0418b8373b990cb671a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 90d5ab0fa700ed29b5fb37b1c48617cedec871b9
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62955077"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576143"
 ---
 # <a name="iactivescriptauthorparsescripttext"></a>IActiveScriptAuthor::ParseScriptText
-剖析指令碼文字、 將文字加入指令碼撰寫引擎，並建立`IScriptEntry`物件，對應至指令碼區塊。  
+剖析腳本文字、將文字新增至腳本撰寫引擎，並建立與腳本區塊對應的 `IScriptEntry` 物件。  
   
 ## <a name="syntax"></a>語法  
   
@@ -41,19 +41,19 @@ HRESULT ParseScriptText(
   
 #### <a name="parameters"></a>參數  
  `pszCode`  
- [in]要剖析的指令碼文字。  
+ 在要剖析的腳本文字。  
   
  `pszItemName`  
- [in]包含與指令碼區塊相關聯的項目名稱的緩衝區位址。  
+ 在包含與腳本區塊相關聯之專案名稱的緩衝區位址。  
   
  `pszDelimiter`  
- [in]End 的指令碼區塊分隔符號的位址。 當`pszCode`剖析文字資料流，從主應用程式通常會使用分隔符號 （例如兩個單引號），來偵測指令碼區塊的結尾。 如果沒有任何分隔符號來識別指令碼區塊的結尾，請設定此參數為 NULL。  
+ 在結束腳本區塊分隔符號的位址。 從文字的資料流程剖析 `pszCode` 時，主機通常會使用分隔符號（例如兩個單引號）來偵測腳本區塊的結尾。 如果沒有用來識別腳本區塊結尾的分隔符號，請將此參數設為 Null。  
   
  `dwCookie`  
- [in]應用程式定義的值與新相關聯`IScriptEntry`物件。  
+ 在與新的 `IScriptEntry` 物件相關聯的應用程式定義值。  
   
  `dwFlags`  
- [in]不使用。  
+ 在未使用。  
   
 ## <a name="return-value"></a>傳回值  
  `HRESULT`。 可能的值包括 (但不限於) 下表中的這些值。  
@@ -64,5 +64,5 @@ HRESULT ParseScriptText(
   
 ## <a name="remarks"></a>備註  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IActiveScriptAuthor 介面](../../winscript/reference/iactivescriptauthor-interface.md)

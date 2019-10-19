@@ -1,5 +1,5 @@
 ---
-title: IDebugApplicationNode100::SetFilterForEventSink | Microsoft Docs
+title: IDebugApplicationNode100：： SetFilterForEventSink |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -13,18 +13,18 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 662c433134bc278f343381edcb4aedf383af6078
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 4f85241bee7b35d40bf193a613a6fefda4265be6
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63446682"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574729"
 ---
 # <a name="idebugapplicationnode100setfilterforeventsink"></a>IDebugApplicationNode100::SetFilterForEventSink
-特定設定的篩選條件[IDebugApplicationNodeEvents 介面](../../winscript/reference/idebugapplicationnodeevents-interface.md)實作。 它可讓指令碼偵錯工具若要篩選出編譯器產生的子應用程式節點，使 PDM 會不會再傳送事件時，這些是建立或移除。 根據預設，會傳送所有的節點。  
+設定特定[IDebugApplicationNodeEvents 介面](../../winscript/reference/idebugapplicationnodeevents-interface.md)執行的篩選。 它可讓腳本偵錯工具篩選掉編譯器所產生的子應用程式節點，讓 PDM 在建立或移除事件時，不會再傳送事件。 根據預設，將會傳送所有節點。  
   
 > [!IMPORTANT]
-> [IDebugApplicationNode100 介面](../../winscript/reference/idebugapplicationnode100-interface.md)是由 PDM v10.0 實作和更新版本。 可在 activdbg100.h 中找到。  
+> [IDebugApplicationNode100 介面](../../winscript/reference/idebugapplicationnode100-interface.md)是由 PDM 10.0 和更新版本所執行。 可在 activdbg100.h 中找到。  
   
 ## <a name="syntax"></a>語法  
   
@@ -34,10 +34,10 @@ HRESULT SetFilterForEventSink(        [in] DWORD dwCookie,        [in] APPLICATI
   
 #### <a name="parameters"></a>參數  
  `dwCookie`  
- 篩選條件的 cookie。  
+ 篩選準則的 cookie。  
   
  `filter`  
  篩選器。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDebugApplicationNode100 介面](../../winscript/reference/idebugapplicationnode100-interface.md)

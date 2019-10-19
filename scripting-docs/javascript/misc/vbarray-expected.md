@@ -1,5 +1,5 @@
 ---
-title: 必須是 VBArray |Microsoft Docs
+title: 需要 VBArray |Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
@@ -14,26 +14,26 @@ ms.assetid: f2998d7d-13a4-4bbe-b872-3ff3316551e4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5d1fabd8da6f825a266614a4a5c7fabd5c307130
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 467a6ec6ca45f2ea0411e0266163ca23a9e3d594
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63005988"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572502"
 ---
 # <a name="vbarray-expected"></a>必須是 VBArray
-您提供不是 Visual Basic 的 safeArray，當一個預期的物件。  
+您提供了一個不是 Visual Basic safeArray 的物件（如果有的話）。  
   
 ```js
 new VBArray(safeArray);  
 ```  
   
- VBArray 是唯讀的，而且無法直接建立。 SafeArray 引數是 VBArray 值，而且必須取得 VBArray 值，才會傳遞至`VBArray`建構函式。 您只能從現有的 ActiveX 或其他物件中擷取此值，來達到這個目的。  
+ VBArray 是唯讀的，而且無法直接建立。 SafeArray 引數是 VBArray 值，必須先取得 VBArray 值，才能傳遞給 `VBArray` 的函式。 您只能從現有的 ActiveX 或其他物件中擷取此值，來達到這個目的。  
   
 ### <a name="to-correct-this-error"></a>更正這個錯誤  
   
-- 請確定您只傳遞**VBArray**物件至**VBArray**建構函式。  
+- 請確定您只將**VBArray**物件傳遞至**VBArray**的函式。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [VBArray 物件](../../javascript/reference/vbarray-object-javascript.md)   
  [使用陣列](../../javascript/advanced/using-arrays-javascript.md)

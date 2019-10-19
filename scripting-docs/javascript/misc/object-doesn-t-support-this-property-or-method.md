@@ -14,12 +14,12 @@ ms.assetid: 35f7a9b4-74fa-4ddb-b9f2-1a92345cb2ff
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 433972790310559b19ca5bc2c982c32e699e0e60
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ad324af24b7a5555803e8b897343030d8bf210bf
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63007439"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573738"
 ---
 # <a name="object-doesnt-support-this-property-or-method"></a>物件不支援此屬性或方法
 您指定此物件沒有的屬性或方法。 並非所有物件都支援所有屬性和方法。  
@@ -32,6 +32,6 @@ ms.locfileid: "63007439"
   
 - 如需詳細資訊，請參閱物件的文件。  
   
-## <a name="see-also"></a>另請參閱  
- [Object 物件](../../javascript/reference/object-object-javascript.md)   
+## <a name="see-also"></a>請參閱  
+ [物件物件](../../javascript/reference/object-object-javascript.md)   
  [JavaScript 物件](../../javascript/reference/javascript-objects.md)

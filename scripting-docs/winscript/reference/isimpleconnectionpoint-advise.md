@@ -1,5 +1,5 @@
 ---
-title: ISimpleConnectionPoint::Advise |Microsoft Docs
+title: ISimpleConnectionPoint：： Advise |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 98db9c92f682808ce8ecc9f6aa382a2eb2bd8495
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d7d08d4774dffbfd840c674b15abe82bedb37e5f
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62786258"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72571834"
 ---
 # <a name="isimpleconnectionpointadvise"></a>ISimpleConnectionPoint::Advise
-建立簡單的連接點物件與用戶端接收之間的連線。  
+建立簡單連接點物件與用戶端接收之間的連接。  
   
 ## <a name="syntax"></a>語法  
   
@@ -38,10 +38,10 @@ HRESULT Advise(
   
 #### <a name="parameters"></a>參數  
  `pdisp`  
- [in]指標`IDispatch`介面在用戶端上的通知接收。 用戶端接收會收到傳出呼叫，從簡單的連接點。  
+ 在用戶端的建議接收上 `IDispatch` 介面的指標。 用戶端的接收會接收來自簡單連接點的撥出電話。  
   
  `pdwCookie`  
- [out]傳回的權杖，可唯一識別此連線的指標。 呼叫端會使用此權杖稍後若要刪除連接傳遞至`ISimpleConnectionPoint::Unadvise`方法。 如果未成功建立連線，這個值會是零。  
+ 脫銷可唯一識別此連接之傳回 token 的指標。 呼叫者稍後會使用此權杖來刪除連接，方法是將它傳遞給 `ISimpleConnectionPoint::Unadvise` 方法。 如果連接未成功建立，此值會是零。  
   
 ## <a name="return-value"></a>傳回值  
  方法會傳回 `HRESULT`。 可能的值包括 (但不限於) 下表中的這些值。  
@@ -51,8 +51,8 @@ HRESULT Advise(
 |`S_OK`|方法成功。|  
   
 ## <a name="remarks"></a>備註  
- 這個方法會建立簡單的連接點物件與用戶端接收器之間的連線。  
+ 這個方法會建立簡單連接點物件與用戶端接收之間的連接。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [ISimpleConnectionPoint 介面](../../winscript/reference/isimpleconnectionpoint-interface.md)   
  [ISimpleConnectionPoint::Unadvise](../../winscript/reference/isimpleconnectionpoint-unadvise.md)

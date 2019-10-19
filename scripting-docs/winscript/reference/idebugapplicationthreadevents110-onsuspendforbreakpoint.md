@@ -1,5 +1,5 @@
 ---
-title: IDebugApplicationThreadEvents110::OnSuspendForBreakPoint |Microsoft Docs
+title: IDebugApplicationThreadEvents110：： OnSuspendForBreakPoint |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -13,18 +13,18 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a9e39af9784b139e935c271fca6db565136352cf
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: b5d73d7769dd48889a75da63da64be1d2977a088
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440426"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573345"
 ---
 # <a name="idebugapplicationthreadevents110onsuspendforbreakpoint"></a>IDebugApplicationThreadEvents110::OnSuspendForBreakPoint
-判斷執行緒是否具有完整的停用中斷點，並還沒有已恢復正常執行。  
+判斷線程是否已完全暫止中斷點，而且尚未繼續正常執行。  
   
 > [!IMPORTANT]
-> [IDebugApplicationThreadEvents110 介面](../../winscript/reference/idebugapplicationthreadevents110-interface.md)是實作由 PDM v11.0 和更新版本。 可在 activdbg100.h 中找到。  
+> [IDebugApplicationThreadEvents110 介面](../../winscript/reference/idebugapplicationthreadevents110-interface.md)是由 PDM 11.0 和更新版本所執行。 可在 activdbg100.h 中找到。  
   
 ## <a name="syntax"></a>語法  
   
@@ -35,5 +35,5 @@ HRESULT OnSuspendForBreakPoint( void );
 #### <a name="parameters"></a>參數  
  這個方法沒有任何參數。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDebugApplicationThreadEvents110 介面](../../winscript/reference/idebugapplicationthreadevents110-interface.md)

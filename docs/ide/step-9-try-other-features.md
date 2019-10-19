@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aff87247afb79d62867da9e55f7a059192789d79
-ms.sourcegitcommit: 6eed0372976c0167b9a6d42ba443f9a474b8bb91
+ms.openlocfilehash: e5af132efde0c1a49e5404fa602363aab0554e6f
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71118848"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572473"
 ---
 # <a name="step-9-try-other-features"></a>步驟 9：嘗試其他功能
 若要了解詳細資訊，請試著變更圖示和色彩、加入遊戲計時器，以及加入音效。 若要讓遊戲更具挑戰性，請試著使戲局變大並調整計時器。
@@ -46,10 +46,8 @@ ms.locfileid: "71118848"
 
 - 如果玩家的速度太慢回應而且並未在特定時間內及時選擇第二個圖示，則隱藏第一個圖示，可讓遊戲更具挑戰性。
 
-## <a name="to-continue-or-review"></a>若要繼續或檢視
+## <a name="to-continue-or-review"></a>繼續或檢視
 
-- 如果您碰到程式開發的問題，請嘗試發表問題至 MSDN 論壇。 請參閱 [Visual Basic 論壇](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=vbgeneral)和 [Visual C# 論壇](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=csharpgeneral)。
+- 其中提供了很好的免費視訊學習資源。 若要深入了解 Visual Basic 中的程式設計，請參閱 [Visual Basic 基礎：徹底初學者開發](https://channel9.msdn.com/Series/Visual-Basic-Development-for-Absolute-Beginners) \(英文\)。 若要深入瞭解中的C#程式設計，請參閱[ C#基本概念：適用于絕對初學者的開發](https://channel9.msdn.com/Series/C-Sharp-Fundamentals-Development-for-Absolute-Beginners)。
 
-- 其中提供了很好的免費視訊學習資源。 若要深入了解 Visual Basic 中的程式設計，請參閱 [Visual Basic fundamentals:Development for absolute beginners](https://channel9.msdn.com/Series/Visual-Basic-Development-for-Absolute-Beginners) (Visual Basic 基本概念：適合完全初學者的開發)。 若要深入了解 Visual C# 中的程式設計，請參閱 [C# fundamentals:Development for absolute beginners](https://channel9.msdn.com/Series/C-Sharp-Fundamentals-Development-for-Absolute-Beginners) (C# 基本概念：適合完全初學者的開發)。
-
-- 若要回到上一個教學課程步驟，請參閱[步驟 8：新增驗證玩家是否勝利的方法](../ide/step-8-add-a-method-to-verify-whether-the-player-won.md)。
+- 若要返回上一個教學課程步驟，請參閱[步驟 8：新增方法以驗證玩家是否贏了](../ide/step-8-add-a-method-to-verify-whether-the-player-won.md)。

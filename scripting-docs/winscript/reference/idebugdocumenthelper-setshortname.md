@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentHelper::SetShortName |Microsoft Docs
+title: IDebugDocumentHelper：： SetShortName |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 84cab7872272b08e12c532e6c07b4afb741a53c3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 40716b65c863106b6964a65efcf47dcdcdd6bfc5
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62963542"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72569944"
 ---
 # <a name="idebugdocumenthelpersetshortname"></a>IDebugDocumentHelper::SetShortName
-設定文件的簡短名稱。  
+設定檔的簡短名稱。  
   
 ## <a name="syntax"></a>語法  
   
@@ -37,7 +37,7 @@ HRESULT SetShortName(
   
 #### <a name="parameters"></a>參數  
  `pszShortName`  
- [in]以 null 結束的字串，包含文件的簡短名稱。  
+ 在以 null 終止的字串，其中包含檔的簡短名稱。  
   
 ## <a name="return-value"></a>傳回值  
  方法會傳回 `HRESULT`。 可能的值包括 (但不限於) 下表中的這些值。  
@@ -47,7 +47,7 @@ HRESULT SetShortName(
 |`S_OK`|方法成功。|  
   
 ## <a name="remarks"></a>備註  
- 這個方法會設定文件的新簡短名稱。  
+ 這個方法會為檔設定新的簡短名稱。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDebugDocumentHelper 介面](../../winscript/reference/idebugdocumenthelper-interface.md)

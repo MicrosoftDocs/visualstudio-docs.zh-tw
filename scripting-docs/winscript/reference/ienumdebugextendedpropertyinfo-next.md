@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugExtendedPropertyInfo::Next |Microsoft Docs
+title: IEnumDebugExtendedPropertyInfo：： Next |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 65e734d1cf57fe9387407a80c9d3e76d7f53ada8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 23ebc3e3fd1f7802f4630be42a594d73f8657e43
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62963473"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574264"
 ---
 # <a name="ienumdebugextendedpropertyinfonext"></a>IEnumDebugExtendedPropertyInfo::Next
-擷取指定的數目的`ExtendedDebugPropertyInfo`列舉型別序列中的結構。  
+在列舉序列中，抓取指定數目的 `ExtendedDebugPropertyInfo` 結構。  
   
 ## <a name="syntax"></a>語法  
   
@@ -39,17 +39,17 @@ HRESULT Next (
   
 #### <a name="parameters"></a>參數  
  `celt`  
- [in]數目`ExtendedDebugPropertyInfo`要擷取的結構。  
+ 在要抓取的 `ExtendedDebugPropertyInfo`structures 數目。  
   
  `rgelt`  
- [out]陣列`ExtendedDebugPropertyInfo`結構擷取。  
+ 脫銷已抓取 `ExtendedDebugPropertyInfo` 結構的陣列。  
   
  `pceltFetched`  
- [out]數目`ExtendedDebugPropertyInfo`實際擷取的結構。  
+ 脫銷實際抓取 `ExtendedDebugPropertyInfo` 結構的數目。  
   
 ## <a name="return-value"></a>傳回值  
- 會傳回有效`HRESULT`，通常是`S_OK`。  
+ 傳回有效的 `HRESULT`，通常是 `S_OK`。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IEnumDebugExtendedPropertyInfo 介面](../../winscript/reference/ienumdebugextendedpropertyinfo-interface.md)   
  [ExtendedDebugPropertyInfo 結構](../../winscript/reference/extendeddebugpropertyinfo-structure.md)

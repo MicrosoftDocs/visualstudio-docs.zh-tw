@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d92b4b2e00b25a509d29511008876d781c8a577a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ad9b8598cb027c96f6fb6fad6f3d343e6058cfdb
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62955169"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575856"
 ---
 # <a name="errorresumeaction-enumeration"></a>ERRORRESUMEACTION 列舉
 描述如何從執行階段錯誤繼續執行。  
@@ -37,13 +37,13 @@ typedef enum tagERRORRESUMEACTION {
 } ERRORRESUMEACTION;  
 ```  
   
-## <a name="members"></a>成員  
+## <a name="members"></a>Members  
   
 |成員|描述|  
 |------------|-----------------|  
-|ERRORRESUMEACTION_ReexecuteErrorStatement|重新執行陳述式產生錯誤。|  
-|ERRORRESUMEACTION_AbortCallAndReturnErrorToCaller|可讓處理錯誤的語言引擎。|  
-|ERRORRESUMEACTION_SkipErrorStatement|在程式碼中產生錯誤的陳述式之後繼續執行。|  
+|ERRORRESUMEACTION_ReexecuteErrorStatement|重新執行產生錯誤的語句。|  
+|ERRORRESUMEACTION_AbortCallAndReturnErrorToCaller|讓語言引擎處理錯誤。|  
+|ERRORRESUMEACTION_SkipErrorStatement|在產生錯誤的語句之後的程式碼中繼續執行。|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [動態指令碼偵錯工具的常數、列舉和結構](../../winscript/reference/active-script-debugger-constants-enumerations-and-structures.md)

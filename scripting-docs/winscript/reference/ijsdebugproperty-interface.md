@@ -11,15 +11,15 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e17bff10e2b876e4db2b9f3b55df29c2e87989ee
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 990ae0b874042501b64f4e2e2b39874c25c9dc9c
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62977786"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574069"
 ---
 # <a name="ijsdebugproperty-interface"></a>IJsDebugProperty 介面
-代表屬性瀏覽器。  
+表示屬性瀏覽器。  
   
 ## <a name="syntax"></a>語法  
   
@@ -27,17 +27,17 @@ ms.locfileid: "62977786"
 IJsDebugProperty : public IUnknown;  
 ```  
   
-## <a name="members"></a>成員  
+## <a name="members"></a>Members  
   
 ### <a name="public-methods"></a>公用方法  
   
-|名稱|描述|  
+|[屬性]|描述|  
 |----------|-----------------|  
-|[IJsDebugProperty::GetMembers 方法](../../winscript/reference/ijsdebugproperty-getmembers-method.md)|取得此物件的成員。|  
-|[IJsDebugProperty::GetPropertyInfo 方法](../../winscript/reference/ijsdebugproperty-getpropertyinfo-method.md)|取得這個物件的資訊。|  
+|[IJsDebugProperty::GetMembers 方法](../../winscript/reference/ijsdebugproperty-getmembers-method.md)|取得這個物件的成員。|  
+|[IJsDebugProperty::GetPropertyInfo 方法](../../winscript/reference/ijsdebugproperty-getpropertyinfo-method.md)|取得此物件的資訊。|  
   
 ## <a name="requirements"></a>需求  
- **標頭：** jscript9diag.h  
+ **標頭：** jscript9diag。h  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Windows 指令碼介面參考](../../winscript/reference/windows-script-interfaces-reference.md)
