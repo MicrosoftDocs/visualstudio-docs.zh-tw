@@ -11,15 +11,15 @@ caps.latest.revision: 3
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0a5de3ea949203ad7a6dca0ea777fdbc9514ba6d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7fce16c756cf06c8cf01937114402832570a0cd3
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62840235"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574398"
 ---
 # <a name="scriptgctype-enumeration"></a>SCRIPTGCTYPE 列舉
-若要執行記憶體回收的類型。 用於[IActiveScriptGarbageCollector::CollectGarbage](../../winscript/reference/iactivescriptgarbagecollector-collectgarbage.md)方法。  
+要執行的垃圾收集類型。 用於[IActiveScriptGarbageCollector：： CollectGarbage](../../winscript/reference/iactivescriptgarbagecollector-collectgarbage.md)方法中。  
   
 ## <a name="syntax"></a>語法  
   
@@ -31,8 +31,8 @@ typedef enum tagSCRIPTGCTYPE {    SCRIPTGCTYPE_NORMAL           = 0,    SCRIPTGC
   
 |||  
 |-|-|  
-|SCRIPTGCTYPE_NORMAL|執行一般記憶體回收。 整數值為 0。|  
-|SCRIPTGCTYPE_EXHAUSTIVE|執行完整記憶體回收。 整數值為 1。|  
+|SCRIPTGCTYPE_NORMAL|執行一般垃圾收集。 整數值為0。|  
+|SCRIPTGCTYPE_EXHAUSTIVE|執行徹底的垃圾收集。 整數值是1。|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [動態指令碼的常數、列舉和錯誤碼](../../winscript/reference/active-script-constants-enumerations-and-error-codes.md)

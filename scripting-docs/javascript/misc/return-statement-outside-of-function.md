@@ -1,5 +1,5 @@
 ---
-title: "'return' 陳述式，函式外的 |Microsoft Docs"
+title: 函式外部的 ' return ' 語句 |Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
@@ -14,34 +14,34 @@ ms.assetid: 03568f9f-5f4f-4a10-a738-9a73f3832b9e
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 01ef96385d5fe3dccf14a7491e67983d39913280
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a90af6de8e2c238e3660111b19d13c1eaf628c9e
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63006402"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573692"
 ---
 # <a name="return-statement-outside-of-function"></a>函式外部的 'return' 陳述式
-您已使用`return`全域範圍中的陳述式，您的程式碼。 `return`陳述式應該只出現在函式主體。  
+您在程式碼的全域範圍中使用了 `return` 語句。 @No__t_0 語句應該只會出現在函式的主體內。  
   
- 叫用的函式`()`運算子是一個運算式。 所有運算式都有的值;`return`陳述式用來指定函式所傳回的值。 一般格式如下：  
+ 使用 `()` 運算子叫用函數是運算式。 所有運算式都有值;`return` 語句用來指定函數所傳回的值。 一般的形式如下：  
   
 ```js
   
 return [ expression ];  
 ```  
   
- 當`return`陳述式*運算式*評估並傳回做為函式的值。 如果沒有任何運算式中，**未定義**會傳回。  
+ 執行 `return` 語句時，會評估*expression*並傳回做為函數的值。 如果沒有運算式，則會傳回**undefined** 。  
   
- 函式執行時停止`return`執行陳述式，即使有其他陳述式的函式主體中。 此規則的例外狀況是如果**會傳回**陳述式內，就會發生**嘗試**區塊中，且有對應**最後**封鎖，請將程式碼**最後**區塊會執行函式傳回之前。  
+ 執行 `return` 語句時，會停止執行函式，即使函式主體中仍有其他語句存在也一樣。 此規則的例外狀況是，如果**return**語句出現在**try**區塊內，而且有對應的**finally**區塊，則**finally**區塊中的程式碼會在函式傳回之前執行。  
   
- 如果函式會傳回，因為它達到但不會執行的函式主體的結尾`return`陳述式，傳回的值是**未定義**值 （這表示函式的結果不能做為較大運算式的一部分).  
+ 如果函式傳回，因為它到達函式主體的結尾，而未執行 `return` 語句，則傳回的值會是**未定義**的值（這表示函數結果不能當做較大運算式的一部分使用）。  
   
 ### <a name="to-correct-this-error"></a>更正這個錯誤  
   
-- 移除`return`陳述式，從您的程式碼 （全域範圍） 的主體。  
+- 從程式碼的主要主體（全域範圍）移除 `return` 語句。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [return 陳述式](../../javascript/reference/return-statement-javascript.md)   
- [函式物件](../../javascript/reference/function-object-javascript.md)   
+ [函數物件](../../javascript/reference/function-object-javascript.md)   
  [caller 屬性 (Function)](../../javascript/reference/caller-property-function-javascript.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugApplication::RemoveStackFrameSniffer | Microsoft Docs
+title: IDebugApplication：： RemoveStackFrameSniffer |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1462ff1382f3ccb844ccc98c6e6eec676a86c669
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 605daf51214ba5af9d6010b28be9569453ca7962
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62990777"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72571122"
 ---
 # <a name="idebugapplicationremovestackframesniffer"></a>IDebugApplication::RemoveStackFrameSniffer
-移除此應用程式中的堆疊框架的列舉值提供者。  
+從此應用程式移除堆疊框架列舉值提供者。  
   
 ## <a name="syntax"></a>語法  
   
@@ -37,7 +37,7 @@ HRESULT RemoveStackFrameSniffer(
   
 #### <a name="parameters"></a>參數  
  `dwCookie`  
- [in]傳回的 cookie`AddStackFrameSniffer`堆疊框架的列舉值提供者已新增的方法。  
+ 在加入堆疊框架列舉值提供者時，`AddStackFrameSniffer` 方法傳回的 cookie。  
   
 ## <a name="return-value"></a>傳回值  
  方法會傳回 `HRESULT`。 可能的值包括 (但不限於) 下表中的這些值。  
@@ -47,9 +47,9 @@ HRESULT RemoveStackFrameSniffer(
 |`S_OK`|方法成功。|  
   
 ## <a name="remarks"></a>備註  
- `RemoveStackFrameSniffer`方法會移除此應用程式中的堆疊框架的列舉值提供者。  
+ @No__t_0 方法會從此應用程式移除堆疊框架列舉值提供者。  
   
-## <a name="see-also"></a>另請參閱  
- [IDebugApplication::AddStackFrameSniffer](../../winscript/reference/idebugapplication-addstackframesniffer.md)   
+## <a name="see-also"></a>請參閱  
+ [IDebugApplication：： AddStackFrameSniffer](../../winscript/reference/idebugapplication-addstackframesniffer.md)    
  [IDebugApplication 介面](../../winscript/reference/idebugapplication-interface.md)   
  [IDebugStackFrameSniffer 介面](../../winscript/reference/idebugstackframesniffer-interface.md)

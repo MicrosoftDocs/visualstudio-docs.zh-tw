@@ -1,5 +1,5 @@
 ---
-title: IDebugApplicationThread::SetStateString |Microsoft Docs
+title: IDebugApplicationThread：： SetStateString |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bf832c14156d0d00f8bc7243537c3cb543019f2c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: de4a3e4e9666d6686400e5560343309591b2b3e1
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62822123"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574503"
 ---
 # <a name="idebugapplicationthreadsetstatestring"></a>IDebugApplicationThread::SetStateString
 設定執行緒狀態的描述。  
@@ -37,7 +37,7 @@ HRESULT SetStateString(
   
 #### <a name="parameters"></a>參數  
  `pstrState`  
- [in]執行緒狀態的描述。  
+ 在執行緒狀態的描述。  
   
 ## <a name="return-value"></a>傳回值  
  方法會傳回 `HRESULT`。 可能的值包括 (但不限於) 下表中的這些值。  
@@ -49,5 +49,5 @@ HRESULT SetStateString(
 ## <a name="remarks"></a>備註  
  這個方法會設定執行緒狀態的描述。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDebugApplicationThread 介面](../../winscript/reference/idebugapplicationthread-interface.md)

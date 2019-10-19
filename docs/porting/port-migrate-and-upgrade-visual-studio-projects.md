@@ -1,7 +1,7 @@
 ---
 title: 移植、移轉及升級專案
-description: 為在舊版 Visual Studio 中建立之專案所提供的 Visual Studio 2017 支援參考，以及 Visual Studio 決定何時需要移轉專案的方式。
-ms.date: 04/16/2019
+description: 支援在目前和舊版 Visual Studio 中建立之專案的參考。
+ms.date: 10/17/2019
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
 ms.topic: conceptual
@@ -19,18 +19,18 @@ helpviewer_keywords:
 - conversion, projects
 - asset compatibility
 - projects, conversion
-ms.openlocfilehash: 97eaada072a4ff0038ae7b57810b0d3318df1035
-ms.sourcegitcommit: 98b02f87c7aa1f5eb7f0d1c86bfa36efa8580c57
-ms.translationtype: HT
+ms.openlocfilehash: 7a348693dcae89c7d27b12f80dd4e21534a7bdec
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72314170"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574140"
 ---
 # <a name="project-migration-and-upgrade-reference-for-visual-studio"></a>Visual Studio 的專案移轉與升級參考
 
 ::: moniker range="vs-2017"
 
-一般來說，每個新版本的 Visual Studio 都會支援大多數舊版類型的專案、檔案和其他資產。 因此，您可以[一如既往地](../ide/solutions-and-projects-in-visual-studio.md)使用這些項目；如果您不需要新版的功能，Visual Studio 通常會嘗試保留與 Visual Studio 2015、Visual Studio 2013 和 Visual Studio 2012 等舊版的回溯相容性。 (請參閱[版本資訊](/visualstudio/releasenotes/vs2017-relnotes/)，以了解哪些功能專屬於哪一個版本)。
+Visual Studio 的每個版本一般都支援先前的專案、檔案及其他資產類型。 您可以[像往常一樣](../ide/solutions-and-projects-in-visual-studio.md)使用它們，並假設您不依賴較新的功能，Visual Studio 嘗試保留與舊版的回溯相容性，例如 Visual Studio 2015、Visual Studio 2013 和 Visual Studio 2012。 (請參閱[版本資訊](/visualstudio/releasenotes/vs2017-relnotes/)，以了解哪些功能專屬於哪一個版本)。
 
 有些專案類型的支援也會隨時間而改變。 新版的 Visual Studio 可能完全不再支援某些專案，或者需要更新專案，使它們不再具有回溯相容性。 如需移轉問題的目前狀態，請參閱 [Visual Studio Developer Community 網站](https://developercommunity.visualstudio.com)。
 
@@ -72,7 +72,7 @@ ms.locfileid: "72314170"
 | Visual Studio Tools for Apache Cordova | 專案可以在 Visual Studio 2017 中開啟，但不具備回溯相容性。 從 Visual Studio 2015 中開啟專案時，系統會提示您允許對專案進行修改。 此修改會將專案升級為使用工具組 (而不是 `taco.json` 檔案) 來管理 Cordova 程式庫、其平台、其外掛程式，以及其節點/npm 相依性的版本設定。 如需詳細資訊，請參閱[移轉指南](https://docs.microsoft.com/visualstudio/cross-platform/tools-for-cordova/first-steps/migrate-from-visual-studio-2015)。 |
 | Web 部署 (wdproj) | 對 Web 部署專案的支援已在 Visual Studio 2012 中移除，但加入發行設定檔支援。 因為在 Visual Studio 2017 中沒有對等項目，所以沒有適用於此類專案的自動移轉路徑。 請改為在文字編輯器中開啟該 wdproj 檔案，然後將任何自訂項目複製並貼上到 pubxml (發行設定檔) 檔案中，如 [StackOverflow](https://stackoverflow.com/a/12061065/1203388) \(英文\) 上所述。 |
 | Windows Communication Foundation 與 Windows Workflow Foundation | 您可以在 Visual Studio 2017、Visual Studio 2015、Visual Studio 2013 和 Visual Studio 2012 中開啟這類專案。 |
-| Windows Presentation Foundation | 您可以在 Visual Studio 2013、Visual Studio 2012 和 Visual Studio 2010 SP1 中開啟這類專案。 |
+| Windows Presentation Foundation | 您可以在 Visual Studio 2017、Visual Studio 2013、Visual Studio 2012 和 Visual Studio 2010 SP1 中開啟這類專案。 |
 | Windows 市集/Windows Phone 應用程式 | Visual Studio 2017 不支援 Windows 市集 8.1 和 8.0 以及 Windows Phone 8.1 和 8.0 專案。 若要維護這些應用程式，請繼續使用 Visual Studio 2015。 若要維護 Windows Phone 7.x 專案，請使用 Visual Studio 2012。 |
 
 ## <a name="how-visual-studio-decides-when-to-migrate-a-project"></a>Visual Studio 如何決定移轉專案的時間
@@ -112,11 +112,11 @@ Visual Studio 的每個新版本通常都會嘗試維持與舊版的相容性，
 
 ::: moniker range="vs-2019"
 
-一般來說，每個新版本的 Visual Studio 都會支援大多數舊版類型的專案、檔案和其他資產。 因此，您可以[一如既往地](../ide/solutions-and-projects-in-visual-studio.md)使用這些項目；如果您不需要新版的功能，Visual Studio 通常會嘗試保留與 Visual Studio 2017、Visual Studio 2015、Visual Studio 2013 和 Visual Studio 2012 等舊版的回溯相容性。 (請參閱[版本資訊](/visualstudio/releases/2019/release-notes/)，以了解哪些功能專屬於哪一個版本)。
+一般來說，每個新版本的 Visual Studio 都會支援大多數舊版類型的專案、檔案和其他資產。 您可以[像往常一樣](../ide/solutions-and-projects-in-visual-studio.md)使用它們，並假設您不依賴較新的功能，Visual Studio 嘗試保留與舊版的回溯相容性，例如 Visual Studio 2017、Visual Studio 2015、Visual Studio 2013 和 VisualStudio 2012。 (請參閱[版本資訊](/visualstudio/releases/2019/release-notes/)，以了解哪些功能專屬於哪一個版本)。
 
-有些專案類型的支援也會隨時間而改變。 新版的 Visual Studio 可能完全不再支援某些專案，或者需要更新專案，使它們不再具有回溯相容性。 如需移轉問題的目前狀態，請參閱 [Visual Studio Developer Community](https://developercommunity.visualstudio.com)。
+某些專案類型的支援會隨著時間而變更。 新版的 Visual Studio 可能完全不再支援某些專案，或者需要更新專案，使它們不再具有回溯相容性。 如需移轉問題的目前狀態，請參閱 [Visual Studio Developer Community](https://developercommunity.visualstudio.com)。
 
-本文提供 Visual Studio 2019 可遷移之專案類型的詳細資料。 也提供 Visual Studio 2019 中已淘汰或即將淘汰之專案類型的詳細資料。 文中不包含 Visual Studio 2019 中不再支援，因此無法移轉的專案類型。 文中也不包含沒有移轉問題的已支援專案類型；該清單位於 [Visual Studio 2017 平台目標及相容性](/visualstudio/releases/2019/compatibility)中。
+本文提供 Visual Studio 2019 可遷移之專案類型的詳細資料。 其中也包含 Visual Studio 2019 中已淘汰或即將淘汰之專案類型的相關資訊。 文中不包含 Visual Studio 2019 中不再支援，因此無法移轉的專案類型。 文中也不包含沒有移轉問題的已支援專案類型；該清單位於 [Visual Studio 2017 平台目標及相容性](/visualstudio/releases/2019/compatibility)中。
 
 > [!IMPORTANT]
 > 特定專案類型需要透過 Visual Studio 安裝程式安裝特定工作負載。 如果您未安裝工作負載，Visual Studio 會回報未知或不相容的專案類型。 在該情況下，請檢查您的安裝選項，然後再試一次。 如需 Visual Studio 2019 中專案支援的詳細資料，請參閱[平台目標及相容性](/visualstudio/releases/2019/compatibility)一文。
@@ -162,7 +162,7 @@ Visual Studio 的每個新版本通常都會嘗試維持與舊版的相容性，
 | Visual Studio Tools for Apache Cordova | 對 Apache Cordova 的支援已在 Visual Studio 2019 中移除。 因為在 Visual Studio 2019 中沒有對等項目，所以沒有適用於此類專案的自動移轉路徑。<br/><br/>您可以使用適用於 Visual Studio 的 Cordova 工具延伸模組 (提供最新版 Cordova 的支援)，或繼續使用 Visual Studio 2017。 |
 | Web 部署 (wdproj) | 對 Web 部署專案的支援已在 Visual Studio 2012 中移除，但加入發行設定檔支援。 因為在 Visual Studio 2019 中沒有對等項目，所以沒有適用於此類專案的自動移轉路徑。 請改為在文字編輯器中開啟該 wdproj 檔案，然後將任何自訂項目複製並貼上到 pubxml (發行設定檔) 檔案中，如 [StackOverflow](https://stackoverflow.com/a/12061065/1203388) \(英文\) 上所述。 |
 | Windows Communication Foundation 與 Windows Workflow Foundation | 您可以在 Visual Studio 2019、Visual Studio 2017、Visual Studio 2015、Visual Studio 2013 和 Visual Studio 2012 中開啟這類專案。 |
-| Windows Presentation Foundation | 您可以在 Visual Studio 2017、Visual Studio 2013、Visual Studio 2012 和 Visual Studio 2010 SP1 中開啟這類專案。 |
+| Windows Presentation Foundation | 您可以在 Visual Studio 2019、Visual Studio 2017、Visual Studio 2013、Visual Studio 2012 和 Visual Studio 2010 SP1 中開啟此專案。 |
 | Windows Phone 應用程式 | Visual Studio 2019 不支援 Windows Phone 專案。 <br/><br/>若要保留 Windows Phone 8.x 應用程式，請使用 Visual Studio 2015。 若要維護 Windows Phone 7.x 專案，請使用 Visual Studio 2012。 |
 | Windows 市集應用程式 | Visual Studio 2019 不支援 JavaScript 通用 Windows 專案。 若要保留這些專案，請使用 Visual Studio 2017。 <br/><br/>Windows 10 Fall Creators Update (組建 16299) 之前的 Windows 10 SDK 已從 Visual Studio 2019 安裝工具中移除。 您可以手動下載舊版 SDK，或將專案目標重定為使用新版 SDK。<br/><br/>不支援使用 project.json 的通用 Windows 專案。 建議升級這些專案以使用套件參考。 或者，在 project.json 檔案中新增 Microsoft.NET.Test.Sdk 16.0.0.0 版的參考。<br/><br/>Visual Studio 2019 不支援 Windows Store 8.1 和 8.0 專案。 若要維護這些應用程式，請繼續使用 Visual Studio 2015。 |
 | Xamarin | 已移除適用於 Visual Studio 和 Visual Studio for Mac 的 Xamarin Live Player 延伸模組。 這會移除成對的畫面和任何整合。 請改用內建 Xamarin.Forms Previewer。<br/><br/>Visual Studio 的 Android 模擬器已從 Visual Studio 安裝程式中移除。 請改用 Google Android 模擬器中新增的 Hyper-V 支援。 |

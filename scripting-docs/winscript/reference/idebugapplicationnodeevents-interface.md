@@ -13,26 +13,26 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7412e258c7f67f44bde6f69b593a1eecb1d84e07
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a2f72290e331a51f1b33746b22a6526c9bfbac7b
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62822271"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574723"
 ---
 # <a name="idebugapplicationnodeevents-interface"></a>IDebugApplicationNodeEvents 介面
 提供 `IDebugApplicationNode` 介面的事件介面。  
   
- 除了繼承自方法`IUnknown`，則`IDebugApplicationNodeEvents`介面會公開下列方法。  
+ 除了繼承自 `IUnknown` 的方法之外，`IDebugApplicationNodeEvents` 介面也會公開下列方法。  
   
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法  
   
 |方法|描述|  
 |------------|-----------------|  
-|[IDebugApplicationNodeEvents::onAddChild](../../winscript/reference/idebugapplicationnodeevents-onaddchild.md)|處理事件時的子節點加入至偵錯應用程式節點物件。|  
-|[IDebugApplicationNodeEvents::onRemoveChild](../../winscript/reference/idebugapplicationnodeevents-onremovechild.md)|處理事件從偵錯應用程式節點物件中移除子節點時。|  
-|[IDebugApplicationNodeEvents::onDetach](../../winscript/reference/idebugapplicationnodeevents-ondetach.md)|處理表示偵錯應用程式節點物件已中斷連結，從父節點的事件。|  
-|[IDebugApplicationNodeEvents::onAttach](../../winscript/reference/idebugapplicationnodeevents-onattach.md)|處理表示偵錯應用程式節點物件已附加至父節點的事件。|  
+|[IDebugApplicationNodeEvents::onAddChild](../../winscript/reference/idebugapplicationnodeevents-onaddchild.md)|當子節點加入至 debug 應用程式節點物件時，處理事件。|  
+|[IDebugApplicationNodeEvents::onRemoveChild](../../winscript/reference/idebugapplicationnodeevents-onremovechild.md)|從 debug 應用程式節點物件中移除子節點時，處理事件。|  
+|[IDebugApplicationNodeEvents::onDetach](../../winscript/reference/idebugapplicationnodeevents-ondetach.md)|處理事件，表示已從父節點卸離 debug 應用程式節點物件。|  
+|[IDebugApplicationNodeEvents::onAttach](../../winscript/reference/idebugapplicationnodeevents-onattach.md)|處理事件，表示 debug 應用程式節點物件已附加至父節點。|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDebugApplicationNode 介面](../../winscript/reference/idebugapplicationnode-interface.md)

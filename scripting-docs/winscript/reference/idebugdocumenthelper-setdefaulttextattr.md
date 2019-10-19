@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentHelper::SetDefaultTextAttr |Microsoft Docs
+title: IDebugDocumentHelper：： SetDefaultTextAttr |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 09f75e6f09639520462d5ef3983d67333097f76e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ea63f028497f1eb90803f59423f608d0a42960cf
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62948950"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574641"
 ---
 # <a name="idebugdocumenthelpersetdefaulttextattr"></a>IDebugDocumentHelper::SetDefaultTextAttr
-設定預設来使用的屬性不是在指令碼區塊中的文字。  
+設定要用於不在腳本區塊中之文字的預設屬性。  
   
 ## <a name="syntax"></a>語法  
   
@@ -37,7 +37,7 @@ HRESULT SetDefaultTextAttr(
   
 #### <a name="parameters"></a>參數  
  `staTextAttr`  
- 預設來源文字屬性。  
+ 預設的來源文字屬性。  
   
 ## <a name="return-value"></a>傳回值  
  方法會傳回 `HRESULT`。 可能的值包括 (但不限於) 下表中的這些值。  
@@ -47,8 +47,8 @@ HRESULT SetDefaultTextAttr(
 |`S_OK`|方法成功。|  
   
 ## <a name="remarks"></a>備註  
- 除非這個方法會變更預設屬性，預設屬性的外部指令碼區塊的文字會是 SOURCETEXT_ATTR_NONSOURCE。 使用者介面可以使用這項資訊，以標示為唯讀的指令碼區塊之外的文字。  
+ 除非此方法變更了預設屬性，否則腳本區塊外部文字的預設屬性會是 SOURCETEXT_ATTR_NONSOURCE。 使用者介面可以使用此資訊，將腳本區塊以外的文字標示為唯讀。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDebugDocumentHelper 介面](../../winscript/reference/idebugdocumenthelper-interface.md)   
  [SOURCE_TEXT_ATTR 列舉](../../winscript/reference/source-text-attr-enumeration.md)

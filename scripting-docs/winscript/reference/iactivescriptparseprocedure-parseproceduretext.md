@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptParseProcedure::ParseProcedureText | Microsoft Docs
+title: IActiveScriptParseProcedure：:P arseProcedureText |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 98425d12c53c61cb3f7557d1243cc757c326a89a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 53ed29c3e283af0f923590851cf9bf0655f7ac08
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62954904"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72561544"
 ---
 # <a name="iactivescriptparseprocedureparseproceduretext"></a>IActiveScriptParseProcedure::ParseProcedureText
-剖析指定的程式碼程序，並將命名空間中的程序。  
+剖析指定的程式碼程式，並將程式新增至命名空間。  
   
 ## <a name="syntax"></a>語法  
   
@@ -46,56 +46,56 @@ HRESULT ParseProcedureText(
   
 #### <a name="parameters"></a>參數  
  `pstrCode`  
- [in]若要評估的程序文字的位址。 這個字串的解譯取決於指令碼語言。  
+ 在要評估之程式文字的位址。 這個字串的轉譯取決於指令碼語言。  
   
  `pstrFormalParams`  
- [in]程序的型式參數名稱的位址。 參數名稱都必須以適當的指令碼引擎的分隔符號分隔。 名稱不應該用括號括住。  
+ 在程式正式參數名稱的位址。 參數名稱必須與腳本引擎的適當分隔符號分隔。 名稱不能以括弧括住。  
   
  `pstrProcedureName`  
- [in]要剖析的程序名稱的位址。  
+ 在要剖析之程式名稱的位址。  
   
  `pstrItemName`  
- [in]提供評估程序的內容項目名稱的位址。 如果這個參數是`NULL`，指令碼引擎的全域內容中評估程式碼。  
+ 在提供要評估程式之內容的專案名稱位址。 如果 `NULL` 此參數，則會在腳本引擎的全域內容中評估程式碼。  
   
  `punkContext`  
- [in]內容物件的位址。 這個物件被保留用於偵錯環境，其中這類內容可能會提供偵錯工具，來代表使用中的執行階段內容。 如果這個參數是`NULL`，則引擎會使用`pstrItemName`識別內容。  
+ 在內容物件的位址。 這個物件已保留供偵錯工具使用，在此情況下，可能會由偵錯工具提供這類內容來表示作用中的執行時間內容。 如果 `NULL` 這個參數，引擎就會使用 `pstrItemName` 來識別內容。  
   
  `pstrDelimiter`  
- [in]程序結束分隔符號的位址。 當`pstrCode`剖析文字資料流，從主應用程式通常會使用分隔符號，例如兩個單引號 （'），來偵測程序的結尾。 這個參數指定主應用程式使用，允許以提供一些條件式的基本前置處理指令碼引擎的分隔符號 （比方說，取代兩個單引號以做為分隔符號使用的單引號 [']）。 究竟要如何 （以及是否） 指令碼的引擎會使用這項資訊會取決於指令碼引擎。 將此參數設定為`NULL`如果主機未使用的分隔符號來標示程序的結尾。  
+ 在程式結尾分隔符號的位址。 從文字的資料流程剖析 `pstrCode` 時，主機通常會使用分隔符號，例如兩個單引號（' '）來偵測程式的結尾。 這個參數會指定主機所使用的分隔符號，讓腳本引擎提供一些條件式基本前置處理（例如，使用兩個單引號來取代單引號 [']，做為分隔符號）。 腳本引擎利用這項資訊的確切方式，取決於腳本引擎。 如果主機未使用分隔符號來標記程式的結尾，請將此參數設定為 `NULL`。  
   
  `dwSourceContextCookie`  
- [in]應用程式定義的值，用於偵錯用途。  
+ 在應用程式定義的值，用於進行調試。  
   
  `ulStartingLineNumber`  
- [in]指定剖析將會在開始哪一行的以零為起始值。  
+ 在以零為起始的值，指定剖析要開始的行。  
   
  `dwFlags`  
- [in]此程序相關聯的旗標。 可以是下列值的組合：  
+ 在與程式相關聯的旗標。 可以是這些值的組合：  
   
 |值|意義|  
 |-----------|-------------|  
-|SCRIPTPROC_ISEXPRESSION|表示中的程式碼`pstrCode`是表示此程序的傳回值的運算式。 根據預設，程式碼可以包含運算式、 陳述式，清單或其他指令碼語言所允許的程序中任何項目。|  
-|SCRIPTPROC_IMPLICIT_THIS|表示`this`指標包含在程序的範圍。|  
-|SCRIPTPROC_IMPLICIT_PARENTS|表示父系`this`指標包含在程序的範圍內。|  
+|SCRIPTPROC_ISEXPRESSION|表示 `pstrCode` 中的程式碼是代表此程式傳回值的運算式。 根據預設，程式碼可以包含運算式、語句清單，或指令碼語言在程式中允許的任何其他專案。|  
+|SCRIPTPROC_IMPLICIT_THIS|表示 `this` 指標包含在程式的範圍內。|  
+|SCRIPTPROC_IMPLICIT_PARENTS|表示 `this` 指標的父系包含在程式的範圍內。|  
   
  `ppdisp`  
- [out]包含指令碼的全域方法和屬性的物件的指標位址。 如果指令碼引擎不支援這類物件，`NULL`會傳回。  
+ 脫銷物件的指標位址，包含腳本的全域方法和屬性。 如果腳本引擎不支援這類物件，則會傳回 `NULL`。  
   
 ## <a name="return-value"></a>傳回值  
- 會傳回下列值之一：  
+ 傳回下列其中一個值：  
   
 |傳回值|意義|  
 |------------------|-------------|  
 |`S_OK`|成功。|  
 |`E_INVALIDARG`|引數無效。|  
-|`E_POINTER`|指定了無效的指標。|  
-|`E_NOTIMPL`|不支援這個方法。 指令碼引擎不支援命名空間的程序的執行階段的加入。|  
-|`E_UNEXPECTED`|不需要呼叫 （例如，指令碼引擎處於初始化或關閉狀態）。|  
-|`OLESCRIPT_E_SYNTAX`|在程序中發生未指定的語法錯誤。|  
-|`S_FALSE`|指令碼引擎不支援的分派物件;`ppdisp`參數設為`NULL`。|  
+|`E_POINTER`|指定了不正確指標。|  
+|`E_NOTIMPL`|不支援這個方法。 腳本引擎不支援以執行時間將程式新增至命名空間。|  
+|`E_UNEXPECTED`|不需要呼叫（例如，腳本引擎處於未初始化或已關閉狀態）。|  
+|`OLESCRIPT_E_SYNTAX`|程式中發生未指定的語法錯誤。|  
+|`S_FALSE`|腳本引擎不支援分派物件;`ppdisp` 參數設定為 `NULL`。|  
   
 ## <a name="remarks"></a>備註  
- 此呼叫期間不評估任何指令碼相反地，此程序會編譯成指令碼呼叫的狀態，它可以由指令碼稍後。  
+ 此呼叫期間不會評估任何腳本;相反地，此程式會編譯成腳本狀態，稍後腳本可以呼叫它。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IActiveScriptParseProcedure](../../winscript/reference/iactivescriptparseprocedure.md)

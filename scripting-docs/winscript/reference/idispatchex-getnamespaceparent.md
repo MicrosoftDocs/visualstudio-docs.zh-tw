@@ -1,5 +1,5 @@
 ---
-title: IDispatchEx::GetNameSpaceParent |Microsoft Docs
+title: IDispatchEx：： GetNameSpaceParent |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1abe2a880e12d6a4a3c1dfda32d30722525858f5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d2f47fab9831441e72a4ef3d4332a41c08e6a108
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63000818"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574075"
 ---
 # <a name="idispatchexgetnamespaceparent"></a>IDispatchEx::GetNameSpaceParent
-擷取命名空間物件之父系的介面。  
+抓取物件的命名空間父系介面。  
   
 ## <a name="syntax"></a>語法  
   
@@ -37,10 +37,10 @@ HRESULT GetNameSpaceParent(
   
 #### <a name="parameters"></a>參數  
  `ppunk`  
- 解決的`IUnknown`接收命名空間父項的介面的介面指標。  
+ 接收命名空間父系介面之 `IUnknown` 介面指標的位址。  
   
 ## <a name="return-value"></a>傳回值  
- 傳回`S_OK`如果成功或 OLE 定義的錯誤程式碼，否則。  
+ 如果成功，則傳回 `S_OK`，否則會傳回 OLE 定義的錯誤碼。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDispatchEx 介面](../../winscript/reference/idispatchex-interface.md)

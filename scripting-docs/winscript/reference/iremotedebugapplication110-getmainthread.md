@@ -1,5 +1,5 @@
 ---
-title: IRemoteDebugApplication110::GetMainThread | Microsoft Docs
+title: IRemoteDebugApplication110：： GetMainThread |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -13,18 +13,18 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8a4b51d87f89d77bebf065ce5f52a297ada333d3
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: ff99c43f633da8454eb5fa32463886877e06ed72
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63383509"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574125"
 ---
 # <a name="iremotedebugapplication110getmainthread"></a>IRemoteDebugApplication110::GetMainThread
-傳回主執行緒呼叫的主機[SetSite](http://go.microsoft.com/fwlink/?LinkId=232439)，否則會傳回 E_FAIL。  
+傳回呼叫[SetSite](http://go.microsoft.com/fwlink/?LinkId=232439)之主機的主執行緒，否則會傳回 E_FAIL。  
   
 > [!IMPORTANT]
-> [IRemoteDebugApplication 介面](../../winscript/reference/iremotedebugapplication-interface.md)是實作由 PDM v11.0 和更新版本。 可在 activdbg100.h 中找到。  
+> [IRemoteDebugApplication 介面](../../winscript/reference/iremotedebugapplication-interface.md)是由 PDM 11.0 和更新版本所執行。 可在 activdbg100.h 中找到。  
   
 ## <a name="syntax"></a>語法  
   
@@ -34,8 +34,8 @@ HRESULT GetMainThread([out] IRemoteDebugApplicationThread **ppThread);
   
 #### <a name="parameters"></a>參數  
  `ppThread`  
- [out]主[IRemoteDebugApplicationThread 介面](../../winscript/reference/iremotedebugapplicationthread-interface.md)。  
+ 脫銷主要[IRemoteDebugApplicationThread 介面](../../winscript/reference/iremotedebugapplicationthread-interface.md)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IRemoteDebugApplication 介面](../../winscript/reference/iremotedebugapplication-interface.md)   
  [IRemoteDebugApplication110 介面](../../winscript/reference/iremotedebugapplication110-interface.md)

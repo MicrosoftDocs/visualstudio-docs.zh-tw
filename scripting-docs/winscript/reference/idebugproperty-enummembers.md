@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty::EnumMembers |Microsoft Docs
+title: IDebugProperty：： EnumMembers |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 527bf9d3c51dad8ffe1645dc42081dc54189ad7b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5f8c5f2cbb107d55e9ffe602cb7d3492701de10c
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62979158"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72562414"
 ---
 # <a name="idebugpropertyenummembers"></a>IDebugProperty::EnumMembers
 列舉屬性的成員。  
@@ -40,22 +40,22 @@ HRESULT EnumMembers (
   
 #### <a name="parameters"></a>參數  
  `dwFieldSpec`  
- [in]指定`DBGPROP_INFO_FLAGS`判斷列舉的偵錯屬性結構中的哪些欄位要填入的常數。  
+ 在指定 `DBGPROP_INFO_FLAGS` 常數，以決定要填入列舉的 debug 屬性結構中的哪些欄位。  
   
  `nRadix`  
- [in]用於解譯任何數字資訊的基數。  
+ 在用來解讀任何數值資訊的基數。  
   
  `refiid`  
- [in]此 IID 為篩選的列舉值傳遞。 IID 是其中一個`IDebugPropertyEnumType`介面繼承自`IDebugPropertyEnumType_All`。  
+ 在傳遞這個 IID 來篩選列舉值。 IID 是繼承自 `IDebugPropertyEnumType_All` 的其中一個 `IDebugPropertyEnumType` 介面。  
   
  `ppEnum`  
- [out]傳回`IEnumDebugPropertyInfo`列舉的成員屬性的介面。  
+ 脫銷傳回列舉成員屬性的 `IEnumDebugPropertyInfo` 介面。  
   
 ## <a name="return-value"></a>傳回值  
- 會傳回有效`HRESULT`，通常是`S_OK`。  
+ 傳回有效的 `HRESULT`，通常是 `S_OK`。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDebugProperty 介面](../../winscript/reference/idebugproperty-interface.md)   
- [DBGPROP_INFO_FLAGS](../../winscript/reference/dbgprop-info-flags.md)   
+ [DBGPROP_INFO_FLAGS](../../winscript/reference/dbgprop-info-flags.md)    
  [IDebugPropertyEnumType_All 介面](../../winscript/reference/idebugpropertyenumtype-all-interface.md)   
  [IEnumDebugPropertyInfo 介面](../../winscript/reference/ienumdebugpropertyinfo-interface.md)

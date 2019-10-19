@@ -1,5 +1,5 @@
 ---
-title: ISimpleConnectionPoint::Unadvise | Microsoft Docs
+title: ISimpleConnectionPoint：： Unadvise |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 189c07c10e93df9a61218b6a94a0b317999676d2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e00c172fd33eb0ccf27aaf28e0e2f692c1a353ab
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63001488"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72571758"
 ---
 # <a name="isimpleconnectionpointunadvise"></a>ISimpleConnectionPoint::Unadvise
-終止透過先前建立的諮詢連接`ISimpleConnectionPoint::Advise`。  
+終止先前透過 `ISimpleConnectionPoint::Advise` 建立的諮詢連接。  
   
 ## <a name="syntax"></a>語法  
   
@@ -37,7 +37,7 @@ HRESULT Unadvise(
   
 #### <a name="parameters"></a>參數  
  `dwCookie`  
- [in]連線終止，從傳回的語彙基元`ISimpleConnectionPoint::Advise`。  
+ 在要終止之連接的 Token，如同從 `ISimpleConnectionPoint::Advise` 傳回。  
   
 ## <a name="return-value"></a>傳回值  
  方法會傳回 `HRESULT`。 可能的值包括 (但不限於) 下表中的這些值。  
@@ -47,7 +47,7 @@ HRESULT Unadvise(
 |`S_OK`|方法成功。|  
   
 ## <a name="remarks"></a>備註  
- 連接的諮詢連接終止時，點呼叫`Release`期間連線方法所儲存的指標上`ISimpleConnectionPoint::Advise`方法。 呼叫反轉`AddRef`期間，執行`ISimpleConnectionPoint::Advise`的連接點時呼叫的通知接收`QueryInterface`。  
+ 當諮詢連接終止時，連接點會在 `ISimpleConnectionPoint::Advise` 方法期間，針對連接所儲存的指標呼叫 `Release` 方法。 當連接點呼叫諮詢接收的 `QueryInterface` 時，該呼叫會反轉 `ISimpleConnectionPoint::Advise` 期間所執行的 `AddRef`。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [ISimpleConnectionPoint 介面](../../winscript/reference/isimpleconnectionpoint-interface.md)

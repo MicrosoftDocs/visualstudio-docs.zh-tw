@@ -1,5 +1,5 @@
 ---
-title: 'Iprocessdebugmanager:: Createdebugdocumenthelper |Microsoft Docs'
+title: IProcessDebugManager：： CreateDebugDocumentHelper |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 38de1e828ccd1715fb83cc76c06ba837818d2af0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a009fa5174ab897116c02b91e376e2dc41d67600
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63002355"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577098"
 ---
 # <a name="iprocessdebugmanagercreatedebugdocumenthelper"></a>IProcessDebugManager::CreateDebugDocumentHelper
-建立新的偵錯文件協助程式，此應用程式。  
+為此應用程式建立新的 debug 檔 helper。  
   
 ## <a name="syntax"></a>語法  
   
@@ -38,10 +38,10 @@ HRESULT CreateDebugDocumentHelper(
   
 #### <a name="parameters"></a>參數  
  `punkOuter`  
- [in]如果傳回的物件是要彙總`punkOuter`是控制的介面指標`IUnknown`。 否則，它是 null 指標。  
+ 在如果要匯總傳回的物件，`punkOuter` 是控制 `IUnknown` 的介面指標。 否則，它會是 null 指標。  
   
  `pddh`  
- [out]此應用程式偵錯文件協助程式物件。  
+ 脫銷此應用程式的 debug 檔 helper 物件。  
   
 ## <a name="return-value"></a>傳回值  
  方法會傳回 `HRESULT`。 可能的值包括 (但不限於) 下表中的這些值。  
@@ -51,7 +51,7 @@ HRESULT CreateDebugDocumentHelper(
 |`S_OK`|方法成功。|  
   
 ## <a name="remarks"></a>備註  
- 這個方法會建立新的偵錯文件協助程式，此應用程式。  
+ 這個方法會為此應用程式建立新的 debug 檔 helper。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IProcessDebugManager 介面](../../winscript/reference/iprocessdebugmanager-interface.md)

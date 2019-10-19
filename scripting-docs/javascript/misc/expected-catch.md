@@ -1,5 +1,5 @@
 ---
-title: 必須是 'catch' |Microsoft Docs
+title: 必須是 ' catch ' |Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
@@ -14,22 +14,22 @@ ms.assetid: f1cd947f-eba2-411e-8e84-8ca86f608643
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 941d49a530b14e2af64ddcb599dd775feb347de0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8cad981e4ba469f67645aca601e6b58c18e1fab6
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62935395"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573436"
 ---
 # <a name="expected-catch"></a>必須是 'catch'
-使用例外狀況處理**嘗試**封鎖，但不是撰寫相關聯**攔截**陳述式。 例外狀況處理機制需要的程式碼，可能會失敗，發生例外狀況時，不應執行的程式碼會包裝在內**嘗試**區塊。 內擲回例外狀況**嘗試**封鎖使用**擲回**陳述式，並已攔截外部**嘗試**具有一或多個區塊**攔截**陳述式。  
+您使用了例外狀況處理**try**區塊，但是並未寫入相關聯的**catch**語句。 例外狀況處理機制會要求可能失敗的程式碼，以及例外狀況發生時不應執行的程式碼，包裝在**try**區塊內。 例外狀況是從**try**區塊內使用 throw 語句**來擲**回，並使用一或多個**catch**語句攔截在**try**區塊外。  
   
 ### <a name="to-correct-this-error"></a>更正這個錯誤  
   
-- 加入相關聯**攔截**區塊。  
+- 新增相關聯的**catch**區塊。  
   
-- 請嘗試使用**最後**而不是封鎖**攔截**區塊。  
+- 嘗試使用**finally**區塊，而不是**catch**區塊。  
   
-## <a name="see-also"></a>另請參閱  
- [try...try...catch...finally 陳述式](../../javascript/reference/try-dot-dot-dot-catch-dot-dot-dot-finally-statement-javascript.md)   
+## <a name="see-also"></a>請參閱  
+ [嘗試 .。。catch .。。finally 語句](../../javascript/reference/try-dot-dot-dot-catch-dot-dot-dot-finally-statement-javascript.md)   
  [Error 物件](../../javascript/reference/error-object-javascript.md)

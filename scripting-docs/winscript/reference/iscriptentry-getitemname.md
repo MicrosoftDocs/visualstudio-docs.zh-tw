@@ -1,5 +1,5 @@
 ---
-title: IScriptEntry::GetItemName | Microsoft Docs
+title: IScriptEntry：： GetItemName |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9d8abc6d1264ce532adcbc59c262510a39ea7a91
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: dcd1b83fa6d22fafc2123645f1f252fa1325f7f1
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62787852"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575456"
 ---
 # <a name="iscriptentrygetitemname"></a>IScriptEntry::GetItemName
-傳回項目名稱可識別`IScriptEntry`物件。  
+傳回識別 `IScriptEntry` 物件的專案名稱。  
   
 ## <a name="syntax"></a>語法  
   
@@ -37,7 +37,7 @@ HRESULT GetItemName(
   
 #### <a name="parameters"></a>參數  
  `pbstr`  
- [out]包含的項目名稱的緩衝區位址。 項目名稱是主機用來識別項目。  
+ 脫銷包含專案名稱之緩衝區的位址。 主機會使用專案名稱來識別該專案。  
   
 ## <a name="return-value"></a>傳回值  
  `HRESULT`。 可能的值包括 (但不限於) 下表中的這些值。  
@@ -47,7 +47,7 @@ HRESULT GetItemName(
 |`S_OK`|方法成功。|  
   
 ## <a name="remarks"></a>備註  
- 針對`IScriptScriptlet`物件，使用設定項目名稱[IActiveScriptAuthor::AddScriptlet](../../winscript/reference/iactivescriptauthor-addscriptlet.md)。 至於其他介面，您必須設定的項目名稱使用[IScriptEntry::SetItemName](../../winscript/reference/iscriptentry-setitemname.md)。  
+ 針對 `IScriptScriptlet` 物件，您可以使用[IActiveScriptAuthor：： AddScriptlet](../../winscript/reference/iactivescriptauthor-addscriptlet.md)來設定專案名稱。 針對其他介面，您可以使用[IScriptEntry：： SetItemName](../../winscript/reference/iscriptentry-setitemname.md)來設定專案名稱。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IScriptEntry 介面](../../winscript/reference/iscriptentry-interface.md)

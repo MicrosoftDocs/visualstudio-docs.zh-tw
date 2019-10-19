@@ -1,5 +1,5 @@
 ---
-title: IProcessDebugManager::CreateApplication | Microsoft Docs
+title: IProcessDebugManager：： CreateApplication |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 10d7f2246b327393a810170f5b133f2885186c3a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5be4c67168a43ec405a6d4ed857b9772fdddd1e9
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62944812"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577104"
 ---
 # <a name="iprocessdebugmanagercreateapplication"></a>IProcessDebugManager::CreateApplication
-建立新的偵錯應用程式物件為此應用程式。  
+為此應用程式建立新的 debug 應用程式物件。  
   
 ## <a name="syntax"></a>語法  
   
@@ -37,7 +37,7 @@ HRESULT CreateApplication(
   
 #### <a name="parameters"></a>參數  
  `ppda`  
- [out]此應用程式偵錯應用程式物件。  
+ 脫銷這個應用程式的 debug 應用程式物件。  
   
 ## <a name="return-value"></a>傳回值  
  方法會傳回 `HRESULT`。 可能的值包括 (但不限於) 下表中的這些值。  
@@ -47,8 +47,8 @@ HRESULT CreateApplication(
 |`S_OK`|方法成功。|  
   
 ## <a name="remarks"></a>備註  
- 這個方法所建立的物件沒有名稱，不會加入至執行的應用程式清單。 使用`IProcessDebugManager::AddApplication`加入偵錯應用程式的應用程式清單。  
+ 這個方法所建立的物件沒有名稱，而且不會加入至執行中的應用程式清單。 使用 [`IProcessDebugManager::AddApplication`] 將 debug 應用程式新增至應用程式清單。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IProcessDebugManager 介面](../../winscript/reference/iprocessdebugmanager-interface.md)   
  [IProcessDebugManager::AddApplication](../../winscript/reference/iprocessdebugmanager-addapplication.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentHelper::Detach |Microsoft Docs
+title: IDebugDocumentHelper：:D etach |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 74b6ce51e78cb376263227461d653169fd6a406b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 876e23d3466352cb244cc445b2435f556bb88160
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62783466"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576969"
 ---
 # <a name="idebugdocumenthelperdetach"></a>IDebugDocumentHelper::Detach
-移除文件樹狀結構中的這份文件。  
+從檔樹狀結構移除此檔。  
   
 ## <a name="syntax"></a>語法  
   
@@ -34,7 +34,7 @@ HRESULT Detach();
 ```  
   
 #### <a name="parameters"></a>參數  
- 這個方法會接受任何參數。  
+ 這個方法不接受任何參數。  
   
 ## <a name="return-value"></a>傳回值  
  方法會傳回 `HRESULT`。 可能的值包括 (但不限於) 下表中的這些值。  
@@ -44,8 +44,8 @@ HRESULT Detach();
 |`S_OK`|方法成功。|  
   
 ## <a name="remarks"></a>備註  
- 這個方法會將這份文件移除文件樹狀結構。  
+ 這個方法會從檔樹狀結構中移除這份檔。  
   
-## <a name="see-also"></a>另請參閱  
- [IDebugDocumentHelper::Attach](../../winscript/reference/idebugdocumenthelper-attach.md)   
+## <a name="see-also"></a>請參閱  
+ [IDebugDocumentHelper：： Attach](../../winscript/reference/idebugdocumenthelper-attach.md)    
  [IDebugDocumentHelper 介面](../../winscript/reference/idebugdocumenthelper-interface.md)

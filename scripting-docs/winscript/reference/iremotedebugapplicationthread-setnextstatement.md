@@ -1,5 +1,5 @@
 ---
-title: IRemoteDebugApplicationThread::SetNextStatement |Microsoft Docs
+title: IRemoteDebugApplicationThread：： SetNextStatement |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0c4b19322a15e92adcf2609c479af6b21e2078bd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 71e690d0e5b7567aabc88aabde907b67517f12aa
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62788136"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575513"
 ---
 # <a name="iremotedebugapplicationthreadsetnextstatement"></a>IRemoteDebugApplicationThread::SetNextStatement
-強制才能繼續執行至指定的程式碼內容，盡量靠近指定框架的內容中。  
+強制執行在指定的框架內容中，盡可能靠近指定的程式碼內容。  
   
 ## <a name="syntax"></a>語法  
   
@@ -38,10 +38,10 @@ HRESULT SetNextStatement(
   
 #### <a name="parameters"></a>參數  
  `pStackFrame`  
- [in]堆疊框架物件。 這個引數可以是 NULL，這表示應該使用目前的堆疊框架。  
+ 在堆疊框架物件。 這個引數可能是 Null，表示應該使用目前的堆疊框架。  
   
  `pCodeContext`  
- [in]程式碼內容中。 這個引數可以是 NULL，這表示應該使用目前的程式碼內容。  
+ 在程式碼內容。 這個引數可能是 Null，表示應該使用目前的程式碼內容。  
   
 ## <a name="return-value"></a>傳回值  
  方法會傳回 `HRESULT`。 可能的值包括 (但不限於) 下表中的這些值。  
@@ -51,7 +51,7 @@ HRESULT SetNextStatement(
 |`S_OK`|方法成功。|  
   
 ## <a name="remarks"></a>備註  
- 這個方法會強制執行所指定的程式碼內容以盡量靠近繼續`pCodeContext`，在所指定框架的內容中`pStackFrame`。 這些引數可能是`NULL`，代表目前的框架或內容。  
+ 這個方法會強制執行在 `pStackFrame` 所指定的框架內容中，盡可能靠近 `pCodeContext` 所指定的程式碼內容。 這兩個引數都可能 `NULL`，代表目前的框架或內容。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IRemoteDebugApplicationThread 介面](../../winscript/reference/iremotedebugapplicationthread-interface.md)

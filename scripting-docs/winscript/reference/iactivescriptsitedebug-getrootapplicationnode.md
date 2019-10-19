@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptSiteDebug::GetRootApplicationNode | Microsoft Docs
+title: IActiveScriptSiteDebug：： GetRootApplicationNode |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 18e603289931115bcaac4d6bb7707b7886f506d4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b19ed10178d03be0b96393ad08f1eab88ce40329
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62992483"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72570056"
 ---
 # <a name="iactivescriptsitedebuggetrootapplicationnode"></a>IActiveScriptSiteDebug::GetRootApplicationNode
-取得應該在哪種指令碼加入文件的應用程式節點。  
+取得要在其下加入指令檔的應用程式節點。  
   
 ## <a name="syntax"></a>語法  
   
@@ -37,7 +37,7 @@ HRESULT GetRootApplicationNode(
   
 #### <a name="parameters"></a>參數  
  `ppdanRoot`  
- [out]保留指令碼文件的偵錯應用程式節點。 可以是 `NULL`。  
+ 脫銷保存指令檔的 debug 應用程式節點。 可以是 `NULL`。  
   
 ## <a name="return-value"></a>傳回值  
  方法會傳回 `HRESULT`。 可能的值包括 (但不限於) 下表中的這些值。  
@@ -47,7 +47,7 @@ HRESULT GetRootApplicationNode(
 |`S_OK`|方法成功。|  
   
 ## <a name="remarks"></a>備註  
- 這個方法會傳回應該在其加入指令碼文件的應用程式節點。 這個方法會傳回`NULL`針對`ppdanRoot`如果指令碼文件應該是最上層。  
+ 這個方法會傳回要在其下加入指令檔的應用程式節點。 如果指令檔應該是最上層，方法可以傳回 `ppdanRoot` 的 `NULL`。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IActiveScriptSiteDebug 介面](../../winscript/reference/iactivescriptsitedebug-interface.md)

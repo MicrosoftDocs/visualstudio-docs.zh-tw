@@ -1,5 +1,5 @@
 ---
-title: IDebugPropertyEnumType_All Interface | Microsoft Docs
+title: IDebugPropertyEnumType_All 介面 |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b9ddd9fb24aa83a6027d6d705de6a748a96b2e28
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 737d1c5d4279a0a727f79326749dbf14a2fcd4c7
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62979106"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574309"
 ---
-# <a name="idebugpropertyenumtypeall-interface"></a>IDebugPropertyEnumType_All 介面
-`IDebugPropertyEnumType`介面會定義，使其 Iid 的每個可以當做篩選器，以傳遞`IDebugProperty::EnumMembers`要求適當的列舉值時發生。  
+# <a name="idebugpropertyenumtype_all-interface"></a>IDebugPropertyEnumType_All 介面
+系統會定義 `IDebugPropertyEnumType` 介面，以便在要求適當的列舉值時，將每個 Iid 當做篩選準則傳遞至 `IDebugProperty::EnumMembers`。  
   
 ## <a name="syntax"></a>語法  
   
@@ -37,9 +37,9 @@ IDebugPropertyEnumType_All : IUnknown
   
 |方法|描述|  
 |------------|-----------------|  
-|[IDebugPropertyEnumType_All::GetName](../../winscript/reference/idebugpropertyenumtype-all-getname.md)|傳回文字字串描述的名稱|  
+|[IDebugPropertyEnumType_All::GetName](../../winscript/reference/idebugpropertyenumtype-all-getname.md)|傳回描述名稱的文字字串|  
   
- 下列介面繼承自`IDebugPropertyEnumType_All`，還有任何其他的方法。  
+ 下列介面會繼承自 `IDebugPropertyEnumType_All`，而且沒有任何其他方法。  
   
 ```cpp
 IDebugPropertyEnumType_Arguments : IDebugPropertyEnumType_All   
@@ -48,5 +48,5 @@ IDebugPropertyEnumType_LocalsPlusArgs : IDebugPropertyEnumType_All 
 IDebugPropertyEnumType_Registers : IDebugPropertyEnumType_All  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDebugProperty::EnumMembers](../../winscript/reference/idebugproperty-enummembers.md)

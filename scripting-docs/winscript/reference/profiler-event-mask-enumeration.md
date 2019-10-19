@@ -15,15 +15,15 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f7230e65e5559d53e56cf6424a34dd44aa4edda7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c1e1e7f3b604832014cb23245b105756d1126c5b
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62831638"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572290"
 ---
-# <a name="profilereventmask-enumeration"></a>PROFILER_EVENT_MASK 列舉
-指出應該要分析的事件類型。  
+# <a name="profiler_event_mask-enumeration"></a>PROFILER_EVENT_MASK 列舉
+表示應該分析的事件種類。  
   
 ## <a name="syntax"></a>語法  
   
@@ -40,17 +40,17 @@ typedef enum {
 } PROFILER_EVENT_MASK;  
 ```  
   
-## <a name="members"></a>成員  
+## <a name="members"></a>Members  
   
 |成員|描述|  
 |------------|-----------------|  
-|PROFILER_EVENT_MASK_TRACE_SCRIPT_FUNCTION_CALL|使用者撰寫的指令碼和動態程式碼中所定義的設定檔函式。|  
-|PROFILER_EVENT_MASK_TRACE_NATIVE_FUNCTION_CALL|設定檔原生函式所定義的指令碼引擎。|  
-|PROFILER_EVENT_MASK_TRACE_ALL|所有的使用者定義和指令碼引擎函式，但不包括呼叫至文件物件模型 (DOM) 中的設定檔。|  
-|PROFILER_EVENT_MASK_TRACE_DOM_FUNCTION_CALL|設定檔的函式呼叫至 dom。|  
-|PROFILER_EVENT_MASK_TRACE_ALL_WITH_DOM|設定檔的所有功能，包括呼叫至 dom。|  
+|PROFILER_EVENT_MASK_TRACE_SCRIPT_FUNCTION_CALL|設定檔函式，定義于使用者撰寫的腳本和動態程式碼中。|  
+|PROFILER_EVENT_MASK_TRACE_NATIVE_FUNCTION_CALL|分析腳本引擎所定義的原生函式。|  
+|PROFILER_EVENT_MASK_TRACE_ALL|分析所有使用者定義和腳本引擎函式，但不包括呼叫檔物件模型（DOM）。|  
+|PROFILER_EVENT_MASK_TRACE_DOM_FUNCTION_CALL|呼叫 DOM 的設定檔函數。|  
+|PROFILER_EVENT_MASK_TRACE_ALL_WITH_DOM|分析所有函式，包括對 DOM 的呼叫。|  
   
-## <a name="see-also"></a>另請參閱  
- [動態指令碼 Profiler 常數、 列舉和結構](../../winscript/reference/active-script-profiler-constants-enumerations-and-structures.md)   
- [IActiveScriptProfilerControl::SetProfilerEventMask](../../winscript/reference/iactivescriptprofilercontrol-setprofilereventmask.md)   
+## <a name="see-also"></a>請參閱  
+ [動態指令碼分析工具的常數、列舉和結構](../../winscript/reference/active-script-profiler-constants-enumerations-and-structures.md)   
+ [IActiveScriptProfilerControl：： SetProfilerEventMask](../../winscript/reference/iactivescriptprofilercontrol-setprofilereventmask.md)    
  [IActiveScriptProfilerControl::StartProfiling](../../winscript/reference/iactivescriptprofilercontrol-startprofiling.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugCodeContext::GetDocumentContext |Microsoft Docs
+title: IDebugCodeCoNtext：： GetDocumentCoNtext |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 48c707432ddb94fae111c971b89c8ff74f34ac21
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9dc1cda6164375f3434ee562b540e85268fe4c68
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62974536"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573219"
 ---
 # <a name="idebugcodecontextgetdocumentcontext"></a>IDebugCodeContext::GetDocumentContext
-傳回與此程式碼內容相關聯的文件內容。  
+傳回與此程式碼內容相關聯的檔內容。  
   
 ## <a name="syntax"></a>語法  
   
@@ -37,7 +37,7 @@ HRESULT GetDocumentContext(
   
 #### <a name="parameters"></a>參數  
  `ppsc`  
- [out]文件相關聯的內容與此程式碼內容。  
+ 脫銷與此程式碼內容相關聯的檔內容。  
   
 ## <a name="return-value"></a>傳回值  
  方法會傳回 `HRESULT`。 可能的值包括 (但不限於) 下表中的這些值。  
@@ -47,7 +47,7 @@ HRESULT GetDocumentContext(
 |`S_OK`|方法成功。|  
   
 ## <a name="remarks"></a>備註  
- 文字文件的字元位置範圍應該包括整個陳述式的文字。 這可讓偵錯工具 IDE 來反白顯示目前的來源陳述式。  
+ 若為文字檔，字元位置範圍應包含整個語句的文字。 這可讓偵錯工具 IDE 反白顯示目前的來源語句。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDebugCodeContext 介面](../../winscript/reference/idebugcodecontext-interface.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentHelper::SetTextAttributes |Microsoft Docs
+title: IDebugDocumentHelper：： SetTextAttributes |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5d6ef4130cd9383cf4f59c2e3f5407bdb7780a0e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7cc5e5955652fd8b59d4c502e68d97a729ded141
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62949015"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72569468"
 ---
 # <a name="idebugdocumenthelpersettextattributes"></a>IDebugDocumentHelper::SetTextAttributes
-在某個範圍的文字，覆寫對該文字其他屬性上設定的屬性。  
+設定文字範圍的屬性，覆寫該文字上的其他屬性。  
   
 ## <a name="syntax"></a>語法  
   
@@ -39,13 +39,13 @@ HRESULT SetTextAttributes(
   
 #### <a name="parameters"></a>參數  
  `ulCharOffset`  
- [in]文字範圍的開始位置。  
+ 在文字範圍開頭的位置。  
   
  `cChars`  
- [in]範圍中的字元數。  
+ 在範圍中的字元數。  
   
  `pstaTextAttr`  
- [in]來源文字的文字範圍的屬性。  
+ 在文字範圍的來源文字屬性。  
   
 ## <a name="return-value"></a>傳回值  
  方法會傳回 `HRESULT`。 可能的值包括 (但不限於) 下表中的這些值。  
@@ -55,11 +55,11 @@ HRESULT SetTextAttributes(
 |`S_OK`|方法成功。|  
   
 ## <a name="remarks"></a>備註  
- 它會呼叫錯誤`SetTextAttributes`上該文字新增至文件之前的文字範圍。 呼叫`AddDBCSText`， `AddUnicodeText`，或`AddDeferredText`將文字加入文件的方法。  
+ 在將文字加入檔之前，先在文字範圍上呼叫 `SetTextAttributes` 是錯誤的。 呼叫 `AddDBCSText`、`AddUnicodeText` 或 `AddDeferredText` 方法，將文字新增至檔。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDebugDocumentHelper 介面](../../winscript/reference/idebugdocumenthelper-interface.md)   
- [IDebugDocumentHelper::AddUnicodeText](../../winscript/reference/idebugdocumenthelper-addunicodetext.md)   
- [IDebugDocumentHelper::AddDBCSText](../../winscript/reference/idebugdocumenthelper-adddbcstext.md)   
- [IDebugDocumentHelper::AddDeferredText](../../winscript/reference/idebugdocumenthelper-adddeferredtext.md)   
+ [IDebugDocumentHelper：： AddUnicodeText](../../winscript/reference/idebugdocumenthelper-addunicodetext.md)    
+ [IDebugDocumentHelper：： AddDBCSText](../../winscript/reference/idebugdocumenthelper-adddbcstext.md)    
+ [IDebugDocumentHelper：： AddDeferredText](../../winscript/reference/idebugdocumenthelper-adddeferredtext.md)    
  [SOURCE_TEXT_ATTR 列舉](../../winscript/reference/source-text-attr-enumeration.md)

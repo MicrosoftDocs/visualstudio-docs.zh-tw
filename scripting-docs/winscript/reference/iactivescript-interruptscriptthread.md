@@ -1,5 +1,5 @@
 ---
-title: IActiveScript::InterruptScriptThread | Microsoft Docs
+title: IActiveScript：： InterruptScriptThread |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: aa46bc95087b3defaf739cc3473c58e29a93071c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a436f973df05b945c0939f3a593640f567774277
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62935504"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577271"
 ---
 # <a name="iactivescriptinterruptscriptthread"></a>IActiveScript::InterruptScriptThread
-中斷執行指令碼中的執行緒 （事件接收器、 立即執行或的巨集引動過程） 的執行。 這個方法可用來終止卡 （例如，在無限迴圈） 的指令碼。 可以從非基底執行緒中呼叫不會導致主機物件或非基底圖說[IActiveScriptSite](../../winscript/reference/iactivescriptsite.md)方法。  
+中斷執行中腳本執行緒（事件接收、立即執行或宏調用）的執行。 這個方法可以用來結束停滯的腳本（例如，在無限迴圈中）。 它可以從非基底線程呼叫，而不會產生非基底的標注來裝載物件或[IActiveScriptSite](../../winscript/reference/iactivescriptsite.md)方法。  
   
 ## <a name="syntax"></a>語法  
   
@@ -39,34 +39,34 @@ HRESULT InterruptScriptThread(
   
 #### <a name="parameters"></a>參數  
  `stidThread`  
- [in]要中斷或其中一個下列特殊的執行緒識別碼值的執行緒識別碼：  
+ 在要中斷之執行緒的識別碼，或下列其中一個特殊的執行緒識別碼值：  
   
 |值|意義|  
 |-----------|-------------|  
-|SCRIPTTHREADID_ALL|所有的執行緒。 中斷會套用至正在進行中的所有指令碼方法。 請注意，除非呼叫者已要求指令碼會中斷下, 一個已編寫指令碼的事件會使指令碼，以再次執行，藉由呼叫[iactivescript:: Setscriptstate](../../winscript/reference/iactivescript-setscriptstate.md) SCRIPTSTATE_DISCONNECTED 方法或設定 SCRIPTSTATE_INITIALIZED 旗標。|  
-|SCRIPTTHREADID_BASE|基底執行緒中;也就是已經具現化所在的指令碼引擎的執行緒。|  
-|SCRIPTTHREADID_CURRENT|目前正在執行的執行緒。|  
+|SCRIPTTHREADID_ALL|所有線程。 中斷會套用到目前進行中的所有腳本方法。 請注意，除非呼叫端已要求將腳本中斷連接，否則下一個腳本事件會呼叫[IActiveScript：： SetScriptState](../../winscript/reference/iactivescript-setscriptstate.md)方法與 SCRIPTSTATE_DISCONNECTED 或 SCRIPTSTATE_INITIALIZED 旗標，以再次執行腳本程式碼設定.|  
+|SCRIPTTHREADID_BASE|基底線程;也就是在其中具現化腳本引擎的執行緒。|  
+|SCRIPTTHREADID_CURRENT|目前執行的執行緒。|  
   
  `pexcepinfo`  
- [in]位址`EXCEPINFO`結構，其中包含已中止的指令碼就應該報告的錯誤資訊。  
+ 在包含應回報給已中止腳本之錯誤資訊的 `EXCEPINFO` 結構的位址。  
   
  `dwFlags`  
- [in]中斷與相關聯的選項旗標。 可以是下列值之一：  
+ 在與中斷相關聯的選項旗標。 可以是下列值之一：  
   
 |值|意義|  
 |-----------|-------------|  
-|SCRIPTINTERRUPT_DEBUG|如果支援，請輸入指令碼引擎的偵錯工具，在目前的指令碼執行時間點。|  
-|SCRIPTINTERRUPT_RAISEEXCEPTION|如果指令碼引擎的語言支援，讓指令碼處理例外狀況。 否則，指令碼方法會中止，並呼叫端; 傳回的錯誤碼也就是事件來源或巨集啟動程式。|  
+|SCRIPTINTERRUPT_DEBUG|如果支援，請在目前的腳本執行點上輸入腳本引擎的偵錯工具。|  
+|SCRIPTINTERRUPT_RAISEEXCEPTION|如果腳本引擎的語言支援，請讓腳本處理例外狀況。 否則，腳本方法會中止，且錯誤碼會傳回給呼叫者;也就是事件來源或宏啟動程式。|  
   
 ## <a name="return-value"></a>傳回值  
- 會傳回下列值之一：  
+ 傳回下列其中一個值：  
   
 |傳回值|意義|  
 |------------------|-------------|  
 |`S_OK`|成功。|  
 |`E_INVALIDARG`|引數無效。|  
-|`E_POINTER`|指定了無效的指標。|  
-|`E_UNEXPECTED`|不需要呼叫 （例如，指令碼引擎有尚未載入或初始化）。|  
+|`E_POINTER`|指定了不正確指標。|  
+|`E_UNEXPECTED`|不需要呼叫（例如，腳本引擎尚未載入或初始化）。|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IActiveScript](../../winscript/reference/iactivescript.md)

@@ -1,5 +1,5 @@
 ---
-title: IActiveScript::GetCurrentScriptThreadID | Microsoft Docs
+title: IActiveScript：： GetCurrentScriptThreadID |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9e1b6e7bae7d78c18e11cd1aac8d0844fb9e90a5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: dedb16e0c007ed05370fb54835f84f00784c1ae4
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62935652"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575771"
 ---
 # <a name="iactivescriptgetcurrentscriptthreadid"></a>IActiveScript::GetCurrentScriptThreadID
-擷取目前執行中執行緒的指令碼引擎-定義識別項。 識別項可用於指令碼的執行緒執行控制方法的後續呼叫這類[iactivescript:: Interruptscriptthread](../../winscript/reference/iactivescript-interruptscriptthread.md)方法。  
+針對目前執行中的執行緒，抓取腳本引擎定義的識別碼。 在後續呼叫腳本執行緒執行控制方法（例如[IActiveScript：： InterruptScriptThread](../../winscript/reference/iactivescript-interruptscriptthread.md)方法）時，可以使用此識別碼。  
   
 ## <a name="syntax"></a>語法  
   
@@ -37,13 +37,13 @@ HRESULT GetCurrentScriptThreadID(
   
 #### <a name="parameters"></a>參數  
  `pstidThread`  
- [out]接收與目前執行緒相關聯的指令碼的執行緒識別碼的變數位址。 這個識別項的解譯會保留給指令碼引擎，但它可以是只是 Windows 執行緒識別碼的複本。 如果 Win32 執行緒終止時，此識別碼會變成未指派，並接著可以指派至另一個執行緒。  
+ 脫銷接收與目前線程相關聯之腳本執行緒識別碼的變數位址。 此識別碼的解讀會留給腳本引擎，但它可以只是 Windows 執行緒識別碼的複本。 如果 Win32 執行緒終止，此識別碼就會變成未指派，並可接著指派給另一個執行緒。  
   
 ## <a name="return-value"></a>傳回值  
- 傳回`S_OK`如果成功，或`E_POINTER`如果指定了無效的指標。  
+ 如果成功，則傳回 `S_OK`，如果指定了不正確指標，則傳回 `E_POINTER`。  
   
 ## <a name="remarks"></a>備註  
- 可以從非基底執行緒呼叫這個方法，不會導致主機物件或非基底圖說[IActiveScriptSite](../../winscript/reference/iactivescriptsite.md)介面。  
+ 這個方法可以從非基底線程呼叫，而不會產生非基底的標注來裝載物件或[IActiveScriptSite](../../winscript/reference/iactivescriptsite.md)介面。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IActiveScript](../../winscript/reference/iactivescript.md)

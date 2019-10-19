@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugPropertyInfo::Skip | Microsoft Docs
+title: IEnumDebugPropertyInfo：： Skip |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3e7544b8ea54fabc53e6c8476648e339c53da94d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ba634409fb051c37534c824efb20e33eda245e8a
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62963386"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574159"
 ---
 # <a name="ienumdebugpropertyinfoskip"></a>IEnumDebugPropertyInfo::Skip
-略過指定的數目的`DebugPropertyInfo`列舉型別序列中的結構。  
+略過列舉序列中指定數目的 `DebugPropertyInfo` 結構。  
   
 ## <a name="syntax"></a>語法  
   
@@ -37,11 +37,11 @@ HRESULT Skip(
   
 #### <a name="parameters"></a>參數  
  `celt`  
- [in]數目`DebugPropertyInfo`略過列舉序列中的結構。  
+ 在要略過的列舉序列中 `DebugPropertyInfo` 結構的數目。  
   
 ## <a name="return-value"></a>傳回值  
- 會傳回有效`HRESULT`，通常是`S_OK`。 傳回`S_FALSE`並將目前的項目指標設定為列舉結束時，如果`celt`超過列舉值中的剩餘的項目數。  
+ 傳回有效的 `HRESULT`，通常是 `S_OK`。 傳回 `S_FALSE`，並將目前的專案指標設定為列舉的結尾，如果 `celt` 大於列舉值中剩餘的元素數目。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IEnumDebugPropertyInfo 介面](../../winscript/reference/ienumdebugpropertyinfo-interface.md)   
  [DebugPropertyInfo 結構](../../winscript/reference/debugpropertyinfo-structure.md)

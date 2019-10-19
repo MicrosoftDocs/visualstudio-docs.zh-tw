@@ -1,5 +1,5 @@
 ---
-title: 必須是識別項 (JavaScript) |Microsoft Docs
+title: 預期的識別碼（JavaScript） |Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
@@ -14,27 +14,27 @@ ms.assetid: 92eaa97f-7084-4618-9608-768b51a0600b
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7e60975e8f356e749e5e32adb2e773526ab63141
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8555ddde52602f5761be40cfcc752abd12697deb
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62934974"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577286"
 ---
 # <a name="expected-identifier-javascript"></a>必須是識別項 (JavaScript)
-您以外的識別項的內容中使用其中一個是必要。 識別項可以：  
+您在需要其中一個專案的內容中使用了除了識別碼以外的其他專案。 識別碼可以是：  
   
-- 變數，  
+- 變數、  
   
 - 屬性，  
   
-- 陣列，  
+- 陣列、  
   
-- 或函式名稱。  
+- 或函數名稱。  
   
 ### <a name="to-correct-this-error"></a>更正這個錯誤  
   
-- 因此識別項的等號左邊出現，請變更運算式。  
+- 變更運算式，讓識別碼出現在等號的左邊。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [使用陣列](../../javascript/advanced/using-arrays-javascript.md)

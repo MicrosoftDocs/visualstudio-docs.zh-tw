@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptAuthor::RemoveTypeLib | Microsoft Docs
+title: IActiveScriptAuthor：： RemoveTypeLib |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f8dd75bfa5474eb93a51af790f7efd6431a9aaa0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 182d13785b20f9c5ba298ab72cd8d28977d455ba
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62955129"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576140"
 ---
 # <a name="iactivescriptauthorremovetypelib"></a>IActiveScriptAuthor::RemoveTypeLib
-移除指令碼撰寫引擎命名空間中的型別程式庫。  
+從腳本撰寫引擎命名空間移除類型程式庫。  
   
 ## <a name="syntax"></a>語法  
   
@@ -39,13 +39,13 @@ HRESULT RemoveTypeLib(
   
 #### <a name="parameters"></a>參數  
  `rguidTypeLib`  
- [in]CLSID （類別識別項） 的型別程式庫移除。  
+ 在要移除之類型程式庫的 CLSID （類別識別碼）。  
   
  `dwMajor`  
- [in]主要版本號碼。  
+ 在主要版本號碼。  
   
  `dwMinor`  
- [in]次要版本號碼。  
+ 在次要版本號碼。  
   
 ## <a name="return-value"></a>傳回值  
  `HRESULT`。 可能的值包括 (但不限於) 下表中的這些值。  
@@ -56,5 +56,5 @@ HRESULT RemoveTypeLib(
   
 ## <a name="remarks"></a>備註  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IActiveScriptAuthor 介面](../../winscript/reference/iactivescriptauthor-interface.md)

@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptSiteWindow::GetWindow |Microsoft Docs
+title: IActiveScriptSiteWindow：： GetWindow |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7b6efa066765339375a8315695aa9c1de2f9c46b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d8263db447c7692ec7b0982127d63b4bea588a4b
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62992083"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574347"
 ---
 # <a name="iactivescriptsitewindowgetwindow"></a>IActiveScriptSiteWindow::GetWindow
-擷取可做為擁有者的指令碼引擎必須顯示快顯視窗的視窗控制代碼。  
+抓取視窗的控制碼，其可做為腳本引擎必須顯示之快顯視窗的擁有者。  
   
 ## <a name="syntax"></a>語法  
   
@@ -37,13 +37,13 @@ HRESULT GetWindow(
   
 #### <a name="parameters"></a>參數  
  `phwnd`  
- [out]接收的視窗控制代碼變數位址。  
+ 脫銷接收視窗控制碼之變數的位址。  
   
 ## <a name="return-value"></a>傳回值  
- 傳回`S_OK`如果成功，或`E_FAIL`如果發生錯誤。  
+ 如果成功，則傳回 `S_OK`，如果發生錯誤，則傳回 `E_FAIL`。  
   
 ## <a name="remarks"></a>備註  
- 這個方法很類似`IOleWindow::GetWindow`方法。  
+ 這個方法類似于 `IOleWindow::GetWindow` 方法。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IActiveScriptSiteWindow](../../winscript/reference/iactivescriptsitewindow.md)

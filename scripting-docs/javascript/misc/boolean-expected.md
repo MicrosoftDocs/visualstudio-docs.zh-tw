@@ -1,5 +1,5 @@
 ---
-title: 必須是布林 |Microsoft Docs
+title: 需要布林值 |Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
@@ -14,15 +14,15 @@ ms.assetid: 35d71b7f-53fd-44c4-a7c7-b1550c65cfd4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 261cf0ad93208c0eac09e42dcd68853352318e88
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 91ff0ec8cbd6e5cedb5ec02a8c574ff137b1c6ad
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62817896"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576051"
 ---
 # <a name="boolean-expected"></a>必須是布林
-您嘗試叫用**Boolean.prototype.toString**或是**Boolean.prototype.valueOf**以外的類型的物件上的方法`Boolean`。 這種類型的引動過程的物件必須是型別`Boolean`。 例如：
+您嘗試在 `Boolean` 以外的型別物件上叫用**valueOf**方法的**布林值。** 這種調用類型的物件必須是 `Boolean` 的類型。 例如:
 
 ```JavaScript
 var o = new Object;
@@ -32,9 +32,9 @@ o.f();
 
 ## <a name="to-correct-this-error"></a>更正這個錯誤
 
-- 只能叫用**Boolean.prototype.toString**或是**Boolean.prototype.valueOf**類型的物件上的方法**布林值。**
+- 只會在**布林值**類型的物件上叫用**valueOf** **方法。**
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [Boolean 物件](../../javascript/reference/boolean-object-javascript.md)
 - [資料類型](../../javascript/data-types-javascript.md)

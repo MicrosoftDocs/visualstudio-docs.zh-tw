@@ -1,5 +1,5 @@
 ---
-title: IScriptEntry::GetText | Microsoft Docs
+title: IScriptEntry：： GetText |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 24b314443644558b9900fc7d702dcd1b96a7cea4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2b25c1667f1df7e0394dd2ebfb0fea452da1b47d
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62787707"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575408"
 ---
 # <a name="iscriptentrygettext"></a>IScriptEntry::GetText
-傳回對應至文字`IScriptEntry`指令碼區塊或包含在原始碼`IScriptScriptlet`事件處理常式。  
+傳回對應至 `IScriptEntry` 腳本區塊的文字，或包含在 `IScriptScriptlet` 事件處理常式中的原始程式碼。  
   
 ## <a name="syntax"></a>語法  
   
@@ -37,7 +37,7 @@ HRESULT GetText(
   
 #### <a name="parameters"></a>參數  
  `pbstr`  
- [out]中的文字`IScriptEntry`指令碼區塊或包含在原始碼`IScriptScriptlet`事件處理常式。  
+ 脫銷@No__t_0 腳本區塊中的文字，或包含在 `IScriptScriptlet` 事件處理常式中的原始程式碼。  
   
 ## <a name="return-value"></a>傳回值  
  `HRESULT`。 可能的值包括 (但不限於) 下表中的這些值。  
@@ -48,5 +48,5 @@ HRESULT GetText(
   
 ## <a name="remarks"></a>備註  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IScriptEntry 介面](../../winscript/reference/iscriptentry-interface.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentHelper::BringDocumentContextToTop |Microsoft Docs
+title: IDebugDocumentHelper：： BringDocumentCoNtextToTop |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 41452331d03fdca53c8c7048a24adfd349c128ad
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 63b55844c260f693ab5d89ecd564ed6b6ecd32d6
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62783090"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577024"
 ---
 # <a name="idebugdocumenthelperbringdocumentcontexttotop"></a>IDebugDocumentHelper::BringDocumentContextToTop
-在偵錯工具使用者介面中帶入最上方的這份文件的內容。  
+將此檔的內容帶入偵錯工具使用者介面的頂端。  
   
 ## <a name="syntax"></a>語法  
   
@@ -37,7 +37,7 @@ HRESULT BringDocumentContextToTop(
   
 #### <a name="parameters"></a>參數  
  `pddc`  
- 在偵錯工具使用者介面中將顯示在上面的文件內容。  
+ 要在偵錯工具使用者介面中帶入頂端的檔內容。  
   
 ## <a name="return-value"></a>傳回值  
  方法會傳回 `HRESULT`。 可能的值包括 (但不限於) 下表中的這些值。  
@@ -47,7 +47,7 @@ HRESULT BringDocumentContextToTop(
 |`S_OK`|方法成功。|  
   
 ## <a name="remarks"></a>備註  
- 這個方法帶入頂端偵錯工具使用者介面中的這份文件的內容。  
+ 這個方法會將這份檔的內容帶入偵錯工具使用者介面的頂端。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDebugDocumentHelper 介面](../../winscript/reference/idebugdocumenthelper-interface.md)

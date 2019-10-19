@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cd90cb5eb55143a4a1916dfcee3f108ba7afb759
-ms.sourcegitcommit: 08c144d290da373df841f04fc799e3133540a541
-ms.translationtype: HT
+ms.openlocfilehash: bbd99d260ba61d9e3ae9e877ecc1cefb1a22892e
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72536039"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72569075"
 ---
 # <a name="general-debugging-options"></a>一般調試選項
 
@@ -95,7 +95,7 @@ ms.locfileid: "72536039"
 
 將**所有輸出視窗文字重新導向到**即時運算視窗：將通常會出現在 [**輸出**] 視窗中的所有偵錯工具訊息，傳送至 [即時**運算] 視窗**。
 
-**在變數視窗中顯示物件的原始結構**：關閉所有物件結構視圖自訂。 如需有關視圖自訂的詳細資訊，請參閱[建立 managed 物件的自訂視圖](../debugger/create-custom-views-of-dot-managed-objects.md)。
+**在變數視窗中顯示物件的原始結構**：關閉所有物件結構視圖自訂。 如需有關視圖自訂的詳細資訊，請參閱[建立 managed 物件的自訂視圖](../debugger/create-custom-views-of-managed-objects.md)。
 
 **在模組載入時隱藏 jit 優化（僅限 Managed）** ：在載入模組時停用 managed 程式碼的 jit 優化，並在附加偵錯工具時編譯 jit。 停用最佳化可更容易偵錯一些問題，但消耗較多效能。 如果正在使用 Just My Code，隱藏 JIT 最佳化會使非使用者程式碼顯示為使用者程式碼 ("My Code")。 如需詳細資訊，請參閱[JIT 優化和調試](../debugger/jit-optimization-and-debugging.md)程式。
 

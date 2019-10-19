@@ -1,5 +1,5 @@
 ---
-title: IScriptNode::GetLanguage |Microsoft Docs
+title: IScriptNode：： GetLanguage |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 36b7076bf7f261e462802174c6f9014403606ac8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 26fd5db22346292585be3cea751eaa8be1c284a9
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62786954"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575687"
 ---
 # <a name="iscriptnodegetlanguage"></a>IScriptNode::GetLanguage
-傳回目前的指令碼節點使用的指令碼語言。  
+傳回目前腳本節點所使用的指令碼語言。  
   
 ## <a name="syntax"></a>語法  
   
@@ -37,7 +37,7 @@ HRESULT GetLanguage(
   
 #### <a name="parameters"></a>參數  
  `pbstr`  
- [out]如果指令碼的節點使用 JScript，或是 「 VBScript"如果指令碼的節點會使用 Visual Basic Scripting Edition (VBScript)，則傳回"JScript"。  
+ 脫銷如果腳本節點使用 JScript，則傳回「JScript」，如果腳本節點使用 Visual Basic Scripting Edition （VBScript），則傳回「VBScript」。  
   
 ## <a name="return-value"></a>傳回值  
  `HRESULT`。 可能的值包括 (但不限於) 下表中的這些值。  
@@ -48,5 +48,5 @@ HRESULT GetLanguage(
   
 ## <a name="remarks"></a>備註  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IScriptNode 介面](../../winscript/reference/iscriptnode-interface.md)

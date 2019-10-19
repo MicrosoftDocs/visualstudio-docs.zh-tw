@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentContext::EnumCodeContexts |Microsoft Docs
+title: IDebugDocumentCoNtext：： EnumCodeCoNtexts |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ecf8b7d1ea292d0e1464825314cc92e1e903db3e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 790fd55493bfb24b32400bc73ae8a1799a279625
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62974419"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573484"
 ---
 # <a name="idebugdocumentcontextenumcodecontexts"></a>IDebugDocumentContext::EnumCodeContexts
-列舉程式碼相關聯的內容與此文件內容。  
+列舉與此檔內容相關聯的程式碼內容。  
   
 ## <a name="syntax"></a>語法  
   
@@ -37,7 +37,7 @@ HRESULT EnumCodeContexts(
   
 #### <a name="parameters"></a>參數  
  `ppescc`  
- [out]此文件內容與相關聯的程式碼內容。  
+ 脫銷與此檔內容相關聯的程式碼內容。  
   
 ## <a name="return-value"></a>傳回值  
  方法會傳回 `HRESULT`。 可能的值包括 (但不限於) 下表中的這些值。  
@@ -47,7 +47,7 @@ HRESULT EnumCodeContexts(
 |`S_OK`|方法成功。|  
   
 ## <a name="remarks"></a>備註  
- 除非文件是 include 檔或範本，文件是通常只有一個程式碼內容中，與相關聯。  
+ 檔通常只會與一個程式碼內容相關聯，除非檔是包含檔案或範本。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDebugDocumentContext 介面](../../winscript/reference/idebugdocumentcontext-interface.md)

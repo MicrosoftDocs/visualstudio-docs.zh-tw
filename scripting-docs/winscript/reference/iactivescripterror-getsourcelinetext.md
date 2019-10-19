@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptError::GetSourceLineText | Microsoft Docs
+title: IActiveScriptError：： GetSourceLineText |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 702f1655b244116e1bb7dca3d5fc90de3d1f5bdf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ded57f97ec40167bac34bf0f288c2e3d15a5c4b7
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62955002"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576909"
 ---
 # <a name="iactivescripterrorgetsourcelinetext"></a>IActiveScriptError::GetSourceLineText
-擷取指令碼引擎在執行指令碼時，於其中發生錯誤的原始程式檔中的一行。  
+當腳本引擎執行腳本時，抓取原始程式檔中發生錯誤的行。  
   
 ## <a name="syntax"></a>語法  
   
@@ -37,10 +37,10 @@ HRESULT GetSourceLineText(
   
 ## <a name="parameter"></a>參數  
  `pbstrSourceLine`  
- [out]接收發生錯誤的原始程式碼行緩衝區的位址。  
+ 脫銷接收發生錯誤之源程式碼的緩衝區位址。  
   
 ## <a name="return-value"></a>傳回值  
- 傳回`S_OK`如果成功，或`E_FAIL`如果原始程式檔中的行，所以無法擷取。  
+ 如果成功，則傳回 `S_OK`，如果未抓取原始程式檔中的行，則傳回 `E_FAIL`。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IActiveScriptError](../../winscript/reference/iactivescripterror.md)

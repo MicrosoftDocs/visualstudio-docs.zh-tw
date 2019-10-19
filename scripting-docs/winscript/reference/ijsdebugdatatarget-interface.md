@@ -1,5 +1,5 @@
 ---
-title: IJsDebugDataTarget Interface | Microsoft Docs
+title: IJsDebugDataTarget 介面 |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -11,15 +11,15 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3cbb4b0b54fb9a3821d3033ef0e65fd0bafbc246
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 85c77209230abfe261c9ec0b884ad0a677cfbf07
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62582494"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572459"
 ---
 # <a name="ijsdebugdatatarget-interface"></a>IJsDebugDataTarget 介面
-藉由偵錯工具提供功能來存取及變更目標偵錯工具處理序的狀態。  
+由偵錯工具所執行，提供存取和變更目標偵錯工具進程狀態的功能。  
   
 ## <a name="syntax"></a>語法  
   
@@ -27,24 +27,24 @@ ms.locfileid: "62582494"
 IJsDebugDataTarget : public IUnknown;  
 ```  
   
-## <a name="members"></a>成員  
+## <a name="members"></a>Members  
   
 ### <a name="public-methods"></a>公用方法  
   
-|名稱|描述|  
+|[屬性]|描述|  
 |----------|-----------------|  
-|[IJsDebugDataTarget::AllocateVirtualMemory 方法](../../winscript/reference/ijsdebugdatatarget-allocatevirtualmemory-method.md)|保留和 （或) 認可目標處理序虛擬位址空間中的記憶體區域。|  
+|[IJsDebugDataTarget::AllocateVirtualMemory 方法](../../winscript/reference/ijsdebugdatatarget-allocatevirtualmemory-method.md)|保留及/或認可目標進程的虛擬位址空間內的記憶體區域。|  
 |[IJsDebugDataTarget::CreateStackFrameEnumerator 方法](../../winscript/reference/ijsdebugdatatarget-createstackframeenumerator-method.md)|建立堆疊框架的列舉值。|  
-|[IJsDebugDataTarget::FreeVirtualMemory 方法](../../winscript/reference/ijsdebugdatatarget-freevirtualmemory-method.md)|釋放和 （或) 取消認可目標處理序虛擬位址空間中的記憶體區域。|  
-|[IJsDebugDataTarget::GetThreadContext 方法](../../winscript/reference/ijsdebugdatatarget-getthreadcontext-method.md)|擷取內容，針對指定的執行緒。|  
-|[IJsDebugDataTarget::GetTlsValue 方法](../../winscript/reference/ijsdebugdatatarget-gettlsvalue-method.md)|正在進行偵錯的執行緒，擷取所指定 TLS 索引的執行緒區域儲存區 (TLS) 位置中的值。|  
-|[IJsDebugDataTarget::ReadBSTR 方法](../../winscript/reference/ijsdebugdatatarget-readbstr-method.md)|從偵錯目標讀取 BSTR。|  
-|[IJsDebugDataTarget::ReadMemory 方法](../../winscript/reference/ijsdebugdatatarget-readmemory-method.md)|讀取目標處理序的記憶體。|  
+|[IJsDebugDataTarget::FreeVirtualMemory 方法](../../winscript/reference/ijsdebugdatatarget-freevirtualmemory-method.md)|釋放和（或）解除鎖定目標進程之虛擬位址空間內的記憶體區域。|  
+|[IJsDebugDataTarget::GetThreadContext 方法](../../winscript/reference/ijsdebugdatatarget-getthreadcontext-method.md)|抓取指定執行緒的內容。|  
+|[IJsDebugDataTarget::GetTlsValue 方法](../../winscript/reference/ijsdebugdatatarget-gettlsvalue-method.md)|對於正在進行調試的執行緒，會針對指定的 TLS 索引，抓取執行緒區域儲存區（TLS）插槽中的值。|  
+|[IJsDebugDataTarget::ReadBSTR 方法](../../winscript/reference/ijsdebugdatatarget-readbstr-method.md)|從 debug 目標讀取 BSTR。|  
+|[IJsDebugDataTarget::ReadMemory 方法](../../winscript/reference/ijsdebugdatatarget-readmemory-method.md)|讀取目標進程的記憶體。|  
 |[IJsDebugDataTarget::ReadNullTerminatedString 方法](../../winscript/reference/ijsdebugdatatarget-readnullterminatedstring-method.md)|從目標讀取指定的字元數。|  
-|[IJsDebugDataTarget::WriteMemory 方法](../../winscript/reference/ijsdebugdatatarget-writememory-method.md)|讀取目標處理序的記憶體。|  
+|[IJsDebugDataTarget::WriteMemory 方法](../../winscript/reference/ijsdebugdatatarget-writememory-method.md)|讀取目標進程的記憶體。|  
   
 ## <a name="requirements"></a>需求  
- **標頭：** jscript9diag.h  
+ **標頭：** jscript9diag。h  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Windows 指令碼介面參考](../../winscript/reference/windows-script-interfaces-reference.md)

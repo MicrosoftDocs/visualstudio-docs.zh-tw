@@ -1,5 +1,5 @@
 ---
-title: IDebugApplicationNodeEvents::onAttach | Microsoft Docs
+title: IDebugApplicationNodeEvents：： onAttach |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d606292eda60fbb367802dbd5df973b933f3fe14
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e45af6b931dad28a41f8f4453db9fab96405df3b
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62821952"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574695"
 ---
 # <a name="idebugapplicationnodeeventsonattach"></a>IDebugApplicationNodeEvents::onAttach
-處理表示偵錯應用程式節點物件已附加至父節點的事件。  
+處理事件，表示 debug 應用程式節點物件已附加至父節點。  
   
 ## <a name="syntax"></a>語法  
   
@@ -37,7 +37,7 @@ HRESULT onAttach(
   
 #### <a name="parameters"></a>參數  
  `prddpParent`  
- [in]偵錯應用程式節點，此節點的父系。  
+ 在屬於此節點之父系的 debug 應用程式節點。  
   
 ## <a name="return-value"></a>傳回值  
  方法會傳回 `HRESULT`。 可能的值包括 (但不限於) 下表中的這些值。  
@@ -47,11 +47,11 @@ HRESULT onAttach(
 |`S_OK`|方法成功。|  
   
 ## <a name="remarks"></a>備註  
- 這個方法會處理表示偵錯應用程式節點物件已附加至父節點的事件。  
+ 這個方法會處理事件，表示 debug 應用程式節點物件已附加至父節點。  
   
- 實作器`IDebugApplicationNode`介面會引發這個事件。  
+ @No__t_0 介面的實施者會引發此事件。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDebugApplicationNodeEvents 介面](../../winscript/reference/idebugapplicationnodeevents-interface.md)   
- [IDebugApplicationNodeEvents::onDetach](../../winscript/reference/idebugapplicationnodeevents-ondetach.md)   
+ [IDebugApplicationNodeEvents：： onDetach](../../winscript/reference/idebugapplicationnodeevents-ondetach.md)    
  [IDebugApplicationNode 介面](../../winscript/reference/idebugapplicationnode-interface.md)
