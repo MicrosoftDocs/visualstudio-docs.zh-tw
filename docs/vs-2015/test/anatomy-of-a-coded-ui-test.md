@@ -8,14 +8,14 @@ helpviewer_keywords:
 - coded UI tests
 ms.assetid: 9c5d82fc-3fb7-4bb1-a9ac-ac1fa3a4b500
 caps.latest.revision: 25
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 1af269201649f9372d9c0b2d5b273ddd358fe1e1
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 305c0b33b52c54e7d241b4e86e974d25e58d1e51
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68871715"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72660700"
 ---
 # <a name="anatomy-of-a-coded-ui-test"></a>自動程式化 UI 測試的結構
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -61,7 +61,7 @@ using MouseButtons = System.Windows.Forms.MouseButtons;
  包含 Windows 使用者介面 (UI) 的 <xref:Microsoft.VisualStudio.TestTools.UITesting.WinControls> 命名空間。 若為網頁 UI，命名空間為 <xref:Microsoft.VisualStudio.TestTools.UITesting.HtmlControls>，若為 Windows Presentation Foundation UI，命名空間為 <xref:Microsoft.VisualStudio.TestTools.UITesting.WpfControls>。
 
 #### <a name="UIMapClass"></a> UIMap 類別
- 檔案的下一個區段是[UIMap](/previous-versions/dd580454(v=vs.140))類別。
+ 檔案的下一個區段是 [UIMap](/previous-versions/dd580454(v=vs.140)) 類別。
 
 ```
 [GeneratedCode("Coded UITest Builder", "10.0.21221.0")]
@@ -79,7 +79,7 @@ public void VerifyTotal()
 public void CleanUp()
 ```
 
- [UIMap](/previous-versions/dd580454(v=vs.140))類別的這個部分也包括方法所需之每個屬性所產生的程式碼。
+ [UIMap](/previous-versions/dd580454(v=vs.140)) 類別的這部分也包含針對方法所需的每個屬性所產生的程式碼。
 
 ```
 public virtual LaunchCalculatorParams LaunchCalculatorParams
@@ -190,9 +190,9 @@ public class AddItemsParams
  根據預設，此檔案包含一個部分 `UIMap` 類別，沒有方法或屬性。
 
 #### <a name="uimap-class"></a>UIMap 類別
- 您可以在這裡建立自訂程式碼來擴充[UIMap](/previous-versions/dd580454(v=vs.140))類別的功能。 您在此檔案中建立的程式碼，**自動程式碼 UI 測試產生器**即不會在每次修改測試時重新產生。
+ 這裡可讓您建立自訂程式碼來擴充 [UIMap](/previous-versions/dd580454(v=vs.140)) 類別的功能。 您在此檔案中建立的程式碼，**自動程式碼 UI 測試產生器**即不會在每次修改測試時重新產生。
 
- [UIMap](/previous-versions/dd580454(v=vs.140))的所有部分都可以使用[UIMap](/previous-versions/dd580454(v=vs.140))類別中任何其他部分的方法和屬性。
+ [UIMap](/previous-versions/dd580454(v=vs.140)) 的所有部分都可以使用 [UIMap](/previous-versions/dd580454(v=vs.140)) 類別之任何其他部分的方法和屬性。
 
 ### <a name="CodedUITestCS"></a> CodedUITest1.cs
  這個檔案由**自動程式碼 UI 測試產生器**產生，但不會在每次修改測試時重新建立，因此您可以修改這個檔案中的程式碼。 此檔案的名稱是從您建立測試時所指定的名稱產生。
@@ -205,7 +205,7 @@ public class AddItemsParams
 public class CodedUITest1
 ```
 
- [CodedUITestAttribute](/previous-versions/visualstudio/visual-studio-2013/ff430233(v=vs.120))會自動套用至類別, 可讓測試架構將它辨識為測試延伸模組。 也請注意，這不是部分類別。 此檔案包含整個類別程式碼。
+ [CodedUITestAttribute](/previous-versions/visualstudio/visual-studio-2013/ff430233(v=vs.120)) 會自動套用至類別，這可讓測試架構將它辨識為測試擴充功能。 也請注意，這不是部分類別。 此檔案包含整個類別程式碼。
 
 ##### <a name="CodedUITestProperties"></a> CodedUITest1 屬性
  此類別包含位於檔案最下方的兩個預設屬性。 不得修改。
@@ -260,7 +260,7 @@ public void MyTestCleanup()
 
  `MyTestInitialize()` 方法套用 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestInitializeAttribute>，向測試架構表示在任何其他測試方法之前呼叫這個方法。 同樣地，`MyTestCleanup()` 方法套用 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestCleanupAttribute>，向測試架構表示在呼叫任何其他測試方法之後呼叫這個方法。 使用這些方法是選擇性的。 對於此測試，`UIMap.LaunchCalculator()` 方法可以從 `MyTestInitialize()` 呼叫，而 `UIMap.CloseCalculator()` 方法可以從 `MyTestCleanup()` 而不是從 `CodedUITest1Method1()` 呼叫。
 
- 如果您使用[CodedUITestAttribute](/previous-versions/visualstudio/visual-studio-2013/ff430233(v=vs.120))將更多方法新增至此類別, 測試架構會在測試過程中呼叫每個方法。
+ 如果您使用[CodedUITestAttribute](/previous-versions/visualstudio/visual-studio-2013/ff430233(v=vs.120))將更多方法新增至此類別，測試架構會在測試過程中呼叫每個方法。
 
 ### <a name="UIMapuitest"></a> UIMap.uitest
  這是一個 XML 檔案，代表自動程式化 UI 測試錄製及其所有部分的結構。 其中包括動作和類別，還有這些類別的方法和屬性。 [UIMap.Designer.cs](#UIMapDesignerFile) 檔案包含自動程式碼 UI 產生器為了重現測試結構而產生的程式碼，並提供測試架構的連線。

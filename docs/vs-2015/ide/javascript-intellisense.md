@@ -23,15 +23,15 @@ helpviewer_keywords:
 - XML documentation comments [JavaScript]
 ms.assetid: af1a3171-c9d8-45a3-9c96-a763e3b163ef
 caps.latest.revision: 67
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 4985196feb8c2ddd5996c51210e39f9e503e953f
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 39c90a8550736c945f04467e9366a73039cfa2b1
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65675176"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72670482"
 ---
 # <a name="javascript-intellisense"></a>JavaScript IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -273,11 +273,11 @@ IntelliSense 藉由在您撰寫程式碼的同時提供資訊，幫助您更快�
 
 - 將編輯器內的項目加上底線。 以紅色波浪底線指出錯誤。 如果您將滑鼠指標停留在錯誤上方，則會顯示錯誤描述的工具提示。
 
-- [錯誤清單] 視窗。 [錯誤清單] 視窗會顯示錯誤描述、發生錯誤的檔案位置、行號和欄數，以及專案。 若要顯示 [錯誤清單] 視窗，請按一下 [檢視] 功能表中的 [錯誤清單]。
+- [錯誤清單]  視窗。 [錯誤清單]  視窗會顯示錯誤描述、發生錯誤的檔案位置、行號和欄數，以及專案。 若要顯示 [錯誤清單]  視窗，請按一下 [檢視]  功能表中的 [錯誤清單]  。
 
 - [輸出] 視窗會顯示未載入的參考。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [使用 IntelliSense](../ide/using-intellisense.md)
 - [產生 XML 文件註解](../ide/create-xml-documentation-comments-for-javascript-intellisense.md)
 - [擴充 JavaScript IntelliSense](../ide/extending-javascript-intellisense.md)

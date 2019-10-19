@@ -8,14 +8,14 @@ helpviewer_keywords:
 - coded UI tests, best practices
 ms.assetid: d5aef766-a24c-4f1f-ac9b-e5462b6627d4
 caps.latest.revision: 41
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 1a631823ce39e5655bba611f90c2869e8dff1d8f
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 2dffebeaa0349c149e319d20794f8b065baa5647
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68871667"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72660680"
 ---
 # <a name="best-practices-for-coded-ui-tests"></a>自動程式化 UI 測試的最佳作法
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,11 +45,11 @@ ms.locfileid: "68871667"
 
 - 如果使用者介面 (UI) 有所變更，請重新錄製測試方法或判斷提示方法，或重新錄製現有測試方法受影響的區段。
 
-- 針對受測應用程式中的每個模組, 建立個別的[UIMap](/previous-versions/dd580454(v=vs.140))檔案。 如需詳細資訊，請參閱[測試含有多個 UI 對應的大型應用程式](../test/testing-a-large-application-with-multiple-ui-maps.md)。
+- 為您應用程式中受測試的每個模組建立個別的 [UIMap](/previous-versions/dd580454(v=vs.140)) 檔案。 如需詳細資訊，請參閱[測試含有多個 UI 對應的大型應用程式](../test/testing-a-large-application-with-multiple-ui-maps.md)。
 
 - 當您建立 UI 控制項時，應在受測試的應用程式中使用有意義的名稱。 這可讓自動產生的控制項名稱有更多的意義和可用性。
 
-- 如果您要使用 API 撰寫程式碼來建立判斷提示, 請針對檔案中`UIMap.cs` [UIMap](/previous-versions/dd580454(v=vs.140))類別的部分, 建立每個宣告的方法。 從您的測試方法中呼叫此方法，以執行判斷提示。
+- 如果您要使用 API 撰寫程式碼來建立判斷提示，請在 `UIMap.cs` 檔案中[UIMap](/previous-versions/dd580454(v=vs.140))類別的部分，為每個判斷提示建立一個方法。 從您的測試方法中呼叫此方法，以執行判斷提示。
 
 - 如果要直接使用 API 撰寫程式碼，請盡可能在您的程式碼中使用 `UIMap.Designer.cs` 檔案所產生之類別中的屬性和方法。 這些類別會使您的工作更容易、更可靠，並且有助於您提高生產力。
 

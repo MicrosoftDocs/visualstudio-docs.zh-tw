@@ -6,15 +6,15 @@ ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: 89604bcf-da25-4180-a1d2-c5f22ab67bb6
 caps.latest.revision: 7
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 63a4e207172d4f726091691985e7d1f84bb2e708
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0c2e58686c1369847fdeb0d83aaac6c65341aa08
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68187453"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72663927"
 ---
 # <a name="wpf-community-resources"></a>WPF 社群資源
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

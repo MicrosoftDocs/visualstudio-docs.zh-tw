@@ -12,20 +12,20 @@ helpviewer_keywords:
 - keyboard shortcuts
 ms.assetid: c2c64648-00f8-4e48-a8a0-96c67cfd968c
 caps.latest.revision: 59
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 129fa00681fcd3a9f3b19370bb553fcd5146e46e
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 9bfd13bda3e3d7ba416772123ac59ff0136a3725
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65701100"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72665815"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Visual Studio 中的預設鍵盤快速鍵
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-只需選擇適當的鍵盤快速鍵，您就可以在 Visual Studio 中更輕鬆地存取各種命令和視窗。 本主題列出 [一般開發] 設定檔的預設捷徑，您可能已在已安裝的 Visual Studio 中選擇該設定檔。 不管您選擇哪一個設定檔，都可以開啟 [選項] 對話方塊、展開 [環境] 節點，然後選擇 [鍵盤] 來識別命令的捷徑。 您也可以為指定的命令指派不同的捷徑，以自訂捷徑。
+只需選擇適當的鍵盤快速鍵，您就可以在 Visual Studio 中更輕鬆地存取各種命令和視窗。 本主題列出 [一般開發] 設定檔的預設捷徑，您可能已在已安裝的 Visual Studio 中選擇該設定檔。 不管您選擇哪一個設定檔，都可以開啟 [選項]  對話方塊、展開 [環境]  節點，然後選擇 [鍵盤]  來識別命令的捷徑。 您也可以為指定的命令指派不同的捷徑，以自訂捷徑。
 
  如需常用鍵盤快速鍵的清單和其他產能資訊，請參閱[秘訣和訣竅](../ide/tips-and-tricks-for-visual-studio.md)和[提高產能的秘訣](../ide/productivity-tips-for-visual-studio.md)。
 
@@ -544,7 +544,7 @@ ms.locfileid: "65701100"
 
 |命令|鍵盤快速鍵|
 |--------------|------------------------|
-|Debug.Graphics.CaptureFrame|無|
+|Debug.Graphics.CaptureFrame|None|
 |Graphics.MovePixelSelectionDown|Shift+Alt+向下鍵|
 |Graphics.MovePixelSelectionLeft|Shift+Alt+向左鍵|
 |Graphics.MovePixelSelectionRight|Shift+Alt+向右鍵|
@@ -1159,5 +1159,5 @@ ms.locfileid: "65701100"
 |XsdDesigner.ShowGraphView|Ctrl+3|
 |XsdDesigner.ShowStartView|Ctrl+1|
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
  [圖示影像編輯器](https://msdn.microsoft.com/library/586d2b8b-0348-4883-a85d-1ff0ddbf14dd) [使用 IntelliSense](../ide/using-intellisense.md)
