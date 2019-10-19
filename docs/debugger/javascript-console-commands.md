@@ -1,7 +1,7 @@
 ---
 title: JavaScript 主控台命令 |Microsoft Docs
 ms.custom: ''
-ms.date: 03/28/2019
+ms.date: 10/17/2019
 ms.topic: reference
 helpviewer_keywords:
 - JavaScript Console commands [UWP apps]
@@ -10,33 +10,30 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - uwp
 - cordova
-ms.openlocfilehash: 40e32250378d92ac63e4a057a59ee847de6af810
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fead28e60116acb7b2ae311d98e5475c5da3ec35
+ms.sourcegitcommit: 8a96a65676fd7a2a03b0803d7eceae65f3fa142b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62905670"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72588972"
 ---
 # <a name="javascript-console-commands-in-visual-studio"></a>Visual Studio 中的 JavaScript 主控台命令
 
-::: moniker range=">=vs-2019"
-您可以在 Visual Studio [JavaScript 主控台] 視窗中，使用命令傳送訊息及執行其他工作。 本主題資訊適用於建立使用 Visual Studio 中使用的 Node.js 應用程式**Node.js 開發**安裝工作負載。
-::: moniker-end
-::: moniker range="vs-2017"
-您可以在 Visual Studio [JavaScript 主控台] 視窗中，使用命令傳送訊息及執行其他工作。 如需示範如何使用此視窗的範例，請參閱[快速入門：偵錯 JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md?view=vs-2017)。 本主題資訊適用於 Node.js 應用程式，UWP 應用程式，並使用 Visual Studio Tools for Apache Cordova 建立的應用程式。 如需 Cordova 應用程式支援的主控台命令相關資訊，請參閱 [Debug Your App](https://taco.visualstudio.com/en-us/docs/debug-using-visual-studio/)。
-::: moniker-end
+您可以在 Visual Studio [JavaScript 主控台] 視窗中，使用命令傳送訊息及執行其他工作。 如需示範如何使用此視窗的範例，請參閱[快速入門： Debug JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md?view=vs-2017)。 本主題中的資訊適用于使用 Apache Cordova 的 Visual Studio Tools 建立的 node.js 應用程式、UWP 應用程式和應用程式。
 
-如果 [JavaScript 主控台] 視窗已關閉，您可以開啟偵錯時在 Visual Studio 中選擇**偵錯** > **Windows** > **JavaScript主控台**。
+如果 [JavaScript 主控台] 視窗已關閉，您可以在 Visual Studio 中，選擇 [ **Debug**  > **Windows**  > **JavaScript 主控台**]，以開啟它。
 
 > [!NOTE]
-> 如果在偵錯工作階段期間無法使用該視窗，請確定在專案的 [偵錯] 屬性中的偵錯工具類型已設為 [指令碼]  。
+> 如果在偵錯工作階段期間無法使用該視窗，請確定在專案的 [偵錯] 屬性中的偵錯工具類型已設為 [指令碼] 。
 
-在 Microsoft Edge 開發人員工具中使用主控台的資訊，請參閱[本主題](/microsoft-edge/devtools-guide)。
+如需在 Microsoft Edge 開發人員工具中使用主控台的詳細資訊，請參閱[這個主題](/microsoft-edge/devtools-guide)。
 
 ## <a name="console-object-commands"></a>主控台物件命令
+
 此表格顯示 `console` 物件命令的語法，該命令可用於 [JavaScript 主控台] 視窗，也可以用來從程式碼傳送訊息至主控台。 此物件提供數種格式，以便您在必要時可區分告知性訊息與錯誤訊息。
 
 如需避免與本機物件命名的主控台相混淆，您可以使用較長的命令格式 `window.console.[command]` 。
@@ -58,9 +55,9 @@ ms.locfileid: "62905670"
 |`groupEnd()`|結束目前的群組。<br /><br /> 需求：<br /><br /> Visual Studio 2013|請參閱 `group` 命令的範例。|
 |`info(message)`|將 `message` 傳送至主控台視窗。 訊息開頭處會有資訊符號。|`console.info("info message");`<br /><br /> 如需更多範例，請參閱本主題稍後的 [Formatting console.log output](#ConsoleLog) 。|
 |`log(message)`|將 `message` 傳送至主控台視窗。<br /><br /> 如果您傳遞物件，這個命令會將該物件傳送至主控台視窗，並在視覺化檢視中顯示物件。 您可以使用視覺化檢視在主控台視窗中檢查屬性。|`console.log("logging message");`|
-|`msIsIndependentlyComposed(element)`|使用於 Web 應用程式。 不支援使用 JavaScript 的 UWP 應用程式。|不支援。|
-|`profile(reportName)`|使用於 Web 應用程式。 不支援使用 JavaScript 的 UWP 應用程式。|不支援。|
-|`profileEnd()`|使用於 Web 應用程式。 不支援使用 JavaScript 的 UWP 應用程式。|不支援。|
+|`msIsIndependentlyComposed(element)`|使用於 Web 應用程式。 使用 JavaScript 的 UWP 應用程式不支援。|不支援。|
+|`profile(reportName)`|使用於 Web 應用程式。 使用 JavaScript 的 UWP 應用程式不支援。|不支援。|
+|`profileEnd()`|使用於 Web 應用程式。 使用 JavaScript 的 UWP 應用程式不支援。|不支援。|
 |`select(element)`|選取 `element` DOM 總管 [中指定的 HTML](../debugger/quickstart-debug-html-and-css.md)。|console.select(element);|
 |`time (name)`|啟動由選擇性 `name` 參數識別的計時器。 與 `console.timeEnd`搭配使用時，計算 `time` 與 `timeEnd`之間經過的時間，並使用 `name` 字串做為前置詞，將結果 (以毫秒為單位) 傳送至主控台。 用來啟用應用程式程式碼的檢測以測量效能。|`console.time("app start");  app.start();  console.timeEnd("app start");`|
 |`timeEnd(name)`|停止由選擇性 `name` 參數識別的計時器。 請參閱 `time` 主控台命令。|`console.time("app start"); app.start(); console.timeEnd("app start");`|
@@ -72,7 +69,7 @@ ms.locfileid: "62905670"
 
 |命令|描述|範例|
 |-------------|-----------------|-------------|
-|`$0`, `$1`, `$2`, `$3`, `$4`|將指定的項目傳回主控台視窗。 `$0` 會傳回目前在 [DOM 總管] 中選取的項目，`$1` 則會傳回前次在 [DOM 總管] 中選取的項目，依此類推，最多可回推至前四次選取的項目。|$3|
+|`$0`、 `$1`、 `$2`、 `$3`、 `$4`|將指定的項目傳回主控台視窗。 `$0` 會傳回目前在 [DOM 總管] 中選取的項目，`$1` 則會傳回前次在 [DOM 總管] 中選取的項目，依此類推，最多可回推至前四次選取的項目。|$3|
 |`$(id)`|依 ID 傳回項目。 這是 `document.getElementById(id)`的捷徑命令，其中 `id` 是代表項目 ID 的字串。|`$("contenthost")`|
 |`$$(selector)`|傳回項目陣列，其符合使用 CSS 選取器語法的指定選取器。 這是 `document.querySelectorAll()`的捷徑命令。|`$$(".itemlist")`|
 |`cd()`<br /><br /> `cd(window)`|可讓您將運算式評估的內容，從頁面的預設最上層視窗變更為指定框架的視窗。 呼叫不帶參數的 `cd()` ，會將內容傳回至最上層視窗。|`cd();`<br /><br /> `cd(myframe);`|
@@ -129,6 +126,6 @@ console.log("%s is %f years old!", user.first, user.age);
 // Fred is 10.01 years old!
 ```
 
-## <a name="see-also"></a>另請參閱
-- [快速入門：針對 JavaScript 進行偵錯](../debugger/quickstart-debug-javascript-using-the-console.md?view=vs-2017)
-- [快速入門：對 HTML 和 CSS 進行偵錯](../debugger/quickstart-debug-html-and-css.md?view=vs-2017)
+## <a name="see-also"></a>請參閱
+- [快速入門：偵錯 JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md?view=vs-2017)
+- [快速入門：偵錯 HTML 和 CSS](../debugger/quickstart-debug-html-and-css.md?view=vs-2017)

@@ -1,7 +1,7 @@
 ---
 title: Visual Studio 中的跨平台行動裝置應用程式開發 | Microsoft Docs
 ms.custom: ''
-ms.date: 05/24/2018
+ms.date: 10/17/2019
 ms.technology: vs-ide-mobile
 ms.topic: conceptual
 ms.assetid: 8202717a-e990-45cf-b092-438651ccb38a
@@ -10,12 +10,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - multiple
-ms.openlocfilehash: eea38f8109069f6d6526b2ccb920565f09b98043
-ms.sourcegitcommit: 08c144d290da373df841f04fc799e3133540a541
+ms.openlocfilehash: 5e82828296234b13e36b7d3eabf071071ebb708d
+ms.sourcegitcommit: 8a96a65676fd7a2a03b0803d7eceae65f3fa142b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72535670"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72589023"
 ---
 # <a name="cross-platform-mobile-development-in-visual-studio"></a>Visual Studio 中的跨平台行動裝置應用程式開發
 
@@ -42,9 +42,9 @@ ms.locfileid: "72535670"
 
 ### <a name="AndroidHTML"></a> 以 Android、iOS 和 Windows 為目標的單一程式碼基底
 
- 您可以使用 C# 或 F# (目前不支援 Visual Basic)，來建置 Android、iOS 和 Windows 的原生應用程式。  若要開始，請安裝 Visual Studio 2017，選取安裝程式中的 [使用 .NET 進行行動裝置開發] 選項。
+ 您可以使用C#或F# ，建立適用于 Android、iOS 和 Windows 的原生應用程式（目前不支援 Visual Basic）。  若要開始使用，請安裝 Visual Studio，請在安裝程式中選取 [**使用 .net 進行行動開發**] 選項。
 
- 如果您已經安裝 Visual Studio 2017，請重新執行 [Visual Studio 安裝程式]，並為 Xamarin 選取相同的 [使用 .NET 進行行動裝置開發] 選項 (如上述)。
+ 如果您已經安裝 Visual Studio，請重新執行**Visual Studio 安裝程式**，然後選取適用于 Xamarin 的相同 [**使用 .Net 進行行動開發**] 選項（如上所示）。
 
  當您完成時，專案範本會出現在 [新增專案] 對話方塊中。 尋找 Xamarin 範本的最簡單方式是只需搜尋「Xamarin」。
 
@@ -116,12 +116,13 @@ ms.locfileid: "72535670"
 
 <a name="CPP"></a>
 
-## <a name="build-an-app-for-android-and-windows-c"></a>建置 Android 和 Windows 的應用程式 (C++)
- ![使用 C&#43; &#43;針對 Android、iOS 和 Windows 建立](../cross-platform/media/cross_plat_cpp_intro_image.png "Cross_Plat_CPP_Intro_Image")
+## <a name="build-an-app-for-android-ios-and-windows-c"></a>建立適用于 Android、iOS 和 Windows 的應用程式C++（）
 
- 首先，安裝 Visual Studio 2017 及 [使用 C++ 進行行動開發] 工作負載。 然後，您可以建置 Android 的 Native-Activity 應用程式，或以 Windows 為目標的應用程式。 目前尚未提供以 iOS 為目標的 C++ 範本。 您可以視需要在同一個方案以 Android 和 Windows 為目標，然後使用跨平台靜態或動態共用程式庫，在這兩者間共用程式碼。
+![使用 C&#43; &#43;針對 Android、iOS 和 Windows 建立](../cross-platform/media/cross_plat_cpp_intro_image.png "Cross_Plat_CPP_Intro_Image")
 
- 如果您必須建置需要任何進階圖形操作類型 (例如遊戲) 的 Android 應用程式，可使用 C++ 來執行此動作。 從**原生活動應用程式 (Android)** 專案開始。 這個專案提供對 Clang 工具鏈的完整支援。
+ 首先，安裝 Visual Studio 和使用工作負載**進行C++** 行動裝置開發。 接著，您可以建立 Android 的原生活動應用程式，或以 Windows 或 iOS 為目標的應用程式。 如有需要，您可以在相同的方案中以 Android、iOS 和 Windows 為目標，然後使用跨平臺靜態或動態共用程式庫，在兩者之間共用程式碼。
+
+ 如果您必須建置需要任何進階圖形操作類型 (例如遊戲) 的 Android 應用程式，可使用 C++ 來執行此動作。 從**原生活動應用程式（Android）** 專案開始。 這個專案提供對 Clang 工具鏈的完整支援。
 
  ![Native activity 專案範本](../cross-platform/media/cross-plat_cpp_native.png "Native Activity 專案範本")
 
@@ -129,23 +130,22 @@ ms.locfileid: "72535670"
 
  您也可以使用 C++ 和通用 Windows 平台 (UWP) 應用程式專案範本，建置以 Windows 10 裝置的完整範圍為目標的應用程式。 在本主題稍早的[以 Windows 10 裝置為目標](#WindowsHTML)一節中進一步了解。
 
- 您可以藉由建立靜態或動態共用程式庫，在 Android 和 Windows 之間共用 C++ 程式碼。
+ 您可以藉C++由建立靜態或動態共用程式庫，在 Android、IOS 和 Windows 之間共用程式碼。
 
  ![靜態和動態共用程式庫](../cross-platform/media/cross_plat_cpp_libraries.png "靜態和動態共用程式庫")
 
- 您可以如本節稍早所述，在 Windows 或 Android 專案中使用該程式庫。 您也可以在使用 Xamarin、Java 或任何語言建置的應用程式中使用該程式庫，讓您叫用 Unmanaged DLL 中的函式。
+ 您可以在 Windows、iOS 或 Android 專案中使用該程式庫，如本節稍早所述。 您也可以在使用 Xamarin、Java 或任何語言建置的應用程式中使用該程式庫，讓您叫用 Unmanaged DLL 中的函式。
 
  當您在這些程式庫中撰寫程式碼時，您可以使用 IntelliSense 來瀏覽 Android 和 Windows 平台的原生 API。 這些程式庫專案與 Visual Studio 偵錯工具完全整合，因此您可以使用偵錯工具的所有進階功能，來設定中斷點、逐步執行程式碼，以及尋找和修正問題。
 
 |**進一步了解**|
 |--------------------|
-|[下載 Visual Studio。](http://visualstudio.microsoft.com/products/visual-studio-community-vs) (VisualStudio.com)|
-|[安裝跨平台行動裝置開發適用的 Visual C++ 工具。](https://msdn.microsoft.com/library/dn707591.aspx) (MSDN Library)。|
-|[進一步了解如何使用 C++ 來將多個平台作為目標。](https://visualstudio.microsoft.com/vs/cplusplus-mdd/) (VisualStudio.com)|
-|[安裝所需項目，然後建立 Android 原生活動應用程式](https://msdn.microsoft.com/library/dn707595.aspx) (MSDN Library)|
+|[下載 Visual Studio](http://visualstudio.microsoft.com/products/visual-studio-community-vs) （VisualStudio.com）|
+|[使用安裝跨平臺行動開發C++](install-visual-cpp-for-cross-platform-mobile-development.md)|
+|[深入瞭解如何使用C++將目標設為多個平臺](https://visualstudio.microsoft.com/vs/cplusplus-mdd/)（VisualStudio.com）|
+|[安裝您需要的內容，然後建立適用于 Android 的原生活動應用程式](create-an-android-native-activity-app.md)|
 |[深入了解如何與 Android 和 Windows 應用程式共用 C++ 程式碼](https://visualstudio.microsoft.com/vs/cplusplus-mdd/) (VisualStudio.com)|
-|[適用於 C++ 的跨平台行動開發範例](https://msdn.microsoft.com/library/dn707596.aspx) (MSDN Library)|
-|[其他適用於 C++ 的跨平台行動開發範例](https://code.msdn.microsoft.com/site/search?f%5B0%5D.Type=SearchText&f%5B0%5D.Value=android&f%5B1%5D.Type=ProgrammingLanguage&f%5B1%5D.Value=C%2B%2B&f%5B1%5D.Text=C%2B%2B) (code.msdn)|
+|[適用于的跨平臺行動裝置開發範例C++](cross-platform-mobile-development-examples.md)|
 
 <a name="Unity"></a>
 

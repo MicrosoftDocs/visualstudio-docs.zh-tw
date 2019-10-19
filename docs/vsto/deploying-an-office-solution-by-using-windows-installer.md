@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 20df85952b4e76e60d6e93067c1f1e7838b692cd
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.sourcegitcommit: 8a96a65676fd7a2a03b0803d7eceae65f3fa142b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/25/2019
+ms.lasthandoff: 10/18/2019
 ms.locfileid: "69551712"
 ---
 # <a name="deploy-an-office-solution-by-using-windows-installer"></a>使用 Windows Installer 部署 Office 方案
@@ -59,7 +59,7 @@ ms.locfileid: "69551712"
 
 如需如何使用 ClickOnce 部署 Office 方案的詳細資訊，請參閱[使用 Clickonce 部署 office 方案](../vsto/deploying-an-office-solution-by-using-clickonce.md)。
 
-如需如何使用[!INCLUDE[vs_dev10_long](../sharepoint/includes/vs-dev10-long-md.md)]建立 Windows Installer 檔案的詳細資訊，請參閱[使用 Windows Installer 部署 Visual Studio 2010 Tools for Office 方案](http://go.microsoft.com/fwlink/?LinkId=201807)。
+如需如何使用 [!INCLUDE[vs_dev10_long](../sharepoint/includes/vs-dev10-long-md.md)] 建立 Windows Installer 檔案的詳細資訊，請參閱[使用 Windows Installer 部署適用于 Office 方案的 Visual Studio 2010 工具](http://go.microsoft.com/fwlink/?LinkId=201807)。
 
 ## <a name="Download"></a>下載範例
 本主題會引用下列可下載的範例。
@@ -107,7 +107,7 @@ ms.locfileid: "69551712"
 
    與這個主題相關聯的 VSTO 增益集範例包含名為 **ExcelAddIn**的專案。 文件層級自訂範例包含名為 **ExcelWorkbook**的專案。 本主題會使用這兩個名稱之一，談及您方案中的 Office 專案。
 
-2. 在功能表列上 **，選擇 [**  > 檔案] [**加入** > **新專案**]。
+2. 在功能表列上 **，選擇** 檔案  > **加入** > **新增專案**。
 
    [ **加入新的專案** ] 對話方塊隨即開啟。
 
@@ -127,13 +127,13 @@ ms.locfileid: "69551712"
 
 1. 在 [ **方案總管**] 中，展開 [ **OfficeAddInSetup** ] 專案節點，然後選取 **Project Assistant** 檔案，如下圖所示。
 
-   ![方案總管中的專案助理]檔案(../vsto/media/installshield-projectassistant.png "方案總管中的專案助理")檔案
+   ![方案總管中的專案助理檔案](../vsto/media/installshield-projectassistant.png "[方案總管] 中的專案助理檔案")
 
-2. 在功能表列上，選擇 [**視圖** > ] [**開啟**]。
+2. 在功能表列上，選擇 [ **View**  > **開啟**]。
 
 3. 在 [ **專案助理** ] 頁面底部，選擇 [ **應用程式檔案** ] 按鈕，如下圖所示。
 
-   ![[應用程式檔] 按鈕。](../vsto/media/installshield-applicationfiles.png "[應用程式檔] 按鈕。")
+   ![[應用程式檔] 按鈕。](../vsto/media/installshield-applicationfiles.png "[應用程式檔案] 按鈕。")
 
 4. 在 [ **應用程式檔案** ] 頁面上，選擇 [ **加入專案輸出** ] 按鈕。
 
@@ -151,7 +151,7 @@ ms.locfileid: "69551712"
 
    [ **應用程式檔案** ] 頁面現在包含專案輸出檔、部署資訊清單和應用程式資訊清單，如下圖所示。
 
-   ![安裝專案的輸出檔。](../vsto/media/installshield-outputfiles.png "安裝專案的輸出檔。")
+   ![安裝專案的輸出檔。](../vsto/media/installshield-outputfiles.png "您安裝專案的輸出檔案名稱。")
 
 ## <a name="Configure"></a>設定相依元件為必要條件
 
@@ -165,9 +165,9 @@ ms.locfileid: "69551712"
 
 1. 在 [ **方案總管**] 中，依序展開 [ **OfficeAddInSetup** ] 專案節點、[ **Specify Application Data** ] 節點，然後選擇 **Redistributables** 檔案，如下圖所示。
 
-   ![在 方案總管的可轉散發檔案](../vsto/media/installshield-redistributablesfile.png "方案總管 中的可轉散發檔案")
+   ![中的可轉散發檔案方案總管](../vsto/media/installshield-redistributablesfile.png "[方案總管] 中的可轉散發檔案")
 
-2. 在功能表列上，選擇 [**視圖** > ] [**開啟**]。
+2. 在功能表列上，選擇 [ **View**  > **開啟**]。
 
    [ **Redistributables** ] 頁面隨即開啟。
 
@@ -216,7 +216,7 @@ ms.locfileid: "69551712"
    </properties>
    ```
 
-5. 在 [記事本] 的功能表列上 **，選擇 [**  > 檔案] [**儲存**]。
+5. 在 記事本 的功能表列上 **，選擇** 檔案  > **儲存**。
 
 6. 在 [ **另存新檔** ] 對話方塊中，瀏覽至 [ **桌面** ] 資料夾。
 
@@ -231,13 +231,13 @@ ms.locfileid: "69551712"
 
 10. 從您的**桌面**資料夾，將*Visual Studio 2010 Tools for Office Runtime runtime.prq*檔案複製到電腦上的下列其中一個目錄。
 
-   32位作業系統： *%ProgramFiles%\InstallShield\2013LE\SetupPrerequisites\\*
+   32位作業系統： *%ProgramFiles%\InstallShield\2013LE\SetupPrerequisites \\*
 
-   64位作業系統： *% ProgramFiles （x86）% \ 2013LE \ SetupPrerequisites\\*
+   64位作業系統： *% ProgramFiles （x86）% \ 2013LE \ SetupPrerequisites \\*
 
 11. 在 InstallShield 專案的 [ **可轉散發套件** ] 頁面上，選擇 [ **重新整理** ] 按鈕以重新整理可轉散發元件清單，如下圖所示。
 
-   [重新整理]![按鈕。][重新整理](../vsto/media/installshield-refreshbutton.png "按鈕。")
+   ![[重新整理] 按鈕。](../vsto/media/installshield-refreshbutton.png "重新整理按鈕。")
 
 12. 在可轉散發元件的清單中，選取 [ **Visual Studio 2010 Tools for Office Runtime** ] 核取方塊。
 
@@ -249,7 +249,7 @@ ms.locfileid: "69551712"
 
 1. 在 [ **方案總管**] 中，依序展開 [ **OfficeAddInSetup** ] 節點、[ **Organize your Setup** ] 節點，然後選擇 **General Information** 檔案。
 
-2. 在功能表列上，選擇 [**視圖** > ] [**開啟**]。
+2. 在功能表列上，選擇 [ **View**  > **開啟**]。
 
 3. 在屬性清單中，選擇 [ **INSTALLDIR** ] 屬性旁邊的 [ **瀏覽** ] 按鈕。
 
@@ -273,7 +273,7 @@ ms.locfileid: "69551712"
 
 1. 在 [ **方案總管**] 中，依序展開 [ **OfficeAddInSetup** ] 專案節點、[ **Organize your Setup** ] 節點，然後選擇 **General Information** 檔案。
 
-2. 在功能表列上，選擇 [**視圖** > ] [**開啟**]。
+2. 在功能表列上，選擇 [ **View**  > **開啟**]。
 
    安裝專案的屬性隨即出現。
 
@@ -287,7 +287,7 @@ ms.locfileid: "69551712"
 
 1. 在 [ **方案總管**] 中，選擇 [ **Project Assistant** ] 節點。
 
-   在功能表列上，選擇 [**視圖** > ] [**開啟**]。
+   在功能表列上，選擇 [ **View**  > **開啟**]。
 
 2. 在 [ **專案助理** ] 頁面底部，選擇 [ **Application Registry** ] 按鈕，如下圖所示。
 
@@ -309,15 +309,15 @@ ms.locfileid: "69551712"
 
 | Office 版本<br /><br /> | InstallShield 組態路徑<br /><br /> |
 |----------------------------| - |
-| 32 位元<br /><br /> | **HKEY_LOCAL_MACHINE\SOFTWARE(32-Bit)\Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br /> |
-| 64 位元<br /><br /> | **HKEY_LOCAL_MACHINE\SOFTWARE(64-Bit)\Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br /> |
+| 32 位元<br /><br /> | **HKEY_LOCAL_MACHINE\SOFTWARE （32位） \Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br /> |
+| 64 位元<br /><br /> | **HKEY_LOCAL_MACHINE\SOFTWARE （64位） \Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br /> |
 
    **根據 Windows 版本的每部電腦安裝程式**
 
 | Windows 版本<br /><br /> | InstallShield 組態路徑<br /><br /> |
 |-----------------------------| - |
-| 32 位元<br /><br /> | **HKEY_LOCAL_MACHINE\SOFTWARE(32-Bit)\Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br /> |
-| 64 位元<br /><br /> | **HKEY_LOCAL_MACHINE\SOFTWARE(32-Bit)\Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br />**HKEY_LOCAL_MACHINE\SOFTWARE(64-Bit)\Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br /> |
+| 32 位元<br /><br /> | **HKEY_LOCAL_MACHINE\SOFTWARE （32位） \Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br /> |
+| 64 位元<br /><br /> | **HKEY_LOCAL_MACHINE\SOFTWARE （32位） \Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br />**HKEY_LOCAL_MACHINE\SOFTWARE （64位） \Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br /> |
 
    > [!NOTE]
    > 64位 Windows 的安裝程式需要兩個登錄路徑，因為使用者可以在執行64位 Windows 的電腦上執行32位和64位版本的 Office。
@@ -333,7 +333,7 @@ ms.locfileid: "69551712"
 
 7. 重複這個程序，建立下列值。
 
-|實值類型<br /><br />|名稱<br /><br />|
+|實值類型<br /><br />|[屬性]<br /><br />|
 |--------------|--------|
 |字串值<br /><br />|**FriendlyName**<br /><br />|
 |DWORD 值<br /><br />|**LoadBehavior**<br /><br />|
@@ -384,7 +384,7 @@ ms.locfileid: "69551712"
 
 ### <a name="to-create-a-program-that-modifies-document-properties"></a>若要建立修改文件屬性的程式
 
-1. 在功能表列上 **，選擇 [**  > 檔案] [**加入** > **新專案**]。
+1. 在功能表列上 **，選擇** 檔案  > **加入** > **新增專案**。
 
    [ **加入新的專案** ] 對話方塊隨即出現。
 
@@ -404,7 +404,7 @@ ms.locfileid: "69551712"
 
 7. 在 [ **方案總管**] 中，選擇 **Program.cs** 檔案 (用於 C# 應用程式) 或 **Module1.vb** 檔案 (用於 Visual Basic 應用程式)。
 
-8. 在功能表列上，選擇 [**視圖** > ] [**開啟**]。
+8. 在功能表列上，選擇 [ **View**  > **開啟**]。
 
 9. 以下列程式碼取代這整個檔案的內容。
 
@@ -417,13 +417,13 @@ ms.locfileid: "69551712"
 
 1. 在 [ **方案總管**] 中，展開 [ **OfficeAddInSetup** ] 專案節點，然後選取 **Project Assistant** 檔案，如下圖所示。
 
-   ![方案總管中的專案助理]檔案(../vsto/media/installshield-projectassistant.png "方案總管中的專案助理")檔案
+   ![方案總管中的專案助理檔案](../vsto/media/installshield-projectassistant.png "[方案總管] 中的專案助理檔案")
 
-2. 在功能表列上，選擇 [**視圖** > ] [**開啟**]。
+2. 在功能表列上，選擇 [ **View**  > **開啟**]。
 
 3. 在 [ **專案助理** ] 頁面底部，選擇 [ **應用程式檔案** ] 按鈕，如下圖所示。
 
-   ![[應用程式檔] 按鈕。](../vsto/media/installshield-applicationfiles.png "[應用程式檔] 按鈕。")
+   ![[應用程式檔] 按鈕。](../vsto/media/installshield-applicationfiles.png "[應用程式檔案] 按鈕。")
 
 4. 在 [ **應用程式檔案** ] 頁面上，選擇 [ **加入專案輸出** ] 按鈕。
 
@@ -433,7 +433,7 @@ ms.locfileid: "69551712"
 
 6. 在 [ **方案總管**] 的 [ **OfficeAddInSetup** ] 節點下方，展開 [ **Define Setup Requirements and Actions** ] 節點，然後選擇 [ **自訂動作** ] 資料夾。
 
-7. 在功能表列上，選擇 [**視圖** > ] [**開啟**]。
+7. 在功能表列上，選擇 [ **View**  > **開啟**]。
 
    事件清單隨即出現在螢幕側邊的窗格中。
 
@@ -463,7 +463,7 @@ ms.locfileid: "69551712"
 
 13. 在 [記事本] 中開啟方案的專案檔。 針對 Visual Basic 專案，檔案的名稱是*ExcelWorkbook. vbproj*。 針對C#專案，檔案名為*ExcelWorkbook*。
 
-14. 在專案檔中，搜尋 **&lt;SolutionID&gt;** 項目，將其值複製到剪貼簿，，然後關閉 [記事本]。
+14. 在專案檔中，搜尋 **&lt;SolutionID &gt;** 元素，將其值複製到剪貼簿，然後關閉 [記事本]。
 
     您會將這個值傳入主控台應用程式做為參數。
 
@@ -482,7 +482,7 @@ ms.locfileid: "69551712"
 
 1. 在 [ **方案總管**] 中，展開 [ **Prepare for Release** ] 節點，然後選擇 **Releases** 檔案。
 
-2. 在功能表列上，選擇 [**視圖** > ] [**開啟**]。
+2. 在功能表列上，選擇 [ **View**  > **開啟**]。
 
    [ **組建** ] 總管會在側邊窗格中開啟，讓您可以選擇要建立的版本類型。
 
@@ -500,9 +500,9 @@ ms.locfileid: "69551712"
 
 9. 在功能表列上，選擇 **組建** > **組建 officeaddinsetup**。
 
-   組建完成之後，您可以在下列位置找到**officeaddinsetup**專案的*setup.exe*檔案：<em>OfficeAddInSetupProjectRoot</em> **\OfficeAddInSetup\Express\SingleImage\DiskImages\DISK1\\**
+   組建完成之後，您可以在下列位置找到**officeaddinsetup**專案的*Setup.exe*檔案： <em>OfficeAddInSetupProjectRoot</em> **\OfficeAddInSetup\Express\SingleImage\DiskImages\DISK1 \\**
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [Office 方案的部署必要條件](https://msdn.microsoft.com/library/9f672809-43a3-40a1-9057-397ce3b5126e)
 - [部署 Office 方案](../vsto/deploying-an-office-solution.md)
