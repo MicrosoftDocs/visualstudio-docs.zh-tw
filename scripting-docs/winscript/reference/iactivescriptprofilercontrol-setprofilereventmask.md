@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptProfilerControl::SetProfilerEventMask | Microsoft Docs
+title: IActiveScriptProfilerControl：： SetProfilerEventMask |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -15,15 +15,15 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 01e55d793d174f550e33e18558eccc19d417c80b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a4162cf2e5325bfb41bce9c3a47a52b1b36d74f2
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62993086"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72571587"
 ---
 # <a name="iactivescriptprofilercontrolsetprofilereventmask"></a>IActiveScriptProfilerControl::SetProfilerEventMask
-設定指定的指令碼引擎應該引發的事件類型的 4 位元組位元遮罩。  
+設定4個位元組的位元遮罩，指定腳本引擎應該引發的事件種類。  
   
 ## <a name="syntax"></a>語法  
   
@@ -34,15 +34,15 @@ HRESULT SetProfilerEventMask(
   
 #### <a name="parameters"></a>參數  
  `dwEventMask`  
- [in]4 位元組的位元遮罩，指定的事件類型。 中所定義的位元[PROFILER_EVENT_MASK 列舉](../../winscript/reference/profiler-event-mask-enumeration.md)。  
+ 在4位元組的位元遮罩，指定事件的類型。 位是在[PROFILER_EVENT_MASK 列舉](../../winscript/reference/profiler-event-mask-enumeration.md)中定義。  
   
 ## <a name="return-value"></a>傳回值  
- 會傳回 HRESULT。 可能的值如下：  
+ 傳回 HRESULT。 可能的值如下：  
   
 |傳回值|意義|  
 |------------------|-------------|  
 |`S_OK`|方法成功。|  
 |`ACTIVPROF_E_PROFILER_ABSENT`|未啟用程式碼剖析。|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IActiveScriptProfilerControl 介面](../../winscript/reference/iactivescriptprofilercontrol-interface.md)

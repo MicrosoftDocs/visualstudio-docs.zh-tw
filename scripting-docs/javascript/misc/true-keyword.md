@@ -16,15 +16,15 @@ ms.assetid: 38045e3b-d4fb-4958-b6c3-1e500872d64f
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 53d128c33933cc6856bd89a9059e0bfea3e2008e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9edb48cb13433e1768ed7c3b33484a968dd33426
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63005924"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572947"
 ---
 # <a name="true-keyword"></a>True 關鍵字
-**，則為 True**關鍵字有等於-1 的值。  
+**True**關鍵字的值等於-1。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [False (Windows 指令碼技術)](../../javascript/misc/false-windows-script-technologies.md)

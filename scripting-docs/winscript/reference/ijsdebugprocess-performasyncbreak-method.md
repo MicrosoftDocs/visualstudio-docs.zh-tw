@@ -1,5 +1,5 @@
 ---
-title: 'Ijsdebugprocess:: Performasyncbreak 方法 |Microsoft Docs'
+title: IJsDebugProcess：:P erformAsyncBreak 方法 |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -15,15 +15,15 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5a4fdb70341744c764779d406372bbd55418fd29
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3320c59097dec5229030a3f15252d907562c67e6
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62557981"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577324"
 ---
 # <a name="ijsdebugprocessperformasyncbreak-method"></a>IJsDebugProcess::PerformAsyncBreak 方法
-指令碼引擎置於中斷模式，使其在下一個指令碼指令上中斷。  
+將腳本引擎放在中斷模式下，使其在下一個腳本指示中斷。  
   
 ## <a name="syntax"></a>語法  
   
@@ -35,12 +35,12 @@ HRESULT PerformAsyncBreak(
   
 #### <a name="parameters"></a>參數  
  `threadId`  
- [in]執行緒 id。  
+ 在執行緒識別碼。  
   
 ## <a name="return-value"></a>傳回值  
   
 ## <a name="requirements"></a>需求  
- **標頭：** jscript9diag.h  
+ **標頭：** jscript9diag。h  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IJsDebugProcess 介面](../../winscript/reference/ijsdebugprocess-interface.md)

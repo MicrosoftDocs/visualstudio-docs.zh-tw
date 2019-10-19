@@ -1,5 +1,5 @@
 ---
-title: IDebugApplication::AddGlobalExpressionContextProvider | Microsoft Docs
+title: IDebugApplication：： AddGlobalExpressionCoNtextProvider |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 278811ae7c7f853396efb5f41a92a5350176943a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 429e87def1e17a6abac92ce2d3538960659cfaeb
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62991099"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573467"
 ---
 # <a name="idebugapplicationaddglobalexpressioncontextprovider"></a>IDebugApplication::AddGlobalExpressionContextProvider
-將此應用程式全域運算式的內容提供者。  
+將全域運算式內容提供者加入此應用程式。  
   
 ## <a name="syntax"></a>語法  
   
@@ -38,10 +38,10 @@ HRESULT AddGlobalExpressionContextProvider(
   
 #### <a name="parameters"></a>參數  
  `pdsfs`  
- [in]若要加入至此應用程式全域內容提供者。  
+ 在要加入此應用程式的全域內容提供者。  
   
  `pdwCookie`  
- [out]用來從應用程式移除此全域運算式的內容提供者的 cookie。  
+ 脫銷用來從應用程式移除這個全域運算式內容提供者的 cookie。  
   
 ## <a name="return-value"></a>傳回值  
  方法會傳回 `HRESULT`。 可能的值包括 (但不限於) 下表中的這些值。  
@@ -51,8 +51,8 @@ HRESULT AddGlobalExpressionContextProvider(
 |`S_OK`|方法成功。|  
   
 ## <a name="remarks"></a>備註  
- 這個方法會將此應用程式全域運算式的內容提供者。  
+ 這個方法會將全域運算式內容提供者加入此應用程式。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDebugApplication 介面](../../winscript/reference/idebugapplication-interface.md)   
  [IDebugApplication::RemoveGlobalExpressionContextProvider](../../winscript/reference/idebugapplication-removeglobalexpressioncontextprovider.md)

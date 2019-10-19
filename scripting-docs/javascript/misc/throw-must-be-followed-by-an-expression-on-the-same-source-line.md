@@ -1,5 +1,5 @@
 ---
-title: Throw 必須接著一運算式在同一行程式碼 |Microsoft Docs
+title: Throw 後面必須接在相同原始程式列的運算式 |Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
@@ -14,15 +14,15 @@ ms.assetid: b03b7747-01a1-40c6-af80-a1dd70bc5781
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4c8ed951fb30b84f114f8f44a60e94b88f0f1d0f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8854acb3d1992283899c4ff095f5d754c05f55a1
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63005935"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572757"
 ---
 # <a name="throw-must-be-followed-by-an-expression-on-the-same-source-line"></a>throw 必須接著一運算式，且於同一行程式碼
-您已使用`throw`關鍵字，但未遵循它與運算式相同的原始程式行上。 A`throw`陳述式是由兩個部分所組成：`throw`關鍵字，後面接著將會擲回運算式。 例如:   
+您使用了 `throw` 關鍵字，但未在相同原始程式列上使用運算式來追蹤它。 @No__t_0 語句包含兩個部分： `throw` 關鍵字，後面接著要擲回的運算式。 例如:  
   
 ```JavaScript  
 if (denominator == 0) {  
@@ -30,13 +30,13 @@ if (denominator == 0) {
 }  
 ```  
   
- 您無法分割這兩個元件。  
+ 您無法將這兩個元件分割。  
   
 ### <a name="to-correct-this-error"></a>更正這個錯誤  
   
-- 請確定`throw`關鍵字，並擲回運算式出現在同一行。  
+- 請確定要擲回的 `throw` 關鍵字和運算式出現在同一行上。  
   
-## <a name="see-also"></a>另請參閱  
- [Error 物件](../../javascript/reference/error-object-javascript.md)   
- [Throw 陳述式](../../javascript/reference/throw-statement-javascript.md)   
+## <a name="see-also"></a>請參閱  
+ [錯誤物件](../../javascript/reference/error-object-javascript.md)   
+ [Throw 語句](../../javascript/reference/throw-statement-javascript.md)   
  [try...catch...finally 陳述式](../../javascript/reference/try-dot-dot-dot-catch-dot-dot-dot-finally-statement-javascript.md)

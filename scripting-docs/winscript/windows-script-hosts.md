@@ -13,12 +13,12 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: eec1824bd3ba1a8acb7e3c540656151cd4b11d1f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 8468f578ee44487acd2575e81e01d65969110437
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62840040"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72568820"
 ---
 # <a name="windows-script-hosts"></a>Windows Script Host
 實作 Microsoft Windows Script Host 時，您可以安全地假設指令碼引擎只呼叫基底執行緒內容中的 [IActiveScriptSite](../winscript/reference/iactivescriptsite.md) 介面，只要主機進行下列作業：  
@@ -41,4 +41,4 @@ ms.locfileid: "62840040"
  這些限制都不適用選擇實作無限制執行緒 [IActiveScriptSite](../winscript/reference/iactivescriptsite.md) 介面和無限制執行緒物件模型的主機。 這類主機可以從任何執行緒使用 [IActiveScript](../winscript/reference/iactivescript.md) 介面，完全沒有限制。  
   
 ## <a name="see-also"></a>請參閱  
- [Windows 指令碼的介面](../winscript/windows-script-interfaces.md)
+ [Windows 指令碼介面](../winscript/windows-script-interfaces.md)

@@ -13,20 +13,20 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 31fb3f5bf88b0caf179a43d02358bb6a9f1a2831
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: a8c06477b7cd9d069e416cfd7d86a8cd0cb7bfd5
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62975777"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572279"
 ---
 # <a name="active-script-debugging-overview"></a>動態指令碼偵錯概觀
 動態指令碼偵錯介面允許進行非語言相關、非主機相關偵錯，並支援各種開發環境。  
   
- ![指令碼主機處理序](../winscript/media/scp56activdbgarchgif.gif "Scp56ActivDbgArchgif")  
+ ![腳本主機進程](../winscript/media/scp56activdbgarchgif.gif "Scp56ActivDbgArchgif")  
 圖 1  
   
- 非語言相關偵錯環境可以支援任何程式設計語言或混合使用程式設計語言，而不需要具有對其中任何語言的特定知識。 偵錯環境也支援跨語言逐步執行和中斷點  (本概觀主要著重於支援指令碼語言，例如 VBScript 和 [!INCLUDE[javascript](../javascript/includes/javascript-md.md)])。  
+ 非語言相關偵錯環境可以支援任何程式設計語言或混合使用程式設計語言，而不需要具有對其中任何語言的特定知識。 偵錯環境也支援跨語言逐步執行和中斷點 (本概觀主要著重於支援指令碼語言，例如 VBScript 和 [!INCLUDE[javascript](../javascript/includes/javascript-md.md)])。  
   
  非主機相關偵錯工具可以自動與任何動態指令碼主機 (例如 Internet Explorer 或自訂主機) 搭配使用。 主機會控制偵錯工具向使用者顯示的內容，其中包含文件樹狀結構的結構、內容，以及偵錯文件的語法著色。 這可讓已偵錯的原始程式碼顯示在主機文件的內容中。 例如，Internet Explorer 可以在 HTML 頁面中顯示指令碼。  
   

@@ -11,15 +11,15 @@ caps.latest.revision: 3
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6aab63989d1ae02f7c75fc9c20a14d59e8a05078
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 802a9f31cc7e3497c5e5fc54395d988552f75e84
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62840204"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574369"
 ---
 # <a name="scriptlanguageversion-enumeration"></a>SCRIPTLANGUAGEVERSION 列舉
-指定可能的指令碼版本。  
+指定可能的腳本版本。  
   
 ## <a name="syntax"></a>語法  
   
@@ -31,10 +31,10 @@ typedef enum tagSCRIPTLANGUAGEVERSION{    SCRIPTLANGUAGEVERSION_DEFAULT = 0,    
   
 |||  
 |-|-|  
-|SCRIPTLANGUAGEVERSION_DEFAULT|預設的版本。 整數值為 0。|  
-|SCRIPTLANGUAGEVERSION_5_7|Windows 指令碼 5.7 版。 整數值為 1。|  
-|SCRIPTLANGUAGEVERSION_5_8|Windows 指令碼版本 5.8。 整數值為 2。|  
-|SCRIPTLANGUAGEVERSION_MAX|最高的版本。 整數值為 255。|  
+|SCRIPTLANGUAGEVERSION_DEFAULT|預設版本。 整數值為0。|  
+|SCRIPTLANGUAGEVERSION_5_7|Windows 腳本版本5.7。 整數值是1。|  
+|SCRIPTLANGUAGEVERSION_5_8|Windows 腳本版本5.8。 整數值為2。|  
+|SCRIPTLANGUAGEVERSION_MAX|最大版本。 整數值為255。|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [動態指令碼的常數、列舉和錯誤碼](../../winscript/reference/active-script-constants-enumerations-and-error-codes.md)
