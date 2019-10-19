@@ -1,5 +1,5 @@
 ---
-title: 'Ijsdebugdatatarget:: Readbstr 方法 |Microsoft Docs'
+title: IJsDebugDataTarget：： ReadBSTR 方法 |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -15,15 +15,15 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2e821893318cfe1d8f0b4239a077fc91c26be47f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b125f58b4be279eac167b803ed6a683c1fb04ddf
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62582338"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572448"
 ---
 # <a name="ijsdebugdatatargetreadbstr-method"></a>IJsDebugDataTarget::ReadBSTR 方法
-從偵錯目標讀取 BSTR。  
+從 debug 目標讀取 BSTR。  
   
 ## <a name="syntax"></a>語法  
   
@@ -36,18 +36,18 @@ HRESULT ReadBSTR(
   
 #### <a name="parameters"></a>參數  
  `address`  
- [in]要讀取的位址。  
+ 在要讀取的來源位址。  
   
  `pString`  
- [out]從偵錯目標讀取 BSTR。  
+ 脫銷從 debug 目標讀取的 BSTR。  
   
 ## <a name="return-value"></a>傳回值  
   
 ## <a name="remarks"></a>備註  
- 如果位址無效，則傳回 E_JsDEBUG_INVALID_MEMORY_ADDRESS。  
+ 如果位址無效，則會傳回 E_JsDEBUG_INVALID_MEMORY_ADDRESS。  
   
 ## <a name="requirements"></a>需求  
- **標頭：** jscript9diag.h  
+ **標頭：** jscript9diag。h  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IJsDebugDataTarget 介面](../../winscript/reference/ijsdebugdatatarget-interface.md)

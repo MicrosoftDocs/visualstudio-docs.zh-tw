@@ -1,5 +1,5 @@
 ---
-title: IDebugExpression::GetResultAsDebugProperty |Microsoft Docs
+title: IDebugExpression：： GetResultAsDebugProperty |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 06d9b513d40450e20bb87f07c460bef7ce2678c1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 104c42f02d02be386711e687f02d333425834948
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62978492"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575932"
 ---
 # <a name="idebugexpressiongetresultasdebugproperty"></a>IDebugExpression::GetResultAsDebugProperty
-傳回做為偵錯屬性和作業的傳回值的運算式評估的結果。  
+傳回運算式評估的結果做為 debug 屬性和作業的傳回值。  
   
 ## <a name="syntax"></a>語法  
   
@@ -38,10 +38,10 @@ HRESULT GetResultAsDebugProperty(
   
 #### <a name="parameters"></a>參數  
  `phrResult`  
- [out]作業的傳回值。  
+ 脫銷作業的傳回值。  
   
  `ppdp`  
- [out]運算式 [偵錯] 屬性中。  
+ 脫銷運算式的 debug 屬性。  
   
 ## <a name="return-value"></a>傳回值  
  方法會傳回 `HRESULT`。 可能的值包括 (但不限於) 下表中的這些值。  
@@ -49,13 +49,13 @@ HRESULT GetResultAsDebugProperty(
 |值|描述|  
 |-----------|-----------------|  
 |`S_OK`|方法成功。|  
-|`E_PENDING`|此作業仍然是暫止。|  
+|`E_PENDING`|作業仍在暫止狀態。|  
   
 ## <a name="remarks"></a>備註  
- 這個方法會傳回做為運算式評估的結果`IDebugProperty`和作業的`HRESULT`。  
+ 這個方法會傳回運算式評估的結果做為 `IDebugProperty` 和作業的 `HRESULT`。  
   
- 這個方法會傳回`S_OK`並`phrResult`會傳回`E_ABORT`如果`Abort`中止作業。  
+ 這個方法會傳回 `S_OK`，而如果 `Abort` 中止作業，`phrResult` 會傳回 `E_ABORT`。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDebugExpression 介面](../../winscript/reference/idebugexpression-interface.md)   
  [IDebugExpression::Abort](../../winscript/reference/idebugexpression-abort.md)

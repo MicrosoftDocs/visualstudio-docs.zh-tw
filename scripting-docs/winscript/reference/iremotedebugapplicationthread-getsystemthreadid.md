@@ -1,5 +1,5 @@
 ---
-title: IRemoteDebugApplicationThread::GetSystemThreadId | Microsoft Docs
+title: IRemoteDebugApplicationThread：： GetSystemThreadId |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9d5119db4108ef7fa0783bccc3f747fbd2ed26d0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 35c281047bd3333f8fdc3945ed97ad3f402c53a4
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62788205"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575222"
 ---
 # <a name="iremotedebugapplicationthreadgetsystemthreadid"></a>IRemoteDebugApplicationThread::GetSystemThreadId
-傳回與執行緒相關聯的操作系統相關識別碼。  
+傳回與執行緒相關聯的作業系統相依識別碼。  
   
 ## <a name="syntax"></a>語法  
   
@@ -37,7 +37,7 @@ HRESULT GetSystemThreadId(
   
 #### <a name="parameters"></a>參數  
  `dwThreadId`  
- [out]與執行緒相關聯操作系統相關的識別項。  
+ 脫銷與執行緒相關聯的作業系統相依識別碼。  
   
 ## <a name="return-value"></a>傳回值  
  方法會傳回 `HRESULT`。 可能的值包括 (但不限於) 下表中的這些值。  
@@ -47,7 +47,7 @@ HRESULT GetSystemThreadId(
 |`S_OK`|方法成功。|  
   
 ## <a name="remarks"></a>備註  
- 值`dwThreadId`不需要是唯一的機器。  
+ @No__t_0 的值在電腦上不需要是唯一的。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IRemoteDebugApplicationThread 介面](../../winscript/reference/iremotedebugapplicationthread-interface.md)

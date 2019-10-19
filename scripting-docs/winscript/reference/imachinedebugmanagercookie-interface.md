@@ -1,5 +1,5 @@
 ---
-title: IMachineDebugManagerCookie Interface | Microsoft Docs
+title: IMachineDebugManagerCookie 介面 |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -13,30 +13,30 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fdc02498360f2e3900012166474c5d1e35abd6ee
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6b39c286f389c99187b0f3250fc68af92ff5dcc8
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62977678"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573891"
 ---
 # <a name="imachinedebugmanagercookie-interface"></a>IMachineDebugManagerCookie 介面
-類似於`IMachineDebugManager`介面，`IMachineDebugManagerCookie`介面支援偵錯 cookie。  
+類似于 `IMachineDebugManager` 介面，`IMachineDebugManagerCookie` 介面支援 debug cookie。  
   
- 這個介面 (連同`IDebugCookie`介面) 允許執行指令碼偵錯工具處理序中，不需要偵錯工具，追蹤的這些指令碼的指令碼。  
+ 這個介面（以及 `IDebugCookie` 介面）允許腳本在腳本偵錯工具進程中執行，而不需要偵錯工具追蹤這些腳本。  
   
- 指令碼偵錯工具呼叫`IDebugCookie::SetDebugCookie`方法程序進行偵錯管理員 (PDM)。 接著，PDM 會傳送任何要求，以新增或移除指令碼的應用程式或從機器偵錯 Manager (MDM)，以及此 cookie 使用的方法`IMachineDebugManagerCookie`介面。 MDM 然後通知此變更，除了包含該 cookie 的每個偵錯工具。  
+ 腳本偵錯工具會在進程 Debug Manager （PDM）上呼叫 `IDebugCookie::SetDebugCookie` 方法。 然後，PDM 會連同任何要求一起傳送此 cookie，以使用 `IMachineDebugManagerCookie` 介面的方法，在電腦 Debug Manager （MDM）中新增或移除腳本應用程式。 然後，MDM 會通知每個變更的偵錯工具，但具有該 cookie 的每一項。  
   
- 除了繼承自方法`IUnknown`，則`IMachineDebugManagerCookie`介面會公開下列方法。  
+ 除了繼承自 `IUnknown` 的方法之外，`IMachineDebugManagerCookie` 介面也會公開下列方法。  
   
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法  
   
 |方法|描述|  
 |------------|-----------------|  
-|[IMachineDebugManagerCookie::AddApplication](../../winscript/reference/imachinedebugmanagercookie-addapplication.md)|新增應用程式執行的應用程式清單。|  
-|[IMachineDebugManagerCookie::EnumApplications](../../winscript/reference/imachinedebugmanagercookie-enumapplications.md)|傳回目前執行中應用程式清單的列舉值。|  
-|[IMachineDebugManagerCookie::RemoveApplication](../../winscript/reference/imachinedebugmanagercookie-removeapplication.md)|移除應用程式從執行的應用程式清單。|  
+|[IMachineDebugManagerCookie::AddApplication](../../winscript/reference/imachinedebugmanagercookie-addapplication.md)|將應用程式新增至執行中的應用程式清單。|  
+|[IMachineDebugManagerCookie::EnumApplications](../../winscript/reference/imachinedebugmanagercookie-enumapplications.md)|傳回目前正在執行之應用程式清單的列舉值。|  
+|[IMachineDebugManagerCookie::RemoveApplication](../../winscript/reference/imachinedebugmanagercookie-removeapplication.md)|從執行中的應用程式清單中移除應用程式。|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IMachineDebugManager 介面](../../winscript/reference/imachinedebugmanager-interface.md)   
  [IDebugCookie 介面](../../winscript/reference/idebugcookie-interface.md)

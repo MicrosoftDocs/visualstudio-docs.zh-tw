@@ -1,5 +1,5 @@
 ---
-title: 作用中的指令碼的常數、 列舉和錯誤碼 |Microsoft Docs
+title: 動態指令碼常數、列舉和錯誤碼 |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -11,15 +11,15 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 090b494e904fbef1c0d3d8b380f7a184a6042788
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e03bef99c2297d517aa5234db49820a2b9600ce7
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62953994"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572717"
 ---
 # <a name="active-script-constants-enumerations-and-error-codes"></a>動態指令碼的常數、列舉和錯誤碼
-本章節描述列舉和錯誤碼在 Windows 指令碼引擎中使用。  
+本節說明 Windows 腳本引擎中使用的列舉和錯誤碼。  
   
 ## <a name="constants"></a>常數  
   
@@ -27,32 +27,32 @@ ms.locfileid: "62953994"
 |--------------|-----------------|  
 |[SCRIPTTHREADID 常數](../../winscript/reference/scriptthreadid-constants.md)|指定執行緒的類型。|  
   
-## <a name="properties"></a>屬性  
+## <a name="properties"></a>內容  
   
 |屬性|描述|  
 |--------------|-----------------|  
-|[SCRIPTPROP_HOSTKEEPALIVE 屬性](../../winscript/reference/scriptprop-hostkeepalive-property.md)|用來指定應該保留指令碼引擎有未完成的參考的完整功能。|  
+|[SCRIPTPROP_HOSTKEEPALIVE 屬性](../../winscript/reference/scriptprop-hostkeepalive-property.md)|用來指定如果有未處理的參考，腳本引擎是否應該保持完整功能。|  
   
 ## <a name="enumerations"></a>列舉  
   
 |列舉|描述|  
 |-----------------|-----------------|  
-|[SCRIPTGCTYPE 列舉](../../winscript/reference/scriptgctype-enumeration.md)|若要執行記憶體回收的類型。|  
-|[SCRIPTLANGUAGEVERSION 列舉](../../winscript/reference/scriptlanguageversion-enumeration.md)|指定可能的指令碼版本。|  
-|[SCRIPTSTATE 列舉](../../winscript/reference/scriptstate-enumeration.md)|指定指令碼引擎的狀態。|  
+|[SCRIPTGCTYPE 列舉](../../winscript/reference/scriptgctype-enumeration.md)|要執行的垃圾收集類型。|  
+|[SCRIPTLANGUAGEVERSION 列舉](../../winscript/reference/scriptlanguageversion-enumeration.md)|指定可能的腳本版本。|  
+|[SCRIPTSTATE 列舉](../../winscript/reference/scriptstate-enumeration.md)|指定腳本引擎的狀態。|  
 |||  
-|[SCRIPTTHREADSTATE 列舉](../../winscript/reference/scriptthreadstate-enumeration.md)|指定在指令碼引擎的執行緒的狀態。|  
-|[SCRIPTTRACEINFO 列舉](../../winscript/reference/scripttraceinfo-enumeration.md)|表示所追蹤的指令碼事件。 用於[iactivescriptsitetraceinfo:: Sendscripttraceinfo 方法](../../winscript/reference/iactivescriptsitetraceinfo-sendscripttraceinfo-method.md)。|  
-|[SCRIPTUICHANDLING 列舉](../../winscript/reference/scriptuichandling-enumeration.md)|表示應該處理 UI 控制項的方式。|  
-|[SCRIPTUICITEM 列舉](../../winscript/reference/scriptuicitem-enumeration.md)|表示 UI 項目類型。 用於[iactivescriptsiteuicontrol:: Getuibehavior 方法](../../winscript/reference/iactivescriptsiteuicontrol-getuibehavior-method.md)。|  
+|[SCRIPTTHREADSTATE 列舉](../../winscript/reference/scriptthreadstate-enumeration.md)|指定腳本引擎中的執行緒狀態。|  
+|[SCRIPTTRACEINFO 列舉](../../winscript/reference/scripttraceinfo-enumeration.md)|表示正在追蹤的腳本事件。 用於[IActiveScriptSiteTraceInfo：： SendScriptTraceInfo 方法](../../winscript/reference/iactivescriptsitetraceinfo-sendscripttraceinfo-method.md)中。|  
+|[SCRIPTUICHANDLING 列舉](../../winscript/reference/scriptuichandling-enumeration.md)|表示 UI 控制項的處理方式。|  
+|[SCRIPTUICITEM 列舉](../../winscript/reference/scriptuicitem-enumeration.md)|表示 UI 專案的類型。 用於[IActiveScriptSiteUIControl：： GetUIBehavior 方法](../../winscript/reference/iactivescriptsiteuicontrol-getuibehavior-method.md)中。|  
   
 ## <a name="error-codes"></a>錯誤碼  
   
 |錯誤碼|描述|  
 |----------------|-----------------|  
-|[SCRIPT_E_PROPAGATE 錯誤碼](../../winscript/reference/script-e-propagate-error-code.md)|指令碼錯誤傳播給呼叫者，這可能是在不同的執行緒。|  
-|[SCRIPT_E_RECORDED 錯誤碼](../../winscript/reference/script-e-recorded-error-code.md)|指令碼引擎和主機之間已傳遞錯誤。|  
-|[SCRIPT_E_REPORTED 錯誤碼](../../winscript/reference/script-e-reported-error-code.md)|指令碼引擎回報至主應用程式處理的例外狀況。|  
+|[SCRIPT_E_PROPAGATE 錯誤碼](../../winscript/reference/script-e-propagate-error-code.md)|腳本錯誤已傳播至呼叫端，可能在不同的執行緒中。|  
+|[SCRIPT_E_RECORDED 錯誤碼](../../winscript/reference/script-e-recorded-error-code.md)|腳本引擎與主機之間已傳遞錯誤。|  
+|[SCRIPT_E_REPORTED 錯誤碼](../../winscript/reference/script-e-reported-error-code.md)|腳本引擎已向主機回報未處理的例外狀況。|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [動態指令碼介面](../../winscript/reference/active-script-interfaces.md)

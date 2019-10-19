@@ -1,5 +1,5 @@
 ---
-title: IMachineDebugManagerCookie::AddApplication |Microsoft Docs
+title: IMachineDebugManagerCookie：： AddApplication |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c71983dd5f1273679351bc45c1db2df62757d153
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: da436308c71a66d3070d42128d8da03ae88d2935
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62977652"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573905"
 ---
 # <a name="imachinedebugmanagercookieaddapplication"></a>IMachineDebugManagerCookie::AddApplication
-新增應用程式執行的應用程式清單。  
+將應用程式新增至執行中的應用程式清單。  
   
 ## <a name="syntax"></a>語法  
   
@@ -39,13 +39,13 @@ HRESULT AddApplication(
   
 #### <a name="parameters"></a>參數  
  `pda`  
- [in]若要執行的應用程式的應用程式清單。  
+ 在應用程式至執行中的應用程式清單。  
   
  `dwDebugAppCookie`  
- [in]Cookie 可識別偵錯應用程式。  
+ 在識別 debug 應用程式的 cookie。  
   
  `pdwAppCookie`  
- [out]用來移除機器偵錯管理員的應用程式的 cookie。  
+ 脫銷用來從機器 debug manager 移除應用程式的 cookie。  
   
 ## <a name="return-value"></a>傳回值  
  方法會傳回 `HRESULT`。 可能的值包括 (但不限於) 下表中的這些值。  
@@ -55,9 +55,9 @@ HRESULT AddApplication(
 |`S_OK`|方法成功。|  
   
 ## <a name="remarks"></a>備註  
- 這個方法會呼叫處理序偵錯管理員只要`IProcessDebugManager::AddApplication`呼叫。  
+ 每當呼叫 `IProcessDebugManager::AddApplication` 時，進程 debug manager 就會呼叫這個方法。  
   
-## <a name="see-also"></a>另請參閱  
- [IMachineDebugManagerCookie Interface](../../winscript/reference/imachinedebugmanagercookie-interface.md)   
- [IMachineDebugManagerCookie::RemoveApplication](../../winscript/reference/imachinedebugmanagercookie-removeapplication.md)   
+## <a name="see-also"></a>請參閱  
+ [IMachineDebugManagerCookie 介面](../../winscript/reference/imachinedebugmanagercookie-interface.md)   
+ [IMachineDebugManagerCookie：： RemoveApplication](../../winscript/reference/imachinedebugmanagercookie-removeapplication.md)    
  [IProcessDebugManager::AddApplication](../../winscript/reference/iprocessdebugmanager-addapplication.md)

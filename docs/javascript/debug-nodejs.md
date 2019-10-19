@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 978313276865c15672a129db601543a0ca307d5b
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
-ms.translationtype: HT
+ms.openlocfilehash: 47f709ae086a32c0680fca060744898251a76afd
+ms.sourcegitcommit: 8a96a65676fd7a2a03b0803d7eceae65f3fa142b
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66263039"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72589138"
 ---
 # <a name="debug-a-javascript-or-typescript-app-in-visual-studio"></a>在 Visual Studio 中對 JavaScript 和 TypeScript 進行偵錯
 
@@ -90,7 +90,9 @@ Visual Studio 僅提供 Chrome 和 Internet Explorer 的偵錯支援。 在某�
 
     ![附加至處理序](../javascript/media/tutorial-nodejs-react-attach-to-process.png)
 
+    ::: moniker range="vs-2017"
     當 [DOM 總管] 和 JavaScript 主控台在 Visual Studio 中開啟時，您就知道偵錯工具已正確附加。 這些偵錯工具類似適用於 Microsoft Edge 的 Chrome Developer Tools 和 F12 工具。
+    ::: moniker-end
 
     > [!NOTE]
     > 如果偵錯工具未附加，而且您看到訊息「無法附加到處理序。 作業在目前狀態中不合法」，請先使用工作管理員關閉 Chrome 的所有執行個體，再於偵錯模式中啟動 Chrome。 Chrome 擴充功能可能會執行，並防止完整的偵錯模式。
@@ -145,11 +147,11 @@ Visual Studio 能夠在 JavaScript 來源檔案上使用及產生來源對應。
 
 #### <a name="compiler-options-for-tsconfigjson"></a>tsconfig.json 的編譯器選項
 
-* **inlineSourceMap**：發出具有來源對應的單一檔案，而不是針對每個來源檔案建立個別來源對應。
-* **inlineSources**：發出原始檔及單一檔案的來源對應；必須設定 *inlineSourceMap* 或 *sourceMap*。
-* **mapRoot**：指定偵錯工具應尋找來源對應 (*.map*) 檔案的位置，而不是預設位置。 如果執行階段 *.map* 檔案必須與 *.js* 檔案位於不同的位置，請使用此旗標。 指定的位置會內嵌於來源對應，以將偵錯工具導向至 *.map* 檔案的位置。
-* **sourceMap**：產生對應的 *.map* 檔案。
-* **sourceRoot**：指定偵錯工具應尋找 TypeScript 檔案的位置，而不是原始檔位置。 如果執行階段原始檔所在位置必須不同於設計階段時的位置，請使用此旗標。 指定的位置會內嵌於來源對應，以將偵錯工具導向至原始檔所在的位置。
+* **inlineSourceMap**：發出具有來源對應的單一檔案，而不是為每個原始程式檔建立個別的來源對應。
+* **inlineSources**：在單一檔案中的來源對應旁發出來源;需要設定*inlineSourceMap*或*sourceMap* 。
+* **mapRoot**：指定偵錯工具應尋找來源對應（ *.map*）檔案的位置，而不是預設位置。 如果執行階段 *.map* 檔案必須與 *.js* 檔案位於不同的位置，請使用此旗標。 指定的位置會內嵌於來源對應，以將偵錯工具導向至 *.map* 檔案的位置。
+* **sourceMap**：產生對應的 *.map*檔案。
+* **sourceRoot**：指定偵錯工具應尋找 TypeScript 檔案的位置，而不是來源位置。 如果執行階段原始檔所在位置必須不同於設計階段時的位置，請使用此旗標。 指定的位置會內嵌於來源對應，以將偵錯工具導向至來源檔案所在的位置。
 
 如需編譯器選項的詳細資料，請參閱 TypeScript 手冊上的 [Compiler Options](https://www.typescriptlang.org/docs/handbook/compiler-options.html) (編譯器選項) 頁面。
 
@@ -159,9 +161,9 @@ Visual Studio 能夠在 JavaScript 來源檔案上使用及產生來源對應。
 
 您可以使用下列專案設定。
 
-* **產生來源對應** (相當於 *tsconfig.json* 中的 **sourceMap**)：產生對應的 *.map* 檔案。
-* **指定來源對應的根目錄** (相當於 *tsconfig.json* 中的 **mapRoot**)：指定偵錯工具應尋找對應檔案的位置，而不是產生的位置。 如果執行階段 *.map* 檔案必須與 .js 檔案位於不同的位置，請使用此旗標。 指定的位置會內嵌於來源對應，以將偵錯工具導向至對應檔案所在的位置。
-* **指定 TypeScript 檔案的根目錄** (相當於 *tsconfig.json* 中的 **sourceRoot**)：指定偵錯工具應尋找 TypeScript 檔案的位置，而不是原始檔位置。 如果執行階段原始檔所在位置必須不同於設計階段時的位置，請使用此旗標。 指定的位置會內嵌於來源對應，以將偵錯工具導向至來源檔案所在的位置。
+* **產生來源**對應（相當於*Tsconfig*中的**sourceMap** ）：產生對應*的 .map*檔案。
+* **指定來源對應的根目錄**（相當於*Tsconfig*中的**mapRoot** ）：指定偵錯工具應該尋找對應檔案的位置，而不是所產生的位置。 如果執行階段 *.map* 檔案必須與 .js 檔案位於不同的位置，請使用此旗標。 指定的位置會內嵌於來源對應，以將偵錯工具導向至對應檔案所在的位置。
+* **指定 typescript 檔案的根目錄**（相當於*Tsconfig*中的**sourceRoot** ）：指定偵錯工具應尋找 TypeScript 檔案的位置，而不是來源位置。 如果執行階段原始檔所在位置必須不同於設計階段時的位置，請使用此旗標。 指定的位置會內嵌於來源對應，以將偵錯工具導向至來源檔案所在的位置。
 
 ## <a name="debug-javascript-in-dynamic-files-using-razor-aspnet"></a>使用 Razor (ASP.NET) 偵錯動態檔案中的 JavaScript
 
@@ -169,8 +171,8 @@ Visual Studio 僅提供 Chrome 和 Internet Explorer 的偵錯支援。 它會�
 
 無法自動偵錯動態產生的檔案。 您無法自動叫用透過 Razor 語法 (cshtml、vbhtml) 所產生檔案的中斷點。 偵錯這類檔案時有兩種方法可供使用：
 
-* **將 `debugger;` 陳述式放在您要中斷的位置**：這會導致正在建立的動態指令碼停止執行並立即開始偵錯。
-* **在 Visual Studio 中載入頁面並開啟動態文件**：您需要在偵錯時開啟動態檔案、設定您的中斷點，然後重新整理頁面，才能運作此方法。 您可以根據使用的是 Chrome 或 Internet Explorer，利用下列其中一個策略來尋找檔案：
+* **將 `debugger;` 語句放在您要中斷的位置**：這會導致動態腳本停止執行，並在建立時立即開始進行調試。
+* **載入頁面，並在 Visual Studio 上開啟動態**檔：您必須在進行偵錯工具時開啟動態檔案、設定中斷點，然後重新整理頁面，此方法才能正常執行。 您可以根據使用的是 Chrome 或 Internet Explorer，利用下列其中一個策略來尋找檔案：
 
    針對 Chrome，請移至 [方案總管] > [指令碼文件] > [您的頁面名稱]。
 
