@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptSiteDebug32::GetDocumentContextFromPosition |Microsoft Docs
+title: IActiveScriptSiteDebug32：： GetDocumentCoNtextFromPosition |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -10,15 +10,15 @@ ms.assetid: 53348dff-35a6-4303-b263-90c10af06bf3
 caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
-ms.openlocfilehash: 9a52abcfa4defb49526f944469c95a2247f5d85c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7acbe2a5741fa94ac42470a85803d1720e0a8fa1
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62992521"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574853"
 ---
-# <a name="iactivescriptsitedebug32getdocumentcontextfromposition"></a>IActiveScriptSiteDebug32::GetDocumentContextFromPosition
-語言引擎用來委派`IDebugCodeContext::GetSourceContext`。  
+# <a name="iactivescriptsitedebug32getdocumentcontextfromposition"></a>IActiveScriptSiteDebug32::GetDocumentCoNtextFromPosition
+語言引擎用來委派 `IDebugCodeContext::GetSourceContext`。  
   
 ## <a name="syntax"></a>語法  
   
@@ -33,16 +33,16 @@ HRESULT GetDocumentContextFromPosition(
   
 #### <a name="parameters"></a>參數  
  `dwSourceContext`  
- [in]來源內容提供給`ParseScriptText`或`AddScriptlet`。  
+ 在提供給 `ParseScriptText` 或 `AddScriptlet` 的來源內容。  
   
  `uCharacterOffset`  
- [in]相對於指令碼區塊的程式碼片段的開頭位移的字元。  
+ 在相對於腳本區塊或程式碼片段開頭的字元位移。  
   
  `uNumChars`  
- [in]在此內容中的字元數。  
+ 在此內容中的字元數。  
   
  `ppsc`  
- [out]文件內容對應至這個字元位置範圍。  
+ 脫銷對應至這個字元位置範圍的檔內容。  
   
 ## <a name="return-value"></a>傳回值  
  方法會傳回 `HRESULT`。 可能的值包括 (但不限於) 下表中的這些值。  
@@ -52,7 +52,7 @@ HRESULT GetDocumentContextFromPosition(
 |`S_OK`|方法成功。|  
   
 ## <a name="remarks"></a>備註  
- 語言引擎會使用這個方法來委派`IDebugCodeContext::GetSourceContext`。  
+ 語言引擎會使用這個方法來委派 `IDebugCodeContext::GetSourceContext`。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IActiveScriptSiteDebug32 介面](../../winscript/reference/iactivescriptsitedebug32-interface.md)
