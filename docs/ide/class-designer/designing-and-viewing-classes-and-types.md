@@ -11,17 +11,17 @@ helpviewer_keywords:
 - classes [Visual Studio], viewing
 - class designer
 ms.assetid: 40ed2c9d-0ce0-4b95-ad78-5dec2065ccea
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ee4910471693a2941ec9548773a2f50e443a639b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 31b28da2206d23c6112d7e7e154d7e907f63b163
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62975573"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72631893"
 ---
 # <a name="design-and-view-classes-and-types-with-class-designer"></a>使用類別設計工具設計及檢視類別和類型
 
@@ -48,14 +48,14 @@ ms.locfileid: "62975573"
 
 展示專案資訊的第一個步驟，就是建立可顯示您要展示之內容的類別圖表。 如需詳細資訊，請參閱[新增類別圖表](how-to-add-class-diagrams-to-projects.md)。 您可以為一個專案建立多個類別圖表，以用來顯示專案的不同檢視、所選擇的專案類型子集，或所選擇的類型成員子集。
 
-除了定義每個類別圖表所展示的內容，您還可以變更資訊的呈現方式；如需詳細資訊，請參閱[如何：自訂類別圖表](how-to-customize-class-diagrams.md)。
+除了定義每個類別圖表顯示的內容，您也可以變更資訊的呈現方式；如需詳細資訊，請參閱[如何：自訂類別圖表](how-to-customize-class-diagrams.md)。
 
-微調過一或多個類別圖表之後，您可以將其複製到 Microsoft Office 文件並加以列印，或將其匯出成影像檔。 如需詳細資訊，請參閱[如何：將類別圖表項目複製到 Microsoft Office 文件](how-to-copy-class-diagram-elements-to-a-microsoft-office-document.md)、[如何：列印類別圖表](how-to-print-class-diagrams.md)，以及[如何：將類別圖表匯出為影像](how-to-export-class-diagrams-as-images.md)。
+微調過一或多個類別圖表之後，您可以將其複製到 Microsoft Office 文件並加以列印，或將其匯出成影像檔。 如需詳細資訊，請參閱[如何：將類別圖表元素複製到 Microsoft Office 文件](how-to-copy-class-diagram-elements-to-a-microsoft-office-document.md)、[如何：列印類別圖表](how-to-print-class-diagrams.md)及[如何：將類別圖表匯出為影像](how-to-export-class-diagrams-as-images.md)。
 
 > [!NOTE]
 > 類別設計工具不會追蹤原始程式檔的位置，因此，變更您的專案結構或移動專案中的原始程式檔，可能會導致類別設計工具遺失類型的追蹤，特別是 typedef、基底類別或關聯類型的來源類型。 您可能會收到錯誤，例如：**類別設計工具無法顯示這個類型**。 如果您收到錯誤訊息，請將已修改或重新配置的原始程式碼再次拖曳到類別圖表中，以重新顯示。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [程式碼編輯器的功能](../writing-code-in-the-code-and-text-editor.md)
 - [對應方案之間的相依性](../../modeling/map-dependencies-across-your-solutions.md)

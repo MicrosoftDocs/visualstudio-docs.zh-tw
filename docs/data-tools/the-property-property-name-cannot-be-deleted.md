@@ -3,17 +3,17 @@ title: 無法刪除屬性
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 55873f74-7834-4ec1-8815-eeeb65618d87
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: c03ba87a7ae7f2321550179ae6354eb473c81465
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 29344a2443708d9ddaed3d90a186ab8424638664
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65460563"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72640493"
 ---
 # <a name="the-property-property-name-cannot-be-deleted"></a>無法刪除屬性 \<屬性名稱>
 
@@ -31,6 +31,6 @@ ms.locfileid: "65460563"
 
 3. 試著再次刪除屬性。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [Visual Studio 中的 LINQ to SQL 工具](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

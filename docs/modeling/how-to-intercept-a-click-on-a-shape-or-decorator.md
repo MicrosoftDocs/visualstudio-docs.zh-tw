@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, programming domain models
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3e3295476b9a9d35768963baa05829a560fc9291
-ms.sourcegitcommit: e82baa50bf5a65858c410882c2e86a552c2c1921
+ms.openlocfilehash: f372d42869bf533b598f3e2aba9e60e34e47144d
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72381488"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72605282"
 ---
 # <a name="how-to-intercept-a-click-on-a-shape-or-decorator"></a>如何：攔截圖案或 Decorator 上的點選
 下列程式示範如何攔截圖形或圖示裝飾專案的按一下。 您可以攔截點擊、按兩下、拖曳和其他手勢，然後讓元素回應。
@@ -47,7 +47,7 @@ public partial class MyShape // change
 
 2. 選擇或建立具有圖示裝飾專案的圖形，並將其對應至網域類別。
 
-3. 在與 @no__t 0 資料夾中的檔案不同的程式碼檔案中，建立 ImageField 的新子類別：
+3. 在與 [`GeneratedCode`] 資料夾中的檔案不同的程式碼檔案中，建立 ImageField 的新子類別：
 
     ```csharp
     using Microsoft.VisualStudio.Modeling;
@@ -133,7 +133,7 @@ public partial class MyShape // change
 
 - 一組滑鼠事件處理常式會在建立時附加到每個區間實例。
 
-- @No__t-0 事件會儲存目前的專案。
+- @No__t_0 事件會儲存目前的專案。
 
 - 當滑鼠移出目前的專案時，會建立 MouseAction 的實例，這會設定游標並捕捉滑鼠，直到釋放它為止。
 

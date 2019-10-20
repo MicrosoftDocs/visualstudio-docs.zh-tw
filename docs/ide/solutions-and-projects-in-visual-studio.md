@@ -15,17 +15,17 @@ f1_keywords:
 helpviewer_keywords:
 - solutions [Visual Studio]
 - projects [Visual Studio]
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c63bc4b52e47c52096d0aa2d339b3c6dc96d7fe9
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 7ca611d7ae1faa86ae7878b2f824ce27b9872713
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71251891"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72621573"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Visual Studio 中的方案和專案
 
@@ -42,7 +42,7 @@ ms.locfileid: "71251891"
 
 Visual Studio 使用[msbuild](../msbuild/msbuild.md)來建立方案中的每個專案，而且每個專案都包含一個 MSBuild 專案檔案。 副檔名會反映專案的類型，例如C#專案（.csproj）、Visual Basic 專案（. vbproj）或資料庫專案（.dbproj）。 專案檔是一份 XML 檔，其中包含 MSBuild 為了建立您的專案所需的所有資訊和指示，包括內容、平臺需求、版本設定資訊、網頁伺服器或資料庫伺服器設定，以及要執行.
 
-專案檔是以[MSBUILD XML 架構](../msbuild/msbuild-project-file-schema-reference.md)為基礎。 若要查看 Visual Studio 中較新的[sdk 樣式專案檔案](../msbuild/how-to-use-project-sdk.md)的內容，請以滑鼠右鍵按一下**方案總管**中的專案節點，然後選取 [**編輯\< \>專案名稱**]。 若要查看該樣式的 .NET Framework 和其他專案的內容，請先卸載專案（在**方案總管**中的專案節點上按一下滑鼠右鍵，然後選取 **[卸載專案**]）。 然後，以滑鼠右鍵按一下專案，然後選擇 **[ \<編輯\>專案名稱**]。
+專案檔是以[MSBUILD XML 架構](../msbuild/msbuild-project-file-schema-reference.md)為基礎。 若要查看 Visual Studio 中較新的[sdk 樣式專案檔案](../msbuild/how-to-use-project-sdk.md)的內容，請以滑鼠右鍵按一下**方案總管**中的專案節點，然後選取 **編輯 \<projectname \>** 。 若要查看該樣式的 .NET Framework 和其他專案的內容，請先卸載專案（在**方案總管**中的專案節點上按一下滑鼠右鍵，然後選取 **[卸載專案**]）。 然後，以滑鼠右鍵按一下專案，然後選擇 [**編輯 \<projectname \>** ]。
 
 > [!NOTE]
 > 您不需要在 Visual Studio 中使用方案或專案來編輯、建立和偵錯工具代碼。 您可以只在 Visual Studio 中開啟包含原始程式檔的資料夾並開始編輯。 如需詳細資訊，請參閱[在 Visual Studio 中不使用專案或方案來開發程式碼](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md)。
@@ -53,7 +53,7 @@ Visual Studio 使用[msbuild](../msbuild/msbuild.md)來建立方案中的每個�
 
 Visual Studio 使用兩種檔案類型 ( *.sln* 和 *.suo*) 來儲存方案的設定。
 
-|副檔名|名稱|描述|
+|副檔名|[屬性]|描述|
 |---------------|----------|-----------------|
 |.sln|Visual Studio 方案|將專案、專案項目和方案項目組織到方案中。|
 |.suo|方案使用者選項|儲存使用者層級設定和自訂項目，例如中斷點。|
@@ -76,7 +76,7 @@ Visual Studio 使用兩種檔案類型 ( *.sln* 和 *.suo*) 來儲存方案的�
 
 對於 ASP.NET Core 專案，您可以自訂 [方案總管] 中檔案巢狀的方式。 如需詳細資訊，請參閱[自訂 [方案總管] 中的檔案巢狀](file-nesting-solution-explorer.md)。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [Visual Studio IDE](../get-started/visual-studio-ide.md)
 - [專案和方案 (Visual Studio for Mac)](/visualstudio/mac/projects-and-solutions)

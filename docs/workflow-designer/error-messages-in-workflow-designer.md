@@ -7,17 +7,17 @@ f1_keywords:
 - System.Activities.Presentation.ErrorActivity.UI
 - System.Activities.Presentation.View.ErrorView.UI
 ms.assetid: 4d8bbc2e-34fc-477f-9140-4adfd70c34a0
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a3f2d4d86f80bc7c2966d5156267352154b1279f
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 1406802f85c755d4dab25e000843a995be252d0a
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71254803"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72650490"
 ---
 # <a name="error-messages-in-workflow-designer"></a>工作流程設計工具的錯誤訊息
 
@@ -35,7 +35,7 @@ ms.locfileid: "71254803"
 
 4. XAML 檔中發生導致工作流程無法載入的錯誤。
 
-無效的運算式與不滿足驗證條件限制並不會造成工作流程建置失敗。 建立您的工作流程成功， <xref:System.Activities.InvalidWorkflowException>但在執行時間擲回。 如果 XAML 中有錯誤，建置就會失敗。
+無效的運算式與不滿足驗證條件限制並不會造成工作流程建置失敗。 建立您的工作流程成功，但在執行時間擲回 <xref:System.Activities.InvalidWorkflowException>。 如果 XAML 中有錯誤，建置就會失敗。
 
 在 Visual Studio 內，載入工作流程時，**錯誤清單**中會顯示其錯誤。 若要流覽至屬於錯誤來源的活動，請按兩下 **錯誤清單**中的錯誤。
 

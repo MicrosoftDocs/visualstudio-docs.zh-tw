@@ -8,23 +8,23 @@ f1_keywords:
 - VS.CHOOSEITEMS.UniversalWindowsComponents
 helpviewer_keywords:
 - Toolbox, Components tab
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 17f040b9bb64c2192bc6b376f5d0397ee5438071
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
-ms.translationtype: HT
+ms.openlocfilehash: bd9c6bf4d24a681c426a20f490dba2cc1d5080fc
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66747744"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72644600"
 ---
 # <a name="toolbox-components-tab"></a>工具箱, 元件索引標籤
 
 顯示您可以新增至 Windows Forms 之 Visual Basic 和 C# 設計工具的元件。 除了 Visual Studio 隨附的 .NET 元件 (例如 <xref:System.Messaging.MessageQueue> 和 <xref:System.Diagnostics.EventLog> 元件) 之外，您還可以將您自己的元件或協力廠商元件新增至這個索引標籤。
 
-若要顯示此索引標籤，請開啟 Windows Forms 設計工具。 選取 [檢視]   > [工具箱]  。 在 [工具箱]  中，選取 [元件]  索引標籤。
+若要顯示此索引標籤，請開啟 Windows Forms 設計工具。 選取 [檢視] > [工具箱]。 在 [工具箱] 中，選取 [元件] 索引標籤。
 
 ## <a name="components"></a>元件
 
@@ -85,9 +85,9 @@ ms.locfileid: "66747744"
 建立 <xref:System.Windows.Forms.Timer> 元件執行個體，以用來將以時間為基礎的功能新增至 Windows 應用程式。 如需詳細資訊，請參閱 [Timer 元件](/dotnet/framework/winforms/controls/timer-component-windows-forms)。
 
 > [!NOTE]
-> 還會有以系統為基礎的 <xref:System.Timers.Timer> 可以新增至 [工具箱]  。這個 <xref:System.Timers.Timer> 已針對伺服器應用程式最佳化，而且 Windows Forms <xref:System.Windows.Forms.Timer> 最適合在 Windows Forms 上使用。
+> 還會有以系統為基礎的 <xref:System.Timers.Timer> 可以新增至 [工具箱]。這個 <xref:System.Timers.Timer> 已針對伺服器應用程式最佳化，而且 Windows Forms <xref:System.Windows.Forms.Timer> 最適合在 Windows Forms 上使用。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [在 Windows Forms 上使用的控制項](/dotnet/framework/winforms/controls/controls-to-use-on-windows-forms)
 - [選擇工具箱項目、WPF 元件](choose-toolbox-items-wpf-components.md)

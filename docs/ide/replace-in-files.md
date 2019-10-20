@@ -9,17 +9,17 @@ helpviewer_keywords:
 - text searches, replacing text
 - find and replace
 - replace in files
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fddd048d7c0cc1ffc32dfa81f17964d14d917ec9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: a30fdbc13222ac23146595af1984b27aeed0f758
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62788937"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72621852"
 ---
 # <a name="replace-in-files"></a>檔案中取代
 
@@ -101,7 +101,7 @@ ms.locfileid: "62788937"
 > [!CAUTION]
 > 只有在保持開啟可供編輯的檔案中，才可以使用 [復原]。 如果未選取這個選項，則未開啟以供編輯的檔案將會保持關閉狀態，其中也不會出現 [復原] 選項。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [尋找及取代文字](../ide/finding-and-replacing-text.md)
 - [檔案中尋找](../ide/find-in-files.md)

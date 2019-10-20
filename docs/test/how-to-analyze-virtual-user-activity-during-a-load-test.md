@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - virtual user activity chart, viewing
 ms.assetid: 8bda19b3-91c1-4daf-b6c7-09108bddadff
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: dadc35d09ad70986f728104396502f13a06c0995
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 97abfe3740ea9209768e82eca1b269cd0a381233
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62979415"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72644176"
 ---
-# <a name="how-to-analyze-what-virtual-users-are-doing-during-a-load-test-using-the-virtual-user-activity-chart"></a>HOW TO：使用虛擬使用者活動圖分析虛擬使用者在負載測試期間的行為
+# <a name="how-to-analyze-what-virtual-users-are-doing-during-a-load-test-using-the-virtual-user-activity-chart"></a>如何：使用虛擬使用者活動圖表分析虛擬使用者在負載測試期間的行為
 
 您可以使用「虛擬使用者活動圖」檢視與負載測試關聯的虛擬使用者活動。 圖表中的每一列都表示個別的虛擬使用者。 「虛擬使用者活動圖」會顯示每一個虛擬使用者在測試期間的行為。 您可以查看使用者活動的模式、負載模式、讓失敗或緩慢的測試產生關聯，以及查看其他虛擬使用者活動的要求。 「虛擬使用者活動圖」只有在負載測試完成執行之後才能使用。
 
@@ -103,7 +103,7 @@ ms.locfileid: "62979415"
 
      並會隨之更新「虛擬使用者活動圖」。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [在詳細資料檢視中分析虛擬使用者活動](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md)
-- [逐步解說：使用虛擬使用者活動圖來找出問題](../test/walkthrough-use-the-virtual-user-activity-chart-to-isolate-issues.md)
+- [逐步解說：使用虛擬使用者活動圖來隔離問題](../test/walkthrough-use-the-virtual-user-activity-chart-to-isolate-issues.md)

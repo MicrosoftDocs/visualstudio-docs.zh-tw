@@ -2,15 +2,15 @@
 title: XAML 概觀
 ms.date: 07/31/2019
 ms.topic: reference
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: a9b04012e2f0b046b3fd31058c9838740e833281
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: af6ef98c5bffc4563cfa8fc8e0b29a910aeb85e8
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72450888"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72601873"
 ---
 # <a name="overview-of-xaml"></a>XAML 概觀
 

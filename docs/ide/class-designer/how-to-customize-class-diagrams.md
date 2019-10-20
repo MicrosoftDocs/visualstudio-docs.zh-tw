@@ -1,5 +1,5 @@
 ---
-title: HOW TO：自訂類別圖表 (類別設計工具)
+title: 如何：自訂類別圖表 (類別設計工具)
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,19 +8,19 @@ helpviewer_keywords:
 - type shapes, removing from class diagrams
 - class diagrams, removing type shapes
 ms.assetid: e9030aea-c77d-4cc1-b8f6-b6ca469b692d
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c23e24c9e087ff8ca64f90db1714ca2569bf02c0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: eb2901d756e332a719fc56732a951257760ca03f
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62975212"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72647806"
 ---
-# <a name="how-to-customize-class-diagrams"></a>HOW TO：自訂類別圖表
+# <a name="how-to-customize-class-diagrams"></a>如何：自訂類別圖表
 
 您可以變更類別圖顯示資訊的方式， 也可以在設計介面上自訂整個圖表或個別類型。
 
@@ -125,7 +125,7 @@ ms.locfileid: "62975212"
 
      圖案隨即從圖表移除，其基礎程式碼也會從專案刪除。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [如何：在成員標記法和關聯標記法之間變更](how-to-change-between-member-notation-and-association-notation.md)
 - [如何：檢視現有類型](how-to-view-existing-types.md)

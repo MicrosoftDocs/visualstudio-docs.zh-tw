@@ -8,32 +8,32 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2f65fe81d1b2382df3847c2cfdc0b8ffbfff5662
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 51aa0369793fe5dc4b39fe510c069a7ec93d102a
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66342431"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72647972"
 ---
 # <a name="get-service-information-from-the-settings-store"></a>從設定存放區取得服務資訊
-若要尋找所有可用的服務，或判斷是否已安裝特定的服務，您可以使用設定存放區。 您必須知道服務類別的型別。
+您可以使用 [設定] 存放區來尋找所有可用的服務，或判斷是否已安裝特定的服務。 您必須知道服務類別的類型。
 
-## <a name="to-list-the-available-services"></a>若要列出可用的服務
+## <a name="to-list-the-available-services"></a>列出可用的服務
 
-1. 建立 VSIX 專案，名為`FindServicesExtension`，然後新增名為的自訂命令`FindServicesCommand`。 如需如何建立自訂命令的詳細資訊，請參閱[建立具有功能表命令的擴充功能](../extensibility/creating-an-extension-with-a-menu-command.md)
+1. 建立名為 `FindServicesExtension` 的 VSIX 專案，然後新增名為 `FindServicesCommand` 的自訂命令。 如需如何建立自訂命令的詳細資訊，請參閱[使用功能表命令建立擴充](../extensibility/creating-an-extension-with-a-menu-command.md)功能
 
-2. 在  *FindServicesCommand.cs*，新增下列 using 陳述式：
+2. 在*FindServicesCommand.cs*中，新增下列 using 指示詞：
 
-    ```vb
+    ```csharp
     using System.Collections.Generic;
     using Microsoft.VisualStudio.Settings;
     using Microsoft.VisualStudio.Shell.Settings;
     using System.Windows.Forms;
     ```
 
-3. 取得組態設定存放區，然後尋找名為服務的子集合。 這個集合包含所有可用的服務。 在 `MenuItemCommand`方法，移除現有的程式碼，並將它取代為下列：
+3. 取得設定存放區，然後尋找名為「服務」的子集合。 此集合包含所有可用的服務。 在 `MenuItemCommand` 方法中，移除現有的程式碼，並取代為下列內容：
 
-    ```
+    ```csharp
     private void MenuItemCallback(object sender, EventArgs e)
     {
         SettingsManager settingsManager = new ShellSettingsManager(ServiceProvider);
@@ -50,20 +50,20 @@ ms.locfileid: "66342431"
     }
     ```
 
-4. 建置此專案並開始偵錯。 實驗執行個體隨即出現。
+4. 建置此專案並開始偵錯。 實驗實例隨即出現。
 
-5. 在實驗執行個體，在**工具**功能表上，按一下**叫用 FindServicesCommand**。
+5. 在實驗實例中，按一下 [**工具**] 功能表上的 [叫用**FindServicesCommand**]。
 
-     您應該會看到列出的所有服務的訊息方塊。
+     您應該會看到一個列出所有服務的訊息方塊。
 
-     若要確認這些設定，您可以使用登錄編輯程式。
+     若要確認這些設定，您可以使用 [登錄編輯程式]。
 
-## <a name="find-a-specific-service"></a>尋找特定的服務
- 您也可以使用<xref:Microsoft.VisualStudio.Settings.SettingsStore.CollectionExists%2A>方法，以判斷是否已安裝特定的服務。 您必須知道服務類別的型別。
+## <a name="find-a-specific-service"></a>尋找特定服務
+ 您也可以使用 <xref:Microsoft.VisualStudio.Settings.SettingsStore.CollectionExists%2A> 方法來判斷是否已安裝特定的服務。 您必須知道服務類別的類型。
 
-1. 在您在上一個程序中建立的專案 MenuItemCallback，搜尋 的組態設定存放區`Services`有由服務的 GUID 命名的子集合的集合。 在此情況下我們會說明服務。
+1. 在您于上一個程式中建立之專案的 MenuItemCallback 中，搜尋具有子集合（由服務的 GUID 命名）之 `Services` 集合的 [設定] 存放區。 在此情況下，我們將尋找「說明」服務。
 
-    ```
+    ```csharp
     private void MenuItemCallback(object sender, EventArgs e)
     {
         SettingsManager settingsManager = new ShellSettingsManager(ServiceProvider);
@@ -78,6 +78,6 @@ ms.locfileid: "66342431"
 
 2. 建置此專案並開始偵錯。
 
-3. 在實驗執行個體，在**工具**功能表上，按一下**叫用 FindServicesCommand**。
+3. 在實驗實例中，按一下 [**工具**] 功能表上的 [叫用**FindServicesCommand**]。
 
-     您應該會看到含有文字的訊息**協助服務使用：** 後面 **，則為 True**或**False**。 若要確認這項設定，您可以使用登錄編輯程式，在先前步驟中所示。
+     您應該會看到一則訊息，其中包含文字說明**服務可供使用：** 後面接著**True**或**False**。 若要確認此設定，您可以使用 [登錄編輯程式]，如先前的步驟所示。

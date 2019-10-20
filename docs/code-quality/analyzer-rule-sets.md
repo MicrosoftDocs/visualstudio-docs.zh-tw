@@ -5,19 +5,19 @@ ms.topic: conceptual
 helpviewer_keywords:
 - analyzer packages, rule sets
 - rule sets for analyzers
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c8602483554ebd311ab6eebb13ff8d2de00d7e09
-ms.sourcegitcommit: b23d73c86ec7720c4cd9a58050860bc559623a3d
+ms.openlocfilehash: d40e88f123f397cfc77fe44757c2f72305390302
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "72172777"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72606540"
 ---
-# <a name="enable-a-category-of-rules"></a>啟用規則類別
+# <a name="enable-a-category-of-rules"></a>啟用規則的類別
 
 分析器套件可能包含預先定義的[EditorConfig](use-roslyn-analyzers.md#set-rule-severity-in-an-editorconfig-file)和[規則集](using-rule-sets-to-group-code-analysis-rules.md)檔案，可讓您快速且輕鬆地啟用一類規則，例如安全性或設計規則。 [CodeAnalysis. FxCopAnalyzers](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/) NuGet analyzer 套件包含兩個規則集（從版本2.6.2 開始）和 EditorConfig 檔案（從版本2.9.5 開始）。 藉由啟用特定分類的規則，您可以識別目標問題和特定條件。
 
@@ -53,13 +53,13 @@ FxCop 分析器 NuGet 套件包含預先定義的規則集和 EditorConfig 檔�
 
 ## <a name="predefined-editorconfig-files"></a>預先定義的 EditorConfig 檔
 
-CodeAnalysis FxCopAnalyzers 分析器套件的預先定義 EditorConfig 檔案位於 *% USERPROFILE% \\. nuget\packages\microsoft.codeanalysis.fxcopanalyzers @ no__t-2 @ no__t-3version @ no__t-4\editorconfig*目錄。 例如，啟用所有安全性規則的 EditorConfig 檔案位於 *% USERPROFILE% \\. nuget\packages\microsoft.codeanalysis.fxcopanalyzers @ no__t-2 @ no__t-3version @ no__t-4\editorconfig\SecurityRulesEnabled @ no__t-5. editorconfig*。
+CodeAnalysis FxCopAnalyzers 分析器套件的預先定義 EditorConfig 檔位於 *% USERPROFILE% \\. nuget\packages\microsoft.codeanalysis.fxcopanalyzers \\ \<version \> \editorconfig*目錄。 例如，啟用所有安全性規則的 EditorConfig 檔案位於 *% USERPROFILE% \\. nuget\packages\microsoft.codeanalysis.fxcopanalyzers \\ \<version \> \editorconfig\securityrulesenabled \\。editorconfig*。
 
 將選擇的 editorconfig 檔案複製到您專案的根目錄。
 
 ## <a name="predefined-rule-sets"></a>預先定義的規則集
 
-CodeAnalysis. FxCopAnalyzers analyzer 套件的預先定義規則集檔案位於 *% USERPROFILE% \\. nuget\packages\microsoft.codeanalysis.fxcopanalyzers @ no__t-2 @ no__t-3version @ no__t-4\rulesets*directory. 例如，啟用所有安全性規則的規則集檔案位於 *% USERPROFILE% \\. nuget\packages\microsoft.codeanalysis.fxcopanalyzers @ no__t-2 @ no__t-3version @ no__t-4\rulesets\SecurityRulesEnabled.ruleset*。
+CodeAnalysis. FxCopAnalyzers analyzer 套件的預先定義規則集檔案位於 *% USERPROFILE% \\. nuget\packages\microsoft.codeanalysis.fxcopanalyzers \\ \<version \> \rulesets*directory. 例如，啟用所有安全性規則的規則集檔案位於 *% USERPROFILE% \\. nuget\packages\microsoft.codeanalysis.fxcopanalyzers \\ \<version \> \rulesets\securityrulesenabled.ruleset*。
 
 複製一或多個規則集，並將它們貼入包含 Visual Studio 專案的目錄中，或直接加入**方案總管**。
 
@@ -102,7 +102,7 @@ CodeAnalysis. FxCopAnalyzers analyzer 套件的預先定義規則集檔案位於
 
    現在，您只會看到在選取的規則集內已啟用規則的規則違規。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [分析器常見問題集](analyzers-faq.md)
 - [.NET Compiler Platform 分析器概觀](roslyn-analyzers-overview.md)

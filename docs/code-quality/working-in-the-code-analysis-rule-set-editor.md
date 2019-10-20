@@ -5,17 +5,17 @@ ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.ruleseteditor
 ms.assetid: 370c97bf-bb29-4b2f-b9ae-ba125bce7b2d
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3672d2c85a8da9f8e249da33311d780391d43401
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: 6e23bf15796a8ff581a8a017687f90084c338e74
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72445592"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72649016"
 ---
 # <a name="use-the-code-analysis-rule-set-editor"></a>使用程式碼分析規則集編輯器
 
@@ -29,7 +29,7 @@ ms.locfileid: "72445592"
 |錯誤|在**錯誤清單**以及在組建時間產生錯誤。|
 |資訊|在**錯誤清單**中產生訊息。|
 |Hidden|使用者看不到違規。 不過，IDE 會收到違規的通知。|
-|無|此規則已隱藏。 其行為與規則已從規則集移除時相同。|
+|None|此規則已隱藏。 其行為與規則已從規則集移除時相同。|
 
 [編輯器] 會以樹狀結構顯示規則，依據您指定的規則集欄位將規則分組。 若要從規則集新增或移除規則，請執行下列一或多個步驟：
 

@@ -12,32 +12,32 @@ helpviewer_keywords:
 - forms, passing data between
 - Windows Forms, walkthroughs
 ms.assetid: 78bf038b-9296-4fbf-b0e8-d881d1aff0df
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: dc08b0667d4bcde4a2b0eaf95f966806b4a8931e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: eb4b1c0af617bfd8e1771e500b4f12699e3f0ec4
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62566276"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72641443"
 ---
 # <a name="pass-data-between-forms"></a>在表單之間傳遞資料
 
-此逐步解說提供將資料從某個表單傳遞至另一個表單的指示。 使用客戶和訂單資料表，從 Northwind，一種格式可讓使用者選取客戶，和第二個表單會顯示所選取的客戶的訂單。 本逐步解說示範如何從第一個表單接收資料的第二個表單上建立方法。
+此逐步解說提供將資料從某個表單傳遞至另一個表單的指示。 使用來自 Northwind 的 customers 和 orders 資料表，一種表單可讓使用者選取客戶，而第二個表單則會顯示所選客戶的訂單。 本逐步解說示範如何在第二個表單上建立方法，以接收第一個表單中的資料。
 
 > [!NOTE]
-> 此逐步解說只示範一種在表單之間傳遞資料的方法。 還有其他選項，將資料傳遞至表單，包括建立第二個建構函式來接收資料，或建立的公用屬性，可以使用設定資料從第一種形式。
+> 此逐步解說只示範一種在表單之間傳遞資料的方法。 還有其他選項可用來將資料傳遞至表單，包括建立第二個用來接收資料的處理常式，或建立可使用第一個表單的資料來設定的公用屬性。
 
 這個逐步解說中所述的工作包括：
 
-- 建立新**Windows Forms 應用程式**專案。
+- 建立新的**Windows Forms 應用程式**專案。
 
-- 建立和設定與資料集[資料來源組態精靈](../data-tools/media/data-source-configuration-wizard.png)。
+- 使用[資料來源設定向導](../data-tools/media/data-source-configuration-wizard.png)建立和設定資料集。
 
-- 選取從 [資料來源] 視窗拖曳項目時，要在表單上建立的控制項。 如需詳細資訊，請參閱 <<c0> [ 設定要從資料來源視窗拖曳時要建立的控制項](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)。
+- 選取從 [資料來源] 視窗拖曳項目時，要在表單上建立的控制項。 如需詳細資訊，請參閱[設定從資料來源視窗拖曳時要建立的控制項](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)。
 
 - 從 [資料來源] 視窗將項目拖曳至表單，以建立資料繫結控制項。
 
@@ -47,39 +47,39 @@ ms.locfileid: "62566276"
 
 - 在表單之間傳遞資料。
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>Prerequisites
 
-本逐步解說會使用 SQL Server Express LocalDB 和 Northwind 範例資料庫。
+本逐步解說使用 SQL Server Express LocalDB 和 Northwind 範例資料庫。
 
-1. 如果您沒有 SQL Server Express LocalDB，請將它安裝從[SQL Server Express 下載頁面](https://www.microsoft.com/sql-server/sql-server-editions-express)，或透過**Visual Studio 安裝程式**。 在 Visual Studio 安裝程式，可以安裝 SQL Server Express LocalDB 的一部份**資料儲存和處理**工作負載，或作為個別的元件。
+1. 如果您沒有 SQL Server Express LocalDB，請從[SQL Server Express 下載頁面](https://www.microsoft.com/sql-server/sql-server-editions-express)，或透過**Visual Studio 安裝程式**進行安裝。 在 Visual Studio 安裝程式中，SQL Server Express LocalDB 可以安裝為**資料儲存和處理**工作負載的一部分，或作為個別元件。
 
-2. 安裝 Northwind 範例資料庫執行下列步驟：
+2. 依照下列步驟安裝 Northwind 範例資料庫：
 
-    1. 在 Visual Studio 中開啟**SQL Server 物件總管**視窗。 (SQL Server 物件總管 中已安裝的一部分**資料儲存和處理**Visual Studio 安裝程式中的工作負載。)依序展開**SQL Server**節點。 以滑鼠右鍵按一下您的 LocalDB 執行個體，然後選取**新的查詢**。
+    1. 在 Visual Studio 中，開啟 [ **SQL Server 物件總管**] 視窗。 （SQL Server 物件總管會安裝為 Visual Studio 安裝程式中**資料儲存和處理**工作負載的一部分）。展開 [ **SQL Server** ] 節點。 以滑鼠右鍵按一下您的 LocalDB 實例，然後選取 [追加**查詢**]。
 
-       查詢編輯器視窗隨即開啟。
+       [查詢編輯器] 視窗隨即開啟。
 
-    2. 複製[Northwind 的 TRANSACT-SQL 指令碼](https://github.com/MicrosoftDocs/visualstudio-docs/blob/master/docs/data-tools/samples/northwind.sql?raw=true)到剪貼簿。 這個 T-SQL 指令碼會從頭建立 Northwind 資料庫，並填入資料。
+    2. 將[Northwind transact-sql 腳本](https://github.com/MicrosoftDocs/visualstudio-docs/blob/master/docs/data-tools/samples/northwind.sql?raw=true)複製到剪貼簿。 這個 T-sql 腳本會從頭開始建立 Northwind 資料庫，並在其中填入資料。
 
-    3. 將 T-SQL 指令碼貼到查詢編輯器，然後選擇**Execute**  按鈕。
+    3. 將 T-sql 腳本貼入查詢編輯器中，然後選擇 [**執行**] 按鈕。
 
-       短時間之後，查詢完成執行，並建立 Northwind 資料庫。
+       在短時間之後，查詢就會完成執行，並建立 Northwind 資料庫。
 
 ## <a name="create-the-windows-forms-app-project"></a>建立 Windows Forms 應用程式專案
 
-1. 在 Visual Studio 中，在**檔案**功能表上，選取**新增** > **專案**。
+1. **在 Visual Studio 的 [檔案**] 功能表上，選取 [**新增** > **專案**]。
 
-2. 展開  **Visual C#** 或是**Visual Basic**的左側窗格中，然後選取**Windows Desktop**。
+2. 在左窗格中展開 [**視覺效果C#**  ] 或 [ **Visual Basic** ]，然後選取 [ **Windows 桌面**]。
 
-3. 在中間窗格中，選取**Windows Forms 應用程式**專案類型。
+3. 在中間窗格中，選取 [ **Windows Forms 應用程式**] 專案類型。
 
-4. 將專案命名為**PassingDataBetweenForms**，然後選擇**確定**。
+4. 將專案命名為**PassingDataBetweenForms**，然後選擇 **[確定]** 。
 
      隨即建立 **PassingDataBetweenForms** 專案，並將其新增至 [方案總管]。
 
 ## <a name="create-the-data-source"></a>建立資料來源
 
-1. 若要開啟 **資料來源** 視窗，請在**資料**功能表上，按一下 **顯示資料來源**。
+1. 若要開啟 [**資料來源**] 視窗，請按一下 [**資料**] 功能表上的 [**顯示資料來源**]。
 
 2. 在 [資料來源] 視窗中，選取 [新增新資料來源]，以啟動 [資料來源組態精靈]。
 
@@ -95,7 +95,7 @@ ms.locfileid: "62566276"
 
 6. 若您的資料庫需要密碼，且可以使用包含敏感性資料的選項，則請選取此選項，然後按一下 [下一步]。
 
-7. 在 [**將連接字串儲存到應用程式組態檔**頁面上，按一下**下一步]**。
+7. 在 [將**連接字串儲存到應用程式佈建檔**] 頁面上，按 **[下一步]** 。
 
 8. 展開 [選擇您的資料庫物件] 頁面上的 [資料表] 節點。
 
@@ -103,7 +103,7 @@ ms.locfileid: "62566276"
 
      **NorthwindDataSet** 即會新增至專案，且 [客戶] 和 [訂單] 資料表會出現在 [資料來源] 視窗中。
 
-## <a name="create-the-first-form-form1"></a>建立第一個表單 (Form1)
+## <a name="create-the-first-form-form1"></a>建立第一個表單（Form1）
 
 您可以從 [資料來源] 視窗拖曳 [客戶] 節點以建立資料繫結資料格 (<xref:System.Windows.Forms.DataGridView> 控制項)。
 
@@ -115,7 +115,7 @@ ms.locfileid: "62566276"
 
 ## <a name="create-the-second-form"></a>建立第二個表單
 
-建立第二個表單，以將資料傳遞至。
+建立要傳遞資料的第二個表單。
 
 1. 在 [專案] 功能表中，選擇 [新增 Windows Form]。
 
@@ -129,9 +129,9 @@ ms.locfileid: "62566276"
 
      **OrdersBindingNavigator** 會從 **Form2** 中消失。
 
-## <a name="add-a-tableadapter-query"></a>加入 TableAdapter 查詢
+## <a name="add-a-tableadapter-query"></a>新增 TableAdapter 查詢
 
-加入 TableAdapter 查詢加入 Form2 以載入 Form1 上所選客戶的訂單。
+將 TableAdapter 查詢新增至 Form2，以在 Form1 上載入所選取客戶的訂單。
 
 1. 在 [方案總管] 中按兩下 **NorthwindDataSet.xsd** 檔案。
 
@@ -154,13 +154,13 @@ ms.locfileid: "62566276"
 
 6. 按 [ **下一步**]。
 
-7. 針對**填滿 DataTableMethod 名稱**，輸入`FillByCustomerID`。
+7. 在 [**填入 DataTableMethod 名稱**] 中，輸入 `FillByCustomerID`。
 
 8. 清除 [傳回 DataTable] 選項，然後按一下 [下一步]。
 
 9. 按一下 [ **完成**]。
 
-## <a name="create-a-method-on-form2-to-pass-data-to"></a>若要將資料傳遞至 Form2 上建立方法
+## <a name="create-a-method-on-form2-to-pass-data-to"></a>在 Form2 上建立方法以將資料傳遞至
 
 1. 以滑鼠右鍵按一下 **Form2**，並選取 [檢視程式碼]，以在 [程式碼編輯器] 中開啟 **Form2**。
 
@@ -169,7 +169,7 @@ ms.locfileid: "62566276"
      [!code-vb[VbRaddataDisplaying#1](../data-tools/codesnippet/VisualBasic/pass-data-between-forms_1.vb)]
      [!code-csharp[VbRaddataDisplaying#1](../data-tools/codesnippet/CSharp/pass-data-between-forms_1.cs)]
 
-## <a name="create-a-method-on-form1-to-pass-data-and-display-form2"></a>將資料傳遞，並顯示 Form2 的 Form1 上建立方法
+## <a name="create-a-method-on-form1-to-pass-data-and-display-form2"></a>在 Form1 上建立方法以傳遞資料並顯示 Form2
 
 1. 在 **Form1** 中，以滑鼠右鍵按一下 [客戶] 資料格，然後按一下 [屬性]。
 
@@ -196,8 +196,8 @@ ms.locfileid: "62566276"
 
 - 編輯資料集，以加入或移除資料庫物件。 如需詳細資訊，請參閱[建立和設定資料集](../data-tools/create-and-configure-datasets-in-visual-studio.md)。
 
-- 加入將資料存回資料庫的功能。 如需詳細資訊，請參閱 <<c0> [ 將資料儲存回資料庫](../data-tools/save-data-back-to-the-database.md)。
+- 加入將資料存回資料庫的功能。 如需詳細資訊，請參閱[將資料儲存回資料庫](../data-tools/save-data-back-to-the-database.md)。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [將 Windows Forms 控制項繫結至 Visual Studio 中的資料](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)

@@ -7,17 +7,17 @@ helpviewer_keywords:
 - TFSConfig
 - CodeIndex command [Team Foundation Server]
 ms.assetid: b79568d4-6a64-4ca9-a1ee-3e57f92a9c5c
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: edd794d647d0af63edd133a65fbaad569e067e21
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+ms.openlocfilehash: 378a5965f8ca9e9cc2d1c7214180e99f080d7873
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68924095"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72630953"
 ---
 # <a name="codeindex-command"></a>CodeIndex 命令
 
@@ -38,22 +38,22 @@ TFSConfig CodeIndex /indexingStatus | /setIndexing:[ on | off | keepupOnly ] | /
 
 ### <a name="parameters"></a>參數
 
-|**引數**|**描述**|
+|**引數**|**說明**|
 |------------------| - |
 |`CollectionName`|指定專案集合的名稱。 如果名稱包含空格，請為名稱加上引號，例如，"Fabrikam Website"。|
 |`CollectionId`|指定專案集合的識別號碼。|
 |`ServerPath`|指定程式碼檔案的路徑。|
 
-|**選項**|**描述**|
+|**選項**|**說明**|
 |----------------| - |
 |**/indexingStatus**|顯示程式碼索引服務的狀態和組態。|
-|**/setIndexing:** [ on &#124; off &#124; keepupOnly ]|-   **on**：開始為所有變更集編製索引。<br />-   **off**：停止為所有變更集編製索引。<br />-   **keepupOnly**：停止為先前建立的變更集編製索引，並開始只為新的變更集編製索引。|
-|**/ignoreList:** [ add &#124; remove &#124; removeAll &#124; view ] `ServerPath`<br /><br /> 您可以在伺服器路徑的開頭、結尾或兩端使用萬用字元 (*)。|指定您不要編製索引之程式碼檔及其路徑的清單。<br /><br /> -   **add**：將您不要編製索引的檔案，新增至忽略的檔案清單中。<br />-   **remove**：從忽略的檔案清單中，移除您要編製索引的檔案。<br />-   **removeAll**：清除忽略的檔案清單，並開始為所有的檔案編製索引。<br />-   **view**：查看未編製索引的所有檔案。|
+|**/setIndexing:** [ on &#124; off &#124; keepupOnly ]|-   **on**：開始為所有變更集編製索引。<br />-   **off**：停止為變更集編製索引。<br />-   **keepupOnly**：停止為先前建立的變更集編製索引，並且開始僅為新變更集編製索引。|
+|**/ignoreList:** [ add &#124; remove &#124; removeAll &#124; view ] `ServerPath`<br /><br /> 您可以在伺服器路徑的開頭、結尾或兩端使用萬用字元 (*)。|指定您不要編製索引之程式碼檔及其路徑的清單。<br /><br /> -   **add**：將您不要編製索引的檔案，新增到忽略的檔案清單中。<br />-   **remove**：從忽略的檔案清單中，移除您要編製索引的檔案。<br />-   **removeAll**：清除忽略的檔案清單，並開始為所有的檔案編製索引。<br />-   **view**：查看未編製索引的所有檔案。|
 |**/listLargeFiles [/fileCount:** `FileCount` **/minSize:** `MinSize`]|顯示超過指定大小 (KB) 的指定檔案數。 然後，您就可以使用 **/ignoreList** 選項來排除這些檔案，不為其編製索引。|
 |**/reindexAll**|清除先前索引資料，並重新開始編製索引。|
 |**/destroyCodeIndex [/noPrompt]**|刪除程式碼索引，並移除所有索引資料。 如果您使用 **/noPrompt** 選項，則不需要確認。|
 |**/temporaryDataSizeLimit**:[ view &#124; <`SizeInGBs`> &#124; disable ]|控制處理變更集時，CodeLens 會建立多少暫存資料。 預設限制為 2 GB。<br /><br /> -   **view**：顯示目前的大小限制。<br />-   `SizeInGBs`：變更大小限制。<br />-   **disable**：移除大小限制。<br /><br /> 在 CodeLens 處理新的變更集之前，會先檢查此限制。 如果暫存資料超過此限制，CodeLens 將會暫停處理舊的變更集，而不是新的變更集。 清理資料並降到低於此限制之後，CodeLens 就會重新開始處理。 每天會自動執行一次清理。 這表示，在開始執行清理之前，暫存資料可能會超過此限制。|
-|**/indexHistoryPeriod**:[ view &#124; all &#124; <`NumberOfMonths`> ]|控制將歷程記錄編製索引的時間長度。 這會影響 CodeLens 向您顯示的記錄數量。 預設限制為 12 個月。 這表示 CodeLens 只會顯示最近 12 個月內的歷程記錄。<br /><br /> -   **view**：顯示目前的月數。<br />-   **all**：為所有變更歷程記錄編製索引。<br />-   `NumberOfMonths`：變更用來編製變更歷程記錄索引的月數。|
+|**/indexHistoryPeriod**:[ view &#124; all &#124; <`NumberOfMonths`> ]|控制將歷程記錄編製索引的時間長度。 這會影響 CodeLens 向您顯示的記錄數量。 預設限制為 12 個月。 這表示 CodeLens 只會顯示最近 12 個月內的歷程記錄。<br /><br /> -   **view**：顯示目前的月數。<br />-   **all**：編製索引所有歷程記錄。<br />-   `NumberOfMonths`：變更用於將歷程記錄編製索引的月數。|
 |**/collectionName:** `CollectionName`|指定要在哪個名稱的專案集合上執行 **CodeIndex** 命令。 如果未使用 **/CollectionId**，則此為必要項。|
 |**/collectionId:** `CollectionId`|指定要在哪個識別碼的專案集合上執行 **CodeIndex** 命令。 如果未使用 **/CollectionName**，則此為必要項。|
 
@@ -122,7 +122,7 @@ TFSConfig CodeIndex /temporaryDataSizeLimit:disable /collectionName:"Fabrikam We
 TFSConfig CodeIndex /destroyCodeIndex /collectionName:"Fabrikam Website"
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [尋找 CodeLens 的程式碼變更和其他記錄](../ide/find-code-changes-and-other-history-with-codelens.md)
 - [使用 TFSConfig 管理伺服器組態](/tfs/server/ref/command-line/tfsconfig-cmd)

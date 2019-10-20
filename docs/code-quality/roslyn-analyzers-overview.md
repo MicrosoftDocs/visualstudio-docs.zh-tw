@@ -7,17 +7,17 @@ helpviewer_keywords:
 - analyzers
 - Roslyn analyzers
 - code analyzers
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 844b9475ea59ba15ac96d3cbe19523f5cba63c72
-ms.sourcegitcommit: 7825d4163e52d724e59f6c0da209af5fbef673f7
+ms.openlocfilehash: 388667485f27b59e46a1c39d95b37ddc413240ee
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71999990"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72649143"
 ---
 # <a name="overview-of-source-code-analyzers"></a>原始程式碼分析器的總覽
 
@@ -40,7 +40,7 @@ ms.locfileid: "71999990"
 
 Roslyn 分析器的來源分析會取代 managed 程式碼的[舊版分析](../code-quality/code-analysis-for-managed-code-overview.md)。 許多舊版分析規則都已經改寫為 Roslyn 程式碼分析器。 對於較新的專案範本，例如 .NET Core 和 .NET Standard 專案，舊版分析甚至無法使用。
 
-如同舊版分析規則違規，原始程式碼分析違規會出現在 Visual Studio 的 [錯誤清單] 視窗中。 此外，原始程式碼的分析違規也會在程式碼編輯器中顯示為*波浪線*在違規程序代碼之下。 波形曲線色彩取決於規則的[嚴重性設定](../code-quality/use-roslyn-analyzers.md#rule-severity)。 下圖顯示三個違規 @ no__t-0one red、一個綠色和一個灰色：
+如同舊版分析規則違規，原始程式碼分析違規會出現在 Visual Studio 的 [錯誤清單] 視窗中。 此外，原始程式碼的分析違規也會在程式碼編輯器中顯示為*波浪線*在違規程序代碼之下。 波形曲線色彩取決於規則的[嚴重性設定](../code-quality/use-roslyn-analyzers.md#rule-severity)。 下圖顯示三個違規 &mdash;one 紅色、一個綠色和一個灰色：
 
 ![Visual Studio 中的程式碼編輯器中的波浪線](media/diagnostics-severity-colors.png)
 
@@ -69,7 +69,7 @@ Roslyn 程式碼分析器不僅會回報舊版分析所需的相同類型問題�
 
 您可以透過 NuGet 套件，針對每個專案安裝 Roslyn 程式碼分析器。 有些也可以做為 Visual Studio 延伸模組，在這種情況下，它們會套用至您在 Visual Studio 中開啟的任何解決方案。 這兩種[安裝分析器](../code-quality/install-roslyn-analyzers.md)的方法之間有一些重要的行為差異。
 
-### <a name="scope"></a>`Scope`
+### <a name="scope"></a>範圍
 
 如果您將分析器安裝為 Visual Studio 擴充功能，它們會套用至解決方案層級和所有 Visual Studio 的實例。 如果您將分析器安裝為 NuGet 套件 (這是慣用方法)，則只會套用至安裝 NuGet 套件的專案。 在小組環境中，安裝為 NuGet 套件的分析器會將範圍限制在處理該專案的「所有開發人員」。
 
@@ -93,7 +93,7 @@ Roslyn 程式碼分析器不僅會回報舊版分析所需的相同類型問題�
 > [!div class="nextstepaction"]
 > [在 Visual Studio 中使用程式碼分析器](../code-quality/use-roslyn-analyzers.md)
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [分析器常見問題集](analyzers-faq.md)
 - [撰寫您自己的程式碼分析器](../extensibility/getting-started-with-roslyn-analyzers.md)

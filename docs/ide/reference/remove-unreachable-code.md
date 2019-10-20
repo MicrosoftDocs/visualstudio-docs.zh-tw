@@ -2,19 +2,19 @@
 title: 移除執行不到的程式碼重構
 ms.date: 01/26/2018
 ms.topic: reference
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: b1c88fbeb9daf293df868a835247098e2ce999e3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 1e5bdab773cf70963e1d0f485a7779e57084c8a0
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62576015"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72655596"
 ---
 # <a name="remove-unreachable-code-refactoring"></a>移除執行不到的程式碼重構
 
@@ -24,9 +24,9 @@ ms.locfileid: "62576015"
 
 **功能：** 移除永遠不會執行的程式碼。
 
-**時機：** 您的程式沒有某個程式碼片段路徑，這使得該程式碼片段變成不必要的程式碼片段。
+**時機：** 您的程式沒有某個程式碼片段的路徑，使得該程式碼片段變成不必要的程式碼片段。
 
-**原因：** 藉由移除多餘且永遠不會執行的程式碼來提升可讀性和可維護性。
+**原因：** 藉由移除多餘且永遠不會執行的程式碼來提升可讀性和便於維護。
 
 ## <a name="how-to"></a>操作說明
 
@@ -37,7 +37,7 @@ ms.locfileid: "62576015"
 1. 接著，執行下列其中一項操作：
 
    - **鍵盤**
-      - 在字行任何地方按 **Ctrl**+**.**， 以觸發 [快速動作與重構] 功能表，然後從 [預覽] 快顯視窗中選取 [移除執行不到的程式碼]。
+      - 在字行任何地方按 **Ctrl**+ **.** ， 以觸發 [快速動作與重構] 功能表，然後從 [預覽] 快顯視窗中選取 [移除執行不到的程式碼]。
    - **滑鼠**
       - 在程式碼上按一下滑鼠右鍵，選取 [快速動作與重構] 功能表，然後從 [預覽] 快顯視窗中選取 [移除執行不到的程式碼]。
 
@@ -62,7 +62,7 @@ private void Method()
 }
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [重構](../refactoring-in-visual-studio.md)
 - [預覽變更](../../ide/preview-changes.md)

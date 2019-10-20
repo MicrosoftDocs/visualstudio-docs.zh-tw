@@ -8,19 +8,19 @@ helpviewer_keywords:
 - member notation
 - notation, association
 ms.assetid: 65881c5a-d251-4a36-ad0d-73d088436092
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 17bda235f0fb5781b19a3b1384b86ae58543edf3
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
-ms.translationtype: HT
+ms.openlocfilehash: fd1bb86e13fb5f5b654ad4f4e1ee7fe7a243f1f1
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66261207"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72647737"
 ---
-# <a name="how-to-change-between-member-notation-and-association-notation-in-class-designer"></a>作法：在 [類別設計工具] 中，在成員標記法和關聯標記法之間變更
+# <a name="how-to-change-between-member-notation-and-association-notation-in-class-designer"></a>如何：在類別設計工具中變更為成員標記法或關聯標記法
 
 使用 [類別設計工具] 時，您可以在成員標記法與關聯標記法之間切換，以變更兩種類型在類別圖表中的關聯性代表方式。 將成員顯示為關聯線時，通常可提供類型關聯方式的實用視覺效果。
 
@@ -42,7 +42,7 @@ ms.locfileid: "66261207"
 
 在類別圖表中，以滑鼠右鍵按一下關聯線，然後視需要選擇 [顯示為屬性] 或 [顯示為欄位]。 關聯線隨即消失，而在圖表內該類型圖案的適當區間中會顯示屬性。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [如何：建立類型之間的繼承](how-to-create-inheritance-between-types.md)
 - [如何：檢視類型之間的繼承](how-to-view-inheritance-between-types.md)

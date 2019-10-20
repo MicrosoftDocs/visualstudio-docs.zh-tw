@@ -3,17 +3,17 @@ title: 一個或多個選取的資料庫物件傳回與目標類別之結構描�
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 3794e88b-4d3d-4e7a-ade6-8208eabe3eae
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 1b9f10c171d8369adfe460424b9b6abe047b1a24
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 3f2a502209d00a5543e3b23ef88b5126c861619a
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65458250"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72641467"
 ---
 # <a name="one-or-more-selected-database-objects-return-a-schema-that-does-not-match-the-schema-of-the-target-class"></a>一個或多個選取的資料庫物件傳回與目標類別之結構描述不符的結構描述
 
@@ -27,6 +27,6 @@ ms.locfileid: "65458250"
 
 2. 選取另一個資料庫物件，這個資料庫物件傳回的資料會符合目標類別 (**O/R 設計工具**中要置放資料庫物件的類別) 的結構描述。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [Visual Studio 中的 LINQ to SQL 工具](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

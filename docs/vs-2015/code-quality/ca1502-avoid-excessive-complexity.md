@@ -1,5 +1,5 @@
 ---
-title: CA1502:避免造成過度複雜 |Microsoft Docs
+title: CA1502：避免過度複雜 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,85 +12,85 @@ helpviewer_keywords:
 - AvoidExcessiveComplexity
 ms.assetid: d735454b-2f8f-47ce-907d-f7a5a5391221
 caps.latest.revision: 32
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: e1885a07f4c9edbbdea9be4f0e74aaf8e4d3a6f9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f7b830e9d3a045bb54394a91d94e036613af7d1f
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68191249"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72607867"
 ---
-# <a name="ca1502-avoid-excessive-complexity"></a>CA1502:避免造成過度複雜的方法
+# <a name="ca1502-avoid-excessive-complexity"></a>CA1502：避免過度複雜
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |TypeName|AvoidExcessiveComplexity|
 |CheckId|CA1502|
-|分類|Microsoft.Maintainability|
-|中斷變更|非重大|
+|Category|Microsoft。可維護性|
+|中斷變更|不中斷|
 
 ## <a name="cause"></a>原因
- 方法具有過多的循環複雜度。
+ 方法的迴圈複雜度過大。
 
 ## <a name="rule-description"></a>規則描述
- *循環複雜度*測量透過方法，取決於的數目和複雜度的條件式分支中線性獨立路徑數目。 較低的循環複雜度通常表示可以輕鬆地了解、 測試和維護的方法。 循環複雜度會計算從控制流程圖形的方法，並指定，如下所示：
+ *圈複雜度*會測量透過方法的線性獨立路徑數目，這取決於條件式分支的數目和複雜度。 較低的圈複雜度通常表示容易瞭解、測試和維護的方法。 迴圈複雜度是從方法的控制流程圖來計算，並以下列方式提供：
 
- 循環複雜度 = 邊緣-的節點數目 + 1 的數目
+ 圈複雜度 = 邊緣數目-節點數目 + 1
 
- 其中一個節點代表一個邏輯分支點和邊緣，表示節點之間的線條。
+ 其中，節點代表邏輯分支點，而邊緣代表節點之間的線條。
 
- 循環複雜度超過 25 項時，此規則會報告違規情形。
+ 當圈複雜度大於25時，此規則會報告違規。
 
- 您可以深入了解在程式碼度量[測量的複雜性和可維護性的 Managed 程式碼](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)，
+ 您可以在[測量 Managed 程式碼的複雜度和維護性](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)中深入瞭解程式碼計量，
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
- 若要修正此規則的違規情形，重構的方法，以降低循環複雜度。
+ 若要修正此規則的違規情形，請重構方法，以降低其圈複雜度。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
- 它會安全地隱藏此規則的警告，如果無法輕易地降低複雜度和方法很容易了解、 測試和維護。 特別是方法，可包含大型`switch`(`Select`在[!INCLUDE[vbprvb](../includes/vbprvb-md.md)]) 陳述式是排除的候選項目。 Code 的風險會延遲在開發週期，或導致執行階段行為，先前隨附的程式碼中發生意外的變更可能會大於效益可維護性的重構程式碼基底的程式碼。
+ 如果無法輕易降低複雜性，而且方法很容易瞭解、測試和維護，就可以放心地隱藏此規則的警告。 特別的是，包含大型 `switch` （在 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 中 `Select`）語句的方法，是排除的候選項。 在開發週期中不穩定程式碼基底的風險，或在先前隨附的程式碼中引進執行時間行為的非預期變更，可能會超過重構程式碼的維護性優勢。
 
-## <a name="how-cyclomatic-complexity-is-calculated"></a>循環複雜度的計算方式
- 循環複雜度計算方式是將 1 所示：
+## <a name="how-cyclomatic-complexity-is-calculated"></a>如何計算圈複雜度
+ 迴圈複雜度的計算方式是將1新增至下列內容：
 
-- 分支數 (例如`if`， `while`，和`do`)
+- 分支的數目（例如 `if`、`while` 和 `do`）
 
-- 數目`case`中的陳述式 `switch`
+- @No__t_1 中的 `case` 語句數目
 
-  下列範例顯示具有不同的循環複雜度的方法。
+  下列範例顯示迴圈複雜度不同的方法。
 
 ## <a name="example"></a>範例
- **1 的循環複雜度**
+ **1的圈複雜度**
 
  [!code-cpp[FxCop.Maintainability.AvoidExcessiveComplexity#1](../snippets/cpp/VS_Snippets_CodeAnalysis/FxCop.Maintainability.AvoidExcessiveComplexity/cpp/FxCop.Maintainability.AvoidExcessiveComplexity.cpp#1)]
  [!code-csharp[FxCop.Maintainability.AvoidExcessiveComplexity#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Maintainability.AvoidExcessiveComplexity/cs/FxCop.Maintainability.AvoidExcessiveComplexity.cs#1)]
  [!code-vb[FxCop.Maintainability.AvoidExcessiveComplexity#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Maintainability.AvoidExcessiveComplexity/vb/FxCop.Maintainability.AvoidExcessiveComplexity.vb#1)]
 
 ## <a name="example"></a>範例
- **2 的循環複雜度**
+ **2的圈複雜度**
 
  [!code-cpp[FxCop.Maintainability.AvoidExcessiveComplexity#2](../snippets/cpp/VS_Snippets_CodeAnalysis/FxCop.Maintainability.AvoidExcessiveComplexity/cpp/FxCop.Maintainability.AvoidExcessiveComplexity.cpp#2)]
  [!code-csharp[FxCop.Maintainability.AvoidExcessiveComplexity#2](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Maintainability.AvoidExcessiveComplexity/cs/FxCop.Maintainability.AvoidExcessiveComplexity.cs#2)]
  [!code-vb[FxCop.Maintainability.AvoidExcessiveComplexity#2](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Maintainability.AvoidExcessiveComplexity/vb/FxCop.Maintainability.AvoidExcessiveComplexity.vb#2)]
 
 ## <a name="example"></a>範例
- **為 3 的循環複雜度**
+ **圈複雜度為3**
 
  [!code-cpp[FxCop.Maintainability.AvoidExcessiveComplexity#3](../snippets/cpp/VS_Snippets_CodeAnalysis/FxCop.Maintainability.AvoidExcessiveComplexity/cpp/FxCop.Maintainability.AvoidExcessiveComplexity.cpp#3)]
  [!code-csharp[FxCop.Maintainability.AvoidExcessiveComplexity#3](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Maintainability.AvoidExcessiveComplexity/cs/FxCop.Maintainability.AvoidExcessiveComplexity.cs#3)]
  [!code-vb[FxCop.Maintainability.AvoidExcessiveComplexity#3](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Maintainability.AvoidExcessiveComplexity/vb/FxCop.Maintainability.AvoidExcessiveComplexity.vb#3)]
 
 ## <a name="example"></a>範例
- **8 個循環複雜度**
+ **量的圈複雜度為8**
 
  [!code-cpp[FxCop.Maintainability.AvoidExcessiveComplexity#4](../snippets/cpp/VS_Snippets_CodeAnalysis/FxCop.Maintainability.AvoidExcessiveComplexity/cpp/FxCop.Maintainability.AvoidExcessiveComplexity.cpp#4)]
  [!code-csharp[FxCop.Maintainability.AvoidExcessiveComplexity#4](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Maintainability.AvoidExcessiveComplexity/cs/FxCop.Maintainability.AvoidExcessiveComplexity.cs#4)]
  [!code-vb[FxCop.Maintainability.AvoidExcessiveComplexity#4](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Maintainability.AvoidExcessiveComplexity/vb/FxCop.Maintainability.AvoidExcessiveComplexity.vb#4)]
 
-## <a name="related-rules"></a>相關的規則
- [CA1501:避免過度繼承](../code-quality/ca1501-avoid-excessive-inheritance.md)
+## <a name="related-rules"></a>相關規則
+ [CA1501：避免在物件間過度繼承](../code-quality/ca1501-avoid-excessive-inheritance.md)
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
  [測量 Managed 程式碼的複雜度和維護性](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)

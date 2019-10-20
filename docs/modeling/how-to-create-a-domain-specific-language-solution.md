@@ -1,5 +1,5 @@
 ---
-title: HOW TO：建立特定領域語言方案
+title: 如何：建立網域指定的語言方案
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -8,37 +8,37 @@ helpviewer_keywords:
 - Domain-Specific Language Tools, walkthroughs
 - walkthroughs [Domain-Specific Language Tools], creating domain-specific language
 - Domain-Specific Language Tools, creating solutions
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ac8a47aeca8875dabe3fdf388e9a73d68ec514e
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 93e51a1daee6e9635305f4d8a5d275106af7947e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445214"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72609387"
 ---
-# <a name="how-to-create-a-domain-specific-language-solution"></a>HOW TO：建立特定領域語言方案
-特定領域語言 (DSL) 會建立使用特製化的 Visual Studio 方案。
+# <a name="how-to-create-a-domain-specific-language-solution"></a>如何：建立網域指定的語言方案
+特定領域語言（DSL）是使用特製化的 Visual Studio 解決方案所建立。
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>Prerequisites
 
-您可以啟動此程序之前，安裝這些元件：
+在您可以開始此程式之前，請先安裝下列元件：
 
 - Visual Studio
-- Visual Studio SDK (隨**Visual Studio 延伸模組開發**工作負載)
-- Modeling SDK （做為 Visual Studio 元件安裝）
+- Visual Studio SDK （安裝為**Visual Studio 延伸模組開發**工作負載的一部分）
+- 模型 SDK （安裝為 Visual Studio 元件）
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
 ## <a name="creating-a-domain-specific-language-solution"></a>建立特定領域語言方案
 
-1. 啟動建立新的 DSL 精靈**定義域專屬語言設計工具**專案。
+1. 藉由建立新的**特定領域語言設計**工具專案來啟動 DSL Wizard。
 
    > [!NOTE]
-   > 最好是您選擇專案的名稱應該是有效的視覺效果C#識別項因為它可能會用來產生程式碼。
+   > 您為專案選擇的名稱最好是有效的視覺C#識別碼，因為它可能會用來產生程式碼。
 
    ::: moniker range="vs-2017"
 
@@ -46,77 +46,77 @@ ms.locfileid: "63445214"
 
    ::: moniker-end
 
-2. 選擇 DSL 」 範本。
+2. 選擇 DSL 範本。
 
-    在 **選取特定領域語言選項**頁面上，選取其中一個解決方案範本類似**最小語言**。 選擇的範本，類似於您想要建立 DSL。
+    在 [**選取網域特定語言選項**] 頁面上，選取其中一個方案範本，例如 [**最小語言**]。 選擇類似您想要建立之 DSL 的範本。
 
     如需解決方案範本的詳細資訊，請參閱[選擇特定領域語言方案範本](../modeling/choosing-a-domain-specific-language-solution-template.md)。
 
-3. 輸入檔案的副檔名**副檔名**頁面。 它應該是唯一的電腦，並在其上的任何電腦在您想要安裝 DSL。 您應該會看到訊息**沒有應用程式或 Visual Studio 編輯器會使用此延伸模組**。
+3. 在 [**副檔名**] 頁面上輸入檔案名副檔名。 在您的電腦上，以及您要安裝 DSL 的任何電腦上，它應該是唯一的。 您應該會看到 [**沒有任何應用程式或 Visual Studio 編輯器使用此延伸**模組] 訊息。
 
-   - 如果您已使用的副檔名，未完整安裝的上一個實驗 Dsl 中，您可以清除它們出利用**重設實驗執行個體**工具，可以在 Visual Studio SDK 功能表中找到。
+   - 如果您已在先前的實驗性 Dsl 中使用尚未完整安裝的副檔名，您可以使用 [**重設實驗實例**] 工具將其清除，這可在 [Visual Studio SDK] 功能表中找到。
 
-   - 如果另一個 Visual Studio 延伸模組，會使用此副檔名已完全安裝在電腦上，請考慮將它解除安裝。 在 **工具**功能表上，按一下**延伸模組管理員**。
+   - 如果您的電腦已完整安裝使用此副檔名的另一個 Visual Studio 延伸模組，請考慮將它卸載。 在 [**工具**] 功能表上，按一下 [**擴充管理員**]。
 
-4. 檢查，以及必要時調整，請在精靈的其餘頁面中的欄位。 當您滿意設定時，請按一下**完成**。 如需有關設定的詳細資訊，請參閱[DSL 設計工具的精靈頁面](#settings)。
+4. 檢查並視需要調整 wizard 其餘頁面中的欄位。 當您對設定感到滿意時，請按一下 **[完成]** 。 如需設定的詳細資訊，請參閱[DSL 設計工具 Wizard 頁面](#settings)。
 
-    精靈會建立具有兩個專案，名為的解決方案**Dsl**並**DslPackage**。
+    此 wizard 會建立一個方案，其中包含兩個名為**Dsl**和**DslPackage**的專案。
 
    > [!NOTE]
-   > 如果您看到訊息，向您發出警示不執行文字範本來自不受信任的來源，請按一下**確定**。 您可以設定此訊息不會再出現。
+   > 如果您看到一則訊息，提醒您不要從不受信任的來源執行文字模板，請按一下 **[確定]** 。 您可以設定此訊息，不要再次出現。
 
-## <a name="settings"></a> DSL 設計工具的精靈頁面
- 您可以保留預設值未變更的欄位數。 不過，請確定您設定副檔名欄位。
+## <a name="settings"></a>DSL 設計工具 Wizard 頁面
+ 您可以讓數個欄位的預設值保持不變。 不過，請確定您已設定 [副檔名] 欄位。
 
 ### <a name="solution-settings-page"></a>解決方案設定頁面
- **您要根據您的網域特定語言的範本？**
-選擇的範本，類似於您想要建立 DSL。 不同的範本會提供便利的起點。 當您選取的解決方案範本時，精靈就會顯示描述。 如需解決方案範本的詳細資訊，請參閱[選擇特定領域語言方案範本](../modeling/choosing-a-domain-specific-language-solution-template.md)。
+ **您想要以何種範本作為特定領域語言的基礎？**
+選擇類似您想要建立之 DSL 的範本。 不同的範本提供了方便的起點。 當您選取解決方案範本時，嚮導會顯示描述。 如需解決方案範本的詳細資訊，請參閱[選擇特定領域語言方案範本](../modeling/choosing-a-domain-specific-language-solution-template.md)。
 
- **要命名您的網域特定語言？**
-預設為方案名稱。 與這個值會產生程式碼。 它必須是有效的 C# 類別名稱。
+ **您要將特定領域語言命名為什麼？**
+預設為解決方案名稱。 此值會產生程式碼。 它必須是有效的C#類別名稱。
 
-### <a name="file-extension-page"></a>檔案延伸模組頁面
- **哪些項擴充功能模型檔案應該使用？**
+### <a name="file-extension-page"></a>[副檔名] 頁面
+ **模型檔案使用哪個延伸模組？**
 輸入新的副檔名。
 
- 確認，這個副檔名已經尚未註冊用於此電腦，如下所示：
+ 確認此副檔名尚未在此電腦上註冊以供使用，如下所示：
 
- 查看底下**其他工具和應用程式註冊處理這個副檔名**。 如果您看到訊息**沒有應用程式或 Visual Studio 編輯器會使用此延伸模組**，則您可以使用此副檔名。
+ 查看 [**其他已註冊的工具和應用程式]，以處理此延伸**模組。 如果您看到 [**沒有任何應用程式或 Visual Studio 編輯器使用此延伸**模組] 訊息，則可以使用此副檔名。
 
- 如果您看到一份工具或封裝，您應該執行下列其中一項：
+ 如果您看到工具或套件的清單，您應該執行下列其中一項動作：
 
-- 輸入不同的檔案副檔名。
-
-     \-或-
-
-- 重設 Visual Studio 的實驗執行個體。 這將會取消註冊所有您先前建立的 Dsl。 在上**開始**功能表上，按一下**所有程式**， **Microsoft Visual Studio 2010 SDK**，**工具**，然後**重設Microsoft Visual Studio 2010 Experimental 執行個體**。 您可以重建任何其他您想要再次使用的 Dsl。
+- 輸入不同的副檔名。
 
      \-或-
 
-- 如果使用此副檔名的 Visual Studio 延伸模組已完全安裝在電腦上，請將它解除安裝。 在 **工具**功能表上，按一下**延伸模組管理員**。
+- 重設 Visual Studio 實驗實例。 這會取消註冊您先前建立的所有 Dsl。 在 [**開始**] 功能表上，依序按一下 [**所有程式**]、[ **Microsoft Visual Studio 2010 SDK**] 和 [**工具**]，然後**重設 Microsoft Visual Studio 2010 實驗實例**。 您可以重建任何其他您想要再次使用的 Dsl。
 
-### <a name="product-settings-page"></a>產品 [設定] 頁面
- **新特定領域語言所屬產品的名稱為何？**
-預設為 DSL 的名稱。
+     \-或-
 
- 此值可在 Windows 檔案總管 （或檔案總管） 來描述此副檔名的檔案。
+- 如果您的電腦已完整安裝使用此副檔名的 Visual Studio 延伸模組，請將它卸載。 在 [**工具**] 功能表上，按一下 [**擴充管理員**]。
+
+### <a name="product-settings-page"></a>[產品設定] 頁面
+ **新的特定領域語言所屬的產品名稱是什麼？**
+預設為 DSL 名稱。
+
+ 這個值會在 Windows Explorer （或檔案瀏覽器）中用來描述具有此副檔名的檔案。
 
  **產品所屬公司的名稱為何？**
 您的公司名稱。
 
- 這個值會併入您的 DSL 封裝的 AssemblyInfo 屬性。
+ 這個值會併入 DSL 套件的 AssemblyInfo 屬性中。
 
- **什麼是這個方案中專案的根命名空間？**
-預設為組成您公司的名稱和產品名稱。
+ **此解決方案中專案的根命名空間是什麼？**
+這會預設為從您的公司和產品名稱組成的名稱。
 
-### <a name="signing-page"></a>簽署頁
- **建立強式名稱金鑰檔**預設選項是建立新的金鑰來簽署您的 DSL 組件。
+### <a name="signing-page"></a>簽署頁面
+ **建立強式名稱金鑰**檔預設選項是建立新的金鑰來簽署 DSL 元件。
 
- **使用現有的強式名稱金鑰**使用此選項，如果您想要整合您的 DSL 使用另一個組件。
+ **使用現有的強式名稱金鑰**如果您想要整合 DSL 與另一個元件，請使用此選項。
 
- 如需有關強式命名的詳細資訊，請參閱 <<c0> [ 建立和使用強式名稱組件](http://go.microsoft.com/fwlink/?LinkId=186073)。
+ 如需強式命名的詳細資訊，請參閱[建立和使用強式名稱的元件](http://go.microsoft.com/fwlink/?LinkId=186073)。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [如何定義特定領域語言](../modeling/how-to-define-a-domain-specific-language.md)
 - [Domain-Specific Language Tools Glossary](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa) (特定領域語言工具字彙表)

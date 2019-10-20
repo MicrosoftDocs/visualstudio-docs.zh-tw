@@ -1,5 +1,5 @@
 ---
-title: CA1500:變數名稱不應該與欄位名稱相符 |Microsoft Docs
+title: CA1500：變數名稱不應該與功能變數名稱相符 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,42 +12,42 @@ helpviewer_keywords:
 - CA1500
 ms.assetid: fa0e5029-79e9-4a33-8576-787ac3c26c39
 caps.latest.revision: 25
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 8dc15c95398ed45954c3830d1c558a6653a4346f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b46594a53e6562c2c6a069a9a25d58b3e32865eb
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68191496"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72607933"
 ---
-# <a name="ca1500-variable-names-should-not-match-field-names"></a>CA1500:變數名稱不應該與欄位名稱相符
+# <a name="ca1500-variable-names-should-not-match-field-names"></a>CA1500：變數名稱不應該與欄位名稱相符
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-如需 Visual Studio 的最新文件，請參閱[CA1500:變數名稱不應該與欄位名稱相符](https://docs.microsoft.com/visualstudio/code-quality/ca1500-variable-names-should-not-match-field-names)。  
-  
-|||  
-|-|-|  
-|TypeName|VariableNamesShouldNotMatchFieldNames|  
-|CheckId|CA1500|  
-|分類|Microsoft.Maintainability|  
-|中斷變更|當引發與欄位具有相同名稱的參數：<br /><br /> -不間斷-如果外部組件，不論您所做的變更，則無法看到的欄位 」 和 「 將參數宣告的方法。<br />-中斷-如果您變更欄位的名稱，而且可以看到外部組件。<br />-中斷-如果您變更參數的名稱，並將其宣告的方法可以看到外部組件。<br /><br /> 當引發對做為欄位具有相同名稱的區域變數：<br /><br /> -不間斷-組件，不論您所做的變更之外無法看到的欄位。<br />-不間斷-如果您變更本機變數的名稱，並不會變更欄位的名稱。<br />-中斷-如果您變更欄位的名稱，而且它可被視為外部組件。|  
-  
-## <a name="cause"></a>原因  
- 執行個體方法宣告參數或區域變數名稱符合宣告型別的執行個體欄位。 若要攔截違反規則的本機變數，必須建置測試的組件使用偵錯資訊和相關聯的程式資料庫 (.pdb) 檔案必須能夠使用。  
-  
-## <a name="rule-description"></a>規則描述  
- 當執行個體欄位的名稱符合參數或區域變數名稱時，會使用來存取執行個體欄位`this`(`Me`在[!INCLUDE[vbprvb](../includes/vbprvb-md.md)]) 之方法主體內的關鍵字。 當維護程式碼，很容易忘了這項差異，並假設參數/本機變數是指執行個體欄位中，會導致發生錯誤。 這是特別是針對冗長的方法主體，則為 true。  
-  
-## <a name="how-to-fix-violations"></a>如何修正違規  
- 若要修正此規則的違規情形，重新命名的參數/變數或欄位。  
-  
-## <a name="when-to-suppress-warnings"></a>隱藏警告的時機  
- 請勿隱藏此規則的警告。  
-  
-## <a name="example"></a>範例  
- 下列範例顯示兩個違反規則。  
-  
+如需 Visual Studio 的最新檔，請參閱[CA1500：變數名稱不應該與功能變數名稱相符](https://docs.microsoft.com/visualstudio/code-quality/ca1500-variable-names-should-not-match-field-names)。
+
+|||
+|-|-|
+|TypeName|VariableNamesShouldNotMatchFieldNames|
+|CheckId|CA1500|
+|Category|Microsoft。可維護性|
+|中斷變更|在與欄位同名的參數上引發時：<br /><br /> -非中斷-如果宣告參數的欄位和方法無法在元件外部看到，不論您所做的變更為何。<br />-中斷-如果您變更欄位的名稱，而且可以在元件外部看到。<br />-中斷-如果您變更參數的名稱，以及可在元件外部看到其宣告的方法。<br /><br /> 在與欄位同名的本機變數上引發時：<br /><br /> -非中斷-如果在元件外部看不到欄位，不論您所做的變更為何。<br />-非中斷-如果您變更本機變數的名稱，而不變更欄位的名稱。<br />-中斷-如果您變更欄位的名稱，它可以在元件外部看到。|
+
+## <a name="cause"></a>原因
+ 實例方法會宣告參數或區域變數，其名稱符合宣告類型的實例欄位。 若要攔截違反規則的區域變數，必須使用偵錯工具建立已測試的元件，而且必須要有相關聯的程式資料庫（.pdb）檔案。
+
+## <a name="rule-description"></a>規則描述
+ 當實例欄位的名稱符合參數或區域變數名稱時，會在方法主體內使用 `this` （在 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 中 `Me`）關鍵字來存取實例欄位。 維護程式碼時，很容易忘記這種差異，並假設參數/區域變數參考實例欄位，這會導致錯誤。 這種情況特別適用于冗長的方法主體。
+
+## <a name="how-to-fix-violations"></a>如何修正違規
+ 若要修正此規則的違規情形，請重新具名引數/變數或欄位。
+
+## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
+ 請勿隱藏此規則的警告。
+
+## <a name="example"></a>範例
+ 下列範例顯示兩個規則違規。
+
  [!code-csharp[FxCop.Maintainability.VarMatchesField#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Maintainability.VarMatchesField/cs/FxCop.Maintainability.VarMatchesField.cs#1)]
  [!code-vb[FxCop.Maintainability.VarMatchesField#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Maintainability.VarMatchesField/vb/FxCop.Maintainability.VarMatchesField.vb#1)]

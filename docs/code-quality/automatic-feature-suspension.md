@@ -7,17 +7,17 @@ helpviewer_keywords:
 - performance
 - low-memory
 ms.assetid: 572c15aa-1fd0-468c-b6be-9fa50e170914
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b79588ea3ad67d717066535392b6789e2c0d1ae
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: dd399d78ac43085d89958ba358954f9e6cefe521
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72448660"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72606530"
 ---
 # <a name="automatic-feature-suspension"></a>自動功能暫停
 

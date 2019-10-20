@@ -1,5 +1,5 @@
 ---
-title: CA1409:Com 可見類型應該是可建立 |Microsoft Docs
+title: CA1409： Com 可見類型應該是可自行執行 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,44 +12,44 @@ helpviewer_keywords:
 - CA1409
 ms.assetid: 9f59569b-de15-4a38-b7cb-cff152972243
 caps.latest.revision: 20
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 7bd52ad75c67f9c8faa80e84eb5ae09c22c25280
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: feb50f576fbff656acaa10b70bb4d8adbca1d6c3
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65678882"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72602384"
 ---
-# <a name="ca1409-com-visible-types-should-be-creatable"></a>CA1409:Com 可見類型應該是可建立的
+# <a name="ca1409-com-visible-types-should-be-creatable"></a>CA1409：COM 可見類型應該是可建立的
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |TypeName|ComVisibleTypesShouldBeCreatable|
 |CheckId|CA1409|
-|分類|Microsoft.Interoperability|
-|中斷變更|非重大|
+|Category|Microsoft. 互通性|
+|中斷變更|不中斷|
 
 ## <a name="cause"></a>原因
- 特別標示為可見的元件物件模型 (COM) 參考型別包含公用參數化建構函式，但不包含公用預設 （無參數） 建構函式。
+ 特別標示為「元件物件模型（COM）可見」的參考型別包含公用參數化的函式，但不包含公用預設（無參數）的函式。
 
 ## <a name="rule-description"></a>規則描述
- COM 用戶端無法建立沒有公用預設建構函式的類型。 不過，類型可以仍可存取由 COM 用戶端如果另一個方法可建立類型，並將它傳遞給用戶端 （例如，透過方法呼叫的傳回值）。
+ COM 用戶端無法建立沒有公用預設函式的類型。 不過，如果有另一種方法可用來建立型別，並將它傳遞給用戶端（例如，透過方法呼叫的傳回值），則 COM 用戶端仍然可以存取型別。
 
- 此規則會忽略型別衍生自<xref:System.Delegate?displayProperty=fullName>。
+ 此規則會忽略衍生自 <xref:System.Delegate?displayProperty=fullName> 的類型。
 
- 根據預設，以下是為 COM 所見： 組件、 公用型別、 公用的型別中的公用執行個體成員和公用實值型別的所有成員。
+ 根據預設，COM 會看到下列內容：元件、公用類型、公用類型中的公用實例成員，以及公用實數值型別的所有成員。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
- 若要修正此規則的違規情形，加入公用預設建構函式，或移除<xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName>從型別。
+ 若要修正此規則的違規，請新增公用預設的函式，或從類型移除 <xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName>。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
- 它是安全地隱藏此規則的警告，如果提供的其他方式建立，並將物件傳遞給 COM 用戶端。
+ 如果提供其他方式來建立物件並將其傳遞給 COM 用戶端，則可以安全地隱藏此規則的警告。
 
-## <a name="related-rules"></a>相關的規則
- [CA1017:組件必須標記 comvisibleattribute](../code-quality/ca1017-mark-assemblies-with-comvisibleattribute.md)
+## <a name="related-rules"></a>相關規則
+ [CA1017：組件必須標記 ComVisibleAttribute](../code-quality/ca1017-mark-assemblies-with-comvisibleattribute.md)
 
-## <a name="see-also"></a>另請參閱
- [限定互通的.NET 類型](https://msdn.microsoft.com/library/4b8afb52-fb8d-4e65-b47c-fd82956a3cdd)[與相互操作 Unmanaged 程式碼](https://msdn.microsoft.com/library/ccb68ce7-b0e9-4ffb-839d-03b1cd2c1258)
+## <a name="see-also"></a>請參閱
+ [限定用於互通的 .Net 類型](https://msdn.microsoft.com/library/4b8afb52-fb8d-4e65-b47c-fd82956a3cdd)可[與非受控程式碼](https://msdn.microsoft.com/library/ccb68ce7-b0e9-4ffb-839d-03b1cd2c1258)交互操作

@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - Class Designer [Visual Studio], enumerations
 ms.assetid: 11e90ba1-18cd-44f8-9e26-e3746a7a19d1
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f31f153183d0cdd809bd9dde9187ade32b20ddd2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: b5df17176839dccf0fbe0c42f164bde6b3e39f56
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62975017"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72631127"
 ---
 # <a name="visual-c-enumerations-in-class-designer"></a>類別設計工具中的 Visual C++ 列舉
 
@@ -42,7 +42,7 @@ enum class CardSuit {
 
 如需使用 `enum` 類型的詳細資訊，請參閱[列舉](/cpp/cpp/enumerations-cpp)。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [使用 Visual C++ 程式碼](working-with-visual-cpp-code.md)
 - [列舉](/cpp/cpp/enumerations-cpp)

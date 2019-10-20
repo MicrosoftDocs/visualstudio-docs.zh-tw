@@ -5,20 +5,20 @@ ms.topic: conceptual
 helpviewer_keywords:
 - text templates, build tasks
 - text templates, transforming by using msbuild
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d26c0b464341bee7bce0b46bfdbcc89e0248a81
-ms.sourcegitcommit: e95dd8cedcd180e0bce6a75c86cf861757918290
+ms.openlocfilehash: 9c9cc0d8a40970e2ec36030ab3121d6fc02748e2
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "72163125"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72654204"
 ---
 # <a name="invoke-text-transformation-in-the-build-process"></a>在組建進程中叫用文字轉換
 
@@ -49,9 +49,9 @@ ms.locfileid: "72163125"
 - % ProgramFiles （x86）% \ Microsoft Visual Studio\2019\Community\Common7\IDE\PublicAssemblies
 
   - VisualStudio. TextTemplating. 15.0 .dll
-  
+
 > [!TIP]
-> 如果您在組建伺服器上執行 TextTemplating 組建目標時，CodeAnalysis 方法的 `MissingMethodException`，請確定 Roslyn 元件位於與組建可執行檔相同的目錄中名為*Roslyn*的目錄中（例如， *msbuild.exe*）。
+> 如果您在組建伺服器上執行 TextTemplating 組建目標時，取得 CodeAnalysis 方法的 `MissingMethodException`，請確定 Roslyn 元件位於名為*Roslyn*的目錄中，其位於與組建可執行檔相同的目錄中（例如， *msbuild.exe*）。
 
 ## <a name="edit-the-project-file"></a>編輯專案檔
 
@@ -116,11 +116,11 @@ ms.locfileid: "72163125"
     ```
 
      根據預設，T4 MSBuild 工作會重新產生超過下列時間的輸出檔案：
-     
+
      - 其範本檔案
      - 包含的任何檔案
      - 範本先前已讀取的任何檔案，或其使用的指示詞處理器
-     
+
      這是比 Visual Studio 中的 [**轉換所有範本**] 命令所使用的更強大的相依性測試，其只會比較範本和輸出檔案的日期。
 
 若在專案中僅執行文字轉換，請叫用 TransformAll 工作：
@@ -285,7 +285,7 @@ Visual Studio 宏（例如 **$ （SolutionDir））** 在 MSBuild 中無法使�
 
 ## <a name="q--a"></a>問與答
 
-@no__t 0Why 是否要轉換組建伺服器中的範本？我在簽入我的程式碼之前，已轉換 Visual Studio 中的範本。 **
+**為什麼要轉換組建伺服器中的範本？我在簽入我的程式碼之前，已轉換 Visual Studio 中的範本。**
 
 如果您更新包含的檔案或範本所讀取的其他檔案，Visual Studio 不會自動轉換檔案。 將範本轉換為組建的一部分，可確保所有專案都是最新的。
 
@@ -299,17 +299,17 @@ Visual Studio 宏（例如 **$ （SolutionDir））** 在 MSBuild 中無法使�
 
 - [執行時間文字模板](../modeling/run-time-text-generation-with-t4-text-templates.md)會在應用程式的執行時間進行轉換。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 ::: moniker range="vs-2017"
 
-- @No__t-0 的 T4 MSbuild 範本中有絕佳的指引
+- T4 MSbuild 範本中有個很好的指引，位於 `%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\msbuild\Microsoft\VisualStudio\v15.0\TextTemplating\Microsoft.TextTemplating.targets`
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-- @No__t-0 的 T4 MSbuild 範本中有絕佳的指引
+- T4 MSbuild 範本中有個很好的指引，位於 `%ProgramFiles(x86)%\Microsoft Visual Studio\2019\Enterprise\msbuild\Microsoft\VisualStudio\v16.0\TextTemplating\Microsoft.TextTemplating.targets`
 
 ::: moniker-end
 

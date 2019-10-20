@@ -4,17 +4,17 @@ ms.date: 03/11/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - analyzers, faq
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 12e6681490c6c933369d3fef064ec88f240e3a99
-ms.sourcegitcommit: b23d73c86ec7720c4cd9a58050860bc559623a3d
+ms.openlocfilehash: fdc30d0299e83423474c673b9d32e019885c2d52
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "72172765"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72603884"
 ---
 # <a name="code-analysis-faq"></a>程式碼分析常見問題
 
@@ -45,21 +45,21 @@ ms.locfileid: "72172765"
 
 ## <a name="code-analysis-in-ci-builds"></a>CI 組建中的程式碼分析
 
-**問**：以 .NET Compiler Platform 為基礎的程式碼分析在持續整合（CI）組建中運作嗎？
+**問**：以 .NET Compiler Platform 為基礎的程式碼分析是否可在持續整合（CI）組建中運作？
 
-**答**：是的。 針對從 NuGet 封裝安裝的分析器，這些規則會[在組建階段強制執行](roslyn-analyzers-overview.md#build-errors)，包括在 CI 組建期間。 CI 組建中使用的分析器會遵循規則集和 EditorConfig 檔中的規則設定。 目前內建在 Visual Studio 中的程式碼分析器無法做為 NuGet 套件使用，因此這些規則無法在 CI 組建中強制執行。
+**答**：是。 針對從 NuGet 封裝安裝的分析器，這些規則會[在組建階段強制執行](roslyn-analyzers-overview.md#build-errors)，包括在 CI 組建期間。 CI 組建中使用的分析器會遵循規則集和 EditorConfig 檔中的規則設定。 目前內建在 Visual Studio 中的程式碼分析器無法做為 NuGet 套件使用，因此這些規則無法在 CI 組建中強制執行。
 
 ## <a name="ide-analyzers-versus-stylecop"></a>IDE 分析器與 Stylecop 能夠的比較
 
-**問**：Visual Studio IDE 程式碼分析器與 Stylecop 能夠分析器有何不同？
+**問**： Visual Studio IDE 程式碼分析器與 stylecop 能夠分析器有何不同？
 
-**答**：Visual Studio IDE 包含內建分析器，可同時尋找程式碼樣式和品質問題。 這些規則可協助您在引進新的語言功能時，使用它們，並改善程式碼的可維護性。 IDE 分析器會隨著每個 Visual Studio 版本持續更新。
+**答**： Visual Studio IDE 包含內建分析器，可同時尋找程式碼樣式和品質問題。 這些規則可協助您在引進新的語言功能時，使用它們，並改善程式碼的可維護性。 IDE 分析器會隨著每個 Visual Studio 版本持續更新。
 
 [Stylecop 能夠分析器](https://github.com/DotNetAnalyzers/StyleCopAnalyzers)是以 NuGet 套件形式安裝的協力廠商分析器，可檢查程式碼中的樣式一致性。 一般來說，Stylecop 能夠規則可讓您設定程式碼基底的個人喜好設定，而不需要在另一個樣式上建議。
 
 ## <a name="code-analyzers-versus-legacy-analysis"></a>程式碼分析器與舊版分析
 
-**問**：舊版分析和以 .NET Compiler Platform 為基礎的程式碼分析有何不同？
+**問**：舊版分析和以 .NET Compiler Platform 為基礎的程式碼分析有何差異？
 
 **答**：以 .NET Compiler Platform 為基礎的程式碼分析會即時分析原始程式碼和編譯期間，而舊版分析會在完成組建之後分析二進位檔案。 如需詳細資訊，請參閱以[.NET Compiler Platform 為基礎的分析與舊版分析](roslyn-analyzers-overview.md#source-code-analysis-versus-legacy-analysis)和[FxCop 分析器常見問題](fxcop-analyzers-faq.md)。
 
@@ -88,7 +88,7 @@ ms.locfileid: "72172765"
      ...
      ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [分析器總覽](roslyn-analyzers-overview.md)
 - [EditorConfig 的 .NET 編碼慣例設定](../ide/editorconfig-code-style-settings-reference.md)

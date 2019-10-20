@@ -1,5 +1,5 @@
 ---
-title: 不支援偵錯工作流程設計工具中的案例 |Microsoft Docs
+title: 工作流程設計工具中不支援的調試情況 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-workflow-designer
@@ -7,50 +7,50 @@ ms.topic: reference
 ms.assetid: 6adbe379-41d0-4681-9cd0-b91f187c3c2c
 caps.latest.revision: 4
 author: steved0x
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: d931325bd9e323fdf8fa31848a5c2671b5382543
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: fdbe68b416560b85580e3dd30e5f8138b7cd08fe
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67825226"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72606942"
 ---
 # <a name="unsupported-debugging-scenarios-in-the-workflow-designer"></a>工作流程設計工具中不支援的偵錯情況
-[!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)] 中的工作流程設計工具已新增許多功能，但是依然有一些偵錯情況不受支援。 本文件詳述不支援的工作流程設計工具偵錯情況。  
-  
-- 在編輯程式碼之後，就無法繼續執行。  
-  
-- 無法從工作流程的任何一點繼續執行 (設定下一個)。  
-  
-- 要等到抵達游標處之後才能繼續執行 (執行至游標處)。  
-  
-- 工作流程設計工具無法用來偵錯以程式碼 (而不使用設計工具) 所建立的工作流程。  
-  
-- 以舊版 [!INCLUDE[wf](../includes/wf-md.md)] 建立的工作流程無法在 [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)] 設計工具中偵錯。  
-  
-- 活動或 <xref:System.Activities.Statements.Flowchart> 節點之間的連結上無法定義中斷點。  
-  
-- 偵錯期間不可使用剪貼簿。  
-  
-- 在複製或貼上活動時，不會保留中斷點。  
-  
-- 呼叫堆疊視窗中無法設定工作流程中斷點。  
-  
-- 在設計師中，建立中斷點時**線條**並**字元**中的設定**新中斷點**對話方塊不會使用。  
-  
-- 中斷點視窗或捷徑功能表不支援以下資料行或工作流程偵錯的選項：  
-  
-  - 條件  
+[!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)] 中的工作流程設計工具已新增許多功能，但是依然有一些偵錯情況不受支援。 本文件詳述不支援的工作流程設計工具偵錯情況。
 
-  - 叫用次數  
+- 在編輯程式碼之後，就無法繼續執行。
 
-  - 叫用時  
+- 無法從工作流程的任何一點繼續執行 (設定下一個)。
 
-  - 功能  
+- 要等到抵達游標處之後才能繼續執行 (執行至游標處)。
 
-  - 資料  
+- 工作流程設計工具無法用來偵錯以程式碼 (而不使用設計工具) 所建立的工作流程。
 
-  - 處理序  
+- 以舊版 [!INCLUDE[wf](../includes/wf-md.md)] 建立的工作流程無法在 [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)] 設計工具中偵錯。
+
+- 活動或 <xref:System.Activities.Statements.Flowchart> 節點之間的連結上無法定義中斷點。
+
+- 偵錯期間不可使用剪貼簿。
+
+- 在複製或貼上活動時，不會保留中斷點。
+
+- 呼叫堆疊視窗中無法設定工作流程中斷點。
+
+- 在設計工具中建立中斷點時，不會使用 [**新增中斷點**] 對話方塊中的**行**和**字元**設定。
+
+- 中斷點視窗或捷徑功能表不支援以下資料行或工作流程偵錯的選項：
+
+  - 條件
+
+  - 叫用次數
+
+  - 叫用時
+
+  - 功能
+
+  - 資料
+
+  - 處理序
 
   - 移至反組譯碼

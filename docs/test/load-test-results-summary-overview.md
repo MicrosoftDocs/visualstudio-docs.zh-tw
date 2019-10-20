@@ -11,15 +11,15 @@ helpviewer_keywords:
 - Load Test Viewer, summary
 - load tests, summary in Load Test Viewer
 ms.assetid: 326b6c3c-5378-452b-8ca3-ba5a06ab3d41
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 66789cdf50c06648b2d973d9c62a14c113aeaa0e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: ba72bc9d4e63e1ccb1e6d8c05d20332880e19ea9
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62785919"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72652985"
 ---
 # <a name="load-test-results-summary-overview"></a>負載測試結果摘要概觀
 
@@ -37,11 +37,11 @@ ms.locfileid: "62785919"
 
 - 整體結果
 
-- 基本統計資料：前 5 名最慢的頁面
+- 基本統計資料: 前 5 名最慢的頁面
 
-- 基本統計資料：前 5 名最慢的測試
+- 基本統計資料: 前 5 名最慢的測試
 
-- 基本統計資料：前 5 名最慢的 SQL 作業
+- 基本統計資料: 前 5 名最慢的 SQL 作業
 
     > [!NOTE]
     > 只有當負載測試啟用了 SQL 追蹤功能時，才會顯示 SQL 作業區段。
@@ -136,7 +136,7 @@ ms.locfileid: "62785919"
 
 在負載測試摘要的捷徑功能表中選擇 [列印]，就可以列印摘要。 如果想先預覽列印，請在摘要的捷徑功能表上選擇 [預覽列印]。 您也可以直接從預覽畫面列印摘要。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [分析臨界值規則違規](../test/analyze-threshold-rule-violations-in-load-tests.md)
 - [分析負載測試結果](../test/analyze-load-test-results-using-the-load-test-analyzer.md)

@@ -23,17 +23,17 @@ helpviewer_keywords:
 - Class Designer [Visual Studio], errors
 - class diagrams, errors
 ms.assetid: 79d70e70-704c-4255-ab68-c10d6949470e
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aadc0cfb66226f463ff8a2049d4dbf81e7bcf62b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: d2fe684f4b10e3570e96a88c34d1e1c08c7388da
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62975550"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72631904"
 ---
 # <a name="class-designer-errors"></a>類別設計工具錯誤
 
@@ -46,6 +46,6 @@ ms.locfileid: "62975550"
 - [使用 Visual C++ 程式碼](working-with-visual-cpp-code.md)包括有關在類別圖表中顯示 C++ 的疑難排解資訊。
 - [Visual Studio 類別設計工具論壇](http://go.microsoft.com/fwlink/?LinkId=160754)提供**類別設計工具**相關問題的論壇。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [設計和檢視類別及類型](designing-and-viewing-classes-and-types.md)

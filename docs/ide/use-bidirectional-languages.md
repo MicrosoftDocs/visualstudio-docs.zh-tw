@@ -7,17 +7,17 @@ helpviewer_keywords:
 - bidirectional language support
 - Arabic, creating applications
 ms.assetid: b56f9795-ed8d-4452-9d49-8ca0b0145d86
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1271e5160920dc79decc9acc98aa1e5e3d936ca5
-ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
-ms.translationtype: HT
+ms.openlocfilehash: 4fa91a1f3342039821dc1e0a2ea89c8b0e25f224
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66824153"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72647375"
 ---
 # <a name="support-for-bidirectional-languages-in-visual-studio"></a>Visual Studio 中的雙向語言支援
 
@@ -42,7 +42,7 @@ Visual Studio 支援 Unicode，因此如果您的系統已設好適當的地區�
 
 - 方案、專案和檔案名稱，包括您在專案路徑中包含的任何資料夾。
 
-   [方案總管]  會正確顯示解決方案和元素名稱。
+   [方案總管] 會正確顯示解決方案和元素名稱。
 
 - 檔案內容。
 
@@ -50,7 +50,7 @@ Visual Studio 支援 Unicode，因此如果您的系統已設好適當的地區�
 
 - 資料項目。
 
-   [伺服器總管]  會正確顯示這些元素，並可讓您編輯它們。
+   [伺服器總管] 會正確顯示這些元素，並可讓您編輯它們。
 
 - 複製到 Windows 剪貼簿的項目。
 
@@ -58,7 +58,7 @@ Visual Studio 支援 Unicode，因此如果您的系統已設好適當的地區�
 
 - 屬性值。
 
-   您可以在 [屬性]  視窗中，使用阿拉伯文或希伯來文文字。 此視窗可讓您使用標準 Windows 按鍵輸入 (**Ctrl**+**RightShift** 為由右至左；**Ctrl**+**LeftShift** 為由左至右)，在由右至左和由左至右的讀取順序之間切換。
+   您可以在 [屬性] 視窗中，使用阿拉伯文或希伯來文文字。 此視窗可讓您使用標準 Windows 按鍵輸入 (**Ctrl**+**RightShift** 為由右至左；**Ctrl**+**LeftShift** 為由左至右)，在由右至左和由左至右的讀取順序之間切換。
 
 - 程式碼和常值文字。
 
@@ -74,11 +74,11 @@ Visual Studio 支援 Unicode，因此如果您的系統已設好適當的地區�
 
 ### <a name="file-encoding"></a>檔案編碼
 
-您可以使用特定語言或 Unicode 編碼儲存及開啟檔案。 如需詳細資訊，請參閱[如何：以編碼來儲存及開啟檔案](../ide/how-to-save-and-open-files-with-encoding.md)。
+您可以使用特定語言或 Unicode 編碼儲存及開啟檔案。 如需詳細資訊，請參閱[如何：使用編碼來儲存及開啟檔案](../ide/how-to-save-and-open-files-with-encoding.md)。
 
 ## <a name="right-to-left-reading-order"></a>由右至左的讀取順序
 
-Visual Studio 只能有限地支援從右至左的讀取順序。 根據預設，Visual Studio 中的文字輸入控制項採用由左至右的讀取順序。 在大部分情況下，您可以使用標準 Windows 筆勢來切換讀取順序。 例如，您可以按 **Ctrl**+**RightShift** 切換 [屬性]  視窗，以支援由右至左讀取屬性值的順序。
+Visual Studio 只能有限地支援從右至左的讀取順序。 根據預設，Visual Studio 中的文字輸入控制項採用由左至右的讀取順序。 在大部分情況下，您可以使用標準 Windows 筆勢來切換讀取順序。 例如，您可以按 **Ctrl**+**RightShift** 切換 [屬性] 視窗，以支援由右至左讀取屬性值的順序。
 
 Visual Studio 中的下列位置並不支援從右至左的讀取順序：
 
@@ -86,6 +86,6 @@ Visual Studio 中的下列位置並不支援從右至左的讀取順序：
 
 - 程式碼編輯器 (和文字編輯器) 不支援由右至左的讀取順序。 您可以使用雙向語言來輸入文字，但讀取順序一律為由左到右。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [開發全球化和當地語系化應用程式](globalizing-and-localizing-applications.md)

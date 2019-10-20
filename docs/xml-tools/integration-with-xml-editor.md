@@ -1,36 +1,36 @@
 ---
-title: 與 XML 編輯器的 XML 結構描述設計工具整合
+title: XML 架構設計工具與 XML 編輯器的整合
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 43d7a8e6-bd94-4407-a800-15a145c74223
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b8a233c0a1bbd456e08fe5343adae8328c5cb774
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b9df2d97a6ff68299ab70545683970188eb1bfea
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63001862"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72601776"
 ---
 # <a name="integration-with-xml-editor"></a>與 XML 編輯器整合
 
-XML 結構描述設計工具與 XML 編輯器整合。 如果您修改 XML 編輯器中的 XSD 檔案，變更將會反映在[XML 結構描述總管](../xml-tools/xml-schema-explorer.md)。 如果您有[圖表檢視](../xml-tools/graph-view.md)或[內容模型檢視](../xml-tools/content-model-view.md)開啟時，變更也會反映那里。 您可以透過下列方式的 XML 結構描述設計工具和 XML 編輯器之間巡覽：
+XML 架構設計工具會與 XML 編輯器整合。 如果您在 XML 編輯器中修改 XSD 檔案，變更就會反映在[Xml 架構瀏覽器](../xml-tools/xml-schema-explorer.md)中。 如果您已開啟 [[圖形視圖]](../xml-tools/graph-view.md)或 [[內容模型] 視圖](../xml-tools/content-model-view.md)，變更也會反映在該處。 您可以透過下列方式，在 XML 架構設計工具和 XML 編輯器之間流覽：
 
-- 在 XML 編輯器中，以滑鼠右鍵按一下節點，然後選取**在 XML 結構描述總管中顯示**。
+- 在 XML 編輯器中，以滑鼠右鍵按一下節點，然後選取 [**在 Xml 架構瀏覽器中顯示**]。
 
-- 在 [圖表] 檢視中， **XML 結構描述總管**，按兩下節點，或以滑鼠右鍵按一下節點並選取**檢視程式碼**。 在內容模型檢視中，以滑鼠右鍵按一下節點，然後選取**檢視程式碼**。
+- 在圖表視圖和**XML 架構瀏覽器**中，按兩下節點，或以滑鼠右鍵按一下節點，然後選取 [ **View Code**]。 在內容模型視圖中，以滑鼠右鍵按一下節點，然後選取 [ **View Code**]。
 
-下列螢幕擷取畫面顯示在中開啟 XML 結構描述**XML 結構描述總管**。 **XML 結構描述總管**顯示在樹狀檢視中設定的結構描述。 XML 編輯器中顯示的文字檢視是目前作用中節點**XML 結構描述總管**。
+下列螢幕擷取畫面顯示在**Xml 架構瀏覽器**中開啟的 xml 架構。 **XML 架構瀏覽器**會在樹狀檢視中顯示架構集。 XML 編輯器會顯示**Xml 架構瀏覽器**中目前作用中節點的文本視圖。
 
 ![XSDDesignerWithXMLEditor](../xml-tools/media/xsddesignerwithxmleditor.gif)
 
-有時候很有幫助，以查看程式碼，在 XML 編輯器和圖形設計工具並存。 若要檢視這兩個檔案，在相同的時間，以滑鼠右鍵按一下 XML 編輯器中的任何位置，然後選取**檢視表設計工具**。 在 Visual Studio Windows 功能表中，選取**新增水平 （或垂直） 索引標籤群組**。
+有時候，在 XML 編輯器和圖形設計工具中並排查看程式碼會很有説明。 若要同時查看這兩個檔案，請以滑鼠右鍵按一下 XML 編輯器中的任何位置，然後選取 [ **View Designer**]。 在 [Visual Studio Windows] 功能表中，選取 [**新增水準（或垂直）]** 索引標籤群組。
 
 ![XSDDesignerWithXMLEditorAndCMV](../xml-tools/media/xsddesignerwithxmleditorandcmv.gif)
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [XML 結構描述總管](../xml-tools/xml-schema-explorer.md)

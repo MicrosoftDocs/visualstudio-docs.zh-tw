@@ -3,23 +3,23 @@ title: XSLT 偵錯工具視窗
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 846fdabd-e5c3-4688-9b0d-a93fbeea1b96
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b25c47e6db79fe4b860b6e7c209f0fc8403d0fcd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ae37db21072e81a5940f09f085bf261839686a69
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62838489"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72646081"
 ---
-# <a name="debugger-user-interface-xslt"></a>偵錯工具使用者介面 (XSLT)
+# <a name="debugger-user-interface-xslt"></a>偵錯工具使用者介面（XSLT）
 
-本文說明偵錯工具視窗和對話方塊。 它僅討論具有 XSLT 特定偵錯行為的使用者介面片段。
+本文說明偵錯工具視窗和對話方塊。 它只會討論具有 XSLT 特定的偵錯工具行為的使用者介面部分。
 
-如需詳細資訊，請參閱 <<c0> [ 偵錯使用者介面參考](../debugger/debugging-user-interface-reference.md)。
+如需詳細資訊，請參閱[偵錯工具使用者介面參考](../debugger/debugging-user-interface-reference.md)。
 
 ## <a name="locals-window"></a>[區域變數] 視窗
 
@@ -27,7 +27,7 @@ ms.locfileid: "62838489"
 
 **名稱**
 
-此資料行包含目前範圍中所有區域變數的名稱。 節點集具有樹狀目錄控制項，您可以向下切入以查看它的子資料夾。
+此資料行包含目前範圍中所有區域變數的名稱。 節點集具有樹狀目錄控制項，您可以向下切入以查看其子資料夾。
 
 **值**
 
@@ -35,11 +35,11 @@ ms.locfileid: "62838489"
 
 **Type**
 
-此資料行會識別每個變數中所列的資料型別**名稱**資料行。
+此資料行會識別 [**名稱**] 資料行中所列之每個變數的資料類型。
 
 [本機] 視窗還顯示追蹤 XSLT 轉換內容之預先定義的內容變數。 下表說明 XSLT 偵錯工具使用之預先定義的內容變數。
 
-|名稱|描述|
+|[屬性]|描述|
 |-|-----------------|
 |`last()`|內容大小。|
 |`position()`|內容節點的位置或索引編號 (相對於內容大小)。|
@@ -51,12 +51,12 @@ ms.locfileid: "62838489"
 
 ## <a name="task-list"></a>工作清單
 
-**工作清單**列出樣式表中的所有編譯錯誤。 按兩下錯誤，即可將游標移至發生錯誤的程式行。
+**工作清單**會列出樣式表單中的所有編譯錯誤。 按兩下錯誤，即可將游標移至發生錯誤的程式行。
 
-**工作清單**XSLT 檔案中指令碼區塊中包含所發生的任何錯誤。
+**工作清單**包含 XSLT 檔的腳本區塊中所發生的任何錯誤。
 
 > [!NOTE]
-> XSLT 偵錯工具會有任何警告，使它們永遠不會顯示在**工作清單**。
+> XSLT 偵錯工具沒有任何警告，因此它們永遠不會出現在**工作清單**中。
 
 ## <a name="breakpoints-window"></a>中斷點視窗
 
@@ -72,9 +72,9 @@ ms.locfileid: "62838489"
 
 ## <a name="call-stack-window"></a>[呼叫堆疊] 視窗
 
-**呼叫堆疊**視窗用來檢視呼叫堆疊、 參數類型和參數值的函式的名稱。 僅當進行偵錯的程式處於中斷狀態時，才會顯示呼叫堆疊資訊。
+[**呼叫堆疊**] 視窗是用來在呼叫堆疊、參數類型和參數值上查看函式的名稱。 僅當進行偵錯的程式處於中斷狀態時，才會顯示呼叫堆疊資訊。
 
-呼叫堆疊表示經歷 XSLT 執行的各種內容。 例如，如果是從範本呼叫"a"到"b"的範本、 範本"a"和範本"b"會出現在**呼叫堆疊**與目前的內容，在清單頂端的視窗。 使用者可以查看目前執行的查詢。
+呼叫堆疊表示經歷 XSLT 執行的各種內容。 例如，如果有從範本 "a" 到範本 "b" 的呼叫，則範本 "a" 和範本 "b" 會出現在 [**呼叫堆疊**] 視窗中，且目前的內容位於清單頂端。 使用者可以查看目前執行的查詢。
 
 如果範本在 XSLT 檔中沒有名稱，則會使用由 XSLT 處理器產生的名稱。
 
@@ -82,13 +82,13 @@ ms.locfileid: "62838489"
 
 ## <a name="quickwatch-dialog-box"></a>QuickWatch 對話方塊
 
-**快速監看式**對話方塊用來評估 XPath 1.0 運算式。 內容節點 ([本機] 視窗中的 `self::node()` 節點) 提供 XPath 運算式執行的內容。 執行 XPath 運算式的結果會顯示於 [監看式] 視窗中。
+[**快速**監看式] 對話方塊是用來評估 XPath 1.0 運算式。 內容節點 ([本機] 視窗中的 `self::node()` 節點) 提供 XPath 運算式執行的內容。 執行 XPath 運算式的結果會顯示於 [監看式] 視窗中。
 
-下列清單描述 XPath 運算式評估限制：
+下列清單描述 XPath 運算式評估的限制：
 
 - 只允許內建 XPath 函式。
 
-- 內建 XSLT 函式，例如`document()`和`key()`不允許。
+- 不允許 `document()` 和 `key()` 之類的內建 XSLT 函數。
 
 - 不允許使用者定義函式。
 
@@ -98,10 +98,10 @@ ms.locfileid: "62838489"
 
 [反組譯碼] 視窗會顯示由 XSLT 編譯器產生的組譯程式碼。 此視窗的使用方式可以與所有其他 Visual Studio 反組譯碼視窗相同。
 
-如需詳細資訊， [How to:使用反組譯碼視窗](../debugger/how-to-use-the-disassembly-window.md)。
+如需詳細資訊，請[注意：使用 [](../debugger/how-to-use-the-disassembly-window.md)反組解碼] 視窗。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [偵錯 XSLT](../xml-tools/debugging-xslt.md)
 - [偵錯工具簡介](../debugger/debugger-feature-tour.md)
-- [檢查 [Visual Studio 中的] [自動變數] 和 [區域變數] 視窗中的變數](../debugger/autos-and-locals-windows.md)
+- [檢查 [自動變數] 和 [區域變數] 視窗中的變數 Visual Studio](../debugger/autos-and-locals-windows.md)

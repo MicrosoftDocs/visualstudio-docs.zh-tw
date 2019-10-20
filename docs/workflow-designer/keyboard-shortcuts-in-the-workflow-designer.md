@@ -5,25 +5,25 @@ ms.topic: reference
 f1_keywords:
 - WFDKeyboardShortcuts.UI
 ms.assetid: 9be75438-a4a3-4781-94e5-45b7ec082358
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b2026c61d05425f0f0d48a9fb722c62f760fcba2
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: f36e8b6d67d2405fbc74c0b1bf854b3a3baaf4da
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67825515"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72650150"
 ---
 # <a name="keyboard-shortcuts-in-the-workflow-designer"></a>工作流程設計中的鍵盤快速鍵
 
-所有的工作流程設計工具的核心功能可以透過鍵盤存取。
+工作流程設計工具的所有核心功能都可以透過鍵盤來存取。
 
 ## <a name="navigating-the-workflow-designer-using-the-keyboard"></a>使用鍵盤巡覽工作流程設計工具
 
-在 Visual Studio 中，全域快速鍵與除錯快速鍵套用至工作流程設計工具。 此外，已建立數個工作流程設計工具特定的鍵盤快速鍵。 在 Visual Studio 中，所有的鍵盤快速鍵可以重新對應。 然而，在重新裝載的應用程式中，這些快速鍵都已硬式編碼。
+在 Visual Studio 內，全域快捷方式和調試快捷方式適用于工作流程設計工具。 此外，已建立一些工作流程設計工具特定的鍵盤快速鍵。 在 Visual Studio 中，所有鍵盤快速鍵都可以重新對應。 然而，在重新裝載的應用程式中，這些快速鍵都已硬式編碼。
 
 ### <a name="workflow-designer-keyboard-shortcuts"></a>工作流程設計工具快速鍵
 
@@ -43,17 +43,17 @@ ms.locfileid: "67825515"
 |CTRL+E、S|將含有鍵盤焦點的項目加入至目前的選取範圍。|
 |CTRL+E、V|顯示或隱藏變數設計工具。|
 |CTRL+E、X|展開工作流程中的所有活動。|
-|CTRL+ALT+F6|將鍵盤焦點從目前的 UI 區域移至順序中的下一個區域。 順序如下：<br /><br /> 1.階層連結巡覽列<br />2.設計工具介面<br />3.引數/變數/匯入設計工具 (如果已開啟)<br />4.Shell|
+|CTRL+ALT+F6|將鍵盤焦點從目前的 UI 區域移至順序中的下一個區域。 順序如下：<br /><br /> 1. 階層連結巡覽列。<br />2. 設計工具介面<br />3. 引數/變數/匯入設計工具（如果開啟）<br />4. Shell|
 
 ### <a name="flowchart"></a>流程圖
 
-下列是透過鍵盤建構流程圖所使用的手勢。 與工作流程設計工具的其餘部分，活動會新增至使用隨 Visual Studio 提供的全域工具箱快速鍵在設計工具介面。
+下列是透過鍵盤建構流程圖所使用的手勢。 如同工作流程設計工具的其餘部分，會使用 Visual Studio 提供的全域工具箱快捷方式，將活動新增至設計工具介面。
 
 - 若要移動活動，請選取該活動並使用方向鍵重新定位。
 
 - 若要調整流程圖的大小，請使用方向鍵將活動移出流程圖目前的框線外。 流程圖會自動調整大小。
 
-- 若要將活動設為 [啟動] 節點中，使用**Set as StartNode**中以滑鼠右鍵按一下功能表命令。
+- 若要將活動設定為開始節點，請使用右鍵功能表中的 [ **set As StartNode** ] 命令。
 
 - 若要連接活動：
 
@@ -71,11 +71,11 @@ ms.locfileid: "67825515"
 
 - 如果成對的活動無法連接，例如來源活動已經有傳出的連接，則選取範圍內活動之間的其他連接，只要有可能連接仍然會連接。
 
-- 當**FlowDecision**包含在選取項目和**FlowDecision**沒有傳出的連接器，連接器會放在 **，則為 True**分支。
+- 當選取範圍中包含**FlowDecision**且**FlowDecision**沒有傳出連接器時，連接器會放在**真正**的分支上。
 
 ### <a name="expression-editing"></a>運算式編輯
 
-根據預設，Visual Basic 文字編輯的預設鍵盤快速鍵適用於在運算式編輯器，在工作流程設計工具，但有下列限制：
+根據預設，Visual Basic 文字編輯的預設鍵盤快速鍵適用于工作流程設計工具的運算式編輯器內，但有下列限制：
 
 - 下列命令的快速鍵重新對應將不會有任何作用。 編輯運算式時，您只能使用預設的快速鍵存取這些命令。
 
@@ -86,4 +86,4 @@ ms.locfileid: "67825515"
   - 復原
   - 取消復原
 
-- 若要重新對應 Visual Studio 中的工作流程設計工具中的運算式編輯命令的鍵盤快速鍵，編輯工作流程設計工具的範圍中的快速鍵。 在 [文字編輯器] 範圍內所做的變更會自動不適用於工作流程設計工具。 如果兩個地方的快速鍵都要重新對應，您必須套用這些變更兩次 (兩個範圍各一次)。
+- 若要在 Visual Studio 的工作流程設計工具內重新對應運算式編輯命令的鍵盤快速鍵，請編輯工作流程設計工具範圍中的快捷方式。 在 [文字編輯器] 範圍中所做的變更不會自動套用至工作流程設計工具。 如果兩個地方的快速鍵都要重新對應，您必須套用這些變更兩次 (兩個範圍各一次)。

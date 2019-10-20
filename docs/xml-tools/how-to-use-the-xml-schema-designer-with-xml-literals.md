@@ -3,21 +3,21 @@ title: HOW TO：搭配使用 XML 結構描述設計工具和 XML 常值
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: d11803e7-f81a-41a2-a145-ba494a45cc93
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 9e92cbdca3ac2c5c366ec054ba79f2e7324986c1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ed987a54004004fe8c4fbfba686ae1a35d12bb06
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63001814"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72601843"
 ---
-# <a name="how-to-use-the-xml-schema-designer-with-xml-literals"></a>HOW TO：搭配使用 XML 結構描述設計工具和 XML 常值
+# <a name="how-to-use-the-xml-schema-designer-with-xml-literals"></a>如何：搭配使用 XML 架構設計工具和 XML 常值
 
 本主題描述如何在 Visual Basic 專案中檢視與 XML 常值相關的結構描述。
 
@@ -25,25 +25,25 @@ ms.locfileid: "63001814"
 
 1. 開啟 Visual Studio。
 
-2. 建立新的 Visual Basic**主控台應用程式**專案，命名為**XMLLiterals**。
+2. 建立名為**XMLLiterals**的新 Visual Basic**主控台應用程式**專案。
 
-     新的專案包含一個 Visual Basic 來源檔案， *Module1.vb*。
+     新專案包含一個 Visual Basic 的原始檔（ *Module1*）。
 
-## <a name="add-an-existing-xsd-file"></a>將現有 XSD 檔案
+## <a name="add-an-existing-xsd-file"></a>新增現有的 XSD 檔案
 
-1. 在記事本中開啟新的文字檔。 XML 結構描述範例程式碼複製[採購單結構描述](../xml-tools/sample-xsd-file-simple-schema.md)和並貼到檔案中。
+1. 在 [記事本] 中開啟新的文字檔。 從[採購單架構](../xml-tools/sample-xsd-file-simple-schema.md)複製 XML 架構範例程式碼，並將它貼入檔案。
 
-2. 將檔案儲存在某個位置名稱*PurchaseOrderSchema.xsd*。
+2. 將檔案儲存在名稱為*purchaseorderschema.xsd*的某個位置。
 
-3. 在**方案總管**，以滑鼠右鍵按一下專案名稱，然後選取**新增**，然後選取**現有項目**。 **加入現有項目** 對話方塊隨即出現。 瀏覽至*PurchaseOrderSchema.xsd*檔案，加以選取，然後按一下 **新增**。
+3. 在**方案總管**中，以滑鼠右鍵按一下專案的名稱，選取 [**新增**]，然後選取 [**現有專案**]。 [ **AddExisting 專案**] 對話方塊隨即出現。 流覽至*purchaseorderschema.xsd* ，選取該檔案，然後按一下 [**新增**]。
 
-     XMLLiterals 專案現在會包含兩個檔案：*Module1.vb*並*PurchaseOrderSchema.xsd*。
+     XMLLiterals 專案現在包含兩個檔案： [ *Module1* ] 和 [ *purchaseorderschema.xsd*]。
 
-## <a name="add-code"></a>加入程式碼
+## <a name="add-code"></a>新增程式碼
 
-若要加入 Visual Basic 程式碼與 XML 常值，根據專案中所包含的 XSD 檔：
+若要使用 XML 常值來加入 Visual Basic 程式碼，請根據專案中包含的 XSD 檔案：
 
-1. 中的程式碼取代*Module1.vb*為下列程式碼的檔案：
+1. 將 [ *Module1* ] 檔案中的程式碼取代為下列程式碼：
 
    ```vb
    Imports <xmlns:ns="http://tempuri.org/PurchaseOrderSchema.xsd">
@@ -72,6 +72,6 @@ ms.locfileid: "63001814"
    End Module
    ```
 
-2. 以滑鼠右鍵按一下 XML 常值或 XML 命名空間匯入中的任何 XML 節點，然後選取**在結構描述總管中顯示**。
+2. 以滑鼠右鍵按一下 XML 常值或 XML 命名空間匯入中的任何 XML 節點，然後選取 [**在架構瀏覽器中顯示**]。
 
-   **XML 結構描述總管**與 XML 常值 XML 結構描述集合相關聯的 Visual Basic 檔案並排顯示。
+   **Xml 架構瀏覽器**會與 Visual Basic 檔案並排顯示，該檔案具有與 xml 架構集相關聯的 xml 常值。

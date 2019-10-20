@@ -6,15 +6,15 @@ helpviewer_keywords:
 - load tests, properties
 - load tests, scenarios
 ms.assetid: 4414a638-1fa2-40ad-b1f4-b99f90b62e62
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 86ed8346a27a02eb7e04c1f7a9fa361b0e03431a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 54159ca7b0d99e0bba7e7b048138ffacf6ab5b0b
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62785952"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72652960"
 ---
 # <a name="load-test-scenario-properties"></a>負載測試情節屬性
 
@@ -45,7 +45,7 @@ ms.locfileid: "62785952"
 |**將分佈套用到步調延遲**|布林值，用來指定是否要在使用者步調測試混合模型中套用一般分佈延遲。 這個屬性只有在 [測試混合類型] 屬性設定為 [按使用者步調] 時才適用。<br /><br />如需詳細資訊，請參閱[如何：將分佈套用到步調延遲](../test/how-to-apply-distribution-to-pacing-delay-when-using-a-user-pace-test-mix-model.md)|
 |**IP 切換**|布林值，用來指定是否要使用 IP 切換。<br /><br />IP 切換可讓測試代理程式利用某個不同 IP 位址的範圍，將要求傳送至伺服器。 這會模擬來自不同用戶端電腦的呼叫。 當您對負載平衡 Web 伺服陣列進行測試時，IP 切換很重要。 大多數的負載平衡器會使用用戶端的 IP 位址，將用戶端導引到特定的 Web 伺服器。 如果所有的要求似乎都來自單一用戶端，負載平衡器將不會平衡負載。 若要在 Web 伺服陣列中獲得較佳的負載平衡，讓要求都來自某一範圍的 IP 位址非常重要。<br /><br />IP 切換僅適用於測試代理程式。|
 |**測試反覆項目數目上限**|數值，用來指定情節中要執行的測試數目上限。 0 值指定沒有上限。<br /><br />如需詳細資訊，請參閱[設定情節的測試反覆項目](../test/configure-test-iterations-in-a-load-test-scenario.md)。|
-|**新使用者的百分比**|數值，指定情節中新使用者或初次造訪者的百分比。<br /><br />如需詳細資訊，請參閱[如何：指定使用 Web 快取資料的虛擬使用者百分比](../test/how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data.md)。|
+|**新使用者的百分比**|數值，指定情節中新使用者或初次造訪者的百分比。<br /><br />如需詳細資訊，請參閱[如何：指定使用 Web 快取資料之虛擬使用者的百分比](../test/how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data.md)。|
 |**考慮特性**|指定情節是否會使用 [常態分佈]，或考慮特性是 [開啟] 或 [關閉]。<br /><br />如需詳細資訊，請參閱[編輯考慮時間以模擬網站人類互動延遲](../test/edit-think-times-in-load-test-scenarios.md)。|
 
 ## <a name="timing"></a>計時
@@ -56,6 +56,6 @@ ms.locfileid: "62785952"
 |**熱身期間停用**|布林值，用來指定在負載測試回合設定中所指定的 [準備持續期間] 屬性時間值期間，情節是否應該執行。<br /><br />如需負載測試回合設定屬性的詳細資訊，請參閱[負載測試回合設定屬性](../test/load-test-run-settings-properties.md)。<br /><br />如需詳細資訊，請參閱[設定情節開始延遲](../test/configure-scenario-start-delays.md)。|
 |**測試反覆項目間的考慮時間**|數值，用來指定測試反覆項目間的等候時間 (以秒為單位)。<br /><br />如需詳細資訊，請參閱[編輯考慮時間以模擬網站人類互動延遲](../test/edit-think-times-in-load-test-scenarios.md)。|
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [編輯負載測試情節](../test/edit-load-test-scenarios.md)

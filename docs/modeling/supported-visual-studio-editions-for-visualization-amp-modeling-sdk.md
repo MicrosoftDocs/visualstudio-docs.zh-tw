@@ -1,25 +1,25 @@
 ---
-title: Visualization and Modeling SDK 支援 Visual Studio 版本
+title: 視覺效果和模型 SDK 支援的 Visual Studio 版本
 titleSuffix: ''
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language Tools, supported Visual Studio editions
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e5898a95f10875f0880e4b4799f17b78aa8e79b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1fdfe698096da53abf28aa583c816d9238810333
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63003423"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72609336"
 ---
 # <a name="supported-visual-studio-editions-for-visualization--modeling-sdk"></a>支援的 Visual Studio Visualization & Modeling SDK 版本
 
-以下是支援的 Visual Studio 版本的清單[!INCLUDE[dsl](../modeling/includes/dsl_md.md)]編寫和部署環境中。 如需有關這些版本的詳細資訊，請參閱 Microsoft Visual Studio[開發人員中心](http://go.microsoft.com/fwlink/?LinkId=75628)。
+以下是在撰寫和部署環境中 [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] 支援的 Visual Studio 版本清單。 如需這些版本的詳細資訊，請參閱 Microsoft Visual Studio[開發人員中心](http://go.microsoft.com/fwlink/?LinkId=75628)。
 
 ## <a name="authoring-edition"></a>撰寫版本
 
@@ -41,13 +41,13 @@ ms.locfileid: "63003423"
 
 - Visual Studio Professional
 
-- Visual Studio Shell （整合模式） 可轉散發套件可轉散發套件
+- Visual Studio Shell （整合模式）可轉散發套件
 
 - Visual Studio Shell (隔離模式) 可轉散發套件
 
 > [!NOTE]
-> 若要讓 DSL 能夠在 Shell 產品上執行，您必須設定**支援的 VS 版本**延伸模組資訊清單中的欄位。 如需詳細資訊，請參閱 <<c0> [ 部署特定領域語言方案](../modeling/deploying-domain-specific-language-solutions.md)。
+> 若要讓 DSL 能夠在 Shell 產品上執行，您必須在擴充功能資訊清單中設定**支援的 VS Edition**欄位。 如需詳細資訊，請參閱[部署特定領域語言方案](msi-and-vsix-deployment-of-a-dsl.md)。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
-- [特定領域語言工具字彙](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [Domain-Specific Language Tools Glossary](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa) (特定領域語言工具字彙表)
