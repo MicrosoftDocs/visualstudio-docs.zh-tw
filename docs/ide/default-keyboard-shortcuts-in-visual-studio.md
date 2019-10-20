@@ -8,17 +8,17 @@ helpviewer_keywords:
 - Help [Visual Studio], shortcut keys
 - keyboard shortcuts [Visual Studio], keyboard binding schemes
 - keyboard shortcuts
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 106a2be4797bc3c442006f74bce98e4f1e8c9a5c
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: cda0e5895f7846a5c2aff6abef816548dd0a74a0
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71238206"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72652490"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Visual Studio 中的預設鍵盤快速鍵
 
@@ -30,12 +30,12 @@ ms.locfileid: "71238206"
 - [鍵盤祕訣](../ide/productivity-shortcuts.md)
 - [生產力祕訣](../ide/productivity-features.md)。
 
-如需 Visual Studio 協助工具的詳細資訊，請參閱[協助工具祕訣和訣竅](../ide/reference/accessibility-tips-and-tricks.md)與[如何：以獨佔模式使用鍵盤](../ide/reference/how-to-use-the-keyboard-exclusively.md)。
+如需 Visual Studio 中協助工具的詳細資訊，請參閱[協助工具秘訣和訣竅](../ide/reference/accessibility-tips-and-tricks.md)和[如何：以獨佔模式使用鍵盤](../ide/reference/how-to-use-the-keyboard-exclusively.md)。
 
 |||||
 |-|-|-|-|
 |[分析](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_analyze)|[編輯](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_edit)|[Project](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_project)|[測試](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_test)|
-|[架構](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_architecture)|[編輯器操作功能表](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_editorContext)|[專案及方案操作功能表](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_projectContext)|[測試總管](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_testexplorerGLOBAL)|
+|[Architecture (架構)](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_architecture)|[編輯器操作功能表](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_editorContext)|[專案及方案操作功能表](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_projectContext)|[測試總管](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_testexplorerGLOBAL)|
 |[建置](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_build)|[檔案](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_file)|[重構](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_refactor)|[工具](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_tools)|
 |[類別檢視操作功能表](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_classview)|[說明](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_help)|[方案總管](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_solutionexplorerGLOBAL)|[檢視](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_view)|
 |[偵錯](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_debug)|[負載測試](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_loadtest)|[小組](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_team)|[視窗](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_window)|
@@ -130,8 +130,8 @@ ms.locfileid: "71238206"
 |Debug.StepIntoSpecific|**Shift+Alt+F11**|
 |Debug.StepOut|**Shift+F11**|
 |Debug.StepOutCurrentProcess|**Ctrl+Shift+Alt+F11**|
-|Debug.StepOver|**F10** (偵錯時：執行不進入函式動作)|
-|Debug.StepOver|**F10** (不偵錯時：啟動偵錯並在使用者程式碼的第一行停止)|
+|Debug.StepOver|**F10** （當進行調試時：執行不進入動作的步驟）|
+|Debug.StepOver|**F10** （當不進行偵錯工具時：開始在使用者程式碼的第一行進行偵錯工具和停止）|
 |Debug.StepOverCurrentProcess|**Ctrl+Alt+F10**|
 |Debug.StopDebugging|**Shift+F5**|
 |Debug.StopPerformanceAnalysis|**Shift+Alt+F2**|
@@ -1160,6 +1160,6 @@ ms.locfileid: "71238206"
 |XsdDesigner.ShowGraphView|**Ctrl+3**|
 |XsdDesigner.ShowStartView|**Ctrl+1**|
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [Visual Studio 命令](reference/visual-studio-commands.md)

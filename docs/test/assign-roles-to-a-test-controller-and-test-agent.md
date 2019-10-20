@@ -9,15 +9,15 @@ helpviewer_keywords:
 - test controller, walkthrough
 - walkthroughs, test controller and test agents
 ms.assetid: 57ed43ae-4e67-4139-8aec-3e9fceb0a745
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 6a5fcb489e403ff4297b4e8520346d0cc7be8361
-ms.sourcegitcommit: 689ba54ea14257d13031de881f5d4fe937a36f56
+ms.openlocfilehash: 9ae46db2d99024b598ff655452ca748298b528a0
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "71342340"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72665294"
 ---
 # <a name="assign-roles-to-a-test-controller-and-test-agent"></a>將角色指派至測試控制器和測試代理程式
 
@@ -25,7 +25,7 @@ ms.locfileid: "71342340"
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>Prerequisites
 
 - 建立要使用測試設定執行的單元測試或自動程式碼 UI 測試。
 
@@ -97,7 +97,7 @@ ms.locfileid: "71342340"
 
 ::: moniker range="vs-2017"
 
-8. 在 [**測試**] 功能表上，選取 [**測試設定**] >**選取測試組態檔**，然後選擇*testsettingdistributedtestwalkthrough.testsettings .testsettings*檔案。
+8. 在 [**測試**] 功能表上，選取 [**測試設定**] >**選取 [測試組態檔**]，然後選擇*testsettingdistributedtestwalkthrough.testsettings .testsettings*檔案。
 
 ::: moniker-end
 
@@ -111,6 +111,6 @@ ms.locfileid: "71342340"
 
      當測試控制器處理單元測試和自動程式碼 UI 測試時，測試控制器會以 100 為單位，將這些測試分成群組，然後將它們傳送至測試代理程式電腦。 例如，如果您有 250 個單元測試和三個測試代理程式，前 100 個單元測試將傳送至代理程式 1、後 100 個單元測試將傳送至代理程式 2，而其餘 50 個單元測試則傳送至代理程式 3。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [安裝和設定測試代理程式](../test/lab-management/install-configure-test-agents.md)

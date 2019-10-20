@@ -7,14 +7,14 @@ f1_keywords:
 - vs.texteditor
 - vs.ambient
 manager: jillfra
-author: gewarren
-ms.author: gewarren
-ms.openlocfilehash: 4779c9aa27f65a3295f3a234e4f46314d7fe3b69
-ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
-ms.translationtype: HT
+author: jillre
+ms.author: jillfra
+ms.openlocfilehash: a1d398d18e9be9bdb5f9bf3b30dc3ff1316b5ddb
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65613585"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72662031"
 ---
 # <a name="f1-help"></a>F1 說明
 

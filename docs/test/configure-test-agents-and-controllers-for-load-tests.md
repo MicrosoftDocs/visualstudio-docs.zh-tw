@@ -4,15 +4,15 @@ ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - load tests, test agents and controllers
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: f7a912ff25e2782490b711d909a64c5d9438ed8f
-ms.sourcegitcommit: 9a3972eb85de5443ac2bc03964c5a251c39b2921
+ms.openlocfilehash: 657037cdb3ef36c4ef81c72cb4fc43f6a94203a3
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "71301710"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72665165"
 ---
 # <a name="overview-of-test-agents-and-test-controllers-for-running-load-tests"></a>用於執行負載測試的測試代理程式和測試控制器概觀
 
@@ -41,7 +41,7 @@ Visual Studio 可以使用實體或虛擬機器產生應用程式適用的模擬
 
    **本機組態：**
 
-  - 電腦 1：Visual Studio、控制器、代理程式。
+  - 電腦 1： Visual Studio、控制器、代理程式。
 
     ![使用控制器和代理程式的本機電腦](./media/load-test-configa.png)
 
@@ -51,7 +51,7 @@ Visual Studio 可以使用實體或虛擬機器產生應用程式適用的模擬
 
   - 電腦 3：控制器 (也可以安裝代理程式)。
 
-  - 電腦 4 到 n：所有與電腦 3 控制器建立關聯的代理程式。
+  - 電腦 4-n：所有與電腦 3 的控制器相關聯的代理程式。
 
     ![使用控制器和代理程式的遠端電腦](./media/load-test-configb.png)
 
@@ -89,6 +89,6 @@ Visual Studio 可以使用實體或虛擬機器產生應用程式適用的模擬
 
 安裝測試控制器和一個或多個代理程式後，您可以在負載測試的測試設定中指定是否使用測試控制器進行遠端執行。 此外，您還可以在測試設定中指定與代理程式關聯的角色能使用的資料和診斷配接器。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [安裝和設定測試代理程式](../test/lab-management/install-configure-test-agents.md)

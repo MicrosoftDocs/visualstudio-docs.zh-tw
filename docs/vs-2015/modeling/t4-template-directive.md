@@ -6,22 +6,22 @@ ms.technology: vs-ide-modeling
 ms.topic: conceptual
 ms.assetid: 2b0a8e04-6fee-4c6c-b086-e49fc728a3ed
 caps.latest.revision: 12
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 7eeae6a14c846de83aaffa6568c6c30b82d9d81b
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: d4c6176caee5551b860029ac98b19d52fcb7b51f
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68871734"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72658558"
 ---
 # <a name="t4-template-directive"></a>T4 範本指示詞
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] T4 文字範本的開頭通常是 `template` 指示詞，用於指定範本的處理方式。 文字範本和其所包含之任何檔案中的 template 指示詞不得超過一個。
 
- 如需撰寫文字模板的一般總覽, 請參閱[撰寫 T4 文字模板](../modeling/writing-a-t4-text-template.md)。
+ 如需撰寫文字模板的一般總覽，請參閱[撰寫 T4 文字模板](../modeling/writing-a-t4-text-template.md)。
 
 ## <a name="using-the-template-directive"></a>使用範本指示詞
 
@@ -34,7 +34,7 @@ ms.locfileid: "68871734"
 ## <a name="compileroptions-attribute"></a>compilerOptions 屬性
  範例：`compilerOptions="optimize+"`
 
- 有效值：任何有效的編譯器選項。 如需詳細資訊, 請參閱[ C#依分類列出的編譯器選項](https://msdn.microsoft.com/library/96437ecc-6502-4cd3-b070-e9386a298e83)和[依分類列出的 Visual Basic 編譯器選項](https://msdn.microsoft.com/library/fbe36f7a-7cfa-4f77-a8d4-2be5958568e3)。
+ 有效的值：任何有效的編譯器選項。 如需詳細資訊，請參閱[ C#依分類列出的編譯器選項](https://msdn.microsoft.com/library/96437ecc-6502-4cd3-b070-e9386a298e83)和[依分類列出的 Visual Basic 編譯器選項](https://msdn.microsoft.com/library/fbe36f7a-7cfa-4f77-a8d4-2be5958568e3)。
 
  忽略執行階段 (前置處理過的) 範本。
 
@@ -43,9 +43,9 @@ ms.locfileid: "68871734"
 ## <a name="culture-attribute"></a>culture 屬性
  範例：`culture="de-CH"`
 
- 有效值: "", 不因文化特性而異, 這是預設值。
+ 有效值： ""，不因文化特性而異，這是預設值。
 
- 以 xx-XX 字串形式表示的文化特性。 例如，en-US、ja-JP、de-CH、de-DE。 如需詳細資訊，請參閱 <xref:System.Globalization.CultureInfo?displayProperty=fullName>。
+ 以 xx-XX 字串形式表示的文化特性。 例如，en-US、ja-JP、de-CH、de-DE。 如需詳細資訊，請參閱<xref:System.Globalization.CultureInfo?displayProperty=fullName>。
 
  culture 屬性會指定當運算式區塊轉換為文字時所要使用的文化特性。
 
@@ -56,13 +56,13 @@ ms.locfileid: "68871734"
 debug="true"
 ```
 
- 有效的值`true, false`:。 預設值為 False。
+ 有效的值： `true, false`。 預設值為 False。
 
  如果 `debug` 屬性為 `true`，表示中繼程式碼檔案將會包含啟用偵錯工具所需的相關資訊，以更精確識別範本內中斷或例外狀況發生的位置。
 
- 針對設計階段範本, 中繼程式碼檔案會寫入您的 **% TEMP%** 目錄。
+ 針對設計階段範本，中繼程式碼檔案會寫入您的 **% TEMP%** 目錄。
 
- 若要在偵錯工具中執行設計階段範本, 請儲存文字模板, 然後在方案總管中開啟文字模板的快捷方式功能表, 然後選擇 [ **Debug T4 template**]。
+ 若要在偵錯工具中執行設計階段範本，請儲存文字模板，然後在方案總管中開啟文字模板的快捷方式功能表，然後選擇 [ **Debug T4 template**]。
 
 ## <a name="hostspecific-attribute"></a>hostspecific 屬性
  範例：
@@ -71,13 +71,13 @@ debug="true"
 hostspecific="true"
 ```
 
- 有效的值`true, false, trueFromBase`:。 預設值為 False。
+ 有效的值： `true, false, trueFromBase`。 預設值為 False。
 
- 如果您將這個屬性值設定為 `true`，就會有名為 `Host` 的屬性加入至文字範本所產生的類別中。 屬性是轉換引擎主控制項的參考, 而且會宣告為[ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110))。 如果您定義了自訂主應用程式，則可以將它轉換為自訂主應用程式類型。
+ 如果您將這個屬性值設定為 `true`，就會有名為 `Host` 的屬性加入至文字範本所產生的類別中。 屬性是轉換引擎主控制項的參考，而且會宣告為[ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110))。 如果您定義了自訂主應用程式，則可以將它轉換為自訂主應用程式類型。
 
- 由於這個屬性的類型依主應用程式的類型而定，因此只有在撰寫僅限搭配特定主應用程式使用的文字範本時才有用處。 它適用于[設計階段範本](../modeling/design-time-code-generation-by-using-t4-text-templates.md), 但不適用於[執行時間範本](../modeling/run-time-text-generation-with-t4-text-templates.md)。
+ 由於這個屬性的類型依主應用程式的類型而定，因此只有在撰寫僅限搭配特定主應用程式使用的文字範本時才有用處。 它適用于[設計階段範本](../modeling/design-time-code-generation-by-using-t4-text-templates.md)，但不適用於[執行時間範本](../modeling/run-time-text-generation-with-t4-text-templates.md)。
 
- 當 `hostspecific` 為 `true` 且您正在使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 時，可以將 `this.Host` 的類型轉換為 IServiceProvider 來存取 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的功能。 您也可以使用 `Host.ResolvePath(filename)` 取得專案中檔案的絕對路徑。 例如：
+ 當 `hostspecific` 為 `true` 且您正在使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 時，可以將 `this.Host` 的類型轉換為 IServiceProvider 來存取 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的功能。 您也可以使用 `Host.ResolvePath(filename)` 取得專案中檔案的絕對路徑。 例如:
 
 ```csharp
 <#@ template debug="false" hostspecific="true" language="C#" #>
@@ -104,13 +104,13 @@ Content of myFile is:
 ## <a name="language-attribute"></a>language 屬性
  範例：`language="VB"`
 
- 有效值: `C#` (預設值)
+ 有效的值： `C#` （預設值）
 
  `VB`
 
- Language 屬性會指定要用於語句[!INCLUDE[vbprvb](../includes/vbprvb-md.md)]和[!INCLUDE[csprcs](../includes/csprcs-md.md)]運算式區塊中之原始程式碼的語言 (或)。 從中產生輸出的中繼程式碼檔會使用這個語言。 這個語言與範本產生的語言無關，它可以是任何種類的文字。
+ Language 屬性會指定要用於語句和運算式區塊中之原始程式碼的語言（[!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 或 [!INCLUDE[csprcs](../includes/csprcs-md.md)]）。 從中產生輸出的中繼程式碼檔會使用這個語言。 這個語言與範本產生的語言無關，它可以是任何種類的文字。
 
- 例如：
+ 例如:
 
 ```vb
 <#@ template language="VB" #>
@@ -131,7 +131,7 @@ Squares of numbers:
  您可以指定範本的程式碼是否能繼承自另一個類別，而且這個類別也可從文字範本產生。
 
 ### <a name="inheritance-in-a-run-time-preprocessed-text-template"></a>執行階段 (前置處理過的) 文字範本中的繼承
- 您可以在執行階段文字範本之間使用繼承，以建立基本範本，此範本會擁有數個衍生的變體。 執行時間範本是將**自訂工具**屬性設定為**TextTemplatingFilePreprocessor**的範本。 執行階段範本會產生您可以在應用程式中呼叫的程式碼，用以建立範本中定義的文字。 如需詳細資訊, 請參閱[使用 T4 文字模板產生執行時間文字](../modeling/run-time-text-generation-with-t4-text-templates.md)。
+ 您可以在執行階段文字範本之間使用繼承，以建立基本範本，此範本會擁有數個衍生的變體。 執行時間範本是將**自訂工具**屬性設定為**TextTemplatingFilePreprocessor**的範本。 執行階段範本會產生您可以在應用程式中呼叫的程式碼，用以建立範本中定義的文字。 如需詳細資訊，請參閱[使用 T4 文字模板產生執行時間文字](../modeling/run-time-text-generation-with-t4-text-templates.md)。
 
  如果沒有指定 `inherits` 屬性，則會從文字範本產生基底類別和衍生類別。 指定 `inherits` 屬性時，只會產生衍生類別。 您可以手動撰寫基底類別，但是它必須提供衍生類別所用的方法。
 
@@ -211,12 +211,12 @@ This is the common footer.
 
  如果是設計階段文字範本，您可指定任何衍生自 <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation?displayProperty=fullName> 的基底類別。 使用 `<#@assembly#>` 指示詞，可以載入包含基底類別的組件或專案。
 
- 如需詳細資訊, 請參閱 Gareth 的 Blog 中的「[文字模板中的繼承](http://go.microsoft.com/fwlink/?LinkId=208373)」。
+ 如需詳細資訊，請參閱 Gareth 的 Blog 中的「[文字模板中的繼承](http://go.microsoft.com/fwlink/?LinkId=208373)」。
 
 ## <a name="linepragmas-attribute"></a>LinePragmas 屬性
  範例：`linePragmas="false"`
 
- 有效值: `true` (預設值)
+ 有效的值： `true` （預設值）
 
  `false`
 
@@ -227,7 +227,7 @@ This is the common footer.
 ## <a name="visibility-attribute"></a>可視性屬性
  範例：`visibility="internal"`
 
- 有效值: `public` (預設值)
+ 有效的值： `public` （預設值）
 
  `internal`
 

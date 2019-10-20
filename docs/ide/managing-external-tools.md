@@ -6,17 +6,17 @@ f1_keywords:
 - vs.externaltools
 helpviewer_keywords:
 - external tools [Visual Studio]
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3562ed9ebf2d62ab002ac227486218c8c38ad337
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 1caf72ea2dccd9dfe2978726834e8066a9f5b56b
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62535670"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72652397"
 ---
 # <a name="manage-external-tools"></a>管理外部工具
 
@@ -61,7 +61,7 @@ ms.locfileid: "62535670"
 
 以下是在定義外部工具時可以使用的引數完整清單：
 
-|名稱|引數|說明|
+|[屬性]|引數|描述|
 |----------|--------------|-----------------|
 |項目路徑|$(ItemPath)|目前檔案的完整檔案名稱 (磁碟機 + 路徑 + 檔案名稱)。|
 |項目目錄|$(ItemDir)|目前檔案的目錄 (磁碟機 + 路徑)。|
@@ -83,6 +83,6 @@ ms.locfileid: "62535670"
 > [!NOTE]
 > IDE 狀態列會顯示 **目前這一行**和**目前資料行**的變數，以指出插入點在作用中**程式碼編輯器**的位置。 **目前的文字**變數則會傳回在該位置選取的文字或程式碼。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [C/C++ 建置工具](/cpp/build/reference/c-cpp-build-tools)

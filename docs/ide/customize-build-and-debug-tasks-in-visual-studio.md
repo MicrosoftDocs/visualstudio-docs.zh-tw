@@ -8,17 +8,17 @@ helpviewer_keywords:
 - customize codebases [Visual Studio]
 - tasks.vs.json file [Visual Studio]
 - launch.vs.json file [Visual Studio]
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ca5a80c07cb64cfd638542da4e1deefe7e373b18
-ms.sourcegitcommit: 689ba54ea14257d13031de881f5d4fe937a36f56
+ms.openlocfilehash: 6a9101db18c8c61f249d9f0b818a75024270a079
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "71342406"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72652568"
 ---
 # <a name="customize-build-and-debug-tasks-for-open-folder-development"></a>針對「開啟資料夾」自訂建置及對工作進行偵錯
 
@@ -307,7 +307,7 @@ Visual Studio 會從名為 *settings.json* 的檔案讀取有限的設定 (若�
 
 讀取自 *.gitignore* 檔案的設定會套用至其父目錄及所有子目錄。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [不使用專案或方案來開發程式碼](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md)
 - [適用於 C++ 的「開啟資料夾」專案](/cpp/build/open-folder-projects-cpp)

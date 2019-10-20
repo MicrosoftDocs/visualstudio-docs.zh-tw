@@ -8,15 +8,15 @@ helpviewer_keywords:
 - build events, customizing
 ms.assetid: 69e935a5-e208-4bcd-865c-3e5f9b047ca8
 caps.latest.revision: 15
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: d00c520f75869e6cf886074c482575f1170e923a
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: fabbd4dc42ac4f66c7f53b639c6e7ed1f432878c
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65679520"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72667133"
 ---
 # <a name="specifying-custom-build-events-in-visual-studio"></a>在 Visual Studio 中指定自訂建置事件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,9 +25,9 @@ ms.locfileid: "65679520"
 
  如需您所使用之程式設計語言的特定資訊，請參閱下列主題：
 
-- Visual Basic--[如何：指定建置事件 (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md)。
+- Visual Basic -- [如何：指定建置事件 (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md)。
 
-- 視覺化C#和F#-[如何：指定建置事件 (C#)](../ide/how-to-specify-build-events-csharp.md)。
+- Visual C# 和 F# -- [如何：指定建置事件 (C#)](../ide/how-to-specify-build-events-csharp.md)。
 
 - Visual C++ -- [指定建置事件](https://msdn.microsoft.com/library/788a6c18-2dbe-4a49-8cd6-86c1ad7a95cc)。
 
@@ -55,5 +55,5 @@ ms.locfileid: "65679520"
     > [!NOTE]
     > 在批次指令碼中，上述程式碼中的 `%I` 應該是 `%%I`。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
  [編譯和建置](../ide/compiling-and-building-in-visual-studio.md)[建置前事件/建置後事件命令列對話方塊](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md) [MSBuild 特殊字元](../msbuild/msbuild-special-characters.md)[逐步解說：建置應用程式](../ide/walkthrough-building-an-application.md)

@@ -10,15 +10,15 @@ helpviewer_keywords:
 - agents, firewalls
 - controllers, firewalls
 ms.assetid: 211edbd7-9fe4-4251-ba85-8bec4363261b
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: bd66bcb3615477abc2fc9a8122f2ec4675f37bbb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: f29edf1582b709931e393faa0de5a1542a0ee662
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62965644"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72665199"
 ---
 # <a name="configure-ports-for-test-controllers-and-test-agents"></a>設定測試控制器和測試代理程式的通訊埠
 
@@ -87,6 +87,6 @@ ms.locfileid: "62965644"
 
      **HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\VisualStudio\12.0\EnterpriseTools\QualityTools\ListenPortRange\PortRangeEnd**
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [安裝和設定測試代理程式](../test/lab-management/install-configure-test-agents.md)

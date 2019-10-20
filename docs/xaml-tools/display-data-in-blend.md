@@ -4,17 +4,17 @@ titleSuffix: Blend for Visual Studio
 ms.date: 03/06/2018
 ms.topic: conceptual
 ms.assetid: 87d31b6c-4607-4121-bb7d-cfc80390ab93
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ec598d8a35e4491fffe88d87738ed661f23813b
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: 2ff84ae0f3960f54cb97bbaf9a53d432228fcefc
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72451091"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72650937"
 ---
 # <a name="display-data-in-blend-for-visual-studio"></a>在 Blend for Visual Studio 中顯示資料
 

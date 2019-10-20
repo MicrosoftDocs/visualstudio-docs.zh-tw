@@ -5,19 +5,19 @@ ms.topic: conceptual
 helpviewer_keywords:
 - surround-with snippets
 - snippets [C#], surround with
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0bf279502c52c47a68ea7eb5fb5c193e7d31e4d6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 3550efde20dbacb0afb17665a2ef1c811ac39946
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62428205"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72656517"
 ---
-# <a name="how-to-use-surround-with-code-snippets"></a>HOW TO：使用範圍陳述式程式碼片段
+# <a name="how-to-use-surround-with-code-snippets"></a>如何：使用範圍陳述式程式碼片段
 
 下列程序說明如何使用範圍陳述式程式碼片段。 有三種方式可取得範圍陳述式程式碼片段︰透過鍵盤快速鍵、透過 [編輯] 功能表，以及透過右鍵或操作功能表。
 
@@ -55,7 +55,7 @@ ms.locfileid: "62428205"
 
      或者，您可以鍵入程式碼片段的名稱，然後按 **TAB** 或 **ENTER**。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [C# 程式碼片段](../ide/visual-csharp-code-snippets.md)
 - [程式碼片段選擇器](../ide/reference/code-snippet-picker.md)

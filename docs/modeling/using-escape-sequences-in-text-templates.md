@@ -4,38 +4,38 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - text templates, escape sequences
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b48748c5c5d071e724be3ff35eca457f36385baa
-ms.sourcegitcommit: 6a19c5ece38a70731496a38f2ef20676ff18f8a4
+ms.openlocfilehash: 4e03f5eafc00b8431725ed06da10371a93692fb5
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65476619"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72662923"
 ---
-# <a name="use-escape-sequences-in-text-templates"></a>使用文字範本中的逸出序列
+# <a name="use-escape-sequences-in-text-templates"></a>在文字模板中使用 escape 序列
 
-您可以使用逸出序列，文字範本產生文字範本標記中，及 （在 C# 僅限程式碼） 來逸出控制字元和引號。
+您可以在文字模板中使用 escape 序列，以產生文字模板標記和C# （僅限程式碼）來將控制字元和引號轉義。
 
-若要列印至輸出檔的標準程式碼區塊的開盤和收盤標記，逸出標記，如下所示：
+若要將標準程式碼區塊的開啟和關閉標記列印到輸出檔案，請如下所示，將標記換成：
 
 ```
 \<# ... \#>
 ```
 
-您可以執行相同的其他文字範本指示詞和程式碼區塊標籤。
+您可以使用其他文字模板指示詞和程式碼區塊標記來執行相同的動作。
 
-如果文字區塊包含用來逸出文字範本標記的字串，您可以使用下列的逸出序列：
+如果文字區塊包含用來將文字模板標記轉義的字串，您可以使用下列轉義順序：
 
-- 如果文字範本標記會加上偶數數目的逸出 (\\) 字元範本剖析器會包含逸出字元的一半，且包含做為文字範本標記的順序。 例如，如果在文字範本中有四個逸出字元，會有兩個 「\\"產生的檔案中的字元。
+- 如果文字模板標記前面加上偶數的 escape （\\）字元，則範本剖析器會包含一半的逸出字元，並包含序列做為文字模板標記。 例如，如果文字模板中有四個換用字元，則產生的檔案中將會有兩個 "\\" 字元。
 
-- 如果文字範本標記會加上奇數數目的逸出 (\\) 個字元，範本剖析器將包含的下半部 」\\"字元再加上標記本身 (\<# >)。 標記是不被視為文字範本標記。
+- 如果文字模板標記前面加上奇數的 escape （\\）字元，則範本剖析器會包含一半的 "\\" 字元加上標記本身（\< # 或 # >）。 標記不會被視為文字模板標記。
 
-- 如果逸出 (\\) 字元出現以外，它會逸出控制字元或引號 （在僅限 C#) 的任何序列中的其他任何地方時，會直接輸出的字元。
+- 如果 escape （\\）字元在任何序列中的任何位置出現，而不是將控制字元或引號（ C#僅限）轉義，則會直接輸出該字元。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [如何：使用逸出序列從範本產生範本](../modeling/how-to-generate-templates-from-templates-by-using-escape-sequences.md)

@@ -1,28 +1,28 @@
 ---
-title: CA3075:不安全 DTD 處理 |Microsoft Docs
+title: CA3075：不安全的 DTD 處理 |Microsoft Docs
 ms.date: 11/15/2016
 ms.technology: vs-ide-code-analysis
 ms.topic: reference
 ms.assetid: 65798d66-7a30-4359-b064-61a8660c1eed
 caps.latest.revision: 19
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 694b72327d8e059fe12a227afdab79219081ef92
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 7cf9da2f295d94ac68c74039458f4cdbfda3ae5c
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65693406"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72661615"
 ---
-# <a name="ca3075-insecure-dtd-processing"></a>CA3075:不安全的 DTD 處理
+# <a name="ca3075-insecure-dtd-processing"></a>CA3075：不安全的 DTD 處理
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |TypeName|InsecureDTDProcessing|
 |CheckId|CA3075|
-|分類|Microsoft.Security|
+|Category|Microsoft.Security|
 |中斷變更|非中斷|
 
 ## <a name="cause"></a>原因
@@ -35,31 +35,31 @@ ms.locfileid: "65693406"
 
 - XML 中有設定 <xref:System.Xml.XmlNode.InnerXml%2A> 屬性。
 
-- <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A> 屬性設定為 剖析。
+- <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A> 屬性設定為 Parse。
 
 - 使用 <xref:System.Xml.XmlResolver> 來處理未受信任的輸入，而不是 <xref:System.Xml.XmlSecureResolver> 。
 
-- XmlReader。<xref:System.Xml.XmlReader.Create%2A> 方法會叫用不安全<xref:System.Xml.XmlReaderSettings>執行個體或完全沒有執行個體。
+- XmlReader。<xref:System.Xml.XmlReader.Create%2A> 以不安全的 <xref:System.Xml.XmlReaderSettings> 實例或完全沒有實例叫用方法。
 
-- <xref:System.Xml.XmlReader> 建立不安全的預設值或值。
+- 以不安全的預設設定或值建立 <xref:System.Xml.XmlReader>。
 
   上述每個案例皆會造成一樣的結果：如果內容是來自處理 XML 之電腦的檔案系統或網路共用，這些內容就會公開給攻擊者，而被用來當做 DoS 向量。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
 
-- 可以攔截並處理所有 XmlTextReader 例外狀況，正確地以避免路徑資訊外洩。
+- 適當地攔截並處理所有的 XmlTextReader 例外狀況，以避免路徑資訊洩漏。
 
-- 使用 <xref:System.Xml.XmlSecureResolver>來限制 XmlTextReader 可以存取的資源。
+- 使用  <xref:System.Xml.XmlSecureResolver> 來限制 XmlTextReader 可以存取的資源。
 
-- 不允許 <xref:System.Xml.XmlReader>開啟外部資源，藉由設定<xref:System.Xml.XmlResolver>屬性設 **null**。
+- 不允許  <xref:System.Xml.XmlReader> 藉由將 <xref:System.Xml.XmlResolver> 屬性設為 **null**來開啟任何外部資源。
 
 - 請確認 <xref:System.Data.DataViewManager.DataViewSettingCollectionString%2A> 的 <xref:System.Data.DataViewManager> 屬性是從受信任的來源位置指派。
 
   .NET 3.5 和更早的版本
 
-- 停用 DTD 處理，如果您正在處理不受信任的來源藉由設定 <xref:System.Xml.XmlReaderSettings.ProhibitDtd%2A>屬性，以 **，則為 true** 。
+- 如果您正在處理不受信任的來源，請將  <xref:System.Xml.XmlReaderSettings.ProhibitDtd%2A> 屬性設為 **true** ，以停用 DTD 處理。
 
-- XmlTextReader 類別具有完全信任的繼承要求。 請參閱 [繼承要求](https://msdn.microsoft.com/28b9adbb-8f08-4f10-b856-dbf59eb932d9)如需詳細資訊。
+- XmlTextReader 類別具有完全信任的繼承要求。 如需詳細資訊，請參閱 [繼承需求](https://msdn.microsoft.com/28b9adbb-8f08-4f10-b856-dbf59eb932d9)。
 
   .NET 4 和更新版本
 

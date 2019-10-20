@@ -6,17 +6,17 @@ helpviewer_keywords:
 - Assert classes
 - Assert methods
 - unit tests, Assert classes
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-author: gewarren
-ms.openlocfilehash: d145734dc89faafcedbca6730f0a90da174376c4
-ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
-ms.translationtype: HT
+author: jillre
+ms.openlocfilehash: 41be3aaa4967e4c5f975b43f7d8fec982f04c9b9
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66820319"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72659726"
 ---
 # <a name="use-assert-classes-for-unit-testing"></a>使用 Assert 類別進行單元測試
 
@@ -47,6 +47,6 @@ ms.locfileid: "66820319"
 
 若要確認您預期由應用程式程式碼中之方法擲回的例外狀況，確實是由該方法擲回時，請使用 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.ThrowsException%2A?displayProperty=nameWithType> 方法。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [對程式碼進行單元測試](../test/unit-test-your-code.md)

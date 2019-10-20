@@ -13,17 +13,17 @@ f1_keywords:
 helpviewer_keywords:
 - Basic Text Editor Options dialog box
 ms.assetid: 5a8cafca-f7b4-4a2d-92ce-6894a7673d00
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aa331fea595c2143dd3ab47aa562fbd61277f81f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: a07645597846bd85f3152da866a253b079bc3963
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62817784"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72666335"
 ---
 # <a name="options-text-editor-basic-visual-basic-advanced"></a>選項、文字編輯器、基本 (Visual Basic)、進階
 位於 [選項] ([工具] 功能表) 對話方塊上 [文字編輯器] 資料夾的 [基本] 資料夾中的 [VB 專用] 屬性頁面包含下列屬性：
@@ -107,7 +107,7 @@ ms.locfileid: "62817784"
 
 文字編輯器可以提供一般錯誤的解決方案建議，並讓您選取要套用到程式碼的適當修正措施。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [選項對話方塊、環境、一般](../../ide/reference/general-environment-options-dialog-box.md)
-- [索引標籤、所有語言、文字編輯器、選項](../../ide/reference/options-text-editor-all-languages-tabs.md)
+- [選項、文字編輯器、所有語言、索引標籤](../../ide/reference/options-text-editor-all-languages-tabs.md)

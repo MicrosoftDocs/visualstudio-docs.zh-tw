@@ -2,30 +2,30 @@
 title: VS Shell 部署
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 70f39dd23851a2ebc0a48afd05da54b0d8deb24a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0e010d2efd8174f2c61d7c97eb63d585f47812ff
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62934306"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72663664"
 ---
 # <a name="vs-shell-deployment"></a>VS Shell 部署
 
-獨立模式的 shell 可讓您判斷哪一個 Visual Studio 需要特定領域語言，和如何呈現該解決方案互動的功能。 如需 Visual Studio 隔離 shell 的詳細資訊，請參閱[自訂 Isolated Shell](https://vspartner.com/pages/vsshells)。
+獨立模式 shell 可讓您判斷需要與特定領域語言互動的 Visual Studio 功能，以及該解決方案的顯示方式。 如需有關 Visual Studio 獨立模式 shell 的詳細資訊，請參閱[自訂獨立模式 shell](https://vspartner.com/pages/vsshells)。
 
-若要設定 Visual Studio Shell 做為部署目標：
+若要將 Visual Studio Shell 設定為部署目標：
 
-1. 在  **DslPackage**專案中，開啟**source.extension.tt**。
+1. 在**DslPackage**專案中，開啟**source.extension.tt**。
 
-2. 在下`<SupportedProducts>`插入：
+2. 在 `<SupportedProducts>` 插入 底下：
 
    ```xml
    <IsolatedShell Version="1.0">MyIsolatedShell</IsolatedShell>
    ```
 
-   取代*MyIsolatedShell*獨立模式的 shell 封裝的名稱。
+   將*MyIsolatedShell*取代為您的獨立 shell 封裝名稱。

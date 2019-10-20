@@ -1,5 +1,5 @@
 ---
-title: CA1024:在適當時使用的屬性 |Microsoft Docs
+title: CA1024 建議：適當時使用屬性 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,49 +12,49 @@ helpviewer_keywords:
 - UsePropertiesWhereAppropriate
 ms.assetid: 3a04f765-af7c-4872-87ad-9cc29e8e657f
 caps.latest.revision: 23
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 43487aa97afcd41a5375bacc26efba705cbaa76c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b190e007cfdb016e54148cf0295c68baf68c5033
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68144813"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72661955"
 ---
-# <a name="ca1024-use-properties-where-appropriate"></a>CA1024:建議在適當時使用屬性
+# <a name="ca1024-use-properties-where-appropriate"></a>CA1024：建議在適當時使用屬性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |TypeName|UsePropertiesWhereAppropriate|
 |CheckId|CA1024|
-|分類|Microsoft.Design|
+|Category|Microsoft. Design|
 |中斷變更|中斷|
 
 ## <a name="cause"></a>原因
- 公用或受保護的方法有名稱開頭為`Get`、 不採用任何參數和傳回值，這個值不是陣列。
+ 公用或受保護的方法具有以 `Get` 開頭的名稱，不接受任何參數，且會傳回不是陣列的值。
 
 ## <a name="rule-description"></a>規則描述
- 在大部分情況下，屬性代表資料，方法執行動作。 屬性與欄位類似，讓它們可使用的工作變得更容易存取。 方法是成為屬性，若符合下列條件之一，則的良好候選項目：
+ 在大部分情況下，屬性代表資料和方法會執行動作。 屬性的存取方式就像欄位一樣，讓使用者更容易使用。 如果其中一項條件存在，方法就很適合成為屬性：
 
-- 不接受引數，並傳回物件的狀態資訊。
+- 不接受任何引數，並傳回物件的狀態資訊。
 
-- 接受單一引數來設定物件狀態的某些部分。
+- 接受單一引數，以設定物件狀態的某些部分。
 
-  屬性應該如同它們是欄位，如果方法無法處理，它應該不會變更的屬性。 方法是優於在下列情況中的屬性：
+  屬性的行為應該如同欄位一樣。如果方法不能，則不應該將它變更為屬性。 在下列情況下，方法會優於屬性：
 
-- 這個方法會執行耗時的作業。 此方法為感覺比所需的設定或取得欄位的值時間。
+- 方法會執行耗時的作業。 方法的 perceivably 速度比設定或取得欄位值所需的時間慢。
 
-- 這個方法會執行轉換。 存取欄位不會傳回轉換的版本，它會將儲存的資料。
+- 方法會執行轉換。 存取欄位並不會傳回其所儲存之資料的轉換版本。
 
-- Get 方法具有可預見的副作用。 擷取欄位的值不會產生任何副作用。
+- Get 方法具有可觀察的副作用。 抓取欄位的值不會產生任何副作用。
 
-- 執行的順序很重要。 設定欄位的值不需要其他作業一次。
+- 執行的順序很重要。 設定欄位的值不會依賴其他作業的出現次數。
 
-- 連續兩次呼叫方法時，會建立不同的結果。
+- 連續呼叫方法兩次，會產生不同的結果。
 
-- 方法是靜態的但是會傳回呼叫者可以變更的物件。 擷取欄位的值不允許呼叫端將變更儲存欄位的資料。
+- 方法是靜態的，但會傳回可由呼叫端變更的物件。 抓取欄位的值不允許呼叫者變更欄位所儲存的資料。
 
 - 方法會傳回陣列。
 
@@ -62,12 +62,12 @@ ms.locfileid: "68144813"
  若要修正此規則的違規情形，請將方法變更為屬性。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
- 如果方法會符合至少其中一個先前所列的準則，則隱藏此規則的警告。
+ 如果方法至少符合先前列出的其中一個準則，請隱藏此規則的警告。
 
 ## <a name="controlling-property-expansion-in-the-debugger"></a>控制偵錯工具中的屬性擴充
- 程式設計師可讓您避免使用屬性的其中一個原因是因為不想偵錯工具自動展開。 例如，配置大型物件或呼叫 P/Invoke，可能會牽涉到的屬性，但它可能實際上沒有任何可預見的副作用。
+ 程式設計人員避免使用屬性的原因之一，是因為它們不想讓偵錯工具自動將它展開。 例如，屬性可能牽涉到配置大型物件或呼叫 P/Invoke，但實際上可能不會有任何可觀察的副作用。
 
- 您可以防止偵錯工具自動擴充屬性，藉由套用<xref:System.Diagnostics.DebuggerBrowsableAttribute?displayProperty=fullName>。 下列範例示範套用至執行個體屬性的這個屬性。
+ 您可以藉由套用 <xref:System.Diagnostics.DebuggerBrowsableAttribute?displayProperty=fullName>，讓偵錯工具無法自動擴充屬性。 下列範例顯示此屬性會套用至實例屬性。
 
 ```vb
 Imports System
@@ -117,6 +117,6 @@ namespace Microsoft.Samples
 ```
 
 ## <a name="example"></a>範例
- 下列範例包含數種方法，應該轉換成屬性，以及數個，應該不是因為它們不行為與欄位一樣。
+ 下列範例包含數個應該轉換成屬性的方法，而幾個則不應該，因為它們的行為與欄位不一樣。
 
  [!code-csharp[FxCop.Design.MethodsProperties#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.MethodsProperties/cs/FxCop.Design.MethodsProperties.cs#1)]

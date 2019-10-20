@@ -2,17 +2,17 @@
 title: 建立單元測試專案
 ms.date: 01/29/2019
 ms.topic: conceptual
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-author: gewarren
-ms.openlocfilehash: f04e999681899bb101dc0aeb70cc6f47094dc1d7
-ms.sourcegitcommit: 0f5f7955076238742f2071d286ad8e896f3a6cad
-ms.translationtype: HT
+author: jillre
+ms.openlocfilehash: 30edc1a894a64fb7b9d8b988cafaed14aeaebfdd
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "68483794"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72665115"
 ---
 # <a name="create-a-unit-test-project"></a>建立單元測試專案
 
@@ -23,13 +23,13 @@ ms.locfileid: "68483794"
 
 ## <a name="to-create-a-unit-test-project"></a>建立單元測試專案
 
-1. 在 [檔案]  功能表上，選擇 [新增]   > [專案]  或按 **Crtl**+**Shift**+**N**。
+1. 在 [檔案] 功能表上，選擇 [新增] > [專案] 或按 **Crtl**+**Shift**+**N**。
 
 ::: moniker range="vs-2017"
 
-2. 在 [新增專案]  對話方塊中，展開 [已安裝]  節點，選擇您想要用於測試專案的語言，然後選擇 [測試]  。
+2. 在 [新增專案] 對話方塊中，展開 [已安裝] 節點，選擇您想要用於測試專案的語言，然後選擇 [測試]。
 
-3. 選取您想使用的測試 Framework 的專案範本，例如 **MSTest Test Project** 或 **NUnit Test Project**。 為專案命名，然後選擇 [確定]  。
+3. 選取您想使用的測試 Framework 的專案範本，例如 **MSTest Test Project** 或 **NUnit Test Project**。 為專案命名，然後選擇 [確定]。
 
    ![Visual Studio 2017 中的測試專案範本](media/test-project-templates.png)
 
@@ -37,21 +37,21 @@ ms.locfileid: "68483794"
 
 ::: moniker range=">=vs-2019"
 
-2. 在 [建立新專案]  頁面的 [搜尋] 方塊中鍵入**單元測試**。 選取您想使用的測試 Framework 的專案範本，例如 **MSTest Test Project** 或 **NUnit Test Project**，然後選擇 [下一步]  。
+2. 在 [建立新專案] 頁面的 [搜尋] 方塊中鍵入**單元測試**。 選取您想使用的測試 Framework 的專案範本，例如 **MSTest Test Project** 或 **NUnit Test Project**，然後選擇 [下一步]。
 
    ![Visual Studio 2019 中的測試專案範本](media/vs-2019/test-project-templates.png)
 
-3. 在 [設定新專案]  頁面中輸入您專案的名稱，然後選擇 [建立]  。
+3. 在 [設定新專案] 頁面中輸入您專案的名稱，然後選擇 [建立]。
 
 ::: moniker-end
 
 4. 在單元測試專案中，加入受測程式碼的參考。 若要將參考新增至相同解決方案中的程式碼專案：
 
-   1. 在 [方案總管]  中選取測試專案。
+   1. 在 [方案總管] 中選取測試專案。
 
-   2. 在 [專案]  功能表上，選擇 [加入參考]  。
+   2. 在 [專案] 功能表上，選擇 [加入參考]。
 
-   3. 在 [參考管理員]  中，選取 [專案]  底下的 [解決方案]  節點。 選取您想要測試的程式碼專案，然後選取 [確定]  。
+   3. 在 [參考管理員] 中，選取 [專案] 底下的 [解決方案] 節點。 選取您想要測試的程式碼專案，然後選取 [確定]。
 
    如果您要測試的程式碼在另一個位置，請參閱[管理專案中的參考](../ide/managing-references-in-a-project.md)了解加入參考的相關資訊。
 

@@ -15,17 +15,17 @@ helpviewer_keywords:
 - dependency diagrams
 - diagrams - modeling, layer
 - constraints, architectural
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0de634ee62387e50fed89e4465842b2801748f45
-ms.sourcegitcommit: 0f44ec8ba0263056ad04d2d0dc904ad4206ce8fc
+ms.openlocfilehash: 7711d0b0f369f43cc7becf92cbdcfc986cd3a6a8
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70766147"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72661487"
 ---
 # <a name="dependency-diagrams-reference"></a>相依性圖表：參考
 
@@ -48,7 +48,7 @@ ms.locfileid: "70766147"
 
 - 在開發和維護您的程式碼期間，藉由在簽入及建置作業包含驗證，強化預期的架構。
 
-本主題描述您可以在相依性圖表上使用的元素。 如需如何建立和繪製相依性圖表的詳細資訊，請[參閱相依性圖表：方針](../modeling/layer-diagrams-guidelines.md)。 如需有關分層模式的詳細資訊，請造訪[& 實務的模式網站](http://go.microsoft.com/fwlink/?LinkId=145794)。
+本主題描述您可以在相依性圖表上使用的元素。 如需如何建立和繪製相依性圖表的詳細資訊，請參閱相依性[圖表：方針](../modeling/layer-diagrams-guidelines.md)。 如需有關分層模式的詳細資訊，請造訪[& 實務的模式網站](http://go.microsoft.com/fwlink/?LinkId=145794)。
 
 ## <a name="reading-dependency-diagrams"></a>讀取相依性圖表
 
@@ -56,9 +56,9 @@ ms.locfileid: "70766147"
 
 下表描述您可以在相依性圖表上使用的元素。
 
-|**多邊形**|**目**|**描述**|
+|**多邊形**|**目**|**說明**|
 |-|-|-|
-|1|**層**|您系統中之實體成品的邏輯群組。 這些成品可以是命名空間、專案、類別、方法等等。<br /><br /> 若要查看連結到圖層的成品，請開啟圖層的快捷方式功能表，然後選擇 [**視圖連結**] 以開啟 [**分層 Explorer**]。<br /><br /> 如需詳細資訊，請參閱[Layer Explorer](#Explorer)。<br /><br /> -   **禁止的命名空間**相依性-指定與此圖層相關聯的成品不可相依于指定的命名空間。<br />-   **禁止的命名空間**-指定與此圖層相關聯的成品不得屬於指定的命名空間。<br />-   **必要的命名空間**-指定與此圖層相關聯的成品必須屬於其中一個指定的命名空間。|
+|1|**層**|您系統中之實體成品的邏輯群組。 這些成品可以是命名空間、專案、類別、方法等等。<br /><br /> 若要查看連結到圖層的成品，請開啟圖層的快捷方式功能表，然後選擇 [**視圖連結**] 以開啟 [**分層 Explorer**]。<br /><br /> 如需詳細資訊，請參閱[Layer Explorer](#Explorer)。<br /><br /> -   **禁止的命名空間**相依性-指定與此圖層相關聯的成品不能相依于指定的命名空間。<br />-   **禁止的命名空間**-指定與此圖層相關聯的成品不得屬於指定的命名空間。<br />-   **必要的命名空間**-指定與此圖層相關聯的成品必須屬於其中一個指定的命名空間。|
 |2|**依賴性**|表示一個圖層可以使用另一個圖層的功能，但反之則不然。<br /><br /> -   **方向**-指定相依性的方向。|
 |3|**雙向相依性**|表示一個圖層可以使用另一個圖層的功能，反之亦然。<br /><br /> -   **方向**-指定相依性的方向。|
 |4|**註解**|用來將一般附註加入圖表或圖表上的項目。|
@@ -89,13 +89,13 @@ ms.locfileid: "70766147"
 > [!NOTE]
 > 如果您看不到所有這些屬性，請展開 [ **Layer Explorer** ] 視窗。
 
-|**圖層瀏覽器中的資料行**|**描述**|
+|**圖層瀏覽器中的資料行**|**說明**|
 |-|-|
 |**分類**|成品的類型，例如類別、命名空間、原始程式檔等等|
 |**層**|連結到成品的圖層|
-|**支援驗證**|若**為 True**，則圖層驗證程式可以驗證專案是否符合此元素的相依性。<br /><br /> 如果**為 False**，則連結不會參與圖層驗證程式。<br /><br /> 如需詳細資訊， [請參閱相依性圖表：方針](../modeling/layer-diagrams-guidelines.md)。|
+|**支援驗證**|若**為 True**，則圖層驗證程式可以驗證專案是否符合此元素的相依性。<br /><br /> 如果**為 False**，則連結不會參與圖層驗證程式。<br /><br /> 如需詳細資訊，請參閱相依性[圖表：方針](../modeling/layer-diagrams-guidelines.md)。|
 |**識別碼**|連結成品的參考|
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [建立應用程式模型](../modeling/create-models-for-your-app.md)

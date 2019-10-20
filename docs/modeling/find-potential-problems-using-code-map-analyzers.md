@@ -8,17 +8,17 @@ helpviewer_keywords:
 - code analysis, dependency graphs
 - dependency graphs, analyzing code
 - graph documents, analyzing
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8fd3bb1537d0e985e91f93ea094ec546ed9a6092
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5f55d4d3c4470d32d9779f7adf06934f10ac618e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62994426"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72657488"
 ---
 # <a name="find-potential-problems-using-code-map-analyzers"></a>使用 Code Map 分析器尋找潛在問題
 
@@ -32,20 +32,20 @@ ms.locfileid: "62994426"
 
 ## <a name="analyze-code-maps"></a>分析 Code Map
 
-在 [對應] 工具列中，選擇**版面配置** > **分析器**，，然後您要執行的分析器：
+在 [對應] 工具列上，依**序選擇 [配置] [ > ** **分析器**] 和您想要執行的分析器：
 
 |**分析器**|**若要識別具有下列項目的節點：**|
 |-|-|
-|**循環參考分析器**|對彼此具有循環的相依性。 **注意：** 中的循環相依性**泛型**時展開的群組群組不會在地圖上顯示。|
-|**尋找中樞分析器**|為前 25% 的高度連接節點<br /><br /> **隱藏對應上的所有其他節點**<br /><br /> -開啟對應的捷徑功能表，選擇 **進階**，**選取**，**隱藏未選取**。<br />     對應會隱藏未選取的節點，且分析器將識別作為中樞的新節點。|
-|**未參考的節點分析器**|不具有來自其他任何節點的參考。 **注意：** 在假設此程式碼未經使用之前，請驗證每個案例。 在程式碼中，找不到像是 XAML 相依性和執行階段相依性這樣的靜態特定相依性。|
+|**循環參考分析器**|對彼此具有循環的相依性。 **注意：** 當您展開群組時，[**泛型**] 群組中的迴圈相依性不會顯示在對應上。|
+|**尋找中樞分析器**|為前 25% 的高度連接節點<br /><br /> **隱藏對應上的所有其他節點**<br /><br /> -開啟對應的快捷方式功能表，選擇 [**高級**]、[**選取**]、[**隱藏未選取**]。<br />     對應會隱藏未選取的節點，且分析器將識別作為中樞的新節點。|
+|**未參考的節點分析器**|不具有來自其他任何節點的參考。 **注意：** 在假設未使用程式碼之前，請先確認這兩個案例。 在程式碼中，找不到像是 XAML 相依性和執行階段相依性這樣的靜態特定相依性。|
 
-在您套用之後，Code Map 分析器將繼續執行。 如果您變更對應，所套用的任何分析器將自動重新處理已更新的對應。 若要停止執行分析器，在 [對應] 工具列上，選擇**版面配置** > **分析器**。 關閉所選的分析器。
+在您套用之後，Code Map 分析器將繼續執行。 如果您變更對應，所套用的任何分析器將自動重新處理已更新的對應。 若要停止執行分析器，請在 [對應] 工具列上 **，選擇 [** 配置] [ > **分析器**]。 關閉所選的分析器。
 
 > [!TIP]
 > 如果您的對應非常大，執行分析器可能會造成記憶體不足的例外狀況。 如果發生這種情況，請編輯對應以減少其範圍，或產生較小的對應，然後執行分析器。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [對應方案之間的相依性](../modeling/map-dependencies-across-your-solutions.md)
 - [使用 Code Map 偵錯您的應用程式](../modeling/use-code-maps-to-debug-your-applications.md)

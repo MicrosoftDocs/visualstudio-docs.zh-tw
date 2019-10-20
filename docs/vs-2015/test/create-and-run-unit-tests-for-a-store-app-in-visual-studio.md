@@ -1,5 +1,5 @@
 ---
-title: 建立及執行的市集應用程式的單元測試
+title: 為商店應用程式建立及執行單元測試
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-test
@@ -9,14 +9,14 @@ helpviewer_keywords:
 ms.assetid: d3de7b31-0262-4373-ba84-e74eda7651e4
 caps.latest.revision: 28
 author: alexhomer1
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 0fc24dc76e59a04b9485a71ba4dff44e0c7ba64d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a7efb5fe4484fdd0ce7d2fcb0a1988e9b089509e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442800"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72660614"
 ---
 # <a name="create-and-run-unit-tests-for-a-store-app-in-visual-studio"></a>在 Visual Studio 中對市集應用程式建立及執行單元測試
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

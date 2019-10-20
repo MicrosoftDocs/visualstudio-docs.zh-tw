@@ -5,17 +5,17 @@ ms.topic: reference
 helpviewer_keywords:
 - vstest.console.exe
 - command-line tests
-ms.author: gewarren
-author: gewarren
+ms.author: jillfra
+author: jillre
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 34b38ca89e33fd1f3ab8d309c6f55822bf8b7107
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
-ms.translationtype: HT
+ms.openlocfilehash: e46cd6f3589e50959ee521552bb66878147cf604
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69551828"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72659704"
 ---
 # <a name="vstestconsoleexe-command-line-options"></a>VSTest.Console.exe 命令列選項
 
@@ -30,7 +30,7 @@ ms.locfileid: "69551828"
 
 下表列出 *VSTest.Console.exe* 的所有選項，以及選項的簡短描述。 在命令列鍵入 `VSTest.Console/?` 也能看到類似的摘要。
 
-| 選項 | 說明 |
+| 選項 | 描述 |
 |---|---|
 |**[*test file names*]**|從指定的檔案執行測試。 以空格分隔多個測試檔案名稱。<br />範例：`mytestproject.dll`、`mytestproject.dll myothertestproject.exe`|
 |**/Settings:[*file name*]**|使用像資料收集器之類的其他設定執行測試。<br />範例：`/Settings:Local.RunSettings`|
@@ -44,7 +44,7 @@ ms.locfileid: "69551828"
 |**/Framework: [*framework version*]**|要用於測試執行的目標 .NET 版本。<br />範例值為 `Framework35`、`Framework40`、`Framework45`、`FrameworkUap10`、`.NETCoreApp,Version=v1.1`。<br />如果目標 Framework 指定為 **Framework35**，則會在 CLR 4.0 的「相容性模式」中執行測試。<br />範例：`/Framework:framework40`|
 |**/TestCaseFilter:[*expression*]**|執行符合指定之運算式的測試。<br /><Expression\> 的格式為 <property\>=<value\>[\|<Expression\>]。<br />範例：`/TestCaseFilter:"Priority=1"`<br />範例：`/TestCaseFilter:"TestCategory=Nightly|FullyQualifiedName=Namespace.ClassName.MethodName"`<br />**/TestCaseFilter** 命令列選項無法與 **/Tests** 命令列選項搭配使用。 <br />如需建立和使用運算式的資訊，請參閱 [ 篩選](https://github.com/Microsoft/vstest-docs/blob/master/docs/filter.md)。|
 |**/?**|顯示使用方式資訊。|
-|**/Logger:[*uri/friendlyname*]**|指定測試結果的記錄器。<br />範例：若要將結果記錄到 Visual Studio 測試結果檔案 (TRX)，請使用 **/Logger:trx**。<br />範例：若要將測試結果發佈到 Team Foundation Server，請使用 TfsPublisher：<br />**/logger:TfsPublisher;**<br />**Collection=<project url\>;**<br />**BuildName=<build name\>;**<br />**TeamProject=<project name\>;**<br />**[;Platform=\<預設為 "Any CPU">]**<br />**[;Flavor=\<預設為 "Debug">]**<br />**[;RunTitle=<title\>]**|
+|**/Logger:[*uri/friendlyname*]**|指定測試結果的記錄器。<br />範例：若要將結果記錄到 Visual Studio 測試結果檔案 (TRX)，請使用 **/Logger:trx**。<br />範例：若要將測試結果發行到 Team Foundation Server，請使用 TfsPublisher：<br />**/logger:TfsPublisher;**<br />**Collection=<project url\>;**<br />**BuildName=<build name\>;**<br />**TeamProject=<project name\>;**<br />**[;Platform=\<預設為 "Any CPU">]**<br />**[;Flavor=\<預設為 "Debug">]**<br />**[;RunTitle=<title\>]**|
 |**/ListTests:[*file name*]**|列出從指定之測試容器探索到的測試。|
 |**/ListDiscoverers**|列出已安裝的測試探索程式。|
 |**/ListExecutors**|列出已安裝的測試執行程式。|

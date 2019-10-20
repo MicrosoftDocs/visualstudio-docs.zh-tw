@@ -6,21 +6,21 @@ helpviewer_keywords:
 - editor options
 - configure editor
 - editor settings
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 750af5101dfdf9d040457873be9d40d4a9da55e1
-ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
-ms.translationtype: HT
+ms.openlocfilehash: 3aa197a855b2a4f0c33520c6b8c1a01311ab6b72
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/22/2019
-ms.locfileid: "67328987"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72645282"
 ---
 # <a name="set-language-specific-editor-options"></a>設定語言專用編輯器的選項
 
-Visual Studio 提供多種 [文字編輯器] 選項，可以套用至特定的程式語言。 您可以設定 [選項]  對話方塊中的選項，以從 [工具]  功能表中存取。 您也可以透過[建立 EditorConfig 檔案](../../ide/create-portable-custom-editor-options.md)，設定某些以專案或程式碼庫為基礎的編輯器設定。
+Visual Studio 提供多種 [文字編輯器] 選項，可以套用至特定的程式語言。 您可以設定 [選項] 對話方塊中的選項，以從 [工具] 功能表中存取。 您也可以透過[建立 EditorConfig 檔案](../../ide/create-portable-custom-editor-options.md)，設定某些以專案或程式碼庫為基礎的編輯器設定。
 
 ## <a name="settings-available-in-the-options-dialog-box"></a>[選項] 對話方塊中提供的設定
 
@@ -45,7 +45,7 @@ Visual Studio 提供多種 [文字編輯器] 選項，可以套用至特定的�
 [選項、文字編輯器、XAML、格式](../../ide/reference/options-text-editor-xaml-formatting.md)\
 描述 XAML 文件中項目和屬性排列的設定。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [自訂編輯器](../how-to-change-text-case-in-the-editor.md)
 - [使用 EditorConfig 建立可攜式自訂編輯器設定](../../ide/create-portable-custom-editor-options.md)

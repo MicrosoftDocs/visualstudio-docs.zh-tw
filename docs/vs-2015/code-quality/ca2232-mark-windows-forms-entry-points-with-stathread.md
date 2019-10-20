@@ -1,5 +1,5 @@
 ---
-title: CA2232:以 STAThread 標記 Windows Form 進入點 |Microsoft Docs
+title: CA2232：使用 STAThread 標記 Windows Forms 進入點 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,43 +12,43 @@ helpviewer_keywords:
 - MarkWindowsFormsEntryPointsWithStaThread
 ms.assetid: a3c95130-8e7f-4419-9fcd-b67d077e8efb
 caps.latest.revision: 18
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 6e8b7242fcd82db1a0cfb82cf6cd6df5a9f75084
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 084e7a093f92aa8eda9d9edc11865ac319adfad0
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63435418"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72662785"
 ---
-# <a name="ca2232-mark-windows-forms-entry-points-with-stathread"></a>CA2232:Windows Forms 進入點必須標記 STAThread
+# <a name="ca2232-mark-windows-forms-entry-points-with-stathread"></a>CA2232：以 STAThread 標記 Windows Form 進入點
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |TypeName|MarkWindowsFormsEntryPointsWithStaThread|
 |CheckId|CA2232|
-|分類|Microsoft.Usage|
+|Category|Microsoft。使用方式|
 |中斷變更|非中斷|
 
 ## <a name="cause"></a>原因
- 組件參考<xref:System.Windows.Forms>命名空間，而它的進入點未標示為<xref:System.STAThreadAttribute?displayProperty=fullName>屬性。
+ 元件會參考 <xref:System.Windows.Forms> 命名空間，而其進入點不會標示 <xref:System.STAThreadAttribute?displayProperty=fullName> 屬性。
 
 ## <a name="rule-description"></a>規則描述
- <xref:System.STAThreadAttribute> 表示的 COM 執行緒模型應用程式是單一執行緒 apartment。 在使用 Windows Form 的任何應用程式之進入點上必須有此屬性。如果省略的話，Windows 元件就無法正常運作。 如果屬性不存在，則應用程式會使用多執行緒的 apartment 模型不支援 Windows Form。
+ <xref:System.STAThreadAttribute> 表示應用程式的 COM 執行緒模型是單一執行緒的單元。 在使用 Windows Form 的任何應用程式之進入點上必須有此屬性。如果省略的話，Windows 元件就無法正常運作。 如果屬性不存在，應用程式會使用多執行緒的單元模型，這不支援 Windows Forms。
 
 > [!NOTE]
-> [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 使用應用程式架構的專案不會將標示**Main** stathread 的方法。 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]編譯器自動執行。
+> 使用應用程式架構 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 專案不需要以 STAThread 標記**Main**方法。 @No__t_0 編譯器會自動執行此工作。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
- 若要修正此規則的違規情形，加入<xref:System.STAThreadAttribute>屬性至進入點。 如果<xref:System.MTAThreadAttribute?displayProperty=fullName>屬性存在，則將它移除。
+ 若要修正此規則的違規情形，請將 <xref:System.STAThreadAttribute> 屬性新增到進入點。 如果 <xref:System.MTAThreadAttribute?displayProperty=fullName> 屬性存在，請將它移除。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
- 安全地隱藏此規則的警告，如果您正在開發.NET Compact framework 中，為其<xref:System.STAThreadAttribute>屬性是不必要的和不受支援。
+ 如果您要針對 .NET Compact Framework 進行開發，而不需要 <xref:System.STAThreadAttribute> 屬性且不支援，則可放心地隱藏此規則的警告。
 
 ## <a name="example"></a>範例
- 下列範例示範如何正確使用<xref:System.STAThreadAttribute>。
+ 下列範例示範 <xref:System.STAThreadAttribute> 的正確使用方式。
 
  [!code-csharp[FxCop.Usage.StaThread#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.StaThread/cs/FxCop.Usage.StaThread.cs#1)]
  [!code-vb[FxCop.Usage.StaThread#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Usage.StaThread/vb/FxCop.Usage.StaThread.vb#1)]

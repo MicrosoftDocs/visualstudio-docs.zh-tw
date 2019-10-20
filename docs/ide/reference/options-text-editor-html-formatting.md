@@ -5,17 +5,17 @@ ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.HTML.Format
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 69a8d3f1b84bd59cec9e13bf50eb8eaa46795cdf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 3d1e5f07a2b68d86051452a16ac0f42fc9b9acf0
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62779015"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72666199"
 ---
 # <a name="options-text-editor-html-web-forms-formatting"></a>選項、文字編輯器、HTML (Web Form)、格式
 
@@ -62,21 +62,21 @@ ms.locfileid: "62779015"
 
 - **輸入時插入屬性值引號**
 
-   選取此選項時，編輯器會在您輸入時自動在屬性前後加上引號 (例如：ID="Select1")。 如果想要手動插入標記的引號，請清除這個選項。
+   選取此選項時，編輯器會在您輸入時自動在屬性前後加上引號（例如： ID = "Select1"）。 如果想要手動插入標記的引號，請清除這個選項。
 
    > [!NOTE]
    > 無論是否選取這個選項，都會保留標記中的所有現有引號，永遠不會移除引號。
 
 - **格式化時插入屬性值引號**
 
-   選取此選項時，自動格式化會在屬性值前後加上引號 (例如：ID="Select1")。
+   選取這個選項時，自動格式化會在屬性值前後加上引號（例如： ID = "Select1"）。
 
    > [!NOTE]
    > 無論是否選取這個選項，都會保留標記中的所有現有引號。
 
 - **自動插入結尾標記**
 
-   選取此選項時，只要您關閉開頭標籤，編輯器就會自動建立結尾標籤 (例如，**\</b>**)。
+   選取此選項時，只要您關閉開頭標籤，編輯器就會自動建立結尾標籤 (例如， **\</b>** )。
 
 ## <a name="tag-wrapping"></a>標記換行
 
@@ -99,6 +99,6 @@ ms.locfileid: "62779015"
 
    顯示 [標籤專用選項] 對話方塊，可讓您設定個別標籤或標籤群組的格式。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [選項對話方塊、環境、一般](../../ide/reference/general-environment-options-dialog-box.md)

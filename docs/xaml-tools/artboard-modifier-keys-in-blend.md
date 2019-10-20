@@ -3,17 +3,17 @@ title: Blend 中的畫板輔助按鍵
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 50732733-ff49-41ba-8c44-4f6a3875ec1c
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 47953eb85628d34935f0069bb074f35f4ff3f51f
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: fca85bd48a8fd755e7bec70216572fcfe2f84b36
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72450916"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72649725"
 ---
 # <a name="artboard-modifier-keys-in-blend"></a>Blend 中的畫板輔助按鍵
 某些鍵盤快速鍵沒有相關的功能表項目，這代表您不能使用 [!INCLUDE[blend_subs](../debugger/includes/blend_subs_md.md)] 使用者介面來找出它們。 下表列出可修改動作的快速鍵，例如調整物件大小。

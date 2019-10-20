@@ -7,17 +7,17 @@ helpviewer_keywords:
 - Visual Studio templates, updating
 - project templates, updating
 - updating templates [Visual Studio]
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 57e457224d47e278df169b931c6e9cf6b8ae25e1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: ee0118ce4181a12ca4c199b8174a28fb4b431063
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62974692"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72656533"
 ---
-# <a name="how-to-update-existing-templates"></a>HOW TO：更新現有範本
+# <a name="how-to-update-existing-templates"></a>如何：更新現有的範本
 
 在建立範本並將檔案壓縮成 *.zip* 檔之後，建議您修改範本。 若要執行此動作，您可以手動變更範本中的檔案，或從以範本為基礎的專案中匯出新範本。
 
@@ -37,7 +37,7 @@ Visual Studio 提供可用來更新現有範本的 [匯出範本精靈]：
 
 1. 遵循精靈中的指示，將範本匯出成 *.zip* 檔案。
 
-1. (選擇性) 將 *.zip* 檔案放在下列目錄中：*%USERPROFILE%\Documents\Visual Studio \<版本\>\Templates\ProjectTemplates* 以供選取。 如果未在 [匯出範本精靈] 選取 [自動將範本匯入 Visual Studio] 選項，即必須執行此步驟。
+1. (選擇性) 將 *.zip* 檔案放在下列目錄中： *%USERPROFILE%\Documents\Visual Studio \<版本\>\Templates\ProjectTemplates* 以供選取。 如果未在 [匯出範本精靈] 選取 [自動將範本匯入 Visual Studio] 選項，即必須執行此步驟。
 
 1. 刪除舊的範本 *.zip* 檔案。
 
@@ -65,7 +65,7 @@ Visual Studio 提供可用來更新現有範本的 [匯出範本精靈]：
 
 1. 刪除已解壓縮的範本檔案和舊範本 *.zip* 檔案。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [自訂範本](../ide/customizing-project-and-item-templates.md)
 - [建立專案與項目範本](../ide/creating-project-and-item-templates.md)

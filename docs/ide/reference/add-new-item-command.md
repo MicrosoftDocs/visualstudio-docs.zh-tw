@@ -8,17 +8,17 @@ helpviewer_keywords:
 - Add New Item command
 - File.AddNewItem command
 ms.assetid: 63b7df32-db83-463b-bbe7-7ff011fe5298
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6a73bd7008e0058fe984fcb708c92c2bd983d427
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+ms.openlocfilehash: c08ae19ee6e1238d412e2df2f3a4ebe544bca851
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68919374"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72658784"
 ---
 # <a name="add-new-item-command"></a>加入新項目命令
 將新的方案項目，例如 .htm、.css、.txt 或框架組新增至目前的方案，並開啟它。
@@ -31,13 +31,13 @@ File.AddNewItem [filename] [/t:templatename] [/e:editorname]
 
 ## <a name="arguments"></a>引數
 `filename`\
-選擇性。 要新增至方案之項目的路徑和檔名。
+選擇項。 要新增至方案之項目的路徑和檔名。
 
 ## <a name="switches"></a>參數
 /t: `templatename`\
-選擇性。 指定要建立之檔案的類型。 如果未指定任何範本名稱，則預設會建立文字檔。
+選擇項。 指定要建立之檔案的類型。 如果未指定任何範本名稱，則預設會建立文字檔。
 
-/t:`templatename` 引數語法會鏡像 [Add New Solution Item]  (新增方案項目) 對話方塊中所找到的資訊。 您必須輸入後接檔案類型的完整分類，且使用反斜線 (`\`) 隔開分類名稱與檔案類型，並使用引號括住整個字串。
+/t:`templatename` 引數語法會鏡像 [Add New Solution Item] (新增方案項目) 對話方塊中所找到的資訊。 您必須輸入後接檔案類型的完整分類，且使用反斜線 (`\`) 隔開分類名稱與檔案類型，並使用引號括住整個字串。
 
 例如，若要建立新的文字檔，您將針對 /t:`templatename` 引數輸入下列項目。
 
@@ -46,9 +46,9 @@ File.AddNewItem [filename] [/t:templatename] [/e:editorname]
 ```
 
 /e: `editorname`\
-選擇性。 將用來開啟檔案之編輯器的名稱。 如果指定此引數，但未提供編輯器名稱，則會出現 [開啟方式]  對話方塊。
+選擇項。 將用來開啟檔案之編輯器的名稱。 如果指定此引數，但未提供編輯器名稱，則會出現 [開啟方式] 對話方塊。
 
-/e:`editorname` 引數語法會使用出現在 [開啟方式]  對話方塊並使用引號括住的編輯器名稱。
+/e:`editorname` 引數語法會使用出現在 [開啟方式] 對話方塊並使用引號括住的編輯器名稱。
 
 例如，若要使用原始程式碼編輯器開啟樣式表，您將針對 /e:`editorname` 引數輸入下列項目。
 
@@ -63,7 +63,7 @@ File.AddNewItem [filename] [/t:templatename] [/e:editorname]
 >File.AddNewItem MyHTMLpg /t:"General\HTML Page"
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [Visual Studio 命令](../../ide/reference/visual-studio-commands.md)
 - [命令視窗](../../ide/reference/command-window.md)

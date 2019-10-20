@@ -1,5 +1,5 @@
 ---
-title: CA2226:運算子應該有對稱的多載 |Microsoft Docs
+title: CA2226：運算子應該有對稱的多載 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,47 +12,47 @@ helpviewer_keywords:
 - CA2226
 ms.assetid: d202401a-ea14-4559-b15e-0ea4f5b68789
 caps.latest.revision: 16
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 574f254b1cfccf58def5c404c15b03a4c83658cc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9772577c2b1466cf3d1b5267129aa761db983021
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68142432"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72658898"
 ---
-# <a name="ca2226-operators-should-have-symmetrical-overloads"></a>CA2226:運算子應該有對稱的多載
+# <a name="ca2226-operators-should-have-symmetrical-overloads"></a>CA2226：運算子應該有對稱的多載
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |TypeName|OperatorsShouldHaveSymmetricalOverloads|
 |CheckId|CA2226|
-|分類|Microsoft.Usage|
+|Category|Microsoft。使用方式|
 |中斷變更|非中斷|
 
 ## <a name="cause"></a>原因
  類型實作等號比較運算子或不等比較運算子，但未實作相反的運算子。
 
 ## <a name="rule-description"></a>規則描述
- 沒有其中相等或不等比較是適用於類型的執行個體，而相反的運算子是未定義的情況。 通常，型別會實作不等比較運算子所傳回的等號比較運算子的相反的值。
+ 在某些情況下，不相等或不等比較適用于類型的實例，而且相反的運算子未定義。 類型通常會藉由傳回等號比較運算子的負值來實作為不等運算子。
 
- C# 編譯器會發出這項規則的違規錯誤。
+ C#編譯器會發出錯誤，以違反此規則。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
- 若要修正此規則的違規情形，實作相等和不等比較運算子，或移除的存在。
+ 若要修正此規則的違規情形，請同時執行相等和不等比較運算子，或移除其中一項。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
- 請勿隱藏此規則的警告。 您的型別不適用於與一致的方式[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]。
+ 請勿隱藏此規則的警告。 您的類型將無法以與 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 一致的方式來使用。
 
-## <a name="related-rules"></a>相關的規則
- [CA1046:不要多載參考類型上的等號比較運算子](../code-quality/ca1046-do-not-overload-operator-equals-on-reference-types.md)
+## <a name="related-rules"></a>相關規則
+ [CA1046：請勿多載參考類型上的等號比較運算子](../code-quality/ca1046-do-not-overload-operator-equals-on-reference-types.md)
 
- [CA2225:運算子多載必須有具名的替代項目](../code-quality/ca2225-operator-overloads-have-named-alternates.md)
+ [CA2225：運算子多載必須有具名的替代方法](../code-quality/ca2225-operator-overloads-have-named-alternates.md)
 
- [CA2224:覆寫等於多載等號比較運算子](../code-quality/ca2224-override-equals-on-overloading-operator-equals.md)
+ [CA2224：多載等號比較運算子時必須一併覆寫 Equals](../code-quality/ca2224-override-equals-on-overloading-operator-equals.md)
 
- [CA2218:Equals 覆寫 GetHashCode](../code-quality/ca2218-override-gethashcode-on-overriding-equals.md)
+ [CA2218：覆寫 Equals 時必須一併覆寫 GetHashCode](../code-quality/ca2218-override-gethashcode-on-overriding-equals.md)
 
- [CA2231：在覆寫 ValueType.Equals 上多載等號運算子](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md)
+ [CA2231：覆寫 ValueType.Equals 時必須一併多載等號比較運算子](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md)

@@ -2,26 +2,26 @@
 title: 常用命令的預設鍵盤快速鍵
 ms.date: 11/04/2016
 ms.topic: reference
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 72e010d76188be1ebe07eb9400b7cde60c2bf0a6
-ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
-ms.translationtype: HT
+ms.openlocfilehash: eda902db03d7211a4025663088cf8bf3718e4a2f
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67043340"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72652524"
 ---
 # <a name="popular-keyboard-shortcuts-for-visual-studio"></a>Visual Studio 的熱門鍵盤快速鍵
 
 您可以選擇這些預設鍵盤快速鍵以存取 Visual Studio 中的常用命令。 如需內含預設快速鍵命令的完整清單，請參閱[預設鍵盤快速鍵](../ide/default-keyboard-shortcuts-in-visual-studio.md)。
 
-「全域」  內容表示快速鍵適用於 Visual Studio 中的任何工具視窗。
+「全域」內容表示快速鍵適用於 Visual Studio 中的任何工具視窗。
 
 > [!NOTE]
-> 您可以開啟 [選項]  對話方塊，展開 [環境]  節點，然後選擇 [鍵盤]  ，以[查看任何命令的捷徑](identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)。
+> 您可以開啟 [選項] 對話方塊，展開 [環境] 節點，然後選擇 [鍵盤]，以[查看任何命令的捷徑](identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)。
 
 ## <a name="build"></a>組建
 
@@ -169,7 +169,7 @@ ms.locfileid: "67043340"
 |Window.NextDocumentWindowNav|**Ctrl+Tab** [全域]|
 |Window.NextSplitPane|**F6** [全域]|
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [識別及自訂 Visual Studio 中的鍵盤快速鍵](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)
 - [Visual Studio 中的所有鍵盤快速鍵](default-keyboard-shortcuts-in-visual-studio.md)

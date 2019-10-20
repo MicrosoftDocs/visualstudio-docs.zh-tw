@@ -2,17 +2,17 @@
 title: 診斷資料和系統產生的記錄檔
 ms.date: 05/24/2018
 ms.topic: conceptual
-author: gewarren
+author: jillre
 ms.author: michma
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f92e899ff8e56c68fcf1a4ab639d027c139afcf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 9702439569fa9db1ff8687e914d5c9d20865e2b0
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62557394"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72652466"
 ---
 # <a name="system-generated-logs-collected-by-visual-studio"></a>Visual Studio 所收集的系統產生記錄檔
 
@@ -70,7 +70,7 @@ Visual Studio 會收集系統針對損毀、無回應、UI 無回應，和高 CP
 
 了解我們所收集的資料和其存取和保留之條件約束的用途之後，我們建議您針對 Visual Studio 和 Windows 使用預設的隱私權設定。 不過，您可以[選擇退出](../ide/visual-studio-experience-improvement-program.md#opt-in-or-out) Visual Studio 經驗改進計畫。 若要選擇退出所有計畫的系統產生記錄檔收集，請參閱 [Windows 10 中的診斷、意見反應與隱私權](https://privacy.microsoft.com/windows-10-feedback-diagnostics-and-privacy)。 選項可能會根據您所使用的 Windows 版本而異。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [Visual Studio 客戶經驗改進計畫](visual-studio-experience-improvement-program.md)
 - [Windows 10 中的診斷、意見反應與隱私權](https://privacy.microsoft.com/windows-10-feedback-diagnostics-and-privacy)

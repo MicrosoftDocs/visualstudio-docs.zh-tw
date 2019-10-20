@@ -2,19 +2,19 @@
 title: 將變數宣告移到靠近參考的位置
 ms.date: 01/26/2018
 ms.topic: reference
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: e23c5c8d6ea0895f9e5a78e726bb7a7cede071bb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: c0a82b48a556e26866393661d4b87836db765abb
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62540592"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72666492"
 ---
 # <a name="move-declaration-near-reference-refactoring"></a>將宣告移到靠近參考的位置重構
 
@@ -35,7 +35,7 @@ ms.locfileid: "62540592"
 1. 接著，執行下列其中一項操作：
 
    - **鍵盤**
-      - 在字行任何地方按 **Ctrl**+**.**， 以觸發 [快速動作與重構] 功能表，然後從 [預覽] 快顯視窗中選取 [將宣告移近參考]。
+      - 在字行任何地方按 **Ctrl**+ **.** ， 以觸發 [快速動作與重構] 功能表，然後從 [預覽] 快顯視窗中選取 [將宣告移近參考]。
    - **滑鼠**
       - 在程式碼上按一下滑鼠右鍵，選取 [快速動作與重構] 功能表，然後從 [預覽] 快顯視窗中選取 [將宣告移近參考]。
 
@@ -62,7 +62,7 @@ if (condition)
 }
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [重構](../refactoring-in-visual-studio.md)
 - [預覽變更](../../ide/preview-changes.md)

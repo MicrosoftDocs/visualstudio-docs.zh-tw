@@ -6,17 +6,17 @@ helpviewer_keywords:
 - Visual Studio templates, creating multi-file item templates
 - multi-file item templates
 - item templates, creating multi-file item templates
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 745f371fa0461c2dc0dcedac0e06d160bbf7e209
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 82047b4a49db4edbea4ce965d1987f87a799a9f7
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62428985"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72655935"
 ---
-# <a name="how-to-create-multi-file-item-templates"></a>HOW TO：建立多重檔案項目範本
+# <a name="how-to-create-multi-file-item-templates"></a>如何：建立多檔案項目範本
 
 項目範本只能指定一個項目，但有時項目是由多個檔案所構成。 例如，Windows Forms 項目範本需要下列三個檔案：
 
@@ -28,7 +28,7 @@ ms.locfileid: "62428985"
 
 多檔案項目範本需要參數，確保建立項目時使用正確的檔案副檔名。 如果您使用 [匯出範本精靈] 建立多檔案項目範本，就會自動產生這些參數，而且不需要進行任何進一步編輯。
 
-## <a name="use-the-export-template-wizard"></a>[匯出範本精靈] 隨即開啟
+## <a name="use-the-export-template-wizard"></a>使用 [匯出範本精靈]
 
 建立多檔案項目範本使用的方式和建立單一檔案項目範本一樣。 請參閱[如何：建立項目範本](../ide/how-to-create-item-templates.md)。 在精靈的 [選取要匯出的項目] 頁面中，選取有相依檔案的檔案 (例如，Windows Forms 表單檔案)。 精靈會自動納入範本的所有相依檔案，例如設計工具和資源檔。
 
@@ -36,7 +36,7 @@ ms.locfileid: "62428985"
 
 1. 以手動建立單一檔案項目範本的方式建立項目範本，但包含構成多檔案項目的每一個檔案。
 
-1. 在 *.vstemplate* XML 檔案中，為每個個別的檔案新增 `ProjectItem` 項目，並在此項目中新增 `TargetFileName` 屬性。 將 `TargetFileName` 屬性的值設為 *$fileinputname$.FileExtension*，其中 *FileExtension* 是範本中所含檔案的檔案副檔名。 例如：
+1. 在 *.vstemplate* XML 檔案中，為每個個別的檔案新增 `ProjectItem` 項目，並在此項目中新增 `TargetFileName` 屬性。 將 `TargetFileName` 屬性的值設為 *$fileinputname$.FileExtension*，其中 *FileExtension* 是範本中所含檔案的檔案副檔名。 例如:
 
     ```xml
     <ProjectItem TargetFileName="$fileinputname$.vb">
@@ -92,7 +92,7 @@ ms.locfileid: "62428985"
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [建立專案與項目範本](../ide/creating-project-and-item-templates.md)
 - [如何：建立項目範本](../ide/how-to-create-item-templates.md)

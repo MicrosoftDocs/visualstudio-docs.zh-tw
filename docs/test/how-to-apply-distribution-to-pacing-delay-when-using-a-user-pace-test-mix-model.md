@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - load tests, test mix model
 ms.assetid: ae8b35f9-d465-4d72-8d7d-7b56ae6ffd22
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: d3ef8ecfefd1d614570b4d73808d3e5736d77230
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 3241017a381370f215ed4f9211ae646dc6c80b65
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62979335"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72664834"
 ---
-# <a name="how-to-apply-distribution-to-pacing-delay-for-a-user-pace-test-mix-model"></a>HOW TO：將分佈套用到步調延遲以進行使用者步調測試混合模型
+# <a name="how-to-apply-distribution-to-pacing-delay-for-a-user-pace-test-mix-model"></a>做法：將分佈套用到步調延遲以進行使用者步調測試混合模型
 
 使用 [新增負載測試精靈] 來建立負載測試之後，就可以使用 [負載測試編輯器] 來變更情節屬性，以符合您的測試需求和目標。
 
@@ -28,11 +28,11 @@ ms.locfileid: "62979335"
 
 [將分佈套用到步調延遲] 的值可以設定為 true 或 false：
 
-- **True**：情節會套用 [編輯測試混合] 對話方塊中 [按每使用者每小時測試] 欄位值指定的常態統計分佈延遲。 如需詳細資訊，請參閱[編輯測試混合模型以指定虛擬使用者執行測試的可能性](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md)。
+- **True**：情節會套用 [編輯測試混合] 對話方塊中 [按每使用者每小時測試] 資料行的值所指定的正常統計分佈延遲。 如需詳細資訊，請參閱[編輯測試混合模型以指定虛擬使用者執行測試的可能性](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md)。
 
      例如，假設您在 [編輯測試混合] 對話方塊中將測試的 [按每使用者每小時測試] 值設定為每小時兩位使用者。 如果 [將分佈套用到步調延遲] 屬性設定為 [True]，則正常統計散發會套用至測試之間的等待時間。 測試仍然會每小時執行兩項測試，但是兩項測試之間不一定會有 30 分鐘延遲。 第一項測試可能在四分鐘後執行，而第二項測試在 45 分鐘後執行。
 
-- **False**：測試會依照您為 [編輯測試混合] 對話方塊中 [按每使用者每小時測試] 欄位值指定的步調來執行。 如需詳細資訊，請參閱[編輯測試混合模型以指定虛擬使用者執行測試的可能性](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md)。
+- **False**：測試會依照您為 [編輯測試混合] 對話方塊中 [按每使用者每小時測試] 資料行的值指定的步調執行。 如需詳細資訊，請參閱[編輯測試混合模型以指定虛擬使用者執行測試的可能性](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md)。
 
      例如，假設您在 [編輯測試混合] 對話方塊中將測試的 [按每使用者每小時測試] 值設定為每小時兩位使用者。 如果 [將分佈套用到步調延遲] 屬性設定為 [False]，則測試執行時不會有任何延遲。 測試將會每 30 分鐘執行。 這樣可確保每小時執行兩項測試。
 
@@ -52,7 +52,7 @@ ms.locfileid: "62979335"
 
 5. 選取 [檔案] > [儲存]。 現在，您已可以使用新的 [將分佈套用到步調延遲] 值來執行負載測試。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [編輯負載測試情節](../test/edit-load-test-scenarios.md)
 - [逐步解說：建立和執行負載測試](../test/walkthrough-create-and-run-a-load-test.md)

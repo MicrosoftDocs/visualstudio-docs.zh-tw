@@ -6,15 +6,15 @@ helpviewer_keywords:
 - agents, requirements
 - controllers, requirements
 ms.assetid: 372d97ce-12e4-46a9-9863-da508adba68f
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 56004b22c77fe1388a666e175171579e60ffb3ad
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: d33fb01bf931a2f7f3585197151f167c79575da6
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62431442"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72659927"
 ---
 # <a name="test-controller-and-test-agent-requirements-for-load-testing"></a>負載測試的測試控制器和測試代理程式需求
 
@@ -39,7 +39,7 @@ ms.locfileid: "62431442"
 |N x 30 部電腦於測試環境中。 這包括要測試的代理程式和伺服器。|測試控制器|N 2.6 GHz 處理器|||
 
 > [!NOTE]
-> 虛擬使用者的人數會隨著每個測試而大不相同。 造成這個變異的主要原因是「考慮時間」  或使用者延遲的變異。 如需詳細資訊，請參閱[編輯考慮時間以模擬網站人類互動延遲](../test/edit-think-times-in-load-test-scenarios.md)。 在負載測試中，Web 測試一般都比單元測試更為有效，而且可產生更多的負載。 上表數字的有效情況：對一般 Web 應用程式執行 Web 測試時，搭配 3-5 秒的考慮時間。
+> 虛擬使用者的人數會隨著每個測試而大不相同。 造成這個變異的主要原因是「考慮時間」或使用者延遲的變異。 如需詳細資訊，請參閱[編輯考慮時間以模擬網站人類互動延遲](../test/edit-think-times-in-load-test-scenarios.md)。 在負載測試中，Web 測試一般都比單元測試更為有效，而且可產生更多的負載。 上表數字的有效情況：對一般 Web 應用程式執行 Web 測試時，搭配 3-5 秒的考慮時間。
 
 這裡提供的方針可做為硬體規劃的一般指引。 測試資料的數量和測試代理程式的數目會使測試效能產生極大的差異。 對測試代理程式而言，CPU 速度和可用的記憶體將會限制測試負載。 此外，視測試代理程式的數目和測試的相關資料數量而定，測試控制器會需要更大量的資源。
 
@@ -59,6 +59,6 @@ ms.locfileid: "62431442"
 
 您可以監視代理程式電腦來判定它們的資源需求，方法為觀察在測試期間執行和縮放的 *QTAgent\*.exe* 處理序。 *QTAgent\*.exe* 處理序上最常見的瓶頸為 CPU 使用率。 如果 CPU 使用率持續保持在九十幾，則表示代理程式的負載相當重。 次常見的瓶頸為記憶體使用量。 針對需求測試，監視這些資源有助於判定是否應增加電腦資源，或是以不同方式分散測試。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [安裝和設定測試代理程式](../test/lab-management/install-configure-test-agents.md)

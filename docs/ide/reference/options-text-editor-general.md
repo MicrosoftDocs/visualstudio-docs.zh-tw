@@ -28,21 +28,21 @@ helpviewer_keywords:
 - Text Editor [Visual Studio]
 - editors, global settings
 ms.assetid: 4ac21e48-3243-4141-9058-7eaf12b3cde7
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b23edb73ee08762ae8e3efaea4f883693aaacbd
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
-ms.translationtype: HT
+ms.openlocfilehash: ee7d7ebab51a3edfeb84a95609c6bdad581b6753
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68606012"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72666216"
 ---
 # <a name="options-dialog-box-text-editor--general"></a>選項對話方塊：文字編輯器 \> 一般
 
-此對話方塊可讓您變更 Visual Studio 程式碼和文字編輯器的全域設定。 若要顯示這個對話方塊，請選取 [工具]  功能表上的 [選項]  ，並展開 [文字編輯器]  資料夾，然後選取 [一般]  。
+此對話方塊可讓您變更 Visual Studio 程式碼和文字編輯器的全域設定。 若要顯示這個對話方塊，請選取 [工具] 功能表上的 [選項]，並展開 [文字編輯器] 資料夾，然後選取 [一般]。
 
 ## <a name="settings"></a>設定
 
@@ -68,11 +68,11 @@ ms.locfileid: "68606012"
 
 ### <a name="enable-mouse-click-to-perform-go-to-definition"></a>啟用按一下滑鼠即執行前往定義
 
-選取時，您可以按下 **Ctrl** 並暫留在元素上，同時按一下滑鼠。 這樣會帶您前往所選取元素的定義。 您也可以從 [使用輔助按鍵]  下拉式清單選擇 [Alt]  或 [Ctrl + Alt]   。
+選取時，您可以按下 **Ctrl** 並暫留在元素上，同時按一下滑鼠。 這樣會帶您前往所選取元素的定義。 您也可以從 [使用輔助按鍵] 下拉式清單選擇 [Alt] 或 [Ctrl + Alt]。
 
-選取 [在預覽檢視中開啟定義]  核取方塊，以在視窗中顯示元素的定義，而不需從您目前在程式碼編輯器中的位置尋覽到他處。
+選取 [在預覽檢視中開啟定義] 核取方塊，以在視窗中顯示元素的定義，而不需從您目前在程式碼編輯器中的位置尋覽到他處。
 
-## <a name="display"></a>顯示
+## <a name="display"></a>顯示器
 
 ### <a name="selection-margin"></a>選取範圍邊界
 
@@ -94,11 +94,11 @@ ms.locfileid: "68606012"
 
 選取時，編輯器中會出現對齊結構化程式碼區塊的垂直線，可讓您輕鬆地識別個別程式碼區塊。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [所有語言、文字編輯器、選項](../../ide/reference/options-text-editor-all-languages.md)
-- [索引標籤、所有語言、文字編輯器、選項](../../ide/reference/options-text-editor-all-languages-tabs.md)
-- [副檔名、文字編輯器、選項](../../ide/reference/options-text-editor-file-extension.md)
+- [選項、文字編輯器、所有語言、索引標籤](../../ide/reference/options-text-editor-all-languages-tabs.md)
+- [選項、文字編輯器、副檔名](../../ide/reference/options-text-editor-file-extension.md)
 - [識別及自訂鍵盤快速鍵](../../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)
 - [自訂編輯器](../how-to-change-text-case-in-the-editor.md)
 - [使用 IntelliSense](../../ide/using-intellisense.md)

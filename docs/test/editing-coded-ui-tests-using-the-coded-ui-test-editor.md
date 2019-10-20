@@ -6,17 +6,17 @@ f1_keywords:
 - vs.codedUItest.testeditor
 helpviewer_keywords:
 - coded UI test, Coded UI Test Editor
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-author: gewarren
-ms.openlocfilehash: 88002f4187883d55f22ec9f3dc80f3ceb65e7e48
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+author: jillre
+ms.openlocfilehash: 971b5d178a777b7a0021eda4bfccab06727981ee
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62784418"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72665007"
 ---
 # <a name="edit-coded-ui-tests-using-the-coded-ui-test-editor"></a>使用自動程式化 UI 測試編輯器來編輯自動程式化 UI 測試
 
@@ -24,7 +24,7 @@ ms.locfileid: "62784418"
 
 [!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
-**需求**
+**Requirements**
 
 - Visual Studio 企業版
 - 自動程式化 UI 測試元件
@@ -74,7 +74,7 @@ ms.locfileid: "62784418"
 
 若要修改 UI 動作的屬性，請在 [ **UI 動作** ] 窗格中，展開包含您想要編輯其屬性之 UI 動作的測試方法，選取 UI 動作，然後使用 [屬性] 視窗修改屬性。
 
-例如，如果伺服器無法使用，而且您有一個與網頁瀏覽器建立關聯的 UI 動作，其說明 **移至網頁 <http://Contoso1/default.aspx>'**，則您可以將 URL 變更為 `'http://Contoso2/default.aspx'`。
+例如，如果伺服器無法使用，而且您有一個與網頁瀏覽器建立關聯的 UI 動作，其說明 **移至網頁 <http://Contoso1/default.aspx>'** ，則您可以將 URL 變更為 `'http://Contoso2/default.aspx'`。
 
 ![控制項屬性](../test/media/codeduitestcontrolprop.png)
 
@@ -84,7 +84,7 @@ ms.locfileid: "62784418"
 
 完成您的修改之後，選擇 Visual Studio 工具列上的 [儲存]，儲存 *UIMap.Designer* 檔案的變更。
 
-### <a name="tips"></a>秘訣
+### <a name="tips"></a>祕訣
 
 - 如果未顯示 [屬性] 視窗，請按住 **Alt** 再按 **Enter**，或是按 **F4**。
 
@@ -119,7 +119,7 @@ ms.locfileid: "62784418"
 > [!WARNING]
 > 分割方法時，如果您仍然想要併入那些 UI 動作，則必須將任何呼叫現有方法的程式碼修改為同時也呼叫您即將建立的新方法。 當您分割方法時，Microsoft Visual Studio 對話方塊隨即顯示。 它會警告您，必須將任何呼叫現有方法的程式碼修改為同時也呼叫您即將建立的新方法。 選擇 [ **是**]。
 
-### <a name="tips"></a>秘訣
+### <a name="tips"></a>祕訣
 
 - 若要復原分割，請從 [編輯] 功能表中選擇 [復原]，或是按 **Ctrl**+**Z**。
 
@@ -142,7 +142,7 @@ ms.locfileid: "62784418"
 > [!WARNING]
 > 一旦移動方法，便無法再使用 [自動程式化 UI 測試編輯器] 來編輯方法。 您必須使用 [程式碼編輯器] 加入及維護自訂程式碼。 當您移動方法時，Microsoft Visual Studio 對話方塊隨即顯示。 它會警告此方法將從 *UIMap.uitest* 檔案移至 *UIMap.cs* 或 *UIMap.vb* 檔案，而且您將無法再使用 [自動程式碼 UI 測試編輯器] 編輯此方法。 選擇 [ **是**]。
 
-### <a name="tips"></a>秘訣
+### <a name="tips"></a>祕訣
 
 若要復原移動，請從 [編輯] 功能表中選取 [復原]，或是按 **Ctrl**+**Z**。 不過，您必須從 *UIMap.cs* 或 U*IMap.vb* 檔案手動移除此程式碼。
 
@@ -159,7 +159,7 @@ ms.locfileid: "62784418"
 > [!NOTE]
 > 找出 UI 控制項之前，請確認與測試相關聯的應用程式正在執行。
 
-### <a name="tips"></a>秘訣
+### <a name="tips"></a>祕訣
 
 您可以使用 [全部尋找] 選項，確認可以正確地找出容器下的所有控制項。 下一節將說明此選項。
 
@@ -184,13 +184,13 @@ ms.locfileid: "62784418"
 
 ![加上 5 秒鐘的延遲](../test/media/codeduidealy2.png)
 
-在 [ **UI 動作** ] 窗格中，展開包含 UI 動作的測試方法，而您想要在該 UI 動作之前插入延遲。 選取 UI 動作。 接下來，開啟 UI 動作的捷徑功能表，然後選擇 [ **在前面插入延遲**]。 在選取的 UI 動作之前，以下列文字插入延遲並醒目提示：**動作之間等候 1 秒的使用者延遲**。 在 [屬性] 視窗中，將 [延遲] 屬性的值變更為需要的毫秒數。
+在 [ **UI 動作** ] 窗格中，展開包含 UI 動作的測試方法，而您想要在該 UI 動作之前插入延遲。 選取 UI 動作。 接下來，開啟 UI 動作的捷徑功能表，然後選擇 [ **在前面插入延遲**]。 在選取的 UI 動作之前，以下列文字插入延遲並反白顯示： **動作之間等候 1 秒的使用者延遲**。 在 [屬性] 視窗中，將 [延遲] 屬性的值變更為需要的毫秒數。
 
 完成插入延遲之後，請選擇 Visual Studio 工具列上的 [儲存]，儲存 *UIMap.Designer* 檔案的變更。
 
 如果您需要確保可在 UI 動作之前使用特定控制項，您應該考慮使用適當的 UITestControl.WaitForControlXXX() 方法，將自訂程式碼加入至測試方法。 如需詳細資訊，請參閱[讓自動程式化 UI 測試在播放期間等候特定事件](../test/making-coded-ui-tests-wait-for-specific-events-during-playback.md)。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [使用 UI 自動化來測試您的程式碼](../test/use-ui-automation-to-test-your-code.md)
 - [建立自動程式化 UI 測試](../test/use-ui-automation-to-test-your-code.md)

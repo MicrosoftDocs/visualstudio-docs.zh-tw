@@ -6,17 +6,17 @@ helpviewer_keywords:
 - Visual Studio, unit tests
 - unit tests, verifying code with
 - testing code, automated tests
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-author: gewarren
-ms.openlocfilehash: 5682d752ba2c1430d8ab708e3dadda754a1ba757
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
-ms.translationtype: HT
+author: jillre
+ms.openlocfilehash: fd6d6dca2680dcfcaa42912333b080c428ba78d2
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65461388"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72659854"
 ---
 # <a name="unit-test-your-code"></a>對程式碼進行單元測試
 
@@ -42,20 +42,20 @@ ms.locfileid: "65461388"
 
 |工作|相關主題|
 |-|-----------------------|
-|**快速入門和逐步解說：** 從程式碼範例了解 Visual Studio 中的單元測試。|- [逐步解說：針對受控碼建立和執行單元測試](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)<br />- [快速入門：搭配 [測試總管] 進行以測試為導向的開發工作](../test/quick-start-test-driven-development-with-test-explorer.md)<br />- [如何：將單元測試新增到 C++ 應用程式](../test/how-to-use-microsoft-test-framework-for-cpp.md)|
-|**使用 [測試總管] 進行單元測試：** 了解 [測試總管] 如何協助建立更具生產力且更有效率的單元測試。|- [單元測試基本概念](../test/unit-test-basics.md)<br />- [建立單元測試專案](../test/create-a-unit-test-project.md)<br />- [使用測試總管執行單元測試](../test/run-unit-tests-with-test-explorer.md)<br />- [安裝協力廠商單元測試架構](../test/install-third-party-unit-test-frameworks.md)|
+|**快速入門和**逐步解說：從程式碼範例瞭解 Visual Studio 中的單元測試。|- [逐步解說：針對 managed 程式碼建立及執行單元測試](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)<br />- [快速入門：搭配測試總管進行以測試為導向的開發工作](../test/quick-start-test-driven-development-with-test-explorer.md)<br />- [如何：將單元測試新增至C++應用程式](../test/how-to-use-microsoft-test-framework-for-cpp.md)|
+|**使用測試總管進行單元測試：** 了解測試總管如何協助建立更具生產力且更有效率的單元測試。|- [單元測試基本概念](../test/unit-test-basics.md)<br />- [建立單元測試專案](../test/create-a-unit-test-project.md)<br />- [使用測試總管執行單元測試](../test/run-unit-tests-with-test-explorer.md)<br />- [安裝協力廠商單元測試架構](../test/install-third-party-unit-test-frameworks.md)|
 |**對 C++ 程式碼進行單元測試**|- [撰寫 C/C++ 的單元測試](../test/writing-unit-tests-for-c-cpp.md)|
 |**隔離單元測試**|- [使用 Microsoft Fakes 隔離測試中的程式碼](../test/isolating-code-under-test-with-microsoft-fakes.md)|
 |**使用程式碼涵蓋範圍來識別測試專案程式碼的哪個部分：** 了解 Visual Studio 測試工具的程式碼涵蓋範圍功能。|- [使用程式碼涵蓋範圍來決定所測試的程式碼數量](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)|
-|**使用負載測試來執行壓力與效能分析：** 了解如何建立負載測試來協助您應用程式中的效能及壓力問題。|- [快速入門：建立負載測試專案](../test/quickstart-create-a-load-test-project.md)<br />- [負載測試 (Azure Test Plans 和 TFS)](/azure/devops/test/load-test/index?view=vsts)|
-|**設定品質閘門：** 了解如何建立品質閘門，強制在簽入或合併程式碼前執行測試。|- [簽入原則 (Azure Repos TFVC)](/azure/devops/repos/tfvc/add-check-policies?view=vsts)|
-|**設定測試選項：** 了解如何設定測試選項，例如儲存測試結果的位置。|[使用 .runsettings 檔案設定單元測試](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md)|
+|**使用負載測試來執行壓力與效能分析：** 瞭解如何建立負載測試，以協助找出應用程式中的效能和壓力問題。|- [快速入門：建立負載測試專案](../test/quickstart-create-a-load-test-project.md)<br />- [負載測試 (Azure Test Plans 和 TFS)](/azure/devops/test/load-test/index?view=vsts)|
+|**設定品質管制：** 瞭解如何建立品質管制，以強制執行測試，然後才簽入或合併程式碼。|- [簽入原則 (Azure Repos TFVC)](/azure/devops/repos/tfvc/add-check-policies?view=vsts)|
+|**設定測試選項：** 瞭解如何設定測試選項，例如儲存測試結果的位置。|[使用 .runsettings 檔案設定單元測試](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md)|
 
 ## <a name="api-reference-documentation"></a>API 參考文件
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting> 描述 UnitTesting 命名空間，此命名空間可提供屬性、例外狀況、判斷提示和其他支援單元測試的類別。
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Web> 描述 UnitTesting.Web 命名空間，此命名空間可藉由提供對 ASP.NET 和 Web 服務單元測試的支援，延伸 UnitTesting 命名空間。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [改善程式碼品質](../test/improve-code-quality.md)

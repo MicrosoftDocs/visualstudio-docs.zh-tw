@@ -6,26 +6,26 @@ ms.technology: vs-ide-general
 ms.topic: troubleshooting
 ms.assetid: c2d24ae1-9902-460e-b72a-0299eed9ee82
 caps.latest.revision: 9
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: f2de40c520bca0ea04f50ec782fec2dda531172e
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 7456e60b42b18ad706b951ee58ca5c33f05cabc1
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67822074"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72665722"
 ---
 # <a name="proxy-authorization-required"></a>所需的 Proxy 授權
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-**需要 Proxy 授權**使用者連接到 Visual Studio online 資源，透過 proxy 伺服器，並使用 proxy 伺服器封鎖呼叫時，通常會發生錯誤。
+當使用者透過 proxy 伺服器連接到 Visual Studio 線上資源，而 proxy 伺服器封鎖呼叫時，通常會發生「**需要 proxy 授權**」錯誤。
 
-若要更正這個錯誤，請嘗試下列一或多個下列步驟：
+若要更正此錯誤，請嘗試下列一或多個步驟：
 
 - 重新啟動 Visual Studio。 應該會出現 [Proxy 驗證] 對話方塊。 在對話方塊中輸入您的認證。
 
-- 如果上述步驟無法解決問題，這可能是因為您的 Proxy 伺服器沒有提示輸入 http://go.microsoft.com 位址的認證，而是提示輸入 *.visualStudio.com 位址的認證。 對於這些伺服器，您需要將下列 Url 新增至允許清單，以解除封鎖 Visual Studio 中的所有登入情節：
+- 如果上述步驟無法解決問題，這可能是因為您的 Proxy 伺服器沒有提示輸入 http://go.microsoft.com 位址的認證，而是提示輸入 *.visualStudio.com 位址的認證。 對於這些伺服器，您必須將下列 Url 新增至允許清單，以解除封鎖 Visual Studio 中的所有登入案例：
 
   - \* windows.net
 
@@ -37,9 +37,9 @@ ms.locfileid: "67822074"
 
   - *.live.com
 
-- 您可以移除 http://go.microsoft.com 位址從允許清單，這樣 proxy 驗證對話方塊會顯示兩個 http://go.microsoft.com 位址及伺服器端點時重新啟動 Visual Studio。
+- 您可以從允許清單中移除 http://go.microsoft.com 位址，如此一來，當 Visual Studio 重新開機時，[proxy 驗證] 對話方塊會同時顯示 http://go.microsoft.com 位址和伺服器端點。
 
-- 如果您想要將您的預設認證用於 proxy，執行下列作業：
+- 如果您想要在 proxy 中使用預設認證，請執行下列動作：
 
    1. 在 **%ProgramFiles%\Microsoft Visual Studio 14.0\Common7\IDE** (或 **%ProgramFiles(x86)%\Microsoft Visual Studio 14.0\Common7\IDE**) 尋找 devenv.exe.config (devenv.exe 組態檔)。
 
@@ -51,6 +51,6 @@ ms.locfileid: "67822074"
       </defaultProxy>
       ```
 
-      插入您的網路中的正確的 proxy 位址`proxyaddress="<http://<yourproxy:port#>`。
+      在 `proxyaddress="<http://<yourproxy:port#>` 中，為您的網路插入正確的 proxy 位址。
 
-- 請依照下列中的指示[此部落格文章](http://blogs.msdn.com/b/rido/archive/2010/05/06/how-to-connect-to-tfs-through-authenticated-web-proxy.aspx)加入可讓您使用 proxy 的程式碼。
+- 遵循[此 blog 文章](http://blogs.msdn.com/b/rido/archive/2010/05/06/how-to-connect-to-tfs-through-authenticated-web-proxy.aspx)中的指示，加入可讓您使用 proxy 的程式碼。

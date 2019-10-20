@@ -12,21 +12,21 @@ helpviewer_keywords:
 - load test results, analyzing threshold violations
 - thresholds in load tests
 ms.assetid: 969ed346-cf2e-4d48-82b3-edb3e075e1c0
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 011b010eaad5def8943fd18a84da9fefdb01eff5
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+ms.openlocfilehash: 7ffff5818c5d3c7085ef3bebcc29c31a363a09b9
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68918630"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72665335"
 ---
 # <a name="analyzing-threshold-rule-violations-in-load-tests-using-the-load-test-analyzer"></a>使用負載測試分析器來分析負載測試中的臨界值規則違規
 
 臨界值規則與特定的效能計數器有關，而違規指的是效能計數器超過或未達設定值。 當您執行負載測試時，可以針對事先設定的臨界值規則分析所發生的違規。
 
-如果發生違規，**負載測試分析器**的狀態列就會出現 [臨界值違規]  超連結，並指出發生的違規數量。 您可以選擇超連結顯示臨界值違規資料表。 您也可以在 [計數器]  視窗和圖形上檢視臨界值違規。
+如果發生違規，**負載測試分析器**的狀態列就會出現 [臨界值違規] 超連結，並指出發生的違規數量。 您可以選擇超連結顯示臨界值違規資料表。 您也可以在 [計數器] 視窗和圖形上檢視臨界值違規。
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
@@ -34,14 +34,14 @@ ms.locfileid: "68918630"
 
 臨界值違規資料表會顯示最前面的 1,000 個違規。 下表包含這些資料行：
 
-|資料行|說明|預設為可見|
+|Column|描述|預設為可見|
 |-|-|-|
-|時間|負載測試期間發生違規的時間。|是|
-|電腦|發生違規之測試中的電腦名稱。 **注意：** 當您在 Rig 上執行負載測試時，這很重要。|是|
-|分類|發生違規之效能計數器的分類。|是|
-|計數器|發生違規之效能計數器的名稱。|是|
-|執行個體|發生違規的效能計數器執行個體。|是|
-|訊息|描述臨界值違規的訊息。 例如，**值 5 超過 0 的關鍵臨界值**。|是|
+|時間|負載測試期間發生違規的時間。|[是]|
+|電腦|發生違規之測試中的電腦名稱。 **注意：** 當您在 Rig 上執行負載測試時，這很重要。|[是]|
+|Category|發生違規之效能計數器的分類。|[是]|
+|計數器|發生違規之效能計數器的名稱。|[是]|
+|執行個體|發生違規的效能計數器執行個體。|[是]|
+|訊息|描述臨界值違規的訊息。 例如，**值 5 超過 0 的關鍵臨界值**。|[是]|
 
 > [!NOTE]
 > 選擇資料行標頭即可排序資料表。
@@ -50,7 +50,7 @@ ms.locfileid: "68918630"
 
 ## <a name="view-threshold-violations-in-the-counters-panel"></a>在計數器面板中檢視臨界值違規
 
-您可以在 [計數器]  面板中，於列出負載測試之效能計數器的樹狀目錄中，檢閱臨界值違規。 [計數器]  面板中的圖示會傳達臨界值違規。 其圖示可以是下列其中之一：
+您可以在 [計數器] 面板中，於列出負載測試之效能計數器的樹狀目錄中，檢閱臨界值違規。 [計數器] 面板中的圖示會傳達臨界值違規。 其圖示可以是下列其中之一：
 
 其圖示可以是下列其中之一：
 
@@ -70,11 +70,11 @@ ms.locfileid: "68918630"
 
 ## <a name="view-threshold-violations-on-the-graph"></a>在圖形上檢視臨界值違規
 
-您可以在圖形上檢視臨界值違規。 圖示與 [計數器]  面板類似，會在圖形上傳達臨界值違規。 在圖形上之資料旁邊出現的圖示，指出發生臨界值違規的位置。 如果臨界值違規是在圖形上未出現的計數器上發生，您可以將該計數器從 [計數器]  面板拖曳至圖形上，藉此將它新增至圖形。
+您可以在圖形上檢視臨界值違規。 圖示與 [計數器] 面板類似，會在圖形上傳達臨界值違規。 在圖形上之資料旁邊出現的圖示，指出發生臨界值違規的位置。 如果臨界值違規是在圖形上未出現的計數器上發生，您可以將該計數器從 [計數器] 面板拖曳至圖形上，藉此將它新增至圖形。
 
 如需詳細資訊，請參閱[在圖形檢視中分析負載測試結果](../test/analyze-load-test-results-in-the-graphs-view.md)。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [在負載測試中指定電腦的計數器集合和臨界值規則](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md)
 - [分析負載測試結果](../test/analyze-load-test-results-using-the-load-test-analyzer.md)

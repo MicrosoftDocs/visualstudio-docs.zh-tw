@@ -4,17 +4,17 @@ titleSuffix: Blend for Visual Studio
 ms.date: 07/31/2019
 ms.topic: conceptual
 ms.assetid: d5378c59-e2e5-49f0-91f1-aa82d984a33c
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4503209db5ed405e77c706629e68efb22bee5842
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: 6cd722e6b8690ef5ff059b69db1fbc467eec7ca3
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72450759"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72650927"
 ---
 # <a name="draw-shapes-and-paths"></a>繪製圖案與路徑
 

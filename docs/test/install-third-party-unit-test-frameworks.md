@@ -2,17 +2,17 @@
 title: 安裝協力廠商單元測試架構
 ms.date: 04/01/2019
 ms.topic: conceptual
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-author: gewarren
-ms.openlocfilehash: 9f61b52f72474a8ecd8fac4c30265dcd7cf36a5e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+author: jillre
+ms.openlocfilehash: fef59c757476b46936389ca48ca2bdaf32aec729
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62978645"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653243"
 ---
 # <a name="install-unit-test-frameworks"></a>安裝單元測試架構
 
@@ -48,6 +48,6 @@ Visual Studio 方案可包含多個單元測試專案，這些專案使用不同
 
    ![升級測試配接器](media/install-adapter-upgrade.png)
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [對程式碼進行單元測試](../test/unit-test-your-code.md)

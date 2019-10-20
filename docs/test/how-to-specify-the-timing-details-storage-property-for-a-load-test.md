@@ -6,17 +6,17 @@ helpviewer_keywords:
 - load tests, properties
 - load tests, run settings
 ms.assetid: 867a9c21-0909-4963-bc02-d41e9393008c
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: ec6ca0e39a7816d99377bc13e1274cbc96a663ea
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 4b8ef3edb592b003a8c42ef954129c3bafd3ffc8
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62970631"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653334"
 ---
-# <a name="how-to-specify-the-timing-details-storage-property-for-a-load-test-run-setting"></a>HOW TO：指定負載測試回合設定的計時詳細資料儲存區屬性
+# <a name="how-to-specify-the-timing-details-storage-property-for-a-load-test-run-setting"></a>如何：指定負載測試回合設定的計時詳細資料儲存區屬性
 
 使用 [新增負載測試精靈] 建立負載測試之後，您就可以使用 [負載測試編輯器] 來變更設定，以便符合您的測試需求和目標。
 
@@ -29,7 +29,7 @@ ms.locfileid: "62970631"
   > [!NOTE]
   > 必須選取 [所有個別細節] 選項，才能在負載測試結果中啟用虛擬使用者資料資訊。 如需詳細資訊，請參閱[在詳細資料檢視中分析虛擬使用者活動](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md)。
 
-- **無：** 不收集任何個別計時詳細資料。 但仍會收集平均值。
+- **無：** 不收集任何個別計時詳細資料， 但仍會收集平均值。
 
 - **僅限統計資料：** 儲存個別計時資料，但只以百分位數資料形式儲存。 這樣可以節省空間資源。
 
@@ -59,7 +59,7 @@ ms.locfileid: "62970631"
 
      設定 [計時詳細資料儲存區] 屬性的 [所有個別細節] 設定之後，您可以執行負載測試並檢視 [虛擬使用者活動圖]。 如需詳細資訊，請參閱[如何：分析虛擬使用者在負載測試期間的行為](../test/how-to-analyze-virtual-user-activity-during-a-load-test.md)。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [在詳細資料檢視中分析虛擬使用者活動](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md)
 - [逐步解說：使用虛擬使用者活動圖來找出問題](../test/walkthrough-use-the-virtual-user-activity-chart-to-isolate-issues.md)

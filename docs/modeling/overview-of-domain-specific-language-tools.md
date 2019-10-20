@@ -4,20 +4,20 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e31d9c01ded7754fd10419f3fd0e18d9616a51eb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 899fc041df3f7118de6be97309e8ce971235d178
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62814120"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72658314"
 ---
 # <a name="overview-of-domain-specific-language-tools"></a>Domain-Specific Language Tools 概觀
-特定領域語言工具 （DSL 工具），其裝載在 Visual Studio 中，可讓您設計的特定領域語言，然後再產生所有使用者必須具備才能建立模型為基礎之語言的項目。
+Visual Studio 所裝載的特定領域語言工具（DSL 工具），可讓您設計特定領域語言，然後產生使用者建立以該語言為基礎之模型所需的所有專案。
 
  DSL 工具中包含下列工具：
 
@@ -48,7 +48,7 @@ ms.locfileid: "62814120"
 
   如需詳細資訊，請參閱[選擇特定領域語言方案範本](../modeling/choosing-a-domain-specific-language-solution-template.md)。
 
-  精靈會建立含有下列專案的 Visual Studio 方案：
+  此 wizard 會建立包含下列專案的 Visual Studio 方案：
 
 - DSL
 
@@ -56,7 +56,7 @@ ms.locfileid: "62814120"
 
 - **DslPackage**
 
-   在 DslPackage 專案決定語言工具如何與 Visual Studio 整合。
+   DslPackage 專案會決定語言工具如何與 Visual Studio 整合。
 
 ## <a name="the-dsl-tools-graphical-interface"></a>DSL 工具圖形化介面
  您可以使用 DSL 工具圖形化介面，將項目和關聯新增至您的特定領域語言。 新增項目之後，您可以將其對應至圖形、自訂色彩和新增裝飾項目，來定義其外觀。 您也可以將項目新增至 [工具箱]。
@@ -70,11 +70,11 @@ ms.locfileid: "62814120"
  您可以提供其他程式碼來精簡模型的行為，以及定義語言的條件約束。 如有需要，您可以修改文字範本來進行大幅變更。
 
 ## <a name="distributing-your-dsl-solution"></a>散發您的 DSL 方案
- DSL 工具會在 Visual Studio 中產生裝載的套件。 此套件會顯示 [工具箱]、[DSL 總管] 和其他 UI 項目，讓使用者可以使用您的特定領域語言來建立模型。
+ DSL 工具會產生裝載于 Visual Studio 中的封裝。 此套件會顯示 [工具箱]、[DSL 總管] 和其他 UI 項目，讓使用者可以使用您的特定領域語言來建立模型。
 
- 當您建置並執行 DSL 工具方案在 Visual Studio 中時，Visual Studio 的第二個執行個體顯示給使用者的語言特定領域語言的外觀。 確認一切運作正常之後，您就可以散發在 DslPackage 專案組建資料夾中找到的 `.vsix` 檔案。 此檔案可用來做為 Visual Studio 擴充功能，在其他電腦上安裝 DSL。  如需詳細資訊，請參閱[部署特定領域語言方案](../modeling/deploying-domain-specific-language-solutions.md)。
+ 當您在 Visual Studio 中建立並執行 DSL 工具方案時，Visual Studio 的第二個實例會向您顯示特定領域語言對語言使用者的外觀。 確認一切運作正常之後，您就可以散發在 DslPackage 專案組建資料夾中找到的 `.vsix` 檔案。 這個檔案可以用來將 DSL 安裝在其他電腦上做為 Visual Studio 擴充功能。  如需詳細資訊，請參閱[部署特定領域語言方案](msi-and-vsix-deployment-of-a-dsl.md)。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [實驗執行個體](../extensibility/the-experimental-instance.md)
 - [Domain-Specific Language Tools Glossary](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa) (特定領域語言工具字彙表)

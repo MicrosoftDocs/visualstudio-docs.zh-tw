@@ -5,17 +5,17 @@ ms.date: 07/31/2019
 ms.topic: conceptual
 f1_keywords:
 - Blend.Start.Dev12
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 558d58e41e96e0425d53760fcc1b9a9dfb459e44
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: f3955d494d4c04e85eba0541c0cf09749e8ab4de
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72450794"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72649714"
 ---
 # <a name="blend-for-visual-studio-overview"></a>Blend for Visual Studio 概觀
 

@@ -6,15 +6,15 @@ helpviewer_keywords:
 - Diagnostic Data Adapter [Visual Studio ALM]
 - Diagnostic Data Adapter
 ms.assetid: b0b53fae-7007-4ad9-a604-21685937622f
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 800e866e2bfa915590060b09a98539533460bed3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 1d518f911f076481e710176924036c6e3f37625e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62965649"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72665134"
 ---
 # <a name="create-a-diagnostic-data-adapter-to-collect-custom-data-or-affect-a-test-machine"></a>建立診斷資料配接器以收集自訂資料或影響測試電腦
 
@@ -32,9 +32,9 @@ ms.locfileid: "62965649"
 
 |工作|相關主題|
 |-|-----------------------|
-|**建立診斷資料配接器：** 您可以藉由建立類別庫來建立診斷資料配接器，然後使用診斷資料配接器 API，收集您所要資訊或影響您用來執行測試的測試系統。|-   [如何：建立診斷資料配接器](../test/how-to-create-a-diagnostic-data-adapter.md)|
+|**建立診斷資料配接器：** 您可以藉由建立類別庫來建立診斷資料配接器，然後使用診斷資料配接器 API，收集您想要的資訊或影響您用來執行測試的測試系統。|-   [如何：建立診斷資料配接器](../test/how-to-create-a-diagnostic-data-adapter.md)|
 |**選取執行測試時要使用的自訂診斷資料配接器：** 您可以選取要用於測試設定的診斷資料配接器，以便在執行測試時使用該配接器。|-   [在測試時收集診斷資料 (Azure Test Plans)](/azure/devops/test/collect-diagnostic-data?view=vsts)<br />-   [在手動測試中收集診斷資料 (Azure Test Plans)](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)|
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [使用測試設定收集診斷資訊](../test/collect-diagnostic-information-using-test-settings.md)

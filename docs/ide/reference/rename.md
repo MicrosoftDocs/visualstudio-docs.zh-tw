@@ -2,8 +2,8 @@
 title: 重構重新命名
 ms.date: 01/26/2018
 ms.topic: reference
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 f1_keywords:
 - vs.csharp.refactoring.rename
@@ -12,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: d1b4ff448f04ff6f683fac06cbc0b31797edf587
-ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
+ms.openlocfilehash: 2991227b3c8d742da360465e6c506e7123259e2c
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71186591"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72655613"
 ---
 # <a name="rename-a-code-symbol-refactoring"></a>為程式碼符號重新命名的重構
 
@@ -73,14 +73,14 @@ ms.locfileid: "71186591"
 - 從 Visual Studio 2019 版本16.3 開始，當您重新命名符合其所在檔案名稱的類型時，會出現一個核取方塊，可讓您同時重新命名檔案。 當您重新命名類別、介面或列舉時，會出現此選項。 具有多個定義的部分類型不支援此選項。
 
    ![使用檔案重新命名動畫-C#](media/rename-with-file-animated-cs.gif)
-   
+
 - 如果您使用已經存在的名稱，因而造成衝突，[重新命名] 方塊將會警告您。
 
    ![重新命名衝突](media/rename-conflict-cs.png)
 
 - 重新命名符號的另一個方法是在編輯器中變更其名稱。 接著，將游標放在符號名稱上，然後按下 **Ctrl**+ **。** 或者，只要展開出現的燈泡圖示功能表，然後選擇 [將 \<舊名稱> 重新命名為 \<新名稱>]。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [重構](../refactoring-in-visual-studio.md)
 - [預覽變更](../../ide/preview-changes.md)

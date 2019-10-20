@@ -5,19 +5,19 @@ ms.date: 04/11/2018
 ms.topic: conceptual
 helpviewer_keywords:
 - performance [Visual Studio]
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 f1_keywords:
 - vs.performancecenter
 ms.workload:
 - multiple
-ms.openlocfilehash: c34755fdffb9dd2084f9999aafb01bd6b9fdb4f0
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
-ms.translationtype: HT
+ms.openlocfilehash: ad6951179d9326a2785bee865e9bc8adbefd3f2e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70180120"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72667068"
 ---
 # <a name="optimize-visual-studio-performance"></a>最佳化 Visual Studio 效能
 
@@ -49,9 +49,9 @@ ms.locfileid: "70180120"
 
 ## <a name="help-us-improve"></a>協助我們改善
 
-您的意見反應可協助我們改善。 使用 [回報問題]  功能，「記錄」追蹤，並將它傳送給我們。 選取 [快速啟動]  旁的意見反應圖示，或從功能表列中選取 [說明]   > [傳送意見反應]   > [回報問題]  。 如需詳細資訊，請參閱[如何回報 Visual Studio 的問題](../ide/how-to-report-a-problem-with-visual-studio.md)。
+您的意見反應可協助我們改善。 使用 [回報問題] 功能，「記錄」追蹤，並將它傳送給我們。 選取 [快速啟動] 旁的意見反應圖示，或從功能表列中選取 [說明] > [傳送意見反應] > [回報問題]。 如需詳細資訊，請參閱[如何回報 Visual Studio 的問題](../ide/how-to-report-a-problem-with-visual-studio.md)。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [效能秘訣與訣竅](../ide/visual-studio-performance-tips-and-tricks.md)
 - [Visual Studio 部落格 - 使用 Visual Studio 2017 15.6 版更快速地載入解決方案](https://devblogs.microsoft.com/visualstudio/load-solutions-faster-with-visual-studio-2017-version-15-6/)

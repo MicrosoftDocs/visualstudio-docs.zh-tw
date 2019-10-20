@@ -2,24 +2,24 @@
 title: 使用虛設常式隔離應用程式的組件，以便進行測試
 ms.date: 11/04/2016
 ms.topic: conceptual
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-author: gewarren
+author: jillre
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: b88905df0c99eb66c64e529610d6713801fceece
-ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
-ms.translationtype: HT
+ms.openlocfilehash: cbb47e07bbe3697f905a28d9771cf55fe6fcc74c
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66401722"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72659730"
 ---
 # <a name="use-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing"></a>使用虛設常式隔離應用程式的各個組件，方便進行單元測試
 
-「虛設常式類型」  是 Microsoft Fakes 架構提供的兩項技術之一，可讓您輕鬆地隔離測試中的元件與它所呼叫的其他元件。 虛設常式是在測試期間取代另一個元件的一小段程式碼。 使用虛設常式的優點是它會傳回一致的結果，讓測試更容易撰寫。 即使其他元件還無法運作，您仍然可以執行測試。
+「虛設常式類型」是 Microsoft Fakes 架構提供的兩項技術之一，可讓您輕鬆地隔離測試中的元件與它所呼叫的其他元件。 虛設常式是在測試期間取代另一個元件的一小段程式碼。 使用虛設常式的優點是它會傳回一致的結果，讓測試更容易撰寫。 即使其他元件還無法運作，您仍然可以執行測試。
 
 如需 Fakes 的概觀和快速入門指南，請參閱[使用 Microsoft Fakes 在測試期間隔離程式碼](../test/isolating-code-under-test-with-microsoft-fakes.md)。
 
@@ -147,13 +147,13 @@ analyzer = new StockAnalyzer(new StockFeed());
 
 #### <a name="add-a-fakes-assembly"></a>加入 Fakes 組件
 
-1. 在 [方案總管]  中，展開單元測試專案的 [參考]  。
+1. 在 [方案總管]中，展開單元測試專案的 [參考]。
 
-   如果您在 Visual Basic 中工作，選取 [方案總管]  工具列中的 [顯示所有檔案]  ，才能看見 [參考]  節點。
+   如果您在 Visual Basic 中工作，選取 [方案總管] 工具列中的 [顯示所有檔案]，才能看見 [參考] 節點。
 
 2. 選取包含您要用於建立虛設常式之介面定義的組件。
 
-3. 在捷徑功能表上，選擇 [新增 Fakes 組件]  。
+3. 在捷徑功能表上，選擇 [新增 Fakes 組件]。
 
 ### <a name="write-your-test-with-stubs"></a>撰寫含 Stub 的測試
 
@@ -218,7 +218,7 @@ End Class
 
 ### <a name="verify-parameter-values"></a>確認參數值
 
-您可以驗證當您的元件呼叫另一個元件時，是否會傳遞正確的值。 您可以在虛設常式中加入判斷提示，也可以將值儲存在測試主體中並進行驗證。 例如：
+您可以驗證當您的元件呼叫另一個元件時，是否會傳遞正確的值。 您可以在虛設常式中加入判斷提示，也可以將值儲存在測試主體中並進行驗證。 例如:
 
 ```csharp
 [TestClass]
@@ -314,7 +314,7 @@ stub.MyMethodString = (value) => 1;
 
 如果您未提供函式的虛設常式，Fakes 所產生的函式會傳回傳回類型的預設值。 如果是數字，預設值為 0，若是類別類型，則為 `null` (C#) 或 `Nothing` (Visual Basic)。
 
-### <a name="properties"></a>屬性
+### <a name="properties"></a>內容
 
 屬性 getter 和 setter 會公開為不同的委派，而且可以分別附加虛設常式。 例如，請考慮 `Value` 的 `IMyInterface` 屬性：
 
@@ -338,7 +338,7 @@ stub.ValueSet = (value) => i = value;
 
 如果您未針對屬性的 setter 或 getter 提供虛設常式方法，Fakes 產生的虛設常式會儲存值，因此虛設常式屬性的作用就像簡單變數一樣。
 
-### <a name="events"></a>事件
+### <a name="events"></a>「事件」
 
 事件會公開為委派欄位。 因此，只要叫用事件支援欄位就能引發任何附加虛設常式的事件。 請考慮下列虛設常式介面：
 
@@ -390,7 +390,7 @@ public void TestGetValue()
 
 ### <a name="stubs-of-virtual-classes"></a>虛擬類別的 Stub
 
-在上述範例中，虛設常式是從介面產生。 您也可以從具有虛擬或抽象成員的類別產生虛設常式。 例如：
+在上述範例中，虛設常式是從介面產生。 您也可以從具有虛擬或抽象成員的類別產生虛設常式。 例如:
 
 ```csharp
 // Base class in application under test
@@ -458,6 +458,6 @@ stub.InstanceBehavior = StubsBehaviors.DefaultValue;
 StubBehaviors.Current = BehavedBehaviors.DefaultValue;
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [使用 Microsoft Fakes 隔離測試中的程式碼](../test/isolating-code-under-test-with-microsoft-fakes.md)

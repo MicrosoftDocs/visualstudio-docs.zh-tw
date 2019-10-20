@@ -6,17 +6,17 @@ helpviewer_keywords:
 - load tests, run settings, context parameters
 - load tests, context parameters
 ms.assetid: a8a0b97e-8040-4711-85ab-36548b130ed2
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: b979da03c0ea5378684ff12bc86d4fb59eef9180
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: e630bfccb1741e3b194b6be4c6f8cdb065d8b942
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62979444"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72664852"
 ---
-# <a name="how-to-add-context-parameters-to-a-load-test-run-setting"></a>HOW TO：將內容參數新增至負載測試回合設定
+# <a name="how-to-add-context-parameters-to-a-load-test-run-setting"></a>如何：將內容參數新增至負載測試回合設定
 
 使用 [新增負載測試精靈] 建立負載測試之後，您就可以使用 [負載測試編輯器] 來變更情節屬性，以便符合您的測試需求和目標。
 
@@ -70,6 +70,6 @@ ms.locfileid: "62979444"
 
 6. 選擇要成為使用中的回合設定。 在回合設定上開啟捷徑功能表，然後選擇 [設定為使用中]。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [設定負載測試回合設定](../test/configure-load-test-run-settings.md)

@@ -2,20 +2,20 @@
 title: 以暫存變數的值來取代暫存變數
 ms.date: 01/26/2018
 ms.topic: reference
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: a7c691efcc507212aa0649b6c4b4179fb8288f06
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 8b758407dc5500630157050c10f881a6515e1216
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62423170"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72661005"
 ---
 # <a name="inline-a-temporary-variable-refactoring"></a>內嵌暫存變數重構
 
@@ -35,7 +35,7 @@ ms.locfileid: "62423170"
 
 1. 醒目標示要內嵌的暫存變數，或將文字游標放在要內嵌的暫存變數內：
 
-   - C#: 
+   - C#:
 
        ![醒目提示的程式碼 - C#](media/inline-highlight-cs.png)
 
@@ -46,7 +46,7 @@ ms.locfileid: "62423170"
 2. 接著，執行下列其中一項操作：
 
    - **鍵盤**
-      - 在字行任何地方按 **Ctrl**+**.**， 以觸發 [快速動作與重構] 功能表。
+      - 在字行任何地方按 **Ctrl**+ **.** ， 以觸發 [快速動作與重構] 功能表。
    - **滑鼠**
       - 在程式碼上按一下滑鼠右鍵，然後選取 [快速動作與重構] 功能表。
 
@@ -54,7 +54,7 @@ ms.locfileid: "62423170"
 
    系統會移除變數，並以變數的值取代使用該變數的地方。
 
-   - C#: 
+   - C#:
 
       ![內嵌結果 - C#](media/inline-result-cs.png)
 
@@ -62,6 +62,6 @@ ms.locfileid: "62423170"
 
       ![內嵌結果 - Visual Basic](media/inline-result-vb.png)
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [重構](../refactoring-in-visual-studio.md)

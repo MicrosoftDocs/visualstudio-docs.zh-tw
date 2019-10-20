@@ -2,17 +2,17 @@
 title: FxCop 分析器設定選項
 ms.date: 09/23/2019
 ms.topic: reference
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: de4fdbbdf54976ba3ee12c3621f7038cd4704a76
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: 78967c93a990aaef0d5863446433c286bdcf46b7
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72449070"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72649601"
 ---
 # <a name="rule-scope-options-for-fxcop-analyzers"></a>FxCop 分析器的規則範圍選項
 
@@ -21,9 +21,9 @@ ms.locfileid: "72449070"
 這些設定選項可從[CodeAnalysis FxCopAnalyzers](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers) NuGet 套件的版本2.6.3 中取得。
 
 > [!TIP]
-> 若要查看特定 FxCopAnalyzers 封裝版本可用的完整選項清單，請查看*套件的檔資料夾中*的*分析器 Configuration.md*檔案。 檔案位於 *% USERPROFILE% \\. nuget\packages\microsoft.codeanalysis.fxcopanalyzers @ no__t-2 @ no__t-3version @ no__t-4\documentation\Analyzer Configuration.md*。 此設定檔檔案包含在套件的每個版本中，從版本2.6.5 開始。 以下是在*分析器 Configuration.md*檔中記載選項的範例：
+> 若要查看特定 FxCopAnalyzers 封裝版本可用的完整選項清單，請查看*套件的檔資料夾中*的*分析器 Configuration.md*檔案。 檔案位於 *% USERPROFILE% \\. nuget\packages\microsoft.codeanalysis.fxcopanalyzers \\ \<version \> \documentation\analyzer Configuration.md*。 此設定檔檔案包含在套件的每個版本中，從版本2.6.5 開始。 以下是在*分析器 Configuration.md*檔中記載選項的範例：
 >
-> 選項名稱： `sufficient_IterationCount_for_weak_KDF_algorithm` @ no__t-1
+> 選項名稱： `sufficient_IterationCount_for_weak_KDF_algorithm` \
 > 選項值：整數值 \
 > 預設值：針對每個可設定的規則（預設為最多規則為 ' 100000 '） \
 > 範例：`dotnet_code_quality.CA5387.sufficient_IterationCount_for_weak_KDF_algorithm = 100000`
@@ -56,4 +56,4 @@ ms.locfileid: "72449070"
 
 | 描述 | 允許的值 | 預設值 | 可設定的規則 |
 | - | - | - | - |
-| 指定要分析專案中產生此類型元件的程式碼 | @No__t-0 列舉的一或多個欄位<br/><br/>以逗號（，）分隔多個值 | 所有輸出類型 | [CA2007](ca2007-do-not-directly-await-task.md) |
+| 指定要分析專案中產生此類型元件的程式碼 | @No__t_0 列舉的一或多個欄位<br/><br/>以逗號（，）分隔多個值 | 所有輸出類型 | [CA2007](ca2007-do-not-directly-await-task.md) |

@@ -11,17 +11,17 @@ helpviewer_keywords:
 - wavy underlines
 - Text Editor Options dialog box, IntelliSense
 ms.assetid: 3466dedb-e5f4-424c-8dd8-e4941b2f4fc2
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: d7e7e76e025c2c426a83f00c1cf2af830eb1c26a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 2d1e330788b72ff0b4395d1e5d531d1d233f59e7
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62778680"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72666233"
 ---
 # <a name="options-text-editor-c-intellisense"></a>IntelliSense、C#、文字編輯器、選項
 
@@ -53,7 +53,7 @@ ms.locfileid: "62778680"
 
 - 在識別碼後鍵入 ?-Tab 時包含程式碼片段
 
-   選取這個選項時，在識別碼之後按下 **?**+**Tab**，IntelliSense 會將 C# 程式碼片段的別名新增至完成清單
+   選取這個選項時，在識別碼之後按下 **?** +**Tab**，IntelliSense 會將 C# 程式碼片段的別名新增至完成清單
 
 ## <a name="enter-key-behavior"></a>ENTER 鍵行為
 
@@ -83,7 +83,7 @@ ms.locfileid: "62778680"
 
 針對您最近選取的成員執行自動物件名稱完成。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [選項對話方塊、環境、一般](../../ide/reference/general-environment-options-dialog-box.md)
 - [使用 IntelliSense](../../ide/using-intellisense.md)

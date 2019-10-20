@@ -8,19 +8,19 @@ helpviewer_keywords:
 - unit tests, generating
 - unit tests, running
 - unit tests, authoring
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-author: gewarren
-ms.openlocfilehash: 4b9e30d70aa90645d05d3bf7b530056feec752ca
-ms.sourcegitcommit: 9f11537a721e69879a612979a1aca98f40bb4d4d
+author: jillre
+ms.openlocfilehash: 317b014ae0ef684dfc5f7ff73247d6186846a860
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/05/2019
-ms.locfileid: "70383712"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72659664"
 ---
-# <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>逐步解說：針對受控碼建立和執行單元測試
+# <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>逐步解說：為受控碼建立和執行單元測試
 
 本文會引導您使用適用於受控碼的 Microsoft 單元測試架構和 Visual Studio [測試總管]，來建立、執行和自訂一系列的單元測試。 您可以從開發中的 C# 專案開始，建立執行其程式碼的測試、執行測試，並檢查結果。 然後，變更專案程式碼並重新執行測試。
 
@@ -429,7 +429,7 @@ public void Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange()
 
 ### <a name="retest-rewrite-and-reanalyze"></a>重新測試、重新撰寫和重新分析
 
-假設受測方法中有 Bug，導致 `Debit` 方法不僅不會擲回 <xref:System.ArgumentOutOfRangeException>，更不會輸出具有例外狀況的正確訊息。 目前，測試方法不會處理這種情況。 `debitAmount`如果值有效（也就是小於餘額且大於零），則不會攔截到任何例外狀況，因此永遠不會引發判斷提示。 然而，測試方法會成功。 這樣就不好了，因為您要的是測試方法在未擲回例外狀況時失敗。
+假設受測方法中有 Bug，導致 `Debit` 方法不僅不會擲回 <xref:System.ArgumentOutOfRangeException>，更不會輸出具有例外狀況的正確訊息。 目前，測試方法不會處理這種情況。 如果 `debitAmount` 值有效（也就是小於餘額且大於零），則不會攔截到任何例外狀況，因此永遠不會引發判斷提示。 然而，測試方法會成功。 這樣就不好了，因為您要的是測試方法在未擲回例外狀況時失敗。
 
 這是測試方法中的錯誤。 若要解決這個問題，請在測試方法的結尾新增 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.Fail%2A> 判斷提示，以處理未擲回例外狀況的情況。
 
@@ -467,6 +467,6 @@ public void Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange()
 > [!TIP]
 > 本逐步解說會使用適用於 Managed 程式碼的 Microsoft 單元測試架構。 [測試總管] 也可以從已安裝 [測試總管] 配接器的協力廠商單元測試架構來執行測試。 如需詳細資訊，請參閱[安裝協力廠商單元測試架構](../test/install-third-party-unit-test-frameworks.md)。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 如需如何從命令列執行測試的資訊，請參閱 [VSTest.Console.exe 命令列選項](vstest-console-options.md)。

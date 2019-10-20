@@ -1,40 +1,40 @@
 ---
-title: HOW TO：在捷徑功能表中新增命令
+title: 如何：在捷徑功能表中加入命令
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language Tools, walkthroughs
 - walkthroughs [Domain-Specific Language Tools]
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 372c30caa15ef8783aa1fead479087e7618e707b
-ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
+ms.openlocfilehash: f7d873a3401e37a18b938cb5785f33eb0bc9b8fb
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67890665"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72666712"
 ---
-# <a name="how-to-add-a-command-to-the-shortcut-menu"></a>作法：在捷徑功能表中新增命令
+# <a name="how-to-add-a-command-to-the-shortcut-menu"></a>如何：在捷徑功能表中加入命令
 
 您可以將功能表命令加入網域指定的語言 (DSL)，以便您的使用者可以執行專屬 DSL 的工作。 當使用者以滑鼠右鍵按一下圖表時，命令會出現在內容 (捷徑) 功能表上。 您可以定義命令，使它只在特定的情況下出現在功能表中。 例如，您可以使命令只在使用者按一下特定類型的項目或處於特定狀態的項目時才可見。
 
-在 [摘要] 執行步驟在 DslPackage 專案中，如下所示：
+總而言之，步驟會在 DslPackage 專案中執行，如下所示：
 
-1. [宣告在 Commands.vsct 中命令](#VSCT)
+1. [在命令中宣告命令。 .vsct](#VSCT)
 
-2. [更新套件的版本號碼，在 Package.tt 中](#version)。 每當變更 Commands.vsct 時都必須這麼做
+2. [更新 Package.tt 中的套件版本號碼](#version)。 每當變更 Commands.vsct 時都必須這麼做
 
-3. [在 CommandSet 類別中撰寫方法](#CommandSet)來使命令可見以及定義您想要執行的命令。
+3. [在 CommandSet 類別中撰寫方法](#CommandSet)，讓命令可見，並定義您希望命令執行的動作。
 
-   如需範例，請參閱[Visualization and Modeling SDK 網站](http://go.microsoft.com/fwlink/?LinkID=185579)。
+   如需範例，請參閱[視覺效果和模型化 SDK 網站](http://go.microsoft.com/fwlink/?LinkID=185579)。
 
 > [!NOTE]
 > 您也可以覆寫 CommandSet.cs 中的方法，即可修改部分現有命令 (例如剪下、貼上、全選和列印) 的行為。 如需詳細資訊，請參閱[如何：修改標準功能表命令](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)。
 
-## <a name="define-a-command-using-mef"></a>定義命令，使用 MEF
+## <a name="define-a-command-using-mef"></a>使用 MEF 定義命令
 
 Managed Extension Framework (MEF) 提供在圖表功能表上定義功能表命令的替代方法。 它的主要用途是讓您或其他方可以擴充 DSL。 使用者可以選擇僅安裝 DSL，也可以安裝 DSL 和擴充功能。 然而，在 DSL 上啟用 MEF 的初始工作之後，MEF 也會減少定義捷徑功能表命令的工作。
 
@@ -48,20 +48,20 @@ Managed Extension Framework (MEF) 提供在圖表功能表上定義功能表命�
 
 4. 您只要定義一個命令。
 
-   否則，請考慮使用 MEF 方法來定義命令。 如需詳細資訊，請參閱 <<c0> [ 藉由使用 MEF 擴充您的 DSL](../modeling/extend-your-dsl-by-using-mef.md)。
+   否則，請考慮使用 MEF 方法來定義命令。 如需詳細資訊，請參閱[使用 MEF 擴充您的 DSL](../modeling/extend-your-dsl-by-using-mef.md)。
 
-## <a name="VSCT"></a> 宣告在 Commands.Vsct 中命令
+## <a name="VSCT"></a>在命令中宣告命令。 .Vsct
  功能表命令在 DslPackage\Commands.vsct 中宣告。 這些定義指定功能表項目的標籤以及它們在功能表上的顯示位置。
 
- 檔案進行編輯，Commands.vsct 會從數個位於目錄中的.h 檔案匯入定義*Visual Studio SDK 安裝路徑*\VisualStudioIntegration\Common\Inc。它還包括從 DSL 定義產生的 GeneratedVsct.vsct。
+ 您編輯的檔案 .vsct，會從位於目錄*VISUAL STUDIO SDK 安裝路徑*\VisualStudioIntegration\Common\Inc. 中的數個 .h 檔案匯入定義。它也包含從您的 DSL 定義產生的 GeneratedVsct .vsct。
 
- 如需.vsct 檔的詳細資訊，請參閱[Visual Studio Command Table (。Vsct) 檔案](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)。
+ 如需有關 .vsct 檔的詳細資訊，請參閱[Visual Studio 命令資料表（.Vsct）](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)檔案。
 
 ### <a name="to-add-the-command"></a>加入命令
 
-1. 在 **方案總管**下方**DslPackage**專案中，開啟 Commands.vsct。
+1. 在**方案總管**的 [ **DslPackage** ] 專案下，開啟 .vsct。
 
-2. 在 `Commands` 項目中，定義一或多個按鈕和群組。 A *按鈕* 是功能表中的項目。 A*群組*是功能表中的區段。 若要定義這些項目，請加入下列項目：
+2. 在 `Commands` 項目中，定義一或多個按鈕和群組。 *按鈕*是功能表上的專案。 *群組*是功能表中的一節。 若要定義這些項目，請加入下列項目：
 
     ```xml
     <!-- Define a group - a section in the menu -->
@@ -88,9 +88,9 @@ Managed Extension Framework (MEF) 提供在圖表功能表上定義功能表命�
     ```
 
     > [!NOTE]
-    > 每一個按鈕或群組都是以 GUID 和整數 ID 識別。 您可以使用相同的 GUID 建立數個群組和按鈕。 不過，它們必須具有不同的 ID。 GUID 名稱和 ID 名稱會轉譯成的實際 Guid 和數字 Id 在`<Symbols>`節點。
+    > 每一個按鈕或群組都是以 GUID 和整數 ID 識別。 您可以使用相同的 GUID 建立數個群組和按鈕。 不過，它們必須具有不同的 ID。 GUID 名稱和識別碼名稱會轉譯成 `<Symbols>` 節點中的實際 Guid 和數值識別碼。
 
-3. 為命令加入可見度限制，令其只在網域指定的語言之內容中載入。 如需詳細資訊，請參閱 < [VisibilityConstraints 元素](../extensibility/visibilityconstraints-element.md)。
+3. 為命令加入可見度限制，令其只在網域指定的語言之內容中載入。 如需詳細資訊，請參閱[VisibilityConstraints 元素](../extensibility/visibilityconstraints-element.md)。
 
      若要這麼做，請在 `CommandTable` 項目之後的 `Commands` 項目中加入下列項目。
 
@@ -115,7 +115,7 @@ Managed Extension Framework (MEF) 提供在圖表功能表上定義功能表命�
     </Symbols>
     ```
 
-5. 將 `{000...000}` 取代為識別您群組和功能表項目的 GUID。 若要取得新的 GUID，請使用**建立 GUID**工具**工具**功能表。
+5. 將 `{000...000}` 取代為識別您群組和功能表項目的 GUID。 若要取得新的 GUID，請使用 [**工具**] 功能表上的 [**建立 guid** ] 工具。
 
     > [!NOTE]
     > 如果您加入更多群組或功能表項目，您就可以使用相同的 GUID。 不過，您必須為 `IDSymbols` 使用新的值。
@@ -130,24 +130,24 @@ Managed Extension Framework (MEF) 提供在圖表功能表上定義功能表命�
 
     - `My Context Menu Command`
 
-## <a name="version"></a> 更新 Package.tt 中的套件版本
+## <a name="version"></a>更新 Package.tt 中的套件版本
  每當您加入或變更命令時，請先更新套用到套件類別的 `version` 之 <xref:Microsoft.VisualStudio.Shell.ProvideMenuResourceAttribute> 參數，然後再發行網域指定語言的新版本。
 
  由於套件類別定義於產生的檔案，因此請更新文字範本檔案中產生 Package.cs 檔的屬性。
 
 ### <a name="to-update-the-packagett-file"></a>更新 Package.tt 檔
 
-1. 在 [**方案總管] 中**，請在**DslPackage**專案，在**GeneratedCode**資料夾中，開啟 Package.tt 檔。
+1. 在**方案總管**中，于**DslPackage**專案的**GeneratedCode**資料夾中，開啟 Package.tt 檔案。
 
 2. 找出 `ProvideMenuResource` 屬性。
 
-3. 遞增屬性的 `version` 參數，這是第二個參數。 您可以依需要明確撰寫參數名稱以提醒您其用途。 例如：
+3. 遞增屬性的 `version` 參數，這是第二個參數。 您可以依需要明確撰寫參數名稱以提醒您其用途。 例如:
 
      `[VSShell::ProvideMenuResource("1000.ctmenu", version: 2 )]`
 
-## <a name="CommandSet"></a> 定義命令的行為
+## <a name="CommandSet"></a>定義命令的行為
 
-您的 DSL 已經有一些命令，這些命令實作於 DslPackage\GeneratedCode\CommandSet.cs 中宣告的部分類別。 若要加入新的命令，您必須建立含有相同類別之部分宣告的新檔案，以擴充此類別。 類別的名稱通常是 *\<YourDslName >* `CommandSet`。 您最好先確認類別名稱，並檢查其內容。
+您的 DSL 已經有一些命令，這些命令實作於 DslPackage\GeneratedCode\CommandSet.cs 中宣告的部分類別。 若要加入新的命令，您必須建立含有相同類別之部分宣告的新檔案，以擴充此類別。 類別的名稱通常會 *\<YourDslName >* `CommandSet`。 一開始請先驗證類別的名稱，並檢查其內容。
 
 命令集類別衍生自 <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet>。
 
@@ -159,16 +159,16 @@ Managed Extension Framework (MEF) 提供在圖表功能表上定義功能表命�
 
      `{ ...  internal partial class Language1CommandSet : ...`
 
-2. 在  **DslPackage**，建立名為的資料夾**自訂程式碼**。 在此資料夾中，建立新的類別檔案，稱為`CommandSet.cs`。
+2. 在**DslPackage**中，建立名為 [**自訂程式碼**] 的資料夾。 在此資料夾中，建立名為 `CommandSet.cs` 的新類別檔案。
 
-3. 在新檔案中，撰寫具有與產生部分類別相同之命名空間和名稱的部分宣告。 例如：
+3. 在新檔案中，撰寫具有與產生部分類別相同之命名空間和名稱的部分宣告。 例如:
 
      `namespace Company.Language1 /* Make sure this is correct */`
 
      `{ internal partial class Language1CommandSet { ...`
 
      > [!NOTE]
-     > 如果您使用 [類別] 範本來建立新的檔案時，您必須更正命名空間和類別名稱。
+     > 如果您使用類別範本來建立新檔案，您必須更正命名空間和類別名稱。
 
 您的命令集程式碼通常需要匯入下列命名空間：
 
@@ -192,10 +192,10 @@ namespace Company.Language1 /* Make sure this is correct */
   {
 ```
 
-您必須定義兩個方法： 一個用來判斷當此命令將會顯示上按一下滑鼠右鍵 （內容） 功能表中，而另一個則執行的命令。 這些方法不是覆寫；您須另行在命令清單中註冊方法。
+您必須定義兩個方法，一個用來判斷命令何時會顯示在以滑鼠右鍵按一下（內容）功能表，另一個則用來執行命令。 這些方法不是覆寫；您須另行在命令清單中註冊方法。
 
 ### <a name="define-when-the-command-will-be-visible"></a>定義命令何時可見
- 對每一個命令定義 `OnStatus...` 方法，決定命令是否將出現在功能表上，以及它是否將被啟用或呈現為灰色。設定 `MenuCommand` 的 `Visible` 和 `Enabled` 屬性，如下列範例所示。 呼叫此方法是為了在每次使用者以滑鼠右鍵按一下圖表時都建構捷徑功能表，因此它必須快速運作。
+ 針對每個命令，定義一個 `OnStatus...` 方法，以決定命令是否會出現在功能表上，以及是否要啟用或呈現為灰色。設定 `MenuCommand` 的 `Visible` 和 `Enabled` 屬性，如下列範例所示。 呼叫此方法是為了在每次使用者以滑鼠右鍵按一下圖表時都建構捷徑功能表，因此它必須快速運作。
 
  在本範例中，只有在使用者選取特定類型的圖形時才可見到命令，且只在至少其中一個所選項目處於特定狀態時才會啟用命令。 此範例是根據「類別圖 DSL」範本，而 ClassShape 和 ModelClass 是在 DSL 中所定義的類型：
 
@@ -222,9 +222,9 @@ private void OnStatusMyContextMenuCommand(object sender, EventArgs e)
 
 以下片段在 OnStatus 方法中通常很有用：
 
-- `this.CurrentSelection`. 此清單中一律包含使用者以滑鼠右鍵按一下的圖形。 如果使用者按一下圖表的空白部分，圖表會成為清單的唯一成員。
+- `this.CurrentSelection` 此清單中一律包含使用者以滑鼠右鍵按一下的圖形。 如果使用者按一下圖表的空白部分，圖表會成為清單的唯一成員。
 
-- `this.IsDiagramSelected()` - `true` 如果使用者按一下圖表的空白部分。
+- 如果使用者按一下圖表的空白部分，`this.IsDiagramSelected()`  -  `true`。
 
 - `this.IsCurrentDiagramEmpty()`
 
@@ -282,7 +282,7 @@ private void OnMenuMyContextMenuCommand(object sender, EventArgs e)
 }
 ```
 
- 如需有關如何在模型中，巡覽物件物件，以及有關如何建立物件和連結的詳細資訊，請參閱[How to:修改標準功能表命令](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)。
+ 如需如何從物件導覽至模型中的物件，以及如何建立物件和連結的詳細資訊，請參閱[如何：修改標準功能表命令](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)。
 
 ### <a name="register-the-command"></a>註冊命令
  在 C# 中重複執行您在 CommandSet.vsct 的 Symbols 區段中所做的 GUID 和 ID 值宣告：
@@ -294,7 +294,7 @@ private const int grpidMyMenuGroup = 0x01001;
 private const int cmdidMyContextMenuCommand = 1;
 ```
 
- 使用相同的 GUID 值，當您插入**Commands.vsct**。
+ 使用您在 **.vsct**中插入的 GUID 值。
 
 > [!NOTE]
 > 如果您變更 VSCT 檔的 Symbols 區段，您必須也將這些宣告變更為相符。 您也應在 Package.tt 中遞增版本號碼
@@ -323,9 +323,9 @@ protected override IList<MenuCommand> GetMenuCommands()
 
 ### <a name="to-exercise-the-command"></a>執行命令
 
-1. 在 **方案總管**工具列上，按一下**轉換所有範本**。
+1. 在 [**方案總管**] 工具列上，按一下 [**轉換所有範本**]。
 
-2. 按下**F5**重建方案，並開始偵錯特定領域語言，在實驗組建中。
+2. 按下**F5**以重建方案，並開始在實驗性組建中對特定領域語言進行偵測。
 
 3. 在實驗組建中，開啟範例圖表。
 
@@ -333,7 +333,7 @@ protected override IList<MenuCommand> GetMenuCommands()
 
 ## <a name="troubleshoot"></a>疑難排解
 
-**命令未出現在功能表中：**
+**命令不會出現在功能表中：**
 
 - 命令只會出現在 Visual Studio 的偵錯執行個體中，直到安裝 DSL 套件為止。 如需詳細資訊，請參閱[部署特定領域語言方案](msi-and-vsix-deployment-of-a-dsl.md)。
 
@@ -343,7 +343,7 @@ protected override IList<MenuCommand> GetMenuCommands()
 
 - 在 OnStatus 方法的開頭設定中斷點。 在圖表的任何部分上按一下滑鼠右鍵時，它應該會中斷。
 
-**未呼叫 OnStatus 方法**:
+**不會呼叫 OnStatus 方法**：
 
 - 請確定您的 CommandSet 程式碼中的 GUID 和 ID 符合 Commands.vsct 的 Symbols 區段中的 GUID 和 ID。
 
@@ -353,17 +353,17 @@ protected override IList<MenuCommand> GetMenuCommands()
 
 - 逐步執行 OnStatus 方法，以確認 command.Visible 和 command.Enabled 設為 true。
 
-**此時會出現錯誤的功能表文字，或是命令出現在錯誤的位置**:
+**出現錯誤的功能表文字，或命令出現在錯誤的位置**：
 
 - 請確定 GUID 和 ID 的組合對此命令是唯一的。
 
 - 確定已解除安裝舊版套件。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [撰寫程式碼來自訂特定領域語言](../modeling/writing-code-to-customise-a-domain-specific-language.md)
 - [如何：修改標準功能表命令](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)
 - [部署特定領域語言方案](msi-and-vsix-deployment-of-a-dsl.md)
-- [範例程式碼：電路圖表](https://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
+- [範例程式碼：線路圖表](https://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
