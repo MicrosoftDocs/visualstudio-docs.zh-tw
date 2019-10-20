@@ -2,17 +2,17 @@
 title: 在單元測試中使用 Microsoft.VisualStudio.TestTools.UnitTesting
 ms.date: 03/02/2018
 ms.topic: reference
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-author: gewarren
-ms.openlocfilehash: a9fcf54abf6227fe020d98d2fdc9aed6de021983
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
-ms.translationtype: HT
+author: jillre
+ms.openlocfilehash: c69950e478fc8a35d46257876a84a28129bf1baa
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68869844"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72659756"
 ---
 # <a name="use-the-mstest-framework-in-unit-tests"></a>在單元測試中使用 MSTest 架構
 
@@ -95,7 +95,7 @@ ClassInitialize 和 ClassCleanup 會在載入您的類別之後以及卸載您�
 
 ## <a name="the-testcontext-class"></a>TestContext 類別
 
-下列屬性和指派給它們的值會顯示在特定測試方法的 Visual Studio [屬性] 視窗中。 這些屬性並不應該透過單元測試的程式碼存取。 相反地，無論是由您透過 Visual Studio 的 IDE，或是由 Visual Studio 測試引擎，它們都會影響單元測試使用或執行的方式。 例如，其中一些屬性會顯示為 [測試管理員]  視窗和 [測試結果]  視窗中的資料行，這表示您可以使用它們來群組或排序測試和測試結果。 這類屬性其中之一為 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute>，您可以利用它來將任意中繼資料加入至單元測試。 例如，您可以使用它來儲存此測試所涵蓋之測試進行的名稱，方法是以 `[TestProperty("TestPass", "Accessibility")]` 標示單元測試。 或者，您可以使用它，以 `[TestProperty("TestKind", "Localization")]` 來儲存指出測試為哪種類型的指標。 您使用此屬性建立的屬性，以及您指派的屬性值，都會顯示在 Visual Studio [屬性]  視窗的 [測試專屬]  標題下。
+下列屬性和指派給它們的值會顯示在特定測試方法的 Visual Studio [屬性] 視窗中。 這些屬性並不應該透過單元測試的程式碼存取。 相反地，無論是由您透過 Visual Studio 的 IDE，或是由 Visual Studio 測試引擎，它們都會影響單元測試使用或執行的方式。 例如，其中一些屬性會顯示為 [測試管理員] 視窗和 [測試結果] 視窗中的資料行，這表示您可以使用它們來群組或排序測試和測試結果。 這類屬性其中之一為 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute>，您可以利用它來將任意中繼資料加入至單元測試。 例如，您可以使用它來儲存此測試所涵蓋之測試進行的名稱，方法是以 `[TestProperty("TestPass", "Accessibility")]` 標示單元測試。 或者，您可以使用它，以 `[TestProperty("TestKind", "Localization")]` 來儲存指出測試為哪種類型的指標。 您使用此屬性建立的屬性，以及您指派的屬性值，都會顯示在 Visual Studio [屬性] 視窗的 [測試專屬] 標題下。
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.OwnerAttribute>
 
@@ -133,6 +133,6 @@ ClassInitialize 和 ClassCleanup 會在載入您的類別之後以及卸載您�
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.PrivateType>
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting> 參考文件

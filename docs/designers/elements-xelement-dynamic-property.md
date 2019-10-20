@@ -6,17 +6,17 @@ apiname:
 - XElement.Elements
 apitype: Assembly
 ms.assetid: 3d5737f2-d2ed-410a-821c-349dbb2b574f
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ff2071ba71d60db87332b0e23948d63ac1b2289
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: d92e9ebd1e5be9f3535dcac136bb46ba33975f0c
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62845557"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72637313"
 ---
 # <a name="elements-xelement-dynamic-property"></a>Elements (XElement 動態屬性)
 
@@ -40,8 +40,8 @@ elem.Elements[{namespaceName}localName]
 
 這個屬性會使用延後執行。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
-- [XElement 類別動態屬性](../designers/xelement-class-dynamic-properties.md)
+- [XElement 類別動態屬性](../designers/attribute-xelement-dynamic-property.md)
 - [目](../designers/element-xelement-dynamic-property.md)
 - [子系](../designers/descendants-xelement-dynamic-property.md)

@@ -11,17 +11,17 @@ helpviewer_keywords:
 - dialog boxes [Visual Studio], shortcut keys
 - accessibility [Visual Studio]
 ms.assetid: d71a4cc1-d352-4164-8538-3f9fa070a331
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 885785c8910bdb0f03643c64eca29415bf2afb17
-ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
-ms.translationtype: HT
+ms.openlocfilehash: 15cb030bc8be30d147a7d2e73dbeee6d3fca046a
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67043508"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72650799"
 ---
 # <a name="how-to-use-the-keyboard-exclusively"></a>如何完全只使用鍵盤
 
@@ -43,9 +43,9 @@ ms.locfileid: "67043508"
 
 在不使用滑鼠的情況下，將工具箱上的控制項新增到表單或設計工具：
 
-1. 在功能表列上，選擇 [檢視]   > [工具箱]  。
+1. 在功能表列上，選擇 [檢視] > [工具箱]。
 
-2. 使用 **Ctrl**+**向上鍵**或 **Ctrl**+**向下鍵**，在 [工具箱]  索引標籤的區段之間移動。
+2. 使用 **Ctrl**+**向上鍵**或 **Ctrl**+**向下鍵**，在 [工具箱] 索引標籤的區段之間移動。
 
 3. 使用**向上鍵**或**向下鍵**在區段中的控制項之間移動。
 
@@ -71,17 +71,17 @@ ms.locfileid: "67043508"
 
 ## <a name="navigate-between-windows-and-files"></a>在視窗和檔案之間巡覽
 
-- 若要在編輯器或設計工具中的檔案之間移動，請選擇 **Ctrl**+**Tab** 鍵盤快速鍵，以搭配選取 [使用中的檔案]  來顯示 IDE 導覽器。 選擇 **Enter** 鍵來巡覽至醒目提示的檔案。
+- 若要在編輯器或設計工具中的檔案之間移動，請選擇 **Ctrl**+**Tab** 鍵盤快速鍵，以搭配選取 [使用中的檔案] 來顯示 IDE 導覽器。 選擇 **Enter** 鍵來巡覽至醒目提示的檔案。
 
-- 若要在固定的工具視窗之間移動，請選擇 **Alt**+**F7** 鍵盤快速鍵，以搭配選取 [使用中工具視窗]  來顯示 IDE 導覽器。 選擇 **Enter** 鍵來巡覽至醒目提示的視窗。
+- 若要在固定的工具視窗之間移動，請選擇 **Alt**+**F7** 鍵盤快速鍵，以搭配選取 [使用中工具視窗] 來顯示 IDE 導覽器。 選擇 **Enter** 鍵來巡覽至醒目提示的視窗。
 
 ## <a name="move-and-dock-tool-windows"></a>移動和固定工具視窗
 
 1. 巡覽至您想要移動並給予焦點的工具視窗。
 
-2. 在 [視窗]  功能表上，選取 [可停駐]  選項。
+2. 在 [視窗] 功能表上，選取 [可停駐] 選項。
 
-3. 按 **Alt**+**空格鍵**，然後選擇 [移動]  。
+3. 按 **Alt**+**空格鍵**，然後選擇 [移動]。
 
    固定的輔助方塊隨即出現。
 
@@ -97,9 +97,9 @@ ms.locfileid: "67043508"
 
    工具視窗會貼齊在新的固定位置。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 * [識別及自訂鍵盤快速鍵](../../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)
-* [協助工具祕訣和訣竅](../../ide/reference/accessibility-tips-and-tricks.md)
+* [協助工具秘訣和訣竅](../../ide/reference/accessibility-tips-and-tricks.md)
 * [預設鍵盤快速鍵](../../ide/default-keyboard-shortcuts-in-visual-studio.md)
 * [Microsoft 產品中的協助工具](https://www.microsoft.com/accessibility/)

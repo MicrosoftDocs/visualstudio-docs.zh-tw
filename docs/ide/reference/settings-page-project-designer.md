@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - Settings page in Project Designer
 - Project Designer, Settings page
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d7422b87d0f812de2d99d59c2932e9aa2b9e6315
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 11f6f787d3799813aa526395a7137fd68e5c573d
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62989973"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72645257"
 ---
 # <a name="settings-page-project-designer"></a>設定頁面、專案設計工具
 
@@ -57,7 +57,7 @@ Properties.Settings.Default.Save();
 
 針對 Visual Basic 專案，存取修飾詞可以是 **Friend** 或 **Public**。
 
-根據預設，設定在 C# 是 **Internal**，在 Visual Basic 是 **Friend**。 當 Visual Studio 將協助程式類別產生為 **Internal** 或 **Friend** 時，可執行的 (*.exe*) 應用程式無法存取您已新增至類別庫 (*.dll* 檔案) 的資源和設定。 如果您必須共用來自類別庫的資源和設定，請將存取修飾詞設定為 **Public**。
+根據預設，設定在 C# 是 **Internal**，在 Visual Basic 是 **Friend**。 當 Visual Studio 將協助程式類別產生為 **Internal** 或 **Friend** 時，可執行的 ( *.exe*) 應用程式無法存取您已新增至類別庫 ( *.dll* 檔案) 的資源和設定。 如果您必須共用來自類別庫的資源和設定，請將存取修飾詞設定為 **Public**。
 
 如需設定協助程式類別的詳細資訊，請參閱[管理應用程式設定](../managing-application-settings-dotnet.md)。
 
@@ -71,7 +71,7 @@ Properties.Settings.Default.Save();
 
 **Type**
 
-使用下拉式清單來選取設定類型。 最常使用的類型會出現在下拉式清單中，例如 **String**、**(Connection string)** 和 **System.Drawing.Font**。 您可以選取清單結尾的 [瀏覽]，然後從 [選取類型] 對話方塊選取類型，來選擇另一個類型。 選擇類型之後，會將它新增至下拉式清單中的常見類型 (僅適用於目前解決方案)。
+使用下拉式清單來選取設定類型。 最常使用的類型會出現在下拉式清單中，例如 **String**、 **(Connection string)** 和 **System.Drawing.Font**。 您可以選取清單結尾的 [瀏覽]，然後從 [選取類型] 對話方塊選取類型，來選擇另一個類型。 選擇類型之後，會將它新增至下拉式清單中的常見類型 (僅適用於目前解決方案)。
 
 **範圍**
 
@@ -85,7 +85,7 @@ Properties.Settings.Default.Save();
 
 與應用程式設定建立關聯的資料或值。 例如，如果設定為字型，其值可以是 **Verdana, 9.75pt, style=Bold**。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [管理應用程式設定](../managing-application-settings-dotnet.md)
 - [存取應用程式設定 (Visual Basic)](/dotnet/visual-basic/developing-apps/programming/app-settings/accessing-application-settings)

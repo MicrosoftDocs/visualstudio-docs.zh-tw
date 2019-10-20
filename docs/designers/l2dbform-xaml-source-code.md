@@ -3,17 +3,17 @@ title: L2DBForm.xaml 原始程式碼
 ms.date: 11/04/2016
 ms.topic: sample
 ms.assetid: 624e96d4-6d27-4195-8ac2-2f3835f6c57e
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b650c65eb81fb087b7783b41065445e1bbea20a0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 41796664d5456876edff81662cbab44edf7a82f2
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62844251"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72635290"
 ---
 # <a name="l2dbformxaml-source-code"></a>L2DBForm.xaml 原始程式碼
 
@@ -23,7 +23,7 @@ ms.locfileid: "62844251"
 
 如同 WPF 專案般，這個檔案包含一個父項目，也就是 <xref:System.Windows.Window> 命名空間中，與衍生類別 `L2XDBFrom` 相關聯的 `LinqToXmlDataBinding` XML 項目。
 
-用戶端區域包含在淡藍色背景的 <xref:System.Windows.Controls.StackPanel> 中。 這個面板包含四個 <xref:System.Windows.Controls.DockPanel> UI 區段，以 <xref:System.Windows.Controls.Separator> 列分隔。 這些區段的目的詳述於 **上一個主題** 的＜ [備註](../designers/walkthrough-linqtoxmldatabinding-example.md)＞中。
+用戶端區域包含在淡藍色背景的 <xref:System.Windows.Controls.StackPanel> 中。 這個面板包含四個 <xref:System.Windows.Controls.DockPanel> UI 區段，以 <xref:System.Windows.Controls.Separator> 列分隔。 如需了解這些區段的用途，請參閱[上一個主題](../designers/walkthrough-linqtoxmldatabinding-example.md)中的＜備註＞。
 
 每個區段都包含一個可以識別自身的標籤。 在前兩個區段中，這個標籤會透過使用 <xref:System.Windows.FrameworkElement.LayoutTransform%2A>而旋轉 90 度。 本節其他部分則包含適合該區段用途的 UI 項目：文字區塊、文字方塊、按鈕等等。 有時候，子系 <xref:System.Windows.Controls.StackPanel> 用於調整這些子控制項。
 
@@ -85,7 +85,7 @@ Text="{Binding Path=Attribute[id].Value}"...Text="{Binding Path=Value}"
 
 ## <a name="example"></a>範例
 
-### <a name="description"></a>說明
+### <a name="description"></a>描述
 
 > [!NOTE]
 > 建議您將下列程式碼複製到程式碼編輯器 (例如，Visual Studio 中的 C# 原始程式碼編輯器)，如此將更容易追蹤行號。
@@ -242,7 +242,7 @@ Text="{Binding Path=Attribute[id].Value}"...Text="{Binding Path=Value}"
 
 如需與 WPF UI 項目建立關聯之事件處理常式的 C# 原始程式碼，請參閱 [L2DBForm.xaml.cs 原始程式碼](../designers/l2dbform-xaml-cs-source-code.md)。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [逐步解說：LinqToXmlDataBinding 範例](../designers/walkthrough-linqtoxmldatabinding-example.md)
 - [L2DBForm.xaml.cs 來源程式碼](../designers/l2dbform-xaml-cs-source-code.md)

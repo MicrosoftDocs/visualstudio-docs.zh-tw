@@ -4,17 +4,17 @@ ms.date: 01/16/2019
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.F%2523.Advanced
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3e28bd5b7ace34995dbf0778d59f42b5c5d383aa
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: aacc2b6aa47f7a250b161187146accc51736b586
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62778979"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72668937"
 ---
 # <a name="options-text-editor-f-advanced"></a>選項、文字編輯器、F#、進階
 
@@ -28,7 +28,7 @@ ms.locfileid: "62778979"
 
 選取此核取方塊會自動設定程式碼檔的大綱，以建立可摺疊的程式碼區塊。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [選項對話方塊、環境、一般](../../ide/reference/general-environment-options-dialog-box.md)
-- [索引標籤、所有語言、文字編輯器、選項](../../ide/reference/options-text-editor-all-languages-tabs.md)
+- [選項、文字編輯器、所有語言、索引標籤](../../ide/reference/options-text-editor-all-languages-tabs.md)

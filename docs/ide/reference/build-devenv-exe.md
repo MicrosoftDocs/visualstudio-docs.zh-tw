@@ -9,17 +9,17 @@ helpviewer_keywords:
 - build Devenv switch
 - command-line builds
 ms.assetid: ced21627-7653-455b-8821-3e31c6a448cf
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 67aba8d93514618fc09abe933cfd28023136a4d6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 9aef4dcdc9069c1bbfe71a90bbaba214ebcd18ed
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62790911"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72667887"
 ---
 # <a name="build-devenvexe"></a>/Build (devenv.exe)
 
@@ -39,19 +39,19 @@ devenv SolutionName /Build [SolnConfigName [/Project ProjName [/ProjectConfig Pr
 
 - *SolnConfigName*
 
-  選擇性。 用來建置 *SolutionName* 中所指定方案的方案組態名稱 (例如 `Debug` 或 `Release`)。 如果有多個方案平台可供使用，您也必須指定平台 (例如 `Debug|Win32`)。 如果未指定這個引數或其為空字串 (`""`)，則工具會使用方案的作用中組態。
+  選擇項。 用來建置 *SolutionName* 中所指定方案的方案組態名稱 (例如 `Debug` 或 `Release`)。 如果有多個方案平台可供使用，您也必須指定平台 (例如 `Debug|Win32`)。 如果未指定這個引數或其為空字串 (`""`)，則工具會使用方案的作用中組態。
 
 - `/Project` *ProjName*
 
-  選擇性。 方案中專案檔的路徑和名稱。 您可以輸入從 *SolutionName* 資料夾到專案檔的相對路徑、專案的顯示名稱，或專案檔的完整路徑和名稱。
+  選擇項。 方案中專案檔的路徑和名稱。 您可以輸入從 *SolutionName* 資料夾到專案檔的相對路徑、專案的顯示名稱，或專案檔的完整路徑和名稱。
 
 - `/ProjectConfig` *ProjConfigName*
 
-  選擇性。 在建置指定的專案時要使用的專案組建組態名稱 (例如 `Debug` 或 `Release`)。 如果有多個方案平台可供使用，您也必須指定平台 (例如 `Debug|Win32`)。 如果指定這個參數，則會覆寫 *SolnConfigName* 引數。
+  選擇項。 在建置指定的專案時要使用的專案組建組態名稱 (例如 `Debug` 或 `Release`)。 如果有多個方案平台可供使用，您也必須指定平台 (例如 `Debug|Win32`)。 如果指定這個參數，則會覆寫 *SolnConfigName* 引數。
 
 - `/Out` *OutputFilename*
 
-  選擇性。 您要將工具的輸出傳送到其中的檔案名稱。 如果檔案已經存在，工具就會將輸出附加至檔案結尾。
+  選擇項。 您要將工具的輸出傳送到其中的檔案名稱。 如果檔案已經存在，工具就會將輸出附加至檔案結尾。
 
 ## <a name="remarks"></a>備註
 
@@ -73,7 +73,7 @@ devenv SolutionName /Build [SolnConfigName [/Project ProjName [/ProjectConfig Pr
 devenv "%USERPROFILE%\source\repos\MySolution.sln" /build Debug /project "CSharpWinApp\CSharpWinApp.csproj" /projectconfig Debug
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [建置與清除專案和方案](../../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)
 - [Devenv 命令列參數](../../ide/reference/devenv-command-line-switches.md)

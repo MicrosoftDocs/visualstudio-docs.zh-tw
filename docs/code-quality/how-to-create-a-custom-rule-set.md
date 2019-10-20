@@ -6,17 +6,17 @@ f1_keywords:
 - vs.codeanalysis.addremoverulesets
 helpviewer_keywords:
 - rule sets
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 33d8d97a5d036a2bd931bfa951fea2715569830a
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: 6b904fd484135943228b2d8ac21e2df0d1c02e34
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72448993"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72649513"
 ---
 # <a name="customize-a-rule-set"></a>自訂規則集
 
@@ -24,7 +24,7 @@ ms.locfileid: "72448993"
 
 ## <a name="create-a-custom-rule-set-from-an-existing-rule-set"></a>從現有的規則集建立自訂規則集
 
-若要建立自訂規則集，您可以在 [**規則集編輯器**] 中開啟內建的規則集。 您可以從該處新增或移除特定規則，也可以變更違反規則 @ no__t-0for 範例時所發生的動作，顯示警告或錯誤。
+若要建立自訂規則集，您可以在 [**規則集編輯器**] 中開啟內建的規則集。 您可以從該處新增或移除特定規則，也可以變更違反規則時所發生的動作 &mdash;for 範例、顯示警告或錯誤。
 
 1. 在**方案總管**中，以滑鼠右鍵按一下專案，然後選取 [**屬性**]。
 
@@ -111,7 +111,7 @@ ms.locfileid: "72448993"
 
 - 如果相同的規則在具有*相同*嚴重性的規則集內列出兩次以上，您可能會在**錯誤清單**中看到下列警告：
 
-   **CA0063：無法載入規則集檔案 ' \[your]。規則集 ' 或它的其中一個相依規則集檔案。檔案不符合規則集架構。**
+   **CA0063：無法載入規則集檔案 ' \[your]。規則集 ' 或其相依規則集的其中一個。檔案不符合規則集架構。**
 
 - 如果規則集包含使用**Include**標記設定的子規則，而子系和父規則集同時列出相同的規則，但具有不同的嚴重性，則會優先使用父系規則集的嚴重性。 例如:
 

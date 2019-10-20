@@ -8,17 +8,17 @@ helpviewer_keywords:
 - Load Test Results Repository
 - load test results, exporting
 ms.assetid: 716c2af5-8737-4d31-956f-a0273f7c5c0c
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 477ab8ce86188af9a3db03b92e1ea0f574d8a6a3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 86453ef9aa92c63ae4e96566fd08aa328b71b50e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62949912"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653541"
 ---
-# <a name="how-to-export-load-test-results-from-a-repository"></a>HOW TO：從存放庫匯出負載測試結果
+# <a name="how-to-export-load-test-results-from-a-repository"></a>如何：從存放庫匯出負載測試結果
 
 當您執行負載測試時，執行期間所收集到的資訊，都會儲存在負載測試結果儲存機制中。 負載測試結果儲存機制含有效能計數器資料，以及錄製之錯誤的相關資訊。 如需詳細資訊，請參閱[管理負載測試結果存放庫中的負載測試結果](../test/manage-load-test-results-in-the-load-test-results-repository.md)。
 
@@ -53,9 +53,9 @@ ms.locfileid: "62949912"
     > [!NOTE]
     > 在結果出現之後，[開啟和管理負載測試結果] 對話方塊仍會繼續保持開啟。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [管理負載測試結果儲存機制中的負載測試結果](../test/manage-load-test-results-in-the-load-test-results-repository.md)
 - [如何：從存放庫中刪除負載測試結果](../test/how-to-delete-load-test-results-from-a-repository.md)
 - [分析負載測試結果](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
-- [如何：將負載測試結果匯入存放庫](../test/how-to-import-load-test-results-into-a-repository.md)
+- [如何：將負載測試結果匯入至存放庫](../test/how-to-import-load-test-results-into-a-repository.md)

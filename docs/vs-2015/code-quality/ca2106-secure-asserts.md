@@ -1,5 +1,5 @@
 ---
-title: CA2106:必須保護判斷提示 |Microsoft Docs
+title: CA2106 必須：安全判斷提示 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,37 +12,37 @@ helpviewer_keywords:
 - SecureAsserts
 ms.assetid: 91feb36e-6e2c-436c-8272-5aee31f77e98
 caps.latest.revision: 21
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 1fb1968c6e2750f658f39f009c97fbab133cccab
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 1f333478c952db74fa6a9482cdad91ce6a858301
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65687401"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72666004"
 ---
-# <a name="ca2106-secure-asserts"></a>CA2106:必須保護判斷提示
+# <a name="ca2106-secure-asserts"></a>CA2106：必須保護判斷提示
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |TypeName|SecureAsserts|
 |CheckId|CA2106|
-|分類|Microsoft.Security|
+|Category|Microsoft.Security|
 |中斷變更|中斷|
 
 ## <a name="cause"></a>原因
  方法會判斷提示使用權限，而且不會在呼叫端上執行安全性檢查。
 
 ## <a name="rule-description"></a>規則描述
- 判斷提示安全性權限但未執行任何安全性檢查，會在您的程式碼中留下可能遭利用的安全性弱點。 判斷提示安全性權限，就會停止安全性堆疊查核行程。 如果您判斷提示的權限，而不執行任何檢查呼叫端上的，呼叫端可以間接執行程式碼使用您的權限。 沒有安全性檢查允許只有很確定，判斷提示不能用於有害的方式，便會判斷提示。 判斷提示是無害的如果您呼叫的程式碼是無害的或使用者無法將任意資訊傳遞給呼叫程式碼。
+ 判斷提示安全性權限但未執行任何安全性檢查，會在您的程式碼中留下可能遭利用的安全性弱點。 當安全性許可權被判斷提示時，安全性堆疊就會停止。 如果您判斷提示許可權，但未對呼叫端執行任何檢查，呼叫者可以使用您的許可權間接執行程式碼。 只有當您確定無法以有害方式使用判斷提示時，才允許不含安全性檢查的判斷提示。 如果您呼叫的程式碼無害，或使用者無法將任意資訊傳遞給您呼叫的程式碼，則判斷提示是無害的。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
- 若要修正此規則的違規情形，加入安全性要求的方法或其宣告的型別。
+ 若要修正此規則的違規，請將安全性需求新增至方法或其宣告類型。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
- 隱藏這項規則只有在仔細的安全性檢閱之後的警告。
+ 只有在仔細的安全性審查之後，才隱藏此規則的警告。
 
-## <a name="see-also"></a>另請參閱
- <xref:System.Security.CodeAccessPermission.Assert%2A?displayProperty=fullName> [安全程式碼撰寫指導方針](https://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177)
+## <a name="see-also"></a>請參閱
+ <xref:System.Security.CodeAccessPermission.Assert%2A?displayProperty=fullName>[安全程式碼撰寫方針](https://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177)

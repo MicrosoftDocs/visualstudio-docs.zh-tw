@@ -3,20 +3,20 @@ title: WPF 簡介
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: b8d7cf43-d1f2-4f3d-adb0-4f3a6428edc0
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 dev_langs:
 - csharp
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: bb88c5b718c0f949825a2542b5a084d4e8ca15b9
-ms.sourcegitcommit: dc12a7cb66124596089f01d3e939027ae562ede9
+ms.openlocfilehash: 5fe70c531a109294b49a1f6104f535cf8aca5a45
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71962968"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72635450"
 ---
 # <a name="wpf-overview"></a>WPF 概觀
 
@@ -139,7 +139,7 @@ Namespace SDKSample
 End Namespace
 ```
 
-在這個範例中，程式碼後置會實作一個衍生自 <xref:System.Windows.Window> 類別的類別。 它使用 `x:Class` 屬性來建立標記與程式碼後置類別的關聯， 並從程式碼後置類別的建構函式呼叫 `InitializeComponent`，以合併標記中定義的 UI 與程式碼後置類別 (當系統建置您的應用程式時，會為您產生 `InitializeComponent`，因此您不需要手動實作)。`x:Class` 和 `InitializeComponent` 的組合可確保您的實作在每次建立時，都能正確地初始化。 程式碼後置類別也會針對按鈕的 <xref:System.Windows.Controls.Primitives.ButtonBase.Click> 事件實作事件處理常式。 當您按一下按鈕時，事件處理常式會呼叫 <xref:System.Windows.MessageBox.Show%2A?displayProperty=fullName> 方法來顯示訊息方塊。
+在這個範例中，程式碼後置會實作一個衍生自 <xref:System.Windows.Window> 類別的類別。 它使用 `x:Class` 屬性來建立標記與程式碼後置類別的關聯， 並從程式碼後置類別的建構函式呼叫 `InitializeComponent`，以合併標記中定義的 UI 與程式碼後置類別 （當您建立應用程式時，系統會為您產生 `InitializeComponent`，這就是您不需要手動執行的原因）。@No__t_1 和 `InitializeComponent` 的組合，可確保您的執行會在建立時正確地初始化。 程式碼後置類別也會針對按鈕的 <xref:System.Windows.Controls.Primitives.ButtonBase.Click> 事件實作事件處理常式。 當您按一下按鈕時，事件處理常式會呼叫 <xref:System.Windows.MessageBox.Show%2A?displayProperty=fullName> 方法來顯示訊息方塊。
 
 下圖顯示按下按鈕的結果。
 
@@ -195,17 +195,17 @@ End Namespace
 
 版面配置系統會透過基底 WPF 類別公開給子控制項。 WPF 針對格線、堆疊和停駐等常見版面配置，提供了數個版面配置控制項：
 
-- <xref:System.Windows.Controls.Canvas>:子控制項會提供自己的版面配置。
+- <xref:System.Windows.Controls.Canvas>：子控制項會提供自己的版面配置。
 
-- <xref:System.Windows.Controls.DockPanel>:子控制項會沿著面板邊緣對齊。
+- <xref:System.Windows.Controls.DockPanel>：子控制項會沿著面板邊緣對齊。
 
-- <xref:System.Windows.Controls.Grid>:子控制項會依資料列和資料行定位。
+- <xref:System.Windows.Controls.Grid>：子控制項會依資料列和資料行定位。
 
-- <xref:System.Windows.Controls.StackPanel>:子控制項會垂直或水平堆疊。
+- <xref:System.Windows.Controls.StackPanel>：子控制項會垂直或水平堆疊。
 
-- <xref:System.Windows.Controls.VirtualizingStackPanel>:子控制項會依水平或垂直方向，以單行顯示及排列。
+- <xref:System.Windows.Controls.VirtualizingStackPanel>：子控制項會依水平或垂直方向，以單行顯示及排列。
 
-- <xref:System.Windows.Controls.WrapPanel>:子控制項會從左至右排序定位，並在目前這一行的控制項超出空間所允許的數目時，換至下一行。
+- <xref:System.Windows.Controls.WrapPanel>：子控制項會從左至右排序定位，並在目前這一行的控制項超出空間所允許的數目時，換至下一行。
 
 下列範例使用 <xref:System.Windows.Controls.DockPanel> 來配置多個 <xref:System.Windows.Controls.TextBox> 控制項：
 
@@ -426,7 +426,7 @@ WPF 動畫支援可讓您將控制項設為放大、搖晃、旋轉和淡出，�
 
 如需各種控制項所支援之內容類型的詳細資訊，請參閱 [WPF 內容模型](/dotnet/framework/wpf/controls/wpf-content-model)。
 
-### <a name="triggers"></a>觸發程序
+### <a name="triggers"></a>「觸發程序」
 
 雖然 XAML 標記的主要目的是要實作應用程式的外觀，您也可以使用 XAML 來實作某些方面的應用程式行為。 其中一個範例是使用觸發程序，根據使用者互動來變更應用程式的外觀。 如需詳細資訊，請參閱[樣式和範本](/dotnet/desktop-wpf/fundamentals/styles-templates-overview)。
 
@@ -654,7 +654,7 @@ WPF 控制項的預設使用者介面通常是從其他控制項和圖案建構�
 
 ## <a name="wpf-best-practices"></a>WPF 最佳做法
 
-如同任何開發平台，您可以透過各種方式來使用 WPF，以取得想要的結果。 為了確保您的 WPF 應用程式提供所需的使用者體驗，並符合一般大眾的需求，已針對協助工具、全球化和當地語系化，以及效能提供了建議的最佳作法。 如需詳細資訊，請參閱：
+如同任何開發平台，您可以透過各種方式來使用 WPF，以取得想要的結果。 為了確保您的 WPF 應用程式提供所需的使用者體驗，並符合一般大眾的需求，已針對協助工具、全球化和當地語系化，以及效能提供了建議的最佳作法。 如需詳細資訊，請參閱:
 
 - [協助工具選項](/dotnet/framework/ui-automation/accessibility-best-practices)
 - [WPF 全球化和當地語系化](/dotnet/framework/wpf/advanced/wpf-globalization-and-localization-overview)
@@ -666,9 +666,9 @@ WPF 控制項的預設使用者介面通常是從其他控制項和圖案建構�
 我們已經討論過 WPF 的主要功能。 現在是時候建置您的第一個 WPF 應用程式。
 
 > [!div class="nextstepaction"]
-> [逐步解說：我的第一個 WPF 傳統型應用程式](/dotnet/framework/wpf/getting-started/walkthrough-my-first-wpf-desktop-application)
+> [逐步解說：我的第一個 WPF 桌面應用程式](/dotnet/framework/wpf/getting-started/walkthrough-my-first-wpf-desktop-application)
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [開始使用 WPF](../designers/getting-started-with-wpf.md)
 - [Windows Presentation Foundation](/dotnet/framework/wpf/index)

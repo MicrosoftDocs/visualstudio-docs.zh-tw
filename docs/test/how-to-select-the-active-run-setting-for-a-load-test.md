@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - load tests, run settings, active
 ms.assetid: ed6ff546-acfa-4dd8-b3a2-6e7455930ca4
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 12582aa4c1aa41aa0a38f652cf4841ba1f9953e1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 7a356c69eaa30141ceeb94dd2106b0eb477f35a5
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62949938"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653442"
 ---
-# <a name="how-to-select-the-active-run-setting-for-a-load-test"></a>HOW TO：選取負載測試的使用中回合設定
+# <a name="how-to-select-the-active-run-setting-for-a-load-test"></a>如何：選取負載測試的使用中回合設定
 
 使用 [新增負載測試精靈] 建立負載測試之後，您就可以使用 [負載測試編輯器] 來變更情節屬性，以便符合您的測試需求和目標。
 
@@ -26,7 +26,7 @@ ms.locfileid: "62949938"
 > [!NOTE]
 > 如需回合設定屬性及其描述的完整清單，請參閱[負載測試回合設定屬性](../test/load-test-run-settings-properties.md)。
 
-如果您的負載測試在 [回合設定] 資料夾下只有一個回合設定節點，該節點則一律為使用中的節點。 如果您的負載測試包含多個回合設定節點，則可以在執行負載測試時選取其中一個使用。 請參閱[如何：將其他回合設定新增到負載測試](../test/how-to-add-additional-run-settings-to-a-load-test.md)。
+如果您的負載測試在 [回合設定] 資料夾下只有一個回合設定節點，該節點則一律為使用中的節點。 如果您的負載測試包含多個回合設定節點，則可以在執行負載測試時選取其中一個使用。 請參閱[如何：將其他回合設定新增至負載測試](../test/how-to-add-additional-run-settings-to-a-load-test.md)。
 
 在 [負載測試編輯器] 中，使用中的回合設定可由 "[Active]" 後置字元加以辨識。
 
@@ -55,8 +55,8 @@ ms.locfileid: "62949938"
 
 **mstest /testcontainer:loadtest1.loadtest**
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [設定負載測試回合設定](../test/configure-load-test-run-settings.md)
 - [在負載測試中指定電腦的計數器集合和臨界值規則](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md)
-- [如何：將其他回合設定新增到負載測試](../test/how-to-add-additional-run-settings-to-a-load-test.md)
+- [如何：將其他回合設定新增至負載測試](../test/how-to-add-additional-run-settings-to-a-load-test.md)

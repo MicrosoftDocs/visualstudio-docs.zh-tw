@@ -1,5 +1,5 @@
 ---
-title: CA2221:完成項應該受到保護 |Microsoft Docs
+title: CA2221：完成項應該受到保護 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,40 +12,40 @@ helpviewer_keywords:
 - CA2221
 ms.assetid: bda03aee-4cce-45d3-907d-17f4ee030acc
 caps.latest.revision: 16
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 9e8deec8687e3ddb2b3d961aa9fc1e97a45c961d
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 3e98c2ea598bcf73b919ba10ef1ea0b53c2a40f3
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65685124"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72651965"
 ---
-# <a name="ca2221-finalizers-should-be-protected"></a>CA2221:Finalizer 方法應該為 protected
+# <a name="ca2221-finalizers-should-be-protected"></a>CA2221：完成項應該受到保護
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |TypeName|FinalizersShouldBeProtected|
 |CheckId|CA2221|
-|分類|Microsoft.Usage|
+|Category|Microsoft。使用方式|
 |中斷變更|非中斷|
 
 ## <a name="cause"></a>原因
- 公用類型會實作完成項，不會指定系列 （受保護） 的存取。
+ 公用類型會執行未指定家族（受保護）存取的完成項。
 
 ## <a name="rule-description"></a>規則描述
- 完成項必須使用系列存取修飾詞 (Modifier)。 此規則會強制執行C#，Visual Basic 和 VisualC++編譯器。
+ 完成項必須使用系列存取修飾詞 (Modifier)。 此規則是由C#、Visual Basic 和 Visual C++編譯器強制執行。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
- 若要修正此規則的違規情形，變更系列存取完成項。
+ 若要修正此規則的違規情形，請將完成項變更為可供家族存取。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
  請勿隱藏此規則的警告。
 
 ## <a name="example"></a>範例
- 無法以任何高層級的.NET 語言; 違反此規則如果您正在撰寫 Microsoft Intermediate Language，它可以是違反了。
+ 在任何高階 .NET 語言中都不能違反這項規則;如果您要撰寫 Microsoft 中繼語言，可能會違反此檔案。
 
 ```
 // =============== CLASS MEMBERS DECLARATION ===================
@@ -80,5 +80,5 @@ ms.locfileid: "65685124"
 } // end of namespace
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
  [Dispose 模式](https://msdn.microsoft.com/library/31a6c13b-d6a2-492b-9a9f-e5238c983bcb)

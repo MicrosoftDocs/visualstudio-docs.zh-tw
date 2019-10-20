@@ -1,5 +1,5 @@
 ---
-title: CA1021:避免使用 out 參數 |Microsoft Docs
+title: CA1021：避免 out 參數 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,83 +12,81 @@ helpviewer_keywords:
 - CA1021
 ms.assetid: 970f2304-842c-4fb7-9734-f3871da8d479
 caps.latest.revision: 21
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: b52d5a97fc3c2e3a6bf5b4bb938bad9da50d3a7d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ea5d943212122672b84376b9b3ddf5e72bb0e81f
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68144819"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72661993"
 ---
-# <a name="ca1021-avoid-out-parameters"></a>CA1021:避免使用 out 參數
+# <a name="ca1021-avoid-out-parameters"></a>CA1021：避免使用 out 參數
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |TypeName|AvoidOutParameters|
 |CheckId|CA1021|
-|分類|Microsoft.Design|
+|Category|Microsoft. Design|
 |中斷變更|中斷|
 
 ## <a name="cause"></a>原因
- 公用或受保護的方法中的公用型別具有`out`參數。
+ 公用類型中的公用或受保護方法具有 `out` 參數。
 
 ## <a name="rule-description"></a>規則描述
- 傳址方式傳遞類型 (使用`out`或`ref`) 需要擁有了實值型別和參考型別之間的差異，並處理具有多個傳回值的方法的指標使用經驗。 此外，之間的差異`out`和`ref`參數不廣泛了解。
+ 以傳址方式傳遞類型（使用 `out` 或 `ref`）需要使用指標的經驗、瞭解實數值型別和參考型別之間的差異，以及處理具有多個傳回值的方法。 此外，`out` 和 `ref` 參數之間的差異並不廣泛瞭解。
 
- 傳遞參考型別時，「 傳址 」，方法會使用參數來傳回物件的不同執行個體。 傳址方式傳遞參考型別也稱為使用 double 指標的指標或 double 的間接取值的指標。 使用的預設呼叫慣例，「 依值 「 通過，已接受參考類型的參數會接收物件的指標。 指標，而不將它指向，物件是傳值方式傳遞。 傳遞的值，表示該方法無法變更讓它指向參考類型的新執行個體的指標。 不過，它可以變更它所指向的物件的內容。 大部分的應用程式這就已足夠，並產生所要的行為。
+ 當以傳址方式傳遞參考型別時，方法會使用參數來傳回物件的不同實例。 以傳址方式傳遞參考型別，也稱為使用雙重指標、指標指標或雙重間接取值。 藉由使用預設的呼叫慣例（以傳值方式傳遞），接受參考型別的參數已經收到物件的指標。 指標（而不是其指向的物件）會以傳值方式傳遞。 [以傳值方式傳遞] 表示方法無法變更指標，使其指向參考型別的新實例。 不過，它可以變更它所指向之物件的內容。 對於大部分的應用程式而言，這是足夠的，並且會產生所需的行為。
 
- 如果方法必須傳回不同的執行個體，使用此方法的傳回值來完成這項作業。 請參閱<xref:System.String?displayProperty=fullName>各種不同的方法，處理字串，並傳回字串的新執行個體的類別。 使用此模型時，呼叫端必須決定是否要保留原始物件。
+ 如果方法必須傳回不同的實例，請使用方法的傳回值來完成這項操作。 如需在字串上運作並傳回字串之新實例的各種方法，請參閱 <xref:System.String?displayProperty=fullName> 類別。 使用此模型時，呼叫端必須決定是否保留原始物件。
 
- 雖然傳回的值很常見，並且大量使用正確的應用程式的`out`和`ref`參數需要中繼的設計和編碼技能。 程式庫架構設計人員負責設計的目標為一般使用者不應預期使用者會熟練地運用`out`或`ref`參數。
+ 雖然傳回值是常見且經常使用的，但 `out` 和 `ref` 參數的正確應用程式需要中繼設計和編碼技能。 設計一般物件的程式庫架構師不應預期使用者會使用 `out` 或 `ref` 參數來主控。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
- 若要修正此起因於實值類型的規則的違規情形，讓方法傳回的物件做為其傳回的值。 如果此方法必須傳回多個值，請將它傳回保存值物件的單一執行個體重新設計。
+ 若要修正此規則因實值型別而造成的違規，請讓方法傳回物件做為其傳回值。 如果方法必須傳回多個值，請重新設計，以傳回保留值之物件的單一實例。
 
- 若要修正這項規則是參考型別所導致的違規情形，請確定所要的行為是要傳回之參考的新執行個體。 如果是，方法應使用它的傳回值，若要這樣做。
+ 若要修正此規則因參考型別而造成的違規，請確定所需的行為是傳回參考的新實例。 如果是，此方法應該使用其傳回值來執行此動作。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
- 它可安全地隱藏此規則的警告。 不過，這種設計可能會導致可用性問題。
+ 您可以放心地隱藏此規則的警告。 不過，這種設計可能會導致可用性問題。
 
 ## <a name="example"></a>範例
- 下列程式庫會顯示兩個實作的類別，會產生對使用者的意見反應。 首次實作 (`BadRefAndOut`) 會強制程式庫使用者管理三個傳回的值。 第二個的實作 (`RedesignedRefAndOut`) 傳回的容器類別的執行個體，藉以簡化使用者經驗 (`ReplyData`) 可管理的資料當做單一單位。
+ 下列程式庫顯示類別的兩個實作為，其會產生對使用者意見反應的回應。 第一個執行（`BadRefAndOut`）會強制程式庫使用者管理三個傳回值。 第二個實作為（`RedesignedRefAndOut`）藉由傳回將資料當做單一單位來管理的容器類別實例（`ReplyData`），來簡化使用者體驗。
 
  [!code-csharp[FxCop.Design.NoRefOrOut#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.NoRefOrOut/cs/FxCop.Design.NoRefOrOut.cs#1)]
 
 ## <a name="example"></a>範例
- 下列應用程式說明使用者的體驗。 重新設計的程式庫的呼叫 (`UseTheSimplifiedClass`方法) 是更簡單，並輕鬆地管理方法所傳回的資訊。 這兩個方法的輸出完全相同。
+ 下列應用程式說明使用者的體驗。 重新設計的程式庫（`UseTheSimplifiedClass` 方法）的呼叫更簡單，而且方法所傳回的資訊很容易管理。 這兩個方法的輸出完全相同。
 
  [!code-csharp[FxCop.Design.TestNoRefOrOut#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.TestNoRefOrOut/cs/FxCop.Design.TestNoRefOrOut.cs#1)]
 
 ## <a name="example"></a>範例
- 下列範例程式庫將說明如何`ref`參考型別參數使用，並示範更好的方式來實作這項功能。
+ 下列範例程式庫說明如何使用參考型別的 `ref` 參數，並顯示更好的方法來執行這項功能。
 
  [!code-csharp[FxCop.Design.RefByRefNo#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.RefByRefNo/cs/FxCop.Design.RefByRefNo.cs#1)]
 
 ## <a name="example"></a>範例
- 下列應用程式會呼叫每個方法，以示範行為的文件庫中。
+ 下列應用程式會呼叫程式庫中的每個方法，以示範此行為。
 
  [!code-csharp[FxCop.Design.TestRefByRefNo#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.TestRefByRefNo/cs/FxCop.Design.TestRefByRefNo.cs#1)]
 
  此範例會產生下列輸出。
 
- **變更指標-傳值方式傳遞：** 
-**12345**
-**12345**
-**變更指標-傳址方式傳遞：** 
-**12345**
-**12345 ABCDE**
-**傳回值來傳遞：** 
-**12345 ABCDE**
-## <a name="try-pattern-methods"></a>請嘗試模式方法
+ **變更以傳值方式傳遞的指標：** 
+**12345** 
+**12345** 
+**變更以傳址方式傳遞的指標：** 
+**12345** 
+**12345 ABCDE** 1**以傳回值傳遞：** 3**12345 ABCDE**
+## <a name="try-pattern-methods"></a>試用模式方法
 
 ### <a name="description"></a>描述
- 實作的方法**嘗試\<項目 >** 模式，例如<xref:System.Int32.TryParse%2A?displayProperty=fullName>，不會引發這個違規。 下列範例示範結構 （數值型別），實作<xref:System.Int32.TryParse%2A?displayProperty=fullName>方法。
+ 執行**Try \<Something >** 模式的方法（例如 <xref:System.Int32.TryParse%2A?displayProperty=fullName>）不會引發這個違規。 下列範例顯示的結構（實值型別）會執行 <xref:System.Int32.TryParse%2A?displayProperty=fullName> 方法。
 
 ### <a name="code"></a>程式碼
  [!code-csharp[FxCop.Design.TryPattern#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.TryPattern/cs/FxCop.Design.TryPattern.cs#1)]
 
-## <a name="related-rules"></a>相關的規則
- [CA1045:不要參考所傳遞類型](../code-quality/ca1045-do-not-pass-types-by-reference.md)
+## <a name="related-rules"></a>相關規則
+ [CA1045：不要以傳址方式傳遞類型](../code-quality/ca1045-do-not-pass-types-by-reference.md)

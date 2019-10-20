@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - generics, and unit tests
 - unit tests, and generics
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-author: gewarren
-ms.openlocfilehash: 96cb1cc275b5eb521bc998ea26d7c742bbeabdfb
-ms.sourcegitcommit: b60a00ac3165364ee0e53f7f6faef8e9fe59ec4a
+author: jillre
+ms.openlocfilehash: 94b27423a93a0ad67aa924e8d8bac9eac1a7e3c2
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70913357"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72659820"
 ---
 # <a name="unit-tests-for-generic-methods"></a>泛型方法的單元測試
 
@@ -115,9 +115,9 @@ public void SizeOfLinkedListTest()
 ```
 
 > [!NOTE]
-> 每次 SizeOfLinkedListTest 測試執行時，都會呼叫其 TestHelper 方法兩次。 Assert 陳述式的計算結果每次都必須為 true，測試才會通過。 如果測試失敗，可能無法確定造成失敗的是指定 `<int>` 的呼叫，還是指定 `<char>` 的呼叫。 如果要找出答案，您可以檢查呼叫堆疊，也可以在測試方法中設定中斷點，然後在執行測試時同時進行偵錯。 如需詳細資訊，請參閱[如何：在 ASP.NET 解決方案中執行測試時偵錯](https://msdn.microsoft.com/Library/de4d7aa1-4a1e-467e-a19b-4a85ec245b8b)。
+> 每次 SizeOfLinkedListTest 測試執行時，都會呼叫其 TestHelper 方法兩次。 Assert 陳述式的計算結果每次都必須為 true，測試才會通過。 如果測試失敗，可能無法確定造成失敗的是指定 `<int>` 的呼叫，還是指定 `<char>` 的呼叫。 如果要找出答案，您可以檢查呼叫堆疊，也可以在測試方法中設定中斷點，然後在執行測試時同時進行偵錯。 如需詳細資訊，請參閱[如何：在 ASP.NET 方案中執行測試時偵錯](https://msdn.microsoft.com/Library/de4d7aa1-4a1e-467e-a19b-4a85ec245b8b)。
 
-### <a name="TypeConstraintNotSatisfied"></a> 範例 2：使用型別條件約束
+### <a name="TypeConstraintNotSatisfied"></a> 範例 2：使用類型條件約束
 本範例示範泛型方法的單元測試，而該泛型方法使用了未能滿足的類型條件約束。 第一個區段顯示來自待測程式碼專案的程式碼。 其中的類型條件約束以反白顯示。
 
 第二個區段顯示來自測試專案的程式碼。
@@ -194,6 +194,6 @@ namespace TestProject1
 }
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [對程式碼進行單元測試](../test/unit-test-your-code.md)

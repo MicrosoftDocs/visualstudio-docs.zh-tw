@@ -8,31 +8,31 @@ helpviewer_keywords:
 - database files, creating
 - table designer
 ms.assetid: 99c2b06f-47aa-414e-8057-a3453712fd23
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 365037d3eeeec5077d724ca72d43cce5dcbe0ebd
-ms.sourcegitcommit: 528178a304e66c0cb7ab98b493fe3c409f87493a
+ms.openlocfilehash: 14d30a366c7400b05a713f146e602ae9ccd7e766
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71273367"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72648667"
 ---
 # <a name="create-a-database-and-add-tables-in-visual-studio"></a>建立資料庫並在 Visual Studio 中新增資料表
 
 您可以使用 Visual Studio，在 SQL Server Express LocalDB 中建立及更新本機資料庫檔案。 您也可以在 Visual Studio 的 [ **SQL Server 物件總管**工具] 視窗中執行 transact-sql 語句來建立資料庫。 在本主題中，我們將建立 *.mdf*檔案，並使用資料表設計工具來新增資料表和索引鍵。
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>Prerequisites
 
-若要完成此逐步解說，您將需要安裝在 Visual Studio 中的 **.net 桌面開發**和**資料儲存和處理**工作負載。 若要安裝它們，請開啟**Visual Studio 安裝程式**，然後選擇您想要修改之 Visual Studio 版本旁邊的 [**修改**（或**更多** > **修改**）]。
+若要完成此逐步解說，您將需要安裝在 Visual Studio 中的 **.net 桌面開發**和**資料儲存和處理**工作負載。 若要安裝它們，請開啟**Visual Studio 安裝程式**，然後選擇您想要修改之 Visual Studio 版本旁邊的 **修改** （或**更多** > **修改**）。
 
 ## <a name="create-a-project-and-a-local-database-file"></a>建立專案和本機資料庫檔案
 
 1. 建立新的**Windows Forms 應用程式**專案，並將其命名為**SampleDatabaseWalkthrough**。
 
-2. 在功能表列上，選取 [**專案** > ] [**加入新專案**]。
+2. 在功能表列上，選取 [**專案**]  >  [**加入新專案**]。
 
 3. 在專案範本清單中，向下選取 [以**服務為基礎的資料庫**]。
 
@@ -42,7 +42,7 @@ ms.locfileid: "71273367"
 
 ### <a name="add-a-data-source"></a>新增資料來源
 
-1. 如果 [**資料來源**] 視窗未開啟，請按下**Shift** + **Alt** + **D** ，或選取 [**查看** > **其他 Windows**  > **資料來源**]，將它開啟。功能表列。
+1. 如果 [**資料來源**] 視窗未開啟，請按**Shift** +**Alt** +**D** ，或在功能表列上選取 [ **View**  > **其他 Windows**  > **資料來源**] 來開啟它。
 
 1. 在 [**資料來源**] 視窗中，選取 [**加入新的資料來源**]。
 
@@ -64,7 +64,7 @@ ms.locfileid: "71273367"
 
 您可以藉由開啟資料連線的屬性視窗，來查看*sampledatabase.mdf*的連接字串：
 
-- 選取 [ **View**  >  **SQL Server 物件總管**] 以開啟 [ **SQL Server 物件總管**] 視窗。 展開 **（localdb） [\MSSQLLocalDB**  > **資料庫**]，然後以滑鼠右鍵按一下 [ *sampledatabase.mdf* ]，然後選取 [**屬性**]。
+- 選取 [ **View**  > **SQL Server 物件總管**] 以開啟 [ **SQL Server 物件總管**] 視窗。 展開 **（localdb） \MSSQLLocalDB**  > **資料庫**，然後以滑鼠右鍵按一下*Sampledatabase.mdf* ，再選取 **屬性**。
 
 - 或者，如果該視窗尚未開啟，您可以選取 [ **View**  > **伺服器總管**]。 展開 [**資料連線**] 節點，以滑鼠右鍵按一下 [ *sampledatabase.mdf*]，然後選取 [**屬性**]，以開啟 [屬性視窗]。
 
@@ -87,14 +87,14 @@ ms.locfileid: "71273367"
 
 3. 在格線中，為下列每一個項目加入一個資料列：
 
-   |資料行名稱|資料類型|允許 Null|
+   |欄名|資料類型|允許 Null|
    |-----------------|---------------|-----------------|
    |`CustomerID`|`nchar(5)`|False (已清除)|
    |`CompanyName`|`nvarchar(50)`|False (已清除)|
    |`ContactName`|`nvarchar (50)`|True (已選取)|
    |`Phone`|`nvarchar (24)`|True (已選取)|
 
-4. 以滑鼠右鍵按一下資料`CustomerID`列，然後選取 [**設定主鍵**]。
+4. 以滑鼠右鍵按一下 [`CustomerID`] 資料列，然後選取 [**設定主要索引鍵**]。
 
 5. 以滑鼠右鍵按一下預設資料列（`Id`），然後選取 [**刪除**]。
 
@@ -118,7 +118,7 @@ ms.locfileid: "71273367"
 
 1. 加入另一個資料表，然後為下表中的每個項目加入一個資料列：
 
-   |資料行名稱|資料類型|允許 Null|
+   |欄名|資料類型|允許 Null|
    |-----------------|---------------|-----------------|
    |`OrderID`|`int`|False (已清除)|
    |`CustomerID`|`nchar(5)`|False (已清除)|
@@ -180,8 +180,8 @@ ms.locfileid: "71273367"
     > [!IMPORTANT]
     > 確定所有訂單識別碼和訂單數量都是整數，而且每個客戶識別碼都符合您在 Customers 資料表的 **CustomerID** 資料行中指定的值。
 
-7. 在功能表列上 **，選取** > [檔案] [**全部儲存**]。
+7. 在功能表列上 **，選取 [** 檔案]  >  [**全部儲存**]。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [存取 Visual Studio 中的資料](accessing-data-in-visual-studio.md)

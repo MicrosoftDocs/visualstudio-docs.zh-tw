@@ -1,5 +1,5 @@
 ---
-title: CA1721:屬性名稱不應該相符的 get 方法 |Microsoft Docs
+title: CA1721：屬性名稱不應該與 get 方法相符 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,48 +12,48 @@ helpviewer_keywords:
 - PropertyNamesShouldNotMatchGetMethods
 ms.assetid: 45a0e853-1f06-4688-af1b-cc634409e295
 caps.latest.revision: 19
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 94d120a7656fc9270543ceeb57063124764c4bca
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 366932c83328c6810e0103308db1c73a3e3076cb
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63431192"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72671614"
 ---
-# <a name="ca1721-property-names-should-not-match-get-methods"></a>CA1721:屬性名稱不應該和其中有 get 的方法名稱相符
+# <a name="ca1721-property-names-should-not-match-get-methods"></a>CA1721：屬性名稱不能和其中有 get 的方法名稱相符
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |TypeName|PropertyNamesShouldNotMatchGetMethods|
 |CheckId|CA1721|
-|分類|Microsoft.Naming|
+|Category|Microsoft. 命名|
 |中斷變更|中斷|
 
 ## <a name="cause"></a>原因
- 公用或受保護的成員名稱開頭為 'Get'，否則需符合公用或受保護的屬性名稱。 比方說，此型別包含名為 'GetColor' 和名為 'Color' 屬性的方法違反此規則。
+ 公用或 protected 成員的名稱以 ' Get ' 開頭，否則會符合公用或受保護屬性的名稱。 例如，包含名為 ' GetColor ' 之方法的類型和名為 ' Color ' 的屬性會違反此規則。
 
 ## <a name="rule-description"></a>規則描述
- Get 方法和屬性應該清楚區別其功能的名稱。
+ Get 方法和屬性的名稱應該清楚區別其功能。
 
- 命名慣例提供了通用程式庫 common language runtime 為目標。 這可減少的時間，才能了解新的軟體程式庫，並增加程式庫，開發人員專業開發的 managed 程式碼中的其他人的客戶信心。
+ 命名慣例提供以通用語言執行時間為目標之程式庫的常見外觀。 這可減少學習新軟體程式庫所需的時間，並提高客戶對於開發 managed 程式碼的專業知識而開發之程式庫的信心。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
- 變更名稱，使它不符合加上 'Get' 方法的名稱。
+ 請變更名稱，使其不符合前面加上 ' Get ' 之方法的名稱。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
  請勿隱藏此規則的警告。
 
 > [!NOTE]
-> 如果因為實作 IExtenderProvider 介面的 Get 方法，可能會排除這個警告。
+> 如果 Get 方法是藉由執行 IExtenderProvider 介面所造成，則可能會排除這個警告。
 
 ## <a name="example"></a>範例
- 下列範例包含方法和違反此規則的屬性。
+ 下列範例包含違反此規則的方法和屬性。
 
  [!code-csharp[FxCop.Naming.GetMethod#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Naming.GetMethod/cs/FxCop.Naming.GetMethod.cs#1)]
  [!code-vb[FxCop.Naming.GetMethod#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Naming.GetMethod/vb/FxCop.Naming.GetMethod.vb#1)]
 
-## <a name="related-rules"></a>相關的規則
- [CA1024:在適當時使用屬性](../code-quality/ca1024-use-properties-where-appropriate.md)
+## <a name="related-rules"></a>相關規則
+ [CA1024：建議在適當時使用屬性](../code-quality/ca1024-use-properties-where-appropriate.md)

@@ -8,17 +8,17 @@ helpviewer_keywords:
 - Debug.ListDisassembly command
 - list disassembly command
 ms.assetid: eb363e35-e86a-4121-966f-991210c27e2a
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6dc4bddefe0240a8e53babeec1fdce4f83ce5ef1
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+ms.openlocfilehash: e2e9177ee7048f626c61fee087468f991e4ed548
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926215"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72610738"
 ---
 # <a name="list-disassembly-command"></a>列出反組譯碼命令
 開始偵錯處理序，並可讓您指定處理錯誤的方式。
@@ -36,27 +36,27 @@ Debug.ListDisassembly [/count:number] [/endaddress:expression]
 
 /count: `number` [或] /c: `number` [或] /length: `number` [或] /l: `number`
 
-選擇性。 要顯示的指令數目。 預設值為 8。
+選擇項。 要顯示的指令數目。 預設值為 8。
 
 /endaddress: `expression` [或] /e: `expression`
 
-選擇性。 停止反組譯碼的位址。
+選擇項。 停止反組譯碼的位址。
 
 /codebytes:`yes`&#124;`no` [或] /bytes:`yes`&#124;`no` [或] /b:`yes`&#124;`no`
 
-選擇性。 指出是否要顯示程式碼位元組。 預設值為 `no`。
+選擇項。 指出是否要顯示程式碼位元組。 預設值為 `no`。
 
 /source:`yes`&#124;`no` [或] /s:`yes`&#124;`no`
 
-選擇性。 指出是否要顯示來源程式碼。 預設值為 `no`。
+選擇項。 指出是否要顯示來源程式碼。 預設值為 `no`。
 
 /symbolnames:`yes`&#124;`no` [或] /names:`yes`&#124;`no` [或] /n:`yes`&#124;`no`
 
-選擇性。 指出是否要顯示符號名稱。 預設值為 `yes`。
+選擇項。 指出是否要顯示符號名稱。 預設值為 `yes`。
 
  [/linenumbers:`yes`&#124;`no`]
 
-選擇性。 啟用檢視與原始程式碼建立關聯的行號。 /source 參數的值必須為 `yes` 才能使用 /linenumbers 參數。
+選擇項。 啟用檢視與原始程式碼建立關聯的行號。 /source 參數的值必須為 `yes` 才能使用 /linenumbers 參數。
 
 ## <a name="example"></a>範例
 
@@ -64,7 +64,7 @@ Debug.ListDisassembly [/count:number] [/endaddress:expression]
 >Debug.ListDisassembly
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [列出呼叫堆疊命令](../../ide/reference/list-call-stack-command.md)
 - [列出執行緒命令](../../ide/reference/list-threads-command.md)

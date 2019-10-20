@@ -16,91 +16,91 @@ helpviewer_keywords:
 - data sources
 ms.assetid: ed28c625-bb89-4037-bfde-cfa435d182a2
 caps.latest.revision: 60
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: c9f6b7334c7032414bfd0fbf7ecf9ad48b414cb9
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 85c07ad7995bc614df4b988bb17fa8977452b5d8
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65701037"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72673069"
 ---
 # <a name="add-new-data-sources"></a>新增新資料來源
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-.NET data tools 在 Visual Studio 中的內容中的字詞*資料來源*是指連接到資料存放區，並將資料公開給.NET 應用程式的.NET 物件。 Visual Studio 設計工具可以取用資料來源產生拖曳和卸除資料庫物件時，將資料繫結至表單的未定案程式碼的輸出**Zdroje dat**視窗。 這種資料來源可以是：  
-  
-- 與某些類型的資料庫相關聯的 Entity Framework 模型中的類別。  
-  
-- 與某些類型的資料庫相關聯的資料集。  
-  
-- 表示 Windows Communication Foundation (WCF) 資料服務或 REST 服務作為網路服務的類別。  
-  
-- 表示 SharePoint 服務的類別。  
-  
-- 類別或您方案中的集合。  
-  
+在 Visual Studio 的 .NET 資料工具內容中，「*資料來源*」一詞指的是連接到資料存放區，並將資料公開至 .net 應用程式的 .net 物件。 當您從 [**資料來源**] 視窗拖放資料庫物件時，Visual Studio 設計工具可以取用資料來源的輸出，以產生將資料系結至表單的重複使用程式碼。 這種資料來源可以是：
+
+- Entity Framework 模型中的類別，與某種類型的資料庫相關聯。
+
+- 與某一種資料庫相關聯的資料集。
+
+- 代表網路服務（例如 Windows Communication Foundation （WCF）資料服務或 REST 服務）的類別。
+
+- 代表 SharePoint 服務的類別。
+
+- 方案中的類別或集合。
+
 > [!NOTE]
-> 如果您不使用資料繫結功能，資料集、 Entity Framework、 LINQ to SQL、 WCF、 或 SharePoint，「 資料來源 」 的概念不適用。 只要直接連接到資料庫所使用的 SQLCommand 物件，並直接與資料庫通訊。  
-  
- 您建立和編輯資料來源，使用**資料來源組態精靈**Windows Form 或 Windows Presentation Foundation 應用程式中。 Entity Framework 的第一次建立實體類別，並選取，以啟動精靈**專案** > **加入新的資料來源**（本文稍後詳細說明）。  
-  
- ![資料來源組態精靈](../data-tools/media/data-source-configuration-wizard.png "資料來源組態精靈")  
-  
- 建立資料來源之後，它會出現在**資料來源**工具視窗 (Shift + Alt + D 或**檢視** > **其他 Windows**  >  **資料來源**)。 您可以將從資料來源**Zdroje dat**視窗拖曳到表單的設計介面或控制項。 這會導致產生的未定案程式碼，會顯示給使用者的資料存放區中的來源資料的程式碼。 下圖顯示資料集拖曳至 Windows form 已卸除。 如果您選取 F5 在應用程式時，基礎資料庫中的資料會出現在表單的控制項。  
-  
- ![資料來源拖曳作業](../data-tools/media/raddata-data-source-drag-operation.png "raddata 資料來源拖曳作業")  
-  
-## <a name="data-source-for-a-database-or-a-database-file"></a>資料庫或資料庫檔案的資料來源  
-  
-### <a name="dataset"></a>資料集  
- 若要建立資料集做為資料來源，執行**資料來源組態精靈**(**專案** > **加入新的資料**來源)，然後選擇  **資料庫**資料來源類型。 遵循提示來指定新的或現有的資料庫連接或資料庫檔案。  
-  
-### <a name="entity-classes"></a>實體類別  
- 若要建立 Entity Framework 模型做為資料來源，請先執行**Entity Data Model 精靈**來建立實體類別 (**專案** > **加入新項目** >  **ADO.NET 實體資料模型**)。  
-  
- ![新的 Entity Framework 模型專案項目](../data-tools/media/raddata-new-entity-framework-model-project-item.png "raddata 全新的 Entity Framework 模型專案項目")  
-  
- 選擇要產生模型的方法。  
-  
- ![Entity Data Model 精靈](../data-tools/media/raddata-entity-data-model-wizard.png "raddata Entity Data Model 精靈")  
-  
- 將模型加入做為資料來源。 所產生的類別會出現在**資料來源組態精靈**當您選擇**物件**類別目錄。  
-  
- ![使用實體類別的資料來源組態精靈](../data-tools/media/raddata-data-source-configuration-wizard-with-entity-classes.png "raddata 與實體類別的資料來源組態精靈")  
-  
-## <a name="data-source-for-a-service"></a>服務的資料來源  
- 若要從服務中建立資料來源，執行**資料來源組態精靈**，然後選擇**服務**資料來源類型。 這是其實只是捷徑**加入服務參考**對話方塊中，您也可以存取中的專案上按一下滑鼠右鍵**方案總管**，然後選取**加入服務參考**.  
-  
- 當您從服務建立資料來源時，Visual Studio 新增服務參考加入專案。 Visual Studio 也會建立對應至服務傳回之物件的 proxy 物件。 比方說，傳回的資料集的服務都會在您的專案做為資料集;傳回在您的專案做為類型中表示特定類型傳回服務。  
-  
- 您可以從下列服務類型來建立資料來源：  
-  
-- WCF 資料服務。 如需詳細資訊，請參閱 <<c0> [ 概觀](https://msdn.microsoft.com/library/7924cf94-c9a6-4015-afc9-f5d22b1743bb)。  
-  
-- WCF 資料服務。 如需詳細資訊，請參閱 < [Windows Communication Foundation 服務和 Visual Studio 中的 WCF Data Services](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)。  
-  
-- Web 服務。  
-  
+> 如果您不使用資料系結功能、資料集、Entity Framework、LINQ to SQL、WCF 或 SharePoint，「資料來源」的概念就不適用。 只要使用 SQLCommand 物件直接連接到資料庫，然後直接與資料庫通訊就可以了。
+
+ 您可以使用 Windows Forms 或 Windows Presentation Foundation 應用程式中的 [**資料來源設定]** ，來建立和編輯資料來源。 針對 Entity Framework，請先建立您的實體類別，然後選取 [**專案** > **加入新的資料來源**] 來啟動精靈（本文稍後會有更詳細的說明）。
+
+ ![資料來源設定向導](../data-tools/media/data-source-configuration-wizard.png "資料來源組態精靈")
+
+ 建立資料來源之後，它會出現在 [**資料來源**] 工具視窗中（Shift + Alt + D**或 View**  > **其他 Windows**  > **資料來源**）。 您可以從 [**資料來源**] 視窗，將資料來源拖曳至表單設計介面或控制項。 這會產生未定案的程式碼，也就是將資料存放區中的資料顯示給使用者的程式碼。 下圖顯示已拖放到 Windows form 上的資料集。 如果您在應用程式上選取 F5，則基礎資料庫中的資料會顯示在表單的控制項中。
+
+ ![資料來源拖曳作業](../data-tools/media/raddata-data-source-drag-operation.png "raddata 資料來源拖曳操作")
+
+## <a name="data-source-for-a-database-or-a-database-file"></a>資料庫或資料庫檔案的資料來源
+
+### <a name="dataset"></a>資料集
+ 若要將資料集建立為數據源，請執行 **資料來源設定** （**Project**  > **加入新的資料**源），然後選擇 **資料庫**資料來源類型。 依照提示來指定新的或現有的資料庫連接，或資料庫檔案。
+
+### <a name="entity-classes"></a>實體類別
+ 若要建立 Entity Framework 模型做為資料來源，請先執行**實體資料模型 Wizard**來建立實體類別（**Project**  >  [**加入新專案**]  > **ADO.NET 實體資料模型**）。
+
+ ![新 Entity Framework 模型專案專案](../data-tools/media/raddata-new-entity-framework-model-project-item.png "raddata 新 Entity Framework 模型專案專案")
+
+ 選擇您想要用來產生模型的方法。
+
+ ![實體資料模型 Wizard](../data-tools/media/raddata-entity-data-model-wizard.png "raddata 實體資料模型 Wizard")
+
+ 加入模型做為資料來源。 當您選擇 [**物件**] 類別時，所產生的類別會出現在 [**資料來源設定]** 中。
+
+ ![具有實體類別的資料來源設定向導](../data-tools/media/raddata-data-source-configuration-wizard-with-entity-classes.png "raddata 資料來源設定 Wizard 與實體類別")
+
+## <a name="data-source-for-a-service"></a>服務的資料來源
+ 若要從服務建立資料來源，請執行 [**資料來源設定向導]** ，然後選擇 [**服務**資料來源類型]。 這其實只是 [**加入服務參考**] 對話方塊的快捷方式，您也可以用滑鼠右鍵按一下**方案總管**中的專案，然後選取 [**加入服務參考**] 來存取。
+
+ 當您從服務建立資料來源時，Visual Studio 會將服務參考新增至您的專案。 Visual Studio 也會建立對應至服務所傳回之物件的 proxy 物件。 例如，傳回資料集的服務會在您的專案中表示為資料集;傳回特定類型的服務會在您的專案中表示為傳回的類型。
+
+ 您可以從下列類型的服務建立資料來源：
+
+- WCF 資料服務。 如需詳細資訊，請參閱[總覽](https://msdn.microsoft.com/library/7924cf94-c9a6-4015-afc9-f5d22b1743bb)。
+
+- WCF 資料服務。 如需詳細資訊，請參閱[Visual Studio 中的 Windows Communication Foundation Services 和 WCF Data Services](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)。
+
+- Web 服務。
+
     > [!NOTE]
-    > 在出現的項目**Zdroje dat**視窗均依存於服務所傳回的資料。 部分服務所提供的資訊可能不足，無法供 [資料來源組態精靈] 建立可繫結的物件。 例如，如果服務傳回不具類型的資料集，沒有任何項目會出現在**Zdroje dat**視窗中，當您完成精靈。 這是因為不具類型資料集不提供結構描述，因此精靈沒有足夠的資訊來建立資料來源。  
-  
-## <a name="data-source-for-an-object"></a>物件的資料來源  
- 您可以從任何公開 （expose） 執行的一或多個公用屬性的物件建立資料來源**資料來源組態精靈**，然後選取**物件**資料來源類型。 物件的所有公用屬性會顯示在**Zdroje dat**視窗。   如果您使用 Entity Framework，並產生一個模型，這是您可以在此找到的實體類別，將會為您的應用程式的資料來源。  
-  
- 在 **選取資料物件**頁面上，展開樹狀檢視中找出您想要繫結至物件中的節點。 樹狀檢視中包含您的專案和組件和其他專案所參考的專案節點。  
-  
- 如果您想要繫結至組件或未出現在 [樹狀] 檢視的專案中的物件，請按一下**加入參考**並用**Add Reference Dialog Box**加入至組件或專案的參考。 加入參考之後，組件或專案會加入 [樹狀] 檢視中。  
-  
+    > 出現在 [**資料來源**] 視窗中的專案取決於服務所傳回的資料。 部分服務所提供的資訊可能不足，無法供 [資料來源組態精靈] 建立可繫結的物件。 例如，如果服務傳回不具類型的資料集，則當您完成嚮導時，[**資料來源**] 視窗中不會出現任何專案。 這是因為不具類型的資料集不會提供架構，因此 wizard 沒有足夠的資訊來建立資料來源。
+
+## <a name="data-source-for-an-object"></a>物件的資料來源
+ 您可以藉由執行 [**資料來源設定向導]** ，然後選取 [**物件**資料來源類型]，從公開一個或多個公用屬性的任何物件建立資料來源。 物件的所有公用屬性都會顯示在 [**資料來源**] 視窗中。   如果您使用 Entity Framework 並產生模型，您可以在這裡找到將成為應用程式資料來源的實體類別。
+
+ 在 [**選取資料物件**] 頁面上，展開樹狀檢視中的節點，以找出您想要系結的物件。 樹狀檢視包含專案的節點，以及專案所參考之元件和其他專案的節點。
+
+ 如果您想要系結至未出現在樹狀檢視中的元件或專案中的物件，請按一下 [**加入參考**]，然後使用 [**加入參考] 對話方塊**來加入元件或專案的參考。 加入參考之後，元件或專案就會加入至樹狀檢視。
+
 > [!NOTE]
-> 若要建置的專案，然後物件才會出現在樹狀檢視中包含您的物件。  
-  
+> 您可能需要先建立包含物件的專案，然後物件才會出現在樹狀檢視中。
+
 > [!NOTE]
-> 若要支援拖放資料繫結物件實作<xref:System.ComponentModel.ITypedList>或<xref:System.ComponentModel.IListSource>介面都必須有預設建構函式。 否則，Visual Studio 無法具現化的資料來源物件，而且當您將項目拖曳至設計介面，它會顯示錯誤。  
-  
-## <a name="data-source-for-a-sharepoint-list"></a>如需 SharePoint 清單的資料來源  
- 您也可以執行從 SharePoint 清單建立資料來源**資料來源組態精靈**，然後選取**SharePoint**資料來源類型。 SharePoint 會將資料公開透過[!INCLUDE[ssAstoria](../includes/ssastoria-md.md)]，因此建立 SharePoint 資料來源是從服務建立資料來源相同。 選取**SharePoint**中的項目**資料來源組態精靈**開啟**加入服務參考**對話方塊中，您連接至 SharePoint 資料服務藉由指向 SharePoint 伺服器。  這需要 SharePoint SDK。  
-  
-## <a name="see-also"></a>另請參閱  
+> 若要支援拖放資料系結，執行 <xref:System.ComponentModel.ITypedList> 或 <xref:System.ComponentModel.IListSource> 介面的物件必須有預設的函式。 否則，Visual Studio 無法具現化資料來源物件，而且當您將專案拖曳至設計介面時，將會顯示錯誤。
+
+## <a name="data-source-for-a-sharepoint-list"></a>SharePoint 清單的資料來源
+ 您可以藉由執行 [**資料來源設定向導]** ，然後選取 [ **sharepoint**資料來源類型]，從 sharepoint 清單建立資料來源。 SharePoint 會透過 [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)] 公開資料，因此建立 SharePoint 資料來源與從服務建立資料來源的方式相同。 選取 [**資料來源設定] Wizard**中的**SharePoint**專案會開啟 [**加入服務參考**] 對話方塊，您可以在其中指向 sharepoint 伺服器來連接到 sharepoint 資料服務。  這需要 SharePoint SDK。
+
+## <a name="see-also"></a>請參閱
  [適用於 .NET 的 Visual Studio Data Tools](../data-tools/visual-studio-data-tools-for-dotnet.md)

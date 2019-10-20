@@ -3,23 +3,23 @@ title: 逐步解說：建立逼真的 3D 撞球
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: af8eb0f3-bf6a-4d1c-ab47-dcd88ab04efa
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f5788b2c6b2dab4b6f0f7a6c520aa1f2ab5f9ef
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 95125e2f808dde634435e4eeb2254e397fceb140
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62844615"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72634550"
 ---
 # <a name="walkthrough-create-a-realistic-3d-billiard-ball"></a>逐步解說：建立逼真的 3D 撞球
 
 本逐步解說示範如何在 Visual Studio 中使用著色器設計工具與影像編輯器，建立逼真的 3D 撞球。 結合數種著色器技術與適當的紋理資源，達成 3D 撞球的外觀。
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>Prerequisites
 
 您需要下列元件和技能才能完成此逐步解說：
 
@@ -207,7 +207,7 @@ Lambert 光源模型能為只有紋理的著色器提供形狀和立體感。 �
 
    在完稿影像中，請注意您新增的效果如何結合在一起，建立非常逼真的撞球。 形狀、紋理和光源建立基本的 3D 物件外觀，而高光和反射則讓撞球更有趣且融入環境。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [如何：匯出著色器](../designers/how-to-export-a-shader.md)
 - [如何：將著色器套用至 3D 模型](../designers/how-to-apply-a-shader-to-a-3-d-model.md)

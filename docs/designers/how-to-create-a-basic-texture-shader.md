@@ -1,21 +1,21 @@
 ---
-title: HOW TO：建立基本紋理著色器
+title: 如何：建立基本材質著色器
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 5af113fb-6415-4be0-8b23-10fddb10e80a
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f511b837609f8de644d042b367ef46648b7551e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: a6b4aa042e3ba51621e43ee2f531364135179c02
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62897719"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72635879"
 ---
-# <a name="how-to-create-a-basic-texture-shader"></a>HOW TO：建立基本紋理著色器
+# <a name="how-to-create-a-basic-texture-shader"></a>如何：建立基本材質著色器
 
 本文會示範如何使用著色器設計工具和有向圖形著色器語言 (DGSL)，來建立單一紋理著色器。 這個著色器會將完稿色彩直接設定為從材質中取樣 RGB 和 Alpha 值。
 
@@ -50,7 +50,7 @@ ms.locfileid: "62897719"
 
 某些圖形可對一些著色器提供更佳的預覽。 如需如何在著色器設計工具中預覽著色器的詳細資訊，請參閱[著色器設計工具](../designers/shader-designer.md)
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [如何：將著色器套用至 3D 模型](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
 - [Image Editor](../designers/image-editor.md)

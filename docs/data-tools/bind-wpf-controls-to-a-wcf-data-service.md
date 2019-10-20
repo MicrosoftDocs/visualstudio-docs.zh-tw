@@ -10,43 +10,43 @@ helpviewer_keywords:
 - WPF data binding [Visual Studio], walkthroughs
 - WPF Designer, data binding
 ms.assetid: 8823537c-82f0-41f7-bf30-705f0e5e59fd
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: ceaf74ad2673b0dae80c9529ad082c6ae3187352
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4abe5047bd7d6f17bb0dc23f4d92a1a842ee273a
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62824847"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72648759"
 ---
 # <a name="bind-wpf-controls-to-a-wcf-data-service"></a>將 WPF 控制項繫結至 WCF 資料服務
 
-您將在此逐步解說中，建立包含資料繫結控制項的 WPF 應用程式。 將控制項繫結至封裝在 WCF 資料服務的客戶記錄。 您也會加入按鈕，讓客戶可使用這些按鈕檢視及更新記錄。
+您將在此逐步解說中，建立包含資料繫結控制項的 WPF 應用程式。 這些控制項會系結至封裝在 WCF 資料服務中的客戶記錄。 您也會加入按鈕，讓客戶可使用這些按鈕檢視及更新記錄。
 
 這個逐步解說將說明下列工作：
 
 - 建立從 AdventureWorksLT 範例資料庫中的資料產生的實體資料模型。
 
-- 建立 WCF 資料服務公開實體資料模型，在 WPF 應用程式中的資料。
+- 建立 WCF 資料服務，將實體資料模型中的資料公開至 WPF 應用程式。
 
 - 從 [資料來源] 視窗將項目拖曳至 WPF 設計工具，以建立一組資料繫結控制項。
 
 - 建立可向前及向後巡覽客戶記錄的按鈕。
 
-- 建立按鈕，以將變更儲存到 WCF 資料服務和基礎資料來源控制項中的資料。
+- 建立按鈕，將控制項中的資料變更儲存至 WCF 資料服務和基礎資料來源。
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>Prerequisites
 
 您需要下列元件才能完成此逐步解說：
 
 - Visual Studio
 
-- 對執行中的 SQL Server 或 SQL Server Express (其中連結了 AdventureWorksLT 範例資料庫) 執行個體的存取權。 您可以下載 AdventureWorksLT 資料庫，從[CodePlex 網站](http://go.microsoft.com/fwlink/?linkid=87843)。
+- 對執行中的 SQL Server 或 SQL Server Express (其中連結了 AdventureWorksLT 範例資料庫) 執行個體的存取權。 您可以從[CodePlex 網站](http://go.microsoft.com/fwlink/?linkid=87843)下載 AdventureWorksLT 資料庫。
 
 預先了解下列概念也有助於完成此逐步解說 (但非必要)：
 
@@ -54,25 +54,25 @@ ms.locfileid: "62824847"
 
 - [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)]中的資料模型。
 
-- 實體資料模型及 ADO.NET Entity Framework。 如需詳細資訊，請參閱 < [Entity Framework 概觀](/dotnet/framework/data/adonet/ef/overview)。
+- 實體資料模型及 ADO.NET Entity Framework。 如需詳細資訊，請參閱[Entity Framework 總覽](/dotnet/framework/data/adonet/ef/overview)。
 
 - WPF 資料繫結。 如需詳細資訊，請參閱[資料繫結概觀](/dotnet/framework/wpf/data/data-binding-overview)。
 
 ## <a name="create-the-service-project"></a>建立服務專案
 
-1. 開始本逐步解說中建立C#或 Visual Basic **ASP.NET Web 應用程式**專案。 將專案命名為**AdventureWorksService**。
+1. 藉由建立C#或 Visual Basic **ASP.NET Web 應用程式**專案來啟動此逐步解說。 將專案命名為**AdventureWorksService**。
 
-2. 在 [方案總管] 中，以滑鼠右鍵按一下 **Default.aspx**，並選取 [刪除]。 這個檔案不需要在這個逐步解說。
+2. 在 [方案總管] 中，以滑鼠右鍵按一下 **Default.aspx**，並選取 [刪除]。 本逐步解說不需要此檔案。
 
-## <a name="create-an-entity-data-model-for-the-service"></a>建立實體資料模型服務
+## <a name="create-an-entity-data-model-for-the-service"></a>建立服務的實體資料模型
 
-若要使用 WCF 資料服務公開至應用程式的資料，您必須定義服務的資料模型。 WCF 資料服務支援兩種類型的資料模型：實體資料模型，並使用實作的 common language runtime (CLR) 物件所定義的自訂資料模型<xref:System.Linq.IQueryable%601>介面。 在此逐步解說中，您要建立資料模型的實體資料模型。
+若要使用 WCF 資料服務將資料公開給應用程式，您必須定義服務的資料模型。 WCF 資料服務支援兩種類型的資料模型：實體資料模型，以及使用執行 <xref:System.Linq.IQueryable%601> 介面的 common language runtime （CLR）物件所定義的自訂資料模型。 在此逐步解說中，您要建立資料模型的實體資料模型。
 
-1. 在 [專案]  功能表中，按一下 [加入新項目] 。
+1. 在 [專案] 功能表中，按一下 [加入新項目]。
 
 2. 在 [已安裝的範本] 清單中，按一下 [資料]，然後選取 [ADO.NET 實體資料模型] 專案項目。
 
-3. 將名稱變更為`AdventureWorksModel.edmx`，然後按一下**新增**。
+3. 將名稱變更為 `AdventureWorksModel.edmx`，然後按一下 [**新增**]。
 
      [實體資料模型精靈] 隨即開啟。
 
@@ -92,32 +92,32 @@ ms.locfileid: "62824847"
 
 ## <a name="create-the-service"></a>建立服務
 
-建立 WCF 資料服務，以公開實體資料模型，在 WPF 應用程式中的資料：
+建立 WCF 資料服務，將實體資料模型中的資料公開至 WPF 應用程式：
 
 1. 在 [專案] 功能表中，選取 [新增新項目]。
 
 2. 在 [已安裝的範本] 清單中，按一下 **Web**，然後選取 [WCF 資料服務] 專案項目。
 
-3. 在 **名稱**方塊中，輸入`AdventureWorksService.svc`，然後按一下**新增**。
+3. 在 [**名稱**] 方塊中，輸入 `AdventureWorksService.svc`，然後按一下 [**新增**]。
 
-     Visual Studio 會加入`AdventureWorksService.svc`至專案。
+     Visual Studio 會將 `AdventureWorksService.svc` 新增至專案。
 
 ## <a name="configure-the-service"></a>設定服務
 
 您必須設定服務，以處理您建立的實體資料模型：
 
-1. 在 `AdventureWorks.svc`程式碼檔案，取代**AdventureWorksService**類別宣告為下列程式碼。
+1. 在 `AdventureWorks.svc` 程式碼檔案中，將**AdventureWorksService**類別宣告取代為下列程式碼。
 
      [!code-csharp[Data_WPFWCF#1](../data-tools/codesnippet/CSharp/bind-wpf-controls-to-a-wcf-data-service_1.cs)]
      [!code-vb[Data_WPFWCF#1](../data-tools/codesnippet/VisualBasic/bind-wpf-controls-to-a-wcf-data-service_1.vb)]
 
-     此程式碼會更新**AdventureWorksService**類別，使其衍生自<xref:System.Data.Services.DataService%601>，作`AdventureWorksLTEntities`物件內容類別，您的實體資料模型中。 該程式碼也會更新 `InitializeService` 方法，允許服務的用戶端對 `SalesOrderHeader` 實體具有完整的讀取/寫入存取權。
+     此程式碼會更新**AdventureWorksService**類別，使其衍生自在實體資料模型中 `AdventureWorksLTEntities` 物件內容類別上操作的 <xref:System.Data.Services.DataService%601>。 該程式碼也會更新 `InitializeService` 方法，允許服務的用戶端對 `SalesOrderHeader` 實體具有完整的讀取/寫入存取權。
 
 2. 建置專案，並確認專案建置無誤。
 
 ## <a name="create-the-wpf-client-application"></a>建立 WPF 用戶端應用程式
 
-若要顯示的資料，從 WCF 資料服務，請使用以服務為基礎的資料來源建立新的 WPF 應用程式。 稍後您將在此逐步解說中，將資料繫結控制項加入至應用程式。
+若要顯示 WCF 資料服務的資料，請建立新的 WPF 應用程式，其中包含以服務為基礎的資料來源。 稍後您將在此逐步解說中，將資料繫結控制項加入至應用程式。
 
 1. 在 [方案總管] 中，以滑鼠右鍵按一下方案節點，然後按一下 [新增]，然後選取 [新增專案]。
 
@@ -127,7 +127,7 @@ ms.locfileid: "62824847"
 
 4. 在 [名稱] 方塊中，鍵入 `AdventureWorksSalesEditor` 並按一下 [確定]。
 
-   Visual Studio 會加入`AdventureWorksSalesEditor`專案加入方案。
+   Visual Studio 會將 `AdventureWorksSalesEditor` 專案加入至方案。
 
 5. 按一下 [ **資料** ] 功能表上的 [ **顯示資料來源**]。
 
@@ -141,7 +141,7 @@ ms.locfileid: "62824847"
 
 8. 在 [新增服務參考] 對話方塊中，按一下 [探索]。
 
-   Visual Studio 搜尋可用的服務，目前的方案，並將`AdventureWorksService.svc`中的可用服務清單**Services**  方塊中。
+   Visual Studio 會在目前的解決方案中搜尋可用的服務，並將 `AdventureWorksService.svc` 新增至 [**服務**] 方塊中的可用服務清單。
 
 9. 在 [命名空間] 方塊中，鍵入 **AdventureWorksService**。
 
@@ -177,7 +177,7 @@ ms.locfileid: "62824847"
 
 ## <a name="create-the-data-bound-controls"></a>建立資料繫結控制項
 
-建立顯示客戶記錄的拖曳的控制項`SalesOrderHeaders`節點，從**Zdroje dat**至設計工具 視窗。
+將 [`SalesOrderHeaders`] 節點從 [**資料來源**] 視窗拖曳至設計工具，以建立顯示客戶記錄的控制項。
 
 1. 在 [資料來源] 視窗中，按一下 [SalesOrderHeaders] 節點的下拉式功能表，然後選取 [詳細資料]。
 
@@ -195,11 +195,11 @@ ms.locfileid: "62824847"
 
     - **rowguid**
 
-    此動作可避免 Visual Studio 在下一個步驟中建立這些節點的資料繫結控制項。 此逐步解說中，您可以假設終端使用者不需要看到此資料。
+    此動作可避免 Visual Studio 在下一個步驟中建立這些節點的資料繫結控制項。 在此逐步解說中，假設終端使用者不需要看到此資料。
 
 4. 從 [資料來源] 視窗將 [SalesOrderHeaders] 節點拖曳至包含按鈕之資料列下方的資料格列。
 
-     Visual Studio 會產生 XAML 和程式碼，其可建立一組繫結至 [產品] 資料表之資料的控制項。 如需有關產生的 XAML 和程式碼的詳細資訊，請參閱 <<c0> [ 繫結 WPF 控制項新增至 Visual Studio 中的資料](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)。
+     Visual Studio 會產生 XAML 和程式碼，其可建立一組繫結至 [產品] 資料表之資料的控制項。 如需所產生 XAML 和程式碼的詳細資訊，請參閱將[WPF 控制項系結至 Visual Studio 中的資料](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)。
 
 5. 在設計工具中，按一下 [Customer ID] 標籤旁邊的文字方塊。
 
@@ -215,7 +215,7 @@ ms.locfileid: "62824847"
 
 ## <a name="load-the-data-from-the-service"></a>從服務載入資料
 
-您可以使用服務 proxy 物件來從服務載入銷售資料。 然後將傳回的資料指派給資料來源<xref:System.Windows.Data.CollectionViewSource>WPF 視窗中。
+使用服務 proxy 物件，從服務載入銷售資料。 然後，將傳回的資料指派給 WPF 視窗中 <xref:System.Windows.Data.CollectionViewSource> 的資料來源。
 
 1. 在設計師中，若要建立`Window_Loaded`事件處理常式，按兩下所讀取的文字：**MainWindow**。
 
@@ -224,7 +224,7 @@ ms.locfileid: "62824847"
      [!code-csharp[Data_WPFWCF#2](../data-tools/codesnippet/CSharp/bind-wpf-controls-to-a-wcf-data-service_2.cs)]
      [!code-vb[Data_WPFWCF#2](../data-tools/codesnippet/VisualBasic/bind-wpf-controls-to-a-wcf-data-service_2.vb)]
 
-## <a name="navigate-sales-records"></a>巡覽銷售記錄
+## <a name="navigate-sales-records"></a>導覽銷售記錄
 
 新增可讓使用者使用 **\<** 及 **>** 按鈕捲動銷售記錄的程式碼。
 
@@ -263,15 +263,15 @@ ms.locfileid: "62824847"
 
 建置並執行應用程式，以確認您可以檢視及更新客戶記錄：
 
-1. 在 **建置**功能表上，按一下**建置方案**。 確認方案建置無誤。
+1. 在 [**建立**] 功能表上，按一下 [**建立方案**]。 確認方案建置無誤。
 
-2. 按下**Ctrl**+**F5**。
+2. 按**Ctrl** +**F5**。
 
      Visual Studio 會啟動 **AdventureWorksService** 專案而不進行偵錯。
 
 3. 在 [方案總管] 中，以滑鼠右鍵按一下 **AdventureWorksSalesEditor**。
 
-4. （操作功能表），以滑鼠右鍵按一下功能表底下**偵錯**，按一下**開始新執行個體**。
+4. 在右鍵功能表（操作功能表）的 [**調試**] 底下，按一下 [**開始新實例**]。
 
      應用程式隨即執行。 驗證下列各項：
 
@@ -291,14 +291,14 @@ ms.locfileid: "62824847"
 
 完成此逐步解說後，您可以執行下列相關的工作：
 
-- 了解如何使用 Visual Studio 中的 [資料來源] 視窗，將 WPF 控制項繫結至其他資料來源類型。 如需詳細資訊，請參閱 <<c0> [ 繫結 WPF 控制項新增至資料集](../data-tools/bind-wpf-controls-to-a-dataset.md)。
+- 了解如何使用 Visual Studio 中的 [資料來源] 視窗，將 WPF 控制項繫結程序至其他資料來源類型。 如需詳細資訊，請參閱將[WPF 控制項系結至資料集](../data-tools/bind-wpf-controls-to-a-dataset.md)。
 
 - 了解如何使用 Visual Studio 中的 [資料來源] 視窗，顯示 WPF 控制項中的相關資料 (也就是父子關聯性中的資料)。 如需詳細資訊，請參閱[逐步解說：在 WPF 應用程式中顯示相關資料](../data-tools/display-related-data-in-wpf-applications.md)。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [將 WPF 控制項繫結至 Visual Studio 中的資料](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)
 - [將 WPF 控制項繫結至資料集](../data-tools/bind-wpf-controls-to-a-dataset.md)
-- [WCF 概觀 (.NET Framework)](/dotnet/framework/data/wcf/wcf-data-services-overview)
-- [Entity Framework 概觀 (.NET Framework)](/dotnet/framework/data/adonet/ef/overview)
-- [資料繫結概觀 (.NET Framework)](/dotnet/framework/wpf/data/data-binding-overview)
+- [WCF 總覽（.NET Framework）](/dotnet/framework/data/wcf/wcf-data-services-overview)
+- [Entity Framework 總覽（.NET Framework）](/dotnet/framework/data/adonet/ef/overview)
+- [資料系結總覽（.NET Framework）](/dotnet/framework/wpf/data/data-binding-overview)

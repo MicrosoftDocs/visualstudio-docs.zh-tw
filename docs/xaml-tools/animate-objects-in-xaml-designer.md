@@ -4,15 +4,15 @@ titleSuffix: Blend for Visual Studio
 ms.date: 07/31/2019
 ms.topic: conceptual
 ms.assetid: fb88fa26-e835-47f5-9771-2f279441c83c
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 1075aaacbb4e41407052430a4369d7b544a2aba9
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: 23ddc7379e35fb060e34754f4188c04f91910ad0
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72451056"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72649740"
 ---
 # <a name="animate-objects-in-xaml-designer"></a>在 XAML 設計工具中製作物件動畫
 

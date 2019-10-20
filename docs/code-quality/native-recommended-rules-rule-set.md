@@ -2,17 +2,17 @@
 title: 原生建議規則規則集
 ms.date: 11/04/2016
 ms.topic: reference
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bc18859e84262e9b2a40efde7ed9733fce701a6c
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: dcc5112262dd36e431a34becd36729ea9a3c186f
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72448828"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72649163"
 ---
 # <a name="native-recommended-rules-rule-set"></a>原生建議規則規則集
 
@@ -154,7 +154,7 @@ ms.locfileid: "72448828"
 |[C28020](../code-quality/c28020.md)|此呼叫的運算式不是 true|
 |[C28021](../code-quality/c28021.md)|所標註的參數必須是指標|
 |[C28022](../code-quality/c28022.md)|此函式上的函式類別不符合用來定義它的 typedef 上的函式類別。|
-|[C28023](../code-quality/c28023.md)|所指派或傳遞的函式應該至少有一個類別的 @no__t 0Function @ no__t-1class @ no__t-2 注釋|
+|[C28023](../code-quality/c28023.md)|要指派或傳遞的函式應該有至少一個類別的 \_Function \_class \_ 注釋|
 |[C28024](../code-quality/c28024.md)|要指派給的函式指標會以函式類別標注，而函式類別不包含在函式類別清單中。|
 |[C28039](../code-quality/c28039.md)|實際參數的類型應完全符合類型|
 |[C28112](../code-quality/c28112.md)|透過連鎖函式存取的變數必須一律透過連鎖函數存取。|
@@ -172,14 +172,14 @@ ms.locfileid: "72448828"
 |[C28196](../code-quality/c28196.md)|不滿足需求。 （運算式不會評估為 true）。|
 |[C28202](../code-quality/c28202.md)|非靜態成員的參考不合法|
 |[C28203](../code-quality/c28203.md)|類別成員的參考模稜兩可。|
-|[C28205](../code-quality/c28205.md)|\_Success @ no__t-1 或 \_On @ no__t-3failure @ no__t-4 用於不合法的內容中|
+|[C28205](../code-quality/c28205.md)|\_Success 在不合法的內容中使用 \_ 或 \_On \_failure \_|
 |[C28206](../code-quality/c28206.md)|左運算元指向結構，請使用 '->'|
 |[C28207](../code-quality/c28207.md)|左運算元是結構，請使用 '.'|
 |[C28209](../code-quality/c28209.md)|符號的宣告具有衝突的宣告|
 |[C28210](../code-quality/c28210.md)|_On_failure_ 內容的註釋不能在明確 pre context 中|
 |[C28211](../code-quality/c28211.md)|SAL_context 需要靜態內容名稱|
 |[C28212](../code-quality/c28212.md)|註釋需要指標運算式|
-|[C28213](../code-quality/c28213.md)|@No__t-0Use @ no__t-1decl @ no__t-2annotations @ no__t-3 注釋必須在先前的宣告中用來參考，而不需要修改。|
+|[C28213](../code-quality/c28213.md)|@No__t_0Use \_decl \_annotations \_ 注釋必須用來參考先前的宣告，而不需要修改。|
 |[C28214](../code-quality/c28214.md)|屬性參數名稱必須是 p1...p9|
 |[C28215](../code-quality/c28215.md)|typefix 不能套用到已經有 typefix 的參數|
 |[C28216](../code-quality/c28216.md)|checkReturn 註釋只適用於特定函式參數的後置條件。|
@@ -222,7 +222,7 @@ ms.locfileid: "72448828"
 |[C28267](../code-quality/c28267.md)|在函式 (隸屬於註釋) 中找到註釋的語法錯誤。|
 |[C28272](../code-quality/c28272.md)|函式參數的註釋在檢查時，與函式宣告不一致|
 |[C28273](../code-quality/c28273.md)|對於函式，線索與函式宣告不一致|
-|[C28275](../code-quality/c28275.md)|@No__t-0Macro @ no__t-1value @ no__t-2 的參數為 null|
+|[C28275](../code-quality/c28275.md)|@No__t_0Macro \_value \_ 的參數為 null|
 |[C28279](../code-quality/c28279.md)|找到符號的 'begin'，但沒有相符的 'end'|
 |[C28280](../code-quality/c28280.md)|找到符號的 'end'，但沒有相符的 'begin'|
 |[C28282](../code-quality/c28282.md)|格式字串必須在前置條件中|

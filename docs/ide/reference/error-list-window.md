@@ -10,17 +10,17 @@ helpviewer_keywords:
 - Error List window
 - errors [Visual Studio], Error List window
 ms.assetid: b7f6d45a-733b-4ad8-bc2f-737a37509e56
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 603faab80e185e7d22cba1ee544502d790afcdc0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: d0921d89caa6428c45dc2522e78f58bde50f84be
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62790858"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72654451"
 ---
 # <a name="error-list-window"></a>錯誤清單視窗
 
@@ -41,7 +41,7 @@ ms.locfileid: "62790858"
 
 - 搜尋特定詞彙，以及將搜尋範圍限制在目前的專案或文件。
 
-若要顯示 [錯誤清單]，請選擇 [檢視] > [錯誤清單]，或按 **Ctrl**+**\\**+**E**。
+若要顯示 [錯誤清單]，請選擇 [檢視] > [錯誤清單]，或按 **Ctrl**+ **\\** +**E**。
 
 您可以選擇 [錯誤]、[警告] 和 [訊息] 索引標籤來查看不同的層級資訊。
 
@@ -55,12 +55,12 @@ ms.locfileid: "62790858"
 
 1. **開啟的文件**：顯示開啟文件的錯誤、警告和訊息。
 
-2. **目前專案**：顯示 [編輯器] 中目前所選文件專案，或 [方案總管] 中所選專案的錯誤、警告和訊息。
+2. **目前專案**：顯示**編輯器**中目前選取之文件的專案，或方案總管中選取之專案的錯誤、警告和訊息。
 
     > [!NOTE]
     > 如果目前選取的文件專案不同於方案總管中選取的專案，則會變更錯誤、警告和訊息的篩選清單。
 
-3. **目前文件**：顯示 [編輯器] 或 [方案總管] 中目前所選文件的錯誤、警告和訊息。
+3. **目前文件**：顯示**編輯器**或方案總管中目前選取之文件的錯誤、警告和訊息。
 
 如果搜尋結果目前有套用篩選條件，篩選條件名稱會顯示在 [錯誤清單] 標題列中。 [錯誤]、[警告] 和 [訊息] 按鈕即會顯示目前出現的已篩選項目數和項目總數。 例如，按鈕會顯示「x，共 y 項錯誤」。 如果未套用任何篩選，標題列只會顯示「錯誤清單」。
 
@@ -70,7 +70,7 @@ ms.locfileid: "62790858"
 
 您可以使用 [錯誤清單] 工具列右邊的 [搜尋錯誤清單] 文字方塊，從錯誤清單中找出特定錯誤。 您可以在錯誤清單中任何可見的資料行上搜尋，而搜尋結果永遠是依據有排序優先順序的資料行排序，而不是依據套用的查詢或篩選條件。 當 [錯誤清單] 顯示時，如果您選擇 **Esc** 鍵，則可以清除搜尋詞彙和篩選的搜尋結果。 您也可以按一下文字方塊右邊的 **X** 將它清除。
 
-## <a name="save"></a>儲存
+## <a name="save"></a>Save
 
 您可以複製錯誤清單並將它儲存到檔案。 選取您要複製的錯誤，以滑鼠右鍵按一下選取範圍，然後在操作功能表中選取 [複製]。 然後您可以將錯誤貼至檔案。 如果您將錯誤貼至 Excel 試算表，欄位會顯示為不同的資料行。
 
@@ -84,7 +84,7 @@ ms.locfileid: "62790858"
 
 會顯示錯誤碼。
 
-說明
+描述
 
 會顯示項目的文字。
 

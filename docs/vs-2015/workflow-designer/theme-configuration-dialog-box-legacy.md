@@ -1,5 +1,5 @@
 ---
-title: 主題組態對話方塊 （舊版） |Microsoft Docs
+title: 主題設定對話方塊（舊版） |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-workflow-designer
@@ -11,33 +11,32 @@ helpviewer_keywords:
 - Theme Configuration dialog box
 ms.assetid: 9e6d182a-c4d9-4e71-b2b9-02f675fc2b29
 caps.latest.revision: 6
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 825ccbf0750c1b8ac07fe02ea87ae6eddee4f455
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8171c6dcfe285ade07531896893915d0e209e0c1
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62976744"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72670186"
 ---
 # <a name="theme-configuration-dialog-box-legacy"></a>主題組態對話方塊 (舊版)
-本主題描述如何使用**konfigurace Motivu**對話方塊中，在舊版[!INCLUDE[wfd1](../includes/wfd1-md.md)]。 當您需要以 [!INCLUDE[wfd2](../includes/wfd2-md.md)] 或 [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] 為目標時，請使用舊版 [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)]。  
-  
- 佈景主題會定義工作流程的背景色彩、前景色彩、樣式、圖示和其他視覺化項目。 您可以儲存佈景主題以供其他工作流程重複使用。  
-  
- 您建立和編輯佈景主題，使用**konfigurace Motivu**  對話方塊。 若要開啟的對話方塊，請選取**建立新的佈景主題**上**工作流程**功能表上或以滑鼠右鍵按一下工作流程設計介面，然後選取**建立新的佈景主題**。  
-  
- 下表描述的使用者介面 (UI) 項目**konfigurace Motivu**  對話方塊。  
-  
-|UI 項目|描述|  
-|----------------|-----------------|  
-|**佈景主題名稱：**|識別在佈景主題的名稱[佈景主題，工作流程設計工具、 選項對話方塊 （舊版）](../workflow-designer/themes-workflow-designer-options-dialog-box-legacy.md)。 為新主題產生可變更的名稱。|  
-|**主題位置：**|主題檔案的檔案名稱和路徑。 根據已產生的主題名稱為新主題產生可變更的檔案名稱。 如果您變更已產生的主題名稱，可能需要變更檔案名稱以配合主題名稱。|  
-|**...**|按一下可選取儲存工作流程主題檔案的位置，副檔名為 .wtm。 中會顯示選取的路徑**佈景主題位置**文字方塊。|  
-|**選取設計工具，並設定屬性：**|左窗格會列出可自訂其主題的活動樹狀檢視。 在樹狀檢閱中選取活動後，會在樹狀檢閱窗格右側的屬性窗格中顯示活動的主題屬性。 按一下屬性可變更其值。|  
-|**預覽**|按一下會顯示可預覽屬性變更效果的視窗。|  
-  
-## <a name="see-also"></a>另請參閱  
- [佈景主題，工作流程設計工具、 選項對話方塊 （舊版）](../workflow-designer/themes-workflow-designer-options-dialog-box-legacy.md)   
- [舊版 Windows Workflow Foundation UI 設計工具的說明](../workflow-designer/legacy-designer-for-windows-workflow-foundation-ui-help.md)
+本主題描述如何在舊版 [!INCLUDE[wfd1](../includes/wfd1-md.md)] 中使用 [**主題**設定] 對話方塊。 當您需要以 [!INCLUDE[wfd2](../includes/wfd2-md.md)] 或 [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] 為目標時，請使用舊版 [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)]。
+
+ 佈景主題會定義工作流程的背景色彩、前景色彩、樣式、圖示和其他視覺化項目。 您可以儲存佈景主題以供其他工作流程重複使用。
+
+ 您可以使用 [**主題**設定] 對話方塊來建立和編輯主題。 若要開啟對話方塊，請選取 [**工作流程**] 功能表上的 [**建立新主題**]，或以滑鼠右鍵按一下工作流程設計介面，然後選取 [**建立新主題**]。
+
+ 下表描述 [**主題**設定] 對話方塊的使用者介面（UI）元素。
+
+|UI 項目|描述|
+|----------------|-----------------|
+|**主題名稱：**|在 [[主題]、[工作流程設計工具]、[選項] 對話方塊（舊版）](../workflow-designer/themes-workflow-designer-options-dialog-box-legacy.md)中識別主題的名稱。 為新主題產生可變更的名稱。|
+|**主題位置：**|主題檔案的檔案名稱和路徑。 根據已產生的主題名稱為新主題產生可變更的檔案名稱。 如果您變更已產生的主題名稱，可能需要變更檔案名稱以配合主題名稱。|
+|**...**|按一下可選取儲存工作流程主題檔案的位置，副檔名為 .wtm。 選取的路徑會出現在 [**主題位置**] 文字方塊中。|
+|**選取設計工具並設定屬性：**|左窗格會列出可自訂其主題的活動樹狀檢視。 在樹狀檢閱中選取活動後，會在樹狀檢閱窗格右側的屬性窗格中顯示活動的主題屬性。 按一下屬性可變更其值。|
+|**預覽**|按一下會顯示可預覽屬性變更效果的視窗。|
+
+## <a name="see-also"></a>請參閱
+ [WINDOWS WORKFLOW FOUNDATION UI 說明的](../workflow-designer/legacy-designer-for-windows-workflow-foundation-ui-help.md) [[選項] 對話方塊（舊版）舊版設計工具、工作流程設計工具的主題](../workflow-designer/themes-workflow-designer-options-dialog-box-legacy.md)

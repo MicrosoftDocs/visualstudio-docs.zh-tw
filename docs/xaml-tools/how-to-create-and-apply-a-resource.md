@@ -6,17 +6,17 @@ f1_keywords:
 - VS.XamlDesigner.CreateResource
 - VS.XamlDesigner.EditResource
 ms.assetid: 3ff4006d-659d-4073-9a41-06ff85e6cfdf
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: acbd1641a8ac16376ead04bfb37782e523f090c6
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: 7648772c8ac1657f4c650b38d9f0fc22e8653022
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72450780"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72650924"
 ---
 # <a name="how-to-create-and-apply-a-resource"></a>如何建立和套用資源
 

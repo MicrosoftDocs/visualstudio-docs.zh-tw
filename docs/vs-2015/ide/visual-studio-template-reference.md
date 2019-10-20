@@ -9,25 +9,25 @@ helpviewer_keywords:
 - reference, Visual Studio templates
 ms.assetid: 5ebdd6c4-5d3e-448c-b47d-f62ec5f44d51
 caps.latest.revision: 10
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 0690d37e90f910300f75880387a3f3ec44783206
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8a3e522d7c38a7f2d8b3c1614aa66bcf840e16ff
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68154922"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72666563"
 ---
 # <a name="visual-studio-template-reference"></a>Visual Studio 樣板參考
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 下列連結提供 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 專案和項目範本的不同層面的參考資訊。
 
-## <a name="in-this-section"></a>本節內容
- [Visual Studio 範本結構描述參考](../extensibility/visual-studio-template-schema-reference.md)描述用於.vstemplate 檔案中的 XML 項目。
+## <a name="in-this-section"></a>本章節內容
+ [Visual Studio 範本架構參考](../extensibility/visual-studio-template-schema-reference.md)描述 .vstemplate 檔案中使用的 XML 元素。
 
- [範本參數](../ide/template-parameters.md)描述適用於專案和項目範本的參數。
+ [範本參數](../ide/template-parameters.md)描述可用於專案和專案範本的參數。
 
  <xref:Microsoft.VisualStudio.TemplateWizard> 描述 <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> 介面和相關類型。
 

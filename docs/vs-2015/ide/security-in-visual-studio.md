@@ -9,15 +9,15 @@ helpviewer_keywords:
 - security [.NET Framework], about security
 ms.assetid: 318c34ce-f643-468c-83a1-843196f5d845
 caps.latest.revision: 24
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 95c9b1ac60fa0ba0dc34adfc6cd4543c7b340a4e
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 8d967bd1f7a425ccd9dda5a938535788d961352f
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65688038"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72672884"
 ---
 # <a name="security-in-visual-studio"></a>Visual Studio 中的安全性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

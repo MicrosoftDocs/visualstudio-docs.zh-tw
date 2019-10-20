@@ -1,5 +1,5 @@
 ---
-title: 移除參數重構 (C#) |Microsoft Docs
+title: 移除參數重構（C#） |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -14,80 +14,80 @@ helpviewer_keywords:
 - Remove Parameters refactoring [C#]
 ms.assetid: f4fc3265-0ef8-4398-a691-c338178697a6
 caps.latest.revision: 24
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 40a884fe2ae6aaf73256d8edbcbd083a193b0342
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 40c373c3575f007952143e29c8dfc2cfac3d080f
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444628"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72667497"
 ---
 # <a name="remove-parameters-refactoring-c"></a>移除參數重構 (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-`Remove Parameters` 是的重整作業，提供簡單的方法來移除方法、 索引子或委派的參數。 移除參數變更宣告;呼叫成員之任何位置，會移除參數，以反映新的宣告。  
-  
- 您第一遊標定位在方法、 索引子或委派執行移除參數的作業。 在位置，叫用 移除資料指標時`Parameters`作業中，按一下**重構**功能表上，按下鍵盤快速鍵，或從快顯功能表選取命令。  
-  
+`Remove Parameters` 是一種重構作業，可讓您輕鬆地從方法、索引子或委派移除參數。 移除參數會變更宣告;在呼叫該成員的任何位置，會移除參數以反映新的宣告。
+
+ 您可以先將游標放在方法、索引子或委派上，以執行移除參數作業。 當游標在位置時，若要叫用移除 `Parameters` 作業，請按一下 [**重構**] 功能表，按鍵盤快速鍵，或從快捷方式功能表選取命令。
+
 > [!NOTE]
-> 您無法擴充方法中移除第一個參數。  
-  
-### <a name="to-remove-parameters"></a>若要移除參數  
-  
-1. 建立名為主控台應用程式`RemoveParameters`，然後取代`Program`為下列程式碼。  
-  
-    ```csharp  
-    class A  
-    {  
-        // Invoke on 'A'.  
-        public A(string s, int i) { }  
-    }  
-  
-    class B  
-    {  
-        void C()  
-        {  
-            // Invoke on 'A'.  
-            A a = new A("a", 2);  
-        }  
-    }  
-    ```  
-  
-2. 將游標放在方法上`A`，方法宣告或方法呼叫。  
-  
-3. 從**重構**功能表上，選取**移除參數**以顯示**移除參數** 對話方塊。  
-  
-     您也可以輸入鍵盤快速鍵 CTRL + R、 V 以顯示**移除參數** 對話方塊。  
-  
-     您也可以以滑鼠右鍵按一下資料指標，指向**重構**，然後按一下**移除參數**以顯示**移除參數** 對話方塊。  
-  
-4. 使用**參數**欄位中，將游標放在`int i`，然後按一下**移除**。  
-  
-5. 按一下 [確定] 。  
-  
-6. 在 [**預覽變更--移除參數**] 對話方塊中，按一下**套用**。  
-  
-## <a name="remarks"></a>備註  
- 您可以從方法宣告或方法呼叫，以移除參數。 將游標放在方法宣告或委派的名稱，然後叫用移除參數。  
-  
+> 您無法移除擴充方法中的第一個參數。
+
+### <a name="to-remove-parameters"></a>移除參數
+
+1. 建立名為 `RemoveParameters` 的主控台應用程式，然後使用下列程式碼取代 `Program`。
+
+    ```csharp
+    class A
+    {
+        // Invoke on 'A'.
+        public A(string s, int i) { }
+    }
+
+    class B
+    {
+        void C()
+        {
+            // Invoke on 'A'.
+            A a = new A("a", 2);
+        }
+    }
+    ```
+
+2. 將游標放在方法 `A` （在方法宣告或方法呼叫中）。
+
+3. 從 [**重構**] 功能表中，選取 [**移除參數**] 以顯示 [**移除參數**] 對話方塊。
+
+     您也可以輸入鍵盤快速鍵 CTRL + R、V 以顯示 [**移除參數**] 對話方塊。
+
+     您也可以用滑鼠右鍵按一下游標，指向 [**重構**]，然後按一下 [**移除參數**] 以顯示 [**移除參數**] 對話方塊。
+
+4. 使用 [**參數**] 欄位，將游標放在 `int i` 上，然後按一下 [**移除**]。
+
+5. 按一下 [確定]。
+
+6. 在 [**預覽變更-移除參數**] 對話方塊中，**按一下 [** 套用]。
+
+## <a name="remarks"></a>備註
+ 您可以從方法宣告或方法呼叫中移除參數。 將游標放在方法宣告或委派名稱中，並叫用 Remove 參數。
+
 > [!CAUTION]
-> 移除參數可讓您移除參考的參數內的成員，但它不會移除對該參數參考方法主體中。 這可能會發生建置錯誤導入您的程式碼。 不過，您可以使用**預覽變更**對話方塊，即可檢閱您的程式碼，然後再執行重構作業。  
-  
- 如果要移除的參數已修改的方法呼叫期間，移除參數也會移除所作的修改。 例如，如果呼叫的方法已從  
-  
-```csharp  
-MyMethod(param1++, param2);  
-```  
-  
- 設為  
-  
-```csharp  
-MyMethod(param2);  
-```  
-  
- 重構作業，`param1`也不會遞增。  
-  
-## <a name="see-also"></a>另請參閱  
+> 移除參數可讓您移除成員主體中所參考的參數，但不會移除方法主體中該參數的參考。 這可能會在您的程式碼中引進組建錯誤。 不過，您可以使用 [**預覽變更**] 對話方塊來檢查您的程式碼，然後再執行重構作業。
+
+ 如果要移除的參數在呼叫方法期間遭到修改，移除參數也會移除修改。 例如，如果方法呼叫已從變更為
+
+```csharp
+MyMethod(param1++, param2);
+```
+
+ 設為
+
+```csharp
+MyMethod(param2);
+```
+
+ 在重構作業中，`param1` 不會遞增。
+
+## <a name="see-also"></a>請參閱
  [重構 (C#)](../csharp-ide/refactoring-csharp.md)

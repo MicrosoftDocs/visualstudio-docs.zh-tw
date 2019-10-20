@@ -9,15 +9,15 @@ f1_keywords:
 - VS.DocumentOutline
 - Blend.Start.Dev12
 ms.assetid: c54969a7-d75a-4a35-9b37-af7a596a7c24
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 28536a05b0fa35fc65f356c3501a7beeb2033e5c
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: 0f43222e593b836f44a84e5f64642403f0263ca5
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72450836"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72649705"
 ---
 # <a name="create-a-ui-by-using-xaml-designer"></a>使用 XAML 設計工具建立 UI
 

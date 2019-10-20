@@ -4,15 +4,15 @@ ms.date: 08/09/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - Windows Forms Designer
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 0df8b7ec5955f472d716af2850d2ab0b776c6552
-ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
-ms.translationtype: HT
+ms.openlocfilehash: b26ad18da19d5a2e53199b49e7acc024c728be9c
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "69585339"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72634033"
 ---
 # <a name="windows-forms-designer-overview"></a>Windows Form 設計工具概觀
 
@@ -35,7 +35,7 @@ Visual Studio 中的 Windows Form 設計工具能針對建立以 Windows Forms �
 > [!NOTE]
 > 使用 Windows Form 設計工具 (而非資源編輯器) 來變更表單的資源 ( *.resx*) 檔案。 如果您編輯以表單為基礎的 .resx 檔案，您將會看見警告，表示您在資源編輯器中所做的變更可能會遺失。 這是因為該 .resx 檔案是由 Windows Form 設計工具產生。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [Windows Form 概觀](/dotnet/framework/winforms/windows-forms-overview)
 - [Windows Forms 控制項](/dotnet/framework/winforms/controls/)

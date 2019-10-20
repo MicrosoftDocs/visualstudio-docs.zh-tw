@@ -1,5 +1,5 @@
 ---
-title: CA1710:識別項應該使用正確的後置詞 |Microsoft Docs
+title: CA1710：識別碼應具有正確的尾碼 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,37 +12,37 @@ helpviewer_keywords:
 - CA1710
 ms.assetid: 2b8e6dce-b4e8-4a66-ba9a-6b79be5bfe8c
 caps.latest.revision: 22
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 16b4c2fb13a8de1824233b491d752b796aea907d
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 7dc0ed72ddab39bda5f3de9b978f4d55dc2358ba
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65676554"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72669161"
 ---
-# <a name="ca1710-identifiers-should-have-correct-suffix"></a>CA1710:識別項應該使用正確的後置字元
+# <a name="ca1710-identifiers-should-have-correct-suffix"></a>CA1710：識別項應該使用正確的後置字元
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |TypeName|IdentifiersShouldHaveCorrectSuffix|
 |CheckId|CA1710|
-|分類|Microsoft.Naming|
+|Category|Microsoft. 命名|
 |中斷變更|中斷|
 
 ## <a name="cause"></a>原因
- 識別項並沒有正確的後置詞。
+ 識別碼沒有正確的後置詞。
 
 ## <a name="rule-description"></a>規則描述
- 依照慣例的類型，擴充特定基底類型或實作特定介面或從這些型別，衍生的型別名稱會具有與基底類型或介面相關聯的後置字元。
+ 依照慣例，擴充特定基底類型或執行特定介面的類型名稱，或衍生自這些類型的類型，會有與基底類型或介面相關聯的尾碼。
 
- 命名慣例提供了通用程式庫 common language runtime 為目標。 這可降低學習曲線，需要新的軟體程式庫，並增加程式庫，開發人員專業開發的 managed 程式碼中的其他人的客戶信心。
+ 命名慣例提供以通用語言執行時間為目標之程式庫的常見外觀。 這可減少新軟體程式庫所需的學習曲線，並提高客戶對於開發 managed 程式碼專業知識的人員所開發的信心。
 
- 下表列出具有相關聯的後置詞的介面與基底型別。
+ 下表列出具有相關聯尾碼的基底類型和介面。
 
-|基底型別/介面|尾碼|
+|基底類型/介面|尾碼|
 |--------------------------|------------|
 |<xref:System.Attribute?displayProperty=fullName>|屬性|
 |<xref:System.EventArgs?displayProperty=fullName>|EventArgs|
@@ -55,42 +55,42 @@ ms.locfileid: "65676554"
 |<xref:System.Collections.Generic.ICollection%601?displayProperty=fullName>|集合|
 |<xref:System.Collections.Generic.IDictionary%602?displayProperty=fullName>|字典|
 |<xref:System.Data.DataSet?displayProperty=fullName>|資料集|
-|<xref:System.Data.DataTable?displayProperty=fullName>|集合或 DataTable|
+|<xref:System.Data.DataTable?displayProperty=fullName>|Collection 或 DataTable|
 |<xref:System.IO.Stream?displayProperty=fullName>|資料流|
 |<xref:System.Security.IPermission?displayProperty=fullName>|權限|
 |<xref:System.Security.Policy.IMembershipCondition?displayProperty=fullName>|條件|
 |事件處理常式委派。|EventHandler|
 
- 型別都會實作<xref:System.Collections.ICollection>而產生的類型的資料結構，例如字典、 堆疊或佇列，可提供之型別的預定的使用方式的有意義資訊的名稱。
+ 實作為 <xref:System.Collections.ICollection> 的型別，而且是一般化的資料結構型別（例如字典、堆疊或佇列），是允許的名稱，可提供有關型別的預定使用方式的有意義資訊。
 
- 型別都會實作<xref:System.Collections.ICollection>和一組特定的項目有 'Collection' 這個字結尾的名稱。 比方說，許多<xref:System.Collections.Queue>物件會具有 'QueueCollection' 的名稱。 'Collection' 後置詞表示集合的成員，可以透過列舉`foreach`(`For Each`在[!INCLUDE[vbprvb](../includes/vbprvb-md.md)]) 陳述式。
+ 實 <xref:System.Collections.ICollection> 的型別，而是特定專案的集合，其名稱結尾為 ' Collection ' 這個字。 例如，<xref:System.Collections.Queue> 物件的集合會有名稱 ' QueueCollection '。 ' Collection ' 後置詞表示可以使用 `foreach` （在 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 中 `For Each`）語句來列舉集合的成員。
 
- 型別都會實作<xref:System.Collections.IDictionary>具有名稱結尾為 「 字典 」 這個字，即使該型別也實作<xref:System.Collections.IEnumerable>或<xref:System.Collections.ICollection>。 'Collection' 和 '字典' 後置詞命名慣例可讓使用者能夠區別下列兩個列舉模式。
+ 實 <xref:System.Collections.IDictionary> 的型別具有以「字典」單字結尾的名稱，即使型別也會執行 <xref:System.Collections.IEnumerable> 或 <xref:System.Collections.ICollection> 也是一樣。 「集合」和「字典」尾碼的命名慣例可讓使用者區分下列兩種列舉模式。
 
- 具有 'collection' 的型別會遵循這個列舉型別模式。
+ 具有 ' Collection ' 尾碼的類型會遵循此列舉模式。
 
 ```
 foreach(SomeType x in SomeCollection) { }
 ```
 
- 以 「 字典 」 字尾的型別會遵循這個列舉型別模式。
+ 具有「字典」尾碼的類型會遵循此列舉模式。
 
 ```
 foreach(SomeType x in SomeDictionary.Values) { }
 ```
 
- A<xref:System.Data.DataSet>物件所組成的集合<xref:System.Data.DataTable>組成的集合的物件<xref:System.Data.DataColumn?displayProperty=fullName>和<xref:System.Data.DataRow?displayProperty=fullName>物件，其他項目。 這些集合會實作<xref:System.Collections.ICollection>透過基底<xref:System.Data.InternalDataCollectionBase?displayProperty=fullName>類別。
+ @No__t_0 物件是由 <xref:System.Data.DataTable> 物件的集合所組成，其中包含 <xref:System.Data.DataColumn?displayProperty=fullName> 和 <xref:System.Data.DataRow?displayProperty=fullName> 物件的集合，還有其他專案。 這些集合會透過基底 <xref:System.Data.InternalDataCollectionBase?displayProperty=fullName> 類別來執行 <xref:System.Collections.ICollection>。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
- 因此，它會加上正確的詞彙，請重新命名類型。
+ 重新命名類型，使其後綴正確的字詞。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
- 它可安全地隱藏警告，如果類型是一種通用的資料結構，可能會擴充，或將保留任意一組的各種不同的項目，請使用 ' collection '。 在此情況下，提供有意義的資訊有關實作、 效能或資料結構中的其他特性的名稱可能意義 (比方說，BinaryTree)。 在其中的型別代表特定的型別 (例如 StringCollection) 集合的情況下，請勿隱藏此規則的警告，可以藉由使用列舉類型的後置詞表示因為`foreach`陳述式。
+ 如果類型是可以擴充的一般化資料結構，或是會保存任意一組不同的專案，則隱藏警告以使用 ' Collection ' 尾碼是安全的。 在此情況下，提供有關資料結構之執行、效能或其他特性的有意義資訊的名稱可能有意義（例如，BinaryTree）。 如果類型代表特定類型的集合（例如，StringCollection），請勿隱藏此規則的警告，因為後置詞表示可以使用 `foreach` 語句來列舉該類型。
 
- 對於其他後置字元，請勿隱藏此規則的警告。 後置詞允許的用途是明顯的是從型別名稱。
+ 若為其他尾碼，請勿隱藏此規則的警告。 尾碼可讓您從類型名稱中看出預期的使用方式。
 
-## <a name="related-rules"></a>相關的規則
- [CA1711:識別項不應該有不正確的後置詞](../code-quality/ca1711-identifiers-should-not-have-incorrect-suffix.md)
+## <a name="related-rules"></a>相關規則
+ [CA1711：識別項名稱不應該使用不正確的後置字元](../code-quality/ca1711-identifiers-should-not-have-incorrect-suffix.md)
 
-## <a name="see-also"></a>另請參閱
- [屬性](https://msdn.microsoft.com/library/ee0038ef-b247-4747-a650-3c5c5cd58d8b) [NIB:事件與委派](https://msdn.microsoft.com/d98fd58b-fa4f-4598-8378-addf4355a115)
+## <a name="see-also"></a>請參閱
+ [屬性](https://msdn.microsoft.com/library/ee0038ef-b247-4747-a650-3c5c5cd58d8b)[筆尖：事件和委派](https://msdn.microsoft.com/d98fd58b-fa4f-4598-8378-addf4355a115)

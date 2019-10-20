@@ -1,5 +1,5 @@
 ---
-title: 產生 using
+title: 產生的 using
 ms.date: 02/19/2019
 ms.topic: reference
 author: kendrahavens
@@ -11,12 +11,12 @@ ms.workload:
 - dotnet
 helpviewer_keywords:
 - add missing usings
-ms.openlocfilehash: d971bcdaca4efdf587c7e441f1b0b28d21388dee
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
-ms.translationtype: HT
+ms.openlocfilehash: 78786e6e6e7a8e5d8a8766138cb1a54a49416f9a
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68416474"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72610882"
 ---
 # <a name="add-missing-usings-in-visual-studio"></a>在 Visual Studio 中新增遺漏的 using
 
@@ -24,28 +24,28 @@ ms.locfileid: "68416474"
 
 - C#
 
-**功能：** 可讓您立即新增必要的匯入，或複製並貼上程式碼的 [using 陳述式](/dotnet/csharp/language-reference/keywords/using-statement)。
+**功能：** 讓您立即為複製和貼上的程式碼新增必要的匯入或[使用](/dotnet/csharp/language-reference/keywords/using-directive)指示詞。
 
-**時機：** 從專案或其他程式碼來源中的不同位置複製程式碼，然後貼上到新程式碼中是很常見的。 此快速控制項目會針對複製並貼上程式碼尋找遺失的匯入，並提示您新增它們。
+時機 **：** 從您的專案或其他來源中的不同位置複製程式碼，並將它貼入新的程式碼，是常見的作法。 這個快速動作會尋找複製和貼上程式碼缺少匯入指示詞，然後提示您加入它們。
 
-**原因：** 因為快速控制項目會自動新增必要的匯入，所以您不需要手動複製您程式碼需要的 `using` 陳述式。
+**原因：** 因為快速動作會自動新增必要的匯入，所以您不需要手動複製程式碼所需的 `using` 指示詞。
 
 ## <a name="add-missing-usings-refactoring"></a>新增遺漏的 using 重構
 
-1. 從檔案複製程式碼並貼上到新檔案中，但不包含必要的 `using` 陳述式。 產生的錯誤現在會伴隨程式碼修正，該修正會新增遺失的 `using` 陳述式。
+1. 複製檔案中的程式碼，並將它貼入新的檔案，而不包含必要的 `using` 指示詞。 產生的錯誤會伴隨程式碼修正，以加入遺漏的 `using` 指示詞。
 
     > [!NOTE]
-    > 您需要在 [工具] > [選項] > [文字編輯器] > [C#] > [進階] > [Using 指示詞]  中啟用此建議。
+    > 您需要在 [工具] > [選項] > [文字編輯器] > [C#] > [進階] > [Using 指示詞] 中啟用此建議。
 
-2. 選取 Ctrl+. 以開啟 [快速動作與重構]  功能表。
+2. 選取 Ctrl+. 以開啟 [快速動作與重構] 功能表。
 
-    ![產生 using](media/generate-using-codefix.png)
+    ![產生的 using](media/generate-using-codefix.png)
 
-3. 選取 [使用\<您的參考\>]  以新增遺失的參考。
+3. 選取 [使用\<您的參考\>] 以新增遺失的參考。
 
     ![產生 using 結果](media/generate-using-result.png)
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [程式碼產生](../code-generation-in-visual-studio.md)
 - [預覽變更](../../ide/preview-changes.md)

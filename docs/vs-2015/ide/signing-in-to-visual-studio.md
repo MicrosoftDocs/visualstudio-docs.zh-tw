@@ -7,15 +7,15 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.assetid: b9531c25-e4cf-43ae-b331-a9f31a8cd171
 caps.latest.revision: 34
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 96676ee8021e09a5e7d0a9808cea1e615f58717a
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 9c732f4011c4194ce95621cf49022c2b6a9fabf3
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65679820"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72661212"
 ---
 # <a name="signing-in-to-visual-studio"></a>登入 Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ ms.locfileid: "65679820"
 
 - 從 Visual Studio Dev Essentials 方案**存取各種權益** ，包括免費軟體、訓練、支援和更多。 如需詳細資訊，請查看 [Visual Studio Dev Essentials](https://aka.ms/vsdevhelp) 。
 
-- **同步處理您的 Visual Studio 設定** – 您自訂的設定，例如金鑰繫結、視窗配置和色彩佈景主題，會在您從任何裝置登入 Visual Studio 時立即套用。 請參閱 [Visual Studio 中的同步設定](https://msdn.microsoft.com/library/dn135229%28v=vs.120%29.aspx)。
+- **同步處理您的 Visual Studio 設定** – 您自訂的設定，例如金鑰繫結、視窗配置和色彩佈景主題，會在您從任何裝置登入 Visual Studio 時立即套用。 請查看 [Visual Studio 中的同步處理設定](https://msdn.microsoft.com/library/dn135229%28v=vs.120%29.aspx)。
 
 - **永久地解除鎖定 Visual Studio Express 版本** – 只要您需要，即可以使用 Visual Studio Express 的任何版本，而不受限於 30 天的試用期。
 
@@ -55,9 +55,9 @@ ms.locfileid: "65679820"
 
 1. 請移至 [檔案] &#124; [帳戶設定]。
 
-2. 在 [帳戶設定]  對話方塊、[Visual Studio 設定檔]  連結。
+2. 在 [帳戶設定] 對話方塊、[Visual Studio 設定檔] 連結。
 
-3. 在瀏覽器的 [我的 Microsoft 資訊]  頁面上，選擇 [編輯資訊]  按鈕。
+3. 在瀏覽器的 [我的 Microsoft 資訊] 頁面上，選擇 [編輯資訊] 按鈕。
 
 4. 變更您想要的設定。
 

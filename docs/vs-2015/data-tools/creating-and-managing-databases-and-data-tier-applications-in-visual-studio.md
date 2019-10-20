@@ -11,33 +11,33 @@ helpviewer_keywords:
 - managing change, database servers
 ms.assetid: 40b51f5a-d52c-44ac-8f84-037a0917af33
 caps.latest.revision: 40
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: d6cb4a3beb12d2b33b8b13441df66116fe449d09
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 2d6ed13f2e21ea6b9da82eb47afefdd16088e71d
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63431149"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72672474"
 ---
-# <a name="creating-and-managing-databases-and-data-tier-applications-in-visual-studio"></a>建立和管理資料庫和 Visual Studio 中的資料層應用程式
+# <a name="creating-and-managing-databases-and-data-tier-applications-in-visual-studio"></a>在 Visual Studio 中建立和管理資料庫與資料層應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 重要事項]
-> 資料庫專案所包含的舊版[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]現已提供在[!INCLUDE[sql_Denali_long](../includes/sql-denali-long-md.md)]工具。 如需詳細資訊，請參閱 < [SQL Server Developer Tools](http://go.microsoft.com/fwlink/?LinkId=228126)。
+> @No__t_1 工具中現在提供舊版 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 所包含的資料庫專案。 如需詳細資訊，請參閱[SQL Server Developer 工具](http://go.microsoft.com/fwlink/?LinkId=228126)。
 
- 您可以使用資料庫專案來建立新的資料庫，新的資料層應用程式 (Dac)，並更新現有的資料庫和資料層應用程式。 資料庫專案和 DAC 專案，可讓您將版本控制和專案管理技術套用至您的資料庫開發工作中，相同的方式將這些技術套用至 managed 或原生程式碼中。 您可以協助您建立來管理對資料庫和資料庫伺服器的開發團隊*DAC 專案*，*資料庫專案*，或有*伺服器專案*並放到在版本控制。 您的小組成員可以簽出檔案進行、 建置和測試中的變更*隔離式的開發環境*，或沙箱，與小組共用它們之前。 為了協助確保程式碼品質，您的小組可以完成，並在預備環境中測試所有變更的特定版本的資料庫，然後再部署到生產環境的變更。
+ 您可以使用資料庫專案來建立新的資料庫、新的資料層應用程式（Dac），以及更新現有的資料庫和資料層應用程式。 資料庫專案和 DAC 專案都可讓您將版本控制和專案管理技術套用至資料庫開發工作，就像將這些技術套用至 managed 程式碼或機器碼一樣。 您可以藉由建立*DAC 專案*、*資料庫專案*或*伺服器專案*，並將其放在版本控制之下，協助您的開發小組管理資料庫和資料庫伺服器的變更。 小組成員接著可以簽出檔案，在*隔離的開發環境*或沙箱中建立、建立和測試變更，然後再與小組共用。 為了協助確保程式碼品質，您的小組可以在將變更部署到生產環境之前，先完成並測試預備環境中特定資料庫版本的所有變更。
 
- 如需支援的資料層應用程式的資料庫功能的清單，請參閱 <<c0> [ 資料層應用程式中支援的功能](http://go.microsoft.com/fwlink/?LinkId=164239)Microsoft 網站上。 如果您使用您的資料庫中不支援的資料層應用程式的功能，您應該改為使用資料庫專案，來管理您的資料庫變更。
+ 如需資料層應用程式支援的資料庫功能清單，請參閱 Microsoft 網站上的[資料層應用程式中支援的功能](http://go.microsoft.com/fwlink/?LinkId=164239)。 如果您在資料庫中使用資料層應用程式不支援的功能，您應該改為使用資料庫專案來管理對資料庫所做的變更。
 
 ## <a name="common-high-level-tasks"></a>常見的高層級工作
 
-|高層級的工作|支援內容|
+|高階工作|支援內容|
 |----------------------|------------------------|
-|**開始資料層應用程式的開發的工作：** DAC 是一種所引進的新概念[!INCLUDE[sskatmai_r2](../includes/sskatmai-r2-md.md)]，其中包含定義[!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)]資料庫，並支援執行個體所使用的用戶端-伺服器或 3 層式架構應用程式的物件。 DAC 包含資料庫物件，例如資料表和檢視表，以及執行個體的實體，例如登入。 您可以使用[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]若要建立 DAC 專案，建置 DAC 封裝檔案，並將該 DAC 封裝檔案傳送至部署的執行個體上的資料庫管理員[!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)]資料庫引擎。|-   [建立和管理資料層應用程式](http://go.microsoft.com/fwlink/?LinkId=160741)（Microsoft 網站上）<br />-   [SQL Server Management Studio](http://go.microsoft.com/fwlink/?LinkId=227328)|
-|**執行反覆的資料庫開發：** 如果您是開發人員或測試人員，您簽出專案的組件，然後再將它們更新隔離式的開發環境中。 透過這種環境，您可以測試您的變更，而不會影響小組的其他成員。 完成變更之後，您會檢查回版本控制，讓其他小組成員可以取得您的變更和建構並將其部署至測試伺服器的檔案。|-   [查詢與文字編輯器 (SQL Server Management Studio)](http://go.microsoft.com/fwlink/?LinkId=227327) （Microsoft 網站上）<br />-   [TRANSACT-SQL 偵錯工具](http://go.microsoft.com/fwlink/?LinkId=227324)（Microsoft 網站上）|
-|**建立原型，正在驗證測試結果，並修改資料庫指令碼和物件：** 您可以使用[!INCLUDE[tsql](../includes/tsql-md.md)]執行任一這些常見工作的編輯器。|-   [查詢與文字編輯器 (SQL Server Management Studio)](http://go.microsoft.com/fwlink/?LinkId=227327) （Microsoft 網站上）|
+|**開始開發資料層應用程式：** DAC 是 [!INCLUDE[sskatmai_r2](../includes/sskatmai-r2-md.md)] 引進的新概念，其中包含 [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] 資料庫的定義，以及用戶端伺服器或3層應用程式所使用的支援實例物件。 DAC 包含資料庫物件（例如資料表和 views）以及實例實體（例如登入）。 您可以使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 來建立 DAC 專案、建立 DAC 封裝檔案，然後將該 DAC 封裝檔案傳送給資料庫管理員，以便部署到 [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] database engine 的實例上。|-   [建立和管理資料層應用程式](http://go.microsoft.com/fwlink/?LinkId=160741)（Microsoft 網站）<br />-   [SQL Server Management Studio](http://go.microsoft.com/fwlink/?LinkId=227328)|
+|**執行反復資料庫開發：** 如果您是開發人員或測試人員，您可以簽出項目的各個部分，然後在隔離的開發環境中加以更新。 藉由使用這種類型的環境，您可以測試變更，而不會影響小組的其他成員。 變更完成之後，您可以將檔案簽回版本控制，讓其他小組成員可以取得您的變更，並將其建立並部署到測試伺服器。|-   [查詢和文字編輯器（SQL Server Management Studio）](http://go.microsoft.com/fwlink/?LinkId=227327) （Microsoft 網站）<br />-   [Transact-sql 偵錯工具](http://go.microsoft.com/fwlink/?LinkId=227324)（Microsoft 網站）|
+|**原型設計、驗證測試結果，以及修改資料庫腳本和物件：** 您可以使用 [[!INCLUDE[tsql](../includes/tsql-md.md)] 編輯器] 來執行其中任何一項一般工作。|-   [查詢和文字編輯器（SQL Server Management Studio）](http://go.microsoft.com/fwlink/?LinkId=227327) （Microsoft 網站）|
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
  [適用於 .NET 的 Visual Studio Data Tools](../data-tools/visual-studio-data-tools-for-dotnet.md)

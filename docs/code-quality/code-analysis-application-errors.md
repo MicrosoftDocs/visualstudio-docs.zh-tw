@@ -8,17 +8,17 @@ helpviewer_keywords:
 - managed code, code analysis errors
 - code analysis, policy errors
 ms.assetid: d8fd9475-ac9b-4085-b5a3-b0c807922cac
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f06ca7d37cb7653ebbe50cea201bf6dbbdee8e9
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: 13a5322fa4b55d29d791f4aef99037c79d67fa45
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72445878"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72610847"
 ---
 # <a name="code-analysis-application-errors"></a>程式碼分析應用程式錯誤
 

@@ -4,15 +4,15 @@ titleSuffix: ''
 ms.date: 08/05/2019
 ms.topic: conceptual
 ms.assetid: 288e2415-9fcf-408e-bc35-9848315e14fd
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 88e03307f9f72d50fb77818ffaf632debbd830f6
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: 50e378591330807bdddcc10277032aa82c914863
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72451140"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72650947"
 ---
 # <a name="design-xaml-in-visual-studio-and-blend-for-visual-studio"></a>在 Visual Studio 與 Blend for Visual Studio 中設計 XAML
 

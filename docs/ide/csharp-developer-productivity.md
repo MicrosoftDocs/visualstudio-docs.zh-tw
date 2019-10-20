@@ -2,7 +2,7 @@
 title: 增加您的 .NET 開發生產力
 description: 這份導覽、程式碼分析、單元測試及其他功能的概觀，可協助您以更快的速度，撰寫更優質的 .NET 程式碼。
 author: kuhlenh
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
 ms.date: 04/25/2019
 ms.topic: conceptual
@@ -10,12 +10,12 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: bd36b75f3df640df0e1910fb3a7a52d17c37d30f
-ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
-ms.translationtype: HT
+ms.openlocfilehash: 69dd92c2dae1a042e37601917bcdef628400d8bf
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/22/2019
-ms.locfileid: "67328783"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72652583"
 ---
 # <a name="visual-studio-productivity-guide-for-c-developers"></a>適用於 C# 開發人員的 Visual Studio 生產力指南
 
@@ -41,7 +41,7 @@ ms.locfileid: "67328783"
 
 以下是常用的 Visual Studio 快速鍵：
 
-| 快速鍵 (所有設定檔) | 命令 | 說明 |
+| 快速鍵 (所有設定檔) | 命令 | 描述 |
 |-|-|-|
 | **Ctrl**+**T** | 移至全部 | 巡覽至任何檔案、類型、成員或符號宣告 |
 | **F12** (以及 **Ctrl**+**按一下滑鼠左鍵**) | 移至定義 | 巡覽至定義符號的位置 |
@@ -61,13 +61,13 @@ ms.locfileid: "67328783"
 | **Ctrl**+**Shift**+ **/** | 切換區塊註解/取消註解 | 此命令會根據您所選取的項目來新增或移除區塊註解 |
 
 > [!NOTE]
-> 有些擴充功能會將預設的 Visual Studio 按鍵繫結關係解除繫結。 若要使用上述命令，請將按鍵繫結關係還原為 Visual Studio 的預設，方法是前往 [工具]   > [匯入和匯出設定]   > [重設所有設定]  或 [工具]   > [選項]   > [鍵盤]   > [重設]  。
+> 有些擴充功能會將預設的 Visual Studio 按鍵繫結關係解除繫結。 若要使用上述命令，請將按鍵繫結關係還原為 Visual Studio 的預設，方法是前往 [工具] > [匯入和匯出設定] > [重設所有設定] 或 [工具] > [選項] > [鍵盤] > [重設]。
 
 如需鍵盤快速鍵和命令的詳細資訊，請參閱[生產力快速鍵](../ide/productivity-shortcuts.md)及[常用鍵盤快速鍵](default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md)。
 
 ## <a name="navigate-quickly-to-files-or-types"></a>快速巡覽至檔案或類型
 
-Visual Studio 有稱為 [移至全部]  (**Ctrl**+**T**) 的功能。 [移至全部]  可讓您快速跳到任何檔案、型別、成員或符號宣告。
+Visual Studio 有稱為 [移至全部] (**Ctrl**+**T**) 的功能。 [移至全部] 可讓您快速跳到任何檔案、型別、成員或符號宣告。
 
 - 變更此搜尋列的位置，或使用**齒輪**圖示關閉「即時瀏覽預覽」。
 - 使用 `t mytype` 之類的語法來篩選結果。
@@ -82,13 +82,13 @@ Visual Studio 有稱為 [移至全部]  (**Ctrl**+**T**) 的功能。 [移至全
 
 ![Visual Studio 中的程式碼樣式強制執行](../ide/media/VSGuide_CodeStyle.png)
 
-- 選取 [新增]   > [新項目]  來將預設或 .NET 樣式的 EditorConfig 檔案加入您的專案。 在 [加入新項目]  對話方塊中，搜尋 "editorconfig"。 選取其中一個 [editorconfig 檔案]  項目範本，然後選擇 [新增]  。
+- 選取 [新增] > [新項目] 來將預設或 .NET 樣式的 EditorConfig 檔案加入您的專案。 在 [加入新項目] 對話方塊中，搜尋 "editorconfig"。 選取其中一個 [editorconfig 檔案] 項目範本，然後選擇 [新增]。
 
    ![Visual Studio 中的 EditorConfig 項目範本](media/editorconfig-item-templates.png)
 
 ::: moniker range=">=vs-2019"
 
-- 在 [工具]  > [選項]  > [文字編輯器]  > [C#]  > [程式碼樣式]  中，根據您的程式碼樣式設定自動建立 *.editorconfig* 檔案。
+- 在 [工具] > [選項] > [文字編輯器] > [C#] > [程式碼樣式] 中，根據您的程式碼樣式設定自動建立 *.editorconfig* 檔案。
 
    ![從 VS 2019 中的設定產生 .editorconfig 檔案](media/vs-2019/generate-editorconfig-file.png)
 
@@ -102,15 +102,15 @@ Visual Studio 有稱為 [移至全部]  (**Ctrl**+**T**) 的功能。 [移至全
 
 ## <a name="code-cleanup"></a>程式碼清除
 
-Visual Studio 透過 [程式碼清除]  功能，讓您能依需求對程式碼檔案 (包括程式碼樣式喜好設定) 進行格式化。 若要執行 [程式碼清除]，請按一下編輯器底部的掃帚圖示，或按 **Ctrl**+**K**，**Ctrl**+**E**。
+Visual Studio 透過 [程式碼清除] 功能，讓您能依需求對程式碼檔案 (包括程式碼樣式喜好設定) 進行格式化。 若要執行 [程式碼清除]，請按一下編輯器底部的掃帚圖示，或按 **Ctrl**+**K**，**Ctrl**+**E**。
 
 ![Visual Studio 2019 中的 [程式碼清除] 按鈕](media/execute-code-cleanup.png)
 
-您也可以跨整個專案或解決方案執行程式碼清除。 以滑鼠右鍵按一下 [方案總管]  中的專案或解決方案名稱，選取 [分析與程式碼清除]  ，然後選取 [執行程式碼清除]  。
+您也可以跨整個專案或解決方案執行程式碼清除。 以滑鼠右鍵按一下 [方案總管] 中的專案或解決方案名稱，選取 [分析與程式碼清除]，然後選取 [執行程式碼清除]。
 
 ![跨整個專案或解決方案執行程式碼清除](media/run-code-cleanup-project-solution.png)
 
-除了針對空格、縮排等對檔案進行格式化之外，[程式碼清除]  也能套用選取的程式碼樣式。 系統會從 [EditorConfig 檔案](code-styles-and-code-cleanup.md#code-styles-in-editorconfig-files) (如果您針對專案有該檔案的話) 讀取您針對每個程式碼樣式的偏好設定，或是從 [選項]  對話方塊中的[程式碼樣式設定](code-styles-and-code-cleanup.md#code-styles-in-the-options-dialog-box)讀取那些偏好設定。
+除了針對空格、縮排等對檔案進行格式化之外，[程式碼清除] 也能套用選取的程式碼樣式。 系統會從 [EditorConfig 檔案](code-styles-and-code-cleanup.md#code-styles-in-editorconfig-files) (如果您針對專案有該檔案的話) 讀取您針對每個程式碼樣式的偏好設定，或是從 [選項] 對話方塊中的[程式碼樣式設定](code-styles-and-code-cleanup.md#code-styles-in-the-options-dialog-box)讀取那些偏好設定。
 
 ::: moniker-end
 
@@ -149,14 +149,14 @@ Visual Studio 提供許多重構、程式碼產生動作，以及程式碼修正
 
 Visual Studio 有許多功能，可協助您搜尋和[巡覽程式碼](../ide/navigating-code.md)。
 
-| 功能 | 快速鍵 | 詳細資料/增強功能 |
+| 特殊功能 | 快速鍵 | 詳細資料/增強功能 |
 |- | - | -|
 | 尋找所有參考 | **Shift**+**F12**| 結果會以色彩標示，且可以依專案、定義和參考類型 (例如讀取或寫入) 進行分組。 您也可以「鎖定」結果。 |
 | 移至實作 | **Ctrl**+**F12** | 您可以在 `override` 關鍵字上使用 [移至定義] 來瀏覽至覆寫的成員 |
 | 移至定義 | **F12** 或 **Ctrl**+**按一下滑鼠左鍵**| 在按一下的同時按 **Ctrl** 來巡覽至定義 |
 | 查看定義 | **Alt**+**F12** | 定義的內嵌檢視 |
 | 結構視覺化檢視 | 大括號之間的灰色虛線 | 暫留以查看您的程式碼架構 |
-| 巡覽至反向編譯的組件 | **F12** 或 **Ctrl**+**按一下滑鼠左鍵** | 啟用功能以巡覽至外部來源 (使用 ILSpy 反向編譯)：[工具]   > [選項]   > [文字編輯器]   > [C#]   > [進階]   > [啟用巡覽至反向組譯的原始檔]  。 |
+| 巡覽至反向編譯的組件 | **F12** 或 **Ctrl**+**按一下滑鼠左鍵** | 透過啟用下列功能以巡覽至外部來源 (使用 ILSpy 進行反編譯)：[工具] > [選項] > [文字編輯器] > [C#] > [進階] > [啟用巡覽至反向編譯的原始碼]。 |
 
 ![[移至全部] 與 [尋找所有參考]](../ide/media/VSIDE_Productivity_Navigation.png)
 
@@ -168,9 +168,9 @@ Visual Studio 有許多功能，可協助您搜尋和[巡覽程式碼](../ide/na
 
 從 Visual Studio 2017 開始，已多加改善測試體驗。 您可以使用 MSTest v1、MSTest v2、NUnit 或 XUnit 測試架構來測試。
 
-- [測試總管]  測試探索速度很快。
+- [測試總管] 測試探索速度很快。
 
-- 使用「階層排序」  來組織 [測試總管]  中的測試。
+- 使用「階層排序」來組織 [測試總管] 中的測試。
 
    ![Visual Studio 中 [文字總管] 的階層檢視](../ide/media/VSGuide_Testing.png)
 
@@ -182,8 +182,8 @@ Visual Studio 有許多功能，可協助您搜尋和[巡覽程式碼](../ide/na
 
 ::: moniker range=">=vs-2019"
 
-- 能夠在 [監看式]  、[自動變數]  及 [區域變數]  視窗內搜尋字串。
-- 「執行至點選處」  可讓您在一行程式碼旁暫留、點擊顯示的綠色 [播放] 圖示，並執行程式直到該行為止。
+- 能夠在 [監看式]、[自動變數] 及 [區域變數] 視窗內搜尋字串。
+- 「執行至點選處」可讓您在一行程式碼旁暫留、點擊顯示的綠色 [播放] 圖示，並執行程式直到該行為止。
 - **例外狀況協助程式**，其會將最重要的資訊放置在對話方塊的最上層，例如當 `NullReferenceException` 中的變數為 `null` 時。
 - [倒退](../debugger/view-historical-application-state.md)偵錯可讓您回溯到前面的中斷點或步驟，以檢視應用程式過去的狀態。
 - [快照集偵錯](/azure/application-insights/app-insights-snapshot-debugger)可讓您調查即時 Web 應用程式在例外狀況擲回時的狀態 (必須在 Azure 上)。
@@ -192,7 +192,7 @@ Visual Studio 有許多功能，可協助您搜尋和[巡覽程式碼](../ide/na
 
 ::: moniker range="vs-2017"
 
-- 「執行至點選處」  可讓您在一行程式碼旁暫留、點擊顯示的綠色 [播放] 圖示，並執行程式直到該行為止。
+- 「執行至點選處」可讓您在一行程式碼旁暫留、點擊顯示的綠色 [播放] 圖示，並執行程式直到該行為止。
 - **例外狀況協助程式**，其會將最重要的資訊放置在對話方塊的最上層，例如當 `NullReferenceException` 中的變數為 `null` 時。
 - [倒退](../debugger/view-historical-application-state.md)偵錯可讓您回溯到前面的中斷點或步驟，以檢視應用程式過去的狀態。
 - [快照集偵錯](/azure/application-insights/app-insights-snapshot-debugger)可讓您調查即時 Web 應用程式在例外狀況擲回時的狀態 (必須在 Azure 上)。
@@ -221,12 +221,12 @@ Visual Studio 有許多功能，可協助您搜尋和[巡覽程式碼](../ide/na
 
 以下是編輯器和生產力功能的清單，可讓撰寫程式碼更有效率。 某些功能可能需要啟用，因為它們預設為關閉 (這些功能可能會在您的電腦上編製項目索引、具爭議性，或目前在實驗中)。
 
-| 功能 | 詳細資料 | 如何啟用 |
+| 特殊功能 | 詳細資料 | 如何啟用 |
 |-|-|-|
-| 在 [方案總管] 中尋找檔案 | 在 [方案總管]  中反白顯示使用中的檔案 | [工具]   > [選項]   > [專案和解決方案]   > [在方案總管中追蹤使用中的項目]  |
-| 針對參考組件與 NuGet 套件中的型別新增 Using | 顯示包含程式碼修正的錯誤燈泡，以針對未參考的型別來安裝 NuGet 套件 | [工具]   > [選項]   > [文字編輯器]   > [C#]   > [進階]   > [為參考組件中的類型建議 Using]  和 [為 NuGet 套件中的類型建議 Using]  |
-| 啟用完整解決方案分析 | 請在 [錯誤清單]  中查看方案中的所有錯誤 | [工具]   > [選項]   > [文字編輯器]   > [C#]   > [進階]   > [啟用完整解決方案分析]  |
-| 啟用巡覽至反向編譯的原始碼 | 允許從外部來源對類型/成員啟用 [移至定義]，並使用 ILSpy 解編程式來顯示方法主體 | [工具]   > [選項]   > [文字編輯器]   > [C#]   > [進階]   > [啟用巡覽至反向編譯的原始碼]  |
-| 完成/建議模式 | 變更 IntelliSense 中的完成行為。 具有 IntelliJ 背景的開發人員傾向於使用這裡的非預設設定。 | [功能表]   > [編輯]   > [IntelliSense]   > [切換完成模式]  |
-| [CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md) | 在編輯器中顯示程式碼參考資訊與變更歷程記錄。 (在 Visual Studio Community 版中無法使用原始程式碼控制 CodeLens 指標。) | [工具]   > [選項]   > [文字編輯器]   > [所有語言]   > [CodeLens]  |
+| 在 [方案總管] 中尋找檔案 | 在 [方案總管] 中反白顯示使用中的檔案 | [工具] > [選項] > [專案和解決方案] > [在方案總管中追蹤使用中的項目] |
+| 針對參考組件與 NuGet 套件中的型別新增 Using | 顯示包含程式碼修正的錯誤燈泡，以針對未參考的型別來安裝 NuGet 套件 | [工具] > [選項] > [文字編輯器] > [C#] > [進階] > [為參考組件中的類型建議 Using] 和 [為 NuGet 套件中的類型建議 Using] |
+| 啟用完整解決方案分析 | 請在 [錯誤清單] 中查看方案中的所有錯誤 | [工具] > [選項] > [文字編輯器] > [C#] > [進階]  > [啟用完整解決方案分析] |
+| 啟用巡覽至反向編譯的原始碼 | 允許從外部來源對類型/成員啟用 [移至定義]，並使用 ILSpy 解編程式來顯示方法主體 | [工具] > [選項] > [文字編輯器] > [C#] > [進階] > [啟用巡覽至反向編譯的原始碼] |
+| 完成/建議模式 | 變更 IntelliSense 中的完成行為。 具有 IntelliJ 背景的開發人員傾向於使用這裡的非預設設定。 | [功能表] > [編輯] > [IntelliSense] > [切換完成模式] |
+| [CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md) | 在編輯器中顯示程式碼參考資訊與變更歷程記錄。 (在 Visual Studio Community 版中無法使用原始程式碼控制 CodeLens 指標。) | [工具] > [選項] > [文字編輯器] > [所有語言] > [CodeLens] |
 | [程式碼片段](../ide/visual-csharp-code-snippets.md) | 協助插入常用樣板程式碼作為虛設常式 | 鍵入程式碼片段名稱並按兩次 **Tab** 鍵。 |

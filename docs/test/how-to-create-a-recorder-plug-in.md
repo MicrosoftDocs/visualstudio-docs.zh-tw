@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - Web performance tests, recorder plug-in
 ms.assetid: 6fe13be1-aeb5-4927-9bff-35950e194da9
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: e49fbb3411aee98fce5899c522b9743b3f2afa33
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: c8c1c2d5dd2b3ec656a774c10f8bb50ca556a39f
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62950250"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653643"
 ---
-# <a name="how-to-create-a-recorder-plug-in"></a>HOW TO：建立錄製器外掛程式
+# <a name="how-to-create-a-recorder-plug-in"></a>如何：建立錄製器外掛程式
 
 <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRecorderPlugin> 讓您修改錄製的 Web 效能測試。 修改會在您選擇 [Web 效能測試錄製器] 工具列中的 [停止] 之後，並且在 [Web 效能測試編輯器] 中儲存及呈現測試之前發生。
 
@@ -99,9 +99,9 @@ ms.locfileid: "62950250"
     > [!WARNING]
     > 當您執行使用外掛程式的 Web 效能測試或負載測試時，可能會收到如下錯誤：
     >
-    > **要求失敗：\<外掛程式> 事件中發生例外狀況：無法載入檔案或組件 \<"外掛程式名稱".dll file>, Version=\<n.n.n.n>, Culture=neutral, PublicKeyToken=null' 或其相依性的其中之一。系統找不到指定的檔案。**
+    > **要求失敗： \<plug in > 事件中發生例外狀況：無法載入檔案或元件 ' \< "外掛程式名稱" .dll 檔案 >，Version = \<n. n. n >，Culture = 中性，PublicKeyToken = null ' 或它的其中一個相依性。系統找不到指定的檔案。**
     >
-    > 如果您對任何外掛程式進行程式碼變更並建立新的 DLL 版本 **(Version=0.0.0.0)**，但是外掛程式仍然參考原始的外掛程式版本，就會導致此錯誤發生。 若要更正此問題，請依照下列步驟執行：
+    > 如果您對任何外掛程式進行程式碼變更並建立新的 DLL 版本 **(Version=0.0.0.0)** ，但是外掛程式仍然參考原始的外掛程式版本，就會導致此錯誤發生。 若要更正此問題，請依照下列步驟執行：
     >
     > 1. 在 Web 效能和負載測試專案中，您將會在參考中看見警告。 移除並重新加入外掛程式 DLL 的參考。
     > 2. 從測試或適當的位置中移除外掛程式，然後再重新加入。
@@ -243,7 +243,7 @@ namespace RecorderPlugin
 }
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRequestPlugin>
 - <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRecorderPlugin.PostWebTestRecording*>

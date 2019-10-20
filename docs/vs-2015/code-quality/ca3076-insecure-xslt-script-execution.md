@@ -1,28 +1,28 @@
 ---
-title: CA3076:不安全的 XSLT 指令碼執行 |Microsoft Docs
+title: CA3076：不安全的 XSLT 腳本執行 |Microsoft Docs
 ms.date: 11/15/2016
 ms.technology: vs-ide-code-analysis
 ms.topic: reference
 ms.assetid: 53cb7a46-c564-488f-bc51-0e210a7853c9
 caps.latest.revision: 7
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 0a6b1efa5b5ee84092531a67421d03583afc3578
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 558e205fa37569bfa12d7b93f989d0f8ebabab43
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65680724"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72669066"
 ---
-# <a name="ca3076-insecure-xslt-script-execution"></a>CA3076:不安全的 XSLT 指令碼執行
+# <a name="ca3076-insecure-xslt-script-execution"></a>CA3076：不安全的 XSLT 指令碼執行
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |TypeName|InsecureXSLTScriptExecution|
 |CheckId|CA3076|
-|分類|Microsoft.Security|
+|Category|Microsoft.Security|
 |中斷變更|非中斷|
 
 ## <a name="cause"></a>原因
@@ -31,11 +31,11 @@ ms.locfileid: "65680724"
 ## <a name="rule-description"></a>規則描述
  [XSLT](https://msdn.microsoft.com/6377ce5f-3c45-42a6-b7a9-ec8da588b60c) 是全球資訊網協會 (W3C) 針對 XML 資料轉換的一項標準。 XSLT 通常用來撰寫可將 XML 資料轉換為其他格式的樣式表，例如 HTML、固定長度的文字、以逗號分隔的文字或不同的 XML 格式。 雖然預設為禁止使用，您仍可以針對專案選擇啟用此項目。
 
- 若要確保您不會公開受攻擊面，此規則會觸發每當 XslCompiledTransform。<xref:System.Xml.Xsl.XslCompiledTransform.Load%2A> 接收的不安全組合執行個體<xref:System.Xml.Xsl.XsltSettings>和<xref:System.Xml.XmlResolver>，可讓惡意指令碼處理。
+ 為了確保您不會公開受攻擊面，此規則會在 XslCompiledTransform 時觸發。<xref:System.Xml.Xsl.XslCompiledTransform.Load%2A> 接收 <xref:System.Xml.Xsl.XsltSettings> 和 <xref:System.Xml.XmlResolver> 的不安全性群組合實例，以允許惡意的腳本處理。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
 
-- 不安全的 XsltSettings 引數取代為 XsltSettings。<xref:System.Xml.Xsl.XsltSettings.Default%2A> 或執行個體的已停用文件函式和指令碼執行。
+- 以 XsltSettings 取代不安全的 XsltSettings 引數。<xref:System.Xml.Xsl.XsltSettings.Default%2A> 或使用已停用檔功能和腳本執行的實例。
 
 - 將 <xref:System.Xml.XmlResolver> 引數取代為 null 或 <xref:System.Xml.XmlSecureResolver> 執行個體。
 

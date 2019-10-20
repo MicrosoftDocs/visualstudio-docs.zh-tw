@@ -4,17 +4,17 @@ ms.date: 01/02/2018
 ms.topic: troubleshooting
 helpviewer_keywords:
 - templates [Visual Studio], troubleshooting
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 70782646a52a5bca5741a864eee1f965941bb34b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 0dbdb2854833f7c28866aa3d6ec0a685803adb3d
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62547589"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72656545"
 ---
-# <a name="how-to-troubleshoot-templates"></a>HOW TO：針對範本進行疑難排解
+# <a name="how-to-troubleshoot-templates"></a>如何：針對範本進行疑難排解
 
 如果範本無法在開發環境中載入，有數種方式可找出問題。
 
@@ -59,7 +59,7 @@ ms.locfileid: "62547589"
 
 您可以遵循[針對範本探索進行疑難排解 (擴充性)](../extensibility/troubleshooting-template-discovery.md) 中的步驟來啟用範本探索的診斷記錄。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [針對範本探索進行疑難排解 (擴充性)](../extensibility/troubleshooting-template-discovery.md)
 - [自訂範本](../ide/customizing-project-and-item-templates.md)

@@ -6,15 +6,15 @@ ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.assetid: 2341013d-a08b-49a7-b6fd-a7b6aaa797e0
 caps.latest.revision: 13
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: e85e8427a310a531b91363fff9019a116bc050be
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: fcaa8424e1b60375ec62bde31c5e22f3706641d0
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68416652"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72660747"
 ---
 # <a name="analyze-the-code-quality-of-store-apps-using-visual-studio-static-code-analysis"></a>使用 Visual Studio 靜態程式碼分析，分析市集應用程式的程式碼品質
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

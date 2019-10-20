@@ -1,28 +1,28 @@
 ---
-title: 作法：隱藏編譯器警告 |Microsoft Docs
+title: 如何：隱藏編譯器警告 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.assetid: 31827b17-f933-413d-b28a-b19f903b64ca
 caps.latest.revision: 7
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 994b29fb4592d55a04389896ee9db8848dceda67
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: aeb404c479edec5dec89f28e80584d435f5c370a
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65695387"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72670649"
 ---
-# <a name="how-to-suppress-compiler-warnings"></a>HOW TO：隱藏編譯器警告
+# <a name="how-to-suppress-compiler-warnings"></a>如何：隱藏編譯器警告
 
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-您可以指定不想要組建記錄檔包含的一種或多種編譯器警告，來清理組建記錄檔。 例如，您可以使用這項技術，檢閱將組建記錄檔詳細資訊設定為 [一般]、[詳細] 或 [診斷] 時自動產生的一些資訊，而非所有資訊。 如需詳細資訊層級的詳細資訊，請參閱[如何：檢視、 儲存和設定組建記錄檔](../ide/how-to-view-save-and-configure-build-log-files.md)。
+您可以指定不想要組建記錄檔包含的一種或多種編譯器警告，來清理組建記錄檔。 例如，您可以使用這項技術，檢閱將組建記錄檔詳細資訊設定為 [一般]、[詳細] 或 [診斷] 時自動產生的一些資訊，而非所有資訊。 如需詳細資訊的詳細資訊，請參閱[如何：檢視、儲存和設定組建記錄檔](../ide/how-to-view-save-and-configure-build-log-files.md)。
 
-### <a name="to-suppress-specific-warnings-for-visual-c-or-f"></a>若要隱藏特定警告，視覺效果C#或 F\#
+### <a name="to-suppress-specific-warnings-for-visual-c-or-f"></a>隱藏視覺效果C#或 F \# 的特定警告
 
 1. 在方案總管中，選擇您想要隱藏警告的專案。
 
@@ -58,7 +58,7 @@ ms.locfileid: "65695387"
 
 2. 在功能表列上，依序選擇 [專案] 和 [卸載專案]。
 
-3. 在方案總管中，開啟專案的捷徑功能表，然後選擇 [編輯 _ProjectName_**.vbproj**]。
+3. 在方案總管中，開啟專案的捷徑功能表，然後選擇 [編輯 _ProjectName_ **.vbproj**]。
 
     該專案檔會在程式碼編輯器中開啟。
 
@@ -108,8 +108,8 @@ ms.locfileid: "65695387"
 
    如需詳細資訊，請參閱 [/nowarn](https://msdn.microsoft.com/library/7ebf2106-0652-4fdc-bf60-70fc86465d83)。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [逐步解說：建置應用程式](../ide/walkthrough-building-an-application.md)
-- [如何：檢視、儲存及設定組建記錄檔](../ide/how-to-view-save-and-configure-build-log-files.md)
+- [如何：檢視、儲存和設定組建記錄檔](../ide/how-to-view-save-and-configure-build-log-files.md)
 - [編譯和建置](../ide/compiling-and-building-in-visual-studio.md)

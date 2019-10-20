@@ -1,28 +1,28 @@
 ---
-title: CA2153:避免處理損毀狀態例外狀況 |Microsoft Docs
+title: CA2153：避免處理損毀狀態例外狀況 |Microsoft Docs
 ms.date: 11/15/2016
 ms.technology: vs-ide-code-analysis
 ms.topic: reference
 ms.assetid: 418cc9cb-68ad-47e9-a6c8-a48b9c35db45
 caps.latest.revision: 7
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: f8999c2e4622505526524f2a09a5f33259955974
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9d4ca2668f2d6241e9a3cca88b4722ee5348abc3
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68142580"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72667416"
 ---
-# <a name="ca2153-avoid-handling-corrupted-state-exceptions"></a>CA2153:避免處理損毀狀態例外狀況
+# <a name="ca2153-avoid-handling-corrupted-state-exceptions"></a>CA2153：避免處理損毀狀態例外狀況
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |TypeName|AvoidHandlingCorruptedStateExceptions|
 |CheckId|CA2153|
-|分類|Microsoft.Security|
+|Category|Microsoft.Security|
 |中斷變更|非中斷|
 
 ## <a name="cause"></a>原因

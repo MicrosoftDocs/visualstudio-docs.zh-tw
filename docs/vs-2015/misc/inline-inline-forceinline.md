@@ -1,5 +1,5 @@
 ---
-title: inline、 __inline、 __forceinline |Microsoft Docs
+title: inline、__inline、__forceinline |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: devlang-csharp
@@ -23,17 +23,17 @@ helpviewer_keywords:
 - instantiation, defined
 ms.assetid: a159d11e-5dc6-4bac-b2cf-b5f23688e552
 caps.latest.revision: 10
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 92239ad987f355394f23393bc4fadeb18bae870b
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 2a13b4df1231f9a71797592f61c7852dfb5dfced
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65681564"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72609721"
 ---
-# <a name="inline-inline-forceinline"></a>inline、__inline、__forceinline
-本內容已移至[內嵌函式](https://msdn.microsoft.com/library/355f120c-2847-4608-ac04-8dda18ffe10c)  
-  
+# <a name="inline-__inline-__forceinline"></a>inline、__inline、__forceinline
+本內容已移至[內嵌](https://msdn.microsoft.com/library/355f120c-2847-4608-ac04-8dda18ffe10c)函式
+
 ## <a name="syntax"></a>語法

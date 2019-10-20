@@ -15,17 +15,17 @@ helpviewer_keywords:
 - virtual functions, Properties window
 - Properties window
 ms.assetid: e6e0fa4f-75c4-4a52-af15-281cd61876ca
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e26bd9d874ba5526a858e32907bff6676b68c81e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 4701f5ea882ab2fbb75f11bc3cc6d85fc92b4b8e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62969029"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72655687"
 ---
 # <a name="properties-window"></a>屬性視窗
 
@@ -83,7 +83,7 @@ ms.locfileid: "62969029"
 搜尋\
 提供在設計工具中編輯 XAML 檔案時，屬性和事件的搜尋功能。 [搜尋] 方塊會回應部分文字搜尋，並在您鍵入時更新搜尋結果。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [專案屬性參考](../../ide/reference/project-properties-reference.md)
 - [自訂視窗版面配置](../../ide/customizing-window-layouts-in-visual-studio.md)

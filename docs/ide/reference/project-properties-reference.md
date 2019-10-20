@@ -6,17 +6,17 @@ helpviewer_keywords:
 - user interface [Visual Studio], projects
 - projects [Visual Studio], user interface
 ms.assetid: eec49aec-5474-48a7-889d-709045b9a475
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 41e6a21278670a477bdd30e28a6f0cc4cac04757
-ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
-ms.translationtype: HT
+ms.openlocfilehash: f3b5c5f79b4ecfcac3e70b6be125c57bcc738199
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68461362"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72655799"
 ---
 # <a name="project-properties-reference"></a>專案屬性參考
 
@@ -24,7 +24,7 @@ ms.locfileid: "68461362"
 
 ## <a name="project-properties-pages"></a>專案屬性頁面
 
-| 標題 | 說明 |
+| 標題 | 描述 |
 | - | - |
 | [專案設計工具、應用程式頁面 (Visual Basic)](../../ide/reference/application-page-project-designer-visual-basic.md) | 使用這個頁面來指定 [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] 專案的應用程式設定和屬性。 |
 | [專案設計工具，應用程式頁面 (C#)](../../ide/reference/application-page-project-designer-csharp.md) | 使用這個頁面來指定 [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] 專案的應用程式設定和屬性。 |
@@ -38,6 +38,6 @@ ms.locfileid: "68461362"
 | [專案設計工具、安全性頁面](../../ide/reference/security-page-project-designer.md) | 使用這個頁面來設定使用 [!INCLUDE[ndptecclick](../../deployment/includes/ndptecclick_md.md)] 部署所部署之應用程式的程式碼存取安全性設定。 |
 | [專案設計工具、簽署頁面](../../ide/reference/signing-page-project-designer.md) | 使用這個頁面來簽署應用程式和部署資訊清單，以及簽署組件。 |
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
-- [專案和解決方案](../../ide/solutions-and-projects-in-visual-studio.md)
+- [專案和方案](../../ide/solutions-and-projects-in-visual-studio.md)

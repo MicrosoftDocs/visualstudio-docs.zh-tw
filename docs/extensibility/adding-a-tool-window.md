@@ -11,55 +11,57 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5f438297a51e5b091ea8b80cf587586919d00798
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 7ee669d2acd5bc69c7268b19ad04e9fa7b506e11
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66352417"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72633410"
 ---
 # <a name="add-a-tool-window"></a>加入工具視窗
-在本逐步解說，您會學習如何建立工具視窗，並將它整合到 Visual Studio 中，以下列方式：
 
-- 將控制項新增至 [工具] 視窗。
+在本逐步解說中，您將瞭解如何建立工具視窗，並透過下列方式將它整合到 Visual Studio：
 
-- 將工具列加入工具視窗。
+- 將控制項新增至工具視窗。
 
-- 您可以將命令加入工具列。
+- 將工具列新增至工具視窗。
 
-- 實作命令。
+- 將命令新增至工具列。
 
-- 設定 [工具] 視窗的預設位置。
+- 執行命令。
 
-## <a name="prerequisites"></a>必要條件
-從 Visual Studio 2015 中，從下載中心取得未安裝 Visual Studio SDK。 包含為 Visual Studio 安裝程式的選用功能。 您也可以在稍後安裝 VS SDK。 如需詳細資訊，請參閱 <<c0> [ 安裝 Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md)。
+- 設定工具視窗的預設位置。
+
+## <a name="prerequisites"></a>Prerequisites
+
+Visual Studio SDK 會包含為 Visual Studio 安裝程式中的選用功能。 如需詳細資訊，請參閱[安裝 VISUAL STUDIO SDK](../extensibility/installing-the-visual-studio-sdk.md)。
 
 ## <a name="create-a-tool-window"></a>建立工具視窗
 
-1. 建立專案，名為**FirstToolWin**使用 [VSIX] 範本，然後新增名為的自訂工具視窗項目範本**FirstToolWindow**。
+1. 使用 VSIX 範本建立名為**FirstToolWin**的專案，並加入名為**FirstToolWindow**的自訂工具視窗專案範本。
 
     > [!NOTE]
-    > 如需使用工具視窗建立擴充功能的詳細資訊，請參閱[建立的擴充功能與工具視窗](../extensibility/creating-an-extension-with-a-tool-window.md)。
+    > 如需使用工具視窗建立擴充功能的詳細資訊，請參閱[使用工具視窗建立擴充](../extensibility/creating-an-extension-with-a-tool-window.md)功能。
 
-## <a name="add-a-control-to-the-tool-window"></a>將控制項加入工具視窗
+## <a name="add-a-control-to-the-tool-window"></a>將控制項新增至工具視窗
 
-1. 移除預設的控制項。 開啟*FirstToolWindowControl.xaml* ，並刪除**Click Me ！** 按鈕。
+1. 移除預設控制項。 開啟*FirstToolWindowControl* ，並刪除**Click Me！** 按鈕。
 
-2. 在**工具箱**，展開**所有 WPF 控制項**區段，然後拖曳**媒體元素**控制**FirstToolWindowControl**表單。 選取控制項，然後在**屬性** 視窗中，命名這個項目**mediaElement1**。
+2. 在 [**工具箱**] 中，展開 [**所有 WPF 控制項**] 區段，並將 [**媒體元件**] 控制項拖曳至 [ **FirstToolWindowControl** ] 表單。 選取控制項，然後在 [**屬性**] 視窗中，將此元素命名為**mediaelement1.pause**。
 
-## <a name="add-a-toolbar-to-the-tool-window"></a>將工具列新增至 [工具] 視窗
-藉由新增工具列，以下列方式，確保其漸層和色彩會與 IDE 的其餘部分一致。
+## <a name="add-a-toolbar-to-the-tool-window"></a>將工具列新增至工具視窗
+藉由下列方式加入工具列，可保證其漸層和色彩與 IDE 的其餘部分一致。
 
-1. 在 **方案總管**，開啟*FirstToolWindowPackage.vsct*。 *.Vsct*檔案使用 XML 工具視窗中定義的圖形化使用者介面 (GUI) 項目。
+1. 在**方案總管**中，開啟*FirstToolWindowPackage .vsct*。 *.Vsct*檔案會使用 XML，在您的工具視窗中定義圖形化使用者介面（GUI）元素。
 
-2. 在 `<Symbols>`區段中，尋找`<GuidSymbol>`節點的`name`屬性是`guidFirstToolWindowPackageCmdSet`。 新增下列兩個`<IDSymbol>`的清單項目`<IDSymbol>`定義工具列和工具列群組的此節點中的項目。
+2. 在 [`<Symbols>`] 區段中，尋找其 `name` 屬性 `guidFirstToolWindowPackageCmdSet` 的 `<GuidSymbol>` 節點。 將下列兩個 `<IDSymbol>` 元素加入此節點中 `<IDSymbol>` 元素的清單，以定義工具列和工具列群組。
 
     ```xml
     <IDSymbol name="ToolbarID" value="0x1000" />
     <IDSymbol name="ToolbarGroupID" value="0x1001" />
     ```
 
-3. 正上方`<Buttons>`區段中，建立`<Menus>`看起來像這樣的區段：
+3. 在 [`<Buttons>`] 區段的正上方，建立如下所示的 `<Menus>` 區段：
 
     ```xml
     <Menus>
@@ -73,11 +75,11 @@ ms.locfileid: "66352417"
     </Menus>
     ```
 
-    有好幾種不同的功能表。 此功能表會在工具視窗中，工具列所定義其`type`屬性。 `guid`和`id`設定組成工具列的完整識別碼。 一般而言，`<Parent>`是功能表的 包含的群組。 不過，工具列會定義為其本身的父系。 因此，相同的識別碼就會用於`<Menu>`和`<Parent>`項目。 `priority`屬性是只是 ' 0'。
+    有幾種不同的功能表。 此功能表是工具視窗中的工具列，由其 `type` 屬性所定義。 @No__t_0 和 `id` 設定組成工具列的完整識別碼。 通常，功能表的 `<Parent>` 是包含的群組。 不過，工具列會定義為其本身的父系。 因此，`<Menu>` 和 `<Parent>` 元素會使用相同的識別碼。 @No__t_0 屬性只是 ' 0 '。
 
-4. 工具列會像在許多方面的功能表。 比方說，就像功能表可能會有群組的命令，工具列可能也會有群組。 （在功能表上的命令群組以分隔水平線。 在工具列上的群組不分隔 visual 的分隔線。）
+4. 工具列在許多方面都類似功能表。 例如，如同功能表可能會有一組命令，工具列也可以有群組。 （在功能表上，命令群組會以水平線條分隔。 在工具列上，群組不會以視覺分隔線分隔）。
 
-    新增`<Groups>`區段，其中包含`<Group>`項目。 這會定義群組中您宣告其識別碼`<Symbols>`一節。 新增`<Groups>`正後方區段`<Menus>`一節。
+    加入包含 `<Group>` 元素的 `<Groups>` 區段。 這會定義您在 [`<Symbols>`] 區段中宣告其識別碼的群組。 將 `<Groups>` 區段加入 `<Menus>` 區段的正後方。
 
     ```xml
     <Groups>
@@ -87,19 +89,20 @@ ms.locfileid: "66352417"
     </Groups>
     ```
 
-    藉由設定父 GUID 和 ID 的 GUID 和 ID 的工具列，您將群組加入工具列。
+    藉由將 [父系 GUID] 和 [ID] 設定為工具列的 GUID 和 ID，您可以將群組加入至工具列。
 
-## <a name="add-a-command-to-the-toolbar"></a>將命令加入至工具列
- 將命令新增到顯示為按鈕的工具列。
+## <a name="add-a-command-to-the-toolbar"></a>將命令新增至工具列
 
-1. 在 `<Symbols>`區段中，宣告下列 IDSymbol 元素後方的工具列和工具列群組宣告。
+將命令新增至工具列，這會顯示為按鈕。
+
+1. 在 [`<Symbols>`] 區段中，宣告緊接在工具列和工具列群組宣告之後的下列 IDSymbol 元素。
 
     ```xml
     <IDSymbol name="cmdidWindowsMedia" value="0x0100" />
     <IDSymbol name="cmdidWindowsMediaOpen" value="0x132" />
     ```
 
-2. 新增按鈕項目內`<Buttons>`一節。 這個項目會出現在 [工具] 視窗的工具列上，使用**搜尋**圖示 （放大鏡）。
+2. 在 [`<Buttons>`] 區段內加入 Button 元素。 此元素會出現在工具視窗的工具列上，並具有**搜尋**（放大鏡）圖示。
 
     ```xml
     <Button guid="guidFirstToolWindowPackageCmdSet" id="cmdidWindowsMediaOpen" priority="0x0101" type="Button">
@@ -112,7 +115,7 @@ ms.locfileid: "66352417"
     </Button>
     ```
 
-3. 開啟*FirstToolWindowCommand.cs*和類別中新增下列幾行，只要在現有的欄位之後。
+3. 開啟*FirstToolWindowCommand.cs* ，並在現有欄位之後的類別中新增下列幾行。
 
     ```csharp
     public const string guidFirstToolWindowPackageCmdSet = "00000000-0000-0000-0000-0000";  // get the GUID from the .vsct file
@@ -121,12 +124,12 @@ ms.locfileid: "66352417"
     public const int ToolbarID = 0x1000;
     ```
 
-    如此一來您的命令可讓在程式碼。
+    這麼做可讓您在程式碼中使用命令。
 
-## <a name="add-a-mediaplayer-property-to-firsttoolwindowcontrol"></a>新增 FirstToolWindowControl MediaPlayer 屬性
-從工具列控制項的事件處理常式，您的程式碼必須能夠存取 Media Player 控制項，也就是 FirstToolWindowControl 類別的子系。
+## <a name="add-a-mediaplayer-property-to-firsttoolwindowcontrol"></a>將 MediaPlayer 屬性新增至 FirstToolWindowControl
+從工具列控制項的事件處理常式，程式碼必須能夠存取媒體播放機控制項，這是 FirstToolWindowControl 類別的子系。
 
-在 [**方案總管] 中**，以滑鼠右鍵按一下*FirstToolWindowControl.xaml*，按一下**檢視程式碼**，並將下列程式碼新增至 FirstToolWindowControl 類別。
+在**方案總管**中，以滑鼠右鍵按一下 [ *FirstToolWindowControl*]，按一下 [**查看程式碼**]，然後將下列程式碼新增至 FirstToolWindowControl 類別。
 
 ```csharp
 public System.Windows.Controls.MediaElement MediaPlayer
@@ -135,10 +138,10 @@ public System.Windows.Controls.MediaElement MediaPlayer
 }
 ```
 
-## <a name="instantiate-the-tool-window-and-toolbar"></a>具現化的工具視窗和工具列
-新增工具列和功能表命令叫用**開啟檔案**對話方塊，並播放選取的媒體檔案。
+## <a name="instantiate-the-tool-window-and-toolbar"></a>具現化工具視窗和工具列
+新增工具列和功能表命令，以叫用 [**開啟**檔案] 對話方塊，並播放選取的媒體檔案。
 
-1. 開啟*FirstToolWindow.cs*並新增下列`using`陳述式。
+1. 開啟*FirstToolWindow.cs* ，並新增下列 `using` 指示詞：
 
     ```csharp
     using System.ComponentModel.Design;
@@ -146,20 +149,20 @@ public System.Windows.Controls.MediaElement MediaPlayer
     using Microsoft.VisualStudio.Shell.Interop;
     ```
 
-2. 在內部 FirstToolWindow 類別中，加入 FirstToolWindowControl 控制項的公用參考。
+2. 在 FirstToolWindow 類別內，新增 FirstToolWindowControl 控制項的公用參考。
 
     ```csharp
     public FirstToolWindowControl control;
     ```
 
-3. 在建構函式結束時，此控制項將變數設定至新建立的控制項。
+3. 在此函式的結尾，將此控制項變數設定為新建立的控制項。
 
     ```csharp
     control = new FirstToolWindowControl();
     base.Content = control;
     ```
 
-4. 具現化建構函式內的工具列。
+4. 在此函式內具現化工具列。
 
     ```csharp
     this.ToolBar = new CommandID(new Guid(FirstToolWindowCommand.guidFirstToolWindowPackageCmdSet),
@@ -167,7 +170,7 @@ public System.Windows.Controls.MediaElement MediaPlayer
     this.ToolBarLocation = (int)VSTWT_LOCATION.VSTWT_TOP;
     ```
 
-5. 此時 FirstToolWindow 建構函式看起來應該像這樣：
+5. 此時，FirstToolWindow 的「檢查點」應該如下所示：
 
     ```csharp
     public FirstToolWindow() : base(null)
@@ -183,13 +186,13 @@ public System.Windows.Controls.MediaElement MediaPlayer
     }
     ```
 
-6. 將功能表命令加入工具列。 在 FirstToolWindowCommand.cs 類別中，新增下列 using 陳述式
+6. 將功能表命令加入工具列。 在 FirstToolWindowCommand.cs 類別中，新增下列 using 指示詞：
 
     ```csharp
     using System.Windows.Forms;
     ```
 
-7. 在 FirstToolWindowCommand 類別中加入下列程式碼 ShowToolWindow() 方法的結尾。 在下一節中，將會實作 ButtonHandler 命令。
+7. 在 FirstToolWindowCommand 類別中，將下列程式碼新增至 ShowToolWindow （）方法的結尾。 ButtonHandler 命令將在下一節中執行。
 
     ```csharp
     // Create the handles for the toolbar command.
@@ -201,17 +204,17 @@ public System.Windows.Controls.MediaElement MediaPlayer
     mcs.AddCommand(menuItem);
     ```
 
-### <a name="to-implement-a-menu-command-in-the-tool-window"></a>在 [工具] 視窗中實作功能表命令
+### <a name="to-implement-a-menu-command-in-the-tool-window"></a>在工具視窗中執行功能表命令
 
-1. 在 FirstToolWindowCommand 類別中，新增 ButtonHandler 方法叫用**開啟檔案**對話方塊。 選取的檔案，它就會播放媒體檔案。
+1. 在 FirstToolWindowCommand 類別中，新增 ButtonHandler 方法，以叫用 [**開啟**檔案] 對話方塊。 選取檔案之後，它會播放媒體檔案。
 
-2. 在 FirstToolWindowCommand 類別中加入 FirstToolWindow 視窗 FindToolWindow() 方法中建立私用的參考。
+2. 在 FirstToolWindowCommand 類別中，將私用參考加入至 FindToolWindow （）方法中所建立的 FirstToolWindow 視窗。
 
     ```csharp
     private FirstToolWindow window;
     ```
 
-3. 變更設定 視窗 （以便 ButtonHandler 命令處理常式可以存取視窗控制項上述定義 ShowToolWindow() 方法。 以下是完整的 ShowToolWindow() 方法。
+3. 變更 ShowToolWindow （）方法以設定您在上方定義的視窗（使 ButtonHandler 命令處理常式可以存取視窗控制項）。 以下是完整的 ShowToolWindow （）方法。
 
     ```csharp
     private void ShowToolWindow(object sender, EventArgs e)
@@ -234,7 +237,7 @@ public System.Windows.Controls.MediaElement MediaPlayer
     }
     ```
 
-4. 新增 ButtonHandler 方法。 它會建立讓使用者指定的媒體檔案，若要播放，OpenFileDialog 然後播放選取的檔案。
+4. 新增 ButtonHandler 方法。 它會建立 OpenFileDialog，讓使用者指定要播放的媒體檔案，然後播放選取的檔案。
 
     ```csharp
     private void ButtonHandler(object sender, EventArgs arguments)
@@ -248,10 +251,11 @@ public System.Windows.Controls.MediaElement MediaPlayer
     }
     ```
 
-## <a name="set-the-default-position-for-the-tool-window"></a>設定 [工具] 視窗的預設位置
- 接下來，在 IDE 中工具視窗中指定的預設位置。 工具視窗的設定資訊位於*FirstToolWindowPackage.cs*檔案。
+## <a name="set-the-default-position-for-the-tool-window"></a>設定工具視窗的預設位置
 
-1. 在  *FirstToolWindowPackage.cs*，尋找<xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute>屬性`FirstToolWindowPackage`類別，可將 FirstToolWindow 類型傳遞至建構函式。 若要指定預設位置，您必須新增更多參數建構函式的下列範例。
+接下來，在 IDE 中指定工具視窗的預設位置。 工具視窗的設定資訊位於*FirstToolWindowPackage.cs*檔案中。
+
+1. 在*FirstToolWindowPackage.cs*中，尋找 `FirstToolWindowPackage` 類別上的 <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute> 屬性，它會將 FirstToolWindow 型別傳遞給此函式。 若要指定預設位置，您必須將更多參數新增至下列範例中的函式。
 
     ```csharp
     [ProvideToolWindow(typeof(FirstToolWindow),
@@ -259,22 +263,22 @@ public System.Windows.Controls.MediaElement MediaPlayer
         Window = "3ae79031-e1bc-11d0-8f78-00a0c9110057")]
     ```
 
-    第一個具名的參數是`Style`且其值為`Tabbed`，這表示會將此視窗中現有的視窗的索引標籤。 停駐的位置由指定`Window`參數，此案例中，n 的 GUID**方案總管 中**。
+    第一個名為的參數是 `Style`，其值為 `Tabbed`，這表示視窗會是現有視窗中的索引標籤。 停駐位置是由 `Window` 參數指定，n 這個案例是**方案總管**的 GUID。
 
     > [!NOTE]
-    > 如需在 IDE 中 windows 類型的詳細資訊，請參閱<xref:EnvDTE.vsWindowType>。
+    > 如需 IDE 中的視窗類型的詳細資訊，請參閱 <xref:EnvDTE.vsWindowType>。
 
-## <a name="test-the-tool-window"></a>測試工具視窗
+## <a name="test-the-tool-window"></a>測試控管視窗
 
-1. 按下**F5**開啟 Visual Studio 的實驗性組建的新執行個體。
+1. 按**F5**開啟 Visual Studio 實驗性組建的新實例。
 
-2. 在 **檢視**功能表上，指向**其他 Windows** ，然後按一下 **第一個工具視窗**。
+2. 在 [ **View** ] 功能表上，指向 [**其他視窗**]，然後按一下 [**第一個工具視窗]** 。
 
-    Media player 的工具視窗應該開啟相同的位置**方案總管 中**。 如果它仍會出現在相同的位置之前，重設視窗配置 (**視窗 / 重設視窗配置**)。
+    Media player 工具視窗應該會在**方案總管**的相同位置開啟。 如果它仍然出現在與之前相同的位置，請重設視窗配置（**視窗/重設視窗版面**配置）。
 
-3. 按一下  按鈕 (它有**搜尋**圖示) 在 工具 視窗。 選取支援的聲音或視訊檔案，例如*C:\windows\media\chimes.wav*，然後按**開啟**。
+3. 在工具視窗中，按一下按鈕（其具有**搜尋**圖示）。 選取支援的音效或影片檔案（例如， *C:\windows\media\chimes.wav*），然後按 [**開啟**]。
 
     您應該會聽到鐘聲音效。
 
-## <a name="see-also"></a>另請參閱
-- [命令、 功能表和工具列](../extensibility/internals/commands-menus-and-toolbars.md)
+## <a name="see-also"></a>請參閱
+- [命令、功能表和工具列](../extensibility/internals/commands-menus-and-toolbars.md)

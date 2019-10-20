@@ -7,17 +7,17 @@ helpviewer_keywords:
 - Devenv, /upgrade switch
 - upgrade Devenv switch
 ms.assetid: 3468045c-5cc9-4157-9a9d-622452145d27
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0fa2e2eaa583f7da0437907fdaa3e7af2fe4a0e2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: c9894056babdd8615e4ae052eb73e91e9b108acc
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62789299"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72622412"
 ---
 # <a name="upgrade-devenvexe"></a>/Upgrade (devenv.exe)
 
@@ -41,7 +41,7 @@ devenv {SolutionFile|ProjectFile} /Upgrade [/Out OutputFilename]
 
 - `/Out` *OutputFilename*
 
-  選擇性。 您要將工具的輸出傳送到其中的檔案名稱。 如果檔案已經存在，工具就會將輸出附加至檔案結尾。
+  選擇項。 您要將工具的輸出傳送到其中的檔案名稱。 如果檔案已經存在，工具就會將輸出附加至檔案結尾。
 
 ## <a name="remarks"></a>備註
 
@@ -59,6 +59,6 @@ devenv {SolutionFile|ProjectFile} /Upgrade [/Out OutputFilename]
 devenv "%USERPROFILE%\source\repos\MyProject\MyProject.sln" /upgrade
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [Devenv 命令列參數](../../ide/reference/devenv-command-line-switches.md)

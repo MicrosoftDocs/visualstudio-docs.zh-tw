@@ -3,17 +3,17 @@ title: 修改物件的樣式
 titleSuffix: Blend for Visual Studio
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 44c7cdc4de5e67c73f5ebab40de75d7dcb484ed9
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: 225a9e85493711a1e2903c1f6a632ae68f31136f
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72451007"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72668829"
 ---
 # <a name="modify-the-style-of-objects-in-blend-for-visual-studio"></a>在 Blend for Visual Studio 中修改物件的樣式
 

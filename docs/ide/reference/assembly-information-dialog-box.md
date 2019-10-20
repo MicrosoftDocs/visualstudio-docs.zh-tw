@@ -7,19 +7,19 @@ f1_keywords:
 helpviewer_keywords:
 - Assembly Information dialog box
 ms.assetid: 8f1f6449-e03d-4a5b-9076-d3b1f84ada48
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 411a9b1150961307a2a8ed3cdfae9842fb56701c
-ms.sourcegitcommit: 13decf878b33fc0c5d665a88067170c2861b261b
+ms.openlocfilehash: 88d86c077cf129632c78d6266e7c8146325b78fb
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "71681629"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72651912"
 ---
-# <a name="assembly-information-dialog-box"></a>[組件資訊] 對話方塊
+# <a name="assembly-information-dialog-box"></a>組件資訊對話方塊
 
 您可以使用 [組件資訊] 對話方塊來指定 .NET Framework 全域組件屬性的值，該值會儲存在隨專案自動建立的 AssemblyInfo 檔案中。 在 [方案總管] 中，AssemblyInfo 檔案位於 Visual Basic 專案的 [我的專案] 節點中 (按一下 [顯示所有檔案] 以檢視它)。 針對 C# 專案，它位於 [屬性] 底下。 如需詳細資訊，請參閱[屬性 (C#)](/dotnet/csharp/programming-guide/concepts/attributes/index)。
 
@@ -65,7 +65,7 @@ ms.locfileid: "71681629"
 > [!NOTE]
 > 如需在 .NET Framework Class Library 中產生 NuGet 套件時設定這些屬性的詳細資訊，請參閱[設定封裝的專案屬性](/nuget/quickstart/create-and-publish-a-package-using-visual-studio-net-framework#configure-project-properties-for-the-package)。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [專案設計工具、應用程式頁面 (Visual Basic)](../../ide/reference/application-page-project-designer-visual-basic.md)
 - [屬性](https://msdn.microsoft.com/Library/ae334cee-d96c-4243-a5e3-06dd7fcaf205)

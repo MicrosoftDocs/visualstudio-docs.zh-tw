@@ -6,31 +6,27 @@ ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 ms.assetid: 88db3a0a-1b92-496d-9fae-b2bb980f5933
 caps.latest.revision: 14
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: f6d848c2f32f51a14c03d8b321f05b6b60143a87
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 19b7079f2a24e6a904a2d1266e7605f0e56e5dae
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68142333"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72667682"
 ---
 # <a name="creating-custom-code-analysis-rule-sets"></a>建立自訂程式碼分析規則集
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-您套用至 managed 程式碼專案的程式碼分析規則所指定規則集，其中包含一或多個規則。 Microsoft 標準規則集提供依函式和深度的規則的群組。 例如，Microsoft 基本設計方針規則和 Microsoft 擴充設計方針規則包含將焦點放在使用性和可維護性問題，已新增強調擴充規則集中的命名規則的規則。  
-  
- 您也可以建立自訂規則集，結合了兩個或更多標準規則集，或所指定規則中一個或多個標準的規則集。 您儲存自訂的規則設定為.ruleset 檔案，並在多個程式碼專案中指定。  
-  
-## <a name="in-this-section"></a>本節內容  
- [如何：建立自訂規則集](../code-quality/how-to-create-a-custom-rule-set.md)  
- 描述如何建立自訂規則集藉由修改一或多個標準的規則集。  
-  
- [在規則集編輯器中執行作業](../code-quality/working-in-the-code-analysis-rule-set-editor.md)  
- 描述如何使用群組、 排序、 篩選條件，規則集編輯器及修改自訂規則集中的程式碼分析規則。  
-  
-## <a name="see-also"></a>另請參閱  
- [程式碼分析規則集參考](../code-quality/code-analysis-rule-set-reference.md)   
- [分析 Managed 程式碼品質](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)   
- [使用程式碼分析進行 C/C++ 程式碼品質分析](../code-quality/analyzing-c-cpp-code-quality-by-using-code-analysis.md)
+您可以藉由指定包含一或多個規則的規則集，將程式碼分析規則套用至 managed 程式碼專案。 Microsoft 標準規則集會提供依功能和深度組織的規則群組。 例如，Microsoft 基本設計方針規則和 Microsoft 擴充設計指導方針規則包含著重于可用性和可維護性問題的規則，同時強調擴充規則集中的命名規則。
+
+ 您也可以建立自訂規則集，結合兩個或多個標準規則集，或指定一或多個標準規則集中的規則。 您可以將自訂規則集儲存至規則集檔案，並在多個程式碼專案中指定它們。
+
+## <a name="in-this-section"></a>本章節內容
+ How [to：建立自訂規則集](../code-quality/how-to-create-a-custom-rule-set.md)說明如何藉由修改一或多個標準規則集來建立自訂規則集。
+
+ [在規則集編輯器中工作](../code-quality/working-in-the-code-analysis-rule-set-editor.md)描述如何使用規則集編輯器來分組、排序、篩選和修改自訂規則集中的程式碼分析規則。
+
+## <a name="see-also"></a>請參閱
+ 程式[代碼分析規則集參考](../code-quality/code-analysis-rule-set-reference.md)[使用程式碼分析來C++ ](../code-quality/analyzing-c-cpp-code-quality-by-using-code-analysis.md) [分析受控碼品質](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)分析 C/程式碼品質

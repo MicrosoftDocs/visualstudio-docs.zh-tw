@@ -9,36 +9,36 @@ f1_keywords:
 helpviewer_keywords:
 - task list
 - Visual Studio, task list
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ffbe1b7f293bc525aa03a536c0fa4fa55ce3e82a
-ms.sourcegitcommit: 3cda0d58c5cf1985122b8977b33a171c7359f324
+ms.openlocfilehash: 69c0e4c3a19358d9b29e4d7d3616c6718117e059
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/29/2019
-ms.locfileid: "70154851"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72647322"
 ---
 # <a name="use-the-task-list"></a>使用工作清單
 
-您可以使用 [工作清單]  來追蹤使用 `TODO` 和 `HACK` 這類語彙基元或自訂語彙基元的程式碼註解，以及管理會直接將您帶往程式碼中預先定義位置的捷徑。 按一下清單中的項目，以移至它在原始程式碼中的位置。
+您可以使用 [工作清單] 來追蹤使用 `TODO` 和 `HACK` 這類語彙基元或自訂語彙基元的程式碼註解，以及管理會直接將您帶往程式碼中預先定義位置的捷徑。 按一下清單中的項目，以移至它在原始程式碼中的位置。
 
 > [!NOTE]
-> 此主題適用於 Windows 上的 Visual Studio。 針對 Visual Studio for Mac，請參閱[工作註解 (Visual Studio for Mac)](/visualstudio/mac/task-comments)。
+> 本主題適用於 Windows 上的 Visual Studio。 針對 Visual Studio for Mac，請參閱[工作註解 (Visual Studio for Mac)](/visualstudio/mac/task-comments)。
 
 ## <a name="the-task-list-window"></a>工作清單視窗
 
-當 [工作清單]  開啟時，會出現在應用程式視窗的底部。
+當 [工作清單] 開啟時，會出現在應用程式視窗的底部。
 
-若要開啟 [工作清單]  ，請選取 [檢視]   > [工作清單]  ，或從鍵盤按 **Ctrl**+ **\\** ,**T**鍵。
+若要開啟 [工作清單]，請選取 [檢視] > [工作清單]，或從鍵盤按 **Ctrl**+ **\\** ,**T**鍵。
 
 ![工作清單視窗](../ide/media/vs2015_task_list.png)
 
-若要變更清單的排序順序，請選取任一資料行的標頭。 若要進一步精簡搜尋結果，請按 **Shift** 鍵並按一下第二個資料行標頭。 或者，在捷徑功能表上，選擇 [排序依據]  ，然後選擇一個標頭。 若要進一步精簡搜尋結果，請按 **Shift** 鍵並選擇第二個標題。
+若要變更清單的排序順序，請選取任一資料行的標頭。 若要進一步精簡搜尋結果，請按 **Shift** 鍵並按一下第二個資料行標頭。 或者，在捷徑功能表上，選擇 [排序依據]，然後選擇一個標頭。 若要進一步精簡搜尋結果，請按 **Shift** 鍵並選擇第二個標題。
 
-若要顯示或隱藏資料行，請在捷徑功能表上，選擇 [顯示資料行]  。 選取要顯示或隱藏的資料行。
+若要顯示或隱藏資料行，請在捷徑功能表上，選擇 [顯示資料行]。 選取要顯示或隱藏的資料行。
 
 若要變更資料行的順序，請將任一資料行標頭拖曳至您想要的位置。
 
@@ -50,7 +50,7 @@ ms.locfileid: "70154851"
 
 ## <a name="tokens-and-comments"></a>語彙基元和註解
 
-[工作清單]  中也會顯示程式碼中的註解，其前面會有註解標記和預先定義的語彙基元。 例如，下列 C# 註解有三個不同的部分：
+[工作清單] 中也會顯示程式碼中的註解，其前面會有註解標記和預先定義的語彙基元。 例如，下列 C# 註解有三個不同的部分：
 
 - 註解資料標記 (`//`)
 
@@ -65,7 +65,7 @@ ms.locfileid: "70154851"
 因為 `TODO` 是預先定義的語彙基元，所以此註解會顯示為清單中的 `TODO` 工作。
 
 > [!NOTE]
-> 只有 C/C++、C# 與 VB 語言才能使用預設語彙基元。 針對其他語言，請參閱＜自訂語彙基元＞  一節。
+> 只有 C/C++、C# 與 VB 語言才能使用預設語彙基元。 針對其他語言，請參閱＜自訂語彙基元＞一節。
 
 ### <a name="custom-tokens"></a>自訂權杖
 
@@ -81,34 +81,34 @@ ms.locfileid: "70154851"
 
    ![Visual Studio 工作清單](../ide/media/vs2015_task_list_options.png)
 
-3. 在 [名稱]  文字方塊中輸入您的權杖名稱，例如 **BUG**。
+3. 在 [名稱] 文字方塊中輸入您的權杖名稱，例如 **BUG**。
 
 4. 在 [ **優先權** ] 下拉式清單中，選擇新語彙基元的預設優先權。
 
-5. 選擇 [新增]  。
+5. 選擇 [新增]。
 
 > [!TIP]
-> 輸入名稱後，[新增]  按鈕即變成啟用狀態。 您必須在按一下 [新增]  之前輸入名稱。
+> 輸入名稱後，[新增] 按鈕即變成啟用狀態。 您必須在按一下 [新增] 之前輸入名稱。
 
 ### <a name="c-todo-comments"></a>C++ TODO 註解
 
-[工作清單]  中預設會顯示 C++ TODO 註解。
+[工作清單] 中預設會顯示 C++ TODO 註解。
 
-若要關閉 C++ TODO 命令，請在 [工具]  功能表上，選擇 [選項]   > [文字編輯器]   > [C/C++]   > [檢視]   > [列舉註解工作]  ，然後將值設定為 **false**。
+若要關閉 C++ TODO 命令，請在 [工具] 功能表上，選擇 [選項] > [文字編輯器] > [C/C++] > [檢視] > [列舉註解工作]，然後將值設定為 **false**。
 
 ## <a name="shortcuts"></a>快速鍵
 
-「捷徑」  是 [工作清單]  中會追蹤的程式碼中書籤。 它的圖示與一般書籤不同。 按兩下 [工作清單]  中的捷徑，即可移至程式碼中對應的位置。
+「捷徑」是 [工作清單] 中會追蹤的程式碼中書籤。 它的圖示與一般書籤不同。 按兩下 [工作清單] 中的捷徑，即可移至程式碼中對應的位置。
 
 ![Visual Studio 工作清單捷徑圖示](../ide/media/vs2015_task_list_bookmark.png)
 
 ### <a name="create-a-shortcut"></a>建立捷徑
 
-若要建立捷徑，請將指標插入要放置捷徑的程式碼中。 選擇 [編輯]   > [書籤]   > [新增工作清單捷徑]  ，或按 **Ctrl**+**K**、**Ctrl**+**H**。
+若要建立捷徑，請將指標插入要放置捷徑的程式碼中。 選擇 [編輯] > [書籤] > [新增工作清單捷徑]，或按 **Ctrl**+**K**、**Ctrl**+**H**。
 
-若要在程式碼中巡覽捷徑，請在清單中選擇捷徑，然後從捷徑功能表中選擇 [下一個工作]  或 [上一個工作]  。
+若要在程式碼中巡覽捷徑，請在清單中選擇捷徑，然後從捷徑功能表中選擇 [下一個工作] 或 [上一個工作] 。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [選項對話方塊、環境、工作清單](../ide/reference/task-list-environment-options-dialog-box.md)
 - [工作註解 (Visual Studio for Mac)](/visualstudio/mac/task-comments)

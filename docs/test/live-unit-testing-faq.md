@@ -4,16 +4,16 @@ ms.date: 10/03/2017
 ms.topic: conceptual
 helpviewer_keywords:
 - Live Unit Testing FAQ
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 545c8974e3d0dea196a6168db03586a37d15ed72
-ms.sourcegitcommit: 1a3c2ca995fd44fc72741b3a100c6e57f4f8702c
+ms.openlocfilehash: 8db8264268eb04edc3140d0e2a6ece5896692e38
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/11/2019
-ms.locfileid: "72262287"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653043"
 ---
 # <a name="live-unit-testing-frequently-asked-questions"></a>Live Unit Testing 常見問題集
 
@@ -29,17 +29,17 @@ Live Unit Testing 適用於下表所列的三種熱門單元測試架構。 其�
 |NUnit |NUnit3TestAdapter 版本 3.7.0 |NUnit 版本 3.5.0 |
 |MSTest |MSTest.TestAdapter 1.1.4-preview |MSTest.TestFramework 1.0.5-preview |
 
-如果您的舊版 MSTest 測試專案參考 `Microsoft.VisualStudio.QualityTools.UnitTestFramework`，而您不想要移至較新的 MSTest NuGet 套件，請升級至 Visual Studio 2019 或 Visual Studio 2017。
+如果您有參考 `Microsoft.VisualStudio.QualityTools.UnitTestFramework` 的舊版 MSTest 測試專案，而您不想要移至較新的 MSTest NuGet 套件，請升級至 Visual Studio 2019 或 Visual Studio 2017。
 
-在某些情況下，您可能需要明確地還原方案中的專案所參考的 NuGet 封裝，才能使 Live Unit Testing 運作。 您可以藉由執行解決方案的明確組建來還原套件（從頂層 Visual Studio 功能表中選取 [**組建**] [ > **重建方案**]），或以滑鼠右鍵按一下方案，然後選取 [**還原 NuGet 套件**]啟用生活中的單元測試之前。
+在某些情況下，您可能需要明確地還原方案中的專案所參考的 NuGet 封裝，才能使 Live Unit Testing 運作。 您可以藉由執行解決方案的明確組建來還原套件（從最上層 Visual Studio 功能表中選取 [**組建**]  >  [**重建方案**]），或以滑鼠右鍵按一下方案，然後選取 [**還原 NuGet 套件**]啟用生活中的單元測試之前。
 
 ## <a name="net-core-support"></a>.NET Core 支援
 
 **Live Unit Testing 是否可以與 .NET Core 搭配使用？**
 
-是的。 Live Unit Testing 可以與 .NET Core 和 .NET Framework 搭配使用。
+可以。 Live Unit Testing 可以與 .NET Core 和 .NET Framework 搭配使用。
 
-## <a name="configuration"></a>組態
+## <a name="configuration"></a>Configuration
 
 **當我開啟 Live Unit Testing 時，為什麼它不會運作？**
 
@@ -85,9 +85,9 @@ Live Unit Testing 適用於下表所列的三種熱門單元測試架構。 其�
 </Target>
 ```
 
-## <a name="error-messages-with-outputpath-or-outdir"></a>@No__t 0OutputPath > 或 @no__t 1OutDir > 的錯誤訊息
+## <a name="error-messages-with-outputpath-or-outdir"></a>@No__t_0OutputPath > 或 \<OutDir > 的錯誤訊息
 
-**為什麼我會在 Live Unit Testing 嘗試建置我的方案時，收到下列錯誤：「...似乎會無條件地設定 `<OutputPath>` 或 `<OutDir>`。Live Unit Testing 將不會從輸出組件執行測試」？**
+**當 Live Unit Testing 嘗試建立我的解決方案時，為什麼會收到下列錯誤：「.。。似乎會無條件地設定 `<OutputPath>` 或 `<OutDir>`。Live Unit Testing 不會從輸出元件執行測試」？**
 
 如果您解決方案的建置流程會無條件地覆寫 `<OutputPath>` 或 `<OutDir>`，使它非為 `<BaseOutputPath>` 的子目錄，即會發生此錯誤。 在這種情況下，Live Unit Testing 將無法運作，因為它也會覆寫這些值，以確保組建成品會卸除到 `<BaseOutputPath>` 下方的資料夾中。 如果您必須覆寫您想要在一般組建中卸除組建成品的位置，請根據 `<BaseOutputPath>` 有條件地覆寫 `<OutputPath>`。
 
@@ -118,7 +118,7 @@ Live Unit Testing 適用於下表所列的三種熱門單元測試架構。 其�
 
 ## <a name="build-artifact-location"></a>組建成品位置
 
-**我想要使 Live Unit Testing 組建的成品移到特定位置，而不是 *.vs* 資料夾下方的預設位置。如何變更該位置？**
+**我想要 Live Unit Testing 組建的成品移至特定位置，而不是*vs*資料夾底下的預設位置。我該如何改變？**
 
 將 `LiveUnitTesting_BuildRoot` 使用者層級環境變數設為您想要卸除 Live Unit Testing 組建成品的路徑。 
 
@@ -215,6 +215,6 @@ public class Class1
 
 - 建立名為 `VS_UTE_DIAGNOSTICS` 的使用者層級環境變數，並將它設為 1 (或任何值)，然後重新啟動 Visual Studio。 現在您應該會在 Visual Studio 的 [輸出 - 測試] 索引標籤中看見許多記錄。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [即時單元測試](live-unit-testing.md)

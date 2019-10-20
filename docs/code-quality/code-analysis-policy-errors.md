@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - policy errors, code analysis
 ms.assetid: d1f221cd-68c0-4277-9397-b76ad0dbae77
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 661f029b617c430f7205552080a94affc5bd543b
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: d3c1f6761c6cef968c965a7f0d766d3b7da6183e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72445884"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72622608"
 ---
 # <a name="code-analysis-policy-errors"></a>程式碼分析原則錯誤
 
@@ -45,13 +45,13 @@ ms.locfileid: "72445884"
 
 程式碼分析原則會要求所有簽入的檔案都必須在目前開啟的方案中。 當有開啟的方案時，就會引發此錯誤，但 [暫止簽入] 視圖中的某些檔案並不是目前開啟之方案的一部分。 若要更正此錯誤，請開啟包含要簽入之檔案的方案。
 
-**' @No__t-1 ' 的版本不正確。原則中指定的強式名稱是 ' {1} '。**
+**' @No__t_1 ' 的版本不正確。原則中指定的強式名稱是 ' {1} '。**
 
-此錯誤適用于 .NET 專案。 本機電腦上有程式碼分析原則所需的規則 .dll，但版本/公開金鑰不相符。 若要更正此錯誤，原則建立者必須在其電腦上更新*C:\Program Files\Microsoft Visual Studio 8 \ Team Tools\Static Analysis Tools\FxCop\Rules @ no__t-1*目錄中的 .dll。
+此錯誤適用于 .NET 專案。 本機電腦上有程式碼分析原則所需的規則 .dll，但版本/公開金鑰不相符。 若要更正此錯誤，原則建立者必須在其電腦上更新*C:\Program Files\Microsoft Visual Studio 8 \ Team Tools\Static Analysis Tools\FxCop\Rules \\* 目錄中的 .dll。
 
 **原則中指定的 ' {0} ' 元件不存在。**
 
-此錯誤適用于 .NET 專案。 程式碼分析原則所需的規則不會在用戶端電腦上安裝對應的 dll。 若要更正此錯誤，原則建立者必須在其電腦上更新*C:\Program Files\Microsoft Visual Studio 8 \ Team Tools\Static Analysis Tools\FxCop\Rules @ no__t-1*目錄中的 dll。
+此錯誤適用于 .NET 專案。 程式碼分析原則所需的規則不會在用戶端電腦上安裝對應的 dll。 若要更正此錯誤，原則建立者必須在其電腦上更新*C:\Program Files\Microsoft Visual Studio 8 \ Team Tools\Static Analysis Tools\FxCop\Rules \\* 目錄中的 dll。
 
 **專案 {0} 規則設定不符合程式碼分析原則。**
 
@@ -59,15 +59,15 @@ ms.locfileid: "72445884"
 
 **使用中設定時，未啟用程式碼分析。在簽入之前，切換到設定 {0} 和組建專案 {1}。**
 
-在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中，使用中的設定未啟用程式碼分析，但至少有一個程式碼分析已啟用。
+在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中，使用中的設定未啟用程式碼分析，但至少有一個已啟用的程式碼分析。
 
 **在簽入之前，您必須在專案 {0} 屬性和組建中啟用受控二進位檔的程式碼分析。**
 
-這個錯誤適用于 [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] .NET 應用程式。 原則需要執行 managed 程式碼分析，但不會在用戶端上的目前專案中啟用。
+此錯誤適用于 [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] .NET 應用程式。 原則需要執行 managed 程式碼分析，但不會在用戶端上的目前專案中啟用。
 
 **在簽入之前，您必須在專案 {0} 屬性和組建中啟用程式碼分析。**
 
-這個錯誤會套用至 @no__t 0 專案和 Web 專案。 原則需要執行 managed 程式碼分析，但不會在用戶端上的目前專案中啟用。
+這個錯誤適用于 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 專案和 Web 專案。 原則需要執行 managed 程式碼分析，但不會在用戶端上的目前專案中啟用。
 
 **在簽入之前，C++您必須在專案 {0} 屬性和組建中啟用 C/程式碼分析。**
 

@@ -4,17 +4,17 @@ titleSuffix: Blend for Visual Studio
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 3a1b6830-30c2-4a36-bd14-6961f5edf9cb
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c7dc340b25f5a900c9456f56587e39dede6e0ad2
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: e8245790cb1a5f5211828b2feaa2fd862c83bfe9
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72450728"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72666833"
 ---
 # <a name="keyboard-shortcuts-in-blend-for-visual-studio"></a>Blend for Visual Studio 中的鍵盤快速鍵
 

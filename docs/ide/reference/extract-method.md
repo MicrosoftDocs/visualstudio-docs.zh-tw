@@ -3,8 +3,8 @@ title: 擷取方法
 description: 選取程式碼並輸入 Ctrl+R、Ctrl+M，將程式碼片段轉換成它自己的方法。
 ms.date: 01/26/2018
 ms.topic: reference
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 f1_keywords:
 - vs.csharp.refactoring.extractmethod
@@ -13,12 +13,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: a764fd0d95696866e914ec76a560a49d641acb47
-ms.sourcegitcommit: 0f5f7955076238742f2071d286ad8e896f3a6cad
-ms.translationtype: HT
+ms.openlocfilehash: a1ec6ca273f873c82a1bb2c730a9288b5e2ae4ed
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "68483664"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72654387"
 ---
 # <a name="extract-a-method-refactoring"></a>擷取方法重構
 
@@ -30,7 +30,7 @@ ms.locfileid: "68483664"
 
 **功能：** 讓您將程式碼片段轉換成它自己的方法。
 
-**時機：** 您在某個必須從另一個方法呼叫之方法中有現有的程式碼片段。
+**時機：** 您在某個必須從另一個方法來呼叫的方法中有現有的程式碼片段。
 
 **原因：** 您可以複製/貼上該程式碼，但那樣會造成重複。 較好的解決方案是將該片段重構成它自己的且可由任何其他方法自由呼叫的方法。
 
@@ -50,16 +50,16 @@ ms.locfileid: "68483664"
 
    - **鍵盤**
       - 按 **CTRL+R**，再按 **CTRL+M**。 (請注意，根據您所選取的設定檔，鍵盤快速鍵可能會不同)。
-      - 在字行任何地方按 **Ctrl**+ **.** ， 以觸發 [快速動作與重構]  功能表，然後從 [預覽] 快顯視窗中選取 [擷取方法]  。
+      - 在字行任何地方按 **Ctrl**+ **.** ， 以觸發 [快速動作與重構] 功能表，然後從 [預覽] 快顯視窗中選取 [擷取方法]。
    - **滑鼠**
-      - 選取 [編輯] > [重構] > [擷取方法]  。
-      - 在程式碼上按一下滑鼠右鍵，然後選取 [重構] > [擷取] > [擷取方法]  。
-      - 在程式碼上按一下滑鼠右鍵，選取 [快速動作與重構]  功能表，然後從 [預覽] 快顯視窗中選取 [擷取方法]  。
+      - 選取 [編輯] > [重構] > [擷取方法]。
+      - 在程式碼上按一下滑鼠右鍵，然後選取 [重構] > [擷取] > [擷取方法]。
+      - 在程式碼上按一下滑鼠右鍵，選取 [快速動作與重構] 功能表，然後從 [預覽] 快顯視窗中選取 [擷取方法]。
 
    系統將會立即建立方法。 從這裡，您現在即可輸入新名稱來為方法重新命名。
 
    > [!TIP]
-   > 您也可以使用出現在 IDE 右上角 [重新命名]  方塊中的核取方塊，以更新註解和其他字串來使用這個新名稱，以及在儲存前先[預覽變更](../../ide/preview-changes.md)。
+   > 您也可以使用出現在 IDE 右上角 [重新命名] 方塊中的核取方塊，以更新註解和其他字串來使用這個新名稱，以及在儲存前先[預覽變更](../../ide/preview-changes.md)。
 
    - C#:
 
@@ -69,9 +69,9 @@ ms.locfileid: "68483664"
 
       ![重新命名方法 - Visual Basic](media/extractmethod-rename-vb.png)
 
-3. 當您對變更感到滿意時，請選擇 [套用]  按鈕或按 **ENTER**，便會認可變更。
+3. 當您對變更感到滿意時，請選擇 [套用] 按鈕或按 **ENTER**，便會認可變更。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [重構](../refactoring-in-visual-studio.md)
 - [預覽變更](../../ide/preview-changes.md)

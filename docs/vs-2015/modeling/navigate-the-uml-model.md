@@ -8,15 +8,15 @@ helpviewer_keywords:
 - UML API
 ms.assetid: 6d789b6d-2aa9-4ceb-92c4-84a300065a76
 caps.latest.revision: 20
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: c98aefb5e3dc0090338233ca5b05b4ebc6460719
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 7b90d8b532b004a7cbdaeed762300a0daf9ab45c
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68871781"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72668550"
 ---
 # <a name="navigate-the-uml-model"></a>巡覽 UML 模型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,15 +24,15 @@ ms.locfileid: "68871781"
 本主題說明 UML 模型的主要類型。
 
 ## <a name="the-model-elements-model-and-model-store"></a>模型項目、模型和模型存放區
- **VisualStudio**元件中定義的類型會對應到[Uml 規格 (版本 2.1.2)](http://www.omg.org/spec/UML/2.1.2/Superstructure/PDF/)中定義的類型。
+ **VisualStudio**元件中定義的類型會對應到[Uml 規格（版本2.1.2）](http://www.omg.org/spec/UML/2.1.2/Superstructure/PDF/)中定義的類型。
 
- 「UML 規格」中的類型會實現成 Visual Studio 中的介面。 字母 'I' 會附加至每個類型的名稱。 例如：[IElement](/previous-versions/dd516035(v=vs.140))、 [IClass](/previous-versions/dd523539%28v%3dvs.140%29)、 [IOperation](/previous-versions/dd481186(v=vs.140))。
+ 「UML 規格」中的類型會實現成 Visual Studio 中的介面。 字母 'I' 會附加至每個類型的名稱。 例如： [IElement](/previous-versions/dd516035(v=vs.140))、 [IClass](/previous-versions/dd523539%28v%3dvs.140%29)、 [IOperation](/previous-versions/dd481186(v=vs.140))。
 
  IElement 以外的所有類型都繼承一或多個超級類型的屬性。
 
-- 如需模型類型的摘要, 請參閱[UML 模型元素類型](../modeling/uml-model-element-types.md)。
+- 如需模型類型的摘要，請參閱[UML 模型元素類型](../modeling/uml-model-element-types.md)。
 
-- 如需 API 的完整詳細資料, 請參閱[UML 模型擴充性的 API 參考](../modeling/api-reference-for-uml-modeling-extensibility.md)。
+- 如需 API 的完整詳細資料，請參閱[UML 模型擴充性的 API 參考](../modeling/api-reference-for-uml-modeling-extensibility.md)。
 
 ### <a name="relationships"></a>關聯性
  「UML 規格」中所定義的屬性和關聯性會實作為 .NET 屬性。
@@ -45,20 +45,20 @@ ms.locfileid: "68871781"
 
  如果您從模型中刪除項目，則會自動刪除它參與的任何關聯性，並更新另一端的屬性。
 
- 如果「UML 規格」將多重性 0..1 指派給屬性，則值可能是 `null`。 最大值大於1的多重性表示 .NET 屬性具有下列類型:`IEnumerable<`*輸入*`>`。
+ 如果「UML 規格」將多重性 0..1 指派給屬性，則值可能是 `null`。 最大值大於1的多重性表示 .NET 屬性的類型為： `IEnumerable<`*類型*`>`。
 
- 如需有關如何遍歷關聯性的詳細資訊, 請參閱[使用 UML API 導覽關聯](../modeling/navigate-relationships-with-the-uml-api.md)性。
+ 如需有關如何遍歷關聯性的詳細資訊，請參閱[使用 UML API 導覽關聯](../modeling/navigate-relationships-with-the-uml-api.md)性。
 
 ### <a name="the-ownership-tree"></a>擁有權樹狀結構
  模型包含[IElement](/previous-versions/dd516035(v=vs.140))物件的樹狀結構。 每個項目都具有 `OwnedElements` 和 `Owner` 屬性。
 
- 在大部分情況下，其他具有更特定名稱的屬性也會參考 `Owner` 和 `OwnedElements` 屬性的目標。 例如，UML 類別會擁有每個 UML 作業。 因此, [IOperation](/previous-versions/dd481186(v=vs.140))有一個名為[IOperation](/previous-versions/dd473473%28v%3dvs.140%29)的屬性, 以及每個[IOperation](/previous-versions/dd481186(v=vs.140))物件`Class == Owner`中的。
+ 在大部分情況下，其他具有更特定名稱的屬性也會參考 `Owner` 和 `OwnedElements` 屬性的目標。 例如，UML 類別會擁有每個 UML 作業。 因此， [IOperation](/previous-versions/dd481186(v=vs.140))有一個名為[IOperation](/previous-versions/dd473473%28v%3dvs.140%29)的屬性，以及每個[IOperation](/previous-versions/dd481186(v=vs.140))物件中的 `Class == Owner`。
 
- 樹狀結構的最上層元素 (沒有擁有者) 是`AuxiliaryConstructs.IModel`。 IModel 包含在`IModelStore`中, 其為[IModelStore。](/previous-versions/ee789368(v=vs.140))
+ 樹狀結構的最上層元素（沒有擁有者）是 `AuxiliaryConstructs.IModel`。 IModel 包含在 `IModelStore` 中，其中是[IModelStore。](/previous-versions/ee789368(v=vs.140))
 
- 每個模型項目都會建立具有一個 Owner。 如需詳細資訊, 請參閱[在 UML 模型中建立專案和關聯](../modeling/create-elements-and-relationships-in-uml-models.md)性。
+ 每個模型項目都會建立具有一個 Owner。 如需詳細資訊，請參閱[在 UML 模型中建立專案和關聯](../modeling/create-elements-and-relationships-in-uml-models.md)性。
 
- ![類別圖表：模型、圖表、圖形和元素](../modeling/media/uml-mm1.png)
+ ![類別圖表：模型、圖表、圖案和項目](../modeling/media/uml-mm1.png)
 
 ## <a name="shapes-and-diagrams"></a>圖案和圖表
  UML 模型中的項目可以顯示在圖表上。 不同類型的圖表可以顯示不同的 IElement 子類型。
@@ -67,7 +67,7 @@ ms.locfileid: "68871781"
 
  圖形是在樹狀結構中進行組織。 樹狀結構的邊緣是透過 ParentShape 和 ChildShapes 屬性來表示。 圖表是唯一沒有父項的圖形。 圖表介面上的圖形是由較小的部分所組成。 例如，類別圖形具有屬性和作業的區間。
 
- 如需圖形的詳細資訊, 請參閱[在圖表上顯示 UML 模型](../modeling/display-a-uml-model-on-diagrams.md)。
+ 如需圖形的詳細資訊，請參閱[在圖表上顯示 UML 模型](../modeling/display-a-uml-model-on-diagrams.md)。
 
 ## <a name="access-to-the-model-in-extensions"></a>擴充功能中模型的存取權
  在定義為 MEF 元件的 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 擴充功能中，您可以宣告從執行擴充功能的內容中匯入資訊的屬性。
@@ -122,13 +122,13 @@ foreach (IShape<IInterface> in
 ## <a name="accessing-another-model-or-diagrams"></a>存取另一個模型或圖表
  您可以：
 
-- 使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 模型匯流排，來建立不同模型中項目之間的連結。 如需詳細資訊, 請參閱[整合 UML 模型與其他模型和工具](../modeling/integrate-uml-models-with-other-models-and-tools.md)。
+- 使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 模型匯流排，來建立不同模型中項目之間的連結。 如需詳細資訊，請參閱[整合 UML 模型與其他模型和工具](../modeling/integrate-uml-models-with-other-models-and-tools.md)。
 
-- 以唯讀模式載入模型專案和圖表，而不讓它顯示在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 使用者介面中。 如需詳細資訊, 請參閱[在程式碼中讀取 UML 模型](../modeling/read-a-uml-model-in-program-code.md)。
+- 以唯讀模式載入模型專案和圖表，而不讓它顯示在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 使用者介面中。 如需詳細資訊，請參閱[在程式碼中讀取 UML 模型](../modeling/read-a-uml-model-in-program-code.md)。
 
-- 在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中開啟模型專案和其圖表，然後存取內容。 如需詳細資訊, 請參閱[使用 VISUAL STUDIO API 來開啟 UML 模型](../modeling/open-a-uml-model-by-using-the-visual-studio-api.md)。
+- 在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中開啟模型專案和其圖表，然後存取內容。 如需詳細資訊，請參閱[使用 VISUAL STUDIO API 來開啟 UML 模型](../modeling/open-a-uml-model-by-using-the-visual-studio-api.md)。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [擴充 UML 模型和圖表](../modeling/extend-uml-models-and-diagrams.md)
 - [使用 UML API 進行程式設計](../modeling/programming-with-the-uml-api.md)
