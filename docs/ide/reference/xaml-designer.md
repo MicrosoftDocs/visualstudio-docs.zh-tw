@@ -5,17 +5,17 @@ ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.XAMLDesigner
 - VS.ToolsOptionsPages.XAML_Designer.General
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 4e2f38d4b5e8dd674dcc762219051c820b426a6c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 6a08358e8e82abf00a133edab876dc45626bf500
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62788963"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72621900"
 ---
 # <a name="xaml-designer-options-page"></a>XAML 設計工具選項頁面
 
@@ -106,7 +106,7 @@ ms.locfileid: "62788963"
 |**呈現效果**|指定使用 Blend 在 XAML 設計工具中編輯 XAML 檔案時，是否呈現效果。|
 |**縮放臨界值**|指定當選取 [呈現效果] 核取方塊時，效果呈現所使用的縮放百分比。 如果放大超過此設定，效果將不再呈現於 XAML 設計工具中。|
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [WPF 中的 XAML](/dotnet/framework/wpf/advanced/xaml-in-wpf)
 - [逐步解說：我的第一個 WPF 傳統型應用程式](/dotnet/framework/wpf/getting-started/walkthrough-my-first-wpf-desktop-application)
