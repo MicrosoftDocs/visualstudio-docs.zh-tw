@@ -14,15 +14,15 @@ helpviewer_keywords:
 - Prerequisites dialog box
 ms.assetid: 53ac863c-77a0-409b-91e5-7a4bd8b8474e
 caps.latest.revision: 79
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 672c0ea4a4ec3c2d396da7b232ca085181d90b25
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 367af4965c1e5a744a7ba6c801d74bc194a70ebb
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68869860"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72662175"
 ---
 # <a name="prerequisites-dialog-box"></a>必要條件對話方塊
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "68869860"
 
 ## <a name="uielement-list"></a>UIElement 清單
 
-|元素|說明|
+|項目|說明|
 |-------------|-----------------|
 |**建立安裝程式以安裝必要條件元件**|將必要條件元件包含在應用程式的安裝程式 (Setup.exe) 中，才能在安裝應用程式之前，依照相依性的順序進行安裝。 根據預設，這個選項是選取的。 如果沒有選取這個選項，則不會建立 Setup.exe。|
 |**選擇要安裝的必要條件**|指定是否要安裝元件，例如 [!INCLUDE[dnprdnshort](../../includes/dnprdnshort-md.md)]、Crystal Reports 等。<br /><br /> 例如，選取 [SQL Server 2005 Express Edition SP2]  旁的核取方塊，即指定安裝程式確認這個元件是否已安裝在目標電腦上，如果尚未安裝就會進行安裝。<br /><br /> 如需各個必要條件套件的詳細資訊，請參閱本主題稍後的「必要條件資訊」表格。|
@@ -45,14 +45,14 @@ ms.locfileid: "68869860"
 ## <a name="prerequisites-information"></a>必要條件資訊
  [必要條件]  對話方塊中顯示的必要條件元件，可能和以下所列的不同。 第一次開啟該對話方塊時，會自動設定**必要條件對話方塊**中所列的必要條件套件。 如果您接著變更專案的目標架構，您就必須手動選取必要條件以符合新的目標架構。
 
-|元素|說明|
+|項目|說明|
 |-------------|-----------------|
 |**.NET Framework 3.5 SP1**|這個套件會安裝下列項目：<br /><br /> -   .NET Framework 2.0、3.0 和 3.5 版。<br />-   支援 32 位元 (x86) 及 64 位元 (x64) 作業系統上的所有 .NET Framework 版本。<br />-   隨著這個套件一併安裝之每個 .NET Framework 版本的語言套件。<br />-   .NET Framework 2.0 及 3.0 的 Service Pack。<br /><br /> .NET Framework 3.0 隨附於 Windows Vista，.NET Framework 3.5 則隨附於 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]。 所有針對 32 位元作業系統編譯，而且目標架構設定為 [.NET Framework 3.5]  的 Visual Basic 和 Visual C# 專案，以及針對 64 位元作業系統編譯的 Visual Basic 和 Visual C# 專案，都需要 .NET Framework 3.5 (不支援 IA64)。請注意，根據預設，Visual Basic 和 Visual C# 專案是針對任何 CPU 架構編譯。 如需詳細資訊，請參閱 [Visual Studio 多目標概觀](../../ide/visual-studio-multi-targeting-overview.md)、[轉散發 .NET Framework](https://msdn.microsoft.com/a18d0456-fd89-493e-97f4-756505bfe287) 和 [64 位元應用程式的部署必要條件](../../deployment/deploying-prerequisites-for-64-bit-applications.md)。<br /><br /> 這個項目預設為選取。|
 |**.NET Framework 3.5 SP1 Client Profile**|.NET Framework Client Profile 是完整 .NET Framework 3.5 SP1 的子集，以用戶端應用程式為目標。 它提供了 Windows Presentation Foundation (WPF)、Windows Forms、Windows Communication Foundation (WCF) 以及 ClickOnce 功能的精簡子集。 這樣可以快速部署以 .NET Framework Client Profile 為目標的 WPF、Windows Form、WCF 及主控台應用程式。 如需詳細資訊，請參閱 [.NET Framework Client Profile](https://msdn.microsoft.com/library/f0219919-1f02-4588-8704-327a62fd91f1)。|
 |**Microsoft .NET Framework 4 (x86 和 x64)**|這個套件會在 x86 和 x64 平台安裝 .NET Framework 4。<br /><br /> 如需詳細資訊，請參閱 [Visual Studio 多目標概觀](../../ide/visual-studio-multi-targeting-overview.md)、[轉散發 .NET Framework](https://msdn.microsoft.com/a18d0456-fd89-493e-97f4-756505bfe287) 和 [64 位元應用程式的部署必要條件](../../deployment/deploying-prerequisites-for-64-bit-applications.md)。<br /><br /> 這個項目預設為選取。|
 |**Microsoft .NET Framework 4 Client Profile (x86 和 x64)**|.NET Framework 4 Client Profile 是完整 .NET Framework 4 的子集，以用戶端應用程式為目標。 它提供了 Windows Presentation Foundation (WPF)、Windows Forms、Windows Communication Foundation (WCF) 以及 ClickOnce 功能的精簡子集。 這樣可以快速部署以 .NET Framework 4 Client Profile 為目標的 WPF、Windows Form 及主控台應用程式。 如需詳細資訊，請參閱 [.NET Framework Client Profile](https://msdn.microsoft.com/library/f0219919-1f02-4588-8704-327a62fd91f1)。|
 |**Microsoft Office 2007 主要 Interop 組件**|這個套件會安裝 2007 Microsoft Office 產品的主要 Interop 組件。 主要 Interop 組件可讓 Managed 程式碼與 Microsoft Office 應用程式的 COM 物件模型互動。 如需詳細資訊，請參閱 [Office 主要 Interop 組件](https://msdn.microsoft.com/library/aa29d12c-185f-4558-a7cd-3d85f924203d)。|
-|**Microsoft Visual Basic PowerPacks 10.0 版**|Power Pack 是可協助您開發 Visual Basic 應用程式的增益集 (Add-In)、控制項、元件及工具。 此版本包含[PrintForm](/previous-versions/bb882742(v=vs.140))元件, 可讓您列印 Windows Form 的內容, 以及印表機相容性程式庫, 讓 Visual Basic 6.0 印表機程式碼以未修改的形式執行。|
+|**Microsoft Visual Basic PowerPacks 10.0 版**|Power Pack 是可協助您開發 Visual Basic 應用程式的增益集 (Add-In)、控制項、元件及工具。 此版本包含[PrintForm](/previous-versions/bb882742(v=vs.140))元件，可讓您列印 Windows Form 的內容，以及印表機相容性程式庫，讓 Visual Basic 6.0 印表機程式碼以未修改的形式執行。|
 |**Microsoft Visual F# Runtime for .NET 2.0**|這個套件會安裝 x86 和 x64 作業系統適用的 Visual F# 執行階段程式庫，此程式庫可支援函式程式設計，以及傳統物件導向程式設計與命令式 (程序式) 的程式設計。 如果應用程式或其元件是以 Visual F# 和 .NET Framework 2.0、.NET Framework 3.0 或 .NET Framework 3.5 撰寫的，必須先安裝這個套件。<br /><br /> 如需詳細資訊，請參閱 [F# 語言參考](https://msdn.microsoft.com/library/16b706f8-b5f2-4ff7-b2c1-64df33cd6adf)。|
 |**Microsoft Visual F# Runtime for .NET 4.0**|這個套件會安裝 x86 和 x64 作業系統適用的 Visual F# 執行階段程式庫，此程式庫可支援函式程式設計，以及傳統物件導向程式設計與命令式 (程序式) 的程式設計。 如果應用程式或其元件是以 Visual F# 和 .NET Framework 4 撰寫的，必須安裝這個套件。<br /><br /> 如需詳細資訊，請參閱 [F# 語言參考](https://msdn.microsoft.com/library/16b706f8-b5f2-4ff7-b2c1-64df33cd6adf)。|
 |**Microsoft Visual Studio 2010 Report Viewer**|本套件會安裝報表檢視器控制項，可以將大量的資料報表加入至 Windows Form 和 ASP.NET 應用程式。|
@@ -66,4 +66,4 @@ ms.locfileid: "68869860"
 |**Windows Installer 4.5**|這個套件會安裝 Microsoft Windows Installer 可轉散發套件 4.5 版，以允許安裝 Windows Installer 安裝專案。|
 
 ## <a name="see-also"></a>另請參閱
- [專案設計工具、發行頁](../../ide/reference/publish-page-project-designer.md)[應用程式部署必要條件](../../deployment/application-deployment-prerequisites.md)轉散發[.NET Framework](https://msdn.microsoft.com/a18d0456-fd89-493e-97f4-756505bfe287)[部署64位應用程式的必要條件](../../deployment/deploying-prerequisites-for-64-bit-applications.md)[Visual Studio 多目標總覽](../../ide/visual-studio-multi-targeting-overview.md)
+ [發行頁面、專案設計](../../ide/reference/publish-page-project-designer.md)工具[應用程式部署必要條件](../../deployment/application-deployment-prerequisites.md)轉散發 .NET Framework[部署64位應用程式的必要條件](../../deployment/deploying-prerequisites-for-64-bit-applications.md) [Visual Studio 多目標總覽](../../ide/visual-studio-multi-targeting-overview.md) [](https://msdn.microsoft.com/a18d0456-fd89-493e-97f4-756505bfe287)
