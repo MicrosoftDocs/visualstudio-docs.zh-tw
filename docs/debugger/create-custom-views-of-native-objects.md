@@ -1,6 +1,6 @@
 ---
 title: 建立 C++ 物件的自訂檢視
-description: 自訂 Visual Studio 偵錯工具顯示原生類型的方式使用 Natvis 架構
+description: 使用 Natvis 架構來自訂 Visual Studio 在偵錯工具中顯示原生類型的方式
 ms.date: 10/31/2018
 ms.topic: conceptual
 f1_keywords:
@@ -13,38 +13,38 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f8ef28b453ba6c754c337c5d42581bd658be5f04
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: cb2f9d9319a943182c8256256ca6ea7334c532d1
+ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62564350"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72349490"
 ---
-# <a name="create-custom-views-of-c-objects-in-the-debugger"></a>建立自訂檢視的C++偵錯工具中的物件
+# <a name="create-custom-views-of-c-objects-in-the-debugger-using-the-natvis-framework"></a>使用 Natvis 架構， C++在偵錯工具中建立物件的自訂視圖
 
-Visual Studio *Natvis* framework 自訂原生類型的顯示的方式偵錯工具變數視窗中，例如**區域變數**並**監看式**windows 中，在**DataTips**。 Natvis 視覺化可以協助讓您建立偵錯期間更明顯可見的類型。
+Visual Studio *Natvis*架構會自訂原生類型在偵錯工具變數視窗中的顯示方式，例如 [**區域變數** **] 和 [監看式]** 視窗和 [**資料提示**]。 Natvis 視覺效果可協助您建立更容易在調試過程中看到的類型。
 
-Natvis 會取代*autoexp.dat* XML 語法、 更佳診斷、 版本控制，與舊版的 Visual Studio 中的檔案和支援的多個檔案。
+Natvis 會以 XML 語法、更佳的診斷、版本控制和多個檔案支援取代舊版 Visual Studio 中的*autoexp.dat。*
 
-## <a name="BKMK_Why_create_visualizations_"></a>Natvis 視覺化
+## <a name="BKMK_Why_create_visualizations_"></a>Natvis 視覺效果
 
-您可以使用 Natvis 架構來建立您所建立之類型的視覺效果規則，以便開發人員可以更容易看清楚偵錯期間。
+您可以使用 Natvis 架構來建立所建立類型的視覺效果規則，讓開發人員可以更輕鬆地在進行偵錯工具時看到它們。
 
-例如下, 圖顯示類型的變數[textbox](http://go.microsoft.com/fwlink/?LinkId=258422)在偵錯工具視窗中未套用任何自訂視覺化。
+例如，下圖顯示偵錯工具視窗中類型為[Windows：： UI：： Xaml：： Controls：： TextBox](http://go.microsoft.com/fwlink/?LinkId=258422)的變數，但未套用任何自訂視覺效果。
 
-![TextBox 的預設視覺化](../debugger/media/dbg_natvis_textbox_default.png "TextBox 的預設視覺化")
+![Textbox 預設視覺效果](../debugger/media/dbg_natvis_textbox_default.png "textbox 預設視覺效果")
 
-反白顯示的資料列會顯示 `Text` 類別的 `TextBox` 屬性。 複雜類別階層架構可讓您更容易找到這個屬性。 偵錯工具並不知道如何解譯的自訂字串類型，因此看不到保留在文字方塊的字串。
+反白顯示的資料列會顯示 `Text` 類別的 `TextBox` 屬性。 複雜類別階層會讓您難以找到這個屬性。 偵錯工具不知道如何解讀自訂字串類型，因此您看不到保留在文字方塊內的字串。
 
-相同`TextBox`看起來更簡單變數視窗中套用 Natvis 自訂視覺化檢視規則時。 類別的重要成員一起出現，並偵錯工具顯示的自訂字串類型的基礎字串值。
+當套用 Natvis 自訂視覺化檢視規則時，相同的 `TextBox` 在 [變數] 視窗中看起來很簡單。 類別的重要成員會一起出現，而偵錯工具會顯示自訂字串類型的基礎字串值。
 
-![使用視覺化檢視的 TextBox 資料](../debugger/media/dbg_natvis_textbox_visualizer.png "使用視覺化檢視的 TextBox 資料")
+使用視覺化視覺化檢視(../debugger/media/dbg_natvis_textbox_visualizer.png "textbox")資料的![textbox 資料]
 
-## <a name="BKMK_Using_Natvis_files"></a>使用中的.natvis 檔案C++專案
+## <a name="BKMK_Using_Natvis_files"></a>在專案中C++使用 natvis 檔案
 
-使用 Natvis *.natvis*檔案來指定視覺效果的規則。 A *.natvis*檔案是 XML 檔案 *.natvis*延伸模組。 Natvis 結構描述定義於 *%VSINSTALLDIR%\Xml\Schemas\natvis.xsd*。
+Natvis 會使用*Natvis*檔案來指定視覺效果規則。 *Natvis*檔案是副檔名為*natvis*的 XML 檔案。 Natvis 架構定義于 *%VSINSTALLDIR%\Xml\Schemas\natvis.xsd*中。
 
-基本結構 *.natvis*是一或多個`Type`元素代表視覺化項目。 每個完整的名稱`Type`項目中指定其`Name`屬性。
+*Natvis*檔案的基本結構是一或多個代表視覺效果專案的 `Type` 元素。 每個 `Type` 元素的完整名稱會在其 `Name` 屬性中指定。
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -61,84 +61,84 @@ Natvis 會取代*autoexp.dat* XML 語法、 更佳診斷、 版本控制，與�
 </AutoVisualizer>
 ```
 
-Visual Studio 提供了一些 *.natvis*中的檔案 *%VSINSTALLDIR%\Common7\Packages\Debugger\Visualizers*資料夾。 這些檔案會有許多的常見類型的視覺化規則，並可做為撰寫新類型的視覺效果的範例。
+Visual Studio 在 *%VSINSTALLDIR%\Common7\Packages\Debugger\Visualizers*資料夾中提供一些*natvis*檔案。 這些檔案具有許多常見類型的視覺化規則，可做為撰寫新類型視覺效果的範例。
 
-### <a name="add-a-natvis-file-to-a-c-project"></a>加入至的.natvis 檔案C++專案
+### <a name="add-a-natvis-file-to-a-c-project"></a>將 natvis 檔案新增至C++專案
 
-您可以加入 *.natvis*檔案，以任何C++專案。
+您可以將*natvis*檔案新增至任何C++專案。
 
-**若要加入新 *.natvis*檔案：**
+**若要加入新的*natvis*檔案：**
 
-1. 選取C++中的專案節點**方案總管**，然後選取**專案** > **加入新項目**，或以滑鼠右鍵按一下專案，然後選取  **新增** > **新項目**。
+1. 在方案總管C++中選取專案節點，**然後選取 [** **專案**]  >  [**加入新專案**]，或以滑鼠右鍵按一下專案，然後選取 [新增  > **新專案**]。
 
-1. 在 **加入新項目**對話方塊中，選取**視覺化C++**   > **公用程式** > **偵錯工具視覺化檔案 (.natvis)**.
+1. 在 [**加入新專案**] 對話方塊中，選取 [  **C++ Visual**  > **公用程式** > **偵錯工具視覺效果檔案（. natvis）** ]。
 
-1. 命名檔案，然後選取**新增**。
+1. 將檔案命名為，然後選取 [**新增**]。
 
-   新檔案新增至**方案總管 中**，並在 Visual Studio 的 文件 窗格中開啟。
+   新的檔案會新增至**方案總管**，並在 [Visual Studio 檔] 窗格中開啟。
 
-Visual Studio 偵錯工具載入 *.natvis*中的檔案C++專案自動執行，並根據預設，也包含在 *.pdb*時在組建專案檔案。 如果您偵錯建置的應用程式，偵錯工具會載入 *.natvis*檔案 *.pdb*檔案，即使您沒有開啟的專案。 如果您不想 *.natvis*檔案中包含 *.pdb*，您可以從內建中排除它 *.pdb*檔案。
+Visual Studio 偵錯工具會自動載入專案中C++的 natvis 檔案，而且根據預設，在專案建立時，也會將這些檔案包含在 *.pdb*檔案中。 如果您在建立應用程式時，偵錯工具會從 *.pdb*檔案載入*natvis*檔案，即使您沒有開啟專案也一樣。 如果您不想要將*natvis*檔案包含在 *.pdb*中，可以將它從建立的 *.pdb*檔案中排除。
 
-**若要排除 *.natvis*檔案 *.pdb*:**
+**若要從 *.pdb*中排除*natvis*檔案：**
 
-1. 選取 *.natvis*中的檔案**方案總管**，然後選取**屬性**圖示，或以滑鼠右鍵按一下檔案，並選取**屬性**.
+1. 在**方案總管**中選取*natvis*檔案，並選取 [**屬性**] 圖示，或以滑鼠右鍵按一下檔案，然後選取 [**屬性**]。
 
-1. 向下箭號旁卸除**從組建排除**，然後選取**是**，然後選取**確定**。
-
->[!NOTE]
->進行偵錯可執行檔專案，請使用方案項目加入任何 *.natvis*檔案，不是處於 *.pdb*，因為沒有任何C++可用的專案。
+1. 下拉 [**從組建排除**] 旁的箭號，然後選取 **[是**]，再選取 **[確定]** 。
 
 >[!NOTE]
->從載入的 Natvis 規則 *.pdb*僅適用於在模組中類型的 *.pdb*參考。 例如，如果*Module1.pdb*具有名為類型的 Natvis 項目`Test`，它只適用於`Test`類別*Module1.dll*。 如果另一個模組也會定義名為類別`Test`，則*Module1.pdb* Natvis 項目不會加以套用。
+>針對可執行檔專案，請使用方案專案來加入不在 *.pdb*中的任何C++ *natvis*檔案，因為沒有可用的專案。
 
-### <a name="BKMK_natvis_location"></a> Natvis 檔案位置
+>[!NOTE]
+>從 *.pdb*載入的 Natvis 規則僅適用于 *.pdb*所參考模組中的類型。 例如，如果*module1*具有名為 `Test` 之類型的 Natvis 專案，它只會套用至*Module1*中的 `Test` 類別。 如果另一個模組也定義了名為 *`Test` 的類別，則 Natvis 專案*不適用。
 
-您可以加入 *.natvis*加入使用者目錄或檔案系統目錄中，如果您想要套用至多個專案。
+### <a name="BKMK_natvis_location"></a>Natvis 檔案位置
 
-*.Natvis*檔案會依下列順序進行評估：
+如果您想要將*natvis*檔案套用至多個專案，您可以將檔案新增至使用者目錄或系統目錄。
 
-1. 任何 *.natvis*檔案中內嵌 *.pdb*您偵錯時，除非已載入的專案中的相同名稱的檔案存在。
+*Natvis*檔案會依照下列順序進行評估：
 
-2. 任何 *.natvis*檔案中載入C++專案或最上層方案。 此群組包含所有已載入C++專案，包括類別庫，但未以其他語言專案。
+1. 除非已載入的專案中有相同名稱的檔案，否則，內嵌于您要進行偵錯工具之 *.pdb*中的任何*natvis*檔案。
+
+2. 載入 C++的專案或最上層方案中的任何 natvis 檔案。 這個群組包括所有已C++載入的專案，包括類別庫，但不包含其他語言的專案。
 
 ::: moniker range="vs-2017"
 
-3. 使用者專屬的 Natvis 目錄 (例如 *%USERPROFILE%\Documents\Visual Studio 2017\Visualizers*)。
+3. 使用者特定的 Natvis 目錄（例如， *%USERPROFILE%\Documents\Visual Studio 2017 \ 視覺化檢視*）。
 
 ::: moniker-end
 
 ::: moniker range=">= vs-2019"
 
-3. 使用者專屬的 Natvis 目錄 (例如 *%USERPROFILE%\Documents\Visual Studio 2019\Visualizers*)。
+3. 使用者特定的 Natvis 目錄（例如， *%USERPROFILE%\Documents\Visual Studio 2019 \ 視覺化檢視*）。
 
 ::: moniker-end
 
-4. 全系統 Natvis 目錄 (*%VSINSTALLDIR%\Common7\Packages\Debugger\Visualizers*)。 此目錄已 *.natvis*與 Visual Studio 一起安裝的檔案。 如果您有系統管理員權限，您可以將檔案新增到這個目錄。
+4. 全系統 Natvis 目錄 ( *%VSINSTALLDIR%\Common7\Packages\Debugger\Visualizers*)。 此目錄包含隨 Visual Studio 安裝的*natvis*檔案。 如果您有系統管理員許可權，您可以將檔案新增至此目錄。
 
-## <a name="modify-natvis-files-while-debugging"></a>偵錯時修改.natvis 檔案
+## <a name="modify-natvis-files-while-debugging"></a>在進行調試時修改 natvis 檔
 
-您可以修改 *.natvis*其專案進行偵錯時 IDE 中的檔案。 在相同的執行個體，您要使用偵錯的 Visual studio 中開啟檔案，修改它，然後儲存起來。 已儲存的檔案，如**監看式**並**區域變數**windows 更新以反映變更。
+您可以修改 IDE 中的*natvis*檔案，同時對其專案進行調試。 在您要進行調試的相同 Visual Studio 實例中開啟檔案，加以修改並加以儲存。 儲存檔案之後，[**監看式] 和 [** **區域變數**] 視窗更新會反映變更。
 
-您也可以新增或刪除 *.natvis*的解決方案，您要偵錯，Visual Studio 中加入或移除相關的視覺效果中的檔案。
+您也可以在要進行偵錯工具的方案中新增或刪除*natvis*檔案，Visual Studio 新增或移除相關的視覺效果。
 
-您不能更新 *.natvis*檔案中內嵌 *.pdb*偵錯時的檔案。
+當您在進行偵錯工具時，無法更新內嵌于 *.pdb*檔案中的*natvis*檔案。
 
-如果您修改 *.natvis*檔案在 Visual Studio 中，外部所做的變更不會自動生效。 若要更新偵錯工具視窗，您可以重新評估 **.natvisreload**命令**監看式**視窗。 然後變更才會生效，不需要重新啟動偵錯工作階段。
+如果您修改 Visual Studio 外部的*natvis*檔案，變更不會自動生效。 若要更新偵錯工具視窗，您可以重新評估 [**監看**式] 視窗中的 **.natvisreload**命令。 然後，變更就會生效，而不需要重新開機調試進程。
 
-也使用 **.natvisreload**命令來升級 *.natvis*為較新版本的檔案。 例如， *.natvis*檔案可能簽入原始檔控制，而且您想要挑選最新變更人別人建立。
+也請使用 **.natvisreload**命令，將*natvis*檔案升級至較新的版本。 例如， *natvis*檔案可能會簽入原始檔控制，而您想要挑選其他人所做的最近變更。
 
 ## <a name="BKMK_Expressions_and_formatting"></a> 運算式和格式化
-Natvis 視覺化使用 C++ 運算式來指定要顯示的資料項目。 除了增強功能和限制C++中偵錯工具，所述的運算式[內容運算子 (C++)](../debugger/context-operator-cpp.md)，要注意下列事項：
+Natvis 視覺化使用 C++ 運算式來指定要顯示的資料項目。 除了在偵錯工具中的C++運算式增強功能和限制（如[內容運算子（C++）](../debugger/context-operator-cpp.md)中所述），請注意下列事項：
 
-- Natvis 運算式是在正在視覺化之物件的內容 (而非目前的堆疊框架) 中進行評估。 例如，`x`在 Natvis 運算式會參考名為欄位**x**中，不會以名為區域變數正在視覺化的物件**x**中目前的函式。 您無法存取 Natvis 運算式中的本機變數，但您可存取全域變數。
+- Natvis 運算式是在正在視覺化之物件的內容 (而非目前的堆疊框架) 中進行評估。 例如，Natvis 運算式中的 `x` 指的是正在視覺化的物件中名為**x**的欄位，而不是目前函式中名為**x**的本機變數。 您無法存取 Natvis 運算式中的區域變數，雖然您可以存取全域變數。
 
-- Natvis 運算式不允許函式評估或副作用。 會忽略函式呼叫和指派運算子。 由於 [偵錯工具內建函式](../debugger/expressions-in-the-debugger.md#BKMK_Using_debugger_intrinisic_functions_to_maintain_state) 沒有副作用，因此可自由地從任何 Natvis 運算式加以呼叫，即使不允許其他函式呼叫亦然。
+- Natvis 運算式不允許函數評估或副作用。 系統會忽略函式呼叫和指派運算子。 由於 [偵錯工具內建函式](../debugger/expressions-in-the-debugger.md#BKMK_Using_debugger_intrinisic_functions_to_maintain_state) 沒有副作用，因此可自由地從任何 Natvis 運算式加以呼叫，即使不允許其他函式呼叫亦然。
 
-- 若要控制運算式的顯示方式，您可以使用任何所述的格式規範[格式規範，在C++ ](format-specifiers-in-cpp.md#BKMK_Visual_Studio_2012_format_specifiers)。 當項目 Natvis 在內部使用，例如，系統會忽略格式規範`Size`中的運算式[ArrayItems 展開](../debugger/create-custom-views-of-native-objects.md#BKMK_ArrayItems_expansion)。
+- 若要控制運算式的顯示方式，您可以使用[中C++的格式](format-specifiers-in-cpp.md#BKMK_Visual_Studio_2012_format_specifiers)規範中所述的任何格式規範。 Natvis 內部使用專案時，會忽略格式規範，例如[ArrayItems 擴充](../debugger/create-custom-views-of-native-objects.md#BKMK_ArrayItems_expansion)中的 `Size` 運算式。
 
 ## <a name="natvis-views"></a>Natvis 檢視
 
-您可以定義不同的 Natvis 檢視，以不同的方式顯示類型。 例如，以下是視覺效果`std::vector`，定義名為的簡化的檢視`simple`。 `DisplayString`和`ArrayItems`的預設檢視中顯示的項目和`simple`檢視中，而`[size]`並`[capacity]`項目不會顯示在`simple`檢視。
+您可以定義不同的 Natvis 視圖，以不同的方式來顯示類型。 例如，以下是定義名為 `simple` 之簡化視圖的 `std::vector` 視覺效果。 @No__t_0 和 `ArrayItems` 元素會顯示在預設的視圖和 [`simple`] 視圖中，而 [`[size]`] 和 [`[capacity]`] 專案則不會顯示在 [`simple`] 視圖中。
 
 ```xml
 <Type Name="std::vector&lt;*&gt;">
@@ -154,19 +154,19 @@ Natvis 視覺化使用 C++ 運算式來指定要顯示的資料項目。 除了�
 </Type>
 ```
 
-在 **監看式**視窗中，使用 **，檢視**格式規範來指定替代的檢視。 簡單的檢視會顯示為**vec,view(simple)**:
+在 [**監看**式] 視窗中，使用 **、view**格式規範來指定替代的視圖。 簡單的視圖會顯示為 [ **vec]、[view （簡單）** ]：
 
-![簡單檢視的監看式視窗](../debugger/media/watch-simpleview.png "簡單檢視的監看式視窗")
+具有簡單視圖的![簡單視圖](../debugger/media/watch-simpleview.png "監看式視窗")監看式視窗
 
-## <a name="BKMK_Diagnosing_Natvis_errors"></a> Natvis 錯誤
+## <a name="BKMK_Diagnosing_Natvis_errors"></a>Natvis 錯誤
 
-當偵錯工具遇到視覺化項目中的錯誤時，它會忽略它們。 它會以其原始格式，顯示類型或挑選另一個適當的視覺化。 您可以使用 Natvis 診斷，來了解為什麼偵錯工具忽略視覺化項目，並查看基礎的語法和剖析錯誤。
+當偵錯工具在視覺效果專案中遇到錯誤時，會忽略它們。 它會以原始格式顯示型別，或挑選另一個適當的視覺效果。 您可以使用 Natvis 診斷來瞭解偵錯工具忽略視覺效果專案的原因，以及查看基礎語法和剖析錯誤。
 
 **若要開啟 Natvis 診斷：**
 
-- 底下**工具** > **選項**(或**偵錯** > **選項**) >**偵錯** > **輸出視窗**，將**Natvis 診斷訊息 (C++只)** 至**錯誤**，**警告**或**Verbose**，然後選取**確定**。
+- 在 **工具**  > **選項** （或  **Debug**  > **選項**）**下 >**   > **輸出視窗**，將**Natvis 診斷訊息（僅限）C++**   設定為 **錯誤**或 **詳細**資訊，然後選取**確定**。
 
-在出現的錯誤**輸出**視窗。
+錯誤會出現在 [**輸出**] 視窗中。
 
 ## <a name="BKMK_Syntax_reference"></a> Natvis 語法參考
 
@@ -181,11 +181,11 @@ Natvis 視覺化使用 C++ 運算式來指定要顯示的資料項目。 除了�
 </AutoVisualizer>
 ```
 
-`AutoVisualizer`項目可以有[型別](#BKMK_Type)， [HResult](#BKMK_HResult)， [UIVisualizer](#BKMK_UIVisualizer)，並[CustomVisualizer](#BKMK_CustomVisualizer)子系。
+@No__t_0 元素可以有[類型](#BKMK_Type)、 [HResult](#BKMK_HResult)、[看到 uivisualizer](#BKMK_UIVisualizer)和[CustomVisualizer](#BKMK_CustomVisualizer)子系。
 
 ### <a name="BKMK_Type"></a> Type 項目
 
-基本`Type`如這個範例所示：
+基本 `Type` 看起來像這個範例：
 
 ```xml
 <Type Name="[fully qualified type name]">
@@ -196,18 +196,18 @@ Natvis 視覺化使用 C++ 運算式來指定要顯示的資料項目。 除了�
 </Type>
 ```
 
- `Type`項目會指定：
+ @No__t_0 元素會指定：
 
-1. 應該使用哪種類型的視覺效果的 (`Name`屬性)。
+1. 視覺效果應使用的類型（`Name` 屬性）。
 
 2. 該類型物件的值外觀應該為何 ( `DisplayString` 項目)。
 
-3. 型別的成員外觀應該為何當使用者展開變數視窗中的型別 (`Expand`節點)。
+3. 當使用者在變數視窗中展開類型（`Expand` 節點）時，該類型的成員應該看起來的樣子。
 
 #### <a name="templated-classes"></a>樣板化類別
-`Name`的屬性`Type`項目接受星號`*`做為萬用字元，可供樣板化類別名稱。
+@No__t_1 元素的 `Name` 屬性會接受星號 `*` 作為可用於樣板化類別名稱的萬用字元。
 
-在下列範例中，相同的視覺效果會使用的物件是否`CAtlArray<int>`或`CAtlArray<float>`。 如果沒有特定的視覺化項目`CAtlArray<float>`，則其優先順序高於一般項。
+在下列範例中，不論物件是 `CAtlArray<int>` 或 `CAtlArray<float>`，都會使用相同的視覺效果。 如果 `CAtlArray<float>` 有特定的視覺效果專案，則其優先順序會高於泛型一個。
 
 ```xml
 <Type Name="ATL::CAtlArray&lt;*&gt;">
@@ -215,15 +215,15 @@ Natvis 視覺化使用 C++ 運算式來指定要顯示的資料項目。 除了�
 </Type>
 ```
 
-您可以使用巨集 $T1，$T2 來參考在視覺化項目中的範本參數等等。 若要尋找這些巨集的範例，請參閱 Visual Studio 隨附的 *.natvis* 檔案。
+您可以使用宏 $T 1、$T 2 等等，來參考視覺效果專案中的樣板參數。 若要尋找這些巨集的範例，請參閱 Visual Studio 隨附的 *.natvis* 檔案。
 
 #### <a name="BKMK_Visualizer_type_matching"></a> 視覺化檢視類型比對
-如果驗證失敗的視覺化項目，則會使用下一個可用的視覺效果。
+如果視覺效果專案無法驗證，則會使用下一個可用的視覺效果。
 
 #### <a name="inheritable-attribute"></a>Inheritable 屬性
-選擇性`Inheritable`屬性指定視覺效果是否僅適用於基底類型或基底型別和所有衍生型別。 `Inheritable` 的預設值為 `true`。
+選擇性的 `Inheritable` 屬性會指定視覺效果只適用于基底類型，還是套用至基底類型和所有衍生類型。 `Inheritable` 的預設值為 `true`。
 
-在下列範例中，視覺效果只適用於`BaseClass`類型：
+在下列範例中，視覺效果只適用于 `BaseClass` 型別：
 
 ```xml
 <Type Name="Namespace::BaseClass" Inheritable="false">
@@ -233,9 +233,9 @@ Natvis 視覺化使用 C++ 運算式來指定要顯示的資料項目。 除了�
 
 #### <a name="priority-attribute"></a>Priority 屬性
 
-選擇性`Priority`屬性會指定要使用替代的定義中的順序，如果定義無法剖析。 可能的值`Priority`是： `Low`， `MediumLow`，`Medium`， `MediumHigh`，和`High`。 預設值為 `Medium`。 `Priority`屬性只區分在相同的優先順序 *.natvis*檔案。
+如果無法剖析定義，選擇性的 `Priority` 屬性會指定要使用替代定義的順序。 @No__t_0 的可能值為： `Low`、`MediumLow`、`Medium`、`MediumHigh` 和 `High`。 預設值是 `Medium`。 @No__t_0 屬性只會區分同一個*natvis*檔案中的優先順序。
 
-下列範例會先剖析符合 2015 STL 的項目。 如果無法剖析，但是它會使用 STL 的 2013年版本的替代項目：
+下列範例會先剖析符合 2015 STL 的專案。 如果無法剖析，它會針對2013版的 STL 使用替代專案：
 
 ```xml
 <!-- VC 2013 -->
@@ -256,7 +256,7 @@ Natvis 視覺化使用 C++ 運算式來指定要顯示的資料項目。 除了�
 ```
 
 ### <a name="optional-attribute"></a>Optional 屬性
-您可以放入`Optional`任何節點上的屬性。 如果選擇性節點內的子運算式無法剖析，偵錯工具會忽略該節點中，但套用的其餘部分`Type`規則。 在下列類型中， `[State]` 是非選擇性的，但 `[Exception]` 是選擇性的。  如果`MyNamespace::MyClass`具有名為 _ 欄位`M_exceptionHolder`，這兩個`[State]`節點和`[Exception]`出現節點，但如果沒有任何`_M_exceptionHolder`欄位中，只有`[State]`節點會出現。
+您可以將 `Optional` 屬性放在任何節點上。 如果選擇性節點內的子運算式無法剖析，則偵錯工具會忽略該節點，但會套用其餘的 `Type` 規則。 在下列類型中， `[State]` 是非選擇性的，但 `[Exception]` 是選擇性的。  如果 `MyNamespace::MyClass` 具有名為 _ `M_exceptionHolder` 的欄位，則 `[State]` 節點和 `[Exception]` 節點都會出現，但如果沒有 `_M_exceptionHolder` 欄位，則只會顯示 [`[State]`] 節點。
 
 ```xml
 <Type Name="MyNamespace::MyClass">
@@ -269,9 +269,9 @@ Natvis 視覺化使用 C++ 運算式來指定要顯示的資料項目。 除了�
 
 ### <a name="BKMK_Condition_attribute"></a> Condition 屬性
 
-選擇性`Condition`屬性可供許多視覺化項目，並指定使用視覺化規則的時機。 如果 condition 屬性中的運算式解析為`false`，不會套用的視覺化規則。 如果評估為`true`，或者沒有任何`Condition`屬性，視覺效果會套用。 如果其他邏輯在視覺化項目中，您可以使用這個屬性。
+選擇性的 `Condition` 屬性適用于許多視覺效果元素，並指定使用視覺效果規則的時機。 如果 condition 屬性內的運算式解析為 `false`，就不會套用視覺效果規則。 如果評估為 `true`，或沒有 `Condition` 屬性，則會套用視覺效果。 您可以將這個屬性用於視覺效果專案中的 else 邏輯。
 
-例如，下列視覺效果有兩個`DisplayString`智慧型指標類型的項目。 當`_Myptr`成員是空的第一個條件`DisplayString`項目解析成`true`，因此該表單會顯示。 當`_Myptr`成員不是空的條件評估為`false`，而第二個`DisplayString`項目顯示。
+例如，下列視覺效果有兩個適用于智慧型指標類型的 `DisplayString` 元素。 當 `_Myptr` 成員是空的時，第一個 `DisplayString` 元素的條件會解析為 `true`，如此表單就會顯示。 當 `_Myptr` 成員不是空的時，條件會評估為 `false`，而第二個 `DisplayString` 元素會顯示。
 
 ```xml
 <Type Name="std::auto_ptr&lt;*&gt;">
@@ -285,7 +285,7 @@ Natvis 視覺化使用 C++ 運算式來指定要顯示的資料項目。 除了�
 
 ### <a name="includeview-and-excludeview-attributes"></a>IncludeView 和 ExcludeView 屬性
 
-`IncludeView`和`ExcludeView`屬性會指定要顯示或不在特定的檢視中顯示的項目。 例如，在下列的 Natvis 規格`std::vector`，則`simple`檢視不會顯示`[size]`和`[capacity]`項目。
+@No__t_0 和 `ExcludeView` 屬性會指定要顯示或不顯示在特定視圖中的元素。 例如，在 `std::vector` 的下列 Natvis 規格中，[`simple`] 視圖不會顯示 `[size]` 和 `[capacity]` 專案。
 
 ```xml
 <Type Name="std::vector&lt;*&gt;">
@@ -301,14 +301,14 @@ Natvis 視覺化使用 C++ 運算式來指定要顯示的資料項目。 除了�
 </Type>
 ```
 
-您可以使用`IncludeView`和`ExcludeView`個別成員和類型上的屬性。
+您可以在類型和個別成員上使用 `IncludeView` 和 `ExcludeView` 屬性。
 
 ### <a name="BKMK_Versioning"></a> Version 項目
-`Version`項目範圍設為特定模組和版本的視覺化項目。 `Version`項目可協助避免發生名稱衝突可減少意外不符的情況，並可讓不同的型別版本的不同視覺效果。
+@No__t_0 元素會將視覺化專案範圍設為特定模組和版本。 @No__t_0 元素有助於避免名稱衝突、減少不小心的不符，並允許不同類型版本的不同視覺效果。
 
-常見的標頭檔，可由不同的模組定義的類型，如果已建立版本的視覺效果隨即出現，類型是在指定的模組版本時，才。
+如果不同模組所使用的通用標頭檔定義類型，則只有當類型在指定的模組版本中時，才會顯示版本化的視覺效果。
 
-在下列範例中，視覺效果是只適用於`DirectUI::Border`中找到類型`Windows.UI.Xaml.dll`1.0 至 1.5 版中。
+在下列範例中，視覺效果僅適用于從版本1.0 到1.5 的 `Windows.UI.Xaml.dll` 中找到的 `DirectUI::Border` 類型。
 
 ```xml
 <Type Name="DirectUI::Border">
@@ -320,8 +320,8 @@ Natvis 視覺化使用 C++ 運算式來指定要顯示的資料項目。 除了�
 </Type>
 ```
 
-### <a name="BKMK_DisplayString"></a> DisplayString 項目
-`DisplayString`項目會指定要顯示變數的值的字串。 它接受與運算式混合的任意字串。 大括號內的所有項目都會解譯為運算式。 比方說，下列`DisplayString`項目：
+### <a name="BKMK_DisplayString"></a>DisplayString 元素
+@No__t_0 元素會指定要顯示為變數值的字串。 它接受與運算式混合的任意字串。 大括號內的所有項目都會解譯為運算式。 例如，下列 `DisplayString` 專案：
 
 ```xml
 <Type Name="CPoint">
@@ -329,18 +329,18 @@ Natvis 視覺化使用 C++ 運算式來指定要顯示的資料項目。 除了�
 </Type>
 ```
 
-表示類型的變數`CPoint`顯示如本圖所示：
+表示 `CPoint` 類型的變數會顯示如下圖所示：
 
- ![使用 DisplayString 項目](../debugger/media/dbg_natvis_cpoint_displaystring.png "使用 DisplayString 項目")
+ ![使用 displaystring 元素](../debugger/media/dbg_natvis_cpoint_displaystring.png "使用 displaystring 元素")
 
-在 `DisplayString`運算式中，`x`並`y`的成員`CPoint`，位於大括號，所以其值會評估。 此範例也示範如何使用雙重大括號逸出大括號 (`{{`或`}}`)。
+在 `DisplayString` 運算式中，`x` 和 `y` （也就是 `CPoint` 的成員）都是在大括弧內，因此會評估其值。 此範例也會示範如何使用雙大括弧（`{{` 或 `}}`）來對大括弧進行換用。
 
 > [!NOTE]
-> `DisplayString` 項目是接受任意字串和大括號語法的唯一項目。 所有其他視覺效果項目接受偵錯工具可以評估的運算式。
+> `DisplayString` 項目是接受任意字串和大括號語法的唯一項目。 所有其他視覺效果元素只接受偵錯工具可評估的運算式。
 
-### <a name="BKMK_StringView"></a> StringView 項目
+### <a name="BKMK_StringView"></a>StringView 元素
 
-`StringView`元素會定義偵錯工具可以傳送至內建文字視覺化檢視的值。 例如，假設下列視覺效果`ATL::CStringT`類型：
+@No__t_0 元素會定義偵錯工具可以傳送至內建文字視覺化檢視的值。 例如，假設有下列 `ATL::CStringT` 類型的視覺效果：
 
 ```xml
 <Type Name="ATL::CStringT&lt;wchar_t,*&gt;">
@@ -348,11 +348,11 @@ Natvis 視覺化使用 C++ 運算式來指定要顯示的資料項目。 除了�
 </Type>
 ```
 
-`CStringT`物件會顯示變數視窗，如下列範例中：
+@No__t_0 物件會顯示在變數視窗中，如下列範例所示：
 
-![CStringT 的 DisplayString 項目](../debugger/media/dbg_natvis_displaystring_cstringt.png "CStringT 的 DisplayString 項目")
+![CStringT displaystring 元素](../debugger/media/dbg_natvis_displaystring_cstringt.png "CStringT displaystring 元素")
 
-新增`StringView`項目會告知偵錯工具就可以將值顯示為文字的視覺效果。
+新增 `StringView` 元素會告訴偵錯工具，它可以將值顯示為文字視覺效果。
 
 ```xml
 <Type Name="ATL::CStringT&lt;wchar_t,*&gt;">
@@ -361,23 +361,23 @@ Natvis 視覺化使用 C++ 運算式來指定要顯示的資料項目。 除了�
 </Type>
 ```
 
-偵錯期間，您可以選取 在變數中，旁邊的放大鏡圖示，然後選取**文字視覺化檢視**來顯示字串之**m_pszData**指向。
+在調試過程中，您可以選取變數旁的放大鏡圖示，然後選取 [**文字視覺化檢視**] 以顯示**m_pszData**指向的字串。
 
- ![含有 StringView 視覺化檢視的 CStringT 資料](../debugger/media/dbg_natvis_stringview_cstringt.png "含有 StringView 視覺化檢視的 CStringT 資料")
+ 使用![StringView 視覺化 CStringT 資料]使用(../debugger/media/dbg_natvis_stringview_cstringt.png "StringView 視覺化檢視 CStringT 資料")
 
-運算式`{m_pszData,su}`包含C++格式規範**su**，用來做為 Unicode 字串顯示值。 如需詳細資訊，請參閱 <<c0> [ 格式規範，在C++ ](../debugger/format-specifiers-in-cpp.md)。</c0>
+運算式 `{m_pszData,su}` 包含C++格式規範**su**，可將值顯示為 Unicode 字串。 如需詳細資訊，請參閱[中C++的格式](../debugger/format-specifiers-in-cpp.md)規範。
 
-### <a name="BKMK_Expand"></a> 展開項目
+### <a name="BKMK_Expand"></a>Expand 元素
 
-選擇性`Expand`節點自訂視覺化類型的子系，當您展開變數視窗中的型別。 `Expand`節點接受定義子項目節點的子節點清單。
+選擇性的 `Expand` 節點會在您展開變數視窗中的類型時，自訂視覺化類型的子系。 [@No__t_0] 節點會接受定義子項目的子節點清單。
 
-- 如果`Expand`節點未指定在視覺化項目子系會使用預設展開規則。
+- 如果視覺效果專案中未指定 `Expand` 節點，則子系會使用預設的擴充規則。
 
-- 如果`Expand`指定節點在其下方沒有子節點的型別不會在偵錯工具視窗可展開。
+- 如果指定的 `Expand` 節點沒有子節點，則在偵錯工具視窗中不會展開該類型。
 
 #### <a name="BKMK_Item_expansion"></a> Item 展開
 
- `Item`項目是在最基本且常見的項目`Expand`節點。 `Item` 定義單一子項目。 例如，`CRect`類別的欄位`top`， `left`， `right`，和`bottom`具有下列視覺化項目：
+ @No__t_0 專案是 `Expand` 節點中最基本的元素。 `Item` 定義單一子項目。 例如，具有欄位 `top`、`left`、`right` 和 `bottom` 的 `CRect` 類別具有下列視覺效果專案：
 
 ```xml
 <Type Name="CRect">
@@ -389,16 +389,16 @@ Natvis 視覺化使用 C++ 運算式來指定要顯示的資料項目。 除了�
 </Type>
 ```
 
-在 [偵錯工具] 視窗中，`CRect`型別是由本範例所示：
+在偵錯工具視窗中，`CRect` 類型如下列範例所示：
 
-![使用 item 項目展開的 CRect](../debugger/media/dbg_natvis_expand_item_crect1.png "項目的項目展開的 CRect")
+![]具有 item 專案展開(../debugger/media/dbg_natvis_expand_item_crect1.png "CRect 的 CRect 與 item 元素展開")
 
-偵錯工具評估中指定的運算式`Width`並`Height`項目，並顯示在值**值**變數視窗的資料行。
+偵錯工具會評估 `Width` 和 `Height` 元素中指定的運算式，並在 [變數] 視窗的 [**值**] 資料行中顯示值。
 
-偵錯工具會自動建立 **[未經處理的檢視]** 每個自訂的展開的節點。 上述螢幕擷取畫面會顯示 **[未經處理的檢視]** 節點展開，以顯示物件的預設未經處理檢視與其 Natvis 視覺化的不同方式。 預設展開會建立基底類別中，子樹狀結構，並列出所有的資料成員的基底類別做為子系。
+偵錯工具會自動建立每個自訂展開的 **[原始視圖]** 節點。 先前的螢幕擷取畫面會顯示展開的 **[原始視圖]** 節點，以顯示物件的預設原始視圖與它的 Natvis 視覺效果有何不同。 預設展開會建立基類的子樹，並列出基類的所有資料成員做為子系。
 
 > [!NOTE]
-> 如果 item 項目的運算式指向複雜類型，**項目**節點本身是可展開。
+> 如果 item 專案的運算式指向複雜型別，則**專案**節點本身是可展開的。
 
 #### <a name="BKMK_ArrayItems_expansion"></a> Size
 使用 `ArrayItems` 節點，讓 Visual Studio 偵錯工具將類型解譯為陣列並顯示其個別項目。 `std::vector` 的視覺化即為一個好例子：
@@ -419,19 +419,19 @@ Natvis 視覺化使用 C++ 運算式來指定要顯示的資料項目。 除了�
 
 當在變數視窗中展開時， `std::vector` 會顯示其個別項目：
 
-![使用 ArrayItems 展開的 std:: vector](../debugger/media/dbg_natvis_expand_arrayitems_stdvector.png "使用 ArrayItems 展開的 std:: vector")
+![std：： vector Using ArrayItems 展開](../debugger/media/dbg_natvis_expand_arrayitems_stdvector.png "std：： vector using ArrayItems 展開")
 
-`ArrayItems`節點必須有：
+@No__t_0 節點必須具有：
 
 - 可讓偵錯工具了解陣列長度的 `Size` 運算式 (必須評估為整數)。
-- A`ValuePointer`指向的第一個元素的運算式 (必須是不是項目類型的指標`void*`)。
+- 指向第一個專案的 `ValuePointer` 運算式（必須是不是 `void*` 之元素類型的指標）。
 
-該陣列的下限預設值為 0。 若要覆寫值，請使用`LowerBound`項目。 *.Natvis*檔案隨附於 Visual Studio 有範例。
+該陣列的下限預設值為 0。 若要覆寫值，請使用 `LowerBound` 元素。 Visual Studio 隨附的*natvis*檔案有範例。
 
 >[!NOTE]
->您可以使用`[]`運算子，例如`vector[i]`，與使用任何一維陣列視覺化`ArrayItems`，即使該型別本身 (例如`CATLArray`) 不允許這個運算子。
+>您可以使用 `[]` 運算子（例如 `vector[i]`）搭配使用 `ArrayItems` 的任何一維陣列視覺效果，即使類型本身（例如 `CATLArray`）不允許這個運算子也一樣。
 
-您也可以指定多維陣列。 在此情況下，偵錯工具需要稍微多一點的資訊，才能正確地顯示子項目：
+您也可以指定多維度陣列。 在此情況下，偵錯工具需要更多的資訊，才能正確顯示子項目：
 
 ```xml
 <Type Name="Concurrency::array&lt;*,*&gt;">
@@ -448,17 +448,17 @@ Natvis 視覺化使用 C++ 運算式來指定要顯示的資料項目。 除了�
 </Type>
 ```
 
-- `Direction` 指定陣列是否列還是資料行主要順序。
+- `Direction` 指定陣列是以資料列或資料行為主要的順序。
 - `Rank` 指定陣列的陣序。
-- `Size` 元素接受隱含的 `$i` 參數，並將參數取代為維度索引，以便在該維度中尋找陣列的長度。 在上一個範例中，運算式`_M_extent.M_base[0]`應可提供第 0 個維度的長度`_M_extent._M_base[1]`第 1，依此類推。
+- `Size` 元素接受隱含的 `$i` 參數，並將參數取代為維度索引，以便在該維度中尋找陣列的長度。 在上述範例中，運算式 `_M_extent.M_base[0]` 應該提供第0個維度的長度，`_M_extent._M_base[1]` 第1個，依此類推。
 
-以下是二維`Concurrency::array`偵錯工具視窗中尋找的物件：
+以下是二維 `Concurrency::array` 物件在偵錯工具視窗中的外觀：
 
-![含有 ArrayItems 展開的二維陣列](../debugger/media/dbg_natvis_expand_arrayitems_2d.png "含有 ArrayItems 展開的二維陣列")
+具有 ArrayItems 擴充之![具有 ArrayItems 擴充](../debugger/media/dbg_natvis_expand_arrayitems_2d.png "二維陣列")的二維陣列
 
 #### <a name="BKMK_IndexListItems_expansion"></a> IndexListItems 展開
 
-您可以使用`ArrayItems`只有當陣列項目連續配置在記憶體中的擴充。 偵錯工具取得下一個項目只是遞增其指標。 如果您需要管理值節點的索引，使用`IndexListItems`節點。 以下是使用視覺效果`IndexListItems`節點：
+只有當陣列元素在記憶體中連續配置時，您才能使用 `ArrayItems` 擴充。 偵錯工具會藉由只遞增其指標來取得下一個元素。 如果您需要操作值節點的索引，請使用 `IndexListItems` 節點。 以下是具有 `IndexListItems` 節點的視覺效果：
 
 ```xml
 <Type Name="Concurrency::multi_link_registry&lt;*&gt;">
@@ -473,14 +473,14 @@ Natvis 視覺化使用 C++ 運算式來指定要顯示的資料項目。 除了�
 </Type>
 ```
 
-唯一的差別`ArrayItems`並`IndexListItems`是`ValueNode`，這會預期完整的運算式，i<sup>第</sup>項目具有隱含`$i`參數。
+@No__t_0 和 `IndexListItems` 之間的唯一差異在於 `ValueNode`，這預期<sup>第</sup>i 個元素的完整運算式具有隱含的 `$i` 參數。
 
 >[!NOTE]
->您可以使用`[]`運算子，例如`vector[i]`，與使用任何一維陣列視覺化`IndexListItems`，即使該型別本身 (例如`CATLArray`) 不允許這個運算子。
+>您可以使用 `[]` 運算子（例如 `vector[i]`）搭配使用 `IndexListItems` 的任何一維陣列視覺效果，即使類型本身（例如 `CATLArray`）不允許這個運算子也一樣。
 
 #### <a name="BKMK_LinkedListItems_expansion"></a> LinkedListItems 展開
 
-如果視覺化類型代表連結清單，則偵錯工具可以使用 `LinkedListItems` 節點顯示其子系。 下列視覺效果`CAtlList`輸入使用`LinkedListItems`:
+如果視覺化類型代表連結清單，則偵錯工具可以使用 `LinkedListItems` 節點顯示其子系。 下列 `CAtlList` 類型的視覺效果使用 `LinkedListItems`：
 
 ```xml
 <Type Name="ATL::CAtlList&lt;*,*&gt;">
@@ -499,14 +499,14 @@ Natvis 視覺化使用 C++ 運算式來指定要顯示的資料項目。 除了�
 
 `Size` 項目參考清單的長度。 `HeadPointer` 指向第一個項目， `NextPointer` 參考下一個項目，而 `ValueNode` 參考項目的值。
 
-偵錯工具評估`NextPointer`並`ValueNode`的內容中的運算式`LinkedListItems`節點項目，不在父清單類型。 在上述範例中，`CAtlList`已經`CNode`類別 (位於`atlcoll.h`) 也就是連結清單節點。 `m_pNext` 並`m_element`是的欄位`CNode`類別，不是`CAtlList`類別。
+偵錯工具會評估 `LinkedListItems` 節點元素內容中的 `NextPointer` 和 `ValueNode` 運算式，而不是父清單類型。 在上述範例中，`CAtlList` 具有 `CNode` 類別（在 `atlcoll.h` 中找到），這是連結清單的節點。 `m_pNext` 和 `m_element` 是該 `CNode` 類別的欄位，而不是 `CAtlList` 類別。
 
-`ValueNode` 可以保留空白，或使用`this`來參考`LinkedListItems`節點本身。
+`ValueNode` 可以保留空白，或使用 `this` 來參考 `LinkedListItems` 節點本身。
 
 #### <a name="customlistitems-expansion"></a>CustomListItems 展開
-`CustomListItems` 展開可讓您撰寫周遊資料結構 (例如雜湊表) 的自訂邏輯。 使用`CustomListItems`視覺化資料結構，可以使用C++運算式的評估，您需要的所有項目但不完全符合區域變數`ArrayItems`， `IndexListItems`，或`LinkedListItems`。
+`CustomListItems` 展開可讓您撰寫周遊資料結構 (例如雜湊表) 的自訂邏輯。 使用 `CustomListItems`，將可使用C++運算式的資料結構視覺化，以用於您需要評估的所有專案，但不適合 `ArrayItems`、`IndexListItems` 或 `LinkedListItems` 的模具。
 
-下列視覺化檢視`CAtlMap`的絕佳範例其中`CustomListItems`適合。
+下列適用于 `CAtlMap` 的視覺化檢視是適合 `CustomListItems` 的絕佳範例。
 
 ```xml
 <Type Name="ATL::CAtlMap&lt;*,*,*,*&gt;">
@@ -537,9 +537,9 @@ Natvis 視覺化使用 C++ 運算式來指定要顯示的資料項目。 除了�
 </Type>
 ```
 
-您可以使用`Exec`來執行程式碼內的`CustomListItems`擴充，使用變數和擴充中定義的物件。 您可以使用邏輯運算子、 算術運算子，與指派運算子與`Exec`。 您無法使用`Exec`評估函式。
+您可以使用 `Exec`，利用展開中定義的變數和物件，在 `CustomListItems` 擴充內執行程式碼。 您可以使用邏輯運算子、算術運算子和指派運算子搭配 `Exec`。 您無法使用 `Exec` 來評估函式。
 
-`CustomListItems` 支援下列的內建函式：
+`CustomListItems` 支援下列內建函式：
 
 - `strlen`、`wcslen`、`strnlen`、`wcsnlen`、`strcmp`、`wcscmp`、`_stricmp`、`_strcmpi`、`_wcsicmp`、`strncmp`、`wcsncmp`、`_strnicmp`、`_wcsnicmp`、`memcmp`、`memicmp`、`wmemcmp`、`strchr`、`wcschr`、`memchr`、`wmemchr`、`strstr`、`wcsstr`、`__log2`、`__findNonNull`
 - `GetLastError`、`TlsGetValue`、`DecodeHString`、`WindowsGetStringLen`、`WindowsGetStringRawBuffer`、`WindowsCompareStringOrdinal`、`RoInspectCapturedStackBackTrace`、`CoDecodeProxy`、`GetEnvBlockLength`、`DecodeWinRTRestrictedException`、`DynamicMemberLookup`、`DecodePointer`、`DynamicCast`
@@ -556,7 +556,7 @@ Natvis 視覺化使用 C++ 運算式來指定要顯示的資料項目。 除了�
 - `TreeTraverse_Skip // Skips nodes in a pending tree traversal`
 
 #### <a name="BKMK_TreeItems_expansion"></a> TreeItems 展開
- 如果視覺化類型代表樹狀結構，則偵錯工具可以使用 `TreeItems` 節點查核樹狀結構並顯示其子系。 以下是 視覺效果`std::map`輸入使用`TreeItems`節點：
+ 如果視覺化類型代表樹狀結構，則偵錯工具可以使用 `TreeItems` 節點查核樹狀結構並顯示其子系。 以下是使用 `TreeItems` 節點之 `std::map` 類型的視覺效果：
 
 ```xml
 <Type Name="std::map&lt;*&gt;">
@@ -575,16 +575,16 @@ Natvis 視覺化使用 C++ 運算式來指定要顯示的資料項目。 除了�
 </Type>
 ```
 
-語法是類似於`LinkedListItems`節點。 `LeftPointer``RightPointer`，和`ValueNode`會在樹狀節點類別的內容下進行評估。 `ValueNode` 可以保留空白，或使用`this`來參考`TreeItems`節點本身。
+語法類似于 `LinkedListItems` 節點。 `LeftPointer`、`RightPointer` 和 `ValueNode` 會在樹狀節點類別的內容下進行評估。 `ValueNode` 可以保留空白，或使用 `this` 來參考 `TreeItems` 節點本身。
 
 #### <a name="BKMK_ExpandedItem_expansion"></a> ExpandedItem 展開
- `ExpandedItem`所顯示的基底類別或資料成員的屬性，如同它們是視覺化類型的子系項目會產生的彙總的子檢視。 偵錯工具會評估指定的運算式，並將結果的子節點附加至視覺化類型的子清單。
+ @No__t_0 元素會藉由顯示基類或資料成員的屬性，來產生匯總的子視圖，如同其為視覺化類型的子系。 偵錯工具會評估指定的運算式，並將結果的子節點附加至視覺化類型的子清單。
 
-比方說，智慧型指標類型`auto_ptr<vector<int>>`通常會顯示為：
+例如，智慧型指標類型 `auto_ptr<vector<int>>` 通常會顯示為：
 
- ![自動&#95;ptr&#60;向量&#60;int&#62; &#62;預設展開](../debugger/media/dbg_natvis_expand_expandeditem_default.png "預設展開")
+ ![自動&#95;ptr&#60;向量&#60; &#62; int&#62;預設擴充](../debugger/media/dbg_natvis_expand_expandeditem_default.png "預設")展開
 
- 若要查看向量的值，您必須在變數視窗中，透過傳遞的兩個層級向下鑽研`_Myptr`成員。 藉由新增 `ExpandedItem` 元素，您可以從階層中排除 `_Myptr` 變數，並直接檢視向量元素：
+ 若要查看向量的值，您必須在變數視窗中向下切入兩個層級，傳遞 `_Myptr` 成員。 藉由新增 `ExpandedItem` 元素，您可以從階層中排除 `_Myptr` 變數，並直接檢視向量元素：
 
 ```xml
 <Type Name="std::auto_ptr&lt;*&gt;">
@@ -595,9 +595,9 @@ Natvis 視覺化使用 C++ 運算式來指定要顯示的資料項目。 除了�
 </Type>
 ```
 
- ![自動&#95;ptr&#60;向量&#60;int&#62; &#62; ExpandedItem 展開](../debugger/media/dbg_natvis_expand_expandeditem_visualized.png "ExpandedItem 展開")
+ ![自動&#95;ptr&#60;向量&#60; &#62; int&#62; ExpandedItem 擴充](../debugger/media/dbg_natvis_expand_expandeditem_visualized.png "ExpandedItem 擴充")
 
-下列範例示範如何從衍生類別中的基底類別彙總屬性。 假設 `CPanel` 類別衍生自 `CFrameworkElement`。 而不是重複的屬性，來自基底`CFrameworkElement`類別，`ExpandedItem`節點的視覺效果會將這些屬性附加至的子清單`CPanel`類別。
+下列範例顯示如何從衍生類別中的基類匯總屬性。 假設 `CPanel` 類別衍生自 `CFrameworkElement`。 @No__t_1 節點視覺效果不會重複來自基底 `CFrameworkElement` 類別的屬性，而是將這些屬性附加至 `CPanel` 類別的子清單。
 
 ```xml
 <Type Name="CPanel">
@@ -609,10 +609,10 @@ Natvis 視覺化使用 C++ 運算式來指定要顯示的資料項目。 除了�
 </Type>
 ```
 
-此處需要 **nd** 格式規範，以關閉衍生類別的視覺化比對。 否則，運算式`*(CFrameworkElement*)this`會導致`CPanel`視覺效果，以套用同樣的因為預設視覺化類型比對規則將它視為最適當的一個。 使用  **nd**格式規範來指示偵錯工具使用基底類別的視覺效果或預設展開，如果基底類別不有任何視覺效果。
+此處需要 **nd** 格式規範，以關閉衍生類別的視覺化比對。 否則，運算式 `*(CFrameworkElement*)this` 會導致再次套用 `CPanel` 的視覺效果，因為預設的視覺效果類型比對規則會將它視為最適合的類別。 使用**nd**格式規範來指示偵錯工具使用基類視覺效果，如果基類沒有視覺效果，則為預設展開。
 
 #### <a name="BKMK_Synthetic_Item_expansion"></a> Synthetic 項目展開
- 其中 `ExpandedItem` 元素透過排除階層來提供更平面的資料檢視， `Synthetic` 節點則相反。 它可讓您建立假造的子項目不是運算式的結果。 假造的項目可以有它自己的子元素。 在下列範例中， `Concurrency::array` 類型的視覺化使用 `Synthetic` 節點向使用者顯示診斷訊息：
+ 其中 `ExpandedItem` 元素透過排除階層來提供更平面的資料檢視， `Synthetic` 節點則相反。 它可讓您建立不是運算式結果的人工子項目。 人工智慧元素可以有自己的子項目。 在下列範例中， `Concurrency::array` 類型的視覺化使用 `Synthetic` 節點向使用者顯示診斷訊息：
 
 ```xml
 <Type Name="Concurrency::array&lt;*,*&gt;">
@@ -631,10 +631,10 @@ Natvis 視覺化使用 C++ 運算式來指定要顯示的資料項目。 除了�
 </Type>
 ```
 
- ![綜合的項目展開含有](../debugger/media/dbg_natvis_expand_synthetic.png "含有綜合的項目展開")
+ ![Concurrency：：具有綜合元素擴充](../debugger/media/dbg_natvis_expand_synthetic.png "Concurrency：： array 與綜合專案展開的")陣列
 
-### <a name="BKMK_HResult"></a> HResult 項目
- `HResult`元素可讓您自訂顯示的資訊**HRESULT**偵錯工具視窗。 `HRValue` 元素必須包含要自訂的 32 位元 **HRESULT** 值。 `HRDescription`項目包含在偵錯工具視窗中顯示的資訊。
+### <a name="BKMK_HResult"></a>HResult 元素
+ @No__t_0 專案可讓您自訂偵錯工具視窗中的**HRESULT**所顯示的資訊。 `HRValue` 元素必須包含要自訂的 32 位元 **HRESULT** 值。 @No__t_0 元素包含要在偵錯工具視窗中顯示的資訊。
 
 ```xml
 
@@ -644,8 +644,8 @@ Natvis 視覺化使用 C++ 運算式來指定要顯示的資料項目。 除了�
 </HResult>
 ```
 
-### <a name="BKMK_UIVisualizer"></a> UIVisualizer 項目
-`UIVisualizer` 項目會向偵錯工具註冊圖形視覺化檢視外掛程式。 圖形視覺化檢視建立對話方塊或其他介面會顯示變數或物件的方式以及其資料類型一致。 視覺化檢視外掛程式必須撰寫做[VSPackage](../extensibility/internals/vspackages.md)，且必須公開偵錯工具可以取用的服務。 *.Natvis*檔案包含註冊外掛程式的資訊，例如其名稱、 公開的服務，以及可視覺化之類型的 GUID。
+### <a name="BKMK_UIVisualizer"></a>看到 uivisualizer 元素
+`UIVisualizer` 項目會向偵錯工具註冊圖形視覺化檢視外掛程式。 圖形化視覺化會建立一個對話方塊或其他介面，以與資料類型一致的方式來顯示變數或物件。 視覺化設計工具外掛程式必須撰寫為[VSPackage](../extensibility/internals/vspackages.md)，而且必須公開偵錯工具可以使用的服務。 *Natvis*檔案包含外掛程式的註冊資訊，例如其名稱、公開服務的 GUID，以及可哥視化的類型。
 
 以下是 UIVisualizer 項目的範例：
 
@@ -661,13 +661,13 @@ Natvis 視覺化使用 C++ 運算式來指定要顯示的資料項目。 除了�
 </AutoVisualizer>
 ```
 
-- A `ServiceId`  -  `Id`屬性組會識別`UIVisualizer`。 `ServiceId`封裝會公開為服務的視覺化檢視的 GUID。 `Id` 在服務提供一個以上時，是區分視覺化檢視的唯一識別碼。 在上述範例中，相同的視覺化檢視服務提供兩個視覺化檢視。
+- @No__t_0  -  `Id` 屬性組識別 `UIVisualizer`。 @No__t_0 是視覺化檢視封裝所公開之服務的 GUID。 `Id` 是區分視覺化程式的唯一識別碼（如果服務提供一個以上的）。 在上述範例中，相同的視覺化服務提供兩種視覺化檢視。
 
-- `MenuName`屬性定義要在偵錯工具的放大鏡圖示旁邊下拉式清單中顯示的視覺化檢視名稱。 例如：
+- @No__t_0 屬性會定義要在偵錯工具中放大鏡圖示旁的下拉式按鈕中顯示的視覺化檢視名稱。 例如:
 
-  ![UIVisualizer 功能表捷徑功能表](../debugger/media/dbg_natvis_vectorvisualizer.png "UIVisualizer 功能表捷徑功能表")
+  ![看到 uivisualizer 功能表快捷方式功能表](../debugger/media/dbg_natvis_vectorvisualizer.png "看到 uivisualizer 功能表快捷方式功能表")
 
-定義在每個型別 *.natvis*檔案都必須明確列出可以顯示任何 UI 視覺化檢視。 偵錯工具與已註冊視覺化檢視進行比對視覺化檢視中參考的型別項目。 例如，下列輸入項目`std::vector`參考`UIVisualizer`在上述範例中。
+*Natvis*檔案中定義的每個類型都必須明確列出可以顯示它的任何 UI 視覺化程式。 偵錯工具會比對類型專案中的視覺化檢視參考與已註冊的視覺化檢視。 例如，下列 `std::vector` 的類型專案會參考上述範例中的 `UIVisualizer`。
 
 ```xml
 <Type Name="std::vector&lt;int,*&gt;">
@@ -675,11 +675,11 @@ Natvis 視覺化使用 C++ 運算式來指定要顯示的資料項目。 除了�
 </Type>
 ```
 
- 您所見的範例`UIVisualizer`中[Image Watch](https://marketplace.visualstudio.com/items?itemName=VisualCPPTeam.ImageWatch2017)用來檢視記憶體中點陣圖的延伸模組。
+ 您可以在 [[影像監看式]](https://marketplace.visualstudio.com/items?itemName=VisualCPPTeam.ImageWatch2017)延伸模組中查看用來查看記憶體中點陣圖 `UIVisualizer` 的範例。
 
 ### <a name="BKMK_CustomVisualizer"></a>CustomVisualizer 元素
- `CustomVisualizer` 是指定 VSIX 擴充功能，您撰寫來控制在 Visual Studio code 中的視覺效果的擴充點。 如需撰寫 VSIX 擴充功能的詳細資訊，請參閱[Visual Studio SDK](../extensibility/visual-studio-sdk.md)。
+ `CustomVisualizer` 是擴充點，會指定您撰寫的 VSIX 擴充功能，以在 Visual Studio 程式碼中控制視覺效果。 如需撰寫 VSIX 擴充功能的詳細資訊，請參閱[VISUAL STUDIO SDK](../extensibility/visual-studio-sdk.md)。
 
-它是更多的工作，來撰寫 XML Natvis 定義中，比自訂視覺化檢視，但是您可以從解 Natvis 沒有或不支援的條件約束。 自訂視覺化檢視可以存取完整的偵錯工具擴充性 Api，可以查詢和修改偵錯項目處理序或與 Visual Studio 的其他部分通訊。
+撰寫自訂的視覺化程式比 XML Natvis 定義更多，但您不受限於 Natvis 不支援的條件約束。 自訂的視覺化程式可以存取一組完整的偵錯工具擴充性 Api，這可查詢和修改偵錯工具的進程，或與 Visual Studio 的其他部分通訊。
 
- 您可以使用`Condition`， `IncludeView`，並`ExcludeView`上的屬性`CustomVisualizer`項目。
+ 您可以在 `CustomVisualizer` 元素上使用 `Condition`、`IncludeView` 和 `ExcludeView` 屬性。

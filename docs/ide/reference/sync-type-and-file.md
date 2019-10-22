@@ -2,20 +2,20 @@
 title: 將檔案名稱重新命名以符合類型
 ms.date: 01/26/2018
 ms.topic: reference
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 90783dcd609094659517d994c3a4d4e0610b7735
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 640df80d1763a2e942b4e38b34e72e5bd4a2a7fb
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62945149"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72645211"
 ---
 # <a name="sync-a-type-to-a-filename-or-a-filename-to-a-type-refactoring"></a>將類型同步至檔案名稱，或將檔案名稱同步至類型的重構
 
@@ -29,7 +29,7 @@ ms.locfileid: "62945149"
 
 **時機：** 您已將檔案或類型重新命名，但尚未更新對應的檔案或類型來使其相符。
 
-**原因：** 將類型放在不同名稱的檔案中 (或反之亦然) 會很難找出所要尋找項目。 藉由將類型或檔案名稱重新命名，程式碼會變得較容易閱讀及瀏覽。
+**原因：** 將類型放在不同名稱的檔案中 (或反之亦然) 會很難找出所要尋找的項目。 藉由將類型或檔案名稱重新命名，程式碼會變得較容易閱讀及瀏覽。
 
 > [!NOTE]
 > 這項重構尚不適用於 .NET Standard 和 .NET Core 專案。
@@ -38,7 +38,7 @@ ms.locfileid: "62945149"
 
 1. 醒目標示要同步的類型名稱，或將文字游標放在要同步的類型名稱內：
 
-   - C#: 
+   - C#:
 
        ![醒目提示的程式碼 - C#](media/synctype-highlight-cs.png)
 
@@ -49,15 +49,15 @@ ms.locfileid: "62945149"
 2. 接著，執行下列其中一項操作：
 
    - **鍵盤**
-      - 在字行任何地方按 **Ctrl**+**.**， 以觸發 [快速動作與重構] 功能表，然後從 [預覽] 快顯視窗中選取 [將檔案重新命名為 *TypeName*.cs]，其中 *TypeName* 是您所選類型的名稱。
-      - 在字行任何地方按 **Ctrl**+**.**， 以觸發 [快速動作與重構] 功能表，然後從 [預覽] 快顯視窗中選取 [將類型重新命名為 _Filename_]，其中 *Filename* 是目前檔案的名稱。
+      - 在字行任何地方按 **Ctrl**+ **.** ， 以觸發 [快速動作與重構] 功能表，然後從 [預覽] 快顯視窗中選取 [將檔案重新命名為 *TypeName*.cs]，其中 *TypeName* 是您所選類型的名稱。
+      - 在字行任何地方按 **Ctrl**+ **.** ， 以觸發 [快速動作與重構] 功能表，然後從 [預覽] 快顯視窗中選取 [將類型重新命名為 _Filename_]，其中 *Filename* 是目前檔案的名稱。
    - **滑鼠**
       - 在程式碼上按一下滑鼠右鍵，選取 [快速動作與重構] 功能表，然後從 [預覽] 快顯視窗中選取 [將檔案重新命名為 *TypeName*.cs]，其中 *TypeName* 是您所選類型的名稱。
       - 在程式碼上按一下滑鼠右鍵，選取 [快速動作與重構] 功能表，然後從 [預覽] 快顯視窗中選取 [將類型重新命名為 _Filename_]，其中 *Filename* 是目前檔案的名稱。
 
    類型或檔案會重新命名。
 
-   - C#: 在下面的範例中，檔案 **MyClass.cs** 已重新命名為 **MyNewClass.cs** 以符合類型名稱。
+   - C#：在下面的範例中，檔案 **MyClass.cs** 已重新命名為 **MyNewClass.cs** 以符合類型名稱。
 
        ![內嵌結果 C#](media/synctype-result-cs.png)
 
@@ -65,6 +65,6 @@ ms.locfileid: "62945149"
 
        ![內嵌結果 Visual Basic](media/synctype-result-vb.png)
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [重構](../refactoring-in-visual-studio.md)

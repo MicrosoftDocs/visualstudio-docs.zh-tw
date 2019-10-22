@@ -14,17 +14,17 @@ helpviewer_keywords:
 - /UseEnv Devenv switch
 - Devenv, /UseEnv
 ms.assetid: 2dd14603-a61b-42d2-ba31-427a0ee8a799
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 16443b30ccf6ba03a01df0234695d27e4cd909af
-ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
+ms.openlocfilehash: da7a5e1d3490ea8342e6a7b21e91552ae2e8fdf0
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71186495"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72622399"
 ---
 # <a name="useenv-devenvexe"></a>/UseEnv (devenv.exe)
 
@@ -43,7 +43,7 @@ devenv /UseEnv {SolutionName|ProjectName}
 
 - *SolutionName*
 
-  方案檔的完整路徑和名稱。
+  解決方案檔的完整路徑和名稱。
 
 - *ProjectName*
 
@@ -51,7 +51,7 @@ devenv /UseEnv {SolutionName|ProjectName}
 
 ## <a name="remarks"></a>備註
 
-此參數會影響專案屬性中適用於 **VC++ 目錄**的 Visual Studio IDE。 如果您指定 `/UseEnv` 參數，[VC++ 目錄] 節點會顯示 PATH、INCLUDE、LIBPATH 和 LIB 環境變數的值 (它也會顯示**來源目錄**和**排除目錄**的值)。否則，此節點就會使用下列五個目錄值來取代環境變數：**可執行檔目錄**、**Include 目錄**、**參考目錄**、**程式庫目錄**及 **WinRT 程式庫目錄**。
+此參數會影響專案屬性中適用於 **VC++ 目錄**的 Visual Studio IDE。 如果您指定 `/UseEnv` 參數，[VC++ 目錄] 節點會顯示 PATH、INCLUDE、LIBPATH 和 LIB 環境變數的值 （它也會顯示 [**來原始目錄**] 和 [**排除目錄**] 的值）。否則，節點會將環境變數取代為五個目錄值：**可執行檔目錄**、 **Include 目錄**、**參考目錄**、連結**庫目錄**，以及連結**庫 WinRT 目錄**。
 
 > [!TIP]
 > 您可以使用滑鼠右鍵按一下 C++ 專案，然後選取 [屬性] 來存取專案屬性。 在 [屬性頁] 對話方塊中，依序選取 [組態屬性] 和 [VC++ 目錄]。
@@ -66,7 +66,7 @@ devenv /UseEnv {SolutionName|ProjectName}
 devenv.exe /useenv "%USERPROFILE%\source\repos\MySolution\MySolution.sln"
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [Devenv 命令列參數](../../ide/reference/devenv-command-line-switches.md)
 - [VC++ 目錄屬性頁 (Windows)](/cpp/build/reference/vcpp-directories-property-page)

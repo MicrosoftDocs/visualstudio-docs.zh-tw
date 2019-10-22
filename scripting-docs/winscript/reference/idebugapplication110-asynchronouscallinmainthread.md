@@ -1,5 +1,5 @@
 ---
-title: IDebugApplication110::AsynchronousCallInMainThread | Microsoft Docs
+title: IDebugApplication110：： AsynchronousCallInMainThread |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -13,18 +13,18 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d1b5e52d65a5fd70c4ec7de9ced9a0175940d93f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 04c1a2962662d0046c6b9d323a287d580ee0f3e6
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63446409"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577397"
 ---
 # <a name="idebugapplication110asynchronouscallinmainthread"></a>IDebugApplication110::AsynchronousCallInMainThread
 在主執行緒上進行非同步呼叫。  
   
 > [!IMPORTANT]
-> [IDebugApplication110 介面](../../winscript/reference/idebugapplication110-interface.md)是實作由 PDM v11.0 和更新版本。 可在 activdbg100.h 中找到。  
+> [IDebugApplication110 介面](../../winscript/reference/idebugapplication110-interface.md)是由 PDM 11.0 和更新版本所執行。 可在 activdbg100.h 中找到。  
   
 ## <a name="syntax"></a>語法  
   
@@ -34,19 +34,19 @@ HRESULT AsynchronousCallInMainThread([in] IDebugThreadCall* pptc, [in] DWORD_PTR
   
 #### <a name="parameters"></a>參數  
  `pptc`  
- [IDebugThreadCall 介面](../../winscript/reference/idebugthreadcall-interface.md)呼叫的物件。  
+ 要呼叫的[IDebugThreadCall 介面](../../winscript/reference/idebugthreadcall-interface.md)物件。  
   
  `dwParam1`  
- 呼叫第一個參數。  
+ 呼叫的第一個參數。  
   
  `dwParam1`  
- 呼叫第一個參數。  
+ 呼叫的第一個參數。  
   
  `dwParam2`  
- 呼叫第二個參數。  
+ 呼叫的第二個參數。  
   
  `dwParam3`  
- 呼叫第三個參數。  
+ 呼叫的第三個參數。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDebugApplication110 介面](../../winscript/reference/idebugapplication110-interface.md)

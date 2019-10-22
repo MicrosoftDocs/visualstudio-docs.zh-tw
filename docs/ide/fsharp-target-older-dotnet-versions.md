@@ -3,18 +3,18 @@ title: 針對 F# 以舊版 .NET Framework 為目標
 description: 了解在 Visual Studio 中使用 F# 時，如何以舊版 .NET Framework 為目標。
 ms.date: 07/11/2018
 ms.topic: troubleshooting
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
 monikerRange: vs-2017
-ms.openlocfilehash: 2e0d580ac18142010a306d3fb4de19eb69b0b91b
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
-ms.translationtype: HT
+ms.openlocfilehash: df263ee4b2bd6ec7b6239826725a85c26f0acf80
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66746707"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72603532"
 ---
 # <a name="target-older-versions-of-net-f"></a>以舊版 .NET 為目標 (F#)
 
@@ -42,13 +42,13 @@ ms.locfileid: "66746707"
 
 ### <a name="to-enable-the-net-framework-35-on-windows-81"></a>在 Windows 8.1 上啟用 .NET Framework 3.5
 
-1. 在 [開始]  畫面上鍵入**控制台**。
+1. 在 [開始] 畫面上鍵入**控制台**。
 
-   當您鍵入時，**控制台**圖示會出現在 [應用程式]  標題下方。
+   當您鍵入時，**控制台**圖示會出現在 [應用程式] 標題下方。
 
-2. 選擇**控制台**圖示，選擇**程式集**圖示，然後選擇 [開啟或關閉 Windows 功能]  連結。
+2. 選擇**控制台**圖示，選擇**程式集**圖示，然後選擇 [開啟或關閉 Windows 功能] 連結。
 
-3. 確定已選取 [.NET Framework 3.5 (含 .NET 2.0 及 3.0)]  核取方塊，然後選擇 [確定]  按鈕。 您不需要為 .NET Framework 選用元件的任何子節點選取核取方塊。
+3. 確定已選取 [.NET Framework 3.5 (含 .NET 2.0 及 3.0)] 核取方塊，然後選擇 [確定] 按鈕。 您不需要為 .NET Framework 選用元件的任何子節點選取核取方塊。
 
    如果尚未啟用 .NET Framework 3.5，則會加以啟用。
 
@@ -56,7 +56,7 @@ ms.locfileid: "66746707"
 
 請遵循[修復 Visual Studio 的步驟](../install/repair-visual-studio.md)。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [F# 指南 (.NET Framework)](/dotnet/fsharp/)
 - [Visual Studio 中的 F#](fsharp-visual-studio.md)

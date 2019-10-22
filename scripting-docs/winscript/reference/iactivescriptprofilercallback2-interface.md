@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptProfilerCallback2 Interface | Microsoft Docs
+title: IActiveScriptProfilerCallback2 介面 |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -13,33 +13,33 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b0a0df287db477c5bf768798f200ea0d97de6d1e
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 25f9616497192659df67feedfe16bd9ea0c5e3b1
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63385934"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577306"
 ---
 # <a name="iactivescriptprofilercallback2-interface"></a>IActiveScriptProfilerCallback2 介面
-提供指令碼引擎用來通知分析工具物件，Document Object Model (DOM) 的事件發生時的方法。 分析工具物件會實作這個介面。  
+提供在發生檔物件模型（DOM）事件時，腳本引擎用來通知 profiler 物件的方法。 這個介面是由 profiler 物件所執行。  
   
 ## <a name="methods"></a>方法  
   
 |方法|描述|  
 |------------|-----------------|  
-|[IActiveScriptProfilerCallback2::OnFunctionEnterByName](../../winscript/reference/iactivescriptprofilercallback2-onfunctionenterbyname.md)|告知指令碼引擎會執行 DOM 函式呼叫的程式碼剖析工具物件。|  
-|[IActiveScriptProfilerCallback2::OnFunctionExitByName](../../winscript/reference/iactivescriptprofilercallback2-onfunctionexitbyname.md)|指令碼引擎的物件完成執行 DOM 函式呼叫會通知分析工具。|  
+|[IActiveScriptProfilerCallback2::OnFunctionEnterByName](../../winscript/reference/iactivescriptprofilercallback2-onfunctionenterbyname.md)|通知 profiler 物件，腳本引擎即將執行 DOM 函式呼叫。|  
+|[IActiveScriptProfilerCallback2::OnFunctionExitByName](../../winscript/reference/iactivescriptprofilercallback2-onfunctionexitbyname.md)|通知 profiler 物件，腳本引擎已完成執行 DOM 函數呼叫。|  
   
 ## <a name="remarks"></a>備註  
- `IActiveScriptProfilerCallback2`第一次釋放與 Internet Explorer 9 的介面。  
+ 第一次使用 Internet Explorer 9 發行 `IActiveScriptProfilerCallback2` 介面。  
   
- 所提供的不是載入 DOM 中呼叫的函式呼叫的通知[IActiveScriptProfilerCallback 介面](../../winscript/reference/iactivescriptprofilercallback-interface.md)。  
+ [IActiveScriptProfilerCallback 介面](../../winscript/reference/iactivescriptprofilercallback-interface.md)會提供未呼叫 DOM 的函式呼叫通知。  
   
 > [!NOTE]
-> 若要新增至啟動和停止指令碼執行時，程式碼剖析功能，請呼叫下列方法。 藉由使用這些方法，您可以取得的完整呼叫堆疊如果[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]當您啟動或停止程式碼剖析執行。  
+> 若要在腳本執行時加入啟動和停止分析的功能，請呼叫下列方法。 藉由使用這些方法，您可以在啟動或停止分析時，取得完整的呼叫堆疊（如果 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 正在執行）。  
 > 
-> - 呼叫[IActiveScriptProfilerControl2::CompleteProfilerStart](../../winscript/reference/iactivescriptprofilercontrol2-completeprofilerstart.md)通知分析工具，您已開始分析。  
->   - 呼叫[IActiveScriptProfilerControl2::PrepareProfilerStop](../../winscript/reference/iactivescriptprofilercontrol2-prepareprofilerstop.md)通知分析工具，您很快就會停止分析。  
+> - 呼叫[IActiveScriptProfilerControl2：： CompleteProfilerStart](../../winscript/reference/iactivescriptprofilercontrol2-completeprofilerstart.md)以通知分析工具您已開始進行程式碼剖析。  
+>   - 呼叫[IActiveScriptProfilerControl2：:P repareprofilerstop](../../winscript/reference/iactivescriptprofilercontrol2-prepareprofilerstop.md)來通知分析工具，您很快就會停止程式碼剖析。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [動態指令碼分析工具介面](../../winscript/reference/active-script-profiler-interfaces.md)

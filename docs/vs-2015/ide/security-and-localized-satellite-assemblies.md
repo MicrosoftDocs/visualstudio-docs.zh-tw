@@ -15,26 +15,22 @@ helpviewer_keywords:
 - localization, satellite assemblies
 ms.assetid: 6d953840-b301-47d5-8d34-30c1b29b5071
 caps.latest.revision: 9
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 9c810c6c7e0c0c73557e6b38860c1e6d3953b225
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 866e313a36af5ef72f910a5eafbf7b31c971d890
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65691294"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72672902"
 ---
 # <a name="security-and-localized-satellite-assemblies"></a>安全性和當地語系化附屬組件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-如果您的主要組件使用強式命名，則必須使用與主要組件相同的私密金鑰來簽署附屬組件。 如果主要與附屬組件的公開/私密金鑰組不符，則不會載入資源。 如需簽署組件的詳細資訊，請參閱[如何：使用強式名稱簽署組件](https://msdn.microsoft.com/library/2c30799a-a826-46b4-a25d-c584027a6c67)。  
-  
- 一般而言，您可能需要讓組織的簽署群組或外部簽署組織使用私密金鑰進行簽署。 原因是私密金鑰具有機密本質︰通常只有少數人才能進行存取。 您可以在開發期間使用延遲簽署。 如需詳細資訊，請參閱[延遲簽署組件](https://msdn.microsoft.com/library/9d300e17-5bf1-4360-97da-2aa55efd9070)。  
-  
-## <a name="see-also"></a>請參閱  
- [組件安全性考量](https://msdn.microsoft.com/library/1b5439c1-f3d5-4529-bd69-01814703d067)   
- [重要的安全性概念](https://msdn.microsoft.com/library/3cfced4f-ea02-4e66-ae98-d69286363e98)   
- [以 .NET Framework 為基礎的國際應用程式簡介](../ide/introduction-to-international-applications-based-on-the-dotnet-framework.md)   
- [當地語系化應用程式](../ide/localizing-applications.md)   
- [全球化和當地語系化應用程式](../ide/globalizing-and-localizing-applications.md)
+如果您的主要組件使用強式命名，則必須使用與主要組件相同的私密金鑰來簽署附屬組件。 如果主要與附屬組件的公開/私密金鑰組不符，則不會載入資源。 如需簽署組件的詳細資訊，請參閱[如何：使用強式名稱簽署組件](https://msdn.microsoft.com/library/2c30799a-a826-46b4-a25d-c584027a6c67)。
+
+ 一般而言，您可能需要讓組織的簽署群組或外部簽署組織使用私密金鑰進行簽署。 原因是私密金鑰具有機密本質︰通常只有少數人才能進行存取。 您可以在開發期間使用延遲簽署。 如需詳細資訊，請參閱[延遲簽署組件](https://msdn.microsoft.com/library/9d300e17-5bf1-4360-97da-2aa55efd9070)。
+
+## <a name="see-also"></a>另請參閱
+ [元件安全性考慮](https://msdn.microsoft.com/library/1b5439c1-f3d5-4529-bd69-01814703d067)[重要的安全性概念](https://msdn.microsoft.com/library/3cfced4f-ea02-4e66-ae98-d69286363e98)[根據 .NET Framework](../ide/introduction-to-international-applications-based-on-the-dotnet-framework.md) [當地語系化應用](../ide/localizing-applications.md)程式的國際應用程式[全球化和當地語系化應用](../ide/globalizing-and-localizing-applications.md)程式

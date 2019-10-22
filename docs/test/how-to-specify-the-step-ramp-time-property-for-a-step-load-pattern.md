@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - load tests, load patterns
 ms.assetid: 4a69e857-f93b-4907-9a01-fd1b66291205
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: f3353b6c46520dde1134c7ccff835b215b2d0ef8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: a45bcbdc149a6d3665efb0bc203d4a21138c979a
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62821087"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653355"
 ---
-# <a name="how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern"></a>HOW TO：指定步驟負載模式的逐步遞增時間屬性
+# <a name="how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern"></a>如何：指定步驟負載模式的逐步遞增時間屬性
 
 使用 [新增負載測試精靈] 建立負載測試之後，您就可以使用 [負載測試編輯器] 來變更情節屬性，以便符合您的測試需求和目標。 如需詳細資訊，請參閱[逐步解說：建立和執行負載測試](../test/walkthrough-create-and-run-a-load-test.md)。
 
@@ -68,7 +68,7 @@ ms.locfileid: "62821087"
 
 6. 完成變更屬性之後，請選擇 [檔案] 功能表上的 [儲存]。 然後，您就可以使用新的 [逐步遞增時間] 值來執行負載測試。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [編輯負載測試情節](../test/edit-load-test-scenarios.md)
 - [測試控制器和測試代理程式](configure-test-agents-and-controllers-for-load-tests.md)

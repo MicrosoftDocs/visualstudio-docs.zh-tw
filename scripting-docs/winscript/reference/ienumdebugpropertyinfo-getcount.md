@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugPropertyInfo::GetCount |Microsoft Docs
+title: IEnumDebugPropertyInfo：： GetCount |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 06ed69926b47d8c40c3914acbd2b0208e55f709a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fea4872761dbc67a297400dba77f660ae2e3076b
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62963438"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574212"
 ---
 # <a name="ienumdebugpropertyinfogetcount"></a>IEnumDebugPropertyInfo::GetCount
-取得數`DebugPropertyInfo`列舉值中的結構。  
+取得列舉值中 `DebugPropertyInfo` 結構的數目。  
   
 ## <a name="syntax"></a>語法  
   
@@ -37,11 +37,11 @@ HRESULT GetCount (
   
 #### <a name="parameters"></a>參數  
  `pcelt`  
- [out]傳回的數目`DebugPropertyInfo`列舉值中的結構。  
+ 脫銷傳回列舉值中 `DebugPropertyInfo` 結構的數目。  
   
 ## <a name="return-value"></a>傳回值  
- 會傳回有效`HRESULT`，通常是`S_OK`。  
+ 傳回有效的 `HRESULT`，通常是 `S_OK`。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IEnumDebugPropertyInfo 介面](../../winscript/reference/ienumdebugpropertyinfo-interface.md)   
  [DebugPropertyInfo 結構](../../winscript/reference/debugpropertyinfo-structure.md)

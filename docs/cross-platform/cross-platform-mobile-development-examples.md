@@ -1,7 +1,7 @@
 ---
-title: 跨平台行動裝置開發範例 | Microsoft Docs
+title: 跨平臺行動裝置開發範例 |Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/17/2019
 ms.technology: vs-ide-mobile
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,16 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: b3980273e746b5f6dacd2d8d612a5e5e7dfe2a8e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 31619757684811fb5090e6edb05c464be59fa4dd
+ms.sourcegitcommit: 8a96a65676fd7a2a03b0803d7eceae65f3fa142b
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62819415"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72589006"
 ---
 # <a name="cross-platform-mobile-development-examples"></a>跨平台行動裝置開發範例
-數個 Visual C++ for Cross-Platform Mobile Development 所安裝的範本會產生完整的範例，可讓您從中學習。 此外，Windows 開發人員中心有數個範例應用程式，您可以下載並在 Visual Studio 中試用。
+
+使用工作負載進行行動裝置 **C++開發**所安裝的數個範本會產生完整的範例，供您用來從中學習。 此外，Windows 開發人員中心有數個範例應用程式，您可以下載並在 Visual Studio 中試用。
 
 - [hello jni Android 應用程式範例](https://code.msdn.microsoft.com/hello-jni-Android-790ab73d)
 
@@ -36,7 +37,7 @@ ms.locfileid: "62819415"
 
 - [TwoLibs Android 程式庫範例](https://code.msdn.microsoft.com/TwoLibs-Android-Library-6396e5c4)
 
-   這個範例是 Android NDK TwoLibs 範例的連接埠。 它使用動態載入的共用程式庫和靜態 C++ Android 原生程式庫，可實作從 Java 原生介面應用程式呼叫的方法。 這個範例是很好的起點，能讓開發人員了解如何以 Visual Studio 2015 使用靜態/動態共用程式庫來建置端對端 JNI Android 應用程式。
+   這個範例是 Android NDK TwoLibs 範例的連接埠。 它使用動態載入的共用程式庫和靜態 C++ Android 原生程式庫，可實作從 Java 原生介面應用程式呼叫的方法。 這個範例是一個不錯的起點，讓開發人員瞭解如何使用靜態/動態共用程式庫來建立具有 Visual Studio 的端對端 JNI Android 應用程式。
 
 - [Tea Pot Android 應用程式範例](https://code.msdn.microsoft.com/Tea-Pot-Android-Application-e7c05d73)
 
@@ -48,8 +49,8 @@ ms.locfileid: "62819415"
 
 - [test-libstdcpp Android 程式庫範例](https://code.msdn.microsoft.com/test-libstdcpp-Android-00b548f5)
 
-   這個範例是 Android NDK test-libstdc++ 範例的連接埠，專門用來搭配 Visual Studio 2015 使用。 這個範例是很好的起點，能讓開發人員了解如何使用標準程式庫。
+   這個範例是 Android NDK 測試-libstdc + + 範例的埠，特別是用於 Visual Studio。 這個範例是很好的起點，能讓開發人員了解如何使用標準程式庫。
 
-  若要在 Visual Studio 中開啟其中一個範例，請下載 zip 檔案，並在總管中開啟下載檔案的 [屬性]  頁面。 選擇 [解除封鎖]  按鈕然後選擇 [確定] 。 將 zip 檔案的內容解壓縮到方便存取的位置，然後開啟解壓縮範例的 C++ 資料夾，並開啟方案檔。
+  若要在 Visual Studio 中開啟其中一個範例，請下載 zip 檔案，並在總管中開啟下載檔案的 [屬性] 頁面。 選擇 [解除封鎖] 按鈕然後選擇 [確定]。 將 zip 檔案的內容解壓縮到方便存取的位置，然後開啟解壓縮範例的 C++ 資料夾，並開啟方案檔。
 
   若要建置範例，請按 **F7** 鍵，或從功能表列上選擇 [建置]、[建置方案]。

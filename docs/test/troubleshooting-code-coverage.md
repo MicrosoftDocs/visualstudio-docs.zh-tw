@@ -2,21 +2,21 @@
 title: 針對程式碼涵蓋範圍進行疑難排解
 ms.date: 11/04/2016
 ms.topic: troubleshooting
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-author: gewarren
-ms.openlocfilehash: 6416045f040e9825bab6eeb33dd4b75478166ee3
-ms.sourcegitcommit: 689ba54ea14257d13031de881f5d4fe937a36f56
+author: jillre
+ms.openlocfilehash: 9a7e90310df3e9e2e73b653fdc651ba266e679ae
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "71342483"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72659884"
 ---
 # <a name="troubleshoot-code-coverage"></a>對程式碼涵蓋範圍進行疑難排解
 
-Visual Studio 中的程式碼涵蓋範圍分析工具會收集原生組件和 Managed 組件 ( *.dll* 或 *.exe* 檔) 的資料。 不過，在某些情況下，[程式碼涵蓋範圍結果] 視窗會顯示類似「產生空白的結果:...」的錯誤。有幾種原因可能會導致您取得空的結果。 本文可協助您解決這些問題。
+Visual Studio 中的程式碼涵蓋範圍分析工具會收集原生組件和 Managed 組件 ( *.dll* 或 *.exe* 檔) 的資料。 不過，在某些情況下，[程式**代碼涵蓋範圍結果**] 視窗會顯示類似「產生空白的結果： ...」的錯誤。有幾個原因會讓您取得空的結果。 本文可協助您解決這些問題。
 
 ## <a name="what-you-should-see"></a>您應該會看見
 
@@ -58,7 +58,7 @@ Visual Studio 中的程式碼涵蓋範圍分析工具會收集原生組件和 Ma
 
 解決方式&mdash;請確定您的組建設定會產生 *.pdb* 檔。 如果建置專案時沒有更新 *.pdb* 檔案，請開啟專案屬性，選取 [組建] 頁面，選擇 [進階]，然後檢查 [偵錯資訊]。
 
-針對C++專案，請確定產生的 .pdb 檔案具有完整的偵錯工具資訊。 開啟 [專案屬性]，並確認 [**連結器** >   > ] [**產生** **的偵錯工具**] 設定為 **[產生針對共用和發行優化的偵錯工具資訊（/debug： FULL）** ]。
+針對C++專案，請確定產生的 .pdb 檔案具有完整的偵錯工具資訊。 開啟 [專案屬性]，並確認 [產生的**調試**程式 **]  > ** [ >  產生的檢查] 設定為**產生針對共用和發行優化的 debug 資訊（/debug： FULL）** 。
 
 如果 *.pdb* 和 *.dll* 或 *.exe* 檔案在不同的位置，請將 *.pdb* 檔複製到同一個目錄中。 將程式碼涵蓋範圍引擎設定成搜尋另一個位置的 *.pdb* 檔也是可行的。 如需詳細資訊，請參閱[自訂程式碼涵蓋範圍分析](../test/customizing-code-coverage-analysis.md)。
 
@@ -126,6 +126,6 @@ Visual Studio 中的程式碼涵蓋範圍分析工具會收集原生組件和 Ma
 
 解決方式&mdash;無。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [使用程式碼涵蓋範圍來決定所測試的程式碼數量](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)

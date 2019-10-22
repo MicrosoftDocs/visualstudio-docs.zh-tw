@@ -1,5 +1,5 @@
 ---
-title: IDebugAsyncOperationCallBack::onComplete | Microsoft Docs
+title: IDebugAsyncOperationCallBack：： onComplete |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f9e5532a55901d8e29addfee58594645440991f6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a15ae57d64d2b1e7be867c20e9683e4aaa415974
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62821868"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573238"
 ---
 # <a name="idebugasyncoperationcallbackoncomplete"></a>IDebugAsyncOperationCallBack::onComplete
-結果是可從非同步偵錯作業的訊號。  
+表示可從非同步 debug 作業取得結果。  
   
 ## <a name="syntax"></a>語法  
   
@@ -34,7 +34,7 @@ HRESULT onComplete();
 ```  
   
 #### <a name="parameters"></a>參數  
- 這個方法會接受任何參數。  
+ 這個方法不接受任何參數。  
   
 ## <a name="return-value"></a>傳回值  
  方法會傳回 `HRESULT`。 可能的值包括 (但不限於) 下表中的這些值。  
@@ -44,8 +44,8 @@ HRESULT onComplete();
 |`S_OK`|方法成功。|  
   
 ## <a name="remarks"></a>備註  
- 此方法可讓您表示結果是可從`IDebugAsyncOperation`物件。 在 偵錯工具執行緒就會引發事件。  
+ 這個方法會指示結果可從 `IDebugAsyncOperation` 物件取得。 事件會在偵錯工具執行緒中引發。  
   
-## <a name="see-also"></a>另請參閱  
- [IDebugAsyncOperationCallBack Interface](../../winscript/reference/idebugasyncoperationcallback-interface.md)   
+## <a name="see-also"></a>請參閱  
+ [IDebugAsyncOperationCallBack 介面](../../winscript/reference/idebugasyncoperationcallback-interface.md)   
  [IDebugAsyncOperation 介面](../../winscript/reference/idebugasyncoperation-interface.md)

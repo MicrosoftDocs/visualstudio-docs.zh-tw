@@ -1,5 +1,5 @@
 ---
-title: 無效的字元 (JavaScript) |Microsoft Docs
+title: 不正確字元（JavaScript） |Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
@@ -14,27 +14,27 @@ ms.assetid: b6a54a93-7fc9-459a-bdd6-f42d1ce40b5f
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6ec548ff629663e647d2d153ff87caa4edb1dd21
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 267dcc5af0870132a14c679c7fc26589d6b776c9
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63007135"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576577"
 ---
 # <a name="invalid-character-javascript"></a>無效的字元 (JavaScript)
-組成識別項不使用的字元 （或字元） 辨識為有效的[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]編譯器。 有效的字元使用下列規則：  
+您使用 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 編譯器無法辨識為有效的字元（或字元）來組成識別碼。 有效字元會使用下列規則：  
   
-- 第一個字元必須是 ASCII 字母 （大寫或小寫） 或底線 (_)。  
+- 第一個字元必須是 ASCII 字母（大寫或小寫）或底線（_）。  
   
-- 後續的字元可以是 ASCII 字母、 數字或底線。  
+- 後續的字元可以是 ASCII 字母、數位或底線。  
   
-- 識別項名稱不能是保留的字。  
+- 識別碼名稱不能是保留字。  
   
 ### <a name="to-correct-this-error"></a>更正這個錯誤  
   
-- 請避免使用這些字元的一部分[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]語言定義。  
+- 避免使用不屬於 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 語言定義的字元。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [變數](../../javascript/variables-javascript.md)   
  [特殊字元](../../javascript/advanced/special-characters-javascript.md)   
  [資料類型](../../javascript/data-types-javascript.md)

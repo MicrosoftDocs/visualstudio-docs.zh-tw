@@ -14,22 +14,22 @@ helpviewer_keywords:
 - command aliases
 ms.assetid: de8bb378-8c1c-4087-a9a5-537fa8314c19
 caps.latest.revision: 24
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 573c120aafdf520b137e3fb50251ed8606f5c43a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7e9419e64cd211490fc1d3785045b5de117d392e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68160885"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72657857"
 ---
 # <a name="visual-studio-command-aliases"></a>Visual Studio Command Aliases
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-別名提供一種在 [尋找/命令]  方塊或 [命令]  視窗中輸入命令的方式，該方式縮短了執行命令所需的文字。 例如，您可以使用預先定義的別名 `>of` (而不是輸入 `>File.OpenFile`)，來顯示 [開啟檔案]  對話方塊。
+別名提供一種在 [尋找/命令] 方塊或 [命令] 視窗中輸入命令的方式，該方式縮短了執行命令所需的文字。 例如，您可以使用預先定義的別名 `>of` (而不是輸入 `>File.OpenFile`)，來顯示 [開啟檔案] 對話方塊。
 
- 在 [命令]  視窗中鍵入 `alias` 可顯示目前的別名及其定義。 鍵入 `>cls` 可清除 [命令]  視窗的內容。 如果您想要查看特定命令的別名，請鍵入 `alias <command name>`。
+ 在 [命令] 視窗中鍵入 `alias` 可顯示目前的別名及其定義。 鍵入 `>cls` 可清除 [命令] 視窗的內容。 如果您想要查看特定命令的別名，請鍵入 `alias <command name>`。
 
  您可以輕鬆地為其中一個 Visual Studio 命令 (不論是否包含引數) 建立自己的別名。 例如，`File.NewFile MyFile.txt` 的別名語法是 `alias MyAlias File.NewFile MyFile.txt`。 您可以使用 `alias <alias name> /delete` 刪除其中一個別名
 
@@ -71,7 +71,7 @@ ms.locfileid: "68160885"
 |[啟動命令](../../ide/reference/start-command.md)|G|Debug.Start|
 |[移至命令](../../ide/reference/go-to-command.md)|GotoLn|Edit.GoTo|
 |移至大括號|GotoBrace|Edit.GotoBrace|
-|F1Help|Help|Help.F1Help|
+|F1Help|說明|Help.F1Help|
 |即時模式|immed|Tools.ImmediateMode|
 |以文字形式插入檔案|InsertFile|Edit.InsertFileAsText|
 |[列出呼叫堆疊命令](../../ide/reference/list-call-stack-command.md)|kb|Debug.ListCallStack|
@@ -127,5 +127,5 @@ ms.locfileid: "68160885"
 |列出處理序|&#124;|Debug.ListProcesses|
 |[列出執行緒命令](../../ide/reference/list-threads-command.md)|~ ~*k ~\*kb|Debug.ListThreads Debug.ListTheads /AllThreads|
 
-## <a name="see-also"></a>另請參閱
- [Visual Studio 命令](../../ide/reference/visual-studio-commands.md)[命令視窗](../../ide/reference/command-window.md)[尋找/命令方塊](../../ide/find-command-box.md)
+## <a name="see-also"></a>請參閱
+ [Visual Studio 命令](../../ide/reference/visual-studio-commands.md)[命令視窗](../../ide/reference/command-window.md)[尋找/命令框](../../ide/find-command-box.md)

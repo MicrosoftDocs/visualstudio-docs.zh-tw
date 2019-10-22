@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptProfilerControl2::PrepareProfilerStop | Microsoft Docs
+title: IActiveScriptProfilerControl2：:P repareProfilerStop |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -13,15 +13,15 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 11a32f36ec6eddcc06faa77e093f19e8df503fa4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 24d4d73e0263882ad028ea66d3fac5e24f3af9ba
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62968759"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72571438"
 ---
 # <a name="iactivescriptprofilercontrol2prepareprofilerstop"></a>IActiveScriptProfilerControl2::PrepareProfilerStop
-您要停止分析在所有適用的指令碼引擎通知分析工具。 這個方法，您可以使用取得的完整呼叫堆疊如果[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]停止程式碼剖析時執行。  
+通知分析工具您即將停止所有適用的腳本引擎上的程式碼剖析。 藉由使用這個方法，您可以在停止分析時，取得完整的呼叫堆疊（如果 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 正在執行）。  
   
 ## <a name="syntax"></a>語法  
   
@@ -30,21 +30,21 @@ HRESULT PrepareProfilerStop();
 ```  
   
 #### <a name="parameters"></a>參數  
- 此方法不採用任何參數。  
+ 方法不接受任何參數。  
   
 ## <a name="return-value"></a>傳回值  
- 會傳回 HRESULT。 可能的值如下：  
+ 傳回 HRESULT。 可能的值如下：  
   
 |傳回值|意義|  
 |------------------|-------------|  
 |`S_OK`|方法成功。|  
-|`E_FAIL`|程式碼剖析無法啟動。|  
-|`S_FALSE`|分析已停止時未執行的指令碼。|  
+|`E_FAIL`|無法啟動程式碼剖析。|  
+|`S_FALSE`|腳本未執行時，程式碼剖析已停止。|  
 |`ACTIVPROF_E_PROFILER_ABSENT`|未啟用程式碼剖析。|  
   
 ## <a name="remarks"></a>備註  
- 呼叫`IActiveScriptProfilerControl2::PrepareProfilerStop`可確保函式呼叫堆疊中的事件會傳送。 此方法，就必須停止目前的索引標籤上的任何指令碼引擎上進行分析之前呼叫。針對任何指令碼引擎，可以呼叫這個方法。  
+ 呼叫 `IActiveScriptProfilerControl2::PrepareProfilerStop` 可確保呼叫堆疊中函式的事件會被傳送。 在您于目前索引標籤上的任何腳本引擎上停止分析之前，必須先呼叫這個方法。可以針對任何腳本引擎呼叫方法。  
   
-## <a name="see-also"></a>另請參閱  
- [IActiveScriptProfilerControl2::CompleteProfilerStart](../../winscript/reference/iactivescriptprofilercontrol2-completeprofilerstart.md)   
+## <a name="see-also"></a>請參閱  
+ [IActiveScriptProfilerControl2：： CompleteProfilerStart](../../winscript/reference/iactivescriptprofilercontrol2-completeprofilerstart.md)    
  [IActiveScriptProfilerControl2 介面](../../winscript/reference/iactivescriptprofilercontrol2-interface.md)

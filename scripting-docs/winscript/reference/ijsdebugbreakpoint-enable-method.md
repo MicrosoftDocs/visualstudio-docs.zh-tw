@@ -1,5 +1,5 @@
 ---
-title: 'Ijsdebugbreakpoint:: Enable 方法 |Microsoft Docs'
+title: IJsDebugBreakPoint：： Enable 方法 |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -15,12 +15,12 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 14f827048db7c29e09938de3d1c70cd4d61a388d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 72f66bf2b0638d2061c2ba21ddeb5d9caf52fbc3
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62583226"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577701"
 ---
 # <a name="ijsdebugbreakpointenable-method"></a>IJsDebugBreakPoint::Enable 方法
 啟用中斷點。  
@@ -34,10 +34,10 @@ HRESULT Enable(void);
 ## <a name="return-value"></a>傳回值  
   
 ## <a name="remarks"></a>備註  
- 如果在已刪除的中斷點上呼叫，則傳回 E_UNEXPECTED。  
+ 如果在已刪除的中斷點上呼叫，則會傳回 E_UNEXPECTED。  
   
 ## <a name="requirements"></a>需求  
- **標頭：** jscript9diag.h  
+ **標頭：** jscript9diag。h  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IJsDebugBreakPoint 介面](../../winscript/reference/ijsdebugbreakpoint-interface.md)

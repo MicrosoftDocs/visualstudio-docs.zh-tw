@@ -3,17 +3,17 @@ title: 使用紋理和影像
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: b9fbc8fa-66d1-4055-8460-24d8b8fbe43e
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5642a2e84766758b5fdf50bc652fd32b585427bf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: d59b7c2c52cc0fe230a6e9c5c7c89db56d065aff
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62843972"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72633708"
 ---
 # <a name="work-with-textures-and-images"></a>使用紋理和影像
 
@@ -50,7 +50,7 @@ ms.locfileid: "62843972"
 
 ## <a name="related-topics"></a>相關主題
 
-|標題|說明|
+|標題|描述|
 |-----------|-----------------|
 |[Image Editor](../designers/image-editor.md)|描述如何使用影像編輯器來處理紋理和影像。|
-|[影像編輯器範例](../designers/image-editor-examples.md)|提供示範如何使用影像編輯器來執行一般映像處理工作的主題連結。|
+|[影像編輯器範例](../designers/how-to-create-a-basic-texture.md)|提供示範如何使用影像編輯器來執行一般映像處理工作的主題連結。|

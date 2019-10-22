@@ -8,15 +8,15 @@ helpviewer_keywords:
 - UML API
 ms.assetid: d52e0bbf-0166-4bb4-a2e3-cefed6188875
 caps.latest.revision: 21
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 240f143015f22435deb4f1347f74bebcc8b334c3
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 380aaa5bed1e30c549334bc004ea38e3f0bdb762
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68871906"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72669928"
 ---
 # <a name="define-a-work-item-link-handler"></a>定義工作項目連結處理常式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ ms.locfileid: "68871906"
 
     1. 在 [檔案] 功能表上，依序選擇 [新增]和 [專案]。
 
-    2. 在 **已安裝的範本** 底下, 展開 **視覺C#效果** 或  **Visual Basic**, 然後在中間欄中按一下 **類別**
+    2. 在 **已安裝的範本** 底下，展開 **視覺C#效果** 或  **Visual Basic**，然後在中間欄中按一下 **類別**
 
     3. 設定 [方案] 以表示您是要建立新的方案，還是將元件加入已經開啟的 VSIX 方案。
 
@@ -52,7 +52,7 @@ ms.locfileid: "68871906"
 
     - 在方案總管中，在 VSIX 專案的捷徑功能表上，選擇 [設定為啟始專案]。
 
-4. 在**extension.vsixmanifest**的 [**內容**] 底下, 加入類別庫專案做為 MEF 元件。
+4. 在**extension.vsixmanifest**的 [**內容**] 底下，加入類別庫專案做為 MEF 元件。
 
     1. 在 [中繼資料] 索引標籤上，設定 VSIX 的名稱。
 
@@ -84,10 +84,10 @@ ms.locfileid: "68871906"
 
  `System.Drawing`-由範例程式碼使用
 
- 如果您找不到上述其中一個參考下 **.Net**索引標籤**加入參考**對話方塊中，使用 [瀏覽] 索引標籤來尋找在 \Program Files\Microsoft Visual Studio [版本] \Common7\IDE\在 PrivateAssemblies\\。
+ 如果您在 [**加入參考**] 對話方塊的 [ **.net** ] 索引標籤下找不到其中一個參考，請使用 [流覽] 索引標籤，在 \Program Files\Microsoft Visual Studio [version] \Common7\IDE\PrivateAssemblies \\ 中尋找。
 
 ### <a name="import-the-work-item-namespace"></a>匯入工作項目命名空間
- 在您[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]的專案**參考**中, 加入下列元件的參考:
+ 在您的 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 專案**參考**中，加入下列元件的參考：
 
 - Microsoft.TeamFoundation.WorkItemTracking.Client.dll
 
@@ -160,15 +160,15 @@ namespace WorkItems
 
      [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的實驗執行個體隨即啟動。
 
-     **疑難排解**:如果新[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]的未啟動, 請確定 VSIX 專案已設定為方案的啟始專案。
+     **疑難排解**：如果新的 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 未啟動，請確定 VSIX 專案已設定為方案的啟始專案。
 
 2. 在實驗性 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]中，開啟或建立模型專案，並開啟或建立模型圖表。
 
 3. 建立模型項目，例如 UML 類別，並設定其名稱。
 
-4. 以滑鼠右鍵按一下專案, 然後按一下 [**建立工作專案**]。
+4. 以滑鼠右鍵按一下專案，然後按一下 [**建立工作專案**]。
 
-    - 如果子功能表顯示 [**開啟 Team Foundation Server 連接**], 您將需要關閉專案、連接到適當的 TFS, 然後重新開機此程式。
+    - 如果子功能表顯示 [**開啟 Team Foundation Server 連接**]，您將需要關閉專案、連接到適當的 TFS，然後重新開機此程式。
 
     - 如果子功能表顯示工作項目類型的清單，請按一下其中一個。
 
@@ -180,9 +180,9 @@ namespace WorkItems
 
 7. 請確認工作項目現在是以紅色顯示。 這示範了範例程式碼的 `OnWorkItemLinked()`。
 
-     **疑難排解**:如果處理常式方法尚未執行, 請確認:
+     **疑難排解**：如果處理常式方法尚未執行，請確認：
 
-    - 類別庫專案在 VSIX 專案的 [**內容**] 清單中列為 MEF 元件 。
+    - 類別庫專案在 VSIX 專案的 [**內容**]**清單中列為**MEF 元件。
 
     - 正確的 `Export` 屬性會附加至處理常式類別，且該類別會實作 `ILinkedWorkItemExtension`。
 
@@ -293,9 +293,9 @@ element.AddReference(ReferenceConstants.WorkItem, linkString, true);
 
   ```
 
-  如需參考的詳細資訊, 請參閱[將參考字串附加至 UML 模型](../modeling/attach-reference-strings-to-uml-model-elements.md)專案。
+  如需參考的詳細資訊，請參閱[將參考字串附加至 UML 模型](../modeling/attach-reference-strings-to-uml-model-elements.md)專案。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [TeamFoundation. WorkItemTracking. WorkItemStore](/previous-versions/visualstudio/visual-studio-2013/bb179850(v=vs.120))
 - [連結模型項目和工作項目](../modeling/link-model-elements-and-work-items.md)

@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - Web performance tests, custom HTTP body editor
 ms.assetid: a0b2d8ff-3e2a-487e-9172-90047174f336
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 30ce24b0cb48e88ddb77cf3576d40f95ed022ba0
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+ms.openlocfilehash: 357114ad623494a26d98d3b190ed50847a0b27cd
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926520"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72664799"
 ---
-# <a name="how-to-create-a-custom-http-body-editor-for-the-web-performance-test-editor"></a>作法：建立 Web 效能測試編輯器的自訂 HTTP 本文編輯器
+# <a name="how-to-create-a-custom-http-body-editor-for-the-web-performance-test-editor"></a>如何：建立 Web 效能測試編輯器的自訂 HTTP 內容編輯器
 
 您可以建立自訂內容編輯器，讓您能夠編輯 Web 服務要求的字串內容或二進位內容，例如 SOAP、REST、asmx、wcf、RIA 和其他 Web 服務要求類型。
 
@@ -35,29 +35,29 @@ ms.locfileid: "68926520"
 
    專案會加入至新的方案中，而且設計工具中會出現名為 *UserControl1.cs* 的 <xref:System.Windows.Forms.UserControl>。
 
-1. 從 [工具箱]  的 [通用控制項]  分類底下，將 <xref:System.Windows.Forms.RichTextBox> 拖曳至 UserControl1 介面上。
+1. 從 [工具箱] 的 [通用控制項] 分類底下，將 <xref:System.Windows.Forms.RichTextBox> 拖曳至 UserControl1 介面上。
 
-1. 選擇 <xref:System.Windows.Forms.RichTextBox> 控制項右上角的 [動作] 標籤圖像 (![智慧標籤圖像](../test/media/vs_winformsmttagglyph.gif))，然後選取並且 [停駐於父容器中]  。
+1. 選擇 <xref:System.Windows.Forms.RichTextBox> 控制項右上角的 [動作] 標籤圖像 (![智慧標籤圖像](../test/media/vs_winformsmttagglyph.gif))，然後選取並且 [停駐於父容器中]。
 
-1. 在 [方案總管]  中，以滑鼠右鍵按一下 [Windows Form 程式庫] 專案，然後選取 [屬性]  。
+1. 在 [方案總管] 中，以滑鼠右鍵按一下 [Windows Form 程式庫] 專案，然後選取 [屬性]。
 
-1. 在 [屬性]  中，選取 [應用程式]  索引標籤。
+1. 在 [屬性] 中，選取 [應用程式] 索引標籤。
 
-1. 在 [目標 Framework]  下拉式清單中選取 .NET Framework 4 (或更新版本)。
+1. 在 [目標 Framework] 下拉式清單中選取 .NET Framework 4 (或更新版本)。
 
-1. [目標 Framework 變更]  對話方塊隨即出現。
+1. [目標 Framework 變更] 對話方塊隨即出現。
 
 1. 選擇 [ **是**]。
 
-1. 在 [方案總管]  中，以滑鼠右鍵按一下 [參考]  節點，然後選取 [新增參考]  。
+1. 在 [方案總管] 中，以滑鼠右鍵按一下 [參考] 節點，然後選取 [新增參考]。
 
-1. [新增參考]  對話方塊隨即顯示。
+1. [新增參考] 對話方塊隨即顯示。
 
-1. 選擇 [.NET]  索引標籤並向下捲動，然後選取 **Microsoft.VisualStudio.QualityTools.WebTestFramework**，再選擇 [確定]  。
+1. 選擇 [.NET] 索引標籤並向下捲動，然後選取 **Microsoft.VisualStudio.QualityTools.WebTestFramework**，再選擇 [確定]。
 
-1. 如果 [設計工具檢視]  未保持開啟狀態，請在 [方案總管]  中以滑鼠右鍵按一下 **UserControl1.cs**，然後選取 [設計工具檢視]  。
+1. 如果 [設計工具檢視] 未保持開啟狀態，請在 [方案總管] 中以滑鼠右鍵按一下 **UserControl1.cs**，然後選取 [設計工具檢視]。
 
-1. 以滑鼠右鍵按一下設計介面，然後選取 [檢視程式碼]  。
+1. 以滑鼠右鍵按一下設計介面，然後選取 [檢視程式碼]。
 
 1. (選擇性) 將類別和建構函式的名稱從 UserControl1 變更為有意義的名稱，例如 MessageEditorControl：
 
@@ -119,19 +119,19 @@ private MessageEditorControl messageEditorControl
 
 messageEditorControl 執行個體會裝載於 <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin.CreateEditor*> 方法建立的外掛程式對話方塊內。 此外，messageEditorControl 的 <xref:System.Windows.Forms.RichTextBox> 中會填入 <xref:Microsoft.VisualStudio.TestTools.WebTesting.IHttpBody> 的內容。 不過，除非 <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin.SupportsContentType*> 傳回 `true`，否則無法建立外掛程式。 以此編輯器為例，如果 <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin.SupportsContentType*> 中的 `true` 包含 "xml"，則 <xref:Microsoft.VisualStudio.TestTools.WebTesting.IHttpBody.ContentType*> 會傳回 <xref:Microsoft.VisualStudio.TestTools.WebTesting.IHttpBody>。
 
-當完成編輯字串內容而且使用者按一下外掛程式對話方塊中的 [確定]  時，便會呼叫 <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin.GetNewValue*>，以取得作為字串的已編輯文字，並且更新 [Web 測試效能編輯器] 之要求中的 [字串內容]  。
+當完成編輯字串內容而且使用者按一下外掛程式對話方塊中的 [確定] 時，便會呼叫 <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin.GetNewValue*>，以取得作為字串的已編輯文字，並且更新 [Web 測試效能編輯器] 之要求中的 [字串內容]。
 
 ### <a name="create-a-class-and-implement-the-istringhttpbodyeditorplugin-interface"></a>建立類別並實作 IStringHttpBodyEditorPlugin 介面
 
-1. 在 [方案總管]  中，以滑鼠右鍵按一下 [Windows Form 控制項程式庫] 專案，然後選取 [新增新項目]  。
+1. 在 [方案總管] 中，以滑鼠右鍵按一下 [Windows Form 控制項程式庫] 專案，然後選取 [新增新項目]。
 
-   隨即顯示 [ 新增項目]  對話方塊。
+   隨即顯示 [ 新增項目] 對話方塊。
 
-2. 選取 [類別]  。
+2. 選取 [類別]。
 
-3. 在 [名稱]  文字方塊中鍵入有意義的類別名稱，例如 `MessageEditorPlugins`。
+3. 在 [名稱] 文字方塊中鍵入有意義的類別名稱，例如 `MessageEditorPlugins`。
 
-4. 選擇 [新增]  。
+4. 選擇 [新增]。
 
    Class1 會加入至專案，並顯示在 [程式碼編輯器] 中。
 
@@ -206,7 +206,7 @@ private MessageEditorControl messageEditorControl
 
 messageEditorControl 執行個體會裝載於 <xref:Microsoft.VisualStudio.TestTools.WebTesting.IBinaryHttpBodyEditorPlugin.CreateEditor*> 方法建立的外掛程式對話方塊內。 此外，messageEditorControl 的 <xref:System.Windows.Forms.RichTextBox> 中會填入 <xref:Microsoft.VisualStudio.TestTools.WebTesting.IHttpBody> 的內容。 不過，除非 <xref:Microsoft.VisualStudio.TestTools.WebTesting.IBinaryHttpBodyEditorPlugin.SupportsContentType*> 傳回 `true`，否則無法建立外掛程式。 以此編輯器為例，如果 <xref:Microsoft.VisualStudio.TestTools.WebTesting.IBinaryHttpBodyEditorPlugin.SupportsContentType*> 中的 `true` 包含 "msbin1"，則 <xref:Microsoft.VisualStudio.TestTools.WebTesting.IHttpBody.ContentType*> 會傳回 <xref:Microsoft.VisualStudio.TestTools.WebTesting.IHttpBody>。
 
-當完成編輯字串內容而且使用者按一下外掛程式對話方塊中的 [確定]  時，便會呼叫 <xref:Microsoft.VisualStudio.TestTools.WebTesting.IBinaryHttpBodyEditorPlugin.GetNewValue*>，以取得作為字串的已編輯文字，並且更新 [Web 測試效能編輯器] 之要求中的 **BinaryHttpBody.Data**。
+當完成編輯字串內容而且使用者按一下外掛程式對話方塊中的 [確定] 時，便會呼叫 <xref:Microsoft.VisualStudio.TestTools.WebTesting.IBinaryHttpBodyEditorPlugin.GetNewValue*>，以取得作為字串的已編輯文字，並且更新 [Web 測試效能編輯器] 之要求中的 **BinaryHttpBody.Data**。
 
 ### <a name="to-add-the-ibinaryhttpbodyeditorplugin-to-the-class"></a>將 IBinaryHttpBodyEditorPlugin 加入至類別
 
@@ -264,7 +264,7 @@ messageEditorControl 執行個體會裝載於 <xref:Microsoft.VisualStudio.TestT
 
 ## <a name="build-and-deploy-the-plug-ins"></a>建置和部署外掛程式
 
-1. 在 [建置]  功能表上選擇 [建置 \<Windows Form 控制項程式庫專案名稱>]  。
+1. 在 [建置] 功能表上選擇 [建置 \<Windows Form 控制項程式庫專案名稱>]。
 
 2. 關閉所有 Visual Studio 執行個體。
 
@@ -283,13 +283,13 @@ messageEditorControl 執行個體會裝載於 <xref:Microsoft.VisualStudio.TestT
 
 2. 建立 Web 效能測試，並在瀏覽器中輸入 Web 服務的 URL。
 
-3. 完成錄製時，在 [Web 效能測試編輯器] 中展開 Web 服務的要求，並選取 [字串內容]  或 [二進位內容]  。
+3. 完成錄製時，在 [Web 效能測試編輯器] 中展開 Web 服務的要求，並選取 [字串內容] 或 [二進位內容]。
 
-4. 在 [屬性]  視窗中，選取 [字串內容] 或 [二進位內容]，然後選擇省略符號 **(…)** 。
+4. 在 [屬性] 視窗中，選取 [字串內容] 或 [二進位內容]，然後選擇省略符號 **(…)** 。
 
-   [編輯 HTTP 內容資料]  對話方塊隨即顯示。
+   [編輯 HTTP 內容資料] 對話方塊隨即顯示。
 
-5. 現在您可以編輯資料並選擇 [確定]  。 這樣會叫用適用的 GetNewValue 方法，以更新 <xref:Microsoft.VisualStudio.TestTools.WebTesting.IHttpBody> 中的內容。
+5. 現在您可以編輯資料並選擇 [確定]。 這樣會叫用適用的 GetNewValue 方法，以更新 <xref:Microsoft.VisualStudio.TestTools.WebTesting.IHttpBody> 中的內容。
 
 ## <a name="compile-the-code"></a>編譯程式碼
 
@@ -297,7 +297,7 @@ messageEditorControl 執行個體會裝載於 <xref:Microsoft.VisualStudio.TestT
 
 如需詳細資訊，請參閱[專案設計工具、應用程式頁面 (C#)](../ide/reference/application-page-project-designer-csharp.md)。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin>
 - <xref:Microsoft.VisualStudio.TestTools.WebTesting.IBinaryHttpBodyEditorPlugin>

@@ -1,21 +1,21 @@
 ---
-title: HOW TO：建立 3D 地形模型
+title: 如何：建立 3D 地形模型
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: f779b1fd-82a9-4a11-8ab7-c1c9caabc883
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 41974aee19cf1e4919028d5ef0f0e9b53c6b369e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 82ee7791c8356f13ebfdce5ad5bd3ba8be0674d4
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62844446"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72635415"
 ---
-# <a name="how-to-model-3d-terrain"></a>HOW TO：建立 3D 地形模型
+# <a name="how-to-model-3d-terrain"></a>如何：建立 3D 地形模型
 
 本文會示範如何使用模型編輯器來建立 3D 地形模型。
 
@@ -55,6 +55,6 @@ ms.locfileid: "62844446"
 
 您可以使用此地形模型來展現漸層著色器的效果，如[如何：建立以幾何為基礎的漸層著色器](../designers/how-to-create-a-geometry-based-gradient-shader.md)中所述。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [模型編輯器](../designers/model-editor.md)

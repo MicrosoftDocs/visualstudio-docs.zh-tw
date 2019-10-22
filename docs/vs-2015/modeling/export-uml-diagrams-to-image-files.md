@@ -6,30 +6,30 @@ ms.technology: vs-ide-modeling
 ms.topic: conceptual
 ms.assetid: b29ce2a5-0ee3-4ab7-9aa3-13ca9c6b37a2
 caps.latest.revision: 10
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 782d5da27898de7a332824e6fb07842710ab0656
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: c095291cd02d591d9e493601b598a63c1ccb6f5b
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68871846"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72669660"
 ---
 # <a name="export-uml-diagrams-to-image-files"></a>將 UML 圖表匯出至影像檔案
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-您可以將 UML 檔從[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]匯出到 [程式控制] 底下的影像。 例如，您可能想要在文件自動產生程序進行時執行此作業。
+您可以從 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 將 UML 檔匯出至 [程式控制] 底下的影像。 例如，您可能想要在文件自動產生程序進行時執行此作業。
 
- 如果您想要手動將文件匯出到影像，您可以複製圖表中的圖形並貼到其他程式，例如 Word。 您也可以將文件列印成 XPS 格式。 如需詳細資訊, 請參閱將[圖表匯出為影像](../modeling/export-diagrams-as-images.md)。
+ 如果您想要手動將文件匯出到影像，您可以複製圖表中的圖形並貼到其他程式，例如 Word。 您也可以將文件列印成 XPS 格式。 如需詳細資訊，請參閱將[圖表匯出為影像](../modeling/export-diagrams-as-images.md)。
 
 ## <a name="saving-an-image"></a>儲存影像
  下列程式碼會定義捷徑功能表命令 (也稱為內容功能表命令)，這些命令會將影像儲存到檔案。
 
 > [!NOTE]
-> 若要將此程式碼做為功能表命令執行，您必須將它併入 MEF 元件。 如需詳細資訊, 請參閱[在模型圖表上定義功能表命令](../modeling/define-a-menu-command-on-a-modeling-diagram.md)。
+> 若要將此程式碼做為功能表命令執行，您必須將它併入 MEF 元件。 如需詳細資訊，請參閱[在模型圖表上定義功能表命令](../modeling/define-a-menu-command-on-a-modeling-diagram.md)。
 
- Code first 會使用[IShape](/previous-versions/ee789371(v=vs.140))來取得<xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram>基礎執行的。 這個類型具有 <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram.CreateBitmap%2A> 方法。
+ Code first 會使用[IShape](/previous-versions/ee789371(v=vs.140))來取得基礎執行的 <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram>。 這個類型具有 <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram.CreateBitmap%2A> 方法。
 
 ```
 namespace SaveToImage
@@ -141,5 +141,5 @@ namespace SaveToImage
 }
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
  將[圖表匯出為影像](../modeling/export-diagrams-as-images.md)[在模型圖表上定義功能表命令](../modeling/define-a-menu-command-on-a-modeling-diagram.md)

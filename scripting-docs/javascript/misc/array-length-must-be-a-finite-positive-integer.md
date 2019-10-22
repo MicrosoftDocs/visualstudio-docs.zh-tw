@@ -14,32 +14,32 @@ ms.assetid: 1a467040-4702-4178-848f-418a5974e907
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 31673205a7ca94783985e0249c5664b4bbca6147
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 69494f1485a97ff4f2c98cf2493e5d0bc5b8aa9f
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62818120"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576084"
 ---
 # <a name="array-length-must-be-a-finite-positive-integer"></a>陣列長度必須是有限的正整數
-您呼叫**陣列**不是整數 （整數包含零，再加上正值的整數的集合） 的引數的建構函式。  
+您正以不是整數的引數呼叫**陣列**的函式（整數是由零加上正整數的集合所組成）。  
   
 ### <a name="to-correct-this-error"></a>更正這個錯誤  
   
-- 只有在建立新時，才使用正整數`Array`物件。 如果您想要建立具有單一元素且不是整數的陣列，則會執行雙步驟程序中。 先建立陣列，含有一個項目，然後將值放在第一個項目 (array[0])。 以下是範例，會產生這個錯誤。  
+- 只有在建立新的 `Array` 物件時，才使用正整數。 如果您想要使用不是整數的單一元素來建立陣列，請在兩個步驟的進程中執行。 首先，建立具有一個元素的陣列，然後將值放在第一個元素（陣列 [0]）中。 以下是產生此錯誤的範例。  
   
     ```JavaScript  
     var piArray = new Array(3.14159);  
     ```  
   
-     下列範例會示範正確的方式來指定陣列與單一數字的項目。  
+     下列範例示範使用單一數值元素指定陣列的正確方式。  
   
     ```JavaScript  
     var piArray = new Array(1);  
     piArray [0] = 3.14159;  
     ```  
   
-     最大整數值 （約 4 億） 以外的值陣列的大小沒有上限。  
+     陣列的大小沒有上限，而不是最大整數值（大約4000000000）。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [使用陣列](../../javascript/advanced/using-arrays-javascript.md)

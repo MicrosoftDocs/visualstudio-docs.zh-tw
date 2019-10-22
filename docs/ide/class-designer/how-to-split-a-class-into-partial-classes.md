@@ -1,33 +1,33 @@
 ---
-title: 作法：將類別分割成部分類別 (類別設計工具)
+title: 如何：將類別分割成部分類別 (類別設計工具)
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Class Designer, partial classes
 - partial classes, Class Designer
 ms.assetid: 6f6b0b30-3996-4569-9200-20482b3adf90
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: e1426b1ad9799984f7b14604a1d8b685e9ce8813
-ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
-ms.translationtype: HT
+ms.openlocfilehash: 42d2cf5c0fa5c08c51ebfbc94d9a03221df46788
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65615407"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72647698"
 ---
-# <a name="how-to-split-a-class-into-partial-classes-in-class-designer"></a>作法：將類別分割成部分類別 (類別設計工具)
+# <a name="how-to-split-a-class-into-partial-classes-in-class-designer"></a>如何：在類別設計工具中將類別分割成部分類別
 
 您可以使用 `partial` 關鍵字 (在 Visual Basic 中為 `Partial`)，將類別或結構的宣告分割成數個宣告。 您可以使用所需數目的部分宣告。
 
 宣告可以在一或多個原始程式檔中。 所有宣告都必須位於相同的組件和相同的命名空間中。
 
-部分類別適用於數種情況。 例如，在大型專案中，將類別分割成多個檔案，即可讓一個以上的程式設計人員同時處理該專案。 當您使用 Visual Studio 產生的程式碼時，不必重新建立原始程式檔即可變更類別。 (Visual Studio 產生的程式碼範例包括 Windows Forms 和 Web 服務包裝函式程式碼)。因此，您可以建立使用自動產生類別的程式碼，而不必修改 Visual Studio 建立的檔案。
+部分類別適用於數種情況。 例如，在大型專案中，將類別分割成多個檔案，即可讓一個以上的程式設計人員同時處理該專案。 當您使用 Visual Studio 產生的程式碼時，不必重新建立原始程式檔即可變更類別。 （Visual Studio 產生的程式碼範例包括 Windows Forms 和 web 服務包裝函式程式碼）。因此，您可以建立使用自動產生類別的程式碼，而不需要修改 Visual Studio 建立的檔案。
 
 部分方法有兩種。 在 C# 中，稱為 declaring (宣告) 和 implementing (實作)；在 Visual Basic 中則稱為 declaration (宣告) 和 implementation (實作)。
 
@@ -76,7 +76,7 @@ Partial Public Class Employee
 End Class
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [部分類別和方法](/dotnet/csharp/programming-guide/classes-and-structs/partial-classes-and-methods)
 - [partial (類型) (C# 參考)](/dotnet/csharp/language-reference/keywords/partial-type)

@@ -11,20 +11,20 @@ helpviewer_keywords:
 - Command mode in Command window
 - IDE Command window
 ms.assetid: 48711628-1909-4713-a73e-d7b714c77f8a
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4fe707d82354a8c947dfa89a7323b41a489d0fa8
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+ms.openlocfilehash: 4d89b06c406d0495a5699f707c85b4e9e9b3a804
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68919299"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72654583"
 ---
 # <a name="command-window"></a>命令視窗
-[命令]  視窗是用來直接在 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 整合式開發環境 (IDE) 中執行命令或別名。 您可以執行功能表命令以及不會出現在任何功能表上的命令。 若要顯示 [命令]  視窗，請從 [檢視]  功能表中選擇 [其他視窗]  ，然後選取 [命令視窗]  。
+[命令] 視窗是用來直接在 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 整合式開發環境 (IDE) 中執行命令或別名。 您可以執行功能表命令以及不會出現在任何功能表上的命令。 若要顯示 [命令] 視窗，請從 [檢視] 功能表中選擇 [其他視窗]，然後選取 [命令視窗]。
 
 ## <a name="displaying-the-values-of-variables"></a>顯示變數的值
 若要檢查 `varA` 變數的值，請使用 [Print 命令](../../ide/reference/print-command.md)：
@@ -62,14 +62,14 @@ ms.locfileid: "68919299"
 > 您可以將整個或一部分的先前命令複製至輸入行，方法是捲動到它，並反白顯示它的全部或一部分，然後按 ENTER。
 
 ## <a name="mark-mode"></a>標記模式
-當您按一下 [命令]  視窗中的任何先前行時，會自動切換至標記模式。 這可讓您像在任何文字編輯器中一樣地選取、編輯和複製先前命令的文字，並將它們貼入目前行。
+當您按一下 [命令] 視窗中的任何先前行時，會自動切換至標記模式。 這可讓您像在任何文字編輯器中一樣地選取、編輯和複製先前命令的文字，並將它們貼入目前行。
 
 ## <a name="the-equals--sign"></a>等號 (=)
 用來輸入 `EvaluateStatement` 命令的視窗可判斷是否將等號 (=) 解譯為比較運算子或指派運算子。
 
-在 [命令]  視窗中，等號 (=) 會解譯為比較運算子。 您不能在 [命令]  視窗中使用指派運算子。 因此，比方說，如果 `varA` 和 `varB` 變數的值不同，則命令 `>Debug.EvaluateStatement(varA=varB)` 將傳回值 `False`。
+在 [命令] 視窗中，等號 (=) 會解譯為比較運算子。 您不能在 [命令] 視窗中使用指派運算子。 因此，比方說，如果 `varA` 和 `varB` 變數的值不同，則命令 `>Debug.EvaluateStatement(varA=varB)` 將傳回值 `False`。
 
-相較之下，在 [即時運算]  視窗中，等號 (=) 會解譯為指派運算子。 因此，舉例來說，`>Debug.EvaluateStatement(varA=varB)` 命令會將 `varB` 變數的值指派給變數 `varA`。
+相較之下，在 [即時運算] 視窗中，等號 (=) 會解譯為指派運算子。 因此，舉例來說，`>Debug.EvaluateStatement(varA=varB)` 命令會將 `varB` 變數的值指派給變數 `varA`。
 
 ## <a name="parameters-switches-and-values"></a>參數、切換參數和值
 部分 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 命令具有必要和選擇性引數、切換參數和值。 處理這類命令時會套用特定規則。 以下是釐清術語的豐富命令範例。
@@ -109,7 +109,7 @@ Edit.ReplaceInFiles /case /pattern:regex var[1-3]+ oldpar
 ## <a name="use-quotes-for-path-names-with-spaces"></a>使用引號括住包含空格的路徑名稱
 例如，如果您想要開啟之檔案的路徑包含空格，則必須用雙引號括住包含空格的路徑或路徑區段：**C:\\"Program Files"** 或 **"C:\Program Files"** 。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
 - [Visual Studio 命令](../../ide/reference/visual-studio-commands.md)

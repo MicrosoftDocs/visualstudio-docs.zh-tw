@@ -1,5 +1,5 @@
 ---
-title: IRemoteDebugApplicationEvents::OnDestroyThread | Microsoft Docs
+title: IRemoteDebugApplicationEvents：： OnDestroyThread |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a0db56e8fffb8b8d9626d805261a7257b4871603
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 59f2b599978cfaf993981fa66958fd3acabe4b32
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62817950"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575595"
 ---
 # <a name="iremotedebugapplicationeventsondestroythread"></a>IRemoteDebugApplicationEvents::OnDestroyThread
-處理執行緒終結的事件。  
+處理執行緒終結事件。  
   
 ## <a name="syntax"></a>語法  
   
@@ -37,7 +37,7 @@ HRESULT OnDestroyThread(
   
 #### <a name="parameters"></a>參數  
  `prdat`  
- [in]已被終結執行緒。  
+ 在已損毀的執行緒。  
   
 ## <a name="return-value"></a>傳回值  
  方法會傳回 `HRESULT`。 可能的值包括 (但不限於) 下表中的這些值。  
@@ -47,7 +47,7 @@ HRESULT OnDestroyThread(
 |`S_OK`|方法成功。|  
   
 ## <a name="remarks"></a>備註  
- 這個方法會處理執行緒終結的事件。  
+ 這個方法會處理已終結執行緒的事件。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IRemoteDebugApplicationEvents 介面](../../winscript/reference/iremotedebugapplicationevents-interface.md)

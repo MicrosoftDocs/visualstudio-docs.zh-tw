@@ -1,5 +1,5 @@
 ---
-title: HOW TO：變更字型與色彩
+title: 如何：變更字型和色彩
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -9,27 +9,27 @@ helpviewer_keywords:
 - color themes, Visual Studio
 ms.assetid: 60d91ba1-244b-4c43-847f-60b744f1352a
 caps.latest.revision: 16
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 4defa140d7ec855a10ae1e921afce78e97d69702
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 3ae3d35f98b54038b590c2fbaf75d0f1597fd0b3
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439236"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72645446"
 ---
-# <a name="how-to-change-fonts-and-colors-in-visual-studio"></a>HOW TO：變更 Visual Studio 中的字型和色彩
+# <a name="how-to-change-fonts-and-colors-in-visual-studio"></a>如何：變更 Visual Studio 中的字型和色彩
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 您可以在 Visual Studio 中透過數種方式，自訂 IDE 框架和工具視窗的色彩。
 
 > [!TIP]
-> 如需如何變更程式碼編輯器色彩的資訊，請參閱[如何：在編輯器中變更字型和色彩](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)。
+> 如需如何變更程式碼編輯器色彩的資訊，請參閱[如何：變更編輯器中的字型和色彩](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)。
 
 ### <a name="change-the-color-theme-of-the-ide"></a>變更 IDE 的色彩佈景主題
 
-1. 在功能表列上選擇 [工具] 、[選項] 。
+1. 在功能表列上選擇 [工具]、[選項]。
 
 2. 在選項清單中，依序選擇 [環境] 和 [一般]。
 
@@ -52,7 +52,7 @@ ms.locfileid: "63439236"
 
 #### <a name="to-change-the-font-and-size-of-all-text-in-the-ide"></a>若要變更 IDE 中所有文字的字型和大小
 
-1. 在功能表列上選擇 [工具] 、[選項] 。
+1. 在功能表列上選擇 [工具]、[選項]。
 
 2. 在選項清單中，依序選擇 [環境] 和 [字型和色彩]。
 
@@ -65,5 +65,5 @@ ms.locfileid: "63439236"
 
 5. 在 [大小] 清單中，選擇文字大小，然後選擇 [確定] 按鈕。
 
-## <a name="see-also"></a>另請參閱
- [Visual Studio 的協助工具功能](../ide/reference/accessibility-features-of-visual-studio.md) [How to:變更編輯器中的字型和色彩](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)
+## <a name="see-also"></a>請參閱
+ [Visual Studio 的協助工具功能](../ide/reference/accessibility-features-of-visual-studio.md)[如何：變更編輯器中的字型和色彩](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)

@@ -1,5 +1,5 @@
 ---
-title: HOW TO：將負載測試結果匯入存放庫
+title: 如何：將負載測試結果匯入至儲存機制
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,17 +8,17 @@ helpviewer_keywords:
 - Load Test Results Repository
 - load tests, importing results
 ms.assetid: a955b3d2-c8ad-40dd-8ea3-9f1a271e1eed
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 16f6558373c111dbaf933184cf5ae23d00962b7a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 067c9a9d20f3fe456f93086f2099183fd514d91a
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62949960"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653512"
 ---
-# <a name="how-to-import-load-test-results-into-a-repository"></a>HOW TO：將負載測試結果匯入存放庫
+# <a name="how-to-import-load-test-results-into-a-repository"></a>如何：將負載測試結果匯入至存放庫
 
 當您執行負載測試時，執行期間所收集到的資訊，都會儲存在負載測試結果儲存機制中。 負載測試結果儲存機制含有效能計數器資料，以及錄製之錯誤的相關資訊。 如需詳細資訊，請參閱[管理負載測試結果存放庫中的負載測試結果](../test/manage-load-test-results-in-the-load-test-results-repository.md)。
 
@@ -53,7 +53,7 @@ ms.locfileid: "62949960"
 
      結果隨即匯入，並出現在 [負載測試結果] 清單中。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [管理負載測試結果儲存機制中的負載測試結果](../test/manage-load-test-results-in-the-load-test-results-repository.md)
 - [分析負載測試結果](../test/analyze-load-test-results-using-the-load-test-analyzer.md)

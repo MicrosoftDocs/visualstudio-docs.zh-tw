@@ -7,72 +7,72 @@ f1_keywords:
 helpviewer_keywords:
 - policy errors, code analysis
 ms.assetid: d1f221cd-68c0-4277-9397-b76ad0dbae77
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 103a48172665875c3615ce57b90dc77beeb6b5c4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d3c1f6761c6cef968c965a7f0d766d3b7da6183e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62806299"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72622608"
 ---
 # <a name="code-analysis-policy-errors"></a>程式碼分析原則錯誤
 
-如果程式碼分析原則不符合在簽入時，就會發生下列錯誤：
+如果在簽入時未滿足程式碼分析原則，就會發生下列錯誤：
 
-**一或多個專案的程式碼分析設定與不相容的程式碼分析原則。**
+**一或多個專案的程式碼分析設定與程式碼分析原則不相容。**
 
-簽入至原始檔控制專案的程式碼分析需求不符合一或多個程式碼專案。 此錯誤可能被因一或多個下列條件：
+一或多個程式碼專案不符合專案原始檔控制的程式碼分析需求。 此錯誤可能是由下列一或多個狀況所造成：
 
-- 所有的方案中專案的組建上未啟用程式碼分析。
+- 方案中所有專案的組建都未啟用程式碼分析。
 
-- 本機設定 Visual Studio 中的專案有較不嚴格的規則**動作**設定專案的規則，例如設定規則，設定為比**動作**=**錯誤**在伺服器上有其**動作**設定為**警告**或是**無**規則集 Visual Studio 中正在執行中)。
+- Visual Studio 中專案的本機規則集具有比專案規則集更嚴格的**動作**設定，例如，在伺服器上設定為**動作**=**錯誤**的規則會將其**動作**設定為**警告**，或在 Visual Studio）中執行規則集內的**None** 。
 
-- 設定 Visual Studio 中所指定的規則不包含的所有規則規則集指定的程式碼分析簽入原則中的專案中所指定。
+- 在 Visual Studio 中指定的規則集不包含專案的程式碼分析簽入原則中指定的規則集內所指定的所有規則。
 
-**程式碼分析原則失敗。在專案中有錯誤{0}或組建不是最新狀態。**
+**程式碼分析原則失敗。專案 {0} 中有錯誤，或組建不是最新狀態。**
 
-建置包含錯誤或已修正錯誤，但在修正後並未執行，程式碼分析。
+可能是組建包含錯誤或已修正錯誤，但未在修正之後執行程式碼分析。
 
-**簽入失敗。程式碼分析原則需要，請透過 Visual Studio 與開啟的方案。**
+**簽入失敗。程式碼分析原則會要求您使用開啟的方案，透過 Visual Studio 簽入。**
 
-程式碼分析原則需要簽入的所有檔案必須都位於目前開啟的方案。 若要更正這個錯誤，開啟包含簽入檔案的方案。
+程式碼分析原則會要求所有簽入的檔案都必須在目前開啟的方案中。 若要更正此錯誤，請開啟包含要簽入之檔案的方案。
 
-**並非所有暫止簽入中的檔案是在目前開啟的方案。**
+**並非暫止簽入中的所有檔案都是在目前開啟的方案中。**
 
-程式碼分析原則需要簽入的所有檔案必須都位於目前開啟的方案。 當沒有開啟的方案，但 「 擱置中的檢查 」 檢視中的某些檔案並不屬於目前開啟的方案時，會引發此錯誤。 若要更正這個錯誤，開啟包含簽入檔案的方案。
+程式碼分析原則會要求所有簽入的檔案都必須在目前開啟的方案中。 當有開啟的方案時，就會引發此錯誤，但 [暫止簽入] 視圖中的某些檔案並不是目前開啟之方案的一部分。 若要更正此錯誤，請開啟包含要簽入之檔案的方案。
 
-**版本 '{0}' 不正確。強式名稱的原則中指定是 '{1}'。**
+**' @No__t_1 ' 的版本不正確。原則中指定的強式名稱是 ' {1} '。**
 
-此錯誤適用於.NET 專案。 所需的程式碼分析原則規則.dll 存在於本機電腦，但版本/公用金鑰不相符。 若要更正這個錯誤，原則建立者必須更新 \static *C:\Program Files\Microsoft Visual Studio 8\Team Tools\Static Analysis Tools\FxCop\Rules\\* 目錄在其電腦上。
+此錯誤適用于 .NET 專案。 本機電腦上有程式碼分析原則所需的規則 .dll，但版本/公開金鑰不相符。 若要更正此錯誤，原則建立者必須在其電腦上更新*C:\Program Files\Microsoft Visual Studio 8 \ Team Tools\Static Analysis Tools\FxCop\Rules \\* 目錄中的 .dll。
 
-**'{0}' 原則中指定的組件不存在。**
+**原則中指定的 ' {0} ' 元件不存在。**
 
-此錯誤適用於.NET 專案。 程式碼分析原則所需的規則沒有相對應的 dll 安裝在用戶端電腦上。 若要更正這個錯誤，原則建立者必須更新在 dll *C:\Program Files\Microsoft Visual Studio 8\Team Tools\Static Analysis Tools\FxCop\Rules\\* 目錄在其電腦上。
+此錯誤適用于 .NET 專案。 程式碼分析原則所需的規則不會在用戶端電腦上安裝對應的 dll。 若要更正此錯誤，原則建立者必須在其電腦上更新*C:\Program Files\Microsoft Visual Studio 8 \ Team Tools\Static Analysis Tools\FxCop\Rules \\* 目錄中的 dll。
 
-**專案{0}規則設定不是使用程式碼分析原則的合規性。**
+**專案 {0} 規則設定不符合程式碼分析原則。**
 
-此錯誤適用於.NET 專案。 Managed 程式碼規則設定不嚴格的原則要求。 若要更正這個錯誤，用戶端設定必須是相同或比在伺服器上的原則需求。
+此錯誤適用于 .NET 專案。 Managed 程式碼規則設定不像原則所需的嚴格。 若要更正此錯誤，用戶端設定必須與伺服器上的原則需求相同或更嚴格。
 
-**使用中的組態未啟用程式碼分析。切換至組態{0}並建置專案{1}簽入之前。**
+**使用中設定時，未啟用程式碼分析。在簽入之前，切換到設定 {0} 和組建專案 {1}。**
 
-在  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]、 使用中的組態並沒有啟用，程式碼分析，但沒有啟用的至少一個程式碼分析。
+在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中，使用中的設定未啟用程式碼分析，但至少有一個已啟用的程式碼分析。
 
-**您必須啟用程式碼分析專案中的受控二進位檔{0}屬性和簽入之前的組建。**
+**在簽入之前，您必須在專案 {0} 屬性和組建中啟用受控二進位檔的程式碼分析。**
 
-此錯誤適用於[!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)].NET 應用程式。 原則會要求要執行的 managed 程式碼分析，但未啟用用戶端上目前的專案中。
+此錯誤適用于 [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] .NET 應用程式。 原則需要執行 managed 程式碼分析，但不會在用戶端上的目前專案中啟用。
 
-**您必須啟用專案中的程式碼分析{0}屬性和簽入之前的組建。**
+**在簽入之前，您必須在專案 {0} 屬性和組建中啟用程式碼分析。**
 
-套用至這個錯誤[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]專案和 web 專案。 原則會要求要執行的 managed 程式碼分析，但未啟用用戶端上目前的專案中。
+這個錯誤適用于 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 專案和 Web 專案。 原則需要執行 managed 程式碼分析，但不會在用戶端上的目前專案中啟用。
 
-**您必須啟用 C /C++專案中的程式碼分析{0}屬性和簽入之前的組建。**
+**在簽入之前，C++您必須在專案 {0} 屬性和組建中啟用 C/程式碼分析。**
 
-此錯誤適用於非受控專案。 程式碼分析原則需要適用於 C 的程式碼分析 /C++，但不是啟用用戶端上目前的專案中。
+此錯誤適用于非受控專案。 程式碼分析原則需要 C/C++的程式碼分析，但不會在用戶端上的目前專案中啟用。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [程式碼分析應用程式錯誤](../code-quality/code-analysis-application-errors.md)

@@ -1,5 +1,5 @@
 ---
-title: IDispError::GetHresult |Microsoft Docs
+title: IDispError：： GetHresult |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6eb4518e39fdab432590601d91b462d869c38e1a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 62661e14c36881ca83763c277dbfd5385f192fb6
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63446896"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573121"
 ---
 # <a name="idisperrorgethresult"></a>IDispError::GetHresult
-擷取的錯誤程式碼`IDispError`物件。  
+抓取來自 `IDispError` 物件的錯誤碼。  
   
 ## <a name="syntax"></a>語法  
   
@@ -37,7 +37,7 @@ HRESULT GetHresult(
   
 #### <a name="parameters"></a>參數  
  `phr`  
- [out]指定的錯誤碼。  
+ 脫銷指定錯誤碼。  
   
 ## <a name="return-value"></a>傳回值  
  方法會傳回 `HRESULT`。 可能的值包括 (但不限於) 下表中的這些值。  
@@ -47,10 +47,10 @@ HRESULT GetHresult(
 |`S_OK`|方法成功。|  
   
 ## <a name="remarks"></a>備註  
- 這個方法會擷取來自錯誤碼`IDispError`物件。  
+ 這個方法會從 `IDispError` 物件中抓取錯誤碼。  
   
 > [!NOTE]
 > 這個方法尚未實作。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDispError 介面](../../winscript/reference/idisperror-interface.md)

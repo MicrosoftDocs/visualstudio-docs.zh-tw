@@ -9,21 +9,21 @@ helpviewer_keywords:
 - service references [Visual Studio], configuring behavior
 - Configure Service Reference dialog box
 ms.assetid: 25e4c36b-2db6-4e71-9010-b7068255d09d
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 1cf4a809c1353f2fe30383a312f65b6c623083db
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 033663c347a39c63a76bddd10625bdc86cec1f00
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68925676"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72642852"
 ---
 # <a name="configure-service-reference-dialog-box"></a>設定服務參考對話方塊
 
-[**設定服務參考**] 對話方塊可讓您設定 WINDOWS COMMUNICATION FOUNDATION (WCF) 服務的行為。
+[**設定服務參考**] 對話方塊可讓您設定 WINDOWS COMMUNICATION FOUNDATION （WCF）服務的行為。
 
 若要存取 [設定服務參考] 對話方塊，請以滑鼠右鍵按一下 [方案總管] 中的服務參考，然後選擇 [設定服務參考]。 您也可以按一下 [新增服務參考對話方塊] 中的 [進階] 按鈕來存取這個對話方塊。
 
@@ -45,7 +45,7 @@ ms.locfileid: "68925676"
 
 **位址**
 
-更新服務參考在其中尋找服務的網址。 例如, 在開發期間, 服務可能會裝載在開發伺服器上, 並于稍後移至實際伺服器, 強制位址變更。
+更新服務參考在其中尋找服務的網址。 例如，在開發期間，服務可能會裝載在開發伺服器上，並于稍後移至實際伺服器，強制位址變更。
 
 > [!NOTE]
 > 從 [新增服務參考對話方塊] 顯示 [設定服務參考] 對話方塊時，無法使用位址項目。
@@ -59,11 +59,11 @@ ms.locfileid: "68925676"
 
 **產生非同步作業**
 
-判斷 WCF 服務方法是以同步方式呼叫 (預設值), 還是以非同步方式呼叫。
+判斷 WCF 服務方法是以同步方式呼叫（預設值），還是以非同步方式呼叫。
 
 **產生以工作為基礎的作業**
 
-撰寫非同步程式碼時, 這個選項可讓您利用 .NET 4 引進的工作平行程式庫 (TPL)。 請參閱工作[平行程式庫 (TPL)](/dotnet/standard/parallel-programming/task-parallel-library-tpl)。
+撰寫非同步程式碼時，這個選項可讓您利用 .NET 4 引進的工作平行程式庫（TPL）。 請參閱工作[平行程式庫（TPL）](/dotnet/standard/parallel-programming/task-parallel-library-tpl)。
 
 **總是產生訊息合約**
 
@@ -79,19 +79,19 @@ ms.locfileid: "68925676"
 
 **重複使用參考組件中的類型**
 
-判斷 WCF 用戶端是否嘗試重複使用已存在於所參考元件中的內容, 而不是在新增或更新服務時產生新的類型。 預設會核取這個選項。
+判斷 WCF 用戶端是否嘗試重複使用已存在於所參考元件中的內容，而不是在新增或更新服務時產生新的類型。 預設會核取這個選項。
 
 **重複使用所有參考組件中的類型**
 
-選取時, 會盡可能重複使用**參考元件清單**中的所有類型。 根據預設，這個選項是選取的。
+選取時，會盡可能重複使用**參考元件清單**中的所有類型。 根據預設，這個選項是選取的。
 
 **重複使用指定參考組件中的類型**
 
-選取時, 只會重複使用 [**參考的元件] 清單**中選取的類型。
+選取時，只會重複使用 [**參考的元件] 清單**中選取的類型。
 
 **參考組件清單**
 
-包含專案或網站之參考元件的清單。 當您選取 [**重複使用指定的參考元件中的類型**] 時, 可以選取或清除個別元件。
+包含專案或網站之參考元件的清單。 當您選取 [**重複使用指定的參考元件中的類型**] 時，可以選取或清除個別元件。
 
 **新增 Web 參考**
 
@@ -103,7 +103,7 @@ ms.locfileid: "68925676"
 > [!NOTE]
 > [**加入 Web 參考**] 按鈕僅適用于從 [**加入服務參考] 對話方塊**顯示 [**設定服務參考**] 對話方塊時。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
-- [如何：新增 web 服務的參考](how-to-add-update-or-remove-a-wcf-data-service-reference.md)
+- [如何：將參考新增至 Web 服務](how-to-add-update-or-remove-a-wcf-data-service-reference.md)
 - [Windows Communication Foundation 服務和 WCF 資料服務](../data-tools/configure-service-reference-dialog-box.md)

@@ -5,15 +5,15 @@ ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.XML.Miscellaneous
 ms.assetid: b6538cbe-badd-4313-a1fb-39e906736bbe
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: d3421580251a6a871adba311fd609e881e088ebd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 58de904e1697a820a2f4bc6f88fbff5237cabc30
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62969211"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72666581"
 ---
 # <a name="options-text-editor-xml-miscellaneous"></a>選項、文字編輯器、XML、其他
 
@@ -27,7 +27,7 @@ ms.locfileid: "62969211"
 
 **屬性引號**
 
-撰寫 XML 屬性時，編輯器會插入 `="` 和 `"` 字元，並將插入號 (**^**) 置於引號內。 預設情況下會選取此核取方塊。
+撰寫 XML 屬性時，編輯器會插入 `="` 和 `"` 字元，並將插入號 ( **^** ) 置於引號內。 預設情況下會選取此核取方塊。
 
 **命名空間宣告**
 
@@ -55,7 +55,7 @@ ms.locfileid: "62969211"
 
 指定結構描述快取的位置。 [瀏覽] 按鈕會在新視窗中開啟目前的結構描述快取位置。 預設位置為 *%VsInstallDir%\xml\Schemas*。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [XML 選項 - 格式化](options-text-editor-xml-formatting.md)
 - [Visual Studio 中的 XML 工具](../../xml-tools/xml-tools-in-visual-studio.md)

@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 322c8d4b766619a6404a315fb83298bf5416fba4
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: cbeba8418b3364d4e3762643a78465158f80e6fc
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445320"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72655452"
 ---
 # <a name="walkthrough-create-an-inline-task"></a>逐步解說：建立內嵌工作
 MSBuild 工作通常是透過編譯實作 <xref:Microsoft.Build.Framework.ITask> 介面的類別來建立。 從 .NET Framework 4 版開始，您可以在專案檔中建立內嵌工作。 您不必建立個別的組件來裝載工作。 如需詳細資訊，請參閱[內嵌工作](../msbuild/msbuild-inline-tasks.md)。
@@ -46,7 +46,7 @@ MSBuild 工作通常是透過編譯實作 <xref:Microsoft.Build.Framework.ITask>
 
 1. 在 Visual Studio 的 [檔案] 功能表上，按一下 [新增]，然後按一下 [專案]。
 
-2. 在 [新增專案] 對話方塊中，選取 [Visual C#] 專案類型，然後選取 [Windows Forms 應用程式] 範本。 在 [名稱]  方塊中，輸入 `InlineTasks`。 輸入方案的 [位置]，例如 *D:\\*。 確認已選取 [為方案建立目錄]、已取消選取 [加入至原始檔控制]，且 [方案名稱] 為 **InlineTasks**。
+2. 在 [新增專案] 對話方塊中，選取 [Visual C#] 專案類型，然後選取 [Windows Forms 應用程式] 範本。 在 [名稱] 方塊中，輸入 `InlineTasks`。 輸入方案的 [位置]，例如 *D:\\* 。 確認已選取 [為方案建立目錄]、已取消選取 [加入至原始檔控制]，且 [方案名稱] 為 **InlineTasks**。
 
 3. 按一下 [確定] 以建立專案檔。
 
@@ -85,7 +85,7 @@ MSBuild 工作通常是透過編譯實作 <xref:Microsoft.Build.Framework.ITask>
 
 3. 儲存專案檔。
 
-   此程式碼會建立名為 Hello 且沒有參數、參考或 `Using` 陳述式的內嵌工作。 Hello 工作僅包含一行程式碼，它會在預設記錄裝置 (通常是在主控台視窗) 上顯示 hello 訊息。
+   此程式碼會建立名為 Hello 的內嵌工作，而且沒有參數、參考或 `Using` 指示詞。 Hello 工作僅包含一行程式碼，它會在預設記錄裝置 (通常是在主控台視窗) 上顯示 hello 訊息。
 
 ### <a name="run-the-hello-task"></a>執行 Hello 工作
  使用「命令提示字元視窗」執行 MSBuild，以建構 Hello 工作並處理叫用它的 TestBuild 目標。
@@ -94,7 +94,7 @@ MSBuild 工作通常是透過編譯實作 <xref:Microsoft.Build.Framework.ITask>
 
 1. 按一下 [開始]，按一下 [所有程式]，接著尋找 **Visual Studio Tools** 資料夾，然後按一下 [Visual Studio 命令提示字元]。
 
-2. 在 [命令提示字元視窗] ，中找出包含專案檔的資料夾，此案例中為 *D:\InlineTasks\InlineTasks\\*。
+2. 在 [命令提示字元視窗] ，中找出包含專案檔的資料夾，此案例中為 *D:\InlineTasks\InlineTasks\\* 。
 
 3. 在不使用命令參數的情況下輸入 **msbuild**，然後按 **Enter**。 根據預設，這會建置 *InlineTasks.csproj* 檔案並處理會叫用 Hello 工作的預設目標 TestBuild。
 
@@ -256,7 +256,7 @@ MSBuild 工作通常是透過編譯實作 <xref:Microsoft.Build.Framework.ITask>
 </Code>
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [內嵌工作](../msbuild/msbuild-inline-tasks.md)
 - [工作](../msbuild/msbuild-tasks.md)
 - [目標](../msbuild/msbuild-targets.md)

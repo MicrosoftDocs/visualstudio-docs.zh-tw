@@ -6,20 +6,20 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.assetid: f0181ee8-9b46-45f7-b86e-316e3de024b9
 caps.latest.revision: 7
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 2a3db616ec23a8d6fdb1984ce27f8fec4909cc9e
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: c1030068ad083ff9bc8f4bdf5b203eb75eed7617
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65680236"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72670327"
 ---
 # <a name="refactoring-in-visual-studio"></a>在 Visual Studio 中重構
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-重構是修改程式碼的流程，以使其更容易維護、了解和擴充，但不會變更其行為。 某些常見的「重構」包含：
+重構是修改程式碼的流程，以使其更容易維護、了解和擴充，但不會變更其行為。 某些常見的「重構」  包含：
 
 1. 將長函式分割成較小的函式
 
@@ -43,5 +43,5 @@ ms.locfileid: "65680236"
 ### <a name="refactoring-in-f"></a>在 F\# 中重構
  支援 F# 的重構於第三方 Visual Studio 延伸模組 [Visual F# Power Tools](https://visualstudiogallery.msdn.microsoft.com/136b942e-9f2c-4c0b-8bac-86d774189cff) 中提供。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
  [Visual Studio IDE](../ide/visual-studio-ide.md) [在程式碼和文字編輯器中撰寫程式碼](../ide/writing-code-in-the-code-and-text-editor.md)

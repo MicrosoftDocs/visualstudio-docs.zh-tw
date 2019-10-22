@@ -1,5 +1,5 @@
 ---
-title: 必須是物件 |Microsoft Docs
+title: 預期的物件 |Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
@@ -14,12 +14,12 @@ ms.assetid: 5d88c93d-e5b5-4b11-9bb5-bf1a5e41ccc3
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 501496c4f1bb929308ffbb75c6572de3d3f5b33b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1611596d844d43ef72663154dc48791830dfe29f
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63006362"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573727"
 ---
 # <a name="object-expected"></a>必須是物件
 您嘗試對非 `Object` 類型的物件叫用方法或屬性，或在需要 `Object` 時傳遞非 `Object` 類型的引數。  
@@ -46,6 +46,6 @@ ms.locfileid: "63006362"
     }  
     ```  
   
-## <a name="see-also"></a>另請參閱  
- [Object 物件](../../javascript/reference/object-object-javascript.md)   
+## <a name="see-also"></a>請參閱  
+ [物件物件](../../javascript/reference/object-object-javascript.md)   
  [物件和陣列](../../javascript/objects-and-arrays-javascript.md)

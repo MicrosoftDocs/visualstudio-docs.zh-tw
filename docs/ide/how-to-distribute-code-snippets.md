@@ -5,25 +5,25 @@ ms.topic: conceptual
 helpviewer_keywords:
 - code snippets, distributing
 ms.assetid: 5f717abd-e167-47ae-818c-6b0bae100ceb
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f0b3211352dc16e51b64196e13f7378bf2a423c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 3b5ae4053e97e823952118abda11f334c5ac1083
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62429533"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72656072"
 ---
-# <a name="how-to-distribute-code-snippets"></a>HOW TO：散發程式碼片段
+# <a name="how-to-distribute-code-snippets"></a>如何：散發程式碼片段
 
 您可以使用 [程式碼片段管理員]，將您的程式碼片段提供給您的朋友，並讓他們在自己的電腦上安裝程式碼片段。 不過，如果您有數個程式碼片段要散發，或想要更廣泛地散發，您可在 Visual Studio 延伸模組中包含您的程式碼片段檔案。 然後，Visual Studio 使用者可以安裝此延伸模組以取得程式碼片段。
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>Prerequisites
 
 安裝 **Visual Studio 延伸模組開發**工作負載，以存取 [VSIX 專案] 專案範本。
 
@@ -31,7 +31,7 @@ ms.locfileid: "62429533"
 
 ## <a name="set-up-the-extension"></a>設定延伸模組
 
-在此程序中，您會使用相同的 Hello World 程式碼片段，它是建立在[逐步解說：建立程式碼片段](../ide/walkthrough-creating-a-code-snippet.md)。 本文提供程式碼片段 XML，所以您不必回頭建立程式碼片段。
+在此程式中，您將使用在[逐步解說：建立程式碼片段](../ide/walkthrough-creating-a-code-snippet.md)中所建立的相同 Hello World 程式碼片段。 本文提供程式碼片段 XML，所以您不必回頭建立程式碼片段。
 
 1. 從 [空的 VSIX 專案] 範本建立新專案，並將專案命名為 **TestSnippet**。
 
@@ -115,7 +115,7 @@ ms.locfileid: "62429533"
 
 4. 測試程式碼片段。 在實驗性執行個體中，開啟 Visual Basic 專案，並開啟其中一個程式碼檔案。 將游標放在程式碼中的某處，按一下滑鼠右鍵，然後在 [操作功能表] 上選取 [插入程式碼片段]。
 
-5. 您應該會看到 *HelloWorldVB* 作為其中一個資料夾。 對它按兩下。 您應該會看到快顯視窗 [插入程式碼片段：HelloWorldVB >]，這具有下拉式清單 [HelloWorldVB]。 按一下這個 **HelloWorldVB** 下拉式清單。
+5. 您應該會看到 *HelloWorldVB* 作為其中一個資料夾。 對它按兩下。 您應該會看到快顯視窗 [插入程式碼片段: HelloWorldVB >]，這具有下拉式清單 [HelloWorldVB]。 按一下這個 **HelloWorldVB** 下拉式清單。
 
    會將下行新增至程式碼檔案：
 
@@ -123,6 +123,6 @@ ms.locfileid: "62429533"
     Console.WriteLine("Hello, World!")
     ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [程式碼片段](../ide/code-snippets.md)

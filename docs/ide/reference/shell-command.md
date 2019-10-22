@@ -13,17 +13,17 @@ helpviewer_keywords:
 - Shell, launching exe files
 - Visual Studio, executables from
 ms.assetid: 737fda23-b852-45c4-a9fe-41cbce6ba70f
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cb6bfc98d5ef6f7b3d3b6291ea55530325836d56
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+ms.openlocfilehash: c19f436eddb3311e3bba70420dba6067ce2a8dca
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68918951"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72645274"
 ---
 # <a name="shell-command"></a>Shell 命令
 在 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 內啟動可執行程式。
@@ -41,20 +41,20 @@ Tools.Shell [/command] [/output] [/dir:folder] path [args]
 
 `args`
 
-選擇性。 任何要傳遞給已叫用程式的引數。
+選擇項。 任何要傳遞給已叫用程式的引數。
 
 ## <a name="switches"></a>參數
 /commandwindow [或] /command [或] /c [或] /cmd
 
-選擇性。 指定可執行檔的輸出會顯示在 [命令]  視窗中。
+選擇項。 指定可執行檔的輸出會顯示在 [命令] 視窗中。
 
 /dir:`folder` [或] /d: `folder`
 
-選擇性。 指定要在執行程式時設定的工作目錄。
+選擇項。 指定要在執行程式時設定的工作目錄。
 
 /outputwindow [或] /output [或] /out [或] /o
 
-選擇性。 指定可執行檔的輸出會顯示在 [輸出]  視窗中。
+選擇項。 指定可執行檔的輸出會顯示在 [輸出] 視窗中。
 
 ## <a name="remarks"></a>備註
 必須緊接在 `Tools.Shell` 後面指定 /dir /o /c 參數。 在可執行檔名稱後面指定的任何內容都是當成命令列引數傳遞給它。
@@ -78,13 +78,13 @@ Tools.Shell """C:\Program Files\SomeFile.exe"""
 > 如果您不要使用常值引號 (""") 括住路徑字串，則 Windows 只會使用字串部分，最多到第一個空格。 例如，如果上述路徑字串未正確地加上引號，則 Windows 會尋找名為 "Program" 且位在 C:\ 根目錄的檔案。 如果 C:\Program.exe 可執行檔實際可用 (即使是透過不正當竄改所安裝的可執行檔)，則 Windows 會嘗試執行該程式來取代所需 "c:\Program Files\SomeFile.exe" 程式。
 
 ## <a name="example"></a>範例
-下列命令會使用 xcopy.exe 將 `MyText.txt` 檔案複製至 `Text` 資料夾。 xcopy.exe 的輸出會同時顯示在 [命令視窗]  和 [輸出]  視窗中。
+下列命令會使用 xcopy.exe 將 `MyText.txt` 檔案複製至 `Text` 資料夾。 xcopy.exe 的輸出會同時顯示在 [命令視窗] 和 [輸出] 視窗中。
 
 ```cmd
 >Tools.Shell /o /c xcopy.exe c:\MyText.txt c:\Text\MyText.txt
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [Visual Studio 命令](../../ide/reference/visual-studio-commands.md)
 - [命令視窗](../../ide/reference/command-window.md)

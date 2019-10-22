@@ -6,51 +6,42 @@ ms.technology: vs-xml-tools
 ms.topic: conceptual
 ms.assetid: d069ba3a-266c-45ac-8f9f-7833a72c5a27
 caps.latest.revision: 9
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 56cda28a66d7d956ef46ed335765fe8fab430301
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2e0c49da84e8ecd12dc50c03b3587942a21f9d05
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68158552"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72669445"
 ---
 # <a name="xml-editor-tasks"></a>XML 編輯器工作
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本節描述如何使用 XML 編輯器完成一般工作。  
-  
-## <a name="in-this-section"></a>本節內容  
- [逐步解說：使用 XML 編輯器功能](../xml-tools/walkthrough-using-xml-editor-features.md)  
- 示範如何使用某些 XML 編輯器功能。  
-  
- [如何：選取要使用的 XML 結構描述](../xml-tools/how-to-select-the-xml-schemas-to-use.md)  
- 描述如何選取用於驗證的 XML 結構描述。  
-  
- [如何：從 XML 文件建立 XML 結構描述](../xml-tools/how-to-create-an-xml-schema-from-an-xml-document.md)  
- 說明如何建立 XML 結構描述。  
-  
- [如何：從 XML 編輯器執行 XSLT 轉換](../xml-tools/how-to-execute-an-xslt-transformation-from-the-xml-editor.md)  
- 說明如何執行 XSLT 轉換。  
-  
- [如何：編輯 XML 檔案](../xml-tools/how-to-edit-xml-files.md)  
- 說明如何開始編輯 XML 檔案。  
-  
- [如何：使用 XML 片段](../xml-tools/how-to-use-xml-snippets.md)。  
- 示範如何使用 XML 編輯器隨附的 XML 片段。  
-  
- [如何：從 XML 結構描述產生 XML 程式碼片段](../xml-tools/how-to-generate-an-xml-snippet-from-an-xml-schema.md)  
- 示範如何從 XML 結構描述產生 XML 片段。  
-  
- [如何：建立 XML 片段](../xml-tools/how-to-create-xml-snippets.md)。  
- 示範如何建立新的 XML 片段。  
-  
- [逐步解說：使用 XSLT IntelliSense](../xml-tools/walkthrough-using-xslt-intellisense.md)  
- 示範如何使用 XSLT IntelliSense 功能。  
-  
- [逐步解說：使用 XSLT 階層](../xml-tools/walkthrough-using-xslt-hierarchy.md)  
- 示範如何偵錯參考的樣式表。  
-  
- [逐步解說：XSLT 分析工具](../xml-tools/walkthrough-xslt-profiler.md)  
- 示範如何建立 XSLT 程式碼的效能報告。
+本節描述如何使用 XML 編輯器完成一般工作。
+
+## <a name="in-this-section"></a>本章節內容
+ [逐步解說：使用 XML 編輯器功能](../xml-tools/walkthrough-using-xml-editor-features.md)示範如何使用 XML 編輯器的某些功能。
+
+ [如何：選取要使用的 XML 架構](../xml-tools/how-to-select-the-xml-schemas-to-use.md)描述如何選取要用於驗證的 XML 架構。
+
+ [如何：從 Xml 檔建立 Xml 架構](../xml-tools/how-to-create-an-xml-schema-from-an-xml-document.md)描述如何建立 XML 架構。
+
+ [如何：從 XML 編輯器執行 XSLT 轉換](../xml-tools/how-to-execute-an-xslt-transformation-from-the-xml-editor.md)描述如何執行 XSLT 轉換。
+
+ [如何：編輯 XML](../xml-tools/how-to-edit-xml-files.md)檔案說明如何開始編輯 XML 檔案。
+
+ [如何：使用 XML 程式碼片段](../xml-tools/how-to-use-xml-snippets.md)。
+示範如何使用 XML 編輯器隨附的 XML 片段。
+
+ [如何：從 Xml 架構產生 Xml 程式碼片段](../xml-tools/how-to-generate-an-xml-snippet-from-an-xml-schema.md)示範如何從 XML 架構產生 XML 程式碼片段。
+
+ [如何：建立 XML 片段](../xml-tools/how-to-create-xml-snippets.md)。
+示範如何建立新的 XML 片段。
+
+ [逐步解說：使用 XSLT IntelliSense](../xml-tools/walkthrough-using-xslt-intellisense.md)示範如何使用 XSLT IntelliSense 功能。
+
+ [逐步解說：使用 XSLT](../xml-tools/walkthrough-using-xslt-hierarchy.md)階層示範如何調試參考的樣式表單。
+
+ [逐步解說： XSLT Profiler](../xml-tools/walkthrough-xslt-profiler.md)示範如何建立 XSLT 程式碼的效能報告。

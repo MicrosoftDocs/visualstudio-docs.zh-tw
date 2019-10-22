@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d35d807cbe849e4b5385f7bf63e15760b0e4b3a5
-ms.sourcegitcommit: 6eed0372976c0167b9a6d42ba443f9a474b8bb91
+ms.openlocfilehash: bb6f0600d8bdfe8c736305ffd31788edb9d817a6
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71118826"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576285"
 ---
 # <a name="step-2-create-a-random-addition-problem"></a>步驟 2：建立隨機加法問題
 
@@ -42,8 +42,7 @@ ms.locfileid: "71118826"
      [!code-csharp[VbExpressTutorial3Step2#1](../ide/codesnippet/CSharp/step-2-create-a-random-addition-problem_1.cs)]
      [!code-vb[VbExpressTutorial3Step2#1](../ide/codesnippet/VisualBasic/step-2-create-a-random-addition-problem_1.vb)]
 
-   > [!IMPORTANT]
-   > 使用此頁面右上方的程式設計語言控制項，以查看C#程式碼片段或 Visual Basic 程式碼片段。<br><br>![Docs.Microsoft.com 的程式設計語言控制項](../ide/media/docs-programming-language-control.png)
+     [!INCLUDE [devlang-control-csharp-vb](./includes/devlang-control-csharp-vb.md)]
 
      您已將一個隨機物件加入至表單，並將物件命名為 **randomizer**。
 
@@ -74,7 +73,7 @@ ms.locfileid: "71118826"
      您在物件後面輸入一個點時，IntelliSense 會顯示物件的成員清單，例如屬性、方法和事件。
 
     > [!NOTE]
-    > 當您使用 `Next()` 方法搭配 `Random` 物件時 (例如，當您呼叫 `randomizer.Next(50)` 時)，會得到小於 50 (從 0 到 49) 的隨機數字。 在這個範例中，您呼叫了 `randomizer.Next(51)`。 您使用 51 而不是 50，如此這兩個數字就會相加並得出從 0 到 100 的答案。 如果您將 50 傳給 `Next()` 方法，它會選擇 0 至 49 的數字，所以可能的最大答案是 98，而不是 100。 當方法中的前兩個陳述式執行之後，**addend1** 和 **addend2** 這兩個整數變數會各自保存一個從 0 至 50 的隨機數字。 這個螢幕擷取畫面會顯示 Visual C# 程式碼，不過，IntelliSense 對於 Visual Basic 運作的方式一樣。
+    > 當您使用 `Next()` 方法搭配 `Random` 物件時 (例如，當您呼叫 `randomizer.Next(50)` 時)，會得到小於 50 (從 0 到 49) 的隨機數字。 在這個範例中，您呼叫了 `randomizer.Next(51)`。 您使用 51 而不是 50，如此這兩個數字就會相加並得出從 0 到 100 的答案。 如果您將 50 傳給 `Next()` 方法，它會選擇 0 至 49 的數字，所以可能的最大答案是 98，而不是 100。 當方法中的前兩個陳述式執行之後，**addend1** 和 **addend2** 這兩個整數變數會各自保存一個從 0 至 50 的隨機數字。 這個螢幕擷取畫面C#顯示程式碼，但 IntelliSense 的運作方式與 Visual Basic 相同。
 
      仔細查看這些陳述式。
 
@@ -103,8 +102,8 @@ ms.locfileid: "71118826"
 
      在本教學課程的下一個步驟中，您將加入總和。
 
-## <a name="to-continue-or-review"></a>若要繼續或檢視
+## <a name="to-continue-or-review"></a>繼續或檢視
 
-- 若要移至下一個教學課程步驟 **，請參閱[步驟3：新增倒數計時器](../ide/step-3-add-a-countdown-timer.md)。**
+- 若要移至下一個教學課程步驟，請參閱 **[步驟3：新增倒數計時器](../ide/step-3-add-a-countdown-timer.md)** 。
 
 - 若要回到上一個教學課程步驟，請參閱[步驟 1：建立專案並將標籤新增至表單](../ide/step-1-create-a-project-and-add-labels-to-your-form.md)。

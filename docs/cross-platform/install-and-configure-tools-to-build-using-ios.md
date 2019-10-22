@@ -1,7 +1,7 @@
 ---
-title: 安裝和設定工具以使用 iOS 進行建置 | Microsoft Docs
+title: 安裝和設定工具以使用 iOS 來建立 |Microsoft Docs
 ms.custom: ''
-ms.date: 05/13/2019
+ms.date: 10/17/2019
 ms.technology: vs-ide-mobile
 ms.topic: conceptual
 dev_langs:
@@ -12,23 +12,23 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: 411ab7f097a82fa850e3850c662d378f51ffd548
-ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
-ms.translationtype: HT
+ms.openlocfilehash: 33adad7117678ccc5550db86baada43a1c487916
+ms.sourcegitcommit: 8a96a65676fd7a2a03b0803d7eceae65f3fa142b
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/05/2019
-ms.locfileid: "67586811"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72588864"
 ---
 # <a name="install-and-configure-tools-to-build-using-ios"></a>安裝和設定工具以使用 iOS 進行建置
 
-您可以使用 Visual C++ for Cross-Platform Mobile Development 編輯、偵錯 iOS 程式碼並將其部署至 iOS 模擬器或 iOS 裝置，但由於授權限制，必須在 Mac 上遠端建置及執行程式碼。 若要使用 Visual Studio 建置並執行 iOS 應用程式，您必須在 Mac 上安裝及設定 [vcremote](https://go.microsoft.com/fwlink/p/?LinkId=534988)遠端代理程式。 遠端代理程式會處理來自 Visual Studio 的建立要求，並在連接至 Mac 的 iOS 裝置或 Mac 中的 iOS 模擬器上執行應用程式。
+您可以使用 Visual Studio 搭配跨平臺行動裝置**開發C++** 工具，以編輯、進行偵錯工具，以及將 ios 程式碼部署至 ios 模擬器或 ios 裝置。 但由於授許可權制，必須在 Mac 上從遠端建立並執行程式碼。 若要使用 Visual Studio 建置並執行 iOS 應用程式，您必須在 Mac 上安裝及設定 [vcremote](https://go.microsoft.com/fwlink/p/?LinkId=534988)遠端代理程式。 遠端代理程式會處理來自 Visual Studio 的建立要求，並在連接至 Mac 的 iOS 裝置或 Mac 中的 iOS 模擬器上執行應用程式。
 
 > [!NOTE]
-> 如需有關使用雲端裝載 Mac 服務 (而非使用 Mac) 的相關資訊，請參閱[設定 Visual Studio 以連線至雲端裝載的 Mac](/visualstudio/cross-platform/tools-for-cordova/tips-workarounds/host-a-mac-in-the-cloud?view=toolsforcordova-2017#configure-visual-studio-to-connect-to-your-cloud-hosted-mac) \(英文\)。 本指示是針對使用 Visual Studio Tools for Apache Cordova 進行建置。 若要使用這些指示以 C++ 進行建置，請以 vcremote 取代 remotebuild。
+> 如需有關使用雲端裝載 Mac 服務 (而非使用 Mac) 的相關資訊，請參閱[設定 Visual Studio 以連線至雲端裝載的 Mac](/visualstudio/cross-platform/tools-for-cordova/tips-workarounds/host-a-mac-in-the-cloud?view=toolsforcordova-2017#configure-visual-studio-to-connect-to-your-cloud-hosted-mac) \(英文\)。 本指示是針對使用 Visual Studio Tools for Apache Cordova 進行建置。 若要使用以建立的指示C++，請使用 `remotebuild` 取代 `vcremote`。
 
-一旦您已安裝使用 iOS 進行建置的工具，請參閱本主題以取得可在 Visual Studio 及 Mac 上進行 iOS 開發快速設定和更新遠端代理程式的方式。
+當您安裝了使用 iOS 建立的工具之後，請參閱這篇文章，以取得在 Visual Studio 和 Mac 上快速設定和更新 iOS 開發的遠端代理程式的方式。
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>Prerequisites
 
 若要安裝和使用遠端代理程式來開發 iOS 的程式碼，您必須先具備這些必要條件：
 
@@ -46,13 +46,13 @@ ms.locfileid: "67586811"
 
 - Xcode 命令列工具
 
-   若要安裝 Xcode 命令列工具，請在 Mac 上開啟 Terminal 應用程式並輸入下列命令：
+   若要安裝 Xcode 命令列工具，請開啟 Mac 上的 [終端機] 應用程式，並輸入下列命令：
 
    `xcode-select --install`
 
 - 在 Xcode 中設為簽署身分識別的 Apple ID 帳戶用來簽署應用程式
 
-   若要在 Xcode 中查看或設定簽署識別，請開啟 [Xcode]  功能表並選擇 [喜好設定]  。 選取 [帳戶]  並選擇您的 Apple ID，然後選擇 [檢視詳細資料]  按鈕。 請參閱 [Add your Apple ID account](https://help.apple.com/xcode/mac/current/#/devaf282080a) (新增您的 Apple ID 帳戶) 以取得詳細說明。
+   若要在 Xcode 中查看或設定簽署識別，請開啟 [Xcode] 功能表並選擇 [喜好設定]。 選取 [帳戶] 並選擇您的 Apple ID，然後選擇 [檢視詳細資料] 按鈕。 請參閱 [Add your Apple ID account](https://help.apple.com/xcode/mac/current/#/devaf282080a) (新增您的 Apple ID 帳戶) 以取得詳細說明。
    
    如需簽署需求的詳細資訊，請參閱 [What is app signing](https://help.apple.com/xcode/mac/current/#/dev3a05256b8) (什麼是應用程式簽署)。 
 
@@ -64,13 +64,13 @@ ms.locfileid: "67586811"
 
 - [Node.js](https://nodejs.org/) 版本 8.11.3 和 npm 版本 5.6.0
 
-   在您的 Mac 上安裝 Node.js 版本 8.11.3。 若您安裝 Node.js 套件，它應該會隨附版本 5.6.0 的 npm。 請注意，其他版本的 Node.js 和 npm 可能不會支援遠端代理程式 vcremote 中所使用的某些模組，這可能會造成 vcremote 安裝失敗。
+   在您的 Mac 上安裝 Node.js 版本 8.11.3。 若您安裝 Node.js 套件，它應該會隨附版本 5.6.0 的 npm。 其他版本的 node.js 和 npm 可能不支援遠端代理程式 `vcremote` 中使用的某些模組，這可能會導致 `vcremote` 安裝失敗。
 
 ## <a name="Install"></a> 安裝 iOS 適用的遠端代理程式
 
-當您安裝 Visual C++ for Cross-Platform Mobile Development 時，Visual Studio 可與在 Mac 上遠端執行的代理程式 [vcremote](https://go.microsoft.com/fwlink/p/?LinkId=534988)通訊，以用來傳輸檔案、建置及執行您的 iOS 應用程式和傳送偵錯命令。
+當您安裝具有C++工作負載的行動裝置開發時，Visual Studio 可以與[vcremote](https://go.microsoft.com/fwlink/p/?LinkId=534988)通訊，這是在 Mac 上執行的遠端代理程式，可傳輸檔案、建立和執行您的 iOS 應用程式，以及傳送偵錯工具命令。
 
-安裝遠端代理程式之前，請確定您已符合[必要條件](#prerequisites)，並且已安裝[適用於跨平台行動裝置應用程式開發的 Visual C++](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md#install-the-tools)。
+安裝遠端代理程式之前，請確定您已符合[必要條件](#prerequisites)，並已完成[使用C++安裝跨平臺](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md#install-the-tools)行動裝置開發中的安裝步驟。
 
 ### <a name="DownloadInstall"></a> 若要下載及安裝遠端代理程式
 
@@ -80,10 +80,10 @@ ms.locfileid: "67586811"
 
    建議使用全域安裝 ( **-g**) 參數，但非必要。
 
-   安裝期間會在您的 Mac 上安裝 vcremote 並啟動開發人員模式。 也會安裝[Homebrew](https://brew.sh/) 和兩個 npm 封裝、vcremote-lib 和 vcremote-utils 公用程式。 安裝完成時，針對已略過的選用相依性，您可以放心忽略相關的所有警告。
+   在安裝期間，系統會安裝 `vcremote`，並在您的 Mac 上啟用開發人員模式。 同時也會安裝[Homebrew](https://brew.sh/)和兩個 npm 套件，`vcremote-lib` 和 `vcremote-utils`。 安裝完成時，針對已略過的選用相依性，您可以放心忽略相關的所有警告。
 
    > [!NOTE]
-   > 若要安裝 Homebrew，您必須具備 sudo (系統管理員) 存取權。 如果您沒有 sudo 但要安裝 vcremote，可手動將 Homebrew 安裝到 usr/local 位置，並將它的 bin 資料夾加入路徑中。 如需詳細資訊，請參閱 [Homebrew 文件](https://github.com/Homebrew/homebrew/wiki/Installation)。 若要手動啟用開發人員模式，請在 Terminal 應用程式中輸入下列命令： `DevToolsSecurity -enable`
+   > 若要安裝 Homebrew，您必須具備 sudo (系統管理員) 存取權。 如果您需要在不 sudo 的情況下安裝 `vcremote`，您可以在 usr/本機位置手動安裝 Homebrew，並將其 bin 資料夾新增至您的路徑。 如需詳細資訊，請參閱 [Homebrew 文件](https://github.com/Homebrew/homebrew/wiki/Installation)。 若要手動啟用開發人員模式，在終端機應用程式中輸入下列命令：`DevToolsSecurity -enable`
 
 如果您已更新為新版 Visual Studio，也必須將遠端代理程式更新為目前版本。 若要更新遠端代理程式，請重複下載及安裝遠端代理程式的步驟。
 
@@ -97,11 +97,11 @@ ms.locfileid: "67586811"
 
    `vcremote`
 
-   隨即會以 ~/vcremote 的預設組建目錄啟動代理程式。 如需其他組態選項，請參閱 [Configure the remote agent on the Mac](#ConfigureMac)。
+   此命令會使用 `~/vcremote` 的預設組建目錄來啟動遠端代理程式。 如需其他組態選項，請參閱 [Configure the remote agent on the Mac](#ConfigureMac)。
 
-第一次啟動代理程式以及建立新的用戶端憑證時，會提供您在 Visual Studio 中設定代理程式的必要資訊，包括主機名稱、連接埠和 PIN 碼。
+當您第一次啟動代理程式時，以及每次建立新的用戶端憑證時，系統會提供您在 Visual Studio 中設定代理程式所需的資訊，包括主機名稱、埠和 PIN。
 
-![使用 vcremote 產生安全性 PIN 碼](../cross-platform/media/cppmdd_vcremote_generateclientcert.png "CPPMDD_vcremote_generateClientCert")
+![使用 vcremote 來產生安全的 PIN](../cross-platform/media/cppmdd_vcremote_generateclientcert.png "CPPMDD_vcremote_generateClientCert")
 
 如果您要使用主機名稱在 Visual Studio 中設定遠端代理程式，請使用主機名稱從 Windows ping 到 Mac 以確認可以存取。 如果不行，您可能要改用 IP 位址。
 
@@ -111,7 +111,7 @@ ms.locfileid: "67586811"
 
 #### <a name="to-disable-secured-connection-mode"></a>若要停用安全連線模式
 
-- 若要停用 vcremote 的安全連接模式，請在 Mac 上的 Terminal 應用程式中輸入下列命令：
+- 若要停用 `vcremote` 中的安全連線模式，請在 Mac 上的 Terminal 應用程式中輸入下列命令：
 
    `vcremote --secure false`
 
@@ -125,7 +125,7 @@ ms.locfileid: "67586811"
 
 #### <a name="to-stop-the-remote-agent"></a>若要停止遠端代理程式
 
-- 於正在執行 vcremote 的 [終端機] 視窗，輸入 **Control**+**C**。
+- 在終端機視窗中，`vcremote` 是在中執行，請在中輸入**控制項**+**C**。
 
 ## <a name="ConfigureVS"></a> 在 Visual Studio 中設定遠端代理程式
 
@@ -133,34 +133,34 @@ ms.locfileid: "67586811"
 
 ### <a name="to-configure-the-remote-agent-from-visual-studio"></a>若要從 Visual Studio 設定遠端代理程式
 
-1. 如果 Mac 上的代理程式尚未執行，請遵循 [啟動遠端代理程式](#Start)中的步驟。 您的 Mac 必須為 Visual Studio 執行 vcremote，才可順利配對、連線並建置專案。
+1. 如果 Mac 上的代理程式尚未執行，請遵循 [啟動遠端代理程式](#Start)中的步驟。 您的 Mac 必須執行 `vcremote`，Visual Studio 才能成功配對、連接及建立您的專案。
 
 1. 在您的 Mac 上，取得 Mac 主機名稱或 IP 位址。
 
    您可以在 Terminal 視窗中使用 **ifconfig** 命令取得 IP 位址。 請使用作用中的網路介面底下所列的網際網路位址。
 
-1. 在 Visual Studio 功能表列上，選擇 [工具]  、[選項]  。
+1. 在 Visual Studio 功能表列上，選擇 [工具]、[選項]。
 
-1. 展開 [選項]  對話方塊中的 [跨平台]  、[C++]  、[iOS]  。
+1. 展開 [選項] 對話方塊中的 [跨平台]、[C++]、[iOS]。
 
-1. 在 [主機名稱]  和 [連接埠]  欄位中，輸入您啟動遠端代理程式時所指定的值。 主機名稱可能是您的 Mac DNS 名稱或 IP 位址。 預設連接埠是 3030。
+1. 在 [主機名稱] 和 [連接埠] 欄位中，輸入您啟動遠端代理程式時所指定的值。 主機名稱可能是您的 Mac DNS 名稱或 IP 位址。 預設連接埠是 3030。
 
    > [!NOTE]
    > 如果您無法使用主機名稱 ping 到 Mac，就需要使用 IP 位址。
 
-1. 如果您是在預設的安全連線模式中使用遠端代理程式，請核取 [安全]  核取方塊，然後在 [Pin]  欄位中輸入遠端代理程式指定的 PIN 值。 如果您是在不安全的連線模式中使用遠端代理程式，請清除 [安全]  核取方塊，並將 [Pin]  欄位保留空白。
+1. 如果您是在預設的安全連線模式中使用遠端代理程式，請核取 [安全] 核取方塊，然後在 [Pin] 欄位中輸入遠端代理程式指定的 PIN 值。 如果您是在不安全的連線模式中使用遠端代理程式，請清除 [安全] 核取方塊，並將 [Pin] 欄位保留空白。
 
-1. 若要啟用配對，請選擇 [配對]  。
+1. 若要啟用配對，請選擇 [配對] 。
 
    ![設定 iOS 組建的 vcremote 連線](../cross-platform/media/cppmdd_options_ios.PNG "CPPMDD_Options_iOS")
 
-   配對會一直保存，直到您變更主機名稱或連接埠為止。 如果您變更 [選項]  對話方塊中的主機名稱或連接埠，要復原變更時，請選擇 [還原]  按鈕以還原為先前的配對。
+   配對會一直保存，直到您變更主機名稱或連接埠為止。 如果您變更 [選項] 對話方塊中的主機名稱或連接埠，要復原變更時，請選擇 [還原] 按鈕以還原為先前的配對。
 
-   如果未成功配對，請遵循 [Start the remote agent](#Start)中的步驟，確認遠端代理程式正在執行。 如果在產生遠端代理程式 PIN 後經過太久時間，請在 Mac 上進行 [Generate a new security PIN](#GeneratePIN) 中的步驟並再試一次。 如果您是使用 Mac 的主機名稱，請嘗試改用 [主機名稱]  欄位中的 IP 位址。
+   如果未成功配對，請遵循 [Start the remote agent](#Start)中的步驟，確認遠端代理程式正在執行。 如果在產生遠端代理程式 PIN 後經過太久時間，請在 Mac 上進行 [Generate a new security PIN](#GeneratePIN) 中的步驟並再試一次。 如果您是使用 Mac 的主機名稱，請嘗試改用 [主機名稱] 欄位中的 IP 位址。
 
-1. 更新 [遠端根目錄]  欄位中的資料夾名稱，以指定 Mac 主目錄 ( *~* ) 中遠端代理程式所使用的資料夾。 根據預設，遠端代理程式會使用 /Users/`username`/vcremote 作為遠端根目錄。
+1. 更新 [遠端根目錄] 欄位中的資料夾名稱，以指定 Mac 主目錄 ( *~* ) 中遠端代理程式所使用的資料夾。 根據預設，遠端代理程式會使用 `/Users/<username>/vcremote` 做為遠端根目錄。
 
-1. 選擇 [確定]  以儲存配對的遠端連線設定。
+1. 選擇 [確定] 以儲存配對的遠端連線設定。
 
 每次使用時，Visual Studio 都會使用相同的資訊來連接 Mac 上的遠端代理程式。 您不需再次配對 Visual Studio 與遠端代理程式，除非您在 Mac 上產生新的安全性憑證或其主機名稱或 IP 位址有所變更。
 
@@ -184,7 +184,7 @@ ms.locfileid: "67586811"
 
 ### <a name="to-generate-a-new-server-certificate"></a>若要產生新的伺服器憑證
 
-1. 停止 vcremote 代理程式。
+1. 停止 `vcremote` 代理程式。
 
 1. 在 Terminal 應用程式中，輸入下列命令：
 
@@ -196,7 +196,7 @@ ms.locfileid: "67586811"
 
    `vcremote generateClientCert`
 
-   隨即產生新的暫存 PIN。
+   此命令會產生新的暫存 PIN。
 
 1. 若要使用新的 PIN 碼配對 Visual Studio，請重複 [在 Visual Studio 中設定遠端代理程式](#ConfigureVS)中的步驟。
 
@@ -214,13 +214,13 @@ ms.locfileid: "67586811"
 
    `vcremote --secure false`
 
-   當您在 Visual Studio 中設定代理程式時使用了此選項，請取消核取 [安全]  核取方塊，並將 [PIN 碼]  欄位保留空白。
+   當您在 Visual Studio 中設定代理程式時使用了此選項，請取消核取 [安全] 核取方塊，並將 [PIN 碼] 欄位保留空白。
 
 - 若要指定遠端代理程式檔的位置，請輸入：
 
    `vcremote --serverDir directory_path`
 
-   其中， *directory_path* 是 Mac 將會存放記錄檔、組建與伺服器憑證的位置。 根據預設，這個位置是 */Users/\<使用者名稱>/vcremote*。 在這個位置中，組建會依組建編號排列。
+   其中， *directory_path* 是 Mac 將會存放記錄檔、組建與伺服器憑證的位置。 根據預設，此位置為 `/Users/<username>/vcremote`。 在這個位置中，組建會依組建編號排列。
 
 - 若要使用背景處理序將 `stdout` 和 `stderr` 擷取至名為 server.log 的檔案，請輸入：
 
@@ -238,21 +238,21 @@ ms.locfileid: "67586811"
 
 ### <a name="debugging-on-an-ios-device"></a>在 iOS 裝置上進行偵錯
 
-若在 iOS 裝置上進行偵錯無法正常運作，則可能是 [ideviceinstaller](https://github.com/libimobiledevice/ideviceinstaller) 工具本身的問題，該工具會用來和 iOS 裝置通訊。 這項工具通常會在安裝 vcremote 期間從 Homebrew 進行安裝。 請遵循以下步驟作為因應措施。
+若在 iOS 裝置上進行偵錯無法正常運作，則可能是 [ideviceinstaller](https://github.com/libimobiledevice/ideviceinstaller) 工具本身的問題，該工具會用來和 iOS 裝置通訊。 在 `vcremote` 安裝期間，通常會從 Homebrew 安裝這項工具。 請遵循以下步驟作為因應措施。
 
-開啟終端機應用程式，遵循下列順序執行命令來更新 ideviceinstaller 及其相依性：
+依序執行下列命令，以開啟終端機應用程式並更新 `ideviceinstaller` 及其相依性：
 
 1. 確認 Homebrew 已完成更新
 
    `brew update`
 
-1. 解除安裝 libimobiledevice 和 usbmuxd
+1. 卸載 `libimobiledevice` 和 `usbmuxd`
 
    `brew uninstall --ignore-dependencies libimobiledevice`
 
    `brew uninstall --ignore-dependencies usbmuxd`
 
-1. 安裝最新版本的 libimobiledevice 和 usbmuxd
+1. 安裝最新版的 `libimobiledevice` 和 `usbmuxd`
 
    `brew install --HEAD usbmuxd`
 
@@ -262,22 +262,22 @@ ms.locfileid: "67586811"
 
    `brew install --HEAD libimobiledevice`
 
-1. 解除安裝並重新安裝 ideviceinstaller
+1. 卸載並重新安裝 `ideviceinstaller`
 
    `brew uninstall ideviceinstaller`
 
    `brew install ideviceinstaller`
 
-透過嘗試列出在裝置上安裝的應用程式，驗證 ideviceinstaller 可和裝置通訊：
+藉由嘗試列出安裝在裝置上的應用程式，確認 `ideviceinstaller` 可以與裝置通訊：
 
 `ideviceinstaller -l`
 
-若 ideviceinstaller 傳回錯誤，顯示其無法存取資料夾 `/var/db/lockdown`，請使用以下命令變更資料夾上的權限：
+如果 `ideviceinstaller` 無法存取資料夾 `/var/db/lockdown` 錯誤，請使用下列方式變更資料夾上的許可權：
 
 `sudo chmod 777 /var/db/lockdown`
     
-然後再次驗證 ideviceinstaller 是否可和裝置通訊。
+然後，如果 `ideviceinstaller` 可以與裝置通訊，請再次確認。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
-- [安裝適用於跨平台行動裝置應用程式開發的 Visual C++](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md)
+- [使用安裝跨平臺行動開發C++](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md)

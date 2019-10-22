@@ -6,15 +6,15 @@ manager: lank
 ms.date: 07/28/2019
 ms.topic: conceptual
 description: 每月或每年租 Visual Studio Professional 或 Visual Studio Enterprise，沒有長期合約。
-ms.openlocfilehash: dea2c32c5737cb5f2798b3d0ebdbd3398e1bc20b
-ms.sourcegitcommit: 5b34052a1c7d86179d7898ed532babb2d9dad4a3
-ms.translationtype: HT
+ms.openlocfilehash: c31a6cb89d34456678c82ce683535005f581376d
+ms.sourcegitcommit: dc12a7cb66124596089f01d3e939027ae562ede9
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69490695"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71962954"
 ---
 # <a name="buy-visual-studio-professional-and-visual-studio-enterprise-cloud-subscriptions"></a>購買 Visual Studio Professional 和 Visual Studio Enterprise 雲端訂用帳戶
-您可以從 [Visual Studio Marketplace](https://marketplace.visualstudio.com) 購買 [Visual Studio Professional 和 Visual Studio Enterprise 訂用帳戶](https://visualstudio.microsoft.com/subscriptions/)。 這些稱為「雲端訂用帳戶」  。
+您可以從 [Visual Studio Marketplace](https://marketplace.visualstudio.com) 購買 [Visual Studio Professional 和 Visual Studio Enterprise 訂用帳戶](https://visualstudio.microsoft.com/subscriptions/)。 這些稱為「雲端訂用帳戶」。
 
 [比較雲端訂閱權益和定價](https://visualstudio.microsoft.com/vs/pricing/)
 
@@ -25,7 +25,7 @@ ms.locfileid: "69490695"
 若要為您的購買計費，您將需要一個 [Azure 訂用帳戶](https://azure.microsoft.com/pricing/purchase-options/)。 您可以在 Visual Studio Marketplace 中第一次購買之前或第一次購買期間[註冊](https://portal.azure.com)。
 
 ## <a name="who-can-buy-visual-studio-cloud-subscriptions"></a>誰可以購買 Visual Studio 雲端訂閱？
-所有擁有 Azure 訂用帳戶[擁有者](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#owner)、[服務管理員或共同管理員](https://docs.microsoft.com/azure/billing/billing-add-change-azure-subscription-administrator#assign-a-user-as-an-administrator-of-a-subscription)存取權的人員都可以購買雲端訂用帳戶。
+所有擁有 Azure 訂用帳戶[擁有者](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#owner)、[服務管理員或共同管理員](https://docs.microsoft.com/azure/billing/billing-add-change-azure-subscription-administrator#assign-a-subscription-administrator)存取權的人員都可以購買雲端訂用帳戶。
 
 ## <a name="how-to-buy-cloud-subscriptions"></a>如何購買雲端訂用帳戶
 
@@ -86,7 +86,7 @@ ms.locfileid: "69490695"
 答：這項變更不會影響現有訂閱者。
 
 #### <a name="q--do-i-need-to-do-anything-as-a-result-of-these-changes"></a>問：我需要基於這些變更採取任何動作嗎？
-答：否。  您的訂用帳戶會保持不變，而且您可以如往常般進行管理。
+答：資料分割  您的訂用帳戶會保持不變，而且您可以如往常般進行管理。
 
 #### <a name="q-what-if-i-want-to-increase-the-number-of-subscriptions-for-my-customers"></a>問：如果我想要增加客戶的訂用帳戶數目，該怎麼辦？
 答：針對在指定月份購買的年度訂閱，我們會立即收取全年的費用，有效期為一整年。 基於此原因，您只能在目前購買月份修改授權數目 (有效期為一年，並收取一年的費用)。 過了購買月份後，即無法再增加訂閱數。

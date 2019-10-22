@@ -1,5 +1,5 @@
 ---
-title: IDebugApplicationNode::GetParent |Microsoft Docs
+title: IDebugApplicationNode：： GetParent |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: daefe6883c4248f6122c1056f416b6399be4ae7d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2c887e61652da8780012d98354f028f3e5cb005c
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62822470"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574766"
 ---
 # <a name="idebugapplicationnodegetparent"></a>IDebugApplicationNode::GetParent
-傳回此應用程式 節點的父節點。  
+傳回此應用程式節點的父節點。  
   
 ## <a name="syntax"></a>語法  
   
@@ -37,7 +37,7 @@ HRESULT GetParent(
   
 #### <a name="parameters"></a>參數  
  `pprddp`  
- [out]此應用程式節點的父應用程式節點。  
+ 脫銷此應用程式節點的父應用程式節點。  
   
 ## <a name="return-value"></a>傳回值  
  方法會傳回 `HRESULT`。 可能的值包括 (但不限於) 下表中的這些值。  
@@ -47,7 +47,7 @@ HRESULT GetParent(
 |`S_OK`|方法成功。|  
   
 ## <a name="remarks"></a>備註  
- 這個方法會傳回此應用程式 節點的父節點。  
+ 這個方法會傳回此應用程式節點的父節點。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDebugApplicationNode 介面](../../winscript/reference/idebugapplicationnode-interface.md)

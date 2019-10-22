@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1fe0eef00d2bf064a8a002925f4ba5607d36f31c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 09f3c5a219fca9ec9b881e2ae8363aae4d48e03f
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62955175"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575841"
 ---
 # <a name="extendeddebugpropertyinfo-structure"></a>ExtendedDebugPropertyInfo 結構
-擴充`DebugPropertyInfo`結構描述的擴充的屬性的其他成員。  
+使用其他成員擴充 `DebugPropertyInfo` 結構，以描述擴充屬性的特性。  
   
 ## <a name="syntax"></a>語法  
   
@@ -46,46 +46,46 @@ typedef struct ExtendedDebugPropertyInfo{
 };  
 ```  
   
-## <a name="members"></a>成員  
+## <a name="members"></a>Members  
  `dwValidFields`  
- 用來指定哪些欄位會初始化列舉的資料型別。  
+ 列舉的資料類型，用來指定要初始化的欄位。  
   
  `bstrName`  
- 在內容屬性名稱。  
+ 內容中的屬性名稱。  
   
  `bstrType`  
- 為格式化的字串屬性型別。  
+ 格式化字串形式的屬性類型。  
   
  `bstrValue`  
- 為格式化的字串屬性值。  
+ 格式化字串形式的屬性值。  
   
  `bstrFullName`  
  屬性的完整名稱。  
   
  `dwAttrib`  
- 列舉型別，指定偵錯屬性的屬性的旗標。  
+ 列舉，指定 debug 屬性屬性的旗標。  
   
  `pDebugProp`  
- `IDebugProperty` 物件對應至這個`ExtendedDebugPropertyInfo`。  
+ 與這個 `ExtendedDebugPropertyInfo` 對應的 `IDebugProperty` 物件。  
   
  `nDISPID`  
  分派識別碼。  
   
  `nType`  
- 擴充的屬性的型別。  
+ 擴充屬性類型。  
   
  `varValue`  
- 如果它可以放入變數擴充的屬性值。  
+ 擴充屬性值（如果可以放入 VARIANT 中）。  
   
  `plbValue`  
- 屬性值的實際資料的位元組。  
+ 屬性值的實際資料位元組。  
   
  `pDebugExtProp`  
- `IDebugExtendedProperty` 物件對應至這個`ExtendedDebugPropertyInfo`。  
+ 與這個 `ExtendedDebugPropertyInfo` 對應的 `IDebugExtendedProperty` 物件。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [DebugPropertyInfo 結構](../../winscript/reference/debugpropertyinfo-structure.md)   
  [IDebugProperty 介面](../../winscript/reference/idebugproperty-interface.md)   
  [IDebugExtendedProperty 介面](../../winscript/reference/idebugextendedproperty-interface.md)   
- [DBGPROP_ATTRIB_FLAGS](../../winscript/reference/dbgprop-attrib-flags.md)   
+ [DBGPROP_ATTRIB_FLAGS](../../winscript/reference/dbgprop-attrib-flags.md)    
  [DBGPROP_INFO_FLAGS](../../winscript/reference/dbgprop-info-flags.md)

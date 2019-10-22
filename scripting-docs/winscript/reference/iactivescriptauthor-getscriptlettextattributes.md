@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptAuthor::GetScriptletTextAttributes |Microsoft Docs
+title: IActiveScriptAuthor：： GetScriptletTextAttributes |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cb8f1b5aac6df8d8659fa323f3f1efcb7721d97f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4cd0090b9ade47ad37acf6d285ec7f072f1ea5af
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62955053"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576175"
 ---
 # <a name="iactivescriptauthorgetscriptlettextattributes"></a>IActiveScriptAuthor::GetScriptletTextAttributes
-傳回的文字屬性的程式碼片段。  
+傳回程式碼片段的文字屬性。  
   
 ## <a name="syntax"></a>語法  
   
@@ -41,25 +41,25 @@ HRESULT GetScriptletTextAttributes(
   
 #### <a name="parameters"></a>參數  
  `pszCode`  
- [在 size_is (`cch`)] 的程式碼片段文字。 以 null 結尾沒有這個字串。  
+ [in，size_is （`cch`）]程式碼片段文字。 這個字串不一定要終止 null。  
   
  `cch`  
- [in]所使用的大小`pszCode`和`pattr`參數。  
+ 在@No__t_0 和 `pattr` 參數所使用的大小。  
   
  `pszDelimiter`  
- [in]結束的程式碼片段分隔符號的位址。 當`pszCode`剖析文字資料流，從主應用程式通常會使用分隔符號 （例如兩個單引號），偵測 scriptlet 結尾。 如果沒有分隔符號用來識別 scriptlet 結尾，請設定此參數為 NULL。  
+ 在程式碼片段後端分隔符號的位址。 從文字的資料流程剖析 `pszCode` 時，主機通常會使用分隔符號（例如兩個單引號）來偵測程式碼片段的結尾。 如果沒有使用分隔符號來識別程式碼片段的結尾，請將此參數設定為 Null。  
   
  `dwFlags`  
- [in]相關聯的程式碼片段的文字屬性的旗標。 可以是下列值的組合。  
+ 在與程式碼片段的文字屬性相關聯的旗標。 可以是下列值的組合。  
   
 |常數|值|描述|  
 |--------------|-----------|-----------------|  
-|GETATTRTYPE_DEPSCAN|0x0001|識別具有 SOURCETEXT_ATTR_IDENTIFIER 屬性的識別項，並找出具有 SOURCETEXT_ATTR_MEMBERLOOKUP 屬性的點運算子。|  
-|GETATTRFLAG_THIS|0x0100|識別目前具有 SOURCETEXT_ATTR_THIS 屬性的物件。|  
+|GETATTRTYPE_DEPSCAN|0x0001|識別具有 SOURCETEXT_ATTR_IDENTIFIER 屬性的識別碼，並識別具有 SOURCETEXT_ATTR_MEMBERLOOKUP 屬性的點運算子。|  
+|GETATTRFLAG_THIS|0x0100|識別具有 SOURCETEXT_ATTR_THIS 屬性的目前物件。|  
 |GETATTRFLAG_HUMANTEXT|0x8000|識別具有 SOURCETEXT_ATTR_HUMANTEXT 屬性的字串內容和註解文字。|  
   
  `pattr`  
- [in、 out size_is (`cch`)] 的程式碼片段的程式碼的色彩資訊。  
+ [in、out、size_is （`cch`）]程式碼片段程式碼的色彩資訊。  
   
 ## <a name="return-value"></a>傳回值  
  `HRESULT`。 可能的值包括 (但不限於) 下表中的這些值。  
@@ -70,7 +70,7 @@ HRESULT GetScriptletTextAttributes(
   
 ## <a name="remarks"></a>備註  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IActiveScriptAuthor 介面](../../winscript/reference/iactivescriptauthor-interface.md)   
- [IActiveScriptAuthor::GetScriptTextAttributes](../../winscript/reference/iactivescriptauthor-getscripttextattributes.md)   
+ [IActiveScriptAuthor：： GetScriptTextAttributes](../../winscript/reference/iactivescriptauthor-getscripttextattributes.md)    
  [SOURCE_TEXT_ATTR 列舉](../../winscript/reference/source-text-attr-enumeration.md)

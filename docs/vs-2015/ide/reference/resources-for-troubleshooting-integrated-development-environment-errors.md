@@ -91,28 +91,28 @@ f1_keywords:
 - vs.webclient.help.general
 ms.assetid: 8f866eb5-a206-4c16-807e-96a0f2c0e645
 caps.latest.revision: 16
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 97edc5419cb552f853a75817564a69dd175ec54b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5198c541deb4680d19e2b15ae0e672b831dbb13e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68203680"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72665542"
 ---
 # <a name="resources-for-troubleshooting-integrated-development-environment-errors"></a>用於疑難排解整合式開發環境錯誤的資源
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-並非所有錯誤訊息都有特定的相關說明主題。 如果錯誤訊息中的資訊無法協助您解決問題，則可以參閱知識庫文章、開發人員社群或產品支援這類其他資源。  
-  
-## <a name="knowledge-base-articles"></a>知識庫文章  
- 您可以搜尋線上知識庫 (KB) 中有關產品問題的文章。 並非所有問題都有對應的 KB 文章，但一般會記錄大量客戶遇到的錯誤。 您可以在 [Microsoft 支援服務](http://go.microsoft.com/fwlink/?linkid=1782)網站存取 KB 文章。  
-  
-## <a name="the-developer-community"></a>開發人員社群  
- 論壇也可讓您與其他開發人員和 Microsoft 員工互動。 如果您遇到找不到解決方案的錯誤，則可以在論壇張貼有關問題的疑問。 您也可以搜尋新聞群組，以查看是否有其他人已經張貼相同的問題。  
-  
- 您可以在 [Microsoft 技術社群](https://techcommunity.microsoft.com/)網站存取論壇、部落格、聊天室和其他資源。  
-  
-## <a name="product-support"></a>產品支援  
+並非所有錯誤訊息都有特定的相關說明主題。 如果錯誤訊息中的資訊無法協助您解決問題，則可以參閱知識庫文章、開發人員社群或產品支援這類其他資源。
+
+## <a name="knowledge-base-articles"></a>知識庫文章
+ 您可以搜尋線上知識庫 (KB) 中有關產品問題的文章。 並非所有問題都有對應的 KB 文章，但一般會記錄大量客戶遇到的錯誤。 您可以在 [Microsoft 支援服務](http://go.microsoft.com/fwlink/?linkid=1782)網站存取 KB 文章。
+
+## <a name="the-developer-community"></a>開發人員社群
+ 論壇也可讓您與其他開發人員和 Microsoft 員工互動。 如果您遇到找不到解決方案的錯誤，則可以在論壇張貼有關問題的疑問。 您也可以搜尋新聞群組，以查看是否有其他人已經張貼相同的問題。
+
+ 您可以在 [Microsoft 技術社群](https://techcommunity.microsoft.com/)網站存取論壇、部落格、聊天室和其他資源。
+
+## <a name="product-support"></a>產品支援
  如果您在嘗試其他資源之後仍有疑問，則可以前往 [Microsoft 支援服務](http://go.microsoft.com/fwlink/?linkid=1782)網站，連絡 Microsoft 支援服務。 如需您地區中可用的產品支援資訊，請參閱[告訴我們](../../ide/talk-to-us.md)。

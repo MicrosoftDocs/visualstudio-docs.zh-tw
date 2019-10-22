@@ -6,17 +6,17 @@ helpviewer_keywords:
 - security [Visual Studio], applications
 - application design, securability
 ms.assetid: 7d32c4cf-8bec-4307-a2a8-42f0ceddf3eb
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c5b0f4c748cd923ca02cb16ba374747c20d12d7
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
-ms.translationtype: HT
+ms.openlocfilehash: 605a8301e0a016699822e32e24f82592862bb765
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66747659"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72621606"
 ---
 # <a name="secure-applications"></a>保護應用程式
 
@@ -38,7 +38,7 @@ ms.locfileid: "66747659"
 - [Dotfuscator](dotfuscator/index.md)　為免費，而且有助於保護 .NET 組件不會遭受反向工程和未經授權的使用，例如未經授權的偵錯。
 - [強式名稱簽署](managing-assembly-and-manifest-signing.md)可以用來唯一識別軟體元件，並防止名稱詐騙。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [.NET 中的安全性](/dotnet/standard/security/index)
 - [Azure 安全性](/azure/security/)

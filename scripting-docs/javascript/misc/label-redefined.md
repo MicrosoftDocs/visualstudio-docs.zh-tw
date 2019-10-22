@@ -14,22 +14,22 @@ ms.assetid: 7fba49c9-9c95-4f46-b778-9c6ab33ab944
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a5c6f44124ff49982d3821b1441eacf8dec7a666
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f8a22768367963f283f32a5d898cb3db3d1c7f9e
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63006988"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573762"
 ---
 # <a name="label-redefined"></a>已重新定義標籤
-您已建立新的標籤，但會指定現有標籤的名稱。 標籤可以用來標示程式碼區塊，但指定範圍內，它們必須是唯一。  
+您已建立新的標籤，但為其提供現有標籤的名稱。 標籤可以用來標示程式碼區塊，但在指定的範圍內，它們必須是唯一的。  
   
 ### <a name="to-correct-this-error"></a>更正這個錯誤  
   
-- 請確定您在程式中使用的所有標籤都是其各自範圍內唯一的。  
+- 請確定您在程式中使用的所有標籤在其各自的範圍內都是唯一的。  
   
-## <a name="see-also"></a>另請參閱  
- [Labeled 陳述式](../../javascript/reference/labeled-statement-javascript.md)   
- [switch 陳述式](../../javascript/reference/switch-statement-javascript.md)   
+## <a name="see-also"></a>請參閱  
+ [標記的語句](../../javascript/reference/labeled-statement-javascript.md)   
+ [Switch 語句](../../javascript/reference/switch-statement-javascript.md)   
  [break 陳述式](../../javascript/reference/break-statement-javascript.md)   
  [continue 陳述式](../../javascript/reference/continue-statement-javascript.md)

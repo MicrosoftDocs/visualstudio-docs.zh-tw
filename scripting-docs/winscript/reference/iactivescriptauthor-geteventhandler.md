@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptAuthor::GetEventHandler | Microsoft Docs
+title: IActiveScriptAuthor：： GetEventHandler |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7bba60df6485ddaac0363a3416739efd7be69389
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c69b32f0040ea6d52e0712b8e1813cc5a0b40c58
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62935629"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576222"
 ---
 # <a name="iactivescriptauthorgeteventhandler"></a>IActiveScriptAuthor::GetEventHandler
-傳回含有指定的屬性程式碼片段。  
+傳回具有指定屬性的程式碼片段。  
   
 ## <a name="syntax"></a>語法  
   
@@ -41,19 +41,19 @@ HRESULT GetEventHandler(
   
 #### <a name="parameters"></a>參數  
  `pdisp`  
- [in]`IDispatch`物件，對應至`NamedItem`附加程式碼片段。  
+ 在對應至程式碼片段附加之 `NamedItem` 的 `IDispatch` 物件。  
   
  `pszItem`  
- [in]最上層的識別項的主應用程式中的完整程式碼片段名稱的緩衝區位址。  
+ 在主機中完整程式碼片段名稱的最上層識別碼的緩衝區位址。  
   
  `pszSubItem`  
- [in]第二個層級識別項的主應用程式中的完整程式碼片段名稱的緩衝區位址。 如果名稱有只有一個層級，請設為 NULL。  
+ 在主機中完整程式碼片段名稱的第二層識別碼的緩衝區位址。 如果名稱只有一個層級，則設定為 Null。  
   
  `pszEvent`  
- [in]包含事件名稱的緩衝區位址。 程式碼片段是此事件的事件處理常式。  
+ 在包含事件名稱的緩衝區位址。 程式碼片段是此事件的事件處理常式。  
   
  `ppse`  
- [out]收到的指標變數的位址`IScriptEntry`含有指定的屬性程式碼片段的介面。  
+ 脫銷此變數的位址，會接收具有指定屬性之程式碼片段的 `IScriptEntry` 介面的指標。  
   
 ## <a name="return-value"></a>傳回值  
  `HRESULT`。 可能的值包括 (但不限於) 下表中的這些值。  
@@ -64,6 +64,6 @@ HRESULT GetEventHandler(
   
 ## <a name="remarks"></a>備註  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IActiveScriptAuthor 介面](../../winscript/reference/iactivescriptauthor-interface.md)   
  [IScriptEntry 介面](../../winscript/reference/iscriptentry-interface.md)

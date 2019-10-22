@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptAuthorProcedure::ParseProcedureText | Microsoft Docs
+title: IActiveScriptAuthorProcedure：:P arseProcedureText |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c513b105a483d0f80510dff9c91fa2c3f09e0523
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 11a34843f30274ec78f1652c5ed5cd4dbcf2884a
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62955155"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572825"
 ---
 # <a name="iactivescriptauthorprocedureparseproceduretext"></a>IActiveScriptAuthorProcedure::ParseProcedureText
-剖析的程式碼程序，將程式碼程序的文字加入指令碼撰寫引擎，並建立`IScriptEntry`對應至程式碼程序的物件。  
+剖析程式碼程式、將程式碼程式的文字新增至腳本撰寫引擎，並建立對應至程式碼程式的 `IScriptEntry` 物件。  
   
 ## <a name="syntax"></a>語法  
   
@@ -44,28 +44,28 @@ HRESULT ParseProcedureText(
   
 #### <a name="parameters"></a>參數  
  `pszCode`  
- [in]要剖析的指令碼文字。  
+ 在要剖析的腳本文字。  
   
  `pszFormalParams`  
- [in]此程序的型式參數名稱的位址。 參數名稱必須以撰寫引擎的指令碼的適當分隔符號分隔。 名稱不應該用括號括住。  
+ 在程式正式參數名稱的位址。 參數名稱必須以腳本撰寫引擎的適當分隔符號分隔。 名稱不應括在括弧中。  
   
  `pszProcedureName`  
- [in]要剖析的程序名稱的位址。  
+ 在要剖析之程式名稱的位址。  
   
  `pszItemName`  
- [in]包含的項目名稱的緩衝區位址相關聯`IScriptEntry`物件。  
+ 在包含與 `IScriptEntry` 物件相關聯之專案名稱的緩衝區位址。  
   
  `pszDelimiter`  
- [in]End 的指令碼區塊分隔符號的位址。 當`pszCode`剖析文字資料流，從主應用程式通常會使用分隔符號 （例如兩個單引號），來偵測指令碼區塊的結尾。 如果沒有任何分隔符號來標示指令碼區塊的結尾，請設定此參數為 NULL。  
+ 在結束腳本區塊分隔符號的位址。 從文字的資料流程剖析 `pszCode` 時，主機通常會使用分隔符號（例如兩個單引號）來偵測腳本區塊的結尾。 如果沒有分隔符號可標示腳本區塊的結尾，請將此參數設定為 Null。  
   
  `dwCookie`  
- [in]應用程式定義的值與新相關聯`IScriptEntry`物件。  
+ 在與新的 `IScriptEntry` 物件相關聯的應用程式定義值。  
   
  `dwFlags`  
- [in]不使用。  
+ 在未使用。  
   
  `pdispFor`  
- [in]不使用。  
+ 在未使用。  
   
 ## <a name="return-value"></a>傳回值  
  `HRESULT`。 可能的值包括 (但不限於) 下表中的這些值。  
@@ -75,7 +75,7 @@ HRESULT ParseProcedureText(
 |`S_OK`|方法成功。|  
   
 ## <a name="remarks"></a>備註  
- 目前[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]引擎不會實作這個方法。  
+ 目前的 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 引擎不會執行此方法。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IActiveScriptAuthorProcedure 介面](../../winscript/reference/iactivescriptauthorprocedure-interface.md)

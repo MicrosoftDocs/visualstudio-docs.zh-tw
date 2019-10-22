@@ -2,15 +2,15 @@
 title: 在 Team Explorer 中連線到專案
 ms.date: 12/04/2018
 ms.topic: conceptual
-ms.author: gewarren
-author: gewarren
+ms.author: jillfra
+author: jillre
 ms.manager: jillfra
-ms.openlocfilehash: d65ea17ad642ea882820bc04f5d217e6290a8a6d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: f3e4b2b5df96f397104afb3ab6268e1fa294116e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62976667"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72652641"
 ---
 # <a name="connect-to-projects-in-team-explorer"></a>在 Team Explorer 中連線到專案
 
@@ -40,7 +40,7 @@ ms.locfileid: "62976667"
 > [!TIP]
 > 如果您需要建立新的專案或將使用者新增至專案，請參閱[建立專案 (Azure DevOps)](/azure/devops/organizations/projects/create-project) 和[將使用者新增至專案或小組 (Azure DevOps)](/azure/devops/organizations/security/add-users-team-project)。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [Team Explorer 參考](reference/team-explorer-reference.md)
 - [連線到專案 (Azure DevOps)](/azure/devops/organizations/projects/connect-to-projects)

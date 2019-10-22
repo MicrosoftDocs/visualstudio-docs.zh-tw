@@ -36,17 +36,17 @@ helpviewer_keywords:
 - Code Editor, indenting
 - Code Editor, tabs
 ms.assetid: 7e208e1d-5e3a-4bf7-a27b-4417e3e049c7
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 09bf4f205b7fc200038b2aedfcf3a8318cb1c7a9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 45cee31df08461731c14e2ac1fdef8456a882800
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62997151"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72666363"
 ---
 # <a name="options-text-editor-all-languages-tabs"></a>索引標籤、所有語言、文字編輯器、選項
 
@@ -59,7 +59,7 @@ ms.locfileid: "62997151"
 
 ## <a name="indenting"></a>縮排
 
-無
+None
 
 選取時，新行不會縮排。 插入點會放在新行的第一欄中。
 
@@ -91,7 +91,7 @@ ms.locfileid: "62997151"
 
 選取時，縮排作業會盡可能插入越多的定位字元。 每個定位字元都會以指定的 [定位點大小] 填入空格數。 如果 [縮排大小] 不是 [定位點大小] 的偶數倍數，就會加入空格字元填滿其間的差距。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [所有語言、文字編輯器、選項](../../ide/reference/options-text-editor-all-languages.md)
 - [選項對話方塊、環境、一般](../../ide/reference/general-environment-options-dialog-box.md)

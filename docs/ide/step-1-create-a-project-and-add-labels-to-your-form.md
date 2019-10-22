@@ -1,6 +1,6 @@
 ---
-title: 步驟 1：建立專案並將標籤新增至表單
-ms.date: 05/31/2019
+title: 步驟 1：建立專案並將標籤加入至表單
+ms.date: 10/15/2019
 ms.topic: tutorial
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
@@ -10,14 +10,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b52851ce3e344293faede243413fc796e9882196
-ms.sourcegitcommit: 6eed0372976c0167b9a6d42ba443f9a474b8bb91
+ms.openlocfilehash: 0fdda615ceea11434a4533fa2a5071a5a999c1c4
+ms.sourcegitcommit: 6244689e742e551e7b6933959bd42df56928ece3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71119044"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72516692"
 ---
-# <a name="step-1-create-a-project-and-add-labels-to-your-form"></a>步驟 1：建立專案並將標籤新增至表單
+# <a name="step-1-create-a-project-and-add-labels-to-your-form"></a>步驟 1：建立專案並將標籤加入至表單
 
 開發這個測驗的前幾個步驟是建立專案，然後將標籤、按鈕和其他控制項加入至表單。 另外也會設定您所加入每個控制項的屬性。 專案將包含表單、控制項和程式碼 (稍後在本教學課程中加以說明)。 按鈕用於開始測驗，標籤用於顯示測驗問題，而其他控制項則顯示測驗的答案及完成測驗所剩餘的時間。
 
@@ -49,16 +49,16 @@ ms.locfileid: "71119044"
 
    ![檢視 [建立新專案] 視窗](../get-started/media/vs-2019/create-new-project-dark-theme.png)
 
-1. 在 [建立新專案] 視窗中，在搜尋方塊內輸入或鍵入 *Windows Forms*。
+1. 在 [建立新專案] 視窗中，在搜尋方塊內輸入或鍵入 *Windows Forms*。 接下來，從 [**專案類型**] 清單中選擇 [**桌面**]。
 
-1. 選擇 [Windows Forms 應用程式 (.NET Framework)] 範本，然後選擇 [下一步]。
+   套用**專案類型**篩選之後，請選擇C#或 Visual Basic 的 [ **Windows Forms 應用程式（.NET Framework）** ] 範本，然後選擇 [**下一步]** 。
 
-   ![選擇 Windows Forms 應用程式 (.NET Framework) 的 Visual Basic 專案範本](../get-started/visual-basic/media/vs-2019/vb-create-new-project-search-winforms-filtered.png)
+   ![選擇 Windows Forms 應用程式C#的或 Visual Basic 範本（.NET Framework）](./media/create-new-project-search-winforms-filtered.png)
 
    > [!NOTE]
-   > 如果您未看到 [Windows Forms 應用程式 (.NET Framework)] 範本，您可以從 [建立新專案] 視窗中安裝。 在 [找不到你要尋找的項目嗎?] 訊息中，選擇 [安裝更多工具和功能] 連結。
+   > 如果您未看到 [Windows Forms 應用程式 (.NET Framework)] 範本，您可以從 [建立新專案] 視窗中安裝。 在 [找不到您要找的資料嗎?] 訊息中，選擇 [安裝更多工具和功能] 連結。
    >
-   > ![[建立新專案] 視窗中「找不到您要尋找的項目嗎?」訊息的 [安裝更多工具和功能] 連結](../get-started/media/vs-2019/not-finding-what-looking-for.png)
+   > ![[建立新專案] 視窗中 [找不到您要找的資料嗎?] 訊息的 [安裝更多的工具和功能] 連結](../get-started/media/vs-2019/not-finding-what-looking-for.png)
    >
    > 接下來，在 Visual Studio 安裝程式中選擇 **.NET 桌面開發**工作負載。
    >
@@ -208,8 +208,8 @@ ms.locfileid: "71119044"
 
 8. 若要驗證 **TabIndex** 屬性是否如您預期般運作，請選擇 **F5** 鍵或在功能表列上依序選擇 [偵錯] > [開始偵錯] 儲存並執行您的程式，然後選擇 **Tab** 鍵數次。
 
-## <a name="to-continue-or-review"></a>若要繼續或檢視
+## <a name="to-continue-or-review"></a>繼續或檢視
 
-- 若要移至下一個教學課程步驟 **，請參閱[步驟2：建立隨機加法問題](../ide/step-2-create-a-random-addition-problem.md)。**
+- 若要移至下一個教學課程步驟，請參閱 **[步驟2：建立隨機加法問題](../ide/step-2-create-a-random-addition-problem.md)** 。
 
 - 若要回到概觀主題，請參閱[教學課程 2：建立計時的數學測驗](../ide/tutorial-2-create-a-timed-math-quiz.md)。

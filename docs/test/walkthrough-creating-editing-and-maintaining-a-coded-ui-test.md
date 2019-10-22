@@ -2,19 +2,19 @@
 title: 建立自動程式化 UI 測試
 ms.date: 11/04/2016
 ms.topic: conceptual
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-author: gewarren
-ms.openlocfilehash: 54ebc36f9dd18010e07403c3b9692b62b2380d99
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+author: jillre
+ms.openlocfilehash: 268d170926e3a60ba0aa5131795f22bb31cd2ba9
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62976347"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72659640"
 ---
-# <a name="walkthrough-create-edit-and-maintain-a-coded-ui-test"></a>逐步解說：建立、編輯及維護自動程式化 UI 測試
+# <a name="walkthrough-create-edit-and-maintain-a-coded-ui-test"></a>逐步解說：建立、編輯和維護自動程式化 UI 測試
 
 在本逐步解說中，您將了解如何建立、編輯和維護自動程式化 UI 測試來測試 Windows Presentation Framework (WPF) 應用程式。 本逐步解說提供解決方案用來修正各種因時間問題和控制項重構而中斷的測試。
 
@@ -333,12 +333,12 @@ ms.locfileid: "62976347"
 
 ![影片連結](../data-tools/media/playvideo.gif) [開始使用自動程式化 UI 測試](https://onedrive.live.com/?id=2DB0E1EFE1C1D3B8%21110&cid=2DB0E1EFE1C1D3B8)
 
-## <a name="faq"></a>常見問題集
+## <a name="faq"></a>常見問題 (FAQ)
 
 [自動程式化 UI 測試常見問題集](https://social.msdn.microsoft.com/Forums/vsautotest/3a74dd2c-cef8-4923-abbf-7a91f489e6c4/faqs)
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [使用 UI 自動化來測試您的程式碼](../test/use-ui-automation-to-test-your-code.md)
-- [自動程式碼 UI 測試和動作記錄的支援組態和平台](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
+- [自動程式化 UI 測試和動作記錄的支援組態和平台](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
 - [使用自動程式化 UI 測試編輯器來編輯自動程式化 UI 測試](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugApplication110::CallableWaitForHandles |Microsoft Docs
+title: IDebugApplication110：： CallableWaitForHandles |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -13,18 +13,18 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f74e3faa57e9ee4a38f77110334383bc2c72fe2f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 22af0e9dcf548bbd2f0f8c179b4889d5294eb284
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63446389"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575079"
 ---
 # <a name="idebugapplication110callablewaitforhandles"></a>IDebugApplication110::CallableWaitForHandles
-等候任何一個指定的控制代碼接收信號，同時允許跨執行緒呼叫張貼到此對話。 從偵錯工具的執行緒，就必須呼叫這個方法。  
+等候任何指定的控制碼收到信號，同時允許將跨執行緒呼叫張貼到這個執行緒。 這個方法必須從偵錯工具執行緒呼叫。  
   
 > [!IMPORTANT]
-> [IDebugApplication110 介面](../../winscript/reference/idebugapplication110-interface.md)是實作由 PDM v11.0 和更新版本。 可在 activdbg100.h 中找到。  
+> [IDebugApplication110 介面](../../winscript/reference/idebugapplication110-interface.md)是由 PDM 11.0 和更新版本所執行。 可在 activdbg100.h 中找到。  
   
 ## <a name="syntax"></a>語法  
   
@@ -34,13 +34,13 @@ HRESULT CallableWaitForHandles([in] DWORD handleCount, [in, size_is(handleCount)
   
 #### <a name="parameters"></a>參數  
  `handleCount`  
- 等候控制代碼數目。  
+ 要等候的控制碼數目。  
   
  `pHandles`  
- 一組的等候控制代碼。  
+ 要等候的控制碼集。  
   
  `pIndex`  
- HRESULT 值時 s_ok 時，索引`pHandles`接獲訊號的控制代碼。  
+ 當 HRESULT 值為 S_OK 時，會將索引放入已發出信號的控制碼 `pHandles`。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDebugApplication110 介面](../../winscript/reference/idebugapplication110-interface.md)

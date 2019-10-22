@@ -5,17 +5,17 @@ ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.HTML.Validation
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d06674d476dd671f715d2f4c88bdd23852f78687
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 6baaf22b0a57cf669fbe0ffc4fe75cf1c72baa3b
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62778475"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72666114"
 ---
 # <a name="options-text-editor-html-web-forms-validation"></a>選項、文字編輯器、HTML (Web Form)、驗證
 
@@ -42,6 +42,6 @@ ms.locfileid: "62778475"
      > [!NOTE]
      > 部分結構描述不提供標記個別錯誤類型的選項。 例如，如果您選擇 **XHTML 1.1** 作為目標結構描述，則所有選項核取方塊都會停用。 在此情況下，系統會標示所有錯誤類型。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [選項對話方塊、環境、一般](../../ide/reference/general-environment-options-dialog-box.md)

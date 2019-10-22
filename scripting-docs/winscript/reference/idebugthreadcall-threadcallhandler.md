@@ -1,5 +1,5 @@
 ---
-title: IDebugThreadCall::ThreadCallHandler | Microsoft Docs
+title: IDebugThreadCall：： ThreadCallHandler |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d1802cdcdabe2ae462960378d0e869838cdaa6e5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 58e7d3facbd5a59bf7b81e3257c6daea7874141a
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63000915"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576648"
 ---
 # <a name="idebugthreadcallthreadcallhandler"></a>IDebugThreadCall::ThreadCallHandler
 處理在另一個執行緒中執行程式碼的呼叫。  
@@ -39,13 +39,13 @@ HRESULT ThreadCallHandler(
   
 #### <a name="parameters"></a>參數  
  `dwParam1`  
- [in]第一個參數。  
+ 在第一個參數。  
   
  `dwParam2`  
- [in]第二個參數中。  
+ 在第二個參數。  
   
  `dwParam3`  
- [in]第三個參數中。  
+ 在第三個參數。  
   
 ## <a name="return-value"></a>傳回值  
  方法會傳回 `HRESULT`。 可能的值包括 (但不限於) 下表中的這些值。  
@@ -55,9 +55,9 @@ HRESULT ThreadCallHandler(
 |`S_OK`|方法成功。|  
   
 ## <a name="remarks"></a>備註  
- 這個方法會處理在偵錯工具執行緒中執行程式碼的呼叫。  
+ 這個方法會處理呼叫，以在偵錯工具執行緒中執行程式碼。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDebugThreadCall 介面](../../winscript/reference/idebugthreadcall-interface.md)   
- [IDebugApplication::SynchronousCallInDebuggerThread](../../winscript/reference/idebugapplication-synchronouscallindebuggerthread.md)   
+ [IDebugApplication：： SynchronousCallInDebuggerThread](../../winscript/reference/idebugapplication-synchronouscallindebuggerthread.md)    
  [IDebugApplicationThread::SynchronousCallIntoThread](../../winscript/reference/idebugapplicationthread-synchronouscallintothread.md)

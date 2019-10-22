@@ -14,7 +14,7 @@
       href: create-unit-tests-menu.md
     - name: IntelliTest
       items:
-        - name: 作法：使用 IntelliTest 產生單元測試
+        - name: HOW TO：使用 IntelliTest 產生單元測試
           href: generate-unit-tests-for-your-code-with-intellitest.md
         - name: 總覽
           href: intellitest-manual/introduction.md
@@ -62,13 +62,14 @@
           href: using-the-assert-classes.md
         - name: Microsoft Fakes
           items:
-            - name: 使用 Microsoft Fakes 隔離測試中的程式碼
+            - name: 隔離受測程式碼
+              displayName: 'shim, stub, fakes'
               href: isolating-code-under-test-with-microsoft-fakes.md
-            - name: 使用虛設常式隔離應用程式的各個組件，方便進行單元測試
+            - name: 使用虛設常式隔離應用程式的各部分
               href: using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md
-            - name: 使用填充碼將應用程式與其他組件隔離，方便進行單元測試
+            - name: 使用填充碼讓應用程式與其他組件隔離
               href: using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md
-            - name: Microsoft Fakes 中的程式碼產生、編譯和命名慣例
+            - name: 程式碼產生、編譯和命名慣例
               href: code-generation-compilation-and-naming-conventions-in-microsoft-fakes.md
         - name: 資料驅動型單元測試
           items:
@@ -119,13 +120,13 @@
     - name: 簡介
       displayName: Live Unit Testing introduction
       href: live-unit-testing-intro.md
-    - name: Live Unit Testing 的新功能
+    - name: 新功能
       href: live-unit-testing-whats-new.md
-    - name: Live Unit Testing 的使用者入門
+    - name: 開始使用
       href: live-unit-testing-start.md
-    - name: 使用 Enterprise Edition 中的 Live Unit Testing
+    - name: 設定及使用
       href: live-unit-testing.md
-    - name: Live Unit Testing 常見問題集
+    - name: 常見問題集
       href: live-unit-testing-faq.md
 - name: Web 效能和負載測試
   items:

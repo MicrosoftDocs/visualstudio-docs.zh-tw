@@ -1,5 +1,5 @@
 ---
-title: HOW TO：視覺化集合關聯 (類別設計工具)
+title: 如何：視覺化集合關聯 (類別設計工具)
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -10,19 +10,19 @@ helpviewer_keywords:
 - collections, collection associations
 - Class Designer [Visual Studio], collection associations
 ms.assetid: 54e39838-2fc9-4dc2-85b6-7e88a743108e
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 09c23b59711a95f0729555acfd0203160bd9995d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: e074eee5972bcf952108a36f52c0915057c470a3
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62975069"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72631328"
 ---
-# <a name="how-to-visualize-a-collection-association-in-class-designer"></a>HOW TO：在 [類別設計工具] 中將集合關聯視覺化
+# <a name="how-to-visualize-a-collection-association-in-class-designer"></a>如何：在類別設計工具中將集合關聯視覺化
 
 屬性和欄位是可在類別圖表上顯示為集合關聯之其他類型的集合。 不同於會將欄位或屬性顯示為將主控類別連結到欄位類型的一般關聯，集合關聯會顯示為將主控類別連結到收集的類型。
 
@@ -36,7 +36,7 @@ ms.locfileid: "62975069"
 
 屬性或欄位會顯示為連結所收集類型的關聯線。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [如何：建立類型之間的關聯](how-to-create-associations-between-types.md)
 - [設計類別和類型](designing-and-viewing-classes-and-types.md)

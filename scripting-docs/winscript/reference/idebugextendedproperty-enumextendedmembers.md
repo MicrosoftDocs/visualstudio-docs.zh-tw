@@ -1,5 +1,5 @@
 ---
-title: IDebugExtendedProperty::EnumExtendedMembers |Microsoft Docs
+title: IDebugExtendedProperty：： EnumExtendedMembers |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c7e14d1bc8937221960d938f1bbfae8e307830f2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f6fd225be9504254965eab77b912f50fb5c777e3
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62946141"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576396"
 ---
 # <a name="idebugextendedpropertyenumextendedmembers"></a>IDebugExtendedProperty::EnumExtendedMembers
 列舉擴充屬性的成員。  
@@ -39,18 +39,18 @@ HRESULT EnumExtendedMembers(
   
 #### <a name="parameters"></a>參數  
  `dwFieldSpec`  
- [in]指定要填入判斷列舉中的欄位擴充偵錯屬性結構，EX_DBGPROP_INFO_FLAGS 常數。  
+ 在指定 EX_DBGPROP_INFO_FLAGS 常數，以決定要填入之列舉擴充偵錯工具屬性結構中的欄位。  
   
  `nRadix`  
- [in]用於解譯任何數字資訊的基數。  
+ 在用來解讀任何數值資訊的基數。  
   
  `ppeepi`  
- [out]傳回`IEnumDebugExtendedPropertyInfo`列舉的成員屬性的介面。  
+ 脫銷傳回列舉成員屬性的 `IEnumDebugExtendedPropertyInfo` 介面。  
   
 ## <a name="return-value"></a>傳回值  
- 會傳回有效`HRESULT`，通常是`S_OK`。  
+ 傳回有效的 `HRESULT`，通常是 `S_OK`。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDebugExtendedProperty 介面](../../winscript/reference/idebugextendedproperty-interface.md)   
- [EX_DBGPROP_INFO_FLAGS](../../winscript/reference/ex-dbgprop-info-flags.md)   
+ [EX_DBGPROP_INFO_FLAGS](../../winscript/reference/ex-dbgprop-info-flags.md)    
  [ExtendedDebugPropertyInfo 結構](../../winscript/reference/extendeddebugpropertyinfo-structure.md)

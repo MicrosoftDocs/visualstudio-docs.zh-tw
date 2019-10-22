@@ -9,25 +9,25 @@ helpviewer_keywords:
 - coded UI tests, for large applications
 ms.assetid: 6e1ae9ec-e9b1-458a-bd96-0eb15e46f1d5
 caps.latest.revision: 24
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 016417ec05149da52af78e2b41e0fff4af6c3e5b
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 2f6936811ea753d66d212facdda627930fb1ab10
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68871575"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72672130"
 ---
 # <a name="testing-a-large-application-with-multiple-ui-maps"></a>測試含有多個 UI 對應的大型應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 本主題討論如何使用自動程式化 UI 測試，透過多個 UI 對應來測試大型應用程式。
 
- **需求**
+ **Requirements**
 
 - Visual Studio 企業版
 
-  當您建立新的自動程式化 UI 測試[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]時, 測試架構預設會在[UIMap](/previous-versions/dd580454(v=vs.140))類別中產生測試的程式碼。 如需如何錄製自動程式碼 UI 測試的詳細資訊，請參閱[建立自動程式碼 UI 測試](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate)和[自動程式碼 UI 測試的結構](../test/anatomy-of-a-coded-ui-test.md)。
+  當您建立新的自動程式化 UI 測試時，[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 測試架構預設會在[UIMap](/previous-versions/dd580454(v=vs.140))類別中產生測試的程式碼。 如需如何錄製自動程式碼 UI 測試的詳細資訊，請參閱[建立自動程式碼 UI 測試](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate)和[自動程式碼 UI 測試的結構](../test/anatomy-of-a-coded-ui-test.md)。
 
   為 UI 對應產生的程式碼會針對與測試互動的每個物件各包含一個類別。 針對每個產生的方法，系統會專門為該方法產生方法參數的附屬類別。 如果您的應用程式中有大量物件、頁面、表單和控制項，UI 對應可能會變得非常大。 此外，如果多人處理測試，只有單一大型 UI 對應檔的應用程式會變得不便使用。
 
@@ -138,7 +138,7 @@ namespace ContosoProject
 }
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [UIMap](/previous-versions/dd580454(v=vs.140))
 - <xref:Microsoft.VisualStudio.TestTools.UITesting.BrowserWindow.CopyFrom%2A>

@@ -1,21 +1,21 @@
 ---
-title: HOW TO：修改 3D 模型的樞紐點
+title: 如何：修改 3D 模型的樞紐點
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: c20b4ec8-29f5-4ca5-bc39-d4548ca6f573
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1b1baa6a42d0874cdefaa8cfb781f66e864d82b2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: a2c49e42009c81f6932f76128f12fb37399a789b
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62897449"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72635471"
 ---
-# <a name="how-to-modify-the-pivot-point-of-a-3d-model"></a>HOW TO：修改 3D 模型的樞紐點
+# <a name="how-to-modify-the-pivot-point-of-a-3d-model"></a>如何：修改 3D 模型的樞紐點
 
 本文示範如何使用模型編輯器來修改 3D 模型的「樞紐點」。 樞紐分析點是空間中的點，定義物件在旋轉和縮放時的數學中心。
 
@@ -25,7 +25,7 @@ ms.locfileid: "62897449"
 
 請確定已顯示 [屬性] 視窗和 [工具箱]。
 
-1. 開始使用如下列文章中所述的現有 3D 模型：[如何：建立基本 3D 模型](../designers/how-to-create-a-basic-3-d-model.md)。
+1. 開始使用像是[如何：建立基本 3D 模型](../designers/how-to-create-a-basic-3-d-model.md)中所述的現有 3D 模型。
 
 2. 進入樞紐分析模式。 在 [模型編輯器模式] 工具列上，選擇 [樞紐分析表模式] 按鈕以啟動樞紐分析表模式。 出現在 [樞紐分析表模式] 按鈕附近的方塊，指出 [模型編輯器] 現在處於樞紐分析表模式。 在樞紐分析表模式中，像是平移的作業會影響物件的樞紐分析點，而不是世界空間中的物件結構。
 
@@ -42,7 +42,7 @@ ms.locfileid: "62897449"
 
 ![具有已修改之樞紐點的房屋模型](../designers/media/digit-modified-model.png)
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [如何：建立基本 3D 模型](../designers/how-to-create-a-basic-3-d-model.md)
 - [模型編輯器](../designers/model-editor.md)

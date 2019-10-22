@@ -12,17 +12,17 @@ helpviewer_keywords:
 - resources [Visual Studio]
 - Resources page in Project Designer
 - application resources [Visual Studio]
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1681484500c382b296a03e78661b808825768a5b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 29e4fbbd8d50001807f3d90a82d18e40a3674d01
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62538105"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72654253"
 ---
 # <a name="manage-application-resources-net"></a>管理應用程式資源 (.NET)
 
@@ -41,7 +41,7 @@ ms.locfileid: "62538105"
 - 在 **Ctrl**+**Q** 搜尋方塊中，輸入**專案屬性**
 - 在 [方案總管] 中選擇 **Alt**+**Enter**
 
-選取 **資源** 索引標籤。您可以在專案尚未包含 *.resx* 檔案的情況下新增該檔案、新增和刪除不同種類的資源，以及修改現有的資源。
+選取 [**資源**] 索引標籤。如果您的專案尚未包含 .resx 檔案、新增和刪除不同種類的資源，以及修改現有的資源，您可以加入該檔案 *。*
 
 ## <a name="resources-in-other-project-types"></a>其他專案類型中的資源
 
@@ -50,7 +50,7 @@ ms.locfileid: "62538105"
 - 通用 Windows 平台 (UWP) 應用程式，請參閱[應用程式資源和資源管理系統](/windows/uwp/app-resources/)
 - C++ 專案，請參閱[使用資源檔](/cpp/windows/working-with-resource-files)和[如何：建立資源](/cpp/windows/how-to-create-a-resource)
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [桌面應用程式中的資源 (.NET Framework)](/dotnet/framework/resources/index)
 - [管理應用程式資源 (Visual Studio for Mac)](/visualstudio/mac/managing-app-resources)

@@ -9,17 +9,17 @@ helpviewer_keywords:
 - Find and Replace, Options dialog box
 - Find and Replace, customizing
 ms.assetid: f804d6d5-6309-46e4-8294-b83e880b5ec9
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7bc2d1a97676416c040c11c3b55f5adef7a0a3cc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 24c9d1f75eef2b785c8fa96bd721144480e134fc
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62790631"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72654377"
 ---
 # <a name="find-and-replace-environment-options-dialog-box"></a>選項對話方塊、環境、尋找和取代
 
@@ -53,6 +53,6 @@ ms.locfileid: "62790631"
 
 選取此選項，可在您從 [編輯] 功能表中選取 [尋找和取代] 視窗的任何檢視時，將目前編輯器插入點任一端的文字貼入 [尋找目標] 欄位。 清除此選項，可使用前一個搜尋的最後一個搜尋模式作為 [尋找目標] 字串。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [尋找和取代文字](../../ide/finding-and-replacing-text.md)

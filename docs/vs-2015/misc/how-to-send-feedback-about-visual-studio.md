@@ -1,5 +1,5 @@
 ---
-title: HOW TO：傳送意見反應 |Microsoft Docs
+title: 如何：傳送意見反應 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: devlang-csharp
@@ -12,15 +12,15 @@ helpviewer_keywords:
 - sending feedback [Visual Studio]
 ms.assetid: c9f1dd8f-bcb6-40ac-b896-1e9eca0bb209
 caps.latest.revision: 41
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: ced6ee7cea72b0e07d10768e75409ef23c1bb869
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e20e384a0ecda48446aae598476a709d226e167a
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62937999"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72609741"
 ---
-# <a name="how-to-send-feedback-about-visual-studio"></a>HOW TO：傳送關於 Visual Studio 的意見反應
-這個內容已移除。 如需資訊，請參閱[告訴我們](../ide/talk-to-us.md)。
+# <a name="how-to-send-feedback-about-visual-studio"></a>如何：傳送您對 Visual Studio 的意見
+這個內容已移除。 如需相關資訊，請參閱告訴[我們](../ide/talk-to-us.md)。

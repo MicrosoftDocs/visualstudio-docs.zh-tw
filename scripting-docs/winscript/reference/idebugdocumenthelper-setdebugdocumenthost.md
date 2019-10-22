@@ -1,5 +1,5 @@
 ---
-title: 'Idebugdocumenthelper:: |Microsoft Docs'
+title: IDebugDocumentHelper：： SetDebugDocumentHost |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 47c003657518edae0e8ffed13ffef9f6f072d296
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b32d14f3a7d65bee7bdb587a35dfe05bb06f5e1e
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62948989"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574649"
 ---
 # <a name="idebugdocumenthelpersetdebugdocumenthost"></a>IDebugDocumentHelper::SetDebugDocumentHost
-設定`IDebugDocumentHost`這份文件。  
+設定此檔的 `IDebugDocumentHost`。  
   
 ## <a name="syntax"></a>語法  
   
@@ -37,7 +37,7 @@ HRESULT SetDebugDocumentHost(
   
 #### <a name="parameters"></a>參數  
  `pddh`  
- [in]偵錯文件主應用程式。  
+ 在Debug 檔主機。  
   
 ## <a name="return-value"></a>傳回值  
  方法會傳回 `HRESULT`。 可能的值包括 (但不限於) 下表中的這些值。  
@@ -47,8 +47,8 @@ HRESULT SetDebugDocumentHost(
 |`S_OK`|方法成功。|  
   
 ## <a name="remarks"></a>備註  
- `IDebugDocumentHost`介面用於智慧主機語法著色、 擷取延後的文字，並傳回新建立的控制物件文件內容。  
+ @No__t_0 介面用於智慧型主機語法著色、提取延後的文字，以及針對新建立的檔內容傳回控制物件。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDebugDocumentHelper 介面](../../winscript/reference/idebugdocumenthelper-interface.md)   
  [IDebugDocumentHost 介面](../../winscript/reference/idebugdocumenthost-interface.md)

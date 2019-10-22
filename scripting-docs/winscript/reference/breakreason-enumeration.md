@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 939d9f36c9838f02e58bc433d1a7bb9bef43c28d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6f656bdf4e3bc85a014ff8d3011708799aa44bcd
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62955404"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572630"
 ---
 # <a name="breakreason-enumeration"></a>BREAKREASON 列舉
 指出造成中斷的原因。  
@@ -42,18 +42,18 @@ typedef enum tagBREAKREASON {
 } BREAKREASON;  
 ```  
   
-## <a name="members"></a>成員  
+## <a name="members"></a>Members  
   
 |成員|描述|  
 |------------|-----------------|  
-|BREAKREASON_STEP|語言引擎正在逐步執行模式。|  
+|BREAKREASON_STEP|語言引擎處於逐步執行模式。|  
 |BREAKREASON_BREAKPOINT|語言引擎發現明確的中斷點。|  
-|BREAKREASON_DEBUGGER_BLOCK|語言引擎遇到另一個執行緒上的偵錯工具區塊。|  
-|BREAKREASON_HOST_INITIATED|主機要求中斷。|  
-|BREAKREASON_LANGUAGE_INITIATED|語言引擎會要求中斷。|  
-|BREAKREASON_DEBUGGER_HALT|偵錯工具 IDE 要求中斷。|  
-|BREAKREASON_ERROR|執行錯誤會造成中斷。|  
-|BREAKREASON_JIT|因為 JIT 偵錯啟動所造成。|  
+|BREAKREASON_DEBUGGER_BLOCK|語言引擎在另一個執行緒上遇到偵錯工具區塊。|  
+|BREAKREASON_HOST_INITIATED|主機已要求中斷。|  
+|BREAKREASON_LANGUAGE_INITIATED|語言引擎要求中斷。|  
+|BREAKREASON_DEBUGGER_HALT|偵錯工具 IDE 已要求中斷。|  
+|BREAKREASON_ERROR|執行錯誤造成中斷。|  
+|BREAKREASON_JIT|JIT 偵錯程式啟動造成的。|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [動態指令碼偵錯工具的常數、列舉和結構](../../winscript/reference/active-script-debugger-constants-enumerations-and-structures.md)

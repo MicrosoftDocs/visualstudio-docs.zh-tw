@@ -1,5 +1,5 @@
 ---
-title: HOW TO：以編碼來儲存及開啟檔案
+title: 如何：以編碼方式儲存及開啟檔案
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,19 +8,19 @@ helpviewer_keywords:
 - bidirectional language support, encoded files
 - file encoding, bidirectional languages
 ms.assetid: cb52b732-b395-4ba1-a3ef-104b3942a12a
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fd3d7ccc248785c127c1eaf34da8840f824e4195
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: b02734af3efb24e1e3791246b0cea405b12d7b15
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62946940"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72645792"
 ---
-# <a name="how-to-save-and-open-files-with-encoding"></a>HOW TO：以編碼來儲存及開啟檔案
+# <a name="how-to-save-and-open-files-with-encoding"></a>如何：以編碼方式儲存及開啟檔案
 
 您可以使用特定的字元編碼來儲存檔案，以支援雙向語言。 您也可以在開啟檔案時指定編碼方式，讓 Visual Studio 正確顯示檔案。
 
@@ -56,7 +56,7 @@ ms.locfileid: "62946940"
 
 3. 遵循上述程序步驟 2 和 3。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [編碼與分行符號](encodings-and-line-breaks.md)
 - [編碼方式和 Windows Forms 全球化](/dotnet/framework/winforms/advanced/encoding-and-windows-forms-globalization)

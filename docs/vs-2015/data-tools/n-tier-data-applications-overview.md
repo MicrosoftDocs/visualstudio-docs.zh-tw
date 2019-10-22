@@ -1,5 +1,5 @@
 ---
-title: 多層式架構資料應用程式概觀 |Microsoft Docs
+title: 多層式資料應用程式總覽 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-data-tools
@@ -16,84 +16,78 @@ helpviewer_keywords:
 - n-tier applications, about n-tier applications
 ms.assetid: 1020581d-eaaa-41a2-aca4-bf4c212895f6
 caps.latest.revision: 29
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: d54d69a9aeda76c79208c2685efde94eaaab1017
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 0f124e997669370e71819cf37423d0c2d6a414d7
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65693776"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72658062"
 ---
 # <a name="n-tier-data-applications-overview"></a>多層式架構資料應用程式概觀
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-N-層 * 資料應用程式是指分隔成多個資料應用程式*層*。 也稱為 「 分散式應用程式 」 和 「 多層式應用程式，多層式架構應用程式在個別分成離散層級的用戶端與伺服器之間分散處理。 當您開發應用程式以存取資料時，您應該有清楚的區隔，組成應用程式各層之間。  
-  
- 一般的 N-Tier 應用程式包含展示層、中介層和資料層。 分隔各層的多層式架構應用程式中的最簡單方式是建立針對您想要包含在您的應用程式中每一層的離散專案。 比方說，展示層可能是 Windows Forms 應用程式，而資料存取邏輯可能位於中介層的類別庫。 此外，展示層可能會與中介層服務，例如服務透過資料存取邏輯進行通訊。 將應用程式元件分隔成不同的層級會提升應用程式的可維護性和延展性 (Scalability)。 它會更輕鬆地採用新技術，可以套用至單一的層級，而不需要重新設計整個方案。 此外，多層式架構應用程式通常會儲存機密資訊在中介層，以維護從展示層的隔離。  
-  
- Visual Studio 包含數個功能，可協助開發人員建立多層式架構應用程式：  
-  
-- DataSet 設計工具提供**資料集 Project**屬性，可讓您區隔資料集 （資料實體層） 和`TableAdapter`s （資料存取層） 分成離散專案。  
-  
-- [LINQ to SQL 工具，在 Visual Studio 中](../data-tools/linq-to-sql-tools-in-visual-studio2.md)提供用來產生不同的命名空間的 DataContext 和資料類別設定。 這可讓資料存取與資料實體層的邏輯分隔。  
-  
-- [LINQ to SQL](https://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)提供<xref:System.Data.Linq.Table%601.Attach%2A>方法可讓您將應用程式中的不同層級的結合在一起的 DataContext。 如需詳細資訊，請參閱 <<c0> [ 多層式架構和遠端的應用程式使用 LINQ to SQL](https://msdn.microsoft.com/library/854a1cdd-53cb-45f5-83ca-63962a9b3598)。  
-  
-## <a name="presentation-tier"></a>展示層  
- *展示層*是使用者與應用程式的互動的層。 它通常會包含其他的應用程式邏輯也。 典型的展示層元件包括下列各項：  
-  
-- 資料繫結的元件，例如<xref:System.Windows.Forms.BindingSource>和<xref:System.Windows.Forms.BindingNavigator>。  
-  
-- 物件表示的資料，例如[LINQ to SQL](https://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)展示層中使用的實體類別。  
-  
-  展示層通常存取中介層使用的服務參考 (例如[Windows Communication Foundation 服務和 Visual Studio 中的 WCF Data Services](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)應用程式)。 展示層不會直接存取資料層。 展示層會與資料層透過中介層的資料存取元件通訊。  
-  
-## <a name="middle-tier"></a>中介層  
- *中介層*用來彼此通訊的展示層和資料層的層。 典型的中介層元件包括下列各項：  
-  
-- 商務邏輯，例如商務規則和資料驗證。  
-  
-- 資料存取元件和邏輯，如下所示：  
-  
-  - [TableAdapters](https://msdn.microsoft.com/library/09416de9-134c-4dc7-8262-6c8d81e3f364)並[Dataadapter 和 Datareader](https://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74)。  
-  
-  - 物件表示的資料，例如[LINQ to SQL](https://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)實體類別。  
-  
-  - 一般應用程式服務，例如驗證、 授權和個人化。  
-  
-  下圖顯示功能和技術，可在 Visual Studio 中，和他們可能適用於什麼情況的多層式架構應用程式的中介層。  
-  
-  ![中間層元件](../data-tools/media/ntiermid.png "NtierMid")  
-  中介層  
-  
-  中介層通常會連接到資料層使用的資料連接。 此資料連接通常會儲存在資料存取元件中。  
-  
-## <a name="data-tier"></a>資料層  
- *資料層*基本上是將應用程式的資料儲存在伺服器 (例如，將執行的伺服器[!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)])。  
-  
- 下圖顯示功能和技術，可在 Visual Studio 中，和他們可能適用於什麼情況的多層式架構應用程式資料層。  
-  
- ![資料層元件](../data-tools/media/ntierdatatier.png "ntierdatatier")  
-資料層  
-  
- 無法存取資料層，直接從展示層中的用戶端。 相反地中介層, 的資料存取元件用於展示層和資料層之間的通訊。  
-  
-## <a name="help-for-n-tier-development"></a>適用於多層式架構開發的說明  
- 下列主題提供有關使用多層式架構應用程式的資訊：  
-  
- [將資料集和 TableAdapter 分成不同的專案](../data-tools/separate-datasets-and-tableadapters-into-different-projects.md)  
-  
- [逐步解說：建立多層式架構 (N-Tier) 資料應用程式](../data-tools/walkthrough-creating-an-n-tier-data-application.md)  
-  
- [逐步解說：將驗證新增至多層式架構資料應用程式](https://msdn.microsoft.com/library/b35d072c-31f0-49ba-a225-69177592c265)  
-  
- [使用 LINQ to SQL 的多層式架構和遠端應用程式](https://msdn.microsoft.com/library/854a1cdd-53cb-45f5-83ca-63962a9b3598)  
-  
-## <a name="see-also"></a>另請參閱  
- <xref:System.Data.Linq.ITable.Attach%2A>   
- [逐步解說：建立多層式架構資料應用程式](../data-tools/walkthrough-creating-an-n-tier-data-application.md)   
- [階層式更新](../data-tools/hierarchical-update.md)   
- [Visual Studio 中的資料集工具](../data-tools/dataset-tools-in-visual-studio.md)   
- [存取 Visual Studio 中的資料](../data-tools/accessing-data-in-visual-studio.md)
+多層式 * 資料應用程式是分割成多*層*的資料應用程式。 多層式應用程式也稱為「分散式應用程式」和「多層式應用程式」，可將處理分隔成在用戶端與伺服器之間散發的離散層。 當您開發可存取資料的應用程式時，您應該在組成應用程式的各層之間有清楚的分隔。
+
+ 一般的 N-Tier 應用程式包含展示層、中介層和資料層。 將多層式應用程式中的各層分開的最簡單方式，就是為您想要包含在應用程式中的每一層建立離散專案。 例如，展示層可能是 Windows Forms 應用程式，而資料存取邏輯可能是位於中介層的類別庫。 此外，展示層可能會透過服務（例如服務）與仲介層中的資料存取邏輯通訊。 將應用程式元件分隔成不同的層級會提升應用程式的可維護性和延展性 (Scalability)。 它的作法是讓您更輕鬆地採用可套用至單一層的新技術，而不需要重新設計整個解決方案。 此外，多層式應用程式通常會在仲介層中儲存機密資訊，這會維護與展示層的隔離。
+
+ Visual Studio 包含數項功能，可協助開發人員建立多層式應用程式：
+
+- [DataSet 設計工具] 提供了**資料集專案**屬性，可讓您將資料集（資料實體層）和 `TableAdapter`s （資料存取層）分隔成離散專案。
+
+- [Visual Studio 中的 LINQ to SQL 工具](../data-tools/linq-to-sql-tools-in-visual-studio2.md)會提供將 DataCoNtext 和資料類別產生為不同命名空間的設定。 這會啟用資料存取和資料實體層的邏輯分隔。
+
+- [LINQ to SQL](https://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)提供 <xref:System.Data.Linq.Table%601.Attach%2A> 方法，可讓您從應用程式中的不同層級整合 DataCoNtext。 如需詳細資訊，請參閱[使用 LINQ to SQL 的多層式和遠端應用程式](https://msdn.microsoft.com/library/854a1cdd-53cb-45f5-83ca-63962a9b3598)。
+
+## <a name="presentation-tier"></a>展示層
+ *展示層*是使用者與應用程式互動的層級。 它通常也會包含額外的應用程式邏輯。 一般展示層元件包括下列各項：
+
+- 資料系結元件，例如 <xref:System.Windows.Forms.BindingSource> 和 <xref:System.Windows.Forms.BindingNavigator>。
+
+- 資料的物件標記法，例如要在展示層中使用的[LINQ to SQL](https://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)實體類別。
+
+  展示層通常會使用服務參考（例如，Visual Studio 應用程式[中的 Windows Communication Foundation 服務和 WCF Data Services](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md) ）存取仲介層。 展示層不會直接存取資料層。 展示層會透過仲介層中的資料存取元件，與資料層通訊。
+
+## <a name="middle-tier"></a>中介層
+ *中介層*是展示層和資料層用來彼此通訊的層。 一般中介層元件包括下列各項：
+
+- 商務邏輯，例如商務規則和資料驗證。
+
+- 資料存取元件和邏輯，如下所示：
+
+  - [Tableadapter](https://msdn.microsoft.com/library/09416de9-134c-4dc7-8262-6c8d81e3f364)和[dataadapter 和 datareader](https://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74)。
+
+  - 資料的物件表示，例如[LINQ to SQL](https://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)的實體類別。
+
+  - 常見的應用程式服務，例如驗證、授權和個人化。
+
+  下圖顯示 Visual Studio 中可用的功能和技術，以及它們可能符合多層式應用程式仲介層的位置。
+
+  ![中介層元件](../data-tools/media/ntiermid.png "NtierMid")中介層
+
+  中介層通常會使用資料連線來連接到資料層。 此資料連線通常會儲存在資料存取元件中。
+
+## <a name="data-tier"></a>資料層
+ *資料層*基本上是儲存應用程式資料的伺服器（例如，執行 [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] 的伺服器）。
+
+ 下圖顯示 Visual Studio 中可用的功能和技術，以及可能適用于多層式架構應用程式資料層的位置。
+
+ ![資料層元件](../data-tools/media/ntierdatatier.png "ntierdatatier")資料層
+
+ 資料層無法直接從展示層中的用戶端存取。 相反地，仲介層中的資料存取元件會用於簡報和資料層之間的通訊。
+
+## <a name="help-for-n-tier-development"></a>適用于多層式開發的協助
+ 下列主題提供使用多層式架構應用程式的相關資訊：
+
+ [將資料集和 TableAdapter 分成不同的專案](../data-tools/separate-datasets-and-tableadapters-into-different-projects.md)
+
+ [逐步解說：建立多層式架構 (N-Tier) 資料應用程式](../data-tools/walkthrough-creating-an-n-tier-data-application.md)
+
+ [逐步解說：將驗證新增至多層式資料應用程式](https://msdn.microsoft.com/library/b35d072c-31f0-49ba-a225-69177592c265)
+
+ [使用 LINQ to SQL 的多層式架構和遠端應用程式](https://msdn.microsoft.com/library/854a1cdd-53cb-45f5-83ca-63962a9b3598)
+
+## <a name="see-also"></a>請參閱
+ <xref:System.Data.Linq.ITable.Attach%2A>[逐步解說：在中建立多層式資料應用程式階層式](../data-tools/walkthrough-creating-an-n-tier-data-application.md)[更新](../data-tools/hierarchical-update.md)資料[集工具，Visual Studio](../data-tools/dataset-tools-in-visual-studio.md) [存取 Visual Studio](../data-tools/accessing-data-in-visual-studio.md)中的資料

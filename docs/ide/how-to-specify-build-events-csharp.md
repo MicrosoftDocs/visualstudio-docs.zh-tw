@@ -1,5 +1,5 @@
 ---
-title: 作法：指定建置事件 (C#)
+title: 如何：指定建置事件 (C#)
 ms.date: 03/21/2019
 ms.technology: vs-ide-compile
 ms.topic: conceptual
@@ -15,38 +15,38 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9484d6977c6896253197215ce185579518448da8
-ms.sourcegitcommit: 0f5f7955076238742f2071d286ad8e896f3a6cad
-ms.translationtype: HT
+ms.openlocfilehash: a28f491ea5af53546f66e066bf8f78575708bc57
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "68483699"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72656593"
 ---
-# <a name="how-to-specify-build-events-c"></a>作法：指定建置事件 (C#)
+# <a name="how-to-specify-build-events-c"></a>如何：指定建置事件 (C#)
 
-使用建置事件指定要在建置開始之前，或建置完成之後執行的命令。 只有在建置成功到達建置程序中的這些點時，建置事件才會執行。
+使用建置事件指定要在建置開始之前，或建置完成之後執行的命令。 只有在建置成功到達建置流程中的這些點時，建置事件才會執行。
 
 建置專案時，建置前事件會新增至名為 *PreBuildEvent.bat* 的檔案，而建置後事件會新增至名為 *PostBuildEvent.bat* 的檔案。 如果您想要確保錯誤檢查，請將您自己的錯誤檢查命令新增至建置步驟。
 
 ## <a name="specify-a-build-event"></a>指定建置事件
 
-1. 在 [方案總管]  中，選取您想要指定建置事件的專案。
+1. 在 [方案總管] 中，選取您想要指定建置事件的專案。
 
-2. 在 [專案]  功能表上，按一下 [屬性]  。
+2. 在 [專案] 功能表上，按一下 [屬性]。
 
-3. 選取 [建置事件]  索引標籤。
+3. 選取 [建置事件] 索引標籤。
 
-4. 在 [建置前事件命令列]  方塊中，指定建置事件的語法。
+4. 在 [建置前事件命令列] 方塊中，指定建置事件的語法。
 
    > [!NOTE]
    > 如果專案是最新狀態，而且未觸發任何建置，則建置前事件不會執行。
 
-5. 在 [建置後事件命令列]  方塊中，指定建置事件的語法。
+5. 在 [建置後事件命令列] 方塊中，指定建置事件的語法。
 
    > [!NOTE]
    > 在執行 *.bat* 檔案的所有建置命令前方，新增 `call` 陳述式。 例如，`call C:\MyFile.bat` 或 `call C:\MyFile.bat call C:\MyFile2.bat`。
 
-6. 在 [執行建置後事件]  方塊中，指定要執行建置後事件的情況。
+6. 在 [執行建置後事件] 方塊中，指定要執行建置後事件的情況。
 
    > [!NOTE]
    > 若要新增冗長的語法，或從[建置前事件/建置後事件命令列對話方塊](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md)選取任何建置巨集，請按一下省略符號按鈕 ( **...** ) 來顯示編輯方塊。
@@ -72,7 +72,7 @@ ms.locfileid: "68483699"
 
 1. 針對命令建立新的**主控台應用程式**專案。 將專案命名為 **ChangeOSVersionCS**。
 
-2. 在 *Program.cs* 中，將下面這行新增在檔案最上方的另一個 `using` 陳述式：
+2. 在*Program.cs*中，將下面這一行新增至檔案頂端的其他 `using` 指示詞：
 
    ```csharp
    using System.Xml;
@@ -142,13 +142,13 @@ ms.locfileid: "68483699"
 
 1. 建立新的 **Windows Forms 應用程式**專案，並命名為 **CSWinApp**。
 
-2. 選取 [方案總管]  中的專案，然後在 [專案]  功能表中選擇 [屬性]  。
+2. 選取 [方案總管] 中的專案，然後在 [專案] 功能表中選擇 [屬性]。
 
-3. 在**專案設計工具**中，找到 [發行]  頁面，然後將 [發行位置]  設為 *C:\TEMP*。
+3. 在**專案設計工具**中，找到 [發行] 頁面，然後將 [發行位置] 設為 *C:\TEMP*。
 
-4. 按一下 [Publish Now]\(立即發行)  ，即可發行專案。
+4. 按一下 [Publish Now]\(立即發行)，即可發行專案。
 
-   資訊清單檔會建置並儲存至 *C:\TEMP\CSWinApp_1_0_0_0\CSWinApp.exe.manifest*。 若要檢視資訊清單，請以滑鼠右鍵按一下檔案、按一下 [開啟方式]  、選取 [從清單中選取程式]  ，然後按一下 [記事本]  。
+   資訊清單檔會建置並儲存至 *C:\TEMP\CSWinApp_1_0_0_0\CSWinApp.exe.manifest*。 若要檢視資訊清單，請以滑鼠右鍵按一下檔案、按一下 [開啟方式]、選取 [從清單中選取程式]，然後按一下 [記事本]。
 
    在檔案中搜尋 `<osVersionInfo>` 項目。 例如，版本可能是：
 
@@ -156,9 +156,9 @@ ms.locfileid: "68483699"
    <os majorVersion="4" minorVersion="10" buildNumber="0" servicePackMajor="0" />
    ```
 
-5. 回到 [專案設計工具]  ，依序按一下 [建置事件]  索引標籤和 [建置後進行編輯]  。
+5. 回到 [專案設計工具]，依序按一下 [建置事件] 索引標籤和 [建置後進行編輯]。
 
-6. 在 [建置後事件命令列]  文字方塊中，輸入下列命令：
+6. 在 [建置後事件命令列] 文字方塊中，輸入下列命令：
 
    `C:\TEMP\ChangeOSVersionCS.exe "$(TargetPath).manifest" 5.1.2600.0`
 
@@ -174,7 +174,7 @@ ms.locfileid: "68483699"
    <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
    ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [專案設計工具、建置事件頁面 (C#)](../ide/reference/build-events-page-project-designer-csharp.md)
 - [建置前事件/建置後事件命令列對話方塊](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md)

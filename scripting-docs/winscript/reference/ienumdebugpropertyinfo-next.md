@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugPropertyInfo::Next | Microsoft Docs
+title: IEnumDebugPropertyInfo：： Next |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b1568d2387422bebc86ce2b035ba997610833e85
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b99631c217ca56dce91512403dfb6623cd1e7641
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62963412"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574203"
 ---
 # <a name="ienumdebugpropertyinfonext"></a>IEnumDebugPropertyInfo::Next
-擷取指定的數目的`DebugPropertyInfo`列舉型別序列中的結構。  
+在列舉序列中，抓取指定數目的 `DebugPropertyInfo` 結構。  
   
 ## <a name="syntax"></a>語法  
   
@@ -39,17 +39,17 @@ HRESULT Next (
   
 #### <a name="parameters"></a>參數  
  `celt`  
- [in]數目`DebugPropertyInfo`要擷取的結構。  
+ 在要抓取的 `DebugPropertyInfo`structures 數目。  
   
  `rgelt`  
- [out]陣列`DebugPropertyInfo`結構擷取。  
+ 脫銷已抓取 `DebugPropertyInfo` 結構的陣列。  
   
  `pceltFetched`  
- [out]傳回的數目`DebugPropertyInfo`實際擷取的結構。  
+ 脫銷傳回實際抓取 `DebugPropertyInfo` 結構的數目。  
   
 ## <a name="return-value"></a>傳回值  
- 會傳回有效`HRESULT`，通常是`S_OK`。  
+ 傳回有效的 `HRESULT`，通常是 `S_OK`。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IEnumDebugPropertyInfo 介面](../../winscript/reference/ienumdebugpropertyinfo-interface.md)   
  [DebugPropertyInfo 結構](../../winscript/reference/debugpropertyinfo-structure.md)

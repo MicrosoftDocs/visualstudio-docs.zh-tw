@@ -1,5 +1,5 @@
 ---
-title: 在 偵錯工具中建立資料的自訂檢視 |Microsoft Docs
+title: 在偵錯工具中建立資料的自訂視圖 |Microsoft Docs
 ms.date: 01/09/2019
 ms.topic: conceptual
 f1_keywords:
@@ -19,26 +19,26 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 32b3fddd13bd16ac2c846f02f54596ec846374b9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 63dc11736e92013719fcda2bae0ba9599a8835aa
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62929997"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72568998"
 ---
-# <a name="create-custom-views-of-data-in-the-visual-studio-debugger-c-visual-basic-c"></a>在 Visual Studio 偵錯工具中建立自訂檢視的資料 (C#，Visual Basic 中， C++)
+# <a name="create-custom-views-of-data-in-the-visual-studio-debugger-c-visual-basic-c"></a>在 Visual Studio 偵錯工具（C#、Visual Basic、 C++）中建立資料的自訂視圖
 
-[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]偵錯工具會提供許多工具，可檢查及修改程式狀態。 這些工具大多數只能在中斷模式下運作。
+@No__t_0 偵錯工具提供許多工具來檢查和修改程式的狀態。 這些工具大多數只能在中斷模式下運作。
 
-## <a name="create-custom-views-of-data-in-variable-windows-and-datatips"></a>在變數視窗和 DataTips 中建立資料的自訂檢視
+## <a name="create-custom-views-of-data-in-variable-windows-and-datatips"></a>在變數視窗和資料提示中建立資料的自訂視圖
 
- 許多[偵錯工具視窗](../debugger/debugger-windows.md)，例如**自動變數**並**監看式**windows 中，可讓您檢查變數。 您可以自訂如何C++型別、 受管理的物件和您自己的類型會顯示在偵錯工具變數視窗中，以及在[DataTips](../debugger/view-data-values-in-data-tips-in-the-code-editor.md)。 如需詳細資訊，請參閱 <<c0> [ 建立的自訂檢視C++物件](../debugger/create-custom-views-of-native-objects.md)並[建立物件的自訂檢視](../debugger/create-custom-views-of-dot-managed-objects.md)。</c0>
+ 許多[偵錯工具視窗](../debugger/debugger-windows.md)（例如 [自動變數 ] 和 **[監看式]** 視窗）都可讓您檢查變數。 您可以自訂C++類型、受管理物件和您自己的類型在偵錯工具變數視窗和[資料提示](../debugger/view-data-values-in-data-tips-in-the-code-editor.md)中的顯示方式。 如需詳細資訊，請參閱[建立物件C++的自訂視圖](../debugger/create-custom-views-of-native-objects.md)和[建立受控物件的自訂視圖](../debugger/create-custom-views-of-managed-objects.md)。
 
 ## <a name="create-custom-visualizers"></a>建立自訂視覺化檢視
 
- 視覺化檢視可讓您檢視物件或變數的內容中有意義的方式。 在 Visual Studio 偵錯工具視覺化檢視是指不同的視窗，您可以開啟使用放大鏡![VisualizerIcon](../debugger/media/dbg-tips-visualizer-icon.png "視覺化檢視圖示")圖示。 例如，HTML 視覺化檢視會顯示會如何解譯及顯示在瀏覽器的 HTML 字串。 您可以從資料提示方塊、 存取視覺化工具**監看式** 視窗中，**自動變數**視窗中，而**區域變數**視窗。 **快速監看式**對話方塊也會提供視覺化檢視。 如需詳細資訊，請參閱[建立自訂視覺化檢視](../debugger/create-custom-visualizers-of-data.md)。
+ 視覺化程式可讓您以有意義的方式來查看物件或變數的內容。 在 Visual Studio 偵錯工具中，視覺化檢視是指您可以使用放大鏡![VisualizerIcon](../debugger/media/dbg-tips-visualizer-icon.png "視覺化檢視圖示")圖示開啟的不同視窗。 例如，HTML 視覺化程式會顯示 HTML 字串在瀏覽器中的轉譯和顯示方式。 您可以從資料提示、[**監看**式] 視窗、[自動變數] 視窗和 [**區域變數** **] 視窗**存取視覺化檢視。 [**快速**監看式] 對話方塊也會提供視覺化。 如需詳細資訊，請參閱[建立自訂視覺化檢視](../debugger/create-custom-visualizers-of-data.md)。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [偵錯工具簡介](../debugger/debugger-feature-tour.md)
 - [命令視窗](../ide/reference/command-window.md)

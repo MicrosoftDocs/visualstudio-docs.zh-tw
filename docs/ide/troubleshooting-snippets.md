@@ -7,17 +7,17 @@ helpviewer_keywords:
 - troubleshooting IntelliSense Code Snippets
 - troubleshooting Visual Basic, IntelliSense Code Snippets
 ms.assetid: 7b6dd40e-2f78-4b50-8e68-41fac1bcb81e
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9485147bbe386983aa5ee9c492607e12afb151c6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 75b6c18c5d12d4d39d9025de2ed51cd15c8dda82
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62575978"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72647531"
 ---
 # <a name="troubleshoot-snippets"></a>針對程式碼片段的問題進行疑難排解
 
@@ -35,6 +35,6 @@ IntelliSense 程式碼片段的問題通常是由兩個問題所造成：損毀�
 
 - 可能未定義變數。 程式碼片段中未定義的變數應予反白顯示。 否則，會向程式碼片段建立者報告為錯誤。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [程式碼片段](../ide/code-snippets.md)

@@ -1,5 +1,5 @@
 ---
-title: IScriptNode::Alive |Microsoft Docs
+title: IScriptNode：： Alive |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: da0a55d26b5ab643670ba7ed51e576eeb89d8b98
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b7e0216824506ee942b42a42d5c3c4475f63f9e2
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62787169"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573619"
 ---
 # <a name="iscriptnodealive"></a>IScriptNode::Alive
 指出物件是否仍在作用中。  
@@ -34,17 +34,17 @@ HRESULT Alive();
 ```  
   
 #### <a name="parameters"></a>參數  
- 此方法會採用任何參數。  
+ 方法不接受任何參數。  
   
 ## <a name="return-value"></a>傳回值  
  `HRESULT`。 可能的值包括 (但不限於) 下表中的這些值。  
   
 |值|描述|  
 |-----------|-----------------|  
-|`S_OK`|指令碼的節點是仍在作用中。|  
+|`S_OK`|[腳本] 節點仍在使用中。|  
   
 ## <a name="remarks"></a>備註  
- 如果物件不是作用中，元件物件模型 (COM) 會傳回錯誤，從針對至這個方法的呼叫封送處理的 proxy。  
+ 如果物件不在使用中，則元件物件模型（COM）會從封送處理 proxy 傳回錯誤，以呼叫此方法。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IScriptNode 介面](../../winscript/reference/iscriptnode-interface.md)

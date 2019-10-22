@@ -8,17 +8,17 @@ helpviewer_keywords:
 - Add Existing Project command
 - File.AddExistingProject
 ms.assetid: 71cf3e31-c76b-405b-ad6a-1b1bc654bd40
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b5a511e19394b397096a5a5ba2e339166454138e
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+ms.openlocfilehash: bd6aca05758185f4df47688044f479b7bbe2829e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926287"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72658807"
 ---
 # <a name="add-existing-project-command"></a>加入現有專案命令
 將現有專案新增至目前的方案。
@@ -31,7 +31,7 @@ File.AddExistingProject filename
 
 ## <a name="arguments"></a>引數
 `filename`\
-選擇性。 要新增至方案的專案完整路徑和專案名稱，包括副檔名。
+選擇項。 要新增至方案的專案完整路徑和專案名稱，包括副檔名。
 
 如果 `filename` 引數包含空格，必須以引號括住。
 
@@ -47,7 +47,7 @@ File.AddExistingProject filename
 >File.AddExistingProject "c:\visual studio projects\TestProject1.vbproj"
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [Visual Studio 命令](../../ide/reference/visual-studio-commands.md)
 - [命令視窗](../../ide/reference/command-window.md)

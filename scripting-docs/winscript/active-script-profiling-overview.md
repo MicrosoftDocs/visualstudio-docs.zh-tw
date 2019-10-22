@@ -13,12 +13,12 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 777d20ecb51b09b282f88dc08464727b9ff2a945
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 2ce6f7fe29fca2cd17c3dfcce76dac40e422aba4
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63432981"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572726"
 ---
 # <a name="active-script-profiling-overview"></a>動態指令碼分析概觀
 [動態指令碼分析工具介面](../winscript/reference/active-script-profiler-interfaces.md)可啟用指令碼引擎的分析。 動態指令碼分析包含下列各部分：  

@@ -1,5 +1,5 @@
 ---
-title: IScriptScriptlet::SetEventName | Microsoft Docs
+title: IScriptScriptlet：： SetEventName |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a6bfa0bd69673ec8bbfc65f7f171dfbb933c7a68
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5283646838f02cdc1c5ab27f63fd237d698fc6ed
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62786720"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72571891"
 ---
 # <a name="iscriptscriptletseteventname"></a>IScriptScriptlet::SetEventName
-設定與 scriptlet 相關聯之事件的名稱。  
+設定與程式碼片段相關聯的事件名稱。  
   
 ## <a name="syntax"></a>語法  
   
@@ -37,7 +37,7 @@ HRESULT SetEventName(
   
 #### <a name="parameters"></a>參數  
  `psz`  
- [in]此緩衝區包含相關聯的事件名稱`IScriptScriptlet`物件。  
+ 在包含與 `IScriptScriptlet` 物件相關聯之事件名稱的緩衝區。  
   
 ## <a name="return-value"></a>傳回值  
  `HRESULT`。 可能的值包括 (但不限於) 下表中的這些值。  
@@ -48,5 +48,5 @@ HRESULT SetEventName(
   
 ## <a name="remarks"></a>備註  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IScriptScriptlet 介面](../../winscript/reference/iscriptscriptlet-interface.md)

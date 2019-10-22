@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fddae48178ec6c56ce647f5c4f3a1bff3d81a980
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 910e08ec6d9982354eb71b50d5e916917808f140
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62955189"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576545"
 ---
 # <a name="debugstackframedescriptor-structure"></a>DebugStackFrameDescriptor 結構
 會列舉堆疊框架並合併相同執行緒上數個列舉值的輸出。  
@@ -39,24 +39,24 @@ typedef struct tagDebugStackFrameDescriptor {
 } DebugStackFrameDescriptor;  
 ```  
   
-## <a name="members"></a>成員  
+## <a name="members"></a>Members  
  `pdsf`  
  堆疊框架物件。  
   
  `dwMin`  
- 電腦相關的表示此堆疊框架相關聯的實體位址的較低的範圍。  
+ 與這個堆疊框架相關聯之實體位址範圍較低的電腦相依標記法。  
   
  `dwLim`  
- 電腦相關的表示此堆疊框架相關聯的實體位址上限範圍。  
+ 與這個堆疊框架相關聯之實體位址上方範圍的電腦相依標記法。  
   
  `fFinal`  
- 旗標，指出正在處理的框架。  
+ 表示正在處理框架的旗標。  
   
  `punkFinal`  
- 如果此參數不是`NULL`，合併目前的列舉值應該停止，並且應該啟動新的。 物件表示如何啟動新的列舉型別。  
+ 如果未 `NULL` 此參數，則目前的列舉值合併應該會停止，而且應該會啟動一個新的。 物件會指出如何開始新的列舉。  
   
 ## <a name="remarks"></a>備註  
- 處理序偵錯管理員會使用此結構來分類從多個指令碼引擎的堆疊框架。 依照慣例，堆疊會向下成長。 因此，在架構上堆疊會增加，位址應為成對輔助。  
+ 進程 debug manager 會使用這個結構，從多個腳本引擎排序堆疊框架。 依照慣例，堆疊會逐漸降低。 因此，在堆疊增加的架構上，位址應該是2補數。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [動態指令碼偵錯工具的常數、列舉和結構](../../winscript/reference/active-script-debugger-constants-enumerations-and-structures.md)

@@ -1,0 +1,55 @@
+### YamlMime:Landing
+title: XAML 工具文件
+summary: Visual Studio 提供多個工具以協助您建立 XAML 型應用程式。 這些包括 XAML 編輯器與設計工具，以及偵錯功能。
+metadata:
+  title: XAML 工具文件
+  description: 瀏覽到有助於您了解如何在 Visual Studio 中使用 XAML 工具的其他頁面。
+  ms.prod: visual-studio-windows
+  ms.technology: vs-ide-designers
+  ms.topic: landing-page
+  author: gewarren
+  ms.author: gewarren
+  ms.date: 10/10/2019
+  ms.openlocfilehash: fe889d55ac2b2a6eab99b8d6abdc5193c981725d
+  ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+  ms.translationtype: HT
+  ms.contentlocale: zh-TW
+  ms.lasthandoff: 10/16/2019
+  ms.locfileid: "72450605"
+landingContent:
+- title: 了解 XAML
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: XAML 概觀
+      url: xaml-overview.md
+- title: 使用 XAML 設計工具
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: 在 Visual Studio 與 Blend 中設計 XAML
+      url: designing-xaml-in-visual-studio.md
+    - text: 關於 XAML 設計工具
+      url: creating-a-ui-by-using-xaml-designer-in-visual-studio.md
+- title: 針對 XAML 進行偵錯
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: 撰寫 XAML 程式碼及針對其執行進行偵錯
+      url: xaml-hot-reload.md
+    - text: 在 Blend 中偵錯 XAML
+      url: debug-xaml-in-blend.md
+    - text: 針對 WPF 應用程式進行偵錯
+      url: ../debugger/debugging-wpf.md?toc=/visualstudio/debugger/toc.json&bc=/visualstudio/debugger/breadcrumb/toc.json
+    - text: 對 UWP 應用程式進行偵錯
+      url: ../debugger/debugging-windows-store-and-windows-universal-apps.md
+- title: 開發 WPF 應用程式
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: WPF 概觀
+      url: ../designers/introduction-to-wpf.md
+  - linkListType: get-started
+    links:
+    - text: 開始使用 Visual Studio 中的 WPF
+      url: ../designers/getting-started-with-wpf.md

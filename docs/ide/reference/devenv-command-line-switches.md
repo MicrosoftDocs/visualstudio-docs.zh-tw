@@ -8,17 +8,17 @@ helpviewer_keywords:
 - command line [Visual Studio], switches
 - Devenv
 ms.assetid: e12bc6ed-74fd-4bea-8d7c-89b99c20bad8
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: db9aaeb48095b058abb0deefa342598eefeed1b9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: cf7ebda1e661801995c17a81e658b4f638c2f8a1
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62970219"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72661642"
 ---
 # <a name="devenv-command-line-switches"></a>Devenv 命令列參數
 
@@ -62,11 +62,11 @@ Devenv 可讓您從命令列針對 IDE 設定不同選項、建置專案、偵�
 
 下列命令列參數會顯示 IDE，並執行所述的工作。
 
-|命令列參數|說明|
+|命令列參數|描述|
 | - |-----------------|
 |[/Command](command-devenv-exe.md)|啟動 IDE，並執行指定的命令。<br /><br /> `devenv /command "nav https://docs.microsoft.com/"`|
 |[/DebugExe](debugexe-devenv-exe.md)|在偵錯工具的控制下載入 C++ 可執行檔。 此參數不適用於 Visual Basic 或 C# 可執行檔。 如需詳細資訊，請參閱[在偵錯工具中自動啟動處理序](../../debugger/debug-multiple-processes.md#BKMK_Automatically_start_an_process_in_the_debugger)。<br /><br /> `devenv /debugexe mysln.exe`|
-|[/Diff](diff.md)|比較兩個檔案。 接受四個參數：*SourceFile*、*TargetFile*、*SourceDisplayName* (選擇性) 及 *TargetDisplayName* (選擇性)。<br /><br /> `devenv /diff File1 File2 Alias1 Alias2`|
+|[/Diff](diff.md)|比較兩個檔案。 採用四個參數： *SourceFile*、 *TargetFile*、 *SourceDisplayName* （選擇性）和*TargetDisplayName* （選擇性）。<br /><br /> `devenv /diff File1 File2 Alias1 Alias2`|
 |[/DoNotLoadProjects](donotloadprojects-devenv-exe.md)|開啟指定的解決方案，而不載入任何專案。<br /><br /> `devenv /donotloadprojects mysln.sln`|
 |[/Edit](edit-devenv-exe.md)|在這個應用程式的作用中執行個體中開啟指定的檔案。 如果沒有執行中的執行個體，則會以簡易視窗配置啟動新的執行個體。<br /><br /> `devenv /edit File1 File2`|
 |[/LCID 或 /L](lcid-devenv-exe.md)|設定 IDE 的預設語言。 如果 Visual Studio 安裝中未包含指定的語言，則會忽略此設定。<br /><br /> `devenv /l 1033`|
@@ -79,7 +79,7 @@ Devenv 可讓您從命令列針對 IDE 設定不同選項、建置專案、偵�
 
 下列命令列參數不會顯示 IDE。
 
-|命令列參數|說明|
+|命令列參數|描述|
 | - |-----------------|
 |[/?](q-devenv-exe.md)|在 [命令提示字元] 視窗中顯示 `devenv` 參數的說明。<br /><br /> 此參數不需使用引數。|
 |[/Build](build-devenv-exe.md)|根據所指定方案的組態，建置指定的方案或專案。<br /><br /> `devenv mysln.sln /build`|
@@ -92,7 +92,7 @@ Devenv 可讓您從命令列針對 IDE 設定不同選項、建置專案、偵�
 |[/ResetSettings](resetsettings-devenv-exe.md)|還原 Visual Studio 預設設定。 選擇性地將設定重設為指定的 `.vssettings` 檔案。<br /><br /> `devenv /resetsettings mysettings.vssettings`|
 |[/Upgrade](upgrade-devenv-exe.md)|將指定的解決方案檔及其所有專案檔，或指定的專案檔，升級為這些檔案目前的 Visual Studio 格式。<br /><br /> `devenv mysln.sln /upgrade`|
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [選項對話方塊、環境、一般](general-environment-options-dialog-box.md)
 - [適用於 VSPackage 開發的 Devenv 命令列參數](../../extensibility/devenv-command-line-switches-for-vspackage-development.md)

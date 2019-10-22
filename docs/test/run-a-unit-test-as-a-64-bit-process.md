@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - unit tests, creating
 - unit tests, running
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-author: gewarren
-ms.openlocfilehash: cd4cf41906fc9c8d4b5fbce407f1910d5e972dee
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+author: jillre
+ms.openlocfilehash: 3971fe0513c98cb957d8013cdad932aa0c04bed1
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62945743"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72646630"
 ---
 # <a name="run-a-unit-test-as-a-64-bit-process"></a>以 64 位元處理序的形式執行單元測試
 
@@ -34,7 +34,7 @@ ms.locfileid: "62945743"
 
    在 *.runsettings* 檔案中指定 `<TargetPlatform>x64</TargetPlatform>`。 這個方法的優點是，您可以指定不同檔案中的設定群組，並且在不同設定之間快速切換。 您也可以在方案之間複製設定。 如需詳細資訊，請參閱[使用 .runsettings 檔案設定單元測試](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md)。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [使用測試總管執行單元測試](../test/run-unit-tests-with-test-explorer.md)
 - [對程式碼進行單元測試](../test/unit-test-your-code.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentHost::GetFileName |Microsoft Docs
+title: IDebugDocumentHost：： GetFileName |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 511cdb40a5bb0f885fed8b811a095e7a53a8bb6f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0ff2ad2e4ab419f1e503da072aaa550f3cb7cf0e
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62971104"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72569399"
 ---
 # <a name="idebugdocumenthostgetfilename"></a>IDebugDocumentHost::GetFileName
-傳回不含路徑資訊的文件的名稱。  
+傳回不含路徑資訊的檔案名稱。  
   
 ## <a name="syntax"></a>語法  
   
@@ -37,7 +37,7 @@ HRESULT GetFileName(
   
 #### <a name="parameters"></a>參數  
  `pbstrShortName`  
- [out]字串，包含文件的簡短名稱。  
+ 脫銷字串，包含檔的簡短名稱。  
   
 ## <a name="return-value"></a>傳回值  
  方法會傳回 `HRESULT`。 可能的值包括 (但不限於) 下表中的這些值。  
@@ -47,7 +47,7 @@ HRESULT GetFileName(
 |`S_OK`|方法成功。|  
   
 ## <a name="remarks"></a>備註  
- 這個方法會傳回沒有路徑資訊的文件的簡短名稱。 簡短名稱通常會在情況下這類**另存新檔...**  對話方塊。  
+ 這個方法會傳回檔的簡短名稱，而不包含路徑資訊。 簡短名稱通常用於 [**另存**新檔 ...] 對話方塊之類的情況。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDebugDocumentHost 介面](../../winscript/reference/idebugdocumenthost-interface.md)

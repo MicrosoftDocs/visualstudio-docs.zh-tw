@@ -1,5 +1,5 @@
 ---
-title: IDebugApplication::SynchronousCallInDebuggerThread | Microsoft Docs
+title: IDebugApplication：： SynchronousCallInDebuggerThread |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d5460efaa3448c7812707e0baa7b2f5afe1d27a0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 134717b6ce30c87ccfb4bbb50ffe958717ae757f
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62990561"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574593"
 ---
 # <a name="idebugapplicationsynchronouscallindebuggerthread"></a>IDebugApplication::SynchronousCallInDebuggerThread
-提供一個機制，讓呼叫者在偵錯工具執行緒中執行程式碼。  
+提供一種機制，讓呼叫者在偵錯工具執行緒中執行程式碼。  
   
 ## <a name="syntax"></a>語法  
   
@@ -40,16 +40,16 @@ HRESULT SynchronousCallInDebuggerThread(
   
 #### <a name="parameters"></a>參數  
  `pptc`  
- [in]要呼叫的物件。  
+ 在要呼叫的物件。  
   
  `dwParam1`  
- [in]第一個參數傳遞至`IDebugThreadCall::ThreadCallHandler`方法。  
+ 在要傳遞至 `IDebugThreadCall::ThreadCallHandler` 方法的第一個參數。  
   
  `dwParam2`  
- [in]第二個參數傳遞至`IDebugThreadCall::ThreadCallHandler`方法。  
+ 在要傳遞至 `IDebugThreadCall::ThreadCallHandler` 方法的第二個參數。  
   
  `dwParam3`  
- [in]要傳遞給第三個參數`IDebugThreadCall::ThreadCallHandler`方法。  
+ 在要傳遞至 `IDebugThreadCall::ThreadCallHandler` 方法的第三個參數。  
   
 ## <a name="return-value"></a>傳回值  
  方法會傳回 `HRESULT`。 可能的值包括 (但不限於) 下表中的這些值。  
@@ -59,8 +59,8 @@ HRESULT SynchronousCallInDebuggerThread(
 |`S_OK`|方法成功。|  
   
 ## <a name="remarks"></a>備註  
- 語言引擎和主機通常使用這個方法來實作單一執行緒實作之上的無限制執行緒物件。  
+ 語言引擎和主機通常會使用這個方法，在其單一執行緒的上執行無限制執行緒的物件。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDebugApplication 介面](../../winscript/reference/idebugapplication-interface.md)   
  [IDebugThreadCall 介面](../../winscript/reference/idebugthreadcall-interface.md)

@@ -2,17 +2,17 @@
 title: 擴充自動程式化 UI 測試和動作記錄
 ms.date: 11/04/2016
 ms.topic: conceptual
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-author: gewarren
-ms.openlocfilehash: e43706462cadce7f27efc9509ccb2c02677d43b1
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
-ms.translationtype: HT
+author: jillre
+ms.openlocfilehash: 3060014002b2e34443741dc654cf29df53278fe2
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68870091"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72664918"
 ---
 # <a name="extend-coded-ui-tests-and-action-recordings"></a>擴充自動程式化 UI 測試和動作記錄
 
@@ -29,7 +29,7 @@ ms.locfileid: "68870091"
 > [!NOTE]
 > 此範例主要搭配 Microsoft Excel 2010 使用。 不一定適用於 Excel 的其他版本。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestPropertyProvider>
 - <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyElement>

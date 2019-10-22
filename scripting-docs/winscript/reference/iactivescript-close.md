@@ -1,5 +1,5 @@
 ---
-title: IActiveScript::Close | Microsoft Docs
+title: IActiveScript：： Close |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 53b71471ada55751de301391fdcc70387c1bb6c2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f858de42ef2948d218aac6c3194cc6af544da5e9
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62935675"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575785"
 ---
 # <a name="iactivescriptclose"></a>IActiveScript::Close
-使指令碼引擎放棄任何目前載入的指令碼，其狀態，並釋放任何它對其他物件，因此輸入 已關閉的狀態的介面指標。 事件接收器、 立即執行的指令碼的文字，並已在進行中的巨集引動過程完成之前的狀態變更 (使用[iactivescript:: Interruptscriptthread](../../winscript/reference/iactivescript-interruptscriptthread.md)取消執行中指令碼的執行緒)。 介面會發行以避免循環參考問題之前，必須呼叫這個方法所建立的主機。  
+使腳本引擎放棄任何目前載入的腳本、失去其狀態，以及釋放它對其他物件的任何介面指標，因而進入封閉式狀態。 事件接收器、立即執行的腳本文字，以及已在進行中的宏調用，會在狀態變更之前完成（使用[IActiveScript：： InterruptScriptThread](../../winscript/reference/iactivescript-interruptscriptthread.md)來取消執行中的腳本執行緒）。 在釋放介面之前，建立主控制項必須呼叫這個方法，以避免發生迴圈參考問題。  
   
 ## <a name="syntax"></a>語法  
   
@@ -34,14 +34,14 @@ HRESULT Close(void);
 ```  
   
 ## <a name="return-value"></a>傳回值  
- 會傳回下列值之一：  
+ 傳回下列其中一個值：  
   
 |值|意義|  
 |-----------|-------------|  
 |`S_OK`|成功。|  
-|`E_UNEXPECTED`|不需要呼叫 （例如，指令碼引擎已存在於已關閉狀態）。|  
-|`OLESCRIPT_S_PENDING`|方法已排入佇列成功，但是狀態未變更。 當狀態變更的站台是以回撥[IActiveScriptSite::OnStateChange](../../winscript/reference/iactivescriptsite-onstatechange.md)方法。|  
-|`S_FALSE`|此方法成功，但指令碼已關閉。|  
+|`E_UNEXPECTED`|不需要進行呼叫（例如，腳本引擎已處於 [已關閉] 狀態）。|  
+|`OLESCRIPT_S_PENDING`|已成功將方法排入佇列，但狀態尚未變更。 當狀態變更時，會在[IActiveScriptSite：： OnStateChange](../../winscript/reference/iactivescriptsite-onstatechange.md)方法上呼叫網站。|  
+|`S_FALSE`|方法成功，但腳本已經關閉。|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IActiveScript](../../winscript/reference/iactivescript.md)

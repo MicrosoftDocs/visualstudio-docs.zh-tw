@@ -3,62 +3,62 @@ title: 執行 XSLT 轉換
 ms.date: 03/05/2019
 ms.topic: conceptual
 ms.assetid: 56a0fe82-5231-487d-8b6e-a08a9b04e0fc
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e84b1c6303da4c0db39da1b3585a7d4548560feb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2fb4aee348ae48a2078f7803a44d4746d3dbacc1
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63001941"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72668799"
 ---
-# <a name="how-to-execute-an-xslt-transformation-from-the-xml-editor"></a>HOW TO：從 XML 編輯器執行 XSLT 轉換
+# <a name="how-to-execute-an-xslt-transformation-from-the-xml-editor"></a>如何：從 XML 編輯器執行 XSLT 轉換
 
-XML 編輯器可讓您將 XSLT 樣式表與 XML 文件產生關聯、 執行轉換，以及檢視輸出。 XSLT 轉換的結果輸出會顯示在新文件視窗中。
+XML 編輯器可讓您將 XSLT 樣式表單與 XML 檔產生關聯、執行轉換，以及查看輸出。 XSLT 轉換的結果輸出會顯示在新文件視窗中。
 
-**輸出**屬性指定輸出的檔案名稱。 如果**輸出**屬性為空白，就會產生檔名，暫存目錄中。 副檔名根據`xsl:output`項目，以您的樣式表，而且可以是。*xml*，。*txt*或。*htm*。
+**Output**屬性會指定輸出的檔案名。 如果**Output**屬性是空白的，則臨時目錄中會產生檔案名。 副檔名是以您的樣式表單中的 `xsl:output` 元素為基礎，而且可以是。*xml*、。*txt*或。*htm*。
 
-如果**輸出**屬性指定的檔名。*htm*或。*html*延伸模組，XSLT 輸出是預覽使用網頁瀏覽器。 所有其他檔案延伸模組會使用 Visual Studio 所選擇的預設編輯器來開啟。 例如，如果檔案的副檔名。*xml*，Visual Studio 會使用 XML 編輯器。
+如果**Output**屬性指定具有的檔案名，則為。*htm*或。*html*延伸模組：使用網頁瀏覽器預覽 XSLT 輸出。 所有其他副檔名都會使用 Visual Studio 所選擇的預設編輯器來開啟。 例如，如果副檔名為。*xml*，VISUAL STUDIO 使用 xml 編輯器。
 
-## <a name="execute-an-xslt-transformation-from-an-xml-file"></a>從 XML 檔案中執行 XSLT 轉換
+## <a name="execute-an-xslt-transformation-from-an-xml-file"></a>從 XML 檔案執行 XSLT 轉換
 
-1. 在 XML 編輯器中開啟 XML 文件。
+1. 在 XML 編輯器中開啟 XML 檔。
 
 2. 將 XSLT 樣式表與 XML 文件產生關聯。
 
-    - 將 `xml-stylesheet` 處理指示加入 XML 文件。 比方說，將下面這一行新增至文件初構中： `<?xml-stylesheet type='text/xsl' href='filename.xsl'?>`
+    - 將 `xml-stylesheet` 處理指示加入 XML 文件。 例如，將下列這一行新增至檔初構： `<?xml-stylesheet type='text/xsl' href='filename.xsl'?>`
 
        -或-
 
-    - 加入 XSLT 樣式表 using**屬性**視窗。 在編輯器中開啟的 XML 檔案，以滑鼠右鍵按一下編輯器中的任何位置，然後選擇**屬性**。 在 **屬性** 視窗中，按一下**樣式表**欄位，然後選擇 瀏覽按鈕 （...）。選取 XSLT 樣式表，然後選擇**開啟**。
+    - 使用 [**屬性**] 視窗加入 XSLT 樣式表單。 在編輯器中開啟 XML 檔案之後，以滑鼠右鍵按一下編輯器中的任何位置，然後選擇 [**屬性**]。 在 [**屬性**] 視窗中，按一下 [**樣式**表單] 欄位，然後選擇 [流覽] 按鈕（...）。選取 [XSLT 樣式表單]，然後選擇 [**開啟**]。
 
-3. 在功能表列上選擇  **XML** > **啟動 XSLT 但不偵錯**。 或者，您也可以按下**Ctrl**+**Alt**+**F5**。
+3. 在功能表列上，選擇 [ **XML** ]  >  [**啟動 XSLT 但不進行調試**]。 或者，按**Ctrl** +**Alt** +**F5**。
 
-   XSLT 轉換的輸出會顯示在新的文件視窗。
+   XSLT 轉換的輸出會顯示在新的文件視窗中。
 
    > [!NOTE]
    > 如果沒有與 XML 文件相關聯的樣式表，則會出現一個對話方塊，提示您提供要使用的樣式表。
 
-## <a name="execute-an-xslt-transformation-from-an-xslt-style-sheet"></a>從 XSLT 樣式表執行 XSLT 轉換
+## <a name="execute-an-xslt-transformation-from-an-xslt-style-sheet"></a>從 XSLT 樣式表單執行 XSLT 轉換
 
-1. 在 XML 編輯器中開啟 XSLT 樣式表。
+1. 在 XML 編輯器中開啟 XSLT 樣式表單。
 
-2. 指定在 XML 文件**輸入**欄位的文件**屬性**視窗。
+2. 在 [檔**屬性**] 視窗的 [**輸入**] 欄位中，指定 XML 檔。
 
    > [!NOTE]
-   > XML 文件為用於轉換的輸入文件。 如果啟動 XSLT 轉換時，未指定文件，則**開啟舊檔** 對話方塊隨即出現，而且您可以指定文件，在該時間。
+   > XML 文件為用於轉換的輸入文件。 如果啟動 XSLT 轉換時未指定檔，則會出現 [開啟檔案] 對話方塊，您可以在該時間指定**檔**。
 
-3. 在功能表列上選擇  **XML** > **啟動 XSLT 但不偵錯**。 或者，您也可以按下**Ctrl**+**Alt**+**F5**。
+3. 在功能表列上，選擇 [ **XML** ]  >  [**啟動 XSLT 但不進行調試**]。 或者，按**Ctrl** +**Alt** +**F5**。
 
-   XSLT 轉換的輸出會顯示在新的文件視窗。
+   XSLT 轉換的輸出會顯示在新的文件視窗中。
 
 ## <a name="specify-an-output-file-name"></a>指定輸出檔名稱
 
-您可以指定 XML 和 XSL 檔案的輸出檔案名稱。 開啟**屬性** 視窗，並指定中的檔案名稱**輸出**欄位。
+您可以指定 XML 和 XSL 檔案的輸出檔案名。 開啟 [**屬性**] 視窗，並在 [**輸出**] 欄位中指定一個檔案名。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [XML 編輯器](../xml-tools/xml-editor.md)

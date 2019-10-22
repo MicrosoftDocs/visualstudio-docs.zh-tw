@@ -6,14 +6,14 @@ ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.assetid: 0fa335fd-e442-448f-913f-25a19df90a93
 caps.latest.revision: 8
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 93a62b6fe5493b78a3c18c1adb87761cdb894670
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: e8b3ea10b96a63bd18098030dc884ac3f3383353
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68871549"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72657191"
 ---
 # <a name="using-microsoftvisualstudiotesttoolsunittesting-members-in-unit-tests"></a>在單元測試中使用 Microsoft.VisualStudio.TestTools.UnitTesting 成員
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ ms.locfileid: "68871549"
 > `[TestClassAttribute()]`
 
 ### <a name="elements-used-for-data-driven-testing"></a>用於資料驅動型測試的項目
- 使用下列項目設定資料驅動型單元測試。 如需詳細資訊, [請參閱如何:建立資料驅動型單元測試](../test/how-to-create-a-data-driven-unit-test.md)和[逐步解說:使用設定檔來定義資料來源](../test/walkthrough-using-a-configuration-file-to-define-a-data-source.md)。
+ 使用下列項目設定資料驅動型單元測試。 如需詳細資訊，請參閱[如何：建立資料驅動型單元測試](../test/how-to-create-a-data-driven-unit-test.md)和[逐步解說︰使用組態檔定義資料來源](../test/walkthrough-using-a-configuration-file-to-define-a-data-source.md)。
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataAccessMethod>
 
@@ -124,6 +124,6 @@ ms.locfileid: "68871549"
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.PrivateType>
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting>

@@ -4,19 +4,19 @@ ms.date: 11/30/2017
 ms.technology: vs-ide-general
 ms.custom: get-started
 ms.topic: tutorial
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f83304daa0e86bb9d4f999262f827615923fe4d
-ms.sourcegitcommit: 6993bcb0d2b0067b1b7b7899bfba52c31c70b7e7
+ms.openlocfilehash: f78c3dcb8cadadd103eb6a09f956bff97a4a8f03
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71095344"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72647841"
 ---
 # <a name="learn-to-use-the-code-editor"></a>了解如何使用程式碼編輯器
 
@@ -128,7 +128,7 @@ Visual Studio 提供實用的「程式碼片段」，讓您可以用來快速且
 
 ## <a name="view-symbol-definitions"></a>檢視符號定義
 
-Visual Studio 編輯器讓檢查類型、方法等等的定義變得十分輕鬆。其中一種方式是導覽至包含定義的檔案，例如，在參考符號的任何位置選擇 [移至定義]。 不會將焦點移離所處理檔案的較快速方式是使用[查看定義](../ide/go-to-and-peek-definition.md#peek-definition)。 讓我們查看 `string` 類型的定義。
+Visual Studio 編輯器可讓您輕鬆檢查類型、方法等的定義。其中一種方式是流覽至包含定義的檔案，例如，在參考符號的任何位置選擇 [**移至定義**]。 不會將焦點移離所處理檔案的較快速方式是使用[查看定義](../ide/go-to-and-peek-definition.md#peek-definition)。 讓我們查看 `string` 類型的定義。
 
 1. 以滑鼠右鍵按一下任何出現的 `string`，然後從內容功能表選擇 [查看定義]。 或者，您也可以按 **Alt**+**F12**。
 
@@ -184,7 +184,7 @@ Visual Studio 編輯器讓檢查類型、方法等等的定義變得十分輕鬆
 > [!div class="nextstepaction"]
 > [了解專案與解決方案](../get-started/tutorial-projects-solutions.md)
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [程式碼片段](../ide/code-snippets.md)
 - [巡覽程式碼](../ide/navigating-code.md)

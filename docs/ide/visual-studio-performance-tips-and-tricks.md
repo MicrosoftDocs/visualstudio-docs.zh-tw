@@ -2,17 +2,17 @@
 title: 改善效能的祕訣
 ms.date: 08/14/2018
 ms.topic: conceptual
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7fccae7d42d9e8f99c78fd55f74466e2f83e5dfa
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: ccf785cec859290cac0ebcf5c9685861bd2887e4
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62581777"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72647142"
 ---
 # <a name="visual-studio-performance-tips-and-tricks"></a>Visual Studio 效能祕訣和訣竅
 
@@ -57,7 +57,7 @@ Visual Studio 會在自動文件還原導致解決方案載入時間明顯變慢
 
 - **指定要載入的符號**
 
-    進行原生偵錯時，載入符號檔 (*.pdb*) 會耗用大量記憶體資源。 您可以設定偵錯工具符號設定來節省記憶體。 一般而言，您會將方案設定成只從您的專案載入模組。
+    進行原生偵錯時，載入符號檔 ( *.pdb*) 會耗用大量記憶體資源。 您可以設定偵錯工具符號設定來節省記憶體。 一般而言，您會將方案設定成只從您的專案載入模組。
 
     若要指定符號載入，請選擇 [工具] > [選項] > [偵錯] > [符號]。
 
@@ -137,7 +137,7 @@ CLR 使用記憶體回收記憶體管理系統。 在此系統中，有時不再
 
 如需 CLR 記憶體回收行程的詳細描述，請參閱[記憶體回收的基本概念](/dotnet/standard/garbage-collection/fundamentals)。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [最佳化 Visual Studio 效能](../ide/optimize-visual-studio-performance.md)
 - [更快載入解決方案 (Visual Studio 部落格)](https://devblogs.microsoft.com/visualstudio/load-solutions-faster-with-visual-studio-2017-version-15-6/)

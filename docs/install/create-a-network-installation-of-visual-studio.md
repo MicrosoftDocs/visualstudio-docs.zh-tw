@@ -1,7 +1,7 @@
 ---
 title: 建立網路型安裝
 description: 了解如何建立網路安裝點以在企業內部署 Visual Studio。
-ms.date: 08/06/2019
+ms.date: 10/11/2019
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,16 +15,16 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 1d18d3a3de423cc63569911bbe49477b5e6f5f26
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
-ms.translationtype: HT
+ms.openlocfilehash: fcc4a3d3d99deab62971c40b26c9a4252367438f
+ms.sourcegitcommit: 6244689e742e551e7b6933959bd42df56928ece3
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70180300"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72516330"
 ---
 # <a name="create-a-network-installation-of-visual-studio"></a>建立 Visual Studio 的網路安裝
 
-一般而言，企業系統管理員會建立網路安裝點，以部署至用戶端工作站。 Visual Studio 設計為能讓您快取初始安裝之檔案以及單一資料夾的所有產品更新。 (這個程序也稱為「建立配置」  )。
+一般而言，企業系統管理員會建立網路安裝點，以部署至用戶端工作站。 Visual Studio 設計為能讓您快取初始安裝之檔案以及單一資料夾的所有產品更新。 (這個程序也稱為「建立配置」)。
 
 我們已完成這項作業，因此，用戶端工作站可以使用相同的網路位置來管理其安裝，即使它們尚未更新為最新的服務更新也是一樣。
 
@@ -33,35 +33,44 @@ ms.locfileid: "70180300"
 
 ## <a name="download-the-visual-studio-bootstrapper"></a>下載 Visual Studio 啟動載入器
 
-下載您要的 Visual Studio 版本。 請務必按一下 [儲存]  ，然後按一下 [開啟資料夾]  。
-
-您的安裝程式可執行檔 (具體而言，即為啟動載入器檔案) 應該符合下列其中一個檔案。
+下載您想要的 Visual Studio 版本的啟動載入器檔案。 請務必選擇 [**儲存**]，然後選擇 [**開啟資料夾**]。
 
 ::: moniker range="vs-2017"
 
-|版本 | 下載|
-|-------------|-----------------------|
-|Visual Studio 企業版 | [**vs_enterprise.exe**](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=enterprise&rel=15&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=network+install&utm_content=download+vs2017) |
-|Visual Studio Professional | [**vs_professional.exe**](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=professional&rel=15&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=network+install&utm_content=download+vs2017) |
+若要取得 Visual Studio 2017 的啟動載入器，請參閱[Visual Studio 舊版](https://visualstudio.microsoft.com/vs/older-downloads/)下載頁面，以取得如何執行此操作的詳細資訊。
 
-其他支援的啟動載入器包括 [vs_buildtools.exe](https://aka.ms/vs/15/release/vs_buildtools.exe)、[vs_feedbackclient.exe](https://aka.ms/vs/15/release/vs_feedbackclient.exe)、[vs_teamexplorer.exe](https://aka.ms/vs/15/release/vs_teamexplorer.exe)、[vs_testagent.exe](https://aka.ms/vs/15/release/vs_testagent.exe)、[vs_testcontroller.exe](https://aka.ms/vs/15/release/vs_testcontroller.exe) 及 [vs_testprofessional.exe](https://aka.ms/vs/15/release/vs_testprofessional.exe)。
+您的安裝程式可執行檔 &mdash;or 更明確，啟動載入器檔案 &mdash;should 相符，或類似于下列其中一項。
+
+| 版本 | Filename |
+|-------------|-----------------------|
+|Visual Studio 企業版 | **vs_enterprise.exe** |
+|Visual Studio Professional | **vs_professional.exe** |
+|Visual Studio Build Tools   | **vs_buildtools .exe** |
+
+其他支援的啟動載入器包括**vs_feedbackclient**、 **vs_teamexplorer**、 **vs_testagent**、 **vs_testcontroller**和**vs_testprofessional**.exe。
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
+您的安裝程式可執行檔 &mdash;or 更明確，啟動載入器檔案 &mdash;should 相符，或類似下列其中一項。
+
 |版本 | 下載|
 |-------------|-----------------------|
 |Visual Studio 企業版 | [**vs_enterprise.exe**](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=enterprise&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=network+install&utm_content=download+vs2019) |
 |Visual Studio Professional | [**vs_professional.exe**](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=professional&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=network+install&utm_content=download+vs2019) |
+| Visual Studio Build Tools   | [**vs_buildtools .exe**](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=buildtools&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=offline+install&utm_content=download+vs2019) |
 
-其他支援的啟動載入器包括：[vs_buildtools.exe](https://aka.ms/vs/16/release/vs_buildtools.exe)、[vs_teamexplorer.exe](https://aka.ms/vs/16/release/vs_teamexplorer.exe)、[vs_testagent.exe](https://aka.ms/vs/16/release/vs_testagent.exe) 和 [vs_testcontroller.exe](https://aka.ms/vs/16/release/vs_testcontroller.exe)。
+其他支援的啟動載入器包括[vs_teamexplorer .exe](https://aka.ms/vs/16/release/vs_teamexplorer.exe)、 [vs_testagent](https://aka.ms/vs/16/release/vs_testagent.exe)和[vs_testcontroller](https://aka.ms/vs/16/release/vs_testcontroller.exe)。
 
 ::: moniker-end
 
+>[!TIP]
+>如果您先前已下載啟動載入器檔案，而且想要驗證其版本，以下說明。 在 Windows 中，開啟 [檔案瀏覽器]，以滑鼠右鍵按一下啟動載入器檔案，選擇 [**屬性**]，選擇 [**詳細資料**] 索引標籤，然後查看**產品版本**號碼。 若要將該號碼與 Visual Studio 的版本相符，請參閱[Visual Studio 組建編號和發行日期](visual-studio-build-numbers-and-release-dates.md)頁面。
+
 ## <a name="create-an-offline-installation-folder"></a>建立離線安裝資料夾
 
-您必須具有網際網路連線才能完成此步驟。 若要建立包含所有語言和所有功能的離線安裝，請下列範例中的其中一個命令。
+您必須具有網際網路連線才能完成此步驟。 若要建立包含所有語言和所有功能的離線安裝，請使用類似下列其中一個範例的命令。
 
    > [!IMPORTANT]
    > 完整的 Visual Studio 配置至少需要 35 GB 磁碟空間，且下載需要一些時間。 如需如何僅使用您想要安裝的元件來建立配置的詳細資料，請參閱[自訂網路配置](#customize-the-network-layout)一節。
@@ -71,11 +80,11 @@ ms.locfileid: "70180300"
 
 - 針對 Visual Studio Enterprise，請執行：
 
-  ```vs_enterprise.exe --layout c:\vsoffline```
+  ```vs_enterprise.exe --layout c:\VSLayout```
 
 - 針對 Visual Studio Professional，請執行：
 
-  ```vs_professional.exe --layout c:\vsoffline```
+  ```vs_professional.exe --layout c:\VSLayout```
 
 ## <a name="modify-the-responsejson-file"></a>修改 response.json 檔案
 
@@ -93,7 +102,7 @@ ms.locfileid: "70180300"
 範例：
 
 ```cmd
-xcopy /e c:\vsoffline \\server\products\VS2017
+xcopy /e c:\VSLayout \\server\products\VS2017
 ```
 
 ::: moniker-end
@@ -101,7 +110,7 @@ xcopy /e c:\vsoffline \\server\products\VS2017
 ::: moniker range="vs-2019"
 
 ```cmd
-xcopy /e c:\vsoffline \\server\products\VS2019
+xcopy /e c:\VSLayout \\server\products\VS2019
 ```
 
 ::: moniker-end
@@ -123,37 +132,37 @@ xcopy /e c:\vsoffline \\server\products\VS2019
 * 若要下載僅適用於一種語言的所有工作負載和元件，請執行：
 
     ```cmd
-    vs_enterprise.exe --layout C:\vsoffline --lang en-US
+    vs_enterprise.exe --layout C:\VSLayout --lang en-US
     ```
 
 * 若要下載適用於多種語言的所有工作負載和元件，請執行：
 
     ```cmd
-    vs_enterprise.exe --layout C:\vsoffline --lang en-US de-DE ja-JP
+    vs_enterprise.exe --layout C:\VSLayout --lang en-US de-DE ja-JP
     ```
 
 * 若要下載適用於所有語言的單一工作負載，請執行：
 
     ```cmd
-    vs_enterprise.exe --layout C:\vsoffline --add Microsoft.VisualStudio.Workload.Azure --includeRecommended
+    vs_enterprise.exe --layout C:\VSLayout --add Microsoft.VisualStudio.Workload.Azure --includeRecommended
     ```
 
 * 若要下載適用於三種語言的兩個工作負載和一個選擇性元件，請執行：
 
     ```cmd
-    vs_enterprise.exe --layout C:\vsoffline --add Microsoft.VisualStudio.Workload.Azure --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Component.GitHub.VisualStudio --includeRecommended --lang en-US de-DE ja-JP
+    vs_enterprise.exe --layout C:\VSLayout --add Microsoft.VisualStudio.Workload.Azure --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Component.GitHub.VisualStudio --includeRecommended --lang en-US de-DE ja-JP
     ```
 
 * 下載兩個工作負載及其所有建議元件：
 
     ```cmd
-    vs_enterprise.exe --layout C:\vsoffline --add Microsoft.VisualStudio.Workload.Azure --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Component.GitHub.VisualStudio --includeRecommended
+    vs_enterprise.exe --layout C:\VSLayout --add Microsoft.VisualStudio.Workload.Azure --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Component.GitHub.VisualStudio --includeRecommended
     ```
 
 * 若要下載兩個工作負載及其所有建議和選擇性原件，請執行：
 
     ```cmd
-    vs_enterprise.exe --layout C:\vsoffline --add Microsoft.VisualStudio.Workload.Azure --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Component.GitHub.VisualStudio --includeOptional
+    vs_enterprise.exe --layout C:\VSLayout --add Microsoft.VisualStudio.Workload.Azure --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Component.GitHub.VisualStudio --includeOptional
     ```
 
 ::: moniker range="vs-2017"
@@ -205,7 +214,7 @@ vs_enterprise.exe --layout c:\VSLayout --all
 * 系統管理員可以執行下列命令，以便使用自動模式來安裝：
 
     ```cmd
-    \server\products\VS\vs_enterprise.exe --quiet --wait --norestart
+    \\server\products\VS\vs_enterprise.exe --quiet --wait --norestart
     ```
 
 > [!IMPORTANT]
@@ -217,6 +226,13 @@ vs_enterprise.exe --layout c:\VSLayout --all
 > 如果企業系統管理員想要對已完成的安裝執行進一步動作 (例如，[將產品金鑰套用至成功安裝](automatically-apply-product-keys-when-deploying-visual-studio.md))，則這十分有用，但是必須等待安裝完成才能處理來自該安裝的傳回碼。
 >
 > 如果您未使用 `--wait`，則 `vs_enterprise.exe` 程序會在安裝完成之前結束，並傳回未代表安裝作業狀態的不正確結束代碼。
+>
+
+::: moniker range="vs-2019"
+> [!IMPORTANT]
+> 針對離線安裝，如果您收到錯誤訊息，指出「找不到符合下列參數的產品」，請確定您使用的是16.3.5 或更新版本的 `--noweb` 參數。
+>
+::: moniker-end
 
 當您從配置進行安裝時，會從配置中取得已安裝的內容。 不過，如果您選取的元件不在配置中，則會從網際網路取得。  如果您想要防止 Visual Studio 安裝程式下載您配置中遺漏的任何內容，請使用 `--noWeb` 選項。 如果使用 `--noWeb`，而且配置遺失已選取要安裝的任何內容，則安裝程式會失敗。
 
@@ -238,11 +254,11 @@ vs_enterprise.exe --layout c:\VSLayout --all
 ::: moniker range="vs-2017"
 
 > [!NOTE]
-> [visualstudio.microsoft.com](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) 所提供 Visual Studio 啟動載入器會下載並安裝執行時可用的最新版 Visual Studio。
+> [visualstudio.microsoft.com](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) 所提供 Visual Studio 啟動載入器，會下載並安裝執行時可用的最新版 Visual Studio。
 >
-> 因此，如果您今天下載 Visual Studio「啟動載入器」  ，並在六個月後執行，則其會安裝您在執行啟動載入器時的最新版 Visual Studio。
+> 因此，如果您今天下載 Visual Studio「啟動載入器」，並在六個月後執行，則其會安裝您在執行啟動載入器時的最新版 Visual Studio。
 >
-> 但是，如果您建立「配置」  並從該配置進行安裝，則會安裝存在於該配置中的特定 Visual Studio 版本。 即使線上可能有較新的版本，您仍會取得該配置中的 Visual Studio 版本。
+> 但是，如果您建立「配置」並從該配置進行安裝，則會安裝存在於該配置中的特定 Visual Studio 版本。 即使線上可能有較新的版本，您仍會取得該配置中的 Visual Studio 版本。
 
 ::: moniker-end
 
@@ -251,9 +267,9 @@ vs_enterprise.exe --layout c:\VSLayout --all
 > [!NOTE]
 > [visualstudio.microsoft.com](https://visualstudio.microsoft.com/downloads) 所提供 Visual Studio 啟動載入器，會下載並安裝執行時可用的最新版 Visual Studio。
 >
-> 因此，如果您今天下載 Visual Studio「啟動載入器」  ，並在六個月後執行，則其會安裝您在執行啟動載入器時的最新版 Visual Studio。
+> 因此，如果您今天下載 Visual Studio「啟動載入器」，並在六個月後執行，則其會安裝您在執行啟動載入器時的最新版 Visual Studio。
 >
-> 但是，如果您建立「配置」  並從該配置進行安裝，則會安裝存在於該配置中的特定 Visual Studio 版本。 即使線上可能有較新的版本，您仍會取得該配置中的 Visual Studio 版本。
+> 但是，如果您建立「配置」並從該配置進行安裝，則會安裝存在於該配置中的特定 Visual Studio 版本。 即使線上可能有較新的版本，您仍會取得該配置中的 Visual Studio 版本。
 
 ::: moniker-end
 
@@ -267,7 +283,7 @@ vs_enterprise.exe --layout c:\VSLayout --all
 
 我們也提供其他支援選項。 如需清單，請參閱我們的[意見反應](../ide/feedback-options.md)頁面。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [Visual Studio 系統管理員指南](visual-studio-administrator-guide.md)
 - [更新 Visual Studio 的網路型安裝](update-a-network-installation-of-visual-studio.md)

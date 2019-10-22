@@ -8,15 +8,15 @@ f1_keywords:
 - VS.ToolsOptionsPages.Environment.RoamingSettings
 ms.assetid: a3d2ea29-be5d-4012-9820-44b06adbb7dd
 caps.latest.revision: 13
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: ed6e544378089222cb69c491b0cd473544e05220
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 6459b6f65fd1e29fbadb01f6aa2fc51520b726b8
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67825658"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72646819"
 ---
 # <a name="synchronized-settings-in-visual-studio"></a>Visual Studio 中的同步處理設定
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

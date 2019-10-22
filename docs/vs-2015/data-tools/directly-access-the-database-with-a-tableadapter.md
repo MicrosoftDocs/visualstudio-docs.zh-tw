@@ -1,5 +1,5 @@
 ---
-title: 直接存取資料庫以 tableadapter |Microsoft Docs
+title: 使用 TableAdapter 直接存取資料庫 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-data-tools
@@ -23,55 +23,55 @@ helpviewer_keywords:
 - TableAdapters
 ms.assetid: 012c5924-91f7-4790-b2a6-f51402b7014b
 caps.latest.revision: 15
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 924a14cc3938420f32a1a2c25265ebe94e261b15
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 58500e59a624dac55824033b8b9667754a9040c5
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63431967"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72657367"
 ---
 # <a name="directly-access-the-database-with-a-tableadapter"></a>以 TableAdapter 直接存取資料庫
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-除了`InsertCommand`， `UpdateCommand`，和`DeleteCommand`，可以直接對資料庫執行的方法以建立 TableAdapters。 這些方法 (`TableAdapter.Insert`， `TableAdapter.Update`，和`TableAdapter.Delete`) 可以呼叫來操作直接在資料庫中的資料。  
-  
- 如果您不想要建立這些直接方法，設定 TableAdapter`GenerateDbDirectMethods`屬性，以`false`中**屬性**視窗。 如果除了 TableAdapter 的主要查詢的 TableAdapter 加入任何查詢，都不會產生這些 DbDirect 方法的獨立查詢。  
-  
-## <a name="sendcommandsdirectly-to-a-database"></a>Sendcommandsdirectly 至資料庫  
- 呼叫 TableAdapter 的 DbDirect 方法可執行您嘗試完成的工作。  
-  
-#### <a name="to-insert-new-records-directly-into-a-database"></a>若要直接將新記錄插入資料庫  
-  
-- 呼叫 TableAdapter 的`Insert`方法，傳遞每個資料行做為參數的值。 下列程序使用`Region`Northwind databaseas 資料表範例。  
-  
+除了 `InsertCommand`、`UpdateCommand` 和 `DeleteCommand` 之外，也會使用可直接對資料庫執行的方法來建立 Tableadapter。 您可以呼叫這些方法（`TableAdapter.Insert`、`TableAdapter.Update` 和 `TableAdapter.Delete`），直接在資料庫中運算元據。
+
+ 如果您不想要建立這些直接方法，請將 TableAdapter 的 `GenerateDbDirectMethods` 屬性設定為 [**屬性**] 視窗中的 [`false`]。 如果除了 TableAdapter 的主查詢之外，還有任何查詢新增至 TableAdapter，它們就是不會產生這些 DbDirect 方法的獨立查詢。
+
+## <a name="sendcommandsdirectly-to-a-database"></a>Sendcommandsdirectly 至資料庫
+ 呼叫 TableAdapter DbDirect 方法，以執行您嘗試完成的工作。
+
+#### <a name="to-insert-new-records-directly-into-a-database"></a>將新記錄直接插入資料庫
+
+- 呼叫 TableAdapter 的 `Insert` 方法，傳入每個資料行的值做為參數。 下列程式會使用 Northwind databaseas 中的 `Region` 資料表範例。
+
     > [!NOTE]
-    > 如果您沒有可用的執行個體，具現化您想要使用的 TableAdapter。  
-  
+    > 如果您沒有可用的實例，請具現化您要使用的 TableAdapter。
+
      [!code-csharp[VbRaddataSaving#15](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Class1.cs#15)]
-     [!code-vb[VbRaddataSaving#15](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Class1.vb#15)]  
-  
-#### <a name="to-update-records-directly-in-a-database"></a>若要更新直接在資料庫中的記錄  
-  
-- 呼叫 TableAdapter 的`Update`方法並傳入新值和原始值的每個資料行做為參數。  
-  
+     [!code-vb[VbRaddataSaving#15](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Class1.vb#15)]
+
+#### <a name="to-update-records-directly-in-a-database"></a>直接在資料庫中更新記錄
+
+- 呼叫 TableAdapter 的 `Update` 方法，傳入每個資料行的新和原始值做為參數。
+
     > [!NOTE]
-    > 如果您沒有可用的執行個體，具現化您想要使用的 TableAdapter。  
-  
+    > 如果您沒有可用的實例，請具現化您要使用的 TableAdapter。
+
      [!code-csharp[VbRaddataSaving#18](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Class1.cs#18)]
-     [!code-vb[VbRaddataSaving#18](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Class1.vb#18)]  
-  
-#### <a name="to-delete-records-directly-from-a-database"></a>若要直接從資料庫刪除記錄  
-  
-- 呼叫 TableAdapter`Delete`方法，傳遞每個資料行做為參數的值`Delete`方法。 下列程序使用`Region`Northwind databaseas 資料表範例。  
-  
+     [!code-vb[VbRaddataSaving#18](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Class1.vb#18)]
+
+#### <a name="to-delete-records-directly-from-a-database"></a>直接從資料庫刪除記錄
+
+- 呼叫 TableAdapter 的 `Delete` 方法，傳入每個資料行的值做為 `Delete` 方法的參數。 下列程式會使用 Northwind databaseas 中的 `Region` 資料表範例。
+
     > [!NOTE]
-    > 如果您沒有可用的執行個體，具現化您想要使用的 TableAdapter。  
-  
+    > 如果您沒有可用的實例，請具現化您要使用的 TableAdapter。
+
      [!code-csharp[VbRaddataSaving#21](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Class1.cs#21)]
-     [!code-vb[VbRaddataSaving#21](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Class1.vb#21)]  
-  
-## <a name="see-also"></a>另請參閱  
+     [!code-vb[VbRaddataSaving#21](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Class1.vb#21)]
+
+## <a name="see-also"></a>請參閱
  [使用 TableAdapter 填入資料集](../data-tools/fill-datasets-by-using-tableadapters.md)

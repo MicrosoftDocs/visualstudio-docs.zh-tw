@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 36e310688b8305b2d5986a1b29d34895f02bc4d7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 8341a83443855f2fd90d7f5a742251fa54fc4890
+ms.sourcegitcommit: dc12a7cb66124596089f01d3e939027ae562ede9
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63411001"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71962907"
 ---
 # <a name="usingtask-element-msbuild"></a>UsingTask 元素 (MSBuild)
 將 [Task](../msbuild/task-element-msbuild.md) 元素中參考的工作對應至包含工作實作的組件。
@@ -39,12 +39,15 @@ ms.locfileid: "63411001"
     Condition="'String A'=='String B'" />
 ```
 
+> [!NOTE]
+> 與屬性和專案不同的是，將會使用適用于 `TaskName` 的*第一個*`UsingTask` 元素。若要覆寫工作，您必須在現有的 `UsingTask`*之前*定義新的。
+
 ## <a name="attributes-and-elements"></a>屬性和元素
  下列章節說明屬性、子元素和父元素。
 
 ### <a name="attributes"></a>屬性
 
-|屬性|說明|
+|屬性|描述|
 |---------------|-----------------|
 |`AssemblyName`|需要 `AssemblyName` 屬性或 `AssemblyFile` 屬性。<br /><br /> 要載入之組件的名稱。 `AssemblyName` 屬性接受強式名稱組件，雖然不需要強式名稱。 使用這個屬性就相當於使用 .NET 中的 <xref:System.Reflection.Assembly.Load%2A> 方法載入組件。<br /><br /> 如果使用 `AssemblyFile` 屬性，則您無法使用這個屬性。|
 |`AssemblyFile`|需要 `AssemblyName` 或 `AssemblyFile` 屬性。<br /><br /> 組件的檔案路徑。 此屬性接受完整路徑或相對路徑。 相對路徑相對於專案檔案或目標檔案的目錄位置，其中會宣告 `UsingTask` 項目。 使用這個屬性就相當於使用 .NET 中的 <xref:System.Reflection.Assembly.LoadFrom%2A> 方法載入組件。<br /><br /> 如果使用 `AssemblyName` 屬性，則您無法使用這個屬性。|
@@ -54,14 +57,14 @@ ms.locfileid: "63411001"
 
 ### <a name="child-elements"></a>子元素
 
-|元素|說明|
+|元素|描述|
 |-------------|-----------------|
 |[ParameterGroup](../msbuild/parametergroup-element.md)|在指定的 `TaskFactory` 產生之工作上顯示的參數集。|
 |[Task](../msbuild/task-element-msbuild.md)|傳遞至 `TaskFactory` 以產生工作之執行個體的資料。|
 
 ### <a name="parent-elements"></a>父元素
 
-| 元素 | 說明 |
+| 元素 | 描述 |
 | - | - |
 | [專案](../msbuild/project-element-msbuild.md) | [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 專案檔案的必要根項目。 |
 

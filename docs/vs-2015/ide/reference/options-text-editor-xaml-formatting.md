@@ -28,15 +28,15 @@ helpviewer_keywords:
 - XAML view settings, attribute spacing
 ms.assetid: ad3820b1-0d94-4807-a74c-c3467ed973a2
 caps.latest.revision: 20
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 8f820ac16667a9550db17bc252c547f16b81e70b
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 319e09d2438b23c217f7820fe4288758a595be56
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65696012"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72662214"
 ---
 # <a name="options-text-editor-xaml-formatting"></a>格式、XAML、文字編輯器、選項
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ ms.locfileid: "65696012"
 使用 [格式化] 屬性頁來指定如何格式化您 XAML 文件中的項目和屬性。 若要開啟 [選項] 對話方塊，請按一下 [工具] 功能表，然後按一下 [選項]。 若要存取 [格式] 屬性頁，請展開 [文字編輯器]、[XAML]、[格式] 節點。
 
 > [!NOTE]
-> 根據您目前使用的設定或版本，您所看到的對話方塊與功能表命令可能會與 [說明] 中描述的不同。 若要變更設定，請從 [ **工具** ] 功能表中選取 [ **匯入和匯出設定** ]。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)
+> 根據您目前使用的設定或版本，您所看到的對話方塊與功能表命令可能會與 [說明] 中描述的不同。 若要變更設定，請從 [ **工具** ] 功能表中選取 [ **匯入和匯出設定** ]。 如需詳細資訊，請參閱在 Visual Studio 中自訂開發設定 [Walkthrough: Calling Code in an VSTO Add-in from VBA](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。
 
 ## <a name="auto-formatting-events"></a>自動格式化事件
 偵測到下列任一事件時，可能會進行自動格式化。
@@ -117,16 +117,16 @@ ms.locfileid: "65696012"
 
 |||
 |-|-|
-|**在完整的 XAML 檢視中一律開啟的文件**|指定是否 XAML 文件只會出現在 XAML 檢視中，而不需要設計 檢視中。 適用於載入大型文件。|
+|**一律以完整的 XAML 視圖開啟檔**|指定 XAML 檔是否只會出現在 XAML 視圖中，而不設計檢視。 適用于載入大型檔。|
 
 ## <a name="toolbox"></a>工具箱
-您可以使用此設定可指定是否會將使用者控制項和自訂控制項顯示在工具箱中。
+使用此設定可指定是否要在 [工具箱] 中顯示使用者控制項和自訂控制項。
 
 |||
 |-|-|
 |**自動填入工具箱項目**|指定目前方案中的使用者控制項和自訂控制項是否自動顯示在工具箱。|
 
-## <a name="see-also"></a>另請參閱
-[WPF 中的 XAML](https://msdn.microsoft.com/library/5d858575-a83b-42df-ad3f-047ed2d6e3c8)  
-[如何：變更 XAML 檢視設定](https://msdn.microsoft.com/aee87c79-ca01-4f84-8fb7-a9e47048ee47)  
-[XAML 和程式碼逐步解說](https://msdn.microsoft.com/b3ff41a0-a2a3-4f61-b698-ac88ec8f799c)
+## <a name="see-also"></a>請參閱
+[WPF 中的 xaml](https://msdn.microsoft.com/library/5d858575-a83b-42df-ad3f-047ed2d6e3c8) 
+[如何：變更 xaml 視圖設定](https://msdn.microsoft.com/aee87c79-ca01-4f84-8fb7-a9e47048ee47)
+[xaml 和程式碼](https://msdn.microsoft.com/b3ff41a0-a2a3-4f61-b698-ac88ec8f799c)逐步解說

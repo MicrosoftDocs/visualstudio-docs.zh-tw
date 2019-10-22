@@ -1,5 +1,5 @@
 ---
-title: HOW TO：檢視現有類型 (類別設計工具)
+title: 如何：檢視現有類型 (類別設計工具)
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,29 +9,29 @@ helpviewer_keywords:
 - types [Visual Studio], class diagrams
 - class diagrams, types
 ms.assetid: de110a4e-5b51-4a40-9dee-615df4d8f999
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ef2882fec8d213c38a2e125d4e3f0c3f22d1d581
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 386b62e278b1fbe8230af16b54f8b7bb95857c48
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62975160"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72631526"
 ---
-# <a name="how-to-view-existing-types-in-class-designer"></a>HOW TO：在 [類別設計工具] 中檢視現有類型
+# <a name="how-to-view-existing-types-in-class-designer"></a>如何：在類別設計工具中檢視現有類型
 
 若要查看現有的類型及其成員，請將其圖案加入至類別圖。
 
 您可以查看本機類型及參考類型。 本機類型存在目前已開啟的專案中，而且為可讀寫。 參考類型存在其他專案或參考組件中，而且為唯讀。
 
-若要在類別圖上設計新的類型，請參閱[如何：使用 [類別設計工具] 建立類型](how-to-create-types.md)。
+若要在類別圖表上設計新的類型，請參閱[如何：使用類別設計工具建立類型](how-to-create-types.md)。
 
 ## <a name="to-see-types-in-a-project-on-a-class-diagram"></a>在類別圖上查看專案中的類型
 
-1. 從 [方案總管] 的專案中開啟現有的類別圖表 (.cd) 檔案。 如果沒有類別圖，就將新的類別圖加入至專案。 請參閱[如何：將類別圖表新增至專案](how-to-add-class-diagrams-to-projects.md)。
+1. 從 [方案總管] 的專案中開啟現有的類別圖表 (.cd) 檔案。 如果沒有類別圖，就將新的類別圖加入至專案。 請參閱[如何：將類別圖新增至專案](how-to-add-class-diagrams-to-projects.md)。
 
 2. 將原始程式碼檔從 [方案總管] 的專案拖曳至類別圖表。
 
@@ -61,7 +61,7 @@ ms.locfileid: "62975160"
 
 在 [方案總管] 或 [類別檢視] 中，在專案上按一下滑鼠右鍵並選擇 [檢視]，然後選擇 [類別圖表檢視]。 就會建立會自動填入內容的類別圖。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [如何：檢視類型之間的繼承](how-to-view-inheritance-between-types.md)
 - [如何：自訂類別圖表](how-to-customize-class-diagrams.md)

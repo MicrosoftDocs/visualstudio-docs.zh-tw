@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - test settings, network emulation
 ms.assetid: ff275cfb-5df9-4710-9a91-9caabaaad34f
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: c4738caa4fac8596db5b92c6cafa1c0f370e0363
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: f49f7952b287989d6e828d92b4c3479731dc2c21
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62979402"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72664803"
 ---
-# <a name="how-to-configure-network-emulation-using-test-settings-in-visual-studio"></a>HOW TO：在 Visual Studio 中使用測試設定來設定網路模擬
+# <a name="how-to-configure-network-emulation-using-test-settings-in-visual-studio"></a>如何：在 Visual Studio 中使用測試設定來設定網路模擬
 
 您可以設定診斷資料配接器，從 Visual Studio 測試不同網路環境下的應用程式。 當您執行測試時，也可以將其設定為測試人造網路負載或瓶頸。
 
@@ -76,14 +76,14 @@ Visual Studio 會針對所有測試類型使用軟體實際網路模擬。 其�
 
 4. 如果您在測試設定中包含網路模擬診斷資料配接器，而且打算將它用於本機電腦，則也必須將網路模擬驅動程式繫結至電腦的其中一個網路介面卡。 網路模擬診斷資料配接器需要網路模擬驅動程式才能運作。 您可使用兩種方式來安裝網路模擬驅動程式並繫結至配接器：
 
-    - **隨 Microsoft Visual Studio Test Agent 安裝的網路模擬驅動程式：** Microsoft Visual Studio Test Agent 可以用於遠端電腦和您的本機電腦。 當您安裝 Visual Studio Test Agent 時，安裝程序包含的設定步驟會將網路模擬驅動程式繫結至網路介面卡。 如需詳細資訊，請參閱[安裝和設定測試代理程式](../test/lab-management/install-configure-test-agents.md)。
+    - **隨 Microsoft Visual Studio Test Agent 安裝的網路模擬驅動程式：** Microsoft Visual Studio Test Agent 可同時在遠端電腦和本機電腦上使用。 當您安裝 Visual Studio Test Agent 時，安裝程序包含的設定步驟會將網路模擬驅動程式繫結至網路介面卡。 如需詳細資訊，請參閱[安裝和設定測試代理程式](../test/lab-management/install-configure-test-agents.md)。
 
-    - **隨 Microsoft Visual Studio Test Professional 安裝的網路模擬驅動程式：** 當您第一次使用網路模擬時，系統會提示您將網路模擬驅動程式繫結到網路卡。
+    - **隨 Microsoft Visual Studio Test Professional 安裝的網路模擬驅動程式：** 第一次使用網路模擬時，系統會提示您將網路模擬驅動程式繫結至網路介面卡。
 
     > [!TIP]
-    > 您也可以透過使用下列命令，從命令列將網路模擬驅動程式安裝到您的本機電腦上，而無須安裝 Visual Studio 測試代理程式：**VSTestConfig NETWORKEMULATION /install**
+    > 不必安裝 Visual Studio 測試代理程式，也能在本機電腦上安裝網路模擬驅動程式，只要從命令列使用下列命令即可：**VSTestConfig NETWORKEMULATION /install**
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [使用測試設定收集診斷資訊](../test/collect-diagnostic-information-using-test-settings.md)
 - [執行手動測試 (Azure Test Plans)](/azure/devops/test/run-manual-tests?view=vsts)

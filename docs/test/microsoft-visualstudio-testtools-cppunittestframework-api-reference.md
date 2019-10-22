@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikeblome
-ms.openlocfilehash: fca428a7a810453b3ddcbd9b0d10d6a8f13d0550
-ms.sourcegitcommit: 16175e0cea6af528e9ec76f0b94690faaf1bed30
+ms.openlocfilehash: 327aa6f79f7eda6ecc3f1c0a7b2576a87287b1c0
+ms.sourcegitcommit: 628eb202a1153ebfe69c668f966f821b98b34b34
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/28/2019
-ms.locfileid: "71481862"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "71720518"
 ---
 # <a name="microsoftvisualstudiotesttoolscppunittestframework-api-reference"></a>Microsoft.VisualStudio.TestTools.CppUnitTestFramework API 參考
 
@@ -124,7 +124,7 @@ TEST_METHOD_INITIALIZE(methodName)
 }
 ```
 
-定義 *methodName* 為每個測試方法執行之前要執行的方法。 `TEST_METHOD_INITIALIZE` 只能在測試類別中定義一次，且必須在測試類別中定義。
+定義 *methodName* 為每個測試方法執行之前要執行的方法。 `TEST_METHOD_INITIALIZE` 只能在測試類別中定義一次，且必須在測試類別的範圍中定義。
 
 ```cpp
 TEST_METHOD_CLEANUP(methodName)

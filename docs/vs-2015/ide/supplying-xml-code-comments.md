@@ -12,26 +12,26 @@ helpviewer_keywords:
 - code comments
 ms.assetid: f36b46af-443a-4fa6-a2c3-0c4962bbd4aa
 caps.latest.revision: 25
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 5401679f02141cac9fff32025edfff4dc76895b1
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 62ece3a7a56f931f949fc13124af430ce24e622f
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65678887"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72646831"
 ---
 # <a name="supplying-xml-code-comments"></a>提供 XML 程式碼註解
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-您可以將原始程式碼檔中的註解當成 IntelliSense 使用。 將 /doc 參數新增至 Visual Basic、C# 或 C++ 編譯器命令列時，會產生當成 IntelliSense 文件基礎的 .xml 檔案。  
-  
- 如需在 Visual Basic 中撰寫程式碼的詳細資訊，請參閱[如何：建立 XML 文件](https://msdn.microsoft.com/library/27b5b06c-09b9-496a-8245-f9542d846230)。  
-  
- 如需在 C# 中撰寫程式碼的詳細資訊，請參閱 [XML 文件註解](https://msdn.microsoft.com/library/803b7f7b-7428-4725-b5db-9a6cff273199)。  
-  
- 如需在 C++ 中撰寫程式碼的詳細資訊，請參閱[註解](https://msdn.microsoft.com/library/6fcb906c-c264-4083-84bc-373800b2e514)和 [XML 文件](https://msdn.microsoft.com/library/a1aec1c5-b2d1-4c74-83ae-1dbbbb76b506)。  
-  
-## <a name="see-also"></a>請參閱  
+您可以將原始程式碼檔中的註解當成 IntelliSense 使用。 將 /doc 參數新增至 Visual Basic、C# 或 C++ 編譯器命令列時，會產生當成 IntelliSense 文件基礎的 .xml 檔案。
+
+ 如需在 Visual Basic 中撰寫程式碼的詳細資訊，請參閱[如何：建立 XML 文件](https://msdn.microsoft.com/library/27b5b06c-09b9-496a-8245-f9542d846230)。
+
+ 如需在 C# 中撰寫程式碼的詳細資訊，請參閱 [XML 文件註解](https://msdn.microsoft.com/library/803b7f7b-7428-4725-b5db-9a6cff273199)。
+
+ 如需在 C++ 中撰寫程式碼的詳細資訊，請參閱[註解](https://msdn.microsoft.com/library/6fcb906c-c264-4083-84bc-373800b2e514)和 [XML 文件](https://msdn.microsoft.com/library/a1aec1c5-b2d1-4c74-83ae-1dbbbb76b506)。
+
+## <a name="see-also"></a>另請參閱
  [使用 IntelliSense](../ide/using-intellisense.md)

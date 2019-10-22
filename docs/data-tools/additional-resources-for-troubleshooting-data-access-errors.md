@@ -219,21 +219,21 @@ helpviewer_keywords:
 - troubleshooting data access
 - datasets [Visual Basic], troubleshooting
 ms.assetid: 357c9f0a-9d59-4db4-9b7c-b96cad839961
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 9867f9b595937e0ae8586aabdba180f4b1d8d359
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5c92699d9d7c77c771ea1cc4aa28b918f318eca8
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62818074"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72648870"
 ---
-# <a name="troubleshoot-data-access-errors-on-the-forums"></a>在論壇上的資料存取錯誤進行疑難排解
+# <a name="troubleshoot-data-access-errors-on-the-forums"></a>針對論壇上的資料存取錯誤進行疑難排解
 
-您可以在 Microsoft Developer Network (MSDN) 公共論壇中尋求有關疑難排解錯誤和警告的協助。 以下是一些資料相關的論壇可用在 MSDN 上：
+您可以在 Microsoft Developer Network (MSDN) 公共論壇中尋求有關疑難排解錯誤和警告的協助。 以下是 MSDN 上提供的一些資料相關論壇：
 
 - [Windows Forms data controls and databinding](https://social.msdn.microsoft.com/Forums/windows/en-US/home?forum=winformsdatacontrols) (Windows Forms 資料控制項與資料繫結)
 
@@ -249,8 +249,8 @@ ms.locfileid: "62818074"
 
 - [ADO.NET 資料提供者論壇](https://social.msdn.microsoft.com/Forums/en-US/home?forum=adodotnetdataproviders)
 
-如需如何疑難排解 SQL Server 的連線資訊，請參閱[連接到 SQL Server database engine 的疑難排解](https://social.technet.microsoft.com/wiki/contents/articles/2102.how-to-troubleshoot-connecting-to-the-sql-server-database-engine.aspx)。
+如需如何疑難排解 SQL Server 連線的詳細資訊，請參閱[疑難排解連接到 SQL Server 資料庫引擎](https://social.technet.microsoft.com/wiki/contents/articles/2102.how-to-troubleshoot-connecting-to-the-sql-server-database-engine.aspx)。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [適用於 .NET 的 Visual Studio Data Tools](../data-tools/visual-studio-data-tools-for-dotnet.md)

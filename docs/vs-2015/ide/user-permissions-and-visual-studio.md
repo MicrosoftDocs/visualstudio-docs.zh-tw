@@ -11,15 +11,15 @@ helpviewer_keywords:
 - permissions
 ms.assetid: 70485ed7-6342-41bf-8250-7a6826e21b98
 caps.latest.revision: 17
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 8bc4920c32d781d31a6aed88699efccf8be6b774
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: b7ffc3a6b3fe5ad5952ecfde6091cbe7e656f305
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65703996"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72672679"
 ---
 # <a name="user-permissions-and-visual-studio"></a>使用者權限和 Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ ms.locfileid: "65703996"
 ||安裝、更新或移除本機說明內容。|[安裝與管理本機內容](../ide/install-and-manage-local-content.md)|
 |應用程式類型|開發 SharePoint 2010 方案。|[開發 SharePoint 方案的需求](https://msdn.microsoft.com/library/ae8ff69d-4540-4380-ab0b-845f7108e89c)|
 ||取得 [!INCLUDE[win8_appstore_long](../includes/win8-appstore-long-md.md)]的開發人員授權。|[取得開發人員授權 (Windows 市集應用程式)](http://go.microsoft.com/fwlink/?LinkID=241313)|
-|工具箱|將傳統 COM 控制項新增至 [工具箱]。|[使用工具箱](../ide/using-the-toolbox.md)|
+|工具箱|將傳統 COM 控制項新增至 [工具箱]  。|[使用工具箱](../ide/using-the-toolbox.md)|
 |增益集|安裝及使用在 IDE 中使用傳統 COM 撰寫的增益集。|[建立增益集和精靈](https://msdn.microsoft.com/library/c5a47c21-6668-4de3-898d-afa969317e73)|
 |建置|使用註冊元件的建置後事件。|[了解自訂建置步驟和建置事件](https://msdn.microsoft.com/library/beb2f017-3e9f-4b2c-9b57-2572fd2628e4)|
 ||包含當您建立 C++ 專案時的註冊步驟。|[了解自訂建置步驟和建置事件](https://msdn.microsoft.com/library/beb2f017-3e9f-4b2c-9b57-2572fd2628e4)|
@@ -54,21 +54,21 @@ ms.locfileid: "65703996"
 ## <a name="running-visual-studio-as-an-administrator"></a>以系統管理員身分執行 Visual Studio
  您可以在每次啟動 IDE 時以系統管理權限啟動 Visual Studio，或修改應用程式捷徑永遠以系統管理權限執行。 如需詳細資訊，請參閱 Windows 說明。
 
-#### <a name="to-run-visual-studio-with-administrative-permissions-on-includewin8includeswin8-mdmd-includewin81includeswin81-mdmd-includewinserver8includeswinserver8-mdmd-or-includewinblueserver2includeswinblue-server-2-mdmd"></a>若要在 [!INCLUDE[win8](../includes/win8-md.md)]、[!INCLUDE[win81](../includes/win81-md.md)]、[!INCLUDE[winserver8](../includes/winserver8-md.md)] 或 [!INCLUDE[winblue_server_2](../includes/winblue-server-2-md.md)] 上以系統管理權限執行 Visual Studio
+#### <a name="to-run-visual-studio-with-administrative-permissions-on-includewin8includeswin8-mdmd-includewin81includeswin81-mdmd-includewinserver8includeswinserver8-mdmd-or-includewinblue_server_2includeswinblue-server-2-mdmd"></a>若要在 [!INCLUDE[win8](../includes/win8-md.md)]、[!INCLUDE[win81](../includes/win81-md.md)]、[!INCLUDE[winserver8](../includes/winserver8-md.md)] 或 [!INCLUDE[winblue_server_2](../includes/winblue-server-2-md.md)] 上以系統管理權限執行 Visual Studio
 
-1. 在 [開始] 畫面上鍵入 **Visual Studio**。 您應該會看到您所安裝之 Visual Studio 的版本。
+1. 在 [開始]  畫面上鍵入 **Visual Studio**。 您應該會看到您所安裝之 Visual Studio 的版本。
 
-2. 選取您想要啟動的 Visual Studio 版本，然後開啟捷徑功能表 (這會顯示在畫面底部)。 選擇 [以系統管理員身分執行] 。
+2. 選取您想要啟動的 Visual Studio 版本，然後開啟捷徑功能表 (這會顯示在畫面底部)。 選擇 [以系統管理員身分執行]  。
 
-     在 Visual Studio 啟動時，**(系統管理員)** 會顯示在標題列的產品名稱之後。
+     在 Visual Studio 啟動時， **(系統管理員)** 會顯示在標題列的產品名稱之後。
 
-#### <a name="to-run-visual-studio-with-administrative-permissions-on-includewin7includeswin7-mdmd-or-includewinsvr08r2includeswinsvr08-r2-mdmd"></a>若要在 [!INCLUDE[win7](../includes/win7-md.md)] 或 [!INCLUDE[winsvr08_r2](../includes/winsvr08-r2-md.md)] 上以系統管理權限執行 Visual Studio
+#### <a name="to-run-visual-studio-with-administrative-permissions-on-includewin7includeswin7-mdmd-or-includewinsvr08_r2includeswinsvr08-r2-mdmd"></a>若要在 [!INCLUDE[win7](../includes/win7-md.md)] 或 [!INCLUDE[winsvr08_r2](../includes/winsvr08-r2-md.md)] 上以系統管理權限執行 Visual Studio
 
-1. 選擇 [開始] 功能表上的 [所有程式]。
+1. 選擇 [開始]  功能表上的 [所有程式]  。
 
-2. 在 Microsoft Visual Studio <版本> 資料夾中，選取 Visual Studio <版本>，開啟捷徑功能表，然後選擇 以系統管理員身分執行。
+2. 在 Microsoft Visual Studio <版本>   資料夾中，選取 Visual Studio <版本>   ，開啟捷徑功能表，然後選擇 以系統管理員身分執行  。
 
-     在 Visual Studio 啟動時，**(系統管理員)** 會顯示在標題列的產品名稱之後。
+     在 Visual Studio 啟動時， **(系統管理員)** 會顯示在標題列的產品名稱之後。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
  [移植、移轉和升級 Visual Studio 專案](../porting/porting-migrating-and-upgrading-visual-studio-projects.md) [安裝 Visual Studio 2015](../install/install-visual-studio-2015.md)

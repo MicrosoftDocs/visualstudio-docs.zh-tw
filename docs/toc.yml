@@ -170,8 +170,8 @@
   items:
     - name: 開發
       items:
-        - name: 索引：使用 IDE 撰寫程式碼
-          href: ide/index-writing-code.md
+        - name: 開始使用
+          href: ide/index-writing-code.yml
         - name: 在 IDE 中四處移動
           href: ide/how-to-move-around-in-the-visual-studio-ide.md
         - name: 方案和專案
@@ -563,6 +563,97 @@
               href: ide/class-designer/additional-information-about-errors.md
         - name: 改善您的程式碼
           href: ide/find-and-fix-code-errors.md
+        - name: Windows Forms 開發
+          items:
+            - name: Windows Form 設計工具概觀
+              href: designers/windows-forms-designer-overview.md
+            - name: 開始使用 Windows Form 設計工具
+              href: designers/walkthrough-windows-forms-designer.md
+            - name: 排列控制項 >>
+              href: /dotnet/framework/winforms/controls/arranging-controls-on-windows-forms
+            - name: 建立資料繫結控制項 >>
+              href: /dotnet/framework/winforms/how-to-create-a-simple-bound-control-on-a-windows-form
+            - name: 建立自訂控制項 >>
+              href: /dotnet/framework/winforms/controls/developing-windows-forms-controls-at-design-time
+            - name: 停用 Windows Form 設計工具的 DPI 感知
+              href: designers/disable-dpi-awareness.md
+            - name: 參考資料
+              items:
+                - name: System.Windows.Forms API >>
+                  href: /dotnet/api/system.windows.forms
+            - name: 教學課程
+              items:
+                - name: '教學課程 1：建立圖片檢視器 (C#)'
+                  items:
+                    - name: 總覽
+                      displayName: Tutorial 1 Picture viewer
+                      href: ide/tutorial-1-create-a-picture-viewer.md
+                    - name: 步驟 1：建立 Windows Forms 應用程式專案
+                      href: ide/step-1-create-a-windows-forms-application-project.md
+                    - name: 步驟 2：執行應用程式
+                      href: ide/step-2-run-your-program.md
+                    - name: 步驟 3：設定表單屬性
+                      href: ide/step-3-set-your-form-properties.md
+                    - name: 步驟 4：使用 TableLayoutPanel 控制項來配置表單
+                      href: ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md
+                    - name: 步驟 5：將控制項新增至表單
+                      href: ide/step-5-add-controls-to-your-form.md
+                    - name: 步驟 6：命名按鈕控制項
+                      href: ide/step-6-name-your-button-controls.md
+                    - name: 步驟 7：將對話方塊元件新增至您的表單
+                      href: ide/step-7-add-dialog-components-to-your-form.md
+                    - name: '步驟 8：撰寫 [顯示圖片] 按鈕事件處理常式的程式碼'
+                      href: ide/step-8-write-code-for-the-show-a-picture-button-event-handler.md
+                    - name: 步驟 9：檢閱、註解及測試您的程式碼
+                      href: ide/step-9-review-comment-and-test-your-code.md
+                    - name: 步驟 10：為其他按鈕及核取方塊撰寫程式碼
+                      href: ide/step-10-write-code-for-additional-buttons-and-a-check-box.md
+                    - name: 步驟 11：執行您的應用程式及嘗試其他功能
+                      href: ide/step-11-run-your-program-and-try-other-features.md
+                - name: '教學課程 2：建立計時數學測驗 (C#)'
+                  items:
+                    - name: 總覽
+                      displayName: Tutorial 2 Timed math quiz
+                      href: ide/tutorial-2-create-a-timed-math-quiz.md
+                    - name: 步驟 1：建立專案並將標籤新增至表單
+                      href: ide/step-1-create-a-project-and-add-labels-to-your-form.md
+                    - name: 步驟 2：建立隨機加法問題
+                      href: ide/step-2-create-a-random-addition-problem.md
+                    - name: 步驟 3：新增倒數計時器
+                      href: ide/step-3-add-a-countdown-timer.md
+                    - name: 步驟 4：新增 CheckTheAnswer() 方法
+                      href: ide/step-4-add-the-checktheanswer-parens-method.md
+                    - name: 步驟 5：新增 NumericUpDown 控制項的 Enter 事件處理常式
+                      href: ide/step-5-add-enter-event-handlers-for-the-numericupdown-controls.md
+                    - name: 步驟 6：新增減法問題
+                      href: ide/step-6-add-a-subtraction-problem.md
+                    - name: 步驟 7：新增乘法及除法問題
+                      href: ide/step-7-add-multiplication-and-division-problems.md
+                    - name: 步驟 8：自訂測驗
+                      href: ide/step-8-customize-the-quiz.md
+                - name: '教學課程 3：建立配對遊戲 (C#)'
+                  items:
+                    - name: 總覽
+                      displayName: Tutorial 3 Matching game
+                      href: ide/tutorial-3-create-a-matching-game.md
+                    - name: 步驟 1：建立專案並將資料表新增至表單
+                      href: ide/step-1-create-a-project-and-add-a-table-to-your-form.md
+                    - name: 步驟 2：新增隨機物件與圖示清單
+                      href: ide/step-2-add-a-random-object-and-a-list-of-icons.md
+                    - name: 步驟 3：將隨機圖示指派給每一個標籤
+                      href: ide/step-3-assign-a-random-icon-to-each-label.md
+                    - name: 步驟 4：將 Click 事件處理常式新增至每個標籤
+                      href: ide/step-4-add-a-click-event-handler-to-each-label.md
+                    - name: 步驟 5：新增標籤參考
+                      href: ide/step-5-add-label-references.md
+                    - name: 步驟 6：新增計時器
+                      href: ide/step-6-add-a-timer.md
+                    - name: 步驟 7：讓配對保持可見
+                      href: ide/step-7-keep-pairs-visible.md
+                    - name: 步驟 8：新增驗證玩家是否勝利的方法
+                      href: ide/step-8-add-a-method-to-verify-whether-the-player-won.md
+                    - name: 步驟 9：嘗試其他功能
+                      href: ide/step-9-try-other-features.md
         - name: 跨平台行動裝置程式開發
           href: cross-platform/cross-platform-mobile-development-in-visual-studio.md
         - name: 'Visual Studio 中的 F#'
@@ -584,12 +675,11 @@
             - name: 設計國際化應用程式
               displayName: Globalization localization world-ready
               href: ide/globalizing-and-localizing-applications.md
+    - name: 使用 XAML 工具 >>
+      href: xaml-tools/index.yml
     - name: 存取資料 >>
       displayName: Data connections
       href: data-tools/accessing-data-in-visual-studio.md
-    - name: 設計使用者介面 >>
-      displayName: XAML designer
-      href: designers/designing-user-interfaces.md
     - name: 使用工作流程設計工具開發應用程式 >>
       href: workflow-designer/developing-applications-with-the-workflow-designer.md
     - name: 編譯和建置
@@ -663,7 +753,7 @@
       href: profiling/index.yml
     - name: 分析程式碼品質 >>
       displayName: Code analysis FxCop Analyzers
-      href: code-quality/index.md
+      href: code-quality/index.yml
     - name: 部署 >>
       href: deployment/index.yml
     - name: 延伸 Visual Studio >>
@@ -671,6 +761,90 @@
       href: extensibility/visual-studio-sdk.md
     - name: 分析架構並製作架構模型 >>
       href: modeling/analyze-and-model-your-architecture.md
+    - name: 3D 資產
+      items:
+        - name: 使用 3D 資產來打造遊戲和應用程式
+          href: designers/working-with-3-d-assets-for-games-and-apps.md
+        - name: 作法：在遊戲或應用程式中使用 3D 資產
+          href: designers/using-3-d-assets-in-your-game-or-app.md
+        - name: 紋理和影像
+          items:
+            - name: 使用紋理和影像
+              href: designers/working-with-textures-and-images.md
+            - name: 影像編輯器
+              href: designers/image-editor.md
+            - name: 影像編輯器範例
+              items:
+                - name: 建立基本紋理
+                  href: designers/how-to-create-a-basic-texture.md
+                - name: 建立和修改 MIP 層級
+                  href: designers/how-to-create-and-modify-mip-levels.md
+        - name: 3D 模型
+          items:
+            - name: 使用 3D 模型
+              href: designers/working-with-3-d-models.md
+            - name: 模型編輯器
+              href: designers/model-editor.md
+            - name: 模型編輯器範例
+              items:
+                - name: 建立基本 3D 模型
+                  href: designers/how-to-create-a-basic-3-d-model.md
+                - name: 修改 3D 模型的樞紐點
+                  href: designers/how-to-modify-the-pivot-point-of-a-3-d-model.md
+                - name: 建立 3D 地形模型
+                  href: designers/how-to-model-3-d-terrain.md
+                - name: 將著色器套用至 3D 模型
+                  href: designers/how-to-apply-a-shader-to-a-3-d-model.md
+        - name: 著色器
+          items:
+            - name: 使用著色器
+              href: designers/working-with-shaders.md
+            - name: 著色器設計工具
+              href: designers/shader-designer.md
+            - name: 著色器設計工具節點
+              items:
+                - name: 總覽
+                  displayName: Shader designer nodes
+                  href: designers/shader-designer-nodes.md
+                - name: 常數節點
+                  href: designers/constant-nodes.md
+                - name: 參數節點
+                  href: designers/parameter-nodes.md
+                - name: 紋理節點
+                  href: designers/texture-nodes.md
+                - name: 數學節點
+                  href: designers/math-nodes.md
+                - name: 公用程式節點
+                  href: designers/utility-nodes.md
+                - name: 篩選節點
+                  href: designers/filter-nodes.md
+            - name: 著色器設計工具範例
+              items:
+                - name: 建立基本色彩著色器
+                  displayName: Shader designer example
+                  href: designers/how-to-create-a-basic-color-shader.md
+                - name: 建立基本 Lambert 著色器
+                  href: designers/how-to-create-a-basic-lambert-shader.md
+                - name: 建立基本 Phong 著色器
+                  href: designers/how-to-create-a-basic-phong-shader.md
+                - name: 建立基本紋理著色器
+                  href: designers/how-to-create-a-basic-texture-shader.md
+                - name: 建立灰階紋理著色器
+                  href: designers/how-to-create-a-grayscale-texture-shader.md
+                - name: 建立以幾何為基礎的漸層著色器
+                  href: designers/how-to-create-a-geometry-based-gradient-shader.md
+                - name: 逐步解說：建立逼真的 3D 撞球
+                  href: designers/walkthrough-creating-a-realistic-3-d-billiard-ball.md
+                - name: 匯出著色器
+                  href: designers/how-to-export-a-shader.md
+        - name: 匯出紋理
+          items:
+            - name: 匯出包含 Mipmap 的紋理
+              href: designers/how-to-export-a-texture-that-contains-mipmaps.md
+            - name: 匯出包含預乘 Alpha 的紋理
+              href: designers/how-to-export-a-texture-that-has-premultiplied-alpha.md
+            - name: 匯出紋理，以和 Direct2D 或 JavaScript 應用程式搭配使用
+              href: designers/how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps.md
     - name: 秘訣和訣竅
       items:
         - name: 生產力功能
@@ -708,7 +882,7 @@
         - name: 啟動行為
           displayName: Start page window
           href: ide/customizing-the-start-page-for-visual-studio.md
-        - name: 尋找和使用 Visual Studio 延伸模組
+        - name: 管理延伸模組
           href: ide/finding-and-using-visual-studio-extensions.md
           displayName: 'marketplace, gallery, vsix'
         - name: 管理外部工具
@@ -1173,6 +1347,8 @@
           href: help-viewer/accessibility-features.md
         - name: 快速鍵
           href: help-viewer/shortcut-keys.md
+    - name: Visual Studio 影像庫
+      href: designers/the-visual-studio-image-library.md
     - name: Dotfuscator Community
       items:
         - name: 總覽

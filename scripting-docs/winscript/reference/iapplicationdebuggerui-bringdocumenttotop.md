@@ -1,5 +1,5 @@
 ---
-title: IApplicationDebuggerUI::BringDocumentToTop | Microsoft Docs
+title: IApplicationDebuggerUI：： BringDocumentToTop |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a8a88b44f609113670259492eb82491b16004d29
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b51e7b588750fc72e61840c4748c006eea732c22
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62991130"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577800"
 ---
 # <a name="iapplicationdebuggeruibringdocumenttotop"></a>IApplicationDebuggerUI::BringDocumentToTop
-使用者介面將包含偵錯工具中的第一個指定的偵錯文件的視窗。  
+將包含所指定 debug 檔的視窗帶入偵錯工具使用者介面的頂端。  
   
 ## <a name="syntax"></a>語法  
   
@@ -37,7 +37,7 @@ HRESULT BringDocumentToTop(
   
 #### <a name="parameters"></a>參數  
  `pddt`  
- [in]偵錯的偵錯工具使用者介面中將顯示在上面的文件。  
+ 在要在偵錯工具使用者介面中帶入頂端的 Debug 檔。  
   
 ## <a name="return-value"></a>傳回值  
  方法會傳回 `HRESULT`。 可能的值包括 (但不限於) 下表中的這些值。  
@@ -45,10 +45,10 @@ HRESULT BringDocumentToTop(
 |值|描述|  
 |-----------|-----------------|  
 |`S_OK`|方法成功。|  
-|`E_INVALIDARG`|不知道文件。|  
+|`E_INVALIDARG`|未知的檔。|  
   
 ## <a name="remarks"></a>備註  
- 這個方法將包含指定的偵錯文件來偵錯工具中的第一個視窗顯示使用者介面。  
+ 這個方法會將包含所指定 debug 檔的視窗帶入偵錯工具使用者介面的頂端。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IApplicationDebuggerUI 介面](../../winscript/reference/iapplicationdebuggerui-interface.md)

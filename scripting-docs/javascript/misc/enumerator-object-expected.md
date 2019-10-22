@@ -14,15 +14,15 @@ ms.assetid: dc6e32c1-a6e6-4e12-ac99-e3f65f91c8d7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 06005f635e5173e903cfba6a952750d64181d0bf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d90b6b923f631c7785428a1b3879528e97c1bfd6
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62946338"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572874"
 ---
 # <a name="enumerator-object-expected"></a>必須是列舉值物件
-您嘗試叫用**Enumerator.prototype.atEnd、 Enumerator.prototype.moveFirst，Enumerator.prototype.item**或**Enumerator.prototype.moveNext**其他類型的物件上的方法比`Enumerator`。 這種類型的引動過程的物件必須是型別`Enumerator`。 以下是違反此規則的程式碼範例：  
+您嘗試在 `Enumerator` 以外之類型的物件上叫用**atEnd、列舉**值、MoveFirst 或列舉值，或枚舉器. **moveNext**方法。 這種調用類型的物件必須是 `Enumerator` 的類型。 以下是違反此規則的程式碼範例：  
   
 ```JavaScript  
 var o = new Object;  
@@ -32,11 +32,11 @@ o.f();
   
 ### <a name="to-correct-this-error"></a>更正這個錯誤  
   
-- 只能叫用**Enumerator.prototype.atEnd**， **Enumerator.prototype.item**， **Enumerator.prototype.moveFirst**，或**Enumerator.prototype.moveNext**類型的物件上的方法`Enumerator`。 若要查看您的物件是否為`Enumerator`物件，請使用：  
+- 只會在 `Enumerator` 類型的物件上叫用**atEnd**、**列舉**值、 **MoveFirst**或列舉值. **moveNext**方法。 若要找出您的物件是否為 `Enumerator` 物件，請使用：  
   
     ```js
     if(x instanceof Enumerator)  
     ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Enumerator 物件](../../javascript/reference/enumerator-object-javascript.md)

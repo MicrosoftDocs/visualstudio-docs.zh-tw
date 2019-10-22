@@ -11,15 +11,15 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3be6989195eacdd4d70bd13790d55e4f6cfc769d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 8eb089efbf608b488465809f997ffc82fc2c2e3c
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443630"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574403"
 ---
-# <a name="scripterrordebugexceptionthrownkind-enumeration"></a>SCRIPT_ERROR_DEBUG_EXCEPTION_THROWN_KIND 列舉
-指出擲回的例外狀況的類型。 這個列舉型別由[IActiveScriptErrorDebug110::GetExceptionThrownKind](../../winscript/reference/iactivescripterrordebug110-getexceptionthrownkind.md)方法。  
+# <a name="script_error_debug_exception_thrown_kind-enumeration"></a>SCRIPT_ERROR_DEBUG_EXCEPTION_THROWN_KIND 列舉
+指出擲回的例外狀況的類型。 [IActiveScriptErrorDebug110：： GetExceptionThrownKind](../../winscript/reference/iactivescripterrordebug110-getexceptionthrownkind.md)方法會使用這個列舉。  
   
 > [!IMPORTANT]
 > 這些常數是由 PDM 11.0 和更新版本所實作。 可在 activdbg100.h 中找到。  
@@ -30,7 +30,7 @@ ms.locfileid: "63443630"
 typedef SCRIPT_ERROR_DEBUG_EXCEPTION_THROWN_KIND  
 ```  
   
-## <a name="members"></a>成員  
+## <a name="members"></a>Members  
   
 |成員|值|描述|  
 |------------|-----------|-----------------|  
@@ -38,5 +38,5 @@ typedef SCRIPT_ERROR_DEBUG_EXCEPTION_THROWN_KIND
 |ETK_USER_UNHANDLED|0x00000001|使用者程式碼中未處理此例外狀況。|  
 |ETK_UNHANDLED|0x00000002|程式碼中未處理此例外狀況。|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IActiveScriptErrorDebug110 介面](../../winscript/reference/iactivescripterrordebug110-interface.md)

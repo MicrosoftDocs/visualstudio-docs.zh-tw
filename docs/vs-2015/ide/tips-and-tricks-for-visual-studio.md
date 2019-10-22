@@ -6,15 +6,15 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.assetid: 20489db9-7441-4f8b-97de-c72070d569b1
 caps.latest.revision: 14
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 5358c7e001a993c637cc4ac2dc267a668a7d6e13
-ms.sourcegitcommit: b56dc6fadc6c924beed36bb4c2ccc16cf6bcfa1c
+ms.openlocfilehash: d17a053a5620996f3462e2c79e0b68bd374adccd
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "68740130"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72654841"
 ---
 # <a name="tips-and-tricks-for-visual-studio"></a>Visual Studio 秘訣和訣竅
 

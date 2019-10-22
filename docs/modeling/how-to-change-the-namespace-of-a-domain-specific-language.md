@@ -1,57 +1,57 @@
 ---
-title: HOW TO：變更定義域專屬語言命名空間
+title: How to：變更特定領域語言的命名空間
 ms.date: 10/31/2018
 ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, namespace
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 16fec4cf6150fe0711812d9fabe57fc667e36eef
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b64a61c02f44db0ce70b758331d0d70f7bb8014d
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62993494"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653774"
 ---
-# <a name="how-to-change-the-namespace-of-a-domain-specific-language"></a>HOW TO：變更定義域專屬語言命名空間
+# <a name="how-to-change-the-namespace-of-a-domain-specific-language"></a>How to：變更特定領域語言的命名空間
 
-您可以變更特定領域語言的命名空間。 進行中的變更**DSL explorer**、 Dsl 封裝專案屬性，以及組件資訊。
+您可以變更特定領域語言的命名空間。 在**Dsl Explorer**、dsl 封裝專案的屬性和元件資訊中進行變更。
 
-## <a name="to-change-the-namespace-of-a-domain-specific-language"></a>若要變更的特定領域語言命名空間
+## <a name="to-change-the-namespace-of-a-domain-specific-language"></a>變更特定領域語言的命名空間
 
-1. 在  **DSL Explorer**，選取**Dsl**節點。
+1. 在 [ **Dsl Explorer**] 中，選取 [ **dsl** ] 節點。
 
-2. 在 **屬性**視窗中，變更**命名空間**屬性。
+2. 在 [**屬性**] 視窗中，變更 [**命名空間**] 屬性。
 
-3. 儲存方案，並轉換範本。
+3. 儲存方案並轉換範本。
 
-4. 在 **專案**功能表上，選擇**Dsl 屬性**。
+4. 在 [**專案**] 功能表上，選擇 [ **Dsl 屬性**]。
 
-   您的專案的屬性會出現。
+   專案的屬性隨即出現。
 
 5. 選取 [**應用程式**] 索引標籤。
 
-6. 變更**預設命名空間**屬性設為新的命名空間名稱。
+6. 將 [**預設命名空間**] 屬性變更為新的命名空間名稱。
 
-7. 如果您也想要變更的組件名稱，變更**組件名稱屬性。**
+7. 如果您也想要變更元件的名稱，請變更 [**元件名稱] 屬性。**
 
-8. 如果您已變更的組件名稱，請開啟 DslPackage\Package.tt，並更新這一行：
+8. 如果您已變更元件名稱，請開啟 DslPackage\Package.tt，並更新這一行：
 
    `string dslAssembly = "YourDSLassembly.Dsl.dll";`
 
-9. 如果您已撰寫的自訂程式碼，確定變更程式碼檔案中的命名空間和類別的參考。
+9. 如果您已撰寫任何自訂程式碼，請務必變更程式碼檔案中的命名空間和類別參考。
 
-10. 重設 Visual Studio 實驗執行個體。
+10. 重設 Visual Studio 實驗實例。
 
-    1. 刪除 **\Users\\** _{name}_ **\AppData\Local\Microsoft\VisualStudio\\\*Exp**。
+    1. 刪除 **\Users \\** _{您的名稱}_ **\AppData\Local\Microsoft\VisualStudio \\ \*Exp**。
 
-    2. 在 Windows 上**開始**功能表上，選擇**所有程式** > **Microsoft Visual Studio 2010 SDK** > **工具**  > **重設實驗執行個體**。
+    2. 在 Windows **開始** 功能表上，選擇 **所有程式**， > **Microsoft Visual Studio 2010 SDK**  > **工具**  > **重設實驗實例**。
 
-11. 在 **建置**功能表上，選擇**重建方案**。
+11. 在 [**建立**] 功能表上，選擇 [**重建方案**]。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
-[特定領域語言工具字彙](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+[特定領域語言工具詞彙](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

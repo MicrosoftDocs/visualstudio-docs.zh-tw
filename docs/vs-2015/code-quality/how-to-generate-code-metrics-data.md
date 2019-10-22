@@ -1,5 +1,5 @@
 ---
-title: 作法：產生程式碼度量資料 |Microsoft Docs
+title: 如何：產生程式碼度量資料 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -10,54 +10,54 @@ helpviewer_keywords:
 - generate code metrics results
 ms.assetid: 7bd2c906-ee9c-484a-9550-4cddecc8f042
 caps.latest.revision: 18
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: aeba6a777dd060f310f9cbb8801b2405cd76f6b2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 32e309497a90622f0091d13f6619ac9527d4cfa9
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68201330"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72661285"
 ---
-# <a name="how-to-generate-code-metrics-data"></a>作法：產生程式碼度量資料
+# <a name="how-to-generate-code-metrics-data"></a>如何：產生程式碼度量資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-您可以決定產生整個方案或選取的專案程式碼度量結果。  
-  
- **需求**  
-  
- Visual Studio 企業版  
-  
-### <a name="to-generate-code-metrics-results-for-an-entire-solution"></a>若要產生整個方案的程式碼度量結果  
-  
-- 按一下 [**分析] 功能表**，然後按一下**方案的 CalculateCode 度量**。  
-  
-     \-或-  
-  
-- 在 **方案總管**，以滑鼠右鍵按一下方案，然後按一下**CalculateCode 計量**。  
-  
-     \-或-  
-  
-- 在**程式碼度量結果** 視窗中，按一下**方案的 CalculateCode 度量** 按鈕。  
-  
-     就會產生結果和**程式碼度量結果** 視窗隨即顯示。  
-  
-### <a name="to-generate-code-metrics-results-for-one-or-more-selected-projects"></a>若要產生一個或多個程式碼度量結果中，選取 專案  
-  
-1. 在 [**方案總管] 中**，選取一或多個專案。  
-  
-2. 按一下 **分析**，然後按一下**產生所選專案 (s) 的程式碼度量**。  
-  
-    \-或-  
-  
-    以滑鼠右鍵按一下您的選擇，然後按一下**CalculateCode 計量**。  
-  
-   就會產生結果和**程式碼度量結果** 視窗隨即顯示。  
-  
-### <a name="to-view-the-results-details"></a>若要檢視結果詳細資料  
-  
-- 展開樹狀目錄中的**階層**資料行。  
-  
-## <a name="see-also"></a>另請參閱  
+您可以決定針對整個方案或選取的專案產生程式碼度量結果。
+
+ **Requirements**
+
+ Visual Studio 企業版
+
+### <a name="to-generate-code-metrics-results-for-an-entire-solution"></a>產生整個解決方案的程式碼度量結果
+
+- 按一下 [**分析] 功能表**，然後按一下 [ **CalculateCode 解決方案的計量**]。
+
+     \-或-
+
+- 在**方案總管**中，以滑鼠右鍵按一下方案，然後按一下 [ **CalculateCode 計量**]。
+
+     \-或-
+
+- 在 [程式**代碼計量結果**] 視窗中，按一下 [ **CalculateCode 解決方案的計量**] 按鈕。
+
+     系統會產生結果，並顯示 [程式**代碼度量] 結果**視窗。
+
+### <a name="to-generate-code-metrics-results-for-one-or-more-selected-projects"></a>為一個或多個選取的專案產生程式碼度量結果
+
+1. 在 **方案總管**中，選取一或多個專案。
+
+2. 按一下 [**分析**]，然後按一下 **[為選取的專案產生程式碼計量**]。
+
+    \-或-
+
+    以滑鼠右鍵按一下您的選取專案，然後按一下 [ **CalculateCode 計量**]。
+
+   系統會產生結果，並顯示 [程式**代碼度量] 結果**視窗。
+
+### <a name="to-view-the-results-details"></a>若要查看結果詳細資料
+
+- 展開 [階層] 資料行中的樹狀**結構**。
+
+## <a name="see-also"></a>請參閱
  [測量 Managed 程式碼的複雜度和維護性](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)

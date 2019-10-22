@@ -20,17 +20,17 @@ helpviewer_keywords:
 - Visual Studio, call hierarchy window
 - class view
 - object browser
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 616f62110dbaa18d53b4ecc3cade7737f551e5f9
-ms.sourcegitcommit: a2df993dc5e11c5131dbfcba686f0028a589068f
+ms.openlocfilehash: 0fc7ade360ac586f09eb838057251172be5d0e81
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "71150131"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72647298"
 ---
 # <a name="view-the-structure-of-code-using-different-tool-windows"></a>使用不同的工具視窗來檢視程式碼結構
 
@@ -224,6 +224,6 @@ ms.locfileid: "71150131"
 
 您可以搭配使用 [文件大綱] 視窗與設計工具檢視，例如 XAML 頁面的設計工具或 Windows Forms 設計工具，或搭配 HTML 頁面。 此視窗會以樹狀檢視顯示元素，讓您能夠檢視表單或頁面的邏輯結構，以及尋找深度內嵌或隱藏的控制項。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [類別檢視和物件瀏覽器圖示](../ide/class-view-and-object-browser-icons.md)

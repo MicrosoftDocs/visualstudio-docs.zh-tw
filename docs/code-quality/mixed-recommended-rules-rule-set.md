@@ -2,21 +2,21 @@
 title: 混合建議規則規則集
 ms.date: 11/04/2016
 ms.topic: reference
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4401417aba2055e7b2189db6bf33503668c2a658
-ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
+ms.openlocfilehash: 3f0daaf22f3e944dd76802060c53c64d40a4da04
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "69585326"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72649225"
 ---
 # <a name="mixed-recommended-rules-rule-set"></a>混合建議規則規則集
 
-Microsoft 混合的建議規則著重于您C++的專案中, 支援 Common Language Runtime 的最常見和重大問題, 包括潛在的安全性漏洞、應用程式損毀, 以及其他重要的邏輯和設計錯誤。 此規則集包含[混合最小規則](mixed-minimum-rules-rule-set.md)規則集中的所有規則。
+Microsoft 混合的建議規則著重于您C++的專案中，支援 Common Language Runtime 的最常見和重大問題，包括潛在的安全性漏洞、應用程式損毀，以及其他重要的邏輯和設計錯誤。 此規則集包含[混合最小規則](mixed-minimum-rules-rule-set.md)規則集中的所有規則。
 
 將此規則集包含在您為支援 Common Language Runtime 之C++專案所建立的任何自訂規則集中。
 
@@ -74,7 +74,7 @@ Microsoft 混合的建議規則著重于您C++的專案中, 支援 Common Langua
 |[C6285](../code-quality/c6285.md)|常數的邏輯 Or|
 |[C6286](../code-quality/c6286.md)|非零的邏輯或遺失的副作用|
 |[C6287](../code-quality/c6287.md)|多餘的測試|
-|[C6288](../code-quality/c6288.md)|透過邏輯與的相互包含, 為 False|
+|[C6288](../code-quality/c6288.md)|透過邏輯與的相互包含，為 False|
 |[C6289](../code-quality/c6289.md)|透過邏輯 Or 進行相互排除的條件為 True|
 |[C6290](../code-quality/c6290.md)|邏輯 NOT 位元 AND 優先順序|
 |[C6291](../code-quality/c6291.md)|邏輯 NOT 位元 OR 優先順序|
@@ -96,7 +96,7 @@ Microsoft 混合的建議規則著重于您C++的專案中, 支援 Common Langua
 |[C6317](../code-quality/c6317.md)|不互補|
 |[C6318](../code-quality/c6318.md)|例外狀況繼續搜尋|
 |[C6319](../code-quality/c6319.md)|由逗號忽略|
-|[C6324](../code-quality/c6324.md)|字串複製, 而不是字串比較|
+|[C6324](../code-quality/c6324.md)|字串複製，而不是字串比較|
 |[C6328](../code-quality/c6328.md)|引數類型可能不符|
 |[C6331](../code-quality/c6331.md)|VirtualFree 不正確旗標|
 |[C6332](../code-quality/c6332.md)|VirtualFree 不正確參數|
@@ -127,7 +127,7 @@ Microsoft 混合的建議規則著重于您C++的專案中, 支援 Common Langua
 |[C6518](../code-quality/c6518.md)|不能寫入的緩衝區上的可寫入大小|
 |[C6522](../code-quality/c6522.md)|無效的大小字串類型|
 |[C6525](../code-quality/c6525.md)|無效的大小字串不可能執行到的位置|
-|[C6527](../code-quality/c6527.md)|不正確注釋:' NeedsRelease ' 屬性不可用於 void 類型的值|
+|[C6527](../code-quality/c6527.md)|無效的註釋：'NeedsRelease' 屬性不能用於 void 類型的值|
 |[C6530](../code-quality/c6530.md)|無法辨認的格式字串樣式|
 |[C6540](../code-quality/c6540.md)|在這個函式上使用屬性註釋會使其所有現有的 __declspec 註釋無效。|
 |[C6551](../code-quality/c6551.md)|無效的大小規格: 無法剖析運算式|
@@ -151,37 +151,37 @@ Microsoft 混合的建議規則著重于您C++的專案中, 支援 Common Langua
 |[C28020](../code-quality/c28020.md)|此呼叫的運算式不是 true|
 |[C28021](../code-quality/c28021.md)|所標註的參數必須是指標|
 |[C28022](../code-quality/c28022.md)|此函式上的函式類別不符合用來定義它的 typedef 上的函式類別。|
-|[C28023](../code-quality/c28023.md)|所指派或傳遞的函式應該至少\_有\_一個\_類別的函式類別注釋|
-|[C28024](../code-quality/c28024.md)|要指派給的函式指標會以函式類別標注, 而函式類別不包含在函式類別清單中。|
+|[C28023](../code-quality/c28023.md)|要指派或傳遞的函式應該有至少一個類別的 \_Function \_class \_ 注釋|
+|[C28024](../code-quality/c28024.md)|要指派給的函式指標會以函式類別標注，而函式類別不包含在函式類別清單中。|
 |[C28039](../code-quality/c28039.md)|實際參數的類型應完全符合類型|
 |[C28112](../code-quality/c28112.md)|透過連鎖函式存取的變數必須一律透過連鎖函數存取。|
 |[C28113](../code-quality/c28113.md)|透過連鎖函式存取本機變數|
 |[C28125](../code-quality/c28125.md)|必須從 try/except 區塊內呼叫函式|
-|[C28137](../code-quality/c28137.md)|Variable 引數應該改為 (常值) 常數|
+|[C28137](../code-quality/c28137.md)|Variable 引數應該改為（常值）常數|
 |[C28138](../code-quality/c28138.md)|常數引數應該改為變數|
 |[C28159](../code-quality/c28159.md)|請考慮改用另一個函式。|
 |[C28160](../code-quality/c28160.md)|Error 註釋|
 |[C28163](../code-quality/c28163.md)|絕不能從 try/except 區塊內呼叫函式|
-|[C28164](../code-quality/c28164.md)|正在將引數傳遞至預期物件指標的函式 (不是指標指標)|
+|[C28164](../code-quality/c28164.md)|正在將引數傳遞至預期物件指標的函式（不是指標指標）|
 |[C28182](../code-quality/c28182.md)|取值的指標為 NULL。 指標所包含的 NULL 值與另一個指標相同。|
-|[C28183](../code-quality/c28183.md)|引數可以是一個值, 而是在指標中找到之值的複本。|
+|[C28183](../code-quality/c28183.md)|引數可以是一個值，而是在指標中找到之值的複本。|
 |[C28193](../code-quality/c28193.md)|變數包含必須檢查的值|
-|[C28196](../code-quality/c28196.md)|不滿足需求。 (運算式不會評估為 true)。|
+|[C28196](../code-quality/c28196.md)|不滿足需求。 （運算式不會評估為 true）。|
 |[C28202](../code-quality/c28202.md)|非靜態成員的參考不合法|
 |[C28203](../code-quality/c28203.md)|類別成員的參考模稜兩可。|
-|[C28205](../code-quality/c28205.md)|\_不\_合法的\_內容\_中所使用的成功或\_失敗|
+|[C28205](../code-quality/c28205.md)|\_Success 在不合法的內容中使用 \_ 或 \_On \_failure \_|
 |[C28206](../code-quality/c28206.md)|左運算元指向結構，請使用 '->'|
 |[C28207](../code-quality/c28207.md)|左運算元是結構，請使用 '.'|
 |[C28209](../code-quality/c28209.md)|符號的宣告具有衝突的宣告|
 |[C28210](../code-quality/c28210.md)|_On_failure_ 內容的註釋不能在明確 pre context 中|
 |[C28211](../code-quality/c28211.md)|SAL_context 需要靜態內容名稱|
 |[C28212](../code-quality/c28212.md)|註釋需要指標運算式|
-|[C28213](../code-quality/c28213.md)|[ \_使用\_extended-decl-modifier-seq\_注釋]注釋必須在先前的宣告中用來參考,而不需要修改。\_|
+|[C28213](../code-quality/c28213.md)|@No__t_0Use \_decl \_annotations \_ 注釋必須用來參考先前的宣告，而不需要修改。|
 |[C28214](../code-quality/c28214.md)|屬性參數名稱必須是 p1...p9|
 |[C28215](../code-quality/c28215.md)|typefix 不能套用到已經有 typefix 的參數|
 |[C28216](../code-quality/c28216.md)|checkReturn 註釋只適用於特定函式參數的後置條件。|
 |[C28217](../code-quality/c28217.md)|對於函式，註釋的參數數目不符合檔案中找到的參數數目|
-|[C28218](../code-quality/c28218.md)|針對函式參數, 注釋的參數不符合檔案中找到的|
+|[C28218](../code-quality/c28218.md)|針對函式參數，注釋的參數不符合檔案中找到的|
 |[C28219](../code-quality/c28219.md)|註釋中標註的參數需要列舉的成員|
 |[C28220](../code-quality/c28220.md)|註釋中標註的參數需要整數運算式|
 |[C28221](../code-quality/c28221.md)|註釋中的參數需要字串運算式|
@@ -219,7 +219,7 @@ Microsoft 混合的建議規則著重于您C++的專案中, 支援 Common Langua
 |[C28267](../code-quality/c28267.md)|在函式 (隸屬於註釋) 中找到註釋的語法錯誤。|
 |[C28272](../code-quality/c28272.md)|函式參數的註釋在檢查時，與函式宣告不一致|
 |[C28273](../code-quality/c28273.md)|對於函式，線索與函式宣告不一致|
-|[C28275](../code-quality/c28275.md)|\_宏\_值的\_參數為 null|
+|[C28275](../code-quality/c28275.md)|@No__t_0Macro \_value \_ 的參數為 null|
 |[C28279](../code-quality/c28279.md)|找到符號的 'begin'，但沒有相符的 'end'|
 |[C28280](../code-quality/c28280.md)|找到符號的 'end'，但沒有相符的 'begin'|
 |[C28282](../code-quality/c28282.md)|格式字串必須在前置條件中|
@@ -227,7 +227,7 @@ Microsoft 混合的建議規則著重于您C++的專案中, 支援 Common Langua
 |[C28286](../code-quality/c28286.md)|對於函式，結尾附近發生語法錯誤|
 |[C28287](../code-quality/c28287.md)|函式的 \_At\_() 註釋中有語法錯誤 (無法辨認的參數名稱)|
 |[C28288](../code-quality/c28288.md)|函式的 \_At\_() 註釋中有語法錯誤 (無效的參數名稱)|
-|[C28289](../code-quality/c28289.md)|For function:ReadableTo 或 Writableto 有限沒有做為參數的限制規格|
+|[C28289](../code-quality/c28289.md)|對於函式：ReadableTo 或 WritableTo 沒有有限的規格做為參數|
 |[C28290](../code-quality/c28290.md)|函式的註釋包含比實際參數數目還多的外部|
 |[C28291](../code-quality/c28291.md)|位於 deref 層級 0 的 post null/notnull 對函式是無意義的。|
 |[C28300](../code-quality/c28300.md)|運算子的運算式運算元類型不相容|
@@ -240,65 +240,65 @@ Microsoft 混合的建議規則著重于您C++的專案中, 支援 Common Langua
 |[C28307](../code-quality/c28307.md)|參數上的注釋是 sal|
 |[C28350](../code-quality/c28350.md)|註釋描述了條件不適用的狀況。|
 |[C28351](../code-quality/c28351.md)|註釋描述條件中不可以使用動態值 (變數)。|
-|[CA1001](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md)|具有可處置欄位的類型應該為可處置|
-|[CA1009](../code-quality/ca1009-declare-event-handlers-correctly.md)|事件處理常式必須正確宣告|
-|[CA1016](../code-quality/ca1016-mark-assemblies-with-assemblyversionattribute.md)|組件必須標記 AssemblyVersionAttribute|
-|[CA1033](../code-quality/ca1033-interface-methods-should-be-callable-by-child-types.md)|介面方法應該要可以由子類型呼叫|
-|[CA1049](../code-quality/ca1049-types-that-own-native-resources-should-be-disposable.md)|具有原生資源的類型應該要可呼叫 Dispose 方法明確釋放資源|
-|[CA1060](../code-quality/ca1060-move-p-invokes-to-nativemethods-class.md)|必須將 P/Invokes 移到 NativeMethods 類別|
-|[CA1061](../code-quality/ca1061-do-not-hide-base-class-methods.md)|不要隱藏基底類別方法|
-|[CA1063](../code-quality/ca1063-implement-idisposable-correctly.md)|必須正確實作 IDisposable|
-|[CA1065](../code-quality/ca1065-do-not-raise-exceptions-in-unexpected-locations.md)|不要在非預期的位置中引發例外狀況|
-|[CA1301](../code-quality/ca1301-avoid-duplicate-accelerators.md)|避免使用重複的快速鍵|
-|[CA1400](../code-quality/ca1400-p-invoke-entry-points-should-exist.md)|P/Invoke 進入點應該要存在|
-|[CA1401](../code-quality/ca1401-p-invokes-should-not-be-visible.md)|P/Invokes 不應該為可見的|
-|[CA1403](../code-quality/ca1403-auto-layout-types-should-not-be-com-visible.md)|自動配置類型不應該是 COM 可見|
-|[CA1404](../code-quality/ca1404-call-getlasterror-immediately-after-p-invoke.md)|必須在 P/Invoke 之後立即呼叫 GetLastError|
-|[CA1405](../code-quality/ca1405-com-visible-type-base-types-should-be-com-visible.md)|COM 可見類型的基底類型應該是 COM 可見|
-|[CA1410](../code-quality/ca1410-com-registration-methods-should-be-matched.md)|應該和 COM 註冊方法對應|
-|[CA1415](../code-quality/ca1415-declare-p-invokes-correctly.md)|P/Invokes 必須正確宣告|
-|[CA1821](../code-quality/ca1821-remove-empty-finalizers.md)|必須移除空的完成項|
-|[CA1900](../code-quality/ca1900-value-type-fields-should-be-portable.md)|實值類型欄位應該為可移植的|
-|[CA1901](../code-quality/ca1901-p-invoke-declarations-should-be-portable.md)|P/Invoke 宣告應該為可移植的|
-|[CA2002](../code-quality/ca2002-do-not-lock-on-objects-with-weak-identity.md)|不要鎖定具有弱式識別的物件|
-|[CA2100](../code-quality/ca2100-review-sql-queries-for-security-vulnerabilities.md)|必須檢閱 SQL 查詢中是否有安全性弱點|
-|[CA2101](../code-quality/ca2101-specify-marshaling-for-p-invoke-string-arguments.md)|必須指定 P/Invoke 字串引數的封送處理|
-|[CA2108](../code-quality/ca2108-review-declarative-security-on-value-types.md)|必須檢閱實值類型上的宣告式安全性|
-|[CA2111](../code-quality/ca2111-pointers-should-not-be-visible.md)|指標不應該為可見的|
-|[CA2112](../code-quality/ca2112-secured-types-should-not-expose-fields.md)|受保護類型不應該公開欄位|
-|[CA2114](../code-quality/ca2114-method-security-should-be-a-superset-of-type.md)|方法安全性應該是類型的超集|
-|[CA2116](../code-quality/ca2116-aptca-methods-should-only-call-aptca-methods.md)|APTCA 方法應該只呼叫 APTCA 方法|
-|[CA2117](../code-quality/ca2117-aptca-types-should-only-extend-aptca-base-types.md)|APTCA 類型應該只擴充 APTCA 基底類型|
-|[CA2122](../code-quality/ca2122-do-not-indirectly-expose-methods-with-link-demands.md)|不要間接公開具有連結要求的方法|
-|[CA2123](../code-quality/ca2123-override-link-demands-should-be-identical-to-base.md)|覆寫連結要求應該與基底相同|
-|[CA2124](../code-quality/ca2124-wrap-vulnerable-finally-clauses-in-outer-try.md)|必須將有弱點的 finally 子句包裝在外層 try 中|
-|[CA2126](../code-quality/ca2126-type-link-demands-require-inheritance-demands.md)|必須同時具有類型連結要求和繼承要求|
-|[CA2131](../code-quality/ca2131-security-critical-types-may-not-participate-in-type-equivalence.md)|安全性關鍵類型可能未參與類型等價|
-|[CA2132](../code-quality/ca2132-default-constructors-must-be-at-least-as-critical-as-base-type-default-constructors.md)|預設建構函式至少必須和基底類型的預設建構函式一樣關鍵|
-|[CA2133](../code-quality/ca2133-delegates-must-bind-to-methods-with-consistent-transparency.md)|委派必須繫結至具有一致透明度的方法|
-|[CA2134](../code-quality/ca2134-methods-must-keep-consistent-transparency-when-overriding-base-methods.md)|覆寫基底方法時，方法必須保持一致的透明度|
-|[CA2137](../code-quality/ca2137-transparent-methods-must-contain-only-verifiable-il.md)|透明方法必須只包含可驗證的 IL|
-|[CA2138](../code-quality/ca2138-transparent-methods-must-not-call-methods-with-the-suppressunmanagedcodesecurity-attribute.md)|透明方法不可以使用 SuppressUnmanagedCodeSecurity 屬性呼叫方法|
-|[CA2140](../code-quality/ca2140-transparent-code-must-not-reference-security-critical-items.md)|透明程式碼不可以參考安全性關鍵項目|
-|[CA2141](../code-quality/ca2141-transparent-methods-must-not-satisfy-linkdemands.md)|透明方法不能滿足 Linkdemand|
-|[CA2146](../code-quality/ca2146-types-must-be-at-least-as-critical-as-their-base-types-and-interfaces.md)|類型至少必須和基底類型與介面一樣關鍵|
-|[CA2147](../code-quality/ca2147-transparent-methods-may-not-use-security-asserts.md)|CA2147：透明方法不可以使用安全性判斷提示|
-|[CA2149](../code-quality/ca2149-transparent-methods-must-not-call-into-native-code.md)|透明方法不可以呼叫機器碼|
-|[CA2200](../code-quality/ca2200-rethrow-to-preserve-stack-details.md)|必須重新擲回以保存堆疊詳細資料|
-|[CA2202](../code-quality/ca2202-do-not-dispose-objects-multiple-times.md)|不要多次處置物件的 Dispose 方法|
-|[CA2207](../code-quality/ca2207-initialize-value-type-static-fields-inline.md)|必須將實值類型的靜態欄位內嵌初始化|
-|[CA2212](../code-quality/ca2212-do-not-mark-serviced-components-with-webmethod.md)|不要以 WebMethod 標記 Serviced 元件|
-|[CA2213](../code-quality/ca2213-disposable-fields-should-be-disposed.md)|可處置的欄位應該受到處置|
-|[CA2214](../code-quality/ca2214-do-not-call-overridable-methods-in-constructors.md)|不要呼叫建構函式中的可覆寫方法|
-|[CA2216](../code-quality/ca2216-disposable-types-should-declare-finalizer.md)|可處置的類型應該宣告完成項|
-|[CA2220](../code-quality/ca2220-finalizers-should-call-base-class-finalizer.md)|完成項應該呼叫基底類別完成項|
-|[CA2229](../code-quality/ca2229-implement-serialization-constructors.md)|必須實作序列化建構函式|
-|[CA2231](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md)|在覆寫 ValueType.Equals 上多載等號運算子|
-|[CA2232](../code-quality/ca2232-mark-windows-forms-entry-points-with-stathread.md)|Windows Forms 進入點必須標記 STAThread|
-|[CA2235](../code-quality/ca2235-mark-all-non-serializable-fields.md)|必須標記所有不可序列化的欄位|
-|[CA2236](../code-quality/ca2236-call-base-class-methods-on-iserializable-types.md)|必須呼叫 ISerializable 類型上的基底類別方法|
-|[CA2237](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md)|ISerializable 類型必須標記 SerializableAttribute|
-|[CA2238](../code-quality/ca2238-implement-serialization-methods-correctly.md)|必須正確實作序列化方法|
-|[CA2240](../code-quality/ca2240-implement-iserializable-correctly.md)|必須正確實作 ISerializable|
-|[CA2241](../code-quality/ca2241-provide-correct-arguments-to-formatting-methods.md)|必須提供格式化方法的正確引數|
-|[CA2242](../code-quality/ca2242-test-for-nan-correctly.md)|必須正確測試 NaN|
+|[CA1001 具有](../code-quality/ca1001.md)|具有可處置欄位的類型應該為可處置|
+|[CA1009](../code-quality/ca1009.md)|事件處理常式必須正確宣告|
+|[CA1016](../code-quality/ca1016.md)|組件必須標記 AssemblyVersionAttribute|
+|[CA1033](../code-quality/ca1033.md)|介面方法應該要可以由子類型呼叫|
+|[CA1049](../code-quality/ca1049.md)|具有原生資源的類型應該要可呼叫 Dispose 方法明確釋放資源|
+|[CA1060](../code-quality/ca1060.md)|必須將 P/Invokes 移到 NativeMethods 類別|
+|[CA1061](../code-quality/ca1061.md)|不要隱藏基底類別方法|
+|[CA1063 必須](../code-quality/ca1063.md)|必須正確實作 IDisposable|
+|[CA1065](../code-quality/ca1065.md)|不要在非預期的位置中引發例外狀況|
+|[CA1301](../code-quality/ca1301.md)|避免使用重複的快速鍵|
+|[CA1400](../code-quality/ca1400.md)|P/Invoke 進入點應該要存在|
+|[CA1401](../code-quality/ca1401.md)|P/Invokes 不應該為可見的|
+|[CA1403](../code-quality/ca1403.md)|自動配置類型不應該是 COM 可見|
+|[CA1404 必須](../code-quality/ca1404.md)|必須在 P/Invoke 之後立即呼叫 GetLastError|
+|[CA1405](../code-quality/ca1405.md)|COM 可見類型的基底類型應該是 COM 可見|
+|[CA1410](../code-quality/ca1410.md)|應該和 COM 註冊方法對應|
+|[CA1415](../code-quality/ca1415.md)|P/Invokes 必須正確宣告|
+|[CA1821 必須](../code-quality/ca1821.md)|必須移除空的完成項|
+|[CA1900 實](../code-quality/ca1900.md)|實值類型欄位應該為可移植的|
+|[CA1901](../code-quality/ca1901.md)|P/Invoke 宣告應該為可移植的|
+|[CA2002](../code-quality/ca2002.md)|不要鎖定具有弱式識別的物件|
+|[CA2100 必須](../code-quality/ca2100.md)|必須檢閱 SQL 查詢中是否有安全性弱點|
+|[CA2101 必須](../code-quality/ca2101.md)|必須指定 P/Invoke 字串引數的封送處理|
+|[CA2108](../code-quality/ca2108.md)|必須檢閱實值類型上的宣告式安全性|
+|[CA2111](../code-quality/ca2111.md)|指標不應該為可見的|
+|[CA2112](../code-quality/ca2112.md)|受保護類型不應該公開欄位|
+|[CA2114](../code-quality/ca2114.md)|方法安全性應該是類型的超集|
+|[CA2116](../code-quality/ca2116.md)|APTCA 方法應該只呼叫 APTCA 方法|
+|[CA2117](../code-quality/ca2117.md)|APTCA 類型應該只擴充 APTCA 基底類型|
+|[CA2122](../code-quality/ca2122.md)|不要間接公開具有連結要求的方法|
+|[CA2123](../code-quality/ca2123.md)|覆寫連結要求應該與基底相同|
+|[CA2124](../code-quality/ca2124.md)|必須將有弱點的 finally 子句包裝在外層 try 中|
+|[CA2126](../code-quality/ca2126.md)|必須同時具有類型連結要求和繼承要求|
+|[CA2131](../code-quality/ca2131.md)|安全性關鍵類型可能未參與類型等價|
+|[CA2132](../code-quality/ca2132.md)|預設建構函式至少必須和基底類型的預設建構函式一樣關鍵|
+|[CA2133](../code-quality/ca2133.md)|委派必須繫結至具有一致透明度的方法|
+|[CA2134](../code-quality/ca2134.md)|覆寫基底方法時，方法必須保持一致的透明度|
+|[CA2137](../code-quality/ca2137.md)|透明方法必須只包含可驗證的 IL|
+|[CA2138](../code-quality/ca2138.md)|透明方法不可以使用 SuppressUnmanagedCodeSecurity 屬性呼叫方法|
+|[CA2140](../code-quality/ca2140.md)|透明程式碼不可以參考安全性關鍵項目|
+|[CA2141](../code-quality/ca2141.md)|透明方法不能滿足 Linkdemand|
+|[CA2146](../code-quality/ca2146.md)|類型至少必須和基底類型與介面一樣關鍵|
+|[CA2147](../code-quality/ca2147.md)|CA2147：透明方法不可以使用安全性判斷提示|
+|[CA2149](../code-quality/ca2149.md)|透明方法不可以呼叫機器碼|
+|[CA2200](../code-quality/ca2200.md)|必須重新擲回以保存堆疊詳細資料|
+|[CA2202](../code-quality/ca2202.md)|不要多次處置物件的 Dispose 方法|
+|[CA2207](../code-quality/ca2207.md)|必須將實值類型的靜態欄位內嵌初始化|
+|[CA2212](../code-quality/ca2212.md)|不要以 WebMethod 標記 Serviced 元件|
+|[CA2213](../code-quality/ca2213.md)|可處置的欄位應該受到處置|
+|[CA2214](../code-quality/ca2214.md)|不要呼叫建構函式中的可覆寫方法|
+|[CA2216](../code-quality/ca2216.md)|可處置的類型應該宣告完成項|
+|[CA2220](../code-quality/ca2220.md)|完成項應該呼叫基底類別完成項|
+|[CA2229](../code-quality/ca2229.md)|必須實作序列化建構函式|
+|[CA2231](../code-quality/ca2231.md)|在覆寫 ValueType.Equals 上多載等號運算子|
+|[CA2232](../code-quality/ca2232.md)|Windows Forms 進入點必須標記 STAThread|
+|[CA2235 必須](../code-quality/ca2235.md)|必須標記所有不可序列化的欄位|
+|[CA2236 必須](../code-quality/ca2236.md)|必須呼叫 ISerializable 類型上的基底類別方法|
+|[CA2237 必須](../code-quality/ca2237.md)|ISerializable 類型必須標記 SerializableAttribute|
+|[CA2238](../code-quality/ca2238.md)|必須正確實作序列化方法|
+|[CA2240 必須](../code-quality/ca2240.md)|必須正確實作 ISerializable|
+|[CA2241 必須](../code-quality/ca2241.md)|必須提供格式化方法的正確引數|
+|[CA2242 必須](../code-quality/ca2242.md)|必須正確測試 NaN|

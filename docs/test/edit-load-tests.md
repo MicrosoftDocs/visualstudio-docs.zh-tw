@@ -6,15 +6,15 @@ helpviewer_keywords:
 - Load Test Editor
 - load tests, Load Test Editor
 ms.assetid: ba16ed02-137e-40bf-a4cb-45d87d922d37
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 130f7296985aa5c5e6115cd3e61b00efd90f25c7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 65cfdde84e0a0e2bb1aa28e9d4b96e2505a93a57
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62784035"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72665029"
 ---
 # <a name="edit-load-tests"></a>編輯負載測試
 
@@ -28,7 +28,7 @@ ms.locfileid: "62784035"
 
 ## <a name="software-requirements"></a>軟體需求
 
-只有 Visual Studio Enterprise 版中可以使用 Web 效能和負載測試專案。
+只有 Visual Studio Enterprise 版可以使用 Web 效能和負載測試專案。
 
 ## <a name="edit-load-test-scenario-settings"></a>編輯負載測試情節設定
 
@@ -48,7 +48,7 @@ ms.locfileid: "62784035"
 
 如需詳細資訊，請參閱[設定負載測試回合設定](../test/configure-load-test-run-settings.md)和[負載測試回合設定屬性](../test/load-test-run-settings-properties.md)。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [分析負載測試結果](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
 - [分析臨界值規則違規](../test/analyze-threshold-rule-violations-in-load-tests.md)

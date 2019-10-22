@@ -1,5 +1,5 @@
 ---
-title: IDebugStackFrame::GetLanguageString |Microsoft Docs
+title: IDebugStackFrame：： GetLanguageString |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cab0c0ab317754305ca2440748dd680e31750d8a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 83abb038cd8bc018d84cd0c5ddd2a413f8a02248
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62934658"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576762"
 ---
 # <a name="idebugstackframegetlanguagestring"></a>IDebugStackFrame::GetLanguageString
-傳回語言簡短或長時間的文字描述。  
+傳回語言的簡短或長文字描述。  
   
 ## <a name="syntax"></a>語法  
   
@@ -38,10 +38,10 @@ HRESULT GetLanguageString(
   
 #### <a name="parameters"></a>參數  
  `fLong`  
- [in]旗標，其中`TRUE`傳回的詳細描述和`FALSE`傳回的簡短描述。  
+ 在旗標，其中 `TRUE` 會傳回完整的描述，而 `FALSE` 會傳回簡短的描述。  
   
  `pbstrLanguage`  
- [out]語言的說明。  
+ 脫銷語言的描述。  
   
 ## <a name="return-value"></a>傳回值  
  方法會傳回 `HRESULT`。 可能的值包括 (但不限於) 下表中的這些值。  
@@ -51,7 +51,7 @@ HRESULT GetLanguageString(
 |`S_OK`|方法成功。|  
   
 ## <a name="remarks"></a>備註  
- 一般而言，如果`fLong`是`FALSE`，這個方法會提供與堆疊框架相關聯之語言的名稱。 當`fLong`是`TRUE`，這個方法可能會提供完整的產品描述。  
+ 一般來說，如果 `FALSE` `fLong`，這個方法只會提供與堆疊框架相關聯的語言名稱。 當 `fLong` `TRUE` 時，這個方法可能會提供完整的產品描述。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDebugStackFrame 介面](../../winscript/reference/idebugstackframe-interface.md)

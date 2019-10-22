@@ -1,6 +1,6 @@
 ---
 title: EditorConfig 的 .NET 語言慣例
-ms.date: 07/17/2019
+ms.date: 09/23/2019
 ms.topic: reference
 dev_langs:
 - CSharp
@@ -13,22 +13,23 @@ manager: jillfra
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 2231d3637b4a016d1da783d65d4237b9f5d6bab2
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
-ms.translationtype: HT
+ms.openlocfilehash: e4f49df2c775bc3bb95888d76da133898ab9c76e
+ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69551413"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71186516"
 ---
 # <a name="language-conventions"></a>語言慣例
 
 Visual Studio 中 EditorConfig 的語言慣例分為兩類：適用於 Visual Basic 和 C# 的語言慣例，以及 C# 特定的語言慣例。 語言慣例會影響程式設計語言各個層面的使用方式，例如修飾詞和括弧。
 
 > [!TIP]
-> - 請使用**本文內容**連結以跳至頁面的不同章節。
 > - 若要查看慣用程式設計語言的程式碼範例，請使用瀏覽器視窗右上角的語言選擇器選擇它。
 >
 >   ![程式碼語言選擇器控制項](media/code-language-picker.png)
+>
+> - 請使用**本文內容**連結以跳至頁面的不同章節。
 
 ## <a name="rule-format"></a>規則格式
 
@@ -36,19 +37,48 @@ Visual Studio 中 EditorConfig 的語言慣例分為兩類：適用於 Visual Ba
 
 `option_name = value:severity`
 
-您可以針對每個語言慣例，指定一個定義是否有偏好的樣式和偏好樣式使用時機的值。 許多規則接受 `true` 值 (喜歡此樣式) 或 `false` (不喜歡此樣式)；其他則接受像 `when_on_single_line` 或 `never` 這樣的值。 第二個部分、指定 [嚴重性]  的規則。
+您可以針對每個語言慣例，指定一個定義是否有偏好的樣式和偏好樣式使用時機的值。 許多規則都`true`接受值（偏好使用此樣式）或`false` （不偏好使用此樣式）。 其他規則接受諸如`when_on_single_line`或`never`之類的值。 第二個部分、指定 [[嚴重性]](#severity-levels) 的規則。
 
-### <a name="severity"></a>Severity
+::: moniker range=">=vs-2019"
+
+> [!NOTE]
+> 因為分析器會強制語言慣例，所以您也可以流量分析器的預設設定語法來設定其嚴重性。 語法採用的格式`dotnet_diagnostic.<rule ID>.severity = <severity>`為`dotnet_diagnostic.IDE0040.severity = silent`，例如。 如需詳細資訊，請參閱[在 EditorConfig 檔案中設定規則嚴重性](../code-quality/use-roslyn-analyzers.md#set-rule-severity-in-an-editorconfig-file)。
+
+::: moniker-end
+
+## <a name="severity-levels"></a>嚴重性層級
 
 語言慣例嚴重性可指定要強制執行該樣式的層級。 下表列出可能的嚴重性值及其效果：
 
 Severity | 作用
 :------- | ------
-`none` | 違反這項規則時，不向使用者顯示任何內容。 但程式碼產生功能會以此樣式產生程式碼。 嚴重性為 `none` 的規則永遠不會出現在 [快速動作及重構]  功能表中。 在大部分情況下，這會視為「已停用」或「已忽略」。
-`silent` (和 Visual Studio 2017 15.8 版和更新版本中的 `refactoring`) | 違反這項規則時，不向使用者顯示任何內容。 但程式碼產生功能會以此樣式產生程式碼。 `silent` 嚴重性的規則會影響清理，也會顯示在 [快速動作與重構]  功能表中。
-`suggestion` | 當違反這個樣式規則時，會向使用者顯示建議。 建議會顯示為前兩個字元下的三個灰點。
-`warning` | 違反此樣式規則時，顯示編譯器警告。
 `error` | 違反此樣式規則時，顯示編譯器錯誤。
+`warning` | 違反此樣式規則時，顯示編譯器警告。
+`suggestion` | 當違反這個樣式規則時，會向使用者顯示建議。 建議會顯示為前兩個字元下的三個灰點。
+`silent` | 違反這項規則時，不向使用者顯示任何內容。 但程式碼產生功能會以此樣式產生程式碼。 嚴重性為`silent`的規則會參與清除，並出現在 [**快速動作與重構**] 功能表中。
+`none` | 違反這項規則時，不向使用者顯示任何內容。 但程式碼產生功能會以此樣式產生程式碼。 嚴重性為 `none` 的規則永遠不會出現在 [快速動作及重構] 功能表中。 在大部分情況下，這會視為「已停用」或「已忽略」。
+
+::: moniker range=">=vs-2019"
+
+## <a name="automatically-configure-code-styles"></a>自動設定程式碼樣式
+
+從 Visual Studio 2019 16.3 版開始，您可以在發生樣式違規之後，從 [[快速動作](quick-actions.md)] 燈泡功能表設定程式碼樣式規則。
+
+若要變更程式碼樣式慣例：
+
+1. 將滑鼠停留在編輯器中的波浪線上，然後開啟顯示的燈泡功能表。 選擇 [**設定] 或 [隱藏問題** > ] [**設定\<規則識別碼 > 程式碼樣式**]。
+
+   ![從 Visual Studio 中的燈泡功能表設定程式碼樣式](media/vs-2019/configure-code-style.png)
+
+2. 從該處選擇其中一個程式碼樣式選項。
+
+   ![設定程式碼樣式設定](media/vs-2019/configure-code-style-setting.png)
+
+   Visual Studio 在 EditorConfig 檔案中新增或修改設定，如 [預覽] 方塊所示。
+
+若要變更程式碼樣式違規的嚴重性，請遵循相同的步驟，但選擇 [**設定\<規則識別碼 > 嚴重性**]，而不是 [**設定\<規則識別碼 > 程式碼樣式**]。 如需詳細資訊，請參閱[自動設定規則嚴重性](../code-quality/use-roslyn-analyzers.md#automatically-configure-rule-severity)。
+
+::: moniker-end
 
 ## <a name="net-code-style-settings"></a>.NET 程式碼樣式設定
 
@@ -91,7 +121,7 @@ Severity | 作用
 
 此樣式規則可以套用到欄位、屬性、方法或事件。 **true** 值表示希望程式碼符號在 C# 中以 `this.` 開頭或在 Visual Basic 中以 `Me.` 開頭。 **false** 值表示希望程式碼項目前面_不_要加上 `this.` 或 `Me.`。
 
-這些規則可能會出現在 .editorconfig  檔案中，如下所示：
+這些規則可能會出現在 .editorconfig 檔案中，如下所示：
 
 ```ini
 # CSharp and Visual Basic code style settings:
@@ -109,7 +139,7 @@ dotnet_style_qualification_for_event = false:suggestion
 | **規則名稱** | dotnet_style_qualification_for_field |
 | **規則識別碼** | IDE0003 和 IDE0009 |
 | **適用語言** | C# 和 Visual Basic |
-| **值** | `true` - 希望欄位在 C# 中以 `this.` 開頭，或在 Visual Basic 中以 `Me.` 開頭<br /><br />`false` - 希望欄位「不」  以 `this.` 或 `Me.` 開頭 |
+| **值** | `true` - 希望欄位在 C# 中以 `this.` 開頭，或在 Visual Basic 中以 `Me.` 開頭<br /><br />`false` - 希望欄位「不」以 `this.` 或 `Me.` 開頭 |
 | **Visual Studio 預設值** | `false:silent` |
 
 程式碼範例：
@@ -137,7 +167,7 @@ capacity = 0
 | **規則名稱** | dotnet_style_qualification_for_property |
 | **規則識別碼** | IDE0003 和 IDE0009 |
 | **適用語言** | C# 和 Visual Basic |
-| **值** | `true` - 希望屬性在 C# 中以 `this.` 開頭，或在 Visual Basic 中以 `Me.` 開頭<br /><br />`false` - 希望屬性「不」  以 `this.` 或 `Me.` 開頭 |
+| **值** | `true` - 希望屬性在 C# 中以 `this.` 開頭，或在 Visual Basic 中以 `Me.` 開頭<br /><br />`false` - 希望屬性「不」以 `this.` 或 `Me.` 開頭 |
 | **Visual Studio 預設值** | `false:silent` |
 
 程式碼範例：
@@ -165,7 +195,7 @@ ID = 0
 | **規則名稱** | dotnet_style_qualification_for_method |
 | **規則識別碼** | IDE0003 和 IDE0009 |
 | **適用語言** | C# 和 Visual Basic |
-| **值** | `true` - 希望方法在 C# 中以 `this.` 開頭，或在 Visual Basic 中以 `Me.` 開頭。<br /><br />`false` - 希望方法「不」  以 `this.` 或 `Me.` 開頭。 |
+| **值** | `true` - 希望方法在 C# 中以 `this.` 開頭，或在 Visual Basic 中以 `Me.` 開頭。<br /><br />`false` - 希望方法「不」以 `this.` 或 `Me.` 開頭。 |
 | **Visual Studio 預設值** | `false:silent` |
 
 程式碼範例：
@@ -193,7 +223,7 @@ Display()
 | **規則名稱** | dotnet_style_qualification_for_event |
 | **規則識別碼** | IDE0003 和 IDE0009 |
 | **適用語言** | C# 和 Visual Basic |
-| **值** | `true` - 希望事件在 C# 中以 `this.` 開頭，或在 Visual Basic 中以 `Me.` 開頭。<br /><br />`false` - 希望事件「不」  以 `this.` 或 `Me.` 開頭。 |
+| **值** | `true` - 希望事件在 C# 中以 `this.` 開頭，或在 Visual Basic 中以 `Me.` 開頭。<br /><br />`false` - 希望事件「不」以 `this.` 或 `Me.` 開頭。 |
 | **Visual Studio 預設值** | `false:silent` |
 
 程式碼範例：
@@ -218,7 +248,7 @@ AddHandler Elapsed, AddressOf Handler
 
 此樣式規則可以套用至本機變數、方法參數和類別成員，或作為類型成員存取運算式的不同規則。 值為 **true** 表示偏好語言關鍵字 (例如 `int` 或 `Integer`) 而不是以關鍵字代表型別的型別名稱 (例如 `Int32`)。 值為 **false** 表示偏好類型名稱，而不是語言關鍵字。
 
-這些規則可能會出現在 .editorconfig  檔案中，如下所示：
+這些規則可能會出現在 .editorconfig 檔案中，如下所示：
 
 ```ini
 # CSharp and Visual Basic code style settings:
@@ -287,7 +317,7 @@ Dim local = Int32.MaxValue
 
 本節中的樣式規則與修飾詞喜好設定有關，包括要求存取範圍修飾詞、指定所需的修飾詞排序次序和要求唯讀修飾詞。
 
-這些規則可能會出現在 .editorconfig  檔案中，如下所示：
+這些規則可能會出現在 .editorconfig 檔案中，如下所示：
 
 ```ini
 # CSharp and Visual Basic code style settings:
@@ -411,7 +441,7 @@ End Class
 
 本節中的樣式規則與括號喜好設定有關，包括對於算數、關係及其他二元運算子的括號用法。
 
-這些規則可能會出現在 .editorconfig  檔案中，如下所示：
+這些規則可能會出現在 .editorconfig 檔案中，如下所示：
 
 ```ini
 # CSharp and Visual Basic code style settings:
@@ -542,7 +572,7 @@ Dim v = a.b.Length
 
 本節中的樣式規則涉及運算式層級喜好設定，包括使用物件初始設定式、集合初始設定式、明確或推斷的 Tuple 名稱，以及推斷的匿名類型。
 
-這些規則可能會出現在 .editorconfig  檔案中，如下所示：
+這些規則可能會出現在 .editorconfig 檔案中，如下所示：
 
 ```ini
 # CSharp and Visual Basic code style settings:
@@ -565,7 +595,7 @@ dotnet_style_prefer_compound_assignment = true:suggestion
 | **規則名稱** | dotnet_style_object_initializer |
 | **規則識別碼** | IDE0017 |
 | **適用語言** | C# 和 Visual Basic |
-| **值** | `true` - 偏好盡可能使用物件初始設定式來初始化物件<br /><br />`false` - 偏好「不」  使用物件初始設定式來初始化物件 |
+| **值** | `true` - 偏好盡可能使用物件初始設定式來初始化物件<br /><br />`false` - 偏好「不」使用物件初始設定式來初始化物件 |
 | **Visul Studio 預設值** | `true:suggestion` |
 
 程式碼範例：
@@ -595,7 +625,7 @@ c.Age = 21
 | **規則名稱** | dotnet_style_collection_initializer |
 | **規則識別碼** | IDE0028 |
 | **適用語言** | C# 和 Visual Basic |
-| **值** | `true` - 偏好盡可能使用集合初始設定式來初始化集合<br /><br />`false` - 偏好「不」  使用集合初始設定式來初始化集合 |
+| **值** | `true` - 偏好盡可能使用集合初始設定式來初始化集合<br /><br />`false` - 偏好「不」使用集合初始設定式來初始化集合 |
 | **Visul Studio 預設值** | `true:suggestion` |
 
 程式碼範例：
@@ -904,7 +934,7 @@ x = x + 1
 
 本節中的樣式規則涉及 null 檢查喜好設定。
 
-這些規則可能會出現在 .editorconfig  檔案中，如下所示：
+這些規則可能會出現在 .editorconfig 檔案中，如下所示：
 
 ```ini
 # CSharp and Visual Basic code style settings:
@@ -984,7 +1014,7 @@ Dim v = If(o IsNot Nothing, o.ToString(), Nothing)
 
 本節中的品質規則涉及方法參數。
 
-這些規則可能會出現在 .editorconfig  檔案中，如下所示：
+這些規則可能會出現在 .editorconfig 檔案中，如下所示：
 
 ```ini
 # CSharp and Visual Basic code quality settings:
@@ -1071,7 +1101,7 @@ End Function
 
 本節中的樣式規則是關於使用 [var](/dotnet/csharp/language-reference/keywords/var) 關鍵字與變數宣告中的明確類型。 當類型顯然位於其他位置時，這項規則可以分別套用至內建類型。
 
-Editorconfig  檔案範例︰
+Editorconfig檔案範例︰
 
 ```ini
 # CSharp code style settings:
@@ -1145,7 +1175,7 @@ bool f = this.Init();
 
 本節中的樣式規則是關於當邏輯由單一運算式組成時，使用[運算式主體成員](/dotnet/csharp/programming-guide/statements-expressions-operators/expression-bodied-members)。 此規則可套用至方法、建構函式、運算子、屬性、索引子及存取子。
 
-Editorconfig  檔案範例︰
+Editorconfig檔案範例︰
 
 ```ini
 # CSharp code style settings:
@@ -1338,7 +1368,7 @@ void M()
 
 本節中的樣式規則是關於在 C# 中使用[模式比對](/dotnet/csharp/pattern-matching)。
 
-Editorconfig  檔案範例︰
+Editorconfig檔案範例︰
 
 ```ini
 # CSharp code style settings:
@@ -1413,7 +1443,7 @@ int i;
 if (int.TryParse(value, out i) {...}
 ```
 
-Editorconfig  檔案範例︰
+Editorconfig檔案範例︰
 
 ```ini
 # CSharp code style settings:
@@ -1425,7 +1455,7 @@ csharp_style_inlined_variable_declaration = true:suggestion
 
 本節中的樣式規則涉及算式層級喜好設定。
 
-Editorconfig  檔案範例︰
+Editorconfig檔案範例︰
 
 ```ini
 # CSharp code style settings:
@@ -1459,7 +1489,7 @@ void DoWork(CancellationToken cancellationToken = default(CancellationToken)) { 
 
 這些樣式規則是關於 `null` 檢查的語法，包括使用 `throw` 運算式或 `throw` 陳述式，以及叫用 [lambda 運算式](/dotnet/csharp/lambda-expressions)時要執行 null 檢查還是使用條件式聯合運算子 (`?.`)。
 
-Editorconfig  檔案範例︰
+Editorconfig檔案範例︰
 
 ```ini
 # CSharp code style settings:
@@ -1513,7 +1543,7 @@ if (func != null) { func(args); }
 
 這個樣式規則是有關使用大括弧 `{ }` 括住程式碼區塊。
 
-Editorconfig  檔案範例︰
+Editorconfig檔案範例︰
 
 ```ini
 # CSharp code style settings:
@@ -1545,7 +1575,7 @@ if (test) this.Display();
 
 這些樣式規則涉及未使用的運算式和值指派。
 
-Editorconfig  檔案範例︰
+Editorconfig檔案範例︰
 
 ```ini
 # CSharp code style settings:
@@ -1611,7 +1641,7 @@ int GetCount(Dictionary<string, int> wordCount, string searchWord)
 
 這些樣式規則涉及使用 C# 8.0 和更新版本中可用的索引和範圍運算子。
 
-Editorconfig  檔案範例︰
+Editorconfig檔案範例︰
 
 ```ini
 # CSharp code style settings:
@@ -1668,7 +1698,7 @@ var sub = sentence.Substring(0, sentence.Length - 4);
 
 本節包含其他樣式規則。
 
-Editorconfig  檔案範例︰
+Editorconfig檔案範例︰
 
 ```ini
 # CSharp code style settings:
@@ -1808,7 +1838,7 @@ void M()
 | **規則名稱** | csharp_prefer_simple_using_statement |
 | **規則識別碼** | IDE0063 |
 | **適用語言** | C# 8.0+ |
-| **值** | `true` - 偏好使用「簡單的」  `using` 陳述式<br /><br />`false` - 不偏好使用「簡單的」  `using` 陳述式 |
+| **值** | `true` - 偏好使用「簡單的」`using` 陳述式<br /><br />`false` - 不偏好使用「簡單的」`using` 陳述式 |
 | **Visul Studio 預設值** | `true:suggestion` |
 
 程式碼範例：

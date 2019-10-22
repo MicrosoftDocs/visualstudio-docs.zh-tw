@@ -1,7 +1,7 @@
 ---
 title: 更新網路型安裝
 description: 了解如何使用 --layout 命令來更新網路型 Visual Studio 安裝
-ms.date: 03/30/2019
+ms.date: 10/07/2019
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: fd7277c4c42856ceea5e4da0a45d54613bf66c74
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 2157a6142f95b6ffe34503a8ee80419fcb9ca506
+ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62971364"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72018820"
 ---
 # <a name="update-a-network-based-installation-of-visual-studio"></a>更新 Visual Studio 的網路型安裝
 
@@ -42,7 +42,7 @@ ms.locfileid: "62971364"
 
 ::: moniker-end
 
-如果您在檔案共用上裝載配置，則應該更新該配置的私人複本 (例如 c:\vsoffline)，然後在下載所有已更新的內容之後，將該複本複製到檔案共用 (例如 \\server\products\VS)。 如果不這麼做，則在您更新配置時執行安裝程式的任何使用者，都很有可能無法取得配置的所有內容，因為配置尚未完全更新。
+如果您在檔案共用上裝載配置，則應該更新配置的私用複本（例如 c:\VSLayout），然後在下載所有更新的內容之後，將它複製到您的檔案共用（例如，\\server \ products \ VS）。 如果不這麼做，則在您更新配置時執行安裝程式的任何使用者，都很有可能無法取得配置的所有內容，因為配置尚未完全更新。
 
 讓我們以一些範例來逐步解說如何在建立後更新配置：
 

@@ -1,19 +1,19 @@
 ---
-title: XSD 範例檔：簡單結構描述
+title: 範例 XSD 檔案：簡單結構描述
 ms.date: 11/04/2016
 ms.topic: sample
 ms.assetid: f7e1dde1-b4f6-4371-add4-935b68ec77d7
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0228ab75da15099aad3a6f60feca3d71f644b4ff
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
-ms.translationtype: HT
+ms.openlocfilehash: 0b6681e47ba33d16cd48f5f34389a5d113fc36ef
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65455082"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72651164"
 ---
 # <a name="sample-xsd-file-simple-schema"></a>範例 XSD 檔案：簡單結構描述
 

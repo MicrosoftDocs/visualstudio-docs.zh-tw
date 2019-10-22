@@ -3,17 +3,17 @@ title: 使用著色器
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 6b2ea1ed-b995-4e75-af19-c68fd37a3bc5
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d1f07b293447a10a7d39e24ef42b1faedc27c7d6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 4b3d2c6c745f17bbada918128fed852249e3024d
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62892399"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72633775"
 ---
 # <a name="work-with-shaders"></a>使用著色器
 
@@ -35,8 +35,8 @@ ms.locfileid: "62892399"
 
 ## <a name="related-topics"></a>相關主題
 
-|標題|說明|
+|標題|描述|
 |-----------|-----------------|
 |[著色器設計工具](../designers/shader-designer.md)|描述如何使用 Visual Studio 著色器設計工具，搭配著色器一起運作。|
 |[著色器設計工具節點](../designers/shader-designer-nodes.md)|探討您可用來達成圖形效果的「著色器設計工具」節點類型。|
-|[著色器設計工具範例](../designers/shader-designer-examples.md)|提供示範如何使用「著色器設計工具」來達成常見圖形效果的主題連結。|
+|[著色器設計工具範例](../designers/how-to-create-a-basic-color-shader.md)|提供示範如何使用「著色器設計工具」來達成常見圖形效果的主題連結。|

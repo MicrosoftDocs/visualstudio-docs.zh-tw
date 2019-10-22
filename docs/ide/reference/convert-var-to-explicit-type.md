@@ -2,19 +2,19 @@
 title: 重構程式碼以將 var 取代為明確類型
 ms.date: 05/15/2018
 ms.topic: reference
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2708bca578b613fac77e9b8ce77b1b2aff8f0945
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 566d064ac0ac1b9c48ee8e75697cef39b2ec4ee1
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62968144"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72661680"
 ---
 # <a name="refactoring-to-replace-var-with-an-explicit-type"></a>重構以將 var 取代為明確類型
 
@@ -38,13 +38,13 @@ ms.locfileid: "62968144"
 
 1. 將插入號放在 `var` 關鍵字上。
 
-1. 在字行任何地方按 **Ctrl**+**.**， 或按一下程式碼檔案邊界的螺絲起子 ![螺絲起子圖示](../media/screwdriver-icon.png) 圖示。
+1. 在字行任何地方按 **Ctrl**+ **.** ， 或按一下程式碼檔案邊界的螺絲起子 ![螺絲起子圖示](../media/screwdriver-icon.png) 圖示。
 
    ![使用明確類型快速動作功能表](media/use-explicit-type.png)
 
 1. 選取 [使用明確類型]。 或選取 [預覽變更] 以開啟 [[預覽變更]](../../ide/preview-changes.md) 對話方塊，然後選取 [套用]。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [隱含類型變數 (C#)](/dotnet/csharp/programming-guide/classes-and-structs/implicitly-typed-local-variables)
 - [重構](../refactoring-in-visual-studio.md)

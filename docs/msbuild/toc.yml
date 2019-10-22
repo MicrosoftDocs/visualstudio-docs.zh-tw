@@ -34,7 +34,7 @@
               href: how-to-display-an-item-list-separated-with-commas.md
             - name: 項目定義
               href: item-definitions.md
-            - name: 項目函式
+            - name: Item 函式
               href: item-functions.md
         - name: 目標
           items:
@@ -292,6 +292,8 @@
               href: taskextension-base-class.md
             - name: ToolTaskExtension 基底類別
               href: tooltaskextension-base-class.md
+            - name: 診斷工作失敗
+              href: diagnosing-task-failures.md
             - name: AL (組件連結器) 工作
               href: al-assembly-linker-task.md
             - name: AspNetCompiler 工作

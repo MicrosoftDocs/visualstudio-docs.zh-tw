@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentTextEvents::onInsertText | Microsoft Docs
+title: IDebugDocumentTextEvents：： onInsertText |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4f7f40178d64aaf654850ea54fafee65bc0a1c51
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c926caf8ff99cf183e41b2caf825aa828fb60de4
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62946722"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572915"
 ---
 # <a name="idebugdocumenttexteventsoninserttext"></a>IDebugDocumentTextEvents::onInsertText
-指出文件中已加入新的文字。  
+表示新文字已加入檔中。  
   
 ## <a name="syntax"></a>語法  
   
@@ -38,10 +38,10 @@ HRESULT onInsertText(
   
 #### <a name="parameters"></a>參數  
  `cCharacterPosition`  
- [in]插入新的文字字元位置。  
+ 在插入新文字的字元位置。  
   
  `cNumToInsert`  
- [in]已插入的字元數。  
+ 在已插入的字元數。  
   
 ## <a name="return-value"></a>傳回值  
  方法會傳回 `HRESULT`。 可能的值包括 (但不限於) 下表中的這些值。  
@@ -51,8 +51,8 @@ HRESULT onInsertText(
 |`S_OK`|方法成功。|  
   
 ## <a name="remarks"></a>備註  
- 這個方法通常稱為漸進式載入的主機內容，例如網頁瀏覽器。  
+ 這個方法通常是由會逐漸載入內容的主控制項所呼叫，例如網頁瀏覽器。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDebugDocumentTextEvents 介面](../../winscript/reference/idebugdocumenttextevents-interface.md)   
  [IDebugDocumentTextEvents::onRemoveText](../../winscript/reference/idebugdocumenttextevents-onremovetext.md)

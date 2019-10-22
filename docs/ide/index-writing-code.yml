@@ -1,0 +1,63 @@
+### YamlMime:Landing
+title: 編輯 Visual Studio 中的程式碼
+summary: 瞭解如何編輯工作，例如開啟專案、使用程式碼編輯器功能，以及維護一致的程式碼樣式。
+metadata:
+  title: 程式碼編輯器功能
+  description: 瞭解 Visual Studio 中的程式碼編輯功能。
+  ms.prod: visual-studio-windows
+  ms.technology: vs-ide-general
+  ms.topic: landing-page
+  author: gewarren
+  ms.author: gewarren
+  ms.date: 10/15/2019
+  ms.openlocfilehash: 30345839ca1c5f4f07b3c36415f7aad277693069
+  ms.sourcegitcommit: 6244689e742e551e7b6933959bd42df56928ece3
+  ms.translationtype: MT
+  ms.contentlocale: zh-TW
+  ms.lasthandoff: 10/17/2019
+  ms.locfileid: "72516822"
+landingContent:
+- title: 開啟或建立專案
+  linkLists:
+  - linkListType: tutorial
+    links:
+    - text: 建立新專案
+      url: create-new-project.md
+    - text: 從存放庫開啟專案
+      url: ../get-started/tutorial-open-project-from-repo.md
+  - linkListType: how-to-guide
+    links:
+    - text: 使用 Visual Studio 而不使用專案或方案
+      url: develop-code-in-visual-studio-without-projects-or-solutions.md
+- title: 使用編輯功能
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: 使用程式碼編輯器
+      url: writing-code-in-the-code-and-text-editor.md
+    - text: 巡覽程式碼
+      url: navigating-code.md
+    - text: 產生及修正程式嗎
+      url: code-generation-in-visual-studio.md
+    - text: 使用 IntelliSense 來完成程式碼
+      url: using-intellisense.md
+    - text: 管理程式碼樣式喜好設定
+      url: code-styles-and-code-cleanup.md
+    - text: 程式碼分析
+      url: ../code-quality/roslyn-analyzers-overview.md
+    - text: IntelliCode
+      url: /visualstudio/intellicode/intellicode-visual-studio
+- title: 開始使用程式設計語言
+  linkLists:
+  - linkListType: tutorial
+    links:
+    - text: Visual Studio 中的 C# 和 ASP.NET Core 使用者入門
+      url: tutorial-csharp-aspnet-core.md
+    - text: 在 Visual Studio 中建立 C++ 主控台應用程式
+      url: /cpp/get-started/tutorial-console-cpp
+    - text: Visual Studio 中的 Python 使用者入門
+      url: quickstart-python.md
+    - text: 使用 Visual Basic 建立主控台應用程式
+      url: quickstart-visual-basic-console.md
+    - text: 使用 Node.js 建立 Web 應用程式
+      url: quickstart-nodejs.md

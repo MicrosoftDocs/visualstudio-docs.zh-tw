@@ -9,12 +9,12 @@ ms.topic: landing-page
 ms.technology: vs-ide-mobile
 ms.workload:
 - apexprodleads
-ms.openlocfilehash: f52b537a5e6a02dbaccb02f275c380d0ec355fdf
-ms.sourcegitcommit: d4920babfc3d24a3fe1d4bf446ed3fe73b344467
+ms.openlocfilehash: 237c2012dc1e96e294ffae2745933f63bbbca95b
+ms.sourcegitcommit: 8a96a65676fd7a2a03b0803d7eceae65f3fa142b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "67160128"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72589077"
 ---
 # <a name="mobile-development-with-c-documentation"></a>使用 C++ 進行行動裝置開發文件
 
@@ -30,11 +30,11 @@ ms.locfileid: "67160128"
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/common/i_setup.svg" alt="Set up Visual C++ for cross-platform mobile apps">
+                            <img src="/media/common/i_setup.svg" alt="Set up Visual Studio for cross-platform mobile app development with C++">
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>安裝適用於跨平台行動裝置開發的 Visual C++</h3>
+                        <h3>安裝 C++ 的跨平台行動裝置應用程式開發</h3>
                         <p>設定建置跨平台行動應用程式所需的工具。</p>
                     </div>
                 </div>
@@ -49,12 +49,12 @@ ms.locfileid: "67160128"
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/common/i_learn-about.svg" alt="Learn about Visual C++ for cross-platform mobile development">
+                            <img src="/media/common/i_learn-about.svg" alt="Learn about Visual Studio tools for C++ cross-platform mobile development">
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>了解適用於跨平台行動裝置開發的 Visual C++</h3>
-                        <p>取得使用 Visual C++ 進行跨平台行動裝置開發的概觀。</p>
+                        <h3>了解適用於 C++ 跨平台行動裝置應用程式開發的 Visual Studio 工具</h3>
+                        <p>取得使用 C++ 進行跨平台行動裝置應用程式開發的概觀。</p>
                     </div>
                 </div>
             </div>
@@ -91,7 +91,7 @@ ms.locfileid: "67160128"
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardText">
-                        <h3><a href="/cpp/visual-cpp-in-visual-studio">Visual C++</a></h3>
+                        <h3><a href="/cpp/visual-cpp-in-visual-studio">Visual Studio 中的 C++</a></h3>
                         <p><a href="/cpp/ide/read-and-understand-code-cpp">讀取及寫入程式碼</a><p>
                     </div>
                 </div>

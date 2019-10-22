@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 61c1efea7340425090adbdd1c9bc865c4a056d42
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 92d1c327c168bfd2881ad014b7f9ab87f771b95d
+ms.sourcegitcommit: 8a96a65676fd7a2a03b0803d7eceae65f3fa142b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "70987768"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72536073"
 ---
 # <a name="learn-productivity-tips-and-tricks-for-the-debugger-in-visual-studio"></a>在 Visual Studio 中瞭解偵錯工具的生產力秘訣和訣竅
 
@@ -96,17 +96,17 @@ ms.locfileid: "70987768"
 
 若要查看函式的傳回值，請查看當您逐步執行程式碼時，出現在 [自動**變數] 視窗**中的函式。 若要查看函式的傳回值，請確定您感興趣的函式已執行（如果您目前在函式呼叫中停止，請按**F10**一次）。 如果視窗已關閉，請使用**Debug > Windows >** 自動變數來開啟 **[自動**變數] 視窗。
 
-自動變數![視窗](../debugger/media/dbg-tips-autos-window.png "AutosWindow")
+![自動變數視窗](../debugger/media/dbg-tips-autos-window.png "AutosWindow")
 
 此外，您可以**在 [即時**運算] 視窗中輸入函數來查看傳回值。 （使用**Debug > Windows > 立即**開啟）。
 
-即時運算![視窗](../debugger/media/dbg-tips-immediate-window.png "ImmediateWindow")
+![即時運算視窗](../debugger/media/dbg-tips-immediate-window.png "ImmediateWindow")
 
-您也可以在 [**監看**式]**和 [** 即時運算] `$ReturnValue`視窗中使用[pseudovariables](../debugger/pseudovariables.md) ，例如。
+您也可以在 [**監看**式]**和 [** 即時運算] 視窗中使用[pseudovariables](../debugger/pseudovariables.md) ，例如 `$ReturnValue`。
 
 ## <a name="string_visualizer"></a>檢查視覺化檢視中的字串
 
-使用字串時，查看整個格式化的字串會很有説明。 若要查看純文字、XML、HTML 或 JSON 字串，請在將滑鼠游標停留在包含字串值的變數上時，按一下放大鏡圖示![VisualizerIcon](../debugger/media/dbg-tips-visualizer-icon.png "視覺化檢視圖示")。
+使用字串時，查看整個格式化的字串會很有説明。 若要查看純文字、XML、HTML 或 JSON 字串，請按一下放大鏡圖示![VisualizerIcon](../debugger/media/dbg-tips-visualizer-icon.png "視覺化檢視圖示") ，並將滑鼠游標停留在包含字串值的變數上。
 
 ![開啟字串視覺化檢視](../debugger/media/dbg-tips-string-visualizers.png "OpenStringVisualizer")
 
@@ -118,9 +118,9 @@ ms.locfileid: "70987768"
 
 ## <a name="break-into-code-on-handled-exceptions"></a>針對已處理的例外狀況中斷程式碼
 
-偵錯工具會在未處理的例外狀況上中斷您的程式碼。 不過，已處理的例外狀況（例如在`try/catch`區塊內發生的例外狀況）也可以是 bug 的來源，而且您可能會想要調查發生的時間。 您也可以在 [**例外狀況設定**] 對話方塊中設定選項，以將偵錯工具設為中斷處理的例外狀況。 選擇 [偵錯工具] **> [Windows > 例外狀況設定**] 來開啟此對話方塊。
+偵錯工具會在未處理的例外狀況上中斷您的程式碼。 不過，已處理的例外狀況（例如在 `try/catch` 區塊內發生的例外狀況）也可以是 bug 的來源，而且您可能會想要調查發生的時間。 您也可以在 [**例外狀況設定**] 對話方塊中設定選項，以將偵錯工具設為中斷處理的例外狀況。 選擇 [偵錯工具] **> [Windows > 例外狀況設定**] 來開啟此對話方塊。
 
-[**例外狀況設定**] 對話方塊可讓您指示偵錯工具在特定的例外狀況中，細分成程式碼。 在下面的圖例中，每當`System.NullReferenceException`發生時，偵錯工具就會中斷您的程式碼。 如需詳細資訊，請參閱[管理例外](../debugger/managing-exceptions-with-the-debugger.md)狀況。
+[**例外狀況設定**] 對話方塊可讓您指示偵錯工具在特定的例外狀況中，細分成程式碼。 在下面的圖例中，每當發生 `System.NullReferenceException` 時，偵錯工具就會中斷程式碼。 如需詳細資訊，請參閱[管理例外](../debugger/managing-exceptions-with-the-debugger.md)狀況。
 
 ![例外狀況設定對話方塊](../debugger/media/dbg-tips-exception-settings.png "ExceptionSettingsDialogBox")
 
@@ -130,9 +130,9 @@ ms.locfileid: "70987768"
 
 #### <a name="to-show-threads-in-your-source-code"></a>若要在原始程式碼中顯示執行緒
 
-1. 在調試過程中，按一下 [在**來源中顯示執行緒**] 按鈕在 [**調試**] 工具列的 [來源](../debugger/media/dbg-multithreaded-show-threads.png "ThreadMarker")中![顯示執行緒]。
+1. 在調試過程中，**按一下 [在**來源中**顯示執行緒**] 按鈕 [在來源中![顯示執行緒](../debugger/media/dbg-multithreaded-show-threads.png "ThreadMarker")]。
 
-2. 查看來源視窗左邊的裝訂邊。 在這一行，您會看到類似兩個棉布執行緒的*執行緒標記*圖示![執行緒標記](../debugger/media/dbg-thread-marker.png "ThreadMarker") 。 執行緒標記表示執行緒會停在這個位置上。
+2. 查看來源視窗左邊的裝訂邊。 在這一行，您會看到類似兩個棉布執行緒的*執行緒標記*圖示![執行緒標記](../debugger/media/dbg-thread-marker.png "ThreadMarker")。 執行緒標記表示執行緒會停在這個位置上。
 
     請注意，中斷點可能會部分隱藏執行緒標記。
 
@@ -142,7 +142,7 @@ ms.locfileid: "70987768"
 
 ## <a name="examine-payloads-for-web-services-and-network-resources-uwp"></a>檢查 web 服務和網路資源（UWP）的承載
 
-在 UWP 應用程式中，您可以使用 API 來分析`Windows.Web.Http`執行的網路作業。 您可以使用此工具來協助調試 web 服務和網路資源。 若要使用此工具，請選取 [ **Debug > Performance Profiler**]。 選取 [**網路**]，然後選擇 [**啟動**]。 在應用程式中，完整瀏覽使用 `Windows.Web.Http` 的案例，然後選擇 [停止收集] 以產生報表。
+在 UWP 應用程式中，您可以使用 `Windows.Web.Http` API 來分析執行的網路作業。 您可以使用此工具來協助調試 web 服務和網路資源。 若要使用此工具，請選取 [ **Debug > Performance Profiler**]。 選取 [**網路**]，然後選擇 [**啟動**]。 在應用程式中，完整瀏覽使用 `Windows.Web.Http` 的案例，然後選擇 [停止收集] 以產生報表。
 
 ![網路流量分析工具](../profiling/media/prof-tour-network-usage.png "NetworkUsageProfTool")
 
@@ -156,7 +156,7 @@ ms.locfileid: "70987768"
 
 若要附加至執行中的應用程式，偵錯工具會載入為您嘗試進行偵錯工具的完全相同組建所產生的符號（.pdb）檔案。 在某些情況下，對符號檔的一些知識可能很有説明。 您可以檢查 Visual Studio 如何使用 [**模組**] 視窗載入符號檔。
 
-藉由選取 [ **Debug > Windows > 模組**]，在進行偵錯工具時開啟 [**模組**] 視窗。 **模組**視窗可以告訴您哪些模組偵錯工具會視為使用者程式碼，或[ *My Code*](../debugger/just-my-code.md)，和符號載入模組的狀態。 在大部分的情況下，偵錯工具會自動尋找使用者程式碼的符號檔，但如果您想要逐步執行（或 debug） .NET framework 程式碼、系統程式碼或協力廠商程式庫程式碼，則需要額外的步驟才能取得正確的符號檔。
+藉由選取 [ **Debug > Windows > 模組**]，在進行偵錯工具時開啟 [**模組**] 視窗。 [**模組**] 視窗可讓您知道偵錯工具會將哪些模組視為使用者程式碼，或[*My Code*](../debugger/just-my-code.md)，以及模組的符號載入狀態。 在大部分情況下，偵錯工具會自動尋找使用者程式碼的符號檔，但如果您想要逐步執行（或 debug） .NET 程式碼、系統程式碼或協力廠商程式庫程式碼，則需要額外的步驟才能取得正確的符號檔。
 
 ![在 [模組] 視窗中查看符號資訊](../debugger/media/dbg-tips-modules-window.png "ViewSymbolInformation")
 
@@ -173,6 +173,6 @@ ms.locfileid: "70987768"
 - [7個較少的已知駭客在 Visual Studio 中進行偵錯工具](https://devblogs.microsoft.com/visualstudio/7-lesser-known-hacks-for-debugging-in-visual-studio/)
 - [Visual Studio 中的7個隱藏的寶物](https://devblogs.microsoft.com/visualstudio/7-hidden-gems-in-visual-studio-2017/)
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 [鍵盤快速鍵](../ide/productivity-shortcuts.md)

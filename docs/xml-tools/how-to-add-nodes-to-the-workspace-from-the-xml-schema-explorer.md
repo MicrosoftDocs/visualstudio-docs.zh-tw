@@ -1,42 +1,42 @@
 ---
-title: 將節點從 XML 結構描述總管加入至工作區
+title: 從 XML 架構瀏覽器將節點加入工作區
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 3b5a5749-9693-4b29-b0c2-8e07e0e55514
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 22ff9e7ede2861577403eb09d549911afef0f0a5
-ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
+ms.openlocfilehash: 77e1890df09443e133f9e528905b76374f6070bc
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66432185"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72646032"
 ---
-# <a name="how-to-add-nodes-to-the-workspace-from-the-xml-schema-explorer"></a>作法：將節點從 XML 結構描述總管新增至工作區
+# <a name="how-to-add-nodes-to-the-workspace-from-the-xml-schema-explorer"></a>如何：從 XML 架構瀏覽器將節點加入至工作區
 
-本主題說明如何將節點加入到[XML 結構描述設計工具工作區](../xml-tools/xml-schema-designer-workspace.md)從**XML 結構描述總管**。 這可以藉由拖放節點來達成**XML 結構描述總管**拖曳至 XSD 設計工具檢視，或使用**XML 結構描述總管的**操作功能表。 您也可以加入會反白顯示所執行的搜尋結果的節點**XML 結構描述總管**。 如需詳細資訊，請參閱[如何：將結構描述集合搜尋節點加入工作空間](../xml-tools/how-to-add-schema-set-search-result-nodes-to-the-workspace.md)。
+本主題說明如何從**Xml 架構瀏覽器**將節點加入至[xml 架構設計工具工作區](../xml-tools/xml-schema-designer-workspace.md)。 將節點從**XML 架構流覽**器拖放到 XSD 設計工具視圖，或使用**XML 架構瀏覽器的**內容功能表，即可達成此目的。 您也可以加入因為**XML 架構瀏覽器**所執行的搜尋結果而反白顯示的節點。 如需詳細資訊，請參閱[如何：將架構集合搜尋結果節點新增至工作區](../xml-tools/how-to-add-schema-set-search-result-nodes-to-the-workspace.md)。
 
 > [!NOTE]
-> 只有全域節點可以加入至[XML 結構描述設計工具工作空間](../xml-tools/xml-schema-designer-workspace.md)。
+> 只有全域節點可以加入至[XML 架構設計工具工作區](../xml-tools/xml-schema-designer-workspace.md)。
 
-## <a name="to-add-nodes-through-the-xml-explorer-context-menu"></a>若要新增節點能夠透過 XML 總管操作功能表
+## <a name="to-add-nodes-through-the-xml-explorer-context-menu"></a>透過 XML Explorer 內容功能表加入節點
 
-1. 請依照下列中的步驟[How to:建立和編輯 XSD 結構描述檔案](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md)。
+1. 請依照[如何：建立和編輯 XSD 架構](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md)檔案中的步驟執行。
 
-2. 以滑鼠右鍵按一下`PurchaseOrderType`XSD 總管中的節點。 選取 **在圖形檢視中顯示**。
+2. 以滑鼠右鍵按一下 [XSD Explorer] 中的 [`PurchaseOrderType`] 節點。 選取 [**在圖表視圖中顯示]** 。
 
      `purchaseOrderType` 節點會出現在圖表檢視的設計介面上。
 
 ## <a name="to-drag-and-drop-a-node-on-to-a-view"></a>將節點拖放至檢視上
 
-1. 以滑鼠右鍵按一下`PurchaseOrderType`圖表檢視中的節點。 選取 **在 XML 結構描述總管中顯示**。
+1. 以滑鼠右鍵按一下圖形視圖中的 [`PurchaseOrderType`] 節點。 選取 [**在 XML 架構瀏覽器中顯示**]。
 
-     中的節點會反白顯示**XML 結構描述總管**。
+     節點會在**XML 架構瀏覽器**中反白顯示。
 
-2. 以滑鼠右鍵按一下`PurchaseOrderType`中的節點**XML 結構描述總管**，然後選取**顯示所有參考**。
+2. 以滑鼠右鍵按一下**XML 架構瀏覽器**中的 [`PurchaseOrderType`] 節點，然後選取 [**顯示所有參考**]。
 
      `purchaseOrder` 節點會反白顯示。
 
@@ -46,18 +46,18 @@ ms.locfileid: "66432185"
 
 ## <a name="to-add-nodes-using-the-schema-explorer-search-capability"></a>使用結構描述總管的搜尋功能加入節點
 
-1. 在搜尋文字方塊中輸入"purchaseOrder" [XML 總管](../xml-tools/xml-schema-explorer.md)工具列，然後按一下 [搜尋] 按鈕。
+1. 在 [ [XML Explorer](../xml-tools/xml-schema-explorer.md) ] 工具列的 [搜尋] 文字方塊中輸入 "purchaseOrder"，然後按一下 [搜尋] 按鈕。
 
      ![XML 結構描述總管關鍵字搜尋](../xml-tools/media/schemaexplorersearch.gif)
 
-     搜尋結果會以反白顯示**XML 結構描述總管**和以垂直捲軸的刻度標示。
+     搜尋結果會在**XML 架構瀏覽器**中反白顯示，並在垂直捲動條上以刻度標示。
 
-2. 新增至工作區的搜尋結果中，依序按一下**反白顯示的節點加入工作區**摘要結果面板上的按鈕。
+2. 按一下 [摘要] 結果窗格上的 [**將反白顯示的節點新增至工作區**] 按鈕，將搜尋結果新增至工作區。
 
      ![XML 結構描述總管搜尋結果](../xml-tools/media/schemaexplorersearchresult.gif)
 
-     `purchaseOrder`節點和`PurchaseOrderType`節點會相互並排顯示的設計介面上[圖表檢視](../xml-tools/graph-view.md)。 由於兩個節點是相關的 (`purchaseOrder` 項目屬於 `PurchaseOrderType` 型別)，因此兩個節點之間會畫上箭號。
+     [@No__t_0] 節點和 [`PurchaseOrderType`] 節點會顯示在[圖形視圖](../xml-tools/graph-view.md)的設計介面上。 由於兩個節點是相關的 (`purchaseOrder` 項目屬於 `PurchaseOrderType` 型別)，因此兩個節點之間會畫上箭號。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [XML 結構描述總管](../xml-tools/xml-schema-explorer.md)

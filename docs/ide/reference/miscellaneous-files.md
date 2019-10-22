@@ -13,17 +13,17 @@ helpviewer_keywords:
 - Miscellaneous Files folder
 - files [Visual Studio], miscellaneous
 ms.assetid: 5b96640b-8efe-48a4-8d0a-1ae3f9587e44
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3787ce7cd6c7355c86b6e6ef077311c603265fc1
-ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
-ms.translationtype: HT
+ms.openlocfilehash: 6fb01d0ce09778866074cc8f303c3e4da60f0de1
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68461431"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72668963"
 ---
 # <a name="miscellaneous-files"></a>其他檔案
 
@@ -33,12 +33,12 @@ ms.locfileid: "68461431"
 
 ![方案專案](../../ide/reference/media/projects_solutions_misc.gif)
 
-如果啟用資料夾的選項，方案總管可以顯示檔案的 [其他檔案]  資料夾。 您可以從[選項對話方塊、環境、文件](../../ide/reference/documents-environment-options-dialog-box.md)設定選項。 關閉其他檔案之後，除非同時啟用該其他檔案的選項，否則不會與任何特定方案或專案建立關聯。
+如果啟用資料夾的選項，方案總管可以顯示檔案的 [其他檔案] 資料夾。 您可以從[選項對話方塊、環境、文件](../../ide/reference/documents-environment-options-dialog-box.md)設定選項。 關閉其他檔案之後，除非同時啟用該其他檔案的選項，否則不會與任何特定方案或專案建立關聯。
 
-[其他檔案]  資料夾會將檔案呈現為連結。 雖然此資料夾不是方案的一部分，但是開啟方案時，會重新開啟在最後一次關閉方案時開啟的部分或所有其他檔案 (視資料夾的設定而定)。
+[其他檔案] 資料夾會將檔案呈現為連結。 雖然此資料夾不是方案的一部分，但是開啟方案時，會重新開啟在最後一次關閉方案時開啟的部分或所有其他檔案 (視資料夾的設定而定)。
 
 > [!NOTE]
-> 未出現在 [其他檔案]  資料夾中的檔案有些是您無法在 IDE 內修改的檔案 (例如 .zip 檔案和 .doc 檔案)。 IDE 將不會追蹤只能透過外部編輯器修改的檔案。
+> 未出現在 [其他檔案] 資料夾中的檔案有些是您無法在 IDE 內修改的檔案 (例如 .zip 檔案和 .doc 檔案)。 IDE 將不會追蹤只能透過外部編輯器修改的檔案。
 
 ## <a name="commands-available-in-the-ide"></a>IDE 中可用的命令
 
@@ -46,10 +46,10 @@ ms.locfileid: "68461431"
 
 ## <a name="folder-display-options"></a>資料夾顯示選項
 
-您可以設定 [其他檔案]  資料夾的顯示選項，以顯示資料夾，即使您尚未開啟任何其他檔案也是一樣。 方案檔不會永久管理其他檔案的清單。 它會使用選擇性功能，以記住每位使用者最常使用 (MRU) 的檔案清單。
+您可以設定 [其他檔案] 資料夾的顯示選項，以顯示資料夾，即使您尚未開啟任何其他檔案也是一樣。 方案檔不會永久管理其他檔案的清單。 它會使用選擇性功能，以記住每位使用者最常使用 (MRU) 的檔案清單。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [在 Visual Studio 中不使用專案或方案來開發程式碼](../develop-code-in-visual-studio-without-projects-or-solutions.md)
-- [專案和解決方案](../../ide/solutions-and-projects-in-visual-studio.md)
+- [專案和方案](../../ide/solutions-and-projects-in-visual-studio.md)
 - [選項對話方塊、環境、文件](../../ide/reference/documents-environment-options-dialog-box.md)

@@ -1,5 +1,5 @@
 ---
-title: EX_DBGPROP_INFO_FLAGS | Microsoft Docs
+title: EX_DBGPROP_INFO_FLAGS |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 086a2b7544a95a302219ddc62c15c5b31dd1d9b6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0094d49a7e528d312dc8206b02599651f192c6fb
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62955224"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575846"
 ---
-# <a name="exdbgpropinfoflags"></a>EX_DBGPROP_INFO_FLAGS
-用來指定`ExtendedDebugPropertyInfo`欄位。  
+# <a name="ex_dbgprop_info_flags"></a>EX_DBGPROP_INFO_FLAGS
+用來指定 `ExtendedDebugPropertyInfo` 欄位。  
   
 ## <a name="syntax"></a>語法  
   
@@ -39,22 +39,22 @@ enum {
 };  
 ```  
   
-## <a name="members"></a>成員  
+## <a name="members"></a>Members  
  EX_DBGPROP_INFO_ID  
  初始化屬性的識別碼。  
   
  EX_DBGPROP_INFO_NTYPE  
- 屬性會初始化型別。  
+ 初始化屬性的類型。  
   
  EX_DBGPROP_INFO_NVALUE  
  初始化屬性的值。  
   
  EX_DBGPROP_INFO_LOCKBYTES  
- 初始化`plb`欄位。  
+ 初始化 `plb` 欄位。  
   
  EX_DBGPROP_INFO_DEBUGEXTPROP  
- 初始化`pDebugExtProp`欄位包含`IDebugExtendedProperty`介面。  
+ 初始化包含 `IDebugExtendedProperty` 介面的 `pDebugExtProp` 欄位。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [ExtendedDebugPropertyInfo 結構](../../winscript/reference/extendeddebugpropertyinfo-structure.md)   
  [IDebugExtendedProperty 介面](../../winscript/reference/idebugextendedproperty-interface.md)

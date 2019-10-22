@@ -6,17 +6,17 @@ helpviewer_keywords:
 - load tests, command line
 - load tests, run settings, selecting
 ms.assetid: 175d1d58-f09a-4449-b132-a29a394a7c8e
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 466ea9a7e0b877af55219be497eefde963e80853
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 09aa92b36058ff714784aff12851e1b82c78a99a
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62949847"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653463"
 ---
-# <a name="how-to-select-a-load-test-run-setting-to-use-from-the-command-line"></a>HOW TO：從命令列中選取要使用的負載測試回合設定
+# <a name="how-to-select-a-load-test-run-setting-to-use-from-the-command-line"></a>如何：從命令列中選取要使用的負載測試回合設定
 
 負載測試可以包含「回合設定」，這是指會影響負載測試回合的屬性。 這些設定會在 [屬性] 視窗中，依照分類進行組織。 負載測試執行時，它會使用目前設為使用中的回合設定。
 
@@ -34,7 +34,7 @@ ms.locfileid: "62949847"
 
     `mstest /testcontainer:loadtest1.loadtest`
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [設定負載測試回合設定](../test/configure-load-test-run-settings.md)
 - [在負載測試中指定電腦的計數器集合和臨界值規則](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md)

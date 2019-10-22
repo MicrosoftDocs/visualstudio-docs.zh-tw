@@ -1,5 +1,5 @@
 ---
-title: IApplicationDebugger::onHandleBreakPoint |Microsoft Docs
+title: IApplicationDebugger：： onHandleBreakPoint |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: edf8816cd646596ce1f897dfd9d949790d52b7b1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3796ea1f50f0c4bcf945dbc10592c048db22757b
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62991358"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577834"
 ---
 # <a name="iapplicationdebuggeronhandlebreakpoint"></a>IApplicationDebugger::onHandleBreakPoint
 處理中斷點事件。  
@@ -39,13 +39,13 @@ HRESULT onHandleBreakPoint(
   
 #### <a name="parameters"></a>參數  
  `prpt`  
- [in]執行緒發生中斷點的位置。  
+ 在發生中斷點的執行緒。  
   
  `br`  
- [in]中斷點的原因。  
+ 在中斷點的原因。  
   
  `pError`  
- [in]執行階段錯誤的資訊時所提供的值`br`是 BREAKREASON_ERROR。  
+ 在當 `br` 的值為 BREAKREASON_ERROR 時，所提供的執行階段錯誤資訊。  
   
 ## <a name="return-value"></a>傳回值  
  方法會傳回 `HRESULT`。 可能的值包括 (但不限於) 下表中的這些值。  
@@ -55,12 +55,12 @@ HRESULT onHandleBreakPoint(
 |`S_OK`|方法成功。|  
   
 ## <a name="remarks"></a>備註  
- 在觸及中斷點時，會呼叫這個方法和`IDebugApplication::HandleBreakPoint`呼叫。  
+ 當叫用中斷點並呼叫 `IDebugApplication::HandleBreakPoint` 時，就會呼叫這個方法。  
   
- 應用程式會保持暫停，直到呼叫偵錯工具 IDE `IRemoteDebugApplication::ResumeFromBreakPoint`。  
+ 應用程式會保持擱置，直到偵錯工具 IDE 呼叫 `IRemoteDebugApplication::ResumeFromBreakPoint` 為止。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IApplicationDebugger 介面](../../winscript/reference/iapplicationdebugger-interface.md)   
- [IDebugApplication::HandleBreakPoint](../../winscript/reference/idebugapplication-handlebreakpoint.md)   
- [IRemoteDebugApplication::ResumeFromBreakPoint](../../winscript/reference/iremotedebugapplication-resumefrombreakpoint.md)   
+ [IDebugApplication：： HandleBreakPoint](../../winscript/reference/idebugapplication-handlebreakpoint.md)    
+ [IRemoteDebugApplication：： ResumeFromBreakPoint](../../winscript/reference/iremotedebugapplication-resumefrombreakpoint.md)    
  [BREAKREASON 列舉](../../winscript/reference/breakreason-enumeration.md)

@@ -7,17 +7,17 @@ helpviewer_keywords:
 - Web services [Visual Studio ALM], creating
 - service tests, Web
 ms.assetid: fbcd57ee-06ad-4260-8694-09f8e0f93e39
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 3fd640a79a81e2306c8abd1c3c5279b1fc8f335f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 4bbc7423c3f08665109c17d25d43ae6d9d652100
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62950133"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653602"
 ---
-# <a name="how-to-create-a-web-service-test"></a>HOW TO：建立 Web 服務測試
+# <a name="how-to-create-a-web-service-test"></a>如何：建立 Web 服務測試
 
 您可以使用 Web 效能測試以測試 Web 服務。 藉由使用 [插入要求] 和 [插入 Web 服務要求] 選項，您可以在 [Web 效能測試編輯器] 中自訂個別要求，以便找到 Web 服務頁面。 一般而言，這些頁面不會顯示在 Web 應用程式中。 因此，您必須自訂要求，以取得這些頁面的存取權。
 
@@ -25,7 +25,7 @@ ms.locfileid: "62950133"
 
 下列程序使用 Commerce Starter Kit 內所包含的 Web 服務。 您可以從 [ASP.NET Commerce Starter Kit](http://go.microsoft.com/fwlink/?LinkId=181469) 下載它。
 
-**需求**
+**Requirements**
 
 Visual Studio 企業版
 
@@ -35,7 +35,7 @@ Visual Studio 企業版
 
 2. 在 [Web 效能測試編輯器] 中，以滑鼠右鍵按一下 Web 效能測試，然後選取 [新增 Web 服務要求]。
 
-3. 在新要求的 [Url] 屬性中，鍵入 Web 服務的名稱，例如 **http://localhost/storecsvs/InstantOrder.asmx**。
+3. 在新要求的 [Url] 屬性中，鍵入 Web 服務的名稱，例如 **http://localhost/storecsvs/InstantOrder.asmx** 。
 
 4. 開啟瀏覽器的不同工作階段，並在 [位址] 工具列中鍵入 *.asmx* 頁面的 URL。 請選取要測試的方法，並檢查 SOAP 訊息， 它包含 `SOAPAction`。
 
@@ -60,7 +60,7 @@ Visual Studio 企業版
      </soap:Envelope>
      ```
 
-9. 返回 [Web 效能測試編輯器]，然後選擇 [字串內容] 屬性中的省略符號 **(…)**。 將剪貼簿的內容貼到屬性中。
+9. 返回 [Web 效能測試編輯器]，然後選擇 [字串內容] 屬性中的省略符號 **(…)** 。 將剪貼簿的內容貼到屬性中。
 
 10. 為了讓測試通過，您必須以有效的值取代 XML 中任何的預留位置值。 在先前的範例中，您可能取代 `string` 的兩個執行個體 (Instance) 和一個 `int`。 這個 Web 服務作業只有在存有編排順序的已註冊使用者時才會完成。
 
@@ -71,8 +71,8 @@ Visual Studio 企業版
     > [!NOTE]
     > 您可以在 SOAP 主體中使用資料繫結，以便使用 `{{DataSourceName.TableName.ColumnName}}` 語法以資料繫結值取代任何預留位置值。
 
-13. 執行測試。 在 [Web 效能測試結果檢視器] 的上方窗格中，選取 Web 服務要求。 在下方窗格中，選取 [網頁瀏覽器] 索引標籤。接著會顯示 Web 服務所傳回的 XML，以及所有作業的結果。
+13. 執行測試。 在 [Web 效能測試結果檢視器] 的上方窗格中，選取 Web 服務要求。 在底部窗格中，選取 [網頁瀏覽器] 索引標籤。Web 服務所傳回的 XML 以及任何作業的結果都會顯示出來。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [為負載測試建立自訂程式碼和外掛程式](../test/create-custom-code-and-plug-ins-for-load-tests.md)

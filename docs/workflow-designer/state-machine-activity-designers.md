@@ -1,23 +1,23 @@
 ---
-title: 工作流程設計工具-狀態機器活動設計工具
+title: 工作流程設計工具狀態機器活動設計工具
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 97f0bff5-7e48-4914-8f04-8015a1c6bfae
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-author: gewarren
-ms.openlocfilehash: de928ff095c5700506060b9fceb609003f1b9ab1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+author: jillre
+ms.openlocfilehash: b5ea5034f5967b5ba94b57746fd30bf7f1d750e6
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62809517"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72649923"
 ---
 # <a name="state-machine-activity-designers"></a>狀態機器活動設計工具
 
-工作流程設計工具包含活動設計工具可供您建構工作流程時數。 本節包含系統提供的活動設計工具，這些活動設計工具用來建立和管理狀態機器工作流程。 下列主題會說明這些設計工具，並且提供如何使用的指引。
+工作流程設計工具組含一些可供您在建立工作流程時使用的活動設計工具。 本節包含系統提供的活動設計工具，這些活動設計工具用來建立和管理狀態機器工作流程。 下列主題會說明這些設計工具，並且提供如何使用的指引。
 
 ## <a name="reference"></a>參考資料
  <xref:System.Activities.Statements.StateMachine>

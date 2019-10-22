@@ -11,26 +11,26 @@ helpviewer_keywords:
 - ADO.NET Data Services, Visual Studio
 - WCF data services in Visual Studio
 ms.assetid: da66ad1b-a25d-485c-af13-2d18f0422e3d
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 6ed07e723b2cb423883491d7e6ca3774a12d0824
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: c17872b7fcfd0ecfa7c927880980fce79f432451
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68925448"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72648082"
 ---
-# <a name="walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework"></a>逐步解說：使用 WPF 和 Entity Framework 建立 WCF 資料服務
+# <a name="walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework"></a>逐步解說︰使用 WPF 和 Entity Framework 建立 WCF 資料服務
 在本逐步解說中，會示範如何建立裝載於 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web 應用程式的簡單 [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)]，並從 Windows Forms 應用程式存取此服務。
 
-在本逐步解說中, 您會:
+在本逐步解說中，您會：
 
 - 建立裝載 [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)] 的 Web 應用程式。
 
-- 建立, 代表 Northwind 資料庫`Customers`中的資料表。 [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)]
+- 建立代表 Northwind 資料庫中 `Customers` 資料表的 [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)]。
 
 - 建立 [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)]。
 
@@ -40,27 +40,27 @@ ms.locfileid: "68925448"
 
 - 您可以選擇在應用程式中加入篩選功能。
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>Prerequisites
 本逐步解說使用 SQL Server Express LocalDB 和 Northwind 範例資料庫。
 
-1. 如果您沒有 SQL Server Express LocalDB, 請從[SQL Server Express 下載頁面](https://www.microsoft.com/sql-server/sql-server-editions-express), 或透過**Visual Studio 安裝程式**進行安裝。 在**Visual Studio 安裝程式**中, 您可以將 SQL Server Express LocalDB 安裝為**資料儲存和處理**工作負載的一部分, 或作為個別元件。
+1. 如果您沒有 SQL Server Express LocalDB，請從[SQL Server Express 下載頁面](https://www.microsoft.com/sql-server/sql-server-editions-express)，或透過**Visual Studio 安裝程式**進行安裝。 在**Visual Studio 安裝程式**中，您可以將 SQL Server Express LocalDB 安裝為**資料儲存和處理**工作負載的一部分，或作為個別元件。
 
-2. 依照下列步驟安裝 Northwind 範例資料庫:
+2. 依照下列步驟安裝 Northwind 範例資料庫：
 
-    1. 在 Visual Studio 中, 開啟 [ **SQL Server 物件總管**] 視窗。 (**SQL Server 物件總管**會安裝為 Visual Studio 安裝程式中**資料儲存和處理**工作負載的一部分)。展開 [ **SQL Server** ] 節點。 以滑鼠右鍵按一下您的 LocalDB 實例, 然後選取 [追加**查詢**]。
+    1. 在 Visual Studio 中，開啟 [ **SQL Server 物件總管**] 視窗。 （**SQL Server 物件總管**會安裝為 Visual Studio 安裝程式中**資料儲存和處理**工作負載的一部分）。展開 [ **SQL Server** ] 節點。 以滑鼠右鍵按一下您的 LocalDB 實例，然後選取 [追加**查詢**]。
 
        [查詢編輯器] 視窗隨即開啟。
 
-    2. 將[Northwind transact-sql 腳本](https://github.com/MicrosoftDocs/visualstudio-docs/blob/master/docs/data-tools/samples/northwind.sql?raw=true)複製到剪貼簿。 這個 T-sql 腳本會從頭開始建立 Northwind 資料庫, 並在其中填入資料。
+    2. 將[Northwind transact-sql 腳本](https://github.com/MicrosoftDocs/visualstudio-docs/blob/master/docs/data-tools/samples/northwind.sql?raw=true)複製到剪貼簿。 這個 T-sql 腳本會從頭開始建立 Northwind 資料庫，並在其中填入資料。
 
-    3. 將 T-sql 腳本貼入查詢編輯器中, 然後選擇 [**執行**] 按鈕。
+    3. 將 T-sql 腳本貼入查詢編輯器中，然後選擇 [**執行**] 按鈕。
 
-       在短時間之後, 查詢就會完成執行, 並建立 Northwind 資料庫。
+       在短時間之後，查詢就會完成執行，並建立 Northwind 資料庫。
 
 ## <a name="creating-the-service"></a>建立服務
 若要建立 [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)]，請新增 Web 專案、建立 [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)]，然後從模型建立服務。
 
-在第一個步驟中, 您會新增 Web 專案來裝載服務。
+在第一個步驟中，您會新增 Web 專案來裝載服務。
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 
@@ -74,7 +74,7 @@ ms.locfileid: "68925448"
 
 4. 在 [新增 ASP.NET 專案] 對話方塊的 [選取範本] 清單中，選擇 [空白]，然後選擇 [確定] 按鈕。
 
-在下一個步驟中, 您會[!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)]建立`Customers`代表 Northwind 資料庫中之資料表的。
+在下一個步驟中，您會建立代表 Northwind 資料庫中 `Customers` 資料表的 [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)]。
 
 ### <a name="to-create-the-entity-data-model"></a>若要建立實體資料模型
 
@@ -82,7 +82,7 @@ ms.locfileid: "68925448"
 
 2. 在 [新增新項目] 對話方塊中，選擇 [資料] 節點，然後選擇 [ADO.NET 實體資料模型] 項目。
 
-3. 在 [**名稱**] 文字方塊中, `NorthwindModel`輸入, 然後選擇 [**新增**] 按鈕。
+3. 在 [**名稱**] 文字方塊中，輸入 `NorthwindModel`，然後選擇 [**新增**] 按鈕。
 
      [實體資料模型精靈] 隨即出現。
 
@@ -94,7 +94,7 @@ ms.locfileid: "68925448"
 
          -或-
 
-    - 選擇 [新增連線] 按鈕，設定新的資料連線。 如需詳細資訊, 請參閱[新增連接](../data-tools/add-new-connections.md)。
+    - 選擇 [新增連線] 按鈕，設定新的資料連線。 如需詳細資訊，請參閱[新增連接](../data-tools/add-new-connections.md)。
 
 6. 如果資料庫需要密碼，請選擇 [是，在連接字串中包含敏感性資料] 選項按鈕，然後選擇 [下一步] 按鈕。
 
@@ -108,9 +108,9 @@ ms.locfileid: "68925448"
 
 8. 展開 [選擇您的資料庫物件] 頁面上的 [資料表] 節點，選取 [客戶] 核取方塊，然後選擇 [完成] 按鈕。
 
-     實體模型圖表隨即顯示, 而*NorthwindModel .edmx*檔案會加入至您的專案。
+     實體模型圖表隨即顯示，而*NorthwindModel .edmx*檔案會加入至您的專案。
 
-在下一個步驟中, 您會建立和測試資料服務。
+在下一個步驟中，您會建立和測試資料服務。
 
 ### <a name="to-create-the-data-service"></a>若要建立資料服務
 
@@ -118,7 +118,7 @@ ms.locfileid: "68925448"
 
 2. 在 [新增新項目] 對話方塊中，選擇 [Web] 節點，然後選擇 **WCF Data Service 5.6** 項目。
 
-3. 在 [**名稱**] 文字方塊中, `NorthwindCustomers`輸入, 然後選擇 [**新增**] 按鈕。
+3. 在 [**名稱**] 文字方塊中，輸入 `NorthwindCustomers`，然後選擇 [**新增**] 按鈕。
 
      **NorthwindCustomers.svc** 檔案會出現在 [程式碼編輯器] 中。
 
@@ -132,29 +132,29 @@ ms.locfileid: "68925448"
      [!code-vb[WCFDataServiceWalkthrough#2](../data-tools/codesnippet/VisualBasic/walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework_2.vb)]
      [!code-csharp[WCFDataServiceWalkthrough#2](../data-tools/codesnippet/CSharp/walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework_2.cs)]
 
-6. 在功能表列上, 選擇 [ **Debug**  > Start] [**啟動但不進行調試**] 以執行服務。 此時會開啟瀏覽器視窗, 並顯示服務的 XML 架構。
+6. 在功能表列上，選擇 [ **Debug** ]  >  [**啟動但不進行調試**] 來執行服務。 此時會開啟瀏覽器視窗，並顯示服務的 XML 架構。
 
-7. 在**網址**列中, 于`Customers` **NorthwindCustomers**的 URL 結尾輸入, 然後選擇**enter**鍵。
+7. 在**網址**列中，輸入**NorthwindCustomers**URL 結尾處的 `Customers`，然後選擇**enter**鍵。
 
-     `Customers`資料表中資料的 XML 標記法隨即出現。
+     [@No__t_0] 資料表中之資料的 XML 標記法隨即出現。
 
     > [!NOTE]
     > 在某些情況中，Internet Explorer 會將資料錯譯為 RSS 摘要 (RSS Feed)。 您必須確定顯示 RSS 摘要的選項已停用。 如需詳細資訊，請參閱[針對服務參考進行疑難排解](../data-tools/troubleshooting-service-references.md)。
 
 8. 關閉瀏覽器視窗。
 
-在接下來的步驟中, 您會建立 Windows Forms 的用戶端應用程式來取用服務。
+在接下來的步驟中，您會建立 Windows Forms 的用戶端應用程式來取用服務。
 
 ## <a name="creating-the-client-application"></a>建立用戶端應用程式
 若要建立用戶端應用程式，請新增第二個專案、將服務參考新增至專案、設定資料來源，並建立使用者介面來顯示服務中的資料。
 
-在第一個步驟中, 您會將 Windows Forms 專案加入方案中, 並將它設定為啟始專案。
+在第一個步驟中，您會將 Windows Forms 專案加入方案中，並將它設定為啟始專案。
 
 ### <a name="to-create-the-client-application"></a>若要建立用戶端應用程式
 
-1. 在功能表列上, 選擇 [檔案]、[**加入** > **新專案**]。
+1. 在功能表列上，選擇 [檔案]、[**加入** > **新增專案**]。
 
-2. 在 [**新增專案**] 對話方塊中, 展開 [ **Visual Basic** ] 或 [  **C#視覺效果**] 節點, 選擇 [ **Windows** ] 節點, 然後選擇 [ **Windows Forms 應用程式**]。
+2. 在 [**新增專案**] 對話方塊中，展開 [ **Visual Basic** ] 或 [  **C#視覺效果**] 節點，選擇 [ **Windows** ] 節點，然後選擇 [ **Windows Forms 應用程式**]。
 
 3. 在 [名稱] 文字方塊中，輸入 `NorthwindClient`，然後選擇 [確定] 按鈕。
 
@@ -162,11 +162,11 @@ ms.locfileid: "68925448"
 
 5. 在功能表列上，選擇 [專案]、[設定為啟始專案]。
 
-在下一個步驟中, 您會將服務參考新增[!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)]至 Web 專案中的。
+在下一個步驟中，您會將服務參考加入至 Web 專案中的 [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)]。
 
 ### <a name="to-add-a-service-reference"></a>若要加入服務參考
 
-1. 在功能表列上, 選擇 [**專案** > **加入服務參考**]。
+1. 在功能表列上，選擇 [**專案**] [ > ] [**加入服務參考**]。
 
 2. 選擇 [新增服務參考] 對話方塊中的 [探索] 按鈕。
 
@@ -174,11 +174,11 @@ ms.locfileid: "68925448"
 
 3. 選擇 [確定] 按鈕以新增服務參考。
 
-在下一個步驟中, 您要設定資料來源以啟用與服務的資料系結。
+在下一個步驟中，您要設定資料來源以啟用與服務的資料系結。
 
 ### <a name="to-enable-data-binding-to-the-service"></a>若要啟用對服務的資料繫結
 
-1. 在功能表列上, 選擇 [**視圖** > ] [**其他視窗** > ] [**資料來源**]。
+1. 在功能表列上，選擇 [ **View**  > **其他 Windows**  > **資料來源**]。
 
    [資料來源] 視窗隨即開啟。
 
@@ -190,7 +190,7 @@ ms.locfileid: "68925448"
 
 5. 選取 [客戶] 核取方塊，然後選擇 [完成] 按鈕。
 
-在下一個步驟中, 您會建立使用者介面, 以顯示來自服務的資料。
+在下一個步驟中，您會建立使用者介面，以顯示來自服務的資料。
 
 ### <a name="to-create-the-user-interface"></a>若要建立使用者介面
 
@@ -202,7 +202,7 @@ ms.locfileid: "68925448"
 
 3. 選擇 [CustomersDataGridView] 控制項，然後在 [屬性] 視窗中，將 [Dock] 屬性設為 [填滿]。
 
-4. 在**方案總管**中, 開啟 [ **Form1** ] 節點的快捷方式功能表, 然後選擇 [**查看程式碼**] 以開啟程式碼`Imports`編輯器, 並在檔案頂端新增下列或`Using`語句:
+4. 在**方案總管**中，開啟 [ **Form1** ] 節點的快捷方式功能表，然後選擇 [**查看程式碼**] 以開啟程式碼編輯器，並在檔案頂端新增下列 `Imports` 或 `Using` 語句：
 
    ```vb
    Imports NorthwindClient.ServiceReference1
@@ -230,20 +230,20 @@ ms.locfileid: "68925448"
    }
    ```
 
-6. 在 [方案總管] 中，開啟 **NorthwindCustomers.svc** 檔案的捷徑功能表，然後選擇 [在瀏覽器中檢視]。 [Internet Explorer] 隨即開啟, 並顯示服務的 XML 架構。
+6. 在 [方案總管] 中，開啟 **NorthwindCustomers.svc** 檔案的捷徑功能表，然後選擇 [在瀏覽器中檢視]。 [Internet Explorer] 隨即開啟，並顯示服務的 XML 架構。
 
 7. 由 Internet Explorer 的 [網址] 列複製 URL。
 
 8. 由您在步驟 4 中加入的程式碼中，選取 `http://localhost:53161/NorthwindCustomers.svc/` 並取代為您剛剛複製的 URL。
 
-9. 在功能表列上, 選擇 [ **Debug**  > ] [**開始調試**程式] 以執行應用程式。 客戶資訊隨即顯示。
+9. 在功能表列上，選擇 [ **Debug** ]  >  [**開始進行調試**程式] 以執行應用程式。 客戶資訊隨即顯示。
 
    現在您會有一個工作應用程式，會顯示來自 NorthwindCustomers 服務的客戶清單。 如果您想要透過服務公開額外的資料，可以將 [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] 修改為包含來自 Northwind 資料庫的額外資料表。
 
-在下一個選擇性步驟中, 您將瞭解如何篩選服務所傳回的資料。
+在下一個選擇性步驟中，您將瞭解如何篩選服務所傳回的資料。
 
 ## <a name="adding-filtering-capabilities"></a>加入篩選功能
-在此步驟中, 您會自訂應用程式, 以依據客戶的城市來篩選資料。
+在此步驟中，您會自訂應用程式，以依據客戶的城市來篩選資料。
 
 ### <a name="to-add-filtering-by-city"></a>若要加入根據城市進行篩選的功能
 
@@ -251,7 +251,7 @@ ms.locfileid: "68925448"
 
 2. 從 [工具箱] 將 <xref:System.Windows.Forms.TextBox> 控制項和 <xref:System.Windows.Forms.Button> 控制項新增至表單。
 
-3. 開啟<xref:System.Windows.Forms.Button>控制項的快捷方式功能表, 選擇 [**視圖代碼**], 然後在`Button1_Click`事件處理常式中新增下列程式碼:
+3. 開啟 <xref:System.Windows.Forms.Button> 控制項的快捷方式功能表，選擇 [**視圖程式碼**]，然後在 `Button1_Click` 事件處理常式中新增下列程式碼：
 
     ```vb
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
@@ -282,11 +282,11 @@ ms.locfileid: "68925448"
 
 4. 在前述的程式碼中，將 `http://localhost:53161/NorthwindCustomers.svc` 取代為 `Form1_Load` 事件處理常式中的 URL。
 
-5. 在功能表列上, 選擇 [ **Debug**  > ] [**開始調試**程式] 以執行應用程式。
+5. 在功能表列上，選擇 [ **Debug** ]  >  [**開始進行調試**程式] 以執行應用程式。
 
 6. 在文字方塊中輸入 **London**，然後選擇該按鈕。 接著，就會只顯示 London 的客戶。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [Visual Studio 中的 Windows Communication Foundation 服務和 WCF 資料服務](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)
 - [如何：新增、更新或移除 WCF 資料服務參考](../data-tools/how-to-add-update-or-remove-a-wcf-data-service-reference.md)

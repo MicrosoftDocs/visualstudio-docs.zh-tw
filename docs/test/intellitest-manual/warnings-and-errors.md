@@ -4,17 +4,17 @@ ms.date: 05/02/2017
 ms.topic: reference
 helpviewer_keywords:
 - IntelliTest, Warnings and errors
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-author: gewarren
-ms.openlocfilehash: 85957c18abff9d49e62570375177aa262b08739b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+author: jillre
+ms.openlocfilehash: b9349e2c1c9ebb52e6172cc37ab1113aff95d511
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62952733"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653134"
 ---
 # <a name="warnings-and-errors"></a>警告和錯誤
 
@@ -114,7 +114,7 @@ void ParameterizedTest(int n) {
 }
 ```
 
-您可以編輯 **PexSettingsAttributeBase** 所衍生屬性的 **MaxConditions** 選項，例如 [PexClass](attribute-glossary.md#pexclass) 或 [PexMethod](attribute-glossary.md#pexmethod)。 例如：
+您可以編輯 **PexSettingsAttributeBase** 所衍生屬性的 **MaxConditions** 選項，例如 [PexClass](attribute-glossary.md#pexclass) 或 [PexMethod](attribute-glossary.md#pexmethod)。 例如:
 
 ```csharp
 [PexMethod(MaxConditions=10000)]

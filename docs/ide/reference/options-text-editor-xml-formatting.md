@@ -5,15 +5,15 @@ ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.XML.Formatting
 ms.assetid: 203e60b2-7b80-4ff4-9fa1-aa9f4374377b
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: e20b2f7ebe351aa050ea66468fb33aba8e4a31bc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: ccd5fdee974e7222d1009b508b7ef90758fafcb6
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62969263"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72666594"
 ---
 # <a name="options-text-editor-xml-formatting"></a>選項、文字編輯器、XML、格式化
 
@@ -64,7 +64,7 @@ ms.locfileid: "62969263"
 </dir>
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [XML 選項 - 其他](options-text-editor-xml-miscellaneous.md)
 - [Visual Studio 中的 XML 工具](../../xml-tools/xml-tools-in-visual-studio.md)

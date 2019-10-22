@@ -8,17 +8,17 @@ helpviewer_keywords:
 - Code Snippet Picker
 - IntelliSense code snippets, Code Snippet Picker
 - code snippets, Code Snippet Picker
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 84a93ed9cac1c3f352b3e658f28da4b492612338
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: b8be7783d7c68867b181bafa7ec0874fbb231519
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62953201"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72654610"
 ---
 # <a name="code-snippet-picker"></a>程式碼片段選擇器
 
@@ -54,7 +54,7 @@ Visual Studio 程式碼編輯器提供了 [程式碼片段選擇器]，讓您只
 
 可供插入的程式碼片段清單，或是含有程式碼片段的資料夾清單。 若要插入程式碼片段或展開資料夾，請選取您要的項目並按 Enter。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [使用程式碼片段的最佳作法](../../ide/best-practices-for-using-code-snippets.md)
 - [Visual Basic IntelliSense 程式碼片段](/dotnet/visual-basic/developing-apps/using-ide/intellisense-code-snippets)

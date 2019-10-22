@@ -7,15 +7,15 @@ helpviewer_keywords:
 - templates [Visual Studio], item
 - item templates [Visual Studio]
 - project templates [Visual Studio]
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 83ac401b67444d4fdd467d5aefeb46bccb5e7e84
-ms.sourcegitcommit: cd21b38eefdea2cdefb53e68e7a30b868e78dd6b
-ms.translationtype: HT
+ms.openlocfilehash: 1590317bf2749cc1aeef8a4c3bfbf2937c8404c7
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/22/2019
-ms.locfileid: "66037002"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72652601"
 ---
 # <a name="project-and-item-templates"></a>專案範本與項目範本
 
@@ -67,7 +67,7 @@ ms.locfileid: "66037002"
 
 如需範本資料夾的詳細資訊，請參閱[如何：尋找並整理範本](../ide/how-to-locate-and-organize-project-and-item-templates.md)。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [如何：建立專案範本](../ide/how-to-create-project-templates.md)
 - [如何：建立項目範本](../ide/how-to-create-item-templates.md)

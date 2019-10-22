@@ -8,105 +8,105 @@ helpviewer_keywords:
 - code metrics results
 - code metrics results window
 - results window, code metrics
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bbe2c216a9293ddc8c5c1212957c2987924d14e1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0824fe608ad1bac86ef904702bd1be907bc9ce7d
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62825067"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72649000"
 ---
 # <a name="use-the-code-metrics-results-window"></a>使用程式碼度量結果視窗
 
-**程式碼度量結果**視窗會顯示所產生的程式碼度量資訊分析的資料。 如需有關程式碼度量資料值的詳細資訊，請參閱[程式碼度量值](../code-quality/code-metrics-values.md)。
+[程式**代碼計量結果**] 視窗會顯示程式碼計量分析所產生的資料。 如需程式碼度量資料值的詳細資訊，請參閱程式[代碼度量值](../code-quality/code-metrics-values.md)。
 
 ## <a name="display-code-metrics-results"></a>顯示程式碼度量結果
 
-**程式碼度量結果**視窗會自動顯示，當您產生程式碼度量結果。 您也可以在任何時候顯示的視窗。
+當您產生程式碼度量結果時，會自動顯示 [程式**代碼度量] 結果**視窗。 您也可以隨時顯示視窗。
 
-您可以顯示程式碼度量結果視窗中，使用下列功能表序列的其中一個：
+您可以使用下列其中一個功能表順序來顯示 [程式碼計量結果] 視窗：
 
-- 在 **分析**功能表上，選擇**Windows** > **程式碼度量結果**。
+- 在 [**分析**] 功能表上，選擇 [ **Windows** >  程式**代碼計量結果**]。
 
-- 在 **檢視**功能表上，選擇**其他 Windows** > **程式碼度量結果**。
+- 在 [ **View** ] 功能表上，選擇 [**其他 Windows** >  程式**代碼計量結果**]。
 
-**程式碼度量結果**視窗隨即開啟，即使它包含沒有任何結果。
+[程式**代碼度量] 結果**視窗隨即開啟，即使它沒有包含任何結果。
 
-### <a name="to-view-code-metrics-details"></a>若要檢視程式碼度量詳細資料
+### <a name="to-view-code-metrics-details"></a>若要查看程式碼計量詳細資料
 
-如果已產生程式碼度量結果，展開樹狀目錄中的**階層**資料行。
+如果已產生程式碼計量結果，請展開 [階層] 資料行中的樹狀**結構**。
 
-## <a name="filter-code-metrics-results"></a>篩選程式碼度量結果
+## <a name="filter-code-metrics-results"></a>篩選程式代碼度量結果
 
-您可以篩選會顯示在結果**程式碼度量結果**視窗使用頂端的工具列。 例如，您可能要查看具有可維護性指數 65 以下結果。
+您可以使用頂端的工具列，篩選 [程式**代碼度量] 結果**視窗中顯示的結果。 例如，您可能只想查看在65以下的可維護性索引的結果。
 
-**篩選**下拉式清單方塊包含 結果資料行的名稱。 定義篩選時，會將它新增至與縮排清單的底部。 此清單可以包含最後 10 個已定義的篩選。
+[**篩選**] 下拉式方塊包含 [結果] 資料行的名稱。 定義篩選時，會將它與縮排一併加入清單的底部。 清單可以包含最後10個已定義的篩選。
 
-### <a name="to-filter-the-code-metrics-results"></a>若要篩選程式碼度量結果
+### <a name="to-filter-the-code-metrics-results"></a>篩選程式代碼度量結果
 
-1. 從**篩選**清單中，選取資料行名稱。
+1. 從 [**篩選器**] 清單中，選取資料行名稱。
 
-2. 在  **Min**，輸入要顯示的最小值。
+2. 在 [**最**小值] 中，輸入要顯示的最小值。
 
-3. 在  **Max**，輸入要顯示的最大值。
+3. 在 [**最大**值] 中，輸入要顯示的最大值。
 
-4. 按一下 [**套用篩選條件**] 按鈕。
+4. 按一下 [套用**篩選**] 按鈕。
 
-5. 若要查看的結果詳細資料，請展開階層樹狀結構。
+5. 若要查看結果詳細資料，請展開階層樹狀結構。
 
-## <a name="add-remove-and-rearrange-data-columns"></a>新增、 移除和重新排列資料行
+## <a name="add-remove-and-rearrange-data-columns"></a>新增、移除和重新排列資料行
 
-您可以新增或移除結果中的資料行**程式碼度量結果**視窗。 此外，您可以重新排列結果資料行，使其出現在您想要的順序。
+您可以從 [程式**代碼度量] 結果**視窗加入或移除 [結果] 資料行。 此外，您可以重新排列 [結果] 資料行，使其以您想要的順序顯示。
 
-### <a name="add-or-remove-a-column"></a>新增或移除資料行
+### <a name="add-or-remove-a-column"></a>加入或移除資料行
 
-1. 按一下 **新增/移除資料行**按鈕，或以滑鼠右鍵按一下任何欄標題，然後按一下**新增/移除欄位**。
+1. 按一下 [**新增/移除資料行**] 按鈕，或以滑鼠右鍵按一下任何資料行標題，然後按一下 [**新增/移除資料行**]。
 
-1. 在 [**新增/移除資料行**] 對話方塊中，選取或清除核取方塊資料行，您想要新增或移除，然後選擇**確定**。
+1. 在 [**新增/移除資料行**] 對話方塊中，選取或清除您要新增或移除之資料行的核取方塊，然後選擇 **[確定]** 。
 
 ### <a name="rearrange-columns"></a>重新排列資料行
 
 1. 按一下 [**新增/移除資料行**] 按鈕。
 
-1. 在 **新增/移除資料行**對話方塊方塊中，選取您想要移動，然後選擇 向上鍵或向下箭號的資料行。
+1. 在 [**新增/移除資料行**] 對話方塊中，選取您想要移動的資料行，然後選擇向上箭號或向下箭號。
 
-1. 當您想要的位置定位的資料行時，選擇**確定**。
+1. 當資料行位於您想要的位置時，請選擇 **[確定]** 。
 
 ## <a name="copy-data-to-the-clipboard-or-excel"></a>將資料複製到剪貼簿或 Excel
 
-您可以選取，並將選取的資料列的程式碼計量資料複製到剪貼簿中，為文字字串，其中包含一條線的名稱和值的每個資料行。 您也可以按一下**在 Microsoft Excel 中開啟選取項目**，將所有的程式碼度量結果匯出至 Excel 試算表。
+您可以選取並將選取的程式碼計量資料列複製到剪貼簿做為文字字串，其中包含每個資料行之名稱和值的一行。 您也可以按一下 [**在 Microsoft Excel 中開啟選取專案**]，將所有的程式碼計量結果匯出至 Excel 試算表。
 
-## <a name="create-a-work-item-based-on-code-metric-results"></a>建立工作項目，根據程式碼度量結果
+## <a name="create-a-work-item-based-on-code-metric-results"></a>根據程式碼度量結果建立工作專案
 
-您可以建立[Azure 面板](/azure/devops/boards/index?view=vsts)為基礎的工作項目導致**程式碼度量結果**視窗。 建立工作項目時，Visual Studio 會自動輸入其中一個職銜**標題**下方的欄位和程式碼度量資料**歷程記錄** 索引標籤。
+您可以根據 [程式**代碼度量] 結果**視窗中的結果，建立[Azure Boards](/azure/devops/boards/index?view=vsts)工作專案。 建立工作專案時，Visual Studio 會自動在 [**標題**] 欄位中輸入標題，並在 [歷程**記錄**] 索引標籤底下的 [程式碼計量] 資料。
 
-如需有關 Azure 版工作項目，請參閱 <<c0> [ 的工作項目](/azure/devops/boards/work-items/index?view=vsts)。
+如需 Azure Boards 工作專案的詳細資訊，請參閱[工作專案](/azure/devops/boards/work-items/index?view=vsts)。
 
-### <a name="to-create-a-work-item-based-on-a-result"></a>若要建立根據結果的工作項目
+### <a name="to-create-a-work-item-based-on-a-result"></a>若要根據結果建立工作專案
 
 1. 以滑鼠右鍵按一下結果。
 
-2. 指向**建立工作項目**，然後按一下您想要建立的工作項目類型 (**Bug**，**工作**，依此類推)。
+2. 指向 [**建立工作專案**]，然後按一下您想要建立的工作專案類型（[**Bug**] **、[工作] 等等）** 。
 
-3. 填寫所有必要欄位，以完成工作項目表單。
+3. 填寫所有必要的欄位，完成工作專案表單。
 
-4. 在 **檔案**功能表上，按一下**全部儲存**儲存工作項目。
+4. **在 [檔案**] 功能表上，按一下 [**全部儲存**] 以儲存工作專案。
 
-### <a name="to-create-a-bug-based-on-a-result"></a>若要建立根據結果的 bug
+### <a name="to-create-a-bug-based-on-a-result"></a>若要根據結果建立 bug
 
-1. 按一下以選取它的結果。
+1. 按一下結果以選取它。
 
-2. 按一下 [**建立工作項目**] 按鈕。
+2. 按一下 [**建立工作專案**] 按鈕。
 
-3. 填寫所有必要欄位，以完成工作項目表單。
+3. 填寫所有必要的欄位，完成工作專案表單。
 
-4. 在 **檔案**功能表上，按一下**全部儲存**儲存工作項目。
+4. **在 [檔案**] 功能表上，按一下 [**全部儲存**] 以儲存工作專案。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [程式碼度量值](../code-quality/code-metrics-values.md)
 - [如何：產生程式碼度量資料](../code-quality/how-to-generate-code-metrics-data.md)

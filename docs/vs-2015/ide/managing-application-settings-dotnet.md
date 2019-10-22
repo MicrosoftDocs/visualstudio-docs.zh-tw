@@ -10,15 +10,15 @@ helpviewer_keywords:
 - application settings [Visual Studio]
 ms.assetid: 35254321-ad14-47d9-b8c6-39ab3203c5d9
 caps.latest.revision: 27
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: d8e88bcf67c430bdd24c4338d92a30b6a7c10fef
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: b37ed78f9b67d10c0bf845a5bd7340f1f38557bb
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65675002"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72651418"
 ---
 # <a name="managing-application-settings-net"></a>管理應用程式設定 (.NET)
 
@@ -48,7 +48,7 @@ ms.locfileid: "65675002"
 
 ## <a name="creating-application-settings-at-design-time"></a>在設計階段建立應用程式設定
 
-在設計階段建立應用程式設定有兩種方式：使用 [專案設計工具]  的 [設定] 頁面，或是使用表單或控制項的 [屬性]  視窗，這個視窗可讓您將設定繫結至屬性。
+在設計階段建立應用程式設定有兩種方式：使用 [專案設計工具]  的 [設定]  頁面，或是使用表單或控制項的 [屬性]  視窗，這個視窗可讓您將設定繫結至屬性。
 
 當您建立應用程式範圍的設定 (例如資料庫連接字串或伺服器資源參考) 時， [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 會將設定儲存在 app.config 中，並標示 `<applicationSettings>` 標記。 (連接字串儲存在 `<connectionStrings>` 標記之下)。
 
@@ -100,6 +100,6 @@ Properties.Settings.Default.Save();
 
 如需透過 `Settings` 類別存取應用程式設定的一般資訊，請參閱[應用程式設定概觀](https://msdn.microsoft.com/library/0dd8bca5-a6bf-4ac4-8eec-5725d08b38dc)。 如需逐一查看設定的詳細資訊，請參閱此 [論壇文章](http://social.msdn.microsoft.com/Forums/vstudio/40fbb470-f1e8-4a02-a4a0-9f62b54d0fc4/is-this-possible-propertiessettingsdefault?forum=csharpgeneral)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [存取應用程式設定](https://msdn.microsoft.com/library/e38d0cc7-247a-46ca-ba04-f2913f0adb2e)

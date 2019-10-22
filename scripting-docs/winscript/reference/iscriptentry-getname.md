@@ -1,5 +1,5 @@
 ---
-title: IScriptEntry::GetName | Microsoft Docs
+title: IScriptEntry：： GetName |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d23843aa72ce5cf79f6442048b6493d17eb6ef64
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c99cda48a20efb41b2535645ccdb50be8bb6d6bc
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62787766"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575442"
 ---
 # <a name="iscriptentrygetname"></a>IScriptEntry::GetName
-代表單一物件 （例如函式） 的項目，傳回物件的名稱。  
+對於代表單一物件的專案（例如函式），會傳回物件的名稱。  
   
 ## <a name="syntax"></a>語法  
   
@@ -37,9 +37,9 @@ HRESULT GetName(
   
 #### <a name="parameters"></a>參數  
  `pbstr`  
- [out]所表示之物件的名稱`IScriptEntry`指令碼區塊。 如果項目不代表單一物件，則會傳回 NULL。  
+ 脫銷@No__t_0 腳本區塊所表示的物件名稱。 如果專案不代表單一物件，則會傳回 Null。  
   
- 子系項目代表單一函式物件。  
+ 子專案代表單一函式物件。  
   
 ## <a name="return-value"></a>傳回值  
  `HRESULT`。 可能的值包括 (但不限於) 下表中的這些值。  
@@ -50,6 +50,6 @@ HRESULT GetName(
   
 ## <a name="remarks"></a>備註  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IScriptEntry 介面](../../winscript/reference/iscriptentry-interface.md)   
- [IScriptNode::CreateChildEntry](../../winscript/reference/iscriptnode-createchildentry.md)
+ [IScriptNode:: CreateChildEntry](../../winscript/reference/iscriptnode-createchildentry.md)

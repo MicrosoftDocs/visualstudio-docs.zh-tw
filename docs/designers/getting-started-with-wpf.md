@@ -3,17 +3,17 @@ title: 什麼是 WPF？
 ms.date: 04/16/2018
 ms.topic: conceptual
 ms.assetid: f3be98cb-870f-472c-9da5-cb815e4f6598
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bac2041e9338f4b8b95755221a44157e0c409c8f
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
-ms.translationtype: HT
+ms.openlocfilehash: f921ce292e34147d54af977567373634610becfd
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66747287"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72637295"
 ---
 # <a name="get-started-with-wpf"></a>開始使用 WPF
 
@@ -31,7 +31,7 @@ Windows Presentation Foundation (WPF) 是建立桌面用戶端應用程式的 UI
 |WPF 的相關詳細資訊...|[WPF 概觀](../designers/introduction-to-wpf.md)<br /><br /> [XAML 概觀 (WPF)](/dotnet/framework/wpf/advanced/xaml-overview-wpf)<br /><br /> [控制項](/dotnet/framework/wpf/controls/)<br /><br /> [資料繫結概觀](/dotnet/framework/wpf/data/data-binding-overview)<br /><br /> [使用 LINQ to XML 進行 WPF 資料繫結](../designers/wpf-data-binding-with-linq-to-xml-overview.md)|
 |您是 Windows Form 開發人員嗎？|[Windows Forms 控制項和對等 WPF 控制項](/dotnet/framework/wpf/advanced/windows-forms-controls-and-equivalent-wpf-controls)<br /><br /> [WPF 和 Windows Forms 互通的支援情節](/dotnet/framework/wpf/advanced/wpf-and-windows-forms-interoperation)|
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [類別庫 (WPF)](/dotnet/framework/wpf/class-library-wpf)
 - [WPF 社群資源](/dotnet/framework/wpf/getting-started/community-feedback)

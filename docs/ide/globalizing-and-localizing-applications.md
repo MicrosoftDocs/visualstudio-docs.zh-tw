@@ -10,17 +10,17 @@ helpviewer_keywords:
 - world-ready applications
 - international applications [Visual Studio]
 ms.assetid: 4d9815ae-3e80-4b4d-933d-f8309aee18d5
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 934427c2bfba769968b7aeb364625b71af47eca7
-ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
-ms.translationtype: HT
+ms.openlocfilehash: 886c31eb76a2cd440f1f8189aaacf592e43d34fa
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66820877"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72603450"
 ---
 # <a name="develop-globalized-and-localized-apps"></a>開發全球化和當地語系化應用程式
 
@@ -48,7 +48,7 @@ Visual Studio 利用 [.NET](/dotnet/standard/globalization-localization/) 所內
 > [!NOTE]
 > 主控台應用程式不支援雙向語言的文字。 這是搭配使用 Windows 與主控台應用程式產生的後果。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [Visual Studio 中的雙向語言支援](use-bidirectional-languages.md)
 - [將 .NET 應用程式全球化和當地語系化](/dotnet/standard/globalization-localization/)

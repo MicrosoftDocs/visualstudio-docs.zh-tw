@@ -3,25 +3,25 @@ title: XML 結構描述設計工具工作空間
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 588fa495-fe7f-4b16-8a9f-6b6b8d2d502a
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e1350523b347d0dfb87831947b4fd1d9206521ca
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: d6e5efc4c192fbb9debeb9dd5f9ccf1eaec69efa
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65461336"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72608268"
 ---
-# <a name="xml-schema-designer-workspace-views"></a>XML 結構描述設計工具工作區檢視
+# <a name="xml-schema-designer-workspace-views"></a>XML 架構設計工具工作區視圖
 
-XML 結構描述設計工具 (XSD 設計工具) 是一種圖形化工具，可協助您瀏覽 XML 結構描述。 除了[XML 結構描述總管](../xml-tools/xml-schema-explorer.md)，可讓您瀏覽和巡覽 XML 結構描述樹狀目錄並執行搜尋，XSD 設計工具提供三種，您可以瀏覽 XSD 結構描述更詳細的檢視。
+XML 結構描述設計工具 (XSD 設計工具) 是一種圖形化工具，可協助您瀏覽 XML 結構描述。 除了可讓您流覽和流覽 XML 架構樹狀結構並執行搜尋的[Xml 架構流覽](../xml-tools/xml-schema-explorer.md)器之外，XSD 設計工具還提供三個視圖，您可以在其中更詳細地探索 xsd 架構。
 
-- **開始檢視**是啟動點 XSD 設計工具，從開始檢視中，您可以巡覽至 XSD 設計工具的其他檢視，並查看結構描述集的詳細資料。
-- **圖表檢視**可讓您查看結構描述設定和結構描述節點之間的關聯性的概觀。
-- **內容模型檢視**提供本機和全域結構描述節點，包括簡單和複雜型別、 項目、 群組、 屬性和屬性群組的詳細資料的圖形化表示法。
+- [**開始] 視圖**是 XSD 設計工具的啟動點。從 [開始] 視圖中，您可以流覽至 XSD 設計工具的其他視圖，並查看架構集的詳細資料。
+- **圖表視圖**可讓您查看架構集的總覽，以及架構節點之間的關聯性。
+- **內容模型視圖**提供本機和全域架構節點詳細資料的圖形表示，包括簡單和複雜類型、專案、群組、屬性和屬性群組。
 
 若要開始探索您感興趣的節點，您必須將它們新增至工作區。 工作空間在所有檢視之間共用。
 
@@ -29,22 +29,22 @@ XML 結構描述設計工具 (XSD 設計工具) 是一種圖形化工具，可�
 
 您可以利用下列方式將節點加入至工作空間：
 
-- 中的 < 結構描述設定的詳細資料 > 一節[開始檢視](../xml-tools/start-view.md)，按一下**新增**全域節點型別旁的連結。
+- 在 [[開始] 視圖](../xml-tools/start-view.md)的 [架構集合詳細資料] 區段中，按一下全域節點類型旁邊的 [**加入**] 連結。
 
-- 將，全域節點、 檔案節點，以及從命名空間節點拖放**XML 結構描述總管**到任何三個檢視。 如需詳細資訊，請參閱 「 拖放節點 」 一節[XML 結構描述總管](../xml-tools/xml-schema-explorer.md)。
+- 將 [全域節點]、[檔案節點] 和 [命名空間] 節點從**XML 架構瀏覽器**拖放到三個視圖的任一處。 如需詳細資訊，請參閱[XML 架構瀏覽器](../xml-tools/xml-schema-explorer.md)中的「拖放節點」一節。
 
-- 使用中的操作 （右鍵） 功能表**XML 結構描述總管**。 如需詳細資訊，請參閱 <<c0> [ 快顯功能表](../xml-tools/context-menus-xml-schema-explorer.md)。
+- 使用**XML 架構瀏覽器**中的內容（以滑鼠右鍵按一下）功能表。 如需詳細資訊，請參閱[內容功能表](../xml-tools/context-menus-xml-schema-explorer.md)。
 
-- 在 XSD 總管中執行搜尋，然後按一下**反白顯示的節點加入工作區**摘要結果面板上的按鈕。 如需詳細資訊，請參閱 <<c0> [ 搜尋結構描述集](../xml-tools/searching-the-schema-set.md)。
+- 在 XSD Explorer 中執行搜尋，然後按一下 [摘要] 結果窗格上的 [**將反白顯示的節點新增至工作區**] 按鈕。 如需詳細資訊，請參閱[搜尋架構集](../xml-tools/searching-the-schema-set.md)。
 
-## <a name="switch-views"></a>切換檢視
+## <a name="switch-views"></a>切換視圖
 
 若要切換檢視，請使用下列其中一項：
 
 - XSD 設計工具工具列。
 
-- 內容模型檢視和 [圖表] 檢視的操作 （右鍵） 功能表。
+- 內容模型視圖和圖表視圖的內容（以滑鼠右鍵按一下）功能表。
 
 - 開始檢視頁上的浮水印，或空白內容模型檢視或圖表檢視上的浮水印。
 
-- 快速鍵：**Ctrl**+**1**開始檢視，如**Ctrl**+**2**的 [圖表] 檢視中，並**Ctrl**+ **3**內容模型檢視。
+- 快速鍵： **ctrl** +**1**用於 [開始] 視圖 **，Ctrl** +**2**用於圖形視圖，而 [內容模型] 視圖則按**ctrl** +**3** 。

@@ -4,17 +4,17 @@ ms.date: 08/07/2019
 ms.topic: conceptual
 f1_keywords:
 - vs.UnitTest.CreateUnitTest
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aff50f5933d540297711e44487c775d93968f0fd
-ms.sourcegitcommit: 689ba54ea14257d13031de881f5d4fe937a36f56
+ms.openlocfilehash: 25e594136fe79d38268999099231791364d1082a
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "71342441"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72659898"
 ---
 # <a name="unit-test-basics"></a>單元測試基本概念
 
@@ -83,7 +83,7 @@ public void Withdraw(double amount)
 
 ## <a name="create-unit-test-projects-and-test-methods"></a>建立單元測試專案和測試方法
 
-從您的程式碼中產生單元測試專案和單元測試虛設常式通常較快。 或者您可以視您的需求而定，選擇以手動方式建立單元測試專案和測試。 如果您想要使用協力廠商架構建立單元測試，您需要安裝下列其中一個延伸模組：[NUnit](https://marketplace.visualstudio.com/items?itemName=NUnitDevelopers.TestGeneratorNUnitextension-18371) 或 [xUnit](https://marketplace.visualstudio.com/items?itemName=YowkoTsai.xUnitnetTestGenerator)。
+從您的程式碼中產生單元測試專案和單元測試虛設常式通常較快。 或者您可以視您的需求而定，選擇以手動方式建立單元測試專案和測試。 如果您想要使用協力廠商架構來建立單元測試，您將需要安裝下列其中一個延伸模組： [NUnit](https://marketplace.visualstudio.com/items?itemName=NUnitDevelopers.TestGeneratorNUnitextension-18371)或[xUnit](https://marketplace.visualstudio.com/items?itemName=YowkoTsai.xUnitnetTestGenerator)。
 
 ### <a name="generate-unit-test-project-and-unit-test-stubs"></a>產生單元測試專案和單元測試虛設常式
 
@@ -151,7 +151,7 @@ public void Withdraw(double amount)
 
    3. 在 [參考管理員] 對話方塊上，開啟 [方案] 節點，然後選擇 [專案]。 選取程式碼專案名稱，然後關閉對話方塊。
 
-每個單元測試專案包含的類別都可反映程式碼專案中的類別名稱。 在本例中， `AccountsTests` 專案可能包含下列類別：
+每個單元測試專案包含的類別都可反映程式碼專案中的類別名稱。 在本例中，`AccountsTests` 專案可能包含下列類別：
 
 - `AccountInfoTests` 類別包含 `AccountInfo` 專案中 `Accounts` 類別的單元測試方法。
 
@@ -255,7 +255,7 @@ public void My_Test ()
 ![從 [測試總管] 的工具列執行測試](../test/media/vs-2019/test-explorer-toolbar-diagram-16-2.png)
 ::: moniker-end
 
-您可以選擇 [全部執行] 以執行所有測試，或選擇 [執行] 以選擇要執行的一小組測試。 選取測試來在測試詳細資料窗格中檢視該測試的詳細資料。 從右鍵功能表中選擇 [開啟測試] (鍵盤：**F12**) 以顯示所選測試的原始程式碼。
+您可以選擇 [全部執行] 以執行所有測試，或選擇 [執行] 以選擇要執行的一小組測試。 選取測試來在測試詳細資料窗格中檢視該測試的詳細資料。 選擇右鍵功能表中的 [**開啟測試**] （鍵盤： **F12**）以顯示所選測試的原始程式碼。
 
 ::: moniker range="vs-2017"
 
@@ -322,7 +322,7 @@ public void My_Test ()
 
 **問：如果我使用 TDD，要如何從我的測試產生程式碼？**
 
-**答：** 請使用快速動作來在您的專案節點中產生類別和方法。 在測試方法中撰寫呼叫您希望產生類別或方法的陳述式，然後開啟出現在錯誤下方的燈泡。 若呼叫是針對新類別的建構函式，請從功能表中選擇 [產生型別]，然後遵循精靈來在您的程式碼專案中插入類別。 若呼叫針對方法，請從 IntelliSense 功能表中選擇 [產生方法]。
+**答：** 使用 [快速動作]，在您的專案程式碼中產生類別和方法。 在測試方法中撰寫呼叫您希望產生類別或方法的陳述式，然後開啟出現在錯誤下方的燈泡。 若呼叫是針對新類別的建構函式，請從功能表中選擇 [產生型別]，然後遵循精靈來在您的程式碼專案中插入類別。 若呼叫針對方法，請從 IntelliSense 功能表中選擇 [產生方法]。
 
 ::: moniker range="vs-2017"
 ![產生方法虛設常式快速動作功能表](../test/media/ute_generatemethodstubintellisense.png)
@@ -331,14 +331,14 @@ public void My_Test ()
 ![產生方法虛設常式快速動作功能表](../test/media/vs-2019/basics-generate-method-tdd.png)
 ::: moniker-end
 
-**問：是否可以建立採用多個資料集作為輸入來執行測試的單元測試？**
+**問：是否可以建立採用多個資料集做為輸入來執行測試的單元測試？**
 
-**答：** 是的。 *「資料驅動型測試方法」* (data-driven test method) 可讓您使用單一單元測試方法測試某個範圍的值。 請使用此測試方法的 `DataSource` 屬性，該屬性會指定包含您要測試之變數值的資料來源和資料表。  在方法主體中，您可使用 `TestContext.DataRow[`*ColumnName*`]` 索引子將資料列值指派給變數。
+**答：** 可以。 *「資料驅動型測試方法」* (data-driven test method) 可讓您使用單一單元測試方法測試某個範圍的值。 請使用此測試方法的 `DataSource` 屬性，該屬性會指定包含您要測試之變數值的資料來源和資料表。  在方法主體中，您可使用 `TestContext.DataRow[`*ColumnName*`]` 索引子將資料列值指派給變數。
 
 > [!NOTE]
 > 這些程序只適用於透過 Managed 程式碼適用的 Microsoft 單元測試架構所撰寫的測試方法。 如果您使用不同的架構，請參閱架構文件的同等功能。
 
-例如，假設我們將不需要的方法加入至名為 `CheckingAccount` 的 `AddIntegerHelper` 類別。 `AddIntegerHelper` 會加入兩個整數。
+例如，假設我們將不需要的方法加入至名為 `CheckingAccount` 的 `AddIntegerHelper`類別。 `AddIntegerHelper` 會加入兩個整數。
 
 若要為 `AddIntegerHelper` 方法建立資料驅動型測試，我們會先建立名為 *AccountsTest.accdb* 的 Access 資料庫和名為 `AddIntegerHelperData` 的資料表。 `AddIntegerHelperData` 資料表會定義可指定加法之第一個和第二個運算元的資料行，和可指定預期結果的資料行。 我們在多個資料列中填入適當的值。
 
@@ -365,11 +365,11 @@ public void AddIntegerHelper_DataDrivenValues_AllShouldPass()
 
 **問：是否可以檢視我的單元測試已測試了多少程式碼？**
 
-**答：** 是的。 您可以使用 Visual Studio Enterprise 中的 Visual Studio 程式碼涵蓋範圍工具，來判斷單元測試實際測試的程式碼數量。 原生和 Managed 語言，以及可由單元測試架構執行的所有單元測試架構都受支援。
+**答：** 可以。 您可以使用 Visual Studio Enterprise 中的 Visual Studio 程式碼涵蓋範圍工具，來判斷單元測試實際測試的程式碼數量。 原生和 Managed 語言，以及可由單元測試架構執行的所有單元測試架構都受支援。
 
 您可以在方案中的所選測試或所有測試上執行程式碼涵蓋範圍。 [程式碼涵蓋範圍結果] 視窗會顯示線條、函式、類別、命名空間及模組所運用的產品程式碼區塊的百分比。
 
-若要在方案中執行測試方法的程式碼涵蓋範圍，請選擇 [**測試** > ] [**分析所有測試的程式碼涵蓋範圍**]。
+若要在方案中執行測試方法的程式碼涵蓋範圍，請選擇 [**測試**]  > **分析所有測試的程式碼涵蓋範圍**。
 
 涵蓋範圍結果會出現在 [程式碼涵蓋範圍結果] 視窗中。
 
@@ -377,9 +377,9 @@ public void AddIntegerHelper_DataDrivenValues_AllShouldPass()
 
 進一步了解 [程式碼涵蓋範圍](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md) 。
 
-**問：是否可以在程式碼中測試具有外部相依性的方法？**
+**問：是否可以測試我程式碼中具有外部相依性的方法？**
 
-**答：** 是的。 如果您有 Visual Studio Enterprise，則 Microsoft Fakes 可用於您透過 Managed 程式碼適用的單元測試架構所撰寫的測試方法。
+**答：** 可以。 如果您有 Visual Studio Enterprise，則 Microsoft Fakes 可用於您透過 Managed 程式碼適用的單元測試架構所撰寫的測試方法。
 
 Microsoft Fakes 會使用兩種方式來建立外部相依性的替代類別：
 
@@ -391,9 +391,9 @@ Microsoft Fakes 會使用兩種方式來建立外部相依性的替代類別：
 
 深入了解 [使用 Microsoft Fakes 隔離單元測試方法](../test/isolating-code-under-test-with-microsoft-fakes.md)。
 
-**問：是否可以使用其他單元測試架構來建立單元測試？**
+**問：是否可以使用其他單元測試架構搭配 IntelliTest？**
 
-**答：** 可以，請遵循[尋找並安裝其他架構](../test/install-third-party-unit-test-frameworks.md)中的步驟。 重新啟動 Visual Studio 之後，重新開啟方案以建立您的單元測試，然後在這裡選取您已安裝的架構：
+**答：** 可以，請遵循 [尋找並安裝其他架構](../test/install-third-party-unit-test-frameworks.md)中的步驟。 重新啟動 Visual Studio 之後，重新開啟方案以建立您的單元測試，然後在這裡選取您已安裝的架構：
 
 ![選取其他已安裝的單元測試架構](../test/media/createunittestsdialogextensions.png)
 

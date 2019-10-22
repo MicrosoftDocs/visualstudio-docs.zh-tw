@@ -1,20 +1,20 @@
 ---
-title: 工作流程設計工具-Collection 活動設計工具
+title: 工作流程設計工具集合活動設計工具
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 6a07ed95-8319-44a2-8a1d-b4a89f16d0d9
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c1bc98e8f40dda13e6b2b90adade479ed4aeba97
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 397ede1d6b77c687f308204593f60b8e947e0cbf
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62949923"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72650677"
 ---
 # <a name="collection-activity-designers"></a>Collection 活動設計工具
 
-活動設計工具會用來建立及設定用來管理集合活動的集合包含在本節中下, 表所列的主題提供有關如何使用在工作流程 Designeractivity 與範本設計工具的指引。
+集合活動設計工具是用來建立和設定用來管理集合的活動。本節中包含的主題以及下表所列的主題，提供如何使用工作流程 Designeractivity 和範本設計工具的指引。

@@ -17,15 +17,15 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fe6a05c5e73d26a8daa9e46c317422d85d1c40be
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 10dd6366e2d0783ec2e9d6bdadc001e9f999901e
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62840157"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575673"
 ---
 # <a name="scriptstate-enumeration"></a>SCRIPTSTATE 列舉
-指定指令碼引擎的狀態。 這個列舉型別由[IActiveScript::GetScriptState](../../winscript/reference/iactivescript-getscriptstate.md) ， [iactivescript:: Setscriptstate](../../winscript/reference/iactivescript-setscriptstate.md) ，並[IActiveScriptSite::OnStateChange](../../winscript/reference/iactivescriptsite-onstatechange.md)方法。  
+指定腳本引擎的狀態。 [IActiveScript：： GetScriptState](../../winscript/reference/iactivescript-getscriptstate.md) 、 [IActiveScript：： SetScriptState](../../winscript/reference/iactivescript-setscriptstate.md)和[IActiveScriptSite：： OnStateChange](../../winscript/reference/iactivescriptsite-onstatechange.md)方法會使用這個列舉。  
   
 ## <a name="syntax"></a>語法  
   
@@ -44,12 +44,12 @@ typedef enum tagSCRIPTSTATE {
   
 |||  
 |-|-|  
-|SCRIPTSTATE_UNINITIALIZED|指令碼剛剛建立，但還尚未初始化使用`IPersist*`介面和[iactivescript:: Setscriptsite](../../winscript/reference/iactivescript-setscriptsite.md) 。|  
-|SCRIPTSTATE_INITIALIZED|指令碼已初始化，但未執行 （連接至其他物件或接收事件） 或執行任何程式碼。 程式碼可以執行查詢，藉由呼叫[iactivescriptparse:: Parsescripttext](../../winscript/reference/iactivescriptparse-parsescripttext.md)方法。|  
-|SCRIPTSTATE_STARTED|指令碼可以執行程式碼，但還未接收的事件所加入的物件[iactivescript:: Addnameditem](../../winscript/reference/iactivescript-addnameditem.md)方法。|  
-|SCRIPTSTATE_CONNECTED|指令碼會載入，並已連線的接收事件。|  
-|SCRIPTSTATE_DISCONNECTED|指令碼會載入和執行階段的執行狀態，但暫時中斷接收事件。|  
-|SCRIPTSTATE_CLOSED|指令碼已關閉。 指令碼引擎不再運作，並傳回大部分方法的錯誤。|  
+|SCRIPTSTATE_UNINITIALIZED|腳本剛建立完成，但是尚未使用 `IPersist*` 介面和[IActiveScript：： SetScriptSite](../../winscript/reference/iactivescript-setscriptsite.md)初始化。|  
+|SCRIPTSTATE_INITIALIZED|腳本已經初始化，但不在執行中（連接到其他物件或接收事件）或正在執行任何程式碼。 藉由呼叫[IActiveScriptParse：:P arsescripttext](../../winscript/reference/iactivescriptparse-parsescripttext.md)方法，即可查詢程式碼以進行執行。|  
+|SCRIPTSTATE_STARTED|腳本可以執行程式碼，但尚未接收[IActiveScript：： AddNamedItem](../../winscript/reference/iactivescript-addnameditem.md)方法所新增之物件的事件。|  
+|SCRIPTSTATE_CONNECTED|載入並連接腳本以接收事件。|  
+|SCRIPTSTATE_DISCONNECTED|腳本已載入並具有執行時間執行狀態，但暫時與接收事件中斷連接。|  
+|SCRIPTSTATE_CLOSED|腳本已關閉。 指令碼引擎不再運作，並傳回大部分方法的錯誤。|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [動態指令碼的常數、列舉和錯誤碼](../../winscript/reference/active-script-constants-enumerations-and-error-codes.md)

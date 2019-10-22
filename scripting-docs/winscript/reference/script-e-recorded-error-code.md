@@ -11,15 +11,15 @@ caps.latest.revision: 3
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e652f845fd039549ee8e32e9d87e668b3ca759c1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: cb882d8230672f61789c504b5157ade196b63e43
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62840300"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574433"
 ---
-# <a name="scripterecorded-error-code"></a>SCRIPT_E_RECORDED 錯誤碼
-指令碼引擎和主機之間已傳遞錯誤。 主機必須傳遞給呼叫者的錯誤程式碼。  
+# <a name="script_e_recorded-error-code"></a>SCRIPT_E_RECORDED 錯誤碼
+腳本引擎與主機之間已傳遞錯誤。 主機必須將錯誤碼傳遞給呼叫者。  
   
 ## <a name="syntax"></a>語法  
   
@@ -27,5 +27,5 @@ ms.locfileid: "62840300"
 SCRIPT_E_RECORDED   0x86664004L  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [動態指令碼的常數、列舉和錯誤碼](../../winscript/reference/active-script-constants-enumerations-and-error-codes.md)

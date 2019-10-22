@@ -1,5 +1,5 @@
 ---
-title: 作法：管理編輯器視窗
+title: 如何：管理編輯器視窗
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,19 +8,19 @@ helpviewer_keywords:
 - editors, windows management
 - Code Editor, windows management
 ms.assetid: 340143d4-8a71-490d-823e-162b276f4c6d
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a8b6d1d4c39f09382dd0e4a12660bed31ad9b2d
-ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
-ms.translationtype: HT
+ms.openlocfilehash: 3493a70bd1257194f8c95a58eb6c2890d83ed418
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "65531933"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72645817"
 ---
-# <a name="how-to-manage-editor-windows"></a>作法：管理編輯器視窗
+# <a name="how-to-manage-editor-windows"></a>如何：管理編輯器視窗
 
 您可以同時在數個位置處理程式碼。 做法是分割編輯器視窗，或開啟數個編輯器視窗執行個體。
 
@@ -54,7 +54,7 @@ ms.locfileid: "65531933"
 
    會新增編輯器的新索引標籤式執行個體。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [程式碼編輯器的功能](../ide/writing-code-in-the-code-and-text-editor.md)
 - [自訂視窗版面配置](../ide/customizing-window-layouts-in-visual-studio.md)

@@ -1,5 +1,5 @@
 ---
-title: 'Idebugdocumenthelper:: Addunicodetext |Microsoft Docs'
+title: IDebugDocumentHelper：： AddUnicodeText |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 391095acc1d2f541a3c497abeac5ae7248baa4e8
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 5820c380c92f2c3cd95763b440d5f9755db3e717
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63446623"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577059"
 ---
 # <a name="idebugdocumenthelperaddunicodetext"></a>IDebugDocumentHelper::AddUnicodeText
-將 Unicode 字串附加至這份文件的結尾。  
+將 Unicode 字串附加到本檔的結尾。  
   
 ## <a name="syntax"></a>語法  
   
@@ -37,7 +37,7 @@ HRESULT AddUnicodeText(
   
 #### <a name="parameters"></a>參數  
  `pszText`  
- [in]以 null 終止的字串，包含文字的指標。  
+ 在包含文字之以 null 終止之字串的指標。  
   
 ## <a name="return-value"></a>傳回值  
  方法會傳回 `HRESULT`。 可能的值包括 (但不限於) 下表中的這些值。  
@@ -45,15 +45,15 @@ HRESULT AddUnicodeText(
 |值|描述|  
 |-----------|-----------------|  
 |`S_OK`|方法成功。|  
-|`E_FAIL`|此方法無法加入這些字元。|  
+|`E_FAIL`|方法無法加入這些字元。|  
   
 ## <a name="remarks"></a>備註  
- 這個方法會產生`IDebugDocumentTextEvents`通知。  
+ 這個方法會產生 `IDebugDocumentTextEvents` 通知。  
   
 > [!NOTE]
-> 如果這個方法之後呼叫`AddDeferredText`已呼叫`E_FAIL`會傳回。  
+> 如果在呼叫 `AddDeferredText` 之後呼叫這個方法，則會傳回 `E_FAIL`。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDebugDocumentHelper 介面](../../winscript/reference/idebugdocumenthelper-interface.md)   
- [IDebugDocumentHelper::AddDeferredText](../../winscript/reference/idebugdocumenthelper-adddeferredtext.md)   
+ [IDebugDocumentHelper：： AddDeferredText](../../winscript/reference/idebugdocumenthelper-adddeferredtext.md)    
  [IDebugDocumentTextEvents 介面](../../winscript/reference/idebugdocumenttextevents-interface.md)

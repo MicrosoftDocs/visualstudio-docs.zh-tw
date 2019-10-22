@@ -7,17 +7,17 @@ helpviewer_keywords:
 - counter sets
 - load tests, counter sets
 ms.assetid: e17d0e71-f982-4fc1-a2df-a1065d37473d
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 004eff423874a07e2b49713eaed16eb1bf8be609
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: e7e547e3dfc863e3459cc0e5c575d394f83582f6
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62979443"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72644350"
 ---
-# <a name="how-to-add-counters-to-counter-sets-using-the-load-test-editor"></a>HOW TO：使用負載測試編輯器將計數器新增至計數器集合
+# <a name="how-to-add-counters-to-counter-sets-using-the-load-test-editor"></a>如何：使用負載測試編輯器將計數器新增至計數器集合
 
 當您使用 [負載測試精靈] 建立負載測試時，您會新增初始的計數器集合。 這些都會為您的負載測試提供一組預先定義的計數器集合。 如需詳細資訊，請參閱[在負載測試中指定電腦的計數器集合和臨界值規則](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md)。
 
@@ -57,12 +57,12 @@ ms.locfileid: "62979443"
 
      選取 [所有計數器] 選項按鈕，選取所有可用的計數器。
 
-7. 選擇 [確定] 。
+7. 選擇 [確定]。
 
     > [!NOTE]
     > 另一個將計數器加入至計數器集合的方法是，選擇現有的計數器或計數器類別，選擇 [複製]，然後將它們貼至另一個計數器集合節點。 如果也複製了其他不需要的計數器，可以予以刪除。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [在負載測試中指定電腦的計數器集合和臨界值規則](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md)
 - [設定負載測試回合設定](../test/configure-load-test-run-settings.md)

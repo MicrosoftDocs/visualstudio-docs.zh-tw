@@ -8,17 +8,17 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.U-SQL.Formatting.Indentation
 - VS.ToolsOptionsPages.Text_Editor.U-SQL.Formatting
 - VS.ToolsOptionsPages.Text_Editor.U-SQL.Formatting.General
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c402033efe31b4cbbddbe02b73aec7be08914fc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: d1e57470c1afa0fad97265bdcebff4fd9a2a0a43
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62778361"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72666671"
 ---
 # <a name="options-text-editor-u-sql-formatting"></a>選項、文字編輯器、U-SQL、格式化
 
@@ -49,6 +49,6 @@ ms.locfileid: "62778361"
 - 當您將程式碼貼到檔案中，同時已選取 [貼上時自動格式化] 時
 - 當正在格式化的區塊是手動輸入時
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [選項對話方塊、環境、一般](../../ide/reference/general-environment-options-dialog-box.md)

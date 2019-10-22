@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptSite::OnScriptTerminate |Microsoft Docs
+title: IActiveScriptSite：： OnScriptTerminate |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 664f974b26a2cae0d1e16d37dc3bc66e95993d6f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a715b39b07df4183d4ec542a1dd82b4229d1f41e
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62992646"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72570212"
 ---
 # <a name="iactivescriptsiteonscriptterminate"></a>IActiveScriptSite::OnScriptTerminate
-通知主機指令碼已完成執行。  
+通知主機腳本已完成執行。  
   
 ## <a name="syntax"></a>語法  
   
@@ -38,16 +38,16 @@ HRESULT OnScriptTerminate(
   
 #### <a name="parameters"></a>參數  
  `pvarResult`  
- [in]包含指令碼結果中，變數的位址或`NULL`如果指令碼會不產生任何結果。  
+ 在包含腳本結果之變數的位址，如果腳本沒有產生任何結果，則為 `NULL`。  
   
  `pexcepinfo`  
- [in]位址`EXCEPINFO`結構，其中包含指令碼結束時，所產生的例外狀況資訊或`NULL`如果不產生任何例外狀況。  
+ 在@No__t_0 結構的位址，其中包含腳本終止時所產生的例外狀況資訊，或在未產生任何例外狀況時 `NULL`。  
   
 ## <a name="return-value"></a>傳回值  
  若成功，會傳回 `S_OK`。  
   
 ## <a name="remarks"></a>備註  
- 指令碼引擎之前呼叫這個方法的呼叫[IActiveScriptSite::OnStateChange](../../winscript/reference/iactivescriptsite-onstatechange.md)方法，設定 SCRIPTSTATE_INITIALIZED 旗標，已完成。 這個方法可用來傳回至主機的完成狀態和結果。 請注意，許多指令碼語言，以從主機接收事件為基礎，主應用程式所定義的有效期限。 在此情況下，可能永遠不會呼叫這個方法。  
+ 腳本引擎會在呼叫[IActiveScriptSite：： OnStateChange](../../winscript/reference/iactivescriptsite-onstatechange.md)方法之前呼叫這個方法，並將 SCRIPTSTATE_INITIALIZED 旗標設定為 completed。 這個方法可以用來將完成狀態和結果傳回給主機。 請注意，許多以主機事件為基礎的指令碼語言，都有主機所定義的生命週期。 在此情況下，可能永遠不會呼叫這個方法。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md)

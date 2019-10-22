@@ -7,17 +7,17 @@ helpviewer_keywords:
 - Devenv, /RunExit switch
 - /RunExit Devenv switch
 ms.assetid: bfc94875-5fc0-4110-b961-d59c0b403790
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3fa010e72267dadfb1974f7ce8be3b6b9a3e1cff
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 295d4999437248cc9221631378c2beffd80094d8
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62935041"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72655527"
 ---
 # <a name="runexit-devenvexe"></a>/RunExit (devenv.exe)
 
@@ -33,7 +33,7 @@ devenv /RunExit {SolutionName|ProjectName} [/Out OutputFilename]
 
 - *SolutionName*
 
-  方案檔的完整路徑和名稱。
+  解決方案檔的完整路徑和名稱。
 
 - *ProjectName*
 
@@ -41,11 +41,11 @@ devenv /RunExit {SolutionName|ProjectName} [/Out OutputFilename]
 
 - `/Out` *OutputFilename*
 
-  選擇性。 您要將工具的輸出傳送到其中的檔案名稱。 如果檔案已經存在，工具就會將輸出附加至檔案結尾。
+  選擇項。 您要將工具的輸出傳送到其中的檔案名稱。 如果檔案已經存在，工具就會將輸出附加至檔案結尾。
 
 ## <a name="remarks"></a>備註
 
-根據為使用中方案組態所指定的設定，編譯並執行指定的專案或方案。 當專案或方案執行時，此參數會將 IDE 最小化。 它會在專案或方案完成執行之後關閉 IDE。
+根據為使用中解決方案設定指定的設定，編譯並執行指定的專案或解決方案。 當專案或方案執行時，此參數會將 IDE 最小化。 它會在專案或方案完成執行之後關閉 IDE。
 
 - 請以雙引號括住包含空格的字串。
 
@@ -59,7 +59,7 @@ devenv /RunExit {SolutionName|ProjectName} [/Out OutputFilename]
 devenv /runexit "%USERPROFILE%\source\repos\MySolution\MySolution.sln"
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [Devenv 命令列參數](../../ide/reference/devenv-command-line-switches.md)
 - [/Run (devenv.exe)](../../ide/reference/run-devenv-exe.md)

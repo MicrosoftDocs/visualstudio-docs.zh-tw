@@ -5,8 +5,8 @@ ms.date: 10/23/2017
 ms.technology: vs-ide-mobile
 ms.topic: conceptual
 ms.assetid: 663140ea-a568-472b-a79a-dfea8818e06a
-author: corob
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: jillfra
 f1_keywords:
 - VC.Project.VCClangCompilerTool.AdditionalIncludeDirectories
@@ -43,16 +43,16 @@ f1_keywords:
 - vc.project.AdditionalOptionsPage
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: 055ec15deed2e5071c50d9903779d00030e07b02
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 7c64ccedaeb8c13e353daaba0aeec0a388885bdf
+ms.sourcegitcommit: 6ae0a289f1654dec63b412bfa22035511a2ef5ad
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62819912"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71950661"
 ---
 # <a name="clang-project-properties-android-c"></a>Clang 專案屬性 (Android C++)
 
-屬性 | 說明 | 選擇
+屬性 | 描述 | 選擇
 --- | ---| ---
 其他 Include 目錄 | 指定一或多個要新增至 Include 路徑中的目錄；如有多個目錄，請使用分號加以分隔。 (-I[路徑])。
 偵錯資訊格式 | 指定編譯器所產生的偵錯資訊類型。 | **無** - 因為不產生任何偵錯資訊，所以編譯速度會較快。<br>**完整偵錯資訊 (DWARF2)** - 產生 DWARF2 偵錯資訊。<br>**行號資訊** - 僅產生行號資訊。<br>

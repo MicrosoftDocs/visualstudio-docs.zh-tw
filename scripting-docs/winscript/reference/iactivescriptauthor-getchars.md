@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptAuthor::GetChars | Microsoft Docs
+title: IActiveScriptAuthor：： GetChars |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 69cdeb16fa0791b3ff8c0cce4a4e67fe110eefc2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2ce2b46d65c2ce92111bc4b6f44f66ce9dc4ce5f
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62935369"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576257"
 ---
 # <a name="iactivescriptauthorgetchars"></a>IActiveScriptAuthor::GetChars
-傳回完成要求的完成內容的字元集。  
+傳回要求完成內容的完成字元集合。  
   
 ## <a name="syntax"></a>語法  
   
@@ -38,17 +38,17 @@ HRESULT GetChars(
   
 #### <a name="parameters"></a>參數  
  `fRequestedList`  
- [in]要求的完成內容中。  
+ 在要求的完成內容。  
   
 |常數|值|描述|  
 |--------------|-----------|-----------------|  
-|SCRIPT_CMPL_ENUM_TRIGGER|0x0001|要求的左側列舉型別。|  
+|SCRIPT_CMPL_ENUM_TRIGGER|0x0001|要求左側列舉。|  
 |SCRIPT_CMPL_MEMBER_TRIGGER|0x0002|要求成員完成內容。|  
-|SCRIPT_CMPL_PARAM_TRIGGER|0x0003|要求的參數清單。|  
-|SCRIPT_CMPL_COMMIT|0x0004|參數清單的要求完成。|  
+|SCRIPT_CMPL_PARAM_TRIGGER|0x0003|要求參數清單。|  
+|SCRIPT_CMPL_COMMIT|0x0004|要求完成參數清單。|  
   
  `pbstrChars`  
- [out]對應到要求的完成內容的字元。  
+ 脫銷對應至所要求完成內容的字元。  
   
 |`fRequestedList` 參數|傳回的字元|  
 |--------------------------------|-------------------------|  
@@ -66,5 +66,5 @@ HRESULT GetChars(
   
 ## <a name="remarks"></a>備註  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IActiveScriptAuthor 介面](../../winscript/reference/iactivescriptauthor-interface.md)

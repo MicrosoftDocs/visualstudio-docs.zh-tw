@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentText::GetLineOfPosition | Microsoft Docs
+title: IDebugDocumentText：： GetLineOfPosition |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4d5d33a68b4bc87307281e37ff96f84834257a22
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e8ce32e46c42ee864a88e169a79539efb8b05633
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62970870"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572122"
 ---
 # <a name="idebugdocumenttextgetlineofposition"></a>IDebugDocumentText::GetLineOfPosition
-傳回指定的字元位置的行號，並選擇性地對應之行內的字元位移。  
+傳回行號，以及（選擇性）對應至指定字元位置之行內的字元位移。  
   
 ## <a name="syntax"></a>語法  
   
@@ -39,13 +39,13 @@ HRESULT GetLineOfPosition(
   
 #### <a name="parameters"></a>參數  
  `cCharacterPosition`  
- [in]開始位置的字元位置範圍。  
+ 在字元位置範圍的開始位置。  
   
  `pcLineNumber`  
- [out]範圍的行號。  
+ 脫銷範圍的行號。  
   
  `pcCharacterOffsetInLine`  
- [in、 out]行內範圍的字元位移`pcLineNumber`。 如果這個參數是`NULL`，此方法不會傳回值。  
+ [in、out]行 `pcLineNumber` 內範圍的字元位移。 如果這個參數是 `NULL`，則方法不會傳回值。  
   
 ## <a name="return-value"></a>傳回值  
  方法會傳回 `HRESULT`。 可能的值包括 (但不限於) 下表中的這些值。  
@@ -55,7 +55,7 @@ HRESULT GetLineOfPosition(
 |`S_OK`|方法成功。|  
   
 ## <a name="remarks"></a>備註  
- 這個方法會傳回至指定的字元位置的行號，並選擇性地對應之行內的字元位移。  
+ 這個方法會傳回行號，以及（選擇性）在對應至指定字元位置的行內的字元位移。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDebugDocumentText 介面](../../winscript/reference/idebugdocumenttext-interface.md)

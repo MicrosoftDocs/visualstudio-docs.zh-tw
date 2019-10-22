@@ -1,5 +1,5 @@
 ---
-title: 'Idebugdocumenthelper:: Attach |Microsoft Docs'
+title: IDebugDocumentHelper：： Attach |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8f4fbd1686d27e594b748ca97c82c645de1b93de
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3400a5bf6cd3e4a9726fdf4b2f20bbf43b9fc989
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62783131"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577025"
 ---
 # <a name="idebugdocumenthelperattach"></a>IDebugDocumentHelper::Attach
-將這份文件加入至文件樹狀目錄中。  
+將這份檔加入檔樹狀結構中。  
   
 ## <a name="syntax"></a>語法  
   
@@ -37,7 +37,7 @@ HRESULT Attach(
   
 #### <a name="parameters"></a>參數  
  `pddhParent`  
- [in]本文件將會新增到文件樹狀結構。 可以是 NULL。  
+ 在將加入此檔的檔樹狀結構。 可能是 Null。  
   
 ## <a name="return-value"></a>傳回值  
  方法會傳回 `HRESULT`。 可能的值包括 (但不限於) 下表中的這些值。  
@@ -47,8 +47,8 @@ HRESULT Attach(
 |`S_OK`|方法成功。|  
   
 ## <a name="remarks"></a>備註  
- 這個方法會將這份文件加入至文件樹狀結構、 使用`pddhParent`做為父系。 如果`pddhParent`是`NULL`，本文件將會是最上層的文件。  
+ 這個方法會使用 `pddhParent` 做為父系，將此檔加入檔樹狀結構中。 如果 `pddhParent` 是 `NULL`，這份檔將會是最上層檔。  
   
-## <a name="see-also"></a>另請參閱  
- [IDebugDocumentHelper::Detach](../../winscript/reference/idebugdocumenthelper-detach.md)   
+## <a name="see-also"></a>請參閱  
+ [IDebugDocumentHelper：:D etach](../../winscript/reference/idebugdocumenthelper-detach.md)    
  [IDebugDocumentHelper 介面](../../winscript/reference/idebugdocumenthelper-interface.md)

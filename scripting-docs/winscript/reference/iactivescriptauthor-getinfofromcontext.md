@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptAuthor::GetInfoFromContext | Microsoft Docs
+title: IActiveScriptAuthor：： GetInfoFromCoNtext |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e4fe885e116019608dd8d748c3cbdaff5d31dd2a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 457b2ad1bda3226caf3604e3ccd6b976f01bca83
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62935382"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576218"
 ---
 # <a name="iactivescriptauthorgetinfofromcontext"></a>IActiveScriptAuthor::GetInfoFromContext
-傳回類型的程式碼區塊中的資訊和錨點指定的字元位置。 IntelliSense、 全域清單和參數提示，這會提供成員的資訊。  
+傳回程序代碼區塊中指定字元的類型資訊和錨點位置。 這會提供成員 IntelliSense、全域清單和參數提示的相關資訊。  
   
 ## <a name="syntax"></a>語法  
   
@@ -46,52 +46,52 @@ HRESULT GetInfoFromContext(
   
 #### <a name="parameters"></a>參數  
  `pszCode`  
- [in]用來產生資訊結果的程式碼區塊字串的位址。  
+ 在用來產生資訊結果之程式碼區塊字串的位址。  
   
  `cchCode`  
- [in]程式碼區塊的長度。  
+ 在程式碼區塊的長度。  
   
  `ichCurrentPosition`  
- [in]相對於開頭的字元位置的區塊。  
+ 在相對於區塊開頭的字元位置。  
   
  `dwListTypesRequested`  
- [in]要求清單的型別。 可以是下列值的組合：  
+ 在要求的清單類型。 可以是下列值的組合：  
   
 |常數|值|描述|  
 |--------------|-----------|-----------------|  
-|SCRIPT_CMPL_NOLIST|0x0000|沒有清單中。|  
-|SCRIPT_CMPL_MEMBERLIST|0x0001|成員的清單。|  
+|SCRIPT_CMPL_NOLIST|0x0000|無清單。|  
+|SCRIPT_CMPL_MEMBERLIST|0x0001|成員清單。|  
 |SCRIPT_CMPL_ENUMLIST|0x0002|列舉清單。|  
 |SCRIPT_CMPL_PARAMLIST|0x0004|呼叫方法參數清單。|  
 |SCRIPT_CMPL_GLOBALLIST|0x0008|全域清單。|  
   
- SCRIPT_CMPL_GLOBALLIST 型別會被視為預設的完成項目，可以使用其他的完成項目中的 OR 運算子結合。 第一次撰寫引擎的指令碼會嘗試填入其他完成清單項目型別資訊。 如果失敗，SCRIPT_CMPL_GLOBALLIST 引擎將會填入。  
+ SCRIPT_CMPL_GLOBALLIST 類型會被視為預設的完成專案，可以使用 OR 運算子與其他完成專案結合。 腳本撰寫引擎會先嘗試填入其他完成清單專案的類型資訊。 如果失敗，引擎就會填入 SCRIPT_CMPL_GLOBALLIST。  
   
  `pdwListTypesProvided`  
- [out]提供清單型別。  
+ 脫銷提供的清單類型。  
   
  `pichListAnchorPosition`  
- [out]包含目前位置的內容的起始索引。 起始索引是以相對於該區塊的開頭。  
+ 脫銷包含目前位置之內容的起始索引。 開始索引是相對於區塊的開頭。  
   
- 這會填入時才`dwListTypesRequested`包括 SCRIPT_CMPL_MEMBERLIST、 SCRIPT_CMPL_ENUMLIST 或 SCRIPT_CMPL_GLOBALLIST。 對於其他要求的清單型別，結果是未定義。  
+ 只有當 `dwListTypesRequested` 包含 SCRIPT_CMPL_MEMBERLIST、SCRIPT_CMPL_ENUMLIST 或 SCRIPT_CMPL_GLOBALLIST 時，才會填入此內容。 若為其他要求的清單類型，則結果為未定義。  
   
  `pichFuncAnchorPosition`  
- [out]函式呼叫，其中包含目前位置的起始索引。 起始索引是以相對於該區塊的開頭。  
+ 脫銷包含目前位置之函式呼叫的起始索引。 開始索引是相對於區塊的開頭。  
   
- 以及只包含目前位置的內容是函式呼叫時，才會填入這`dwListTypesRequested`包含 SCRIPT_CMPL_PARAMLIST。 否則，結果就是未定義。  
+ 只有當包含目前位置的內容是函式呼叫，以及當 `dwListTypesRequested` 包含 SCRIPT_CMPL_PARAMLIST 時，才會填入此。 否則，結果會是未定義的。  
   
  `pmemid`  
- [out]函式中的型別所定義 MEMBERID `IProvideMultipleClassInfo``ppunk` out 參數。  
+ 脫銷函數的 MEMBERID，如 `IProvideMultipleClassInfo``ppunk` out 參數中的類型所定義。  
   
- 這會填入時才`dwListTypesRequested`包含 SCRIPT_CMPL_PARAMLIST。  
+ 只有在 `dwListTypesRequested` 包含 SCRIPT_CMPL_PARAMLIST 時，才會填入此內容。  
   
  `piCurrentParameter`  
- [out]包含目前位置的參數索引。 如果目前位置位於函式名稱，則傳回-1。  
+ 脫銷包含目前位置之參數的索引。 如果目前的位置是在函式名稱上，則會傳回-1。  
   
- `piCurrentParameter`會填入值時，才`dwListTypesRequested`包含 SCRIPT_CMPL_PARAMLIST。  
+ 只有在 `dwListTypesRequested` 包含 SCRIPT_CMPL_PARAMLIST 時，才會填入 `piCurrentParameter` 值。  
   
  `ppunk`  
- 型別資訊，所提供的形式`IProvideMultipleClassInfo`物件。  
+ 型別資訊，以 `IProvideMultipleClassInfo` 物件的形式提供。  
   
 ## <a name="return-value"></a>傳回值  
  `HRESULT`。 可能的值包括 (但不限於) 下表中的這些值。  
@@ -102,6 +102,6 @@ HRESULT GetInfoFromContext(
   
 ## <a name="remarks"></a>備註  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IProvideMultipleClassInfo 介面](https://docs.microsoft.com/dotnet/api/microsoft.visualstudio.ole.interop.iprovidemultipleclassinfo)   
  [IActiveScriptAuthor 介面](../../winscript/reference/iactivescriptauthor-interface.md)

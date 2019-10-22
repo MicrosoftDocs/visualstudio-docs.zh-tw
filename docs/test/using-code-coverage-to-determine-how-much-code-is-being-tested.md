@@ -8,15 +8,15 @@ dev_langs:
 - CSharp
 - VB
 - CPP
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 1962a977cb282613405342f225d63140f1854453
-ms.sourcegitcommit: 689ba54ea14257d13031de881f5d4fe937a36f56
+ms.openlocfilehash: dc3c11610d95756b265d5ba01a6f8365f115548a
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "71342426"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72659795"
 ---
 # <a name="use-code-coverage-to-determine-how-much-code-is-being-tested"></a>使用程式碼涵蓋範圍來決定所測試的程式碼數量
 
@@ -54,10 +54,10 @@ ms.locfileid: "71342426"
 
 ::: moniker-end
 
-2. 執行測試之後，若要查看已執行的![行，請選擇 [顯示程式碼涵蓋範圍著色] 圖示](../test/media/codecoverage-showcoloringicon.png)在 [程式**代碼涵蓋範圍結果**] 視窗中顯示程式**代碼涵蓋範圍著色**。 根據預設，測試所涵蓋的程式碼會以淺藍色反白顯示。
+2. 執行測試之後，若要查看已執行的行，請選擇 [![Show 程式碼涵蓋範圍著色] 圖示，](../test/media/codecoverage-showcoloringicon.png) 在 [程式**代碼涵蓋範圍結果**] 視窗中**顯示程式碼涵蓋範圍著色**。 根據預設，測試所涵蓋的程式碼會以淺藍色反白顯示。
 
    > [!TIP]
-   > 若要變更色彩或使用粗體，請選擇 **工具** > **選項** > **環境** >  **字型 和色彩** >  **顯示設定：** 文字編輯器。 在 [**顯示專案**] 下，調整 [涵蓋範圍] 專案的設定，例如 [**涵蓋範圍未觸及] 區域**。
+   > 若要變更色彩或使用粗體，請選擇 [**工具**] [ > **選項**] [ > **環境**]  >  [字型**和色彩**]  >  [**顯示設定：文字編輯器**]。 在 [**顯示專案**] 下，調整 [涵蓋範圍] 專案的設定，例如 [**涵蓋範圍未觸及] 區域**。
    >
    > ![程式碼涵蓋範圍字型和色彩](media/vs-2019/coverage-fonts-and-colors.png)
 
@@ -304,7 +304,7 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
 
 如果您看不到程式碼涵蓋範圍結果，[針對程式碼涵蓋範圍進行疑難排解](../test/troubleshooting-code-coverage.md)一文可能對您有所幫助。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [自訂程式碼涵蓋範圍分析](../test/customizing-code-coverage-analysis.md)
 - [針對程式碼涵蓋範圍進行疑難排解](../test/troubleshooting-code-coverage.md)

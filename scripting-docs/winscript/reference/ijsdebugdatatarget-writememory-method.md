@@ -1,5 +1,5 @@
 ---
-title: 'Ijsdebugdatatarget:: Writememory 方法 |Microsoft Docs'
+title: IJsDebugDataTarget：： WriteMemory 方法 |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -15,15 +15,15 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 622de16cc5f755c5d69059a0e0f28d881121861c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 33cd23ad784e222f770dfd5c0e7c2d775aa55e42
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62558173"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572410"
 ---
 # <a name="ijsdebugdatatargetwritememory-method"></a>IJsDebugDataTarget::WriteMemory 方法
-讀取目標處理序的記憶體。  
+讀取目標進程的記憶體。  
   
 ## <a name="syntax"></a>語法  
   
@@ -37,21 +37,21 @@ HRESULT WriteMemory(
   
 #### <a name="parameters"></a>參數  
  `address`  
- [in]要寫入的目標處理序記憶體基底位址。  
+ 在要從中寫入目標進程記憶體的基底位址。  
   
  `pMemory`  
- [in]要寫入指定的處理序的位址空間中的資料。  
+ 在要在指定進程的位址空間中寫入的資料。  
   
  `size`  
- [in]要寫入處理序的位元組數目。  
+ 在要寫入進程的位元組數目。  
   
 ## <a name="return-value"></a>傳回值  
   
 ## <a name="remarks"></a>備註  
- 傳送資料之前，系統會確認基底地址和指定大小的記憶體中的所有資料的寫入權限，可存取，且如果您不能存取，則函數會引發 E_JsDEBUG_INVALID_MEMORY_ADDRESS 錯誤。  
+ 在進行資料傳輸之前，系統會確認基底位址中的所有資料和指定大小的記憶體可供寫入存取，如果無法存取，函式就會引發 E_JsDEBUG_INVALID_MEMORY_ADDRESS 錯誤。  
   
 ## <a name="requirements"></a>需求  
- **標頭：** jscript9diag.h  
+ **標頭：** jscript9diag。h  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IJsDebugDataTarget 介面](../../winscript/reference/ijsdebugdatatarget-interface.md)

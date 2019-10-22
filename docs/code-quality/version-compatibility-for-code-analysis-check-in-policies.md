@@ -6,38 +6,38 @@ helpviewer_keywords:
 - version compatibility, code analysis check-in policy
 - check-in policies, version compatibility for code analysis
 ms.assetid: 1af376e3-3be7-4445-803b-76a858567a5b
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0fc164dea10a74bbff725ee153f298c820f1c203
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8385e2b36d09f029c4b8625e58cd99ecc06ea226
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62825147"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72649019"
 ---
 # <a name="version-compatibility-for-code-analysis-check-in-policies"></a>程式碼分析簽入原則的版本相容性
 
-如果您必須評估並撰寫程式碼分析簽入原則使用不同版本[!INCLUDE[esprtfc](../code-quality/includes/esprtfc_md.md)]，您必須知道的方式不同[!INCLUDE[vstsTfsOrcasLong](../code-quality/includes/vststfsorcaslong_md.md)]和[!INCLUDE[vstsTfsRosarioShort](../code-quality/includes/vststfsrosarioshort_md.md)]評估簽入原則。
+如果您必須使用不同的 [!INCLUDE[esprtfc](../code-quality/includes/esprtfc_md.md)] 版本來評估和撰寫程式碼分析簽入原則，您必須知道 [!INCLUDE[vstsTfsOrcasLong](../code-quality/includes/vststfsorcaslong_md.md)] 和 [!INCLUDE[vstsTfsRosarioShort](../code-quality/includes/vststfsrosarioshort_md.md)] 評估簽入原則的方式差異。
 
-## <a name="version-compatibility-for-evaluating-check-in-policies"></a>版本相容性評估簽入原則
+## <a name="version-compatibility-for-evaluating-check-in-policies"></a>評估簽入原則的版本相容性
 
-- 程式碼分析簽入原則中的評估時[!INCLUDE[vstsTfsOrcasShort](../code-quality/includes/vststfsorcasshort_md.md)]，存在於任何規則[!INCLUDE[vstsTfsRosarioShort](../code-quality/includes/vststfsrosarioshort_md.md)]但不是存在於[!INCLUDE[vstsTfsOrcasShort](../code-quality/includes/vststfsorcasshort_md.md)]都會被忽略。
+- 在 [!INCLUDE[vstsTfsOrcasShort](../code-quality/includes/vststfsorcasshort_md.md)] 中評估程式碼分析簽入原則時，會忽略存在於 [!INCLUDE[vstsTfsRosarioShort](../code-quality/includes/vststfsrosarioshort_md.md)] 但不存在於 [!INCLUDE[vstsTfsOrcasShort](../code-quality/includes/vststfsorcasshort_md.md)] 中的任何規則。
 
-- 程式碼分析簽入原則中的評估時[!INCLUDE[vstsTfsRosarioShort](../code-quality/includes/vststfsrosarioshort_md.md)]，所有新的規則，專屬於[!INCLUDE[vstsTfsOrcasShort](../code-quality/includes/vststfsorcasshort_md.md)]都會被忽略。
+- 在 [!INCLUDE[vstsTfsRosarioShort](../code-quality/includes/vststfsrosarioshort_md.md)] 中評估程式碼分析簽入原則時，會忽略 [!INCLUDE[vstsTfsOrcasShort](../code-quality/includes/vststfsorcasshort_md.md)] 獨有的所有新規則。
 
-- 如果程式碼分析簽入原則指定規則組件，[!INCLUDE[vstsTfsOrcasShort](../code-quality/includes/vststfsorcasshort_md.md)]會忽略所有的規則所指定的組件，它無法辨識。
+- 如果程式碼分析簽入原則指定規則元件，[!INCLUDE[vstsTfsOrcasShort](../code-quality/includes/vststfsorcasshort_md.md)] 會忽略無法辨識之元件所指定的所有規則。
 
-- 如果程式碼分析簽入原則會指定規則組件，[!INCLUDE[vstsTfsRosarioShort](../code-quality/includes/vststfsrosarioshort_md.md)]無法辨識，則會顯示訊息。
+- 如果程式碼分析簽入原則指定 [!INCLUDE[vstsTfsRosarioShort](../code-quality/includes/vststfsrosarioshort_md.md)] 無法辨識的規則元件，則會顯示訊息。
 
 ## <a name="version-compatibility-for-authoring-check-in-policies"></a>撰寫簽入原則的版本相容性
 
-- 如果您使用建立程式碼分析簽入原則[!INCLUDE[vstsTfsOrcasShort](../code-quality/includes/vststfsorcasshort_md.md)]新版[!INCLUDE[esprtfc](../code-quality/includes/esprtfc_md.md)]，您無法使用[!INCLUDE[vstsTfsRosarioShort](../code-quality/includes/vststfsrosarioshort_md.md)]版本[!INCLUDE[esprtfc](../code-quality/includes/esprtfc_md.md)]進行修改。 此外，[!INCLUDE[vstsTfsRosarioShort](../code-quality/includes/vststfsrosarioshort_md.md)]無法評估原則。
+- 如果您使用 [!INCLUDE[esprtfc](../code-quality/includes/esprtfc_md.md)] 的 [!INCLUDE[vstsTfsOrcasShort](../code-quality/includes/vststfsorcasshort_md.md)] 版本來建立程式碼分析簽入原則，就無法使用 [!INCLUDE[esprtfc](../code-quality/includes/esprtfc_md.md)] 的 [!INCLUDE[vstsTfsRosarioShort](../code-quality/includes/vststfsrosarioshort_md.md)] 版本來進行修改。 此外，[!INCLUDE[vstsTfsRosarioShort](../code-quality/includes/vststfsrosarioshort_md.md)] 無法評估原則。
 
-- 如果您使用建立程式碼分析簽入原則[!INCLUDE[esprtfc](../code-quality/includes/esprtfc_md.md)]中[!INCLUDE[vstsTfsRosarioShort](../code-quality/includes/vststfsrosarioshort_md.md)]，您可以使用[!INCLUDE[esprtfc](../code-quality/includes/esprtfc_md.md)]中[!INCLUDE[vstsTfsOrcasShort](../code-quality/includes/vststfsorcasshort_md.md)]來修改它，並將原則也可透過評估[!INCLUDE[vstsTfsOrcasShort](../code-quality/includes/vststfsorcasshort_md.md)]。 使用修改原則之後[!INCLUDE[esprtfc](../code-quality/includes/esprtfc_md.md)]中[!INCLUDE[vstsTfsOrcasShort](../code-quality/includes/vststfsorcasshort_md.md)]，您可以使用，以無法再編輯原則[!INCLUDE[esprtfc](../code-quality/includes/esprtfc_md.md)]在[!INCLUDE[vstsTfsRosarioShort](../code-quality/includes/vststfsrosarioshort_md.md)]。 [!INCLUDE[vstsTfsRosarioShort](../code-quality/includes/vststfsrosarioshort_md.md)] 可評估原則，而不會產生強式名稱不相符的問題。
+- 如果您使用 [!INCLUDE[vstsTfsRosarioShort](../code-quality/includes/vststfsrosarioshort_md.md)] 中的 [!INCLUDE[esprtfc](../code-quality/includes/esprtfc_md.md)] 來建立程式碼分析簽入原則，您可以在 [!INCLUDE[vstsTfsOrcasShort](../code-quality/includes/vststfsorcasshort_md.md)] 中使用 [!INCLUDE[esprtfc](../code-quality/includes/esprtfc_md.md)] 來進行修改，而且也可以藉由 [!INCLUDE[vstsTfsOrcasShort](../code-quality/includes/vststfsorcasshort_md.md)] 評估該原則。 使用 [!INCLUDE[vstsTfsOrcasShort](../code-quality/includes/vststfsorcasshort_md.md)] 中的 [!INCLUDE[esprtfc](../code-quality/includes/esprtfc_md.md)] 修改原則之後，您就無法再使用 [!INCLUDE[vstsTfsRosarioShort](../code-quality/includes/vststfsrosarioshort_md.md)] 中的 [!INCLUDE[esprtfc](../code-quality/includes/esprtfc_md.md)] 來編輯原則。 [!INCLUDE[vstsTfsRosarioShort](../code-quality/includes/vststfsrosarioshort_md.md)] 可評估原則，而不會產生強式名稱不相符的問題。
 
-- 若要建立程式碼分析簽入原則規則的設定，適用於兩者[!INCLUDE[vstsTfsRosarioShort](../code-quality/includes/vststfsrosarioshort_md.md)]並[!INCLUDE[vstsTfsOrcasShort](../code-quality/includes/vststfsorcasshort_md.md)]，您必須建立在原則[!INCLUDE[vstsTfsRosarioShort](../code-quality/includes/vststfsrosarioshort_md.md)]、 進行需要的所有變更並儲存原則。 如果規則的變更僅存在於[!INCLUDE[vstsTfsOrcasShort](../code-quality/includes/vststfsorcasshort_md.md)]，您修改並儲存在原則[!INCLUDE[vstsTfsOrcasShort](../code-quality/includes/vststfsorcasshort_md.md)]。
+- 若要使用同時適用于 [!INCLUDE[vstsTfsRosarioShort](../code-quality/includes/vststfsrosarioshort_md.md)] 和 [!INCLUDE[vstsTfsOrcasShort](../code-quality/includes/vststfsorcasshort_md.md)] 的規則設定來建立程式碼分析簽入原則，您必須在 [!INCLUDE[vstsTfsRosarioShort](../code-quality/includes/vststfsrosarioshort_md.md)] 中建立原則、進行所需的所有變更，然後儲存原則。 如果規則的變更只存在於 [!INCLUDE[vstsTfsOrcasShort](../code-quality/includes/vststfsorcasshort_md.md)] 中，您會在 [!INCLUDE[vstsTfsOrcasShort](../code-quality/includes/vststfsorcasshort_md.md)] 中修改和儲存原則。
 
-   儲存中的原則之後[!INCLUDE[vstsTfsOrcasShort](../code-quality/includes/vststfsorcasshort_md.md)]，您無法再變更中存在的規則設定[!INCLUDE[vstsTfsRosarioShort](../code-quality/includes/vststfsrosarioshort_md.md)]只。
+   在 [!INCLUDE[vstsTfsOrcasShort](../code-quality/includes/vststfsorcasshort_md.md)] 中儲存原則之後，就無法再變更僅存在於 [!INCLUDE[vstsTfsRosarioShort](../code-quality/includes/vststfsrosarioshort_md.md)] 中的規則設定。

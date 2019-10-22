@@ -2,21 +2,21 @@
 title: 叫用 VS 擴充功能中的文字轉換
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7bf32a1722ec8029840566b7602ba78f84adb7ec
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 8729a96d236fd565f31c827ebff6911dbc0b81d6
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68870511"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72667759"
 ---
 # <a name="invoke-text-transformation-in-a-visual-studio-extension"></a>叫用 Visual Studio 延伸模組中的文字轉換
 
-如果您要撰寫 Visual Studio 的延伸模組, 例如功能表命令或[特定領域語言](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md), 您可以使用文字模板化服務來轉換文字模板。 取得[STextTemplating](/previous-versions/visualstudio/visual-studio-2012/bb932394(v=vs.110))服務, 並將其轉換為[ITextTemplating](/previous-versions/visualstudio/visual-studio-2012/bb932392(v=vs.110))。
+如果您要撰寫 Visual Studio 的延伸模組，例如功能表命令或[特定領域語言](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)，您可以使用文字模板化服務來轉換文字模板。 取得[STextTemplating](/previous-versions/visualstudio/visual-studio-2012/bb932394(v=vs.110))服務，並將其轉換為[ITextTemplating](/previous-versions/visualstudio/visual-studio-2012/bb932392(v=vs.110))。
 
 ## <a name="get-the-text-templating-service"></a>取得文字模板化服務
 
@@ -38,7 +38,7 @@ string result = t4.ProcessTemplate(filePath, System.IO.File.ReadAllText(filePath
 
  您可以將參數傳遞給範本。 在範本中，您可以使用 `<#@parameter#>` 指示詞取得參數值。
 
- 針對參數的類型，您必須使用可序列化或可封送處理的類型。 也就是說，類型必須使用 <xref:System.SerializableAttribute> 宣告或類型必須衍生自 <xref:System.MarshalByRefObject>。 這是必要的限制，因為文字範本會在不同的 AppDomain 中執行。 所有內建類型 (例如**system.string**和**system.object** ) 都是可序列化的。
+ 針對參數的類型，您必須使用可序列化或可封送處理的類型。 也就是說，類型必須使用 <xref:System.SerializableAttribute> 宣告或類型必須衍生自 <xref:System.MarshalByRefObject>。 這是必要的限制，因為文字範本會在不同的 AppDomain 中執行。 所有內建類型（例如**system.string**和**system.object** ）都是可序列化的。
 
  為了傳遞參數值，呼叫的程式碼可以在 `Session` 字典或 <xref:System.Runtime.Remoting.Messaging.CallContext> 中放入值。
 
@@ -77,9 +77,9 @@ string result = t4.ProcessTemplate("",
 
 ## <a name="error-reporting-and-the-output-directive"></a>錯誤報表和輸出指示詞
 
-在處理期間發生的任何錯誤都會顯示在 [Visual Studio 錯誤] 視窗中。 此外, 您可以藉由指定執行[ITextTemplatingCallback](/previous-versions/visualstudio/visual-studio-2012/bb932397(v=vs.110))的回呼, 來通知您有錯誤。
+在處理期間發生的任何錯誤都會顯示在 [Visual Studio 錯誤] 視窗中。 此外，您可以藉由指定執行[ITextTemplatingCallback](/previous-versions/visualstudio/visual-studio-2012/bb932397(v=vs.110))的回呼，來通知您有錯誤。
 
-如果要將結果字串寫入檔案中，您可能會想要知道範本的 `<#@output#>` 指示詞中指定的副檔名和編碼。 此資訊也會傳遞至回呼。 如需詳細資訊, 請參閱[T4 Output](../modeling/t4-output-directive.md)指示詞。
+如果要將結果字串寫入檔案中，您可能會想要知道範本的 `<#@output#>` 指示詞中指定的副檔名和編碼。 此資訊也會傳遞至回呼。 如需詳細資訊，請參閱[T4 Output](../modeling/t4-output-directive.md)指示詞。
 
 ```csharp
 void ProcessMyTemplate(string MyTemplateFile)
@@ -130,7 +130,7 @@ class T4Callback : ITextTemplatingCallback
 Sample text.
 ```
 
-編譯器警告會出現在 Visual Studio 錯誤視窗中, 而且也會產生對的呼叫`ErrorCallback`。
+編譯器警告會出現在 Visual Studio 錯誤視窗中，而且也會產生 `ErrorCallback` 的呼叫。
 
 ## <a name="reference-parameters"></a>傳址參數
 
@@ -138,8 +138,8 @@ Sample text.
 
 ## <a name="related-articles"></a>相關文章
 
-若要從前置處理過的文字範本產生文字：呼叫產生的類別其 `TransformText()` 方法。 如需詳細資訊, 請參閱[使用 T4 文字模板產生執行時間文字](../modeling/run-time-text-generation-with-t4-text-templates.md)。
+若要從前置處理過的文字模板產生文字：呼叫所產生類別的 `TransformText()` 方法。 如需詳細資訊，請參閱[使用 T4 文字模板產生執行時間文字](../modeling/run-time-text-generation-with-t4-text-templates.md)。
 
-若要在 Visual Studio 延伸模組外產生文字:定義自訂主應用程式。 如需詳細資訊，請參閱 <<c0> [ 藉由使用自訂主機處理文字範本](../modeling/processing-text-templates-by-using-a-custom-host.md)。
+若要在 Visual Studio 延伸模組外產生文字：定義自訂主機。 如需詳細資訊，請參閱[使用自訂主機處理文字模板](../modeling/processing-text-templates-by-using-a-custom-host.md)。
 
-若要產生可在之後編譯及執行的原始程式碼：呼叫[ITextTemplating](/previous-versions/visualstudio/visual-studio-2012/bb932392(v=vs.110))的[PreprocessTemplate](/previous-versions/visualstudio/visual-studio-2012/ee844321(v=vs.110))方法。
+若要產生可在稍後編譯和執行的原始程式碼：呼叫[ITextTemplating](/previous-versions/visualstudio/visual-studio-2012/bb932392(v=vs.110))的[PreprocessTemplate](/previous-versions/visualstudio/visual-studio-2012/ee844321(v=vs.110))方法。

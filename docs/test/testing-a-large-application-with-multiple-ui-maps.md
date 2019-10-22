@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - coded UI tests, multiple UI maps
 - coded UI tests, for large applications
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4eb49e4e84f61e817e3df8bbbdd20c6922d180ee
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+ms.openlocfilehash: 86a4ad5c44c124ee7faf9ac633f2a78685adb426
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926734"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72659900"
 ---
 # <a name="test-a-large-application-with-multiple-ui-maps"></a>測試含有多個 UI 對應的大型應用程式
 
@@ -23,7 +23,7 @@ ms.locfileid: "68926734"
 
 [!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
-**需求**
+**Requirements**
 
 - Visual Studio 企業版
 
@@ -50,28 +50,28 @@ ms.locfileid: "68926734"
 
 ### <a name="to-add-a-ui-map-to-your-coded-ui-test-project"></a>將 UI 對應加入至自動程式化 UI 測試專案
 
-1. 在 [方案總管]  的自動程式化 UI 測試專案中，建立資料夾以儲存所有 UI 對應、以滑鼠右鍵按一下自動程式化 UI 測試專案檔、指向 [新增]  ，然後選擇 [新增資料夾]  。 例如，您可以將它命名為 `UIMaps`。
+1. 在 [方案總管] 的自動程式化 UI 測試專案中，建立資料夾以儲存所有 UI 對應、以滑鼠右鍵按一下自動程式化 UI 測試專案檔、指向 [新增]，然後選擇 [新增資料夾]。 例如，您可以將它命名為 `UIMaps`。
 
     新資料夾隨即顯示在自動程式化 UI 測試專案底下。
 
-2. 以滑鼠右鍵按一下 `UIMaps` 資料夾，並指向 [新增]  ，然後選擇 [新增項目]  。
+2. 以滑鼠右鍵按一下 `UIMaps` 資料夾，並指向 [新增]，然後選擇 [新增項目]。
 
-    隨即顯示 [ 新增項目]  對話方塊。
+    隨即顯示 [ 新增項目] 對話方塊。
 
    > [!NOTE]
    > 您必須在自動程式化 UI 測試專案中，才能加入新的自動程式化 UI 測試對應。
 
-3. 從清單中選取 [自動程式碼 UI 測試對應]  。
+3. 從清單中選取 [自動程式碼 UI 測試對應]。
 
-    在 [名稱]  方塊中，輸入新 UI 對應的名稱。 使用該對應將代表的元件或頁面名稱，例如， `HomePageMap`。
+    在 [名稱] 方塊中，輸入新 UI 對應的名稱。 使用該對應將代表的元件或頁面名稱，例如， `HomePageMap`。
 
-4. 選擇 [新增]  。
+4. 選擇 [新增]。
 
-    [Visual Studio] 視窗會最小化，而 [自動程式化 UI 測試產生器]  對話方塊隨即顯示。
+    [Visual Studio] 視窗會最小化，而 [自動程式化 UI 測試產生器] 對話方塊隨即顯示。
 
-5. 錄製第一個方法的動作，然後選擇 [產生程式碼]  。
+5. 錄製第一個方法的動作，然後選擇 [產生程式碼]。
 
-6. 當您已錄製第一個元件或頁面的所有動作和判斷提示，並將它們群組在方法中之後，請關閉 [自動程式碼 UI 測試產生器]  對話方塊。
+6. 當您已錄製第一個元件或頁面的所有動作和判斷提示，並將它們群組在方法中之後，請關閉 [自動程式碼 UI 測試產生器] 對話方塊。
 
 7. 繼續建立 UI 對應。 錄製動作和判斷提示，將它們群組在每個元件的方法中，然後產生程式碼。
 
@@ -139,7 +139,7 @@ namespace ContosoProject
 }
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [UIMap](/previous-versions/dd580454(v=vs.140))
 - <xref:Microsoft.VisualStudio.TestTools.UITesting.BrowserWindow.CopyFrom%2A>

@@ -1,5 +1,5 @@
 ---
-title: 必須是 ';' |Microsoft Docs
+title: 必須是 '; ' |Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
@@ -14,23 +14,23 @@ ms.assetid: 3070cc6c-1138-4655-a7ac-723379f48f94
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9e5d0418f09d208d8919a2c431c818e236b62b29
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 27d9a36a36c3783048cdb7afb6c06da09bd21456
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62433717"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576455"
 ---
 # <a name="expected-"></a>必須是 ';'
-您嘗試將一個以上的陳述式放在一行中，但沒有不以分號隔開。 分號用來終止陳述式。 雖然您可以將多個陳述式放在一行上，每個必須以分號分隔。  
+您嘗試在一行上放置一個以上的語句，但未以分號分隔。 使用分號來終止語句。 雖然您可以將數個語句放在同一行，但每一個都必須以分號分隔。  
   
 ### <a name="to-correct-this-error"></a>更正這個錯誤  
   
-- 標記每個陳述式以分號的結尾。  
+- 以分號標示每個語句的結尾。  
   
-- 請確定您的函式呼叫正確使用括號。  
+- 請確定您的函式呼叫正確地使用括弧。  
   
-- 請確定您不忘記內的標頭的分號**針對**迴圈。  
+- 請確定您並未忘記**for**迴圈標頭內的分號。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [撰寫 JavaScript 程式碼](../../javascript/writing-javascript-code.md)

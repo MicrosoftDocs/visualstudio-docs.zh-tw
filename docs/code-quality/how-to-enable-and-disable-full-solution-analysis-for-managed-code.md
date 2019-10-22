@@ -1,49 +1,47 @@
 ---
-title: 啟用及停用 managed 程式碼的完整解決方案分析
+title: 啟用 & 停用 managed 程式碼的完整解決方案分析
 ms.date: 03/23/2018
 ms.topic: conceptual
 helpviewer_keywords:
 - full solution analysis
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a445439014e3b1f68b634865265089eb68e790a6
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 3f7837b1e5ea5b84e1ee1197bf6f8c40d0863c3e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66260881"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72649450"
 ---
-# <a name="how-to-enable-and-disable-full-solution-analysis-for-managed-code"></a>作法：啟用和停用 managed 程式碼的完整解決方案分析
+# <a name="how-to-enable-and-disable-full-solution-analysis-for-managed-code"></a>如何：啟用和停用 managed 程式碼的完整解決方案分析
 
-*完整解決方案分析*是一種 Visual Studio 功能，可讓您查看程式碼分析問題，只在開啟的視覺效果C#或 Visual Basic 檔案中您的方案，或已關閉的程式碼檔案中。 根據預設，會完整解決方案分析*啟用*Visual basic 中，並*停用*視覺效果C#。
+*完整的解決方案分析*表示程式碼分析會檢查C#方案中的所有或 Visual Basic 檔案，不論它們是否已在編輯器中開啟。 根據預設，會*啟用*Visual Basic 的完整解決方案分析，並針對C#*停用*。
 
-它可用來查看所有的檔案中的所有問題，但它也是令人分心。 向下中，如果您的解決方案非常大或有許多檔案，它會減緩 Visual Studio。 若要限制顯示的問題數目，並改善 Visual Studio 效能，您可以停用完整解決方案分析。 必要時您可以輕鬆地重新啟用這項功能。
+查看所有檔案中的所有問題可能會很有用，但也可能會有干擾。 如果您的解決方案非常大或有許多檔案，它會減緩 Visual Studio。 若要限制顯示的問題數目並改善 Visual Studio 效能，您可以停用完整解決方案分析。 如有需要，您可以輕鬆地重新啟用此功能。
 
-## <a name="to-toggle-full-solution-analysis"></a>若要切換完整解決方案分析
+在下圖中，已啟用完整解決方案分析。 系統會顯示解決方案中所有檔案中的編譯器和程式碼分析問題，即使它們並未開啟也是一樣。
 
-1. 若要開啟 **選項**對話方塊中，在 Visual Studio 功能表列上的選擇**工具** > **選項**。
+![已啟用完整解決方案分析。](../code-quality/media/fsa_enabled.png)
 
-1. 在 **選項**對話方塊方塊中，選擇**文字編輯器** >  **C#** 或是**基本** >  **進階**。
+下圖顯示在停用完整解決方案分析之後，來自相同解決方案的結果。 只有開啟的方案檔中的編譯器錯誤和程式碼分析問題才會出現在錯誤清單中。
 
-1. 選取 **啟用完整解決方案分析**核取方塊以啟用完整解決方案分析，或清除此方塊可停用它。 選擇**確定**完成時。
+![已停用完整解決方案分析。](../code-quality/media/fsa_disabled.png)
 
-    ![啟用完整解決方案分析 核取方塊。](../code-quality/media/options-enable-full-solution-analysis.png)
+## <a name="toggle-full-solution-analysis"></a>切換完整解決方案分析
 
-## <a name="results-of-enabling-and-disabling-full-solution-analysis"></a>啟用和停用完整解決方案分析的結果
+1. 若要開啟 [**選項**] 對話方塊，請在 Visual Studio 的功能表列上，選擇 [**工具**] [ > **選項**]。
 
-在下列螢幕擷取畫面中，您可以看到結果時已啟用完整解決方案分析。 所有錯誤和中的程式碼分析問題*所有*的方案中的檔案會出現，無論檔案是否為開啟。
+1. 在 [**選項**] 對話方塊中，選擇 [**文字編輯器**]**C#** [ > ] 或 [**基本** > **Advanced**]。
 
-![啟用完整解決方案分析。](../code-quality/media/fsa_enabled.png)
+1. 選取 [**啟用完整解決方案分析**] 核取方塊以啟用完整解決方案分析，或清除方塊來停用它。 當您完成時，請選擇 **[確定]** 。
 
-下列螢幕擷取畫面會顯示相同的方案的結果之後停用完整解決方案分析。 只有 「 錯誤 」 和 「 程式碼分析問題，在開啟的方案檔中會出現在**錯誤清單**。
-
-![停用完整解決方案分析。](../code-quality/media/fsa_disabled.png)
+   ![[啟用完整解決方案分析] 核取方塊。](../code-quality/media/options-enable-full-solution-analysis.png)
 
 ## <a name="automatically-disable-full-solution-analysis"></a>自動停用完整解決方案分析
 
-如果 Visual Studio 偵測到 200 MB 或更少的系統記憶體提供給它，它會自動停用完整解決方案分析 （和一些其他功能） 如果已啟用。 如果發生這種情況，會出現警示，通知您，Visual Studio 已停用某些功能。 按鈕可讓您重新啟用完整解決方案分析，如果您想要。
+如果 Visual Studio 偵測到 200 MB 或更少的系統記憶體可供使用，它會自動停用完整解決方案分析（以及其他功能）（如果已啟用）。 如果發生這種情況，則會出現警示，通知您 Visual Studio 已停用某些功能。 按鈕可讓您視需要重新啟用完整的解決方案分析。
 
-![警示文字中暫停完整解決方案分析](../code-quality/media/fsa_alert.png)
+![暫停完整解決方案分析的警示文字](../code-quality/media/fsa_alert.png)

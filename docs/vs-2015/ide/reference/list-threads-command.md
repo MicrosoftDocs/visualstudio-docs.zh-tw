@@ -12,44 +12,38 @@ helpviewer_keywords:
 - Debug.ListThreads command
 ms.assetid: 34b665c0-d46f-4c1a-a066-b678eba5ac54
 caps.latest.revision: 19
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 90aff3fb3d3cbb596708bde1db8ff171198a5a60
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fc11479901785b19235e0962d3ae90e552e5b33b
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68199115"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72671145"
 ---
 # <a name="list-threads-command"></a>列出執行緒命令
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-顯示目前程式中的執行緒清單。  
-  
-## <a name="syntax"></a>語法  
-  
-```  
-Debug.ListThreads [index]  
-```  
-  
-## <a name="arguments"></a>引數  
- `index`  
- 選擇性。 依據索引選取一個執行緒，以成為目前執行緒。  
-  
-## <a name="remarks"></a>備註  
- 指定時，`index` 引數會將指出的執行緒標記為目前執行緒。 星號 (*) 會顯示在目前執行緒旁邊的清單。  
-  
-## <a name="example"></a>範例  
-  
-```  
->Debug.ListThreads   
-```  
-  
-## <a name="see-also"></a>另請參閱  
- [列出呼叫堆疊命令](../../ide/reference/list-call-stack-command.md)   
- [列出反組譯碼命令](../../ide/reference/list-disassembly-command.md)   
- [Visual Studio 命令](../../ide/reference/visual-studio-commands.md)   
- [命令視窗](../../ide/reference/command-window.md)   
- [尋找/命令方塊](../../ide/find-command-box.md)   
- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
+顯示目前程式中的執行緒清單。
+
+## <a name="syntax"></a>語法
+
+```
+Debug.ListThreads [index]
+```
+
+## <a name="arguments"></a>引數
+ `index` 選擇項。 依據索引選取一個執行緒，以成為目前執行緒。
+
+## <a name="remarks"></a>備註
+ 指定時，`index` 引數會將指出的執行緒標記為目前執行緒。 星號 (*) 會顯示在目前執行緒旁邊的清單。
+
+## <a name="example"></a>範例
+
+```
+>Debug.ListThreads
+```
+
+## <a name="see-also"></a>另請參閱
+ [列出呼叫堆疊命令](../../ide/reference/list-call-stack-command.md)[清單反組解碼命令](../../ide/reference/list-disassembly-command.md) [Visual Studio 命令](../../ide/reference/visual-studio-commands.md)[命令視窗](../../ide/reference/command-window.md)[尋找/命令框](../../ide/find-command-box.md) [Visual Studio 命令別名](../../ide/reference/visual-studio-command-aliases.md)

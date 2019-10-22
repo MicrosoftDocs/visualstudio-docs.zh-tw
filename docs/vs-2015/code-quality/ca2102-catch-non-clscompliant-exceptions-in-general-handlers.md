@@ -1,5 +1,5 @@
 ---
-title: CA2102:一般處理常式攔截非 CLSCompliant 例外狀況 |Microsoft Docs
+title: CA2102：在一般處理常式中攔截非 CLSCompliant 例外狀況 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -11,46 +11,46 @@ helpviewer_keywords:
 - CA2102
 ms.assetid: bf2df68f-d386-4379-ad9e-930a2c2e930d
 caps.latest.revision: 21
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 3fc0803e4ad73b08e99a05fa62930e039e1b7534
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 051b59183a761477476269480ecdf83ccbf0cb37
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65687432"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72652167"
 ---
-# <a name="ca2102-catch-non-clscompliant-exceptions-in-general-handlers"></a>CA2102:必須使用一般處理常式攔截非 CLSCompliant 例外狀況
+# <a name="ca2102-catch-non-clscompliant-exceptions-in-general-handlers"></a>CA2102：在一般處理常式中攔截非 CLSCompliant 的例外狀況
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |TypeName|CatchNonClsCompliantExceptionsInGeneralHandlers|
 |CheckId|CA2102|
-|分類|Microsoft.Security|
-|中斷變更|非重大|
+|Category|Microsoft.Security|
+|中斷變更|不中斷|
 
 ## <a name="cause"></a>原因
- 未標記為組件中的成員<xref:System.Runtime.CompilerServices.RuntimeCompatibilityAttribute>，或已標示`RuntimeCompatibility(WrapNonExceptionThrows = false)`包含 catch 區塊處理<xref:System.Exception?displayProperty=fullName>，而且不包含緊接的一般 catch 區塊。 此規則會忽略[!INCLUDE[vbprvb](../includes/vbprvb-md.md)]組件。
+ 元件中未標記為 <xref:System.Runtime.CompilerServices.RuntimeCompatibilityAttribute> 或標示為 `RuntimeCompatibility(WrapNonExceptionThrows = false)` 的成員包含處理 <xref:System.Exception?displayProperty=fullName> 的 catch 區塊，且不包含緊接在一般 catch 區塊後面的。 此規則會忽略 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 元件。
 
 ## <a name="rule-description"></a>規則描述
- Catch 區塊處理<xref:System.Exception>取得所有與 Common Language Specification (CLS) 規範的例外狀況。 不過，它不會攔截非 CLS 標準的例外狀況。 不符合 CLS 相容的例外狀況擲回的原生程式碼，或從 managed 程式碼所產生的 Microsoft intermediate language (MSIL) 組譯工具。 請注意，C# 和[!INCLUDE[vbprvb](../includes/vbprvb-md.md)]編譯器不允許不符合 CLS 規範的例外狀況擲回和[!INCLUDE[vbprvb](../includes/vbprvb-md.md)]不會攔截非 CLS 標準的例外狀況。 如果 catch 區塊的目的是要處理所有例外狀況，請使用下列的一般 catch 區塊語法。
+ 處理 <xref:System.Exception> 的 catch 區塊會捕捉所有 Common Language Specification （CLS）相容的例外狀況。 不過，它不會攔截不符合 CLS 規範的例外狀況。 不符合 CLS 規範的例外狀況可以從機器碼或由 Microsoft 中繼語言（MSIL）組合器所產生的 managed 程式碼擲回。 請注意， C#和 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 編譯器不允許擲回不符合 cls 規範的例外狀況，而且 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 不會攔截不符合 cls 規範的例外狀況。 如果 catch 區塊的目的是要處理所有例外狀況，請使用下列一般 catch 區塊語法。
 
 - C#: `catch {}`
 
-- C++:`catch(...) {}`或 `catch(Object^) {}`
+- C++： `catch(...) {}` 或 `catch(Object^) {}`
 
-  在 catch 區塊中移除先前允許的權限時，未處理的非符合 CLS 規範的例外狀況就會成為安全性問題。 因為系統不會攔截非 CLS 標準的例外狀況，擲回不符合 CLS 規範的例外狀況的惡意方法可以執行以提高權限。
+  在 catch 區塊中移除先前允許的許可權時，未處理的不符合 CLS 規範的例外狀況會成為安全性問題。 由於不會攔截到不符合 CLS 規範的例外狀況，因此可能會以較高的許可權來執行擲回不符合 CLS 標準之例外狀況的惡意方法。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
- 若要修正此規則的違規情形，當目的是要攔截所有例外狀況，以取代或新增的一般 catch 區塊或標示組件`RuntimeCompatibility(WrapNonExceptionThrows = true)`。 如果在 catch 區塊中移除權限，重複的功能的一般 catch 區塊。 如果不打算處理所有例外狀況，取代 catch 區塊處理<xref:System.Exception>處理特定的例外狀況類型的 catch 區塊。
+ 若要在目的是要攔截所有例外狀況時修正此規則的違規，請取代或加入一般 catch 區塊，或將元件標記 `RuntimeCompatibility(WrapNonExceptionThrows = true)`。 如果已移除 catch 區塊中的許可權，請複製一般 catch 區塊中的功能。 如果不是處理所有例外狀況的目的，請將處理 <xref:System.Exception> 的 catch 區塊取代為處理特定例外狀況類型的 catch 區塊。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
- 它會安全地隱藏此規則的警告，如果在 try 區塊中不含任何可能會產生不符合 CLS 規範的例外狀況的陳述式。 任何原生或 managed 程式碼可能會擲回不符合 CLS 規範的例外狀況，因為這會需要的所有程式碼都可以在 try 區塊內的所有程式碼路徑中執行的知識。 請注意，由 common language runtime 不擲回不符合 CLS 標準的例外狀況。
+ 如果 try 區塊未包含任何可能產生不符合 CLS 標準之例外狀況的語句，則可以放心地隱藏此規則的警告。 因為任何原生或 managed 程式碼可能會擲回不符合 CLS 規範的例外狀況，所以這需要知道在 try 區塊內的所有程式碼路徑中可執行檔所有程式碼。 請注意，common language runtime 不會擲回不符合 CLS 規範的例外狀況。
 
 ## <a name="example"></a>範例
- 下列範例示範會擲回不符合 CLS 規範的例外狀況的 MSIL 類別。
+ 下列範例顯示的 MSIL 類別會擲回不符合 CLS 規範的例外狀況。
 
 ```
 .assembly ThrowNonClsCompliantException {}
@@ -67,19 +67,19 @@ ms.locfileid: "65687432"
 ```
 
 ## <a name="example"></a>範例
- 下列範例會示範包含符合規則的一般 catch 區塊的方法。
+ 下列範例顯示的方法包含符合規則的一般 catch 區塊。
 
  [!code-csharp[FxCop.Security.CatchNonClsCompliantException#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Security.CatchNonClsCompliantException/cs/FxCop.Security.CatchNonClsCompliantException.cs#1)]
 
- 編譯先前的範例如下所示。
+ 編譯先前的範例，如下所示。
 
 ```
 ilasm /dll ThrowNonClsCompliantException.il
 csc /r:ThrowNonClsCompliantException.dll CatchNonClsCompliantException.cs
 ```
 
-## <a name="related-rules"></a>相關的規則
- [CA1031:不要攔截一般例外狀況類型](../code-quality/ca1031-do-not-catch-general-exception-types.md)
+## <a name="related-rules"></a>相關規則
+ [CA1031：不要攔截一般例外狀況類型](../code-quality/ca1031-do-not-catch-general-exception-types.md)
 
-## <a name="see-also"></a>另請參閱
- [例外狀況和例外狀況處理](https://msdn.microsoft.com/library/0001887f-4fa2-47e2-8034-2819477e2344) [Ilasm.exe （IL 組譯工具）](https://msdn.microsoft.com/library/4ca3a4f0-4400-47ce-8936-8e219961c76f) [覆寫安全性檢查](https://msdn.microsoft.com/4acdeff5-fc05-41bf-8505-7387cdbfca28)[語言獨立性以及與語言無關的元件](https://msdn.microsoft.com/library/4f0b77d0-4844-464f-af73-6e06bedeafc6)
+## <a name="see-also"></a>請參閱
+ [例外狀況和例外狀況處理](https://msdn.microsoft.com/library/0001887f-4fa2-47e2-8034-2819477e2344) [Ilasm （IL](https://msdn.microsoft.com/library/4ca3a4f0-4400-47ce-8936-8e219961c76f)組合器）覆[寫安全性檢查](https://msdn.microsoft.com/4acdeff5-fc05-41bf-8505-7387cdbfca28)[語言獨立性和與語言無關的元件](https://msdn.microsoft.com/library/4f0b77d0-4844-464f-af73-6e06bedeafc6)

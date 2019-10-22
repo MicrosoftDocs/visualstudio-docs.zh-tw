@@ -3,17 +3,17 @@ title: 引進區域變數
 description: 產生區域變數來取代現有的運算式。 選取運算式、按一下滑鼠右鍵並選取 [快速動作與重構] 功能表，然後選取 [為所有出現 'expression' 之處引進區域]。
 ms.date: 01/26/2018
 ms.topic: reference
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 43f54072d495cfdd6607ccb033ffd1a1713ad8bb
-ms.sourcegitcommit: 0f5f7955076238742f2071d286ad8e896f3a6cad
-ms.translationtype: HT
+ms.openlocfilehash: 6407810b4143d5edacecf42990ae5b6d63497be2
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "68483690"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72668747"
 ---
 # <a name="introduce-a-local-variable-in-visual-studio"></a>在 Visual Studio 中引進區域變數
 
@@ -27,7 +27,7 @@ ms.locfileid: "68483690"
 
 **時機：** 您有只要放在區域變數中便可在稍後輕鬆重複使用的程式碼。
 
-**原因：** 您可以多次複製和貼上程式碼以在各種位置中使用該程式碼；不過，最好只執行該作業一次，將結果儲存在區域變數中，然後全程使用區域變數。
+**原因：** 您可以多次複製和貼上程式碼以在各種位置中使用該程式碼，不過，最好只執行該作業一次，將結果儲存在區域變數中，然後全程使用區域變數。
 
 ## <a name="how-to"></a>操作說明
 
@@ -44,17 +44,17 @@ ms.locfileid: "68483690"
 2. 接著，執行下列其中一項操作：
 
    - **鍵盤**
-      - 在字行任何地方按 **Ctrl**+ **.** ， 以觸發 [快速動作與重構]  功能表。
+      - 在字行任何地方按 **Ctrl**+ **.** ， 以觸發 [快速動作與重構] 功能表。
    - **滑鼠**
-      - 以滑鼠右鍵按一下並選取 [快速動作與重構]  功能表。
+      - 以滑鼠右鍵按一下並選取 [快速動作與重構] 功能表。
       - 按一下 ![出現於左邊界的螺絲起子](media/screwdriver.png) 圖示，如果文字游標已經在含有醒目提示運算式的行上，此圖示就會出現在左邊界上。
 
    ![「引進區域」預覽](media/local-preview-cs.png)
 
-3. 從下拉功能表選取 [為 'expression' (的所有出現之處) 引進區域]  。
+3. 從下拉功能表選取 [為 'expression' (的所有出現之處) 引進區域]。
 
    > [!TIP]
-   > 請使用位於預覽視窗底部的 [預覽變更]  連結，以在進行選取之前先[查看將進行的所有變更](../../ide/preview-changes.md)。
+   > 請使用位於預覽視窗底部的 [預覽變更] 連結，以在進行選取之前先[查看將進行的所有變更](../../ide/preview-changes.md)。
 
    區域變數隨即建立，而類型會從使用方式推斷。 為新區域變數提供新名稱。
 
@@ -67,9 +67,9 @@ ms.locfileid: "68483690"
        ![實作介面結果 VB](media/local-result-vb.png)
 
    > [!NOTE]
-   > 您可以使用 [...所有出現之處...]  功能表選項來取代每個所選運算式，而不只是您已明確醒目提示的運算式。
+   > 您可以使用 [...所有出現之處...] 功能表選項來取代每個所選運算式，而不只是您已明確醒目提示的運算式。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [程式碼產生](../code-generation-in-visual-studio.md)
 - [預覽變更](../../ide/preview-changes.md)

@@ -1,24 +1,24 @@
 ---
-title: HOW TO：實作介面 (類別設計工具)
+title: 如何：實作介面 (類別設計工具)
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - interfaces [Visual Studio], implementing
 - interfaces [Visual Studio]
 ms.assetid: 81d2cf46-7f60-448c-83e3-1d16bb88ca36
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e76aeea4c6779e97d882705e8680cd7a3b00d129
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: bf03046abcf79933044cfb01bf079aee64d09077
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62975173"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72647708"
 ---
-# <a name="how-to-implement-an-interface-in-class-designer"></a>HOW TO：在類別設計工具中實作介面
+# <a name="how-to-implement-an-interface-in-class-designer"></a>如何：在類別設計工具中實作介面
 
 在 [類別設計工具] 中，您可以將介面連線至替介面方法提供程式碼的類別，以在類別圖表上實作介面。 [類別設計工具] 會產生介面實作，並將介面和類別之間的關聯性顯示為繼承關聯性。 您可以在介面與類別之間繪製繼承線，或從 [類別檢視] 中拖曳介面，來實作介面。
 
@@ -48,7 +48,7 @@ ms.locfileid: "62975173"
 
      會顯示棒棒糖符號，附加至類別，並且具有介面名稱的標籤會識別繼承關聯性。 Visual Studio 會為所有介面成員產生虛設常式。此時，即已實作介面。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [如何：使用類別設計工具建立類型](how-to-create-types.md)
 - [如何：檢視現有類型](how-to-view-existing-types.md)

@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptProfilerCallback::OnFunctionEnter | Microsoft Docs
+title: IActiveScriptProfilerCallback：： OnFunctionEnter |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -15,15 +15,15 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1b8410fba08c1799d88532266c022d811c9553fd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6157638353712d6f376fa1eb46a68980b493a5c3
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62993380"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72571694"
 ---
 # <a name="iactivescriptprofilercallbackonfunctionenter"></a>IActiveScriptProfilerCallback::OnFunctionEnter
-告知指令碼引擎即將執行不到文件物件模型 (DOM) 會呼叫的函式呼叫的程式碼剖析工具物件。  
+通知 profiler 物件，腳本引擎即將執行不是呼叫檔物件模型（DOM）的函式呼叫。  
   
 ## <a name="syntax"></a>語法  
   
@@ -35,17 +35,17 @@ HRESULT OnFunctionEnter(
   
 #### <a name="parameters"></a>參數  
  `scriptId`  
- [in]屬於此函式的指令碼的唯一識別碼。 此識別碼會指定指令碼引擎。  
+ 在函數所屬腳本的唯一識別碼。 這個識別碼是由腳本引擎所指派。  
   
  `functionId`  
- [in]函式的唯一識別碼。 此識別碼會指定指令碼引擎。  
+ 在函式的唯一識別碼。 這個識別碼是由腳本引擎所指派。  
   
 ## <a name="return-value"></a>傳回值  
- 這個方法的傳回值會忽略指令碼引擎。  
+ 腳本引擎會忽略這個方法的傳回值。  
   
 ## <a name="remarks"></a>備註  
- DOM 呼叫指令碼引擎會呼叫[IActiveScriptProfilerCallback2::OnFunctionEnterByName](../../winscript/reference/iactivescriptprofilercallback2-onfunctionenterbyname.md)而不是`IActiveScriptProfilerCallback::OnFunctionEnter`。 這是因為大量的 DOM 中唯一的方法和屬性  
+ 針對 DOM 呼叫，腳本引擎會呼叫[IActiveScriptProfilerCallback2：： OnFunctionEnterByName](../../winscript/reference/iactivescriptprofilercallback2-onfunctionenterbyname.md) ，而不是 `IActiveScriptProfilerCallback::OnFunctionEnter`。 這是因為 DOM 中有大量的唯一方法和屬性。  
   
-## <a name="see-also"></a>另請參閱  
- [IActiveScriptProfilerCallback::OnFunctionExit](../../winscript/reference/iactivescriptprofilercallback-onfunctionexit.md)   
+## <a name="see-also"></a>請參閱  
+ [IActiveScriptProfilerCallback：： OnFunctionExit](../../winscript/reference/iactivescriptprofilercallback-onfunctionexit.md)    
  [IActiveScriptProfilerCallback 介面](../../winscript/reference/iactivescriptprofilercallback-interface.md)

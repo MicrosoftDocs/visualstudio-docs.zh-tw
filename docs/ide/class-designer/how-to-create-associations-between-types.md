@@ -1,5 +1,5 @@
 ---
-title: HOW TO：建立類型之間的關聯 (類別設計工具)
+title: 如何：建立類型之間的關聯 (類別設計工具)
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -11,23 +11,23 @@ helpviewer_keywords:
 - associations, types
 - association lines
 ms.assetid: adccb9c8-2f8a-4086-9fa9-f70f99fb6e00
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 723d1565dae55852829daf0038201d0c8685b3ce
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 74fdc2ce798380aace3a2bce714fd5627799b564
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62975381"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72631798"
 ---
-# <a name="how-to-create-associations-between-types-in-class-designer"></a>HOW TO：在類別設計工具中建立類型之間的關聯
+# <a name="how-to-create-associations-between-types-in-class-designer"></a>如何：在類別設計工具中建立類型之間的關聯
 
 [類別設計工具] 中的關聯線會顯示圖表中類別的關聯性。 關聯線表示某類別為專案中其他類別的屬性或欄位的類型。 關聯線通常是用來說明專案中類別之間最重要的關係。
 
-雖然您可以將所有欄位或屬性顯示為關聯，但是針對要在圖表上突顯的部分而只將重要成員顯示為關聯才更具意義  (您可以隱藏次要成員或將其顯示為一般成員)。
+雖然您可以將所有欄位或屬性顯示為關聯，但是針對要在圖表上突顯的部分而只將重要成員顯示為關聯才更具意義 (您可以隱藏次要成員或將其顯示為一般成員)。
 
 > [!NOTE]
 > [類別設計工具] 只支援單向關聯。
@@ -54,6 +54,6 @@ ms.locfileid: "62975381"
 
    [類別細節] 視窗、關聯線、[屬性] 視窗和程式碼中的名稱會隨之變更。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [如何：在成員標記法和關聯標記法之間變更](how-to-change-between-member-notation-and-association-notation.md)

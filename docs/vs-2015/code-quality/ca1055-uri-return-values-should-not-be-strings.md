@@ -1,5 +1,5 @@
 ---
-title: CA1055:URI 會傳回值不應該為字串 |Microsoft Docs
+title: CA1055： URI 傳回值不應為字串 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,50 +12,50 @@ helpviewer_keywords:
 - CA1055
 ms.assetid: 40e39873-7872-4988-8195-9eb0ade9ece0
 caps.latest.revision: 15
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 1b1cc26b0cd2884957a670b9c3aa0af25e51399d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1817d8aa51f1e47e23a7b5ee79580c44f3fe521f
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68200515"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72603232"
 ---
-# <a name="ca1055-uri-return-values-should-not-be-strings"></a>CA1055:URI 傳回值不應該為字串
+# <a name="ca1055-uri-return-values-should-not-be-strings"></a>CA1055：URI 傳回值不應該為字串
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |TypeName|UriReturnValuesShouldNotBeStrings|
 |CheckId|CA1055|
-|分類|Microsoft.Design|
+|Category|Microsoft. Design|
 |中斷變更|中斷|
 
 ## <a name="cause"></a>原因
- 方法的名稱包含"uri"、"Uri"、"urn"、"Urn"、"url"或"Url"，而方法會傳回字串。
+ 方法的名稱包含 "uri"、"Uri"、"urn"、"Urn"、"url" 或 "Url"，而方法會傳回字串。
 
 ## <a name="rule-description"></a>規則描述
- 此規則會將方法名稱分割為 pascal 命名法大小寫慣例為基礎的權杖，並檢查每個語彙基元是否等於"uri"、"Uri"、"urn"、"Urn"、"url"或"Url"。 如果沒有相符項目，此規則假設方法會傳回統一資源識別元 (URI)。 URI 的字串表示方式容易發生剖析和編碼錯誤，並且可能因此產生安全性弱點。 <xref:System.Uri?displayProperty=fullName>類別會提供這些服務安全的方式。
+ 此規則會根據 Pascal 大小寫慣例，將方法名稱分割成權杖，並檢查每個權杖是否等於 "uri"、"Uri"、"urn"、"Urn"、"url" 或 "Url"。 如果相符，此規則會假設方法會傳回統一資源識別元（URI）。 URI 的字串表示方式容易發生剖析和編碼錯誤，並且可能因此產生安全性弱點。 @No__t_0 類別以安全且安全的方式提供這些服務。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
- 若要修正此規則的違規情形，將變更傳回型別，以<xref:System.Uri>。
+ 若要修正此規則的違規情形，請將傳回類型變更為 <xref:System.Uri>。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
- 它會安全地隱藏此規則的警告，如果傳回的值不代表 URI。
+ 如果傳回值不代表 URI，就可以安全地隱藏此規則的警告。
 
 ## <a name="example"></a>範例
- 下列範例顯示的型別`ErrorProne`，，違反這項規則和一個型別， `SaferWay`，符合規則。
+ 下列範例顯示違反此規則的類型 `ErrorProne`，以及符合規則的類型 `SaferWay`。
 
  [!code-cpp[FxCop.Design.UriNotString#1](../snippets/cpp/VS_Snippets_CodeAnalysis/FxCop.Design.UriNotString/cpp/FxCop.Design.UriNotString.cpp#1)]
  [!code-csharp[FxCop.Design.UriNotString#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.UriNotString/cs/FxCop.Design.UriNotString.cs#1)]
  [!code-vb[FxCop.Design.UriNotString#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Design.UriNotString/vb/FxCop.Design.UriNotString.vb#1)]
 
-## <a name="related-rules"></a>相關的規則
- [CA1056:URI 屬性不應該為字串](../code-quality/ca1056-uri-properties-should-not-be-strings.md)
+## <a name="related-rules"></a>相關規則
+ [CA1056：URI 屬性不應該為字串](../code-quality/ca1056-uri-properties-should-not-be-strings.md)
 
- [CA1054:URI 參數不應該為字串](../code-quality/ca1054-uri-parameters-should-not-be-strings.md)
+ [CA1054：URI 參數不應該為字串](../code-quality/ca1054-uri-parameters-should-not-be-strings.md)
 
- [CA2234： 必須必須傳遞 System.Uri 物件而不是字串](../code-quality/ca2234-pass-system-uri-objects-instead-of-strings.md)
+ [CA2234：必須傳遞 System.Uri 物件而非字串](../code-quality/ca2234-pass-system-uri-objects-instead-of-strings.md)
 
- [CA1057:字串 URI 多載呼叫 System.Uri 多載](../code-quality/ca1057-string-uri-overloads-call-system-uri-overloads.md)
+ [CA1057：字串 URI 多載呼叫 System.Uri 多載](../code-quality/ca1057-string-uri-overloads-call-system-uri-overloads.md)

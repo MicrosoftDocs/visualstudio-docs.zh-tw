@@ -1,5 +1,5 @@
 ---
-title: IPerPropertyBrowsing2::MapPropertyToPage |Microsoft Docs
+title: IPerPropertyBrowsing2：： MapPropertyToPage |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 77270bbe963f281a43a085cb7d15724b7b2ec14e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e9e3f821d9e02be567f970d8db1c238ee5cebd29
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62944838"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577121"
 ---
 # <a name="iperpropertybrowsing2mappropertytopage"></a>IPerPropertyBrowsing2::MapPropertyToPage
-傳回可以用來編輯這個屬性的屬性頁 CLSID。  
+傳回可用來編輯此屬性之屬性頁的 CLSID。  
   
 ## <a name="syntax"></a>語法  
   
@@ -38,13 +38,13 @@ HRESULT MapPropertyToPage(
   
 #### <a name="parameters"></a>參數  
  `dispid`  
- [in]分派識別項相關的屬性。  
+ 在相關屬性的分派識別碼。  
   
  `pClsidPropPage`  
- [out]識別與屬性相關聯的屬性頁 CLSID 指標。 如果此方法失敗，*`pClsidPropPage`設定為 CLSID_NULL。  
+ 脫銷CLSID 的指標，識別與屬性相關聯的屬性頁。 如果此方法失敗，* `pClsidPropPage` 會設定為 CLSID_Null。  
   
 ## <a name="return-value"></a>傳回值  
- 會傳回有效`HRESULT`，通常是`S_OK`。  
+ 傳回有效的 `HRESULT`，通常是 `S_OK`。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IPerPropertyBrowsing2 介面 1](../../winscript/reference/iperpropertybrowsing2-interface-1.md)

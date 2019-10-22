@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptProfilerCallback3 Interface | Microsoft Docs
+title: IActiveScriptProfilerCallback3 介面 |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -11,15 +11,15 @@ caps.latest.revision: 2
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: be963a21cd95a2ae0b6fbe2cebb57292df846cf0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e3cf523425b11fcbe60f397f878cd9b68b08768e
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62993302"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72571604"
 ---
 # <a name="iactivescriptprofilercallback3-interface"></a>IActiveScriptProfilerCallback3 介面
-提供方法來通知分析工具分析的執行中，所發生的 web 背景工作內容中。  
+提供方法來通知分析工具，程式碼剖析的執行發生在 web 背景工作的內容中。  
   
 ## <a name="syntax"></a>語法  
   
@@ -31,8 +31,8 @@ interface IActiveScriptProfilerCallback3 : IActiveScriptProfilerCallback2
   
 |方法|描述|  
 |------------|-----------------|  
-|[IActiveScriptProfilerCallback3::SetWebWorkerId 方法](../../winscript/reference/iactivescriptprofilercallback3-setwebworkerid-method.md)|通知分析工具有關要用於此程式碼剖析工作階段的背景工作角色識別碼。|  
+|[IActiveScriptProfilerCallback3::SetWebWorkerId 方法](../../winscript/reference/iactivescriptprofilercallback3-setwebworkerid-method.md)|通知分析工具有關此程式碼剖析會話所使用的背景工作識別碼。|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IActiveScriptProfilerCallback 介面](../../winscript/reference/iactivescriptprofilercallback-interface.md)   
  [IActiveScriptProfilerCallback2 介面](../../winscript/reference/iactivescriptprofilercallback2-interface.md)

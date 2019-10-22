@@ -6,23 +6,23 @@ dev_langs:
 - VB
 - CSharp
 ms.assetid: 03ff1146-706e-4780-91cb-56a83df63eea
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: cb6bbde145317d737afdbf819dba8ee53f805f72
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 14b44a16f6652fe8d94669f99107ebe59b790a0e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71252971"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72639175"
 ---
 # <a name="walkthrough-customize-the-insert-update-and-delete-behavior-of-entity-classes"></a>逐步解說：自訂實體類別的插入、更新和刪除行為
 
 [Visual Studio 中的 LINQ to SQL 工具](../data-tools/linq-to-sql-tools-in-visual-studio2.md)提供視覺化設計介面，可用來建立和編輯以資料庫中的物件為基礎的 LINQ to SQL 類別（實體類別）。 藉由使用[LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)，您可以使用 LINQ 技術來存取 SQL 資料庫。 如需詳細資訊，請參閱 [LINQ (Language-Integrated Query)](/dotnet/csharp/linq/)。
 
-根據預設，執行更新的邏輯是由 LINQ to SQL 執行時間提供。 執行時間會根據`Insert`資料表`Update`的架構（資料行定義和主鍵資訊），建立預設的、和`Delete`語句。 如果您不希望使用預設行為，則可以設定更新行為，並指定用特定的預存程序來執行處理資料庫資料時所需的插入、更新和刪除作業。 未產生預設行為時 (例如，實體類別是對應至檢視時)，同樣可以這樣做。 此外，在資料庫需要透過預存程序進行資料表存取時，也可以覆寫預設更新行為。 如需詳細資訊，請參閱[使用預存程式自訂作業](/dotnet/framework/data/adonet/sql/linq/customizing-operations-by-using-stored-procedures)。
+根據預設，執行更新的邏輯是由 LINQ to SQL 執行時間提供。 執行時間會根據資料表的架構（資料行定義和主鍵資訊），建立預設的 `Insert`、`Update` 和 `Delete` 語句。 如果您不希望使用預設行為，則可以設定更新行為，並指定用特定的預存程序來執行處理資料庫資料時所需的插入、更新和刪除作業。 未產生預設行為時 (例如，實體類別是對應至檢視時)，同樣可以這樣做。 此外，在資料庫需要透過預存程序進行資料表存取時，也可以覆寫預設更新行為。 如需詳細資訊，請參閱[使用預存程式自訂作業](/dotnet/framework/data/adonet/sql/linq/customizing-operations-by-using-stored-procedures)。
 
 > [!NOTE]
 > 此逐步解說需要使用 Northwind 資料庫的 **InsertCustomer**、**UpdateCustomer** 和 **DeleteCustomer** 預存程序。
@@ -33,19 +33,19 @@ ms.locfileid: "71252971"
 
 - 建立新的 Windows Forms 應用程式，並在其中新增 LINQ to SQL 檔案。
 
-- 建立對應至 Northwind `Customers`資料表的實體類別。
+- 建立對應至 Northwind `Customers` 資料表的實體類別。
 
-- 建立參考 LINQ to SQL `Customer`類別的物件資料來源。
+- 建立參考 LINQ to SQL `Customer` 類別的物件資料來源。
 
-- 建立 Windows Form，其中包含<xref:System.Windows.Forms.DataGridView>系結`Customer`至類別的。
+- 建立 Windows Form，其中包含系結至 `Customer` 類別的 <xref:System.Windows.Forms.DataGridView>。
 
 - 實作表單的儲存功能。
 
-- 藉<xref:System.Data.Linq.DataContext>由將預存程式加入至**O/R 設計**工具來建立方法。
+- 藉由將預存程式加入至**O/R 設計**工具來建立 <xref:System.Data.Linq.DataContext> 方法。
 
-- `Customer`將類別設定為使用預存程式來執行插入、更新和刪除。
+- 將 `Customer` 類別設定為使用預存程式來執行插入、更新和刪除。
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>Prerequisites
 
 本逐步解說使用 SQL Server Express LocalDB 和 Northwind 範例資料庫。
 
@@ -102,7 +102,7 @@ ms.locfileid: "71252971"
      會建立名為 **Customer** 的實體類別。 它的屬性會對應至 Customers 資料表中的各資料行。 因為這個實體類別代表 Customers 資料表中的單一客戶，所以其名稱為 **Customer** (而非 **Customers**)。
 
     > [!NOTE]
-    > 此重新命名的行為稱為「複數表示」。 您可以在 [[選項] 對話方塊](../ide/reference/options-dialog-box-visual-studio.md)中開啟或關閉它。 如需詳細資訊，請參閱[如何：開啟和關閉複數表示 (O/R 設計工具)](../data-tools/how-to-turn-pluralization-on-and-off-o-r-designer.md)。
+    > 此重新命名的行為稱為「複數表示」。 您可以在 [[選項] 對話方塊](../ide/reference/options-dialog-box-visual-studio.md)中開啟或關閉它。 如需詳細資訊，請參閱[如何：開啟和關閉複數表示（O/R 設計工具）](../data-tools/how-to-turn-pluralization-on-and-off-o-r-designer.md)。
 
 3. 按一下 [建置] 功能表上的 [建置 UpdatingwithSProcsWalkthrough] 以建置專案。
 
@@ -133,7 +133,7 @@ ms.locfileid: "71252971"
 
 3. 在 [程式碼編輯器] 中開啟 [Form1]。
 
-4. 將下列程式碼新增至表單（在任何特定方法外部，而不是在`Form1`類別內）的全域格式：
+4. 將下列程式碼新增至表單（在任何特定的方法之外），但在 `Form1` 類別內：
 
     ```vb
     Private NorthwindDataContext1 As New NorthwindDataContext
@@ -219,7 +219,7 @@ ms.locfileid: "71252971"
     > [!NOTE]
     > 根據預設，方法引數會對應至同名的類別屬性。 如果屬性名稱變更，使得資料表與實體類別之間不再對應，則您可能需要選取當 **O/R 設計工具**無法判斷正確的對應時，所要對應的對等類別屬性。 此外，如果方法引數沒有可對應的有效類別屬性，可以將 [類別屬性] 值設定為 [(無)]。
 
-14. 按一下 [套用] 儲存所選類別和行為的設定。
+14. 按一下 [套用] 儲存所選取類別和行為的設定。
 
 15. 選取 [行為] 清單中的 [刪除]。
 
@@ -232,7 +232,7 @@ ms.locfileid: "71252971"
 19. 按一下 [確定]。
 
 > [!NOTE]
-> 雖然這不是這個特定逐步解說的問題，但值得注意的是，LINQ to SQL 會自動處理在插入期間的身分識別（自動遞增）、rowguidcol （資料庫產生的 GUID）和時間戳記資料行的資料庫產生值。update. 其他資料行型別的資料庫產生值將非預期地產生 null 值。 若要傳回資料庫產生的值，您應該手動將<xref:System.Data.Linq.Mapping.ColumnAttribute.IsDbGenerated%2A>設定`true`為<xref:System.Data.Linq.Mapping.ColumnAttribute.AutoSync%2A> ，並將設為下列其中一項：[自動同步. Always](<xref:System.Data.Linq.Mapping.AutoSync.Always>)、[自動同步](<xref:System.Data.Linq.Mapping.AutoSync.OnInsert>)或[自動同步. OnUpdate](<xref:System.Data.Linq.Mapping.AutoSync.OnUpdate>)。
+> 雖然這不是這個特定逐步解說的問題，但值得注意的是，LINQ to SQL 會自動處理在插入期間的身分識別（自動遞增）、rowguidcol （資料庫產生的 GUID）和時間戳記資料行的資料庫產生值。update. 其他資料行型別的資料庫產生值將非預期地產生 null 值。 若要傳回資料庫產生的值，您應該手動將 <xref:System.Data.Linq.Mapping.ColumnAttribute.IsDbGenerated%2A> 設定為 `true`，並 <xref:System.Data.Linq.Mapping.ColumnAttribute.AutoSync%2A> 為下列其中一項：[自動同步. Always](<xref:System.Data.Linq.Mapping.AutoSync.Always>)，[自動同步. OnInsert](<xref:System.Data.Linq.Mapping.AutoSync.OnInsert>)或[自動同步. OnUpdate](<xref:System.Data.Linq.Mapping.AutoSync.OnUpdate>)。
 
 ## <a name="test-the-application"></a>測試應用程式
 
@@ -269,10 +269,10 @@ ms.locfileid: "71252971"
 
 - 加入 LINQ 查詢，以篩選資料。 如需相關資訊，請參閱[LINQ 查詢C#簡介（）](/dotnet/csharp/programming-guide/concepts/linq/introduction-to-linq-queries)。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [Visual Studio 中的 LINQ to SQL 工具](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [DataContext 方法](../data-tools/datacontext-methods-o-r-designer.md)
-- [如何：指派用來執行更新、插入和刪除的預存程序](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)
+- [如何：指派用來執行更新、插入和刪除的預存程式](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)
 - [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)
 - [LINQ to SQL 查詢](/dotnet/framework/data/adonet/sql/linq/linq-to-sql-queries)

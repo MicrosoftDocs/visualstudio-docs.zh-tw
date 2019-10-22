@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptAuthor::RemoveNamedItem | Microsoft Docs
+title: IActiveScriptAuthor：： RemoveNamedItem |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 052704b9a1bef8c50c457e51438f0204813c2efe
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: cade532d2ca276237981855cafe12804307d0bb6
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62955141"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572851"
 ---
 # <a name="iactivescriptauthorremovenameditem"></a>IActiveScriptAuthor::RemoveNamedItem
-移除`NamedItem`撰寫引擎的指令碼的命名空間中的物件。  
+從腳本撰寫引擎的命名空間移除 `NamedItem` 物件。  
   
 ## <a name="syntax"></a>語法  
   
@@ -37,7 +37,7 @@ HRESULT RemoveNamedItem(
   
 #### <a name="parameters"></a>參數  
  `pszName`  
- [in]識別緩衝區的位址`NamedItem`若要移除的物件。  
+ 在識別要移除之 `NamedItem` 物件的緩衝區位址。  
   
 ## <a name="return-value"></a>傳回值  
  `HRESULT`。 可能的值包括 (但不限於) 下表中的這些值。  
@@ -45,11 +45,11 @@ HRESULT RemoveNamedItem(
 |值|描述|  
 |-----------|-----------------|  
 |`S_OK`|方法成功。|  
-|`S_FALSE`|`NamedItem`物件不存在於撰寫引擎的指令碼的命名空間中。|  
+|`S_FALSE`|腳本撰寫引擎的命名空間中不存在 `NamedItem` 物件。|  
   
 ## <a name="remarks"></a>備註  
- [Iactivescript:: Addnameditem](../../winscript/reference/iactivescript-addnameditem.md)可用來插入`NamedItem`至指令碼撰寫引擎的命名空間的物件。  
+ [IActiveScript：： AddNamedItem](../../winscript/reference/iactivescript-addnameditem.md)是用來將 `NamedItem` 物件插入腳本撰寫引擎的命名空間。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IActiveScriptAuthor 介面](../../winscript/reference/iactivescriptauthor-interface.md)   
  [IActiveScriptAuthor::AddNamedItem](../../winscript/reference/iactivescriptauthor-addnameditem.md)

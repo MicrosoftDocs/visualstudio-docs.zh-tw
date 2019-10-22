@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentTextAuthor::InsertText |Microsoft Docs
+title: IDebugDocumentTextAuthor：： InsertText |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 678e2429e98f268d65f9c29704e2e9d5a1a8538c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ad927f417c44b471a3fcee96695a1109d33ed17e
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62970896"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572059"
 ---
 # <a name="idebugdocumenttextauthorinserttext"></a>IDebugDocumentTextAuthor::InsertText
-文件中插入新的文字。  
+將新的文字插入檔中。  
   
 ## <a name="syntax"></a>語法  
   
@@ -39,13 +39,13 @@ HRESULT InsertText(
   
 #### <a name="parameters"></a>參數  
  `cCharacterPosition`  
- [in]要插入文字的位置。  
+ 在要插入文字的位置。  
   
  `cNumToInsert`  
- [in]要插入的字元數。  
+ 在要插入的字元數。  
   
  `pcharText[]`  
- [in]包含要插入的字元緩衝區。  
+ 在包含要插入之字元的緩衝區。  
   
 ## <a name="return-value"></a>傳回值  
  方法會傳回 `HRESULT`。 可能的值包括 (但不限於) 下表中的這些值。  
@@ -55,8 +55,8 @@ HRESULT InsertText(
 |`S_OK`|方法成功。|  
   
 ## <a name="remarks"></a>備註  
- 這個方法會將新的文字插入文件。  
+ 這個方法會將新的文字插入檔中。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDebugDocumentTextAuthor 介面](../../winscript/reference/idebugdocumenttextauthor-interface.md)   
  [IDebugDocumentTextAuthor::RemoveText](../../winscript/reference/idebugdocumenttextauthor-removetext.md)

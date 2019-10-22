@@ -3,21 +3,21 @@ title: 工作流程設計工具-基本活動設計工具
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 0a2b613e-dc04-49a1-a787-caec2ec63b90
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0facda4d2dfab4862208a6267f2b0f5f4db61b08
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9e74e8b08ab84bb8ea1de6bbcd85c4926c7c61fa
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62969354"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72650057"
 ---
 # <a name="primitives-activity-designers"></a>基本活動設計工具
 
-基本活動設計工具會用於在 <xref:System.Activities.Statements> 命名空間中建立及設定各種活動，例如 Assign 和 Delay 活動。 在這一節中所包含的主題提供如何使用工作流程設計工具活動與範本設計工具的指引。
+基本活動設計工具會用於在 <xref:System.Activities.Statements> 命名空間中建立及設定各種活動，例如 Assign 和 Delay 活動。 本節所包含的主題提供如何使用工作流程設計工具活動和範本設計工具的指引。
 
 ## <a name="related-sections"></a>相關章節
  [控制流程](../workflow-designer/control-flow-activity-designers.md)
@@ -34,6 +34,6 @@ ms.locfileid: "62969354"
 
  [錯誤處理](../workflow-designer/error-handling-activity-designers.md)
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [使用活動設計工具](../workflow-designer/using-the-activity-designers.md)

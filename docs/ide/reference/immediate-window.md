@@ -11,17 +11,17 @@ helpviewer_keywords:
 - Immediate window
 - first-chance exception notifications
 ms.assetid: d33e7937-73f3-4c69-9df0-777a8713c6f2
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e3a8315b087e259e7e1e37dfa8ab30d476bea308
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: fa5f804c22090fa79586549db00b13d824a54690
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62995252"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72662534"
 ---
 # <a name="immediate-window"></a>即時運算視窗
 
@@ -78,7 +78,7 @@ ms.locfileid: "62995252"
 
     [即時運算] 視窗會執行 `MyFunction`，並顯示 `4`。
 
-如果函式或副程式含有中斷點，Visual Studio 會在適當的點中斷執行。 然後，您就可以使用偵錯工具視窗來檢查程式狀態。 如需詳細資訊，請參閱[逐步解說：在設計階段進行偵錯](../../debugger/walkthrough-debugging-at-design-time.md)。
+如果函式或副程式含有中斷點，Visual Studio 會在適當的點中斷執行。 然後，您就可以使用偵錯工具視窗來檢查程式狀態。 如需詳細資訊，請參閱[逐步解說：在設計階段進行調試](../../debugger/walkthrough-debugging-at-design-time.md)程式。
 
 若是必須啟動執行環境的專案類型 (包括 Visual Studio Tools for Office 專案、Web 專案、智慧型裝置專案和 SQL 專案)，您就無法使用設計階段運算式評估。
 
@@ -129,7 +129,7 @@ Expression has been evaluated and has no value
 
 2. 以滑鼠右鍵按一下 [輸出] 視窗的文字區域，然後選取或取消選取 [例外狀況訊息]。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [使用偵錯工具巡覽程式碼](../../debugger/navigating-through-code-with-the-debugger.md)
 - [命令視窗](../../ide/reference/command-window.md)

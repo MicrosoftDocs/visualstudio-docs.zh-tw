@@ -2,17 +2,17 @@
 title: 實作介面
 ms.date: 01/26/2018
 ms.topic: reference
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 58c714dec8b8a4679d34168cdaf901dc2fb94ea6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 45265c10677b8d3eadc27eb3b6e22c69bb5299be
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62974762"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72658922"
 ---
 # <a name="implement-an-interface-in-visual-studio"></a>在 Visual Studio 中實作介面
 
@@ -24,15 +24,15 @@ ms.locfileid: "62974762"
 
 **功能：** 讓您立即產生實作介面所需的程式碼。
 
-**時機：** 您想要從介面繼承時。
+**時機：** 您想要從介面繼承。
 
-**原因：** 您可以手動逐一實作所有介面；不過，此功能將會自動產生所有方法的簽章。
+**原因：** 您可以手動逐一實作所有介面，不過，此功能將可自動產生所有方法簽章。
 
 ## <a name="how-to"></a>操作說明
 
 1. 將游標放在有紅色曲線的行上，該曲線代表您已參考介面，但尚未實作所有必要的成員。
 
-   - C#: 
+   - C#:
 
        ![醒目提示的程式碼 C#](media/interface-highlight-cs.png)
 
@@ -43,7 +43,7 @@ ms.locfileid: "62974762"
 2. 接著，執行下列其中一項操作：
 
    - **鍵盤**
-      - 在字行任何地方按 **Ctrl**+**.**， 以觸發 [快速動作與重構] 功能表。
+      - 在字行任何地方按 **Ctrl**+ **.** ， 以觸發 [快速動作與重構] 功能表。
    - **滑鼠**
       - 以滑鼠右鍵按一下並選取 [快速動作與重構] 功能表。
       - 將游標暫留在紅色曲線上，然後按一下顯示的 ![錯誤燈泡](media/error-bulb.png) 圖示。
@@ -59,7 +59,7 @@ ms.locfileid: "62974762"
 
    會建立介面的方法特徵標記，並備妥以供實作。
 
-   - C#: 
+   - C#:
 
        ![實作介面結果 C#](media/interface-result-cs.png)
 
@@ -72,7 +72,7 @@ ms.locfileid: "62974762"
    >
    > ![「明確實作介面」結果](media/interface-explicitresult-cs.png);
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [程式碼產生](../code-generation-in-visual-studio.md)
 - [預覽變更](../../ide/preview-changes.md)

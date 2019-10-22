@@ -1,5 +1,5 @@
 ---
-title: HOW TO：檢視 Managed 程式碼的缺失 |Microsoft Docs
+title: 如何：查看 Managed 程式碼缺失 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -10,27 +10,27 @@ helpviewer_keywords:
 - code, viewing defects
 ms.assetid: 58aa6c23-d0b3-414d-930d-82e676cb7e5f
 caps.latest.revision: 15
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 5ef9b5f8da2cf38566c6cedbf10eae3fa5921362
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3fe1c6440f76e358ccde22129cbd413bb229b77e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58930801"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72646262"
 ---
-# <a name="how-to-view-managed-code-defects"></a>HOW TO：檢視受控碼缺失
+# <a name="how-to-view-managed-code-defects"></a>如何：檢視 Managed 程式碼的缺失
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-在 [程式碼分析錯誤、 警告和訊息會報告程式碼分析] 視窗中。 當您執行程式碼分析專案或方案時，會自動出現 [程式碼分析] 視窗。  
-  
- 在 [程式碼分析] 視窗中，您可以：  
-  
--   **請選擇警告標題。**  
-  
-     程式碼分析 視窗中，會出現警告的其他資訊。 引發警告的原始程式檔中的列會顯示，而且原始碼程式碼編輯器中反白顯示。  
-  
--   **選擇警告識別碼。** 警告識別碼都會加上**CA**並包含四位數數字。 比方說，CA1234。  
-  
-     MSDN Library 說明主題，警告會顯示。 [說明] 主題會包含警告的原因的詳細的資訊，並包括範例，示範如何警告問題發生，而且會解析。
+在程式碼分析中，會在 [程式碼分析] 視窗中報告錯誤、警告和訊息。 當您對專案或方案執行程式碼分析時，[程式碼分析] 視窗會自動出現。
+
+ 在 [程式碼分析] 視窗中，您可以：
+
+- **選擇警告標題。**
+
+     警告的其他相關資訊會出現在 [程式碼分析] 視窗中。 原始程式檔中引發警告的程式程式碼會在原始程式碼編輯器中顯示並反白顯示。
+
+- **選擇警告識別碼。** 警告識別碼的前面會加上**CA** ，並包含四位數的數位。 例如，CA1234。
+
+     隨即顯示此警告的 MSDN Library 說明主題。 說明主題包含有關警告原因的詳細資訊，並包含示範警告問題發生和解決方式的範例。

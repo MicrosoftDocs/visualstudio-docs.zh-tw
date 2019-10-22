@@ -1,21 +1,21 @@
 ---
-title: 工作流程設計工具：Debug XAML
+title: 工作流程設計工具： Debug XAML
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: d9305dbc-af62-4bdd-b03f-c54e3fe9ecc7
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: af5b7585ed5c0f34eeb44edba8c60ba0d5e14559
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 5a7b686db2f8c6818d7a76a5e5188715665b3a87
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71254782"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72650346"
 ---
-# <a name="how-to-debug-xaml-with-the-workflow-designer"></a>HOW TO：使用工作流程設計工具對 XAML 進行偵錯
+# <a name="how-to-debug-xaml-with-the-workflow-designer"></a>HOW TO：使用工作流程設計工具偵測 XAML
 
 工作流程是根據 XAML 所定義的。 工作流程的 UI 呈現方式，乃是建立在定義該工作流程的 XAML 樹狀結構上。 調試過程類似于工作流程設計工具中的調試工作流程。 例如，在偵錯工具 XAML 時，[區域變數]、[監看式] 和 [執行緒] 視窗的工作方式與在工作流程設計工具的偵錯工具中一樣。 此外，在 XAML 偵錯期間的呼叫堆疊檢視，也是工作流程執行流程的逐行階層架構檢視。
 
@@ -26,7 +26,7 @@ ms.locfileid: "71254782"
 
 1. 在 Visual Studio 中開啟工作流程或活動專案。
 
-2. 在您想要進行 debug 的活動或活動上設定中斷點，如[如何：在工作流程](../workflow-designer/how-to-set-breakpoints-in-workflows.md)中設定中斷點。
+2. 如[如何：在工作流程中設定中斷點中](../workflow-designer/how-to-set-breakpoints-in-workflows.md)所述，在您想要進行 debug 的活動或活動上設定中斷點。
 
 3. 以滑鼠右鍵按一下包含您工作流程定義的 .xaml 檔案，然後選取 [ **View Code**]。 在設計檢視中設定中斷點的活動之後，您會看到該活動 XAML 項目宣告的同一行上顯示中斷點。
 
@@ -34,7 +34,7 @@ ms.locfileid: "71254782"
 
 5. 當程式碼執行到您的其中一個中斷點時，該中斷點關聯的 XAML 項目會出現醒目顯示。 若要移到下一個中斷點，請使用**F10**或**F11**鍵。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [如何：在工作流程中設定中斷點](../workflow-designer/how-to-set-breakpoints-in-workflows.md)
 - [Debug 工作流程](debugging-workflows-with-the-workflow-designer.md)

@@ -1,63 +1,63 @@
 ---
-title: HOW TO：在程式碼中開啟檔案的模型
+title: 如何：在程式碼中開啟檔案的模型
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f89c62863aadf4e1f8902799b502c07b9dea528d
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: d39543a388c112cf13a5841e4fe825717597d5c1
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67821918"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72661184"
 ---
-# <a name="how-to-open-a-model-from-file-in-program-code"></a>作法：在程式碼中開啟檔案的模型
+# <a name="how-to-open-a-model-from-file-in-program-code"></a>如何：在程式碼中開啟檔案的模型
 
 您可以在任何應用程式中開啟 DSL 模型。
 
-從 Visual Studio 擴充功能，您可以使用 ModelBus，基於此目的。 ModelBus 提供參考模型或模型中的項目以及尋找模型，如果它已移動的標準機制。 如需詳細資訊，請參閱 <<c0> [ 使用 Visual Studio Modelbus 整合模型](../modeling/integrating-models-by-using-visual-studio-modelbus.md)。
+從 Visual Studio 延伸模組中，您可以使用 ModelBus 來實現此目的。 ModelBus 提供標準的機制來參考模型中的模型或專案，以及用於尋找模型（如果已移動）。 如需詳細資訊，請參閱[使用 Visual Studio Modelbus 整合模型](../modeling/integrating-models-by-using-visual-studio-modelbus.md)。
 
 ## <a name="target-framework"></a>目標 Framework
 
-設定**目標 framework**應用程式專案的.NET Framework 4 或更新版本。
+將應用程式專案的**目標 framework**設定為 .NET Framework 4 或更新版本。
 
-1. 開啟您要讀取的 DSL 模型的應用程式的 Visual Studio 專案。
+1. 開啟您要在其中讀取 DSL 模型之應用程式的 Visual Studio 專案。
 
-2. 在 **方案總管**，以滑鼠右鍵按一下專案，然後按一下**屬性**。
+2. 在**方案總管**中，以滑鼠右鍵按一下專案，然後按一下 [**屬性**]。
 
-3. 在 [專案屬性] 視窗中，在**應用程式**索引標籤上，設定**目標 framework**欄位 **.NET Framework 4** （或更新版本）。
+3. 在 [專案屬性] 視窗的 [**應用程式**] 索引標籤上，將 [**目標 framework** ] 欄位設定為 **.NET Framework 4** （或更新版本）。
 
 > [!NOTE]
-> 目標 framework 不應 **.NET Framework 4 Client Profile**。
+> 目標 framework 不應 **.NET Framework 4 用戶端設定檔**。
 
-## <a name="references"></a>參考
+## <a name="references"></a>reference
 
-將這些參考加入您的 Visual Studio 應用程式專案：
+將這些參考新增至您的 Visual Studio 應用程式專案：
 
 - `Microsoft.VisualStudio.Modeling.Sdk.11.0`
 
-  - 如果您沒有看到下 **.NET**索引標籤中**的 加入參考** 對話方塊中，按一下 **瀏覽**索引標籤，然後瀏覽至`%Program Files%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Common\Assemblies\`。
+  - 如果您在 [**加入參考**] 對話方塊的 [ **.net** ] 索引標籤底下沒有看到此選項，請按一下 [**流覽**] 索引標籤，然後流覽至 [`%Program Files%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Common\Assemblies\`]。
 
-- 您 DSL 的組件，您會在 [bin] 資料夾下找到您的 DSL 專案。 其名稱通常屬於表單：*YourCompany*。*YourProject*`.Dsl.dll`。
+- 您的 DSL 元件會在您的 DSL 專案的 bin 資料夾底下找到。 其名稱的格式通常為： *YourCompany*。*Yourproject。* `.Dsl.dll`。
 
-## <a name="important-classes-in-the-dsl"></a>在 DSL 中的重要類別
+## <a name="important-classes-in-the-dsl"></a>DSL 中的重要類別
 
-您可以撰寫會讀取您的 DSL 程式碼之前，您應該知道部分 DSL 產生之類別的名稱。 在 DSL 方案中，開啟**Dsl**專案，並查看**GeneratedCode**資料夾。 或者，按兩下 在您的專案中的 DSL 組件**參考**，然後開啟中的 DSL 命名空間**物件瀏覽器**。
+在您撰寫可讀取 DSL 的程式碼之前，您應該知道 DSL 所產生的一些類別名稱。 在您的 DSL 解決方案中，開啟**dsl**專案，並查看 [ **GeneratedCode** ] 資料夾。 或者，按兩下專案**參考**中的 dsl 元件，然後在**物件瀏覽器**中開啟 dsl 命名空間。
 
-以下是您應該識別的類別：
+這些是您應該識別的類別：
 
-- *YourDslRootClass* -這是中的根類別名稱您`DslDefinition.dsl`。
+- *YourDslRootClass* -這是您 `DslDefinition.dsl` 中的根類別名稱。
 
-- *YourDslName* `SerializationHelper` -此類別定義於`SerializationHelper.cs`DSL 專案中。
+- *YourDslName* `SerializationHelper`-此類別定義于 DSL 專案的 `SerializationHelper.cs` 中。
 
-- *YourDslName* `DomainModel` -此類別定義於`DomainModel.cs`DSL 專案中。
+- *YourDslName* `DomainModel`-此類別定義于 DSL 專案的 `DomainModel.cs` 中。
 
 ## <a name="read-from-a-file"></a>從檔案讀取
 
-下列範例被設計來讀取的 DSL 中的重要類別，如下所示：
+下列範例的設計目的是要讀取一個 DSL，其中重要的類別如下所示：
 
 - FamilyTreeModel
 
@@ -65,7 +65,7 @@ ms.locfileid: "67821918"
 
 - FamilyTreeDomainModel
 
-在此 DSL 的其他網域類別是人員。
+此 DSL 中的另一個網域類別是 Person。
 
 ```csharp
 using System;
@@ -105,7 +105,7 @@ namespace StandaloneReadDslConsole
 
 ## <a name="save-to-a-file"></a>儲存至檔案
 
-先前的程式碼的下列新增至模型進行變更，然後將它儲存至檔案。
+下列的程式碼新增會對模型進行變更，然後將它儲存至檔案。
 
 ```csharp
 using (Transaction t =

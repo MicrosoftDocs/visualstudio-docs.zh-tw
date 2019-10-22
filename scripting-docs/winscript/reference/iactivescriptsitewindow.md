@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptSiteWindow | Microsoft Docs
+title: IActiveScriptSiteWindow |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -13,22 +13,22 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3691a874121c00dcccc69958eb5746a2c1d78122
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1ee680a3d00c6736549b03ce8fee5593a7a8c5af
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62992019"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575902"
 ---
 # <a name="iactivescriptsitewindow"></a>IActiveScriptSiteWindow
-這個介面實作所支援的使用者介面的相同物件的主機[IActiveScriptSite](../../winscript/reference/iactivescriptsite.md) 。 不支援使用者介面，例如伺服器、 主機不會實作`IActiveScriptSiteWindow`介面。 指令碼引擎存取這個介面，藉由呼叫`QueryInterface`從`IActiveScriptSite`。  
+這個介面是由支援與[IActiveScriptSite](../../winscript/reference/iactivescriptsite.md)相同物件上之使用者介面的主機所執行。 不支援使用者介面的主機（例如伺服器）不會執行 `IActiveScriptSiteWindow` 介面。 腳本引擎會藉由從 `IActiveScriptSite` 呼叫 `QueryInterface` 來存取此介面。  
   
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法  
   
 |方法|描述|  
 |------------|-----------------|  
-|[IActiveScriptSiteWindow::GetWindow](../../winscript/reference/iactivescriptsitewindow-getwindow.md)|擷取可做為擁有者的指令碼引擎必須顯示快顯視窗的視窗控制代碼。|  
-|[IActiveScriptSiteWindow::EnableModeless](../../winscript/reference/iactivescriptsitewindow-enablemodeless.md)|會導致主機啟用或停用其主視窗，以及任何非強制回應對話方塊。|  
+|[IActiveScriptSiteWindow::GetWindow](../../winscript/reference/iactivescriptsitewindow-getwindow.md)|抓取視窗控制碼，其可做為腳本引擎必須顯示之快顯視窗的擁有者。|  
+|[IActiveScriptSiteWindow::EnableModeless](../../winscript/reference/iactivescriptsitewindow-enablemodeless.md)|使主機啟用或停用其主視窗以及任何非強制回應對話方塊。|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [動態指令碼介面](../../winscript/reference/active-script-interfaces.md)

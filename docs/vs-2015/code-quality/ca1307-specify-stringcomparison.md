@@ -1,5 +1,5 @@
 ---
-title: CA1307:指定 StringComparison |Microsoft Docs
+title: CA1307：指定 StringComparison |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,39 +12,39 @@ helpviewer_keywords:
 - SpecifyStringComparison
 ms.assetid: 9b0d5e71-1683-4a0d-bc4a-68b2fbd8af71
 caps.latest.revision: 13
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 292e174feeb123c640306bc8ef3ffedd7e8847f6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 111f0b85a601d931ac17bde46f7170fa81e71815
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68200347"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72661402"
 ---
-# <a name="ca1307-specify-stringcomparison"></a>CA1307:必須指定 StringComparison
+# <a name="ca1307-specify-stringcomparison"></a>CA1307：指定 StringComparison
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |TypeName|SpecifyStringComparison|
 |CheckId|CA1307|
-|分類|Microsoft.Globalization|
-|中斷變更|非重大|
+|Category|Microsoft。全球化|
+|中斷變更|不中斷|
 
 ## <a name="cause"></a>原因
- 字串比較作業會使用不會設定一個方法多載<xref:System.StringComparison>參數。
+ 字串比較作業會使用未設定 <xref:System.StringComparison> 參數的方法多載。
 
 ## <a name="rule-description"></a>規則描述
- 許多字串作業，最重要<xref:System.String.Compare%2A>並<xref:System.String.Equals%2A>方法，提供可接受的多載<xref:System.StringComparison>做為參數的列舉值。
+ 許多字串作業（最重要的 <xref:System.String.Compare%2A> 和 <xref:System.String.Equals%2A> 方法）都會提供可接受 <xref:System.StringComparison> 列舉值做為參數的多載。
 
- 每當多載存在該採用<xref:System.StringComparison>參數，它應該用來取代不接受此參數的多載。 藉由明確將此參數，通常的程式碼是會較清楚且容易維護。
+ 每當具有 <xref:System.StringComparison> 參數的多載存在時，就應該使用它，而不是採用此參數的多載。 藉由明確地設定此參數，您的程式碼通常會變得更清楚且更容易維護。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
- 若要修正此規則的違規情形，請將字串比較方法變更為接受的多載<xref:System.StringComparison>列舉型別做為參數。 例如： 變更`String.Compare(str1, str2)`至`String.Compare(str1, str2, StringComparison.Ordinal)`。
+ 若要修正此規則的違規情形，請將字串比較方法變更為接受 <xref:System.StringComparison> 列舉做為參數的多載。 例如：將 `String.Compare(str1, str2)` 變更為 `String.Compare(str1, str2, StringComparison.Ordinal)`。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
- 它可安全地隱藏此規則的警告，當文件庫或應用程式供有限的本機對象，因此不會當地語系化。
+ 當程式庫或應用程式適用于有限的本機物件，因此不會進行當地語系化時，可以安全地隱藏此規則的警告。
 
-## <a name="see-also"></a>另請參閱
- [全球化警告](../code-quality/globalization-warnings.md) [CA1309:使用循序的 StringComparison](../code-quality/ca1309-use-ordinal-stringcomparison.md)
+## <a name="see-also"></a>請參閱
+ [全球化警告](../code-quality/globalization-warnings.md) [CA1309：使用序數 StringComparison](../code-quality/ca1309-use-ordinal-stringcomparison.md)

@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptStringCompare::StrComp | Microsoft Docs
+title: IActiveScriptStringCompare：： StrComp |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 66cccb4281e19aebb25b3b4cde06705b500f53a3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 233c427b634306527b0b0d496397e82f889560e2
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62991437"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577944"
 ---
 # <a name="iactivescriptstringcomparestrcomp"></a>IActiveScriptStringCompare::StrComp
-定義指令碼引擎的字串比較方法。  
+定義腳本引擎的字串比較方法。  
   
 ## <a name="syntax"></a>語法  
   
@@ -48,22 +48,22 @@ HRESULT StrComp(
  第二個字串。  
   
  `iRet`  
- 比較的結果。 0`bszStr1`並`bszStr2`相同;-1 表示`bszStr1`  <  `bszStr2`; 1，否則`bszStr1`  >  `bszStr2`。  
+ 比較的結果。 如果 `bszStr1` 且 `bszStr2`are 相同，則為 0;如果 `bszStr1`  <  `bszStr2`，則為-1;如果 `bszStr1`  >  `bszStr2`，則為1。  
   
 ## <a name="return-value"></a>傳回值  
- 會傳回下列值之一：  
+ 傳回下列其中一個值：  
   
 |傳回值|意義|  
 |------------------|-------------|  
 |`S_OK`|成功。|  
 |`E_INVALIDARG`|引數無效。|  
-|`E_UNEXPECTED`|不需要呼叫 （例如，指令碼引擎有尚未載入或初始化）。|  
+|`E_UNEXPECTED`|不需要呼叫（例如，腳本引擎尚未載入或初始化）。|  
   
 ## <a name="remarks"></a>備註  
- 每次執行字串比較時，會呼叫這個方法。  
+ 每次執行字串比較時，就會呼叫這個方法。  
   
 ## <a name="example"></a>範例  
- 下列範例示範如何多載的字串比較函式。 當您使用多載允許[IActiveScriptProperty::SetProperty](../../winscript/reference/iactivescriptproperty-setproperty.md)設 SCRIPTPROP_STRINGCOMPAREINSTANCE。  
+ 下列範例顯示如何多載字串比較函數。 當您使用[IActiveScriptProperty：： SetProperty](../../winscript/reference/iactivescriptproperty-setproperty.md)設定 SCRIPTPROP_STRINGCOMPAREINSTANCE 時，允許多載。  
   
 ```cpp#  
 cpp_quote("// {58562769-ED52-42f7-8403-4963514E1F11}")  
@@ -100,5 +100,5 @@ interface IActiveScriptStringCompare : IUnknown
 }  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IActiveScriptStringCompare 介面](../../winscript/reference/iactivescriptstringcompare-interface.md)

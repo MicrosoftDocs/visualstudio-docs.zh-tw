@@ -1,5 +1,5 @@
 ---
-title: CA2117:APTCA 類型應該只擴充 APTCA 基底類型 |Microsoft Docs
+title: CA2117： APTCA 類型應該只擴充 APTCA 基底類型 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,76 +12,76 @@ helpviewer_keywords:
 - CA2117
 ms.assetid: c505b586-2f1e-47cb-98ee-a5afcbeda70f
 caps.latest.revision: 18
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 078b7f5535dc80261917ef662b3a2f0069cb33a8
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 09fa055fbf1b11e06b1dde32df5a316a3ec39848
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65687305"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72658663"
 ---
-# <a name="ca2117-aptca-types-should-only-extend-aptca-base-types"></a>CA2117:APTCA 類型應該只擴充 APTCA 基底類型
+# <a name="ca2117-aptca-types-should-only-extend-aptca-base-types"></a>CA2117：APTCA 類型應該只擴充 APTCA 基底類型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |TypeName|AptcaTypesShouldOnlyExtendAptcaBaseTypes|
 |CheckId|CA2117|
-|分類|Microsoft.Security|
+|Category|Microsoft.Security|
 |中斷變更|中斷|
 
 ## <a name="cause"></a>原因
- 公用或受保護的類型與組件中<xref:System.Security.AllowPartiallyTrustedCallersAttribute?displayProperty=fullName>屬性繼承自沒有屬性的組件中宣告的型別。
+ 具有 <xref:System.Security.AllowPartiallyTrustedCallersAttribute?displayProperty=fullName> 屬性之元件中的公用或受保護型別，會繼承自不具有該屬性之元件中所宣告的型別。
 
 ## <a name="rule-description"></a>規則描述
- 根據預設，使用強式名稱的組件中的公用或受保護的類型隱含地受到[繼承要求](https://msdn.microsoft.com/28b9adbb-8f08-4f10-b856-dbf59eb932d9)完全信任。 強式名稱組件標示<xref:System.Security.AllowPartiallyTrustedCallersAttribute>(APTCA) 屬性並沒有這項保護。 屬性會停用繼承要求。 這可讓組件中宣告可繼承公開型別並未受完全信任的類型。
+ 根據預設，具有強式名稱之元件中的公用或受保護類型，會由完全信任的[繼承要求](https://msdn.microsoft.com/28b9adbb-8f08-4f10-b856-dbf59eb932d9)隱含保護。 以 <xref:System.Security.AllowPartiallyTrustedCallersAttribute> （APTCA）屬性標記的強式名稱元件沒有此保護。 屬性會停用繼承要求。 這會讓在元件中宣告的公開類型可由不具有完全信任的類型繼承。
 
- APTCA 屬性存在於上是完全受信任的組件，組件中的型別繼承自不允許部分信任呼叫端的類型，產生安全性弱點時，可能。 如果兩種型別`T1`並`T2`符合下列條件，惡意呼叫端可以使用型別`T1`略過隱含的完全信任的繼承要求保護`T2`:
+ 當 APTCA 屬性出現在完全信任的元件上，且元件中的類型繼承自不允許部分信任呼叫端的類型時，可能會發生安全性攻擊。 如果 `T1` 和 `T2` 的兩個類型符合下列條件，惡意呼叫端可以使用類型 `T1` 來略過保護 `T2` 的隱含完全信任繼承要求：
 
-- `T1` 具有 APTCA 屬性的完全信任組件中宣告的公用型別。
+- `T1` 是在具有 APTCA 屬性的完全信任元件中宣告的公用類型。
 
-- `T1` 繼承自型別`T2`組件外部。
+- `T1` 繼承自其元件外部的類型 `T2`。
 
-- `T2`組件不具有 APTCA 屬性，因此，應該不會繼承由部分信任的組件中的型別。
+- `T2` 的元件沒有 APTCA 屬性，因此不應該由部分信任元件中的類型繼承。
 
-  部分信任的型別`X`可以繼承自`T1`，讓它存取中宣告的繼承成員`T2`。 因為`T2`沒有 APTCA 屬性，其直屬的衍生型別 (`T1`) 必須符合繼承要求完全信任。`T1`具有完全信任，因此滿足這項檢查。 安全性風險是，因為`X`不會參與滿足繼承要求保護`T2`來自不受信任的子類別化。 基於這個理由，具有 APTCA 屬性的型別必須延伸不具有屬性的類型。
+  部分信任的類型 `X` 可以繼承自 `T1`，讓它能夠存取在 `T2` 中宣告的繼承成員。 因為 `T2` 沒有 APTCA 屬性，所以其直屬衍生型別（`T1`）必須滿足完全信任的繼承要求;`T1` 有完全信任，因此可滿足這種檢查。 安全性風險是因為 `X` 並未參與滿足繼承要求的需求，保護 `T2` 不受信任的子類別。 基於這個理由，具有 APTCA 屬性的類型不能擴充沒有屬性的類型。
 
-  另一個安全性問題，並可能是較常見的其中一個，是衍生型別 (`T1`) 可以透過程式設計錯誤，公開受保護的成員，從需要完全信任的型別 (`T2`)。 當發生這種情況時，不受信任的呼叫端就會獲得存取權應該僅適用於完全信任類型的資訊。
+  另一個安全性問題（可能是更常見的一項）是，衍生的型別（`T1`）可以透過程式設計人員錯誤，從需要完全信任的型別（`T2`）公開受保護的成員。 發生這種情況時，不受信任的呼叫端會取得僅適用于完全信任類型之資訊的存取權。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
- 如果違規所報告的類型位於組件，而無須 APTCA 屬性，請將它移除。
+ 如果違規所報告的型別是在不需要 APTCA 屬性的元件中，請將它移除。
 
- 如果需要 APTCA 屬性，加入類型繼承要求完全信任。 這可防止未受信任的型別所繼承。
+ 如果需要 APTCA 屬性，請將完全信任的繼承要求加入至類型。 這可防止不受信任類型的繼承。
 
- 可以藉由將 APTCA 屬性新增至基底類型的違規所回報的組件中修正的違規情形。 請不要這樣不含第一個執行的組件中的所有程式碼和所有相依於組件的程式碼需要大量的安全性檢閱。
+ 藉由將 APTCA 屬性加入違規所報告之基底類型的元件中，可以修正違規。 不需要先對元件中的所有程式碼進行大量的安全性審查，以及相依于元件的所有程式碼，就不要執行此動作。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
- 若要安全地隱藏此規則的警告，您必須確定，您的型別所公開的受保護的成員不直接或間接允許不受信任的來電者存取機密資訊、 作業或可以用於破壞性方式的資源。
+ 若要安全地隱藏這項規則的警告，您必須確保您的類型所公開的受保護成員不會直接或間接允許未受信任的呼叫者存取可以破壞性方式使用的機密資訊、作業或資源。
 
 ## <a name="example"></a>範例
- 下列範例會使用兩個組件和測試應用程式，說明這個規則偵測到的安全性弱點。 第一個組件並沒有 APTCA 屬性，而且不能由部分信任的型別可繼承 (由`T2`中先前的討論)。
+ 下列範例會使用兩個元件和一個測試應用程式來說明此規則偵測到的安全性弱點。 第一個元件沒有 APTCA 屬性，而且不應該由部分信任的類型（在先前討論中以 `T2` 表示）繼承。
 
  [!code-csharp[FxCop.Security.NoAptcaInherit#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Security.NoAptcaInherit/cs/FxCop.Security.NoAptcaInherit.cs#1)]
 
 ## <a name="example"></a>範例
- 第二個組件，由`T1`在先前的討論中，是完全受信任，並允許部分信任呼叫端。
+ 第二個元件（在先前討論中是由 `T1` 表示）完全受信任，並允許部分信任的呼叫端。
 
  [!code-csharp[FxCop.Security.YesAptcaInherit#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Security.YesAptcaInherit/cs/FxCop.Security.YesAptcaInherit.cs#1)]
 
 ## <a name="example"></a>範例
- 測試類型，由`X`在先前的討論中，是在部分信任的組件中。
+ 在上一個討論中，由 `X` 表示的測試類型是在部分信任的元件中。
 
  [!code-csharp[FxCop.Security.TestAptcaInherit#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Security.TestAptcaInherit/cs/FxCop.Security.TestAptcaInherit.cs#1)]
 
  此範例會產生下列輸出。
 
- **符合 shady glen 在 2003 年 2 月 22 日上午 12:00:00 ！** 
-**從測試： 陽光普照草原**
-**符合在陽光普照草原時間 2003 年 2 月 22 日上午 12:00:00 ！**
-## <a name="related-rules"></a>相關的規則
- [CA2116:APTCA 方法應該只呼叫 APTCA 方法](../code-quality/ca2116-aptca-methods-should-only-call-aptca-methods.md)
+ **開會 shady glen 2/22/2003 12:00:00 AM！** **來自測試的 
+： sunny meadow** 
+**符合 SUNNY meadow 2/22/2003 12:00:00 AM！**
+## <a name="related-rules"></a>相關規則
+ [CA2116：APTCA 方法應該只呼叫 APTCA 方法](../code-quality/ca2116-aptca-methods-should-only-call-aptca-methods.md)
 
-## <a name="see-also"></a>另請參閱
- [安全程式碼撰寫指導方針](https://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177) [.NET Framework 組件可由呼叫部分信任程式碼](https://msdn.microsoft.com/a417fcd4-d3ca-4884-a308-3a1a080eac8d)[使用程式庫，從部分信任的程式碼](https://msdn.microsoft.com/library/dd66cd4c-b087-415f-9c3e-94e3a1835f74)[繼承要求](https://msdn.microsoft.com/28b9adbb-8f08-4f10-b856-dbf59eb932d9)
+## <a name="see-also"></a>請參閱
+ [安全](https://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177)程式碼撰寫方針[.NET Framework 元件](https://msdn.microsoft.com/a417fcd4-d3ca-4884-a308-3a1a080eac8d)可使用部分信任程式碼[繼承要求](https://msdn.microsoft.com/28b9adbb-8f08-4f10-b856-dbf59eb932d9)的連結[庫](https://msdn.microsoft.com/library/dd66cd4c-b087-415f-9c3e-94e3a1835f74)來呼叫

@@ -8,24 +8,24 @@ helpviewer_keywords:
 - agents, network adapter
 - controllers, configuring
 ms.assetid: 7eb9290a-f9f6-4e41-9caa-796fcfaf0610
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: dfcbac0bb9188826804ba13884f0f57962dddeab
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: b0dc70169deb8d09fed45bcb921c783765e87c0e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62979324"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72643786"
 ---
-# <a name="how-to-bind-a-test-controller-or-test-agent-to-a-network-adapter"></a>HOW TO：將測試控制器或測試代理程式繫結至網路介面卡
+# <a name="how-to-bind-a-test-controller-or-test-agent-to-a-network-adapter"></a>如何：將測試控制器或測試代理程式繫結至網路介面卡
 
 如果安裝測試控制器或測試代理程式軟體的電腦上有多個網路介面卡，則您必須指定 IP 位址 (而不是電腦名稱)，以識別該測試控制器或測試代理程式。
 
 > [!WARNING]
 > 當您嘗試設定測試代理程式時，可能會接收到下列錯誤：
 >
-> **錯誤 8110。無法連線到指定的控制器電腦或存取控制器物件**
+> **錯誤8110。無法連接到指定的控制器電腦或存取控制器物件**
 >
 > 在有超過一張以上網路介面卡的電腦上安裝測試控制器，便可能導致此錯誤。 也有可能在您嘗試執行測試之前，都能夠成功安裝代理程式，而且不會看到這個問題。
 
@@ -128,9 +128,9 @@ ms.locfileid: "62979324"
 
     `net start vsttagent`
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [安裝和設定測試代理程式](../test/lab-management/install-configure-test-agents.md)
 - [修改負載測試記錄設定](../test/modify-load-test-logging-settings.md)
 - [設定測試控制器和測試代理程式的連接埠](../test/configure-ports-for-test-controllers-and-test-agents.md)
-- [如何：指定測試控制器和測試代理程式的逾時期間](../test/how-to-specify-timeout-periods-for-test-controllers-and-test-agents.md)
+- [如何：指定測試控制器和測試代理程式的逾時期限](../test/how-to-specify-timeout-periods-for-test-controllers-and-test-agents.md)

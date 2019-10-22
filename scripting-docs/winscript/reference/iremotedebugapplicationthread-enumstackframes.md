@@ -1,5 +1,5 @@
 ---
-title: IRemoteDebugApplicationThread::EnumStackFrames |Microsoft Docs
+title: IRemoteDebugApplicationThread：： EnumStackFrames |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 96ca35779ea9f113fc96e485f028f1e74058990a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7dc4c6798d006679ac93250175e9ca4d69683f0c
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62788444"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575286"
 ---
 # <a name="iremotedebugapplicationthreadenumstackframes"></a>IRemoteDebugApplicationThread::EnumStackFrames
-傳回與這個執行緒相關聯的堆疊框架的列舉值。  
+傳回與此執行緒相關聯之堆疊框架的列舉值。  
   
 ## <a name="syntax"></a>語法  
   
@@ -37,7 +37,7 @@ HRESULT EnumStackFrames(
   
 #### <a name="parameters"></a>參數  
  `ppedsf`  
- [out]這個執行緒相關聯的堆疊框架的列舉值。  
+ 脫銷與此執行緒相關聯之堆疊框架的列舉值。  
   
 ## <a name="return-value"></a>傳回值  
  方法會傳回 `HRESULT`。 可能的值包括 (但不限於) 下表中的這些值。  
@@ -47,7 +47,7 @@ HRESULT EnumStackFrames(
 |`S_OK`|方法成功。|  
   
 ## <a name="remarks"></a>備註  
- 這個方法必須從呼叫內的中斷點。 堆疊框架的列舉程式應傳回框架的堆疊上，從頂端開始從最近推送的框架開始。  
+ 這個方法必須從中斷點內呼叫。 堆疊框架列舉值應傳回從堆疊頂端開始的框架，從最新推送的框架開始。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IRemoteDebugApplicationThread 介面](../../winscript/reference/iremotedebugapplicationthread-interface.md)

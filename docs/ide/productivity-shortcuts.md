@@ -3,17 +3,17 @@ title: 鍵盤和滑鼠快速鍵
 description: 此文章包含 Visual Studio 中的鍵盤和滑鼠快速鍵使用祕訣，可幫助您提高生產力。
 ms.date: 11/02/2018
 ms.topic: reference
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 581e20aeb3957b87f85253fa1d6855166084798f
-ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
-ms.translationtype: HT
+ms.openlocfilehash: 7cbe2ddd87f867768c6fd7c041f6b88fbe88c44f
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67046859"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72666737"
 ---
 # <a name="shortcut-tips-for-visual-studio"></a>適用於 Visual Studio 的快速鍵祕訣
 
@@ -22,7 +22,7 @@ ms.locfileid: "67046859"
 如需命令捷徑的完整清單，請參閱[預設鍵盤快速鍵](../ide/default-keyboard-shortcuts-in-visual-studio.md)。
 
 > [!NOTE]
-> 此主題適用於 Windows 上的 Visual Studio。 針對 Visual Studio for Mac，請參閱 [Visual Studio for Mac 中的常用鍵盤快速鍵](/visualstudio/mac/keyboard-shortcuts)。
+> 本主題適用於 Windows 上的 Visual Studio。 針對 Visual Studio for Mac，請參閱 [Visual Studio for Mac 中的常用鍵盤快速鍵](/visualstudio/mac/keyboard-shortcuts)。
 
 ## <a name="window-management"></a>視窗管理
 
@@ -92,7 +92,7 @@ ms.locfileid: "67046859"
 |移至定義堆疊|**Ctrl**+**Shift**+**8** (向後)<br />**Ctrl**+**Shift**+**7** (向前)|
 |關閉 [查看定義] 視窗|**Esc**|
 |將 [查看定義] 視窗升級到一般文件索引標籤|**Ctrl**+**Alt**+**Home**|
-|在多個 [查看定義] 視窗之間巡覽|**Ctrl**+**Alt**+ **-** 和 **Ctrl**+**Alt**+ **=**|
+|在多個 [查看定義] 視窗之間巡覽|**Ctrl**+**Alt**+ **-** and **Ctrl**+**Alt**+ **=**|
 |在多個查看結果之間巡覽|**F8** 和 **Shift**+**F8**|
 |在程式碼編輯器視窗和 [查看定義] 視窗之間切換|**Shift**+**Esc**|
 |移至封閉區塊|**Ctrl**+**Alt**+**向上鍵**|
@@ -106,7 +106,7 @@ ms.locfileid: "67046859"
 |加入按鈕|選取工具列溢位按鈕|
 |尋找標準工具列中的下拉式方塊|**Ctrl**+**D**|
 |尋找文字方塊命令模式|輸入 **>**|
-|建立新別名|在 [命令]  視窗中輸入 **alias \<new alias> \<command>**|
+|建立新別名|在 [命令] 視窗中輸入 **alias \<new alias> \<command>**|
 
 ## <a name="debugging"></a>偵錯
 
@@ -127,9 +127,9 @@ ms.locfileid: "67046859"
 |即時運算視窗 - 清除緩衝區|輸入 **cls**|
 |即時運算視窗 - 列印值|輸入 **?varname**|
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
-- [協助工具祕訣和訣竅](../ide/reference/accessibility-tips-and-tricks.md)
+- [協助工具秘訣和訣竅](../ide/reference/accessibility-tips-and-tricks.md)
 - [Visual Studio 中的生產力功能](productivity-features.md)
 - [預設鍵盤快速鍵](../ide/default-keyboard-shortcuts-in-visual-studio.md)
 - [Visual Studio for Mac 中的常用鍵盤快速鍵](/visualstudio/mac/keyboard-shortcuts)

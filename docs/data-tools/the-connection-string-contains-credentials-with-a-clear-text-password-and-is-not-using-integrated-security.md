@@ -3,17 +3,17 @@ title: 連接字串包含具有純文字密碼的認證，並且不使用整合�
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 501d85af-92e0-4471-b280-8a59c0688575
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: b270290c948807ff0f66d3d142312245475cd33c
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 0a8cb18e84263d7b7144764d007a2928956fc77b
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65460612"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72641029"
 ---
 # <a name="the-connection-string-contains-credentials-with-a-clear-text-password-and-is-not-using-integrated-security"></a>連接字串包含具有純文字密碼的認證，並且不使用整合式安全性
 
@@ -26,14 +26,14 @@ ms.locfileid: "65460612"
 
 ## <a name="save-options"></a>儲存選項
 
-- 若要儲存的連接字串連同敏感資訊，請選擇**是**。
+- 若要儲存含有敏感性資訊的連接字串，請選擇 [**是]** 。
 
    連接字串會儲存為應用程式設定。 連接字串會包含純文字的敏感資訊。 DBML 檔案不包含敏感資訊。
 
-- 若要儲存連接字串，不機密的資訊，請選擇**No**。
+- 若要儲存不含敏感性資訊的連接字串，請選擇 [**否**]。
 
    連接字串會儲存為應用程式設定，但是不包含密碼。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [Visual Studio 中的 LINQ to SQL 工具](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

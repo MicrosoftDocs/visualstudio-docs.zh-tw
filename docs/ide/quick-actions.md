@@ -2,20 +2,20 @@
 title: 快速動作、燈泡及螺絲起子
 ms.date: 03/28/2018
 ms.topic: conceptual
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 71ec5cf14f4cd336b8f92c15b4f0859c7a613354
-ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
+ms.openlocfilehash: 18df1378218d2188ee78d1b1b2a991e35f5ed689
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71186820"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72666761"
 ---
 # <a name="quick-actions"></a>快速動作
 
@@ -68,7 +68,7 @@ ms.locfileid: "71186820"
 
 ![放大的燈泡](../ide/media/vs2015_lightbulb_hover_expanded.png)
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [Visual Studio 中的程式碼產生](../ide/code-generation-in-visual-studio.md)
 - [常用的快速動作](../ide/common-quick-actions.md)

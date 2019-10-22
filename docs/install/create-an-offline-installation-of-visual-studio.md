@@ -1,7 +1,7 @@
 ---
 title: 建立離線安裝
 description: 了解如何在有不可靠網際網路連線或低頻寬時離線安裝 Visual Studio。
-ms.date: 07/24/2019
+ms.date: 10/11/2019
 ms.custom: seodec18
 ms.topic: conceptual
 f1_keywords:
@@ -16,18 +16,18 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 1c210498b88ab1a4fd149870fc3528ddc869ecd6
-ms.sourcegitcommit: 4d2620bee4688fb881e09a07ea4a264b99f0743e
+ms.openlocfilehash: b9c8b60914e814ab6957ee9ec9307b12d9c3d1ba
+ms.sourcegitcommit: 6244689e742e551e7b6933959bd42df56928ece3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "71322560"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72516877"
 ---
 # <a name="create-an-offline-installation-of-visual-studio"></a>建立 Visual Studio 的離線安裝
 
 ::: moniker range="vs-2017"
 
-我們已設計 Visual Studio 2017 可在各種網路和電腦組態中正常運作。 雖然建議您嘗試 [Visual Studio Web 安裝程式](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) (這是小型檔案，並可讓您掌握所有最新修正程式和功能)，但我們了解您可能無法這麼做。
+我們已設計 Visual Studio 2017 可在各種網路和電腦組態中正常運作。 雖然建議您嘗試 [Visual Studio Web 安裝程式](https://visualstudio.microsoft.com/vs/older-downloads) (這是小型檔案，並可讓您掌握所有最新修正程式和功能)，但我們了解您可能無法這麼做。
 
 ::: moniker-end
 
@@ -37,7 +37,7 @@ Visual Studio 2019 的設計適用於各種網路和電腦組態。 雖然建議
 
 ::: moniker-end
 
-例如，您可能有不可靠網際網路連線，或具有低頻寬的連線。 若是如此，您有幾個選項：您可以使用新的 [全部下載後安裝] 功能來下載檔案後再安裝，也可以使用命令列來建立檔案的本機快取。
+例如，您可能有不可靠網際網路連線，或具有低頻寬的連線。 因此，您有幾個選項：您可以使用新的 [全部下載後安裝] 功能來下載檔案後再安裝，也可以使用命令列來建立檔案的本機快取。
 
 > [!NOTE]
 > 如果您是企業系統管理員，想要將 Visual Studio 部署至已啟用網際網路防火牆的用戶端工作站網路，請參閱[建立 Visual Studio 的網路安裝](../install/create-a-network-installation-of-visual-studio.md)和[安裝 Visual Studio 離線安裝所需憑證](../install/install-certificates-for-visual-studio-offline.md)頁面。
@@ -46,7 +46,7 @@ Visual Studio 2019 的設計適用於各種網路和電腦組態。 雖然建議
 
 ::: moniker range="vs-2017"
 
-[**15.8 版的新功能**](/visualstudio/releasenotes/vs2017-relnotes-v15.8#install)：在您下載 Web 安裝程式之後，請從 Visual Studio 安裝程式中選取新的 [全部下載後安裝] 選項。 然後，繼續執行您的安裝。
+[**15.8 版的新**](/visualstudio/releasenotes/vs2017-relnotes-v15.8#install)功能：下載 web 安裝程式之後，請從 [Visual Studio 安裝程式] 中選取 [新增] [**全部下載] 和 [安裝**] 選項。 然後，繼續執行您的安裝。
 
    ![[全部下載後安裝] 選項](media/download-all-then-install.png)
 
@@ -54,7 +54,7 @@ Visual Studio 2019 的設計適用於各種網路和電腦組態。 雖然建議
 
 ::: moniker range="vs-2019"
 
-在您下載 Web 安裝程式之後，請從 Visual Studio 安裝程式中選取新的 [全部下載後安裝] 選項。 然後，繼續執行您的安裝。
+下載 web 安裝程式之後，請從 Visual Studio 安裝程式中選取 新增 **全部下載 和 安裝** 選項。 然後，繼續執行您的安裝。
 
    ![[全部下載後安裝] 選項](media/vs-2019/download-all-then-install-from-installer.png)
 
@@ -75,29 +75,36 @@ Visual Studio 2019 的設計適用於各種網路和電腦組態。 雖然建議
 
 您必須具有網際網路連線才能完成此步驟。
 
-從下載您所選擇之 Visual Studio 版本的 Visual Studio 啟動載入器開始。 您的安裝程式檔案 (或啟動載入器) 將會符合或類似於下列其中一個檔案。
-
 ::: moniker range="vs-2017"
 
-| 版本                    | 檔案                                                                    |
-|----------------------------|-------------------------------------------------------------------------|
-| Visual Studio Community    | [vs_community.exe](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=community&rel=15&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=offline+install&utm_content=download+vs2017)       |
-| Visual Studio Professional | [vs_professional.exe](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=professional&rel=15&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=offline+install&utm_content=download+vs2017) |
-| Visual Studio Enterprise   | [vs_enterprise.exe](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=enterprise&rel=15&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=offline+install&utm_content=download+vs2017)     |
-| Visual Studio Build Tools   | [vs_buildtools .exe](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=buildtools&rel=15&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=offline+install&utm_content=download+vs2017)     |
+若要取得 Visual Studio 2017 的啟動載入器，請參閱[Visual Studio 舊版](https://visualstudio.microsoft.com/vs/older-downloads/)下載頁面，以取得如何執行此操作的詳細資訊。
+
+您的安裝程式可執行檔 &mdash;or 更明確，啟動載入器檔案 &mdash;should 相符，或類似于下列其中一項。
+
+| 版本 | Filename |
+|-------------|-----------------------|
+|Visual Studio Community | vs_community.exe |
+|Visual Studio Professional | vs_professional.exe |
+|Visual Studio 企業版 | vs_enterprise.exe |
+|Visual Studio Build Tools   | vs_buildtools .exe |
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
+從下載您所選擇之 Visual Studio 版本的 Visual Studio 啟動載入器開始。 您的安裝程式檔案 (或啟動載入器) 將會符合或類似於下列其中一個檔案。
+
 | 版本                    | 檔案                                                                    |
 |----------------------------|-------------------------------------------------------------------------|
 | Visual Studio Community    | [vs_community.exe](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=community&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=offline+install&utm_content=download+vs2019)       |
 | Visual Studio Professional | [vs_professional.exe](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=professional&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=offline+install&utm_content=download+vs2019) |
-| Visual Studio Enterprise   | [vs_enterprise.exe](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=enterprise&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=offline+install&utm_content=download+vs2019)     |
+| Visual Studio 企業版   | [vs_enterprise.exe](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=enterprise&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=offline+install&utm_content=download+vs2019)     |
 | Visual Studio Build Tools   | [vs_buildtools .exe](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=buildtools&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=offline+install&utm_content=download+vs2019)     |
 
 ::: moniker-end
+
+>[!TIP]
+>如果您先前已下載啟動載入器檔案，而且想要驗證其版本，以下說明。 在 Windows 中，開啟 [檔案瀏覽器]，以滑鼠右鍵按一下啟動載入器檔案，選擇 [**屬性**]，選擇 [**詳細資料**] 索引標籤，然後查看**產品版本**號碼。 若要將該號碼與 Visual Studio 的版本相符，請參閱[Visual Studio 組建編號和發行日期](visual-studio-build-numbers-and-release-dates.md)頁面。
 
 ### <a name="step-2---create-a-local-install-cache"></a>步驟 2 - 建立本機安裝快取
 
@@ -156,6 +163,12 @@ Visual Studio 2019 的設計適用於各種網路和電腦組態。 雖然建議
 > [!TIP]
 > 當您從本機安裝快取執行時，安裝程式會使用每個檔案的本機版本。 但如果您在安裝期間選取不存在於快取中的元件，則安裝程式會嘗試從網際網路下載它們。
 
+::: moniker range="vs-2019"
+> [!IMPORTANT]
+> 針對離線安裝，如果您收到錯誤訊息，指出「找不到符合下列參數的產品」，請確定您使用的是16.3.5 或更新版本的 `--noweb` 參數。
+>
+::: moniker-end
+
 若要確定您只會安裝先前下載的檔案，請使用您用來建立配置快取的相同命令列選項。 例如，如果您已使用下列命令建立配置快取：
 
 ```cmd
@@ -192,7 +205,7 @@ c:\vslayout\vs_community.exe --add Microsoft.VisualStudio.Workload.ManagedDeskto
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [建立 Visual Studio 的網路安裝](../install/create-a-network-installation-of-visual-studio.md)
 - [更新 Visual Studio 的網路型安裝](update-a-network-installation-of-visual-studio.md)

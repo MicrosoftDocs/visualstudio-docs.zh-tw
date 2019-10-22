@@ -8,17 +8,17 @@ helpviewer_keywords:
 - Start command
 - Debug.Start command
 ms.assetid: dc4e4aa2-b0ab-4e00-92db-6dc3058ddc21
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f455306a87c82c5cd4fe55ccacdbba070b4467c
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+ms.openlocfilehash: 946c4e39b48d15352ef5fa8ae240fb3fe9da5b9b
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926019"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72645242"
 ---
 # <a name="start-command"></a>Start 命令
 開始偵錯啟始專案。
@@ -32,7 +32,7 @@ Debug.Start [address]
 ## <a name="arguments"></a>引數
 `address`
 
-選擇性。 程式暫停執行的位址，與原始程式碼中的中斷點類似。 此引數只適用於偵錯模式。
+選擇項。 程式暫停執行的位址，與原始程式碼中的中斷點類似。 此引數只適用於偵錯模式。
 
 ## <a name="remarks"></a>備註
 **Start** 命令在執行時，會對指定的位址執行 RunToCursor 運算。
@@ -44,7 +44,7 @@ Debug.Start [address]
 >Debug.Start
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [Visual Studio 命令](../../ide/reference/visual-studio-commands.md)
 - [命令視窗](../../ide/reference/command-window.md)

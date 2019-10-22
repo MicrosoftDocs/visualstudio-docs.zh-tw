@@ -2,17 +2,17 @@
 title: 產生方法覆寫
 ms.date: 01/26/2018
 ms.topic: reference
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: afb32a7ddb9a53ac6585cc690a3ba8fd1098b080
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 075c7dc49ffba1d67bbb5b62d313f50b5d09e956
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62790456"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72668438"
 ---
 # <a name="generate-an-override-in-visual-studio"></a>在 Visual Studio 中產生覆寫
 
@@ -26,13 +26,13 @@ ms.locfileid: "62790456"
 
 **時機：** 您想要覆寫基底類別方法並自動產生簽章。
 
-**原因：** 您可以自行撰寫方法簽章；不過，此功能將自動產生簽章。
+**原因：** 您可以自行撰寫方法簽章，不過，此功能將可自動產生簽章。
 
 ## <a name="how-to"></a>操作說明
 
 1. 在 C# 輸入 `override` 或在 Visual Basic 輸入 `Overrides`，後面接著一個空格，可在此處插入覆寫方法。
 
-   - C#: 
+   - C#:
 
       ![覆寫 IntelliSense C#](media/override-intellisense-cs.png)
 
@@ -48,7 +48,7 @@ ms.locfileid: "62790456"
 
    系統會把選取的方法或屬性新增至類別作為覆寫，並備妥以供實作。
 
-   - C#: 
+   - C#:
 
        ![覆寫結果 C#](media/override-result-cs.png)
 
@@ -56,6 +56,6 @@ ms.locfileid: "62790456"
 
        ![覆寫結果 VB](media/override-result-vb.png)
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [程式碼產生](../code-generation-in-visual-studio.md)

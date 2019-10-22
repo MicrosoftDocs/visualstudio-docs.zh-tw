@@ -1,5 +1,5 @@
 ---
-title: IDebugApplication::DebugOutput | Microsoft Docs
+title: IDebugApplication：:D ebugOutput |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a67a16e3fd4868726087df6f2596571d14630f80
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7d52acf0e4b32f0ced63b53a6b37ffe62f1d948e
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62990972"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575010"
 ---
 # <a name="idebugapplicationdebugoutput"></a>IDebugApplication::DebugOutput
-會導致顯示偵錯工具整合式的開發環境 (IDE) 所指定的字串。  
+導致偵錯工具整合式開發環境（IDE）顯示指定的字串。  
   
 ## <a name="syntax"></a>語法  
   
@@ -37,7 +37,7 @@ HRESULT DebugOutput(
   
 #### <a name="parameters"></a>參數  
  `pstr`  
- [in]偵錯工具中顯示的字串。  
+ 在要在偵錯工具中顯示的字串。  
   
 ## <a name="return-value"></a>傳回值  
  方法會傳回 `HRESULT`。 可能的值包括 (但不限於) 下表中的這些值。  
@@ -47,10 +47,10 @@ HRESULT DebugOutput(
 |`S_OK`|方法成功。|  
   
 ## <a name="remarks"></a>備註  
- 此方法允許語言引擎來實作特定語言的偵錯輸出的支援。 字串通常會顯示在偵錯工具的 [輸出] 視窗中。  
+ 這個方法可讓語言引擎執行語言特定的調試輸出支援。 此字串通常會顯示在偵錯工具的 [輸出] 視窗中。  
   
- 這個方法會導致`IApplicationDebugger::onDebugOutput`呼叫。  
+ 這個方法會導致呼叫 `IApplicationDebugger::onDebugOutput`。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDebugApplication 介面](../../winscript/reference/idebugapplication-interface.md)   
  [IApplicationDebugger::onDebugOutput](../../winscript/reference/iapplicationdebugger-ondebugoutput.md)

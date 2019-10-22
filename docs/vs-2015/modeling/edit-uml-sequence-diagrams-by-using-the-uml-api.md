@@ -8,24 +8,24 @@ helpviewer_keywords:
 - UML activity diagrams, programming
 ms.assetid: 8cdd0203-85ef-4c62-9abc-da4cb26fa504
 caps.latest.revision: 27
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: d0bebbb4e6dfe25ce9834595be11aad0fd1f1ba0
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: cbc7a6ce7edede6759c0562df1e524d932f62b91
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68871876"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72669704"
 ---
 # <a name="edit-uml-sequence-diagrams-by-using-the-uml-api"></a>使用 UML API 編輯 UML 循序圖
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 互動是一組的生命線之間的訊息序列。 互動會顯示在 UML 循序圖上。
 
- 如需 API 的完整詳細資料, 請參閱[VisualStudio](/previous-versions/dd493373(v=vs.140))。
+ 如需 API 的完整詳細資料，請參閱[VisualStudio](/previous-versions/dd493373(v=vs.140))。
 
- 如需撰寫 UML 圖表之命令和軌跡處理常式的一般簡介, 請參閱[在模型圖表上定義功能表命令](../modeling/define-a-menu-command-on-a-modeling-diagram.md)。
+ 如需撰寫 UML 圖表之命令和軌跡處理常式的一般簡介，請參閱[在模型圖表上定義功能表命令](../modeling/define-a-menu-command-on-a-modeling-diagram.md)。
 
 ## <a name="basic-code"></a>基本程式碼
 
@@ -52,10 +52,10 @@ using Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation;
    // for diagrams and context
 ```
 
- 如需詳細資訊, 請參閱[在模型圖表上定義功能表命令](../modeling/define-a-menu-command-on-a-modeling-diagram.md)。
+ 如需詳細資訊，請參閱[在模型圖表上定義功能表命令](../modeling/define-a-menu-command-on-a-modeling-diagram.md)。
 
 ### <a name="getting-the-context"></a>正在取得內容
- 如果您正在於循序圖中將互動編輯為命令或軌跡處理常式的一部分，您可以取得內容的參考。 例如：
+ 如果您正在於循序圖中將互動編輯為命令或軌跡處理常式的一部分，您可以取得內容的參考。 例如:
 
 ```
 [SequenceDesignerExtension]
@@ -118,13 +118,13 @@ public void Execute (IMenuCommand command)
 ## <a name="updating-an-interaction-and-its-layout"></a>正在更新互動及其配置
  當您更新互動時，請一律使用下列方法之一來更新此配置，以結束您的作業：
 
-- `ISequenceDiagram.UpdateShapePositions()`調整最近插入或移動之圖形的位置, 以及其連續的圖形。
+- `ISequenceDiagram.UpdateShapePositions()` 會調整最近插入或移動之圖形的位置，以及其連續的圖形。
 
 - `ISequenceDiagram.Layout([SequenceDiagramLayoutKinds])` 會重新繪製整個圖表。 您可以使用參數來指定生命線、訊息或兩者的重新調整位置。
 
   當您插入新項目或移動現有項目時，這一點格位重要。 必須在您執行其中一項作業之後，這些項目才會出現在圖表的正確位置上。 您只需要在完成一連串變更時，呼叫一次其中一項作業。
 
-  若要避免讓在您命令之後執行復原的使用者困惑，請使用 `ILinkedUndoTransaction` 括住您的變更和最終 `Layout()` 或 `UpdateShapePositions()` 作業。 例如：
+  若要避免讓在您命令之後執行復原的使用者困惑，請使用 `ILinkedUndoTransaction` 括住您的變更和最終 `Layout()` 或 `UpdateShapePositions()` 作業。 例如:
 
 ```
 using (ILinkedUndoTransaction transaction = LinkedUndoContext.BeginTransaction("create loop"))
@@ -141,7 +141,7 @@ using (ILinkedUndoTransaction transaction = LinkedUndoContext.BeginTransaction("
 [Import] ILinkedUndoContext LinkedUndoContext { get; set; }
 ```
 
- 如需詳細資訊, 請參閱[使用交易連結 UML 模型更新](../modeling/link-uml-model-updates-by-using-transactions.md)。
+ 如需詳細資訊，請參閱[使用交易連結 UML 模型更新](../modeling/link-uml-model-updates-by-using-transactions.md)。
 
 ## <a name="building-an-interaction"></a>建置互動
 
@@ -184,7 +184,7 @@ System.Diagnostics.Debug.Assert(
 ```
 
 ### <a name="to-create-messages"></a>建立訊息
- 若要建立訊息，您必須識別來源和目標生命線上的插入點。 例如：
+ 若要建立訊息，您必須識別來源和目標生命線上的插入點。 例如:
 
 ```
 interaction.CreateMessage( sourceInsertionPoint,
@@ -246,7 +246,7 @@ cf.CreateInteractionOperand(cf.Operands.Last(), true);
 
  大部分其他問題的成因是插入點配置不當，使得新的訊息或片段必須跨過其他訊息或片段。 徵兆可能是沒有執行任何變更，或擲回例外狀況。 如果沒有執行 `UpdateShapePositions()` 或 `Layout()` 作業，可能不會擲回例外狀況。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [VisualStudio。互動](/previous-versions/dd493373(v=vs.140))
 - [擴充 UML 模型和圖表](../modeling/extend-uml-models-and-diagrams.md)

@@ -5,17 +5,17 @@ ms.topic: conceptual
 f1_keywords:
 - VS.BookmarkWindow
 ms.assetid: a752ed5f-5cf9-4bf2-865a-2131ca600ed5
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e6369aab354e3362c3ac3f1d9320203f930497c7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: e1ac1e911b00c79c64b77dca30b89a1bec74723f
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62961090"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72621628"
 ---
 # <a name="set-bookmarks-in-code"></a>在程式碼中設定書籤
 
@@ -40,6 +40,6 @@ ms.locfileid: "62961090"
 
 您可以選擇書籤視窗中的 [停用所有書籤] 按鈕來關閉書籤 (但不予移除)。 您可以選擇同一個按鈕 (現在稱為 [啟用所有書籤]) 重新予以啟用。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [程式碼編輯器的功能](../ide/writing-code-in-the-code-and-text-editor.md)

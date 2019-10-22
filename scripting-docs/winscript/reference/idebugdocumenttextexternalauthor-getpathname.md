@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentTextExternalAuthor::GetPathName | Microsoft Docs
+title: IDebugDocumentTextExternalAuthor：： GetPathName |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5739e7cb0cb12661ee5683051fb7b687e62dfde4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e876b41ce1bde4defffd11267c6665f9d57da077
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62978750"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575959"
 ---
 # <a name="idebugdocumenttextexternalauthorgetpathname"></a>IDebugDocumentTextExternalAuthor::GetPathName
-傳回文件的完整路徑和檔案名稱。  
+傳回檔的完整路徑和檔案名。  
   
 ## <a name="syntax"></a>語法  
   
@@ -38,10 +38,10 @@ HRESULT GetPathName(
   
 #### <a name="parameters"></a>參數  
  `pbstrLongName`  
- [out]包含完整的路徑和檔案名稱的字串。  
+ 脫銷包含完整路徑和檔案名的字串。  
   
  `pfIsOriginalFile`  
- [out]布林值，指出是否路徑和檔案名稱，請參閱原始文件。  
+ 脫銷布林值，指出路徑和檔案名是否參考原始檔案。  
   
 ## <a name="return-value"></a>傳回值  
  方法會傳回 `HRESULT`。 可能的值包括 (但不限於) 下表中的這些值。  
@@ -49,12 +49,12 @@ HRESULT GetPathName(
 |值|描述|  
 |-----------|-----------------|  
 |`S_OK`|方法成功。|  
-|`E_FAIL`|無法建立原始程式檔，或決定。|  
+|`E_FAIL`|無法建立或判斷來源檔案。|  
   
 ## <a name="remarks"></a>備註  
- 這個方法會傳回文件的完整路徑和檔案名稱。  
+ 這個方法會傳回檔的完整路徑和檔案名。  
   
- 如果`pfIsOriginalFile`是 FALSE、 路徑和檔案名稱中的`pbstrLongName`參考新建立的暫存檔案。  
+ 如果 `pfIsOriginalFile` 為 FALSE，則 `pbstrLongName` 中的路徑和檔案名會參考新建立的暫存檔案。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDebugDocumentTextExternalAuthor 介面](../../winscript/reference/idebugdocumenttextexternalauthor-interface.md)

@@ -1,21 +1,21 @@
 ---
-title: HOW TO：建立基本色彩著色器
+title: 如何：建立基本色彩著色器
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: c301328a-079a-49e8-b688-4749c01657c0
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f15bba37f5a03da934fae9ba4689da7775cfdb92
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: db97199518d4f7f023696b085d0f66dc81394511
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62844860"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72636400"
 ---
-# <a name="how-to-create-a-basic-color-shader"></a>HOW TO：建立基本色彩著色器
+# <a name="how-to-create-a-basic-color-shader"></a>如何：建立基本色彩著色器
 
 本文會示範如何使用著色器設計工具和有向圖形著色器語言 (DGSL)，來建立一般色彩著色器。 這個著色器會將完稿色彩設定為 RGB 色彩常數值。
 
@@ -44,7 +44,7 @@ ms.locfileid: "62844860"
 
 某些圖形可對一些著色器提供更佳的預覽。 如需如何在著色器設計工具中預覽著色器的詳細資訊，請參閱[著色器設計工具](../designers/shader-designer.md)。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [如何：將著色器套用至 3D 模型](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
 - [如何：匯出著色器](../designers/how-to-export-a-shader.md)

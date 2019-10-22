@@ -1,5 +1,5 @@
 ---
-title: CA1011:請考慮將基底類型當做參數傳遞 |Microsoft Docs
+title: CA1011：考慮傳遞基底類型做為參數 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,52 +12,52 @@ helpviewer_keywords:
 - ConsiderPassingBaseTypesAsParameters
 ms.assetid: ce1e1241-dcf4-419b-9363-1d5bc4989279
 caps.latest.revision: 20
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: d3104f7173721668538e6d73c1c5492c5c388ba5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3968d81e8ee18b4b0a56bed50f7aa1f121e1c074
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68151100"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72663246"
 ---
-# <a name="ca1011-consider-passing-base-types-as-parameters"></a>CA1011:建議將基底類型當作參數傳遞
+# <a name="ca1011-consider-passing-base-types-as-parameters"></a>CA1011：建議將基底類型當做參數傳遞
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |TypeName|ConsiderPassingBaseTypesAsParameters|
 |CheckId|CA1011|
-|分類|Microsoft.Design|
+|Category|Microsoft. Design|
 |中斷變更|中斷|
 
 ## <a name="cause"></a>原因
- 方法宣告包含是衍生的類型，型式參數，此方法會呼叫只有參數的基底類型的成員。
+ 方法宣告包含屬於衍生類型的型式參數，而方法只會呼叫參數基底類型的成員。
 
 ## <a name="rule-description"></a>規則描述
- 當方法宣告將基底類型指定為參數，則從此基底類型衍生的任何類型都可以當做對應引數傳遞給方法。 在方法主體內使用的引數時，會執行的特定方法取決於引數的類型。 如果不需要額外的功能所提供的衍生型別，則使用基底型別可讓更廣泛地運用此方法。
+ 當方法宣告將基底類型指定為參數，則從此基底類型衍生的任何類型都可以當做對應引數傳遞給方法。 在方法主體內使用引數時，所執行的特定方法會視引數的類型而定。 如果不需要衍生類型所提供的其他功能，則使用基底類型可更廣泛地使用方法。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
- 若要修正此規則的違規情形，變更參數的型別與其基底類型。
+ 若要修正此規則的違規情形，請將參數的類型變更為其基底類型。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
- 它可安全地隱藏此規則的警告
+ 隱藏此規則的警告是安全的
 
-- 如果方法必須由衍生的型別所提供的特定功能
+- 如果方法需要衍生類型所提供的特定功能
 
    \-或-
 
-- 若要強制執行僅衍生的類型，或是衍生程度較大的類型，傳遞至方法。
+- 若要強制只將衍生的型別或衍生的型別傳遞給方法。
 
-  在這些情況下，程式碼會更穩固因為強式型別檢查的編譯器和執行階段所提供。
+  在這些情況下，因為編譯器和執行時間所提供的強型別檢查，所以程式碼會更健全。
 
 ## <a name="example"></a>範例
- 下列範例示範的方法中， `ManipulateFileStream`，可用於只使用<xref:System.IO.FileStream>違反此規則的物件。 第二個方法中， `ManipulateAnyStream`，來取代符合規則<xref:System.IO.FileStream>參數使用<xref:System.IO.Stream>。
+ 下列範例顯示只能搭配 <xref:System.IO.FileStream> 物件使用的方法 `ManipulateFileStream`，這會違反此規則。 第二個方法 `ManipulateAnyStream`，藉由使用 <xref:System.IO.Stream> 來取代 <xref:System.IO.FileStream> 參數，以滿足規則。
 
  [!code-cpp[FxCop.Design.ConsiderPassingBaseTypes#1](../snippets/cpp/VS_Snippets_CodeAnalysis/FxCop.Design.ConsiderPassingBaseTypes/cpp/FxCop.Design.ConsiderPassingBaseTypes.cpp#1)]
  [!code-csharp[FxCop.Design.ConsiderPassingBaseTypes#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.ConsiderPassingBaseTypes/cs/FxCop.Design.ConsiderPassingBaseTypes.cs#1)]
  [!code-vb[FxCop.Design.ConsiderPassingBaseTypes#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Design.ConsiderPassingBaseTypes/vb/FxCop.Design.ConsiderPassingBaseTypes.vb#1)]
 
-## <a name="related-rules"></a>相關的規則
- [CA1059:成員不應該公開特定的具象類型](../code-quality/ca1059-members-should-not-expose-certain-concrete-types.md)
+## <a name="related-rules"></a>相關規則
+ [CA1059：成員不應該公開特定的具象類型](../code-quality/ca1059-members-should-not-expose-certain-concrete-types.md)

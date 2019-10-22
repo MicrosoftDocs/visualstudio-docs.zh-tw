@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - Class Designer [Visual Studio], classes
 ms.assetid: 75e56f8c-11ef-42a3-b7ec-3d2cf25c581b
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b8312e0db76dd3ce064172116aecd82daab56e90
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 596d7a41b9f63179a0469840d948430ed0294b56
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62975043"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72647641"
 ---
 # <a name="visual-c-classes-in-class-designer"></a>類別設計工具中的 Visual C++ 類別
 
@@ -35,7 +35,7 @@ class A {};
 class B : A {};
 ```
 
-您也可以只將類別 B 拖曳至類別圖表，並以滑鼠右鍵按一下 B 的類別圖形，然後按一下 [顯示基底類別]。 這會顯示其基底類別：答：
+您也可以只將類別 B 拖曳至類別圖表，並以滑鼠右鍵按一下 B 的類別圖形，然後按一下 [顯示基底類別]。 這會顯示其基底類別：A。
 
 ## <a name="multiple-inheritance"></a>多重繼承
 
@@ -149,7 +149,7 @@ typedef struct
 
 |程式碼項目|類別設計工具檢視|
 |------------------| - |
-|`template <class T, class U>`<br /><br /> `class A {};`<br /><br /> `template <class TC>`<br /><br /> `class A<T, int> {};`<br /><br /> `class B : A<int, float>`<br /><br /> `{};`<br /><br /> `class C : A<int, int>`<br /><br /> `{};`|`A<T, U>`<br /><br /> 範本類別<br /><br /> `B`<br /><br /> 類別<br /><br /> (指向類別 A)<br /><br /> `C`<br /><br /> 類別<br /><br /> (指向類別 A)|
+|`template <class T, class U>`<br /><br /> `class A {};`<br /><br /> `template <class TC>`<br /><br /> `class A<T, int> {};`<br /><br /> `class B : A<int, float>`<br /><br /> `{};`<br /><br /> `class C : A<int, int>`<br /><br /> `{};`|`A<T, U>`<br /><br /> 範本類別<br /><br /> `B`<br /><br /> 執行個體<br /><br /> (指向類別 A)<br /><br /> `C`<br /><br /> 執行個體<br /><br /> (指向類別 A)|
 
 下表顯示一些部分特製化範本函式範例。
 
@@ -157,22 +157,22 @@ typedef struct
 |------------------| - |
 |`class A`<br /><br /> `{`<br /><br /> `template <class T, class U>`<br /><br /> `void func(T a, U b);`<br /><br /> `template <class T>`<br /><br /> `void func(T a, int b);`<br /><br /> `};`|`A`<br /><br /> func\<T, U> (+ 1 個多載)|
 |`template <class T1>`<br /><br /> `class A {`<br /><br /> `template <class T2>`<br /><br /> `class B {};`<br /><br /> `};`<br /><br /> `template<> template<>`<br /><br /> `class A<type>::B<type> {};`|`A<T1>`<br /><br /> 範本類別<br /><br /> `B<T2>`<br /><br /> 範本類別<br /><br /> (B 包含在「巢狀類型」的類別 A 內)|
-|`template <class T>`<br /><br /> `class C {};`<br /><br /> `class A : C<int> {};`|`A`<br /><br /> 類別<br /><br /> -> C\<int><br /><br /> `C<T>`<br /><br /> 範本類別|
+|`template <class T>`<br /><br /> `class C {};`<br /><br /> `class A : C<int> {};`|`A`<br /><br /> 執行個體<br /><br /> -> C\<int><br /><br /> `C<T>`<br /><br /> 範本類別|
 
 下表顯示一些範本繼承範例。
 
 |程式碼項目|類別設計工具檢視|
 |------------------| - |
-|`template <class T>`<br /><br /> `class C {};`<br /><br /> `template<>`<br /><br /> `class C<int> {`<br /><br /> `class B {};`<br /><br /> `}`<br /><br /> `class A : C<int>::B {};`|`A`<br /><br /> 類別<br /><br /> ->B<br /><br /> `C<int>`<br /><br /> 類別<br /><br /> (B 包含在「巢狀類型」的類別 C 內)<br /><br /> `C<T>`<br /><br /> 範本類別|
+|`template <class T>`<br /><br /> `class C {};`<br /><br /> `template<>`<br /><br /> `class C<int> {`<br /><br /> `class B {};`<br /><br /> `}`<br /><br /> `class A : C<int>::B {};`|`A`<br /><br /> 執行個體<br /><br /> ->B<br /><br /> `C<int>`<br /><br /> 執行個體<br /><br /> (B 包含在「巢狀類型」的類別 C 內)<br /><br /> `C<T>`<br /><br /> 範本類別|
 
 下表顯示一些標準特製化類別連接範例。
 
 |程式碼項目|類別設計工具檢視|
 |------------------| - |
-|`template <class T>`<br /><br /> `class C {};`<br /><br /> `template<>`<br /><br /> `class C<int> {};`<br /><br /> `class A : C<int> {};`<br /><br /> `class D : C<float> {};`|`A`<br /><br /> 類別<br /><br /> ->C\<int><br /><br /> `C<int>`<br /><br /> 類別<br /><br /> `C<T>`<br /><br /> 範本類別<br /><br /> `D`<br /><br /> 類別<br /><br /> ->C\<float>|
+|`template <class T>`<br /><br /> `class C {};`<br /><br /> `template<>`<br /><br /> `class C<int> {};`<br /><br /> `class A : C<int> {};`<br /><br /> `class D : C<float> {};`|`A`<br /><br /> 執行個體<br /><br /> ->C\<int><br /><br /> `C<int>`<br /><br /> 執行個體<br /><br /> `C<T>`<br /><br /> 範本類別<br /><br /> `D`<br /><br /> 執行個體<br /><br /> ->C\<float>|
 |`class B {`<br /><br /> `template <class T>`<br /><br /> `T min (const T &a, const T &b);`<br /><br /> `};`|`B`<br /><br /> min \<T>|
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [使用 Visual C++ 程式碼](working-with-visual-cpp-code.md)
 - [類別和結構](/cpp/cpp/classes-and-structs-cpp)

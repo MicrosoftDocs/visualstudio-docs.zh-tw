@@ -17,12 +17,12 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5ee258602c47951f4731dc1378542cc83d57d72b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 401eb759523ed1a33d24c3a298db0b3de2b7d5a7
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62955208"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575868"
 ---
 # <a name="documentnametype-enumeration"></a>DOCUMENTNAMETYPE 列舉
 描述要為文件取得的類型。  
@@ -38,15 +38,15 @@ typedef enum tagDOCUMENTNAMETYPE {
 DOCUMENTNAMETYPE_UNIQUE_TITLE,} DOCUMENTNAMETYPE;  
 ```  
   
-## <a name="members"></a>成員  
+## <a name="members"></a>Members  
   
 |成員|描述|  
 |------------|-----------------|  
-|DOCUMENTNAMETYPE_APPNODE|取得出現在樹狀目錄中的應用程式名稱。|  
-|DOCUMENTNAMETYPE_TITLE|檢視器的標題列上所顯示的樣子，請取得的名稱。|  
-|DOCUMENTNAMETYPE_FILE_TAIL|取得不具路徑的檔案名稱。|  
-|DOCUMENTNAMETYPE_URL|取得文件的 URL。|  
-|DOCUMENTNAMETYPE_UNIQUE_TITLE|取得加上列舉型別識別的標題。|  
+|DOCUMENTNAMETYPE_APPNODE|取得在應用程式樹狀結構中顯示的名稱。|  
+|DOCUMENTNAMETYPE_TITLE|取得顯示在檢視器標題列上的名稱。|  
+|DOCUMENTNAMETYPE_FILE_TAIL|取得沒有路徑的檔案名。|  
+|DOCUMENTNAMETYPE_URL|取得檔的 URL。|  
+|DOCUMENTNAMETYPE_UNIQUE_TITLE|取得附加列舉的標題，以供識別之用。|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [動態指令碼偵錯工具的常數、列舉和結構](../../winscript/reference/active-script-debugger-constants-enumerations-and-structures.md)

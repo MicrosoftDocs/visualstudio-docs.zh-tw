@@ -18,21 +18,21 @@ helpviewer_keywords:
 ms.assetid: 81f0c9e8-f471-4de5-aac4-99db336a8809
 author: mikeblome
 ms.author: mblome
-manager: wpickett
+manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f7b0e29f6a9a502054b59fc7313c3eff0565f938
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 3a20637b7c7c3afcf594d1498b6030c685e4be72
+ms.sourcegitcommit: e95dd8cedcd180e0bce6a75c86cf861757918290
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68919892"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "72163055"
 ---
 # <a name="code-analysis-for-cc-overview"></a>C/C++ 程式碼分析概觀
 
 C/C++ Code Analysis 工具會提供 c/C++原始程式碼中可能缺失的相關資訊。 這個工具所報告的常見程式碼錯誤包括：緩衝區滿溢、未初始化的記憶體、Null 指標取值以及記憶體和資源流失。 此工具也可以對[ C++核心指導方針](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md)執行檢查。
 
-## <a name="ide-integrated-development-environment-integration"></a>IDE (整合式開發環境) 整合
+## <a name="ide-integrated-development-environment-integration"></a>IDE （整合式開發環境）整合
 
 程式碼分析工具已完全整合在 Visual Studio IDE 中。
 
@@ -40,25 +40,25 @@ C/C++ Code Analysis 工具會提供 c/C++原始程式碼中可能缺失的相關
 
 ## <a name="command-line-support"></a>命令列支援
 
-您也可以從命令列流量分析工具, 如下列範例所示:
+您也可以從命令列流量分析工具，如下列範例所示：
 
 ```cmd
 C:\>cl /analyze Sample.cpp
 ```
 
-**Visual Studio 2017 15.7 版和更新**版本您可以從命令列使用任何組建系統 (包括 CMake) 來執行此工具。
+**Visual Studio 2017 15.7 版和更新版本：** 您可以從命令列使用任何組建系統（包括 CMake）來執行此工具。
 
 ## <a name="pragma-support"></a>#pragma 支援
 
-您可以使用`#pragma`指示詞將警告視為錯誤、啟用或停用警告, 以及隱藏個別程式程式碼的警告。 如需詳細資訊，請參閱 [Pragma 指示詞和 __Pragma 關鍵字](https://docs.microsoft.com/cpp/preprocessor/pragma-directives-and-the-pragma-keyword)。
+您可以使用 `#pragma` 指示詞將警告視為錯誤;啟用或停用警告，並隱藏個別程式程式碼的警告。 如需詳細資訊，請參閱 [Pragma 指示詞和 __Pragma 關鍵字](https://docs.microsoft.com/cpp/preprocessor/pragma-directives-and-the-pragma-keyword)。
 
 ## <a name="annotation-support"></a>注釋支援
 
-註釋可改善程式碼分析的正確性。 註釋提供函式參數和傳回型別上前置和後置條件的其他資訊。 如需詳細資訊, 請參閱[使用 SAL 注釋減少 CC++ /程式碼](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)缺失。
+註釋可改善程式碼分析的正確性。 註釋提供函式參數和傳回型別上前置和後置條件的其他資訊。 如需詳細資訊，請參閱[使用 SAL 注釋減少 CC++ /程式碼](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)缺失。
 
 ## <a name="run-analysis-tool-as-part-of-check-in-policy"></a>執行分析工具作為簽入原則的一部分
 
-您可能想要所有原始程式碼簽入都要滿足特定的原則。 尤其您會想要確認在最新本機建置步驟中已執行分析。 如需啟用程式碼分析簽入原則的詳細資訊, 請參閱[建立和使用程式碼分析簽入](../code-quality/how-to-create-or-update-standard-code-analysis-check-in-policies.md)原則。
+您可能想要所有原始程式碼簽入都要滿足特定的原則。 尤其您會想要確認在最新本機建置步驟中已執行分析。 如需啟用程式碼分析簽入原則的詳細資訊，請參閱[建立和使用程式碼分析簽入](../code-quality/how-to-create-or-update-standard-code-analysis-check-in-policies.md)原則。
 
 ## <a name="team-build-integration"></a>Team Build 整合
 
@@ -66,8 +66,8 @@ C:\>cl /analyze Sample.cpp
 
 ## <a name="see-also"></a>另請參閱
 
-- [快速入門：C/的程式碼分析C++](quick-start-code-analysis-for-c-cpp.md)
-- [逐步解說：分析 C/C++程式碼是否有瑕疵](walkthrough-analyzing-c-cpp-code-for-defects.md)
+- [快速入門：C/C++@no__t 的程式碼分析-1
+- [逐步解說：分析 C/C++程式碼的瑕疵 @ no__t-1
 - [C/C++ 程式碼分析警告](code-analysis-for-c-cpp-warnings.md)
 - [使用 C++ Core Guidelines 檢查工具](using-the-cpp-core-guidelines-checkers.md)
 - [C++核心指導方針檢查程式參考](code-analysis-for-cpp-corecheck.md)

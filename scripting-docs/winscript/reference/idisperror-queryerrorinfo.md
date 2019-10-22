@@ -1,5 +1,5 @@
 ---
-title: IDispError::QueryErrorInfo | Microsoft Docs
+title: IDispError：： QueryErrorInfo |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 828497eac8bb2751baeca8b1fe19b5aeb5aae6a2
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 5ccfcb020faf25fbe1723a384ff08aefcf55b56d
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63446813"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573085"
 ---
 # <a name="idisperrorqueryerrorinfo"></a>IDispError::QueryErrorInfo
-擷取特定類型的資訊時發生錯誤。  
+抓取特定類型的錯誤資訊。  
   
 ## <a name="syntax"></a>語法  
   
@@ -38,10 +38,10 @@ HRESULT QueryErrorInfo(
   
 #### <a name="parameters"></a>參數  
  `guidErrorType`  
- [in]指定錯誤類型的 GUID。  
+ 在指定錯誤類型的 GUID。  
   
  `ppde`  
- [out]指定 IDispError 物件。  
+ 脫銷指定 IDispError 物件。  
   
 ## <a name="return-value"></a>傳回值  
  方法會傳回 `HRESULT`。 可能的值包括 (但不限於) 下表中的這些值。  
@@ -51,10 +51,10 @@ HRESULT QueryErrorInfo(
 |`S_OK`|方法成功。|  
   
 ## <a name="remarks"></a>備註  
- `QueryErrorInfo`方法會擷取特定類型的資訊時發生錯誤。  
+ @No__t_0 方法會抓取特定類型的錯誤資訊。  
   
 > [!NOTE]
 > 這個方法尚未實作。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDispError 介面](../../winscript/reference/idisperror-interface.md)

@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 85fe84878dabc1270c60be24b6d6f644b284c045
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 4c3e8313e1357095a9732c9304a695dd3b13b465
+ms.sourcegitcommit: 0554b59a2a251661e56824fb9cd6e9b1f326cef1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71253830"
+ms.lasthandoff: 10/03/2019
+ms.locfileid: "71831837"
 ---
 # <a name="automatically-apply-product-keys-when-deploying-visual-studio"></a>在部署 Visual Studio 時自動套用產品金鑰
 
@@ -89,7 +89,7 @@ ms.locfileid: "71253830"
 
 如果 `StorePID.exe` 成功套用產品金鑰，則會傳回值為 0 的 `%ERRORLEVEL%`。 如果發生錯誤，則會根據錯誤狀況傳回下列其中一個代碼：
 
-| 錯誤                     | 程式碼 |
+| Error                     | 程式碼 |
 |---------------------------|------|
 | `PID_ACTION_SUCCESS`      | 0    |
 | `PID_ACTION_NOTINSTALLED` | 1    |
@@ -100,7 +100,7 @@ ms.locfileid: "71253830"
 | `PID_ACTION_NOUPGRADE`    | 6    |
 
 > [!NOTE]
-> 當您執行 Visual Studio 的虛擬實例時，請確定您也將本機 AppData 資料夾和登錄虛擬化。 若要針對虛擬實例進行疑難排解，請執行*C:\Program Files （x86） \Microsoft\> Visual Studio \ < 版本 \Common7\IDE\DDConfigCA.exe*。  
+> 當您執行 Visual Studio 的虛擬實例時，請確定您也將本機 AppData 資料夾和登錄虛擬化。 若要針對虛擬實例進行疑難排解，請執行 `C:\Program Files (x86)\Microsoft Visual Studio\<version>\Common7\IDE\DDConfigCA.exe`。  
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

@@ -4,17 +4,17 @@ ms.date: 01/16/2019
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.FSharp.IntelliSense
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7227fa83e829fff7bac28fa7bb2b50969768e934
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: d293d2c649329f5de8444ea75fd05ddc34738ab4
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62778452"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72666220"
 ---
 # <a name="options-text-editor-f-intellisense"></a>選項、文字編輯器、F#、IntelliSense
 
@@ -34,7 +34,7 @@ ms.locfileid: "62778452"
 
    選取這個選項時，IntelliSense 會在您開始鍵入時自動顯示完成清單，並包含您尚未開啟的命名空間中的項目。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [選項對話方塊、環境、一般](../../ide/reference/general-environment-options-dialog-box.md)
 - [使用 IntelliSense](../../ide/using-intellisense.md)

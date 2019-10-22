@@ -4,17 +4,17 @@ description: 本文描述 Visual Studio 如何透過一些基本方法來協助�
 ms.date: 05/02/2018
 ms.topic: conceptual
 ms.assetid: c3a14d28-d811-4ff3-bd09-21dce14025ca
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 30ee7364ba925eebb18d66fc8ede2b7983d46116
-ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.openlocfilehash: b0be3965ea8343317cf570ae752109b50fa80dd4
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71211365"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72650859"
 ---
 # <a name="make-code-work-in-visual-studio"></a>讓程式碼在 Visual Studio 中運作
 
@@ -24,7 +24,7 @@ Visual Studio 提供一組強大的整合式專案建置和偵錯工具。 在�
 
 ## <a name="build-your-code"></a>建置程式碼
 
-有兩種基本類型的建置組態：[偵錯] 和 [發行]。 [偵錯] 組態會產生較慢、較大的可執行檔，讓您擁有更豐富的互動式執行階段偵錯體驗。 絕不應該釋出 [偵錯] 可執行檔。 [發行] 組態會建置較快、已最佳化的可執行檔，其適合釋出 (至少從編譯器的觀點來看是如此)。 預設建置組態是 [偵錯]。
+有兩種基本類型的建置組態：[偵錯]和 [發行]。 [偵錯] 組態會產生較慢、較大的可執行檔，讓您擁有更豐富的互動式執行階段偵錯體驗。 絕不應該釋出 [偵錯] 可執行檔。 [發行] 組態會建置較快、已最佳化的可執行檔，其適合釋出 (至少從編譯器的觀點來看是如此)。 預設建置組態是 [偵錯]。
 
 建置專案最簡單的做法是按下 **F7** 鍵，但您也可以從主功能表選取 [建置] > [建置方案] 來開始建置。
 
@@ -40,7 +40,7 @@ Visual Studio 提供一組強大的整合式專案建置和偵錯工具。 在�
 
 ## <a name="review-the-error-list"></a>檢視錯誤清單
 
-除非您不修改先前編譯成功的程式碼，否則可能還是會有錯誤。 如果您是撰寫程式碼的新手，您可能會有許多錯誤。 錯誤有時會很明顯，例如簡單的語法錯誤或不正確的變數名稱，但有時候它們會很難了解，只有隱密的程式碼引導您。 如需更清楚地檢視問題，請巡覽至組建 [輸出] 視窗底部，然後按一下 [錯誤清單] 索引標籤。這會讓您更有組織地檢視專案的錯誤和警告，並提供您一些額外的選項。
+除非您不修改先前編譯成功的程式碼，否則可能還是會有錯誤。 如果您是撰寫程式碼的新手，您可能會有許多錯誤。 錯誤有時會很明顯，例如簡單的語法錯誤或不正確的變數名稱，但有時候它們會很難了解，只有隱密的程式碼引導您。 如需更清楚地瞭解問題，請流覽至 [組建**輸出**] 視窗底部，然後按一下 [**錯誤清單**] 索引標籤。這會讓您更有條理地看到專案的錯誤和警告，並提供您一些額外的選項。
 
 ![Visual Studio 輸出和錯誤清單](../ide/media/vs_ide_gs_debug_bad_build_error_list.png)
 
@@ -74,7 +74,7 @@ Visual Studio 提供一組強大的整合式專案建置和偵錯工具。 在�
 
 ### <a name="c-and-visual-basic-code-analysis"></a>C# 和 Visual Basic 程式碼分析
 
-Visual Studio 包含一組內建的 [.NET Compiler Platform 分析器](../code-quality/roslyn-analyzers-overview.md)，其會檢查您鍵入的 C# 和 Visual Basic 程式碼。 您可以將其他分析器安裝為 Visual Studio 延伸模組或 NuGet 套件。 如果發現違反規則，則會在程式碼編輯器中將違反的程式碼加上波浪底線，並在 [錯誤清單] 中回報這些違規。
+Visual Studio 包含一組內建的 [.NET Compiler Platform 分析器](../code-quality/roslyn-analyzers-overview.md)，其會檢查您鍵入的 C# 和 Visual Basic 程式碼。 您可以將其他分析器安裝為 Visual Studio 延伸模組或 NuGet 套件。 如果發現違反規則，則會在錯誤清單和程式碼編輯器中，將其報告為違規程序代碼下的波浪線。
 
 ### <a name="c-code-analysis"></a>C++ 程式碼分析
 
@@ -166,7 +166,7 @@ Visual Studio 會透過編輯器底部的 [程式**代碼清除**] 按鈕，提�
 
 若要深入了解 Visual Studio 中的單元測試，以及了解它們如何協助您建立更高品質的程式碼，請參閱[單元測試基本概念](../test/unit-test-basics.md)。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [偵錯工具簡介](../debugger/debugger-feature-tour.md)
 - [深入了解使用偵錯工具](../debugger/index.yml)

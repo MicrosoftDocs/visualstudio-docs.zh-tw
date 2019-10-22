@@ -9,22 +9,22 @@ helpviewer_keywords:
 - plug-ins, load test
 - load tests, plug-ins
 ms.assetid: 27806972-1b15-4388-833d-6d0632816f1f
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 2f8bd3aeab7606e33818bce1324ded83fc333eb9
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+ms.openlocfilehash: e2eea116eb18e192720410b71136de9d823ed0fe
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68918116"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653671"
 ---
-# <a name="how-to-create-a-load-test-plug-in"></a>作法：建立負載測試外掛程式
+# <a name="how-to-create-a-load-test-plug-in"></a>如何：建立負載測試外掛程式
 
-您可以建立負載測試外掛程式，以便在執行負載測試的不同時刻執行。 您可以建立外掛程式，以擴充或修改負載測試的內建功能。 例如，您可以撰寫負載測試外掛程式，以便在執行負載測試時，設定或修改負載測試模式。 若要這麼做，就必須建立繼承自 <xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin> 介面的類別。 這個類別必須實作此介面的 <xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin.Initialize*> 方法。 如需詳細資訊，請參閱 <xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin>。
+您可以建立負載測試外掛程式，以便在執行負載測試的不同時刻執行。 您可以建立外掛程式，以擴充或修改負載測試的內建功能。 例如，您可以撰寫負載測試外掛程式，以便在執行負載測試時，設定或修改負載測試模式。 若要這麼做，就必須建立繼承自 <xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin> 介面的類別。 這個類別必須實作此介面的 <xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin.Initialize*> 方法。 如需詳細資訊，請參閱<xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin>。
 
 > [!TIP]
-> 您也可以建立 Web 效能測試的外掛程式。 如需詳細資訊，請參閱[如何：建立 Web 效能測試外掛程式](../test/how-to-create-a-web-performance-test-plug-in.md)。
+> 您也可以建立 Web 效能測試的外掛程式。 如需詳細資訊，請參閱[如何：建立 web 效能測試外掛程式](../test/how-to-create-a-web-performance-test-plug-in.md)。
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
@@ -38,51 +38,51 @@ ms.locfileid: "68918116"
 
      如需詳細資訊，請參閱[快速入門：建立負載測試專案](../test/quickstart-create-a-load-test-project.md)。
 
-3. 將新的**類別庫**專案新增至方案。 (在 [方案總管]  中，以滑鼠右鍵按一下方案並選取 [新增]  ，然後選擇 [新增專案]  。)
+3. 將新的**類別庫**專案新增至方案。 (在 [方案總管] 中，以滑鼠右鍵按一下方案並選取 [新增]，然後選擇 [新增專案]。)
 
-4. 在 [方案總管]  中，以滑鼠右鍵按一下新類別庫中的 [參考]  資料夾，然後選取 [新增參考]  。
+4. 在 [方案總管] 中，以滑鼠右鍵按一下新類別庫中的 [參考] 資料夾，然後選取 [新增參考]。
 
-   [新增參考]  對話方塊隨即顯示。
+   [新增參考] 對話方塊隨即顯示。
 
-5. 選擇 [.NET]  索引標籤並向下捲動，然後選取 **Microsoft.VisualStudio.QualityTools.LoadTestFramework**。
+5. 選擇 [.NET] 索引標籤並向下捲動，然後選取 **Microsoft.VisualStudio.QualityTools.LoadTestFramework**。
 
-6. 選擇 [確定]  。
+6. 選擇 [確定]。
 
-   **Microsoft.VisualStudio.QualityTools.LoadTestFramework** 的參考就會新增至 [方案總管]  中的 [參考]  資料夾。
+   **Microsoft.VisualStudio.QualityTools.LoadTestFramework** 的參考就會新增至 [方案總管] 中的 [參考] 資料夾。
 
-7. 在 [方案總管]  中，以滑鼠右鍵按一下 Web 效能和負載測試專案的頂端節點，此專案包含要新增負載測試外掛程式的負載測試，然後選取 [新增參考]  。
+7. 在 [方案總管] 中，以滑鼠右鍵按一下 Web 效能和負載測試專案的頂端節點，此專案包含要新增負載測試外掛程式的負載測試，然後選取 [新增參考]。
 
-   [新增參考]  對話方塊隨即顯示。
+   [新增參考] 對話方塊隨即顯示。
 
-8. 選擇 [專案]  索引標籤，然後選取 [類別庫專案]。
+8. 選擇 [專案] 索引標籤，然後選取 [類別庫專案]。
 
-9. 選擇 [確定]  。
+9. 選擇 [確定]。
 
-10. 在 [程式碼編輯器]  中，加入 <xref:Microsoft.VisualStudio.TestTools.LoadTesting> 命名空間的 `using` 陳述式。
+10. 在 [程式碼編輯器] 中，加入 <xref:Microsoft.VisualStudio.TestTools.LoadTesting> 命名空間的 `using` 陳述式。
 
 11. 實作在類別庫專案中所建立之類別的 <xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin> 介面。 如需範例實作，請參閱下列的＜範例＞一節。
 
 12. 程式碼撰寫完成之後，請建置新專案。
 
-13. 以滑鼠右鍵按一下負載測試的頂端節點，然後選擇 [新增負載測試外掛程式]  。
+13. 以滑鼠右鍵按一下負載測試的頂端節點，然後選擇 [新增負載測試外掛程式]。
 
-     [新增負載測試外掛程式]  對話方塊隨即顯示。
+     [新增負載測試外掛程式] 對話方塊隨即顯示。
 
-14. 在 [選取外掛程式]  底下，選取您的負載測試外掛程式類別。
+14. 在 [選取外掛程式] 底下，選取您的負載測試外掛程式類別。
 
-15. 在 [所選外掛程式的屬性]  窗格中，設定外掛程式要在執行階段中使用的初始值。
+15. 在 [所選外掛程式的屬性] 窗格中，設定外掛程式要在執行階段中使用的初始值。
 
     > [!NOTE]
-    > 您可以從外掛程式公開任意數目的屬性，只要讓這些屬性成為公用、可設定且屬於基底型別 (例如整數、布林或字串) 的屬性即可。 您之後也可以使用 [屬性]  視窗來變更 Web 效能測試外掛程式屬性。
+    > 您可以從外掛程式公開任意數目的屬性，只要讓這些屬性成為公用、可設定且屬於基底型別 (例如整數、布林或字串) 的屬性即可。 您之後也可以使用 [屬性] 視窗來變更 Web 效能測試外掛程式屬性。
 
-16. 選擇 [確定]  。
+16. 選擇 [確定]。
 
-     此外掛程式就會新增至 [負載測試外掛程式]  資料夾。
+     此外掛程式就會新增至 [負載測試外掛程式] 資料夾。
 
     > [!WARNING]
     > 當您執行使用外掛程式的 Web 效能測試或負載測試時，可能會收到如下錯誤：
     >
-    > **要求失敗：\<外掛程式> 事件中發生例外狀況：無法載入檔案或組件 \<"外掛程式名稱".dll file>, Version=\<n.n.n.n>, Culture=neutral, PublicKeyToken=null' 或其相依性的其中之一。系統找不到指定的檔案。**
+    > **要求失敗： \<plug in > 事件中發生例外狀況：無法載入檔案或元件 ' \< "外掛程式名稱" .dll 檔案 >，Version = \<n. n. n >，Culture = 中性，PublicKeyToken = null ' 或它的其中一個相依性。系統找不到指定的檔案。**
     >
     > 如果您對任何外掛程式進行程式碼變更並建立新的 DLL 版本 **(Version=0.0.0.0)** ，但是外掛程式仍然參考原始的外掛程式版本，就會導致此錯誤發生。 若要更正此問題，請依照下列步驟執行：
     >
@@ -157,7 +157,7 @@ namespace LoadTestPluginTest
 
 - <xref:Microsoft.VisualStudio.TestTools.LoadTesting.LoadTest.LoadTestAborted>
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - <xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin>
 - [為負載測試建立自訂程式碼和外掛程式](../test/create-custom-code-and-plug-ins-for-load-tests.md)

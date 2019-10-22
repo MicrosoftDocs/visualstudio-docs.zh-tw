@@ -1,5 +1,5 @@
 ---
-title: 預期的十六進位數字 |Microsoft Docs
+title: 預期的十六進位數位 |Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
@@ -14,15 +14,15 @@ ms.assetid: 67a86df7-49f9-43cb-99c6-99b1a427827a
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 82f020b5f3b82ab2ce3545102be83a5cd41c6069
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: f6672046e0f7bf5e39c334dc0ba30f22eaff6e9a
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63446518"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573381"
 ---
 # <a name="expected-hexadecimal-digit"></a>必須是十六進位數
-您建立不正確的 Unicode 逸出序列。 Unicode 逸出序列的開頭 \u，後面接著四個十六進位數字 （不多也不少）。 可以包含 Unicode 十六進位數字，只是數字 0-9、 大寫的字母 A-F 和小寫字母 a-f。 下列範例會示範正確的 Unicode 逸出序列。  
+您建立了不正確的 Unicode escape 序列。 Unicode 逸出序列是以 \u 開頭，後面再加上四個十六進位數位（不超過和小於）。 Unicode 十六進位數位只能包含數位0-9、大寫字母 A-F 和小寫字母 a-f。 下列範例示範正確格式的 Unicode escape 序列。  
   
 ```JavaScript  
 z = "\u1A5F";  
@@ -30,10 +30,10 @@ z = "\u1A5F";
   
 ### <a name="to-correct-this-error"></a>更正這個錯誤  
   
-- 確定您 Unicode 的十六進位數字開頭 \u、 只包含數字 0-9、 大寫的字母 A-F、 小寫字母 a-f;和分為四個數字。  
+- 請確定您的 Unicode 十六進位數位是以 \u 開頭，只包含數位0-9，大寫字母 A-f，小寫字母 a-f;和會分為四位數。  
   
     > [!NOTE]
-    > 如果您想要在字串中，使用常值文字 \u，然後使用兩個反斜線 (\\\u)-一個用來逸出第一個反斜線。  
+    > 如果您想要在字串中使用常值文字，請使用兩個反斜線-（\\ \u）-一個用來轉義第一個反斜線。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [資料類型](../../javascript/data-types-javascript.md)

@@ -4,17 +4,17 @@ ms.date: 05/02/2017
 ms.topic: conceptual
 helpviewer_keywords:
 - IntelliTest, Dynamic symbolic execution
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-author: gewarren
-ms.openlocfilehash: fe0215b3474e72316d848c89f2284ab4e39f213b
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
-ms.translationtype: HT
+author: jillre
+ms.openlocfilehash: 26befe6612c874c2565e44459cc90fe980296137
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66746312"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653178"
 ---
 # <a name="input-generation-using-dynamic-symbolic-execution"></a>使用動態符號執行產生輸入
 
@@ -26,7 +26,7 @@ IntelliTest 會藉由分析程式中的分支條件，以產生[參數化單元�
 
 1. IntelliTest 會以所選的輸入 `i` 執行測試，並監視測試和待測程式的執行狀況。
 
-1. 在執行期間，程式會採用程式的所有條件式分支所判定的特定路徑。 判定執行的所有條件集合稱為「路徑條件」  ，撰寫為正式輸入參數的述詞 `p: I -> {true, false}`。 IntelliTest 會計算這個述詞的表示法。
+1. 在執行期間，程式會採用程式的所有條件式分支所判定的特定路徑。 判定執行的所有條件集合稱為「路徑條件」，撰寫為正式輸入參數的述詞 `p: I -> {true, false}`。 IntelliTest 會計算這個述詞的表示法。
 
 1. IntelliTest 會設定 `q := (q or p)`。 換句話說，它記錄了已看到 `p` 所代表路徑的事實。
 
@@ -52,7 +52,7 @@ IntelliTest 使用 [Z3](https://github.com/Z3Prover/z3/wiki) 條件約束規劃�
 ## <a name="dynamic-code-coverage"></a>動態程式碼涵蓋範圍
 
 作為執行階段監視的副作用，IntelliTest 會收集動態程式碼涵蓋範圍資料。
-這稱為「動態」  的原因是 IntelliTest 只知道已執行的程式碼，因此它無法以其他涵蓋範圍工具通常使用的相同方式，提供涵蓋範圍的絕對值。
+這稱為「動態」的原因是 IntelliTest 只知道已執行的程式碼，因此它無法以其他涵蓋範圍工具通常使用的相同方式，提供涵蓋範圍的絕對值。
 
 例如，當 IntelliTest 報告動態涵蓋範圍為 5/10 基本區塊時，這表示已涵蓋十個中的五個區塊，其中分析到目前為止已觸達之所有方法 (相對於待測組件中已存在的所有方法) 的區塊總數是十個。
 稍後在分析中，隨著探索到更多的可觸達方法，分子 (在此範例中為 5) 和分母 (10) 都可能會增加。
@@ -100,7 +100,7 @@ IntelliTest 在執行測試和待測程式時，會監視已執行的指令。 �
 
 如何測試具有介面類型參數的方法？ 或是具有非密封類別參數的方法？ IntelliTest 不知道在呼叫這個方法時，稍後將使用的實作。 而且也許在測試時甚至沒有可用的實際實作。
 
-傳統的解決方法是使用具有明確行為的「模擬物件」  。
+傳統的解決方法是使用具有明確行為的「模擬物件」。
 
 一個模擬物件可實作一個介面 (或延伸非密封類別)。 它不代表實際的實作，而只是允許使用模擬物件執行測試的捷徑。 其行為是根據每個使用它的測試案例，以手動方式定義。 有許多工具可讓您輕鬆地定義模擬物件和其預期的行為，但這種行為仍然必須以手動方式定義。
 

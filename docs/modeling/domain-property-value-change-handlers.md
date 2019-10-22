@@ -4,27 +4,27 @@ ms.date: 03/22/2018
 ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, overriding event handlers
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9fcad439c7f0633f75d2a7364e2d0d3bfb142f89
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 46bf3d8a188899e27e7a83d875cf970583858ba8
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62994636"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653785"
 ---
 # <a name="domain-property-value-change-handlers"></a>網域屬性值變更處理常式
 
-在 Visual Studio 網域特定語言中，當網域屬性的值變更時，`OnValueChanging()`和`OnValueChanged()`網域屬性處理常式中叫用方法。 若要回應變更，您可以覆寫這些方法。
+在 Visual Studio 網域指定的語言中，當網域屬性的值變更時，會在定義域屬性處理常式中叫用 `OnValueChanging()` 和 `OnValueChanged()` 方法。 若要回應變更，您可以覆寫這些方法。
 
 ## <a name="override-the-property-handler-methods"></a>覆寫屬性處理常式方法
 
-網域指定的語言的每個網域屬性會由巢狀於父網域類別內的類別來處理。 其名稱遵循下列格式*PropertyName*PropertyHandler。 您可以檢查這個檔案中的屬性處理常式類別**Dsl\Generated Code\DomainClasses.cs**。 在這個類別中，會在值變更前立即呼叫 `OnValueChanging()`，並在值變更後立即呼叫 `OnValueChanged()`。
+網域指定的語言的每個網域屬性會由巢狀於父網域類別內的類別來處理。 其名稱遵循*PropertyName*PropertyHandler 的格式。 您可以在 [檔案**Dsl\Generated] Code\DomainClasses.cs**中檢查此屬性處理常式類別。 在這個類別中，會在值變更前立即呼叫 `OnValueChanging()`，並在值變更後立即呼叫 `OnValueChanged()`。
 
-例如，假設您有一個名為的網域類別`Comment`具有字串網域屬性，名為`Text`和名為整數屬性`TextLengthCount`。 會造成`TextLengthCount`一定要包含的長度`Text`字串，您可以在 Dsl 專案中的個別檔案中撰寫下列程式碼：
+例如，假設您有一個名為 `Comment` 的網域類別，其中具有名為 `Text` 的字串網域屬性和名為 `TextLengthCount` 的整數屬性。 若要讓 `TextLengthCount` 一律包含 `Text` 字串的長度，您可以在 Dsl 專案的個別檔案中撰寫下列程式碼：
 
 ```csharp
 // Domain Class "Comment":
@@ -60,7 +60,7 @@ public partial class Comment
 
 - 您無法使用變更處理常式來修改新值。 如果您要這樣做 (例如將值限制在特定範圍內)，請定義 `ChangeRule`。
 
-- 您無法將變更處理常式加入至代表關聯性角色的屬性。 請改為定義關聯性類別上的 `AddRule` 和 `DeleteRule`。 建立或變更連結時，即會觸發這些規則。 如需詳細資訊，請參閱 <<c0> [ 規則傳播變更內模型](../modeling/rules-propagate-changes-within-the-model.md)。
+- 您無法將變更處理常式加入至代表關聯性角色的屬性。 請改為定義關聯性類別上的 `AddRule` 和 `DeleteRule`。 建立或變更連結時，即會觸發這些規則。 如需詳細資訊，請參閱[規則傳播模型內的變更](../modeling/rules-propagate-changes-within-the-model.md)。
 
 ### <a name="changes-in-and-out-of-the-store"></a>存放區內外的變更
 
@@ -93,23 +93,23 @@ if (newValue > 10)
 }
 ```
 
-### <a name="alternative-technique-calculated-properties"></a>替代方法：導出的屬性
+### <a name="alternative-technique-calculated-properties"></a>替代方法：計算屬性
 
 先前的範例示範如何使用 OnValueChanged() 將某個網域屬性的值傳播至另一個網域屬性。 每個屬性都有自己的儲存值。
 
-相反地，您可以考慮將衍生屬性定義為計算屬性。 在此情況下，屬性不會有自己的儲存值，因此每當需要屬性值時，都會評估定義的函式。 如需詳細資訊，請參閱 <<c0> [ 計算和儲存體的自訂屬性](../modeling/calculated-and-custom-storage-properties.md)。
+相反地，您可以考慮將衍生屬性定義為計算屬性。 在此情況下，屬性不會有自己的儲存值，因此每當需要屬性值時，都會評估定義的函式。 如需詳細資訊，請參閱[計算和自訂儲存體屬性](../modeling/calculated-and-custom-storage-properties.md)。
 
-而不是上述範例中，您可以設定**種類**欄位`TextLengthCount`要**導出**DSL 定義中。 您可以提供您自己**取得**此網域屬性的方法。 **取得**方法會傳回目前的長度`Text`字串。
+您可以將 `TextLengthCount` 的**Kind**欄位設定為要在 DSL 定義中**計算**的，而不是上一個範例。 您會為此網域屬性提供自己的**Get**方法。 **Get**方法會傳回 `Text` 字串的目前長度。
 
 不過，計算屬性的潛在缺點是每次使用值都會評估運算式，因此可能呈現效能問題。 此外，計算屬性沒有 OnValueChanging() 和 OnValueChanged()。
 
-### <a name="alternative-technique-change-rules"></a>替代方法：變更規則
+### <a name="alternative-technique-change-rules"></a>替代方法：ChangeRule
 
-如果您定義了 ChangeRule，則會將其執行的交易，在其中變更屬性值的結尾。  如需詳細資訊，請參閱 <<c0> [ 規則傳播變更內模型](../modeling/rules-propagate-changes-within-the-model.md)。
+如果您定義 ChangeRule，它會在屬性值變更的交易結束時執行。  如需詳細資訊，請參閱[規則傳播模型內的變更](../modeling/rules-propagate-changes-within-the-model.md)。
 
-如果在一個異動中進行數項變更，ChangeRule 會在所有變更完成時執行。 相較之下，則會執行 OnValue...方法執行時的一些變更尚未執行。 視您要達成的目標而定，ChangeRule 可能更適用。
+如果在一個異動中進行數項變更，ChangeRule 會在所有變更完成時執行。 相較之下，OnValue .。。未執行某些變更時，會執行方法。 視您要達成的目標而定，ChangeRule 可能更適用。
 
-您也可以使用 ChangeRule 調整屬性的新值，將指定的範圍內。
+您也可以使用 ChangeRule 來調整屬性的新值，以將它保留在特定範圍內。
 
 > [!WARNING]
 > 如果某項規則變更了存放區內容，可能會觸發其他規則和屬性處理常式。 如果某項規則變更了已觸發的屬性，則會再次呼叫此規則。 您必須確定規則定義不會無限地造成觸發。

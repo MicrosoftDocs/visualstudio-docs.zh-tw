@@ -11,17 +11,17 @@ helpviewer_keywords:
 - command aliases
 - alias command
 ms.assetid: bdf857df-b5d5-450f-8c10-a6fd4dccc130
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 396db6e08da211a801361328416d97622ee3eac8
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+ms.openlocfilehash: 48fa131514f82ec13538b8f5a0662fde7388ddea
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926332"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72651982"
 ---
 # <a name="alias-command"></a>別名命令
 針對完整命令、完整命令和引數或其他別名，建立新的別名。
@@ -37,17 +37,17 @@ Tools.Alias [/delete] [/reset] [aliasname] [aliasstring]
 
 ## <a name="arguments"></a>引數
 `aliasname`\
-選擇性。 新別名的名稱。 如果未提供 `aliasname` 的值，則會出現目前別名和其定義清單。
+選擇項。 新別名的名稱。 如果未提供 `aliasname` 的值，則會出現目前別名和其定義清單。
 
 `aliasstring`\
-選擇性。 完整命令名稱或現有別名，以及任何您想要建立為別名的參數。 如果未提供 `aliasstring` 的值，則會顯示所指定別名的別名和別名字串。
+選擇項。 完整命令名稱或現有別名，以及任何您想要建立為別名的參數。 如果未提供 `aliasstring` 的值，則會顯示所指定別名的別名和別名字串。
 
 ## <a name="switches"></a>參數
 /delete 或 /del 或 /d\
-選擇性。 刪除指定的別名，並移除它不進行自動完成。
+選擇項。 刪除指定的別名，並移除它不進行自動完成。
 
 /reset\
-選擇性。 將預先定義的別名清單重設為其原始設定。 亦即，它會還原所有預先定義的別名，並移除所有使用者定義的別名。
+選擇項。 將預先定義的別名清單重設為其原始設定。 亦即，它會還原所有預先定義的別名，並移除所有使用者定義的別名。
 
 ## <a name="remarks"></a>備註
 因為別名代表命令，所以它們必須位於命令列的開頭。
@@ -75,7 +75,7 @@ Tools.Alias [/delete] [/reset] [aliasname] [aliasstring]
 >Tools.Alias
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [Visual Studio 命令](../../ide/reference/visual-studio-commands.md)
 - [命令視窗](../../ide/reference/command-window.md)

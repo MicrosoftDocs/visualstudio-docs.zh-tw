@@ -1,5 +1,5 @@
 ---
-title: 必須是 ']' |Microsoft Docs
+title: 必須是 '] ' |Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
@@ -14,20 +14,20 @@ ms.assetid: 8a437ace-c73e-4340-885c-70ccb4bb2ee4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3c88b40c0d20d370929bd8c1cd5e8604ea3781e6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 802c9aa7988c4f19ee74dac4345d5c7077cc466c
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62433912"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576530"
 ---
 # <a name="expected-"></a>必須是 ']'
-您進行陣列元素的參考，但並未包含右方括號。 參考之陣列元素的任何運算式必須包含左括號和右中括號。  
+您已對陣列元素進行參考，但未包含右括弧。 參考陣列元素的任何運算式都必須同時包含左右括弧。  
   
 ### <a name="to-correct-this-error"></a>更正這個錯誤  
   
-- 加入參考陣列項目運算式的右括號。  
+- 在參考陣列元素的運算式中加入右括弧。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [使用陣列](../../javascript/advanced/using-arrays-javascript.md)   
  [Array 物件](../../javascript/reference/array-object-javascript.md)

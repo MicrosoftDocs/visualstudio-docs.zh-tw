@@ -10,42 +10,41 @@ helpviewer_keywords:
 - /DebugExe [devenv.exe]
 ms.assetid: cd700006-1648-418f-924b-4b1e5c1412ab
 caps.latest.revision: 7
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: ac542ded884e922028c6cbc16447fb2a3241613b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f472add6b821693d1d48397e878db19e707e2868
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68193803"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72660796"
 ---
 # <a name="debugexe-devenvexe"></a>/DebugExe (devenv.exe)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-開啟要偵錯的指定可執行檔。  
-  
-## <a name="syntax"></a>語法  
-  
-```  
-Devenv /debugexe ExecutableFile  
-```  
-  
-## <a name="arguments"></a>引數  
- `ExecutableFile`  
- 必要項。 .exe 檔案的路徑和檔案名稱。  
-  
- 如果 .exe 檔案找不到或不存在，則不會顯示任何警告或錯誤，而且 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 會正常啟動。  
-  
-## <a name="remarks"></a>備註  
- `ExecutableFile` 參數後面的任何字串都會當成引數傳遞給該檔案。  
-  
-## <a name="example"></a>範例  
- 下列範例會開啟 `MyApplication.exe` 檔案以進行偵錯。  
-  
-```  
-Devenv.exe /debugexe MyApplication.exe  
-```  
-  
-## <a name="see-also"></a>另請參閱  
+開啟要偵錯的指定可執行檔。
+
+## <a name="syntax"></a>語法
+
+```
+Devenv /debugexe ExecutableFile
+```
+
+## <a name="arguments"></a>引數
+ `ExecutableFile` 必要項。 .exe 檔案的路徑和檔案名稱。
+
+ 如果 .exe 檔案找不到或不存在，則不會顯示任何警告或錯誤，而且 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 會正常啟動。
+
+## <a name="remarks"></a>備註
+ `ExecutableFile` 參數後面的任何字串都會當成引數傳遞給該檔案。
+
+## <a name="example"></a>範例
+ 下列範例會開啟 `MyApplication.exe` 檔案以進行偵錯。
+
+```
+Devenv.exe /debugexe MyApplication.exe
+```
+
+## <a name="see-also"></a>另請參閱
  [Devenv 命令列參數](../../ide/reference/devenv-command-line-switches.md)

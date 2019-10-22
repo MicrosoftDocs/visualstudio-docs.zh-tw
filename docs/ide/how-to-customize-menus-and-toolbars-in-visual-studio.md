@@ -22,19 +22,19 @@ helpviewer_keywords:
 - toolbars [Visual Studio], customizing
 - toolbars [Visual Studio], customizing in the IDE
 ms.assetid: b570ae2f-5302-45dc-9cc9-8d4d1ad50603
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4fce2c5aed3c98cf4583e20df96c0444cc91439a
-ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
-ms.translationtype: HT
+ms.openlocfilehash: f5dc68374193c90fe248f92005a266a658f3f668
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "65531971"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72656089"
 ---
-# <a name="how-to-customize-menus-and-toolbars-in-visual-studio"></a>作法：在 Visual Studio 中自訂功能表和工具列
+# <a name="how-to-customize-menus-and-toolbars-in-visual-studio"></a>如何：在 Visual Studio 中自訂功能表和工具列
 
 您可以自訂 Visual Studio，不只是可以新增及移除功能表列上的工具列和功能表，還可以新增及移除任何指定工具列或功能表上的命令。
 
@@ -79,7 +79,7 @@ ms.locfileid: "65531971"
         您也可以拖曳工具列的左邊緣，將它移動至主要停駐區中的任何位置。
 
         > [!NOTE]
-        > 如需如何改善工具列可用性和協助工具的詳細資訊，請參閱[如何：設定 IDE 協助工具選項](../ide/reference/how-to-set-ide-accessibility-options.md)。
+        > 如需如何改善工具列的可用性和協助工具的詳細資訊，請參閱[如何：設定 IDE 協助工具選項](../ide/reference/how-to-set-ide-accessibility-options.md)。
 
 ## <a name="customizing_menu">自訂功能表或工具列</a>
 
@@ -117,7 +117,7 @@ ms.locfileid: "65531971"
 
     您也可以選擇 [全部重設] 按鈕，重設所有功能表和工具列。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [個人化 IDE](../ide/personalizing-the-visual-studio-ide.md)
 - [自訂編輯器](../ide/how-to-change-text-case-in-the-editor.md)

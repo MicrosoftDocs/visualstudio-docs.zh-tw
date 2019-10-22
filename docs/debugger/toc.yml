@@ -6,6 +6,8 @@
       href: what-is-debugging.md
     - name: 偵錯技術和工具
       href: write-better-code-with-visual-studio.md
+    - name: 尋找您的偵錯工作
+      href: find-your-debugging-task.md
 - name: 快速入門
   items:
     - name: 偵錯工具簡介
@@ -34,7 +36,7 @@
       href: view-historical-application-state.md
     - name: 適合完全初學者的偵錯
       href: debugging-absolute-beginners.md
-- name: 使用說明指南
+- name: 作法指南
   items:
     - name: 使用偵錯工具巡覽程式碼
       href: navigating-through-code-with-the-debugger.md
@@ -42,8 +44,6 @@
       items:
         - name: 使用中斷點
           href: using-breakpoints.md
-        - name: 使用追蹤點
-          href: using-tracepoints.md
         - name: 針對中斷點進行疑難排解
           href: troubleshooting-breakpoints.md
     - name: 資料檢查
@@ -91,7 +91,7 @@
         - name: 檢視記憶體以尋找變數
           href: memory-windows.md
         - name: 在偵錯時檢查 XAML 屬性
-          href: inspect-xaml-properties-while-debugging.md
+          href: ../xaml-tools/inspect-xaml-properties-while-debugging.md?toc=/visualstudio/debugger/toc.json
     - name: 呼叫堆疊
       items:
         - name: 檢視呼叫堆疊
@@ -108,9 +108,9 @@
           href: how-to-enable-and-disable-edit-and-continue.md
         - name: 停止程式碼變更
           href: how-to-stop-code-changes.md
-        - name: Edit and Continue (Visual C++)
+        - name: 編輯後繼續 (C++)
           items:
-            - name: Visual C++ 的編輯後繼續
+            - name: C++ 編輯後繼續
               href: edit-and-continue-visual-cpp.md
             - name: 支援的程式碼變更 (C++)
               href: supported-code-changes-cpp.md
@@ -131,11 +131,13 @@
         - name: XAML 熱重新載入
           items:
             - name: 撰寫 XAML 程式碼及針對其執行進行偵錯
-              href: xaml-hot-reload.md
+              href: ../xaml-tools/xaml-hot-reload.md?toc=/visualstudio/debugger/toc.json
             - name: 對 XAML 熱重新載入進行疑難排解
-              href: xaml-hot-reload-troubleshooting.md
+              href: ../xaml-tools/xaml-hot-reload-troubleshooting.md?toc=/visualstudio/debugger/toc.json
         - name: 'F# 不支援編輯後繼續'
           href: edit-and-continue-not-supported-for-f-hash.md
+    - name: 紀錄到輸出視窗
+      href: using-tracepoints.md
     - name: 檢視偵錯工具資料
       items:
         - name: 模組
@@ -146,7 +148,7 @@
               href: how-to-find-which-dll-your-program-crashed-in.md
         - name: 檢視指令碼文件
           href: how-to-view-script-documents.md
-    - name: 秘訣與技巧
+    - name: 秘訣和訣竅
       items:
         - name: 偵錯工具祕訣與技巧
           href: debugger-tips-and-tricks.md
@@ -200,7 +202,7 @@
                   items:
                     - name: C++ 偵錯組態的專案設定
                       href: project-settings-for-a-cpp-debug-configuration.md
-                    - name: 啟用 Visual C++ 中的偵錯功能 (-D_DEBUG)
+                    - name: 啟用 C++ 中的偵錯功能 (-D_DEBUG)
                       href: enabling-debug-features-in-visual-cpp-d-debug.md
                 - name: Web 專案的屬性頁設定
                   href: property-pages-settings-for-web-projects.md
@@ -232,12 +234,12 @@
               items:
                 - name: 建立 C++ 物件的自訂檢視
                   href: create-custom-views-of-native-objects.md
-                - name: Visual C++ 自訂視覺化檢視相容性
+                - name: C++ 自訂視覺化檢視相容性
                   href: visual-cpp-custom-visualizer-compatibility.md
             - name: 自訂檢視 (受控)
               items:
                 - name: 建立受控物件的自訂檢視
-                  href: create-custom-views-of-dot-managed-objects.md
+                  href: create-custom-views-of-managed-objects.md
                 - name: 告訴偵錯工具要顯示的項目
                   href: using-the-debuggerdisplay-attribute.md
                 - name: 告訴偵錯工具要顯示的類型
@@ -352,9 +354,9 @@
               href: how-to-use-the-gpu-threads-window.md
         - name: 對多重處理序進行偵錯
           href: debug-multiple-processes.md
-        - name: '逐步解說：使用 [執行緒] 視窗進行偵錯'
+        - name: '使用 [執行緒] 視窗進行偵錯'
           href: how-to-use-the-threads-window.md
-        - name: 逐步解說：偵錯平行應用程式
+        - name: 偵錯平行應用程式
           href: walkthrough-debugging-a-parallel-application.md
         - name: 在偵錯時切換到另一個執行緒
           href: how-to-switch-to-another-thread-while-debugging.md
@@ -433,7 +435,7 @@
             - name: 對已安裝的應用程式套件進行偵錯
               href: debug-installed-app-package.md
             - name: 在 Blend 中偵錯 XAML
-              href: debug-xaml-in-blend.md
+              href: ../xaml-tools/debug-xaml-in-blend.md?toc=/visualstudio/debugger/toc.json
             - name: HTML 和 CSS
               items:
                 - name: 偵錯 HTML 和 CSS
@@ -498,7 +500,7 @@
           items:
             - name: 對機器碼進行偵錯
               href: debugging-native-code.md
-            - name: 偵錯準備：Visual C++ 專案類型
+            - name: 偵錯準備：C++ 專案類型
               href: debugging-preparation-visual-cpp-project-types.md
             - name: 對最佳化程式碼進行偵錯
               href: how-to-debug-optimized-code.md
@@ -832,7 +834,7 @@
                   href: how-to-search-for-a-process-in-processes-view.md
                 - name: 顯示處理序屬性
                   href: how-to-display-process-properties.md
-            - name: Threads
+            - name: 執行緒
               items:
                 - name: 執行緒檢視
                   href: threads-view.md

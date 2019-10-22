@@ -1,5 +1,5 @@
 ---
-title: IDebugExpression::Abort | Microsoft Docs
+title: IDebugExpression：： Abort |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cfaee56fffc7b28d04979f39b840d0b07cde2e08
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 508939b23be53acbff269744ae4035853f977ada
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62978454"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575941"
 ---
 # <a name="idebugexpressionabort"></a>IDebugExpression::Abort
 停止運算式。  
@@ -34,7 +34,7 @@ HRESULT Abort();
 ```  
   
 #### <a name="parameters"></a>參數  
- 這個方法會接受任何參數。  
+ 這個方法不接受任何參數。  
   
 ## <a name="return-value"></a>傳回值  
  方法會傳回 `HRESULT`。 可能的值包括 (但不限於) 下表中的這些值。  
@@ -44,8 +44,8 @@ HRESULT Abort();
 |`S_OK`|方法成功。|  
   
 ## <a name="remarks"></a>備註  
- 此方法會停止運算式評估在最早的機會。  
+ 這個方法會以最早的機會停止運算式評估。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDebugExpression 介面](../../winscript/reference/idebugexpression-interface.md)   
  [IDebugExpression::Start](../../winscript/reference/idebugexpression-start.md)

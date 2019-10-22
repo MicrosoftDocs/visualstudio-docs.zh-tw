@@ -5,17 +5,17 @@ ms.topic: conceptual
 f1_keywords:
 - vs.graphics
 ms.assetid: 910d673b-c884-4eeb-9928-0e89f3d38cb6
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 94dc97766d4f04451910a43146587b27726b87e3
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
-ms.translationtype: HT
+ms.openlocfilehash: 55986a703bd53318f8c0f74b8cf661412a82b716
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65459087"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72634004"
 ---
 # <a name="work-with-3d-assets-for-games-and-apps"></a>使用 3D 資產來打造遊戲和應用程式
 
@@ -54,7 +54,7 @@ Visual Studio 使用 DirectX 轉譯 2D 和 3D 資產。 您可以選取 DirectX 
 
 ## <a name="related-topics"></a>相關主題
 
-|標題|說明|
+|標題|描述|
 |-----------|-----------------|
 |[使用紋理和影像](../designers/working-with-textures-and-images.md)|描述如何使用 Visual Studio 來使用影像和紋理。|
 |[使用 3D 模型](../designers/working-with-3-d-models.md)|描述如何使用 Visual Studio 來使用 3D 模型。|

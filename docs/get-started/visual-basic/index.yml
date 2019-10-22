@@ -14,12 +14,12 @@ metadata:
   ms.technology: vs-acquisition
   dev_langs:
   - VB
-  ms.openlocfilehash: 6e0d373ab1a8fff8271e867171f0cb4900bf0533
-  ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+  ms.openlocfilehash: 729388bf6eaa799580576b12076dc3da880a6386
+  ms.sourcegitcommit: dc12a7cb66124596089f01d3e939027ae562ede9
   ms.translationtype: HT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 09/25/2019
-  ms.locfileid: "71253566"
+  ms.lasthandoff: 10/04/2019
+  ms.locfileid: "71962850"
 landingContent:
 - title: 開始使用
   linkLists:
@@ -39,6 +39,8 @@ landingContent:
       url: tutorial-console.md
     - text: 建立 Windows Desktop 應用程式
       url: tutorial-wpf.md
+    - text: 建立 Windows Forms 應用程式
+      url: ../../ide/create-a-visual-basic-winform-in-visual-studio.md
     - text: 了解 Visual Basic 語言
       url: /dotnet/visual-basic/developing-apps/programming/
 - title: 了解 Visual Studio
@@ -46,7 +48,7 @@ landingContent:
   - linkListType: tutorial
     links:
     - text: 從存放庫開啟程式碼
-      url: ../tutorial-open-project-from-repo.md?
+      url: ../tutorial-open-project-from-repo.md
     - text: 撰寫和編輯程式碼
       url: tutorial-editor.md
     - text: 編譯和建置

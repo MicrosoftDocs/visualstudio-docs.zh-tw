@@ -5,17 +5,17 @@ ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.HTML.Miscellaneous
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 43ab664968ca75f8af6da89db84725924caa3584
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 3b100defd8f50b4a487e46eef4183457e724a015
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62778426"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72666185"
 ---
 # <a name="options-text-editor-html-web-forms-miscellaneous"></a>選項、文字編輯器、HTML (Web Form)、其他
 
@@ -31,6 +31,6 @@ ms.locfileid: "62778426"
 
    如果選取這個核取方塊，當您輸入小於字元 ("<") 時，標記完成視窗就會顯示。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [選項對話方塊、環境、一般](../../ide/reference/general-environment-options-dialog-box.md)

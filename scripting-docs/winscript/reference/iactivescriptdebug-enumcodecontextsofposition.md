@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptDebug::EnumCodeContextsOfPosition | Microsoft Docs
+title: IActiveScriptDebug：： EnumCodeCoNtextsOfPosition |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c364d00941a65272b4d22cc7674a0f0e6178f099
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: aedfe5d40d8f4086e30f3a62c070b8ccd5ef2388
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63009738"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572778"
 ---
 # <a name="iactivescriptdebugenumcodecontextsofposition"></a>IActiveScriptDebug::EnumCodeContextsOfPosition
-智慧主機用來委派`IDebugDocumentContext::EnumCodeContexts`方法。  
+供智慧型主機用來委派 `IDebugDocumentContext::EnumCodeContexts` 方法。  
   
 ## <a name="syntax"></a>語法  
   
@@ -40,16 +40,16 @@ HRESULT EnumCodeContextsOfPosition(
   
 #### <a name="parameters"></a>參數  
  `dwSourceContext`  
- [in]來源內容提供給`IActiveScriptParse::ParseScriptText`或`IActiveScriptParse::AddScriptlet`。  
+ 在提供給 `IActiveScriptParse::ParseScriptText` 或 `IActiveScriptParse::AddScriptlet` 的來源內容。  
   
  `uCharacterOffset`  
- [in]相對於指令碼文字開頭位移的字元。  
+ 在相對於腳本文字開頭的字元位移。  
   
  `uNumChars`  
- [in]在此內容中的字元數。  
+ 在此內容中的字元數。  
   
  `ppescc`  
- [out]指定的範圍內的程式碼內容列舉值。  
+ 脫銷指定範圍內程式碼內容的列舉值。  
   
 ## <a name="return-value"></a>傳回值  
  方法會傳回 `HRESULT`。 可能的值包括 (但不限於) 下表中的這些值。  
@@ -59,8 +59,8 @@ HRESULT EnumCodeContextsOfPosition(
 |`S_OK`|方法成功。|  
   
 ## <a name="remarks"></a>備註  
- 智慧主機會使用這個方法來委派`IDebugDocumentContext::EnumCodeContexts`方法。  
+ 智慧型主機會使用這個方法來委派 `IDebugDocumentContext::EnumCodeContexts` 方法。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IActiveScriptDebug 介面](../../winscript/reference/iactivescriptdebug-interface.md)   
  [IDebugDocumentContext::EnumCodeContexts](../../winscript/reference/idebugdocumentcontext-enumcodecontexts.md)

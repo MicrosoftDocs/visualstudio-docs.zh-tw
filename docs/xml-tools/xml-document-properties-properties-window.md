@@ -3,53 +3,53 @@ title: XML 文件屬性 (屬性視窗)
 ms.date: 03/05/2019
 ms.topic: reference
 ms.assetid: 9dbb34d9-02ea-4201-b445-c98a0eb0d6db
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 679ac529708a49d18025672ce8f880c4f7710471
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 99102248a9456de3a2b3aeba28e54de4299fae40
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62808128"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72604149"
 ---
-# <a name="xml-document-properties-properties-window"></a>屬性視窗、 XML 文件屬性
+# <a name="xml-document-properties-properties-window"></a>XML 文件屬性，屬性視窗
 
-**屬性**視窗會提供在 XML 編輯器中的文件的基本資訊。 可用的屬性視目前使用中 XML 文件的型別而定。
+[**屬性**] 視窗提供 XML 編輯器中作用中檔的基本資訊。 可用的屬性視目前使用中 XML 文件的型別而定。
 
 > [!NOTE]
 > 所有 XML 文件屬性都儲存在解決方案中。 因此，在下次開啟解決方案時無需重新輸入這些值。
 
-**編碼方式**
+**編碼**
 
-檔案的字元編碼。 變更此屬性，亦會變更 XML 宣告上的編碼屬性，反之亦然。 新的編碼方式，用來儲存檔案時，將檔案的編碼。
+檔案的字元編碼。 變更此屬性，亦會變更 XML 宣告上的編碼屬性，反之亦然。 當您儲存檔案時，會使用新的編碼方式將檔案編碼。
 
 **輸入**
 
-與 XSLT 樣式表相關聯的輸入文件。 它由**啟動 XSLT**命令，例如**XML** > **啟動 XSLT 但不偵錯**。 可以使用 瀏覽 選取文件 (**...**) 按鈕。
+與 XSLT 樣式表相關聯的輸入文件。 **啟動 xslt**命令會使用它，例如， **XML**  >  在不進行偵錯工具的情況下**啟動 xslt**。 您可以使用 [流覽] （ **...** ）按鈕來選取檔。
 
-只有在編輯器中開啟 XSLT 檔時，只顯示這個屬性。
+只有在編輯器中開啟 XSLT 檔案時，才會顯示這個屬性。
 
-**輸出**
+**Output**
 
 轉換 XML 文件時所產生的檔案。
 
-如果未指定檔案，預設的檔案名稱根據產生`method`屬性上`xsl:output`元素，其決定副檔名。 預設檔案位於目前使用者的暫存目錄中。
+如果未指定檔案，就會根據 `xsl:output` 元素上的 `method` 屬性來產生預設檔案名，這會決定副檔名。 預設檔案位於目前使用者的暫存目錄中。
 
 **結構描述**
 
-用於驗證的結構描述。 按鈕會開啟**XSD 結構描述**對話方塊中，可用來選取要使用的結構描述。
+用於驗證的結構描述。 此按鈕會開啟 [ **XSD 架構**] 對話方塊，可用於選取要使用的架構。
 
 亦可輸入結構描述的路徑。 如果指定多個結構描述，則每個結構描述路徑都必須包含在雙引號中。
 
-**Stylesheet**
+**樣式表單**
 
-用來轉換文件的 XSLT 檔案時**啟動 XSLT 偵錯**並**啟動 XSLT 但不偵錯**命令可用。 這個欄位是空白的如果編輯器使用中提供的值`xml-stylesheet`處理指示的文件，或者它會提示您輸入檔案名稱。
+使用 XSLT 檔案，用於在沒有偵錯工具的情況下**啟動 Xslt 調試**程式和**啟動 xslt**時轉換檔。 如果此欄位為空白，則編輯器會使用檔之 `xml-stylesheet` 處理指示中提供的值，或提示您輸入檔案名。
 
-編輯 XSLT 檔案時，此屬性可用來指定不同的樣式表應使用的時機**啟動 XSLT 偵錯**或**啟動 XSLT 但不偵錯**選取命令時。 例如，您可能要這樣做，當您編輯包含在父樣式表中的樣式表。
+當您編輯 XSLT 檔案時，可以使用這個屬性來指定當選取 [**啟動 Xslt 調試**程式] 或 [**啟動 xslt 但不進行調試**程式] 命令時，應該使用不同的樣式表單。 例如，當您編輯的樣式表單包含在父樣式表單中時，您可能會想要這麼做。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [XML 編輯器](../xml-tools/xml-editor.md)

@@ -6,7 +6,7 @@ metadata:
   description: 使用 Visual Studio 建立 C# 應用程式。
   ms.custom: seodec18
   ms.topic: landing-page
-  ms.date: 09/20/2019
+  ms.date: 09/27/2019
   author: ghogen
   ms.author: ghogen
   manager: jillfra
@@ -14,12 +14,12 @@ metadata:
   ms.technology: vs-acquisition
   dev_langs:
   - CSharp
-  ms.openlocfilehash: cefa370c40ccd32a1ddd7b108ccc493d8019fcb2
-  ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+  ms.openlocfilehash: 0e61a2b9d54fc4e40a84e7107ab653a2e90f52de
+  ms.sourcegitcommit: dc12a7cb66124596089f01d3e939027ae562ede9
   ms.translationtype: HT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 09/25/2019
-  ms.locfileid: "71252156"
+  ms.lasthandoff: 10/04/2019
+  ms.locfileid: "71962855"
 landingContent:
 - title: 開始使用
   linkLists:
@@ -39,20 +39,24 @@ landingContent:
       url: tutorial-console.md
     - text: 建立 Web 應用程式
       url: tutorial-aspnet-core.md
-    - text: 建立第一個 ASP.NET Core 應用程式
-      url: tutorial-aspnet-core-ef-step-01.md
     - text: 建立通用 Windows 平台應用程式
       url: tutorial-uwp.md
     - text: 建立 Windows Desktop 應用程式
       url: tutorial-wpf.md
+    - text: 建立 Windows Forms 應用程式
+      url: ../../ide/create-csharp-winform-visual-studio.md
     - text: 了解 C# 語言
       url: /dotnet/csharp/tutorials/intro-to-csharp/
+  - linkListType: video
+    links:
+    - text: 建立 ASP.NET Core 應用程式
+      url: tutorial-aspnet-core-ef-step-01.md
 - title: 了解 Visual Studio
   linkLists:
   - linkListType: tutorial
     links:
     - text: 從存放庫開啟程式碼
-      url: ../tutorial-open-project-from-repo.md?
+      url: ../tutorial-open-project-from-repo.md
     - text: 撰寫和編輯程式碼
       url: tutorial-editor.md
     - text: 編譯和建置

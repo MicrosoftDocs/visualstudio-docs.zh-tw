@@ -10,21 +10,21 @@ helpviewer_keywords:
 - code [Visual Studio], outlining
 - code [Visual Studio], hiding
 - outlining code
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d6451e835e44af23fbd41c9c1573e0bc5daed115
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 61772ead029dccaff9b1090a469865fcc3742df6
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62811912"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72666827"
 ---
 # <a name="outlining"></a>大綱
 
-您可以選擇隱藏部分程式碼不進行檢視，方法是摺疊程式碼區域，使其出現在加號 (**+**) 下方。 您可以按一下加號來展開已摺疊的區域 如果您是鍵盤使用者，則可以選擇 **Ctrl**+**M**+**M** 摺疊和展開。 您也可以摺疊大綱區域，方法是按兩下大綱邊界之區域中的任一行，而大綱邊界出現在程式碼左邊。 當您將滑鼠停留在已摺疊的區域上方時，已摺疊區域的內容會成為工具提示。
+您可以選擇隱藏部分程式碼不進行檢視，方法是摺疊程式碼區域，使其出現在加號 ( **+** ) 下方。 您可以按一下加號來展開已摺疊的區域 如果您是鍵盤使用者，則可以選擇 **Ctrl**+**M**+**M** 摺疊和展開。 您也可以摺疊大綱區域，方法是按兩下大綱邊界之區域中的任一行，而大綱邊界出現在程式碼左邊。 當您將滑鼠停留在已摺疊的區域上方時，已摺疊區域的內容會成為工具提示。
 
 > [!NOTE]
 > 本主題適用於 Windows 上的 Visual Studio。 針對 Visual Studio for Mac，請參閱[原始檔編輯器 (Visual Studio for Mac )](/visualstudio/mac/source-editor)。
@@ -51,9 +51,9 @@ ms.locfileid: "62811912"
 |摺疊區塊︰\<邏輯界限>|(Visual C++) 摺疊包含插入點之函式中的區域。 例如，如果插入點落在迴圈內，則會隱藏迴圈。|
 |\<邏輯結構> 中的全部摺疊|(Visual C++) 摺疊函式內的所有結構。|
 
-您也可以使用 Visual Studio SDK 來定義您想要展開或摺疊的文字區域。 請參閱[逐步解說：大綱](../extensibility/walkthrough-outlining.md)。
+您也可以使用 Visual Studio SDK 來定義您想要展開或摺疊的文字區域。 請參閱[逐步解說︰大綱](../extensibility/walkthrough-outlining.md)。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [程式碼編輯器的功能](../ide/writing-code-in-the-code-and-text-editor.md)
 - [原始檔編輯器 (Visual Studio for Mac)](/visualstudio/mac/source-editor)

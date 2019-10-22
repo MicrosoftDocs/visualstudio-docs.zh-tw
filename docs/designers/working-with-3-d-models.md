@@ -3,17 +3,17 @@ title: 使用 3D 模型
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: fa035091-1354-4d1c-be44-4fb83860466f
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fbca927a3c4bd26a37318fc9b3403d0eb8d7393c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: b364682d8173d34d2b9977836929ca93ddf45a78
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62892554"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72633986"
 ---
 # <a name="work-with-3d-models"></a>使用 3D 模型
 
@@ -29,7 +29,7 @@ ms.locfileid: "62892554"
 
 ## <a name="related-topics"></a>相關主題
 
-|標題|說明|
+|標題|描述|
 |-----------|-----------------|
 |[模型編輯器](../designers/model-editor.md)|描述如何使用模型編輯器來處理 3D 模型。|
-|[模型編輯器範例](../designers/model-editor-examples.md)|提供示範如何使用模型編輯器來執行一般 3D 模型工作的主題連結。|
+|[模型編輯器範例](../designers/how-to-create-a-basic-3-d-model.md)|提供示範如何使用模型編輯器來執行一般 3D 模型工作的主題連結。|

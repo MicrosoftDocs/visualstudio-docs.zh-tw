@@ -1,7 +1,7 @@
 ---
-title: 在 Android 和 iOS 上建置 OpenGL ES 應用程式 | Microsoft Docs
+title: 在 Android 和 iOS 上建立 OpenGL ES 應用程式 |Microsoft Docs
 ms.custom: ''
-ms.date: 09/17/2019
+ms.date: 10/09/2019
 ms.technology: vs-ide-mobile
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +12,12 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: 259092668c336a90758a669efdc4b154b2097cab
-ms.sourcegitcommit: 541a0556958201ad6626bc8638406ad02640f764
+ms.openlocfilehash: a15902278e9a73488b315729a2db6e8fb5d53935
+ms.sourcegitcommit: 8a96a65676fd7a2a03b0803d7eceae65f3fa142b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71079269"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72588914"
 ---
 # <a name="build-an-opengl-es-application-on-android-and-ios"></a>在 Android 和 iOS 上建置 OpenGL ES 應用程式
 
@@ -25,33 +25,33 @@ ms.locfileid: "71079269"
 
 ## <a name="requirements"></a>需求
 
-在您建立適用於 iOS 和 Android 的 OpenGL ES 應用程式之前，請確定符合所有系統需求。 否則，請安裝 Visual Studio Installer 中的「使用 C++ 進行行動開發」工作負載。 若要針對 iOS 建置，請納入選用的 C++ iOS 開發工具。 若要針對 Android 建置，請安裝 C++ Android 開發工具和所需的協力廠商工具：Android NDK、Apache Ant 和 Google Android Emulator。 為了讓 Intel 平臺上的模擬器效能更佳，建議您同時安裝 Intel Hardware Accelerated Execution Manager （HAXM）。 接下來，設定 Intel HAXM 和 Android Emulator，以便在您的系統上執行。 如需詳細資訊和詳細指示，請參閱[針對跨平台行動裝置應用程式開發安裝 Visual C++](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md)。
+在您建立適用於 iOS 和 Android 的 OpenGL ES 應用程式之前，請確定符合所有系統需求。 否則，請安裝 Visual Studio Installer 中的「使用 C++ 進行行動開發」工作負載。 若要取得 OpenGL ES 範本，以及針對 iOS 建立，請包含選用C++的 ios 開發工具。 若要建立 Android，請安裝C++ android 開發工具和必要的協力廠商工具： android NDK、Apache Ant 和 Google Android Emulator。 為了讓 Intel 平臺上的模擬器效能更佳，建議您同時安裝 Intel Hardware Accelerated Execution Manager （HAXM）。 接下來，設定 Intel HAXM 和 Android Emulator，以便在您的系統上執行。 如需詳細資訊和詳細指示，請參閱[使用C++安裝跨平臺](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md)行動裝置開發。
 
 若要建置及測試 iOS 應用程式，您需要一部已根據安裝指示設定的 Mac 電腦。 如需如何設定 iOS 開發環境的詳細資訊，請參閱[安裝和設定工具以使用 iOS 進行建置](../cross-platform/install-and-configure-tools-to-build-using-ios.md)。
 
 ## <a name="create-a-new-opengles-application-project"></a>建立新的 OpenGLES 應用程式專案
 
-在本教學課程中，您會先建立新的 OpenGL ES 應用程式專案。 然後在適用于 Android 的 Visual Studio 模擬器中，建立並執行預設應用程式。 接下來，您會建置適用於 iOS 的應用程式，然後在 iOS 裝置上執行該應用程式。
+在本教學課程中，您會先建立新的 OpenGL ES 應用程式專案。 然後在 Android 模擬器中建立並執行預設應用程式。 接下來，您會建置適用於 iOS 的應用程式，然後在 iOS 裝置上執行該應用程式。
 
 ::: moniker range="vs-2017"
 
-1. 在 Visual Studio 中，**選擇 [** >檔案] [**新增** > ] [**專案**]。
+1. 在 Visual Studio 中，**選擇 [** 檔案 >**新增**>**專案**]。
 
-1. 在 [**新增專案**] 對話方塊的 [**範本**] 底下， >選擇 [ **Visual C++**  **跨平臺**]，然後選擇 [ **OpenGLES 應用程式（Android、iOS）** ] 範本。
+1. 在 [**新增專案**] 對話方塊的 [**範本**] 底下，選擇 [  **C++ Visual** >**跨平臺**]，然後選擇 [ **OpenGLES 應用程式（Android、iOS）** ] 範本。
 
 1. 提供應用程式的名稱，例如*myopenglesapp.shared*，然後選擇 **[確定]** 。
 
-   ![新的 OpenGLES 應用程式專案](../cross-platform/media/cppmdd_opengles_newproj.PNG "CPPMDD_OpenGLES_NewProj")
+   ![新增 OpenGLES 應用程式專案](../cross-platform/media/cppmdd_opengles_newproj.PNG "CPPMDD_OpenGLES_NewProj")
 
    Visual Studio 會建立新的方案，並開啟方案總管。
 
-   ![[方案總管] 中的 MyOpenGLESApp](../cross-platform/media/cppmdd_opengles_solexpl.PNG "CPPMDD_OpenGLES_SolExpl")
+   ![方案總管中的 Myopenglesapp.shared](../cross-platform/media/cppmdd_opengles_solexpl.PNG "CPPMDD_OpenGLES_SolExpl")
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-1. 在 Visual Studio 中，**選擇 [** >檔案] [**新增** > ] [**專案**]。
+1. 在 Visual Studio 中，**選擇 [** 檔案 >**新增**>**專案**]。
 
 1. 在 [**建立新專案**] 對話方塊中，選取 [ **OpenGLES 應用程式（Android、iOS）** ] 範本，然後選擇 [**下一步]** 。
 
@@ -59,7 +59,7 @@ ms.locfileid: "71079269"
 
    Visual Studio 會建立新的方案，並開啟方案總管。
 
-   ![[方案總管] 中的 MyOpenGLESApp](../cross-platform/media/cppmdd_opengles_solexpl.PNG "CPPMDD_OpenGLES_SolExpl")
+   ![方案總管中的 Myopenglesapp.shared](../cross-platform/media/cppmdd_opengles_solexpl.PNG "CPPMDD_OpenGLES_SolExpl")
 
 ::: moniker-end
 
@@ -75,7 +75,7 @@ ms.locfileid: "71079269"
 
 - `MyOpenGLESApp.Android.Packaging` 會建立部署在 Android 裝置或模擬器上時所使用的 *.apk* 檔案。 此檔案中包含資源以及您設定資訊清單屬性所在的 AndroidManifest.xml 檔案。 其中也包含用來控制建置流程的 *build.xml* 檔案。 依預設，它會設成啟始專案，以便直接從 Visual Studio 部署及執行。
 
-- **MyOpenGLESApp.iOS.Application** 包含資源和 Objective-C 黏附程式碼，以建立連結至 `MyOpenGLESApp.iOS.StaticLibrary` 中 C++ 靜態程式庫程式碼的 iOS 應用程式。 這個專案會建立組建套件，並由 Visual Studio 和遠端代理程式傳輸到您的 Mac。 當您建置這個專案時，Visual Studio 會傳送檔案和命令，以在 Mac 上建置及部署應用程式。
+- `MyOpenGLESApp.iOS.Application` 包含 resources 和目標-C 的粘合程式碼，以建立連結至 `MyOpenGLESApp.iOS.StaticLibrary` 中C++靜態程式庫程式碼的 iOS 應用程式。 這個專案會建立組建套件，並由 Visual Studio 和遠端代理程式傳輸到您的 Mac。 當您建置這個專案時，Visual Studio 會傳送檔案和命令，以在 Mac 上建置及部署應用程式。
 
 ## <a name="build-and-run-the-android-app"></a>建置並執行 Android 應用程式
 
@@ -85,17 +85,17 @@ ms.locfileid: "71079269"
 
 1. 如果尚未選取，請從 [方案平台] 下拉式清單中選擇 [x86]。
 
-   ![將方案平台設為 x86](../cross-platform/media/cppmdd_opengles_solutionplat.png "CPPMDD_OpenGLES_SolutionPlat")
+   ![將方案平臺設定為 x86](../cross-platform/media/cppmdd_opengles_solutionplat.png "CPPMDD_OpenGLES_SolutionPlat")
 
    使用 x86 將目標設定為模擬器。 若要將目標設定為裝置，請根據裝置處理器來選擇方案平台。 如果未顯示 [方案平台] 清單，請從 [新增或移除按鈕] 清單中選擇 [方案平台]，然後選擇您的平台。
 
 1. 在 [方案總管] 中，開啟 `MyOpenGLESApp.Android.Packaging` 專案的捷徑功能表，然後選擇 [建置]。
 
-   ![建置 Android 封裝專案](../cross-platform/media/cppmdd_opengles_andbuild.png "CPPMDD_OpenGLES_AndBuild")
+   ![建立 Android 封裝專案](../cross-platform/media/cppmdd_opengles_andbuild.png "CPPMDD_OpenGLES_AndBuild")
 
    [輸出] 視窗會顯示 Android 共用程式庫和 Android 應用程式的建置流程輸出。
 
-   ![建置 Android 專案輸出](../cross-platform/media/cppmdd_opengles_andoutput.png "CPPMDD_OpenGLES_AndOutput")
+   ![Android 專案的組建輸出](../cross-platform/media/cppmdd_opengles_andoutput.png "CPPMDD_OpenGLES_AndOutput")
 
 1. 選擇其中一個模擬的 Android 裝置設定檔作為部署目標。
 
@@ -103,11 +103,11 @@ ms.locfileid: "71079269"
 
    如果您已經安裝其他模擬器或連接 Android 裝置，就可以在部署目標下拉式清單中加以選擇。 若要執行應用程式，所建置的方案平台必須符合目標裝置的平台。
 
-1. 按 F5 啟動偵錯，或按 Shift+F5 啟動但不偵錯。
+1. 按**f5**開始進行調試，或按**Shift** +**F5**啟動而不進行調試。
 
    Visual Studio 會啟動模擬器，這需要幾秒的時間來載入及部署您的程式碼。 以下是應用程式出現在模擬器中的方式：
 
-   ![在 Android 模擬器中執行的應用程式](../cross-platform/media/cppmdd_opengles_andemulator.png "CPPMDD_OpenGLES_AndEmulator")
+   ![在 Android Emulator 中執行的應用程式](../cross-platform/media/cppmdd_opengles_andemulator.png "CPPMDD_OpenGLES_AndEmulator")
 
    在您的應用程式啟動之後，您可以設定中斷點，並使用偵錯工具，以逐步執行程式碼、檢查本機及監看值。
 
@@ -127,7 +127,7 @@ iOS 應用程式專案是在 Visual Studio 中建立及編輯，但由於授權�
 
 ### <a name="to-set-up-automatic-signing-on-xcode"></a>若要在 Xcode 上設定自動簽署
 
-1. 如果您還沒有設定，請在 Mac 上安裝 [Xcode](https://developer.apple.com/xcode/downloads/) 10.2.1 版或更新版本。
+1. 如果您還沒有這麼做，請在 Mac 上安裝[Xcode](https://developer.apple.com/xcode/) 。
 
 1. 在 Mac 上開啟 Xcode 應用程式。
 
@@ -149,7 +149,7 @@ iOS 應用程式專案是在 Visual Studio 中建立及編輯，但由於授權�
 
 ### <a name="to-build-and-run-the-ios-app-on-an-ios-device"></a>若要在 iOS 裝置上建置並執行 iOS 應用程式
 
-1. 在 Mac 上執行遠端代理程式，並確認 Visual Studio 已與遠端代理程式搭配使用。 若要啟動遠端代理程式，請開啟終端機應用程式視窗並輸入 `vcremote`。 如需詳細資訊，請參閱[在 Visual Studio 中設定遠端代理程式](../cross-platform/install-and-configure-tools-to-build-using-ios.md#ConfigureVS)。
+1. 在 Mac 上執行遠端代理程式，並確認 Visual Studio 已與遠端代理程式搭配使用。 若要啟動遠端代理程式，請開啟終端機應用程式視窗並輸入 `vcremote`。 如需詳細資訊，請參閱 [在 Visual Studio 中設定遠端代理程式](../cross-platform/install-and-configure-tools-to-build-using-ios.md#ConfigureVS)。
 
    ![執行 vcremote 的 Mac 終端機視窗](../cross-platform/media/cppmdd_common_vcremote.png "CPPMDD_common_vcremote")
 
@@ -157,7 +157,7 @@ iOS 應用程式專案是在 Visual Studio 中建立及編輯，但由於授權�
 
 1. 在 Visual Studio 上，根據您裝置的處理器，從 [方案平台] 下拉式清單中選擇方案平台 (如果尚未選取)。 此範例中為 **ARM64** 處理器。
 
-   ![將方案平台設為 ARM64](../cross-platform/media/cppmdd-opengles-pickplatformarm64.png "CPPMDD_OpenGLES_SolutionPlatARM64")
+   ![將方案平臺設定為 ARM64](../cross-platform/media/cppmdd-opengles-pickplatformarm64.png "CPPMDD_OpenGLES_SolutionPlatARM64")
 
 1. 在 [方案總管] 中，開啟 MyOpenGLESApp.iOS.Application 專案的捷徑功能表，然後選擇 [卸載專案] 來卸載專案。
 
@@ -169,7 +169,7 @@ iOS 應用程式專案是在 Visual Studio 中建立及編輯，但由於授權�
 
 1. 現在，開啟 MyOpenGLESApp.iOS.Application 專案的捷徑功能表，然後選擇 [建置]，以建置該專案。
 
-   ![建置 iOS 應用程式專案](../cross-platform/media/cppmdd_opengles_iosbuild.png "CPPMDD_OpenGLES_iOSBuild")
+   ![組建 iOS 應用程式專案](../cross-platform/media/cppmdd_opengles_iosbuild.png "CPPMDD_OpenGLES_iOSBuild")
 
    [輸出] 視窗會顯示 iOS 靜態程式庫和 iOS 應用程式的建置流程輸出。 在 Mac 上，執行遠端代理程式的終端機視窗會顯示命令和檔案傳輸活動。
 
@@ -181,7 +181,7 @@ iOS 應用程式專案是在 Visual Studio 中建立及編輯，但由於授權�
 
    在您的應用程式啟動之後，您可以設定中斷點，並使用 Visual Studio 偵錯工具來檢查區域變數、查看呼叫堆疊及監看值。
 
-   ![位於 iOS 應用程式中斷點上的偵錯工具](../cross-platform/media/cppmdd_opengles_iosdebug.png "CPPMDD_OpenGLES_iOSDebug")
+   ![IOS 應用程式中中斷點處的偵錯工具](../cross-platform/media/cppmdd_opengles_iosdebug.png "CPPMDD_OpenGLES_iOSDebug")
 
 1. 按 **Shift**+**F5** 停止偵錯。
 

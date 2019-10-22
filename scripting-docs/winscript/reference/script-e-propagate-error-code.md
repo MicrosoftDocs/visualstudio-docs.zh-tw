@@ -11,15 +11,15 @@ caps.latest.revision: 3
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e6b1feac19be5f6506227b60515df70d9a737a2a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: dc6b30d574d2d3585ec9fa46e8dc63fcbd4572a5
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62840275"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574439"
 ---
-# <a name="scriptepropagate-error-code"></a>SCRIPT_E_PROPAGATE 錯誤碼
-指令碼錯誤傳播給呼叫者，這可能是在不同的執行緒。 主應用程式應該傳遞給呼叫者的錯誤程式碼。  
+# <a name="script_e_propagate-error-code"></a>SCRIPT_E_PROPAGATE 錯誤碼
+腳本錯誤已傳播至呼叫端，可能在不同的執行緒中。 主機應該將錯誤碼傳遞給呼叫者。  
   
 ## <a name="syntax"></a>語法  
   
@@ -27,5 +27,5 @@ ms.locfileid: "62840275"
 SCRIPT_E_PROPAGATE  0x80020102L  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [動態指令碼的常數、列舉和錯誤碼](../../winscript/reference/active-script-constants-enumerations-and-error-codes.md)

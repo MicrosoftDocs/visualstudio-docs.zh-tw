@@ -8,17 +8,17 @@ helpviewer_keywords:
 - Start Page [Visual Studio]
 - customizing Start Page [Visual Studio]
 - Visual Studio Start Page
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c8b31f033b9c04871e57836dd263071d87a24fda
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: b0a415c8a61e360ed1bcc323214d4144b2875cc0
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62824252"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72652544"
 ---
 # <a name="customize-startup"></a>自訂啟動
 
@@ -67,7 +67,7 @@ ms.locfileid: "62824252"
 > [!TIP]
 > 如果自訂起始頁中的錯誤導致 Visual Studio 當機，請以安全模式開啟 Visual Studio，然後將它設定為使用預設起始頁。 請參閱 [/SafeMode (devenv.exe)](../ide/reference/safemode-devenv-exe.md)。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [將 Visual Studio IDE 個人化](../ide/personalizing-the-visual-studio-ide.md)
 

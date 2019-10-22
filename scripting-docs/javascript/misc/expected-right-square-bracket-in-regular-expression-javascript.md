@@ -1,5 +1,5 @@
 ---
-title: 必須是 ']' 中規則運算式 (JavaScript) |Microsoft Docs
+title: 正則運算式中必須是 '] ' （JavaScript） |Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
@@ -14,23 +14,23 @@ ms.assetid: 1ca2079a-44dd-479f-a1e3-e04a14d0739e
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 66fa8ba2396185bd402e4bc31a3da6b1f8bf95ab
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 9af38a5fa754a811416f1a998b90946345f3e4a2
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63446495"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576486"
 ---
 # <a name="expected--in-regular-expression-javascript"></a>在規則運算式中必須是 ']' (JavaScript)
-您嘗試建立的規則運算式比對的字元類別，但並未包含右方括號。 個別的常值字元的組合可以組成的字元類別，藉由將它們放在方括號內。 字元類別符合其中任何一個字元。 例如，/ [abc] / 符合任何一個字母"a"、"b"或"c"。  
+您嘗試建立正則運算式比對的字元類別，但未包含右括弧。 個別的常值字元組合可以組合成字元類別，方法是將它們放在方括弧內。 字元類別符合其中包含的任何一個字元。 例如，/[abc]/符合任何一個字母 "a"、"b" 或 "c"。  
   
 ### <a name="to-correct-this-error"></a>更正這個錯誤  
   
-- 規則運算式中加上右括弧。  
+- 在正則運算式中加入右括弧。  
   
     > [!NOTE]
-    > 如果您想要比對單一括號，再加上反斜線- \\[-因此它將不會解譯為特殊字元[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]。  
+    > 如果您想要比對單一括弧，請使用反斜線-\\ [-因此不會 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 將它解讀為特殊字元。  
   
-## <a name="see-also"></a>另請參閱  
- [規則運算式物件](../../javascript/reference/regular-expression-object-javascript.md)   
- [規則運算式語法 (JavaScript)](https://msdn.microsoft.com/library/1400241x)
+## <a name="see-also"></a>請參閱  
+ [正則運算式物件](../../javascript/reference/regular-expression-object-javascript.md)   
+ [正則運算式語法（JavaScript）](https://msdn.microsoft.com/library/1400241x)

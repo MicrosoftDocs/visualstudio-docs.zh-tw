@@ -1,5 +1,5 @@
 ---
-title: IScriptNode::GetCookie |Microsoft Docs
+title: IScriptNode：： System.windows.application.getcookie |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b05d184af3ecd6302fc05893600fd7026eeca3ad
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 91428ca617c5c9e7b2bf88fc9c405f1d1610de1a
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62787049"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572227"
 ---
 # <a name="iscriptnodegetcookie"></a>IScriptNode::GetCookie
-傳回應用程式定義的值，用來與主機物件關聯的程式碼片段。  
+傳回應用程式定義的值，用來將程式碼片段與主機物件產生關聯。  
   
 ## <a name="syntax"></a>語法  
   
@@ -37,9 +37,9 @@ HRESULT GetCookie(
   
 #### <a name="parameters"></a>參數  
  `pdwCookie`  
- [out]針對`IScriptEntry`物件，則會傳回應用程式定義的 cookie 值。  
+ 脫銷若為 `IScriptEntry` 物件，則傳回應用程式定義的 cookie 值。  
   
- 針對`IScriptNode`物件，表示網頁上，會傳回 0。  
+ 若為代表網頁的 `IScriptNode` 物件，則會傳回0。  
   
 ## <a name="return-value"></a>傳回值  
  `HRESULT`。 可能的值包括 (但不限於) 下表中的這些值。  
@@ -50,5 +50,5 @@ HRESULT GetCookie(
   
 ## <a name="remarks"></a>備註  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IScriptNode 介面](../../winscript/reference/iscriptnode-interface.md)

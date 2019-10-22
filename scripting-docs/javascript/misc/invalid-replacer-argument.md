@@ -1,5 +1,5 @@
 ---
-title: 無效的取代子引數 |Microsoft Docs
+title: 不正確取代子引數 |Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
@@ -15,22 +15,22 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 46e01a4e6bb989fad2da6f979c79b7aba13df63a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9ba76a2121dfb3853e38bacbdf49c985103c2a35
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63007310"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573802"
 ---
 # <a name="invalid-replacer-argument"></a>無效的取代子引數
-已嘗試叫用`JSON.stringify`不是有效的引數。 `replacer`引數必須是函式或陣列。  
+嘗試使用不正確引數來叫用 `JSON.stringify`。 @No__t_0 引數必須是函式或陣列。  
   
 ### <a name="to-correct-this-error"></a>更正這個錯誤  
   
-- 變更`replacer`函式或陣列引數。  
+- 將 `replacer` 引數變更為函式或陣列。  
   
 ## <a name="example"></a>範例  
- 在此範例中的程式碼會造成執行階段錯誤，因為`memberfilter`是一個物件，而不是函式或陣列。  
+ 這個範例中的程式碼會造成執行階段錯誤，因為 `memberfilter` 是物件，而不是函式或陣列。  
   
 ```JavaScript  
 var contact = new Object();  
@@ -44,7 +44,7 @@ var memberfilter = new Object();
 var jsontext = JSON.stringify(contact, memberfilter, "\t");  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [JSON 物件](../../javascript/reference/json-object-javascript.md)   
- [JSON.parse 函式](../../javascript/reference/json-parse-function-javascript.md)   
+ [JSON. parse](../../javascript/reference/json-parse-function-javascript.md)函式    
  [JavaScript 執行階段錯誤](../../javascript/reference/javascript-run-time-errors.md)

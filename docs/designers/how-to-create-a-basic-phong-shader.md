@@ -1,21 +1,21 @@
 ---
-title: 作法：建立基本 Phong 著色器
+title: 如何：建立基本 Phong 著色器
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: c7c69da8-142b-4d3b-9be9-4be0d5970b25
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 895b797ad07018a9f4d4bf4c14b7f358a26f8eaa
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+ms.openlocfilehash: 5141df9f7504229733a269c2f7b0f94903064d8f
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68924408"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72635947"
 ---
-# <a name="how-to-create-a-basic-phong-shader"></a>作法：建立基本 Phong 著色器
+# <a name="how-to-create-a-basic-phong-shader"></a>如何：建立基本 Phong 著色器
 
 本文會示範如何使用著色器設計工具和有向圖著色器語言 (DGSL) 來建立光源的著色器，實作傳統的 Phong 光源模型。
 
@@ -25,19 +25,19 @@ Phong 光源模型擴充 Lambert 光源模型以納入反射強光，模擬表�
 
 如需 Lambert 光源模型的詳細資訊，請參閱[如何：建立基本 Lambert 著色器](../designers/how-to-create-a-basic-lambert-shader.md)。
 
-開始之前，請確定已顯示 [屬性]  視窗和 [工具箱]  。
+開始之前，請確定已顯示 [屬性] 視窗和 [工具箱]。
 
 1. 建立 Lambert 著色器，如[如何：建立基本 Lambert 著色器](../designers/how-to-create-a-basic-lambert-shader.md)中所述。
 
-2. 中斷 [Lambert]  節點和 [完稿色彩]  節點的連接。 選擇 [Lambert]  節點的 [RGB]  端點，然後選擇 [中斷連結]  。 這樣會替下一個步驟加入的節點留出空間。
+2. 中斷 [Lambert]節點和 [完稿色彩]節點的連接。 選擇 [Lambert] 節點的 [RGB] 端點，然後選擇 [中斷連結]。 這樣會替下一個步驟加入的節點留出空間。
 
-3. 將 [加入]  節點加入圖形。 在 [工具箱]  的 [數學]  下，選取 [加入]  ，並將其移至設計介面。
+3. 將 [加入] 節點加入圖形。 在 [工具箱] 的 [數學] 下，選取 [加入]，並將其移至設計介面。
 
-4. 將 [反射]  節點加入圖形。 在 [工具箱]  的 [工用程式]  下，選取 [反射]  ，並將其移至設計介面。
+4. 將 [反射] 節點加入圖形。 在 [工具箱] 的 [工用程式] 下，選取 [反射]，並將其移至設計介面。
 
-5. 加入反射比重。 將 [反射]  節點的 [輸出]  端點移至 [加入]  節點的 [X]  端點，然後將 [Lambert]  節點的 [輸出]  端點移至 [加入]  節點的 [Y]  端點。 這些連接結合像素的總擴散和反射色彩比重。
+5. 加入反射比重。 將 [反射] 節點的 [輸出] 端點移至 [加入] 節點的 [X] 端點，然後將 [Lambert] 節點的 [輸出] 端點移至 [加入] 節點的 [Y] 端點。 這些連接結合像素的總擴散和反射色彩比重。
 
-6. 將計算後的色彩值連接到完稿色彩。 將 [加入]  節點的 [輸出]  端點移至 [完稿色彩]  節點的 [RGB]  端點。
+6. 將計算後的色彩值連接到完稿色彩。 將 [加入] 節點的 [輸出] 端點移至 [完稿色彩] 節點的 [RGB] 端點。
 
    下圖顯示完成的著色器圖形和套用至茶壺模型的著色器預覽。
 
@@ -59,7 +59,7 @@ Phong 光源模型擴充 Lambert 光源模型以納入反射強光，模擬表�
 
 如需如何將著色器套用至 3D 模型的詳細資訊，請參閱[如何：將著色器套用至 3D 模型](../designers/how-to-apply-a-shader-to-a-3-d-model.md)。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [如何：將著色器套用至 3D 模型](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
 - [如何：匯出著色器](../designers/how-to-export-a-shader.md)

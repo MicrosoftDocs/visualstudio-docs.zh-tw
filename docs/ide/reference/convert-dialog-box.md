@@ -9,22 +9,22 @@ f1_keywords:
 helpviewer_keywords:
 - Convert dialog box
 ms.assetid: 56f23ef7-17c4-4d76-9ead-982bbcd42061
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f720e842bb1f13aa726773af0dec499d32bfcc2d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: f76cd5172df15aa1adc0dcf9dd4f5a8750652eff
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62838785"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72654568"
 ---
 # <a name="convert-dialog-box"></a>轉換對話方塊
 
 用於舊版 Visual Studio 的 [轉換] 對話方塊目前已淘汰。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [移植、移轉和升級 Visual Studio 專案](../../porting/port-migrate-and-upgrade-visual-studio-projects.md)

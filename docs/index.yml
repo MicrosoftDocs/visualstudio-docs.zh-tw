@@ -10,12 +10,12 @@ metadata:
   monikerRange: '>=vs-2017'
   f1_keywords:
   - MSDNSTART
-  ms.openlocfilehash: f754d62f95dee9531429f9421571982307af9966
-  ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+  ms.openlocfilehash: 16566f855e2e7504616da3d4196440facf145e6b
+  ms.sourcegitcommit: e82baa50bf5a65858c410882c2e86a552c2c1921
   ms.translationtype: HT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 09/24/2019
-  ms.locfileid: "71238132"
+  ms.lasthandoff: 10/16/2019
+  ms.locfileid: "72380958"
 highlightedContent:
   items:
   - title: 設定與安裝
@@ -42,7 +42,7 @@ conceptualContent:
       url: get-started/tutorial-open-project-from-repo.md
       itemType: tutorial
     - text: 撰寫和編輯程式碼
-      url: ide/index-writing-code.md
+      url: ide/index-writing-code.yml
       itemType: tutorial
     - text: 建置程式碼
       url: ide/compiling-and-building-in-visual-studio.md
@@ -126,7 +126,7 @@ additionalContent:
     items:
     - title: 開發
       summary: 使用程式碼編輯器撰寫並管理您的程式碼。
-      url: ide/index-writing-code.md
+      url: ide/index-writing-code.yml
     - title: 組建
       summary: 編譯和建置您的原始程式碼。
       url: ide/compiling-and-building-in-visual-studio.md
@@ -141,7 +141,7 @@ additionalContent:
       url: deployment/index.yml
     - title: 版本控制
       summary: 使用 Git 和 TFVC 等版本控制技術來共用程式碼。
-      url: version-control/index.md
+      url: /azure/devops/repos/index
     - title: DevOps
       summary: 利用 Azure DevOps Services 持續在雲端建置及發行您的應用程式及施行敏捷式運作。
       url: /azure/devops

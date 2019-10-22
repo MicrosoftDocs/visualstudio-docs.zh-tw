@@ -6,14 +6,14 @@ ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.assetid: 5ef1188f-89dc-413d-801d-0efdaf9b0427
 caps.latest.revision: 24
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: c97ee2d05609ee6802da3503e9f514fdc07a4b85
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 920dea4e81ca2ce0c562bb6d77582fd5e3753663
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68871653"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72660575"
 ---
 # <a name="enable-coded-ui-testing-of-your-controls"></a>啟用控制項的自動程式化 UI 測試功能
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,12 +39,12 @@ ms.locfileid: "68871653"
 
  不過，如果您實作協助工具，當自動程式化 UI 測試產生器錄製測試並產生程式碼時，將會使用該協助工具來擷取控制項的相關資訊。 然後，當您執行測試時，即使控制項是在使用者介面中的其他地方，所產生的程式碼還是會對您的控制項重新執行這些事件。 測試作者也可以使用控制項的基本屬性來建立判斷提示。
 
- ![CUIT&#95;Record](../test/media/cuit-record.png "CUIT_Record")
+ ![CUIT&#95;記錄](../test/media/cuit-record.png "CUIT_Record")
 
 ### <a name="to-support-record-and-playback-property-validation-and-navigation-for-a-windows-forms-control"></a>支援錄製和播放、屬性驗證，以及巡覽 Windows 表單控制項
  依照下列程序的概述，以及 <xref:System.Windows.Forms.AccessibleObject> 的詳細說明，為您的控制項實作協助工具。
 
- ![CUIT&#95;Accessible](../test/media/cuit-accessible.png "CUIT_Accessible")
+ ![CUIT&#95;可存取](../test/media/cuit-accessible.png "CUIT_Accessible")
 
 1. 實作衍生自 <xref:System.Windows.Forms.Control.ControlAccessibleObject> 的類別，並覆寫 <xref:System.Windows.Forms.Control.AccessibilityObject%2A> 屬性，以傳回您的類別物件。
 
@@ -86,7 +86,7 @@ ms.locfileid: "68871653"
  ![CUIT&#95;CustomProps](../test/media/cuit-customprops.png "CUIT_CustomProps")
 
 ### <a name="to-support-custom-property-validation"></a>支援自訂屬性驗證
- ![CUIT&#95;Props](../test/media/cuit-props.png "CUIT_Props")
+ ![CUIT&#95;.props](../test/media/cuit-props.png "CUIT_Props")
 
 1. 覆寫曲線圖例可存取物件的 <xref:System.Windows.Forms.AccessibleObject.Description%2A> 屬性，以描述字串來傳遞豐富的屬性值 (以分號 (;) 將其與主要描述分隔，如果您要實作多個屬性，也是以分號將彼此分隔)。
 
@@ -410,9 +410,9 @@ Assert.AreEqual(this.AssertMethod3ExpectedValues.UIATextState, uIAText.State);
  當 Visual Studio 錄製測試時，它會擷取每個滑鼠和鍵盤事件。 不過，在某些情況下，動作的意圖可能會在一系列的滑鼠和鍵盤事件中遺失。 比方說，如果您的控制項支援自動完成，在不同的環境中播放測試時，同一組滑鼠和鍵盤事件可能會導致不同的值。 您可以加入動作篩選外掛程式，將一系列鍵盤和滑鼠事件取代成單一動作。 如此一來，您就可以將導致選取某個值的一系列滑鼠和鍵盤事件，取代成設定該值的單一動作。 這麼做可防止自動程式碼 UI 測試在不同環境之間所產生的自動完成差異。
 
 ### <a name="to-support-intent-aware-actions"></a>支援意圖感知動作
- ![CUIT&#95;Actions](../test/media/cuit-actions.png "CUIT_Actions")
+ ![CUIT&#95;動作](../test/media/cuit-actions.png "CUIT_Actions")
 
-1. 執行衍生自[microsoft.visualstudio.testtools.uitest.common.uitestactionfilter>](/previous-versions/visualstudio/visual-studio-2012/dd985757(v=vs.110))的動作篩選準則類別, 並覆寫[ApplyTimeout](/previous-versions/visualstudio/visual-studio-2012/dd984649%28v%3dvs.110%29)、 [Category](/previous-versions/visualstudio/visual-studio-2012/dd986905(v=vs.110))、 [Enabled](/previous-versions/visualstudio/visual-studio-2012/dd985633(v=vs.110))、 [FilterType](/previous-versions/visualstudio/visual-studio-2012/dd778726(v=vs.110))、 [Group](/previous-versions/visualstudio/visual-studio-2012/dd779219(v=vs.110))和[Name](/previous-versions/visualstudio/visual-studio-2012/dd998334(v=vs.110))屬性。
+1. 執行衍生自[microsoft.visualstudio.testtools.uitest.common.uitestactionfilter>](/previous-versions/visualstudio/visual-studio-2012/dd985757(v=vs.110))的動作篩選準則類別，並覆寫[ApplyTimeout](/previous-versions/visualstudio/visual-studio-2012/dd984649%28v%3dvs.110%29)、 [Category](/previous-versions/visualstudio/visual-studio-2012/dd986905(v=vs.110))、 [Enabled](/previous-versions/visualstudio/visual-studio-2012/dd985633(v=vs.110))、 [FilterType](/previous-versions/visualstudio/visual-studio-2012/dd778726(v=vs.110))、 [Group](/previous-versions/visualstudio/visual-studio-2012/dd779219(v=vs.110))和[Name](/previous-versions/visualstudio/visual-studio-2012/dd998334(v=vs.110))屬性。
 
     ```csharp
     internal class MyActionFilter : UITestActionFilter
@@ -536,9 +536,9 @@ Assert.AreEqual(this.AssertMethod3ExpectedValues.UIATextState, uIAText.State);
 ## <a name="external-resources"></a>外部資源
 
 ### <a name="guidance"></a>指引
- [使用 Visual Studio 2012 來測試持續傳遞–第2章:單元測試:測試內部](http://go.microsoft.com/fwlink/?LinkID=255188)
+ [使用 Visual Studio 2012 測試持續傳遞 - 第 2 章：單元測試：測試內部](http://go.microsoft.com/fwlink/?LinkID=255188)
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - <xref:System.Windows.Forms.AccessibleObject>
 - [使用 UI 自動化來測試您的程式碼](../test/use-ui-automation-to-test-your-code.md)

@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptProfilerCallback::ScriptCompiled | Microsoft Docs
+title: IActiveScriptProfilerCallback：： ScriptCompiled |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -15,15 +15,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a198667e7dc30969c32b556620b139d52f833543
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f7252134fc86bfd63b74a181b18327212a1b2dc1
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62993231"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72571657"
 ---
 # <a name="iactivescriptprofilercallbackscriptcompiled"></a>IActiveScriptProfilerCallback::ScriptCompiled
-通知分析工具物件，指令碼引擎編譯的指令碼。 編譯每個指令碼會呼叫這個方法。  
+通知 profiler 物件，腳本引擎已編譯腳本。 這個方法會針對每個編譯的腳本呼叫。  
   
 ## <a name="syntax"></a>語法  
   
@@ -36,19 +36,19 @@ HRESULT ScriptCompiled(
   
 #### <a name="parameters"></a>參數  
  `scriptId`  
- [in]已編譯的指令碼的唯一識別碼。 此識別碼會指定指令碼引擎。  
+ 在已編譯之腳本的唯一識別碼。 這個識別碼是由腳本引擎所指派。  
   
  `type`  
- [in]已編譯的指令碼型別。 值會定義於[PROFILER_SCRIPT_TYPE 列舉](../../winscript/reference/profiler-script-type-enumeration.md)。  
+ 在編譯的腳本類型。 這些值會在[PROFILER_SCRIPT_TYPE 列舉](../../winscript/reference/profiler-script-type-enumeration.md)中定義。  
   
  `pIDebugDocumentContext`  
- [in]如果有的話，指標`IUnknown`分析工具必須查詢的介面[IDebugDocumentContext 介面](../../winscript/reference/idebugdocumentcontext-interface.md)指標。 否則，這會是 null。  
+ 在如果可用，則為分析工具必須查詢[IDebugDocumentCoNtext 介面](../../winscript/reference/idebugdocumentcontext-interface.md)指標之 `IUnknown` 介面的指標。 否則，這會是 null。  
   
 ## <a name="return-value"></a>傳回值  
- 這個方法的傳回值會忽略指令碼引擎。  
+ 腳本引擎會忽略這個方法的傳回值。  
   
 ## <a name="remarks"></a>備註  
- 指令碼引擎可以提供的文件內容，只有當主應用程式支援此功能。  
+ 只有當主機支援時，腳本引擎才能提供檔內容。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IActiveScriptProfilerCallback 介面](../../winscript/reference/iactivescriptprofilercallback-interface.md)

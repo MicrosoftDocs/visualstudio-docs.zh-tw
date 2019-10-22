@@ -7,17 +7,17 @@ helpviewer_keywords:
 - templates [Visual Studio], Web
 - Web templates [Visual Studio]
 - project templates [Visual Studio], Web
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 9af528cf92d4909bbe5c7d4ac114aa830e96162c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 7d121d9b970d8012aaf177c0a232cd21f6fe85d9
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62946891"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72645821"
 ---
-# <a name="how-to-manually-create-web-templates"></a>HOW TO：手動建立網站範本
+# <a name="how-to-manually-create-web-templates"></a>如何：手動建立網站範本
 
 建立網站範本與建立其他種類的範本不同。 因為 Web 專案範本出現在 [加入新網站] 對話方塊中，並且依程式語言分類 Web 專案項目，所以 *vstemplate* 檔案必須將範本指定為網站範本，並識別程式設計語言。
 
@@ -41,7 +41,7 @@ ms.locfileid: "62946891"
    - CSharp
    - VisualBasic
 
-     例如：
+     例如:
 
      ```xml
      <TemplateData>
@@ -81,7 +81,7 @@ ms.locfileid: "62946891"
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [建立專案與項目範本](../ide/creating-project-and-item-templates.md)
 - [Visual Studio 範本結構描述參考 (擴充性)](../extensibility/visual-studio-template-schema-reference.md)

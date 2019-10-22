@@ -1,5 +1,5 @@
 ---
-title: 'Ijsdebugproperty:: Getmembers 方法 |Microsoft Docs'
+title: IJsDebugProperty：： GetMembers 方法 |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -15,15 +15,15 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3be31a0f02869ea740809fb68dbddf48843b2f3e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a3e700e51dea6723238437bf1fed741698097ae2
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62793665"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574056"
 ---
 # <a name="ijsdebugpropertygetmembers-method"></a>IJsDebugProperty::GetMembers 方法
-取得此物件的成員。  
+取得這個物件的成員。  
   
 ## <a name="syntax"></a>語法  
   
@@ -36,15 +36,15 @@ HRESULT GetMembers(
   
 #### <a name="parameters"></a>參數  
  `members`  
- [in]若要指定的成員資訊包含哪些內容的旗標。  
+ 在旗標，用來指定成員資訊中包含的內容。  
   
  `ppEnum`  
- [out]物件的成員。  
+ 脫銷物件的成員。  
   
 ## <a name="return-value"></a>傳回值  
   
 ## <a name="requirements"></a>需求  
- **標頭：** jscript9diag.h  
+ **標頭：** jscript9diag。h  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IJsDebugProperty 介面](../../winscript/reference/ijsdebugproperty-interface.md)

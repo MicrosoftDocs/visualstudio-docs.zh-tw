@@ -1,5 +1,5 @@
 ---
-title: CA2234:必須傳遞 System.Uri 物件而不是字串 |Microsoft Docs
+title: CA2234 必須：傳遞 System.object 物件，而不是字串 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,50 +12,50 @@ helpviewer_keywords:
 - PassSystemUriObjectsInsteadOfStrings
 ms.assetid: 14616b37-74c4-4286-b051-115d00aceb5f
 caps.latest.revision: 16
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: ce0ed8a2600d52d3a8f6649a528b6c809895f3fe
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6ad30048f9f7e30d47545435db49d2d1d7e66ff6
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68142406"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72662800"
 ---
-# <a name="ca2234-pass-systemuri-objects-instead-of-strings"></a>CA2234:必須傳遞 System.Uri 物件而非字串
+# <a name="ca2234-pass-systemuri-objects-instead-of-strings"></a>CA2234：必須傳遞 System.Uri 物件，而不要傳遞字串
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |TypeName|PassSystemUriObjectsInsteadOfStrings|
 |CheckId|CA2234|
-|分類|Microsoft.Usage|
+|Category|Microsoft。使用方式|
 |中斷變更|非中斷|
 
 ## <a name="cause"></a>原因
- 具有字串參數，其名稱中包含"uri"、"Uri"、"urn"、"Urn"、"url"或"Url"; 方法呼叫和方法的宣告型別包含對應的方法多載具有<xref:System.Uri?displayProperty=fullName>參數。
+ 對具有字串參數的方法進行呼叫，其名稱包含 "uri"、"Uri"、"urn"、"Urn"、"url" 或 "Url";而方法的宣告型別包含具有 <xref:System.Uri?displayProperty=fullName> 參數的對應方法多載。
 
 ## <a name="rule-description"></a>規則描述
- 參數名稱會分割成駝峰式命名法大小寫慣例為基礎的權杖，然後每個語彙基元會檢查以查看它是否等於"uri"、"Uri"、"urn"、"Urn"、"url"或"Url"。 如果沒有相符項目，則參數會假設代表統一資源識別元 (URI)。 URI 的字串表示方式容易發生剖析和編碼錯誤，並且可能因此產生安全性弱點。 <xref:System.Uri>類別會提供這些服務安全的方式。 使用者之間的差異只關於 URI 的表示法的兩個多載有所選擇，應該選擇採用的多載<xref:System.Uri>引數。
+ 參數名稱會根據 camel 大小寫慣例分割成權杖，然後檢查每個標記，以查看它是否等於 "uri"、"Uri"、"urn"、"Urn"、"url" 或 "Url"。 如果相符，則會假設參數代表統一資源識別元（URI）。 URI 的字串表示方式容易發生剖析和編碼錯誤，並且可能因此產生安全性弱點。 @No__t_0 類別以安全且安全的方式提供這些服務。 當兩個多載之間有不同的選擇，但只有與 URI 的表示有差異時，使用者應該選擇接受 <xref:System.Uri> 引數的多載。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
- 若要修正此規則的違規情形，請呼叫採用的多載<xref:System.Uri>引數。
+ 若要修正此規則的違規，請呼叫接受 <xref:System.Uri> 引數的多載。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
- 它會安全地隱藏此規則的警告，如果字串參數不代表 URI。
+ 如果 string 參數不代表 URI，就可以安全地隱藏此規則的警告。
 
 ## <a name="example"></a>範例
- 下列範例示範的方法中， `ErrorProne`，這會違反此規則和方法， `SaferWay`，正確地呼叫<xref:System.Uri>多載。
+ 下列範例顯示 `ErrorProne` 的方法，其違反規則和方法，`SaferWay`，這會正確地呼叫 <xref:System.Uri> 多載。
 
  [!code-cpp[FxCop.Usage.PassUri#1](../snippets/cpp/VS_Snippets_CodeAnalysis/FxCop.Usage.PassUri/cpp/FxCop.Usage.PassUri.cpp#1)]
  [!code-csharp[FxCop.Usage.PassUri#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.PassUri/cs/FxCop.Usage.PassUri.cs#1)]
  [!code-vb[FxCop.Usage.PassUri#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Usage.PassUri/vb/FxCop.Usage.PassUri.vb#1)]
 
-## <a name="related-rules"></a>相關的規則
- [CA1057:字串 URI 多載呼叫 System.Uri 多載](../code-quality/ca1057-string-uri-overloads-call-system-uri-overloads.md)
+## <a name="related-rules"></a>相關規則
+ [CA1057：字串 URI 多載呼叫 System.Uri 多載](../code-quality/ca1057-string-uri-overloads-call-system-uri-overloads.md)
 
- [CA1056:URI 屬性不應該為字串](../code-quality/ca1056-uri-properties-should-not-be-strings.md)
+ [CA1056：URI 屬性不應該為字串](../code-quality/ca1056-uri-properties-should-not-be-strings.md)
 
- [CA1054:URI 參數不應該為字串](../code-quality/ca1054-uri-parameters-should-not-be-strings.md)
+ [CA1054：URI 參數不應該為字串](../code-quality/ca1054-uri-parameters-should-not-be-strings.md)
 
- [CA1055:URI 會傳回值不應該為字串](../code-quality/ca1055-uri-return-values-should-not-be-strings.md)
+ [CA1055：URI 傳回值不應該為字串](../code-quality/ca1055-uri-return-values-should-not-be-strings.md)

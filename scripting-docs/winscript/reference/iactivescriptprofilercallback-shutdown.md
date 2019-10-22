@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptProfilerCallback::Shutdown | Microsoft Docs
+title: IActiveScriptProfilerCallback：： Shutdown |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -15,15 +15,15 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 091ccc30f16081fdca8f10778efec208ef5ccb16
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: deecfe4134a4b0e18591823f194ceaf6d1eb0a14
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62993419"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72571653"
 ---
 # <a name="iactivescriptprofilercallbackshutdown"></a>IActiveScriptProfilerCallback::Shutdown
-呼叫以通知分析工具物件，只要在指令碼引擎上停止分析。 如此一來，程式碼剖析工具的物件可以呼叫其 cleanup 常式，如有必要。 這個方法也會呼叫指令碼引擎時，指令碼引擎正在關閉，或呼叫[IActiveScriptProfilerCallback::Initialize](../../winscript/reference/iactivescriptprofilercallback-initialize.md)失敗。  
+呼叫以在腳本引擎上停止分析時，通知 profiler 物件。 如此一來，profiler 物件就可以視需要呼叫其清除常式。 當腳本引擎關閉時，或呼叫[IActiveScriptProfilerCallback：： Initialize](../../winscript/reference/iactivescriptprofilercallback-initialize.md)失敗時，腳本引擎也會呼叫這個方法。  
   
 ## <a name="syntax"></a>語法  
   
@@ -34,10 +34,10 @@ HRESULT Shutdown(
   
 #### <a name="parameters"></a>參數  
  `hrReason`  
- [in]關機的原因。 如果指令碼引擎正在關閉，`S_OK`傳遞。 如果在呼叫[IActiveScriptProfilerCallback::Initialize](../../winscript/reference/iactivescriptprofilercallback-initialize.md)傳回失敗 HRESULT，HRESULT 會傳遞。 此值從擷取的否則為[IActiveScriptProfilerControl::StopProfiling](../../winscript/reference/iactivescriptprofilercontrol-stopprofiling.md)。  
+ 在關機的原因。 如果腳本引擎正在關機，則會傳遞 `S_OK`。 如果對[IActiveScriptProfilerCallback：： Initialize](../../winscript/reference/iactivescriptprofilercallback-initialize.md)的呼叫會傳回失敗 hresult，則會傳遞 hresult。 否則，會從[IActiveScriptProfilerControl：： StopProfiling](../../winscript/reference/iactivescriptprofilercontrol-stopprofiling.md)抓取此值。  
   
 ## <a name="return-value"></a>傳回值  
- 這個方法的傳回值會忽略指令碼引擎。  
+ 腳本引擎會忽略這個方法的傳回值。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IActiveScriptProfilerCallback 介面](../../winscript/reference/iactivescriptprofilercallback-interface.md)

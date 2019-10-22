@@ -1,5 +1,5 @@
 ---
-title: HOW TO：選取負載測試結果存放庫
+title: 如何：選取負載測試結果儲存機制
 ms.date: 10/19/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,17 +12,17 @@ helpviewer_keywords:
 - Load Test Results Repository
 - SQL, Load Test Results Store
 ms.assetid: fa0c4dd9-612f-4a57-b8eb-458f129d9cda
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 602327d49733077e3c180c0e192027be6374afe6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: b5b1b13ec6b81536a63a1732e7521dd1e64d007f
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62950019"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653465"
 ---
-# <a name="how-to-select-a-load-test-results-repository"></a>HOW TO：選取負載測試結果存放庫
+# <a name="how-to-select-a-load-test-results-repository"></a>如何：選取負載測試結果存放庫
 
 您不必侷限於本機結果存放區。 負載測試通常會在遠端代理程式電腦集合上執行。 代理程式加上控制器能夠產生比任何單一電腦更接近的模擬負載。 如需詳細資訊，請參閱[測試控制器和測試代理程式](configure-test-agents-and-controllers-for-load-tests.md)。
 
@@ -49,11 +49,11 @@ ms.locfileid: "62950019"
 
 6. 在 [連接至資料庫] 底下，選擇 [選取或輸入資料庫名稱]。 請從下拉式清單方塊中選取 [LoadTest]。
 
-7. 選擇 [確定] 。 您可以選擇 [測試連接] 測試連接。
+7. 選擇 [確定]。 您可以選擇 [測試連接] 測試連接。
 
 8. 選擇 [管理測試控制器] 對話方塊中的 [關閉]。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [管理負載測試結果儲存機制中的負載測試結果](../test/manage-load-test-results-in-the-load-test-results-repository.md)
 - [測試控制器和測試代理程式](configure-test-agents-and-controllers-for-load-tests.md)

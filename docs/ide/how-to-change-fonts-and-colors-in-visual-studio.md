@@ -6,19 +6,19 @@ helpviewer_keywords:
 - Visual Studio, color themes
 - color themes, Visual Studio
 ms.assetid: 60d91ba1-244b-4c43-847f-60b744f1352a
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f06007294f0743ebdbbcc0c750ffd09307e17ad1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 1c4527592b5638b171aa39f88e254bd8adf5c73b
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62824200"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72655075"
 ---
-# <a name="how-to-change-fonts-and-colors-in-visual-studio"></a>HOW TO：變更 Visual Studio 中的字型和色彩
+# <a name="how-to-change-fonts-and-colors-in-visual-studio"></a>如何：變更 Visual Studio 中的字型和色彩
 
 您可以在 Visual Studio 中透過數種方式，自訂 IDE 框架和工具視窗的色彩。
 
@@ -65,7 +65,7 @@ ms.locfileid: "62824200"
 
 1. 在 [大小] 清單中，選擇文字大小，然後選擇 [確定] 按鈕。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [Visual Studio 的協助工具功能](../ide/reference/accessibility-features-of-visual-studio.md)
-- [如何：變更編輯器中的字型和色彩](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)
+- [如何：在編輯器中變更字型和顏色](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)

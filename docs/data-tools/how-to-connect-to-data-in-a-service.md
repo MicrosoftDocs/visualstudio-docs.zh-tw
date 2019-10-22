@@ -1,5 +1,5 @@
 ---
-title: HOW TO：連線至服務中的資料
+title: 如何：連接至服務中的資料
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,43 +11,43 @@ helpviewer_keywords:
 - web services, as data sources
 - web services, connecting
 ms.assetid: a6b54353-05fe-4e5c-8631-90231fc95504
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 7633d60ed672b64137b68bd9e6c3b860224753e5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 75efb8656d54c02f3126493504506c913a7e0f4a
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62566930"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72642027"
 ---
-# <a name="how-to-connect-to-data-in-a-service"></a>HOW TO：連線至服務中的資料
+# <a name="how-to-connect-to-data-in-a-service"></a>如何：連線至服務中的資料
 
-連接您的應用程式，執行從服務傳回的資料[資料來源組態精靈](../data-tools/media/data-source-configuration-wizard.png)，然後選取**服務**上**選擇資料來源類型**頁面。
+您可以執行 [[資料來源設定向導](../data-tools/media/data-source-configuration-wizard.png)]，然後選取 [**選擇資料來源類型**] 頁面上的 [**服務**]，將應用程式連接到從服務傳回的資料。
 
-完成精靈的詳細資訊，服務參考加入至專案並立即提供[資料來源 視窗](add-new-data-sources.md#data-sources-window)。
+完成 wizard 之後，服務參考就會加入至您的專案，並立即在 [[資料來源] 視窗](add-new-data-sources.md#data-sources-window)中提供。
 
 > [!NOTE]
-> [資料來源] 視窗中所顯示的項目，取決於服務所傳回的資訊。 部分服務所提供的資訊可能不足，無法供 [資料來源組態精靈] 建立可繫結的物件。 例如，如果服務傳回不具類型的資料集，顯示任何項目中**Zdroje dat**時完成精靈 的視窗。 這是因為不具類型資料集不會提供結構描述，所以精靈沒有足夠的資訊來建立資料來源。
+> [資料來源] 視窗中所顯示的項目，取決於服務所傳回的資訊。 部分服務所提供的資訊可能不足，無法供 [資料來源組態精靈] 建立可繫結的物件。 例如，如果服務傳回不具類型的資料集，則在完成 wizard 時，[**資料來源**] 視窗中不會出現任何專案。 這是因為不具類型的資料集不會提供架構，因此 wizard 沒有足夠的資訊來建立資料來源。
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 
-## <a name="to-connect-your-application-to-a-service"></a>若要連接至服務的應用程式
+## <a name="to-connect-your-application-to-a-service"></a>將應用程式連線至服務
 
 1. 在 [ **資料** ] 功能表上，請按一下 [ **加入新資料來源**]。
 
-2. 選取 [**服務**上**選擇資料來源類型**頁面，然後再按一下**下一步]**。
+2. 選取 [**選擇資料來源類型**] 頁面上的 [**服務**]，然後按 **[下一步]** 。
 
-3. 輸入您想要使用，或按一下 服務的位址**Discover**以在目前的方案中，尋找服務，然後按一下**移**。
+3. 輸入您想要使用之服務的位址，或按一下 [**探索**] 以找出目前解決方案中的服務，然後按一下 [執行 **]。**
 
-4. （選擇性） 您可以輸入新**命名空間**來取代預設的值。
+4. （選擇性）您可以輸入新的**命名空間**來取代預設值。
 
     > [!NOTE]
-    > 按一下 **進階**來開啟[設定服務參考對話方塊](../data-tools/configure-service-reference-dialog-box.md)。
+    > 按一下 [ **Advanced** ] 以開啟 [[設定服務參考] 對話方塊](../data-tools/configure-service-reference-dialog-box.md)。
 
-5. 按一下 **確定**加入服務參考加入專案。
+5. 按一下 **[確定]** ，將服務參考新增至您的專案。
 
 6. 按一下 [ **完成**]。
 
@@ -55,9 +55,9 @@ ms.locfileid: "62566930"
 
 ## <a name="next-steps"></a>後續步驟
 
-若要將功能加入您的應用程式中，選取中的項目**Zdroje dat**視窗並將它拖曳至表單，以建立繫結的控制項。 如需詳細資訊，請參閱 <<c0> [ 控制項繫結至 Visual Studio 中的資料](../data-tools/bind-controls-to-data-in-visual-studio.md)。
+若要將功能加入至應用程式，請在 [**資料來源**] 視窗中選取一個專案，然後將它拖曳至表單上，以建立繫結控制項。 如需詳細資訊，請參閱[將控制項系結至 Visual Studio 中的資料](../data-tools/bind-controls-to-data-in-visual-studio.md)。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [將 WPF 控制項繫結至 WCF 資料服務](../data-tools/bind-wpf-controls-to-a-wcf-data-service.md)
 - [Visual Studio 中的 Windows Communication Foundation 服務和 WCF 資料服務](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)
