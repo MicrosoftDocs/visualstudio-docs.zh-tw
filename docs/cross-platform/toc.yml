@@ -31,29 +31,29 @@
       href: change-log-visual-studio-tools-for-unity-mac.md
     - name: 使用 Unity 應用程式進行 DevOps
       href: application-lifecycle-management-alm-with-unity-apps.md
-- name: 適用於跨平台行動裝置開發的 Visual C++
+- name: 使用 C++ 進行跨平台行動裝置應用程式開發
   items:
-    - name: 適用於跨平台行動裝置開發的 Visual C++
+    - name: 使用 C++ 進行跨平台行動裝置應用程式開發
       href: visual-cpp-for-cross-platform-mobile-development.md
-    - name: 安裝 Visual C++ for Cross-Platform Mobile Development
+    - name: 安裝 C++ 的跨平台行動裝置應用程式開發
       items:
-        - name: 安裝 Visual C++ for Cross-Platform Mobile Development
+        - name: 安裝 C++ 的跨平台行動裝置應用程式開發
           href: install-visual-cpp-for-cross-platform-mobile-development.md
-        - name: Install and Configure Tools to Build using iOS
+        - name: 安裝和設定工具以使用 iOS 進行建置
           href: install-and-configure-tools-to-build-using-ios.md
     - name: 建立 Android Native Activity 應用程式
       href: create-an-android-native-activity-app.md
     - name: 在 Android 和 iOS 上建置 OpenGL ES 應用程式
       href: build-an-opengl-es-application-on-android-and-ios.md
-    - name: 匯入 XCode 專案
+    - name: 匯入 Xcode 專案
       href: import-an-xcode-project.md
-    - name: 同步處理 XCode 和 Visual Studio 之間的變更
+    - name: 同步 Xcode 和 Visual Studio 之間的變更
       href: sync-changes-between-xcode-and-visual-studio.md
-    - name: 跨平台行動開發範例
+    - name: 跨平台行動裝置開發範例
       href: cross-platform-mobile-development-examples.md
-    - name: C++ 跨平台專案屬性
+    - name: C++ 跨平台屬性頁參考
       items:
-        - name: C++ 跨平台專案屬性
+        - name: C++ 跨平台屬性頁參考
           href: cross-platform-prop-pages.md
         - name: 一般專案屬性 (Android C++)
           href: general-android-prop-page.md
