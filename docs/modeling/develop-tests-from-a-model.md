@@ -4,25 +4,25 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - tests and requirements
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d2fd53b3dc1237e9d31daf0e80fff3ddf5f1475
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: ccb6e8d938bbb807211d0d555294c94948705240
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67821957"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653868"
 ---
 # <a name="develop-tests-from-a-model"></a>透過模型開發測試
 您可以使用需求和架構模型來協助您組織整理系統及其元件的測試。 這種做法可協助您確保測試對於使用者和其他專案關係人來說非常重要的需求，並可協助您在需求變更時快速地更新測試。 如果您使用 [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)]，則也可以維護模型與測試之間的連結。
 
- 若要查看哪些版本的 Visual Studio 支援這些功能，請參閱[architecture and modeling tools 的版本支援](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。
+ 若要查看哪些版本的 Visual Studio 支援這些功能，請參閱[架構和模型工具的版本支援](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。
 
 ## <a name="system-and-subsystem-testing"></a>系統和子系統測試
- *系統測試*也稱為*接受度測試*，表示測試是否會符合使用者需求。 這類測試關注系統的外部可見行為，而非內部設計。
+ *系統測試（* 也稱為*接受度測試*）表示測試是否符合使用者的需求。 這類測試關注系統的外部可見行為，而非內部設計。
 
  擴充或重新設計系統時，系統測試極為重要。 它們可協助您在變更程式碼時避免造成錯誤。
 
@@ -33,7 +33,7 @@ ms.locfileid: "67821957"
  子系統測試會將相同的準則套用到系統的主要元件。 每個元件都會與其他元件分開進行測試。 子系統測試著重在元件使用者介面或 API 上可見的行為。
 
 ## <a name="deriving-system-tests-from-a-requirements-model"></a>從需求模型衍生系統測試
- 您可以建立和維護系統測試與需求模型之間的關聯性。 若要建立此關聯性，請撰寫與需求模型主要項目對應的測試。 Visual Studio 透過讓您建立測試與模型各部分之間的連結，以協助您維護該關聯性。 如需需求模型的詳細資訊，請參閱 <<c0> [ 模型使用者需求](../modeling/model-user-requirements.md)。
+ 您可以建立和維護系統測試與需求模型之間的關聯性。 若要建立此關聯性，請撰寫與需求模型主要項目對應的測試。 Visual Studio 透過讓您建立測試與模型各部分之間的連結，以協助您維護該關聯性。 如需需求模型的詳細資訊，請參閱[模型使用者需求](../modeling/model-user-requirements.md)。
 
 ### <a name="write-tests-for-each-use-case"></a>撰寫每個使用案例的測試
  如果您使用 [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)]，則可以為需求模型中所定義的每個使用案例建立一組測試。 例如，如果您有「點餐」(Order a Meal) 使用案例 (其中包括「建立訂單」(Create Order) 和「新增訂單項目」(Add Item to Order)，則可以建立這些使用案例整體和更特定部分的測試。
@@ -50,20 +50,20 @@ ms.locfileid: "67821957"
 
   - 如果開發計劃先實作使用案例的其中一個層面，再實作另一個層面，則可以在進行開發時個別啟用測試。
 
-- 設計測試時，請分開選擇測試資料與判斷是否達到後置條件的程式碼或指令碼。 例如，簡單算術函式的測試可能是：輸入 4;確認輸出會是 2。 相反地，設計為指令碼：選擇輸入;乘以本身的輸出，並確認結果是原始的輸入。 這個樣式可讓您有不同的測試輸入，而不變更測試的主體。
+- 設計測試時，請分開選擇測試資料與判斷是否達到後置條件的程式碼或指令碼。 例如，簡單算術函式的測試可能是：輸入 4；驗證輸出是 2。 而是將指令碼設計為：選擇輸入；將輸出乘上它自己，並驗證結果是原始輸入。 這個樣式可讓您有不同的測試輸入，而不變更測試的主體。
 
 #### <a name="linking-tests-to-use-cases"></a>將測試連結至使用案例
- 如果您使用[!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)]來設計和執行測試，您可以組織您的測試需求、 使用案例或使用者劇本工作項目底下。 您可以將這些工作項目連結至模型中的使用案例。 這可讓您快速追蹤測試的需求變更，並協助您追蹤每個使用案例的進度。
+ 如果您使用 [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)] 來設計和執行測試，您可以在 [需求]、[使用案例] 或 [使用者故事] 工作專案下組織測試。 您可以將這些工作項目連結至模型中的使用案例。 這可讓您快速追蹤測試的需求變更，並協助您追蹤每個使用案例的進度。
 
 ###### <a name="to-link-tests-to-a-use-case"></a>將測試連結至使用案例
 
 1. 在 [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)] 中，建立需求，並以它為測試套件的基礎。
 
-    您所建立的需求是 [!INCLUDE[vstsTfsShort](../modeling/includes/vststfsshort_md.md)] 中的工作項目。 它可能是使用者劇本、 需求或使用案例工作項目，根據您的專案使用 Team Foundation 的流程範本。 如需詳細資訊，請參閱 <<c0> [ 有關敏捷式工具和 Agile 專案管理](/azure/devops/boards/backlogs/backlogs-overview?view=vsts)。
+    您所建立的需求是 [!INCLUDE[vstsTfsShort](../modeling/includes/vststfsshort_md.md)] 中的工作項目。 這可能是使用者案例、需求或使用案例工作專案，視您的專案用於 Team Foundation 的流程範本而定。 如需詳細資訊，請參閱[關於 agile 工具和 agile 專案管理](/azure/devops/boards/backlogs/backlogs-overview?view=vsts)。
 
 2. 將需求工作項目連結至模型中的一個或多個使用案例。
 
-    在使用案例圖中，以滑鼠右鍵按一下使用案例，然後按一下**連結至工作項目**。
+    在使用案例圖中，以滑鼠右鍵按一下使用案例，然後按一下 [**連結至工作專案**]。
 
 3. 加入測試套件 (驗證使用案例的測試案例)。
 
@@ -110,7 +110,7 @@ Assert (countAfter == countBefore = 1);
 ## <a name="deriving-subsystem-tests-from-models"></a>從模型衍生子系統測試
  在大型系統的高階設計中，您可以識別元件或子系統。 這些代表可個別設計或位於不同電腦的組件，或是可以使用許多方式重新合併的可重複使用模組。
 
- 您可以將用於整個系統的相同準則套用至每個主要元件。 在大型專案中，每個元件都可以有它自己的需求模型。 在較小的專案中，可以建立架構模型或高階設計，以顯示主要元件和其互動。 如需詳細資訊，請參閱 <<c0> [ 您的應用程式架構模型](../modeling/model-your-app-s-architecture.md)。
+ 您可以將用於整個系統的相同準則套用至每個主要元件。 在大型專案中，每個元件都可以有它自己的需求模型。 在較小的專案中，可以建立架構模型或高階設計，以顯示主要元件和其互動。 如需詳細資訊，請參閱[模型應用程式的架構](../modeling/model-your-app-s-architecture.md)。
 
  在任一情況下，您都可以建立模型項目與子系統測試之間的關聯性，方法與建立需求模型與系統測試之間的關聯性相同。
 
@@ -128,7 +128,7 @@ Assert (countAfter == countBefore = 1);
 
  從測試的觀點，需求模型可以視為測試的縮寫。 因此，務必維護測試與整個專案中模型之間的關聯性。
 
-## <a name="Attaching"></a> 將測試案例附加至模型項目
+## <a name="Attaching"></a>將測試案例附加至模型專案
  如果您的專案使用 [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)]，則可以將測試連結至模型中的項目。 這可讓您快速找出需求中變更所影響的測試，並協助您追蹤已實現需求的範圍。
 
  您可以將測試連結至所有類型的項目。 以下是一些範例：
@@ -147,15 +147,15 @@ Assert (countAfter == countBefore = 1);
 
 1. 在 [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)] 中，建立需求，並以它為測試套件的基礎。
 
-    您所建立的需求是 [!INCLUDE[vstsTfsShort](../modeling/includes/vststfsshort_md.md)] 中的工作項目。 它可能是使用者劇本、 需求或使用案例工作項目，根據您的專案使用 Team Foundation 的流程範本。 如需詳細資訊，請參閱 <<c0> [ 有關敏捷式工具和 Agile 專案管理](/azure/devops/boards/backlogs/backlogs-overview?view=vsts)。
+    您所建立的需求是 [!INCLUDE[vstsTfsShort](../modeling/includes/vststfsshort_md.md)] 中的工作項目。 這可能是使用者案例、需求或使用案例工作專案，視您的專案用於 Team Foundation 的流程範本而定。 如需詳細資訊，請參閱[關於 agile 工具和 agile 專案管理](/azure/devops/boards/backlogs/backlogs-overview?view=vsts)。
 
 2. 將需求工作項目連結至模型中的一個或多個項目。
 
-    在模型圖中，以滑鼠右鍵按一下項目、 註解或關聯性，然後按一下**連結至工作項目**。
+    在模型圖中，以滑鼠右鍵按一下 [專案]、[批註] 或 [關聯性]，然後按一下 [**連結至工作專案**]。
 
 3. 加入測試套件 (驗證模型項目中所表示的需求的測試案例)。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [建立應用程式模型](../modeling/create-models-for-your-app.md)
 - [模型使用者需求](../modeling/model-user-requirements.md)

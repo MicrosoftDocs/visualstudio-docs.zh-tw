@@ -1,27 +1,27 @@
 ---
-title: 使用單一資料表繼承 LINQ to SQL 類別 (O-R 設計工具)
+title: 使用單一資料表繼承 LINQ to SQL 類別（O-R 設計工具）
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
 ms.assetid: 63bc6328-e0df-4655-9ce3-5ff74dbf69a4
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 157309d49fd46c4ecdd92236188a6739a3e9c2ad
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 7ab33c2e77de183b5c916fbcfe60843c47c4f83f
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68925406"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72648061"
 ---
-# <a name="walkthrough-create-linq-to-sql-classes-by-using-single-table-inheritance-or-designer"></a>逐步解說：使用單一資料表繼承建立 LINQ to SQL 類別 (O/R 設計工具)
-[Visual Studio 中的 LINQ to SQL 工具](../data-tools/linq-to-sql-tools-in-visual-studio2.md)支援單一資料表繼承, 因為它通常是在關聯式系統中執行。 本逐步解說會展開[如何:使用 O/R 設計](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md)工具設定繼承主題, 並提供一些實際資料來示範[!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)]中的繼承使用方式。
+# <a name="walkthrough-create-linq-to-sql-classes-by-using-single-table-inheritance-or-designer"></a>逐步解說：使用單一資料表繼承建立 LINQ to SQL 類別（O/R 設計工具）
+[Visual Studio 中的 LINQ to SQL 工具](../data-tools/linq-to-sql-tools-in-visual-studio2.md)支援單一資料表繼承，因為它通常是在關聯式系統中執行。 本逐步解說會在[如何：使用 O/R 設計工具設定繼承](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md)主題中提供的一般步驟進行擴充，並提供一些實際資料來示範如何在 [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] 中使用繼承。
 
-在此逐步解說中, 您會執行下列工作:
+在此逐步解說中，您會執行下列工作：
 
 - 建立資料庫資料表，並在其中加入資料。
 
@@ -38,11 +38,11 @@ ms.locfileid: "68925406"
 - 將資料顯示在 Windows Form 上。
 
 ## <a name="create-a-table-to-inherit-from"></a>建立要繼承的來源資料表
-若要查看繼承的運作方式, 您可以`Person`建立一個小型資料表、使用它做為基類, 然後`Employee`建立繼承自它的物件。
+若要查看繼承的運作方式，您可以建立一個小型 `Person` 資料表、使用它做為基類，然後建立繼承自它的 `Employee` 物件。
 
 ### <a name="to-create-a-base-table-to-demonstrate-inheritance"></a>若要建立用來示範繼承的基底資料表
 
-1. 在**伺服器總管**或**資料庫總管**中, 以滑鼠右鍵按一下 [**資料表]** 節點, 然後按一下 [**加入新的資料表**]。
+1. 在**伺服器總管**或**資料庫總管**中，以滑鼠右鍵按一下 [**資料表]** 節點，然後按一下 [**加入新的資料表**]。
 
     > [!NOTE]
     > 您可以使用 Northwind 資料庫，或其他可以在其中加入資料表的任何資料庫。
@@ -52,7 +52,7 @@ ms.locfileid: "68925406"
     |資料行名稱|資料類型|允許 Null|
     |-----------------|---------------|-----------------|
     |**ID**|**int**|**False**|
-    |**型別**|**int**|**True**|
+    |**Type**|**int**|**True**|
     |**FirstName**|**nvarchar(200)**|**False**|
     |**LastName**|**nvarchar(200)**|**False**|
     |**Manager**|**int**|**True**|
@@ -66,13 +66,13 @@ ms.locfileid: "68925406"
 
 ### <a name="to-add-data-to-the-table"></a>若要加入資料至資料表
 
-1. 在資料檢視中開啟資料表 (以滑鼠右鍵按一下**伺服器總管**或**資料庫總管**中的**Person**資料表, 然後按一下 [**顯示資料表資料**])。
+1. 在資料檢視中開啟資料表 （以滑鼠右鍵按一下**伺服器總管**或**資料庫總管**中的**Person**資料表，然後按一下 [**顯示資料表資料**]）。
 
-2. 將下列資料複製至資料表 (您可以將它複製並貼到資料表中, 方法是選取 [**結果**] 窗格中的整個資料列)。
+2. 將下列資料複製至資料表 （您可以將它複製並貼到資料表中，方法是選取 [**結果**] 窗格中的整個資料列）。
 
     ||||||
     |-|-|-|-|-|
-    |**ID**|**型別**|**FirstName**|**LastName**|**Manager**|
+    |**ID**|**Type**|**FirstName**|**LastName**|**Manager**|
     |**1**|**1**|**Anne**|**Wallace**|**NULL**|
     |**2**|**1**|**Carlos**|**Grilo**|**NULL**|
     |**3**|**1**|**Yael**|**Peled**|**NULL**|
@@ -91,13 +91,13 @@ ms.locfileid: "68925406"
 
 ### <a name="to-create-the-new-windows-forms-application"></a>若要建立新的 Windows Forms 應用程式
 
-1. 在 Visual Studio 的 [檔案 ] 功能表上, 選取 [**新增** > **專案**]。
+1. **在 Visual Studio 的 [檔案**] 功能表上，選取 [**新增** > **專案**]。
 
-2. 在左窗格中展開 [**視覺效果C#**  ] 或 [ **Visual Basic** ], 然後選取 [ **Windows 桌面**]。
+2. 在左窗格中展開 [**視覺效果C#**  ] 或 [ **Visual Basic** ]，然後選取 [ **Windows 桌面**]。
 
-3. 在中間窗格中, 選取 [ **Windows Forms 應用程式**] 專案類型。
+3. 在中間窗格中，選取 [ **Windows Forms 應用程式**] 專案類型。
 
-4. 將專案命名為**InheritanceWalkthrough**, 然後選擇 **[確定]** 。
+4. 將專案命名為**InheritanceWalkthrough**，然後選擇 **[確定]** 。
 
      **InheritanceWalkthrough** 專案已建立並新增至**方案總管**中。
 
@@ -109,24 +109,24 @@ ms.locfileid: "68925406"
 
 2. 按一下 [LINQ to SQL 類別] 範本，然後按一下 [新增]。
 
-     *.Dbml*檔案隨即加入至專案, 並開啟**O/R 設計**工具。
+     *.Dbml*檔案隨即加入至專案，並開啟**O/R 設計**工具。
 
 ## <a name="create-the-inheritance-by-using-the-or-designer"></a>使用 O/R 設計工具建立繼承
 設定繼承的方法是將**繼承**物件從**工具箱**拖曳至設計介面。
 
 ### <a name="to-create-the-inheritance"></a>若要建立繼承
 
-1. 在**伺服器總管**或**資料庫總管**中, 流覽至您稍早建立的**Person**資料表。
+1. 在**伺服器總管**或**資料庫總管**中，流覽至您稍早建立的**Person**資料表。
 
 2. 將 [ **Person** ] 資料表拖曳至**O/R 設計**工具設計介面。
 
-3. 將第二個 [ **Person** ] 資料表拖曳至**O/R 設計**工具, 並將其名稱變更為**Employee**。
+3. 將第二個 [ **Person** ] 資料表拖曳至**O/R 設計**工具，並將其名稱變更為**Employee**。
 
 4. 從 **Person** 物件中刪除 **Manager** 屬性。
 
 5. 從 **Employee** 物件中刪除 **Type**、**ID**、**FirstName** 和 **LastName** 屬性。 (亦即刪除 **Manager** 以外的所有屬性。)
 
-6. 從**工具箱**的 [物件關連式設計工具] 索引標籤中，在 **Person** 與 **Employee** 物件之間建立**繼承**。 若要這麼做，請按一下 [工具箱] 中的 [繼承] 項目，然後放開滑鼠按鍵。 接下來, 按一下 [ **Employee** ] 物件, 然後按一下 [ **O/R 設計**工具] 中的 [ **Person** ] 物件。 然後, 繼承線上的箭號會指向**Person**物件。
+6. 從**工具箱**的 [物件關連式設計工具] 索引標籤中，在 **Person** 與 **Employee** 物件之間建立**繼承**。 若要這麼做，請按一下 [工具箱] 中的 [繼承] 項目，然後放開滑鼠按鍵。 接下來，按一下 [ **Employee** ] 物件，然後按一下 [ **O/R 設計**工具] 中的 [ **Person** ] 物件。 然後，繼承線上的箭號會指向**Person**物件。
 
 7. 按一下設計介面上的 [繼承] 線。
 
@@ -141,7 +141,7 @@ ms.locfileid: "68925406"
 12. 建置專案。
 
 ## <a name="query-the-inherited-class-and-display-the-data-on-the-form"></a>查詢繼承的類別並將資料顯示在表單上
-您現在會將一些程式碼加入至表單, 以查詢物件模型中的特定類別。
+您現在會將一些程式碼加入至表單，以查詢物件模型中的特定類別。
 
 ### <a name="to-create-a-linq-query-and-display-the-results-on-the-form"></a>若要建立 LINQ 查詢並將結果顯示在表單上
 
@@ -185,10 +185,10 @@ ms.locfileid: "68925406"
 
 3. 關閉表單 (按一下 [偵錯] 功能表上的 [停止偵錯]。)
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [Visual Studio 中的 LINQ to SQL 工具](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [逐步解說：建立 LINQ to SQL 類別 (O-R 設計工具)](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)
 - [如何：指派用來執行更新、插入和刪除的預存程序 (O/R 設計工具)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)
 - [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)
-- [如何：在 Visual Basic 或中產生物件模型C#](/dotnet/framework/data/adonet/sql/linq/how-to-generate-the-object-model-in-visual-basic-or-csharp)
+- [如何：在 Visual Basic 或 C# 中產生物件模型](/dotnet/framework/data/adonet/sql/linq/how-to-generate-the-object-model-in-visual-basic-or-csharp)

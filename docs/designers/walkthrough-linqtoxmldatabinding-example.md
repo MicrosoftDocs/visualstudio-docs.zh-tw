@@ -3,23 +3,23 @@ title: 逐步解說：LinqToXmlDataBinding 範例
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: aedf42e8-896c-48fa-88df-7f7c9536aa69
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c99d8571480dd98726a5f1ae5772162e97e0baed
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+ms.openlocfilehash: 80503b0f14b31f787688fc78a75a4ceb974db4da
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68925740"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72634191"
 ---
 # <a name="walkthrough-linqtoxmldatabinding-example"></a>逐步解說：LinqToXmlDataBinding 範例
-此逐步解說描述 LinqToXmlDataBinding 範例，並描述其兩個主要原始程式檔 (L2DBForm.xaml  和 L2DBForm.xaml.cs  ) 一些更有趣的內容。
+此逐步解說描述 LinqToXmlDataBinding 範例，並描述其兩個主要原始程式檔 (L2DBForm.xaml 和 L2DBForm.xaml.cs) 一些更有趣的內容。
 
-## <a name="prerequisites"></a>必要條件
-在您閱讀此逐步解說前，強烈建議您建置並執行 LinqToXmlDataBinding 程式，如[如何：建置並執行 LinqToXmlDataBinding 範例](../designers/how-to-build-and-run-the-linqtoxmldatabinding-example.md)中所述。
+## <a name="prerequisites"></a>Prerequisites
+閱讀本逐步解說之前，強烈建議您建置並執行 LinqToXmlDataBinding 程式，如[如何：建置並執行 LinqToXmlDataBinding 範例](../designers/how-to-build-and-run-the-linqtoxmldatabinding-example.md)中所述。
 
 ## <a name="remarks"></a>備註
  LinqToXmlDataBinding 程式是由 C# 和 XAML 原始程式檔撰寫的 Windows Presentation Foundation (WPF) 應用程式。 該程式包含定義書籍清單以及讓使用者檢視、加入、刪除與編輯這些項目的內嵌 XML 文件， 並以下列兩個主要原始程式檔組成：
@@ -40,12 +40,12 @@ ms.locfileid: "68925740"
 
 ## <a name="in-this-section"></a>本節內容
 
-|主題|說明|
+|主題|描述|
 |-----------|-----------------|
 |[L2DBForm.xaml 來源程式碼](../designers/l2dbform-xaml-source-code.md)|包含 L2DBForm.xaml 檔案中，XAML 程式碼的內容和描述。|
 |[L2DBForm.xaml.cs 來源程式碼](../designers/l2dbform-xaml-cs-source-code.md)|包含 L2DBForm.xaml.cs 檔案中，C# 原始程式碼的內容與描述。|
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [使用 LINQ to XML 的 WPF 資料繫結範例](../designers/wpf-data-binding-using-linq-to-xml-example.md)
 - [如何：建置並執行 LinqToXmlDataBinding 範例](../designers/how-to-build-and-run-the-linqtoxmldatabinding-example.md)

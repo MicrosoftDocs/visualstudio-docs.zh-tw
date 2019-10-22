@@ -6,17 +6,17 @@ helpviewer_keywords:
 - configuration files [Visual Studio ALM], defining data sources
 - unit tests, walkthrough
 - data sources, defining with configuration files
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d6bfb122649f688ece90e981c419325564776215
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
-ms.translationtype: HT
+ms.openlocfilehash: 7ba7ee908a96675a77997902fc96cea72309b747
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66746755"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72659590"
 ---
 # <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>逐步解說：使用組態檔定義資料來源
 
@@ -32,7 +32,7 @@ ms.locfileid: "66746755"
 
 - 使用 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute> 類別存取資料來源。
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>Prerequisites
 
 若要完成這個逐步解說，您需要：
 
@@ -46,11 +46,11 @@ ms.locfileid: "66746755"
 
 1. 如果您的測試專案中已經有 *app.config* 檔案，請移至[定義自訂組態區段](#define-a-custom-configuration-section)。
 
-2. 在 [方案總管]  中，以滑鼠右鍵按一下您的測試專案，然後選取 [新增]   > [新增項目]  。
+2. 在 [方案總管]中，以滑鼠右鍵按一下您的測試專案，然後選取 [新增] > [新增項目]。
 
-     [新增項目]  視窗隨即開啟。
+     [新增項目] 視窗隨即開啟。
 
-3. 選取 [應用程式組態檔]  範本，然後按一下 [新增]  。
+3. 選取 [應用程式組態檔] 範本，然後按一下 [新增]。
 
 ## <a name="define-a-custom-configuration-section"></a>定義自訂組態區段
 
@@ -196,7 +196,7 @@ ms.locfileid: "66746755"
 
 3. 使用 `Number` 資料型別，在 `MyDataTable` 中建立兩個名為 `Arg1` 和 `Arg2` 的欄位。
 
-4. 在 `MyDataTable` 中新增五個實體，分別使用下列值作為 `Arg1` 和 `Arg2` 的值：(10,50)、(3,2)、(6,0)、(0,8) 和 (12312,1000)。
+4. 在 `MyDataTable` 中加入五個實體，分別使用下列的值做為 `Arg1` 和 `Arg2` 的值：(10,50)、(3,2)、(6,0)、(0,8) 和 (12312,1000)。
 
 5. 儲存並關閉資料庫。
 
@@ -210,7 +210,7 @@ ms.locfileid: "66746755"
 
 3. 在 `Sheet1` 中建立兩個資料行標頭，分別命名為 `Val1` 和 `Val2`。
 
-4. 在 `Sheet1` 中新增五個實體，分別使用下列的值作為 `Val1` 和 `Val2` 的值：(1,1)、(2,2)、(3,3)、(4,4) 和 (5,0)。
+4. 在 `Sheet1` 中加入五個實體，分別使用下列的值做為 `Val1` 和 `Val2` 的值：(1,1)、(2,2)、(3,3)、(4,4) 和 (5,0)。
 
 5. 儲存並關閉試算表。
 
@@ -267,7 +267,7 @@ ms.locfileid: "66746755"
 > [!IMPORTANT]
 > 部署項目 (例如資料來源)，使其能供部署目錄中的測試存取。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [對程式碼進行單元測試](../test/unit-test-your-code.md)
-- [如何：建立資料驅動的單元測試](../test/how-to-create-a-data-driven-unit-test.md)
+- [如何：建立資料驅動型單元測試](../test/how-to-create-a-data-driven-unit-test.md)

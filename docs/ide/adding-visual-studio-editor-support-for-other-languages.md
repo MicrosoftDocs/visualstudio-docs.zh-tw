@@ -11,17 +11,17 @@ helpviewer_keywords:
 - TextMate language grammar
 - language support
 ms.assetid: d78c43ee-4ef2-42e5-984e-d137de4e7e92
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ae0b2f606b4fe04ad390712f48ac1e06ff9bb86
-ms.sourcegitcommit: 283f2dbce044a18e9f6ac6398f6fc78e074ec1ed
-ms.translationtype: HT
+ms.openlocfilehash: 4e43325a6d749653c063c06f2c1c10c69f708da9
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "65805333"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72647788"
 ---
 # <a name="add-visual-studio-editor-support-for-other-languages"></a>新增其他語言的 Visual Studio 編輯器支援
 
@@ -74,7 +74,7 @@ Visual Studio 藉由使用 [TextMate 文法](https://manual.macromates.com/en/la
 
 如果適用於您的情況，在此基底路徑下，新增下列資料夾︰
 
-|資料夾名稱|說明|
+|資料夾名稱|描述|
 |-----------------|-----------------|
 |\\\<語言名稱>|語言資料夾。 將 \<語言名稱> 取代為語言的名稱。 例如 *\Matlab*。|
 |*\Syntaxes*|文法資料夾。 包含語言的文法 *.json* 檔案，例如 *Matlab.json*。|
@@ -87,7 +87,7 @@ Visual Studio 藉由使用 [TextMate 文法](https://manual.macromates.com/en/la
 
 如需如何建立 TextMate 文法的詳細資料，請參閱 [TextMate - 語言文法簡介](https://developmentality.wordpress.com/2011/02/08/textmate-introduction-to-language-grammars/) \(英文\) 和[如何為 Textmate 組合建立語言文法及自訂佈景主題的筆記](https://benparizek.com/notebook/notes-on-how-to-create-a-language-grammar-and-custom-theme-for-a-textmate-bundle) \(英文\)。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [新增語言伺服器通訊協定延伸模組](../extensibility/adding-an-lsp-extension.md)
 - [逐步解說：建立程式碼片段](../ide/walkthrough-creating-a-code-snippet.md)

@@ -13,22 +13,22 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1364ce26b4a6f54f99267ce3e1288160f75ca148
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
-ms.translationtype: HT
+ms.openlocfilehash: 4aeb28fe7fbfbaa6e2d120fe58fdc39f188367b5
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72562527"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72647508"
 ---
 # <a name="step-6-add-a-timer"></a>步驟 6：新增計時器
 接下來，您可以將 <xref:System.Windows.Forms.Timer> 控制項新增至配對遊戲。 計時器會等候指定的毫秒數，然後引發事件，稱為「刻度」。 這對於定期啟動動作或重複動作非常有用。 在這個案例中，您將使用計時器讓玩家選擇兩個圖示，如果圖示不相符，則在短時間之後再次隱藏兩個圖示。
 
 ## <a name="to-add-a-timer"></a>若要加入計時器
 
-1. 在 [Windows Forms 設計工具] 的工具箱中，選擇 [計時器] (位於 [元件] 類別)，然後選擇 **Enter** 鍵，按兩下計時器，將計時器控制項新增至表單。 計時器的圖示 (稱為 **Timer1**)，應該會顯示在表單下的空間中，如下列圖片所示。
+1. 在 [Windows Forms 設計工具] 的工具箱中，選擇 [計時器] (位於 [元件] 類別)，然後選擇 **Enter** 鍵，按兩下計時器，將計時器控制項新增至表單。 計時器的圖示（稱為**Timer1**）應會出現在表單下方的空間中，如下圖所示。
 
      ![Timer](../ide/media/express_timer.png)<br/>
-**Timer**
+***Timer***
 
     > [!NOTE]
     > 如果工具箱是空的，請確定先選取表單設計工具 (而不是選取表單的後置程式碼)，再開啟工具箱。
@@ -63,6 +63,6 @@ ms.locfileid: "72562527"
 
 ## <a name="to-continue-or-review"></a>繼續或檢視
 
-- 若要移至下一個教學課程步驟，請參閱[步驟 7：讓配對保持可見](../ide/step-7-keep-pairs-visible.md)。
+- 若要移至下一個教學課程步驟，請參閱 **[步驟7：讓配對保持可見](../ide/step-7-keep-pairs-visible.md)** 。
 
 - 若要返回上一個教學課程步驟，請參閱[步驟 5：新增標籤參考](../ide/step-5-add-label-references.md)。

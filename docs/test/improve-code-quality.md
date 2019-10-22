@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - testing tools [Visual Studio]
 - unit tests [Visual Studio]
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-author: gewarren
-ms.openlocfilehash: 153624ec6f0bdb13e4d89a92edf977d0badc7e62
-ms.sourcegitcommit: 3e74ec49a54e5c3da7631f4466128cdf4384af6b
-ms.translationtype: HT
+author: jillre
+ms.openlocfilehash: b68793e512cdb367375cc9f27d61ae5a85e4f078
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "68712222"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653272"
 ---
 # <a name="testing-tools-in-visual-studio"></a>Visual Studio 中的測試工具
 
@@ -26,7 +26,7 @@ Visual Studio 測試工具可協助您和小組開發及維持絕佳的高標準
 
 ## <a name="test-explorer"></a>測試總管
 
-[測試總管]  視窗可協助開發人員建立、管理及執行單元測試。 您可以使用 Microsoft 單元測試架構，或使用多種協力廠商架構和開放原始碼架構的其中一種。
+[測試總管] 視窗可協助開發人員建立、管理及執行單元測試。 您可以使用 Microsoft 單元測試架構，或使用多種協力廠商架構和開放原始碼架構的其中一種。
 
 ::: moniker range="vs-2017"
 ![Visual Studio 測試總管](media/devtest-testexplorer.png)

@@ -12,17 +12,17 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 136ee925f1ee7505e7058eb643d7bac3a9222c06
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 7901cf19b112b1a9d87dcae5bce594f5cc431d78
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71252366"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72633346"
 ---
 # <a name="dynamically-add-menu-items"></a>動態加入功能表項目
-您可以藉由在 Visual Studio 命令-資料表（ `DynamicItemStart` *. .vsct*）檔案中的預留位置按鈕定義上指定命令旗標，然後定義（在程式碼中）顯示和處理命令的功能表項目數目，在執行時間加入功能表項目。 載入 VSPackage 時，會以動態功能表項目取代預留位置。
+您可以藉由在 Visual Studio 命令資料表（ *. .vsct*）檔案中的預留位置按鈕定義上指定 [`DynamicItemStart` 命令] 旗標，然後定義（在程式碼中）顯示和處理命令的功能表項目數目，在執行時間加入功能表項目。 載入 VSPackage 時，會以動態功能表項目取代預留位置。
 
- Visual Studio 使用 [**最近使用**的（MRU）] 清單中的動態清單（顯示最近開啟的檔案名稱）和 [ **Windows**清單]，以顯示目前開啟的視窗名稱。   命令`DynamicItemStart`定義上的旗標會指定命令為預留位置，直到 VSPackage 開啟為止。 開啟 VSPackage 時，會將預留位置取代為在執行時間建立並加入至動態清單的0個或多個命令。 在開啟 VSPackage 之前，您可能無法看到動態清單出現在功能表上的位置。  若要填入動態清單，Visual Studio 會要求 VSPackage 尋找識別碼的命令，其第一個字元與預留位置的識別碼相同。 當 Visual Studio 找到相符的命令時，它會將命令的名稱新增至動態清單。 然後，它會遞增識別碼，並尋找另一個符合的命令來新增至動態清單，直到沒有其他動態命令為止。
+ Visual Studio 使用 [**最近使用**的（MRU）] 清單中的動態清單（顯示最近開啟的檔案名稱）和 [ **Windows**清單]，以顯示目前開啟的視窗名稱。   命令定義上的 `DynamicItemStart` 旗標會指定命令為預留位置，直到 VSPackage 開啟為止。 開啟 VSPackage 時，會將預留位置取代為在執行時間建立並加入至動態清單的0個或多個命令。 在開啟 VSPackage 之前，您可能無法看到動態清單出現在功能表上的位置。  若要填入動態清單，Visual Studio 會要求 VSPackage 尋找識別碼的命令，其第一個字元與預留位置的識別碼相同。 當 Visual Studio 找到相符的命令時，它會將命令的名稱新增至動態清單。 然後，它會遞增識別碼，並尋找另一個符合的命令來新增至動態清單，直到沒有其他動態命令為止。
 
  本逐步解說示範如何使用**方案總管**工具列上的命令，在 Visual Studio 方案中設定啟始專案。 它會使用功能表控制器，其具有作用中方案中專案的動態下拉式清單。 若要在未開啟任何解決方案或開啟的方案只有一個專案時，讓此命令不出現，則只有在方案有多個專案時，才會載入 VSPackage。
 
@@ -30,7 +30,7 @@ ms.locfileid: "71252366"
 
 ## <a name="create-an-extension-with-a-menu-command"></a>使用功能表命令建立擴充功能
 
-1. 建立名為`DynamicMenuItems`的 VSIX 專案。
+1. 建立名為 `DynamicMenuItems` 的 VSIX 專案。
 
 2. 當專案開啟時，請新增自訂命令專案範本，並將其命名為**DynamicMenu**。 如需詳細資訊，請參閱[使用功能表命令建立擴充](../extensibility/creating-an-extension-with-a-menu-command.md)功能。
 
@@ -39,7 +39,7 @@ ms.locfileid: "71252366"
 
 - 兩個命令群組，一個包含功能表控制器，另一個包含下拉式清單中的功能表項目
 
-- 一個型別為的功能表元素`MenuController`
+- @No__t_0 類型的一個 menu 元素
 
 - 兩個按鈕，一個做為功能表項目的預留位置，另一個則會提供工具列上的圖示和工具提示。
 
@@ -140,9 +140,9 @@ ms.locfileid: "71252366"
     ```
 
 ## <a name="implement-the-dynamic-menu-command"></a>執行動態功能表命令
- 您會建立繼承自<xref:Microsoft.VisualStudio.Shell.OleMenuCommand>的動態功能表命令類別。 在此實作為中，此函式會指定要用於比對命令的述詞。 您必須覆寫<xref:Microsoft.VisualStudio.Shell.OleMenuCommand.DynamicItemMatch%2A>方法，才能使用此述詞來<xref:Microsoft.VisualStudio.Shell.OleMenuCommand.MatchedCommandId%2A>設定屬性，以識別要叫用的命令。
+ 您會建立繼承自 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> 的動態功能表命令類別。 在此實作為中，此函式會指定要用於比對命令的述詞。 您必須覆寫 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.DynamicItemMatch%2A> 方法，才能使用此述詞來設定 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.MatchedCommandId%2A> 屬性，以識別要叫用的命令。
 
-1. 建立名為C# *DynamicItemMenuCommand.cs*的新類別檔案，並新增一個繼承自<xref:Microsoft.VisualStudio.Shell.OleMenuCommand>的類別，名為 DynamicItemMenuCommand：
+1. 建立名為C# *DynamicItemMenuCommand.cs*的新類別檔案，並新增一個名為**DynamicItemMenuCommand**的類別，它會繼承自 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand>：
 
     ```csharp
     class DynamicItemMenuCommand : OleMenuCommand
@@ -152,7 +152,7 @@ ms.locfileid: "71252366"
 
     ```
 
-2. 新增下列 using 語句：
+2. 新增下列 using 指示詞：
 
     ```csharp
     using Microsoft.VisualStudio.Shell;
@@ -167,7 +167,7 @@ ms.locfileid: "71252366"
 
     ```
 
-4. 加入繼承自此<xref:Microsoft.VisualStudio.Shell.OleMenuCommand>函式的函式，並指定命令處理常式<xref:Microsoft.VisualStudio.Shell.OleMenuCommand.BeforeQueryStatus>和處理常式。 加入述詞以符合命令：
+4. 加入繼承自 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> 的函式的函式，並指定命令處理常式和 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.BeforeQueryStatus> 處理常式。 加入述詞以符合命令：
 
     ```csharp
     public DynamicItemMenuCommand(CommandID rootId, Predicate<int> matches, EventHandler invokeHandler, EventHandler beforeQueryStatusHandler)
@@ -182,7 +182,7 @@ ms.locfileid: "71252366"
     }
     ```
 
-5. 覆寫<xref:Microsoft.VisualStudio.Shell.OleMenuCommand.MatchedCommandId%2A>方法，使其呼叫符合述詞並設定屬性： <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.DynamicItemMatch%2A>
+5. 覆寫 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.DynamicItemMatch%2A> 方法，使其呼叫符合述詞，並設定 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.MatchedCommandId%2A> 屬性：
 
     ```csharp
     public override bool DynamicItemMatch(int cmdId)
@@ -212,7 +212,7 @@ ms.locfileid: "71252366"
     public const uint cmdidMyCommand = 0x104;
     ```
 
-2. 在*DynamicMenu.cs*檔案中，新增下列 using 語句：
+2. 在*DynamicMenu.cs*檔案中，新增下列 using 指示詞：
 
     ```csharp
     using EnvDTE;
@@ -220,7 +220,7 @@ ms.locfileid: "71252366"
     using System.ComponentModel.Design;
     ```
 
-3. 在類別中，新增私用欄位**dte2。** `DynamicMenu`
+3. 在 `DynamicMenu` 類別中，新增私用欄位**dte2**。
 
     ```csharp
     private DTE2 dte2;
@@ -232,7 +232,7 @@ ms.locfileid: "71252366"
     private int rootItemId = 0;
     ```
 
-5. 在 DynamicMenu 的函式中，新增功能表命令。 在下一節中，我們將定義命令處理常式`BeforeQueryStatus` 、事件處理常式和 match 述詞。
+5. 在 DynamicMenu 的函式中，新增功能表命令。 在下一節中，我們將定義命令處理常式、`BeforeQueryStatus` 事件處理常式，以及 match 述詞。
 
     ```csharp
     private DynamicMenu(Package package)
@@ -261,9 +261,9 @@ ms.locfileid: "71252366"
     ```
 
 ## <a name="implement-the-handlers"></a>執行處理常式
- 若要在功能表控制器上執行動態功能表項目，您必須在按一下動態專案時處理此命令。 您也必須執行邏輯來設定功能表項目的狀態。 將處理常式新增至`DynamicMenu`類別。
+ 若要在功能表控制器上執行動態功能表項目，您必須在按一下動態專案時處理此命令。 您也必須執行邏輯來設定功能表項目的狀態。 將處理常式新增至 `DynamicMenu` 類別。
 
-1. 若要執行 [**設定啟始專案**] 命令，請新增**OnInvokedDynamicItem**事件處理常式。 它會尋找名稱與已叫用的命令文字相同的專案，並設定其在<xref:EnvDTE.SolutionBuild.StartupProjects%2A>屬性中的絕對路徑，將它設定為啟始專案。
+1. 若要執行 [**設定啟始專案**] 命令，請新增**OnInvokedDynamicItem**事件處理常式。 它會尋找名稱與已叫用的命令文字相同的專案，並藉由在 <xref:EnvDTE.SolutionBuild.StartupProjects%2A> 屬性中設定其絕對路徑，將它設定為啟始專案。
 
     ```csharp
     private void OnInvokedDynamicItem(object sender, EventArgs args)
@@ -286,7 +286,7 @@ ms.locfileid: "71252366"
     }
     ```
 
-2. `OnBeforeQueryStatusDynamicItem`加入事件處理常式。 這是在`QueryStatus`事件之前呼叫的處理常式。 它會判斷功能表項目是否為「實際」專案（也就是不是預留位置專案），以及專案是否已經核取（表示專案已經設定為啟始專案）。
+2. 新增 `OnBeforeQueryStatusDynamicItem` 事件處理常式。 這是在 `QueryStatus` 事件之前呼叫的處理常式。 它會判斷功能表項目是否為「實際」專案（也就是不是預留位置專案），以及專案是否已經核取（表示專案已經設定為啟始專案）。
 
     ```csharp
     private void OnBeforeQueryStatusDynamicItem(object sender, EventArgs args)
@@ -331,7 +331,7 @@ private bool IsValidDynamicItem(int commandId)
 ```
 
 ## <a name="set-the-vspackage-to-load-only-when-a-solution-has-multiple-projects"></a>將 VSPackage 設定為只有在方案有多個專案時才會載入
- 因為使用中的方案有多個專案，所以 [**設定啟始專案**] 命令沒有意義，因此您可以將 VSPackage 設定為只在該情況下自動載入。 您可以<xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute>搭配 UI 內容<xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids.SolutionHasMultipleProjects>一起使用。 在*DynamicMenuPackage.cs*檔案中，將下列屬性新增至 DynamicMenuPackage 類別：
+ 因為使用中的方案有多個專案，所以 [**設定啟始專案**] 命令沒有意義，因此您可以將 VSPackage 設定為只在該情況下自動載入。 您可以使用 <xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute> 搭配 UI 內容 <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids.SolutionHasMultipleProjects>。 在*DynamicMenuPackage.cs*檔案中，將下列屬性新增至 DynamicMenuPackage 類別：
 
 ```csharp
 [PackageRegistration(UseManagedResourcesOnly = true)]
@@ -356,6 +356,6 @@ public sealed class DynamicMenuItemsPackage : Package
 
 4. 當您關閉解決方案，或開啟只有一個專案的方案時，工具列圖示應該會消失。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [命令、功能表和工具列](../extensibility/internals/commands-menus-and-toolbars.md)
 - [Vspackage 如何新增使用者介面元素](../extensibility/internals/how-vspackages-add-user-interface-elements.md)

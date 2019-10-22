@@ -12,78 +12,78 @@ helpviewer_keywords:
 - records, inserting
 - saving data
 ms.assetid: ea118fff-69b1-4675-b79a-e33374377f04
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 64fc4735fd95c611dd1c2d905be6fa5b45c84664
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: aaca23e6aa81fab958fc813fa5e2331f8906a562
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66715014"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72648321"
 ---
 # <a name="insert-new-records-into-a-database"></a>在資料庫中插入新的記錄
 
-若要將新記錄插入資料庫，您可以使用`TableAdapter.Update`方法，或其中一個 TableAdapter 的 DBDirect 方法 (特別是`TableAdapter.Insert`方法)。 如需詳細資訊，請參閱 < [TableAdapter](../data-tools/create-and-configure-tableadapters.md)。
+若要將新記錄插入資料庫，您可以使用 `TableAdapter.Update` 方法或其中一個 TableAdapter 的 DBDirect 方法（特別是 `TableAdapter.Insert` 方法）。 如需詳細資訊，請參閱[TableAdapter](../data-tools/create-and-configure-tableadapters.md)。
 
-如果您的應用程式未使用 TableAdapters，您可以使用命令物件 (例如<xref:System.Data.SqlClient.SqlCommand>) 資料庫中插入新記錄。
+如果您的應用程式不使用 Tableadapter，您可以使用命令物件（例如 <xref:System.Data.SqlClient.SqlCommand>），在您的資料庫中插入新的記錄。
 
-如果您的應用程式會使用資料集來儲存資料，使用`TableAdapter.Update`方法。 `Update`方法傳送至資料庫的所有變更 （更新、 插入和刪除）。
+如果您的應用程式使用資料集來儲存資料，請使用 `TableAdapter.Update` 方法。 @No__t_0 方法會將所有變更（更新、插入和刪除）傳送到資料庫。
 
-如果您的應用程式會使用物件來儲存資料，或如果您想要在資料庫中，建立新資料錄的更細微地控制使用`TableAdapter.Insert`方法。
+如果您的應用程式使用物件來儲存資料，或如果您想要更精確地控制在資料庫中建立新的記錄，請使用 `TableAdapter.Insert` 方法。
 
-如果沒有您 TableAdapter`Insert`方法，表示可能是 TableAdapter 已設定為使用預存程序或其`GenerateDBDirectMethods`屬性設定為`false`。 嘗試設定 TableAdapter`GenerateDBDirectMethods`屬性，以`true`內**Dataset 設計工具**，然後將儲存的資料集。 這會重新產生的 TableAdapter。 TableAdapter 仍未獲`Insert`方法，資料表可能未提供足夠的結構描述資訊來區分個別資料列 （例如，有可能在資料表上的沒有主要索引鍵集）。
+如果您的 TableAdapter 沒有 `Insert` 方法，則表示 TableAdapter 已設定為使用預存程式，或其 `GenerateDBDirectMethods` 屬性設為 `false`。 嘗試將 TableAdapter 的 `GenerateDBDirectMethods` 屬性設定為從**DataSet 設計工具**內 `true`，然後儲存資料集。 這會重新產生 TableAdapter。 如果 TableAdapter 仍然沒有 `Insert` 方法，資料表可能無法提供足夠的架構資訊來區別個別的資料列（例如，資料表上可能沒有設定主鍵）。
 
-## <a name="insert-new-records-by-using-tableadapters"></a>使用 Tableadapter 中插入新的記錄
+## <a name="insert-new-records-by-using-tableadapters"></a>使用 Tableadapter 插入新記錄
 
-Tableadapter 會提供不同的方式，將新記錄插入資料庫中，根據您的應用程式的需求。
+Tableadapter 提供不同的方式，將新記錄插入資料庫中，視您應用程式的需求而定。
 
-如果您的應用程式會使用資料集來儲存資料，您只可以將新資料錄加入所需<xref:System.Data.DataTable>中的資料集，然後呼叫`TableAdapter.Update`方法。 `TableAdapter.Update`方法傳送的任何變更<xref:System.Data.DataTable>資料庫 （包括已修改和刪除記錄）。
+如果您的應用程式使用資料集來儲存資料，您可以直接將新記錄加入至資料集內所需的 <xref:System.Data.DataTable>，然後再呼叫 `TableAdapter.Update` 方法。 @No__t_0 方法會將 <xref:System.Data.DataTable> 中的任何變更傳送至資料庫（包括已修改和已刪除的記錄）。
 
-### <a name="to-insert-new-records-into-a-database-by-using-the-tableadapterupdate-method"></a>將新記錄插入資料庫，使用 TableAdapter.Update 方法
+### <a name="to-insert-new-records-into-a-database-by-using-the-tableadapterupdate-method"></a>若要使用 TableAdapter. Update 方法將新記錄插入至資料庫
 
-1. 將新記錄新增至所需<xref:System.Data.DataTable>藉由建立新<xref:System.Data.DataRow>並將它新增至<xref:System.Data.DataTable.Rows%2A>集合。
+1. 藉由建立新的 <xref:System.Data.DataRow>，並將其加入至 <xref:System.Data.DataTable.Rows%2A> 集合，將新記錄新增至所需的 <xref:System.Data.DataTable>。
 
-2. 新的資料列新增至後<xref:System.Data.DataTable>，呼叫`TableAdapter.Update`方法。 您可以控制要藉由傳入整個更新的資料量<xref:System.Data.DataSet>，則<xref:System.Data.DataTable>，陣列<xref:System.Data.DataRow>或單一<xref:System.Data.DataRow>。
+2. 將新的資料列加入至 <xref:System.Data.DataTable> 之後，請呼叫 `TableAdapter.Update` 方法。 您可以控制要更新的資料量，方法是傳入整個 <xref:System.Data.DataSet>、<xref:System.Data.DataTable>、<xref:System.Data.DataRow>s 陣列或單一 <xref:System.Data.DataRow>。
 
-   下列程式碼示範如何新增新的記錄，以<xref:System.Data.DataTable>，然後呼叫`TableAdapter.Update`方法，將新的資料列儲存到資料庫。 (這個範例會使用`Region`Northwind 資料庫中的資料表。)
+   下列程式碼會示範如何將新記錄加入至 <xref:System.Data.DataTable>，然後呼叫 `TableAdapter.Update` 方法，將新的資料列儲存至資料庫。 （此範例會使用 Northwind 資料庫中的 `Region` 資料表）。
 
    [!code-vb[VbRaddataSaving#14](../data-tools/codesnippet/VisualBasic/insert-new-records-into-a-database_1.vb)]
    [!code-csharp[VbRaddataSaving#14](../data-tools/codesnippet/CSharp/insert-new-records-into-a-database_1.cs)]
 
-### <a name="to-insert-new-records-into-a-database-by-using-the-tableadapterinsert-method"></a>將新記錄插入資料庫，使用 TableAdapter.Insert 方法
+### <a name="to-insert-new-records-into-a-database-by-using-the-tableadapterinsert-method"></a>使用 TableAdapter. Insert 方法將新記錄插入至資料庫
 
-如果您的應用程式會使用物件來儲存資料，您可以使用`TableAdapter.Insert`直接在資料庫中建立新的資料列的方法。 `Insert`方法會接受每個資料行的個別值做為參數。 呼叫此方法將新記錄插入資料庫中所傳遞的參數值。
+如果您的應用程式使用物件來儲存資料，您可以使用 `TableAdapter.Insert` 方法，直接在資料庫中建立新的資料列。 @No__t_0 方法會接受每個資料行的個別值做為參數。 呼叫方法會使用傳入的參數值，將新記錄插入資料庫中。
 
-- 呼叫 TableAdapter 的`Insert`方法，傳遞每個資料行做為參數的值。
+- 呼叫 TableAdapter 的 `Insert` 方法，傳入每個資料行的值做為參數。
 
-下列程序示範如何使用`TableAdapter.Insert`方法來插入資料列。 這個範例會將資料載入`Region`Northwind 資料庫中的資料表。
+下列程式將示範如何使用 `TableAdapter.Insert` 方法來插入資料列。 這個範例會將資料插入 Northwind 資料庫中的 `Region` 資料表。
 
 > [!NOTE]
-> 如果您沒有可用的執行個體，具現化您想要使用的 TableAdapter。
+> 如果您沒有可用的實例，請將您想要使用的 TableAdapter 具現化。
 
 [!code-vb[VbRaddataSaving#15](../data-tools/codesnippet/VisualBasic/insert-new-records-into-a-database_2.vb)]
 [!code-csharp[VbRaddataSaving#15](../data-tools/codesnippet/CSharp/insert-new-records-into-a-database_2.cs)]
 
-## <a name="insert-new-records-by-using-command-objects"></a>使用命令物件中插入新的記錄
+## <a name="insert-new-records-by-using-command-objects"></a>使用命令物件插入新記錄
 
-新的資料錄直接插入資料庫，使用命令物件。
+您可以使用命令物件，將新記錄直接插入資料庫中。
 
-### <a name="to-insert-new-records-into-a-database-by-using-command-objects"></a>將新記錄插入資料庫，使用命令物件
+### <a name="to-insert-new-records-into-a-database-by-using-command-objects"></a>若要使用命令物件將新記錄插入至資料庫
 
-- 建立新的命令物件，並將其`Connection`， `CommandType`，和`CommandText`屬性。
+- 建立新的命令物件，然後設定其 `Connection`、`CommandType` 和 `CommandText` 屬性。
 
-下列範例會示範將記錄插入至資料庫，使用命令物件。 它會插入資料至`Region`Northwind 資料庫中的資料表。
+下列範例示範如何使用 command 物件將記錄插入至資料庫。 它會將資料插入 Northwind 資料庫中的 `Region` 資料表。
 
 [!code-vb[VbRaddataSaving#16](../data-tools/codesnippet/VisualBasic/insert-new-records-into-a-database_3.vb)]
 [!code-csharp[VbRaddataSaving#16](../data-tools/codesnippet/CSharp/insert-new-records-into-a-database_3.cs)]
 
 ## <a name="net-security"></a>.NET 安全性
 
-您必須存取您嘗試連接的資料庫，以及所需的資料表執行插入的權限。
+您必須能夠存取您嘗試連接的資料庫，以及執行插入所需資料表的許可權。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [將資料儲存回資料庫](../data-tools/save-data-back-to-the-database.md)

@@ -5,17 +5,17 @@ ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.Parallel.UI
 ms.assetid: 0306dc3b-075a-4091-ac3a-96486fbabed5
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 79e1e7e48f7ed7e8cd4084805dfae2018a886a82
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d0c1ea74c1cf64252bdae201e8cc3dd529adb7cb
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63002770"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72650109"
 ---
 # <a name="parallel-activity-designer"></a>Parallel 活動設計工具
 
@@ -25,27 +25,27 @@ ms.locfileid: "63002770"
 
 <xref:System.Activities.Statements.Parallel> 活動會將它的子活動儲存在 <xref:System.Activities.Statements.Parallel.Branches%2A> 集合中。 如果某些子活動可能閒置，請使用 <xref:System.Activities.Statements.Parallel> 活動，而不是 <xref:System.Activities.Statements.Sequence> 活動。
 
-<xref:System.Activities.Statements.Parallel>活動具有<xref:System.Activities.Statements.Parallel.CompletionCondition%2A>屬性，其中包含使用者指定 Visual Basic 運算式。 在各個分支完成之後，<xref:System.Activities.Statements.Parallel> 活動會評估這個屬性。 如果評估為 **，則為 True**，然後在<xref:System.Activities.Statements.Parallel>活動完成且沒有執行其他分支。 如果<xref:System.Activities.Statements.Parallel.CompletionCondition%2A>不會評估 **，則為 True**，然後在<xref:System.Activities.Statements.Parallel>活動完成的所有子活動完成時。
+@No__t_0 活動具有 <xref:System.Activities.Statements.Parallel.CompletionCondition%2A> 屬性，其中包含使用者指定的 Visual Basic 運算式。 在各個分支完成之後，<xref:System.Activities.Statements.Parallel> 活動會評估這個屬性。 如果評估為**True**，則 <xref:System.Activities.Statements.Parallel> 活動會完成，而不會執行其他分支。 如果 <xref:System.Activities.Statements.Parallel.CompletionCondition%2A> 未評估為**True**，則 <xref:System.Activities.Statements.Parallel> 活動會在所有子活動完成時完成。
 
 ### <a name="using-the-parallel-activity-designer"></a>使用 Parallel 活動設計工具
 
-存取權**平行**中的活動設計工具**控制流程**分類**工具箱**。
+在 [工具箱] 的 [**控制流程**] 分類中，存取 [ **Parallel** ] 活動設計**工具**。
 
-**平行**活動設計工具可以從拖曳**工具箱**並放到工作流程設計工具介面，只要活動設計工具通常用來放置，比方說，內**順序**活動設計工具。 後放入工作流程設計工具，它會建立<xref:System.Activities.Statements.Parallel>活動，其中預設包含<xref:System.Activities.Activity.DisplayName%2A>的**平行**
+[ **Parallel** ] 活動設計工具可以從 [**工具箱**] 拖曳出來，放到工作流程設計工具介面上通常用來放置活動設計工具的任一處，例如在 [ **Sequence** ] 活動設計工具內。 將它放入工作流程設計工具之後，它會建立 <xref:System.Activities.Statements.Parallel> 活動，其預設會包含**平行**<xref:System.Activities.Activity.DisplayName%2A>
 
-若要加入至活動<xref:System.Activities.Statements.Parallel.Branches%2A>集合的平行活動中，從一些其他活動設計工具拖曳**工具箱**並將它放在三角形**平行**活動設計工具。 三角形與分支內包含的活動相接。 可以重複這個程序來加入其他活動。 活動可以藉由拖放內重新排列**平行**活動設計工具。
+若要將活動加入至 parallel 活動的 <xref:System.Activities.Statements.Parallel.Branches%2A> 集合，請將一些其他活動設計工具從 [工具箱] 拖曳至 [ **parallel** ] 活動設計**工具**內的三角形上。 三角形與分支內包含的活動相接。 可以重複這個程序來加入其他活動。 藉由在 [ **Parallel** ] 活動設計工具內拖放活動，即可重新排列它們。
 
 ### <a name="parallel-activity-properties-in-the-workflow-designer"></a>工作流程設計工具中的 Parallel 活動屬性
 
 下表顯示 Parallel 活動屬性，並且說明它們在設計工具中的使用方式。
 
-|屬性名稱|必要|使用量|
+|屬性名稱|必要項|使用量|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|False|指定活動設計工具在標頭中的易記顯示名稱。 預設值是**平行**。 值可以在中選擇性地編輯**屬性**方格或直接在活動設計工具標頭。|
+|<xref:System.Activities.Activity.DisplayName%2A>|False|指定活動設計工具在標頭中的易記顯示名稱。 預設值為**Parallel**。 您可以在 [**屬性**] 方格中或直接在活動設計工具標頭上，選擇性地編輯此值。|
 |<xref:System.Activities.Statements.Parallel.Branches%2A>|True|包含要執行之子活動的集合。|
-|<xref:System.Activities.Statements.Parallel.CompletionCondition%2A>|False|在分支完成後評估。 如果評估為 **，則為 True**，然後排定取消擱置中分支。 如果這個屬性未設定或是評估為**False**，在活動完成的所有子活動完成時。 預設值是**null**。|
+|<xref:System.Activities.Statements.Parallel.CompletionCondition%2A>|False|在分支完成後評估。 如果評估為**True**，則會取消已排程的擱置中分支。 如果此屬性未設定或評估為**False**，則活動會在所有子活動完成時完成。 預設值為**null**。|
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [Sequence](../workflow-designer/sequence-activity-designer.md)
 - [ParallelForEach\<T>](../workflow-designer/parallelforeach-t-activity-designer.md)

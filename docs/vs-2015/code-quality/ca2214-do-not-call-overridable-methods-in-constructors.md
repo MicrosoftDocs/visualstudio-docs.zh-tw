@@ -1,5 +1,5 @@
 ---
-title: CA2214:不要呼叫建構函式中的可覆寫方法 |Microsoft Docs
+title: CA2214：不要在函式中呼叫可覆寫的方法 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,40 +12,40 @@ helpviewer_keywords:
 - DoNotCallOverridableMethodsInConstructors
 ms.assetid: 335b57ca-a6e8-41b4-a20e-57ee172c97c3
 caps.latest.revision: 15
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 0a2e107429bb48b2bf17a625e25866a19c7781b6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 78702298bab484a95bb8108150415ec0b31ede7d
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68142416"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72662903"
 ---
-# <a name="ca2214-do-not-call-overridable-methods-in-constructors"></a>CA2214:不要呼叫建構函式中的可覆寫方法
+# <a name="ca2214-do-not-call-overridable-methods-in-constructors"></a>CA2214：不要呼叫建構函式中的可覆寫方法
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |TypeName|DoNotCallOverridableMethodsInConstructors|
 |CheckId|CA2214|
-|分類|Microsoft.Usage|
+|Category|Microsoft。使用方式|
 |中斷變更|非中斷|
 
 ## <a name="cause"></a>原因
- 非密封類型的建構函式會呼叫其類別中定義的虛擬方法。
+ 未密封類型的函式會呼叫其類別中定義的虛擬方法。
 
 ## <a name="rule-description"></a>規則描述
- 呼叫虛擬方法時，執行階段之前將不會選取實際執行方法的型別。 當建構函式呼叫虛擬方法時，就可能會叫用方法的執行個體的建構函式尚未執行。
+ 呼叫虛擬方法時，在執行時間之前，不會選取執行方法的實際類型。 當函式呼叫虛擬方法時，叫用方法之實例的函式可能尚未執行。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
- 若要修正此規則的違規情形，請勿呼叫類型的虛擬方法的型別之建構函式中。
+ 若要修正此規則的違規，請不要從類型的函式內呼叫類型的虛擬方法。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
- 請勿隱藏此規則的警告。 建構函式應該重新設計，以消除呼叫虛擬方法。
+ 請勿隱藏此規則的警告。 應重新設計此函式，以排除對虛擬方法的呼叫。
 
 ## <a name="example"></a>範例
- 下列範例會示範違反此規則的效果。 測試應用程式建立的執行個體`DerivedType`，因而導致其基底類別 (`BadlyConstructedType`) 建構函式來執行。 `BadlyConstructedType`建構函式不正確地呼叫虛擬方法`DoSomething`。 如輸出所示`DerivedType.DoSomething()`執行，並因此之前`DerivedType`的建構函式執行。
+ 下列範例示範違反此規則的效果。 測試應用程式會建立 `DerivedType` 的實例，這會造成其基類（`BadlyConstructedType`）執行程式。 `BadlyConstructedType` 的函式不正確地呼叫虛擬方法 `DoSomething`。 如輸出所示，`DerivedType.DoSomething()` 會執行，並在 `DerivedType` 的程式執行之前完成。
 
  [!code-csharp[FxCop.Usage.CtorVirtual#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.CtorVirtual/cs/FxCop.Usage.CtorVirtual.cs#1)]
  [!code-vb[FxCop.Usage.CtorVirtual#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Usage.CtorVirtual/vb/FxCop.Usage.CtorVirtual.vb#1)]
@@ -53,5 +53,5 @@ ms.locfileid: "68142416"
  此範例會產生下列輸出。
 
  **呼叫基底 ctor。** 
-**稱為衍生 DoSomething-初始化嗎？否**
+**衍生的 DoSomething 稱為-已初始化？沒有**
 **呼叫衍生的 ctor。**

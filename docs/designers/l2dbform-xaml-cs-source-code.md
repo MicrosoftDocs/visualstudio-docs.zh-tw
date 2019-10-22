@@ -1,19 +1,19 @@
 ---
-title: L2DBForm.xaml.cs 原始程式碼
+title: L2DBForm.xaml.cs Source Code
 ms.date: 11/04/2016
 ms.topic: sample
 ms.assetid: 5a40dad3-6763-4576-b3ad-874df3f2c8d9
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 12c9515cf6f4841dd1f5ebfb554e00a262b8a160
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 5bd8c4dfc19a1c5b1c4956ca24698d82d7c2f6e6
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62893134"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72635303"
 ---
 # <a name="l2dbformxamlcs-source-code"></a>L2DBForm.xaml.cs 原始程式碼
 
@@ -136,7 +136,7 @@ namespace LinqToXmlDataBinding {
 
 如需這些處理常式的相關聯 XAML 原始碼，請參閱 [L2DBForm.xaml 原始程式碼](../designers/l2dbform-xaml-source-code.md)。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [逐步解說：LinqToXmlDataBinding 範例](../designers/walkthrough-linqtoxmldatabinding-example.md)
 - [L2DBForm.xaml 來源程式碼](../designers/l2dbform-xaml-source-code.md)

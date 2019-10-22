@@ -5,17 +5,17 @@ ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.CSharp.Outlining
 - VS.ToolsOptionsPages.Text_Editor.CSharp.Advanced
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 010f2a2e6dc163f24a29e8e352b21d8ef8d72b48
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: d1d540f3a49eda22973b25a6b9a91691907efe93
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62811821"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72666282"
 ---
 # <a name="options-text-editor-c-advanced"></a>進階、C#、文字編輯器、選項
 
@@ -118,7 +118,7 @@ ms.locfileid: "62811821"
 
 ## <a name="block-structure-guides"></a>區塊結構輔助線
 
-選取這些核取方塊可在程式碼中的大括號 (**{}**) 之間顯示虛線垂直線。 然後，您可以輕鬆查看宣告層級和程式碼層級建構的個別程式碼區塊。
+選取這些核取方塊可在程式碼中的大括號 ( **{}** ) 之間顯示虛線垂直線。 然後，您可以輕鬆查看宣告層級和程式碼層級建構的個別程式碼區塊。
 
 ## <a name="editor-help"></a>編輯器說明
 
@@ -126,7 +126,7 @@ ms.locfileid: "62811821"
 
    選取此選項時，會在您鍵入 `///` 註解簡介後插入 XML 文件註解的 XML 元素。 如需有關 XML 文件的詳細資訊，請參閱 [XML 文件註解 (C# 程式設計指南)](/dotnet/csharp/programming-guide/xmldoc/xml-documentation-comments)。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [如何：在文件產生中插入 XML 註解](../../ide/reference/generate-xml-documentation-comments.md)
 - [XML 文件註解 (C# 程式設計手冊)](/dotnet/csharp/programming-guide/xmldoc/xml-documentation-comments)

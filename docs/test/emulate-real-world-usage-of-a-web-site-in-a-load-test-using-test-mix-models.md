@@ -6,15 +6,15 @@ helpviewer_keywords:
 - load model, specifying
 - load test load model, specifying
 ms.assetid: b7fae849-0538-40d1-ab35-2bb3a0fe4393
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 167dc55e5df18033a9bf16e8aa66e37db9fc6fea
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+ms.openlocfilehash: c3125a229faed10b141834565fec71e3b9f0a0d2
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68918344"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72664965"
 ---
 # <a name="test-mix-models-overview"></a>測試混合模型概觀
 
@@ -30,14 +30,14 @@ ms.locfileid: "68918344"
 
 - **按總測試數：** 判斷當虛擬使用者啟動測試反覆項目時所執行的 Web 效能或單元測試。 在負載測試結束時，特定測試回合的次數會與指派的測試分佈相符。 當您的測試混合是以 IIS 記錄或實際執行資料中的交易百分比為基礎時，請使用此測試混合模型。 如需詳細資訊，請參閱[按啟動測試的百分比](#BasedOnTestsStarted)。
 
-- **按虛擬使用者人數：** 判斷將執行特定 Web 效能或單元測試的虛擬使用者百分比。 在負載測試的任一時間點，執行特定測試的使用者人數會與指定的測試分佈相符。 當您的測試混合是以執行特定測試的使用者百分比為基礎時，請使用此測試混合模型。 如需詳細資訊，請參閱[按虛擬使用者的百分比](#PercentageBasedonVirtualUsers)。
+- **按虛擬使用者人數：** 判斷將執行特定 Web 效能或單元測試之虛擬使用者的百分比。 在負載測試的任一時間點，執行特定測試的使用者人數會與指定的測試分佈相符。 當您的測試混合是以執行特定測試的使用者百分比為基礎時，請使用此測試混合模型。 如需詳細資訊，請參閱[按虛擬使用者的百分比](#PercentageBasedonVirtualUsers)。
 
 - **按使用者步調：** 在負載測試進行期間，每個 Web 效能測試或單元測試會在每小時內針對每位使用者執行指定的次數。 當您想要讓虛擬使用者在整個負載測試中以特定步調執行測試時，請使用此測試混合模型。 如需詳細資訊，請參閱[步調測試混合](#PacingTestMix)。
 
     > [!TIP]
     > 選擇**百分比測試混合**和**按虛擬使用者的百分比**的時機為何？ 當測試混合中某些測試的持續期間比其他測試長很多時，這兩個選擇間的差異就很重要。 在這種情況下，您可能應該選擇**按虛擬使用者的百分比**。 當太多使用者會執行長時間測試的可能性增高時，這個選擇有助於避免這類的測試回合。 然而，當測試都具有差不多的持續期間時，選擇**百分比測試混合**就可以較為放心。
 
-- **循序順序：** 每位虛擬使用者都會按照情節中定義測試的順序來執行 Web 效能或單元測試。 虛擬使用者會繼續按照此順序進行測試循環，直到負載測試完成為止。 如需詳細資訊，請參閱[循序順序](#SequentialOrder)。
+- **依據循序順序：** 每位虛擬使用者都會按照情節中定義測試的順序來執行 Web 效能或單元測試。 虛擬使用者會繼續按照此順序進行測試循環，直到負載測試完成為止。 如需詳細資訊，請參閱[循序順序](#SequentialOrder)。
 
 ### <a name="BasedOnTestsStarted"></a> 按啟動測試的百分比
 
@@ -66,20 +66,20 @@ ms.locfileid: "68918344"
 
 如果使用步調測試混合模型，負載測試執行階段引擎會保證啟動測試的實際比率會小於或等於指定比率。 當測試執行太久而無法完成指派數目時，就會傳回錯誤。
 
-使用步調測試混合時，[測試反覆項目間的考慮時間]  設定並不適用。
+使用步調測試混合時，[測試反覆項目間的考慮時間] 設定並不適用。
 
 #### <a name="apply-distribution-to-pacing-delay"></a>將分佈套用到步調延遲
-負載測試情節中的 [將分佈套用到步調延遲]  屬性值可以設定為 true 或 false：
+負載測試情節中的 [將分佈套用到步調延遲] 屬性值可以設定為 true 或 false：
 
-- **True**：情節會套用 [編輯測試混合]  對話方塊中 [按每使用者每小時測試]  欄位值指定的一般統計分佈延遲。 如需詳細資訊，請參閱[編輯測試混合模型以指定虛擬使用者執行測試的可能性](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md)。
+- **True**：情節將套用 [編輯測試混合] 對話方塊中 [按每使用者每小時測試] 欄位的值所指定的一般統計散發延遲。 如需詳細資訊，請參閱[編輯測試混合模型以指定虛擬使用者執行測試的可能性](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md)。
 
-   例如，假設您在 [編輯測試混合]  對話方塊中將測試的 [按每使用者每小時測試]  值設定為每小時 2 位使用者。 如果 [將分佈套用到步調延遲]  屬性設定為 [True]  ，則一般統計散發延遲會套用至測試之間的等待時間。 測試仍然會每小時執行 2 項測試，但是 2 項測試之間不一定會有 30 分鐘間隔。 第一項測試可能在 4 分鐘後執行，而第二項測試在 45 分鐘後執行。
+   例如，假設您在 [編輯測試混合] 對話方塊中將測試的 [按每使用者每小時測試] 值設定為每小時 2 位使用者。 如果 [將分佈套用到步調延遲] 屬性設定為 [True]，則一般統計散發延遲會套用至測試之間的等待時間。 測試仍然會每小時執行 2 項測試，但是 2 項測試之間不一定會有 30 分鐘間隔。 第一項測試可能在 4 分鐘後執行，而第二項測試在 45 分鐘後執行。
 
-- **False**：測試會依照您為 [編輯測試混合]  對話方塊中 [按每使用者每小時測試]  欄位值指定的特定步調按每使用者每小時測試執行。 如需詳細資訊，請參閱[編輯測試混合模型以指定虛擬使用者執行測試的可能性](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md)。
+- **False**：測試將依照您在 [編輯測試混合] 對話方塊的 [按每使用者每小時測試] 欄位中指定的值作為執行特定步調。 如需詳細資訊，請參閱[編輯測試混合模型以指定虛擬使用者執行測試的可能性](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md)。
 
-   例如，假設您在 [編輯測試混合]  對話方塊中將測試的 [按每使用者每小時測試]  值設定為每小時 2 位使用者。 如果 [將分佈套用到步調延遲]  屬性設定為 [False]  ，則測試執行時基本上不會有任何延遲。 測試將會每 30 分鐘執行。 這樣可確保每小時執行 2 項測試。
+   例如，假設您在 [編輯測試混合] 對話方塊中將測試的 [按每使用者每小時測試] 值設定為每小時 2 位使用者。 如果 [將分佈套用到步調延遲] 屬性設定為 [False]，則測試執行時基本上不會有任何延遲。 測試將會每 30 分鐘執行。 這樣可確保每小時執行 2 項測試。
 
-  如需詳細資訊，請參閱[如何：在以使用者步調測試混合模型時，將分佈套用到步調延遲](../test/how-to-apply-distribution-to-pacing-delay-when-using-a-user-pace-test-mix-model.md)。
+  如需詳細資訊，請參閱[如何：在使用使用者步調測試混合模型時，將分佈套用到步調延遲](../test/how-to-apply-distribution-to-pacing-delay-when-using-a-user-pace-test-mix-model.md)。
 
 ### <a name="SequentialOrder"></a> 循序順序
 選取 [依據循序測試順序] 選項，可讓每個虛擬使用者按測試的定義順序，執行情節中的所有測試。
@@ -102,7 +102,7 @@ ms.locfileid: "68918344"
 
 - 情節屬性 [新使用者的百分比] 中定義的新使用者，一定要執行初始化測試、測試混合中的一個測試反覆項目，以及結束測試。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [編輯測試混合模型以指定虛擬使用者執行測試的可能性](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md)
 - [編輯負載模式以模型化虛擬使用者活動](../test/edit-load-patterns-to-model-virtual-user-activities.md)

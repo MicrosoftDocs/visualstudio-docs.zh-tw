@@ -1,5 +1,5 @@
 ---
-title: 作法：設定 ASP.NET Web 應用程式的程式碼分析 |Microsoft Docs
+title: 如何：設定 ASP.NET Web 應用程式的程式碼分析 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -8,41 +8,41 @@ f1_keywords:
 - vs.codeanalysis.propertypages.asp
 ms.assetid: b3000b31-fd9d-489e-81a2-a4bee49453ba
 caps.latest.revision: 15
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 8e75f5a584dd0522240f8b4d45cb28107bca38e3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 423264362118343d573b417cd055d2d722df995e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68201387"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72657455"
 ---
-# <a name="how-to-configure-code-analysis-for-an-aspnet-web-application"></a>作法：設定 ASP.NET Web 應用程式的程式碼分析
+# <a name="how-to-configure-code-analysis-for-an-aspnet-web-application"></a>如何：設定 ASP.NET Web 應用程式的程式碼分析
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-在 [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)]及[!INCLUDE[vsUltShort](../includes/vsultshort-md.md)]您可以從程式碼分析的清單中選取*規則集*要套用至[!INCLUDE[vstecasp](../includes/vstecasp-md.md)]Web 應用程式。 預設規則設為 Microsoft Mininimum 建議規則。 您可以選取要套用至網站所設定的另一個規則。  
-  
-### <a name="to-configure-a-rule-set-for-an-aspnet-page-framework-project"></a>若要設定 ASP.NET 網頁架構專案的規則集  
-  
-1. 選取網站中**方案總管 中**。  
-  
-2. 在 **分析**功能表上，按一下**設定網站的程式碼分析**。  
-  
-3. 如果您選取的方案，方案中有一個以上的專案，請選取組建組態和目標的作業系統從**組態**並**平台**列出。  
-  
-4. 在方案中每個專案，請按一下**規則集**資料行，然後按一下 規則名稱設為執行。  
-  
-5. 根據預設，方案中的所有專案上執行的程式碼分析。 若要停用或啟用特定專案的程式碼分析，請遵循下列步驟：  
-  
-    1. 以滑鼠右鍵按一下專案名稱，然後按一下 屬性。  
-  
-    2. 請選取或清除**啟用程式碼分析**核取方塊。 您也可以執行程式碼分析以手動方式選取**網站上執行程式碼分析**從**分析**功能表。  
-  
-6. 在 **執行此規則集**下拉式清單中，請遵循下列步驟：  
-  
-    - 選取您想要使用的規則集。  
-  
-    - 選取  **\<瀏覽 >** ，指定現有的自訂規則集不在清單中。  
-  
-    - 定義自訂規則集。 如需詳細資訊，請參閱 <<c0> [ 建立自訂規則集](../code-quality/creating-custom-code-analysis-rule-sets.md)。
+在 [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] 和 [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)] 中，您可以從程式碼分析*規則集*清單中選取要套用至 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Web 應用程式。 預設規則集是 Microsoft 最低建議的規則。 您可以選取另一個要套用至網站的規則集。
+
+### <a name="to-configure-a-rule-set-for-an-aspnet-page-framework-project"></a>若要設定 ASP.NET 網頁架構專案的規則集
+
+1. 在 **方案總管**中選取網站。
+
+2. 在 [**分析**] 功能表上，按一下 [**設定網站的程式碼分析**]。
+
+3. 如果您選取解決方案，而且解決方案有一個**以上的專案**，請從 [設定] 和 [**平臺**] 清單中選取 [組建設定] 和 [目標作業系統]。
+
+4. 針對方案中的每個專案，按一下 [**規則集**] 資料行，然後按一下要執行之規則集的名稱。
+
+5. 根據預設，程式碼分析會在方案中的所有專案上執行。 若要停用或啟用特定專案的程式碼分析，請遵循下列步驟：
+
+    1. 以滑鼠右鍵按一下專案名稱，然後按一下 [屬性]。
+
+    2. 勾選或清除 [**啟用程式碼分析**] 核取方塊。 您也可以從 [**分析**] 功能表選取 [**在網站上執行程式碼分析**]，以手動方式執行程式碼分析。
+
+6. 在 [**執行此規則集**] 下拉式清單中，依照下列步驟執行：
+
+    - 選取您想要使用的規則集。
+
+    - 選取 [ **\<Browse] >** ，指定不在清單中的現有自訂規則集。
+
+    - 定義自訂規則集。 如需詳細資訊，請參閱[建立自訂規則集](../code-quality/creating-custom-code-analysis-rule-sets.md)。

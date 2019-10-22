@@ -6,115 +6,110 @@ ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.assetid: 41981ad6-673e-492e-b739-9863b14157b1
 caps.latest.revision: 26
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 8c0158370ceb101e8c6934f92e2dd3e8689254c5
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 0e86364641b477c7b4d8d919cb78afb925f7c27e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65686306"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72660509"
 ---
 # <a name="making-coded-ui-tests-wait-for-specific-events-during-playback"></a>讓自動程式化 UI 測試在播放期間等候特定事件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-在自動程式化 UI 測試播放中，您可以指示測試等待發生特定事件 (例如出現視窗、進度列消失等)。 若要這樣做，請使用下表所述的適當 UITestControl.WaitForControlXXX() 方法。 如需使用 <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlEnabled%2A> 方法等待啟用控制項的自動程式化 UI 測試範例，請參閱[逐步解說：建立、編輯及維護自動程式化 UI 測試](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)。  
-  
- **需求**  
-  
- Visual Studio 企業版  
-  
+在自動程式化 UI 測試播放中，您可以指示測試等待發生特定事件 (例如出現視窗、進度列消失等)。 若要這樣做，請使用下表所述的適當 UITestControl.WaitForControlXXX() 方法。 如需使用 <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlEnabled%2A> 方法等待啟用控制項的自動程式化 UI 測試範例，請參閱[逐步解說：建立、編輯和維護自動程式化 UI 測試](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)。
+
+ **Requirements**
+
+ Visual Studio 企業版
+
 > [!TIP]
-> 您也可以使用自動程式化 UI 測試編輯器，以新增動作之前的延遲。 如需詳細資訊，請參閱[如何：使用自動程式化的 UI 測試編輯器，在 UI 動作前插入延遲](https://msdn.microsoft.com/library/509f8ef7-e105-4049-b11b-d64549e055b0)。  
-  
- **UITestControl.WaitForControlXXX() 方法**  
-  
- <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlReady%2A>  
-  
- 等候控制項準備好接受滑鼠和鍵盤輸入。 引擎會先針對所有等待控制項備妥的動作，隱含地呼叫這個 API，然後再進行任何作業。 不過，在某些罕見的情況下，您可能必須執行明確呼叫。  
-  
- <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlEnabled%2A>  
-  
- 當精靈藉由呼叫伺服器來執行輸入的一些非同步驗證時，等候啟用控制項。 例如，您可以命令方法等候精靈的 [下一步] 按鈕啟用 ()。 如需這個方法的範例，請參閱[逐步解說：建立、編輯及維護自動程式化 UI 測試](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)。  
-  
- <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlExist%2A>  
-  
- 等候要出現在 UI 上的控制項。 比方說，在應用程式完成參數驗證後，您預期會出現錯誤對話方塊。 驗證所花費的時間是變數。 您可以使用這個方法來等候錯誤對話方塊。  
-  
- <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlNotExist%2A>  
-  
- 等候控制項從 UI 消失。 例如，您可以等候進度列消失。  
-  
- <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlPropertyEqual%2A>  
-  
- 等候控制項的指定屬性具有給定值。 例如，等候狀態文字變更為 [完成]。  
-  
- <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlPropertyNotEqual%2A>  
-  
- 等候控制項的指定屬性具有指定值的相反值。 例如，您等候編輯方塊變成非唯讀狀態，亦即可供您進行編輯。  
-  
- <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlCondition%2A>  
-  
- 等候指定的述詞傳回 `true`。 這可以用於指定控制項上的複雜等候作業 (例如 OR 條件)。 例如，您可以等到狀態文字變成 [成功] 或 [失敗]，如下列程式碼所示：  
-  
-```csharp  
-  
-// Define the method to evaluate the condition   
-private static bool IsStatusDone(UITestControl control)   
-{   
-    WinText statusText = control as WinText;   
-    return statusText.DisplayText == "Succeeded" || statusText.DisplayText == "Failed";   
-}   
-  
-// In test method, wait till the method evaluates to true   
-statusText.WaitForControlCondition(IsStatusDone);  
-  
-```  
-  
- <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForCondition%2A>  
-  
- 所有先前的方法都是 UITestControl 的執行個體方法。 此方法是靜態方法。 這個方法也會等候指定的述詞成為 `true`，但可用於多個控制項上的複雜等候作業 (例如 OR 條件)。 例如，您可以等到狀態文字變成 [成功] 或直到出現錯誤訊息，如下列程式碼所示：  
-  
-```csharp  
-  
-// Define the method to evaluate the condition   
-private static bool IsStatusDoneOrError(UITestControl[] controls)   
-{   
-    WinText statusText = controls[0] as WinText;   
-    WinWindow errorDialog = controls[1] as WinWindow;   
-    return statusText.DisplayText == "Succeeded" || errorDialog.Exists;   
-}   
-  
-// In test method, wait till the method evaluates to true   
-UITestControl.WaitForCondition<UITestControl[]>(new UITestControl[] { statusText, errorDialog }, IsStatusDoneOrError);  
-  
-```  
-  
- 所有這些方法都具有下列行為：  
-  
- 如果等候成功，方法會傳回 true；如果等候失敗則傳回 false。  
-  
- 等候作業的隱含逾時是由 <xref:Microsoft.VisualStudio.TestTools.UITesting.PlaybackSettings.WaitForReadyTimeout%2A> 屬性指定。 此屬性的預設值是 60000 毫秒 (一分鐘)。  
-  
- 方法具有可採用明確逾時 (以毫秒為單位) 的多載。 不過，當等候作業導致控制項的隱含搜尋，或當應用程式忙碌時，實際的等候時間可能會超過指定的逾時。  
-  
- 先前的函式功能強大且具有彈性，且幾乎可滿足所有條件。 不過，萬一這些方法無法滿足您的需求，而且您需要在程式碼中編碼 <xref:Microsoft.VisualStudio.TestTools.UITesting.Playback.Wait%2A> 或 <xref:System.Threading.Thread.Sleep%2A> 時，建議您使用 Playback.Wait() 而非 Thread.Sleep() API。 這樣做的原因是：  
-  
- 您可以使用  <xref:Microsoft.VisualStudio.TestTools.UITesting.PlaybackSettings.ThinkTimeMultiplier%2A> 屬性以修改睡眠的持續時間。 根據預設，此變數是 1，但是您可以增加或減少以變更整個程式碼的等候時間。 例如，如果您要特意透過慢速網路測試，或處於某些效能較慢的情況中，您可以在某個位置上將這個變數 (或甚至在組態檔中) 變為 1.5，在所有位置額外增加 50%。  
-  
- 檢查使用者取消\中斷作業時，Playback.Wait() 會在 for 迴圈的較小區塊中內部呼叫 Thread.Sleep() (在上述計算後)。 換句話說，Playback.Wait() 可讓您在等候結束，且睡眠無法或擲回例外狀況之前，取消播放。  
-  
+> 您也可以使用自動程式化 UI 測試編輯器，以新增動作之前的延遲。 如需詳細資訊，請參閱[如何：使用自動程式化 UI 測試編輯器，在 UI 動作前插入延遲](https://msdn.microsoft.com/library/509f8ef7-e105-4049-b11b-d64549e055b0)。
+
+ **UITestControl.WaitForControlXXX() 方法**
+
+ <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlReady%2A>
+
+ 等候控制項準備好接受滑鼠和鍵盤輸入。 引擎會先針對所有等待控制項備妥的動作，隱含地呼叫這個 API，然後再進行任何作業。 不過，在某些罕見的情況下，您可能必須執行明確呼叫。
+
+ <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlEnabled%2A>
+
+ 當精靈藉由呼叫伺服器來執行輸入的一些非同步驗證時，等候啟用控制項。 例如，您可以命令方法等候精靈的 [下一步] 按鈕啟用 ()。 如需此方法的範例，請參閱[逐步解說：建立、編輯和維護自動程式化 UI 測試](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)。
+
+ <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlExist%2A>
+
+ 等候要出現在 UI 上的控制項。 比方說，在應用程式完成參數驗證後，您預期會出現錯誤對話方塊。 驗證所花費的時間是變數。 您可以使用這個方法來等候錯誤對話方塊。
+
+ <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlNotExist%2A>
+
+ 等候控制項從 UI 消失。 例如，您可以等候進度列消失。
+
+ <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlPropertyEqual%2A>
+
+ 等候控制項的指定屬性具有給定值。 例如，等候狀態文字變更為 [完成]。
+
+ <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlPropertyNotEqual%2A>
+
+ 等候控制項的指定屬性具有指定值的相反值。 例如，您等候編輯方塊變成非唯讀狀態，亦即可供您進行編輯。
+
+ <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlCondition%2A>
+
+ 等候指定的述詞傳回 `true`。 這可以用於指定控制項上的複雜等候作業 (例如 OR 條件)。 例如，您可以等到狀態文字變成 [成功] 或 [失敗]，如下列程式碼所示：
+
+```csharp
+
+// Define the method to evaluate the condition
+private static bool IsStatusDone(UITestControl control)
+{
+    WinText statusText = control as WinText;
+    return statusText.DisplayText == "Succeeded" || statusText.DisplayText == "Failed";
+}
+
+// In test method, wait till the method evaluates to true
+statusText.WaitForControlCondition(IsStatusDone);
+
+```
+
+ <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForCondition%2A>
+
+ 所有先前的方法都是 UITestControl 的執行個體方法。 此方法是靜態方法。 這個方法也會等候指定的述詞成為 `true`，但可用於多個控制項上的複雜等候作業 (例如 OR 條件)。 例如，您可以等到狀態文字變成 [成功] 或直到出現錯誤訊息，如下列程式碼所示：
+
+```csharp
+
+// Define the method to evaluate the condition
+private static bool IsStatusDoneOrError(UITestControl[] controls)
+{
+    WinText statusText = controls[0] as WinText;
+    WinWindow errorDialog = controls[1] as WinWindow;
+    return statusText.DisplayText == "Succeeded" || errorDialog.Exists;
+}
+
+// In test method, wait till the method evaluates to true
+UITestControl.WaitForCondition<UITestControl[]>(new UITestControl[] { statusText, errorDialog }, IsStatusDoneOrError);
+
+```
+
+ 所有這些方法都具有下列行為：
+
+ 如果等候成功，方法會傳回 true；如果等候失敗則傳回 false。
+
+ 等候作業的隱含逾時是由 <xref:Microsoft.VisualStudio.TestTools.UITesting.PlaybackSettings.WaitForReadyTimeout%2A> 屬性指定。 此屬性的預設值是 60000 毫秒 (一分鐘)。
+
+ 方法具有可採用明確逾時 (以毫秒為單位) 的多載。 不過，當等候作業導致控制項的隱含搜尋，或當應用程式忙碌時，實際的等候時間可能會超過指定的逾時。
+
+ 先前的函式功能強大且具有彈性，且幾乎可滿足所有條件。 不過，萬一這些方法無法滿足您的需求，而且您需要在程式碼中編碼 <xref:Microsoft.VisualStudio.TestTools.UITesting.Playback.Wait%2A> 或 <xref:System.Threading.Thread.Sleep%2A> 時，建議您使用 Playback.Wait() 而非 Thread.Sleep() API。 這樣做的原因是：
+
+ 您可以使用  <xref:Microsoft.VisualStudio.TestTools.UITesting.PlaybackSettings.ThinkTimeMultiplier%2A> 屬性以修改睡眠的持續時間。 根據預設，此變數是 1，但是您可以增加或減少以變更整個程式碼的等候時間。 例如，如果您要特意透過慢速網路測試，或處於某些效能較慢的情況中，您可以在某個位置上將這個變數 (或甚至在組態檔中) 變為 1.5，在所有位置額外增加 50%。
+
+ 檢查使用者取消\中斷作業時，Playback.Wait() 會在 for 迴圈的較小區塊中內部呼叫 Thread.Sleep() (在上述計算後)。 換句話說，Playback.Wait() 可讓您在等候結束，且睡眠無法或擲回例外狀況之前，取消播放。
+
 > [!TIP]
-> 自動程式碼 UI 測試編輯器可讓您輕鬆地修改自動程式碼 UI 測試。 您可以使用自動程式碼 UI 測試編輯器，尋找、檢視和編輯您的測試方法。 您也可以在 UI 控制項對應中編輯 UI 動作和其相關聯控制項。 如需詳細資訊，請參閱[使用自動程式化 UI 測試編輯器來編輯自動程式化 UI 測試](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md)。  
-  
- **指引**  
-  
- 如需詳細資訊，請參閱[Testing for Continuous Delivery with Visual Studio 2012 – 第 5 章：自動化系統測試](http://go.microsoft.com/fwlink/?LinkID=255196)  
-  
-## <a name="see-also"></a>另請參閱  
- [使用使用者介面自動化來測試您的程式碼](../test/use-ui-automation-to-test-your-code.md)   
- [建立自動程式化 UI 測試](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate)   
- [逐步解說：建立、 編輯和維護自動程式化的 UI 測試](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)   
- [自動程式化 UI 測試的結構](../test/anatomy-of-a-coded-ui-test.md)   
- [自動程式化 UI 測試和動作記錄的支援組態和平台](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)   
- [如何：使用自動程式化的 UI 測試編輯器，在 UI 動作前插入延遲](https://msdn.microsoft.com/library/509f8ef7-e105-4049-b11b-d64549e055b0)
+> 自動程式碼 UI 測試編輯器可讓您輕鬆地修改自動程式碼 UI 測試。 您可以使用自動程式碼 UI 測試編輯器，尋找、檢視和編輯您的測試方法。 您也可以在 UI 控制項對應中編輯 UI 動作和其相關聯控制項。 如需詳細資訊，請參閱[使用自動程式化 UI 測試編輯器來編輯自動程式化 UI 測試](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md)。
+
+ **指引**
+
+ 如需詳細資訊，請參閱[使用 Visual Studio 2012 測試持續傳遞 – 第 5 章：自動化系統測試 (英文)](http://go.microsoft.com/fwlink/?LinkID=255196)
+
+## <a name="see-also"></a>請參閱
+ [使用 UI 自動化來測試您的程式碼](../test/use-ui-automation-to-test-your-code.md)[建立](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate)自動程式化 ui 測試[逐步解說：建立、編輯和維護](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)自動程式化 UI 測試的自動程式化 ui 測試[剖析](../test/anatomy-of-a-coded-ui-test.md)[支援自動程式化 ui 測試和動作的設定和平臺錄製](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)[如何：使用自動程式化 Ui 測試編輯器，在 UI 動作前插入延遲](https://msdn.microsoft.com/library/509f8ef7-e105-4049-b11b-d64549e055b0)

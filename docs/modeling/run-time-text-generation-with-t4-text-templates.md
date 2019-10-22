@@ -10,25 +10,25 @@ helpviewer_keywords:
 - TextTemplatingFilePreprocessor custom tool
 - text templates, TransformText() method
 - text templates, generating files at run time
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 050af194c9fbdcabf99a880a0e9c5c4bf8913a3a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e1ee422ec549ced0995db22258edf9ef21540804
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62823940"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72660314"
 ---
 # <a name="run-time-text-generation-with-t4-text-templates"></a>使用 T4 文字範本在執行階段產生文字
 
-您可以使用 Visual Studio 執行階段文字範本，在您的應用程式在執行階段產生文字字串。 執行應用程式的電腦沒有安裝 Visual Studio。 執行階段範本有時稱為 「 前置處理過的文字範本 」 因為在編譯時期，範本會產生在執行階段執行的程式碼。
+您可以使用 Visual Studio 執行時間文字模板，在執行時間于應用程式中產生文字字串。 應用程式執行所在的電腦不一定要有 Visual Studio。 執行時間範本有時稱為「前置處理過的文字模板」，因為在編譯時期，範本會產生在執行時間執行的程式碼。
 
-每個範本是文字的混合，因為它會出現在產生的字串，以及的程式碼片段。 程式片段提供值的字串，變動的組件，並控制條件式和重複的組件。
+每個範本都會混合文字，因為它會出現在產生的字串中，以及程式碼的片段。 程式片段會提供字串變數部分的值，也會控制條件式和重複的部分。
 
-例如，下列範本可用的應用程式，會建立一份 HTML 報告。
+例如，您可以在建立 HTML 報表的應用程式中使用下列範本。
 
 ```html
 <#@ template language="C#" #>
@@ -45,26 +45,26 @@ This report is Company Confidential.
 </body></html>
 ```
 
-請注意，範本中變數的組件已取代為程式碼的 HTML 網頁。 藉由撰寫靜態 HTML 網頁的原型，您就可以開始這類頁面的設計。 您無法取代的資料表和其他變動的組件從一個的情況下產生不同的內容，到下一個程式碼。
+請注意，此範本是 HTML 網頁，其中變數部分已被程式碼取代。 您可以藉由撰寫 HTML 網頁的靜態原型，開始設計這類頁面。 然後，您可以使用程式碼來取代資料表和其他變數部分，以產生不同于下一次的內容。
 
-在您的應用程式會使用範本很容易比，比方說，長序列中寫入陳述式，請參閱輸出的最後格式。 對輸出的表單中的變更會更方便且更可靠。
+在您的應用程式中使用範本，可讓您更輕鬆地查看輸出的最終形式，而不像在中一樣，例如，一系列長串的 write 語句。 對輸出的形式進行變更比較容易且更可靠。
 
-## <a name="creating-a-run-time-text-template-in-any-application"></a>在任何應用程式中建立執行階段文字範本
+## <a name="creating-a-run-time-text-template-in-any-application"></a>在任何應用程式中建立執行時間文字模板
 
-### <a name="to-create-a-run-time-text-template"></a>若要建立執行階段文字範本
+### <a name="to-create-a-run-time-text-template"></a>若要建立執行時間文字模板
 
-1. 在 [方案總管] 中，您的專案的捷徑功能表上選擇**新增** > **新項目**。
+1. 在方案總管中，于專案的快捷方式功能表上，選擇 [**加入** > **新專案**]。
 
-2. 在 **加入新項目**對話方塊中，選取**執行階段文字範本**。 (在 Visual Basic 中查看底下**常見的項目** > **一般**。)
+2. 在 [**加入新專案**] 對話方塊中，選取 [**執行時間文字模板**]。 （在 Visual Basic 查看 [一般**專案**]  >  **[一般**]）。
 
-3. 輸入您的範本檔案的名稱。
+3. 輸入範本檔案的名稱。
 
     > [!NOTE]
-    > 範本檔案名稱將用於做為產生的程式碼中的類別名稱。 因此，它應該沒有空格或標點符號。
+    > 範本檔案名將會在產生的程式碼中用來做為類別名稱。 因此，它不應該有空格或標點符號。
 
 4. 選擇 [新增]。
 
-    會建立新的檔案副檔名 **.tt**。 其**自訂工具**屬性設定為**TextTemplatingFilePreprocessor**。 它包含下列幾行：
+    會建立副檔名為**tt**的新檔案。 其 [**自訂工具**] 屬性設為 [ **TextTemplatingFilePreprocessor**]。 其中包含下列幾行：
 
     ```
     <#@ template language="C#" #>
@@ -74,40 +74,40 @@ This report is Company Confidential.
     <#@ import namespace="System.Collections.Generic" #>
     ```
 
-## <a name="converting-an-existing-file-to-a-run-time-template"></a>將現有的檔案轉換成執行階段範本
+## <a name="converting-an-existing-file-to-a-run-time-template"></a>將現有的檔案轉換成執行時間範本
 
-若要建立範本的好方法是輸出的將轉換現有範例。 比方說，如果您的應用程式會在產生的 HTML 檔案，您可以開始建立簡單的 HTML 檔案。 請確定它是否運作正常，而且它的外觀正確。 然後將其併入您的 Visual Studio 專案，並將它轉換成範本。
+建立範本的好方法是轉換現有的輸出範例。 例如，如果您的應用程式會產生 HTML 檔案，您可以從建立純文字 HTML 檔案開始。 請確定它能正常運作，而且其外觀正確。 然後將它包含在您的 Visual Studio 專案中，並將它轉換為範本。
 
-### <a name="to-convert-an-existing-text-file-to-a-run-time-template"></a>若要將現有的文字檔轉換成執行階段範本
+### <a name="to-convert-an-existing-text-file-to-a-run-time-template"></a>若要將現有的文字檔轉換成執行時間範本
 
-1. 將該檔案包含 Visual Studio 專案。 在 [方案總管] 中，在專案的捷徑功能表上選擇**新增** > **現有項目**。
+1. 將檔案包含在您的 Visual Studio 專案中。 在方案總管中，于專案的快捷方式功能表上，選擇 [**加入** > **現有專案**]。
 
-2. 設定檔案的**自訂工具**屬性設**TextTemplatingFilePreprocessor**。 在 [方案總管] 中，檔案的捷徑功能表上選擇**屬性**。
+2. 將檔案的 [**自訂工具**] 屬性設為**TextTemplatingFilePreprocessor**。 在方案總管的檔案快捷方式功能表上，選擇 [**屬性**]。
 
     > [!NOTE]
-    > 如果已設定的屬性，請確定它是**TextTemplatingFilePreprocessor**而非**TextTemplatingFileGenerator**。 如果包含檔案已擴充此情形 **.tt**。
+    > 如果已設定屬性，請確定它是**TextTemplatingFilePreprocessor**而不是**TextTemplatingFileGenerator**。 如果您包含副檔名為**tt**的檔案，就會發生這種情況。
 
-3. 變更的檔案名稱副檔名 **.tt**。 雖然這個步驟是選擇性的它可協助您避免在不正確的編輯器中開啟檔案。
+3. 將副檔名變更為**tt**。 雖然這是選擇性步驟，但它可協助您避免在不正確的編輯器中開啟檔案。
 
-4. 移除檔案名稱的主要部分的任何空格或標點符號。 比方說 「 我的 Web Page.tt"是不正確，但是 「 MyWebPage.tt"正確無誤。 檔案名稱將用於做為產生的程式碼中的類別名稱。
+4. 從檔案名的主要部分移除任何空格或標點符號。 例如，"My Web Page.tt" 不正確，但 "MyWebPage.tt" 是正確的。 檔案名將會在產生的程式碼中用來做為類別名稱。
 
-5. 在檔案開頭插入下面這一行。 如果您使用 Visual Basic 專案中，會取代 「 C#"與"VB"。
+5. 在檔案開頭插入下列這一行。 如果您是在 Visual Basic 專案中工作，請將C#"" 取代為 "VB"。
 
     `<#@ template language="C#" #>`
 
-## <a name="the-content-of-the-run-time-template"></a>執行階段範本內容
+## <a name="the-content-of-the-run-time-template"></a>執行時間範本的內容
 
-### <a name="template-directive"></a>範本指示詞
+### <a name="template-directive"></a>Template 指示詞
 
-建立檔案時，請讓範本的第一行：
+保留範本的第一行，如同您在建立檔案時所用的一樣：
 
 `<#@ template language="C#" #>`
 
-語言參數將取決於您專案的語言。
+Language 參數將取決於您專案的語言。
 
 ### <a name="plain-content"></a>純文字內容
 
-編輯 **.tt**檔案，以包含您想要您的應用程式產生的文字。 例如: 
+編輯**tt**檔案，以包含您想要應用程式產生的文字。 例如:
 
 ```html
 <html><body>
@@ -117,9 +117,9 @@ This report is Company Confidential.
 </body></html>
 ```
 
-### <a name="embedded-program-code"></a>內嵌的程式碼
+### <a name="embedded-program-code"></a>內嵌程式碼
 
-您可以插入程式碼之間`<#`和`#>`。 例如: 
+您可以在 `<#` 和 `#>` 之間插入程式碼。 例如:
 
 ```csharp
 <table>
@@ -144,19 +144,19 @@ This report is Company Confidential.
 </table>
 ```
 
-請注意，插入的陳述式是之間`<# ... #>`之間會插入運算式和`<#= ... #>`。 如需詳細資訊，請參閱 <<c0> [ 撰寫 T4 文字範本](../modeling/writing-a-t4-text-template.md)。
+請注意，語句會插入 `<# ... #>`，而且運算式會在 `<#= ... #>` 之間插入。 如需詳細資訊，請參閱[撰寫 T4 文字模板](../modeling/writing-a-t4-text-template.md)。
 
 ## <a name="using-the-template"></a>使用範本
 
-### <a name="the-code-built-from-the-template"></a>從範本建置的程式碼
+### <a name="the-code-built-from-the-template"></a>從範本建立的程式碼
 
-當您儲存 **.tt**檔案，分公司 **.cs**或是 **.vb**產生檔案。 若要查看此檔案中的**方案總管**，展開 **.tt**檔案節點。 在 Visual Basic 專案中，首先選擇**顯示所有檔案**中**方案總管 中**工具列。
+當您儲存**tt**檔案時，會產生一個子公司 **.cs**或 **.vb**檔案。 若要在**方案總管**中查看此檔案，請展開 [ **tt**檔案] 節點。 在 Visual Basic 專案中，先選擇 [**方案總管**] 工具列中的 [**顯示所有**檔案]。
 
-請注意，分公司的檔案會包含部分類別，其中包含呼叫的方法`TransformText()`。 您可以從您的應用程式來呼叫這個方法。
+請注意，子公司檔案包含部分類別，其中包含稱為 `TransformText()` 的方法。 您可以從您的應用程式呼叫此方法。
 
-### <a name="generating-text-at-run-time"></a>在執行階段產生文字
+### <a name="generating-text-at-run-time"></a>在執行時間產生文字
 
-在您的應用程式程式碼，您可以產生使用像這樣呼叫範本的內容：
+在您的應用程式程式碼中，您可以使用類似如下的呼叫來產生範本的內容：
 
 ```csharp
 MyWebPage page = new MyWebPage();
@@ -170,19 +170,19 @@ Dim pageContent = page.TransformText()
 System.IO.File.WriteAllText("outputPage.html", pageContent)
 ```
 
-若要將產生的類別放在特定的命名空間中，設定**自訂工具命名空間**文字範本檔案的屬性。
+若要將產生的類別放在特定的命名空間中，請設定文字模板檔案的 [**自訂工具命名空間**] 屬性。
 
-### <a name="debugging-runtime-text-templates"></a>偵錯執行階段文字範本
+### <a name="debugging-runtime-text-templates"></a>調試執行時間文字模板
 
-偵錯和測試執行階段文字範本為一般程式碼相同的方式。
+Debug 和測試回合時間文字模板的方式與一般程式碼相同。
 
-您可以在文字範本中設定中斷點。 如果您從 Visual Studio 的偵錯模式中啟動應用程式，您可以逐步執行程式碼，並以一般方式評估監看式運算式。
+您可以在文字模板中設定中斷點。 如果您從 Visual Studio 以 [偵錯工具] 模式啟動應用程式，您可以逐步執行程式碼，並以一般方式評估監看式運算式。
 
-### <a name="passing-parameters-in-the-constructor"></a>在建構函式內傳遞參數
+### <a name="passing-parameters-in-the-constructor"></a>在函式中傳遞參數
 
-通常是範本必須從應用程式的其他組件匯入一些資料。 為了方便，範本所建置的程式碼會是部分類別。 您可以建立另一個檔案中的相同類別的另一個組件，在您的專案。 該檔案可以包含參數、 屬性以及內嵌在範本中，程式碼和其餘的應用程式可以存取的函式的建構函式。
+範本通常必須從應用程式的其他部分匯入一些資料。 為了簡化這項工作，範本所建立的程式碼是部分類別。 您可以在專案的另一個檔案中，建立相同類別的另一個部分。 該檔案可以包含具有參數、屬性和函式的函式，這些函式可由內嵌在範本中的程式碼，以及應用程式的其餘部分來存取。
 
-例如，您可以在其中建立個別的檔案**MyWebPageCode.cs**:
+例如，您可以建立個別的檔案**MyWebPageCode.cs**：
 
 ```csharp
 partial class MyWebPage
@@ -191,7 +191,7 @@ partial class MyWebPage
     public MyWebPage(MyData data) { this.m_data = data; }}
 ```
 
-在您的範本檔案中**MyWebPage.tt**，您可以撰寫：
+在您的範本檔案**MyWebPage.tt**中，您可以撰寫：
 
 ```html
 <h2>Sales figures</h2>
@@ -206,7 +206,7 @@ partial class MyWebPage
 </table>
 ```
 
-若要使用此範本的應用程式中：
+若要在應用程式中使用此範本：
 
 ```csharp
 MyData data = ...;
@@ -215,9 +215,9 @@ String pageContent = page.TransformText();
 System.IO.File.WriteAllText("outputPage.html", pageContent);
 ```
 
-#### <a name="constructor-parameters-in-visual-basic"></a>在 Visual Basic 中的建構函式參數
+#### <a name="constructor-parameters-in-visual-basic"></a>Visual Basic 中的函數參數
 
-在 Visual Basic 中，個別的檔案**MyWebPageCode.vb**包含：
+在 Visual Basic 中， **MyWebPageCode**的個別檔案包含：
 
 ```vb
 Namespace My.Templates
@@ -230,7 +230,7 @@ Namespace My.Templates
 End Namespace
 ```
 
-無法包含範本檔案：
+範本檔案可能包含：
 
 ```html
 <#@ template language="VB" #>
@@ -250,7 +250,7 @@ This report is Company Confidential.
 </body></html>
 ```
 
-可以叫用範本，將參數傳遞的建構函式：
+藉由在函式中傳遞參數，即可叫用此範本：
 
 ```vb
 Dim data = New My.Templates.MyData
@@ -260,59 +260,59 @@ Dim pageContent = page.TransformText()
 System.IO.File.WriteAllText("outputPage.html", pageContent)
 ```
 
-#### <a name="passing-data-in-template-properties"></a>在範本內容中傳遞資料
+#### <a name="passing-data-in-template-properties"></a>在範本屬性中傳遞資料
 
-將資料傳遞至範本的替代方式是加入的部分類別定義範本類別的公用屬性。 您的應用程式可以設定屬性，然後再叫用`TransformText()`。
+將資料傳遞至範本的另一種方式是將公用屬性加入至部分類別定義中的範本類別。 您的應用程式可以先設定屬性，再叫用 `TransformText()`。
 
-您也可以將欄位加入至您的範本類別中的部分定義。 這可讓您可以連續執行的範本之間傳遞資料。
+您也可以在部分定義中，將欄位新增至您的範本類別。 這可讓您在後續的範本執行之間傳遞資料。
 
-### <a name="use-partial-classes-for-code"></a>程式碼會使用部分類別
+### <a name="use-partial-classes-for-code"></a>針對程式碼使用部分類別
 
-許多開發人員想要避免在範本中撰寫大型程式碼主體。 相反地，您也可以為範本檔案具有相同名稱的部分類別中定義方法。 從範本呼叫這些方法。 如此一來，多個範本顯示清楚哪些目標輸出字串看起來類似。 討論結果的外觀可以分開建立它所顯示的資料的邏輯。
+許多開發人員偏好避免在範本中撰寫大型的程式碼主體。 相反地，您可以在與範本檔案同名的部分類別中定義方法。 從範本呼叫這些方法。 如此一來，範本會更清楚地顯示目標輸出字串看起來的樣子。 有關結果外觀的討論，可以與建立所顯示資料的邏輯分隔開來。
 
-### <a name="assemblies-and-references"></a>組件和參考
+### <a name="assemblies-and-references"></a>元件和參考
 
-如果您想要您的範本程式碼，這類參考.NET 或其他組件**System.Xml.dll**，將它新增至您的專案**參考**平常的方式。
+如果您想要讓您的範本程式碼參考 .NET 或其他元件 **（例如 system.string），請**以一般方式將它加入至專案的**參考**。
 
-如果您想要在相同的方式匯入的命名空間`using`陳述式中，您可以使用`import`指示詞：
+如果您想要以與 `using` 語句相同的方式匯入命名空間，您可以使用 `import` 指示詞來執行這項操作：
 
 ```
 <#@ import namespace="System.Xml" #>
 ```
 
-這些指示詞必須置於檔案開頭，後面`<#@template`指示詞。
+這些指示詞必須放在檔案的開頭，緊接在 `<#@template` 指示詞之後。
 
-### <a name="shared-content"></a>共用的內容
+### <a name="shared-content"></a>共用內容
 
-如果您有數個範本之間共用的文字時，您可以將它放在不同的檔案，並將它包含在應顯示每個檔案：
+如果您有數個範本之間共用的文字，您可以將它放在不同的檔案中，並將它包含在它應該出現的每個檔案中：
 
 ```
 <#@include file="CommonHeader.txt" #>
 ```
 
-包含的內容可以包含任何混合程式碼和純文字，而且可以包含其他 include 指示詞和其他指示詞。
+包含的內容可以包含程式碼和純文字的任何混合，而且可以包含其他 include 指示詞和其他指示詞。
 
-Include 指示詞可以使用文字範本檔案或包含的檔案中的任何位置。
+Include 指示詞可以在範本檔案的文字或包含的檔案內的任何位置使用。
 
-### <a name="inheritance-between-run-time-text-templates"></a>執行階段文字範本之間的繼承
+### <a name="inheritance-between-run-time-text-templates"></a>執行時間文字模板之間的繼承
 
-您可以共用執行階段範本，藉由撰寫一個可為抽象的基底類別範本之間的內容。 使用`inherits`參數`<@#template#>`指示詞可參考另一個執行階段範本類別。
+您可以撰寫可為抽象的基類範本，以在執行時間範本之間共用內容。 請使用 `<@#template#>` 指示詞的 `inherits` 參數來參考另一個執行時間樣板類別。
 
 #### <a name="inheritance-pattern-fragments-in-base-methods"></a>繼承模式：基底方法中的片段
 
-在接下來的範例所使用的模式，請注意下列幾點：
+在接下來的範例中使用的模式中，請注意下列幾點：
 
-- 基底類別`SharedFragments`定義類別功能區塊內的方法`<#+ ... #>`。
+- 基類 `SharedFragments` 在類別功能區塊 `<#+ ... #>` 中定義方法。
 
-- 基底類別會包含任何任意的文字。 相反地，所有其文字區塊的類別特徵方法內發生。
+- 基類不包含任何可用的文字。 相反地，其所有的文字區塊都會出現在類別功能方法中。
 
-- 在衍生的類別叫用中定義的方法`SharedFragments`。
+- 衍生類別會叫用 `SharedFragments` 中定義的方法。
 
-- 應用程式會呼叫`TextTransform()`方法的衍生類別中，但不會轉換的基底類別`SharedFragments`。
+- 應用程式會呼叫衍生類別的 `TextTransform()` 方法，但不會將基類轉換 `SharedFragments`。
 
-- 基底和衍生的類別是執行階段文字範本;亦即**自訂工具**屬性設定為**TextTemplatingFilePreprocessor**。
+- 基底和衍生類別都是執行時間文字模板;也就是，[**自訂工具**] 屬性會設定為**TextTemplatingFilePreprocessor**。
 
-**SharedFragments.tt:**
+**SharedFragments.tt：**
 
 ```
 <#@ template language="C#" #>
@@ -327,7 +327,7 @@ protected void SharedText(int n)
 #>
 ```
 
-**MyTextTemplate1.tt:**
+**MyTextTemplate1.tt：**
 
 ```
 <#@ template language="C#" inherits="SharedFragments" #>
@@ -336,7 +336,7 @@ begin 1
 end 1
 ```
 
-**MyProgram.cs:**
+**MyProgram.cs：**
 
 ```csharp
 ...
@@ -353,11 +353,11 @@ begin 1
 end 1
 ```
 
-#### <a name="inheritance-pattern-text-in-base-body"></a>繼承模式：基底的主體中的文字
+#### <a name="inheritance-pattern-text-in-base-body"></a>繼承模式：基底主體中的文字
 
-使用範本繼承此替代方法，在大量的文字是基底範本中定義。 在衍生的範本會提供資料和文字片段放入基底的內容。
+在使用範本繼承的這種替代方法中，會在基底範本中定義大量文字。 衍生的範本會提供符合基底內容的資料和文字片段。
 
-**AbstractBaseTemplate1.tt:**
+**AbstractBaseTemplate1.tt：**
 
 ```
 <#@ template language="C#" #>
@@ -380,7 +380,7 @@ End of common template.
 #>
 ```
 
-**DerivedTemplate1.tt:**
+**DerivedTemplate1.tt：**
 
 ```
 <#@ template language="C#" inherits="AbstractBaseTemplate1" #>
@@ -406,7 +406,7 @@ protected override void SpecificFragment(int n)
 #>
 ```
 
-**應用程式程式碼：**
+**應用程式代碼：**
 
 ```csharp
 ...
@@ -429,11 +429,11 @@ End material for DerivedTemplate1.
 
 ## <a name="related-topics"></a>相關主題
 
-設計階段範本：如果您想要使用範本來產生程式碼，會成為您的應用程式的一部分，請參閱 <<c0> [ 使用 T4 文字範本在設計階段的程式碼產生](../modeling/design-time-code-generation-by-using-t4-text-templates.md)。
+設計階段範本：如果您想要使用範本來產生會成為應用程式一部分的程式碼，請參閱[使用 T4 文字模板產生設計階段程式碼](../modeling/design-time-code-generation-by-using-t4-text-templates.md)。
 
-執行階段範本可用在任何應用程式範本和其內容在編譯時期決定位置。 如果您想要撰寫產生的文字範本，可在執行階段變更從 Visual Studio 延伸模組，但請參閱[叫用 VS 擴充功能中的文字轉換](../modeling/invoking-text-transformation-in-a-vs-extension.md)。
+執行時間範本可以在任何應用程式中使用，其中範本和其內容會在編譯時期決定。 但是，如果您想要撰寫從執行時間變更的範本產生文字的 Visual Studio 延伸模組，請參閱[在 VS 擴充功能中叫用文字轉換](../modeling/invoking-text-transformation-in-a-vs-extension.md)。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [程式碼產生和 T4 文字範本](../modeling/code-generation-and-t4-text-templates.md)
 - [撰寫 T4 文字範本](../modeling/writing-a-t4-text-template.md)

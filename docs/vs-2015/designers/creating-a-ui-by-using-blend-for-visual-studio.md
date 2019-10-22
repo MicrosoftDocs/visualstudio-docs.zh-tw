@@ -8,15 +8,15 @@ f1_keywords:
 - Blend.Start.Dev12
 ms.assetid: efd12263-cc2d-4081-a2bb-9a2cc17c442c
 caps.latest.revision: 33
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 7cd7f14158b7dee83767ee9295c8917cadd30fa5
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 36a0772730718047f2b9d6fc6bc36c30a211a2af
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65695927"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72657997"
 ---
 # <a name="creating-a-ui-by-using-blend-for-visual-studio"></a>使用 Blend for Visual Studio 建立 UI
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,23 +43,23 @@ Blend for Visual Studio 可協助您設計 XAML 型的 Windows 桌面、Web、[W
 ## <a name="Tools"></a>[工具] 面板導覽
  您可以使用 Blend for Visual Studio 中的 [工具] 面板來建立及修改應用程式中的物件。 您可以選取工具，然後使用滑鼠在畫板上繪製以建立物件。
 
- ![[工具] 面板](../designers/media/blend5toolspanel.png "Blend5Toolspanel")
+ ![工具面板](../designers/media/blend5toolspanel.png "Blend5Toolspanel")
 
 |||||
 |-|-|-|-|
-|![](../designers/media/b1-1.png "B1_1")|**選取工具**：選取物件和路徑。<br /><br /> 使用 [直接選取] 工具可選取巢狀物件和路徑區段。|![圖說文字 A](../designers/media/b5-label-a.png "b5_label_A")|**漸層和筆刷工具**|
-|![](../designers/media/b1-2.png "B1_2")|**檢視工具**：調整畫板的檢視方式，例如移動瀏覽和縮放。|![圖說文字 B](../designers/media/b5-label-b.png "b5_label_B")|**路徑工具**|
-|![](../designers/media/b1-3.png "B1_3")|**筆刷工具**：處理物件的視覺屬性，例如轉換筆刷、繪製物件，或選取某個物件的屬性以套用至另一個物件。|![圖說文字 C](../designers/media/b5-label-c.png "b5_label_C")|**圖形工具**|
-|![](../designers/media/b1-4.png "B1_4")|**物件工具**：繪製畫板上最常用的物件，例如路徑、圖形、版面配置面板、文字及控制項。|![圖說文字 D](../designers/media/b5-label-d.png "b5_label_D")|**版面配置面板**|
-|![](../designers/media/b1-5.png "B1_5")|**資產工具**：存取 [資產] 面板，以及顯示資產庫中最近使用過的資產。|![圖說文字 E](../designers/media/b5-label-e.png "b5_label_E")|**文字控制項**|
-|||![圖說文字 F](../designers/media/b5-label-f.png "b5_label_F")|**通用控制項**|
+|![](../designers/media/b1-1.png "B1_1")|**選取工具**：選取物件和路徑。<br /><br /> 使用 [直接選取] 工具可選取巢狀物件和路徑區段。|![標注 A](../designers/media/b5-label-a.png "b5_label_A")|**漸層和筆刷工具**|
+|![](../designers/media/b1-2.png "B1_2")|**檢視工具**：調整畫板的檢視方式，例如移動瀏覽和縮放。|![標注 B](../designers/media/b5-label-b.png "b5_label_B")|**路徑工具**|
+|![](../designers/media/b1-3.png "B1_3")|**筆刷工具**：處理物件的視覺屬性，例如轉換筆刷、繪製物件，或選取某個物件的屬性以套用至另一個物件。|![注標 C](../designers/media/b5-label-c.png "b5_label_C")|**圖形工具**|
+|![](../designers/media/b1-4.png "B1_4")|**物件工具**：繪製畫板上最常用的物件，例如路徑、圖形、版面配置面板、文字及控制項。|![標注 D](../designers/media/b5-label-d.png "b5_label_D")|**版面配置面板**|
+|![](../designers/media/b1-5.png "B1_5")|**資產工具**：存取 [資產] 面板，以及顯示資產庫中最近使用過的資產。|![標注 E](../designers/media/b5-label-e.png "b5_label_E")|**文字控制項**|
+|||![標注 F](../designers/media/b5-label-f.png "b5_label_F")|**通用控制項**|
 
- **觀看短片：**![設定已安裝的功能](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [工具列](https://www.youtube.com/watch?v=VkdUJcvoo54&list=PLBDF977B2F1DAB358&index=4)。
+ **觀看短片：** ![設定已安裝的功能](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [工具列](https://www.youtube.com/watch?v=VkdUJcvoo54&list=PLBDF977B2F1DAB358&index=4)。
 
 ## <a name="Assets"></a>[資產] 面板導覽
  您可以在 [資產] 面板中找到所有控制項，這個面板類似 Visual Studio 中的 [工具箱]。 除了控制項之外，您還會在 [資產] 面板中找到可加入畫板的所有項目，包括樣式、媒體、行為和效果。
 
- ![[資產] 面板](../designers/media/blend5-assets-panel.png "Blend5_Assets_panel")
+ ![資產面板](../designers/media/blend5-assets-panel.png "Blend5_Assets_panel")
 
 |||
 |-|-|
@@ -91,14 +91,14 @@ Blend for Visual Studio 可協助您設計 XAML 型的 Windows 桌面、Web、[W
 |![](../designers/media/b1-13.png "B1_13")|**時間軸上設定的主要畫面格**：變更特定時間點的屬性值。|
 |![](../designers/media/d839d12c-07a1-4127-a830-4a8e7069f4fe.png "d839d12c-07a1-4127-a830-4a8e7069f4fe")|**變更物件順序**：設定物件的顯示順序。 按一下此按鈕可在結構檢視中依 Z 順序 (由前至後) 或依標記順序 (物件出現在 **XAML** 檢視中的順序) 來排列物件。|
 |![](../designers/media/b1-15.png "B1_15")|**時間軸縮放**：設定時間軸的縮放解析度。 放大可讓您更詳細地編輯動畫，而縮小則可顯示更長時間內所發生的概況詳情。 如果放大後無法在所要的時間點上設定主要畫面格，請驗證貼齊解析度是否設定得夠高。|
-|![圖說文字 16](../designers/media/b5-label-16.png "b5_label_16")|**時間軸組合區域**：檢視時間軸，並拖曳主要畫面格或使用其捷徑功能表以使其來回移動。|
+|![注標16](../designers/media/b5-label-16.png "b5_label_16")|**時間軸組合區域**：檢視時間軸，並拖曳主要畫面格或使用其捷徑功能表以使其來回移動。|
 
 ## <a name="Properties"></a>[屬性] 面板導覽
  使用此面板可檢視和修改物件的屬性。 您也可以直接在畫板上設定屬性。 如果這麼做，屬性變更將反映在 [屬性] 面板中。
 
- ![[屬性] 面板](../designers/media/blend5-properties-panel.png "Blend5_properties_panel")
+ ![屬性面板](../designers/media/blend5-properties-panel.png "Blend5_properties_panel")
 
- **分類**：展開和摺疊屬性的分類。 按一下 [展開] ![](../designers/media/6375953d-074c-421a-bbb3-6f5055b67b64.png "6375953d-074c-421a-bbb3-6f5055b67b64") 和 [摺疊] ![摺疊](../designers/media/b5-collapse-button.png "b5_collapse_button")，即可顯示或隱藏分類詳細資料。
+ **分類**：展開和摺疊屬性的分類。 按一下 [**展開** ![](../designers/media/6375953d-074c-421a-bbb3-6f5055b67b64.png "6375953d-074c-421a-bbb3-6f5055b67b64")並折迭折迭 **]，以** ![](../designers/media/b5-collapse-button.png "b5_collapse_button")顯示或隱藏分類詳細資料。
 
 |                                                                                                         |                                                                                                                                                                                                                                  |
 |---------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -117,10 +117,10 @@ Blend for Visual Studio 可協助您設計 XAML 型的 Windows 桌面、Web、[W
 |                                ![](../designers/media/b1-13.png "B1_13")                                |                                                                        **Alpha 色板**：使用 [A] 旁邊的數字編輯器來修改 Alpha 值。                                                                        |
 | ![](../designers/media/d839d12c-07a1-4127-a830-4a8e7069f4fe.png "d839d12c-07a1-4127-a830-4a8e7069f4fe") |                                       **將色彩轉換成資源**：將選取的色彩轉換成色彩資源。 當您按一下 [色彩資源] 索引標籤時會顯示色彩資源。                                        |
 |                                ![](../designers/media/b1-15.png "B1_15")                                |                                                                                 **十六進位值**：檢視所顯示色彩的十六進位值。                                                                                 |
-|                     ![圖說文字 16](../designers/media/b5-label-16.png "b5_label_16")                     |                                                                                **漸層滑桿**：只有選取漸層筆刷時才會出現。                                                                                 |
+|                     ![注標16](../designers/media/b5-label-16.png "b5_label_16")                     |                                                                                **漸層滑桿**：只有選取漸層筆刷時才會出現。                                                                                 |
 | ![](../designers/media/d50027a1-6824-4ad8-8b4e-558b0756dcf8.png "d50027a1-6824-4ad8-8b4e-558b0756dcf8") |                                                                     **顯示進階屬性**：檢視較不常用之屬性的分類。                                                                      |
 
- **觀看短片：**![設定已安裝的功能](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [[屬性] 面板](https://www.youtube.com/watch?v=HCqQfiobdag&list=PLBDF977B2F1DAB358&index=7)。
+ **觀看短片：** ![設定已安裝的功能](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [[屬性] 面板](https://www.youtube.com/watch?v=HCqQfiobdag&list=PLBDF977B2F1DAB358&index=7)。
 
-## <a name="see-also"></a>另請參閱
- [插入控制項並修改其行為](../designers/insert-controls-and-modify-their-behavior-in-xaml-designer.md)[製作物件動畫](../designers/animate-objects-in-xaml-designer.md)[繪製圖案與路徑](../designers/draw-shapes-and-paths.md) [Visual Studio 和 Blend for Visual Studio 中設計的 XAML](../designers/designing-xaml-in-visual-studio.md)
+## <a name="see-also"></a>請參閱
+ [插入控制項並修改其行為](../designers/insert-controls-and-modify-their-behavior-in-xaml-designer.md)[動畫物件](../designers/animate-objects-in-xaml-designer.md)[繪製圖形和路徑](../designers/draw-shapes-and-paths.md)[在 Visual Studio 和 Blend for Visual Studio 中設計 XAML](../designers/designing-xaml-in-visual-studio.md)

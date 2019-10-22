@@ -1,5 +1,5 @@
 ---
-title: C++靜態程式碼分析市集應用程式
+title: C++靜態程式碼分析存放區應用程式
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-test
@@ -9,19 +9,19 @@ f1_keywords:
 ms.assetid: c5355e43-a37c-4686-a969-18e3dfc59a9c
 caps.latest.revision: 15
 author: alexhomer1
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 799e75dff8202ef041399cc6e0fcfb791dc7e868
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: c20fe8bccdf48cf307dda72a085b3c2a72f1d0cf
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65686539"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72672716"
 ---
 # <a name="analyze-c-code-quality-of-store-apps-using-visual-studio-static-code-analysis"></a>使用 Visual Studio 靜態程式碼分析，分析市集應用程式的 C++ 程式碼品質
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-適用於 Windows 和 Windows Phone] (../Image/windows_and_phone_content.png"windows_and_phone_content")
+適用于 Windows 和 Windows Phone] （.。/Image/windows_and_phone_content.png "windows_and_phone_content")
 
  Visual Studio Express Edition 中的程式碼分析工具會檢查您的程式碼是否有常見的問題，以及是否違反良好的程式設計作法。 程式碼分析警告與編譯器錯誤和警告不同，因為程式碼分析會搜尋有效的特定程式碼模式，但仍然可以為您或使用您程式碼的其他人建立問題。 程式碼分析也可以尋找難以透過測試發現的程式碼缺失。 在開發過程中定期執行程式碼分析工具，可以提升已完成應用程式的品質。
 
@@ -41,7 +41,7 @@ ms.locfileid: "65686539"
 
    方案已編譯並且執行程式碼分析。 結果隨即顯示在 [程式碼分析] 視窗中。
 
-   ![[程式碼分析] 視窗](../test/media/ca-cpp-collapsed.png "CA_CPP_Collapsed")
+   ![程式碼分析視窗](../test/media/ca-cpp-collapsed.png "CA_CPP_Collapsed")
 
 ## <a name="BKMK_Analyze"></a> 分析和解決程式碼分析警告
  若要分析特定警告，請在 [程式碼分析] 視窗中選擇警告的標題。 展開警告以顯示問題的詳細資訊。 如果情況允許，程式碼分析會顯示導致發出警告的行號和分析邏輯。
@@ -73,7 +73,7 @@ ms.locfileid: "65686539"
 ## <a name="BKMK_Search"></a> 搜尋和篩選程式碼分析結果
  您可以在多專案方案中搜尋警告訊息的詳細清單，以及篩選警告。
 
- ![搜尋和篩選程式碼分析視窗](../test/media/ca-searchfilter.png "CA_SearchFilter")
+ ![搜尋和篩選程式代碼分析視窗](../test/media/ca-searchfilter.png "CA_SearchFilter")
 
 ## <a name="Warnings"></a> C++ 程式碼分析警告
  程式碼分析引發下列 C++ 程式碼警告：
@@ -132,7 +132,7 @@ ms.locfileid: "65686539"
 | [C6523](https://msdn.microsoft.com/11397a31-b224-46b0-afb7-d49ca576a3bb)  |                                         無效的大小字串參數                                         |
 |                       [C6525](../code-quality/c6525.md)                        |                                   無效的大小字串不可能執行到的位置                                    |
 | [C6526](https://msdn.microsoft.com/59c590c7-0098-4166-a1ac-87f324596002)  |                                        無效的大小字串緩衝區類型                                        |
-|                       [C6527](../code-quality/c6527.md)                        |              無效的附註：'NeedsRelease' 屬性不能用於 void 類型的值               |
+|                       [C6527](../code-quality/c6527.md)                        |              無效的註釋：'NeedsRelease' 屬性不能用於 void 類型的值               |
 |                       [C6530](../code-quality/c6530.md)                        |                                       無法辨認的格式字串樣式                                        |
 |                       [C6540](../code-quality/c6540.md)                        | 在這個函式上使用屬性註釋會使其所有現有的 __declspec 註釋無效。  |
 |                       [C6551](../code-quality/c6551.md)                        |                              無效的大小規格: 無法剖析運算式                              |
@@ -158,7 +158,7 @@ ms.locfileid: "65686539"
 |                      [C28215](../code-quality/c28215.md)                       |                    typefix 不能套用到已經有 typefix 的參數                    |
 |                      [C28216](../code-quality/c28216.md)                       |        checkReturn 註釋只適用於特定函式參數的後置條件。         |
 |                      [C28217](../code-quality/c28217.md)                       |            對於函式，註釋的參數數目不符合檔案中找到的參數數目             |
-|                      [C28218](../code-quality/c28218.md)                       |             函式參數，註釋的參數不符合找到的檔案              |
+|                      [C28218](../code-quality/c28218.md)                       |             針對函式參數，注釋的參數不符合檔案中找到的              |
 |                      [C28219](../code-quality/c28219.md)                       |                 註釋中標註的參數需要列舉的成員                 |
 |                      [C28220](../code-quality/c28220.md)                       |                  註釋中標註的參數需要整數運算式                   |
 |                      [C28221](../code-quality/c28221.md)                       |                        註釋中的參數需要字串運算式                         |
@@ -203,7 +203,7 @@ ms.locfileid: "65686539"
 |                      [C28286](../code-quality/c28286.md)                       |                                    對於函式，結尾附近發生語法錯誤                                    |
 |                      [C28287](../code-quality/c28287.md)                       |                函式的 \_At\_() 註釋中有語法錯誤 (無法辨認的參數名稱)                |
 |                      [C28288](../code-quality/c28288.md)                       |                  函式的 \_At\_() 註釋中有語法錯誤 (無效的參數名稱)                   |
-|                      [C28289](../code-quality/c28289.md)                       |                函式：ReadableTo 或 WritableTo 沒有規格做為參數                |
+|                      [C28289](../code-quality/c28289.md)                       |                對於函式：ReadableTo 或 WritableTo 沒有有限的規格做為參數                |
 |                      [C28290](../code-quality/c28290.md)                       |           函式的註釋包含比實際參數數目還多的外部            |
 |                      [C28291](../code-quality/c28291.md)                       |                        位於 deref 層級 0 的 post null/notnull 對函式是無意義的。                        |
 |                      [C28300](../code-quality/c28300.md)                       |                            運算子的運算式運算元類型不相容                             |

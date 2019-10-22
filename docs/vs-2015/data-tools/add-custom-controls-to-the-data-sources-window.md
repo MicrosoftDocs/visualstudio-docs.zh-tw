@@ -1,5 +1,5 @@
 ---
-title: 將自訂控制項加入至資料來源視窗 |Microsoft Docs
+title: 將自訂控制項加入至 [資料來源] 視窗 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-data-tools
@@ -20,81 +20,81 @@ helpviewer_keywords:
 - Data Sources Window, selecting controls
 ms.assetid: 8c43e7d2-ba94-4d9b-96de-3aa971955afd
 caps.latest.revision: 45
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 28476c454dc78f30e33c0b37e8319bfe5a65df2d
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 402e62602d99492730d3094965e76964cd5f8218
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65699378"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72673088"
 ---
 # <a name="add-custom-controls-to-the-data-sources-window"></a>將自訂控制項加入 [資料來源] 視窗
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-當您拖曳的項目**Zdroje dat**至設計介面，以建立資料繫結控制項的視窗，您可以選取您所建立的控制項型別。 在視窗中的每個項目具有會顯示您可以選擇從控制項下拉式清單。 一組控制項與每個項目相關聯取決於項目的資料型別。 如果您想要建立的控制項不會出現在清單中，您可以遵循本主題中的指示，將控制項加入至清單。  
-  
- 如需有關選取的項目中建立的資料繫結控制項**資料來源** 視窗中，請參閱[設定從資料來源視窗拖曳時要建立的控制項](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)。  
-  
+當您從 [**資料來源**] 視窗將專案拖曳至設計介面以建立資料繫結控制項時，可以選取您所建立的控制項類型。 視窗中的每個專案都有下拉式清單，其中顯示您可以選擇的控制項。 與每個專案相關聯的控制項集合取決於專案的資料類型。 如果您要建立的控制項沒有出現在清單中，您可以依照本主題中的指示，將控制項加入清單中。
+
+ 如需選取要在 [**資料來源**] 視窗中為專案建立之資料繫結控制項的詳細資訊，請參閱[設定從資料來源視窗拖曳時要建立的控制項](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)。
+
 > [!NOTE]
-> 根據目前使用的設定與版本，您所看到的對話方塊與功能表命令可能會與 [說明] 中所描述的不同。 若要變更您的設定，在**工具**功能表上，選取**匯入和匯出設定**。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
-  
-## <a name="customizinglist"></a> 自訂資料類型的可繫結控制項的清單  
- 若要新增或移除的項目中的可用控制項清單中的控制項**Zdroje dat**有特定的資料類型，執行下列步驟的視窗。  
-  
-#### <a name="to-select-the-controls-to-be-listed-for-a-data-type"></a>若要選取要列出的資料類型的控制項  
-  
-1. 請確定 WPF 設計工具] 或 [Windows Form 設計工具已開啟。  
-  
-2. 在 [ **Zdroje dat** ] 視窗中，按一下您新增至] 視窗中，資料來源的一部分的項目，然後按一下 [下拉式選單，項目。  
-  
-3. 在下拉式功能表中，按一下**自訂**。 其中一個下列對話方塊隨即開啟：  
-  
-    - 如果 Windows Form 設計工具開啟，請**自訂資料欄位 UI**頁**選項**對話方塊隨即開啟。  
-  
-    - 如果 WPF 設計工具開啟，請**自訂控制項繫結**對話方塊隨即開啟。  
-  
-4. 在對話方塊中，選取 將資料類型從**資料型別**下拉式清單。  
-  
-    - 若要自訂的資料表或物件的控制項清單，請選取 **[清單]**。  
-  
-    - 若要自訂控制項的資料行的資料表或物件的屬性清單，選取 基礎資料存放區中的資料行或屬性的資料類型。  
-  
-    - 若要自訂控制項以顯示具有使用者定義的圖形資料物件的清單，請選取 **[其他]**。 例如，選取 **[其他]** 如果應用程式的自訂控制項以顯示來自多個屬性的特定物件的資料。  
-  
-5. 在 **關聯的控制項**方塊中，選取您想要選取的資料類型，可用的每個控制項或清除任何您想要從清單中移除的控制項。  
-  
+> 根據目前使用的設定與版本，您所看到的對話方塊與功能表命令可能會與 [說明] 中所描述的不同。 若要變更您的設定，請在 [**工具**] 功能表上，選取 [匯**入和匯出設定**]。 如需詳細資訊，請參閱在 Visual Studio 中自訂開發設定 [Walkthrough: Calling Code in an VSTO Add-in from VBA](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。
+
+## <a name="customizinglist"></a>自訂資料類型的可繫結控制項清單
+ 若要在具有特定資料類型的 [**資料來源**] 視窗中，從專案的可用控制項清單中加入或移除控制項，請執行下列步驟。
+
+#### <a name="to-select-the-controls-to-be-listed-for-a-data-type"></a>若要選取要針對資料類型列出的控制項
+
+1. 請確定 WPF 設計工具或 Windows Form 設計工具已開啟。
+
+2. 在 [**資料來源**] 視窗中，按一下屬於您加入至視窗之資料來源中的專案，然後按一下該專案的下拉式功能表。
+
+3. 在下拉式功能表中，按一下 [**自訂**]。 下列其中一個對話方塊隨即開啟：
+
+    - 如果 Windows Form 設計工具為開啟狀態，則會開啟 [**選項**] 對話方塊的 [**資料 UI 自訂**] 頁面。
+
+    - 如果 WPF 設計工具已開啟，則會開啟 [**自訂控制項**系結] 對話方塊。
+
+4. 在對話方塊中，從 [**資料類型**] 下拉式清單中選取資料類型。
+
+    - 若要自訂資料表或物件的控制項清單，請選取 **[清單]** 。
+
+    - 若要針對資料表的資料行或物件的屬性自訂控制項的清單，請在基礎資料存放區中選取資料行或屬性的資料類型。
+
+    - 若要自訂控制項清單以顯示具有使用者定義圖形的資料物件，請選取 **[其他]** 。 例如，如果您的應用程式具有自訂控制項，它會顯示來自特定物件之多個屬性的資料，請選取 **[其他]** 。
+
+5. 在 [**相關聯的控制項**] 方塊中，選取您要提供給所選取資料類型的每個控制項，或清除您想要從清單中移除之任何控制項的選取專案。
+
     > [!NOTE]
-    > 如果您想要選取的控制項不會不出現在**關聯的控制項** 方塊中，您必須將控制項新增至清單。 如需詳細資訊，請參閱 < [Adding Controls to 清單相關聯控制項的資料型別的](#addingcontrols)。  
-  
-6. 按一下 [確定] 。  
-  
-7. 在  **Zdroje dat**視窗中，按一下資料的項目類型只是關聯一或多個控制項，然後按一下 下拉式選單，項目。  
-  
-     您在選取的控制項**關聯的控制項**方塊現在會出現在下拉式清單功能表中的項目。  
-  
-## <a name="addingcontrols"></a> Addcontrols 至相關聯的控制項，資料類型的清單  
- 如果您想要控制項相關聯的資料類型，但不會顯示控制項，這是在**關聯的控制項** 方塊中，您必須將控制項新增至清單。 控制項必須位於目前的方案中，或參考的組件。 它也必須提供**工具箱**，且具有指定控制項的資料繫結行為的屬性。  
-  
-#### <a name="to-add-controls-to-the-list-of-associated-controls"></a>將控制項加入至關聯控制項的清單  
-  
-1. 將所需的控制項加入**工具箱**以滑鼠右鍵按一下**工具箱**，然後選取**選擇項目**。  
-  
-     控制項必須具有下列屬性的其中之一。  
-  
-    |屬性|描述|  
-    |---------------|-----------------|  
-    |<xref:System.ComponentModel.DefaultBindingPropertyAttribute>|實作簡單的控制項顯示資料，單一資料行 （或屬性） 的這個屬性，例如<xref:System.Windows.Forms.TextBox>。|  
-    |<xref:System.ComponentModel.ComplexBindingPropertiesAttribute>|實作這個屬性的控制項上，顯示清單 （或資料表） 的資料，例如<xref:System.Windows.Forms.DataGridView>。|  
-    |<xref:System.ComponentModel.LookupBindingPropertiesAttribute>|實作這個屬性的控制項上，顯示清單 （或資料表） 的資料，但是也需要呈現單一資料行或屬性，例如<xref:System.Windows.Forms.ComboBox>。|  
-  
-2. Windows form 上**選項**對話方塊中，開啟**自訂資料欄位 UI**頁面。 或者，您也可以針對 WPF 中，開啟**自訂控制項繫結** 對話方塊。 如需詳細資訊，請參閱 <<c0> [ 自訂資料類型的清單可繫結控制項的](#customizinglist)。  
-  
-3. 在 **關聯的控制項**方塊中，您剛加入至控制項**工具箱**現在應該會出現。  
-  
+    > 如果您要選取的控制項並未出現在 [**關聯的控制項**] 方塊中，您就必須將控制項加入清單中。 如需詳細資訊，請參閱[將控制項加入至資料類型的相關聯控制項清單](#addingcontrols)。
+
+6. 按一下 [確定]。
+
+7. 在 [**資料來源**] 視窗中，按一下您剛關聯一個或多個控制項之資料類型的專案，然後按一下該專案的下拉式功能表。
+
+     您在 [**關聯的控制項**] 方塊中選取的控制項現在會出現在專案的下拉式功能表中。
+
+## <a name="addingcontrols"></a>Addcontrols 至資料類型的相關聯控制項清單
+ 如果您想要將控制項與資料類型產生關聯，但控制項並未出現在 [關聯的**控制項**] 方塊中，您必須將控制項加入清單中。 控制項必須位於目前的方案或參考的元件中。 它也必須在 [**工具箱**] 中提供，而且具有指定控制項資料系結行為的屬性。
+
+#### <a name="to-add-controls-to-the-list-of-associated-controls"></a>若要將控制項加入至相關聯的控制項清單
+
+1. 以滑鼠右鍵按一下 [**工具箱**]，然後選取 **[選擇專案**]，將所需的控制項加入 [**工具箱**] 中。
+
+     控制項必須具有下列其中一個屬性。
+
+    |屬性|描述|
+    |---------------|-----------------|
+    |<xref:System.ComponentModel.DefaultBindingPropertyAttribute>|在顯示資料之單一資料行（或屬性）的簡單控制項（例如 <xref:System.Windows.Forms.TextBox>）上，執行這個屬性。|
+    |<xref:System.ComponentModel.ComplexBindingPropertiesAttribute>|在顯示資料之清單（或資料表）的控制項（例如 <xref:System.Windows.Forms.DataGridView>）上，執行這個屬性。|
+    |<xref:System.ComponentModel.LookupBindingPropertiesAttribute>|在顯示資料之清單（或資料表）的控制項上執行這個屬性，但也需要呈現單一資料行或屬性，例如 <xref:System.Windows.Forms.ComboBox>。|
+
+2. 針對 Windows Forms，請在 [**選項**] 對話方塊中，開啟 [**資料 UI 自訂**] 頁面。 或者，針對 WPF，開啟 [**自訂控制項**系結] 對話方塊。 如需詳細資訊，請參閱[自訂資料類型的可繫結控制項清單](#customizinglist)。
+
+3. 在 [**相關聯的控制項**] 方塊中，您剛加入 [**工具箱**] 的控制項現在應該會出現。
+
     > [!NOTE]
-    > 位在目前方案中，或是參考的組件中的控制項才可以加入至相關聯控制項的清單。 （控制項也必須實作其中一個資料繫結屬性上表中。）若要將資料繫結至自訂控制項，不適用於**資料來源** 視窗中，將控制項從**工具箱**放至設計介面，然後拖曳的項目繫結至從**資料來源**視窗拖曳至控制項。  
-  
-## <a name="see-also"></a>另請參閱  
+    > 只有位於目前方案或參考元件內的控制項，才可以加入至相關聯控制項的清單。 （控制項也必須執行上表中的其中一個資料系結屬性。）若要將資料系結至 [**資料來源**] 視窗中無法使用的自訂控制項，請將控制項從 [**工具箱**] 拖曳至設計介面，然後將 [**資料來源**] 視窗中的專案拖曳至控制項上。
+
+## <a name="see-also"></a>請參閱
  [將控制項繫結至 Visual Studio 中的資料](../data-tools/bind-controls-to-data-in-visual-studio.md)

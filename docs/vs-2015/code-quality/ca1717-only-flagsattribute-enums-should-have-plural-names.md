@@ -1,5 +1,5 @@
 ---
-title: CA1717:只有 FlagsAttribute 列舉應該使用複數名稱 |Microsoft Docs
+title: CA1717：只有 FlagsAttribute 列舉應具有複數名稱 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,48 +12,48 @@ helpviewer_keywords:
 - CA1717
 ms.assetid: a6855d8b-d78a-42c1-834e-61c31f5572ed
 caps.latest.revision: 19
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: aa0c51eaa10503a92c21960dc3dd074aa7541f5c
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 0c378d419be0d964c27cfcbe523fbe3a33da97b8
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65694951"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72669088"
 ---
-# <a name="ca1717-only-flagsattribute-enums-should-have-plural-names"></a>CA1717:只有 FlagsAttribute 列舉應該使用複數名稱
+# <a name="ca1717-only-flagsattribute-enums-should-have-plural-names"></a>CA1717：只有 FlagsAttribute 列舉應該使用複數名稱
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |TypeName|OnlyFlagsEnumsShouldHavePluralNames|
 |CheckId|CA1717|
-|分類|Microsoft.Naming|
+|Category|Microsoft. 命名|
 |中斷變更|中斷|
 
 ## <a name="cause"></a>原因
- 外部可見的列舉型別名稱結尾的複數的單字和列舉型別未標示為<xref:System.FlagsAttribute?displayProperty=fullName>屬性。
+ 外部可見列舉的名稱會以複數單字結束，而且列舉不會以 <xref:System.FlagsAttribute?displayProperty=fullName> 屬性標記。
 
 ## <a name="rule-description"></a>規則描述
- 命名慣例指定列舉的複數名稱表示可以同時指定多個列舉值。 <xref:System.FlagsAttribute>會告知編譯器應該列舉型別視為位元欄位，可讓列舉的位元運算。
+ 命名慣例規定列舉的複數名稱表示可以同時指定一個以上的列舉值。 @No__t_0 會告訴編譯器，應將列舉視為位欄位，以便在列舉上啟用位運算。
 
- 如果只有一個值的列舉型別，可以指定一次，列舉型別的名稱應該是單數的單字。 比方說，定義一周天數列舉可能被適用於應用程式中，您可以指定多天。 這個列舉型別應該有<xref:System.FlagsAttribute>而且無法在 '天' 呼叫。 類似的列舉型別，允許只指定一天不會有屬性，並可能是 ' day '。
+ 如果一次只能指定一個列舉值，則列舉的名稱應該是單數單字。 例如，定義一周天數的列舉可能會用於可指定多天的應用程式中。 此列舉應具有 <xref:System.FlagsAttribute>，而且可以稱為「天」。 只允許指定一天的類似列舉不會有屬性，而且可以稱為「天」。
 
- 命名慣例提供了通用程式庫 common language runtime 為目標。 這可減少的時間，才能了解新的軟體程式庫，並增加程式庫，開發人員專業開發的 managed 程式碼中的其他人的客戶信心。
+ 命名慣例提供以通用語言執行時間為目標之程式庫的常見外觀。 這可減少學習新軟體程式庫所需的時間，並提高客戶對於開發 managed 程式碼的專業知識而開發之程式庫的信心。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
- 讓列舉型別名稱的單數的單字，或新增<xref:System.FlagsAttribute>。
+ 將列舉的名稱設為單數單字，或加入 <xref:System.FlagsAttribute>。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
- 它可安全地隱藏規則的警告，如果名稱結尾的單數的單字。
+ 如果名稱以單數單字結束，則可以放心地隱藏規則中的警告。
 
-## <a name="related-rules"></a>相關的規則
- [CA1714:旗標列舉應該使用複數名稱](../code-quality/ca1714-flags-enums-should-have-plural-names.md)
+## <a name="related-rules"></a>相關規則
+ [CA1714：旗標列舉應該使用複數名稱](../code-quality/ca1714-flags-enums-should-have-plural-names.md)
 
- [CA1027:以 FlagsAttribute 標記列舉](../code-quality/ca1027-mark-enums-with-flagsattribute.md)
+ [CA1027：必須以 FlagsAttribute 標記列舉](../code-quality/ca1027-mark-enums-with-flagsattribute.md)
 
- [CA2217:不以 FlagsAttribute 標記列舉](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)
+ [CA2217：不要以 FlagsAttribute 標記列舉](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)
 
-## <a name="see-also"></a>另請參閱
- <xref:System.FlagsAttribute?displayProperty=fullName> [列舉設計](https://msdn.microsoft.com/library/dd53c952-9d9a-4736-86ff-9540e815d545)
+## <a name="see-also"></a>請參閱
+ <xref:System.FlagsAttribute?displayProperty=fullName>[列舉設計](https://msdn.microsoft.com/library/dd53c952-9d9a-4736-86ff-9540e815d545)

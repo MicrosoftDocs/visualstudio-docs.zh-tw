@@ -8,21 +8,21 @@ helpviewer_keywords:
 - coded UI tests, data-driven
 ms.assetid: 5838f02d-001f-49ce-adce-c9ea1afaec2f
 caps.latest.revision: 58
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 8431c1ed983a2b1d4054d067e53d072c996acb94
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 63c960fd68aba444ff24c0e5f24bab70cbe0746e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68871746"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72660638"
 ---
 # <a name="creating-a-data-driven-coded-ui-test"></a>建立資料驅動自動程式化 UI 測試
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 若要測試不同的情況，您可以使用不同的參數值，多次執行您的測試。 資料驅動自動程式碼 UI 測試是方便進行這項作業的方法。 您可以在資料來源中定義參數值，而且資料來源中的每個資料列都是自動程式碼 UI 測試的反覆項目。 整體測試結果將會根據所有反覆項目的結果。 例如，如果其中一個測試反覆項目失敗，則整體測試結果就是失敗。
 
- **需求**
+ **Requirements**
 
 - Visual Studio 企業版
 
@@ -33,15 +33,15 @@ ms.locfileid: "68871746"
 
 1. 建立專案。
 
-     ![建立自動程式化 UI 測試專案](../test/media/cuit-datadriven.png "CUIT_dataDriven_")
+     ![建立自動程式碼 UI 測試專案](../test/media/cuit-datadriven.png "CUIT_dataDriven_")
 
 2. 選擇錄製動作。
 
-     ![選擇錄製動作](../test/media/cuit-datadriven-generatecodedialog.png "CUIT_dataDriven_GenerateCodeDialog")
+     ![選擇記錄動作](../test/media/cuit-datadriven-generatecodedialog.png "CUIT_dataDriven_GenerateCodeDialog")
 
 3. 開啟計算機應用程式，並開始錄製測試。
 
-     ![錄製動作](../test/media/cuit-datadriven-cuitbuilder.png "CUIT_dataDriven_CUITBuilder")
+     ![記錄動作](../test/media/cuit-datadriven-cuitbuilder.png "CUIT_dataDriven_CUITBuilder")
 
 4. 加入 1 加 2，並暫停錄製器，然後產生測試方法。 稍後，我們會將此使用者輸入的值取代為資料檔中的值。
 
@@ -59,7 +59,7 @@ ms.locfileid: "68871746"
     }
     ```
 
-5. 使用 `AddNumbers()` 方法，確認執行測試。 將游標放在上面顯示的測試方法中，開啟操作功能表，然後選擇 [執行測試]。 (鍵盤快速鍵：Ctrl + R、T)。
+5. 使用 `AddNumbers()` 方法，確認執行測試。 將游標放在上面顯示的測試方法中，開啟操作功能表，然後選擇 [執行測試]。 (快速鍵：Ctrl + R、T)。
 
      [測試總管] 視窗中會顯示測試結果，而測試結果顯示測試成功還是失敗。 若要開啟 [測試總管] 視窗，請從 [測試] 功能表中選擇 [視窗]，然後選擇 [測試總管]。
 
@@ -98,7 +98,7 @@ ms.locfileid: "68871746"
 
 1. 將文字檔加入至名稱為 `data.csv` 的 dataDrivenSample 專案。
 
-     ![將逗號分隔值檔案加入專案](../test/media/cuit-datadriven-addcsvfile.png "CUIT_dataDriven_AddCSVFile")
+     ![將逗號分隔值檔案加入至專案](../test/media/cuit-datadriven-addcsvfile.png "CUIT_dataDriven_AddCSVFile")
 
 2. 將下列資料填入.csv 檔案：
 
@@ -110,13 +110,13 @@ ms.locfileid: "68871746"
 
      加入資料之後，該檔案應該會顯示如下：
 
-     ![將資料填入 .CSV 檔案](../test/media/cuit-datadriven-adddatatocsvfile.png "CUIT_dataDriven_AddDataToCSVFile")
+     ![填入。含有資料的 CSV 檔案](../test/media/cuit-datadriven-adddatatocsvfile.png "CUIT_dataDriven_AddDataToCSVFile")
 
 3. 務必使用正確的編碼來儲存 .csv 檔案。 在 [檔案] 功能表上，選擇 [進階儲存選項]，然後選擇 [Unicode (UTF-8 無簽章) - 字碼頁 65001] 做為編碼。
 
 4. .csv 檔案必須複製至輸出目錄，否則無法執行測試。 使用 [屬性] 視窗來複製它。
 
-     ![部署 .CSV 檔案](../test/media/cuit-datadriven-deploycsvfile.png "CUIT_dataDriven_DeployCSVFile")
+     ![部署。CSV 檔案](../test/media/cuit-datadriven-deploycsvfile.png "CUIT_dataDriven_DeployCSVFile")
 
      現在，我們已經建立了資料集，讓我們將資料繫結至測試。
 
@@ -185,7 +185,7 @@ ms.locfileid: "68871746"
 
     - 開啟 UIMap.uitest 檔案。
 
-         ![開啟自動程式化 UI 測試編輯器](../test/media/cuit-datadriven-opentesteditor.png "CUIT_dataDriven_OpenTestEditor")
+         ![開啟自動程式碼 UI 測試編輯器](../test/media/cuit-datadriven-opentesteditor.png "CUIT_dataDriven_OpenTestEditor")
 
     - 選擇 UI 動作，並觀察對應的 UI 控制項對應。 請注意，對應如何對應至程式碼 (例如，`this.UIMap.UICalculatorWindow.UIItemWindow.UIItem1Button`)。
 
@@ -193,7 +193,7 @@ ms.locfileid: "68871746"
 
     - 在 [屬性] 視窗中，開啟 [搜尋屬性]。 搜尋屬性 **Name** 值是程式碼中使用資料來源所操作的值。 例如，會將每個資料列的第一欄中的值指派給 `SearchProperties`：`UIItem1Button.SearchProperties[WinButton.PropertyNames.Name] = TestContext.DataRow["Num1"].ToString();`。 對於三個反覆項目，這項測試會依序將搜尋屬性的 **Name** 值變更為 3、5 和 6。
 
-         ![使用搜尋屬性來協助編碼](../test/media/cuit-datadriven-searchproperties.png "CUIT_dataDriven_SearchProperties")
+         ![使用搜尋屬性來協助撰寫程式碼](../test/media/cuit-datadriven-searchproperties.png "CUIT_dataDriven_SearchProperties")
 
 3. 儲存組態。
 
@@ -205,7 +205,7 @@ ms.locfileid: "68871746"
 
    **指引**
 
-   如需其他資訊, [請參閱使用 Visual Studio 2012 測試持續傳遞–第2章:單元測試:使用 Visual Studio 2012](http://go.microsoft.com/fwlink/?LinkID=255188)來[測試內部和測試持續傳遞–第5章:自動化系統測試](http://go.microsoft.com/fwlink/?LinkID=255196)
+   如需詳細資訊，請參閱[使用 Visual Studio 2012 測試持續傳遞 – 第 2 章：單元測試：內部測試 (英文)](http://go.microsoft.com/fwlink/?LinkID=255188) 和[使用 Visual Studio 2012 測試持續傳遞 – 第 5 章：自動化系統測試 (英文)](http://go.microsoft.com/fwlink/?LinkID=255196)
 
 ## <a name="q--a"></a>問與答
 
@@ -234,8 +234,8 @@ ms.locfileid: "68871746"
 
      `[DataSource("System.Data.SqlClient", "Data Source=.\\sqlexpress;Initial Catalog=tempdb;Integrated Security=True", "Data", DataAccessMethod.Sequential), TestMethod]`
 
-### <a name="q-can-i-use-data-driven-tests-on-my-windows-phone-app"></a>問：我可以在 Windows Phone 應用程式上使用資料驅動型測試嗎？
- **答：** 是的。 Windows Phone 的資料驅動型自動程式碼 UI 測試是透過測試方法上的 DataRow 屬性來定義。 在下列範例中，x 和 y 針對測試的第一個反覆項目使用值 1 和 2，並針對第二個反覆項目使用 -1 和 -2。
+### <a name="q-can-i-use-data-driven-tests-on-my-windows-phone-app"></a>問：我是否可以在 Windows Phone 應用程式上使用資料驅動型測試？
+ **答：** 可以。 Windows Phone 的資料驅動型自動程式碼 UI 測試是透過測試方法上的 DataRow 屬性來定義。 在下列範例中，x 和 y 針對測試的第一個反覆項目使用值 1 和 2，並針對第二個反覆項目使用 -1 和 -2。
 
 ```
 [DataRow(1, 2, DisplayName = "Add positive numbers")]
@@ -245,12 +245,12 @@ public void DataDrivingDemo_MyTestMethod(int x, int y)
 
 ```
 
-### <a name="q-why-cant-i-modify-the-code-in-the-uimapdesigner-file"></a>問：為什麼我無法修改 UIMap 設計工具檔案中的程式碼？
- **答：** 每次您使用 [UIMap - 自動程式碼 UI 測試產生器] 產生程式碼時，對 UIMapDesigner.cs 檔案中的程式碼所做的變更都會被覆寫。 在這個範例中，而且在大多數的情況下，可以對測試的原始程式碼檔案 (即 CodedUITest1.cs) 進行讓測試使用資料來源所需的程式碼變更。
+### <a name="q-why-cant-i-modify-the-code-in-the-uimapdesigner-file"></a>問：為什麼無法修改 UIMap.Designer 檔案中的程式碼？
+ **答**：每次您使用 [UIMap - 自動程式化 UI 測試產生器] 產生程式碼時，對 UIMapDesigner.cs 檔案中的程式碼所做的變更都會被覆寫。 在這個範例中，而且在大多數的情況下，可以對測試的原始程式碼檔案 (即 CodedUITest1.cs) 進行讓測試使用資料來源所需的程式碼變更。
 
  如果您需要修改錄製的方法，必須將它複製到 UIMap.cs 檔案並重新命名。 UIMap.cs 檔案可用來覆寫 UIMapDesigner.cs 檔案中的方法和屬性。 您必須移除 Coded UITest.cs 檔案中原始方法的參考，並將它取代為重新命名的方法名稱。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [UIMap](/previous-versions/dd580454(v=vs.140))
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert>

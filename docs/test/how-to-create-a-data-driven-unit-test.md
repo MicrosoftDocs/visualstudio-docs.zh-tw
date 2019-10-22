@@ -9,19 +9,19 @@ helpviewer_keywords:
 - unit tests, running
 - unit tests, data-driven
 - data-driven unit tests
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-author: gewarren
-ms.openlocfilehash: 5960c84e2cb389580f2d7b0f476da2a456e62585
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
-ms.translationtype: HT
+author: jillre
+ms.openlocfilehash: 0a3162dcbbd041a7d2f540a335bd95854afd87d0
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66745861"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72643487"
 ---
-# <a name="how-to-create-a-data-driven-unit-test"></a>作法：建立資料驅動的單元測試
+# <a name="how-to-create-a-data-driven-unit-test"></a>如何：建立資料驅動型單元測試
 
 使用適用於受控碼的 Microsoft 單元測試架構，設定單元測試方法來從資料來源擷取值。 這個方法會針對資料來源中每個資料列依序執行，讓您輕鬆地用單一方法來測試各種輸入。
 
@@ -160,18 +160,18 @@ int x = Convert.ToInt32(TestContext.DataRow["FirstNumber"]);
 
 ## <a name="run-the-test-and-view-results"></a>執行測試並檢視結果
 
-當您完成撰寫測試方法後，就可建置測試專案。 測試方法會顯示於 [測試總管]  中的 [未執行的測試]  群組。 當您執行、撰寫及重新執行測試時，[測試總管]  會將結果顯示在 [失敗的測試]  、[通過的測試]  和 [未執行的測試]  等群組中。 您可以選擇 [全部執行]  以執行所有測試，或選擇 [執行]  以選擇要執行的一小組測試。
+當您完成撰寫測試方法後，就可建置測試專案。 測試方法會顯示於 [測試總管] 中的 [未執行的測試] 群組。 當您執行、撰寫及重新執行測試時，[測試總管] 會將結果顯示在 [失敗的測試]、[通過的測試] 和 [未執行的測試] 等群組中。 您可以選擇 [全部執行] 以執行所有測試，或選擇 [執行] 以選擇要執行的一小組測試。
 
-[測試總管]  頂端的測試結果列會隨您的測試回合產生動畫效果。 在測試回合結束時，如果所有的測試都通過，狀態列會變成綠色，如果有任何測試失敗則變成紅色。 測試回合摘要會顯示在 [測試總管]  視窗底部的詳細資料窗格中。 在底部窗格中選取某個測試以檢視該測試的詳細資料。
+[測試總管] 頂端的測試結果列會隨您的測試回合產生動畫效果。 在測試回合結束時，如果所有的測試都通過，狀態列會變成綠色，如果有任何測試失敗則變成紅色。 測試回合摘要會顯示在 [測試總管] 視窗底部的詳細資料窗格中。 在底部窗格中選取某個測試以檢視該測試的詳細資料。
 
 > [!NOTE]
 > 每個資料的資料列都會有結果，也會有一個摘要結果。 如果資料的每個資料列都測試通過，執行的摘要會顯示為**通過**。 如果有任何資料列測試失敗，執行的摘要會顯示為**失敗**。
 
-如果您執行我們範例中的 `AddIntegers_FromDataSourceTest` 方法，結果列會變成紅色，而測試方法會移至 [失敗的測試]  。 如果來自資料來源的任何反覆執行方法失敗，資料驅動的測試將會失敗。 當您在 [測試總管]  視窗中選擇失敗的資料驅動型測試時，詳細資料窗格會顯示每個反覆項目的結果，各反覆項目是以資料列索引識別。 在本範例中，它會顯示 `AddIntegers` 演算法並未正確處理負數值。
+如果您執行我們範例中的 `AddIntegers_FromDataSourceTest` 方法，結果列會變成紅色，而測試方法會移至 [失敗的測試]。 如果來自資料來源的任何反覆執行方法失敗，資料驅動的測試將會失敗。 當您在 [測試總管] 視窗中選擇失敗的資料驅動型測試時，詳細資料窗格會顯示每個反覆項目的結果，各反覆項目是以資料列索引識別。 在本範例中，它會顯示 `AddIntegers` 演算法並未正確處理負數值。
 
-當受測方法已修正並重新執行測試時，結果列會變成綠色，且測試方法會移動到 [通過的測試]  群組。
+當受測方法已修正並重新執行測試時，結果列會變成綠色，且測試方法會移動到 [通過的測試] 群組。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute?displayProperty=fullName>
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext?displayProperty=fullName>

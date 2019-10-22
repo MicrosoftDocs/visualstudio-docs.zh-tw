@@ -6,17 +6,17 @@ f1_keywords:
 - vs.codeanalysis.policyeditor
 helpviewer_keywords:
 - code analysis, migrating check-in policy
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 738bb1bcf14d5b3459f325fe13eb3c4b0119e562
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: e6d502dc75530bb6b95f38b069b9220c5ad54cac
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72448961"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72649468"
 ---
 # <a name="how-to-create-or-update-standard-code-analysis-check-in-policies"></a>如何：建立或更新標準程式碼分析簽入原則
 
@@ -61,7 +61,7 @@ ms.locfileid: "72448961"
 
 - 選取 [Microsoft 標準規則集]。
 
-- @No__t 按一下 [**從原始檔控制1Select 規則集]，以選取自訂規則集 .。。>** 。 然後，在原始檔控制瀏覽器中輸入規則集的版本控制路徑。 版本控制路徑的語法為：
+- 按一下 [**從原始檔控制 \<Select 規則集]，以選取自訂規則集 .。。>** 。 然後，在原始檔控制瀏覽器中輸入規則集的版本控制路徑。 版本控制路徑的語法為：
 
    **$/** `TeamProjectName` **/** `VersionControlPath`
 

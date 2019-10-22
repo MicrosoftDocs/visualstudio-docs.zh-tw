@@ -6,17 +6,17 @@ f1_keywords:
 - vs.newproject
 helpviewer_keywords:
 - projects [Visual Studio], creating
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f5d48ee97e1e0d92237fe5836c8bd9c1888c3a4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: a35302e8f749563ab173e7be15e944f8462fdb18
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62818824"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72652656"
 ---
 # <a name="create-a-new-project-in-visual-studio"></a>在 Visual Studio 中建立新專案
 
@@ -99,6 +99,6 @@ ms.locfileid: "62818824"
 
 若要將其他專案新增至解決方案，請以滑鼠右鍵按一下 [方案總管] 中的解決方案節點，然後選擇 [新增] > [新增專案]。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [建立解決方案及專案](creating-solutions-and-projects.md)

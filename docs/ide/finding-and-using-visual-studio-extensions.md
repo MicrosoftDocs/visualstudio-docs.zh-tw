@@ -9,17 +9,17 @@ helpviewer_keywords:
 - install packages
 - managing extensions visual studio
 ms.assetid: 4ca92d93-31b9-47ef-8109-4a429d9e2ca3
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f86aa6cf99ae910c9b10bc6e93c408ca2c85265
-ms.sourcegitcommit: a2df993dc5e11c5131dbfcba686f0028a589068f
+ms.openlocfilehash: 92fe7d47a74112fb804770cca356084fa79fe1e4
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "71150094"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72654205"
 ---
 # <a name="manage-extensions-for-visual-studio"></a>管理 Visual Studio 的延伸模組
 
@@ -89,7 +89,7 @@ ms.locfileid: "71150094"
 
 ### <a name="install-without-using-the-manage-extensions-dialog-box"></a>不使用 [管理延伸模組] 對話方塊進行安裝
 
-在 Visual Studio Marketplace 以外的位置中，可能也會提供已封裝在 .vsix 檔案中的延伸模組。 [**擴充** > 功能**管理延伸**模組] 對話方塊無法偵測這些檔案，但您可以按兩下該檔案，或選取檔案並按下**enter**，以安裝 *.vsix 檔案。* 接下來只需遵循指示進行。 安裝擴充功能之後，您就能使用 [管理擴充功能] 對話方塊來將它啟用、停用或解除安裝。
+在 Visual Studio Marketplace 以外的位置中，可能也會提供已封裝在 .vsix 檔案中的延伸模組。 **延伸**模組  >  **管理延伸**模組 對話方塊無法偵測這些檔案，但您可以按兩下該檔案，或選取檔案並按下**enter**，以安裝 *.vsix 檔案。* 接下來只需遵循指示進行。 安裝擴充功能之後，您就能使用 [管理擴充功能] 對話方塊來將它啟用、停用或解除安裝。
 
 > [!NOTE]
 > - Visual Studio Marketplace 包含 VSIX 和 MSI 擴充功能。 [管理延伸模組] 對話方塊無法啟用或停用以 MSI 為基礎的延伸模組。
@@ -106,13 +106,13 @@ ms.locfileid: "71150094"
 
 ## <a name="per-user-and-administrative-extensions"></a>個別使用者和管理延伸模組
 
-大部分的擴充功能都是個別使用者，而且會安裝在 *%LocalAppData%\Microsoft\VisualStudio\\<\>Visual Studio\\版本 \Extensions*資料夾中。 一些延伸模組則是管理延伸模組，安裝於 *\<Visual Studio 安裝資料夾>\Common7\IDE\Extensions\\* 資料夾中。
+大部分的擴充功能都是個別使用者，而且會安裝在 *%LocalAppData%\Microsoft\VisualStudio \\ < Visual Studio 版本 \> \extensions \\*  資料夾中。 一些延伸模組則是管理延伸模組，安裝於 *\<Visual Studio 安裝資料夾>\Common7\IDE\Extensions\\* 資料夾中。
 
 若要保護您的系統以避免可能包含錯誤或惡意程式碼的擴充功能，您可以限制只在使用一般使用者權限執行 Visual Studio 時才能載入個別使用者擴充功能。 這表示以較高的許可權執行 Visual Studio 時，會停用每個使用者的延伸模組。
 
 限制每個使用者擴充功能的載入時間：
 
-1. 開啟延伸模組選項頁面（[**工具** > ] [**選項** > ] [**環境** > **延伸**模組]）。
+1. 開啟 [擴充功能選項] 頁面（[**工具**] [ > **選項**]  >  [**環境** > **延伸**模組）]
 
 2. 清除 [**以系統管理員身分執行時載入每個使用者擴充**功能] 核取方塊。
 
@@ -204,7 +204,7 @@ ms.locfileid: "71150094"
 
 - 當有更新通知時，更新已安裝範例的主複本。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [Visual Studio Marketplace](https://marketplace.visualstudio.com)
 - [Visual Studio SDK](../extensibility/visual-studio-sdk.md)

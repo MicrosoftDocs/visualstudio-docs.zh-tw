@@ -7,17 +7,17 @@ helpviewer_keywords:
 - custom dictionary, code analysis
 - dictionary, code analysis
 ms.assetid: 667e3b4e-beff-48be-b3d1-376e1716a895
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ec2afbdad9e68de38fcee8e4477a73851718e9d
-ms.sourcegitcommit: 08c144d290da373df841f04fc799e3133540a541
+ms.openlocfilehash: 26629ed099eea9a1d0c73a2eaa1105525d05dcf3
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72535846"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72649464"
 ---
 # <a name="how-to-customize-the-code-analysis-dictionary"></a>如何：自訂程式碼分析字典
 

@@ -1,25 +1,25 @@
 ---
-title: 工作流程設計工具-Compensate 活動設計工具
+title: 工作流程設計工具-補償活動設計工具
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.Compensate.UI
 ms.assetid: 7347c947-bfff-4bad-becd-5cd23e7b24cd
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c55ecd8e3402d927b11cc00d18d6d134a5b25681
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 65203663214e6bc82a4a7b20af9caa25bfd98ee4
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62949834"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72650659"
 ---
 # <a name="compensate-activity-designer"></a>Compensate 活動設計工具
 
-**補償**活動設計工具會用來建立及設定<xref:System.Activities.Statements.Compensate>活動。
+[**補償**] 活動設計工具會用來建立和設定 <xref:System.Activities.Statements.Compensate> 活動。
 
 ## <a name="the-compensate-activity"></a>Compensate 活動
 
@@ -29,20 +29,20 @@ ms.locfileid: "62949834"
 
 ### <a name="using-the-compensate-activity-designer"></a>使用 Compensate 活動設計工具
 
-**補償**活動設計工具位於**交易**分類**工具箱**。 若要開啟 **工具箱**，選取**工具箱**工作流程設計工具左側的索引標籤。 或者，選取**工具箱**從**檢視**功能表，或是按下**Ctrl**+**Alt** + **X**。
+[**補償**] 活動設計工具可以在 [**工具箱**] 的 [**交易**] 類別中找到。 若要開啟 [**工具箱**]，請選取工作流程設計工具左側的 [**工具箱**] 索引標籤。 或者，從  **View**  功能表中選取 **工具箱**，或按**Ctrl** +**Alt** +**X**。
 
-**補償**活動設計工具可以從拖曳**工具箱**並放到工作流程設計工具介面，不論用來放置活動，例如內部<xref:System.Activities.Statements.Sequence>。 卸除活動設計工具會建立<xref:System.Activities.Statements.Compensate>預設值的活動<xref:System.Activities.Activity.DisplayName%2A>的補償。 <xref:System.Activities.Activity.DisplayName%2A>可以編輯的標頭中的值**補償**活動設計工具或**DisplayName**屬性方格的方塊。
+[**補償**] 活動設計工具可以從 [**工具箱**] 拖曳出來，放到工作流程設計工具介面上放置活動的任一處，例如在 <xref:System.Activities.Statements.Sequence> 內部。 卸載活動設計工具會建立具有預設 <xref:System.Activities.Activity.DisplayName%2A> 補償的 <xref:System.Activities.Statements.Compensate> 活動。 您可以在 [**補償**] 活動設計工具的標頭中，或在屬性方格的 [ **DisplayName** ] 方塊中編輯 <xref:System.Activities.Activity.DisplayName%2A> 值。
 
 ### <a name="the-compensate-properties"></a>Compensate 屬性
 
-下表顯示 <xref:System.Activities.Statements.CancellationScope> 屬性，並且描述屬性在設計工具中的使用方式。 <xref:System.Activities.Activity.DisplayName%2A>屬性也可以在屬性方格中或在工作流程設計工具介面上編輯。 編輯<xref:System.Activities.Statements.Compensate.Target%2A>屬性方格中的屬性。
+下表顯示 <xref:System.Activities.Statements.CancellationScope> 屬性，並且描述屬性在設計工具中的使用方式。 @No__t_0 屬性可以在屬性方格中或在工作流程設計工具介面上編輯。 編輯屬性方格中的 [<xref:System.Activities.Statements.Compensate.Target%2A>] 屬性。
 
-|屬性名稱|必要|使用量|
+|屬性名稱|必要項|使用量|
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|指定 <xref:System.Activities.Statements.Compensate> 活動選用的易記名稱。 預設為 Compensate。|
 |<xref:System.Activities.Statements.Compensate.Target%2A>|True|指定 <xref:System.Activities.InArgument%601>，其中包含此 <xref:System.Activities.Statements.CompensationToken> 活動的 <xref:System.Activities.Statements.Compensate>。|
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [異動](../workflow-designer/transaction-activity-designers.md)
 - [CompensableActivity](../workflow-designer/compensableactivity-activity-designer.md)

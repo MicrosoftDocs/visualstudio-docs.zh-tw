@@ -11,6 +11,8 @@
           href: container-tools.md
         - name: 容器中的 React.js 單頁應用程式
           href: container-tools-react.md
+        - name: 使用 Azure Dev Spaces 進行 Kubernetes 開發 >>
+          href: /azure/dev-spaces/quickstart-netcore-visualstudio
     - name: 教學課程
       expanded: true
       items:

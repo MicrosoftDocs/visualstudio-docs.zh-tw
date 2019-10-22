@@ -1,27 +1,27 @@
 ---
-title: HOW TO：建立可為 Null 的型別 (類別設計工具)
+title: 如何：建立可為 Null 的類型 (類別設計工具)
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - nullable types, Class Designer
 - Class Designer [Visual Studio], nullable types
 ms.assetid: 84673a89-3f6d-4668-919e-1c0f56182fe5
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 0212f7ef1c5b506ce7a1efbde60e7c46a424bfa3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 671b2230daafbbdf92edda2ba1a671b688723796
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62975509"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72647862"
 ---
-# <a name="how-to-create-a-nullable-type-in-class-designer"></a>HOW TO：在類別設計工具中建立可為 Null 的型別
+# <a name="how-to-create-a-nullable-type-in-class-designer"></a>如何：在類別設計工具中建立可為 Null 的型別
 
 特定實值型別不一定具有 (或需要) 定義的值。 這種情況在資料庫中為常見做法，其中的部分欄位不會指派任何值。 比方說，您可能將 null 值指派給資料庫欄位，以表示該欄位尚未指派值。
 
@@ -85,7 +85,7 @@ ms.locfileid: "62975509"
 
 5. 以滑鼠右鍵按一下類別圖形，然後按一下 [類別細節]。 您可以在 [類別細節] 視窗中檢視或修改新類型的屬性。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - <xref:System.Nullable%601>
 - [可為 Null 的型別](/dotnet/csharp/programming-guide/nullable-types/index)

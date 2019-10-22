@@ -2,20 +2,20 @@
 title: 使用自動程式化 UI 測試來測試 UWP 應用程式
 ms.date: 05/31/2018
 ms.topic: conceptual
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - uwp
-ms.openlocfilehash: d50972ccb68ba43e8ebefa0d69fdfff8f7fc5be4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 7000cb64a14510e972222d2d4dae30ceee593c43
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62430135"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72659972"
 ---
 # <a name="create-a-coded-ui-test-to-test-a-uwp-app"></a>建立自動程式化 UI 測試來測試 UWP 應用程式
 
@@ -98,7 +98,7 @@ ms.locfileid: "62430135"
 
      ![按一下按鈕控制項以設定 Textbox 值](../test/media/uwp-app-button-textbox.png)
 
-1. 新增判斷提示，以確認文字方塊控制項中的文字。 使用交叉線工具選取文字方塊控制項，然後在 [新增判斷提示] 對話方塊中選取 [文字] 屬性。 然後，選取 [新增判斷提示] 或按 **Alt**+**A**。 在 [判斷提示失敗的訊息] 方塊中，輸入 **extbox value is unexpected.**， 然後選取 [確定]。
+1. 新增判斷提示，以確認文字方塊控制項中的文字。 使用交叉線工具選取文字方塊控制項，然後在 [新增判斷提示] 對話方塊中選取 [文字] 屬性。 然後，選取 [新增判斷提示] 或按 **Alt**+**A**。 在 [判斷提示失敗的訊息] 方塊中，輸入 **extbox value is unexpected.** ， 然後選取 [確定]。
 
      ![使用交叉線工具選擇文字方塊新增判斷提示](../test/media/add-assertion-for-text.png)
 
@@ -158,7 +158,7 @@ ms.locfileid: "62430135"
    將範例程式碼的自動化識別碼，取代為您在上一個步驟中複製到剪貼簿的值。
 
    > [!IMPORTANT]
-   > 請修剪自動化識別碼的開頭以移除字元，例如 **P~**。 如果您不會修剪這些字元，則當它嘗試啟動應用程式時，測試會擲回 `Microsoft.VisualStudio.TestTools.UITest.Extension.PlaybackFailureException`。
+   > 請修剪自動化識別碼的開頭以移除字元，例如 **P~** 。 如果您不會修剪這些字元，則當它嘗試啟動應用程式時，測試會擲回 `Microsoft.VisualStudio.TestTools.UITest.Extension.PlaybackFailureException`。
 
 1. 接下來，將程式碼新增至測試方法以按一下按鈕。 在 `XamlWindow.Launch` 的下一行，新增手勢來點選按鈕控制項：
 
@@ -224,9 +224,9 @@ ms.locfileid: "62430135"
 
 ### <a name="q-why-cant-i-modify-the-code-in-the-uimapdesigner-file"></a>問：為什麼無法修改 UIMap.Designer 檔案中的程式碼？
 
-**答**：每次您使用 [自動程式化 UI 測試產生器] 產生程式碼時，對 *UIMapDesigner.cs* 檔案所做的任何程式碼變更都會被覆寫。 如果您需要修改錄製的方法，請將它複製到 *UIMap.cs* 檔案並重新命名。 *UIMap.cs* 檔案可用來覆寫 *UIMapDesigner.cs* 檔案中的方法和屬性。 請移除 *CodedUITest.cs* 檔案中原始方法的參考，並將它取代為重新命名的方法名稱。
+**答**：每次您使用 [自動程式化 UI 測試產生器] 產生程式碼時，對 *UIMapDesigner.cs* 檔案中的程式碼所做的變更都會被覆寫。 如果您需要修改錄製的方法，請將它複製到 *UIMap.cs* 檔案並重新命名。 *UIMap.cs* 檔案可用來覆寫 *UIMapDesigner.cs* 檔案中的方法和屬性。 請移除 *CodedUITest.cs* 檔案中原始方法的參考，並將它取代為重新命名的方法名稱。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [使用 UI 自動化來測試您的程式碼](../test/use-ui-automation-to-test-your-code.md)
 - [為 UWP 控制項設定獨特的自動化屬性](../test/set-a-unique-automation-property-for-windows-store-controls-for-testing.md)

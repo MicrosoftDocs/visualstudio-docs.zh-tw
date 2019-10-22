@@ -1,5 +1,5 @@
 ---
-title: CA1040:避免使用空的介面 |Microsoft Docs
+title: CA1040：避免空的介面 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,39 +12,39 @@ helpviewer_keywords:
 - CA1040
 ms.assetid: 120a741b-5fd1-4836-8453-7857e0cd0380
 caps.latest.revision: 18
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: bc785967b4e27599b4a04aeb7740b53b5076938d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 50a36281edb144ddb949899fa24e0b5088080220
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62559737"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72668316"
 ---
-# <a name="ca1040-avoid-empty-interfaces"></a>CA1040:避免使用空的介面
+# <a name="ca1040-avoid-empty-interfaces"></a>CA1040：避免空的介面
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |TypeName|AvoidEmptyInterfaces|
 |CheckId|CA1040|
-|分類|Microsoft.Design|
+|Category|Microsoft. Design|
 |中斷變更|中斷|
 
 ## <a name="cause"></a>原因
- 介面不會宣告任何成員或實作兩個或多個其他介面。
+ 介面不會宣告任何成員，或會執行兩個以上的其他介面。
 
 ## <a name="rule-description"></a>規則描述
- 介面是用來定義一組可提供行為或程式使用合約的成員。 不論類型出現在繼承階層架構 (Inheritance Hierarchy) 中的何處，任何類型都可以採用介面所描述的功能。 類型會實作介面，方法是提供介面成員的實作。 空的介面並未定義任何成員。 因此，它不會定義可以實作的合約。
+ 介面是用來定義一組可提供行為或程式使用合約的成員。 不論類型出現在繼承階層架構 (Inheritance Hierarchy) 中的何處，任何類型都可以採用介面所描述的功能。 類型會實作介面，方法是提供介面成員的實作。 空的介面不會定義任何成員。 因此，它不會定義可執行檔合約。
 
- 如果您的設計包含空白預期類型的介面實作，您可能使用介面作為標記或用來識別類型的群組。 如果這個識別會在執行階段，若要完成這項作業的正確方式是使用自訂屬性。 使用存在該屬性中，不存在或屬性的屬性，來識別目標類型。 如果識別必須發生在編譯時期，它可接受使用空的介面。
+ 如果您的設計包含應實作為類型的空白介面，您可能會使用介面做為標記或識別一組類型的方法。 如果此識別會在執行時間發生，則完成此動作的正確方式是使用自訂屬性。 使用屬性的存在與否，或屬性的屬性，以識別目標型別。 如果識別必須在編譯時期發生，則可接受使用空的介面。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
- 移除介面，或將成員加入至它。 如果空的介面來標示一組型別，取代介面的自訂屬性。
+ 移除介面或將成員加入其中。 如果使用空的介面來標記一組類型，請以自訂屬性取代該介面。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
- 它可安全地隱藏此規則的警告，介面用來識別在編譯時期的一組型別時。
+ 當介面用來識別編譯時期的一組類型時，可以安全地隱藏此規則的警告。
 
 ## <a name="example"></a>範例
  下列範例會顯示空的介面。

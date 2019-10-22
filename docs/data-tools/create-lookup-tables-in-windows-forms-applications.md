@@ -6,57 +6,57 @@ helpviewer_keywords:
 - lookup tables
 - lookup tables, creating
 ms.assetid: 0edd5385-c381-4b17-9096-74e2778db9d5
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 782f5b422058d1564bde04251a92d95145f6edf3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f7660eba181c0a08ea3736c36e84bc7c9a574e10
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62567272"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72642247"
 ---
 # <a name="create-lookup-tables-in-windows-forms-applications"></a>在 Windows Forms 應用程式中建立查閱資料表
 
-詞彙*查閱資料表*描述繫結至兩個相關的資料表的控制項。 這些查閱控制項顯示從第二個資料表中選取的值為基礎的第一個資料表的資料。
+「詞彙*查閱」資料表*描述系結至兩個相關資料表的控制項。 這些查閱控制項會根據第二個數據表中選取的值，顯示第一個資料表中的資料。
 
-您可以藉由拖曳父資料表的主要節點建立查閱資料表 (從[資料來源 視窗](add-new-data-sources.md#data-sources-window)) 拖曳至表單中的相關的子資料表的資料行已繫結的控制項。
+將父資料表的主要節點（從 [[資料來源] 視窗](add-new-data-sources.md#data-sources-window)）拖曳至表單上已系結至相關子資料工作表中之資料行的控制項，即可建立查閱資料表。
 
-例如，假設資料表的`Orders`銷售資料庫中。 在每一筆記錄`Orders`資料表包含`CustomerID`，指出哪些客戶下過訂單。 `CustomerID`指向中的客戶記錄為外部索引鍵`Customers`資料表。 在此案例中，您會擴充`Orders`資料表中**資料來源** 視窗並將主節點設定為**詳細資料**。 然後，設定`CustomerID`若要使用的資料行<xref:System.Windows.Forms.ComboBox>（或任何其他支援查閱繫結的控制項），並將拖曳`Orders`節點拖曳至表單。 最後，拖曳`Customers`節點拖曳至控制項繫結至相關的資料行，在此情況下，<xref:System.Windows.Forms.ComboBox>繫結至`CustomerID`資料行。
+例如，假設 sales 資料庫中的 `Orders` 資料表。 @No__t_0 資料表中的每筆記錄都包含 `CustomerID`，以指出哪個客戶下訂單。 @No__t_0 是指向 `Customers` 資料表中客戶記錄的外鍵。 在此案例中，您會展開 [**資料來源**] 視窗中的 [`Orders`] 資料表，並將主要節點設定為 [**詳細**資料]。 然後，將 [`CustomerID`] 資料行設定為使用 <xref:System.Windows.Forms.ComboBox> （或支援查閱系結的任何其他控制項），然後將 [`Orders`] 節點拖曳至表單上。 最後，將 [`Customers`] 節點拖曳至系結至相關資料行的控制項，在此案例中，<xref:System.Windows.Forms.ComboBox> 系結至 `CustomerID` 資料行。
 
-## <a name="to-databind-a-lookup-control"></a>資料繫結的查閱控制項
+## <a name="to-databind-a-lookup-control"></a>若要將查閱控制項進行 databind
 
-1. 開啟您專案中，開啟**資料來源**視窗中的選擇**檢視** > **其他 Windows** > **的資料來源**.
-
-    > [!NOTE]
-    > 查閱資料表需要兩個相關的資料表或物件會提供**Zdroje dat**視窗。 如需詳細資訊，請參閱 <<c0> [ 中的資料集的關聯性](relationships-in-datasets.md)。
-
-2. 展開中的節點**Zdroje dat**視窗內，直到您可以看到父資料表和所有其資料行和關聯的子資料表和其所有資料行。
+1. 在您的專案開啟的情況下，選擇 [ **View**  > **其他 Windows**  > **資料來源**] 來開啟 [**資料來源**] 視窗。
 
     > [!NOTE]
-    > 子資料表節點是會顯示為父資料表中的可展開的子節點的節點。
+    > 在 [**資料來源**] 視窗中，查閱資料表需要有兩個相關的資料表或物件。 如需詳細資訊，請參閱[dataset 中的關聯](relationships-in-datasets.md)性。
 
-3. 變更子資料表的卸除類型**詳細資料**藉由選取**詳細資料**子資料表的節點上的控制項清單。 如需詳細資訊，請參閱 <<c0> [ 設定要從資料來源視窗拖曳時要建立的控制項](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)。
+2. 展開 [**資料來源**] 視窗中的節點，直到您可以看到父資料表及其所有資料行，以及相關的子資料工作表及其所有資料行為止。
 
-4. 找出相關的兩個資料表的節點 (`CustomerID`在上述範例中的節點)。 將其卸除類型變更<xref:System.Windows.Forms.ComboBox>藉由選取**ComboBox**從控制項清單。
+    > [!NOTE]
+    > 子資料工作表節點是在父資料表中顯示為可擴充子節點的節點。
 
-5. 從主要子資料表節點拖曳**Zdroje dat**視窗拖曳至表單。
+3. 從子資料工作表節點的控制項清單中選取 [**詳細資料**]，將子資料工作表的卸載類型變更為 [**詳細資料**]。 如需詳細資訊，請參閱[設定從資料來源視窗拖曳時要建立的控制項](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)。
 
-     資料繫結控制項 （具有描述性的標籤） 和工具帶狀 (<xref:System.Windows.Forms.BindingNavigator>) 在表單上顯示。 A[資料集](../data-tools/dataset-tools-in-visual-studio.md)， [TableAdapter](../data-tools/create-and-configure-tableadapters.md)， <xref:System.Windows.Forms.BindingSource>，和<xref:System.Windows.Forms.BindingNavigator>會出現在元件匣。
+4. 找出與兩個數據表相關聯的節點（上一個範例中的 `CustomerID` 節點）。 從控制項清單中選取 [ **ComboBox** ]，將其卸載類型變更為 [<xref:System.Windows.Forms.ComboBox>]。
 
-6. 現在，將從主要的父資料表節點**資料來源**視窗直接拖曳查閱控制項 ( <xref:System.Windows.Forms.ComboBox>)。
+5. 將 [主要子資料工作表] 節點從 [**資料來源**] 視窗拖曳至表單上。
 
-     現在建立查閱繫結。 請參閱下表中的控制項設定的特定屬性。
+     資料系結控制項（具有描述性標籤）和工具區域（<xref:System.Windows.Forms.BindingNavigator>）會出現在表單上。 [資料集](../data-tools/dataset-tools-in-visual-studio.md)、 [TableAdapter](../data-tools/create-and-configure-tableadapters.md)、<xref:System.Windows.Forms.BindingSource> 和 <xref:System.Windows.Forms.BindingNavigator> 會出現在元件匣中。
+
+6. 現在，將 [主要父資料表] 節點從 [**資料來源**] 視窗直接拖曳至查閱控制項（<xref:System.Windows.Forms.ComboBox>）。
+
+     現在已建立查閱系結。 請參閱下表，以瞭解在控制項上設定的特定屬性。
 
     |屬性|設定說明|
     |--------------| - |
-    |**DataSource**|Visual Studio 會將此屬性設定為針對您拖曳至控制項之資料表所建立的 <xref:System.Windows.Forms.BindingSource> (與建立控制項時所建立的 <xref:System.Windows.Forms.BindingSource> 相反)。<br /><br /> 如果您需要進行調整時，會將此設為<xref:System.Windows.Forms.BindingSource>具有您想要顯示的資料行的資料表。|
-    |**DisplayMember**|Visual Studio 會將此屬性設定為主索引鍵後面具有字串資料類型的第一個資料行 (針對您拖曳至控制項的資料表)。<br /><br /> 如果您需要進行調整，請將這設為您想要顯示的資料行名稱。|
-    |**ValueMember**|Visual Studio 會將此屬性設定為參與主索引鍵的第一個資料行，或者，如果未定義索引鍵，則為資料表中的第一個資料行。<br /><br /> 如果您需要進行調整，請將此設在含有您想要顯示的資料行的資料表中的主索引鍵。|
-    |**SelectedValue**|Visual Studio 會將此屬性設定為從卸除原始的資料行**Zdroje dat**視窗。<br /><br /> 如果您需要進行調整，請將此設為關聯資料表中的外部索引鍵資料行中。|
+    |**DataSource**|Visual Studio 會將此屬性設定為針對您拖曳至控制項之資料表所建立的 <xref:System.Windows.Forms.BindingSource> (與建立控制項時所建立的 <xref:System.Windows.Forms.BindingSource> 相反)。<br /><br /> 如果您需要進行調整，請將此設定為包含您要顯示之資料行之資料表的 <xref:System.Windows.Forms.BindingSource>。|
+    |**DisplayMember**|Visual Studio 會將此屬性設定為主索引鍵後面具有字串資料類型的第一個資料行 (針對您拖曳至控制項的資料表)。<br /><br /> 如果您需要進行調整，請將此設定為您想要顯示的資料行名稱。|
+    |**ValueMember**|Visual Studio 會將此屬性設定為參與主索引鍵的第一個資料行，或者，如果未定義索引鍵，則為資料表中的第一個資料行。<br /><br /> 如果您需要進行調整，請將此設定為數據表中具有您想要顯示之資料行的主要索引鍵。|
+    |**SelectedValue**|Visual Studio 將此屬性設定為從 [**資料來源**] 視窗中卸載的原始資料行。<br /><br /> 如果您需要進行調整，請將此設定為相關資料表中的外鍵資料行。|
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [將 Windows Forms 控制項繫結至 Visual Studio 中的資料](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)

@@ -8,17 +8,17 @@ helpviewer_keywords:
 - peek definition
 - type definition [Visual Studio]
 - member definition [Visual Studio]
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c5235bc19c1b06ec2cae26e3fcffb6a7d061c9b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 2d78614966a33421aac707f370f2b18e62e4b3d9
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62549775"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72603537"
 ---
 # <a name="view-type-and-member-definitions"></a>檢視型別與成員的定義
 
@@ -26,7 +26,7 @@ ms.locfileid: "62549775"
 
 ## <a name="go-to-definition"></a>移至定義
 
-[移至定義] 功能可巡覽至類型或成員的來源，並在新的索引標籤中開啟結果。如果您是鍵盤使用者，請將文字游標放在符號名稱內的某個位置，然後按 **F12**。 如果您是滑鼠使用者，請選取右鍵功能表中的 [移至定義]，或使用下節所述的 **Ctrl+按一下滑鼠左鍵**功能。
+[**移至定義**] 功能會導覽至類型或成員的來源，並在新的索引標籤中開啟結果。如果您是鍵盤使用者，請將文字游標放在符號名稱內的某個位置，然後按**F12**鍵。 如果您是滑鼠使用者，請選取右鍵功能表中的 [移至定義]，或使用下節所述的 **Ctrl+按一下滑鼠左鍵**功能。
 
 ### <a name="ctrl-click-go-to-definition"></a>Ctrl+按一下滑鼠左鍵移至定義
 
@@ -34,7 +34,7 @@ ms.locfileid: "62549775"
 
 ![滑鼠點按移至定義動畫](../ide/media/click_gotodef.gif)
 
-您可以變更按一下滑鼠左鍵 [移至定義] 的輔助按鍵，方法是移至 [工具] > [選項] > [文字編輯器] > [一般]，然後從 [使用輔助按鍵] 下拉式清單選取 [Alt] 或 [Ctrl+**Alt]**。 您也可以停用滑鼠點按 [移至定義]，方法是取消核取 [Enable mouse click to perform Go To Definition] (啟用滑鼠點按以執行移至定義) 核取方塊。
+您可以變更按一下滑鼠左鍵 [移至定義] 的輔助按鍵，方法是移至 [工具] > [選項] > [文字編輯器] > [一般]，然後從 [使用輔助按鍵] 下拉式清單選取 [Alt] 或 [Ctrl+**Alt]** 。 您也可以停用滑鼠點按 [移至定義]，方法是取消核取 [Enable mouse click to perform Go To Definition] (啟用滑鼠點按以執行移至定義) 核取方塊。
 
 ![啟用滑鼠點按移至定義](../ide/media/editor_options_mouse_click_gotodef.png)
 
@@ -52,7 +52,7 @@ ms.locfileid: "62549775"
 
 如果您從快顯視窗查看另一個定義，則會啟動階層連結路徑；您可以使用快顯視窗上方的圓形和箭號進行巡覽。
 
-如需詳細資訊，請參閱[如何：使用查看定義 (Alt+F12) 檢視及編輯程式碼](how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)。
+如需詳細資訊，請參閱[如何：使用查看定義 (Alt+F12) 檢視和編輯程式碼](how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)。
 
 ## <a name="view-metadata-as-source-code-c"></a>中繼資料視為原始程式碼 (C#)
 
@@ -76,7 +76,7 @@ ms.locfileid: "62549775"
 > [!NOTE]
 > Visual Studio 使用 ILSpy 反編譯來重新建構方法主體。 第一次存取此功能時，您必須同意有關軟體授權及著作權與商標法相關的免責聲明。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [巡覽程式碼](../ide/navigating-code.md)
-- [如何：使用查看定義 (Alt+F12) 檢視及編輯程式碼](how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)
+- [如何：使用查看定義 (Alt+F12) 檢視和編輯程式碼](how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)

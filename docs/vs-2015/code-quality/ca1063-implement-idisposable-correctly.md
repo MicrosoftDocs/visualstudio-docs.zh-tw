@@ -1,5 +1,5 @@
 ---
-title: CA1063:必須正確實作 IDisposable |Microsoft Docs
+title: CA1063 必須：正確地執行 IDisposable |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,76 +12,76 @@ helpviewer_keywords:
 - ImplementIDisposableCorrectly
 ms.assetid: 12afb1ea-3a17-4a3f-a1f0-fcdb853e2359
 caps.latest.revision: 19
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 90f218165c0543c1881857191efd202717c6e372
-ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
+ms.openlocfilehash: 1fe2982ab9e1b3951583b268eadb44c97c8e4805
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66820889"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72663640"
 ---
-# <a name="ca1063-implement-idisposable-correctly"></a>CA1063:必須正確實作 IDisposable
+# <a name="ca1063-implement-idisposable-correctly"></a>CA1063：必須正確實作 IDisposable
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |TypeName|ImplementIDisposableCorrectly|
 |CheckId|CA1063|
-|分類|Microsoft.Design|
-|中斷變更|非重大|
+|Category|Microsoft. Design|
+|中斷變更|不中斷|
 
 ## <a name="cause"></a>原因
- `IDisposable` 未正確實作。 此問題的部分原因如下：
+ 未正確執行 `IDisposable`。 此問題的一些原因如下所列：
 
-- IDisposable 是在類別中重新實作。
+- IDisposable 會在類別中重新執行。
 
-- 完成重新覆寫。
+- Finalize 會重新覆寫。
 
-- Dispose 會覆寫。
+- Dispose 會遭到覆寫。
 
-- Dispose （） 不是公用，密封，或名為 Dispose。
+- Dispose （）不是公用、密封或名為 Dispose。
 
-- Dispose （bool） 不受保護、 虛擬或未密封。
+- Dispose （bool）未受保護、虛擬或未密封。
 
-- 非密封類型，在 dispose （） 必須呼叫 dispose （true）。
+- 在未密封的類型中，Dispose （）必須呼叫 Dispose （true）。
 
-- 對於非密封類型，完成實作不會呼叫其中一個或兩個 dispose （bool） 或案例的類別完成項。
+- 對於未密封的類型，Finalize 執行不會呼叫 Dispose （bool）或案例類別完成項。
 
-  這些模式的其中任何一個的違規會觸發這個警告。
+  違反其中任何一種模式將會觸發此警告。
 
-  每個未密封的根 IDisposable 類型都必須提供它自己受保護虛擬 void dispose （bool） 方法。 Dispose （） 應該會呼叫 dispose （true） 和 Finalize 應該呼叫 dispose （false）。 如果您要建立未密封的根 IDisposable 類型，您必須定義 dispose （bool），並呼叫它。 如需詳細資訊，請參閱 <<c0> [ 清除 Unmanaged 資源向上](https://msdn.microsoft.com/library/a17b0066-71c2-4ba4-9822-8e19332fc213)中[Framework 設計方針](https://msdn.microsoft.com/library/5fbcaf4f-ea2a-4d20-b0d6-e61dee202b4b).NET Framework 文件的章節。
+  每個未密封的根 IDisposable 類型都必須提供自己的受保護虛擬 void Dispose （bool）方法。 Dispose （）應呼叫 Dispose （true），而 Finalize 應呼叫 Dispose （false）。 如果您要建立未密封的根 IDisposable 類型，您必須定義 Dispose （bool）並呼叫它。 如需詳細資訊，請參閱 .NET Framework 檔的[架構設計方針](https://msdn.microsoft.com/library/5fbcaf4f-ea2a-4d20-b0d6-e61dee202b4b)一節中的[清除非受控資源](https://msdn.microsoft.com/library/a17b0066-71c2-4ba4-9822-8e19332fc213)。
 
 ## <a name="rule-description"></a>規則描述
  所有的 IDisposable 類型都需正確地實作 Dispose 模式。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
- 檢查您的程式碼，並判斷哪些解決方案可以修正此違規。
+ 檢查您的程式碼，並判斷下列哪一個解決方法會修正此違規。
 
-- 從所實作的介面清單中移除 IDisposable{0}並改為覆寫基底類別 Dispose 實作。
+- 從 {0} 所執行的介面清單中移除 IDisposable，並改為覆寫基類處置執行。
 
-- 移除型別中的完成項{0}、 覆寫 Dispose (bool disposing)，並放在程式碼路徑的最終處理邏輯，其中 'disposing' 為 false。
+- 從類型 {0} 移除完成項，覆寫 Dispose （bool 處置），並將完成邏輯放在程式碼路徑中，其中 ' 處置 ' 為 false。
 
-- 移除{0}、 覆寫 Dispose (bool disposing)，並將處置邏輯放在程式碼路徑中 'disposing' 為 true。
+- 移除 {0}、覆寫 Dispose （bool 處置），然後將 dispose 邏輯放在程式碼路徑中，其中 ' 處置 ' 為 true。
 
-- 請確認{0}是宣告為公用和密封。
+- 請確定 {0} 宣告為 public 和 sealed。
 
-- 重新命名{0}為 'Dispose'，並確定它已宣告為 public 和 sealed。
+- 將 {0} 重新命名為 ' Dispose '，並確定它已宣告為 public 和 sealed。
 
-- 請確定{0}是宣告為 protected、 virtual 和未密封的。
+- 請確定 {0} 宣告為 protected、virtual 和未密封。
 
-- 修改{0}，因此它會呼叫 dispose （true），然後呼叫 GC。目前的物件執行個體上的 SuppressFinalize ('this' Me' 在[!INCLUDE[vbprvb](../includes/vbprvb-md.md)])，然後傳回。
+- 修改 {0}，使其呼叫 Dispose （true），然後呼叫 GC。Gc.suppressfinalize 在目前的物件實例上（在 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 中為 ' this ' 或 ' Me '），然後傳回。
 
-- 修改{0}，讓它呼叫 dispose （false），然後傳回。
+- 修改 {0}，使其呼叫 Dispose （false），然後傳回。
 
-- 如果您正在撰寫的未密封的根 IDisposable 的類別，請確定 IDisposable 實作會遵循本節稍早說明的模式。
+- 如果您要撰寫未密封的根 IDisposable 類別，請確定 IDisposable 的執行遵循本節稍早所述的模式。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
  請勿隱藏此規則的警告。
 
 ## <a name="pseudo-code-example"></a>虛擬程式碼範例
- 下列虛擬程式碼提供如何應該實作 dispose （bool） 中使用受管理的類別和原生資源的一般範例。
+ 下列虛擬程式碼提供如何在使用 managed 和原生資源的類別中實作為 Dispose （bool）的一般範例。
 
 ```
 public class Resource : IDisposable

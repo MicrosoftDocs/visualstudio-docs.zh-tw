@@ -4,17 +4,17 @@ ms.date: 09/06/2018
 ms.topic: conceptual
 helpviewer_keywords:
 - code analysis FAQ
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 277155bdab713ec12daa380fc2721a31b5d932a2
-ms.sourcegitcommit: 7825d4163e52d724e59f6c0da209af5fbef673f7
+ms.openlocfilehash: dffc3773714336162b3b863fa03a6964b68a3673
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72000114"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72649589"
 ---
 # <a name="frequently-asked-questions-about-fxcop-and-fxcop-analyzers"></a>FxCop 和 FxCop 分析器的相關常見問題
 
@@ -31,11 +31,11 @@ FxCop 分析器是以 .NET Compiler Platform ("Roslyn") 為基礎。 您可以[�
 
 ## <a name="does-the-run-code-analysis-command-run-fxcop-analyzers"></a>[執行程式碼分析] 命令是否會執行 FxCop 分析器？
 
-資料分割 當您選取 [**分析** > ] [執行程式**代碼分析**] 時，它會執行舊版分析。 [執行程式碼分析] 不會影響 Roslyn 型分析器，包括 Roslyn 型 FxCop 分析器。
+否。 當您選取 **分析** > **執行程式碼分析**時，它會執行舊版分析。 [執行程式碼分析] 不會影響 Roslyn 型分析器，包括 Roslyn 型 FxCop 分析器。
 
 ## <a name="does-the-runcodeanalysis-msbuild-project-property-run-analyzers"></a>RunCodeAnalysis msbuild 專案屬性是否會執行分析器？
 
-資料分割 專案檔中的 **RunCodeAnalysis** 屬性 (例如 *.csproj*) 只會用來執行舊版 FxCop。 它會執行建置後 msbuild 工作，以叫用 **FxCopCmd.exe**。 這相當於在 Visual Studio 中選取 [分析] > [執行程式碼分析]。
+否。 專案檔中的 **RunCodeAnalysis** 屬性 (例如 *.csproj*) 只會用來執行舊版 FxCop。 它會執行建置後 msbuild 工作，以叫用 **FxCopCmd.exe**。 這相當於在 Visual Studio 中選取 [分析] > [執行程式碼分析]。
 
 ## <a name="so-how-do-i-run-fxcop-analyzers-then"></a>那麼要如何執行 FxCop 分析器？
 
@@ -57,7 +57,7 @@ FxCop 分析器是以 .NET Compiler Platform ("Roslyn") 為基礎。 您可以[�
 
 如果您的專案使用 build 選項將警告視為錯誤，則 FxCop 分析器警告可能會顯示為錯誤。 若要防止程式碼分析警告被視為錯誤，請遵循程式[代碼分析常見問題](../code-quality/analyzers-faq.md#treat-warnings-as-errors)中的步驟。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [.NET Compiler Platform 分析器概觀](roslyn-analyzers-overview.md)
 - [開始使用分析器](fxcop-analyzers.yml)

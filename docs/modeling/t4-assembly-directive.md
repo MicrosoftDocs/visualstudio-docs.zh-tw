@@ -2,26 +2,26 @@
 title: T4 組件指示詞
 ms.date: 11/04/2016
 ms.topic: reference
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e5dfb9a6489fed2c21d05799e9196c813a224571
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 2c08518d3bcff8d91cc8fabebe7b858c5880ce5b
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63422949"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72671039"
 ---
 # <a name="t4-assembly-directive"></a>T4 組件指示詞
 
-在 Visual Studio 設計階段文字範本中，`assembly`指示詞會載入組件，讓您的範本程式碼可以使用它的類型。 效果就類似於 Visual Studio 專案中加入組件參考。
+在 Visual Studio 設計階段文字模板中，`assembly` 指示詞會載入元件，讓您的範本程式碼可以使用其類型。 效果類似于在 Visual Studio 專案中加入元件參考。
 
- 撰寫文字範本的一般概觀，請參閱 <<c0> [ 撰寫 T4 文字範本](../modeling/writing-a-t4-text-template.md)。
+ 如需撰寫文字模板的一般總覽，請參閱[撰寫 T4 文字模板](../modeling/writing-a-t4-text-template.md)。
 
 > [!NOTE]
-> 在執行階段 (前置處理過的) 文字範本中，不需要 `assembly` 指示詞。 相反地，將必要的組件，加入**參考**的 Visual Studio 專案。
+> 在執行階段 (前置處理過的) 文字範本中，不需要 `assembly` 指示詞。 相反地，請將必要的元件加入至 Visual Studio 專案的**參考**。
 
 ## <a name="using-the-assembly-directive"></a>使用組件指示詞
  指示詞的語法如下：
@@ -36,13 +36,13 @@ ms.locfileid: "63422949"
 
 - 組件的絕對路徑
 
-  您可以使用`$(variableName)`語法來參考 Visual Studio 變數，例如`$(SolutionDir)`，和`%VariableName%`來參考環境變數。 例如：
+  您可以使用 `$(variableName)` 語法來參考 Visual Studio 變數，例如 `$(SolutionDir)`，以及 `%VariableName%` 來參考環境變數。 例如:
 
 ```
 <#@ assembly name="$(SolutionDir)\MyProject\bin\Debug\SomeLibrary.Dll" #>
 ```
 
- assembly 指示詞在前置處理過的文字範本中無效。 相反地，包含必要的參考中**參考**的 Visual Studio 專案的一節。 如需詳細資訊，請參閱 <<c0> [ 執行階段使用 T4 文字範本產生文字](../modeling/run-time-text-generation-with-t4-text-templates.md)。
+ assembly 指示詞在前置處理過的文字範本中無效。 相反地，請將必要的參考包含在 Visual Studio 專案的 [**參考**] 區段中。 如需詳細資訊，請參閱[使用 T4 文字模板產生執行時間文字](../modeling/run-time-text-generation-with-t4-text-templates.md)。
 
 ## <a name="standard-assemblies"></a>標準組件
  下列組件會自動載入，因此您不需要為它們撰寫 assembly 指示詞：
@@ -63,8 +63,8 @@ ms.locfileid: "63422949"
 
 - 包含 DSL 的組件。
 
-## <a name="msbuild"></a> 使用 MSBuild 和 Visual Studio 中的專案屬性
- Visual Studio 巨集，例如 $ （solutiondir） 不在 MSBuild 中運作。 如果想要轉換組建電腦中的範本，您必須改用專案屬性。
+## <a name="msbuild"></a>在 MSBuild 和 Visual Studio 中使用專案屬性
+ Visual Studio 宏（例如 $ （SolutionDir））在 MSBuild 中無法使用。 如果想要轉換組建電腦中的範本，您必須改用專案屬性。
 
  編輯您的 .csproj 或 .vbproj 檔案以定義專案屬性。 這個範例會定義名為 `myLibFolder` 的屬性：
 
@@ -88,6 +88,6 @@ ms.locfileid: "63422949"
 <#@ assembly name="$(myLibFolder)\MyLib.dll" #>
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [T4 包含指示詞](../modeling/t4-include-directive.md)

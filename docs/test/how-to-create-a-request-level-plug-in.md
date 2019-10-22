@@ -6,17 +6,17 @@ helpviewer_keywords:
 - request-level plug-in, creating
 - Web performance tests, requests
 ms.assetid: d0b5b23c-7e94-4637-be6c-2620a5442d46
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: fc1d609bab25b6a8e0dd573807aa02fefbe87a71
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: ce0a8030253e69b35deda379cffcf7475dc8bb62
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62950172"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653629"
 ---
-# <a name="how-to-create-a-request-level-plug-in"></a>HOW TO：建立要求層級外掛程式
+# <a name="how-to-create-a-request-level-plug-in"></a>如何：建立要求層級外掛程式
 
 「要求」是指構成 Web 效能測試的宣告式陳述式。 Web 效能測試外掛程式可以讓您在 Web 效能測試的主要宣告式陳述式之外找出及重複使用程式碼。 您可以建立外掛程式，並將其加入到個別的要求中，也可以加入到包含要求的 Web 效能測試中。 自訂的「要求外掛程式」提供您一種方式，可以在特別要求於 Web 效能測試中執行時呼叫程式碼。
 
@@ -67,16 +67,16 @@ ms.locfileid: "62950172"
     > [!NOTE]
     > 您可以從外掛程式公開任意數目的屬性，只要讓這些屬性成為公用、可設定且屬於基底型別 (例如整數、布林或字串) 的屬性即可。 您之後也可以使用 [屬性] 視窗來變更 Web 效能測試外掛程式屬性。
 
-14. 選擇 [確定] 。
+14. 選擇 [確定]。
 
      外掛程式就會新增至 [要求外掛程式] 資料夾，這是 HTTP 要求的子資料夾。
 
     > [!WARNING]
     > 當您執行使用外掛程式的 Web 效能測試或負載測試時，可能會收到如下錯誤：
     >
-    > **要求失敗：\<外掛程式> 事件中發生例外狀況：無法載入檔案或組件 \<"外掛程式名稱".dll file>, Version=\<n.n.n.n>, Culture=neutral, PublicKeyToken=null' 或其相依性的其中之一。系統找不到指定的檔案。**
+    > **要求失敗： \<plug in > 事件中發生例外狀況：無法載入檔案或元件 ' \< "外掛程式名稱" .dll 檔案 >，Version = \<n. n. n >，Culture = 中性，PublicKeyToken = null ' 或它的其中一個相依性。系統找不到指定的檔案。**
     >
-    > 如果您對任何外掛程式進行程式碼變更並建立新的 DLL 版本 **(Version=0.0.0.0)**，但是外掛程式仍然參考原始的外掛程式版本，就會導致此錯誤發生。 若要更正此問題，請依照下列步驟執行：
+    > 如果您對任何外掛程式進行程式碼變更並建立新的 DLL 版本 **(Version=0.0.0.0)** ，但是外掛程式仍然參考原始的外掛程式版本，就會導致此錯誤發生。 若要更正此問題，請依照下列步驟執行：
     >
     > 1. 在 Web 效能和負載測試專案中，您將會在參考中看見警告。 移除並重新加入外掛程式 DLL 的參考。
     > 2. 從測試或適當的位置中移除外掛程式，然後再重新加入。
@@ -110,7 +110,7 @@ namespace RequestPluginNamespace
 }
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRequestPlugin>
 - [為負載測試建立自訂程式碼和外掛程式](../test/create-custom-code-and-plug-ins-for-load-tests.md)

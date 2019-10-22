@@ -3,17 +3,17 @@ title: 混合最小規則規則集
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: bc8df61c-19af-40ab-a871-315807e5f4bf
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e3c0b45fe73624a7506fbfdb52204201d286a73e
-ms.sourcegitcommit: 08c144d290da373df841f04fc799e3133540a541
+ms.openlocfilehash: 37c72b9526e667216a6791470353ce78132c2a0a
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72535765"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72649238"
 ---
 # <a name="mixed-minimum-rules-rule-set"></a>混合最小規則規則集
 

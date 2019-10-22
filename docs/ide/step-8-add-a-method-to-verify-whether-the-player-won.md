@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d53740d0970aba2c5b0442ded722c648f759f724
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
-ms.translationtype: HT
+ms.openlocfilehash: 0c451b2da08fdb0b38487438a47c6285b0380627
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72575127"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72647461"
 ---
 # <a name="step-8-add-a-method-to-verify-whether-the-player-won"></a>步驟 8：新增方法以驗證玩家是否贏了
 您已建立一個有趣的遊戲，但它需要額外的項目才能完成。 這個遊戲應該在玩家獲勝時結束，因此您需要加入 `CheckForWinner()` 方法以驗證玩家是否贏了。
@@ -40,13 +40,13 @@ ms.locfileid: "72575127"
      [!code-csharp[VbExpressTutorial4Step8#11](../ide/codesnippet/CSharp/step-8-add-a-method-to-verify-whether-the-player-won_2.cs)]
      [!code-vb[VbExpressTutorial4Step8#11](../ide/codesnippet/VisualBasic/step-8-add-a-method-to-verify-whether-the-player-won_2.vb)]
 
-3. 儲存並執行程式。 玩遊戲並將所有的圖示配對。 當您贏了之後，程式會顯示恭喜 **MessageBox** (如下列圖片所示)，然後關閉此方塊。
+3. 儲存並執行程式。 玩遊戲並將所有的圖示配對。 當您贏得時，程式會顯示一個祝賀**MessageBox** （如下列螢幕擷取畫面所示），然後關閉此方塊。
 
      使用 MessageBox ](../ide/media/express_tut4step8.png) ![Matching 遊戲<br/>
-**配對遊戲**和 **MessageBox**
+*使用* ***MessageBox*** ***配對遊戲***
 
 ## <a name="to-continue-or-review"></a>繼續或檢視
 
-- 若要移到下一個教學課程步驟，請參閱[步驟 9：嘗試其他功能](../ide/step-9-try-other-features.md)。
+- 若要移至下一個教學課程步驟，請參閱 **[步驟9：嘗試其他功能](../ide/step-9-try-other-features.md)** 。
 
 - 若要返回上一個教學課程步驟，請參閱[步驟 7：讓配對保持可見](../ide/step-7-keep-pairs-visible.md)。

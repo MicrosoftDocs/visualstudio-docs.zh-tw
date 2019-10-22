@@ -8,17 +8,17 @@ helpviewer_keywords:
 - graphs, analyzing load tests
 - load tests, zooming with graphs
 ms.assetid: 729b4c30-4bc3-4698-91b3-17a676897443
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: f570e2085bf9d0707bb5a8bfe33576466a6d7b41
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: f8e37d7ce5f4f52074904aa353ad6d02d65f5ca6
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62821196"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653268"
 ---
-# <a name="how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results"></a>HOW TO：放大負載測試結果圖表中的某個區域
+# <a name="how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results"></a>如何：放大負載測試結果圖表中的某個區域
 
 完成負載測試後，可以使用縮放列來放大及捲動到圖形的某個區域。 藉由圖形放大，您可以更為仔細地檢查負載測試回合期間收集到的資料。
 
@@ -113,8 +113,8 @@ ms.locfileid: "62821196"
 
      這樣會縮小圖形，顯示負載測試回合的整個持續期間。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [在圖表檢視中分析負載測試結果](../test/analyze-load-test-results-in-the-graphs-view.md)
 - [分析負載測試結果](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
-- [如何：在圖表上新增和刪除計數器](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md)
+- [如何：在圖形上新增和刪除計數器](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md)

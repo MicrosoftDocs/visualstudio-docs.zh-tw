@@ -1,21 +1,21 @@
 ---
-title: HOW TO：指定負載測試回合設定的採樣速率
+title: 如何：指定負載測試回合設定的取樣率
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - load tests, run settings
 ms.assetid: 51cbe7d6-5dfd-4842-bca3-f7f8a665dc84
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: c1e94bb6da2786b989208ea1104d509883bc0724
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 8ea68c2a4c643a9fc06d9d831008a7ee8b684c2e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62970662"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653361"
 ---
-# <a name="how-to-specify-the-sample-rate-for-a-load-test-run-setting"></a>HOW TO：指定負載測試回合設定的採樣速率
+# <a name="how-to-specify-the-sample-rate-for-a-load-test-run-setting"></a>如何：指定負載測試回合設定的採樣速率
 
 使用 [新增負載測試精靈] 建立負載測試之後，您就可以使用 [負載測試編輯器]，將屬性變更為符合您的測試需求和目標。
 
@@ -48,9 +48,9 @@ ms.locfileid: "62970662"
 
 4. 在 [採樣速率] 屬性中輸入時間值，表示負載測試將按此頻率收集效能計數器資料。
 
-5. 屬性變更完成之後，選擇 [檔案] 功能表上的 [儲存]。 然後您就可以使用新的 [採樣速率] 值來執行負載測試。
+5. 完成變更屬性之後，請選擇 [檔案] 功能表上的 [儲存]。 然後您就可以使用新的 [採樣速率] 值來執行負載測試。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [設定負載測試回合設定](../test/configure-load-test-run-settings.md)
 - [負載測試情節屬性](../test/load-test-scenario-properties.md)

@@ -4,30 +4,30 @@ ms.date: 04/01/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - unit testing, create unit tests
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aba0edbabdac6eb0e0c391371b51151a5be1ecba
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
-ms.translationtype: HT
+ms.openlocfilehash: 3edd4694688011722b9975d299bd09cfb3832a9e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66745804"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72665074"
 ---
 # <a name="create-unit-test-method-stubs-with-the-create-unit-tests-command"></a>使用建立單元測試命令來建立單元測試方法虛設常式
 
 **Create Unit Tests** 命令可建立單元測試方法 Stub。 此功能允許輕鬆設定測試專案、測試類別，以及其內的測試方法虛設常式。
 
 > [!NOTE]
-> [建立單元測試]  功能表命令僅供以 .NET Framework 為目標 (非 .NET Core) 的受控程式碼使用。
+> [建立單元測試] 功能表命令僅供以 .NET Framework 為目標 (非 .NET Core) 的受控程式碼使用。
 
-[建立單元測試]  功能表命令可延伸，並可用來產生 MSTest、MSTest V2、NUnit 和 xUnit 測試。
+[建立單元測試] 功能表命令可延伸，並可用來產生 MSTest、MSTest V2、NUnit 和 xUnit 測試。
 
 ## <a name="get-started"></a>開始使用
 
-若要開始，請以滑鼠右鍵按一下您想要測試之專案程式碼編輯器中的方法、類型或命名空間，然後選擇 [建立單元測試]  。 [建立單元測試]  對話方塊隨即開啟，您可以在此設定想要建立的測試方式。
+若要開始，請以滑鼠右鍵按一下您想要測試之專案程式碼編輯器中的方法、類型或命名空間，然後選擇 [建立單元測試]。 [建立單元測試] 對話方塊隨即開啟，您可以在此設定想要建立的測試方式。
 
 ![使用建立單元測試命令](media/createunittestcommand.png)
 
@@ -50,7 +50,7 @@ ms.locfileid: "66745804"
 
 不過，這項功能也同樣適用於開發人員開始撰寫一些程式碼，並用它啟動單元測試的情況。 在編碼流程內，開發人員可能想要快速建立特定程式碼片段的單元測試方法 Stub (具有適當的測試類別和測試專案)。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [使用 [建立單元測試] 來建立單元測試方法虛設常式](https://devblogs.microsoft.com/devops/creating-unit-test-method-stubs-with-create-unit-tests/) \(英文\)
 - [單元測試部落格文章](https://devblogs.microsoft.com/devops/?s=unit+testing) \(英文\)

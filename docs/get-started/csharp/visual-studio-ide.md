@@ -4,19 +4,19 @@ ms.date: 03/19/2019
 ms.technology: vs-ide-general
 ms.custom: get-started
 ms.topic: conceptual
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9ba78c7ee3cd723fdb89b833df7974d700337c38
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: ca48b0510c36bd0d5528cda5d4514f12763ee243
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62952392"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72632862"
 ---
 # <a name="welcome-to-the-visual-studio-ide--c"></a>歡迎使用 Visual Studio IDE | C\#
 
@@ -48,7 +48,7 @@ ms.locfileid: "62952392"
 > [!div class="nextstepaction"]
 > [了解專案與解決方案](tutorial-projects-solutions.md)
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - 探索[更多 Visual Studio 功能](../../ide/advanced-feature-overview.md)
 - 瀏覽 [visualstudio.microsoft.com](https://visualstudio.microsoft.com/vs/)

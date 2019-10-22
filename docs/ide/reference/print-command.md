@@ -9,17 +9,17 @@ helpviewer_keywords:
 - Print method
 - Print command
 ms.assetid: 0412d381-590a-483f-bab4-6e1cca095645
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: df609011250cebc097d3d356242302dbe41f8007
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: d6f0520d723dab088564e4f97e9ce47a8147db3d
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62969081"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72655763"
 ---
 # <a name="print-command"></a>Print 命令
 

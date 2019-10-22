@@ -1,106 +1,106 @@
 ---
-title: 偵錯 XSLT 樣式表
+title: Debug XSLT 樣式表單
 ms.date: 03/05/2019
 ms.topic: conceptual
 ms.assetid: 3db9fa5a-f619-4cb6-86e7-64b364e58e5d
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e787ca3d2d29f04d6af27a5f36f1f84c9d0bc9f4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0c1f774757acc293091f19a783ed93f34647d494
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62808464"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72604604"
 ---
-# <a name="walkthrough-debug-an-xslt-style-sheet"></a>逐步解說：偵錯 XSLT 樣式表
+# <a name="walkthrough-debug-an-xslt-style-sheet"></a>逐步解說： Debug XSLT 樣式表單
 
 此逐步教學中的步驟示範如何使用 XSLT 偵錯工具。 這些步驟包括檢視變數、設定中斷點及逐步執行程式碼。 偵錯工具可讓您一次執行一行程式碼。
 
-若要準備此逐步解說中，第一次複製這兩個[範例檔案](#sample-files)到本機電腦。 一個是樣式表中，一個是我們將使用做為輸入至樣式表的 XML 檔案。 在本逐步解說中，我們使用的樣式表會尋找其成本會低於書籍價格平均值的所有書籍。
+若要為此逐步解說做準備，請先將兩個[範例](#sample-files)檔案複製到本機電腦。 其中一個是樣式表單，而一個是用來做為樣式表單輸入的 XML 檔案。 在此逐步解說中，我們使用的樣式表單會尋找其成本低於平均書籍價格的所有書籍。
 
 > [!NOTE]
-> 只有 Enterprise 版的 Visual Studio 中使用 XSLT 偵錯工具。
+> XSLT 偵錯工具僅適用于 Enterprise edition 的 Visual Studio。
 
 ## <a name="start-debugging"></a>開始偵錯
 
-1. 從**檔案**功能表上，選擇**開放** > **檔案**。
+1. 從 [檔案 **] 功能表中，選擇 [** **開啟** ** >  檔案**]。
 
-2. 找出*以下 average.xsl*檔案，然後選擇**開啟**。
+2. 找出 [ *below-average* ] 檔案，然後選擇 [**開啟**]。
 
-   XML 編輯器中開啟樣式表。
+   樣式表單會在 XML 編輯器中開啟。
 
-3. 按一下 瀏覽按鈕 (**...**) 上**輸入**文件的 屬性 視窗的欄位。 (如果**屬性**看不到視窗，在編輯器中，開啟的檔案上按一下滑鼠右鍵，然後選擇**屬性**。)
+3. 在 [檔案屬性] 視窗的 [**輸入**] 欄位上，按一下 [流覽] 按鈕（ **...** ）。 （如果看不到 [**屬性**] 視窗，請以滑鼠右鍵按一下編輯器中開啟之檔案的任何位置，然後選擇 [**屬性**]）。
 
-4. 找出*books.xml*檔案，然後再選擇**開啟**。
+4. 找出*books.xml*檔案，然後選擇 [**開啟**]。
 
    這會設定用於 XSLT 轉換的來源文件檔案。
 
-5. 設定[中斷點](../debugger/using-breakpoints.md)在第 12 個行*以下 average.xsl*。 您可以在下列幾種方式：
+5. 在*below-average*的第12行上設定[中斷點](../debugger/using-breakpoints.md)。 您可以透過下列其中一種方式來執行這項操作：
 
-   - 按一下第 12 行上的編輯器 的邊界。
+   - 在第12行的編輯器邊界上按一下。
 
-   - 在第 12 行上任何位置按一下，然後按**F9**。
+   - 按一下第12行上的任何位置，然後按**F9**鍵。
 
-   - 以滑鼠右鍵按一下`xsl:if`開始標記，，然後選擇**中斷點** > **插入中斷點**。
+   - 以滑鼠右鍵按一下 `xsl:if` 開始 標記，然後選擇 **中斷點**  > **插入中斷點**。
 
-      ![在 Visual Studio 中的 XSL 檔案中插入中斷點](media/insert-breakpoint.PNG)
+      ![在 Visual Studio 的 XSL 檔案中插入中斷點](media/insert-breakpoint.PNG)
 
-6. 在功能表列上選擇  **XML** > **啟動 XSLT 偵錯**(或按**Alt**+**F5**)。
+6. 在功能表列上，選擇 [ **XML** ]  >  [**啟動 XSLT 調試**] （或按**Alt** +**F5**）。
 
-   在偵錯的處理序啟動。
+   啟動偵錯工具。
 
-   在編輯器中，偵錯工具位於`xsl:if`樣式表的項目。 另一個名為的檔案*以下 average.xml*編輯器; 中開啟這是將會填入做為輸入檔中的每個節點的輸出檔*books.xml*處理。
+   在編輯器中，偵錯工具位於樣式表單的 `xsl:if` 元素上。 另一個名為*below-average*的檔案會在編輯器中開啟;這是輸出檔案，會在處理輸入檔中的每個*節點時填入*。
 
-   **自動變數**，**區域變數**，並**監看式 1**視窗會出現在 Visual Studio 視窗底部。 **區域變數**視窗會顯示所有本機變數和其目前值。 其中包括在樣式表中定義的變數，及偵錯工具用來追蹤目前內容中之節點的變數。
+   [自動變數]、[**區域變數** **] 和 [監看式 1]** 視窗會顯示**在 [Visual Studio**] 視窗的底部。 [**區域變數**] 視窗會顯示所有區域變數及其目前的值。 其中包括在樣式表中定義的變數，及偵錯工具用來追蹤目前內容中之節點的變數。
 
 ## <a name="watch-window"></a>監看式視窗
 
-我們將新增兩個變數來**監看式 1**視窗，以便處理的輸入的檔時，我們可以檢查其值。 (您也可以使用**區域變數**來檢查值，如果您想要監看的變數是否已有的視窗。)
+我們會將兩個變數新增至 [**監看式 1** ] 視窗，讓我們可以在處理輸入檔時檢查其值。 （如果您想要監看的變數已經存在，您也可以使用 [**區域變數**] 視窗來檢查值）。
 
-1. 從**偵錯**功能表上，選擇**Windows** > **監看式** > **監看式 1**。
+1. 從 [**調試** **]** 功能表中，選擇 [ **Windows**  >  Watch  > **監看式 1]** 。
 
-   **監看式 1**視窗成為可見。
+   [**監**看式 1] 視窗會變成可見狀態。
 
-2. 型別`$bookAverage`中**名稱**欄位，然後再按**Enter**。
+2. 在 [**名稱**] 欄位中輸入 `$bookAverage`，然後按**enter**。
 
-   值`$bookAverage`變數會顯示在**值**欄位。
+   @No__t_0 變數的值會顯示在 [**值**] 欄位中。
 
-3. 在下一行中，輸入`self::node()`中**名稱**欄位，然後再按**Enter**。
+3. 在下一行中，于 [**名稱**] 欄位中輸入 `self::node()`，然後按**enter**。
 
    `self::node()` 是一種 XPath 運算式，可評估目前的內容節點。 `self::node()` XPath 運算式的值為第一個書籍節點。 它會隨著轉換的進行而變更。
 
-4. 依序展開`self::node()`節點，然後展開節點誰具有值是`price`。
+4. 展開 [`self::node()`] 節點，然後展開 [值為] 的節點 `price`。
 
-   ![在 Visual Studio 中的 XSLT 偵錯期間監看式視窗](media/xslt-debugging-watch-window.png)
+   ![Visual Studio 中 XSLT 調試期間的監看式視窗](media/xslt-debugging-watch-window.png)
 
-   您可以查看書籍價格目前書籍節點的值，並比較它`$bookAverage`值。 因為書籍價格低於平均值，`xsl:if`繼續偵錯程序時，條件應該會成功。
+   您可以查看目前 book 節點的書籍價格值，並將其與 `$bookAverage` 值進行比較。 因為書籍價格低於平均值，所以當您繼續進行偵錯工具時，`xsl:if` 條件應該會成功。
 
 ## <a name="step-through-the-code"></a>逐步執行程式碼
 
 1. 按 **F5** 繼續。
 
-   因為第一個書籍節點滿足`xsl:if`條件，該書籍節點加入至*下方 average.xml*輸出檔。 偵錯工具繼續執行，直到其再次定位於樣式表的 `xsl:if` 項目上為止。 偵錯工具目前位於第二個書籍節點上的位置*books.xml*檔案。
+   因為第一個書籍節點符合 `xsl:if` 條件，所以會將 [書籍] 節點加入至*below-average*輸出檔。 偵錯工具繼續執行，直到其再次定位於樣式表的 `xsl:if` 項目上為止。 偵錯工具現在定位於*books.xml*檔案中的第二個書籍節點。
 
-   在 [**監看式 1** ] 視窗中，`self::node()`值變更為第二個書籍節點。 藉由檢查價格項目的值，您可以確定價格高於平均值，因此 `xsl:if` 條件應該會失敗。
+   在 [**監看式 1** ] 視窗中，`self::node()` 值會變更為第二個書籍節點。 藉由檢查價格項目的值，您可以確定價格高於平均值，因此 `xsl:if` 條件應該會失敗。
 
 2. 按 **F5** 繼續。
 
-   因為不符合第二個書籍節點`xsl:if`條件，該書籍節點不會加入至*下方 average.xml*輸出檔。 偵錯工具會繼續執行直到其再次定位於上`xsl:if`樣式表中的項目。 偵錯工具現在位於第三個`book`中的節點*books.xml*檔案。
+   因為第二個書籍節點不符合 `xsl:if` 條件，所以不會將書籍節點新增至*below-average*輸出檔。 偵錯工具會繼續執行，直到它再次放置在樣式表單中的 `xsl:if` 元素上。 偵錯工具現在定位於*books.xml*檔案中的第三個 `book` 節點。
 
-   在 [**監看式 1** ] 視窗中，`self::node()`值變更為第三個書籍節點。 藉由檢查的值`price`項目，您可以判斷價格低於平均值。 `xsl:if`條件應該會成功。
+   在 [**監看式 1** ] 視窗中，`self::node()` 值會變更為第三個書籍節點。 藉由檢查 `price` 元素的值，您可以判斷價格低於平均值。 @No__t_0 條件應該會成功。
 
 3. 按 **F5** 繼續。
 
-   因為`xsl:if`已滿足條件，將第三本書加入至*下方 average.xml*輸出檔。 當處理過 XML 文件中的所有書籍後，偵錯工具會停止。
+   因為已滿足 `xsl:if` 條件，所以會將第三本書新增至*below-average*輸出檔。 當處理過 XML 文件中的所有書籍後，偵錯工具會停止。
 
 ## <a name="sample-files"></a>範例檔案
 
 逐步教學會使用下列兩個檔案。
 
-### <a name="below-averagexsl"></a>below-average.xsl
+### <a name="below-averagexsl"></a>below-average .xsl
 
 ```xml
 <?xml version='1.0'?>
@@ -155,6 +155,6 @@ ms.locfileid: "62808464"
 </bookstore>
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [偵錯 XSLT](../xml-tools/debugging-xslt.md)

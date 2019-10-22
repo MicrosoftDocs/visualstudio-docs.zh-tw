@@ -4,17 +4,17 @@ ms.date: 03/23/2018
 ms.topic: conceptual
 helpviewer_keywords:
 - full solution analysis
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 26cd267f80f8c7c220771a5c2220d22b66929051
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: 3f7837b1e5ea5b84e1ee1197bf6f8c40d0863c3e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72448933"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72649450"
 ---
 # <a name="how-to-enable-and-disable-full-solution-analysis-for-managed-code"></a>如何：啟用和停用 managed 程式碼的完整解決方案分析
 

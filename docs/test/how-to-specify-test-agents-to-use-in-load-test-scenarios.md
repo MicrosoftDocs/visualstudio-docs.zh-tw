@@ -9,17 +9,17 @@ helpviewer_keywords:
 - tests agents, load tests, specifying
 - load tests, test agents
 ms.assetid: e86806dd-5897-4e4c-bfd4-8d687fb72a6e
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 6045466d93a0017b648ca4327e80c801517c1359
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 207adc18d3a992f3079b929c46005ea29304074b
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62786428"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653409"
 ---
-# <a name="how-to-specify-test-agents-to-use-in-load-test-scenarios"></a>HOW TO：指定要用於負載測試情節的測試代理程式
+# <a name="how-to-specify-test-agents-to-use-in-load-test-scenarios"></a>如何：指定要用於負載測試情節的測試代理程式
 
 使用 [新增負載測試精靈] 建立負載測試之後，您就可以使用 [負載測試編輯器] 來變更情節屬性，以便符合您的測試需求和目標。
 
@@ -64,7 +64,7 @@ ms.locfileid: "62786428"
 
 5. 變更屬性之後，請選擇 [檔案] 功能表上的 [儲存]。 然後，您就可以使用新的 [要使用的代理程式] 值來執行負載測試。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [編輯負載測試情節](../test/edit-load-test-scenarios.md)
 - [逐步解說：建立和執行負載測試](../test/walkthrough-create-and-run-a-load-test.md)

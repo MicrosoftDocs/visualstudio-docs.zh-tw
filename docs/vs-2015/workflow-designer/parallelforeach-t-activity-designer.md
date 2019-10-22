@@ -1,5 +1,5 @@
 ---
-title: ParallelForEach&lt;T&gt;活動設計工具 |Microsoft Docs
+title: ParallelForEach &lt;T &gt; 活動設計工具 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-workflow-designer
@@ -8,47 +8,45 @@ f1_keywords:
 - System.Activities.Statements.ParallelForEach`1.UI
 ms.assetid: e93a4843-aef2-4d3e-9a0a-a2d3d1411aa7
 caps.latest.revision: 9
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 825906f3de1b2d40d96dc19ed45d2a368d889994
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4c659e941a8503a0d5ff601fea23fcec69b2bbcf
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63002302"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72672606"
 ---
-# <a name="parallelforeachlttgt-activity-designer"></a>ParallelForEach&lt;T&gt;活動設計工具
-<xref:System.Activities.Statements.ParallelForEach%601> 活動會列舉集合的項目，並且平行執行集合中各個項目的內嵌陳述式，而這是同一個執行緒上的非同步處理。 如果預期此活動的子活動會進入閒置狀態，請使用這個流量控制活動代替 <xref:System.Activities.Statements.Sequence> 活動。  
-  
- <xref:System.Activities.Statements.ParallelForEach%601> 活動有一個 <xref:System.Activities.Statements.ParallelForEach%601.CompletionCondition%2A> 屬性，其中包含使用者指定的 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 運算式。 在各個分支完成之後，<xref:System.Activities.Statements.ParallelForEach%601> 活動會評估這個屬性。 如果評估為 **，則為 true**，然後在<xref:System.Activities.Statements.ParallelForEach%601>活動完成且沒有執行其他分支。 如果<xref:System.Activities.Statements.ParallelForEach%601.CompletionCondition%2A>不會評估 **，則為 true**，然後在<xref:System.Activities.Statements.ParallelForEach%601>活動完成的所有子活動完成時。  
-  
-## <a name="the-parallelforeacht-activity"></a>ParallelForEach\<T > 活動  
- <xref:System.Activities.Statements.ParallelForEach%601> 會列舉其值，並且為列舉的每一個值排程 <xref:System.Activities.Statements.ParallelForEach%601.Body%2A>。 只會排程 <xref:System.Activities.Statements.ParallelForEach%601.Body%2A>。 主體執行的方式取決於 <xref:System.Activities.Statements.ParallelForEach%601.Body%2A> 是否變成閒置。  
-  
- 如果 <xref:System.Activities.Statements.ParallelForEach%601.Body%2A> 沒有變成閒置，就會依相反順序執行，因為排程的活動會做為一個堆疊處理，所以最後排程的活動會最先執行。 例如，如果您有一堆{1,2,3,4}中<xref:System.Activities.Statements.ParallelForEach%601>並用**WriteLine**做為主體將值寫出。主控台會有 4, 3, 2, 1 列印出來。 這是因為**WriteLine**沒有變成閒置，4 之後**WriteLine**活動已排程、 他們使用堆疊行為來執行 （第一個在最後一個外）。  
-  
- 但是，如果您在 <xref:System.Activities.Statements.ParallelForEach%601.Body%2A> 中有活動可以變成閒置，像是 <xref:System.ServiceModel.Activities.Receive> 活動或 <xref:System.Activities.Statements.Delay> 活動。 那麼，則不需要等候它們完成。 <xref:System.Activities.Statements.ParallelForEach%601> 會移至下一個排程的主體活動，且會嘗試執行此活動。 如果該活動也變成閒置，<xref:System.Activities.Statements.ParallelForEach%601> 就會再移至下一個主體活動。  
-  
-### <a name="using-the-parallelforeacht-activity-designer"></a>使用 ParallelForEach\<T > 活動設計工具  
- **ParallelForEach\<T >** 活動設計工具可在**控制流程**分類**工具箱**，依序按一下 [存取的哪一個**工具箱**] 索引標籤上的左側[!INCLUDE[wfd2](../includes/wfd2-md.md)](或者，選取**工具列**從**檢視**功能表或 CTRL + ALT + X。)  
-  
- **ParallelForEach\<T >** 活動設計工具可以從拖曳**工具箱**，放入[!INCLUDE[wfd2](../includes/wfd2-md.md)]呈現活動設計工具通常用來放置，只要針對例如，內部**順序**活動設計工具。 之後它置放於[!INCLUDE[wfd2](../includes/wfd2-md.md)]，它會建立<xref:System.Activities.Statements.ParallelForEach%601>活動，其中預設包含<xref:System.Activities.Activity.DisplayName%2A>的**ParallelForEach\<Int32 >。**  
-  
-### <a name="parallelforeacht-properties-in-the-workflow-designer"></a>ParallelForEach\<T > 中工作流程設計工具屬性  
- 下表顯示最為實用的 <xref:System.Activities.Statements.ParallelForEach%601> 活動屬性，並且說明它們在設計工具中的使用方式。  
-  
-|屬性名稱|必要|使用量|  
-|-------------------|--------------|-----------|  
-|<xref:System.Activities.Activity.DisplayName%2A>|False|指定活動設計工具在標頭中的易記顯示名稱。 預設值是**ParallelForEach\<Int32 >**。 值可以在中選擇性地編輯**屬性**方格或直接在活動設計工具標頭。|  
-|<xref:System.Activities.Statements.ParallelForEach%601.Body%2A>|False|集合中每個項目要執行的活動。 若要新增<xref:System.Activities.Statements.ParallelForEach%601.Body%2A>活動，請從工具箱拖曳到**主體**方塊**ParallelForEach\<T >** 活動設計工具提示文字 「 置放活動 」 與。|  
-|**TypeArgument**|True|中的項目型別<xref:System.Activities.Statements.ParallelForEach%601.Values%2A>一般參數所指定的集合*T*。根據預設， **TypeArgument**設為**Int32**。 若要變更中的型別 T **ParallelForEach\<T >** 活動設計工具，變更的值**TypeArgument**屬性方格中的下拉式方塊。|  
-|<xref:System.Activities.Statements.ParallelForEach%601.Values%2A>|True|要重複項目的集合。 若要設定<xref:System.Activities.Statements.ParallelForEach%601.Values%2A>，輸入[!INCLUDE[vbprvb](../includes/vbprvb-md.md)]中的運算式**值**方塊**ForEach\<T >** 在方塊中，「 輸入 VB 運算式 」 提示文字，或在活動設計工具**值**方塊**屬性**視窗。|  
-|<xref:System.Activities.Statements.ParallelForEach%601.CompletionCondition%2A>||在每個反覆運算完成之後評估。 如果評估為 true，則會取消已排程的擱置中反覆運算。 如果並未設定此屬性，則會執行所有已排程的陳述式，直到完成為止。|  
-  
- 依預設，迴圈 Iterator 會命名為 item。 您可以變更其迭代器變數的名稱**ForEach**方塊中**ParallelForEach\<T >** 活動設計工具。 迴圈 Iterator 可用在 <xref:System.Activities.Statements.ParallelForEach%601> 活動子系中的運算式。  
-  
-## <a name="see-also"></a>另請參閱  
- [順序](../workflow-designer/sequence-activity-designer.md)   
- [平行](../workflow-designer/parallel-activity-designer.md)   
- [控制流程](../workflow-designer/control-flow-activity-designers.md)
+# <a name="parallelforeachlttgt-activity-designer"></a>ParallelForEach &lt;T &gt; 活動設計工具
+<xref:System.Activities.Statements.ParallelForEach%601> 活動會列舉集合的項目，並且平行執行集合中各個項目的內嵌陳述式，而這是同一個執行緒上的非同步處理。 如果預期此活動的子活動會進入閒置狀態，請使用這個流量控制活動代替 <xref:System.Activities.Statements.Sequence> 活動。
+
+ <xref:System.Activities.Statements.ParallelForEach%601> 活動有一個 <xref:System.Activities.Statements.ParallelForEach%601.CompletionCondition%2A> 屬性，其中包含使用者指定的 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 運算式。 在各個分支完成之後，<xref:System.Activities.Statements.ParallelForEach%601> 活動會評估這個屬性。 如果評估為**true**，則 <xref:System.Activities.Statements.ParallelForEach%601> 活動會完成，而不會執行其他分支。 如果 <xref:System.Activities.Statements.ParallelForEach%601.CompletionCondition%2A> 未評估為**true**，則 <xref:System.Activities.Statements.ParallelForEach%601> 活動會在所有子活動完成時完成。
+
+## <a name="the-parallelforeacht-activity"></a>ParallelForEach \<T > 活動
+ <xref:System.Activities.Statements.ParallelForEach%601> 會列舉其值，並且為列舉的每一個值排程 <xref:System.Activities.Statements.ParallelForEach%601.Body%2A>。 只會排程 <xref:System.Activities.Statements.ParallelForEach%601.Body%2A>。 主體執行的方式取決於 <xref:System.Activities.Statements.ParallelForEach%601.Body%2A> 是否變成閒置。
+
+ 如果 <xref:System.Activities.Statements.ParallelForEach%601.Body%2A> 沒有變成閒置，就會依相反順序執行，因為排程的活動會做為一個堆疊處理，所以最後排程的活動會最先執行。 例如，如果您有 {1,2,3,4}in <xref:System.Activities.Statements.ParallelForEach%601> 的集合，並使用**WriteLine**做為主體，以將值寫出。您在主控台中列印了4、3、2、1。 這是因為**writeline**不會處於閒置狀態，所以在排程4個**writeline**活動之後，它們會使用堆疊行為（先在最後一個）執行。
+
+ 但是，如果您在 <xref:System.Activities.Statements.ParallelForEach%601.Body%2A> 中有活動可以變成閒置，像是 <xref:System.ServiceModel.Activities.Receive> 活動或 <xref:System.Activities.Statements.Delay> 活動。 那麼，則不需要等候它們完成。 <xref:System.Activities.Statements.ParallelForEach%601> 會移至下一個排程的主體活動，且會嘗試執行此活動。 如果該活動也變成閒置，<xref:System.Activities.Statements.ParallelForEach%601> 就會再移至下一個主體活動。
+
+### <a name="using-the-parallelforeacht-activity-designer"></a>使用 ParallelForEach \<T > 活動設計工具
+ [ **ParallelForEach \<T >** ] 活動設計**工具**位於 [工具箱] 的 [**控制流程**] 分類中，若要存取，請按一下 [!INCLUDE[wfd2](../includes/wfd2-md.md)] 左側的 [**工具箱**] 索引標籤（也可以選取**工具列** **，或按 CTRL** + ALT + X）。
+
+ [ **ParallelForEach \<T >** ] 活動設計工具可以從 [**工具箱**] 拖曳出來，放到 [!INCLUDE[wfd2](../includes/wfd2-md.md)] 介面上通常用來放置活動設計工具的任一處，例如在 [ **Sequence** ] 活動設計工具內。 將它放入 [!INCLUDE[wfd2](../includes/wfd2-md.md)] 之後，它會建立 <xref:System.Activities.Statements.ParallelForEach%601> 活動，其預設會包含**ParallelForEach \<Int32 >** 的 <xref:System.Activities.Activity.DisplayName%2A>。
+
+### <a name="parallelforeacht-properties-in-the-workflow-designer"></a>工作流程設計工具中的 ParallelForEach \<T > 屬性
+ 下表顯示最為實用的 <xref:System.Activities.Statements.ParallelForEach%601> 活動屬性，並且說明它們在設計工具中的使用方式。
+
+|屬性名稱|必要項|使用量|
+|-------------------|--------------|-----------|
+|<xref:System.Activities.Activity.DisplayName%2A>|False|指定活動設計工具在標頭中的易記顯示名稱。 預設值為**ParallelForEach \<Int32 >** 。 您可以在 [**屬性**] 方格中或直接在活動設計工具標頭上，選擇性地編輯此值。|
+|<xref:System.Activities.Statements.ParallelForEach%601.Body%2A>|False|集合中每個項目要執行的活動。 若要加入 <xref:System.Activities.Statements.ParallelForEach%601.Body%2A> 活動，請將活動從 [工具箱] 拖放到 [ **ParallelForEach \<T >** ] 活動設計工具上**的 [內**文] 方塊中，並提供提示文字「在此放置活動」。|
+|**TypeArgument**|True|泛型參數*t*所指定之 <xref:System.Activities.Statements.ParallelForEach%601.Values%2A> 集合中的專案類型。根據預設， **TypeArgument**會設定為**Int32**。 若要在 [ **ParallelForEach \<T >** ] 活動設計工具中變更類型 T，請變更屬性方格中 [ **TypeArgument** ] 下拉式方塊的值。|
+|<xref:System.Activities.Statements.ParallelForEach%601.Values%2A>|True|要重複項目的集合。 若要設定 <xref:System.Activities.Statements.ParallelForEach%601.Values%2A>，請在 [ **ForEach \<T >** 活動設計工具] 方塊的 [**值**] 方塊中，于 [**屬性**] 視窗的提示文字 [輸入 VB 運算式] 或 [**值**] 方塊中，輸入 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 運算式。|
+|<xref:System.Activities.Statements.ParallelForEach%601.CompletionCondition%2A>||在每個反覆運算完成之後評估。 如果評估為 true，則會取消已排程的擱置中反覆運算。 如果並未設定此屬性，則會執行所有已排程的陳述式，直到完成為止。|
+
+ 依預設，迴圈 Iterator 會命名為 item。 您可以在 [ **ParallelForEach \<T >** ] 活動設計工具的 [ **ForEach** ] 方塊中變更 iterator 變數的名稱。 迴圈 Iterator 可用在 <xref:System.Activities.Statements.ParallelForEach%601> 活動子系中的運算式。
+
+## <a name="see-also"></a>請參閱
+ [序列](../workflow-designer/sequence-activity-designer.md)[平行](../workflow-designer/parallel-activity-designer.md)[控制流程](../workflow-designer/control-flow-activity-designers.md)

@@ -1,26 +1,26 @@
 ---
-title: HOW TO：指定應用程式圖示 (Visual Basic、C#)
+title: 如何：指定應用程式圖示 (Visual Basic、C#)
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - icons [Visual Studio], application
 - application properties [Visual Studio], icons
 - application icons [Visual Studio]
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: f2903821c0e0843de43f68d67cc64c344ab95e02
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 1e137eda77f1807b80409872d9fe0c2966df2a41
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62547776"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72656608"
 ---
-# <a name="how-to-specify-an-application-icon-visual-basic-c"></a>HOW TO：指定應用程式圖示 (Visual Basic、C#)
+# <a name="how-to-specify-an-application-icon-visual-basic-c"></a>如何：指定應用程式圖示 (Visual Basic、C#)
 
-專案的 `Icon` 屬性指定已編譯的應用程式將會顯示在**檔案總管**和 Windows 工作列的圖示檔 (*.ico*)。
+專案的 `Icon` 屬性指定已編譯的應用程式將會顯示在**檔案總管**和 Windows 工作列的圖示檔 ( *.ico*)。
 
 透過 [專案設計工具] 的 [應用程式] 窗格，即可存取 `Icon` 屬性；該屬性包含圖示清單，其中的圖示都已經用資源或內容檔案的形式新增至專案。
 
@@ -35,11 +35,11 @@ ms.locfileid: "62547776"
 
 1. 當 [專案設計工具] 出現時，請選擇 [應用程式] 索引標籤。
 
-1. **(Visual Basic)**&mdash;在 [圖示] 清單中，選擇圖示檔 (*.ico*)。
+1. **(Visual Basic)** &mdash;在 [圖示] 清單中，選擇圖示檔 ( *.ico*)。
 
-    **C#**&mdash;選擇 [圖示] 清單附近的 [\<瀏覽...>] 按鈕，然後瀏覽至您想要之圖示檔的位置。
+    **C#** &mdash;選擇 [圖示] 清單附近的 [\<瀏覽...>] 按鈕，然後瀏覽至您想要之圖示檔的位置。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [應用程式頁面、專案設計工具 (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)
 - [應用程式頁面、專案設計工具 (C#)](../ide/reference/application-page-project-designer-csharp.md)

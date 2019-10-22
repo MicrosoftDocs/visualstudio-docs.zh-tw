@@ -6,17 +6,17 @@ helpviewer_keywords:
 - template parameters
 - template parameters, substituting
 - Visual Studio templates, using parameters
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: cf9a990be3f5e87180967a4f9f274ec79fbc357e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 09d86c52fcd9ddce3c986e0bfa6c9c96f746c663
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62946875"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72656570"
 ---
-# <a name="how-to-substitute-parameters-in-a-template"></a>HOW TO：替代範本中的參數
+# <a name="how-to-substitute-parameters-in-a-template"></a>如何：替代範本中的參數
 
 從範本建立檔案時，範本參數可讓您取代類別名稱和命名空間等識別碼。 您可以將範本參數新增至現有的範本，或使用範本參數建立您自己的範本。
 
@@ -26,7 +26,7 @@ ms.locfileid: "62946875"
 
 ## <a name="example---namespace-name"></a>範例 - 命名空間名稱
 
-1. 在範本的一或多個程式碼檔案中，插入參數。 例如：
+1. 在範本的一或多個程式碼檔案中，插入參數。 例如:
 
     ```csharp
     namespace $safeprojectname$
@@ -40,7 +40,7 @@ ms.locfileid: "62946875"
     <ProjectItem ReplaceParameters="true">Class1.cs</ProjectItem>
     ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [建立專案與項目範本](../ide/creating-project-and-item-templates.md)
 - [範本參數](../ide/template-parameters.md)

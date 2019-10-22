@@ -14,17 +14,17 @@ helpviewer_keywords:
 - Class Designer [Visual Studio], refactoring classes
 - refactoring, classes
 ms.assetid: dcf07bb4-fa3b-4224-9dec-566fd924a8ce
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d99fc68f6b42b442a87ead02aba888063b1b42a1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 9b82bebb8e7eedcf6bdff7b12048f8c98cabdeb5
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62975082"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72631176"
 ---
 # <a name="refactor-classes-and-types-in-class-designer"></a>在類別設計工具中將類別與類型重構
 
@@ -37,9 +37,9 @@ ms.locfileid: "62975082"
 
 |工作|支援內容|
 |----------| - |
-|**重構類別：** 您可以使用重構作業來將一個類別分割成部分類別，或是實作抽象基底類別。|-   [如何：將類別分割為部分類別](how-to-split-a-class-into-partial-classes.md)|
-|**使用介面：** 在類別設計工具中，您可以將介面連線至替介面方法提供程式碼的類別，以在類別圖表上實作介面。|-   [如何：實作介面](how-to-implement-an-interface.md)|
-|**重構類型、類型成員和參數：** 使用 [類別設計工具]，即可重新命名類型、覆寫類型成員，或將其從某類型移至另一類型。 您也可以建立可為 Null 的類型。|-   [重新命名類型和類型成員](#rename-types-and-type-members)<br />-   [將類型成員從一個類型移到另一個類型](#move-type-members-from-one-type-to-another)<br />-   [如何：建立可為 Null 的類型](how-to-create-a-nullable-type.md)|
+|**重構類別：** 您可以使用重構作業來將一個類別分割成部分類別，或是實作抽象基底類別。|-   [如何：將類別分割成部分類別](how-to-split-a-class-into-partial-classes.md)|
+|**使用介面：** 在類別設計工具中，您可以將介面連接至替介面方法提供程式碼的類別，以在類別圖表上實作介面。|-   [如何：實作介面](how-to-implement-an-interface.md)|
+|**重構類型、類型成員與參數：** 使用類別設計工具，即可重新命名類型、覆寫類型成員，或將其從某類型移至另一類型。 您也可以建立可為 Null 的類型。|-   [重新命名類型和類型成員](#rename-types-and-type-members)<br />-   [將類型成員從一個類型移到另一個類型](#move-type-members-from-one-type-to-another)<br />-   [如何：建立可為 Null 的類型](how-to-create-a-nullable-type.md)|
 
 ## <a name="rename-types-and-type-members"></a>重新命名類型和類型成員
 
@@ -59,7 +59,7 @@ ms.locfileid: "62975082"
 
      [類別細節] 視窗會隨即出現。
 
-2. 在 [名稱]  欄中，變更類型成員的名稱
+2. 在 [名稱] 欄中，變更類型成員的名稱
 
 3. 若要將焦點從儲存格移開，請按 **ENTER**，或是在儲存格以外的地方按一下。
 
@@ -72,7 +72,7 @@ ms.locfileid: "62975082"
 
      [屬性] 視窗會隨即出現，並顯示類型或類型成員的屬性。
 
-2. 在 [名稱]  屬性中，變更類型或類型成員的名稱。
+2. 在 [名稱] 屬性中，變更類型或類型成員的名稱。
 
      新的名稱會傳播至目前專案中曾出現舊名稱的所有視窗和程式碼位置。
 
@@ -80,12 +80,12 @@ ms.locfileid: "62975082"
 
 您可以使用**類別設計工具**將類型成員從一個類型移至另一個類型。 兩個類型在目前的類別圖表都必須可見。
 
-1. 在設計介面上顯示的類型中，用滑鼠右鍵按一下您要移動到另一個類型的成員，然後選取 [剪下] 。
+1. 在設計介面上顯示的類型中，用滑鼠右鍵按一下您要移動到另一個類型的成員，然後選取 [剪下]。
 
-2. 用滑鼠右鍵按一下目的類型，然後選取 [貼上] 。
+2. 用滑鼠右鍵按一下目的類型，然後選取 [貼上]。
 
      該屬性會從來源類型中移除，並出現在目的類型中。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [設計類別和類型](designing-and-viewing-classes-and-types.md)

@@ -6,17 +6,17 @@ helpviewer_keywords:
 - Visual Studio templates, creating multi-project
 - project templates, multi-project
 - multi-project templates
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: f24a7c0d07c804ca45bb31058061cda714ef6a51
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 8ad04a557ee4b0a359efebfbe7a70d8a85db4551
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62430493"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72655842"
 ---
-# <a name="how-to-create-multi-project-templates"></a>HOW TO：建立多重專案範本
+# <a name="how-to-create-multi-project-templates"></a>如何：建立多專案範本
 
 多專案範本是做為兩個以上專案的容器使用。 當您根據多專案範本建立專案時，範本中的每個專案都會新增至方案。
 
@@ -46,14 +46,14 @@ ms.locfileid: "62430493"
 
 多專案範本的根 *vstemplate* 檔案與單一專案範本在下列幾點有所不同：
 
-- **VSTemplate** 項目的 **Type** 屬性具有 **ProjectGroup** 值，而非 **Project**。 例如：
+- **VSTemplate** 項目的 **Type** 屬性具有 **ProjectGroup** 值，而非 **Project**。 例如:
 
     ```xml
     <VSTemplate Version="2.0.0" Type="ProjectGroup"
         xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
     ```
 
-- **TemplateContent** 項目包含 **ProjectCollection** 項目，它具有一或多個 **ProjectTemplateLink** 項目可定義所包含專案的 vstemplate 檔案路徑。 例如：
+- **TemplateContent** 項目包含 **ProjectCollection** 項目，它具有一或多個 **ProjectTemplateLink** 項目可定義所包含專案的 vstemplate 檔案路徑。 例如:
 
     ```xml
     <TemplateContent>
@@ -69,7 +69,7 @@ ms.locfileid: "62430493"
     ```
 
 > [!TIP]
-> 如果您只希望多專案範本顯示在新的 [專案] 對話方塊中而不是它包含的個別專案中，請將內部範本標記為 [[隱藏]](../extensibility/hidden-element-visual-studio-templates.md)。 例如：
+> 如果您只希望多專案範本顯示在新的 [專案] 對話方塊中而不是它包含的個別專案中，請將內部範本標記為 [[隱藏]](../extensibility/hidden-element-visual-studio-templates.md)。 例如:
 >
 > ```xml
 > <VSTemplate Type="Project" ... >
@@ -186,7 +186,7 @@ ms.locfileid: "62430493"
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [建立專案和項目範本](../ide/creating-project-and-item-templates.md)
 - [如何：建立專案範本](../ide/how-to-create-project-templates.md)

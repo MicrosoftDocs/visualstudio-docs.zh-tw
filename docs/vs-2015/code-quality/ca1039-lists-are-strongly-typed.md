@@ -1,5 +1,5 @@
 ---
-title: CA1039:清單強型別 |Microsoft Docs
+title: CA1039：清單為強型別 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,65 +12,65 @@ helpviewer_keywords:
 - ListsAreStronglyTyped
 ms.assetid: 5ac366c4-fd87-4d5c-95d5-f755510c8e5c
 caps.latest.revision: 17
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 3fb1a6255539ded989c5ad9638fc961d606a19f7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8845fb8bcd08f076ddc3c509a37948cf008e0623
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62559740"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72661806"
 ---
-# <a name="ca1039-lists-are-strongly-typed"></a>CA1039:清單為強類型
+# <a name="ca1039-lists-are-strongly-typed"></a>CA1039：清單為強類型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |TypeName|ListsAreStronglyTyped|
 |CheckId|CA1039|
-|分類|Microsoft.Design|
+|Category|Microsoft. Design|
 |中斷變更|中斷|
 
 ## <a name="cause"></a>原因
- 公用或受保護的型別會實作<xref:System.Collections.IList?displayProperty=fullName>，但不提供強型別的方法的一個或多個項目：
+ 公用或受保護的類型會實 <xref:System.Collections.IList?displayProperty=fullName>，但不會針對下列一或多項提供強型別方法：
 
-- IList.Item
+- IList 專案
 
-- IList.Add
+- IList。加入
 
-- IList.Contains
+- IList。 Contains
 
-- IList.IndexOf
+- IList. IndexOf
 
-- IList.Insert
+- IList. Insert
 
-- IList.Remove
+- IList。 Remove
 
 ## <a name="rule-description"></a>規則描述
- 此規則需要<xref:System.Collections.IList>實作提供強類型成員，以便使用者不需要引數轉換<xref:System.Object?displayProperty=fullName>輸入使用時，就提供的功能介面。 <xref:System.Collections.IList>可依索引存取的物件的集合會實作介面。 這項規則假設，實作型別<xref:System.Collections.IList>這麼做以管理比更強型別的執行個體的集合<xref:System.Object>。
+ 此規則需要 <xref:System.Collections.IList> 的執行方式提供強型別成員，讓使用者在使用介面所提供的功能時，不需要將引數轉換成 <xref:System.Object?displayProperty=fullName> 型別。 @No__t_0 介面是由可由索引存取的物件集合所執行。 此規則假設實 <xref:System.Collections.IList> 的類型會執行此工作，以管理比 <xref:System.Object> 更強的類型實例集合。
 
- <xref:System.Collections.IList> 會實作<xref:System.Collections.ICollection?displayProperty=fullName>和<xref:System.Collections.IEnumerable?displayProperty=fullName>介面。 如果您實作<xref:System.Collections.IList>，您必須提供必要的強型別的成員的<xref:System.Collections.ICollection>。 如果在集合中的物件延伸<xref:System.ValueType?displayProperty=fullName>，您必須提供強型別的成員<xref:System.Collections.IEnumerable.GetEnumerator%2A>以避免效能降低，起因於 boxing; 這不是必要的物件集合的參考型別時。
+ <xref:System.Collections.IList> 會執行 <xref:System.Collections.ICollection?displayProperty=fullName> 和 <xref:System.Collections.IEnumerable?displayProperty=fullName> 介面。 如果您執行 <xref:System.Collections.IList>，則必須提供必要的強型別成員來 <xref:System.Collections.ICollection>。 如果集合中的物件延伸 <xref:System.ValueType?displayProperty=fullName>，您就必須為 <xref:System.Collections.IEnumerable.GetEnumerator%2A> 提供強型別成員，以避免因裝箱而造成的效能降低;當集合的物件為參考型別時，這不是必要的。
 
- 若要符合此規則，來實作介面成員明確 InterfaceName.InterfaceMemberName，表單中使用名稱，例如<xref:System.Collections.IList.Add%2A>。 明確介面成員會使用介面所宣告的資料類型。 藉由使用介面成員名稱，例如實作強型別的成員`Add`。 宣告為公用，強類型的成員宣告的參數和傳回值都由集合所管理的強型別。 強式型別取代較弱的類型這類<xref:System.Object>和<xref:System.Array>介面所宣告的。
+ 若要符合此規則，請使用介面名稱. 介面成員名稱格式的名稱明確地執行介面成員，例如 <xref:System.Collections.IList.Add%2A>。 明確的介面成員會使用介面所宣告的資料類型。 使用介面成員名稱（例如 `Add`）來執行強型別成員。 將強型別成員宣告為 public，並將參數和傳回值宣告為集合所管理的強式類型。 強型別會取代由介面所宣告的較弱類型，例如 <xref:System.Object> 和 <xref:System.Array>。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
- 若要修正此規則的違規情形，明確地實作<xref:System.Collections.IList>成員，並提供強型別替代項目，如先前所記下的成員。 正確實作的程式碼<xref:System.Collections.IList>介面並提供必要強類型的成員，請參閱下列的範例。
+ 若要修正此規則的違規，請明確地執行 <xref:System.Collections.IList> 成員，並為先前所述的成員提供強型別的替代專案。 如需正確執行 <xref:System.Collections.IList> 介面的程式碼，並提供必要的強型別成員，請參閱下列範例。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
- 當您實作新的物件架構集合，例如連結的清單中，擴充新集合的型別決定的強型別時，請隱藏此規則的警告。 這些類型應該符合此規則，並公開強類型的成員。
+ 當您執行以物件為基礎的新集合（例如連結的清單），而擴充新集合的類型決定強型別時，請隱藏此規則的警告。 這些類型應符合這項規則，並公開強型別成員。
 
 ## <a name="example"></a>範例
- 在下列範例中，型別`YourType`擴充<xref:System.Collections.CollectionBase?displayProperty=fullName>，如同所有的強類型的集合。 請注意，<xref:System.Collections.CollectionBase>提供的明確實作<xref:System.Collections.IList>為您的介面。 因此，您必須只提供強型別的成員<xref:System.Collections.IList>和<xref:System.Collections.ICollection>。
+ 在下列範例中，類型 `YourType` 擴充 <xref:System.Collections.CollectionBase?displayProperty=fullName>，如同所有強型別集合。 請注意，<xref:System.Collections.CollectionBase> 會為您提供明確的 <xref:System.Collections.IList> 介面實作為。 因此，您必須只提供 <xref:System.Collections.IList> 和 <xref:System.Collections.ICollection> 的強型別成員。
 
  [!code-csharp[FxCop.Design.IListStrongTypes#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.IListStrongTypes/cs/FxCop.Design.IListStrongTypes.cs#1)]
 
-## <a name="related-rules"></a>相關的規則
- [CA1035:實作包含強類型成員](../code-quality/ca1035-icollection-implementations-have-strongly-typed-members.md)
+## <a name="related-rules"></a>相關規則
+ [CA1035：ICollection 實作包含強類型成員](../code-quality/ca1035-icollection-implementations-have-strongly-typed-members.md)
 
- [CA1038:應該是強類型列舉值](../code-quality/ca1038-enumerators-should-be-strongly-typed.md)
+ [CA1038：列舉程式應該是強類型](../code-quality/ca1038-enumerators-should-be-strongly-typed.md)
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
  <xref:System.Collections.CollectionBase?displayProperty=fullName> <xref:System.Collections.ICollection?displayProperty=fullName>
  <xref:System.Collections.IEnumerable?displayProperty=fullName>
  <xref:System.Collections.IList?displayProperty=fullName>

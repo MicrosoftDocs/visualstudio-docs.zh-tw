@@ -7,17 +7,17 @@ helpviewer_keywords:
 - Devenv, /Edit switch
 - /Edit Devenv switch
 ms.assetid: 02b3d6e7-a2b1-4d83-a747-aa8c2fb758b7
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f0eb7cab3b1bc764f663cd647811928510281e8
-ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
-ms.translationtype: HT
+ms.openlocfilehash: 37d49dd7d191ad470639debc50fbed23d5066233
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66432010"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72654478"
 ---
 # <a name="edit-devenvexe"></a>/Edit (devenv.exe)
 
@@ -33,11 +33,11 @@ devenv /Edit [File1[ FileN]...]
 
 - *File1*
 
-  選擇性。 要在現有 Visual Studio 執行個體中開啟的檔案。 如果沒有任何 Visual Studio 執行個體存在，即會建立具有簡易視窗配置的新執行個體，而工具會在新的執行個體中開啟 *File1*。
+  選擇項。 要在現有 Visual Studio 執行個體中開啟的檔案。 如果沒有任何 Visual Studio 執行個體存在，即會建立具有簡易視窗配置的新執行個體，而工具會在新的執行個體中開啟 *File1*。
 
 - *FileN*
 
-  選擇性。 要在現有 Visual Studio 執行個體中開啟的一或多個其他檔案。
+  選擇項。 要在現有 Visual Studio 執行個體中開啟的一或多個其他檔案。
 
 ## <a name="remarks"></a>備註
 
@@ -57,6 +57,6 @@ devenv /edit MyFile.cs
 devenv /edit MyFile1.cs MyFile2.cs MyFile3.cs
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [Devenv 命令列參數](../../ide/reference/devenv-command-line-switches.md)

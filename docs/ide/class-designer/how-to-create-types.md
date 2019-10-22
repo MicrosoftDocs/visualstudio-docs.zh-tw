@@ -1,5 +1,5 @@
 ---
-title: HOW TO：使用 [類別設計工具] 建立類型
+title: 如何：使用類別設計工具建立類型
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,19 +12,19 @@ helpviewer_keywords:
 - types [Visual Studio], class diagrams
 - attributes [Visual Studio], applying custom
 ms.assetid: 94458c31-28bc-40e2-9737-85868788a0e5
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: abee206f67aa019476fcd5085b4ff872338b4d1f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 1db43fc16202234f24d8179bba656d71ac96d39a
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62975264"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72631756"
 ---
-# <a name="how-to-create-types-by-using-class-designer"></a>HOW TO：使用 [類別設計工具] 建立類型
+# <a name="how-to-create-types-by-using-class-designer"></a>如何：使用類別設計工具建立類型
 
 若要為 C# 和 Visual Basic 專案設計新的類型，請在類別圖上建立這些類型。 若要查看現有的類型，請參閱[如何：檢視現有類型](how-to-view-existing-types.md)。
 
@@ -38,11 +38,11 @@ ms.locfileid: "62975264"
 
     - **Interface**
 
-    - [結構] (VB) 或 [結構] (C#)
+    - [結構]\(VB) 或 [結構]\(C#)
 
     - **Delegate**
 
-    - [模組] (僅限 VB)
+    - [模組]\(僅限 VB)
 
 2. 為類型命名。 然後選取其存取層級。
 
@@ -58,7 +58,7 @@ ms.locfileid: "62975264"
 
     |||
     |-|-|
-    |**針對**|**[新增]**|
+    |**針對**|**新增**|
     |Class、Abstract Class、Structure 或 Struct|定義類別的方法、屬性、欄位、事件、建構函式 (方法)、解構函式 (方法) 和常數。|
     |列舉|構成列舉的欄位值|
     |介面|構成介面的方法、屬性和事件|
@@ -87,7 +87,7 @@ ms.locfileid: "62975264"
 
    自訂屬性會套用至類型。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [如何：建立類型之間的繼承](how-to-create-inheritance-between-types.md)
 - [如何：建立類型之間的關聯](how-to-create-associations-between-types.md)

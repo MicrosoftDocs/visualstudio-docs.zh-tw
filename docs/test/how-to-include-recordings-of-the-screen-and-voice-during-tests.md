@@ -5,24 +5,24 @@ ms.topic: conceptual
 helpviewer_keywords:
 - test settings, recording desktop video
 ms.assetid: 2cefe8c2-430a-4cb4-bbe0-f3edb2e5bc03
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 663f89c65604c42b356830b3a0c6d61bdcb265e3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 572b3132056ebed1d26c983fdc4024d2ddc51a82
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62950085"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653528"
 ---
-# <a name="how-to-include-recordings-of-the-screen-and-voice-during-tests-using-test-settings"></a>HOW TO：使用測試設定在測試期間包含螢幕和語音錄製
+# <a name="how-to-include-recordings-of-the-screen-and-voice-during-tests-using-test-settings"></a>如何：使用測試設定在測試期間包含螢幕和聲音錄製
 
 您可以在 Visual Studio 的組態編輯器中設定診斷資料配接器，用於錄製執行測試之使用者的螢幕和聲音。 這個診斷資料配接器會儲存測試期間錄製的桌面工作階段螢幕和聲音。 錄製會和測試結果一起儲存，也可以附加至 Bug。 其他小組成員可以使用這段錄製內容找出難以重現的應用程式缺陷。
 
 > [!WARNING]
 > 螢幕和聲音錄製不支援多重監視器組態。
 
-螢幕和聲音錄製器可以搭配手動或自動化測試使用。 例如，如果遠端執行自動程式碼 UI 測試，您可能想要錄製桌面來查看自動程式碼 UI 測試執行時的情況。 如需如何從遠端擷取螢幕和語音錄製的詳細資訊，請參閱[如何：將測試代理程式設定為執行與桌面互動的測試](../test/how-to-set-up-your-test-agent-to-run-tests-that-interact-with-the-desktop.md)。
+螢幕和聲音錄製器可以搭配手動或自動化測試使用。 例如，如果遠端執行自動程式碼 UI 測試，您可能想要錄製桌面來查看自動程式碼 UI 測試執行時的情況。 如需如何從遠端擷取螢幕和聲音錄製的詳細資訊，請參閱[如何：將您的測試代理程式設定為執行與桌面互動的測試](../test/how-to-set-up-your-test-agent-to-run-tests-that-interact-with-the-desktop.md)。
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
@@ -50,18 +50,18 @@ ms.locfileid: "62950085"
 
 6. 在 [螢幕錄製品質] 底下，設定下列下拉式清單選項：
 
-    1. **畫面播放速率：** 指定您要在螢幕和語音錄製中使用的每秒畫面格數。 預設值為每秒 4 個畫面格。 您可以指定介於 2 和 20 之間的值。
+    1. **畫面播放速率：** 指定您要在螢幕和聲音錄製中使用的每秒畫面格數。 預設值為每秒 4 個畫面格。 您可以指定介於 2 和 20 之間的值。
 
-    2. **位元速率：** 指定要在螢幕和語音錄製中使用的每秒 KB 數。 預設值為 512。 您可以指定介於 512 和 10,000 之間的值。
+    2. **位元速率：** 指定要在螢幕和聲音錄製中使用的每秒 KB 數。 預設值為 512。 您可以指定介於 512 和 10,000 之間的值。
 
-    3. **品質 (1-100)：** 您可以指定範圍介於 1 和 100 之間的螢幕和語音錄製品質。 預設值為 50 (中間範圍)。
+    3. **品質(1-100)：** 您可以指定範圍介於 1 和 100 之間的螢幕和聲音錄製品質。 預設值為 50 (中間範圍)。
 
-7. 選擇 [確定] 。 針對測試設定，現在已經設定和儲存診斷追蹤收集器設定。
+7. 選擇 [確定]。 針對測試設定，現在已經設定和儲存診斷追蹤收集器設定。
 
     > [!TIP]
     > 若要重設此診斷資料配接器的組態，請在 Visual Studio 中選擇 [重設為預設組態]，在 Microsoft Test Manager 中則選擇 [重設為預設值]。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [在測試時收集診斷資料 (Azure Test Plans)](/azure/devops/test/collect-diagnostic-data?view=vsts)
 - [在手動測試中收集診斷資料 (Azure Test Plans)](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)

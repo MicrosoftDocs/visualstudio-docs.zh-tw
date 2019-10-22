@@ -6,14 +6,14 @@ ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.assetid: f1502b51-d6db-4894-9fbf-4a5723e4bb1a
 caps.latest.revision: 8
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: a1f06b594ca1c64b8f87bb7b3d84f171ef2d895d
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 097193ea29f5f21aed09ed5ffa9f0cb331327b84
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65695141"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72657268"
 ---
 # <a name="upgrade-visual-studio-2010-unit-test-projects"></a>升級 Visual Studio 2010 單元測試專案
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "65695141"
 > Visual Studio 2010 無法開啟以 11.0 工具組為目標的 C++/CLI 專案，也就是在 Visual Studio 2012 中建立的專案。 這項限制適用於所有 C++/CLI 專案，而不只是 C++/CLI 單元測試專案。
 
 > [!NOTE]
-> 您可以從命令列使用 vstest.console.exe 執行新的單元測試。 如需使用 vstest.console.exe 的詳細資訊，請參閱 [VSTest.Console.exe 命令列選項](https://msdn.microsoft.com/library/52e1689d-b1a8-4589-bd98-99a55acd0a11)，或使用說明參數執行該命令︰**vstest.console.exe /?**。 您可以使用 MStest.exe 繼續執行現有的單元測試。 如需詳細資訊，請參閱[從命令列使用 MSTest 執行自動化測試](https://msdn.microsoft.com/library/39b61ad0-0055-44b5-963f-25d8a6b51581)和 [MSTest.exe 命令列選項](https://msdn.microsoft.com/library/8813ba7f-e790-4e92-9f91-7080508a1c36)。
+> 您可以從命令列使用 vstest.console.exe 執行新的單元測試。 如需使用 vstest.console.exe 的詳細資訊，請參閱 [VSTest.Console.exe 命令列選項](https://msdn.microsoft.com/library/52e1689d-b1a8-4589-bd98-99a55acd0a11)，或使用說明參數執行該命令︰**vstest.console.exe /?** 。 您可以使用 MStest.exe 繼續執行現有的單元測試。 如需詳細資訊，請參閱[從命令列使用 MSTest 執行自動化測試](https://msdn.microsoft.com/library/39b61ad0-0055-44b5-963f-25d8a6b51581)和 [MSTest.exe 命令列選項](https://msdn.microsoft.com/library/8813ba7f-e790-4e92-9f91-7080508a1c36)。
 
  另一個重大的變更是新的 [測試總管]。 在 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] 中，部分您所熟悉的舊版測試視窗已淘汰，例如 [測試檢視] 視窗。 [測試總管] 的設計可進一步支援開發人員和小組在其軟體開發實務中併入「單元測試」(unit testing)。 如需詳細資訊，請參閱[使用測試總管執行單元測試](../test/run-unit-tests-with-test-explorer.md)。
 
@@ -38,10 +38,10 @@ ms.locfileid: "65695141"
 
 |單元測試功能|問題|方案|
 |-----------------------------|-----------|--------------|
-|測試清單 (.vsmdi files) 已在 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] 中淘汰。|您將再也無法從 Visual Studio 建立新的測試清單 (.vsmdi 檔案) 或執行測試清單。 **提示：** 測試分類與舊版 Microsoft Visual Studio 中的測試清單功能相比，可提供更大的彈性。 您可以搭配使用邏輯運算子與測試分類，一起執行來自多個分類的測試，或將執行的測試限制為屬於多個分類的測試。 同時，當您建立測試方法時也可輕鬆地加入測試分類，在已建立測試方法之後不需要維護測試清單。 使用測試分類，您不需要簽入和簽出維護測試清單的 **\<solution name>.vsmdi** 檔案。 如需詳細資訊，請參閱[定義測試分類以分組測試](https://msdn.microsoft.com/library/2c26a648-f068-4d60-99b6-b9747b7bdbc9)。|-   若要維持與使用測試清單之現有測試專案的相容性，您仍然能夠使用 Visual Studio 編輯 .vsmdi 檔案。<br />-   雖然您無法從 Visual Studio 執行已移轉的測試清單，您仍然可以從命令列使用 mstest.exe 執行測試清單。 如需詳細資訊，請參閱[從命令列使用 MSTest 執行自動化測試](https://msdn.microsoft.com/library/39b61ad0-0055-44b5-963f-25d8a6b51581)<br />-   如果您在組建定義中使用測試清單，您可以繼續使用它。 如需詳細資訊，請參閱[如何：設定和執行已排程的測試在建置您的應用程式之後](https://msdn.microsoft.com/32acfeb1-b1aa-4afb-8cfe-cc209e6183fd)並[在您的建置流程中執行測試](https://msdn.microsoft.com/library/d05743a1-c5cf-447e-bed9-bed3cb595e38)。|
+|測試清單 (.vsmdi files) 已在 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] 中淘汰。|您將再也無法從 Visual Studio 建立新的測試清單 (.vsmdi 檔案) 或執行測試清單。 **提示：**  測試分類與舊版 Microsoft Visual Studio 中的測試清單功能相比，可提供更大的彈性。 您可以搭配使用邏輯運算子與測試分類，一起執行來自多個分類的測試，或將執行的測試限制為屬於多個分類的測試。 同時，當您建立測試方法時也可輕鬆地加入測試分類，在已建立測試方法之後不需要維護測試清單。 使用測試分類，您不需要簽入和簽出維護測試清單的 **\<solution name>.vsmdi** 檔案。 如需詳細資訊，請參閱[定義測試分類以分組測試](https://msdn.microsoft.com/library/2c26a648-f068-4d60-99b6-b9747b7bdbc9)。|-   若要維持與使用測試清單之現有測試專案的相容性，您仍然能夠使用 Visual Studio 編輯 .vsmdi 檔案。<br />-   雖然您無法從 Visual Studio 執行已移轉的測試清單，您仍然可以從命令列使用 mstest.exe 執行測試清單。 如需詳細資訊，請參閱[從命令列使用 MSTest 執行自動化測試](https://msdn.microsoft.com/library/39b61ad0-0055-44b5-963f-25d8a6b51581)<br />-   如果您在組建定義中使用測試清單，您可以繼續使用它。 如需詳細資訊，請參閱[如何：在建置應用程式之後設定和執行已排程的測試](https://msdn.microsoft.com/32acfeb1-b1aa-4afb-8cfe-cc209e6183fd)和[在建置流程中執行測試](https://msdn.microsoft.com/library/d05743a1-c5cf-447e-bed9-bed3cb595e38)。|
 |私用存取子已在 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] 中淘汰。<br /><br /> 在舊版的 Visual Studio 中，您可以使用 Publicize 指定內部應用程式開發介面 (API)，並建立您可以在測試中呼叫的公用對應項目 API，而該 API 會接著呼叫到您產品的內部 API。 您接著可以使用程式碼產生來建立測試虛設常式，並在該虛設常式內產生程式碼片段。|您不再能夠建立私用存取子。|<ul><li>Visual Studio 2010 測試專案會在 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] 中編譯與運作。 建置將會包含輸出警告。</li><li>如果您仍然需要測試內部 API，您有下列選項︰<br /><br /> <ul><li>使用 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.PrivateObject> 類別協助存取程式碼中的內部和私人 API。 這會在 Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll 組件中找到。</li><li>建立能夠反映您程式碼的反映架構，以存取內部或私用 API。</li><li>如果您嘗試存取的是內部程式碼，您也許能夠使用 <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> 存取您的 API，這樣您的測試程式碼就能存取內部 API。</li></ul></li></ul>|
 |測試影響已移除|||
 |從 [測試總管] 透過 TRX 記錄檔共用執行結果。||您仍然可以從命令列和 Team Build 取得 TRX 記錄檔。|
 
-## <a name="see-also"></a>另請參閱
- [移植、 移轉和升級 Visual Studio 專案](../porting/porting-migrating-and-upgrading-visual-studio-projects.md)[單元測試程式碼](../test/unit-test-your-code.md)[從舊版的 Visual Studio 升級測試](https://msdn.microsoft.com/e9c8b7f6-bd72-448e-8edb-d090dcc5cf52)[升級自動程式化 UI 測試Visual Studio 2010](../test/upgrading-coded-ui-tests-from-visual-studio-2010.md)
+## <a name="see-also"></a>請參閱
+ [移植、遷移和升級 Visual Studio 專案](../porting/porting-migrating-and-upgrading-visual-studio-projects.md)[單元測試您的程式碼](../test/unit-test-your-code.md)[從舊版升級測試 Visual Studio](https://msdn.microsoft.com/e9c8b7f6-bd72-448e-8edb-d090dcc5cf52)從[Visual Studio 2010 升級](../test/upgrading-coded-ui-tests-from-visual-studio-2010.md)自動程式化 UI 測試

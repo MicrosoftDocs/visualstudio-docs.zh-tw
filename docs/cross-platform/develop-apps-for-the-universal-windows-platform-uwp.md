@@ -4,17 +4,17 @@ ms.date: 10/24/2017
 ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.assetid: eac59cb6-f12e-4a77-9953-6d62b164a643
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 3bfe4b1a172158740705e392c573de7911016583
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
-ms.translationtype: HT
+ms.openlocfilehash: d526d5df8ba03374fd26ceb870d4b240b6fc2fa4
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70179863"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72648953"
 ---
 # <a name="develop-apps-for-the-universal-windows-platform-uwp"></a>開發適用於通用 Windows 平台 (UWP) 的應用程式
 
@@ -68,6 +68,6 @@ ms.locfileid: "70179863"
 
 建立好您的通用 Windows 應用程式之後，您必須封裝應用程式以在 Windows 10 裝置上進行安裝，或提交至 Windows 市集。 請參閱[封裝應用程式](/windows/uwp/packaging/index)。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [Visual Studio 中的跨平台行動裝置應用程式開發](../cross-platform/cross-platform-mobile-development-in-visual-studio.md)

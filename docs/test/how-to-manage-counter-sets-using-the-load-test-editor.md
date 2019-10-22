@@ -10,17 +10,17 @@ helpviewer_keywords:
 - counter sets
 - load tests, counter sets
 ms.assetid: 64315c2f-a0b2-4378-be16-0774b99beef5
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 4ca910038e35ee65e6d97999f08013f398eaec9e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: f781580f28c3b829483180d559851bc9730fa18e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62950095"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653491"
 ---
-# <a name="how-to-manage-counter-sets-using-the-load-test-editor"></a>HOW TO：使用負載測試編輯器管理計數器集合
+# <a name="how-to-manage-counter-sets-using-the-load-test-editor"></a>如何：使用負載測試編輯器管理計數器集合
 
 當您使用 [新增負載測試精靈] 建立負載測試時，會新增初始的計數器集合。 這些都會為您的負載測試提供一組預先定義的計數器集合。
 
@@ -58,9 +58,9 @@ ms.locfileid: "62950095"
 
      這些標記會顯示在 [負載測試編輯器] 樹狀目錄的 [計數器集合對應] 節點中。 更重要的是，這些標記會顯示在 Excel 報表中，可協助專案關係人識別電腦在負載測試中扮演的角色。 例如 "Web Server1 in lab2" 或 "SQL Server2 in Phoenix office"。 如需詳細資訊，請參閱[針對測試比較或趨勢分析報告負載測試結果](../test/compare-load-test-results.md)。
 
-6. 選擇 [確定] 。
+6. 選擇 [確定]。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [測試控制器和測試代理程式](configure-test-agents-and-controllers-for-load-tests.md)
 - [在負載測試中指定電腦的計數器集合和臨界值規則](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md)

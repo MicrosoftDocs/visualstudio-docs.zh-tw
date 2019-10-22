@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - code analysis, selecting rule sets
 - code analysis, rule sets
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: f1bfa8c6e5260fb4afd20b882e2bdfc718647f4b
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: f0008f443139d968664d2cc4b4e3e3bef6ecb9ba
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72448977"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72649521"
 ---
 # <a name="how-to-configure-legacy-analysis-for-managed-code"></a>如何：設定 managed 程式碼的舊版分析
 
@@ -31,7 +31,7 @@ ms.locfileid: "72448977"
 
 1. 開啟專案屬性頁上的 [程式**代碼分析**] 索引標籤。 您可以透過下列其中一種方式來執行這項操作：
 
-   - 在 **方案總管**中，選取專案。 在功能表列上，選取 [**分析** > ] [**設定程式碼分析**]  > **以進行 @no__t 5projectname >** 。
+   - 在 **方案總管**中，選取專案。 在功能表列上，選取 [**分析**]  >  設定 **\<projectname > 的程式** **代碼分析** > 。
 
    - 以滑鼠右鍵按一下**方案總管**中的專案，然後選取 [**屬性**]，再選取 [程式**代碼分析**] 索引標籤。
 

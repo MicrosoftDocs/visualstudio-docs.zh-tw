@@ -1,5 +1,5 @@
 ---
-title: CA2111:指標不應該為可見 |Microsoft Docs
+title: CA2111：指標不應該為可見的 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,49 +12,49 @@ helpviewer_keywords:
 - PointersShouldNotBeVisible
 ms.assetid: b3a8d466-895b-43bc-a2df-5d7058fe915f
 caps.latest.revision: 16
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 8497433088e4c49868a76dd3281d02a5e79babe5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a0d5546c6f6a2f5dbd0c6063f4a1dfd40ce1d7bb
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68154363"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72658729"
 ---
-# <a name="ca2111-pointers-should-not-be-visible"></a>CA2111:指標不應該為可見的
+# <a name="ca2111-pointers-should-not-be-visible"></a>CA2111：指標不應該為可見的
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |TypeName|PointersShouldNotBeVisible|
 |CheckId|CA2111|
-|分類|Microsoft.Security|
+|Category|Microsoft.Security|
 |中斷變更|中斷|
 
 ## <a name="cause"></a>原因
- 公用或受保護<xref:System.IntPtr?displayProperty=fullName>或<xref:System.UIntPtr?displayProperty=fullName>欄位不是唯讀的。
+ 公用或受保護的 <xref:System.IntPtr?displayProperty=fullName> 或 <xref:System.UIntPtr?displayProperty=fullName> 欄位不是唯讀的。
 
 ## <a name="rule-description"></a>規則描述
- <xref:System.IntPtr> 和<xref:System.UIntPtr>是用來存取 unmanaged 的記憶體的指標類型。 如果指標不是私用、 內部或唯讀的惡意程式碼就可以變更指標，可能會允許存取記憶體中的任意位置，或造成應用程式或系統失敗的值。
+ <xref:System.IntPtr> 和 <xref:System.UIntPtr> 是用來存取非受控記憶體的指標類型。 如果指標不是私用、內部或唯讀，惡意程式碼可能會變更指標的值，可能會允許存取記憶體中的任意位置，或是造成應用程式或系統失敗。
 
- 如果您想要包含指標欄位的型別安全存取，請參閱[CA2112:受保護的類型不應該公開欄位](../code-quality/ca2112-secured-types-should-not-expose-fields.md)。
+ 如果您想要保護包含指標欄位之類型的存取權，請參閱[CA2112：受保護的類型不應該公開欄位](../code-quality/ca2112-secured-types-should-not-expose-fields.md)。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
- 保護，以便唯讀、 內部或私人的指標。
+ 藉由將指標設為唯讀、內部或私用來保護其安全。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
- 如果您不會依賴指標的值，則隱藏此規則的警告。
+ 如果您不依賴指標的值，請隱藏此規則的警告。
 
 ## <a name="example"></a>範例
- 下列程式碼顯示違反及符合規則的指標。 請注意，非私用指標也違反規則[CA1051:不要宣告可見的執行個體欄位](../code-quality/ca1051-do-not-declare-visible-instance-fields.md)。
+ 下列程式碼顯示違反並滿足規則的指標。 請注意，非私用指標也違反規則[CA1051：不要宣告可見的實例欄位](../code-quality/ca1051-do-not-declare-visible-instance-fields.md)。
 
  [!code-csharp[FxCop.Security.PointersArePrivate#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Security.PointersArePrivate/cs/FxCop.Security.PointersArePrivate.cs#1)]
 
-## <a name="related-rules"></a>相關的規則
- [CA2112:受保護的類型不應該公開欄位](../code-quality/ca2112-secured-types-should-not-expose-fields.md)
+## <a name="related-rules"></a>相關規則
+ [CA2112：受保護類型不應該公開欄位](../code-quality/ca2112-secured-types-should-not-expose-fields.md)
 
- [CA1051:不要宣告可見的執行個體欄位](../code-quality/ca1051-do-not-declare-visible-instance-fields.md)
+ [CA1051：不要宣告可見的執行個體欄位](../code-quality/ca1051-do-not-declare-visible-instance-fields.md)
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
  <xref:System.IntPtr?displayProperty=fullName> <xref:System.UIntPtr?displayProperty=fullName>

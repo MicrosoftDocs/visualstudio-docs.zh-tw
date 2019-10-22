@@ -4,41 +4,41 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - dependency diagrams, adding custom properties
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f3ef03b3833f30c1376bd3b2787f4ca773c992ef
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 58a52983b1a3def85d5785d0aa3f7abf99e0317c
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68870675"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72652302"
 ---
 # <a name="add-custom-properties-to-dependency-diagrams"></a>將自訂屬性新增至相依性圖表
 
-當您撰寫相依性圖表的延伸模組程式碼時, 可以使用相依性圖表上的任何元素來儲存值。 當分層圖儲存並重新開啟時，值會保存下來。 您也可以將這些屬性顯示在 [**屬性**] 視窗中, 讓使用者可以查看和編輯這些屬性。 例如，您可以讓使用者為每個圖層指定規則運算式，並且撰寫驗證程式碼驗證每個圖層中類別的名稱符合使用者指定的模式。
+當您撰寫相依性圖表的延伸模組程式碼時，可以使用相依性圖表上的任何元素來儲存值。 當分層圖儲存並重新開啟時，值會保存下來。 您也可以將這些屬性顯示在 [**屬性**] 視窗中，讓使用者可以查看和編輯這些屬性。 例如，您可以讓使用者為每個圖層指定規則運算式，並且撰寫驗證程式碼驗證每個圖層中類別的名稱符合使用者指定的模式。
 
 ## <a name="non-visible-properties"></a>非可見屬性
 
-如果您只想要讓程式碼將值附加至相依性圖表中的任何元素, 則不需要定義 MEF 元件。 在 [ILayerElement](/previous-versions/ff644511(v=vs.140)) 中, 有一個名為`Properties`的字典。 只要將可封送處理的值加入至任何圖層項目的字典中即可。 這些物件將會儲存為相依性圖表的一部分。
+如果您只想要讓程式碼將值附加至相依性圖表中的任何元素，則不需要定義 MEF 元件。 在[ILayerElement](/previous-versions/ff644511(v=vs.140))中，有一個名為 `Properties` 的字典。 只要將可封送處理的值加入至任何圖層項目的字典中即可。 這些物件將會儲存為相依性圖表的一部分。
 
 ## <a name="editable-properties"></a>可編輯屬性
 
 **初始準備**
 
 > [!IMPORTANT]
-> 若要顯示內容, 請在您想要讓圖層屬性顯示的每部電腦上進行下列變更:
+> 若要顯示內容，請在您想要讓圖層屬性顯示的每部電腦上進行下列變更：
 >
 > 1. 使用 [以**系統管理員身分執行**] 來執行 [記事本]。 開啟 *%ProgramFiles%\Microsoft Visual Studio [version] \Common7\IDE\Extensions\Microsoft\Architecture Tools\ExtensibilityRuntime\extension.vsixmanifest*。
-> 2. 在**Content**元素中, 新增:
+> 2. 在**Content**元素中，新增：
 >
 >     ```xml
 >     <MefComponent>Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.Provider.dll</MefComponent>
 >     ```
 >
-> 3. 在 [Visual Studio 應用程式開始] 功能表的 [ **Visual Studio Tools** ] 區段下, 開啟 [**開發人員命令提示字元**]。 輸入：
+> 3. 在 [Visual Studio 應用程式開始] 功能表的 [ **Visual Studio Tools** ] 區段下，開啟 [**開發人員命令提示字元**]。 輸入：
 >
 >      `devenv /rootSuffix /updateConfiguration`
 >
@@ -47,7 +47,7 @@ ms.locfileid: "68870675"
 
 **請確定您的程式碼位於 VSIX 專案中**
 
-如果您的屬性是命令、手勢或驗證專案的一部分, 則不需要加入任何內容。 自訂屬性的程式碼應該在定義為 MEF 元件的 Visual Studio 擴充性專案中定義。 如需詳細資訊, 請參閱[將命令和軌跡加入至](../modeling/add-commands-and-gestures-to-layer-diagrams.md)相依性圖表或[將自訂架構驗證加入至](../modeling/add-custom-architecture-validation-to-layer-diagrams.md)相依性圖表。
+如果您的屬性是命令、手勢或驗證專案的一部分，則不需要加入任何內容。 自訂屬性的程式碼應該在定義為 MEF 元件的 Visual Studio 擴充性專案中定義。 如需詳細資訊，請參閱[將命令和軌跡加入至](../modeling/add-commands-and-gestures-to-layer-diagrams.md)相依性圖表或[將自訂架構驗證加入至](../modeling/add-custom-architecture-validation-to-layer-diagrams.md)相依性圖表。
 
 **定義自訂屬性**
 
@@ -61,7 +61,7 @@ public class MyProperty : PropertyExtension<ILayerElement>
 }
 ```
 
-您可以在[ILayerElement](/previous-versions/ff644511(v=vs.140))或其任何衍生類別上定義屬性, 包括:
+您可以在[ILayerElement](/previous-versions/ff644511(v=vs.140))或其任何衍生類別上定義屬性，包括：
 
 - `ILayerModel` - 模型
 
@@ -160,6 +160,6 @@ namespace MyNamespace
 }
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [擴充相依性圖表](../modeling/extend-layer-diagrams.md)

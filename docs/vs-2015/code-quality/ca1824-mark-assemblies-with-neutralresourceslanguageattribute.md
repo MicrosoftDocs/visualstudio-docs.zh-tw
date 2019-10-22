@@ -1,5 +1,5 @@
 ---
-title: CA1824:組件必須標記 neutralresourceslanguageattribute |Microsoft Docs
+title: CA1824：使用 NeutralResourcesLanguageAttribute 標記元件 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,46 +12,46 @@ helpviewer_keywords:
 - CA1824
 ms.assetid: 10e97f8a-aa6e-47aa-b253-1e5d3a295d82
 caps.latest.revision: 14
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 795d48b96392057a3f96cf3a67f3c49de8aee9b9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: efa328fdff9c357e0183fc2ca80e4d77d4f6782e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68203079"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72661109"
 ---
-# <a name="ca1824-mark-assemblies-with-neutralresourceslanguageattribute"></a>CA1824:組件必須標記 NeutralResourcesLanguageAttribute
+# <a name="ca1824-mark-assemblies-with-neutralresourceslanguageattribute"></a>CA1824：以 NeutralResourcesLanguageAttribute 標記組件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |TypeName|MarkAssembliesWithNeutralResourcesLanguage|
 |CheckId|CA1824|
-|分類|Microsoft.Performance|
-|中斷變更|非重大|
+|Category|Microsoft。效能|
+|中斷變更|不中斷|
 
 ## <a name="cause"></a>原因
- 組件包含**ResX**-基礎資源，但並沒有<xref:System.Resources.NeutralResourcesLanguageAttribute?displayProperty=fullName>套用到它。
+ 元件包含以**ResX**為基礎的資源，但未套用 <xref:System.Resources.NeutralResourcesLanguageAttribute?displayProperty=fullName>。
 
 ## <a name="rule-description"></a>規則描述
- **NeutralResourcesLanguage**屬性會通知**ResourceManager**用來顯示組件的中性文化特性之資源的語言。 尋找在文化特性中性資源語言，與相同的資源時**ResourceManager**會自動使用位於主要組件中的資源。 它的運作而不是搜尋具有目前執行緒的目前使用者介面文化特性的附屬組件。 這可改善載入第一個資源的查詢效能，而且可以減少您的工作集。
+ **NeutralResourcesLanguage**屬性會通知**ResourceManager** ，這是用來顯示元件中性文化特性之資源的語言。 當它查閱的資源與中性資來源語言相同時， **ResourceManager**會自動使用位於主要元件中的資源。 它會執行這項工作，而不是搜尋具有目前線程之目前使用者介面文化特性的附屬元件。 這可改善載入第一個資源的查詢效能，而且可以減少您的工作集。
 
 ## <a name="fixing-violations"></a>修正違規
- 若要修正此規則的違規情形，將屬性新增至組件，並指定語言的中性文化特性的資源。
+ 若要修正此規則的違規，請將屬性新增至元件，並指定中性文化特性之資源的語言。
 
-## <a name="specifying-the-language"></a>指定的語言
+## <a name="specifying-the-language"></a>指定語言
 
-#### <a name="to-specify-the-language-of-the-resource-of-the-neutral-culture"></a>若要指定不因文化特性中性資源語言
+#### <a name="to-specify-the-language-of-the-resource-of-the-neutral-culture"></a>指定中性文化特性的資來源語言
 
-1. 在 **方案總管**，以滑鼠右鍵按一下您的專案，然後按一下**屬性**。
+1. 在**方案總管**中，以滑鼠右鍵按一下您的專案，然後按一下 [**屬性**]。
 
-2. 從左側的導覽列中選取**應用程式**，然後按一下**組件資訊**。
+2. 從左側導覽列中選取 [**應用程式**]，然後按一下 [**元件資訊**]。
 
-3. 在 **組件資訊**對話方塊方塊中，選取語言，從**中性語言**下拉式清單。
+3. 在 [**元件資訊**] 對話方塊中，從 [**中性語言**] 下拉式清單中選取語言。
 
-4. 按一下 [確定 **Deploying Office Solutions**]。
+4. 按一下 [確定]。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
- 就可以隱藏此規則的警告。 不過，可能會降低啟動效能。
+ 允許隱藏此規則的警告。 不過，啟動效能可能會降低。

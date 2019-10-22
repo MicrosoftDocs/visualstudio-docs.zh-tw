@@ -2,25 +2,25 @@
 title: 定義圖案和連接器
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a24e447e5ec0b65635f7184bd0ae19b305edfdf8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d715f6ac9fe2ac06f0f1f35c9319093d8257dc8d
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62994612"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653907"
 ---
-# <a name="define-shapes-and-connectors"></a>定義圖案和接點
+# <a name="define-shapes-and-connectors"></a>定義圖形和連接器
 
 您可以使用數種基本圖形類型，來顯示網域指定的語言 (DSL) 圖表上的資訊。
 
-## <a name="shapeTypes"></a> 基本類型的圖案和接點
+## <a name="shapeTypes"></a>圖形和連接器的基本類型
 
-DSL 圖表顯示的集合*圖案*shape 由線條或*連接器*。 一般而言 (但並非絕對)：
+DSL 圖表會顯示由線條或*連接器*所 interlinked 的*圖形*集合。 一般而言 (但並非絕對)：
 
 - 圖形是模型項目的視覺表示。
 
@@ -36,7 +36,7 @@ DSL 圖表顯示的集合*圖案*shape 由線條或*連接器*。 一般而言 (
 
 |圖形類型|描述|
 |-|-|
-|幾何圖形|一般用途的矩形或橢圓形。 您可以在相對於圖形邊界的特定位置，顯示文字和圖示裝飾項目。 您也可以巢狀圖形幾何圖案內部。|
+|幾何圖形|一般用途的矩形或橢圓形。 您可以在相對於圖形邊界的特定位置，顯示文字和圖示裝飾項目。 您也可以將圖形嵌入 geometry 圖形內。|
 |區間圖形|內含標頭和區間的矩形，例如 UML 類別。 每個區間都包含文字列清單。<br /><br /> 這些列通常表示以圖形表示之項目底下的內嵌項目。 例如，從「類別圖表」方案範本中建立 DSL。|
 |影像圖形|顯示影像的圖形。|
 |通訊埠圖形|一個小矩形，其設計目的是為了連結至其他圖形的外框。 通常用於元件模型中。<br /><br /> 以通訊埠表示的模型項目，通常會內嵌於以父圖形表示的項目底下。 例如，使用「元件」方案範本建立 DSL。<br /><br /> 根據預設，通訊埠圖形可沿著其父項邊緣滑動。 您可以定義繫結規則，將圖形限制在特定位置。<br /><br /> 您可以建立很小且透明的通訊埠圖形，用來提供其父圖形表面上的固定連接點。|

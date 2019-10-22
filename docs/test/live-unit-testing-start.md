@@ -4,17 +4,17 @@ ms.date: 08/31/2017
 ms.topic: conceptual
 helpviewer_keywords:
 - Live Unit Testing
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: bb254dc2d70992c798a95e5e12efcbb72b2a2336
-ms.sourcegitcommit: 1a3c2ca995fd44fc72741b3a100c6e57f4f8702c
+ms.openlocfilehash: a5b136c91873c0af60705ea361a19e53f28e06b0
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/11/2019
-ms.locfileid: "72262348"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653048"
 ---
 # <a name="get-started-with-live-unit-testing"></a>Live Unit Testing 的使用者入門
 
@@ -24,7 +24,7 @@ Live Unit Testing 可以用來測試以 .NET Framework 或 .NET Core 為目標�
 
 您可以從 GitHub 的 [MicrosoftDocs/visualstudio-docs](https://github.com/MicrosoftDocs/visualstudio-docs/tree/master/docs/test/samples/csharp/UtilityLibraries/) 存放庫下載完整 C# 方案。
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>Prerequisites
 
 本教學課程需要您已安裝具有 **.Net Core 跨平臺開發**工作負載的 Visual Studio Enterprise edition。
 
@@ -67,7 +67,7 @@ Live Unit Testing 可以用來測試以 .NET Framework 或 .NET Core 為目標�
 
 ::: moniker range=">=vs-2019"
 
-2. 在範本的搜尋方塊中鍵入**類別庫**，然後選取 [類別庫 (.NET Standard)] 範本。 按一下 [下一步]。
+2. 在範本的搜尋方塊中鍵入**類別庫**，然後選取 [類別庫 (.NET Standard)] 範本。 按 [ **下一步**]。
 
    > [!NOTE]
    > 因為我們的程式庫是以 .NET Standard 而不是特定的 .NET 實作為目標，所以可以從任何支援該版本 .NET Standard 的 .NET 實作為呼叫。 如需詳細資訊，請參閱 [.NET Standard](/dotnet/standard/net-standard)。
@@ -115,7 +115,7 @@ Live Unit Testing 可以用來測試以 .NET Framework 或 .NET Core 為目標�
 
 ::: moniker range=">=vs-2019"
 
-2. 在範本搜尋方塊中鍵入**單元測試**，然後選取 [單元測試專案 (.NET Core)] 範本。 按一下 [下一步]。
+2. 在範本搜尋方塊中鍵入**單元測試**，然後選取 [單元測試專案 (.NET Core)] 範本。 按 [ **下一步**]。
 
 3. 將專案命名為**StringLibraryTests**。
 
@@ -196,7 +196,7 @@ Live Unit Testing 所識別的主要問題是不完整的程式碼涵蓋範圍�
 
     ![StartsWithLower 方法的程式碼涵蓋範圍](media/lut-start/lut-extended-cs.png)
 
-在某些情況下，**測試總管**中的成功測試可能會呈現為灰色。這指出目前正在執行測試，或尚未重新執行測試，因為自上次執行之後沒有程式碼變更將影響測試。
+在某些情況下，**測試瀏覽器**中成功的測試可能會呈現灰色。這表示目前正在執行測試，或測試未再次執行，因為自從上次執行後，沒有任何程式碼變更會影響測試。
 
 截至目前為止，所有測試均為成功。 在下節中，我們將檢查如何處理測試失敗。
 
@@ -212,7 +212,7 @@ Live Unit Testing 所識別的主要問題是不完整的程式碼涵蓋範圍�
 
    ![測試 Explorer 報告失敗的測試](media/lut-start/test-failure.png)
 
-1. 選取顯示程式庫程式碼的視窗。 Live Unit Testing 已將程式碼涵蓋範圍擴充至 `HasEmbeddedSpaces` 方法。 它也會在失敗測試所涵蓋的程式行中新增紅色 "🞩"，以報告測試失敗。
+1. 選取顯示程式庫程式碼的視窗。 Live Unit Testing 已擴充 `HasEmbeddedSpaces` 方法的程式碼涵蓋範圍。 它也會在失敗測試所涵蓋的程式行中新增紅色 "🞩"，以報告測試失敗。
 
 1. 將游標停留在含 `HasEmbeddedSpaces` 方法簽章的行上方。 Live Unit Testing 會顯示工具提示，報告該方法已由一個測試涵蓋，如下圖所示：
 
@@ -226,7 +226,7 @@ Live Unit Testing 所識別的主要問題是不完整的程式碼涵蓋範圍�
 
 1. Visual Studio 會以偵錯模式執行測試。
 
-   測試會將陣列中的每個字串指派給名為 @no__t 0 的變數，並將它傳遞給 `HasEmbeddedSpaces` 方法。 assert 運算式第一次為 `false` 時，執行程式會暫停並叫用偵錯工具。 下圖顯示來自[`Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsTrue`](/dotnet/api/microsoft.visualstudio.testtools.unittesting.assert.istrue)方法呼叫中非預期值所產生的例外狀況對話方塊。
+   測試會將陣列中的每個字串指派給名為 `phrase` 的變數，並將它傳遞給 `HasEmbeddedSpaces` 方法。 assert 運算式第一次為 `false` 時，執行程式會暫停並叫用偵錯工具。 下圖顯示來自[`Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsTrue`](/dotnet/api/microsoft.visualstudio.testtools.unittesting.assert.istrue)方法呼叫中非預期值所產生的例外狀況對話方塊。
 
    ![Live Unit Testing 例外狀況對話方塊](media/lut-start/exception-dialog-cs.png)
 
@@ -249,7 +249,7 @@ Live Unit Testing 所識別的主要問題是不完整的程式碼涵蓋範圍�
 
     ![成功的 HasEmbeddedSpaces 測試](media/lut-start/test-success-cs.png)
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [Visual Studio 中的 Live Unit Testing](live-unit-testing.md)
 - [Live Unit Testing 常見問題集](live-unit-testing-faq.md)

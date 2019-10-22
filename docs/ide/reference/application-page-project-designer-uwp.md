@@ -6,17 +6,17 @@ f1_keywords:
 - AppPackage.Properties.Application
 helpviewer_keywords:
 - Application page [UWP project]
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 416661a39f54429f24cca66a0ec1be7b6c87629d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 01edb1871388cdc31f6c92ff25d10c876dfebc64
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62791044"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72651946"
 ---
 # <a name="application-property-page-uwp-projects"></a>應用程式屬性頁 (UWP 專案)
 
@@ -46,7 +46,7 @@ ms.locfileid: "62791044"
 
 如需 Visual Studio 平台目標的資訊，請參閱[平台目標](/visualstudio/productinfo/vs2017-compatibility-vs#platform-targeting)。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [建立您的第一個 UWP 應用程式](/windows/uwp/get-started/your-first-app)
 - [選擇 UWP 版本](/windows/uwp/updates-and-versions/choose-a-uwp-version)

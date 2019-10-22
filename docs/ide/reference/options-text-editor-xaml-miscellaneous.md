@@ -23,17 +23,17 @@ helpviewer_keywords:
 - WPF Designer, XAML formatting
 - XAML view settings, attribute spacing
 ms.assetid: 2a420e58-a408-4e8d-9220-44eeb4f67801
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 9b124b86b98f86c775165d8fe33164a352d8e20a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 242daf82d405af4b3a1e529633fb82651aa6bdc9
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62969237"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72666629"
 ---
 # <a name="options-text-editor-xaml-miscellaneous"></a>選項、文字編輯器、XAML、其他
 
@@ -47,13 +47,13 @@ ms.locfileid: "62969237"
 |-|-|
 |**結尾標記**|指定當您關閉具有大於字元 (>) 的開始標記時，是否自動產生項目的結尾標記。|
 |**屬性引號**|指定從陳述式完成下拉式清單中選取屬性值時，是否產生封閉式引號。|
-|**MarkupExtension 的右大括弧**|指定當您鍵入左大括弧字元 (**{**) 時，是否自動產生標記延伸的右大括弧 (**}**)。|
+|**MarkupExtension 的右大括弧**|指定當您鍵入左大括弧字元 ( **{** ) 時，是否自動產生標記延伸的右大括弧 ( **}** )。|
 |**分隔 MarkupExtension 參數的逗號**|指定是否在您於標記延伸中輸入多個參數時產生逗號。|
 
 ## <a name="errors-and-warnings"></a>錯誤和警告
 
 使用此設定來控制錯誤和警告的自動產生時機。 如需詳細資訊，請參閱 [XAML 錯誤和警告](../../designers/xaml-errors-warnings.md)。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [WPF 中的 XAML](/dotnet/framework/wpf/advanced/xaml-in-wpf)

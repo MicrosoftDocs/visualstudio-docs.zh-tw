@@ -1,5 +1,5 @@
 ---
-title: 作法：以連結方式顯示編輯器中的 URL
+title: 如何：以連結方式顯示編輯器中的 URL
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,19 +7,19 @@ helpviewer_keywords:
 - Code Editor, displaying URLs
 - editors, displaying URLs
 ms.assetid: 7c673953-476e-4897-9c2d-1fc15556c172
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 63a44407c891464f39693a2d69e5a32d22b6e993
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
-ms.translationtype: HT
+ms.openlocfilehash: 9814614ae752a670a8b707e6fd701a5fa151f481
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68605686"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72668584"
 ---
-# <a name="how-to-display-urls-as-links-in-the-editor"></a>作法：以連結方式顯示編輯器中的 URL
+# <a name="how-to-display-urls-as-links-in-the-editor"></a>如何：以連結方式顯示編輯器中的 URL
 
 您可以選擇用程式碼編輯器，將您的程式碼中的統一資源定位器 (URL) 視為使用中的連結。 當您使用這項功能時，URL：
 
@@ -33,16 +33,16 @@ ms.locfileid: "68605686"
 
 1. 在 [ **工具** ] 功能表上按一下 [ **選項**]。
 
-2. 按一下 [文字編輯器]  。
+2. 按一下 [文字編輯器]。
 
-3. 若只要變更單一語言的選項，請展開該語言的資料夾，並選擇 [一般]  。
+3. 若只要變更單一語言的選項，請展開該語言的資料夾，並選擇 [一般]。
 
      -或-
 
-     若要變更所有語言的選項，請展開 [所有語言]  資料夾，並選擇 [一般]  。
+     若要變更所有語言的選項，請展開 [所有語言] 資料夾，並選擇 [一般]。
 
-4. 在 [顯示]  底下，選取 [啟用按一下方式的 URL 巡覽]  。
+4. 在 [顯示] 底下，選取 [啟用按一下方式的 URL 巡覽]。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [程式碼編輯器的功能](../../ide/writing-code-in-the-code-and-text-editor.md)

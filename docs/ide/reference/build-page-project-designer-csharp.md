@@ -9,17 +9,17 @@ helpviewer_keywords:
 - Build options [C#]
 - Project Designer, Build page
 ms.assetid: 77ff1bfc-d633-4634-ba29-9afdb6d7e362
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9f121c4a95d719074e3004ee21e0d49d71e4c243
-ms.sourcegitcommit: 7825d4163e52d724e59f6c0da209af5fbef673f7
+ms.openlocfilehash: ab60524f854b3974d383cb7d8ab37470195fc85e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72000217"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72668216"
 ---
 # <a name="build-page-project-designer-c"></a>專案設計工具、建置頁 (C#)
 
@@ -34,7 +34,7 @@ ms.locfileid: "72000217"
 下列選項可讓您選取要顯示或修改的組態和平台。
 
 > [!NOTE]
-> 使用簡化的組建組態時，專案系統會決定要建置偵錯或發行版本。 因此不會顯示這些選項。 如需詳細資訊，請參閱[如何：設定偵錯和版本組態](../../debugger/how-to-set-debug-and-release-configurations.md)。
+> 使用簡化的組建組態時，專案系統會決定要建置偵錯或發行版本。 因此不會顯示這些選項。 如需詳細資訊，請參閱[如何：設定偵錯和發行組態](../../debugger/how-to-set-debug-and-release-configurations.md)。
 
 **組態**
 
@@ -139,7 +139,7 @@ ms.locfileid: "72000217"
 
 按一下可顯示 [[進階建置設定] 對話方塊 (C#)](../../ide/reference/advanced-build-settings-dialog-box-csharp.md)。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [專案屬性參考](../../ide/reference/project-properties-reference.md)
 - [C# 編譯器選項](/dotnet/csharp/language-reference/compiler-options/index)

@@ -1,5 +1,5 @@
 ---
-title: XML 編輯器和結構描述設計工具
+title: XML 編輯器和架構設計工具
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -27,52 +27,52 @@ helpviewer_keywords:
 - XSL, style sheets
 - XMLDataDocument class
 ms.assetid: 1fd5de47-2d61-4180-9539-c2c4bf9ab768
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d7493d6c10c83b16ad7579299a49a7747e34c20b
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: c9412d89ee7d9ad1412f0eaf9fe9341e336a65e5
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66746509"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72668713"
 ---
 # <a name="xml-tools-in-visual-studio"></a>Visual Studio 中的 XML 工具
 
-*可延伸標記語言 (XML)* 是一種標記語言，提供用來描述資料格式。 XML 會將資料與它所使用的呈現樣式表等 Extensible Stylesheet Language (XSL) 和階層式樣式表 (CSS)。 Visual Studio 包括一些工具及功能，讓使用 XML、XSLT 及 XML 結構描述更為容易。
+*可延伸標記語言 (XML) （XML）* 是一種標記語言，可提供用來描述資料的格式。 XML 會使用相關聯的樣式表單（例如可延伸樣式表語言（XSL）和級聯樣式表（CSS））來分隔資料和其呈現方式。 Visual Studio 包括一些工具及功能，讓使用 XML、XSLT 及 XML 結構描述更為容易。
 
 ## <a name="xml-editor"></a>XML 編輯器
 
-[XML 編輯器](xml-editor.md)用來編輯 XML 文件。 它會提供完整的 XML 語法檢查、 結構描述驗證時，您的型別、 色彩編碼及 IntelliSense。 如果已提供結構描述或文件類型定義，IntelliSense 即可使用它來列出允許的項目及屬性。
+[Xml 編輯器](xml-editor.md)是用來編輯 xml 檔。 它提供完整的 XML 語法檢查、輸入時的架構驗證、色彩編碼和 IntelliSense。 如果已提供結構描述或文件類型定義，IntelliSense 即可使用它來列出允許的項目及屬性。
 
 其他功能包括：
 
-- XML 程式碼片段支援，包括結構描述產生的程式碼片段
+- XML 片段支援，包括架構產生的程式碼片段
 
-- 文件大綱，以便展開及摺疊項目
+- 檔大綱，讓元素可以展開和折迭
 
-- 執行 XSLT 轉換，並做為文字、 XML 或 HTML 檢視結果的能力
+- 執行 XSLT 轉換和以文字、XML 或 HTML 形式來查看結果的能力
 
-- 從 XML 執行個體文件產生 XML 結構描述定義語言 (XSD) 結構描述的功能
+- 從 XML 實例檔產生 XML 架構定義語言（XSD）架構的能力
 
-- 支援編輯 XSLT 樣式表，包括 IntelliSense 支援
+- 支援編輯 XSLT 樣式表單，包括 IntelliSense 支援
 
 - XML 結構描述總管
 
 ## <a name="xml-schema-designer"></a>XML 結構描述設計工具
 
-[XML 結構描述設計工具](xml-schema-designer.md)整合於 Visual Studio 和 XML 編輯器可讓您使用 XML 結構描述定義語言 (XSD) 結構描述。
+[Xml 架構設計](xml-schema-designer.md)工具已與 VISUAL STUDIO 和 xml 編輯器整合，可讓您使用 xml 架構定義語言（XSD）架構。
 
 ## <a name="xslt-debugging"></a>XSLT 偵錯
 
-Visual Studio 支援[XSLT 樣式表進行偵錯](../xml-tools/debugging-xslt.md)。 使用偵錯工具，您可在 XSLT 樣式表中設定中斷點，從程式碼逐步執行 XSLT 樣式表等。
+Visual Studio 支援對[XSLT 樣式表單進行調試](../xml-tools/debugging-xslt.md)。 使用偵錯工具，您可在 XSLT 樣式表中設定中斷點，從程式碼逐步執行 XSLT 樣式表等。
 
 > [!NOTE]
-> 只有 Enterprise 版的 Visual Studio 中使用 XSLT 偵錯工具。
+> XSLT 偵錯工具僅適用于 Enterprise edition 的 Visual Studio。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - <xref:System.Xml?displayProperty=fullName>
 - [XSLT 轉換](/dotnet/standard/data/xml/xslt-transformations)

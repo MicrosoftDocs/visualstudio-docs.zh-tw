@@ -1,47 +1,47 @@
 ---
-title: 適用於.NET 的資料工具
+title: 適用于 .NET 的資料工具
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: c3175080-1dfb-4ab8-a460-92dadbb844b4
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
 - dotnet
-ms.openlocfilehash: a4a62f629244d44680b3d5ac3233bd45b975302e
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: 224fef3a02a2441553728a9a75fc5f9c456081a1
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66745308"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72648096"
 ---
 # <a name="visual-studio-data-tools-for-net"></a>適用於 .NET 的 Visual Studio Data Tools
 
-Visual Studio 和.NET 一起提供廣泛的 API 和工具連線到資料庫、 模型化資料在記憶體中，以及在使用者介面中顯示資料的支援。 提供資料存取功能的.NET 類別稱為[ADO.NET](/dotnet/framework/data/adonet/index)。 ADO.NET，以及工具在 Visual Studio 中的資料已設計為支援關聯式資料庫和 XML。 如今，許多 NoSQL 資料庫廠商或第三方，會提供 ADO.NET 提供者。
+Visual Studio 和 .NET 一起提供廣泛的 API 和工具支援，以便連接到資料庫、在記憶體中建立資料模型，以及在使用者介面中顯示資料。 提供資料存取功能的 .NET 類別稱為[ADO.NET](/dotnet/framework/data/adonet/index)。 ADO.NET 和 Visual Studio 中的資料工具，主要是為了支援關係資料庫和 XML 而設計的。 這幾天、許多 NoSQL 資料庫廠商或協力廠商都提供 ADO.NET 提供者。
 
-[.NET core](/dotnet/core/)支援 ADO.NET 資料集和其相關的類型除外。 如果您以.NET Core 為目標，而且需要的物件關聯式對應 (ORM) 層級，使用[Entity Framework Core](/ef/core/)。
+[.Net Core](/dotnet/core/)支援 ADO.NET，但資料集和其相關類型除外。 如果您的目標是 .NET Core，而且需要物件關聯式對應（ORM）層，請使用[Entity Framework Core](/ef/core/)。
 
-下圖顯示簡單的檢視的基本架構：
+下圖顯示基本架構的簡單觀點：
 
 ![ADO.NET 架構](../data-tools/media/raddata-ado-net-architecture-diagram.png)
 
 ## <a name="typical-workflow"></a>一般工作流程
 
-典型的工作流程如下：
+一般工作流程如下：
 
-1. 在本機電腦上安裝開發或測試資料庫。 請參閱[安裝資料庫系統、 工具和範例](../data-tools/installing-database-systems-tools-and-samples.md)。 如果您使用 Azure 資料服務，就不需要此步驟。
+1. 在您的本機電腦上安裝開發或測試資料庫。 請參閱[安裝資料庫系統、工具和範例](../data-tools/installing-database-systems-tools-and-samples.md)。 如果您使用 Azure 資料服務，則不需要執行此步驟。
 
-2. 在 Visual Studio 中測試資料庫 （或服務或本機檔案） 的連線。 請參閱[新增連線](../data-tools/add-new-connections.md)。
+2. 在 Visual Studio 中，測試與資料庫（或服務或本機檔案）的連接。 請參閱[新增連接](../data-tools/add-new-connections.md)。
 
-3. （選擇性）您可以使用工具來產生和設定新的模型。 Entity Framework 為基礎的模型是新的應用程式提供預設建議。 模型中，您使用，一個是與應用程式互動的資料來源。 模型會以邏輯方式位於資料庫或服務與應用程式。 請參閱[加入新的資料來源](../data-tools/add-new-data-sources.md)。
+3. 選擇性使用工具來產生和設定新的模型。 以 Entity Framework 為基礎的模型是新應用程式的預設建議。 無論您使用哪一種模型，都是應用程式互動的資料來源。 模型在資料庫或服務與應用程式之間的邏輯上。 請參閱[加入新的資料來源](../data-tools/add-new-data-sources.md)。
 
-4. 拖曳的資料來源**Zdroje dat**視窗拖曳至 Windows Form、 ASP.NET 或 Windows Presentation Foundation 的設計介面，以產生資料繫結程式碼，會在您指定的方法中對使用者顯示的資料。 請參閱[控制項繫結至 Visual Studio 中的資料](../data-tools/bind-controls-to-data-in-visual-studio.md)。
+4. 將資料來源從 [**資料來源**] 視窗拖曳至 [Windows Forms]、[ASP.NET] 或 [Windows Presentation Foundation] 設計介面上，以產生資料系結程式碼，以您指定的方式將資料顯示給使用者。 請參閱[將控制項系結至 Visual Studio 中的資料](../data-tools/bind-controls-to-data-in-visual-studio.md)。
 
-5. 新增項目，例如商務規則、 搜尋、 資料驗證，或利用基礎資料庫公開 （expose） 的自訂功能的自訂程式碼。
+5. 新增商務規則、搜尋和資料驗證等專案的自訂程式碼，或利用基礎資料庫所公開的自訂功能。
 
-您可以略過步驟 3 和程式的.NET 應用程式，以發出命令，直接與資料庫，而不是使用模型。 在此情況下，您會找到相關的文件：[ADO.NET](/dotnet/framework/data/adonet/index)。 請注意，您仍然可以使用**資料來源組態精靈**和設計工具來產生資料繫結程式碼，當您填入自己的記憶體，然後將 UI 控制項資料繫結至這些物件的物件。
+您可以略過步驟3並程式設計 .NET 應用程式，直接將命令發行至資料庫，而不是使用模型。 在此情況下，您會發現相關文件： [ADO.NET](/dotnet/framework/data/adonet/index)。 請注意，當您在記憶體中填入自己的物件，然後將 UI 控制項資料系結至這些物件時，您仍然可以使用**資料來源設定 Wizard**和設計工具來產生資料系結程式碼。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [使用 Visual Studio 存取資料](../data-tools/accessing-data-in-visual-studio.md)

@@ -6,17 +6,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - Live Unit Testing
 - Live Unit Testing What's New
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 ms.workload:
 - dotnet
 monikerRange: vs-2017
-ms.openlocfilehash: 6a96089de8f9998c12cbc2e12765d128b1d2195b
-ms.sourcegitcommit: 1a3c2ca995fd44fc72741b3a100c6e57f4f8702c
+ms.openlocfilehash: b8a7627572daf872ddbd66a9c93f2c904246977d
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/11/2019
-ms.locfileid: "72262278"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653013"
 ---
 # <a name="whats-new-in-live-unit-testing-for-visual-studio-2017"></a>Visual Studio 2017 中 Live Unit Testing 的新功能
 
@@ -34,11 +34,11 @@ ms.locfileid: "72262278"
 
 - **與工作中心通知的整合**. Visual Studio IDE 現在會在工作中心內顯示 Live Unit Testing 背景處理通知，讓使用者可以輕鬆地分辨啟用 Live Unit Testing 時發生什麼狀況。 這可處理在大型方案上啟動 Live Unit Testing 的重要問題。 之前，在涵蓋範圍圖示出現之前有幾分鐘的時間，使用者無法判斷是否真地啟用 Live Unit Testing，以及是否運作。 小事一樁啦！
 
-- **支援 MSTest 架構第 1 版**：Live Unit Testing 已使用三個熱門單元測試架構：xUnit、NUnit 和 MSTest。 之前，只有在 MSTest 單元測試專案已使用 MS Test 第 2 版時，Live Unit Testing 才會運作。 從 Visual Studio 2017 15.4 版開始，它現在也支援 MSTest 第 1 版。
+- **MSTest 架構第 1 版支援**：Live Unit Testing 已使用三個熱門單元測試架構：xUnit、NUnit 和 MSTest。 之前，只有在 MSTest 單元測試專案已使用 MS Test 第 2 版時，Live Unit Testing 才會運作。 從 Visual Studio 2017 15.4 版開始，它現在也支援 MSTest 第 1 版。
 
-- **可靠性與效能**：Live Unit Testing 現在確保系統可以進一步偵測尚未完成完全載入專案的時間，並避免 Live Unit Testing 損毀。 組建效能改善也可在系統知道專案檔中沒有任何變更的情況下，避免對 MSBuild 專案進行重新評估。
+- **可靠性和效能**：Live Unit Testing 現在確保系統可以進一步偵測尚未完成完全載入專案的時間，並避免 Live Unit Testing 損毀。 組建效能改善也可在系統知道專案檔中沒有任何變更的情況下，避免對 MSBuild 專案進行重新評估。
 
-- **其他使用者介面精簡**：按一下滑鼠右鍵手勢中令人混淆的 [Live Test Set - Include/Exclude] \(即時測試集 - 包含/排除\) 選項已重新命名為 [Live Unit Testing Include/Exclude] \(Live Unit Testing 包含/排除\)。 已移除 [測試] > [Live Unit Testing] 功能表上的 [Reset clean] \(全新重設\) 選項。 現在選取 [工具] > [選項] > [Live Unit Testing]，然後選取 [Delete Persisted Data] \(刪除持續性資料\) 即可予以存取。
+- **其他使用者介面精簡**：按一下滑鼠右鍵手勢中令人混淆的 [Live Test Set – Include/Exclude] (即時測試集 - 包含/排除) 選項已重新命名為 [Live Unit Testing Include/Exclude] (Live Unit Testing 包含/排除)。 已移除 [測試] > [Live Unit Testing] 功能表上的 [Reset clean] \(全新重設\) 選項。 現在選取 [工具] > [選項] > [Live Unit Testing]，然後選取 [Delete Persisted Data] \(刪除持續性資料\) 即可予以存取。
 
 ## <a name="version-153"></a>15.3 版本
 
@@ -64,7 +64,7 @@ ms.locfileid: "72262278"
   - 針對 NUnit：`[Category("SkipWhenLiveUnitTesting")]`
   - 針對 MSTest：`[TestCategory("SkipWhenLiveUnitTesting")]`
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [Live Unit Testing 簡介](live-unit-testing-intro.md)
 - [Visual Studio 的 Live Unit Testing](live-unit-testing.md)

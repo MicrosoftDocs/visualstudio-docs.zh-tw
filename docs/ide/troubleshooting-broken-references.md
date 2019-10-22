@@ -8,17 +8,17 @@ helpviewer_keywords:
 - troubleshooting references
 - referencing files from projects
 - referencing components, troubleshooting
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f9095e3b8c1f80b35b2d135c122c2d7230c1f8c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 3c5efe0d5ba8d00f7bfc362dd702f45dfa627c20
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62575939"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72647378"
 ---
 # <a name="troubleshoot-broken-references"></a>針對中斷參考進行疑難排解
 
@@ -88,6 +88,6 @@ ms.locfileid: "62575939"
 
 如果一位使用者加入了 COM 元件的參考，而第二位使用者嘗試在未安裝此元件的電腦上執行程式碼，則第二位使用者將收到參考中斷的錯誤。 在第二部電腦上安裝元件將會修正此錯誤。 如需如何在您的專案中使用 COM 元件參考的詳細資訊，請參閱 [.NET Framework 應用程式中的 COM 互通性](/dotnet/visual-basic/programming-guide/com-interop/com-interoperability-in-net-framework-applications)。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [專案設計工具、參考頁面 (Visual Basic)](../ide/reference/references-page-project-designer-visual-basic.md)

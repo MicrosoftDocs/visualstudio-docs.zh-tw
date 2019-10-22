@@ -8,21 +8,21 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 44380a03b87318be0fdf746c75eff8988ac68267
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 80b525fe896c59503cac55c9f7cab79a11b481f1
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66318486"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72647884"
 ---
 # <a name="writing-to-the-user-settings-store"></a>寫入使用者設定存放區
-使用者設定為可寫入的設定，在像是**工具 / 選項**對話方塊中，屬性 視窗中，然後某些其他對話方塊。 Visual Studio 擴充功能可能會使用這些來儲存少量資料。 本逐步解說示範如何將 「 記事本 」 加入 Visual Studio 是以外部工具讀取和寫入使用者設定存放區。
+使用者設定是可寫入的設定，例如 [**工具]/[選項**] 對話方塊、[屬性] 視窗，以及其他對話方塊。 Visual Studio 延伸模組可能會使用這些擴充功能來儲存少量的資料。 本逐步解說將說明如何藉由讀取和寫入使用者設定存放區，將記事本新增至 Visual Studio 做為外部工具。
 
 ## <a name="writing-to-the-user-settings-store"></a>寫入使用者設定存放區
 
-1. 建立名為 UserSettingsStoreExtension VSIX 專案，然後新增名為 UserSettingsStoreCommand 的自訂命令。 如需如何建立自訂命令的詳細資訊，請參閱[建立擴充的功能表命令](../extensibility/creating-an-extension-with-a-menu-command.md)
+1. 建立名為 UserSettingsStoreExtension 的 VSIX 專案，然後新增名為 UserSettingsStoreCommand 的自訂命令。 如需如何建立自訂命令的詳細資訊，請參閱[使用功能表命令建立擴充](../extensibility/creating-an-extension-with-a-menu-command.md)功能
 
-2. 在 UserSettingsStoreCommand.cs，新增下列 using 陳述式：
+2. 在 UserSettingsStoreCommand.cs 中，新增下列 using 指示詞：
 
     ```csharp
     using System.Collections.Generic;
@@ -30,7 +30,7 @@ ms.locfileid: "66318486"
     using Microsoft.VisualStudio.Shell.Settings;
     ```
 
-3. 在 MenuItemCallback，刪除方法的主體和取得的使用者設定儲存，，如下所示：
+3. 在 MenuItemCallback 中，刪除方法的主體，並取得使用者設定存放區，如下所示：
 
     ```csharp
     private void MenuItemCallback(object sender, EventArgs e)
@@ -40,7 +40,7 @@ ms.locfileid: "66318486"
     }
     ```
 
-4. 現在找出 「 記事本 」 是否已設為 外部工具。 您必須逐一查看所有外部的工具，來判斷是否 ToolCmd 設定"Notepad"，如下所示：
+4. 現在找出 [記事本] 是否已設定為 [外部工具]。 您需要逐一查看所有外部工具，以判斷 ToolCmd 設定是否為 "Notepad"，如下所示：
 
     ```csharp
     private void MenuItemCallback(object sender, EventArgs e)
@@ -64,7 +64,7 @@ ms.locfileid: "66318486"
 
     ```
 
-5. 如果尚未設定為 外部工具 記事本，請依下列方式設定：
+5. 如果 [記事本] 尚未設定為外部工具，請將它設定如下：
 
     ```vb
     private void MenuItemCallback(object sender, EventArgs e)
@@ -100,10 +100,10 @@ ms.locfileid: "66318486"
     }
     ```
 
-6. 測試程式碼。 請記住它做為外部工具，將 [記事本]，所以您必須回復登錄第二次執行之前。
+6. 測試程式碼。 請記住，它會新增 [記事本] 做為外部工具，因此您必須先復原登錄，然後再執行一次。
 
-7. 建置程式碼，並開始偵錯。
+7. 建立程式碼並開始進行偵錯工具。
 
-8. 在 **工具**功能表上，按一下**叫用 UserSettingsStoreCommand**。 這會新增 [記事本] 來**工具**功能表。
+8. 在 [**工具**] 功能表上，按一下 [叫用**UserSettingsStoreCommand**]。 這會將 [記事本] 新增至 [**工具**] 功能表。
 
-9. 現在您應該會看到 [記事本] 在 [工具] / [選項] 功能表，然後按一下**記事本**應該會顯示在 [記事本] 的執行個體。
+9. 現在您應該會在 [工具]/[選項] 功能表上看到 [記事本]，而按一下 [**記事本**] 應該會顯示 [記事本] 的實例。

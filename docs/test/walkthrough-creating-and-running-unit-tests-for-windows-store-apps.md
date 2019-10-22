@@ -7,19 +7,19 @@ helpviewer_keywords:
 - unit tests
 - unit tests, UWP apps
 - unit tests, running
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - uwp
-author: gewarren
-ms.openlocfilehash: a123657e148e4c19c0fab1c1a9bf567ad2ea6fa8
-ms.sourcegitcommit: 9a3972eb85de5443ac2bc03964c5a251c39b2921
+author: jillre
+ms.openlocfilehash: aa3b4b06fa1a1a1dfe21ec690e158bb955f416c0
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "71301719"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72659666"
 ---
-# <a name="walkthrough-create-and-run-unit-tests-for-uwp-apps"></a>逐步解說：建立並執行 UWP App 的單元測試
+# <a name="walkthrough-create-and-run-unit-tests-for-uwp-apps"></a>逐步解說：建立並執行 UWP 應用程式的單元測試
 
 Visual Studio 包含進行通用 Windows 平台 (UWP) 應用程式單元測試的支援。 Visual Studio 提供、Visual Basic 和C# C++的單元測試專案範本。
 
@@ -123,7 +123,7 @@ Visual Studio 包含進行通用 Windows 平台 (UWP) 應用程式單元測試�
 
    ![單元測試總管 &#45; 測試完成](../test/media/unit_test_win8_unittestexplorer_done.png)
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [使用 Visual Studio 測試 UWP 應用程式](../test/unit-test-your-code.md)
 - [建置並測試 UWP 應用程式](/azure/devops/pipelines/apps/windows/universal?tabs=vsts)

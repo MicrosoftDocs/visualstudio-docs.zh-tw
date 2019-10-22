@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 342a27571c9ad7b6ed1586fc762b2952ba86c3db
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
-ms.translationtype: HT
+ms.openlocfilehash: 64edeb6d6180907e6b1aa07fd5d443e8523c10b1
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72575154"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72647462"
 ---
 # <a name="step-7-add-multiplication-and-division-problems"></a>步驟 7：加入乘法和除法問題
 

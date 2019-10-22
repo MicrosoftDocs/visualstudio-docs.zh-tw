@@ -4,27 +4,29 @@ ms.date: 08/03/2018
 ms.topic: conceptual
 helpviewer_keywords:
 - fxcop analyzers
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: fec188ba61a7e4d3f27caad03f0a5d32b6758a32
-ms.sourcegitcommit: 39a04f42d23597b70053686d7e927ba78f38a9a8
+ms.openlocfilehash: 9791e2dbb6d4a82a49539216eda53d217140bd52
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/05/2019
-ms.locfileid: "71974999"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72649330"
 ---
 # <a name="install-fxcop-analyzers-in-visual-studio"></a>在 Visual Studio 中安裝 FxCop 分析器
 
 Microsoft 建立了一組稱為[CodeAnalysis](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers)的分析器，其中包含舊版分析中最重要的 "FxCop" 規則。 這些分析器會檢查您的程式碼中是否有安全性、效能和設計問題，以及其他專案。
 
-您可以將這些 FxCop 分析器安裝為 NuGet 套件或做為 Visual Studio 的 VSIX 擴充功能。 若要深入瞭解各項的優缺點，請參閱 @no__t 0NuGet 套件與VSIX 擴充功能 @ no__t-0。
+您可以將這些 FxCop 分析器安裝為 NuGet 套件或做為 Visual Studio 的 VSIX 擴充功能。 若要深入瞭解各項的優缺點，請參閱[NuGet 套件與 VSIX 延伸](roslyn-analyzers-overview.md#nuget-package-versus-vsix-extension)模組。
 
 ## <a name="nuget-package"></a>NuGet 套件
 
-您可以直接從專案的 [程式碼分析] [屬性] 頁面安裝[CodeAnalysis FxCopAnalyzers](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers) NuGet 套件：
+::: moniker range=">=vs-2019"
+
+在 Visual Studio 2019 16.3 版和更新版本中，您可以直接從專案的 [程式碼分析] 屬性頁安裝[FxCopAnalyzers](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers) NuGet 套件：
 
 1. 以滑鼠右鍵按一下**方案總管**中的專案節點，選取 [**屬性**]，然後選取 [程式**代碼分析**] 索引標籤。
 
@@ -35,6 +37,25 @@ Microsoft 建立了一組稱為[CodeAnalysis](https://www.nuget.org/packages/Mic
    Visual Studio 會安裝最新版本的 CodeAnalyzers. FxCopAnalyzers 套件。 元件會出現在**方案總管**的 [**參考**]  > **分析器**底下。
 
    ![方案總管中的分析器節點](media/solution-explorer-analyzers-node.png)
+
+如果您使用的是舊版的 Visual Studio 2019，請使用 [[套件管理員主控台](/nuget/quickstart/install-and-use-a-package-in-visual-studio#package-manager-console)] 或 [[套件管理員] UI](/nuget/quickstart/install-and-use-a-package-in-visual-studio#package-manager-console)來安裝封裝。
+
+::: moniker-end
+
+::: moniker range="vs-2017"
+
+1. 根據您的 Visual Studio 版本，判斷要安裝[的分析器套件版本](#fxcopanalyzers-package-versions)。
+
+2. 使用 [[套件管理員主控台](/nuget/quickstart/install-and-use-a-package-in-visual-studio#package-manager-console)] 或 [[套件管理員] UI](/nuget/quickstart/install-and-use-a-package-in-visual-studio#package-manager-console)，在 Visual Studio 中安裝套件。
+
+   > [!NOTE]
+   > 每個分析器套件的 [nuget.org] 頁面會顯示要貼入**封裝管理員主控台**的命令。 甚至還有一個方便的按鈕，可將文字複製到剪貼簿。
+   >
+   > ![顯示套件管理員主控台命令的 NuGet.org 頁面](media/nuget-package-manager-command.png)
+
+   系統會安裝分析器元件，而且它們會出現在 [**參考**>**分析器**] 底下的**方案總管**中。
+
+::: moniker-end
 
 ### <a name="custom-installation"></a>自訂安裝
 
@@ -53,9 +74,9 @@ Microsoft 建立了一組稱為[CodeAnalysis](https://www.nuget.org/packages/Mic
 | - | - |
 | Visual Studio 2019 （所有版本）<br />Visual Studio 2017 15.8 版和更新版本 | [新版](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/) |
 | Visual Studio 2017 版本15.5 至15。7 | [2.6.3](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/2.6.3) |
-| Visual Studio 2017 版本15.3 至15。4 | [2.3.0-beta1](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/2.3.0-beta1) |
-| Visual Studio 2017 版本15.0 至15。2 | [2.0.0-beta2](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/2.0.0-beta2) |
-| Visual Studio 2015 update 2 和3 | [1.2.0-beta2](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/1.2.0-beta2) |
+| Visual Studio 2017 版本15.3 至15。4 | [2.3.0-Beta1](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/2.3.0-beta1) |
+| Visual Studio 2017 版本15.0 至15。2 | [2.0.0-Beta2](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/2.0.0-beta2) |
+| Visual Studio 2015 update 2 和3 | [1.2.0-Beta2](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/1.2.0-beta2) |
 | Visual Studio 2015 Update 1 | [1.1.0](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/1.1.0) |
 | Visual Studio 2015 RTW | [1.0.1](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/1.0.1) |
 
@@ -131,7 +152,7 @@ Microsoft 建立了一組稱為[CodeAnalysis](https://www.nuget.org/packages/Mic
 
 ::: moniker-end
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [Visual Studio 中的程式碼分析器總覽](../code-quality/roslyn-analyzers-overview.md)
 - [在 Visual Studio 中使用程式碼分析器](../code-quality/use-roslyn-analyzers.md)

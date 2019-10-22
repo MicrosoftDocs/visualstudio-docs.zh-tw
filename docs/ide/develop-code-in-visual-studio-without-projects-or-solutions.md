@@ -6,17 +6,17 @@ helpviewer_keywords:
 - open folder [Visual Studio]
 - anycode [Visual Studio]
 - projects and solutions, develop code without
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7554d3f89547701e1a7cad0280a1655450520586
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: a88bfb5f12ae707c98eedd1f57a4be14665aa83c
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62962394"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72652510"
 ---
 # <a name="develop-code-in-visual-studio-without-projects-or-solutions"></a>在 Visual Studio 中不使用專案或方案來開發程式碼
 
@@ -115,7 +115,7 @@ ms.locfileid: "62962394"
 
 ![[啟動] 按鈕上的專案](media/customize-start-button-project.png)
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [自訂建置與偵錯工作](../ide/customize-build-and-debug-tasks-in-visual-studio.md)
 - [適用於 C++ 的「開啟資料夾」專案](/cpp/build/open-folder-projects-cpp)

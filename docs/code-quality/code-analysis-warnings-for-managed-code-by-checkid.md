@@ -258,17 +258,17 @@ f1_keywords:
 - CA2243
 - CA5122
 ms.assetid: 5cb221f6-dc59-4abf-9bfa-adbd6f907f96
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 93cee06ac4e4d8138dc2fd0c76ee32ed7af6791f
-ms.sourcegitcommit: 08c144d290da373df841f04fc799e3133540a541
+ms.openlocfilehash: 621615879f4e9ee61a2830fd93c53a2baf64b898
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72535943"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72622439"
 ---
 # <a name="code-analysis-warnings-for-managed-code-by-checkid"></a>CheckId 受控碼的程式碼分析警告
 

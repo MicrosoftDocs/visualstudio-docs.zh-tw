@@ -7,18 +7,18 @@ helpviewer_keywords:
 - EditorConfig coding conventions
 - language code style rules [EditorConfig]
 - formatting conventions [EditorConfig]
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: d8be11a8705686ade370a8107aad826b7cab9851
-ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
+ms.openlocfilehash: 99d83157e2b6d108eb87a701aa8bc05ca2c7b1e6
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71186549"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653723"
 ---
 # <a name="net-coding-convention-settings-for-editorconfig"></a>EditorConfig 的 .NET 編碼慣例設定
 
@@ -204,7 +204,7 @@ csharp_preserve_single_line_blocks = true
 visual_basic_preferred_modifier_order = Partial,Default,Private,Protected,Public,Friend,NotOverridable,Overridable,MustOverride,Overloads,Overrides,MustInherit,NotInheritable,Static,Shared,Shadows,ReadOnly,WriteOnly,Dim,Const,WithEvents,Widening,Narrowing,Custom,Async:suggestion
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [快速動作](../ide/quick-actions.md)
 - [建立可攜式自訂編輯器選項](../ide/create-portable-custom-editor-options.md)

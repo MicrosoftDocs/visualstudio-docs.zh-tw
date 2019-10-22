@@ -1,5 +1,5 @@
 ---
-title: CA2004:移除對 GC 的呼叫。KeepAlive |Microsoft Docs
+title: CA2004 必須：移除對 GC 的呼叫。KeepAlive |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,34 +12,34 @@ helpviewer_keywords:
 - CA2004
 ms.assetid: bc543b5b-23eb-4b45-abc2-9325cd254ac2
 caps.latest.revision: 17
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: e75ab22212945e5a6b4465e1e1f64ca48a9daa4a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e34a8e7d4860a599155554410e13df5a6eb3bfe1
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68189039"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72672498"
 ---
-# <a name="ca2004-remove-calls-to-gckeepalive"></a>CA2004:必須移除對 GC.KeepAlive 的呼叫
+# <a name="ca2004-remove-calls-to-gckeepalive"></a>CA2004：必須移除對 GC.KeepAlive 的呼叫
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |TypeName|RemoveCallsToGCKeepAlive|
 |CheckId|CA2004|
-|分類|Microsoft.Reliability|
-|中斷變更|非重大|
+|Category|Microsoft 可靠性|
+|中斷變更|不中斷|
 
 ## <a name="cause"></a>原因
- 類別會使用`SafeHandle`但仍會包含呼叫`GC.KeepAlive`。
+ 類別使用 `SafeHandle`，但仍包含 `GC.KeepAlive` 的呼叫。
 
 ## <a name="rule-description"></a>規則描述
- 如果您要將它轉換成`SafeHandle`使用方式，移除所有呼叫`GC.KeepAlive`（物件）。 在此情況下，類別應該不需要呼叫`GC.KeepAlive`，假設它們沒有完成項但依賴`SafeHandle`完成作業系統控制代碼。  雖然呼叫中保留的成本`GC.KeepAlive`可能不明顯所認知的效能測量，呼叫`GC.KeepAlive`是必要的或足以解決可能不再存在的問題，會讓程式碼更難的存留期維護。
+ 如果您要轉換為 `SafeHandle` 使用方式，請移除對 `GC.KeepAlive` （物件）的所有呼叫。 在此情況下，類別應該不需要呼叫 `GC.KeepAlive`，假設它們沒有完成項，而是依賴 `SafeHandle` 來完成其 OS 控制碼。  雖然 `GC.KeepAlive` 的呼叫成本可能會因為效能的測量而微不足道，但發現 `GC.KeepAlive` 的呼叫是必要的，或足以解決可能已不存在的存留期問題，而使得程式碼更難維護。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
- 移除對呼叫`GC.KeepAlive`。
+ 移除對 `GC.KeepAlive` 的呼叫。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
- 只有不是要轉換成正確的技術上來說，您可以隱藏這個警告`SafeHandle`類別中的使用方式。
+ 只有在技術上不正確，才能轉換成類別中 `SafeHandle` 使用方式時，您才可以隱藏這個警告。

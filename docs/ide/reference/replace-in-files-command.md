@@ -9,20 +9,20 @@ helpviewer_keywords:
 - Replace In Files command
 - ReplaceInFiles command
 ms.assetid: f116066a-4f65-4f2c-94ef-12cbd8cfb598
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eb121962bbfd61dc4d4aac84467a2a8659918b63
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+ms.openlocfilehash: 0f7cb81f99644fc9d7253487030ed6da1f400bb5
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926110"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72655577"
 ---
 # <a name="replace-in-files-command"></a>檔案中取代命令
-使用在 [尋找和取代]  視窗 [檔案中取代]  索引標籤提供的選項子集，取代檔案中的文字。
+使用在 [尋找和取代] 視窗 [檔案中取代] 索引標籤提供的選項子集，取代檔案中的文字。
 
 ## <a name="syntax"></a>語法
 
@@ -44,39 +44,39 @@ Edit.ReplaceinFiles findwhat replacewith [/all] [/case]
 ## <a name="switches"></a>參數
 /all 或 /a
 
-選擇性。 以取代文字來取代所有出現的搜尋文字。
+選擇項。 以取代文字來取代所有出現的搜尋文字。
 
 /case 或 /c
 
-選擇性。 只有當大寫和小寫字元完全符合 `findwhat` 引數中所指定的項目時，才會出現相符項目。
+選擇項。 只有當大寫和小寫字元完全符合 `findwhat` 引數中所指定的項目時，才會出現相符項目。
 
 /ext: `extensions`
 
-選擇性。 指定要搜尋之檔案的副檔名。
+選擇項。 指定要搜尋之檔案的副檔名。
 
 /keep 或 /k
 
-選擇性。 指定所有修改過的檔案皆保持開啟。
+選擇項。 指定所有修改過的檔案皆保持開啟。
 
 /lookin: `searchpath`
 
-選擇性。 要搜尋的目錄。 如果路徑包含空格，請將完整路徑用引號括住。
+選擇項。 要搜尋的目錄。 如果路徑包含空格，請將完整路徑用引號括住。
 
 /options 或 /t
 
-選擇性。 顯示目前的尋找選項設定清單，但不會執行搜尋。
+選擇項。 顯示目前的尋找選項設定清單，但不會執行搜尋。
 
 /regex 或 /r
 
-選擇性。 可將 `findwhat` 引數中預先定義的特殊字元作為標記法，以表示文字模式，而不是常值字元模式。 如需規則運算式字元的完整清單，請參閱[規則運算式](../../ide/using-regular-expressions-in-visual-studio.md)。
+選擇項。 可將 `findwhat` 引數中預先定義的特殊字元作為標記法，以表示文字模式，而不是常值字元模式。 如需規則運算式字元的完整清單，請參閱[規則運算式](../../ide/using-regular-expressions-in-visual-studio.md)。
 
 /reset 或 /e
 
-選擇性。 將尋找選項還原為預設值，但不會執行搜尋。
+選擇項。 將尋找選項還原為預設值，但不會執行搜尋。
 
 /stop
 
-選擇性。 中止目前正在進行中的搜尋作業。 若已指定 `/stop`，則取代會忽略所有其他引數。 例如，若要停止目前的取代，您要輸入下列項目︰
+選擇項。 中止目前正在進行中的搜尋作業。 若已指定 `/stop`，則取代會忽略所有其他引數。 例如，若要停止目前的取代，您要輸入下列項目︰
 
 ```
 >Edit.ReplaceinFiles /stop
@@ -84,28 +84,28 @@ Edit.ReplaceinFiles findwhat replacewith [/all] [/case]
 
 /sub 或 /s
 
-選擇性。 搜尋 /lookin:`searchpath` 引數所指定之目錄內的子資料夾。
+選擇項。 搜尋 /lookin:`searchpath` 引數所指定之目錄內的子資料夾。
 
 /text2 或 /2
 
-選擇性。 在 [尋找結果 2]  視窗中顯示取代結果。
+選擇項。 在 [尋找結果 2] 視窗中顯示取代結果。
 
 /wild 或 /l
 
-選擇性。 可將 `findwhat` 引數中預先定義的特殊字元作為標記法，以表示字元或字元序列。
+選擇項。 可將 `findwhat` 引數中預先定義的特殊字元作為標記法，以表示字元或字元序列。
 
 /word 或 /w
 
-選擇性。 只搜尋全字相符。
+選擇項。 只搜尋全字相符。
 
 ## <a name="example"></a>範例
-此範例會在 "my visual studio projects" 資料夾的所有 .cls 檔案中搜尋 `btnCancel`，並以 `btnReset` 取代它，在 [尋找結果 2]  視窗中顯示取代資訊。
+此範例會在 "my visual studio projects" 資料夾的所有 .cls 檔案中搜尋 `btnCancel`，並以 `btnReset` 取代它，在 [尋找結果 2] 視窗中顯示取代資訊。
 
 ```
 >Edit.ReplaceinFiles btnCancel btnReset /lookin:"c:/my visual studio projects" /ext:.cls /text2
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [尋找和取代文字](../../ide/finding-and-replacing-text.md)
 - [檔案中取代](../../ide/replace-in-files.md)

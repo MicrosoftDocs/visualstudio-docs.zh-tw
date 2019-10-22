@@ -7,23 +7,23 @@ helpviewer_keywords:
 - Log switch [devenv.exe]
 - /Log Devenv switch
 ms.assetid: ae23c4ae-2376-4fe3-b8d2-81d34e61c8ba
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b2e11cb36176aec94528019cdd19bb5fa86c92b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: bc37f4cd7441fc7945ca1762d16300c18d9ecbfe
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62946800"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72610363"
 ---
 # <a name="log-devenvexe"></a>/Log (devenv.exe)
 
 將所有活動記錄至記錄檔中，以進行疑難排解。 在您至少呼叫 `devenv /log` 一次之後這個檔案才會出現。 根據預設，記錄檔位於下列位置：
 
-**%APPDATA%\\Microsoft\\VisualStudio\\**\<版本\>**\\ActivityLog.xml**
+**%APPDATA%\\Microsoft\\VisualStudio\\** \<版本\> **\\ActivityLog.xml**
 
 其中 <版本>\<\> 是 Visual Studio 版本。 不過，您可以指定不同的路徑和檔案名稱。
 
@@ -53,6 +53,6 @@ devenv /Log NameOfLogFile
 devenv /log "%USERPROFILE%\MyVSLog.xml"
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [Devenv 命令列參數](../../ide/reference/devenv-command-line-switches.md)

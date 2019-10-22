@@ -7,15 +7,15 @@ helpviewer_keywords:
 - unit tests, load test walkthrough
 - load tests, walkthrough
 ms.assetid: bbf075a5-96d5-48ed-a03c-330f0fc04748
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: a319181348f86ab8f16b2cc2b7e9a6e6f3a16c13
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 78bce7f8a05032fa8654021d89598ede67fa08c0
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62976271"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72659682"
 ---
 # <a name="walkthrough-create-and-run-a-load-test-that-contains-unit-tests"></a>逐步解說：建立和執行包含單元測試的負載測試
 
@@ -47,7 +47,7 @@ ms.locfileid: "62976271"
 
      [加入新的專案] 對話方塊隨即顯示。
 
-3. 在 [加入新的專案] 對話方塊中，展開 [Visual C#]，然後選擇 [測試]。 在範本清單中，選擇 [Web 效能和負載測試專案]，然後在 [名稱] 欄位中，鍵入 `BankLoadTest`。 選擇 [確定] 。
+3. 在 [加入新的專案] 對話方塊中，展開 [Visual C#]，然後選擇 [測試]。 在範本清單中，選擇 [Web 效能和負載測試專案]，然後在 [名稱] 欄位中，鍵入 `BankLoadTest`。 選擇 [確定]。
 
      BankLoadTest Web 效能和負載測試專案會加入至方案。
 
@@ -143,7 +143,7 @@ ms.locfileid: "62976271"
 
 2. 如果您的測試模擬超出任何臨界值，樹狀控制項節點便會出現圖示，指出發生臨界值違規。 錯誤上面會有紅色圈圈，警告則是黃色的三角形。 您會看到超過臨界值的計數器，且若將圖示拖曳到圖形中，即可繪製圖形。 您可以在測試執行時執行此動作。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [編輯測試混合以指定要包含在負載測試情節中的測試](../test/edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario.md)
 - [指定虛擬網路類型](../test/specify-virtual-network-types-in-a-load-test-scenario.md)

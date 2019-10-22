@@ -1,5 +1,5 @@
 ---
-title: HOW TO：建立類型之間的繼承 (類別設計工具)
+title: 如何：建立類型之間的繼承 (類別設計工具)
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -8,19 +8,19 @@ helpviewer_keywords:
 - inheritance, relationship defining
 - relationships, defining inheritance
 ms.assetid: 3786a21c-8022-4bf5-9d13-740fd354e93c
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c1a4f8db08ec80714fe2cd74e4d1300d68a56e5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: e8a7d7f3facf1408f87ef23dfa8ed8462195c172
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62975368"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72647721"
 ---
-# <a name="how-to-create-inheritance-between-types-in-class-designer"></a>HOW TO：在類別設計工具中建立類型之間的繼承
+# <a name="how-to-create-inheritance-between-types-in-class-designer"></a>如何：在類別設計工具中建立類型之間的繼承
 
 若要使用 [類別設計工具] 在類別圖上建立兩個類型之間的繼承關係，請將基底類型連線至其衍生類型或其他類型。 您可以建立兩個類別之間的繼承關係、一個類別和一個介面之間的繼承關係，或兩個介面之間的繼承關係。
 
@@ -28,7 +28,7 @@ ms.locfileid: "62975368"
 
 1. 從 [方案總管] 的專案中開啟類別圖表 (.cd) 檔案。
 
-     如果您還沒有類別圖，請先建立類別圖。 請參閱[如何：將類別圖表新增至專案](how-to-add-class-diagrams-to-projects.md)。
+     如果您還沒有類別圖，請先建立類別圖。 請參閱[如何：將類別圖新增至專案](how-to-add-class-diagrams-to-projects.md)。
 
 2. 在 [工具箱] 的 [類別設計工具] 下，按一下 [繼承]。
 
@@ -47,7 +47,7 @@ ms.locfileid: "62975368"
     >
     >  雖然您可以視覺化現有的泛型類型，不過無法建立新的泛型類型。 您也無法變更現有泛型類型的型別參數。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [繼承](/dotnet/csharp/programming-guide/classes-and-structs/inheritance)
 - [繼承的基本概念](/dotnet/visual-basic/programming-guide/language-features/objects-and-classes/inheritance-basics)

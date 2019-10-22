@@ -1,43 +1,43 @@
 ---
-title: 工作流程設計工具-Rethrow 活動設計工具
+title: 工作流程設計工具重新引發活動設計工具
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.Rethrow.UI
 ms.assetid: 9cfa2eda-395f-4cf3-9154-83fadd4f7452
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 558ff5a36d172b8cd1fef0b811d1eaa920b90c6d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4d015ad500537a17cfc2c48c8076df43a38534ea
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63009271"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72650011"
 ---
 # <a name="rethrow-activity-designer"></a>Rethrow 活動設計工具
 
-**重新擲回**活動設計工具會用來建立及設定<xref:System.Activities.Statements.Rethrow>活動。
+[**重新**擲回] 活動設計工具會用來建立和設定 <xref:System.Activities.Statements.Rethrow> 活動。
 
-## <a name="the-rethrow-activity"></a>Rethrow 活動
+## <a name="the-rethrow-activity"></a>重新引發活動
 
 <xref:System.Activities.Statements.Rethrow> 活動會執行先前已擲回的例外狀況。 此活動只能用於 <xref:System.Activities.Statements.Catch> 活動中的 <xref:System.Activities.Statements.TryCatch> 處理常式。
 
-### <a name="use-the-rethrow-activity-designer"></a>使用 ReThrow 活動設計工具
+### <a name="use-the-rethrow-activity-designer"></a>使用重新引發活動設計工具
 
-存取權**重新擲回**中的活動設計工具**錯誤處理**類別**工具箱**。 **重新擲回**活動設計工具可以從拖曳**工具箱**並放到工作流程設計工具介面，不論活動通常放置的例如內部<xref:System.Activities.Statements.Sequence>。 卸除活動設計工具會建立<xref:System.Activities.Statements.Rethrow>活動，具有預設值**DisplayName**的擲回。 <xref:System.Activities.Activity.DisplayName%2A>可以編輯的標頭中的值**重新擲回**活動設計工具，或是在**DisplayName**屬性方格的方塊。
+在 [工具箱] 的 [**錯誤處理**] 類別**中，存取**[重新擲回] 活動設計**工具**。 [重新**引發**] 活動設計工具可以從 [**工具箱**] 拖曳出來，放到工作流程設計工具介面上通常用來放置活動的任一處，例如在 <xref:System.Activities.Statements.Sequence> 內部。 卸載活動設計工具會建立一個 <xref:System.Activities.Statements.Rethrow> 活動，其中具有 Throw 的預設**DisplayName** 。 您可以在 [重新擲回 **] 活動設計工具的標**頭中，或在屬性方格的 [ **DisplayName** ] 方塊中編輯 <xref:System.Activities.Activity.DisplayName%2A> 值。
 
-### <a name="the-rethrow-properties"></a>Rethrow 屬性
+### <a name="the-rethrow-properties"></a>重新擲回屬性
 
-下表顯示<xref:System.Activities.Statements.Rethrow>屬性，並說明它們在設計工具的使用方式：
+下表顯示 <xref:System.Activities.Statements.Rethrow> 屬性，並說明它們在設計工具中的使用方式：
 
-|屬性名稱|必要|使用量|
+|屬性名稱|必要項|使用量|
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|指定 <xref:System.Activities.Statements.Rethrow> 活動選用的易記名稱。 預設為 Rethrow。|
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [集合](../workflow-designer/collection-activity-designers.md)
 - [Throw](../workflow-designer/throw-activity-designer.md)

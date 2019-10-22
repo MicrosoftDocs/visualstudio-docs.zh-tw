@@ -6,17 +6,17 @@ helpviewer_keywords:
 - project templates [Visual Studio], locations
 - item templates [Visual Studio], locations
 - template locations [Visual Studio]
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: db74d23cf42e371f00bf25c7edcd8c480f7649d4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: f9035e63fd172727f3bfae44e18a0727599d4edc
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62430272"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72645885"
 ---
-# <a name="how-to-locate-and-organize-project-and-item-templates"></a>HOW TO：尋找及整理專案與項目範本
+# <a name="how-to-locate-and-organize-project-and-item-templates"></a>如何：尋找並整理專案範本和項目範本
 
 範本檔案必須放在已知的位置，使其顯示在 [新增專案] 和 [新項目] 對話方塊中。
 
@@ -60,7 +60,7 @@ ms.locfileid: "62430272"
 
 ### <a name="user-templates"></a>使用者範本
 
-如果您將包含 *.vstemplate* 檔案的壓縮檔 (*.zip*) 新增到使用者範本目錄，範本將出現在 [新增專案] 和 [新增項目] 對話方塊中。 根據預設，自訂範本位於：
+如果您將包含 *.vstemplate* 檔案的壓縮檔 ( *.zip*) 新增到使用者範本目錄，範本將出現在 [新增專案] 和 [新增項目] 對話方塊中。 根據預設，自訂範本位於：
 
 ::: moniker range="vs-2017"
 
@@ -106,7 +106,7 @@ ms.locfileid: "62430272"
 
 1. 將此類別的所有範本都放在新資料夾中。
 
-1. 在 [檔案] 功能表上，依序選擇 [新增] 和 [專案]>。
+1. 在 [檔案] 功能表上，依序選擇 [新增]和 [專案] >。
 
    **HelloWorld** 類別隨即出現在 [新增專案] 對話方塊下的 [已安裝] > [Visual C#] 中。
 
@@ -146,7 +146,7 @@ ms.locfileid: "62430272"
 
 1. 儲存並關閉 *.vstemplate* 檔案。
 
-1. 在範本中選取檔案，以滑鼠右鍵按一下選項，選擇 [傳送至]  > [壓縮的 (zipped) 資料夾]。
+1. 在範本中選取檔案，以滑鼠右鍵按一下選項，選擇 [傳送至] > [壓縮的 (zipped) 資料夾]。
 
    檔案即會壓縮成 *.zip* 檔案。
 
@@ -156,7 +156,7 @@ ms.locfileid: "62430272"
 
 ::: moniker-end
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [自訂範本](../ide/customizing-project-and-item-templates.md)
 - [Visual Studio 範本結構描述參考 (擴充性)](../extensibility/visual-studio-template-schema-reference.md)

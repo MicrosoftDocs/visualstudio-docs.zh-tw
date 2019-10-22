@@ -5,19 +5,19 @@ ms.custom: seodec18, get-started
 ms.date: 11/20/2018
 ms.technology: vs-ide-general
 ms.topic: tutorial
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5bbca5e46ee83764a6a431ae13829a882b1d859f
-ms.sourcegitcommit: 39a04f42d23597b70053686d7e927ba78f38a9a8
+ms.openlocfilehash: f40111e59aa97180c98f0fc12d6b8eeb5d06ecec
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/05/2019
-ms.locfileid: "71975166"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72647874"
 ---
 # <a name="learn-to-use-the-code-editor"></a>了解如何使用程式碼編輯器
 
@@ -58,7 +58,7 @@ ms.locfileid: "71975166"
 
 ::: moniker-end
 
-2. 從功能表列上的 [檔案 **] 功能表中，選擇 [** **新增**] [@no__t **-2 檔案**]，或按**Ctrl**+**N**。
+2. 從功能表列上的 [檔案 **] 功能表中，選擇 [** **新增**] **[ >  檔案**]，或按**Ctrl** +**N**。
 
 3. 在 [新增檔案] 對話方塊的 [一般] 類別下，選擇 [Visual C# 類別]，然後選擇 [開啟]。
 
@@ -80,7 +80,7 @@ Visual Studio 提供實用的「程式碼片段」，讓您可以用來快速且
 
    您會看到在檔案中新增 `static void Main()` 方法簽章。 [Main()](/dotnet/csharp/programming-guide/main-and-command-args/) 方法是 C# 應用程式的進入點。
 
-可用的程式碼片段會因不同的程式設計語言而異。 您可以選擇 [**編輯**]  > **IntelliSense** >  [**插入程式碼片段**]，或按**ctrl**+**K**、 **Ctrl**+**X**，然後選擇 []，以查看語言的可用程式碼片段。您的語言資料夾。 針對 C#，清單如下：
+可用的程式碼片段會因不同的程式設計語言而異。 您可以查看語言的可用程式碼片段，方法是選擇 **編輯** ** >  IntelliSense**  > **插入程式碼片段**，或按**ctrl** +**K**， **ctrl** +**X**，然後選擇您的語言資料夾。 針對 C#，清單如下：
 
 ![C# 程式碼片段清單](../media/tutorial-code-snippet-list.png)
 
@@ -132,7 +132,7 @@ Visual Studio 提供實用的「程式碼片段」，讓您可以用來快速且
 
 ## <a name="view-symbol-definitions"></a>檢視符號定義
 
-Visual Studio 編輯器讓檢查類型、方法等等的定義變得十分輕鬆。其中一種方式是巡覽至包含定義的檔案，例如，在參考符號的任何位置選擇 [移至定義] 或按下 **F12**。 不會將焦點移離所處理檔案的較快速方式是使用[查看定義](../../ide/go-to-and-peek-definition.md#peek-definition)。 讓我們查看 `string` 類型的定義。
+Visual Studio 編輯器可讓您輕鬆檢查類型、方法等的定義。其中一種方式是流覽至包含定義的檔案，例如選擇 [**移至定義**]，或在參考符號的任何位置按下**F12** 。 不會將焦點移離所處理檔案的較快速方式是使用[查看定義](../../ide/go-to-and-peek-definition.md#peek-definition)。 讓我們查看 `string` 類型的定義。
 
 1. 以滑鼠右鍵按一下任何出現的 `string`，然後從內容功能表選擇 [查看定義]。 或者，您也可以按 **Alt**+**F12**。
 
@@ -188,7 +188,7 @@ Visual Studio 編輯器讓檢查類型、方法等等的定義變得十分輕鬆
 > [!div class="nextstepaction"]
 > [了解專案與解決方案](tutorial-projects-solutions.md)
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [程式碼片段](../../ide/code-snippets.md)
 - [巡覽程式碼](../../ide/navigating-code.md)

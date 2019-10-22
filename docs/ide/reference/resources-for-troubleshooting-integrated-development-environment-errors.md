@@ -88,17 +88,17 @@ f1_keywords:
 - VB_E_TERRCLASSNOTREG
 - vs.webclient.help.general
 ms.assetid: 8f866eb5-a206-4c16-807e-96a0f2c0e645
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 723a9e382256650ae70982d403c2c768fb1f1e8b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 2741e86bdc8e59434472242210cd6de2ffa8cee9
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62945551"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72655547"
 ---
 # <a name="resources-for-troubleshooting-integrated-development-environment-errors"></a>用於針對整合式開發環境錯誤進行疑難排解的資源
 
@@ -119,9 +119,9 @@ ms.locfileid: "62945551"
 
 ## <a name="product-support"></a>產品支援
 
-如果您在嘗試其他資源之後仍有疑問，則可以前往 [Microsoft 支援服務](http://go.microsoft.com/fwlink/?linkid=1782)網站，連絡 Microsoft 支援服務。 如需您地區中可用的產品支援資訊，請參閱[告訴我們](../../ide/talk-to-us.md)。
+如果您在嘗試其他資源之後仍有疑問，則可以前往 [Microsoft 支援服務](http://go.microsoft.com/fwlink/?linkid=1782)網站，連絡 Microsoft 支援服務。 如需區域中可用產品支援的詳細資訊，請參閱[Visual Studio 意見反應選項](../../ide/feedback-options.md)頁面。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 * [對網路相關錯誤或 Proxy 錯誤進行疑難排解](../../install/install-and-use-visual-studio-behind-a-firewall-or-proxy-server.md#troubleshoot-network-related-errors)
 * [疑難排解 (Visual Studio for Mac)](/visualstudio/mac/troubleshooting)

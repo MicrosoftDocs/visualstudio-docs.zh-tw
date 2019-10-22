@@ -2,19 +2,19 @@
 title: 插入 XML 文件註解
 ms.date: 01/26/2018
 ms.topic: reference
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: b258b456aa614c851be138c017b3378cc13984cc
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
-ms.translationtype: HT
+ms.openlocfilehash: e9153677b833a89a236923a971b511548b064142
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66715387"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72668603"
 ---
-# <a name="how-to-insert-xml-comments-for-documentation-generation"></a>作法：在文件產生中插入 XML 註解
+# <a name="how-to-insert-xml-comments-for-documentation-generation"></a>如何：在文件產生中插入 XML 註解
 
 Visual Studio 可藉由自動產生標準 XML 文件註解結構，來幫助您記錄諸如類別和方法的程式碼項目。 編譯時間中，您可以產生包含文件註解的 XML 檔案。
 
@@ -34,9 +34,9 @@ Visual Studio 可藉由自動產生標準 XML 文件註解結構，來幫助您�
 
    - 在 C# 中鍵入 `///`，或在 Visual Basic 中鍵入 `'''`
 
-   - 從 [編輯]  功能表上，選擇 [IntelliSense]   > [插入註解] 
+   - 從 [編輯]功能表上，選擇 [IntelliSense] > [插入註解]
 
-   - 以滑鼠右鍵在程式碼項目或其上方按一下，或從內容功能表選擇 [片段]   > [插入註解] 
+   - 以滑鼠右鍵在程式碼項目或其上方按一下，或從內容功能表選擇 [片段] > [插入註解]
 
    XML 範本會立即在程式碼項目上方產生。 例如，為方法標記註解時，會產生 **\<summary\>** 項目、每個參數的 **\<param\>** 元素、以及記錄傳回值的 **\<returns\>** 項目。
 
@@ -49,9 +49,9 @@ Visual Studio 可藉由自動產生標準 XML 文件註解結構，來幫助您�
    ![已完成的註解](media/doc-result-cs.png)
 
 > [!NOTE]
-> 在 C# 鍵入 `///` 或在 Visual Basic 鍵入 `'''` 之後，會有切換 XML 文件註解的[選項](../../ide/reference/options-text-editor-csharp-advanced.md)。 從功能表列中，選擇 [工具]   > [選項]  來開啟 [選項]  對話方塊。 然後，瀏覽至 [文字編輯器]   > C#  或 [基本]   > [進階]  。 在 [編輯器說明]  區段中，尋找 [產生 XML 文件註解]  選項。
+> 在 C# 鍵入 `///` 或在 Visual Basic 鍵入 `'''` 之後，會有切換 XML 文件註解的[選項](../../ide/reference/options-text-editor-csharp-advanced.md)。 從功能表列中，選擇 [工具] > [選項] 來開啟 [選項] 對話方塊。 然後，瀏覽至 [文字編輯器] > C# 或 [基本] > [進階]。 在 [編輯器說明] 區段中，尋找 [產生 XML 文件註解] 選項。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [XML 文件註解 (C# 程式設計指南)](/dotnet/csharp/programming-guide/xmldoc/xml-documentation-comments)
 - [使用 XML 註解記錄您的程式碼 (C# 指南)](/dotnet/csharp/codedoc)

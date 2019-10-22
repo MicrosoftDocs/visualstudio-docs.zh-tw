@@ -6,20 +6,20 @@ ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 ms.assetid: bc8df61c-19af-40ab-a871-315807e5f4bf
 caps.latest.revision: 6
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 7c690389b5abc3b6e37aed1629ae5a640a5d99a7
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 36681eaa7a9e384c10d92ab26b214c782d2378a6
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65682210"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72654863"
 ---
 # <a name="mixed-minimum-rules-rule-set"></a>混合最小規則規則集
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Microsoft 混合最小規則專注於最關鍵的問題，在您C++支援 Common Language Runtime，包括潛在的安全性漏洞和應用程式損毀的專案。 您應該包含這個規則集建立的任何自訂規則集中您C++支援 Common Language Runtime 的專案。  
+Microsoft 混合的最低規則會著重于您C++的專案中支援 Common Language Runtime 的最嚴重問題，包括潛在的安全性漏洞和應用程式損毀。 您應該將此規則集包含在您為支援 Common Language Runtime 之C++專案所建立的任何自訂規則集中。
 
 |                                            規則                                             |                                                  描述                                                  |
 |---------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------|
@@ -75,7 +75,7 @@ Microsoft 混合最小規則專注於最關鍵的問題，在您C++支援 Common
 |        [C6523](https://msdn.microsoft.com/11397a31-b224-46b0-afb7-d49ca576a3bb)        |                                         無效的大小字串參數                                         |
 |                              [C6525](../code-quality/c6525.md)                              |                                   無效的大小字串不可能執行到的位置                                    |
 |        [C6526](https://msdn.microsoft.com/59c590c7-0098-4166-a1ac-87f324596002)        |                                        無效的大小字串緩衝區類型                                        |
-|                              [C6527](../code-quality/c6527.md)                              |              無效的附註：'NeedsRelease' 屬性不能用於 void 類型的值               |
+|                              [C6527](../code-quality/c6527.md)                              |              無效的註釋：'NeedsRelease' 屬性不能用於 void 類型的值               |
 |                              [C6530](../code-quality/c6530.md)                              |                                       無法辨認的格式字串樣式                                        |
 |                              [C6540](../code-quality/c6540.md)                              | 在這個函式上使用屬性註釋會使其所有現有的 __declspec 註釋無效。  |
 |                              [C6551](../code-quality/c6551.md)                              |                              無效的大小規格: 無法剖析運算式                              |
@@ -101,7 +101,7 @@ Microsoft 混合最小規則專注於最關鍵的問題，在您C++支援 Common
 |                             [C28215](../code-quality/c28215.md)                             |                    typefix 不能套用到已經有 typefix 的參數                    |
 |                             [C28216](../code-quality/c28216.md)                             |        checkReturn 註釋只適用於特定函式參數的後置條件。         |
 |                             [C28217](../code-quality/c28217.md)                             |            對於函式，註釋的參數數目不符合檔案中找到的參數數目             |
-|                             [C28218](../code-quality/c28218.md)                             |             函式參數，註釋的參數不符合找到的檔案              |
+|                             [C28218](../code-quality/c28218.md)                             |             針對函式參數，注釋的參數不符合檔案中找到的              |
 |                             [C28219](../code-quality/c28219.md)                             |                 註釋中標註的參數需要列舉的成員                 |
 |                             [C28220](../code-quality/c28220.md)                             |                  註釋中標註的參數需要整數運算式                   |
 |                             [C28221](../code-quality/c28221.md)                             |                        註釋中的參數需要字串運算式                         |
@@ -146,7 +146,7 @@ Microsoft 混合最小規則專注於最關鍵的問題，在您C++支援 Common
 |                             [C28286](../code-quality/c28286.md)                             |                                    對於函式，結尾附近發生語法錯誤                                    |
 |                             [C28287](../code-quality/c28287.md)                             |                函式的 \_At\_() 註釋中有語法錯誤 (無法辨認的參數名稱)                |
 |                             [C28288](../code-quality/c28288.md)                             |                  函式的 \_At\_() 註釋中有語法錯誤 (無效的參數名稱)                   |
-|                             [C28289](../code-quality/c28289.md)                             |                函式：ReadableTo 或 WritableTo 沒有規格做為參數                |
+|                             [C28289](../code-quality/c28289.md)                             |                對於函式：ReadableTo 或 WritableTo 沒有有限的規格做為參數                |
 |                             [C28290](../code-quality/c28290.md)                             |           函式的註釋包含比實際參數數目還多的外部            |
 |                             [C28291](../code-quality/c28291.md)                             |                        位於 deref 層級 0 的 post null/notnull 對函式是無意義的。                        |
 |                             [C28300](../code-quality/c28300.md)                             |                            運算子的運算式運算元類型不相容                             |
@@ -157,7 +157,7 @@ Microsoft 混合最小規則專注於最關鍵的問題，在您C++支援 Common
 |                             [C28305](../code-quality/c28305.md)                             |                                剖析語彙基元時發現錯誤。                                 |
 |                             [C28350](../code-quality/c28350.md)                             |                  註釋描述了條件不適用的狀況。                   |
 |                             [C28351](../code-quality/c28351.md)                             |         註釋描述條件中不可以使用動態值 (變數)。          |
-|  [CA1001](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md)  |                             具有可處置欄位的類型應該為可處置                             |
-|                 [CA1821](../code-quality/ca1821-remove-empty-finalizers.md)                 |                                            必須移除空的完成項                                            |
+|  [CA1001 具有](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md)  |                             具有可處置欄位的類型應該為可處置                             |
+|                 [CA1821 必須](../code-quality/ca1821-remove-empty-finalizers.md)                 |                                            必須移除空的完成項                                            |
 |          [CA2213](../code-quality/ca2213-disposable-fields-should-be-disposed.md)           |                                     可處置的欄位應該受到處置                                      |
 | [CA2231](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md) |                            在覆寫 ValueType.Equals 上多載等號運算子                            |

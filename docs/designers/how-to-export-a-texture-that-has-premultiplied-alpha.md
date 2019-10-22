@@ -1,21 +1,21 @@
 ---
-title: 作法：匯出包含預乘 Alpha 的紋理
+title: 如何：匯出包含預乘 Alpha 的材質
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 05348afa-f079-4f53-a05b-ecd91d13adab
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 16448a53064844f1c75db8b7eaa58c2cf909a968
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+ms.openlocfilehash: 84017bef80f42bd1848833b957abd88297d1e12d
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68924263"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72635488"
 ---
-# <a name="how-to-export-a-texture-that-has-premultiplied-alpha"></a>作法：匯出包含預乘 Alpha 的紋理
+# <a name="how-to-export-a-texture-that-has-premultiplied-alpha"></a>如何：匯出包含預乘 Alpha 的材質
 
 影像內容管線可以從來源影像產生預乘 Alpha 的材質。 這些使用起來可以更簡單，且比起不包含預乘 Alpha 的材質更穩固。
 
@@ -38,12 +38,12 @@ ms.locfileid: "68924263"
 
 #### <a name="to-create-a-texture-that-uses-premultiplied-alpha"></a>建立使用預乘 Alpha 的材質
 
-1. 從基本材質著手。 載入現有的影像檔案，或建立下列文章中所述的影像檔案：[如何：建立基本紋理](../designers/how-to-create-a-basic-texture.md)中所述，建立一個影像檔。
+1. 從基本材質著手。 載入現有的影像檔案，或遵循[如何：建立基本材質](../designers/how-to-create-a-basic-texture.md)所述，建立影像檔案。
 
-2. 設定材質檔案，以便供「影像內容管線」處理。 在方案總管  中，開啟材質檔案的捷徑功能表，然後選擇 [屬性]  。 在 [組態屬性]   > [一般]  頁面上，將 [項目類型]  屬性設定為 [影像內容管線]  。 確定 [內容]  屬性是設定為 [是]  ，且 [從組建中排除]  是設定為 [否]  ，然後選擇 [套用]  按鈕。 此時會顯示 [影像內容管線]  組態屬性頁面。
+2. 設定材質檔案，以便供「影像內容管線」處理。 在方案總管中，開啟材質檔案的捷徑功能表，然後選擇 [屬性]。 在 [組態屬性] > [一般] 頁面上，將 [項目類型] 屬性設定為 [影像內容管線]。 確定 [內容] 屬性是設定為 [是]，且 [從組建中排除] 是設定為 [否]，然後選擇 [套用] 按鈕。 此時會顯示 [影像內容管線] 組態屬性頁面。
 
-3. 設定影像內容管線以產生預乘 Alpha。 在 [組態屬性]   > [影像內容管線]   > [一般]  頁面上，將 [轉換成預乘的 Alpha 格式]  屬性設定為 [是 (/generatepremultipliedalpha)]  。
+3. 設定影像內容管線以產生預乘 Alpha。 在 [組態屬性] > [影像內容管線] > [一般] 頁面上，將 [轉換成預乘的 Alpha 格式] 屬性設定為 [是 (/generatepremultipliedalpha)]。
 
-4. 選擇 [確定]  按鈕。
+4. 選擇 [ **確定** ] 按鈕。
 
    當您建置專案時，「影像內容管線」會將來源影像從工作格式轉換成您指定的輸出格式 (這包括將影像轉換成預乘 Alpha 格式)，然後將結果複製到專案的輸出目錄。

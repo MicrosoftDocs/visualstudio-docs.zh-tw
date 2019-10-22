@@ -7,15 +7,15 @@ helpviewer_keywords:
 - template parameters [Visual Studio]
 - project templates, parameters
 - item templates, parameters
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 2fbc9d95a6e334c3dcd788c4b686a222c417b0df
-ms.sourcegitcommit: 0f44ec8ba0263056ad04d2d0dc904ad4206ce8fc
+ms.openlocfilehash: 445a4fa7847ea5c9a5cb64da09cf54c763e86d16
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70766118"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72647393"
 ---
 # <a name="template-parameters"></a>範本參數
 
@@ -23,7 +23,7 @@ ms.locfileid: "70766118"
 
 ## <a name="declare-and-enable-template-parameters"></a>宣告和啟用範本參數
 
-範本參數是以 $*parameter*$ 格式來宣告。 例如：
+範本參數是以 $*parameter*$ 格式來宣告。 例如:
 
 - $safeprojectname$
 
@@ -50,7 +50,7 @@ ms.locfileid: "70766118"
 |參數|描述|
 |---------------|-----------------|
 |clrversion|通用語言執行平台 (CLR) 的最新版本。|
-|ext_*|將 `ext_` 前置詞新增至任何參數，以參考父代範本的變數。 例如： `ext_safeprojectname` 。|
+|ext_*|將 `ext_` 前置詞新增至任何參數，以參考父代範本的變數。 例如，`ext_safeprojectname`。|
 |guid[1-10]|GUID；用來取代專案檔中的專案 GUID。 您最多可以指定 10 個唯一的 GUID (例如，`guid1`)。|
 |itemname|正在使用該參數的檔案名稱。|
 |machinename|目前的電腦名稱 (例如，Computer01)。|
@@ -74,7 +74,7 @@ ms.locfileid: "70766118"
 
 除了參數取代期間所使用的預設保留範本參數之外，您也可以指定自己的範本參數和值。 如需詳細資訊，請參閱 [CustomParameters 項目 (Visual Studio 範本)](../extensibility/customparameters-element-visual-studio-templates.md)。
 
-## <a name="example-use-the-project-name-for-a-file-name"></a>範例：針對檔案名稱使用專案名稱
+## <a name="example-use-the-project-name-for-a-file-name"></a>範例：檔案名稱使用專案名稱
 
 您可以在 `TargetFileName` 屬性中使用參數，來指定專案項目的變數檔案名稱。
 
@@ -91,7 +91,7 @@ ms.locfileid: "70766118"
 </TemplateContent>
 ```
 
-## <a name="example-use-the-safe-project-name-for-the-namespace-name"></a>範例：針對命名空間名稱使用安全的專案名稱
+## <a name="example-use-the-safe-project-name-for-the-namespace-name"></a>範例：命名空間名稱使用安全的專案名稱
 
 若要在 C# 類別檔案為命名空間使用安全的專案名稱，請使用下列語法：
 
@@ -117,7 +117,7 @@ namespace $safeprojectname$
 </TemplateContent>
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [如何：替代範本中的參數](how-to-substitute-parameters-in-a-template.md)
 - [自訂範本](../ide/customizing-project-and-item-templates.md)

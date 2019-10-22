@@ -1,5 +1,5 @@
 ---
-title: 使用靜態程式C#代碼分析, 分析商店應用程式中的 Visual Basic 和程式碼品質
+title: 使用靜態程式C#代碼分析，分析商店應用程式中的 Visual Basic 和程式碼品質
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-test
@@ -8,21 +8,21 @@ f1_keywords:
 - vs.codeanalysis.propertypages.csvb.express
 ms.assetid: cab553fc-19a9-4cbf-858e-8200258ffe50
 caps.latest.revision: 16
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 7510b7fac5dfc633b88bd9f53347118a02227b92
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: cfe5ed57bfc361b711ed2aceceff2aabfc44cf4e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68416651"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72660743"
 ---
 # <a name="analyze-visual-basic-and-c-code-quality-in-store-apps-using-visual-studio-static-code-analysis"></a>使用 Visual Studio 靜態程式碼分析，分析市集應用程式中的 Visual Basic 和 C# 程式碼品質
 
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-適用于 Windows 和 Windows Phone] (.。/Image/windows_and_phone_content.png "windows_and_phone_content")
+適用于 Windows 和 Windows Phone] （.。/Image/windows_and_phone_content.png "windows_and_phone_content")
 
  Visual Studio Express 中的程式碼分析工具會檢查您的程式碼是否有常見缺失，以及是否違反良好的程式設計作法。 程式碼分析警告與編譯器錯誤和警告不同，因為程式碼分析工具會搜尋有效的特定程式碼模式，但仍然可以為您或使用您程式碼的其他人建立問題。 程式碼分析也可以尋找難以透過測試發現的程式碼缺失。 在開發過程中定期執行程式碼分析工具，可以提升已完成應用程式的品質。
 
@@ -91,14 +91,14 @@ ms.locfileid: "68416651"
 ## <a name="BKMK_Search"></a> 搜尋和篩選程式碼分析結果
  您可以在多專案方案中搜尋警告訊息的詳細清單，以及篩選警告。
 
- ![搜尋和篩選程式碼分析視窗](../test/media/ca-searchfilter.png "CA_SearchFilter")
+ ![搜尋和篩選程式代碼分析視窗](../test/media/ca-searchfilter.png "CA_SearchFilter")
 
  在 [!INCLUDE[vs_dev11_expwin_long](../includes/vs-dev11-expwin-long-md.md)]，所有程式碼分析警告具有警告的嚴重性層級。
 
 ## <a name="BKMK_Warnings"></a> Visual Basic 和 C# 程式碼分析警告
  程式碼分析引發下列警告：
 
- [CA1001：具有可處置欄位的類型應該為可處置](https://msdn.microsoft.com/library/ms182172.aspx)
+ [CA1001：具有可處置欄位的類型應該是可處置的](https://msdn.microsoft.com/library/ms182172.aspx)
 
  [CA1821：必須移除空的完成項](https://msdn.microsoft.com/library/bb264476.aspx)
 
@@ -106,4 +106,4 @@ ms.locfileid: "68416651"
 
  [CA2229：必須實作序列化建構函式](https://msdn.microsoft.com/library/ms182343.aspx)
 
- [CA2231：在覆寫 ValueType.Equals 上多載等號運算子](https://msdn.microsoft.com/library/ms182359.aspx)
+ [CA2231：覆寫 ValueType.Equals 時必須一併多載等號比較運算子](https://msdn.microsoft.com/library/ms182359.aspx)

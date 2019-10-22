@@ -7,17 +7,17 @@ helpviewer_keywords:
 - plug-ins, load test
 - APIs, load tests
 ms.assetid: e15567bc-1f21-4feb-b81d-f17ba35cfde5
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 47707e0430d51a754f7e458ebf68e08124c1e7b5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 571abf14b1e17d85e21667c0ef0dbc3894b3ae76
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62821492"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653308"
 ---
-# <a name="how-to-use-the-load-test-api"></a>HOW TO：使用負載測試 API
+# <a name="how-to-use-the-load-test-api"></a>如何：使用負載測試 API
 
 Visual Studio 支援能夠控制或增強負載測試的負載測試外掛程式。 負載測試外掛程式是使用者定義的類別，能夠實作 <xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin> 命名空間中的 <xref:Microsoft.VisualStudio.TestTools.LoadTesting> 介面， 讓您可以使用自訂的負載測試控制項，例如，在計數器或錯誤臨界值到達所設定的值時，中止負載測試。 請使用 <xref:Microsoft.VisualStudio.TestTools.LoadTesting.LoadTest> 類別上的屬性，以取得或設定使用者定義程式碼中的負載測試參數， 也可以使用 <xref:Microsoft.VisualStudio.TestTools.LoadTesting.LoadTest> 類別上的事件，在負載測試執行時，附加告知的委派 (Delegate)。
 
@@ -53,13 +53,13 @@ Visual Studio 支援能夠控制或增強負載測試的負載測試外掛程式
     3. 在 [所選外掛程式的屬性] 窗格中，設定外掛程式要在執行階段中使用的初始值。
 
         > [!NOTE]
-        > 您可以從外掛程式公開任意數目的屬性，只要讓這些屬性成為公用、可設定且屬於基底型別 (例如整數、布林或字串) 的屬性即可。 您之後也可以使用 [屬性] 視窗來編輯負載測試外掛程式屬性。
+        > 您可以視需要從外掛程式公開任意數目的屬性。只要將它們設為公用、可設定，以及基底類型（例如整數、布林或字串）即可。 您之後也可以使用 [屬性] 視窗來編輯負載測試外掛程式屬性。
 
 9. 執行負載測試。
 
-     若要實作 <xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin>，請參閱[如何：建立負載測試外掛程式](../test/how-to-create-a-load-test-plug-in.md)。
+     如需 <xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin> 的實作，請參閱[如何：建立負載測試外掛程式](../test/how-to-create-a-load-test-plug-in.md)。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - <xref:Microsoft.VisualStudio.TestTools.LoadTesting>
 - [為負載測試建立自訂程式碼和外掛程式](../test/create-custom-code-and-plug-ins-for-load-tests.md)

@@ -4,30 +4,30 @@ ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - text templates, utility methods
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c65960b2ad7f0eb31a9c969fb4671f883dc477c7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1e6426ea57fbdbec6ec47a4f6348463b88b250e0
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63001473"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72606014"
 ---
 # <a name="text-template-utility-methods"></a>文字範本公用程式方法
 
-有數種方法，都可供您，當您在 Visual Studio 文字範本中撰寫程式碼。 這些方法的定義位於<xref:Microsoft.VisualStudio.TextTemplating.TextTransformation>。
+當您在 Visual Studio 文字模板中撰寫程式碼時，一定會有數種方法可供您使用。 這些方法會在 <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation> 中定義。
 
 > [!TIP]
-> 您也可以使用其他方法和一般 （不前置處理過的） 文字範本中的主機環境所提供的服務。 比方說，您可以在此解析檔案路徑、 記錄錯誤，並取得 Visual Studio 及任何所提供的服務已載入的套件。 如需詳細資訊，請參閱 <<c0> [ 從文字範本存取 Visual Studio](/previous-versions/visualstudio/visual-studio-2010/gg604090\(v\=vs.100\))。
+> 您也可以在一般（未預先處理的）文字模板中，使用主機環境所提供的其他方法和服務。 例如，您可以解析檔案路徑、記錄錯誤，並取得 Visual Studio 和任何載入的封裝所提供的服務。 如需詳細資訊，請參閱[從文字模板存取 Visual Studio](/previous-versions/visualstudio/visual-studio-2010/gg604090\(v\=vs.100\))。
 
-## <a name="write-methods"></a>撰寫方法
+## <a name="write-methods"></a>Write 方法
 
-您可以使用`Write()`和`WriteLine()`方法來附加在標準的程式碼區塊，而不是使用運算式的程式碼區塊內的文字。 下列兩個程式碼區塊的功能相同。
+您可以使用 `Write()` 和 `WriteLine()` 方法，將文字附加至標準程式碼區塊內，而不是使用運算式程式碼區塊。 下列兩個程式碼區塊的功能相同。
 
-### <a name="code-block-with-an-expression-block"></a>運算式區塊的程式碼區塊
+### <a name="code-block-with-an-expression-block"></a>具有運算式區塊的程式碼區塊
 
 ```
 <#
@@ -39,7 +39,7 @@ while (i-- > 0)
 #>
 ```
 
-### <a name="code-block-using-writeline"></a>使用 writeline （） 的程式碼區塊
+### <a name="code-block-using-writeline"></a>使用 WriteLine （）的程式碼區塊
 
 ```
 <#
@@ -51,9 +51,9 @@ while (i-- > 0)
 #>
 ```
 
-您可能會發現若要使用其中一個這些公用程式方法，而不是運算式區塊程式碼區塊中使用巢狀的控制結構很有幫助。
+在具有嵌套控制項結構的長程式碼區塊內使用其中一種公用程式方法，而不是運算式區塊，可能會很有説明。
 
-`Write()`並`WriteLine()`方法有兩個多載，另一個會採用單一字串參數，一個會複合格式字串以及要包含在字串中的物件陣列 (例如`Console.WriteLine()`方法)。 下列兩種用法`WriteLine()`相同的功能：
+@No__t_0 和 `WriteLine()` 方法有兩個多載，一個會採用單一字串參數，另一個則採用複合格式字串，再加上要包含在字串中的物件陣列（例如 `Console.WriteLine()` 方法）。 @No__t_0 的下列兩個用法在功能上是相同的：
 
 ```
 <#
@@ -69,7 +69,7 @@ while (i-- > 0)
 
 ## <a name="indentation-methods"></a>縮排方法
 
-您可以使用縮排方法來格式化文字範本的輸出。 <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation>類別具有`CurrentIndent`字串會顯示目前的縮排文字範本中的屬性和`indentLengths`欄位也就是已加入縮排的清單。 您可以加入與縮排`PushIndent()`方法並減去使用縮排`PopIndent()`方法。 如果您想要移除所有的縮排，使用`ClearIndent()`方法。 下列程式碼區塊顯示使用這些方法：
+您可以使用縮排方法來格式化文字模板的輸出。 @No__t_0 類別具有 `CurrentIndent` 字串屬性，它會顯示文字模板中目前的縮排，以及已加入的縮圖清單 `indentLengths` 欄位。 您可以使用 `PushIndent()` 方法加入縮排，並使用 `PopIndent()` 方法來減去縮排。 如果您想要移除所有縮排，請使用 `ClearIndent()` 方法。 下列程式碼區塊顯示這些方法的用法：
 
 ```
 <#
@@ -97,7 +97,7 @@ Hello
 
 ## <a name="error-and-warning-methods"></a>錯誤和警告方法
 
-您可以使用錯誤和警告公用程式方法，將訊息新增至 Visual Studio 錯誤清單。 比方說，下列程式碼會將錯誤訊息新增至 錯誤清單。
+您可以使用錯誤和警告公用程式方法，將訊息新增至 Visual Studio 錯誤清單。 例如，下列程式碼會將錯誤訊息新增至錯誤清單。
 
 ```
 <#
@@ -113,13 +113,13 @@ Hello
 #>
 ```
 
-## <a name="access-to-host-and-service-provider"></a>存取主應用程式和服務提供者
+## <a name="access-to-host-and-service-provider"></a>存取主機和服務提供者
 
-屬性`this.Host`可存取主機正在執行範本所公開的屬性。 若要使用`this.Host`，您必須設定`hostspecific`屬性中`<@template#>`指示詞：
+屬性 `this.Host` 可以提供執行範本之主機所公開之屬性的存取權。 若要使用 `this.Host`，您必須在 `<@template#>` 指示詞中設定 `hostspecific` 屬性：
 
 `<#@template ... hostspecific="true" #>`
 
-型別`this.Host`範本執行所在的主控件的類型而定。 在範本中執行 Visual Studio 中，您可以轉型`this.Host`至`IServiceProvider`來存取服務，例如 IDE。 例如: 
+@No__t_0 的類型取決於範本執行所在的主機類型。 在 Visual Studio 中執行的範本中，您可以將 `this.Host` 轉換成 `IServiceProvider`，以取得 IDE 等服務的存取權。 例如:
 
 ```
 EnvDTE.DTE dte = (EnvDTE.DTE) ((IServiceProvider) this.Host)
@@ -128,10 +128,10 @@ EnvDTE.DTE dte = (EnvDTE.DTE) ((IServiceProvider) this.Host)
 
 ## <a name="using-a-different-set-of-utility-methods"></a>使用一組不同的公用程式方法
 
-文字產生程序的一部分，您的範本檔案會轉換成的類別名稱永遠是`GeneratedTextTransformation`是繼承自<xref:Microsoft.VisualStudio.TextTemplating.TextTransformation>。 如果您想要使用不同的一組方法相反地，您可以撰寫您自己的類別並在範本指示詞中指定它。 您的類別必須繼承自<xref:Microsoft.VisualStudio.TextTemplating.TextTransformation>。
+做為文字產生程式的一部分，您的範本檔案會轉換為類別，而此類別一律會命名為 `GeneratedTextTransformation`and 繼承自 <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation>。 如果您想要改為使用一組不同的方法，您可以撰寫自己的類別，並在範本指示詞中指定它。 您的類別必須繼承自 <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation>。
 
 ```
 <#@ template inherits="MyUtilityClass" #>
 ```
 
-使用`assembly`指示詞來參考組件可在其中找到編譯的類別。
+使用 `assembly` 指示詞來參考可以找到編譯類別的元件。

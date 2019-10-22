@@ -5,15 +5,15 @@ ms.topic: conceptual
 helpviewer_keywords:
 - load tests, logging, modifying
 ms.assetid: 9649226a-857d-41ef-8ec7-047b6e498033
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 9751ce3b08a0ac963cccdf091ccb99001c6f2c9f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 64e65a08910757d564e1fca0d3280770a1a60af9
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62785769"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72646657"
 ---
 # <a name="modify-load-test-logging-settings"></a>修改負載測試記錄設定
 
@@ -28,6 +28,6 @@ ms.locfileid: "62785769"
 |**負載測試失敗時儲存記錄：** 您可以指定是否要在每次負載測試失敗時都儲存一次測試記錄。|-   [如何：指定測試失敗是否會儲存至測試記錄](../test/how-to-specify-if-test-failures-are-saved-to-test-logs.md)|
 |**設定記錄檔的檔案大小上限：** 您可以編輯與測試控制器服務建立關聯的 XML 組態檔，指定要用於記錄檔的檔案大小上限。|修改 *QTCcontroller.exe.config* XML 組態檔中的 `<add key="LogSizeLimitInMegs" value="20"/>`。|
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [設定負載測試回合設定](../test/configure-load-test-run-settings.md)

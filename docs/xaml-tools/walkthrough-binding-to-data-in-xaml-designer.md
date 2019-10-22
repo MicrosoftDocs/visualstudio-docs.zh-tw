@@ -7,15 +7,15 @@ f1_keywords:
 dev_langs:
 - CSharp
 - VB
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 9d7216051484695fa5c888a6ab6bb75c21f21ac2
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: 7aace70ce773c9051367bf88bea1d798eb069bcf
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72451021"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72668629"
 ---
 # <a name="walkthrough-bind-to-data-in-xaml-designer"></a>在 XAML 設計工具中繫結至資料
 

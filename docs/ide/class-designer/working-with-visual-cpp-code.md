@@ -13,17 +13,17 @@ helpviewer_keywords:
 - C++, class diagrams
 - C++, Class Designer
 ms.assetid: f5b40921-2ef7-4de0-b595-45b44c79ffa6
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 16dbcbecece0e8ec38e3f38391ca5063e2e3d36c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: b2252b5e6d8da9f81fbcca9b856222a3230cd080
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62975004"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72647563"
 ---
 # <a name="work-with-visual-c-code-in-class-designer"></a>在類別設計工具中使用 Visual C++ 程式碼
 
@@ -46,7 +46,7 @@ ms.locfileid: "62975004"
 - Typedef
 
 > [!NOTE]
-> 這與 UML 類別圖不同，後者可在「模型專案」中建立。 如需詳細資訊，請參閱 [UML 類別圖表：參考資料](../../modeling/create-uml-modeling-projects-and-diagrams.md)。
+> 這與 UML 類別圖不同，後者可在「模型專案」中建立。 如需詳細資訊，請參閱 [UML 類別圖表：參考](../../modeling/create-uml-modeling-projects-and-diagrams.md)。
 
 ## <a name="troubleshoot-type-resolution-and-display-issues"></a>針對類型解析與顯示問題進行疑難排解
 
@@ -108,7 +108,7 @@ ms.locfileid: "62975004"
 
 - [類別設計工具] 無法顯示無效類型或衍生自無效類型的類型。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [設計和檢視類別與類型](designing-and-viewing-classes-and-types.md)
 - [類別設計工具錯誤的其他相關資訊](additional-information-about-errors.md)

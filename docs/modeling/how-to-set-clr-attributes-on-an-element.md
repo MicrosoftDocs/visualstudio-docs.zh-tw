@@ -1,46 +1,46 @@
 ---
-title: HOW TO：在項目上設定 CLR 屬性
+title: 如何：在項目上設定 CLR 屬性
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
 - vs.dsltools.EditAttributesDialog
 helpviewer_keywords:
 - Domain-Specific Language, custom attrributes
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8954aa6a42e743617080bb6918508273c1dd9528
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 07957bd267eba457749eb17a99b1099b8d32be97
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62811273"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72661155"
 ---
-# <a name="how-to-set-clr-attributes-on-an-element"></a>HOW TO：在項目上設定 CLR 屬性
-自訂屬性是可以加入至定義域項目、 圖形、 連接器和圖表的特殊屬性。 您可以新增任何屬性繼承自`System.Attribute`類別。
+# <a name="how-to-set-clr-attributes-on-an-element"></a>如何：在項目上設定 CLR 屬性
+自訂屬性是特殊的屬性，可以加入至網域元素、圖形、連接器和圖表。 您可以加入任何繼承自 `System.Attribute` 類別的屬性。
 
-### <a name="to-add-a-custom-attribute"></a>若要新增自訂屬性
+### <a name="to-add-a-custom-attribute"></a>若要加入自訂屬性
 
-1. 在 [ **DSL explorer]** ，選取您要新增自訂屬性的項目。
+1. 在 [ **DSL Explorer**] 中，選取您要加入自訂屬性的元素。
 
-2. 在 [**屬性**視窗中下, 一步]**自訂屬性**屬性，按一下瀏覽 ( **...** ) 圖示。
+2. 在 [**屬性**] 視窗中，按一下 [**自訂屬性**] 屬性旁的流覽（ **...** ）圖示。
 
-     **編輯屬性**對話方塊隨即開啟。
+     [**編輯屬性**] 對話方塊隨即開啟。
 
-3. 在**名稱**資料行中，按一下 **\<加入屬性 >** 輸入屬性的名稱。 請按 ENTER 鍵。
+3. 在 [**名稱**] 資料行中，按一下 [ **\<add 屬性] >** 然後輸入屬性的名稱。 請按 ENTER 鍵。
 
-4. 屬性名稱下的那一行顯示括號。 這一行上鍵入屬性的參數類型 (例如`string`)，然後按 ENTER 鍵。
+4. 屬性名稱底下的行會顯示括弧。 在這一行上，輸入屬性的參數類型（例如，`string`），然後按 ENTER。
 
-5. 在 **名稱屬性**資料行中，輸入適當的名稱，例如`MyString`。
+5. 在 [**名稱] 屬性**資料行中，輸入適當的名稱，例如，`MyString`。
 
-6. 按一下 [確定]  。
+6. 按一下 [確定]。
 
-     **自訂屬性**屬性現在顯示的屬性，以下列格式：
+     [**自訂屬性**] 屬性現在會以下列格式顯示內容：
 
-     `[` *AttributeName* `(` *ParameterName* `=` *Type* `)]`
+     `[` *AttributeName* `(` *ParameterName* `=`*類型*`)]`
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [Domain-Specific Language Tools Glossary](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa) (特定領域語言工具字彙表)

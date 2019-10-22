@@ -3,37 +3,37 @@ title: 使用 DTE 啟動 Visual Studio
 titleSuffix: ''
 ms.date: 04/26/2019
 ms.topic: conceptual
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 399f98964dca29eccfd7d3c2bb691205f373a3b3
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 92085a42ec2c85eb0fb5571badaabca801c403d0
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66747009"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72647966"
 ---
 # <a name="launch-visual-studio-using-dte"></a>使用 DTE 啟動 Visual Studio
 
-從 Visual Studio 2017 開始，若要啟動 Visual Studio 中使用 DTE 的機制是不同啟動舊版的 Visual Studio。 這項變更是必要的因為 Visual Studio 2017 和更新版本支援的並排顯示安裝的主要版本 （例如，您可以有預覽版本和並存安裝發行版本）。
+從 Visual Studio 2017 開始，使用 DTE Visual Studio 啟動的機制，與啟動舊版的 Visual Studio 不同。 這項變更是必要的，因為 Visual Studio 2017 和更新版本支援主要版本的並存安裝（例如，您可以有並排安裝的預覽和發行版本）。
 
-這篇文章的其餘部分會顯示您可以使用來啟動 Visual Studio 2019 使用 DTE 的程式碼。
+本文的其餘部分說明您可以用來使用 DTE 啟動 Visual Studio 2019 的程式碼。
 
 ## <a name="set-up-the-project"></a>設定專案
 
-若要查看作用中的啟動程式碼，請依照下列步驟中建立專案。
+若要查看作用中的啟動程式碼，請遵循下列步驟來建立專案。
 
-1. 建立新**主控台應用程式**適用於.NET Framework 的專案。
+1. 為 .NET Framework 建立新的**主控台應用程式**專案。
 
-2. 安裝[Microsoft.VisualStudio.Setup.Configuration.Interop](https://www.nuget.org/packages/Microsoft.VisualStudio.Setup.Configuration.Interop/) NuGet 封裝，並將組件的參考。
+2. 安裝[VisualStudio](https://www.nuget.org/packages/Microsoft.VisualStudio.Setup.Configuration.Interop/) NuGet 套件，並將參考新增至元件中。
 
-3. 加入 EnvDTE 參考。
+3. 新增對 EnvDTE 的參考。
 
-4. 貼上[範例程式碼](#example-code)，將後面*Program.cs*檔案。
+4. 將後面的[範例程式碼](#example-code)貼到*Program.cs*檔案中。
 
-5. 按下**F5**執行程式。 您應該會看到 Visual Studio 2019 結束程式之前開啟。
+5. 按**F5**執行程式。 在程式結束之前，您應該會看到 Visual Studio 2019 已開啟。
 
 ## <a name="example-code"></a>範例程式碼
 
@@ -185,7 +185,7 @@ namespace ConsoleLauncherApp
 }
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
-- [尋找 Visual Studio](locating-visual-studio.md)
-- [逐步解說：從編輯器擴充功能存取 DTE 物件](walkthrough-accessing-the-dte-object-from-an-editor-extension.md)
+- [找出 Visual Studio](locating-visual-studio.md)
+- [逐步解說：從編輯器延伸模組存取 DTE 物件](walkthrough-accessing-the-dte-object-from-an-editor-extension.md)

@@ -17,51 +17,51 @@ helpviewer_keywords:
 - tokens, and the Task List
 - Task List, comment tasks
 ms.assetid: 88327e04-fa3e-48db-995b-ad89e0dc4ed2
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 980b4ae40b1b7706b47bd884cc02dad14b743625
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
-ms.translationtype: HT
+ms.openlocfilehash: f2d0ba45ffea940ddb57a6da1e6df55e3da8867b
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68605682"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72644865"
 ---
 # <a name="options-dialog-box-environment--task-list"></a>選項對話方塊：環境 \> 工作清單
 
-此 [選項] 頁面可讓您新增、刪除和變更產生 [工作清單]  提醒的註解語彙基元。 若要顯示這些設定，請從 [工具]  功能表中選取 [選項]  ，並展開 [環境]  資料夾，然後選擇 [工作清單]  。
+此 [選項] 頁面可讓您新增、刪除和變更產生 [工作清單] 提醒的註解語彙基元。 若要顯示這些設定，請從 [工具] 功能表中選取 [選項]，並展開 [環境] 資料夾，然後選擇 [工作清單]。
 
 ## <a name="task-list-tokens"></a>工作清單語彙基元
 
-如果您在程式碼中插入的註解文字開頭是 [語彙基元清單]  中的語彙基元，則只要開啟檔案進行編輯，[工作清單]  就會將註解顯示為新項目。 按一下 [工作清單]  項目，直接跳到程式碼中的註解行。 如需詳細資訊，請參閱[使用工作清單](../../ide/using-the-task-list.md)。
+如果您在程式碼中插入的註解文字開頭是 [語彙基元清單] 中的語彙基元，則只要開啟檔案進行編輯，[工作清單] 就會將註解顯示為新項目。 按一下 [工作清單] 項目，直接跳到程式碼中的註解行。 如需詳細資訊，請參閱[使用工作清單](../../ide/using-the-task-list.md)。
 
 語彙基元清單\
 顯示語彙基元清單，並讓您加入或移除自訂語彙基元。 註解語彙基元在 C# 和 C++ 中是區分大小寫的，但在 Visual Basic 中則不區分。
 
 > [!NOTE]
-> 如果您鍵入的語彙基元未與工作清單中所顯示的語彙基元完全相符，則註解工作將不會顯示在 [工作清單]  中。
+> 如果您鍵入的語彙基元未與工作清單中所顯示的語彙基元完全相符，則註解工作將不會顯示在 [工作清單] 中。
 
 優先順序\
-設定使用所選取語彙基元的工作優先權 (低、普通或高)。 以此語彙基元開頭的工作註解會在 [工作清單]  中自動獲指派指定的優先權。
+設定使用所選取語彙基元的工作優先權 (低、普通或高)。 以此語彙基元開頭的工作註解會在 [工作清單] 中自動獲指派指定的優先權。
 
 名稱\
-在這裡輸入語彙基元字串，然後按一下 [新增]  ，將字串新增至語彙基元清單。
+在這裡輸入語彙基元字串，然後按一下 [新增]，將字串新增至語彙基元清單。
 
 新增\
-當您輸入新的 [名稱]  時就會啟用。 按一下可使用 [名稱]  和 [優先權]  欄位中所輸入的值，來新增語彙基元字串。
+當您輸入新的 [名稱] 時就會啟用。 按一下可使用 [名稱] 和 [優先權] 欄位中所輸入的值，來新增語彙基元字串。
 
 刪除\
 按一下可從語彙基元清單刪除所選取的語彙基元。 您無法刪除預設的註解語彙基元。
 
 變更\
-按一下可使用 [名稱]  和 [優先權]  欄位中所輸入的值，來變更現有的語彙基元。
+按一下可使用 [名稱] 和 [優先權] 欄位中所輸入的值，來變更現有的語彙基元。
 
 > [!NOTE]
 > 您無法重新命名或刪除預設的註解語彙基元，但可以變更其優先權層級。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [使用工作清單](../../ide/using-the-task-list.md)
 - [在程式碼中設定書籤](../../ide/setting-bookmarks-in-code.md)

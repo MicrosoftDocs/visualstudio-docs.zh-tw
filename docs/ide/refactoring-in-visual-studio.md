@@ -1,21 +1,21 @@
 ---
-title: 重構
+title: Refactoring
 description: Visual Studio 中最受歡迎的重構，其中包含描述和範例。
 ms.date: 01/10/2018
 ms.topic: conceptual
 helpviewer_keywords:
 - refactoring [Visual Studio]
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b9ce37df2999ac27f5bc8e5aeb7edfb1959b8cc
-ms.sourcegitcommit: 0f5f7955076238742f2071d286ad8e896f3a6cad
-ms.translationtype: HT
+ms.openlocfilehash: c79a85314313cffce26667be8dbaf99eaa67cebd
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "68483635"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72645350"
 ---
 # <a name="refactor-code"></a>重構程式碼
 
@@ -29,7 +29,7 @@ ms.locfileid: "68483635"
 - 如需重構 C++ 程式碼的資訊，請參閱[撰寫和重構程式碼 (C++)](/cpp/ide/writing-and-refactoring-code-cpp)。
 - 支援 F# 的重構由協力廠商 Visual Studio 延伸模組 [Visual F# Power Tools](https://marketplace.visualstudio.com/items?itemName=FSharpSoftwareFoundation.VisualFPowerTools) 提供。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [快速動作](../ide/quick-actions.md)
 - [Visual Studio IDE](../get-started/visual-studio-ide.md)

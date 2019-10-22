@@ -3,20 +3,20 @@ title: 一般的快速動作
 description: 和 Visual Basic 的C#最熱門快速動作包括修正拼錯的關鍵字或符號、解決合併衝突、移除必要的匯入、產生類型、引入區域變數等等。
 ms.date: 03/28/2018
 ms.topic: reference
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 600fb1b4abea2103c28e3a5067d640228d68b755
-ms.sourcegitcommit: 7825d4163e52d724e59f6c0da209af5fbef673f7
+ms.openlocfilehash: bad97ac5574afd65103263b2ce51a4dfba02741c
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72000152"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72652254"
 ---
 # <a name="common-quick-actions"></a>一般的快速動作
 
@@ -30,7 +30,7 @@ ms.locfileid: "72000152"
 
 ### <a name="correct-misspelled-symbol-or-keyword"></a>修正拼字錯誤的符號或關鍵字
 
-如果您不小心拼錯 Visual Studio 中的類型或關鍵字，這個快速動作會自動加以修正。 您會在燈泡功能表中看到這些專案，例如 **"Change ' @no__t 1misspelled word > ' 變更為 ' \<correct word > '"** 。 例如:
+如果您不小心拼錯 Visual Studio 中的類型或關鍵字，這個快速動作會自動加以修正。 您會在燈泡功能表中看到這些專案，例如 **"Change ' \<misspelled word > ' 變更為 ' \<correct word > '"** 。 例如:
 
 ```csharp
 // Before
@@ -96,7 +96,7 @@ private void MyMethod()
 
 ### <a name="remove-unnecessary-usingsimports"></a>移除不必要的 using/Import
 
-**移除不必要的 Using/Import** 快速動作會移除目前檔案中，所有未使用的 `using` 及 `Import` 陳述式。 當您選取此項目時，將會移除未使用的命名空間匯入。
+[**移除不必要的 using/Imports** ] 快速動作會移除目前檔案中任何未使用的 `using` 和 `Import` 指示詞。 當您選取此項目時，將會移除未使用的命名空間匯入。
 
 | 適用語言 | 支援版本 |
 | - | - |
@@ -184,7 +184,7 @@ void DoWork(CancellationToken cancellationToken = default) { ... }
 - 針對參考組件中的類型建議 using/Import
 - 針對 NuGet 套件中的類型建議 using/Import
 
-啟用時，如果您使用的類型位於目前未匯入，但存在於參考組件或 NuGet 套件的命名空間中，將會建立 using/Import 陳述式。
+啟用時，如果您在目前未匯入但存在於參考元件或 NuGet 封裝中的命名空間中使用類型，則會建立 using 或 import 指示詞。
 
 ```csharp
 // Before
@@ -204,7 +204,7 @@ Debug.WriteLine("Hello")
 
 ' Imports System.Diagnostics
 
-// After
+' After
 Imports System.Diagnostics
 
 Debug.WriteLine("Hello")
@@ -950,6 +950,6 @@ End Function
 | ------- | -------------------- | ---------------- |
 | CS4032、BC37057 | C# 和 Visual Basic | Visual Studio 2017 和更新版本 |
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [快速動作](../ide/quick-actions.md)

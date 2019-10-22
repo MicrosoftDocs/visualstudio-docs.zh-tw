@@ -4,26 +4,26 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - dependency diagrams, adding custom validation
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 743337777677b61661da53446f9717cad14ff9ed
-ms.sourcegitcommit: 6a19c5ece38a70731496a38f2ef20676ff18f8a4
+ms.openlocfilehash: 34898bff2b437c84a29cec31091205044367abec
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65476664"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72652332"
 ---
 # <a name="add-custom-architecture-validation-to-dependency-diagrams"></a>將自訂架構驗證新增至相依性圖表
 
-在 Visual Studio 中，使用者可以驗證針對圖層模型專案中的原始程式碼，使他們可以確認原始碼符合相依性圖表上的相依性。 有標準的驗證演算法，但您可以定義自己的驗證擴充功能。
+在 Visual Studio 中，使用者可以根據圖層模型來驗證專案中的原始程式碼，以便驗證原始程式碼是否符合相依性圖表上的相依性。 有標準的驗證演算法，但您可以定義自己的驗證擴充功能。
 
-當使用者選取**驗證架構**命令在相依性圖表中，叫用標準驗證方法時，後面接著任何已安裝的驗證擴充功能。
+當使用者在相依性圖表上選取 [**驗證架構**] 命令時，會叫用標準驗證方法，後面接著任何已安裝的驗證延伸模組。
 
 > [!NOTE]
-> 在 相依性圖表中，驗證的主要目的是比較圖表與程式中的程式碼解決方案的其他部分。
+> 在相依性圖表中，驗證的主要目的是要將圖表與方案其他部分中的程式碼做比較。
 
 您可以將圖層驗證擴充功能封裝成 Visual Studio 整合擴充功能 (VSIX)，您可將它散發給其他 Visual Studio 使用者。 您可以單獨將驗證程式放在 VSIX 中，或是在相同 VSIX 中將它與其他擴充功能結合。 您應該在單獨的 Visual Studio 專案中撰寫驗證程式的程式碼，而不是在與其他擴充功能相同的專案中。
 
@@ -40,7 +40,7 @@ ms.locfileid: "65476664"
 
 ### <a name="to-define-an-extension-by-using-a-project-template"></a>使用專案範本定義擴充功能
 
-1. 建立新**圖層設計工具驗證擴充功能**專案。
+1. 建立新的**圖層設計工具驗證延伸**模組專案。
 
     此範本隨即建立包含小型範例的專案。
 
@@ -48,7 +48,7 @@ ms.locfileid: "65476664"
    > 讓範本正常運作：
    >
    > - 編輯對 `LogValidationError` 的呼叫，移除選擇性引數 `errorSourceNodes` 和 `errorTargetNodes`。
-   > - 如果您使用自訂屬性，套用更新中所述[將自訂屬性加入至相依性圖表](../modeling/add-custom-properties-to-layer-diagrams.md)。
+   > - 如果您使用自訂屬性，請將[將自訂屬性加入至](../modeling/add-custom-properties-to-layer-diagrams.md)相依性圖表中所述的更新套用。
 
 2. 編輯程式碼以定義您的驗證。 如需詳細資訊，請參閱 [程式設計驗證](#programming)。
 
@@ -59,13 +59,13 @@ ms.locfileid: "65476664"
 
 ::: moniker range="vs-2017"
 
-4. 若要安裝延伸模組，Visual Studio 中，或在另一部電腦上的主要執行個體，尋找 *.vsix*中的檔案*bin*目錄。 將它複製到您要安裝它的電腦上，然後按兩下該檔案。 若要解除安裝它，請選擇**擴充功能和更新**上**工具**功能表。
+4. 若要在 Visual Studio 的主要實例或另一部電腦上安裝擴充功能，請在*bin*目錄中尋找 *.vsix*檔案。 將它複製到您要安裝它的電腦上，然後按兩下該檔案。 若要將它卸載，請選擇 [**工具**] 功能表上的 [**擴充功能和更新**]。
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-4. 若要安裝延伸模組，Visual Studio 中，或在另一部電腦上的主要執行個體，尋找 *.vsix*中的檔案*bin*目錄。 將它複製到您要安裝它的電腦上，然後按兩下該檔案。 若要解除安裝它，請選擇**管理延伸模組**上**延伸模組**功能表。
+4. 若要在 Visual Studio 的主要實例或另一部電腦上安裝擴充功能，請在*bin*目錄中尋找 *.vsix*檔案。 將它複製到您要安裝它的電腦上，然後按兩下該檔案。 若要卸載它，請選擇 [**擴充**功能] 功能表上的 [**管理延伸**模組]。
 
 ::: moniker-end
 
@@ -77,33 +77,33 @@ ms.locfileid: "65476664"
 
 1. 建立新的**類別庫**專案。 這個專案會包含圖層驗證類別。
 
-2. 尋找或建立**VSIX 專案**方案中。 VSIX 專案會包含名為 **source.extension.vsixmanifest**的檔案。
+2. 在您的方案中尋找或建立**VSIX 專案**。 VSIX 專案會包含名為 **source.extension.vsixmanifest**的檔案。
 
-3. 在 **方案總管 中**，以滑鼠右鍵按一下功能表上的 VSIX 專案，選擇**設定為啟始專案**。
+3. 在**方案總管**中，在 VSIX 專案的右鍵功能表上，選擇 [**設定為啟始專案**]。
 
-4. 在 **source.extension.vsixmanifest**的 [資產]  下，加入圖層驗證專案做為 MEF 元件：
+4. 在 **source.extension.vsixmanifest**的 [資產]下，加入圖層驗證專案做為 MEF 元件：
 
-    1. 選擇 [新增]  。
+    1. 選擇 [新增]。
 
-    2. 在 [加入新的資產]  對話方塊中，設定：
+    2. 在 [加入新的資產] 對話方塊中，設定：
 
-           =  
+          = 
 
-           =  
+          = 
 
-          = *您的驗證程式專案* 
+          = *您的驗證程式專案*
 
 5. 您也必須將它加入做為圖層驗證：
 
-    1. 選擇 [新增]  。
+    1. 選擇 [新增]。
 
-    2. 在 [加入新的資產]  對話方塊中，設定：
+    2. 在 [加入新的資產] 對話方塊中，設定：
 
-         **Type** = **Microsoft.VisualStudio.ArchitectureTools.Layer.Validator**. 這不是下拉式清單的其中一個選項。 您必須從鍵盤輸入。
+         **輸入** = **VisualStudio. microsoft.visualstudio.architecturetools.layer.validator**。 這不是下拉式清單的其中一個選項。 您必須從鍵盤輸入。
 
-           =  
+          = 
 
-          = *您的驗證程式專案* 
+          = *您的驗證程式專案*
 
 6. 返回圖層驗證專案，然後加入下列專案參考：
 
@@ -123,7 +123,7 @@ ms.locfileid: "65476664"
     > [!NOTE]
     > 只有在特定情況下才會呼叫您的方法，且中斷點將不會自動運作。 如需詳細資訊，請參閱 [圖層驗證偵錯](#debugging)。
 
-9. 若要安裝 VSIX 的 Visual Studio，或在另一部電腦上的主要執行個體中，尋找 **.vsix**中的檔案**bin** VSIX 專案的目錄。 將它複製到您想要安裝 VSIX 的電腦。 在 Windows 檔案總管中按兩下 VSIX 檔案。
+9. 若要在 Visual Studio 的主要實例或另一部電腦上安裝 VSIX，請在 VSIX 專案的**bin**目錄中尋找 **.vsix**檔案。 將它複製到您想要安裝 VSIX 的電腦。 在 Windows 檔案總管中按兩下 VSIX 檔案。
 
 ## <a name="programming"></a> 程式設計驗證
 
@@ -153,9 +153,9 @@ ms.locfileid: "65476664"
   > [!WARNING]
   > 請不要使用 `LogValidationError`的選擇性參數。
 
-當使用者叫用 [驗證架構]  功能表命令時，圖層執行階段系統會分析圖層及其成品，以產生圖形。 圖形包含四個部分：
+當使用者叫用 [驗證架構] 功能表命令時，圖層執行階段系統會分析圖層及其成品，以產生圖形。 圖形包含四個部分：
 
-- 圖層模型的 Visual Studio 方案中以節點和連結在圖形中的表示。
+- 在圖形中以節點和連結表示的 Visual Studio 方案的圖層模型。
 
 - 定義在方案中並以節點表示的程式碼、專案項目和其他成品，以及代表分析程序所探索到之相依性的連結。
 
@@ -166,7 +166,7 @@ ms.locfileid: "65476664"
 建構好圖形後，會呼叫標準驗證方法。 完成時，任何已安裝的擴充驗證方法會依未指定的順序呼叫。 圖形會傳遞至每個 `ValidateArchitecture` 方法，它可以掃描圖形並報告其所找到的任何錯誤。
 
 > [!NOTE]
-> 這不是可以用於定義域專屬語言的驗證程序相同。
+> 這與可用於定義域特定語言的驗證程式不同。
 
 驗證方法不應該變更圖層模型或正在驗證的程式碼。
 
@@ -202,25 +202,25 @@ ms.locfileid: "65476664"
 
 除非有下列特性，否則不會執行驗證：
 
-- 相依性圖表中沒有至少一個相依性連結。
+- 相依性圖表上至少有一個相依性連結。
 
 - 在模型中有與程式碼項目相關聯的圖層。
 
-您開始測試您的驗證延伸模組，Visual Studio 的實驗執行個體的第一次開啟或建立具有下列特性的解決方案。
+當您第一次啟動 Visual Studio 的實驗實例來測試驗證延伸模組時，請開啟或建立具有這些特性的方案。
 
 ### <a name="run-clean-solution-before-validate-architecture"></a>在驗證架構之前執行清除方案
 
-每當您更新驗證程式碼時，請使用實驗性方案中 [建置]  功能表上的 [清除方案]  命令，然後再測試驗證命令。 這是必要的，因為會快取驗證結果。 如果您未更新測試相依性圖表或其程式碼，將不會執行驗證方法。
+每當您更新驗證程式碼時，請使用實驗性方案中 [建置] 功能表上的 [清除方案] 命令，然後再測試驗證命令。 這是必要的，因為會快取驗證結果。 如果您尚未更新測試相依性圖表或其程式碼，則不會執行驗證方法。
 
 ### <a name="launch-the-debugger-explicitly"></a>明確地啟動偵錯工具
 
 驗證會在個別的處理序中執行。 因此，不會觸發驗證方法中的中斷點。 驗證開始時，您必須明確地將偵錯工具附加到處理序。
 
-若要將偵錯工具附加到驗證處理序，請在驗證方法的開頭，插入對 `System.Diagnostics.Debugger.Launch()` 的呼叫。 偵錯對話方塊出現時，選取 Visual studio 的主要執行個體。
+若要將偵錯工具附加到驗證處理序，請在驗證方法的開頭，插入對 `System.Diagnostics.Debugger.Launch()` 的呼叫。 [調試] 對話方塊出現時，請選取 Visual Studio 的主要實例。
 
-或者，您可以插入對 `System.Windows.Forms.MessageBox.Show()`的呼叫。 訊息方塊出現時，請移至 Visual studio，然後在主要執行個體**偵錯**功能表上，按一下**附加至處理序**。 選取名為 **Graphcmd.exe**的處理序。
+或者，您可以插入對 `System.Windows.Forms.MessageBox.Show()`的呼叫。 當訊息方塊出現時，請移至 Visual Studio 的主要實例，然後在 [**調試**程式] 功能表上，按一下 [**附加至進程**]。 選取名為 **Graphcmd.exe**的處理序。
 
-一律藉由按 CTRL + F5 ([啟動但不偵錯]  ) 來啟動實驗執行個體。
+一律藉由按 CTRL + F5 ([啟動但不偵錯]) 來啟動實驗執行個體。
 
 ### <a name="deploying-a-validation-extension"></a>部署驗證擴充功能
 
@@ -287,6 +287,6 @@ namespace Validator3
 }
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [擴充相依性圖表](../modeling/extend-layer-diagrams.md)

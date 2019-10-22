@@ -2,17 +2,17 @@
 title: 實作抽象類別
 ms.date: 01/26/2018
 ms.topic: reference
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1e5e1d05e0142a0185909ff590ff507fb53c7dc0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 3f8d61e6e2632d62d7244ec0918e56816c3a028e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62823153"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72662473"
 ---
 # <a name="implement-an-abstract-class-in-visual-studio"></a>在 Visual Studio 中實作抽象類別
 
@@ -26,13 +26,13 @@ ms.locfileid: "62823153"
 
 **時機：** 您想要從抽象類別繼承。
 
-**原因：** 您可以手動逐一實作所有抽象成員；不過，此功能將可自動產生所有方法簽章。
+**原因：** 您可以手動逐一實作所有抽象成員，不過，此功能將可自動產生所有方法簽章。
 
 ## <a name="how-to"></a>操作說明
 
 1. 將游標放在有紅色曲線的行上，該曲線代表您已從抽象類別繼承，但尚未實作所有必要的成員。
 
-   - C#: 
+   - C#:
 
        ![醒目提示的程式碼 C#](media/abstract-highlight-cs.png)
 
@@ -43,7 +43,7 @@ ms.locfileid: "62823153"
 2. 接著，執行下列其中一項操作：
 
    - **鍵盤**
-      - 在字行任何地方按 **Ctrl**+**.**， 以觸發 [快速動作與重構] 功能表。
+      - 在字行任何地方按 **Ctrl**+ **.** ， 以觸發 [快速動作與重構] 功能表。
    - **滑鼠**
       - 以滑鼠右鍵按一下並選取 [快速動作與重構] 功能表。
       - 將游標暫留在紅色曲線上，然後按一下顯示的 ![錯誤燈泡](media/error-bulb.png) 圖示。
@@ -59,7 +59,7 @@ ms.locfileid: "62823153"
 
    系統會建立抽象方法特徵標記，並備妥以供實作。
 
-   - C#: 
+   - C#:
 
        ![實作類別結果 C#](media/abstract-result-cs.png)
 
@@ -67,7 +67,7 @@ ms.locfileid: "62823153"
 
        ![實作類別結果 VB](media/abstract-result-vb.png)
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [程式碼產生](../code-generation-in-visual-studio.md)
 - [預覽變更](../../ide/preview-changes.md)

@@ -1,5 +1,5 @@
 ---
-title: CA1048:不要宣告在密封類型中的虛擬成員 |Microsoft Docs
+title: CA1048：不要在密封類型中宣告虛擬成員 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,41 +12,41 @@ helpviewer_keywords:
 - CA1048
 ms.assetid: 5dcf4a30-6f98-48a8-b8cc-7b89ea757262
 caps.latest.revision: 15
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 36ee787ca9762766f8c563ab4b5081ee47355a56
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9f843efe0aa17b6e87fdb047e1f98a3715ae11af
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62535351"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72603319"
 ---
-# <a name="ca1048-do-not-declare-virtual-members-in-sealed-types"></a>CA1048:不要在密封類型中宣告 virtual 成員
+# <a name="ca1048-do-not-declare-virtual-members-in-sealed-types"></a>CA1048：不要在密封類型中宣告 virtual 成員
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |TypeName|DoNotDeclareVirtualMembersInSealedTypes|
 |CheckId|CA1048|
-|分類|Microsoft.Design|
+|Category|Microsoft. Design|
 |中斷變更|中斷|
 
 ## <a name="cause"></a>原因
- 公用型別密封格式，並宣告的方法，同時`virtual`(`Overridable` Visual Basic 中) 不是最後一個。 此規則不會報告違規的委派類型，必須遵循這個模式。
+ 公用類型是密封的，並且宣告的方法同時為 `virtual` （在 Visual Basic 中 `Overridable`），而不是最終。 此規則不會針對委派類型報告違規，這必須遵循此模式。
 
 ## <a name="rule-description"></a>規則描述
- 類型會將方法宣告為 virtual，讓繼承類型可以覆寫 virtual 方法的實作。 根據定義，您無法繼承自密封型別，讓密封類型上的虛擬方法沒有任何意義。
+ 類型會將方法宣告為 virtual，讓繼承類型可以覆寫 virtual 方法的實作。 根據定義，您無法繼承自密封型別，而使密封型別上的虛擬方法毫無意義。
 
- 在 Visual Basic.NET 和 C# 編譯器不允許違反此規則的類型。
+ Visual Basic 的 .NET 和C#編譯器不允許類型違反此規則。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
- 若要修正此規則的違規情形，請將方法設為非虛擬，或讓類型成為可繼承。
+ 若要修正此規則的違規，請將方法設為非虛擬，或讓類型成為可繼承。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
- 請勿隱藏此規則的警告。 類型在目前的狀態可能會造成維護問題並不提供任何好處。
+ 請勿隱藏此規則的警告。 讓類型處於目前狀態可能會造成維護問題，而且不會提供任何好處。
 
 ## <a name="example"></a>範例
- 下列範例顯示違反此規則的型別。
+ 下列範例顯示違反此規則的類型。
 
  [!code-cpp[FxCop.Design.SealedVirtual#1](../snippets/cpp/VS_Snippets_CodeAnalysis/FxCop.Design.SealedVirtual/cpp/FxCop.Design.SealedVirtual.cpp#1)]

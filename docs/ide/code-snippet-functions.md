@@ -7,17 +7,17 @@ helpviewer_keywords:
 - snippets [Visual Studio], functions
 - IntelliSense code snippets, functions
 ms.assetid: c0a2bf21-8fa5-4457-9281-f599beb53e7d
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 60453b6842dd321b7c85c2837e12b1208adb18f9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 85124837e378ea4377de0ca08c5a8680034240c2
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62974965"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72647536"
 ---
 # <a name="code-snippet-functions"></a>程式碼片段函式
 
@@ -27,7 +27,7 @@ ms.locfileid: "62974965"
 
 下表描述可用於與程式碼片段中的 `Function` 項目搭配使用的函式。
 
-|功能|說明|語言|
+|功能|描述|語言|
 |--------------|-----------------|--------------|
 |`GenerateSwitchCases(EnumerationLiteral)`|針對 `EnumerationLiteral` 參數所指定列舉的成員，產生 switch 陳述式和一組 case 陳述式。 `EnumerationLiteral` 參數必須是列舉常值或列舉類型的參考。|C#|
 |`ClassName()`|傳回包含已插入程式碼片段的類別名稱。|C#|
@@ -155,7 +155,7 @@ ms.locfileid: "62974965"
 </CodeSnippets>
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [Function 項目](../ide/code-snippets-schema-reference.md#function-element)
 - [程式碼片段結構描述參考](../ide/code-snippets-schema-reference.md)

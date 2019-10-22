@@ -8,17 +8,17 @@ helpviewer_keywords:
 - ShowWebBrowser command
 - View.ShowWebBrowser command
 ms.assetid: c6a4fbd6-8e9d-45cc-8b2f-93990d065e78
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 14e2d6f2c753c56d1628d20e921b7dff2aa83471
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+ms.openlocfilehash: 292910cb75ba9f69a7d8fc231ca6574ccf8bbfbe
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926014"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72645255"
 ---
 # <a name="showwebbrowser-command"></a>ShowWebBrowser 命令
 
@@ -38,11 +38,11 @@ View.ShowWebBrowser URL [/new][/ext]
 ## <a name="switches"></a>參數
 /new
 
-選擇性。 指定頁面會出現在網頁瀏覽器的新執行個體。
+選擇項。 指定頁面會出現在網頁瀏覽器的新執行個體。
 
 /ext
 
-選擇性。 指定頁面會出現在 IDE 外面的預設網頁瀏覽器。
+選擇項。 指定頁面會出現在 IDE 外面的預設網頁瀏覽器。
 
 ## <a name="remarks"></a>備註
 **ShowWebBrowser** 命令的別名是 **navigate** 或 **nav**。
@@ -54,7 +54,7 @@ View.ShowWebBrowser URL [/new][/ext]
 >View.ShowWebBrowser https://docs.microsoft.com /ext
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [Visual Studio 命令](../../ide/reference/visual-studio-commands.md)
 - [命令視窗](../../ide/reference/command-window.md)

@@ -8,20 +8,20 @@ helpviewer_keywords:
 - Watch command
 - Debug.Watch command
 ms.assetid: aa02e647-d9f5-4905-a651-52a8df595795
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ac779dc902a331a45b600113a11db5364293f74
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+ms.openlocfilehash: ccb87fef9ff91c77c926d5bca40a5e5ec08c3720
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68925941"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72622034"
 ---
 # <a name="watch-command"></a>Watch 命令
-建立並開啟 [監看式]  視窗的指定執行個體。 您可以使用 [監看式]  視窗來計算變數、運算式和暫存器的值，以編輯這些值，以及儲存結果。
+建立並開啟 [監看式] 視窗的指定執行個體。 您可以使用 [監看式] 視窗來計算變數、運算式和暫存器的值，以編輯這些值，以及儲存結果。
 
 ## <a name="syntax"></a>語法
 
@@ -44,7 +44,7 @@ Debug.Watch[index]
 >Debug.Watch1
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [[自動變數] 和 [區域變數] 視窗](../../debugger/autos-and-locals-windows.md)
 - [在 Visual Studio 中使用監看式及快速監看式視窗在變數設定監看式](../../debugger/watch-and-quickwatch-windows.md)

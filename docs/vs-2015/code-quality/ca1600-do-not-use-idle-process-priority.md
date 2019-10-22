@@ -1,5 +1,5 @@
 ---
-title: CA1600:不要使用 idle 處理序優先權 |Microsoft Docs
+title: CA1600：不要使用閒置進程優先順序 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,34 +12,34 @@ helpviewer_keywords:
 - DoNotUseIdleProcessPriority
 ms.assetid: 9b0d073b-78b6-41be-8ef3-14692a735283
 caps.latest.revision: 17
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 4002e17e3988ca3b449e141394ce762f95ffc78b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d4260db808d9c50f78388cf6ba976f7ace52e6a3
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68189309"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72669288"
 ---
-# <a name="ca1600-do-not-use-idle-process-priority"></a>CA1600:不要使用 Idle 處理序優先順序
+# <a name="ca1600-do-not-use-idle-process-priority"></a>CA1600：不要使用 Idle 處理序優先權
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |TypeName|DoNotUseIdleProcessPriority|
 |CheckId|CA1600|
-|分類|Microsoft.Mobility|
+|Category|Microsoft 的行動性|
 |中斷變更|中斷|
 
 ## <a name="cause"></a>原因
- 處理程序設定為時，就會發生這項規則`ProcessPriorityClass.Idle`。
+ 當進程設定為 `ProcessPriorityClass.Idle` 時，就會發生此規則。
 
 ## <a name="rule-description"></a>規則描述
- 請勿將處理序優先權設定為 Idle。 處理程序`System.Diagnostics.ProcessPriorityClass.Idle`會佔用 CPU，它會處於閒置狀態，並因而阻礙待命時。
+ 請勿將處理序優先權設定為 Idle。 具有 `System.Diagnostics.ProcessPriorityClass.Idle` 的進程會在 CPU 閒置時佔用 CPU，因此會封鎖待命。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
- 設定處理程序為`ProcessPriorityClass.BelowNormal`。
+ 將進程設定為 `ProcessPriorityClass.BelowNormal`。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
- 閒置處理序優先權，而且可以安全地忽略行動力考量時，才應該隱藏此規則。
+ 只有在需要閒置進程優先順序，而且可以安全地忽略行動性考慮時，才應該抑制此規則。

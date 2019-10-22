@@ -9,17 +9,17 @@ helpviewer_keywords:
 - interoperability warnings
 - warnings, interoperability
 ms.assetid: 95de6eb3-40c4-4063-9f59-25cb70e3b2b3
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9736eabf741219dbdba1f8bbd206429145c91c72
-ms.sourcegitcommit: 08c144d290da373df841f04fc799e3133540a541
+ms.openlocfilehash: 6ba2f717c4bdccd662764b73530d3ae416f8b95b
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72535821"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72649278"
 ---
 # <a name="interoperability-warnings"></a>互通性警告
 

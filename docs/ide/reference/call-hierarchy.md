@@ -6,17 +6,17 @@ f1_keywords:
 - VS.CallHierarchy
 helpviewer_keywords:
 - Call Hierarchy
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ad95d1c48992b8ecac6715db41aa9d85791999bb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 8a03a286d8b097fbd208a828411728aaa7a54690
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62791336"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72668200"
 ---
 # <a name="view-call-hierarchy"></a>檢視呼叫階層
 
@@ -50,7 +50,7 @@ ms.locfileid: "62791336"
 
 工具列上的 [搜尋範圍] 方塊包含 [我的方案]、[目前專案] 和 [目前文件] 的選項。
 
-當您選取 [呼叫階層]  樹狀檢視窗格中的子成員時：
+當您選取 [呼叫階層] 樹狀檢視窗格中的子成員時：
 
 - [呼叫階層] 詳細資料窗格會顯示從父成員中呼叫子成員的所有程式碼行。
 
@@ -63,7 +63,7 @@ ms.locfileid: "62791336"
 
 下表描述幾個當您以滑鼠右鍵按一下樹狀檢視窗格中的節點時，可以使用的捷徑功能表選項。
 
-|操作功能表項目|說明|
+|操作功能表項目|描述|
 | - |-----------------|
 |**增為新根目錄**|將選取的節點新增至樹狀檢視窗格作為新的根節點。 這可讓您將注意力放在特定樹狀子目錄。|
 |**移除根目錄**|從樹狀檢閱窗格移除所選根節點。 這個選項只能從根節點使用。<br /><br /> 您也可以使用 [移除根目錄] 工具列按鈕來移除選取的根節點。|

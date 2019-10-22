@@ -5,15 +5,15 @@ ms.topic: conceptual
 helpviewer_keywords:
 - customizing templates [Visual Studio]
 - Visual Studio templates, customizing
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 7e80bf422906c2b89e75462938d736fd3a0e5a41
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 401b1b3d2b37f74ae28b0b27bad5b1715497a4e7
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62978142"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72652562"
 ---
 # <a name="customize-project-and-item-templates"></a>自訂專案和項目範本
 
@@ -33,9 +33,9 @@ ms.locfileid: "62978142"
 
 - 自訂從範本建立專案的精靈。
 
-   如需詳細資訊，請參閱[如何：搭配專案範本 (擴充性) 使用精靈](../extensibility/how-to-use-wizards-with-project-templates.md)。
+   如需詳細資訊，請參閱[如何：搭配使用精靈與專案範本 (擴充性)](../extensibility/how-to-use-wizards-with-project-templates.md)。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [建立專案和項目範本](../ide/creating-project-and-item-templates.md)
 - [如何：針對範本進行疑難排解](../ide/how-to-troubleshoot-templates.md)

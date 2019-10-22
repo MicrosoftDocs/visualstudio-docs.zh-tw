@@ -6,20 +6,20 @@ f1_keywords:
 - vs.dsltools.dsldesigner.explorerbehavior
 helpviewer_keywords:
 - Domain-Specific Language Tools, Domain-Specific Language Explorer
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 65ada4a061fd928a074c9fcdb24fab60a277c457
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 82d9a64721f9d1c4f4db982e3a39c65a4b29f167
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445850"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653974"
 ---
 # <a name="customizing-the-model-explorer"></a>自訂模型總管
-您可以針對您的特定領域語言設計工具中，如下所示變更的外觀和行為的 [總管] 中：
+您可以針對特定領域語言設計工具變更 explorer 的外觀和行為，如下所示：
 
 - 變更視窗標題。
 
@@ -27,90 +27,90 @@ ms.locfileid: "63445850"
 
 - 變更節點的圖示。
 
-- 隱藏的節點。
+- 隱藏節點。
 
 ## <a name="changing-the-window-title"></a>變更視窗標題
- 若要變更產生的檔案總管的視窗標題，請選取**總管行為**中**DSL 總管**，然後在**屬性**視窗中，將**標題**屬性，以您想要的標題。
+ 若要變更所產生之 explorer 的視窗標題，請在 [ **DSL explorer**] 中選取 [ **explorer 行為**]，然後在 [**屬性**] 視窗中，將 [**標題**] 屬性設定為您想要的標題。
 
 ## <a name="changing-the-tab-icon"></a>變更索引標籤圖示
- 若要變更索引標籤圖示 [總管] 中，使用 16 x 16 像素圖示.bmp 檔案中。 將圖示檔案放在 \DslPackage\Resources\] 資料夾中，然後變更 [檔案名稱以**ModelExplorerToolWindowBitmaps.bmp**。 比方說，您可以在這裡為.bmp 格式變更 Visual Studio setup.ico 圖示檔並重新命名為**DSLLanguageName\DslPackage\Resources\ModelExplorerToolWindowBitmaps.bmp**。 產生的設計工具會顯示這個圖示程式總管 中的索引標籤上時一起停駐**方案總管 中**。
+ 若要變更 explorer 的索引標籤圖示，請在 .bmp 檔案中使用16x16 圖元的圖示。 將圖示檔放在 \DslPackage\Resources\ 資料夾中，然後將檔案名變更為**ModelExplorerToolWindowBitmaps。** 例如，您可以將 Visual Studio 安裝程式 .ico 圖示檔變更為 .bmp 格式，並將它重新命名為**DSLLanguageName\DslPackage\Resources\ModelExplorerToolWindowBitmaps.bmp**。 產生的設計工具會在您的瀏覽器的索引標籤上，當它與**方案總管**停駐在一起時，顯示此圖示。
 
-## <a name="setting-custom-icons-on-explorer-nodes"></a>在 [總管] 節點上設定自訂圖示
- 您可以自訂在總管中的節點，使用檔案總管 節點設定。 下列程序示範如何將圖示新增至節點。
+## <a name="setting-custom-icons-on-explorer-nodes"></a>設定 Explorer 節點上的自訂圖示
+ 您可以使用 [explorer] 節點設定自訂您的 explorer 中的節點。 下列程式顯示如何將圖示新增至節點。
 
-#### <a name="to-add-an-icon-to-an-explorer-node"></a>若要將圖示新增至 [檔案總管] 節點
+#### <a name="to-add-an-icon-to-an-explorer-node"></a>將圖示加入至 explorer 節點
 
-1. 建立[!INCLUDE[dsl](../modeling/includes/dsl_md.md)]使用工作流程 方案範本的方案。
+1. 使用 [工作流程] 方案範本來建立 [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] 解決方案。
 
-2. 將包含 16 x 16 像素圖示在.bmp 檔案放**Dsl\Resources**方案中的資料夾。
+2. 將包含16x16 圖元圖示的 .bmp 檔案放在解決方案的 [ **Dsl\Resources** ] 資料夾中。
 
-3. 在  **DSL 總管 中**，以滑鼠右鍵按一下**總管行為**，然後按一下 **加入新的總管節點設定**。
+3. 在 [ **DSL Explorer**] 中，以滑鼠右鍵按一下 [ **Explorer 行為**]，然後按一下 [**加入新的 explorer 節點設定**]。
 
-    **ExplorerNodeSettings**下方的節點會出現**自訂節點設定**節點。
+    [ **ExplorerNodeSettings** ] 節點會出現在 [**自訂節點設定**] 節點底下。
 
-4. 選取  **ExplorerNodeSettings**，然後在**屬性**視窗中，將**類別**至**動作項目**。
+4. 選取 [ **ExplorerNodeSettings**]，然後在 [**屬性**] 視窗中，將 [**類別**] 設定為 [**執行者**]。
 
-5. 設定**圖示來顯示**圖示檔的路徑。
+5. 設定**圖示以顯示**到圖示檔的路徑。
 
-6. 轉換所有範本，然後建置並執行方案。
+6. 轉換所有範本，然後建立並執行方案。
 
 7. 在產生的設計工具中，開啟範例圖表。
 
-    [總管] 中應該會顯示三個**動作項目**具有圖示的節點。
+    Explorer 應該會**顯示三個**具有您圖示的動作專案節點。
 
 > [!NOTE]
-> 如果您已將任何項目，會顯示在 [總管] 中產生的節點圖示，檔案總管的所有節點會都顯示圖示。 如果已設定無圖示，節點會顯示預設圖示。
+> 如果您已為所產生之 explorer 中顯示的任何元素設定節點圖示，所有的 explorer 節點都會顯示圖示。 如果未設定任何圖示，節點將會顯示預設圖示。
 
-## <a name="changing-the-name-displayed-on-an-explorer-node"></a>變更顯示在 [總管] 節點的名稱
- 您可以變更模型項目的名稱在總管中顯示的方式。 下列程序示範如何顯示名稱**任務**所參考**註解**註解節點中。
+## <a name="changing-the-name-displayed-on-an-explorer-node"></a>變更 Explorer 節點上顯示的名稱
+ 您可以變更模型專案的名稱在您的瀏覽器中顯示的方式。 下列程式顯示如何顯示批註節點中**批註**所參考**的工作名稱**。
 
-#### <a name="to-display-a-property"></a>若要顯示的屬性
+#### <a name="to-display-a-property"></a>若要顯示內容
 
-1. 開啟您在先前的程序中建立的方案。
+1. 開啟您在先前程式中建立的方案。
 
-2. 請確定**註解**參考只有單一網域類別，藉由設定的屬性名稱的角色多重性**主體**為 0..1。 屬性名稱應該就**主旨**，且關聯性名稱應該會變成**CommentReferencesSubject**。
+2. 將具有**屬性名稱主旨**的角色多重性設定為 0 ..1，以確定**批註**只會參考單一網域類別。 屬性名稱應該會成為**主旨，而**關聯性名稱應該會變成**CommentReferencesSubject**。
 
-3. 在  **DSL 總管 中**，以滑鼠右鍵按一下**總管行為**，然後按一下 **加入新的總管節點設定**。
+3. 在 [ **DSL Explorer**] 中，以滑鼠右鍵按一下 [ **Explorer 行為**]，然後按一下 [**加入新的 explorer 節點設定**]。
 
-     **ExplorerNodeSettings**下方的節點會出現**自訂節點設定**節點。
+     [ **ExplorerNodeSettings** ] 節點會出現在 [**自訂節點設定**] 節點底下。
 
-4. 選取  **ExplorerNodeSettings**，然後在**屬性**視窗中，將**類別**至**註解**。
+4. 選取 [ **ExplorerNodeSettings**]，然後在 [**屬性**] 視窗中，將 [**類別**] 設定為 [**批註**]。
 
-5. 以滑鼠右鍵按一下**註解**節點，然後再按一下**加入新的屬性路徑**。
+5. 以滑鼠右鍵按一下 [**批註**] 節點，然後按一下 [**加入新屬性路徑**]。
 
-     新的節點會出現名為**屬性顯示**。
+     隨即顯示名為 [**屬性**] 的新節點。
 
-6. 選取**屬性顯示**，然後在**屬性**視窗中，按一下 值欄位**屬性路徑**。 選取 **註解**，然後**CommentReferencesSubject**，然後**FlowElement**。 產生的路徑看起來應該像**CommentReferencesSubject.Subject/ ！主旨**。
+6. 選取 [**顯示內容**]，然後在 [**屬性**] 視窗中，按一下 [ **Path To] 屬性**的 [值] 欄位。 依序選取 [**批註**]、[ **CommentReferencesSubject**] 和 [ **FlowElement**]。 產生的路徑應該類似**CommentReferencesSubject。主旨/！** 主旨。
 
-7. 在 值欄位**屬性**，選取**名稱**。
+7. 在**屬性**的 [值] 欄位中，選取 [**名稱**]。
 
-8. 轉換所有範本，然後建置並執行您的方案。
+8. 轉換所有範本，然後建立並執行您的方案。
 
 9. 在產生的設計工具中，開啟範例圖表。
 
-10. 繪製**註解 Connector**註解項目之間， **Task1**在圖表上的項目。
+10. 在批註專案和圖表上的**Task1**元素之間繪製**批註連接器**。
 
-     [總管] 節點應該會顯示為註解**Task1**。
+     Explorer 節點應該會將批註顯示為**Task1**。
 
 ## <a name="hiding-nodes"></a>隱藏節點
- 您可以在總管中隱藏節點，加上其路徑**隱藏的節點**節點**DSL explorer**。 下列程序示範如何隱藏**註解**節點。
+ 您可以在 [ **DSL explorer**] 的 [**隱藏節點**] 節點中加入節點的路徑，藉以隱藏您的瀏覽器中的節點。 下列程式顯示如何隱藏**批註**節點。
 
-#### <a name="to-hide-an-explorer-node"></a>若要隱藏 [總管] 節點
+#### <a name="to-hide-an-explorer-node"></a>若要隱藏 explorer 節點
 
-1. 開啟您在先前的程序中建立的方案。
+1. 開啟您在先前程式中建立的方案。
 
-2. 在  **DSL 總管**，以滑鼠右鍵按一下**總管行為**，然後按一下 **新增網域路徑**。
+2. 在 [ **DSL Explorer**] 中，以滑鼠右鍵按一下 [ **Explorer 行為**]，然後按一下 [**加入新的網域路徑**]。
 
-     A**領域路徑**下方的節點會出現**隱藏節點**。
+     [**網域路徑**] 節點會出現在 [**隱藏的節點**] 底下。
 
-3. 選取**領域路徑**，然後在**屬性**視窗中，按一下 值欄位**路徑定義**。 選取  **FlowGraph**，然後**FlowGraphHasComments**。 產生的路徑看起來應該像**FlowGraphHasComments.Comments**
+3. 選取 [**網域路徑**]，然後在 [**屬性**] 視窗中，按一下 [**路徑定義**] 的 [值] 欄位。 依序選取 [ **FlowGraph**] 和 [ **FlowGraphHasComments**]。 產生的路徑應該類似**FlowGraphHasComments。批註**
 
-4. 轉換所有範本，然後建置並執行您的方案。
+4. 轉換所有範本，然後建立並執行您的方案。
 
 5. 在產生的設計工具中，開啟範例圖表。
 
-     [總管] 中應該只會顯示**執行者**節點，而應該不會顯示**註解**節點。
+     Explorer 應該只會顯示 [動作專案] 節點，而且不應該顯示 [**批註** **] 節點。**
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
-- [特定領域語言工具字彙](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [Domain-Specific Language Tools Glossary](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa) (特定領域語言工具字彙表)

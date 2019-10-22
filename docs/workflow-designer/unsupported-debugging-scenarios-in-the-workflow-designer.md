@@ -3,21 +3,21 @@ title: 工作流程設計工具中不支援的偵錯情況
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 6adbe379-41d0-4681-9cd0-b91f187c3c2c
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-author: gewarren
-ms.openlocfilehash: 9cda710a3a2f4945e96e706479996da0a1fa7e12
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+author: jillre
+ms.openlocfilehash: bfc4e0995a9abb88f73ff27186ed4e0d1dc81648
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67825740"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72649779"
 ---
 # <a name="unsupported-debugging-scenarios-in-the-workflow-designer"></a>工作流程設計工具中不支援的偵錯情況
 
-工作流程設計工具不支援下列的偵錯案例：
+工作流程設計工具不支援下列的調試情況：
 
 - 在編輯程式碼之後，就無法繼續執行。
 
@@ -27,7 +27,7 @@ ms.locfileid: "67825740"
 
 - 工作流程設計工具無法用來偵錯以程式碼 (而不使用設計工具) 所建立的工作流程。
 
-- 無法偵錯在舊版的 Windows Workflow Foundation (WF) 中建立的工作流程，在.NET Framework 4 或更新版本。
+- 在舊版 Windows Workflow Foundation （WF）中建立的工作流程無法在 .NET Framework 4 或更新版本中進行調試。
 
 - 活動或 <xref:System.Activities.Statements.Flowchart> 節點之間的連結上無法定義中斷點。
 
@@ -37,7 +37,7 @@ ms.locfileid: "67825740"
 
 - 呼叫堆疊視窗中無法設定工作流程中斷點。
 
-- 在設計師中，建立中斷點時**線條**並**字元**中的設定**新中斷點**對話方塊不會使用。
+- 在設計工具中建立中斷點時，不會使用 [**新增中斷點**] 對話方塊中的**行**和**字元**設定。
 
 - 中斷點視窗或捷徑功能表不支援以下資料行或工作流程偵錯的選項：
 

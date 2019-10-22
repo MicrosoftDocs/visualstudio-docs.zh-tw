@@ -6,17 +6,17 @@ helpviewer_keywords:
 - code analysis, managed code
 - analyzers
 - Roslyn analyzers
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: b86ab80e98b7e9609576002c4682bf01c388cd1d
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: b204d6824f06037341420d27083c120e6e4b2a95
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72445840"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72649294"
 ---
 # <a name="install-net-compiler-platform-code-analyzers"></a>安裝 .NET Compiler Platform 程式碼分析器
 

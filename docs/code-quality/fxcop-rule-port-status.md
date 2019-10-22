@@ -5,17 +5,17 @@ ms.topic: reference
 helpviewer_keywords:
 - fxcop rules
 - fxcop analyzers, ported rules
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7dec16291758b330614d8a522aaf3825ae461047
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: 2ad427c058265694205444c3ade04e317e407072
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72449055"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72649570"
 ---
 # <a name="fxcop-rule-port-status"></a>Fxcop 規則埠狀態
 
@@ -67,8 +67,8 @@ Roslyn 分析器存放庫中自動產生的[檔頁面](https://github.com/dotnet
 [CA1063 必須](ca1063-implement-idisposable-correctly.md) | 正確地執行 IDisposable
 [CA1064](ca1064-exceptions-should-be-public.md) | 例外狀況必須是公用
 [CA1065](ca1065-do-not-raise-exceptions-in-unexpected-locations.md) | 不要在非預期的位置中引發例外狀況
-CA1066 | 類型 {0} 應執行 IEquatable @ no__t-1T >，因為它會覆寫 Equals
-CA1067 | 執行 IEquatable @ no__t-0T 時覆寫物件. Equals （物件） >
+CA1066 | 類型 {0} 應該 \<T > 執行 IEquatable，因為它會覆寫 Equals
+CA1067 | 執行 IEquatable \<T 時覆寫物件. Equals （物件） >
 [CA1068](ca1068.md) | CancellationToken 參數必須位於最後
 CA1200 | 請避免使用具有前置詞的 cref 標記
 [CA1303](ca1303-do-not-pass-literals-as-localized-parameters.md) | 不要將常值當作已當地語系化的參數傳遞

@@ -3,19 +3,19 @@ title: 重構程式碼以將 LINQ 查詢轉換為 foreach 陳述式
 description: 將以查詢語法撰寫的任何 LINQ 查詢語法轉換為 foreach 陳述式。
 ms.date: 05/15/2018
 ms.topic: reference
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 446d0f3a4988552e8e1fbbac32ca150491975d94
-ms.sourcegitcommit: 0f5f7955076238742f2071d286ad8e896f3a6cad
-ms.translationtype: HT
+ms.openlocfilehash: a618285e1981171eb8f5f2f435fb23d412296b5b
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "68483680"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72654538"
 ---
 # <a name="refactoring-to-convert-linq-to-a-foreach-statement"></a>重構以將 LINQ 轉換為 foreach 陳述式
 
@@ -36,12 +36,12 @@ ms.locfileid: "68483680"
 
    ![將 LINQ 轉換為 foreach 快速動作功能表](media/convert-linq-to-foreach.png)
 
-1. 選取 [轉換為 'foreach']  。 或選取 [預覽變更]  以開啟 [[預覽變更]](../../ide/preview-changes.md) 對話方塊，然後選取 [套用]  。
+1. 選取 [轉換為 'foreach']。 或選取 [預覽變更] 以開啟 [[預覽變更]](../../ide/preview-changes.md) 對話方塊，然後選取 [套用]。
 
 > [!NOTE]
-> 就 C# 而言，這些重構所產生的程式碼會針對 `foreach` 迴圈的反覆運算變數，使用明確的類型或 [var](/dotnet/csharp/language-reference/keywords/var)。 所產生程式碼中的類型 (不論是明確還是隱含) 會取決於範圍內的程式碼樣式設定。 設定這些特定程式碼樣式設定時，是在電腦層級的下列位置底下設定：[工具]   > [選項]   > [文字編輯器]   > [C#]   > [程式碼樣式]   > [一般]   > [\'var' 喜歡設定]  ，或在 [EditorConfig](../../ide/editorconfig-language-conventions.md#implicit-and-explicit-types) 檔案中的方案層級設定。 如果您在 [選項]  中變更某個程式碼樣式，請重新開啟程式碼檔案以讓變更生效。
+> 就 C# 而言，這些重構所產生的程式碼會針對 `foreach` 迴圈的反覆運算變數，使用明確的類型或 [var](/dotnet/csharp/language-reference/keywords/var)。 所產生程式碼中的類型 (不論是明確還是隱含) 會取決於範圍內的程式碼樣式設定。 設定這些特定程式碼樣式設定時，是在電腦層級的下列位置底下設定：[工具] > [選項] > [文字編輯器] > [C#] > [程式碼樣式] > [一般] > [\'var' 喜歡設定]，或在 [EditorConfig](../../ide/editorconfig-language-conventions.md#implicit-and-explicit-types) 檔案中的方案層級設定。 如果您在 [選項] 中變更某個程式碼樣式，請重新開啟程式碼檔案以讓變更生效。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [LINQ](/dotnet/standard/using-linq)
 - [重構](../refactoring-in-visual-studio.md)

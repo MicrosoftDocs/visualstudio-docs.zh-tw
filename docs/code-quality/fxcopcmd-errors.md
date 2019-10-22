@@ -5,17 +5,17 @@ ms.topic: reference
 helpviewer_keywords:
 - FxCopCmd errors
 ms.assetid: bb614ed0-1b7c-4b56-99ae-da50ef6cfef9
-ms.author: gewarren
-author: gewarren
+ms.author: jillfra
+author: jillre
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1892fa9f47e0b3b315531adc51cf538ff7fe4dee
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: 315f74348ffc7983088e7601f51a667ce8598b2e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72449028"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72649556"
 ---
 # <a name="fxcopcmd-tool-errors"></a>Fxcopcmd.exe 工具錯誤
 

@@ -1,5 +1,5 @@
 ---
-title: CA1053:靜態預留位置類型不應該有建構函式 |Microsoft Docs
+title: CA1053：靜態預留位置類型不應該有任何構造函式 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,42 +12,42 @@ helpviewer_keywords:
 - StaticHolderTypesShouldNotHaveConstructors
 ms.assetid: 10302b9a-fa5e-4935-a06a-513d9600f613
 caps.latest.revision: 17
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 83000143674e7cc3bc412c0ca8a579660160514c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 7de098d264dbdd6d7d9daea385de2e03d4e1ba35
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444562"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653815"
 ---
-# <a name="ca1053-static-holder-types-should-not-have-constructors"></a>CA1053:靜態預留位置類型不應該包含建構函式
+# <a name="ca1053-static-holder-types-should-not-have-constructors"></a>CA1053：靜態預留位置類型不應包含建構函式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |TypeName|StaticHolderTypesShouldNotHaveConstructors|
 |CheckId|CA1053|
-|分類|Microsoft.Design|
+|Category|Microsoft. Design|
 |中斷變更|中斷|
 
 ## <a name="cause"></a>原因
  公用或巢狀公用類型只宣告靜態成員，而且具有公用或保護的預設建構函式。
 
 ## <a name="rule-description"></a>規則描述
- 建構函式不是必要的，因為呼叫靜態成員不需類型的執行個體。 此外，因為型別並沒有非靜態成員，建立執行個體不提供存取任何類型的成員。
+ 建構函式不是必要的，因為呼叫靜態成員不需類型的執行個體。 此外，因為類型沒有非靜態成員，所以建立實例並不會提供任何類型成員的存取權。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
- 若要修正此規則的違規情形，請移除預設建構函式，或設為私用。
+ 若要修正此規則的違規情形，請移除預設的函式，或將它設為私用。
 
 > [!NOTE]
-> 某些編譯器會自動建立的公用預設建構函式，如果類型沒有定義任何建構函式。 如果這是您的型別，則新增私用的預設建構函式，來排除此違規情形。
+> 如果類型未定義任何的任何函式，部分編譯器會自動建立公用預設的函式。 如果您的類型是這種情況，請新增私用預設的函式，以排除違規。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
- 請勿隱藏此規則的警告。 建構函式的存在會建議類型不是靜態型別。
+ 請勿隱藏此規則的警告。 存在於此函式的情況，表示該類型不是靜態類型。
 
 ## <a name="example"></a>範例
- 下列範例顯示違反此規則的型別。 請注意，沒有預設建構函式的原始程式碼中。 當此程式碼編譯成組件時，C# 編譯器會插入預設建構函式，將會違反此規則。 若要修正此問題，宣告私用建構函式。
+ 下列範例顯示違反此規則的類型。 請注意，原始程式碼中沒有預設的程式碼。 當此程式碼編譯成元件時， C#編譯器會插入預設的函式，這將會違反此規則。 若要修正此錯誤，請宣告私用的函式。
 
  [!code-csharp[FxCop.Design.StaticTypes#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.StaticTypes/cs/FxCop.Design.StaticTypes.cs#1)]

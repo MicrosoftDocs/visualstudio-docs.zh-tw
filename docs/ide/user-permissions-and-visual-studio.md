@@ -7,17 +7,17 @@ helpviewer_keywords:
 - user permissions
 - administrative privileges
 - permissions
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 97ecddfa317eb522a8ce29a53482df5581912dad
-ms.sourcegitcommit: 673b9364fc9a96b027662dcb4cf5d61cab60ef11
-ms.translationtype: HT
+ms.openlocfilehash: 6086485ef20330de7971297f52a112d5183ee4a2
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/21/2019
-ms.locfileid: "69891238"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72647340"
 ---
 # <a name="user-permissions-and-visual-studio"></a>使用者權限和 Visual Studio
 
@@ -32,7 +32,7 @@ ms.locfileid: "69891238"
 |----------|----------| - |
 |安裝|安裝 Visual Studio。|[安裝 Visual Studio](../install/install-visual-studio.md)|
 ||安裝、更新或移除本機說明內容。|[安裝和管理本機說明內容](../help-viewer/install-manage-local-content.md)|
-|工具箱|將傳統 COM 控制項新增至 [工具箱]  。|[工具箱](../ide/reference/toolbox.md)|
+|工具箱|將傳統 COM 控制項新增至 [工具箱]。|[工具箱](../ide/reference/toolbox.md)|
 |建置|使用註冊元件的建置後事件。|[了解自訂建置步驟和建置事件](/cpp/build/understanding-custom-build-steps-and-build-events)|
 ||包含當您建置 C++ 專案時的註冊步驟。||
 |偵錯|對以更高權限執行的應用程式進行偵錯。|[偵錯設定和準備](../debugger/debugger-settings-and-preparation.md)|
@@ -53,9 +53,9 @@ ms.locfileid: "69891238"
 
 ::: moniker range="vs-2017"
 
-1. 開啟 [開始]  功能表，然後捲動至 Visual Studio 2017。
+1. 開啟 [開始] 功能表，然後捲動至 Visual Studio 2017。
 
-1. 從 **Visual Studio 2017** 的操作功能表 (按一下滑鼠右鍵)，選取 [更多]  >[以系統管理員身分執行]  。
+1. 從 **Visual Studio 2017** 的操作功能表 (按一下滑鼠右鍵)，選取 [更多] >[以系統管理員身分執行]。
 
    在 Visual Studio 啟動時， **(系統管理員)** 會顯示在標題列的產品名稱之後。
 
@@ -63,9 +63,9 @@ ms.locfileid: "69891238"
 
 ::: moniker range=">=vs-2019"
 
-1. 開啟 [開始]  功能表，然後捲動至 Visual Studio 2019。
+1. 開啟 [開始] 功能表，然後捲動至 Visual Studio 2019。
 
-1. 從 **Visual Studio 2019** 的操作功能表 (按一下滑鼠右鍵)，選取 [更多]  >[以系統管理員身分執行]  。
+1. 從 **Visual Studio 2019** 的操作功能表 (按一下滑鼠右鍵)，選取 [更多] >[以系統管理員身分執行]。
 
    在 Visual Studio 啟動時， **(系統管理員)** 會顯示在標題列的產品名稱之後。
 
@@ -73,7 +73,7 @@ ms.locfileid: "69891238"
 
 您也可以將應用程式捷徑修改為一律以系統管理權限執行。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [移植、移轉及升級 Visual Studio 專案](../porting/port-migrate-and-upgrade-visual-studio-projects.md)
 - [安裝 Visual Studio](../install/install-visual-studio.md)

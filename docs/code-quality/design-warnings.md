@@ -9,17 +9,17 @@ helpviewer_keywords:
 - managed code analysis warnings, design warnings
 - warnings, design
 ms.assetid: 34e65a18-560c-423f-814f-519089e318cf
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7b20a61aabe519bfaeb562e4b41fb5d47e17dc43
-ms.sourcegitcommit: 08c144d290da373df841f04fc799e3133540a541
+ms.openlocfilehash: bc714a4663505fe2a40cc145e8c8ca3c7bf86a1e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72535913"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72649678"
 ---
 # <a name="design-warnings"></a>設計警告
 

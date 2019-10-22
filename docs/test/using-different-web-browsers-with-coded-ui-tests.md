@@ -2,17 +2,17 @@
 title: 使用不同的 Web 瀏覽器搭配自動程式化 UI 測試
 ms.date: 11/04/2016
 ms.topic: conceptual
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-author: gewarren
-ms.openlocfilehash: 1b7cad6d52dc3fabc182881b99163cf15e1a260c
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+author: jillre
+ms.openlocfilehash: 24e4ee35f21b7477e9b3d601305bd6534a16d9e0
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926576"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72659791"
 ---
 # <a name="use-different-web-browsers-with-coded-ui-tests"></a>使用不同的網頁瀏覽器搭配自動程式化 UI 測試
 
@@ -38,7 +38,7 @@ ms.locfileid: "68926576"
 
 ## <a name="how-do-i-record-and-play-back-coded-ui-tests-on-web-applications-using-the-supported-web-browsers"></a>如何使用支援的 Web 瀏覽器，在 Web 應用程式上錄製和播放自動程式化 UI 測試？
 
-**錄製：** 您必須使用自動程式化 UI 測試產生器，來錄製使用 Internet Explorer 的 Web 應用程式測試。 您可以選擇性地使用一組預先定義的屬性針對待測控制項加入驗證和自訂程式碼，就像平常使用自動程式化 UI 測試所做的一樣。 如需詳細資訊，請參閱[使用 UI 自動化來測試您的程式碼](../test/use-ui-automation-to-test-your-code.md)。
+**記錄：** 您必須使用自動程式碼 UI 測試產生器，來記錄使用 Internet Explorer 的 Web 應用程式測試。 您可以選擇性地使用一組預先定義的屬性針對待測控制項加入驗證和自訂程式碼，就像平常使用自動程式化 UI 測試所做的一樣。 如需詳細資訊，請參閱[使用 UI 自動化來測試您的程式碼](../test/use-ui-automation-to-test-your-code.md)。
 
 > [!NOTE]
 > 您不能使用 Google Chrome 或 Mozilla Firefox 瀏覽器記錄自動程式化 UI 測試。
@@ -53,21 +53,21 @@ ms.locfileid: "68926576"
 
 ::: moniker range="vs-2017"
 
-1. 在 [工具]  功能表中選擇 [擴充功能和更新]  。
+1. 在 [工具] 功能表中選擇 [擴充功能和更新]。
 
-2. 在 [擴充功能和更新]  對話方塊中，搜尋 `Selenium components for Cross Browser Testing`。
+2. 在 [擴充功能和更新] 對話方塊中，搜尋 `Selenium components for Cross Browser Testing`。
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-1. 在 [擴充功能]  功能表中，選擇 [管理擴充功能]  。
+1. 在 [擴充功能] 功能表中，選擇 [管理擴充功能]。
 
-2. 在 [管理擴充功能]  對話方塊中，搜尋 `Selenium components for Cross Browser Testing`。
+2. 在 [管理擴充功能] 對話方塊中，搜尋 `Selenium components for Cross Browser Testing`。
 
 ::: moniker-end
 
-3. 反白顯示延伸模組並選擇 [下載]  。
+3. 反白顯示延伸模組並選擇 [下載]。
 
     > [!TIP]
     > 您也可以在[這裡](https://marketplace.visualstudio.com/items?itemName=AtinBansal.SeleniumcomponentsforCodedUICrossBrowserTesting)下載自動程式碼 UI 跨瀏覽器測試專用的 Selenium 元件。
@@ -80,15 +80,15 @@ ms.locfileid: "68926576"
 
 1. 啟用 Just My Code：
 
-    1. 在 [工具]  功能表中選擇 [選項]  ，然後選擇 [偵錯]  。
+    1. 在 [工具] 功能表中選擇 [選項]，然後選擇 [偵錯]。
 
-    2. 選取 [啟用 Just My Code]  。
+    2. 選取 [啟用 Just My Code]。
 
 2. 停用 CLR 例外狀況：
 
-    1. 在 [偵錯]  功能表中選擇 [例外狀況]  。
+    1. 在 [偵錯] 功能表中選擇 [例外狀況]。
 
-    2. 取消核取 [通用語言執行平台例外狀況]  的 [使用者未處理]  。
+    2. 取消核取 [通用語言執行平台例外狀況] 的 [使用者未處理]。
 
 如果在自動程式化 UI 測試中看不到變更 `BrowserWindow.CurrentBrowser` 的選項，您使用的 Visual Studio 版本可能不支援使用各種網頁瀏覽器進行自動程式化 UI 測試。 若要使用這樣的自動程式化 UI 測試，您必須使用 Visual Studio Enterprise 版。
 
@@ -102,7 +102,7 @@ ms.locfileid: "68926576"
 
 - 不支援自動化瀏覽器架構專用的 UI 動作，例如最大化、最小化和還原。
 
-## <a name="tips"></a>秘訣
+## <a name="tips"></a>祕訣
 
 您可以設定輸出，在自動程式碼 UI 記錄中包含螢幕擷取畫面。 若要這麼做，您需要完成 *QTAgent32.exe.config* 檔案的某些組態設定。 根據預設，這個檔案會安裝在下列位置：
 
@@ -130,8 +130,8 @@ ms.locfileid: "68926576"
 
 [針對跨瀏覽器測試失敗問題進行疑難排解](https://skydrive.live.com/redir?resid=AE5CD7309CCCC43C!182&authkey=!AEpS48i295B49FI)
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [使用 UI 自動化來測試您的程式碼](../test/use-ui-automation-to-test-your-code.md)
-- [自動程式碼 UI 測試和動作記錄的支援組態和平台](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
+- [自動程式化 UI 測試和動作記錄的支援組態和平台](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
 - [使用自動程式化 UI 測試記錄來分析自動程式化 UI 測試](../test/analyzing-coded-ui-tests-using-coded-ui-test-logs.md)

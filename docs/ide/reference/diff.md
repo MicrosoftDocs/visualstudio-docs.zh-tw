@@ -7,17 +7,17 @@ helpviewer_keywords:
 - /Diff Devenv switch
 - Diff Devenv switch
 ms.assetid: 5377fedb-632a-4e86-a947-7c11c86451e7
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c2e69435a319a9730af846a912cb3f90a12d4ac8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 26d438e9cea35cbf178658d8def78e264804240c
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62945779"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72654505"
 ---
 # <a name="diff-devenvexe"></a>/Diff (devenv.exe)
 
@@ -41,11 +41,11 @@ devenv /Diff SourceFile TargetFile [SourceDisplayName [TargetDisplayName]]
 
 - *SourceDisplayName*
 
-  選擇性。 第一個檔案的顯示名稱。
+  選擇項。 第一個檔案的顯示名稱。
 
 - *TargetDisplayName*
 
-  選擇性。 第二個檔案的顯示名稱。
+  選擇項。 第二個檔案的顯示名稱。
 
 ## <a name="remarks"></a>備註
 
@@ -65,6 +65,6 @@ devenv /diff File1.txt File2.txt "File One"
 devenv /diff File1.txt File2.txt "" FileTwo
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [Devenv 命令列參數](../../ide/reference/devenv-command-line-switches.md)

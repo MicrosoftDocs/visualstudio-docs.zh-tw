@@ -6,16 +6,16 @@ ms.topic: conceptual
 helpviewer_keywords:
 - filtered solution
 - solution filtering
-author: gewarren
+author: jillre
 ms.author: stsu
 manager: jillfra
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: 2612770b760bec70ec9ee6c679c47804d4e69f42
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 4c44d267ef5686d04e9549601e05866aabbfb62d
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439907"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72650843"
 ---
 # <a name="filtered-solutions-in-visual-studio"></a>Visual Studio 中已篩選的方案
 
@@ -81,7 +81,7 @@ devenv /donotloadprojects MySln.sln
 
 ## <a name="solution-filter-files"></a>方案篩選檔案
 
-如果您希望共用您的專案載入組態，或將其認可至原始程式碼控制，您可以建立方案篩選器檔案 (其副檔名為 *.slnf*)。 當您開啟方案篩選檔案時，方案會以載入指定專案並隱藏所有已卸載專案的方式，在 Visual Studio 中開啟。 您可以[切換](#toggle-unloaded-project-visibility)以檢視已卸載專案。
+如果您希望共用您的專案載入組態，或將其認可至原始檔控制，您可以建立方案篩選器檔案 (其副檔名為 *.slnf*)。 當您開啟方案篩選檔案時，方案會以載入指定專案並隱藏所有已卸載專案的方式，在 Visual Studio 中開啟。 您可以[切換](#toggle-unloaded-project-visibility)以檢視已卸載專案。
 
 [方案總管] 中方案旁邊圖示中額外的漏斗圖圖像，可用於在視覺上區別方案篩選檔案與一般方案檔案。 篩選名稱和已載入的專案數目也會顯示在方案名稱旁邊。
 
@@ -102,7 +102,7 @@ devenv /donotloadprojects MySln.sln
 
 ![在 Visual Studio 中開啟最近使用的檔案](media/filtered-solutions/open-recent.png)
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [自訂 [方案總管] 中的檔案巢狀](file-nesting-solution-explorer.md)
 - [最佳化 Visual Studio 效能](optimize-visual-studio-performance.md)

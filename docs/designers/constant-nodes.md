@@ -3,17 +3,17 @@ title: 常數節點
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 2c798a50-a2d7-459b-9879-ad4ad8290c9b
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: af585d77176e52442d5eee37f3d16fcbafd31ef9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 86fd5a9b2d179a27ec0cf34f5388b30ebb563ad4
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62897732"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72637350"
 ---
 # <a name="constant-nodes"></a>常數節點
 
@@ -27,21 +27,21 @@ ms.locfileid: "62897732"
 
 ## <a name="constant-node-reference"></a>常數節點參考
 
-|節點|詳細資料|屬性|
+|節點|詳細資料|內容|
 |----------|-------------|----------------|
-|**觀景窗向量**|從目前像素擴充至世界空間之觀景窗的向量。<br /><br /> 您可以用這個來計算世界空間中的反射。<br /><br /> **輸出**<br /><br /> `Output`: `float3`<br /> 從目前像素到觀景窗的向量。|無|
-|**色彩常數**|色彩常數值。<br /><br /> **輸出**<br /><br /> `Output`: `float4`<br /> 色彩值。|**輸出**<br /> 色彩值。|
-|**常數**|純量常數值。<br /><br /> **輸出**<br /><br /> `Output`: `float`<br /> 純量值。|**輸出**<br /> 純量值。|
-|**2D 常數**|兩分量向量常數。<br /><br /> **輸出**<br /><br /> `Output`: `float2`<br /> 向量值。|**輸出**<br /> 向量值。|
-|**3D 常數**|三分量向量常數。<br /><br /> **輸出**<br /><br /> `Output`: `float3`<br /> 向量值。|**輸出**<br /> 向量值。|
-|**4D 常數**|四分量向量常數。<br /><br /> **輸出**<br /><br /> `Output`: `float4`<br /> 色彩值。|**輸出**<br /> 向量值。|
-|**標準化位置**|目前像素的位置，以標準化裝置座標表示。<br /><br /> X 和 Y 座標的值在 [-1, 1] 範圍內，而 Z 座標的值在 [0, 1] 範圍內，W 分量包含檢視空間中的點深度值。W 未經標準化。<br /><br /> **輸出**<br /><br /> `Output`: `float4`<br /> 目前像素的位置。|無|
-|**點色彩**|目前像素的擴散色彩，也就是材質擴散色彩和頂點色彩屬性的組合。<br /><br /> **輸出**<br /><br /> `Output`: `float4`<br /> 目前像素的擴散色彩。|無|
-|**點深度**|檢視空間中目前像素的點深度。<br /><br /> **輸出**<br /><br /> `Output`: `float`<br /> 目前像素的深度。|無|
-|**標準化點深度**|目前像素的深度，以標準化裝置座標表示。<br /><br /> 結果的值在 [0, 1] 範圍內。<br /><br /> **輸出**<br /><br /> `Output`: `float`<br /> 目前像素的深度。|無|
-|**螢幕位置**|目前像素的位置，以螢幕座標表示。<br /><br /> 根據目前檢視區的螢幕座標。 X 和 Y 分量包含螢幕座標，Z 分量包含標準化到 [0, 1] 範圍內的深度，而 W 分量包含檢視空間中的深度值。<br /><br /> **輸出**<br /><br /> `Output`: `float4`<br /> 目前像素的位置。|無|
-|**曲面法線**|物件空間中目前像素的曲面法線。<br /><br /> 您可以用這個來計算物件空間中的光源比重和反射。<br /><br /> **輸出**<br /><br /> `Output`: `float3`<br /> 目前像素的曲面法線。|無|
-|**正切空間觀景窗向量**|從目前像素擴充至正切函數空間之觀景窗的向量。<br /><br /> 您可以用這個來計算正切函數空間中的反射。<br /><br /> **輸出**<br /><br /> `Output`: `float3`<br /> 從目前像素到觀景窗的向量。|無|
-|**正切空間光方向**|定義目前像素的正切函數空間中光源投射方向的向量。<br /><br /> 您可以用這個向量來計算正切函數空間中的光線和反射比重。<br /><br /> **輸出：**<br /><br /> `Output`: `float3`<br /> 從目前像素到光源的向量。|無|
-|**世界空間法線**|世界空間中目前像素的曲面法線。<br /><br /> 您可以用這個來計算世界空間中的光源比重和反射。<br /><br /> **輸出**<br /><br /> `Output`: `float3`<br /> 目前像素的曲面法線。|無|
-|**世界空間位置**|世界空間中目前像素的位置。<br /><br /> **輸出**<br /><br /> `Output`: `float4`<br /> 目前像素的位置。|無|
+|**觀景窗向量**|從目前像素擴充至世界空間之觀景窗的向量。<br /><br /> 您可以用這個來計算世界空間中的反射。<br /><br /> **Output**<br /><br /> `Output`: `float3`<br /> 從目前像素到觀景窗的向量。|None|
+|**色彩常數**|色彩常數值。<br /><br /> **Output**<br /><br /> `Output`: `float4`<br /> 色彩值。|**Output**<br /> 色彩值。|
+|**常數**|純量常數值。<br /><br /> **Output**<br /><br /> `Output`: `float`<br /> 純量值。|**Output**<br /> 純量值。|
+|**2D 常數**|兩分量向量常數。<br /><br /> **Output**<br /><br /> `Output`: `float2`<br /> 向量值。|**Output**<br /> 向量值。|
+|**3D 常數**|三分量向量常數。<br /><br /> **Output**<br /><br /> `Output`: `float3`<br /> 向量值。|**Output**<br /> 向量值。|
+|**4D 常數**|四分量向量常數。<br /><br /> **Output**<br /><br /> `Output`: `float4`<br /> 色彩值。|**Output**<br /> 向量值。|
+|**標準化位置**|目前像素的位置，以標準化裝置座標表示。<br /><br /> X 和 Y 座標的值在 [-1, 1] 範圍內，而 Z 座標的值在 [0, 1] 範圍內，W 分量包含檢視空間中的點深度值。W 未經標準化。<br /><br /> **Output**<br /><br /> `Output`: `float4`<br /> 目前像素的位置。|None|
+|**點色彩**|目前像素的擴散色彩，也就是材質擴散色彩和頂點色彩屬性的組合。<br /><br /> **Output**<br /><br /> `Output`: `float4`<br /> 目前像素的擴散色彩。|None|
+|**點深度**|檢視空間中目前像素的點深度。<br /><br /> **Output**<br /><br /> `Output`: `float`<br /> 目前像素的深度。|None|
+|**標準化點深度**|目前像素的深度，以標準化裝置座標表示。<br /><br /> 結果的值在 [0, 1] 範圍內。<br /><br /> **Output**<br /><br /> `Output`: `float`<br /> 目前像素的深度。|None|
+|**螢幕位置**|目前像素的位置，以螢幕座標表示。<br /><br /> 根據目前檢視區的螢幕座標。 X 和 Y 分量包含螢幕座標，Z 分量包含標準化到 [0, 1] 範圍內的深度，而 W 分量包含檢視空間中的深度值。<br /><br /> **Output**<br /><br /> `Output`: `float4`<br /> 目前像素的位置。|None|
+|**曲面法線**|物件空間中目前像素的曲面法線。<br /><br /> 您可以用這個來計算物件空間中的光源比重和反射。<br /><br /> **Output**<br /><br /> `Output`: `float3`<br /> 目前像素的曲面法線。|None|
+|**正切空間觀景窗向量**|從目前像素擴充至正切函數空間之觀景窗的向量。<br /><br /> 您可以用這個來計算正切函數空間中的反射。<br /><br /> **Output**<br /><br /> `Output`: `float3`<br /> 從目前像素到觀景窗的向量。|None|
+|**正切空間光方向**|定義目前像素的正切函數空間中光源投射方向的向量。<br /><br /> 您可以用這個向量來計算正切函數空間中的光線和反射比重。<br /><br /> **輸出：**<br /><br /> `Output`: `float3`<br /> 從目前像素到光源的向量。|None|
+|**世界空間法線**|世界空間中目前像素的曲面法線。<br /><br /> 您可以用這個來計算世界空間中的光源比重和反射。<br /><br /> **Output**<br /><br /> `Output`: `float3`<br /> 目前像素的曲面法線。|None|
+|**世界空間位置**|世界空間中目前像素的位置。<br /><br /> **Output**<br /><br /> `Output`: `float4`<br /> 目前像素的位置。|None|

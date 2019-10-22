@@ -10,15 +10,15 @@ ms.assetid: 6bcc5712-6cc6-4f59-8933-6e8078318c45
 dev_langs:
 - CSharp
 - VB
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 1111b659e1c88f219258b73045d0ce0d0f420ae7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 9aeb80d348e31de0934d515754c59346fac3c2ea
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62822933"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72665267"
 ---
 # <a name="code-a-custom-extraction-rule-for-a-web-performance-test"></a>為 Web 效能測試撰寫自訂擷取規則程式碼
 
@@ -206,7 +206,7 @@ End Namespace
 
 <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRule.Extract*> 方法包含擷取規則的核心功能。 之前範例中的 <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRule.Extract*> 方法可接受 <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionEventArgs> (其提供此擷取規則涵蓋的要求所產生之回應)。 回應中含有 <xref:Microsoft.VisualStudio.TestTools.WebTesting.HtmlDocument>，後者又含有回應中的所有標籤。 輸出標籤會從 <xref:Microsoft.VisualStudio.TestTools.WebTesting.HtmlDocument> 中篩選掉。 每個輸入標記都會受到檢查，看其中是否有稱為 `name` 的屬性 (attribute)，其值與使用者提供的 `Name` 屬性 (property) 值相同。 如果找到屬性相符的標記，就會試著擷取 `value` 屬性 (如果存在) 所含的值。 如果這個屬性存在，就會擷取標籤的名稱和值，然後加入至 Web 效能測試內容中。 此擷取規則通過。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRule>
 - <xref:Microsoft.VisualStudio.TestTools.WebTesting.Rules>

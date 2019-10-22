@@ -7,28 +7,28 @@ f1_keywords:
 helpviewer_keywords:
 - Advanced Settings for Services dialog box
 ms.assetid: 6dde4a2d-85e1-4275-aa55-24b84111be91
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f7f599b4448fe39bf8c0d82d030f5f1173f28699
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+ms.openlocfilehash: ed0ce1eecbd9bcc9508f6fc884220a59eb428df0
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68919336"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72652775"
 ---
 # <a name="advanced-settings-for-services-dialog-box"></a>服務對話方塊的進階設定
-用戶端應用程式服務簡化了從 Windows Forms 和 Windows Presentation Foundation (WPF) 應用程式對 [!INCLUDE[ajax_current_short](../../ide/reference/includes/ajax_current_short_md.md)] 登入、角色和設定檔服務的存取。 您可以使用 [專案設計工具]  的 [服務]  頁面來設定用戶端應用程式服務。 如需 [服務]  頁面的詳細資訊，請參閱[專案設計工具、服務頁](../../ide/reference/services-page-project-designer.md)。
+用戶端應用程式服務簡化了從 Windows Forms 和 Windows Presentation Foundation (WPF) 應用程式對 [!INCLUDE[ajax_current_short](../../ide/reference/includes/ajax_current_short_md.md)] 登入、角色和設定檔服務的存取。 您可以使用 [專案設計工具] 的 [服務] 頁面來設定用戶端應用程式服務。 如需 [服務] 頁面的詳細資訊，請參閱[專案設計工具、服務頁](../../ide/reference/services-page-project-designer.md)。
 
-在 [專案設計工具]  中，使用 [服務]  頁面的 [服務的進階設定]  對話方塊，即可設定用戶端應用程式服務的進階設定。 藉由使用這些設定，您可以覆寫一些預設應用程式服務行為，以啟用較少見的案例。 如需詳細資訊，請參閱[用戶端應用程式服務](/dotnet/framework/common-client-technologies/client-application-services)。
+在 [專案設計工具] 中，使用 [服務] 頁面的 [服務的進階設定] 對話方塊，即可設定用戶端應用程式服務的進階設定。 藉由使用這些設定，您可以覆寫一些預設應用程式服務行為，以啟用較少見的案例。 如需詳細資訊，請參閱[用戶端應用程式服務](/dotnet/framework/common-client-technologies/client-application-services)。
 
-若要存取 [服務的進階設定]  對話方塊，請選取方案總管  中的專案節點，然後按一下 [專案]  功能表上的 [屬性]  。 當 [專案設計工具]  出現時，請按一下 [服務]  索引標籤，然後按一下 [進階]  按鈕。 在您啟用用戶端應用程式服務之前，此按鈕會維持停用狀態。
+若要存取 [服務的進階設定] 對話方塊，請選取方案總管中的專案節點，然後按一下 [專案] 功能表上的 [屬性]。 當 [專案設計工具] 出現時，請按一下 [服務] 索引標籤，然後按一下 [進階] 按鈕。 在您啟用用戶端應用程式服務之前，此按鈕會維持停用狀態。
 
 ## <a name="task-list"></a>工作清單
 
-- [如何：設定用戶端應用程式服務](/dotnet/framework/common-client-technologies/how-to-configure-client-application-services)
+- [操作說明：設定用戶端應用程式服務](/dotnet/framework/common-client-technologies/how-to-configure-client-application-services)
 
 ## <a name="uielement-list"></a>UIElement 清單
 
@@ -42,8 +42,8 @@ ms.locfileid: "68919336"
 
  **使用自訂連接字串** 指定用戶端服務提供者是否將使用自訂資料存放區來進行本機快取。 根據預設，服務提供者將使用本機檔案系統來進行快取。 選取此選項將自動以預設連接字串填入文字方塊。 您可以讓預設連接字串繼續自動產生及使用 SQL Server Compact Edition 資料庫，也可以指定現有 SQL Server 資料庫的連接字串。 如需詳細資訊，請參閱[如何：設定用戶端應用程式服務](/dotnet/framework/common-client-technologies/how-to-configure-client-application-services)。 預設會清除這個選項。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [用戶端應用程式服務](/dotnet/framework/common-client-technologies/client-application-services)
 - [專案設計工具、服務頁面](../../ide/reference/services-page-project-designer.md)
-- [如何：設定用戶端應用程式服務](/dotnet/framework/common-client-technologies/how-to-configure-client-application-services)
+- [操作說明：設定用戶端應用程式服務](/dotnet/framework/common-client-technologies/how-to-configure-client-application-services)

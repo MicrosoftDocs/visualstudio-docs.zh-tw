@@ -5,8 +5,8 @@ ms.topic: conceptual
 helpviewer_keywords:
 - source suppression, code analysis
 - code analysis, source suppression
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 dev_langs:
 - CSharp
@@ -14,12 +14,12 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e4a71acfc9872c1709dcfe5abf062a95cb3e89d
-ms.sourcegitcommit: 08c144d290da373df841f04fc799e3133540a541
+ms.openlocfilehash: 50afd9ffd72c37510997176f103f3b269f29fcf2
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72535831"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72649316"
 ---
 # <a name="suppress-code-analysis-warnings"></a>隱藏程式碼分析警告
 

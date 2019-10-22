@@ -2,17 +2,17 @@
 title: 對 Visual C# 程式碼進行單元測試
 ms.date: 09/27/2019
 ms.topic: conceptual
-ms.author: gewarren
-author: gewarren
+ms.author: jillfra
+author: jillre
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 0a724ab273401994faeb88ae197966ef538e842a
-ms.sourcegitcommit: 13decf878b33fc0c5d665a88067170c2861b261b
+ms.openlocfilehash: 309cf408167cc463db8cde9e39d5c0fe4dbe26d6
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "71681598"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72659836"
 ---
 # <a name="unit-test-c-code"></a>對 C# 程式碼進行單元測試
 
@@ -48,11 +48,11 @@ ms.locfileid: "71681598"
    }
    ```
 
-   @No__t 0 類別提供數個靜態方法，可讓您用來驗證測試方法中的結果。
+   @No__t_0 類別提供數個靜態方法，可讓您用來驗證測試方法中的結果。
 
 ::: moniker range="vs-2017"
 
-2. 在 [**測試**] 功能表上，選擇 [**執行**> 個] [**所有測試**]。
+2. 在 [**測試**] 功能表上，選擇 [**執行**] > [**所有測試**]。
 
 ::: moniker-end
 
@@ -238,7 +238,7 @@ ms.locfileid: "71681598"
 
 ### <a name="eliminate-duplicated-code"></a>消除重複的程式碼
 
-**RangeTest**方法會將傳遞給 @no__t 2 方法之*容錯*變數的分母硬式編碼。 如果您打算加入其他使用相同容錯計算的測試，則在多個位置使用硬式編碼的值，會使程式碼更難維護。
+**RangeTest**方法會將傳遞給 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert> 方法之*容錯*變數的分母硬編碼。 如果您打算加入其他使用相同容錯計算的測試，則在多個位置使用硬式編碼的值，會使程式碼更難維護。
 
 1. 將私用 helper 方法新增至**unittest1.cpp**類別以計算容錯值，然後從**RangeTest**呼叫該方法。
 
@@ -266,8 +266,8 @@ ms.locfileid: "71681598"
 2. 執行**RangeTest**以確保它仍會通過。
 
 > [!TIP]
-> 如果您將 helper 方法加入至測試類別，而不想讓它出現在 [**測試瀏覽器**] 中，請不要將 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute> 屬性加入至方法。
+> 如果您將 helper 方法加入至測試類別，而不想讓它出現在 [**測試瀏覽器**] 中，請勿將 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute> 屬性加入至方法。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
-- [逐步解說：使用 Test Explorer @ no__t 的測試導向開發-0
+- [逐步解說：使用測試瀏覽器進行測試導向的開發](quick-start-test-driven-development-with-test-explorer.md)

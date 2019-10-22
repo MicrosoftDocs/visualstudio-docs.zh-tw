@@ -2,17 +2,17 @@
 title: 產生方法
 ms.date: 01/26/2018
 ms.topic: reference
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: d815b638033e16796c90a362207b820bfe7cc57d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: c85e3f849d7d74f326c1cf330b0e2c338d78fc6a
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62794812"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72668338"
 ---
 # <a name="generate-a-method-in-visual-studio"></a>在 Visual Studio 中產生方法
 
@@ -26,13 +26,13 @@ ms.locfileid: "62794812"
 
 **時機：** 您引進新的方法，並想要自動正確地宣告它。
 
-**原因：** 您可以在使用方法和參數之前先宣告方法和參數；不過，此功能將可自動產生宣告。
+**原因：** 您可以在使用方法和參數之前先宣告方法和參數，不過，此功能將可自動產生宣告。
 
 ## <a name="how-to"></a>操作說明
 
 1. 將游標放在有紅色曲線的行上。 紅色波浪線表示尚不存在的方法。
 
-   - C#: 
+   - C#:
 
        ![醒目提示的程式碼 C#](media/method-highlight-cs.png)
 
@@ -43,7 +43,7 @@ ms.locfileid: "62794812"
 2. 接著，執行下列其中一項操作：
 
    - **鍵盤**
-      - 在字行任何地方按 **Ctrl**+**.**， 以觸發 [快速動作與重構] 功能表。
+      - 在字行任何地方按 **Ctrl**+ **.** ， 以觸發 [快速動作與重構] 功能表。
    - **滑鼠**
       - 以滑鼠右鍵按一下並選取 [快速動作與重構] 功能表。
       - 將游標暫留在紅色曲線上，然後按一下顯示的 ![錯誤燈泡](media/error-bulb.png) 圖示。
@@ -58,7 +58,7 @@ ms.locfileid: "62794812"
 
    方法隨即建立，而任何參數會從使用方式推斷。
 
-   - C#: 
+   - C#:
 
        ![產生方法結果 C#](media/method-result-cs.png)
 
@@ -66,7 +66,7 @@ ms.locfileid: "62794812"
 
        ![產生方法結果 VB](media/method-result-vb.png)
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [程式碼產生](../code-generation-in-visual-studio.md)
 - [預覽變更](../../ide/preview-changes.md)

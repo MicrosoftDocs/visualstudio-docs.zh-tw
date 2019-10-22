@@ -3,17 +3,17 @@ title: 適用於 Managed 程式碼的安全性規則規則集
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 564aeac6-03fa-41b0-b655-88179f0ab01b
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8498bf704ee1731a12b14fbad12010965f3e66b0
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: bf3a1437c765a4e0e777534d64505ccb69c7ed94
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72448804"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72649099"
 ---
 # <a name="security-rules-rule-set-for-managed-code"></a>適用於 Managed 程式碼的安全性規則規則集
 

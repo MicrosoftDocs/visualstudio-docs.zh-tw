@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 29cb8d4b94b812040e83c4b80a8c7c7a08831219
-ms.sourcegitcommit: 6244689e742e551e7b6933959bd42df56928ece3
+ms.openlocfilehash: 115220a33fda1a8c65beec9b712481604c88e483
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72516366"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72621546"
 ---
 # <a name="step-3-assign-a-random-icon-to-each-label"></a>步驟 3：將隨機圖示指派給每個標籤
 
@@ -88,6 +88,6 @@ ms.locfileid: "72516366"
 
 ## <a name="to-continue-or-review"></a>繼續或檢視
 
-- 若要移至下一個教學課程步驟，請參閱[步驟 4：將 Click 事件處理常式新增至每個標籤](../ide/step-4-add-a-click-event-handler-to-each-label.md)。
+- 若要移至下一個教學課程步驟，請參閱 **[步驟4：將 click 事件處理常式加入至每個標籤](../ide/step-4-add-a-click-event-handler-to-each-label.md)** 。
 
 - 若要返回上一個教學課程步驟，請參閱[步驟 2：新增隨機物件和圖示清單](../ide/step-2-add-a-random-object-and-a-list-of-icons.md)。

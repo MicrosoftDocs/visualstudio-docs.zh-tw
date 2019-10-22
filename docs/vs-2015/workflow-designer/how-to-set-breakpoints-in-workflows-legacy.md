@@ -1,5 +1,5 @@
 ---
-title: HOW TO：在工作流程 （舊版） 中設定中斷點 |Microsoft Docs
+title: 如何：在工作流程中設定中斷點（舊版） |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-workflow-designer
@@ -11,57 +11,56 @@ helpviewer_keywords:
 - workflows, setting breakpoints
 ms.assetid: 78e0be39-3e99-487c-bfef-19db0daf6f42
 caps.latest.revision: 6
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 7cec06813890523e604234ccefdbcd7d1de31653
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 182f28a2b21ae3129ce0d34fae97280ba0a07218
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444179"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72603601"
 ---
 # <a name="how-to-set-breakpoints-in-workflows-legacy"></a>HOW TO：在工作流程中設定中斷點 (舊版)
-本主題描述如何在使用舊版 [!INCLUDE[wf](../includes/wf-md.md)] 建置的 [!INCLUDE[wfd1](../includes/wfd1-md.md)] 應用程式中設定中斷點。 當您的 [!INCLUDE[wfd2](../includes/wfd2-md.md)] 應用程式需要以 [!INCLUDE[wf2](../includes/wf2-md.md)] 或 [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] 為目標時，請使用舊版 [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)]。  
-  
- 當您在 [!INCLUDE[wfd2](../includes/wfd2-md.md)] 中使用舊版 [!INCLUDE[vs2010](../includes/vs2010-md.md)] 來建置 [!INCLUDE[wf2](../includes/wf2-md.md)] 應用程式時，您可以在 C# 和 Visual Basic 程式碼中設定中斷點，就像在 Visual Studio 中一樣。 如預期般，工作流程執行會在您設定的每個中斷點上停止。  
-  
- 中斷點有三種狀態：*暫止*，*繫結*，以及*錯誤*。 設定中斷點時，狀態為「擱置」，由空心的紅色圖示表示。 執行階段已載入工作流程類型時，中斷點會變成「繫結」狀態，由實心的紅色圖示表示。 如果您指定錯誤的中斷點格式，且活動名稱無效，則會顯示錯誤視窗。 中斷點仍會新增至中斷點視窗，但以小的 "x" 記號標示。  
-  
- 在工作流程設計介面中，您可以使用以下方式在活動中設定中斷點：  
-  
-- 以滑鼠右鍵按一下活動，然後選取**中斷點 \ 插入中斷點**。  
-  
-- 選取該活動並按 F9。  
-  
-- 選取 **新增中斷點**從**偵錯**功能表。  
-  
-     當偵錯工具在中斷點處停止時，您也可以使用這個選項來設定偵錯時的新中斷點。  
-  
+本主題描述如何在使用舊版 [!INCLUDE[wf](../includes/wf-md.md)] 建置的 [!INCLUDE[wfd1](../includes/wfd1-md.md)] 應用程式中設定中斷點。 當您的 [!INCLUDE[wfd2](../includes/wfd2-md.md)] 應用程式需要以 [!INCLUDE[wf2](../includes/wf2-md.md)] 或 [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] 為目標時，請使用舊版 [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)]。
+
+ 當您在 [!INCLUDE[wfd2](../includes/wfd2-md.md)] 中使用舊版 [!INCLUDE[vs2010](../includes/vs2010-md.md)] 來建置 [!INCLUDE[wf2](../includes/wf2-md.md)] 應用程式時，您可以在 C# 和 Visual Basic 程式碼中設定中斷點，就像在 Visual Studio 中一樣。 如預期般，工作流程執行會在您設定的每個中斷點上停止。
+
+ 中斷點有三個狀態： [*擱置*]、[系結 *] 和 [* *錯誤*]。 設定中斷點時，狀態為「擱置」，由空心的紅色圖示表示。 執行階段已載入工作流程類型時，中斷點會變成「繫結」狀態，由實心的紅色圖示表示。 如果您指定錯誤的中斷點格式，且活動名稱無效，則會顯示錯誤視窗。 中斷點仍會新增至中斷點視窗，但以小的 "x" 記號標示。
+
+ 在工作流程設計介面中，您可以使用以下方式在活動中設定中斷點：
+
+- 以滑鼠右鍵按一下活動，然後選取 [**中斷點] \ [插入中斷點**]。
+
+- 選取該活動並按 F9。
+
+- 從 [**調試**] 功能表中選取 [**新增中斷點**]。
+
+     當偵錯工具在中斷點處停止時，您也可以使用這個選項來設定偵錯時的新中斷點。
+
     > [!NOTE]
-    > 不支援在已叫用的工作流程上設定中斷點。  
-  
-### <a name="to-set-a-breakpoint-using-the-new-breakpoint-option-on-the-debug-menu"></a>若要使用偵錯功能表上的新增中斷點選項設定中斷點  
-  
-1. 在 **偵錯**功能表上，選取**新中斷點**。  
-  
-2. 按一下 **在函式中斷**。  
-  
-     **新的中斷點**對話方塊隨即開啟。  
-  
-3. 指定的名稱中的活動**函式**文字方塊中，使用下列語法： `QualifiedActivityId[:[FullClassName][:InstanceId]]`。  
-  
+    > 不支援在已叫用的工作流程上設定中斷點。
+
+### <a name="to-set-a-breakpoint-using-the-new-breakpoint-option-on-the-debug-menu"></a>若要使用偵錯功能表上的新增中斷點選項設定中斷點
+
+1. 在 [**調試**] 功能表上，選取 [**新增中斷點**]。
+
+2. 按一下 [在函式**中斷**]。
+
+     [**新增中斷點**] 對話方塊隨即開啟。
+
+3. 使用下列語法，在 [**函數**] 文字方塊中指定活動的名稱： `QualifiedActivityId[:[FullClassName][:InstanceId]]`。
+
     > [!NOTE]
-    > （選擇性） 而非使用中的活動名稱**函式** 文字方塊中，您可以藉由指定的工作流程活動的絕對路徑設定中斷點。 例如，假設您擁有名為工作流程解決方案**WorkflowConsoleApplication1**和名為方案中的工作流程**Workflow1**使用的活動**Delay1**. 您可以使用活動名稱**Delay1** ，或指定為路徑**Delay1:WorkflowConsoleApplication1.Workflow1**或**Delay1:WorkflowConsoleApplication1.Workflow1: {6614886A-608E-412B-BF98-99FF1559DDDF}**。  
-  
-4. 選取 **使用 IntelliSense**核取方塊，以確認函式名稱。  
-  
-     如果未選取這個核取方塊，則不會執行中斷點名稱驗證。  
-  
-5. 選取 **工作流程**從**語言**清單。  
-  
-6. 按一下 [確定] 。  
-  
-## <a name="see-also"></a>另請參閱  
- [偵錯舊版工作流程](../workflow-designer/debugging-legacy-workflows.md)   
- [叫用 Visual Studio Debugger for Windows Workflow Foundation (舊版)](../workflow-designer/invoking-the-visual-studio-debugger-for-windows-workflow-foundation-legacy.md)
+    > （選擇性）您可以指定工作流程活動的絕對路徑來設定中斷點，而不是使用 [函式 **] 文字方塊中的活動**名稱。 例如，假設您有一個名為**workflowconsoleapplication1.workflow1**的工作流程解決方案，以及一個名為**workflow1.xaml**的工作流程，其使用名為**Delay1**的活動。 您可以使用活動名稱**Delay1** ，或將路徑指定為**Delay1： workflowconsoleapplication1.workflow1. workflow1.xaml**或**Delay1： WORKFLOWCONSOLEAPPLICATION1.WORKFLOW1. workflow1.xaml： {6614886A-608E-412B-BF98-99FF1559DDDF}** 。
+
+4. 選取 [**使用 IntelliSense** ] 核取方塊來驗證函式名稱。
+
+     如果未選取這個核取方塊，則不會執行中斷點名稱驗證。
+
+5. 從 [**語言**] 清單中選取 [**工作流程**]。
+
+6. 按一下 [確定]。
+
+## <a name="see-also"></a>請參閱
+ 針對 Windows Workflow Foundation 叫用 Visual Studio 偵錯工具的[舊版工作流程](../workflow-designer/debugging-legacy-workflows.md) [（舊版）](../workflow-designer/invoking-the-visual-studio-debugger-for-windows-workflow-foundation-legacy.md)

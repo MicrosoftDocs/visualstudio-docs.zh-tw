@@ -3,17 +3,17 @@ title: 適用於 Managed 程式碼的 Managed 建議規則規則集
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 1d1160f8-4e51-4e70-99cd-82ad10ee7b32
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7083723c2d7eae889fd5b87fcdba17d53a377423
-ms.sourcegitcommit: 08c144d290da373df841f04fc799e3133540a541
+ms.openlocfilehash: 7c0f34ff01002451eae3c01e61e89a26067d5984
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72535780"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72649251"
 ---
 # <a name="managed-recommended-rules-rule-set-for-managed-code"></a>適用於 Managed 程式碼的 Managed 建議規則規則集
 

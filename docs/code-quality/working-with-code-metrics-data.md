@@ -8,17 +8,17 @@ helpviewer_keywords:
 - code metrics results
 - code metrics results window
 - results window, code metrics
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 126360a5cbc39653405d83362ae150edba401fb8
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: 0824fe608ad1bac86ef904702bd1be907bc9ce7d
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72448688"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72649000"
 ---
 # <a name="use-the-code-metrics-results-window"></a>使用程式碼度量結果視窗
 

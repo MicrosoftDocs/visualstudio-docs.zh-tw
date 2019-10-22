@@ -2,17 +2,17 @@
 title: 自訂程式碼涵蓋範圍分析
 ms.date: 08/21/2019
 ms.topic: conceptual
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-author: gewarren
-ms.openlocfilehash: 517f3f5911df6c7de1f59232a4e836bcdc84c448
-ms.sourcegitcommit: 689ba54ea14257d13031de881f5d4fe937a36f56
+author: jillre
+ms.openlocfilehash: 7392397748d26224a0fba0d5510fccb6655d7642
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "71342367"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72665068"
 ---
 # <a name="customize-code-coverage-analysis"></a>自訂程式碼涵蓋範圍分析
 
@@ -108,11 +108,11 @@ ms.locfileid: "71342367"
 | XML 元素 | 符合專案 |
 | - | - |
 | ModulePath | 符合元件名稱或檔案路徑所指定的元件。 |
-| CompanyName | 符合**Company**屬性的元件。 |
+| 公司名稱 | 符合**Company**屬性的元件。 |
 | 公開金鑰 | 依據公開金鑰標記比對已簽署的元件。 |
-| Source | 依據專案定義所在之來源檔案的路徑名稱比對元素。 |
+| 原始程式檔 | 依據專案定義所在之來源檔案的路徑名稱比對元素。 |
 | 屬性 | 符合具有指定之屬性的元素。 指定屬性的完整名稱，例如 `<Attribute>^System\.Diagnostics\.DebuggerHiddenAttribute$</Attribute>`。<br/><br/>如果您排除 <xref:System.Runtime.CompilerServices.CompilerGeneratedAttribute> 屬性，則會從程式碼涵蓋範圍分析中排除使用語言功能 (例如 `async`、`await`、`yield return`) 和自動實作屬性的程式碼。 若要排除真正產生的程式碼，只要排除 <xref:System.CodeDom.Compiler.GeneratedCodeAttribute> 屬性即可。 |
-| 函數 | 依照完整限定名稱（包括參數清單）來比對程式、函式或方法。 您也可以使用[正則運算式](#regular-expressions)來比對部分的名稱。<br/><br/>例如：<br/><br/>`Fabrikam.Math.LocalMath.SquareRoot(double);` (C#)<br/><br/>`Fabrikam::Math::LocalMath::SquareRoot(double)`(C++) |
+| 功能 | 依照完整限定名稱（包括參數清單）來比對程式、函式或方法。 您也可以使用[正則運算式](#regular-expressions)來比對部分的名稱。<br/><br/>例如：<br/><br/>`Fabrikam.Math.LocalMath.SquareRoot(double);` (C#)<br/><br/>`Fabrikam::Math::LocalMath::SquareRoot(double)` （C++） |
 
 ### <a name="regular-expressions"></a>規則運算式
 
@@ -288,7 +288,7 @@ Included items must then not match any entries in the exclude list to remain inc
 </RunSettings>
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [使用回合設定檔設定單元測試](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md)
 - [使用程式碼涵蓋範圍來決定所測試的程式碼數量](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)

@@ -2,17 +2,17 @@
 title: 在自動程式化 UI 測試中使用 HTML5 控制項
 ms.date: 11/04/2016
 ms.topic: conceptual
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-author: gewarren
-ms.openlocfilehash: c7087f08743e58426663734295339d9ca6550a0d
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+author: jillre
+ms.openlocfilehash: e9118dc94019f40289730be78c28777fb86d89db
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926578"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72659772"
 ---
 # <a name="using-html5-controls-in-coded-ui-tests"></a>在自動程式化 UI 測試中使用 HTML5 控制項
 
@@ -20,7 +20,7 @@ ms.locfileid: "68926578"
 
 [!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
-**需求**
+**Requirements**
 
 - Visual Studio 企業版
 
@@ -32,7 +32,7 @@ ms.locfileid: "68926578"
 
 ## <a name="audio-control"></a>音訊控制項
 
-**音訊控制項：** 正確錄製和播放 HTML5 音訊控制項上的動作。
+**音訊控制項：** 正確記錄和播放 HTML5 Audio 控制項上的動作。
 
 ![HTML5 Audio 控制項](../test/media/codedui_html5_audio.png)
 
@@ -47,15 +47,15 @@ ms.locfileid: "68926578"
 
 請參閱 [HTMLAudioElement](https://developer.mozilla.org/docs/Web/API/HTMLAudioElement)，以取得您可以在其上新增判斷提示的屬性清單。
 
-**搜尋屬性：** `HtmlAudio` 的搜尋屬性為 `Id`、`Name` 和 `Title`。
+**搜尋屬性：** `HtmlAudio` 的搜尋屬性是 `Id`、`Name` 和 `Title`。
 
-**篩選屬性：** `HtmlAudio` 的篩選屬性為 `Src`、`Class`、`ControlDefinition` 和 `TagInstance`。
+**篩選屬性：** `HtmlAudio` 的篩選屬性是 `Src`、`Class`、`ControlDefinition` 和 `TagInstance`。
 
 > [!NOTE]
 > 搜尋和暫停的時間量可以很大。 在播放時，自動程式碼 UI 測試會等到 `(TimeSpan)` 中指定的時間才暫停音訊。 如果因為某些特殊情況，已經過所指定的時間才按下 [暫停] 命令，就會擲回例外狀況。
 
 ## <a name="video-control"></a>視訊控制項
-**視訊控制項：** 正確錄製和播放 HTML5 視訊控制項上的動作。
+**視訊控制項：** 正確記錄和播放 HTML5 Video 控制項上的動作。
 
 ![HTML5 Video 控制項](../test/media/codedui_html5_video.png)
 
@@ -70,9 +70,9 @@ ms.locfileid: "68926578"
 
 請參閱 [HTMLVideoElement](https://developer.mozilla.org/docs/Web/HTML/Element/video)，以取得您可以在其上新增判斷提示的屬性清單。
 
-**搜尋屬性：** `HtmlVideo` 的搜尋屬性為 `Id`、`Name` 和 `Title`。
+**搜尋屬性：** `HtmlVideo` 的搜尋屬性是 `Id`、`Name` 和 `Title`。
 
-**篩選屬性：** `HtmlVideo` 的篩選屬性為 `Src`、`Poster`、`Class`、`ControlDefinition` 和 `TagInstance`。
+**篩選屬性：** `HtmlVideo` 的篩選屬性是 `Src`、`Poster`、`Class`、`ControlDefinition` 和 `TagInstance`。
 
 > [!NOTE]
 > 如果您使用 -30s 或 +30s 標籤倒轉或向前快轉視訊時，會彙總以搜尋至適當的時間。
@@ -82,9 +82,9 @@ ms.locfileid: "68926578"
 
 ![HTML5 ProgressBar 控制項](../test/media/codedui_html5_progressbar.png)
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [HTML 項目](https://developer.mozilla.org/docs/Web/HTML/Element)
 - [使用 UI 自動化來測試您的程式碼](../test/use-ui-automation-to-test-your-code.md)
 - [建立自動程式化 UI 測試](../test/use-ui-automation-to-test-your-code.md)
-- [自動程式碼 UI 測試和動作記錄的支援組態和平台](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
+- [自動程式化 UI 測試和動作記錄的支援組態和平台](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)

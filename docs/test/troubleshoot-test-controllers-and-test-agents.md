@@ -8,15 +8,15 @@ helpviewer_keywords:
 - load tests, test agents
 - troubleshooting, test controllers and agents in load tests
 ms.assetid: 77329348-3a5d-43de-b6cb-90f93296a081
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 3ca2a69fc0f5777c34857f6f3da0c7faabcd81ce
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 716bc28626e6b408fd618a8ed6c623c5118d7782
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62990541"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72659915"
 ---
 # <a name="strategies-for-troubleshooting-test-controllers-and-test-agents-in-load-tests"></a>負載測試中測試控制器和測試代理程式的疑難排解策略
 
@@ -41,7 +41,7 @@ ms.locfileid: "62990541"
 
 1. 停止測試控制器服務。 在命令提示中，鍵入 `net stop vsttcontroller`。
 
-2. 開啟 *QTController.exe.config* 檔案。此檔案位於控制器的安裝目錄中。
+2. 開啟*qtcontroller.exe.config*檔案。此檔案位於控制器安裝目錄中。
 
 3. 在該檔案的系統診斷區段中，編輯 `EqtTraceLevel` 參數的項目。 您的程式碼應該會與以下相似：
 
@@ -86,7 +86,7 @@ ms.locfileid: "62990541"
 
 當您嘗試設定測試代理程式時，可能會接收到下列錯誤：
 
-**錯誤 8110。無法連線到指定的控制器電腦或存取控制器物件。**
+**錯誤8110。無法連接到指定的控制器電腦或存取控制器物件。**
 
 在有超過一張以上網路介面卡的電腦上安裝測試控制器，便可能導致此錯誤。
 
@@ -113,7 +113,7 @@ ms.locfileid: "62990541"
 
 1. 停止測試控制器服務。 在命令提示中，鍵入 `net stop vsttcontroller`。
 
-2. 開啟 *QTController.exe.config* 檔案。這個檔案位於 *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE*。
+2. 開啟*qtcontroller.exe.config*檔案。這個檔案位於 *% ProgramFiles （x86）% \ Microsoft Visual Studio\2017\Enterprise\Common7\IDE*。
 
 3. 將 `BindTo` 屬性的項目加入至應用程式設定。 指定控制器要繫結之網路介面卡的 IP 位址。 您的程式碼應該會與以下相似：
 
@@ -139,6 +139,6 @@ ms.locfileid: "62990541"
 
 這適用於測試控制器、測試代理程式服務和測試代理程式處理序。 在超過一個以上網路介面卡的電腦上所執行的每一個處理序，都必須設定 `BindTo` 屬性。 這三個處理序的 `BindTo` 屬性設定程序都一樣，和前述針對測試控制器所指定的設定程序相同。 若要設定測試代理程式服務與測試代理程式處理序的記錄層次，請使用[在測試控制器電腦上設定記錄層次](#set-the-logging-level-on-a-test-controller-computer)中列出的組態檔。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [測試控制器和測試代理程式](../test/configure-test-agents-and-controllers-for-load-tests.md)

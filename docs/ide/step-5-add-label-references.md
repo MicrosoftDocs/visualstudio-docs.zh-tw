@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4fbe9b0005ce190eda6a88dea2f6b5f80890743c
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
-ms.translationtype: HT
+ms.openlocfilehash: 9a1fe8f4e8003da2db0e8a599c3eca504945f3e4
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72562939"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72647513"
 ---
 # <a name="step-5-add-label-references"></a>步驟 5：加入標籤參考
 程式需要追蹤玩家所選擇的 Label 控制項。 現在，程式會顯示玩家選擇的所有標籤。 但是，我們將要變更該行為。 在選擇第一個標籤之後，程式應該會顯示標籤的圖示。 在選擇第二個標籤之後，程式應該要短暫顯示這兩個圖示，然後再次隱藏這兩個圖示。 您的程式現在將會使用*參考變數*，追蹤第一次和第二次選擇的 Label 控制項。
@@ -44,15 +44,15 @@ ms.locfileid: "72562939"
 
 3. 儲存並執行您的程式。 選擇其中一個 Label 控制項，其圖示就會出現。
 
-4. 選擇一個 Label 控制項，並注意什麼事也沒發生。 程式已經在追蹤玩家所選擇的第一個標籤，因此 `firstClicked` 不等於 Visual Basic 中的 `null` C#或 `Nothing`。 當 `if` 陳述式檢查 `firstClicked` 以判斷它是否等於 `null` 或 `Nothing` 時，若發現不相等，就不會執行 `if` 陳述式中的陳述式。 因此只有選擇的第一個圖示會變成黑色，而其他圖示則看不見，如下列圖片所示。
+4. 選擇一個 Label 控制項，並注意什麼事也沒發生。 程式已經在追蹤玩家所選擇的第一個標籤，因此 `firstClicked` 不等於 Visual Basic 中的 `null` C#或 `Nothing`。 當 `if` 陳述式檢查 `firstClicked` 以判斷它是否等於 `null` 或 `Nothing` 時，若發現不相等，就不會執行 `if` 陳述式中的陳述式。 因此，只有所選的第一個圖示會變成黑色，而其他圖示則看不見，如下圖所示。
 
      ![顯示一個圖示的配對遊戲](../ide/media/express_tut4step5.png)<br/>
-顯示一個圖示的**配對遊戲**
+*顯示一個圖示*的***配對遊戲***
 
      您可以在教學課程的下一個步驟中加入 **Timer** 控制項，以解決此問題。
 
 ## <a name="to-continue-or-review"></a>繼續或檢視
 
-- 若要移到下一個教學課程步驟，請參閱[步驟 6：加入計時器](../ide/step-6-add-a-timer.md)。
+- 若要移至下一個教學課程步驟，請參閱 **[步驟6：新增計時器](../ide/step-6-add-a-timer.md)** 。
 
 - 若要返回前一個教學課程步驟，請參閱[步驟 4：將 Click 事件處理常式加入至每個標籤](../ide/step-4-add-a-click-event-handler-to-each-label.md)。
