@@ -6,15 +6,15 @@ ms.prod: visual-studio-dev14
 ms.topic: conceptual
 ms.assetid: 24ecb76e-b7ad-432d-88ab-d9849963465d
 caps.latest.revision: 15
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: d8cedd5ab26539d5ebe32aee8df272691dd0a779
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e75215d2693b5fe2bf879c4b293ae853b42905e7
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68186305"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72651775"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-2015"></a>如何回報 Visual Studio 2015 的問題
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,7 +59,7 @@ Microsoft 尊重您的隱私權。 如需我們如何處理您所傳送之資料
 
 4. 請稍等幾分鐘，讓 Visual Studio 收集和封裝已錄製的資訊。 收集處理序完成時，對話方塊看起來會像這樣：
 
-     ![錄製追蹤檔](../ide/media/record-a-trace-file.png "錄製追蹤檔")
+     ![記錄追蹤檔](../ide/media/record-a-trace-file.png "記錄追蹤檔")
 
 ## <a name="describe-the-workaround-if-there-is-one"></a>若有因應措施，請加以描述
 

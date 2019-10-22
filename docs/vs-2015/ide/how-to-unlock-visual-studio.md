@@ -7,15 +7,15 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.assetid: ffb580a1-8b5d-48f5-b811-87f8036f50ea
 caps.latest.revision: 12
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 0e1fc8e9bcb6f70a2665303eb6cac353a3f87bd9
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: a71a045661c48fd36733ecd8d2266470667a5c35
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63435090"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72670600"
 ---
 # <a name="how-to-unlock-visual-studio"></a>如何解除鎖定 Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ ms.locfileid: "63435090"
 
 ## <a name="to-unlock-visual-studio-with-a-product-key"></a>使用產品金鑰解除鎖定 Visual Studio
 
-1. 選取 [檔案] > [帳戶設定] 開啟 [帳戶設定] 對話方塊，然後按一下 [使用產品金鑰授權] 連結。
+1. 選取 [檔案] > [帳戶設定]  開啟 [帳戶設定] 對話方塊，然後按一下 [使用產品金鑰授權]  連結。
 
 2. 在提供的空格中輸入產品金鑰。
 
@@ -50,7 +50,7 @@ ms.locfileid: "63435090"
 ### <a name="updating-stale-licenses"></a>更新過時的授權
  您可能會看到下列訊息，顯示您的 Visual Studio 授權即將過時。
 
- ![Visual Studio [使用者資訊] 對話方塊](../ide/media/vs2013-userinfo.png "VS2013_UserInfo")
+ ![Visual Studio [使用者資訊] 對話方塊](../ide/media/vs2013-userinfo.png "|::ref1::|")
 
  這個訊息表示，雖然您的訂閱可能仍然有效，但是基於下列其中一個原因尚未重新整理 Visual Studio 用來保持最新訂閱的授權權杖，而且該權杖已經過時：
 
@@ -72,5 +72,5 @@ ms.locfileid: "63435090"
 
 2. 如果您有與不同帳戶關聯的另一個訂閱，請按一下 [加入帳戶…] 連結，將該帳戶加入 [檔案] > [帳戶設定] 對話方塊左側的 [所有帳戶] 清單中。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
  [登入 Visual Studio](../ide/signing-in-to-visual-studio.md)
