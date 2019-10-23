@@ -3,15 +3,15 @@ title: XAML 設計工具的鍵盤快速鍵
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 40211cc7-294a-4943-85a4-941ad6418dad
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: f104d554a86a49cce05f4e115db30122bcc3af42
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: fededb6127c306c9cecfca5bde479b0b80972212
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72450745"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72650914"
 ---
 # <a name="keyboard-shortcuts-for-xaml-designer"></a>XAML 設計工具的鍵盤快速鍵
 
@@ -34,7 +34,7 @@ XAML 設計工具中的鍵盤快速鍵可將需要點擊多次滑鼠按鈕的動
 |選取所有項目|按 **Ctrl**+**A**|
 |清除選取所有項目|按 **Ctrl**+**Shift**+**A**|
 |顯示或隱藏項目控點|按 **F9** 鍵|
-|選取項目的屬性|選取元素並將焦點放在屬性視窗上時，按**tab**鍵。（使用**Ctrl**+索引標籤，將焦點變更至屬性視窗）。您可以使用方向鍵，從下拉式清單中選取屬性值。|
+|選取項目的屬性|當選取項目且焦點在 [屬性] 視窗上時，按下 **Tab** 鍵 (使用 **Ctrl**+**Tab** 可將焦點變更為 [屬性] 視窗)。您可以使用方向鍵，從下拉式清單中選取屬性值。|
 
 ## <a name="document-outline-window-shortcuts"></a>[文件大綱] 視窗快速鍵
 
@@ -47,6 +47,6 @@ XAML 設計工具中的鍵盤快速鍵可將需要點擊多次滑鼠按鈕的動
 |當焦點在 [文件大綱] 視窗上時鎖定畫板物件|**Ctrl**+**L**|
 |當焦點在 [文件大綱] 視窗上時解除鎖定畫板物件|**Shift**+**Ctrl**+**L**|
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [使用 XAML 設計工具建立 UI](../xaml-tools/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)

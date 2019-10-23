@@ -3,17 +3,17 @@ title: 適用於 Managed 程式碼的基本正確性規則規則集
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 631f0daf-1d42-4c90-a7dc-1a6a9de64c93
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8f48b2d60feb9743529de8ed80b80365ffb815d1
-ms.sourcegitcommit: 08c144d290da373df841f04fc799e3133540a541
+ms.openlocfilehash: 53d17f51a777c4b39cd5ff8e0a444d1aec56583c
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72534595"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72607719"
 ---
 # <a name="basic-correctness-rules-rule-set-for-managed-code"></a>適用於 Managed 程式碼的基本正確性規則規則集
 

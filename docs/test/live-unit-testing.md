@@ -4,16 +4,16 @@ ms.date: 03/07/2017
 ms.topic: conceptual
 helpviewer_keywords:
 - Live Unit Testing
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 646a8680211d7d79ea24a1b5b62d78eb6955b5f7
-ms.sourcegitcommit: 1a3c2ca995fd44fc72741b3a100c6e57f4f8702c
+ms.openlocfilehash: b5974819e9dca064655cf04eec3dd371f09ee15c
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/11/2019
-ms.locfileid: "72262334"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653007"
 ---
 # <a name="how-to-configure-and-use-live-unit-testing"></a>如何設定及使用 Live Unit Testing
 
@@ -177,9 +177,9 @@ Live Unit Testing 適用於下表所列的三種熱門單元測試架構。 此�
 
 您可以使用程式碼編輯器視窗來包含或排除個別的測試方法。 在 [程式碼編輯器] 視窗中，以滑鼠右鍵按一下測試方法的簽章，然後選取下列其中一個選項：
 
-- **即時測試** > **包括 @no__t 3selected 方法 >**
-- **即時測試** > **排除 @no__t 3selected 方法 >**
-- **即時測試** >  會**排除所有但 @no__t 3selected 的方法 >**
+- **即時測試** > **包括 \<selected 方法 >**
+- **即時測試** > **排除 \<selected 方法 >**
+- **即時測試** > **排除所有但 \<selected 的方法 >**
 
 ### <a name="exclude-tests-programmatically"></a>以程式設計方式排除測試
 

@@ -7,19 +7,19 @@ f1_keywords:
 helpviewer_keywords:
 - Data UI customization options
 - Options dialog box, Windows Forms Designer, Data UI Customization
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: ca68a944002d743c6f3d2f89b309b8b77c5dfdb3
-ms.sourcegitcommit: 6b0503ed8d25454d6e39a8e606910b3fa58cf1d2
-ms.translationtype: HT
+ms.openlocfilehash: 9c4eab249b9d847b4004c02f11e3e58cbcead6ac
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "68981684"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72655822"
 ---
 # <a name="options-dialog-box-windows-forms-designer--data-ui-customization"></a>選項對話方塊：[Windows Form 設計工具] > [自訂資料欄位 UI]
 
-此對話方塊會定義有哪些控制項會出現在 [資料來源] 視窗中可供項目使用的控制項清單中。 若要開啟它，請選取 [工具]   > [選項]  ，然後選取 [Windows Form 設計工具]   > [自訂資料欄位 UI]  。
+此對話方塊會定義有哪些控制項會出現在 [資料來源] 視窗中可供項目使用的控制項清單中。 若要開啟它，請選取 [工具] > [選項]，然後選取 [Windows Form 設計工具] > [自訂資料欄位 UI]。
 
 您可以先從 [資料來源] 視窗中的某個項目上選取某個控制項，然後再將它拖曳到 Windows Forms 應用程式中的表單上。 可用的控制項是由項目的資料類型所決定。 每個資料類型都有一份有效相關聯控制項的清單 (如此對話方塊中所定義)，包括預設控制項。 當您從 [資料來源] 視窗將某個項目拖曳至表單上，而未選取控制項時，系統會將所選項目之資料類型的預設控制項加入該表單。
 

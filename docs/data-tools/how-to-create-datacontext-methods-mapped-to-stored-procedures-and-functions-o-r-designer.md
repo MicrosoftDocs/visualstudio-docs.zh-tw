@@ -3,31 +3,31 @@ title: 將 DataCoNtext 方法對應至 sprocs 和函式（O-R 設計工具）
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: e7ca32f1-50b3-48af-ad92-ceafd749296a
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4c3769634bfbeb98fcc31e5c074177d950248292
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 4fa392467024a38dc447e6a5077f855d3464103b
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71252912"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72648362"
 ---
-# <a name="how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-or-designer"></a>HOW TO：建立對應至預存程序和函式的 DataContext 方法 (O/R 設計工具)
+# <a name="how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-or-designer"></a>作法：建立對應至預存程序和函式的 DataContext 方法 (O/R 設計工具)
 
-您可以將預存程式和函式加入至**O/R 設計**工具做為<xref:System.Data.Linq.DataContext>方法。 只要呼叫這個方法並傳入必要參數，就會在資料庫上執行預存程序或函式，並以 <xref:System.Data.Linq.DataContext> 方法的傳回型別傳回資料。 如需<xref:System.Data.Linq.DataContext>方法的詳細資訊，請參閱[DataCoNtext 方法（O/R 設計工具）](../data-tools/datacontext-methods-o-r-designer.md)。
+您可以將預存程式和函式加入至**O/R 設計**工具，做為 <xref:System.Data.Linq.DataContext> 方法。 只要呼叫這個方法並傳入必要參數，就會在資料庫上執行預存程序或函式，並以 <xref:System.Data.Linq.DataContext> 方法的傳回型別傳回資料。 如需 <xref:System.Data.Linq.DataContext> 方法的詳細資訊，請參閱[DataCoNtext 方法（O/R 設計工具）](../data-tools/datacontext-methods-o-r-designer.md)。
 
 > [!NOTE]
-> 您也可以使用預存程式來覆寫[!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)]預設的執行時間行為，以在將變更從實體類別儲存到資料庫時，執行插入、更新和刪除。 如需詳細資訊，請參閱[如何：指派用來執行更新、插入和刪除的預存程序 (O/R 設計工具)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)。
+> 您也可以使用預存程式來覆寫預設的 [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] 執行時間行為，以在將變更從實體類別儲存到資料庫時，執行插入、更新和刪除。 如需詳細資訊，請參閱[如何：指派用來執行更新、插入和刪除的預存程序 (O/R 設計工具)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)。
 
 ## <a name="create-datacontext-methods"></a>建立 DataCoNtext 方法
 
-您可以將<xref:System.Data.Linq.DataContext>預存程式或函數從<strong>伺服器總管或 * * 資料庫總管</strong>拖曳至**O/R 設計**工具來建立方法。
+您可以將預存程式或函數從<strong>伺服器總管或 * * 資料庫總管</strong>拖曳至**O/R 設計**工具，以建立 <xref:System.Data.Linq.DataContext> 方法。
 
 > [!NOTE]
-> 產生<xref:System.Data.Linq.DataContext>之方法的傳回型別會根據您在**O/R 設計**工具上放置預存程式或函數的位置而有所不同。 如果將項目直接置放入現有的實體類別，則建立的 <xref:System.Data.Linq.DataContext> 方法會具有該實體類別的傳回型別。 將專案放到**O/R 設計**工具的空白區域，會<xref:System.Data.Linq.DataContext>建立方法，以傳回自動產生的類型。 您可以在將 <xref:System.Data.Linq.DataContext> 方法新增至 [方法] 窗格後，變更此方法的傳回型別。 若要檢查或變更 <xref:System.Data.Linq.DataContext> 方法的傳回型別，請選取該方法，然後檢查 [屬性] 視窗中的 [傳回型別] 屬性。 如需詳細資訊，請參閱[如何：變更 DataContext 方法的傳回型別 (O/R 設計工具)](../data-tools/how-to-change-the-return-type-of-a-datacontext-method-o-r-designer.md)。
+> 產生之 <xref:System.Data.Linq.DataContext> 方法的傳回型別會根據您在**O/R 設計**工具上放置預存程式或函數的位置而有所不同。 如果將項目直接置放入現有的實體類別，則建立的 <xref:System.Data.Linq.DataContext> 方法會具有該實體類別的傳回型別。 將專案放到**O/R 設計**工具的空白區域，會建立一個會傳回自動產生之類型的 <xref:System.Data.Linq.DataContext> 方法。 您可以在將 <xref:System.Data.Linq.DataContext> 方法新增至 [方法] 窗格後，變更此方法的傳回型別。 若要檢查或變更 <xref:System.Data.Linq.DataContext> 方法的傳回型別，請選取該方法，然後檢查 [屬性] 視窗中的 [傳回型別] 屬性。 如需詳細資訊，請參閱[如何：變更 DataContext 方法的傳回型別 (O/R 設計工具)](../data-tools/how-to-change-the-return-type-of-a-datacontext-method-o-r-designer.md)。
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 
@@ -48,13 +48,13 @@ ms.locfileid: "71252912"
      <xref:System.Data.Linq.DataContext> 方法會以所選取實體類別的傳回型別建立，並出現在 [方法] 窗格中。
 
 > [!NOTE]
-> 如需變更現有<xref:System.Data.Linq.DataContext>方法之傳回類型的相關資訊，請參閱[如何：變更 DataContext 方法的傳回型別 (O/R 設計工具)](../data-tools/how-to-change-the-return-type-of-a-datacontext-method-o-r-designer.md)。
+> 如需變更現有 <xref:System.Data.Linq.DataContext> 方法之傳回類型的詳細資訊，請參閱 [How to：變更 DataContext 方法的傳回型別 (O/R 設計工具)](../data-tools/how-to-change-the-return-type-of-a-datacontext-method-o-r-designer.md)。
 
 ## <a name="see-also"></a>另請參閱
 
 - [Visual Studio 中的 LINQ to SQL 工具](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [DataContext 方法 (O/R 設計工具)](../data-tools/datacontext-methods-o-r-designer.md)
-- [逐步解說：建立 LINQ to SQL 類別](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)
+- [逐步解說：建立 LINQ to SQL 類別 ](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)
 - [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)
 - [Visual Basic 中的 LINQ 簡介](/dotnet/visual-basic/programming-guide/language-features/linq/introduction-to-linq)
 - [C# 中的 LINQ](/dotnet/csharp/linq/linq-in-csharp)

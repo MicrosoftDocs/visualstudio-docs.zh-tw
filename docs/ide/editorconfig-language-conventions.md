@@ -7,18 +7,18 @@ dev_langs:
 - VB
 helpviewer_keywords:
 - language code style rules [EditorConfig]
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: e4f49df2c775bc3bb95888d76da133898ab9c76e
-ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
+ms.openlocfilehash: 38d625b774bc828741e2e4f227a45a293c029235
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71186516"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72652813"
 ---
 # <a name="language-conventions"></a>語言慣例
 
@@ -37,12 +37,12 @@ Visual Studio 中 EditorConfig 的語言慣例分為兩類：適用於 Visual Ba
 
 `option_name = value:severity`
 
-您可以針對每個語言慣例，指定一個定義是否有偏好的樣式和偏好樣式使用時機的值。 許多規則都`true`接受值（偏好使用此樣式）或`false` （不偏好使用此樣式）。 其他規則接受諸如`when_on_single_line`或`never`之類的值。 第二個部分、指定 [[嚴重性]](#severity-levels) 的規則。
+您可以針對每個語言慣例，指定一個定義是否有偏好的樣式和偏好樣式使用時機的值。 許多規則都會接受 `true` （偏好使用此樣式）或 `false` （不偏好此樣式）的值。 其他規則會接受 `when_on_single_line` 或 `never` 之類的值。 第二個部分、指定 [[嚴重性]](#severity-levels) 的規則。
 
 ::: moniker range=">=vs-2019"
 
 > [!NOTE]
-> 因為分析器會強制語言慣例，所以您也可以流量分析器的預設設定語法來設定其嚴重性。 語法採用的格式`dotnet_diagnostic.<rule ID>.severity = <severity>`為`dotnet_diagnostic.IDE0040.severity = silent`，例如。 如需詳細資訊，請參閱[在 EditorConfig 檔案中設定規則嚴重性](../code-quality/use-roslyn-analyzers.md#set-rule-severity-in-an-editorconfig-file)。
+> 因為分析器會強制語言慣例，所以您也可以流量分析器的預設設定語法來設定其嚴重性。 語法會採用 `dotnet_diagnostic.<rule ID>.severity = <severity>` 的格式，例如 `dotnet_diagnostic.IDE0040.severity = silent`。 如需詳細資訊，請參閱[在 EditorConfig 檔案中設定規則嚴重性](../code-quality/use-roslyn-analyzers.md#set-rule-severity-in-an-editorconfig-file)。
 
 ::: moniker-end
 
@@ -55,7 +55,7 @@ Severity | 作用
 `error` | 違反此樣式規則時，顯示編譯器錯誤。
 `warning` | 違反此樣式規則時，顯示編譯器警告。
 `suggestion` | 當違反這個樣式規則時，會向使用者顯示建議。 建議會顯示為前兩個字元下的三個灰點。
-`silent` | 違反這項規則時，不向使用者顯示任何內容。 但程式碼產生功能會以此樣式產生程式碼。 嚴重性為`silent`的規則會參與清除，並出現在 [**快速動作與重構**] 功能表中。
+`silent` | 違反這項規則時，不向使用者顯示任何內容。 但程式碼產生功能會以此樣式產生程式碼。 具有 `silent` 嚴重性的規則會參與清除，並出現在 [**快速動作與重構**] 功能表中。
 `none` | 違反這項規則時，不向使用者顯示任何內容。 但程式碼產生功能會以此樣式產生程式碼。 嚴重性為 `none` 的規則永遠不會出現在 [快速動作及重構] 功能表中。 在大部分情況下，這會視為「已停用」或「已忽略」。
 
 ::: moniker range=">=vs-2019"
@@ -66,7 +66,7 @@ Severity | 作用
 
 若要變更程式碼樣式慣例：
 
-1. 將滑鼠停留在編輯器中的波浪線上，然後開啟顯示的燈泡功能表。 選擇 [**設定] 或 [隱藏問題** > ] [**設定\<規則識別碼 > 程式碼樣式**]。
+1. 將滑鼠停留在編輯器中的波浪線上，然後開啟顯示的燈泡功能表。 選擇 [**設定] 或 [隱藏問題**]  > **設定 \<rule 識別碼 > 程式碼樣式**。
 
    ![從 Visual Studio 中的燈泡功能表設定程式碼樣式](media/vs-2019/configure-code-style.png)
 
@@ -76,7 +76,7 @@ Severity | 作用
 
    Visual Studio 在 EditorConfig 檔案中新增或修改設定，如 [預覽] 方塊所示。
 
-若要變更程式碼樣式違規的嚴重性，請遵循相同的步驟，但選擇 [**設定\<規則識別碼 > 嚴重性**]，而不是 [**設定\<規則識別碼 > 程式碼樣式**]。 如需詳細資訊，請參閱[自動設定規則嚴重性](../code-quality/use-roslyn-analyzers.md#automatically-configure-rule-severity)。
+若要變更程式碼樣式違規的嚴重性，請遵循相同的步驟，但選擇 [**設定 \<rule 識別碼 > 嚴重性**]，而不是 [**設定 \<rule 識別碼] > [程式碼樣式**]。 如需詳細資訊，請參閱[自動設定規則嚴重性](../code-quality/use-roslyn-analyzers.md#automatically-configure-rule-severity)。
 
 ::: moniker-end
 

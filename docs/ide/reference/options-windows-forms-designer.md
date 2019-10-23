@@ -7,19 +7,19 @@ f1_keywords:
 helpviewer_keywords:
 - Windows Forms Designer options
 - Options dialog box, Windows Forms Designer
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 6166c2f0fcdd8c99c459559a699f7b8704aff647
-ms.sourcegitcommit: 6b0503ed8d25454d6e39a8e606910b3fa58cf1d2
-ms.translationtype: HT
+ms.openlocfilehash: 16dfd7aed9e3a3586d32f3a4456451b96d8b9f09
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "68981694"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72655804"
 ---
 # <a name="options-dialog-box-windows-forms-designer"></a>選項對話方塊：Windows Form 設計工具
 
-[Windows Form 設計工具] 選項頁面可讓您在 Visual Studio 中設定 Windows Form 設計工具的格線和其他功能的喜好設定。 從 [工具]  功能表，開啟 [選項]  對話方塊。
+[Windows Form 設計工具] 選項頁面可讓您在 Visual Studio 中設定 Windows Form 設計工具的格線和其他功能的喜好設定。 從 [工具] 功能表，開啟 [選項] 對話方塊。
 
 ## <a name="code-generation-settings"></a>程式碼產生設定
 

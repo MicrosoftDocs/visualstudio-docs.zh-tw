@@ -1,5 +1,5 @@
 ---
-title: HOW TO：偵錯最佳化程式碼 |Microsoft Docs
+title: 作法：偵錯工具優化程式碼 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -21,14 +21,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9b498bdb491e3a15dddf005d43435d84b837fcd0
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 590925a894f1bf9bfe70d9dd1bf6142fcb6a2e34
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63387751"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72430672"
 ---
-# <a name="how-to-debug-optimized-code"></a>HOW TO：對最佳化程式碼進行偵錯
+# <a name="how-to-debug-optimized-code"></a>作法：對最佳化程式碼進行偵錯
 
 > [!NOTE]
 > 根據您目前使用的設定或版本，您所看到的對話方塊與功能表命令可能會與 [說明] 中描述的不同。 若要變更設定，請從 [工具] 功能表中選擇 [匯入和匯出設定]。 如需詳細資訊，請參閱[重設設定](../ide/environment-settings.md#reset-settings)。
@@ -52,7 +52,7 @@ ms.locfileid: "63387751"
 
   全域變數和靜態變數一定會正確顯示， 結構配置也會。 如果您有結構的指標，而且指標的值是正確的，則結構的每個成員變數都會顯示正確的值。
 
-  由於這些限制，您應該盡可能地使用程式的非最佳化版本來進行偵錯。 根據預設，在 Visual C++ 程式的 [偵錯] 組態中會關閉最佳化，而在 [發行] 組態中會啟用最佳化。
+  由於這些限制，您應該盡可能地使用程式的非最佳化版本來進行偵錯。 根據預設，會在C++程式的 Debug 設定中關閉優化，並在發行設定中開啟。
 
   然而，有時錯誤可能只出現在程式的最佳化版本中。 在這種情況下，您必須偵錯最佳化程式碼。
 
@@ -74,7 +74,7 @@ ms.locfileid: "63387751"
 
 8. 如果您選擇 `Custom` 的 `Optimization` 選項，現在就可以為其他顯示在屬性清單裡的任一屬性設定其選項。
 
-9. 選取 [組態屬性 | C /C++、 命令列] 節點的 [專案屬性] 頁面中，並新增`(` [/Zo](/cpp/build/reference/zo-enhance-optimized-debugging) `)`到**其他選項**文字方塊。
+9. 選取 [專案屬性] 頁面的C++[設定屬性]、[C/] [命令列] 節點，然後將 `(`[/Zo](/cpp/build/reference/zo-enhance-optimized-debugging) `)` 新增至 [**其他選項**] 文字方塊。
 
     > [!WARNING]
     > `/Zo` 需要 Visual Studio 2013 Update 3 或更新版本。

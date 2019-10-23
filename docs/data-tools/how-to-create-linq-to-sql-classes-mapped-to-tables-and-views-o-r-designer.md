@@ -3,30 +3,30 @@ title: 將 LINQ to SQL 類別對應至資料表/視圖（O-R 設計工具）
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 0fb78bbc-7a78-4ab4-b32f-85ece912e660
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 2b34212ddad2bc5d69778f973d5975655431a829
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 7a06d162a9f439690753f23f74ab9923c3201716
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71253004"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72641956"
 ---
 # <a name="how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-or-designer"></a>作法：建立對應至資料表和檢視的 LINQ to SQL 類別 (O/R 設計工具)
 
-[!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)]對應至資料庫資料表和 views 的類別稱為「*實體類別*」。 實體類別會對應至記錄，而實體類別的個別屬性會對應至組成記錄的個別資料行。 藉由將資料表或視圖從**伺服器總管**或**資料庫總管**拖曳至[Visual Studio 中的 LINQ to SQL 工具](../data-tools/linq-to-sql-tools-in-visual-studio2.md)，建立以資料庫資料表或 views 為基礎的實體類別。 **O/R 設計**工具會產生類別，並套用特定[!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)]屬性來啟用[!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)]功能（的<xref:System.Data.Linq.DataContext>資料通訊和編輯功能）。 如需[!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)]類別的詳細資訊，請參閱[LINQ to SQL 物件模型](/dotnet/framework/data/adonet/sql/linq/the-linq-to-sql-object-model)。
+對應至資料庫資料表和 views 的 [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] 類別稱為「*實體類別*」（entity class）。 實體類別會對應至記錄，而實體類別的個別屬性會對應至組成記錄的個別資料行。 藉由將資料表或視圖從**伺服器總管**或**資料庫總管**拖曳至[Visual Studio 中的 LINQ to SQL 工具](../data-tools/linq-to-sql-tools-in-visual-studio2.md)，建立以資料庫資料表或 views 為基礎的實體類別。 **O/R 設計**工具會產生類別，並套用特定的 [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] 屬性，以啟用 [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] 功能（<xref:System.Data.Linq.DataContext> 的資料通訊和編輯功能）。 如需 [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] 類別的詳細資訊，請參閱[LINQ to SQL 物件模型](/dotnet/framework/data/adonet/sql/linq/the-linq-to-sql-object-model)。
 
 > [!NOTE]
 > **O/R 設計**工具是一個簡單的物件關聯式對應程式，因為它只支援1:1 對應關聯性。 換句話說，實體類別與資料庫資料表或檢視之間只可以有一對一對應關聯性。 目前不支援複雜對應 (例如，將實體類別對應至多個資料表)。 不過，您可以將一個實體類別對應至一個將多個相關資料表聯結 (Join) 在一起的檢視。
 
 ## <a name="create-linq-to-sql-classes-that-are-mapped-to-database-tables-or-views"></a>建立對應至資料庫資料表或檢視的 LINQ to SQL 類別
 
-將資料表或視圖從**伺服器總管**或**資料庫總管**拖曳至**O/R 設計**工具，除了用來執行更新<xref:System.Data.Linq.DataContext>的方法之外，還會建立實體類別。
+將資料表或視圖從**伺服器總管**或**資料庫總管**拖曳至**O/R 設計**工具，除了用來執行更新的 <xref:System.Data.Linq.DataContext> 方法之外，還會建立實體類別。
 
-[!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] 執行階段預設會建立邏輯，以將可更新之實體類別中的變更儲存回資料庫。 這個邏輯是根據資料表的結構描述 (資料行定義和主索引鍵資訊)。 如果您不想要此行為，您可以將實體類別設定為使用預存程式來執行插入、更新和刪除，而不是使用[!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)]預設的執行時間行為。 如需詳細資訊，請參閱[如何：指派用來執行更新、插入和刪除的預存程序 (O/R 設計工具)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)。
+[!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] 執行階段預設會建立邏輯，以將可更新之實體類別中的變更儲存回資料庫。 這個邏輯是根據資料表的結構描述 (資料行定義和主索引鍵資訊)。 如果您不想要此行為，可以將實體類別設定為使用預存程式來執行插入、更新和刪除，而不是使用預設 [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] 執行時間行為。 如需詳細資訊，請參閱[如何：指派用來執行更新、插入和刪除的預存程序 (O/R 設計工具)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)。
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 
@@ -64,7 +64,7 @@ ms.locfileid: "71253004"
 ## <a name="see-also"></a>另請參閱
 
 - [Visual Studio 中的 LINQ to SQL 工具](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
-- [逐步解說：建立 LINQ to SQL 類別（O-R 設計工具）](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)
+- [逐步解說：建立 LINQ to SQL 類別（O-R 設計工具） ](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)
 - [DataContext 方法 (O/R 設計工具)](../data-tools/datacontext-methods-o-r-designer.md)
 - [如何：建立對應至預存程序和函式的 DataContext 方法 (O/R 設計工具)](../data-tools/how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-o-r-designer.md)
 - [LINQ to SQL 物件模型](/dotnet/framework/data/adonet/sql/linq/the-linq-to-sql-object-model)

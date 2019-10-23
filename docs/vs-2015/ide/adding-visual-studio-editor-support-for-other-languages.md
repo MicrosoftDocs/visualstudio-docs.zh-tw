@@ -12,15 +12,15 @@ helpviewer_keywords:
 - language support
 ms.assetid: d78c43ee-4ef2-42e5-984e-d137de4e7e92
 caps.latest.revision: 20
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 366ec5de66c3070e30d7d4f98662732a7892437b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7138784201a1ac036047e1c8df362727fa393b51
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68148236"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72620779"
 ---
 # <a name="adding-visual-studio-editor-support-for-other-languages"></a>新增其他語言的 Visual Studio 編輯器支援
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ ms.locfileid: "68148236"
 ## <a name="syntax-colorization-statement-completion-and-navigate-to-support"></a>語法顏色標示、陳述式完成和「巡覽至」支援
  Visual Studio 編輯器中的語法顏色標示、陳述式完成和「巡覽至」等功能，可協助您更輕鬆地閱讀、建立和編輯您的程式碼。 下列螢幕擷取畫面顯示在 Visual Studio 中編輯 Perl 指令碼的範例。 語法會自動以色彩標示。 比方說，程式碼中的註解會標示為綠色、程式碼為黑色、路徑為是紅色，陳述式則為藍色。 Visual Studio 編輯器會自動將語法顏色標示套用至任何支援的語言。 此外，當您開始輸入已知的語言關鍵字或物件時，陳述式完成就會顯示可能陳述式和物件的清單。 陳述式完成可協助您更快速且輕鬆地建立程式碼。
 
- ![Perl 指令碼中的語法顏色標示](../ide/media/vside-perledit.png "VSIDE_PerlEdit")
+ ![Perl 腳本中的語法顏色標示](../ide/media/vside-perledit.png "VSIDE_PerlEdit")
 
  Visual Studio 目前使用 [TextMate 文法](https://manual.macromates.com/en/language_grammars)，提供下列語言版本之語法顏色標示和基本陳述式完成的支援。 不過，如果您偏好的語言不在資料表中，不用擔心 - 您可以新增它。
 
@@ -74,13 +74,13 @@ ms.locfileid: "68148236"
 
 |資料夾名稱|描述|
 |-----------------|-----------------|
-|\\\<語言名稱> |語言資料夾。 將 \<語言名稱>  取代為語言的名稱。 例如 **\Matlab**。|
+|\\\<語言名稱>|語言資料夾。 將 \<語言名稱> 取代為語言的名稱。 例如 **\Matlab**。|
 |\Syntaxes|文法資料夾。 包含語言的文法 .json 檔案，例如 **Matlab.json**。|
 |\Snippets|程式碼片段資料夾。 包含語言的程式碼片段。|
 
- 在 Windows 中，%userprofile% 會解析為路徑︰ c:\Users\\\<使用者名稱>  。 如果您的系統上的 extensions 資料夾不存在，您必須建立它。 如果資料夾已存在，它會隱藏。
+ 在 Windows 中，%userprofile% 會解析為路徑︰ c:\Users\\\<使用者名稱>。 如果您的系統上的 extensions 資料夾不存在，您必須建立它。 如果資料夾已存在，它會隱藏。
 
- 如需有關如何建立 TextMate 文法的詳細資訊，請參閱[TextMate – 語言文法簡介：How to add source code syntax highlighting embedded in HTML](https://developmentality.wordpress.com/2011/02/08/textmate-introduction-to-language-grammars/) (TextMate - 語言文法簡介︰如何新增內嵌於 HTML 的原始程式碼語法醒目提示) 和 [Notes on how to create a Language Grammar and Custom Theme for a Textmate Bundle](https://benparizek.com/notebook/notes-on-how-to-create-a-language-grammar-and-custom-theme-for-a-textmate-bundle) (如何為 Textmate 組合建立語言文法及自訂佈景主題的附註)。
+ 如需如何建立 TextMate 文法的詳細資訊，請參閱 [TextMate –語言文法簡介：How to add source code syntax highlighting embedded in HTML](https://developmentality.wordpress.com/2011/02/08/textmate-introduction-to-language-grammars/) (TextMate - 語言文法簡介︰如何新增內嵌於 HTML 的原始程式碼語法醒目提示) 和 [Notes on how to create a Language Grammar and Custom Theme for a Textmate Bundle](https://benparizek.com/notebook/notes-on-how-to-create-a-language-grammar-and-custom-theme-for-a-textmate-bundle) (如何為 Textmate 組合建立語言文法及自訂佈景主題的附註)。
 
 ## <a name="see-also"></a>另請參閱
- [Visual Studio 2013 巡覽至增強功能](https://blogs.msdn.microsoft.com/mvpawardprogram/2013/10/22/visual-studio-2013-navigate-to-improvements/)[逐步解說：建立程式碼片段](../ide/walkthrough-creating-a-code-snippet.md)[逐步解說：顯示陳述式完成](../extensibility/walkthrough-displaying-statement-completion.md)
+ [Visual Studio 2013 流覽至 [Walkthrough 的改良功能](https://blogs.msdn.microsoft.com/mvpawardprogram/2013/10/22/visual-studio-2013-navigate-to-improvements/)：建立 ](../ide/walkthrough-creating-a-code-snippet.md) [Walkthrough 的程式碼片段：顯示陳述式完成](../extensibility/walkthrough-displaying-statement-completion.md)
