@@ -61,4 +61,4 @@ ms.locfileid: "72645658"
  全文檢索搜尋期間會自動忽略常出現的文字或數字，這些有時稱為停用字詞。 例如，如果您搜尋片語 "pass through"，搜尋結果會顯示包含單字 "pass" 但不包含 "through" 的主題。
 
 ## <a name="see-also"></a>另請參閱
- [](../ide/locate-information.md) [在搜尋運算式中尋找資訊邏輯運算子](../ide/logical-operators-in-search-expressions.md)
+ [在搜尋運算式中尋找 ](../ide/locate-information.md) [Logical 運算子的資訊](../ide/logical-operators-in-search-expressions.md)
