@@ -1,23 +1,23 @@
 ---
-title: 工作流程設計工具-Flowchart 活動設計工具
+title: 工作流程設計工具-流程圖活動設計工具
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 8b7b4aa6-d27d-45c8-87c2-641440d38afc
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f3b816c0e486eeaad49bac0b0054d7d3c2bff9b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c7426ea21e1928eb46a2b733df7eb24c9de6e147
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62949639"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72650444"
 ---
 # <a name="flowchart-activity-designers"></a>Flowchart 活動設計工具
 
-工作流程設計工具包含數個系統提供建構工作流程時，您可以使用的活動。 本節包含用來管理工作流程中之流程圖的系統提供活動。 下列主題說明會這些活動，並且提供如何使用的指引。
+工作流程設計工具組含一些系統提供的活動，可供您在建立工作流程時使用。 本節包含用來管理工作流程中之流程圖的系統提供活動。 下列主題說明會這些活動，並且提供如何使用的指引。
 
 ## <a name="reference"></a>參考資料
  <xref:System.Activities.Activity>

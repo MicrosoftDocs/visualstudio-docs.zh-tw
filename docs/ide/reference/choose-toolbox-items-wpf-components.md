@@ -7,33 +7,33 @@ f1_keywords:
 helpviewer_keywords:
 - WPF Components tab, Choose Toolbox Items dialog box
 - Choose Toolbox Items dialog box, WPF Components tab
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ac9e9c7bbafcf54e7bd31bde20469310c2ad3f81
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
-ms.translationtype: HT
+ms.openlocfilehash: 9c3de8e1d83a5d74f518eda2d5ab59bd9845b45a
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68869765"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72630871"
 ---
 # <a name="choose-toolbox-items-wpf-components"></a>選擇工具箱項目、WPF 元件
 
-[選擇工具箱項目]  對話方塊的這個索引標籤會顯示您的本機電腦上可用的 Windows Presentation Foundation (WPF) 控制項清單。 若要顯示這份清單，請從 [工具]  功能表，選取 [選擇工具箱項目]  以顯示 [選擇工具箱項目]  對話方塊，然後選取其 [WPF 元件]  索引標籤。若要排序上列元件，請選取任一資料行標題。
+[選擇工具箱項目] 對話方塊的這個索引標籤會顯示您的本機電腦上可用的 Windows Presentation Foundation (WPF) 控制項清單。 若要顯示這份清單，請從 [工具] 功能表，選取 [選擇工具箱項目] 以顯示 [選擇工具箱項目] 對話方塊，然後選取其 [WPF 元件] 索引標籤。若要排序上列元件，請選取任一資料行標題。
 
-- 如果選取了某個元件旁的核取方塊，[工具箱]  中會顯示該元件的圖示。
+- 如果選取了某個元件旁的核取方塊，[工具箱] 中會顯示該元件的圖示。
 
     > [!TIP]
     > 若要將 WPF 控制項新增至開啟供編輯的專案文件，請將其**工具箱**圖示拖曳至 [設計檢視] 介面上。 該元件的預設標記和程式碼已插入您的專案，您可以隨時進行修改。 如需詳細資訊，請參閱[工具箱](../../ide/reference/toolbox.md)。
 
-- 如果清除了某個元件旁的核取方塊，則會從 [工具箱]  移除對應的圖示。
+- 如果清除了某個元件旁的核取方塊，則會從 [工具箱] 移除對應的圖示。
 
     > [!NOTE]
-    > 安裝在您電腦上的 .NET 元件會保持可供使用，無論其圖示是否顯示在 [工具箱]  中。
+    > 安裝在您電腦上的 .NET 元件會保持可供使用，無論其圖示是否顯示在 [工具箱] 中。
 
-[WPF 元件]  索引標籤中的欄位包含下列資訊：
+[WPF 元件] 索引標籤中的欄位包含下列資訊：
 
 **名稱**
 
@@ -63,7 +63,7 @@ ms.locfileid: "68869765"
 
 **瀏覽**
 
-開啟 [開啟舊檔]  對話方塊，該對話方塊可讓您巡覽至包含 WPF 控制項的組件。 請使用此選項載入不在全域組件快取中的組件。
+開啟 [開啟舊檔] 對話方塊，該對話方塊可讓您巡覽至包含 WPF 控制項的組件。 請使用此選項載入不在全域組件快取中的組件。
 
 **Language**
 

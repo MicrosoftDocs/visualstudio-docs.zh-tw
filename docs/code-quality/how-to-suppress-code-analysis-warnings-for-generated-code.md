@@ -3,19 +3,19 @@ title: 隱藏所產生程式碼的程式碼分析違規
 ms.date: 05/13/2019
 ms.topic: conceptual
 ms.assetid: 3a96434e-d419-43a7-81ba-95cccac835b8
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 54b33eb92cec82a5a0327bac92f2a8909519784d
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: 39daa50254f2d1b69514d4065e582154e9ceb6b5
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72448895"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72649397"
 ---
-# <a name="how-to-suppress-code-analysis-warnings-for-generated-code"></a>如何：隱藏所產生程式碼的程式碼分析警告
+# <a name="how-to-suppress-code-analysis-warnings-for-generated-code"></a>作法：隱藏所產生之程式碼的程式碼分析警告
 
 產生的程式碼包含由 managed 程式碼編譯器或協力廠商工具加入至專案的程式碼。 您可能想要查看程式碼分析在產生的程式碼中探索到的規則違規。 不過，由於您無法查看及維護包含違規的程式碼，因此您可能不會想要查看它們。
 

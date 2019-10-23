@@ -7,21 +7,21 @@ f1_keywords:
 - System.Activities.Statements.FlowStep.UI
 - System.Activities.Core.Presentation.FlowStart.UI
 ms.assetid: d5af2276-5215-4138-880a-cf2b90bbf3a0
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ad02dea2dcab30d65aaefecc5a5e54804c9baaff
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5f56c7eac56572d8a3be1f8b478feb0543390481
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62949652"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72650462"
 ---
 # <a name="flowchart-activity-designer"></a>Flowchart 活動設計工具
 
-<xref:System.Activities.Statements.Flowchart> 活動會用來建立工作流程，這些工作流程可定義及管理複雜的流程控制。 A<xref:System.Activities.Statements.Flowchart>可以撰寫程式碼中或使用工作流程設計工具。 本主題將說明的工作流程設計工具體驗。 工作流程設計工具工作流程活動設計工具可讓開發人員撰寫工作流程，以自然的方式。
+<xref:System.Activities.Statements.Flowchart> 活動會用來建立工作流程，這些工作流程可定義及管理複雜的流程控制。 @No__t_0 可以透過程式碼或使用工作流程設計工具來撰寫。 本主題記載工作流程設計工具體驗。 工作流程設計工具工作流程活動設計工具可讓開發人員以自然的方式撰寫工作流程。
 
 ## <a name="the-flowchart-activity"></a>Flowchart 活動
 
@@ -29,11 +29,11 @@ ms.locfileid: "62949652"
 
 ### <a name="using-the-flowchart-activity-designer"></a>使用 Flowchart 活動設計工具
 
-**流程圖**活動設計工具位於**流程圖**類別**工具箱**，即可存取的哪一個**工具箱**工作流程設計工具 索引標籤。 或者，選取**工具箱**從**檢視**功能表，或是按下**Ctrl**+**Alt** + **X**。
+**Flowchart**  活動設計工具位於 **工具箱** 的 **流程圖** 類別中，若要存取，請按一下 工作流程設計工具上的 **工具箱** 索引標籤。 或者，從  **View**  功能表中選取 **工具箱**，或按**Ctrl** +**Alt** +**X**。
 
-**流程圖**活動設計工具可以從拖曳**工具箱**並放到工作流程設計工具介面，只要活動設計工具通常用來放置，做為根活動或做為另一個控制流程活動的子系。 如果**流程圖**拖曳至空白的工作流程設計工具介面上卸除活動設計工具，它會建立<xref:System.Activities.Statements.Flowchart>活動，這預設會初始化執行 [啟動] 節點的展開檢視以綠色球形代表。 如果**流程圖**活動設計工具拖放至另一個控制流程活動，它會將本身的最小化的檢視，可按兩下進行擴充以呈現**流程圖**活動設計工具。 中的任何活動**工具箱**可以直接拖曳**流程圖**活動設計工具，包括其他控制流程活動。
+[ **Flowchart** ] 活動設計工具可以從 [**工具箱**] 拖曳出來，放到工作流程設計工具介面上，通常用來放置活動設計工具的任一處，以做為根活動或做為另一個控制流程活動的子系。 如果將 [ **Flowchart** ] 活動設計工具放到空白的工作流程設計工具介面上，它會建立 <xref:System.Activities.Statements.Flowchart> 活動，其預設會在展開的視圖中顯示，其中起始執行的開始節點會表示為綠色球。 如果將 [ **Flowchart** ] 活動設計工具拖放到另一個 [控制流程] 活動中，它會在最小化的視圖中呈現其本身，只要按兩下 [ **Flowchart** ] 活動設計工具即可展開。 [工具箱] 中的任何活動都可以直接拖曳到 [ **Flowchart** ] 活動設計**工具**上，包括其他控制流程活動。
 
-各種不同的活動設計工具拖曳到工作流程設計工具畫布後,<xref:System.Activities.Activity>它們所代表的物件可以連結在一起，以指定的執行順序。 若要建立來源活動與目的地活動之間的連結，請將滑鼠游標移至來源活動的設計工具上，設計工具的每一邊就會出現方形控點。 按一下方形控點，按住滑鼠按鈕，拖曳到目的地活動周圍的其中一個控點，亦即將滑鼠游標移至目的地活動上時同樣會出現的幾個控點之一。 放開滑鼠按鈕，這兩個活動之間就會建立連結，此連結會以箭號表示，從來源設計工具指向目的地設計工具。
+將各種活動設計工具拖曳至工作流程設計工具畫布上之後，它們所代表的 <xref:System.Activities.Activity> 物件可以連結在一起，以指定執行的順序。 若要建立來源活動與目的地活動之間的連結，請將滑鼠游標移至來源活動的設計工具上，設計工具的每一邊就會出現方形控點。 按一下方形控點，按住滑鼠按鈕，拖曳到目的地活動周圍的其中一個控點，亦即將滑鼠游標移至目的地活動上時同樣會出現的幾個控點之一。 放開滑鼠按鈕，這兩個活動之間就會建立連結，此連結會以箭號表示，從來源設計工具指向目的地設計工具。
 
 ### <a name="flowchart-activity-properties"></a>Flowchart 活動屬性
 
@@ -41,10 +41,10 @@ ms.locfileid: "62949652"
 
 |屬性名稱|必要|使用量|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|False|指定活動設計工具在標頭中的顯示名稱。 預設值為 Flowchart。 值可以在中編輯**屬性**視窗或直接在活動設計工具標頭。<br /><br /> 雖然 <xref:System.Activities.Activity.DisplayName%2A> 並非絕對必要，但建議您盡量使用。|
-|<xref:System.Activities.Statements.Flowchart.Variables%2A>|False|設定至這個 <xref:System.Activities.Statements.Flowchart> 的範圍內，使其子活動都有共同狀態之變數的集合。|
-|<xref:System.Activities.Statements.Flowchart.StartNode%2A>|False|在 <xref:System.Activities.Statements.FlowNode> 開始時執行的 <xref:System.Activities.Statements.Flowchart>。|
-|<xref:System.Activities.Statements.Flowchart.Nodes%2A>|False|包含 <xref:System.Activities.Statements.FlowNode> 中 <xref:System.Activities.Statements.Flowchart> 物件的集合。|
+|<xref:System.Activities.Activity.DisplayName%2A>|偽|指定活動設計工具在標頭中的顯示名稱。 預設值為 Flowchart。 此值可以在 [**屬性**] 視窗中編輯，或直接在活動設計工具標頭上編輯。<br /><br /> 雖然 <xref:System.Activities.Activity.DisplayName%2A> 並非絕對必要，但建議您盡量使用。|
+|<xref:System.Activities.Statements.Flowchart.Variables%2A>|偽|設定至這個 <xref:System.Activities.Statements.Flowchart> 的範圍內，使其子活動都有共同狀態之變數的集合。|
+|<xref:System.Activities.Statements.Flowchart.StartNode%2A>|偽|在 <xref:System.Activities.Statements.FlowNode> 開始時執行的 <xref:System.Activities.Statements.Flowchart>。|
+|<xref:System.Activities.Statements.Flowchart.Nodes%2A>|偽|包含 <xref:System.Activities.Statements.FlowNode> 中 <xref:System.Activities.Statements.Flowchart> 物件的集合。|
 
 ## <a name="see-also"></a>另請參閱
 

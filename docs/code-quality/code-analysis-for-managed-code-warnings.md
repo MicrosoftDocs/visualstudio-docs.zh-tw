@@ -10,17 +10,17 @@ helpviewer_keywords:
 - managed code analysis warnings
 - code analysis,managed code
 ms.assetid: 3c2741ff-0d3a-42e6-acd5-d42310bd03c4
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 410683e907544fa17ca6c73c53f9eca9a85d752b
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 8fbc5bbb596cc7b790ea456b22a24b582e1b609a
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71238047"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72622456"
 ---
 # <a name="code-analysis-for-managed-code-warnings"></a>Managed 程式碼的程式碼分析警告
 Managed 程式碼分析工具會提供警告，指出 Managed 程式碼程式庫中的規則違規。 警告會組織成規則區域，例如設計、當地語系化、效能與安全性。 每一項警告皆表示 Managed 程式碼分析規則的違規。 本節針對每個 Managed 程式碼分析警告，提供深入的討論與範例。
@@ -29,7 +29,7 @@ Managed 程式碼分析工具會提供警告，指出 Managed 程式碼程式庫
 
 |項目|描述|
 |----------|-----------------|
-|類型|規則的 TypeName。|
+|Type|規則的 TypeName。|
 |CheckId|規則的唯一識別碼。 Checkid 與 Category 是用於原始程式檔內的警告隱藏。|
 |分類|警告的分類。|
 |重大變更|此規則的違規修正是否為中斷變更。 中斷變更表示組件在造成違規的目標上具相依性，且該組件不會使用新的固定版本進行重新編譯，或可能由於此項變更而在執行階段失敗。 當有多個修正程式可用，而且至少有一個修正是中斷性變更，而其中一個修正程式不是時，就會同時指定「中斷」和「非中斷」。|

@@ -1,49 +1,49 @@
 ---
-title: 請參閱之間的相依性C++原始程式檔和標頭檔
+title: 請參閱原始C++檔與標頭檔之間的相依性
 ms.date: 05/16/2018
 ms.topic: conceptual
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3904ff08496257d18589e36e5878f49404bbdf7c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bbba97f47c3ac0686bad15c3a1882e1e9bd85057
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62422163"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72654188"
 ---
-# <a name="code-maps-for-c-projects"></a>Code map 的C++專案
+# <a name="code-maps-for-c-projects"></a>專案的C++ Code map
 
-如果要為 C++ 專案建立更完整的對應，請在這些專案上設定瀏覽資訊編譯器選項 (**/FR**)。 否則會出現訊息並提示您設定此選項。 如果選取 [確定] ，則只會為目前的對應設定這個選項。 您可以選擇隱藏所有之後對應的訊息。
+如果要為 C++ 專案建立更完整的對應，請在這些專案上設定瀏覽資訊編譯器選項 ( **/FR**)。 否則會出現訊息並提示您設定此選項。 如果選取 [確定]，則只會為目前的對應設定這個選項。 您可以選擇隱藏所有之後對應的訊息。
 
-當您開啟包含 Visual C++ 專案的方案時，更新 IntelliSense 資料庫可能需要一些時間。 在此期間，您可能無法建立標頭的 code map (*.h*或`#include`) 檔案，直到 IntelliSense 資料庫完成更新。 您可以在 Visual Studio 狀態列中監視更新進度。
+當您開啟包含 Visual C++ 專案的方案時，更新 IntelliSense 資料庫可能需要一些時間。 在這段期間，您可能無法建立標頭（ *.h*或 `#include`）檔案的 code map，直到 IntelliSense 資料庫完成更新為止。 您可以在 Visual Studio 狀態列中監視更新進度。
 
-- 若要查看所有的原始程式檔和您方案中的標頭檔之間的相依性，請選取**架構** > **產生 Include 檔圖形**。
+- 若要查看方案中所有原始程式檔與標頭檔之間的相依性，請選取 [**架構** > **產生 Include 檔案的圖形]** 。
 
    ![機器碼相依性圖形](../modeling/media/dependencygraphgeneral_nativecode.png)
 
-- 若要查看目前開啟的檔案與相關原始程式檔和標頭檔之間的相依性，請開啟原始程式檔或標頭檔。 在檔案內的任意處開啟檔案捷徑功能表。 選擇 [產生 Include 檔圖形] 。
+- 若要查看目前開啟的檔案與相關原始程式檔和標頭檔之間的相依性，請開啟原始程式檔或標頭檔。 在檔案內的任意處開啟檔案捷徑功能表。 選擇 [產生 Include 檔圖形]。
 
    ![.h 檔案的第一層相依性圖形](../modeling/media/dependencygraph_native_firstlevel.png)
 
-## <a name="troubleshoot-code-maps-for-c-and-c-code"></a>程式碼對應疑難排解適用於 C 和C++程式碼
+## <a name="troubleshoot-code-maps-for-c-and-c-code"></a>針對 C 和C++程式碼的 code map 進行疑難排解
 
 C 和 C++ 程式碼不支援下列項目：
 
 - 基底類型不會出現在包含父代階層架構的對應中。
 
-- 大部分的 [顯示]  功能表項目無法供 C 和 C++ 程式碼使用。
+- 大部分的 [顯示] 功能表項目無法供 C 和 C++ 程式碼使用。
 
-當您建立適用於 C 的 code map 時，可能會發生這些問題和C++程式碼：
+當您建立 C 和C++程式碼的 code map 時，可能會發生下列問題：
 
 |**問題**|**可能的原因**|**解決方法**|
 |-|-|-|
 |無法產生 Code Map。|方案中沒有成功建立的專案。|修正發生的建置錯誤，然後重新產生對應。|
-|Visual Studio 變成沒有回應，當您嘗試將產生的 code map**架構**功能表。|程式資料庫 (.pdb) 檔案可能會損毀。<br /><br /> .pdb 檔案會儲存偵錯資訊，例如類型、方法和原始程式檔資訊。|重建方案後再試一次。|
-|IntelliSense 瀏覽資料庫的某些設定已停用。|某些 IntelliSense 設定可能會停用，在 Visual Studio**選項** 對話方塊。|開啟這些設定來加以啟用。<br /><br /> 請參閱[選項、 文字編輯器、 C /C++進階](../ide/reference/options-text-editor-c-cpp-advanced.md)。|
-|[未知方法]  訊息出現在方法節點上。<br /><br /> 發生這個問題是因為無法解析方法的名稱。|二進位檔可能沒有基底重新配置表格。|在連結器中開啟 **/FIXED:NO** 選項。|
+|當您嘗試從 [**架構**] 功能表產生 Code Map 時，Visual Studio 會變得沒有回應。|程式資料庫 (.pdb) 檔案可能會損毀。<br /><br /> .pdb 檔案會儲存偵錯資訊，例如類型、方法和原始程式檔資訊。|重建方案後再試一次。|
+|IntelliSense 瀏覽資料庫的某些設定已停用。|某些 IntelliSense 設定可能會在 [Visual Studio**選項**] 對話方塊中停用。|開啟這些設定來加以啟用。<br /><br /> 請參閱[選項、文字編輯器、CC++/、Advanced](../ide/reference/options-text-editor-c-cpp-advanced.md)。|
+|[未知方法] 訊息出現在方法節點上。<br /><br /> 發生這個問題是因為無法解析方法的名稱。|二進位檔可能沒有基底重新配置表格。|在連結器中開啟 **/FIXED:NO** 選項。|
 ||程式資料庫 (.pdb) 檔案可能無法建置。<br /><br /> .pdb 檔案會儲存偵錯資訊，例如類型、方法和原始程式檔資訊。|在連結器中開啟 **/DEBUG** 選項。|
 ||無法在預期的位置中開啟或找到 .pdb 檔案。|請確定預期的位置中有 .pdb 檔案存在。|
 ||已從 .pdb 檔案中移除偵錯資訊。|如果在連結器中使用 **/PDBSTRIPPED** 選項，請改為包含完整的 .pdb 檔案。|
@@ -51,4 +51,4 @@ C 和 C++ 程式碼不支援下列項目：
 
 ## <a name="see-also"></a>另請參閱
 
-- [使用 code map 對應相依性](../modeling/map-dependencies-across-your-solutions.md)
+- [對應程式碼對應的相依性](../modeling/map-dependencies-across-your-solutions.md)
