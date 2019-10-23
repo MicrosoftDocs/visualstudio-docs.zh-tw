@@ -57,4 +57,4 @@ ms.locfileid: "72661573"
 > 還會有以系統為基礎的 <xref:System.Timers.Timer> 可以新增至 [工具箱]  。這個 <xref:System.Timers.Timer> 已針對伺服器應用程式最佳化，而且 Windows Forms <xref:System.Windows.Forms.Timer> 最適合在 Windows Forms 上使用。
 
 ## <a name="see-also"></a>另請參閱
- [使用元件進行程式設計](https://msdn.microsoft.com/library/d4d4fcb4-e0b8-46b3-b679-7ee0026eb9e3) [](https://msdn.microsoft.com/library/373cacf7-479e-4b05-991c-5cb18824e913)逐步解說[工具箱](../../ide/reference/toolbox.md)[選擇工具箱專案對話方塊（Visual Studio）](https://msdn.microsoft.com/bd07835f-18a8-433e-bccc-7141f65263bb)
+ [使用元件進行程式設計 ](https://msdn.microsoft.com/library/d4d4fcb4-e0b8-46b3-b679-7ee0026eb9e3) [Component 程式設計逐步解說 ](https://msdn.microsoft.com/library/373cacf7-479e-4b05-991c-5cb18824e913) [Toolbox ](../../ide/reference/toolbox.md) [Choose 工具箱專案對話方塊（Visual Studio）](https://msdn.microsoft.com/bd07835f-18a8-433e-bccc-7141f65263bb)

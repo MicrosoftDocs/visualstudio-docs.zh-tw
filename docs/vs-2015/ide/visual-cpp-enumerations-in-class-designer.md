@@ -46,4 +46,4 @@ enum class CardSuit {
  如需使用 `enum` 類型的詳細資訊，請參閱[列舉](https://msdn.microsoft.com/library/081829db-5dca-411e-a53c-bffef315bcb3)。
 
 ## <a name="see-also"></a>另請參閱
- 使用[Visual C++ Code （類別設計工具）](../ide/working-with-visual-cpp-code-class-designer.md)列舉[](https://msdn.microsoft.com/library/081829db-5dca-411e-a53c-bffef315bcb3)
+ [使用 Visual C++ Code （類別設計工具） ](../ide/working-with-visual-cpp-code-class-designer.md) [Enumerations](https://msdn.microsoft.com/library/081829db-5dca-411e-a53c-bffef315bcb3)

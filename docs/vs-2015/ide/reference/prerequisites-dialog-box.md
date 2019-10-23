@@ -66,4 +66,4 @@ ms.locfileid: "72662175"
 |**Windows Installer 4.5**|這個套件會安裝 Microsoft Windows Installer 可轉散發套件 4.5 版，以允許安裝 Windows Installer 安裝專案。|
 
 ## <a name="see-also"></a>另請參閱
- [發行頁面、專案設計](../../ide/reference/publish-page-project-designer.md)工具[應用程式部署必要條件](../../deployment/application-deployment-prerequisites.md)轉散發 .NET Framework[部署64位應用程式的必要條件](../../deployment/deploying-prerequisites-for-64-bit-applications.md) [Visual Studio 多目標總覽](../../ide/visual-studio-multi-targeting-overview.md) [](https://msdn.microsoft.com/a18d0456-fd89-493e-97f4-756505bfe287)
+ [[發行] 頁面、[專案設計工具] ](../../ide/reference/publish-page-project-designer.md) [Application 部署必要條件](../../deployment/application-deployment-prerequisites.md) [Redistributing .NET Framework](https://msdn.microsoft.com/a18d0456-fd89-493e-97f4-756505bfe287) 64 位應用程式的必要條件 [Deploying ](../../deployment/deploying-prerequisites-for-64-bit-applications.md) [Studio 多目標簡要](../../ide/visual-studio-multi-targeting-overview.md)
