@@ -10,12 +10,12 @@ metadata:
   author: gewarren
   ms.author: gewarren
   ms.date: 10/10/2019
-  ms.openlocfilehash: fe889d55ac2b2a6eab99b8d6abdc5193c981725d
-  ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+  ms.openlocfilehash: 6f04176e3952d3b90fc31ba42a5e8d11c10ca456
+  ms.sourcegitcommit: 57bc1c3887838d707c13feff72a677b3bad3be4b
   ms.translationtype: HT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 10/16/2019
-  ms.locfileid: "72450605"
+  ms.lasthandoff: 10/22/2019
+  ms.locfileid: "72777687"
 landingContent:
 - title: 了解 XAML
   linkLists:
@@ -53,3 +53,13 @@ landingContent:
     links:
     - text: 開始使用 Visual Studio 中的 WPF
       url: ../designers/getting-started-with-wpf.md
+- title: 開發 UWP 應用程式
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: UWP 概觀
+      url: /windows/uwp/get-started/
+  - linkListType: get-started
+    links:
+    - text: 開始使用 Visual Studio 中的 UWP
+      url: /windows/uwp/get-started/get-set-up
