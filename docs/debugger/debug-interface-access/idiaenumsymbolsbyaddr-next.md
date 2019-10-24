@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e52567eddcbb6c4f372256e66b7b723bc7aa7394
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 424924f3fab62cf862420d58c947bba16343141d
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62833437"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743887"
 ---
 # <a name="idiaenumsymbolsbyaddrnext"></a>IDiaEnumSymbolsByAddr::Next
-擷取位址中順序的下一個符號。
+依位址來抓取下一個符號。
 
 ## <a name="syntax"></a>語法
 
@@ -35,22 +35,22 @@ HRESULT Next ( 
 #### <a name="parameters"></a>參數
  celt
 
-[in]要擷取列舉值中的符號數目。
+在列舉值中要抓取的符號數目。
 
  rgelt
 
-[out]陣列，其中是要在以填滿[IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)物件，表示所需的符號。
+脫銷要以[IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)物件填入的陣列，表示所需的符號。
 
  pceltFetched
 
-[out]擷取列舉值中傳回符號的數。
+脫銷傳回已提取枚舉器中的符號數目。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，則傳回 `S_OK`。 傳回`S_FALSE`有沒有更多的符號。 否則會傳回錯誤碼。
+ 如果成功，會傳回 `S_OK`。 如果沒有其他符號，則傳回 `S_FALSE`。 否則會傳回錯誤碼。
 
 ## <a name="remarks"></a>備註
- 這個方法會更新列舉值位置所擷取的項目數目。
+ 這個方法會依提取的專案數來更新枚舉器位置。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [IDiaEnumSymbolsByAddr](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr.md)
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

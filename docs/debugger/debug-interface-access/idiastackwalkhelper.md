@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0143945a266b9c76fefa10e1823a7c3ce01f85e7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 40c2b58778b2a1073b31acc7007388d8e8fe222c
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62837832"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741310"
 ---
 # <a name="idiastackwalkhelper"></a>IDiaStackWalkHelper
-可加速查核堆疊使用的程式偵錯資料庫 (.pdb) 檔案。
+有助於使用程式 debug 資料庫（.pdb）檔案來進行堆疊的逐步解說。
 
 ## <a name="syntax"></a>語法
 
@@ -31,34 +31,34 @@ IDiaStackWalkHelper: IUnknown
 ```
 
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法
- 下表顯示的方法`IDiaStackWalkHelper`:
+ 下表顯示 `IDiaStackWalkHelper` 的方法：
 
 |方法|描述|
 |------------|-----------------|
-|[IDiaStackWalkHelper::get_registerValue](../../debugger/debug-interface-access/idiastackwalkhelper-get-registervalue.md)|擷取暫存器的值。|
-|[IDiaStackWalkHelper::put_registerValue](../../debugger/debug-interface-access/idiastackwalkhelper-put-registervalue.md)|設定暫存器值。|
-|[IDiaStackWalkHelper::readMemory](../../debugger/debug-interface-access/idiastackwalkhelper-readmemory.md)|從記憶體中的可執行檔的映像中讀取資料的區塊。|
-|[IDiaStackWalkHelper::searchForReturnAddress](../../debugger/debug-interface-access/idiastackwalkhelper-searchforreturnaddress.md)|搜尋指定的堆疊框架之最接近的函式傳回的位址。|
-|[IDiaStackWalkHelper::searchForReturnAddressStart](../../debugger/debug-interface-access/idiastackwalkhelper-searchforreturnaddressstart.md)|搜尋指定的堆疊框架的地址，位於或接近指定的堆疊位址。|
-|[IDiaStackWalkHelper::frameForVA](../../debugger/debug-interface-access/idiastackwalkhelper-frameforva.md)|擷取堆疊框架，其中包含指定的虛擬位址。|
-|[IDiaStackWalkHelper::symbolForVA](../../debugger/debug-interface-access/idiastackwalkhelper-symbolforva.md)|擷取包含指定的虛擬位址的符號。 **注意：** 符號必須有類型`SymTagFunctionType`(取值[SymTagEnum 列舉](../../debugger/debug-interface-access/symtagenum.md)列舉型別)。|
-|[IDiaStackWalkHelper::pdataForVA](../../debugger/debug-interface-access/idiastackwalkhelper-pdataforva.md)|傳回與指定的虛擬位址相關聯的 PDATA 資料區塊。|
-|[IDiaStackWalkHelper::imageForVA](../../debugger/debug-interface-access/idiastackwalkhelper-imageforva.md)|擷取可執行檔，開始的虛擬位址的虛擬位址某處可執行檔的記憶體空間中。|
+|[IDiaStackWalkHelper::get_registerValue](../../debugger/debug-interface-access/idiastackwalkhelper-get-registervalue.md)|抓取暫存器的值。|
+|[IDiaStackWalkHelper::put_registerValue](../../debugger/debug-interface-access/idiastackwalkhelper-put-registervalue.md)|設定註冊的值。|
+|[IDiaStackWalkHelper::readMemory](../../debugger/debug-interface-access/idiastackwalkhelper-readmemory.md)|從記憶體中可執行檔的影像讀取資料區塊。|
+|[IDiaStackWalkHelper::searchForReturnAddress](../../debugger/debug-interface-access/idiastackwalkhelper-searchforreturnaddress.md)|在指定的堆疊框架中搜尋最接近的函式傳回位址。|
+|[IDiaStackWalkHelper::searchForReturnAddressStart](../../debugger/debug-interface-access/idiastackwalkhelper-searchforreturnaddressstart.md)|在指定的堆疊框架中，搜尋指定之堆疊位址所在或附近的傳回位址。|
+|[IDiaStackWalkHelper::frameForVA](../../debugger/debug-interface-access/idiastackwalkhelper-frameforva.md)|抓取包含指定虛擬位址的堆疊框架。|
+|[IDiaStackWalkHelper::symbolForVA](../../debugger/debug-interface-access/idiastackwalkhelper-symbolforva.md)|抓取包含指定之虛擬位址的符號。 **注意：** 符號的類型必須 `SymTagFunctionType` （ [SymTagEnum 列舉](../../debugger/debug-interface-access/symtagenum.md)列舉中的值）。|
+|[IDiaStackWalkHelper::pdataForVA](../../debugger/debug-interface-access/idiastackwalkhelper-pdataforva.md)|傳回與指定之虛擬位址相關聯的 PDATA 資料區塊。|
+|[IDiaStackWalkHelper::imageForVA](../../debugger/debug-interface-access/idiastackwalkhelper-imageforva.md)|在可執行檔的記憶體空間中某個位置取得虛擬位址，以抓取可執行檔的起始虛擬位址。|
 
 ## <a name="remarks"></a>備註
- 這個介面會呼叫 DIA 程式碼，以取得要在程式執行期間建構的堆疊框架清單可執行檔的相關資訊。
+ DIA 程式碼會呼叫這個介面，以取得可執行檔的相關資訊，以在程式執行期間建立堆疊框架清單。
 
-## <a name="notes-for-callers"></a>呼叫端資訊
- 用戶端應用程式會實作這個介面，以支援在程式執行期間查核堆疊。 此介面的執行個體傳遞給[IDiaStackWalker::getEnumFrames](../../debugger/debug-interface-access/idiastackwalker-getenumframes.md)或是[IDiaStackWalker::getEnumFrames2](../../debugger/debug-interface-access/idiastackwalker-getenumframes2.md)方法。
+## <a name="notes-for-callers"></a>呼叫者的注意事項
+ 用戶端應用程式會執行此介面，以支援在程式執行期間流覽堆疊。 這個介面的實例會傳遞至[IDiaStackWalker：： getEnumFrames](../../debugger/debug-interface-access/idiastackwalker-getenumframes.md)或[IDiaStackWalker：： getEnumFrames2](../../debugger/debug-interface-access/idiastackwalker-getenumframes2.md)方法。
 
 ## <a name="requirements"></a>需求
- 標頭：dia2.h
+ 標頭： Dia2。h
 
- 程式庫： diaguids.lib
+ 程式庫： diaguids
 
- DLL: msdia80.dll
+ DLL： msdia80
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [介面 (偵錯介面存取 SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
 - [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)
 - [SymTagEnum 列舉](../../debugger/debug-interface-access/symtagenum.md)

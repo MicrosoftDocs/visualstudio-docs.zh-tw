@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4e35db1186f2547b8d3c859d20e0e4ce2b1f68e9
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 28a78094d9779a0da35052808dfb8d5f42972894
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64803337"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741040"
 ---
-# <a name="idiasymbolgetage"></a>IDiaSymbol::get_age
-擷取的.pdb 檔案的存留期值。
+# <a name="idiasymbolget_age"></a>IDiaSymbol::get_age
+抓取 .pdb 檔案的存留期值。
 
 ## <a name="syntax"></a>語法
 
@@ -33,23 +33,23 @@ HRESULT get_age ( 
 #### <a name="parameters"></a>參數
  `pRetVal`
 
-[out]傳回.pdb 檔案的存留期的值。
+脫銷傳回 .pdb 檔案的存留期值。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，則傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。
+ 如果成功，會傳回 `S_OK`;否則，會傳回 `S_FALSE` 或錯誤碼。
 
 > [!NOTE]
-> 傳回值為`S_FALSE`表示此屬性不適用於符號。
+> @No__t_0 的傳回值表示該屬性不適用於符號。
 
 ## <a name="remarks"></a>備註
- 存留期不一定會對應至任何已知的時間值;它通常用來判斷是否與對應的.exe 檔案不同步的.pdb 檔案。
+ 年齡不一定會對應到任何已知的時間值;它通常用來判斷 .pdb 檔案是否與對應的 .exe 檔案不同步。
 
 ## <a name="requirements"></a>需求
 
-|需求|說明|
+|需求|描述|
 |-----------------|-----------------|
-|標頭：|dia2.h|
+|標頭：|dia2。h|
 |版本:|DIA SDK v7.0|
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

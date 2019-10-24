@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_lexicalparent |Microsoft Docs'
+title: IDiaSymbol：： get_lexicalParent |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e8927785ba6ca0dbe3daf6c402be776e8c9d8288
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 87d44f2c8dfb723f9f2653d6f9d89a2c1c71ef5f
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64813725"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739964"
 ---
-# <a name="idiasymbolgetlexicalparent"></a>IDiaSymbol::get_lexicalParent
-擷取語彙父系的符號的參考。
+# <a name="idiasymbolget_lexicalparent"></a>IDiaSymbol::get_lexicalParent
+抓取符號之詞彙父系的參考。
 
 ## <a name="syntax"></a>語法
 
@@ -33,19 +33,19 @@ HRESULT get_lexicalParent ( 
 #### <a name="parameters"></a>參數
  `pRetVal`
 
-[out]傳回[IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)表示符號的語彙的父物件。
+脫銷傳回代表符號之詞彙父系的[IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)物件。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，則傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。
+ 如果成功，會傳回 `S_OK`;否則，會傳回 `S_FALSE` 或錯誤碼。
 
 > [!NOTE]
-> 傳回值為`S_FALSE`表示此屬性不適用於符號。
+> @No__t_0 的傳回值表示該屬性不適用於符號。
 
 ## <a name="remarks"></a>備註
- 語彙父代的符號是封入函式或模組。 例如，函式參數或區域變數語彙父代是函式本身，語彙父函式時，用來定義它的模組。
+ 符號的詞法父系是封入函數或模組。 例如，函式參數或區域變數的詞法父系是函式本身，而函式的詞法父系則是其定義所在的模組。
 
- 能顯示為語彙父系所述的可能符號[的符號類型語彙階層](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md)。
+ 可以顯示為詞法父系的可能符號會記錄在[符號類型的詞法](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md)階層中。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
 - [符號類型的語彙階層架構](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md)

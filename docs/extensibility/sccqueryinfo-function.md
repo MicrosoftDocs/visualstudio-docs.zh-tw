@@ -12,15 +12,15 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 25a4b9b7d07b74047890c4ba56583cc09a394368
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 5807eb6b695e140350696436a8bba351687f4a24
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66353519"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72720836"
 ---
 # <a name="sccqueryinfo-function"></a>SccQueryInfo 函式
-此函式會取得一組選取的檔案，在 原始檔控制下的狀態資訊。
+此函式會取得原始檔控制下一組所選檔案的狀態資訊。
 
 ## <a name="syntax"></a>語法
 
@@ -34,47 +34,47 @@ SCCRTN SccQueryInfo(
 ```
 
 #### <a name="parameters"></a>參數
- pvContext
+ pvCoNtext
 
-[in]原始檔控制外掛程式的內容結構。
+在原始檔控制外掛程式的內容結構。
 
- nFiles
+ n
 
-[in]中指定的檔案數目`lpFileNames`陣列和長度`lpStatus`陣列。
+在@No__t_0 陣列中指定的檔案數目和 `lpStatus` 陣列的長度。
 
  lpFileNames
 
-[in]要查詢的檔案名稱的陣列。
+在要查詢之檔案的名稱陣列。
 
  lpStatus
 
-[in、 out]陣列，其中的原始檔控制外掛程式傳回每個檔案的狀態旗標。 如需詳細資訊，請參閱 <<c0> [ 檔案狀態碼](../extensibility/file-status-code-enumerator.md)。
+[in、out]一種陣列，原始檔控制外掛程式會在其中傳回每個檔案的狀態旗標。 如需詳細資訊，請參閱檔案[狀態碼](../extensibility/file-status-code-enumerator.md)。
 
 ## <a name="return-value"></a>傳回值
- 此函式的原始檔控制外掛程式實作應該會傳回下列值之一：
+ 此函式的原始檔控制外掛程式執行應會傳回下列其中一個值：
 
 |值|描述|
 |-----------|-----------------|
 |SCC_OK|查詢成功。|
-|SCC_E_ACCESSFAILURE|發生問題，以存取原始檔控制系統，可能因網路或競爭問題。 建議使用重試。|
-|SCC_E_PROJNOTOPEN|無法開啟原始檔控制下的專案。|
+|SCC_E_ACCESSFAILURE|存取原始檔控制系統時發生問題，可能是因為網路或競爭問題所造成。 建議使用重試。|
+|SCC_E_PROJNOTOPEN|專案未在原始檔控制下開啟。|
 |SCC_E_NONSPECIFICERROR|不明確的失敗。|
 
 ## <a name="remarks"></a>備註
- 如果`lpFileName`為空字串，目前沒有要更新的狀態資訊。 否則，它是可能的狀態資訊已變更之檔案的完整路徑名稱。
+ 如果 `lpFileName` 是空字串，目前沒有要更新的狀態資訊。 否則，它是狀態資訊可能已變更之檔案的完整路徑名稱。
 
- 傳回陣列可以是位元遮罩`SCC_STATUS_xxxx`位元。 如需詳細資訊，請參閱 <<c0> [ 檔案狀態碼](../extensibility/file-status-code-enumerator.md)。 原始檔控制系統可能不支援所有的位元類型。 例如，如果`SCC_STATUS_OUTOFDATE`不提供，只是無法設定位元。
+ 傳回陣列可以是 `SCC_STATUS_xxxx` 位的位元遮罩。 如需詳細資訊，請參閱檔案[狀態碼](../extensibility/file-status-code-enumerator.md)。 原始檔控制系統可能不支援所有的位類型。 例如，如果未提供 `SCC_STATUS_OUTOFDATE`，則只會設定位。
 
- 當使用此函式簽出檔案，請注意下列`MSSCCI`狀態需求：
+ 使用此函數來簽出檔案時，請注意下列 `MSSCCI` 狀態需求：
 
-- `SCC_STATUS_OUTBYUSER` 目前的使用者已簽出檔案時設定。
+- 當目前的使用者簽出檔案時，就會設定 `SCC_STATUS_OUTBYUSER`。
 
-- `SCC_STATUS_CHECKEDOUT` 無法設定，除非`SCC_STATUS_OUTBYUSER`設定。
+- 除非已設定 `SCC_STATUS_OUTBYUSER`，否則無法設定 `SCC_STATUS_CHECKEDOUT`。
 
-- `SCC_STATUS_CHECKEDOUT` 時才會設定檔案已簽出到指定的工作目錄。
+- 只有在檔案簽出至指定的工作目錄時，才會設定 `SCC_STATUS_CHECKEDOUT`。
 
-- 如果檔案已簽出目前的使用者以外的工作目錄的目錄`SCC_STATUS_OUTBYUSER`設定，但`SCC_STATUS_CHECKEDOUT`不是。
+- 如果目前的使用者將檔案簽出至工作目錄以外的目錄，則 `SCC_STATUS_OUTBYUSER` 已設定，但 `SCC_STATUS_CHECKEDOUT` 不是。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [原始檔控制外掛程式 API 函式](../extensibility/source-control-plug-in-api-functions.md)
 - [檔案狀態碼](../extensibility/file-status-code-enumerator.md)

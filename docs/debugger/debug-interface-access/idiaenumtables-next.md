@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 15a9ebbd3a3993568e4b6496e04661a63290399e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 688652fe3915e1974d5d0e1d04fb1ac075863d8c
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62832726"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743733"
 ---
 # <a name="idiaenumtablesnext"></a>IDiaEnumTables::Next
-擷取指定的數目的列舉型別序列中的資料表。
+抓取列舉序列中指定數目的資料表。
 
 ## <a name="syntax"></a>語法
 
@@ -35,19 +35,19 @@ HRESULT Next ( 
 #### <a name="parameters"></a>參數
  `celt`
 
-[in]要擷取列舉值中的資料表數目。
+在列舉值中要抓取的資料表數目。
 
  `rgelt`
 
-[out]陣列，其中是要在以填滿[IDiaTable](../../debugger/debug-interface-access/idiatable.md)所需的資料表表示的物件。
+脫銷要填入的陣列，其中包含代表所需資料表的[IDiaTable](../../debugger/debug-interface-access/idiatable.md)物件。
 
  `pceltFetched`
 
-[out]擷取列舉值中傳回資料表的數目。
+脫銷傳回已提取枚舉器中的資料表數目。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，會傳回 `S_OK`。 傳回`S_FALSE`如果沒有更多的資料表。 否則會傳回錯誤碼。
+ 如果成功，會傳回 `S_OK`。 如果沒有其他資料表，則傳回 `S_FALSE`。 否則會傳回錯誤碼。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [IDiaEnumTables](../../debugger/debug-interface-access/idiaenumtables.md)
 - [IDiaTable](../../debugger/debug-interface-access/idiatable.md)

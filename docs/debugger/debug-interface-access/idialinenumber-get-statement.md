@@ -1,5 +1,5 @@
 ---
-title: 'Idialinenumber:: Get_statement |Microsoft Docs'
+title: IDiaLineNumber：： get_statement |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 397873a65176024327f371e9727b15984cd7d03f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0a37052944f74e36b488541074a0033f5b8aca9e
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62828398"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743123"
 ---
-# <a name="idialinenumbergetstatement"></a>IDiaLineNumber::get_statement
-擷取旗標，指出這個行資訊會描述陳述式，而不是運算式，以原始程式碼的開頭。
+# <a name="idialinenumberget_statement"></a>IDiaLineNumber::get_statement
+抓取表示此行資訊的旗標，其描述程式來源中的語句開頭，而不是運算式。
 
 ## <a name="syntax"></a>語法
 
@@ -33,13 +33,13 @@ HRESULT get_statement ( 
 #### <a name="parameters"></a>參數
  `pRetVal`
 
-[out]傳回`TRUE`如果此列的資訊說明程式來源中的陳述式的開頭。
+脫銷如果這行資訊描述程式來源中的語句開頭，則傳回 `TRUE`。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，會傳回 `S_OK`。 傳回`S_FALSE`不支援這個屬性，則為。 否則會傳回錯誤碼。
+ 如果成功，會傳回 `S_OK`。 如果不支援此屬性，則傳回 `S_FALSE`。 否則會傳回錯誤碼。
 
 ## <a name="remarks"></a>備註
- 陳述式可以跨越多行。 這個方法會指示是否相關聯的行號標示的這類多行陳述式開頭。
+ 語句可以跨越多行。 這個方法會指出相關聯的行號是否標記這類多行語句的開頭。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)

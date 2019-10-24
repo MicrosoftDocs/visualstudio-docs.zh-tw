@@ -10,29 +10,29 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1badd483690ae22f9e314c0f9eb4ac3033d82e4a
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: ee4c0f41902e74f58684d6806877d352447351bf
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66328282"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72725400"
 ---
 # <a name="project-priority"></a>專案優先順序
-專案項目通常是在方案中只能有一個專案的成員。 因此，IDE 可以輕易地判斷哪一個專案用來開啟項目中。 不過，如果項目是多個專案的成員，IDE 會判斷最佳的專案開啟的項目使用的優先順序配置。
+專案專案通常是方案中唯一一個專案的成員。 因此，IDE 可以輕鬆地判斷用來開啟專案的專案。 不過，如果專案是多個專案的成員，則 IDE 會使用優先順序配置來判斷開啟專案的最佳專案。
 
- 下列清單顯示專案的優先順序配置：
+ 下列清單顯示專案優先順序配置：
 
-- IDE 呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsProject2.IsDocumentInProject%2A>解決方案可以判斷文件是否屬於該專案中每個專案的方法。
+- IDE 會針對方案中的每個專案呼叫 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject2.IsDocumentInProject%2A> 方法，以判斷檔是否為該專案的成員。
 
-- 如果文件是專案的成員，專案會回應以優先順序專案會指派它處理該文件的根據。 比方說，語言專案以高優先順序，其語言原始程式檔，但具有較低的優先順序，不會在其組建程序無法辨識的檔案類型的回應。
+- 如果檔是專案的成員，則專案會根據其處理該檔的優先順序，來回應專案。 例如，語言專案會以高優先順序回應其語言原始程式檔，但會以較低的優先順序回應無法辨識的檔案類型，而不會用來做為其組建進程的一部分。
 
-- 提供自訂的專案特定的編輯器或設計工具文件的專案也會收到高的優先順序。
+- 為檔提供自訂、專案特定編輯器或設計工具的專案也會獲得高優先順序。
 
-- <xref:Microsoft.VisualStudio.Shell.Interop.VSDOCUMENTPRIORITY>列舉型別提供的文件的優先順序值。
+- @No__t_0 列舉會提供檔優先順序值。
 
-- 指定的最高優先權的專案有開啟的文件的內容。 如果兩個專案傳回相等的優先順序值，使用中的專案是慣用的。 如果方案中的沒有專案回應，它可以開啟文件，則 IDE 會將文件置於其他檔案專案。 如需詳細資訊，請參閱 <<c0> [ 其他檔案專案](../../extensibility/internals/miscellaneous-files-project.md)。
+- 指定最高優先順序的專案會提供開啟檔的內容。 如果兩個專案傳回相同的優先順序值，則慣用使用中的專案。 如果方案中沒有任何專案回應可以開啟檔，IDE 會將檔放在 [其他檔案] 專案中。 如需詳細資訊，請參閱[其他檔案專案](../../extensibility/internals/miscellaneous-files-project.md)。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [其他檔案專案](../../extensibility/internals/miscellaneous-files-project.md)
-- [如何：針對開啟的文件開啟編輯器](../../extensibility/how-to-open-editors-for-open-documents.md)
+- [如何︰針對開啟的文件開啟編輯器](../../extensibility/how-to-open-editors-for-open-documents.md)
 - [新增專案與專案項目範本](../../extensibility/internals/adding-project-and-project-item-templates.md)

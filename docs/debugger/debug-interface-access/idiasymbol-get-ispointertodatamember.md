@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_isPointerToDataMember |Microsoft Docs
+title: IDiaSymbol：： get_isPointerToDataMember |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -10,14 +10,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d74c2ba8317098212c7263ab049becc52f874e9
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 2e06a8605b38042773cfa60e4847ed3ace9c5954
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "62836576"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740119"
 ---
-# <a name="idiasymbolgetispointertodatamember"></a>IDiaSymbol::get_isPointerToDataMember
+# <a name="idiasymbolget_ispointertodatamember"></a>IDiaSymbol::get_isPointerToDataMember
 指定這個符號是否為資料成員的指標。
 
 ## <a name="syntax"></a>語法
@@ -30,10 +30,10 @@ HRESULT get_isPointerToDataMember(
 #### <a name="parameters"></a>參數
  `pRetVal`
 
-[out]指標`BOOL`，指定這個符號是否為資料成員的指標。
+脫銷@No__t_0 的指標，指定此符號是否為資料成員的指標。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，則傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。
+ 如果成功，會傳回 `S_OK`;否則，會傳回 `S_FALSE` 或錯誤碼。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

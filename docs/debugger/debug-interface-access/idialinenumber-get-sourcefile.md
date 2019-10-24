@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e026b837205a8bf62f5d33dc2f5449d40cc485e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5f0041ef4d83003d1b42e0c95b1412262d08458c
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62828618"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743151"
 ---
-# <a name="idialinenumbergetsourcefile"></a>IDiaLineNumber::get_sourceFile
-擷取來源檔案的參考。
+# <a name="idialinenumberget_sourcefile"></a>IDiaLineNumber::get_sourceFile
+抓取來源檔案的參考。
 
 ## <a name="syntax"></a>語法
 
@@ -33,11 +33,11 @@ HRESULT get_sourceFile ( 
 #### <a name="parameters"></a>參數
  `pRetVal`
 
-[out]傳回[IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)代表原始程式檔的物件。
+脫銷傳回代表來源檔案的[IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)物件。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，會傳回 `S_OK`。 傳回`S_FALSE`不支援這個屬性，則為。 否則會傳回錯誤碼。
+ 如果成功，會傳回 `S_OK`。 如果不支援此屬性，則傳回 `S_FALSE`。 否則會傳回錯誤碼。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)
 - [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)

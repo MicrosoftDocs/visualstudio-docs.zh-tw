@@ -15,18 +15,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b8a38138b5688d0c6573b18f3b0d875abcf627c2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6769af8a417c111de6c8dfc68cd7cda548eaa24c
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62554931"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745217"
 ---
 # <a name="enumerations-and-structures"></a>列舉和結構
 
-這些是列舉型別和 DIA SDK 所使用的結構。
+這些是 DIA SDK 所使用的列舉和結構。
 
-## <a name="in-this-section"></a>本節內容
+## <a name="in-this-section"></a>本章節內容
 
 ### <a name="enumerations"></a>列舉
 
@@ -36,7 +36,7 @@ ms.locfileid: "62554931"
 
 - [CV_access_e 列舉](../../debugger/debug-interface-access/cv-access-e.md)
 
- 指定的成員函式和變數的可見性 （存取層級） 的範圍。
+ 指定成員函式和變數的可見度範圍（存取層級）。
 
 - [CV_call_e 列舉](../../debugger/debug-interface-access/cv-call-e.md)
 
@@ -44,7 +44,7 @@ ms.locfileid: "62554931"
 
 - [CV_CFL_LANG 列舉](../../debugger/debug-interface-access/cv-cfl-lang.md)
 
- 指定程式碼的原始語言的應用程式或連結的模組。
+ 指定應用程式或連結模組的原始程式碼語言。
 
 - [CV_CPU_TYPE_e 列舉](../../debugger/debug-interface-access/cv-cpu-type-e.md)
 
@@ -52,27 +52,27 @@ ms.locfileid: "62554931"
 
 - [CV_HREG_e 列舉](../../debugger/debug-interface-access/cv-hreg-e.md)
 
- 指定的目標暫存器。
+ 指定目標暫存器。
 
 - [DataKind 列舉](../../debugger/debug-interface-access/datakind.md)
 
- 指出特定資料值的範圍。
+ 表示資料值的特定範圍。
 
 - [LocationType 列舉](../../debugger/debug-interface-access/locationtype.md)
 
- 表示在符號中所包含的位置資訊的類型。
+ 表示符號中包含的位置資訊類型。
 
 - [MemoryTypeEnum 列舉](../../debugger/debug-interface-access/memorytypeenum.md)
 
- 指定要存取記憶體的類型。
+ 指定要存取的記憶體類型。
 
 - [NameSearchOptions 列舉](../../debugger/debug-interface-access/namesearchoptions.md)
 
- 指定符號和檔案名稱的搜尋選項。
+ 指定符號和檔案名的搜尋選項。
 
 - [StackFrameTypeEnum 列舉](../../debugger/debug-interface-access/stackframetypeenum.md)
 
- 指定的堆疊框架的類型。
+ 指定堆疊框架類型。
 
 - [SymTagEnum 列舉](../../debugger/debug-interface-access/symtagenum.md)
 
@@ -80,17 +80,17 @@ ms.locfileid: "62554931"
 
 - [THUNK_ORDINAL 列舉](../../debugger/debug-interface-access/thunk-ordinal.md)
 
- 將指定的 thunk 類型。
+ 指定 Thunk 類型。
 
 - [UdtKind 列舉](../../debugger/debug-interface-access/udtkind.md)
 
- 描述各種不同的使用者定義型別 (UDT)。
+ 描述各種不同的使用者定義型別（UDT）。
 
 ### <a name="structures"></a>結構
 
 [DiaAddressMapEntry 結構](../../debugger/debug-interface-access/diaaddressmapentry.md)
 
-描述中對應的位址的項目。
+描述位址對應中的專案。
 
 ### <a name="related-sections"></a>相關章節
 
@@ -100,8 +100,8 @@ ms.locfileid: "62554931"
 
 [常數 (偵錯介面存取 SDK)](../../debugger/debug-interface-access/constants-debug-interface-access-sdk.md)
 
-指定常數，DIA SDK 中所提供。
+指定可在 DIA SDK 中使用的常數。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [參考資料](../../debugger/debug-interface-access/debug-interface-access-sdk-reference.md)

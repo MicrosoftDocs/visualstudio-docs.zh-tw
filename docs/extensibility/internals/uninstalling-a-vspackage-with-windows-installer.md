@@ -1,5 +1,5 @@
 ---
-title: 解除安裝 Windows Installer VSPackage |Microsoft Docs
+title: 卸載具有 Windows Installer 的 VSPackage |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,32 +12,32 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4ddb09668d3114c055ddac1e4fb677a46754f388
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: a8e92937e848d124c18dc91b9bdfa0f020f27f20
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66344754"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72722137"
 ---
 # <a name="uninstalling-a-vspackage-with-windows-installer"></a>使用 Windows Installer 解除安裝 VSPackage
-大部分的情況下，Windows 安裝程式也可以解除安裝 VSPackage 只藉由 「 復原 」 一樣安裝 VSPackage。 自訂動作所述[命令，必須是執行之後安裝](../../extensibility/internals/commands-that-must-be-run-after-installation.md)必須也解除安裝後執行。 Devenv.exe 呼叫發生之前進行安裝和解除安裝的 installfinalize 發生標準動作，因為 CustomAction 和 InstallExecuteSequence 資料表項目會提供這兩種情況。
+在大部分的情況下，Windows Installer 可以藉由「復原」安裝 VSPackage 的功能來卸載 VSPackage。 在[安裝後必須執行的命令](../../extensibility/internals/commands-that-must-be-run-after-installation.md)中所討論的自訂動作，必須在卸載之後才執行。 由於在安裝和卸載的 InstallFinalize 標準動作之前，會呼叫 devenv .exe，因此 CustomAction 和 InstallExecuteSequence 資料表專案會為這兩種情況提供服務。
 
 > [!NOTE]
-> 執行`devenv /setup`之後解除安裝 MSI 套件。
+> 卸載 MSI 套件之後，請執行 `devenv /setup`。
 
- 一般而言，如果您加入自訂動作加入 Windows Installer 封裝時，您必須處理這些動作期間解除安裝和復原。 如果您加入自訂動作來自行註冊 VSPackage，比方說，您必須加入過取消註冊，自訂動作。
-
-> [!NOTE]
-> 您可針對使用者安裝 VSPackage，然後解除安裝的版本[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]使用的整合。 您可以協助確定 VSPackage 的解除安裝可在該案例中藉由消除執行具有相依性的程式碼的自訂動作[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。
-
-## <a name="handling-launch-conditions-at-uninstall-time"></a>處理啟動條件，在解除安裝時間
- LaunchConditions 標準動作讀取資料列的 LaunchCondition 資料表來顯示錯誤訊息不符合條件。 啟動條件通常用來確保符合系統需求，，您通常可以跳解除安裝期間啟動條件，藉由新增條件，因為`NOT Installed`，LaunchCondition 資料表的 LaunchConditions 資料列。
-
- 替代方式是將`OR Installed`啟動解除安裝期間不重要的條件。 這可確保條件在解除安裝期間一律為 true，且因此不會顯示啟動條件錯誤訊息。
+ 一般來說，如果您將自訂動作新增至 Windows Installer 套件，就必須在卸載和回復期間處理這些動作。 例如，如果您新增自訂動作以自我註冊您的 VSPackage，您也必須新增自訂動作來將它取消登錄。
 
 > [!NOTE]
-> `Installed` 是 Windows 安裝程式設定在偵測到 VSPackage，已經安裝在系統上的屬性。
+> 使用者可以安裝您的 VSPackage，然後卸載與它整合的 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 版本。 您可以藉由排除在 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 上執行具有相依性之程式碼的自訂動作，協助確保您的 VSPackage 卸載在該案例中運作。
 
-## <a name="see-also"></a>另請參閱
+## <a name="handling-launch-conditions-at-uninstall-time"></a>在卸載時處理啟動條件
+ 如果不符合條件，LaunchConditions 標準動作會讀取 LaunchCondition 資料表的資料列，以顯示錯誤訊息。 由於啟動條件通常是用來確保符合系統需求，因此您通常可以藉由在 LaunchCondition 資料表的 LaunchConditions 資料列中加入條件 `NOT Installed`，在卸載期間略過啟動條件。
+
+ 另一個替代方法是新增 `OR Installed`，以在卸載期間啟動不重要的條件。 這可確保在卸載期間，條件一律為 true，因此不會顯示啟動條件錯誤訊息。
+
+> [!NOTE]
+> `Installed` 是偵測到系統上已安裝您的 VSPackage 時，Windows Installer 設定的屬性。
+
+## <a name="see-also"></a>請參閱
 - [Windows Installer](https://msdn.microsoft.com/library/187d8965-c79d-4ecb-8689-10930fa8b3b5)
 - [偵測系統需求](../../extensibility/internals/detecting-system-requirements.md)

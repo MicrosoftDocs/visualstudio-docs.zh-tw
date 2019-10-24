@@ -1,5 +1,5 @@
 ---
-title: 符號類型的語彙階層架構 |Microsoft Docs
+title: 符號類型的詞法階層 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,40 +12,40 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f4b2e6fc0b24cc96f617e7b78c6bdcc59ddc5c0d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: ad782ddb9a88b492d03e2338f17d95fb7bfa4f79
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63399361"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72738675"
 ---
 # <a name="lexical-hierarchy-of-symbol-types"></a>符號類型的語彙階層架構
-下表顯示的符號類型的語彙階層架構中。
+下表顯示 [詞彙] 階層中的符號類型。
 
 ## <a name="symbol-types"></a>符號類型
 
 |符號類型|描述|
 |-----------------|-----------------|
-|[註釋](../../debugger/debug-interface-access/annotation.md)|程式碼中指定的註解式的位置。|
-|[區塊](../../debugger/debug-interface-access/block.md)|您可以指定巢狀的範圍中函式。|
-|`Compiland`|指定`compiland`連結至.exe 檔案。|
-|[CompilandDetails](../../debugger/debug-interface-access/compilanddetails.md)|指定編譯模組可能需要載入其他的編譯模組的詳細資料，並因此會產生執行階段額外負荷，要擷取的資料。|
-|[CompilandEnv](../../debugger/debug-interface-access/compilandenv.md)|指定的編譯模組編譯為任何其他環境變數。|
+|[註釋](../../debugger/debug-interface-access/annotation.md)|指定程式碼中的標注位置。|
+|[區塊](../../debugger/debug-interface-access/block.md)|指定函數中的嵌套範圍。|
+|`Compiland`|指定連結至 .exe 檔案的 `compiland`。|
+|[CompilandDetails](../../debugger/debug-interface-access/compilanddetails.md)|指定可能需要載入其他編譯模組詳細資料，因而產生要取得之執行時間額外負荷的編譯模組資料。|
+|[CompilandEnv](../../debugger/debug-interface-access/compilandenv.md)|指定編譯模組編譯所需的任何其他環境變數。|
 |[Custom (偵錯介面存取 SDK)](../../debugger/debug-interface-access/custom-debug-interface-access-sdk.md)|指定使用者定義的符號。|
-|[資料 (偵錯介面存取 SDK)](../../debugger/debug-interface-access/data-debug-interface-access-sdk.md)|指定這類變數做為參數、 區域變數、 全域變數和類別成員。|
-|[Exe](../../debugger/debug-interface-access/exe.md)|指定全域範圍的資料;對應至整個.exe 或.dll 檔案。|
-|[FuncDebugEnd](../../debugger/debug-interface-access/funcdebugend.md)|指定已定義的時間點的函式的偵錯時結束。|
-|[FuncDebugStart](../../debugger/debug-interface-access/funcdebugstart.md)|指定已定義的時間點的函式的偵錯時開始。|
-|[函式 (偵錯介面存取 SDK)](../../debugger/debug-interface-access/function-debug-interface-access-sdk.md)|指定的函式。|
-|[標籤 (偵錯介面存取 SDK)](../../debugger/debug-interface-access/label-debug-interface-access-sdk.md)|程式碼中指定的位置。|
-|[PublicSymbol](../../debugger/debug-interface-access/publicsymbol.md)|指定當建置可執行程式時所顯示的外部符號。|
-|[Thunk](../../debugger/debug-interface-access/thunk.md)|指定`thunk`。|
-|[UsingNameSpace](../../debugger/debug-interface-access/usingnamespace.md)|指定`namespace`識別項。|
+|[資料 (偵錯介面存取 SDK)](../../debugger/debug-interface-access/data-debug-interface-access-sdk.md)|將這類變數指定為參數、本機變數、全域變數和類別成員。|
+|[Exe](../../debugger/debug-interface-access/exe.md)|指定資料的全域範圍;對應至整個 .exe 或 .dll 檔案。|
+|[FuncDebugEnd](../../debugger/debug-interface-access/funcdebugend.md)|指定一個函式，該函式具有要結束偵錯工具的已定義點。|
+|[FuncDebugStart](../../debugger/debug-interface-access/funcdebugstart.md)|指定一個函式，該函式具有要開始偵錯工具的已定義點。|
+|[函式 (偵錯介面存取 SDK)](../../debugger/debug-interface-access/function-debug-interface-access-sdk.md)|指定函數。|
+|[標籤 (偵錯介面存取 SDK)](../../debugger/debug-interface-access/label-debug-interface-access-sdk.md)|指定程式碼中的位置。|
+|[PublicSymbol](../../debugger/debug-interface-access/publicsymbol.md)|指定建立可執行程式時所顯示的外部符號。|
+|[Thunk](../../debugger/debug-interface-access/thunk.md)|指定 `thunk`。|
+|[UsingNameSpace](../../debugger/debug-interface-access/usingnamespace.md)|指定 `namespace`identifier。|
 
 > [!NOTE]
-> 其他符號屬性可根據符號類型。 在個別的符號主題中列出了這些屬性。
+> 視符號類型而定，可能會有其他符號屬性可用。 這些屬性會列在個別的符號主題中。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [符號類型的類別階層架構](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md)
 - [IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)
 - [符號和符號標記](../../debugger/debug-interface-access/symbols-and-symbol-tags.md)

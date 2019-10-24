@@ -22,23 +22,23 @@ dev_langs:
 - C++
 - jsharp
 helpviewer_keywords:
-- MSBuild (Visual C++), Link task
-- Link task (MSBuild (Visual C++))
+- MSBuild (C++), Link task
+- Link task (MSBuild (C++))
 ms.assetid: 0a61f168-3113-4fa7-83a3-d9142e2a33f8
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 432ef1231f551d265e06242e2ab4ddc58a0fe5ac
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
-ms.translationtype: HT
+ms.openlocfilehash: f2241daa50a35a9714fd66b10966298279bc37fe
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67825404"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747283"
 ---
 # <a name="link-task"></a>Link 工作
-包裝 Visual C++ 連結器工具 (link.exe  )。 連結器工具會連結通用物件檔案格式 (COFF) 目的檔及程式庫，以建立可執行檔 ( *.exe*) 或動態連結程式庫 (DLL)。 如需詳細資訊，請參閱[連結器選項](/cpp/build/reference/linker-options)。
+包裝 Microsoft C++連結器工具（ *link .exe*）。 連結器工具會連結通用物件檔案格式 (COFF) 目的檔及程式庫，以建立可執行檔 ( *.exe*) 或動態連結程式庫 (DLL)。 如需詳細資訊，請參閱[連結器選項](/cpp/build/reference/linker-options)。
 
 ## <a name="parameters"></a>參數
  以下描述 **Link** 工作的參數。 大部分的工作參數以及數組參數會對應到命令列選項。
@@ -217,7 +217,7 @@ ms.locfileid: "67825404"
 
   選擇性的 **String[]** 參數。
 
-  此參數會導致 DLL「延遲載入」  。 指定要延遲載入的 DLL 名稱。
+  此參數會導致 DLL「延遲載入」。 指定要延遲載入的 DLL 名稱。
 
   如需詳細資訊，請參閱 [/DELAYLOAD (延遲載入匯入)](/cpp/build/reference/delayload-delay-load-import)。
 
@@ -339,7 +339,7 @@ ms.locfileid: "67825404"
 
   選擇性的 **Boolean** 參數。
 
-  如果是 `true`，即會建立「對應檔」  。 對應檔的副檔名是 *.map*。
+  如果是 `true`，即會建立「對應檔」。 對應檔的副檔名是 *.map*。
 
   如需詳細資訊，請參閱 [/MAP (產生對應檔)](/cpp/build/reference/map-generate-mapfile)。
 
@@ -527,7 +527,7 @@ ms.locfileid: "67825404"
 
   選擇性的 **String** 參數。
 
-  指定 .idl  檔案的檔名和副檔名。
+  指定 .idl 檔案的檔名和副檔名。
 
   如需詳細資訊，請參閱 [/IDLOUT (命名 MIDL 輸出檔案)](/cpp/build/reference/idlout-name-midl-output-files)。
 
@@ -647,7 +647,7 @@ ms.locfileid: "67825404"
 
   選擇性的 **Boolean** 參數。
 
-  如果是 `true`，即會產生可執行映像檔，其可使用 Windows 的「位址空間配置隨機載入」  (ASLR) 功能，於載入時隨機重定基底。
+  如果是 `true`，即會產生可執行映像檔，其可使用 Windows 的「位址空間配置隨機載入」(ASLR) 功能，於載入時隨機重定基底。
 
   如需詳細資訊，請參閱 [/DYNAMICBASE (使用位址空間配置隨機載入)](/cpp/build/reference/dynamicbase-use-address-space-layout-randomization)。
 
@@ -923,5 +923,5 @@ ms.locfileid: "67825404"
 
   如需詳細資訊，請參閱 [/VERSION (版本資訊)](/cpp/build/reference/version-version-information)。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [工作參考](../msbuild/msbuild-task-reference.md)

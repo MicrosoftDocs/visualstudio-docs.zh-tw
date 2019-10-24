@@ -1,5 +1,5 @@
 ---
-title: 'Idiaenumlinenumbers:: Next |Microsoft Docs'
+title: IDiaEnumLineNumbers：： Next |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 66abd987e3da4fadaac9d5b2de6664c4ae9e24ac
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 07402ef7028ecfb7bb5b2c6e33ae06bc98ffe709
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62829754"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72744395"
 ---
 # <a name="idiaenumlinenumbersnext"></a>IDiaEnumLineNumbers::Next
-擷取指定的數目的列舉型別序列中的行號。
+抓取列舉序列中指定數目的行號。
 
 ## <a name="syntax"></a>語法
 
@@ -35,20 +35,20 @@ HRESULT Next ( 
 #### <a name="parameters"></a>參數
  celt
 
-[in]要擷取列舉值中的行號的數字。
+在列舉值中要抓取的行號數目。
 
  rgelt
 
-[out]傳回的陣列[IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)物件，代表所要的行號。
+脫銷傳回[IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)物件的陣列，表示所需的行號。
 
  pceltFetched
 
-[out]擷取列舉值中傳回列數字的數目。
+脫銷傳回已提取枚舉器中的行號數目。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，則傳回 `S_OK`。 傳回`S_FALSE`有沒有更多的行號。 否則會傳回錯誤碼。
+ 如果成功，會傳回 `S_OK`。 如果沒有其他行號，則傳回 `S_FALSE`。 否則會傳回錯誤碼。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)
 - [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)
 - [IDiaSession::findLinesByLinenum](../../debugger/debug-interface-access/idiasession-findlinesbylinenum.md)

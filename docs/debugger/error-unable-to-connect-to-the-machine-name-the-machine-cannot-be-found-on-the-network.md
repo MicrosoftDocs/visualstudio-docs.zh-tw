@@ -1,5 +1,5 @@
 ---
-title: 錯誤：無法連線到機器&lt;名稱&gt;。 網路上找不到這部電腦。 | Microsoft Docs
+title: 錯誤：無法連接到電腦 &lt;name &gt;。 網路上找不到這部電腦。 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 f1_keywords:
@@ -16,14 +16,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b8eebd082df031161604bd04afe61d1aca652f6a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7d0f820156714a726d506d8871d4e42a8dc12a23
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62850056"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72736829"
 ---
-# <a name="error-unable-to-connect-to-the-machine-ltnamegt-the-machine-cannot-be-found-on-the-network"></a>錯誤：無法連線到機器&lt;名稱&gt;。 網路上找不到這部電腦。
+# <a name="error-unable-to-connect-to-the-machine-ltnamegt-the-machine-cannot-be-found-on-the-network"></a>錯誤：無法連接到電腦 &lt;name &gt;。 網路上找不到這部電腦。
 如果下列其中一種情況為 true 時，就會發生這個行為：
 
 - 與遠端電腦的連線中斷。
@@ -44,6 +44,6 @@ ms.locfileid: "62850056"
 
 - 請確定您用以連接遠端電腦的密碼是有效的，而且尚未到期。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [Remote Debugging](../debugger/remote-debugging.md)
 - [偵錯設定和準備](../debugger/debugger-settings-and-preparation.md)

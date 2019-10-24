@@ -11,18 +11,18 @@ dev_langs:
 - jsharp
 - C++
 helpviewer_keywords:
-- MSBuild (Visual C++), FXC task
-- FXC task (MSBuild (Visual C++))
+- MSBuild (C++), FXC task
+- FXC task (MSBuild (C++))
 author: mikeblome
 ms.author: mblome
 ms.workload:
 - multiple
-ms.openlocfilehash: 65819f1625477effab024055828301b26ab5804a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 766a3dc35d72e21fc0aca9436ebff25dc3193a2e
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62931486"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747329"
 ---
 # <a name="fxc-task"></a>FXC 工作
 
@@ -32,7 +32,7 @@ ms.locfileid: "62931486"
 
 下表說明 **FXC** 工作的參數。
 
-|參數|說明|
+|參數|描述|
 |---------------|-----------------|
 |**AdditionalIncludeDirectories**|選擇性的 **string[]** 參數。<br/><br/>指定一或多個要新增至 Include 路徑中的目錄；如有多個目錄，請使用分號加以分隔。<br/><br/>使用 `/I[path]`。|
 |**AdditionalOptions**|選擇性的 **string** 參數。|
@@ -53,12 +53,12 @@ ms.locfileid: "62931486"
 |**SetRootSignature**|選擇性的 **string** 參數。<br/><br/>將根簽章附加到著色器位元組程式碼。 適用於著色器模型 5.0 (含) 以上版本。<br/><br/>使用 `/setrootsignature`。|
 |**ShaderModel**|選擇性的 **string** 參數。<br/><br/>指定著色器模型。 某些著色器類型只能搭配最新的著色器模型使用。<br/><br/>使用 `/T [type]_[model]`。|
 |**ShaderType**|選擇性的 **string** 參數。<br/><br/>指定著色器類型。<br/><br/>使用 `/T [type]_[model]`。<br/><br/>**Effect**，使用 `fx`。<br/>**Vertex**，使用 `vs`。<br/>**Pixel**，使用 `ps`。<br/>**Geometry**，使用 `gs`。<br/>**Hull**，使用 `hs`。<br/>**Domain**，使用 `ds`。<br/>**Compute**，使用 `cs`。<br/>**Library**，使用 `lib`。<br/>**RootSignature**，產生根簽章物件。|
-|**來源**|必要的 **ITaskItem** 參數。|
+|**Source**|必要的 **ITaskItem** 參數。|
 |**SuppressStartupBanner**|選擇性的 **bool** 參數。<br/><br/>隱藏程式啟始資訊及資訊訊息。<br/><br/>使用 `/nologo`。|
 |**TrackerLogDirectory**|選擇性的 **string** 參數。|
 |**TreatWarningAsError**|選擇性的 **bool** 參數。<br/><br/>將所有編譯器警告視為錯誤。<br/><br/>若是新專案，建議在所有編譯中使用 `/WX`；解決所有警告時，才能將難以找出的程式碼缺失降至最低。|
 |**VariableName**|選擇性的 **string** 參數。<br/><br/>指定標頭檔中變數名稱的名稱。<br/><br/>使用 `/Vn [name]`。|
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 [工作參考](../msbuild/msbuild-task-reference.md)

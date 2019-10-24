@@ -1,5 +1,5 @@
 ---
-title: 執行文件資料表 |Microsoft Docs
+title: 正在執行檔資料表 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,48 +14,48 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bd66b245da88b26c75c612ab7e45ccc01b4ab607
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 4645899e8c4cd73758316a3c2a8d74ccb169aa2d
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66318708"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72724063"
 ---
 # <a name="running-document-table"></a>執行中的文件資料表
-IDE 會維護呼叫執行的文件資料表 (RDT) 的內部結構中所有目前開啟的文件的清單。 此清單包含所有開啟的文件在記憶體中，不論是否目前正在編輯這些文件。 文件是會保留，包括檔案的專案或主要專案檔 （例如.vcxproj 檔案） 中的任何項目。
+IDE 會以名為執行檔資料表（RDT）的內部結構來維護所有目前開啟的檔案清單。 這份清單包含記憶體中所有開啟的檔，不論目前是否正在編輯這些檔。 檔是任何保存的專案，包括專案中的檔案或主要專案檔（例如，.vcxproj 檔案）。
 
-## <a name="elements-of-the-running-document-table"></a>執行文件表格的項目
- 執行文件資料表包含下列項目。
+## <a name="elements-of-the-running-document-table"></a>執行檔資料表的元素
+ 執行中的檔資料表包含下列專案。
 
 |項目|描述|
 |-------------|-----------------|
-|文件 moniker|字串，可唯一識別文件資料物件。 這會是可管理的檔案 (例如 C:\MyProject\MyFile) 的專案系統的絕對檔案路徑。 這個字串也會儲存在檔案系統，例如在資料庫中的預存程序以外的存放區中的專案。 在此情況下，專案系統可以發明的唯一字串，它可以辨識和可能剖析以判斷如何儲存文件。|
-|階層擁有者|擁有文件，表示的階層物件<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>介面。|
-|項目識別碼|在階層內的特定項目的項目識別項。 這個值是擁有這份文件的階層中的所有文件中的唯一性，但此值不保證是唯一的不同階層。|
-|文件資料物件|這是最小值， `IUnknown`<br /><br /> 物件。 IDE 不需要任何特定的介面之外`IUnknown`自訂編輯器的文件資料物件的介面。 不過，對於標準編輯器中，編輯器實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2>介面，才能處理檔案從專案的持續性呼叫。 如需詳細資訊，請參閱 <<c0> [ 儲存標準文件](../../extensibility/internals/saving-a-standard-document.md)。|
-|旗標|項目新增至 RDT 時，可以指定旗標，以控制是否將儲存的文件，是否套用的讀取或編輯的鎖定，並依此類推。 如需詳細資訊，請參閱 <xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS> 列舉。|
-|編輯鎖定計數|編輯鎖定計數。 編輯鎖定指出某些編輯器已開啟進行編輯的文件。 時的編輯鎖定計數轉換為零，會提示使用者儲存文件，如果已修改。 例如，每次您使用編輯器中開啟文件**開新視窗**命令時，編輯鎖定會加入在 RDT 該文件。 為了讓設定編輯鎖定，文件必須有階層，或項目識別碼。|
-|讀取鎖定計數|讀取鎖定的計數。 讀取的鎖定會指出，正在透過一些機制，例如精靈中讀取文件。 讀取的鎖定會保留在文件存留在 RDT 同時表示無法編輯文件。 您可以設定讀取的鎖定，即使文件不會有階層或項目識別碼。 這項功能可讓您在記憶體中開啟文件，並進入 RDT 中沒有任何階層所擁有的文件。 這項功能很少使用。|
-|鎖定持有者|執行個體<xref:Microsoft.VisualStudio.Shell.Interop.IVsDocumentLockHolder>介面。 鎖定持有者會實作功能，例如精靈，可開啟及編輯外部編輯器的文件。 鎖定持有者可讓要新增的編輯鎖定文件以防止文件正在關閉，但仍被編輯的功能。 一般來說，編輯鎖定只會新增文件視窗 （也就是編輯器）。|
+|檔標記|可唯一識別檔資料物件的字串。 這會是管理檔案之專案系統的絕對檔案路徑（例如，C:\MyProject\MyFile）。 這個字串也用於儲存于檔案系統以外之存放區中的專案，例如資料庫中的預存程式。 在此情況下，專案系統可以建立一個可辨識的唯一字串，而且可能會進行剖析以判斷如何儲存檔。|
+|階層擁有者|擁有檔的階層物件，如 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> 介面所表示。|
+|專案識別碼|階層中特定專案的專案識別碼。 這個值在擁有這份檔的階層中的所有檔之間是唯一的，但此值不保證在不同的階層之間是唯一的。|
+|檔資料物件|這是最小的 `IUnknown`<br /><br /> 物件。 IDE 不需要自訂編輯器的檔資料物件之 `IUnknown` 介面以外的任何特定介面。 不過，針對標準編輯器，需要編輯器的 <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2> 介面的執行，才能處理來自專案的檔案持續性呼叫。 如需詳細資訊，請參閱[儲存標準檔](../../extensibility/internals/saving-a-standard-document.md)。|
+|旗標|當專案新增至 RDT 時，可以指定是否要儲存檔、是否套用讀取或編輯鎖定等等的旗標。 如需詳細資訊，請參閱 <xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS> 列舉。|
+|編輯鎖定計數|編輯鎖定的計數。 編輯鎖定表示某些編輯器已開啟檔進行編輯。 當編輯鎖定的計數轉換成零時，系統會提示使用者儲存檔（如果已修改的話）。 例如，每次您使用 [**新增視窗]** 命令在編輯器中開啟檔時，就會在 RDT 中新增該檔的編輯鎖定。 為了設定編輯鎖定，檔必須具有階層或專案識別碼。|
+|讀取鎖定計數|讀取鎖定的計數。 「讀取鎖定」表示會透過一些機制（例如 wizard）來讀取檔。 讀取鎖定會在 RDT 中保存檔，同時指出無法編輯檔。 即使檔沒有階層或專案識別碼，您也可以設定讀取鎖定。 這項功能可讓您在記憶體中開啟檔，並在沒有任何階層所擁有檔的 RDT 中輸入。 這項功能很少使用。|
+|鎖定持有者|@No__t_0 介面的實例。 鎖定持有者是由功能所執行，例如在編輯器之外開啟和編輯檔的程式。 鎖定持有者可讓功能在檔中加入編輯鎖定，以防止檔在仍在編輯時關閉。 一般來說，編輯鎖定只會由文件視窗（也就是編輯器）新增。|
 
- RDT 中的每個項目具有唯一的階層或項目 ID 與其相關聯，這通常會對應至專案中的一個節點。 可供編輯的所有文件通常是由某階層擁有。 RDT 中所做的項目會控制哪一個專案，或-更精確地說，哪一個階層，目前擁有要編輯的文件資料物件。 RDT 中使用的資訊，IDE 可以防止文件一次開啟多個專案。
+ RDT 中的每個專案都有與其相關聯的唯一階層或專案識別碼，這通常會對應至專案中的一個節點。 所有可供編輯的檔通常都是由階層所擁有。 在 RDT 中進行的專案，可控制哪些是目前擁有正在編輯之檔資料物件的階層（或更精確）。 藉由使用 RDT 中的資訊，IDE 可以防止一次有一個以上的專案開啟檔。
 
- 階層也會控制資料的持續性，並使用 RDT 中的資訊來更新**儲存**並**另存新檔**對話方塊。 當使用者修改文件，然後選擇 **結束**命令**檔案**功能表中，IDE 可以會提示他們具有**儲存變更**對話方塊以顯示所有專案和目前修改的專案項目。 這可讓使用者選擇其中一個要儲存的文件。 若要儲存的文件清單 （也就是這些文件有變更） 從 RDT 產生。 您會看到在任何項目**儲存變更**對話方塊中，在結束應用程式時應該在 RDT 的記錄。 RDT 協調儲存的文件，及是否會提示使用者儲存的相關作業使用指定的旗標項目，每個文件中的值。 如需有關 RDT 旗標的詳細資訊，請參閱<xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS>列舉型別。
+ 階層也會控制資料的持續性，並使用 RDT 中的資訊來更新 [**儲存**] 和 [**另存**新檔] 對話方塊。 當使用者修改**檔**，然後從 [檔案] 功能表中選擇 [結束 **] 命令時**，IDE 會以 [**儲存變更**] 對話方塊提示它們，以顯示目前已修改的所有專案和專案專案。 這可讓使用者選擇要儲存的檔。 要儲存的檔案清單（也就是那些有變更的檔）是從 RDT 產生的。 在結束應用程式時，您預期會在 [**儲存變更**] 對話方塊中看到的任何專案，都應該具有 RDT 中的記錄。 RDT 會使用每份檔的 Flags 專案中指定的值，來協調儲存的檔，以及使用者是否會收到儲存作業的提示。 如需 RDT 旗標的詳細資訊，請參閱 <xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS> 列舉。
 
 ## <a name="edit-locks-and-read-locks"></a>編輯鎖定和讀取鎖定
- 編輯鎖定和讀取的鎖定位於 RDT。 文件視窗的遞增和遞減編輯鎖定。 因此，當使用者開啟新的文件視窗，編輯鎖定計數遞增一。 當編輯鎖定數目到達零時，階層會接收信號，以保存資料或儲存為相關聯的文件。 階層可接著保留任何的方式，包括保存為檔案或儲存機制中的項目中的資料。 您可以使用<xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.LockDocument%2A>方法中的<xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable>介面，以新增編輯鎖定和讀取鎖定，而<xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.UnlockDocument%2A>方法來移除這些鎖定。
+ [編輯鎖定] 和 [讀取鎖定] 位於 RDT 中。 文件視窗會遞增並遞減編輯鎖定。 因此，當使用者開啟新的文件視窗時，編輯鎖定計數會遞增一。 當編輯鎖定的數目達到零時，會通知階層以保存或儲存相關聯檔的資料。 然後，階層可以任何方式保存資料，包括保存為檔案或存放庫中的專案。 您可以使用 <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable> 介面中的 <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.LockDocument%2A> 方法來新增編輯鎖定和讀取鎖定，以及用來移除這些鎖定的 <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.UnlockDocument%2A> 方法。
 
- 一般來說，文件視窗中，編輯器會具現化，視窗框架會自動新增文件的編輯鎖定 RDT 中。 不過，如果您建立文件的自訂檢視，不使用標準的文件視窗 (也就是它不會實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame>介面)，則您需要設定您自己的編輯鎖定。 例如，在精靈中，編輯文件而不需要在編輯器中開啟。 為了讓文件鎖定，來開啟精靈和類似的實體，這些實體必須實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsDocumentLockHolder>介面。 若要註冊您的文件鎖定持有者，呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.RegisterDocumentLockHolder%2A>方法，並傳入您<xref:Microsoft.VisualStudio.Shell.Interop.IVsDocumentLockHolder>實作。 如此一來，是在 RDT 中將您的文件鎖定持有者。 實作文件鎖定持有者的另一種情況是如果您開啟的文件，透過特殊的工具視窗。 在此情況下，您就無法將工具視窗的關閉文件項目。 不過，註冊為 RDT 中的文件鎖定持有者，IDE 可以呼叫您實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsDocumentLockHolder.CloseDocumentHolder%2A>提示關閉文件的方法。
+ 一般來說，當編輯器的文件視窗具現化時，視窗框架會自動在 RDT 中加入檔的編輯鎖定。 不過，如果您建立的檔不是使用標準檔視窗的自訂視圖（也就是，它不會執行 <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame> 介面），則您必須設定自己的編輯鎖定。 例如，在嚮導中，會編輯檔，而不會在編輯器中開啟。 為了讓檔鎖定能夠由「嚮導」和「類似」實體開啟，這些實體必須執行 <xref:Microsoft.VisualStudio.Shell.Interop.IVsDocumentLockHolder> 介面。 若要註冊您的檔鎖定持有者，請呼叫 <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.RegisterDocumentLockHolder%2A> 方法，並傳入您的 <xref:Microsoft.VisualStudio.Shell.Interop.IVsDocumentLockHolder> 執行。 這麼做會將您的檔鎖定持有者新增至 RDT。 執行檔鎖定持有者的另一個案例是，如果您透過特殊工具視窗來開啟檔。 在此情況下，您無法讓工具視窗關閉檔。 不過，藉由在 RDT 中註冊為檔鎖定持有者，IDE 可以呼叫 <xref:Microsoft.VisualStudio.Shell.Interop.IVsDocumentLockHolder.CloseDocumentHolder%2A> 方法的執行，以提示檔的關閉。
 
-## <a name="other-uses-of-the-running-document-table"></a>執行 Document 資料表的其他用法
- 在 IDE 中的其他實體使用 RDT 取得文件的相關資訊。 比方說，原始檔控制管理員會使用 RDT 來告訴系統它會取得檔案的最新版本之後，重新載入在編輯器中，文件。 若要這樣做，原始檔控制管理員會查閱 RDT，若要查看其中是否有任何開啟中的檔案。 如果是，則原始檔控制管理員會先檢查以查看階層實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2.ReloadItem%2A>方法。 如果專案不會實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2.ReloadItem%2A>方法，則原始檔控制管理員檢查實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2.ReloadDocData%2A>文件資料物件直接的方法。
+## <a name="other-uses-of-the-running-document-table"></a>執行檔資料表的其他用途
+ IDE 中的其他實體會使用 RDT 來取得檔的相關資訊。 例如，原始檔控制管理員會在取得檔案的最新版本之後，使用 RDT 來指示系統在編輯器中重載檔。 若要這樣做，原始檔控制管理員會查閱 RDT 中的檔案，以查看其中是否有任何開啟的檔案。 如果是，則原始檔控制管理員會先檢查階層是否會執行 <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2.ReloadItem%2A> 方法。 如果專案未執行 <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2.ReloadItem%2A> 方法，則原始檔控制管理員會直接在檔資料物件上檢查 <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2.ReloadDocData%2A> 方法的執行。
 
- IDE 也使用 RDT resurface （提到最上層） 開啟的文件，如果使用者要求該文件。 如需詳細資訊，請參閱 <<c0> [ 使用 開啟檔案命令顯示檔案](../../extensibility/internals/displaying-files-by-using-the-open-file-command.md)。 若要判斷檔案是否為開啟 RDT 中，執行下列任一種。
+ 如果使用者要求該檔，IDE 也會使用 RDT 來 resurface （帶入 front）開啟的檔。 如需詳細資訊，請參閱[使用開啟檔案命令顯示](../../extensibility/internals/displaying-files-by-using-the-open-file-command.md)檔案。 若要判斷檔案是否已在 RDT 中開啟，請執行下列其中一項動作。
 
-- 若要找出項目是否已開啟的文件 moniker （也就是完整的文件路徑） 的查詢。
+- 查詢檔標記（也就是完整檔路徑），以找出專案是否已開啟。
 
-- 使用階層或項目識別碼來要求專案系統的完整文件路徑，並接著 RDT 中查閱項目。
+- 使用 [階層] 或 [專案識別碼]，要求專案系統提供完整的檔路徑，然後在 RDT 中查看專案。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [RDT_ReadLock 使用方式](../../extensibility/internals/rdt-readlock-usage.md)
 - [持續性與執行中的文件資料表](../../extensibility/internals/persistence-and-the-running-document-table.md)

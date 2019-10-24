@@ -12,18 +12,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d3d1df772dc6fa4b1ad6e38a319532bea111e97
-ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
+ms.openlocfilehash: ccc83062427ac2ecd3f340d6e1dbbe4d988ab0af
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66431724"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745327"
 ---
-# <a name="cvcputypee"></a>CV_CPU_TYPE_e
+# <a name="cv_cpu_type_e"></a>CV_CPU_TYPE_e
 指定目標處理器。
 
 > [!NOTE]
-> 之後的列舉型別項目中已識別的處理器`CV_CFL_*`前置詞。
+> 處理器會在 `CV_CFL_*` 前置詞之後的列舉元素中識別。
 
 ## <a name="syntax"></a>語法
 
@@ -96,11 +96,11 @@ typedef enum CV_CPU_TYPE_e {
 ```
 
 ## <a name="remarks"></a>備註
-這個列舉型別中的值會傳回呼叫[idiasymbol:: Get_platform](../../debugger/debug-interface-access/idiasymbol-get-platform.md)方法。
+這個列舉中的值是由呼叫[IDiaSymbol：： get_platform](../../debugger/debug-interface-access/idiasymbol-get-platform.md)方法所傳回。
 
 ## <a name="requirements"></a>需求
-標頭： cvconst.h
+標頭： cvconst。h
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [列舉和結構](../../debugger/debug-interface-access/enumerations-and-structures.md)
 - [IDiaSymbol::get_platform](../../debugger/debug-interface-access/idiasymbol-get-platform.md)

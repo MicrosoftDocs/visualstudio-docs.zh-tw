@@ -1,5 +1,5 @@
 ---
-title: 範本目錄描述 (。Vsdir) 檔案 |Microsoft Docs
+title: 範本目錄描述（。Vsdir）檔案 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,56 +12,56 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ad06428905f924e0e339882057ee4e657da47e8a
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: fb20a1fbc8d5edd9783521fa933dbddc74ac2a22
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66331107"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72722819"
 ---
 # <a name="template-directory-description-vsdir-files"></a>範本目錄描述檔 (.Vsdir)
-範本目錄描述檔 (.vsdir) 是文字檔案，可讓整合式的開發環境 (IDE)，以顯示資料夾、 精靈.vsz 檔案，以及您在對話方塊中的專案相關聯的範本檔案。 內容包括每個檔案或資料夾的一筆記錄。 參考的位置中的所有.vsdir 檔案會都合併，雖然只有一個.vsdir 檔案通常提供來描述多個資料夾、 精靈、 或範本檔案。
+範本目錄描述檔（vsdir）是一個文字檔，可讓整合式開發環境（IDE）顯示資料夾、wizard .vsz 檔案，以及與您在對話方塊中的專案相關聯的範本檔案。 內容包含每個檔案或資料夾的一筆記錄。 雖然通常只會提供一個 vsdir 檔案來描述多個資料夾、嚮導或範本檔案，但會合並參考位置中的所有 vsdir 檔案。
 
- 資料夾 （子目錄），到.vsdir 檔案，而且.vsdir 檔案本身中所參考的檔案都位於相同的目錄。 當 IDE 執行精靈，或顯示資料夾或檔案中的**新的專案**或是**加入新項目**對話方塊方塊中，IDE 會檢查包含執行的檔案，以決定是否.vsdir 檔案的目錄存在。 如果找到.vsdir 檔案時，IDE 會讀取以判斷其中是否包含執行或顯示資料夾或檔案的項目。 如果找到項目，則 IDE 會在精靈的執行或顯示的內容中使用的資訊。
+ 資料夾（子目錄）、vsdir 檔案中所參考的檔案，以及該檔案本身的檔案，全都位於相同的目錄中。 當 IDE 執行嚮導或在 [**新增專案**] 或 [**加入新專案**] 對話方塊中顯示資料夾或檔案時，ide 會檢查包含已執行檔案的目錄，以判斷是否有一個 vsdir 檔案。 如果找到一個 vsdir 檔案，IDE 就會讀取它，以判斷它是否包含已執行或已顯示之資料夾或檔案的專案。 如果找到專案，IDE 會使用執行嚮導或顯示內容中的資訊。
 
- 下列程式碼範例是來自檔案 SourceFiles.vsdir 中\<EnvSDK > \BscPrj\BscPrj\BscPrjProjectItems\Source_Files 登錄機碼：
+ 下列程式碼範例來自 \<EnvSDK > \BscPrj\BscPrj\BscPrjProjectItems\Source_Files 登錄機碼中的 file SourceFiles：
 
 ```
 HeaderFile.h|{E59935A1-6156-11d1-87A6-00A0C91E2A46}|#125|130|#126|0|0|0|#127
 SourceFile.cpp|{E59935A1-6156-11d1-87A6-00A0C91E2A46}|#122|110|#123|0|0|0|#124
 ```
 
- 在此情況下，兩筆記錄會在一個檔案中。 新的一行 （歸位字元） 會分隔每一筆記錄。 每一行代表不同的檔案類型。 管道 (&#124;) 字元會分隔每個記錄中的欄位。 單一目錄可以包含多個具有不同的檔案名稱的.vsdir 檔案，或者您可以有一個.vsdir 檔案，每個檔案類型。
+ 在此情況下，兩個記錄會在一個檔案中。 換行（回車符）會分隔每一筆記錄。 每一行代表不同的檔案類型。 分隔號（&#124;）字元會分隔每一筆記錄中的欄位。 單一目錄可以包含多個具有不同檔案名的 vsdir 檔案，或者每個檔案類型都可以有一個 vsdir 檔案。
 
 ## <a name="fields"></a>欄位
- 下表列出每一筆記錄指定的欄位。
+ 下表列出為每一筆記錄指定的欄位。
 
 | 欄位 | 描述 |
 | - | - |
-| 相對路徑名稱 (RelPathName) | 資料夾、 範本或.vsz 檔案，例如 HeaderFile.h 或 MyWizard.vsz 的名稱。 這個欄位也可以用來表示資料夾的名稱。 |
-| {clsidPackage} | VSPackage 可讓您存取中的當地語系化字串，例如 LocalizedName、 描述、 IconResourceId 和 SuggestedBaseName，VSPackage 的附屬動態連結程式庫 (DLL) 資源的 GUID。 如果未提供 DLLPath，適用於 IconResourceId。 **注意：** 此欄位是選擇性的除非一或多個先前的欄位是資源識別碼。 此欄位是未當地語系化文字的第三方精靈與對應的.vsdir 檔案通常是空白的。 |
-| LocalizedName | 精靈之範本檔案的當地語系化的名稱。 這個欄位可以是字串或表單"#ResID 」 的資源識別碼。 此名稱會顯示在**加入新項目** 對話方塊。 **注意：** 如果 LocalizedName 資源識別項，那麼就需要 {clsidPackage}。 |
-| SortPriority | 整數，表示此範本檔案或精靈的相對優先權。 比方說，如果此項目有值為 1，則此項目會顯示其他項目旁的值為 1 和 2 個或更大的在排序值的所有項目之前。<br /><br /> 排序優先順序是相對於相同的目錄中的項目。 在相同的目錄中可能有一個以上的.vsdir 檔案。 在此情況下，從所有的項目<em>。</em>在該目錄中的 vsdir 檔案會合併。 具有相同優先順序的項目所示的顯示名稱不區分大小寫的詞典編纂順序。 `_wcsicmp`函數用來排序的項目。<br /><br /> .Vsdir 檔案中未說明的項目包含大於最高的優先順序號碼.vsdir 檔案中列出的優先順序數字。 結果是清單的這些項目是清單的在顯示，不論其名稱結尾處。 |
-| 描述 | 精靈之範本檔案的當地語系化的描述。 這個欄位可以是字串或表單"#ResID 」 的資源識別碼。 此字串會出現在**新的專案**或是**加入新項目**對話方塊中選取的項目時。 |
-| DLLPath 或者 {clsidPackage} | 用來載入範本檔案或精靈的圖示。 圖示會 IconResourceId 載入為從.dll 或.exe 檔案資源。 使用完整路徑，或使用 VSPackage 的 GUID，可以識別此.dll 或.exe 檔案。 實作 VSPackage 的 DLL 用來載入圖示 （不附屬 DLL）。 |
-| IconResourceId | 中的資源識別碼的 DLL 或 VSPackage 的實作會決定要顯示的圖示的 DLL。 |
-| 旗標 (<xref:Microsoft.VisualStudio.Shell.Interop.__VSDIRFLAGS>) | 用來停用或啟用**名稱**並**位置**欄位上**加入新項目** 對話方塊。 值**旗標**欄位是十進位對等項目，必要的位元旗標的組合。<br /><br /> 當使用者選取項目上**的新**索引標籤上，專案會決定是否 [名稱] 欄位和 [位置] 欄位會顯示何時**加入新項目**第一次顯示對話方塊。 項目，透過.vsdir 檔案，可以控制只選取項目時是否將欄位已啟用與停用。 |
-| SuggestedBaseName | 代表檔案、 精靈 」 或範本的預設名稱。 這個欄位是字串或表單"#ResID 」 的資源識別碼。 IDE 會使用此值，以提供項目的預設名稱。 此基底值會附加至讓名稱成為唯一的例如 MyFile21.asp 整數值。<br /><br /> 在先前的清單中，描述、 DLLPath、 IconResourceId、 旗標和 SuggestedBaseNumber 僅適用於範本和精靈檔案。 這些欄位不適用於資料夾中。 中的 BscPrjProjectItems 檔案中的程式碼說明這項事實\<EnvSDK > \BscPrj\BscPrj\BscPrjProjectItems 登錄機碼。 此檔案包含三筆記錄 （一個用於每個資料夾） 與每一筆記錄的四個欄位：RelPathName，{clsidPackage}，LocalizedName 和 SortPriority。<br /><br /> `General&#124;{E59935A1-6156-11d1-87A6-00A0C91E2A46}&#124;#110&#124;100`<br /><br /> `Source_Files&#124;{E59935A1-6156-11d1-87A6-00A0C91E2A46}&#124;#111&#124;110`<br /><br /> `Env&#124;{E59935A1-6156-11d1-87A6-00A0C91E2A46}&#124;#112&#124;120` |
+| 相對路徑名稱（RelPathName） | 資料夾、範本或 .vsz 檔案的名稱，例如 HeaderFile 或 MyWizard。 此欄位也可以是用來表示資料夾的名稱。 |
+| {clsidPackage} | VSPackage 的 GUID，可讓您存取 VSPackage 的附屬動態連結程式庫（DLL）資源中的當地語系化字串，例如 LocalizedName、Description、IconResourceId 和 SuggestedBaseName。 如果未提供 DLLPath，則會套用 IconResourceId。 **注意：** 除非一個或多個先前的欄位是資源識別碼，否則此欄位是選擇性的。 此欄位通常是空白，適用于與不將其文字當地語系化的協力廠商嚮導對應的檔案。 |
+| LocalizedName | 範本檔案或 wizard 的當地語系化名稱。 此欄位可以是字串或格式為 "#ResID" 的資源識別碼。 這個名稱會顯示在 [**加入新專案**] 對話方塊中。 **注意：** 如果 LocalizedName 是資源識別碼，則需要 {clsidPackage}。 |
+| SortPriority | 整數，代表此範本檔案或 wizard 的相對優先順序。 例如，如果此專案的值為1，則此專案會顯示在 [其他專案] 旁，其值為1，而 [所有專案] 的排序值為2或更大。<br /><br /> 排序優先順序相對於相同目錄中的專案。 同一個目錄中可能有多個 vsdir 檔案。 在這種情況下，就是所有的專案<em>。</em>會合並該目錄中的 vsdir 檔案。 具有相同優先權的專案會以顯示名稱不區分大小寫的詞典編纂順序列出。 @No__t_0 函數是用來排序專案。<br /><br /> 不是在 vsdir 檔案中描述的專案，其優先順序數位會大於此 vsdir 檔案中所列的最高優先順序數位。 結果是這些專案是在顯示清單的結尾，不論其名稱為何。 |
+| 描述 | 範本檔案或 wizard 的當地語系化描述。 此欄位可以是字串或格式為 "#ResID" 的資源識別碼。 選取專案時，這個字串會出現在 [**新增專案**] 或 [**加入新專案**] 對話方塊中。 |
+| DLLPath 或 {clsidPackage} | 用來載入範本檔案或 wizard 的圖示。 圖示會使用 IconResourceId，以資源的形式載入 .dll 或 .exe 檔案。 您可以使用完整路徑或使用 VSPackage 的 GUID 來識別這個 .dll 或 .exe 檔案。 VSPackage 的執行 DLL 是用來載入圖示（而不是附屬 DLL）。 |
+| IconResourceId | DLL 或 VSPackage 執行 DLL 中的資源識別碼，可決定要顯示的圖示。 |
+| 旗標（<xref:Microsoft.VisualStudio.Shell.Interop.__VSDIRFLAGS>） | 用來停用或啟用 [**加入新專案**] 對話方塊上的 [**名稱**] 和 [**位置**] 欄位。 [**旗標**] 欄位的值是所需的位旗標之組合的十進位對應項。<br /><br /> 當使用者在 [**新增**] 索引標籤上選取專案時，專案會決定在第一次顯示 [**加入新專案**] 對話方塊時，是否要顯示 [名稱] 欄位和 [位置] 欄位。 透過 vsdir 檔案的專案，只能控制當選取專案時，欄位是否啟用與停用。 |
+| SuggestedBaseName | 表示檔案、wizard 或範本的預設名稱。 此欄位可以是字串或 "#ResID" 格式的資源識別碼。 IDE 會使用此值來提供專案的預設名稱。 此基底值會附加一個整數值，使其成為唯一的名稱，例如 MyFile21。<br /><br /> 在先前的清單中，Description、DLLPath、IconResourceId、Flags 和 SuggestedBaseNumber 僅適用于範本和 wizard 檔案。 這些欄位不適用於資料夾。 此事實會在 \<EnvSDK > \BscPrj\BscPrj\BscPrjProjectItems 登錄機碼中 BscPrjProjectItems 檔案的程式碼中說明。 此檔案包含三個記錄（每個資料夾各一個），每筆記錄都有四個欄位： RelPathName、{clsidPackage}、LocalizedName 和 SortPriority。<br /><br /> `General&#124;{E59935A1-6156-11d1-87A6-00A0C91E2A46}&#124;#110&#124;100`<br /><br /> `Source_Files&#124;{E59935A1-6156-11d1-87A6-00A0C91E2A46}&#124;#111&#124;110`<br /><br /> `Env&#124;{E59935A1-6156-11d1-87A6-00A0C91E2A46}&#124;#112&#124;120` |
 
- 當您建立精靈檔案時，您也應該考慮下列問題。
+ 當您建立 wizard 檔案時，您也應該考慮下列問題。
 
-- 任何有意義的資料是任何非必要的欄位應包含 0 （零），做為預留位置。
+- 沒有有意義之資料的任何非必要欄位，都應該包含0（零）做為預留位置。
 
-- 如果不提供任何當地語系化的名稱，則相對路徑名稱會使用精靈檔案中。
+- 如果未提供當地語系化的名稱，則會在 wizard 檔案中使用相對路徑名稱。
 
-- DLLPath 會覆寫 clsidPackage 圖示位置。
+- DLLPath 會覆寫圖示位置的 clsidPackage。
 
-- 如果沒有定義圖示，IDE 會取代該擴充功能的檔案的預設圖示。
+- 如果未定義任何圖示，IDE 會替代具有該副檔名之檔案的預設圖示。
 
-- 如果不提供任何建議的基底名稱，則會使用 'Project'。
+- 如果未提供建議的基底名稱，則會使用 ' Project '。
 
-- 如果您刪除.vsz 檔案、 資料夾或範本檔案，您也必須從.vsdir 檔案來移除其相關聯的記錄。
+- 如果刪除 .vsz 檔案、資料夾或範本檔案，您也必須從該檔案中移除其相關聯的記錄。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [精靈](../../extensibility/internals/wizards.md)
 - [精靈檔 (.Vsz)](../../extensibility/internals/wizard-dot-vsz-file.md)

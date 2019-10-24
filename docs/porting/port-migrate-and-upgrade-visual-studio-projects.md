@@ -19,12 +19,12 @@ helpviewer_keywords:
 - conversion, projects
 - asset compatibility
 - projects, conversion
-ms.openlocfilehash: 7a348693dcae89c7d27b12f80dd4e21534a7bdec
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.openlocfilehash: 139eb491304e1c83c579919781a6cd24bdf6e1eb
+ms.sourcegitcommit: 57bc1c3887838d707c13feff72a677b3bad3be4b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72574140"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72777820"
 ---
 # <a name="project-migration-and-upgrade-reference-for-visual-studio"></a>Visual Studio 的專案移轉與升級參考
 
@@ -47,7 +47,7 @@ Visual Studio 的每個版本一般都支援先前的專案、檔案及其他資
 
 | 專案類型 | 支援 |
 | --- | --- |
-| .NET Core 專案 (xproj) | 以 Visual Studio 2015 建立的專案所使用的預覽工具，包含 xproj 專案檔。<br/><br/>Visual Studio 2017：除了用於遷移至 .csproj 格式以外，不支援 xproj 格式。 當您開啟 xproj 檔案時，系統會提示您將檔案遷移至 SDK 樣式的 .csproj 格式。 （已建立 xproj 檔案的備份。）Visual Studio 2015 和更早版本中不支援 SDK 樣式的 .csproj 專案。 <br/><br/>Visual Studio 2019：在16.3 和更新版本中，您無法載入或遷移 xproj 專案。 如需詳細資訊，請參閱[將 .NET Core 專案移轉至 csproj 格式](/dotnet/core/migration/#visual-studio)。|
+| .NET Core 專案 (xproj) | 以 Visual Studio 2015 建立的專案所使用的預覽工具，包含 xproj 專案檔。 在 Visual Studio 2017 中，除了用於遷移至 .csproj 格式以外，不支援 xproj 格式。 當您開啟 xproj 檔案時，系統會提示您將檔案遷移至 SDK 樣式的 .csproj 格式。 （已建立 xproj 檔案的備份。）Visual Studio 2015 和更早版本中不支援 SDK 樣式的 .csproj 專案。 如需詳細資訊，請參閱[將 .NET Core 專案移轉至 csproj 格式](/dotnet/core/migration/#visual-studio)。|
 | 已啟用 Application Insights 的 ASP.NET Web 應用程式和 ASP.NET Core Web 應用程式 | 對每位 Visual Studio 使用者來說，資源資訊會儲存在每個使用者執行個體的登錄中。 當使用者未開啟任何專案，而要搜尋 Azure Application Insights 資料時，就會使用此資訊。 Visual Studio 2015 使用的登錄位置和 Visual Studio 2017 不同，因此不會產生衝突。<br/><br/>在使用者建立 ASP.NET Web 應用程式或 ASP.NET Core Web 應用程式之後，資源就會存放在 .suo 檔案中。 只要 Visual Studio 支援在 Visual Studio 2015 和 Visual Studio 2017 中使用專案和解決方案，使用者即可在這兩個版本中開啟專案，資源資訊亦可用於這兩個版本。 使用者必須在每個產品上進行一次驗證。 例如，如果專案是以 Visual Studio 2015 建立並在 Visual Studio 2017 中開啟，則使用者也需要在 Visual Studio 2017 上進行驗證。 |
 | C#/Visual Basic Webform 或 Windows Form | 您可以在 Visual Studio 2017 和 Visual Studio 2015 中開啟專案。 |
 | 資料庫單元測試專案 (csproj、vbproj) | Visual Studio 2017 可以載入舊版的資料單元測試專案，但會使用 GAC 版本的相依性。 若要升級單元測試專案以使用最新的相依性，請以滑鼠右鍵按一下方案總管，並選取 [轉換成 SQL Server 單元測試專案...]。 |
@@ -125,11 +125,11 @@ Visual Studio 的每個新版本通常都會嘗試維持與舊版的相容性，
 
 下列清單描述 Visual Studio 2019 對使用舊版建立之專案的支援。
 
-如果您看不到應於此處列出的專案或檔案類型，請參閱[本文的 Visual Studio 2017 版本](port-migrate-and-upgrade-visual-studio-projects.md)，然後使用本頁底部的 [Send feedback about > This page] \(傳送關於本頁的意見反應\) 選項，提供您專案的詳細資料。 (如果您使用匿名的「此頁面有所助益嗎？」 控制項，我們將無法回應您的意見反應。)
+如果您沒有看到此處所列的專案或檔案類型應該是，請參閱[這篇文章的 Visual Studio 2017 版本](/visualstudio/porting/port-migrate-and-upgrade-visual-studio-projects?view=vs-2017)。 您也可以使用此頁面底部的 [**傳送關於** > **此頁面**的意見反應] 按鈕，以提供專案的詳細資料。 (如果您使用匿名的「此頁面有所助益嗎？」 控制項，我們將無法回應您的意見反應。)
 
 | 專案類型 | 支援 |
 | --- | --- |
-| .NET Core 專案 (xproj) | 以 Visual Studio 2015 建立的專案所使用的預覽工具，包含 xproj 專案檔。 當您使用 Visual Studio 2019 開啟 xproj 檔案時，系統會提示您將檔案移轉為 csproj 格式 (會建立 xproj 檔案的備份)。 Visual Studio 2015 和更早版本不支援這種 .NET Core 專案適用的 csproj 格式。  xproj 格式必須移轉為 csproj，才能在 Visual Studio 2017 和更新版本中受到支援。 如需詳細資訊，請參閱[將 .NET Core 專案移轉至 csproj 格式](/dotnet/core/migration/#visual-studio)。|
+| .NET Core 專案 (xproj) | 以 Visual Studio 2015 建立的專案所使用的預覽工具，包含 xproj 專案檔。<br/><br/>Visual Studio 2017：除了用於遷移至 .csproj 格式以外，不支援 xproj 格式。 當您開啟 xproj 檔案時，系統會提示您將檔案遷移至 SDK 樣式的 .csproj 格式。 （已建立 xproj 檔案的備份。）Visual Studio 2015 和更早版本中不支援 SDK 樣式的 .csproj 專案。 <br/><br/>Visual Studio 2019：在16.3 和更新版本中，您無法載入或遷移 xproj 專案。 如需詳細資訊，請參閱[將 .NET Core 專案移轉至 csproj 格式](/dotnet/core/migration/#visual-studio)。|
 | 已啟用 Application Insights 的 ASP.NET Web 應用程式和 ASP.NET Core Web 應用程式 | 對每位 Visual Studio 使用者來說，資源資訊會儲存在每個使用者執行個體的登錄中。 當使用者未開啟任何專案，而要搜尋 Azure Application Insights 資料時，就會使用此資訊。 Visual Studio 2015 使用的登錄位置不同於 Visual Studio 2017 和 Visual Studio 2019，因此不會產生衝突。<br/><br/>在使用者建立 ASP.NET Web 應用程式或 ASP.NET Core Web 應用程式之後，資源就會存放在 .suo 檔案中。 只要 Visual Studio 支援在 Visual Studio 2015、Visual Studio 2017 和 Visual Studio 2019 中使用專案和方案，使用者即可在這些版本中開啟專案，資源資訊亦可用於每個版本。 使用者必須在每個產品上進行一次驗證。 例如，如果專案是以 Visual Studio 2017 建立並在 Visual Studio 2019 中開啟，則使用者也需要在 Visual Studio 2019 上進行驗證。 |
 | C#/Visual Basic Webform 或 Windows Form | 您可以在 Visual Studio 2019、Visual Studio 2017 和 Visual Studio 2015 中開啟專案。 |
 | 自動程式化 UI 測試 | 自動化 UI 驅動功能測試的自動程式化 UI 測試在 Visual Studio 2019 中已淘汰。 <br/><br/>Visual Studio 2019 將會是最後一個提供自動程式化 UI 測試的版本。 建議您使用 Selenium 測試 Web 應用程式，而使用 Appium 與 WinAppDriver 測試傳統型和 UWP 應用程式。 |

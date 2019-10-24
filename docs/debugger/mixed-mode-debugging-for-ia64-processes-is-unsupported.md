@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f0130ba9e893d5a4036df9ee1bc2ab22c8e18008
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c85c31cff5920ba3dc4b9356a1865d0db2323b2d
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62929871"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72731097"
 ---
 # <a name="mixed-mode-debugging-for-ia64-processes-is-unsupported"></a>不支援 IA64 處理序的混合模式偵錯。
 Visual Studio 不支援對 IA64 處理序中的 Managed 程式碼和機器碼進行混合模式偵錯。 這表示在偵錯時，您無法從 Managed 程式碼逐步執行到機器碼，或從機器碼逐步執行到 Managed 程式碼。
@@ -39,7 +39,7 @@ Visual Studio 不支援對 IA64 處理序中的 Managed 程式碼和機器碼進
 
 2. 在屬性頁中，按一下 [編譯] 或 [偵錯] 索引標籤。
 
-3. 按一下 [平台]，並從平台清單中選取 [x86]。
+3. 按一下 [平台]，然後從平台清單中選取 [x86]。
 
      根據預設，Visual Basic 和 C# 編譯器會產生可在任何 CPU 上執行的程式碼。 在 64 位元電腦上，這些二進位檔會當做 64 位元處理序執行。 若要在 32 位元處理序上執行，您必須選擇 [Win32]，而非 [AnyCPU]。
 
@@ -49,5 +49,5 @@ Visual Studio 不支援對 IA64 處理序中的 Managed 程式碼和機器碼進
 
 2. 在屬性頁中，按一下 [平台]，並從平台清單中選取 [Win32]。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [偵錯 64 位元應用程式](../debugger/debug-64-bit-applications.md)

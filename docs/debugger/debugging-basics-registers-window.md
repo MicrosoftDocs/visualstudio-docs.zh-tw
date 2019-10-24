@@ -17,14 +17,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: df01776b5a7f2437c704c2b389c7d0929be5901c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4deaf03013b6e28ea02e6ec7412bd23a05f1b87e
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62852262"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72738255"
 ---
-# <a name="about-the-registers-window-in-visual-studio-c-c-visual-basic-f"></a>關於 Visual Studio 中的暫存器視窗 (C#， C++，Visual Basic 中， F#)
+# <a name="about-the-registers-window-in-visual-studio-c-c-visual-basic-f"></a>關於 Visual Studio 中的 [暫存器C#] C++視窗（、 F#、Visual Basic、）
 
 只有在透過 [選項] 對話方塊的 [偵錯] 節點啟用位址層級偵錯時，才可以使用 [暫存器] 視窗。
 
@@ -40,31 +40,31 @@ ms.locfileid: "62852262"
 
  如需顯示 [暫存器] 視窗的詳細資訊，請參閱[使用暫存器視窗](../debugger/how-to-use-the-registers-window.md)。
 
- 當您查看**註冊** 視窗中，您會看到這類項目`EAX = 003110D8`。
+ 當您查看 [暫存器] 視窗時，您會看到如 **`EAX = 003110D8` 的專案**。
 
- 左邊的符號`=`標誌是註冊的名稱， `EAX`，在此案例。 `=` 號右邊的數值代表暫存器的內容。
+ @No__t_0 符號左邊的符號是暫存器名稱，`EAX`，在此案例中為。 `=` 號右邊的數值代表暫存器的內容。
 
  [暫存器] 視窗不僅可以讓您檢視暫存器的內容。 當您處於機器碼的中斷模式時，可按一下暫存器的內容，並編輯其數值。 但是您不應該任意進行這個動作。 除非您很了解正在編輯的暫存器和它所包含的資料，否則隨意編輯可能會導致程式損毀或其他不希望得到的結果。 可惜的是，各種 Intel 和 Intel 相容處理器的暫存器組合之詳細資訊不屬於本簡介說明範圍之列。
 
-## <a name="register-groups"></a>暫存器群組
+## <a name="register-groups"></a>註冊群組
 
 為了減少雜亂，[暫存器] 視窗會將暫存器組織成群組。 如果您以滑鼠右鍵按一下 [暫存器] 視窗，將會看到包含群組清單的捷徑功能表，就可依適合的方式加以顯示或隱藏。
 
-## <a name="register-flags"></a>暫存器旗標
+## <a name="register-flags"></a>註冊旗標
 
-適用於 Intel x86 處理器，您可能會看到中的下列旗標**註冊**視窗。 偵錯工作階段中，您也可以編輯這些旗標。
+針對 Intel x86 處理器，您可能**會在 [暫存器] 視窗**中看到下列旗標。 在「調試」會話期間，您也可以編輯這些旗標。
 
-|旗標|設定的值|
+|旗標|設定值|
 |-|-|
-|溢位|關於 = 1|
-|方向|最多 = 1|
-|插斷|EI = 1|
+|溢位|OV = 1|
+|方向|向上 = 1|
+|中止|EI = 1|
 |Sign|PL = 1|
 |零|ZR = 1|
-|輔助進位|AC = 1|
-|同位檢查|PE = 1|
-|執行|CY = 1|
+|輔助執行|AC = 1|
+|校驗|PE = 1|
+|傳遞|CY = 1|
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [如何：使用暫存器視窗](../debugger/how-to-use-the-registers-window.md)
 - [偵錯工具簡介](../debugger/debugger-feature-tour.md)

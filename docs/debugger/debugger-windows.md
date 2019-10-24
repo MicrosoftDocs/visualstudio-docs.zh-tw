@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c3d7303c1212a8042cb51abcfa363d59e41e67cc
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: 91df84c92761ae75ce9f26bddefad57c6dc8bc2c
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72431757"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72738303"
 ---
 # <a name="inspect-data-using-debugger-windows-in-visual-studio"></a>在 Visual Studio 中使用偵錯工具視窗檢查資料
 

@@ -1,5 +1,5 @@
 ---
-title: 'Idiaenumdebugstreamdata:: Get_count |Microsoft Docs'
+title: IDiaEnumDebugStreamData：： get_Count |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1f57318508f06258aec537de30f00326c3afca7a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1379a058cdfceea6762b88784cb7137583e6da74
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62838411"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72744889"
 ---
-# <a name="idiaenumdebugstreamdatagetcount"></a>IDiaEnumDebugStreamData::get_Count
-擷取偵錯資料流中的數字的記錄。
+# <a name="idiaenumdebugstreamdataget_count"></a>IDiaEnumDebugStreamData::get_Count
+抓取 debug 資料流程中的數位記錄。
 
 ## <a name="syntax"></a>語法
 
@@ -35,8 +35,8 @@ HRESULT get_Count ( 
 - [out，retval]傳回記錄的數目。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
+ 如果成功，會傳回 `S_OK`;否則，會傳回錯誤碼。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md)
 - [IDiaEnumDebugStreamData::Item](../../debugger/debug-interface-access/idiaenumdebugstreamdata-item.md)

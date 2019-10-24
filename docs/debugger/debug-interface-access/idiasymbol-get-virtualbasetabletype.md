@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: edbd1d8ae66e58611ab538cf0bfe695cb22b3412
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: aaddb8b71ba96511af3682b442c1e5c8e84a409c
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64793021"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72738833"
 ---
-# <a name="idiasymbolgetvirtualbasetabletype"></a>IDiaSymbol::get_virtualBaseTableType
-擷取虛擬基底資料表的指標類型。
+# <a name="idiasymbolget_virtualbasetabletype"></a>IDiaSymbol::get_virtualBaseTableType
+抓取虛擬基底資料表指標的類型。
 
 ## <a name="syntax"></a>語法
 
@@ -34,25 +34,25 @@ HRESULT get_virtualBaseTableType(
 
 |參數|描述|
 |---------------|-----------------|
-|`pRetVal`|[out]傳回[IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)指定類型的基底資料表的物件。|
+|`pRetVal`|脫銷傳回指定基表類型的[IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)物件。|
 
 ## <a name="return-value"></a>傳回值
- 如果成功，則傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。
+ 如果成功，會傳回 `S_OK`;否則，會傳回 `S_FALSE` 或錯誤碼。
 
 > [!NOTE]
-> 傳回值為`S_FALSE`表示此屬性不適用於符號。
+> @No__t_0 的傳回值表示該屬性不適用於符號。
 
 ## <a name="remarks"></a>備註
- 虛擬基底資料表的指標 (`vbtptr`) 中的隱藏指標[!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)]vtable 處理從虛擬基底類別繼承。 A`vbtptr`可以有不同的大小取決於繼承的類別。
+ 虛擬基底資料表指標（`vbtptr`）是 [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] vtable 中的隱藏指標，可處理來自虛擬基類的繼承。 根據繼承的類別，`vbtptr` 可以有不同的大小。
 
- 這個方法會傳回[IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)可用來判斷 vbtptr 大小的物件。
+ 這個方法會傳回可用來判斷 vbtptr 大小的[IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)物件。
 
 ## <a name="requirements"></a>需求
 
 |需求|描述|
 |-----------------|-----------------|
-|標頭：|dia2.h|
+|標頭：|dia2。h|
 |版本:|DIA SDK v8.0|
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

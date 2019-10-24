@@ -1,5 +1,5 @@
 ---
-title: 'Idiastackwalkhelper:: Imageforva |Microsoft Docs'
+title: IDiaStackWalkHelper：： imageForVA |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 56f71364f28bec56c058a52f5a9e79c6bba298b8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 609a9370181937323f2bc3e8ca0a0765cd1f4a12
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62837949"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741392"
 ---
 # <a name="idiastackwalkhelperimageforva"></a>IDiaStackWalkHelper::imageForVA
-傳回在指定的虛擬位址某處可執行檔的記憶體空間中的記憶體中的可執行檔映像。
+針對可執行檔的記憶體空間中某個位置的虛擬位址，傳回記憶體中可執行檔的映射開頭。
 
 ## <a name="syntax"></a>語法
 
@@ -34,14 +34,14 @@ HRESULT imageForVA(
 #### <a name="parameters"></a>參數
  `vaContext`
 
-[in]介於兩者可執行檔的空間中的虛擬位址。
+在位於可執行空間中某處的虛擬位址。
 
  `pvaImageStart`
 
-[out]傳回可執行檔的映像的起始虛擬位址。
+脫銷傳回可執行檔影像的起始虛擬位址。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
+ 如果成功，會傳回 `S_OK`;否則，會傳回錯誤碼。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)

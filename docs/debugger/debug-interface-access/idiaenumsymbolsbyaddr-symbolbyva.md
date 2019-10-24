@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a0b97b30b6f19e367cfbae72be29b6d8961f4e1a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: baf1fc45b69007d3fbe2393ec854ead447fac259
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62833409"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743799"
 ---
 # <a name="idiaenumsymbolsbyaddrsymbolbyva"></a>IDiaEnumSymbolsByAddr::symbolByVA
-將列舉值的虛擬位址 (VA) 中執行查閱。
+藉由依虛擬位址（VA）執行查閱，來放置枚舉器。
 
 ## <a name="syntax"></a>語法
 
@@ -34,15 +34,15 @@ HRESULT symbolByVA ( 
 #### <a name="parameters"></a>參數
  virtualAddress
 
-[in]虛擬位址。
+在虛擬位址。
 
  ppsymbol
 
-[out]傳回[IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)物件，表示找到的符號。
+脫銷傳回[IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)物件，代表找到的符號。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，則傳回 `S_OK`。 傳回`S_FALSE`如果找不到符號。 否則會傳回錯誤碼。
+ 如果成功，會傳回 `S_OK`。 如果找不到符號，則傳回 `S_FALSE`。 否則會傳回錯誤碼。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [IDiaEnumSymbolsByAddr](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr.md)
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

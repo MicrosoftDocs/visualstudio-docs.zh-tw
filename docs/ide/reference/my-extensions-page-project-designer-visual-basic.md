@@ -13,12 +13,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 229ee7f4384c5ab93a329104ecbe165e0e1136a4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 894d425d934043b7ed06b29bc3d6fa19115ccf17
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666463"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748677"
 ---
 # <a name="my-extensions-page-project-designer-visual-basic"></a>專案設計工具、My 擴充頁 (Visual Basic)
 使用 [專案設計工具] 的 [My 延伸模組] 頁面管理專案中的 `My` 命名空間延伸模組。 `My` 命名空間延伸模組可讓您自訂 `My` 命名空間，新增您自己的自訂成員。 如需建立自訂 `My` 命名空間延伸模組的資訊，請參閱[擴充 Visual Basic 中的 My 命名空間](/dotnet/visual-basic/developing-apps/customizing-extending-my/extending-the-my-namespace)。

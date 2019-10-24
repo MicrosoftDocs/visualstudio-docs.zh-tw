@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f8f9dafe8ada8914591426dea9abc867de2236f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 97f057edefefd590c37b49d709ecf8a6e029b905
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62564147"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745747"
 ---
 # <a name="cannot-change-value-dialog-box"></a>無法變更值對話方塊
 ## <a name="error"></a>錯誤
@@ -34,6 +34,6 @@ ms.locfileid: "62564147"
 ## <a name="solution"></a>方案
  確認您輸入偵錯工具視窗或 [快速監看式] 對話方塊內的輸入內容，對於您嘗試設定的變數而言是有效的值。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [偵錯工具中的運算式](../debugger/expressions-in-the-debugger.md)

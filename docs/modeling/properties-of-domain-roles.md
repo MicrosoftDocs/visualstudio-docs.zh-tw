@@ -7,12 +7,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a992cc06a177d329701ca98278ad14632bda8df1
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 97df4ceca2c511265a51f89c2f39a6595d200abf
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72658160"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748304"
 ---
 # <a name="properties-of-domain-roles"></a>網域角色的屬性
 下表中的屬性會與網域角色相關聯。 如需網域角色的詳細資訊，請參閱[瞭解模型、類別和關聯](../modeling/understanding-models-classes-and-relationships.md)性。 如需如何使用這些屬性的詳細資訊，請參閱[自訂和擴充特定領域語言](../modeling/customizing-and-extending-a-domain-specific-language.md)。

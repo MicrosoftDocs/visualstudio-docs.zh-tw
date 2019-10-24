@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 665e778fc0881ac05e165c85700d15285622c762
-ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
+ms.openlocfilehash: a4d11875a7ab2ca3f21f364308580a732b7516e6
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71186365"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72737923"
 ---
 # <a name="edit-and-continue-visual-c"></a>編輯後繼續 (Visual C#)
  利用 C# 的 [編輯後繼續]，偵錯時您可以在中斷模式中變更程式碼。 不需要停止並重新啟動偵錯工作階段，就可以套用這些變更。 在執行模式中，原始檔編輯器是唯讀的。
@@ -36,9 +36,9 @@ ms.locfileid: "71186365"
 
  啟用 [編輯後繼續] 時，當您使用偵錯工具執行命令 (例如 [繼續]、[逐步執行]、[設定下一個陳述式])，或在偵錯工具視窗中執行函式評估時，便會自動套用支援的變更。
 
- 如需詳細資訊，請參閱[如何：使用編輯後繼續 (C#)](../debugger/how-to-use-edit-and-continue-csharp.md)。
+ 如需詳細資訊，請參閱[如何：使用編輯後繼續C#（）](../debugger/how-to-use-edit-and-continue-csharp.md)。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [如何：使用編輯後繼續 (C#)](../debugger/how-to-use-edit-and-continue-csharp.md)
 - [支援的程式碼C#變更（和 Visual Basic）](../debugger/supported-code-changes-csharp.md)
 - [在 Visual Studio 中使用 XAML 熱重載來撰寫和偵測執行中的 XAML 程式碼](../debugger/xaml-hot-reload.md)

@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2cd51bd663087aa04a7ec4e60e5c4291a35d9193
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d021b5016bd0e0039f2bf175102dc44f04dabaab
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62833281"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72744300"
 ---
 # <a name="idiaenumsectioncontribsitem"></a>IDiaEnumSectionContribs::Item
-透過索引中擷取一節的貢獻。
+透過索引來抓取區段投稿。
 
 ## <a name="syntax"></a>語法
 
@@ -34,15 +34,15 @@ HRESULT Item ( 
 #### <a name="parameters"></a>參數
  索引
 
-[in]索引[IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)要擷取的物件。 索引是在範圍介於 0 到`count`-1，其中`count`會傳回[idiaenumsectioncontribs:: Get_count](../../debugger/debug-interface-access/idiaenumsectioncontribs-get-count.md)方法。
+在要抓取的[IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)物件索引。 索引的範圍是0到 `count`-1，其中 `count` 是由[IDiaEnumSectionContribs：： get_Count](../../debugger/debug-interface-access/idiaenumsectioncontribs-get-count.md)方法傳回。
 
  section
 
-[out]傳回[IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)物件，表示所需的區段所佔的比重。
+脫銷傳回[IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)物件，代表所需的區段比重。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
+ 如果成功，會傳回 `S_OK`;否則，會傳回錯誤碼。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [IDiaEnumSectionContribs::get_Count](../../debugger/debug-interface-access/idiaenumsectioncontribs-get-count.md)
 - [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

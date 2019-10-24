@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1fb132b4cf36eb686424e0f756ffe0387a432eb0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: cae6940ce69bf9cd39c1002cc522af993fc59b6d
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62827622"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742578"
 ---
-# <a name="idiasectioncontribgetnotpaged"></a>IDiaSectionContrib::get_notPaged
-擷取指出區段是否無法分頁記憶體不足的旗標。
+# <a name="idiasectioncontribget_notpaged"></a>IDiaSectionContrib::get_notPaged
+抓取表示區段是否無法分頁到記憶體的旗標。
 
 ## <a name="syntax"></a>語法
 
@@ -32,10 +32,10 @@ HRESULT get_notPaged ( 
 
 #### <a name="parameters"></a>參數
  `pRetVal`
-- [out，retval]會傳回`TRUE`; 否則為，則無法分頁區段，如果傳回`FALSE`。
+- [out，retval]如果區段無法分頁，則傳回 `TRUE`;否則，會傳回 `FALSE`。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，會傳回 `S_OK`。 傳回`S_FALSE`不支援這個屬性，則為。 否則會傳回錯誤碼。
+ 如果成功，會傳回 `S_OK`。 如果不支援此屬性，則傳回 `S_FALSE`。 否則會傳回錯誤碼。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

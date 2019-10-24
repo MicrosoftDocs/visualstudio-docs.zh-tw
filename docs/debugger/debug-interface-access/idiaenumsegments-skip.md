@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ff4c5d26d875dc098775d0d379e7d12b062801cd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: efedd0e24c96259f1c9e9b6fc7522ee250bd4b25
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62840014"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72744174"
 ---
 # <a name="idiaenumsegmentsskip"></a>IDiaEnumSegments::Skip
-略過指定的數目的列舉型別序列中的區段。
+略過列舉序列中指定數目的區段。
 
 ## <a name="syntax"></a>語法
 
@@ -33,10 +33,10 @@ HRESULT Skip ( 
 #### <a name="parameters"></a>參數
  celt
 
-[in]略過列舉序列中的區段數目。
+在列舉序列中要略過的區段數目。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，則傳回`S_OK`; 否則傳回`S_FALSE`如果有沒有更多的區段，以略過。
+ 如果成功，會傳回 `S_OK`;否則，如果沒有其他要略過的區段，則會傳回 `S_FALSE`。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [IDiaEnumSegments](../../debugger/debug-interface-access/idiaenumsegments.md)

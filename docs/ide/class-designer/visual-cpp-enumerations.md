@@ -1,5 +1,5 @@
 ---
-title: 類別設計工具中的 Visual C++ 列舉類型
+title: C++類別設計工具中的列舉
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,14 +10,14 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b5df17176839dccf0fbe0c42f164bde6b3e39f56
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a514d5eb4b7f79e2fd193c79de670b6dd9c14cb5
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72631127"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747985"
 ---
-# <a name="visual-c-enumerations-in-class-designer"></a>類別設計工具中的 Visual C++ 列舉
+# <a name="c-enumerations-in-class-designer"></a>C++類別設計工具中的列舉
 
 [類別設計工具] 支援 C++ `enum` 和範圍 `enum class` 類型。 以下是一個範例：
 
@@ -44,5 +44,5 @@ enum class CardSuit {
 
 ## <a name="see-also"></a>請參閱
 
-- [使用 Visual C++ 程式碼](working-with-visual-cpp-code.md)
+- [使用程式C++代碼](working-with-visual-cpp-code.md)
 - [列舉](/cpp/cpp/enumerations-cpp)

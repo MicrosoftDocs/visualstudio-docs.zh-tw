@@ -1,5 +1,5 @@
 ---
-title: IDiaPropertyStorage::ReadPropertyNames |Microsoft Docs
+title: IDiaPropertyStorage：： ReadPropertyNames |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7492e0eee0523fd102ecd057d075f2672bf3b25b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f554485ae56a9d5f190c749879545165d299531c
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839572"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742862"
 ---
 # <a name="idiapropertystoragereadpropertynames"></a>IDiaPropertyStorage::ReadPropertyNames
-擷取對應的字串名稱指定屬性識別碼。
+針對指定的屬性識別碼，抓取對應的字串名稱。
 
 ## <a name="syntax"></a>語法
 
@@ -35,21 +35,21 @@ HRESULT ReadPropertyNames (
 #### <a name="parameters"></a>參數
  `cpropid`
 
-[in]中的屬性識別碼的數目`rgpropid`。
+在@No__t_0 中的屬性識別碼數目。
 
  `rgpropid`
 
-[in]要取得名稱的屬性識別碼的陣列 (`PROPID`定義為 WTypes.h 中`ULONG`)。
+在要取得名稱的屬性識別碼陣列（`PROPID` 在 Wtypes.h 中定義為 `ULONG`）。
 
  `rglpwstrName`
 
-[in、 out]指定的屬性識別碼的屬性名稱的陣列。 陣列必須預先配置來保存屬性名稱的要求的數目，而且必須能夠容納至少`cpropid``BSTR`字串。
+[in、out]指定之屬性識別碼的屬性名稱陣列。 陣列必須預先配置，才能保存要求的屬性名稱數目，而且至少必須要有 `cpropid``BSTR` 的字串。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，則傳回`S_OK`; 否則會傳回錯誤碼。
+ 如果成功，會傳回 `S_OK`;否則會傳回錯誤碼。
 
 ## <a name="remarks"></a>備註
- 傳回的屬性名稱，必須釋放 (藉由呼叫`SysFreeString`函式) 在不再需要時。
+ 傳回的屬性名稱必須在不再需要時釋放（藉由呼叫 `SysFreeString` 函式）。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)

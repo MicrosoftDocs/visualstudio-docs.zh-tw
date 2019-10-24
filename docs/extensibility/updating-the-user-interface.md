@@ -11,17 +11,17 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2cec2e3a1049f59fa585e4f3a7b0bd608740ccfa
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: bf41a41e68aa73e07bdcafe8bcdcd335fff6e6eb
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66316352"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72718790"
 ---
 # <a name="updating-the-user-interface"></a>更新使用者介面
-實作的命令之後，您可以新增程式碼以更新使用者介面與您的新命令的狀態。
+在您執行命令之後，您可以加入程式碼，以新命令的狀態來更新使用者介面。
 
- 在典型的 Win32 應用程式中，會持續輪詢命令集，使用者可以檢視它們時，您可以調整個別命令的狀態。 不過，因為[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]shell 可以託管無限的數量的 Vspackage，廣泛的輪詢，可能會降低回應能力，尤其在 managed 程式碼與 COM 之間的 interop 組件輪詢
+ 在一般的 Win32 應用程式中，命令集可以持續輪詢，而個別命令的狀態可以在使用者進行流覽時調整。 不過，由於 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] shell 可以裝載無限數量的 Vspackage，因此廣泛的輪詢可能會降低回應能力，尤其是在 managed 程式碼和 COM 之間的交互操作元件之間輪詢。
 
 ### <a name="to-update-the-ui"></a>若要更新 UI
 
@@ -29,7 +29,7 @@ ms.locfileid: "66316352"
 
     - 呼叫 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.UpdateCommandUI%2A> 方法。
 
-         <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell>介面可從此<xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell>服務，如下所示。
+         @No__t_0 介面可以從 <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell> 服務取得，如下所示。
 
         ```csharp
         void UpdateUI(Microsoft.VisualStudio.Shell.ServiceProvider sp)
@@ -44,12 +44,12 @@ ms.locfileid: "66316352"
 
         ```
 
-         如果參數<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.UpdateCommandUI%2A>為非零 (`TRUE`)，然後更新在同步且立即執行。 我們建議您傳遞零 (`FALSE`) 針對此參數，以協助維護良好的效能。 如果您想要避免快取，套用`DontCache`旗標，當您建立在.vsct 檔案中的命令。 不過，請小心使用此旗標，或可能會降低效能。 如需有關命令旗標的詳細資訊，請參閱[Command Flag 元素](../extensibility/command-flag-element.md)文件。
+         如果 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.UpdateCommandUI%2A> 的參數為非零（`TRUE`），則會以同步且立即的方式執行更新。 我們建議您為此參數傳遞零（`FALSE`），以協助維持良好的效能。 如果您想要避免快取，請在 .vsct 檔案中建立命令時套用 `DontCache` 旗標。 不過，請小心使用旗標，否則可能會降低效能。 如需有關命令旗標的詳細資訊，請參閱[命令旗標元素](../extensibility/command-flag-element.md)檔。
 
-    - 在裝載 ActiveX 控制項視窗中使用就地啟用模型的 Vspackage，可能更方便使用<xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponentUIManager.UpdateUI%2A>方法。 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.UpdateCommandUI%2A>方法中的<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell>介面並<xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponentUIManager.UpdateUI%2A>方法中的<xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponentUIManager>介面的功能相同。 同時會導致環境，以重新查詢所有命令的狀態。 一般而言，更新會不會立即執行。 相反地，更新會延遲到閒置的時間。 殼層會快取的命令狀態，以協助維護良好的效能。 如果您想要避免快取，套用`DontCache`旗標，當您建立在.vsct 檔案中的命令。 不過，在因為可能會降低效能，請小心使用此旗標。
+    - 在視窗中使用就地啟用模型裝載 ActiveX 控制項的 Vspackage 中，使用 <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponentUIManager.UpdateUI%2A> 方法可能會比較方便。 @No__t_1 介面中的 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.UpdateCommandUI%2A> 方法和 <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponentUIManager> 介面中的 <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponentUIManager.UpdateUI%2A> 方法，在功能上是相同的。 這兩種情況都會導致環境重新查詢所有命令的狀態。 通常不會立即執行更新。 相反地，更新會延遲到閒置時間為止。 Shell 會快取命令狀態，以協助維持良好的效能。 如果您想要避免快取，請在 .vsct 檔案中建立命令時套用 `DontCache` 旗標。 不過，請小心使用旗標，因為效能可能會降低。
 
-         請注意，您可以取得<xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponentUIManager>介面，藉由呼叫`QueryInterface`方法<xref:Microsoft.VisualStudio.Shell.Interop.IOleComponentUIManager>物件，或藉由取得從介面<xref:Microsoft.VisualStudio.Shell.Interop.SOleComponentUIManager>服務。
+         請注意，您可以在 <xref:Microsoft.VisualStudio.Shell.Interop.IOleComponentUIManager> 物件上呼叫 `QueryInterface` 方法，或從 <xref:Microsoft.VisualStudio.Shell.Interop.SOleComponentUIManager> 服務取得介面，藉以取得 <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponentUIManager> 介面。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [VSPackage 如何新增使用者介面元素](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 - [實作](../extensibility/internals/command-implementation.md)

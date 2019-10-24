@@ -1,5 +1,5 @@
 ---
-title: HOW TO：檢視指令碼文件 |Microsoft Docs
+title: 如何：查看指令檔 |Microsoft Docs
 ms.date: 01/08/2019
 ms.topic: conceptual
 dev_langs:
@@ -15,19 +15,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 821e3bc4abc379f0ed7fc1343867f88fefe54b17
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7696122cc9f0d431f310b8d6efb10819af995823
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62906060"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72731856"
 ---
-# <a name="how-to-view-script-documents-javascript"></a>HOW TO：檢視指令碼文件 (JavaScript)
+# <a name="how-to-view-script-documents-javascript"></a>如何：查看指令檔（JavaScript）
 
-伺服器端指令碼檔案會顯示在 [方案總管] 中的。 只有在您處於偵錯模式或中斷模式時，才會看得見用戶端指令碼檔。 用戶端指令碼檔案會出現在**指令碼文件**節點。
+伺服器端腳本檔會顯示在方案總管中。 只有在您處於偵錯模式或中斷模式時，才會看得見用戶端指令碼檔。 用戶端腳本檔案會出現在 [**腳本**檔] 節點中。
 
 > [!NOTE]
-> 於[!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)]，從伺服器端指令碼產生的用戶端指令碼檔案出現在 [指令碼總管] 視窗。
+> 在 [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] 之前，從伺服器端腳本產生的用戶端腳本檔案會出現在 [腳本瀏覽器] 視窗中。
 
 ### <a name="to-view-a-server-side-script-document"></a>若要檢視伺服器端指令碼文件
 
@@ -45,5 +45,5 @@ ms.locfileid: "62906060"
 
      用戶端指令碼檔會在來源視窗中開啟。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [在偵錯工具中檢視資料](../debugger/viewing-data-in-the-debugger.md)
