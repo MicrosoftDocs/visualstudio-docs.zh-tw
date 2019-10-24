@@ -24,7 +24,7 @@ ms.locfileid: "70222648"
 ---
 # <a name="navigate-through-code-with-the-visual-studio-debugger"></a>使用 Visual Studio 偵錯工具流覽程式碼
 
-Visual Studio 偵錯工具可協助您流覽程式碼，以檢查應用程式的狀態，並顯示其執行流程。 您可以使用鍵盤快速鍵、偵錯工具命令、中斷點和其他功能，快速取得您想要檢查的程式碼。 熟悉偵錯工具導覽命令和快捷方式可讓您更快速且更輕鬆地尋找和解決應用程式問題。  如果這是您第一次嘗試偵錯工具代碼，您可能會想要在進行本文之前，先閱讀適用于徹底初學者和[偵錯工具技術和工具](../debugger/write-better-code-with-visual-studio.md)[的偵錯工具](../debugger/debugging-absolute-beginners.md)。
+Visual Studio 偵錯工具可協助您流覽程式碼，以檢查應用程式的狀態，並顯示其執行流程。 您可以使用鍵盤快速鍵、偵錯工具命令、中斷點和其他功能，快速取得您想要檢查的程式碼。 熟悉偵錯工具導覽命令和快捷方式可讓您更快速且更輕鬆地尋找和解決應用程式問題。  如果這是您第一次嘗試偵錯工具代碼，您可能會想要在進行本文之前，先閱讀適用于徹底初學者和[偵錯工具技術和工具](../debugger/write-better-code-with-visual-studio.md) [的偵錯工具](../debugger/debugging-absolute-beginners.md)。
 
 ## <a name="basic-debugging"></a>基本偵錯
 
