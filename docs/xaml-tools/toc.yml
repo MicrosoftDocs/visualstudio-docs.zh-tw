@@ -107,8 +107,8 @@
     - name: 針對 WPF 應用程式進行偵錯
       items:
         - name: 對 WPF 進行偵錯
-          href: ../debugger/debugging-wpf.md?toc=/visualstudio/xaml-tools/toc.json
+          href: ../debugger/debugging-wpf.md?toc=/visualstudio/xaml-tools/toc.json&bc=/visualstudio/xaml-tools/breadcrumb/toc.json
         - name: 使用 WPF 樹狀架構視覺化檢視
-          href: ../debugger/how-to-use-the-wpf-tree-visualizer.md?toc=/visualstudio/xaml-tools/toc.json
+          href: ../debugger/how-to-use-the-wpf-tree-visualizer.md?toc=/visualstudio/xaml-tools/toc.json&bc=/visualstudio/xaml-tools/breadcrumb/toc.json
         - name: 顯示 WPF 追蹤資訊
-          href: ../debugger/how-to-display-wpf-trace-information.md?toc=/visualstudio/xaml-tools/toc.json
+          href: ../debugger/how-to-display-wpf-trace-information.md?toc=/visualstudio/xaml-tools/toc.json&bc=/visualstudio/xaml-tools/breadcrumb/toc.json
