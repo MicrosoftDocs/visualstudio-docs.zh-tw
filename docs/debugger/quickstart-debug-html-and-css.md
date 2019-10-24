@@ -17,12 +17,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - uwp
-ms.openlocfilehash: 36b17adfd3968031983965ca47574804a9f1738e
-ms.sourcegitcommit: 8a96a65676fd7a2a03b0803d7eceae65f3fa142b
+ms.openlocfilehash: 52235ab4770f5267de8507ff67fcda0aa1370392
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72589101"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72730559"
 ---
 # <a name="debug-html-and-css-in-uwp-apps-in-visual-studio"></a>在 Visual Studio 中的 UWP 應用程式中的 HTML 和 CSS 的 Debug
 
@@ -188,7 +188,7 @@ DOM 總管會顯示所呈現頁面的檢視，您可以使用 DOM 總管變更�
 
     現在 `FlipView` 控制項看起來比 [模擬器] 或 [Phone 模擬器] 的螢幕還大。 這不是預期的結果。 若要調查，請切換回 Visual Studio。
 
-16. 在 [DOM 總管] 中，再選取 [ **計算** ] 索引標籤並開啟高度規則。 FView 元素仍然會如預期般顯示 100% 的值，但計算的值等於應用程式的螢幕高度（例如，800px、667.67 px 或一些其他值），這不是我們想要用於此應用程式的專案。 若要調查，請在接下來的步驟中，移除 `fView` DIV 元素的高度和寬度。
+16. 在 [DOM 總管] 中，再選取 [ **計算** ] 索引標籤並開啟高度規則。 FView 元素仍然會如預期般顯示100% 的值，但計算的值等於應用程式的螢幕高度（例如，800px、667.67 px 或一些其他值），這不是我們想要用於此應用程式的專案。 若要調查，請在接下來的步驟中，移除 `fView` DIV 元素的高度和寬度。
 
 17. 在 [樣式] 索引標籤中，取消核取 `#fView` CSS 選取器的高度和寬度屬性。
 

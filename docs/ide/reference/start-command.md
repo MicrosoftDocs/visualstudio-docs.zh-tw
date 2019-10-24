@@ -13,12 +13,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 946c4e39b48d15352ef5fa8ae240fb3fe9da5b9b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 6f3179c223aef8226577fe726b6d91301d42572a
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72645242"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748622"
 ---
 # <a name="start-command"></a>Start 命令
 開始偵錯啟始專案。

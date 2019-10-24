@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d60fa2ebefb7e1e4eefccce866a1059fdbc78a1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d5d1010cf9231e4777c8aef8de4a71d23937974e
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62837975"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741509"
 ---
-# <a name="idiastackwalkframegetregistervalue"></a>IDiaStackWalkFrame::get_registerValue
-擷取暫存器的值。
+# <a name="idiastackwalkframeget_registervalue"></a>IDiaStackWalkFrame::get_registerValue
+抓取暫存器的值。
 
 ## <a name="syntax"></a>語法
 
@@ -34,15 +34,15 @@ HRESULT get_registerValue ( 
 #### <a name="parameters"></a>參數
  `index`
 
-[in]值，以從[CV_HREG_e 列舉](../../debugger/debug-interface-access/cv-hreg-e.md)指定註冊，即可取得其值的列舉類型。
+在[CV_HREG_e 列舉](../../debugger/debug-interface-access/cv-hreg-e.md)列舉中的值，指定要取得其值的暫存器。
 
  `pRetVal`
 
-[out]傳回目前的暫存器值。
+脫銷傳回註冊的目前值。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
+ 如果成功，會傳回 `S_OK`;否則，會傳回錯誤碼。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [IDiaStackWalkFrame](../../debugger/debug-interface-access/idiastackwalkframe.md)
 - [CV_HREG_e 列舉](../../debugger/debug-interface-access/cv-hreg-e.md)

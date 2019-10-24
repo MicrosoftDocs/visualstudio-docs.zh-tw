@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cf423ddc91926fb04adac849783b7c26b4c4f720
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ca1b1ec2bea56ad167951ad8b60cf849bd22e315
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62828484"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742793"
 ---
 # <a name="idiareadexeatrvacallbackreadexecutableatrva"></a>IDiaReadExeAtRVACallback::ReadExecutableAtRVA
-讀取指定起始於指定相對虛擬位址 (RVA) 從可執行檔的位元組數目。
+從可執行檔讀取指定的位元組數目，從指定的相對虛擬位址（RVA）開始。
 
 ## <a name="syntax"></a>語法
 
@@ -36,23 +36,23 @@ HRESULT ReadExecutableAtRVA ( 
 #### <a name="parameters"></a>參數
  `relativeVirtualAddress`
 
-[in]可執行檔中開始讀取的 RVA。
+在要開始讀取的可執行檔中的 RVA。
 
  `cbData`
 
-[in]要讀取的位元組數目。
+在要讀取的位元組數。
 
  `pcbData`
 
-[out]傳回讀取的位元組數目。
+脫銷傳回讀取的位元組數目。
 
  `data[]`
 
-[in、 out]陣列，其中會填入從檔案讀取的位元組。
+[in、out]填入的陣列，其中包含從檔案讀取的位元組。
 
 ## <a name="remarks"></a>備註
- DIA 支援程式碼，從可執行檔使用的相對虛擬位址載入資料的位元組被呼叫此方法。 會呼叫這個方法支援[idiadatasource:: Loaddataforexe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)方法。
+ DIA 支援程式碼會呼叫這個方法，以使用相對虛擬位址從可執行檔載入資料位元組。 這個方法是在支援[IDiaDataSource：： loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)方法時呼叫。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [IDiaReadExeAtRVACallback](../../debugger/debug-interface-access/idiareadexeatrvacallback.md)
 - [IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)

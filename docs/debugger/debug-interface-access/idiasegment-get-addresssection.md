@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e098f1e2367395f201abf6f44554f1699400b12
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e9114a1d97dc9c25aa9c2bfe84dc96b63051b92d
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62827807"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742444"
 ---
-# <a name="idiasegmentgetaddresssection"></a>IDiaSegment::get_addressSection
-擷取對應至這個區段的區段數目。
+# <a name="idiasegmentget_addresssection"></a>IDiaSegment::get_addressSection
+抓取對應至此區段的區段編號。
 
 ## <a name="syntax"></a>語法
 
@@ -33,10 +33,10 @@ HRESULT get_addressSection ( 
 #### <a name="parameters"></a>參數
  `pRetVal`
 
-[out]傳回對應至這個區段的區段數目。
+脫銷傳回對應至這個區段的區段編號。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，會傳回 `S_OK`。 傳回`S_FALSE`不支援這個屬性，則為。 否則會傳回錯誤碼。
+ 如果成功，會傳回 `S_OK`。 如果不支援此屬性，則傳回 `S_FALSE`。 否則會傳回錯誤碼。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md)

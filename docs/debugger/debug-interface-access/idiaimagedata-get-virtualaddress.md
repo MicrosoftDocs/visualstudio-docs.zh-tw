@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c5df2098c4859205ef07648c214f43b74e53673d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 414e065cd9e772e74c573b51bf52f11bcb987b6d
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62828523"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743417"
 ---
-# <a name="idiaimagedatagetvirtualaddress"></a>IDiaImageData::get_virtualAddress
-擷取映像的虛擬記憶體位置。
+# <a name="idiaimagedataget_virtualaddress"></a>IDiaImageData::get_virtualAddress
+抓取映射虛擬記憶體中的位置。
 
 ## <a name="syntax"></a>語法
 
@@ -33,10 +33,10 @@ HRESULT get_virtualAddress ( 
 #### <a name="parameters"></a>參數
  `pRetVal`
 
-[out]傳回映像的虛擬位址。
+脫銷傳回映射的虛擬位址。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
+ 如果成功，會傳回 `S_OK`;否則，會傳回錯誤碼。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [IDiaImageData](../../debugger/debug-interface-access/idiaimagedata.md)

@@ -1,5 +1,5 @@
 ---
-title: 'VsgDbg:: ~ VsgDbg （解構函式） |Microsoft Docs'
+title: VsgDbg：： ~ VsgDbg （析構函式） |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 7a3b97fb-d344-4df7-b195-9347d1edfcf7
@@ -8,15 +8,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 64d2ce58a0a543a6bccfca4d96ff57915d45ce49
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: dcc518e649732f6774259efed0965a9898e0fb2d
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62848255"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72734789"
 ---
 # <a name="vsgdbgvsgdbg-destructor"></a>VsgDbg::~VsgDbg (解構函式)
-終結的執行個體`VsgDbg`類別。 如果目前正在錄製的圖形資訊，圖形記錄檔已完成並關閉，並主動擷取圖形資訊時所使用的資源，會釋放。
+終結 `VsgDbg` 類別的實例。 如果目前正在錄製圖形資訊，則圖形記錄檔會完成並關閉，而在主動捕捉圖形資訊時使用的資源則會釋出。
 
 ## <a name="syntax"></a>語法
 
@@ -24,5 +24,5 @@ ms.locfileid: "62848255"
 ~VsgDbg();
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [VsgDbg::VsgDbg (建構函式)](vsgdbg-vsgdbg-constructor.md)

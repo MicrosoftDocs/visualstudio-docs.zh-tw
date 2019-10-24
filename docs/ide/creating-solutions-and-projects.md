@@ -14,12 +14,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 206f97dcb264f85a15a9293e55a3f2ccc6173aa5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: abe2cbd18e87c7045d44e597e3a5bb93a64a1c35
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652618"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747970"
 ---
 # <a name="create-solutions-and-projects"></a>建立方案和專案
 
@@ -53,7 +53,7 @@ ms.locfileid: "72652618"
 1. 在精靈中，瀏覽至檔案的位置，然後在 [名稱] 方塊中輸入新專案的名稱。 當您完成時，選擇 [完成] 按鈕。
 
 > [!NOTE]
-> 這個選項最適合用於相對簡單的檔案集合。 目前，只支援 Visual C++、Apache Cordova、Visual Basic 和 C# 專案類型。
+> 這個選項最適合用於相對簡單的檔案集合。 目前僅C++支援 Apache Cordova、Visual Basic 和C#專案類型。
 
 ## <a name="add-files-to-a-solution"></a>將檔案新增至方案
 

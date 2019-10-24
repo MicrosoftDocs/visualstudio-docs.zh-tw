@@ -1,5 +1,5 @@
 ---
-title: ASP.NET 偵錯：系統需求 |Microsoft Docs
+title: ASP.NET 的調試：系統需求 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 63a94f9ae6c35ef304af334737a8f206da911afd
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 78f947c7ab9fcc1031d457526240ecdd7e9119a3
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63402719"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745812"
 ---
 # <a name="aspnet-debugging-system-requirements"></a>ASP.NET 偵錯：系統需求
 本主題描述 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 偵錯情節的軟體和安全性需求：
@@ -37,21 +37,21 @@ ms.locfileid: "63402719"
 ## <a name="security-requirements"></a>安全性需求
  若要進行遠端偵錯，本機和遠端電腦都必須在網域設定或工作群組設定中。
 
- 若要偵錯[!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]（裝載應用程式集區） 的背景工作處理序，您必須偵錯該處理序的權限。 根據預設，[!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]在 IIS 6.0 之前的應用程式以執行**ASPNET**使用者。 在 IIS 6.0 和 IIS 7.0 **NETWORK SERVICE**帳戶是預設值。 如果背景工作處理序是以 **ASPNET**或 **NETWORK SERVICE**身分執行，則您必須具有 Administrator 權限才能對它進行偵錯。
+ 若要對 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 的工作者進程（由應用程式集區所裝載）進行 debug，您必須擁有可對該進程進行 debug 的許可權。 根據預設，IIS 6.0 之前的 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 應用程式會以**ASPNET**使用者的身分執行。 在 IIS 6.0 和 IIS 7.0 中，**網路服務**帳戶是預設值。 如果背景工作處理序是以 **ASPNET**或 **NETWORK SERVICE**身分執行，則您必須具有 Administrator 權限才能對它進行偵錯。
 
  > [!IMPORTANT]
- > 從 Windows Server 2008 R2 開始，我們建議您使用[ApplicationPoolIdentity](/iis/manage/configuring-security/application-pool-identities)做為每個應用程式集區識別。
+ > 從 Windows Server 2008 R2 開始，我們建議使用[ApplicationPoolIdentity](/iis/manage/configuring-security/application-pool-identities)做為每個應用程式集區的身分識別。
 
- [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 背景工作處理序的名稱會隨偵錯情節和 IIS 的版本而有所不同。 如需詳細資訊，請參閱[如何：尋找 ASP.NET 處理序的名稱](../debugger/how-to-find-the-name-of-the-aspnet-process.md)。
+ [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 背景工作處理序的名稱會隨偵錯情節和 IIS 的版本而有所不同。 如需詳細資訊，請參閱 [如何：尋找 ASP.NET 處理序的名稱](../debugger/how-to-find-the-name-of-the-aspnet-process.md)。
 
- 您可以編輯執行 IIS 的伺服器上的 machine.config 檔案，變更 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 背景工作處理序執行的使用者帳戶。 若要執行這項操作，最好是使用 [Internet Information Services (IIS) 管理員] 。 如需詳細資訊，請參閱[如何：在使用者帳戶下執行背景工作處理序](../debugger/how-to-run-the-worker-process-under-a-user-account.md)。
+ 您可以編輯執行 IIS 的伺服器上的 machine.config 檔案，變更 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 背景工作處理序執行的使用者帳戶。 若要執行這項操作，最好是使用 [Internet Information Services (IIS) 管理員]。 如需詳細資訊，請參閱[如何：在使用者帳戶下執行背景工作進程](../debugger/how-to-run-the-worker-process-under-a-user-account.md)。
 
  如果您將 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 背景工作處理序變更為以您自己的使用者帳戶執行，您就不需要是執行 IIS 之伺服器上的系統管理員。
 
 > [!CAUTION]
 > 在您將 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 背景工作處理序變更為以不同帳戶執行之前，請考慮以該帳戶執行 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 背景工作處理序時，處理序遭到竊取的後果。 ASPNET 和 NETWORK SERVICE 使用者帳戶會以最低權限執行，因此可降低處理序遭竊取時可能造成的損害。 如果您必須將 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 背景工作處理序變更為以具有較高權限的帳戶執行，可能造成的損害也會較大。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [針對 ASP.NET 應用程式進行偵錯](../debugger/how-to-enable-debugging-for-aspnet-applications.md)
 - [如何：在使用者帳戶下執行背景工作處理序](../debugger/how-to-run-the-worker-process-under-a-user-account.md)

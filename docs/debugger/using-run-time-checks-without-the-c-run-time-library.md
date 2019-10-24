@@ -1,5 +1,5 @@
 ---
-title: 使用執行階段檢查時不使用 C 執行階段程式庫 |Microsoft Docs
+title: 不使用 C 執行時間程式庫進行執行時間檢查 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -23,15 +23,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a2d9d97b9ba8a93864ec9af6ff02df7b20bbb35e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 029aafa634ba0e6837cdc7d4304d0419420dd912
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62929655"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72728656"
 ---
 # <a name="using-run-time-checks-without-the-c-run-time-library"></a>不使用 C 語言執行階段程式庫進行執行階段檢查
-如果您連結您的程式不使用 C 執行階段程式庫，請使用 **/NODEFAULTLIB**，並想要使用執行階段檢查，您必須連結 runtmchk.lib。
+如果您在沒有 C 執行時間程式庫的情況下連結程式，使用 **/NODEFAULTLIB**，而且想要使用執行時間檢查，則必須與 RunTmChk 連結。
 
 `_RTC_Initialize` 將為執行階段檢查初始化您的程式。 如果沒有連結 C 語言執行階段程式庫，您就必須在呼叫 `_RTC_Initialize` 之前，檢查程式是否由執行階段錯誤檢查進行編譯，如下所示：
 
@@ -63,5 +63,5 @@ extern "C" _RTC_error_fnW __cdecl _CRT_RTC_INITW(
 
 您可以在安裝好預設錯誤報告函式之後，使用 `_RTC_SetErrorFuncW` 安裝其他錯誤報告函式。 如需詳細資訊，請參閱 [_RTC_SetErrorFuncW](/cpp/c-runtime-library/reference/rtc-seterrorfuncw)。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 [如何：使用原生執行階段檢查](../debugger/how-to-use-native-run-time-checks.md)

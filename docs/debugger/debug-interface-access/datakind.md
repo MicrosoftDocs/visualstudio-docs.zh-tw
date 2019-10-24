@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 21630bea3022769d18748190c2a2d24c0e519a3c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 31be0615fd7d1da279ecf414260af21cb8239dc8
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62554918"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745280"
 ---
 # <a name="datakind"></a>DataKind
-指出特定資料值的範圍。
+表示資料值的特定範圍。
 
 ## <a name="syntax"></a>語法
 
@@ -42,30 +42,30 @@ enum DataKind {
 ## <a name="elements"></a>項目
 無法判斷 DataIsUnknown 資料符號。
 
-DataIsLocal 資料項目是本機變數。
+DataIsLocal 資料項目是一個區域變數。
 
 DataIsStaticLocal 資料項目是靜態區域變數。
 
-DataIsParam 資料項目是型式參數。
+DataIsParam 資料項目是正式參數。
 
-DataIsObjectPtr 資料項目就是物件指標 (`this`)。
+DataIsObjectPtr 資料項目是物件指標（`this`）。
 
-DataIsFileStatic 資料的項目是檔案範圍的變數。
+DataIsFileStatic 資料項目是檔案範圍的變數。
 
-DataIsGlobal 資料項目是全域變數。
+DataIsGlobal 資料項目是一個全域變數。
 
 DataIsMember 資料項目是物件成員變數。
 
-DataIsStaticMember 資料項目是類別的靜態變數。
+DataIsStaticMember 資料項目是類別靜態變數。
 
 DataIsConstant 資料項目是常數值。
 
 ## <a name="remarks"></a>備註
-傳回這個列舉型別中的值[idiasymbol:: Get_datakind](../../debugger/debug-interface-access/idiasymbol-get-datakind.md)方法。
+此列舉中的值是由[IDiaSymbol：： get_dataKind](../../debugger/debug-interface-access/idiasymbol-get-datakind.md)方法所傳回。
 
 ## <a name="requirements"></a>需求
-標頭： cvconst.h
+標頭： cvconst。h
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [列舉和結構](../../debugger/debug-interface-access/enumerations-and-structures.md)
 - [IDiaSymbol::get_dataKind](../../debugger/debug-interface-access/idiasymbol-get-datakind.md)

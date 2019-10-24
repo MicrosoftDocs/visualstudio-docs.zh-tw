@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 41987007dd5121dff8cce1eb91ea9e1c4d93578c
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 7e96216b5e33031405df3b01a3f76412a544bb51
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64816354"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740442"
 ---
-# <a name="idiasymbolgethasseh"></a>IDiaSymbol::get_hasSEH
-擷取指定的函式是否包含任何的旗標[Structured Exception Handling (C /C++)](/cpp/cpp/structured-exception-handling-c-cpp) (例如 __try /\__except 區塊)。
+# <a name="idiasymbolget_hasseh"></a>IDiaSymbol::get_hasSEH
+抓取旗標，指定函式是否包含任何[結構化例外狀況處理（C++C/）](/cpp/cpp/structured-exception-handling-c-cpp) （例如，__try/\__except 區塊）。
 
 ## <a name="syntax"></a>語法
 
@@ -33,21 +33,21 @@ HRESULT get_hasSEH(
 #### <a name="parameters"></a>參數
  `pFlag`
 
-[out]會傳回`TRUE`函式有任何結構化的例外狀況處理區塊; 否則會傳回`FALSE`。
+脫銷如果函數有任何結構化例外狀況處理區塊，則傳回 `TRUE`;否則，會傳回 `FALSE`。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，則傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。
+ 如果成功，會傳回 `S_OK`;否則，會傳回 `S_FALSE` 或錯誤碼。
 
 > [!NOTE]
-> 傳回值為`S_FALSE`表示此屬性不適用於符號。
+> @No__t_0 的傳回值表示該屬性不適用於符號。
 
 ## <a name="requirements"></a>需求
 
 |需求|描述|
 |-----------------|-----------------|
-|標頭：|dia2.h|
+|標頭：|dia2。h|
 |版本:|DIA SDK v8.0|
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
 - [結構化例外狀況處理 (C/C++)](/cpp/cpp/structured-exception-handling-c-cpp)

@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c962a9bbdebe10b97c47b67b6ce0597027f2c25b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2bc097330e1585e34f308288f1933c2fa2d5b524
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62832341"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741939"
 ---
 # <a name="idiasessiongetenumdebugstreams"></a>IDiaSession::getEnumDebugStreams
-擷取偵錯資料流的列舉的順序。
+抓取 debug 資料流程的列舉序列。
 
 ## <a name="syntax"></a>語法
 
@@ -33,11 +33,11 @@ HRESULT getEnumDebugStreams ( 
 #### <a name="parameters"></a>參數
  `ppEnumDebugStreams`
 
-[out]傳回[IDiaEnumDebugStreams](../../debugger/debug-interface-access/idiaenumdebugstreams.md)物件，其中包含一份偵錯資料流。
+脫銷傳回[IDiaEnumDebugStreams](../../debugger/debug-interface-access/idiaenumdebugstreams.md)物件，其中包含 debug 資料流程的清單。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
+ 如果成功，會傳回 `S_OK`;否則，會傳回錯誤碼。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [IDiaSession](../../debugger/debug-interface-access/idiasession.md)
 - [IDiaEnumDebugStreams](../../debugger/debug-interface-access/idiaenumdebugstreams.md)

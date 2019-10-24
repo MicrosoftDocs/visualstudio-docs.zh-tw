@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::findChildrenEx |Microsoft Docs
+title: IDiaSymbol：： findChildrenEx |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b833353beb009bb4eabbf000d45e0eb44a5794f
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 26fdced012baada390cdd0a112856b592d3c923e
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "62837871"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741274"
 ---
 # <a name="idiasymbolfindchildrenex"></a>IDiaSymbol::findChildrenEx
-擷取之符號的子系。 會傳回本機符號包含即時範圍資訊，如果程式以最佳化編譯上。
+抓取符號的子系。 如果程式是使用的優化來編譯，則傳回的區域符號會包含即時範圍資訊。
 
 ## <a name="syntax"></a>語法
 
@@ -36,34 +36,34 @@ HRESULT findChildrenEx ( 
 #### <a name="parameters"></a>參數
  `symtag`
 
-[in]指定要擷取的子系的符號標記中定義[SymTagEnum 列舉](../../debugger/debug-interface-access/symtagenum.md)。 若要設定`SymTagNull`要擷取的所有子系。
+在指定要抓取之子系的符號標記（如[SymTagEnum 列舉](../../debugger/debug-interface-access/symtagenum.md)中所定義）。 針對要抓取的所有子系，設定為 `SymTagNull`。
 
  `name`
 
-[in]指定要擷取的子系的名稱。 若要設定`NULL`要擷取的所有子系。
+在指定要抓取之子系的名稱。 針對要抓取的所有子系，設定為 `NULL`。
 
  `compareFlags`
 
-[in]指定要套用至名稱比對的比較選項。 從數值[NameSearchOptions 列舉](../../debugger/debug-interface-access/namesearchoptions.md)單獨或合併，就可以使用列舉型別。
+在指定要套用至名稱比對的比較選項。 來自[NameSearchOptions 列舉](../../debugger/debug-interface-access/namesearchoptions.md)列舉的值可以單獨使用，或搭配使用。
 
  `ppResult`
 
-[out]傳回[IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)擷取物件，其中包含一份子符號。
+脫銷傳回[IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)物件，其中包含所抓取之子符號的清單。
 
 ## <a name="return-value"></a>傳回值
- 會傳回`S_OK`如果找不到，至少一個子系的符號，或是傳回`S_FALSE`找不到任何子系; 否則會傳回錯誤碼。
+ 如果找到至少一個符號子系，則傳回 `S_OK`，如果找不到子系，則傳回 `S_FALSE`;否則，會傳回錯誤碼。
 
 ## <a name="remarks"></a>備註
- 這個方法是擴充的版[idiasymbol:: Findchildren](../../debugger/debug-interface-access/idiasymbol-findchildren.md)。
+ 這個方法是[IDiaSymbol：： findChildren](../../debugger/debug-interface-access/idiasymbol-findchildren.md)的擴充版本。
 
 ## <a name="requirements"></a>需求
- 標頭：dia2.h
+ 標頭： Dia2。h
 
- 程式庫： diaguids.lib
+ 程式庫： diaguids
 
- DLL: msdia100.dll
+ DLL： msdia100
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
 - [SymTagEnum 列舉](../../debugger/debug-interface-access/symtagenum.md)
 - [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)

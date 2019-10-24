@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0365c253626546d824459c580fdf2be1b87ed4ed
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9e73ed8ae4aacf739463b1c6ab1f8f30c51a7fb2
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62829095"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743498"
 ---
-# <a name="idiaframedatagetsystemexceptionhandling"></a>IDiaFrameData::get_systemExceptionHandling
-擷取指出系統例外狀況處理是否作用中的旗標。
+# <a name="idiaframedataget_systemexceptionhandling"></a>IDiaFrameData::get_systemExceptionHandling
+抓取表示系統例外狀況處理是否有效的旗標。
 
 ## <a name="syntax"></a>語法
 
@@ -33,16 +33,16 @@ HRESULT get_systemExceptionHandling ( 
 #### <a name="parameters"></a>參數
  pRetVal
 
-[out]會傳回`TRUE`如果系統例外狀況處理為作用中; 否則傳回`FALSE`。
+脫銷如果系統例外狀況處理作用中，則傳回 `TRUE`;否則，會傳回 `FALSE`。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，會傳回 `S_OK`。 傳回`S_FALSE`不支援這個屬性，則為。 否則會傳回錯誤碼。
+ 如果成功，會傳回 `S_OK`。 如果不支援此屬性，則傳回 `S_FALSE`。 否則會傳回錯誤碼。
 
 ## <a name="remarks"></a>備註
- 系統例外狀況處理更常稱為結構化例外狀況處理。
+ 系統例外狀況處理較常稱為結構化例外狀況處理。
 
- 若要判斷C++例外狀況處理已生效，請呼叫[idiaframedata:: Get_cplusplusexceptionhandling](../../debugger/debug-interface-access/idiaframedata-get-cplusplusexceptionhandling.md)方法。
+ 若要判斷C++例外狀況處理是否有效，請呼叫[IDiaFrameData：： get_cplusplusExceptionHandling](../../debugger/debug-interface-access/idiaframedata-get-cplusplusexceptionhandling.md)方法。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)
 - [IDiaFrameData::get_cplusplusExceptionHandling](../../debugger/debug-interface-access/idiaframedata-get-cplusplusexceptionhandling.md)

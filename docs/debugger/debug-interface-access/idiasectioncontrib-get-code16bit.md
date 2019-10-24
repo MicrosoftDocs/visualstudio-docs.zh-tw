@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d4e9c190108cdbf1eb7be2d21927a95fe56fca75
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 94fcc9ae93a515890025bb74a810733f213c869a
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62832466"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742741"
 ---
-# <a name="idiasectioncontribgetcode16bit"></a>IDiaSectionContrib::get_code16bit
-擷取指出區段是否包含 16 位元程式碼的旗標。
+# <a name="idiasectioncontribget_code16bit"></a>IDiaSectionContrib::get_code16bit
+抓取表示區段是否包含16位程式碼的旗標。
 
 ## <a name="syntax"></a>語法
 
@@ -33,13 +33,13 @@ HRESULT get_code16bit(
 #### <a name="parameters"></a>參數
  `pRetVal`
 
-[out]會傳回`TRUE`一節中的程式碼是 16 位元; 否則如果傳回`FALSE`。
+脫銷如果區段中的程式碼為16位，則傳回 `TRUE`。否則，會傳回 `FALSE`。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
+ 如果成功，會傳回 `S_OK`;否則，會傳回錯誤碼。
 
 ## <a name="remarks"></a>備註
- 這個方法只會指出，程式碼是否為 16 位元的位置。 如果程式碼不是 16 位元，它可能是任何其他動作，例如 32 位元或 64 位元的程式碼。
+ 這個方法只會指出程式碼是否為16位。 如果程式碼不是16位，則可能是其他任何專案，例如32位或64位的程式碼。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

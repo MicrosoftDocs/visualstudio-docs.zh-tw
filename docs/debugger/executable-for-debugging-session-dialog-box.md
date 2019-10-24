@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 14d4ac95aae860e0750af66aec6adb2969434f11
-ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.openlocfilehash: 92cf53ed499318d60c8da5147685e3f0f340e404
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71211037"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72736243"
 ---
 # <a name="executable-for-debugging-session-dialog-box"></a>偵錯工作階段的可執行檔對話方塊
 
@@ -37,7 +37,7 @@ ms.locfileid: "71211037"
 
  輸入之後，這些設定會儲存在專案屬性頁中，因此，您不需要再次輸入它們來進行後續的偵錯工具。 如果您需要變更設定，請開啟 [屬性頁] 並變更這些值。 如需為偵錯工作階段指定可執行檔的詳細資訊，請參閱[對 DLL 進行偵錯](../debugger/how-to-debug-from-a-dll-project.md)。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [Visual Studio 偵錯](../debugger/index.yml)
 - [偵錯工具簡介](../debugger/debugger-feature-tour.md)

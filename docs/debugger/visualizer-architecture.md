@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3064f387c0a6233b1cd38c4ed81680ef7991abd4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5c92723a1b6abb371b44f1793f9ea5b1f8ad3bca
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62901149"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72728480"
 ---
 # <a name="visualizer-architecture"></a>視覺化檢視架構
 偵錯工具視覺化檢視的架構分為兩部分：
@@ -67,7 +67,7 @@ ms.locfileid: "62901149"
 
  請注意，物件提供者可以使用 <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.GetData%2A> 或 <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.GetObject%2A> 兩者之一。 這兩個 API 都會導致對物件來源呼叫 <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource.GetData%2A>。 呼叫 <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource.GetData%2A?displayProperty=fullName> 會填入 <xref:System.IO.Stream?displayProperty=fullName>，以代表所視覺化物件的序列化形式。
 
- <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.GetObject%2A?displayProperty=fullName> 會將資料還原序列化回物件格式，且可將其顯示於您使用 <xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer> 建立的 UI 中。 <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.GetData%2A?displayProperty=fullName> 會將資料填入為原始 `Stream`，您必須自行予以還原序列化。 <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.GetObject%2A?displayProperty=fullName> 透過呼叫 <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.GetData%2A?displayProperty=fullName> 來運作，以取得序列化的 `Stream`，接著將資料還原序列化。 若 .NET 未將物件序列化，或需要自訂序列化，請使用 <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.GetData%2A?displayProperty=fullName>。 在這種情況下，您也必須覆寫 <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource.Serialize%2A?displayProperty=fullName> 方法。
+ <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.GetObject%2A?displayProperty=fullName> 會將資料還原序列化回物件形式，讓您可以將它顯示在用 <xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer> 所建立的 UI 中。 <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.GetData%2A?displayProperty=fullName> 會以原始 `Stream` 來填入資料，您必須自行將資料還原序列化。 <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.GetObject%2A?displayProperty=fullName> 的運作方式是先呼叫 <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.GetData%2A?displayProperty=fullName> 來取得序列化 `Stream`，然後將資料還原序列化。 若 .NET 未將物件序列化，或需要自訂序列化，請使用 <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.GetData%2A?displayProperty=fullName>。 在這種情況下，您也必須覆寫 <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource.Serialize%2A?displayProperty=fullName> 方法。
 
  如果您建立的是唯讀的視覺化檢視，則與 <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.GetData%2A> 或 <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.GetObject%2A> 之間只要有單向通訊就已足夠。 如果所建立的視覺化檢視支援編輯資料物件，就必須多執行其他動作。 您還必須能夠將資料物件從物件提供者傳送回物件來源。 下表顯示做這個用途的物件提供者和物件來源 API：
 
@@ -77,7 +77,7 @@ ms.locfileid: "62901149"
 
  請注意，物件提供者同樣可以使用兩個 API。 資料始終是以 `Stream` 形式從物件提供者傳送到物件來源，但 <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.ReplaceData%2A> 需要您自行將物件序列化成 `Stream`。
 
- <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.ReplaceObject%2A> 會利用您提供的物件，將其序列化為 `Stream`，接著呼叫 <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.ReplaceData%2A> 以將 `Stream` 傳送至 <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource.CreateReplacementObject%2A>。
+ <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.ReplaceObject%2A> 會接受您提供的物件，將它序列化成 `Stream`，然後呼叫 <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.ReplaceData%2A> 以將 `Stream` 傳送到 <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource.CreateReplacementObject%2A>。
 
  若使用兩個 Replace 方法中的任一個，便會在偵錯項目中建立新的資料物件，以取代所視覺化的物件。 如果要變更原始物件的內容，卻不要取代它，請使用下表所示的其中一個 Transfer 方法。 這些 API 會同時雙向傳輸資料，不會取代所視覺化的物件：
 
@@ -85,9 +85,9 @@ ms.locfileid: "62901149"
 |---------------------|-------------------|
 |<xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.TransferData%2A><br /><br /> -或-<br /><br /> <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.TransferObject%2A>|<xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource.TransferData%2A>|
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [如何：撰寫視覺化檢視](/visualstudio/debugger/create-custom-visualizers-of-data)
-- [逐步解說：使用 C# 撰寫視覺化檢視](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)
-- [逐步解說：以 Visual Basic 撰寫視覺化檢視](../debugger/walkthrough-writing-a-visualizer-in-visual-basic.md)
-- [逐步解說：以 Visual Basic 撰寫視覺化檢視](../debugger/walkthrough-writing-a-visualizer-in-visual-basic.md)
+- [逐步解說：在 C# 中撰寫視覺化檢視](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)
+- [逐步解說：在 Visual Basic 中撰寫視覺化檢視](../debugger/walkthrough-writing-a-visualizer-in-visual-basic.md)
+- [逐步解說：在 Visual Basic 中撰寫視覺化檢視](../debugger/walkthrough-writing-a-visualizer-in-visual-basic.md)
 - [視覺化檢視安全性考量](../debugger/visualizer-security-considerations.md)

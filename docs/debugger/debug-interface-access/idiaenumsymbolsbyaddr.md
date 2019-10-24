@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 96ed66156fae24e22c549fffb6eb982a45e7e3f5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7d8cddaa39635be534e2247b48a370ed88b29ab4
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62830366"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743819"
 ---
 # <a name="idiaenumsymbolsbyaddr"></a>IDiaEnumSymbolsByAddr
-列舉各種資料來源中包含的符號位址。
+依位址列舉資料來源中包含的各種符號。
 
 ## <a name="syntax"></a>語法
 
@@ -29,25 +29,25 @@ IDiaEnumSymbolsByAddr : IUnknown
 ```
 
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法
-下表顯示的方法`IDiaEnumSymbolsByAddr`。
+下表顯示 `IDiaEnumSymbolsByAddr` 的方法。
 
 |方法|描述|
 |------------|-----------------|
-|[IDiaEnumSymbolsByAddr::symbolByAddr](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr-symbolbyaddr.md)|將列舉值中執行查閱的區段和位移。|
-|[IDiaEnumSymbolsByAddr::symbolByRVA](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr-symbolbyrva.md)|將列舉值，依相對虛擬位址 (RVA) 中執行查閱。|
-|[IDiaEnumSymbolsByAddr::symbolByVA](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr-symbolbyva.md)|將列舉值的虛擬位址 (VA) 中執行查閱。|
-|[IDiaEnumSymbolsByAddr::Next](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr-next.md)|擷取位址中順序的下一個符號。 更新列舉值位置所擷取的項目數目。|
-|[IDiaEnumSymbolsByAddr::Prev](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr-prev.md)|擷取位址中順序的上一個符號。 更新列舉值位置所擷取的項目數目。|
+|[IDiaEnumSymbolsByAddr::symbolByAddr](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr-symbolbyaddr.md)|藉由依區段和位移來執行查閱，以放置枚舉器。|
+|[IDiaEnumSymbolsByAddr::symbolByRVA](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr-symbolbyrva.md)|藉由依相對虛擬位址（RVA）執行查閱，來放置列舉值。|
+|[IDiaEnumSymbolsByAddr::symbolByVA](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr-symbolbyva.md)|藉由依虛擬位址（VA）執行查閱，來放置枚舉器。|
+|[IDiaEnumSymbolsByAddr::Next](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr-next.md)|依位址來抓取下一個符號。 依據提取的專案數，更新枚舉器位置。|
+|[IDiaEnumSymbolsByAddr::Prev](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr-prev.md)|依位址來抓取先前的符號。 依據提取的專案數，更新枚舉器位置。|
 |[IDiaEnumSymbolsByAddr::Clone](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr-clone.md)|建立物件的複本。|
 
 ## <a name="remarks"></a>備註
-這個介面會提供依位址的符號。 若要使用符號，例如依類型分組`SymTagUDT`（使用者定義型別） 或`SymTagBaseClass`，使用[IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)介面。
+此介面提供依位址分組的符號。 若要處理依型別分組的符號，例如 `SymTagUDT` （使用者定義型別）或 `SymTagBaseClass`，請使用[IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)介面。
 
-## <a name="notes-for-callers"></a>呼叫端資訊
-取得這個介面，藉由呼叫[idiasession:: Getsymbolsbyaddr](../../debugger/debug-interface-access/idiasession-getsymbolsbyaddr.md)方法。
+## <a name="notes-for-callers"></a>呼叫者的注意事項
+藉由呼叫[IDiaSession：： getSymbolsByAddr](../../debugger/debug-interface-access/idiasession-getsymbolsbyaddr.md)方法來取得此介面。
 
 ## <a name="example"></a>範例
-此函式會顯示的名稱和位址依相對虛擬位址的所有符號。
+此函式會顯示依相對虛擬位址排序之所有符號的名稱和位址。
 
 ```C++
 void ShowSymbolsByAddress(IDiaSession *pSession)
@@ -94,13 +94,13 @@ void ShowSymbolsByAddress(IDiaSession *pSession)
 ```
 
 ## <a name="requirements"></a>需求
-標頭：dia2.h
+標頭： Dia2。h
 
-程式庫： diaguids.lib
+程式庫： diaguids
 
-DLL: msdia80.dll
+DLL： msdia80
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [介面 (偵錯介面存取 SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
 - [IDiaSession::getSymbolsByAddr](../../debugger/debug-interface-access/idiasession-getsymbolsbyaddr.md)
 - [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)

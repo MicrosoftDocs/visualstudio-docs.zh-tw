@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 15ebc8296bdf78515b31d38a7543a4f41db84664
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: dea4b53daae31c90753ef7afb293e69157f58e41
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62838242"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741818"
 ---
-# <a name="idiasourcefilegetcompilands"></a>IDiaSourceFile::get_compilands
-擷取有參考此檔案的行號的編譯模組的列舉值。
+# <a name="idiasourcefileget_compilands"></a>IDiaSourceFile::get_compilands
+抓取 compilands 的列舉值，其具有參考此檔案的行號。
 
 ## <a name="syntax"></a>語法
 
@@ -33,11 +33,11 @@ HRESULT get_compilands ( 
 #### <a name="parameters"></a>參數
  `ppRetVal`
 
-[out]傳回[IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)物件，其中包含了參考此檔案的行號的所有編譯模組的清單。
+脫銷傳回[IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)物件，其中包含具有參考此檔案之行號的所有 compilands 清單。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
+ 如果成功，會傳回 `S_OK`;否則，會傳回錯誤碼。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)
 - [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)

@@ -1,5 +1,5 @@
 ---
-title: 偵錯 x64 處理序，才支援使用 Microsoft.NET Framework 4 或更新版本的混合的模式 |Microsoft Docs
+title: 只有在使用 Microsoft.NET Framework 4 或更高版本時，才支援 x64 進程的混合模式偵錯工具 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 821efec0beb26cea150fe0cfac20f0dc4c45d5f4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 64f079181ed7784de097d2bb22b8143cfe2415f4
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62845701"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72731018"
 ---
 # <a name="mixed-mode-debugging-for-x64-processes-is-only-supported-when-using-microsoftnet-framework-4-or-greater"></a>只有使用 Microsoft.NET Framework 4 或更新版本時才支援 x64 處理序的混合模式偵錯
 在第 4 版之前的 .NET Framework 版本沒有提供 x64 處理序的混合模式偵錯支援。 這表示在偵錯時，您無法從 Managed 程式碼逐步執行到機器碼，或從機器碼逐步執行到 Managed 程式碼。
@@ -55,7 +55,7 @@ ms.locfileid: "62845701"
 
 ### <a name="to-correct-this-error"></a>更正這個錯誤
 
-- 請參閱[設定 SQL 偵錯](/previous-versions/visualstudio/visual-studio-2010/s4sszxst(v=vs.100))。
+- 請參閱[設定 SQL 調試](/previous-versions/visualstudio/visual-studio-2010/s4sszxst(v=vs.100))。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [偵錯 64 位元應用程式](../debugger/debug-64-bit-applications.md)

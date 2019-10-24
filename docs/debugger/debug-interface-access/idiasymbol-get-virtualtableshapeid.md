@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bd390cbd2982033d31ccf8e577196e2c360be655
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 3134d504625435706c36e1afc7c9df64611a7516
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64784301"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72738809"
 ---
-# <a name="idiasymbolgetvirtualtableshapeid"></a>IDiaSymbol::get_virtualTableShapeId
-擷取之符號的虛擬資料表圖形符號識別項。
+# <a name="idiasymbolget_virtualtableshapeid"></a>IDiaSymbol::get_virtualTableShapeId
+抓取符號的虛擬資料表圖形符號識別碼。
 
 ## <a name="syntax"></a>語法
 
@@ -33,16 +33,16 @@ HRESULT get_virtualTableShapeId ( 
 #### <a name="parameters"></a>參數
  `pRetVal`
 
-[out]傳回虛擬資料表圖形符號 ID 的符號。
+脫銷傳回符號的虛擬資料表圖形符號識別碼。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，則傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。
+ 如果成功，會傳回 `S_OK`;否則，會傳回 `S_FALSE` 或錯誤碼。
 
 > [!NOTE]
-> 傳回值為`S_FALSE`表示屬性不是適用於符號。
+> @No__t_0 的傳回值表示該屬性不適用於符號。
 
 ## <a name="remarks"></a>備註
- 識別碼是由 DIA SDK，將標示為唯一的所有符號的唯一值。
+ 識別碼是 DIA SDK 所建立的唯一值，用來將所有符號標記為唯一。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

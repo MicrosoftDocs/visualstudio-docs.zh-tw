@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a8ad236307360a96f64999313764424305980fc9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0b1118517988f6a790cd4f6732eba3bc8a9fc25a
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62838115"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741627"
 ---
-# <a name="idiastackframegetrawlvarinstancevalue"></a>IDiaStackFrame::get_rawLVarInstanceValue
-這個方法會擷取指定的本機變數的值做為未經處理位元組。
+# <a name="idiastackframeget_rawlvarinstancevalue"></a>IDiaStackFrame::get_rawLVarInstanceValue
+這個方法會將指定的區域變數值抓取為原始位元組。
 
 ## <a name="syntax"></a>語法
 
@@ -36,22 +36,22 @@ HRESULT get_rawLVarInstanceValue(
 #### <a name="parameters"></a>參數
  `pInstance`
 
-[in]`IDiaLVarInstance`物件，表示要取得其值的本機變數的執行個體。
+在@No__t_0 物件，代表要取得其值的本機變數實例。
 
  `cbDataMax`
 
-[in]所指向的緩衝區中的位元組數目上限`pbData`。 這最多可有 8 個位元組 (`sizeof(ULONGLONG)`)。
+在@No__t_0 所指向之緩衝區中的最大位元組數目。 最多可以有8個位元組（`sizeof(ULONGLONG)`）。
 
  `pcbData`
 
-[out]傳回的實際儲存在緩衝區的位元組數目。
+脫銷傳回儲存在緩衝區中的實際位元組數目。
 
  `pbData`
 
-[out]要填入資料緩衝區。 不可為 `NULL`。
+脫銷要填入資料的緩衝區。 不可為 `NULL`。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
+ 如果成功，會傳回 `S_OK`;否則，會傳回錯誤碼。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)

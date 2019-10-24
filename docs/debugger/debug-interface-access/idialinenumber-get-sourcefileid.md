@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: be0fffc1c52c6e15e4ac564cb3e53c60a3670c22
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 54b460fc96d71048b192313d03956e3b2cbe321f
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839806"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743143"
 ---
-# <a name="idialinenumbergetsourcefileid"></a>IDiaLineNumber::get_sourceFileId
-擷取提供這行的原始程式檔的唯一的來源檔案識別碼。
+# <a name="idialinenumberget_sourcefileid"></a>IDiaLineNumber::get_sourceFileId
+針對產生這一行的原始程式檔，抓取唯一的原始程式檔識別碼。
 
 ## <a name="syntax"></a>語法
 
@@ -33,10 +33,10 @@ HRESULT get_sourceFileId ( 
 #### <a name="parameters"></a>參數
  `pRetVal`
 
-[out]傳回提供這行的原始程式檔的唯一來源檔案識別碼。
+脫銷傳回產生這一行之原始程式檔的唯一原始程式檔識別碼。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，會傳回 `S_OK`。 傳回`S_FALSE`不支援這個屬性，則為。 否則會傳回錯誤碼。
+ 如果成功，會傳回 `S_OK`。 如果不支援此屬性，則傳回 `S_FALSE`。 否則會傳回錯誤碼。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)

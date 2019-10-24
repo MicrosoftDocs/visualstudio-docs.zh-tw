@@ -1,5 +1,5 @@
 ---
-title: 'Idiaenumsectioncontribs:: Get_count |Microsoft Docs'
+title: IDiaEnumSectionContribs：： get_Count |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b7cd47426e08cf9dfbf0ceb7abe166e35499856c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1d12bf9190e8413d12998df24d95d2b14c1222a6
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62553958"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72744334"
 ---
-# <a name="idiaenumsectioncontribsgetcount"></a>IDiaEnumSectionContribs::get_Count
-擷取區段貢獻數目。
+# <a name="idiaenumsectioncontribsget_count"></a>IDiaEnumSectionContribs::get_Count
+抓取區段貢獻的數目。
 
 ## <a name="syntax"></a>語法
 
@@ -33,11 +33,11 @@ HRESULT get_Count ( 
 #### <a name="parameters"></a>參數
  `pRetVal`
 
-[out]傳回一節的貢獻的數目。
+脫銷傳回區段貢獻的數目。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
+ 如果成功，會傳回 `S_OK`;否則，會傳回錯誤碼。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [IDiaEnumSectionContribs](../../debugger/debug-interface-access/idiaenumsectioncontribs.md)
 - [IDiaEnumSectionContribs::Item](../../debugger/debug-interface-access/idiaenumsectioncontribs-item.md)

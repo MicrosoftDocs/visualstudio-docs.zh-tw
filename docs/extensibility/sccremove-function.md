@@ -12,12 +12,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 70413c2e446f8ed226a58eb8ddfe62ede4a1d61f
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 7ff7299868b96aedb7cc096b4e939a0f8015aeb8
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66338626"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72720780"
 ---
 # <a name="sccremove-function"></a>SccRemove 函式
 此函式會從原始檔控制系統中刪除檔案。
@@ -37,50 +37,50 @@ SCCRTN SccRemove(
 ```
 
 #### <a name="parameters"></a>參數
- pvContext
+ pvCoNtext
 
-[in]原始檔控制外掛程式的內容結構。
+在原始檔控制外掛程式的內容結構。
 
  hWnd
 
-[in]原始檔控制外掛程式時，可以使用當做父代上，它會提供任何對話方塊 IDE 視窗的控制代碼。
+在IDE 視窗的控制碼，原始檔控制外掛程式可以使用它所提供之任何對話方塊的父系。
 
- nFiles
+ n
 
-[in]中指定的檔案數目`lpFileNames`陣列。
+在@No__t_0 陣列中指定的檔案數目。
 
  lpFileNames
 
-[in]要移除之檔案的完整格式的本機路徑名稱的陣列。
+在要移除之檔案的完整本機路徑名稱陣列。
 
  lpComment
 
-[in]要套用至要移除的每個檔案的註解。
+在要套用至要移除之每個檔案的批註。
 
  fOptions
 
-[in]命令的旗標 （未使用）。
+在命令旗標（未使用）。
 
  pvOptions
 
-[in]原始檔控制外掛程式特定選項。
+在原始檔控制外掛程式特定選項。
 
 ## <a name="return-value"></a>傳回值
- 此函式的原始檔控制外掛程式實作應該會傳回下列值之一：
+ 此函式的原始檔控制外掛程式執行應會傳回下列其中一個值：
 
 |值|描述|
 |-----------|-----------------|
-|SCC_OK|已成功移除。|
-|SCC_E_FILENOTCONTROLLED|選取的檔案不在原始檔控制中。|
-|SCC_E_OPNOTSUPPORTED|原始檔控制系統不支援這項作業。|
-|SCC_E_ISCHECKEDOUT|無法移除檔案，因為使用者目前已簽出它。|
-|SCC_E_ACCESSFAILURE|發生問題，存取原始檔控制系統，可能是因為網路或競爭問題。|
-|SCC_E_NOTAUTHORIZED|若要執行這項作業不允許的使用者。|
-|SCC_E_NONSPECIFICERROR|不明確的失敗;檔案不會移除。|
-|SCC_I_OPERATIONCANCELED|作業已完成前取消。|
+|SCC_OK|移除成功。|
+|SCC_E_FILENOTCONTROLLED|選取的檔案不在原始檔控制之下。|
+|SCC_E_OPNOTSUPPORTED|原始檔控制系統不支援這種作業。|
+|SCC_E_ISCHECKEDOUT|無法移除檔案，因為使用者目前已簽出該檔案。|
+|SCC_E_ACCESSFAILURE|存取原始檔控制系統時發生問題，可能是因為網路或競爭問題。|
+|SCC_E_NOTAUTHORIZED|不允許使用者執行此作業。|
+|SCC_E_NONSPECIFICERROR|模糊失敗;檔案未移除。|
+|SCC_I_OPERATIONCANCELED|作業已在完成前取消。|
 
 ## <a name="remarks"></a>備註
- 此函式會從原始檔控制系統中移除的檔案，但不會刪除它們從使用者的本機硬碟。
+ 此函式會將檔案從原始檔控制系統中移除，但不會將它們從使用者的本機硬碟中刪除。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [原始檔控制外掛程式 API 函式](../extensibility/source-control-plug-in-api-functions.md)

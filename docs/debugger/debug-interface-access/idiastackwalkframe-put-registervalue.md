@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 440c7d19382b813b3f34451d7c177c6e8b57f16f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 24bcafcc373e3c03bd1e656f26ee9a8aa443d320
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62831843"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741484"
 ---
-# <a name="idiastackwalkframeputregistervalue"></a>IDiaStackWalkFrame::put_registerValue
-設定暫存器值。
+# <a name="idiastackwalkframeput_registervalue"></a>IDiaStackWalkFrame::put_registerValue
+設定註冊的值。
 
 ## <a name="syntax"></a>語法
 
@@ -34,15 +34,15 @@ HRESULT put_registerValue ( 
 #### <a name="parameters"></a>參數
  `index`
 
-[in]值，以從[CV_HREG_e 列舉](../../debugger/debug-interface-access/cv-hreg-e.md)指定將寫入暫存器的列舉類型。
+在[CV_HREG_e 列舉](../../debugger/debug-interface-access/cv-hreg-e.md)列舉中的值，指定要寫入的暫存器。
 
  `NewVal`
 
-[in]新的暫存器值。
+在新的暫存器值。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
+ 如果成功，會傳回 `S_OK`;否則，會傳回錯誤碼。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [IDiaStackWalkFrame](../../debugger/debug-interface-access/idiastackwalkframe.md)
 - [CV_HREG_e 列舉](../../debugger/debug-interface-access/cv-hreg-e.md)

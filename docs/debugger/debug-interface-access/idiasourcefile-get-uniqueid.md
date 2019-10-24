@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c4a204e04c1c99dcbe8c6ba6d5e3457ca875dde4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 30a210c12384cbde55dafe6f3410b8fc840e8507
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62832249"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741783"
 ---
-# <a name="idiasourcefilegetuniqueid"></a>IDiaSourceFile::get_uniqueId
-擷取都是唯一的這個映像的簡單的整數值。
+# <a name="idiasourcefileget_uniqueid"></a>IDiaSourceFile::get_uniqueId
+抓取此影像唯一的簡單整數索引鍵值。
 
 ## <a name="syntax"></a>語法
 
@@ -33,13 +33,13 @@ HRESULT get_uniqueId ( 
 #### <a name="parameters"></a>參數
  `pRetVal`
 
-[out]傳回簡單的整數的金鑰值，都是唯一的這個映像。
+脫銷傳回此影像唯一的簡單整數索引鍵值。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
+ 如果成功，會傳回 `S_OK`;否則，會傳回錯誤碼。
 
 ## <a name="remarks"></a>備註
- 比較索引鍵，而不是字串可以加速行數字處理。
+ 比較索引鍵而不是字串，可以加速行號處理。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)

@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: faff61833cb130902efbd64d60a16f74c507a3e2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: dc40cc6cc8e821db7c28a4647e36e7bad241b29f
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62834125"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72738641"
 ---
 # <a name="locationtype"></a>LocationType
-表示在符號中所包含的位置資訊的類型。
+表示符號中包含的位置資訊類型。
 
 ## <a name="syntax"></a>語法
 
@@ -42,39 +42,39 @@ enum LocationType {
 ```
 
 ## <a name="elements"></a>項目
-`LocIsNull` 無法使用位置資訊。
+`LocIsNull` 位置資訊無法使用。
 
 `LocIsStatic` 位置是靜態的。
 
-`LocIsTLS` 位置是在執行緒區域儲存區。
+`LocIsTLS` 位置是線上程區域儲存區中。
 
-`LocIsRegRel` 位置是暫存器的相對位置。
+`LocIsRegRel` 位置是 register 相對的。
 
-`LocIsThisRel` 位置是`this`-相對。
+`LocIsThisRel` 位置是相對 `this`。
 
-`LocIsEnregistered` 位置是在暫存器。
+`LocIsEnregistered` 位置在註冊中。
 
-`LocIsBitField` 位置是在位元欄位。
+`LocIsBitField` 位置在位欄位中。
 
-`LocIsSlot` 位置是 Microsoft Intermediate Language (MSIL) 位置。
+`LocIsSlot` 位置是 Microsoft 中繼語言（MSIL）插槽。
 
-`LocIsIlRel` 位置是 MSIL 相對。
+`LocIsIlRel` 位置與 MSIL 相對。
 
-`LocInMetaData` 位置是在中繼資料。
+`LocInMetaData` 位置是在中繼資料中。
 
-`LocIsConstant` 位置是常數值。
+`LocIsConstant` 位置為常數值。
 
-`LocTypeMax` 這個列舉型別中的位置類型數目。
+`LocTypeMax` 此列舉中的位置類型數目。
 
 ## <a name="remarks"></a>備註
-可用的屬性來[IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)介面取決於映像檔中的符號的位置。 如需詳細資訊，請參閱 <<c0> [ 符號位置](../../debugger/debug-interface-access/symbol-locations.md)。
+[IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)介面可用的屬性取決於符號在影像檔案中的位置。 如需詳細資訊，請參閱[符號位置](../../debugger/debug-interface-access/symbol-locations.md)。
 
-這個列舉型別中的值會傳回呼叫[idiasymbol:: Get_locationtype](../../debugger/debug-interface-access/idiasymbol-get-locationtype.md)方法。
+這個列舉中的值是由呼叫[IDiaSymbol：： get_locationType](../../debugger/debug-interface-access/idiasymbol-get-locationtype.md)方法所傳回。
 
 ## <a name="requirements"></a>需求
-標頭： cvconst.h
+標頭： cvconst。h
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [列舉和結構](../../debugger/debug-interface-access/enumerations-and-structures.md)
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
 - [IDiaSymbol::get_locationType](../../debugger/debug-interface-access/idiasymbol-get-locationtype.md)

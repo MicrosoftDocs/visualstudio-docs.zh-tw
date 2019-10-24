@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 35886ea0456426c30c44d5fd8e90399d4a2143ef
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f6de78b5553719def2fd7ef9c6adb55e823aac34
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62837936"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741535"
 ---
 # <a name="idiastackwalkergetenumframes2"></a>IDiaStackWalker::getEnumFrames2
-擷取特定平台類型的堆疊框架的列舉值。
+抓取特定平臺類型的堆疊框架列舉值。
 
 ## <a name="syntax"></a>語法
 
@@ -36,23 +36,23 @@ ms.locfileid: "62837936"
 #### <a name="parameters"></a>參數
  `cpuid`
 
-[in]值，以從[CV_CPU_TYPE_e 列舉](../../debugger/debug-interface-access/cv-cpu-type-e.md)指定平台類型的列舉。
+在[CV_CPU_TYPE_e 列舉](../../debugger/debug-interface-access/cv-cpu-type-e.md)列舉中的值，指定平臺類型。
 
  `pHelper`
 
-[in]協助專家[IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)物件。
+在Helper [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)物件。
 
  `ppEnum`
 
-[out]傳回[IDiaEnumStackFrames](../../debugger/debug-interface-access/idiaenumstackframes.md)物件，其中包含一份[IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)物件。
+脫銷傳回[IDiaEnumStackFrames](../../debugger/debug-interface-access/idiaenumstackframes.md)物件，其中包含[IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)物件的清單。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
+ 如果成功，會傳回 `S_OK`;否則，會傳回錯誤碼。
 
 ## <a name="remarks"></a>備註
- 若要取得堆疊框架清單只是 x86 平台，請呼叫[IDiaStackWalker::getEnumFrames](../../debugger/debug-interface-access/idiastackwalker-getenumframes.md)方法。
+ 若只要取得 x86 平臺的堆疊框架清單，請呼叫[IDiaStackWalker：： getEnumFrames](../../debugger/debug-interface-access/idiastackwalker-getenumframes.md)方法。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [IDiaStackWalker](../../debugger/debug-interface-access/idiastackwalker.md)
 - [CV_CPU_TYPE_e 列舉](../../debugger/debug-interface-access/cv-cpu-type-e.md)
 - [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)

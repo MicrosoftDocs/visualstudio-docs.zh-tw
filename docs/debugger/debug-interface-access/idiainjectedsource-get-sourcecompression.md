@@ -1,5 +1,5 @@
 ---
-title: 'Idiainjectedsource:: Get_sourcecompression |Microsoft Docs'
+title: IDiaInjectedSource：： get_sourceCompression |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 00c7783752a183e8afc580c4c74285add8a51041
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9428b30df82d92a8c74511644aaf97f2166807a2
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839910"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743325"
 ---
-# <a name="idiainjectedsourcegetsourcecompression"></a>IDiaInjectedSource::get_sourceCompression
-擷取來源所用的壓縮的指標。
+# <a name="idiainjectedsourceget_sourcecompression"></a>IDiaInjectedSource::get_sourceCompression
+抓取所使用之來源壓縮的指標。
 
 ## <a name="syntax"></a>語法
 
@@ -33,13 +33,13 @@ HRESULT get_sourceCompression ( 
 #### <a name="parameters"></a>參數
  `pRetVal`
 
-[out]傳回來源所用的壓縮的指標。 值為零表示已使用該沒有來源壓縮。
+脫銷傳回所使用之來源壓縮的指標。 值為零表示未使用任何來源壓縮。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，會傳回 `S_OK`。 傳回`S_FALSE`不支援這個屬性，則為。 否則會傳回錯誤碼。
+ 如果成功，會傳回 `S_OK`。 如果不支援此屬性，則傳回 `S_FALSE`。 否則會傳回錯誤碼。
 
 ## <a name="remarks"></a>備註
- 這個方法所傳回的值是特定編譯器使用。 例如，編譯器可能會使用執行長度編碼方式編碼或 Huffman 式壓縮。
+ 這個方法所傳回的值是特定于所使用的編譯器。 例如，編譯器可能會使用執行長度編碼或 Huffman 樣式壓縮。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)

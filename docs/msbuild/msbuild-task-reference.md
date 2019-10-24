@@ -15,20 +15,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ed0f396613cea4ec2b6d9869e3ef1b121cac236b
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
-ms.translationtype: HT
+ms.openlocfilehash: 00af44212dd142dd94629f886a50b9646488af3b
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66747366"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747274"
 ---
 # <a name="msbuild-task-reference"></a>MSBuild 工作參考
 
-提供在建置流程期間執行之程式碼的工作。 下列清單的工作包含於 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 中。 若已安裝 [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)]，將提供可用來建置 [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] 專案的其他工作。 如需詳細資訊，請參閱 [Visual C++ 工作](../msbuild/msbuild-tasks-specific-to-visual-cpp.md)。
+提供在建置流程期間執行之程式碼的工作。 下列清單的工作包含於 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 中。 若已安裝 [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)]，將提供可用來建置 [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] 專案的其他工作。 如需詳細資訊，請參閱[ C++ tasks](../msbuild/msbuild-tasks-specific-to-visual-cpp.md)。
 
 除了本節中主題所列的參數之外，每個工作也會有下列參數：
 
-| 參數 | 說明 |
+| 參數 | 描述 |
 |-------------------| - |
 | `Condition` | 選擇性的 `String` 參數。<br /><br /> `Boolean` 運算式，[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 引擎會使用此運算式來決定是否要執行此工作。 如需 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 所支援條件的相關資訊，請參閱[條件](../msbuild/msbuild-conditions.md)。 |
 | `ContinueOnError` | 選擇性參數。 可包含一或多個下列值：<br /><br /> -   **WarnAndContinue** 或 **true**。 當工作失敗時，[Target](../msbuild/target-element-msbuild.md) 項目中的後續工作與組建都會繼續執行，並將來自工作的所有錯誤視為警告。<br />-   **ErrorAndContinue**。 當工作失敗時，`Target` 項目中的後續工作與組建都會繼續執行，並將來自工作的所有錯誤視為錯誤。<br />-   **ErrorAndStop** 或 **false** (預設值)。 當工作失敗時，就不會執行 `Target` 項目中的其餘工作和組建，並將整個 `Target` 項目與組建視為失敗。<br /><br /> 只有 4.5 版之前的 .NET Framework 版本支援 `true` 和 `false` 值。<br /><br /> 如需詳細資訊，請參閱[如何：忽略工作中的錯誤](../msbuild/how-to-ignore-errors-in-tasks.md)。 |
@@ -249,7 +249,7 @@ ms.locfileid: "66747366"
 
 - [SGen 工作](../msbuild/sgen-task.md)
 
- 針對指定組件中的型別建立 XML 序列化組件。
+ 針對指定組件中的類型建立 XML 序列化組件。
 
 - [SignFile 工作](../msbuild/signfile-task.md)
 
@@ -301,13 +301,13 @@ ms.locfileid: "66747366"
 
 - [XslTransformation 工作](../msbuild/xsltransformation-task.md)
 
- 使用「可延伸樣式表語言轉換」  (XSLT) 或編譯的 XSLT 轉換 XML 輸入，並輸出到輸出裝置或檔案。
+ 使用「可延伸樣式表語言轉換」(XSLT) 或編譯的 XSLT 轉換 XML 輸入，並輸出到輸出裝置或檔案。
 
 - [ZipDirectory 工作](../msbuild/zipdirectory-task.md)
 
  從目錄的內容建立 *.zip* 封存。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [MSBuild 參考](../msbuild/msbuild-reference.md)
 - [工作撰寫](../msbuild/task-writing.md)

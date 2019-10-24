@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 900e8db238ee26e0a7015c2acc1741a1917c8cb3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5b7b0ef177922f09239c8925ced1ca013e966c0e
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62564069"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745710"
 ---
 # <a name="client-block-hook-functions"></a>用戶端區塊攔截函式
 如果您要驗證或報告儲存在 `_CLIENT_BLOCK` 區塊裡的資料內容，您可以撰寫符合這個目的的函式。 您所撰寫的函式，必須與下列在 CRTDBG.H 裡定義的原型類似：
@@ -46,7 +46,7 @@ typedef void (__cdecl *_CRT_DUMP_CLIENT)
    (void *, size_t);
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [撰寫偵錯攔截函式](../debugger/debug-hook-function-writing.md)
 - [crt_dbg2 範例](https://msdn.microsoft.com/library/21e1346a-6a17-4f57-b275-c76813089167)

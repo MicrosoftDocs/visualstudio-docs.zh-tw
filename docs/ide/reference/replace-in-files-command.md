@@ -14,12 +14,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f7cb81f99644fc9d7253487030ed6da1f400bb5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: fccfe696da2d38ff03ffb2f9b91de481e924a514
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72655577"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748672"
 ---
 # <a name="replace-in-files-command"></a>檔案中取代命令
 使用在 [尋找和取代] 視窗 [檔案中取代] 索引標籤提供的選項子集，取代檔案中的文字。

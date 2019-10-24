@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 712f7ee9eaf497fc5dd176f3f254d5af73ebcf3b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: aca86590dd214214df671e084925e02e611d521d
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62829034"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743572"
 ---
-# <a name="idiaframedatagetlengthparams"></a>IDiaFrameData::get_lengthParams
-擷取位元組的推送到堆疊上的參數數目。
+# <a name="idiaframedataget_lengthparams"></a>IDiaFrameData::get_lengthParams
+抓取堆疊上推送之參數的位元組數目。
 
 ## <a name="syntax"></a>語法
 
@@ -33,14 +33,14 @@ HRESULT get_lengthParams ( 
 #### <a name="parameters"></a>參數
  `pRetVal`
 
-[out]傳回參數的位元組數目。
+脫銷傳回參數的位元組數目。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，會傳回 `S_OK`。 傳回`S_FALSE`不支援這個屬性，則為。 否則會傳回錯誤碼。
+ 如果成功，會傳回 `S_OK`。 如果不支援此屬性，則傳回 `S_FALSE`。 否則會傳回錯誤碼。
 
 ## <a name="remarks"></a>備註
- 這個方法所傳回的值通常用於程式字串的解譯 (請參閱[idiaframedata:: Get_program](../../debugger/debug-interface-access/idiaframedata-get-program.md)方法定義的程式字串)。
+ 這個方法所傳回的值通常用於程式字串的轉譯（請參閱[IDiaFrameData：： get_program](../../debugger/debug-interface-access/idiaframedata-get-program.md)方法，以瞭解程式字串的定義）。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)
 - [IDiaFrameData::get_program](../../debugger/debug-interface-access/idiaframedata-get-program.md)

@@ -12,15 +12,15 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: eabf9cfc9d878d4d12096c8d264e8ee332031adf
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: cd024aa12b263eab7fea4bd80a0e77a3bbad5f1c
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66353658"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72721444"
 ---
 # <a name="sccgetuseroption-function"></a>SccGetUserOption 函式
-此函式會擷取各種不同的使用者特定的選項。
+此函式會抓取各種不同的使用者特定選項。
 
 ## <a name="syntax"></a>語法
 
@@ -33,24 +33,24 @@ SCCRTN SccGetUserOption(
 ```
 
 #### <a name="parameters"></a>參數
- pContext
+ pCoNtext
 
-[in]原始檔控制外掛程式的內容指標。
+在原始檔控制外掛程式內容指標。
 
  nOption
 
-[in]若要擷取 （如需可能的選項，請參閱 < 備註 >） 的選項。
+在要取出的選項（請參閱備註中的可能選項）。
 
  lpVal
 
-[out]與選項相關聯的值。
+脫銷與選項相關聯的值。
 
 ## <a name="return-value"></a>傳回值
- 此函式的原始檔控制外掛程式實作應該會傳回下列值之一：
+ 此函式的原始檔控制外掛程式執行應會傳回下列其中一個值：
 
 |值|描述|
 |-----------|-----------------|
-|SCC_OK|已成功擷取選項。|
+|SCC_OK|已成功抓取選項。|
 |SCC_E_OPNOTSUPPORTED|不支援選項。|
 |SCC_E_NONSPECIFICERROR|發生未指定的錯誤。|
 
@@ -59,8 +59,8 @@ SCCRTN SccGetUserOption(
 
 |使用者選項|描述|
 |-----------------|-----------------|
-|`SCC_USEROPT_CHECKOUT_LOCALVER`|判斷使用者是否想要簽出檔案的本機版本。 `lpVal` 指派`SCC_USEROPT_COLV_YES`（使用者想要簽出本機檔案） 或`SCC_USEROPT_COLV_NO`。|
+|`SCC_USEROPT_CHECKOUT_LOCALVER`|判斷使用者是否想要簽出檔案的本機版本。 `lpVal` 指派 `SCC_USEROPT_COLV_YES` （使用者想要簽出本機檔案）或 `SCC_USEROPT_COLV_NO`。|
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [原始檔控制外掛程式 API 函式](../extensibility/source-control-plug-in-api-functions.md)
 - [錯誤碼](../extensibility/error-codes.md)

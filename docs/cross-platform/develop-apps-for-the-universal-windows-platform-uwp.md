@@ -9,12 +9,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: d526d5df8ba03374fd26ceb870d4b240b6fc2fa4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c3c5d648a5880da43d96e6741656da1023f7cf7f
+ms.sourcegitcommit: 57bc1c3887838d707c13feff72a677b3bad3be4b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648953"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72777756"
 ---
 # <a name="develop-apps-for-the-universal-windows-platform-uwp"></a>開發適用於通用 Windows 平台 (UWP) 的應用程式
 
@@ -40,7 +40,7 @@ ms.locfileid: "72648953"
 
 ::: moniker range="vs-2017"
 
-- [Windows 10](http://windows.microsoft.com/windows/downloads)。 Visual Studio 2017 只支援在 Windows 10 上開發 UWP。 如需詳細資料，請參閱 Visual Studio 的[平台目標](/visualstudio/productinfo/vs2017-compatibility-vs)和[系統需求](/visualstudio/productinfo/vs2017-system-requirements-vs)。
+- [Windows 10](https://support.microsoft.com/help/17777/downloads-for-windows)。 Visual Studio 2017 只支援在 Windows 10 上開發 UWP。 如需詳細資料，請參閱 Visual Studio 的[平台目標](/visualstudio/productinfo/vs2017-compatibility-vs)和[系統需求](/visualstudio/productinfo/vs2017-system-requirements-vs)。
 
 - [Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)。 您也需要選用的通用 Windows 平台開發工作負載。
 
@@ -50,7 +50,7 @@ ms.locfileid: "72648953"
 
 ::: moniker range="vs-2019"
 
-- [Windows 10](http://windows.microsoft.com/windows/downloads)。 Visual Studio 2019 只支援在 Windows 10 上開發 UWP。 如需詳細資料，請參閱 Visual Studio 的[平台目標](/visualstudio/releases/2019/compatibility/)和[系統需求](/visualstudio/releases/2019/system-requirements/)。
+- [Windows 10](https://support.microsoft.com/help/17777/downloads-for-windows)。 Visual Studio 2019 只支援在 Windows 10 上開發 UWP。 如需詳細資料，請參閱 Visual Studio 的[平台目標](/visualstudio/releases/2019/compatibility/)和[系統需求](/visualstudio/releases/2019/system-requirements/)。
 
 - [Visual Studio](https://visualstudio.microsoft.com/downloads)。 您也需要選用的通用 Windows 平台開發工作負載。
 

@@ -22,14 +22,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dcc63eef048dd1e4ae205214ac62f8aa04d8a824
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: b2213da69561e8868c158a3b2cbcaa8efc6adfaf
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71252510"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72728602"
 ---
-# <a name="walkthrough-debugging-a-parallel-application-in-visual-studio-c-visual-basic-c"></a>逐步解說：在 Visual Studio （C#，Visual Basic， C++）中的平行應用程式的偵錯工具
+# <a name="walkthrough-debugging-a-parallel-application-in-visual-studio-c-visual-basic-c"></a>逐步解說：在 Visual Studio （C#，Visual Basic， C++）中對平行應用程式進行調試
 
 本逐步解說顯示如何使用 [平行工作] 和 [平行堆疊] 視窗來偵錯平行應用程式。 這些視窗可協助您瞭解並驗證使用工作[平行程式庫（TPL）](/dotnet/standard/parallel-programming/task-parallel-library-tpl)或[並行執行階段](/cpp/parallel/concrt/concurrency-runtime)之程式碼的執行時間行為。 本逐步解說提供具有內建中斷點的範例程式碼。 在程式碼中斷之後，本逐步解說會顯示如何使用 [平行工作] 和 [平行堆疊] 視窗來檢查程式碼。
 
@@ -45,7 +45,7 @@ ms.locfileid: "71252510"
 
 - 視窗如何透過分組、縮放和其他相關功能來處理比例調整。
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>Prerequisites
  本逐步解說假設**Just My Code**已啟用（預設會在較新版本的 Visual Studio 中啟用）。 按一下 [工具] 功能表上的 [選項]，展開 [偵錯] 節點，再選取 [一般]，然後選取 [啟用 Just My Code (僅限受授程式碼)]。 如果未設定這項功能，您仍然可以使用本逐步解說，但結果可能與插圖不同。
 
 ## <a name="c-sample"></a>C# 範例
@@ -67,8 +67,8 @@ ms.locfileid: "71252510"
     ::: moniker range=">=vs-2019"
     按 **Esc** 關閉開始視窗。 輸入**Ctrl + Q**開啟 [搜尋] 方塊，輸入**console** （或**c + +** ），選擇 [**範本**]，然後：
 
-    - 針對C#或 Visual Basic，請選擇 [建立C#或 Visual Basic 的**新主控台應用程式（.NET Framework）專案**]。 在出現的對話方塊中選擇 [建立]。
-    - 針對C++，選擇 [ C++**建立新的主控台應用程式專案**]。 在出現的對話方塊中選擇 [建立]。
+    - 針對C#或 Visual Basic，請選擇 [建立C#或 Visual Basic 的**新主控台應用程式（.NET Framework）專案**]。 在出現的對話方塊中，選擇 [建立]。
+    - 針對C++，選擇 [ C++**建立新的主控台應用程式專案**]。 在出現的對話方塊中，選擇 [建立]。
 
     然後，輸入名稱或使用預設名稱，然後按一下 [**建立**]。
     ::: moniker-end
@@ -115,11 +115,11 @@ ms.locfileid: "71252510"
 
      藉由使用 [**平行堆疊**] 視窗，您可以在單一視圖中同時查看多個呼叫堆疊。 下圖顯示 [**呼叫堆疊**] 視窗上方的 [**平行堆疊**] 視窗。
 
-     [![平行堆疊] 視窗中的執行緒視圖](../debugger/media/pdb_walkthrough_1.png "PDB_Walkthrough_1")
+     ![[平行堆疊] 視窗中的執行緒視圖](../debugger/media/pdb_walkthrough_1.png "PDB_Walkthrough_1")
 
      主執行緒的呼叫堆疊會出現在一個方塊中，而其他四個執行緒的呼叫堆疊會一起出現在另一個方塊中。 四個執行緒形成一組是因為它們的堆疊框架共用相同的方法內容，也就是說，它們位於相同的方法中：`A`、`B` 和 `C`。 若要查看共用相同方塊之執行緒的執行緒 Id 和名稱，請將滑鼠停留在標頭（**4 個執行緒**）的方塊上方。 目前的執行緒會以粗體顯示。
 
-     ![顯示執行緒 id 和名稱的工具提示](../debugger/media/pdb_walkthrough_1a.png "PDB_Walkthrough_1A")
+     ![顯示執行緒 Id 和名稱的工具提示](../debugger/media/pdb_walkthrough_1a.png "PDB_Walkthrough_1A")
 
      黃色箭號表示目前執行緒的作用中堆疊框架。
 
@@ -127,7 +127,7 @@ ms.locfileid: "71252510"
 
      方塊周圍的藍色醒目提示表示目前執行緒是該方塊的一部分。 工具提示中也以粗體堆疊框架來表示目前執行緒。 如果您在 [執行緒] 視窗中按兩下主執行緒，您可以觀察到 [平行堆疊] 視窗中的藍色醒目提示會隨之移動。
 
-     [![平行堆疊] 視窗中反白顯示的主執行緒](../debugger/media/pdb_walkthrough_1c.png "PDB_Walkthrough_1C")
+     ![[平行堆疊] 視窗中反白顯示的主執行緒](../debugger/media/pdb_walkthrough_1c.png "PDB_Walkthrough_1C")
 
 #### <a name="to-resume-execution-until-the-second-breakpoint"></a>繼續執行至第二個中斷點為止
 
@@ -157,7 +157,7 @@ ms.locfileid: "71252510"
 
      在工具列上，按一下清單方塊旁邊的 [僅顯示有旗標的項目] 按鈕。
 
-     [![平行堆疊] 視窗和工具提示](../debugger/media/pdb_walkthrough_3a.png "PDB_Walkthrough_3A")
+     ![[平行堆疊] 視窗和工具提示](../debugger/media/pdb_walkthrough_3a.png "PDB_Walkthrough_3A")
 
      現在，只有加上旗標的執行緒才會顯示在 [**平行堆疊**] 視窗中。
 
@@ -167,11 +167,11 @@ ms.locfileid: "71252510"
 
      當多個執行緒在相同方法中但方法不在呼叫堆疊的開頭時，方法會出現在不同方塊中。 位於目前中斷點的例子有 S.L，其中有三個執行緒，且分別出現在三個方塊中。 按兩下 S.L。
 
-     [![平行堆疊] 視窗中的執行路徑](../debugger/media/pdb_walkthrough_3b.png "PDB_Walkthrough_3B")
+     ![[平行堆疊] 視窗中的執行路徑](../debugger/media/pdb_walkthrough_3b.png "PDB_Walkthrough_3B")
 
      請注意，S.L 在其他兩個方塊中是粗體，所以您可以看到它出現在其他地方。 如果您要查看有哪些框架呼叫 S.L 和它呼叫哪些框架，請按一下工具列的 [切換方法檢視] 按鈕。 下圖顯示 [**平行堆疊**] 視窗的 [方法] 視圖。
 
-     ![[平行堆疊] 視窗中的 [方法檢視]](../debugger/media/pdb_walkthrough_4.png "PDW_Walkthrough_4")
+     ![[平行堆疊] 視窗中的 [方法] 視圖](../debugger/media/pdb_walkthrough_4.png "PDW_Walkthrough_4")
 
      請注意圖表如何隨選取的方法而轉移，以及它在檢視中間如何放在自己的方塊中。 被呼叫端和呼叫端出現在上方和下方。 再按一次 [切換方法檢視] 按鈕以結束這個模式。
 
@@ -199,7 +199,7 @@ ms.locfileid: "71252510"
 
      [概觀] 也有助於在 [平行堆疊] 視窗中顯示大型圖表。 根據預設，**鳥瞰**圖會開啟。 但是，您可以按一下視窗右下角的捲軸之間的按鈕來切換它，如下圖所示。
 
-     [![平行&#45;堆疊] 視窗中的鳥瞰]圖(../debugger/media/pdb_walkthrough_5.png "PDB_Walkthrough_5")
+     ![[平行&#45;堆疊] 視窗中的鳥瞰圖](../debugger/media/pdb_walkthrough_5.png "PDB_Walkthrough_5")
 
      在鳥瞰圖中，您可以移動矩形以快速流覽圖表。
 
@@ -226,7 +226,7 @@ ms.locfileid: "71252510"
 
 5. 在 [**調試**] 功能表上，指向 [**視窗**]，**然後按一下 [** 工作]。 下圖顯示 **[工作]** 視窗。
 
-     [工作![] 視窗中的四個正在執行的]工作(../debugger/media/pdb_walkthrough_6.png "PDW_Walkthrough_6")
+     ![[工作] 視窗中的四個正在執行的工作](../debugger/media/pdb_walkthrough_6.png "PDW_Walkthrough_6")
 
      對於每一個執行中的工作，您可以讀取其 ID (由名稱相同的屬性傳回)、執行這個工作之執行緒的 ID 和名稱，以及它的位置 (將滑鼠游標停留於工作上會顯示包含整個呼叫堆疊的工具提示)。 另外，在 [工作] 資料行下，您可以查看傳入工作中的方法，也就是起點。
 
@@ -242,11 +242,11 @@ ms.locfileid: "71252510"
 
      先前，[**狀態**] 資料行會將所有工作顯示為 [作用中]，但現在有兩個工作被封鎖。 工作可能會因為許多不同的原因而受阻。 在 [狀態] 資料行中，將滑鼠游標停留於等待中工作上，以了解受阻的原因。 例如，在下圖中，工作 3 正在等待工作 4。
 
-     [工作![] 視窗中的兩個等待]工作(../debugger/media/pdb_walkthrough_7.png "PDB_Walkthrough_7")
+     ![[工作] 視窗中的兩個等待工作](../debugger/media/pdb_walkthrough_7.png "PDB_Walkthrough_7")
 
-     工作 4 又在等待指派給工作 2 的執行緒所擁有的監視器。 （以滑鼠右鍵按一下標題**欄** > ，然後選擇 [資料行] [**執行緒指派**]，以查看工作2的執行緒指派值）。
+     工作 4 又在等待指派給工作 2 的執行緒所擁有的監視器。 （以滑鼠右鍵按一下標題列，然後**選擇 [資料行]  >  [** **執行緒指派**]，以查看工作2的執行緒指派值）。
 
-     工作![視窗中的等候工作和工具提示](../debugger/media/pdb_walkthrough_7a.png "PDB_Walkthrough_7A")
+     ![工作視窗中的等候工作和工具提示](../debugger/media/pdb_walkthrough_7a.png "PDB_Walkthrough_7A")
 
      您可以按一下 [**工作] 視窗的第**一個資料行中的旗標，以標記工作。
 
@@ -254,7 +254,7 @@ ms.locfileid: "71252510"
 
      您先前在使用 [平行堆疊] 視窗時，已檢視應用程式執行緒。 再次檢閱 [平行堆疊] 視窗，但這次檢閱應用程式工作。 做法是在左上方的方塊中選取 [工作]。 下圖顯示 [工作檢視]。
 
-     [![平行堆疊] 視窗中的 [工作] 視圖](../debugger/media/pdb_walkthrough_8.png "PDB_Walkthrough_8")
+     ![[平行堆疊] 視窗中的 [工作] 視圖](../debugger/media/pdb_walkthrough_8.png "PDB_Walkthrough_8")
 
      目前未執行工作之執行緒不會出現在 [平行堆疊] 視窗的 [工作檢閱] 中。 另外，對於在執行工作的執行緒，某些與工作無關的堆疊框架則會從堆疊的上方和下方被過濾掉。
 
@@ -274,7 +274,7 @@ ms.locfileid: "71252510"
 
      請注意，工作4和工作5都是在相同的執行緒上執行（顯示 [**執行緒指派**] 資料行（如果已隱藏））。 這項資訊不會顯示在 [**執行緒**] 視窗中;這裡**看到的是 [工作**] 視窗的另一項優點。 若要確認這一點，請檢視 [平行堆疊] 視窗。 確定您檢閱的是 [工作]。 **在 [工作**] 視窗中按兩下工作4和5，找出它們。 這樣做時，[平行堆疊] 視窗中的藍色醒目提示會隨之更新。 您也可以瀏覽 [平行堆疊] 視窗上的工具提示來尋找工作 4 和 5。
 
-     [![平行堆疊] 視窗中的工作視圖](../debugger/media/pdb_walkthrough_9a.png "PDB_Walkthrough_9A")
+     ![[平行堆疊] 視窗中的工作視圖](../debugger/media/pdb_walkthrough_9a.png "PDB_Walkthrough_9A")
 
      在 [平行堆疊] 視窗中，以滑鼠右鍵按一下 S.P，然後按一下 [移至執行緒]。 視窗會切換至 [執行緒檢視]，且檢視中會有對應的框架。 您可以在相同執行緒上同時查看這兩項工作。
 
@@ -286,7 +286,7 @@ ms.locfileid: "71252510"
 
 1. 若要在遇到第三個中斷點之前繼續執行，請在 [偵錯] 功能表上，按一下 [繼續]。 按一下 [識別碼] 資料行標頭，依識別碼排序。 您應該會看到下圖。
 
-     [![平行堆疊] 視窗中的四個工作狀態](../debugger/media/pdb_walkthrough_10.png "PDB_Walkthrough_10")
+     ![[平行堆疊] 視窗中的四個工作狀態](../debugger/media/pdb_walkthrough_10.png "PDB_Walkthrough_10")
 
      因為工作 5 已完成，所以不會再出現。 如果您的電腦上不是這樣，也沒有顯示死結，請按 **F11** 逐步執行一次。
 
@@ -294,11 +294,11 @@ ms.locfileid: "71252510"
 
      再次檢視 [平行堆疊] 視窗。 每一個方塊的標題都有工具提示會顯示執行緒 ID 和名稱。 切換至 [平行堆疊] 視窗中的 [工作檢閱]。 將滑鼠游標停留於標題上，以查看工作 ID 和名稱，以及工作的狀態，如下圖所示。
 
-     [![平行堆疊] 視窗中的標頭工具提示](../debugger/media/pdb_walkthrough_11.png "PDB_Walkthrough_11")
+     ![[平行堆疊] 視窗中的標頭工具提示](../debugger/media/pdb_walkthrough_11.png "PDB_Walkthrough_11")
 
      您可以依資料行將工作分組。 在 [**工作] 視窗**中，在 [**狀態**] 資料行標頭上按一下滑鼠右鍵，然後按一下 [**依狀態群組**]。 下圖顯示依狀態分組**的 [工作**] 視窗。
 
-     工作![視窗中的群組]工作(../debugger/media/pdb_walkthrough_12.png "PDB_Walkthrough_12")
+     ![工作視窗中的群組工作](../debugger/media/pdb_walkthrough_12.png "PDB_Walkthrough_12")
 
      您也可以依其他任何資料行進行分組。 將工作分組可讓您專注於一部分工作。 每一個可摺疊的群組都有一些組成該群組的項目。
 
@@ -311,7 +311,7 @@ ms.locfileid: "71252510"
 ## <a name="summary"></a>總結
  本逐步解說示範 [平行工作] 和 [平行堆疊] 偵錯工具視窗。 請在使用多執行緒程式碼的實際專案上使用這些視窗。 您可以檢查以 C++、C# 或 Visual Basic 撰寫的平行程式碼。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [調試多執行緒應用程式](../debugger/walkthrough-debugging-a-parallel-application.md)
 - [偵錯工具簡介](../debugger/debugger-feature-tour.md)
 - [偵錯 Managed 程式碼](../debugger/debugging-managed-code.md)

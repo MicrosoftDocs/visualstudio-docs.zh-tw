@@ -1,5 +1,5 @@
 ---
-title: 使用者入門 （偵錯介面存取 SDK） |Microsoft Docs
+title: 消費者入門（Debug Interface Access SDK） |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -13,27 +13,27 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 089d824a6f693d7a0661b2e099ded82e0b02f403
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2dd6a98f377ba295d6a866c9db95671de4ff16ea
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62554403"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745110"
 ---
 # <a name="getting-started-debug-interface-access-sdk"></a>使用者入門 (偵錯介面存取 SDK)
-偵錯介面存取 (DIA) SDK 會提供您指示文件與說明如何使用 DIA API 的範例。 使用介面和方法在 DIA SDK 開發自訂的應用程式所開啟的.pdb 和.dbg 檔案，並搜尋其內容的符號、 值、 屬性、 位址和其他偵錯資訊。 此 SDK 也提供參考資料表中找到與符號相關聯的屬性C++應用程式。
+Debug Interface Access （DIA） SDK 為您提供教學檔，以及說明如何使用 DIA API 的範例。 使用 DIA SDK 中的介面和方法來開發自訂應用程式，以開啟 .pdb 和 dbg 檔案，並搜尋其內容中的符號、值、屬性、位址和其他的偵錯工具資訊。 此 SDK 也會提供與在應用程式中C++找到之符號相關聯之屬性的參考資料表。
 
- 若要最佳方式使用 DIA SDK，您應該先熟悉下列項目：
+ 若要充分運用 DIA SDK，您應該熟悉下列各項：
 
 - C++程式設計語言
 
 - COM 程式設計
 
-- 編譯範例的 visual Studio 整合式的開發環境 (IDE)
+- 用於編譯範例的 Visual Studio 整合式開發環境（IDE）
 
-  DIA SDK 通常會隨 Visual Studio 和其預設位置是 *[磁碟機]* \Program Files\Microsoft Visual Studio 9.0\DIA SDK。 安裝的一部分，msdia90.dll，會實作 DIA SDK，會自動註冊，您需要如何使用它只包含`dia2.h`在您的程式和連結`diaguids.lib`。
+  DIA SDK 通常會與 Visual Studio 一起安裝，且其預設位置為 *[drive]* \Program Files\Microsoft Visual Studio 9.0 \ DIA SDK。 在安裝過程中，會自動註冊 DIA SDK msdia90 來執行程式設計，因此您必須使用它來將 `dia2.h` 包含在程式中，並連結至 `diaguids.lib`。
 
-  標頭： include\dia2.h
+  標頭： include\dia2。h
 
   程式庫： lib\diaguids.lib
 
@@ -41,16 +41,16 @@ ms.locfileid: "62554403"
 
   IDL：idl\dia2.idl
 
-## <a name="in-this-section"></a>本節內容
+## <a name="in-this-section"></a>本章節內容
 
 [概觀](../../debugger/debug-interface-access/overview-debug-interface-access-sdk.md)
 
-檢閱 dia 時發生的基本架構
+回顧 DIA 的基本架構。
 
 [查詢 .Pdb 檔案](../../debugger/debug-interface-access/querying-the-dot-pdb-file.md)
 
-提供有關如何使用 DIA API 來查詢.pdb 檔案的逐步指示。
+提供逐步指示，說明如何使用 DIA API 來查詢 .pdb 檔案。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [偵錯介面存取 SDK](../../debugger/debug-interface-access/debug-interface-access-sdk.md)
