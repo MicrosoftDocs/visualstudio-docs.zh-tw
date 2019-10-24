@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 3289fd82f8a3b99bf49ee796e49a285ffb93793c
-ms.sourcegitcommit: 08c144d290da373df841f04fc799e3133540a541
+ms.openlocfilehash: 9f8391d355b2f540db4e38486b8992d940336464
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72536005"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72733792"
 ---
 # <a name="how-to-debug-aspnet-exceptions"></a>如何：偵錯 ASP.NET 例外狀況
 在開發強固的 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 應用程式時，針對例外狀況進行偵錯是很重要的部分。 有關如何偵測例外狀況的一般資訊，是在[使用偵錯工具管理例外](../debugger/managing-exceptions-with-the-debugger.md)狀況。

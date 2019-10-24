@@ -1,5 +1,5 @@
 ---
-title: 精靈介面 (IDTWizard) |Microsoft Docs
+title: Wizard 介面（IDTWizard） |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,17 +11,17 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7bd4e9a650bee4f5f13f1aeab39a59a1c04a253c
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: f571fbd0a68ddbf56b637071ac250159461f61d1
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66330904"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72721536"
 ---
 # <a name="wizard-interface-idtwizard"></a>精靈介面 (IDTWizard)
-整合式的開發環境 (IDE) 使用<xref:EnvDTE.IDTWizard>與精靈通訊的介面。 精靈必須實作這個介面，才能安裝在 IDE 中。
+整合式開發環境（IDE）會使用 <xref:EnvDTE.IDTWizard> 介面來與嚮導進行通訊。 必須執行此介面，才能在 IDE 中安裝。
 
- <xref:EnvDTE.IDTWizard.Execute%2A>方法是相關聯的唯一方法<xref:EnvDTE.IDTWizard>介面。 精靈會實作這個方法，IDE 會在介面上呼叫方法。 下列範例會顯示方法的簽章。
+ @No__t_0 方法是與 <xref:EnvDTE.IDTWizard> 介面相關聯的唯一方法。 嚮導會執行這個方法，而 IDE 會在介面上呼叫方法。 下列範例會顯示方法的簽章。
 
 ```
 /* IDTWizard Method */
@@ -34,27 +34,27 @@ STDMETHOD(Execute)(THIS_
    );
 ```
 
- 啟動機制都很相似**新的專案**並**加入新項目**精靈。 若要啟動任一個，請呼叫<xref:EnvDTE.IDTWizard>Dteinternal.h 中定義的介面。 唯一的差別是一組內容和介面呼叫時，會傳遞至介面的自訂參數。
+ [**新增專案**] 和 [**加入新**專案] 嚮導的 [啟動] 機制很類似。 若要啟動，請呼叫 Dteinternal 中定義的 <xref:EnvDTE.IDTWizard> 介面。 唯一的差異在於呼叫介面時，傳遞至介面的內容和自訂參數集合。
 
- 下列資訊描述<xref:EnvDTE.IDTWizard>精靈必須用於實作的介面[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]IDE。 IDE 呼叫<xref:EnvDTE.IDTWizard.Execute%2A>精靈中，將它傳遞下列方法：
+ 下列資訊說明在 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE 中，必須執行的 <xref:EnvDTE.IDTWizard> 介面。 IDE 會在 wizard 上呼叫 <xref:EnvDTE.IDTWizard.Execute%2A> 方法，並將下列內容傳遞給它：
 
 - DTE 物件
 
-     DTE 物件是自動化模型的根。
+     DTE 物件是 Automation 模型的根。
 
-- [視窗] 對話方塊中程式碼片段所示的控制代碼`hwndOwner ([in] long)`。
+- [視窗] 對話方塊的控制碼（如程式碼區段中所示） `hwndOwner ([in] long)`。
 
-     精靈會使用此`hwndOwner`為精靈 對話方塊的父代。
+     Wizard 使用此 `hwndOwner` 作為 [wizard] 對話方塊的父系。
 
-- 內容參數傳遞給介面做為變化 SAFEARRAY 的程式碼片段所示`[in] SAFEARRAY (VARIANT)* ContextParams`。
+- 以 SAFEARRAY 的 variant 形式傳遞給介面的內容參數（如程式碼區段中所示），`[in] SAFEARRAY (VARIANT)* ContextParams`。
 
-     內容參數會包含值所特有的正在啟動的精靈類型的陣列和專案的目前狀態。 IDE 會將內容參數傳遞至精靈。 如需詳細資訊，請參閱 <<c0> [ 內容參數](../../extensibility/internals/context-parameters.md)。
+     內容參數包含值的陣列，這些值是所啟動的 wizard 和專案的目前狀態所特有。 IDE 會將內容參數傳遞至 wizard。 如需詳細資訊，請參閱[內容參數](../../extensibility/internals/context-parameters.md)。
 
-- 自訂參數傳遞給介面做為變化 SAFEARRAY 的程式碼片段所示`[in] SAFEARRAY (VARIANT)* CustomParams`。
+- 以 SAFEARRAY 的 variant 形式傳遞至介面的自訂參數（如程式碼區段中所示），`[in] SAFEARRAY (VARIANT)* CustomParams`。
 
-     自訂參數會包含使用者定義的參數陣列。 .Vsz 檔案會將自訂參數傳遞至 IDE。 的值取決於`Param=`陳述式。 如需詳細資訊，請參閱 <<c0> [ 自訂參數](../../extensibility/internals/custom-parameters.md)。
+     自訂參數包含使用者定義參數的陣列。 .Vsz 檔案會將自訂參數傳遞至 IDE。 這些值取決於 `Param=` 語句。 如需詳細資訊，請參閱[自訂參數](../../extensibility/internals/custom-parameters.md)。
 
-- 介面的傳回值
+- 介面的傳回值為
 
     ```
     wizardResultSuccess = -1,
@@ -63,7 +63,7 @@ STDMETHOD(Execute)(THIS_
     wizardResultBackout = 2
     ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [內容參數](../../extensibility/internals/context-parameters.md)
 - [自訂參數](../../extensibility/internals/custom-parameters.md)
 - [精靈](../../extensibility/internals/wizards.md)

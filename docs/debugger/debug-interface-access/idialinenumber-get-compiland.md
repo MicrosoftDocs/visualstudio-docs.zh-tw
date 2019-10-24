@@ -1,5 +1,5 @@
 ---
-title: 'Idialinenumber:: Get_compiland |Microsoft Docs'
+title: IDiaLineNumber：： get_compiland |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 25d990ab019c01daf1f977464211fb72838275a1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8d6ae842d4717bdc0bd989327f07d9566d1161b8
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62829053"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743234"
 ---
-# <a name="idialinenumbergetcompiland"></a>IDiaLineNumber::get_compiland
-擷取提供映像文字的位元組數將編譯模組符號的參考。
+# <a name="idialinenumberget_compiland"></a>IDiaLineNumber::get_compiland
+抓取提供影像文字位元組之編譯模組符號的參考。
 
 ## <a name="syntax"></a>語法
 
@@ -33,10 +33,10 @@ HRESULT get_compiland ( 
 #### <a name="parameters"></a>參數
  pRetVal
 
-[out]傳回[IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)提供映像文字的位元組數將編譯模組的物件。
+脫銷傳回提供影像文字位元組之編譯模組的[IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)物件。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，會傳回 `S_OK`。 傳回`S_FALSE`不支援這個屬性，則為。 否則會傳回錯誤碼。
+ 如果成功，會傳回 `S_OK`。 如果不支援此屬性，則傳回 `S_FALSE`。 否則會傳回錯誤碼。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)

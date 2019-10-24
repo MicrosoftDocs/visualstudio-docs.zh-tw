@@ -1,5 +1,5 @@
 ---
-title: 實作舊版語言服務 2 |Microsoft Docs
+title: 執行舊版語言 Service2 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,15 +10,15 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6105f46740dc854f4c498adad5bbd5fe675b41f6
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 053ca367776c811dd1192814c5f928bb294eefb4
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66335134"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72727245"
 ---
-# <a name="implementing-a-legacy-language-service"></a>實作舊版語言服務
-若要實作使用 managed 的 package framework (MPF) 的語言服務，您必須衍生的類別<xref:Microsoft.VisualStudio.Package.LanguageService>類別並實作下列的抽象方法和屬性：
+# <a name="implementing-a-legacy-language-service"></a>執行舊版語言服務
+若要使用 managed package framework （MPF）來執行語言服務，您必須從 <xref:Microsoft.VisualStudio.Package.LanguageService> 類別衍生類別，並執行下列抽象方法和屬性：
 
 - <xref:Microsoft.VisualStudio.Package.LanguageService.GetLanguagePreferences%2A> 方法
 
@@ -28,17 +28,17 @@ ms.locfileid: "66335134"
 
 - <xref:Microsoft.VisualStudio.Package.LanguageService.Name%2A> 屬性
 
-  實作這些方法和屬性，請參閱下方的詳細資料之適當章節。
+  如需有關如何執行這些方法和屬性的詳細資訊，請參閱下面的適當章節。
 
-  若要支援額外的功能，您的語言服務可能必須從其中一個 MPF 語言服務類別，衍生類別比方說，若要支援其他的功能表命令，您必須衍生的類別<xref:Microsoft.VisualStudio.Package.ViewFilter>類別並覆寫數個命令處理常式方法 (請參閱<xref:Microsoft.VisualStudio.Package.ViewFilter>如需詳細資訊)。 <xref:Microsoft.VisualStudio.Package.LanguageService>類別提供數種方法，呼叫以建立的各種類別的新執行個體，並覆寫適當的建立方式，提供您類別的執行個體。 例如，您需要覆寫<xref:Microsoft.VisualStudio.Package.LanguageService.CreateViewFilter%2A>方法中的<xref:Microsoft.VisualStudio.Package.LanguageService>類別，以傳回您自己的執行個體<xref:Microsoft.VisualStudio.Package.ViewFilter>類別。 請參閱 < 具現化自訂類別 > 一節，如需詳細資訊。
+  若要支援其他功能，您的語言服務可能必須從其中一個 MPF 語言服務類別衍生類別;例如，若要支援其他的功能表命令，您必須從 <xref:Microsoft.VisualStudio.Package.ViewFilter> 類別衍生類別，並覆寫數個命令處理方法（如需詳細資訊，請參閱 <xref:Microsoft.VisualStudio.Package.ViewFilter>）。 @No__t_0 類別提供數種方法，可供呼叫以建立各種類別的新實例，而且您會覆寫適當的建立方法，以提供類別的實例。 例如，您必須覆寫 <xref:Microsoft.VisualStudio.Package.LanguageService> 類別中的 <xref:Microsoft.VisualStudio.Package.LanguageService.CreateViewFilter%2A> 方法，以傳回您自己 <xref:Microsoft.VisualStudio.Package.ViewFilter> 類別的實例。 如需詳細資訊，請參閱「具現化自訂類別」一節。
 
-  您的語言服務也可以提供自己的圖示，在許多地方使用。 比方說，當顯示 IntelliSense 完成清單時，清單中的每個項目可以有與其相關聯，做為方法、 類別、 命名空間、 property、 標示的項目圖示或需要您的語言。 這些圖示可在所有的 IntelliSense 清單中，**瀏覽列**，然後在**錯誤清單**工作 視窗。 請參閱下方的 「 語言服務映像 」 區段，如需詳細資訊。
+  您的語言服務也可以提供自己的圖示，用於許多地方。 例如，當顯示 IntelliSense 完成清單時，清單中的每個專案都可以有與其相關聯的圖示、將專案標記為方法、類別、命名空間、屬性，或語言所需的內容。 這些圖示會用於所有 IntelliSense 清單、**導覽**列，以及 [**錯誤清單**工作] 視窗中。 如需詳細資訊，請參閱下面的「語言服務映射」一節。
 
 ## <a name="getlanguagepreferences-method"></a>GetLanguagePreferences 方法
- <xref:Microsoft.VisualStudio.Package.LanguageService.GetLanguagePreferences%2A>方法一律會傳回相同的執行個體<xref:Microsoft.VisualStudio.Package.LanguagePreferences>類別。 您可以使用基底<xref:Microsoft.VisualStudio.Package.LanguagePreferences>類別，如果您不需要任何其他的喜好設定，為您的語言服務。 MPF 語言服務類別假設至少存在基底<xref:Microsoft.VisualStudio.Package.LanguagePreferences>類別。
+ @No__t_0 方法一律會傳回 <xref:Microsoft.VisualStudio.Package.LanguagePreferences> 類別的相同實例。 如果您的語言服務不需要任何額外的喜好設定，您可以使用基底 <xref:Microsoft.VisualStudio.Package.LanguagePreferences> 類別。 MPF 語言服務類別會假設至少存在基底 <xref:Microsoft.VisualStudio.Package.LanguagePreferences> 類別。
 
 ### <a name="example"></a>範例
- 此範例示範的典型實作<xref:Microsoft.VisualStudio.Package.LanguageService.GetLanguagePreferences%2A>方法。 這個範例會使用基底<xref:Microsoft.VisualStudio.Package.LanguagePreferences>類別。
+ 這個範例會顯示 <xref:Microsoft.VisualStudio.Package.LanguageService.GetLanguagePreferences%2A> 方法的一般執行。 這個範例會使用基底 <xref:Microsoft.VisualStudio.Package.LanguagePreferences> 類別。
 
 ```csharp
 using Microsoft.VisualStudio.Package;
@@ -66,10 +66,10 @@ namespace TestLanguagePackage
 ```
 
 ## <a name="getscanner-method"></a>GetScanner 方法
- 這個方法傳回的執行個體<xref:Microsoft.VisualStudio.Package.IScanner>實作的行導向的剖析器或用來取得權杖及其類型和觸發程序的掃描器的物件。 此掃描器會在<xref:Microsoft.VisualStudio.Package.Colorizer>雖然掃描器也可用來取得語彙基元類型及觸發程序的更複雜的剖析作業以準備用於顏色標示類別。 您必須提供實作的類別<xref:Microsoft.VisualStudio.Package.IScanner>介面，且您必須實作所有的方法上<xref:Microsoft.VisualStudio.Package.IScanner>介面。
+ 這個方法會傳回 <xref:Microsoft.VisualStudio.Package.IScanner> 物件的實例，其會執行用來取得權杖及其類型和觸發程式的行導向剖析器或掃描器。 此掃描器用於 <xref:Microsoft.VisualStudio.Package.Colorizer> 類別中的顏色標示，不過掃描器也可以用來取得權杖類型和觸發程式，以序言更複雜的剖析作業。 您必須提供可實 <xref:Microsoft.VisualStudio.Package.IScanner> 介面的類別，而且您必須在 <xref:Microsoft.VisualStudio.Package.IScanner> 介面上執行所有方法。
 
 ### <a name="example"></a>範例
- 此範例示範的典型實作<xref:Microsoft.VisualStudio.Package.LanguageService.GetScanner%2A>方法。 `TestScanner`類別會實作<xref:Microsoft.VisualStudio.Package.IScanner>（未顯示） 的介面。
+ 這個範例會顯示 <xref:Microsoft.VisualStudio.Package.LanguageService.GetScanner%2A> 方法的一般執行。 @No__t_0 類別會執行 <xref:Microsoft.VisualStudio.Package.IScanner> 介面（未顯示）。
 
 ```csharp
 using Microsoft.VisualStudio.Package;
@@ -117,10 +117,10 @@ namespace TestLanguagePackage
 ```
 
 ## <a name="parsesource-method"></a>ParseSource 方法
- 剖析原始程式檔，根據數種不同的原因。 這個方法有<xref:Microsoft.VisualStudio.Package.ParseRequest>物件，描述有何預期特定的剖析作業。 <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A>方法會叫用更複雜的剖析器會決定 token 的功能和範圍。 <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A>方法用於支援 IntelliSense 作業以及括號對稱。 即使您並不支援這類進階的作業，您仍然必須傳回有效<xref:Microsoft.VisualStudio.Package.AuthoringScope>物件，且必須要建立一個類別來實作<xref:Microsoft.VisualStudio.Package.AuthoringScope>介面，並實作該介面上的所有方法。 您可以從所有的方法來傳回 null 值，但<xref:Microsoft.VisualStudio.Package.AuthoringScope>物件本身不能為 null 值。
+ 根據幾個不同的原因剖析來源檔案。 這個方法會提供一個 <xref:Microsoft.VisualStudio.Package.ParseRequest> 物件，描述特定剖析作業預期的內容。 @No__t_0 方法會叫用較複雜的剖析器，以判斷權杖功能和範圍。 @No__t_0 方法是用來支援 IntelliSense 作業和括弧對稱。 即使您不支援這類的 advanced 作業，仍然必須傳回有效的 <xref:Microsoft.VisualStudio.Package.AuthoringScope> 物件，而且需要您建立一個類別來執行 <xref:Microsoft.VisualStudio.Package.AuthoringScope> 介面，並在該介面上實作為所有方法。 您可以從所有方法傳回 null 值，但 <xref:Microsoft.VisualStudio.Package.AuthoringScope> 物件本身不得為 null 值。
 
 ### <a name="example"></a>範例
- 此範例中顯示的最小實作<xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A>方法和<xref:Microsoft.VisualStudio.Package.AuthoringScope>類別，足以讓語言服務，若要編譯及運作，不需要實際支援的任何更進階的功能。
+ 這個範例顯示 <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> 方法和 <xref:Microsoft.VisualStudio.Package.AuthoringScope> 類別的最小化執行，足以讓語言服務編譯和運作，而不需要實際支援任何更先進的功能。
 
 ```csharp
 using Microsoft.VisualStudio.Package;
@@ -167,10 +167,10 @@ namespace TestLanguagePackage
 ```
 
 ## <a name="name-property"></a>Name 屬性
- 這個屬性會傳回語言服務的名稱。 這必須是指定語言服務註冊時的相同名稱。 此名稱會在幾個地方，其中最重要的是<xref:Microsoft.VisualStudio.Package.LanguagePreferences>類別，用來存取登錄的名稱。 傳回這個屬性的名稱必須不得當地語系化，因為它用於在登錄中登錄項目和索引鍵名稱。
+ 這個屬性會傳回語言服務的名稱。 這必須是註冊語言服務時所指定的相同名稱。 這個名稱會用於數個地方，最重要的是用來存取登錄的 <xref:Microsoft.VisualStudio.Package.LanguagePreferences> 類別。 這個屬性所傳回的名稱不能當地語系化，因為它用於登錄專案和機碼名稱。
 
 ### <a name="example"></a>範例
- 此範例示範一個可能的實作<xref:Microsoft.VisualStudio.Package.LanguageService.Name%2A>屬性。 請注意，此處的名稱是硬式編碼： 應該從資源檔取得的實際名稱，因此可用於註冊語言服務 (請參閱[註冊舊版語言服務](../../extensibility/internals/registering-a-legacy-language-service1.md))。
+ 這個範例會顯示 <xref:Microsoft.VisualStudio.Package.LanguageService.Name%2A> 屬性的一個可能的執行。 請注意，此處的名稱是硬式編碼：您應該從資源檔取得實際名稱，以便用來註冊語言服務（請參閱[註冊舊版語言服務](../../extensibility/internals/registering-a-legacy-language-service1.md)）。
 
 ```csharp
 using Microsoft.VisualStudio.Package;
@@ -188,54 +188,54 @@ namespace TestLanguagePackage
 }
 ```
 
-## <a name="instantiating-custom-classes"></a>具現化的自訂類別
- 可以覆寫指定的類別中的下列方法，以提供您自己的版本，每個類別的執行個體。
+## <a name="instantiating-custom-classes"></a>具現化自訂類別
+ 您可以覆寫指定類別中的下列方法，以提供您自己版本的每個類別的實例。
 
-### <a name="in-the-languageservice-class"></a>在 LanguageService 類別
+### <a name="in-the-languageservice-class"></a>在 LanguageService 類別中
 
-|方法|傳回類別|描述|
+|方法|傳回的類別|描述|
 |------------|--------------------|-----------------|
-|<xref:Microsoft.VisualStudio.Package.LanguageService.CreateCodeWindowManager%2A>|<xref:Microsoft.VisualStudio.Package.CodeWindowManager>|若要支援自訂文字檢視附加功能。|
-|<xref:Microsoft.VisualStudio.Package.LanguageService.CreateDocumentProperties%2A>|<xref:Microsoft.VisualStudio.Package.DocumentProperties>|若要支援自訂文件屬性。|
-|<xref:Microsoft.VisualStudio.Package.LanguageService.CreateDropDownHelper%2A>|<xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars>|若要支援**瀏覽列**。|
-|<xref:Microsoft.VisualStudio.Package.LanguageService.CreateExpansionFunction%2A>|<xref:Microsoft.VisualStudio.Package.ExpansionFunction>|若要支援程式碼片段範本函式。|
-|<xref:Microsoft.VisualStudio.Package.LanguageService.CreateExpansionProvider%2A>|<xref:Microsoft.VisualStudio.Package.ExpansionProvider>|若要支援程式碼片段 （這個方法通常未覆寫）。|
-|<xref:Microsoft.VisualStudio.Package.LanguageService.CreateParseRequest%2A>|<xref:Microsoft.VisualStudio.Package.ParseRequest>|若要支援自訂<xref:Microsoft.VisualStudio.Package.ParseRequest>（這個方法通常未覆寫） 的結構。|
-|<xref:Microsoft.VisualStudio.Package.LanguageService.CreateSource%2A>|<xref:Microsoft.VisualStudio.Package.Source>|若要支援格式化的來源程式碼、 指定註解字元，以及自訂方法簽章。|
-|<xref:Microsoft.VisualStudio.Package.LanguageService.CreateViewFilter%2A>|<xref:Microsoft.VisualStudio.Package.ViewFilter>|若要支援更多的功能表命令。|
-|<xref:Microsoft.VisualStudio.Package.Source.GetColorizer%2A>|<xref:Microsoft.VisualStudio.Package.Colorizer>|若要支援語法反白顯示 （這個方法通常未覆寫）。|
-|<xref:Microsoft.VisualStudio.Package.LanguageService.GetLanguagePreferences%2A>|<xref:Microsoft.VisualStudio.Package.LanguagePreferences>|若要支援的語言喜好設定的存取。 這個方法必須實作，但可能會傳回基底類別的執行個體。|
-|<xref:Microsoft.VisualStudio.Package.LanguageService.GetScanner%2A>|<xref:Microsoft.VisualStudio.Package.IScanner>|提供用來識別類型該行的語彙基元的剖析器。 必須實作這個方法和<xref:Microsoft.VisualStudio.Package.IScanner>必須衍生自。|
-|<xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A>|<xref:Microsoft.VisualStudio.Package.AuthoringScope>|提供用來識別功能和範圍中的整個原始程式檔的剖析器。 這個方法必須實作，而且必須傳回您版本的執行個體<xref:Microsoft.VisualStudio.Package.AuthoringScope>類別。 如果您想要支援語法反白顯示 (這需要<xref:Microsoft.VisualStudio.Package.IScanner>所傳回的剖析器<xref:Microsoft.VisualStudio.Package.LanguageService.GetScanner%2A>方法)，您可以執行任何動作在此方法傳回以外的版本<xref:Microsoft.VisualStudio.Package.AuthoringScope>其所有的方法會傳回 null 值的類別。|
+|<xref:Microsoft.VisualStudio.Package.LanguageService.CreateCodeWindowManager%2A>|<xref:Microsoft.VisualStudio.Package.CodeWindowManager>|支援文字視圖的自訂新增專案。|
+|<xref:Microsoft.VisualStudio.Package.LanguageService.CreateDocumentProperties%2A>|<xref:Microsoft.VisualStudio.Package.DocumentProperties>|支援自訂文件屬性。|
+|<xref:Microsoft.VisualStudio.Package.LanguageService.CreateDropDownHelper%2A>|<xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars>|以支援**巡覽列**。|
+|<xref:Microsoft.VisualStudio.Package.LanguageService.CreateExpansionFunction%2A>|<xref:Microsoft.VisualStudio.Package.ExpansionFunction>|支援程式碼片段範本中的函式。|
+|<xref:Microsoft.VisualStudio.Package.LanguageService.CreateExpansionProvider%2A>|<xref:Microsoft.VisualStudio.Package.ExpansionProvider>|支援程式碼片段（通常不會覆寫這個方法）。|
+|<xref:Microsoft.VisualStudio.Package.LanguageService.CreateParseRequest%2A>|<xref:Microsoft.VisualStudio.Package.ParseRequest>|支援自訂 <xref:Microsoft.VisualStudio.Package.ParseRequest> 結構（通常不會覆寫這個方法）。|
+|<xref:Microsoft.VisualStudio.Package.LanguageService.CreateSource%2A>|<xref:Microsoft.VisualStudio.Package.Source>|支援格式化原始程式碼、指定批註字元，以及自訂方法簽章。|
+|<xref:Microsoft.VisualStudio.Package.LanguageService.CreateViewFilter%2A>|<xref:Microsoft.VisualStudio.Package.ViewFilter>|以支援其他功能表命令。|
+|<xref:Microsoft.VisualStudio.Package.Source.GetColorizer%2A>|<xref:Microsoft.VisualStudio.Package.Colorizer>|支援語法反白顯示（通常不會覆寫此方法）。|
+|<xref:Microsoft.VisualStudio.Package.LanguageService.GetLanguagePreferences%2A>|<xref:Microsoft.VisualStudio.Package.LanguagePreferences>|支援存取語言喜好設定。 這個方法必須實作為，但可以傳回基類的實例。|
+|<xref:Microsoft.VisualStudio.Package.LanguageService.GetScanner%2A>|<xref:Microsoft.VisualStudio.Package.IScanner>|提供剖析器，用於識別行上的權杖類型。 這個方法必須實作為，而且 <xref:Microsoft.VisualStudio.Package.IScanner> 必須衍生自。|
+|<xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A>|<xref:Microsoft.VisualStudio.Package.AuthoringScope>|提供剖析器，用來識別整個原始程式檔中的功能和範圍。 這個方法必須實作為，而且必須傳回您的 <xref:Microsoft.VisualStudio.Package.AuthoringScope> 類別版本的實例。 如果您想要支援的語法反白顯示（需要從 <xref:Microsoft.VisualStudio.Package.LanguageService.GetScanner%2A> 方法傳回的 <xref:Microsoft.VisualStudio.Package.IScanner> 剖析器），您可以在這個方法中執行任何動作，而不是傳回 <xref:Microsoft.VisualStudio.Package.AuthoringScope> 類別的版本，其方法全都會傳回 null 值。|
 
-### <a name="in-the-source-class"></a>在來源類別
+### <a name="in-the-source-class"></a>在來源類別中
 
-|方法|傳回類別|描述|
+|方法|傳回的類別|描述|
 |------------|--------------------|-----------------|
-|<xref:Microsoft.VisualStudio.Package.Source.CreateCompletionSet%2A>|<xref:Microsoft.VisualStudio.Package.CompletionSet>|自訂 （這個方法通常未覆寫） 的 IntelliSense 完成清單的顯示方式。|
-|<xref:Microsoft.VisualStudio.Package.Source.CreateErrorTaskItem%2A>|<xref:Microsoft.VisualStudio.Package.DocumentTask>|支援標記錯誤清單中的工作清單具體來說，支援開啟檔案，並跳至造成錯誤的那一行以外的功能。|
-|<xref:Microsoft.VisualStudio.Package.Source.CreateMethodData%2A>|<xref:Microsoft.VisualStudio.Package.MethodData>|自訂的 IntelliSense 參數諮詢工具提示顯示。|
-|<xref:Microsoft.VisualStudio.Package.Source.GetCommentFormat%2A>|<xref:Microsoft.VisualStudio.Package.CommentInfo>|支援註解的程式碼。|
-|<xref:Microsoft.VisualStudio.Package.Source.CreateAuthoringSink%2A>|<xref:Microsoft.VisualStudio.Package.AuthoringSink>|用於蒐集在剖析作業期間的資訊。|
+|<xref:Microsoft.VisualStudio.Package.Source.CreateCompletionSet%2A>|<xref:Microsoft.VisualStudio.Package.CompletionSet>|用於自訂 IntelliSense 完成清單的顯示（通常不會覆寫這個方法）。|
+|<xref:Microsoft.VisualStudio.Package.Source.CreateErrorTaskItem%2A>|<xref:Microsoft.VisualStudio.Package.DocumentTask>|錯誤清單工作清單中的支援標記;具體而言，支援開啟檔案以外的功能，並跳至造成錯誤的那一行。|
+|<xref:Microsoft.VisualStudio.Package.Source.CreateMethodData%2A>|<xref:Microsoft.VisualStudio.Package.MethodData>|用於自訂 IntelliSense 參數資訊工具提示的顯示。|
+|<xref:Microsoft.VisualStudio.Package.Source.GetCommentFormat%2A>|<xref:Microsoft.VisualStudio.Package.CommentInfo>|用於支援的批註程式碼。|
+|<xref:Microsoft.VisualStudio.Package.Source.CreateAuthoringSink%2A>|<xref:Microsoft.VisualStudio.Package.AuthoringSink>|用於在剖析作業期間收集資訊。|
 
-### <a name="in-the-authoringscope-class"></a>在 AuthoringScope 類別
+### <a name="in-the-authoringscope-class"></a>在 AuthoringScope 類別中
 
-|方法|傳回類別|描述|
+|方法|傳回的類別|描述|
 |------------|--------------------|-----------------|
-|<xref:Microsoft.VisualStudio.Package.AuthoringScope.GetDeclarations%2A>|<xref:Microsoft.VisualStudio.Package.Declarations>|提供例如成員或類型宣告的清單。 這個方法必須實作，但可以傳回 null 值。 如果此方法會傳回有效的物件，物件必須是您的版本的執行個體<xref:Microsoft.VisualStudio.Package.Declarations>類別。|
-|<xref:Microsoft.VisualStudio.Package.AuthoringScope.GetMethods%2A>|<xref:Microsoft.VisualStudio.Package.Methods>|針對指定的內容中提供方法簽章的清單。 這個方法必須實作，但可以傳回 null 值。 如果此方法會傳回有效的物件，物件必須是您的版本的執行個體<xref:Microsoft.VisualStudio.Package.Methods>類別。|
+|<xref:Microsoft.VisualStudio.Package.AuthoringScope.GetDeclarations%2A>|<xref:Microsoft.VisualStudio.Package.Declarations>|提供宣告的清單，例如成員或類型。 這個方法必須實作為，但可以傳回 null 值。 如果這個方法傳回有效的物件，則物件必須是您的 <xref:Microsoft.VisualStudio.Package.Declarations> 類別版本的實例。|
+|<xref:Microsoft.VisualStudio.Package.AuthoringScope.GetMethods%2A>|<xref:Microsoft.VisualStudio.Package.Methods>|提供給定內容的方法簽章清單。 這個方法必須實作為，但可以傳回 null 值。 如果這個方法傳回有效的物件，則物件必須是您的 <xref:Microsoft.VisualStudio.Package.Methods> 類別版本的實例。|
 
-## <a name="language-service-images"></a>語言服務映像
- 若要提供圖示以供所有語言服務清單，覆寫<xref:Microsoft.VisualStudio.Package.LanguageService.GetImageList%2A>方法中的<xref:Microsoft.VisualStudio.Package.LanguageService>類別，並傳回<xref:System.Windows.Forms.ImageList>包含圖示。 基底<xref:Microsoft.VisualStudio.Package.LanguageService>類別會載入一組預設的圖示。 由於您在需要圖示的地方指定確切的影像索引，您如何排列您自己的影像清單是完全是由您決定。
+## <a name="language-service-images"></a>語言服務映射
+ 若要提供整個語言服務所要使用的圖示清單，請覆寫 <xref:Microsoft.VisualStudio.Package.LanguageService> 類別中的 <xref:Microsoft.VisualStudio.Package.LanguageService.GetImageList%2A> 方法，並傳回包含圖示的 <xref:System.Windows.Forms.ImageList>。 基底 <xref:Microsoft.VisualStudio.Package.LanguageService> 類別會載入一組預設的圖示。 因為您在需要圖示的位置上指定確切的影像索引，所以您要如何安排自己的影像清單，完全由您決定。
 
-### <a name="images-used-in-intellisense-completion-lists"></a>使用 IntelliSense 完成清單中的映像
- IntelliSense 完成清單，請指定在每個項目映像索引<xref:Microsoft.VisualStudio.Package.Declarations.GetGlyph%2A>方法的<xref:Microsoft.VisualStudio.Package.Declarations>類別，您必須覆寫，如果您想要提供的映像索引。 從傳回的值<xref:Microsoft.VisualStudio.Package.Declarations.GetGlyph%2A>方法是提供給映像清單中的索引<xref:Microsoft.VisualStudio.Package.CompletionSet>類別建構函式，也就是相同的映像清單傳回<xref:Microsoft.VisualStudio.Package.LanguageService.GetImageList%2A>方法中的<xref:Microsoft.VisualStudio.Package.LanguageService>類別 （您可以變更哪一個映像清單用於<xref:Microsoft.VisualStudio.Package.CompletionSet>如果您覆寫<xref:Microsoft.VisualStudio.Package.Source.CreateCompletionSet%2A>方法中的<xref:Microsoft.VisualStudio.Package.Source>類別，以提供不同的映像清單)。
+### <a name="images-used-in-intellisense-completion-lists"></a>IntelliSense 完成清單中使用的影像
+ 針對 IntelliSense 完成清單，會為 <xref:Microsoft.VisualStudio.Package.Declarations> 類別之 <xref:Microsoft.VisualStudio.Package.Declarations.GetGlyph%2A> 方法中的每個專案指定影像索引，如果您想要提供影像索引，則必須覆寫此參數。 從 <xref:Microsoft.VisualStudio.Package.Declarations.GetGlyph%2A> 方法傳回的值是影像清單中提供給 <xref:Microsoft.VisualStudio.Package.CompletionSet> 類別函式的索引，而這是從 <xref:Microsoft.VisualStudio.Package.LanguageService> 類別中的 <xref:Microsoft.VisualStudio.Package.LanguageService.GetImageList%2A> 方法所傳回的相同影像清單（您可以變更要用於 @no__ 的影像清單t_4，如果您覆寫 <xref:Microsoft.VisualStudio.Package.Source> 類別中的 <xref:Microsoft.VisualStudio.Package.Source.CreateCompletionSet%2A> 方法，以提供不同的影像清單）。
 
-### <a name="images-used-in-the-navigation-bar"></a>在導覽列中使用的映像
- **瀏覽列**顯示類型和成員的清單，並可快速瀏覽可以顯示圖示。 這些圖示會取自<xref:Microsoft.VisualStudio.Package.LanguageService.GetImageList%2A>方法中的<xref:Microsoft.VisualStudio.Package.LanguageService>類別，並無法特別針對覆寫**導覽列**。 表示下拉式方塊的清單會填入時，會指定下拉式方塊中的每個項目所使用的索引<xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A>方法中的<xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars>類別 (請參閱[導覽列的舊版語言服務支援](../../extensibility/internals/support-for-the-navigation-bar-in-a-legacy-language-service.md)). 從剖析器，通常是透過您的版本以某種方式取得這些映像索引<xref:Microsoft.VisualStudio.Package.Declarations>類別。 如何取得索引是完全是由您決定。
+### <a name="images-used-in-the-navigation-bar"></a>導覽列中使用的影像
+ **巡覽列**會顯示類型和成員的清單，並用於快速導覽，可以顯示圖示。 這些圖示是從 <xref:Microsoft.VisualStudio.Package.LanguageService> 類別中的 <xref:Microsoft.VisualStudio.Package.LanguageService.GetImageList%2A> 方法取得，而且無法特別針對**導覽**列加以覆寫。 當代表下拉式方塊的清單填入 <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars> 類別中的 <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A> 方法（請參閱[支援舊版語言服務中的導覽](../../extensibility/internals/support-for-the-navigation-bar-in-a-legacy-language-service.md)列）時，會指定下拉式方塊中的每個專案所使用的索引。 這些影像索引是以某種方式從剖析器取得，通常是透過您的 <xref:Microsoft.VisualStudio.Package.Declarations> 類別版本。 取得索引的方式完全取決於您。
 
-### <a name="images-used-in-the-error-list-task-window"></a>在 [錯誤清單] 工作視窗中使用的映像
- 每當<xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A>方法的剖析器 (請參閱[舊版語言服務剖析器和掃描器](../../extensibility/internals/legacy-language-service-parser-and-scanner.md)) 遇到錯誤，並將傳遞至該錯誤<xref:Microsoft.VisualStudio.Package.AuthoringSink.AddError%2A>中的方法<xref:Microsoft.VisualStudio.Package.AuthoringSink>類別來報告錯誤**錯誤清單**工作 視窗。 圖示可以出現在 [工作] 視窗中每個項目相關聯，而且該圖示的來源所傳回的相同影像清單<xref:Microsoft.VisualStudio.Package.LanguageService.GetImageList%2A>方法中的<xref:Microsoft.VisualStudio.Package.LanguageService>類別。 MPF 類別的預設行為是不會顯示錯誤訊息的映像。 不過，藉由衍生類別覆寫這個行為<xref:Microsoft.VisualStudio.Package.Source>類別並覆寫<xref:Microsoft.VisualStudio.Package.Source.CreateErrorTaskItem%2A>方法。 在該方法中，您建立新<xref:Microsoft.VisualStudio.Package.DocumentTask>物件。 再傳回該物件，您可以使用<xref:Microsoft.VisualStudio.Shell.Task.ImageIndex%2A>屬性上的<xref:Microsoft.VisualStudio.Package.DocumentTask>物件設定的影像索引。 這看起來類似下列的範例。 請注意，`TestIconImageIndex`是列出所有的圖示，並且專屬於此範例中的列舉。 您可能必須以不同的方式找出您的語言服務中的圖示。
+### <a name="images-used-in-the-error-list-task-window"></a>錯誤清單工作視窗中使用的影像
+ 每當 <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> 方法剖析器（請參閱[舊版語言服務剖析器和掃描器](../../extensibility/internals/legacy-language-service-parser-and-scanner.md)）遇到錯誤，並將該錯誤傳遞至 <xref:Microsoft.VisualStudio.Package.AuthoringSink> 類別中的 <xref:Microsoft.VisualStudio.Package.AuthoringSink.AddError%2A> 方法時，就會在 [**錯誤清單**工作] 視窗中報告錯誤。 圖示可以與出現在工作視窗中的每個專案相關聯，而該圖示來自 <xref:Microsoft.VisualStudio.Package.LanguageService> 類別中的 <xref:Microsoft.VisualStudio.Package.LanguageService.GetImageList%2A> 方法所傳回的相同影像清單。 MPF 類別的預設行為是不要顯示包含錯誤訊息的影像。 不過，您可以藉由從 <xref:Microsoft.VisualStudio.Package.Source> 類別衍生類別，並覆寫 <xref:Microsoft.VisualStudio.Package.Source.CreateErrorTaskItem%2A> 方法，來覆寫此行為。 在該方法中，您會建立新的 <xref:Microsoft.VisualStudio.Package.DocumentTask> 物件。 傳回該物件之前，您可以使用 <xref:Microsoft.VisualStudio.Package.DocumentTask> 物件上的 <xref:Microsoft.VisualStudio.Shell.Task.ImageIndex%2A> 屬性來設定影像索引。 這看起來會如下列範例所示。 請注意，`TestIconImageIndex` 是列舉，其中會列出所有圖示，而且是此範例特有的。 在語言服務中，您可能會有不同的方式來識別圖示。
 
 ```csharp
 using Microsoft.VisualStudio.Package;
@@ -273,10 +273,10 @@ namespace TestLanguagePackage
 }
 ```
 
-## <a name="the-default-image-list-for-a-language-service"></a>預設映像清單中，語言服務
- 所提供的基底的 MPF 語言服務類別的預設映像清單包含一些較常見的語言項目相關聯的圖示。 大部分的這些圖示會排列在六個變化，公用、 內部、 friend，受保護、 私用和快顯的存取概念對應的集合。 例如，您可以有不同的圖示，根據它是公用、 受保護或私用方法。
+## <a name="the-default-image-list-for-a-language-service"></a>語言服務的預設影像清單
+ 基底 MPF 語言服務類別所提供的預設影像清單，包含一些與較常見語言專案相關聯的圖示。 這些圖示大部分都是以六種不同的集合來排列，並對應至公用、內部、friend、protected、private 和快捷方式的存取概念。 例如，根據是公用、受保護或私用，您可以有不同的方法圖示。
 
- 下列的列舉型別會指定針對每個圖示集的一般名稱，並指定相關聯的索引。 例如，以列舉為基礎，您可以指定受保護的方法，做為影像索引`(int)IconImageIndex.Method + (int)IconImageIndex.AccessProtected`。 您可以變更所需的這個列舉型別中的名稱。
+ 下列列舉會指定每個圖示集的一般名稱，並指定相關聯的索引。 例如，您可以根據列舉，將受保護方法的影像索引指定為 `(int)IconImageIndex.Method + (int)IconImageIndex.AccessProtected`。 您可以視需要變更此列舉型別中的名稱。
 
 ```csharp
 public enum IconImageIndex
@@ -358,7 +358,7 @@ public enum IconImageIndex
         }
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [實作舊版語言服務](../../extensibility/internals/implementing-a-legacy-language-service1.md)
 - [舊版語言服務概觀](../../extensibility/internals/legacy-language-service-overview.md)
 - [註冊舊版語言服務](../../extensibility/internals/registering-a-legacy-language-service1.md)

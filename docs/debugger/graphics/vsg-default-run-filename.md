@@ -8,14 +8,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cb56f7ef08241aed2e109e6845af8fb596cb42e4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 835e2cec19e36418091e094abd2ec76bd6403398
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62895372"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72734834"
 ---
-# <a name="vsgdefaultrunfilename"></a>VSG_DEFAULT_RUN_FILENAME
+# <a name="vsg_default_run_filename"></a>VSG_DEFAULT_RUN_FILENAME
 定義圖形記錄檔的預設檔案名稱。
 
 ## <a name="syntax"></a>語法
@@ -25,22 +25,22 @@ ms.locfileid: "62895372"
 ```
 
 #### <a name="parameters"></a>參數
- `filename` 當以程式設計方式擷取圖形資訊，指定預設圖形記錄檔的檔名。
+ 當以程式設計方式捕捉圖形資訊時，`filename` 預設提供給圖形記錄檔的檔案名。
 
 ## <a name="value"></a>值
- 字串常值，表示檔案名稱的圖形記錄檔。 根據預設，L"default.vsglog"。
+ 字串常值，表示圖形記錄檔的檔案名。 預設值為 L "default. vsglog"。
 
 ```C++
 #define VSG_DEFAULT_FILENAME L"default.vsglog"
 ```
 
 ## <a name="remarks"></a>備註
- 如果前置處理器符號`DONT_SAVE_VSGLOG_TO_TEMP`是定義，然後檔案名稱是相對於目前的目錄，擷取應用程式，或者是絕對路徑; 否則它是相對於使用者的 temporary files 目錄，不能是絕對路徑。
+ 如果已定義預處理器符號 `DONT_SAVE_VSGLOG_TO_TEMP`，則檔案名會相對於所捕獲應用程式的目前目錄，或是絕對路徑;否則，它會相對於使用者的暫存檔案目錄，而且不能是絕對路徑。
 
- 若要變更定義的檔案名稱，您必須重新定義它後再納入`vsgcapture.h`在程式中。
+ 若要變更定義的檔案名，您必須重新定義它，才能在程式中包含 `vsgcapture.h`。
 
 ## <a name="example"></a>範例
- 此範例示範如何變更擷取檔案的預設檔案名稱：
+ 這個範例顯示如何變更 capture 檔案的預設檔案名：
 
 ```C++
 // Redefine the default capture filename before including vsgcapture.h
@@ -49,5 +49,5 @@ ms.locfileid: "62895372"
 #include <vsgcapture.h>
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [DONT_SAVE_VSGLOG_TO_TEMP](dont-save-vsglog-to-temp.md)

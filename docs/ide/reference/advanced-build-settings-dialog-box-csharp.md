@@ -13,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: c4a1c902047b76ef3b29814d10cfc112ab9c7274
-ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
+ms.openlocfilehash: 78817f65197c2dd295a6f2202f913c48b54e1ed9
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71186783"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748810"
 ---
 # <a name="advanced-build-settings-dialog-box-c"></a>[高級組建設定] 對話方塊C#（）
 
@@ -94,7 +94,7 @@ ms.locfileid: "71186783"
 
 指定載入 DLL 時慣用的基底位址。 DLL 的預設基底位址是由 .NET Framework Common Language Runtime 所設定。 如需詳細資訊，請參閱 [/baseaddress (C# 編譯器選項)](/dotnet/csharp/language-reference/compiler-options/baseaddress-compiler-option)。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [C# 編譯器選項](/dotnet/csharp/language-reference/compiler-options/index)
 - [專案設計工具、建置頁面 (C#)](../../ide/reference/build-page-project-designer-csharp.md)

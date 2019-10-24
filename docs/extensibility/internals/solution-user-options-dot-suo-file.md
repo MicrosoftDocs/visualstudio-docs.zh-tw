@@ -1,5 +1,5 @@
 ---
-title: 方案使用者選項 (。Suo) 檔案 |Microsoft Docs
+title: 方案使用者選項（.Suo）檔案 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,28 +14,28 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0e54f89b9f231e4ae18e200718a5cc25cb3f3ceb
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 6f21e4a4a6530692709247e64b0d84aa7b06eb3a
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66322618"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72723805"
 ---
 # <a name="solution-user-options-suo-file"></a>方案使用者選項檔 (.Suo)
-方案使用者選項 (.suo) 檔案包含每個使用者方案的選項。 此檔案應該不會簽入原始程式碼控制項中。
+方案使用者選項檔（.suo）包含每個使用者的方案選項。 這個檔案不應簽入原始程式碼控制中。
 
- 方案使用者選項 (.suo) 檔案是結構化儲存體或複合式的以二進位格式儲存的檔案。 您要將用來識別.suo 檔案中的資訊的索引鍵的資料流的名稱儲存到資料流的使用者資訊。 方案使用者選項檔用來儲存使用者喜好設定，並會在 Visual Studio 會儲存方案時自動建立。
+ 方案使用者選項（.suo）檔案是以二進位格式儲存的結構化儲存區或複合檔案案。 將使用者資訊儲存在資料流程中，並將資料流程的名稱指定為要用來識別 .suo 檔案中資訊的索引鍵。 方案使用者選項檔案是用來儲存使用者喜好設定，而且會在 Visual Studio 儲存方案時自動建立。
 
- 當環境隨即開啟.suo 檔案時，它會列舉所有目前載入的 Vspackage。 如果實作 VSPackage<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionOpts>介面，則環境會呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionOpts.LoadUserOptions%2A>要求它的 VSPackage，載入它的所有資料從.suo 檔案上的方法。
+ 當環境開啟 .suo 檔案時，它會列舉所有目前載入的 Vspackage。 如果 VSPackage 會執行 <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionOpts> 介面，則環境會呼叫 VSPackage 上的 <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionOpts.LoadUserOptions%2A> 方法，要求它從 .suo 檔案載入其所有資料。
 
- 它是 VSPackage 的責任，知道什麼資料流寫入.suo 檔案。 針對它撰寫每個資料流，VSPackage 回呼環境<xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionPersistence.LoadPackageUserOpts%2A>載入特定的資料流所識別的索引鍵，也就是資料流的名稱。 環境然後回撥來讀取資料流的名稱傳遞該特定資料流 vspackage 以及`IStream`指標<xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionPersistence.LoadPackageUserOpts%2A>方法。
+ VSPackage 必須負責知道它可能已寫入 .suo 檔案的資料流程。 VSPackage 會針對它所撰寫的每個資料流程，透過 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionPersistence.LoadPackageUserOpts%2A> 來回呼環境，以載入由索引鍵所識別的特定資料流程，也就是資料流程的名稱。 環境接著會回呼至 VSPackage，以讀取將資料流程名稱和 `IStream` 指標傳遞至 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionPersistence.LoadPackageUserOpts%2A> 方法的特定資料流程。
 
- 此時，另一個呼叫`LoadUserOptions`以查看是否有要讀取的.suo 檔案的另一個區段。 此程序會繼續直到所有的.suo 檔案中的資料流已讀取及處理環境。
+ 此時，會對 `LoadUserOptions` 進行另一個呼叫，以查看是否有其他必須讀取的 .suo 檔案區段。 此程式會繼續進行，直到所有 .suo 檔案中的資料流程都已由環境讀取及處理為止。
 
- 當此解決方案不會儲存或關閉，環境呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionPersistence.SavePackageSolutionProps%2A>方法的指標<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionOpts.SaveUserOptions%2A>方法。 `IStream`包含儲存的二進位資訊傳遞給<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionOpts.WriteUserOptions%2A>方法，然後將資訊寫入至.suo 檔案，並在呼叫`SaveUserOptions`方法一次以查看是否有另一個要寫入資訊到.suo 的檔案資料流檔案。
+ 儲存或關閉方案時，環境會使用 <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionOpts.SaveUserOptions%2A> 方法的指標來呼叫 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionPersistence.SavePackageSolutionProps%2A> 方法。 包含要儲存之二進位資訊的 `IStream` 會傳遞至 <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionOpts.WriteUserOptions%2A> 方法，然後將資訊寫入 .suo 檔案，然後再次呼叫 `SaveUserOptions` 方法，以查看是否有另一個要寫入 .suo 檔案的資訊資料流程。
 
- 這兩種方法，`SaveUserOptions`並`WriteUserOptions`，會針對每個資料流的資訊儲存到.suo 檔案中，傳入的指標呼叫以遞迴方式`IVsSolutionPersistence`。 呼叫以遞迴方式，以允許進行的.suo 檔案的多個資料流寫入。 如此一來，使用者資訊與方案一起保存，一定會有下一次開啟方案時。
+ 這兩種方法（`SaveUserOptions` 和 `WriteUserOptions`）會以遞迴方式針對要儲存至 .suo 檔案的每個資訊資料流程呼叫，並將指標傳入 `IVsSolutionPersistence`。 它們會以遞迴方式呼叫，以允許寫入 .suo 檔案的多個資料流程。 如此一來，就會在解決方案中保存使用者資訊，並保證在下一次開啟方案時可以使用。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionOpts>
 - [方案](../../extensibility/internals/solutions-overview.md)

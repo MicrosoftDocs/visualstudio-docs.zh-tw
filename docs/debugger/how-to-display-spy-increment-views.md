@@ -1,5 +1,5 @@
 ---
-title: HOW TO：顯示 Spy + + 檢視 |Microsoft Docs
+title: 如何：顯示 Spy + + Views |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,16 +10,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 230834e7915114e2a647b21834b4e90b12c54a64
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9f56a57a347b6cd8892a264070a3ee022ffb7853
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62894257"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72733565"
 ---
-# <a name="how-to-display-spy-views"></a>HOW TO：顯示 Spy++ 檢視
-Spy + + 啟動時，它會開啟在[Windows 檢視](../debugger/windows-view.md)，所有的 windows 和您的電腦上可用控制項的樹狀檢視。 此根視窗上設定 「 Windows 1 」。 另外還有三個其他 Spy + + 檢視可用：[訊息檢視](../debugger/messages-view.md)，[處理序檢視](../debugger/processes-view.md)，以及[執行緒檢視](../debugger/threads-view.md)。 您可以顯示所要的檢視，從**Spy**功能表。 如需詳細資訊，請參閱 < [Spy + + 檢視](../debugger/spy-increment-views.md)。
+# <a name="how-to-display-spy-views"></a>如何：顯示 Spy++ 檢視
+當 Spy + + 啟動時，它會在[Windows View](../debugger/windows-view.md)中開啟，這是您電腦上可用的所有視窗和控制項的樹狀檢視。 這個根視窗的標題為「Windows 1」。 另外還有其他三個可用的 Spy + + views： [[訊息] 視圖](../debugger/messages-view.md)、[[進程] 視圖](../debugger/processes-view.md)和 [執行緒][視圖](../debugger/threads-view.md)。 您可以從 [ **Spy** ] 功能表顯示所需的視圖。 如需詳細資訊，請參閱[Spy + + Views](../debugger/spy-increment-views.md)。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [使用 Spy++](../debugger/using-spy-increment.md)
 - [Spy++ 參考](../debugger/spy-increment-reference.md)

@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c581668668a208a9bcf35a1b39d1b3d384a4f8a3
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: b1ff294e45404d312d445c4b76f05cc3e0d7dd95
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "62841610"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739295"
 ---
-# <a name="idiasymbolgetstride"></a>IDiaSymbol::get_stride
-擷取矩陣或 strided 陣列的步距。
+# <a name="idiasymbolget_stride"></a>IDiaSymbol::get_stride
+抓取矩陣或 strided 陣列的 stride。
 
 ## <a name="syntax"></a>語法
 
@@ -30,10 +30,10 @@ HRESULT get_stride(
 #### <a name="parameters"></a>參數
  `pRetVal`
 
-[out]指標`DWORD`，持有分散。
+脫銷保存 stride 之 `DWORD` 的指標。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，則傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。
+ 如果成功，會傳回 `S_OK`;否則，會傳回 `S_FALSE` 或錯誤碼。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

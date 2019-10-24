@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_sealed |Microsoft Docs'
+title: IDiaSymbol：： get_sealed |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4c75148fdf8453590be7eb0f9fbde95e4bb4b981
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: ece720a42b606640d02729951c11ae03d092aedf
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64791691"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739353"
 ---
-# <a name="idiasymbolgetsealed"></a>IDiaSymbol::get_sealed
-擷取指定是否已密封類別或方法的旗標。
+# <a name="idiasymbolget_sealed"></a>IDiaSymbol::get_sealed
+抓取指定類別或方法是否為密封的旗標。
 
 ## <a name="syntax"></a>語法
 
@@ -33,23 +33,23 @@ HRESULT get_sealed( 
 #### <a name="parameters"></a>參數
  `pRetVal`
 
-[out]會傳回`TRUE`已密封類別或方法; 否則會傳回`FALSE`。
+脫銷如果類別或方法已密封，則傳回 `TRUE`。否則，會傳回 `FALSE`。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，則傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。
+ 如果成功，會傳回 `S_OK`;否則，會傳回 `S_FALSE` 或錯誤碼。
 
 > [!NOTE]
-> 傳回值為`S_FALSE`表示此屬性不適用於符號。
+> @No__t_0 的傳回值表示該屬性不適用於符號。
 
 ## <a name="remarks"></a>備註
- 密封類別不能當做基底類別使用。 密封的方法不能覆寫此屬性。
+ 密封類別不能當做基底類別使用。 密封的方法無法覆寫。
 
 ## <a name="requirements"></a>需求
- 標頭：dia2.h
+ 標頭： Dia2。h
 
- 程式庫： diaguids.lib
+ 程式庫： diaguids
 
- DLL: msdia100.dll
+ DLL： msdia100
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

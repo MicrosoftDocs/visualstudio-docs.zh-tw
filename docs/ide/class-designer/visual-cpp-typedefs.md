@@ -1,5 +1,5 @@
 ---
-title: 類別設計工具中的 Visual C++ Typedef
+title: C++類別設計工具中的 typedef
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,14 +13,14 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7bf886aedc27b6e702637b84bbe919971baec9e3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 94dc4a6687a2aaede7fc901884c5d3acc6fbf56f
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647575"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748001"
 ---
-# <a name="visual-c-typedefs-in-class-designer"></a>類別設計工具中的 Visual C++ Typedef
+# <a name="c-typedefs-in-class-designer"></a>C++類別設計工具中的 typedef
 
 [Typedef](/cpp/cpp/aliases-and-typedefs-cpp#typedefs) 陳述式會在名稱及其基礎類型之間建立一或多層間接取值。 **類別設計工具**支援 C++ typedef 類型，其使用 `typedef` 關鍵字進行宣告，例如：
 
@@ -84,5 +84,5 @@ typedef class coord
 
 ## <a name="see-also"></a>請參閱
 
-- [使用 Visual C++ 程式碼](working-with-visual-cpp-code.md)
+- [使用程式C++代碼](working-with-visual-cpp-code.md)
 - [Typedefs](/cpp/cpp/aliases-and-typedefs-cpp#typedefs)

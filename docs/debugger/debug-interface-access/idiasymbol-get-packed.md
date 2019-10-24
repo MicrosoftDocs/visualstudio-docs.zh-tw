@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_packed |Microsoft Docs'
+title: IDiaSymbol：： get_packed |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 91e99da7832bb2a0e067de6eb3c09f90255eaf32
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 420ba5b56342b4b1d5b8e4c2756aa828e5fe53b4
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64785841"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739529"
 ---
-# <a name="idiasymbolgetpacked"></a>IDiaSymbol::get_packed
-擷取旗標，指定是否要封裝的使用者定義資料類型 (UDT)。
+# <a name="idiasymbolget_packed"></a>IDiaSymbol::get_packed
+抓取指定使用者定義資料類型（UDT）是否封裝的旗標。
 
 ## <a name="syntax"></a>語法
 
@@ -33,16 +33,16 @@ HRESULT get_packed ( 
 #### <a name="parameters"></a>參數
  `pRetVal`
 
-[out]會傳回`TRUE`UDT 已壓縮; 否則會傳回`FALSE`。
+脫銷如果 UDT 已封裝，則傳回 `TRUE`;否則，會傳回 `FALSE`。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，則傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。
+ 如果成功，會傳回 `S_OK`;否則，會傳回 `S_FALSE` 或錯誤碼。
 
 > [!NOTE]
-> 傳回值為`S_FALSE`表示屬性不是適用於符號。
+> @No__t_0 的傳回值表示該屬性不適用於符號。
 
 ## <a name="remarks"></a>備註
- 封裝的表示 UDT 的所有成員都位於關閉共同盡可能的情況下，要對齊記憶體界限沒有中介填補。
+ 封裝表示 UDT 的所有成員都會盡可能地放在一起，而不會有中間填補來對齊記憶體界限。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

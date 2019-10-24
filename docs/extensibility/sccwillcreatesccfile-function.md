@@ -12,15 +12,15 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1dc7b9f5b298260b2bcca88c75087059bd8f0065
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 2ac7657258b79b2e53bee8138bc5b2728f618eac
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66338457"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72720110"
 ---
 # <a name="sccwillcreatesccfile-function"></a>SccWillCreateSccFile 函式
-此函式會判斷原始檔控制外掛程式是否支援 MSSCCPRJ 建立。SCC 檔案，每個指定的檔案。
+此函式會判斷原始檔控制外掛程式是否支援建立 MSSCCPRJ.SCC。適用于每個指定檔案的 SCC 檔案。
 
 ## <a name="syntax"></a>語法
 
@@ -34,34 +34,34 @@ SCCRTN SccWillCreateSccFile(
 ```
 
 #### <a name="parameters"></a>參數
- pContext
+ pCoNtext
 
-[in]原始檔控制外掛程式的內容指標。
+在原始檔控制外掛程式內容指標。
 
- nFiles
+ n
 
-[in]檔案名稱中包含的數字`lpFileNames`陣列的長度以及`pbSccFiles`陣列。
+在@No__t_0 陣列中包含的檔案名數目，以及 `pbSccFiles` 陣列的長度。
 
  lpFileNames
 
-[in]若要檢查的完整的檔案名稱的陣列 （必須由呼叫端配置陣列）。
+在要檢查的完整檔案名陣列（陣列必須由呼叫者配置）。
 
  pbSccFiles
 
-[in、 out]用來儲存結果的陣列。
+[in、out]要在其中儲存結果的陣列。
 
 ## <a name="return-value"></a>傳回值
- 此函式的原始檔控制外掛程式實作應該會傳回下列值之一：
+ 此函式的原始檔控制外掛程式執行應會傳回下列其中一個值：
 
 |值|描述|
 |-----------|-----------------|
 |SCC_OK|成功。|
-|SCC_E_INVALIDFILEPATH|其中一個陣列中的路徑無效。|
+|SCC_E_INVALIDFILEPATH|陣列中的其中一個路徑無效。|
 |SCC_E_NONSPECIFICERROR|不明確的失敗。|
 
 ## <a name="remarks"></a>備註
- 會呼叫此函數，來判斷是否原始檔控制外掛程式提供 MSSCCPRJ 中支援的檔案清單中。SCC 檔案，每個指定的檔案 （如需有關 MSSCCPRJ 的詳細資訊。SCC 檔案，請參閱[MSSCCPRJ。SCC 檔案](../extensibility/mssccprj-scc-file.md))。 原始檔控制外掛程式可以宣告它們是否具有建立 MSSCCPRJ 的功能。SCC 檔案，藉由宣告`SCC_CAP_SCCFILE`在初始化期間。 此外掛程式會傳回`TRUE`或是`FALSE`每個檔案中`pbSccFiles`陣列，表示其中一個指定的檔案有 MSSCCPRJ。SCC 的支援。 如果外掛程式會傳回成功的程式碼從函式，則會遵守傳回陣列中的值。 在失敗時，陣列會被忽略。
+ 這個函式會使用檔案清單來呼叫，以判斷原始檔控制外掛程式是否在 MSSCCPRJ.SCC 中提供支援。適用于每個指定檔案的 SCC 檔案（如需 MSSCCPRJ.SCC 的詳細資訊，請查看。SCC 檔案，請參閱[mssccprj.scc。SCC](../extensibility/mssccprj-scc-file.md)檔案）。 原始檔控制外掛程式可以宣告是否有建立 MSSCCPRJ.SCC 的功能。在初始化期間宣告 `SCC_CAP_SCCFILE` 的 SCC 檔案。 外掛程式會針對 `pbSccFiles` 陣列中的每個檔案傳回 `TRUE` 或 `FALSE`，以指出給定檔案的 MSSCCPRJ.SCC。SCC 支援。 如果外掛程式從函式傳回成功的程式碼，則會接受傳回陣列中的值。 失敗時，會忽略陣列。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [原始檔控制外掛程式 API 函式](../extensibility/source-control-plug-in-api-functions.md)
 - [MSSCCPRJ.SCC 檔案](../extensibility/mssccprj-scc-file.md)

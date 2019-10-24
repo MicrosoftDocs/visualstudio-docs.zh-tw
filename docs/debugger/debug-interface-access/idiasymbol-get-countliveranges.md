@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_countLiveRanges |Microsoft Docs
+title: IDiaSymbol：： get_countLiveRanges |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b8cd86edee72f3d25763fd3d19dd9c789e152ed6
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 990673afdb01b1471ad75d65036610c486e735c4
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "62837459"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740749"
 ---
-# <a name="idiasymbolgetcountliveranges"></a>IDiaSymbol::get_countLiveRanges
-擷取有效的位址範圍相關聯的本機符號數目。
+# <a name="idiasymbolget_countliveranges"></a>IDiaSymbol::get_countLiveRanges
+抓取與本機符號相關聯的有效位址範圍數目。
 
 ## <a name="syntax"></a>語法
 
@@ -33,17 +33,17 @@ HRESULT get_countLiveRanges ( 
 #### <a name="parameters"></a>參數
  `count`
 
-[out]傳回的位址範圍的數目。
+脫銷傳回位址範圍的數目。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
+ 如果成功，會傳回 `S_OK`;否則，會傳回錯誤碼。
 
 ## <a name="requirements"></a>需求
- 標頭：dia2.h
+ 標頭： Dia2。h
 
- 程式庫： diaguids.lib
+ 程式庫： diaguids
 
- DLL: msdia100.dll
+ DLL： msdia100
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

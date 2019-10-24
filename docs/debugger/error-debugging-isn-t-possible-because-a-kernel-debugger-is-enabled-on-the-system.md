@@ -1,5 +1,5 @@
 ---
-title: 錯誤：偵錯不&#39;t，可能因為在系統上啟用核心偵錯 |Microsoft Docs
+title: 錯誤：無法進行&#39;調試，因為系統上已啟用內核偵錯工具 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 f1_keywords:
@@ -16,14 +16,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 63666302bcbf9f8f44c6121b583f0cf7b259f3ba
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2a966869ff1d200a51c6019a6ae937bea7c447bd
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62850945"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72737751"
 ---
-# <a name="error-debugging-isn39t-possible-because-a-kernel-debugger-is-enabled-on-the-system"></a>錯誤：偵錯不&#39;t，可能因為在系統上啟用核心偵錯
+# <a name="error-debugging-isn39t-possible-because-a-kernel-debugger-is-enabled-on-the-system"></a>錯誤：無法進行&#39;調試，因為系統上已啟用內核偵錯工具
 當您對 Managed 程式碼進行偵錯時，可能會收到下列錯誤訊息：
 
 ```cmd
@@ -98,6 +98,6 @@ Debugging isn't possible because a kernel debugger is enabled on the system
 
      `gn`
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [偵錯工具安全性](../debugger/debugger-security.md)
 - [偵錯 Managed 程式碼](../debugger/debugging-managed-code.md)

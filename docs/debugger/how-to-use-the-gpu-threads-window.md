@@ -1,5 +1,5 @@
 ---
-title: 檢視 偵錯工具中的 GPU 執行緒 |Microsoft Docs
+title: 在偵錯工具中查看 GPU 執行緒 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -18,15 +18,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 59229b1ca2b055fc8242bf6446541a395eceaa56
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 972b21c4535df37dd81da6aceaa062b39176469c
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62846843"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72732093"
 ---
-# <a name="how-to-use-the-gpu-threads-window-c"></a>HOW TO：使用 [GPU 執行緒] 視窗 (C++)
-在 [GPU 執行緒] 視窗中，您可以檢查和處理正在偵錯的應用程式中，於 GPU 上執行的執行緒。 如需有關在 GPU 執行的應用程式的詳細資訊，請參閱[ C++ AMP 概觀](/cpp/parallel/amp/cpp-amp-overview)。
+# <a name="how-to-use-the-gpu-threads-window-c"></a>如何：使用 GPU 執行緒視窗（C++）
+在 [GPU 執行緒] 視窗中，您可以檢查和處理正在偵錯的應用程式中，於 GPU 上執行的執行緒。 如需在 GPU 上執行之應用程式的詳細資訊，請參閱[ C++ AMP 總覽](/cpp/parallel/amp/cpp-amp-overview)。
 
  [GPU 執行緒] 視窗包含一個資料表，其中每一個資料列代表一組在所有資料行中具有相同值的 GPU 執行緒。 您可以將資料行中的項目排序、重新排列、移除和設為群組。 您可以從 [GPU 執行緒] 視窗將執行緒加上旗標、取消旗標、凍結 (暫止) 和解除凍結 (繼續)。 下列各資料行會在 [GPU 執行緒] 視窗中顯示：
 
@@ -58,7 +58,7 @@ ms.locfileid: "62846843"
 
 3. 在 [要啟動的偵錯工具] 清單中，選取 [本機 Windows 偵錯工具]。 在 [偵錯工具類型] 清單中，選取 [僅限 GPU]。 您必須選擇這個偵錯工具，才能在 GPU 上執行的程式碼中的中斷點中斷。
 
-4. 選擇 [確定]  按鈕。
+4. 選擇 [ **確定** ] 按鈕。
 
 5. 在 GPU 程式碼中設定中斷點。
 
@@ -66,9 +66,9 @@ ms.locfileid: "62846843"
 
 7. 在功能表列上，選擇 [偵錯]、[視窗]、[GPU 執行緒]。
 
-### <a name="to-switch-to-a-different-thread"></a>若要切換至不同的執行緒
+### <a name="to-switch-to-a-different-thread"></a>切換至不同的執行緒
 
-- 按兩下資料行  (鍵盤：選取資料列，然後選擇 enter 鍵。）
+- 按兩下資料行 (鍵盤：選取資料列並選擇 Enter)。
 
 ### <a name="to-display-a-particular-tile-and-thread"></a>若要顯示特定 Tile 和執行緒
 
@@ -92,7 +92,7 @@ ms.locfileid: "62846843"
 
 ### <a name="to-freeze-or-thaw-a-row-of-threads"></a>若要凍結或解除凍結一列執行緒
 
-- 開啟該資料列的捷徑功能表，然後選擇 [凍結] 或 [解除凍結]。
+- 開啟該列的捷徑功能表，然後選擇 [凍結] 或 [解除凍結]。
 
 ### <a name="to-flag-or-unflag-a-row-of-threads"></a>若要將一列執行緒加上旗標或取消旗標
 
@@ -102,7 +102,7 @@ ms.locfileid: "62846843"
 
 - 在 [GPU 執行緒] 視窗中選擇旗標按鈕。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [對多執行緒應用程式進行偵錯](../debugger/debug-multithreaded-applications-in-visual-studio.md)
 - [如何：使用平行監看式視窗](../debugger/how-to-use-the-parallel-watch-window.md)
-- [逐步解說：針對 C++ AMP 應用程式進行偵錯](/cpp/parallel/amp/walkthrough-debugging-a-cpp-amp-application)
+- [逐步解說：偵錯 C++ AMP 應用程式](/cpp/parallel/amp/walkthrough-debugging-a-cpp-amp-application)

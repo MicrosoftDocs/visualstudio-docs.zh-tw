@@ -1,5 +1,5 @@
 ---
-title: 在 Vspackage 中的資源 |Microsoft Docs
+title: Vspackage 中的資源 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,25 +12,25 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3abcfebb7bbcc0eaa6a05760de4531f020b41ddb
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 07e1e19f802203b9770764330ea894b7d0eb98b8
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66318733"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72724161"
 ---
 # <a name="resources-in-vspackages"></a>VSPackage 中的資源
-您可以在 managed VSPackage 本身或原生附屬 UI Dll managed 的附屬 Dll 中內嵌的當地語系化的資源。
+您可以將當地語系化的資源內嵌在原生附屬 UI Dll、managed 附屬 Dll 或 managed VSPackage 本身。
 
- 在 Vspackage 中，不可以內嵌一些資源。 下列的 managed 型別可內嵌：
+ 某些資源無法內嵌在 Vspackage 中。 下列受控類型可以內嵌：
 
 - 字串
 
-- 封裝載入機碼 （這也是字串）
+- 封裝載入索引鍵（也是字串）
 
 - 工具視窗圖示
 
-- 已編譯的命令資料表輸出 (CTO) 檔案
+- 已編譯的命令資料表輸出（CTO）檔案
 
 - CTO 點陣圖
 
@@ -38,17 +38,17 @@ ms.locfileid: "66318733"
 
 - 關於對話方塊資料
 
-  受管理的封裝中的資源選取的資源識別碼。 例外狀況是必須命名為 CTMENU 的 CTO 檔案。 CTO 檔案必須出現在資源資料表作為`byte[]`。 所有其他資源項目是由型別識別。
+  受管理封裝中的資源是由資源識別碼所選取。 例外狀況是 CTO 檔案，必須命名為 CTMENU。 CTO 檔案必須以 `byte[]` 形式出現在資源表格中。 所有其他資源專案都是依類型來識別。
 
-  您可以使用<xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute>屬性來指出要[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]受管理的資源可供使用。
+  您可以使用 <xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute> 屬性來指示 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 可以使用受控資源。
 
   [!code-csharp[VSSDKResources#1](../../extensibility/internals/codesnippet/CSharp/resources-in-vspackages_1.cs)]
   [!code-vb[VSSDKResources#1](../../extensibility/internals/codesnippet/VisualBasic/resources-in-vspackages_1.vb)]
 
-  設定<xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute>以這種方式表示[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]它會搜尋資源，例如，使用時，應該忽略未受管理的附屬 Dll <xref:Microsoft.VisualStudio.Shell.Interop.IVsShell.LoadPackageString%2A>。 如果[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]遇到兩個或多個資源具有相同的資源識別碼，它會使用找到的第一個資源。
+  以這種方式設定 <xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute> 表示 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 在搜尋資源（例如，使用 <xref:Microsoft.VisualStudio.Shell.Interop.IVsShell.LoadPackageString%2A>）時，應該忽略非受控附屬 Dll。 如果 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 遇到兩個以上具有相同資源識別碼的資源，則會使用它找到的第一個資源。
 
 ## <a name="example"></a>範例
- 下列範例是受管理的工具視窗圖示表示。
+ 下列範例是工具視窗圖示的 managed 標記法。
 
 ```
 <data name="1001"
@@ -64,7 +64,7 @@ type="System.Resources.ResXFileRef,System.Windows.Forms">
 </data>
 ```
 
- 下列範例示範如何內嵌必須命名為 CTMENU CTO 位元組陣列。
+ 下列範例示範如何內嵌必須命名為 CTMENU 的 CTO byte 陣列。
 
 ```
 <data name="CTMENU"
@@ -80,11 +80,11 @@ type="System.Resources.ResXFileRef,System.Windows.Forms">
 </data>
 ```
 
-## <a name="implementation-notes"></a>實作注意事項
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 延遲載入的 Vspackage，盡可能。 在 VSPackage 中內嵌的 CTO 檔案的結果[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]必須在安裝期間，會建立合併的命令表時才會載入記憶體中的所有這類 Vspackage。 資源可以擷取從 VSPackage，藉由檢查不在 VSPackage 中執行程式碼的中繼資料。 VSPackage 未初始化在這個階段中，因此是最基本的效能損失。
+## <a name="implementation-notes"></a>執行附注
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 會盡可能延遲載入 Vspackage。 在 VSPackage 中內嵌 CTO 檔案的結果，是 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 必須在安裝期間將所有這類 Vspackage 載入記憶體中，這是在建立合併的命令資料表時。 藉由檢查中繼資料，而不需在 VSPackage 中執行程式碼，即可從 VSPackage 中解壓縮資源。 VSPackage 目前並未初始化，因此效能損失最少。
 
- 當[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]從之後安裝 VSPackage 的資源要求，該套件是可能已經載入和初始化，因此是最基本的效能損失。
+ 當 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 在安裝程式之後從 VSPackage 要求資源時，該封裝可能已經載入並初始化，因此效能損失會降到最低。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [管理 VSPackage](../../extensibility/managing-vspackages.md)
 - [MFC 應用程式中的當地語系化資源：附屬 DLL](/cpp/build/localized-resources-in-mfc-applications-satellite-dlls)

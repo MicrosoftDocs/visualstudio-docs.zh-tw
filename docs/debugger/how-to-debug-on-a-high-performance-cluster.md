@@ -1,5 +1,5 @@
 ---
-title: HOW TO：高效能叢集上偵錯 |Microsoft Docs
+title: 如何：在高效能叢集上進行調試 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,20 +16,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 550008a0bf77ee11feb047b953798ed6a8276396
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d95c6eeadfdf1bb90471997712299ae03a945be8
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62894322"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72733659"
 ---
-# <a name="how-to-debug-on-a-high-performance-cluster-c-visual-basic-c"></a>HOW TO：高效能叢集上偵錯 (C#，Visual Basic 中， C++)
+# <a name="how-to-debug-on-a-high-performance-cluster-c-visual-basic-c"></a>如何：在高效能叢集上進行 Debug （C#，Visual Basic，） C++
 
-在高效能叢集上偵錯多重處理程式類似在遠端電腦上偵錯一般程式。 但是，還是有一些其他的考量。 如需一般的遠端安裝需求，請參閱[遠端偵錯](../debugger/remote-debugging.md)。
+在高效能叢集上偵錯多重處理程式類似在遠端電腦上偵錯一般程式。 但是，還是有一些其他的考量。 如需一般的遠端安裝需求，請參閱[遠端偵錯](../debugger/remote-debugging.md)程式。
 
  當您在高效能叢集上偵錯時，可以使用所有可用於遠端偵錯的 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 偵錯視窗和技術。 但是，因為是由遠端偵錯，所以無法使用外部主控台視窗。
 
- [執行緒] 和 [處理序] 視窗對偵錯平行應用程式來說特別有用。 如需如何使用這些視窗的秘訣，請參閱[How to:使用處理序視窗](/previous-versions/visualstudio/visual-studio-2010/7h8h5sdw(v=vs.100))和[逐步解說：使用 [執行緒] 視窗進行偵錯](../debugger/how-to-use-the-threads-window.md)。
+ [執行緒] 和 [處理序] 視窗對偵錯平行應用程式來說特別有用。 如需如何使用這些視窗的秘訣，請參閱[How to:使用處理序視窗](/previous-versions/visualstudio/visual-studio-2010/7h8h5sdw(v=vs.100))和[逐步解說：使用執行緒視窗進行偵錯](../debugger/how-to-use-the-threads-window.md).
 
  下列程序顯示在高效能叢集上偵錯時特別有用的一些技術。
 
@@ -53,7 +53,7 @@ ms.locfileid: "62894322"
 
      若要建立更複雜的篩選條件，您可以使用 AND 運算子 `&`、OR 運算子 `||`、NOT 運算子 `!` 和括號來結合子句。
 
-4. 按一下 [確定] 。
+4. 按一下 [確定]。
 
 ### <a name="to-set-a-breakpoint-on-a-specific-process"></a>若要在特定處理序上設定中斷點
 
@@ -71,7 +71,7 @@ ms.locfileid: "62894322"
 
      若要建立更複雜的篩選條件，您可以使用 AND 運算子 `&`、OR 運算子 `||`、NOT 運算子 `!` 和括號來結合子句。
 
-4. 按一下 [確定] 。
+4. 按一下 [確定]。
 
 ### <a name="to-set-a-breakpoint-on-a-specific-thread"></a>若要在特定執行緒上設定中斷點
 
@@ -89,17 +89,17 @@ ms.locfileid: "62894322"
 
      若要建立更複雜的篩選條件，您可以使用 AND 運算子 `&`、OR 運算子 `||`、NOT 運算子 `!` 和括號來結合子句。
 
-4. 按一下 [確定] 。
+4. 按一下 [確定]。
 
 ## <a name="example"></a>範例
  下列範例顯示如何為 `marvin` 電腦和 `fourier1` 執行緒上的中斷點建立篩選條件。
 
 `(MachineName = marvin) & (ThreadName = fourier1)`
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [對多執行緒應用程式進行偵錯](../debugger/debug-multithreaded-applications-in-visual-studio.md)
 - [Remote Debugging](../debugger/remote-debugging.md)
-- [如何：使用處理序視窗](/previous-versions/visualstudio/visual-studio-2010/7h8h5sdw(v=vs.100))
-- [開始偵錯多執行緒應用程式](../debugger/get-started-debugging-multithreaded-apps.md)
-- [執行緒和處理序](/previous-versions/visualstudio/visual-studio-2010/ms164740(v=vs.100))
+- [如何：使用進程視窗](/previous-versions/visualstudio/visual-studio-2010/7h8h5sdw(v=vs.100))
+- [開始進行多執行緒應用程式的調試](../debugger/get-started-debugging-multithreaded-apps.md)
+- [執行緒和進程](/previous-versions/visualstudio/visual-studio-2010/ms164740(v=vs.100))
 - [使用中斷點](../debugger/using-breakpoints.md)

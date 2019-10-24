@@ -1,5 +1,5 @@
 ---
-title: 撰寫報告函式的執行階段錯誤 |Microsoft Docs
+title: 撰寫運行時錯誤報表函式 |Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -18,14 +18,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ff16a1443b05dc7021406cde03a4153f3234602
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b145e34b0dfeafbb7fde436dd561721962a89f3b
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62905898"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72731799"
 ---
-# <a name="how-to-write-a-run-time-error-reporting-function-c"></a>HOW TO：撰寫執行階段錯誤報告函式 (C++)
+# <a name="how-to-write-a-run-time-error-reporting-function-c"></a>如何：撰寫執行階段錯誤報告函式 (C++)
 執行階段錯誤的自訂報告函式，它必須具有與 `_CrtDbgReportW` 相同的宣告。 它應該向偵錯工具傳回值 1。
 
 下列範例顯示如何定義自訂報告函式：
@@ -62,7 +62,7 @@ int MyErrorFunc(int errorType, const wchar_t *filename,
 ```
 
 ## <a name="example"></a>範例
-下列範例顯示更複雜的自訂報告函式。 在這個範例中，switch 陳述式會處理由 `reportType` 的 `_CrtDbgReportW` 參數所定義的各種錯誤類型。 因為您要正在取代 `_CrtDbgReportW`，所以無法使用 `_CrtSetReportMode`。 您的函式必須處理輸出。 這個函式中的第一個變數引數會接受一個執行階段錯誤碼。 如需詳細資訊，請參閱 < [_RTC_SetErrorType](/cpp/c-runtime-library/reference/rtc-seterrortype)。
+下列範例顯示更複雜的自訂報告函式。 在這個範例中，switch 陳述式會處理由 `reportType` 的 `_CrtDbgReportW` 參數所定義的各種錯誤類型。 因為您要正在取代 `_CrtDbgReportW`，所以無法使用 `_CrtSetReportMode`。 您的函式必須處理輸出。 這個函式中的第一個變數引數會接受一個執行階段錯誤碼。 如需詳細資訊，請參閱[_RTC_SetErrorType](/cpp/c-runtime-library/reference/rtc-seterrortype)。
 
 ```cpp
 #include <windows.h>
@@ -122,5 +122,5 @@ int main()
 }
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 [自訂原生執行階段檢查](../debugger/native-run-time-checks-customization.md)

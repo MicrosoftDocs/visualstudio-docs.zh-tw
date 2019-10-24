@@ -1,5 +1,5 @@
 ---
-title: 'Vsgdbg:: Vsgdbg （建構函式） |Microsoft Docs'
+title: VsgDbg：： VsgDbg （函式） |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 670651e6-5e79-4845-b0c2-671beb7055a8
@@ -8,15 +8,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: db51226c4d980359fd36ee5196e48d7fa4577a37
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ae94a7cb9572a0975dc1c3717275c384c2e45978
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62895139"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72734752"
 ---
 # <a name="vsgdbgvsgdbg-constructor"></a>VsgDbg::VsgDbg (建構函式)
-建構的執行個體`VsgDbg`不論是否正在準備圖形診斷，以主動擷取和記錄的圖形資訊預設會根據指定的布林值參數的應用程式元件的類別。
+根據指定的布林參數，使用或不准備圖形診斷的應用程式內元件，以主動捕捉並記錄圖形資訊，以建立 `VsgDbg` 類別的實例。
 
 ## <a name="syntax"></a>語法
 
@@ -27,14 +27,14 @@ VsgDbg(
 ```
 
 #### <a name="parameters"></a>參數
- `bDefaultInit` `true` 以指定的圖形診斷的應用程式元件是準備好主動擷取與記錄圖形資訊;`false`來指定應用程式不應該準備主動擷取並記錄在此階段的圖形資訊。
+ `bDefaultInit` `true` 指定要準備圖形診斷的應用程式內元件，以主動捕捉並記錄圖形資訊; `false`，指定應用程式目前不應準備好主動捕捉和記錄圖形資訊。
 
 ## <a name="remarks"></a>備註
- 當建構函式呼叫`bDefaultInit`設為`true`，圖形記錄檔的檔案名稱取決於如何`DONT_SAVE_VSGLOG_TO_TEMP`並`VSG_DEFAULT_RUN_FILENAME`之前所定義的前置處理器符號`vsgcapture.h`納入您的應用程式。
+ 當使用 `bDefaultInit` 設定為 `true` 來呼叫此函式時，圖形記錄檔的檔案名取決於應用程式中包含 `vsgcapture.h` 之前，`DONT_SAVE_VSGLOG_TO_TEMP` 和 `VSG_DEFAULT_RUN_FILENAME` 預處理器符號的定義方式。
 
- 當建構函式呼叫`bDefaultInit`設定為`false`，在應用程式元件的圖形診斷可以準備好主動擷取與記錄圖形資訊稍後藉由呼叫`Init`函式。
+ 當使用 `bDefaultInit` 設定為 `false` 來呼叫此函式時，圖形診斷的應用程式內元件可以藉由呼叫 `Init` 函數來準備，以便在稍後主動捕捉並記錄圖形資訊。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [VsgDbg::~VsgDbg (解構函式)](vsgdbg-tilde-vsgdbg-destructor.md)
 - [Init](init.md)
 - [DONT_SAVE_VSGLOG_TO_TEMP](dont-save-vsglog-to-temp.md)

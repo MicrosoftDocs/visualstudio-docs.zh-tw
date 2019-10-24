@@ -1,5 +1,5 @@
 ---
-title: HOW TO：旗標，並將執行緒取消標幟 |Microsoft Docs
+title: 如何：旗標和解除標記執行緒 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -15,32 +15,32 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e63f081ff54a18bb4b5ca5c1cbdf947670f10a7e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 68a2ce8b6ec429b3f7f5cd782c3dac52602eff16
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62906721"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72733229"
 ---
-# <a name="how-to-flag-and-unflag-threads-c-visual-basic-c"></a>HOW TO：旗標，並將執行緒取消標幟 (C#，Visual Basic 中， C++)
+# <a name="how-to-flag-and-unflag-threads-c-visual-basic-c"></a>如何：將執行緒加上旗標C#和解除標記C++（，Visual Basic，）
 
-您可以加上旗標的執行緒，您想要特別注意的標記中的圖示**執行緒**，**平行堆疊**（執行緒檢視），**平行監看式**，和**GPU 執行緒**windows。 這個圖示可以協助您和其他人區分已加上旗標的執行緒和其他執行緒。
+您可以使用 [**執行緒**]、[**平行堆疊**（執行緒視圖）]、[**平行監看式]** 和 [ **GPU 執行緒**] 視窗中的圖示來標記您想要特別注意的執行緒。 這個圖示可以協助您和其他人區分已加上旗標的執行緒和其他執行緒。
 
-已標幟的執行緒也會收到中的特殊待遇**執行緒**清單**偵錯位置**工具列和其他多執行緒偵錯視窗中。 您可以顯示所有執行緒，也只有已標幟的執行緒中**執行緒**清單或在其他視窗。
+加上旗標的執行緒也會在 [**調試位置**] 工具列上的 [**執行緒**] 清單中，以及在其他多執行緒調試視窗中，收到特殊 您可以在 [**執行緒**] 清單或其他視窗中顯示所有線程或僅限旗標的執行緒。
 
 ### <a name="to-flag-or-unflag-a-thread"></a>若要將執行緒加上旗標或取消旗標
 
-- 在 [**執行緒**或是**平行監看式**] 視窗中，尋找您感興趣的執行緒，並按一下旗標圖示，以選取或清除旗標。
-- 在 [**平行堆疊**] 視窗中，以滑鼠右鍵按一下執行緒或群組的執行緒，然後選取**旗標 /\<執行緒 >** 或**取消旗標 /\<執行緒 >**.
+- 在 [**執行緒**] 或 [**平行監看**式] 視窗中，尋找您感興趣的執行緒，然後按一下旗標圖示來選取或清除旗標。
+- 在 [**平行堆疊**] 視窗中，以滑鼠右鍵按一下執行緒或執行緒群組，然後選取 [**旗標/\<thread >** ] 或 [取消**標記/\<thread >** ]。
 
 ### <a name="to-unflag-all-threads"></a>若要取消所有執行緒的旗標
 
 - 在 [執行緒] 視窗中，以滑鼠右鍵按一下任一執行緒，然後按一下 [將所有執行緒取消旗標]。
-- 在 **平行監看式**所有已標幟的執行緒視窗中，選取，然後以滑鼠右鍵按一下並選取**取消旗標**。
+- 在 **平行監看**式 視窗中，選取所有加上旗標的執行緒，然後按一下滑鼠右鍵並選取 取消**標記**
 
 ### <a name="to-display-only-flagged-threads"></a>若只要顯示加上旗標的執行緒
 
-- 選擇**僅顯示已標幟執行緒**其中一個多執行緒偵錯視窗中的按鈕。
+- 選擇其中一個多執行緒調試時間視窗中的 [**僅顯示已標記的執行緒**] 按鈕。
 
 ### <a name="to-flag-just-my-code"></a>將 Just My Code 加上旗標
 
@@ -58,9 +58,9 @@ ms.locfileid: "62906721"
 
 4. (選擇性) 在 [搜尋] 方塊中，鍵入用於搜尋特定模組的字串。
 
-5. 按一下 [確定] 。
+5. 按一下 [確定]。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [對多執行緒應用程式進行偵錯](../debugger/debug-multithreaded-applications-in-visual-studio.md)
 - [開始對多執行緒應用程式進行偵錯](../debugger/get-started-debugging-multithreaded-apps.md)
-- [逐步解說：偵錯多執行緒應用程式，使用 [執行緒] 視窗](../debugger/how-to-use-the-threads-window.md)
+- [逐步解說：使用執行緒視窗來調試多執行緒應用程式](../debugger/how-to-use-the-threads-window.md)

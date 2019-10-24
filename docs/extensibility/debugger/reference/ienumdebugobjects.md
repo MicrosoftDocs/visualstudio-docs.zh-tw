@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugObjects | Microsoft Docs
+title: IEnumDebugObjects |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -12,18 +12,18 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dea4b4781fd8026c29436bbd37a6bfa6824e73b3
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 749b3faf938fbc862fdf9b406127c898ee6b6d98
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66339488"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72727568"
 ---
 # <a name="ienumdebugobjects"></a>IEnumDebugObjects
 > [!IMPORTANT]
-> 在 Visual Studio 2015 中，這種實作運算式評估工具已被取代。 如需實作 CLR 運算式評估工具的資訊，請參閱[CLR 運算式評估工具](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)並[Managed 運算式評估工具範例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。
+> 在 Visual Studio 2015 中，這種執行運算式評估工具的方式已被取代。 如需有關如何執行 CLR 運算式評估工具的詳細資訊，請參閱[Clr 運算式評估](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)工具和[Managed 運算式評估工具範例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。
 
- 此介面代表實作的物件的集合[IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)介面。
+ 此介面代表用來執行[IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)介面的物件集合。
 
 ## <a name="syntax"></a>語法
 
@@ -31,33 +31,33 @@ ms.locfileid: "66339488"
 IEnumDebugObjects : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>實作者的附註
- 運算式評估工具會實作這個介面來提供實作的物件的集合[IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)介面。 請注意，這不是標準的 COM 列舉的緣故[GetCount](../../../extensibility/debugger/reference/ienumdebugobjects-getcount.md)方法。
+## <a name="notes-for-implementers"></a>實施者的注意事項
+ 運算式評估工具會執行此介面，以提供可實[IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)介面的物件集合。 請注意，這不是標準的 COM 列舉，因為[GetCount](../../../extensibility/debugger/reference/ienumdebugobjects-getcount.md)方法存在。
 
-## <a name="notes-for-callers"></a>呼叫端資訊
-- [GetElements](../../../extensibility/debugger/reference/idebugarrayobject-getelements.md)傳回此介面。
+## <a name="notes-for-callers"></a>呼叫者的注意事項
+- [GetElements](../../../extensibility/debugger/reference/idebugarrayobject-getelements.md)會傳回此介面。
 
-## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法
- 這個介面會實作下列方法。
+## <a name="methods-in-vtable-order"></a>以 Vtable 順序的方法
+ 這個介面會實作為下列方法。
 
 |方法|描述|
 |------------|-----------------|
-|[下一步](../../../extensibility/debugger/reference/ienumdebugobjects-next.md)|擷取下的一組[IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)列舉中的物件。|
-|[Skip](../../../extensibility/debugger/reference/ienumdebugobjects-skip.md)|略過指定的數目的項目。|
-|[Reset](../../../extensibility/debugger/reference/ienumdebugobjects-reset.md)|將列舉重設第一個項目中。|
-|[Clone](../../../extensibility/debugger/reference/ienumdebugobjects-clone.md)|擷取一份目前的列舉型別。|
-|[GetCount](../../../extensibility/debugger/reference/ienumdebugobjects-getcount.md)|擷取列舉中的項目數。|
+|[下一步](../../../extensibility/debugger/reference/ienumdebugobjects-next.md)|從列舉中抓取下一組[IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)物件。|
+|[Skip](../../../extensibility/debugger/reference/ienumdebugobjects-skip.md)|略過指定數目的專案。|
+|[Reset](../../../extensibility/debugger/reference/ienumdebugobjects-reset.md)|將列舉重設為第一個專案。|
+|[Clone](../../../extensibility/debugger/reference/ienumdebugobjects-clone.md)|抓取目前列舉的複本。|
+|[GetCount](../../../extensibility/debugger/reference/ienumdebugobjects-getcount.md)|抓取列舉中的專案數。|
 
 ## <a name="remarks"></a>備註
- 這個介面允許列舉一組物件陣列中的偵錯引擎。
+ 這個介面可讓 debug engine 列舉陣列中的一組物件。
 
 ## <a name="requirements"></a>需求
- 標頭： ee.h
+ 標頭： ee。h
 
- 命名空間：Microsoft.VisualStudio.Debugger.Interop
+ 命名空間： VisualStudio。 Interop
 
- 組件︰Microsoft.VisualStudio.Debugger.Interop.dll
+ 元件： VisualStudio. Interop .dll
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)
 - [GetElements](../../../extensibility/debugger/reference/idebugarrayobject-getelements.md)

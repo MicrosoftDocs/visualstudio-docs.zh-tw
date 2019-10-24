@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_isSingleInheritance |Microsoft Docs
+title: IDiaSymbol：： get_isSingleInheritance |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -8,15 +8,15 @@ ms.assetid: 46cde656-059b-4c20-9476-3ca68ccc9912
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f8b245879a6b574c3f82b12d14b4fab637c2ecd7
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 96a8ce072fc57dc236dd2025b8ea3c9c5a4b9b79
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "62836293"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740063"
 ---
-# <a name="idiasymbolgetissingleinheritance"></a>IDiaSymbol::get_isSingleInheritance
-指定是否`this`指標會指向單一繼承的資料成員。
+# <a name="idiasymbolget_issingleinheritance"></a>IDiaSymbol::get_isSingleInheritance
+指定 `this` 指標是否指向具有單一繼承的資料成員。
 
 ## <a name="syntax"></a>語法
 
@@ -28,10 +28,10 @@ HRESULT get_isSingleInheritance(
 #### <a name="parameters"></a>參數
  `pRetVal`
 
-[out]指標`BOOL`，指定是否`this`指標會指向單一繼承的資料成員。
+脫銷@No__t_0 的指標，指定 `this` 指標是否指向具有單一繼承的資料成員。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，則傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。
+ 如果成功，會傳回 `S_OK`;否則，會傳回 `S_FALSE` 或錯誤碼。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

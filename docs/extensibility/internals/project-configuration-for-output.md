@@ -1,5 +1,5 @@
 ---
-title: 專案組態輸出 |Microsoft Docs
+title: 輸出的專案設定 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,40 +10,40 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5f1fa63a0e3143be6f8133b2a8ae3a57fe6857a9
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 8b6337d82e51cf728d69f7aabb46e9d4444ec564
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66328386"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72725886"
 ---
 # <a name="project-configuration-for-output"></a>輸出的專案組態
-每個設定可以支援一組產生輸出項目，例如可執行檔或資源檔案的建置程序。 這些輸出項目都是私用使用者，並可以放在連結相關的類型的輸出，例如可執行檔 （.exe、.dll、.lib） 和原始程式檔 （.idl，.h 檔案） 的群組。
+每個設定都可以支援一組會產生輸出專案（例如可執行檔或資源檔）的組建進程。 這些輸出專案是使用者的私用，而且可以放在連結相關輸出類型的群組中，例如可執行檔（.exe、.dll、.lib）和原始程式檔（.idl、.h 檔案）。
 
- 輸出項目可透過<xref:Microsoft.VisualStudio.Shell.Interop.IVsOutput2>方法和列舉使用<xref:Microsoft.VisualStudio.Shell.Interop.IVsEnumOutputs>方法。 當您想要輸出項目分組時，您的專案應該也會實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputGroup>介面。
+ 輸出專案可以透過 <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutput2> 方法提供，並使用 <xref:Microsoft.VisualStudio.Shell.Interop.IVsEnumOutputs> 方法進行列舉。 當您想要將輸出專案分組時，您的專案也應該會執行 <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputGroup> 介面。
 
- 藉由實作所開發的建構`IVsOutputGroup`可讓專案群組輸出，根據使用方式。 比方說，DLL 可能會分組成與它的程式資料庫 (PDB)。
+ 藉由執行 `IVsOutputGroup` 所開發的結構，可讓專案根據使用方式將輸出分組。 例如，DLL 可能會與其程式資料庫（PDB）群組在一起。
 
 > [!NOTE]
-> PDB 檔案包含偵錯資訊，並建置.dll 或.exe 時指定 [產生偵錯資訊] 選項時，它會建立。 .Pdb 檔案通常會產生為只偵錯專案的組態。
+> PDB 檔案包含調試資訊，而且會在建立 .dll 或 .exe 時指定 [產生 Debug Info] 選項時建立。 .Pdb 檔案通常只會針對 Debug 專案設定而產生。
 
- 專案必須傳回相同數目的支援，每個組態的群組，即使群組內所包含的輸出數目可能會不同組態設定。 例如，專案 Matt 的 DLL 可能會包含 mattd.dll 和 mattd.pdb 的偵錯組態，但只包含零售組態中的 matt.dll。
+ 專案必須針對其支援的每個設定傳回相同的群組數目，即使群組中包含的輸出數目可能與設定不同。 例如，專案 Matt 的 DLL 可能會在 Debug 設定中包含 mattd 和 mattd，但僅包含零售設定中的 Matt。
 
- 群組也有相同的識別項資訊，例如正式名稱、 顯示名稱和群組資訊，請設定設定在專案中。 這種一致性可讓部署與封裝能夠繼續運作，即使組態變更。
+ 這些群組也具有相同的識別碼資訊，例如標準名稱、顯示名稱和群組資訊（從設定到專案內的設定）。 這種一致性可讓部署和封裝繼續運作，即使設定變更也一樣。
 
- 群組也可以有索引鍵的輸出，可讓封裝的捷徑，以指向有意義的名稱。 任何群組可能是在指定的組態中，空的因此應該不做任何假設，有關群組的大小。 每個群組中的任何組態的大小 （數字的輸出） 可以是不同於在相同的組態中的另一個群組的大小。 它也可以從另一個組態中相同的群組的大小不同。
+ 群組也可以有金鑰輸出，以允許封裝快捷方式指向有意義的內容。 在指定的設定中，任何群組可能是空的，因此不應該對群組的大小進行任何假設。 任何設定中每個群組的大小（輸出數目）可能會與相同設定中另一個群組的大小不同。 它也可以與另一個設定中相同群組的大小不同。
 
  ![輸出群組圖形](../../extensibility/internals/media/vsoutputgroups.gif "vsOutputGroups")輸出群組
 
- 主要用途<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg>介面是以建置、 部署和偵錯管理物件及允許專案能夠自由地群組輸出存取。 如需使用此介面的詳細資訊，請參閱 <<c0> [ 專案組態物件](../../extensibility/internals/project-configuration-object.md)。
+ @No__t_0 介面的主要用途是提供組建、部署和調試層管理物件的存取權，並允許專案自由分組輸出。 如需使用此介面的詳細資訊，請參閱[專案設定物件](../../extensibility/internals/project-configuration-object.md)。
 
- 在上圖中，群組內建有金鑰，因此輸出到組態 （bD.exe 或 b.exe） 使用者可以建立內建的捷徑，並了解快顯，不管部署的組態。 群組來源沒有輸出的索引鍵，因此使用者無法建立它的捷徑。 如果偵錯群組內建有索引鍵的輸出，但零售群組建置沒有，那就是實作不正確。 說明如下，然後，如果任何組態都包含沒有輸出中，有群組，如此一來，任何索引鍵的檔案，則包含輸出的其他設定與該群組不能將金鑰檔案。 安裝程式編輯器假設，標準的名稱和顯示名稱的群組，再加上存在的索引鍵的檔案，不會變更型組態中。
+ 在上圖中，組建群組具有跨設定（cmd.exe 或 b. .exe）的按鍵輸出，因此使用者可以建立建立的快捷方式，並知道不論部署的設定為何，快捷方式都能正常執行。 群組來源沒有金鑰輸出，因此使用者無法建立其快捷方式。 如果建立的 Debug 群組具有金鑰輸出，但建立的零售群組不是，則會是不正確的執行。 接著，如果有任何設定的群組不包含任何輸出，因此沒有金鑰檔案，則包含該群組且含有輸出的其他設定不能有金鑰檔案。 安裝程式編輯器會假設群組的正式名稱和顯示名稱，加上金鑰檔的存在，並不會根據設定而變更。
 
- 請注意，如果專案具有`IVsOutputGroup`，它不想要封裝或部署，便可將該輸出放在群組中。 輸出仍可列舉通常藉由實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg.EnumOutputs%2A>方法會傳回所有不論群組組態的輸出。
+ 請注意，如果專案有不想封裝或部署的 `IVsOutputGroup`，就足以將該輸出放在群組中。 您仍然可以藉由執行會傳回所有設定輸出的 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg.EnumOutputs%2A> 方法（不論群組為何），正常地列舉輸出。
 
- 如需詳細資訊，請參閱 < 實作`IVsOutputGroup`中的自訂專案範例[專案的 MPF](https://github.com/tunnelvisionlabs/MPFProj10)。
+ 如需詳細資訊，請參閱在[適用于專案之 MPF](https://github.com/tunnelvisionlabs/MPFProj10)的自訂專案範例中執行 `IVsOutputGroup`。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [管理組態選項](../../extensibility/internals/managing-configuration-options.md)
 - [建置的專案組態](../../extensibility/internals/project-configuration-for-building.md)
 - [專案組態物件](../../extensibility/internals/project-configuration-object.md)

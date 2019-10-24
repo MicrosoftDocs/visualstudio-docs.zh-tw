@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 32e0d8c37b4016412f6dca8772d22baf65799429
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b9640fa8f82c7bb87990c97ef7916e7323943ece
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62832795"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741641"
 ---
-# <a name="idiastackframegetmaxstack"></a>IDiaStackFrame::get_maxStack
-擷取推入堆疊框架中的位元組的數目上限。
+# <a name="idiastackframeget_maxstack"></a>IDiaStackFrame::get_maxStack
+抓取框架中堆疊推送的最大位元組數目。
 
 ## <a name="syntax"></a>語法
 
@@ -33,10 +33,10 @@ HRESULT get_maxStack ( 
 #### <a name="parameters"></a>參數
  `pRetVal`
 
-[out]傳回推入堆疊的位元組的數目上限。
+脫銷傳回堆疊上推送的最大位元組數目。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，會傳回 `S_OK`。 傳回`S_FALSE`不支援的屬性。 否則會傳回錯誤碼。
+ 如果成功，會傳回 `S_OK`。 如果不支援此屬性，則會傳回 `S_FALSE`。 否則會傳回錯誤碼。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)
