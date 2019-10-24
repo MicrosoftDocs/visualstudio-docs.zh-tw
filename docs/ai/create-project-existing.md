@@ -7,19 +7,19 @@ ms.date: 11/13/2017
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 57003538072c372ce877c40db76922d6eed7397d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 0981a276a21e1b3f816c6a182df29f1c4adb0d1c
+ms.sourcegitcommit: 57bc1c3887838d707c13feff72a677b3bad3be4b
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62433792"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72777448"
 ---
 # <a name="create-an-ai-project-from-existing-code"></a>從現有程式碼建立 AI 專案
 
 在[安裝適用於 AI 的 Visual Studio Tools](installation.md) 之後，您就可以輕鬆的將現有的 Python 程式碼帶入 Visual Studio 專案中。
 
 > [!Important]
-> 此處所述的程序不會移動或複製原始來源檔案。 如果您想要使用複本，請先複製資料夾。
+> 此處所述的處理序不會移動或複製原始程式檔。 如果您想要使用複本，請先複製資料夾。
 
 1. 啟動 Visual Studio，然後選取 [檔案] > [新增] > [專案]。
 
@@ -40,6 +40,6 @@ ms.locfileid: "62433792"
 > [!div class="nextstepaction"]
 > [教學課程：在 Visual Studio 中使用 Python](../python/tutorial-working-with-python-in-visual-studio-step-00-installation.md)
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [手動識別現有的 Python 環境](../python/managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment)

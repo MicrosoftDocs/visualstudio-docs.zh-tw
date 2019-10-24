@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 01c457947eb84859f2ce92378688dd03c624c86d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f646616fddc0e7727ef9e8e80d9c29fbcba6ebc0
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62837884"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741316"
 ---
 # <a name="idiastackwalkhelpersymbolforva"></a>IDiaStackWalkHelper::symbolForVA
-擷取包含指定的虛擬位址的符號。
+抓取包含指定之虛擬位址的符號。
 
 ## <a name="syntax"></a>語法
 
@@ -34,15 +34,15 @@ HRESULT symbolForVA( 
 #### <a name="parameters"></a>參數
  `va`
 
-[in]包含在要求的符號中的虛擬位址。 符號必須是`SymTagFunctionType`(取值[SymTagEnum 列舉](../../debugger/debug-interface-access/symtagenum.md)列舉型別)。
+在要求的符號中包含的虛擬位址。 符號必須是 `SymTagFunctionType` （來自[SymTagEnum 列舉](../../debugger/debug-interface-access/symtagenum.md)列舉的值）。
 
  `ppSymbol`
 
-[out][IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)物件，表示在指定位址的符號。
+脫銷[IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)物件，表示位於指定位址的符號。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
+ 如果成功，會傳回 `S_OK`;否則，會傳回錯誤碼。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

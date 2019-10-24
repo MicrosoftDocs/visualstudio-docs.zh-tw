@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 56a1c700b2a98b51f846e5f1136ef45c67fd5f99
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b9900b6301388479fc71f1b257113974056aeb3b
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62832072"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741730"
 ---
-# <a name="idiastackframegetfunctionstart"></a>IDiaStackFrame::get_functionStart
-擷取指出區塊是否包含函式的進入點的旗標。
+# <a name="idiastackframeget_functionstart"></a>IDiaStackFrame::get_functionStart
+抓取旗標，指出區塊是否包含函數的進入點。
 
 ## <a name="syntax"></a>語法
 
@@ -33,10 +33,10 @@ HRESULT get_functionStart ( 
 #### <a name="parameters"></a>參數
  `pRetVal`
 
-[out]會傳回`TRUE`堆疊框架包含進入點函式; 否則會傳回`FALSE`。
+脫銷如果堆疊框架包含函式的進入點，則會傳回 `TRUE`。否則，會傳回 `FALSE`。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，會傳回 `S_OK`。 傳回`S_FALSE`不支援的屬性。 否則會傳回錯誤碼。
+ 如果成功，會傳回 `S_OK`。 如果不支援此屬性，則會傳回 `S_FALSE`。 否則會傳回錯誤碼。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)

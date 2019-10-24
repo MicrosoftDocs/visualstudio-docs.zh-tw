@@ -14,12 +14,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1fef8f314f5b416edcf40c8b2f7da4eaa471a28c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 86e479879051d38df1da3ed2677303a76ea2d289
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72610656"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747918"
 ---
 # <a name="list-modules-command"></a>列出模組命令
 列出目前處理序的模組。

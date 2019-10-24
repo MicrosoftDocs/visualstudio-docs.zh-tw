@@ -12,18 +12,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 37786442124eafea719454ac94c704984f1703f3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: aac055930e9d1b016bbdc4949cbbdbee798cfaa2
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62554970"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745309"
 ---
-# <a name="cvhrege"></a>CV_HREG_e
-指定的目標暫存器。
+# <a name="cv_hreg_e"></a>CV_HREG_e
+指定目標暫存器。
 
 > [!NOTE]
-> 因為`CV_HREG_e`列舉型別複製整個這裡太大的縮寫的版本提供作為參考。 遺漏的項目會最先斜體。 完整的列舉型別適用於 cvconst.h 標頭檔。
+> 由於 `CV_HREG_e` 列舉太大而無法在這裡完整複製，因此會提供縮寫的版本做為參考。 遺漏的專案會以斜體來示。 完整的列舉可在 cvconst 標頭檔中取得。
 
 ## <a name="syntax"></a>語法
 
@@ -409,32 +409,32 @@ enum CV_HREG_e {
 ```
 
 ## <a name="elements"></a>項目
-CV_REG_ * 註冊 Intel 80x86 和 ix86 處理器和 p 程式碼使用。
+CV_REG_ * Intel 80x86 和 ix86 處理器所使用的暫存器，以及 p-code。
 
-CV_R68_ * 註冊 68 K 處理器使用。
+CV_R68_ * 68K 處理器所使用的註冊。
 
-CV_M4_ * 註冊 MIPS 4000 系列處理器使用。
+CV_M4_ * MIPS 4000 系列處理器所使用的註冊。
 
-CV_ALPHA_ * 註冊數位設備 Corporation Alpha AXP 系列處理器使用。
+CV_ALPHA_ * 數位設備公司 Alpha AXP 系列處理器所使用的註冊。
 
-CV_PPC_ * 註冊/IBM Motorola PowerPC 處理器使用。
+CV_PPC_ * Motorola/IBM PowerPC 處理器所使用的註冊。
 
-CV_SH3_ * 和 CV_SH_\* Hitachi SH3 和 Hitachi SH 系列處理器所使用的暫存器。
+CV_SH3_ * 和 CV_SH_ \* Hitachi SH3 和 Hitachi SH 系列處理器所使用的註冊。
 
-CV_ARM_ * 註冊 Advanced RISC Machine (ARM) 處理器所使用。
+CV_ARM_ * Advanced RISC Machine （ARM）處理器所使用的註冊。
 
-CV_IA64_ * 註冊 Intel 的 IA64 系列處理器所使用。
+CV_IA64_ * Intel IA64 系列處理器所使用的註冊。
 
-CV_TRI_ * 註冊 Infineon 技術 TriCore 處理器使用。
+CV_TRI_ * Infineon 技術 TriCore 處理器所使用的註冊。
 
-CV_AM33_ * 註冊 Matsushita/Panasonic AM33 所使用，以及相關的處理器。
+CV_AM33_ * Matsushita/Panasonic AM33 和相關處理器所使用的暫存器。
 
-CV_M32R_ * 註冊 Mitsubishi M32R 處理器使用。
+CV_M32R_ * Mitsubishi M32R 處理器所使用的暫存器。
 
 ## <a name="remarks"></a>備註
-每個處理器的類型會使用它自己組唯一的暫存器。
+每個處理器類型都會使用它自己唯一的一組暫存器。
 
-這個列舉型別中的值會傳遞下列方法：
+此列舉中的值會傳遞給下列方法：
 
 - [IDiaStackWalkFrame::get_registerValue](../../debugger/debug-interface-access/idiastackwalkframe-get-registervalue.md)
 
@@ -447,9 +447,9 @@ CV_M32R_ * 註冊 Mitsubishi M32R 處理器使用。
 - [IDiaStackFrame::get_registerValue](../../debugger/debug-interface-access/idiastackframe-get-registervalue.md)
 
 ## <a name="requirements"></a>需求：
-標頭： cvconst.h
+標頭： cvconst。h
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [列舉和結構](../../debugger/debug-interface-access/enumerations-and-structures.md)
 - [IDiaStackWalkFrame::get_registerValue](../../debugger/debug-interface-access/idiastackwalkframe-get-registervalue.md)
 - [IDiaStackWalkFrame::put_registerValue](../../debugger/debug-interface-access/idiastackwalkframe-put-registervalue.md)

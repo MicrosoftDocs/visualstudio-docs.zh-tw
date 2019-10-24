@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9b58fcf55741975a776e222b2845ae50774e7fc9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b0ffcb6c438150bff82f17a66c3347c300b17d72
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62832910"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741886"
 ---
 # <a name="idiasessionsymbolbyid"></a>IDiaSession::symbolById
-擷取符號依其唯一識別碼。
+依其唯一識別碼抓取符號。
 
 ## <a name="syntax"></a>語法
 
@@ -34,22 +34,22 @@ HRESULT symbolById (
 #### <a name="parameters"></a>參數
 `id`
 
-[in]唯一識別項。
+在唯一識別碼。
 
 `ppSymbol`
 
-[out]傳回[IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)擷取表示符號的物件。
+脫銷傳回代表所抓取符號的[IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)物件。
 
 ## <a name="return-value"></a>傳回值
-如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
+如果成功，會傳回 `S_OK`;否則，會傳回錯誤碼。
 
 ## <a name="remarks"></a>備註
-指定的識別項是由 DIA SDK 在內部用來使所有符號都是唯一的唯一值。
+指定的識別碼是 DIA SDK 在內部使用的唯一值，讓所有符號都是唯一的。
 
-這個方法可用，比方說，來擷取代表類型的另一個符號的符號 （請參閱範例）。
+例如，您可以使用這個方法來抓取代表另一個符號類型的符號（請參閱範例）。
 
 ## <a name="example"></a>範例
-此範例會擷取[IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)代表另一個符號的類型。 此範例示範如何使用`symbolById`工作階段中的方法。 更簡單的方法是呼叫[idiasymbol:: Get_type](../../debugger/debug-interface-access/idiasymbol-get-type.md)方法來直接擷取類型符號。
+這個範例會抓取代表另一個符號之類型的[IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) 。 這個範例會示範如何在會話中使用 `symbolById` 方法。 較簡單的方法是呼叫[IDiaSymbol：： get_type](../../debugger/debug-interface-access/idiasymbol-get-type.md)方法，直接取得類型符號。
 
 ```C++
 IDiaSymbol *GetSymbolType(IDiaSymbol *pSymbol, IDiaSession *pSession)
@@ -65,7 +65,7 @@ IDiaSymbol *GetSymbolType(IDiaSymbol *pSymbol, IDiaSession *pSession)
 }
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [IDiaSession](../../debugger/debug-interface-access/idiasession.md)
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
 - [IDiaSymbol::get_type](../../debugger/debug-interface-access/idiasymbol-get-type.md)

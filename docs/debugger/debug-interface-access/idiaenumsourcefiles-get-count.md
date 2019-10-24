@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 03d3d52706d549ce6dff4d30b9552ff5d35f379a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7abc842a65140d1ee127dba99568ff4a57b16873
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62833372"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72744118"
 ---
-# <a name="idiaenumsourcefilesgetcount"></a>IDiaEnumSourceFiles::get_Count
-擷取來源檔案的數目。
+# <a name="idiaenumsourcefilesget_count"></a>IDiaEnumSourceFiles::get_Count
+抓取原始檔的數目。
 
 ## <a name="syntax"></a>語法
 
@@ -33,11 +33,11 @@ HRESULT get_Count ( 
 #### <a name="parameters"></a>參數
  pRetVal
 
-[out]傳回原始程式檔數目。
+脫銷傳回原始檔的數目。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
+ 如果成功，會傳回 `S_OK`;否則，會傳回錯誤碼。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [IDiaEnumSourceFiles](../../debugger/debug-interface-access/idiaenumsourcefiles.md)
 - [IDiaEnumSourceFiles::Item](../../debugger/debug-interface-access/idiaenumsourcefiles-item.md)

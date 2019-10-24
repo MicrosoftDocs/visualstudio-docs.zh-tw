@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_virtualaddress |Microsoft Docs'
+title: IDiaSymbol：： get_virtualAddress |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3aa09e0e40250d1e7d40ec0f85adca617852919f
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: ee1c5e989c4e4d9937fad4ba23c261437b4009b4
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64786507"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72738901"
 ---
-# <a name="idiasymbolgetvirtualaddress"></a>IDiaSymbol::get_virtualAddress
-擷取位置的虛擬位址 (VA)。 使用時機[LocationType 列舉](../../debugger/debug-interface-access/locationtype.md)設定為`LocIsStatic`。
+# <a name="idiasymbolget_virtualaddress"></a>IDiaSymbol::get_virtualAddress
+抓取位置的虛擬位址（VA）。 當[LocationType 列舉](../../debugger/debug-interface-access/locationtype.md)設定為 `LocIsStatic` 時使用。
 
 ## <a name="syntax"></a>語法
 
@@ -33,14 +33,14 @@ HRESULT get_virtualAddress ( 
 #### <a name="parameters"></a>參數
  `pRetVal`
 
-[out]傳回位置的虛擬位址。
+脫銷傳回位置的虛擬位址。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，則傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。
+ 如果成功，會傳回 `S_OK`;否則，會傳回 `S_FALSE` 或錯誤碼。
 
 > [!NOTE]
-> 傳回值為`S_FALSE`表示此屬性不適用於符號。
+> @No__t_0 的傳回值表示該屬性不適用於符號。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
 - [LocationType 列舉](../../debugger/debug-interface-access/locationtype.md)

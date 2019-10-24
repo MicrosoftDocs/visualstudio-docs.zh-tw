@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f199db93fa2ea0b3ee2633f9af8a02fff5a4fdf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d913a229dafb64570728434576716ba396648af3
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62828214"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742824"
 ---
 # <a name="idiareadexeatoffsetcallbackreadexecutableat"></a>IDiaReadExeAtOffsetCallback::ReadExecutableAt
-讀取指定的可執行檔從指定的位移開始的位元組數目。
+從可執行檔的指定位移開始，讀取指定的位元組數目。
 
 ## <a name="syntax"></a>語法
 
@@ -36,23 +36,23 @@ HRESULT ReadExecutableAt ( 
 #### <a name="parameters"></a>參數
  fileOffset
 
-[in]若要開始讀取的可執行檔中的位移。
+在可執行檔中要開始讀取的位移。
 
  cbData
 
-[in]要讀取的位元組數目。
+在要讀取的位元組數。
 
  pcbData
 
-[out]傳回讀取的位元組數目。
+脫銷傳回讀取的位元組數目。
 
  data[]
 
-[in、 out]陣列，其中會填入從檔案讀取的位元組。
+[in、out]填入的陣列，其中包含從檔案讀取的位元組。
 
 ## <a name="remarks"></a>備註
- DIA 支援程式碼，從使用絕對檔案位移的可執行檔載入資料的位元組被呼叫此方法。 會呼叫這個方法支援[idiadatasource:: Loaddataforexe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)方法。
+ DIA 支援程式碼會呼叫這個方法，以使用絕對檔案位移從可執行檔載入資料位元組。 這個方法是在支援[IDiaDataSource：： loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)方法時呼叫。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [IDiaReadExeAtOffsetCallback](../../debugger/debug-interface-access/idiareadexeatoffsetcallback.md)
 - [IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)

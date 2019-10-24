@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6728418e848941bb537f5bec4cb4f772c73485c4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 04fec0f24cd8d905b41e8eb142ab3f1f37023860
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62832049"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741591"
 ---
-# <a name="idiastackframegetsize"></a>IDiaStackFrame::get_size
-擷取堆疊框架，以位元組為單位的大小。
+# <a name="idiastackframeget_size"></a>IDiaStackFrame::get_size
+捕獲堆疊框架的大小（以位元組為單位）。
 
 ## <a name="syntax"></a>語法
 
@@ -33,10 +33,10 @@ HRESULT get_size ( 
 #### <a name="parameters"></a>參數
  `pRetVal`
 
-[out]傳回以位元組為單位的堆疊框架的大小。
+脫銷傳回堆疊框架的大小（以位元組為單位）。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，會傳回 `S_OK`。 傳回`S_FALSE`不支援的屬性。 否則會傳回錯誤碼。
+ 如果成功，會傳回 `S_OK`。 如果不支援此屬性，則會傳回 `S_FALSE`。 否則會傳回錯誤碼。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)

@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: d15a176fb378159407589af0b720d8310de8e29c
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: d12c9848409f57b16c733b587edff193311bcfdd
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72450409"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72732266"
 ---
 # <a name="how-to-trigger-suspend-resume-and-background-events-while-debugging-uwp-apps-in-visual-studio"></a>在 Visual Studio 中偵測 UWP 應用程式時，如何觸發暫止、繼續和背景事件
 

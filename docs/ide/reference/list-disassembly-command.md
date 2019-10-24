@@ -13,12 +13,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e2e9177ee7048f626c61fee087468f991e4ed548
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: aaeab2e65088b8f1bfce3a6a12f8cd66c3245b75
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72610738"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747928"
 ---
 # <a name="list-disassembly-command"></a>列出反組譯碼命令
 開始偵錯處理序，並可讓您指定處理錯誤的方式。

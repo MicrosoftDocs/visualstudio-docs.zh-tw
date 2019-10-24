@@ -9,12 +9,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1316f56b9a780e101c6ab76ee55b79e0b5a181d8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 6e87759206f6d05267e2be5be25fdb8c3e9b70df
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72658385"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747530"
 ---
 # <a name="model-your-app39s-architecture"></a>建立應用程式&#39;架構模型
 為了協助確保您的軟體系統或應用程式符合使用者的需求，您可以在 Visual Studio 中建立模型，做為您的軟體系統或應用程式整體結構和行為描述的一部分。 您也可以使用模型來描述整個設計所使用的模式。 這些模型可協助您了解現有架構、討論變更，並清楚地傳達您的意圖。

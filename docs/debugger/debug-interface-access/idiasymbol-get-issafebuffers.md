@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_issafebuffers |Microsoft Docs'
+title: IDiaSymbol：： get_isSafeBuffers |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f5dd923b9f7244bb42fdf8defb70b8ed5dc82ed0
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 0f4c3ab653c0a5540410d8e3e0b5426c4d0bcde5
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64825504"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740082"
 ---
-# <a name="idiasymbolgetissafebuffers"></a>IDiaSymbol::get_isSafeBuffers
-擷取旗標，指定是否使用安全的緩衝區中的前置指示詞。 使用時機[SymTagEnum 列舉](../../debugger/debug-interface-access/symtagenum.md)設定為`SymTagFunction`。
+# <a name="idiasymbolget_issafebuffers"></a>IDiaSymbol::get_isSafeBuffers
+抓取旗標，指定是否使用安全緩衝區的預處理器指示詞。 當[SymTagEnum 列舉](../../debugger/debug-interface-access/symtagenum.md)設定為 `SymTagFunction` 時使用。
 
 ## <a name="syntax"></a>語法
 
@@ -33,23 +33,23 @@ HRESULT get_isSafeBuffers( 
 #### <a name="parameters"></a>參數
  `pRetVal`
 
-[out]會傳回`TRUE`指標會使用前置處理器指示詞進行安全的緩衝區; 否則會傳回`FALSE`。
+脫銷如果指標使用安全緩衝區的預處理器指示詞，則會傳回 `TRUE`。否則，會傳回 `FALSE`。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，則傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。
+ 如果成功，會傳回 `S_OK`;否則，會傳回 `S_FALSE` 或錯誤碼。
 
 > [!NOTE]
-> 傳回值為`S_FALSE`表示此屬性不適用於符號。
+> @No__t_0 的傳回值表示該屬性不適用於符號。
 
 ## <a name="remarks"></a>備註
 
 ## <a name="requirements"></a>需求
- 標頭：dia2.h
+ 標頭： Dia2。h
 
- 程式庫： diaguids.lib
+ 程式庫： diaguids
 
- DLL: msdia100.dll
+ DLL： msdia100
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
 - [strict_gs_check](/cpp/preprocessor/strict-gs-check)

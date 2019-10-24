@@ -1,5 +1,5 @@
 ---
-title: 'Idiaenumdebugstreams:: Get_count |Microsoft Docs'
+title: IDiaEnumDebugStreams：： get_Count |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5840bbcc012fdcb209fbfb19c0119ad94f3073f2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 21697d53f0b221d3d5f94f85e3fb18a0a2c2692e
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62838437"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72744763"
 ---
-# <a name="idiaenumdebugstreamsgetcount"></a>IDiaEnumDebugStreams::get_Count
-擷取偵錯資料流的數目。
+# <a name="idiaenumdebugstreamsget_count"></a>IDiaEnumDebugStreams::get_Count
+抓取 debug 資料流程的數目。
 
 ## <a name="syntax"></a>語法
 
@@ -33,11 +33,11 @@ HRESULT get_Count( 
 #### <a name="parameters"></a>參數
  `pRetVal`
 
-[out]傳回這個列舉值中可用的偵錯資料流數目。
+脫銷傳回此列舉值中可用的 debug 資料流程數目。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
+ 如果成功，會傳回 `S_OK`;否則，會傳回錯誤碼。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [IDiaEnumDebugStreams](../../debugger/debug-interface-access/idiaenumdebugstreams.md)
 - [IDiaEnumDebugStreams::Item](../../debugger/debug-interface-access/idiaenumdebugstreams-item.md)

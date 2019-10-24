@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e51918122834dd6b50952b9cc81a1d24a6477dd0
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: f98b99a31d9215d661879aa7fa52d4b671024496
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72431773"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72738159"
 ---
 # <a name="debugging-native-code"></a>偵錯機器碼
 本章節內容涵蓋原生應用程式一些常見的偵錯問題和技術。 本章節所涵蓋的技術屬高階技術。 如需使用 Visual Studio 偵錯工具的機制，請參閱[偵錯工具的第一次](../debugger/debugger-feature-tour.md)查看）。

@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 18a242a47978fbd6acb2b6161ada2199ced8c434
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 72ea881470eb3cfbb1c544324218b122a4470efc
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62554289"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745192"
 ---
-# <a name="idiaaddressmapgetrelativevirtualaddressenabled"></a>IDiaAddressMap::get_relativeVirtualAddressEnabled
-指出是否已啟用的計算方式與使用相對虛擬位址 (RVA)。
+# <a name="idiaaddressmapget_relativevirtualaddressenabled"></a>IDiaAddressMap::get_relativeVirtualAddressEnabled
+指出是否已啟用相對虛擬位址（RVA）的計算和使用。
 
 ## <a name="syntax"></a>語法
 
@@ -33,17 +33,17 @@ HRESULT get_relativeVirtualAddressEnabled ( 
 #### <a name="parameters"></a>參數
  pRetVal
 
-[out]傳回`TRUE`如果已啟用的 Rva 計算。
+脫銷如果已啟用 Rva 的計算，則傳回 `TRUE`。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
+ 如果成功，會傳回 `S_OK`;否則，會傳回錯誤碼。
 
 ## <a name="remarks"></a>備註
- 如果區段有一開始載入 PDB 檔案中，會啟用的 Rva。 藉由呼叫可以暫時停用的 Rva [idiaaddressmap:: Put_relativevirtualaddressenabled](../../debugger/debug-interface-access/idiaaddressmap-put-relativevirtualaddressenabled.md)方法。
+ 如果區段最初是從 PDB 檔案載入，就會啟用 Rva。 藉由呼叫[IDiaAddressMap：:P ut_relativevirtualaddressenabled](../../debugger/debug-interface-access/idiaaddressmap-put-relativevirtualaddressenabled.md)方法，可以暫時停用 rva。
 
- 此外，建立新的映像標頭，藉由呼叫[idiaaddressmap:: Set_imageheaders](../../debugger/debug-interface-access/idiaaddressmap-set-imageheaders.md)方法，後面呼叫`put_relativeVirtualAddressEnabled`方法，以啟用使用新的映像標頭的 Rva。
+ 此外，您可以呼叫[IDiaAddressMap：： set_imageHeaders](../../debugger/debug-interface-access/idiaaddressmap-set-imageheaders.md)方法來建立新的影像標頭，然後呼叫 `put_relativeVirtualAddressEnabled` 方法，以使用新的影像標頭來啟用 rva。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [IDiaAddressMap](../../debugger/debug-interface-access/idiaaddressmap.md)
 - [IDiaAddressMap::set_imageHeaders](../../debugger/debug-interface-access/idiaaddressmap-set-imageheaders.md)
 - [IDiaAddressMap::put_relativeVirtualAddressEnabled](../../debugger/debug-interface-access/idiaaddressmap-put-relativevirtualaddressenabled.md)

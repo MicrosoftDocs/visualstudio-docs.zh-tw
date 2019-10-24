@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_isAcceleratorStubFunction |Microsoft Docs
+title: IDiaSymbol：： get_isAcceleratorStubFunction |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bbcfbfcd1e95a45388d0b7c0626f1cd529607ce4
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: baf71d3be8916c18b16e4022a2af884617b5fd70
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "62836625"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740309"
 ---
-# <a name="idiasymbolgetisacceleratorstubfunction"></a>IDiaSymbol::get_isAcceleratorStubFunction
-指出是否符號為最上層函式的符號中對應的著色器編譯對應於加速器`parallel_for_each`呼叫。
+# <a name="idiasymbolget_isacceleratorstubfunction"></a>IDiaSymbol::get_isAcceleratorStubFunction
+指出符號是否對應至針對對應至 `parallel_for_each` 呼叫之快速鍵所編譯之著色器的最上層函式符號。
 
 ## <a name="syntax"></a>語法
 
@@ -30,10 +30,10 @@ HRESULT get_isAcceleratorStubFunction(
 #### <a name="parameters"></a>參數
  `pFlag`
 
-[out]指標`BOOL`，指出是否在符號對應於最上層函式符號著色器編譯對應於加速器`parallel_for_each`呼叫。
+脫銷@No__t_0 的指標，指出符號是否對應至針對對應至 `parallel_for_each` 呼叫之快速鍵所編譯之著色器的最上層函式符號。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，則傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。
+ 如果成功，會傳回 `S_OK`;否則，會傳回 `S_FALSE` 或錯誤碼。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
