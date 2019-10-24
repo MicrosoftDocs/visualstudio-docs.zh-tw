@@ -1,5 +1,5 @@
 ---
-title: 'Idiaenumsymbols:: Get_count |Microsoft Docs'
+title: IDiaEnumSymbols：： get_Count |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a2ed86bc9854d896578c7935cf446406589ea28b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6c91f1e60b3cd003464f61942119828b1e64c222
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62833297"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743967"
 ---
-# <a name="idiaenumsymbolsgetcount"></a>IDiaEnumSymbols::get_Count
-擷取符號的數。
+# <a name="idiaenumsymbolsget_count"></a>IDiaEnumSymbols::get_Count
+抓取符號的數目。
 
 ## <a name="syntax"></a>語法
 
@@ -33,11 +33,11 @@ HRESULT get_Count ( 
 #### <a name="parameters"></a>參數
  pRetVal
 
-[out]傳回符號的數。
+脫銷傳回符號的數目。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
+ 如果成功，會傳回 `S_OK`;否則，會傳回錯誤碼。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)
 - [IDiaEnumSymbols::Item](../../debugger/debug-interface-access/idiaenumsymbols-item.md)
