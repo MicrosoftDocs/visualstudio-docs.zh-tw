@@ -1,5 +1,5 @@
 ---
-title: HOW TO：尋找程式損毀的所在的 DLL |Microsoft Docs
+title: 如何：尋找程式損毀所在的 DLL |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -22,14 +22,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b7a9421af9e0caf085feb1afb27b53befe837668
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bff4f164e16a65efe4ec3d1f057025168eab8cd2
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62894043"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72733276"
 ---
-# <a name="how-to-find-which-dll-your-program-crashed-in-c-c-visual-basic-f"></a>HOW TO：尋找程式損毀的所在的 DLL (C#， C++，Visual Basic 中， F#)
+# <a name="how-to-find-which-dll-your-program-crashed-in-c-c-visual-basic-f"></a>如何：尋找程式損毀的 DLL （C#、 C++、Visual Basic、） F#
 
  如果您的應用程式在呼叫系統 DLL 或其他程式碼時損毀，您就必須找出發生損毀時作用中的 DLL。 如果您遇到的損毀是由程式以外的 DLL 所致，您可以使用 [模組] 視窗來辨識其位置。
 
@@ -37,7 +37,7 @@ ms.locfileid: "62894043"
 
 1. 記下發生毀損的位址。
 
-    如果位址不會顯示錯誤訊息，您可能需要使用替代方法來找出的 DLL。 如果您懷疑系統 DLL，您可以[載入符號](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)從偵錯時，才會進行 Microsoft 符號伺服器。 否則，您可能需要[建立傾印檔案](../debugger/using-dump-files.md)與堆積資訊改為。 各種[工具](https://blogs.msdn.microsoft.com/andrehal/2009/12/31/what-is-a-dump-and-how-do-i-create-one/)可用於建立傾印檔案。
+    如果錯誤訊息中未顯示位址，您可能需要使用替代方法來識別 DLL。 如果您懷疑系統 DLL，您可以在進行調試時，從 Microsoft 符號伺服器[載入符號](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)。 否則，您可能需要改為[建立](../debugger/using-dump-files.md)含有堆積資訊的傾印檔案。 有各種[工具](https://blogs.msdn.microsoft.com/andrehal/2009/12/31/what-is-a-dump-and-how-do-i-create-one/)可用來建立傾印檔案。
 
 2. 在 [偵錯] 功能表上選擇 [Windows]，然後按一下 [模組]。
 
@@ -49,6 +49,6 @@ ms.locfileid: "62894043"
 
 6. 檢視 [名稱] 和 [路徑] 欄位以查看此 DLL 名稱和路徑。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [偵錯 DLL 專案](../debugger/debugging-dll-projects.md)
 - [如何：使用模組視窗](../debugger/how-to-use-the-modules-window.md)

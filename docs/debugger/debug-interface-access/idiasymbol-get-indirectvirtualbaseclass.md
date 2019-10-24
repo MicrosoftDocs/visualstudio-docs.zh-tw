@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_indirectvirtualbaseclass |Microsoft Docs'
+title: IDiaSymbol：： get_indirectVirtualBaseClass |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a442585f9b93c08250039a088ed36a9a2bda41c
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 32aa963aecc2e44ea2eb808ab5932df8a72fb33f
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64786546"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740395"
 ---
-# <a name="idiasymbolgetindirectvirtualbaseclass"></a>IDiaSymbol::get_indirectVirtualBaseClass
-擷取指定的使用者定義資料類型是否為間接虛擬基底類別的旗標。
+# <a name="idiasymbolget_indirectvirtualbaseclass"></a>IDiaSymbol::get_indirectVirtualBaseClass
+抓取指定使用者定義資料類型是否為間接虛擬基類的旗標。
 
 ## <a name="syntax"></a>語法
 
@@ -33,20 +33,20 @@ HRESULT get_indirectVirtualBaseClass ( 
 #### <a name="parameters"></a>參數
  `pRetVal`
 
-[out]會傳回`TRUE`使用者定義資料類型是間接的虛擬基底類別; 否則會傳回`FALSE`。
+脫銷如果使用者定義資料類型是間接虛擬基類，則傳回 `TRUE`。否則，會傳回 `FALSE`。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，則傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。
+ 如果成功，會傳回 `S_OK`;否則，會傳回 `S_FALSE` 或錯誤碼。
 
 > [!NOTE]
-> 傳回值為`S_FALSE`表示此屬性不適用於符號。
+> @No__t_0 的傳回值表示該屬性不適用於符號。
 
 ## <a name="requirements"></a>需求
 
 |需求|描述|
 |-----------------|-----------------|
-|標頭：|dia2.h|
+|標頭：|dia2。h|
 |版本:|DIA SDK v7.0|
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

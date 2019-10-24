@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: be6d0ccbdfe2b89fbeb1f504bf683fab2b5a83b9
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: a47ba9144ab2a322148f167d50b54f1d6b7db80d
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64823399"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739314"
 ---
-# <a name="idiasymbolgetslot"></a>IDiaSymbol::get_slot
-擷取位置的位置編號。 使用時機[LocationType 列舉](../../debugger/debug-interface-access/locationtype.md)是`LocIsSlot`。
+# <a name="idiasymbolget_slot"></a>IDiaSymbol::get_slot
+抓取位置的插槽號碼。 @No__t_1 [LocationType 列舉](../../debugger/debug-interface-access/locationtype.md)時使用。
 
 ## <a name="syntax"></a>語法
 
@@ -33,14 +33,14 @@ HRESULT get_slot ( 
 #### <a name="parameters"></a>參數
  `pRetVal`
 
-[out]傳回位置的位置編號。
+脫銷傳回位置的插槽號碼。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，則傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。
+ 如果成功，會傳回 `S_OK`;否則，會傳回 `S_FALSE` 或錯誤碼。
 
 > [!NOTE]
-> 傳回值為`S_FALSE`表示屬性不是適用於符號。
+> @No__t_0 的傳回值表示該屬性不適用於符號。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
 - [LocationType 列舉](../../debugger/debug-interface-access/locationtype.md)

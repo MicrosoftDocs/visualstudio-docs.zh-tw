@@ -1,5 +1,5 @@
 ---
-title: 作法：對 ActiveX 控制項進行偵錯工具 |Microsoft Docs
+title: 如何：對 ActiveX 控制項進行偵錯工具 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -24,14 +24,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c1d02cb4d581a7234ad2dd950fa51f46a5d128b2
-ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.openlocfilehash: 75abf76516d3827a748e1b896d4c2e8c93bb34da
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71211091"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72733874"
 ---
-# <a name="how-to-debug-an-activex-control"></a>HOW TO：對 ActiveX 控制項進行偵錯
+# <a name="how-to-debug-an-activex-control"></a>如何：偵錯 ActiveX 控制項
 
 > [!NOTE]
 > 根據您目前使用的設定或版本，您所看到的對話方塊與功能表命令可能會與 [說明] 中描述的不同。 若要變更設定，請從 [工具] 功能表中選擇 [匯入和匯出設定]。 如需詳細資訊，請參閱[重設設定](../ide/environment-settings.md#reset-settings)。
@@ -56,7 +56,7 @@ ms.locfileid: "71211091"
 
      若您未在 [專案屬性頁] 對話方塊中指定容器，您也可以在開始偵錯時指定容器。 當您選取執行命令以開始偵錯時，將會出現[偵錯工作階段的可執行檔對話方塊](../debugger/executable-for-debugging-session-dialog-box.md)。 在對話方塊中指定容器的路徑名稱。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [ActiveX 控制項](/cpp/mfc/activex-controls)
 - [使用測試容器測試屬性和事件](/cpp/mfc/testing-properties-and-events-with-test-container)

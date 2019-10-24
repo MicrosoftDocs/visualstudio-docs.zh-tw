@@ -1,5 +1,5 @@
 ---
-title: SDKReference 元素 （Visual Studio 範本） |Microsoft Docs
+title: SDKReference 元素（Visual Studio 範本） |Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -9,12 +9,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: da11d9e01802bff8162b2767444c7a1d225200a0
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 3cf1b3bed942894e20132ecd7b06c1884caa9a93
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66338487"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72720084"
 ---
 # <a name="sdkreference-element-visual-studio-templates"></a>SDKReference 項目 (Visual Studio 樣板)
 指定項目範本使用 SDK 參考。
@@ -35,14 +35,14 @@ ms.locfileid: "66338487"
 ### <a name="attributes"></a>屬性
  無。
 
-### <a name="child-elements"></a>子元素
+### <a name="child-elements"></a>子項目
  無。
 
 ### <a name="parent-elements"></a>父項目
 
 |項目|描述|
 |-------------|-----------------|
-|[參考](../extensibility/reference-element-visual-studio-templates.md)|指定項目加入專案時要加入的組件參考。|
+|[參考資料](../extensibility/reference-element-visual-studio-templates.md)|指定項目加入專案時要加入的組件參考。|
 
 ## <a name="text-value"></a>文字值
  需要文字值。
@@ -60,7 +60,7 @@ ms.locfileid: "66338487"
 ...
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [References 元素 (Visual Studio 範本)](../extensibility/references-element-visual-studio-templates.md)
 - [Reference 元素 (Visual Studio 範本)](../extensibility/reference-element-visual-studio-templates.md)
 - [建立專案和項目範本](../ide/creating-project-and-item-templates.md)

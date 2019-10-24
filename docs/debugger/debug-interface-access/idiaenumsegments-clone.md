@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9992b17155601284387981a9b424a77d3d9b5580
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: cd169ac890fa9f86d4eaa0e121da3f2c1387db2f
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62829663"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72744232"
 ---
 # <a name="idiaenumsegmentsclone"></a>IDiaEnumSegments::Clone
-建立列舉值，包含目前的列舉值相同的列舉型別狀態。
+建立枚舉器，其中包含與目前列舉值相同的列舉狀態。
 
 ## <a name="syntax"></a>語法
 
@@ -33,10 +33,10 @@ HRESULT Clone ( 
 #### <a name="parameters"></a>參數
  ppenum
 
-[out]傳回[IDiaEnumSegments](../../debugger/debug-interface-access/idiaenumsegments.md)物件，包含列舉值重複。 不重複的區段，將列舉值。
+脫銷傳回[IDiaEnumSegments](../../debugger/debug-interface-access/idiaenumsegments.md)物件，其中包含重複的列舉值。 區段不會重複，只有枚舉器。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
+ 如果成功，會傳回 `S_OK`;否則，會傳回錯誤碼。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [IDiaEnumSegments](../../debugger/debug-interface-access/idiaenumsegments.md)

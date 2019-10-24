@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 58f572fcce0b490fad8f94f1e3e3d941e8568211
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 24807114cbb28c4112f538b8aa88b26bf5491fef
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62827711"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742188"
 ---
 # <a name="idiasessionfindinlineelinesbyva"></a>IDiaSession::findInlineeLinesByVA
-擷取列舉型別，可讓用戶端來逐一查看所有函式是內嵌的直接或間接由指定之父代符號的行號資訊，而且包含在指定的虛擬位址 (VA)。
+抓取列舉型別，可讓用戶端逐一查看由指定的父符號內嵌、直接或間接內嵌之所有函式的行號資訊，並包含在指定的虛擬位址（VA）中。
 
 ## <a name="syntax"></a>語法
 
@@ -32,24 +32,24 @@ HRESULT findInlineeLinesByVA ( 
 #### <a name="parameters"></a>參數
  `parent`
 
-[in]`IDiaSymbol`物件表示父代。
+在代表父系的 `IDiaSymbol` 物件。
 
  `va`
 
-[in]指定的位址為瑞斯
+在將位址指定為 VA。
 
  `length`
 
-[in]指定位址範圍中涵蓋此查詢使用的位元組數目。
+在指定要與此查詢一併涵蓋的位址範圍（以位元組數為單位）。
 
  `ppResult`
 
-[out]保存`IDiaEnumLineNumbers`物件，其中包含所擷取的行號的清單。
+脫銷保存 `IDiaEnumLineNumbers` 物件，其中包含所抓取的行號清單。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
+ 如果成功，會傳回 `S_OK`;否則，會傳回錯誤碼。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [IDiaSession](../../debugger/debug-interface-access/idiasession.md)
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
 - [SymTagEnum 列舉](../../debugger/debug-interface-access/symtagenum.md)

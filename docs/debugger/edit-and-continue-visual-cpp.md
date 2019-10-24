@@ -17,14 +17,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0ebe31267ee666250fbaeda73f1678051f1d4727
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: c2d92477e37b4918e0601bf163e07f5a8492136c
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72435852"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72737905"
 ---
-# <a name="edit-and-continue-c"></a>編輯後繼續（C++）
+# <a name="edit-and-continue-c"></a>編輯後繼續 (C++)
 您可以在專案中C++使用 [編輯後繼續]。 如需 [編輯後繼續] 限制的相關資訊，請參閱支援的程式[代碼變更（C++）](../debugger/supported-code-changes-cpp.md) 。
 
 如需 Visual Studio 2015 update 3 改良功能的詳細資訊，請參閱[ C++ Visual Studio 2015 update 3 中](https://devblogs.microsoft.com/cppblog/c-edit-and-continue-in-visual-studio-2015-update-3/)的 [編輯後繼續]。

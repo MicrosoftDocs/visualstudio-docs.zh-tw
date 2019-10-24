@@ -1,5 +1,5 @@
 ---
-title: HOW TO：還原隱藏的偵錯工具命令 |Microsoft Docs
+title: 如何：還原隱藏的偵錯工具命令 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -18,14 +18,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7766f83eef6205ce445ed892ffaf5861a0dcabbb
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a45791843abe3051bacb9655c773ac9dfc6b9045
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63387546"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72732904"
 ---
-# <a name="how-to-restore-hidden-debugger-commands"></a>HOW TO：還原隱藏的偵錯工具命令
+# <a name="how-to-restore-hidden-debugger-commands"></a>如何：還原隱藏的偵錯工具命令
 當您設定 Visual Studio 時，將會要求您選擇一組預設 IDE 設定，做為您主要的程式設計語言。 某些語言的預設 IDE 設定可能會隱藏特定偵錯工具命令。
 
  如果想要使用預設 IDE 設定所隱藏的偵錯工具功能，您可以執行下列程序，將命令加回功能表中。
@@ -72,6 +72,6 @@ ms.locfileid: "63387546"
 
 9. 按一下 [ **關閉**]。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [偵錯工具安全性](../debugger/debugger-security.md)
 - [偵錯工具簡介](../debugger/debugger-feature-tour.md)

@@ -1,5 +1,5 @@
 ---
-title: 錯誤：遠端電腦上的 Microsoft Visual Studio 遠端偵錯監視，目前是以不同的使用者身分在執行
+title: 錯誤：遠端電腦上的 Microsoft Visual Studio 遠端偵錯監視以不同使用者執行
 titleSuffix: ''
 ms.custom: seodec18
 ms.date: 11/04/2016
@@ -21,14 +21,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 607369b4b10a98e9464a0ede15e2f9dce5fac5a9
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: b5ff383b279bbdac85ce85de6e65b857cec6a8e7
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63399153"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72737482"
 ---
-# <a name="error-the-microsoft-visual-studio-remote-debugging-monitor-on-the-remote-computer-is-running-as-a-different-user"></a>錯誤：遠端電腦上的 Microsoft Visual Studio 遠端偵錯監視，目前是以不同的使用者身分在執行
+# <a name="error-the-microsoft-visual-studio-remote-debugging-monitor-on-the-remote-computer-is-running-as-a-different-user"></a>錯誤：遠端電腦上的 Microsoft Visual Studio 遠端偵錯監視以不同使用者執行
 您可能會在嘗試進行遠端偵錯時，得到下列錯誤訊息：
 
  遠端電腦上的 Microsoft Visual Studio 遠端偵錯監視，目前是以不同的使用者身分在執行。
@@ -42,6 +42,6 @@ ms.locfileid: "63399153"
 > [!CAUTION]
 > 將進行連接的權限授與其他使用者，可能會意外連接至錯誤的遠端偵錯工作階段。 以 [非驗證] 模式進行偵錯非常不安全，請務必小心使用。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [遠端偵錯錯誤和疑難排解](../debugger/remote-debugging-errors-and-troubleshooting.md)
 - [Remote Debugging](../debugger/remote-debugging.md)

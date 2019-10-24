@@ -1,5 +1,5 @@
 ---
-title: 專案建置的組態 |Microsoft Docs
+title: 建立專案設定 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,51 +11,51 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fd9464105d777c0d488175ad67e1481022caa2d1
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 956449d1207a9831f9dd04a707fffe4b9b5a4221
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66328530"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72726038"
 ---
 # <a name="project-configuration-for-building"></a>建置的專案組態
-給定方案的方案組態的清單是由 [方案組態] 對話方塊中管理。
+給定解決方案的解決方案設定清單是由 [方案設定] 對話方塊所管理。
 
- 使用者可以建立額外的方案組態，各有自己唯一的名稱。 當使用者建立新的方案組態時，IDE 會預設為對應的組態名稱，在偵錯的專案中，如果不有任何對應的名稱。 使用者可以變更選取項目，以符合特定需求，如有必要。 唯一的例外狀況，此行為時，專案支援的組態，以符合新的方案組態的名稱。 例如，假設解決方案包含 Project1 和 Project2。 Project1 有偵錯、 零售版和 MyConfig1 的專案組態。 Project2 有偵錯、 零售版和 MyConfig2 的專案組態。
+ 使用者可以建立其他解決方案設定，每個設定都有自己的唯一名稱。 當使用者建立新的解決方案設定時，IDE 會預設為專案中對應的設定名稱，如果沒有對應的名稱存在，則為 Debug。 使用者可以視需要變更選取範圍，以符合特定需求。 只有當專案支援的設定符合新解決方案設定的名稱時，才會出現此行為的唯一例外狀況。 例如，假設方案包含 Project1 和 Project2。 Project1 有專案設定 Debug、Retail 和 MyConfig1。 Project2 有專案設定 Debug、Retail 和 MyConfig2。
 
- 如果使用者建立新的方案組態，名為 MyConfig2，Project1 預設繫結其偵錯組態的方案組態。 Project2 也預設會繫結其 MyConfig2 組態的方案組態。
-
-> [!NOTE]
-> 繫結是不區分大小寫。
-
- 當使用者選取**多重選取**項目在 [組態] 下拉式清單中，環境會顯示對話方塊，來提供可用的組態清單。
-
- ![多個組態](../../extensibility/internals/media/vsmultiplecfgs.gif "vsMultipleCfgs")多個組態
-
- 在此對話方塊中，使用者可以選取一或多個組態。 選取之後，顯示在 [屬性頁] 對話方塊上的屬性值會反映選取的組態值的交集。
-
- 請參閱[方案組態](../../extensibility/internals/solution-configuration.md)與新增和重新命名方案和專案的組態相關資訊。
-
- 專案相依性和建置順序是獨立的解決方案組態： 也就是您只能設定一個依存性方案中專案的所有的樹狀目錄。 以滑鼠右鍵按一下方案或專案，然後選取**專案相依性**或**專案建置順序**選項會開啟**專案相依性** 對話方塊。 您也可以開啟從**專案**功能表。
-
- ![專案相依性](../../extensibility/internals/media/vsprojdependencies.gif "vsProjDependencies")專案相依性
-
- 專案相依性會決定專案建置的順序。 使用對話方塊上的建置順序 索引標籤，來檢視專案的方案中建置及修改的建置順序使用 相依性 索引標籤的正確順序。
+ 如果使用者建立名為 MyConfig2 的新解決方案設定，Project1 預設會將其 Debug 設定系結至解決方案設定。 根據預設，Project2 也會將其 MyConfig2 設定系結至解決方案設定。
 
 > [!NOTE]
-> 由於明確的相依性所指定的環境已新增專案清單中的選取其核取方塊，但呈現暗灰色<xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildDependency>或<xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployDependency>介面，而且無法變更。 例如，將專案參考從[!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]到另一個專案的專案會自動將會移除它必須刪除參考的組建相依性。 無法選取其核取方塊已清除，而且會呈現暗灰色的專案，因為這樣會建立相依性迴圈 （比方說，會相依於 Project2 Project1 和 Project2 會相依於 Project1），這會停止組建。
+> 系結不區分大小寫。
 
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 建置程序包含一般的編譯和連結作業使用單一組建命令叫用。 也可支援兩個其他組建程序： 若要刪除所有輸出項目從某一個組建和最新的檢查，以判斷是否有變更輸出中的項目設定的清除作業。
+ 當使用者在 [設定] 下拉式清單中選取 [**多重選取**專案] 時，環境會顯示一個對話方塊，其中提供可用設定的清單。
 
-- <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg2> 物件會傳回相對應<xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildableProjectCfg>(從傳回<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg2.get_CfgType%2A>) 來管理其組建程序。 若要報告建立作業的狀態，它發生時，設定發出呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildStatusCallback>、 環境所實作的介面，以及任何其他物件有興趣建置狀態事件。
+ ![多個](../../extensibility/internals/media/vsmultiplecfgs.gif "vsMultipleCfgs")設定多個設定
 
- 建置後，組態設定可用來判斷可以執行偵錯工具的控制之下。 設定實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsDebuggableProjectCfg>以支援偵錯。
+ 在此對話方塊中，使用者可以選取一或多個設定。 選取之後，[屬性頁] 對話方塊上顯示的屬性值會反映所選設定的值交集。
 
- 在實作之後的專案相依性，您可以以程式設計方式處理透過 automation 模型的相依性。 您呼叫<xref:EnvDTE.SolutionBuild.BuildDependencies%2A>automation 模型中。 沒有任何可用的 VSIP API 層級介面允許直接操作方案建置 manager 組態和其屬性。
+ 如需新增和重新命名方案和專案之設定的相關資訊，請參閱[解決方案](../../extensibility/internals/solution-configuration.md)設定。
 
- 此外，您可以提供 [專案相依性] 視窗中的方格。 如需詳細資訊，請參閱 <<c0> [ 屬性顯示格線](../../extensibility/internals/properties-display-grid.md)。
+ 專案相依性和組建順序與方案設定無關：也就是說，您只能為方案中的所有專案設定一個相依性樹狀結構。 以滑鼠右鍵按一下方案或專案，然後選取 [**專案**相依性] 或 [**專案組建順序**] 選項，就會開啟 [**專案**相依性] 對話方塊。 也可以從 [**專案**] 功能表開啟。
 
-## <a name="see-also"></a>另請參閱
+ ![專案](../../extensibility/internals/media/vsprojdependencies.gif "vsProjDependencies")相依性專案相依性
+
+ 專案相依性會決定專案的建立順序。 使用對話方塊上的 [組建順序] 索引標籤，即可查看方案中的專案所建立的確切順序，並使用 [相依性] 索引標籤來修改組建順序。
+
+> [!NOTE]
+> 因為 <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildDependency> 或 <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployDependency> 介面所指定的明確相依性，所以環境會加入清單中已選取核取方塊但顯示為灰色的專案，而且無法變更。 例如，將專案參考從 [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] 專案新增至另一個專案時，會自動加入只能藉由刪除參考來移除的組建相依性。 因為這麼做會建立相依性迴圈（例如，Project1 會依存于 Project2，而 Project2 會相依于 Project1），所以無法選取核取方塊，因為這樣做會使組建停止。
+
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 組建套裝程式含使用單一 Build 命令叫用的一般編譯和連結作業。 也可以支援兩個其他組建程式：一種清除作業，用來刪除上一個組建中的所有輸出專案，以及最新的檢查，以判斷設定中的輸出專案是否已變更。
+
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg2> 物件會傳回對應的 <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildableProjectCfg> （從 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg2.get_CfgType%2A> 傳回）來管理其組建進程。 若要在發生組建作業時回報其狀態，設定會呼叫 <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildStatusCallback>、環境所執行的介面，以及任何對組建狀態事件感興趣的其他物件。
+
+ 建立之後，您可以使用設定設定來判斷是否可以在偵錯工具的控制項下執行它們。 設定會執行 <xref:Microsoft.VisualStudio.Shell.Interop.IVsDebuggableProjectCfg> 以支援調試。
+
+ 在執行專案相依性之後，您可以透過自動化模型以程式設計方式操作相依性。 您會在 automation 模型中呼叫 <xref:EnvDTE.SolutionBuild.BuildDependencies%2A>。 沒有可允許直接操作解決方案組建管理員設定及其屬性的 VSIP API 層級介面。
+
+ 此外，您可以在 [專案相依性] 視窗中提供方格。 如需詳細資訊，請參閱[屬性顯示格線](../../extensibility/internals/properties-display-grid.md)。
+
+## <a name="see-also"></a>請參閱
 - [管理組態選項](../../extensibility/internals/managing-configuration-options.md)
 - [用以管理部署的專案組態](../../extensibility/internals/project-configuration-for-managing-deployment.md)
 - [輸出的專案組態](../../extensibility/internals/project-configuration-for-output.md)

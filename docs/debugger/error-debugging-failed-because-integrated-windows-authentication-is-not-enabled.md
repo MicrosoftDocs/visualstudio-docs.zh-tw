@@ -1,5 +1,5 @@
 ---
-title: 錯誤：偵錯失敗，因為未啟用整合式的 Windows 驗證 |Microsoft Docs
+title: 錯誤：因為未啟用整合式 Windows 驗證，所以調試失敗 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 f1_keywords:
@@ -17,14 +17,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2969e5c6e8e3a5fd5612fa843309e36f0dbc4c9b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ca4b4ee5bb254f952fb6eb02e255320a337f657c
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62850847"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72737805"
 ---
-# <a name="error-debugging-failed-because-integrated-windows-authentication-is-not-enabled"></a>錯誤：偵錯失敗，原因是未啟用整合式 Windows 驗證
+# <a name="error-debugging-failed-because-integrated-windows-authentication-is-not-enabled"></a>錯誤：偵錯失敗，因為整合式 Windows 驗證沒有啟用
 因為驗證錯誤，所以無法對要求偵錯之使用者進行驗證。 這種情形可能會在您嘗試逐步執行 Web 應用程式或 XML Web Service 時發生。 造成這個錯誤的原因之一是未啟用整合式 Windows 驗證。 若要啟用該驗證，請遵循「若要啟用整合式 Windows 驗證」內所述的步驟進行。
 
  如果已經啟用整合式 Windows 驗證，但是仍然出現這個錯誤，可能是因為啟用 [Windows 網域伺服器的摘要式驗證]，所以造成這個錯誤。 在此情況下，您應該聯絡網路系統管理員。
@@ -67,7 +67,7 @@ ms.locfileid: "62850847"
 
 2. 如果您先前未開啟 [Windows 驗證] 和 [II6 管理相容性]，請遵循下列步驟來執行此動作：
 
-    1. 按一下 **開始**，按一下**控制台**，然後按一下 **程式**。
+    1. 依序按一下 [**開始**] 和 [**控制台**]，然後按一下 [**程式**]。
 
     2. 按一下 [程式和功能] 下的 [開啟或關閉 Windows 功能]。
 
@@ -113,7 +113,7 @@ ms.locfileid: "62850847"
 
 10. 關閉 [Internet Information Services (IIS) 管理員] 視窗。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [偵錯 Web 應用程式：錯誤和疑難排解](../debugger/debugging-web-applications-errors-and-troubleshooting.md)
 - [Microsoft Digest Authentication](http://go.microsoft.com/fwlink/?LinkId=77938) (Microsoft 摘要式驗證)
-- [執行 Windows Vista 與 IIS 7.0 上的 Web 應用程式與 Visual Studio](https://msdn.microsoft.com/Library/262a82ac-dd0e-4096-86c6-fb463e88be66)
+- [在 Windows Vista 上使用 IIS 7.0 和 Visual Studio 執行 Web 應用程式](https://msdn.microsoft.com/Library/262a82ac-dd0e-4096-86c6-fb463e88be66)

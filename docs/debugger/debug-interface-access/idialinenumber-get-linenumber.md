@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 77a1554e749e6f5186f7c99844cb793814b0129b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 726f5df7ff898675fc9253b47785c666d435a387
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839832"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743209"
 ---
-# <a name="idialinenumbergetlinenumber"></a>IDiaLineNumber::get_lineNumber
-擷取原始程式檔中的行號。
+# <a name="idialinenumberget_linenumber"></a>IDiaLineNumber::get_lineNumber
+抓取原始程式檔中的行號。
 
 ## <a name="syntax"></a>語法
 
@@ -33,10 +33,10 @@ HRESULT get_lineNumber ( 
 #### <a name="parameters"></a>參數
  `pRetVal`
 
-[out]傳回原始程式檔中的行號。
+脫銷傳回原始程式檔中的行號。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，會傳回 `S_OK`。 傳回`S_FALSE`不支援這個屬性，則為。 否則會傳回錯誤碼。
+ 如果成功，會傳回 `S_OK`。 如果不支援此屬性，則傳回 `S_FALSE`。 否則會傳回錯誤碼。
 
 ## <a name="example"></a>範例
 
@@ -46,5 +46,5 @@ DWORD linenum;
 pLine->get_lineNumber( &linenum );
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)
