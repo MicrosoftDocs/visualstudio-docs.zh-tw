@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 03607cec9b314f4f6e329a3150d097f8a2186705
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 28d9a7762cac1a63b40fa34118d4076403120763
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62838024"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741431"
 ---
 # <a name="idiastackwalkhelperframeforva"></a>IDiaStackWalkHelper::frameForVA
-擷取堆疊框架，其中包含指定的虛擬位址。
+抓取包含指定虛擬位址的堆疊框架。
 
 ## <a name="syntax"></a>語法
 
@@ -34,15 +34,15 @@ HRESULT frameForVA( 
 #### <a name="parameters"></a>參數
  `va`
 
-[in]框架資料虛擬位址。
+在框架資料的虛擬位址。
 
  `ppFrame`
 
-[out][IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)物件，代表堆疊框架，在指定的位址。
+脫銷代表位於指定位址之堆疊框架的[IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)物件。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
+ 如果成功，會傳回 `S_OK`;否則，會傳回錯誤碼。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)
 - [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)

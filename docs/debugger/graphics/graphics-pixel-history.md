@@ -1,5 +1,5 @@
 ---
-title: 圖形像素歷史記錄 |Microsoft Docs
+title: 圖形圖元歷史記錄 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -10,19 +10,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 23ada46a28d692daf238147ea07f34d440a99869
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 8cb1b7a869915eebc561e1baf47082dd5dbc00df
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63388593"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72735478"
 ---
 # <a name="graphics-pixel-history"></a>圖形像素歷史記錄
 Visual Studio 圖形診斷工具中的 [圖形像素歷史記錄] 視窗可幫助您了解在遊戲或應用程式的畫面格期間，Direct3D 事件對特定像素有何影響。
 
  這是 [像素歷史記錄] 視窗：
 
- ![包含在其歷程記錄中的三個 Direct3D 事件的像素。](media/gfx_diag_demo_pixel_history_orientation.png "gfx_diag_demo_pixel_history_orientation")
+ ![在其歷程記錄中有三個 Direct3D 事件的圖元。](media/gfx_diag_demo_pixel_history_orientation.png "gfx_diag_demo_pixel_history_orientation")
 
 ## <a name="understanding-the-pixel-history-window"></a>了解 [像素歷史記錄] 視窗
  使用 [像素歷史記錄]，即可分析在畫面格期間，Direct3D 事件對轉譯目標的特定像素有何影響。 您可以找出特定 Direct3D 事件的呈現問題，即使後續事件 (或相同事件中的後續基本項目) 繼續變更像素的最終色彩值也一樣。 例如，像素的呈現可能不正確，然後被另一個半透明的像素遮住，導致其色彩在畫面格緩衝區中混合在一起。 如果您只有呈現目標的最後內容可以引導您，這種問題會很難診斷。
@@ -74,6 +74,6 @@ Visual Studio 圖形診斷工具中的 [圖形像素歷史記錄] 視窗可幫�
 ### <a name="links-to-graphics-objects"></a>圖形物件連結
  若要了解像素歷史記錄中的圖形事件，您可能需要發生事件時的裝置狀態相關資訊，或是事件參考之 Direct3D 物件的相關資訊。 針對像素歷程記錄中的每個事件，[圖形像素歷程記錄] 都會提供「當時-目前」(then-current) 裝置狀態的連結，以及相關物件的連結。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [逐步解說：因裝置狀態而遺漏的物件](walkthrough-missing-objects-due-to-device-state.md)
-- [逐步解說：針對因著色而產生的顯示錯誤進行偵錯](walkthrough-debugging-rendering-errors-due-to-shading.md)
+- [逐步解說：偵錯因著色而產生的顯示錯誤](walkthrough-debugging-rendering-errors-due-to-shading.md)

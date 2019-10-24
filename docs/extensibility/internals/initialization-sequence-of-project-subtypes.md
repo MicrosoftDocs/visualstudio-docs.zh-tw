@@ -10,42 +10,42 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5f8b256e25bc9a63093d14eab50d7628c76558b9
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 678f704c73a39cdf2130d36fcfb1a74925dd89d1
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66349845"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72726882"
 ---
 # <a name="initialization-sequence-of-project-subtypes"></a>專案子類型的初始化順序
-環境呼叫的基底的 project factory 實作以建構專案<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CreateProject%2A>。 環境可讓您決定專案檔案的副檔名的專案類型 GUID 清單不是空白時，就會啟動專案子類型的建構。 此專案副檔名和專案 GUID 指定專案是否[!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]或[!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]專案類型。 比方說，.vbproj 副檔名和 {F184B08F-C81C-45F6-A57F-5ABD9991F28F} 識別[!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]專案。
+環境會藉由呼叫 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CreateProject%2A> 的基底專案 factory 來建立專案。 當環境判斷專案檔延伸模組的專案類型 GUID 清單不是空白時，就會啟動專案子類型的結構。 專案檔副檔名和專案 GUID 會指定專案為 [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] 或 [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] 專案類型。 例如，vbproj 副檔名和 {F184B08F-C81C-45F6-A57F-5ABD9991F28F} 可識別 [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] 專案。
 
-## <a name="environments-initialization-of-project-subtypes"></a>專案子類型的環境的初始設定
- 下列程序詳細資料的彙總多個專案子類型的專案系統的初始化順序。
+## <a name="environments-initialization-of-project-subtypes"></a>環境的專案子類型初始化
+ 下列程式詳述由多個專案子類型所匯總之專案系統的初始化順序。
 
-1. 環境呼叫基底的專案<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CreateProject%2A>，而專案剖析其專案檔探索彙總的專案類型 Guid 清單不是`null`。 在中止的專案中，執行直接建立它的專案。
+1. 環境會呼叫基底專案的 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CreateProject%2A>，而當專案剖析其專案檔時，會發現匯總專案類型 Guid 清單未 `null`。 專案會中止直接建立其專案。
 
-2. 此專案會呼叫`QueryService`上<xref:Microsoft.VisualStudio.Shell.Interop.SVsCreateAggregateProject>服務來建立專案子類型使用的環境實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsCreateAggregateProject.CreateAggregateProject%2A>方法。 這個方法內的環境可讓您實作遞迴函式呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProjectFactory.PreCreateForOuter%2A>，<xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProject.SetInnerProject%2A>和<xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProject.InitializeForOuter%2A>方法時，它會逐一查看清單中的專案類型 Guid，從最外層的專案子類型。
+2. 專案會呼叫 <xref:Microsoft.VisualStudio.Shell.Interop.SVsCreateAggregateProject> 服務上的 `QueryService`，以使用環境的 <xref:Microsoft.VisualStudio.Shell.Interop.IVsCreateAggregateProject.CreateAggregateProject%2A> 方法執行來建立專案子類型。 在此方法中，環境會在流覽專案類型 Guid 的清單（從最外層的專案子類型開始）時，對您的 <xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProjectFactory.PreCreateForOuter%2A>、<xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProject.SetInnerProject%2A> 和 <xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProject.InitializeForOuter%2A> 方法執行遞迴函式呼叫。
 
-     下列詳細資料的初始化步驟。
+     以下詳細說明初始化步驟。
 
-    1. 環境的實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsCreateAggregateProject.CreateAggregateProject%2A>方法呼叫`HrCreateInnerProj`和下列函式宣告的方法：
+    1. 環境的 <xref:Microsoft.VisualStudio.Shell.Interop.IVsCreateAggregateProject.CreateAggregateProject%2A> 方法的執行會使用下列函式宣告來呼叫 `HrCreateInnerProj` 方法：
 
-         \<CodeContentPlaceHolder>0</CodeContentPlaceHolder>
+         \<CodeContentPlaceHolder > 0 </CodeContentPlaceHolder>
 
-         當呼叫此函式是第一次，也就是最外層的專案子類型參數`pOuter`並`pOwner`會傳入`null`和函式會將最外層的專案子類型`IUnknown`來`pOuter`。
+         第一次呼叫此函式時（也就是最外層的專案子類型），`pOuter` 和 `pOwner` 的參數會以 `null` 的形式傳入，而函式會將最外層的專案子類型 `IUnknown` 設定為 `pOuter`。
 
-    2. 接下來會呼叫環境`HrCreateInnerProj`函式清單中的第二個專案類型 GUID。 此 GUID 對應至朝基底的專案中的彙總順序逐步執行的第二個內部專案子類型。
+    2. 接下來，環境會使用清單中的第二個專案類型 GUID 來呼叫 `HrCreateInnerProj` 函式。 此 GUID 對應至匯總序列中的基底專案逐步執行的第二個內部專案子類型。
 
-    3. `pOuter`現在會指向`IUnknown`最外層的專案子類型的並`HrCreateInnerProj`呼叫您實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProjectFactory.PreCreateForOuter%2A>後面接著呼叫您實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProject.SetInnerProject%2A>。 在 <xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProjectFactory.PreCreateForOuter%2A>您傳入的控制的方法`IUnknown`最外層的專案子類型的`pOuter`。 擁有的專案 （內部專案子類型），就必須建立它的彙總的專案物件。 在 <xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProject.SetInnerProject%2A>方法實作您所傳遞的指標`IUnknown`內部專案正在彙總。 這兩種方法建立彙總物件，並將您的實作必須遵循 COM 彙總規則，以確保專案子類型不結束設定保存至其本身的參考計數。
+    3. @No__t_0 現在指向最外層專案子類型的 `IUnknown`，`HrCreateInnerProj` 會呼叫您的 <xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProjectFactory.PreCreateForOuter%2A> 的執行，然後再呼叫您的 <xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProject.SetInnerProject%2A> 執行。 在 <xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProjectFactory.PreCreateForOuter%2A> 方法中，您會傳入最外層專案子類型的控制 `IUnknown`，`pOuter`。 擁有的專案（內部專案子類型）必須在這裡建立其匯總專案物件。 在 <xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProject.SetInnerProject%2A> 方法執行中，您會將指標傳入要匯總之內部專案的 `IUnknown`。 這兩種方法會建立匯總物件，而您的程式必須遵循 COM 匯總規則，以確保專案子類型不會最終將參考計數保存至其本身。
 
-    4. `HrCreateInnerProj` 呼叫您實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProjectFactory.PreCreateForOuter%2A>。 在這種方法，專案子類型會會其初始化工作。 您可以比方說，註冊方案中的事件<xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProject.InitializeForOuter%2A>。
+    4. `HrCreateInnerProj` 會呼叫您的 <xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProjectFactory.PreCreateForOuter%2A> 的執行。 在這個方法中，專案子類型會執行其初始化工作。 例如，您可以在 <xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProject.InitializeForOuter%2A> 中註冊方案事件。
 
-    5. `HrCreateInnerProj` 被稱為遞迴運作，直到清單中的最後一個 GUID （基底的專案） 為止。 針對每個這些呼叫中，會重複執行步驟，c 到 d。 `pOuter` 最外層的專案子類型會指向`IUnknown`彙總的每個層級。
+    5. `HrCreateInnerProj` 會以遞迴方式呼叫，直到到達清單中的最後一個 GUID （基底專案）為止。 針對每個呼叫，會重複執行 c 到 d 的步驟。 `pOuter` 指向每個匯總層級的最外層專案子類型 `IUnknown`。
 
 ## <a name="example"></a>範例
 
-下列範例詳細說明以程式設計方式的程序中的近似表示<xref:Microsoft.VisualStudio.Shell.Interop.IVsCreateAggregateProject.CreateAggregateProject%2A>方法，因為它藉由環境。 程式碼只是一個範例;它不是，編譯和錯誤的所有檢查已移除為了清楚起見。
+下列範例會詳細說明環境中所執行之 <xref:Microsoft.VisualStudio.Shell.Interop.IVsCreateAggregateProject.CreateAggregateProject%2A> 方法的近似標記法中的程式設計進程。 程式碼只是一個範例，它不適合進行編譯，而且為了清楚起見，所有錯誤檢查都已移除。
 
 ```cpp
 HRESULT CreateAggregateProject
@@ -131,7 +131,7 @@ HRESULT HrCreateInnerProj
 }
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - <xref:Microsoft.VisualStudio.Shell.Flavor>
 - [專案子類型](../../extensibility/internals/project-subtypes.md)

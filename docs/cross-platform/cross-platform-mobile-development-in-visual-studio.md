@@ -10,12 +10,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e82828296234b13e36b7d3eabf071071ebb708d
-ms.sourcegitcommit: 8a96a65676fd7a2a03b0803d7eceae65f3fa142b
+ms.openlocfilehash: 7d3df97bf8e180eae99e6ba27466fbde7a8466ad
+ms.sourcegitcommit: 57bc1c3887838d707c13feff72a677b3bad3be4b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72589023"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72777774"
 ---
 # <a name="cross-platform-mobile-development-in-visual-studio"></a>Visual Studio 中的跨平台行動裝置應用程式開發
 
@@ -33,7 +33,7 @@ ms.locfileid: "72589023"
 
 |**進一步了解**|
 |--------------------|
-|[安裝 Visual Studio](http://visualstudio.microsoft.com/products/visual-studio-community-vs) (VisualStudio.com)|
+|[安裝 Visual Studio](https://visualstudio.microsoft.com/vs/community/) (VisualStudio.com)|
 |[了解 Visual Studio 中的 Xamarin](https://visualstudio.microsoft.com/xamarin/) (VisualStudio.com)|
 |[Xamarin 行動應用程式開發文件](/xamarin/) |
 |[使用 Xamarin 應用程式進行 DevOps](/xamarin/tools/ci/devops/) |
@@ -108,9 +108,9 @@ ms.locfileid: "72589023"
 
 |**進一步了解**|
 |--------------------|
-|[安裝 Visual Studio](http://visualstudio.microsoft.com/products/visual-studio-community-vs) (VisualStudio.com)|
+|[安裝 Visual Studio](https://visualstudio.microsoft.com/vs/community/) (VisualStudio.com)|
 |[開始使用 Visual Studio Tools for Apache Cordova](/visualstudio/cross-platform/tools-for-cordova/)|
-|[了解 Visual Studio 的 Android 模擬器](http://visualstudio.microsoft.com/explore/msft-android-emulator-vs) (VisualStudio.com)|
+|[了解 Visual Studio 的 Android 模擬器](https://visualstudio.microsoft.com/vs/msft-android-emulator/) (VisualStudio.com)|
 
 ::: moniker-end
 
@@ -140,7 +140,7 @@ ms.locfileid: "72589023"
 
 |**進一步了解**|
 |--------------------|
-|[下載 Visual Studio](http://visualstudio.microsoft.com/products/visual-studio-community-vs) （VisualStudio.com）|
+|[下載 Visual Studio](https://visualstudio.microsoft.com/vs/community/) （VisualStudio.com）|
 |[使用安裝跨平臺行動開發C++](install-visual-cpp-for-cross-platform-mobile-development.md)|
 |[深入瞭解如何使用C++將目標設為多個平臺](https://visualstudio.microsoft.com/vs/cplusplus-mdd/)（VisualStudio.com）|
 |[安裝您需要的內容，然後建立適用于 Android 的原生活動應用程式](create-an-android-native-activity-app.md)|
@@ -163,8 +163,8 @@ ms.locfileid: "72589023"
 |[深入了解 Visual Studio Tools for Unity](../cross-platform/visual-studio-tools-for-unity.md) |
 |[開始使用 Visual Studio Tools for Unity](../cross-platform/getting-started-with-visual-studio-tools-for-unity.md) |
 |[了解 Visual Studio Tools for Unity 2.0 Preview 的最新增強功能](https://devblogs.microsoft.com/visualstudio/visual-studio-tools-for-unity-2-0-preview/) (Visual Studio 部落格)|
-|[觀賞 Visual Studio Tools for Unity 2.0 Preview 的介紹影片](http://www.bing.com/videos/search?q=visual+studio+tools+for+unity&qs=n&form=QBVLPG&pq=visual+studio+tools+for+unity&sc=6-29&sp=-1&sk=#view=detail&mid=0A13177F0BC7463A24080A13177F0BC7463A2408) (影片)|
-|[了解 Unity](http://unity3d.com/) (Unity 網站)|
+|[觀賞 Visual Studio Tools for Unity 2.0 Preview 的介紹影片](https://www.bing.com/videos/search?q=visual+studio+tools+for+unity&qs=n&form=QBVLPG&pq=visual+studio+tools+for+unity&sc=6-29&sp=-1&sk=#view=detail&mid=0A13177F0BC7463A24080A13177F0BC7463A2408) (影片)|
+|[了解 Unity](https://unity.com/) (Unity 網站)|
 
 ## <a name="see-also"></a>請參閱
 

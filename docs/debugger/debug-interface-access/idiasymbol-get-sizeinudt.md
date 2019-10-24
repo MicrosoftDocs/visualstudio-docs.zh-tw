@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b0fa2172d1a56fb7b4730a51959c0b73bdfc9461
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: a87f6e6ea3118aa7c278bc83a69a290176b267c9
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "62835901"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739338"
 ---
-# <a name="idiasymbolgetsizeinudt"></a>IDiaSymbol::get_sizeInUdt
-擷取的使用者定義型別之成員的大小。
+# <a name="idiasymbolget_sizeinudt"></a>IDiaSymbol::get_sizeInUdt
+抓取使用者定義類型的成員大小。
 
 ## <a name="syntax"></a>語法
 
@@ -30,10 +30,10 @@ HRESULT get_sizeInUdt(
 #### <a name="parameters"></a>參數
  `pRetVal`
 
-[out]指標`DWORD`指定成員的大小。
+脫銷指定成員大小之 `DWORD` 的指標。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，則傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。
+ 如果成功，會傳回 `S_OK`;否則，會傳回 `S_FALSE` 或錯誤碼。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

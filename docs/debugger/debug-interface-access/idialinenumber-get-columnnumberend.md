@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 567df436093b53432e44e21fb96f0d092b71c81d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4433bc243a7a4f5352f0476370853572be8ddd38
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839845"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743239"
 ---
-# <a name="idialinenumbergetcolumnnumberend"></a>IDiaLineNumber::get_columnNumberEnd
-擷取運算式或陳述式的結束位置的以一為基的來源資料行編號。
+# <a name="idialinenumberget_columnnumberend"></a>IDiaLineNumber::get_columnNumberEnd
+抓取運算式或語句結束的以一為基底的來來源資料行編號。
 
 ## <a name="syntax"></a>語法
 
@@ -33,13 +33,13 @@ HRESULT get_columnNumberEnd ( 
 #### <a name="parameters"></a>參數
  `pRetVal`
 
-[out]傳回的資料行編號的運算式或陳述式的結束位置。 如果值為零，則不存在的資料行結尾資訊。
+脫銷傳回運算式或語句結束的資料行編號。 如果值為零，則資料行結束資訊不存在。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，會傳回 `S_OK`。 傳回`S_FALSE`不支援這個屬性，則為。 否則會傳回錯誤碼。
+ 如果成功，會傳回 `S_OK`。 如果不支援此屬性，則傳回 `S_FALSE`。 否則會傳回錯誤碼。
 
 ## <a name="remarks"></a>備註
- 這個方法所傳回的資料行值會位移位置的行之後的一行中的陳述式的最後一個字元的位元組。
+ 這個方法所傳回的資料行值，是行上語句最後一個字元之後的位置的位元組位移。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)

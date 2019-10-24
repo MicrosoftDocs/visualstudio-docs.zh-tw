@@ -10,18 +10,18 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: be793e5cc4db30fa410e0218a7f780b6c2826838
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 4f1e1479232a684758359de7527f0c2fc9990cc7
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66324603"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72722086"
 ---
 # <a name="using-the-automation-model"></a>使用 Automation 模型
-您已經連接 VSPackage 自動化之後，您可以藉由呼叫取得的屬性和方法<xref:EnvDTE.DTEClass.GetObject%2A>方法<xref:EnvDTE._DTE>物件，並傳遞字串，表示您想要擷取的物件。
+將 VSPackage 連接至自動化之後，您可以在 <xref:EnvDTE._DTE> 物件上呼叫 <xref:EnvDTE.DTEClass.GetObject%2A> 方法來取得屬性和方法，傳遞代表您要抓取之物件的字串。
 
 ## <a name="obtaining-project-objects"></a>取得專案物件
- 以下是兩個程式碼範例示範如何自動化取用者會取得專案 automation 物件。 如需有關如何取得 DTE 物件的資訊，請參閱[How to:取得參考至 DTE 和 DTE2 物件](https://msdn.microsoft.com/Library/c92e3c8e-82e6-4a67-85da-e43c50ffd8e4)。
+ 以下是兩個程式碼範例，示範自動化取用者如何取得專案自動化物件。 如需如何取得 DTE 物件的詳細資訊，請參閱[如何：取得 dte 和 DTE2 物件的參考](https://msdn.microsoft.com/Library/c92e3c8e-82e6-4a67-85da-e43c50ffd8e4)。
 
 ```vb
 Sub DoAutomation()
@@ -43,9 +43,9 @@ void DoAutomation(void)
 
 ```
 
- 此時，您可以使用標準專案的物件屬於特定 VSPackage 也可以下移階層的模型。
+ 此時，您可以使用屬於特定 VSPackage 之一部分的標準專案物件，在階層模型中向下移動。
 
- 下列程式碼範例示範如何取得自訂專案類型的屬性的自訂物件。:
+ 下列程式碼範例示範如何取得做為自訂專案類型之屬性的自訂物件：
 
 ```vb
 Dim MyPrj As Project
@@ -58,7 +58,7 @@ objMyObject = MyPrj.Object 'You call .Object to get to special Project
 objMyObject.MySpecialMethodOrProperty
 ```
 
- 下列程式碼會列出所有的屬性名稱[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]環境**一般**選項**工具**功能表：
+ 下列程式碼會列出 [**工具**] 功能表上 [[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 環境] **[一般**] 選項中所有屬性的名稱：
 
 ```vb
 dim objDTE
@@ -71,5 +71,5 @@ Next
 
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - <xref:EnvDTE.DTEClass.GetObject%2A>

@@ -11,16 +11,16 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - multiple
-ms.openlocfilehash: 648d00cd59d056e0874c91338a39667088d93e2e
-ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
+ms.openlocfilehash: 071c16267486e1dda1e183cad3c488345974a3cc
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72018440"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745929"
 ---
 # <a name="sample-c-project-for-code-analysis"></a>用於程式碼分析的 C++ 專案範例
 
-下列程序會示範如何建立[逐步解說：分析 C/C++ 程式碼的缺失](../code-quality/walkthrough-analyzing-c-cpp-code-for-defects.md)範例。 這些程序會建立：
+下列程式示範如何建立[逐步解說：分析 C/C++程式碼是否有瑕疵](../code-quality/walkthrough-analyzing-c-cpp-code-for-defects.md)的範例。 這些程序會建立：
 
 - 名為 CppDemo 的 Visual Studio 解決方案。
 
@@ -34,7 +34,7 @@ ms.locfileid: "72018440"
 
 1. 按一下 [檔案] 功能表，指向 [新增]，然後按一下 [新增專案]。
 
-2. 在 [專案類型] 樹狀清單中，如果 Visual C++ 不是您的預設語言，請在 VS 中展開 [其他語言]。
+2. 在 [**專案類型**] 樹狀清單中C++ ，如果不是 VS [展開**其他語言**] 中的預設語言。
 
 3. 展開 [Visual C++]，然後按一下 [一般]。
 

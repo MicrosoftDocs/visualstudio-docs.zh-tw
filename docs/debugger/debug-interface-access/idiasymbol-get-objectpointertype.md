@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_objectpointertype |Microsoft Docs'
+title: IDiaSymbol：： get_objectPointerType |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 69dac79a040a8eff68c36c82b9a85935d969b5ec
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: e4254a121ce29578438f4ee7264345aa30bafd7e
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64808911"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739613"
 ---
-# <a name="idiasymbolgetobjectpointertype"></a>IDiaSymbol::get_objectPointerType
-擷取類別方法的物件指標的類型。
+# <a name="idiasymbolget_objectpointertype"></a>IDiaSymbol::get_objectPointerType
+抓取類別方法之物件指標的類型。
 
 ## <a name="syntax"></a>語法
 
@@ -33,17 +33,17 @@ HRESULT get_objectPointerType ( 
 #### <a name="parameters"></a>參數
  `pRetVal`
 
-[out]傳回[IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)物件，表示類別方法的物件指標。
+脫銷傳回代表類別方法之物件指標的[IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)物件。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，則傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。
+ 如果成功，會傳回 `S_OK`;否則，會傳回 `S_FALSE` 或錯誤碼。
 
 > [!NOTE]
-> 傳回值為`S_FALSE`表示此屬性不適用於符號。
+> @No__t_0 的傳回值表示該屬性不適用於符號。
 
 ## <a name="remarks"></a>備註
- 這個屬性只適用於具有符號[SymTagEnum 列舉](../../debugger/debug-interface-access/symtagenum.md)種`SymTagFunctionType`。
+ 這個屬性只適用于[SymTagEnum 列舉](../../debugger/debug-interface-access/symtagenum.md)類型為 `SymTagFunctionType` 的符號。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
 - [SymTagEnum 列舉](../../debugger/debug-interface-access/symtagenum.md)

@@ -17,20 +17,20 @@ dev_langs:
 - jsharp
 - C++
 helpviewer_keywords:
-- MSBuild (Visual C++), LIB task
-- LIB task (MSBuild (Visual C++))
+- MSBuild (C++), LIB task
+- LIB task (MSBuild (C++))
 ms.assetid: e062c7f9-cc69-4a83-9361-1bb5355e5fe8
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0c9d80da9fea46ddcc2afe2f935fa66a892d90c1
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: aa43cef2176d9b2197e16b46a50e153da135502e
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71254540"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748100"
 ---
 # <a name="lib-task"></a>LIB 工作
 包裝 Microsoft 32 位元程式庫管理員工具 *lib.exe*。 程式庫管理員會建立並管理通用物件檔案格式 (COFF) 物件檔的程式庫。 程式庫管理員也可以建立匯出檔和匯入程式庫，以參考匯出的定義。 如需詳細資訊，請參閱 [LIB 參考](/cpp/build/reference/lib-reference)和[執行 LIB](/cpp/build/reference/running-lib)。
@@ -65,5 +65,5 @@ ms.locfileid: "71254540"
 |**UseUnicodeResponseFiles**|選擇性的 **Boolean** 參數。<br /><br /> 如果是 `true`，會指示專案系統在管理員繁衍時產生 UNICODE 回應檔。 在專案中的檔案具有 UNICODE 路徑時指定 `true`。|
 |**Verbose**|選擇性的 **Boolean** 參數。<br /><br /> 如果是 `true`，會顯示工作階段進度的詳細資料，其中包括所新增之 *.obj* 檔的名稱。 資訊會傳送至標準輸出，並且可重新導向至檔案。<br /><br /> 如需詳細資訊，請參閱[執行 LIB](/cpp/build/reference/running-lib) 中的 **/VERBOSE** 選項。|
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [工作參考](../msbuild/msbuild-task-reference.md)

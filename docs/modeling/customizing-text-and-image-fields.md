@@ -7,12 +7,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 04cd8d1eb94ba488b621fb30f9ac598ce9c71722
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 9d3a3e1995dbc36b02d90da6343e8cc9a6d48eba
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653984"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748443"
 ---
 # <a name="customizing-text-and-image-fields"></a>自訂文字和影像欄位
 當您在圖形中定義文字裝飾專案時，它會以文字欄位表示。 如需 TextFields 和其他在 mapcontrol.shapefields 初始化的範例，請檢查 DSL 解決方案中的 Dsl\GeneratedCode\Shapes.cs。
@@ -170,7 +170,7 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 ## <a name="style-sets"></a>樣式設定
  上述範例顯示如何將文字欄位變更為任何可用的字型。 不過，較理想的方法是將它變更為與圖形或應用程式相關聯的一組樣式之一。 若要這麼做，您可以覆寫 <xref:Microsoft.VisualStudio.Modeling.Diagrams.TextField.GetFontId%2A> 或 GetTextBrushId （）。
 
- 或者，請考慮藉由覆寫 <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.InitializeResources%2A> 來變更圖形的樣式設定。 這會影響變更所有圖形欄位的字型和筆刷。
+ 或者，請考慮藉由覆寫 <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.InitializeResources%2A>來變更圖形的樣式設定。 這會影響變更所有圖形欄位的字型和筆刷。
 
 ## <a name="customizing-image-fields"></a>自訂影像欄位
  當您在圖形中定義影像裝飾專案，以及定義影像圖形時，圖形的顯示區域是由 ImageField 所管理。 如需 ImageFields 和其他在 mapcontrol.shapefields 初始化的範例，請檢查 DSL 解決方案中的 Dsl\GeneratedCode\Shapes.cs。

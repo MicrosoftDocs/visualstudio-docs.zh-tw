@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 44f715c4f74d9b120b324e2d68417a24c9b42684
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 20b0c9dd106e5744a369ddaa6cb870788f7464d3
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62854826"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72738558"
 ---
 # <a name="stackframetypeenum"></a>StackFrameTypeEnum
-指定的堆疊框架的類型。
+指定堆疊框架類型。
 
 ## <a name="syntax"></a>語法
 
@@ -36,24 +36,24 @@ enum StackFrameTypeEnum {
 ```
 
 ## <a name="elements"></a>項目
-`FrameTypeFPO` 框架指標省略;FPO 資訊可用。
+省略 `FrameTypeFPO` 框架指標;可用的 FPO 資訊。
 
-`FrameTypeTrap` 核心設陷框架。
+`FrameTypeTrap` 核心陷阱框架。
 
-`FrameTypeTSS` 核心設陷框架。
+`FrameTypeTSS` 核心陷阱框架。
 
-`FrameTypeStandard` 標準的 EBP 堆疊框架。
+`FrameTypeStandard` 標準 EBP 堆疊框架。
 
-`FrameTypeFrameData` 框架指標省略;畫面格的資料可用的資訊。
+省略 `FrameTypeFrameData` 框架指標;可用的畫面格資料資訊。
 
-`FrameTypeUnknown` 沒有任何偵錯資訊的框架。
+沒有任何偵錯工具資訊的 `FrameTypeUnknown` 框架。
 
 ## <a name="remarks"></a>備註
-這個列舉型別中的值會傳回呼叫[idiastackframe:: Get_type](../../debugger/debug-interface-access/idiastackframe-get-type.md)方法。
+這個列舉中的值是由呼叫[IDiaStackFrame：： get_type](../../debugger/debug-interface-access/idiastackframe-get-type.md)方法所傳回。
 
 ## <a name="requirements"></a>需求
-標頭： cvconst.h
+標頭： cvconst。h
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [列舉和結構](../../debugger/debug-interface-access/enumerations-and-structures.md)
 - [IDiaStackFrame::get_type](../../debugger/debug-interface-access/idiastackframe-get-type.md)

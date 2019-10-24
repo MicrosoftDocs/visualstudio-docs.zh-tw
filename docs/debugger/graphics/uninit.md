@@ -8,15 +8,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8165b2e1993a6ea52127536a058f662e1a3d92cc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ef809b646a0af58e46b8c68dc5a8cf7633692bcc
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62848728"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72734824"
 ---
 # <a name="uninit"></a>UnInit
-完成的圖形記錄檔、 關閉，並釋出應用程式的作用中記錄的圖形資訊時所使用的資源。
+完成圖形記錄檔，將其關閉，並釋放應用程式主動記錄圖形資訊時所使用的資源。
 
 ## <a name="syntax"></a>語法
 
@@ -25,9 +25,9 @@ void UnInit();
 ```
 
 ## <a name="remarks"></a>備註
- `UnInit` 執行個體時自動呼叫`VsgDbg`終結類別之前。 如果`VsgDbg`執行個體所未主動記錄圖形資訊，這沒有任何作用。
+ 當終結 `VsgDbg` 類別的實例時，會自動呼叫 `UnInit`。 如果 `VsgDbg` 實例並未主動記錄圖形資訊，就不會有任何作用。
 
- 之後`UnInit`的執行個體上呼叫`VsgDbg`類別，新的圖形記錄檔可由呼叫`Init`並完成藉由呼叫`UnInit`。 您可以重複此步驟為您想要使用相同的多次`VsgDbg`來建立數個獨立的圖形記錄檔的執行個體。
+ 在 `VsgDbg` 類別的實例上呼叫 `UnInit` 之後，可以藉由呼叫 `Init` 來建立新的圖形記錄檔，並藉由呼叫 `UnInit` 來完成。 您可以多次重複此動作，因為您想要使用相同的 `VsgDbg` 實例來建立數個獨立的圖形記錄檔。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [Init](init.md)

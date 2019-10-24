@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: db06efe400106260556d8eab5fd644bbfc27f0c2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e20fa21d739c79dad94a8445f6d0fe811337fd40
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62833615"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72744555"
 ---
 # <a name="idiaenumframedata"></a>IDiaEnumFrameData
-列舉各種資料來源中包含的框架資料項目。
+列舉資料來源中包含的各種框架資料元素。
 
 ## <a name="syntax"></a>語法
 
@@ -29,27 +29,27 @@ IDiaEnumFrameData : IUnknown
 ```
 
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法
-下表顯示的方法`IDiaEnumFrameData`。
+下表顯示 `IDiaEnumFrameData` 的方法。
 
 |方法|描述|
 |------------|-----------------|
-|[IDiaEnumFrameData::get__NewEnum](../../debugger/debug-interface-access/idiaenumframedata-get-newenum.md)|擷取`IEnumVARIANT Interface`這個列舉值的版本。|
-|[IDiaEnumFrameData::get_Count](../../debugger/debug-interface-access/idiaenumframedata-get-count.md)|擷取畫面格的資料元素的數目。|
-|[IDiaEnumFrameData::Item](../../debugger/debug-interface-access/idiaenumframedata-item.md)|透過索引中擷取的畫面格的資料元素。|
-|[IDiaEnumFrameData::Next](../../debugger/debug-interface-access/idiaenumframedata-next.md)|擷取框架資料元素，列舉序列中指定的數目。|
-|[IDiaEnumFrameData::Skip](../../debugger/debug-interface-access/idiaenumframedata-skip.md)|略過指定的數目的畫面格的資料序列中項目的列舉型別。|
-|[IDiaEnumFrameData::Reset](../../debugger/debug-interface-access/idiaenumframedata-reset.md)|將列舉型別序列重設到開頭。|
-|[IDiaEnumFrameData::Clone](../../debugger/debug-interface-access/idiaenumframedata-clone.md)|建立列舉值，包含目前的列舉值相同的列舉型別狀態。|
-|[IDiaEnumFrameData::frameByRVA](../../debugger/debug-interface-access/idiaenumframedata-framebyrva.md)|傳回相對虛擬位址 (RVA) 在範圍內。|
-|[IDiaEnumFrameData::frameByVA](../../debugger/debug-interface-access/idiaenumframedata-framebyva.md)|傳回在範圍內的虛擬位址 (VA)。|
+|[IDiaEnumFrameData::get__NewEnum](../../debugger/debug-interface-access/idiaenumframedata-get-newenum.md)|抓取此列舉值的 `IEnumVARIANT Interface` 版本。|
+|[IDiaEnumFrameData::get_Count](../../debugger/debug-interface-access/idiaenumframedata-get-count.md)|抓取框架資料元素的數目。|
+|[IDiaEnumFrameData::Item](../../debugger/debug-interface-access/idiaenumframedata-item.md)|藉由索引來抓取框架資料元素。|
+|[IDiaEnumFrameData::Next](../../debugger/debug-interface-access/idiaenumframedata-next.md)|抓取列舉序列中指定數目的框架資料元素。|
+|[IDiaEnumFrameData::Skip](../../debugger/debug-interface-access/idiaenumframedata-skip.md)|略過列舉序列中指定數目的框架資料元素。|
+|[IDiaEnumFrameData::Reset](../../debugger/debug-interface-access/idiaenumframedata-reset.md)|將列舉序列重設為開頭。|
+|[IDiaEnumFrameData::Clone](../../debugger/debug-interface-access/idiaenumframedata-clone.md)|建立枚舉器，其中包含與目前列舉值相同的列舉狀態。|
+|[IDiaEnumFrameData::frameByRVA](../../debugger/debug-interface-access/idiaenumframedata-framebyrva.md)|依相對虛擬位址（RVA）傳回框架。|
+|[IDiaEnumFrameData::frameByVA](../../debugger/debug-interface-access/idiaenumframedata-framebyva.md)|依虛擬位址（VA）傳回框架。|
 
 ## <a name="remarks"></a>備註
 
-## <a name="notes-for-callers"></a>呼叫端資訊
-取得從這個介面[idiasession:: Getenumtables](../../debugger/debug-interface-access/idiasession-getenumtables.md)方法。 請參閱詳細資料的範例。
+## <a name="notes-for-callers"></a>呼叫者的注意事項
+從[IDiaSession：： getEnumTables](../../debugger/debug-interface-access/idiasession-getenumtables.md)方法取得此介面。 如需詳細資訊，請參閱範例。
 
 ## <a name="example"></a>範例
-此範例示範如何取得 (`GetEnumFrameData`函式)，並使用 (`ShowFrameData`函式)`IDiaEnumFrameData`介面。 請參閱[IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)介面的範例`PrintFrameData`函式。
+這個範例會示範如何取得（`GetEnumFrameData` 函式），並使用（`ShowFrameData` 函式） `IDiaEnumFrameData` 介面。 如需 `PrintFrameData` 函式的範例，請參閱[IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)介面。
 
 ```C++
 
@@ -101,13 +101,13 @@ void ShowFrameData(IDiaSession *pSession)
 ```
 
 ## <a name="requirements"></a>需求
-**標頭：** dia2.h
+**標頭：** Dia2。h
 
-**程式庫：** diaguids.lib
+連結**庫：** diaguids
 
-**DLL:** msdia80.dll
+**Dll：** msdia80
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [介面 (偵錯介面存取 SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
 - [IDiaSession::getEnumTables](../../debugger/debug-interface-access/idiasession-getenumtables.md)
 - [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)

@@ -12,15 +12,15 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1329f847f7f961bf4c792cbdf7f40f8f04b1694c
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 30b2928653507b670160c72ca3ce09a0227a4170
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66338723"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72720760"
 ---
 # <a name="sccrename-function"></a>SccRename 函式
-此函式會將檔案重新命名原始檔控制系統中。
+此函式會重新命名原始檔控制系統中的檔案。
 
 ## <a name="syntax"></a>語法
 
@@ -34,38 +34,38 @@ SCCRTN SccRename(
 ```
 
 #### <a name="parameters"></a>參數
- pvContext
+ pvCoNtext
 
-[in]原始檔控制外掛程式的內容結構。
+在原始檔控制外掛程式的內容結構。
 
  hWnd
 
-[in]原始檔控制外掛程式時，可以使用當做父代上，它會提供任何對話方塊 IDE 視窗的控制代碼。
+在IDE 視窗的控制碼，原始檔控制外掛程式可以使用它所提供之任何對話方塊的父系。
 
  lpFileName
 
-[in]正在重新命名之檔案的完整的檔案名稱。
+在要重新命名之檔案的完整檔案名。
 
  lpNewName
 
-[in]完整的新名稱。 如果不同的目錄路徑，然後移動檔案從一個子目錄到另一個。
+在完整的新名稱。 如果目錄路徑不同，則檔案已從一個子目錄移到另一個。
 
 ## <a name="return-value"></a>傳回值
- 此函式的原始檔控制外掛程式實作應該會傳回下列值之一：
+ 此函式的原始檔控制外掛程式執行應會傳回下列其中一個值：
 
 |值|描述|
 |-----------|-----------------|
-|SCC_OK|重新命名作業已順利完成。|
-|SCC_E_PROJNOTOPEN|無法開啟原始檔控制下的專案。|
-|SCC_E_FILENOTCONTROLLED|檔案不是原始檔控制之下。|
-|SCC_E_ACCESSFAILURE|發生問題，存取原始檔控制系統，可能是因為網路或競爭問題。|
-|SCC_E_NOTAUTHORIZED|使用者無權完成此作業。|
-|SCC_E_COULDNOTCREATEPROJECT|重新命名的程序的一部分，無法建立專案。|
-|SCC_E_OPNOTPERFORMED|未執行此作業。|
-|SCC_E_NONSPECIFICERROR|發生未指定或一般錯誤。|
+|SCC_OK|重新命名作業已成功完成。|
+|SCC_E_PROJNOTOPEN|專案未在原始檔控制下開啟。|
+|SCC_E_FILENOTCONTROLLED|檔案不在原始檔控制之下。|
+|SCC_E_ACCESSFAILURE|存取原始檔控制系統時發生問題，可能是因為網路或競爭問題。|
+|SCC_E_NOTAUTHORIZED|使用者未獲授權，無法完成此操作。|
+|SCC_E_COULDNOTCREATEPROJECT|無法在重新命名過程中建立專案。|
+|SCC_E_OPNOTPERFORMED|未執行操作。|
+|SCC_E_NONSPECIFICERROR|發生未指定或一般的錯誤。|
 
 ## <a name="remarks"></a>備註
- 此函式可用來重新命名檔案，或它從一個位置移到另一個原始檔控制系統中。 原始檔控制外掛程式不應嘗試存取磁碟上的檔案。 是 IDE 的責任，將本機檔案重新命名。
+ 此函式可以用來重新命名檔案，或在原始檔控制系統中將檔案移到另一個位置。 原始檔控制外掛程式不應嘗試存取磁片上的檔案。 IDE 會負責重新命名本機檔案。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [原始檔控制外掛程式 API 函式](../extensibility/source-control-plug-in-api-functions.md)

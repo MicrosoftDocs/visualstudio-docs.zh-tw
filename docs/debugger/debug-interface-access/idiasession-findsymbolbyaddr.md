@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fcbe9e97eb429fa7427ae0e3da4dce77281b40a0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ae0bab8ec0561b65c22890c0e0bbfeb461364b5c
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839260"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742056"
 ---
 # <a name="idiasessionfindsymbolbyaddr"></a>IDiaSession::findSymbolByAddr
-擷取指定的符號類型包含此項目，或最接近，指定的位址。
+抓取指定的符號類型，其中包含或最接近指定的位址。
 
 ## <a name="syntax"></a>語法
 
@@ -36,22 +36,22 @@ HRESULT findSymbolByAddr ( 
 #### <a name="parameters"></a>參數
  `isect`
 
-[in]指定位址的區段元件。
+在指定位址的區段元件。
 
  `offset`
 
-[in]指定的位址位移的元件。
+在指定位址的位移元件。
 
  `symtag`
 
-[in]若要找的符號類型。 值取自[SymTagEnum 列舉](../../debugger/debug-interface-access/symtagenum.md)列舉型別。
+在要尋找的符號類型。 值取自[SymTagEnum 列舉](../../debugger/debug-interface-access/symtagenum.md)列舉。
 
  `ppSymbol`
 
-[out]傳回[IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)擷取表示符號的物件。
+脫銷傳回代表所抓取符號的[IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)物件。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
+ 如果成功，會傳回 `S_OK`;否則，會傳回錯誤碼。
 
 ## <a name="example"></a>範例
 
@@ -60,7 +60,7 @@ IDiaSymbol* pFunc;
 pSession->findSymbolByAddr( isect, offset, SymTagFunction, &pFunc );
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [IDiaSession](../../debugger/debug-interface-access/idiasession.md)
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
 - [SymTagEnum 列舉](../../debugger/debug-interface-access/symtagenum.md)

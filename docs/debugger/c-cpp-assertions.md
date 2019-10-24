@@ -28,12 +28,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 154abe3d73fa71ac897f0442697196cd859f32bd
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: 9e2e6d69e4c621d6be81a00a61482b71199bc0fc
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72435900"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745748"
 ---
 # <a name="cc-assertions"></a>C/C++ 判斷提示
 判斷提示語句會指定您在程式中的某個時間點預期為 true 的條件。 如果該條件不是 true，判斷提示就會失敗，程式的執行會中斷，而且 [判斷提示[失敗] 對話方塊](../debugger/assertion-failed-dialog-box.md)隨即出現。
@@ -81,7 +81,7 @@ Visual Studio 支援C++以下列結構為基礎的判斷提示語句：
 [本主題內容](#BKMK_In_this_topic)
 
 ## <a name="BKMK_Assertions_in_Debug_and_Release_builds"></a>Debug 和 Release 組建中的判斷提示
-只有在定義 `_DEBUG` 時，判斷提示語句才會編譯。 否則，編譯器會將判斷提示視為 null 語句。 因此，判斷提示語句不會在您的最終發行程式中提供任何額外負荷或效能成本，並可讓您避免使用 `#ifdef` 的指示詞。
+只有在定義了 `_DEBUG` 時，判斷提示語句才會編譯。 否則，編譯器會將判斷提示視為 null 語句。 因此，判斷提示語句不會在您的最終發行程式中提供任何額外負荷或效能成本，並可讓您避免使用 `#ifdef` 的指示詞。
 
 ## <a name="BKMK_Side_effects_of_using_assertions"></a>使用判斷提示的副作用
 當您將判斷提示加入至您的程式碼時，請確定判斷提示不會有副作用。 例如，請考慮下列修改 `nM` 值的判斷提示：
@@ -108,12 +108,12 @@ CRTDBG.H 裡。H 標頭檔定義判斷提示檢查的[_ASSERT 和 _ASSERTE 宏](
 
 | 巨集 | 結果 |
 |------------| - |
-| `_ASSERT` | 如果指定的運算式評估為 FALSE，則為 `_ASSERT` 的檔案名和行號。 |
-| `_ASSERTE` | 與 `_ASSERT` 相同，再加上所判斷運算式的字串表示。 |
+| `_ASSERT` | 如果指定的運算式評估為 FALSE，則為 `_ASSERT`的檔案名和行號。 |
+| `_ASSERTE` | 與 `_ASSERT`相同，再加上所判斷運算式的字串表示。 |
 
-`_ASSERTE` 的功能更強大，因為它會報告已被視為 FALSE 的判斷提示運算式。 這可能足以識別問題，而不需要參考原始程式碼。 不過，應用程式的 Debug 版本將會包含使用 `_ASSERTE` 判斷提示之每個運算式的字串常數。 如果您使用許多 @no__t 0 宏，這些字串運算式會佔用大量的記憶體。 如果這種情況證明有問題，請使用 `_ASSERT` 來節省記憶體。
+`_ASSERTE` 的功能更強大，因為它會報告已關閉為 FALSE 的判斷提示運算式。 這可能足以識別問題，而不需要參考原始程式碼。 不過，您應用程式的 Debug 版本將會包含使用 `_ASSERTE` 判斷提示之每個運算式的字串常數。 如果您使用許多 `_ASSERTE` 宏，這些字串運算式會佔用大量的記憶體。 如果這種情況證明有問題，請使用 `_ASSERT` 來節省記憶體。
 
-當定義 `_DEBUG` 時，`_ASSERTE` 巨集定義如下：
+定義 `_DEBUG` 時，`_ASSERTE` 巨集定義如下：
 
 ```cpp
 #define _ASSERTE(expr) \
@@ -124,7 +124,7 @@ CRTDBG.H 裡。H 標頭檔定義判斷提示檢查的[_ASSERT 和 _ASSERTE 宏](
     } while (0)
 ```
 
-如果判斷提示運算式評估為 FALSE，則會呼叫[_CrtDbgReport](/cpp/c-runtime-library/reference/crtdbgreport-crtdbgreportw)來報告判斷提示失敗（預設使用訊息對話方塊）。 如果您在 [訊息] 對話方塊中選擇 [**重試**]，`_CrtDbgReport` 會傳回1，而 `_CrtDbgBreak` 則會透過 `DebugBreak` 呼叫偵錯工具。
+如果判斷提示運算式評估為 FALSE，則會呼叫[_CrtDbgReport](/cpp/c-runtime-library/reference/crtdbgreport-crtdbgreportw)來報告判斷提示失敗（預設使用訊息對話方塊）。 如果您在 [訊息] 對話方塊中選擇 [**重試**]，`_CrtDbgReport` 會傳回1，而 `_CrtDbgBreak` 會透過 `DebugBreak` 呼叫偵錯工具。
 
 ### <a name="checking-for-heap-corruption"></a>檢查堆積損毀
 下列範例會使用[_CrtCheckMemory](/cpp/c-runtime-library/reference/crtcheckmemory)來檢查堆積是否損毀：
@@ -156,7 +156,7 @@ _ASSERTE(_CrtIsMemoryBlock (myData, size, &requestNumber, &filename, &linenumber
 [本主題內容](#BKMK_In_this_topic)
 
 ## <a name="BKMK_MFC_assertions"></a>MFC 判斷提示
-MFC 會定義判斷提示檢查的[ASSERT](https://msdn.microsoft.com/Library/1e70902d-d58c-4e7b-9f69-2aeb6cbe476c)宏。 它也會定義 `MFC ASSERT_VALID` 和 @no__t 1 方法，以檢查 `CObject` 衍生物件的內部狀態。
+MFC 會定義判斷提示檢查的[ASSERT](https://msdn.microsoft.com/Library/1e70902d-d58c-4e7b-9f69-2aeb6cbe476c)宏。 它也會定義 `MFC ASSERT_VALID` 和 `CObject::AssertValid` 方法，以檢查 `CObject` 衍生物件的內部狀態。
 
 如果 MFC `ASSERT` 宏的引數評估為零或 false，則宏會終止程式執行並警示使用者;否則，會繼續執行。
 
@@ -175,7 +175,7 @@ ASSERT(x >= 0);   //  Assertion fails if x is negative
 ASSERT( pObject1->IsKindOf( RUNTIME_CLASS( CPerson ) ) );
 ```
 
-@No__t-0 宏在發行版本中不會產生任何程式碼。 如果您需要評估發行版本中的運算式，請使用[VERIFY](https://msdn.microsoft.com/library/s8c29sw2.aspx#verify)宏而不是 ASSERT。
+@No__t_0 宏在發行版本中不會產生任何程式碼。 如果您需要評估發行版本中的運算式，請使用[VERIFY](https://msdn.microsoft.com/library/s8c29sw2.aspx#verify)宏而不是 ASSERT。
 
 ### <a name="BKMK_MFC_ASSERT_VALID_and_CObject__AssertValid"></a>MFC ASSERT_VALID 和 CObject：： AssertValid
 [CObject：： AssertValid](https://docs.microsoft.com/cpp/mfc/reference/cobject-class#assertvalid)方法提供物件內部狀態的執行時間檢查。 雖然當您從 `CObject` 衍生類別時，不需要覆寫 `AssertValid`，但是您可以藉由執行此動作，讓類別更可靠。 `AssertValid` 應該在物件的所有成員變數上執行判斷提示，以確認它們包含有效的值。 例如，它應該檢查指標成員變數是否不是 Null。
@@ -217,7 +217,7 @@ void CPerson::AssertValid() const
 
 如果您有任何成員變數儲存物件，您可以使用 `ASSERT_VALID` 宏來測試其內部有效性（如果其類別覆寫 `AssertValid`）。
 
-例如，假設有一個類別 `CMyData`，它會將[CObList](/cpp/mfc/reference/coblist-class)儲存在其中一個成員變數中。 @No__t-0 變數（`m_DataList`）會儲存 @no__t 2 物件的集合。 @No__t-0 的縮寫宣告如下所示：
+例如，假設有一個類別 `CMyData`，它會將[CObList](/cpp/mfc/reference/coblist-class)儲存在其中一個成員變數中。 `m_DataList`的 `CObList` 變數會儲存 `CPerson` 物件的集合。 `CMyData` 的縮寫宣告如下所示：
 
 ```cpp
 class CMyData : public CObject
@@ -235,7 +235,7 @@ class CMyData : public CObject
 };
 ```
 
-@No__t-1 中的 `AssertValid` 覆寫看起來像這樣：
+`CMyData` 中的 `AssertValid` 覆寫看起來像這樣：
 
 ```cpp
 #ifdef _DEBUG
@@ -250,11 +250,11 @@ void CMyData::AssertValid( ) const
 #endif
 ```
 
-`CMyData` 使用 `AssertValid` 機制來測試儲存在其資料成員中之物件的有效性。 覆寫 `AssertValid` 的 `CMyData` 會針對自己的 m_pDataList 成員變數叫用 @no__t 2 宏。
+`CMyData` 使用 `AssertValid` 機制來測試儲存在其資料成員中之物件的有效性。 覆寫 `AssertValid` 的 `CMyData` 會叫用其本身 m_pDataList 成員變數的 `ASSERT_VALID` 宏。
 
-有效性測試不會在此層級停止，因為類別 `CObList` 也會覆寫 `AssertValid`。 此覆寫會對清單的內部狀態執行額外的有效性測試。 因此，對 @no__t 0 物件的有效性測試會導致對預存 `CObList` 清單物件內部狀態的其他有效性測試。
+有效性測試不會在此層級停止，因為類別 `CObList` 也會覆寫 `AssertValid`。 此覆寫會對清單的內部狀態執行額外的有效性測試。 因此，`CMyData` 物件上的有效性測試會導致儲存之 `CObList` 清單物件內部狀態的其他有效性測試。
 
-有一些更多工具，您也可以為儲存在清單中的 @no__t 0 物件加入有效性測試。 您可以從 `CObList` 衍生 `CPersonList` 的類別，並覆寫 `AssertValid`。 在覆寫中，您會呼叫 `CObject::AssertValid`，然後逐一查看清單，並在清單中所儲存的每個 `CPerson` 物件上呼叫 `AssertValid`。 本主題開頭所顯示的 `CPerson` 類別已經覆寫 `AssertValid`。
+有一些更多工具，您也可以為儲存在清單中的 `CPerson` 物件加入有效性測試。 您可以從 `CObList` 衍生 `CPersonList` 的類別，並覆寫 `AssertValid`。 在覆寫中，您會呼叫 `CObject::AssertValid`，然後逐一查看清單，並在清單中所儲存的每個 `CPerson` 物件上呼叫 `AssertValid`。 本主題開頭所顯示的 `CPerson` 類別已經覆寫 `AssertValid`。
 
 當您建立以進行偵錯工具時，這是一種強大的機制。 當您後續建立發行時，機制會自動關閉。
 
@@ -303,7 +303,7 @@ ASSERT(iMols<=numMols); // MFC version
 _ASSERT(iMols<=numMols); // CRT version
 ```
 
-@No__t-0 所計算的分子驅使分子數目，必須一律小於或等於分子驅使分子的總數，`numMols`。 迴圈的視覺化檢查並不會顯示這種情況，這會是這種情況，因此會在迴圈之後使用判斷提示語句來測試該條件。
+`iMols` 所計算的分子驅使分子數目，必須一律小於或等於分子驅使分子的總數，`numMols`。 迴圈的視覺化檢查並不會顯示這種情況，這會是這種情況，因此會在迴圈之後使用判斷提示語句來測試該條件。
 
 [本主題內容](#BKMK_In_this_topic)
 
@@ -320,7 +320,7 @@ ASSERT(!myErr); -- MFC version
 _ASSERT(!myErr); -- CRT version
 ```
 
-如果錯誤處理常式代碼正常運作，則應該處理錯誤，並在達到判斷提示之前 @no__t 0 重設為零。 如果 `myErr` 具有另一個值，則判斷提示會失敗、程式終止，而且 [判斷提示[失敗] 對話方塊](../debugger/assertion-failed-dialog-box.md)隨即出現。
+如果錯誤處理常式代碼正常運作，則應該處理錯誤，並在達到判斷提示之前 `myErr` 重設為零。 如果 `myErr` 具有另一個值，則判斷提示會失敗、程式終止，而且 [判斷提示[失敗] 對話方塊](../debugger/assertion-failed-dialog-box.md)隨即出現。
 
 不過，判斷提示語句不會取代錯誤處理常式代碼。 下列範例顯示的判斷提示語句可能會導致最終發行程式碼中的問題：
 
