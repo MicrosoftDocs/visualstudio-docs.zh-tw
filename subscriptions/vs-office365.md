@@ -6,12 +6,12 @@ manager: lank
 ms.date: 08/02/2019
 ms.topic: conceptual
 description: 了解某些 Visual Studio 訂用帳戶中所含的 Office 365 權益。
-ms.openlocfilehash: ae28df2f66ff976fffd44f42c3063f790db9feb3
-ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
-ms.translationtype: HT
+ms.openlocfilehash: 65a071cbfcdc31ca2ef8a36ac5a779fc99467c17
+ms.sourcegitcommit: bcdab788085bd9931d73883fe70cd5831317dca2
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68787941"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72816470"
 ---
 # <a name="office-365-proplus-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶中的 Office 365 專業增強版
 
@@ -21,27 +21,27 @@ ms.locfileid: "68787941"
 
 遵循下列步驟以下載並啟用 Office 365 專業增強版：
 1. 登入您的 Visual Studio Enterprise 訂用帳戶。
-2. 按一下 [下載]  索引標籤。
+2. 按一下 [下載] 索引標籤。
 3. 您會看到一份精選下載的清單。 在 Office 清單中，選擇 **Office 365**。
    > [!div class="mx-imgBorder"]
    > ![Office 365 下載](_img/vs-office365/vs-office365-downloads.png)
-0. 若要安裝 Office 365 專業增強版，您需要產品金鑰。  按一下 Office 365 清單下的 [取得金鑰]  連結。
+0. 若要安裝 Office 365 專業增強版，您需要產品金鑰。  按一下 Office 365 清單下的 [取得金鑰] 連結。
    > [!div class="mx-imgBorder"]
    > ![Office 365 取得產品金鑰](_img/vs-office365/vs-office365-get-key.png)
-0. 飛出視窗會顯示您已領取的任何金鑰，以及您可以使用的金鑰。  若要取得新的金鑰，請按一下 [Office Professional Plus 2019]  清單下的 [領取金鑰]  。
+0. 飛出視窗會顯示您已領取的任何金鑰，以及您可以使用的金鑰。  若要取得新的金鑰，請按一下 [Office Professional Plus 2019] 清單下的 [領取金鑰]。
    > [!div class="mx-imgBorder"]
    > ![Office 365 領取產品金鑰](_img/vs-office365/vs-office365-claim-key.png)
 0. 記錄您剛才索取的金鑰。 (您可以隨時返回此清單再次查看)。
 0. 關閉飛出視窗。
-0. 按一下 [下載]  按鈕。
+0. 按一下 [下載] 按鈕。
    > [!div class="mx-imgBorder"]
    > ![Office 365 開始下載](_img/vs-office365/vs-office365-download-button.png)
-0. 使用 Microsoft 帳戶登入。 (若您已登入，請按一下 [下一步]  )。
-0. 輸入您的產品金鑰、國家/地區或區域，以及語言，然後按一下 [下一步]  。
+0. 使用 Microsoft 帳戶登入。 (若您已登入，請按一下 [下一步])。
+0. 輸入您的產品金鑰、國家/地區或區域，以及語言，然後按一下 [下一步]。
    > [!div class="mx-imgBorder"]
    > ![Office 365 輸入產品金鑰](_img/vs-office365/vs-office365-enter-key.png)
-0. 再按一下 [下一步]  。
-0. 按一下 [安裝]  以安裝 Office 應用程式。
+0. 再按一下 [下一步]。
+0. 按一下 [安裝] 以安裝 Office 應用程式。
 
 ## <a name="next-steps"></a>後續步驟
 
@@ -51,7 +51,7 @@ ms.locfileid: "68787941"
 
 | 訂用帳戶層級                                                 |     通道                                            | 優勢                                                          | 可續約？    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (Standard)   | VL, Azure, 零售| 可用       |  是          |
+| Visual Studio Enterprise (Standard)   | VL, Azure, 零售| 可用       |  [是]          |
 | Visual Studio Enterprise (Standard)   | NFR<sup>1</sup> | 無法使用       |  N/A          |
 | Visual Studio Professional (Standard) | VL, Azure, 零售                                       | 無法使用                                                            |  N/A          |
 | Visual Studio Test Professional (標準訂用帳戶)                         | VL, 零售                                              | 無法使用                                             |  N/A          |
@@ -59,7 +59,7 @@ ms.locfileid: "68787941"
 | Visual Studio Enterprise、Visual Studio Professional (每月雲端) | Azure | 無法使用 | N/A |
 |  |
 
-<sup>1</sup>  *包含：禁止轉售 (NFR)、Visual Studio 產業夥伴 (VSIP)、Microsoft 合作夥伴網路 (MPN)、FTE、MCT 軟體與服務開發人員、BizSpark、最有價值專家 (MVP)、區域經理 (RD)、MCT 軟體與服務、Imagine、Microsoft 合作夥伴網路。*
+<sup>1</sup>  *包括：禁止轉售（NFR）、Visual Studio 產業夥伴（VSIP）、Microsoft 合作夥伴網路（MPN）、FTE、MCT Software & 服務開發人員、BizSpark、最有價值專家（MVP）、區域主管（RD）、MCT 軟體 &服務，想像，Microsoft 合作夥伴網路。*
 
 > [!NOTE]
 > Microsoft 不再於雲端訂用帳戶中提供 Visual Studio Professional 年度訂用帳戶和 Visual Studio Enterprise 年度訂用帳戶。 現有的客戶體驗，以及更新、增加、減少或取消其訂用帳戶的能力將不會改變。 我們鼓勵新的客戶移至 [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) 來探索 Visual Studio 的不同購買選項。
@@ -75,4 +75,4 @@ ms.locfileid: "68787941"
 請務必啟用這些絕佳的權益，以充分運用您的 Visual Studio 訂用帳戶：
 - [Visual Studio](vs-ide-benefit.md)
 - [Azure DevOps](vs-azure-devops.md)
-- [Azure 點數](vs-azure.md)
+- [Azure DevTest 個人點數](vs-azure.md)
