@@ -13,12 +13,12 @@ author: bowdenk7
 ms.author: wilkelly
 manager: jillfra
 monikerRange: vs-2017
-ms.openlocfilehash: c86dd5090d2cee6c49bd97f0895bba397e10c1ae
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
-ms.translationtype: HT
+ms.openlocfilehash: 653b2576b0076d02f2e18cedc6f9f9890fd98fe5
+ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66263036"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72888654"
 ---
 # <a name="javascript-in-visual-studio-2017"></a>Visual Studio 2017 中的 JavaScript
 
@@ -34,7 +34,7 @@ Visual Studio 現在支援 ECMAScript 語言更新的語法，例如 ECMAScript 
 ### <a name="what-is-ecmascript-2015"></a>何謂 ECMAScript 2015？
 
 JavaScript 仍然會演變為程式設計語言，而 [TC39](https://www.ecma-international.org/memento/tc39-m.htm) 是負責進行更新的委員會。
-ECMAScript 2015 這項 JavaScript 語言更新帶來了實用的新語法和功能。 若要深度剖析 ES6 功能，請參閱[這個](http://es6-features.org)參照網站。
+ECMAScript 2015 這項 JavaScript 語言更新帶來了實用的新語法和功能。 若要深度剖析 ES6 功能，請參閱[這個](http://es6-features.org/#Constants)參照網站。
 
 除了 ECMAScript 2015 支援之外，Visual Studio 也會支援 ECMAScript 2016，而且將支援已發行的未來 ECMAScript 版本。 若要追蹤 TC39 和 ECMAScript 中的最新變更，請遵循其在 [github](https://github.com/tc39) 上的工作。
 
@@ -52,14 +52,14 @@ TypeScript 是透過 `tsconfig.json` 檔案設定。
 
 tsconfig 檔案的必要設定如下︰
 
-- `allowJs`：此值必須設為 `true` 才能夠辨識 JavaScript 檔案。 預設值是 `false`，因為 TypeScript 會編譯為 Javascript ，且編譯器不應包含剛編譯完的檔案。
-- `outDir`：此值應該設定為不包含在專案中的位置，這樣才不會偵測到發出的 JavaScript 檔案，並於之後包含在專案中 (請參閱 `exclude`)。
-- `module`：如果使用模組，此設定會告知編譯器發出的程式碼應該使用哪種模組格式 (例如，適用於 Node 的 `commonjs`，或 Browserify 等搭配程式)。
-- `exclude`：此設定會指出專案不包含哪些資料夾。
+- `allowJs`︰此值必須設為 `true` 才能夠辨識 JavaScript 檔案。 預設值是 `false`，因為 TypeScript 會編譯為 Javascript ，且編譯器不應包含剛編譯完的檔案。
+- `outDir`︰這個值應該設定為不包含在專案中的位置，這樣才不會偵測到發出的 JavaScript 檔案，並於之後包含在專案中 (請參閱 `exclude`)。
+- `module`︰如果使用模組，此設定會告知編譯器發出的程式碼應該使用哪種模組格式 (例如 `commonjs` 即為 Node，或 Browserify 等搭配程式)。
+- `exclude`︰此設定會指出專案不包含哪些資料夾。
 輸出位置以及 `node_modules` 或 `temp` 等非專案資料夾，應該加入此設定。
-- `enableAutoDiscovery`：此設定允許自動偵測和下載定義檔案，如先前所述。
-- `compileOnSave`：此設定會告知編譯器是否每次在 Visual Studio 中儲存來源檔案時，都應該重新編譯。
-- `typeAcquisition`：這組設定控制自動類型擷取的行為 (會在[此小節](/visualstudio/ide/javascript-intellisense#Auto)中進一步解釋)
+- `enableAutoDiscovery`︰這項設定允許自動偵測和下載定義檔案，如先前所述。
+- `compileOnSave`︰此設定會告知編譯器是否只要來源檔案儲存在 Visual Studio 中，就應該隨時重新編譯。
+- `typeAcquisition`：這組設定控制自動類型擷取的行為 (會在[本節](/visualstudio/ide/javascript-intellisense#Auto)中進一步解釋)。
 
 若要將 JavaScript 檔案轉換成 CommonJS 模組，並將其放入 `./out` 資料夾中，您可以使用下列 `tsconfig.json` 檔案：
 
@@ -238,7 +238,7 @@ var x = React.createElement(comps_1.RepoDisplay, {description: "test"});
 因為 [!include[vs_dev15](../../docs/misc/includes/vs_dev15_md.md)] 功能是全新的語言服務，所以有一些行為會與先前的體驗不同或根本不存在。
 最重要的變更是將 VSDoc 取代為 JSDoc、移除自訂 `.intellisense.js` 延伸模組，以及特定程式碼模式的有限 IntelliSense。
 
-### <a name="no-more-references-or-referencesjs"></a>不再有 `///<references/>` 或 `_references.js`
+### <a name="no-more-references-or-_referencesjs"></a>不再有 `///<references/>` 或 `_references.js`
 
 先前，在檔案落在 IntelliSense 範圍的任何給定時間，要了解它極為複雜。 有時讓所有檔案都涵蓋在範圍內會較為理想，有時則否，這導致設定過程需要手動參考管理，因而變得複雜。 接下來，您不再需要思考參考管理，因此不需要三個斜線參考註解或 `_references.js` 檔案。
 
@@ -261,7 +261,7 @@ XML 文件註解有時稱為 VSDocs，先前可以用來使用其他資料來裝
 因為新語言服務具有靜態分析功能，而不是執行引擎 (如需差異的資訊，請閱讀[本問題](https://github.com/Microsoft/TypeScript/issues/4789))，所以無法再偵測到一些 JavaScript 模式。
 最常見的模式是 "expando" 模式。
 語言服務目前無法在宣告之後附加屬性的物件上提供 IntelliSense。
-例如：
+例如:
 
 ```js
 var obj = {};

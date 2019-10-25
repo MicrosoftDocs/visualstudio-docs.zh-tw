@@ -8,12 +8,12 @@ ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: f15c785658b5c4cd5a6b158b05eb67ff9a4e4c2d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 10b5dfee629b5b6e67ab544ca0bdd905ed2a120a
+ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62814356"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72888448"
 ---
 # <a name="work-with-sql-server-and-r"></a>使用 SQL Server 和 R
 
@@ -22,7 +22,7 @@ Visual Studio 對於 SQL Server 有絕佳的支援，可讓資料科學家建立
 > [!Note]
 > 若要一起使用 SQL 和 R，您必須安裝 SQL Server Data Tools：
 > - Visual Studio 2017︰執行 Visual Studio 安裝程式，並選取資料儲存和處理工作負載，包括 SQL Server Data Tools。
-> - Visual Studio 2015：依[下載 SQL Server Data Tools](https://docs.microsoft.com/sql/ssdt/download-sql-server-data-tools-ssdt) 中的指示執行。
+> - Visual Studio 2015：依[下載 SQL Server Data Tools](/sql/ssdt/download-sql-server-data-tools-ssdt) 中的指示執行。
 
 |   |   |
 |---|---|
@@ -49,7 +49,7 @@ Transact-SQL 編輯器支援各種不同的其他功能，例如檢視查詢執�
 
 ## <a name="work-with-sql-server-stored-procedures"></a>使用 SQL Server 預存程序
 
-[SQL Server R 服務](https://docs.microsoft.com/sql/advanced-analytics/r/sql-server-r-services) (SQL Server 2016 和更新版本) 讓您從 T-SQL 預存程序內嵌及執行 R 程式碼。 您可以在 SQL Server 電腦上執行 R 程式碼、操作從 SQL 查詢傳回的資料，以及產生 SQL 結果集，供日後的 SQL 處理或傳回給用戶端。
+[SQL Server R 服務](/sql/advanced-analytics/r/sql-server-r-services) (SQL Server 2016 和更新版本) 讓您從 T-SQL 預存程序內嵌及執行 R 程式碼。 您可以在 SQL Server 電腦上執行 R 程式碼、操作從 SQL 查詢傳回的資料，以及產生 SQL 結果集，供日後的 SQL 處理或傳回給用戶端。
 
 如下列各節所述，RTVS 簡化因將 SQL 和 R 程式碼結合在單一的 SQL 陳述式中，本來會很龐大且容易發生錯誤的程序︰
 
@@ -75,7 +75,7 @@ Transact-SQL 編輯器支援各種不同的其他功能，例如檢視查詢執�
 
 若要新增新的 SQL 預存程序，請以滑鼠右鍵按一下您的專案，選取 [新增] > [新增項目]，然後從範本清單中選取 [使用 R 的 SQL 預存程序]，指定檔案的名稱，再選取 [確定]。 預設檔名為 *SqlSProc.R*；為了便於閱讀，本節的其餘部分會使用檔名 *StoredProcedure.R*。 如果您有多個預存程序，每個檔案必須具有唯一的檔名。
 
-RTVS 會為預存程序建立三個檔案：*.R* 檔案供 R 程式碼使用、*.Query.sql* 檔案供 SQL 程式碼使用，而 *.Template.sql* 檔案則結合這兩者。 後面兩個會出現在 [方案總管] 中，作為 *.R* 檔案的子系：
+RTVS 會為預存程序建立三個檔案： *.R* 檔案供 R 程式碼使用、 *.Query.sql* 檔案供 SQL 程式碼使用，而 *.Template.sql* 檔案則結合這兩者。 後面兩個會出現在 [方案總管] 中，作為 *.R* 檔案的子系：
 
 ![使用 R 之 SQL 預存程序的方案總管展開檢視](media/sql-solution-explorer-expanded.png)
 
@@ -97,7 +97,7 @@ OutputDataSet <- InputDataSet
 簡言之，程式碼會接收稱為 `InputDataSet` 的 R 資料框架，並使用 `OutputDataSet` 傳回其結果，範本程式碼只將輸入複製到輸出。
 
 > [!Note]
-> 這些資料框架的名稱是由 `sp_execute_external_script` 系統預存程序呼叫中的 `@input_data_1_name` 和 `@output_data_1_name` 參數所控制。 如需此呼叫慣例設計及其用法範例的詳細資訊，請參閱 [sp_execute_external_script (Transact-SQL)](https://docs.microsoft.com/sql/relational-databases/system-stored-procedures/sp-execute-external-script-transact-sql)。
+> 這些資料框架的名稱是由 `sp_execute_external_script` 系統預存程序呼叫中的 `@input_data_1_name` 和 `@output_data_1_name` 參數所控制。 如需此呼叫慣例設計及其用法範例的詳細資訊，請參閱 [sp_execute_external_script (Transact-SQL)](/sql/relational-databases/system-stored-procedures/sp-execute-external-script-transact-sql)。
 
 在註解中產生的其他程式碼會提供小型測試指令碼，以使用 [RODBC 套件](https://cran.r-project.org/web/packages/RODBC/index.html) 將 SQL 陳述式傳輸至 SQL Server、執行它，並擷取其結果集為 R 資料框架。 您可以取消註解此測試程式碼，以互動方式針對您從 SQL Server 中取得的結果集撰寫 R 程式碼。
 
@@ -111,7 +111,7 @@ OutputDataSet <- InputDataSet
 
 您現在可以透過互動方式撰寫 R 程式碼，以操作所需的 `InputDataSet` 資料框架。 請記住，您可以在編輯器中只選取 R 程式碼，並按 **Ctrl**+**Enter** 將它傳送至[互動式視窗](interactive-repl-for-r-in-visual-studio.md)。
 
-最後，*.Template.sql* 檔案 (在此範例中為 *StoredProcedure.Template.sql*) 會包含用於產生 SQL 預存程序的範本：
+最後， *.Template.sql* 檔案 (在此範例中為 *StoredProcedure.Template.sql*) 會包含用於產生 SQL 預存程序的範本：
 
 ```sql
 CREATE PROCEDURE [StoredProcedure]

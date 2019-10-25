@@ -13,18 +13,18 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 1541f3608aef33cbd286a8c96257eb191712e245
-ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
-ms.translationtype: HT
+ms.openlocfilehash: 288cb11d3e6ae3917f5fcc6ec9ed242549908576
+ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68681287"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72888645"
 ---
 # <a name="develop-javascript-and-typescript-code-in-visual-studio-without-solutions-or-projects"></a>不使用方案或專案在 Visual Studio 中開發 JavaScript 和 TypeScript 程式碼
 
 自 Visual Studio 2017 開始可以[不使用專案或解決方案來開發程式碼](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md)，這讓您可以開啟程式碼的資料夾，並立即開始使用豐富的編輯器支援，例如 IntelliSense、搜尋、重構及偵錯等。 除了這些功能之外，適用於 Visual Studio 的 Node.js 工具還新增了建置 TypeScript 檔案、管理 npm 套件及執行 npm 指令碼的支援。
 
-若要開始使用，請從工具列選取 [檔案]   > [開啟]   > [資料夾]  。 [方案總管] 顯示資料夾中的所有檔案，您可以開啟任何檔案以開始編輯。 在背景中，Visual Studio 會編製檔案的索引，以啟用 npm、建置功能，以及對功能進行偵錯。
+若要開始使用，請從工具列選取 [檔案] > [開啟] > [資料夾]。 [方案總管] 顯示資料夾中的所有檔案，您可以開啟任何檔案以開始編輯。 在背景中，Visual Studio 會編製檔案的索引，以啟用 npm、建置功能，以及對功能進行偵錯。
 
 > [!IMPORTANT]
 > 本文中描述的許多功能，包括 npm 整合，都需要 Visual Studio 2017 15.8 版或更新版本。
@@ -42,11 +42,11 @@ ms.locfileid: "68681287"
 ## <a name="build-and-debug"></a>建置和偵錯
 
 ### <a name="packagejson"></a>package.json
-如果資料夾中的 *package.json* 指定 `main` 項目，則 *package.json* 的滑鼠右鍵捷徑功能表將提供 [偵錯]  命令。
+如果資料夾中的 *package.json* 指定 `main` 項目，則 *package.json* 的滑鼠右鍵捷徑功能表將提供 [偵錯] 命令。
 按一下此項目時，將以指定的指令碼作為其引數來啟動 *node.exe*。
 
 ### <a name="javascript-files"></a>JavaScript 檔案
-您可以用滑鼠右鍵按一下檔案，然後從捷徑功能表中選取 [偵錯]  ，藉以對 JavaScript 檔案進行偵錯。 這會以該 JavaScript 檔案作為其引數來啟動 *node.exe*。
+您可以用滑鼠右鍵按一下檔案，然後從捷徑功能表中選取 [偵錯]，藉以對 JavaScript 檔案進行偵錯。 這會以該 JavaScript 檔案作為其引數來啟動 *node.exe*。
 
 ### <a name="typescript-files-and-tsconfigjson"></a>TypeScript 檔案和 tsconfig.json
 如果資料夾中沒有任何的 *tsconfig.json*，您可以用滑鼠右鍵按一下 TypeScript 檔案，以查看用來建置該檔案並對其進行偵錯的捷徑功能表命令。 當您使用這些命令時，可以使用 *tsc.exe* 搭配預設選項進行建置或偵錯。 (您需要建置檔案，然後才能進行偵錯)。
@@ -74,12 +74,12 @@ ms.locfileid: "68681287"
 
 測試執行器會列舉在本機上已安裝的套件，以判斷要使用哪個測試架構。
 如果無法辨識任何支援的架構，測試執行器會預設為 *ExportRunner*。 其他支援的架構包括：
-* Mocha ([mochajs.org](http://mochajs.org/))
+* Mocha ([mochajs.org](https://mochajs.org/))
 * Jasmine ([Jasmine.github.io](https://jasmine.github.io/))
 * Tape ([github.com/substack/tape](https://github.com/substack/tape))
 * Jest ([jestjs.io](https://jestjs.io/))
 
-開啟 [測試總管] (選擇 [測試]   > [Windows]   > [測試總管]  ) 之後，Visual Studio 會探索並顯示測試。
+開啟 [測試總管] (選擇 [測試] > [Windows] > [測試總管]) 之後，Visual Studio 會探索並顯示測試。
 
 > [!NOTE]
 > 測試執行器只會列舉測試根目錄中的 JavaScript 檔案，如果您的應用程式以 TypeScript 撰寫，您需要先建置它們。
