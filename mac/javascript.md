@@ -6,18 +6,18 @@ ms.author: sayedha
 ms.date: 05/03/2018
 ms.technology: vs-ide-general
 ms.assetid: 61432695-5B12-4257-B250-48D37EED106D
-ms.openlocfilehash: 7ffe24d26af91d7d6733ec1540c2f2d810425e1e
-ms.sourcegitcommit: 9a227faafdd0bad6f017ace607dc61eb56b32d72
+ms.openlocfilehash: d2ce3b3cdbf1a4cf1f19956a7327d73c0bb34b62
+ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/21/2019
-ms.locfileid: "71175402"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72807160"
 ---
 # <a name="javascript-and-typescript-support"></a>JavaScript 和 TypeScript 支援
 
 Visual Studio for Mac 透過語法醒目提示、程式碼格式化以及 IntelliSense，來提供 JavaScript 和 TypeScript 的支援。
 
-![typescript 編輯器支援](/media/tsjseditor-2019.gif)
+![typescript 編輯器支援](media/tsjseditor-2019.gif)
 
 如需撰寫 JavaScript 的詳細資訊，請參閱 [Writing JavaScript Code](/scripting/javascript/writing-javascript-code) (撰寫 Javascript 程式碼) 指南。
 
@@ -43,6 +43,6 @@ Visual Studio for Mac 中的 JavaScript IntelliSense 可以根據型別推斷、
 
     ![新增 TypeScript 定義檔](media/javascript-type-intellisense-2019.gif)
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [JavaScript IntelliSense (Windows 上的 Visual Studio)](/visualstudio/ide/javascript-intellisense)

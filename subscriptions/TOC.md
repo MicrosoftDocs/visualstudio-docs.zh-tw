@@ -25,7 +25,7 @@
 ### [連絡您的訂用帳戶管理員](contact-my-admin.md)
 ### 優點
 #### 工具
-##### [Azure 點數](vs-azure.md)
+##### [Azure DevTest 個人點數](vs-azure.md)
 ##### [Azure DevOps](vs-azure-devops.md)
 ##### [Azure 隨用隨付](vs-azure-payg.md)
 ##### [CAST 醒目提示](vs-cast.md)

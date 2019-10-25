@@ -32,12 +32,12 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - multiple
-ms.openlocfilehash: 2460ca1c76eb43bdff89c87c880f405cdce12b48
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: 26c788319331d0da4024844b50b4c495ed2c3a37
+ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72446322"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72806762"
 ---
 # <a name="annotating-locking-behavior"></a>註釋鎖定行為
 為了避免多執行緒程式中發生並行 Bug，請務必遵循適當的鎖定規範並使用 SAL 註釋。
@@ -112,10 +112,10 @@ SAL 支援多種不同的鎖定基本類型，例如關鍵區段、Mutex、微�
 |----------------|-----------------|
 |`_Analysis_assume_smart_lock_acquired_`|告訴分析器假設已取得智慧鎖定。 此批註需要參考鎖定類型做為其參數。|
 |`_Analysis_assume_smart_lock_released_`|告知分析器假設已釋放智慧型鎖定。 此批註需要參考鎖定類型做為其參數。|
-|`_Moves_lock_(target, source)`|描述 `move constructor` 作業，此作業會將鎖定狀態從 `source` 物件傳送至 `target`。 @No__t-0 會視為新建立的物件，因此它之前的任何狀態都會遺失，並由 `source` 狀態取代。 @No__t-0 也會重設為無鎖定計數或別名目標的乾淨狀態，但指向它的別名會保持不變。|
-|`_Replaces_lock_(target, source)`|描述 `move assignment operator` 的語義，其中會先釋放目標鎖定，然後再從來源傳輸狀態。 這可以被視為 `_Moves_lock_(target, source)` 的組合，前面加上 `_Releases_lock_(target)`。|
-|`_Swaps_locks_(left, right)`|描述標準 `swap` 行為，這會假設物件 `left`，而 `right` 交換其狀態。 交換的狀態包括鎖定計數和別名目標（如果有的話）。 指向 `left` 和 @no__t 1 物件的別名會保持不變。|
-|`_Detaches_lock_(detached, lock)`|描述一種案例，其中的鎖定包裝函式類型允許 dissociation 包含其內含的資源。 這類似于 `std::unique_ptr` 與內部指標搭配運作的方式：它可讓程式設計人員將指標解壓縮，並將其智慧型指標容器保持在乾淨狀態。 @No__t-0 支援類似的邏輯，而且可以在自訂鎖定包裝函式中執行。 卸離的鎖定會保留其狀態（鎖定計數和別名目標，如果有的話），而包裝函式會重設為包含零個鎖定計數和沒有別名目標，同時保留其本身的別名。 鎖定計數沒有任何作業（釋出並取得）。 此注釋的行為與 `_Moves_lock_` 完全相同，不同之處在于卸離的引數應該是 `return`，而不是 `this`。|
+|`_Moves_lock_(target, source)`|描述 `move constructor` 作業，此作業會將鎖定狀態從 `source` 物件傳送至 `target`。 `target` 會被視為新建立的物件，因此它之前的任何狀態都會遺失，並由 `source` 狀態取代。 `source` 也會重設為無鎖定計數或別名目標的乾淨狀態，但指向它的別名會保持不變。|
+|`_Replaces_lock_(target, source)`|描述 `move assignment operator` 的語義，其中會先釋放目標鎖定，然後再從來源傳輸狀態。 這可以被視為 `_Moves_lock_(target, source)` 前面加上 `_Releases_lock_(target)`的組合。|
+|`_Swaps_locks_(left, right)`|描述標準 `swap` 行為，這會假設物件 `left`，而 `right` 交換其狀態。 交換的狀態包括鎖定計數和別名目標（如果有的話）。 指向 `left` 和 `right` 物件的別名會保持不變。|
+|`_Detaches_lock_(detached, lock)`|描述一種案例，其中的鎖定包裝函式類型允許 dissociation 包含其內含的資源。 這類似于 `std::unique_ptr` 與內部指標搭配運作的方式：它可讓程式設計人員將指標解壓縮，並將其智慧型指標容器保持在乾淨狀態。 `std::unique_lock` 也支援類似的邏輯，而且可以在自訂鎖定包裝函式中執行。 卸離的鎖定會保留其狀態（鎖定計數和別名目標，如果有的話），而包裝函式會重設為包含零個鎖定計數和沒有別名目標，同時保留其本身的別名。 鎖定計數沒有任何作業（釋出並取得）。 此注釋的行為與 `_Moves_lock_` 完全相同，不同之處在于卸離的引數應該是 `return` 而不是 `this`。|
 
 ## <a name="see-also"></a>請參閱
 
@@ -127,4 +127,4 @@ SAL 支援多種不同的鎖定基本類型，例如關鍵區段、Mutex、微�
 - [指定套用註釋的時機和位置](../code-quality/specifying-when-and-where-an-annotation-applies.md)
 - [內建函式](../code-quality/intrinsic-functions.md)
 - [最佳做法和範例](../code-quality/best-practices-and-examples-sal.md)
-- [程式碼分析小組 Blog](http://go.microsoft.com/fwlink/p/?LinkId=251197)
+- [程式碼分析小組 Blog](https://blogs.msdn.microsoft.com/codeanalysis/)

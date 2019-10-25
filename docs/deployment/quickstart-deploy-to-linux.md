@@ -9,18 +9,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - azure
-ms.openlocfilehash: 9609b636c6121ec2dac41559344485d4048e9cc5
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
-ms.translationtype: HT
+ms.openlocfilehash: 1e05862aa57c24bfa8f17d551762054278dd6e52
+ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65680070"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72806867"
 ---
 # <a name="publish-an-aspnet-core-app-to-app-service-on-linux-using-visual-studio"></a>使用 Visual Studio 將 ASP.NET Core 應用程式發行至 Linux 上的 App Service
 
 從 Visual Studio 2017 版本 15.7 開始，您可以使用下列其中一個方法將 ASP.NET Core 應用程式發行至 Azure App Service Linux (使用容器)。
 
-* 針對連續 (或自動) 部署應用程式，使用 Azure DevOps 與 [Azure Pipelines](https://docs.microsoft.com/azure/devops/pipelines/get-started-yaml?view=azdevops)。
+* 針對連續 (或自動) 部署應用程式，使用 Azure DevOps 與 [Azure Pipelines](/azure/devops/pipelines/get-started-yaml?view=azdevops)。
 
 * 針對一次 (或手動) 部署應用程式，使用 Visual Studio 中的 [發行] 工具將 ASP.NET Core 應用程式發行至 App Service for Linux (使用容器)。
 
@@ -32,13 +32,13 @@ ms.locfileid: "65680070"
 
 1. 在 [方案總管] 中，以滑鼠右鍵按一下專案，然後選擇 [發行] (或使用 [建置] > [發行] 功能表項目)。
 
-    ![[方案總管] 中專案操作功能表上的 [發行] 命令](../deployment/media/quickstart-publish.png "選擇 [發行]")
+    ![[專案] 內容功能表上的 [發佈] 命令方案總管](../deployment/media/quickstart-publish.png "選擇 [發行]")
 
 1. 如果您之前已設定任何發行設定檔，[發行] 窗格隨即出現；在此情況下，請選取 [建立新設定檔]。
 
 1. 在 [挑選發行目標] 對話方塊中，選擇 [App Service Linux]。
 
-    ![選擇 [Azure App Service]](../deployment/media/quickstart-publish-linux.png "選擇 [Azure App Service]")
+    ![選擇 Azure App Service](../deployment/media/quickstart-publish-linux.png "選擇 Azure App Service")
 
 1. 選取 [發行]。 [建立 App Service] 對話方塊隨即出現。 如有必要，請使用您的 Azure 帳戶登入，接著預設 App Service 設定會填入欄位。
 
@@ -53,7 +53,7 @@ ms.locfileid: "65680070"
 在上述步驟中，您已建立資源群組中的 Azure 資源。 如果您預期未來不需要這些資源，則可以藉由刪除資源群組予以刪除。
 從 Azure 入口網站左側功能表中，選取 [資源群組]，然後選取 **myResourceGroup**。
 在 [資源群組] 頁面上，確定所列出資源是您想要刪除的資源。
-選取 [刪除]，在文字方塊中鍵入 ，然後選取 [刪除]。
+選取 [刪除]，在文字方塊中鍵入，然後選取 [刪除]。
 
 ## <a name="next-steps"></a>後續步驟
 
