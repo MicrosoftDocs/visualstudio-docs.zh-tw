@@ -434,6 +434,10 @@
                   href: deploy-windows-store-apps-from-visual-studio.md
             - name: 對已安裝的應用程式套件進行偵錯
               href: debug-installed-app-package.md
+            - name: 在偵錯時檢查 XAML 屬性
+              href: inspect-xaml-properties-while-debugging.md
+            - name: 撰寫 XAML 程式碼及針對其執行進行偵錯
+              href: xaml-hot-reload.md
             - name: 在 Blend 中偵錯 XAML
               href: ../xaml-tools/debug-xaml-in-blend.md?toc=/visualstudio/debugger/toc.json
             - name: HTML 和 CSS
@@ -490,6 +494,10 @@
               items:
                 - name: 對 WPF 進行偵錯
                   href: debugging-wpf.md
+                - name: 在偵錯時檢查 XAML 屬性
+                  href: inspect-xaml-properties-while-debugging.md
+                - name: 撰寫 XAML 程式碼及針對其執行進行偵錯
+                  href: xaml-hot-reload.md
                 - name: 使用 WPF 樹狀架構視覺化檢視
                   href: how-to-use-the-wpf-tree-visualizer.md
                 - name: 顯示 WPF 追蹤資訊
