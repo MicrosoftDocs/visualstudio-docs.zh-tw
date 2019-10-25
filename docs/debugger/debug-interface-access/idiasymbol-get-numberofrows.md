@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c9d87445592db3cc566744151ea207bbb64c4906
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 257a667d8c2347394abaaa3282b37201d443ed97
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "62836067"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739639"
 ---
-# <a name="idiasymbolgetnumberofrows"></a>IDiaSymbol::get_numberOfRows
-擷取在矩陣中的資料列數目。
+# <a name="idiasymbolget_numberofrows"></a>IDiaSymbol::get_numberOfRows
+抓取矩陣中的資料列數目。
 
 ## <a name="syntax"></a>語法
 
@@ -30,10 +30,10 @@ HRESULT get_numberOfRows(
 #### <a name="parameters"></a>參數
  `pRetVal`
 
-[out]指標`DWORD`矩陣中保存的資料列數目。
+脫銷保留矩陣中的資料列數目之 `DWORD` 的指標。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，則傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。
+ 如果成功，會傳回 `S_OK`;否則，會傳回 `S_FALSE` 或錯誤碼。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

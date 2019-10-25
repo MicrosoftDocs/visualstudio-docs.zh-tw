@@ -1,5 +1,5 @@
 ---
-title: 在 例外狀況後檢查系統程式碼 |Microsoft Docs
+title: 在例外狀況後檢查系統程式碼 |Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -17,14 +17,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9b9467ce7001f0061c20a5097220bd93b24937db
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 98f3eb98024e20350151904f297f7e7b4d6f1fea
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62894030"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72733379"
 ---
-# <a name="how-to-examine-system-code-after-an-exception"></a>HOW TO：在發生例外狀況後檢查系統程式碼
+# <a name="how-to-examine-system-code-after-an-exception"></a>如何：在發生例外狀況後檢查系統程式碼
 發生例外狀況 (Exception) 時，您可能必須檢查系統呼叫內部的程式碼，判斷造成例外狀況的原因。 下列程序說明如果您沒有載入系統程式碼的符號，或是在已經啟用 Just My Code 的情況下，如何執行這項工作。
 
 ### <a name="to-examine-system-code-following-an-exception"></a>若要在發生例外狀況後檢查系統程式碼
@@ -43,5 +43,5 @@ ms.locfileid: "62894030"
 
 4. 您現在可以在 [呼叫堆疊] 視窗和其他視窗中檢查系統程式碼。 例如，您可以按兩下呼叫框架，在來源或 [反組譯碼] 視窗中檢視程式碼。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [使用偵錯工具管理例外狀況](../debugger/managing-exceptions-with-the-debugger.md)

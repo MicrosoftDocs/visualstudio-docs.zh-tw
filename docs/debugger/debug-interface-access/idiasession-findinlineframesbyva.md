@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aeb9d7b9925e8708ab100e68f88b28310da68fce
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: dca26021909220f9bb68a6794c299ec6c5a3d75a
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62827312"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742136"
 ---
 # <a name="idiasessionfindinlineframesbyva"></a>IDiaSession::findInlineFramesByVA
-擷取列舉型別，可讓用戶端來逐一查看所有指定的虛擬位址 (VA) 上的內嵌框架。
+抓取列舉型別，可讓用戶端逐一查看指定虛擬位址（VA）上的所有內嵌框架。
 
 ## <a name="syntax"></a>語法
 
@@ -32,20 +32,20 @@ HRESULT findInlineFramesByVA ( 
 #### <a name="parameters"></a>參數
  `parent`
 
-[in]`IDiaSymbol`物件表示父代。
+在代表父系的 `IDiaSymbol` 物件。
 
  `va`
 
-[in]指定的位址為瑞斯
+在將位址指定為 VA。
 
  `ppResult`
 
-[out]保存`IDiaEnumSymbols`物件，其中包含所擷取的畫面格的清單。
+脫銷保存 `IDiaEnumSymbols` 物件，其中包含所抓取之畫面格的清單。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
+ 如果成功，會傳回 `S_OK`;否則，會傳回錯誤碼。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [IDiaSession](../../debugger/debug-interface-access/idiasession.md)
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
 - [SymTagEnum 列舉](../../debugger/debug-interface-access/symtagenum.md)

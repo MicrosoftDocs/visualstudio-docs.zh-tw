@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_registerType |Microsoft Docs
+title: IDiaSymbol：： get_registerType |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f714e5637776d6a0606246d339d3f9d2ccd9f19a
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: e849bea3bd5480f480001c091e5988fa5e6b5444
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "62835535"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739442"
 ---
-# <a name="idiasymbolgetregistertype"></a>IDiaSymbol::get_registerType
-擷取註冊型別。
+# <a name="idiasymbolget_registertype"></a>IDiaSymbol::get_registerType
+捕獲暫存器類型。
 
 ## <a name="syntax"></a>語法
 
@@ -30,10 +30,10 @@ HRESULT get_registerType(
 #### <a name="parameters"></a>參數
  `pRetVal`
 
-[out]指標`DWORD`保存暫存器型別。
+脫銷保留暫存器類型之 `DWORD` 的指標。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，則傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。
+ 如果成功，會傳回 `S_OK`;否則，會傳回 `S_FALSE` 或錯誤碼。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

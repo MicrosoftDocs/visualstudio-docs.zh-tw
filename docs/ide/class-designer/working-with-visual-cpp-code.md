@@ -1,15 +1,15 @@
 ---
-title: 使用 Visual C++ 程式碼 (類別設計工具)
+title: 使用程式C++代碼（類別設計工具）
 ms.date: 06/21/2017
 ms.topic: conceptual
 f1_keywords:
 - vs.classdesigner.cpplimitation
 helpviewer_keywords:
-- Visual C++, Class Designer
-- Class Designer, Visual C++ support
+- C++, Class Designer
+- Class Designer, C++ support
 - Class Designer, limitations
-- Class Designer, tasks in Visual C++
-- Visual C++, class diagrams
+- Class Designer, tasks in C++
+- C++, class diagrams
 - C++, class diagrams
 - C++, Class Designer
 ms.assetid: f5b40921-2ef7-4de0-b595-45b44c79ffa6
@@ -18,14 +18,14 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b2252b5e6d8da9f81fbcca9b856222a3230cd080
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: e59ee1305c0c482686505959aac7187902906086
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647563"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748902"
 ---
-# <a name="work-with-visual-c-code-in-class-designer"></a>在類別設計工具中使用 Visual C++ 程式碼
+# <a name="work-with-c-code-in-class-designer"></a>使用類別設計工具C++中的程式碼
 
 [類別設計工具] 會顯示稱為「類別圖表」的視覺化設計介面，以視覺表示法提供專案中的程式碼項目。 您可以使用類別圖表來設計和視覺化類別和專案中的其他類型。
 
@@ -56,7 +56,7 @@ ms.locfileid: "72647563"
 
 ### <a name="update-and-performance-issues"></a>更新和效能問題
 
-在 Visual C++ 專案中，可能需要 30 到 60 秒，原始程式檔的變更才會出現在類別圖中。 此延遲也可能會導致 [類別設計工具] 擲回錯誤：**選取範圍中找不到任何類型**。 如果您收到這類錯誤，請在錯誤訊息中按一下 [取消]，並等候程式碼項目出現在 [類別檢視] 中。 執行這項操作後，[類別設計工具] 即應能夠顯示類型。
+針對C++專案，可能需要30到60秒的時間，原始程式檔中的變更才會出現在類別圖中。 此延遲也可能會導致 [類別設計工具] 擲回錯誤：**選取範圍中找不到任何類型**。 如果您收到這類錯誤，請在錯誤訊息中按一下 [取消]，並等候程式碼項目出現在 [類別檢視] 中。 執行這項操作後，[類別設計工具] 即應能夠顯示類型。
 
 如果類別圖未以您在程式碼中所做的變更進行更新，您可能需要關閉圖表，再加以重新開啟。
 
@@ -88,11 +88,11 @@ ms.locfileid: "72647563"
 
 ## <a name="limitations-for-c-code-elements"></a>C++ 程式碼項目限制
 
-- 在載入 Visual C++ 專案時，[類別設計工具] 會以唯讀方式運作。 您可以變更類別圖，但是您無法將類別圖中的變更存回至原始程式碼。
+- 載入C++專案時，**類別設計工具**的功能以唯讀方式運作。 您可以變更類別圖，但是您無法將類別圖中的變更存回至原始程式碼。
 
-- [類別設計工具] 僅支援原生 C++ 語意。 針對編譯為受控程式碼的 Visual C++ 專案，[類別設計工具] 只會視覺化屬於原生類型的程式碼項目。 因此，您可以將類別圖表新增至專案中，但是 [類別設計工具] 將不允許您視覺化 `IsManaged` 屬性設為 `true` 的項目 (也就是實值型別和參考型別)。
+- [類別設計工具] 僅支援原生 C++ 語意。 對於C++編譯成 managed 程式碼的專案，**類別設計工具**只會將原生類型的程式碼元素視覺化。 因此，您可以將類別圖表新增至專案中，但是 [類別設計工具] 將不允許您視覺化 `IsManaged` 屬性設為 `true` 的項目 (也就是實值型別和參考型別)。
 
-- 針對 Visual C++ 專案，[類別設計工具] 只會讀取類型的定義。 例如，假設您將類型定義於標頭檔 (.h) 中，並將其成員定義於實作檔 (.cpp) 中。 如果您在實作檔 (.cpp) 上叫用「檢視類別圖表」，[類別設計工具] 將不會顯示任何項目。 另舉一例，如果您在使用 `#include` 陳述式的 .cpp 檔上叫用「檢視類別圖表」，以包含其他檔案，但不包含任何實際類別定義，[類別設計工具] 也不會顯示任何項目。
+- 對於C++專案，**類別設計工具**只會讀取類型的定義。 例如，假設您將類型定義於標頭檔 (.h) 中，並將其成員定義於實作檔 (.cpp) 中。 如果您在實作檔 (.cpp) 上叫用「檢視類別圖表」，[類別設計工具] 將不會顯示任何項目。 另舉一例，如果您在使用 `#include` 陳述式的 .cpp 檔上叫用「檢視類別圖表」，以包含其他檔案，但不包含任何實際類別定義，[類別設計工具] 也不會顯示任何項目。
 
 - IDL (.idl) 檔 (其中定義 COM 介面類型程式庫) 不會顯示在圖表中，除非它們編譯為原生 C++ 程式碼。
 
@@ -112,7 +112,7 @@ ms.locfileid: "72647563"
 
 - [設計和檢視類別與類型](designing-and-viewing-classes-and-types.md)
 - [類別設計工具錯誤的其他相關資訊](additional-information-about-errors.md)
-- [類別設計工具中的 Visual C++ 類別](visual-cpp-classes.md)
-- [類別設計工具中的 Visual C++ 結構](visual-cpp-structures.md)
-- [類別設計工具中的 Visual C++ 列舉](visual-cpp-enumerations.md)
-- [類別設計工具中的 Visual C++ Typedef](visual-cpp-typedefs.md)
+- [C++類別設計工具中的類別](visual-cpp-classes.md)
+- [C++類別設計工具中的結構](visual-cpp-structures.md)
+- [C++類別設計工具中的列舉](visual-cpp-enumerations.md)
+- [C++類別設計工具中的 typedef](visual-cpp-typedefs.md)

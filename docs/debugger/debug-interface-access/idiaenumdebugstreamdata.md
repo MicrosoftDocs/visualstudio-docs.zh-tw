@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e2865dbf3da103610407cd33eeeaf934caba3c7a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f5929f6f36c183d3a580ab605d313695cb584664
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62838333"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72744844"
 ---
 # <a name="idiaenumdebugstreamdata"></a>IDiaEnumDebugStreamData
-提供偵錯資料流中記錄的存取權。
+提供對調試資料流程中記錄的存取。
 
 ## <a name="syntax"></a>語法
 
@@ -29,27 +29,27 @@ IDiaEnumDebugStreamData : IUnknown
 ```
 
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法
-下表顯示的方法`IDiaEnumDebugStreamData`。
+下表顯示 `IDiaEnumDebugStreamData` 的方法。
 
 |方法|描述|
 |------------|-----------------|
-|[IDiaEnumDebugStreamData::get__NewEnum](../../debugger/debug-interface-access/idiaenumdebugstreamdata-get-newenum.md)|擷取[IEnumVARIANT 介面](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-ienumvariant)這個列舉值的版本。|
-|[IDiaEnumDebugStreamData::get_Count](../../debugger/debug-interface-access/idiaenumdebugstreamdata-get-count.md)|擷取偵錯資料流中的記錄的數目。|
-|[IDiaEnumDebugStreamData::get_name](../../debugger/debug-interface-access/idiaenumdebugstreamdata-get-name.md)|擷取偵錯資料流的名稱。|
-|[IDiaEnumDebugStreamData::Item](../../debugger/debug-interface-access/idiaenumdebugstreamdata-item.md)|擷取指定的記錄。|
-|[IDiaEnumDebugStreamData::Next](../../debugger/debug-interface-access/idiaenumdebugstreamdata-next.md)|列舉序列中擷取指定的記錄數目。|
-|[IDiaEnumDebugStreamData::Skip](../../debugger/debug-interface-access/idiaenumdebugstreamdata-skip.md)|略過指定的數目的列舉順序中的記錄。|
-|[IDiaEnumDebugStreamData::Reset](../../debugger/debug-interface-access/idiaenumdebugstreamdata-reset.md)|會列舉的序列重設到開頭。|
-|[IDiaEnumDebugStreamData::Clone](../../debugger/debug-interface-access/idiaenumdebugstreamdata-clone.md)|建立包含相同的列舉的序列，做為目前的列舉值的列舉值。|
+|[IDiaEnumDebugStreamData::get__NewEnum](../../debugger/debug-interface-access/idiaenumdebugstreamdata-get-newenum.md)|抓取此列舉值的[IEnumVARIANT 介面](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-ienumvariant)版本。|
+|[IDiaEnumDebugStreamData::get_Count](../../debugger/debug-interface-access/idiaenumdebugstreamdata-get-count.md)|抓取調試資料流程中的記錄數目。|
+|[IDiaEnumDebugStreamData::get_name](../../debugger/debug-interface-access/idiaenumdebugstreamdata-get-name.md)|抓取 debug 資料流程的名稱。|
+|[IDiaEnumDebugStreamData::Item](../../debugger/debug-interface-access/idiaenumdebugstreamdata-item.md)|抓取指定的記錄。|
+|[IDiaEnumDebugStreamData::Next](../../debugger/debug-interface-access/idiaenumdebugstreamdata-next.md)|從列舉序列中抓取指定數目的記錄。|
+|[IDiaEnumDebugStreamData::Skip](../../debugger/debug-interface-access/idiaenumdebugstreamdata-skip.md)|略過列舉序列中指定數目的記錄。|
+|[IDiaEnumDebugStreamData::Reset](../../debugger/debug-interface-access/idiaenumdebugstreamdata-reset.md)|將列舉序列重設為開頭。|
+|[IDiaEnumDebugStreamData::Clone](../../debugger/debug-interface-access/idiaenumdebugstreamdata-clone.md)|建立枚舉器，其中包含與目前枚舉器相同的列舉序列。|
 
 ## <a name="remarks"></a>備註
-這個介面會表示偵錯資料流中記錄的資料流。 大小和每一筆記錄的解譯會相依於記錄來自資料流。 此介面實際上提供符號檔中的未經處理的資料位元組的存取。
+這個介面代表 debug 資料流程中的記錄資料流程。 每一筆記錄的大小和轉譯取決於記錄的來來源資料流。 此介面可有效地存取符號檔中的原始資料位元組。
 
-## <a name="notes-for-callers"></a>呼叫端資訊
-呼叫[idiaenumdebugstreams:: Item](../../debugger/debug-interface-access/idiaenumdebugstreams-item.md)或是[idiaenumdebugstreams:: Next](../../debugger/debug-interface-access/idiaenumdebugstreams-next.md)方法來取得`IDiaEnumDebugStreamData`物件。
+## <a name="notes-for-callers"></a>呼叫者的注意事項
+呼叫[IDiaEnumDebugStreams：： Item](../../debugger/debug-interface-access/idiaenumdebugstreams-item.md)或[IDiaEnumDebugStreams：： Next](../../debugger/debug-interface-access/idiaenumdebugstreams-next.md)方法來取得 `IDiaEnumDebugStreamData` 物件。
 
 ## <a name="example"></a>範例
- 此範例示範如何存取單一資料流和其記錄。
+ 這個範例會示範如何存取單一資料流程和其記錄。
 
 ```C++
 void PrintStreamData(IDiaEnumDebugStreamData* pStream)
@@ -103,13 +103,13 @@ void PrintStreamData(IDiaEnumDebugStreamData* pStream)
 ```
 
 ## <a name="requirements"></a>需求
-標頭：dia2.h
+標頭： Dia2。h
 
-程式庫： diaguids.lib
+程式庫： diaguids
 
-DLL: msdia80.dll
+DLL： msdia80
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [介面 (偵錯介面存取 SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
 - [IDiaEnumDebugStreams::Item](../../debugger/debug-interface-access/idiaenumdebugstreams-item.md)
 - [IDiaEnumDebugStreams::Next](../../debugger/debug-interface-access/idiaenumdebugstreams-next.md)

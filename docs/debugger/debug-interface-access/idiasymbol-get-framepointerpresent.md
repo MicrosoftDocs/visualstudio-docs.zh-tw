@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_framepointerpresent |Microsoft Docs'
+title: IDiaSymbol：： get_framePointerPresent |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7914845bccb43ce302665428c824bbf3ebb2c819
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 1fce085f134b844d7e53e19d9e2ec057aa8a89ca
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64825342"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740673"
 ---
-# <a name="idiasymbolgetframepointerpresent"></a>IDiaSymbol::get_framePointerPresent
-擷取指定的框架指標是否存在的旗標。 使用時機[SymTagEnum 列舉](../../debugger/debug-interface-access/symtagenum.md)設定為`SymTagFunction`。
+# <a name="idiasymbolget_framepointerpresent"></a>IDiaSymbol::get_framePointerPresent
+抓取指定框架指標是否存在的旗標。 當[SymTagEnum 列舉](../../debugger/debug-interface-access/symtagenum.md)設定為 `SymTagFunction` 時使用。
 
 ## <a name="syntax"></a>語法
 
@@ -33,22 +33,22 @@ HRESULT get_framePointerPresent( 
 #### <a name="parameters"></a>參數
  `pRetVal`
 
-[out]]會傳回`TRUE`框架指標; 若不存在則，傳回`FALSE`。
+[out]]如果框架指標存在，則傳回 `TRUE`;否則，會傳回 `FALSE`。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，則傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。
+ 如果成功，會傳回 `S_OK`;否則，會傳回 `S_FALSE` 或錯誤碼。
 
 > [!NOTE]
-> 傳回值為`S_FALSE`表示此屬性不適用於符號。
+> @No__t_0 的傳回值表示該屬性不適用於符號。
 
 ## <a name="remarks"></a>備註
 
 ## <a name="requirements"></a>需求
- 標頭：dia2.h
+ 標頭： Dia2。h
 
- 程式庫： diaguids.lib
+ 程式庫： diaguids
 
- DLL: msdia100.dll
+ DLL： msdia100
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

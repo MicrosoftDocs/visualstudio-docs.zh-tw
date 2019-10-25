@@ -6,20 +6,20 @@ f1_keywords:
 - vs.dsltools.dsldesigner.editor
 helpviewer_keywords:
 - Domain-Specific Language Tools, user interface
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3bcc16b5287e4980d94a7cbcc4dff4d1f5f63d00
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8aacaa43dc9a95faee886440623fb4238abf9be5
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62808317"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748348"
 ---
 # <a name="overview-of-the-domain-specific-language-tools-user-interface"></a>Domain-Specific Language Tools 使用者介面概觀
-當您第一次開啟特定領域語言工具 （DSL 工具） 方案在 Visual Studio 中時，使用者介面將類似下列圖片。
+當您第一次在 Visual Studio 中開啟特定領域語言工具（DSL 工具）方案時，使用者介面會類似下圖。
 
  ![dsl 設計工具](../modeling/media/dsl_designer.png)
 
@@ -46,7 +46,7 @@ ms.locfileid: "62808317"
 |圖形與連接器|圖形指定模型項目應該如何在 DSL 圖表上顯示。連接線指定 DSL 圖表上可用來顯示關聯的線條。<br /><br /> 若要建立圖形或連接線，請將工具拖曳到圖表的 [圖表項目] 一側。|
 |圖形對應|圖形對應會顯示為領域模型圖表中的線條，將圖形連結到其所顯示的領域類別，或將連接線連結到其所顯示的領域關聯。|
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [特定領域語言工具概觀](../modeling/overview-of-domain-specific-language-tools.md)
 - [Domain-Specific Language Tools Glossary](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa) (特定領域語言工具字彙表)

@@ -11,12 +11,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a5fbe5dc38eaf029f0061c90c1ca37b1d9210b8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 60498c57e80b474bae8d5c320183442bbc4fcfd4
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72658132"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747440"
 ---
 # <a name="properties-of-port-shapes"></a>通訊埠圖案的屬性
 您可以在產生的設計工具中，使用埠圖形來代表網域類別。

@@ -11,18 +11,18 @@ dev_langs:
 - jsharp
 - C++
 helpviewer_keywords:
-- MSBuild (Visual C++), GetOutOfDateItems task
-- GetOutOfDateItems task (MSBuild (Visual C++))
+- MSBuild (C++), GetOutOfDateItems task
+- GetOutOfDateItems task (MSBuild (C++))
 author: mikeblome
 ms.author: mblome
 ms.workload:
 - multiple
-ms.openlocfilehash: e3393dd7e81fa98c49dd09a32457171286f88f18
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: d3dc343c595606faf5bd31d7f087f7ba8d95f69e
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62977486"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747311"
 ---
 # <a name="getoutofdateitems-task"></a>GetOutOfDateItems 工作
 
@@ -32,7 +32,7 @@ ms.locfileid: "62977486"
 
 下表說明 **GetOutOfDateItems** 工作的參數。
 
-|參數|說明|
+|參數|描述|
 |---------------|-----------------|
 |**CheckForInterdependencies**|選擇性的 **bool** 參數。|
 |**CommandMetadataName**|選擇性的 **string** 參數。|
@@ -44,6 +44,6 @@ ms.locfileid: "62977486"
 |**TLogDirectory**|必要的 **string** 參數。|
 |**TLogNamePrefix**|必要的 **string** 參數。|
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 [工作參考](../msbuild/msbuild-task-reference.md)

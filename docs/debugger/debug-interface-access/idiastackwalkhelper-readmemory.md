@@ -1,5 +1,5 @@
 ---
-title: IDiaStackWalkHelper::readMemory |Microsoft Docs
+title: IDiaStackWalkHelper：： readMemory |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 530b6c3f6873724f8a8ca06ea4228b017de281f9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 57afd033b2d969a4ed57dc713b2c4266e0ead632
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62831802"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741354"
 ---
 # <a name="idiastackwalkhelperreadmemory"></a>IDiaStackWalkHelper::readMemory
-從記憶體中的可執行檔的映像中讀取資料的區塊。
+從記憶體中可執行檔的影像讀取資料區塊。
 
 ## <a name="syntax"></a>語法
 
@@ -37,27 +37,27 @@ HRESULT readMemory( 
 #### <a name="parameters"></a>參數
  `type`
 
-[in]值，以從[MemoryTypeEnum 列舉](../../debugger/debug-interface-access/memorytypeenum.md)指定要讀取的記憶體類型的列舉類型。
+在[MemoryTypeEnum 列舉](../../debugger/debug-interface-access/memorytypeenum.md)列舉中的值，指定要讀取的記憶體類型。
 
  va
 
-[in]要從其中開始讀取的映像中的虛擬位址。
+在影像中要開始讀取的虛擬位址。
 
  `cbData`
 
-[in]以位元組為單位的資料緩衝區的大小。
+在資料緩衝區的大小（以位元組為單位）。
 
  `pcbData`
 
-[out]傳回實際讀取的位元組數目。 如果`pbData`是`NULL`，則這是可用的資料的位元組總數。
+脫銷傳回實際讀取的位元組數目。 如果 `NULL` `pbData`，則這是可用的資料位元組總數。
 
  `pbData`
 
-[in、 out]讀取的記憶體會填入緩衝區。
+[in、out]填入記憶體讀取的緩衝區。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
+ 如果成功，會傳回 `S_OK`;否則，會傳回錯誤碼。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)
 - [MemoryTypeEnum 列舉](../../debugger/debug-interface-access/memorytypeenum.md)

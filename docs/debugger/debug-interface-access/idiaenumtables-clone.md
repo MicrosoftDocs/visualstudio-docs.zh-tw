@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f9fc227983818aa1d1c91e147a5dce650844ad8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 522ac4080331c869c32585dfed789378b1271542
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62832817"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743785"
 ---
 # <a name="idiaenumtablesclone"></a>IDiaEnumTables::Clone
-建立列舉值，包含目前的列舉值相同的列舉型別狀態。
+建立枚舉器，其中包含與目前列舉值相同的列舉狀態。
 
 ## <a name="syntax"></a>語法
 
@@ -33,10 +33,10 @@ HRESULT Clone ( 
 #### <a name="parameters"></a>參數
  `ppenum`
 
-[out]傳回[IDiaEnumTables](../../debugger/debug-interface-access/idiaenumtables.md)物件，包含列舉值重複。 不重複的資料表，將列舉值。
+脫銷傳回[IDiaEnumTables](../../debugger/debug-interface-access/idiaenumtables.md)物件，其中包含重複的列舉值。 資料表不會重複，只有枚舉器。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
+ 如果成功，會傳回 `S_OK`;否則，會傳回錯誤碼。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [IDiaEnumTables](../../debugger/debug-interface-access/idiaenumtables.md)

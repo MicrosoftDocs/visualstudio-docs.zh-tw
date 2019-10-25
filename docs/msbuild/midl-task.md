@@ -18,20 +18,20 @@ dev_langs:
 - C++
 - jsharp
 helpviewer_keywords:
-- MSBuild (Visual C++), MIDL task
-- MIDL task (MSBuild (Visual C++))
+- MSBuild (C++), MIDL task
+- MIDL task (MSBuild (C++))
 ms.assetid: 727efa8c-3336-40b8-8bef-ae6cbd77a422
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 301ca4ee88368b9134bbbcd2dc41435590becaed
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: b2c5f7e425a7a8c1220ee4b9b09831831c8f0a9a
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62817567"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747243"
 ---
 # <a name="midl-task"></a>MIDL 工作
 包裝 Microsoft 介面定義語言 (MIDL) 編譯器工具 (midl.exe)。 如需詳細資訊，請參閱 [MIDL Command-Line Reference](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference) (MIDL 命令列參考)。
@@ -141,7 +141,7 @@ ms.locfileid: "62817567"
 
      如果是 `true`，即會檢查列舉值位於允許的範圍內。
 
-     如需詳細資訊，請參閱 midl.exe 的命令列說明 (**/?**) 中的 **/error enum** 選項。
+     如需詳細資訊，請參閱 midl.exe 的命令列說明 ( **/?** ) 中的 **/error enum** 選項。
 
 - **ErrorCheckRefPointers**
 
@@ -201,7 +201,7 @@ ms.locfileid: "62817567"
 
      選擇性的 **Boolean** 參數。
 
-     若為 `true`，就不會產生類型程式庫 (*.tlb*) 檔案。
+     若為 `true`，就不會產生類型程式庫 ( *.tlb*) 檔案。
 
      如需詳細資訊，請參閱 [MIDL Command-Line Reference](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference) (MIDL 命令列參考) 中的 **/notlb** 選項。
 
@@ -257,7 +257,7 @@ ms.locfileid: "62817567"
 
      選擇性的 **String[]** 參數。
 
-     指定一或多個「定義」；也就是要傳遞到 C 前置處理器的名稱和選擇性的值，如同透過 `#define` 指示詞。 每個定義的格式是 *name[=value]*。
+     指定一或多個「定義」；也就是要傳遞到 C 前置處理器的名稱和選擇性的值，如同透過 `#define` 指示詞。 每個定義的格式是 *name[=value]* 。
 
      如需詳細資訊，請參閱 [MIDL Command-Line Reference](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference) (MIDL 命令列參考) 中的 **/D** 選項。 另請參閱此表格中的 **UndefinePreprocessorDefinitions** 參數。
 
@@ -415,5 +415,5 @@ ms.locfileid: "62817567"
 
      如需詳細資訊，請參閱 [MIDL Command-Line Reference](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference) (MIDL 命令列參考) 中的 **/W** 選項。 另請參閱此表格中的 **WarnAsError** 參數。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [工作參考](../msbuild/msbuild-task-reference.md)

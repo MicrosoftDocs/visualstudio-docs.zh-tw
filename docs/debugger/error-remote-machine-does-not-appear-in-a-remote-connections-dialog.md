@@ -1,5 +1,5 @@
 ---
-title: 錯誤：遠端電腦未出現在 [遠端連線] 對話方塊 |Microsoft Docs
+title: 錯誤：遠端電腦未出現在 [遠端連線] 對話方塊中 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 dev_langs:
@@ -12,17 +12,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dd194bc26574e8004894a72ce29d753cabf66a21
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e7d76bf1a889f7c91ced6b85ce16ebeb6e9a1b75
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62850811"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72737517"
 ---
 # <a name="error-remote-machine-does-not-appear-in-a-remote-connections-dialog"></a>錯誤：遠端電腦未顯示於 [遠端連線] 對話方塊
 如果遠端電腦沒有出現在 [遠端連接] 對話方塊中，請檢查下列常見的原因。
 
- 如果您使用 managed 相容性模式，請參閱 Visual Studio 2010 文件：[疑難排解遠端偵錯-Visual Studio 2010](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/2ys11ead(v=vs.100))。
+ 如果您使用受控相容性模式，請參閱 Visual Studio 2010 文件：[Troubleshooting Remote Debugging - Visual Studio 2010](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/2ys11ead(v=vs.100)) (疑難排解遠端偵錯 - Visual Studio 2010)。
 
 ### <a name="common-causes-for-this-error"></a>這項錯誤的常見原因
 
@@ -34,5 +34,5 @@ ms.locfileid: "62850811"
 
 - 防毒軟體封鎖 Visual Studio 和遠端電腦之間的通訊。 若要修正此問題，請設定防毒軟體允許 Visual Studio 和遠端偵錯工具 (msvsmon) 進行通訊。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [Remote Debugging](../debugger/remote-debugging.md)

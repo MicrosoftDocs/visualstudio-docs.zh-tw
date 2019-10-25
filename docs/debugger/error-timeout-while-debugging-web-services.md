@@ -1,5 +1,5 @@
 ---
-title: 錯誤：偵錯 Web 服務時的逾時 |Microsoft Docs
+title: 錯誤：調試 Web 服務時發生超時 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 dev_langs:
@@ -15,14 +15,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9979f723a342aaefee80f9410c28aa68047b5e57
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5aba4fef3e1c787651eb961f80b3507090f250a2
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62850200"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72736882"
 ---
-# <a name="error-timeout-while-debugging-web-services"></a>錯誤：對 Web 服務進行偵錯時逾時
+# <a name="error-timeout-while-debugging-web-services"></a>錯誤：偵錯 Web 服務時逾時
 當您從呼叫程式碼逐步執行 XML Web Service 時，呼叫有時可能會逾時，並產生無法繼續偵錯的結果。 您可能會看到像這樣的錯誤訊息。
 
 ```cmd
@@ -39,5 +39,5 @@ Service1 obj = new Service1();
 obj.TimeOut = -1; // infinite time out.
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [偵錯 Web 應用程式：錯誤和疑難排解](../debugger/debugging-web-applications-errors-and-troubleshooting.md)

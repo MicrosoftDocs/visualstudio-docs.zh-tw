@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_builtInKind |Microsoft Docs
+title: IDiaSymbol：： get_builtInKind |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d18edfaa5e30ba4a8c3e370eca1ab2398e6229a
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 183e4da9eebb1a6b26bceb38a3f00a5a64864c8a
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "62837483"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740886"
 ---
-# <a name="idiasymbolgetbuiltinkind"></a>IDiaSymbol::get_builtInKind
-擷取 HLSL 型別的內建類型。
+# <a name="idiasymbolget_builtinkind"></a>IDiaSymbol::get_builtInKind
+抓取 HLSL 類型的內建種類。
 
 ## <a name="syntax"></a>語法
 
@@ -30,10 +30,10 @@ HRESULT get_buildInKind(
 #### <a name="parameters"></a>參數
  `pRetVal`
 
-[out]指標`DWORD`保存內建的 HLSL 型別。
+脫銷保留 HLSL 類型內建種類之 `DWORD` 的指標。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，則傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。
+ 如果成功，會傳回 `S_OK`;否則，會傳回 `S_FALSE` 或錯誤碼。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

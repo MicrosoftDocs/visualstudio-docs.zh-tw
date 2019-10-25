@@ -24,12 +24,12 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - multiple
-ms.openlocfilehash: ac3d6225bc765ec404784589d2faa06f155265ab
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: 93c6826f2903f30fbbdcb9c40ec5f695df32ac05
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72446291"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747056"
 ---
 # <a name="annotating-structs-and-classes"></a>註釋結構和類別
 
@@ -45,7 +45,7 @@ ms.locfileid: "72446291"
 
      欄位，其可寫入的大小是由 `size` 以項目 (或位元組) 為單位指定。
 
-- `_Field_size_part_(size, count)`，`_Field_size_part_opt_(size, count)`，`_Field_size_bytes_part_(size, count)`，`_Field_size_bytes_part_opt_(size, count)`
+- `_Field_size_part_(size, count)`、`_Field_size_part_opt_(size, count)`、`_Field_size_bytes_part_(size, count)`、`_Field_size_bytes_part_opt_(size, count)`
 
      欄位，其可寫入的大小是由 `size` 以項目 (或位元組) 為單位指定，而且可以讀取這些項目 (位元組) 的 `count`。
 
@@ -71,7 +71,7 @@ ms.locfileid: "72446291"
 
     ```
 
-     @No__t-1 類型 `pM` 的緩衝區大小（以位元組為單位）會被視為：
+     `MyStruct *` 類型的參數 `pM` 的緩衝區大小（以位元組為單位），則會被視為：
 
     ```cpp
     min(pM->nSize, sizeof(MyStruct))
@@ -107,8 +107,8 @@ struct MyBuffer
 此範例的附注：
 
 - `_Field_z_` 相當於 `_Null_terminated_`。  [名稱] 欄位 `_Field_z_` 指定 [名稱] 欄位是以 null 結束的字串。
-- @no__t 的 `_Field_range_`-1 指定 `bufferSize` 的值應該在1和 `MaxBufferSize` （兩者皆包含）中。
-- @No__t-0 和 @no__t 1 注釋的最終結果是相同的。 對於具有類似配置的結構或類別，`_Field_size_` 較容易閱讀和維護，因為它的參考和計算比對等的 `_Struct_size_bytes_` 注釋少。 `_Field_size_` 不需要轉換成位元組大小。 如果 [位元組大小] 是唯一的選項（例如，針對 void 指標欄位），則可以使用 `_Field_size_bytes_`。 如果 `_Struct_size_bytes_` 和 `_Field_size_` 都存在，則這兩個工具都可供使用。 如果這兩個批註不同意，該怎麼辦。
+- `bufferSize` 的 `_Field_range_` 會指定 `bufferSize` 的值應該在1和 `MaxBufferSize` （兩者皆包含）中。
+- @No__t_0 和 `_Field_size_` 注釋的最終結果是相同的。 針對具有類似配置的結構或類別，`_Field_size_` 較容易閱讀和維護，因為它的參考和計算比對等的 `_Struct_size_bytes_` 注釋少。 `_Field_size_` 不需要轉換成位元組大小。 如果 [位元組大小] 是唯一的選項，例如，針對 void 指標欄位，可以使用 `_Field_size_bytes_`。 如果 `_Struct_size_bytes_` 和 `_Field_size_` 都存在，則兩者都可供工具使用。 如果這兩個批註不同意，該怎麼辦。
 
 ## <a name="see-also"></a>請參閱
 

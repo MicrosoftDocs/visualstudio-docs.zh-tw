@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_databytes |Microsoft Docs'
+title: IDiaSymbol：： get_dataBytes |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 22ae91323300cd148cf13c4c4aef293709ef73f2
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 79c14427e967736b0dbe1ddb235f9e90b3ecc10f
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64786533"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740717"
 ---
-# <a name="idiasymbolgetdatabytes"></a>IDiaSymbol::get_dataBytes
-擷取資訊，請參閱 OEM 符號的資料位元組數。
+# <a name="idiasymbolget_databytes"></a>IDiaSymbol::get_dataBytes
+抓取 OEM 符號的資料位元組。
 
 ## <a name="syntax"></a>語法
 
@@ -35,27 +35,27 @@ HRESULT get_dataBytes ( 
 #### <a name="parameters"></a>參數
  `cbData`
 
-[in]保留的資料緩衝區的大小。
+在用來保存資料的緩衝區大小。
 
  `pcbData`
 
-[out]傳回寫入位元組數目，或者，如果`data`參數是`NULL`，傳回可用的位元組數目。
+脫銷傳回寫入的位元組數目，或者，如果 `NULL` `data` 參數，則會傳回可用的位元組數目。
 
  `data[]`
-- [out]會填入資料位元組的緩衝區。
+- [out，]以資料位元組填滿的緩衝區。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，則傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。
+ 如果成功，會傳回 `S_OK`;否則，會傳回 `S_FALSE` 或錯誤碼。
 
 > [!NOTE]
-> 傳回值為`S_FALSE`表示屬性不是適用於符號。
+> @No__t_0 的傳回值表示該屬性不適用於符號。
 
 ## <a name="requirements"></a>需求
 
 |需求|描述|
 |-----------------|-----------------|
-|標頭：|dia2.h|
+|標頭：|dia2。h|
 |版本:|DIA SDK v7.0|
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

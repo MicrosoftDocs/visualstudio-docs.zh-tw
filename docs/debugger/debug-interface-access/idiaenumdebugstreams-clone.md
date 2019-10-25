@@ -1,5 +1,5 @@
 ---
-title: 'Idiaenumdebugstreams:: Clone |Microsoft Docs'
+title: IDiaEnumDebugStreams：： Clone |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 11a7f8e051350b066c745c47530ab4ed818f8b1b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 105a84b7c4a1b0a43f8f8008cffbebe7b6e23af5
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62838385"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72744785"
 ---
 # <a name="idiaenumdebugstreamsclone"></a>IDiaEnumDebugStreams::Clone
-建立列舉值，包含目前的列舉值相同的列舉型別狀態。
+建立枚舉器，其中包含與目前列舉值相同的列舉狀態。
 
 ## <a name="syntax"></a>語法
 
@@ -33,10 +33,10 @@ HRESULT Clone ( 
 #### <a name="parameters"></a>參數
  `ppenum`
 
-[out]傳回[IDiaEnumDebugStreams](../../debugger/debug-interface-access/idiaenumdebugstreams.md)物件，包含列舉值重複。 不重複的資料流，此列舉值。
+脫銷傳回[IDiaEnumDebugStreams](../../debugger/debug-interface-access/idiaenumdebugstreams.md)物件，其中包含重複的列舉值。 資料流程不會重複，只有枚舉器。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
+ 如果成功，會傳回 `S_OK`;否則，會傳回錯誤碼。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [IDiaEnumDebugStreams](../../debugger/debug-interface-access/idiaenumdebugstreams.md)

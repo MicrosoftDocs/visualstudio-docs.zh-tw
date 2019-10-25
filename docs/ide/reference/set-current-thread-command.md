@@ -13,12 +13,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 83e7e2f2751d76571e980e0d0e83aa62f174d91c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 0d782a507d57e459aa5735cf34717f13e41d4cde
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72645311"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748620"
 ---
 # <a name="set-current-thread-command"></a>設定目前執行緒命令
 將指定的執行緒設為目前執行緒。

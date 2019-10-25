@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c3a6d3eb61f4e4a7504b184477ec1b3f2a8ba83
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 091d2f5996d53341e57c5c1b2125609642a156eb
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62829611"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72744020"
 ---
 # <a name="idiaenumsourcefiles"></a>IDiaEnumSourceFiles
-列舉各種資料來源中包含的原始程式檔。
+列舉資料來源中包含的各種來源檔案。
 
 ## <a name="syntax"></a>語法
 
@@ -29,25 +29,25 @@ IDiaEnumSourceFiles : IUnknown
 ```
 
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法
-下表顯示的方法`IDiaEnumSourceFiles`。
+下表顯示 `IDiaEnumSourceFiles` 的方法。
 
 |方法|描述|
 |------------|-----------------|
-|[IDiaEnumSourceFiles::get__NewEnum](../../debugger/debug-interface-access/idiaenumsourcefiles-get-newenum.md)|擷取`IEnumVARIANT Interface`這個列舉值的版本。|
-|[IDiaEnumSourceFiles::get_Count](../../debugger/debug-interface-access/idiaenumsourcefiles-get-count.md)|擷取來源檔案的數目。|
-|[IDiaEnumSourceFiles::Item](../../debugger/debug-interface-access/idiaenumsourcefiles-item.md)|透過索引中擷取原始程式檔。|
-|[IDiaEnumSourceFiles::Next](../../debugger/debug-interface-access/idiaenumsourcefiles-next.md)|擷取列舉序列中的原始程式檔中指定的數目。|
-|[IDiaEnumSourceFiles::Skip](../../debugger/debug-interface-access/idiaenumsourcefiles-skip.md)|略過列舉序列中的原始程式檔指定的數目。|
-|[IDiaEnumSourceFiles::Reset](../../debugger/debug-interface-access/idiaenumsourcefiles-reset.md)|將列舉型別序列重設到開頭。|
-|[IDiaEnumSourceFiles::Clone](../../debugger/debug-interface-access/idiaenumsourcefiles-clone.md)|建立列舉值，包含目前的列舉值相同的列舉型別狀態。|
+|[IDiaEnumSourceFiles::get__NewEnum](../../debugger/debug-interface-access/idiaenumsourcefiles-get-newenum.md)|抓取此列舉值的 `IEnumVARIANT Interface` 版本。|
+|[IDiaEnumSourceFiles::get_Count](../../debugger/debug-interface-access/idiaenumsourcefiles-get-count.md)|抓取原始檔的數目。|
+|[IDiaEnumSourceFiles::Item](../../debugger/debug-interface-access/idiaenumsourcefiles-item.md)|藉由索引來抓取原始程式檔。|
+|[IDiaEnumSourceFiles::Next](../../debugger/debug-interface-access/idiaenumsourcefiles-next.md)|在列舉序列中，抓取指定的來源檔案數目。|
+|[IDiaEnumSourceFiles::Skip](../../debugger/debug-interface-access/idiaenumsourcefiles-skip.md)|略過列舉序列中指定的原始程式檔數目。|
+|[IDiaEnumSourceFiles::Reset](../../debugger/debug-interface-access/idiaenumsourcefiles-reset.md)|將列舉序列重設為開頭。|
+|[IDiaEnumSourceFiles::Clone](../../debugger/debug-interface-access/idiaenumsourcefiles-clone.md)|建立枚舉器，其中包含與目前列舉值相同的列舉狀態。|
 
 ## <a name="remarks"></a>備註
 
-## <a name="notes-for-callers"></a>呼叫端資訊
-取得這個介面，藉由呼叫`QueryInterface`方法[IDiaTable](../../debugger/debug-interface-access/idiatable.md)物件。 請參閱詳細資料的範例。
+## <a name="notes-for-callers"></a>呼叫者的注意事項
+在[IDiaTable](../../debugger/debug-interface-access/idiatable.md)物件上呼叫 `QueryInterface` 方法，以取得此介面。 如需詳細資訊，請參閱範例。
 
 ## <a name="example"></a>範例
-此範例示範如何取得`IDiaEnumSourceFiles`DIA 工作階段物件中的資料表清單中的介面。 如需存取原始程式檔資訊的範例，請參閱 < [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)介面。
+這個範例示範如何從 DIA 會話物件中的資料表清單取得 `IDiaEnumSourceFiles` 介面。 如需存取原始程式檔資訊的範例，請參閱[IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)介面。
 
 ```C++
 
@@ -80,13 +80,13 @@ IDiaEnumSourceFiles* GetEnumSourceFiles(IDiaSession *pSession)
 ```
 
 ## <a name="requirements"></a>需求
-標頭：dia2.h
+標頭： Dia2。h
 
-程式庫： diaguids.lib
+程式庫： diaguids
 
-DLL: msdia80.dll
+DLL： msdia80
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [介面 (偵錯介面存取 SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
 - [IDiaSession::findFile](../../debugger/debug-interface-access/idiasession-findfile.md)
 - [IDiaSession::findLinesByLinenum](../../debugger/debug-interface-access/idiasession-findlinesbylinenum.md)

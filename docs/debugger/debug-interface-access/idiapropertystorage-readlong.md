@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2fb277368e23cf51a4d3d3b69226ee6bf093d6c3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: af9d65c571c5e0a281b968d922c9b5170bd1c561
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839611"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742895"
 ---
 # <a name="idiapropertystoragereadlong"></a>IDiaPropertyStorage::ReadLONG
-讀取`LONG`屬性集合中的值。
+讀取屬性集內的 `LONG` 值。
 
 ## <a name="syntax"></a>語法
 
@@ -34,17 +34,17 @@ HRESULT ReadDLONG ( 
 #### <a name="parameters"></a>參數
  `id`
 
-[in]要讀取之屬性的識別項 (`PROPID`定義為 WTypes.h 中`ULONG`)。
+在要讀取之屬性的識別碼（`PROPID` 在 Wtypes.h 中定義為 `ULONG`）。
 
  `pValue`
 
-[out]傳回屬性值。
+脫銷傳回屬性值。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，則傳回`S_OK`; 否則會傳回錯誤碼。 傳回`E_INVALIDARG`如果屬性不是型別的`LONG`。
+ 如果成功，會傳回 `S_OK`;否則會傳回錯誤碼。 如果屬性不是 `LONG` 類型，則傳回 `E_INVALIDARG`。
 
 ## <a name="remarks"></a>備註
- A`LONG`由 Windows 與 32 位元帶正負號的整數所定義。
+ @No__t_0 是由 Windows 定義為32位帶正負號的整數。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)

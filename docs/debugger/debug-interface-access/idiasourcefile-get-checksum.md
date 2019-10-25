@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2dc866cf392d2464756fc4e5cb19bfd02fcdea58
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8f4367a7862dabe248dfbe08e64c45598abe3679
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62838063"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741839"
 ---
-# <a name="idiasourcefilegetchecksum"></a>IDiaSourceFile::get_checksum
-擷取的總和檢查碼位元組。
+# <a name="idiasourcefileget_checksum"></a>IDiaSourceFile::get_checksum
+抓取總和檢查碼位元組。
 
 ## <a name="syntax"></a>語法
 
@@ -35,26 +35,26 @@ HRESULT get_checksum ( 
 #### <a name="parameters"></a>參數
  `cbData`
 
-[in]資料緩衝區，以位元組為單位的大小。
+在資料緩衝區的大小（以位元組為單位）。
 
  `pcbData`
 
-[out]傳回總和檢查碼位元組數目。 這個參數不可以是 `NULL`。
+脫銷傳回總和檢查碼位元組數。 這個參數不可以是 `NULL`。
 
  `data`
 
-[in、 out]緩衝區填滿的總和檢查碼位元組。 如果這個參數是`NULL`，然後`pcbData`傳回所需的位元組數目。
+[in、out]填入總和檢查碼位元組的緩衝區。 如果此參數為 `NULL`，則 `pcbData` 會傳回所需的位元組數目。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
+ 如果成功，會傳回 `S_OK`;否則，會傳回錯誤碼。
 
 ## <a name="remarks"></a>備註
- 若要判斷用來產生總和檢查碼位元組的總和檢查碼演算法的類型，請呼叫[idiasourcefile:: Get_checksumtype](../../debugger/debug-interface-access/idiasourcefile-get-checksumtype.md)方法。
+ 若要判斷用來產生總和檢查碼位元組的總和檢查碼演算法類型，請呼叫[IDiaSourceFile：： get_checksumType](../../debugger/debug-interface-access/idiasourcefile-get-checksumtype.md)方法。
 
- 總和檢查碼通常會產生從原始程式檔的映像，因此原始程式檔中的變更會反映在總和檢查碼位元組中的變更。 如果不相符的總和檢查碼位元組產生從載入的映像的檔案，則應該視為檔案的總和檢查碼損毀或竄改。
+ 總和檢查碼通常是從來源檔案的影像產生，因此來源檔案中的變更會反映在總和檢查碼位元組的變更中。 如果總和檢查碼位元組與從檔案載入的影像產生的總和檢查碼不符，則應該將檔案視為已損毀或遭到篡改。
 
- 典型的總和檢查碼不能超過 32 個位元組的大小，但不是假設這是最大大小的總和檢查碼。 設定`data`參數來`NULL`取得擷取總和檢查碼時所需的位元組數目。 然後配置適當大小的緩衝區，並呼叫這個方法一次使用新的緩衝區。
+ 一般總和檢查碼的大小絕不會超過32個位元組，但不會假設為總和檢查碼的大小上限。 將 `data` 參數設定為 `NULL`，以取得抓取總和檢查碼所需的位元組數目。 然後配置適當大小的緩衝區，並使用新的緩衝區多次呼叫此方法。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)
 - [IDiaSourceFile::get_checksumType](../../debugger/debug-interface-access/idiasourcefile-get-checksumtype.md)

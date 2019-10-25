@@ -1,5 +1,5 @@
 ---
-title: 'Idiaenumdebugstreamdata:: Item |Microsoft Docs'
+title: IDiaEnumDebugStreamData：： Item |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f4a3e3f668789f98600cd649716413a57b13130
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e221516198d186dd08c353123ce4236f0be1383c
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62838502"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72744812"
 ---
 # <a name="idiaenumdebugstreamdataitem"></a>IDiaEnumDebugStreamData::Item
-擷取指定的記錄。
+抓取指定的記錄。
 
 ## <a name="syntax"></a>語法
 
@@ -36,24 +36,24 @@ HRESULT Item ( 
 #### <a name="parameters"></a>參數
  索引
 
-[in]要擷取記錄的索引。 索引是在範圍介於 0 到`count`-1，其中`count`會傳回[idiaenumdebugstreamdata:: Get_count](../../debugger/debug-interface-access/idiaenumdebugstreamdata-get-count.md)。
+在要抓取之記錄的索引。 索引的範圍是0到 `count`-1，其中 `count` 是由[IDiaEnumDebugStreamData：： get_Count](../../debugger/debug-interface-access/idiaenumdebugstreamdata-get-count.md)傳回。
 
  cbData
 
-[in]資料緩衝區，以位元組為單位的大小。
+在資料緩衝區的大小（以位元組為單位）。
 
  pcbData
 
-[out]傳回動作傳回的位元組的數目。 如果`data`已`NULL`，然後`pcbData`包含可在指定的記錄資料的位元組總數。
+脫銷傳回傳回的位元組數目。 如果 `NULL``data`，則 `pcbData` 包含指定記錄中可用的資料位元組總數。
 
  data[]
 
-[out]偵錯資料流記錄資料會填入緩衝區。
+脫銷以 debug 資料流程記錄資料填入的緩衝區。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。 傳回`E_INVALIDARG`無效的參數如果`index`參數超出範圍。
+ 如果成功，會傳回 `S_OK`;否則，會傳回錯誤碼。 傳回無效參數的 `E_INVALIDARG`，如果 `index` 參數超出範圍，則傳回。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md)
 - [IDiaEnumDebugStreamData::Next](../../debugger/debug-interface-access/idiaenumdebugstreamdata-next.md)
 - [IDiaEnumDebugStreams::Item](../../debugger/debug-interface-access/idiaenumdebugstreams-item.md)

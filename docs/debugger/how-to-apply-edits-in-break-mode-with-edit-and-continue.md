@@ -1,5 +1,5 @@
 ---
-title: 在編輯後繼續的中斷模式套用編輯 |Microsoft Docs
+title: 以編輯後繼續在中斷模式中套用編輯 |Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -23,17 +23,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d6c821c63354ec1b7cc83e302a3c2682982696e2
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 05340b4922262eb134aca8fef4bf215342e5a997
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63387681"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72734024"
 ---
-# <a name="how-to-apply-edits-in-break-mode-with-edit-and-continue-visual-basic"></a>HOW TO：套用在中斷模式中的編輯，以編輯後繼續 (Visual Basic)
+# <a name="how-to-apply-edits-in-break-mode-with-edit-and-continue-visual-basic"></a>如何：以編輯後繼續在中斷模式中套用編輯（Visual Basic）
 您可以在中斷模式中使用 [編輯後繼續] 編輯程式碼，並繼續進行而不需停止及重新啟動執行。
 
-如需有關使用 編輯後繼續偵錯時的限制，請參閱[支援的程式碼變更 (C#和 Visual Basic)](../debugger/supported-code-changes-csharp.md)。
+如需在進行偵錯工具時使用 [編輯後繼續] 的限制，請參閱支援的程式[代碼變更（C#和 Visual Basic）](../debugger/supported-code-changes-csharp.md)。
 
 ### <a name="to-edit-code-in-break-mode"></a>在中斷模式中編輯程式碼
 
@@ -47,11 +47,11 @@ ms.locfileid: "63387681"
 
          -或-
 
-    - 發生例外狀況時，選擇**啟用編輯**上**例外狀況助理**。
+    - 發生例外狀況時，請選擇 [例外狀況**助理**] 上的 [**啟用編輯**]。
 
-2. 進行任何所需和所支援的程式碼變更。
+2. 進行任何想要和支援的程式碼變更。
 
-     如需詳細資訊，請參閱 <<c0> [ 支援的程式碼變更 (C#和 Visual Basic)](../debugger/supported-code-changes-csharp.md)。</c0>
+     如需詳細資訊，請參閱[支援的C#程式碼變更（和 Visual Basic）](../debugger/supported-code-changes-csharp.md)。
 
     > [!NOTE]
     > 如果您嘗試進行 [編輯後繼續] 不允許的程式碼變更，您的編輯會被加上紫色波浪線，而且 [工作清單] 中會出現工作。 除非您復原不合法的程式碼變更，否則將無法繼續執行程式碼。
@@ -60,6 +60,6 @@ ms.locfileid: "63387681"
 
      這時程式碼便會一併執行您套用至專案的編輯。
 
-## <a name="see-also"></a>另請參閱
-- [支援的程式碼變更 (C#和 Visual Basic)](../debugger/supported-code-changes-csharp.md)
+## <a name="see-also"></a>請參閱
+- [支援的程式碼C#變更（和 Visual Basic）](../debugger/supported-code-changes-csharp.md)
 - [編輯後繼續 (Visual Basic)](../debugger/edit-and-continue-visual-basic.md)

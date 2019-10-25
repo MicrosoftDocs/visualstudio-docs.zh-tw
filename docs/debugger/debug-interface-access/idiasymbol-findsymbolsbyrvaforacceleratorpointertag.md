@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::findSymbolsByRVAForAcceleratorPointerTag |Microsoft Docs
+title: IDiaSymbol：： findSymbolsByRVAForAcceleratorPointerTag |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 673ca8137244fed933df0be3fa0221115951a9c1
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: f0d05946db816e6bd209e364e11d5091163941a4
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "62838993"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741147"
 ---
 # <a name="idiasymbolfindsymbolsbyrvaforacceleratorpointertag"></a>IDiaSymbol::findSymbolsByRVAForAcceleratorPointerTag
-指定對應的標記值，這個方法會傳回此虛設常式函式，在指定的相對虛擬位址中所包含的符號的列舉。
+假設有對應的標記值，這個方法會傳回在指定的相對虛擬位址上，此存根函式中所包含的符號列舉。
 
 ## <a name="syntax"></a>語法
 
@@ -32,22 +32,22 @@ HRESULT findSymbolsByRVAForAcceleratorPointerTag (
 #### <a name="parameters"></a>參數
  `tagValue`
 
-[in]位於 pointee 符號記錄指標標記值。
+在找到 pointee 符號記錄的指標標記值。
 
  `rva`
 
-[in]用來篩選對應至 pointee 變數，以指定的標記值的符號 rva。
+在Rva，用來篩選對應至具有指定標記值之 pointee 變數的符號。
 
  `ppResult`
 
-[out]指標`IDiaEnumSymbols`初始化與結果的介面指標。
+脫銷以結果初始化之 `IDiaEnumSymbols` 介面指標的指標。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，則傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。
+ 如果成功，會傳回 `S_OK`;否則，會傳回 `S_FALSE` 或錯誤碼。
 
 ## <a name="remarks"></a>備註
- 只有在呼叫這個方法`IDiaSymbol`加速器虛設常式函式對應的介面。
+ 只在對應至快速鍵 stub 函式的 `IDiaSymbol` 介面上呼叫這個方法。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
 - [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)

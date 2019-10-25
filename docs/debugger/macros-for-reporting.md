@@ -1,5 +1,5 @@
 ---
-title: 報告巨集 |Microsoft Docs
+title: 報告的宏 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -22,20 +22,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c92424275a1dff69863b81fbf8567fbc4b84499
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c2129db98293cef678527fb331992c6c5960d8f9
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62905551"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72731394"
 ---
 # <a name="macros-for-reporting"></a>報告巨集
-進行偵錯，您可以使用 **_RPTn**並 **_RPTFn** CRTDBG 中定義的巨集。H，來取代使用`printf`陳述式。 您不需要在 inclose **#ifdef**s，因為它們會自動地消失在您的發行組建 **_DEBUG**未定義。
+若要進行偵錯工具，您可以使用 **_RPTn**和 **_RPTFn**宏（定義于 crtdbg.h 裡中）。H：取代 `printf` 語句的用法。 您不需要在 **#ifdef**s 中 inclose 它們，因為當 **_debug**未定義時，它們會自動在您的發行組建中消失。
 
 |巨集|描述|
 |-----------|-----------------|
-|**_RPT0**、**_RPT1**、**_RPT2**、**_RPT3**、**_RPT4**|輸出訊息字串和零至四個引數。 從 _RPT1 到 **_RPT4**，訊息字串作為引數的 printf 樣式格式字串。|
-|**_RPTF0**、**_RPTF1**、**_RPTF2**、**_RPTF4**|與 **_RPTn** 相同，但是這些巨集也會輸出巨集所在位置的檔案名稱和行號。|
+|**_RPT0**、 **_RPT1**、 **_RPT2**、 **_RPT3**、 **_RPT4**|輸出訊息字串和零至四個引數。 從 _RPT1 到 **_RPT4**，訊息字串作為引數的 printf 樣式格式字串。|
+|**_RPTF0**、 **_RPTF1**、 **_RPTF2**、 **_RPTF4**|與 **_RPTn** 相同，但是這些巨集也會輸出巨集所在位置的檔案名稱和行號。|
 
  參考下列範例：
 
@@ -54,7 +54,7 @@ ms.locfileid: "62905551"
 if (someVar > MAX_SOMEVAR) _RPTF2(_CRT_WARN, "In NameOfThisFunc( ), someVar= %d, otherVar= %d\n", someVar, otherVar );
 ```
 
-您可能會發現特定應用程式需要的偵錯報告 C 執行階段程式庫提供的巨集不會提供。 在這些情況下，您可以撰寫專為符合您自己的需求所設計的巨集。 例如，您可以在其中一個標頭檔案中，包含如下的程式碼，來定義名為 **ALERT_IF2** 的巨集：
+您可能會發現特定的應用程式需要 debug 報告，而 C 執行時間程式庫所提供的宏並未提供。 在這些情況下，您可以撰寫專為符合您自己的需求而設計的宏。 例如，您可以在其中一個標頭檔案中，包含如下的程式碼，來定義名為 **ALERT_IF2** 的巨集：
 
 ```cpp
 #ifndef _DEBUG                  /* For RELEASE builds */
@@ -70,14 +70,14 @@ if (someVar > MAX_SOMEVAR) _RPTF2(_CRT_WARN, "In NameOfThisFunc( ), someVar= %d,
 #endif
 ```
 
- 若要一次呼叫**ALERT_IF2**可以執行的所有函式**printf**程式碼：
+ **ALERT_IF2**的一次呼叫可以執行**printf**程式碼的所有功能：
 
 ```cpp
 ALERT_IF2(someVar > MAX_SOMEVAR, "OVERFLOW! In NameOfThisFunc( ),
 someVar=%d, otherVar=%d.\n", someVar, otherVar );
 ```
 
- 您可以輕鬆變更自訂的巨集，以增加或減少將資訊報告不同的目的地。 當您偵錯需求不同時，這種方法會特別有用。
+ 您可以輕鬆地變更自訂宏，將更多或更少的資訊報告至不同的目的地。 當您的偵錯工具需求演進時，這個方法特別有用。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [CRT 偵錯技術](../debugger/crt-debugging-techniques.md)

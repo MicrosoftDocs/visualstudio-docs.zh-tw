@@ -263,12 +263,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 621615879f4e9ee61a2830fd93c53a2baf64b898
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d8700d058c694afbea551e5b117a0e4a0461f2e8
+ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72622439"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72806162"
 ---
 # <a name="code-analysis-warnings-for-managed-code-by-checkid"></a>CheckId 受控碼的程式碼分析警告
 
@@ -339,7 +339,7 @@ ms.locfileid: "72622439"
 | CA1064 | [CA1064：例外狀況必須是公用](../code-quality/ca1064.md) | 內部例外狀況只會在自己的內部範圍內顯示。 當例外狀況超出內部範圍後，只能使用基本例外狀況來攔截例外狀況。 如果內部例外狀況繼承自 <xref:System.Exception>、<xref:System.SystemException> 或 <xref:System.ApplicationException>，則外部程式碼將不會有足夠的資訊來知道該如何處理例外狀況。 |
 | CA1065 | [CA1065：不要在非預期的位置中引發例外狀況](../code-quality/ca1065.md) | 不可擲回例外狀況 (Exception) 的方法卻擲回例外狀況。 |
 | CA1068 | [CA1068： CancellationToken 參數必須是最後的](../code-quality/ca1068.md) | 方法的 CancellationToken 參數不是最後一個參數。 |
-| CA1200 | [CA1200：避免使用具有前置詞的 cref 標記](../code-quality/ca1200.md) | XML 檔標記中的[cref](https://docs.microsoft.com/dotnet/csharp/programming-guide/xmldoc/cref-attribute)屬性工作表示「程式碼參考」。 它會指定標記的內部文字是程式碼項目，例如類型、方法或屬性。 請避免使用具有前置詞的 `cref` 標記，因為它會防止編譯器驗證參考。 它也會防止 Visual Studio 的整合式開發環境（IDE）在重構期間尋找和更新這些符號參考。 |
+| CA1200 | [CA1200：避免使用具有前置詞的 cref 標記](../code-quality/ca1200.md) | XML 檔標記中的[cref](/dotnet/csharp/programming-guide/xmldoc/cref-attribute)屬性工作表示「程式碼參考」。 它會指定標記的內部文字是程式碼項目，例如類型、方法或屬性。 請避免使用具有前置詞的 `cref` 標記，因為它會防止編譯器驗證參考。 它也會防止 Visual Studio 的整合式開發環境（IDE）在重構期間尋找和更新這些符號參考。 |
 | CA1300 | [CA1300：必須指定 MessageBoxOptions](../code-quality/ca1300.md) | 若要對使用由右至左讀取順序的文化特性 (Culture) 正確顯示訊息方塊，MessageBoxOptions 列舉類型的 RightAlign 和 RtlReading 成員必須傳遞至 Show 方法。 |
 | CA1301 | [CA1301：避免使用重複的快速鍵](../code-quality/ca1301.md) | 便捷鍵也稱為快速鍵，可讓鍵盤使用 ALT 鍵存取控制項。 當多個控制項有重複的存取金鑰時，存取金鑰的行為未妥善定義。 |
 | CA1302 | [CA1302：不要以硬式編碼的方式加入適用於特定地區設定的字串](../code-quality/ca1302.md) | System.Environment.SpecialFolder 列舉 (Enumeration) 包含參考特殊系統資料夾的成員。 這些資料夾的位置在不同的作業系統上可有不同的值，使用者可以變更某些位置，而且位置會當地語系化。 Environment.GetFolderPath 方法會傳回與 Environment.SpecialFolder 列舉相關聯、已當地語系化且適用於目前執行中之電腦的位置。 |
@@ -399,7 +399,7 @@ ms.locfileid: "72622439"
 | CA1726 | [CA1726：建議使用慣用詞彙](../code-quality/ca1726.md) | 外部可見的識別項名稱包含有替代慣用詞彙存在的詞彙。 或者該名稱包含 "Flag" 或 "Flags" 一詞。 |
 | CA1800 | [CA1800：不要執行不必要的轉型](../code-quality/ca1800.md) | 重複轉型會降低效能，尤其是在精簡型態的反覆運算陳述式中執行轉型時。 |
 | CA1801 | [CA1801：必須檢閱未使用的參數](../code-quality/ca1801.md) | 方法簽章包括不用於方法主體中的參數； |
-| CA1802 |[CA1802：建議在適當時使用常值](../code-quality/ca1802.md) |欄位宣告為 static 和 read-only (在 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 中為 Shared 和 ReadOnly)，並使用編譯時期能計算的值進行初始化。 因為指派給目標欄位的值是在編譯時期可，所以請將宣告變更為 const （[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 中的 Const）欄位，以便在編譯時期（而不是在執行時間）計算該值。 |
+| CA1802 |[CA1802：建議在適當時使用常值](../code-quality/ca1802.md) |欄位宣告為 static 和 read-only (在 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 中為 Shared 和 ReadOnly)，並使用編譯時期能計算的值進行初始化。 因為指派給目標欄位的值是在編譯時期可，所以請將宣告變更為 const （[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]中的 Const）欄位，以便在編譯時期（而不是在執行時間）計算該值。 |
 | CA1804 | [CA1804：必須移除未使用的區域變數](../code-quality/ca1804.md) | 未使用的區域變數和不必要的設定，會增加組件的大小並降低效能。 |
 | CA1806 | [CA1806：不要忽略方法的結果](../code-quality/ca1806.md) | 已建立但從未使用新物件、已呼叫會建立並傳回新字串的方法，而新字串從未使用過，或者 COM 或 P/Invoke 方法傳回從未使用的 HRESULT 或錯誤碼。 |
 | CA1809 |[CA1809：避免在方法中包含過多區域變數](../code-quality/ca1809.md) | 常見的效能最佳化作法是在處理器暫存器中儲存值，而非記憶體，這稱為「註冊 (Enregistering) 值」。 若要增加 enregistered 所有區域變數的機率，請將本機變數的數目限制為64。 |

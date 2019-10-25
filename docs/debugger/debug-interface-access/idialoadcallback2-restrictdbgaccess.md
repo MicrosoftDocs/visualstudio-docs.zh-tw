@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 24317ff7a79815e5af2306b09cc8d2aa3bfdde0d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 79756c2f9ab9e69fa45041e2ddaa2ff2119c27c5
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62832653"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743008"
 ---
 # <a name="idialoadcallback2restrictdbgaccess"></a>IDiaLoadCallback2::RestrictDBGAccess
-會決定是否從.dbg 檔案中允許尋找偵錯資訊。
+決定是否允許從 dbg 檔案尋找 debug 資訊。
 
 ## <a name="syntax"></a>語法
 
@@ -29,10 +29,10 @@ HRESULT RestrictDBGAccess();
 ```
 
 ## <a name="return-value"></a>傳回值
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
+ 如果成功，會傳回 `S_OK`;否則，會傳回錯誤碼。
 
 ## <a name="remarks"></a>備註
- 任何傳回值，而非`S_OK`以避免需要從.dbg 檔案的偵錯資訊。
+ 除了 `S_OK` 以外的任何傳回值，以防止從 dbg 檔案尋找 debug 資訊。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md)

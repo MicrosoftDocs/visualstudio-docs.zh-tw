@@ -1,5 +1,5 @@
 ---
-title: 執行背景工作處理序的使用者帳戶 |Microsoft Docs
+title: 在使用者帳戶下執行背景工作進程 |Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -20,22 +20,22 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aebe1faf31d53fb44cf5efddbee154018e42a365
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 5905ad87eb534013bdfd786a79e40e46087dff55
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62847754"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72732823"
 ---
-# <a name="how-to-run-the-worker-process-under-a-user-account"></a>HOW TO：在使用者帳戶下執行背景工作處理序
+# <a name="how-to-run-the-worker-process-under-a-user-account"></a>如何：在使用者帳戶下執行背景工作處理序
 若要設定電腦以便在某個使用者帳戶下執行 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 背景工作處理序 (aspnet_wp.exe 或 w3wp.exe)，請依照下列步驟執行。
 
  > [!IMPORTANT]
- > 從 Windows Server 2008 R2 開始，我們建議您使用[ApplicationPoolIdentity](/iis/manage/configuring-security/application-pool-identities)做為每個應用程式集區識別。
+ > 從 Windows Server 2008 R2 開始，我們建議使用[ApplicationPoolIdentity](/iis/manage/configuring-security/application-pool-identities)做為每個應用程式集區的身分識別。
 
 ## <a name="procedure"></a>程序
 
-#### <a name="to-run-aspnetwpexe-under-a-user-account"></a>若要在使用者帳戶下執行 aspnet_wp.exe
+#### <a name="to-run-aspnet_wpexe-under-a-user-account"></a>若要在使用者帳戶下執行 aspnet_wp.exe
 
 1. 開啟 machine.config 檔，這個檔案位於電腦中安裝執行階段之路徑下的 CONFIG 資料夾內。
 
@@ -68,7 +68,7 @@ ms.locfileid: "62847754"
    net start w3svc
    ```
 
-6. 找出 Temporary [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Files 資料夾，它應該與 CONFIG 資料夾位於相同的路徑中。 以滑鼠右鍵按一下 [Temporary [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Files] 資料夾，然後選擇捷徑功能表上的 [屬性]  。
+6. 找出 Temporary [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Files 資料夾，它應該與 CONFIG 資料夾位於相同的路徑中。 以滑鼠右鍵按一下 [Temporary [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Files] 資料夾，然後選擇捷徑功能表上的 [屬性] 。
 
 7. 在 [ **暫存 ASP.NET 檔案屬性** ] 對話方塊內，按一下 [ **安全性** ] 索引標籤。
 
@@ -86,6 +86,6 @@ ms.locfileid: "62847754"
 
 13. 按一下 [ **確定** ] 以關閉此 [ **暫存 ASP.NET 檔案屬性** ] 對話方塊。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [針對 ASP.NET 應用程式進行偵錯](../debugger/how-to-enable-debugging-for-aspnet-applications.md)
 - [ASP.NET 偵錯：系統需求](../debugger/aspnet-debugging-system-requirements.md)

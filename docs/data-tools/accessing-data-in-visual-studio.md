@@ -14,12 +14,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: f2a33a0090be980c221ebfbe7f3116cdfef7b23b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 07c7c9db37a951b689e28e87a02c7f41a667685b
+ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648991"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72807057"
 ---
 # <a name="access-data-in-visual-studio"></a>使用 Visual Studio 存取資料
 
@@ -94,7 +94,7 @@ ms.locfileid: "72648991"
 
 ### <a name="data-providers"></a>資料提供者
 
-若要讓資料庫在 ADO.NET 中可供使用，它必須有自訂*ADO.NET 資料提供者*，否則必須公開 ODBC 或 OLE DB 介面。 Microsoft 提供 SQL Server 產品的[ADO.NET 資料提供者清單](https://docs.microsoft.com/dotnet/framework/data/adonet/ado-net-overview)，以及 ODBC 和 OLE DB 提供者。
+若要讓資料庫在 ADO.NET 中可供使用，它必須有自訂*ADO.NET 資料提供者*，否則必須公開 ODBC 或 OLE DB 介面。 Microsoft 提供 SQL Server 產品的[ADO.NET 資料提供者清單](/dotnet/framework/data/adonet/ado-net-overview)，以及 ODBC 和 OLE DB 提供者。
 
 ### <a name="data-modeling"></a>資料模型化
 
@@ -144,9 +144,9 @@ C++使用 Microsoft Azure 儲存體的程式可以使用[Microsoft Azure 儲存�
 
 [ADO.NET](/dotnet/framework/data/adonet/index) &mdash;Describes ADO.NET 架構，以及如何使用 ADO.NET 類別來管理應用程式資料，以及與資料來源和 XML 互動。
 
-[ADO.NET Entity Framework](https://docs.microsoft.com/ef/ef6/) &mdash;Describes 如何建立資料應用程式，讓開發人員可以針對概念模型進行程式設計，而不是直接針對關係資料庫。
+[ADO.NET Entity Framework](/ef/ef6/) &mdash;Describes 如何建立資料應用程式，讓開發人員可以針對概念模型進行程式設計，而不是直接針對關係資料庫。
 
-[WCF Data Services 4.5](/dotnet/framework/data/wcf/index) &mdash;Describes 如何使用 [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] 在 web 或內部網路上部署資料服務，以執行[開放式資料通訊協定（OData）](https://www.odata.org/)。
+[WCF Data Services 4.5](/dotnet/framework/data/wcf/index)&mdash;描述如何使用 [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] 在 web 或內部網路上部署資料服務，以執行[開放式資料通訊協定（OData）](https://www.odata.org/)。
 
 [Office 方案中的資料](../vsto/data-in-office-solutions.md)&mdash;Contains 主題的連結，說明資料在 office 方案中的運作方式。 這包括架構導向的程式設計、資料快取，以及伺服器端資料存取的相關資訊。
 

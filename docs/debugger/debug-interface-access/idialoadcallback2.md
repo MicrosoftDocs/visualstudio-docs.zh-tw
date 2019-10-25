@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: daf0b48aca06b404824059030052223a8545a6b0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7db8b6a115acdafeca2e7e0adbe11be97834cd6d
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839702"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742954"
 ---
 # <a name="idialoadcallback2"></a>IDiaLoadCallback2
-DIA 符號尋找程序，讓尋找的程序加諸的限制會收到回呼。
+從 DIA 符號尋找程式接收回呼，允許在尋找進程上加諸限制。
 
 ## <a name="syntax"></a>語法
 
@@ -29,26 +29,26 @@ IDiaLoadCallback2 : IDiaLoadCallback
 ```
 
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法
- 中的方法除了[IDiaLoadCallback](../../debugger/debug-interface-access/idialoadcallback.md)介面，這個介面會公開下列方法：
+ 除了[IDiaLoadCallback](../../debugger/debug-interface-access/idialoadcallback.md)介面中的方法之外，此介面也會公開下列方法：
 
 |方法|描述|
 |------------|-----------------|
-|[IDiaLoadCallback2::RestrictOriginalPathAccess](../../debugger/debug-interface-access/idialoadcallback2-restrictoriginalpathaccess.md)|決定如果尋找.pdb 檔案中原始的偵錯目錄。|
-|[IDiaLoadCallback2::RestrictReferencePathAccess](../../debugger/debug-interface-access/idialoadcallback2-restrictreferencepathaccess.md)|決定如果尋找.pdb 檔案中的.exe 檔案所在的路徑。|
-|[IDiaLoadCallback2::RestrictDBGAccess](../../debugger/debug-interface-access/idialoadcallback2-restrictdbgaccess.md)|會決定是否從.dbg 檔案中允許尋找偵錯資訊。|
-|[IDiaLoadCallback2::RestrictSystemRootAccess](../../debugger/debug-interface-access/idialoadcallback2-restrictsystemrootaccess.md)|決定是否允許搜尋.pdb 檔案系統根目錄中。|
+|[IDiaLoadCallback2::RestrictOriginalPathAccess](../../debugger/debug-interface-access/idialoadcallback2-restrictoriginalpathaccess.md)|判斷是否在原始 debug 目錄中尋找 .pdb 檔案。|
+|[IDiaLoadCallback2::RestrictReferencePathAccess](../../debugger/debug-interface-access/idialoadcallback2-restrictreferencepathaccess.md)|決定是否允許在 .exe 檔案所在的路徑中尋找 .pdb 檔案。|
+|[IDiaLoadCallback2::RestrictDBGAccess](../../debugger/debug-interface-access/idialoadcallback2-restrictdbgaccess.md)|決定是否允許從 dbg 檔案尋找 debug 資訊。|
+|[IDiaLoadCallback2::RestrictSystemRootAccess](../../debugger/debug-interface-access/idialoadcallback2-restrictsystemrootaccess.md)|決定是否允許在系統根目錄中搜尋 .pdb 檔案。|
 
 ## <a name="remarks"></a>備註
- 用戶端應用程式會實作這個介面，並提供給它的參考，在呼叫[idiadatasource:: Loaddataforexe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)方法。 實作的所有方法中，請都記得[IDiaLoadCallback](../../debugger/debug-interface-access/idialoadcallback.md)以及介面。
+ 用戶端應用程式會執行此介面，並在[IDiaDataSource：： loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)方法的呼叫中提供它的參考。 請記得也要在[IDiaLoadCallback](../../debugger/debug-interface-access/idialoadcallback.md)介面中執行所有方法。
 
 ## <a name="requirements"></a>需求
- 標頭：dia2.h
+ 標頭： Dia2。h
 
- 程式庫： diaguids.lib
+ 程式庫： diaguids
 
- DLL: msdia80.dll
+ DLL： msdia80
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [介面 (偵錯介面存取 SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
 - [IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)
 - [IDiaReadExeAtOffsetCallback](../../debugger/debug-interface-access/idiareadexeatoffsetcallback.md)

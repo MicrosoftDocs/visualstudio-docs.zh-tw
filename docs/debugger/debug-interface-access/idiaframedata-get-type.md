@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 90a7096550dc3de67ba38058c4029a6bd3c30ca4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a4af060a4a0c36067a07a78166d1cf9cbc62e90e
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62830232"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743473"
 ---
-# <a name="idiaframedatagettype"></a>IDiaFrameData::get_type
-擷取編緝器特定畫面格型別。
+# <a name="idiaframedataget_type"></a>IDiaFrameData::get_type
+捕獲編譯器特定的框架類型。
 
 ## <a name="syntax"></a>語法
 
@@ -33,11 +33,11 @@ HRESULT get_type ( 
 #### <a name="parameters"></a>參數
  `pRetVal`
 
-[out]傳回值，以從[StackFrameTypeEnum 列舉](../../debugger/debug-interface-access/stackframetypeenum.md)列舉，指出編譯器特定畫面格型別。
+脫銷傳回[StackFrameTypeEnum 列舉](../../debugger/debug-interface-access/stackframetypeenum.md)列舉中的值，指出編譯器特定的框架類型。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，會傳回 `S_OK`。 傳回`S_FALSE`不支援這個屬性，則為。 否則會傳回錯誤碼。
+ 如果成功，會傳回 `S_OK`。 如果不支援此屬性，則傳回 `S_FALSE`。 否則會傳回錯誤碼。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)
 - [StackFrameTypeEnum 列舉](../../debugger/debug-interface-access/stackframetypeenum.md)

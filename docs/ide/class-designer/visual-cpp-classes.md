@@ -1,5 +1,5 @@
 ---
-title: 類別設計工具中的 Visual C++ 類別
+title: C++類別設計工具中的類別
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,14 +12,14 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 596d7a41b9f63179a0469840d948430ed0294b56
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 84fc10a3f62ea4bef82a466b2d76c46e73eb7e6e
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647641"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748932"
 ---
-# <a name="visual-c-classes-in-class-designer"></a>類別設計工具中的 Visual C++ 類別
+# <a name="c-classes-in-class-designer"></a>C++類別設計工具中的類別
 
 **類別設計工具**支援 C++ 類別，並以視覺化 Visual Basic 和 C# 類別圖形的方式來視覺化原生 C++ 類別，差異在於 C++ 類別可以有多重繼承關聯性。 您可以展開類別圖形，以顯示類別中的更多欄位和方法，或將它摺疊以節省空間。
 
@@ -174,7 +174,7 @@ typedef struct
 
 ## <a name="see-also"></a>請參閱
 
-- [使用 Visual C++ 程式碼](working-with-visual-cpp-code.md)
+- [使用程式C++代碼](working-with-visual-cpp-code.md)
 - [類別和結構](/cpp/cpp/classes-and-structs-cpp)
 - [匿名類別類型](/cpp/cpp/anonymous-class-types)
 - [多重繼承](https://msdn.microsoft.com/library/6td5yws2.aspx)

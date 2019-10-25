@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c1724ee3e81ac00ed048f323105842361ec22bc7
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: f36b4bf9fdd362f4941e33745d59d481a473c607
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "62827290"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741107"
 ---
-# <a name="idiasymbolgetacceleratorpointertags"></a>IDiaSymbol::get_acceleratorPointerTags
-傳回所有加速器指標的標記值對應至C++AMP 加速器虛設常式的函式。
+# <a name="idiasymbolget_acceleratorpointertags"></a>IDiaSymbol::get_acceleratorPointerTags
+傳回對應至C++ AMP 快速鍵 stub 函數的所有快速鍵指標標記值。
 
 ## <a name="syntax"></a>語法
 
@@ -32,21 +32,21 @@ HRESULT get_acceleratorPointerTags(
 #### <a name="parameters"></a>參數
  `cnt`
 
-[in]輸出陣列的大小`pPointerTags`。
+在輸出陣列 `pPointerTags` 的大小。
 
  `pcnt`
 
-[out]加速器指標中的標記數目C++AMP 加速器虛設常式的函式。
+脫銷C++ AMP 加速器存根函式中的快速鍵指標標記計數。
 
  `pPointerTags`
 
-[out]A`DWORD`加速器指標標記值中會填入的陣列指標C++AMP 加速器虛設常式的函式。
+脫銷@No__t_0 的陣列指標，它會填入C++ AMP 加速器 stub 函式中的快速鍵指標標記值。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，則傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。
+ 如果成功，會傳回 `S_OK`;否則，會傳回 `S_FALSE` 或錯誤碼。
 
 ## <a name="remarks"></a>備註
- 在呼叫這個方法`IDiaSymbol`介面會對應到C++AMP 加速器虛設常式的函式。
+ 這個方法是在對應到C++ AMP 加速器 stub 函數的 `IDiaSymbol` 介面上呼叫。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -8,15 +8,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ae024f0d91c980fa8e787b21c93d32a6431203e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c54e8b12f4d3b924b363f42cb098a1d528a8108b
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62895840"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72735971"
 ---
 # <a name="endcapture"></a>EndCapture
-結束用來啟動在擷取間隔`BeginCapture`。
+結束以 `BeginCapture` 啟動的捕捉間隔。
 
 ## <a name="syntax"></a>語法
 
@@ -25,10 +25,10 @@ void EndCapture();
 ```
 
 ## <a name="remarks"></a>備註
- 在擷取間隔通常會跨越一個框架，例如當您想要擷取的相關特定種類的繪製呼叫的圖形資訊的子集。 如果擷取間隔跨越呼叫呈現，則會擷取圖形資訊的兩個框架。 第一個畫面格跨越的呼叫之間的間隔`BeginCapture`呈現; 的呼叫與第二個畫面格跨越呈現呼叫之後的第一個 Direct3D 事件和呼叫之間的間隔`EndCapture`。
+ 捕捉間隔通常會跨越一個框架的子集，例如，當您只想要捕獲特定一種繪製呼叫的圖形資訊時。 如果捕捉間隔跨越目前的呼叫，則會捕捉兩個圖形資訊的框架。 第一個框架會跨越呼叫 `BeginCapture` 與目前的呼叫之間的間隔;第二個框架會跨越出現的呼叫之後的第一個 Direct3D 事件與 `EndCapture` 的呼叫之間的間隔。
 
- 若要擷取的間隔，您必須準備您的應用程式，來擷取和記錄的圖形資訊 — 也就是您必須先呼叫[Init](init.md)的執行個體透過`VsgDbg`類別在呼叫之前`BeginCapture`或`EndCapture`。
+ 若要捕捉間隔，您必須準備您的應用程式來捕捉和記錄圖形資訊，也就是說，您必須先透過 `VsgDbg` 類別的實例呼叫[Init](init.md) ，然後才可以呼叫 `BeginCapture` 或 `EndCapture`。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [BeginCapture](begincapture.md)
 - [CaptureCurrentFrame](capturecurrentframe.md)

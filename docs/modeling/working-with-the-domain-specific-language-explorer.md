@@ -9,12 +9,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 352315b518102c5b9576c19611522e87d0e67ffe
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 5ede0f61d2cec78ac4981e487b72eb4d78508c98
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666908"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748164"
 ---
 # <a name="working-with-the-domain-specific-language-explorer"></a>使用網域指定的語言總管
 [ **DSL Explorer** ] 會在樹狀檢視中顯示數種資訊。 如需有關 [DSL Explorer] 中大部分專案的詳細資訊，請參閱[如何定義特定領域語言](../modeling/how-to-define-a-domain-specific-language.md)。

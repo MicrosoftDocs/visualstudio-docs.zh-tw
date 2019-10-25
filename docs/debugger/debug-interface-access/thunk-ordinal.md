@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 776ee35e57b62463d47fc6f7fa26133f507f16f9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1de2d6c9700dcb7b1106c3693d855bb1d8ae2cfa
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62854444"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72738502"
 ---
-# <a name="thunkordinal"></a>THUNK_ORDINAL
-將指定的 thunk 類型。
+# <a name="thunk_ordinal"></a>THUNK_ORDINAL
+指定 Thunk 類型。
 
 ## <a name="syntax"></a>語法
 
@@ -39,26 +39,26 @@ typedef enum THUNK_ORDINAL {
 ```
 
 ## <a name="elements"></a>項目
-標準 THUNK_ORDINAL_NOTYPE thunk。
+THUNK_ORDINAL_NOTYPE 標準 Thunk。
 
-THUNK_ORDINAL_ADJUSTOR A `this` adjustor thunk。
+THUNK_ORDINAL_ADJUSTOR `this` ADJUSTOR Thunk。
 
-THUNK_ORDINAL_VCALL 虛擬呼叫 thunk。
+THUNK_ORDINAL_VCALL 虛擬呼叫 Thunk。
 
-THUNK_ORDINAL_PCODE p-code thunk。
+THUNK_ORDINAL_PCODE P-code Thunk。
 
-THUNK_ORDINAL_LOAD 延遲載入 thunk。
+THUNK_ORDINAL_LOAD 延遲載入 Thunk。
 
-（trampoline thunk 用來從一個記憶體空間的呼叫退回到另一個） 的累加 THUNK_ORDINAL_TRAMP_INCREMENTAL trampoline thunk。
+THUNK_ORDINAL_TRAMP_INCREMENTAL 累加 trampoline Thunk （trampoline Thunk 是用來從某個記憶體空間將呼叫彈跳到另一個）。
 
-THUNK_ORDINAL_TRAMP_BRANCHISLAND 分支點 trampoline thunk。
+THUNK_ORDINAL_TRAMP_BRANCHISLAND 分支點 trampoline Thunk。
 
 ## <a name="remarks"></a>備註
-這個列舉型別中的值會傳回呼叫[idiasymbol:: Get_thunkordinal](../../debugger/debug-interface-access/idiasymbol-get-thunkordinal.md)方法。
+此列舉中的值會從[IDiaSymbol：： get_ThunkOrdinal](../../debugger/debug-interface-access/idiasymbol-get-thunkordinal.md)方法的呼叫傳回。
 
 ## <a name="requirements"></a>需求
-標頭： cvconst.h
+標頭： cvconst。h
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [列舉和結構](../../debugger/debug-interface-access/enumerations-and-structures.md)
 - [IDiaSymbol::get_thunkOrdinal](../../debugger/debug-interface-access/idiasymbol-get-thunkordinal.md)

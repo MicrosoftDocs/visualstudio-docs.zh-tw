@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2b9cd6f120d5699464c9e7311721898a727bf47e
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: 0173ed557afa47129e0cc92d9ef9b2d94a7b198f
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72450433"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72730316"
 ---
 # <a name="remote-debugging-a-c-project-in-visual-studio"></a>在 Visual Studio 中C++遠端偵錯專案
 若要在不同的電腦上進行 Visual Studio 應用程式的偵測，請在您要部署應用程式的電腦上安裝並執行遠端工具、將專案設定為從 Visual Studio 連接到遠端電腦，然後部署並執行您的應用程式。

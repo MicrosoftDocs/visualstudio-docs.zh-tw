@@ -1,5 +1,5 @@
 ---
-title: HOW TO：安裝視覺化檢視 |Microsoft Docs
+title: 如何：安裝視覺化檢視 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -17,18 +17,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b9b09bc837cae4eaad2c0dbcb2bb82a7daa248eb
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 3c9c2fa8a8fb300c3b7eb702ae3efd216e17141a
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63389326"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72733098"
 ---
-# <a name="how-to-install-a-visualizer"></a>HOW TO：安裝視覺化檢視
+# <a name="how-to-install-a-visualizer"></a>如何：安裝視覺化檢視
 建立視覺化檢視後，您必須安裝該視覺化檢視，使 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中可以使用它。 安裝視覺化檢視的程序很簡單。
 
 > [!NOTE]
-> 在 UWP 應用程式，僅限標準的文字，支援 HTML、 XML 及 JSON 視覺化檢視。 不支援自訂 (使用者建立的) 視覺化檢視。
+> 在 UWP 應用程式中，只支援標準文字、HTML、XML 和 JSON 視覺化檢視。 不支援自訂 (使用者建立的) 視覺化檢視。
 
 ### <a name="to-install-a-visualizer"></a>安裝視覺化檢視
 
@@ -44,6 +44,6 @@ ms.locfileid: "63389326"
 
 4. 重新啟動偵錯工作階段。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [建立自訂視覺化檢視](../debugger/create-custom-visualizers-of-data.md)
 - [如何：撰寫視覺化檢視](/visualstudio/debugger/create-custom-visualizers-of-data)

@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e6b893a40172bfd806130bef663da8676b513042
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 135f2b0a042dd74b573a0746831a48fb27e7c2a9
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62832834"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743524"
 ---
-# <a name="idiaframedatagetprogram"></a>IDiaFrameData::get_program
-擷取用來計算目前的函式的呼叫之前設定的暫存器的程式字串。
+# <a name="idiaframedataget_program"></a>IDiaFrameData::get_program
+抓取在呼叫目前的函式之前，用來計算暫存器集的程式字串。
 
 ## <a name="syntax"></a>語法
 
@@ -33,23 +33,23 @@ HRESULT get_program ( 
 #### <a name="parameters"></a>參數
  `pRetVal`
 
-[out]傳回程式字串。
+脫銷傳回程序字串。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，會傳回 `S_OK`。 傳回`S_FALSE`不支援這個屬性，則為。 否則會傳回錯誤碼。
+ 如果成功，會傳回 `S_OK`。 如果不支援此屬性，則傳回 `S_FALSE`。 否則會傳回錯誤碼。
 
 ## <a name="remarks"></a>備註
- 程式字串是一串巨集，以便建立序言解譯。 例如，典型的堆疊框架可能會使用程式字串`"$T0 $ebp = $eip $T0 4 + ^ = $ebp $T0 ^ = $esp $T0 8 + ="`。 格式為反向波蘭文標記法，其中運算子後面接著運算元。 `T0` 表示在堆疊上的暫存變數。 此範例會執行下列步驟：
+ 程式字串是為了建立序言而解讀的一系列宏。 例如，一般的堆疊框架可能會使用程式字串 `"$T0 $ebp = $eip $T0 4 + ^ = $ebp $T0 ^ = $esp $T0 8 + ="`。 此格式為反向波蘭文標記法，其中運算子會遵循運算元。 `T0` 代表堆疊上的暫存變數。 這個範例會執行下列步驟：
 
-1. 將暫存器的內容移`ebp`至`T0`。
+1. 將 register `ebp` 的內容移至 `T0`。
 
-2. 新增`4`中的值`T0`產生地址、 從該位址，取得值，以及將值儲存在暫存器`eip`。
+2. 將 `4` 新增至 `T0` 中的值，以產生位址、從該位址取得值，並將值儲存在 register `eip` 中。
 
-3. 從儲存在的位址取值`T0`，並將該值儲存在暫存器`ebp`。
+3. 從儲存在 `T0` 中的位址取得值，並將該值儲存在 register `ebp` 中。
 
-4. 新增`8`中的值`T0`，並將該值儲存在暫存器`esp`。
+4. 將 `8` 新增至 `T0` 中的值，並將該值儲存在 register `esp` 中。
 
-   請注意，程式字串是特定的 CPU，並設定由目前的堆疊框架的函式的呼叫慣例。
+   請注意，程式字串專屬於 CPU 和針對目前堆疊框架所表示的函式所設定的呼叫慣例。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)

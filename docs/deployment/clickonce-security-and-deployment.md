@@ -17,76 +17,76 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e723e53ab7f79589deb712fd7b854dabb87bcbb8
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 88cb136ca4da6f4ca324726edbdaefbd3a27711c
+ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69551165"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72806942"
 ---
 # <a name="clickonce-security-and-deployment"></a>ClickOnce 安全性和部署
-[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]是一種部署技術, 可讓您建立自行更新的 Windows 應用程式, 並以最少的使用者互動來進行安裝和執行。 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]如果您已使用 Visual Basic 和視覺效果C#開發專案, 提供發佈和更新以 ClickOnce 技術部署之應用程式的完整支援。 如需部署視覺化C++應用程式的相關資訊, 請參閱[Visual C++ applications 的 ClickOnce 部署](/cpp/windows/clickonce-deployment-for-visual-cpp-applications)。
+[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 是一種部署技術，可讓您建立自行更新的 Windows 應用程式，並以最少的使用者互動來進行安裝和執行。 如果您已使用 Visual Basic 和視覺效果C#開發專案，[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 提供發佈和更新以 ClickOnce 技術部署之應用程式的完整支援。 如需部署視覺化C++應用程式的相關資訊，請參閱[Visual C++ applications 的 ClickOnce 部署](/cpp/windows/clickonce-deployment-for-visual-cpp-applications)。
 
- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]部署克服了部署中的三個主要問題:
+ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 部署克服了部署中的三個主要問題：
 
-- **更新應用程式的困難。** 使用 Microsoft Windows Installer 部署時, 每當更新應用程式時, 使用者就可以安裝更新 (msp 檔案), 並將它套用到已安裝的產品;透過[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]部署, 您可以自動提供更新。 只會下載應用程式中已變更的部分, 然後從新的並存資料夾重新安裝完整的已更新應用程式。
+- **更新應用程式的困難。** 使用 Microsoft Windows Installer 部署時，每當更新應用程式時，使用者就可以安裝更新（msp 檔案），並將它套用到已安裝的產品;透過 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 部署，您可以自動提供更新。 只會下載應用程式中已變更的部分，然後從新的並存資料夾重新安裝完整的已更新應用程式。
 
-- **對使用者電腦的影響。** 有了 Windows Installer 部署, 應用程式通常會依賴共用元件, 而且可能會發生版本衝突的情況;使用[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]部署時, 每個應用程式都是獨立的, 而且不會干擾其他應用程式。
+- **對使用者電腦的影響。** 有了 Windows Installer 部署，應用程式通常會依賴共用元件，而且可能會發生版本衝突的情況;使用 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 部署時，每個應用程式都是獨立的，而且不會干擾其他應用程式。
 
-- **安全性權限。** Windows Installer 部署需要系統管理許可權, 而且只允許受限的使用者安裝;[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]部署可讓非系統管理使用者安裝並僅授與應用程式所需的代碼啟用安全性許可權。
+- **安全性權限。** Windows Installer 部署需要系統管理許可權，而且只允許受限的使用者安裝;[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 部署可讓非系統管理使用者安裝並僅授與應用程式所需的代碼啟用安全性許可權。
 
-  在過去, 這些問題有時候會導致開發人員決定建立 Web 應用程式, 而不是以 Windows 為基礎的應用程式, 而犧牲豐富的使用者介面來方便安裝。 藉由使用以部署[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]的應用程式, 您可以擁有這兩種技術的最佳選擇。
+  在過去，這些問題有時候會導致開發人員決定建立 Web 應用程式，而不是以 Windows 為基礎的應用程式，而犧牲豐富的使用者介面來方便安裝。 藉由使用以 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]部署的應用程式，您可以擁有這兩種技術的最佳選擇。
 
 ## <a name="what-is-a-clickonce-application"></a>什麼是 ClickOnce 應用程式？
- 應用程式[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]是使用技術發行的任何 Windows Presentation Foundation (xbap)、Windows Forms ( *.exe*)、主控台應用程式 ( *.exe*) 或 Office 方案 (.dll)。 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 您可以使用三[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]種不同的方式來發佈應用程式: 從網頁、網路檔案共用, 或從 cd-rom 之類的媒體。 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式可以安裝在終端使用者的電腦上, 並在本機執行, 即使電腦已離線, 也可以在僅限線上模式下執行, 而不需要在使用者的電腦上永久安裝任何專案。 如需詳細資訊, 請參閱[選擇 ClickOnce 部署策略](../deployment/choosing-a-clickonce-deployment-strategy.md)。
+ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式是使用 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 技術發行的任何 Windows Presentation Foundation （*xbap*）、Windows Forms （ *.exe*）、主控台應用程式（ *.exe*）或 Office 方案（ *.dll*）。 您可以用三種不同的方式發佈 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式：從網頁、網路檔案共用或 CD-ROM 等媒體。 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式可以安裝在終端使用者的電腦上，並在本機執行，即使電腦已離線，或可以在僅限線上模式下執行，而不需要在使用者的電腦上永久安裝任何專案。 如需詳細資訊，請參閱[選擇 ClickOnce 部署策略](../deployment/choosing-a-clickonce-deployment-strategy.md)。
 
- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式可以自行更新;他們可以檢查是否有較新的版本可供使用, 並自動取代任何已更新的檔案。 開發人員可以指定更新行為；網路系統管理員也可以控制更新策略，例如將更新標記為強制性。 使用者或系統管理員也可以將更新回復為先前的版本。 如需詳細資訊, 請參閱[選擇 ClickOnce 更新策略](../deployment/choosing-a-clickonce-update-strategy.md)。
+ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式可以自行更新;他們可以檢查是否有較新的版本可供使用，並自動取代任何已更新的檔案。 開發人員可以指定更新行為；網路系統管理員也可以控制更新策略，例如將更新標記為強制性。 使用者或系統管理員也可以將更新回復為先前的版本。 如需詳細資訊，請參閱[選擇 ClickOnce 更新策略](../deployment/choosing-a-clickonce-update-strategy.md)。
 
- 因為[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式是隔離的, 所以安裝[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]或執行應用程式無法中斷現有的應用程式。 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式是獨立的;每[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]個應用程式都會安裝到每個使用者、每個應用程式的安全快取, 並執行。 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式會在網際網路或內部網路安全性區域中執行。 如有需要，應用程式可以要求提高安全性權限。 如需詳細資訊, 請參閱[保護 ClickOnce 應用程式](../deployment/securing-clickonce-applications.md)。
+ 因為 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 的應用程式是隔離的，所以安裝或執行 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式無法中斷現有的應用程式。 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 的應用程式都是獨立的;每個 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式都會安裝到每個使用者、每個應用程式的安全快取，並從該安全性執行。 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式會在網際網路或內部網路安全性區域中執行。 如有需要，應用程式可以要求提高安全性權限。 如需詳細資訊，請參閱[保護 ClickOnce 應用程式](../deployment/securing-clickonce-applications.md)。
 
 ## <a name="how-clickonce-security-works"></a>ClickOnce 安全性的運作方式
- 核心[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]安全性以憑證、代碼啟用安全性原則和 ClickOnce 信任提示為基礎。
+ 核心 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 安全性是以憑證、代碼啟用安全性原則和 ClickOnce 信任提示為基礎。
 
 ### <a name="certificates"></a>憑證
- Authenticode 憑證是用來驗證應用程式發行者的真實性。 藉由使用 Authenticode 進行應用程式部署, ClickOnce 有助於防止有害程式拿本身, 做為來自已建立、可信任來源的合法程式。 或者, 也可以使用憑證來簽署應用程式和部署資訊清單, 以證明檔案尚未遭到篡改。 如需詳細資訊, 請參閱[ClickOnce 和 Authenticode](../deployment/clickonce-and-authenticode.md)。 憑證也可以用來設定用戶端電腦, 使其具有受信任的發行者清單。 如果應用程式來自受信任的發行者, 則可以在不需要任何使用者互動的情況下進行安裝。 如需詳細資訊，請參閱[受信任的應用程式部署概觀](../deployment/trusted-application-deployment-overview.md)。
+ Authenticode 憑證是用來驗證應用程式發行者的真實性。 藉由使用 Authenticode 進行應用程式部署，ClickOnce 有助於防止有害程式拿本身，做為來自已建立、可信任來源的合法程式。 或者，也可以使用憑證來簽署應用程式和部署資訊清單，以證明檔案尚未遭到篡改。 如需詳細資訊，請參閱[ClickOnce 和 Authenticode](../deployment/clickonce-and-authenticode.md)。 憑證也可以用來設定用戶端電腦，使其具有受信任的發行者清單。 如果應用程式來自受信任的發行者，則可以在不需要任何使用者互動的情況下進行安裝。 如需詳細資訊，請參閱[信任的應用程式部署概觀](../deployment/trusted-application-deployment-overview.md)。
 
 ### <a name="code-access-security"></a>程式碼存取安全性
- 代碼啟用安全性有助於限制程式碼對受保護資源的存取。 在大多數情況下, 您可以選擇 [網際網路] 或 [近端內部網路] 區域來限制許可權。 使用**ProjectDesigner**中的 [**安全性**] 頁面, 要求適用于應用程式的區域。 您也可以使用受限制的許可權來偵錯工具, 以模擬終端使用者體驗。 如需詳細資訊，請參閱 [ClickOnce 應用程式的程式碼存取安全性](../deployment/code-access-security-for-clickonce-applications.md)。
+ 代碼啟用安全性有助於限制程式碼對受保護資源的存取。 在大多數情況下，您可以選擇 [網際網路] 或 [近端內部網路] 區域來限制許可權。 使用**ProjectDesigner**中的 [**安全性**] 頁面，要求適用于應用程式的區域。 您也可以使用受限制的許可權來偵錯工具，以模擬終端使用者體驗。 如需詳細資訊，請參閱 [ClickOnce 應用程式的程式碼存取安全性](../deployment/code-access-security-for-clickonce-applications.md)。
 
 ### <a name="clickonce-trust-prompt"></a>ClickOnce 信任提示
- 如果應用程式要求的許可權比區域所允許的更多, 則系統會提示使用者進行信任決策。 使用者可以決定是否信任執行 ClickOnce 應用程式, 例如 Windows Forms 應用程式、Windows Presentation Foundation 應用程式、主控台應用程式、XAML 瀏覽器應用程式和 Office 方案。 如需詳細資訊，請參閱[如何：設定 ClickOnce 信任提示行為](../deployment/how-to-configure-the-clickonce-trust-prompt-behavior.md)。
+ 如果應用程式要求的許可權比區域所允許的更多，則系統會提示使用者進行信任決策。 使用者可以決定是否信任執行 ClickOnce 應用程式，例如 Windows Forms 應用程式、Windows Presentation Foundation 應用程式、主控台應用程式、XAML 瀏覽器應用程式和 Office 方案。 如需詳細資訊，請參閱[如何：設定 ClickOnce 信任提示行為](../deployment/how-to-configure-the-clickonce-trust-prompt-behavior.md)。
 
 ## <a name="how-clickonce-deployment-works"></a>ClickOnce 部署的運作方式
- 核心[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]部署架構是以兩個 XML 資訊清單檔案為基礎: 應用程式資訊清單和部署資訊清單。 這些檔案可用來描述 ClickOnce 應用程式的安裝位置、更新的方式, 以及更新的時間。
+ 核心 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 部署架構是以兩個 XML 資訊清單檔案為基礎：應用程式資訊清單和部署資訊清單。 這些檔案可用來描述 ClickOnce 應用程式的安裝位置、更新的方式，以及更新的時間。
 
 ### <a name="publish-clickonce-applications"></a>發佈 ClickOnce 應用程式
- 應用程式資訊清單會描述應用程式本身。 這包括元件、組成應用程式的相依性和檔案、必要的許可權, 以及可用的更新位置。 應用程式開發人員會使用 Visual Studio 中的 [發行嚮導] 或中[!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)]的資訊清單產生和編輯工具 (*mage.exe*), 來撰寫應用程式資訊清單。 如需詳細資訊，請參閱[如何：使用 [發佈精靈] 發佈 ClickOnce 應用程式](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)。
+ 應用程式資訊清單會描述應用程式本身。 這包括元件、組成應用程式的相依性和檔案、必要的許可權，以及可用的更新位置。 應用程式開發人員會使用 Visual Studio 中的 [發行嚮導] 或 [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)]中的資訊清單產生和編輯工具（*mage.exe*），來撰寫應用程式資訊清單。 如需詳細資訊，請參閱[如何：使用發行嚮導發行 ClickOnce 應用程式](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)。
 
- 部署資訊清單會描述應用程式的部署方式。 這包括應用程式資訊清單的位置, 以及用戶端應該執行的應用程式版本。
+ 部署資訊清單會描述應用程式的部署方式。 這包括應用程式資訊清單的位置，以及用戶端應該執行的應用程式版本。
 
 ### <a name="deploy-clickonce-applications"></a>部署 ClickOnce 應用程式
- 部署資訊清單在建立之後會複製到部署位置。 這可能是 Web 伺服器、網路檔案共用或 CD 之類的媒體。 應用程式資訊清單和所有應用程式檔也會複製到部署資訊清單中指定的部署位置。 這個位置可能與部署位置相同，也可能是不同的位置。 在 Visual Studio 中使用 [**發行嚮導]** 時, 會自動執行複製作業。
+ 部署資訊清單在建立之後會複製到部署位置。 這可能是 Web 伺服器、網路檔案共用或 CD 之類的媒體。 應用程式資訊清單和所有應用程式檔也會複製到部署資訊清單中指定的部署位置。 這個位置可能與部署位置相同，也可能是不同的位置。 在 Visual Studio 中使用 [**發行嚮導]** 時，會自動執行複製作業。
 
 ### <a name="install-clickonce-applications"></a>安裝 ClickOnce 應用程式
- 在應用程式部署到部署位置之後，終端使用者可以在網頁上或資料夾中按一下代表部署資訊清單檔案的圖示，來下載和安裝應用程式。 在大部分的情況下, 使用者會看到一個簡單的對話方塊, 要求使用者確認安裝, 之後安裝會繼續進行, 而且不需要額外介入即可啟動應用程式。 在應用程式需要提高許可權的情況下, 或如果應用程式不是由受信任的憑證簽署, 對話方塊也會要求使用者授與許可權, 才能繼續安裝。 雖然 ClickOnce 安裝是針對每位使用者, 但如果有需要系統管理員許可權的必要條件, 可能就需要許可權提升。 如需更高許可權的詳細資訊, 請參閱[保護 ClickOnce 應用程式](../deployment/securing-clickonce-applications.md)。
+ 在應用程式部署到部署位置之後，終端使用者可以在網頁上或資料夾中按一下代表部署資訊清單檔案的圖示，來下載和安裝應用程式。 在大部分的情況下，使用者會看到一個簡單的對話方塊，要求使用者確認安裝，之後安裝會繼續進行，而且不需要額外介入即可啟動應用程式。 在應用程式需要提高許可權的情況下，或如果應用程式不是由受信任的憑證簽署，對話方塊也會要求使用者授與許可權，才能繼續安裝。 雖然 ClickOnce 安裝是針對每位使用者，但如果有需要系統管理員許可權的必要條件，可能就需要許可權提升。 如需更高許可權的詳細資訊，請參閱[保護 ClickOnce 應用程式](../deployment/securing-clickonce-applications.md)。
 
- 憑證可以在電腦或企業層級受到信任, 讓以受信任憑證簽署的 ClickOnce 應用程式可以無訊息方式安裝。 如需有關受信任憑證的詳細資訊, 請參閱[信任的應用程式部署總覽](../deployment/trusted-application-deployment-overview.md)。
+ 憑證可以在電腦或企業層級受到信任，讓以受信任憑證簽署的 ClickOnce 應用程式可以無訊息方式安裝。 如需有關受信任憑證的詳細資訊，請參閱[信任的應用程式部署總覽](../deployment/trusted-application-deployment-overview.md)。
 
- 應用程式可以新增至使用者的 [**開始**] 功能表, 以及 [**控制台**] 中的 [**新增或移除程式**] 群組。 不同于其他部署技術, 程式檔案資料夾或登錄不會新增任何**專案**, 而且安裝不需要系統管理許可權。
+ 應用程式可以新增至使用者的 [**開始**] 功能表，以及 [**控制台**] 中的 [**新增或移除程式**] 群組。 不同于其他部署技術，程式檔案資料夾或登錄不會新增任何**專案**，而且安裝不需要系統管理許可權。
 
 > [!NOTE]
-> 您也可以防止將應用程式新增至 [**開始**] 功能表和 [**新增或移除程式**] 群組, 這樣做的行為就像 Web 應用程式一樣。 如需詳細資訊, 請參閱[選擇 ClickOnce 部署策略](../deployment/choosing-a-clickonce-deployment-strategy.md)。
+> 您也可以防止將應用程式新增至 [**開始**] 功能表和 [**新增或移除程式**] 群組，這樣做的行為就像 Web 應用程式一樣。 如需詳細資訊，請參閱[選擇 ClickOnce 部署策略](../deployment/choosing-a-clickonce-deployment-strategy.md)。
 
 ### <a name="update-clickonce-applications"></a>更新 ClickOnce 應用程式
- 當應用程式開發人員建立應用程式的更新版本時, 會產生新的應用程式資訊清單, 並將檔案複製到部署位置 (通常是原始應用程式部署資料夾的兄弟資料夾)。 系統管理員會更新部署資訊清單，以指向應用程式新版本的位置。
+ 當應用程式開發人員建立應用程式的更新版本時，會產生新的應用程式資訊清單，並將檔案複製到部署位置（通常是原始應用程式部署資料夾的兄弟資料夾）。 系統管理員會更新部署資訊清單，以指向應用程式新版本的位置。
 
 > [!NOTE]
 > Visual Studio 中的 [**發行嚮導]** 可以用來執行這些步驟。
 
- 除了部署位置外，部署資訊清單也包含更新位置 (網頁或網路檔案共用)，應用程式會在該位置檢查更新的版本。 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)][**發行**屬性] 可用來指定應用程式檢查更新的時間和頻率。 您可以在部署資訊清單中指定更新行為, 也可以透過[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] api, 在應用程式的使用者介面中以使用者選擇的方式呈現。 此外，也可以運用 [Publish] (發佈) 屬性將更新設為強制性，或復原為較舊版本。 如需詳細資訊，請參閱[選擇 ClickOnce 更新策略](../deployment/choosing-a-clickonce-update-strategy.md)。
+ 除了部署位置外，部署資訊清單也包含更新位置 (網頁或網路檔案共用)，應用程式會在該位置檢查更新的版本。 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]**發行**屬性會用來指定應用程式檢查更新的時間和頻率。 您可以在部署資訊清單中指定更新行為，也可以透過 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Api，在應用程式的使用者介面中以使用者選擇的方式呈現。 此外，也可以運用 [Publish] (發佈) 屬性將更新設為強制性，或復原為較舊版本。 如需詳細資訊，請參閱[選擇 ClickOnce 更新策略](../deployment/choosing-a-clickonce-update-strategy.md)。
 
 ### <a name="third-party-installers"></a>協力廠商安裝程式
- 您可以自訂 ClickOnce 安裝程式, 以安裝協力廠商元件和您的應用程式。 您必須擁有可轉散發套件 (.exe 或 .msi 檔案), 並使用語言中性的產品資訊清單和語言特定的套件資訊清單來描述套件。 如需詳細資訊, 請參閱建立啟動載入器[套件](../deployment/creating-bootstrapper-packages.md)。
+ 您可以自訂 ClickOnce 安裝程式，以安裝協力廠商元件和您的應用程式。 您必須擁有可轉散發套件（.exe 或 .msi 檔案），並使用語言中性的產品資訊清單和語言特定的套件資訊清單來描述套件。 如需詳細資訊，請參閱建立啟動載入器[套件](../deployment/creating-bootstrapper-packages.md)。
 
 ## <a name="clickonce-tools"></a>ClickOnce 工具
  下表顯示您可以用來產生、編輯、簽署及重新簽署應用程式和部署資訊清單的工具。
@@ -100,16 +100,16 @@ ms.locfileid: "69551165"
 |[GenerateApplicationManifest 工作](../msbuild/generateapplicationmanifest-task.md)|產生應用程式資訊清單。<br /><br /> 可以從 MSBuild 執行。 如需詳細資訊，請參閱 [MSBuild 參考](../msbuild/msbuild-reference.md)。|
 |[GenerateDeploymentManifest 工作](../msbuild/generatedeploymentmanifest-task.md)|產生部署資訊清單。<br /><br /> 可以從 MSBuild 執行。 如需詳細資訊，請參閱 [MSBuild 參考](../msbuild/msbuild-reference.md)。|
 |[SignFile 工作](../msbuild/signfile-task.md)|簽署應用程式和部署資訊清單。<br /><br /> 可以從 MSBuild 執行。 如需詳細資訊，請參閱 [MSBuild 參考](../msbuild/msbuild-reference.md)。|
-|[ManifestUtilities 的部署。](https://docs.microsoft.com/dotnet/api/microsoft.build.tasks.deployment.manifestutilities)|開發您自己的應用程式, 以產生應用程式和部署資訊清單。|
+|[ManifestUtilities 的部署。](/dotnet/api/microsoft.build.tasks.deployment.manifestutilities)|開發您自己的應用程式，以產生應用程式和部署資訊清單。|
 
  下表顯示在這些瀏覽器中支援 ClickOnce 應用程式所需的 .NET Framework 版本。
 
-|Browser|.NET Framework 版本|
+|瀏覽器|.NET Framework 版本|
 |-------------|----------------------------|
 |Internet Explorer|2.0、3.0、3.5、3.5 SP1、4|
 |Firefox|2.0 SP1、3.5 SP1、4|
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [ClickOnce deployment on Windows Vista](../deployment/clickonce-deployment-on-windows-vista.md) (Windows Vista 的 ClickOnce 部署)
 - [發佈 ClickOnce 應用程式](../deployment/publishing-clickonce-applications.md)
 - [保護 ClickOnce 應用程式](../deployment/securing-clickonce-applications.md)

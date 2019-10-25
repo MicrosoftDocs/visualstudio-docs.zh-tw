@@ -1,5 +1,5 @@
 ---
-title: HOW TO：編輯暫存器值 |Microsoft Docs
+title: 如何：編輯暫存器值 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -19,14 +19,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 58094d505cf2fd3621b801040f0f71904796d86b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: b3ccaa124b64ad462f633e760695f931afaae531
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63388412"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72733411"
 ---
-# <a name="how-to-edit-a-register-value-c-c-visual-basic-f"></a>HOW TO：編輯暫存器值 (C#， C++，Visual Basic 中， F#)
+# <a name="how-to-edit-a-register-value-c-c-visual-basic-f"></a>如何：編輯暫存器值（C#、 C++、Visual Basic、） F#
 
 只有在透過 [選項] 對話方塊的 [偵錯] 節點啟用位址層級偵錯時，才可以使用 [暫存器] 視窗。
 
@@ -42,5 +42,5 @@ ms.locfileid: "63388412"
     > [!CAUTION]
     > 由於分數元件的十進位至二進位轉換，編輯浮點數值會略微不精確。 即使表面上無害的編輯也可能造成浮點暫存器中的某些最小顯著性位元變更。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [如何：使用暫存器視窗](../debugger/how-to-use-the-registers-window.md)

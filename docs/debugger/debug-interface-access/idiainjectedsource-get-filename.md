@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 26c68e4f58706fe9d65738e2e58b6ba011999e6a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3aa2929ac592d475896eff0c1969115f971a8572
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62828674"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743381"
 ---
-# <a name="idiainjectedsourcegetfilename"></a>IDiaInjectedSource::get_filename
-擷取來源檔案名稱。
+# <a name="idiainjectedsourceget_filename"></a>IDiaInjectedSource::get_filename
+捕獲來源的檔案名。
 
 ## <a name="syntax"></a>語法
 
@@ -33,10 +33,10 @@ HRESULT get_filename ( 
 #### <a name="parameters"></a>參數
  pRetVal
 
-[out]傳回來源的檔案名稱。
+脫銷傳回來源的檔案名。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，會傳回 `S_OK`。 傳回`S_FALSE`不支援這個屬性，則為。 否則會傳回錯誤碼。
+ 如果成功，會傳回 `S_OK`。 如果不支援此屬性，則傳回 `S_FALSE`。 否則會傳回錯誤碼。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)

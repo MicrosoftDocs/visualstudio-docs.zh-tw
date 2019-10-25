@@ -1,0 +1,22 @@
+- name: Docs
+  tocHref: /
+  topicHref: /
+  items:
+    - name: Visual Studio
+      tocHref: /visualstudio/
+      topicHref: /visualstudio/ide/
+      items:
+        - name: XAML 工具
+          tocHref: /visualstudio/xaml-tools/
+          topicHref: /visualstudio/xaml-tools/
+- name: Docs
+  tocHref: /
+  topicHref: /
+  items:
+    - name: Visual Studio
+      tocHref: /visualstudio/
+      topicHref: /visualstudio/ide/
+      items:
+        - name: XAML 工具
+          tocHref: /visualstudio/debugger/
+          topicHref: /visualstudio/xaml-tools/

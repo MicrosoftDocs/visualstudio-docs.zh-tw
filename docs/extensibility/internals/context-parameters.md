@@ -11,57 +11,57 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1ddbd8084da150e47fdbe350770ea5e6bdb7e28d
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 9ea38b79be362f78fcc34161a480597fb0ecce40
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66335601"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72727552"
 ---
 # <a name="context-parameters"></a>內容參數
-在 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]整合式的開發環境 (IDE)，您可以加入至精靈**新增專案**，**加入新項目**，或**加入子專案**對話方塊。 加入的精靈都位於**檔案** 功能表或以滑鼠右鍵按一下專案，以在**方案總管 中**。 IDE 會將內容參數傳遞至精靈的實作。 IDE 呼叫精靈時，內容參數會定義專案的狀態。
+在 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 整合式開發環境（IDE）中，您可以將嚮導加入至 [**新增專案**]、[**加入新專案**] 或 [**加入子專案**] 對話方塊。 在 [檔案] 功能表上或以滑鼠右鍵按一下**方案總管**中的**專案，即可**取得新增的嚮導。 IDE 會將內容參數傳遞至 wizard 的執行。 當 IDE 呼叫 wizard 時，內容參數會定義專案的狀態。
 
- 在 IDE 啟動精靈，藉由設定<xref:Microsoft.VisualStudio.Shell.Interop.VSADDITEMOPERATION>IDE 的呼叫中的旗標<xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.AddItem%2A>專案的方法。 設定時，專案必須造成`IVsExtensibility::RunWizardFile`方法，以利用已註冊的精靈名稱或 GUID 和其他 IDE 傳遞給它的內容參數來執行。
+ IDE 會藉由在 IDE 對專案的 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.AddItem%2A> 方法呼叫中設定 <xref:Microsoft.VisualStudio.Shell.Interop.VSADDITEMOPERATION> 旗標，來啟動嚮導。 設定時，專案必須使用已註冊的 wizard name 或 GUID 以及 IDE 傳遞給它的其他內容參數，來執行 `IVsExtensibility::RunWizardFile` 方法。
 
-## <a name="context-parameters-for-new-project"></a>針對新專案的內容參數
-
-| 參數 | 描述 |
-|-------------------------| - |
-| `WizardType` | 註冊精靈 的型別 (<xref:EnvDTE.Constants.vsWizardNewProject>) 或 GUID，表示類型的精靈。 在 [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]實作中，精靈的 GUID 是 {0F90E1D0-4999-11D1-B6D1-00A0C90F2744}。 |
-| `ProjectName` | 是唯一的字串[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]專案名稱。 |
-| `LocalDirectory` | 使用專案檔的本機位置。 |
-| `InstallationDirectory` | 目錄路徑[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]是安裝。 |
-| `FExclusive` | 布林值旗標，指出專案應該關閉開啟的方案。 |
-| `SolutionName` | 方案檔，而不需要的目錄部分名稱或 *.sln*延伸模組。 *.Suo*檔案名稱也會建立使用`SolutionName`。 當這個引數不是空字串時，精靈會使用<xref:EnvDTE._Solution.Create%2A>新增的專案之前<xref:EnvDTE._Solution.AddFromTemplate%2A>。 如果這個名稱是空字串，請使用<xref:EnvDTE._Solution.AddFromTemplate%2A>而不需呼叫<xref:EnvDTE._Solution.Create%2A>。 |
-| `Silent` | 布林值，指出是否應該以無訊息模式執行精靈好像**完成**已按下 (`TRUE`)。 |
-
-## <a name="context-parameters-for-add-new-item"></a>內容參數加入新項目
+## <a name="context-parameters-for-new-project"></a>新專案的內容參數
 
 | 參數 | 描述 |
 |-------------------------| - |
-| `WizardType` | 註冊精靈 的型別 (<xref:EnvDTE.Constants.vsWizardAddItem>) 或 GUID，表示類型的精靈。 在 [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]實作中，精靈的 GUID 是 {0F90E1D1-4999-11D1-B6D1-00A0C90F2744}。 |
-| `ProjectName` | 是唯一的字串[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]專案名稱。 |
-| `ProjectItems` | 包含工作的專案檔案的本機位置。 |
-| `ItemName` | 要加入之項目的名稱。 這個名稱是預設檔案名稱或使用者類型的檔案名稱**新增的項目** 對話方塊。 名稱根據中所設定的旗標 *.vsdir*檔案。 名稱可以是 null 值。 |
-| `InstallationDirectory` | 目錄路徑[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]是安裝。 |
-| `Silent` | 布林值，指出是否應該以無訊息模式執行精靈好像**完成**已按下 (`TRUE`)。 |
+| `WizardType` | 已註冊的 wizard 類型（<xref:EnvDTE.Constants.vsWizardNewProject>）或表示 wizard 類型的 GUID。 在 [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] 的執行中，wizard 的 GUID 是 {0F90E1D0-4999-11D1-B6D1-00A0C90F2744}。 |
+| `ProjectName` | 唯一 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 專案名稱的字串。 |
+| `LocalDirectory` | 工作專案檔案的本機位置。 |
+| `InstallationDirectory` | @No__t_0 的目錄路徑是安裝。 |
+| `FExclusive` | 布林值旗標，指出專案應關閉開啟的方案。 |
+| `SolutionName` | 不含目錄部分或 *.sln*副檔名的方案檔名稱。 您也可以使用 `SolutionName` 來建立 *.suo*檔案名。 當這個引數不是空字串時，wizard 會使用 <xref:EnvDTE._Solution.Create%2A>，然後再使用 <xref:EnvDTE._Solution.AddFromTemplate%2A> 加入專案。 如果此名稱是空字串，請使用 <xref:EnvDTE._Solution.AddFromTemplate%2A>，而不需要呼叫 <xref:EnvDTE._Solution.Create%2A>。 |
+| `Silent` | 布林值，指出 wizard 是否應該以無訊息模式執行，如同按一下 **[完成**] （`TRUE`）。 |
 
-## <a name="context-parameters-for-add-sub-project"></a>加入子專案的內容參數
+## <a name="context-parameters-for-add-new-item"></a>[加入新專案] 的內容參數
 
 | 參數 | 描述 |
 |-------------------------| - |
-| `WizardType` | 註冊精靈 的型別 (<xref:EnvDTE.Constants.vsWizardAddSubProject>) 或 GUID，表示類型的精靈。 在 [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]實作中，精靈的 GUID 是 {0F90E1D2-4999-11D1-B6D1-00A0C90F2744}。 |
-| `ProjectName` | 是唯一的字串[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]專案名稱。 |
-| `ProjectItems` | 指標`ProjectItems`精靈運作方式的集合。 此指標會根據專案階層架構的選取項目精靈。 使用者通常會選取的資料夾中放置項目，然後再呼叫專案組**加入項目** 對話方塊。 |
-| `LocalDirectory` | 使用專案檔的本機位置。 |
-| `ItemName` | 要加入之項目的名稱。 這個名稱是預設檔案名稱或使用者類型的檔案名稱**新增的項目** 對話方塊。 名稱根據中所設定的旗標 *.vsdir*檔案。 名稱可以是 null 值。 |
-| `InstallationDirectory` | 目錄路徑[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]安裝。 |
-| `Silent` | 布林值，指出是否應該以無訊息模式執行精靈好像**完成**已按下 (`TRUE`)。 |
+| `WizardType` | 已註冊的 wizard 類型（<xref:EnvDTE.Constants.vsWizardAddItem>）或表示 wizard 類型的 GUID。 在 [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] 的執行中，wizard 的 GUID 是 {0F90E1D1-4999-11D1-B6D1-00A0C90F2744}。 |
+| `ProjectName` | 唯一 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 專案名稱的字串。 |
+| `ProjectItems` | 包含工作專案檔案的本機位置。 |
+| `ItemName` | 要加入之專案的名稱。 這個名稱可以是預設檔案名，也就是使用者在 [**加入專案**] 對話方塊中輸入的檔案名。 該名稱是以此*vsdir*檔案中所設定的旗標為基礎。 名稱可以是 null 值。 |
+| `InstallationDirectory` | @No__t_0 的目錄路徑是安裝。 |
+| `Silent` | 布林值，指出 wizard 是否應該以無訊息模式執行，如同按一下 **[完成**] （`TRUE`）。 |
 
-## <a name="see-also"></a>另請參閱
+## <a name="context-parameters-for-add-sub-project"></a>新增子專案的內容參數
+
+| 參數 | 描述 |
+|-------------------------| - |
+| `WizardType` | 已註冊的 wizard 類型（<xref:EnvDTE.Constants.vsWizardAddSubProject>）或表示 wizard 類型的 GUID。 在 [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] 的執行中，wizard 的 GUID 是 {0F90E1D2-4999-11D1-B6D1-00A0C90F2744}。 |
+| `ProjectName` | 唯一 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 專案名稱的字串。 |
+| `ProjectItems` | Wizard 操作所在之 `ProjectItems` 集合的指標。 這個指標會根據專案階層選取而傳遞至 wizard。 使用者通常會選取要放置專案的資料夾，然後呼叫專案的 [**加入專案**] 對話方塊。 |
+| `LocalDirectory` | 工作專案檔案的本機位置。 |
+| `ItemName` | 要加入之專案的名稱。 這個名稱可以是預設檔案名，也就是使用者在 [**加入專案**] 對話方塊中輸入的檔案名。 該名稱是以此*vsdir*檔案中所設定的旗標為基礎。 名稱可以是 null 值。 |
+| `InstallationDirectory` | @No__t_0 安裝的目錄路徑。 |
+| `Silent` | 布林值，指出 wizard 是否應該以無訊息模式執行，如同按一下 **[完成**] （`TRUE`）。 |
+
+## <a name="see-also"></a>請參閱
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject>
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject2>
 - [自訂參數](../../extensibility/internals/custom-parameters.md)
 - [精靈](../../extensibility/internals/wizards.md)
-- [精靈 (.vsz) 檔案](../../extensibility/internals/wizard-dot-vsz-file.md)
-- [啟動精靈的內容參數](https://msdn.microsoft.com/Library/051a10f4-9e45-4604-b344-123044f33a24)
+- [Wizard （.vsz）檔案](../../extensibility/internals/wizard-dot-vsz-file.md)
+- [用於啟動嚮導的內容參數](https://msdn.microsoft.com/Library/051a10f4-9e45-4604-b344-123044f33a24)

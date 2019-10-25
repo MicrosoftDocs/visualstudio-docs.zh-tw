@@ -9,46 +9,46 @@ helpviewer_keywords:
 - TableAdapters, n-tier applications
 - n-tier applications, extending TableAdapters
 ms.assetid: dafac00e-df9d-4d4a-95a6-e34b4d099425
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: e61b9e35464c4200581f6859b2f394911d266d44
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 246ba595cf1da7e4713e0ddc03ea015eeb61eb64
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63402910"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72648928"
 ---
 # <a name="add-code-to-tableadapters-in-n-tier-applications"></a>將程式碼新增至多層式架構 (N-Tier) 應用程式中的 TableAdapter
-您可以透過建立 TableAdapter 部分類別檔案，並加入程式碼擴充 TableAdapter 的功能 (而不是將程式碼加入*DatasetName.DataSet.Designer*檔案)。 部分類別可讓多個實體檔案分割為特定類別的程式碼。 如需詳細資訊，請參閱 <<c0> [ 部分](/dotnet/visual-basic/language-reference/modifiers/partial)或是[partial （類型）](/dotnet/csharp/language-reference/keywords/partial-type)。
+您可以擴充 TableAdapter 的功能，方法是建立 TableAdapter 的部分類別檔案，並在其中加入程式碼（而不是將程式碼新增至*DatasetName 設計*工具檔案）。 部分類別可讓特定類別的程式碼劃分到多個實體檔案中。 如需詳細資訊，請參閱[partial](/dotnet/visual-basic/language-reference/modifiers/partial)或[partial （類型）](/dotnet/csharp/language-reference/keywords/partial-type)。
 
-定義 TableAdapter 的程式碼會產生每次變更資料集的 TableAdapter。 任何修改的 TableAdapter 組態精靈執行期間進行變更時，也會產生此程式碼。 若要避免您的程式碼在 TableAdapter 的重新產生期間遭到刪除，請在 TableAdapter 的部分類別檔案中加入程式碼。
+定義 TableAdapter 的程式碼會在每次對資料集中的 TableAdapter 進行變更時產生。 這段程式碼也會在執行任何修改 TableAdapter 設定的 wizard 期間進行變更時產生。 若要避免在重新產生 TableAdapter 期間刪除您的程式碼，請將程式碼新增至 TableAdapter 的部分類別檔案。
 
-根據預設，您可將資料集和 TableAdapter 程式碼之後, 的結果會是離散的類別檔案中的每個專案。 原始的專案具有名為的檔案*DatasetName.Designer.vb* (或*DatasetName.Designer.cs*) 包含 TableAdapter 的程式碼。 專案中指定**資料集 Project**屬性具有名為的檔案*DatasetName.DataSet.Designer.vb* (或*DatasetName.DataSet.Designer.cs*)，包含資料集程式碼。
-
-> [!NOTE]
-> 當您分隔資料集與 TableAdapter 時 (設定 [資料集專案] 屬性)，將不會自動移動專案中的現有部份資料集類別。 現有的部分資料集類別必須手動將移至資料集專案。
+根據預設，當您分隔資料集和 TableAdapter 程式碼之後，結果會是每個專案中的個別類別檔案。 原始專案具有名為*DatasetName*的檔案，也就是包含 TableAdapter 程式碼的*DatasetName.Designer.cs*。 在**資料集專案**屬性中指定的專案具有名為*DatasetName*的檔案，其中包含資料集程式碼。
 
 > [!NOTE]
-> 資料集提供功能來產生<xref:System.Data.DataTable.ColumnChanging>和<xref:System.Data.DataTable.RowChanging>時需要驗證的事件處理常式。 如需詳細資訊，請參閱 <<c0> [ 將驗證新增至多層式架構資料集](../data-tools/add-validation-to-an-n-tier-dataset.md)。
+> 當您分隔資料集與 TableAdapter 時 (設定 [資料集專案] 屬性)，將不會自動移動專案中的現有部份資料集類別。 現有的部分資料集類別必須手動移至 dataset 專案。
+
+> [!NOTE]
+> 資料集提供在需要驗證時產生 <xref:System.Data.DataTable.ColumnChanging> 和 <xref:System.Data.DataTable.RowChanging> 事件處理常式的功能。 如需詳細資訊，請參閱[將驗證新增至多層式資料集](../data-tools/add-validation-to-an-n-tier-dataset.md)。
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 
-## <a name="to-add-user-code-to-a-tableadapter-in-an-n-tier-application"></a>若要將使用者程式碼新增至多層式架構應用程式中的 TableAdapter
+## <a name="to-add-user-code-to-a-tableadapter-in-an-n-tier-application"></a>在多層式應用程式中將使用者程式碼加入 TableAdapter
 
-1. 找出包含專案 *.xsd*檔案。
+1. 找出包含 *.xsd*檔案的專案。
 
-2. 按兩下 *.xsd*若要開啟的檔案**Dataset 設計工具**。
+2. 按兩下 *.xsd*檔案以開啟 [ **DataSet 設計工具**]。
 
-3. 以滑鼠右鍵按一下您想要加入程式碼，然後選取 TableAdapter**檢視程式碼**。
+3. 以滑鼠右鍵按一下您想要加入程式碼的 TableAdapter，然後選取 [ **View code**]。
 
-     部分類別會建立，並會在程式碼編輯器中開啟。
+     部分類別會在程式碼編輯器中建立並開啟。
 
-4. 加入部分類別宣告內的程式碼。
+4. 在部分類別宣告內加入程式碼。
 
-5. 下列範例示範如何將程式碼加入`CustomersTableAdapter`在`NorthwindDataSet`:
+5. 下列範例顯示在 `NorthwindDataSet` 中將程式碼加入至 `CustomersTableAdapter` 的位置：
 
     ```vb
     Partial Public Class CustomersTableAdapter

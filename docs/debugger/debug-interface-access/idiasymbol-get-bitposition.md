@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7752e5f6bc7cb09fb80668aed8c3f8bc2bbeb312
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 709bb7e57ee6260ffcd7d8b1421526d3dd41052a
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64813746"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740900"
 ---
-# <a name="idiasymbolgetbitposition"></a>IDiaSymbol::get_bitPosition
-擷取位置的位元位置。 使用的時機[LocationType 列舉](../../debugger/debug-interface-access/locationtype.md)是`LocIsBitField`。
+# <a name="idiasymbolget_bitposition"></a>IDiaSymbol::get_bitPosition
+抓取 location 的位位置。 @No__t_1 [LocationType 列舉](../../debugger/debug-interface-access/locationtype.md)時使用。
 
 ## <a name="syntax"></a>語法
 
@@ -33,21 +33,21 @@ HRESULT get_bitPosition ( 
 #### <a name="parameters"></a>參數
  `pRetVal`
 
-[out]傳回位置的位元位置。
+脫銷傳回位置的位位置。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，則傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。
+ 如果成功，會傳回 `S_OK`;否則，會傳回 `S_FALSE` 或錯誤碼。
 
 > [!NOTE]
-> 傳回值為`S_FALSE`表示此屬性不適用於符號。
+> @No__t_0 的傳回值表示該屬性不適用於符號。
 
 ## <a name="requirements"></a>需求
 
-|需求|說明|
+|需求|描述|
 |-----------------|-----------------|
-|標頭：|dia2.h|
+|標頭：|dia2。h|
 |版本:|DIA SDK v7.0|
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
 - [LocationType 列舉](../../debugger/debug-interface-access/locationtype.md)

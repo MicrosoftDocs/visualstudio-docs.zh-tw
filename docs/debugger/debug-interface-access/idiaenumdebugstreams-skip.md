@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 90bf6b41400143d7a6703db24c031cb3ed31de2c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 25fb1cb952c41d412df72ff7c0f0ad90e56ee6c0
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62838180"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72744707"
 ---
 # <a name="idiaenumdebugstreamsskip"></a>IDiaEnumDebugStreams::Skip
-略過指定的數目的列舉型別序列中的偵錯資料流。
+在列舉序列中略過指定數目的 debug 資料流程。
 
 ## <a name="syntax"></a>語法
 
@@ -33,10 +33,10 @@ HRESULT Skip ( 
 #### <a name="parameters"></a>參數
  `celt`
 
-[in]略過列舉序列中的偵錯資料流數目。
+在列舉序列中要略過的 debug 資料流程數目。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，則傳回`S_OK`; 否則傳回`S_FALSE`如果沒有更多的記錄，以略過。
+ 如果成功，會傳回 `S_OK`;否則，如果沒有其他要略過的記錄，則會傳回 `S_FALSE`。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [IDiaEnumDebugStreams](../../debugger/debug-interface-access/idiaenumdebugstreams.md)

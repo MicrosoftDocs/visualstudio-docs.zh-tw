@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_numberOfColumns |Microsoft Docs
+title: IDiaSymbol：： get_numberOfColumns |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 49482c99f3d735618cb9caab02a04fea1e81ebc9
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: ca99493f136c1a932f45fe719c52a9d85a1a852e
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "62841871"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739680"
 ---
-# <a name="idiasymbolgetnumberofcolumns"></a>IDiaSymbol::get_numberOfColumns
-擷取在矩陣中的資料行數目。
+# <a name="idiasymbolget_numberofcolumns"></a>IDiaSymbol::get_numberOfColumns
+抓取矩陣中的資料行數目。
 
 ## <a name="syntax"></a>語法
 
@@ -30,10 +30,10 @@ HRESULT get_numberOfColumns(
 #### <a name="parameters"></a>參數
  `pRetVal`
 
-[out]指標`DWORD`矩陣中保存的資料行數目。
+脫銷保留矩陣中的資料行數目之 `DWORD` 的指標。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，則傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。
+ 如果成功，會傳回 `S_OK`;否則，會傳回 `S_FALSE` 或錯誤碼。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

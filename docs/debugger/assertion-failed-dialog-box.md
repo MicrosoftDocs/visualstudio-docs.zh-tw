@@ -20,22 +20,22 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 39362adf5837e3293782df04627af9acd06fdd88
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: cb42067bb4c88777a6c25ace71f53b9d9b3aa36b
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62564615"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745773"
 ---
 # <a name="assertion-failed-dialog-box"></a>判斷提示已失敗對話方塊
 判斷提示 (Assertion) 陳述式會指定您希望在程式的某個特定點維持為 true 的條件。 如果該條件並未維持 true，表示判斷提示失敗，程式執行將會中斷，並出現這個對話方塊。
 
-|按一下|以|
+|按一下|若要|
 |-----------|--------|
 |重試|對判斷提示進行偵錯或取得判斷提示的說明。|
 |Ignore|忽略判斷提示並且繼續執行程式。|
 |Abort|停止程式執行並且結束偵錯工作階段。|
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [C/C++ 判斷提示](../debugger/c-cpp-assertions.md)

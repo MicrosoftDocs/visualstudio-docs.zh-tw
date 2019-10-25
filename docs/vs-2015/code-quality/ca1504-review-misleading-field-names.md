@@ -1,5 +1,5 @@
 ---
-title: CA1504:檢閱產生誤導的欄位名稱 |Microsoft Docs
+title: CA1504:查看誤導的功能變數名稱 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,15 +12,15 @@ helpviewer_keywords:
 - ReviewMisleadingFieldNames
 ms.assetid: 94136ff1-4aaf-4dc2-9170-48c171ab7499
 caps.latest.revision: 17
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 2203e99974e5f232e8c90badef7c28921b971cdb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c3f1cca5dd33047a4d19c78013dd535e0e9dd6f2
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68191206"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72607755"
 ---
 # <a name="ca1504-review-misleading-field-names"></a>CA1504:必須檢閱可能造成誤導的欄位名稱
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,17 +29,17 @@ ms.locfileid: "68191206"
 |-|-|
 |TypeName|ReviewMisleadingFieldNames|
 |CheckId|CA1504|
-|分類|Microsoft.Maintainability|
-|中斷變更|非重大|
+|分類|Microsoft。可維護性|
+|中斷變更|不中斷|
 
 ## <a name="cause"></a>原因
- 執行個體欄位名稱開頭為"s_"或名稱`static`(`Shared`在[!INCLUDE[vbprvb](../includes/vbprvb-md.md)]) 欄位開頭為"m_"。
+ 實例欄位的名稱是以 "s_" 開頭，或 `static` 的名稱（[!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 中的 `Shared`）欄位開頭為 "m_"。
 
 ## <a name="rule-description"></a>規則描述
- 欄位名稱開頭為"s_"是由許多使用者關聯的靜態資料。 同樣地，欄位名稱開頭為"m_"是資料執行個體 （成員） 相關聯。 對於更容易維護的程式碼，名稱應該遵循通常使用的慣例。
+ 以 "s_" 開頭的功能變數名稱會與許多使用者的靜態資料產生關聯。 同樣地，以 "m_" 開頭的功能變數名稱會與實例（成員）資料相關聯。 如需更容易維護的程式碼，名稱應遵循一般使用的慣例。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
- 若要修正此規則的違規情形，請使用適當的前置詞重新命名欄位。 或者，請同意透過加入或移除目前的後置詞欄位`static`修飾詞。
+ 若要修正此規則的違規情形，請使用適當的前置詞重新命名欄位。 或者，藉由新增或移除 `static` 修飾詞，讓欄位與目前的尾碼一致。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
  請勿隱藏此規則的警告。

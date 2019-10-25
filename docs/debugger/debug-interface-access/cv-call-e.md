@@ -12,18 +12,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ec5fea99994b891250dad85cfc43320848df98f9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5deb59d4bbee06e505ba10bf1d4f08b1b06aa62d
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62555100"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745346"
 ---
-# <a name="cvcalle"></a>CV_call_e
+# <a name="cv_call_e"></a>CV_call_e
 指定函式的呼叫慣例。
 
 > [!NOTE]
-> 只有最常見的列舉值記載於此。 完整的列舉型別適用於 cvconst.h 標頭檔。
+> 這裡只記載最常見的列舉值。 完整的列舉可在 cvconst 標頭檔中取得。
 
 ## <a name="syntax"></a>語法
 
@@ -39,24 +39,24 @@ typedef enum CV_call_e {
 ```
 
 ## <a name="elements"></a>項目
-CV_CALL_NEAR_C 指定使用幾近的由右至左推入的函式呼叫慣例。 呼叫的函式會清除堆疊。
+CV_CALL_NEAR_C 會使用接近右至左推播來指定函式呼叫慣例。 呼叫函式會清除堆疊。
 
-CV_CALL_NEAR_FAST 指定函式呼叫慣例，使用幾近左到右推送以註冊。 呼叫的函式會清除堆疊中使用參數的位元組總數。
+CV_CALL_NEAR_FAST 會指定函式呼叫慣例，並搭配暫存器使用接近的從左至右推送。 所呼叫的函式會使用參數位元組的總和來清除堆疊。
 
-CV_CALL_NEAR_STD 指定使用近乎標準呼叫 （由右至左推入） 的函式呼叫慣例。
+CV_CALL_NEAR_STD 會使用接近標準的呼叫（由右至左推播）來指定函式呼叫慣例。
 
-使用 near 系統函式呼叫慣例 CV_CALL_NEAR_SYS 指定呼叫。
+CV_CALL_NEAR_SYS 使用 NEAR 系統呼叫來指定函式呼叫慣例。
 
-函式呼叫慣例，使用時，指定 CV_CALL_THISCALL`this`呼叫 (`this`暫存器中傳遞的指標)。
+CV_CALL_THISCALL 會使用 `this` 呼叫（在暫存器中傳遞 `this` 指標）來指定函式呼叫慣例。
 
-CV_CALL_CLRCALL 指定使用的 Common Language Runtime (CLR) （也稱為 managed 程式碼呼叫慣例） 的函式呼叫慣例。
+CV_CALL_CLRCALL 指定通用語言執行時間（CLR）所使用的函式呼叫慣例（也稱為 managed 程式碼呼叫慣例）。
 
 ## <a name="remarks"></a>備註
-這個列舉型別中的值會傳回呼叫[idiasymbol:: Get_callingconvention](../../debugger/debug-interface-access/idiasymbol-get-callingconvention.md)方法。
+這個列舉中的值是由呼叫[IDiaSymbol：： get_callingConvention](../../debugger/debug-interface-access/idiasymbol-get-callingconvention.md)方法所傳回。
 
 ## <a name="requirements"></a>需求
-標頭： cvconst.h
+標頭： cvconst。h
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [列舉和結構](../../debugger/debug-interface-access/enumerations-and-structures.md)
 - [IDiaSymbol::get_callingConvention](../../debugger/debug-interface-access/idiasymbol-get-callingconvention.md)

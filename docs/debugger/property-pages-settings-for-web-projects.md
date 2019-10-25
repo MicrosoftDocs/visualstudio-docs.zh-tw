@@ -21,19 +21,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a9ab4300484e81e70abd36dbdba28521f91cd62
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b7daa58004b118d46a8248428e9a9d242dfccef8
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62903937"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72730601"
 ---
 # <a name="property-pages-settings-for-web-projects"></a>Web 專案的屬性頁設定
 您可以在 [屬性頁] 對話方塊中使用[偵錯和發行組態](../debugger/how-to-set-debug-and-release-configurations.md)中所討論的方法，變更網站偵錯組態的屬性設定。 下表顯示 [屬性頁] 對話方塊中與偵錯工具相關的設定位置。
 
-### <a name="start-options-category"></a>啟動選項類別
+### <a name="start-options-category"></a>開始選項分類
 
-| **設定** | **描述** |
+| **設定** | **說明** |
 | - | - |
 | **起始動作** | 標題，用以分類與應用程式啟動相關的選項。 |
 | **使用目前的頁面** | 指定目前的頁面為偵錯的起始點。 |
@@ -52,5 +52,5 @@ ms.locfileid: "62903937"
 | **SQL Server 偵錯** | 允許 SQL Server 資料庫物件偵錯。 |
 | **Silverlight 偵錯** | 允許偵錯 Silverlight 元件。 |
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [偵錯設定和準備](../debugger/debugger-settings-and-preparation.md)

@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e8fd088ff6be619de56f27f91b198aed18e428c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 61d99b0c881abdb8974e94352911ae3234c440c1
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62829780"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72744267"
 ---
 # <a name="idiaenumsectioncontribsnext"></a>IDiaEnumSectionContribs::Next
-擷取指定的數目的列舉型別序列中的區段比重。
+抓取列舉序列中指定數目的區段貢獻。
 
 ## <a name="syntax"></a>語法
 
@@ -35,19 +35,19 @@ HRESULT Next( 
 #### <a name="parameters"></a>參數
  celt
 
-[in]要擷取列舉值中的區段貢獻數目。
+在要抓取的列舉值中的區段貢獻數目。
 
  rgelt
 
-[out]要填入的陣列[IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)代表所需的區段貢獻的物件。
+脫銷要填入[IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)物件的陣列，表示所需的區段投稿。
 
  pceltFetched
 
-[out]擷取列舉值中傳回區段貢獻的數目。
+脫銷傳回已提取列舉值中的區段貢獻數目。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，會傳回 `S_OK`。 傳回`S_FALSE`有沒有更多區段貢獻。 否則會傳回錯誤碼。
+ 如果成功，會傳回 `S_OK`。 如果沒有其他區段的貢獻，則傳回 `S_FALSE`。 否則會傳回錯誤碼。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [IDiaEnumSectionContribs](../../debugger/debug-interface-access/idiaenumsectioncontribs.md)
 - [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

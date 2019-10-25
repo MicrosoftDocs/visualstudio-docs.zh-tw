@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_count |Microsoft Docs'
+title: IDiaSymbol：： get_count |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 657a2d2f21378dffb6f2ef0c557d02f7858e5328
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 5d8574b610bb913e2cf2dda8a4778dead8a1b2fe
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64808401"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740757"
 ---
-# <a name="idiasymbolgetcount"></a>IDiaSymbol::get_count
-擷取清單或陣列中的項目數。
+# <a name="idiasymbolget_count"></a>IDiaSymbol::get_count
+抓取清單或陣列中的專案數。
 
 ## <a name="syntax"></a>語法
 
@@ -33,20 +33,20 @@ HRESULT get_count ( 
 #### <a name="parameters"></a>參數
  `pRetVal`
 
-[out]傳回清單或陣列中的項目數目。
+脫銷傳回清單或陣列中的專案數。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，則傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。
+ 如果成功，會傳回 `S_OK`;否則，會傳回 `S_FALSE` 或錯誤碼。
 
 > [!NOTE]
-> 傳回值為`S_FALSE`表示屬性不是適用於符號。
+> @No__t_0 的傳回值表示該屬性不適用於符號。
 
 ## <a name="requirements"></a>需求
 
-|需求|說明|
+|需求|描述|
 |-----------------|-----------------|
-|標頭：|dia2.h|
+|標頭：|dia2。h|
 |版本:|DIA SDK v7.0|
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

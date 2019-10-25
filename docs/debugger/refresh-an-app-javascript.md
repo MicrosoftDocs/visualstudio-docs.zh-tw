@@ -1,5 +1,5 @@
 ---
-title: 重新整理的 UWP 應用程式 |Microsoft Docs
+title: 重新整理 UWP 應用程式 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -19,16 +19,16 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - uwp
-ms.openlocfilehash: 0ee4c97c4ecbf665bbaef39b658a4b96715acb23
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 0b1d19c0b607d2c5a09fddc9d4550230e478d57a
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63408636"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72730315"
 ---
-# <a name="refresh-a-uwp-app-in-visual-studio"></a>重新整理 Visual Studio 中的 UWP 應用程式
+# <a name="refresh-a-uwp-app-in-visual-studio"></a>在 Visual Studio 中重新整理 UWP 應用程式
 
- 您可以進行變更您的程式碼，而您在偵錯，然後重新整理選擇使用 JavaScript 的 UWP 應用程式**重新整理 Windows 應用程式**按鈕**偵錯**工具列。 選擇此按鈕隨即會重新載入應用程式，而不需要停止並重新開始偵錯工具。 重新整理功能可讓您修改 HTML、CSS 和 JavaScript 程式碼，並且快速查看結果。 這項功能被支援 UWP 應用程式。
+ 您可以在進行偵錯工具時對程式碼進行變更，然後藉由選擇**Debug**工具列上的 [重新整理**Windows 應用程式**] 按鈕，使用 JavaScript 重新整理 UWP 應用程式。 選擇此按鈕隨即會重新載入應用程式，而不需要停止並重新開始偵錯工具。 重新整理功能可讓您修改 HTML、CSS 和 JavaScript 程式碼，並且快速查看結果。 UWP 應用程式支援這項功能。
 
  重新整理不會維護您的應用程式狀態，也不會將下列變更反映給應用程式：
 
@@ -47,19 +47,19 @@ ms.locfileid: "63408636"
 
 ### <a name="to-refresh-an-app"></a>若要重新整理應用程式
 
-1. 在 Visual Studio 中開啟 UWP 專案，選取**本機電腦**做為偵錯目標。
+1. 在 Visual Studio 中開啟 UWP 專案，選取 [**本機電腦**] 做為 [偵錯工具目標]。
 
-     ![選取偵錯目標清單](../debugger/media/js_select_target.png "JS_Select_Target")
+     ![選取 [調試目標清單]](../debugger/media/js_select_target.png "JS_Select_Target")
 
 3. 請按 F5 以偵錯模式執行應用程式。
 
 4. 切換至 Visual Studio。
 
-5. 在 UWP 應用程式的首頁上，編輯部分的 html。
+5. 在 UWP 應用程式的首頁中，編輯部分 HTML。
 
-7. 按一下 **重新整理 Windows 應用程式**按鈕時，哪一個看起來像這樣：![重新整理 Windows 應用程式 按鈕](../debugger/media/js_refresh.png "JS_Refresh")。 (或按 F4)。
+7. 按一下 [重新整理**windows 應用程式**] 按鈕，如下所示： [重新整理![windows 應用程式] 按鈕](../debugger/media/js_refresh.png "JS_Refresh")。 (或按 F4)。
 
-8. 切換至應用程式。 應用程式會重新載入，並用來呈現應用程式更新的 HTML。
+8. 切換至應用程式。 應用程式會重載，並使用更新的 HTML 來呈現應用程式。
 
-## <a name="see-also"></a>另請參閱
-- [快速入門：對 HTML 和 CSS 進行偵錯](../debugger/quickstart-debug-html-and-css.md)
+## <a name="see-also"></a>請參閱
+- [快速入門：偵錯 HTML 和 CSS](../debugger/quickstart-debug-html-and-css.md)

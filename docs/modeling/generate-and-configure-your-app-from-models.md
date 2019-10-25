@@ -7,12 +7,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 801423ee8ad5bb9a63ebb4f970d9c53e5fe8c1e4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 13d943b8d86bd9ca912816e0f19993959ca303c1
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72605702"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748394"
 ---
 # <a name="generate-and-configure-your-app-from-models"></a>透過模型產生和設定應用程式
 您可以透過模型產生或設定應用程式的各部分。

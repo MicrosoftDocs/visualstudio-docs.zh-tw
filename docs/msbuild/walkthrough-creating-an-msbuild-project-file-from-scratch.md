@@ -1,5 +1,5 @@
 ---
-title: 逐步解說：從頭開始建立 MSBuild 專案檔 | Microsoft Docs
+title: 逐步解說：從頭開始建立 MSBuild 專案檔案 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,17 +10,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bce461f4b120d1d9a37c5433b590ed1f7b227131
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: e13399d80e74f41774542da31d0edd8c36a42c7e
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445317"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748025"
 ---
 # <a name="walkthrough-create-an-msbuild-project-file-from-scratch"></a>逐步解說：從頭開始建立 MSBuild 專案檔
 以 .NET Framework 為目標的程式設計語言，使用 MSBuild 專案檔描述及控制應用程式建置流程。 當您使用 Visual Studio 建立 MSBuild 專案檔時，系統會自動將適當的 XML 加入該檔案。 不過，您可能會發現，了解 XML 的組織方式，以及您如何對其進行變更以控制組建會非常有用。
 
- 如需為 C++ 專案建立專案檔的相關資訊，請參閱 [MSBuild (Visual C++)](/cpp/build/msbuild-visual-cpp)。
+ 如需建立C++專案之專案檔的詳細資訊，請參閱[MSBuildC++（）](/cpp/build/msbuild-visual-cpp)。
 
  此逐步解說顯示如何僅使用文字編輯器以累加方式建立基本專案檔。 此逐步解說遵循下列步驟：
 
@@ -42,7 +42,7 @@ ms.locfileid: "63445317"
 
 9. 以累加方式建置。
 
-此逐步解說會顯示如何在命令提示字元處建置專案，並檢查結果。 如需 MSBuild，以及如何在命令提示字元中執行 MSBuild 的詳細資訊，請參閱[逐步解說：使用 MSBuild](../msbuild/walkthrough-using-msbuild.md)。
+此逐步解說會顯示如何在命令提示字元處建置專案，並檢查結果。 如需有關 MSBuild，以及如何在命令提示字元中執行 MSBuild 的詳細資訊，請參閱[逐步解說：使用 MSBuild](../msbuild/walkthrough-using-msbuild.md)。
 
 若要完成逐步解說，您必須已安裝 .NET Framework (2.0、3.5、4.0 或 4.5 版)，因為它包含此逐步解說所需的 MSBuild 和 Visual C# 編譯器。
 
@@ -51,7 +51,7 @@ ms.locfileid: "63445317"
 
 #### <a name="to-create-the-minimal-application"></a>建立最小應用程式
 
-1. 在命令提示字元中，瀏覽至您要建立應用程式的資料夾，例如 *\My Documents\\* 或 *\Desktop\\*。
+1. 在命令提示字元中，瀏覽至您要建立應用程式的資料夾，例如 *\My Documents\\* 或 *\Desktop\\* 。
 
 2. 輸入 **md HelloWorld**，以建立名為 *\HelloWorld\\* 的子資料夾。
 
@@ -400,7 +400,7 @@ ms.locfileid: "63445317"
 
 ## <a name="example"></a>範例
 
-### <a name="description"></a>說明
+### <a name="description"></a>描述
  下列範例顯示的專案檔會編譯 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 應用程式，並記錄包含輸出檔名稱的訊息。
 
 ### <a name="code"></a>程式碼
@@ -438,7 +438,7 @@ ms.locfileid: "63445317"
 
 ## <a name="example"></a>範例
 
-### <a name="description"></a>說明
+### <a name="description"></a>描述
  下列範例顯示的專案檔會編譯 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 應用程式，並記錄包含輸出檔名稱的訊息。
 
 ### <a name="code"></a>程式碼
@@ -477,6 +477,6 @@ ms.locfileid: "63445317"
 ## <a name="whats-next"></a>後續步驟
  Visual Studio 可以自動執行本逐步解說中提及的大量工作。 若要了解如何使用 Visual Studio 建立、編輯、建置及測試 MSBuild 專案檔，請參閱[逐步解說：使用 MSBuild](../msbuild/walkthrough-using-msbuild.md)。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [MSBuild 概觀](../msbuild/msbuild.md)
 - [MSBuild 參考](../msbuild/msbuild-reference.md)

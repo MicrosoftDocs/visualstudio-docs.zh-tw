@@ -14,12 +14,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 944825c00e55fcdb3a1a8f1f0c11d3a37a25025c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8fad79423465ac3d90c426862f93f09d721c7df3
+ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72639405"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72806984"
 ---
 # <a name="walkthrough-create-an-n-tier-data-application"></a>逐步解說：建立多層式資料應用程式
 「多層式架構」(N-tier) 資料應用程式是可存取資料而且分成多個邏輯層或「層級」(tier) 的應用程式。 將應用程式元件分成離散層級，可增加應用程式的可維護性和延展性。 原因是可以更輕鬆地採用套用至單一層級的新技術，而且您不需要重新設計整個方案。 多層式架構包括呈現層、中介層和資料層。 中介層通常包括資料存取層、商務邏輯層和共用元件 (如驗證 (authentication) 和驗證 (validation))。 資料層包括關聯式資料庫。 多層式架構應用程式通常會將敏感性資訊儲存至中介層的資料存取層，以與存取呈現層的使用者隔離。 如需詳細資訊，請參閱多[層式資料應用程式總覽](../data-tools/n-tier-data-applications-overview.md)。
@@ -48,7 +48,7 @@ ms.locfileid: "72639405"
 
 - 撰寫程式碼以填入資料表。
 
-![影片連結](../data-tools/media/playvideo.gif)如本主題的影片版本，請參閱[視訊 HOW TO：建立 N-Tier 資料應用程式](http://go.microsoft.com/fwlink/?LinkId=115188)。
+![影片連結](../data-tools/media/playvideo.gif)如本主題的影片版本，請參閱[視訊 HOW TO：建立 N-Tier 資料應用程式](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/cc178916(v=vs.90))。
 
 ## <a name="prerequisites"></a>Prerequisites
 本逐步解說使用 SQL Server Express LocalDB 和 Northwind 範例資料庫。

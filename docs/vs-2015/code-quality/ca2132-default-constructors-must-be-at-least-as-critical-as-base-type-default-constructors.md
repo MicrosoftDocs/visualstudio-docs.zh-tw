@@ -1,5 +1,5 @@
 ---
-title: CA2132:預設建構函式必須至少與基底型別的預設建構函式一樣關鍵 |Microsoft Docs
+title: CA2132:預設的函式至少必須與基底類型的預設函式一樣重要 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -8,15 +8,15 @@ f1_keywords:
 - CA2132
 ms.assetid: e758afa1-8bde-442a-8a0a-bd1ea7b0ce4d
 caps.latest.revision: 13
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 8287fdf4c767e6fc2a41f014f724ab9a7fe61249
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 0ae271b116b372d4ae732d97ff3f9651ff9db426
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63385821"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72643305"
 ---
 # <a name="ca2132-default-constructors-must-be-at-least-as-critical-as-base-type-default-constructors"></a>CA2132:預設建構函式至少必須和基底類型的預設建構函式一樣關鍵
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,21 +29,21 @@ ms.locfileid: "63385821"
 |中斷變更|中斷|
 
 > [!NOTE]
-> 這個警告只會套用至執行 CoreCLR （CLR 的 Silverlight Web 應用程式特定的版本） 的程式碼中。
+> 此警告僅適用于執行 CoreCLR 的程式碼（Silverlight Web 應用程式專屬的 CLR 版本）。
 
 ## <a name="cause"></a>原因
- 在衍生類別中的預設建構函式的透明度屬性不是重要性不如基底類別的透明度。
+ 衍生類別之預設函式的透明度屬性，與基類的透明度並不重要。
 
 ## <a name="rule-description"></a>規則描述
- 型別和成員具有<xref:System.Security.SecurityCriticalAttribute>不可由 Silverlight 應用程式程式碼。 重視安全性的類型以及成員，只能夠由 .NET Framework for Silverlight 類別庫中的受信任程式碼使用。 由於衍生類別中的公用或受保護建構所具有的透明度必須大於或等於其基底類別，因此應用程式中的類別不可衍生自標記為 SecurityCritical 的類別。
+ 具有 <xref:System.Security.SecurityCriticalAttribute> 的類型和成員無法由 Silverlight 應用程式代碼使用。 重視安全性的類型以及成員，只能夠由 .NET Framework for Silverlight 類別庫中的受信任程式碼使用。 由於衍生類別中的公用或受保護建構所具有的透明度必須大於或等於其基底類別，因此應用程式中的類別不可衍生自標記為 SecurityCritical 的類別。
 
- CoreCLR 平台程式碼，如果基底型別具有公用或保護之不透明的預設建構函式再衍生的型別必須遵守的預設建構函式繼承規則。 衍生的型別也必須擁有預設建構函式，該建構函式必須至少為重要的預設建構函式的基底型別。
+ 針對 CoreCLR 平臺程式碼，如果基底類型具有公用或受保護的非透明預設的函式，則衍生的類型必須遵守預設的函數繼承規則。 衍生類型也必須有預設的函式，且該函式必須至少是基底類型的關鍵預設函式。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
- 若要修正此違規情形，請移除類型或不是衍生自安全性不透明的類型。
+ 若要修正違規，請移除類型，或不要衍生自安全性非透明類型。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
- 請勿隱藏這項規則的警告。 違反此規則應用程式程式碼將會導致拒絕載入的型別與 CoreCLR <xref:System.TypeLoadException>。
+ 請勿隱藏此規則的警告。 應用程式代碼違反此規則會導致 CoreCLR 拒絕載入具有 <xref:System.TypeLoadException> 的類型。
 
 ### <a name="code"></a>程式碼
  [!code-csharp[FxCop.Security.CA2132.DefaultConstructorsMustHaveConsistentTransparency#1](../snippets/csharp/VS_Snippets_CodeAnalysis/fxcop.security.ca2132.defaultconstructorsmusthaveconsistenttransparency/cs/ca2132 - defaultconstructorsmusthaveconsistenttransparency.cs#1)]

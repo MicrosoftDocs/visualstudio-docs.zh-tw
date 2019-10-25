@@ -12,31 +12,31 @@ dev_langs:
 - jsharp
 - C++
 helpviewer_keywords:
-- MSBuild (Visual C++), tasks
-- BscMake task (MSBuild (Visual C++))
+- MSBuild (C++), tasks
+- BscMake task (MSBuild (C++))
 ms.assetid: bb98fc67-cad8-43a7-9598-60df6d734db2
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 27315682c26769ea5c529ceb21c99458c86f0220
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: acf9c0df17ec0e1bb97c1426d5d312f616de0a8e
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63385808"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747378"
 ---
 # <a name="bscmake-task"></a>BscMake 工作
 > [!IMPORTANT]
 > Visual Studio IDE 已不再使用 BscMake。 從 Visual Studio 2008 起，瀏覽資訊會自動儲存在 [解決方案] 資料夾的 *.sdf* 檔案中。
 
- 包裝 Microsoft Browse Information Maintenance Utility 工具 (*bscmake.exe*)。  *bscmake.exe* 工具會從編譯期間所建立的來源瀏覽器檔案 (*.sbr*) 建置瀏覽資訊檔 (*.bsc*)。 使用 [物件瀏覽器] 來檢視 *.bsc* 檔案。 如需詳細資訊，請參閱 [BSCMAKE 參考](/cpp/build/reference/bscmake-reference)。
+ 包裝 Microsoft Browse Information Maintenance Utility 工具 (*bscmake.exe*)。  *bscmake.exe* 工具會從編譯期間所建立的來源瀏覽器檔案 ( *.sbr*) 建置瀏覽資訊檔 ( *.bsc*)。 使用 [物件瀏覽器] 來檢視 *.bsc* 檔案。 如需詳細資訊，請參閱 [BSCMAKE 參考](/cpp/build/reference/bscmake-reference)。
 
 ## <a name="parameters"></a>參數
  下表描述 **BscMake** 工作的參數。 大部分的工作參數會對應至命令列選項。
 
-|參數|說明|
+|參數|描述|
 |---------------|-----------------|
 |**AdditionalOptions**|選擇性的 **String** 參數。<br /><br /> 選項的清單，如命令列上所指定。 例如，/\<option1> /\<option2> /\<option#>。 使用這個參數來指定任何其他 **BscMake** 工作參數未表示的選項。<br /><br /> 如需詳細資訊，請參閱 [BSCMAKE 選項](/cpp/build/reference/bscmake-options)中的選項。|
 |**OutputFile**|選擇性的 **String** 參數。<br /><br /> 指定將會覆寫預設輸出檔案名稱的檔案名稱。<br /><br /> 如需詳細資訊，請參閱 [BSCMAKE 選項](/cpp/build/reference/bscmake-options)中的 **/o** 選項。|
@@ -45,5 +45,5 @@ ms.locfileid: "63385808"
 |**SuppressStartupBanner**|選擇性的 **Boolean** 參數。<br /><br /> 如果是 `true`，當工作開始時，會防止顯示著作權和版本號碼訊息。<br /><br /> 如需詳細資訊，請參閱 [BSCMAKE 選項](/cpp/build/reference/bscmake-options)中的 **/NOLOGO** 選項。|
 |**TrackerLogDirectory**|選擇性的 **String** 參數。<br /><br /> 指定追蹤器記錄檔的目錄。|
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [工作參考](../msbuild/msbuild-task-reference.md)

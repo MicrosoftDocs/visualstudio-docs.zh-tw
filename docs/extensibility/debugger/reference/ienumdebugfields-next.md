@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugFields::Next |Microsoft Docs
+title: IEnumDebugFields：： Next |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,15 +15,15 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ee2cc5273b5ec47f99916a308312f6d26c718033
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 216ce9d49ba9de33307ad692787d6e6d36ee15c3
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66350430"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72727654"
 ---
 # <a name="ienumdebugfieldsnext"></a>IEnumDebugFields::Next
-這個方法會傳回下的一個項目集的列舉型別。
+這個方法會從列舉傳回下一組元素。
 
 ## <a name="syntax"></a>語法
 
@@ -45,17 +45,17 @@ int Next(
 
 ## <a name="parameters"></a>參數
 `celt`\
-[in]若要擷取的元素數目。 也會指定的大小上限`rgelt`陣列。
+在要取出的元素數目。 也會指定 `rgelt` 陣列的大小上限。
 
 `rgelt`\
-[in、 out]陣列[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)来填入的項目。
+[in、out]要填入之[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)元素的陣列。
 
 `pceltFetched`\
-[out]傳回的項目數中實際傳回`rgelt`。
+脫銷傳回 `rgelt` 中實際傳回的元素數目。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，會傳回 `S_OK`。 傳回`S_FALSE`更少的項目要求的數目可能會傳回; 否則會傳回錯誤碼。
+ 如果成功，會傳回 `S_OK`。 如果可能傳回的專案數少於所要求的數目，則傳回 `S_FALSE`。否則，會傳回錯誤碼。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

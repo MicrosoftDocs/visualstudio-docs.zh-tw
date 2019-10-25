@@ -11,12 +11,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fb1088dafea1c43e624d029de6b890c9b597b061
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c00fdf25b29c8a122347cf5261dfcbcb07d9415d
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72658182"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747460"
 ---
 # <a name="properties-of-geometry-shapes"></a>幾何圖案的屬性
 您可以使用 geometry 圖形來指定如何以特定領域語言來顯示網域類別的實例。 如需詳細資訊，請參閱[如何定義特定領域語言](../modeling/how-to-define-a-domain-specific-language.md)。 如需如何使用這些屬性的詳細資訊，請參閱[自訂和擴充特定領域語言](../modeling/customizing-and-extending-a-domain-specific-language.md)。

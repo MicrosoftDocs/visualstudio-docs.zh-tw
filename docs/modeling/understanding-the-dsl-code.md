@@ -9,12 +9,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 34ec62310c2c9b9677f682983fc6d87827057151
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 017c28af68efa98507286e8acdc2b4d694353aa1
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72663802"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747386"
 ---
 # <a name="understanding-the-dsl-code"></a>了解 DSL 程式碼
 

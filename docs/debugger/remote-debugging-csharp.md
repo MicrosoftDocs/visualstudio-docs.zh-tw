@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3490cab7c902dcdf1a7d0095eb69dd44de47a727
-ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.openlocfilehash: 5f147acae956ad380c6e85984de29d5316394c0a
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71211123"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72730262"
 ---
 # <a name="remote-debugging-a-c-or-visual-basic-project-in-visual-studio"></a>在 Visual Studio 中C#遠端偵錯或 Visual Basic 專案
 若要對已部署在不同電腦上的 Visual Studio 應用程式進行偵測，請在您部署應用程式的電腦上安裝並執行遠端工具，將您的專案設定為從 Visual Studio 連接到遠端電腦，然後執行您的應用程式。
@@ -116,7 +116,7 @@ ms.locfileid: "71211123"
 
 [!INCLUDE [remote-debugger-symbols](../debugger/includes/remote-debugger-symbols.md)]
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [Visual Studio 偵錯](../debugger/index.yml)
 - [偵錯工具簡介](../debugger/debugger-feature-tour.md)
 - [設定 Windows 防火牆進行遠端偵錯](../debugger/configure-the-windows-firewall-for-remote-debugging.md)

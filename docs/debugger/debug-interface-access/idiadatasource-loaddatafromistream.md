@@ -1,5 +1,5 @@
 ---
-title: 'Idiadatasource:: Loaddatafromistream |Microsoft Docs'
+title: IDiaDataSource：： loadDataFromIStream |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cb9b218935085b04ae1a9931733aeca34766aa5f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b2bcf657b4404ed72059351175d124a9c07abb46
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62833682"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72744945"
 ---
 # <a name="idiadatasourceloaddatafromistream"></a>IDiaDataSource::loadDataFromIStream
-準備透過記憶體中資料流存取程式資料庫 (.pdb) 檔案中儲存的偵錯資料。
+準備儲存在程式資料庫（.pdb）檔案中的 debug 資料，此檔案會透過記憶體中的資料流程來存取。
 
 ## <a name="syntax"></a>語法
 
@@ -33,27 +33,27 @@ HRESULT loadDataFromIStream ( 
 #### <a name="parameters"></a>參數
  pIStream
 
-[in]<xref:IStream>物件，表示要使用的資料流。
+在@No__t_0 物件，代表要使用的資料流程。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。 下表顯示可能的傳回值，這個方法。
+ 如果成功，會傳回 `S_OK`;否則，會傳回錯誤碼。 下表顯示這個方法的可能傳回值。
 
 |值|描述|
 |-----------|-----------------|
-|E_PDB_FORMAT|嘗試存取已過時的格式的檔案。|
+|E_PDB_FORMAT|嘗試存取具有過時格式的檔案。|
 |E_INVALIDARG|無效的參數。|
-|E_UNEXPECTED|資料來源已準備好了。|
+|E_UNEXPECTED|資料來源已準備就緒。|
 
 ## <a name="remarks"></a>備註
- 這個方法可讓以取得從透過的記憶體可執行檔的偵錯資料<xref:IStream>物件。
+ 這個方法可讓您透過 <xref:IStream> 物件，從記憶體中取得可執行檔的偵錯工具資料。
 
- 若要載入的.pdb 檔不需要驗證，使用[idiadatasource:: Loaddatafrompdb](../../debugger/debug-interface-access/idiadatasource-loaddatafrompdb.md)方法。
+ 若要載入不具驗證的 .pdb 檔案，請使用[IDiaDataSource：： loadDataFromPdb](../../debugger/debug-interface-access/idiadatasource-loaddatafrompdb.md)方法。
 
- 若要驗證對特定準則的.pdb 檔，請使用[idiadatasource:: Loadandvalidatedatafrompdb](../../debugger/debug-interface-access/idiadatasource-loadandvalidatedatafrompdb.md)方法。
+ 若要根據特定準則來驗證 .pdb 檔案，請使用[IDiaDataSource：： loadAndValidateDataFromPdb](../../debugger/debug-interface-access/idiadatasource-loadandvalidatedatafrompdb.md)方法。
 
- 若要存取的資料載入程序 （透過回呼的機制），請使用[idiadatasource:: Loaddataforexe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)方法。
+ 若要取得資料載入進程（透過回呼機制）的存取權，請使用[IDiaDataSource：： loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)方法。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md)
 - [IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)
 - [IDiaDataSource::loadDataFromPdb](../../debugger/debug-interface-access/idiadatasource-loaddatafrompdb.md)

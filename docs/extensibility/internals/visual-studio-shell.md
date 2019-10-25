@@ -1,5 +1,5 @@
 ---
-title: Visual Studio Shell | Microsoft Docs
+title: Visual Studio Shell |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,64 +11,64 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8a147abd4655c923604dd9ca6696e97aac4944ec
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 60aa48da701857508f9b6fd7fc3d9d0c0603046e
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66332880"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72722047"
 ---
 # <a name="visual-studio-shell"></a>Visual Studio Shell
-[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Shell 是主要的代理程式中整合[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。 此命令介面提供必要的功能，可讓 Vspackage 共用通用的服務。 因為架構的目標[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]是背心主要功能，在 Vspackage 中，命令介面是一個架構，可提供基本功能，並且支援 Vspackage 及其元件之間的跨通訊。
+[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] shell 是 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]中整合的主要代理程式。 Shell 提供了必要的功能，可讓 Vspackage 共用通用的服務。 因為 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 的架構目標是要在 Vspackage 中背心主要功能，所以 shell 是提供基本功能並支援其元件 Vspackage 間交互通訊的架構。
 
 ## <a name="shell-responsibilities"></a>Shell 責任
- 在 shell 具有下列重要的責任：
+ Shell 具有下列重要責任：
 
-- 支援 （透過 COM 介面） 的使用者介面 (UI) 的基本項目。 這些包括預設功能表和工具列、 文件視窗框架或多重文件介面 (MDI) 子視窗和工具視窗框架和停駐支援。
+- 支援（透過 COM 介面）使用者介面（UI）的基本元素。 這些包括預設的功能表和工具列、文件視窗框架或多重文件介面（MDI）子視窗，以及工具視窗框架，以及銜接支援。
 
-- 維護執行中執行的文件資料表 (RDT) 所有目前開啟的文件的清單，以協調的持續性文件，並保證在多個方法，或不相容的方式，就無法開啟該文件。
+- 維護執行中檔資料表（RDT）中所有目前開啟之檔的執行中清單，以協調檔的持續性，並確保一份檔無法以一種以上的方式開啟，或以不相容的方式開啟。
 
-- 支援的命令路由和命令處理介面， `IOleCommandTarget`。
+- 支援命令路由和命令處理介面，`IOleCommandTarget`。
 
-- 在適當的時間載入 Vspackage。 延遲載入 VSPackage 是為了改善效能的殼層。
+- 在適當時間載入 Vspackage。 延遲載入 VSPackage 是改善 shell 效能的必要項。
 
-- 管理特定的共用服務，例如<xref:Microsoft.VisualStudio.Shell.Interop.SVsShell>，它提供了基本的殼層功能和<xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell>，提供基本視窗化功能。
+- 管理特定的共用服務，例如提供基本 shell 功能的 <xref:Microsoft.VisualStudio.Shell.Interop.SVsShell>，以及 <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell>，提供基本的視窗化功能。
 
-- 管理方案 (.sln) 檔案。 解決方案包含相關的專案，類似於 視覺效果中的工作區 (.dsw) 檔案群組C++6.0。
+- 管理解決方案（.sln）檔案。 解決方案包含相關專案的群組，類似于 Visual C++ 6.0 中的工作區（. dsw）檔案。
 
-- 追蹤整個殼層的選取項目、 內容和貨幣。 殼層會追蹤下列項目類型：
+- 追蹤 shell 範圍的選取專案、內容和貨幣。 Shell 會追蹤下列類型的專案：
 
   - 目前的專案
 
-  - 目前的專案項目或項目目前的識別碼。 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>
+  - 目前的專案專案或 ItemID 目前的 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>
 
-  - 目前的選取範圍，如**屬性**視窗或 `SelectionContainer`
+  - [**屬性**] 視窗或 `SelectionContainer` 的目前選取範圍
 
-  - Id 或控制的可見性命令、 功能表和工具列的 CmdUIGuids UI 內容
+  - 控制命令、功能表和工具列之可見度的 UI 內容識別碼或 CmdUIGuids
 
-  - 目前使用中的項目，例如使用中視窗、 文件，並復原管理員
+  - 目前作用中的元素，例如使用中視窗、檔和復原管理員
 
-  - 使用者內容屬性動態說明該磁碟機
+  - 驅動動態說明的使用者內容屬性
 
-  殼層也會調解在已安裝的 Vspackage 和目前的服務間的通訊。 它支援的殼層的核心功能，並使其可供所有的 vspackage 中整合[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。 這些核心功能包括下列項目：
+  Shell 也會調節已安裝 Vspackage 和目前服務之間的通訊。 它支援 shell 的核心功能，並可供 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 中整合的所有 Vspackage 使用。 這些核心功能包括下列專案：
 
-- **關於**對話方塊和開頭顯示畫面
+- **關於**對話方塊和啟動顯示畫面
 
-- **加入 新增 和 加入現有項目**對話方塊
+- [**加入新的] 和 [新增現有專案**] 對話方塊
 
-- **類別檢視** 視窗和**物件瀏覽器**
+- **類別檢視**視窗和**物件瀏覽器**
 
 - **參考**對話方塊
 
-- **文件大綱**視窗
+- **檔大綱**視窗
 
-- **動態說明**視窗
+- **動態**說明視窗
 
 - **尋找**和**取代**
 
-- **開啟專案**並**開啟的檔案**上的對話方塊**新增**功能表
+- **開啟 [專案**]，然後在 [**新增**] 功能表上**開啟**[檔案] 對話方塊
 
-- **選項**對話方塊上的**工具**功能表
+- [**工具**] 功能表上的 [**選項**] 對話方塊
 
 - **屬性**視窗
 
@@ -78,7 +78,7 @@ ms.locfileid: "66332880"
 
 - **工具箱**
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>
 - <xref:Microsoft.VisualStudio.Shell.Interop.SVsShell>

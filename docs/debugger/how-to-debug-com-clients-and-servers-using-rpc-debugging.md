@@ -26,14 +26,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2cca09e917cddffd0d1d844db14ae8a4ca4f0088
-ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.openlocfilehash: 83fdfa65f4efb6f0bc0b99eac27ae0e57c79e3cd
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71211070"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72733683"
 ---
-# <a name="how-to-debug-com-clients-and-servers-using-rpc-debugging"></a>作法：使用 RPC 偵錯對 COM 用戶端和伺服器進行偵錯
+# <a name="how-to-debug-com-clients-and-servers-using-rpc-debugging"></a>如何：使用 RPC 偵錯對 COM 用戶端和伺服器進行偵錯
 您可使用遠端程序呼叫 (Remote Procedure Call，RPC) 偵錯功能，對 COM 用戶端/伺服器應用程式偵錯。 您必須啟用 RPC 偵錯才能使用它。 啟用 RPC 偵錯後，當您從用戶端逐步執行伺服器呼叫時，偵錯工具會附加至伺服器，讓您偵錯其程式碼。 附加偵錯工具後，您就能夠對用戶端和伺服器處理序，使用偵錯工具的所有功能。
 
 ### <a name="to-enable-rpc-debugging"></a>若要啟用 RPC 偵錯
@@ -52,7 +52,7 @@ ms.locfileid: "71211070"
     > [!NOTE]
     > RPC 若逐步執行到執行 Microsoft Windows Vista 的遠端伺服器中，則只有在該遠端伺服器已附加原生偵錯工具的情況下才能運作。 否則，RPC 呼叫將會失敗，而且不會產生錯誤訊息。 要不然，RPC 呼叫將會完成，但逐步執行 RPC 呼叫將沒有作用。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [COM 伺服器和容器偵錯](../debugger/com-server-and-container-debugging.md)
 - [Visual Studio 偵錯](../debugger/index.yml)
 - [偵錯工具簡介](../debugger/debugger-feature-tour.md)

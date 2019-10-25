@@ -10,19 +10,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 30211d773036bbe12c0e807e3be18f13793360b7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 164c404f3bce6b8216092635e3489843039fb1eb
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63388638"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72735307"
 ---
 # <a name="hlsl-shader-debugger"></a>HLSL 著色器偵錯工具
 Visual Studio 圖形分析器中的 HLSL 偵錯工具可協助您了解 HLSL 著色器程式碼在應用程式的真實狀況下的運作方式。
 
  這是 HLSL 偵錯工具：
 
- ![觀看使用 HLSL 偵錯，和呼叫堆疊視窗。](media/gfx_diag_demo_hlsl_debugger_orientation.png "gfx_diag_demo_hlsl_debugger_orientation")
+ ![使用監看式和呼叫堆疊視窗來進行 HLSL 的調試。](media/gfx_diag_demo_hlsl_debugger_orientation.png "gfx_diag_demo_hlsl_debugger_orientation")
 
 ## <a name="understanding-the-hlsl-debugger"></a>了解 HLSL 偵錯工具
  HLSL 偵錯工具可以協助您了解出現在著色器程式碼的問題。 在 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 中偵錯 HLSL 程式碼類似於偵錯以其他語言 (例如：C++、C# 或 Visual Basic) 撰寫的程式碼。 您可以檢查變數內容、設定中斷點、逐步執行程式碼，以及向上查核呼叫堆疊，就像偵錯其他語言時可以執行的功能一樣。
@@ -70,9 +70,9 @@ Visual Studio 圖形分析器中的 HLSL 偵錯工具可協助您了解 HLSL 著
    > [!NOTE]
    > 這個進入點會進入 HLSL 偵錯工具中偵錯任何對應至所選擇繪製呼叫、基本類型和像素的像素著色器執行緒，或進入至藉由所選擇繪製呼叫、基本類型和像素產生插補的端點著色器執行緒。 在端點著色器的情況下，您可以展開端點著色器詳細資料以進一步限定對特定端點的進入點。
 
-   如需有關如何使用 HLSL 偵錯工具來偵錯著色器錯誤的範例，請參閱[範例](graphics-diagnostics-examples.md)或另請參閱 > 一節中連結的逐步解說。
+   如需如何使用 HLSL 偵錯工具來檢查著色器錯誤的範例，請參閱
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [逐步解說：因端點著色而遺漏的物件](walkthrough-missing-objects-due-to-vertex-shading.md)
-- [逐步解說：針對因著色而產生的顯示錯誤進行偵錯](walkthrough-debugging-rendering-errors-due-to-shading.md)
-- [逐步解說：使用圖形診斷來針對計算著色器進行偵錯](walkthrough-using-graphics-diagnostics-to-debug-a-compute-shader.md)
+- [逐步解說：偵錯因著色而產生的顯示錯誤](walkthrough-debugging-rendering-errors-due-to-shading.md)
+- [逐步解說：使用圖形診斷來偵錯計算著色器](walkthrough-using-graphics-diagnostics-to-debug-a-compute-shader.md)

@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 35612c8b4ab4e4ee64673d6058143788f56339fb
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 12aa68a549f47b27fd2b750d41631f4fabd546ba
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "62837695"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740953"
 ---
-# <a name="idiasymbolgetbasedataslot"></a>IDiaSymbol::get_baseDataSlot
-擷取的基底的資料插槽。
+# <a name="idiasymbolget_basedataslot"></a>IDiaSymbol::get_baseDataSlot
+抓取基底資料位置。
 
 ## <a name="syntax"></a>語法
 
@@ -30,10 +30,10 @@ HRESULT get_baseDataSlot(
 #### <a name="parameters"></a>參數
  `pRetVal`
 
-[out]指標`DWORD`保存的基底的資料插槽。
+脫銷保存基底資料位置之 `DWORD` 的指標。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，則傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。
+ 如果成功，會傳回 `S_OK`;否則，會傳回 `S_FALSE` 或錯誤碼。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

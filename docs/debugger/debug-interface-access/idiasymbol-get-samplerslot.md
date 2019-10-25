@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fe41982faadeec8ac44a0f178045b3c4dfa69b24
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 3a311b7139ba9b6d93eac1d50308db2e951c5c4d
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "62835437"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739379"
 ---
-# <a name="idiasymbolgetsamplerslot"></a>IDiaSymbol::get_samplerSlot
-擷取取樣器的位置。
+# <a name="idiasymbolget_samplerslot"></a>IDiaSymbol::get_samplerSlot
+抓取取樣器位置。
 
 ## <a name="syntax"></a>語法
 
@@ -30,10 +30,10 @@ HRESULT get_samplerSlot(
 #### <a name="parameters"></a>參數
  `pRetVal`
 
-[out]指標`DWORD`保存的取樣器的位置。
+脫銷保存取樣器位置之 `DWORD` 的指標。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，則傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。
+ 如果成功，會傳回 `S_OK`;否則，會傳回 `S_FALSE` 或錯誤碼。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

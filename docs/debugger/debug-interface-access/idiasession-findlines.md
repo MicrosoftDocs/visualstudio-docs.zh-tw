@@ -1,5 +1,5 @@
 ---
-title: 'Idiasession:: Findlines |Microsoft Docs'
+title: IDiaSession：： findLines |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b127cbc5c9ddc5a2aa2d293d1371bab18d191fdb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d6082bfe8a3eee00d425441ff44a6eadd1c36e27
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839286"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742129"
 ---
 # <a name="idiasessionfindlines"></a>IDiaSession::findLines
-擷取指定的編譯模組和來源檔案識別碼內的行號。
+抓取指定編譯模組和原始程式檔識別碼內的行號。
 
 ## <a name="syntax"></a>語法
 
@@ -35,20 +35,20 @@ HRESULT findLines ( 
 #### <a name="parameters"></a>參數
  `compiland`
 
-[in][IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)物件，表示編譯的模組。 使用此介面做為內容，以在其中搜尋的行號。
+在代表編譯模組的[IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)物件。 使用此介面做為用來搜尋行號的內容。
 
  `file`
 
-[in][IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)物件，表示原始程式檔，在其中搜尋的行號。
+在[IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)物件，代表要在其中搜尋行號的來源檔案。
 
  `ppResult`
 
-[out]傳回[IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)擷取物件，其中包含一份的行號。
+脫銷傳回[IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)物件，其中包含所抓取的行號清單。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
+ 如果成功，會傳回 `S_OK`;否則，會傳回錯誤碼。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)
 - [IDiaSession](../../debugger/debug-interface-access/idiasession.md)
 - [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)

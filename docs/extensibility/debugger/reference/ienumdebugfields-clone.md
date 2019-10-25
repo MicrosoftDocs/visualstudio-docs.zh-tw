@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugFields::Clone |Microsoft Docs
+title: IEnumDebugFields：： Clone |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,15 +15,15 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2d614a1d98a1374ed0b04aef5b23ebf91c21610c
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: b5657e5db99bd062fa16aae9f9d8516bdbabc99f
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66350447"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72727690"
 ---
 # <a name="ienumdebugfieldsclone"></a>IEnumDebugFields::Clone
-這個方法會傳回一份目前的列舉，為個別的物件。
+這個方法會傳回目前列舉的複本做為個別的物件。
 
 ## <a name="syntax"></a>語法
 
@@ -41,13 +41,13 @@ int Clone(
 
 ## <a name="parameters"></a>參數
 `ppEnum`\
-[out]傳回這個列舉型別為個別物件的複本。
+脫銷傳回這個列舉的複本做為個別的物件。
 
 ## <a name="property-valuereturn-value"></a>屬性值/傳回值
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
+ 如果成功，會傳回 `S_OK`;否則，會傳回錯誤碼。
 
 ## <a name="remarks"></a>備註
- 列舉的複本會呼叫這個方法只有在有相同的原始狀態。 不過，複本與原始的狀態是分開的而且可以個別變更。
+ 列舉的複本在呼叫這個方法時的狀態與原始的相同。 不過，複本和原始的狀態是分開的，而且可以個別變更。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)

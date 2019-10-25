@@ -1,5 +1,5 @@
 ---
-title: 錯誤：安全性檢查失敗，因為 IIS Admin Service 未回應 |Microsoft Docs
+title: 錯誤：安全性檢查失敗，因為 IIS 管理服務沒有回應 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 f1_keywords:
@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8ae97ae0594b06e9b35ac3bdd61eacf852968889
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f668de3d7c7e9a8bd075beb972199cf849feea65
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62851030"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72737878"
 ---
 # <a name="error-a-security-check-failed-because-the-iis-admin-service-did-not-respond"></a>錯誤：安全性檢查失敗，因為 IIS 管理服務沒有回應
 當 IIS 管理服務沒有回應時，就會發生這個錯誤。 這通常表示 IIS 安裝有問題。 首先，確認使用 [系統管理工具] 的 [服務] 工具驗證服務是否在執行。
@@ -44,5 +44,5 @@ ms.locfileid: "62851030"
 
      如需其他資訊，請參閱 IIS 文件。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [偵錯 Web 應用程式：錯誤和疑難排解](../debugger/debugging-web-applications-errors-and-troubleshooting.md)

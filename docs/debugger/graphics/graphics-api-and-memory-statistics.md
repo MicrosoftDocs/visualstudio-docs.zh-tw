@@ -11,36 +11,36 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7810889d4af411477573c71aa694d797a90763f3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fa808e76e6655c5d57108c923b19794d0398b80c
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62896015"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72735580"
 ---
 # <a name="graphics-api-and-memory-statistics"></a>圖形 API 和記憶體統計資料
 <!-- VERSIONLESS -->
-Visual Studio 2017 和更新版本支援的圖形 API 統計資料和記憶體統計資料的工具。  這兩個工具可讓您檢視資訊的各種部分 Direct3D API 使用方式，以及各種資源的 GPU 記憶體耗用量。
+Visual Studio 2017 和更新版本支援圖形 API 統計資料和記憶體統計資料工具。  這兩個工具可讓您查看 Direct3D API 使用方式的各種資訊，以及各種資源的 GPU 記憶體耗用量。
 
 ## <a name="graphics-api-statistics"></a>圖形 API 統計資料
-在 Visual Studio 圖形診斷中的圖形 API 統計資料可讓您檢視所做的 Direct3D 呼叫和每個呼叫的計數。  若要檢視視窗，請選取**檢視 > API 統計資料**功能表項目。
+Visual Studio 圖形診斷中的圖形 API 統計資料可讓您查看所有已進行的 Direct3D 呼叫，以及每個呼叫的計數。  若要查看視窗，請選取 [**觀看 > API 統計資料]** 功能表項目。
 
 ![API 統計資料](media/gfx_diag_api_statistics.png)
 
-這項工具可以探索您可能不知道您的 DirectX 呼叫正在進行，或您太常進行的呼叫中好用。
+這項工具在探索您可能不知道的 DirectX 呼叫，或您經常進行的呼叫時，是很方便的。
 
-您可以以滑鼠右鍵按一下 [全部複製資料] 視窗中以 csv 格式，可以貼到類似 Excel 供進一步分析。
+您可以在視窗中按一下滑鼠右鍵，將所有資料複製成 CSV，這可以貼入 Excel 之類的專案進行進一步的分析。
 
 ## <a name="memory-statistics"></a>記憶體統計資料
-此工具會顯示在框架中建立圖形驅動程式資源配置的記憶體數量。  若要檢視此視窗，請選取**檢視 > 記憶體統計資料**功能表項目。
+此工具會顯示圖形驅動程式針對您在畫面格中建立的資源所配置的記憶體數量。  若要查看這個視窗，請選取 [ **view > Memory Statistics]** 功能表項目。
 
 ![記憶體統計資料](media/gfx_diag_memory_statistics.png)
 
-**GPU 配置**資料行會顯示中顯示的事件所使用的記憶體數量**事件**資料行。  您也可以選取 [監看式] 圖示![監看式 圖示](media/gfx_watch.png)若要檢視[資源歷程記錄](graphics-event-list.md#resource-history)針對選取的事件。
+[ **GPU 配置**] 資料行會顯示**事件**資料行中顯示的事件所使用的記憶體數量。  您也可以選取 [監看式] 圖示 ![watch 圖示 ](media/gfx_watch.png)，以查看所選事件的[資源歷程記錄](graphics-event-list.md#resource-history)。
 
-如同 [API 統計資料] 工具中，您可以以滑鼠右鍵按一下 [全部複製資料] 視窗中以 csv 格式，可以貼到類似 Excel 供進一步分析。
+就像 API 統計資料工具一樣，您可以在視窗中按一下滑鼠右鍵，將所有資料複製成 CSV，這可以貼入 Excel 之類的專案進行進一步的分析。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [圖形診斷 (偵錯 DirectX 圖形)](visual-studio-graphics-diagnostics.md)
 - [資源歷程記錄](graphics-event-list.md#resource-history)
 <!-- /VERSIONLESS -->

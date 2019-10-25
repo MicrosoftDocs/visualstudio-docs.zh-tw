@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_virtualbaseoffset |Microsoft Docs'
+title: IDiaSymbol：： get_virtualBaseOffset |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f1cb4a34f9947d2f5ee50488876d44042b4cb228
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: c72c605b47a5f34542b46cae9943b03c7072b1f5
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64830835"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72738858"
 ---
-# <a name="idiasymbolgetvirtualbaseoffset"></a>IDiaSymbol::get_virtualBaseOffset
-擷取虛擬函式的虛擬函式資料表中的位移。
+# <a name="idiasymbolget_virtualbaseoffset"></a>IDiaSymbol::get_virtualBaseOffset
+抓取虛擬函數之虛擬函式資料表中的位移。
 
 ## <a name="syntax"></a>語法
 
@@ -33,13 +33,13 @@ HRESULT get_virtualBaseOffset ( 
 #### <a name="parameters"></a>參數
  `pRetVal`
 
-[out]虛擬函式的虛擬函式資料表中傳回的位移。
+脫銷傳回虛擬函數之虛擬函式資料表中的位移。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，則傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。
+ 如果成功，會傳回 `S_OK`;否則，會傳回 `S_FALSE` 或錯誤碼。
 
 > [!NOTE]
-> 傳回值為`S_FALSE`表示此屬性不適用於符號。
+> @No__t_0 的傳回值表示該屬性不適用於符號。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c90c2148fc5a563fef8946bd39acf4603d7d09f6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: cb371d841c10b64895400f66bf73159f27d68ec1
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62833229"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72744257"
 ---
 # <a name="idiaenumsectioncontribsskip"></a>IDiaEnumSectionContribs::Skip
-略過指定的數目的列舉型別序列中的區段比重。
+略過列舉序列中指定數目的區段貢獻。
 
 ## <a name="syntax"></a>語法
 
@@ -33,10 +33,10 @@ HRESULT Skip( 
 #### <a name="parameters"></a>參數
  `celt`
 
-[in]略過列舉序列中的區段貢獻數目。
+在要略過的列舉序列中的區段貢獻數目。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，則傳回`S_OK`; 否則傳回`S_FALSE`是否略過任何更多區段投稿內容。
+ 如果成功，會傳回 `S_OK`;否則，如果沒有其他要略過的區段貢獻，則會傳回 `S_FALSE`。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [IDiaEnumSectionContribs](../../debugger/debug-interface-access/idiaenumsectioncontribs.md)

@@ -7,12 +7,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c9678bf0c98774a504f17e9ea74197f82d9ba7ad
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 6be4a8205935d131d880923e721e342ea904134d
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72605381"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747545"
 ---
 # <a name="how-to-migrate-a-domain-specific-language-to-a-new-version"></a>如何：將網域指定的語言移轉至新的版本
 您可以遷移定義和使用特定領域語言的專案，以便從隨 [!INCLUDE[vs_orcas_long](../debugger/includes/vs_orcas_long_md.md)] 散發的 [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] 版本中 [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)]。

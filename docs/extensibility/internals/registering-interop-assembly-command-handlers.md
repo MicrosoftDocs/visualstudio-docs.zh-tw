@@ -1,5 +1,5 @@
 ---
-title: 註冊 Interop 組件命令處理常式 |Microsoft Docs
+title: 註冊 Interop 元件命令處理常式 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,30 +11,30 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b3e90ffc6b065b6d69bbe09bfe1887764ccc9955
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: cbc0d162a11df034bec4d1f357ef8abd106da401
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66353325"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72724695"
 ---
 # <a name="registering-interop-assembly-command-handlers"></a>註冊 Interop 組件命令處理常式
-VSPackage 必須向[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]以便整合式的開發環境 (IDE) 正確地路由傳送它的命令。
+VSPackage 必須向 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 註冊，以便整合式開發環境（IDE）適當地路由其命令。
 
- 您可以更新登錄，手動編輯，或使用登錄器 (.rgs) 檔案。 如需詳細資訊，請參閱 [Creating Registrar Scripts](/cpp/atl/creating-registrar-scripts)。
+ 您可以手動編輯或使用註冊機構（.rgs）檔案來更新登錄。 如需詳細資訊，請參閱 [Creating Registrar Scripts](/cpp/atl/creating-registrar-scripts)。
 
- Managed Package Framework (MPF) 提供這項功能透過<xref:Microsoft.VisualStudio.Shell.ProvideMenuResourceAttribute>類別。
+ Managed Package Framework （MPF）透過 <xref:Microsoft.VisualStudio.Shell.ProvideMenuResourceAttribute> 類別提供這種功能。
 
-- [命令資料表格式參考](https://msdn.microsoft.com/library/09e9c6ef-9863-48de-9483-d45b7b7c798f)資源位於未受管理的附屬 UI 的 dll。
+- [命令資料表格式參考](https://msdn.microsoft.com/library/09e9c6ef-9863-48de-9483-d45b7b7c798f)資源位於非受控附屬 UI dll 中。
 
 ## <a name="command-handler-registration-of-a-vspackage"></a>VSPackage 的命令處理常式註冊
- VSPackage，做為使用者介面 (UI) 的處理常式為基礎的命令需要命名 VSPackage 的登錄項目`GUID`。 此登錄項目指定 VSPackage 的 UI 資源檔和該檔案中的功能表資源的位置。 登錄項目本身位於 hkey_local_machine\software\microsoft\visualstudio\\ *\<版本>* \Menus，其中 *\<版本>* 是的新版[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]，例如 9.0。
+ 作為以使用者介面（UI）為基礎之命令處理常式的 VSPackage，需要在 VSPackage `GUID` 之後命名的登錄專案。 此登錄專案會指定 VSPackage 之 UI 資源檔的位置，以及該檔案內的功能表資源。 登錄專案本身位於 HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio \\ *\<Version >* \Menus，其中 *\<Version >* 是 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 的版本，例如9.0。
 
 > [!NOTE]
-> Hkey_local_machine\software\microsoft\visualstudio \ 的根路徑\\ *\<版本 >* 可以覆寫以替代 root 時[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]shell 初始化。 如需詳細的根路徑的詳細資訊，請參閱[使用 Windows Installer 安裝 Vspackage](../../extensibility/internals/installing-vspackages-with-windows-installer.md)。
+> 當 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] shell 初始化時，可以使用替代根目錄覆寫 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio \\ *\<Version >* 的根路徑。 如需根路徑的詳細資訊，請參閱[使用 Windows Installer 安裝 vspackage](../../extensibility/internals/installing-vspackages-with-windows-installer.md)。
 
-### <a name="the-ctmenu-resource-registry-entry"></a>CTMENU 的資源登錄項目
- 結構的登錄項目是：
+### <a name="the-ctmenu-resource-registry-entry"></a>CTMENU 資源登錄專案
+ 登錄專案的結構如下：
 
 ```
 HKEY_LOCAL_MACHINE\Software\VisualStudio\<Version>\
@@ -42,22 +42,22 @@ HKEY_LOCAL_MACHINE\Software\VisualStudio\<Version>\
     <GUID> = <Resource Information>
 ```
 
- \<*GUID*> 是`GUID`的 VSPackage 中的表單 {XXXXXX-XXXX-XXXX-XXXX-XXXXXXXXX}。
+ \<*GUID*> 是以 {XXXXXX-XXXX-XXXXXXXXX} 形式 VSPackage 的 `GUID`。
 
- *\<資源資訊 >* 三個以逗號分隔的項目所組成。 這些元素，順序如下：
+ *\<Resource 資訊 >* 由三個以逗號分隔的元素所組成。 這些元素的順序如下：
 
- \<*資源 DLL 路徑*>， \<*功能表資源識別碼*>， \<*功能表版本*>
+ \< 的*資源 DLL 路徑*>，\<*功能表資源識別碼*>，\<*功能表版本*>
 
- 下表描述的欄位\<*資源資訊*>。
+ 下表描述 > \<*資源資訊*的欄位。
 
 | 項目 | 描述 |
 |---------------------------| - |
-| \<*資源 DLL 路徑*> | 這是資源包含的功能表資源 DLL 的完整路徑，或保留為空白，表示 VSPackage 的資源 DLL 使用 （如同在其中自行註冊 VSPackage 的封裝子機碼中指定）。<br /><br /> 它是自訂此欄位空白。 |
-| \<*功能表資源識別碼*> | 這是資源識別碼`CTMENU`資源，其中包含所有 UI 項目的 VSPackage 從編譯[.vsct](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)檔案。 |
-| \<*功能表版本*> | 這是用作為版本編號`CTMENU`資源。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 使用此值來判斷它是否需要 remerge 的內容`CTMENU`快取的所有資源`CTMENU`資源。 Remerge 就會觸發執行 devenv 安裝程式命令。<br /><br /> 這個值應該一開始設定為 1 而且在每次變更之後遞增`CTMENU`資源和 remerge 發生之前。 |
+| \<*資源 DLL 的路徑*> | 這是包含功能表資源之資源 DLL 的完整路徑，或保留空白，表示將使用 VSPackage 的資源 DLL （如 VSPackage 本身註冊所在的封裝子機碼中所指定）。<br /><br /> 將此欄位保留空白是慣用的。 |
+| \<*功能表資源識別碼*> | 這是 `CTMENU` 資源的資源識別碼，其中包含從[.vsct](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)檔案編譯之 VSPackage 的所有 UI 元素。 |
+| \<*功能表版本*> | 這是用來做為 `CTMENU` 資源版本的數位。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 使用此值來判斷它是否需要 remerge `CTMENU` 資源的內容及其所有 `CTMENU` 資源的快取。 藉由執行 devenv 安裝命令來觸發 remerge。<br /><br /> 此值一開始應設定為1，並在 `CTMENU` 資源的每次變更之後和 remerge 發生之前遞增。 |
 
 ### <a name="example"></a>範例
- 以下是幾個資源項目範例：
+ 以下是幾個資源專案的範例：
 
 ```
 HKEY_LOCAL_MACHINE\Software\VisualStudio\9.0Exp\
@@ -66,6 +66,6 @@ HKEY_LOCAL_MACHINE\Software\VisualStudio\9.0Exp\
     {1b027a40-8f43-11d0-8d11-00a0c91bc942} = , 10211, 3
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [VSPackage 如何新增使用者介面元素](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 - [使用 Interop 組件的命令和功能表](../../extensibility/internals/commands-and-menus-that-use-interop-assemblies.md)

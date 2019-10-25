@@ -1,5 +1,5 @@
 ---
-title: 尋找哪一個呼叫失敗時呼叫的函式多次 |Microsoft Docs
+title: 找出多次呼叫函式時失敗的呼叫 |Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -28,12 +28,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fa6fb9613df5f5bffb50c9a161eaa0a0254f26dd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4d054c60c45980b3d08b09987229febb99593090
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62900997"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72728040"
 ---
 # <a name="when-calling-a-function-hundreds-of-times-how-do-i-know-which-call-failed"></a>呼叫函式好幾百次時，如何判斷是哪一個呼叫失敗？
 ## <a name="problem-description"></a>問題說明
@@ -48,7 +48,7 @@ CnvtV(int) (no condition) when hit count is equal to 1000 (currently 101)
 
  現在您已經知道函式會在第 101 次呼叫時失敗。 如果您以叫用次數 101 重設中斷點並且再次執行程式，程式會在上次造成失敗的 `CnvtV` 呼叫處停止。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [偵錯機器碼常見問題集](../debugger/debugging-native-code-faqs.md)
 - [設定中斷點](https://msdn.microsoft.com/library/fe4eedc1-71aa-4928-962f-0912c334d583)
 - [偵錯機器碼](../debugger/debugging-native-code.md)

@@ -7,17 +7,17 @@ helpviewer_keywords:
 - response times in load tests
 - load test results, response times
 ms.assetid: e61c49f3-3161-45b1-9220-08b5459065a2
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: ed1bd922b390d5b6e90c68b08683e1b9bdb46f32
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 5fbaa3f8f322bc6633e4f5081ba4cae38b581b95
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62821244"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653289"
 ---
-# <a name="how-to-view-web-page-response-time-in-a-load-test-using-the-load-test-analyzer"></a>HOW TO：使用負載測試分析器在負載測試中檢視網頁回應時間
+# <a name="how-to-view-web-page-response-time-in-a-load-test-using-the-load-test-analyzer"></a>作法：使用負載測試分析器在負載測試中檢視網頁回應時間
 
 每個網頁載入所花的時間稱為「回應時間」。 當您建立 Web 效能測試時，可以在 Web 效能測試中為每一個網頁要求設定回應時間目標。
 
@@ -43,7 +43,7 @@ ms.locfileid: "62821244"
 
 3. 每一個頁面的資料會顯示在方格中。 通常會顯示下列資料行。
 
-   |資料行標題|說明|
+   |資料行標題|描述|
    |-|-|
    |**頁面**|網頁的名稱。|
    |**案例**|情節的名稱。 如果您的 Web 效能測試中有多個情節，此項就很重要。|

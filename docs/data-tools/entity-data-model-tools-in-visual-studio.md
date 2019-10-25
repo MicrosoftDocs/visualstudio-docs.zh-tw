@@ -8,12 +8,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 53b87ce39f0eb5b1455f0a38b2aea7cc6b604342
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 6efcd0ca4e8274df7667b5a5b2b75020def8c358
+ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648521"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72807023"
 ---
 # <a name="entity-framework-tools-in-visual-studio"></a>Visual Studio 中的 Entity Framework Tools
 
@@ -41,7 +41,7 @@ Entity Framework 工具會安裝為 Visual Studio 安裝程式中**資料儲存�
   > [!NOTE]
   > 從 Visual Studio 2010 開始，Entity Framework 工具不支援 [!INCLUDE[ss2k](../data-tools/includes/ss2k_md.md)]。
 
-工具會產生或修改 *.edmx*檔案。 此 *.edmx*檔包含描述概念模型、儲存模型，以及它們之間的對應資訊。 如需詳細資訊，請參閱[EDMX](https://docs.microsoft.com/ef/ef6/)。
+工具會產生或修改 *.edmx*檔案。 此 *.edmx*檔包含描述概念模型、儲存模型，以及它們之間的對應資訊。 如需詳細資訊，請參閱[EDMX](/ef/ef6/)。
 
 [Entity Framework Power Tools](https://marketplace.visualstudio.com/items?itemName=EntityFrameworkTeam.EntityFrameworkPowerToolsBeta4)可協助您建立使用實體資料模型的應用程式。 Power tool 可以產生概念模型、驗證現有模型、產生包含以概念模型為基礎之物件類別的原始程式碼檔案，以及產生包含模型所產生之視圖的原始程式碼檔。 如需詳細資訊，請參閱[預先產生的對應視圖](https://docs.microsoft.com/ef/ef6/fundamentals/performance/pre-generated-views)。
 
@@ -50,8 +50,8 @@ Entity Framework 工具會安裝為 Visual Studio 安裝程式中**資料儲存�
 | 標題 | 描述 |
 | - | - |
 | [ADO.NET Entity Framework](/dotnet/framework/data/adonet/ef/index) | 說明如何使用 [!INCLUDE[adonet_ef](../data-tools/includes/adonet_ef_md.md)] 提供的 [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] 工具來建立應用程式。 |
-| [實體資料模型](/dotnet/framework/data/adonet/entity-data-model) | 提供用來處理以 [!INCLUDE[adonet_ef](../data-tools/includes/adonet_ef_md.md)] 建立之應用程式所使用之資料的連結和資訊。 |
-| [Entity Framework （EF）檔）](https://docs.microsoft.com/ef/ef6/get-started) | 提供影片、教學課程和 advanced 檔的索引，協助您充分利用 Entity Framework。 |
+| [實體資料模型](/dotnet/framework/data/adonet/entity-data-model) | 提供用來處理以 [!INCLUDE[adonet_ef](../data-tools/includes/adonet_ef_md.md)]建立之應用程式所使用之資料的連結和資訊。 |
+| [Entity Framework （EF）檔）](/ef/ef6/get-started) | 提供影片、教學課程和 advanced 檔的索引，協助您充分利用 Entity Framework。 |
 | [ASP.NET 5 應用程式新增至新的資料庫](https://docs.efproject.net/en/latest/platforms/aspnetcore/new-db.html) | 說明如何使用 Entity Framework 7 建立新的 ASP.NET 5 應用程式。 |
 
 ## <a name="see-also"></a>請參閱

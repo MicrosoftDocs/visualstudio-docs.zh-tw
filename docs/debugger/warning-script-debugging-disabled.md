@@ -1,5 +1,5 @@
 ---
-title: 警告：指令碼偵錯已停用 |Microsoft Docs
+title: 警告：已停用腳本調試 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 50fe457e2b66a4c1ddafc9fc24658f58f6f753d2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 91875a370f6d072cf2dd69807f516b8f1a808461
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62901019"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72728204"
 ---
 # <a name="warning-script-debugging-disabled"></a>警告：已停用指令碼偵錯
 在 Internet Explorer 中，目前停用指令碼偵錯功能
@@ -37,11 +37,11 @@ ms.locfileid: "62901019"
 
 4. 清除 [停用指令碼偵錯 (Internet Explorer)]。
 
-5. 按一下 [確定] 。
+5. 按一下 [確定]。
 
 6. 結束並且重新啟動 Internet Explorer。
 
      新的設定目前已經生效。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [如何：附加至指令碼](../debugger/how-to-attach-to-script.md)

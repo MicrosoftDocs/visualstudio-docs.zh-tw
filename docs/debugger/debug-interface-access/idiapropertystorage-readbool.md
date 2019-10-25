@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c5cc189283d6e9910b0b01d3d3e1ca28165bf500
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d776e37bab189e61d0264f4cbda24f89cb4501ce
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839689"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742930"
 ---
 # <a name="idiapropertystoragereadbool"></a>IDiaPropertyStorage::ReadBOOL
-讀取`BOOL`屬性集合中的值。
+讀取屬性集內的 `BOOL` 值。
 
 ## <a name="syntax"></a>語法
 
@@ -34,17 +34,17 @@ HRESULT ReadBOOL ( 
 #### <a name="parameters"></a>參數
  `id`
 
-[in]要讀取之屬性的識別項 (`PROPID`定義為 WTypes.h 中`ULONG`)。
+在要讀取之屬性的識別碼（`PROPID` 在 Wtypes.h 中定義為 `ULONG`）。
 
  `pValue`
 
-[out]傳回屬性值。
+脫銷傳回屬性值。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，則傳回`S_OK`; 否則會傳回錯誤碼。 傳回`E_INVALIDARG`如果屬性不是型別的`BOOL`。
+ 如果成功，會傳回 `S_OK`;否則會傳回錯誤碼。 如果屬性不是 `BOOL` 類型，則傳回 `E_INVALIDARG`。
 
 ## <a name="remarks"></a>備註
- 取得一致的結果，解譯`BOOL`值，以讓非零的值為`TRUE`為零，而且`FALSE`。
+ 若要取得一致的結果，請解讀 `BOOL` 值，讓非零值 `TRUE`，並 `FALSE` 零。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)

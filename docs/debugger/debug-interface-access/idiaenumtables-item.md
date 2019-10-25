@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 03931580f774c29a67771d2251b51825242535c9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bf2d6b14f17d42a128e59446e27bfc251de40d17
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62829389"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743758"
 ---
 # <a name="idiaenumtablesitem"></a>IDiaEnumTables::Item
-擷取透過索引或名稱的資料表。
+藉由索引或名稱來抓取資料表。
 
 ## <a name="syntax"></a>語法
 
@@ -34,17 +34,17 @@ HRESULT Item ( 
 #### <a name="parameters"></a>參數
  `index`
 
-[in]索引或名稱[IDiaTable](../../debugger/debug-interface-access/idiatable.md)要擷取。 如果使用整數變數，則它必須是範圍介於 0 到`count`-1，其中`count`會傳回[idiaenumtables:: Get_count](../../debugger/debug-interface-access/idiaenumtables-get-count.md)方法。
+在要抓取之[IDiaTable](../../debugger/debug-interface-access/idiatable.md)的索引或名稱。 如果使用整數變體，它必須在0到 `count`-1 的範圍內，其中 `count` 是[IDiaEnumTables：： get_Count](../../debugger/debug-interface-access/idiaenumtables-get-count.md)方法所傳回的。
 
  `table`
 
-[out]傳回[IDiaTable](../../debugger/debug-interface-access/idiatable.md)物件，表示所需的資料表。
+脫銷傳回[IDiaTable](../../debugger/debug-interface-access/idiatable.md)物件，代表所需的資料表。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
+ 如果成功，會傳回 `S_OK`;否則，會傳回錯誤碼。
 
 ## <a name="remarks"></a>備註
- 如果指定的字串變數，則字串會命名特定的資料表。 中所定義，名稱應該是其中一個資料表名稱[常數 (偵錯介面存取 SDK)](../../debugger/debug-interface-access/constants-debug-interface-access-sdk.md)。
+ 如果指定了字串 variant，則字串會命名特定的資料表。 名稱應該是常數中所定義的其中一個資料表名稱[（Debug Interface ACCESS SDK）](../../debugger/debug-interface-access/constants-debug-interface-access-sdk.md)。
 
 ## <a name="example"></a>範例
 
@@ -56,7 +56,7 @@ IDiaTable* pTable;
 pEnumTables->Item( var, &pTable );
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [IDiaEnumTables](../../debugger/debug-interface-access/idiaenumtables.md)
 - [IDiaTable](../../debugger/debug-interface-access/idiatable.md)
 - [IDiaEnumTables::get_Count](../../debugger/debug-interface-access/idiaenumtables-get-count.md)

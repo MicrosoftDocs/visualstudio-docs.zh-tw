@@ -1,5 +1,5 @@
 ---
-title: HOW TO：顯示 WPF 追蹤資訊 |Microsoft Docs
+title: 如何：顯示 WPF 追蹤資訊 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,14 +16,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 55b818940a8e2a779c7bbc0e17dec5cd891a2d88
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 82c3f193c32b4e6a67bb0fe5540aa9d0020e77ea
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62848103"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72733474"
 ---
-# <a name="how-to-display-wpf-trace-information"></a>HOW TO：顯示 WPF 追蹤資訊
+# <a name="how-to-display-wpf-trace-information"></a>如何：顯示 WPF 追蹤資訊
 [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] 可以從 WPF 應用程式接收偵錯追蹤資訊，並將該資訊顯示在 [輸出] 視窗中。 若要顯示偵錯追蹤資訊，則必須啟用 WPF 追蹤功能。
 
  您可以在 App.Config 檔中啟用 WPF 追蹤功能，或是使用 <xref:System.Diagnostics.PresentationTraceSources> 類別以程式設計的方式加以啟用。 使用 [選項] 視窗比較容易啟用 WPF 追蹤功能。 不支援使用 Web 應用程式的 WPF 追蹤。
@@ -46,7 +46,7 @@ ms.locfileid: "62848103"
 
      您所按 [資料繫結] 或任何分類旁的 [設定] 欄中都會出現下拉式清單控制項。
 
-8. 按一下下拉式清單，然後選取您想要查看的追蹤資訊的類型：**所有**，**重要**，**錯誤**，**警告**，**資訊**， **Verbose**，或**ActivityTracing**。
+8. 按一下下拉式清單，並選取您想要查看的追蹤資訊類型：[全部]、[重大]、[錯誤]、[警告]、[資訊]、[詳細資訊] 或 [ActivityTracing]。
 
      [重要] 僅限追蹤重要事件。
 
@@ -62,7 +62,7 @@ ms.locfileid: "62848103"
 
      如需這些追蹤資訊層級含意的詳細資訊，請參閱 <xref:System.Diagnostics.SourceLevels>。
 
-9. 按一下 [確定] 。
+9. 按一下 [確定]。
 
 ### <a name="to-disable-wpf-trace-information"></a>若要停用 WPF 追蹤資訊
 
@@ -82,7 +82,7 @@ ms.locfileid: "62848103"
 
 7. 按一下此下拉式清單，然後選取 [關閉]。
 
-8. 按一下 [確定] 。
+8. 按一下 [確定]。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [偵錯 WPF](../debugger/debugging-wpf.md)

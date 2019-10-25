@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 90230bd95e1dbcd3e4c186257c6c36faad6ba1f7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bbe338ba9d3aa6cbc795606c3fa285526afdfd36
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62555126"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745362"
 ---
-# <a name="cvaccesse"></a>CV_access_e
-指定的成員函式和變數的可見性 （存取層級） 的範圍。
+# <a name="cv_access_e"></a>CV_access_e
+指定成員函式和變數的可見度範圍（存取層級）。
 
 ## <a name="syntax"></a>語法
 
@@ -33,19 +33,19 @@ typedef enum CV_access_e {
 ```
 
 ## <a name="elements"></a>項目
-CV_private 成員具有私用存取。
+CV_private 成員具有私用存取權。
 
-CV_protected 成員具有保護的存取權。
+CV_protected 成員具有受保護的存取權。
 
 CV_public 成員具有公用存取權。
 
 ## <a name="remarks"></a>備註
-`friend`存取規範就不會包含這裡因為通常由具有類別的私用和受保護項目的存取權的非成員函式。 使用[idiasymbol:: Get_symtag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)方法來尋找具有符號`SymTagFriend`存取。
+這裡不包含 `friend` 存取規範，因為它通常是由可存取類別的私用和受保護專案的非成員函式所使用。 使用[IDiaSymbol：： get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)方法來尋找具有 `SymTagFriend` 存取權的符號。
 
 ## <a name="requirements"></a>需求
-標頭： cvconst.h
+標頭： cvconst。h
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [列舉和結構](../../debugger/debug-interface-access/enumerations-and-structures.md)
 - [IDiaSymbol::get_access](../../debugger/debug-interface-access/idiasymbol-get-access.md)
 - [IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)

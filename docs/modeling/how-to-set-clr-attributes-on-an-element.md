@@ -11,12 +11,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 07957bd267eba457749eb17a99b1099b8d32be97
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f943f9713e4432f0b06242a2f66acae6b390e5cc
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72661155"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748373"
 ---
 # <a name="how-to-set-clr-attributes-on-an-element"></a>如何：在項目上設定 CLR 屬性
 自訂屬性是特殊的屬性，可以加入至網域元素、圖形、連接器和圖表。 您可以加入任何繼承自 `System.Attribute` 類別的屬性。

@@ -1,5 +1,5 @@
 ---
-title: 屬性視窗的按鈕 |Microsoft Docs
+title: 屬性視窗按鈕 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,31 +10,31 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2040dd9294b19db7fc2806222b13e12e6abdf4ad
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 3f2a41917a58a6fc5780b62c2c9e3db8aa52d407
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66347892"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72725263"
 ---
 # <a name="properties-window-buttons"></a>屬性視窗的按鈕
-根據開發語言和產品類型，顯示特定按鈕的工具列上的預設**屬性**視窗。 在所有情況下，**分類**， **Alphabetized**，**屬性**，以及**屬性頁**顯示按鈕。 在 Visual C# 和 Visual Basic**事件**按鈕也會顯示。 在某些視覺效果C++專案中， **VC + + 訊息**和**VC 會覆寫**顯示按鈕。 其他按鈕可能會顯示其他專案類型。 如需中的按鈕**屬性** 視窗中，請參閱[屬性 視窗](../../ide/reference/properties-window.md)。
+根據 [開發語言] 和 [產品類型] 而定，預設會在 [**屬性**] 視窗的工具列上顯示特定按鈕。 在所有情況下，會顯示 [**分類**]、[**字母順序**]、[**屬性**] 和 [**屬性頁**] 按鈕。 在  C#視覺效果 和 Visual Basic 中，也會顯示 **事件** 按鈕。 在某些視覺C++專案中，會顯示 [ **Vc + + 訊息**] 和 [ **vc 覆寫**] 按鈕。 其他專案類型可能會顯示其他按鈕。 如需有關 [**屬性**] 視窗中按鈕的詳細資訊，請參閱[屬性視窗](../../ide/reference/properties-window.md)。
 
-## <a name="implementation-of-properties-window-buttons"></a>實作的屬性視窗的按鈕
- 當您按一下 **分類**按鈕，Visual Studio 呼叫<xref:Microsoft.VisualStudio.Shell.Interop.ICategorizeProperties>具有焦點，若要依分類排序其屬性的物件上的介面。 <xref:Microsoft.VisualStudio.Shell.Interop.ICategorizeProperties> 實作，則`IDispatch`物件，會向**屬性**視窗。
+## <a name="implementation-of-properties-window-buttons"></a>[屬性] 視窗按鈕的執行
+ 當您按一下 [**分類**] 按鈕時，Visual Studio 會在物件上呼叫 <xref:Microsoft.VisualStudio.Shell.Interop.ICategorizeProperties> 介面，而焦點是依類別目錄排序其屬性。 <xref:Microsoft.VisualStudio.Shell.Interop.ICategorizeProperties> 會在呈現給 [**屬性**] 視窗的 `IDispatch` 物件上執行。
 
- 有 11 有負值的預先定義的屬性分類。 您可以定義自訂類別，但我們建議您指派它們以便區別預先定義的類別目錄的正數值。
+ 有11個預先定義的屬性類別，其具有負值。 您可以定義自訂類別，但我們建議您指派正值來區別它們與預先定義的類別。
 
- <xref:Microsoft.VisualStudio.Shell.Interop.ICategorizeProperties.MapPropertyToCategory%2A>方法會傳回指定之屬性的適當的屬性類別目錄值。 <xref:Microsoft.VisualStudio.Shell.Interop.ICategorizeProperties.GetCategoryName%2A>方法會傳回包含分類名稱的字串。 您只需要提供自訂的類別目錄值的支援，因為 Visual Studio 知道標準屬性類別目錄值。
+ @No__t_0 方法會針對指定的屬性傳回適當的屬性類別目錄值。 @No__t_0 方法會傳回包含類別目錄名稱的字串。 您只需要提供自訂類別值的支援，因為 Visual Studio 知道標準屬性類別目錄值。
 
- 當您按一下 [ **Alphabetized** ] 按鈕，依名稱依字母順序顯示的屬性。 名稱藉由擷取`IDispatch`根據當地語系化的排序演算法。
+ 當您按一下按**字母**順序排列的按鈕時，屬性會依名稱以字母順序顯示。 根據當地語系化的排序演算法，`IDispatch` 會抓取名稱。
 
- 當**屬性**視窗開啟時，**屬性**按鈕時會自動顯示為已選取。 在環境的其他部分，會顯示相同的按鈕，以及您可以按一下來顯示**屬性**視窗。
+ 當 [**屬性**] 視窗開啟時，[**屬性**] 按鈕會自動顯示為 [已選取]。 在環境的其他部分中，會顯示相同的按鈕，您可以按一下它來顯示 [**屬性**] 視窗。
 
- **屬性頁**按鈕便無法使用如果`ISpecifyPropertyPages`針對選取的物件未實作。 屬性頁會顯示組態相依通常與方案和專案，相關聯的屬性，但它們也可以與專案項目相關聯 (例如，在視覺效果C++)。
+ 如果未針對選取的物件執行 `ISpecifyPropertyPages`，就無法使用 [**屬性頁**] 按鈕。 屬性頁會顯示與方案和專案相關的設定相依屬性，但它們也可以與專案專案相關聯（例如，在 Visual C++中）。
 
 > [!NOTE]
-> 您無法加入至工具列按鈕**屬性**使用 unmanaged 程式碼的視窗。 若要加入的工具列按鈕，您必須建立衍生自的 managed 的物件<xref:System.Windows.Forms.Design.PropertyTab>。
+> 您不能使用未受管理的程式碼，將工具列按鈕加入 [**屬性**] 視窗中。 若要加入工具列按鈕，您必須建立衍生自 <xref:System.Windows.Forms.Design.PropertyTab> 的 managed 物件。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [擴充屬性](../../extensibility/internals/extending-properties.md)

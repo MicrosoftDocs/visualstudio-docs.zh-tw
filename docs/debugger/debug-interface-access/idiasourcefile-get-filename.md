@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e6f57454be3690f36cbf1addddb3d51bb01a39f2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a6e871570ad49a4efe2df320f98fe56b5372c6bb
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62838346"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741799"
 ---
-# <a name="idiasourcefilegetfilename"></a>IDiaSourceFile::get_fileName
-擷取原始程式檔名稱。
+# <a name="idiasourcefileget_filename"></a>IDiaSourceFile::get_fileName
+抓取來原始檔案名。
 
 ## <a name="syntax"></a>語法
 
@@ -33,10 +33,10 @@ HRESULT get_fileName ( 
 #### <a name="parameters"></a>參數
  `pRetVal`
 
-[out]傳回原始程式檔名稱。
+脫銷傳回來原始檔案名。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
+ 如果成功，會傳回 `S_OK`;否則，會傳回錯誤碼。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)

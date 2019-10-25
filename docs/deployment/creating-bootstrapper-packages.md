@@ -20,26 +20,26 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3dc22b775af048cc3138d6930a835a00c9d97b2a
-ms.sourcegitcommit: 9cfd3ef6c65f671a26322320818212a1ed5955fe
+ms.openlocfilehash: 0f84f91ebedd47df8c0804adee35dcbec18d8551
+ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68533331"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72806940"
 ---
 # <a name="create-bootstrapper-packages"></a>建立啟動載入器套件
-安裝程式 (Setup Program) 是一般安裝程式 (Installer)，可設定來偵測及安裝可轉散發元件，例如 Windows Installer ( *.msi*) 檔案和可執行程式。 安裝程式也稱為啟動載入器。 其程式設計方式是透過一組 XML 資訊清單，指定用於管理元件安裝的中繼資料。  ClickOnce 的 [**必要條件**] 對話方塊中顯示的每個可轉散發元件 (或先決條件) 都是啟動載入器套件。 啟動載入器套件是一組目錄和檔案，內含描述必要條件安裝方式的資訊清單檔案。
+安裝程式 (Setup Program) 是一般安裝程式 (Installer)，可設定來偵測及安裝可轉散發元件，例如 Windows Installer ( *.msi*) 檔案和可執行程式。 安裝程式也稱為啟動載入器。 其程式設計方式是透過一組 XML 資訊清單，指定用於管理元件安裝的中繼資料。  ClickOnce 的 [**必要條件**] 對話方塊中顯示的每個可轉散發元件（或先決條件）都是啟動載入器套件。 啟動載入器套件是一組目錄和檔案，內含描述必要條件安裝方式的資訊清單檔案。
 
 啟動載入器會先偵測是否已安裝所有必要條件。 如果未安裝必要條件，啟動載入器會先顯示授權合約。 接著，在使用者接受授權合約之後，就會開始安裝必要條件。 不過，如果啟動載入器偵測到所有必要條件，就會直接啟動應用程式安裝程式。
 
 ## <a name="create-custom-bootstrapper-packages"></a>建立自訂啟動載入器套件
-您可以使用 Visual Studio 中的 XML 編輯器, 產生啟動載入器資訊清單。 若要查看建立啟動載入器套件的範例, [請參閱逐步解說:建立具有隱私權提示](../deployment/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt.md)的自訂啟動載入器。
+您可以使用 Visual Studio 中的 XML 編輯器，產生啟動載入器資訊清單。 若要查看建立啟動載入器套件的範例，請參閱[逐步解說：建立具有隱私權提示的自訂](../deployment/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt.md)啟動載入器。
 
-若要建立啟動載入器套件, 您必須建立產品資訊清單, 並針對元件的每個當地語系化版本, 一併封裝資訊清單。
+若要建立啟動載入器套件，您必須建立產品資訊清單，並針對元件的每個當地語系化版本，一併封裝資訊清單。
 
-* 產品資訊清單 ( *.xml*) 包含封裝的任何非語言相關中繼資料。 此清單包含所有當地語系化版本之可轉散發元件通用的中繼資料。  若要建立此檔案, [請參閱如何:建立產品資訊清單](../deployment/how-to-create-a-product-manifest.md)。
+* 產品資訊清單（ *.xml*）包含封裝的任何非語言相關中繼資料。 此清單包含所有當地語系化版本之可轉散發元件通用的中繼資料。  若要建立此檔案，請參閱[如何：建立產品資訊清單](../deployment/how-to-create-a-product-manifest.md)。
 
-* 封裝資訊清單 ( *package .xml*) 包含特定語言的中繼資料;它通常包含當地語系化的錯誤訊息。 元件的每個當地語系化版本至少必須各有一份套件資訊清單。 若要建立此檔案, [請參閱如何:建立套件資訊清單](../deployment/how-to-create-a-package-manifest.md)。
+* 封裝資訊清單（ *package .xml*）包含特定語言的中繼資料;它通常包含當地語系化的錯誤訊息。 元件的每個當地語系化版本至少必須各有一份套件資訊清單。 若要建立此檔案，請參閱[如何：建立封裝資訊清單](../deployment/how-to-create-a-package-manifest.md)。
 
 建立這些檔案之後，請將產品資訊清單檔案放入以自訂啟動載入器命名的資料夾中， 並將套件資訊清單檔案放入以地區設定命名的資料夾中。 例如，如果是英文版可轉散發套件的套件資訊清單檔案，請將檔案放入稱為 en 的資料夾中。 針對每個地區設定重複這個程序，例如以 ja 代表日文，以 de 代表德文。 最終的自訂啟動載入器套件可能會有下列資料夾結構。
 
@@ -58,13 +58,13 @@ CustomBootstrapperPackage
     package.xml
 ```
 
-接下來, 將可轉散發檔案複製到啟動載入器資料夾位置。 如需詳細資訊，請參閱[如何：建立當地語系化的啟動載入器套件](../deployment/how-to-create-a-localized-bootstrapper-package.md)。
+接下來，將可轉散發檔案複製到啟動載入器資料夾位置。 如需詳細資訊，請參閱 [How to: Create a localized bootstrapper package](../deployment/how-to-create-a-localized-bootstrapper-package.md) (如何：建立當地語系化的啟動載入器套件)。
 
 ```
 *\Program Files (x86)\Microsoft SDKs\ClickOnce Bootstrapper*
 ```
 
-或者, 針對舊版的 Visual Studio
+或者，針對舊版的 Visual Studio
 
 ```
 *\Program Files\Microsoft Visual Studio 14.0\SDK\Bootstrapper\Packages*
@@ -76,7 +76,7 @@ CustomBootstrapperPackage
 *\Program Files (x86)\Microsoft Visual Studio 14.0\SDK\Bootstrapper\Packages*
 ```
 
-您也可以從下列登錄機碼中的**Path**值, 尋找啟動載入器資料夾位置:
+您也可以從下列登錄機碼中的**Path**值，尋找啟動載入器資料夾位置：
 
 ```
 *HKLM\Software\Microsoft\GenericBootstrapper*
@@ -100,7 +100,7 @@ CustomBootstrapperPackage
 |ProcessorArchitecture|可執行檔之目標平台的處理器和每個字組的位元。 包括下列值：<br /><br /> -   Intel<br />-   IA64<br />-   AMD64|
 |[Version9x](/windows/desktop/Msi/version9x)|Microsoft Windows 95、Windows 98 或 Windows ME 作業系統的版本號碼。 版本的語法是 Major.Minor.ServicePack。|
 |[VersionNT](/windows/desktop/Msi/versionnt)|Windows NT、Windows 2000、Windows XP、Windows Vista、Windows Server 2008 或 Windows 7 作業系統的版本號碼。 版本的語法是 Major.Minor.ServicePack。|
-|[VersionMSI](/windows/desktop/Msi/versionmsi)|要在安裝期間執行的 Windows Installer 元件版本 (.msi .dll)。|
+|[VersionMSI](/windows/desktop/Msi/versionmsi)|要在安裝期間執行的 Windows Installer 元件版本（.msi .dll）。|
 |[AdminUser](/windows/desktop/Msi/adminuser)|如果使用者具有系統管理員權限，則會設定這個屬性。 值為 true 或 false。|
 |InstallMode|安裝模式指出需要從中安裝元件的位置。 包括下列值：<br /><br /> -   HomeSite - 從廠商的網站安裝必要條件。<br />-   SpecificSite - 從您選取的位置安裝必要條件。<br />-   SameSite - 從應用程式的相同位置安裝必要條件。|
 
@@ -109,7 +109,7 @@ CustomBootstrapperPackage
 
 `%ProgramFiles%\Microsoft.NET\RedistList`
 
-可轉散發清單是一個 XML 檔案, 您應該使用下列格式來命名此檔案:*公司名稱 >。\< \<元件名稱 >。RedistList*。 例如，如果 Acme 建立稱為 Datawidgets 的元件，請使用 *Acme.DataWidgets.RedistList.xml*。 可轉散發清單的內容範例可能如下所示：
+可轉散發清單是 XML 檔案，應該使用下列格式命名：\<公司名稱>.\<元件名稱.RedistList.xml。 例如，如果 Acme 建立稱為 Datawidgets 的元件，請使用 *Acme.DataWidgets.RedistList.xml*。 可轉散發清單的內容範例可能如下所示：
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -118,8 +118,8 @@ CustomBootstrapperPackage
 </FileList>
 ```
 
-## <a name="see-also"></a>另請參閱
-- [如何：使用 ClickOnce 應用程式安裝必要條件](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)
+## <a name="see-also"></a>請參閱
+- [如何：使用 ClickOnce 應用程式安裝必要元件](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)
 - [必要條件對話方塊](../ide/reference/prerequisites-dialog-box.md)
 - [產品和套件結構描述參考](../deployment/product-and-package-schema-reference.md)
-- [使用 Visual Studio 2005 啟動載入器開始進行安裝](http://go.microsoft.com/fwlink/?LinkId=107537)
+- [使用 Visual Studio 2005 啟動載入器開始進行安裝](https://msdn.microsoft.com/magazine/cc163899.aspx)

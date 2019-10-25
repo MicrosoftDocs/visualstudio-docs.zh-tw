@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8fc13197f668f7e046ec8ffc40da246c04449e94
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 9290173fc9dcfdc07c7c0afbb33c741fe3e53f6c
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64825106"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741082"
 ---
-# <a name="idiasymbolgetaddressoffset"></a>IDiaSymbol::get_addressOffset
-擷取位址位置的位移的部分。 使用時機[LocationType 列舉](../../debugger/debug-interface-access/locationtype.md)設定為`LocIsStatic`。
+# <a name="idiasymbolget_addressoffset"></a>IDiaSymbol::get_addressOffset
+抓取位址位置的位移部分。 當[LocationType 列舉](../../debugger/debug-interface-access/locationtype.md)設定為 `LocIsStatic` 時使用。
 
 ## <a name="syntax"></a>語法
 
@@ -33,27 +33,27 @@ HRESULT get_addressOffset ( 
 #### <a name="parameters"></a>參數
  `pRetVal`
 
-[out]傳回位址位置的位移的部分。
+脫銷傳回位址位置的位移部分。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，則傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。
+ 如果成功，會傳回 `S_OK`;否則，會傳回 `S_FALSE` 或錯誤碼。
 
 > [!NOTE]
-> 傳回值為`S_FALSE`表示屬性不是適用於符號。
+> @No__t_0 的傳回值表示該屬性不適用於符號。
 
 ## <a name="remarks"></a>備註
- 位於外部的 DLL 中的靜態成員，這個方法所傳回的位移可能是 0，因為這個方法依賴於取得之成員的虛擬位址。 虛擬位址的有效期才[idiasession:: Put_loadaddress](../../debugger/debug-interface-access/idiasession-put-loadaddress.md)方法中的[IDiaSession](../../debugger/debug-interface-access/idiasession.md)已呼叫具有非零參數指定的 dll 載入位址的介面。
+ 對於位於外部 DLL 中的靜態成員，這個方法所傳回的位移可能是0，因為這個方法會依賴取得成員的虛擬位址。 只有在使用指定 DLL 載入位址的非零參數呼叫[IDiaSession](../../debugger/debug-interface-access/idiasession.md)介面中的[IDiaSession：:p ut_loadaddress](../../debugger/debug-interface-access/idiasession-put-loadaddress.md)方法時，虛擬位址才有效。
 
- 若要取得的地址中區段的一部分，請呼叫[idiasymbol:: Get_addresssection](../../debugger/debug-interface-access/idiasymbol-get-addresssection.md)方法。
+ 若要取得位址的區段部分，請呼叫[IDiaSymbol：： get_addressSection](../../debugger/debug-interface-access/idiasymbol-get-addresssection.md)方法。
 
 ## <a name="requirements"></a>需求
 
-|需求|說明|
+|需求|描述|
 |-----------------|-----------------|
-|標頭：|dia2.h|
+|標頭：|dia2。h|
 |版本:|DIA SDK v7.0|
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
 - [LocationType 列舉](../../debugger/debug-interface-access/locationtype.md)
 - [IDiaSymbol::get_addressSection](../../debugger/debug-interface-access/idiasymbol-get-addresssection.md)

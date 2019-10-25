@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 311762f4eafc8dad63da5854870f2836ee68b3ee
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 54b326116b1e1b677a997b264cf0c168a93febb0
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62554892"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745256"
 ---
 # <a name="diaaddressmapentry"></a>DiaAddressMapEntry
-描述中對應的位址的項目。
+描述位址對應中的專案。
 
 ## <a name="syntax"></a>語法
 
@@ -32,26 +32,26 @@ struct DiaAddressMapEntry {
 ```
 
 ## <a name="elements"></a>項目
-`rva` 在圖中 A.相對虛擬位址 (RVA)
+`rva` 映射 A 中的相對虛擬位址（RVA）。
 
-`rvaTo` 相對虛擬位址`rva`會對應到像 b。
+`rvaTo` 相對虛擬位址 `rva` 會對應到映射 B 中的。
 
 ## <a name="remarks"></a>備註
-對應的位址會提供從一個映像版面配置的翻譯 （A） 到另一個 （B）。 陣列`DiaAddressMapEntry`依排序的結構`rva`定義對應的位址。
+位址對應提供從一個影像版面配置（A）到另一個（B）的轉譯。 依 `rva` 排序的 `DiaAddressMapEntry` 結構陣列會定義位址對應。
 
-要轉譯為位址， `addrA`，在映像的位址， `addrB`，在圖 B 中，執行下列步驟：
+若要將位址（`addrA`）在影像 A 中轉譯為位址，`addrB`，請在映射 B 中執行下列步驟：
 
-1. 搜尋的項目，對應`e`，具有最大`rva`小於或等於`addrA`。
+1. 在地圖中搜尋 `e` 的專案，其中最大的 `rva` 小於或等於 `addrA`。
 
 2. 設定 `delta = addrA - e.rva`。
 
 3. 設定 `addrB = e.rvaTo + delta`。
 
-    陣列`DiaAddressMapEntry`結構傳遞給[idiaaddressmap:: Set_addressmap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md)方法。
+    @No__t_0 結構的陣列會傳遞至[IDiaAddressMap：： set_addressMap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md)方法。
 
 ## <a name="requirements"></a>需求
-標頭： dia2.h
+標頭： dia2。h
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [列舉和結構](../../debugger/debug-interface-access/enumerations-and-structures.md)
 - [IDiaAddressMap::set_addressMap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md)

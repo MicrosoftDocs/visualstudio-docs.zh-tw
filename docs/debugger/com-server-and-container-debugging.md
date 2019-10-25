@@ -1,5 +1,5 @@
 ---
-title: COM 伺服器和容器偵錯 |Microsoft Docs
+title: COM 伺服器和容器的調試 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 40edce29e8d40310f6eab37309c4c2ca7eb8a85a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ec5ed51c72ad7fd64bbdfd0135f53a13bb8c6e4b
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62563991"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745682"
 ---
 # <a name="com-server-and-container-debugging"></a>COM 伺服器和容器偵錯
 COM 應用程式可以在程式設計人員直接控制之外執行許多工作。 DLL 之間的通訊、物件的使用次數和剪貼簿作業只是您可能碰到預期外行為的一小部分而已。 發生這種狀況時，第一步驟便是追蹤搜尋問題的來源。
@@ -54,6 +54,6 @@ COM 應用程式可以在程式設計人員直接控制之外執行許多工作�
 
  若要存取 [專案] 屬性頁對話方塊，請在 [方案總管] 中用滑鼠右鍵按一下您的專案，然後從捷徑功能表選擇 [屬性]。 若要尋找 [命令列的引數] 屬性，請展開 [組態屬性] 分類，然後按一下 [偵錯] 頁。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [偵錯 COM 和 ActiveX](../debugger/com-and-activex-debugging.md)

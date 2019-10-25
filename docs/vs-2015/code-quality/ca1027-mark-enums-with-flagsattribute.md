@@ -12,15 +12,15 @@ helpviewer_keywords:
 - MarkEnumsWithFlags
 ms.assetid: 249e882c-8cd1-4c00-a2de-7b6bdc1849ff
 caps.latest.revision: 20
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 6603e0869a9eb7947735c52a4c438b39d64b9140
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6f2dc7dcd79fbcaf47a2db3cf49f22f3467a06ab
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68157717"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72661938"
 ---
 # <a name="ca1027-mark-enums-with-flagsattribute"></a>CA1027:必須以 FlagsAttribute 標記列舉
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,30 +29,30 @@ ms.locfileid: "68157717"
 |-|-|
 |TypeName|MarkEnumsWithFlags|
 |CheckId|CA1027|
-|分類|Microsoft.Design|
-|中斷變更|非重大|
+|分類|Microsoft. Design|
+|中斷變更|不中斷|
 
 ## <a name="cause"></a>原因
- 公用列舉之值的乘冪或列舉中所定義的其他值的組合和<xref:System.FlagsAttribute?displayProperty=fullName>屬性不存在。 若要減少誤判，此規則不會報告的違規有連續值的列舉。
+ 公用列舉的值為二的冪，或為列舉中所定義之其他值的組合，而且 <xref:System.FlagsAttribute?displayProperty=fullName> 屬性不存在。 為了減少誤報，此規則不會針對具有連續值的列舉報告違規。
 
 ## <a name="rule-description"></a>規則描述
- 列舉類型是一種實值類型 (Value Type)，用以定義一組相關的具名常數。 套用<xref:System.FlagsAttribute>列舉型別時可以有意義地結合其具名的常數。 比方說，請考慮的應用程式，會追蹤哪一天的資源可供使用的一周天數的列舉。 如果要將每個資源的可用性編碼使用列舉型別具有<xref:System.FlagsAttribute>可以表示存在的天數內的任何組合。 如果沒有屬性，可表示一週的某一天。
+ 列舉類型是一種實值類型 (Value Type)，用以定義一組相關的具名常數。 當可以有意義地結合其命名常數時，將 <xref:System.FlagsAttribute> 套用至列舉。 例如，請考慮一個在應用程式中持續追蹤哪一天的資源可供使用的列舉。 如果每個資源的可用性是使用具有 <xref:System.FlagsAttribute> 的列舉來編碼，則可以表示任何天數的組合。 如果沒有屬性，則只能表示一周中的一天。
 
- 對於儲存 combinable 列舉的欄位，個別的列舉值會視為欄位中的位元的群組。 因此，這類欄位有時稱為*位元欄位*。 若要結合之列舉值的位元欄位中的儲存體，使用布林值的條件運算子。 若要測試以判斷是否存在特定的列舉值的位元欄位，使用布林值的邏輯運算子。 位元欄位，來儲存和擷取組合的列舉值正確，列舉中定義的每個值必須是 2 的乘冪。 除非這是讓布林值的邏輯運算子不能擷取個別的列舉值，儲存在欄位中。
+ 對於儲存可組合列舉的欄位，會將個別的列舉值視為欄位中的位群組。 因此，這類欄位有時稱為「*位欄位*」。 若要在位欄位中結合儲存體的列舉值，請使用布林條件運算子。 若要測試位欄位以判斷是否有特定的列舉值，請使用布林邏輯運算子。 為了讓位欄位正確地儲存和取得結合的列舉值，列舉中所定義的每個值都必須是二的乘冪。 除非這麼做，否則布林邏輯運算子將無法解壓縮儲存在欄位中的個別列舉值。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
- 若要修正此規則的違規情形，加入<xref:System.FlagsAttribute>至列舉。
+ 若要修正此規則的違規，請將 <xref:System.FlagsAttribute> 新增至列舉。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
- 如果您不想要組合的列舉值，則隱藏此規則的警告。
+ 如果您不想要組合列舉值，請隱藏此規則的警告。
 
 ## <a name="example"></a>範例
- 在下列範例中，`DaysEnumNeedsFlags`是一種列舉符合使用需求<xref:System.FlagsAttribute>，但不要讓它。 `ColorEnumShouldNotHaveFlag`列舉型別沒有值的乘冪數，但未正確指定<xref:System.FlagsAttribute>。 這樣會違反規則[CA2217:執行不以 FlagsAttribute 標記列舉](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)。
+ 在下列範例中，`DaysEnumNeedsFlags` 是符合使用 <xref:System.FlagsAttribute> 的需求的列舉，但沒有它。 @No__t_0 列舉沒有2的乘冪值，但不正確地指定 <xref:System.FlagsAttribute>。 這會違反規則 [CA2217：請勿使用 FlagsAttribute ](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md) 標記列舉。
 
  [!code-csharp[FxCop.Design.EnumFlags#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.EnumFlags/cs/FxCop.Design.EnumFlags.cs#1)]
 
-## <a name="related-rules"></a>相關的規則
- [CA2217:不以 FlagsAttribute 標記列舉](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)
+## <a name="related-rules"></a>相關規則
+ [CA2217：不要以 FlagsAttribute ](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md) 標記列舉
 
 ## <a name="see-also"></a>另請參閱
  <xref:System.FlagsAttribute?displayProperty=fullName>

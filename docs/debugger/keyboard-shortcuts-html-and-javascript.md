@@ -13,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: e7f800a74fb1cb9d0909bd1f95571eb7a3c27b06
-ms.sourcegitcommit: 8a96a65676fd7a2a03b0803d7eceae65f3fa142b
+ms.openlocfilehash: 824d0787de78ddc679d1060179e65043e0bf5299
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72588960"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72731490"
 ---
 # <a name="keyboard-shortcuts-html-and-javascript"></a>鍵盤快速鍵 (HTML 和 JavaScript)
 

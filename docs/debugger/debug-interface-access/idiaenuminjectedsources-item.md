@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2fd803520a6b6bb58679dd30dbf913450ce6066a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 91be2f4f437cfeed30b0741d10bf719ba0ed2b71
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62833566"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72744508"
 ---
 # <a name="idiaenuminjectedsourcesitem"></a>IDiaEnumInjectedSources::Item
-透過索引中擷取的插入的來源。
+藉由索引來抓取插入的來源。
 
 ## <a name="syntax"></a>語法
 
@@ -34,15 +34,15 @@ HRESULT Item ( 
 #### <a name="parameters"></a>參數
  索引
 
-[in]索引[IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)要擷取的物件。 索引是範圍介於 0 到`count`-1，其中`count`會傳回[idiaenuminjectedsources:: Get_count](../../debugger/debug-interface-access/idiaenuminjectedsources-get-count.md)方法。
+在要抓取的[IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)物件索引。 索引的範圍是0到 `count`-1，其中 `count` 是由[IDiaEnumInjectedSources：： get_Count](../../debugger/debug-interface-access/idiaenuminjectedsources-get-count.md)方法傳回。
 
  injectedSource
 
-[out]傳回[IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)物件，表示插入的來源。
+脫銷傳回代表插入之來源的[IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)物件。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
+ 如果成功，會傳回 `S_OK`;否則，會傳回錯誤碼。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md)
 - [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)

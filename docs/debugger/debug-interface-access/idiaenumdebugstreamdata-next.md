@@ -1,5 +1,5 @@
 ---
-title: 'Idiaenumdebugstreamdata:: Next |Microsoft Docs'
+title: IDiaEnumDebugStreamData：： Next |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cf641fde4c03053496c732aa7904ddcad671af20
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: acdab0a565613194c67aa85484316a235c91dbf6
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62838603"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72744786"
 ---
 # <a name="idiaenumdebugstreamdatanext"></a>IDiaEnumDebugStreamData::Next
-擷取指定的列舉順序中的記錄數。
+抓取列舉序列中指定數目的記錄。
 
 ## <a name="syntax"></a>語法
 
@@ -37,27 +37,27 @@ HRESULT Next ( 
 #### <a name="parameters"></a>參數
  celt
 
-[in]要擷取的記錄數目。
+在要抓取的記錄數目。
 
  cbData
 
-[in]資料緩衝區，以位元組為單位的大小。
+在資料緩衝區的大小（以位元組為單位）。
 
  pcbData
 
-[out]傳回動作傳回的位元組的數目。 如果`data`是 NULL，則`pcbData`所有要求的記錄包含的可用資料的位元組總數。
+脫銷傳回傳回的位元組數目。 如果 `data` 是 Null，則 `pcbData` 包含所有要求的記錄可用的資料位元組總數。
 
  data[]
 
-[out]要填滿偵錯資料流記錄資料的緩衝區。
+脫銷要填入 debug 資料流程記錄資料的緩衝區。
 
  pceltFetched
 
-[in、 out]傳回的記錄數目`data`。
+[in、out]傳回 `data` 中的記錄數目。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，會傳回 `S_OK`。 傳回`S_FALSE`如果沒有更多的記錄。 否則會傳回錯誤碼。
+ 如果成功，會傳回 `S_OK`。 如果沒有其他記錄，則傳回 `S_FALSE`。 否則會傳回錯誤碼。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md)
 - [IDiaEnumDebugStreams::Next](../../debugger/debug-interface-access/idiaenumdebugstreams-next.md)

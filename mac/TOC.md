@@ -105,6 +105,10 @@
 ### [使用鍵盤瀏覽](accessibility-keyboard.md)
 ### [使用 VoiceOver](accessibility-voiceover.md)
 
+# 影片教學課程
+## [在 Visual Studio for Mac 中開始使用 ASP.NET Core](tutorial-aspnet-core-vsmac-getting-started.md)
+## [延伸現有的 ASP.NET Core Web 應用程式](tutorial-aspnet-core-vsmac-extending.md)
+
 # [適用於 Windows 使用者的 Visual Studio for Mac](vsmac-for-windows-users.md)
 
 # 疑難排解

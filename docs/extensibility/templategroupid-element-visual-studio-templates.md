@@ -1,5 +1,5 @@
 ---
-title: TemplateGroupID 項目 （Visual Studio 範本） |Microsoft Docs
+title: TemplateGroupID 元素（Visual Studio 範本） |Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,17 +14,17 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4b4e0ccae38b79cf8efb4b7b426fb65ae909c5d5
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 7f710a73d8b9c4e31c8189d3322c518f20def5bb
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66316597"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72718662"
 ---
 # <a name="templategroupid-element-visual-studio-templates"></a>TemplateGroupID 項目 (Visual Studio 範本)
-指定要顯示哪一種專案項目範本。 這個項目時，重要[ShowByDefault （Visual Studio 範本）](../extensibility/showbydefault-visual-studio-templates.md)設定為`false`。 當[ShowByDefault （Visual Studio 範本）](../extensibility/showbydefault-visual-studio-templates.md)設定為`true`，則項目範本會提供在所有專案類型。
+指定要顯示哪一種專案項目範本。 當[ShowByDefault （Visual Studio 範本）](../extensibility/showbydefault-visual-studio-templates.md)設定為 `false` 時，這個元素很重要。 當[[ShowByDefault （Visual Studio 範本）](../extensibility/showbydefault-visual-studio-templates.md) ] 設定為 [`true`] 時，就會在所有專案類型中使用專案範本。
 
- \<VSTemplate> \<TemplateData> \<TemplateGroupID>
+ \<VSTemplate > \<TemplateData > \<TemplateGroupID >
 
 ## <a name="syntax"></a>語法
 
@@ -38,14 +38,14 @@ ms.locfileid: "66316597"
 ### <a name="attributes"></a>屬性
  無。
 
-### <a name="child-elements"></a>子元素
+### <a name="child-elements"></a>子項目
  無。
 
 ### <a name="parent-elements"></a>父項目
 
 |項目|描述|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|將範本分類，並定義該範本在 [新增專案]  或 [加入新項目]  對話方塊中顯示的方式。|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|將範本分類，並定義該範本在 [新增專案] 或 [加入新項目] 對話方塊中顯示的方式。|
 
 ## <a name="text-value"></a>文字值
  需要文字值。
@@ -55,7 +55,7 @@ ms.locfileid: "66316597"
 ## <a name="remarks"></a>備註
  `TemplateGroupID` 是元素。
 
- 值`TemplateGroupID`項目搭配專案系統登錄 (hkey_local_machine\software\microsoft\visualstudio\\ *\<版本號碼>* \Projects\\)會出現在篩選器範本 **加入新項目** 對話方塊。
+ @No__t_0 元素的值會與專案系統註冊（HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio \\ *\<version 號碼 >* \Projects \\）一起使用，以篩選出現在**加入新專案中的範本**對話方塊。
 
 |Visual C++ 值|意義|
 |------------------------|-------------|
@@ -69,6 +69,6 @@ ms.locfileid: "66316597"
 |WinRT 原生|用於 Windows 8.0 市集專案|
 |VC-Android|用於 Android 專案|
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [Visual Studio 範本結構描述參考](../extensibility/visual-studio-template-schema-reference.md)
 - [建立專案和項目範本](../ide/creating-project-and-item-templates.md)

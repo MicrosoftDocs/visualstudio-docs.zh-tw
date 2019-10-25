@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3d75193368188efc660391d1e80c562ed881324b
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.openlocfilehash: 196ba13b95245b8c42e6d946572665792f71346d
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72578038"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745632"
 ---
 # <a name="create-custom-views-of-managed-objects-c-visual-basic-f-ccli"></a>建立受控物件的自訂視圖C#（、Visual Basic F#、 C++、/cli）
 您可以自訂 Visual Studio 在偵錯工具變數視窗中顯示資料型別的方式。

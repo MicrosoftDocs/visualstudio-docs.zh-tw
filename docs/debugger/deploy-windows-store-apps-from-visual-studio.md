@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: b2fa0bd62b88602ee5a4d5091821e2c2a18f6374
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: d902403b111e92f302ff907a29eaaa99ee181058
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72430757"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72737994"
 ---
 # <a name="deploy-uwp-apps-from-visual-studio"></a>從 Visual Studio 部署 UWP 應用程式
 
@@ -98,7 +98,7 @@ Visual Studio 部署功能會建立並註冊在目標裝置上使用 Visual Stud
 
 **允許網路回送**
 
-基於安全性理由，不允許以標準方式安裝的 UWP 或 @no__t 0 應用程式，對其安裝所在的裝置進行網路呼叫。 根據預設，Visual Studio 部署會針對部署應用程式建立此規則的豁免。 此豁免可讓您測試在單一機器上的通訊程序。 在將您的應用程式提交至 [!INCLUDE[win8_appstore_long](../debugger/includes/win8_appstore_long_md.md)]之前，您應該在沒有豁免的情況下測試您的應用程式。
+基於安全性理由，不允許以標準方式安裝的 UWP 或 [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] 應用程式，對其安裝所在的裝置進行網路呼叫。 根據預設，Visual Studio 部署會針對部署應用程式建立此規則的豁免。 此豁免可讓您測試在單一機器上的通訊程序。 在將您的應用程式提交至 [!INCLUDE[win8_appstore_long](../debugger/includes/win8_appstore_long_md.md)]之前，您應該在沒有豁免的情況下測試您的應用程式。
 
 移除應用程式中的網路回送豁免：
 

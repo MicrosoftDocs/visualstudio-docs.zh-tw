@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_haslongjump |Microsoft Docs'
+title: IDiaSymbol：： get_hasLongJump |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 70036cd8add5c9c72262f29ba92fa6c7eaf8977d
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 8fb1e23d252b7cb4f2685a9b07d6e3e92db801bd
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64817142"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740508"
 ---
-# <a name="idiasymbolgethaslongjump"></a>IDiaSymbol::get_hasLongJump
-擷取指定的函式是否包含使用的旗標[longjmp](/cpp/c-runtime-library/reference/longjmp)命令 (搭配[setjmp](/cpp/c-runtime-library/reference/setjmp)命令時，這些形成例外狀況處理的 C 樣式方法)。
+# <a name="idiasymbolget_haslongjump"></a>IDiaSymbol::get_hasLongJump
+抓取旗標，指定函式是否包含使用[longjmp](/cpp/c-runtime-library/reference/longjmp)命令（與[setjmp](/cpp/c-runtime-library/reference/setjmp)命令配對，這些會形成例外狀況處理的 C 樣式方法）。
 
 ## <a name="syntax"></a>語法
 
@@ -33,22 +33,22 @@ HRESULT get_hasLongJump
 #### <a name="parameters"></a>參數
  `pFlag`
 
-[out]會傳回`TRUE`函數若包含`longjmp`命令; 否則會傳回`FALSE`。
+脫銷如果函數包含 `longjmp` 命令，則傳回 `TRUE`;否則，會傳回 `FALSE`。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，則傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。
+ 如果成功，會傳回 `S_OK`;否則，會傳回 `S_FALSE` 或錯誤碼。
 
 > [!NOTE]
-> 傳回值為`S_FALSE`表示屬性不是適用於符號。
+> @No__t_0 的傳回值表示該屬性不適用於符號。
 
 ## <a name="requirements"></a>需求
 
-|需求|說明|
+|需求|描述|
 |-----------------|-----------------|
-|標頭：|dia2.h|
+|標頭：|dia2。h|
 |版本:|DIA SDK v8.0|
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
 - [IDiaSymbol::get_hasSetJump](../../debugger/debug-interface-access/idiasymbol-get-hassetjump.md)
 - [longjmp](/cpp/c-runtime-library/reference/longjmp)

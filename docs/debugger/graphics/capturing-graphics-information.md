@@ -1,5 +1,5 @@
 ---
-title: 擷取圖形資訊 |Microsoft Docs
+title: 捕捉圖形資訊 |Microsoft Docs
 ms.date: 02/09/2017
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d435ff9970748e8debe5edfd15514cde4f531b86
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: b38dd994eca30bfee071f00431f3b111c2ea444a
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63389702"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72736196"
 ---
 # <a name="capturing-graphics-information"></a>擷取圖形資訊
 從 DirectX 應用程式擷取圖形資訊，以使用 Visual Studio 圖形分析器來診斷轉譯問題和效能問題。
@@ -27,17 +27,17 @@ ms.locfileid: "63389702"
 
 ### <a name="to-run-your-app-under-graphics-diagnostics"></a>在圖形診斷下執行您的應用程式
 
-- 在功能表列上選擇 **偵錯**，**圖形**，**開始圖形偵錯**。 (鍵盤：按下 Alt + F5）
+- 在功能表列上，選擇 [ **Debug**]、[**圖形**]、[**開始圖形調試**]。 (鍵盤：按 Alt+F5)
 
-- 在 [**圖形**工具列上，選擇**開始圖形偵錯**] 按鈕。
+- 在 [**圖形**] 工具列上，選擇 [**開始圖形調試**] 按鈕。
 
   當應用程式在 [圖形診斷] 下執行時，會一直擷取某些類型的圖形資訊，這些資訊包括裝置設定、交換鏈結的建立、圖形物件和資源的建立，以及影響多個框架的其他重要事件。 同時，您可以擷取特定框架的詳細資訊 (這些資訊包括繪製呼叫和計算著色器分派)，以及支援它們的 Direct3D 物件和資源。
 
 ### <a name="to-capture-a-frame"></a>擷取框架
 
-- 在 Visual Studio 中，在**圖形**工具列上，按一下**擷取的框架** 按鈕![圖形擷取按鈕圖示](media/debuggingdirectxgraphics.png "DebuggingDirectXGraphics").
+- 在 Visual Studio 中，按一下 [**圖形**] 工具列上的 [**捕捉框架**] 按鈕 [![圖形捕捉] 按鈕圖示](media/debuggingdirectxgraphics.png "DebuggingDirectXGraphics")。
 
-- 在鍵盤上按 Print Screen 鍵。
+- 在鍵盤上，按下 Print Screen 鍵。
 
   > [!NOTE]
   > 當應用程式在 [圖形診斷] 下執行時，PRINT SCREEN 鍵只能用來擷取圖形資訊的框架，而不會執行其一般功能。 此種狀況在停止擷取圖形資訊 (通常會藉由停止偵錯或正常結束) 之前都會保持有效狀態，即是程式焦點是在另一個應用程式上亦是如此。
@@ -61,23 +61,23 @@ ms.locfileid: "63389702"
 
 2. 在左邊的選項分類清單中，選擇 [圖形診斷]，然後設定您想要的 [圖形診斷] 選項。
 
-     **收集擷取期間的呼叫堆疊 （會使擷取速度變慢）** 核取此方塊可收集呼叫堆疊。 根據預設，不會收集呼叫堆疊。 若要擷取呼叫堆疊，請確定 [收集擷取期間的呼叫堆疊 (會使擷取速度變慢)] 核取方塊設定為啟用收集，然後設定 [針對繪製、分派、簡報及效能標記] 選項 (預設) 只收集最重要的呼叫堆疊，或 [針對所有項目] 選項收集所有呼叫堆疊。 若稍後要停止收集呼叫堆疊，請清除 [收集擷取期間的呼叫堆疊 (會使擷取速度變慢)] 核取方塊。
+     **在捕捉期間收集呼叫堆疊（使捕捉變慢）** 核取此方塊以收集呼叫堆疊。 根據預設，不會收集呼叫堆疊。 若要擷取呼叫堆疊，請確定 [收集擷取期間的呼叫堆疊 (會使擷取速度變慢)] 核取方塊設定為啟用收集，然後設定 [針對繪製、分派、簡報及效能標記] 選項 (預設) 只收集最重要的呼叫堆疊，或 [針對所有項目] 選項收集所有呼叫堆疊。 若稍後要停止收集呼叫堆疊，請清除 [收集擷取期間的呼叫堆疊 (會使擷取速度變慢)] 核取方塊。
 
-     **擷取期間停用遊戲中抬頭顯示器**核取此方塊可停用抬頭顯示器覆疊的圖形診斷下執行通常會顯示應用程式。 將其取消選取會顯示抬頭顯示器覆疊。
+     **在 capture 期間停用遊戲中抬頭顯示器**核取此方塊，以停用在 [圖形診斷] 下執行的應用程式通常會顯示的抬頭顯示器重迭。 將其取消選取會顯示抬頭顯示器覆疊。
 
-     **在相容性模式中擷取**核取此方塊，以擷取相容性模式中的圖形資訊。 以相容性模式擷取是預設值。 在相容性模式下，Direct3D 不會回報 GPU 支援除了基底功能層級中定義的功能之外的任何其他功能。 如此可防止使用 GPU 的硬體特定擴充功能來擷取應用程式，並確保可以使用支援相同或更高功能層級的任何 GPU 來播放圖形記錄檔。 取消核取此方塊可停用相容性模式；如果 GPU 不支援應用程式在擷取期間所使用的相同其他功能，則無法在該 GPU 上播放在停用相容性模式的情況下所擷取的記錄檔。
+     **在相容性模式中進行捕獲**核取此方塊可在相容性模式中捕捉圖形資訊。 以相容性模式擷取是預設值。 在相容性模式下，Direct3D 不會回報 GPU 支援除了基底功能層級中定義的功能之外的任何其他功能。 如此可防止使用 GPU 的硬體特定擴充功能來擷取應用程式，並確保可以使用支援相同或更高功能層級的任何 GPU 來播放圖形記錄檔。 取消核取此方塊可停用相容性模式；如果 GPU 不支援應用程式在擷取期間所使用的相同其他功能，則無法在該 GPU 上播放在停用相容性模式的情況下所擷取的記錄檔。
 
-     **如果找不到任何 SDK 層錯誤，停止擷取**核取此方塊，以立即中止擷取，如果發生錯誤。
+     **如果找到任何 SDK 層錯誤，則停止捕獲**核取此方塊，以在發生錯誤時立即停止 capture。
 
 ## <a name="capturing-graphics-information-remotely"></a>從遠端擷取圖形資訊
  圖形資訊可以從執行於本機電腦、遠端電腦或裝置的應用程式進行擷取。 [!INCLUDE[winblue_client_2](../includes/winblue_client_2_md.md)] 電腦和 [!INCLUDE[winblue_winrt_2](../includes/winblue_winrt_2_md.md)] 裝置支援遠端擷取。 若要從遠端執行的應用程式擷取圖形資訊，請將專案設定為從遠端偵錯，並依先前所述在 [圖形診斷] 下執行應用程式。 應用程式會在遠端電腦上執行，而擷取的圖形資訊會記錄在您的開發電腦上。
 
- 如何將專案設定為從遠端偵錯，取決於您所開發的應用程式種類，以及您所使用的程式語言。 如需有關如何設定遠端偵錯的 UWP 應用程式的資訊，請參閱 <<c0> [ 在遠端電腦上的執行 UWP app](../run-windows-store-apps-on-a-remote-machine.md)。 如需有關如何設定遠端偵錯 Windows 傳統型應用程式的資訊，請參閱[遠端偵錯](../remote-debugging.md)。
+ 如何將專案設定為從遠端偵錯，取決於您所開發的應用程式種類，以及您所使用的程式語言。 如需如何為 UWP 應用程式設定遠端偵測的詳細資訊，請參閱[在遠端電腦上執行 uwp 應用程式](../run-windows-store-apps-on-a-remote-machine.md)。 如需如何為 Windows 傳統型應用程式設定遠端偵錯程式的詳細資訊，請參閱[遠端偵錯](../remote-debugging.md)程式。
 
- 之後，您就可以使用遠端電腦或裝置播放圖形資訊，而不管是從何處擷取的資訊。 如需詳細資訊，請參閱[如何：變更圖形診斷播放電腦](how-to-change-the-graphics-diagnostics-playback-machine.md)。
+ 之後，您就可以使用遠端電腦或裝置播放圖形資訊，而不管是從何處擷取的資訊。 如需詳細資訊，請參閱 [如何：變更圖形診斷播放電腦](how-to-change-the-graphics-diagnostics-playback-machine.md)。
 
 ## <a name="capturing-graphics-information-from-the-command-line"></a>從命令列擷取圖形資訊
  您可以使用命令列工具，從應用程式擷取圖形資訊。 這個 DXCap.exe 工具可以快速擷取及播放圖形資訊，而不需使用 Visual Studio 或以程式設計方式擷取。 特別是，您可以使用 DXCap.exe 進行自動化，或是在測試環境中使用。 如需 DXCap.exe 的詳細資訊，請參閱[命令列擷取工具](command-line-capture-tool.md)
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [逐步解說：擷取圖形資訊](walkthrough-capturing-graphics-information.md)

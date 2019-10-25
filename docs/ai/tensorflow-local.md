@@ -10,12 +10,12 @@ ms.topic: quickstart
 ms.devlang: python
 ms.workload:
 - multiple
-ms.openlocfilehash: 26668247bf993da3eb3f2803abaf9288e566ffee
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 43ce126baeb96efcaab3c40bac912274ee1cd8c7
+ms.sourcegitcommit: 57bc1c3887838d707c13feff72a677b3bad3be4b
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62555451"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72777437"
 ---
 # <a name="train-a-tensorflow-model-locally"></a>在本機定型 TensorFlow 模型
 
@@ -23,7 +23,7 @@ ms.locfileid: "62555451"
 
 MNIST 資料庫具有 60,000 個範例的定型集，以及 10,000 個手寫數字範例的測試集。
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>Prerequisites
 
 開始之前，請確定您已安裝下列項目：
 
@@ -53,7 +53,7 @@ C:\>pip.exe install tensorflow
 
 - 在 [方案總管] 中，找到 MNIST 專案並按一下滑鼠右鍵，然後選取 [設定為啟始專案]。
 
-- 按一下 [啟動] 。
+- 按一下 [啟動]。
 
 - 輸出會列印於主控台中。
 

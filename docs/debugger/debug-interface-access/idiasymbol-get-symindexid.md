@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c76bd8da28742f0618dcd6ee68d46a1b4578580
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 7d75fbb5c556a730dc38b4c592b660c0a3a0e876
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64786316"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739247"
 ---
-# <a name="idiasymbolgetsymindexid"></a>IDiaSymbol::get_symIndexId
-擷取唯一符號識別項。
+# <a name="idiasymbolget_symindexid"></a>IDiaSymbol::get_symIndexId
+抓取唯一符號識別碼。
 
 ## <a name="syntax"></a>語法
 
@@ -33,16 +33,16 @@ HRESULT get_symIndexId ( 
 #### <a name="parameters"></a>參數
  `pRetVal`
 
-[out]傳回符號的符號 ID。
+脫銷傳回符號的符號識別碼。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，則傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。
+ 如果成功，會傳回 `S_OK`;否則，會傳回 `S_FALSE` 或錯誤碼。
 
 > [!NOTE]
-> 傳回值為`S_FALSE`表示此屬性不適用於符號。
+> @No__t_0 的傳回值表示該屬性不適用於符號。
 
 ## <a name="remarks"></a>備註
- 識別碼是由 DIA SDK，將標示為唯一的所有符號的唯一值。
+ 識別碼是 DIA SDK 所建立的唯一值，用來將所有符號標記為唯一。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

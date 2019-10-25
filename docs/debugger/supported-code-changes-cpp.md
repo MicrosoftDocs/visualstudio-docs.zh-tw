@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8e38123be6b780aa9f37dc2b329ec36e3f18e793
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: b93c9cfa6767aea83d941cbc8684b27517c8f911
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72430577"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72729555"
 ---
 # <a name="supported-code-changes-c"></a>支援的程式碼變更 (C++)
 專案的 [編輯C++後繼續] 可處理大部分類型的程式碼變更。 不過，有些變更無法在程式執行期間套用。 若要套用這些變更，您必須停止執行，並建置新版的程式碼。
@@ -66,7 +66,7 @@ ms.locfileid: "72430577"
 
 - 偵錯以 [/Zo (增強最佳化偵錯)](/cpp/build/reference/zo-enhance-optimized-debugging)編譯的原生應用程式
 
-- 在 Visual Studio 2015 Update 1 之前的 Visual Studio 版本中，將 UWP 應用程式或元件進行偵測。 從 Visual Studio 2015 Update 1 開始，您可以在 UWP C++應用程式和 DirectX 應用程式中使用 [編輯後繼續]，因為它現在支援具有 `/bigobj` 參數的 @no__t 1 編譯器參數。 您也可以搭配以 `/FASTLINK` 參數。
+- 在 Visual Studio 2015 Update 1 之前的 Visual Studio 版本中，將 UWP 應用程式或元件進行偵測。 從 Visual Studio 2015 Update 1 開始，您可以在 UWP C++應用程式和 DirectX 應用程式中使用 [編輯後繼續]，因為它現在支援使用 `/bigobj` 參數的 `/ZI` 編譯器參數。 您也可以搭配以 `/FASTLINK` 參數。
 
 - 在 Windows 98 上偵錯。
 

@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 75d1c9f9c23df04ca19f68dada718fba12dc51f3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ffc9cae027a078a62b1ef7bab16994a418d76763
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62564687"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745834"
 ---
 # <a name="a-dcom-error-occurred-trying-to-contact-the-remote-computer-access-is-denied"></a>嘗試聯繫遠端電腦時，發生 DCOM 錯誤。 存取被拒絕。
 在下列情況下，遠端偵錯會使用 DCOM 在本機與遠端電腦之間進行通訊：
@@ -40,15 +40,15 @@ ms.locfileid: "62564687"
 
   Visual Studio 處理序無法透過 DCOM 對遠端偵錯工具處理序進行自我驗證 (或認為提供的認證不足) 時，就會發生這個錯誤。 下列其中一種或多種解決方案可能可以解決此問題：
 
-- 關閉 [原生相容性模式]   和 [Managed 相容性模式] 。
+- 關閉 [原生相容性模式] 和 [Managed 相容性模式]。
 
-- 在 Visual Studio 2013 中，關閉 [啟用原生編輯後繼續] 。
+- 在 Visual Studio 2013 中，關閉 [啟用原生編輯後繼續]。
 
 - 將兩部電腦重新開機。
 
 - 如果遠端偵錯要求輸入認證，請核取這個選項儲存認證。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [遠端偵錯錯誤和疑難排解](../debugger/remote-debugging-errors-and-troubleshooting.md)
 - [Remote Debugging](../debugger/remote-debugging.md)
