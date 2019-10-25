@@ -35,12 +35,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 3c83e6b85e8657487254f1f4fb275a6280c786ff
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8654e42db8ec2a285c9104c6f43bc34beb22ad22
+ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72638950"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72806963"
 ---
 # <a name="windows-communication-foundation-services-and-wcf-data-services-in-visual-studio"></a>Visual Studio 中的 Windows Communication Foundation 服務和 WCF 資料服務
 
@@ -52,7 +52,7 @@ Windows Communication Foundation （WCF）是統一的架構，可建立安全�
 
 ### <a name="what-are-wcf-data-services"></a>WCF Data Services 的內容
 
-WCF Data Services 是開放式資料（OData）通訊協定標準的執行。  WCF Data Services 可讓您將表格式資料公開為一組 REST Api，可讓您使用標準 HTTP 動詞命令（例如 GET、POST、PUT 或 DELETE）來傳回資料。 在伺服器端上，WCF Data Services 由[ASP.NET Web API](http://www.asp.net/web-api)取代，以建立新的 OData 服務。 WCF Data Services 用戶端程式庫會繼續成為在 .NET 應用程式中使用 OData 服務的好選擇（從 Visual Studio （**Project**  > **加入服務參考**）。 如需詳細資訊，請參閱 [WCF Data Services 4.5](http://go.microsoft.com/fwlink/?LinkID=119952)。
+WCF Data Services 是開放式資料（OData）通訊協定標準的執行。  WCF Data Services 可讓您將表格式資料公開為一組 REST Api，可讓您使用標準 HTTP 動詞命令（例如 GET、POST、PUT 或 DELETE）來傳回資料。 在伺服器端上，WCF Data Services 由[ASP.NET Web API](https://dotnet.microsoft.com/apps/aspnet/apis)取代，以建立新的 OData 服務。 WCF Data Services 用戶端程式庫會繼續成為在 .NET 應用程式中使用 OData 服務的好選擇（從 Visual Studio （**Project**  > **加入服務參考**）。 如需詳細資訊，請參閱 [WCF Data Services 4.5](http://go.microsoft.com/fwlink/?LinkID=119952)。
 
 ### <a name="wcf-programming-model"></a>WCF 程式設計模型
 

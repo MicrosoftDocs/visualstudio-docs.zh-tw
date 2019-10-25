@@ -10,12 +10,12 @@ metadata:
   author: gewarren
   ms.author: gewarren
   ms.date: 10/10/2019
-  ms.openlocfilehash: 6f04176e3952d3b90fc31ba42a5e8d11c10ca456
-  ms.sourcegitcommit: 57bc1c3887838d707c13feff72a677b3bad3be4b
+  ms.openlocfilehash: 8daaad2dcabfb3636e91d81368e4d56666e37e30
+  ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
   ms.translationtype: HT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 10/22/2019
-  ms.locfileid: "72777687"
+  ms.lasthandoff: 10/24/2019
+  ms.locfileid: "72888554"
 landingContent:
 - title: 了解 XAML
   linkLists:
@@ -37,12 +37,14 @@ landingContent:
     links:
     - text: 撰寫 XAML 程式碼及針對其執行進行偵錯
       url: xaml-hot-reload.md
-    - text: 在 Blend 中偵錯 XAML
-      url: debug-xaml-in-blend.md
+    - text: 檢查 XAML 屬性
+      url: inspect-xaml-properties-while-debugging.md
     - text: 針對 WPF 應用程式進行偵錯
-      url: ../debugger/debugging-wpf.md?toc=/visualstudio/debugger/toc.json&bc=/visualstudio/debugger/breadcrumb/toc.json
+      url: ../debugger/debugging-wpf.md
     - text: 對 UWP 應用程式進行偵錯
       url: ../debugger/debugging-windows-store-and-windows-universal-apps.md
+    - text: 在 Blend 中偵錯 XAML
+      url: debug-xaml-in-blend.md
 - title: 開發 WPF 應用程式
   linkLists:
   - linkListType: overview
