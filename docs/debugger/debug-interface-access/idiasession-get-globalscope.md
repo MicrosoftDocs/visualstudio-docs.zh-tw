@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b68a2a7105fba7bfb6f1240c6eec8c6ae497bed6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1e3dd8d8cb4569857705de1dfebcffe9ee8caed2
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839195"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741963"
 ---
-# <a name="idiasessiongetglobalscope"></a>IDiaSession::get_globalScope
-擷取至全域範圍的參考。
+# <a name="idiasessionget_globalscope"></a>IDiaSession::get_globalScope
+抓取全域範圍的參考。
 
 ## <a name="syntax"></a>語法
 
@@ -33,12 +33,12 @@ HRESULT get_globalScope ( 
 #### <a name="parameters"></a>參數
  `pRetVal`
 
-[out]傳回[IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)物件，表示全域範圍。
+脫銷傳回代表全域範圍的[IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)物件。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
+ 如果成功，會傳回 `S_OK`;否則，會傳回錯誤碼。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [Exe](../../debugger/debug-interface-access/exe.md)
 - [IDiaSession](../../debugger/debug-interface-access/idiasession.md)
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

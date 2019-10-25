@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 68ebfcc4b95b50988673e5ce229d27c5c12d0783
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: 6deedaf8b3d6ca9aee3029934dd87ae01b94f355
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72450359"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72733318"
 ---
 # <a name="how-to-expand-and-collapse-spy-trees"></a>如何：展開和摺疊 Spy++ 樹狀結構
 您可以使用兩種方法來展開和折迭視窗、進程和執行緒的流覽：按一下視窗中的圖示，或使用 [**樹狀**] 功能表。 樹狀結構中的 + 和-圖示的作用與在 [ C++專案] 視窗中的一樣。

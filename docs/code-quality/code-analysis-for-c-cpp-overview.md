@@ -21,16 +21,16 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3a20637b7c7c3afcf594d1498b6030c685e4be72
-ms.sourcegitcommit: e95dd8cedcd180e0bce6a75c86cf861757918290
+ms.openlocfilehash: 515b9b7eb1b1a4d2dbee6329be782386b8370338
+ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "72163055"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72806304"
 ---
 # <a name="code-analysis-for-cc-overview"></a>C/C++ 程式碼分析概觀
 
-C/C++ Code Analysis 工具會提供 c/C++原始程式碼中可能缺失的相關資訊。 這個工具所報告的常見程式碼錯誤包括：緩衝區滿溢、未初始化的記憶體、Null 指標取值以及記憶體和資源流失。 此工具也可以對[ C++核心指導方針](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md)執行檢查。
+C/C++ Code Analysis 工具會提供 c/C++原始程式碼中可能缺失的相關資訊。 這個工具所報告的常見程式碼錯誤包括：緩衝區滿溢、未初始化的記憶體、Null 指標取值以及記憶體和資源流失。 此工具也可以對[ C++核心指導方針](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md)執行檢查。
 
 ## <a name="ide-integrated-development-environment-integration"></a>IDE （整合式開發環境）整合
 
@@ -50,7 +50,7 @@ C:\>cl /analyze Sample.cpp
 
 ## <a name="pragma-support"></a>#pragma 支援
 
-您可以使用 `#pragma` 指示詞將警告視為錯誤;啟用或停用警告，並隱藏個別程式程式碼的警告。 如需詳細資訊，請參閱 [Pragma 指示詞和 __Pragma 關鍵字](https://docs.microsoft.com/cpp/preprocessor/pragma-directives-and-the-pragma-keyword)。
+您可以使用 `#pragma` 指示詞將警告視為錯誤;啟用或停用警告，並隱藏個別程式程式碼的警告。 如需詳細資訊，請參閱 [Pragma 指示詞和 __Pragma 關鍵字](/cpp/preprocessor/pragma-directives-and-the-pragma-keyword)。
 
 ## <a name="annotation-support"></a>注釋支援
 
@@ -64,10 +64,10 @@ C:\>cl /analyze Sample.cpp
 
 您可以使用組建系統的整合式功能，在 [!INCLUDE[esprtfs](../code-quality/includes/esprtfs_md.md)] 建置程序的步驟中執行程式碼分析工具。 如需詳細資訊，請參閱 [Azure Pipelines](/azure/devops/pipelines/index?view=vsts)。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
-- [快速入門：C/C++@no__t 的程式碼分析-1
-- [逐步解說：分析 C/C++程式碼的瑕疵 @ no__t-1
+- [快速入門： C/的程式碼分析C++](quick-start-code-analysis-for-c-cpp.md)
+- [逐步解說：分析 CC++ /程式碼是否有瑕疵](walkthrough-analyzing-c-cpp-code-for-defects.md)
 - [C/C++ 程式碼分析警告](code-analysis-for-c-cpp-warnings.md)
 - [使用 C++ Core Guidelines 檢查工具](using-the-cpp-core-guidelines-checkers.md)
 - [C++核心指導方針檢查程式參考](code-analysis-for-cpp-corecheck.md)

@@ -128,12 +128,12 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - multiple
-ms.openlocfilehash: ca1e66defbce50a9119e817155bcc2a98d01af9d
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: 8437a18bf2b732ee3f12774b04baedf12003d554
+ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72442405"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72806802"
 ---
 # <a name="annotating-function-parameters-and-return-values"></a>註釋函式參數和傳回值
 本文描述簡單函式參數（純量）和結構和類別的指標，以及大多數類型的緩衝區之注釋的一般用法。  本文也會說明批註的常見使用模式。 如需與函式相關的其他批註，請參閱批註函式[行為](../code-quality/annotating-function-behavior.md)。
@@ -169,7 +169,7 @@ ms.locfileid: "72442405"
 
      陣列的指標，由函數讀取。  陣列的大小 `s` 個元素，全部都必須是有效的。
 
-     @No__t-0 variant 會提供以位元組為單位的大小，而不是元素。 只有當大小無法以元素表示時，才使用此專案。  例如，只有在使用 `wchar_t` 的類似函式為時，`char` 字串才會使用 `_bytes_` 變體。
+     `_bytes_` variant 會提供以位元組為單位的大小，而不是元素。 只有當大小無法以元素表示時，才使用此專案。  例如，只有在使用 `wchar_t` 的類似函式時，`char` 字串才會使用 `_bytes_` variant。
 
 - `_In_reads_z_(s)`
 
@@ -187,13 +187,13 @@ ms.locfileid: "72442405"
 
      `typedef _Null_terminated_ wchar_t *PWSTR; void MyStringCopy(_Out_writes_ (size) PWSTR p1,    _In_ size_t size,    _In_ PWSTR p2);`
 
-     在此範例中，呼叫者會為 `p1` 提供 @no__t 0 元素的緩衝區。  `MyStringCopy` 會讓部分元素生效。 更重要的是，`PWSTR` 上的 `_Null_terminated_` 注釋表示 `p1` 在後置狀態中是以 null 終止。  如此一來，有效元素的數目仍然定義良好，但不需要特定的元素計數。
+     在此範例中，呼叫端會為 `p1`提供 `size` 元素的緩衝區。  `MyStringCopy` 會讓部分元素生效。 更重要的是，`PWSTR` 上的 `_Null_terminated_` 注釋表示 `p1` 在後置狀態中是以 null 終止。  如此一來，有效元素的數目仍然定義良好，但不需要特定的元素計數。
 
-     @No__t-0 variant 會提供以位元組為單位的大小，而不是元素。 只有當大小無法以元素表示時，才使用此專案。  例如，只有在使用 `wchar_t` 的類似函式為時，`char` 字串才會使用 `_bytes_` 變體。
+     `_bytes_` variant 會提供以位元組為單位的大小，而不是元素。 只有當大小無法以元素表示時，才使用此專案。  例如，只有在使用 `wchar_t` 的類似函式時，`char` 字串才會使用 `_bytes_` variant。
 
 - `_Out_writes_z_(s)`
 
-     @No__t 0 元素陣列的指標。  元素在預先狀態中不一定是有效的。  在後置狀態中，已完成 null 結束字元的元素（必須存在）必須是有效的。  如果大小是以位元組為單位，則依元素大小 `s` 進行縮放。
+     `s` 元素陣列的指標。  元素在預先狀態中不一定是有效的。  在後置狀態中，已完成 null 結束字元的元素（必須存在）必須是有效的。  如果大小是以位元組為單位，則依元素大小 `s` 進行縮放。
 
 - `_Inout_updates_(s)`
 
@@ -201,7 +201,7 @@ ms.locfileid: "72442405"
 
      陣列的指標，在函式中讀取和寫入。  其大小 `s` 個元素，且在前置狀態和後置狀態中有效。
 
-     @No__t-0 variant 會提供以位元組為單位的大小，而不是元素。 只有當大小無法以元素表示時，才使用此專案。  例如，只有在使用 `wchar_t` 的類似函式為時，`char` 字串才會使用 `_bytes_` 變體。
+     `_bytes_` variant 會提供以位元組為單位的大小，而不是元素。 只有當大小無法以元素表示時，才使用此專案。  例如，只有在使用 `wchar_t` 的類似函式時，`char` 字串才會使用 `_bytes_` variant。
 
 - `_Inout_updates_z_(s)`
 
@@ -215,7 +215,7 @@ ms.locfileid: "72442405"
 
      `_Out_writes_bytes_all_(s)`
 
-     @No__t 0 元素陣列的指標。  元素在預先狀態中不一定是有效的。  在後置狀態中，最多 @no__t 4.9.0-個元素的元素必須有效。  如果大小是以位元組為單位，則縮放 `s`，並依元素大小 `c`，或使用 `_bytes_` variant，其定義為：
+     `s` 元素陣列的指標。  元素在預先狀態中不一定是有效的。  在後置狀態中，最多 `c`個元素的元素必須是有效的。  如果大小是以位元組為單位，則縮放 `s` 並依元素大小 `c`，或使用 `_bytes_` variant，其定義為：
 
      `_Out_writes_to_(_Old_(s), _Old_(s))    _Out_writes_bytes_to_(_Old_(s), _Old_(s))`
 
@@ -227,9 +227,9 @@ ms.locfileid: "72442405"
 
      `_Inout_updates_bytes_to_(s,c)`
 
-     陣列的指標，這是函式的讀取和寫入。  其大小 `s` 個元素，全部都必須在前置狀態中有效，而 @no__t 1 個元素在後置狀態中必須是有效的。
+     陣列的指標，這是函式的讀取和寫入。  它的大小 `s` 元素，全都必須在前置狀態中有效，且 `c` 元素在後置狀態中必須是有效的。
 
-     @No__t-0 variant 會提供以位元組為單位的大小，而不是元素。 只有當大小無法以元素表示時，才使用此專案。  例如，只有在使用 `wchar_t` 的類似函式為時，`char` 字串才會使用 `_bytes_` 變體。
+     `_bytes_` variant 會提供以位元組為單位的大小，而不是元素。 只有當大小無法以元素表示時，才使用此專案。  例如，只有在使用 `wchar_t` 的類似函式時，`char` 字串才會使用 `_bytes_` variant。
 
 - `_Inout_updates_all_(s)`
 
@@ -241,27 +241,27 @@ ms.locfileid: "72442405"
 
      換句話說，在前置狀態下，緩衝區中的每個存在於 `s` 的元素在前置狀態和後置狀態中都是有效的。
 
-     @No__t-0 variant 會提供以位元組為單位的大小，而不是元素。 只有當大小無法以元素表示時，才使用此專案。  例如，只有在使用 `wchar_t` 的類似函式為時，`char` 字串才會使用 `_bytes_` 變體。
+     `_bytes_` variant 會提供以位元組為單位的大小，而不是元素。 只有當大小無法以元素表示時，才使用此專案。  例如，只有在使用 `wchar_t` 的類似函式時，`char` 字串才會使用 `_bytes_` variant。
 
 - `_In_reads_to_ptr_(p)`
 
-     陣列的指標，其運算式 `p` @ no__t-1 @ no__t-2 （也就是，`p` 減 `_Curr_`）是由適當的語言標準所定義。  @No__t-0 之前的元素必須在預先狀態中有效。
+     陣列的指標，運算式 `p` - `_Curr_` （也就是 `p` 減 `_Curr_`）是由適當的語言標準所定義。  `p` 之前的元素必須在前置狀態中有效。
 
 - `_In_reads_to_ptr_z_(p)`
 
-     以 null 結束之陣列的指標，其運算式 `p` @ no__t-1 @ no__t-2 （也就是，`p` 減號 `_Curr_`）是由適當的語言標準所定義。  @No__t-0 之前的元素必須在預先狀態中有效。
+     以 null 結束之陣列的指標，其運算式 `p` - `_Curr_` （也就是 `p` 減 `_Curr_`）是由適當的語言標準所定義。  `p` 之前的元素必須在前置狀態中有效。
 
 - `_Out_writes_to_ptr_(p)`
 
-     陣列的指標，其運算式 `p` @ no__t-1 @ no__t-2 （也就是，`p` 減 `_Curr_`）是由適當的語言標準所定義。  @No__t-0 之前的元素不一定要在預先狀態中有效，而且在後置狀態中必須是有效的。
+     陣列的指標，運算式 `p` - `_Curr_` （也就是 `p` 減 `_Curr_`）是由適當的語言標準所定義。  `p` 之前的元素不一定要在預先狀態中有效，而且在後置狀態中必須是有效的。
 
 - `_Out_writes_to_ptr_z_(p)`
 
-     以 null 結束之陣列的指標，其運算式 `p` @ no__t-1 @ no__t-2 （也就是，`p` 減號 `_Curr_`）是由適當的語言標準所定義。  @No__t-0 之前的元素不一定要在預先狀態中有效，而且在後置狀態中必須是有效的。
+     以 null 結束之陣列的指標，其運算式 `p` - `_Curr_` （也就是 `p` 減 `_Curr_`）是由適當的語言標準所定義。  `p` 之前的元素不一定要在預先狀態中有效，而且在後置狀態中必須是有效的。
 
 ## <a name="optional-pointer-parameters"></a>選擇性指標參數
 
-當指標參數注釋包含 `_opt_` 時，表示參數可能是 null。 否則，注釋的執行會與不包含 `_opt_` 的版本相同。 以下是指標參數注釋的 `_opt_` 變體清單：
+當指標參數注釋包含 `_opt_`時，表示參數可能是 null。 否則，批註會與不包含 `_opt_`的版本執行相同的工作。 以下是指標參數注釋的 `_opt_` 變體清單：
 
 ||||
 |-|-|-|
@@ -288,7 +288,7 @@ ms.locfileid: "72442405"
 
    參數可以是 null，而在後置狀態中，指向的位置可以是 null。
 
-  在下表中，其他子字串會插入批註名稱中，以進一步限定注釋的意義。  各種子字串為 `_z`、`_COM_`、`_buffer_`、`_bytebuffer_` 和 `_to_`。
+  在下表中，其他子字串會插入批註名稱中，以進一步限定注釋的意義。  各種子字串為 `_z`、`_COM_`、`_buffer_`、`_bytebuffer_`和 `_to_`。
 
 > [!IMPORTANT]
 > 如果您要標注的介面是 COM，請使用這些批註的 COM 形式。 請勿將 COM 注釋與任何其他類型介面搭配使用。
@@ -313,7 +313,7 @@ ms.locfileid: "72442405"
 
    `_COM_Outptr_opt_result_maybenull_`
 
-   傳回的指標具有 COM 語義，因此會產生 `_On_failure_` 的後置條件，傳回的指標為 null。
+   傳回的指標具有 COM 語義，因此會攜帶傳回的指標為 null 的 `_On_failure_` 後置條件。
 
 - `_Outptr_result_buffer_(s)`
 
@@ -361,7 +361,7 @@ ms.locfileid: "72442405"
 
 ## <a name="output-reference-parameters"></a>輸出參考參數
 
-參考參數的常見用法是用於輸出參數。  針對簡單的輸出參考參數（例如 `int&`），`_Out_` 會提供正確的語義。  不過，當輸出值是指標時（例如 `int *&`），像 `_Outptr_ int **` 的對等指標注釋不會提供正確的語法。  若要以簡明的表示指標類型的輸出參考參數的語法，請使用下列複合批註：
+參考參數的常見用法是用於輸出參數。  對於簡單的輸出參考參數（例如 `int&`），`_Out_` 提供正確的語義。  不過，當輸出值是指標時（例如 `int *&`），類似 `_Outptr_ int **` 的對等指標注釋不會提供正確的語法。  若要以簡明的表示指標類型的輸出參考參數的語法，請使用下列複合批註：
 
 **注釋和描述**
 
@@ -383,7 +383,7 @@ ms.locfileid: "72442405"
 
 - `_Outref_result_buffer_to_(s, c)`
 
-     結果在後置狀態中必須是有效的，而且不能是 null。 指向 @no__t 0 元素的緩衝區，其中第一個 `c` 是有效的。
+     結果在後置狀態中必須是有效的，而且不能是 null。 指向 `s` 元素的緩衝區，其中第一個 `c` 是有效的。
 
 - `_Outref_result_bytebuffer_to_(s, c)`
 
@@ -407,7 +407,7 @@ ms.locfileid: "72442405"
 
 - `_Outref_result_buffer_to_maybenull_(s, c)`
 
-     結果在後置狀態中必須是有效的，但在後置狀態中可能是 null。 指向 @no__t 0 元素的緩衝區，其中第一個 `c` 是有效的。
+     結果在後置狀態中必須是有效的，但在後置狀態中可能是 null。 指向 `s` 元素的緩衝區，其中第一個 `c` 是有效的。
 
 - `_Outref_result_bytebuffer_to_maybenull_(s,c)`
 
@@ -431,7 +431,7 @@ ms.locfileid: "72442405"
 
 ## <a name="format-string-parameters"></a>格式字串參數
 
-- `_Printf_format_string_` 表示參數是用於 @no__t 1 運算式中的格式字串。
+- `_Printf_format_string_` 表示參數是用於 `printf` 運算式中的格式字串。
 
      **範例**
 
@@ -446,7 +446,7 @@ ms.locfileid: "72442405"
     }
     ```
 
-- `_Scanf_format_string_` 表示參數是用於 @no__t 1 運算式中的格式字串。
+- `_Scanf_format_string_` 表示參數是用於 `scanf` 運算式中的格式字串。
 
      **範例**
 
@@ -461,7 +461,7 @@ ms.locfileid: "72442405"
     }
     ```
 
-- `_Scanf_s_format_string_` 表示參數是用於 @no__t 1 運算式中的格式字串。
+- `_Scanf_s_format_string_` 表示參數是用於 `scanf_s` 運算式中的格式字串。
 
      **範例**
 
@@ -494,16 +494,16 @@ ms.locfileid: "72442405"
 
      `_Field_range_(low, hi)`
 
-     參數、欄位或結果位於 `low` 到 `hi` 的範圍內（含）。  相當於套用至加上批註物件的 `_Satisfies_(_Curr_ >= low && _Curr_ <= hi)`，以及適當的前置狀態或後置狀態條件。
+     參數、欄位或結果位於 `low` 到 `hi` 的範圍內（含）。  相當於套用至標注物件的 `_Satisfies_(_Curr_ >= low && _Curr_ <= hi)`，以及適當的前置狀態或後置狀態條件。
 
     > [!IMPORTANT]
-    > 雖然名稱包含 "in" 和 "out"，但 `_In_` 和 `_Out_` 的語義**並不適用于**這些注釋。
+    > 雖然名稱包含「in」和「out」，但 `_In_` 和 `_Out_` 的語義**並不適用于**這些注釋。
 
 - `_Pre_equal_to_(expr)`
 
      `_Post_equal_to_(expr)`
 
-     標注的值完全是 `expr`。  相當於套用至加上批註物件的 `_Satisfies_(_Curr_ == expr)`，以及適當的前置狀態或後置狀態條件。
+     標注的值完全是 `expr`。  相當於套用至標注物件的 `_Satisfies_(_Curr_ == expr)`，以及適當的前置狀態或後置狀態條件。
 
 - `_Struct_size_bytes_(size)`
 
@@ -511,13 +511,13 @@ ms.locfileid: "72442405"
 
      `typedef _Struct_size_bytes_(nSize) struct MyStruct {    size_t nSize;    ... };`
 
-     @No__t-1 類型 `pM` 的緩衝區大小（以位元組為單位）會被視為：
+     `MyStruct *` 類型的參數 `pM` 的緩衝區大小（以位元組為單位），則會被視為：
 
      `min(pM->nSize, sizeof(MyStruct))`
 
 ## <a name="related-resources"></a>相關資源
 
-[程式碼分析小組 Blog](http://go.microsoft.com/fwlink/?LinkId=251197)
+[程式碼分析小組 Blog](https://blogs.msdn.microsoft.com/codeanalysis/)
 
 ## <a name="see-also"></a>請參閱
 

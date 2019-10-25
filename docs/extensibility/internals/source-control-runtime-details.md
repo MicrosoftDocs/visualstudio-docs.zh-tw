@@ -1,5 +1,5 @@
 ---
-title: 原始檔控制執行階段詳細資料 |Microsoft Docs
+title: 原始檔控制執行時間詳細資料 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,20 +10,20 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1e84fd82c5da5deea2d718baf67799e5bf877131
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 1d2469bc25fabd9659e09d6ca841ebc44a743cca
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66322554"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72723400"
 ---
 # <a name="source-control-runtime-details"></a>原始檔控制的執行階段詳細資料
-當使用者將檔案加入專案中加入原始檔控制，或透過自動化控制站，例如精靈時，專案會加入原始檔控制。 專案未指定為其本身，是在原始檔控制它支援原始檔控制，但必須以手動方式新增至它。
+當使用者將專案中的檔案加入至原始檔控制，或透過 automation 控制器（例如 wizard）時，會將專案新增至原始檔控制。 專案不會針對其本身指定其在原始檔控制之下;它支援原始檔控制，但必須以手動方式加入。
 
-## <a name="registering-with-a-source-control-package"></a>使用原始檔控制套件註冊
- 當您的專案中的檔案新增至原始檔控制時，環境會呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProject2.SetSccLocation%2A>為您提供四個為 cookie 由原始檔控制系統的不透明字串。 將這些字串儲存在您的專案檔中。 這些字串應該傳遞至原始檔控制虛設常式 （管理原始檔控制套件的 Visual Studio 元件） 在啟動時的專案類型呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2.RegisterSccProject%2A>。 這接著會載入適當的原始檔控制封裝，並會轉送它的實作呼叫`IVsSccManager2::RegisterSccProject`。
+## <a name="registering-with-a-source-control-package"></a>向原始檔控制封裝進行註冊
+ 當專案中的檔案加入至原始檔控制時，環境會呼叫 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProject2.SetSccLocation%2A>，以提供您四個不透明的字串，供原始檔控制系統用來做為 cookie。 將這些字串儲存在您的專案檔中。 呼叫 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2.RegisterSccProject%2A> 時，應該將這些字串傳遞至原始檔控制存根（管理原始檔控制封裝的 Visual Studio 元件）。 這會接著載入適當的原始檔控制封裝，並將呼叫轉送到其 `IVsSccManager2::RegisterSccProject` 的執行。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2.RegisterSccProject%2A>
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProject2.SetSccLocation%2A>
 - [支援原始檔控制](../../extensibility/internals/supporting-source-control.md)

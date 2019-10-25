@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f9c2b06e8d89405b38afe2b740ce860a78bc46cc
-ms.sourcegitcommit: 044bb54cb4552c8f4651feb11d62e52726117e75
+ms.openlocfilehash: 61905c0c6c40d893cc8723b711d67690133a7155
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68661828"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72738619"
 ---
 # <a name="namesearchoptions"></a>NameSearchOptions
 指定符號和檔案名的搜尋選項。
@@ -45,18 +45,18 @@ enum NameSearchOptions {
 ## <a name="elements"></a>項目
 `nsNone`未指定任何選項。
 
-`nsfCaseSensitive`套用區分大小寫的名稱相符。
+`nsfCaseSensitive` 套用區分大小寫的名稱相符。
 
-`nsfCaseInsensitive`套用不區分大小寫的名稱相符。
+`nsfCaseInsensitive` 套用不區分大小寫的名稱相符。
 
-`nsfFNameExt`將名稱視為路徑, 並套用 filename。 ext name match。
+`nsfFNameExt` 將名稱視為路徑，並套用 filename。 ext name match。
 
-`nsfRegularExpression`使用星號 (*) 和問號 (？) 做為萬用字元, 來套用區分大小寫的名稱比對。 (不支援其他常見的正則運算式字元)。
+`nsfRegularExpression` 會使用星號（*）和問號（？）做為萬用字元，來套用區分大小寫的名稱相符專案。 （不支援其他常見的正則運算式字元）。
 
-`nsfUndecoratedName`僅適用于同時具有未修飾和裝飾名稱的符號。
+`nsfUndecoratedName` 僅適用于同時具有未修飾和裝飾名稱的符號。
 
 ## <a name="remarks"></a>備註
-此列舉中的值會傳遞至下列方法:
+此列舉中的值會傳遞至下列方法：
 
 - [IDiaSession::findChildren](../../debugger/debug-interface-access/idiasession-findchildren.md)
 
@@ -65,9 +65,9 @@ enum NameSearchOptions {
 - [IDiaSymbol::findChildren](../../debugger/debug-interface-access/idiasymbol-findchildren.md)
 
 ## <a name="requirements"></a>需求
-標頭: dia2。h
+標頭： dia2。h
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [列舉和結構](../../debugger/debug-interface-access/enumerations-and-structures.md)
 - [IDiaSession::findChildren](../../debugger/debug-interface-access/idiasession-findchildren.md)
 - [IDiaSession::findFile](../../debugger/debug-interface-access/idiasession-findfile.md)

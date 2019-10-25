@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 729b3c323ce2128b18af516ecbffb7b5157f0274
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d9751127007b4e7823cf6d2ae35ed2fe80cb83b8
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839364"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742285"
 ---
 # <a name="idiasessionfindfile"></a>IDiaSession::findFile
-擷取原始程式檔編譯模組和名稱。
+依編譯模組和名稱來抓取原始程式檔。
 
 ## <a name="syntax"></a>語法
 
@@ -36,22 +36,22 @@ HRESULT findFile ( 
 #### <a name="parameters"></a>參數
  `pCompiland`
 
-[in][IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)物件，表示要當做內容用於搜尋的編譯。 將此參數設定為`NULL`若要在所有編譯中都尋找原始程式檔。
+在[IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)物件，代表要做為搜尋內容使用的編譯模組。 將此參數設定為 `NULL`，以在所有 compilands 中尋找原始檔。
 
  `name`
 
-[in]指定要擷取的來源檔案的名稱。 將此參數設定為`NULL`所有原始程式檔，來擷取。
+在指定要抓取之來源檔案的名稱。 將此參數設定為所有要抓取之來源檔案的 `NULL`。
 
  `option`
 
-[in]指定套用至搜尋名稱的比較選項。 從數值[NameSearchOptions 列舉](../../debugger/debug-interface-access/namesearchoptions.md)單獨或合併，就可以使用列舉型別。
+在指定套用至名稱搜尋的比較選項。 來自[NameSearchOptions 列舉](../../debugger/debug-interface-access/namesearchoptions.md)列舉的值可以單獨使用，或搭配使用。
 
  `ppResult`
 
-[out]傳回[IDiaEnumSourceFiles](../../debugger/debug-interface-access/idiaenumsourcefiles.md)擷取物件，包含來源檔案的清單。
+脫銷傳回[IDiaEnumSourceFiles](../../debugger/debug-interface-access/idiaenumsourcefiles.md)物件，其中包含所抓取之來源檔案的清單。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
+ 如果成功，會傳回 `S_OK`;否則，會傳回錯誤碼。
 
 ## <a name="example"></a>範例
 
@@ -60,7 +60,7 @@ IDiaEnumSourceFiles* pEnum;
 pSession->findFile( NULL, L"sourcefile.cpp", nsFNameExt, &pEnum );
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [IDiaEnumSourceFiles](../../debugger/debug-interface-access/idiaenumsourcefiles.md)
 - [IDiaSession](../../debugger/debug-interface-access/idiasession.md)
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

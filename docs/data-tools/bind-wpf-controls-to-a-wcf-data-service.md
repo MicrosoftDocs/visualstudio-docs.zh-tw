@@ -15,12 +15,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4abe5047bd7d6f17bb0dc23f4d92a1a842ee273a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 15a34fdc4486a013999a6b53e34117008396c955
+ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648759"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72807007"
 ---
 # <a name="bind-wpf-controls-to-a-wcf-data-service"></a>將 WPF 控制項繫結至 WCF 資料服務
 
@@ -46,7 +46,7 @@ ms.locfileid: "72648759"
 
 - Visual Studio
 
-- 對執行中的 SQL Server 或 SQL Server Express (其中連結了 AdventureWorksLT 範例資料庫) 執行個體的存取權。 您可以從[CodePlex 網站](http://go.microsoft.com/fwlink/?linkid=87843)下載 AdventureWorksLT 資料庫。
+- 對執行中的 SQL Server 或 SQL Server Express (其中連結了 AdventureWorksLT 範例資料庫) 執行個體的存取權。 您可以從[CodePlex 網站](https://archive.codeplex.com/?p=SqlServerSamples)下載 AdventureWorksLT 資料庫。
 
 預先了解下列概念也有助於完成此逐步解說 (但非必要)：
 

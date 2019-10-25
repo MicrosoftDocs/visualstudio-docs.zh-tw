@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f9b0f0d06ae5303277c296fd56e36e60b9a6f022
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 34062b654cbaccec053c5ac50bfb041d37a0f4e6
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62829637"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72744196"
 ---
 # <a name="idiaenumsegmentsnext"></a>IDiaEnumSegments::Next
-擷取指定的數目的列舉型別序列中的區段。
+抓取列舉序列中指定數目的區段。
 
 ## <a name="syntax"></a>語法
 
@@ -35,19 +35,19 @@ HRESULT Next ( 
 #### <a name="parameters"></a>參數
  celt
 
-[in]要擷取列舉值中的區段數目。
+在列舉值中要抓取的區段數目。
 
  rgelt
 
-[out]陣列，是要與需要填入[IDiaSegment](../../debugger/debug-interface-access/idiasegment.md)表示區段的物件。
+脫銷要填入的陣列，其中包含代表區段的所需[IDiaSegment](../../debugger/debug-interface-access/idiasegment.md)物件。
 
  pceltFetched
 
-[out]擷取列舉值中傳回區段的數目。
+脫銷傳回已提取列舉值中的區段數目。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，則傳回 `S_OK`。 傳回`S_FALSE`如果有沒有更多區段。 否則會傳回錯誤碼。
+ 如果成功，會傳回 `S_OK`。 如果沒有其他區段，則傳回 `S_FALSE`。 否則會傳回錯誤碼。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [IDiaEnumSegments](../../debugger/debug-interface-access/idiaenumsegments.md)
 - [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md)

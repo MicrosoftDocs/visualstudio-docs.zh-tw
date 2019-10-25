@@ -11,28 +11,28 @@ dev_langs:
 - jsharp
 - C++
 helpviewer_keywords:
-- MSBuild (Visual C++), ClangCompile task
-- ClangCompile task (MSBuild (Visual C++))
+- MSBuild (C++), ClangCompile task
+- ClangCompile task (MSBuild (C++))
 author: mikeblome
 ms.author: mblome
 ms.workload:
 - multiple
-ms.openlocfilehash: 218ef07fa3b086a2240362011067bf526088d1f4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 1bd1d749461c423d51e0f5b736563a9f9aa757c5
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62569702"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747334"
 ---
 # <a name="clangcompile-task"></a>ClangCompile 工作
 
-包裝 Visual C++ 編譯器工具 (clang.exe)。
+包裝 Microsoft C++編譯器工具（clang）。
 
 ## <a name="parameters"></a>參數
 
 下表說明 **ClangCompile** 工作的參數。
 
-|參數|說明|
+|參數|描述|
 |---------------|-----------------|
 |**AdditionalIncludeDirectories**|選擇性的 **string[]** 參數。<br/><br/>指定一或多個要新增至 Include 路徑中的目錄；如有多個目錄，請使用分號加以分隔。<br/><br/>使用 `-I[path]`。|
 |**AdditionalOptions**|選擇性的 **string** 參數。|
@@ -51,7 +51,7 @@ ms.locfileid: "62569702"
 |**FunctionLevelLinking**|選擇性的 **bool** 參數。<br/><br/>允許編譯器以封裝函式 (COMDAT) 的形式來封裝個別函式。 需要此項目才能使用編輯後繼續功能。<br/><br/>使用 `ffunction-sections`。|
 |**GccToolChain**|選擇性的 **string** 參數。<br/><br/>Gcc 工具鏈的資料夾路徑。|
 |**GNUMode**|選擇性的 **bool** 參數。<br/><br/>|
-|**MSCompatibility**|選擇性的 **bool** 參數。<br/><br/>啟用完整 Microsoft Visual C++ 相容性。|
+|**MSCompatibility**|選擇性的 **bool** 參數。<br/><br/>啟用完整的C++ Microsoft 相容性。|
 |**MSCompatibilityVersion**|選擇性的 **string** 參數。<br/><br/>以點分隔的值，代表要在 _MSC_VER 中回報的 Microsoft 編譯器版本號碼 (0 = 不要定義 (預設))。|
 |**MSExtensions**|選擇性的 **bool** 參數。<br/><br/>接受 Microsoft 編譯器所支援的部分非標準建構。|
 |**MSCompilerVersion**|選擇性的 **string** 參數。<br/><br/>要在 _MSC_VER 中回報的 Microsoft 編譯器版本號碼 (0 = 不要定義 (預設))。|
@@ -82,6 +82,6 @@ ms.locfileid: "62569702"
 |**Verbose**|選擇性的 **bool** 參數。<br/><br/>顯示要執行的命令，並使用詳細資訊輸出。|
 |**WarningLevel**|選擇性的 **string** 參數。<br/><br/>選取您希望編譯器針對程式碼錯誤所產生的嚴謹度等級。 其他旗標應該直接新增到 [其他選項] (請參閱 `/w`、`/Weverything`)。<br/><br/>**TurnOffAllWarnings**，停用所有編譯器警告 (使用 `w`)。<br/>**EnableAllWarnings**，啟用所有警告，包括預設為停用的警告 (使用 `Wall`)。|
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 [工作參考](../msbuild/msbuild-task-reference.md)

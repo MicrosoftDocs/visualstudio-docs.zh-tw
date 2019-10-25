@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_rvaluereference |Microsoft Docs'
+title: IDiaSymbol：： get_RValueReference |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e9c14bc0fcce8a66c64b33b2ec8cbd943c80c8c
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 43ef604b55cd29d7acf86f38d307dff3958d0162
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64784236"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739411"
 ---
-# <a name="idiasymbolgetrvaluereference"></a>IDiaSymbol::get_RValueReference
-擷取指定指標型別是否為右值參考的旗標。 使用時機[SymTagEnum 列舉](../../debugger/debug-interface-access/symtagenum.md)設為指標類型。
+# <a name="idiasymbolget_rvaluereference"></a>IDiaSymbol::get_RValueReference
+抓取指定指標類型是否為右值參考的旗標。 當[SymTagEnum 列舉](../../debugger/debug-interface-access/symtagenum.md)設定為指標類型時，請使用。
 
 ## <a name="syntax"></a>語法
 
@@ -33,22 +33,22 @@ HRESULT get_RValueReference (
 #### <a name="parameters"></a>參數
  `pRetVal`
 
-[out]會傳回`TRUE`指標是一個 rvalue 參考; 否則會傳回`FALSE`。
+脫銷如果指標是右值參考，則傳回 `TRUE`。否則，會傳回 `FALSE`。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，則傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。
+ 如果成功，會傳回 `S_OK`;否則，會傳回 `S_FALSE` 或錯誤碼。
 
 > [!NOTE]
-> 傳回值為`S_FALSE`表示此屬性不適用於符號。
+> @No__t_0 的傳回值表示該屬性不適用於符號。
 
 ## <a name="remarks"></a>備註
 
 ## <a name="requirements"></a>需求
- 標頭：dia2.h
+ 標頭： Dia2。h
 
- 程式庫： diaguids.lib
+ 程式庫： diaguids
 
- DLL: msdia100.dll
+ DLL： msdia100
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

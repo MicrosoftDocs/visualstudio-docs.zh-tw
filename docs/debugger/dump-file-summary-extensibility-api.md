@@ -13,20 +13,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b934a68aa1ae85e18ec05d587854a7ad4c176c3a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d34e60b0b932470dec8a69874e28b99ebe76316b
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62851512"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72737986"
 ---
 # <a name="dump-file-summary-extensibility-api"></a>傾印檔案摘要擴充性 API
 您可以使用本節的擴充性 API 擴充 [.Exe 專案系統] 和 [傾印摘要] 頁面，以供您搭配自訂偵錯引擎使用。
 
-## <a name="in-this-section"></a>本節內容
+## <a name="in-this-section"></a>本章節內容
  下列命名空間提供用於擴充 [傾印摘要] 頁面和 [.Exe 專案系統] 的 API：
 
  <xref:Microsoft.VisualStudio.Debugger.VsDebugPresentationExtension>
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [使用傾印檔案](../debugger/using-dump-files.md)

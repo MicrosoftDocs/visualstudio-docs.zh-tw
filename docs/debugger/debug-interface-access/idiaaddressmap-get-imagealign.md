@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3fb51f810d5c97ecf1cb0a6ea0b41dc7481252ba
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fa5394580a9b0db4600a7f1e67aa8bd7f7703542
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62554387"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745094"
 ---
-# <a name="idiaaddressmapgetimagealign"></a>IDiaAddressMap::get_imageAlign
-擷取目前的影像對齊方式。
+# <a name="idiaaddressmapget_imagealign"></a>IDiaAddressMap::get_imageAlign
+抓取目前的影像對齊。
 
 ## <a name="syntax"></a>語法
 
@@ -33,14 +33,14 @@ HRESULT get_imageAlign ( 
 #### <a name="parameters"></a>參數
  `pRetVal`
 
-[out]傳回可執行檔的影像對齊值。
+脫銷傳回可執行檔的影像對齊值。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
+ 如果成功，會傳回 `S_OK`;否則，會傳回錯誤碼。
 
 ## <a name="remarks"></a>備註
- 根據如何映像已載入，並且建立的特定記憶體界限對齊映像。 對齊方式通常是 1、 2、 4、 8、 16、 32 或 64 位元組界限上。 可以設定的影像對齊方式，藉由呼叫[idiaaddressmap:: Put_imagealign](../../debugger/debug-interface-access/idiaaddressmap-put-imagealign.md)方法。
+ 影像會根據載入和建立映射的方式，對齊特定的記憶體界限。 對齊通常是在1、2、4、8、16、32或64位元組界限上。 影像對齊可以透過呼叫[IDiaAddressMap：:P ut_imagealign](../../debugger/debug-interface-access/idiaaddressmap-put-imagealign.md)方法來設定。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [IDiaAddressMap](../../debugger/debug-interface-access/idiaaddressmap.md)
 - [IDiaAddressMap::put_imageAlign](../../debugger/debug-interface-access/idiaaddressmap-put-imagealign.md)

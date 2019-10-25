@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e609f59e0d72628be4233be52738ff244c6acca
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 47841f5fe4abeafe7c522784db337b1960081439
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64806756"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72738975"
 ---
-# <a name="idiasymbolgetunmodifiedtype"></a>IDiaSymbol::get_unmodifiedType
-擷取這個符號的原始類型。 使用時機[SymTagEnum 列舉](../../debugger/debug-interface-access/symtagenum.md)設為型別。
+# <a name="idiasymbolget_unmodifiedtype"></a>IDiaSymbol::get_unmodifiedType
+抓取這個符號的原始類型。 當[SymTagEnum 列舉](../../debugger/debug-interface-access/symtagenum.md)設定為類型時，請使用。
 
 ## <a name="syntax"></a>語法
 
@@ -33,23 +33,23 @@ HRESULT get_unmodifiedType( 
 #### <a name="parameters"></a>參數
  `pRetVal`
 
-[out]傳回[IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)物件，表示這個符號的原始型別。
+脫銷傳回[IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)物件，代表這個符號的原始類型。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，則傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。
+ 如果成功，會傳回 `S_OK`;否則，會傳回 `S_FALSE` 或錯誤碼。
 
 > [!NOTE]
-> 傳回值為`S_FALSE`表示此屬性不適用於符號。
+> `S_FALSE` 的傳回值表示該屬性不適用於符號。
 
 ## <a name="remarks"></a>備註
- 目前的類型是傳回的原始型別所做的修改。 符號的原始型別可以先取得符號的類型，和接著詢問所傳回的原始類型的類型來判斷。 請注意一些符號可能不會有原始類型的修改的類型。
+ 目前的類型是修改傳回的原始類型。 您可以先取得符號的類型，然後詢問原始類型傳回的類型，以判斷符號的原始類型。 請注意，某些符號可能不會有原始類型的修改類型。
 
 ## <a name="requirements"></a>需求
- 標頭：dia2.h
+ 標頭： Dia2。h
 
- 程式庫： diaguids.lib
+ 程式庫： diaguids
 
- DLL: msdia100.dll
+ DLL： msdia100
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

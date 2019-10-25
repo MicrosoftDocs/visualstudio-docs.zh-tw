@@ -1,5 +1,5 @@
 ---
-title: TargetPlatformName 元素 （Visual Studio 範本） |Microsoft Docs
+title: TargetPlatformName 元素（Visual Studio 範本） |Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -9,12 +9,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c307a52b8f252f5059f2d4009e98fc4d497f616e
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: f22fb5d94b0f8c5147f014abdb973a23b1b9e24e
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66316701"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72718938"
 ---
 # <a name="targetplatformname-element-visual-studio-templates"></a>TargetPlatformName 項目 (Visual Studio 樣板)
 指定專案範本的目標平台。 這個項目用來指定用於建立 [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] 應用程式的專案範本。
@@ -33,7 +33,7 @@ ms.locfileid: "66316701"
 ### <a name="attributes"></a>屬性
  無。
 
-### <a name="child-elements"></a>子元素
+### <a name="child-elements"></a>子項目
 
 |項目|描述|
 |-------------|-----------------|
@@ -43,7 +43,7 @@ ms.locfileid: "66316701"
 
 |項目|描述|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|將範本分類，並定義該範本在 [新增專案]  或 [加入新項目]  對話方塊中顯示的方式。|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|將範本分類，並定義該範本在 [新增專案] 或 [加入新項目] 對話方塊中顯示的方式。|
 
 ## <a name="text-value"></a>文字值
  需要文字值。
@@ -64,6 +64,6 @@ ms.locfileid: "66316701"
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [建立專案和項目範本](../ide/creating-project-and-item-templates.md)
 - [Visual Studio 範本結構描述參考](../extensibility/visual-studio-template-schema-reference.md)

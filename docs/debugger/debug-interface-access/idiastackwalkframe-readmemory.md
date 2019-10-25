@@ -1,5 +1,5 @@
 ---
-title: 'Idiastackwalkframe:: Readmemory |Microsoft Docs'
+title: IDiaStackWalkFrame：： readMemory |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 82ef0d25e796f9e04ecdcfd0c54a7312b9c9edad
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ae1201fca1fc25cce19b40b47d6435d02d80e1b4
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62837910"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741471"
 ---
 # <a name="idiastackwalkframereadmemory"></a>IDiaStackWalkFrame::readMemory
-讀取影像中的記憶體。
+從影像讀取記憶體。
 
 ## <a name="syntax"></a>語法
 
@@ -37,26 +37,26 @@ HRESULT readMemory ( 
 #### <a name="parameters"></a>參數
  `type`
 
-[in]其中一個[MemoryTypeEnum 列舉](../../debugger/debug-interface-access/memorytypeenum.md)列舉值，指定一種記憶體存取。
+在其中一個[MemoryTypeEnum 列舉](../../debugger/debug-interface-access/memorytypeenum.md)列舉值，指定要存取的記憶體類型。
 
  `va`
 
-[in]若要開始讀取的映像中的虛擬位址位置。
+在映射中要開始讀取的虛擬位址位置。
 
  `cbData`
 
-[in]資料緩衝區，以位元組為單位的大小。
+在資料緩衝區的大小（以位元組為單位）。
 
  `pcbData`
 
-[out]傳回動作傳回的位元組的數目。 如果`data`已`NULL`，然後`pcbData`包含可用資料的位元組總數。
+脫銷傳回傳回的位元組數目。 如果 `NULL` `data`，則 `pcbData` 包含可用的資料位元組總數。
 
  `data`
 
-[out]要從指定位置的資料填入的緩衝區。
+脫銷要填入指定位置之資料的緩衝區。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
+ 如果成功，會傳回 `S_OK`;否則，會傳回錯誤碼。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [IDiaStackWalkFrame](../../debugger/debug-interface-access/idiastackwalkframe.md)

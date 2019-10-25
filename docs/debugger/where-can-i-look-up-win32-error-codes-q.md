@@ -18,20 +18,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7299139d05a47c079e1aeb29f3b61433cff33bb6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a8e3dda1b728cd631efe8a84913af3d5c475138d
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62929182"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72728039"
 ---
 # <a name="where-can-i-look-up-win32-error-codes"></a>哪裡可以查看 Win32 錯誤碼？
 您的預設系統安裝 INCLUDE 目錄裡的 WINERROR.H 包含 Win32 API 函式的錯誤碼定義。
 
- 您可以在 [監看式] 視窗或 [快速監看式] 對話方塊中鍵入程式碼來查看錯誤碼。 例如: 
+ 您可以在 [監看式] 視窗或 [快速監看式] 對話方塊中鍵入程式碼來查看錯誤碼。 例如:
 
 `0x80000004,hr`
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [偵錯機器碼常見問題集](../debugger/debugging-native-code-faqs.md)
 - [偵錯機器碼](../debugger/debugging-native-code.md)

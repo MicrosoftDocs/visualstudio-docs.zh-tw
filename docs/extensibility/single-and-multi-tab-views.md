@@ -1,5 +1,5 @@
 ---
-title: 單一和多重索引標籤的檢視 |Microsoft Docs
+title: 單一和多重索引標籤的視圖 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,52 +10,52 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: def68627223ba082f5ec6a3ef571e314feae33f3
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: c651bda042524b2ed3188fef880f848bb0087433
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66332048"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72720065"
 ---
 # <a name="single-and-multi-tab-views"></a>單一和多重索引標籤檢視
-編輯器可以建立不同類型的檢視。 其中一個範例的程式碼編輯器 視窗，另一個是表單設計工具。
+編輯器可以建立不同類型的視圖。 其中一個範例是 [程式碼編輯器] 視窗，另一個則是表單設計工具。
 
- 多個索引標籤的檢視是具有多個索引標籤的檢視。 例如，HTML 編輯器底部有兩個索引標籤：**設計**並**來源**，每個邏輯檢視。 [設計] 檢視會顯示呈現的網頁，而另一個則顯示包含網頁的 HTML。
+ 多索引標籤式視圖是有多個索引標籤的視圖。 例如，HTML 編輯器在底部有兩個索引標籤： [**設計**] 和 [**來源**]，分別是一個邏輯視圖。 設計檢視會顯示轉譯的網頁，另一頁則會顯示包含網頁的 HTML。
 
-## <a name="accessing-physical-views"></a>存取實體的檢視
- 實體的檢視裝載的文件檢視物件，每個都代表一個緩衝區，例如程式碼或表單中的資料檢視。 因此，每個文件檢視物件有一個實體檢視 （又稱為實體檢視字串所識別），以及通常是單一的邏輯檢視。
+## <a name="accessing-physical-views"></a>存取實體視圖
+ 實體視圖會主檔案視圖物件，每個物件都代表緩衝區中的資料檢視，例如程式碼或表單。 因此，每個檔視圖物件都有一個實體視圖（由所謂的實體視圖字串識別），通常是單一邏輯視圖。
 
- 不過，在某些情況下，實體的檢視可以有兩個或多個邏輯檢視。 已分隔視窗並排顯示檢視的編輯器] 或 [表單設計工具有 GUI/設計檢視與程式碼後置--格式檢視的一些範例。
+ 不過，在某些情況下，實體視圖可以有兩個或多個邏輯視圖。 某些範例是一個編輯器，其中具有並排顯示的分割視窗，或是具有 GUI/設計檢視和程式碼後置表單的表單設計工具。
 
- 若要讓您存取所有可用的實體檢視的編輯器，您必須建立每種類型的編輯器 factory 可以建立的文件檢視物件的唯一實體檢視字串。 比方說，[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]編輯器 factory 可以建立文件的程式碼視窗和表單設計工具視窗的檢視物件。
+ 若要讓您的編輯器能夠存取所有可用的實體視圖，您必須為編輯器 factory 可以建立的每一種檔查看物件類型建立唯一的實體視圖字串。 例如，[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 編輯器 factory 可以為程式碼視窗和表單設計工具視窗建立檔視圖物件。
 
-## <a name="creating-multi-tabbed-views"></a>建立多個索引標籤檢視
- 雖然文件檢視物件必須是唯一的實體檢視字串的實體檢視相關聯，您可以將不同的方式啟用檢視的資料實體的檢視中的多個索引標籤。 在這個多索引標籤 」 組態中，所有索引標籤會與相同的實體檢視字串中，相關聯，但每個索引標籤會提供不同的邏輯檢視 GUID。
+## <a name="creating-multi-tabbed-views"></a>建立多個索引標籤式視圖
+ 雖然檔視圖物件必須透過唯一的實體視圖字串與實體視圖建立關聯，但您可以在實體視圖中放置多個索引標籤，以不同的方式來查看資料。 在這個多索引標籤的設定中，所有索引標籤都會與相同的實體視圖字串相關聯，但每個索引標籤會提供不同的邏輯視圖 GUID。
 
- 若要建立多個索引標籤檢視編輯器，實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsMultiViewDocumentView>介面，並將關聯不同的邏輯檢視 GUID (<xref:Microsoft.VisualStudio.Shell.Interop.LogicalViewID>) 在您建立與每個索引標籤。
+ 若要建立編輯器的多個索引標籤式視圖，請執行 <xref:Microsoft.VisualStudio.Shell.Interop.IVsMultiViewDocumentView> 介面，然後將不同的邏輯視圖 GUID （<xref:Microsoft.VisualStudio.Shell.Interop.LogicalViewID>）與您建立的每個索引標籤建立關聯。
 
- Visual Studio HTML 編輯器是具有多重索引標籤檢視編輯器的範例。 它有**設計**並**來源**索引標籤。 若要這麼做，不同的邏輯檢視是每個索引標籤中，相關聯`LOGICALVIEWID_TextView`for**設計** 索引標籤和`LOGICALVIEWID_Code`for**來源** 索引標籤。
+ Visual Studio HTML 編輯器是具有多索引標籤視圖的編輯器範例。 它具有 [**設計**] 和 [**來源**] 索引標籤。 若要啟用此選項，不同的邏輯視圖會與每個索引標籤相關聯，`LOGICALVIEWID_TextView` [**設計**] 索引標籤和 [**來源**] 索引標籤的 `LOGICALVIEWID_Code`。
 
- 藉由指定適當的邏輯檢視，VSPackage 可以存取對應至特定的用途，例如設計表單、 編輯程式碼，或偵錯程式碼檢視。 不過，其中一個視窗必須以 NULL 字串識別，而且這必須對應到主要的邏輯檢視 (`LOGVIEWID_Primary`)。
+ 藉由指定適當的邏輯視圖，VSPackage 可以存取對應于特定用途的視圖，例如設計表單、編輯程式碼或偵錯工具代碼。 不過，其中一個視窗必須由 Null 字串識別，而這必須對應至主要邏輯視圖（`LOGVIEWID_Primary`）。
 
- 下表列出可用的邏輯檢視值和其用法。
+ 下表列出可用的邏輯視圖值及其用法。
 
-|LOGVIEWID GUID|建議的使用|
+|LOGVIEWID GUID|建議使用|
 |--------------------|---------------------|
-|`LOGVIEWID_Primary`|編輯器 factory 的預設/主要資料庫檢視。<br /><br /> 所有編輯器 factory 必須都支援此值。 此檢視必須使用 NULL 字串作為其實體檢視字串。 此值必須設定至少一個邏輯檢視。|
-|`LOGVIEWID_Debugging`|偵錯 檢視。 通常`LOGVIEWID_Debugging`對應至相同的檢視為`LOGVIEWID_Code`。|
-|`LOGVIEWID_Code`|檢視啟動**檢視程式碼**命令。|
-|`LOGVIEWID_Designer`|檢視啟動**檢視表單**命令。|
-|`LOGVIEWID_TextView`|文字編輯器檢視。 這是傳回的檢視<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindow>，從您可以存取<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>。|
-|`LOGVIEWID_UserChooseView`|會提示使用者選擇要使用何種檢視。|
-|`LOGVIEWID_ProjectSpecificEditor`|藉由傳遞**開啟**對話方塊<br /><br /> <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject.OpenItem%2A><br /><br /> 當使用者選擇 [（專案預設編輯器）] 項目。|
+|`LOGVIEWID_Primary`|編輯器 factory 的預設/主要視圖。<br /><br /> 所有編輯器 factory 都必須支援此值。 這個視圖必須使用 Null 字串作為其實體視圖字串。 至少必須將一個邏輯視圖設定為此值。|
+|`LOGVIEWID_Debugging`|[調試] 視圖。 @No__t_0 通常會對應至與 `LOGVIEWID_Code` 相同的視圖。|
+|`LOGVIEWID_Code`|View **Code**命令啟動的視圖。|
+|`LOGVIEWID_Designer`|View **Form**命令啟動的視圖。|
+|`LOGVIEWID_TextView`|文字編輯器視圖。 這是傳回 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindow> 的視圖，您可以從中存取 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>。|
+|`LOGVIEWID_UserChooseView`|提示使用者選擇要使用的 view。|
+|`LOGVIEWID_ProjectSpecificEditor`|由 [**開啟方式**] 對話方塊傳遞至<br /><br /> <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject.OpenItem%2A><br /><br /> 當使用者選擇 [（專案預設編輯器）] 專案時。|
 
- 雖然邏輯檢視 Guid 是可擴充的您可以使用只有在 VSPackage 中定義的邏輯檢視 Guid。
+ 雖然邏輯視圖 Guid 是可擴充的，但您只能使用 VSPackage 中所定義的邏輯視圖 Guid。
 
- 關閉時，Visual Studio 會保留，讓它可用來重新開啟解決方案時，重新開啟文件視窗與文件視窗相關聯的實體檢視字串編輯器 factory 的 GUID。 方案已關閉時開啟的視窗都保存於方案 (.suo) 檔案。 這些值對應至`VSFPROPID_guidEditorType`並`VSFPROPID_pszPhysicalView`傳入值`propid`中的參數<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.GetProperty%2A>方法。
+ 關閉時，Visual Studio 會保留編輯器 factory 的 GUID，以及與文件視窗相關聯的實體視圖字串，以便在重新開啟方案時，用來重新開啟文件視窗。 只有在關閉方案時開啟的視窗會保存在方案（.suo）檔案中。 這些值會對應至在 <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.GetProperty%2A> 方法的 `propid` 參數中傳遞的 `VSFPROPID_guidEditorType` 和 `VSFPROPID_pszPhysicalView` 值。
 
 ## <a name="example"></a>範例
- 此程式碼片段說明如何<xref:Microsoft.VisualStudio.Shell.Interop.LogicalViewID.TextView>物件用來存取檢視可實作`IVsCodeWindow`。 在此情況下，<xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShellOpenDocument>服務用來呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenDocumentViaProject%2A>和 要求`LOGVIEWID_TextView`，取得視窗框架的指標。 藉由呼叫取得文件檢視物件的指標<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.GetProperty%2A>和指定的值為`VSFPROPID_DocView`。 文件檢視物件中，從`QueryInterface`稱為`IVsCodeWindow`。 預期在此情況下會傳回文字編輯器，，和文件檢視物件中傳回的因此<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.GetProperty%2A>方法是程式碼視窗。
+ 此程式碼片段說明如何使用 <xref:Microsoft.VisualStudio.Shell.Interop.LogicalViewID.TextView> 物件來存取可執行 `IVsCodeWindow` 的視圖。 在此情況下，<xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShellOpenDocument> 服務會用來呼叫 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenDocumentViaProject%2A> 並要求 `LOGVIEWID_TextView`，以取得視窗框架的指標。 檔 view 物件的指標是藉由呼叫 <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.GetProperty%2A> 並指定 `VSFPROPID_DocView` 的值取得。 從檔視圖物件中，會針對 `IVsCodeWindow` 呼叫 `QueryInterface`。 在此情況下，預期會傳回文字編輯器，因此在 <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.GetProperty%2A> 方法中傳回的 document view 物件就是程式碼視窗。
 
 ```cpp
 HRESULT CFindTool::GotoFileLocation(const WCHAR * szFile, long iLine, long iStart, long iLen)
@@ -112,7 +112,7 @@ Error:
 }
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [支援多個文件檢視](../extensibility/supporting-multiple-document-views.md)
-- [如何：將檢視附加至文件資料](../extensibility/how-to-attach-views-to-document-data.md)
+- [如何︰將檢視附加至文件資料](../extensibility/how-to-attach-views-to-document-data.md)
 - [建立自訂編輯器和設計工具](../extensibility/creating-custom-editors-and-designers.md)

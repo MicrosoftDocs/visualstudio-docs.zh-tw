@@ -1,5 +1,5 @@
 ---
-title: IDiaPropertyStorage::ReadMultiple |Microsoft Docs
+title: IDiaPropertyStorage：： ReadMultiple |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ec66de4feea1a59ca1ef71f48bae49ed5ac2232
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9cd1e419e1d08120274fc627a672eb52331ca50f
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839533"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742877"
 ---
 # <a name="idiapropertystoragereadmultiple"></a>IDiaPropertyStorage::ReadMultiple
-讀取指定從目前的屬性集的屬性。
+從目前的屬性集讀取指定的屬性。
 
 ## <a name="syntax"></a>語法
 
@@ -35,21 +35,21 @@ HRESULT ReadMultiple( 
 #### <a name="parameters"></a>參數
  `cpspec`
 
-[in]屬性中指定的計數`rgpspec`陣列。 如果是零，此方法會傳回任何屬性，但傳回`S_OK`為成功的程式碼。
+在`rgpspec` 陣列中指定的屬性計數。 如果為零，則方法不會傳回任何屬性，但會以成功程式碼的形式傳回 `S_OK`。
 
  `rgpspec`
 
-[in]要讀取的屬性陣列。 屬性可以指定屬性識別碼或選擇性的字串名稱。 您不需要指定屬性陣列中任何特定順序。 陣列可以包含重複的屬性，導致重複的屬性值在傳回簡單的屬性。 非簡單屬性應該傳回以開啟第二次嘗試存取被拒。 陣列可以包含混合的屬性識別碼和字串識別碼。 這個陣列至少必須有`cpspec`屬性值的數字。
+在要讀取的屬性陣列。 屬性可以透過屬性識別碼或選擇性的字串名稱來指定。 您不需要指定陣列中任何特定順序的屬性。 陣列可以包含重複的屬性，因此會在傳回簡單屬性時產生重複的屬性值。 非簡單屬性應該會在嘗試再次開啟時，傳回拒絕存取。 陣列可以包含屬性識別碼和字串識別碼的組合。 此陣列至少必須有 `cpspec` 的屬性值數目。
 
  `rgvar`
 
-[in、 out]陣列`PROPVARIANT`結構 （在 Microsoft.VisualStudio.OLE.Interop 命名空間中），來填入每個屬性值。 此陣列必須至少是`cpspec`大小的項目。 呼叫端不需要初始化的陣列中的值。
+[in、out]要以每個屬性的值填入的 `PROPVARIANT` 結構陣列（在 VisualStudio 中）。 陣列的大小至少必須 `cpspec` 個元素。 呼叫端不需要初始化陣列中的值。
 
 ## <a name="return-value"></a>傳回值
- 如果成功，會傳回 `S_OK`。 傳回`S_FALSE`如果找不到一或多個屬性。 反之則會傳回錯誤碼。
+ 如果成功，會傳回 `S_OK`。 如果找不到一或多個屬性，則傳回 `S_FALSE`。 反之則會傳回錯誤碼。
 
 ## <a name="remarks"></a>備註
- 如果屬性找不到，在對應的項目`rgvar`陣列包含`VARIANT`的型別`VT_EMPTY`。
+ 如果找不到屬性，則 `rgvar` 陣列中的對應專案會包含類型為 `VT_EMPTY`的 `VARIANT`。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)

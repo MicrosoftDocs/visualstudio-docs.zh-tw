@@ -1,5 +1,5 @@
 ---
-title: 開始使用圖形診斷 |Microsoft Docs
+title: 圖形診斷入門 |Microsoft Docs
 ms.custom: seodec18
 ms.date: 05/26/2017
 ms.topic: conceptual
@@ -8,18 +8,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4fc7dd207a525eaed12db1b2e45e7720d96ee8b6
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: eb651d9b35dd4531f4d14e169ab6f04376d4dfff
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63388704"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72735696"
 ---
 # <a name="getting-started-with-visual-studio-graphics-diagnostics"></a>Visual Studio 圖形診斷快速入門
 在本節中，您將準備第一次使用圖形診斷，並從 Direct3D 應用程式擷取畫面格，然後在圖形分析器中檢查它們。
 
 ## <a name="requirements"></a>需求
- 若要在 Visual Studio 中使用圖形診斷，您必須使用 Visual Studio Enterprise、 Visual Studio Professional 或 Visual Studio Community。  其他版本，包括 Visual Studio Code 中，並包含這項功能。
+ 若要在 Visual Studio 中使用圖形診斷，您必須使用 Visual Studio Enterprise、Visual Studio Professional 或 Visual Studio Community。  其他版本（包括 Visual Studio Code）則不包含這項功能。
 
  [!INCLUDE[downloadvs](../includes/downloadvs_md.md)]
 
@@ -33,9 +33,9 @@ ms.locfileid: "63388704"
 
 #### <a name="to-install-graphics-tools-for-windows-10"></a>安裝適用於 Windows 10 的圖形工具
 
-1. 在搜尋中，輸入**應用程式和功能**，然後開啟**應用程式與功能**設定。
+1. 在 [搜尋] 中，輸入 [**應用程式和功能**]，然後開啟 [**應用程式 & 功能**] 設定。
 
-2. 右手邊**應用程式與功能** 對話方塊中，選擇**管理選擇性功能**(在**應用程式與功能**)。
+2. 在 [**應用程式 & 功能**] 對話方塊右側，選擇 [**管理選擇性功能**] （在 [**應用程式 & 功能**] 底下）。
 
    [管理選擇性功能] 對話方塊隨即出現。
 
@@ -52,15 +52,15 @@ ms.locfileid: "63388704"
  您現在已具備所有必要元件，可以開始使用圖形診斷。 請依照下列步驟進行。
 
 ### <a name="1---create-a-direct3d-app"></a>1 - 建立 Direct3D 應用程式
- 如果您已經有自己的 Direct3D 應用程式，來瀏覽圖形診斷，太好了 ！ 否則，請使用下列其中一項：
+ 如果您已經有自己的 Direct3D 應用程式來探索圖形診斷，很棒！ 否則，請使用下列其中一項：
 
-- **DirectX 11 應用程式 (通用 Windows)** 或是**DirectX 12 應用程式 (通用 Windows)** 適用於 Windows 10 的專案範本。
-- [Direct3D 12 UAP 範例](https://code.msdn.microsoft.com/Direct3D-12-UAP-Sample-ecb1779f)適用於 Windows 10。
+- 適用于 Windows 10 的**directx 11 應用程式（通用 windows）** 或**Directx 12 應用程式（通用 windows）** 專案範本。
+- 適用于 Windows 10 的[Direct3D 12 UAP 範例](https://code.msdn.microsoft.com/Direct3D-12-UAP-Sample-ecb1779f)。
 
   繼續前請先確定您可以建置應用程式。
 
 ### <a name="2---start-a-graphics-diagnostics-session"></a>2 - 啟動圖形診斷工作階段
- 您現在已經準備好開始第一個圖形診斷工作階段。 在 Visual Studio 主功能表上，選擇**偵錯，圖形開始圖形偵錯**，或直接按**alt+f5**。 這樣會使用圖形診斷來啟動您的應用程式，並在 Visual Studio 中顯示診斷工作階段視窗。
+ 您現在已經準備好開始第一個圖形診斷工作階段。 在 Visual Studio 的主功能表上，選擇 [ **Debug]、[圖形]、[開始圖形調試**]，或只按**Alt + F5**。 這樣會使用圖形診斷來啟動您的應用程式，並在 Visual Studio 中顯示診斷工作階段視窗。
 
 > [!IMPORTANT]
 > 如果您是在 Windows 10 上執行應用程式，並且尚未安裝選擇性圖形工具功能，則系統會提示您現在這麼做。 您必須先安裝它，才能在 Windows 10 上使用圖形診斷。
@@ -70,7 +70,7 @@ ms.locfileid: "63388704"
 
 #### <a name="to-capture-single-frames"></a>擷取單一畫面格
 
-- 在 Visual Studio 中，選擇 [圖形] 工具列或診斷工作階段視窗中的 [擷取畫面格] 按鈕。 或者，如果您的應用程式具有焦點，請按**Print Screen**鍵盤上。
+- 在 Visual Studio 中，選擇 [圖形] 工具列或診斷工作階段視窗中的 [擷取畫面格] 按鈕。 或者，如果您的應用程式有焦點，只要按下鍵盤上的**Print Screen**鍵即可。
 
 #### <a name="to-capture-a-sequence-of-frames"></a>擷取一系列畫面格
 
@@ -85,7 +85,7 @@ ms.locfileid: "63388704"
 
  如果您已從診斷工作階段視窗中選取錯誤的畫面格，或想要檢查不同的畫面格，則可以從圖形分析器中選取新的畫面格。 在圖形記錄視窗的 [轉譯目標] 索引標籤中，展開轉譯目標影像下的 [畫面格清單]，然後選擇不同的畫面格進行檢查。
 
- 若要深入了解如何搭配使用圖形分析器工具，請參閱[範例](graphics-diagnostics-examples.md)。
+ 若要深入瞭解如何搭配使用圖形分析器工具，請參閱[範例](graphics-diagnostics-examples.md)。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [Direct3D 12 圖形](/windows/desktop/direct3d12/direct3d-12-graphics)

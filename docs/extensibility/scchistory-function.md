@@ -12,15 +12,15 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bad55b0fce5f4bec27ec707a4f9578c627a07363
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 0ce0b38b8e602688875549edbac671e664809482
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66353608"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72721249"
 ---
 # <a name="scchistory-function"></a>SccHistory 函式
-此函式會顯示指定的檔案歷程記錄。
+此函式會顯示指定檔案的歷程記錄。
 
 ## <a name="syntax"></a>語法
 
@@ -38,50 +38,50 @@ SCCRTN SccHistory(
 #### <a name="parameters"></a>參數
  `pvContext`
 
-[in]原始檔控制外掛程式的內容結構。
+在原始檔控制外掛程式的內容結構。
 
  `hWnd`
 
-[in]原始檔控制外掛程式時，可以使用當做父代上，它會提供任何對話方塊 IDE 視窗的控制代碼。
+在IDE 視窗的控制碼，原始檔控制外掛程式可以使用它所提供之任何對話方塊的父系。
 
  `nFiles`
 
-[in]中指定的檔案數目`lpFileName`陣列。
+在`lpFileName` 陣列中指定的檔案數目。
 
  `lpFileName`
 
-[in]檔案的完整名稱的陣列。
+在檔案的完整名稱陣列。
 
  `fOptions`
 
-[in]（目前未使用） 的命令旗標。
+在命令旗標（目前未使用）。
 
  `pvOptions`
 
-[in]原始檔控制外掛程式特定選項。
+在原始檔控制外掛程式特定選項。
 
 ## <a name="return-value"></a>傳回值
- 此函式的原始檔控制外掛程式實作應該會傳回下列值之一：
+ 此函式的原始檔控制外掛程式執行應會傳回下列其中一個值：
 
 |值|描述|
 |-----------|-----------------|
 |SCC_OK|已成功取得版本歷程記錄。|
-|SCC_I_RELOADFILE|原始檔控制系統實際修改磁碟上的檔案時擷取歷程記錄 （比方說，藉由取得它的舊版本），讓 IDE 應重新載入這個檔案。|
-|SCC_E_FILENOTCONTROLLED|檔案不是原始檔控制之下。|
-|SCC_E_OPNOTSUPPORTED|原始檔控制系統不支援這項作業。|
-|SCC_E_NOTAUTHORIZED|若要執行這項作業不允許的使用者。|
-|SCC_E_ACCESSFAILURE|發生問題，存取原始檔控制系統，可能是因為網路或競爭問題。 建議使用重試。|
-|SCC_E_PROJNOTOPEN|專案已開啟。|
+|SCC_I_RELOADFILE|原始檔控制系統實際上已修改磁片上的檔案，同時提取歷程記錄（例如，藉由取得舊版本），因此 IDE 應該重載此檔案。|
+|SCC_E_FILENOTCONTROLLED|檔案不在原始檔控制之下。|
+|SCC_E_OPNOTSUPPORTED|原始檔控制系統不支援這種作業。|
+|SCC_E_NOTAUTHORIZED|不允許使用者執行此作業。|
+|SCC_E_ACCESSFAILURE|存取原始檔控制系統時發生問題，可能是因為網路或競爭問題。 建議使用重試。|
+|SCC_E_PROJNOTOPEN|專案尚未開啟。|
 |SCC_E_NONSPECIFICERROR|不明確的失敗。 無法取得檔案歷程記錄。|
 
 ## <a name="remarks"></a>備註
- 原始檔控制外掛程式可以顯示自己的對話方塊，以顯示每個檔案的歷程記錄使用`hWnd`與父視窗。 或者，選擇性的文字輸出回呼函式提供給[SccOpenProject](../extensibility/sccopenproject-function.md)可用，如果它受支援。
+ 原始檔控制外掛程式可以顯示自己的對話方塊，以顯示每個檔案的歷程記錄，使用 `hWnd` 做為父視窗。 或者，如果支援，則可以使用提供給[SccOpenProject](../extensibility/sccopenproject-function.md)的選擇性文字輸出回呼函數。
 
- 請注意，在某些情況下，此呼叫的執行期間可能會變更所檢查的檔案。 比方說，[!INCLUDE[vsvss](../extensibility/includes/vsvss_md.md)]歷程記錄命令讓使用者有機會取得舊版本的檔案。 在此情況下，原始檔控制外掛程式傳回`SCC_I_RELOAD`警告 IDE，它需要重新載入檔案。
+ 請注意，在某些情況下，要檢查的檔案可能會在此呼叫執行期間變更。 例如，[!INCLUDE[vsvss](../extensibility/includes/vsvss_md.md)] 歷程記錄 命令可讓使用者有機會取得舊版本的檔案。 在這種情況下，原始檔控制外掛程式會傳回 `SCC_I_RELOAD`，警告 IDE 需要重載檔案。
 
 > [!NOTE]
-> 如果原始檔控制外掛程式不支援此函式陣列的檔案，就可以顯示只有第一個檔案的檔案歷程記錄。
+> 如果原始檔控制外掛程式不支援檔案陣列的此函式，則只會顯示第一個檔案的檔案歷程記錄。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [原始檔控制外掛程式 API 函式](../extensibility/source-control-plug-in-api-functions.md)
 - [SccOpenProject](../extensibility/sccopenproject-function.md)

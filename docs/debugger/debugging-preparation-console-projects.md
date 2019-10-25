@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ddfc17d4f9bcb1f4f2585aa91319f06be6936e6f
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: e92e27b123102cb45069c47ebf9de3971039801d
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72431464"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72738138"
 ---
 # <a name="debugging-preparation-console-projects-c-c-visual-basic-f"></a>調試準備：主控台專案（C#、 C++、Visual Basic、 F#）
 
@@ -49,7 +49,7 @@ ms.locfileid: "72431464"
 
 - 在您的程式碼中設定中斷點，並啟動您的應用程式。
 
-- 使用**F10**啟動您的應用程式（**debug**@no__t **-2 不**進入函式）或**F11** （**debug** > **逐步**執行），然後使用其他選項（例如 [**執行] 按一下）來**流覽程式碼。
+- 使用**F10**啟動您的應用程式（**Debug**  >  不進入函式）或**F11** （**debug**  > **逐步** **執行），** 然後使用其他選項（例如 [執行] 按一下）**來**流覽程式碼。
 
 - 在 [程式碼編輯器] 中，以滑鼠右鍵按一下線條，然後選取 [**執行至游標處**]。
 

@@ -1,5 +1,5 @@
 ---
-title: 持續性和執行記錄資料表 |Microsoft Docs
+title: 持續性和執行中的檔資料表 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,21 +13,21 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d80932ab926b7ef26eaef10991e4f5782e81c4b5
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: f03836e1faaac03fbd89c0b93f37a698cbdcd56a
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66328525"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72726087"
 ---
 # <a name="persistence-and-the-running-document-table"></a>持續性與執行中的文件資料表
-在  [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE 中，專案會完全負責管理其專案，這些項目在完成使用服務，持續性<xref:Microsoft.VisualStudio.Shell.Interop.SVsRunningDocumentTable>。 文件是在 Visual Studio 環境中的持續性的基本單位。 專案協調開啟、 儲存和重新命名的文件與執行文件資料表 (RDT)，會追蹤所有開啟的文件的狀態的資源。
+在 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE 中，專案會完全負責管理其專案專案的持續性，它們會使用服務來完成，<xref:Microsoft.VisualStudio.Shell.Interop.SVsRunningDocumentTable>。 檔是 Visual Studio 環境中的基本持續性單位。 專案會協調開啟、儲存和重新命名檔與執行中的檔資料表（RDT），這是追蹤所有已開啟檔狀態的資源。
 
 ## <a name="managing-persistence"></a>管理持續性
- 專案來控制環境的持續性服務實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem>介面。 雖然環境永遠不會直接詢問要保存本身的文件時，它會要求儲存文件的主控專案 （或階層）。 這可讓專案，以將其專案項目資料儲存到本機檔案、 遠端檔案、 資料庫、 儲存機制或其他媒體。
+ 專案會藉由執行 <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem> 介面來控制環境的持續性服務。 雖然環境永遠不會直接要求檔本身保存，但它會要求擁有專案（或階層）來儲存檔。 這可讓專案將專案專案資料儲存到本機檔案、遠端檔案、資料庫、儲存機制或其他媒體中。
 
- 全域環境中維護 RDT。 環境會維護所有已開啟視窗的項目和文件中 RDT，如此才能接收特殊的通知，例如方案已關閉時。 RDT 此外，可讓要追蹤其對應的節點中的環境**方案總管 中**。 RDT 會維護每個開啟的、 永久性的物件，包括專案檔和專案項目文件的一筆記錄。
+ 全域環境會維護 RDT。 環境會維護 RDT 中所有開啟的視窗和檔的專案，讓他們可以接收特殊通知，例如關閉解決方案的時間。 此外，RDT 也可以讓環境在**方案總管**中追蹤其對應的節點。 RDT 會針對每個開啟的永久性物件維護一筆記錄，包括專案檔和專案專案檔案。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [執行中的文件資料表](../../extensibility/internals/running-document-table.md)
 - [IDE 中的選取項目和貨幣](../../extensibility/internals/selection-and-currency-in-the-ide.md)

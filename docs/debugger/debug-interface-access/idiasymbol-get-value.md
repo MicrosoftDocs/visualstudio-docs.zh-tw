@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f7eee2acc1c131e146f115d75130eabbb5fd1a8
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: ea0a0a2df1687d965437a8977eea649f77ea1ce4
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "62834541"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72738924"
 ---
-# <a name="idiasymbolgetvalue"></a>IDiaSymbol::get_value
-擷取常數的值。
+# <a name="idiasymbolget_value"></a>IDiaSymbol::get_value
+抓取常數的值。
 
 ## <a name="syntax"></a>語法
 
@@ -33,16 +33,16 @@ HRESULT get_value (
 #### <a name="parameters"></a>參數
 `pRetVal`
 
-[in、 out]A`VARIANT`常數的值會填入的物件。
+[in、out]以常數的值填入的 `VARIANT` 物件。
 
 ## <a name="return-value"></a>傳回值
-如果成功，則傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。
+如果成功，會傳回 `S_OK`;否則，會傳回 `S_FALSE` 或錯誤碼。
 
 > [!NOTE]
-> 傳回值為`S_FALSE`表示此屬性不適用於符號。
+> @No__t_0 的傳回值表示該屬性不適用於符號。
 
 ## <a name="remarks"></a>備註
-傳遞至這個方法之前，必須先初始化所提供的變數。 如需詳細資訊，請參閱範例。
+提供的 VARIANT 必須先初始化，然後才會傳遞給這個方法。 如需詳細資訊，請參閱範例。
 
 ## <a name="example"></a>範例
 
@@ -69,5 +69,5 @@ void ProcessValue2(IDiaSymbol *pSymbol)
 }
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

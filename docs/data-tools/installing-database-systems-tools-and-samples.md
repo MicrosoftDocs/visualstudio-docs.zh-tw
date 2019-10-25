@@ -12,12 +12,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 94ce946f7c14706b57618f3d9aeb90cc207fcf04
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: dd469f955a24c6d3c2fb5e438d81e6b8a2db8458
+ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648297"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72807005"
 ---
 # <a name="compatible-database-systems-for-visual-studio"></a>適用於 Visual Studio 相容的資料庫系統
 
@@ -35,19 +35,19 @@ SQL Server 是 Microsoft 旗艦版資料庫供應專案。 SQL Server 2016 提�
 
 ## <a name="oracle"></a>Oracle
 
-您可以從 [ [oracle 技術網路](http://www.oracle.com/technetwork/database/enterprise-edition/downloads/index-092322.html)] 頁面下載 oracle 資料庫的付費或免費版本。 如需 Entity Framework 和 Tableadapter 的設計階段支援，您將需要[Oracle Developer tools for Visual Studio](http://www.oracle.com/technetwork/developer-tools/visual-studio/overview/index.html)。 其他官方 Oracle 產品，包括 Oracle 立即用戶端，則可透過 NuGet 套件管理員取得。 您可以遵循[oracle 線上檔](http://docs.oracle.com/cd/E11882_01/server.112/e10831/toc.htm)中的指示，下載 oracle 範例架構。
+您可以從 [ [oracle 技術網路](https://www.oracle.com/database/technologies/oracle-database-software-downloads.html)] 頁面下載 oracle 資料庫的付費或免費版本。 如需 Entity Framework 和 Tableadapter 的設計階段支援，您將需要[Oracle Developer tools for Visual Studio](https://www.oracle.com/database/technologies/developer-tools/visual-studio/)。 其他官方 Oracle 產品，包括 Oracle 立即用戶端，則可透過 NuGet 套件管理員取得。 您可以遵循[oracle 線上檔](https://docs.oracle.com/cd/E11882_01/server.112/e10831/toc.htm)中的指示，下載 oracle 範例架構。
 
 ## <a name="mysql"></a>MySQL
 
-MySQL 是受歡迎的開放原始碼資料庫系統，廣泛用於企業和網站。 適用于 MySQL 的下載、適用于 Visual Studio 的 MySQL，以及相關產品位於[Windows 上的 mysql](http://www.mysql.com/why-mysql/windows/)。 協力廠商提供適用于 MySQL 的各種 Visual Studio 延伸模組和獨立管理應用程式。 您可以在 NuGet 套件管理員中流覽供應專案（[**工具**]  > **nuget 套件管理員** > **管理解決方案的 nuget 套件**）。
+MySQL 是受歡迎的開放原始碼資料庫系統，廣泛用於企業和網站。 適用于 MySQL 的下載、適用于 Visual Studio 的 MySQL，以及相關產品位於[Windows 上的 mysql](https://www.mysql.com/why-mysql/windows/)。 協力廠商提供適用于 MySQL 的各種 Visual Studio 延伸模組和獨立管理應用程式。 您可以在 NuGet 套件管理員中流覽供應專案（[**工具**]  > **nuget 套件管理員** > **管理解決方案的 nuget 套件**）。
 
 ## <a name="postgresql"></a>PostgreSQL
 
-于 postgresql 是免費的開放原始碼物件關係資料庫系統。 若要將它安裝在 Windows 上，您可以從[于 postgresql 下載頁面](http://www.postgresql.org/download/windows/)下載。 您也可以從原始程式碼建立于 postgresql。 于 postgresql core 系統包含 C 語言介面。 許多協力廠商會提供 NuGet 套件，以便從 .NET 應用程式使用於 postgresql。 您可以在 NuGet 套件管理員中流覽供應專案（[**工具**]  > **nuget 套件管理員** > **管理解決方案的 nuget 套件**）。 也許，最受歡迎的套件是由[npgsql.org](http://www.npgsql.org)所提供。
+于 postgresql 是免費的開放原始碼物件關係資料庫系統。 若要將它安裝在 Windows 上，您可以從[于 postgresql 下載頁面](https://www.postgresql.org/download/windows/)下載。 您也可以從原始程式碼建立于 postgresql。 于 postgresql core 系統包含 C 語言介面。 許多協力廠商會提供 NuGet 套件，以便從 .NET 應用程式使用於 postgresql。 您可以在 NuGet 套件管理員中流覽供應專案（[**工具**]  > **nuget 套件管理員** > **管理解決方案的 nuget 套件**）。 也許，最受歡迎的套件是由[npgsql.org](http://www.npgsql.org)所提供。
 
 ## <a name="sqlite"></a>SQLite
 
-SQLite 是內嵌的 SQL database 引擎，會在應用程式本身的進程中執行。 您可以從[SQLite 下載頁面](http://www.sqlite.org/download.html)下載。 也有許多適用于 SQLite 的協力廠商 NuGet 套件。 您可以在 NuGet 套件管理員中流覽供應專案（[**工具**]  > **nuget 套件管理員** > **管理解決方案的 nuget 套件**）。
+SQLite 是內嵌的 SQL database 引擎，會在應用程式本身的進程中執行。 您可以從[SQLite 下載頁面](https://www.sqlite.org/download.html)下載。 也有許多適用于 SQLite 的協力廠商 NuGet 套件。 您可以在 NuGet 套件管理員中流覽供應專案（[**工具**]  > **nuget 套件管理員** > **管理解決方案的 nuget 套件**）。
 
 ## <a name="firebird"></a>Firebird
 
@@ -56,4 +56,4 @@ Firebird 是開放原始碼的 SQL 資料庫系統。 您可以從[Firebird 下�
 ## <a name="see-also"></a>請參閱
 
 - [存取 Visual Studio 中的資料](../data-tools/accessing-data-in-visual-studio.md)
-- [如何判斷 SQL Server 及其元件的版本](http://support.microsoft.com/kb/321185)
+- [如何判斷 SQL Server 及其元件的版本](https://support.microsoft.com/help/321185/how-to-determine-the-version-edition-and-update-level-of-sql-server-an)

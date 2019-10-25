@@ -12,12 +12,12 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: 31619757684811fb5090e6edb05c464be59fa4dd
-ms.sourcegitcommit: 8a96a65676fd7a2a03b0803d7eceae65f3fa142b
+ms.openlocfilehash: 8eb8b53da30f0c0896ac9576407d34f9a2f9bdbc
+ms.sourcegitcommit: 57bc1c3887838d707c13feff72a677b3bad3be4b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72589006"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72777703"
 ---
 # <a name="cross-platform-mobile-development-examples"></a>跨平台行動裝置開發範例
 
