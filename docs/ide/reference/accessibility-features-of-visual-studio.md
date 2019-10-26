@@ -14,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b91cc92abca856e3a23e7b1154e378c99923fcf
-ms.sourcegitcommit: 8a699df154464387f327691dce507d7c3d0e2aab
-ms.translationtype: HT
+ms.openlocfilehash: dbca6429c1cc1669345cda465ec9ecfe3af0ed06
+ms.sourcegitcommit: 4f82de3fb0cfae226aef1abb40c47e63d2036a5c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "70060379"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72919194"
 ---
 # <a name="accessibility-features-of-visual-studio"></a>Visual Studio 的協助工具功能
 
@@ -46,12 +46,12 @@ ms.locfileid: "70060379"
 
 - [預設鍵盤快速鍵](../../ide/default-keyboard-shortcuts-in-visual-studio.md)
 
-- [協助工具祕訣和訣竅](../../ide/reference/accessibility-tips-and-tricks.md)
+- [協助工具秘訣和訣竅](../../ide/reference/accessibility-tips-and-tricks.md)
 
-- [如何：變更字型與色彩](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)
+- [如何：變更字型和色彩](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)
 
 > [!IMPORTANT]
-> 此頁面上資訊可能僅適用於美國地區的 Microsoft 產品授權使用者。 如果您在美國以外取得本產品，請瀏覽 [Microsoft 協助工具](http://go.microsoft.com/fwlink/?LinkId=8431)網站，以取得 Microsoft 支援服務電話號碼及地址的清單。 您可以連絡當地分公司，以了解當地是否有提供此頁面所描述的產品和服務類型。 協助工具資訊也提供其他語言版本。
+> 此頁面上資訊可能僅適用於美國地區的 Microsoft 產品授權使用者。 如果您在美國以外取得本產品，請瀏覽 [Microsoft 協助工具](https://www.microsoft.com/accessibility/)網站，以取得 Microsoft 支援服務電話號碼及地址的清單。 您可以連絡當地分公司，以了解當地是否有提供此頁面所描述的產品和服務類型。 協助工具資訊也提供其他語言版本。
 
 ::: moniker range="vs-2017"
 
@@ -60,6 +60,6 @@ ms.locfileid: "70060379"
 
 ::: moniker-end
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [Microsoft 提供的協助工具產品和服務](../../ide/reference/accessibility-products-and-services-from-microsoft.md)

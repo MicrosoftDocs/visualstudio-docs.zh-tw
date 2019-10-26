@@ -21,44 +21,44 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 87416903b469293d292bfa4414d425c31d0c9154
-ms.sourcegitcommit: 8a699df154464387f327691dce507d7c3d0e2aab
-ms.translationtype: HT
+ms.openlocfilehash: 79e9ead07e58a1b359e67289913581a533185a45
+ms.sourcegitcommit: 4f82de3fb0cfae226aef1abb40c47e63d2036a5c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "70060384"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72919094"
 ---
 # <a name="accessibility-products-and-services-from-microsoft"></a>Microsoft 的協助工具產品和服務
 
 Microsoft 致力於使其產品和服務對於每個人都更容易使用。 此頁面提供讓行動不便人士更容易存取 Microsoft Windows 功能、產品和服務的相關資訊。
 
 > [!IMPORTANT]
-> 此頁面上資訊可能僅適用於美國地區的 Microsoft 產品授權使用者。 如果您在美國以外取得本產品，請瀏覽 [Microsoft 協助工具](http://go.microsoft.com/fwlink/?LinkId=8431)網站，以取得 Microsoft 支援服務電話號碼及地址的清單。 您可以連絡當地分公司，以了解當地是否有提供此頁面所描述的產品和服務類型。 協助工具資訊提供其他語言版本。
+> 此頁面上資訊可能僅適用於美國地區的 Microsoft 產品授權使用者。 如果您在美國以外取得本產品，請瀏覽 [Microsoft 協助工具](https://www.microsoft.com/accessibility/)網站，以取得 Microsoft 支援服務電話號碼及地址的清單。 您可以連絡當地分公司，以了解當地是否有提供此頁面所描述的產品和服務類型。 協助工具資訊提供其他語言版本。
 
 ## <a name="windows"></a> Windows 協助工具功能
 
-Windows 作業系統具備許多內建的協助工具功能，方便無法打字或無法使用滑鼠、視障或弱視、失聰或聽障等人士使用。 這些功能會在安裝期間安裝。 如需這些功能的詳細資訊，請參閱 Windows 說明和 [Microsoft 協助工具](http://go.microsoft.com/fwlink/?LinkId=8431) \(英文\) 網站。
+Windows 作業系統具備許多內建的協助工具功能，方便無法打字或無法使用滑鼠、視障或弱視、失聰或聽障等人士使用。 這些功能會在安裝期間安裝。 如需這些功能的詳細資訊，請參閱 Windows 說明和 [Microsoft 協助工具](https://www.microsoft.com/accessibility/) \(英文\) 網站。
 
 ### <a name="free-step-by-step-tutorials"></a>免費逐步教學課程
 
 Microsoft 提供一系列逐步教學課程，提供在您的電腦上調整協助工具選項和設定的詳細程序。 這項資訊以逐步方式呈現，以便您可以了解如何使用滑鼠、鍵盤或兩者的組合。
 
-若要尋找 Microsoft 產品的逐步教學課程，請參閱 [Microsoft 協助工具](http://go.microsoft.com/fwlink/?LinkId=8431)網站。
+若要尋找 Microsoft 產品的逐步教學課程，請參閱 [Microsoft 協助工具](https://www.microsoft.com/accessibility/)網站。
 
 ### <a name="assistive-technology-products-for-windows"></a>適用於 Windows 的輔助技術產品
 
-有各式各樣的輔助技術產品可讓電腦更方便身障人士使用。 您可以在 [Microsoft 協助工具](http://go.microsoft.com/fwlink/?LinkId=8431) \(英文\) 網站上搜尋執行於 Windows 的輔助技術產品目錄。
+有各式各樣的輔助技術產品可讓電腦更方便身障人士使用。 您可以在 [Microsoft 協助工具](https://www.microsoft.com/accessibility/) \(英文\) 網站上搜尋執行於 Windows 的輔助技術產品目錄。
 
 如果您使用輔助技術，請務必連絡輔助技術廠商，然後再升級軟體或硬體，以檢查是否有可能的相容性問題。
 
 ## <a name="altfortmats"></a> 替代格式的文件
 
-如果您閱讀或處理印刷資料時有困難，可以取得許多以更方便之格式提供的 Microsoft 產品文件。 您可以在 [Microsoft 協助工具](http://go.microsoft.com/fwlink/?LinkId=8431) \(英文\) 網站上，檢視無障礙產品文件的索引。
+如果您閱讀或處理印刷資料時有困難，可以取得許多以更方便之格式提供的 Microsoft 產品文件。 您可以在 [Microsoft 協助工具](https://www.microsoft.com/accessibility/) \(英文\) 網站上，檢視無障礙產品文件的索引。
 
 此外，您可以從 Learning Ally 取得其他 Microsoft 出版物。 Learning Ally 會將這些文件發佈給其發佈服務中已註冊的合格成員。 如需 Microsoft 產品文件和 Microsoft Press 書籍可用性的相關資訊，請連絡：
 
 > Learning Ally<br />
-> 20 Roszel Road<br /> Princeton, NJ 08540<br /><br /> Learning Ally 網站：[http://www.learningally.org](http://www.learningally.org/)
+> 20 Roszel Road<br /> Princeton, NJ 08540<br /><br /> Learning Ally 網站：[http://www.learningally.org](https://learningally.org/)
 
 網址可能有所變更，因此您可能會無法連線至這裡所提到的網站。
 
@@ -74,7 +74,7 @@ Microsoft 支援服務依據使用服務時有效的價格、條款和條件。
 
 ## <a name="moreinfo"></a> 其他相關資訊
 
-如需電腦協助工具技術如何改善身障人士生活的詳細資訊，請參閱 [Microsoft 協助工具](http://go.microsoft.com/fwlink/?LinkId=8431) \(英文\) 網站。
+如需電腦協助工具技術如何改善身障人士生活的詳細資訊，請參閱 [Microsoft 協助工具](https://www.microsoft.com/accessibility/) \(英文\) 網站。
 
 ::: moniker range="vs-2017"
 
@@ -83,7 +83,7 @@ Microsoft 支援服務依據使用服務時有效的價格、條款和條件。
 
 ::: moniker-end
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 * [設計無障礙應用程式的資源](../../ide/reference/resources-for-designing-accessible-applications.md)
 * [Visual Studio 的協助工具功能](../../ide/reference/accessibility-features-of-visual-studio.md)

@@ -18,12 +18,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e59ee1305c0c482686505959aac7187902906086
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 75faa3e4d38f961c38b23a95765d6466e008714f
+ms.sourcegitcommit: 4f82de3fb0cfae226aef1abb40c47e63d2036a5c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748902"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72919039"
 ---
 # <a name="work-with-c-code-in-class-designer"></a>使用類別設計工具C++中的程式碼
 
@@ -84,7 +84,7 @@ ms.locfileid: "72748902"
 
 ### <a name="troubleshoot-other-error-messages"></a>針對其他錯誤訊息進行疑難排解
 
-您可以在 Microsoft Developer Network (MSDN) 公共論壇中尋求有關疑難排解錯誤和警告的協助。 請參閱 [Visual Studio 類別設計工具論壇](http://go.microsoft.com/fwlink/?linkid=160754)。
+您可以在 Microsoft Developer Network (MSDN) 公共論壇中尋求有關疑難排解錯誤和警告的協助。 請參閱 [Visual Studio 類別設計工具論壇](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vsclassdesigner)。
 
 ## <a name="limitations-for-c-code-elements"></a>C++ 程式碼項目限制
 

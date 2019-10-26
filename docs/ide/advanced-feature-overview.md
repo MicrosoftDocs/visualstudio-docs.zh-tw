@@ -7,12 +7,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c54983ee9025cf3e1c4df0161a6be55ebf9b2fa
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 2283da7c212102ac948ea368bb95315344d2274e
+ms.sourcegitcommit: 4f82de3fb0cfae226aef1abb40c47e63d2036a5c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72631988"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72919106"
 ---
 # <a name="features-of-visual-studio"></a>Visual Studio 的功能
 
@@ -68,7 +68,7 @@ Visual Studio 的 [Cloud Explorer](/azure/vs-azure-tools-resources-managing-with
 
 ## <a name="create-apps-for-the-web"></a>建立適用於 Web 的應用程式
 
-Web 推動我們的現代化世界，而 Visual Studio 則可協助您撰寫適用於 Web 的應用程式。 您可以使用 ASP.NET、Node.js、Python、JavaScript 及 TypeScript 來建立 Web 應用程式。 Visual Studio 了解 Angular、jQuery、Express 等 Web 架構。 ASP.NET Core 和 .NET Core 可在 Windows、Mac 及 Linux 作業系統上執行。 [ASP.NET Core](http://www.asp.net/core/overview) 是 MVC、WebAPI 及 SignalR 的重大更新，可以在 Windows、Mac 及 Linux 上執行。  ASP.NET Core 是全新的設計，提供您可組合的簡式 .NET 堆疊，讓您建置現代化的雲端架構 Web 應用程式和服務。
+Web 推動我們的現代化世界，而 Visual Studio 則可協助您撰寫適用於 Web 的應用程式。 您可以使用 ASP.NET、Node.js、Python、JavaScript 及 TypeScript 來建立 Web 應用程式。 Visual Studio 了解 Angular、jQuery、Express 等 Web 架構。 ASP.NET Core 和 .NET Core 可在 Windows、Mac 及 Linux 作業系統上執行。 [ASP.NET Core](https://dotnet.microsoft.com/learn/aspnet/what-is-aspnet-core) 是 MVC、WebAPI 及 SignalR 的重大更新，可以在 Windows、Mac 及 Linux 上執行。  ASP.NET Core 是全新的設計，提供您可組合的簡式 .NET 堆疊，讓您建置現代化的雲端架構 Web 應用程式和服務。
 
 如需詳細資訊，請參閱[新式 Web 工具](https://visualstudio.microsoft.com/vs/modern-web-tooling/)。
 

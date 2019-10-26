@@ -7,16 +7,16 @@ helpviewer_keywords:
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: cab93bcf60c5a4fb5034bfdfd7601e4f846996d0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 7cbb8c9be8ed56294d865d2612a8d79fcdb39df8
+ms.sourcegitcommit: 4f82de3fb0cfae226aef1abb40c47e63d2036a5c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652621"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72919124"
 ---
 # <a name="create-portable-custom-editor-settings-with-editorconfig"></a>使用 EditorConfig 建立可攜式自訂編輯器設定
 
-您可以在專案或程式碼基底中新增 [EditorConfig](http://editorconfig.org/) 檔案，強制使用程式碼基底的所有人都使用一致的編碼樣式。 EditorConfig 設定優先於全域 Visual Studio 文字編輯器設定。 這表示您可以自訂每個程式碼基底，以使用該專案專屬的文字編輯器設定。 您仍然可以在 Visual Studio 的 [選項] 對話方塊中設定自己的個人編輯器喜好設定。 每當您使用沒有 *.editorconfig* 檔案的程式碼基底時，或 *.editorconfig* 檔案不覆寫特定設定時，就會套用那些設定。 縮排樣式&mdash;定位點或空格，即為這類喜好設定的範例之一。
+您可以在專案或程式碼基底中新增 [EditorConfig](https://editorconfig.org/) 檔案，強制使用程式碼基底的所有人都使用一致的編碼樣式。 EditorConfig 設定優先於全域 Visual Studio 文字編輯器設定。 這表示您可以自訂每個程式碼基底，以使用該專案專屬的文字編輯器設定。 您仍然可以在 Visual Studio 的 [選項] 對話方塊中設定自己的個人編輯器喜好設定。 每當您使用沒有 *.editorconfig* 檔案的程式碼基底時，或 *.editorconfig* 檔案不覆寫特定設定時，就會套用那些設定。 縮排樣式&mdash;定位點或空格，即為這類喜好設定的範例之一。
 
 許多程式碼編輯器和 IDE，包括 Visual Studio，都支援 EditorConfig 設定。 它是隨附於程式碼的可攜式元件，甚至可以強制規範 Visual Studio 之外的編碼樣式。
 
@@ -50,14 +50,14 @@ EditorConfig 檔案中的設定可讓您在程式碼基底中維持一致的編�
 
 您在個人專案上使用的編碼慣例，可能與用於小組專案的不同。 例如，您在編寫程式碼時，可能會偏好縮排時新增定位字元。 不過，您的小組可能會偏好縮排時新增四個空白字元，而不是定位字元。 EditorConfig 檔案讓您能擁有每個案例的組態，以解決此問題。
 
-因為設定是包含在程式碼基底的檔案中，所以它們會隨著該程式碼基底四處移動。 只要您在符合 EditorConfig 規範的編輯器中開啟程式碼檔案，便會實作文字編輯器設定。 如需 EditorConfig 檔案的詳細資訊，請參閱 [EditorConfig.org](http://editorconfig.org/) 網站。
+因為設定是包含在程式碼基底的檔案中，所以它們會隨著該程式碼基底四處移動。 只要您在符合 EditorConfig 規範的編輯器中開啟程式碼檔案，便會實作文字編輯器設定。 如需 EditorConfig 檔案的詳細資訊，請參閱 [EditorConfig.org](https://editorconfig.org/) 網站。
 
 > [!NOTE]
 > 由於建置錯誤或警告，目前無法在 CI/CD 管線中強制執行 EditorConfig 中設定的慣例。 任何樣式偏差只會顯示在 Visual Studio 編輯器中和 [錯誤清單] 中。
 
 ## <a name="supported-settings"></a>支援的設定
 
-Visual Studio 中的編輯器支援 [EditorConfig 屬性](http://editorconfig.org/#supported-properties)的核心集：
+Visual Studio 中的編輯器支援 [EditorConfig 屬性](https://editorconfig.org/#supported-properties)的核心集：
 
 - indent_style
 - indent_size
@@ -182,6 +182,6 @@ dir .editorconfig /s
 
 - [.NET 程式碼樣式慣例](../ide/editorconfig-code-style-settings-reference.md)
 - [為語言服務支援 EditorConfig](../extensibility/supporting-editorconfig.md)
-- [EditorConfig.org](http://editorconfig.org/)
+- [EditorConfig.org](https://editorconfig.org/)
 - [程式碼編輯器的功能](writing-code-in-the-code-and-text-editor.md)
 - [EditorConfig (Visual Studio for Mac)](/visualstudio/mac/editorconfig)

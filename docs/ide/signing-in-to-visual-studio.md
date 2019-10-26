@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a949c8b8e5956f9a606195671c0453bbb3689701
-ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
+ms.openlocfilehash: f4f12aafa8296914461e647dddc3400e399770c0
+ms.sourcegitcommit: 4f82de3fb0cfae226aef1abb40c47e63d2036a5c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72018873"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72919172"
 ---
 # <a name="sign-in-to-visual-studio"></a>登入 Visual Studio
 
@@ -44,7 +44,7 @@ ms.locfileid: "72018873"
 
 ## <a name="how-to-sign-in-to-visual-studio"></a>如何登入 Visual Studio
 
-當您第一次開啟 Visual Studio 時，系統會要求您登入並提供一些基本註冊資訊。 您應該選擇 Microsoft 帳戶或最能代表您的工作或學校帳戶。 如果您沒有任何一個這樣的帳戶，則可以免費建立一個 Microsoft 帳戶。 請查看 [如何註冊 Microsoft 帳戶？](http://windows.microsoft.com/windows-live/sign-up-create-account-how)
+當您第一次開啟 Visual Studio 時，系統會要求您登入並提供一些基本註冊資訊。 您應該選擇 Microsoft 帳戶或最能代表您的工作或學校帳戶。 如果您沒有任何一個這樣的帳戶，則可以免費建立一個 Microsoft 帳戶。 請查看 [如何註冊 Microsoft 帳戶？](https://support.microsoft.com/help/4026324/microsoft-account-how-to-create)
 
 接下來，選擇您在 Visual Studio 中要使用的 UI 設定和色彩佈景主題。 Visual Studio 會記住這些設定，並在您已登入的所有 Visual Studio 環境中同步處理這些設定。 如需同步設定的清單，請參閱[同步設定](../ide/synchronized-settings-in-visual-studio.md)。 您之後可以在 Visual Studio 中開啟 [工具] > [選項] 功能表以變更設定。
 
@@ -66,7 +66,7 @@ ms.locfileid: "72018873"
 
 如果您在登入時遇到任何問題，請參閱[帳戶支援](https://visualstudio.microsoft.com/subscriptions/support/)頁面來取得協助。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 * [如何解除鎖定 Visual Studio](../ide/how-to-unlock-visual-studio.md)
 * [Visual Studio IDE 概觀](../get-started/visual-studio-ide.md)
