@@ -8,19 +8,19 @@ ms.topic: conceptual
 ms.workload: azure-vs
 ms.date: 11/11/2016
 ms.author: mikejo
-ms.openlocfilehash: fd436a6b7e38c8f76de5d113c326e194e4011155
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 04e3ee89498447f7743fc1b5119e129f046b4fcc
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62427396"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911785"
 ---
 # <a name="testing-the-performance-of-a-cloud-service"></a>測試雲端服務的效能
 ## <a name="overview"></a>總覽
 您可以利用下列方式測試雲端服務的效能：
 
-* 使用 Azure 診斷來收集關於要求和連接的資訊，並檢閱可顯示從客戶觀點來看，服務執行的情況的網站統計資料。 若要開始使用，請參閱 [為 Azure 雲端服務和虛擬機器設定診斷功能](http://go.microsoft.com/fwlink/p/?LinkId=623009)。
-* 使用 Visual Studio 分析工具可取得服務執行情況在計算方面的深入分析。 如本主題所述，您可以使用分析工具於服務在 Azure 中執行時來測量服務。 如需如何使用分析工具來測量服務在本機的計算模擬器中執行的效能的詳細資訊，請參閱 [使用 Visual Studio 分析工具，在計算模擬器中本機測試 Azure 雲端服務的效能](http://go.microsoft.com/fwlink/p/?LinkId=262845)。
+* 使用 Azure 診斷來收集關於要求和連接的資訊，並檢閱可顯示從客戶觀點來看，服務執行的情況的網站統計資料。 若要開始使用，請參閱 [為 Azure 雲端服務和虛擬機器設定診斷功能](vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines.md)。
+* 使用 Visual Studio 分析工具可取得服務執行情況在計算方面的深入分析。 如本主題所述，您可以使用分析工具於服務在 Azure 中執行時來測量服務。 如需如何使用分析工具來測量服務在本機的計算模擬器中執行的效能的詳細資訊，請參閱 [使用 Visual Studio 分析工具，在計算模擬器中本機測試 Azure 雲端服務的效能](/azure/cloud-services/cloud-services-performance-testing-visual-studio-profiler)。
 
 ## <a name="choosing-a-performance-testing-method"></a>選擇效能測試方法
 ### <a name="use-azure-diagnostics-to-collect"></a>使用 Azure 診斷以收集：
@@ -65,15 +65,15 @@ ms.locfileid: "62427396"
 您可以對分析使用不同的收集方法，根據效能問題：
 
 * **CPU 取樣** - 這個方法會收集對 CPU 使用率問題的初始分析很實用的應用程式統計資料。 CPU 取樣是開始大多數效能調查的建議方法。 收集 CPU 取樣資料時，對您正在分析的應用程式有很小的影響。
-* **檢測** - 這個方法會收集詳細的時間資料，對重點分析以及分析輸入/輸出效能問題非常實用。 檢測方法會在執行分析期間記錄模組中函式的每個進入、結束和函式呼叫。 這個方法適合用來收集關於您的程式碼的某個區段的詳細時間資訊，以及了解輸入和輸出作業對應用程式效能的影響。 執行 32 位元作業系統的電腦會停用這個方法。 只有當您在 Azure 中 (而不是在本機計算模擬器中) 執行雲端服務時，此選項才可供使用。
+* **檢測** - 這個方法會收集詳細的時間資料，對重點分析以及分析輸入/輸出效能問題非常實用。 檢測方法會在執行分析期間記錄模組中函式的每個進入、結束和函式呼叫。 此方法可用來收集程式碼區段的詳細計時資訊，以及了解輸入和輸出作業對應用程式效能的影響。 執行 32 位元作業系統的電腦會停用這個方法。 只有當您在 Azure 中 (而不是在本機計算模擬器中) 執行雲端服務時，此選項才可供使用。
 * **.NET 記憶體配置** - 這個方法會使用取樣分析方法收集 .NET Framework 記憶體配置資料。 收集的資料包含配置的物件的數目和大小。
-* **並行** - 這個方法會收集資源爭用資料，以及處理序與執行緒執行資料，對於分析多執行緒及多處理序的應用程式很實用。 並行方法會收集封鎖您的程式碼執行的每個事件的資料，例如當執行緒等候對應用程式資源的鎖定存取被釋放。 這個方法對於分析多執行緒應用程式很實用。
+* **並行** - 這個方法會收集資源爭用資料，以及處理序與執行緒執行資料，對於分析多執行緒及多處理序的應用程式很實用。 並行方法會收集每個封鎖執行程式碼之事件的資料，例如，執行緒等待釋放鎖定應用程式資源存取時。 此方法適用於分析多執行緒應用程式。
 * 您也可以啟用 **階層互動分析**，提供有關一或多個資料庫通訊的多層式應用程式中的函式中同步 ADO.NET 呼叫執行時間的其他資訊。 您可以使用任何分析方法收集階層互動資料。 如需有關階層互動分析的詳細資訊，請參閱 [階層互動檢視](https://msdn.microsoft.com/library/azure/dd557764.aspx)。
 
 ## <a name="configuring-profiling-settings"></a>設定分析設定
 下圖顯示如何從 [發佈 Azure 應用程式] 對話方塊中設定分析設定。
 
-![設定分析設定](./media/vs-azure-tools-performance-profiling-cloud-services/IC526984.png)
+![進行程式碼剖析設定](./media/vs-azure-tools-performance-profiling-cloud-services/IC526984.png)
 
 > [!NOTE]
 > 若要啟用 [啟用分析] 核取方塊，您必須要在用來發佈雲端服務的本機電腦上安裝分析工具。 根據預設，當您安裝 Visual Studio 時會一併安裝程式碼剖析工具。
@@ -81,13 +81,13 @@ ms.locfileid: "62427396"
 >
 
 ### <a name="to-configure-profiling-settings"></a>設定分析設定
-1. 在 [方案總管] 中，開啟 Azure 專案的捷徑功能表，然後選擇 [發佈] 。 如需有關如何發佈雲端服務的詳細步驟，請參閱 [使用 Azure 工具發佈雲端服務](http://go.microsoft.com/fwlink/p?LinkId=623012)。
+1. 在 [方案總管] 中，開啟 Azure 專案的捷徑功能表，然後選擇 [發佈]。 如需有關如何發佈雲端服務的詳細步驟，請參閱 [使用 Azure 工具發佈雲端服務](vs-azure-tools-publishing-a-cloud-service.md)。
 2. 在 [發佈 Azure 應用程式] 對話方塊中，選擇 [進階設定] 索引標籤。
-3. 若要啟用分析，請選取 [啟用分析]  核取方塊。
-4. 若要進行分析設定，請選擇 [設定]  超連結。 [分析設定] 對話方塊隨即出現。
-5. 從 [您要使用的分析方法]  選項按鈕，選擇您所需要的分析類型。
-6. 若要收集層次互動分析資料，請選取 [啟用階層互動分析]  核取方塊。
-7. 若要儲存設定，請選擇 [確定]  按鈕。
+3. 若要啟用分析，請選取 [啟用分析] 核取方塊。
+4. 若要進行分析設定，請選擇 [設定] 超連結。 [分析設定] 對話方塊隨即出現。
+5. 從 [您要使用的分析方法] 選項按鈕，選擇您所需要的分析類型。
+6. 若要收集層次互動分析資料，請選取 [啟用階層互動分析] 核取方塊。
+7. 若要儲存設定，請選擇 [確定] 按鈕。
 
     發佈這個應用程式時，這些設定會用來建立每個角色的分析工作階段。
 
@@ -99,7 +99,7 @@ ms.locfileid: "62427396"
 ### <a name="to-view-profiling-reports"></a>檢視分析報告
 1. 若要在 Visual Studio 中檢視 [伺服器總管] 視窗，請在功能表列上依序選擇 [檢視] 和 [伺服器總管]。
 2. 選擇 [Azure 運算] 節點，然後選擇從 Visual Studio 發佈時您選取要分析的雲端服務的 Azure 部署節點。
-3. 若要檢視執行個體的分析報告，請選擇服務中的角色、開啟特定執行個體的捷徑功能表，然後選擇 [檢視分析報告] 。
+3. 若要檢視執行個體的分析報告，請選擇服務中的角色、開啟特定執行個體的捷徑功能表，然後選擇 [檢視分析報告]。
 
     現在便會從 Azure 下載 .vsp 檔案的報告，而下載狀態會出現在 Azure 活動記錄檔中。 下載完成時，分析報告會顯示在 Visual Studio 編輯器的索引標籤中，名為  <角色名稱\><執行個體號碼\><識別碼\>.vsp。 報告的摘要資料隨即出現。
 4. 若要顯示報告的不同檢視，在 [目前檢視] 清單中，選擇您要的檢視類型。 如需詳細資訊，請參閱 [分析工具報告檢視](https://msdn.microsoft.com/library/azure/bb385755.aspx)。

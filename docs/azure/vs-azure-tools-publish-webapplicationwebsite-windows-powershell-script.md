@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2016
 ms.author: ghogen
-ms.openlocfilehash: e1085d13612cefee370aeac5fe67c7ddd2af8bae
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+ms.openlocfilehash: c5eff35247c85783659f66b13d03c3a5f781df07
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68919795"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911763"
 ---
 # <a name="publish-webapplicationwebsite-windows-powershell-script"></a>Publish-WebApplicationWebSite (Windows PowerShell 指令碼)
 ## <a name="syntax"></a>語法
@@ -37,7 +37,7 @@ Publish-WebApplicationWebSite
 | --- | --- |
 | 別名 |none |
 | 是否為必要項？ |true |
-| 位置 |已命名 |
+| 位置 |具名 |
 | 預設值 |none |
 | 接受管線輸入？ |False |
 | 接受萬用字元？ |False |
@@ -49,19 +49,19 @@ Publish-WebApplicationWebSite
 | --- | --- |
 | 別名 |none |
 | 是否為必要項？ |False |
-| 位置 |已命名 |
+| 位置 |具名 |
 | 預設值 |none |
 | 接受管線輸入？ |False |
 | 接受萬用字元？ |False |
 
 ## <a name="webdeploypackage"></a>WebDeployPackage
-要發佈至網站的 Web 部署封裝路徑。 您可以使用 Visual Studio 的 [發佈 Web] 精靈來建立此封裝。 如需詳細資訊，請參閱 [開始使用 Azure 雲端服務和 ASP.NET](http://go.microsoft.com/fwlink/p/?LinkID=623089)。
+要發佈至網站的 Web 部署封裝路徑。 您可以使用 Visual Studio 的 [發佈 Web] 精靈來建立此封裝。 如需詳細資訊，請參閱 [開始使用 Azure 雲端服務和 ASP.NET](vs-azure-tools-publish-webapplicationwebsite-windows-powershell-script.md)。
 
 | 參數 | 預設值 |
 | --- | --- |
 | 別名 |none |
 | 是否為必要項？ |False |
-| 位置 |已命名 |
+| 位置 |具名 |
 | 預設值 |none |
 | 接受管線輸入？ |False |
 | 接受萬用字元？ |False |
@@ -73,7 +73,7 @@ Publish-WebApplicationWebSite
 | --- | --- |
 | 別名 |none |
 | 是否為必要項？ |False |
-| 位置 |已命名 |
+| 位置 |具名 |
 | 預設值 |none |
 | 接受管線輸入？ |False |
 | 接受萬用字元？ |False |
@@ -85,7 +85,7 @@ Publish-WebApplicationWebSite
 | --- | --- |
 | 別名 |none |
 | 是否為必要項？ |False |
-| 位置 |已命名 |
+| 位置 |具名 |
 | 預設值 |False |
 | 接受管線輸入？ |False |
 | 接受萬用字元？ |False |

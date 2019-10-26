@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: eebbdfd7774018ecf49801c6b01b5867b7bd3408
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: f0235cc00a740069a77afd492cd585788ea666d2
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72734549"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911468"
 ---
 # <a name="how-can-i-debug-a-c-access-violation"></a>我要如何進行存取C++違規的調試？
 
@@ -77,7 +77,7 @@ int main() {
 
 ![AccessViolationCPlus](../debugger/media/accessviolationcplus.png "AccessViolationCPlus")
 
-如果您無法判斷指標造成存取違規的原因，請追蹤整個程式碼，確定已正確指派造成問題的指標。  如果將指標當作參數傳遞，請確定其已正確地傳遞，而且您沒有不小心建立[淺層複製](http://stackoverflow.com/questions/184710/what-is-the-difference-between-a-deep-copy-and-a-shallow-copy)。 然後確認這些值未在程式中的某處意外變更，方法是為有問題的指標建立資料中斷點，以確定此指標未在程式中的其他位置修改。 如需資料中斷點的詳細資訊，請參閱 [Using Breakpoints](../debugger/using-breakpoints.md)中的＜資料中斷點＞一節。
+如果您無法判斷指標造成存取違規的原因，請追蹤整個程式碼，確定已正確指派造成問題的指標。  如果將指標當作參數傳遞，請確定其已正確地傳遞，而且您沒有不小心建立[淺層複製](https://stackoverflow.com/questions/184710/what-is-the-difference-between-a-deep-copy-and-a-shallow-copy)。 然後確認這些值未在程式中的某處意外變更，方法是為有問題的指標建立資料中斷點，以確定此指標未在程式中的其他位置修改。 如需資料中斷點的詳細資訊，請參閱 [Using Breakpoints](../debugger/using-breakpoints.md)中的＜資料中斷點＞一節。
 
 ## <a name="see-also"></a>請參閱
 - [偵錯機器碼常見問題集](../debugger/debugging-native-code-faqs.md)

@@ -7,12 +7,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 69b817af15b782ebd1e281d51855d62b11e8f470
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
-ms.translationtype: HT
+ms.openlocfilehash: 8a42651792848ffd4de9eccb40c2949d113b10b4
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66262960"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911877"
 ---
 # <a name="performance-tools-on-windows-8-and-windows-server-2012-applications"></a>Windows 8 和 Windows Server 2012 應用程式的效能工具
 
@@ -63,7 +63,7 @@ Windows 8 尚未變更使用檢測方法進行程式碼剖析。
 
 您使用兩種命令列工具在 Windows 8 和 Windows Server 2012 的裝置上收集程式碼剖析資料，包括沒有安裝 Visual Studio 的裝置：
 
-|工具名稱|說明|
+|工具名稱|描述|
 |---------------|-----------------|
 |[VSPerf](../profiling/vsperf.md)|從 UWP App 收集分析資料，以及從 Windows 8 傳統型應用程式和 Windows Server 2012 應用程式收集樣本分析資料。|
 |[VSPerfCmd](../profiling/vsperfcmd.md)|從 Windows 8 桌面程式或 Windows Server 2012 中執行的應用程式，收集檢測、並行和階層互動分析資料。 從舊版 Windows 中收集所有類型的程式碼剖析資料。|
@@ -72,7 +72,7 @@ Windows 8 尚未變更使用檢測方法進行程式碼剖析。
 
 若要在沒有安裝 Visual Studio 的裝置上剖析應用程式，請執行下列任一作業：
 
-- 從 [MSDN 網站](http://go.microsoft.com/fwlink/?LinkID=219549)下載工具當做 Visual studio 遠端工具的一部分。
+- 從 [MSDN 網站](https://visualstudio.microsoft.com/#downloads+d-additional-software)下載工具當做 Visual studio 遠端工具的一部分。
 
 - 從您的 Visual Studio 電腦複製並執行獨立的分析工具安裝程式。 若要取得分析工具的路徑，請參閱[指定命令列工具的路徑](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)。 選擇遠端電腦的作業系統 (x86/x64) 安裝程式。
 
@@ -99,7 +99,7 @@ Windows 8 尚未變更使用檢測方法進行程式碼剖析。
 
 1. 若要從 Windows 8 桌面程式或 Windows Server 2012 中執行的應用程式收集階層互動資料，您必須使用檢測方法。
 
-2. 您無法收集 UWP App 的階層互動資料。
+2. 您無法收集 UWP 應用程式的階層互動資料。
 
 3. 其他支援的 Windows 版本上的所有程式碼剖析方法都可以包含階層互動資料。
 
@@ -109,7 +109,7 @@ Windows 8 尚未變更使用檢測方法進行程式碼剖析。
 
 **在遠端電腦上收集 TIP 資料**
 
-若要在遠端電腦上收集階層互動資料，您必須從 Visual Studio 電腦的 *%VSInstallDir%\Team Tools\Performance Tools\Setups* 資料夾中，複製 **vs\_profiler\_**_\<平台>_**\_**_\<語言>_**.exe** 檔案並安裝到遠端電腦。 您無法使用[遠端偵錯](../debugger/remote-debugging.md)下載套件中的程式碼剖析工具。
+若要在遠端電腦上收集階層互動資料，您必須從 Visual Studio 電腦的 *%VSInstallDir%\Team Tools\Performance Tools\Setups* 資料夾中，複製 **vs\_profiler\_** _\<平台>_ **\_** _\<語言>_ **.exe** 檔案並安裝到遠端電腦。 您無法使用[遠端偵錯](../debugger/remote-debugging.md)下載套件中的程式碼剖析工具。
 
 您可以使用 [VSPerfCmd](../profiling/vsperfcmd.md) 或 [VSPerfASPNetCmd](../profiling/vsperfaspnetcmd.md) 收集程式碼剖析資料。
 
@@ -117,7 +117,7 @@ Windows 8 尚未變更使用檢測方法進行程式碼剖析。
 
 階層互動資料只能在 Visual Studio Enterprise 中檢視。 不提供透過 [VSPerfReport](../profiling/vsperfreport.md) 的檔案型階層互動報告。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 [效能總管](../profiling/performance-explorer.md)
 [設定效能工作階段](../profiling/configuring-performance-sessions.md)

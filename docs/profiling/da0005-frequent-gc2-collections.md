@@ -13,19 +13,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e338bb4bc2040359c4b72ba258fcfceb689c6b30
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: a641fffe45203885bd44951aea35b3c5677f5e85
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62936570"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911178"
 ---
 # <a name="da0005-frequent-gc2-collections"></a>DA0005：常見的 GC2 集合
 
 |||
 |-|-|
 |RuleId|DA0005|
-|分類|.NET Framework 使用方式|
+|Category|.NET Framework 使用方式|
 |程式碼剖析方法|.NET 記憶體|
 |訊息|您有許多物件是在第 2 代記憶體回收中收集。|
 |訊息類型|警告|
@@ -38,9 +38,9 @@ ms.locfileid: "62936570"
 
  第 0 代中的物件通常會以頻繁且非常有效率的方式回收。 第 1 代中的物件則不會以太頻繁也不會太有效率的方式回收。 最後，在第 2 代中長時間執行的物件則不會太常回收。 第 2 代回收，是執行完整的記憶體回收，也是最耗費資源的作業。
 
- 發生太高比例的第 2 代記憶體回收時，就會引發此規則。 如果有太多存留期相當短的物件在第 1 代回收之後存留下來，但接著就能在第 2 代回收中回收，則記憶體管理的成本很可能會變得過高。 如需詳細資訊，請參閱 MSDN 網站上 Rico Mariani's Performance Tidbits 的[中間存留期危機 (英文)](http://go.microsoft.com/fwlink/?LinkId=177835) 文章。
+ 發生太高比例的第 2 代記憶體回收時，就會引發此規則。 如果有太多存留期相當短的物件在第 1 代回收之後存留下來，但接著就能在第 2 代回收中回收，則記憶體管理的成本很可能會變得過高。 如需詳細資訊，請參閱 MSDN 網站上 Rico Mariani's Performance Tidbits 的[中間存留期危機 (英文)](https://blogs.msdn.microsoft.com/ricom/2003/12/04/mid-life-crisis/) 文章。
 
 ## <a name="how-to-investigate-a-warning"></a>如何調查警告
  檢閱 [.NET 記憶體資料檢視](../profiling/dotnet-memory-data-views.md)報表，以了解應用程式的記憶體配置模式。 使用[物件存留期檢視](../profiling/object-lifetime-view.md)可判斷程式的哪些資料物件會存留到第 2 代，然後從該處回收。 使用[配置檢視](../profiling/dotnet-memory-allocations-view.md)可判斷導致這些配置的執行路徑。
 
- 如需如何改善記憶體回收效能的詳細資訊，請參閱 Microsoft 網站上的[記憶體回收行程的基礎概念和效能提示 (英文)](http://go.microsoft.com/fwlink/?LinkId=148226)。 如需有關自動記憶體回收之額外負荷的詳細資訊，請參閱[大型物件堆積的面目 (英文)](http://go.microsoft.com/fwlink/?LinkId=177836)。
+ 如需如何改善記憶體回收效能的詳細資訊，請參閱 Microsoft 網站上的[記憶體回收行程的基礎概念和效能提示 (英文)](/previous-versions/dotnet/articles/ms973837(v=msdn.10))。 如需有關自動記憶體回收之額外負荷的詳細資訊，請參閱[大型物件堆積的面目 (英文)](https://msdn.microsoft.com/magazine/cc534993.aspx)。

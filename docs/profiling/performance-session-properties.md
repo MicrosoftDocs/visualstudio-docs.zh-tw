@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 77da53856e0562d036fade431dd0deba0376fe9f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 2c8a5058d52684ec08e13641953c789c244f2fa9
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62798365"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72910152"
 ---
 # <a name="performance-session-properties"></a>效能工作階段屬性
 
@@ -34,11 +34,11 @@ ms.locfileid: "62798365"
 
 如需詳細資訊，請參閱:
 
-[如何：選擇收集方法](../profiling/how-to-choose-collection-methods.md)
+[操作說明：選擇收集方法](../profiling/how-to-choose-collection-methods.md)
 
 [收集 .NET 記憶體配置和存留期資料](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md)
 
-- [如何：設定效能資料檔案名稱選項](../profiling/how-to-set-performance-data-file-name-options.md)
+- [操作說明：設定效能資料檔案名稱選項](../profiling/how-to-set-performance-data-file-name-options.md)
 
 ## <a name="launch"></a>啟動
 
@@ -75,7 +75,7 @@ ms.locfileid: "62798365"
 
 [如何：分析網頁中的 JavaScript 程式碼](../profiling/how-to-profile-javascript-code-in-web-pages.md)
 
-[如何：指定檢測前和檢測後命令](../profiling/how-to-specify-pre-and-post-instrument-commands.md)
+[操作說明：指定檢測前置和檢測後續命令](../profiling/how-to-specify-pre-and-post-instrument-commands.md)
 
 ## <a name="cpu-counters"></a>CPU 計數器
 
@@ -85,11 +85,11 @@ ms.locfileid: "62798365"
 
 ## <a name="windows-events"></a>Windows 事件
 
-在剖析期間，您可以收集來自事件追蹤提供者的資料。 您可以使用 *VSPerfReport.exe* 命令列工具的 `/calltrace` 選項來檢視此資料。 如需 Windows 事件追蹤 (ETW) 的詳細資訊，請參閱[關於事件追蹤 (About Event Tracing)](http://go.microsoft.com/fwlink/?linkid=90752)。
+在剖析期間，您可以收集來自事件追蹤提供者的資料。 您可以使用 *VSPerfReport.exe* 命令列工具的 `/calltrace` 選項來檢視此資料。 如需 Windows 事件追蹤 (ETW) 的詳細資訊，請參閱[關於事件追蹤 (About Event Tracing)](/windows/win32/etw/about-event-tracing)。
 
 如需詳細資訊，請參閱:
 
-[如何：收集 Windows 事件追蹤 (ETW) 資料](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md)
+[操作說明：收集 Windows 事件追蹤 (ETW) 資料](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md)
 
 [VSPerfReport](../profiling/vsperfreport.md)。
 
@@ -105,11 +105,11 @@ ms.locfileid: "62798365"
 
 如需詳細資訊，請參閱:
 
-[如何：指定 .NET Framework 執行階段](../profiling/how-to-specify-the-dotnet-framework-runtime.md)
+[操作說明︰指定 .NET Framework 執行階段](../profiling/how-to-specify-the-dotnet-framework-runtime.md)
 
-[如何：指定其他的檢測選項](../profiling/how-to-specify-additional-instrumentation-options.md)
+[操作說明：指定其他的檢測選項](../profiling/how-to-specify-additional-instrumentation-options.md)
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 [概觀](../profiling/overviews-performance-tools.md)
 [設定效能工作階段](../profiling/configuring-performance-sessions.md)
