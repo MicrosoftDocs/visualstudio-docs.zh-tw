@@ -9,12 +9,12 @@ manager: jillfra
 ms.technology: vs-ide-debug
 ms.workload:
 - uwp
-ms.openlocfilehash: a9e111f904f0c017dbbe4487401e8e3c363931ac
-ms.sourcegitcommit: 4f82de3fb0cfae226aef1abb40c47e63d2036a5c
-ms.translationtype: HT
+ms.openlocfilehash: 0c785be0002a1e6d4fd1934e559743502611f5fb
+ms.sourcegitcommit: bde55773485c9bca50a760ac9e4c919e0a208a51
+ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/25/2019
-ms.locfileid: "72919210"
+ms.locfileid: "72924492"
 ---
 # <a name="debug-xaml-in-blend"></a>在 Blend 中偵錯 XAML
 
@@ -37,7 +37,7 @@ ms.locfileid: "72919210"
 
 - XAML 元素位於禁止的位置。
 
-如需一般 XAML 語法的詳細資訊，請參閱[基本 XAML 語法指南](/previous-versions/windows/apps/hh700351(v=win.10))。
+如需一般 XAML 語法的詳細資訊，請參閱[基本 XAML 語法指南](/windows/uwp/xaml-platform/xaml-syntax-guide)。
 
 您也可以識別並解決 Blend 中的簡單程式碼後置語法錯誤、編譯錯誤和執行階段錯誤。 但是，在 Visual Studio 中能夠較容易辨識並解決程式碼後置語法錯誤。
 
@@ -119,7 +119,7 @@ ms.locfileid: "72919210"
 
 您可以在 Visual Studio 中開啟 Blend 專案，以更輕鬆地在應用程式中進行程式碼的偵錯工具。 若要在 Visual Studio 中開啟 Blend 專案，請以滑鼠右鍵按一下 [**專案**] 面板中的專案，然後按一下 [**在 Visual Studio 中編輯**]。 在 Visual Studio 中完成偵錯工具會話之後，請按 Ctrl + Shift + S 儲存所有變更，然後切換回 Blend。 此時會出現要您重新載入專案的提示畫面。 按一下 **[全部都是]** ，即可繼續使用 Blend。
 
-如需有關偵錯工具的詳細資訊，請參閱[Visual Studio 中的 DEBUG UWP apps](/visualstudio/debugger/debug-store-apps-in-visual-studio?view=vs-2015&redirectedfrom=MSDN)。
+如需有關偵錯工具的詳細資訊，請參閱[Visual Studio 中的 DEBUG UWP apps](../debugger/debug-store-apps-in-visual-studio.md)。
 
 ## <a name="get-help"></a>取得協助
 

@@ -12,12 +12,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: d24fc2fa1ee34567e0c32859eeccf6af62813a20
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 65fa8b823a49644110dc773eb614da6022f4e8f5
+ms.sourcegitcommit: bde55773485c9bca50a760ac9e4c919e0a208a51
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648712"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72924523"
 ---
 # <a name="connect-to-data-in-an-access-database"></a>連線至 Access 資料庫中的資料
 
@@ -109,7 +109,7 @@ ms.locfileid: "72648712"
 
 您剛才建立的資料集可在 [**資料來源**] 視窗中使用。 現在您可以執行下列任一項工作：
 
-- 選取 [**資料來源**] 視窗中的專案，並將其拖曳至您的表單或設計介面（請參閱將 Windows Forms 控制項系結至 Visual Studio 或[WPF 資料](/dotnet/framework/wpf/data/data-binding-overview)系結總覽[中的資料](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)）。
+- 選取 [**資料來源**] 視窗中的專案，並將其拖曳至您的表單或設計介面（請參閱將 Windows Forms 控制項系結至 Visual Studio 或[WPF 資料](/dotnet/desktop-wpf/data/data-binding-overview)系結總覽[中的資料](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)）。
 
 - 在 **DataSet 設計工具**中開啟資料來源，以新增或編輯組成資料集的物件。
 
