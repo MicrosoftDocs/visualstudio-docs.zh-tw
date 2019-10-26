@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 5ec01bdc1f27d2ca7c8b2d20c901a224cbdbf19d
-ms.sourcegitcommit: 8a96a65676fd7a2a03b0803d7eceae65f3fa142b
+ms.openlocfilehash: 6c7bec91f6a938a131f99abfd5ab9cbef6479a85
+ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72589156"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72888666"
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>教學課程：在 Visual Studio 中建立 Node.js 和 React 應用程式
 
@@ -85,7 +85,7 @@ Webpack 搭配 JavaScript 檔案，讓它們可以在瀏覽器中執行。 它�
 1. 建立新的專案。
 
     ::: moniker range=">=vs-2019"
-    按 **Esc** 關閉開始視窗。 鍵入 **Ctrl + Q** 開啟 [搜尋] 方塊，再鍵入 **Node.js**，然後選擇 [空白的 Node.js Web 應用程式] (JavaScript)。 在出現的對話方塊中選擇 [建立]。
+    按 **Esc** 關閉開始視窗。 鍵入 **Ctrl + Q** 開啟 [搜尋] 方塊，再鍵入 **Node.js**，然後選擇 [空白的 Node.js Web 應用程式] (JavaScript)。 在出現的對話方塊中，選擇 [建立]。
     ::: moniker-end
     ::: moniker range="vs-2017"
     從頂端功能表列中，選擇 [檔案] > [新增] > [專案]。 在 [新增專案] 對話方塊的左窗格中，展開 **JavaScript**，然後選擇 **Node.js**。 在中間窗格中，選擇 [空白的 Node.js Web 應用程式]、輸入名稱 **NodejsWebAppBlank**，然後選擇 [確定]。
@@ -390,7 +390,7 @@ Webpack 搭配 JavaScript 檔案，讓它們可以在瀏覽器中執行。 它�
     ::: moniker range=">=vs-2019"
 
     > [!NOTE]
-    > 您也可以在瀏覽器啟動時設定 `--remote-debugging-port` 旗標，方法是從 [偵錯] 工具列中選取 [...瀏覽方式]，接著選擇 [新增]，然後在 [引數] 欄位中設定此旗標。 為瀏覽器使用不同的易記名稱，例如 **Chrome with Debugging**。 如需詳細資訊，請參閱[版本資訊](https://docs.microsoft.com/visualstudio/releases/2019/release-notes-preview)。
+    > 您也可以在瀏覽器啟動時設定 `--remote-debugging-port` 旗標，方法是從 [偵錯] 工具列中選取 [...瀏覽方式]，接著選擇 [新增]，然後在 [引數] 欄位中設定此旗標。 為瀏覽器使用不同的易記名稱，例如 **Chrome with Debugging**。 如需詳細資訊，請參閱[版本資訊](/visualstudio/releases/2019/release-notes-preview)。
 
     ::: moniker-end
 

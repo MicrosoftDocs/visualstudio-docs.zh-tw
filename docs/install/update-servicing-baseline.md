@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: ca8aaf0af2ad7374137752783b242a40e94f706c
-ms.sourcegitcommit: 2bbcba305fd0f8800fd3d9aa16f7647ee27f3a4b
-ms.translationtype: HT
+ms.openlocfilehash: 4e84704d4ca37dd9e36da3838b5b1b23f068568c
+ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/17/2019
-ms.locfileid: "68300551"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72888587"
 ---
 # <a name="update-visual-studio-while-on-a-servicing-baseline"></a>在維護基底上時更新 Visual Studio
 
@@ -28,7 +28,7 @@ ms.locfileid: "68300551"
 
 企業系統管理員可以選擇將其用戶端保持在維護基準。 維護基準由維護更新支援，直到下一個維護基準發行過後一年。
 
-維護基準選項讓開發人員和系統管理員能更彈性地採用新功能、錯誤 (Bug) 修正或次要更新中包含的元件。 第一個服務基準是 16.0.x。 如需詳細資訊，請參閱 [Enterprise 與 Professional 客戶的支援選項](https://docs.microsoft.com/visualstudio/releases/2019/servicing#support-options-for-enterprise-and-professional-customers)。
+維護基準選項讓開發人員和系統管理員能更彈性地採用新功能、錯誤 (Bug) 修正或次要更新中包含的元件。 第一個服務基準是 16.0.x。 如需詳細資訊，請參閱 [Enterprise 與 Professional 客戶的支援選項](/visualstudio/releases/2019/servicing#support-options-for-enterprise-and-professional-customers)。
 
 ## <a name="how-to-get-onto-a-servicing-baseline"></a>如何進入服務基準
 
@@ -48,7 +48,7 @@ ms.locfileid: "68300551"
 
 ### <a name="install-a-servicing-baseline-via-the-internet"></a>透過網際網路安裝服務基準
 
-針對網際網路型安裝，請將 `--channelUri` 與不存在的通道資訊清單新增至用來啟動安裝程式的命令列。 這會禁止 Visual Studio 使用最新的可用版本進行更新。 以下是範例：
+針對網際網路型安裝，請將 `--channelUri` 與不存在的通道資訊清單新增至用來啟動安裝程式的命令列。 這會禁止 Visual Studio 使用最新的可用版本進行更新。 以下為範例：
 
 ```cmd
 vs_enterprise.exe --channelUri c:\doesnotexist.chman
@@ -80,7 +80,7 @@ vs_enterprise.exe --channelUri c:\doesnotexist.chman
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 * [安裝 Visual Studio](install-visual-studio.md)
 * [Visual Studio 系統管理員指南](visual-studio-administrator-guide.md)

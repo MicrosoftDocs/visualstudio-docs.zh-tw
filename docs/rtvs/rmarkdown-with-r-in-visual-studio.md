@@ -8,12 +8,12 @@ ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: b8f87f831c8076b22a61d7032d16be8d13f21b62
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 32cfabfe61a8c1dc8f04cd2d024b07a92b1eb7e2
+ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62998632"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72888563"
 ---
 # <a name="create-r-markdown-documents"></a>建立 R Markdown 文件
 
@@ -24,7 +24,7 @@ Visual Studio R 工具 (RTVS) 提供 R Markdown 項目範本、編輯器支援 (
 ## <a name="using-r-markdown"></a>使用 R Markdown
 
 1. 關閉 Visual Studio。
-1. (僅限一次) 從 [pandoc.org](http://pandoc.org/installing.html) 安裝 `pandoc`。
+1. (僅限一次) 從 [pandoc.org](https://pandoc.org/installing.html) 安裝 `pandoc`。
 1. 重新啟動 Visual Studio，應該會挑選 pandoc 安裝。
 1. 安裝 `knitr` 和 `rmarkdown` 套件，這可在[互動視窗](interactive-repl-for-r-in-visual-studio.md)中執行：
 

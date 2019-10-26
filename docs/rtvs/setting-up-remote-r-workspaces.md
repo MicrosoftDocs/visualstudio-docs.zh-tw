@@ -8,12 +8,12 @@ ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: 0263afa4eeb9094802fe6272380b6b53106da4a2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: e8cd1868e61b0691be7ea639d8b5d826c608915d
+ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62810142"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72888539"
 ---
 # <a name="set-up-remote-workspaces"></a>設定遠端工作區
 
@@ -26,7 +26,7 @@ ms.locfileid: "62810142"
 
 ## <a name="install-an-ssl-certificate"></a>安裝 SSL 憑證
 
-RTVS 需要所有與遠端伺服器通訊均透過 HTTP，而這需要伺服器上有 SSL 憑證。 您可以使用受信任的憑證授權單位所簽署的憑證 (建議)，或自我簽署憑證 (自我簽署憑證可讓 RTVS 在連線時發出警告)。無論使用哪一項，您都需要在電腦上安裝它，並允許存取其私密金鑰。
+RTVS 需要所有與遠端伺服器通訊均透過 HTTP，而這需要伺服器上有 SSL 憑證。 您可以使用受信任的憑證授權單位所簽署的憑證 (建議)，或自我簽署憑證 （自我簽署憑證會導致 RTVS 在連線時發出警告）。無論使用哪一種，您都必須將它安裝在電腦上，並允許存取其私密金鑰。
 
 ### <a name="obtain-a-trusted-certificate"></a>取得受信任的憑證
 
@@ -174,13 +174,13 @@ RTVS 需要所有與遠端伺服器通訊均透過 HTTP，而這需要伺服器�
 
 在遠端電腦上執行 R 服務，也需要建立使用者帳戶、設定防火牆規則、設定 Azure 網路功能，以及設定 SSL 憑證。
 
-1. 使用者帳戶：為每位存取遠端電腦的使用者建立帳戶。 您可以建立標準的 (不具權限) 本機使用者帳戶，或者將 R 伺服器電腦加入您的網域，並將適當的安全性群組新增至 `Users` 安全性群組。
+1. 使用者帳戶︰為每位存取遠端電腦的使用者建立帳戶。 您可以建立標準的 (不具權限) 本機使用者帳戶，或者將 R 伺服器電腦加入您的網域，並將適當的安全性群組新增至 `Users` 安全性群組。
 
-1. 防火牆規則：根據預設，`R Host Broker` 會接聽 TCP 通訊埠 5444。 因此，請確定傳入和傳出流量皆已啟用 Windows 防火牆規則 (安裝套件和類似案例需要傳出)。  R 服務安裝程式會為內建的 Windows 防火牆自動設定這些規則。 不過，如果您使用協力廠商防火牆，請手動開啟連接埠 5444 供 `R Host Broker` 使用。
+1. 防火牆規則︰根據預設，`R Host Broker` 會接聽 TCP 通訊埠 5444。 因此，請確定傳入和傳出流量皆已啟用 Windows 防火牆規則 (安裝套件和類似案例需要傳出)。  R 服務安裝程式會為內建的 Windows 防火牆自動設定這些規則。 不過，如果您使用協力廠商防火牆，請手動開啟連接埠 5444 供 `R Host Broker` 使用。
 
-1. Azure 組態：如果您的遠端電腦是 Azure 虛擬機器，請也開啟連接埠 5444 供 Azure 網路的連入流量使用，它不受 Windows 防火牆影響。 如需詳細資訊，請參閱 Azure 文件的[使用網路安全性群組來篩選網路流量](https://docs.microsoft.com/azure/virtual-network/virtual-networks-nsg)。
+1. Azure 組態︰如果您的遠端電腦是 Azure 的虛擬機器，請也開啟連接埠 5444 供 Azure 網路的連入流量使用，它不受 Windows 防火牆影響。 如需詳細資訊，請參閱 Azure 文件的[使用網路安全性群組來篩選網路流量](/azure/virtual-network/virtual-networks-nsg)。
 
-1. 通知 R 主機訊息代理程式要載入的 SSL 憑證：如果您要在內部網路伺服器上安裝憑證，則您伺服器的完整網域名稱很可能與其 NETBIOS 名稱相同。 在此情況下，您不需要做任何事，因為這是載入的預設憑證。
+1. 通知 R 主機訊息代理程式要載入的 SSL 憑證︰如果您要在內部網路伺服器上安裝憑證，則您伺服器的完整網域名稱很可能與其 NETBIOS 名稱相同。 在此情況下，您不需要做任何事，因為這是載入的預設憑證。
 
     不過，如果您要在網際網路伺服器 (例如 Azure VM) 上安裝憑證，請使用伺服器的完整網域名稱 (FQDN)，因為網際網路伺服器的 FQDN 與其 NETBIOS 名稱絕不會相同。
 
@@ -199,11 +199,11 @@ RTVS 需要所有與遠端伺服器通訊均透過 HTTP，而這需要伺服器�
 
 ## <a name="troubleshooting"></a>疑難排解
 
-**問：R 伺服器電腦沒有回應，我該怎麼辦？**
+**問： R 伺服器電腦沒有回應，我該怎麼做？**
 
 嘗試從命令列 ping 遠端電腦：`ping remote-machine-name`。 如果 ping 失敗，請確定電腦正在執行。
 
-**問：R 互動視窗顯示遠端電腦已開啟，但為什麼服務未執行？**
+**問： R 互動視窗顯示遠端電腦已開啟，但為什麼服務未執行？**
 
 有三個可能的原因：
 
@@ -213,21 +213,21 @@ RTVS 需要所有與遠端伺服器通訊均透過 HTTP，而這需要伺服器�
 
 完成任何上述變更後，請重新啟動電腦。 然後透過工作管理員 ([服務] 索引標籤) 或 services.msc 確定 `RHostBrokerService` 和 `RUserProfileService` 正在執行。
 
-**問：連線到 R 伺服器時，R 互動視窗為何顯示「401 拒絕存取」？**
+**問：在連接到 R 伺服器時，R 互動視窗為什麼會說「401拒絕存取」？**
 
 可能有二個原因：
 
 - `NETWORK SERVICE` 帳戶很可能無法存取 SSL 憑證的私密金鑰。 請依稍早的指示授與私密金鑰的 `NETWORK SERVICE` 存取權。
 - 確定 `seclogon` 服務正在執行。 使用 services.msc 設定 `seclogon` 自動啟動。
 
-**問：連線到 R 伺服器時，R 互動視窗為何顯示「找不到 404 」？**
+**問：在連接到 R 伺服器時，R 互動視窗為何會說「找不到404」？**
 
 此錯誤可能是因為遺漏 Visual C++ 可轉散發程式庫。 檢查 R 互動視窗看看是否有關於遺漏文件庫的訊息 (DLL)。 然後檢查是否安裝 VS 2015 可轉散發套件以及已安裝 R。
 
-**問：我無法從 R 互動視窗存取網際網路/資源，該怎麼做？**
+**問：我無法從 R 互動視窗存取網際網路/資源，我該怎麼做？**
 
 確定 `Microsoft.R.Host.Broker` 和 `Microsoft.R.Host` 的防火牆規則允許通訊埠 5444 的傳出存取。 套用變更之後，重新啟動電腦。
 
-**問：我嘗試過上述所有方法，但都沒有用。接下來該怎麼辦？**
+**問：我已嘗試過所有這些解決方案，而且仍然無法正常執行。現在怎麼辦？**
 
-在 *C:\Windows\ServiceProfiles\NetworkService\AppData\Local\Temp* 中的記錄檔內尋找。此資料夾包含每個已執行之 R 訊息代理程式服務執行個體的個別記錄檔。 只要服務重新啟動，就會建立新的記錄檔。 請檢查最新記錄檔中是否有發生問題的線索。
+查看*C:\Windows\ServiceProfiles\NetworkService\AppData\Local\Temp*中的記錄檔。此資料夾包含每個執行中 R Broker 服務實例的個別記錄檔。 只要服務重新啟動，就會建立新的記錄檔。 請檢查最新記錄檔中是否有發生問題的線索。

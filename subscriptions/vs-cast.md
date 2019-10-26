@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/30/2019
 ms.topic: conceptual
 description: 了解所選 Visual Studio 訂用帳戶中所含的 CAST Highlight 權益
-ms.openlocfilehash: 50d892c5da4d39ebd2b379a2b16b8c9ca69d061d
-ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
-ms.translationtype: HT
+ms.openlocfilehash: c55891b9aacb81c5169a9082f7e1fd1d922eda92
+ms.sourcegitcommit: bcdab788085bd9931d73883fe70cd5831317dca2
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68681195"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72816432"
 ---
 # <a name="the-cast-highlight-benefit-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶中的 CAST Highlight 權益
 在移轉至雲端時，開發人員需要掌握其軟體的重要見解。 使用 CAST Highlight 時，Visual Studio Enterprise 訂閱者可以快速掃描應用程式原始程式碼，以識別應用程式移轉至 Azure 的雲端整備程度，並監視應用程式移轉期間和移轉之後的進度。
@@ -21,14 +21,14 @@ Visual Studio Enterprise 訂閱者可以取得免費一個月的 CAST Highlight 
 ## <a name="activation-steps"></a>啟用步驟
 1. 登入 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)。
 
-2. 在 [工具] 類別中，尋找 CAST Highlight 權益磚，然後按一下 [取得程式碼]  。
+2. 在 [工具] 類別中，尋找 CAST Highlight 權益磚，然後按一下 [取得程式碼]。
 
    > [!div class="mx-imgBorder"]
    > ![CAST Highlight 權益磚](_img/vs-cast-highlight/vs-cast-highlight-tile.png)
 
-0. 您會看到一則訊息，告知您已順利擷取程式碼。  按一下 [啟動]  ，隨即將您重新導向至 CAST Highlight 頁面；您可以在其中繼續啟用程序  (如果您未選擇立即啟用，可以隨時返回在訂用帳戶入口網站中的 CAST Highlight 磚。  [取得程式碼] 連結會變更為 [啟用]，按一下即可繼續啟用程序)。
+0. 您會看到一則訊息，告知您已順利擷取程式碼。  按一下 [啟動]，隨即將您重新導向至 CAST Highlight 頁面；您可以在其中繼續啟用程序  (如果您未選擇立即啟用，可以隨時返回在訂用帳戶入口網站中的 CAST Highlight 磚。  [取得程式碼] 連結會變更為 [啟用]，按一下即可繼續啟用程序)。
 
-0. 隨即將您重新導向至 CAST Highlight 頁面；您可以在其中瀏覽訂用帳戶的功能。  當您準備好建立帳戶時，只需在 Web 表單中提供您的連絡資訊，然後按一下 [提交]  。
+0. 隨即將您重新導向至 CAST Highlight 頁面；您可以在其中瀏覽訂用帳戶的功能。  當您準備好建立帳戶時，只需在 Web 表單中提供您的連絡資訊，然後按一下 [提交]。
 
     > [!div class="mx-imgBorder"]
     > ![CAST Highlight 登陸頁面](_img/vs-cast-highlight/vs-cast-highlight-landing.png)
@@ -44,22 +44,22 @@ Visual Studio Enterprise 訂閱者可以取得免費一個月的 CAST Highlight 
 
    > *感謝您要求啟用 CAST Highlight 的 30 天存取權 - 這是 Microsoft Visual Studio Enterprise 客戶的專屬優惠！*
    >
-   > *我們目前正在檢閱您對啟用和存取 CAST Highlight 的要求。您將在 48 小時內得到回覆。*
+   > *我們目前正在檢查您的啟用和存取轉型醒目提示的要求。您會在48小時內收到我的回復。*
    >
    > *敬祝商祺，* 
    > *Greg*
 
 要求核准之後，您會收到第二封電子郵件，其中確認已成功建立您的帳戶，並要求您按一下啟用連結以完成啟用程序。
 
-   > *我們已成功驗證您對 CAST Highlight 的存取要求，並已生效。歡迎加入！*
+   > *我們已成功驗證並驗證您的要求，以存取 CAST 醒目提示。歡迎使用啟程吧！*
    >
-   > *您還需要進行最後一個步驟，才能完成啟用。您會收到一封來自 noreply@casthighlight.com 的電子郵件，其中包含啟用連結。如果您沒有看到電子郵件，請檢查垃圾郵件匣。*
+   > *您的最後一個步驟是完成啟用。您會從 noreply@casthighlight.com 收到包含啟用連結的電子郵件。如果您沒有看到電子郵件，請檢查您的垃圾郵件箱。*
    >
    > *請按一下電子郵件中提供的啟用連結，並完成啟用程序。*
    >
-   > *一旦啟用後，您即可享有 30 天的 CAST Highlight 平台存取權，並可上架最多 5 個應用程式。請注意，這是僅提供給 Microsoft Visual Studio Enterprise 客戶的專屬優惠。*
+   > *啟用後，您將有30天的轉型反白顯示平臺存取權，且最多可以上架5個應用程式。請注意，這是僅供 Microsoft Visual Studio Enterprise 客戶使用的專屬供應專案。*
    >
-   > *我們會與您保持連絡，以確保一切順利進行。在此同時，下列一些實用內容可讓您快速上手：*
+   > *我會進行觸控，確保所有專案都能順暢地移動。在此同時，這裡有一些實用的內容可説明您開始使用：*
    >
    > - [CAST Highlight - CloudReadiness 示範](https://www.youtube.com/watch?v=wFUpAzn1Iu8&feature=youtu.be)
    > - [快速入門指南 (PDF)](https://casthighlight.com/Getting-Started-Guide.pdf)
@@ -82,7 +82,7 @@ Visual Studio Enterprise 訂閱者可以取得免費一個月的 CAST Highlight 
 | Visual Studio Enterprise (Standard)  | NFR<sup>1</sup> |無法使用  | N/A |
 | Visual Studio Enterprise、Visual Studio Professional (每月雲端) | Azure | 無法使用 | N/A |
 
-<sup>1</sup>  *包含：禁止轉售 (NFR)、FTE、最有價值專家 (MVP)、區域經理 (RD)、Microsoft 合作夥伴網路 (MPN)、Visual Studio 產業夥伴 (VSIP)、Microsoft 合格訓練人員、BizSpark、Imagine*
+<sup>1</sup>  *包括：禁止轉售（NFR）、FTE、最有價值專家（MVP）、區域主管（RD）、Microsoft 合作夥伴網路（MPN）、Visual Studio 產業夥伴（VSIP）、Microsoft 認證訓練人員、BizSpark、想像*
 
 > [!NOTE]
 > Microsoft 不再於雲端訂用帳戶中提供 Visual Studio Professional 年度訂用帳戶和 Visual Studio Enterprise 年度訂用帳戶。 現有的客戶體驗，以及更新、增加、減少或取消其訂用帳戶的能力將不會改變。 我們鼓勵新的客戶移至 [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) 來探索 Visual Studio 的不同購買選項。
@@ -98,6 +98,6 @@ Visual Studio Enterprise 訂閱者可以取得免費一個月的 CAST Highlight 
 - 是否有關於 Visual Studio IDE、Azure DevOps Services 或其他 Visual Studio 產品或服務的問題？  前往 [Visual Studio 支援](https://visualstudio.microsoft.com/support/)
 
 ## <a name="next-steps"></a>後續步驟
-如果您尚未啟用訂用帳戶隨附的 Azure 權益，請瀏覽 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)，並按一下 [工具] 類別中的 Azure 磚，以設定 Azure 訂用帳戶並兌換 Azure 點數。
+如果您尚未啟用訂用帳戶隨附的 Azure 權益，請造訪[https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) ，然後按一下 [工具] 類別中的 [azure] 磚，以設定您的 azure 訂用帳戶，並兌換您的 azure DevTest 個別信用額度。
 
 此外，別忘了參考 Greg 在電子郵件中提到的示範、使用者指南和教學課程影片。

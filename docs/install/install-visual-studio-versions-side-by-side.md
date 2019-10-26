@@ -11,12 +11,12 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 123f01b2e4545545a380f5a37adcdaf883bc9e91
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: b7fb1e057ffd9f3824fa1fe49e353fd54694da91
+ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62974718"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72888679"
 ---
 # <a name="install-visual-studio-versions-side-by-side"></a>並存安裝 Visual Studio 版本
 
@@ -44,13 +44,13 @@ ms.locfileid: "62974718"
 
 * 如果在已經安裝多個 Visual Studio 版本的電腦上將其中一個版本解除安裝，則會移除所有版本的 Visual Studio 檔案關聯。
 
-* Visual Studio 不會自動升級擴充功能，因為並非所有擴充功能都相容。 您必須從 [Visual Studio Marketplace](http://go.microsoft.com/fwlink/?LinkId=178891) 或軟體發行者重新安裝延伸模組。
+* Visual Studio 不會自動升級擴充功能，因為並非所有擴充功能都相容。 您必須從 [Visual Studio Marketplace](https://marketplace.visualstudio.com/) 或軟體發行者重新安裝延伸模組。
 
 ## <a name="net-framework-versions-and-side-by-side-installations"></a>.NET Framework 的版本和並存安裝
 
-Visual Basic、Visual C# 或 Visual F# 專案中 [專案設計工具]  使用 [目標 Framework]  選項，指定專案的目標 .NET Framework 版本。 對於 C++ 專案，您可以手動修改 .vcxproj 檔案來變更目標 Framework。 如需詳細資訊，請參閱 [.NET Framework 的版本相容性](/dotnet/framework/migration-guide/version-compatibility)頁面。
+Visual Basic、Visual C# 或 Visual F# 專案中 [專案設計工具] 使用 [目標 Framework] 選項，指定專案的目標 .NET Framework 版本。 對於 C++ 專案，您可以手動修改 .vcxproj 檔案來變更目標 Framework。 如需詳細資訊，請參閱 [.NET Framework 的版本相容性](/dotnet/framework/migration-guide/version-compatibility)頁面。
 
-當您建立專案時，您可以在 [新增專案]  對話方塊的 [.NET Framework]  清單中指定專案的目標 .NET Framework 版本。
+當您建立專案時，您可以在 [新增專案] 對話方塊的 [.NET Framework] 清單中指定專案的目標 .NET Framework 版本。
 
 如需語言特定的資訊，請參閱下表中適當的主題。
 
@@ -61,11 +61,11 @@ Visual Basic、Visual C# 或 Visual F# 專案中 [專案設計工具]  使用 [�
 | Visual Basic | [專案設計工具、應用程式頁面 (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md?view=vs-2017) |
 | Visual C# | [專案設計工具，應用程式頁面 (C#)](../ide/reference/application-page-project-designer-csharp.md?view=vs-2017) |
 | Visual F# | [在 Visual Studio 中使用 Visual F# 進行開發](../ide/fsharp-visual-studio.md?view=vs-2017) |
-|C++ | [如何：修改目標 Framework 和平台工具組](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset/) |
+|C++ | [如何：修改目標 framework 和平臺工具組](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset/) |
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 * [安裝 Visual Studio](install-visual-studio.md?view=vs-2017)
 * [移植、移轉及升級 Visual Studio 專案](../porting/port-migrate-and-upgrade-visual-studio-projects.md?view=vs-2017)
@@ -80,11 +80,11 @@ Visual Basic、Visual C# 或 Visual F# 專案中 [專案設計工具]  使用 [�
 | Visual Basic | [專案設計工具、應用程式頁面 (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md) |
 | Visual C# | [專案設計工具，應用程式頁面 (C#)](../ide/reference/application-page-project-designer-csharp.md) |
 | Visual F# | [在 Visual Studio 中使用 Visual F# 進行開發](../ide/fsharp-visual-studio.md) |
-| C++ | [如何：修改目標 Framework 和平台工具組](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset/) |
+| C++ | [如何：修改目標 framework 和平臺工具組](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset/) |
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 * [安裝 Visual Studio](install-visual-studio.md)
 * [移植、移轉及升級 Visual Studio 專案](../porting/port-migrate-and-upgrade-visual-studio-projects.md)

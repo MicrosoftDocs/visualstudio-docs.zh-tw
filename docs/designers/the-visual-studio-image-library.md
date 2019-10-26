@@ -16,18 +16,18 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fd6cb64c3dad56c291b229dfee6cc2816e574b69
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a0fc3719f57e91ddd602bdb6eeb382bf5885a81a
+ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72634831"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72888421"
 ---
 # <a name="the-visual-studio-image-library"></a>Visual Studio 影像庫
 
 Visual Studio 映像庫包含出現在 Microsoft Visual Studio、Microsoft Windows、Office system 及其他 Microsoft 軟體中的應用程式映像。 這個包含超過 1,000 個映像的集合可以用來建立外觀與 Microsoft 軟體一致的應用程式。
 
-[下載 Visual Studio 映像庫](http://go.microsoft.com/fwlink/p/?LinkId=275090)
+[下載 Visual Studio 映像庫](http://www.microsoft.com/download/details.aspx?id=35825)
 
 映像庫分為五類：通用項目、動作、註釋、圖示和物件。 讀我檔案是以適用於通用項目和圖示類型的 PDF 格式加入的。 其中包含有關如何在您的應用程式中正確使用這些映像的資訊。
 

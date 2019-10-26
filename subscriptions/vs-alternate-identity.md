@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/19/2019
 ms.topic: conceptual
 description: 如何新增 Visual Studio 訂用帳戶的替代身分識別，以用於 Azure DevOps 和 Azure
-ms.openlocfilehash: 5a496af29e520b72e24348a68692efc582fff600
-ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
-ms.translationtype: HT
+ms.openlocfilehash: e19774f2314280b2e5a995a7d83336f1403682a4
+ms.sourcegitcommit: bcdab788085bd9931d73883fe70cd5831317dca2
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68681223"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72816553"
 ---
 # <a name="identities-for-visual-studio-subscribers"></a>Visual Studio 訂閱者身分識別
 當您啟用 Visual Studio 訂用帳戶時，我們會連結您在 Visual Studio 訂用帳戶啟用期間所使用的身分識別 (或登入)。 這樣，我們就可以在 [Visual Studio 訂閱者入口網站](https://my.visualstudio.com?wt.mc_id=o~msft~docs)、Azure DevOps 與 Azure 中辨識您。
@@ -19,7 +19,7 @@ ms.locfileid: "68681223"
 在 Azure DevOps 中，我們會在您每次登入時檢查您的 Visual Studio 訂用帳戶狀態，並自動授與您所屬每個組織的功能。
 因為這些功能是隨附於訂閱者的權益，所以使用連結至 Visual Studio 訂用帳戶的身分識別時，可以免費將您新增為任何 Azure DevOps 組織的成員。
 
-在 Azure 中，當您啟用您訂閱者權益的[每月 Azure 點數](https://azure.microsoft.com/pricing/member-offers/credit-for-visual-studio-subscribers/)時，我們會檢查您的 Visual Studio 訂用帳戶狀態。
+在 Azure 中，當您啟用訂閱者權益的[每月 Azure DevTest 個人點數](https://azure.microsoft.com/pricing/member-offers/credit-for-visual-studio-subscribers/)時，我們會檢查您的 Visual Studio 訂用帳戶狀態。
 
 在 [Visual Studio 訂閱者入口網站](https://my.visualstudio.com?wt.mc_id=o~msft~docs)中，您可以新增**替代身分識別** -- 除了啟用期間所使用的身分識別之外。 如果您使用 Microsoft 帳戶來啟用您的訂用帳戶，我們可讓您新增替代身分識別。 這樣您也可以新增公司或學校帳戶 (登入 Visual Studio、Office 365 或您公司或學校網路時所用的帳戶)，讓您使用個人帳戶和公司或學校帳戶來存取 Azure DevOps。
 
@@ -32,8 +32,8 @@ ms.locfileid: "68681223"
 
 ### <a name="add-the-alternate-account"></a>新增替代帳戶
 1. 使用 Microsoft 帳戶登入 Visual Studio 訂閱者入口網站 (https://my.visualstudio.com) 。
-2. 按一下 [訂閱]  索引標籤。
-3. 選擇 [Add alternate account (新增其他帳戶)]  。
+2. 按一下 [訂閱] 索引標籤。
+3. 選擇 [Add alternate account (新增其他帳戶)]。
 4. 新增公司或學校帳戶。
     > [!div class="mx-imgBorder"]
     > ![新增公司或學校帳戶](_img/vs-alternate-identity/enter-alternate-account-my-visual-studio-com-portal.png)
@@ -44,7 +44,7 @@ ms.locfileid: "68681223"
 
 您的替代帳戶會新增至 Visual Studio 訂用帳戶，讓兩個身分識別都利用需要您使用替代帳戶 (IDE、Azure DevOps 與 Azure) 登入的訂閱權益。
 
-## <a name="faq"></a>常見問題集
+## <a name="faq"></a>常見問題 (FAQ)
 
 ### <a name="q--why-doesnt-azure-devops-recognize-me-as-a-visual-studio-subscriber"></a>問：為什麼 Azure DevOps 無法辦識我是 Visual Studio 訂閱者？
 
