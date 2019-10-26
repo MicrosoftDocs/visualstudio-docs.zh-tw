@@ -15,12 +15,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 56c49f0d3cef6dbb054c8d7d97b4e875b83cb518
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 68ffb040e7d642fc2bf285f0510850edc343a5ce
+ms.sourcegitcommit: bde55773485c9bca50a760ac9e4c919e0a208a51
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648810"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72924539"
 ---
 # <a name="bind-wpf-controls-to-a-dataset"></a>將 WPF 控制項繫結至資料集
 
@@ -50,7 +50,7 @@ ms.locfileid: "72648810"
 
 - 資料集和 TableAdapter。 如需詳細資訊，請參閱 Visual Studio 和[tableadapter](../data-tools/create-and-configure-tableadapters.md)[中的資料集工具](../data-tools/dataset-tools-in-visual-studio.md)。
 
-- WPF 資料繫結。 如需詳細資訊，請參閱 [資料繫結概觀](/dotnet/framework/wpf/data/data-binding-overview)。
+- WPF 資料繫結。 如需詳細資訊，請參閱 [資料繫結概觀](/dotnet/desktop-wpf/data/data-binding-overview)。
 
 ## <a name="create-the-project"></a>建立專案
 
@@ -110,7 +110,7 @@ ms.locfileid: "72648810"
 
 8. 按一下 [ **完成**]。
 
-   Visual Studio 會將新的 `AdventureWorksLTDataSet.xsd` 檔案加入至專案，並將對應的**adventureworksltdataset.xsd**專案加入至 [**資料來源**] 視窗。 @No__t_0 檔案會定義名為 `AdventureWorksLTDataSet` 的具類型資料集和名為 `ProductTableAdapter` 的 TableAdapter。 在此逐步解說稍後的內容中，您會使用 `ProductTableAdapter` 將資料填入資料集，並將變更儲存回資料庫。
+   Visual Studio 會將新的 `AdventureWorksLTDataSet.xsd` 檔案加入至專案，並將對應的**adventureworksltdataset.xsd**專案加入至 [**資料來源**] 視窗。 `AdventureWorksLTDataSet.xsd` 檔案會定義名為 `AdventureWorksLTDataSet` 的具類型資料集和名為 `ProductTableAdapter`的 TableAdapter。 在此逐步解說稍後的內容中，您會使用 `ProductTableAdapter` 將資料填入資料集，並將變更儲存回資料庫。
 
 9. 建置專案。
 
@@ -262,4 +262,4 @@ ms.locfileid: "72648810"
 
 - [將 WPF 控制項繫結至 Visual Studio 中的資料](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)
 - [Visual Studio 中的資料集工具](../data-tools/dataset-tools-in-visual-studio.md)
-- [資料繫結概觀](/dotnet/framework/wpf/data/data-binding-overview)
+- [資料繫結概觀](/dotnet/desktop-wpf/data/data-binding-overview)

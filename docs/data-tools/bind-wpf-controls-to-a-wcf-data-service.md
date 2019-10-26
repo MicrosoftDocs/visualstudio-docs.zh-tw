@@ -15,12 +15,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 15a34fdc4486a013999a6b53e34117008396c955
-ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
+ms.openlocfilehash: ecc08be8c865cefa9b440d9af61cf9d019865ea0
+ms.sourcegitcommit: bde55773485c9bca50a760ac9e4c919e0a208a51
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72807007"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72924558"
 ---
 # <a name="bind-wpf-controls-to-a-wcf-data-service"></a>將 WPF 控制項繫結至 WCF 資料服務
 
@@ -56,7 +56,7 @@ ms.locfileid: "72807007"
 
 - 實體資料模型及 ADO.NET Entity Framework。 如需詳細資訊，請參閱[Entity Framework 總覽](/dotnet/framework/data/adonet/ef/overview)。
 
-- WPF 資料繫結。 如需詳細資訊，請參閱[資料繫結概觀](/dotnet/framework/wpf/data/data-binding-overview)。
+- WPF 資料繫結。 如需詳細資訊，請參閱[資料繫結概觀](/dotnet/desktop-wpf/data/data-binding-overview)。
 
 ## <a name="create-the-service-project"></a>建立服務專案
 
@@ -301,4 +301,4 @@ ms.locfileid: "72807007"
 - [將 WPF 控制項繫結至資料集](../data-tools/bind-wpf-controls-to-a-dataset.md)
 - [WCF 總覽（.NET Framework）](/dotnet/framework/data/wcf/wcf-data-services-overview)
 - [Entity Framework 總覽（.NET Framework）](/dotnet/framework/data/adonet/ef/overview)
-- [資料系結總覽（.NET Framework）](/dotnet/framework/wpf/data/data-binding-overview)
+- [資料系結總覽（.NET Framework）](/dotnet/desktop-wpf/data/data-binding-overview)
