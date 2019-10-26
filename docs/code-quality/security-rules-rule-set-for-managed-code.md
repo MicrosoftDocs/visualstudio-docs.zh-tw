@@ -8,12 +8,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: bf3a1437c765a4e0e777534d64505ccb69c7ed94
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ea23186ff03ccdb0ff7678380eadc866b63654f2
+ms.sourcegitcommit: 4f82de3fb0cfae226aef1abb40c47e63d2036a5c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649099"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72918918"
 ---
 # <a name="security-rules-rule-set-for-managed-code"></a>適用於 Managed 程式碼的安全性規則規則集
 
@@ -86,3 +86,4 @@ ms.locfileid: "72649099"
 |[CA3010](../code-quality/ca3010.md)|檢閱程式碼是否有 XAML 插入式攻擊弱點|
 |[CA3011](../code-quality/ca3011.md)|檢閱程式碼是否有 DLL 插入式攻擊弱點|
 |[CA3012](../code-quality/ca3012.md)|檢閱程式碼是否有 regex 插入式攻擊弱點|
+|[CA5403](../code-quality/ca5403.md)|不要硬式編碼憑證|

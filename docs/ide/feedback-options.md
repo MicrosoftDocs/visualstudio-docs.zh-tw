@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
-ms.openlocfilehash: 79b369fdc4bed2489b997e59215264ebaca03c74
-ms.sourcegitcommit: 3fe6bed9ef8fb1478106645f655c7472009ae43a
-ms.translationtype: HT
+ms.openlocfilehash: 34fcf81b7c7314716144bc77202d7b98525a8e4f
+ms.sourcegitcommit: 4f82de3fb0cfae226aef1abb40c47e63d2036a5c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "64556758"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72919079"
 ---
 # <a name="visual-studio-feedback-options"></a>Visual Studio 意見反應選項
 
@@ -75,7 +75,7 @@ Visual studio 發行前版本有 [為此產品評分] 功能表項目，產品�
 您有兩種方式可以協助我們改善文件：
 
 * 選擇頁面底部的 [此頁面有所助益嗎？] 意見反應按鈕。 您可以在所有文件頁面上找到這個按鈕。
-* 使用您的 GitHub 帳戶，在 [docs.microsoft.com](https://docs.microsoft.com/visualstudio/) 上針對任何 Visual Studio 頁面提供意見反應。 若要執行此操作，請選擇 [傳送意見反應] > [此頁面] 按鈕，該按鈕同樣位於頁面的底部。
+* 使用您的 GitHub 帳戶，在 [docs.microsoft.com](/visualstudio/) 上針對任何 Visual Studio 頁面提供意見反應。 若要執行此操作，請選擇 [傳送意見反應] > [此頁面] 按鈕，該按鈕同樣位於頁面的底部。
 
 ## <a name="contact-microsoft-support"></a>連絡 Microsoft 支援
 
@@ -101,7 +101,7 @@ Microsoft 支援服務可能因當時的價格、條款和條件而有所變更�
 
 您也可以在 [開發人員程式碼範例](https://code.msdn.microsoft.com/)網站上檢視其他開發人員的程式碼和分享您自己的範例。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 * [針對安裝及升級問題進行疑難排解](../install/troubleshooting-installation-issues.md)
 * [Developer Community 資料隱私權](developer-community-privacy.md)

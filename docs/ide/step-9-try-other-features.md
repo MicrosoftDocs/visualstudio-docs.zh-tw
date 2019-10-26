@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e5af132efde0c1a49e5404fa602363aab0554e6f
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.openlocfilehash: 07c0a3e24ac089bf29501dfd4e101baef73318fb
+ms.sourcegitcommit: 4f82de3fb0cfae226aef1abb40c47e63d2036a5c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72572473"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72919132"
 ---
 # <a name="step-9-try-other-features"></a>步驟 9：嘗試其他功能
 若要了解詳細資訊，請試著變更圖示和色彩、加入遊戲計時器，以及加入音效。 若要讓遊戲更具挑戰性，請試著使戲局變大並調整計時器。
@@ -37,7 +37,7 @@ ms.locfileid: "72572473"
 - 加入當玩家找到配對項目時的音效、當玩家發現不相符的兩個圖示時的另一種音效，以及當程式再次隱藏圖示時的第三種音效。
 
     > [!TIP]
-    > 若要播放音效，您可以使用 <xref:System.Media> 命名空間。 如需詳細資訊，請參閱 [在 Windows Forms 應用程式中播放音效 (C#)](http://youtu.be/qOh4ooHg1UU) \(英文\) 或 [如何在 Visual Basic 中播放音訊](http://youtu.be/-4oPDeQrtMs) \(英文\)。
+    > 若要播放音效，您可以使用 <xref:System.Media> 命名空間。 如需詳細資訊，請參閱 [在 Windows Forms 應用程式中播放音效 (C#)](https://www.youtube.com/watch?v=qOh4ooHg1UU&feature=youtu.be) \(英文\) 或 [如何在 Visual Basic 中播放音訊](https://www.youtube.com/watch?v=-4oPDeQrtMs&feature=youtu.be) \(英文\)。
 
 - 使戲局變大，可讓遊戲變得更困難。
 
