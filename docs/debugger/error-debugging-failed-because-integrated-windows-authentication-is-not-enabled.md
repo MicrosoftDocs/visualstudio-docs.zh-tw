@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ca4b4ee5bb254f952fb6eb02e255320a337f657c
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: c508951a3b54a7f84f142c5029b5305c8ef579ea
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72737805"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911540"
 ---
 # <a name="error-debugging-failed-because-integrated-windows-authentication-is-not-enabled"></a>錯誤：偵錯失敗，因為整合式 Windows 驗證沒有啟用
 因為驗證錯誤，所以無法對要求偵錯之使用者進行驗證。 這種情形可能會在您嘗試逐步執行 Web 應用程式或 XML Web Service 時發生。 造成這個錯誤的原因之一是未啟用整合式 Windows 驗證。 若要啟用該驗證，請遵循「若要啟用整合式 Windows 驗證」內所述的步驟進行。
@@ -115,5 +115,5 @@ ms.locfileid: "72737805"
 
 ## <a name="see-also"></a>請參閱
 - [偵錯 Web 應用程式：錯誤和疑難排解](../debugger/debugging-web-applications-errors-and-troubleshooting.md)
-- [Microsoft Digest Authentication](http://go.microsoft.com/fwlink/?LinkId=77938) (Microsoft 摘要式驗證)
+- [Microsoft Digest Authentication](/windows/win32/secauthn/microsoft-digest-authentication) (Microsoft 摘要式驗證)
 - [在 Windows Vista 上使用 IIS 7.0 和 Visual Studio 執行 Web 應用程式](https://msdn.microsoft.com/Library/262a82ac-dd0e-4096-86c6-fb463e88be66)

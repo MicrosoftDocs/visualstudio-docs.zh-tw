@@ -28,12 +28,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9e2e6d69e4c621d6be81a00a61482b71199bc0fc
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: f7ac27b46252582b3982082a2a9a90a09223574f
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72745748"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911611"
 ---
 # <a name="cc-assertions"></a>C/C++ 判斷提示
 判斷提示語句會指定您在程式中的某個時間點預期為 true 的條件。 如果該條件不是 true，判斷提示就會失敗，程式的執行會中斷，而且 [判斷提示[失敗] 對話方塊](../debugger/assertion-failed-dialog-box.md)隨即出現。
@@ -111,7 +111,7 @@ CRTDBG.H 裡。H 標頭檔定義判斷提示檢查的[_ASSERT 和 _ASSERTE 宏](
 | `_ASSERT` | 如果指定的運算式評估為 FALSE，則為 `_ASSERT`的檔案名和行號。 |
 | `_ASSERTE` | 與 `_ASSERT`相同，再加上所判斷運算式的字串表示。 |
 
-`_ASSERTE` 的功能更強大，因為它會報告已關閉為 FALSE 的判斷提示運算式。 這可能足以識別問題，而不需要參考原始程式碼。 不過，您應用程式的 Debug 版本將會包含使用 `_ASSERTE` 判斷提示之每個運算式的字串常數。 如果您使用許多 `_ASSERTE` 宏，這些字串運算式會佔用大量的記憶體。 如果這種情況證明有問題，請使用 `_ASSERT` 來節省記憶體。
+`_ASSERTE` 的功能更強大，因為它會報告已關閉為 FALSE 的判斷提示運算式。 這可能足以識別問題，而不需要參考原始程式碼。 不過，您應用程式的 Debug 版本將會包含使用 `_ASSERTE`判斷提示之每個運算式的字串常數。 如果您使用許多 `_ASSERTE` 宏，這些字串運算式會佔用大量的記憶體。 如果這種情況證明有問題，請使用 `_ASSERT` 來節省記憶體。
 
 定義 `_DEBUG` 時，`_ASSERTE` 巨集定義如下：
 
@@ -124,7 +124,7 @@ CRTDBG.H 裡。H 標頭檔定義判斷提示檢查的[_ASSERT 和 _ASSERTE 宏](
     } while (0)
 ```
 
-如果判斷提示運算式評估為 FALSE，則會呼叫[_CrtDbgReport](/cpp/c-runtime-library/reference/crtdbgreport-crtdbgreportw)來報告判斷提示失敗（預設使用訊息對話方塊）。 如果您在 [訊息] 對話方塊中選擇 [**重試**]，`_CrtDbgReport` 會傳回1，而 `_CrtDbgBreak` 會透過 `DebugBreak` 呼叫偵錯工具。
+如果判斷提示運算式評估為 FALSE，則會呼叫[_CrtDbgReport](/cpp/c-runtime-library/reference/crtdbgreport-crtdbgreportw)來報告判斷提示失敗（預設使用訊息對話方塊）。 如果您在 [訊息] 對話方塊中選擇 [**重試**]，`_CrtDbgReport` 會傳回1，而 `_CrtDbgBreak` 會透過 `DebugBreak`呼叫偵錯工具。
 
 ### <a name="checking-for-heap-corruption"></a>檢查堆積損毀
 下列範例會使用[_CrtCheckMemory](/cpp/c-runtime-library/reference/crtcheckmemory)來檢查堆積是否損毀：
@@ -156,7 +156,7 @@ _ASSERTE(_CrtIsMemoryBlock (myData, size, &requestNumber, &filename, &linenumber
 [本主題內容](#BKMK_In_this_topic)
 
 ## <a name="BKMK_MFC_assertions"></a>MFC 判斷提示
-MFC 會定義判斷提示檢查的[ASSERT](https://msdn.microsoft.com/Library/1e70902d-d58c-4e7b-9f69-2aeb6cbe476c)宏。 它也會定義 `MFC ASSERT_VALID` 和 `CObject::AssertValid` 方法，以檢查 `CObject` 衍生物件的內部狀態。
+MFC 會定義判斷提示檢查的[ASSERT](https://msdn.microsoft.com/Library/1e70902d-d58c-4e7b-9f69-2aeb6cbe476c)宏。 它也會定義 `MFC ASSERT_VALID` 和 `CObject::AssertValid` 方法，以檢查 `CObject`衍生物件的內部狀態。
 
 如果 MFC `ASSERT` 宏的引數評估為零或 false，則宏會終止程式執行並警示使用者;否則，會繼續執行。
 
@@ -169,16 +169,16 @@ int x = SomeFunc(y);
 ASSERT(x >= 0);   //  Assertion fails if x is negative
 ```
 
-您可以使用 ASSERT 搭配[IsKindOf](https://docs.microsoft.com/cpp/mfc/reference/cobject-class#iskindof)函數來提供函數引數的類型檢查：
+您可以使用 ASSERT 搭配[IsKindOf](/cpp/mfc/reference/cobject-class#iskindof)函數來提供函數引數的類型檢查：
 
 ```cpp
 ASSERT( pObject1->IsKindOf( RUNTIME_CLASS( CPerson ) ) );
 ```
 
-@No__t_0 宏在發行版本中不會產生任何程式碼。 如果您需要評估發行版本中的運算式，請使用[VERIFY](https://msdn.microsoft.com/library/s8c29sw2.aspx#verify)宏而不是 ASSERT。
+`ASSERT` 宏在發行版本中不會產生任何程式碼。 如果您需要評估發行版本中的運算式，請使用[VERIFY](https://msdn.microsoft.com/library/s8c29sw2.aspx#verify)宏而不是 ASSERT。
 
 ### <a name="BKMK_MFC_ASSERT_VALID_and_CObject__AssertValid"></a>MFC ASSERT_VALID 和 CObject：： AssertValid
-[CObject：： AssertValid](https://docs.microsoft.com/cpp/mfc/reference/cobject-class#assertvalid)方法提供物件內部狀態的執行時間檢查。 雖然當您從 `CObject` 衍生類別時，不需要覆寫 `AssertValid`，但是您可以藉由執行此動作，讓類別更可靠。 `AssertValid` 應該在物件的所有成員變數上執行判斷提示，以確認它們包含有效的值。 例如，它應該檢查指標成員變數是否不是 Null。
+[CObject：： AssertValid](/cpp/mfc/reference/cobject-class#assertvalid)方法提供物件內部狀態的執行時間檢查。 雖然當您從 `CObject` 衍生類別時，不需要覆寫 `AssertValid`，但是您可以藉由執行此動作，讓類別更可靠。 `AssertValid` 應該在物件的所有成員變數上執行判斷提示，以確認它們包含有效的值。 例如，它應該檢查指標成員變數是否不是 Null。
 
 下列範例顯示如何宣告 `AssertValid` 函式：
 

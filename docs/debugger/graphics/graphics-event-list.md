@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9fe890d5a2c88ea9d4d35a6bd01f6012d97e6ce0
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: d5c4e8f39ff77779985536e53d98ddc2785b109b
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72735553"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911495"
 ---
 # <a name="graphics-event-list"></a>圖形事件清單
 使用 Visual Studio 圖形分析器中的 [圖形事件清單]，來探索在轉譯遊戲或應用程式的畫面格時所記錄的 Direct3D 事件。
@@ -88,7 +88,7 @@ ms.locfileid: "72735553"
 ### <a name="user-defined-events-in-direct3d-11-and-earlier"></a>Direct3D 11 和更早版本中的使用者定義事件
  若要在 Direct3D 11 或更早版本中建立群組和標記，請使用本節所述的 API。 下表總結您可用於不同 Direct3D 11 版本和舊版 Direct3D 的 API。
 
-|API 描述|[ID3D11DeviceContext2](/windows/desktop/api/d3d11_2/nn-d3d11_2-id3d11devicecontext2) (Direct3D 11.2)|[ID3DUserDefinedAnnotation](http://go.microsoft.com/fwlink/p/?LinkID=250967) (Direct3D 11.1)|D3DPerf_ API 系列 (Direct3D 11.0 和更早版本)|
+|API 描述|[ID3D11DeviceContext2](/windows/desktop/api/d3d11_2/nn-d3d11_2-id3d11devicecontext2) (Direct3D 11.2)|[ID3DUserDefinedAnnotation](/windows/win32/api/d3d11_1/nn-d3d11_1-id3duserdefinedannotation) (Direct3D 11.1)|D3DPerf_ API 系列 (Direct3D 11.0 和更早版本)|
 |---------------------| - | - | - |
 |開始事件群組|`BeginEventInt`|`BeginEvent`|`D3DPerf_BeginEvent`|
 |結束事件群組|`EndEventInt`|`EndEvent`|`D3DPerf_EndEvent`|
@@ -99,7 +99,7 @@ ms.locfileid: "72735553"
 <!-- VERSIONLESS -->
 <a name="resource-history"></a>
 ## <a name="resource-history"></a>資源歷程記錄
-Visual Studio 2017 和更新版本包含**資源歷程記錄**視窗。  選取 [**事件清單**] 視窗中專案旁邊的 [監看式] 圖示 ![watch 圖示 ](media/gfx_watch.png) 會顯示如下所示的 [**資源歷程記錄**] 視窗：
+Visual Studio 2017 和更新版本包含**資源歷程記錄**視窗。  選取 [監看式] 圖示 ![[監看式] 圖示](media/gfx_watch.png) [**事件清單**] 視窗中的專案旁，將會顯示如下所示的**資源歷程記錄**視窗：
 
 ![資源歷程記錄](media/gfx_diag_resource_history.png)
 
@@ -109,7 +109,7 @@ Visual Studio 2017 和更新版本包含**資源歷程記錄**視窗。  選取 
 |-----------| - |
 | **Type** | 顯示專案的類型，通常是*建立*、*讀取*和*寫入*。 |
 | **檢視** | 顯示該時間點的資源縮圖。  按兩下縮圖，在該時間開啟資源的詳細資料檢視。 |
-| **Event** | 顯示產生事件所發生的方法呼叫。  您可以選取 [監看式] 圖示，![watch 圖示 ](media/gfx_watch.png) 在適當的行上，以查看個別專案的任何其他記錄。  此外，您可以選取任何以藍色文字繪製的專案（如上方螢幕擷取畫面中的 `m_commandList`），以取得更多詳細資料。 |
+| **Event** | 顯示產生事件所發生的方法呼叫。  您可以選取 [監看式] 圖示，![監看式圖示](media/gfx_watch.png) 在適當的行，來查看個別專案的任何其他記錄。  此外，您可以選取任何以藍色文字繪製的專案（如上方螢幕擷取畫面中的 `m_commandList`），以取得更多詳細資料。 |
 
 <!-- /VERSIONLESS -->
 
