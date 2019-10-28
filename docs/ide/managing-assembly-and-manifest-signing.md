@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3add6e3e4f38b5ba73cd5154720d7b283189526e
-ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
-ms.translationtype: HT
+ms.openlocfilehash: 8cf721e9880ce7f0b7c3191f73f16366637f0704
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68461492"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748879"
 ---
 # <a name="manage-assembly-and-manifest-signing"></a>管理組件和資訊清單簽署
 
@@ -29,7 +29,7 @@ ms.locfileid: "68461492"
 
 如需在 Visual Basic 和 C# 專案中簽署組件的資訊，請參閱[建立和使用強式名稱的組件](/dotnet/framework/app-domains/create-and-use-strong-named-assemblies)。
 
-如需在 Visual C++ 專案中簽署組件的資訊，請參閱[強式名稱組件 (C++/CLI)](/cpp/dotnet/strong-name-assemblies-assembly-signing-cpp-cli)。
+如需在專案中C++簽署元件的詳細資訊，請參閱[強式名稱元件（C++/cli）](/cpp/dotnet/strong-name-assemblies-assembly-signing-cpp-cli)。
 
 > [!NOTE]
 > 強式名稱簽章無法保護組件免受反向工程的威脅。 若要防止反向工程，請參閱 [Dotfuscator Community](dotfuscator/index.md)。
@@ -58,7 +58,7 @@ ms.locfileid: "68461492"
 
 ## <a name="how-to-sign-an-assembly-in-visual-studio"></a>如何簽署 Visual Studio 中的組件
 
-使用 [專案屬性] 視窗的 [簽署]  索引標籤來簽署應用程式或元件 (以滑鼠右鍵按一下 [方案總管]  中的專案節點，然後選取 [屬性]  )。 選取 [簽署]  索引標籤，然後選取 [簽署組件]  核取方塊。
+使用 [專案屬性] 視窗的 [簽署] 索引標籤來簽署應用程式或元件 (以滑鼠右鍵按一下 [方案總管] 中的專案節點，然後選取 [屬性])。 選取 [簽署] 索引標籤，然後選取 [簽署組件] 核取方塊。
 
 指定金鑰檔。 如果您選擇建立新的金鑰檔，新的金鑰檔一律會使用 *.pfx* 格式建立。 您需要新檔案的名稱和密碼。
 
@@ -67,7 +67,7 @@ ms.locfileid: "68461492"
 
 您也可以指向已經建立的金錀。 如需建立金鑰的詳細資訊，請參閱[如何：建立公開/私密金鑰組](/dotnet/framework/app-domains/how-to-create-a-public-private-key-pair)。
 
-如果您只能存取公開金鑰，您可以使用延遲簽署，稍後再指派金鑰。 選取 [僅延遲簽署]  核取方塊以啟用延遲簽署。 延遲簽署的專案不會執行，且無法進行偵錯。 不過，您可以搭配使用 [Sn.exe 強式名稱工具](/dotnet/framework/tools/sn-exe-strong-name-tool)與 `-Vr` 選項，在開發期間略過驗證。
+如果您只能存取公開金鑰，您可以使用延遲簽署，稍後再指派金鑰。 選取 [僅延遲簽署] 核取方塊以啟用延遲簽署。 延遲簽署的專案不會執行，且無法進行偵錯。 不過，您可以搭配使用 [Sn.exe 強式名稱工具](/dotnet/framework/tools/sn-exe-strong-name-tool)與 `-Vr` 選項，在開發期間略過驗證。
 
 如需簽署資訊清單的資訊，請參閱[如何：重新簽署應用程式和部署資訊清單](../ide/how-to-sign-application-and-deployment-manifests.md)。
 

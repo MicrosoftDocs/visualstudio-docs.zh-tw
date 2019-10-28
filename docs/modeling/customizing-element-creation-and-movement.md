@@ -11,18 +11,18 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8ea58bb790cf7c9aaac554728643f6e164e06418
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 192bde210d7188e54576453dc04654e970df27f4
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654060"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747619"
 ---
 # <a name="customizing-element-creation-and-movement"></a>自訂項目的建立和移動
 
 您可以從 [工具箱] 或 [貼上] 或 [移動] 作業，允許專案拖曳至另一個元素。 您可以使用您指定的關聯性，將已移動的元素連結至目標元素。
 
-元素合併指示詞（EMD）會指定當一個模型專案*合併*至另一個模型專案時，會發生什麼事。 發生的情況如下：
+元素合併指示詞（EMD）會指定當一個模型專案*合併*至另一個模型專案時，會發生什麼事。 這會在以下情形發生：
 
 - 使用者將從 [工具箱] 拖曳到圖表或圖形上。
 
@@ -89,7 +89,7 @@ Merge 指示詞有兩種：
 
    1. 在 [ **DSL Explorer**] 中，展開 [**網域類別**]。 以滑鼠右鍵按一下 `ExampleElement`，然後按一下 [**加入新的元素合併**指示詞]。
 
-   2. 請確定 [ **DSL 詳細資料**] 視窗已開啟，讓您可以查看新 EMD 的詳細資料。 （功能表： **View**，**其他視窗**， **DSL Details**）。
+   2. 請確定 [ **DSL 詳細資料**] 視窗已開啟，讓您可以查看新 EMD 的詳細資料。 下拉式功能表**View**，**其他視窗**， **DSL 詳細資料**）。
 
 3. 在 [DSL 詳細資料] 視窗中設定 [**索引] 類別**，以定義哪些類別的專案可以合併到 `ExampleElement` 物件上。
 
@@ -109,7 +109,7 @@ Merge 指示詞有兩種：
 
       您可以使用路徑流覽工具來建立每一個路徑：
 
-      1. 在 [**建立路徑的連結] 底下的 [進程合併**] 底下，按一下 [ **\<add 路徑 >** ]。
+      1. 在 [**在路徑建立連結] 底下的 [進程合併**] 底下，按一下 [ **\<新增路徑 >** ]。
 
       2. 按一下清單專案右邊的下拉箭號。 樹狀檢視隨即出現。
 
@@ -151,7 +151,7 @@ Merge 指示詞有兩種：
 
 1. 使用 [**最小語言**解決方案] 範本建立 DSL。 開啟 DSL 定義圖。
 
-2. 在 [DSL Explorer] 中，展開 [**網域類別**]，`ExampleModel`，[**元素合併**] 指示詞。 選取名為 `ExampleElement` 的 [元素合併] 指示詞。
+2. 在 [DSL Explorer] 中，展開 [**網域類別**]，`ExampleModel`，[**元素合併**] 指示詞。 選取名為 `ExampleElement`的 [元素合併] 指示詞。
 
      此 EMD 會控制使用者如何在模型中建立新的 `ExampleElement` 物件，例如，從 [工具箱] 拖曳。
 
@@ -159,9 +159,9 @@ Merge 指示詞有兩種：
 
 4. 重建方案。 這會花費比平常更長的時間，因為產生的程式碼會從模型中更新。
 
-     將報告組建錯誤，類似于： "ElementMergeSample. ExampleElement 未包含 CanMergeExampleElement 的定義 ..."
+     將報告組建錯誤，如下所示："ElementMergeSample. ExampleElement 未包含 CanMergeExampleElement 的定義 ..."
 
-     您必須 `CanMergeExampleElement` 執行方法。
+     您必須 `CanMergeExampleElement`執行方法。
 
 5. 在**Dsl**專案中建立新的程式碼檔案。 使用下列程式碼取代其內容，並將命名空間變更為專案的命名空間。
 
@@ -190,7 +190,7 @@ Merge 指示詞有兩種：
     }
     ```
 
-    這個簡單的範例會限制可合併到父模型中的專案數目。 如需更有趣的條件，方法可以檢查接收物件的任何屬性和連結。 它也可以檢查合併元素的屬性，這些專案會在 <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype> 中執行。 如需 `ElementGroupPrototypes` 的詳細資訊，請參閱[自訂複製行為](../modeling/customizing-copy-behavior.md)。 如需如何撰寫可讀取模型之程式碼的詳細資訊，請參閱[在程式碼中流覽和更新模型](../modeling/navigating-and-updating-a-model-in-program-code.md)。
+    這個簡單的範例會限制可合併到父模型中的專案數目。 如需更有趣的條件，方法可以檢查接收物件的任何屬性和連結。 它也可以檢查合併元素的屬性，這些專案會在 <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype>中執行。 如需 `ElementGroupPrototypes`的詳細資訊，請參閱[自訂複製行為](../modeling/customizing-copy-behavior.md)。 如需如何撰寫可讀取模型之程式碼的詳細資訊，請參閱[在程式碼中流覽和更新模型](../modeling/navigating-and-updating-a-model-in-program-code.md)。
 
 6. 測試 DSL：
 
@@ -230,7 +230,7 @@ Merge 指示詞有兩種：
 
 5. 檢查**Dsl\Generated Files\DomainClasses.cs**的內容。 搜尋名為 `MergeRelate` 的方法，並檢查其內容。 這可協助您撰寫自己的版本。
 
-6. 在新的程式碼檔案中，撰寫接收類別的部分類別，並覆寫 `MergeRelate` 方法。 請記得呼叫基底方法。 例如:
+6. 在新的程式碼檔案中，撰寫接收類別的部分類別，並覆寫 `MergeRelate` 方法。 請記得呼叫基底方法。 例如：
 
     ```csharp
     partial class ExampleModel
@@ -258,9 +258,9 @@ Merge 指示詞有兩種：
 
 ### <a name="to-write-custom-merge-code"></a>若要撰寫自訂合併程式碼
 
-1. 在**Dsl\Generated Code\DomainClasses.cs**中，檢查名為 `MergeRelate` 的方法。 這些方法會建立新專案與現有模型之間的連結。
+1. 在**Dsl\Generated Code\DomainClasses.cs**中，檢查名為 `MergeRelate`的方法。 這些方法會建立新專案與現有模型之間的連結。
 
-    此外，請檢查名為 `MergeDisconnect` 的方法。 當專案被刪除時，這些方法會將元素從模型中取消連結。
+    此外，請檢查名為 `MergeDisconnect`的方法。 當專案被刪除時，這些方法會將元素從模型中取消連結。
 
 2. 在 [ **DSL Explorer**] 中，選取或建立您想要自訂的元素合併指示詞。 在 [ **DSL 詳細資料**] 視窗中，設定 [**使用自訂合併**]。
 
@@ -316,7 +316,7 @@ Merge 指示詞有兩種：
 
      您應該不會看到無法使用的指標，而且您應該能夠在現有的**輸入埠**上放置新的。 選取新的**輸入埠**，並將它拖曳至**元件**上的另一個點。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [巡覽及更新程式碼中的模型](../modeling/navigating-and-updating-a-model-in-program-code.md)
 - [自訂工具和工具箱](../modeling/customizing-tools-and-the-toolbox.md)
