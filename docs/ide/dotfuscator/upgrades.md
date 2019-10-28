@@ -24,12 +24,12 @@ ms.assetid: c7c60904-27f9-4f1f-b79b-ddf65041b810
 author: Joe-Sewell-PreEmptive
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 78a26da7734e4fa74a9b312b41786caca4b7cc67
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 555b23f33ee1e3541afc6181a9ec6c4ece833b81
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652815"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748882"
 ---
 # <a name="upgrade-dotfuscator-community"></a>升級 Dotfuscator Community
 
@@ -65,7 +65,7 @@ Dotfuscator Professional 是業界標準的[.Net 混淆][net-obfuscator]程式�
 如需 Dotfuscator Professional 的先進應用程式保護功能的詳細資訊，請造訪先占式解決方案的[Dotfuscator 總覽頁面][product-about]，並[將其與 Dotfuscator 社區進行比較][product-compare]。
 如有[完整支援的試用][eval]版，請 preemptive.com。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 [完整 Dotfuscator 社區使用者指南中的這篇文章][full]
 
