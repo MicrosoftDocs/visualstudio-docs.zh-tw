@@ -751,6 +751,8 @@
                   href: ca5397.md
                 - name: CA5398：避免以硬式編碼方式寫入 SslProtocols 值
                   href: ca5398.md
+                - name: 'CA5403:不要硬式編碼憑證'
+                  href: ca5403.md
             - name: 用法警告
               items:
                 - name: 總覽
