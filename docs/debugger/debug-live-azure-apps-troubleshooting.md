@@ -11,16 +11,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 27df4c097d829a4d28a77b9b1ad96eb389f4096c
-ms.sourcegitcommit: dc12a7cb66124596089f01d3e939027ae562ede9
+ms.openlocfilehash: dc0d5ce27c3241b89a1baaf540cab4f1f56d24b5
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71962935"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911603"
 ---
 # <a name="troubleshooting-and-known-issues-for-snapshot-debugging-in-visual-studio"></a>Visual Studio 中快照集偵錯的疑難排解和已知問題
 
-如果本文所述的步驟無法解決您的問題，請在[開發人員的社區](https://developercommunity.visualstudio.com/spaces/8/index.html)上搜尋問題，**或選擇 [說明] 來回報**新的問題，方法是選擇 [說明]  >  [**傳送意見**反應]  >  回報 Visual Studio 中**的問題**。
+如果本文所述的步驟無法解決您的問題，請在[開發人員的論壇](https://developercommunity.visualstudio.com/spaces/8/index.html)上搜尋問題，或選擇 [說明] > [**傳送意見**反應]， > 在 Visual Studio 中回報**問題** **] 來回報**新的問題。
 
 ## <a name="issue-attach-snapshot-debugger-encounters-an-http-status-code-error"></a>問題：「附加快照偵錯工具」遇到 HTTP 狀態碼錯誤
 
@@ -34,7 +34,7 @@ ms.locfileid: "71962935"
 
 請執行下列步驟：
 
-* 請確定您的 Visual Studio 個人化帳戶具有您要附加的 Azure 訂用帳戶和資源的許可權。 若要判斷這種情況，您可以從 [ **Debug**]  >  [**附加快照偵錯工具 ...** ] 對話方塊中，檢查資源是否可用 > **Azure 資源** > **選取 [現有**] 或 [在 Cloud Explorer 中]。
+* 請確定您的 Visual Studio 個人化帳戶具有您要附加的 Azure 訂用帳戶和資源的許可權。 若要判斷這種情況，您可以從**Debug**檢查是否在對話方塊中使用資源， > **附加快照偵錯工具 ...**  > **Azure 資源** > **選取現有**的，或在 Cloud Explorer 中。
 * 如果此錯誤持續存在，請使用本文開頭所述的其中一個意見反應通道。
 
 ### <a name="403-forbidden"></a>（403）禁止
@@ -43,7 +43,7 @@ ms.locfileid: "71962935"
 
 請執行下列步驟：
 
-* 請確認您的 Visual Studio 帳戶具有有效的 Azure 訂用帳戶，並具有資源的必要角色型存取控制（RBAC）許可權。 針對 AppService，請檢查您是否有權[查詢](https://docs.microsoft.com/rest/api/appservice/appserviceplans/get)裝載應用程式的 App Service 方案。
+* 請確認您的 Visual Studio 帳戶具有有效的 Azure 訂用帳戶，並具有資源的必要角色型存取控制（RBAC）許可權。 針對 AppService，請檢查您是否有權[查詢](/rest/api/appservice/appserviceplans/get)裝載應用程式的 App Service 方案。
 * 請確認用戶端電腦的時間戳記是否正確且為最新狀態。 時間戳記超過15分鐘的要求時間戳記的伺服器通常會產生此錯誤。
 * 如果此錯誤持續存在，請使用本文開頭所述的其中一個意見反應通道。
 
@@ -54,8 +54,8 @@ ms.locfileid: "71962935"
 請執行下列步驟：
 
 * 確認您已在您要附加的 App Service 資源上部署並執行網站。
-* 確認網站可以在 HTTPs://\<resource\>.azurewebsites.net
-* 在 HTTPs://\<resource\>.azurewebsites.net 時，確認您正確執行的自訂 web 應用程式未傳回狀態碼404
+* 確認網站可以在 HTTPs://\<資源\>取得。 azurewebsites.net
+* 請確認在 HTTPs://\<資源\>存取時，正確執行的自訂 web 應用程式不會傳回狀態碼404。 azurewebsites.net
 * 如果此錯誤持續存在，請使用本文開頭所述的其中一個意見反應通道。
 
 ### <a name="406-not-acceptable"></a>（406）無法接受
@@ -64,7 +64,7 @@ ms.locfileid: "71962935"
 
 請執行下列步驟：
 
-* 確認您的網站可以在 HTTPs://\<resource\>.azurewebsites.net
+* 確認您的網站可在 HTTPs://\<資源\>取得。 azurewebsites.net
 * 確認您的網站尚未遷移至新的實例。 快照偵錯工具會使用 ARRAffinity 的概念，將要求路由傳送至特定實例，這可能會間歇產生此錯誤。
 * 如果此錯誤持續存在，請使用本文開頭所述的其中一個意見反應通道。
 
@@ -88,7 +88,7 @@ ms.locfileid: "71962935"
 
 ### <a name="500-internal-server-error"></a>（500）內部伺服器錯誤
 
-此錯誤表示網站已完全關閉，或伺服器無法處理要求。 只快照偵錯工具執行應用程式的功能。 [Application Insights 快照偵錯工具](https://docs.microsoft.com/azure/azure-monitor/app/snapshot-debugger)提供例外狀況的快照，而且可能是符合您需求的最佳工具。
+此錯誤表示網站已完全關閉，或伺服器無法處理要求。 只快照偵錯工具執行應用程式的功能。 [Application Insights 快照偵錯工具](/azure/azure-monitor/app/snapshot-debugger)提供例外狀況的快照，而且可能是符合您需求的最佳工具。
 
 ### <a name="502-bad-gateway"></a>（502）不正確的閘道
 
@@ -99,9 +99,9 @@ ms.locfileid: "71962935"
 * 請嘗試稍候幾分鐘，再重新附加快照偵錯工具。
 * 如果此錯誤持續存在，請使用本文開頭所述的其中一個意見反應通道。
 
-## <a name="issue-snappoint-does-not-turn-on"></a>問題：快照點未開啟
+## <a name="issue-snappoint-does-not-turn-on"></a>問題：快照點沒有開啟
 
-如果看到快照點出現警告圖示![快照點警告圖示](../debugger/media/snapshot-troubleshooting-snappoint-warning-icon.png "快照點警告圖示")，而不是一般的快照點圖示，表示快照點未開啟。
+如果您看到警告圖示![快照點警告圖示](../debugger/media/snapshot-troubleshooting-snappoint-warning-icon.png "快照點警告圖示")與您的快照點，而不是一般的快照點圖示，則快照點不會開啟。
 
 ![快照點未開啟](../debugger/media/snapshot-troubleshooting-dont-turn-on.png "快照點未開啟")
 
@@ -109,7 +109,7 @@ ms.locfileid: "71962935"
 
 1. 請確定您有用來建立及部署應用程式的相同版本原始程式碼。 請確定您正在載入適用於部署的正確符號。 若要這樣做，請在進行快照集偵錯時檢視 [模組] 視窗，並確認 [符號檔案] 資料行顯示針對正在偵錯的組載入的 .pdb 檔案。 快照偵錯工具將嘗試自動為部署下載及使用符號。
 
-## <a name="issue-symbols-do-not-load-when-i-open-a-snapshot"></a>問題：當我開啟快照集時，不會載入符號
+## <a name="issue-symbols-do-not-load-when-i-open-a-snapshot"></a>問題：開啟快照集時沒有載入符號
 
 如果您看到下列視窗中，表示未載入符號。
 
@@ -125,7 +125,7 @@ ms.locfileid: "71962935"
 
 - 或者，如果您的組織使用符號伺服器，或是卸除另一個路徑中的符號，請使用符號設定為部署載入正確的符號。
 
-## <a name="issue-i-cannot-see-the-attach-snapshot-debugger-option-in-the-cloud-explorer"></a>問題：我在 Cloud Explorer 中看不到 [附加快照偵錯工具] 選項
+## <a name="issue-i-cannot-see-the-attach-snapshot-debugger-option-in-the-cloud-explorer"></a>問題：我在 [Cloud Explorer] 中看不到 [附加快照偵錯工具] 選項
 
 請執行下列步驟：
 
@@ -144,7 +144,7 @@ ms.locfileid: "71962935"
   - Azure Kubernetes Service - 在 Ubuntu 18.04 上的 .NET Core 2.2 或更新版本中執行的 ASP.NET Core 應用程式。
 ::: moniker-end
 
-## <a name="issue-i-only-see-throttled-snapshots-in-the-diagnostic-tools"></a>問題：我在診斷工具中只看到節流的快照集
+## <a name="issue-i-only-see-throttled-snapshots-in-the-diagnostic-tools"></a>問題：我在診斷工具中只看到節流快照集
 
 ![節流快照點](../debugger/media/snapshot-troubleshooting-throttled-snapshots.png "節流快照點")
 
@@ -153,15 +153,15 @@ ms.locfileid: "71962935"
 - 快照集僅佔用少量記憶體，但需要付費。 如果快照偵錯工具偵測到您的伺服器處於大量記憶體負載狀態，將不會建立快照集。 您可以停止快照偵錯工具工作階段，以刪除已經擷取的快照集，然後再試一次。
 
 ::: moniker range=">= vs-2019"
-## <a name="issue-snapshot-debugging-with-multiple-versions-of-the-visual-studio-gives-me-errors"></a>問題：具有多個 Visual Studio 版本的快照集偵測會提供錯誤
+## <a name="issue-snapshot-debugging-with-multiple-versions-of-the-visual-studio-gives-me-errors"></a>問題：針對多個版本的 Visual Studio 進行快照集偵錯時顯示錯誤
 
 Visual Studio 2019 在您的 Azure App Service 上需要較新版本的快照偵錯工具網站延伸模組。  此版本與 Visual Studio 2017 使用的舊版快照偵錯工具網站延伸模組不相容。  如果您嘗試將 Visual Studio 2019 中的快照偵錯工具附加至先前已由 Visual Studio 2017 中的快照偵錯工具所進行的 Azure App Service，您會收到下列錯誤：
 
-![不相容的快照偵錯工具網站延伸模組 Visual Studio 2019](../debugger/media/snapshot-troubleshooting-incompatible-vs2019.png "不相容快照偵錯工具網站延伸模組 Visual Studio 2019")
+![快照偵錯工具網站延伸模組 Visual Studio 2019 不相容](../debugger/media/snapshot-troubleshooting-incompatible-vs2019.png "快照偵錯工具網站延伸模組 Visual Studio 2019 不相容")
 
 相反地，如果您使用 Visual Studio 2017 將快照偵錯工具附加至先前已由 Visual Studio 2019 中的快照偵錯工具所進行的 Azure App Service，您會收到下列錯誤：
 
-![不相容的快照偵錯工具網站延伸模組 Visual Studio 2017](../debugger/media/snapshot-troubleshooting-incompatible-vs2017.png "不相容快照偵錯工具網站延伸模組 Visual Studio 2017")
+![快照偵錯工具網站延伸模組 Visual Studio 2017 不相容](../debugger/media/snapshot-troubleshooting-incompatible-vs2017.png "快照偵錯工具網站延伸模組 Visual Studio 2017 不相容")
 
 若要修正此問題，請在 Azure 入口網站中刪除下列應用程式設定並再次附加快照偵錯工具：
 
@@ -169,7 +169,7 @@ Visual Studio 2019 在您的 Azure App Service 上需要較新版本的快照偵
 - SNAPSHOTDEBUGGER_EXTENSION_VERSION
 ::: moniker-end
 
-## <a name="issue-i-am-having-problems-snapshot-debugging-and-i-need-to-enable-more-logging"></a>問題：我遇到快照集錯的問題，我需要啟用更多記錄功能
+## <a name="issue-i-am-having-problems-snapshot-debugging-and-i-need-to-enable-more-logging"></a>問題：我在進行快照集偵錯時發生問題，而且需要啟用更多記錄功能
 
 ### <a name="enable-agent-logs"></a>啟用代理程式記錄
 
@@ -179,9 +179,9 @@ Visual Studio 2019 在您的 Azure App Service 上需要較新版本的快照偵
 
 - App Service：
   - 瀏覽至您 App Service 的 Kudu 網站 (也就是 yourappservice.**scm**.azurewebsites.net)，並瀏覽至 [偵錯主控台]。
-  - 代理程式記錄會儲存在下列目錄中：D:\home\LogFiles\SiteExtensions\DiagnosticsAgentLogs\
+  - 代理程式記錄儲存在以下目錄：D:\home\LogFiles\SiteExtensions\DiagnosticsAgentLogs\
 - VM/VMSS：
-  - 登入您的 VM，代理程式記錄檔會儲存如下：C:\WindowsAzure\Logs\Plugins\Microsoft.Azure.Diagnostics.IaaSDiagnostics\<Version>\SnapshotDebuggerAgent_*.txt
+  - 登入您的 VM，代理程式記錄儲存在以下目錄：C:\WindowsAzure\Logs\Plugins\Microsoft.Azure.Diagnostics.IaaSDiagnostics\<Version>\SnapshotDebuggerAgent_*.txt
 - AKS
   - 瀏覽至以下目錄：/tmp/diag/AgentLogs/*
 
@@ -193,7 +193,7 @@ Visual Studio 2019 在您的 Azure App Service 上需要較新版本的快照偵
   - 錯誤記錄會自動傳送至 D:\Home\LogFiles\eventlog.xml，事件會以 `<Provider Name="Instrumentation Engine" />` 或「生產中斷點」標記
 - VM/VMSS：
   - 登入您的 VM 並開啟事件檢視器。
-  - 開啟下列視圖：*Windows 記錄 > 應用程式*。
+  - 開啟下列檢視：[Windows 記錄] > [應用程式]。
   - 使用*生產中斷點*或*檢測引擎*，依據*事件來源* *篩選目前的記錄*。
 - AKS
   - 檢測引擎記錄位於 /tmp/diag/log.txt (在DockerFile 中設定 MicrosoftInstrumentationEngine_FileLogPath)
@@ -215,10 +215,10 @@ Visual Studio 2019 在您的 Azure App Service 上需要較新版本的快照偵
 - 從 Visual Studio 的 [Cloud Explorer] 或從 Azure 入口網站交換位置與生產環境。
 - 停止位置網站。 這需要幾秒鐘來關閉所有執行個體中的網站 w3wp.exe 處理序。
 - 從 Kudu 網站或 Azure 入口網站升級位置網站延伸模組 ([App Service 刀鋒視窗] > [開發工具] > [擴充功能] > [更新])。
-- 啟動位置網站。 我們建議您造訪網站以再次使用它。
+- 啟動位置網站。 我們建議您造訪網站以再次啟用它。
 - 交換位置與生產環境。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [Visual Studio 偵錯](../debugger/index.yml)
 - [使用快照偵錯工具來進行即時 ASP.NET 應用程式的 Debug](../debugger/debug-live-azure-applications.md)
