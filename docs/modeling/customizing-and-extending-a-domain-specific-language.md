@@ -9,12 +9,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e6346f960efe1cd3af6ad9cbd070227d9171f01
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: bd1e3c3769f30806f7430bd32ddcb82db378093d
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654025"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72984276"
 ---
 # <a name="customize-and-extend-a-domain-specific-language"></a>自訂及擴充特定領域語言
 
@@ -40,7 +40,7 @@ Visual Studio 模型化和視覺化 SDK （VMSDK）提供數個層級，您可�
 |圖形上的圖示會變更以指出狀態。|在 [DSL 詳細資料] 視窗中設定裝飾專案對應的可見度。 在相同位置上找出數個影像裝飾專案。 請參閱[更新圖形和連接器以反映模型](../modeling/updating-shapes-and-connectors-to-reflect-the-model.md)。<br /><br /> 或者，覆寫 `ImageField.GetDisplayImage()`。 請參閱 <xref:Microsoft.VisualStudio.Modeling.Diagrams.ImageField> 中的範例。|
 |在任何圖形上設定背景影像|覆寫 InitializeInstanceResources （）以加入錨定的 ImageField。|
 |將圖形嵌套到任何深度|設定遞迴內嵌樹狀結構。 定義 BoundsRules 以包含圖形。|
-|在專案界限上的固定點附加連接器。|定義內嵌的終端機元素，以圖表上的小型埠表示。 使用 BoundsRules 來就地修正埠。 請參閱[視覺效果和模型化 SDK](http://go.microsoft.com/fwlink/?LinkID=186128)中的線路圖表範例。|
+|在專案界限上的固定點附加連接器。|定義內嵌的終端機元素，以圖表上的小型埠表示。 使用 BoundsRules 來就地修正埠。 請參閱[視覺效果和模型化 SDK](https://code.msdn.microsoft.com/Visualization-and-Modeling-313535db)中的線路圖表範例。|
 |文字欄位：顯示衍生自其他值的值。|將文字裝飾專案對應至計算或自訂的儲存網域屬性。 如需詳細資訊，請參閱[計算和自訂儲存體屬性](../modeling/calculated-and-custom-storage-properties.md)。|
 |在模型專案之間或在圖形之間傳播變更|請參閱[以特定領域語言進行驗證](../modeling/validation-in-a-domain-specific-language.md)。|
 |將變更傳播至存放區以外的資源，例如其他 Visual Studio 延伸模組。|請參閱[事件處理常式會將變更傳播到模型外部](../modeling/event-handlers-propagate-changes-outside-the-model.md)。|

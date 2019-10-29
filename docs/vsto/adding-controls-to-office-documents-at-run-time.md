@@ -22,12 +22,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 60d7bac159b22c4bfd8b9592fc8242457c01a464
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 44bf1de5d550a264a63ba7293fe1bdc0c9630aee
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71255659"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72986327"
 ---
 # <a name="add-controls-to-office-documents-at-run-time"></a>在執行時間將控制項加入 Office 檔
   您可以在執行階段將控制項加入 Microsoft Office Word 文件與 Microsoft Office Excel 活頁簿中。 您也可以在執行階段加以移除。 您在執行階段加入或移除的控制項稱為 *動態控制項*。
@@ -42,8 +42,6 @@ ms.locfileid: "71255659"
 
 - [將 Windows Forms 控制項新增至檔](#WindowsForms)。
 
-  ![影片連結](../vsto/media/playvideo.gif "影片連結")如需相關的影片示範， [請參閱如何?：在執行時間將控制項加入檔介面？](http://go.microsoft.com/fwlink/?LinkId=132782).
-
 ## <a name="ControlsCollection"></a>使用控制項集合在運行時間管理控制項
  若要在執行階段加入、取得或移除控制項，請使用 <xref:Microsoft.Office.Tools.Excel.ControlCollection> 與 <xref:Microsoft.Office.Tools.Word.ControlCollection> 物件的 Helper 方法。
 
@@ -53,7 +51,7 @@ ms.locfileid: "71255659"
 
 - 在 Word 的文件層級專案中，請使用 <xref:Microsoft.Office.Tools.Word.Document.Controls%2A> 類別的 `ThisDocument` 屬性。 如需此類別的詳細資訊，請參閱[檔主專案](../vsto/document-host-item.md)。
 
-- 在 Excel 或 Word 的 VSTO 增益集專案中，請使用`Controls`您在執行時間所產生<xref:Microsoft.Office.Tools.Excel.Worksheet>之或<xref:Microsoft.Office.Tools.Word.Document>的屬性。 如需在執行時間產生這些物件的詳細資訊，請參閱[在 VSTO 增益集的執行時間中擴充 Word 檔和 Excel 活頁簿](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)。
+- 在 Excel 或 Word 的 VSTO 增益集專案中，請使用您在執行時間產生之 <xref:Microsoft.Office.Tools.Excel.Worksheet> 或 <xref:Microsoft.Office.Tools.Word.Document> 的 `Controls` 屬性。 如需在執行時間產生這些物件的詳細資訊，請參閱[在 VSTO 增益集的執行時間中擴充 Word 檔和 Excel 活頁簿](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)。
 
 ### <a name="add-controls"></a>加入控制項
  <xref:Microsoft.Office.Tools.Excel.ControlCollection> 與 <xref:Microsoft.Office.Tools.Word.ControlCollection> 類型包括 Helper 方法，其可用來將主控制項和通用 Windows Form 控制項加入文件與工作表中。 每個方法名稱皆具有格式 `Add`*控制項類別*，其中 *控制項類別* 是您想要加入的控制項類別名稱。 例如，若要將 <xref:Microsoft.Office.Tools.Excel.NamedRange> 控制項加入文件中，請使用 <xref:Microsoft.Office.Tools.Excel.ControlCollection.AddNamedRange%2A> 方法。
@@ -66,7 +64,7 @@ ms.locfileid: "71255659"
 ### <a name="access-and-delete-controls"></a>存取和刪除控制項
  您可以使用 <xref:Microsoft.Office.Tools.Excel.Worksheet> 或 <xref:Microsoft.Office.Tools.Word.Document> 的 `Controls` 屬性來逐一查看文件中的所有控制項，包括在設計階段加入的控制項。 您在設計階段加入的控制項也稱為 *靜態控制項*。
 
- 您可以藉由呼叫`Delete`控制項的方法，或呼叫每個控制項集合的`Remove`方法來移除動態控制項。 下列程式碼範例在 Excel 的文件層級專案中使用 <xref:Microsoft.Office.Tools.Excel.ControlCollection.Remove%2A> 方法，將 <xref:Microsoft.Office.Tools.Excel.NamedRange> 從 `Sheet1` 移除。
+ 您可以藉由呼叫控制項的 `Delete` 方法，或呼叫每個控制項集合的 `Remove` 方法來移除動態控制項。 下列程式碼範例在 Excel 的文件層級專案中使用 <xref:Microsoft.Office.Tools.Excel.ControlCollection.Remove%2A> 方法，將 <xref:Microsoft.Office.Tools.Excel.NamedRange> 從 `Sheet1` 移除。
 
  [!code-vb[Trin_ExcelWorkbookDynamicControls#4](../vsto/codesnippet/VisualBasic/trin_excelworkbookdynamiccontrols4/ThisWorkbook.vb#4)]
  [!code-csharp[Trin_ExcelWorkbookDynamicControls#4](../vsto/codesnippet/CSharp/trin_excelworkbookdynamiccontrols4/ThisWorkbook.cs#4)]
@@ -80,11 +78,11 @@ ms.locfileid: "71255659"
 
 在您以程式設計方式將主控制項加入文件中時，您必須提供控制項的唯一識別名稱，且必須指定要將控制項加入文件的所在位置。 如需特定的相關指示，請參閱下列主題：
 
-- [如何：將 ListObject 控制項新增至工作表](../vsto/how-to-add-listobject-controls-to-worksheets.md)
+- [如何：將 ListObject 控制項加入至工作表](../vsto/how-to-add-listobject-controls-to-worksheets.md)
 
-- [如何：將 NamedRange 控制項新增至工作表](../vsto/how-to-add-namedrange-controls-to-worksheets.md)
+- [如何：將 NamedRange 控制項加入至工作表](../vsto/how-to-add-namedrange-controls-to-worksheets.md)
 
-- [如何：將圖表控制項新增至工作表](../vsto/how-to-add-chart-controls-to-worksheets.md)
+- [如何：將圖表控制項加入至工作表](../vsto/how-to-add-chart-controls-to-worksheets.md)
 
 - [如何：將內容控制項新增至 Word 檔](../vsto/how-to-add-content-controls-to-word-documents.md)
 
@@ -112,7 +110,7 @@ ms.locfileid: "71255659"
 
 - 針對 Word，請使用 <xref:Microsoft.Office.Tools.Word.ControlCollection.AddControl%2A> 物件的其中一種 <xref:Microsoft.Office.Tools.Word.ControlCollection> 方法 。
 
-  若要加入控制項，請將 <xref:System.Windows.Forms.Control>、控制項的位置，以及控制項的唯一識別名稱傳遞至 `AddControl` 方法。 `AddControl` 方法會傳回物件，其會定義控制項與工作表或文件互動的方式。 方法會傳回（適用于 Excel）或物件（適用于Word）。<xref:Microsoft.Office.Tools.Word.ControlSite> <xref:Microsoft.Office.Tools.Excel.ControlSite> `AddControl`
+  若要加入控制項，請將 <xref:System.Windows.Forms.Control>、控制項的位置，以及控制項的唯一識別名稱傳遞至 `AddControl` 方法。 `AddControl` 方法會傳回物件，其會定義控制項與工作表或文件互動的方式。 `AddControl` 方法會傳回 <xref:Microsoft.Office.Tools.Excel.ControlSite> （適用于 Excel）或 <xref:Microsoft.Office.Tools.Word.ControlSite> 物件（適用于 Word）。
 
   下列程式碼範例示範如何使用 <xref:Microsoft.Office.Tools.Excel.ControlCollection.AddControl%2A> 方法，以動態方式將自訂使用者控制項加入文件層級 Excel 專案的工作表中。 在此範例中，使用者控制項名為 `UserControl1`，而 <xref:Microsoft.Office.Interop.Excel.Range> 名為 `range1`。 若要使用此範例，請從專案中的 `Sheet`*n* 類別加以執行。
 
@@ -139,12 +137,12 @@ ms.locfileid: "71255659"
   [!code-vb[Trin_VstcoreProgrammingControlsExcel#3](../vsto/codesnippet/VisualBasic/my excel chart/Sheet1.vb#3)]
   [!code-csharp[Trin_VstcoreProgrammingControlsExcel#3](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#3)]
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [Office 檔上的控制項](../vsto/controls-on-office-documents.md)
 - [在 Office 檔中保存動態控制項](../vsto/persisting-dynamic-controls-in-office-documents.md)
-- [如何：將 ListObject 控制項新增至工作表](../vsto/how-to-add-listobject-controls-to-worksheets.md)
-- [如何：將 NamedRange 控制項新增至工作表](../vsto/how-to-add-namedrange-controls-to-worksheets.md)
-- [如何：將圖表控制項新增至工作表](../vsto/how-to-add-chart-controls-to-worksheets.md)
+- [如何：將 ListObject 控制項加入至工作表](../vsto/how-to-add-listobject-controls-to-worksheets.md)
+- [如何：將 NamedRange 控制項加入至工作表](../vsto/how-to-add-namedrange-controls-to-worksheets.md)
+- [如何：將圖表控制項加入至工作表](../vsto/how-to-add-chart-controls-to-worksheets.md)
 - [如何：將內容控制項新增至 Word 檔](../vsto/how-to-add-content-controls-to-word-documents.md)
 - [如何：將書簽控制項新增至 Word 檔](../vsto/how-to-add-bookmark-controls-to-word-documents.md)
 - [Office 檔上的 Windows Forms 控制項總覽](../vsto/windows-forms-controls-on-office-documents-overview.md)

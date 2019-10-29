@@ -1,5 +1,5 @@
 ---
-title: 伺服器總管 中：擴充 SharePoint 連線節點
+title: 伺服器總管：擴充 SharePoint 連接節點
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,275 +13,275 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bf3d39a8a06a59ed337c0d847bb92875f0f68558
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 4a40c20b92dc221dfab566240d27912b2b7e58be
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67824155"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985005"
 ---
-# <a name="walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension"></a>逐步解說：呼叫 SharePoint 用戶端物件模型，在 伺服器總管延伸模組
-  本逐步解說示範如何從的擴充功能呼叫 SharePoint 用戶端物件模型**SharePoint 連線**中的節點**伺服器總管**。 如需如何使用 SharePoint 用戶端物件模型的詳細資訊，請參閱[呼叫 SharePoint 物件模型](../sharepoint/calling-into-the-sharepoint-object-models.md)。
+# <a name="walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension"></a>逐步解說：在伺服器總管擴充功能中呼叫 SharePoint 用戶端物件模型
+  本逐步解說示範如何在**伺服器總管**中，從 [ **sharepoint 連接**] 節點的延伸模組呼叫 sharepoint 用戶端物件模型。 如需如何使用 SharePoint 用戶端物件模型的詳細資訊，請參閱[呼叫 sharepoint 物件模型](../sharepoint/calling-into-the-sharepoint-object-models.md)。
 
  本逐步解說將示範下列工作：
 
-- 建立[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]可擴展**SharePoint 連線**節點**伺服器總管**如下：
+- 建立 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 延伸模組，以下列方式擴充**伺服器總管**的 [ **SharePoint 連接**] 節點：
 
-  - 擴充功能新增**網頁組件庫**節點中的每個 SharePoint 網站 節點底下**伺服器總管**。 這個新的節點包含代表站台上的 Web 組件庫中的每個 Web 組件的子節點。
+  - 延伸模組會在**伺服器總管**中的每個 SharePoint 網站節點底下新增 [ **Web 元件庫**] 節點。 這個新節點包含子節點，代表網站上 Web 元件庫中的每個 Web 元件。
 
-  - 延伸模組會定義新類型的節點，表示 Web 組件執行個體。 這個新的節點型別是在新的子節點的基礎**網頁組件庫**節點。 新的 Web 組件節點類型中顯示資訊**屬性**有關節點所表示之 Web 組件的視窗。
+  - 延伸模組會定義代表 Web 元件實例的新節點類型。 這個新的節點類型是 [新增**Web 元件庫**] 節點底下子節點的基礎。 [新增 Web 元件] 節點類型會在 [**屬性**] 視窗中顯示節點所代表之 Web 元件的相關資訊。
 
-- 建置 Visual Studio 擴充功能 (VSIX) 封裝來部署擴充功能。
+- 建立 Visual Studio 擴充功能（VSIX）封裝以部署擴充功能。
 
-- 偵錯和測試延伸模組。
+- 調試和測試延伸模組。
 
 > [!NOTE]
-> 您在本逐步解說中建立的延伸模組類似您在建立延伸[逐步解說：擴充伺服器總管以顯示 web 組件](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)。 該逐步解說會使用 SharePoint 伺服器物件模型，但本逐步解說會使用用戶端物件模型來完成相同的工作。
+> 您在本逐步解說中建立的延伸模組，類似于在[逐步解說：擴充伺服器總管以顯示 web 元件](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)中所建立的延伸模組。 該逐步解說會使用 SharePoint 伺服器物件模型，但本逐步解說會使用用戶端物件模型來完成相同的工作。
 
-## <a name="prerequisites"></a>必要條件
- 您需要完成這個逐步解說在開發電腦上的下列元件：
+## <a name="prerequisites"></a>Prerequisites
+ 您需要在開發電腦上有下列元件，才能完成此逐步解說：
 
-- 支援的 Windows、 SharePoint 和 Visual Studio 版本。
+- 支援的 Windows、SharePoint 和 Visual Studio 版本。
 
-- Visual Studio SDK 中。 本逐步解說會使用**VSIX 專案**建立 VSIX 封裝，來部署擴充功能 SDK 中的範本。 如需詳細資訊，請參閱 <<c0> [ 擴充 Visual Studio 中的 SharePoint 工具](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)。
+- Visual Studio SDK。 本逐步解說會使用 SDK 中的**Vsix 專案**範本來建立 vsix 封裝，以部署擴充功能。 如需詳細資訊，請參閱[Visual Studio 中的擴充 SharePoint 工具](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)。
 
-下列概念的知識會很有幫助，但並非必要，若要完成本逐步解說：
+下列概念的知識很有説明，但並非必要，無法完成逐步解說：
 
-- 使用 SharePoint 用戶端物件模型。 如需詳細資訊，請參閱 <<c0> [ 受管理的用戶端物件模型](http://go.microsoft.com/fwlink/?LinkId=177797)。
+- 使用 SharePoint 用戶端物件模型。 如需詳細資訊，請參閱[Managed 用戶端物件模型](/previous-versions/office/developer/sharepoint-2010/ee537247(v=office.14))。
 
-- 在 SharePoint 中的 web 組件。 如需詳細資訊，請參閱 < [Web 組件概觀](http://go.microsoft.com/fwlink/?LinkId=177803)。
+- SharePoint 中的 Web 元件。 如需詳細資訊，請參閱[Web 組件總覽](/previous-versions/office/ms432401(v=office.14))。
 
 ## <a name="create-the-projects"></a>建立專案
- 若要完成此逐步解說中，您必須建立兩個專案：
+ 若要完成此逐步解說，您必須建立兩個專案：
 
-- 若要建立要部署的 VSIX 封裝 VSIX 專案**伺服器總管**延伸模組。
+- 建立 VSIX 封裝以部署**伺服器總管**擴充功能的 vsix 專案。
 
-- 實作的類別庫專案**伺服器總管**延伸模組。
+- 執行**伺服器總管**延伸模組的類別庫專案。
 
-  開始本逐步解說建立的專案。
+  藉由建立專案來啟動逐步解說。
 
-#### <a name="to-create-the-vsix-project"></a>若要建立 VSIX 專案
+#### <a name="to-create-the-vsix-project"></a>建立 VSIX 專案
 
 1. 啟動 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。
 
-2. 在功能表列上，選擇 [檔案]   > [新增]   > [專案]  。
+2. 在功能表列上，選擇 [檔案] > [新增] > [專案]。
 
-3. 中**新的專案**對話方塊方塊中，展開**Visual C#** 或**Visual Basic**節點，然後選擇**擴充性**。
+3. 在 [**新增專案**] 對話方塊中，展開 **[ C#視覺效果**] 或 [ **Visual Basic** ] 節點，**然後選擇 [** 擴充性]。
 
     > [!NOTE]
-    > **擴充性**節點才會提供您安裝 Visual Studio SDK。 如需詳細資訊，請參閱稍早在本主題中的必要條件 > 一節。
+    > 只有在您安裝 Visual Studio SDK 時，才能使用擴充**性節點。** 如需詳細資訊，請參閱本主題稍早的必要條件一節。
 
-4. 在對話方塊頂端，選擇 **.NET Framework 4.5**清單中的.NET Framework 版本。
+4. 在對話方塊的頂端，選擇 .NET Framework 版本清單中的 [ **.NET Framework 4.5** ]。
 
-     SharePoint 工具擴充功能需要在這個版本的.NET Framework 的功能。
+     SharePoint 工具延伸模組需要此版本 .NET Framework 的功能。
 
-5. 選擇**VSIX 專案**範本。
+5. 選擇 [ **VSIX 專案**] 範本。
 
-6. 在 [**名稱**方塊中，輸入**WebPartNode**，然後選擇 **[確定]** ] 按鈕。
+6. 在 [**名稱**] 方塊中，輸入**WebPartNode**，然後選擇 [**確定]** 按鈕。
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 新增**WebPartNode**專案加入**方案總管 中**。
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 會將**WebPartNode**專案新增至**方案總管**。
 
 #### <a name="to-create-the-extension-project"></a>若要建立擴充功能專案
 
-1. 中**方案總管**，開啟方案節點的捷徑功能表，選擇**新增**，然後選擇**新專案**。
+1. 在**方案總管**中，開啟 [方案] 節點的快捷方式功能表，選擇 [**加入**]，然後選擇 [**新增專案**]。
 
-2. 在**新的專案**對話方塊方塊中，展開**Visual C#** 或**Visual Basic**節點，然後選擇**Windows**。
+2. 在 [**新增專案**] 對話方塊中，展開 **[ C#視覺效果**] 或 [ **Visual Basic** ] 節點，然後選擇 [ **Windows**]。
 
-3. 在對話方塊頂端，選擇 **.NET Framework 4.5**清單中的.NET Framework 版本。
+3. 在對話方塊的頂端，選擇 .NET Framework 版本清單中的 [ **.NET Framework 4.5** ]。
 
-4. 在專案範本清單中，選擇**類別庫**。
+4. 在專案範本清單中，選擇 [**類別庫**]。
 
-5. 在 [**名稱**方塊中，輸入**WebPartNodeExtension**，然後選擇 **[確定]** ] 按鈕。
+5. 在 [**名稱**] 方塊中，輸入**WebPartNodeExtension**，然後選擇 [**確定]** 按鈕。
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 新增**WebPartNodeExtension**專案加入方案，並開啟預設 Class1 的程式碼檔案。
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 會將**WebPartNodeExtension**專案新增至方案，並開啟預設的 Class1 程式碼檔案。
 
-6. 從專案刪除 Class1 的程式碼檔案。
+6. 從專案中刪除 Class1 程式碼檔案。
 
 ## <a name="configure-the-extension-project"></a>設定擴充功能專案
- 您撰寫程式碼來建立擴充功能之前，您必須新增程式碼檔案和組件參考加入至專案，也必須更新預設的命名空間。
+ 在您撰寫程式碼來建立擴充功能之前，必須先將程式碼檔案和元件參考加入至專案，而且必須更新預設命名空間。
 
 #### <a name="to-configure-the-project"></a>若要設定專案
 
-1. 在  **WebPartNodeExtension**專案中，加入名為 SiteNodeExtension 和 WebPartNodeTypeProvider 的兩個程式碼檔案。
+1. 在**WebPartNodeExtension**專案中，加入名為 SiteNodeExtension 和 WebPartNodeTypeProvider 的兩個程式碼檔案。
 
-2. 開啟 WebPartNodeExtension 專案的捷徑功能表，然後選擇**加入參考**。
+2. 開啟 WebPartNodeExtension 專案的快捷方式功能表，然後選擇 [**加入參考**]。
 
-3. 在 **參考管理員-WebPartNodeExtension**對話方塊方塊中，選擇**Framework**節點，然後針對 System.ComponentModel.Composition 和 System.Windows.Forms 的然後選取核取方塊組件。
+3. 在 [**參考管理員-WebPartNodeExtension** ] 對話方塊中，選擇 [ **Framework** ] 節點，然後選取 [System.workflow.componentmodel.activity] 和 [system.web] 元件的核取方塊。
 
-4. 選擇**延伸模組**節點，每個下列組件中，選取核取方塊，然後選擇**確定**按鈕：
+4. 選擇 [**擴充**功能] 節點，選取下列每個元件的核取方塊，然後選擇 [**確定]** 按鈕：
 
-    - Microsoft.SharePoint.Client
+    - Microsoft. SharePoint. 用戶端
 
-    - Microsoft.SharePoint.Client.Runtime
+    - Microsoft. SharePoint. Client. Runtime
 
-    - Microsoft.VisualStudio.SharePoint
+    - VisualStudio. SharePoint
 
-5. 開啟捷徑功能表**WebPartNodeExtension**專案，，然後選擇**屬性**。
+5. 開啟**WebPartNodeExtension**專案的快捷方式功能表，然後選擇 [**屬性**]。
 
-     [專案設計工具]  隨即開啟。
+     [專案設計工具] 隨即開啟。
 
-6. 選擇 [應用程式]  索引標籤。
+6. 選擇 [應用程式] 索引標籤。
 
-7. 在 [**預設命名空間**] 方塊中 (C#) 或**根命名空間**方塊 (Visual Basic) 中，輸入**ServerExplorer.SharePointConnections.WebPartNode**。
+7. 在 [**預設命名空間**]C#方塊（）或 [**根命名空間**] 方塊（Visual Basic）中，輸入**ServerExplorer. SharePointConnections. WebPartNode**。
 
-## <a name="create-icons-for-the-new-nodes"></a>建立新的節點圖示
- 建立兩個圖示**伺服器總管**延伸模組： 新的圖示**網頁組件庫**節點和每個子網頁組件節點下的另一個圖示**網頁組件庫**節點。 稍後在本逐步解說中，您將撰寫程式碼，將這些圖示與節點相關聯。
+## <a name="create-icons-for-the-new-nodes"></a>建立新節點的圖示
+ 為**伺服器總管**擴充功能建立兩個圖示：新**網頁元件庫**節點的圖示，以及 [ **Web 元件庫**] 節點下每個子 Web 元件節點的另一個圖示。 稍後在本逐步解說中，您將撰寫程式碼，將這些圖示與節點產生關聯。
 
-#### <a name="to-create-icons-for-the-nodes"></a>若要建立之節點的圖示
+#### <a name="to-create-icons-for-the-nodes"></a>建立節點的圖示
 
-1. 在 [**專案設計工具**WebPartNodeExtension 專案中，選擇**資源**] 索引標籤。
+1. 在 WebPartNodeExtension 專案的 [**專案設計**工具] 中，選擇 [**資源**] 索引標籤。
 
-2. 選擇連結**這個專案不包含預設資源檔。** 。
+2. 選擇 [**此專案不包含預設資源檔] 連結。按一下這裡建立一個。**
 
-     Visual Studio 建立的資源檔，並在設計工具中開啟。
+     Visual Studio 會建立資源檔，並在設計工具中開啟它。
 
-3. 在設計工具的頂端，選擇箭號上**加入資源** 功能表命令，然後再選擇**加入新圖示**。
+3. 在設計工具的頂端，選擇 [**新增資源**] 功能表命令上的箭號，然後選擇 [**新增] 圖示**。
 
-4. 輸入**WebPartsNode** 新增 圖示的名稱，然後再選擇**新增** 按鈕。
+4. 針對新的圖示名稱輸入**WebPartsNode** ，然後選擇 **[新增] 按鈕。**
 
-     在中，開啟 [新增] 圖示**影像編輯器**。
+     [**影像編輯器**] 中會開啟新的圖示。
 
-5. 編輯圖示的 16 x 16 個版本，使其具有可輕鬆辨識的設計。
+5. 編輯16x16 版本的圖示，使其具有可輕鬆辨識的設計。
 
-6. 開啟圖示，32 x 32 版本的捷徑功能表，然後選擇**刪除映像類型**。
+6. 開啟圖示32x32 版本的快捷方式功能表，然後選擇 [**刪除影像類型**]。
 
-7. 重複步驟 3 到 7 以第二個圖示加入至專案資源，並命名此圖示**WebPart**。
+7. 重複步驟3到7，將第二個圖示新增至專案資源，並將此圖示命名為 [ **web**]。
 
-8. 在 [**方案總管] 中**，請在**資源**資料夾**WebPartNodeExtension**專案中，選擇*WebPartsNode.ico*。
+8. 在**方案總管**的 [ **WebPartNodeExtension** ] 專案的 [ **Resources** ] 資料夾中，選擇 [ *WebPartsNode*]。
 
-9. 在 **屬性**視窗中，開啟**建置動作**清單，，然後選擇**內嵌資源**。
+9. 在 [**屬性**] 視窗中，開啟 [**建立動作**] 清單，然後選擇 [**內嵌資源**]。
 
-10. 重複最後兩個步驟*WebPart.ico*。
+10. 針對*WebPart .ico*重複最後兩個步驟。
 
-## <a name="add-the-web-part-gallery-node-to-server-explorer"></a>將 web 組件庫節點加入至伺服器總管
- 建立的類別，會新增**網頁組件庫**SharePoint 站台的每個節點的節點。 若要新增新節點時，此類別會實作<xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeExtension>介面。 實作這個介面，每當您想要擴充現有的節點中的行為**伺服器總管**，例如加入新的子節點的節點。
+## <a name="add-the-web-part-gallery-node-to-server-explorer"></a>將 [web 元件庫] 節點新增至伺服器總管
+ 建立類別，將新的**網頁元件庫**節點加入至每個 SharePoint 網站節點。 為了加入新的節點，類別會執行 <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeExtension> 介面。 每當您想要在**伺服器總管**中擴充現有節點的行為（例如將新的子節點加入至節點）時，就會執行此介面。
 
-#### <a name="to-add-the-web-part-gallery-node-to-server-explorer"></a>若要將 web 組件庫節點加入至伺服器總管
+#### <a name="to-add-the-web-part-gallery-node-to-server-explorer"></a>若要將網頁元件庫節點新增至伺服器總管
 
-1. 貼上下列程式碼插入**SiteNodeExtension**程式碼檔案**WebPartNodeExtension**專案。
+1. 將下列程式碼貼入**WebPartNodeExtension**專案的**SiteNodeExtension**程式碼檔案。
 
     > [!NOTE]
-    > 新增下列程式碼之後，專案會有某些編譯錯誤。 當您在稍後步驟中加入程式碼時，這些錯誤就會消失運作。
+    > 加入此程式碼之後，專案將會有一些編譯錯誤。 當您在稍後的步驟中新增程式碼時，這些錯誤就會消失。
 
      [!code-csharp[SPExtensibility.SPExplorer.WebPartNode#1](../sharepoint/codesnippet/CSharp/webpartnode/webpartnodeextension/sitenodeextension.cs#1)]
      [!code-vb[SPExtensibility.SPExplorer.WebPartNode#1](../sharepoint/codesnippet/VisualBasic/spextensibility.spexplorer.webpartnode.webpartnode/webpartnodeextension/sitenodeextension.vb#1)]
 
-## <a name="define-a-node-type-that-represents-a-web-part"></a>定義代表 web 組件的節點類型
- 建立一個類別來定義新類型的節點，表示 Web 組件。 Visual Studio 會使用這個新的節點類型，以顯示子節點底下**網頁組件庫**節點。 每個這些子節點都代表單一的 Web 組件在 SharePoint 網站上。
+## <a name="define-a-node-type-that-represents-a-web-part"></a>定義代表 web 元件的節點類型
+ 建立類別，以定義代表 Web 元件的新節點類型。 Visual Studio 使用這個新節點類型，在 [**網頁元件庫**] 節點底下顯示子節點。 每個子節點都代表 SharePoint 網站上的單一 Web 元件。
 
- 若要定義新的節點類型，此類別會實作<xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeProvider>介面。 實作這個介面，每當您想要定義新類型的節點**伺服器總管**。
+ 為了定義新的節點類型，類別會實作為 <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeProvider> 介面。 每當您想要在**伺服器總管**中定義新類型的節點時，就會執行此介面。
 
-#### <a name="to-define-the-web-part-node-type"></a>若要定義 web 組件的節點類型
+#### <a name="to-define-the-web-part-node-type"></a>定義 web 元件節點類型
 
-1. 貼上下列程式碼插入**WebPartNodeTypeProvider**程式碼檔案**WebPartNodeExtension**專案。
+1. 將下列程式碼貼入**WebPartNodeExtension**專案的**WebPartNodeTypeProvider**程式碼檔案。
 
      [!code-csharp[SPExtensibility.SPExplorer.WebPartNode#2](../sharepoint/codesnippet/CSharp/webpartnode/webpartnodeextension/webpartnodetypeprovider.cs#2)]
      [!code-vb[SPExtensibility.SPExplorer.WebPartNode#2](../sharepoint/codesnippet/VisualBasic/spextensibility.spexplorer.webpartnode.webpartnode/webpartnodeextension/webpartnodetypeprovider.vb#2)]
 
 ## <a name="checkpoint"></a>檢查點
- 逐步解說中，所有的程式碼中，此時**網頁組件庫**節點現在是在專案中。 建置**WebPartNodeExtension**專案，以確定它會編譯無誤。
+ 在本逐步解說的這個階段中， **Web 元件庫**節點的所有程式碼現在都位於專案中。 建立**WebPartNodeExtension**專案，以確保它會編譯而不會發生錯誤。
 
 #### <a name="to-build-the-project"></a>建置專案
 
-1. 在 [**方案總管] 中**，開啟捷徑功能表**WebPartNodeExtension**專案，，然後選擇**建置**。
+1. 在**方案總管**中，開啟**WebPartNodeExtension**專案的快捷方式功能表，然後選擇 [**組建**]。
 
-## <a name="create-a-vsix-package-to-deploy-the-extension"></a>建立 VSIX 封裝，來部署擴充功能
- 若要建立 VSIX 封裝部署擴充功能，請在解決方案中使用 VSIX 專案。 首先，設定 VSIX 套件藉由修改 source.extension.vsixmanifest 檔案中包含在專案中。 建立方案，然後建立 VSIX 封裝。
+## <a name="create-a-vsix-package-to-deploy-the-extension"></a>建立 VSIX 封裝以部署擴充功能
+ 若要部署擴充功能，請使用方案中的 VSIX 專案來建立 VSIX 封裝。 首先，修改專案中包含的 extension.vsixmanifest 檔案，以設定 VSIX 封裝。 然後建立方案來建立 VSIX 封裝。
 
 #### <a name="to-configure-the-vsix-package"></a>若要設定 VSIX 封裝
 
-1. 在 **方案總管 中**，請在**WebPartNode**專案中，開啟**source.extension.vsixmanifest**資訊清單編輯器 中的檔案。
+1. 在**方案總管**的 [ **WebPartNode** ] 專案中，在 [資訊清單編輯器] 中開啟**extension.vsixmanifest**檔案。
 
-     Source.extension.vsixmanifest 檔案中會是所有的 VSIX 套件需要 extension.vsixmanifest 檔案的基礎。 如需有關這個檔案的詳細資訊，請參閱 < [VSIX 延伸結構描述 1.0 參考](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)。
+     Extension.vsixmanifest 檔案是所有 VSIX 封裝所需之 extension.vsixmanifest 檔案的基礎。 如需這個檔案的詳細資訊，請參閱[VSIX 延伸模組架構1.0 參考](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)。
 
-2. 在 **產品名稱**方塊中，輸入**的 伺服器總管 中的 Web 組件資源庫節點**。
+2. 在 [**產品名稱**] 方塊中，輸入伺服器總管的 [ **Web 元件庫] 節點**。
 
-3. 在 **作者**方塊中，輸入**Contoso**。
+3. 在 [**作者**] 方塊中，輸入**Contoso**。
 
-4. 在 [**描述**方塊中，輸入**將自訂的網頁組件庫節點加入至伺服器總管] 中的 SharePoint 連線節點**。
+4. 在 [**描述**] 方塊中，輸入**將自訂網頁元件庫節點加入至伺服器總管中的 [SharePoint 連接] 節點**。
 
-5. 上**資產**索引標籤的 編輯器 中，選擇**新增** 按鈕。
+5. 在編輯器的 [**資產**] 索引標籤上，選擇 [**新增**] 按鈕。
 
-6. 在 **加入新資產**對話方塊中，於**型別**清單中，選擇**Microsoft.VisualStudio.MefComponent**。
+6. 在 [**加入新資產**] 對話方塊的 [**類型**] 清單中，選擇 [ **VisualStudio [microsoft.visualstudio.mefcomponent]** ]。
 
     > [!NOTE]
-    > 這個值會對應到`MefComponent`extension.vsixmanifest 檔案中的項目。 這個元素會指定在 VSIX 封裝中的延伸模組組件名稱。 如需詳細資訊，請參閱 < [MEFComponent 項目 （VSX 結構描述）](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\))。
+    > 這個值會對應至 extension.vsixmanifest 檔案中的 `MefComponent` 元素。 這個元素會指定 VSIX 封裝中的擴充元件名稱。 如需詳細資訊，請參閱[[Microsoft.visualstudio.mefcomponent] 元素（VSX 架構）](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\))。
 
-7. 在 **來源**清單中，選擇**目前方案中的專案**。
+7. 在 [**來源**] 清單中，選擇 [**目前方案] 中的專案**。
 
-8. 在 [**專案**清單中，選擇**WebPartNodeExtension**，然後選擇 **[確定]** ] 按鈕。
+8. 在 [**專案**] 清單中，選擇 [ **WebPartNodeExtension**]，然後選擇 [**確定]** 按鈕。
 
-9. 在功能表列上選擇 **建置** > **建置方案**，然後確認方案編譯無誤。
+9. 在功能表列上，選擇 [**組建**] [ > ] [**組建方案**]，然後確定方案會編譯而不會發生錯誤。
 
-10. 請確定 WebPartNode 專案建置輸出資料夾現在包含 WebPartNode.vsix 檔案。
+10. 請確定 WebPartNode 專案的組建輸出檔案夾現在包含 WebPartNode .vsix 檔案。
 
-     根據預設，會將組建輸出資料夾...在包含您的專案檔的資料夾下的 \bin\Debug 資料夾。
+     根據預設，組建輸出檔案夾為.。包含您專案檔之資料夾下的 \bin\Debug 資料夾。
 
-## <a name="test-the-extension"></a>測試此擴充功能
- 您現在已準備好測試的新**網頁組件庫**中的節點**伺服器總管**。 首先，開啟要偵錯擴充功能專案中的 Visual Studio 的實驗執行個體。 然後使用 新**Web 組件**Visual Studio 的實驗執行個體中的節點。
+## <a name="test-the-extension"></a>測試延伸模組
+ 您現在已準備好在**伺服器總管**中測試新的**網頁元件庫**節點。 首先，開始在 Visual Studio 的實驗實例中，對延伸模組專案進行 debug。 然後在 Visual Studio 的實驗實例中，使用新的**Web 組件**節點。
 
-#### <a name="to-start-debugging-the-extension"></a>若要開始偵錯擴充功能
+#### <a name="to-start-debugging-the-extension"></a>開始調試延伸模組
 
-1. 使用系統管理認證，重新啟動 Visual Studio，然後開啟**WebPartNode**解決方案。
+1. 使用系統管理認證重新開機 Visual Studio，然後開啟**WebPartNode**解決方案。
 
-2. 在 WebPartNodeExtension 專案中，開啟**SiteNodeExtension**程式碼檔案，然後再將中斷點新增程式碼中的前幾行`NodeChildrenRequested`和`CreateWebPartNodes`方法。
+2. 在 WebPartNodeExtension 專案中，開啟**SiteNodeExtension**程式碼檔案，然後將中斷點新增至 `NodeChildrenRequested` 和 `CreateWebPartNodes` 方法中的第一行程式碼。
 
-3. 選擇**F5**鍵開始偵錯。
+3. 選擇**F5**鍵開始進行調試。
 
-     Visual Studio 會 Server Explorer\1.0 %UserProfile%\AppData\Local\Microsoft\VisualStudio\11.0Exp\Extensions\Contoso\Web 組件庫節點延伸模組安裝擴充功能，並啟動 Visual Studio 的實驗執行個體。 在 Visual Studio 這個執行個體中，您將測試專案項目。
+     Visual Studio 會將擴充功能安裝至伺服器 Explorer\1.0 的%UserProfile%\AppData\Local\Microsoft\VisualStudio\11.0Exp\Extensions\Contoso\Web 元件庫節點延伸模組，並啟動 Visual Studio 的實驗實例。 您將在 Visual Studio 的這個實例中測試專案專案。
 
-#### <a name="to-test-the-extension"></a>若要測試此擴充功能
+#### <a name="to-test-the-extension"></a>測試延伸模組
 
-1. 在實驗性 Visual Studio 執行個體，在功能表列上，選擇**檢視** > **伺服器總管**。
+1. 在 Visual Studio 的實驗實例中，選擇功能表列上的 [ **View** > **伺服器總管**]。
 
-2. 請確認您想要用於測試的 SharePoint 網站之下**SharePoint 連線**中的節點**伺服器總管**。 如果未列出，請遵循下列步驟：
+2. 確認您要用於測試的 SharePoint 網站會出現在**伺服器總管**的 [ **sharepoint 連接**] 節點底下。 如果未列出，請遵循下列步驟：
 
-    1. 開啟捷徑功能表**SharePoint 連線**，然後選擇**加入連接**。
+    1. 開啟 [ **SharePoint 連接**] 的快捷方式功能表，然後選擇 [**加入連接**]。
 
-    2. 在 [**加入 SharePoint 連接**對話方塊方塊中，輸入您想要連線，再選擇 SharePoint 網站的 URL**確定**] 按鈕。
+    2. 在 [**加入 SharePoint 連接**] 對話方塊中，輸入您要連接之 SharePoint 網站的 URL，然後選擇 [**確定]** 按鈕。
 
-         若要指定 SharePoint 網站的開發電腦上，輸入 **http://localhost** 。
+         若要指定開發電腦上的 SharePoint 網站，請輸入 **http://localhost** 。
 
-3. 展開站台連線節點 （它會顯示您的網站 URL），然後再展開 子站台節點 (例如**小組網站**)。
+3. 展開 [網站連線] 節點（顯示您網站的 URL），然後展開 [子網站] 節點（例如 [**小組網站**]）。
 
-4. 確認停止您稍早在設定的中斷點上的 Visual Studio 的其他執行個體中的程式碼`NodeChildrenRequested`方法，然後選擇**F5**鍵繼續偵錯專案。
+4. 確認 Visual Studio 另一個實例中的程式碼會在您稍早于 `NodeChildrenRequested` 方法中設定的中斷點上停止，然後選擇**F5**鍵繼續進行專案的偵錯工具。
 
-5. 在 Visual Studio 的實驗性執行個體，依序展開**網頁組件庫**節點，就會出現在頂層站台 節點下。
+5. 在 Visual Studio 的實驗實例中，展開 [ **Web 元件庫**] 節點，這會出現在最上層的網站節點底下。
 
-6. 確認停止您稍早在設定的中斷點上的 Visual Studio 的其他執行個體中的程式碼`CreateWebPartNodes`方法，然後選擇**F5**鍵繼續偵錯專案。
+6. 確認 Visual Studio 另一個實例中的程式碼會在您稍早于 `CreateWebPartNodes` 方法中設定的中斷點上停止，然後選擇**F5**鍵繼續進行專案的偵錯工具。
 
-7. 在 Visual Studio 的實驗性執行個體，確認 已連線的站台上的所有網頁組件都出現在**網頁組件庫**中的節點**伺服器總管**。
+7. 在 Visual Studio 的實驗實例中，確認連線網站上的所有 Web 組件都出現在**伺服器總管**的 [ **Web 元件庫**] 節點底下。
 
-8. 在 Web 組件中，開啟捷徑功能表，然後選擇**屬性**。
+8. 開啟 Web 元件的快捷方式功能表，然後選擇 [**屬性**]。
 
-9. 在 [**屬性**] 視窗中，確認詳細資料網頁組件會出現。
+9. 在 [**屬性**] 視窗中，確認是否出現 Web 元件的詳細資料。
 
-10. 在 **伺服器總管**，針對相同的 Web 組件中，開啟捷徑功能表，然後選擇**Display Message**。
+10. 在**伺服器總管**中，開啟相同 Web 元件的快捷方式功能表，然後選擇 [**顯示訊息**]。
 
-     在隨即出現訊息方塊中，選擇**確定** 按鈕。
+     在出現的訊息方塊中，選擇 [**確定]** 按鈕。
 
-## <a name="uninstall-the-extension-from-visual-studio"></a>從 Visual Studio 解除安裝擴充功能
- 完成測試擴充功能之後，請從 Visual Studio 將它解除安裝。
+## <a name="uninstall-the-extension-from-visual-studio"></a>從 Visual Studio 卸載擴充功能
+ 完成擴充功能的測試之後，請從 Visual Studio 將它卸載。
 
 #### <a name="to-uninstall-the-extension"></a>安裝擴充功能
 
-1. 在實驗性 Visual Studio 執行個體，在功能表列上，選擇**工具** > **擴充功能和更新**。
+1. 在 Visual Studio 的實驗實例中，選擇功能表列上的 [**工具**] > [**擴充功能和更新**]。
 
-     [擴充功能和更新]  對話方塊隨即開啟。
+     [擴充功能和更新] 對話方塊隨即開啟。
 
-2. 在延伸模組清單中，選擇**伺服器總管 中的 Web 組件組件庫節點**，然後選擇**解除安裝** 按鈕。
+2. 在擴充功能清單中，**為伺服器總管選擇 [Web 元件庫] 節點**，然後選擇 [**卸載**] 按鈕。
 
-3. 在出現的對話方塊中，選擇**是** 按鈕。
+3. 在出現的對話方塊中，選擇 [**是**] 按鈕。
 
-4. 選擇**立即重新啟動**按鈕以完成解除安裝。
+4. 選擇 [**立即重新開機**] 按鈕以完成卸載。
 
-     專案項目也會解除安裝。
+     專案專案也會一併卸載。
 
-5. 關閉 Visual Studio （實驗性執行個體和 WebPartNode 方案已開啟的 Visual Studio 執行個體） 的兩個執行個體。
+5. 關閉 Visual Studio 的兩個實例（實驗實例和 WebPartNode 方案開啟所在的 Visual Studio 實例）。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [呼叫 SharePoint 物件模型](../sharepoint/calling-into-the-sharepoint-object-models.md)
-- [擴充 SharePoint 連線節點，在 伺服器總管](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)
-- [逐步解說：擴充伺服器總管以顯示 web 組件](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)
+- [在伺服器總管中擴充 [SharePoint 連接] 節點](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)
+- [逐步解說：擴充伺服器總管以顯示 web 元件](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)
 - [圖示影像編輯器](/cpp/windows/image-editor-for-icons)
-- [建立圖示或其他影像&#40;圖示影像編輯器&#41;](/cpp/windows/creating-an-icon-or-other-image-image-editor-for-icons)
+- [為圖示建立圖示或其他&#40;影像影像編輯器&#41;](/cpp/windows/creating-an-icon-or-other-image-image-editor-for-icons)

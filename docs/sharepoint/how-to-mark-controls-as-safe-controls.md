@@ -1,5 +1,5 @@
 ---
-title: HOW TO：將控制項標記為安全控制項 |Microsoft Docs
+title: 如何：將控制項標記為安全控制項 |Microsoft Docs
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,104 +14,104 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 30bb597288c19328bb71ce7b5212200991d7181e
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 232fef4908a6168d550d510a0d753fe8e39db02b
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443076"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72982733"
 ---
-# <a name="how-to-mark-controls-as-safe-controls"></a>HOW TO：將控制項標記為安全控制項
-  為了安全性，SharePoint 會區別指令碼資料隱碼攻擊時受到保護的 Web 控制項和 Web 控制項不是。 受保護的控制項，或是*安全控制項*，可以由不受信任的使用者存取。 您可以將標記為安全的 SharePoint 專案項目，或在 安全控制項項目屬性中的控制項**封裝設計工具**將組件加入封裝。 如需詳細資訊，請參閱
+# <a name="how-to-mark-controls-as-safe-controls"></a>如何：將控制項標記為安全控制項
+  基於安全性的關係，SharePoint 會區分保護不受腳本插入和 Web 控制項的 Web 控制項。 不受信任的使用者可以存取受保護的控制項或*安全控制項*。 當您將元件加入封裝時，可以在 SharePoint 專案專案的 [安全控制項專案] 屬性中，將控制項標示**為 [安全**]。 如需詳細資訊，請參閱
 
-- [web.config 檔案設定變更](http://go.microsoft.com/fwlink/?LinkId=178965)並[Web 組件註冊為安全控制項](http://go.microsoft.com/fwlink/?LinkId=171013)。
+- web.config 檔案[設定會變更](/previous-versions/office/developer/sharepoint-2007/bb802890(v=office.12))網頁元件元件，並將[其註冊為安全控制項](/previous-versions/office/developer/sharepoint2003/dd587360(v=office.11))。
 
 > [!IMPORTANT]
-> 這些程序是為了說明之用。 只有當確定它們是安全的安全控制項標記。
+> 這些程式僅供說明之用。 只有在您確定控制項安全時，才會將它們標示為安全。
 
-## <a name="marking-safe-controls-in-the-safe-control-entries-property"></a>標示的安全控制項項目屬性中的安全控制項
+## <a name="marking-safe-controls-in-the-safe-control-entries-property"></a>在 [安全控制項專案] 屬性中標記安全控制項
 
-#### <a name="to-mark-controls-as-safe-or-unsafe-in-the-safe-control-entries-property"></a>若要將控制項標示為 safe 或 unsafe 安全控制項項目屬性
+#### <a name="to-mark-controls-as-safe-or-unsafe-in-the-safe-control-entries-property"></a>若要在安全控制項專案屬性中將控制項標記為安全或不安全
 
-1. 建立 SharePoint 解決方案與視覺 Web 組件專案。
+1. 建立具有視覺化網頁元件專案的 SharePoint 方案。
 
-2. 將兩個控制項新增至網頁組件： 文字方塊和按鈕。 分別在其預設值，TextBox1 與 Button1，保留這些名稱。
+2. 將兩個控制項加入至 Web 元件：一個文字方塊和一個按鈕。 將名稱分別保留為預設值（TextBox1 和 Button1）。
 
-3. 將兩個項目新增至 Web 組件的**安全控制項項目**屬性。 若要這樣做，請選擇省略符號 (![ASP.NET Mobile 設計工具橢圓形](../sharepoint/media/mwellipsis.gif "ASP.NET Mobile 設計工具橢圓形")) 按鈕旁**安全控制項項目**中的屬性**屬性**視窗。
+3. 將兩個專案加入至 Web 元件的 [**安全控制項專案**] 屬性。 若要這麼做，請選擇 [**屬性**] 視窗中 [**安全控制項專案**] 屬性旁的省略號（![ASP.NET Mobile 設計](../sharepoint/media/mwellipsis.gif "ASP.NET Mobile 設計工具橢圓形")工具省略號）按鈕。
 
-     **安全控制項項目** 對話方塊隨即出現。
+     [**安全控制項專案**] 對話方塊隨即出現。
 
-4. 在**安全控制項項目**對話方塊方塊中，選擇**新增**按鈕兩次，兩個安全控制項項目新增至**成員**窗格： 其中一個按鈕和一個文字方塊。
+4. 在 [**安全控制項專案**] 對話方塊中，選擇 [**新增**] 按鈕兩次，將兩個安全控制項專案新增至 [**成員**] 窗格：一個用於按鈕，另一個用於文字方塊。
 
-5. 選擇第一個安全控制項項目，然後變更 值及其**安全**屬性設**False**、 其**型別名稱**屬性設**Button1**，並將其**防止指令碼**屬性設**False**。
+5. 選擇第一個安全控制項專案，然後將其 [**安全**] 屬性的值變更為 [ **false**]，其 [**類型名稱**] 屬性設為 [ **Button1**]，並將 [安全] [**針對腳本**] 屬性設為**false**。
 
-     此步驟中識別為不安全的控制項的按鈕控制項。
+     此步驟會將按鈕控制項識別為不安全的控制項。
 
-6. 選擇清單中的第二個安全控制項項目。 保留值其**安全**屬性設為 **，則為 True**並設定其**型別名稱**屬性設**TextBox1**及其**安全針對指令碼**屬性，以 **，則為 True**。
+6. 選擇清單中的第二個安全控制項項目。 將其 **安全** 屬性的值保留為  **true** ，並將其 **類型名稱** 屬性**設定為**  **TextBox1** ，並將其 安全 **針對腳本**
 
-     文字方塊控制項現在會標示為安全對指令碼資料隱碼攻擊的控制項。
+     文字方塊控制項現在會標示為可安全地進行腳本插入的控制項。
 
-7. 選擇 [確定]  按鈕以關閉對話方塊。
+7. 選擇 [確定] 按鈕以關閉對話方塊。
 
-## <a name="marking-safe-controls-in-the-package-designer"></a>將標記在封裝設計工具中的安全控制項
+## <a name="marking-safe-controls-in-the-package-designer"></a>在封裝設計工具中標記安全控制項
 
-#### <a name="to-mark-controls-as-safe-or-unsafe-in-the-package-designer"></a>若要將標記控制為 safe 或 unsafe 在封裝設計工具
+#### <a name="to-mark-controls-as-safe-or-unsafe-in-the-package-designer"></a>若要在封裝設計工具中將控制項標記為安全或不安全
 
-1. 建立 SharePoint 解決方案與視覺 Web 組件專案。
+1. 建立具有視覺化網頁元件專案的 SharePoint 方案。
 
-2. 將兩個控制項新增至網頁組件： 文字方塊和按鈕。 分別在其預設值，TextBox1 與 Button1，保留這些名稱。
+2. 將兩個控制項加入至 Web 元件：一個文字方塊和一個按鈕。 將名稱分別保留為預設值（TextBox1 和 Button1）。
 
-     記下此控制項的命名空間以便稍後使用。
+     請記下控制項的命名空間，因為稍後會用到它。
 
-3. 在功能表列上選擇 **建置** > **建置方案**來建置專案。
+3. 在功能表列上，選擇 [**組建**] > [建立**方案**] 來建立專案。
 
 4. 建立另一個 SharePoint 方案。
 
-5. 在 **方案總管 中**，開啟捷徑功能表*封裝*檔案，然後再選擇 **開啟**以開啟**封裝設計工具**.
+5. 在**方案總管**中，開啟 [*封裝*檔案] 的快捷方式功能表，然後選擇 [**開啟**] 以開啟**封裝設計**工具。
 
-6. 在 [ **Package Designer**，選擇**進階**] 索引標籤。
+6. 在**封裝設計**工具中，選擇 [ **Advanced** ] 索引標籤。
 
-7. 底下**其他組件**，選擇**新增**按鈕，然後再選擇**加入現有組件**從清單中。
+7. 在 [**其他元件**] 底下，選擇 [**加入**] 按鈕，然後從清單中選擇 [**加入現有元件**]。
 
-8. 在 **加入現有組件**對話方塊方塊中，選擇省略符號 (![ASP.NET Mobile 設計工具橢圓形](../sharepoint/media/mwellipsis.gif "ASP.NET Mobile 設計工具橢圓形")) 按鈕旁**來源路徑**。
+8. 在 [**加入現有元件**] 對話方塊中，選擇 [**來源路徑**] 旁的省略號（![ASP.NET Mobile 設計工具橢圓形](../sharepoint/media/mwellipsis.gif "ASP.NET Mobile 設計工具橢圓形")）按鈕。
 
-9. 選擇從您在步驟 1 中建立 SharePoint 方案的組件，然後選擇**開啟** 按鈕。
+9. 從您在步驟1中建立的 SharePoint 方案中選擇元件，然後選擇 [**開啟**] 按鈕。
 
-10. 此範例中，保持**部署目標**GlobalAssemblyCache 選項。
+10. 在此範例中，將 [**部署目標**] 選項保留為 [GlobalAssemblyCache]。
 
-     這個步驟會導致要部署到系統全域組件快取 (GAC) 的組件。 如果您想要部署至 Web 應用程式 (Bin) 資料夾的組件，請改為選取該選項。 如需詳細資訊，請參閱 <<c0> [ 部署 SharePoint Foundation 中的 Web 組件](http://go.microsoft.com/fwlink/?LinkId=177509)。
+     此步驟會使元件部署到系統全域組件快取（GAC）。 如果您想要將元件部署至 Web 應用程式（Bin）資料夾，請改為選取該選項。 如需詳細資訊，請參閱[在 SharePoint Foundation 中部署 Web 組件](/previous-versions/office/developer/sharepoint-2010/cc768621(v=office.14))。
 
-11. 在 [**安全控制項**方塊中，選擇**按一下這裡以加入新項目**] 按鈕。
+11. 在 [**安全控制項**] 方塊中，選擇 [**按一下這裡加入新專案**] 按鈕。
 
-12. 下表中輸入屬性的值。
+12. 輸入下表中的屬性值。
 
     |屬性名稱|值|
     |-------------------|-----------|
-    |命名空間|控制項的完整命名空間這類**BdcModelProject1.VisualWebPart1**。|
+    |命名空間|控制項的完整命名空間，例如**BdcModelProject1. visualwebpartproject1.visualwebpart1.visualwebpart1**。|
     |類型名稱|Button1|
-    |組件名稱|強式的組件名稱，例如：Microsoft.Office.SharePoint.ClientExtensions，version=14.0.0.0，Culture = neutral，PublicKeyToken = 71e9bce111e9429c。|
-    |安全|清除**安全**核取方塊。|
-    |針對指令碼的安全|離開**防止指令碼**清除核取方塊。|
+    |組件名稱|強式元件名稱，例如： ClientExtensions、Version = 14.0.0.0、Culture = 中性，PublicKeyToken = 71e9bce111e9429c。|
+    |進入|清除 [**安全**] 核取方塊。|
+    |針對腳本安全|將 [不**受腳本**保護] 核取方塊保持為清除。|
 
     > [!NOTE]
-    > **組件名稱**值，透過新增的組件**進階**索引標籤**封裝設計工具**不能是語彙基元，它必須是強式名稱組件。 如需詳細資訊，請參閱[建立和使用強式名稱的組件](http://go.microsoft.com/fwlink/?LinkId=177513)。
+    > 透過**封裝設計**工具的 [ **Advanced** ] 索引標籤加入之元件的**元件名稱**值不可以是 token，它必須是強式名稱的元件。 如需詳細資訊，請參閱[建立和使用強式名稱的組件](/previous-versions/dotnet/netframework-4.0/xwb8f617(v=vs.100))。
 
-13. 選擇 **索引標籤** 金鑰，才能建立另一個安全控制項項目。
+13. 選擇**Tab**鍵以建立另一個安全控制項專案。
 
-14. 選擇**按一下這裡以加入新項目**按鈕一次。
+14. 再次選擇 [**按一下這裡加入新專案**] 按鈕。
 
-15. 下表中輸入屬性的值。
+15. 輸入下表中的屬性值。
 
     |屬性名稱|值|
     |-------------------|-----------|
-    |命名空間|控制項的完整命名空間這類**BdcModelProject1.VisualWebPart1**。|
+    |命名空間|控制項的完整命名空間，例如**BdcModelProject1. visualwebpartproject1.visualwebpart1.visualwebpart1**。|
     |類型名稱|TextBox1|
-    |組件名稱|強式的組件名稱，例如：Microsoft.Office.SharePoint.ClientExtensions，version=14.0.0.0，Culture = neutral，PublicKeyToken = 71e9bce111e9429c。|
-    |安全|選取 **安全**核取方塊。|
-    |針對指令碼的安全|選取 **防止指令碼**核取方塊。|
+    |組件名稱|強式元件名稱，例如： ClientExtensions、Version = 14.0.0.0、Culture = 中性，PublicKeyToken = 71e9bce111e9429c。|
+    |進入|選取 [**安全**] 核取方塊。|
+    |針對腳本安全|選取 [**安全] [針對腳本**] 核取方塊。|
 
-16. 選擇 **索引標籤** 鍵，然後再選擇 **確定** 按鈕以關閉對話方塊。
+16. 選擇**Tab**鍵，然後選擇 [**確定**] 按鈕以關閉對話方塊。
 
-## <a name="see-also"></a>另請參閱
-- [提供專案項目中的封裝和部署資訊](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)
+## <a name="see-also"></a>請參閱
+- [提供專案專案中的封裝和部署資訊](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)
 - [封裝和部署 SharePoint 方案](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)

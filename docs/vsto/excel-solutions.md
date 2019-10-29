@@ -26,12 +26,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 532689afe4e07c3151be6eac923f2b591aa34f46
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 53351354a470eb5770f07b9afd527b81c4e587b6
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71253627"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72986074"
 ---
 # <a name="excel-solutions"></a>Excel 方案
   Visual Studio 提供的專案範本，可用以建立 Microsoft Office Excel 的文件層級自訂和 VSTO 增益集。 您可以使用這些解決方案自動化 Excel、擴充 Excel 功能和自訂 Excel 使用者介面 (UI)。 如需檔層級自訂和 VSTO 增益集之間差異的詳細資訊，請參閱[Office 方案開發&#40;總覽&#41;](../vsto/office-solutions-development-overview-vsto.md)。
@@ -58,7 +58,7 @@ ms.locfileid: "71253627"
 ## <a name="doclevel"></a>開發 Excel 的檔層級自訂
  Microsoft Office Excel 文件層級自訂是由與特定活頁簿相關聯的組件所組成。 組件通常是透過自訂 UI 及自動化 Excel 來擴充活頁簿。 不同於與 Excel 本身相關聯的 VSTO 增益集，您在自訂中實作的功能只有在 Excel 中開啟相關聯的活頁簿時才能使用。
 
- 若要建立 Excel 的檔層級自訂專案，請在 Visual Studio 的 [**新增專案**] 對話方塊中，使用 excel 活頁簿或 excel 範本專案範本。 如需詳細資訊，請參閱[如何：在 Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)中建立 Office 專案。
+ 若要建立 Excel 的檔層級自訂專案，請在 Visual Studio 的 [**新增專案**] 對話方塊中，使用 excel 活頁簿或 excel 範本專案範本。 如需詳細資訊，請參閱[如何：在 Visual Studio 中建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)。
 
  如需檔層級自訂如何工作的詳細資訊，請參閱[檔層級自訂的架構](../vsto/architecture-of-document-level-customizations.md)。
 
@@ -70,14 +70,14 @@ ms.locfileid: "71253627"
 ## <a name="applevel"></a>開發適用于 Excel 的 VSTO 增益集
  Microsoft Office Excel 的 VSTO 增益集是由 Excel 載入的組件所組成。 組件通常是透過自訂 UI 及自動化 Excel 來擴充 Excel。 不同于與特定活頁簿相關聯的檔層級自訂，您在 VSTO 增益集中執行的功能不會限制為任何單一活頁簿。
 
- 若要建立 Excel 的 VSTO 增益集專案，請在 Visual Studio 的 [**新增專案**] 對話方塊中，使用 excel 活頁簿或 excel 範本專案範本。 如需詳細資訊，請參閱[如何：在 Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)中建立 Office 專案。
+ 若要建立 Excel 的 VSTO 增益集專案，請在 Visual Studio 的 [**新增專案**] 對話方塊中，使用 excel 活頁簿或 excel 範本專案範本。 如需詳細資訊，請參閱[如何：在 Visual Studio 中建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)。
 
  如需 VSTO 增益集運作方式的一般資訊，請參閱 [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md)。
 
 ### <a name="excel-add-in-programming-model"></a>Excel 增益集程式設計模型
  當您建立 Excel VSTO 增益集專案時，Visual Studio 會產生名為 `ThisAddIn`的類別，這是方案的基礎。 這個類別會提供撰寫程式碼的起點，還會向 VSTO 增益集公開 Excel 物件模型。
 
- 如需您可以在`ThisAddIn` VSTO 增益集中使用之類別和其他 Visual Studio 功能的詳細資訊，請參閱[Program VSTO 增益集](../vsto/programming-vsto-add-ins.md)。
+ 如需您可以在 VSTO 增益集中使用之 `ThisAddIn` 類別和其他 Visual Studio 功能的詳細資訊，請參閱[PROGRAM VSTO 增益集](../vsto/programming-vsto-add-ins.md)。
 
 ## <a name="UI"></a>自訂 Excel 的使用者介面
  有幾種不同的方式可以自訂 Excel 的使用者介面。 有些選項適用於所有專案類型，有些選項則僅限 VSTO 增益集或文件層級自訂使用。
@@ -88,15 +88,15 @@ ms.locfileid: "71253627"
 |工作|如需詳細資訊|
 |----------|--------------------------|
 |自訂功能區。|[功能區總覽](../vsto/ribbon-overview.md)|
-|在文件層級自訂的自訂活頁簿工作表，或任何開啟的 VSTO 增益集活頁簿中，加入 Windows Form 控制項或擴充的 Excel 控制項。|[如何：將 Windows forms 控制項新增至 Office 檔](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)<br /><br /> [如何：將圖表控制項新增至工作表](../vsto/how-to-add-chart-controls-to-worksheets.md)<br /><br /> [如何：將 ListObject 控制項新增至工作表](../vsto/how-to-add-listobject-controls-to-worksheets.md)<br /><br /> [如何：將 NamedRange 控制項新增至工作表](../vsto/how-to-add-namedrange-controls-to-worksheets.md)|
+|在文件層級自訂的自訂活頁簿工作表，或任何開啟的 VSTO 增益集活頁簿中，加入 Windows Form 控制項或擴充的 Excel 控制項。|[如何：將 Windows forms 控制項新增至 Office 檔](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)<br /><br /> [如何：將圖表控制項加入至工作表](../vsto/how-to-add-chart-controls-to-worksheets.md)<br /><br /> [如何：將 ListObject 控制項加入至工作表](../vsto/how-to-add-listobject-controls-to-worksheets.md)<br /><br /> [如何：將 NamedRange 控制項加入至工作表](../vsto/how-to-add-namedrange-controls-to-worksheets.md)|
 
 ### <a name="options-for-document-level-customizations"></a>檔層級自訂的選項
  下表列出的自訂選項僅限文件層級自訂使用。
 
 |工作|如需詳細資訊|
 |----------|--------------------------|
-|在活頁簿中加入執行窗格。|[動作窗格總覽](../vsto/actions-pane-overview.md)<br /><br /> [如何：將執行窗格新增至 Word 檔或 Excel 活頁簿](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)|
-|在工作表中加入對應到 XML 節點的擴充範圍控制項。|[如何：將 XMLMappedRange 控制項新增至工作表](../vsto/how-to-add-xmlmappedrange-controls-to-worksheets.md)|
+|在活頁簿中加入執行窗格。|[動作窗格總覽](../vsto/actions-pane-overview.md)<br /><br /> [如何：將執行窗格加入 Word 檔或 Excel 活頁簿](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)|
+|在工作表中加入對應到 XML 節點的擴充範圍控制項。|[如何：將 XMLMappedRange 控制項加入至工作表](../vsto/how-to-add-xmlmappedrange-controls-to-worksheets.md)|
 
 ### <a name="options-for-vsto-add-ins"></a>VSTO 增益集的選項
  下表列出的自訂選項僅限 VSTO 增益集使用。
@@ -115,6 +115,6 @@ ms.locfileid: "71253627"
 | [Office 檔上的 Windows Forms 控制項總覽](../vsto/windows-forms-controls-on-office-documents-overview.md) | 描述如何在 Excel 工作表中加入 Windows Form 控制項。 |
 | [逐步解說：建立 Excel 的第一個檔層級自訂](../vsto/walkthrough-creating-your-first-document-level-customization-for-excel.md) | 示範如何建立 Excel 的基本文件層級自訂。 |
 | [逐步解說：建立 Excel 的第一個 VSTO 增益集](../vsto/walkthrough-creating-your-first-vsto-add-in-for-excel.md) | 示範如何建立 Excel 的基本 VSTO 增益集。 |
-| [逐步解說：在執行時間于 VSTO 增益集專案中，將控制項加入工作表](../vsto/walkthrough-adding-controls-to-a-worksheet-at-run-time-in-vsto-add-in-project.md) | 示範如何使用 VSTO 增益集，於執行階段在工作表中加入 Windows Form 按鈕、 <xref:Microsoft.Office.Tools.Excel.NamedRange>和 <xref:Microsoft.Office.Tools.Excel.ListObject> 。 |
+| [逐步解說：在執行時間于 VSTO 增益集專案中將控制項加入工作表](../vsto/walkthrough-adding-controls-to-a-worksheet-at-run-time-in-vsto-add-in-project.md) | 示範如何使用 VSTO 增益集，於執行階段在工作表中加入 Windows Form 按鈕、 <xref:Microsoft.Office.Tools.Excel.NamedRange>和 <xref:Microsoft.Office.Tools.Excel.ListObject> 。 |
 | [瞭解共同撰寫與增益集](./understanding-coauthoring-and-addins.md) | 說明您可能需要對解決方案進行的調整，以配合共同撰寫。 |
-| [Office 開發中的 Excel 2010](http://go.microsoft.com/fwlink/?LinkId=199011) | 提供開發 Excel 方案的相關文章和參考文件連結。 非專屬於使用 Visual Studio 的 Office 程式開發。 |
+| [Office 開發中的 Excel 2010](/previous-versions/office/developer/office-2010/ee658205(v=office.14)) | 提供開發 Excel 方案的相關文章和參考文件連結。 非專屬於使用 Visual Studio 的 Office 程式開發。 |

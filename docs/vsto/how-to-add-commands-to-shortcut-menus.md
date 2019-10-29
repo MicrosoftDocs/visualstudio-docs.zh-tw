@@ -1,5 +1,5 @@
 ---
-title: HOW TO：將命令加入至捷徑功能表
+title: 如何：將命令新增至快捷方式功能表
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,15 +13,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3b20b10a37908e2c9744aeac63bb3eda091da478
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 82c26022f0c88f1ce125c64f5ec3b2df8d20346e
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62826401"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72986020"
 ---
-# <a name="how-to-add-commands-to-shortcut-menus"></a>HOW TO：將命令加入至捷徑功能表
-  本主題示範如何使用 VSTO 增益集將命令加入 Office 應用程式中的捷徑功能表。
+# <a name="how-to-add-commands-to-shortcut-menus"></a>如何：將命令新增至快捷方式功能表
+  本主題示範如何使用 VSTO 增益集，將命令新增至 Office 應用程式中的快捷方式功能表。
 
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
 
@@ -40,7 +40,7 @@ ms.locfileid: "62826401"
      [!code-csharp[Trin_WordAddIn_Menus#1](../vsto/codesnippet/CSharp/trin_wordaddin_menus.cs/thisaddin.cs#1)]
      [!code-vb[Trin_WordAddIn_Menus#1](../vsto/codesnippet/VisualBasic/trin_wordaddin_menus.vb/thisaddin.vb#1)]
 
-5. 在方案總管 中選取功能區 XML 檔案。 根據預設，名為功能區 XML 檔案*Ribbon1.xml*。
+5. 在方案總管中選取功能區 XML 檔案。 根據預設，功能區 XML 檔案的名稱為*Ribbon1 .xml*。
 
 6. 在功能表列上依序選擇 [檢視] > [程式碼]。
 
@@ -48,7 +48,7 @@ ms.locfileid: "62826401"
 
 7. 在程式碼編輯器中，加入描述捷徑功能表以及您想要加入捷徑功能表之控制項的 XML。
 
-     下列範例會將按鈕、功能表和圖庫控制項加入 Word 文件的捷徑功能表。 這個捷徑功能表的控制項 ID 是 ContextMenuText。 如需完整的 Office 2010 捷徑控制項 ID，請參閱[Office 2010 說明檔：Office fluent 使用者介面控制項識別碼](http://go.microsoft.com/fwlink/?LinkID=181052)。
+     下列範例會將按鈕、功能表和圖庫控制項加入 Word 文件的捷徑功能表。 這個捷徑功能表的控制項 ID 是 ContextMenuText。 如需 Office 2010 快捷方式控制項 ID 的完整清單，請參閱[office 2010 說明檔： office 流暢的使用者介面控制項識別碼](https://www.microsoft.com/download/details.aspx?id=6627)。
 
     ```xml
     <?xml version="1.0" encoding="UTF-8"?>
@@ -70,17 +70,17 @@ ms.locfileid: "62826401"
     </customUI>
     ```
 
-8. 在方案總管 中，選擇 **MyRibbon.cs** 或 **MyRibbon.vb**。
+8. 在方案總管中，選擇 **MyRibbon.cs** 或 **MyRibbon.vb**。
 
-9. 將回呼方法加入`Ribbon1`您想要處理的每個控制項的類別。
+9. 針對您要處理的每個控制項，將回呼方法新增至 `Ribbon1` 類別。
 
-     下列回呼方法會處理 [My Button]  按鈕。 此程式碼會在使用中文件的目前游標位置加入字串。
+     下列回呼方法會處理 [My Button] 按鈕。 此程式碼會在使用中文件的目前游標位置加入字串。
 
      [!code-vb[Trin_WordAddIn_Menus#2](../vsto/codesnippet/VisualBasic/trin_wordaddin_menus.vb/ribbon1.vb#2)]
      [!code-csharp[Trin_WordAddIn_Menus#2](../vsto/codesnippet/CSharp/trin_wordaddin_menus.cs/ribbon1.cs#2)]
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [Office UI 自訂](../vsto/office-ui-customization.md)
-- [逐步解說：建立書籤的捷徑功能表](../vsto/walkthrough-creating-shortcut-menus-for-bookmarks.md)
+- [逐步解說：建立書簽的快捷方式功能表](../vsto/walkthrough-creating-shortcut-menus-for-bookmarks.md)
 - [Office 方案中的選擇性參數](../vsto/optional-parameters-in-office-solutions.md)
-- [自訂 Office 2010 中的操作功能表](http://go.microsoft.com/fwlink/?LinkId=182186)
+- [在 Office 2010 中自訂內容功能表](/previous-versions/office/developer/office-2010/ee691832(v=office.14))

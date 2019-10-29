@@ -13,18 +13,18 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5cc42a5346498c04f759956b2ca00094ac1df119
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: aac250053f90d99e7db27a9862d2dc1b33fadbfb
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72718718"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72983032"
 ---
 # <a name="the-structure-of-the-content_typesxml-file"></a>[Content_types].xml 檔案的結構
 包含 VSIX 封裝中之內容類型的相關資訊。 Visual Studio 使用 [Content_Types] .xml 檔案來安裝封裝，但不會安裝檔案本身。
 
 > [!NOTE]
-> 雖然本主題僅適用于在 VSIX 封裝中使用的 [Content_Type] .xml 檔案，但 [Content_Types] .xml 檔案類型是*開放封裝慣例（OPC）* 標準的一部分。 如需詳細資訊，請參閱《 OPC：在 MSDN 網站上[封裝資料的新標準](http://go.microsoft.com/fwlink/?LinkID=148207)\ （英文 \）。
+> 雖然本主題僅適用于在 VSIX 封裝中使用的 [Content_Type] .xml 檔案，但 [Content_Types] .xml 檔案類型是*開放封裝慣例（OPC）* 標準的一部分。 如需詳細資訊，請參閱《 OPC：在 MSDN 網站上[封裝資料的新標準](https://msdn.microsoft.com/magazine/cc163372.aspx)\ （英文 \）。
 
 ## <a name="attributes-and-elements"></a>屬性和項目
  下列各節將描述根項目及其屬性和子項目。
@@ -48,7 +48,7 @@ ms.locfileid: "72718718"
 | http://schemas.openformats.org/package/2006/content-types | 內容類型架構的位置。 |
 
 ### <a name="child-elements"></a>子項目
- @No__t_0 元素可以包含任意數目的 `Default` 元素。
+ `Types` 元素可以包含任意數目的 `Default` 元素。
 
 |項目|描述|
 |-------------|-----------------|
@@ -102,4 +102,4 @@ ms.locfileid: "72718718"
 ## <a name="see-also"></a>請參閱
 - [VSIX 封裝的結構](../extensibility/anatomy-of-a-vsix-package.md)
 - [VSIX 延伸模組架構1.0 參考](https://msdn.microsoft.com/library/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)
-- [OPC：封裝資料的新標準](http://go.microsoft.com/fwlink/?LinkID=148207)
+- [OPC：封裝資料的新標準](https://msdn.microsoft.com/magazine/cc163372.aspx)

@@ -11,12 +11,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 860f322724618ddb99bd9ab39eeefa488d9a71c5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: df653dbd449429b6995c987328a401866751fd5e
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666898"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72981256"
 ---
 # <a name="writing-a-t4-text-template"></a>撰寫 T4 文字範本
 文字範本包含將透過它產生的文字。 例如，建立網頁的範本將會包含 "\<html > ..."以及 HTML 網頁的所有其他標準部分。 插入至範本的是*控制區塊*，也就是程式碼的片段。 控制區塊提供不同的值，並允許文字的各部分成為條件式和重複。
@@ -236,7 +236,7 @@ private void WriteSquareLine(int i)
 <# string fileContent = File.ReadAllText(@"C:\myData.txt"); ...
 ```
 
- 將檔案**載入為可導覽的模型**。 功能較強大的方法是將資料讀取為您文字範本程式碼可以巡覽的模型。 例如，您可以載入 XML 檔案，並使用 XPath 運算式對其進行巡覽。 您也可以使用[xsd.exe](http://go.microsoft.com/fwlink/?LinkId=178765)來建立一組可供您讀取 XML 資料的類別。
+ 將檔案**載入為可導覽的模型**。 功能較強大的方法是將資料讀取為您文字範本程式碼可以巡覽的模型。 例如，您可以載入 XML 檔案，並使用 XPath 運算式對其進行巡覽。 您也可以使用[xsd.exe](/dotnet/standard/serialization/xml-schema-definition-tool-xsd-exe)來建立一組可供您讀取 XML 資料的類別。
 
  **在圖表或表單中編輯模型檔案。** [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] 提供的工具可讓您將模型編輯為圖表或 Windows form。 這樣可以更輕鬆地與所產生應用程式的使用者討論此模型。 [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] 也會建立一組反映模型結構的強型別類別。 如需詳細資訊，請參閱[從特定領域語言產生程式碼](../modeling/generating-code-from-a-domain-specific-language.md)。
 

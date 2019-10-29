@@ -10,12 +10,12 @@ ms.assetid: fbcd57ee-06ad-4260-8694-09f8e0f93e39
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 4bbc7423c3f08665109c17d25d43ae6d9d652100
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 90dae3add4782af18763168643cfa5755d37cc2e
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653602"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72981266"
 ---
 # <a name="how-to-create-a-web-service-test"></a>如何：建立 Web 服務測試
 
@@ -23,7 +23,7 @@ ms.locfileid: "72653602"
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
-下列程序使用 Commerce Starter Kit 內所包含的 Web 服務。 您可以從 [ASP.NET Commerce Starter Kit](http://go.microsoft.com/fwlink/?LinkId=181469) 下載它。
+下列程序使用 Commerce Starter Kit 內所包含的 Web 服務。 您可以從 [ASP.NET Commerce Starter Kit](https://sourceforge.net/projects/ppcsk/) 下載它。
 
 **Requirements**
 

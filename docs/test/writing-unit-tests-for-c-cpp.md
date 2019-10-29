@@ -8,12 +8,12 @@ manager: markl
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 75244cc728b238a04569875ac01f1c2a3f27d336
-ms.sourcegitcommit: 16175e0cea6af528e9ec76f0b94690faaf1bed30
+ms.openlocfilehash: 9d69c91af316c755b2dcf4f339d8f47d49096b6a
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/28/2019
-ms.locfileid: "71481922"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72982905"
 ---
 # <a name="write-unit-tests-for-cc-in-visual-studio"></a>在 Visual Studio 中撰寫 C/C++ 的單元測試
 
@@ -39,7 +39,7 @@ C++ 單元測試專案支援 [CodeLens](../ide/find-code-changes-and-other-histo
 
 - **Google Test 配接器**隨附作為 [使用 C++ 的桌面開發] 工作負載的預設元件。 它具有可透過 [方案總管] 中方案節點上的 [加入新的專案] 右鍵功能表新增至方案的專案範本，以及可透過 [工具] > [選項] 來設定的選項。 如需詳細資訊，請參閱[如何：在 Visual Studio 中使用 Google Test](how-to-use-google-test-for-cpp.md)。
 
-- **Boost.Test** 隨附作為 [使用 C++ 的桌面開發] 工作負載的預設元件。 它與**測試總管**整合但目前沒有專案範本，因此必須手動設定。 如需詳細資訊，請參閱[如何：在 Visual Studio 中使用 Boost.Test](how-to-use-boost-test-for-cpp.md)。
+- **Boost.Test** 隨附作為 [使用 C++ 的桌面開發] 工作負載的預設元件。 它與**測試總管**整合但目前沒有專案範本，因此必須手動設定。 如需詳細資訊，請參閱[如何：在 Visual Studio 中使用提升。](how-to-use-boost-test-for-cpp.md)
 
 - **CTest** 支援已隨附於 [使用 C++ 的桌面開發] 工作負載之一部分的 [C++ CMake 工具] 元件。 不過，CTest 尚未與**測試總管**完全整合。 如需詳細資訊，請參閱[如何：在 Visual Studio 中使用 CTest](how-to-use-ctest-for-cpp.md)。
 
@@ -79,7 +79,7 @@ C++ 單元測試專案支援 [CodeLens](../ide/find-code-changes-and-other-histo
 
 ### <a name="link-to-object-or-library-files"></a>連結至物件或程式庫檔案
 
-若測試程式碼沒有匯出您要測試的函式，您可以將輸出 .obj 或 .lib 檔案新增至測試專案的相依性。 請參閱[將測試連結至物件或程式庫檔案](https://docs.microsoft.com/visualstudio/test/unit-testing-existing-cpp-applications-with-test-explorer?view=vs-2015#objectRef)。
+若測試程式碼沒有匯出您要測試的函式，您可以將輸出 .obj 或 .lib 檔案新增至測試專案的相依性。 請參閱[將測試連結至物件或程式庫檔案](unit-testing-existing-cpp-applications-with-test-explorer.md)。
 
 ### <a name="add-include-directives-for-header-files"></a>針對標頭檔新增 #include 指示詞
 
@@ -87,12 +87,12 @@ C++ 單元測試專案支援 [CodeLens](../ide/find-code-changes-and-other-histo
 
 ![新增 include 指示詞](media/cpp-add-includes-test-project.png)
 
-若要避免必須在原始檔的每個 include 語句中輸入完整路徑，您可以在**專案** > **屬性**中加入必要的資料夾， > **C/C++**  > **一般** >  個**額外包括目錄**。
+若要避免必須在原始檔的每個 include 語句中輸入完整路徑，您可以在**Project** > **屬性**中加入必要的資料夾， > **C/C++**  > **一般** > **其他包含目錄**。
 
 ### <a name="write-test-methods"></a>撰寫測試方法
 
 > [!NOTE]
-> 本節說明適用於 C/C++ 的 Microsoft 單元測試架構語法。 相關文件如下：[Microsoft.VisualStudio.TestTools.CppUnitTestFramework API 參考](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md)。 如需 Google Test 文件，請參閱 [Google Test primer](https://github.com/google/googletest/blob/master/googletest/docs/primer.md) (Google Test 入門)。 如需 Boost.Test，請參閱 [Boost Test library:The unit test framework](http://www.boost.org/doc/libs/1_46_0/libs/test/doc/html/utf.html) (Boost Test 程式庫：單元測試架構)。
+> 本節說明適用於 C/C++ 的 Microsoft 單元測試架構語法。 相關文件如下：[Microsoft.VisualStudio.TestTools.CppUnitTestFramework API 參考](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md)。 如需 Google Test 文件，請參閱 [Google Test primer](https://github.com/google/googletest/blob/master/googletest/docs/primer.md) (Google Test 入門)。 如需 Boost.Test，請參閱 [Boost Test library: The unit test framework](https://www.boost.org/doc/libs/1_46_0/libs/test/doc/html/utf.html) (Boost Test 程式庫：單元測試架構)。
 
 測試專案中的 *.cpp* 檔為您定義虛設常式類別和方法，以示範如何撰寫測試程式碼。 請注意，這些簽章使用 TEST_CLASS 和 TEST_METHOD 巨集，因此可從 [測試總管] 視窗探索方法。
 
@@ -140,7 +140,7 @@ TEST_METHOD(TestClassInit)
 
 **Visual Studio 2017 和更新版本 (Professional 與 Enterprise 版)**
 
-[CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md) 可讓您快速查看單元測試的狀態，而不用離開程式碼編輯器。 您可以採用下列任何一種方式為 C++ 單元測試專案初始化 CodeLens：
+[CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md)可讓您快速查看單元測試的狀態，而不需要離開程式碼編輯器。 您可以採用下列任何一種方式為 C++ 單元測試專案初始化 CodeLens：
 
 - 編輯及建置測試專案或方案。
 - 重建您的專案或方案。
@@ -154,6 +154,6 @@ TEST_METHOD(TestClassInit)
 
 ![C++ CodeLens 執行及偵錯](media/cpp-test-codelens-run-debug.png)
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [對程式碼進行單元測試](unit-test-your-code.md)

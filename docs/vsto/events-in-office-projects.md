@@ -32,12 +32,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ae8d89baf864c73bed42e4f478624bc930e3c143
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: c8e8aca881ba25df134c675ac504ea0794c4b051
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71253614"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72986122"
 ---
 # <a name="events-in-office-projects"></a>Office 專案中的事件
   每個 Office 專案範本會自動產生數個事件處理常式。 文件層級自訂的事件處理常式與 VSTO 增益集的事件處理常式有些許不同。
@@ -45,7 +45,7 @@ ms.locfileid: "71253614"
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
 
 ## <a name="document-level-projects"></a>檔層級專案
- Visual Studio 會在文件層級自訂中為新的或現有的文件或工作表，提供產生的後置程式碼。 此程式碼會引發兩個不同的事件：**啟動**和**關閉**。
+ Visual Studio 會在文件層級自訂中為新的或現有的文件或工作表，提供產生的後置程式碼。 這個程式碼會引發兩個不同的事件： **Startup** 和 **Shutdown**。
 
 ### <a name="startup-event"></a>Startup 事件
  在執行文件且組件中的所有初始設定程式碼都已執行之後，每個主項目 (文件、活頁簿或工作表) 都會引發 **Startup** 事件。 這是在程式碼執行的類別建構函式中，所執行的最後動作。 如需主專案的詳細資訊，請參閱[主專案和主控制項總覽](../vsto/host-items-and-host-controls-overview.md)。
@@ -103,39 +103,39 @@ ms.locfileid: "71253614"
 ### <a name="order-of-events-in-document-level-excel-projects"></a>檔層級 Excel 專案中的事件順序
  呼叫 Excel 專案中 **Startup** 事件處理常式的順序如下：
 
-1. `ThisWorkbook_Startup`.
+1. `ThisWorkbook_Startup`
 
-2. `Sheet1_Startup`.
+2. `Sheet1_Startup`
 
-3. `Sheet2_Startup`.
+3. `Sheet2_Startup`
 
-4. `Sheet3_Startup`.
+4. `Sheet3_Startup`
 
 5. 順序中的其他工作表。
 
    呼叫活頁簿方案中 **Shutdown** 事件處理常式的順序如下：
 
-6. `ThisWorkbook_Shutdown`.
+6. `ThisWorkbook_Shutdown`
 
-7. `Sheet1_Shutdown`.
+7. `Sheet1_Shutdown`
 
-8. `Sheet2_Shutdown`.
+8. `Sheet2_Shutdown`
 
-9. `Sheet3_Shutdown`.
+9. `Sheet3_Shutdown`
 
 10. 順序中的其他工作表。
 
     此順序是在編譯專案時決定。 如果使用者在執行階段重新排列工作表，則下次開啟或關閉活頁簿時，引發事件的順序並不會因而變更。
 
 ## <a name="vsto-add-in-projects"></a>VSTO 增益集專案
- Visual Studio 提供在 VSTO 增益集中產生的程式碼。這個程式碼會引發兩個不同的事件： <xref:Microsoft.Office.Tools.AddInBase.Startup> 和 <xref:Microsoft.Office.Tools.AddInBase.Shutdown>。
+ Visual Studio 提供 VSTO 增益集產生的程式碼。此程式碼會引發兩個不同的事件： <xref:Microsoft.Office.Tools.AddInBase.Startup> 和 <xref:Microsoft.Office.Tools.AddInBase.Shutdown>。
 
 ### <a name="startup-event"></a>Startup 事件
  VSTO 增益集載入並執行組件中的所有初始化程式碼之後，會引發 <xref:Microsoft.Office.Tools.AddIn.Startup> 事件。 這個事件是由所產生程式碼檔中的 `ThisAddIn_Startup` 方法處理。
 
  `ThisAddIn_Startup` 事件處理常式中的程式碼是第一個執行的使用者程式碼，除非您的增益集會覆寫 <xref:Microsoft.Office.Tools.AddInBase.RequestComAddInAutomationService%2A> 方法。 在這個情況下， `ThisAddIn_Startup` 事件處理常式會在 <xref:Microsoft.Office.Tools.AddInBase.RequestComAddInAutomationService%2A>之後呼叫。
 
- 如果程式碼需要開啟`ThisAdd-In_Startup`檔，請勿在事件處理常式中加入程式碼。 相反地，請將程式碼加入 Office 應用程式在使用者建立或開啟文件時所引發的事件。 如需詳細資訊，請參閱[Office 應用程式啟動時存取檔](../vsto/programming-vsto-add-ins.md#AccessingDocuments)。
+ 如果程式碼需要開啟檔，請勿在 `ThisAdd-In_Startup` 事件處理常式中加入程式碼。 相反地，請將程式碼加入 Office 應用程式在使用者建立或開啟文件時所引發的事件。 如需詳細資訊，請參閱[Office 應用程式啟動時存取檔](../vsto/programming-vsto-add-ins.md#AccessingDocuments)。
 
  如需 VSTO 增益集啟動順序的詳細資訊，請參閱[Vsto 增益集的架構](../vsto/architecture-of-vsto-add-ins.md)。
 
@@ -150,9 +150,9 @@ ms.locfileid: "71253614"
 - <xref:Microsoft.Office.Interop.Outlook.ExplorerEvents_10_Event.Close> 物件的 <xref:Microsoft.Office.Interop.Outlook.Explorer> 事件。
 
 > [!NOTE]
-> 您可以修改登錄，強制 Outlook 在結束時引發 <xref:Microsoft.Office.Tools.AddInBase.Shutdown> 事件。 不過，如果系統管理員還原此設定，則 Outlook 結束時，便不會再執行任何您加入至 `ThisAddIn_Shutdown` 方法的程式碼。 如需詳細資訊，請參閱[Outlook 2010 的關閉變更](http://go.microsoft.com/fwlink/?LinkID=184614)。
+> 您可以修改登錄，強制 Outlook 在結束時引發 <xref:Microsoft.Office.Tools.AddInBase.Shutdown> 事件。 不過，如果系統管理員還原此設定，則 Outlook 結束時，便不會再執行任何您加入至 `ThisAddIn_Shutdown` 方法的程式碼。 如需詳細資訊，請參閱[Outlook 2010 的關閉變更](/previous-versions/office/developer/office-2010/ee720183(v=office.14))。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [開發 Office 方案](../vsto/developing-office-solutions.md)
 - [如何：在 Visual Studio 中建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)
 - [程式檔層級自訂](../vsto/programming-document-level-customizations.md)

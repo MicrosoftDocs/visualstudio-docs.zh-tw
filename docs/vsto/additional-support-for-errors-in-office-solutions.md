@@ -1,5 +1,5 @@
 ---
-title: Office 方案錯誤的其他支援
+title: Office 方案中錯誤的其他支援
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -56,20 +56,20 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fb5877bccdc60d031e6ccd799eb6536df15fda38
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 01b225b27dfe9c5e1f006105b8e2676a509234b9
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62953182"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72984629"
 ---
-# <a name="additional-support-for-errors-in-office-solutions"></a>Office 方案錯誤的其他支援
+# <a name="additional-support-for-errors-in-office-solutions"></a>Office 方案中錯誤的其他支援
 
-您可以使用下列資源可協助您尋找當您建立 Office 方案在 Visual Studio 中遇到的常見問題的解答。
+您可以使用下列資源，協助您在 Visual Studio 建立 Office 方案時，找到所遇到問題的解答。
 
-## <a name="troubleshoot-specific-errors"></a>針對特定的錯誤進行疑難排解
+## <a name="troubleshoot-specific-errors"></a>針對特定錯誤進行疑難排解
 
-如需在 Office 方案中的一些常見錯誤的協助，請參閱下列主題：
+如需 Office 方案中一些常見錯誤的協助，請參閱下列主題：
 
 - [針對 Office 方案中的錯誤進行疑難排解](../vsto/troubleshooting-errors-in-office-solutions.md)
 
@@ -79,19 +79,19 @@ ms.locfileid: "62953182"
 
 ## <a name="other-resources"></a>其他資源
 
-[Visual Studio tools for Office 論壇](http://go.microsoft.com/fwlink/?LinkId=149744)
+[Visual Studio tools for Office 論壇](https://social.msdn.microsoft.com/Forums/vstudio/en-US/home?forum=vsto)
 
-提供在 Visual Studio 中的 Office developer tools 的相關問題的論壇。
+提供 Visual Studio 中 Office 開發人員工具相關問題的論壇。
 
-[Microsoft 說明及支援](http://go.microsoft.com/fwlink/?LinkID=108287)
+[Microsoft 說明及支援](https://support.microsoft.com)
 
 提供知識庫文件、資源下載和更新、支援網路廣播及其他服務的存取。
 
 [用於開發 Office 方案的其他資源](../vsto/additional-resources-for-developing-office-solutions.md)
 
-提供其他資源的連結，以進一步了解開發 Office 方案和使用 Visual Studio 的 Office 程式開發。
+提供其他資源的連結，以深入瞭解如何使用 Visual Studio 來開發 Office 方案和 Office 程式開發。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [針對 Office 方案中的錯誤進行疑難排解](../vsto/troubleshooting-errors-in-office-solutions.md)
 - [針對 Office 方案安全性進行疑難排解](../vsto/troubleshooting-office-solution-security.md)

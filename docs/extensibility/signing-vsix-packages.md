@@ -14,12 +14,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 08a709b50dd61beb874ea4cb80ebfb92a8fcd49e
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 8e2e97845c7ef17476e18e0068663772341ad8eb
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72720045"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72983117"
 ---
 # <a name="signing-vsix-packages"></a>簽署 VSIX 套件
 延伸模組元件不需要經過簽署，就能在 Visual Studio 中執行，但最好是這麼做。
@@ -30,7 +30,7 @@ ms.locfileid: "72720045"
 > 從 Visual Studio 2015 開始，使用 SHA256 加密以外的任何專案簽署的 VSIX 封裝都會識別為具有不正確簽章。 VSIX 安裝不會遭到封鎖，但會警告使用者。
 
 ## <a name="signing-a-vsix-with-vsixsigntool"></a>使用 VSIXSignTool 簽署 VSIX
- Nuget.org 上的[VisualStudioExtensibility](http://www.nuget.org/profiles/VisualStudioExtensibility)提供了 SHA256 加密簽署工具，網址為[VsixSignTool](http://www.nuget.org/packages/Microsoft.VSSDK.Vsixsigntool)。
+ Nuget.org 上的[VisualStudioExtensibility](https://www.nuget.org/profiles/VisualStudioExtensibility)提供了 SHA256 加密簽署工具，網址為[VsixSignTool](https://www.nuget.org/packages/Microsoft.VSSDK.Vsixsigntool)。
 
 #### <a name="to-use-the-vsixsigntool"></a>若要使用 VSIXSignTool
 

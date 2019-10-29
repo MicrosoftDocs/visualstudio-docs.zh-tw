@@ -1,5 +1,5 @@
 ---
-title: HOW TO：讀取和寫入文件屬性
+title: 如何：讀取和寫入檔案屬性
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,21 +15,19 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ac0d81c9e42a5c3aa22a09d59f346e6127b1284f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 71a4b1a84c4544f4dc2b359e391f3c9f768e8eee
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62961562"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985802"
 ---
-# <a name="how-to-read-from-and-write-to-document-properties"></a>HOW TO：讀取和寫入文件屬性
+# <a name="how-to-read-from-and-write-to-document-properties"></a>如何：讀取和寫入檔案屬性
   文件屬性可與文件一起儲存。 Office 應用程式提供許多內建屬性，例如作者、標題和主旨。 本主題說明如何設定 Microsoft Office Excel 和 Microsoft Office Word 的文件屬性。
-
- ![影片連結](../vsto/media/playvideo.gif "影片連結")如需相關的影片示範，請參閱[How do i:存取和操作 Microsoft Word 中的自訂文件屬性？](http://go.microsoft.com/fwlink/?LinkId=136772).
 
  [!INCLUDE[appliesto_docprops](../vsto/includes/appliesto-docprops-md.md)]
 
-## <a name="set-document-properties-in-excel"></a>在 Excel 中的設定文件屬性
+## <a name="set-document-properties-in-excel"></a>在 Excel 中設定文件屬性
  若要處理 Excel 的內建屬性，請使用下列屬性:
 
 - 在文件層級專案中，使用 <xref:Microsoft.Office.Tools.Excel.Workbook.BuiltinDocumentProperties%2A> 類別的 `ThisWorkbook` 屬性。
@@ -52,7 +50,7 @@ ms.locfileid: "62961562"
      [!code-vb[Trin_VstcoreProgramming#8](../vsto/codesnippet/VisualBasic/Trin_VstcoreProgrammingExcelVB/ThisWorkbook.vb#8)]
      [!code-csharp[Trin_VstcoreProgramming#8](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingExcelCS/ThisWorkbook.cs#8)]
 
-## <a name="set-document-properties-in-word"></a>在 Word 中的設定文件屬性
+## <a name="set-document-properties-in-word"></a>在 Word 中設定文件屬性
  若要處理 Word 的內建屬性，請使用下列屬性:
 
 - 在文件層級專案中，使用 <xref:Microsoft.Office.Tools.Word.Document.BuiltInDocumentProperties%2A> 類別的 `ThisDocument` 屬性。
@@ -80,7 +78,7 @@ ms.locfileid: "62961562"
 
  雖然您處理的是 Word 和 Excel 及其物件，但 Microsoft Office 仍會提供可用的內建文件屬性清單。 嘗試存取未定義的屬性會引發例外狀況。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [程式 VSTO 增益集](../vsto/programming-vsto-add-ins.md)
-- [程式文件層級自訂](../vsto/programming-document-level-customizations.md)
+- [程式檔層級自訂](../vsto/programming-document-level-customizations.md)
 - [如何：建立和修改自訂文件屬性](../vsto/how-to-create-and-modify-custom-document-properties.md)

@@ -14,26 +14,23 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5487bd64e835f876141afb6657dd885c38223cc5
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 2c939d15375696aeef47754eec31f63d15b4371a
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72719467"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72982422"
 ---
 # <a name="support-for-the-visual-studio-sdk"></a>支援 Visual Studio SDK
 有關于如何擴充 Visual Studio 整合式開發環境（IDE）之問題的客戶，有數個支援選項可供使用。
 
 ## <a name="free-support"></a>免費支援
 
-### <a name="msdn-development-center"></a>MSDN 開發中心
- MSDN 上的 Visual Studio 擴充性[開發人員中心](http://go.microsoft.com/fwlink/?LinkID=84381)包含的資源，可協助您回答如何擴充 Visual Studio 的相關問題。 例如，有一些 VSIP 開發人員 blog 的連結。
-
 ### <a name="microsoft-newsgroups"></a>Microsoft 新聞群組
  Visual Studio 開發小組的成員，以及延伸 Visual Studio 的其他開發人員，通常會參與 vstudio 擴充性新聞群組。 此新聞群組是受管理的新聞群組。 如果您是 MSDN 通用訂閱者，請務必註冊無垃圾郵件別名，讓 Microsoft 能夠回應。
 
 ### <a name="msdn-forums"></a>MSDN 論壇
- [MSDN 論壇](http://go.microsoft.com/fwlink/?LinkID=76632)提供另一種與同事和專家交談的方式。 論壇的圖形化使用者介面（UI）的設計，是為了讓他們比新聞群組更容易使用。 Visual Studio 擴充性[論壇](http://go.microsoft.com/fwlink/?LinkID=121964)是開始搜尋擴充性問題答案的好地方。 請一律搜尋，再詢問問題，因為其他人可能已提出相同的問題。
+ [MSDN 論壇](https://social.msdn.microsoft.com/Forums/en-US/home)提供另一種與同事和專家交談的方式。 論壇的圖形化使用者介面（UI）的設計，是為了讓他們比新聞群組更容易使用。 Visual Studio 擴充性[論壇](/azure/devops/integrate/index?view=azure-devops&viewFallbackFrom=vsts)是開始搜尋擴充性問題答案的好地方。 請一律搜尋，再詢問問題，因為其他人可能已提出相同的問題。
 
 ### <a name="visual-studio-gallery"></a>Visual Studio 組件庫
  [Visual Studio Marketplace](https://marketplace.visualstudio.com/)是擴充功能和範例程式碼的位置。 您可以使用 Visual Studio 來尋找改善生產力和使用者體驗的工具、示範如何使用 Vspackage 和 Managed Extensibility Framework （MEF）的範例應用程式，以及其他類型的範例。
@@ -63,7 +60,7 @@ ms.locfileid: "72719467"
 
 與 VSIP 計劃搭配使用頂級支援供應專案的相關問題，可以傳送至[vsipsvs@microsoft.com](mailto:vsipsvs@microsoft.com)。 關於新的「合作夥伴優勢」計畫的問題可以傳送至[advantg@microsoft.com](mailto:advantg@microsoft.com)。
 
-個別支援要求的相關資訊可在[個別支援要求](http://go.microsoft.com/fwlink/?LinkID=82385)中找到。
+個別支援要求的相關資訊可在[個別支援要求](https://support.microsoft.com/supportforbusiness/productselection)中找到。
 
 ## <a name="see-also"></a>請參閱
 

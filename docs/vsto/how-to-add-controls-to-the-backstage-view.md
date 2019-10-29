@@ -1,5 +1,5 @@
 ---
-title: 'HOW TO：將控制項加入至 Backstage 檢視 '
+title: '如何：將控制項加入至 Backstage 檢視 '
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -20,31 +20,31 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c4241464fe8a43af882fbdbad0f898838e8fd897
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 87cea877928baf52b0442ed9b0d952fcf649f155
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62826777"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72986016"
 ---
-# <a name="how-to-add-controls-to-the-backstage-view"></a>HOW TO：將控制項加入至 Backstage 檢視
-  您可以使用功能區設計工具將控制項新增至後按一下開啟功能表**檔案** 索引標籤。當您執行應用程式中，您將加入的控制項**檔案**索引標籤會出現一個名為群組**增益集**。
+# <a name="how-to-add-controls-to-the-backstage-view"></a>如何：將控制項加入至 Backstage 檢視
+  當您按一下 [檔案] 索引標籤時，您可以使用功能區設計工具將控制項新增至**開啟的功能表**。當您執行應用程式時，您新增**至 [檔案**] 索引標籤的控制項就會顯示一個名為 [**增益集**] 的群組。
 
- 您無法在 Visual Studio 中使用功能區設計工具內建控制項之前或之後放置控制項。 內建控制項是已經出現在 Backstage 檢視的控制項。 如果您想要調整控制項的位置，內建控制項之前或之後，您必須使用功能區 XML。 如需詳細資訊**功能區 (XML)**，請參閱[功能區 XML](../vsto/ribbon-xml.md)。 如需自訂 Backstage 檢視的詳細資訊，請參閱 <<c0> [ 開發人員的 Office 2010 Backstage 檢視簡介](http://go.microsoft.com/fwlink/?LinkId=182189)並[來自訂開發人員的 Office 2010 Backstage 檢視](http://go.microsoft.com/fwlink/?LinkId=182188)。
+ 您無法使用 Visual Studio 中的功能區設計工具，在內建控制項的前後放置控制項。 內建控制項是已出現在 Backstage 檢視中的控制項。 如果您想要在內建控制項之前或之後放置控制項，則必須使用功能區 XML。 如需有關**功能區（XML）** 的詳細資訊，請參閱[功能區 XML](../vsto/ribbon-xml.md)。 如需自訂 Backstage 檢視的詳細資訊，請參閱[適用于開發人員的 office 2010 backstage 視圖簡介](/previous-versions/office/developer/office-2010/ee691833(v=office.14))和[為開發人員自訂 office 2010 backstage 視圖](/previous-versions/office/developer/office-2010/ee815851(v=office.14))。
 
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]
 
-### <a name="to-add-controls-to-backstage-view"></a>將控制項加入至 Backstage 檢視
+### <a name="to-add-controls-to-backstage-view"></a>若要將控制項加入至 Backstage 檢視
 
-1. 在 [設計] 檢視中開啟功能區項目。
+1. 開啟設計檢視中的功能區專案。
 
-     如需如何新增**功能區 （視覺化設計工具）** 至您的專案項目，請參閱[How to:開始自訂功能區](../vsto/how-to-get-started-customizing-the-ribbon.md)。
+     如需如何將 **[功能區（視覺化設計工具）** ] 專案加入至專案的詳細資訊，請參閱[如何：開始自訂功能區](../vsto/how-to-get-started-customizing-the-ribbon.md)。
 
-2. 在 [功能區設計工具中，按一下**檔案**] 索引標籤。
+2. 在功能區設計工具中，按一下 [**檔案] 索引**標籤。
 
-     功能表設計工具隨即出現。 此設計介面不包含任何控制項。
+     功能表設計工具隨即出現。 這個設計介面不包含任何控制項。
 
-3. 從**Office 功能區控制項**索引標籤**工具箱**，任何下列控制項拖曳至設計工具 功能表：
+3. 從 [工具箱] 的 [ **Office 功能區控制項**] 索引標籤中，將下列任何控制項拖曳至功能表設計**工具**：
 
     - 按鈕
 
@@ -60,11 +60,11 @@ ms.locfileid: "62826777"
 
     - ToggleButton
 
-4. 拖曳控制項，以在功能表上將它們移至新位置。
+4. 拖曳控制項，將其移至功能表上的新位置。
 
-## <a name="see-also"></a>另請參閱
-- [功能區概觀](../vsto/ribbon-overview.md)
+## <a name="see-also"></a>請參閱
+- [功能區總覽](../vsto/ribbon-overview.md)
 - [功能區設計工具](../vsto/ribbon-designer.md)
-- [Ribbon XML](../vsto/ribbon-xml.md)
+- [功能區 XML](../vsto/ribbon-xml.md)
 - [如何：開始自訂功能區](../vsto/how-to-get-started-customizing-the-ribbon.md)
-- [逐步解說：使用功能區設計工具建立自訂的索引標籤](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)
+- [逐步解說：使用功能區設計工具建立自訂索引標籤](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)

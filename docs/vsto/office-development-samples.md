@@ -1,5 +1,5 @@
 ---
-title: Office 程式開發範例
+title: Office 開發範例
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,21 +12,21 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5cc00d56b0abf02f99c7ab320ab0353d1b4b2317
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: b9e20f0d14b2940fdbe8096442848f38183b1db7
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63447151"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985732"
 ---
-# <a name="office-development-samples"></a>Office 程式開發範例
+# <a name="office-development-samples"></a>Office 開發範例
   Visual Studio 包含範例應用程式，以示範如何使用 Microsoft Office 開發人員工具建立 Office 方案。 這些範例中的程式碼示範建置 Office 方案時使用的語法、結構和技術。
 
- 如需最新的範例，請參閱[MSDN 開發人員範例：了解程式碼透過](http://go.microsoft.com/fwlink/?LinkID=248199)Microsoft 網站上。
+ 如需最新的範例，請參閱[MSDN 開發人員範例：透過](https://code.msdn.microsoft.com/site/search?query=vsto&f%5B1%5D.Value=vsto&f%5B1%5D.Type=SearchText&f%5B0%5D.Value=11.0&f%5B0%5D.Type=VisualStudioVersion&f%5B0%5D.Text=Visual%20Studio%2011&ac=8)Microsoft 網站上的程式碼學習。
 
  [!INCLUDE[note_security_multiplesample](../vsto/includes/note-security-multiplesample-md.md)]
 
-## <a name="office-development-samples"></a>Office 程式開發範例
+## <a name="office-development-samples"></a>Office 開發範例
 
 |範例|描述|
 |------------|-----------------|
@@ -40,5 +40,5 @@ ms.locfileid: "63447151"
 |UI 管理員範例|示範如何藉由實作 VSTO 增益集中的擴充性介面，來建立 Outlook 的功能區自訂、自訂工作窗格和自訂表單區域。 功能區、工作窗格和表單區域的每個執行個體可彼此正確通訊。|
 |VBA 和 VSTO 互通性範例|示範如何從活頁簿中的 Visual Basic for Applications (VBA) 程式碼，呼叫 Excel 文件層級自訂中的方法。<br /><br /> 這個範例僅於線上提供使用。|
 
-## <a name="see-also"></a>另請參閱
-- [在 Office 程式設計中的一般工作](../vsto/common-tasks-in-office-programming.md)
+## <a name="see-also"></a>請參閱
+- [Office 程式設計的一般工作](../vsto/common-tasks-in-office-programming.md)

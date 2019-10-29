@@ -10,16 +10,16 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1fdfe698096da53abf28aa583c816d9238810333
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: efe452f059d7184e1f7c87fddd6bdc6c213ece8a
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72609336"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72983734"
 ---
 # <a name="supported-visual-studio-editions-for-visualization--modeling-sdk"></a>支援的 Visual Studio Visualization & Modeling SDK 版本
 
-以下是在撰寫和部署環境中 [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] 支援的 Visual Studio 版本清單。 如需這些版本的詳細資訊，請參閱 Microsoft Visual Studio[開發人員中心](http://go.microsoft.com/fwlink/?LinkId=75628)。
+以下是在撰寫和部署環境中 [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] 支援的 Visual Studio 版本清單。 如需這些版本的詳細資訊，請參閱 Microsoft Visual Studio[開發人員中心](https://visualstudio.microsoft.com/)。
 
 ## <a name="authoring-edition"></a>撰寫版本
 
@@ -27,9 +27,9 @@ ms.locfileid: "72609336"
 
 |||
 |-|-|
-|Visual Studio|[http://go.microsoft.com/fwlink/?LinkId=185579](http://go.microsoft.com/fwlink/?LinkId=185579)|
-|Visual Studio SDK|[http://go.microsoft.com/fwlink/?LinkId=185580](http://go.microsoft.com/fwlink/?LinkId=185580)|
-|Visual Studio Visualization and Modeling SDK|[http://go.microsoft.com/fwlink/?LinkID=186128](http://go.microsoft.com/fwlink/?LinkID=186128)|
+|Visual Studio|[http://go.microsoft.com/fwlink/?LinkId=185579](https://visualstudio.microsoft.com/)|
+|Visual Studio SDK|[http://go.microsoft.com/fwlink/?LinkId=185580](/azure/devops/integrate/index?view=azure-devops&viewFallbackFrom=vsts)|
+|Visual Studio Visualization and Modeling SDK|[http://go.microsoft.com/fwlink/?LinkID=186128](https://code.msdn.microsoft.com/Visualization-and-Modeling-313535db)|
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 

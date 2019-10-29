@@ -11,16 +11,16 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d9d6f94a81eb97cb06820381ba09e13d4bdeb9d8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 5aa952a00075cdad262803140ab4c0360f0c62a0
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62957172"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985176"
 ---
 # <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>步驟 3：提供靜態檔案、新增頁面，然後使用範本繼承
 
-**上一步：[使用檢視與頁面範本來建立 Flask 應用程式](learn-flask-visual-studio-step-02-create-app.md)**
+**上一個步驟：[使用檢視與頁面範本來建立 Flask 應用程式](learn-flask-visual-studio-step-02-create-app.md)**
 
 在本教學課程的先前步驟中，您已學會如何建立具有單一獨立式 HTML 頁面的精簡 Flask 應用程式。 不過，現代化 Web 應用程式通常是由許多網頁所組成，並且利用 CSS 和 JavaScript 檔案等共用資源來提供一致的樣式和行為。
 
@@ -44,7 +44,7 @@ ms.locfileid: "62957172"
 
 ### <a name="question-how-does-visual-studio-know-which-item-templates-to-offer"></a>問題：Visual Studio 如何知道應提供哪些項目範本？
 
-回答：Visual Studio 專案檔 (*.pyproj*) 包含將它標示為 Python 專案的專案類型識別碼。 Visual Studio 會使用此類型的識別碼，以便只顯示適用於專案類型的項目範本。 如此一來，Visual Studio 便可為許多專案類型提供豐富的項目範本，而無須要求您每次都要查看整理範本。
+回答：Visual Studio 專案檔 ( *.pyproj*) 包含將它標示為 Python 專案的專案類型識別碼。 Visual Studio 會使用此類型的識別碼，以便只顯示適用於專案類型的項目範本。 如此一來，Visual Studio 便可為許多專案類型提供豐富的項目範本，而無須要求您每次都要查看整理範本。
 
 ## <a name="step-3-2-serve-static-files-from-your-app"></a>步驟 3-2：從您的應用程式提供靜態檔案
 
@@ -56,7 +56,7 @@ ms.locfileid: "62957172"
 
 ### <a name="use-a-static-file-in-a-template"></a>在範本中使用靜態檔案
 
-1. 在 [方案總管] 中，於 Visual Studio 專案的 [HelloFlask] 資料夾上按一下滑鼠右鍵，選取 [新增] > [新增資料夾]，然後將資料夾命名為 `static`。
+1. 在 [方案總管]中，於 Visual Studio 專案的 [HelloFlask] 資料夾上按一下滑鼠右鍵，選取 [新增] > [新增資料夾]，然後將資料夾命名為 `static`。
 
 1. 以滑鼠右鍵按一下 [static] 資料夾，並選取 [新增] > [新增項目]。 在出現的對話方塊中，選取 [Stylesheet] (樣式表) 範本，將檔案命名為 `site.css`，然後選取 [確定]。 **site.css** 檔案會出現在專案中，並在編輯器中開啟。 您的資料夾結構應該與下列影像類似：
 
@@ -91,7 +91,7 @@ ms.locfileid: "62957172"
 
 Flask 提供一個稱為 `serve_static_file` 的函式，您可以從程式碼呼叫此函式來參考專案 *static* 資料夾內的任何檔案。 下列程序會建立一個簡單的 API 端點，傳回靜態資料檔案。
 
-1. 如果您尚未建立 *static* 資料夾，請建立此資料夾：在 [方案總管] 中，於 Visual Studio 專案的 [HelloFlask] 資料夾上按一下滑鼠右鍵，選取 [新增] > [新增資料夾]，然後將資料夾命名為 `static`。
+1. 如果您尚未建立 *static* 資料夾，請建立此資料夾：在 [方案總管]中，於 Visual Studio 專案的 [HelloFlask] 資料夾上按一下滑鼠右鍵，選取 [新增] > [新增資料夾]，然後將資料夾命名為 `static`。
 
 1. 在 *static* 資料夾中，使用下列內容 (無意義的範例資料) 來建立一個名為 *data.json* 的 JSON 資料檔：
 
@@ -113,15 +113,15 @@ Flask 提供一個稱為 `serve_static_file` 的函式，您可以從程式碼�
 
 1. 執行應用程式，然後瀏覽至 /api/data 端點以查看是否已傳回靜態檔案。 完成時，請停止應用程式。
 
-### <a name="question-are-there-any-conventions-for-organizing-static-files"></a>問題：整理靜態檔案有任何慣例嗎？
+### <a name="question-are-there-any-conventions-for-organizing-static-files"></a>問題：組織靜態檔案有任何慣例嗎？
 
-回答：您可以視需要將其他 CSS、JavaScript 和 HTML 檔案新增至您的 *static* 資料夾。 組織靜態檔案的一般方式是建立名為 *fonts*、*scripts* 和 *content* 的子資料夾 (針對樣式表和任何其他檔案)。
+回答：您可以依偏好將其他的 CSS、JavaScript 和 HTML 檔案新增至您的 *static* 資料夾。 組織靜態檔案的一般方式是建立名為 *fonts*、*scripts* 和 *content* 的子資料夾 (針對樣式表和任何其他檔案)。
 
 ### <a name="question-how-do-i-handle-url-variables-and-query-parameters-in-an-api"></a>問題：如何處理 API 中的 URL 變數和查詢參數？
 
-回答：請參閱步驟 1-4 中的[問題：Flask 如何與變數 URL 路由和查詢參數搭配運作？](learn-flask-visual-studio-step-01-project-solution.md#qa-url-variables)
+回答：請參閱步驟 1-4 中[問題：Flask 如何與變數 URL 路由和查詢參數搭配運作？](learn-flask-visual-studio-step-01-project-solution.md#qa-url-variables)的回答
 
-## <a name="step-3-3-add-a-page-to-the-app"></a>步驟 3-3：將頁面新增至應用程式
+## <a name="step-3-3-add-a-page-to-the-app"></a>步驟 3-3：將頁面加入應用程式
 
 將其他頁面加入應用程式意義如下：
 
@@ -131,7 +131,7 @@ Flask 提供一個稱為 `serve_static_file` 的函式，您可以從程式碼�
 
 下列步驟會將 [About] (關於) 頁面新增至 "HelloFlask" 專案，並從首頁連結至該頁面：
 
-1. 在 [方案總管] 中，以滑鼠右鍵按一下 [templates] 資料夾，選取 [新增] > [新增項目]選取 [HTML Page] (HTML 頁面) 項目範本、將檔案命名為 `about.html`，然後選取 [確定]。
+1. 在 [方案總管]中，以滑鼠右鍵按一下 [templates] 資料夾，選取 [新增] > [新增項目]選取 [HTML Page] (HTML 頁面) 項目範本、將檔案命名為 `about.html`，然後選取 [確定]。
 
     > [!Tip]
     > 如果 [新增項目] 命令未出現在 [新增] 功能表上，請確定您已停止應用程式，如此 Visual Studio 才會結束偵錯模式。
@@ -286,6 +286,6 @@ Flask 的範本化系統 (預設為 Jinja) 提供兩種方法，可跨多個範�
 ## <a name="go-deeper"></a>深入了解
 
 - [將 Web 應用程式部署至 Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md)
-- 如需了解更多 Jinja 範本的功能 (例如控制流程)，請參閱 [Jinja 範本設計工具文件](http://jinja.pocoo.org/docs/2.10/templates) \(英文\) (jinja.pocoo.org)
-- 如需有關使用 `url_for`的詳細資料，請參閱 Flask 應用程式物件文件內的 [url_for](http://flask.pocoo.org/docs/1.0/api/?highlight=url_for#flask.url_for)(英文\) (flask.pocoo.org)
-- GitHub 上的教學課程原始程式碼：[Microsoft/python-sample-vs-learning-flask](https://github.com/Microsoft/python-sample-vs-learning-flask)
+- 如需了解更多 Jinja 範本的功能 (例如控制流程)，請參閱 [Jinja 範本設計工具文件](http://jinja.palletsprojects.com/en/2.10.x/templates/) \(英文\) (jinja.pocoo.org)
+- 如需有關使用 `url_for`的詳細資料，請參閱 Flask 應用程式物件文件內的 [url_for](https://flask.palletsprojects.com/en/1.0.x/api/#flask.url_for)(英文\) (flask.pocoo.org)
+- GitHub 上的教學課程原始程式碼：[Microsoft/python-sample-vs-learning-flask](https://github.com/Microsoft/python-sample-vs-learning-flask) \(英文\)

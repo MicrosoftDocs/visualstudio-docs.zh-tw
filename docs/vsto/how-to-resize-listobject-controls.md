@@ -1,5 +1,5 @@
 ---
-title: 作法：調整 ListObject 控制項的大小
+title: 如何：調整 ListObject 控制項的大小
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,19 +13,19 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d7dac99088dc57b538f7a26ffbd0bdc0e3e05b5a
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: fdebceb7ed6357542877bf13522425f7c013da73
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71252120"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985759"
 ---
-# <a name="how-to-resize-listobject-controls"></a>HOW TO：調整 ListObject 控制項的大小
+# <a name="how-to-resize-listobject-controls"></a>如何：調整 ListObject 控制項的大小
   在將 <xref:Microsoft.Office.Tools.Excel.ListObject> 控制項加入 Microsoft Office Excel 活頁簿時，會設定該控制項的大小，不過也可以稍後再進行調整。 例如，您可能想要將兩個資料行的清單變更為三個資料行。
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
 
- 您可以在文件層級專案中，於設計階段或執行階段調整 <xref:Microsoft.Office.Tools.Excel.ListObject> 控制項大小。 您可以在<xref:Microsoft.Office.Tools.Excel.ListObject> VSTO 增益集專案中，于執行時間調整控制項大小。
+ 您可以在文件層級專案中，於設計階段或執行階段調整 <xref:Microsoft.Office.Tools.Excel.ListObject> 控制項大小。 您可以在 VSTO 增益集專案中，于執行時間調整 <xref:Microsoft.Office.Tools.Excel.ListObject> 控制項的大小。
 
  本主題說明下列工作：
 
@@ -35,16 +35,14 @@ ms.locfileid: "71252120"
 
 - [在 VSTO 增益集專案中，于執行時間調整 ListObject 控制項的大小](#runtimeaddin)
 
-  如需<xref:Microsoft.Office.Tools.Excel.ListObject>控制項的詳細資訊，請參閱[ListObject 控制項](../vsto/listobject-control.md)。
-
-  ![影片連結](../vsto/media/playvideo.gif "影片連結")如需相關的影片示範， [請參閱如何?：在執行時間將資料行加入至資料系結清單物件？](http://go.microsoft.com/fwlink/?LinkID=130318).
+  如需 <xref:Microsoft.Office.Tools.Excel.ListObject> 控制項的詳細資訊，請參閱[ListObject 控制項](../vsto/listobject-control.md)。
 
 ## <a name="designtime"></a>在設計階段調整 ListObject 控制項的大小
  若要調整清單的大小，您可以按一下並拖曳其中一個調整大小控點，或是在 [調整清單大小] 對話方塊中重新定義其大小。
 
 ### <a name="to-resize-a-list-by-using-the-resize-list-dialog-box"></a>使用 [調整清單大小] 對話方塊調整清單的大小
 
-1. 按一下資料表中的<xref:Microsoft.Office.Tools.Excel.ListObject>任何位置。 功能區中的 [**資料表工具** > **設計**] 索引標籤隨即出現。
+1. 按一下 [<xref:Microsoft.Office.Tools.Excel.ListObject>] 資料表中的任何位置。 功能區中的 [**資料表工具**] > [**設計**] 索引標籤隨即出現。
 
 2. 在 [屬性] 區段中，按一下 [**調整資料表大小**]。
 
@@ -70,7 +68,7 @@ ms.locfileid: "71252120"
      [!code-vb[Trin_VstcoreHostControlsExcel#7](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#7)]
 
 ## <a name="runtimeaddin"></a>在 VSTO 增益集專案中，于執行時間調整 ListObject 的大小
- 您可以使用 <xref:Microsoft.Office.Tools.Excel.ListObject> 控制項的大小。 如需如何使用 VSTO 增益集將<xref:Microsoft.Office.Tools.Excel.ListObject>控制項加入工作表的詳細資訊，請參閱[如何：將 ListObject 控制項加入至](../vsto/how-to-add-listobject-controls-to-worksheets.md)工作表。
+ 您可以在執行階段調整任何開啟之工作表上 <xref:Microsoft.Office.Tools.Excel.ListObject> 控制項的大小。 如需如何使用 VSTO 增益集將 <xref:Microsoft.Office.Tools.Excel.ListObject> 控制項加入工作表的詳細資訊，請參閱[如何：將 ListObject 控制項加入至工作表](../vsto/how-to-add-listobject-controls-to-worksheets.md)。
 
 ### <a name="to-resize-a-list-object-programmatically"></a>以程式設計方式調整清單物件的大小
 
@@ -84,13 +82,13 @@ ms.locfileid: "71252120"
      [!code-csharp[Trin_Excel_Dynamic_Controls#13](../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/ThisAddIn.cs#13)]
      [!code-vb[Trin_Excel_Dynamic_Controls#13](../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/ThisAddIn.vb#13)]
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [在 VSTO 增益集的執行時間中擴充 Word 檔和 Excel 活頁簿](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)
 - [Office 檔上的控制項](../vsto/controls-on-office-documents.md)
 - [在執行時間將控制項加入 Office 檔](../vsto/adding-controls-to-office-documents-at-run-time.md)
 - [主專案和主控制項總覽](../vsto/host-items-and-host-controls-overview.md)
 - [使用擴充物件自動化 Excel](../vsto/automating-excel-by-using-extended-objects.md)
 - [ListObject 控制項](../vsto/listobject-control.md)
-- [如何：將 ListObject 控制項新增至工作表](../vsto/how-to-add-listobject-controls-to-worksheets.md)
+- [如何：將 ListObject 控制項加入至工作表](../vsto/how-to-add-listobject-controls-to-worksheets.md)
 - [如何：調整書簽控制項的大小](../vsto/how-to-resize-bookmark-controls.md)
 - [如何：調整 NamedRange 控制項的大小](../vsto/how-to-resize-namedrange-controls.md)

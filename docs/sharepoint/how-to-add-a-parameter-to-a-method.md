@@ -1,5 +1,5 @@
 ---
-title: HOW TO：新增參數至方法 |Microsoft Docs
+title: 如何：將參數加入至方法 |Microsoft Docs
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -17,45 +17,45 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a5b76e49285a629234557a973f6d4b45703f1cfd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: eb1a1c1e8f11ac6daa46f9fe1468a1ff3509e135
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62967230"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72986230"
 ---
-# <a name="how-to-add-a-parameter-to-a-method"></a>HOW TO：新增參數至方法
-  若要將資訊傳遞至方法，或從方法傳回的資訊，請使用參數。 所有的方法必須有至少一個參數。 如需如何設計來支援您想要建立的方法的型別參數的詳細資訊，請參閱[設計 Business Data Connectivity 模型](../sharepoint/designing-a-business-data-connectivity-model.md)。
+# <a name="how-to-add-a-parameter-to-a-method"></a>如何：將參數加入至方法
+  使用參數將資訊傳遞至方法，或從方法傳回信息。 所有方法都必須至少有一個參數。 如需如何設計參數以支援您想要建立之方法類型的詳細資訊，請參閱[設計商務資料連線模型](../sharepoint/designing-a-business-data-connectivity-model.md)。
 
- 當您新增參數至方法時，Visual Studio 會將您的專案中的模型檔案的 XML 參數項目。 參數項目之屬性的相關資訊，請參閱[參數](http://go.microsoft.com/fwlink/?LinkId=169284)。
+ 當您將參數加入至方法時，Visual Studio 會將參數專案新增至您專案中模型檔案的 XML。 如需參數專案之屬性的詳細資訊，請參閱[參數](/previous-versions/office/developer/sharepoint-2010/ee557705(v=office.14))。
 
 ### <a name="to-add-a-parameter-to-a-method"></a>若要將參數加入至方法
 
 1. 將方法新增至實體。
 
-2. 在功能表列上選擇 **檢視** > **其他 Windows** > **BDC 方法詳細資料**。
+2. 在功能表列上，選擇 [ **View** > **其他 Windows** > **BDC 方法詳細資料**]。
 
-     **BDC 方法詳細資料**視窗隨即開啟。 如需詳細資訊，請參閱 < [BDC 模型設計工具概觀](../sharepoint/bdc-model-design-tools-overview.md)。
+     [ **BDC 方法詳細資料**] 視窗隨即開啟。 如需詳細資訊，請參閱[BDC 模型設計工具總覽](../sharepoint/bdc-model-design-tools-overview.md)。
 
-3. 在 [ **BDC 方法詳細資料**] 視窗中，展開方法的節點，然後再展開**參數**節點。
+3. 在 [ **BDC 方法詳細資料**] 視窗中，展開方法的節點，然後展開 [**參數**] 節點。
 
-4. 在 **將參數加入**清單中，選擇**建立參數**。
+4. 在 [**加入參數**] 清單中，選擇 [**建立參數**]。
 
-     新的參數會出現下方**參數**節點。
+     新參數會出現在 [**參數**] 節點下方。
 
-5. 在功能表列上選擇 [**檢視** > **屬性] 視窗**。
+5. 在功能表列上，選擇 視圖 ** > 屬性視窗**。
 
-6. 在 **屬性**視窗中，將**名稱**任何有意義的名稱屬性。 比方說，如果此方法會傳回客戶，您可能會將方法命名**GetCustomers**。
+6. 在 [**屬性**] 視窗中，將 [**名稱**] 屬性設定為任何合理的名稱。 例如，如果方法會傳回客戶，您可能會將方法命名為**GetCustomers**。
 
-7. 在 [ **BDC 方法詳細資料**] 視窗中，開啟顯示方向之參數的清單，然後選擇**中**， **InOut**， **Out**，或**傳回**。
+7. 在 [ **BDC 方法詳細資料**] 視窗中，開啟針對參數方向顯示的清單，然後選擇 [ **In**]、[ **InOut**]、[ **Out**] 或 [ **Return**]。
 
-     如需哪一個方向來選擇您要建立之型別方法的詳細資訊，請參閱[設計 business data connectivity 模型](../sharepoint/designing-a-business-data-connectivity-model.md)。
+     如需您所建立之型別方法選擇方向的詳細資訊，請參閱[設計商務資料連線模型](../sharepoint/designing-a-business-data-connectivity-model.md)。
 
-8. 修改參數的類型描述元。 如需詳細資訊，請參閱[如何：定義參數的型別描述元](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)。
+8. 修改參數的類型描述元。 如需詳細資訊，請參閱[如何：定義參數的類型描述](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)元。
 
-## <a name="see-also"></a>另請參閱
-- [BDC 模型設計工具概觀](../sharepoint/bdc-model-design-tools-overview.md)
-- [如何：將實體新增至模型](../sharepoint/how-to-add-an-entity-to-a-model.md)
-- [如何：定義參數的型別描述元](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)
-- [如何：定義方法執行個體](../sharepoint/how-to-define-a-method-instance.md)
-- [設計商務資料連接模型](../sharepoint/designing-a-business-data-connectivity-model.md)
+## <a name="see-also"></a>請參閱
+- [BDC 模型設計工具總覽](../sharepoint/bdc-model-design-tools-overview.md)
+- [如何：將實體加入至模型](../sharepoint/how-to-add-an-entity-to-a-model.md)
+- [如何：定義參數的類型描述元](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)
+- [如何：定義方法實例](../sharepoint/how-to-define-a-method-instance.md)
+- [設計商務資料連線模型](../sharepoint/designing-a-business-data-connectivity-model.md)

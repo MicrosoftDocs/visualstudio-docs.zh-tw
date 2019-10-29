@@ -13,12 +13,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 93e51a1daee6e9635305f4d8a5d275106af7947e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f6d4a19143ccde160a455a8247d10e5cc391e78c
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72609387"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985119"
 ---
 # <a name="how-to-create-a-domain-specific-language-solution"></a>如何：建立網域指定的語言方案
 特定領域語言（DSL）是使用特製化的 Visual Studio 解決方案所建立。
@@ -114,7 +114,7 @@ ms.locfileid: "72609387"
 
  **使用現有的強式名稱金鑰**如果您想要整合 DSL 與另一個元件，請使用此選項。
 
- 如需強式命名的詳細資訊，請參閱[建立和使用強式名稱的元件](http://go.microsoft.com/fwlink/?LinkId=186073)。
+ 如需強式命名的詳細資訊，請參閱[建立和使用強式名稱的元件](/dotnet/standard/assembly/create-use-strong-named)。
 
 ## <a name="see-also"></a>請參閱
 

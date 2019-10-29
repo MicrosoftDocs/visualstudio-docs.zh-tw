@@ -1,5 +1,5 @@
 ---
-title: 開始使用 (Visual Studio 中的 Office 開發)
+title: 開始使用（Visual Studio 中的 Office 開發）
 titleSuffix: ''
 ms.custom: seodec18
 ms.date: 08/14/2019
@@ -14,14 +14,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7a8a49f2b72745dac18a46fe8567578bca090834
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 1439bef59c621523b74f0e0634cd809deea1f3ee
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69551503"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72986068"
 ---
-# <a name="get-started-office-development-in-visual-studio"></a>開始使用 (Visual Studio 中的 Office 開發)
+# <a name="get-started-office-development-in-visual-studio"></a>開始使用（Visual Studio 中的 Office 開發）
   本節包含的主題可協助您開始使用 Visual Studio 中的 Microsoft Office Developer Tools。
 
 [!include[Add-ins note](includes/addinsnote.md)]
@@ -41,7 +41,7 @@ ms.locfileid: "69551503"
 
 - [設定電腦以開發 Office 方案](../vsto/configuring-a-computer-to-develop-office-solutions.md)
 
- 提供安裝 Office 開發工具、可讓 Office 方案在使用者電腦上執行的執行時間, 以及 Office 主要 interop 元件的資訊和步驟。
+ 提供安裝 Office 開發工具、可讓 Office 方案在使用者電腦上執行的執行時間，以及 Office 主要 interop 元件的資訊和步驟。
 
 - [開始撰寫適用于 Excel 的檔層級自訂程式](../vsto/getting-started-programming-document-level-customizations-for-excel.md)
 
@@ -70,7 +70,7 @@ ms.locfileid: "69551503"
 
 - [Visual Studio 中的 Office 方案架構](../vsto/architecture-of-office-solutions-in-visual-studio.md)
 
- 描述 Office 方案的元件, 以及它們在設計階段和執行時間的使用方式。
+ 描述 Office 方案的元件，以及它們在設計階段和執行時間的使用方式。
 
 - [設計和建立 Office 方案](../vsto/designing-and-creating-office-solutions.md)
 
@@ -88,4 +88,4 @@ ms.locfileid: "69551503"
 
  提供有關如何讓使用者使用 Office 方案的資訊，並描述選擇部署方法和設定安全性時所要考慮的主要問題。
 
-- [Visual Studio Tools for Office 技術文章和 Visual](http://go.microsoft.com/fwlink/?LinkID=106640) how to包含有關使用 Visual Studio 所建立之 Office 方案的影片和技術文章的連結。
+- [Visual Studio Tools for Office 技術文章和 Visual](/previous-versions/office/developer/office-2007/bb871648(v=office.12)) how to包含有關使用 Visual Studio 所建立之 Office 方案的影片和技術文章的連結。

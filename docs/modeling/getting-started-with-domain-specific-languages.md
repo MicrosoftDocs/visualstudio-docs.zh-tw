@@ -7,12 +7,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cfdd1e1eb040960032cc04f8c47f3f28e929b678
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c86383ddc833a6b76affa451f21180ed4941ad14
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72667291"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985056"
 ---
 # <a name="get-started-with-domain-specific-languages"></a>特定領域語言的使用者入門
 
@@ -21,7 +21,7 @@ ms.locfileid: "72667291"
 > [!NOTE]
 > 當您安裝 Visual Studio 的特定功能時，會自動安裝文字模板轉換 SDK 和 Visual Studio 模型化 SDK。 如需詳細資訊，請參閱[這篇 blog 文章](https://devblogs.microsoft.com/devops/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/)。
 
-如果您不熟悉 Dsl，建議您透過**DSL 工具實驗室**來進行，您可以在此網站中找到：[視覺效果和模型化 SDK](http://go.microsoft.com/fwlink/?LinkID=186128)
+如果您不熟悉 Dsl，建議您透過**DSL 工具實驗室**來進行，您可以在此網站中找到：[視覺效果和模型化 SDK](https://code.msdn.microsoft.com/Visualization-and-Modeling-313535db)
 
 ## <a name="what-can-you-do-with-a-domain-specific-language"></a>您可以使用特定領域語言來做什麼？
 
@@ -43,8 +43,8 @@ Dsl 的其中一個主要應用程式是產生程式碼、設定檔和其他成�
 
 | | |
 |-|-|
-| Visual Studio | [http://go.microsoft.com/fwlink/?LinkId=185579](http://go.microsoft.com/fwlink/?LinkId=185579) |
-| [!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)] | [http://go.microsoft.com/fwlink/?LinkId=185580](http://go.microsoft.com/fwlink/?LinkId=185580) |
+| Visual Studio | [http://go.microsoft.com/fwlink/?LinkId=185579](https://visualstudio.microsoft.com/) |
+| [!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)] | [http://go.microsoft.com/fwlink/?LinkId=185580](/azure/devops/integrate/index) |
 | Visual Studio 的模型化 SDK | |
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
@@ -153,7 +153,7 @@ DSL 定義可以指定模型在圖表上的顯示方式。 您可以從各種不
 
 您的 DSL 會產生 API，可讓您讀取和更新屬於 DSL 實例的模型。 API 的其中一個應用程式是從模型產生文字檔。 如需詳細資訊，請參閱[使用 T4 文字模板產生設計階段程式碼](../modeling/design-time-code-generation-by-using-t4-text-templates.md)。
 
-在調試方案中，開啟副檔名為 ". tt" 的範本檔案。 這些範例會示範如何從模型產生文字，並可讓您測試 DSL 的 API。 其中一個範例是以 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 的方式撰寫，另一個則 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]。
+在調試方案中，開啟副檔名為 ". tt" 的範本檔案。 這些範例會示範如何從模型產生文字，並可讓您測試 DSL 的 API。 其中一個範例是以 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]的方式撰寫，另一個則 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]。
 
 在每個範本檔案下，都是它所產生的檔案。 在方案總管中展開範本檔案，然後開啟產生的檔案。
 
