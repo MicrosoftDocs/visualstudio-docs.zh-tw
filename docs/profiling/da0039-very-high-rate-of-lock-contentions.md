@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a952f3172f1ade9f72491e961de372de3897eb60
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: 6185b080967c83be827e34baddfe5b37554398ff
+ms.sourcegitcommit: bb5425b9c6d8fd7135d9584c2963831754071347
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72911959"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73024692"
 ---
 # <a name="da0039-very-high-rate-of-lock-contentions"></a>DA0039：鎖定爭用的比率非常高
 
@@ -37,7 +37,7 @@ ms.locfileid: "72911959"
 ## <a name="rule-description"></a>規則描述
  鎖定是用來保護多執行緒應用程式中必須一次由一個執行緒依序執行的重要程式碼區段。 Microsoft .NET 通用語言執行平台 (CLR) 提供一組完整的同步處理和鎖定原始物件。 例如，C# 語言支援鎖定陳述式 (在 Visual Basic 中為 SyncLock)。 Managed 應用程式可以呼叫 System.Threading 命名空間中的 Monitor.Enter 和 Monitor.Exit 方法來直接取得及釋放鎖定。 .NET Framework 支援額外的同步處理和鎖定原始物件，包括支援 Mutexes、ReaderWriterLocks 和 Semaphores 的類別。 如需詳細資訊，請參閱 MSDN 網站上《.NET Framework 開發人員手冊》中的[同步處理原始物件概觀](/dotnet/standard/threading/overview-of-synchronization-primitives)。 .NET Framework 類別本身是位於 Windows 作業系統內建之較低層級的同步處理服務之上。 這些類別包括重要區段物件以及許多不同的 Wait 和事件發送訊號函式。 如需詳細資訊，請參閱 MSDN Library 中＜Win32 和 COM 程式開發＞的 [Synchronization](/windows/win32/sync/synchronization) 一節。
 
- 用來同步處理和鎖定的基礎 .NET Framework 類別和原生 Windows 物件兩者都是必須使用連鎖作業變更的共用記憶體位置。 連鎖作業使用硬體特定的指令在共用的記憶體位置中運作，使用不可部分完成的作業變更其狀態。 不可部分完成的作業在機器中的所有處理器則保證一致。 Locks 和 WaitHandles 是當設定或重設時會自動使用連鎖作業的 .NET 物件。 您的應用程式中可能有其他共用的記憶體資料結構，也會要求您使用連鎖作業以安全執行緒的方式進行更新。 如需詳細資訊，請參閱 MSDN Library 的＜.NET Framework＞一節中的 [Interlocked 作業](/dotnet/api/system.threading.interlocked&view=netframework-4.8)。
+ 用來同步處理和鎖定的基礎 .NET Framework 類別和原生 Windows 物件兩者都是必須使用連鎖作業變更的共用記憶體位置。 連鎖作業使用硬體特定的指令在共用的記憶體位置中運作，使用不可部分完成的作業變更其狀態。 不可部分完成的作業在機器中的所有處理器則保證一致。 Locks 和 WaitHandles 是當設定或重設時會自動使用連鎖作業的 .NET 物件。 您的應用程式中可能有其他共用的記憶體資料結構，也會要求您使用連鎖作業以安全執行緒的方式進行更新。 如需詳細資訊，請參閱 MSDN Library 的＜.NET Framework＞一節中的 [Interlocked 作業](/dotnet/api/system.threading.interlocked)。
 
  同步處理和鎖定是用來確保多執行緒應用程式正確執行的機制。 多執行緒應用程式的每個執行緒都是由作業系統獨立安排的獨立執行單位。 每當嘗試取得鎖定的執行緒因為另一個執行緒正保留鎖定而延遲，就會發生鎖定爭用的情況。
 

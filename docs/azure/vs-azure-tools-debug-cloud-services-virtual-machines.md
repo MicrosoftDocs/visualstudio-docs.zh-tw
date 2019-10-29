@@ -10,12 +10,12 @@ ms.workload: azure-vs
 ms.date: 11/11/2016
 ms.author: mikejo
 ms.technology: vs-ide-debug
-ms.openlocfilehash: 18d2364794eef2177c4cfc607ecc6da38143ba54
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: a353ac12f7477bf40393f83de5fe41ede4d9aa95
+ms.sourcegitcommit: bb5425b9c6d8fd7135d9584c2963831754071347
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72911864"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73024578"
 ---
 # <a name="debugging-an-azure-cloud-service-or-virtual-machine-in-visual-studio"></a>在 Visual Studio 中進行 Azure 雲端服務或虛擬機器的偵錯
 
@@ -49,7 +49,7 @@ Visual Studio 提供您偵錯 Azure 雲端服務和虛擬機器的不同選項�
 如果您啟用雲端服務的遠端偵錯，它不會出現效能降低或產生其他費用。 不要對生產環境服務使用遠端偵錯，因為這可能會對正在使用該服務的用戶端造成不良影響。
 
 > [!NOTE]
-> 從 Visual Studio 發佈雲端服務時，您可以為該服務中以 .NET Framework 4 或 .NET Framework 4.5 為目標的任何角色啟用 **IntelliTrace** 。 藉由使用 **IntelliTrace**，您可以檢查角色執行個體在過去發生的事件，並重現當時的情況。 請參閱[使用 IntelliTrace 和 Visual Studio 偵錯發佈的雲端服務](vs-azure-tools-IntelliTrace-debug-published-cloud-services.md)和[使用 IntelliTrace](/debugger/intellitrace)。
+> 從 Visual Studio 發佈雲端服務時，您可以為該服務中以 .NET Framework 4 或 .NET Framework 4.5 為目標的任何角色啟用 **IntelliTrace** 。 藉由使用 **IntelliTrace**，您可以檢查角色執行個體在過去發生的事件，並重現當時的情況。 請參閱[使用 IntelliTrace 和 Visual Studio 偵錯發佈的雲端服務](vs-azure-tools-IntelliTrace-debug-published-cloud-services.md)和[使用 IntelliTrace](../debugger/intellitrace.md)。
 
 ### <a name="to-enable-remote-debugging-for-a-cloud-service"></a>啟用雲端服務的遠端偵錯
 

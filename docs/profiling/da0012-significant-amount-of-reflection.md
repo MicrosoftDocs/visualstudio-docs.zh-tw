@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d3f2537b5a56e2d3be9fd6129c3733e9a82c150e
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: 6257ce96e139e173fca804221b495f7467fc6b20
+ms.sourcegitcommit: bb5425b9c6d8fd7135d9584c2963831754071347
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72910554"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73024643"
 ---
 # <a name="da0012-significant-amount-of-reflection"></a>DA0012：大量的反射
 
@@ -36,7 +36,7 @@ ms.locfileid: "72910554"
 ## <a name="rule-description"></a>規則描述
  反映是 .NET Framework 一個彈性的工具，可用來將應用程式晚期繫結到相依的執行階段組件，或者用來建立並在執行階段期間動態執行新型別。 不過，如果在緊密迴圈中經常使用或呼叫這些技術則會降低效能。
 
- 如需詳細資訊，請參閱 MSDN 上 Microsoft Patterns and Practices 文件庫中＜改進 .NET 應用程式效能和延展性＞(英文) 的＜第 5 章 - 改進 Managed 程式碼的效能＞(英文) 中的[反映和晚期繫結 (英文)](/previous-versions/msp-n-p/ff647790(v=pandp.10)#scalenetchapt05_topic31)一節。
+ 如需詳細資訊，請參閱 MSDN 上 Microsoft Patterns and Practices 文件庫中＜改進 .NET 應用程式效能和延展性＞(英文) 的＜第 5 章 - 改進 Managed 程式碼的效能＞(英文) 中的[反映和晚期繫結 (英文)](/previous-versions/msp-n-p/ff647790(v=pandp.10)#reflection-and-late-binding)一節。
 
 ## <a name="how-to-investigate-a-warning"></a>如何調查警告
  按兩下 [錯誤清單] 視窗中的訊息，瀏覽至分析資料的[函式詳細資料檢視](../profiling/function-details-view.md)。 檢查 System.Type 或 System.Reflection 方法的呼叫函式，找出最常使用 .NET Reflection API 的程式區段。 請避免使用會傳回中繼資料的方法。 當應用程式的效能很重要時，可能需要避免使用晚期繫結和避免在執行階段動態建立型別。

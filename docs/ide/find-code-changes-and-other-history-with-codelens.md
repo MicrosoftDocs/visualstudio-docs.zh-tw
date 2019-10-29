@@ -9,12 +9,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: da45af92a11cfe61d5027d0710304e57ad657e48
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f4b9f55f0dc7d2b0a9fb57fa6177cd8a250f6f62
+ms.sourcegitcommit: bb5425b9c6d8fd7135d9584c2963831754071347
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653842"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73024826"
 ---
 # <a name="find-code-changes-and-other-history-with-codelens"></a>尋找 CodeLens 的程式碼變更和其他記錄
 
@@ -217,7 +217,7 @@ CodeLens 可讓您在了解程式碼發生什麼事時，也能保持專注在�
 
 1. 移至包含相關聯[單元測試程式碼](../test/unit-test-your-code.md)的應用程式程式碼。
 
-2. 若您尚未這麼做，請建置應用程式以載入 CodeLens 測試指標。 請確認[已建置組件的探索](../test/test-explorer-faq.md#assembly-based-discovery)已開啟。
+2. 若您尚未這麼做，請建置應用程式以載入 CodeLens 測試指標。 
 
 3. 按 **Alt**+**3**，檢閱程式碼的測試。
 
@@ -352,8 +352,7 @@ CodeLens 不支援安裝不同版本的 Lync 或 Skype。 它們可能尚未對�
 
 ### <a name="q-my-codelens-test-indicators-no-longer-appear-in-my-file-when-i-first-open-my-solution-how-can-i-load-them"></a>問：當我初次開啟解決方案時，我的 CodeLens 測試指標不再顯示在檔案中。 該如何加以載入？
 
-**答：** 重建您的專案，讓 CodeLens 測試指標在您的檔案中載入。 請確認[已建置組件的探索](../test/test-explorer-faq.md#assembly-based-discovery
-)已開啟。 為了提升效能，Visual Studio 不再於程式碼檔案載入時，為測試指標擷取來源資訊。 測試指標會在**測試清單編輯器**中，在建置後或在您按兩下以瀏覽到測試時載入。
+**答：** 重建您的專案，讓 CodeLens 測試指標在您的檔案中載入。 為了提升效能，Visual Studio 不再於程式碼檔案載入時，為測試指標擷取來源資訊。 測試指標會在**測試清單編輯器**中，在建置後或在您按兩下以瀏覽到測試時載入。
 
 ## <a name="see-also"></a>請參閱
 
