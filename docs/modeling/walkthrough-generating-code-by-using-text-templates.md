@@ -10,12 +10,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6650edfc3c953d54578b800e213ee27092045e56
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 9d24a2ea1b614cb0ca82bdcf1c4954aba9a9174c
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666927"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72984412"
 ---
 # <a name="walkthrough-generate-code-by-using-text-templates"></a>逐步解說：使用文字範本產生程式碼
 
@@ -28,7 +28,7 @@ System.Xml 命名空間提供各種工具來載入 XML 文件，然後在記憶�
 在此範例專案中，範本會讀取範例 XML 檔案，並產生對應到每個節點類型的類別。 在手動撰寫的程式碼中，您可以使用這些類別來巡覽 XML 檔案。 您也可以在使用相同節點類型的任何其他檔案上執行應用程式。 範例 XML 檔案的目的是要提供您想要應用程式處理之所有節點類型的範例。
 
 > [!NOTE]
-> 隨附于 Visual Studio 的應用程式[xsd.exe](http://go.microsoft.com/fwlink/?LinkId=178765)可以從 XML 檔案產生強型別類別。 這裡示範的範本僅當成範例使用。
+> 隨附于 Visual Studio 的應用程式[xsd.exe](/dotnet/standard/serialization/xml-schema-definition-tool-xsd-exe)可以從 XML 檔案產生強型別類別。 這裡示範的範本僅當成範例使用。
 
 以下是範例檔案：
 

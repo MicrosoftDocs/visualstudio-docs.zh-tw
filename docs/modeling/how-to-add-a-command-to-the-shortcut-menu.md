@@ -1,5 +1,5 @@
 ---
-title: 如何：在捷徑功能表中加入命令
+title: 如何：將命令新增至快捷方式功能表
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,14 +10,14 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f7d873a3401e37a18b938cb5785f33eb0bc9b8fb
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: e476f1db1e30a04e67e6b53f593f55ee3867fae2
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666712"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985135"
 ---
-# <a name="how-to-add-a-command-to-the-shortcut-menu"></a>如何：在捷徑功能表中加入命令
+# <a name="how-to-add-a-command-to-the-shortcut-menu"></a>如何：將命令新增至快捷方式功能表
 
 您可以將功能表命令加入網域指定的語言 (DSL)，以便您的使用者可以執行專屬 DSL 的工作。 當使用者以滑鼠右鍵按一下圖表時，命令會出現在內容 (捷徑) 功能表上。 您可以定義命令，使它只在特定的情況下出現在功能表中。 例如，您可以使命令只在使用者按一下特定類型的項目或處於特定狀態的項目時才可見。
 
@@ -28,8 +28,6 @@ ms.locfileid: "72666712"
 2. [更新 Package.tt 中的套件版本號碼](#version)。 每當變更 Commands.vsct 時都必須這麼做
 
 3. [在 CommandSet 類別中撰寫方法](#CommandSet)，讓命令可見，並定義您希望命令執行的動作。
-
-   如需範例，請參閱[視覺效果和模型化 SDK 網站](http://go.microsoft.com/fwlink/?LinkID=185579)。
 
 > [!NOTE]
 > 您也可以覆寫 CommandSet.cs 中的方法，即可修改部分現有命令 (例如剪下、貼上、全選和列印) 的行為。 如需詳細資訊，請參閱[如何：修改標準功能表命令](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)。
@@ -102,7 +100,7 @@ Managed Extension Framework (MEF) 提供在圖表功能表上定義功能表命�
     </VisibilityConstraints>
     ```
 
-4. 定義用於 GUID 和 ID 的名稱。 若要這麼做，請在 `Symbols` 項目之後的 `CommandTable` 項目中加入 `Commands` 項目。
+4. 定義您用於 Guid 和識別碼的名稱。 若要這麼做，請在 `Symbols` 項目之後的 `CommandTable` 項目中加入 `Commands` 項目。
 
     ```xml
     <Symbols>

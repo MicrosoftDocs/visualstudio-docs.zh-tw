@@ -16,17 +16,17 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f117b2c50bfb3a50f794236505fe02ffd8e2395b
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 1823fb808985d27a02dc2cac34859ea1fbca44b6
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748429"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985149"
 ---
 # <a name="how-to-define-a-domain-specific-language"></a>如何定義網域指定的語言
 若要定義特定領域語言（DSL），您可以從範本建立 Visual Studio 解決方案。 該方案的關鍵部分是儲存在 DslDefinition.dsl 中的 DSL 定義圖。 [DSL 定義] 可定義 DSL 的類別和圖形。 在修改並加入這些項目之後，您可以加入程式碼，即可以更詳細的方式自訂 DSL。
 
-如果您不熟悉 Dsl，建議您透過**DSL 工具實驗室**來進行，您可以在此網站中找到：[視覺效果和模型化 SDK](http://go.microsoft.com/fwlink/?LinkID=186128)
+如果您不熟悉 Dsl，建議您透過**DSL 工具實驗室**來進行，您可以在此網站中找到：[視覺效果和模型化 SDK](https://code.msdn.microsoft.com/Visualization-and-Modeling-313535db)
 
 ## <a name="templates"></a>選取範本方案
 
@@ -607,7 +607,7 @@ ms.locfileid: "72748429"
  另請參閱 how [to：變更特定領域語言的命名空間](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md)。
 
 ## <a name="trouble"></a>疑難排解
- 下表列出在設計 DSL 時會遇到的一些最常見的問題，以及對其方案的建議事項。 [視覺效果工具](http://go.microsoft.com/fwlink/?LinkId=186074)擴充性論壇提供更多的建議。
+ 下表列出在設計 DSL 時會遇到的一些最常見的問題，以及對其方案的建議事項。 [視覺效果工具](https://social.msdn.microsoft.com/Forums/vstudio/en-US/home?forum=dslvsarchx)擴充性論壇提供更多的建議。
 
 | 問題 | 建議 |
 |-|-|

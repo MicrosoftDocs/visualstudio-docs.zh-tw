@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: jillre
-ms.openlocfilehash: 0d0d681c59935bbbb4591438f538d0c800cba489
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 2f93b44d49b88b79068bff46df51c6c68423c16f
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653211"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72984588"
 ---
 # <a name="get-started-with-microsoft-intellitest"></a>開始使用 Microsoft IntelliTest
 
@@ -22,7 +22,7 @@ ms.locfileid: "72653211"
   * 觀看 [Channel 9 影片](https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Intellitest)
   * 閱讀 [MSDN Magazine 上的概觀](https://msdn.microsoft.com/magazine/dn904672.aspx) 此篇
   * 閱讀我們的[文件](../../test/generate-unit-tests-for-your-code-with-intellitest.md)
-* 在 [Stack Overflow](http://stackoverflow.com/questions/tagged/intellitest) 詢問問題
+* 在 [Stack Overflow](https://stackoverflow.com/questions/tagged/intellitest) 詢問問題
 * 閱讀這份參考手冊的其餘部分
 * 列印此頁面供快速參考
 

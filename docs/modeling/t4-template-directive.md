@@ -7,12 +7,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4932a20fbcaee4d5aef6aac03252ee6062fbd035
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 410bc879ff4822f19436794d3cb99732be9d413e
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72606214"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72983697"
 ---
 # <a name="t4-template-directive"></a>T4 範本指示詞
 
@@ -132,7 +132,7 @@ Content of myFile is:
 
 `VB`
 
-@No__t_0 屬性會指定要用於語句和運算式區塊中之原始程式碼的語言（[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 或 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]）。 從中產生輸出的中繼程式碼檔會使用這個語言。 這個語言與範本產生的語言無關，它可以是任何種類的文字。
+`language` 屬性會指定要用於語句和運算式區塊中之原始程式碼的語言（[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 或 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]）。 從中產生輸出的中繼程式碼檔會使用這個語言。 這個語言與範本產生的語言無關，它可以是任何種類的文字。
 
 例如:
 
@@ -235,7 +235,7 @@ This is the common footer.
 
 如果是設計階段文字範本，您可指定任何衍生自 <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation?displayProperty=fullName> 的基底類別。 使用 `<#@assembly#>` 指示詞，可以載入包含基底類別的組件或專案。
 
-如需詳細資訊，請參閱 Gareth 的 Blog 中的「[文字模板中的繼承](http://go.microsoft.com/fwlink/?LinkId=208373)」。
+如需詳細資訊，請參閱 Gareth 的 Blog 中的「[文字模板中的繼承](https://blogs.msdn.microsoft.com/garethj/2011/01/03/vs2010-sp1-t4-template-inheritance-part-i-sample-metadata/)」。
 
 ## <a name="linepragmas-attribute"></a>linePragmas 屬性
 

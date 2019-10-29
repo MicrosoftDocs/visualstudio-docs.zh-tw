@@ -7,12 +7,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b27abf8470527e4e5de5c05ca3438a8471b7c80e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 9b5a0ad18c7b1472e8c08ccc2902cade7714f2b9
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72667771"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985272"
 ---
 # <a name="integrate-models-by-using-visual-studio-modelbus"></a>使用 Visual Studio Modelbus 整合模型
 
@@ -36,15 +36,13 @@ ModelBus 可讓您建立模型或模型內特定項目的唯一參考。 這個�
 
 ### <a name="expose"></a>將 DSL 定義公開給模型匯流排
 
-1. 除非您已安裝 Visual Studio 模型匯流排擴充功能，否則請下載並進行安裝。 如需詳細資訊，請參閱[視覺效果和模型化 SDK](http://go.microsoft.com/fwlink/?LinkID=185579)。
+1. 開啟 DSL 定義檔。 以滑鼠右鍵按一下設計介面，然後按一下 [**啟用 Modelbus**]。
 
-2. 開啟 DSL 定義檔。 以滑鼠右鍵按一下設計介面，然後按一下 [**啟用 Modelbus**]。
+2. 在對話方塊中，選擇 [**我要將此 DSL 公開給 ModelBus**]。 如果您要將這個 DSL 公開給其模型，又要讓這個 DSL 使用其他 DSL 的參考，您可以選擇兩個選項。
 
-3. 在對話方塊中，選擇 [**我要將此 DSL 公開給 ModelBus**]。 如果您要將這個 DSL 公開給其模型，又要讓這個 DSL 使用其他 DSL 的參考，您可以選擇兩個選項。
+3. 按一下 [確定]。 新專案 "ModelBusAdapter" 會隨即加入至 DSL 方案。
 
-4. 按一下 [確定]。 新專案 "ModelBusAdapter" 會隨即加入至 DSL 方案。
-
-5. 如果您要從文字範本存取 DSL，您必須修改新專案中的 AdapterManager.tt。 如果您要從其他程式碼 (例如命令和事件處理常式) 存取 DSL，請略過這個步驟。 如需詳細資訊，請參閱[在文字模板中使用 Visual Studio ModelBus](../modeling/using-visual-studio-modelbus-in-a-text-template.md)。
+4. 如果您要從文字範本存取 DSL，您必須修改新專案中的 AdapterManager.tt。 如果您要從其他程式碼 (例如命令和事件處理常式) 存取 DSL，請略過這個步驟。 如需詳細資訊，請參閱[在文字模板中使用 Visual Studio ModelBus](../modeling/using-visual-studio-modelbus-in-a-text-template.md)。
 
    1. 將 AdapterManagerBase 的基類變更為[VsTextTemplatingModelingAdapterManager](/previous-versions/ee844317(v=vs.140))。
 
@@ -56,9 +54,9 @@ ModelBus 可讓您建立模型或模型內特定項目的唯一參考。 這個�
 
       如果您要同時能夠從文字範本和其他程式碼存取 DSL，您需要一個已修改的配接器和一個未修改的配接器。
 
-6. 按一下 [**轉換所有範本**]。
+5. 按一下 [**轉換所有範本**]。
 
-7. 重建方案。
+6. 重建方案。
 
    ModelBus 現在可以開啟這個 DSL 的執行個體。
 
@@ -78,7 +76,7 @@ ModelBus 可讓您建立模型或模型內特定項目的唯一參考。 這個�
 
     按一下 類別 節點，然後在 屬性視窗中，確認 **序列化識別碼** 已設定為 `true`。
 
-   或者，如果您要使用項目名稱 (而不是 GUID) 來識別項目，您可以覆寫產生之配接器的組件。 覆寫配接器類別中的下列方法：
+   或者，如果您想要使用專案名稱來識別元素，而不是 Guid，您可以覆寫所產生介面卡的各個部分。 覆寫配接器類別中的下列方法：
 
 - 覆寫 `GetElementId` 以傳回您要使用的 ID。 建立參考時，會呼叫這個方法。
 
@@ -124,7 +122,7 @@ ModelBus 可讓您建立模型或模型內特定項目的唯一參考。 這個�
 
 2. 選取適當**的 ModelBusReference 類型**：模型或模型內的元素。
 
-3. 在檔案對話方塊篩選字串中，輸入字串 (例如 `Family Tree files |*.ftree`)。 替代已公開 DSL 的副檔名。
+3. 在檔案對話方塊篩選字串中，輸入字串 (例如 `Family Tree files |*.ftree`)。 取代已公開 DSL 的副檔名。
 
 4. 如果您選擇模型內某個項目的參考，您可以加入使用者可選取的類型清單，例如 Company.FamilyTree.Person。
 
@@ -358,7 +356,7 @@ ModelBusReference elementReferenceRestored =
 
 ### <a name="serializing-relative-to-a-specified-file-path"></a>相對於指定的檔案路徑來進行序列化
 
-@No__t_0 包含 `ReferenceContext`，這是一個字典，您可以在其中儲存資訊，例如應該序列化的相對檔案路徑。
+`ModelBusReference` 包含 `ReferenceContext`，這是一個字典，您可以在其中儲存資訊，例如應該序列化的相對檔案路徑。
 
 若要相對於路徑進行序列化：
 

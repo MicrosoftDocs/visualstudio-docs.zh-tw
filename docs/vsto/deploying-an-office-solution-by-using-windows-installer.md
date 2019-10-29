@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 20df85952b4e76e60d6e93067c1f1e7838b692cd
-ms.sourcegitcommit: 8a96a65676fd7a2a03b0803d7eceae65f3fa142b
+ms.openlocfilehash: a44781c6fea0ecf75dcdb8a5ab2e2b3bed8e52e9
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "69551712"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72986142"
 ---
 # <a name="deploy-an-office-solution-by-using-windows-installer"></a>使用 Windows Installer 部署 Office 方案
 
@@ -59,15 +59,15 @@ ms.locfileid: "69551712"
 
 如需如何使用 ClickOnce 部署 Office 方案的詳細資訊，請參閱[使用 Clickonce 部署 office 方案](../vsto/deploying-an-office-solution-by-using-clickonce.md)。
 
-如需如何使用 [!INCLUDE[vs_dev10_long](../sharepoint/includes/vs-dev10-long-md.md)] 建立 Windows Installer 檔案的詳細資訊，請參閱[使用 Windows Installer 部署適用于 Office 方案的 Visual Studio 2010 工具](http://go.microsoft.com/fwlink/?LinkId=201807)。
+如需如何使用 [!INCLUDE[vs_dev10_long](../sharepoint/includes/vs-dev10-long-md.md)]建立 Windows Installer 檔案的詳細資訊，請參閱[使用 Windows Installer 部署適用于 Office 方案的 Visual Studio 2010 工具](/previous-versions/visualstudio/visual-studio-2010/ff937654(v=msdn.10))。
 
 ## <a name="Download"></a>下載範例
 本主題會引用下列可下載的範例。
 
 |範例<br /><br />|描述<br /><br />|
 |----------|---------------|
-|[ExcelAddIn](http://go.microsoft.com/fwlink/?LinkID=275492)<br /><br />|Excel VSTO 增益集，可以在執行 Office 32 位元或 64 位元版本的電腦上安裝。<br /><br />|
-|[ExcelWorkbook](http://go.microsoft.com/fwlink/?LinkID=275493)<br /><br />|Excel 文件層級自訂，可以在執行 Office 32 位元或 64 位元版本的電腦上安裝。<br /><br />|
+|[ExcelAddIn](https://code.msdn.microsoft.com/VSTO-Deploy-an-Office-fbcc09ad)<br /><br />|Excel VSTO 增益集，可以在執行 Office 32 位元或 64 位元版本的電腦上安裝。<br /><br />|
+|[ExcelWorkbook](https://code.msdn.microsoft.com/VSTO-Deploy-a-Customization-f70fae33)<br /><br />|Excel 文件層級自訂，可以在執行 Office 32 位元或 64 位元版本的電腦上安裝。<br /><br />|
 
 ## <a name="ApplySecurity"></a>決定如何將信任授與方案
 在使用者電腦上執行方案之前，您必須透過下列任一個方式授與信任，否則使用者在安裝方案時必須回應信任提示。
@@ -231,9 +231,9 @@ ms.locfileid: "69551712"
 
 10. 從您的**桌面**資料夾，將*Visual Studio 2010 Tools for Office Runtime runtime.prq*檔案複製到電腦上的下列其中一個目錄。
 
-   32位作業系統： *%ProgramFiles%\InstallShield\2013LE\SetupPrerequisites \\*
+   32位作業系統： *%ProgramFiles%\InstallShield\2013LE\SetupPrerequisites\\*
 
-   64位作業系統： *% ProgramFiles （x86）% \ 2013LE \ SetupPrerequisites \\*
+   64位作業系統： *% ProgramFiles （x86）% \ 2013LE \ SetupPrerequisites\\*
 
 11. 在 InstallShield 專案的 [ **可轉散發套件** ] 頁面上，選擇 [ **重新整理** ] 按鈕以重新整理可轉散發元件清單，如下圖所示。
 
@@ -510,4 +510,4 @@ ms.locfileid: "69551712"
 - [自訂文件屬性總覽](../vsto/custom-document-properties-overview.md)
 - [授與信任給 Office 方案](../vsto/granting-trust-to-office-solutions.md)
 - [授與信任給檔](../vsto/granting-trust-to-documents.md)
-- [使用 Windows Installer 部署 Visual Studio 2010 Tools for Office 方案](http://go.microsoft.com/fwlink/?LinkId=201807)
+- [使用 Windows Installer 部署 Visual Studio 2010 Tools for Office 方案](/previous-versions/visualstudio/visual-studio-2010/ff937654(v=msdn.10))

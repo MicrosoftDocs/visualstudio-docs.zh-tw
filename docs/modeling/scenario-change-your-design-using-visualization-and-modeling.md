@@ -15,12 +15,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 927b1105d0ab1234f63bd08a6f4a5ac0c078bb5e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 3d332050538ca10d133a69f61a914338484fe799
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72670826"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72986380"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>情節：使用視覺化和模型功能變更設計
 
@@ -240,7 +240,7 @@ Dinner Now 擁有大型自動化測試集合，因為這些測試幾乎仍適用
 
 - [在開發期間驗證您的系統](../modeling/validate-your-system-during-development.md)
 
-- [使用版本控制](http://go.microsoft.com/fwlink/?LinkID=525605)
+- [使用版本控制](/azure/devops/repos/tfvc/overview?view=azure-devops)
 
 - [Azure Pipelines](/azure/devops/pipelines/index?view=vsts)
 
@@ -478,7 +478,7 @@ Code Map 顯示程式碼的目前組織及關聯性。 項目在地圖上是以 
 
 |**分類**|**Links**|
 |-|-|
-|**論壇**|- [Visual Studio Visualization & Modeling Tools](http://go.microsoft.com/fwlink/?LinkId=184720)<br />- [Visual Studio Visualization & Modeling SDK (DSL 工具)](http://go.microsoft.com/fwlink/?LinkId=184721)|
+|**論壇**|- [Visual Studio Visualization & Modeling Tools](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vsarch)<br />- [Visual Studio Visualization & Modeling SDK (DSL 工具)](https://social.msdn.microsoft.com/Forums/home?forum=dslvsarchx)|
 
 ## <a name="see-also"></a>請參閱
 

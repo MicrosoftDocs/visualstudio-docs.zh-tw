@@ -7,12 +7,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d20436eb7efb1d3f4212e8fc3a3ed9a3234c4114
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d2019f1333f6f9a5d6e1bffde16cfee2da32061d
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72667233"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985087"
 ---
 # <a name="how-to-add-a-drag-and-drop-handler"></a>如何：加入拖放處理常式
 
@@ -50,7 +50,7 @@ using System.Linq;
         }
     ```
 
-- <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDragDrop%2A>-如果 `OnDragOver(DiagramDragEventArgs e)` 先前將 `e.Effect` 設定為 `None` 以外的值，則當滑鼠指標停留在此圖形或圖表上時，就會呼叫這個方法。
+- <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDragDrop%2A>-如果 `OnDragOver(DiagramDragEventArgs e)` 先前將 `e.Effect` 設定為 `None`以外的值，則當滑鼠指標停留在此圖形或圖表上時，就會呼叫這個方法。
 
     ```csharp
     public override void OnDragDrop(DiagramDragEventArgs e)
@@ -146,7 +146,7 @@ MEF (Managed Extensibility Framework) 可讓您定義使用最小組態安裝的
     }
     ```
 
-     若要接受 UML 圖形，請實驗並判斷 UML 圖形的 GUID。 請記住，任一圖表上通常有多種項目類型。 另請記住，從 DSL 或 UML 圖表拖曳的物件是圖形，而不是模型項目。
+     若要接受 UML 圖形，請藉由實驗來判斷 UML 圖形類別的 Guid。 請記住，任一圖表上通常有多種項目類型。 另請記住，從 DSL 或 UML 圖表拖曳的物件是圖形，而不是模型項目。
 
 `DiagramDragEventArgs` 也具有屬性，指出目前的滑鼠指標位置，以及使用者是否按下 CTRL、ALT 或 SHIFT 鍵。
 
@@ -160,11 +160,9 @@ MEF (Managed Extensibility Framework) 可讓您定義使用最小組態安裝的
 
 Visual Studio 模型匯流排，使來源 DSL 可供存取：
 
-1. 如果尚未安裝 Visual Studio 模型匯流排擴充功能，請下載並進行安裝。 如需詳細資訊，請參閱[視覺效果和模型化 SDK](http://go.microsoft.com/fwlink/?LinkID=185579)。
+1. 在 [DSL 設計工具] 中，開啟來源 DSL 的 DSL 定義檔。 以滑鼠右鍵按一下設計介面，然後按一下 [**啟用 Modelbus**]。 在對話方塊中，選擇其中一個或兩個選項。  按一下 [確定]。 新專案 "ModelBus" 會隨即加入至 DSL 方案。
 
-2. 在 [DSL 設計工具] 中，開啟來源 DSL 的 DSL 定義檔。 以滑鼠右鍵按一下設計介面，然後按一下 [**啟用 Modelbus**]。 在對話方塊中，選擇其中一個或兩個選項。  按一下 [確定]。 新專案 "ModelBus" 會隨即加入至 DSL 方案。
-
-3. 按一下 [**轉換所有範本**]，然後重建方案。
+2. 按一下 [**轉換所有範本**]，然後重建方案。
 
 ### <a name="to-send-an-object-from-a-source-dsl"></a>從來源 DSL 傳送物件
 

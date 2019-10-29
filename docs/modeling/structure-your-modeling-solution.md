@@ -7,12 +7,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 73a1c6458bf6afc5d6fce34208dd8c2c3ddda37f
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: fecf0d146c1116e6ec6376ffd9ad929cc9179d1c
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748207"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985215"
 ---
 # <a name="structure-your-modeling-solution"></a>建構模型方案
 
@@ -30,7 +30,7 @@ ms.locfileid: "72748207"
 
 ### <a name="to-divide-an-application-into-layers"></a>將應用程式分割到各圖層
 
-1. 以應用程式結構為方案結構的基礎，例如 Web 應用程式、服務應用程式或桌面應用程式。 [Microsoft 應用程式架構指南中的應用程式 archetype 中](http://go.microsoft.com/fwlink/?LinkId=196681)會討論各種常見的架構。
+1. 以應用程式結構為方案結構的基礎，例如 Web 應用程式、服務應用程式或桌面應用程式。 [Microsoft 應用程式架構指南中的應用程式 archetype 中](/previous-versions/msp-n-p/ee658107(v=pandp.10))會討論各種常見的架構。
 
 2. 建立 Visual Studio 解決方案，我們將會呼叫架構解決方案。 這個方案會用以建立系統的整體設計。 它包含模型，但不含程式碼。
 
@@ -92,7 +92,7 @@ ms.locfileid: "72748207"
 
 ### <a name="to-create-a-solution-template"></a>建立方案範本
 
-1. [下載並安裝 [匯出範本]](http://go.microsoft.com/fwlink/?LinkId=196686)。
+1. [下載並安裝 [匯出範本]](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.ExportTemplateWizard)。
 
 2. 建立要用做未來專案起點的方案結構。
 

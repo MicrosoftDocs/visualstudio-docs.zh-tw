@@ -1,5 +1,5 @@
 ---
-title: 逐步解說：VSTO 增益集專案中的複雜資料系結
+title: 逐步解說： VSTO 增益集專案中的複雜資料系結
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,14 +14,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: efe99e4d12ea4ace6d6c996b816dc315c502fa47
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 99caf87000ea9df9260e8926eee4c7136bc9b848
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71255557"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985487"
 ---
-# <a name="walkthrough-complex-data-binding-in-vsto-add-in-project"></a>逐步解說：VSTO 增益集專案中的複雜資料系結
+# <a name="walkthrough-complex-data-binding-in-vsto-add-in-project"></a>逐步解說： VSTO 增益集專案中的複雜資料系結
   您可以將資料繫結至 VSTO 增益集專案中的主控制項和 Windows Forms 控制項。 本逐步解說示範如何在執行階段將控制項加入 Microsoft Office Excel 工作表，以及將控制項繫結至資料。
 
  [!INCLUDE[appliesto_xlallapp](../vsto/includes/appliesto-xlallapp-md.md)]
@@ -34,14 +34,14 @@ ms.locfileid: "71255557"
 
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>Prerequisites
  您需要下列元件才能完成此逐步解說：
 
 - [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
 - [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] 或 [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)]。
 
-- 已附加 `AdventureWorksLT` 範例資料庫之執行中 SQL Server 2005 或 SQL Server 2005 Express 執行個體的存取權。 您可以從`AdventureWorksLT` [CodePlex 網站](http://go.microsoft.com/fwlink/?LinkId=115611)下載資料庫。 如需附加資料庫的詳細資訊，請參閱下列主題：
+- 已附加 `AdventureWorksLT` 範例資料庫之執行中 SQL Server 2005 或 SQL Server 2005 Express 執行個體的存取權。 您可以從[SQL Server 範例 GitHub](https://github.com/Microsoft/sql-server-samples/releases/tag/adventureworks)存放庫下載 `AdventureWorksLT` 資料庫。 如需附加資料庫的詳細資訊，請參閱下列主題：
 
   - 若要使用 SQL Server Management Studio 或 SQL Server Management Studio Express 附加資料庫，請參閱[如何：附加資料庫（SQL Server Management Studio）](/sql/relational-databases/databases/attach-a-database)。
 
@@ -50,11 +50,11 @@ ms.locfileid: "71255557"
 ## <a name="create-a-new-project"></a>建立新專案
  第一步是建立 Excel VSTO 增益集專案。
 
-### <a name="to-create-a-new-project"></a>建立新的專案
+### <a name="to-create-a-new-project"></a>若要建立新的專案
 
 1. 使用 Visual Basic 或 C#，建立名稱為「從資料庫填入工作表」的 Excel VSTO 增益集專案。
 
-     如需詳細資訊，請參閱[如何：在 Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)中建立 Office 專案。
+     如需詳細資訊，請參閱 [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)。
 
      Visual Studio 會開啟 `ThisAddIn.vb` 或 `ThisAddIn.cs` 檔案，然後將 [從資料庫填入工作表] 專案加入方案總管。
 
@@ -63,7 +63,7 @@ ms.locfileid: "71255557"
 
 ### <a name="to-add-a-typed-dataset-to-the-project"></a>將具類型資料集加入專案
 
-1. 如果看不到 [**資料來源**] 視窗，請在功能表列上選擇 [**視圖** > ] [**其他視窗** > ] [**資料來源**]，以顯示。
+1. 如果看不到 [**資料來源**] 視窗，請在功能表列上選擇 [ **View** > **其他 Windows** > **資料來源**] 來顯示。
 
 2. 選擇 [ **加入新資料來源** ] 以啟動 [ **資料來源組態精靈**]。
 
@@ -81,9 +81,9 @@ ms.locfileid: "71255557"
 
     *Adventureworksltdataset.xsd*會加入至**方案總管**。 這個檔案會定義下列項目：
 
-   - 名為 `AdventureWorksLTDataSet`的具類型資料集。 這個資料集代表 AdventureWorksLT 資料庫中 [Address (SalesLT)] 資料表的內容。
+   - 具類型資料集，名稱為 `AdventureWorksLTDataSet`。 這個資料集代表 AdventureWorksLT 資料庫中 [Address (SalesLT)] 資料表的內容。
 
-   - 名為`AddressTableAdapter`的 TableAdapter。 這個 TableAdapter 可以用來讀取和寫入中的`AdventureWorksLTDataSet`資料。 如需詳細資訊，請參閱[TableAdapter 總覽](../data-tools/fill-datasets-by-using-tableadapters.md#tableadapter-overview)。
+   - 名為 `AddressTableAdapter`的 TableAdapter。 這個 TableAdapter 可以用來讀取和寫入 `AdventureWorksLTDataSet`中的資料。 如需詳細資訊，請參閱[TableAdapter 總覽](../data-tools/fill-datasets-by-using-tableadapters.md#tableadapter-overview)。
 
      您將在本逐步解說稍後用到這兩個物件。
 
@@ -126,18 +126,18 @@ ms.locfileid: "71255557"
 
 - 請按 **F5**。
 
-     工作表中會建立名為 <xref:Microsoft.Office.Tools.Excel.ListObject> 的 `addressListObject` 控制項。 同時也會將名為 `adventureWorksLTDataSet` 的資料集物件和名為 <xref:System.Windows.Forms.BindingSource> 的 `addressBindingSource` 加入專案。 <xref:Microsoft.Office.Tools.Excel.ListObject> 已繫結至 <xref:System.Windows.Forms.BindingSource>，而後者又繫結至資料集物件。
+     工作表中會建立名為 <xref:Microsoft.Office.Tools.Excel.ListObject> 的 `addressListObject` 控制項。 同時間，名為 `adventureWorksLTDataSet` 的資料集物件，和名為 <xref:System.Windows.Forms.BindingSource> 的 `addressBindingSource` 會加入專案。 <xref:Microsoft.Office.Tools.Excel.ListObject> 已繫結至 <xref:System.Windows.Forms.BindingSource>，而後者又繫結至資料集物件。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [Office 方案中的資料](../vsto/data-in-office-solutions.md)
 - [將資料系結至 Office 方案中的控制項](../vsto/binding-data-to-controls-in-office-solutions.md)
-- [如何：將資料庫中的資料填入工作表](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)
-- [如何：以資料庫中的資料填入檔](../vsto/how-to-populate-documents-with-data-from-a-database.md)
-- [如何：使用服務中的資料填入檔](../vsto/how-to-populate-documents-with-data-from-services.md)
+- [如何：將資料庫的資料填入工作表](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)
+- [如何：將資料庫中的資料填入檔](../vsto/how-to-populate-documents-with-data-from-a-database.md)
+- [如何：將服務的資料填入檔](../vsto/how-to-populate-documents-with-data-from-services.md)
 - [如何：以物件的資料填入檔](../vsto/how-to-populate-documents-with-data-from-objects.md)
-- [如何：在工作表中流覽資料庫記錄](../vsto/how-to-scroll-through-database-records-in-a-worksheet.md)
-- [如何：以主控制項的資料更新資料來源](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)
+- [如何：在工作表中滾動資料庫記錄](../vsto/how-to-scroll-through-database-records-in-a-worksheet.md)
+- [如何：使用主控制項的資料更新資料來源](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)
 - [逐步解說：檔層級專案中的簡單資料系結](../vsto/walkthrough-simple-data-binding-in-a-document-level-project.md)
 - [逐步解說：檔層級專案中的複雜資料系結](../vsto/walkthrough-complex-data-binding-in-a-document-level-project.md)
 - [在 Office 方案中使用本機資料庫檔案總覽](../vsto/using-local-database-files-in-office-solutions-overview.md)

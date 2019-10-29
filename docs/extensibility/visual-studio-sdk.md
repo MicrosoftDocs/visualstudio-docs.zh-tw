@@ -14,23 +14,23 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 41bffbc248d9004248a3552f335dccefaba72cca
-ms.sourcegitcommit: 90c3187d804ad7544367829d07ed4b47d3f8a72d
+ms.openlocfilehash: 4803fbb0887deaf140836263ca82d772b29112f7
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "68822154"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72981705"
 ---
 # <a name="visual-studio-sdk"></a>Visual Studio SDK
-Visual Studio SDK 可協助您擴充 Visual Studio 功能, 或將新功能整合至 Visual Studio。 您可以將擴充功能散發給其他使用者, 以及 Visual Studio Marketplace。 下列是一些可擴充 Visual Studio 的方法：
+Visual Studio SDK 可協助您擴充 Visual Studio 功能，或將新功能整合至 Visual Studio。 您可以將擴充功能散發給其他使用者，以及 Visual Studio Marketplace。 下列是一些可擴充 Visual Studio 的方法：
 
 - 將命令、按鈕、功能表和其他 UI 元素新增至 IDE
 
 - 加入工具視窗以取得新功能
 
-- 擴充指定語言的 IntelliSense, 或為新的程式設計語言提供 IntelliSense
+- 擴充指定語言的 IntelliSense，或為新的程式設計語言提供 IntelliSense
 
-- 使用 light 燈泡提供提示和建議, 協助開發人員撰寫更好的程式碼
+- 使用 light 燈泡提供提示和建議，協助開發人員撰寫更好的程式碼
 
 - 啟用新語言的支援
 
@@ -38,23 +38,23 @@ Visual Studio SDK 可協助您擴充 Visual Studio 功能, 或將新功能整合
 
 - 透過 Visual Studio Marketplace 觸及數百萬名開發人員
 
-  如果您之前從未寫過 Visual Studio 的延伸模組, 您應該會發現這些功能的詳細資訊, 以及[開始開發 Visual Studio 延伸](../extensibility/starting-to-develop-visual-studio-extensions.md)模組。
+  如果您之前從未寫過 Visual Studio 的延伸模組，您應該會發現這些功能的詳細資訊，以及[開始開發 Visual Studio 延伸](../extensibility/starting-to-develop-visual-studio-extensions.md)模組。
 
 ## <a name="install-the-visual-studio-sdk"></a>安裝 Visual Studio IDE
- Visual Studio SDK 是 Visual Studio 安裝程式中的選用功能。 您稍後也可以安裝 VS SDK。 如需詳細資訊, 請參閱[安裝 VISUAL STUDIO SDK](../extensibility/installing-the-visual-studio-sdk.md)。
+ Visual Studio SDK 是 Visual Studio 安裝程式中的選用功能。 您稍後也可以安裝 VS SDK。 如需詳細資訊，請參閱[安裝 VISUAL STUDIO SDK](../extensibility/installing-the-visual-studio-sdk.md)。
 
 ## <a name="whats-new-in-the-visual-studio-2017-sdk"></a>Visual Studio 2017 SDK 的新功能
- Visual Studio SDK 有一些新功能, 例如 VSIX v3 格式以及重大變更, 這可能會要求您更新延伸模組。 如需詳細資訊, 請參閱[Visual Studio 2017 SDK 的新功能](../extensibility/what-s-new-in-the-visual-studio-2017-sdk.md)。
+ Visual Studio SDK 有一些新功能，例如 VSIX v3 格式以及重大變更，這可能會要求您更新延伸模組。 如需詳細資訊，請參閱[Visual Studio 2017 SDK 的新功能](../extensibility/what-s-new-in-the-visual-studio-2017-sdk.md)。
 
 ## <a name="visual-studio-user-experience-guidelines"></a>Visual Studio 使用者經驗指導方針
- 在[Visual Studio 使用者經驗指導方針](../extensibility/ux-guidelines/visual-studio-user-experience-guidelines.md)中, 為您的擴充功能設計 UI, 取得絕佳的秘訣。
+ 在[Visual Studio 使用者經驗指導方針](../extensibility/ux-guidelines/visual-studio-user-experience-guidelines.md)中，為您的擴充功能設計 UI，取得絕佳的秘訣。
 
- 您也可以瞭解如何使用[位址 DPI 問題](../extensibility/addressing-dpi-issues2.md)一文, 讓您的擴充功能在高 DPI 的裝置上看起來很棒。
+ 您也可以瞭解如何使用[位址 DPI 問題](../extensibility/addressing-dpi-issues2.md)一文，讓您的擴充功能在高 DPI 的裝置上看起來很棒。
 
- 利用[映射服務和目錄](../extensibility/image-service-and-catalog.md)來進行絕佳的影像管理, 並支援高 DPI 和主題。
+ 利用[映射服務和目錄](../extensibility/image-service-and-catalog.md)來進行絕佳的影像管理，並支援高 DPI 和主題。
 
 ## <a name="find-and-install-existing-visual-studio-extensions"></a>尋找並安裝現有的 Visual Studio 擴充功能
- 您可以在 [**工具**] 功能表上的 [**擴充功能和更新**] 對話方塊中找到 Visual Studio 的延伸模組。 如需詳細資訊, 請參閱[尋找及使用 Visual Studio 延伸](../ide/finding-and-using-visual-studio-extensions.md)模組。 您也可以在[Visual Studio Marketplace](https://marketplace.visualstudio.com/)中找到擴充功能
+ 您可以在 [**工具**] 功能表上的 [**擴充功能和更新**] 對話方塊中找到 Visual Studio 的延伸模組。 如需詳細資訊，請參閱[尋找及使用 Visual Studio 延伸](../ide/finding-and-using-visual-studio-extensions.md)模組。 您也可以在[Visual Studio Marketplace](https://marketplace.visualstudio.com/)中找到擴充功能
 
 ## <a name="visual-studio-sdk-reference"></a>Visual Studio SDK 參考
  您可以在[VISUAL STUDIO Sdk 參考](../extensibility/visual-studio-sdk-reference.md)中找到 VISUAL STUDIO sdk API 參考。
@@ -63,20 +63,20 @@ Visual Studio SDK 可協助您擴充 Visual Studio 功能, 或將新功能整合
  您可以在[Visual Studio 範例](https://aka.ms/vs2015sdksamples)中找到 GitHub 上的 VS SDK 擴充功能的開放原始碼範例。 此 GitHub 存放庫包含的範例會說明 Visual Studio 中的各種可擴充功能。
 
 ## <a name="other-visual-studio-sdk-resources"></a>其他 Visual Studio SDK 資源
- 如果您對 VSSDK 有任何疑問, 或想要分享開發延伸模組的經驗, 您可以使用 Visual Studio 擴充性[論壇](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=vsx)或[ExtendVS Gitter 聊天室](https://gitter.im/Microsoft/extendvs)。
+ 如果您對 VSSDK 有任何疑問，或想要分享開發延伸模組的經驗，您可以使用 Visual Studio 擴充性[論壇](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=vsx)或[ExtendVS Gitter 聊天室](https://gitter.im/Microsoft/extendvs)。
 
- 您可以在[VSX Arcana blog](https://blogs.msdn.microsoft.com/vsx/)和 Microsoft mvp 所撰寫的許多 blog 中找到詳細資訊:
+ 您可以在[VSX Arcana blog](https://blogs.msdn.microsoft.com/vsx/)和 Microsoft mvp 所撰寫的許多 blog 中找到詳細資訊：
 
-- [我的最愛 Visual Studio 延伸模組](http://geekswithblogs.net/sdorman/archive/2014/10/05/favorite-visual-studio-extensions.aspx)
+- [我的最愛 Visual Studio 延伸模組](https://scottdorman.blog/2014/10/05/favorite-visual-studio-extensions/)
 
 - [Visual Studio 擴充性](http://www.visualstudioextensibility.com/overview/vs/)
 
-- [擴充 Visual Studio](http://blog.slaks.net/2013-10-18/extending-visual-studio-part-1-getting-started/)
+- [擴充 Visual Studio](https://blog.slaks.net/2013-10-18/extending-visual-studio-part-1-getting-started/)
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [使用功能表命令建立擴充功能](../extensibility/creating-an-extension-with-a-menu-command.md)
 - [如何：將擴充性專案遷移至 Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md)
-- [常見問題集：將增益集轉換成 VSPackage 擴充功能](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md)
+- [常見問題：將增益集轉換成 VSPackage 擴充功能](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md)
 - [在 managed 程式碼中管理多個執行緒](../extensibility/managing-multiple-threads-in-managed-code.md)
 - [擴充功能表和命令](../extensibility/extending-menus-and-commands.md)
 - [將命令新增至工具列](../extensibility/adding-commands-to-toolbars.md)

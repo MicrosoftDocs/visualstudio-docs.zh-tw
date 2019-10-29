@@ -9,16 +9,16 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c38cb246a1ec3e8a20793b37f0a231d2e118bd4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d30efd450f18832caadcc9a0008facc4388cd70a
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72663769"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72986287"
 ---
 # <a name="use-models-in-your-development-process"></a>在開發程序中使用模型
 
-在 Visual Studio 中，您可以使用模型來協助您了解並變更系統、應用程式或元件。 模型可以協助您將系統運作的領域視覺化、釐清使用者的需求、定義系統的架構、分析程式碼，以及確定您的程式碼符合需求。 請參閱[Channel 9 影片：透過模型化改善架構](http://go.microsoft.com/fwlink/?LinkID=252078)。
+在 Visual Studio 中，您可以使用模型來協助您了解並變更系統、應用程式或元件。 模型可以協助您將系統運作的領域視覺化、釐清使用者的需求、定義系統的架構、分析程式碼，以及確定您的程式碼符合需求。 請參閱[Channel 9 影片：透過模型化改善架構](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Improving-architecture-through-modeling)。
 
 若要查看支援各類型之模型的 Visual Studio 版本，請參閱 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。
 
@@ -86,7 +86,7 @@ ms.locfileid: "72663769"
 
 - 在每個反覆項目即將結束前，召集需求研討會來詳細定義將於下一個反覆項目中開發的需求或使用者劇本。 邀請可以決定優先順序的使用者和商務專案關係人，以及開發人員和系統測試人員。 提供三個小時來定義 2 週反覆項目的需求。
 
-- 此研討會的目標是要讓每個人都同意下一個反覆項目結束時所完成的項目。 請使用模型做為其中一項工具來協助釐清需求。 此研討會的輸出是反覆運算待處理專案：也就是 Team Foundation 中的開發工作清單，以及 [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)] 中的測試套件。
+- 此研討會的目標是要讓每個人都同意下一個反覆項目結束時所完成的項目。 請使用模型做為其中一項工具來協助釐清需求。 此研討會的輸出是反覆運算待處理專案：也就是 Team Foundation 中的開發工作清單，以及 [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)]中的測試套件。
 
 - 在此需求研討會中，只在您需要決定此開發工作估計的範圍內討論該設計。 否則，請將討論主題保持在使用者可能會直接體驗的系統行為。 將需求模型與架構模型分開討論。
 
@@ -131,10 +131,10 @@ ms.locfileid: "72663769"
 
 |**分類**|**Links**|
 |-|-|
-|**影片**|![link 到 video ](../data-tools/media/playvideo.gif) [MSDN How Do I 影片：如何建立和使用 UML 模型和圖表（Visual Studio 2010 旗艦版）](http://go.microsoft.com/fwlink/?LinkId=214460)<br /><br /> ![link 到影片 ](../data-tools/media/playvideo.gif) [Channel 9：使用 Visual Studio 2010 的 UML](http://go.microsoft.com/fwlink/?LinkID=201106)<br /><br /> ![link 到影片 ](../data-tools/media/playvideo.gif) [MSDN 「如何」系列： UML 工具和擴充性（Visual Studio 2010 旗艦版）](http://go.microsoft.com/fwlink/?LinkID=214467)|
-|**論壇**|- [Visual Studio Visualization & Modeling Tools](http://go.microsoft.com/fwlink/?LinkId=184720)<br />- [Visual Studio Visualization & Modeling SDK (DSL 工具)](http://go.microsoft.com/fwlink/?LinkId=184721)|
+|**影片**|![連結到影片](../data-tools/media/playvideo.gif) [MSDN How Do I 影片：如何建立和使用 UML 模型和圖表（Visual Studio 2010 旗艦版）](/previous-versions/visualstudio/visual-studio-2010/dd831853(v=vs.100))<br /><br /> ![連結至影片](../data-tools/media/playvideo.gif) [Channel 9：使用 Visual Studio 2010 的 UML](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-1-brainstorming-a-project)<br /><br /> ![連結到影片](../data-tools/media/playvideo.gif) [MSDN How Do I 系列： UML 工具和擴充性（Visual Studio 2010 旗艦版）](/previous-versions/visualstudio/visual-studio-2010/dd831853(v=vs.100))|
+|**論壇**|- [Visual Studio Visualization & Modeling Tools](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vsarch)<br />- [Visual Studio Visualization & Modeling SDK (DSL 工具)](https://social.msdn.microsoft.com/Forums/home?forum=dslvsarchx)|
 |**部落格**|[Microsoft DevOps](https://devblogs.microsoft.com/devops/)|
-|**技術文件和日誌**|[MSDN 架構中心](http://go.microsoft.com/fwlink/?LinkId=201343)<br /><br /> [Visual Studio 架構工具指南](../modeling/visual-studio-architecture-tooling-guidance.md)|
+|**技術文件和日誌**|[MSDN 架構中心](/previous-versions/dn630665(v=msdn.10))<br /><br /> [Visual Studio 架構工具指南](../modeling/visual-studio-architecture-tooling-guidance.md)|
 
 ## <a name="see-also"></a>請參閱
 

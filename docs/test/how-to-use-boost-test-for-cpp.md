@@ -8,12 +8,12 @@ ms.author: mblome
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cf962ec4ecade1bb88d9e301d62eb6ab8a5131cf
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
-ms.translationtype: HT
+ms.openlocfilehash: 966983fa15b60db33f11645b25561a74ad5fadbe
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65226095"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72983439"
 ---
 # <a name="how-to-use-boosttest-for-c-in-visual-studio"></a>如何在 Visual Studio 中使用 C++ 的 Boost.Test
 
@@ -25,7 +25,7 @@ ms.locfileid: "65226095"
 
 ## <a name="install-boost"></a>安裝 Boost
 
-Boost.Test 需要 [Boost](http://www.boost.org/)！ 如果您未安裝 Boost，建議您使用 vcpkg 套件管理員。
+Boost.Test 需要 [Boost](https://www.boost.org/)！ 如果您未安裝 Boost，建議您使用 vcpkg 套件管理員。
 
 1. 請遵循 [Vcpkg：適用於 Windows 的 C++ 套件管理員](/cpp/vcpkg)中的指示安裝 vcpkg (如果目前沒有)。
 
@@ -75,7 +75,7 @@ Boost.Test 需要 [Boost](http://www.boost.org/)！ 如果您未安裝 Boost，�
     </PropertyGroup>
     ```
 
-   c.  儲存並關閉 *\*.vcxproj* 檔案，然後重新載入專案。
+   c. 儲存並關閉 *\*.vcxproj* 檔案，然後重新載入專案。
 
    d. 若要開啟 [屬性頁]，請以滑鼠右鍵按一下專案節點，選擇 [屬性]。
 
@@ -126,8 +126,8 @@ BOOST_AUTO_TEST_CASE(my_boost_test)
 
 ## <a name="write-and-run-tests"></a>撰寫及執行測試
 
-您現在準備好撰寫及執行 Boost Test。 如需測試巨集的資訊，請參閱 [Boost Test Library 文件](http://www.boost.org/doc/libs/release/libs/test/doc/html/index.html)。 如需使用**測試總管**探索、執行及分組測試的資訊，請參閱[使用測試總管執行單元測試](run-unit-tests-with-test-explorer.md)。
+您現在準備好撰寫及執行 Boost Test。 如需測試巨集的資訊，請參閱 [Boost Test Library 文件](https://www.boost.org/doc/libs/1_71_0/libs/test/doc/html/index.html)。 如需使用**測試總管**探索、執行及分組測試的資訊，請參閱[使用測試總管執行單元測試](run-unit-tests-with-test-explorer.md)。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [撰寫 C/C++ 的單元測試](writing-unit-tests-for-c-cpp.md)

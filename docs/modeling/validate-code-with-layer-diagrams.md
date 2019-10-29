@@ -19,12 +19,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a2b972c3c275f3e43819220532ac0a3c4a597e3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 9fc852b4d5003cf809248c72ca3ac42ad3a6bf23
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72662928"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72981125"
 ---
 # <a name="validate-code-with-dependency-diagrams"></a>使用相依性圖表驗證程式碼
 
@@ -52,7 +52,7 @@ ms.locfileid: "72662928"
 
 若要查看哪些版本的 Visual Studio 支援這項功能，請參閱[架構和模型工具的版本支援](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。
 
-您可以在 Visual Studio 中或從命令提示字元，手動從開啟的相依性圖表驗證程式代碼。 您也可以在執行本機組建或 Azure Pipelines 組建時，自動驗證程式代碼。 請參閱[Channel 9 影片：使用相依性圖表設計和驗證您的架構](http://go.microsoft.com/fwlink/?LinkID=252073)。
+您可以在 Visual Studio 中或從命令提示字元，手動從開啟的相依性圖表驗證程式代碼。 您也可以在執行本機組建或 Azure Pipelines 組建時，自動驗證程式代碼。 請參閱[Channel 9 影片：使用相依性圖表設計和驗證您的架構](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Using-layer-diagrams-to-design-and-validate-your-architecture)。
 
 > [!IMPORTANT]
 > 如果您想要使用 Team Foundation Server （TFS）來執行圖層驗證，您也必須在組建伺服器上安裝相同版本的 Visual Studio。

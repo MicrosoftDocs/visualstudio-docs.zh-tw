@@ -1,5 +1,5 @@
 ---
-title: HOW TO：新增 Specific Finder 方法 |Microsoft Docs
+title: 如何：加入特定的 Finder 方法 |Microsoft Docs
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -17,80 +17,80 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8fdd467f2b3a06398198f6fd8452c6a548bf0872
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 732921b021d7887faf31dd3f602f5400c1d06a59
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63431274"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985254"
 ---
-# <a name="how-to-add-a-specific-finder-method"></a>HOW TO：新增特定搜尋方法
-  您可以藉由建立傳回單一實體執行個體*特定的 Finder*方法。 當使用者選擇商務資料 web 組件或外部的清單中的實體時，商務資料連接 (BDC) 服務會執行特定搜尋工具方法。 如需詳細資訊，請參閱 <<c0> [ 設計 business data connectivity 模型](../sharepoint/designing-a-business-data-connectivity-model.md)。
+# <a name="how-to-add-a-specific-finder-method"></a>如何：加入特定的 Finder 方法
+  您可以藉由建立特定的搜尋*工具*方法來傳回單一實體實例。 當使用者選擇商務資料 web 元件或外部清單中的實體時，商務資料連線（BDC）服務會執行特定的搜尋工具方法。 如需詳細資訊，請參閱[設計商務資料連線模型](../sharepoint/designing-a-business-data-connectivity-model.md)。
 
-### <a name="to-create-a-specific-finder-method"></a>若要建立特定搜尋方法
+### <a name="to-create-a-specific-finder-method"></a>若要建立特定的搜尋工具方法
 
-1. 在  **BDC 設計工具**，選擇實體。
+1. 在**BDC 設計**工具上，選擇實體。
 
-    如需如何將實體新增至**BDC 設計工具**在 Visual Studio 中，請參閱[How to:將實體新增至模型](../sharepoint/how-to-add-an-entity-to-a-model.md)。
+    如需如何在 Visual Studio 中將實體加入至**BDC 設計**工具的詳細資訊，請參閱[如何：將實體加入至模型](../sharepoint/how-to-add-an-entity-to-a-model.md)。
 
-2. 在功能表列上選擇 **檢視** > **其他 Windows**， **BDC 方法詳細資料**。
+2. 在功能表列上，選擇 [ **View** > **其他視窗**]、[ **BDC 方法詳細資料**]。
 
-    **BDC 方法詳細資料**視窗隨即開啟。 如需該視窗的詳細資訊，請參閱[BDC 模型設計工具概觀](../sharepoint/bdc-model-design-tools-overview.md)。
+    [ **BDC 方法詳細資料**] 視窗隨即開啟。 如需該視窗的詳細資訊，請參閱[BDC 模型設計工具總覽](../sharepoint/bdc-model-design-tools-overview.md)。
 
-3. 在 **將方法加入**清單中，選擇**建立特定搜尋方法**。
+3. 在 [**加入方法**] 清單中，選擇 [**建立特定搜尋工具方法**]。
 
-    Visual Studio 會將下列項目加入至模型。 這些項目會出現在**BDC 方法詳細資料**視窗。
+    Visual Studio 會將下列元素加入至模型。 這些元素會出現在 [ **BDC 方法詳細資料**] 視窗中。
 
    - 方法。
 
-   - 方法的輸入的參數。
+   - 方法的輸入參數。
 
    - 方法的傳回參數。
 
-   - 每個參數的型別描述項。
+   - 每個參數的類型描述元。
 
-   - 方法執行個體方法。
+   - 方法的方法實例。
 
-     如需詳細資訊，請參閱 <<c0> [ 設計 business data connectivity 模型](../sharepoint/designing-a-business-data-connectivity-model.md)。
+     如需詳細資訊，請參閱[設計商務資料連線模型](../sharepoint/designing-a-business-data-connectivity-model.md)。
 
-4. 開啟 Visual Studio**屬性**視窗。
+4. 開啟 [Visual Studio**屬性**] 視窗。
 
-5. 設定傳回參數的類型描述元做為實體型別描述元。 如需有關如何建立實體型別描述元的資訊，請參閱[How to:定義參數的型別描述元](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)。
-
-   > [!NOTE]
-   > 您不需要執行此步驟中，如果您已加入實體中的搜尋工具方法。 Visual Studio 會使用您在搜尋工具方法中定義的類型描述元。
+5. 將傳回參數的類型描述元設定為實體類型描述項。 如需如何建立實體類型描述元的詳細資訊，請參閱[如何：定義參數的類型描述](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)元。
 
    > [!NOTE]
-   > 如果實體類型的識別項欄位代表自動產生的資料庫資料表中的欄位，設定**唯讀**屬性的識別項欄位 **，則為 True**。
+   > 如果您已將 Finder 方法加入至實體，則不需要執行此步驟。 Visual Studio 會使用您在搜尋工具方法中所定義的類型描述元。
 
-6. 在 [**方法詳細資料**] 視窗中，選擇此方法的方法執行個體。
+   > [!NOTE]
+   > 如果實體類型的 [識別碼] 欄位代表自動產生之資料庫資料表中的欄位，請將 [識別碼] 欄位的 [**唯讀**] 屬性設定為 [ **True**]。
 
-7. 在 [**屬性] 視窗**，將**傳回參數名稱**屬性方法的傳回參數的名稱。 如需有關方法的執行個體屬性的詳細資訊，請參閱[MethodInstance](http://go.microsoft.com/fwlink/?LinkID=169282)。
+6. 在 [**方法詳細資料**] 視窗中，選擇方法的方法實例。
 
-8. 在 **方案總管**，開啟實體時，所產生的服務程式碼檔案的捷徑功能表，然後選擇**檢視程式碼**。
+7. 在 [**屬性] 視窗**中，將 [傳回**參數名稱**] 屬性設定為方法之傳回參數的名稱。 如需方法實例屬性的詳細資訊，請參閱[MethodInstance](/previous-versions/office/developer/sharepoint-2010/ee556838(v=office.14))。
 
-    實體服務程式碼檔會開啟在程式碼編輯器。 如需有關實體服務程式碼檔的詳細資訊，請參閱[建立 business data connectivity 模型](../sharepoint/creating-a-business-data-connectivity-model.md)。
+8. 在**方案總管**中，開啟針對實體所產生之服務程式代碼檔案的快捷方式功能表，然後選擇 [ **View code**]。
 
-9. 您可以將程式碼加入特定搜尋工具方法。 這個程式碼會執行下列工作：
+    實體服務程式代碼檔案會在程式碼編輯器中開啟。 如需實體服務程式代碼檔案的詳細資訊，請參閱[建立商務資料連線模型](../sharepoint/creating-a-business-data-connectivity-model.md)。
 
-   - 從資料來源中擷取一筆記錄。
+9. 將程式碼加入至特定的搜尋工具方法。 這個程式碼會執行下列工作：
 
-   - BDC 服務傳回的實體。
+   - 從資料來源抓取記錄。
 
-     下列範例會傳回 SQL Server 的 AdventureWorks 範例資料庫中的連絡人。
+   - 將實體傳回到 BDC 服務。
+
+     下列範例會從 SQL Server 的 AdventureWorks 範例資料庫中傳回連絡人。
 
      > [!NOTE]
-     > 值取代`ServerName`欄位與您伺服器的名稱。
+     > 將 [`ServerName`] 欄位的值取代為您的伺服器名稱。
 
      [!code-csharp[SP_BDC#3](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs#3)]
      [!code-vb[SP_BDC#3](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#3)]
 
-## <a name="see-also"></a>另請參閱
-- [設計商務資料連接模型](../sharepoint/designing-a-business-data-connectivity-model.md)
-- [如何：新增搜尋方法](../sharepoint/how-to-add-a-finder-method.md)
-- [如何：新增建立者方法](../sharepoint/how-to-add-a-creator-method.md)
+## <a name="see-also"></a>請參閱
+- [設計商務資料連線模型](../sharepoint/designing-a-business-data-connectivity-model.md)
+- [如何：加入 Finder 方法](../sharepoint/how-to-add-a-finder-method.md)
+- [如何：加入建立者方法](../sharepoint/how-to-add-a-creator-method.md)
 - [如何：新增刪除者方法](../sharepoint/how-to-add-a-deleter-method.md)
-- [如何：新增更新者方法](../sharepoint/how-to-add-an-updater-method.md)
-- [BDC 模型設計工具概觀](../sharepoint/bdc-model-design-tools-overview.md)
-- [如何：新增參數至方法](../sharepoint/how-to-add-a-parameter-to-a-method.md)
-- [如何：定義方法執行個體](../sharepoint/how-to-define-a-method-instance.md)
+- [如何：新增更新程式方法](../sharepoint/how-to-add-an-updater-method.md)
+- [BDC 模型設計工具總覽](../sharepoint/bdc-model-design-tools-overview.md)
+- [如何：將參數加入至方法](../sharepoint/how-to-add-a-parameter-to-a-method.md)
+- [如何：定義方法實例](../sharepoint/how-to-define-a-method-instance.md)

@@ -1,5 +1,5 @@
 ---
-title: IWebAppDiagnosticsSetup::DiagnosticsSupported |Microsoft Docs
+title: IWebAppDiagnosticsSetup：:D iagnosticsSupported |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -13,18 +13,18 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1d4214dea16c1e8a96ece7428f9ea73640025a9c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: dd27e7c8759054fa2d7d67858d8d006fa9c9a152
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443670"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72984576"
 ---
 # <a name="iwebappdiagnosticssetupdiagnosticssupported"></a>IWebAppDiagnosticsSetup::DiagnosticsSupported
-判斷此應用程式是否支援診斷。 如果[SetSite](http://go.microsoft.com/fwlink/?LinkId=232439)已經實作了非 NULL 值，這個介面的物件上呼叫[DiagnosticsSupported](../../winscript/reference/iwebappdiagnosticssetup-diagnosticssupported.md)傳回`true`。 如果沒有，它會傳回`false`並呼叫[IWebAppDiagnosticsSetup::CreateObjectWithSiteAtWebApp](../../winscript/reference/iwebappdiagnosticssetup-createobjectwithsiteatwebapp.md)失敗。  
+判斷此應用程式是否支援診斷。 如果在使用非 Null 值來執行此介面的物件上呼叫了[SetSite](/windows/win32/api/ocidl/nf-ocidl-iobjectwithsite-setsite) ， [DiagnosticsSupported](../../winscript/reference/iwebappdiagnosticssetup-diagnosticssupported.md)會傳回 `true`。 如果不是，則會傳回 `false`，而對[IWebAppDiagnosticsSetup：： CreateObjectWithSiteAtWebApp](../../winscript/reference/iwebappdiagnosticssetup-createobjectwithsiteatwebapp.md)的呼叫會失敗。  
   
 > [!IMPORTANT]
-> [IWebAppDiagnosticsSetup 介面](../../winscript/reference/iwebappdiagnosticssetup-interface.md)是實作由 PDM v11.0 和更新版本。 在 activdbg100 中找到。  
+> [IWebAppDiagnosticsSetup 介面](../../winscript/reference/iwebappdiagnosticssetup-interface.md)是由 PDM 11.0 和更新版本所執行。 在 activdbg100 中找到。  
   
 ## <a name="syntax"></a>語法  
   
@@ -34,4 +34,4 @@ HRESULT DiagnosticsSupported(        [out, retval] VARIANT_BOOL* pRetVal        
   
 #### <a name="parameters"></a>參數  
  `pRetVal`  
- 如果[SetSite](http://go.microsoft.com/fwlink/?LinkId=232439)已經實作了非 NULL 值，這個介面的物件上呼叫[DiagnosticsSupported](../../winscript/reference/iwebappdiagnosticssetup-diagnosticssupported.md)傳回`true`。 如果沒有，它會傳回`false`，並呼叫[IWebAppDiagnosticsSetup::CreateObjectWithSiteAtWebApp](../../winscript/reference/iwebappdiagnosticssetup-createobjectwithsiteatwebapp.md)失敗。
+ 如果在使用非 Null 值來執行此介面的物件上呼叫了[SetSite](/windows/win32/api/ocidl/nf-ocidl-iobjectwithsite-setsite) ， [DiagnosticsSupported](../../winscript/reference/iwebappdiagnosticssetup-diagnosticssupported.md)會傳回 `true`。 如果不是，則會傳回 `false`，而對[IWebAppDiagnosticsSetup：： CreateObjectWithSiteAtWebApp](../../winscript/reference/iwebappdiagnosticssetup-createobjectwithsiteatwebapp.md)的呼叫會失敗。

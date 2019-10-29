@@ -7,12 +7,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e9e42b5156ced1c01995882e3250c7243c18d24d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 73c81d88f055ea7a585e3d14ab4a0086d9236938
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72658368"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72984443"
 ---
 # <a name="msi-and-vsix-deployment-of-a-dsl"></a>DSL 的 MSI 和 VSIX 部署
 您可以在自己的電腦或其他電腦上安裝特定領域語言。 Visual Studio 必須已安裝在目的電腦上。
@@ -68,7 +68,7 @@ ms.locfileid: "72658368"
 
  如需 MSI 檔案和其他部署選項的詳細資訊，請參閱[部署應用程式、服務和元件](../deployment/deploying-applications-services-and-components.md)。
 
- 若要建立 MSI，您可以將安裝專案新增至 Visual Studio 解決方案。 建立安裝專案最簡單的方法是使用 CreateMsiSetupProject.tt 範本，您可以從[VMSDK 網站](http://go.microsoft.com/fwlink/?LinkID=186128)下載。
+ 若要建立 MSI，您可以將安裝專案新增至 Visual Studio 解決方案。 建立安裝專案最簡單的方法是使用 CreateMsiSetupProject.tt 範本，您可以從[VMSDK 網站](https://code.msdn.microsoft.com/Visualization-and-Modeling-313535db)下載。
 
 ### <a name="to-deploy-a-dsl-in-an-msi"></a>在 MSI 中部署 DSL
 
@@ -96,7 +96,7 @@ ms.locfileid: "72658368"
 
    - 在 [**建立**] 功能表上，開啟 [ **Configuration Manager**]，然後選取您要建立的設定，例如 [**發行**] 或 [ **Debug**]。
 
-4. 移至 [[視覺效果和模型 SDK](http://go.microsoft.com/fwlink/?LinkID=186128)] 首頁，然後從 [**下載**] 索引標籤下載**CreateMsiSetupProject.tt**。
+4. 移至 [[視覺效果和模型 SDK](https://code.msdn.microsoft.com/Visualization-and-Modeling-313535db)] 首頁，然後從 [**下載**] 索引標籤下載**CreateMsiSetupProject.tt**。
 
 5. 將**CreateMsiSetupProject.tt**新增至您的 Dsl 專案。
 
@@ -126,7 +126,7 @@ ms.locfileid: "72658368"
 
     - 當您按兩下該檔案時，Visual Studio 會啟動，並在 DSL 編輯器中開啟 DSL 檔案。
 
-    如果您想要的話，也可以手動建立安裝專案，而不是使用文字模板。 如需包含此程式的逐步解說，請參閱[視覺效果和模型化 SDK 實驗室](http://go.microsoft.com/fwlink/?LinkId=208878)的第5章。
+    如果您想要的話，也可以手動建立安裝專案，而不是使用文字模板。 如需包含此程式的逐步解說，請參閱[視覺效果和模型化 SDK 實驗室](https://code.msdn.microsoft.com/DSLToolsLab/Release/ProjectReleases.aspx?ReleaseId=4207)的第5章。
 
 ### <a name="to-uninstall-a-dsl-that-was-installed-from-an-msi"></a>卸載從 MSI 安裝的 DSL
 
