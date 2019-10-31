@@ -1,5 +1,5 @@
 ---
-title: 快速入門：建立您的第一個 Vue.js 應用程式
+title: 快速入門：建立您的第一個 Vue 應用程式
 description: 在本快速入門中，您會在 Visual Studio 中使用適用於 Visual Studio 的 Node.js 工具建立 Vue.js 應用程式
 ms.custom: seodec18
 ms.date: 09/24/2018
@@ -13,12 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 28e86068b2255d1796363405c0231c1fb6bdd480
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
-ms.translationtype: HT
+ms.openlocfilehash: ba1f403cd722b4d3dd1860c4a8b135c87b80bb4d
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65226485"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189477"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-vuejs-app"></a>快速入門：使用 Visual Studio 建立您的第一個 Vue.js 應用程式
 
@@ -27,7 +27,7 @@ ms.locfileid: "65226485"
 > [!IMPORTANT]
 > 本文需要 Vue.js 範本，該範本是從 Visual Studio 2017 15.8 版開始提供。
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>Prerequisites
 
 * 您必須安裝 Visual Studio 和 Node.js 開發工作負載。
 
@@ -106,7 +106,7 @@ ms.locfileid: "65226485"
 
 1. 接著，選擇 [建置] > [建置方案] 來建置專案。 請檢查 [輸出] 視窗查看建置結果，然後從 [顯示輸出來源] 清單選擇 [建置]。
 
-    Vue.js 專案範本會設定建置後事件來使用 `build` npm 指令碼。 如果您想要修改此設定，請從 Windows 檔案總管中開啟專案檔 (*\<專案名稱\>.njsproj*)，並找出這行程式碼：
+    Vue.js 專案範本會設定建置後事件來使用 `build` npm 指令碼。 如果您想要修改此設定，請從 Windows 檔案總管中開啟專案檔 ( *\<專案名稱\>.njsproj*)，並找出這行程式碼：
 
     ```xml
     <PostBuildEvent>npm run build</PostBuildEvent>
@@ -128,6 +128,6 @@ ms.locfileid: "65226485"
 
 ## <a name="next-steps"></a>後續步驟
 
-- 逐步進行 [Node.js 和 Express 的教學課程](../nodejs/tutorial-nodejs.md)
-- 逐步進行 [Node.js 和 React 的教學課程](/visualstudio/javascript/tutorial-nodejs-with-react-and-jsx)
+- 逐步進行 [Node.js 和 Express 的教學課程](tutorial-nodejs.md)
+- 逐步進行 [Node.js 和 React 的教學課程](tutorial-nodejs-with-react-and-jsx.md)
 - [將應用程式部署至 Linux App Service](../javascript/publish-nodejs-app-azure.md)

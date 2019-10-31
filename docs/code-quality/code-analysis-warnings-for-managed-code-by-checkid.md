@@ -263,12 +263,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: d8700d058c694afbea551e5b117a0e4a0461f2e8
-ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
+ms.openlocfilehash: 2811c905650f215272b650bff955b7264f56d4b5
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72806162"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188847"
 ---
 # <a name="code-analysis-warnings-for-managed-code-by-checkid"></a>CheckId 受控碼的程式碼分析警告
 
@@ -276,7 +276,7 @@ ms.locfileid: "72806162"
 
 | CheckId | 警告 | 描述 |
 |---------| - | - |
-| CA2007 | [CA2007：不要直接等待工作](ca2007-do-not-directly-await-task.md) | 非同步方法會直接[等待](/dotnet/csharp/language-reference/keywords/await)<xref:System.Threading.Tasks.Task>。 當非同步方法直接等候 <xref:System.Threading.Tasks.Task> 時，接續會在建立工作的同一個執行緒中進行。 這種行為在效能方面可能會很昂貴，而且可能會導致 UI 執行緒上發生鎖死。 請考慮呼叫 <xref:System.Threading.Tasks.Task.ConfigureAwait(System.Boolean)?displayProperty=nameWithType> 來表示接續的意圖。 |
+| CA2007 | [CA2007：不要直接等待工作](ca2007.md) | 非同步方法會直接[等待](/dotnet/csharp/language-reference/keywords/await)<xref:System.Threading.Tasks.Task>。 當非同步方法直接等候 <xref:System.Threading.Tasks.Task> 時，接續會在建立工作的同一個執行緒中進行。 這種行為在效能方面可能會很昂貴，而且可能會導致 UI 執行緒上發生鎖死。 請考慮呼叫 <xref:System.Threading.Tasks.Task.ConfigureAwait(System.Boolean)?displayProperty=nameWithType> 來表示接續的意圖。 |
 | CA1000 | [CA1000：不要在泛型型別上宣告靜態成員](../code-quality/ca1000.md) | 呼叫泛型類型的靜態成員時，必須為類型指定類型引數。 呼叫不支援介面的泛型執行個體 (Instance) 成員時，必須為成員指定類型引數。 在上述兩種情況下，指定型別引數的語法不同且容易混淆。 |
 | CA1001 | [CA1001：具有可處置欄位的類型應該是可處置的](../code-quality/ca1001.md) | 類別會宣告及實作類型為 System.IDisposable 的執行個體欄位，且該類別不會實作 IDisposable。 宣告 IDisposable 欄位的類別會間接擁有 Unmanaged 資源，且應實作 IDisposable 介面。 |
 | CA1002 | [CA1002：不要公開泛型清單](../code-quality/ca1002.md) | < （Of \< （T >） >）是泛型集合，專為效能而非繼承所設計。 因此，List 不包含任何虛擬成員。 應該改為公開專為繼承所設計的泛型集合。 |

@@ -1,7 +1,7 @@
 ---
 title: 建立網路型安裝
 description: 了解如何建立網路安裝點以在企業內部署 Visual Studio。
-ms.date: 10/11/2019
+ms.date: 10/29/2019
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: fcc4a3d3d99deab62971c40b26c9a4252367438f
-ms.sourcegitcommit: 6244689e742e551e7b6933959bd42df56928ece3
+ms.openlocfilehash: ca393af528abc7f685ceca83ac4c59ebb75dedfe
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72516330"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189486"
 ---
 # <a name="create-a-network-installation-of-visual-studio"></a>建立 Visual Studio 的網路安裝
 
@@ -88,8 +88,9 @@ ms.locfileid: "72516330"
 
 ## <a name="modify-the-responsejson-file"></a>修改 response.json 檔案
 
-您可以修改 response.json，以設定安裝程式執行時所使用的預設值。  例如，您可以設定 `response.json` 檔案來自動選取所選的一組特定工作負載。
-如需詳細資訊，請參閱[使用回應檔自動安裝 Visual Studio](automated-installation-with-response-file.md)。
+您可以修改 response.json，以設定安裝程式執行時所使用的預設值。  例如，您可以設定 `response.json` 檔案來自動選取所選的一組特定工作負載。 如需詳細資訊，請參閱[使用回應檔自動安裝 Visual Studio](automated-installation-with-response-file.md)。
+
+而且，如果您遇到 Visual Studio 啟動載入器發生問題，當您將它與回應 json 檔案配對時擲回錯誤，請參閱[當您安裝或使用視覺效果時，針對網路相關錯誤進行疑難排解一節中的「無法從父進程剖析識別碼」一節。Studio](troubleshooting-network-related-errors-in-visual-studio.md#error-failed-to-parse-id-from-parent-process)頁面，以取得如何執行的詳細資訊。
 
 ## <a name="copy-the-layout-to-a-network-share"></a>將配置複製到網路共用
 
@@ -219,7 +220,7 @@ vs_enterprise.exe --layout c:\VSLayout --all
 
 > [!IMPORTANT]
 > 為了防止發生錯誤，完整安裝路徑請務必少於 80 個字元。
->
+
 > [!TIP]
 > 作為批次檔的一部分執行時，`--wait` 選項可確保 `vs_enterprise.exe` 程序先等到安裝完成，再傳回結束代碼。
 >
@@ -287,6 +288,7 @@ vs_enterprise.exe --layout c:\VSLayout --all
 
 - [Visual Studio 系統管理員指南](visual-studio-administrator-guide.md)
 - [更新 Visual Studio 的網路型安裝](update-a-network-installation-of-visual-studio.md)
+- [當您安裝或使用 Visual Studio 時，針對網路相關錯誤進行疑難排解](troubleshooting-network-related-errors-in-visual-studio.md)
 - [控制網路型 Visual Studio 部署的更新](controlling-updates-to-visual-studio-deployments.md)
 - [Visual Studio 產品生命週期和服務](/visualstudio/releases/2019/servicing/)
 - [在維護基底上時更新 Visual Studio](update-servicing-baseline.md)

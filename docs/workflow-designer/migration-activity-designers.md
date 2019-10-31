@@ -8,12 +8,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: da8459db53a1ecb9a297e2a4a218791281806313
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: eeeb9ffb92b2bf97513923bdef901dacd1a9a67a
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72650130"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189725"
 ---
 # <a name="migration-activity-designers"></a>移轉活動設計工具
 
@@ -29,7 +29,7 @@ ms.locfileid: "72650130"
 
 - [流程圖](../workflow-designer/flowchart-activity-designers.md)
 
-- [使用活動設計工具](../workflow-designer/using-the-activity-designers.md)
+- [使用活動設計工具](control-flow-activity-designers.md)
 
 - [Messaging](../workflow-designer/messaging-activity-designers.md)
 

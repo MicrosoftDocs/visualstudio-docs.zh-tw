@@ -8,12 +8,12 @@ manager: jillfra
 ms.technology: vs-azure
 ms.workload:
 - azure
-ms.openlocfilehash: 45397ddf21f1ea1d735c2753864e5954850a4d98
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
+ms.openlocfilehash: 8b6aef437519a4fe92f11a3b21546b3dda9981bb
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70312143"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188767"
 ---
 # <a name="get-started-with-visual-studio-kubernetes-tools"></a>開始使用 Visual Studio Kubernetes 工具
 
@@ -21,7 +21,7 @@ Visual Studio Kubernetes 工具可協助簡化以 Kubernetes 為目標的容器�
 
 本教學課程涵蓋如何使用 Visual Studio 將 Kubernetes 支援新增至專案，併發布至 AKS。 如果您主要想要使用[Azure Dev Spaces](https://aka.ms/get-azds)來對 AKS 中執行的專案進行偵錯工具和測試，您可以改為跳至[Azure Dev Spaces 教學](/azure/dev-spaces/get-started-netcore-visualstudio)課程。
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>Prerequisites
 
 若要利用這種新功能，您需要：
 
@@ -42,7 +42,7 @@ Visual Studio Kubernetes 工具可協助簡化以 Kubernetes 為目標的容器�
 
     1. Helm CLI 安裝在您的開發工作站上。 如需詳細資訊，請參閱[安裝 Helm](https://github.com/kubernetes/helm/blob/master/docs/install.md)。
 
-    1. Helm 會使用命令， `helm init`針對您的 AKS 叢集進行設定。 如需如何執行此動作的詳細資訊，請參閱 how [to Configure Helm](/azure/aks/kubernetes-helm#configure-helm)。
+    1. Helm 會使用 `helm init` 命令，針對您的 AKS 叢集進行設定。 如需如何執行此動作的詳細資訊，請參閱 how [to Configure Helm](/azure/aks/kubernetes-helm#configure-helm)。
 ::: moniker-end
 
 ## <a name="create-a-new-kubernetes-project"></a>建立新的 Kubernetes 專案
@@ -81,7 +81,7 @@ Visual Studio Kubernetes 工具可協助簡化以 Kubernetes 為目標的容器�
 
 ## <a name="add-kubernetes-support-to-an-existing-project"></a>將 Kubernetes 支援新增至現有的專案
 
-或者，您可以將 Kubernetes 支援新增至現有的 ASP.NET Core web 應用程式專案。 若要這麼做，請以滑鼠右鍵按一下專案，然後選擇 [**新增** > **容器協調器支援**]。
+或者，您可以將 Kubernetes 支援新增至現有的 ASP.NET Core web 應用程式專案。 若要這麼做，請以滑鼠右鍵按一下專案，然後選擇 **新增** > **容器協調器支援**。
 
 ::: moniker range="vs-2017"
 
@@ -119,7 +119,7 @@ Visual Studio Kubernetes 工具可協助簡化以 Kubernetes 為目標的容器�
 
    ![組建 Docker 映射選項的螢幕擷取畫面](media/tutorial-kubernetes-tools/k8s-tools-build-docker-image.png)
 
-- Helm 圖表和*圖表*資料夾。 這些 yaml 檔組成應用程式的 Helm 圖表，您可以用它來將它部署到 Kubernetes。 如需 Helm 的詳細資訊， [https://www.helm.sh](https://www.helm.sh)請參閱。
+- Helm 圖表和*圖表*資料夾。 這些 yaml 檔組成應用程式的 Helm 圖表，您可以用它來將它部署到 Kubernetes。 如需 Helm 的詳細資訊，請參閱[https://www.helm.sh](https://www.helm.sh)。
 
 - *azds. yaml*。 這包含 Azure Dev Spaces 的設定，可在 Azure Kubernetes Service 中提供快速、反復的偵錯工具體驗。 如需詳細資訊，請參閱[Azure Dev Spaces 檔](https://docs.microsoft.com/azure/dev-spaces/azure-dev-spaces)。
 
@@ -137,7 +137,7 @@ Visual Studio Kubernetes 工具可協助簡化以 Kubernetes 為目標的容器�
 
    ![[發行] 功能表項目的螢幕擷取畫面](media/tutorial-kubernetes-tools/k8s-tools-publish-project.png)
 
-2. 在 [**發佈**] 畫面中，選擇 [ **Container registry** ] 作為發佈目標，然後依照提示來選取您的容器登錄。 如果您還沒有容器登錄，請選擇 [**建立新的 Azure Container Registry** ]，從 Visual Studio 建立一個。 如需詳細資訊，請參閱將[容器發佈至 Azure Container Registry](vs-azure-tools-docker-hosting-web-apps-in-docker.md)。
+2. 在 [**發佈**] 畫面中，選擇 [ **Container registry** ] 作為發佈目標，然後依照提示來選取您的容器登錄。 如果您還沒有容器登錄，請選擇 [**建立新的 Azure Container Registry** ]，從 Visual Studio 建立一個。 如需詳細資訊，請參閱將[容器發佈至 Azure Container Registry](hosting-web-apps-in-docker.md)。
 
    ![[挑選發行目標] 畫面的螢幕擷取畫面](media/tutorial-kubernetes-tools/k8s-tools-publish-to-acr.png)
 

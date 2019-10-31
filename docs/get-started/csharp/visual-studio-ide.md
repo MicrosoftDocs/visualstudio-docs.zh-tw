@@ -11,12 +11,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: ca48b0510c36bd0d5528cda5d4514f12763ee243
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 4a8ea7977f73be2a38a8ac7a417c6794b567e600
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72632862"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189121"
 ---
 # <a name="welcome-to-the-visual-studio-ide--c"></a>歡迎使用 Visual Studio IDE | C\#
 
@@ -46,7 +46,7 @@ ms.locfileid: "72632862"
 > [了解如何使用程式碼編輯器](tutorial-editor.md)
 
 > [!div class="nextstepaction"]
-> [了解專案與解決方案](tutorial-projects-solutions.md)
+> [了解專案與解決方案](../tutorial-projects-solutions.md)
 
 ## <a name="see-also"></a>請參閱
 

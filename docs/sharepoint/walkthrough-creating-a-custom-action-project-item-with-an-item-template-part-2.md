@@ -11,12 +11,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a873d00e1befc9126f4fe89b05a66a8331853ac2
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: ae9c686e46bf6a956d58ac22b823dcc36c2aacce
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72984979"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189149"
 ---
 # <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-2"></a>逐步解說：使用專案範本建立自訂動作專案專案（第2部分）
   在您定義 SharePoint 專案專案的自訂類型，並將它與 Visual Studio 中的專案範本產生關聯之後，您可能也會想要為範本提供 wizard。 當使用者使用您的範本將專案專案的新實例新增至專案時，您可以使用此 wizard 來收集其資訊。 您收集的資訊可以用來初始化專案專案。
@@ -79,7 +79,7 @@ ms.locfileid: "72984979"
 
 2. 在 [**專案設計**工具] 中，確定 [目標 framework] 設定為 [.NET Framework 4.5]。
 
-     針對 Visual C#專案，您可以在 [**應用程式**] 索引標籤上設定此值。針對 Visual Basic 專案，您可以在 [**編譯**] 索引標籤上設定此值。如需詳細資訊，請參閱[如何：以 .NET Framework 的版本為目標](../ide/how-to-target-a-version-of-the-dotnet-framework.md)。
+     針對 Visual C#專案，您可以在 [**應用程式**] 索引標籤上設定此值。針對 Visual Basic 專案，您可以在 [**編譯**] 索引標籤上設定此值。如需詳細資訊，請參閱[如何：以 .NET Framework 的版本為目標](../ide/visual-studio-multi-targeting-overview.md)。
 
 3. 在**ItemTemplateWizard**專案中，將 [**視窗（WPF）]** 專案加入至專案，然後將專案命名為**WizardWindow**。
 
@@ -130,7 +130,7 @@ ms.locfileid: "72984979"
      [!code-xml[SPExtensibility.ProjectItem.CustomAction#9](../sharepoint/codesnippet/Xaml/customactionprojectitem/itemtemplatewizard/wizardwindow.xaml#9)]
 
     > [!NOTE]
-    > 在此 XAML 中建立的視窗衍生自 <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow> 的基類。 當您將自訂 WPF 對話方塊新增至 Visual Studio 時，建議您從這個類別衍生您的對話方塊，使其在 Visual Studio 和中的其他對話方塊具有一致的樣式，以避免出現強制回應對話方塊可能發生的問題。 如需詳細資訊，請參閱[建立和管理模式對話方塊](/visualstudio/extensibility/creating-and-managing-modal-dialog-boxes)。
+    > 在此 XAML 中建立的視窗衍生自 <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow> 的基類。 當您將自訂 WPF 對話方塊新增至 Visual Studio 時，建議您從這個類別衍生您的對話方塊，使其在 Visual Studio 和中的其他對話方塊具有一致的樣式，以避免出現強制回應對話方塊可能發生的問題。 如需詳細資訊，請參閱[建立和管理模式對話方塊](../extensibility/creating-and-managing-modal-dialog-boxes.md)。
 
 3. 如果您正在開發 Visual Basic 專案，請在 `Window` 元素的 `x:Class` 屬性中，從 `WizardWindow` 類別名稱中移除 `ItemTemplateWizard` 命名空間。 這個元素位於 XAML 的第一行。 當您完成時，第一行應該類似下列程式碼：
 
@@ -206,7 +206,7 @@ ms.locfileid: "72984979"
     </WizardExtension>
     ```
 
-     如需 `WizardExtension` 元素的詳細資訊，請參閱[WizardExtension &#40;元素 Visual Studio&#41;範本](/visualstudio/extensibility/wizardextension-element-visual-studio-templates)。
+     如需 `WizardExtension` 元素的詳細資訊，請參閱[WizardExtension &#40;元素 Visual Studio&#41;範本](../extensibility/wizardextension-element-visual-studio-templates.md)。
 
 3. 儲存並關閉檔案。
 
@@ -345,6 +345,6 @@ ms.locfileid: "72984979"
 - [逐步解說：使用專案範本建立自訂動作專案專案（第1部分）](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)
 - [定義自訂 SharePoint 專案專案類型](../sharepoint/defining-custom-sharepoint-project-item-types.md)
 - [為 SharePoint 專案專案建立專案範本和專案範本](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)
-- [Visual Studio 範本結構描述參考](/visualstudio/extensibility/visual-studio-template-schema-reference)
+- [Visual Studio 範本結構描述參考](../extensibility/visual-studio-template-schema-reference.md)
 - [如何︰搭配專案範本使用精靈](../extensibility/how-to-use-wizards-with-project-templates.md)
 - [預設自訂動作位置和識別碼](/previous-versions/office/developer/sharepoint-2010/bb802730(v=office.14))

@@ -12,12 +12,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: f40111e59aa97180c98f0fc12d6b8eeb5d06ecec
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 1b5fb79430b081986764f0ee1789f68471667498
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647874"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189073"
 ---
 # <a name="learn-to-use-the-code-editor"></a>了解如何使用程式碼編輯器
 
@@ -186,7 +186,7 @@ Visual Studio 編輯器可讓您輕鬆檢查類型、方法等的定義。其中
 ## <a name="next-steps"></a>後續步驟
 
 > [!div class="nextstepaction"]
-> [了解專案與解決方案](tutorial-projects-solutions.md)
+> [了解專案與解決方案](../tutorial-projects-solutions.md)
 
 ## <a name="see-also"></a>請參閱
 

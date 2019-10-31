@@ -7,12 +7,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a42651792848ffd4de9eccb40c2949d113b10b4
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: bb5442d12899436076f6b60e8fd7e807b19e4f82
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72911877"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189331"
 ---
 # <a name="performance-tools-on-windows-8-and-windows-server-2012-applications"></a>Windows 8 和 Windows Server 2012 應用程式的效能工具
 
@@ -37,7 +37,7 @@ ms.locfileid: "72911877"
 
 如需對 UWP 應用程式進行分析的詳細資訊，請參閱下列主題：
 
-- [在本機電腦上執行 UWP App](/visualstudio/debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml)
+- [在本機電腦上執行 UWP App](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)
 - [在遠端電腦上執行 UWP App](../debugger/run-windows-store-apps-on-a-remote-machine.md)
 - [初步認識分析工具](profiling-feature-tour.md)
 - [JavaScript 記憶體](../profiling/javascript-memory.md)

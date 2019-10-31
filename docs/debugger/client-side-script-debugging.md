@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f9f66d757f5f46530619be1424eb0810ce546ff5
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 9f0ac06712810e39432f1d19c250c3e7976f4a01
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72745704"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188693"
 ---
 # <a name="client-side-script-debugging"></a>用戶端指令碼偵錯
 Visual Studio 偵錯工具提供完整的偵錯環境，以找出並修正 ASP.NET 頁面中用戶端指令碼的錯誤。
@@ -61,7 +61,7 @@ Visual Studio 偵錯工具提供完整的偵錯環境，以找出並修正 ASP.N
 
 ## <a name="see-also"></a>請參閱
 
-- [偵錯 ASP.NET 和 AJAX 應用程式](/visualstudio/debugger/how-to-enable-debugging-for-aspnet-applications)
+- [偵錯 ASP.NET 和 AJAX 應用程式](how-to-enable-debugging-for-aspnet-applications.md)
 - [指令碼偵錯的限制](../debugger/limitations-on-script-debugging.md)
 - [變數視窗](../debugger/debugger-windows.md)
 - [即時運算視窗](../ide/reference/immediate-window.md)

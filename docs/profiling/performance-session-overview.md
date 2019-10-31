@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 350f6d6d087ebef07ff3113b081f1742db7012c2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 545a77791d7bc5318dc17d869c510fb4e8a0787f
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62798403"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189355"
 ---
 # <a name="performance-session-overview"></a>效能工作階段概觀
 這個概觀說明程式碼剖析的基本概念。 接觸效能工作不久的開發人員將可見識 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 如何加速提升他們的生產力，並增進其程式碼的效能。 擁有豐富的程式碼剖析經驗的開發人員，則可獲得具體的程式碼剖析工具功能和處理程序的概觀。
@@ -73,6 +73,6 @@ ms.locfileid: "62798403"
 ## <a name="generate-a-report-of-the-results"></a>產生結果報表
  您可以將任何效能報告檢視的資料列貼入電子郵件和試算表中，而且可以產生包含一個或多個檢視資料的報告。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [概觀](../profiling/overviews-performance-tools.md)
-- [逐步解說：找出效能問題](/visualstudio/profiling/beginners-guide-to-cpu-sampling)
+- [逐步解說：找出效能問題](beginners-guide-to-cpu-sampling.md)

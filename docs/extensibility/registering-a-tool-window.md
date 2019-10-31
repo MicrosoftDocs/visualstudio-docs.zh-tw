@@ -11,15 +11,15 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2ae53481b773cfdad5d4ac70f90202fcfd9d1ad4
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 34fddd6513aad612398c700b935c6d1d3ee72b59
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66334316"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73186271"
 ---
 # <a name="register-a-tool-window"></a>註冊工具視窗
-您可以註冊您使用的工具視窗<xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute>和<xref:Microsoft.VisualStudio.Shell.ProvideToolWindowVisibilityAttribute>。
+您可以使用 <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute> 和 <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowVisibilityAttribute>來註冊您的工具視窗。
 
 ## <a name="example"></a>範例
 
@@ -35,4 +35,4 @@ public class PackageToolWindow : Package
 {
 ```
 
- 在上述程式碼<xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute>註冊`PersistedWindowPane`和`DynamicWindowPane`工具與 Visual Studio 視窗。 保存的工具視窗停駐，並使用索引標籤式**方案總管 中**，且 動態 視窗會以預設的開始位置和大小。 [動態] 視窗是由暫時性的這表示，它不建立在啟動。 這會寫入`DontForceCreate`中的值`ToolWindows`系統登錄中的索引鍵。 如需詳細資訊，請參閱 <<c0> [ 工具視窗中顯示組態](../extensibility/tool-window-display-configuration.md)。
+ 在上述程式碼中，<xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute> 會向 Visual Studio 註冊 `PersistedWindowPane` 和 `DynamicWindowPane` 工具視窗。 保存的工具視窗會停駐並以**方案總管**的索引標籤，而動態視窗會提供預設的開始位置和大小。 動態視窗會成為暫時性，這表示它不會在啟動時建立。 這會在系統登錄的 `ToolWindows` 機碼中寫入 `DontForceCreate` 值。 如需詳細資訊，請參閱[工具視窗顯示設定](/visualstudio/extensibility/tool-window-display-configuration?view=vs-2015)。

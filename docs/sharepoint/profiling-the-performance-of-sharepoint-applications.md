@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fc337b1ac753c214ad2484c26c9149e9a1a6ca04
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 72739cd1063298a2dafc71976fd45360bc2d6ec2
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72981193"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189212"
 ---
 # <a name="profile-the-performance-of-sharepoint-applications"></a>分析 SharePoint 應用程式的效能
 
@@ -55,7 +55,7 @@ Web 效能測試會模擬終端使用者可能與 SharePoint 應用程式互動�
 
 ## <a name="test-user-interfaces"></a>測試使用者介面
 
-自動程式碼 UI 測試會透過其使用者介面（UI）自動驅動 SharePoint 應用程式。 這些測試會涵蓋 UI 控制項（例如按鈕和功能表），以驗證它們是否正常運作。 如果在 UI 中執行驗證或其他邏輯（例如網頁），這種測試就特別有用。 您也可以使用自動程式碼 UI 測試來自動化手動測試。 為 SharePoint 應用程式建立自動程式碼 UI 測試的方式，與為其他類型的應用程式建立測試時相同。 如需詳細資訊，請參閱使用自動程式[代碼 UI 測試來測試 SharePoint 2010 應用程式](../test/testing-sharepoint-2010-applications-with-coded-ui-tests.md)。
+自動程式碼 UI 測試會透過其使用者介面（UI）自動驅動 SharePoint 應用程式。 這些測試會涵蓋 UI 控制項（例如按鈕和功能表），以驗證它們是否正常運作。 如果在 UI 中執行驗證或其他邏輯（例如網頁），這種測試就特別有用。 您也可以使用自動程式碼 UI 測試來自動化手動測試。 為 SharePoint 應用程式建立自動程式碼 UI 測試的方式，與為其他類型的應用程式建立測試時相同。 如需詳細資訊，請參閱使用自動程式[代碼 UI 測試來測試 SharePoint 2010 應用程式](/visualstudio/test/testing-sharepoint-2010-applications-with-coded-ui-tests?view=vs-2015)。
 
 ## <a name="related-topics"></a>相關主題
 
@@ -64,7 +64,7 @@ Web 效能測試會模擬終端使用者可能與 SharePoint 應用程式互動�
 |[逐步解說：分析 SharePoint 應用程式](../sharepoint/walkthrough-profiling-a-sharepoint-application.md)|示範如何在 SharePoint 應用程式上執行取樣設定檔分析。|
 |[在發行前對您的應用程式執行效能測試](/azure/devops/test/load-test/run-performance-tests-app-before-release?view=vsts)|描述如何建立負載測試，以協助您對 SharePoint 應用程式進行壓力測試。|
 |[對程式碼進行單元測試](../test/unit-test-your-code.md)|描述如何使用單元測試尋找程式碼中的邏輯錯誤。|
-|[使用自動程式化 UI 測試來測試 SharePoint 2010 應用程式](../test/testing-sharepoint-2010-applications-with-coded-ui-tests.md)|說明如何測試 SharePoint 應用程式的使用者介面。|
+|[使用自動程式化 UI 測試來測試 SharePoint 2010 應用程式](/visualstudio/test/testing-sharepoint-2010-applications-with-coded-ui-tests?view=vs-2015)|說明如何測試 SharePoint 應用程式的使用者介面。|
 
 ## <a name="see-also"></a>請參閱
 

@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d53df0bc83e2068488c8a7c919f8b76258ad827
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: c1c18ec84a6a62da6cd564c69ef4b83ea76bcfd6
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72728375"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73187155"
 ---
 # <a name="visualizer-security-considerations"></a>視覺化檢視安全性考量
 撰寫視覺化檢視必須承擔可能的安全性威脅。 這些潛在的威脅目前沒有已知的傷害行為，但開發人員仍應暸解這些威脅，並採取本節中所說明的適當安全性考量，以對抗未來的威脅傷害。
@@ -39,6 +39,6 @@ ms.locfileid: "72728375"
 
 ## <a name="see-also"></a>請參閱
 - [視覺化檢視架構](../debugger/visualizer-architecture.md)
-- [如何：撰寫視覺化檢視](/visualstudio/debugger/create-custom-visualizers-of-data)
+- [如何：撰寫視覺化檢視](create-custom-visualizers-of-data.md)
 - [建立自訂視覺化檢視](../debugger/create-custom-visualizers-of-data.md)
 - [在偵錯工具中檢視資料](../debugger/viewing-data-in-the-debugger.md)

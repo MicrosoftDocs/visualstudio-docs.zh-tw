@@ -9,12 +9,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 801ccc48f913b36366ac27292abd472d6ea11207
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 7213bd271b5c690d78443339039d09bf14163e91
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72668817"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189612"
 ---
 # <a name="pen-tool-modifier-keys-in-blend-for-visual-studio"></a>Blend for Visual Studio 中的畫筆工具輔助按鍵
 
@@ -40,4 +40,4 @@ ms.locfileid: "72668817"
 
 - [畫板輔助按鍵](../designers/artboard-modifier-keys-in-blend.md)
 - [直接選取工具輔助按鍵](../designers/direct-selection-tool-modifier-keys-in-blend.md)
-- [繪製圖案與路徑](../designers/draw-shapes-and-paths.md)
+- [繪製圖案與路徑](draw-shapes-and-paths.md)

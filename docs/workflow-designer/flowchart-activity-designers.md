@@ -8,12 +8,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c7426ea21e1928eb46a2b733df7eb24c9de6e147
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 01727901f5ce063a16954f98914833ba39f8ab5d
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72650444"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189673"
 ---
 # <a name="flowchart-activity-designers"></a>Flowchart 活動設計工具
 
@@ -33,7 +33,7 @@ ms.locfileid: "72650444"
 
  [控制流程](../workflow-designer/control-flow-activity-designers.md)
 
- [使用活動設計工具](../workflow-designer/using-the-activity-designers.md)
+ [使用活動設計工具](control-flow-activity-designers.md)
 
  [Messaging](../workflow-designer/messaging-activity-designers.md)
 

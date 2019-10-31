@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c9c2fa8a8fb300c3b7eb702ae3efd216e17141a
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 494287c6691d27eb636f92eff324eecf49daf5fa
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72733098"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73187573"
 ---
 # <a name="how-to-install-a-visualizer"></a>如何：安裝視覺化檢視
 建立視覺化檢視後，您必須安裝該視覺化檢視，使 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中可以使用它。 安裝視覺化檢視的程序很簡單。
@@ -46,4 +46,4 @@ ms.locfileid: "72733098"
 
 ## <a name="see-also"></a>請參閱
 - [建立自訂視覺化檢視](../debugger/create-custom-visualizers-of-data.md)
-- [如何：撰寫視覺化檢視](/visualstudio/debugger/create-custom-visualizers-of-data)
+- [如何：撰寫視覺化檢視](create-custom-visualizers-of-data.md)

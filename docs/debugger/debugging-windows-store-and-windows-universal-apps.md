@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: b008dd22b99e0024fcba479564c02cfad148f14a
-ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
+ms.openlocfilehash: 73b9b78be6a6325a422c945db8c51caa7a11b487
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72888469"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188262"
 ---
 # <a name="debug-universal-windows-apps-uwp-in-visual-studio"></a>在 Visual Studio 中，將通用 Windows 應用程式（UWP）進行調試
 
@@ -33,4 +33,4 @@ Visual Studio 偵錯工具會提供對 UWP 應用程式的完整支援。 請參
 |分析 ContentPrefetcher 類別對 UWP 應用程式的影響。|[UWP 應用程式的預先提取內容](../debugger/prefetch-content-for-windows-store-apps.md)|
 
 ## <a name="see-also"></a>請參閱
-- [使用靜態程式碼分析來分析程式碼品質](/visualstudio/code-quality/code-analysis-for-managed-code-overview)
+- [使用靜態程式碼分析來分析程式碼品質](../code-quality/code-analysis-for-managed-code-overview.md)

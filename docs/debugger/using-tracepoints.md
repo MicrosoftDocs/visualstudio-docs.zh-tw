@@ -1,6 +1,6 @@
 ---
-title: 在偵錯工具中使用追蹤點 |Microsoft Docs
-ms.date: 9/17/2019
+title: 使用追蹤點的記錄資訊 |Microsoft Docs
+ms.date: 10/28/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - tracepoints, about tracepoints
@@ -9,16 +9,16 @@ ms.author: sashe
 manager: AndSter
 ms.workload:
 - multiple
-ms.openlocfilehash: 263657213f1720eaca7a0462bb31585adaacf9bb
-ms.sourcegitcommit: 8a96a65676fd7a2a03b0803d7eceae65f3fa142b
+ms.openlocfilehash: fcc9f01315d3783af1a1f124785cd74fafb215bf
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72516401"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73187307"
 ---
-# <a name="use-tracepoints-in-the-visual-studio-debugger"></a>在 Visual Studio 偵錯工具中使用追蹤點
+# <a name="log-info-to-the-output-window-using-tracepoints-in-visual-studio"></a>使用 Visual Studio 中的追蹤點，將資訊記錄到輸出視窗
 
-追蹤點可讓您將資訊記錄到 [可設定的條件] 下的 [輸出] 視窗，而不必修改或停止您的 這項功能支援 managed 和機器碼，以及數種語言，例如 JavaScript 和C#。
+追蹤點可讓您將資訊記錄到 [可設定的條件] 下的 [輸出] 視窗，而不必修改或停止您的 這項功能支援 managed 語言（C#、Visual Basic、 F#）和機器碼，以及 JavaScript 和 Python 等語言。
 
 ## <a name="let39s-take-an-example"></a>讓&#39;我們來看一個範例
 
@@ -77,7 +77,7 @@ ms.locfileid: "72516401"
 | $FUNCTION | 目前的函式名稱 |
 | $PID | 處理序 ID |
 | $PNAME | 處理序名稱 |
-| $TID | 執行緒 ID |
+| $TID | 執行緒識別碼 |
 | $TNAME   | 執行緒名稱 |
 | $TICK | 滴答計數（來自 Windows GetTickCount） |
 
@@ -129,7 +129,7 @@ ms.locfileid: "72516401"
 
 雖然追蹤點的目的是要讓您以更簡潔且更流暢的經驗進行偵錯工具，但在使用這些功能時，您應該注意一些考慮。
 
-有時候當您檢查物件的屬性或屬性時，其值可能會變更。 這不是追蹤點功能本身所造成的 bug，但值得一提的是，使用追蹤點來檢查物件並不會避免這些意外的修改。
+有時候當您檢查物件的屬性或屬性時，其值可能會變更。 如果值在檢查期間變更，則不是追蹤點功能本身所造成的錯誤。 不過，使用追蹤點來檢查物件並不會避免這些意外的修改。
 
 在 [**動作**] 訊息方塊中評估運算式的方式，可能與您目前用來開發的語言不同。 例如，若要輸出字串，您不需要以引號括住訊息，即使您通常會在使用 `Debug.WriteLine()` 或 `console.log()` 時也一樣。 此外，對輸出運算式的大括弧語法（`{ }`）也可能與在開發語言中輸出值的慣例不同。 （不過，大括弧（`{ }`）內的內容仍應使用您的開發語言語法來撰寫）。
 

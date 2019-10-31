@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 70276b8ba4efb08b0a6a57dc48716bd608f0429a
-ms.sourcegitcommit: bdccab4c2dbd50ea8adaaf88c69c9ca32db88099
-ms.translationtype: HT
+ms.openlocfilehash: bf8d6df020694bb10fe4f3f051551056549d5673
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73144755"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188626"
 ---
 # <a name="learn-productivity-tips-and-tricks-for-the-debugger-in-visual-studio"></a>在 Visual Studio 中瞭解偵錯工具的生產力秘訣和訣竅
 
@@ -41,7 +41,7 @@ ms.locfileid: "73144755"
 
 ## <a name="edit-xaml-code-and-continue-debugging"></a>編輯 XAML 程式碼並繼續進行偵錯工具
 
-若要在偵錯工具期間修改 XAML 程式碼，請參閱[使用 Xaml 熱重載來撰寫和](xaml-hot-reload.md)偵測執行 xaml 程式碼。
+若要在偵錯工具期間修改 XAML 程式碼，請參閱[使用 Xaml 熱重載來撰寫和](../xaml-tools/xaml-hot-reload.md)偵測執行 xaml 程式碼。
 
 ## <a name="debug-issues-that-are-hard-to-reproduce"></a>難以重現的 Debug 問題
 

@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.date: 10/16/2019
 ms.technology: vs-azure
 monikerRange: vs-2019
-ms.openlocfilehash: a398adf047ebfe2e76ed91da72513eb7646c36c3
-ms.sourcegitcommit: 08c144d290da373df841f04fc799e3133540a541
+ms.openlocfilehash: 355a08b2ff322226d347d999f4ec8a9ebb7ba5fc
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72535558"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188719"
 ---
 # <a name="how-to-view-and-diagnose-containers-and-images-in-visual-studio"></a>如何在 Visual Studio 中查看及診斷容器和映射
 
@@ -32,7 +32,7 @@ ms.locfileid: "72535558"
 在左側，您會看到本機電腦上的容器清單。 與解決方案相關聯的容器會顯示在 [**方案容器**] 底下。 在右邊，您會看到一個窗格，其中包含**環境**、**埠**、**記錄**和檔案的索引卷**標。**
 
 > [!TIP]
-> 您可以輕鬆地自訂 [**容器**] 工具視窗停駐在 Visual Studio 中的位置。 請參閱[在 Visual Studio 中自訂視窗版面](/visualstudio/ide/customizing-window-layouts-in-visual-studio)配置。 根據預設，當偵錯工具正在執行時，[**容器**] 視窗會停駐于 [**監看**式] 視窗。
+> 您可以輕鬆地自訂 [**容器**] 工具視窗停駐在 Visual Studio 中的位置。 請參閱[在 Visual Studio 中自訂視窗版面](../ide/customizing-window-layouts-in-visual-studio.md)配置。 根據預設，當偵錯工具正在執行時，[**容器**] 視窗會停駐于 [**監看**式] 視窗。
 
 ## <a name="view-environment-variables"></a>View 環境變數
 

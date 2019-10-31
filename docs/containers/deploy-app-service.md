@@ -8,12 +8,12 @@ ms.devlang: dotnet
 ms.topic: article
 ms.date: 03/08/2019
 ms.author: ghogen
-ms.openlocfilehash: 9431046c57851e31a3711b4785f9cce45acab45f
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
+ms.openlocfilehash: 5d1f160435fd8c62a44d3e5d3192870143558de4
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70312206"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188787"
 ---
 # <a name="deploy-an-aspnet-core-container-to-azure-app-service-using-visual-studio"></a>使用 Visual Studio 將 ASP.NET Core 容器部署至 Azure App Service
 
@@ -21,7 +21,7 @@ ms.locfileid: "70312206"
 
 如果您沒有 Azure 訂用帳戶，請在開始前建立 [免費帳戶](https://azure.microsoft.com/free/dotnet/?utm_source=acr-publish-doc&utm_medium=docs&utm_campaign=docs) 。
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>Prerequisites
 
 完成本教學課程：
 
@@ -83,7 +83,7 @@ ms.locfileid: "70312206"
 
 ## <a name="clean-up-resources"></a>清除資源
 
-若要移除與本教學課程相關聯的所有 Azure 資源，請使用[Azure 入口網站](https://portal.azure.com)刪除資源群組。 若要尋找與已發佈 web 應用程式相關聯的資源群組，請選擇 [**查看** > **其他 Windows**  >  **web 發行活動**]，然後選擇齒輪圖示。 [**發佈**] 索引標籤隨即開啟，其中包含資源群組。
+若要移除與本教學課程相關聯的所有 Azure 資源，請使用[Azure 入口網站](https://portal.azure.com)刪除資源群組。 若要尋找與已發佈之 web 應用程式相關聯的資源群組，請選擇 [ **View** > **其他 Windows** > **web Publish Activity**]，然後選擇齒輪圖示。 [**發佈**] 索引標籤隨即開啟，其中包含資源群組。
 
 在 Azure 入口網站中，選擇 **資源群組**，選取資源群組以開啟其詳細資料頁面。 確認這是正確的資源群組，然後選擇 [**移除資源群組**]，輸入名稱，然後選擇 [**刪除**]。
 
@@ -91,6 +91,6 @@ ms.locfileid: "70312206"
 
 使用[Azure Pipelines](/azure/devops/pipelines/?view=azure-devops)設定持續整合與傳遞（CI/CD）。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
-[部署至 Azure Container Registry](vs-azure-tools-docker-hosting-web-apps-in-docker.md)
+[部署至 Azure Container Registry](hosting-web-apps-in-docker.md)

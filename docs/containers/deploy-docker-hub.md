@@ -8,12 +8,12 @@ ms.devlang: dotnet
 ms.topic: article
 ms.date: 07/23/2019
 ms.author: ghogen
-ms.openlocfilehash: 267e0c1ed1ac3911aad2161f186bf4a482f069b6
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: b033825bbe8facbeae3dcdee6a5b563461921522
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "70312176"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188756"
 ---
 # <a name="deploy-to-docker-hub"></a>發佈至 Docker Hub
 
@@ -45,11 +45,11 @@ Docker Hub 為您的映射存放庫提供便利的主機服務。 您可以輕�
 
 ## <a name="next-steps"></a>後續步驟
 
-遵循[部署至 Azure Container Registry](vs-azure-tools-docker-hosting-web-apps-in-docker.md)中的步驟，發佈至[Azure Container Registry](/azure/container-registry/) 。
+遵循[部署至 Azure Container Registry](hosting-web-apps-in-docker.md)中的步驟，發佈至[Azure Container Registry](/azure/container-registry/) 。
 
 使用[Azure Pipelines](/azure/devops/pipelines/?view=azure-devops)設定持續整合與傳遞（CI/CD）。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
-[部署至 Azure App Service](deploy-app-service.md) 
- [Visual Studio 容器工具](/visualstudio/containers/)。
+[部署至 Azure App Service](deploy-app-service.md)
+[Visual Studio 容器工具](/visualstudio/containers/)。

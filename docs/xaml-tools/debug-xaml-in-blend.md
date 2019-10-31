@@ -9,12 +9,12 @@ manager: jillfra
 ms.technology: vs-ide-debug
 ms.workload:
 - uwp
-ms.openlocfilehash: 0c785be0002a1e6d4fd1934e559743502611f5fb
-ms.sourcegitcommit: bde55773485c9bca50a760ac9e4c919e0a208a51
+ms.openlocfilehash: 5d6f0e54c37c394fce464b07440daa99b4dd7d5e
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72924492"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188894"
 ---
 # <a name="debug-xaml-in-blend"></a>在 Blend 中偵錯 XAML
 
@@ -119,7 +119,7 @@ ms.locfileid: "72924492"
 
 您可以在 Visual Studio 中開啟 Blend 專案，以更輕鬆地在應用程式中進行程式碼的偵錯工具。 若要在 Visual Studio 中開啟 Blend 專案，請以滑鼠右鍵按一下 [**專案**] 面板中的專案，然後按一下 [**在 Visual Studio 中編輯**]。 在 Visual Studio 中完成偵錯工具會話之後，請按 Ctrl + Shift + S 儲存所有變更，然後切換回 Blend。 此時會出現要您重新載入專案的提示畫面。 按一下 **[全部都是]** ，即可繼續使用 Blend。
 
-如需有關偵錯工具的詳細資訊，請參閱[Visual Studio 中的 DEBUG UWP apps](../debugger/debug-store-apps-in-visual-studio.md)。
+如需有關偵錯工具的詳細資訊，請參閱[Visual Studio 中的 DEBUG UWP apps](../debugger/debugging-windows-store-and-windows-universal-apps.md)。
 
 ## <a name="get-help"></a>取得協助
 

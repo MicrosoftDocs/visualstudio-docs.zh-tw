@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: f6dd305b55e1ff7dd11b46f023906a8422b5504f
-ms.sourcegitcommit: 08c144d290da373df841f04fc799e3133540a541
+ms.openlocfilehash: 76b841d94aee93a1bc88f6d01161239828dee166
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72536054"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188407"
 ---
 # <a name="debug-managed-code-c-visual-basic-f-ccli"></a>Debug Managed 程式碼C#（，Visual Basic F#， C++，/cli）
 
@@ -76,7 +76,7 @@ ms.locfileid: "72536054"
 [偵錯和分析](/dotnet/framework/debug-trace-profile/index)\
 討論如何調試 .NET 應用程式和設定需求。
 
-[針對指令碼和 Web 應用程式進行偵錯](/visualstudio/debugger/how-to-enable-debugging-for-aspnet-applications)\
+[針對指令碼和 Web 應用程式進行偵錯](how-to-enable-debugging-for-aspnet-applications.md)\
 描述您在偵錯指令碼和 Web 應用程式時會遇到的一般偵錯問題和技術。
 
 ## <a name="see-also"></a>請參閱

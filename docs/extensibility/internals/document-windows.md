@@ -1,5 +1,5 @@
 ---
-title: 文件 Windows |Microsoft Docs
+title: 檔視窗 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,36 +10,36 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 844176b2db6074a33ac2e612c47d3779031836df
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 5d29d64090320a8f62491209773145c024564efa
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66345470"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73186616"
 ---
 # <a name="document-windows"></a>文件視窗
-在 Visual Studio 中，*文件視窗*是相關聯的多重文件介面 (MDI) 視窗框架的子視窗。 文件視窗通常用於顯示和修改的原始碼或文字，但它們也可以裝載其他功能的類型。 文件視窗：
+在 Visual Studio 中，*文件視窗*是與多重文件介面（MDI）視窗相關聯的框架子視窗。 檔視窗通常用來顯示和修改原始程式碼或文字，但也可以裝載其他功能類型。 文件視窗：
 
-- 可以組織 MDI 父項中的另一個水平或垂直索引標籤群組中，以便可以同時檢視多個檔案。
+- 可以組織成父 MDI 中的個別水準或垂直索引標籤群組，讓多個檔案可以同時查看。
 
-- 可以停駐在 MDI 父代中的任何順序。
+- 可以在父 MDI 中以任何順序停駐。
 
-- 可以是自由浮動。
+- 可以自由浮動。
 
-- 會連結到其他的 MDI 視窗的定位順序中。
+- 會連結至其他 MDI 視窗的定位順序。
 
-  群組的命令，停駐和浮動都位於文件視窗索引標籤的捷徑功能表。
+  [群組]、[停駐] 和 [浮動] 的命令可以在文件視窗索引標籤的快捷方式功能表上找到。
 
-  如需有關在 Visual Studio 中的視窗行為的詳細資訊，請參閱 <<c0> [ 自訂視窗版面配置](../../ide/customizing-window-layouts-in-visual-studio.md)。
+  如需 Visual Studio 中視窗行為的詳細資訊，請參閱[自訂視窗版面](../../ide/customizing-window-layouts-in-visual-studio.md)配置。
 
-## <a name="document-window-implementation"></a>文件視窗實作
- 藉由實作編輯器建立文件視窗。 <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory>介面建立的具現化編輯器一部分的文件視窗。 如需詳細資訊，請參閱 <<c0> [ 舊版介面在編輯器中](../../extensibility/legacy-interfaces-in-the-editor.md)。
+## <a name="document-window-implementation"></a>文件視窗的執行
+ 檔視窗是藉由執行編輯器來建立的。 <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory> 介面會在具現化編輯器的過程中建立文件視窗。 如需詳細資訊，請參閱[編輯器中的舊版介面](/visualstudio/extensibility/legacy-interfaces-in-the-editor?view=vs-2015)。
 
 > [!NOTE]
-> 若要提供向後和向前瀏覽 視窗中的點，實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsBackForwardNavigation>介面。 文字編輯器會使用文字標記來識別瀏覽文件中的點。
+> 若要在視窗中提供向後和向前流覽點，請執行 <xref:Microsoft.VisualStudio.Shell.Interop.IVsBackForwardNavigation> 介面。 文字編輯器會使用文字標記來識別檔中的導覽點。
 
-## <a name="the-running-document-table"></a>執行文件資料表
- IDE 會使用執行文件資料表 (RDT) 來追蹤每個文件視窗的狀態。 RDT 是透過哪份文件視窗會收到通知的事件，例如方案已關閉時，或已編輯檔案的機制。 如需詳細資訊，請參閱 <<c0> [ 執行文件表格](../../extensibility/internals/running-document-table.md)。
+## <a name="the-running-document-table"></a>執行中的檔資料表
+ IDE 會使用執行中的檔資料表（RDT）來追蹤每個文件視窗的狀態。 RDT 是文件視窗收到事件通知的機制，例如當解決方案關閉或已編輯檔案時。 如需詳細資訊，請參閱執行[檔資料表](../../extensibility/internals/running-document-table.md)。
 
-## <a name="see-also"></a>另請參閱
-- [延遲載入文件](../../extensibility/internals/delayed-document-loading.md)
+## <a name="see-also"></a>請參閱
+- [延遲的檔載入](../../extensibility/internals/delayed-document-loading.md)

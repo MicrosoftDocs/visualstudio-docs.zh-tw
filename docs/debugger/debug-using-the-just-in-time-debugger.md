@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 32a3ebd6e9047271a21425ac5b7eaaf715955b61
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: b842fa4ce7c75e061a58d980cefe5648094c2ef7
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72911384"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188677"
 ---
 # <a name="debug-using-the-just-in-time-debugger-in-visual-studio"></a>在 Visual Studio 中使用即時偵錯工具進行 Debug
 
@@ -104,7 +104,7 @@ ms.locfileid: "72911384"
 
 在此範例中，您會在C# Visual Studio 中建立主控台應用程式，以擲回[NullReferenceException](/dotnet/api/system.nullreferenceexception)。
 
-1. 在 Visual Studio 中，建立C#名為*ThrowsNullException*的主控台應用程式（**檔案 > ** **新** > **專案** > **Visual C#**  > **主控台應用程式**）。 如需在 Visual Studio 中建立專案的詳細資訊，請參閱[逐步解說：建立簡單的應用程式](/visualstudio/get-started/csharp/tutorial-wpf)。
+1. 在 Visual Studio 中，建立C#名為*ThrowsNullException*的主控台應用程式（**檔案 > ** **新** > **專案** > **Visual C#**  > **主控台應用程式**）。 如需在 Visual Studio 中建立專案的詳細資訊，請參閱[逐步解說：建立簡單的應用程式](../get-started/csharp/tutorial-wpf.md)。
 
 1. 當專案在 Visual Studio 中開啟時，請開啟*Program.cs*檔案。 將 Main （）方法取代為下列程式碼，以將一行列印到主控台，然後擲回 NullReferenceException：
 
