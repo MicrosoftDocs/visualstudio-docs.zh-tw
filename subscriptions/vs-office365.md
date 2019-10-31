@@ -6,16 +6,19 @@ manager: lank
 ms.date: 08/02/2019
 ms.topic: conceptual
 description: 了解某些 Visual Studio 訂用帳戶中所含的 Office 365 權益。
-ms.openlocfilehash: 65a071cbfcdc31ca2ef8a36ac5a779fc99467c17
-ms.sourcegitcommit: bcdab788085bd9931d73883fe70cd5831317dca2
+ms.openlocfilehash: 58bfed3de99e3a3fa0a46e084ea566ae0451c47f
+ms.sourcegitcommit: bdccab4c2dbd50ea8adaaf88c69c9ca32db88099
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72816470"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73144713"
 ---
 # <a name="office-365-proplus-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶中的 Office 365 專業增強版
 
 建立您最好的作品。 使用永遠都會更新的應用程式在任何地方工作。 Office 365 專業增強版是包含 Word、Excel、PowerPoint、OneNote、Outlook、Publisher 及 Access (Publisher 與 Access 僅於 PC 上提供) 等優質應用程式的訂閱服務。 應用程式可以安裝在多部裝置上，包括電腦、Mac、iPad、iPhone、Android 平板電腦與 Android 手機。 擁有訂用帳戶，您就可以取得最新版的應用程式，並且在有更新時自動收到更新。
+
+> [!NOTE]
+> 您的 Visual Studio 訂用帳戶可讓您使用 Office 365 以用於生產環境。  
 
 ## <a name="getting-started-with-office-365-proplus"></a>開始使用 Office 365 專業增強版
 
@@ -42,10 +45,6 @@ ms.locfileid: "72816470"
    > ![Office 365 輸入產品金鑰](_img/vs-office365/vs-office365-enter-key.png)
 0. 再按一下 [下一步]。
 0. 按一下 [安裝] 以安裝 Office 應用程式。
-
-## <a name="next-steps"></a>後續步驟
-
-如果您計劃開發適用於 Office 的應用程式，您需要啟用 [Office 開發人員訂用帳戶](vs-office-dev.md)
 
 ## <a name="eligibility"></a>資格
 
@@ -75,4 +74,4 @@ ms.locfileid: "72816470"
 請務必啟用這些絕佳的權益，以充分運用您的 Visual Studio 訂用帳戶：
 - [Visual Studio](vs-ide-benefit.md)
 - [Azure DevOps](vs-azure-devops.md)
-- [Azure DevTest 個人點數](vs-azure.md)
+- [Azure DevTest 個人點數](vs-azure.md)如果您打算開發 Office 的應用程式，您會想要啟用[Office 開發人員訂](vs-office-dev.md)用帳戶

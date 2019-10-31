@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 92d1c327c168bfd2881ad014b7f9ab87f771b95d
-ms.sourcegitcommit: 8a96a65676fd7a2a03b0803d7eceae65f3fa142b
-ms.translationtype: MT
+ms.openlocfilehash: 70276b8ba4efb08b0a6a57dc48716bd608f0429a
+ms.sourcegitcommit: bdccab4c2dbd50ea8adaaf88c69c9ca32db88099
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72536073"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73144755"
 ---
 # <a name="learn-productivity-tips-and-tricks-for-the-debugger-in-visual-studio"></a>在 Visual Studio 中瞭解偵錯工具的生產力秘訣和訣竅
 
@@ -140,6 +140,7 @@ ms.locfileid: "72536073"
 
     您也可以在 [[平行堆疊] 視窗](../debugger/get-started-debugging-multithreaded-apps.md)中，查看執行緒的位置。
 
+::: moniker range="vs-2017"
 ## <a name="examine-payloads-for-web-services-and-network-resources-uwp"></a>檢查 web 服務和網路資源（UWP）的承載
 
 在 UWP 應用程式中，您可以使用 `Windows.Web.Http` API 來分析執行的網路作業。 您可以使用此工具來協助調試 web 服務和網路資源。 若要使用此工具，請選取 [ **Debug > Performance Profiler**]。 選取 [**網路**]，然後選擇 [**啟動**]。 在應用程式中，完整瀏覽使用 `Windows.Web.Http` 的案例，然後選擇 [停止收集] 以產生報表。
@@ -151,6 +152,7 @@ ms.locfileid: "72536073"
 ![網路使用量工具中的詳細資訊](../profiling/media/prof-tour-network-usage-details.png "DetailedViewNetworkUsage")
 
 如需詳細資訊，請參閱[網路使用量](../profiling/network-usage.md)。
+::: moniker-end
 
 ## <a name="modules_window"></a>更熟悉偵錯工具如何附加至您的應用程式（C#、 C++、Visual Basic、 F#）
 
