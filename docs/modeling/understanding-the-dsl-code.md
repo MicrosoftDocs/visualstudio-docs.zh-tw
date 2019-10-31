@@ -9,12 +9,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 017c28af68efa98507286e8acdc2b4d694353aa1
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 44f66ed25ab43db2d08db3cb93263bd61ac3a907
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747386"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189455"
 ---
 # <a name="understanding-the-dsl-code"></a>了解 DSL 程式碼
 
@@ -39,7 +39,7 @@ ms.locfileid: "72747386"
 
  建議您檢查產生的程式碼，以協助您了解 DSL。 若要查看產生的檔案，請展開 [方案總管] 中的 *.tt 檔。
 
- @No__t_0 的 tt 檔案包含非常少產生的程式碼。 相反地，這些檔案使用 `<#include>` 指示詞來包含共用範本檔案。 共用檔案可以在 **\Program Files\Microsoft Visual Studio 10.0 \ COMMON7\IDE\EXTENSIONS\MICROSOFT\DSL SDK\DSL Designer\11.0\TextTemplates**中找到
+ \*的 tt 檔案包含非常少產生的程式碼。 相反地，這些檔案使用 `<#include>` 指示詞來包含共用範本檔案。 共用檔案可以在 **\Program Files\Microsoft Visual Studio 10.0 \ COMMON7\IDE\EXTENSIONS\MICROSOFT\DSL SDK\DSL Designer\11.0\TextTemplates**中找到
 
  當您將自己的程式碼加入至 DSL 方案時，請將此程式碼加入至 Generated Code 資料夾外部的其他檔案中。 您可能會想要建立**自訂**的程式碼資料夾。 (當您將新的程式碼檔案加入至自訂資料夾時，請記得修正初始程式碼基本架構中的命名空間)。
 
@@ -192,7 +192,7 @@ ms.locfileid: "72747386"
 
  `CommandSet.cs`
 
- 圖表上顯示的右鍵功能表命令。 您可以調整這個組合或將命令加入至這個組合。 這個檔案包含命令的程式碼。 功能表上的命令位置是由 Commands.vsct 檔所決定。 如需詳細資訊，請參閱[撰寫使用者命令和動作](../modeling/writing-user-commands-and-actions.md)。
+ 圖表上顯示的右鍵功能表命令。 您可以調整這個組合或將命令加入至這個組合。 這個檔案包含命令的程式碼。 功能表上的命令位置是由 Commands.vsct 檔所決定。 如需詳細資訊，請參閱[撰寫使用者命令和動作](how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)。
 
  `Constants.cs`
 
@@ -282,7 +282,7 @@ namespace Company.EmbedInForm
 
  `GeneratedVSCT.vsct`
 
- 在功能表上尋找標準功能表命令，例如圖表以滑鼠右鍵按一下（內容）功能表、[**編輯**] 功能表等。 命令的程式碼位於 CommandSet.cs 中。 您可以重新配置或修改標準命令，也可以加入自己的命令。 如需詳細資訊，請參閱[撰寫使用者命令和動作](../modeling/writing-user-commands-and-actions.md)。
+ 在功能表上尋找標準功能表命令，例如圖表以滑鼠右鍵按一下（內容）功能表、[**編輯**] 功能表等。 命令的程式碼位於 CommandSet.cs 中。 您可以重新配置或修改標準命令，也可以加入自己的命令。 如需詳細資訊，請參閱[撰寫使用者命令和動作](how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)。
 
  `ModelExplorer.cs`
 

@@ -15,12 +15,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b2b42143c2971bcbb172958b8da42a1e887e4699
-ms.sourcegitcommit: 3e94d9fb6dc56fa8b23fbacd5d11cf8d6e7e18f1
+ms.openlocfilehash: 94f71014440c55da0151d0ebd817aac9f5d2c7ed
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "72252637"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73186272"
 ---
 # <a name="localize-menu-commands"></a>將功能表命令當地語系化
 
@@ -48,7 +48,7 @@ ms.locfileid: "72252637"
 
       下列範例顯示用來開啟 [家族樹狀檢視器] 工具視窗之命令的英文和西班牙文按鈕文字。
 
-      [*FamilyTree.en-US.vsct*]
+      [*FamilyTree. en-us. .vsct*]
 
    ```xml
    <Button guid="guidLocalizedPackageCmdSet" id="cmdidFamilyTree" priority="0x0100" type="Button">
@@ -61,7 +61,7 @@ ms.locfileid: "72252637"
    </Button>
    ```
 
-    [*FamilyTree.es-ES.vsct*]
+    [*FamilyTree.es-es. .vsct*]
 
    ```xml
    <Button guid="guidLocalizedPackageCmdSet" id="cmdidFamilyTree" priority="0x0100" type="Button">
@@ -92,7 +92,7 @@ ms.locfileid: "72252637"
 
 5. 開啟每個 *.resx*檔案，以適當地修改特定語言和文化特性的字串值。 下列範例會顯示工具視窗標題列的當地語系化資源定義。
 
-     [*Resources.en-US.resx*]
+     [*Resources. en-us .resx*]
 
     ```xml
     <data name="ToolWindowTitle" xml:space="preserve">
@@ -100,7 +100,7 @@ ms.locfileid: "72252637"
     </data>
     ```
 
-     [*Resources.es-ES.resx*]
+     [*Resources.es-es .resx*]
 
     ```xml
     <data name="ToolWindowTitle" xml:space="preserve">
@@ -126,7 +126,7 @@ ms.locfileid: "72252637"
 
 4. 在編輯器中開啟專案檔。
 
-5. 在根 `Project` 元素中，新增具有符合您預設語言之 @no__t 2 元素的 @no__t 1 元素。
+5. 在根 `Project` 元素中，加入 `PropertyGroup` 元素，其中包含符合您預設語言的 `UICulture` 元素。
 
     ```xml
     <PropertyGroup>
@@ -136,9 +136,9 @@ ms.locfileid: "72252637"
 
      這會將美式英文設定為 Windows Presentation Foundation （WPF）控制項的預設 UI 文化特性。
 
-6. 找出包含 `EmbeddedResource` 個元素的 `ItemGroup` 元素。
+6. 找出包含 `EmbeddedResource` 元素的 `ItemGroup` 元素。
 
-7. 在呼叫*VSPackage*的 `EmbeddedResource` 元素中，以設定為 `VSPackage.en-US.Resources` 的 `LogicalName` 元素取代 `ManifestResourceName` 元素，如下所示：
+7. 在呼叫*VSPackage*的 `EmbeddedResource` 專案中，將 `ManifestResourceName` 元素取代為設定為 `VSPackage.en-US.Resources`的 `LogicalName` 元素，如下所示：
 
     ```xml
     <EmbeddedResource Include="VSPackage.en-US.resx">
@@ -147,9 +147,9 @@ ms.locfileid: "72252637"
     </EmbeddedResource>
     ```
 
-8. 針對每個當地語系化的語言，複製 `VsPackage.en-US` 的 `EmbeddedResource` 元素，並將複本的**Include**屬性和**LogicalName**元素設定為目標地區設定。
+8. 針對每個當地語系化的語言，複製 `VsPackage.en-US`的 `EmbeddedResource` 專案，並將複本的**Include**屬性和**LogicalName**元素設定為目標地區設定。
 
-9. 針對每個當地語系化的 `VSCTCompile` 元素，加入指向 `Menus.ctmenu` 的 @no__t 1 元素，如下列範例所示：
+9. 針對每個當地語系化的 `VSCTCompile` 專案，加入指向 `Menus.ctmenu`的 `ResourceName` 元素，如下列範例所示：
 
     ```xml
     <ItemGroup>
@@ -165,7 +165,7 @@ ms.locfileid: "72252637"
 
      這會建立主要元件，以及每種語言的資源元件。 如需當地語系化部署程式的詳細資訊，請參閱[當地語系化 VSIX 封裝](../extensibility/localizing-vsix-packages.md)
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
+
 - [擴充功能表和命令](../extensibility/extending-menus-and-commands.md)
-- [MenuCommands 與OleMenuCommand](../extensibility/menucommands-vs-olemenucommands.md)
 - [全球化和當地語系化應用程式](../ide/globalizing-and-localizing-applications.md)

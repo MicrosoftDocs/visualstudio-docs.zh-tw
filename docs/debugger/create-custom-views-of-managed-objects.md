@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 196ba13b95245b8c42e6d946572665792f71346d
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: f5247a56667f5715d9f155c662eb333967878d71
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72745632"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188643"
 ---
 # <a name="create-custom-views-of-managed-objects-c-visual-basic-f-ccli"></a>建立受控物件的自訂視圖C#（、Visual Basic F#、 C++、/cli）
 您可以自訂 Visual Studio 在偵錯工具變數視窗中顯示資料型別的方式。
@@ -41,10 +41,10 @@ ms.locfileid: "72745632"
 
 ## <a name="visualizers"></a>視覺化工具
 
-您可以撰寫視覺化檢視以顯示任何 Managed 資料型別。 如需詳細資訊，請參閱[如何：撰寫視覺化](/visualstudio/debugger/create-custom-visualizers-of-data)程式。
+您可以撰寫視覺化檢視以顯示任何 Managed 資料型別。 如需詳細資訊，請參閱[如何：撰寫視覺化](create-custom-visualizers-of-data.md)程式。
 
 > [!NOTE]
-> 針對C++程式碼，您可以使用 Natvis 架構來加入自訂資料類型擴充，如在[偵錯工具中C++建立物件的自訂視圖](/visualstudio/debugger/create-custom-views-of-native-objects)中所述。
+> 針對C++程式碼，您可以使用 Natvis 架構來加入自訂資料類型擴充，如在[偵錯工具中C++建立物件的自訂視圖](create-custom-views-of-native-objects.md)中所述。
 
 ## <a name="see-also"></a>請參閱
 

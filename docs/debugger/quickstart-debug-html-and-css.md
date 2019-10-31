@@ -17,12 +17,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - uwp
-ms.openlocfilehash: 52235ab4770f5267de8507ff67fcda0aa1370392
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 12f66658cd8069f58355a96b2c3b3031a4cb6808
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72730559"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73187561"
 ---
 # <a name="debug-html-and-css-in-uwp-apps-in-visual-studio"></a>在 Visual Studio 中的 UWP 應用程式中的 HTML 和 CSS 的 Debug
 
@@ -30,7 +30,7 @@ Visual Studio 針對 JavaScript 應用程式提供完整的偵錯體驗，所包
 
 使用 DOM 檢查工具所提供的互動式偵錯模型，您可以檢視和修改呈現的 HTML 和 CSS 程式碼。 您可以這麼做，而不需要停止並重新開始偵錯工具。
 
-如需其他 JavaScript 偵錯工具功能（例如使用 [JavaScript 主控台] 視窗和設定中斷點）的詳細資訊，請參閱[快速入門：](../debugger/quickstart-debug-javascript-using-the-console.md) [在 Visual Studio 中的](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps)debug JavaScript 和 debug apps。
+如需其他 JavaScript 偵錯工具功能（例如使用 [JavaScript 主控台] 視窗和設定中斷點）的詳細資訊，請參閱[快速入門：](../debugger/quickstart-debug-javascript-using-the-console.md) [在 Visual Studio 中的](debugging-windows-store-and-windows-universal-apps.md)debug JavaScript 和 debug apps。
 
 ## <a name="InspectingDOM"></a> 檢查 Llive DOM
 DOM 總管會顯示所呈現頁面的檢視，您可以使用 DOM 總管變更值並立即查看結果。 這讓您能測試變更，而不需要停止並重新開始偵錯工具。 當您以此方法與頁面互動時，專案中的原始程式碼並不會變更，因此當您找到所需的程式碼修正時，您可以對原始程式碼進行變更。
@@ -182,7 +182,7 @@ DOM 總管會顯示所呈現頁面的檢視，您可以使用 DOM 總管變更�
 14. 在主視窗中，按兩下 `width: 100px;height: 100px;`，按**Delete**鍵，然後按**enter**。 當您按下 Enter 後，新的值會立即反映在應用程式中，但您還沒有停止您的「偵錯工具」會話。
 
     > [!IMPORTANT]
-    > 您可以更新 [DOM 總管] 視窗中的屬性，也可以更新 [樣式]、[計算]和 [配置] 索引標籤中出現的值。 如需詳細資訊，請參閱使用[DOM 總管的 DEBUG CSS 樣式](../debugger/debug-css-styles-using-dom-explorer.md)和[使用 DOM 總管的偵錯工具版面](../debugger/debug-layout-using-dom-explorer.md)配置。
+    > 您可以更新 [DOM 總管] 視窗中的屬性，也可以更新 [樣式]、[計算]和 [配置] 索引標籤中出現的值。 如需詳細資訊，請參閱使用[DOM 總管的 DEBUG CSS 樣式](../debugger/debug-css-styles-using-dom-explorer.md)和[使用 DOM 總管的偵錯工具版面](quickstart-debug-html-and-css.md)配置。
 
 15. 藉由選取或使用 Alt + Tab 切換至應用程式。
 
@@ -255,7 +255,7 @@ DOM 總管會顯示所呈現頁面的檢視，您可以使用 DOM 總管變更�
 > Windows Phone 模擬器僅部分支援藉由滑鼠游標停留來醒目提示示項目。
 
 ## <a name="see-also"></a>請參閱
-- [在 Visual Studio 中偵錯應用程式](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps)
+- [在 Visual Studio 中偵錯應用程式](debugging-windows-store-and-windows-universal-apps.md)
 - [重新整理應用程式 (JavaScript)](../debugger/refresh-an-app-javascript.md)
 - [偵錯 WebView 控制項](../debugger/debug-a-webview-control.md)
 - [鍵盤快速鍵](../debugger/keyboard-shortcuts-html-and-javascript.md?view=vs-2017)

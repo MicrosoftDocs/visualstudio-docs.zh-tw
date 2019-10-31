@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f6a4e3fde3d98b83f8b92ffe039e3bff5c8eae4f
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 77f5ca5dcc1b886ec56b7177dd0d6aa62a8ce4f0
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72738333"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188628"
 ---
 # <a name="debugger-project-settings"></a>偵錯工具專案設定
 某些專案設定也會影響偵錯。 這些設定可以決定像是偵錯工具要查看哪些目錄、用於啟動程式的命令和命令引數，以及為程式建立的偵錯資訊類型等行為。 您可以在 [ **屬性頁** ] 對話方塊中變更這些設定。
@@ -44,7 +44,7 @@ ms.locfileid: "72738333"
 ## <a name="related-sections"></a>相關章節
  [指定符號（.pdb）和來源](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)檔案描述偵錯工具如何使用符號檔和原始程式檔來顯示用於偵錯工具的資訊。
 
- [Visual Studio 中的偵錯工具](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps)說明如何調試 UWP 應用程式。 (Windows 開發人員中心)
+ [Visual Studio 中的偵錯工具](debugging-windows-store-and-windows-universal-apps.md)說明如何調試 UWP 應用程式。 (Windows 開發人員中心)
 
  [偵錯工具設定和準備](../debugger/debugger-settings-and-preparation.md)描述與偵錯工具相關的屬性設定，以及使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 偵錯工具來進行程式設計時所需的準備工作。
 

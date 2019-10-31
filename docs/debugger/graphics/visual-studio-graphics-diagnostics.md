@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 875c2578d5f8cc1aa68cc624adc0a6e2a1713472
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: e69d88bb5764836d82232cec26606009eaf694d7
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72911368"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73187743"
 ---
 # <a name="visual-studio-graphics-diagnostics"></a>Visual Studio 圖形診斷
 Visual Studio*圖形診斷*是一組工具，用來記錄並分析 Direct3D 應用程式中的轉譯和效能問題。 圖形診斷可以用於 Windows 電腦、Windows 裝置模擬器或者遠端電腦或裝置上本機執行的應用程式。
@@ -38,7 +38,7 @@ Visual Studio*圖形診斷*是一組工具，用來記錄並分析 Direct3D 應�
 
  [捕捉圖形資訊](capturing-graphics-information.md)若要使用圖形診斷來檢查應用程式中的轉譯問題，您必須先記錄應用程式如何使用 DirectX 的相關資訊。 在記錄工作階段期間，如果您的應用程式正常地執行，請「擷取」(亦即選取) 感興趣的畫面格。 擷取包含如何呈現畫面格的詳細資訊。 您可以將擷取到的資訊儲存為圖形記錄文件，以供稍後再檢查，或與您小組的其他成員共用。
 
- [GPU 使用量](gpu-usage.md)若要使用圖形診斷來分析您的應用程式，請使用 [GPU 使用量] 工具。 GPU 使用量可以用於與其他程式碼剖析工具 (例如 CPU 使用量) 搭配使用，以關聯可能造成應用程式中效能問題的 CPU 和 GPU 活動。
+ [GPU 使用量](../../profiling/gpu-usage.md)若要使用圖形診斷來分析您的應用程式，請使用 [GPU 使用量] 工具。 GPU 使用量可以用於與其他程式碼剖析工具 (例如 CPU 使用量) 搭配使用，以關聯可能造成應用程式中效能問題的 CPU 和 GPU 活動。
 
  [圖形記錄檔](graphics-log-document.md)若要開始檢查所記錄的圖形記錄，請使用圖形記錄文件視窗來選取已捕捉的框架（或甚至是特定圖元），讓您可以詳細檢查影響它的*事件*（也就是 DirectX API 呼叫）。
 
@@ -66,5 +66,5 @@ Visual Studio*圖形診斷*是一組工具，用來記錄並分析 Direct3D 應�
 
 | 標題 | 描述 |
 | - | - |
-| [偵錯工具功能導覽](/visualstudio/debugger/debugger-feature-tour) | 介紹 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 中的偵錯功能。 |
+| [偵錯工具功能導覽](../debugger-feature-tour.md) | 介紹 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 中的偵錯功能。 |
 | [DirectX 圖形與遊戲](/windows/win32/directx) | 提供討論 DirectX 圖形技術的文章。 |

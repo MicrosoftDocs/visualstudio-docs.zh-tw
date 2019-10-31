@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 91df84c92761ae75ce9f26bddefad57c6dc8bc2c
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 3c27d2b4436fc5defedcda44c4f7840760018ade
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72738303"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188536"
 ---
 # <a name="inspect-data-using-debugger-windows-in-visual-studio"></a>在 Visual Studio 中使用偵錯工具視窗檢查資料
 
@@ -39,7 +39,7 @@ ms.locfileid: "72738303"
 |工作|CTR:+SHIFT+D, K|[使用工作視窗](../debugger/using-the-tasks-window.md)|
 |Python 互動式偵錯|SHIFT+ALT+I|[Python 互動式 REPL](../python/python-interactive-repl-in-visual-studio.md)|
 |JavaScript 主控台|CTRL+ALT+V, C|[快速入門：偵錯 JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)|
-|DOM 總管|CTRL+ALT+V, D|[使用 DOM 總管偵錯配置](/visualstudio/debugger/quickstart-debug-html-and-css)|
+|DOM 總管|CTRL+ALT+V, D|[使用 DOM 總管偵錯配置](quickstart-debug-html-and-css.md)|
 |即時視覺化樹狀結構|-|[在偵錯時檢查 XAML 屬性](../xaml-tools/inspect-xaml-properties-while-debugging.md)|
 |即時屬性總管|-|[在偵錯時檢查 XAML 屬性](../xaml-tools/inspect-xaml-properties-while-debugging.md)|
 |處理序|CTRL+ALT+Z|[偵錯執行緒和處理序](../debugger/debug-threads-and-processes.md)|

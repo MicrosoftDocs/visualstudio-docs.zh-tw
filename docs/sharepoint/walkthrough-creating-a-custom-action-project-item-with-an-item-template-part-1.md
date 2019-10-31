@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2a9370fbbd5c806bd3978e3c642da8a6dbd79fd1
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 4a114345363deb9c5ddd0f5a4141cd7d99f0ac1c
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72984980"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189174"
 ---
 # <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-1"></a>逐步解說：使用專案範本建立自訂動作專案專案（第1部分）
   您可以藉由建立您自己的專案專案類型，在 Visual Studio 中擴充 SharePoint 專案系統。 在此逐步解說中，您將建立可加入 SharePoint 專案的專案專案，以便在 SharePoint 網站上建立自訂動作。 自訂動作會將功能表項目加入至 SharePoint 網站的 [**網站動作**] 功能表。
@@ -218,7 +218,7 @@ ms.locfileid: "72984980"
     </VSTemplate>
     ```
 
-     此檔案會定義專案範本的內容和行為。 如需這個檔案內容的詳細資訊，請參閱[Visual Studio 範本架構參考](/visualstudio/extensibility/visual-studio-template-schema-reference)。
+     此檔案會定義專案範本的內容和行為。 如需這個檔案內容的詳細資訊，請參閱[Visual Studio 範本架構參考](../extensibility/visual-studio-template-schema-reference.md)。
 
 4. 在**方案總管**中，開啟**ItemTemplate**專案的快捷方式功能表，選擇 [**加入**]，然後選擇 [**新增專案**]。
 
@@ -455,6 +455,6 @@ ms.locfileid: "72984980"
 - [定義自訂 SharePoint 專案專案類型](../sharepoint/defining-custom-sharepoint-project-item-types.md)
 - [為 SharePoint 專案專案建立專案範本和專案範本](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)
 - [使用 SharePoint 專案服務](../sharepoint/using-the-sharepoint-project-service.md)
-- [Visual Studio 範本結構描述參考](/visualstudio/extensibility/visual-studio-template-schema-reference)
+- [Visual Studio 範本結構描述參考](../extensibility/visual-studio-template-schema-reference.md)
 - [圖示影像編輯器](/cpp/windows/image-editor-for-icons)
 - [為圖示建立圖示或其他&#40;影像影像編輯器&#41;](/cpp/windows/creating-an-icon-or-other-image-image-editor-for-icons)

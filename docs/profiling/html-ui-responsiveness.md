@@ -17,12 +17,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - uwp
-ms.openlocfilehash: 8dac5c929289b9a891f7dc5cb1bf803e1abd5b3a
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
-ms.translationtype: HT
+ms.openlocfilehash: a483d1382ea1f67c14aa4674016331bfe0f76e7d
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67826106"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189381"
 ---
 # <a name="analyze-html-ui-responsiveness-in-universal-windows-apps"></a>分析通用 Windows App 中 HTML UI 的回應性
 本主題描述如何使用 UI 回應性分析工具隔離應用程式中的效能問題；該效能工具可供通用 Windows App 使用。
@@ -38,11 +38,11 @@ ms.locfileid: "67826106"
 ## <a name="run-the-html-ui-responsiveness-tool"></a>執行 HTML UI 回應性工具
  在 Visual Studio 中開啟您開發的 UWP 應用程式時，就可以使用 HTML UI 回應性工具。
 
-1. 如果您是從 Visual Studio 執行應用程式，請在 [標準]  工具列上的 [開始偵錯]  清單中選擇部署目標，例如 [本機電腦]  或 [裝置]  。
+1. 如果您是從 Visual Studio 執行應用程式，請在 [標準] 工具列上的 [開始偵錯] 清單中選擇部署目標，例如 [本機電腦] 或 [裝置]。
 
-2. 在 [偵錯]  功能表上選擇 [效能分析工具]  。
+2. 在 [偵錯] 功能表上選擇 [效能分析工具]。
 
-     如果您要變更分析工具的分析目標，請選擇 [變更目標]  。
+     如果您要變更分析工具的分析目標，請選擇 [變更目標]。
 
      ![變更分析目標](../profiling/media/js_tools_target.png "JS_Tools_Target")
 
@@ -69,7 +69,7 @@ ms.locfileid: "67826106"
 6. 若要停止分析應用程式並檢視分析工具蒐集的資料，請選擇 [ **停止收集**]。
 
 ## <a name="isolate-an-issue"></a>找出問題
- 下列章節提供可協助您找出效能問題的建議。 如需使用效能測試應用程式範例以找出及修正效能問題的逐步說明，請參閱[逐步解說：改善 UI 回應性 (HTML)](/visualstudio/profiling/html-ui-responsiveness)。
+ 下列章節提供可協助您找出效能問題的建議。 如需如何利用範例效能測試應用程式來找出效能問題並加以修正的逐步說明，請參閱[逐步解說：改善 UI 回應性 (HTML)](html-ui-responsiveness.md)。
 
 ### <a name="Workflow"></a> 找出 UI 回應性問題
  下列步驟提供的建議工作流程，有助於您更有效地使用 UI 回應性分析工具：
@@ -109,7 +109,7 @@ ms.locfileid: "67826106"
 
      下圖顯示具有反白顯示之感興趣的區域的 CPU 使用率圖表。
 
-     ![CPU 使用率圖形](../profiling/media/js_htmlvizprof_cpu_util.png "JS_HTMLVizProf_CPU_Util")
+     ![CPU 使用率圖表](../profiling/media/js_htmlvizprof_cpu_util.png "JS_HTMLVizProf_CPU_Util")
 
 11. 使用 [檢視時間軸詳細資料](#TimelineDetails) 以取得有關執行頻率太高或花費太多時間完成之事件的詳細資訊。 例如，請查看下列項目：
 
@@ -124,7 +124,7 @@ ms.locfileid: "67826106"
     > [!TIP]
     > 分析工具中大部分的有用資訊都會出現在時間軸詳細資料圖表中。
 
-12. 在 CPU 使用率或視覺輸送量 (FPS) 圖表中選取區域後，選擇 [ **放大** ] (按鈕或內容功能表) 以取得詳細資訊。 圖形的時間軸會變成只顯示選取的時段。
+12. 在 CPU 使用率或視覺輸送量 (FPS) 圖表中選取區域後，選擇 [ **放大** ]\(按鈕或內容功能表) 以取得詳細資訊。 圖形的時間軸會變成只顯示選取的時段。
 
 13. 放大時，請選取 CPU 使用率或視覺輸送量圖形的一部分。 確定選取範圍時，分析工具下方窗格的時間軸詳細資料圖形會變成只顯示選取的時段。
 
@@ -165,9 +165,9 @@ if (performance.mark && performance.measure) {
 
  如果沒有指定第二個使用者標記， `performance.measure` 就會使用時間戳記做為第二個使用者標記。 第一個使用者標記是必要項目。
 
- 在時間軸詳細資料檢視中，持續時間測量會顯示成 [使用者測量]  事件，選取時會顯示詳細資訊。
+ 在時間軸詳細資料檢視中，持續時間測量會顯示成 [使用者測量] 事件，選取時會顯示詳細資訊。
 
- ![時間軸詳細資料檢視中的使用者測量事件](../profiling/media/js_htmlvizprofiler_user_measure.png "JS_HTMLVizProfiler_User_Measure")
+ ![時間軸詳細資料檢視中的使用者量值事件](../profiling/media/js_htmlvizprofiler_user_measure.png "JS_HTMLVizProfiler_User_Measure")
 
 ## <a name="analyze-data"></a>分析資料
  下列章節提供有助於解譯出現在分析工具的資料相關資訊。
@@ -177,7 +177,7 @@ if (performance.mark && performance.measure) {
 
  下圖顯示會針對數個應用程式週期事件顯示工具提示的範例診斷工作階段時間軸：
 
- ![診斷工作階段時尺規](../profiling/media/js_htmlvizprof_ruler.png "JS_HTMLVizProf_Ruler")
+ ![診斷會話尺規](../profiling/media/js_htmlvizprof_ruler.png "JS_HTMLVizProf_Ruler")
 
  時間軸會顯示應用程式週期事件 (如啟用事件) 發生的時間，以及可新增至程式碼的使用者標記 (使用者標記三角形)。 您可以選取事件，以顯示含有詳細資訊的工具提示。 如需使用者標記的詳細資訊，請參閱本主題中的 [標記程式碼以供分析](#ProfileMark) 。
 
@@ -188,7 +188,7 @@ if (performance.mark && performance.measure) {
 - 巡覽事件，當巡覽至其他頁面時發生。 事件的工具提示會顯示目的頁面 URL。
 
 ### <a name="CPUUtilization"></a> 檢視 CPU 使用率
- CPU 使用率圖表可讓您識別有過多 CPU 活動的時段。 其中提供應用程式在一段時間的平均 CPU 消耗資訊。 資訊會以色彩標示，代表下列特定分類：[正在載入]  、[正在處理指令碼]  、記憶體回收 ([GC]  )、[樣式]  、[正在轉譯]  和 [影像解碼中]  。 如需這些分類的詳細資訊，請參閱本主題稍後的 [Profiler event reference](#profiler-event-reference) 。
+ CPU 使用率圖表可讓您識別有過多 CPU 活動的時段。 其中提供應用程式在一段時間的平均 CPU 消耗資訊。 資訊會以色彩標示，代表下列特定分類：[ **正在載入**]、[ **正在處理指令碼**]、記憶體回收 ([**GC**])、[ **樣式**]、[ **正在轉譯**] 和 [ **影像解碼中**]。 如需這些分類的詳細資訊，請參閱本主題稍後的 [Profiler event reference](#profiler-event-reference) 。
 
  CPU 使用率圖形顯示花在所有應用程式執行緒的時間，將一個或多個 CPU 的 CPU 使用率值合併為單一的百分比值。 當多個 CPU 正在使用中時，CPU 使用率值可能會超過 100%。
 
@@ -197,7 +197,7 @@ if (performance.mark && performance.measure) {
 
  這個範例顯示 CPU 使用率圖形的外觀：
 
- ![CPU 使用率圖形](../profiling/media/js_htmlvizprof_cpu_util.png "JS_HTMLVizProf_CPU_Util")
+ ![CPU 使用率圖表](../profiling/media/js_htmlvizprof_cpu_util.png "JS_HTMLVizProf_CPU_Util")
 
  使用這個圖形：
 
@@ -242,7 +242,7 @@ if (performance.mark && performance.measure) {
 
  這個範例顯示當選取 DOM Click 事件的事件接聽程式時，時間軸詳細資料圖形的外觀：
 
- ![時間軸詳細資料圖形](../profiling/media/js_htmlvizprof_timelinedet.png "JS_HTMLVizProf_TimelineDet")
+ ![時間軸詳細資料圖表](../profiling/media/js_htmlvizprof_timelinedet.png "JS_HTMLVizProf_TimelineDet")
 
  在上圖中，如果選取 [ **事件名稱** ] 一欄中的 [ **spinAction** ] 事件處理常式連結，就會帶領您前往原始程式碼中這個事件處理常式的所在位置。 在右窗格中，[ **回呼函式** ] 屬性可提供原始程式碼的相同連結。 其他屬性也會提供關於事件的資訊，例如相關的 DOM 項目。
 
@@ -274,32 +274,32 @@ if (performance.mark && performance.measure) {
 ### <a name="FilterTimelineDetails"></a> 篩選時間軸詳細資料
  您可以從特定事件的內容功能表中選取 [ **篩選事件** ]，在時間軸詳細資料中篩選並檢視特定事件。 選擇這個選項時，就會將時間軸和資料格檢視的範圍設定為選取的事件。 [CPU 使用率 (%)] 圖表中的選取範圍也會設定為特定事件。
 
- ![將時間軸篩選至某個事件](../profiling/media/js_htmlvizprofiler_filtertoevent.png "JS_HTMLVizProfiler_FilterToEvent")
+ ![篩選事件的時間軸](../profiling/media/js_htmlvizprofiler_filtertoevent.png "JS_HTMLVizProfiler_FilterToEvent")
 
 ### <a name="FilterEvents"></a> 篩選事件
  您可以從時間軸詳細資料圖表篩選掉一些事件以精煉資料，或是排除對效能方案而言不必要的資料。 您可以依事件名稱或事件持續時間進行篩選，或是依此處所說明的特定篩選條件進行篩選。
 
- 若要篩選掉影像解碼、理論式下載和 GC 事件，請從下方窗格中的篩選圖示取消選取 [背景活動]  選項。 由於這些事件幾乎都不必採取動作，因此預設並不會顯示。
+ 若要篩選掉影像解碼、理論式下載和 GC 事件，請從下方窗格中的篩選圖示取消選取 [背景活動] 選項。 由於這些事件幾乎都不必採取動作，因此預設並不會顯示。
 
  ![篩選時間軸中的事件](../profiling/media/js_htmlvizprofiler_event_filter.png "JS_HTMLVizProfiler_Event_Filter")
 
- 若要篩選掉 HTTP 要求事件，請從下方窗格中的篩選圖示取消選取 [網路流量]  選項。 這些事件預設會在時間軸詳細資料圖表中顯示。
+ 若要篩選掉 HTTP 要求事件，請從下方窗格中的篩選圖示取消選取 [網路流量] 選項。 這些事件預設會在時間軸詳細資料圖表中顯示。
 
- 若要篩選掉 UI 執行緒活動，請取消選取 [UI 活動]  選項。
+ 若要篩選掉 UI 執行緒活動，請取消選取 [UI 活動] 選項。
 
 > [!TIP]
 > 清除此選項並選取 [網路流量] 選項，以調查與網路延遲相關的問題。
 
- 若要篩選掉使用者測量，請清除 [使用者測量]  選項。 使用者測量是最上層事件，不含子系。
+ 若要篩選掉使用者測量，請清除 [使用者測量] 選項。 使用者測量是最上層事件，不含子系。
 
 ### <a name="GroupFrames"></a> 依畫面格分組事件
- 您可以將出現在時間軸詳細資料檢視中的事件，分組成個別畫面格。 這些畫面格事件是工具產生的事件，代表繪畫事件之間所發生之所有 UI 執行緒工作最上層的事件容器。 若要啟用此檢視，請選取 [依畫面格分組最上層事件]  。
+ 您可以將出現在時間軸詳細資料檢視中的事件，分組成個別畫面格。 這些畫面格事件是工具產生的事件，代表繪畫事件之間所發生之所有 UI 執行緒工作最上層的事件容器。 若要啟用此檢視，請選取 [依畫面格分組最上層事件]。
 
  ![依畫面格分組最上層事件](../profiling/media/js_htmlvizprofiler_frame_grouping_button.png "JS_HTMLVizProfiler_Frame_Grouping_Button")
 
  當您依畫面格分組事件時，時間軸詳細資料檢視中的每個最上層事件，各代表一個畫面格。
 
- ![依畫面格分組的時間軸事件](../profiling/media/js_htmlvizprofiler_frame_grouping.png "JS_HTMLVizProfiler_Frame_Grouping")
+ ![依框架分組的時間軸事件](../profiling/media/js_htmlvizprofiler_frame_grouping.png "JS_HTMLVizProfiler_Frame_Grouping")
 
 ## <a name="save-a-diagnostic-session"></a>儲存診斷工作階段
  在 Visual Studio 中，當您關閉與診斷工作階段相關聯的索引標籤時，可以儲存診斷工作階段。 已儲存的工作階段可以在稍後重新開啟。
@@ -357,5 +357,5 @@ if (performance.mark && performance.measure) {
 
 - 如需單執行緒程式碼執行模型和效能的相關資訊，請參閱 [執行程式碼](/previous-versions/windows/apps/hh781217\(v\=win.10\))。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [初步認識分析工具](../profiling/profiling-feature-tour.md)

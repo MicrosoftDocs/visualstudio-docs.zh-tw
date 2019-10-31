@@ -16,18 +16,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 27e551132e66ef0cb380b56441d19b1436d19df2
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: 9a2c35befa92e72e08fe2e058afe10d19ac116e0
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72911527"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188143"
 ---
 # <a name="error-the-microsoft-visual-studio-remote-debugging-monitor-msvsmonexe-does-not-appear-to-be-running-on-the-remote-computer"></a>錯誤：Microsoft Visual Studio 遠端偵錯監視 (MSVSMON.EXE) 似乎沒有在遠端電腦上執行。
 這個錯誤訊息表示 Visual Studio 無法在遠端電腦上找到正確的 Visual Studio 遠端偵錯監視執行個體。 必須安裝 Visual Studio 遠端偵錯監視，才能執行遠端偵錯。 如需下載和設定遠端偵錯程式的詳細資訊，請參閱[遠端](../debugger/remote-debugging.md)偵測。
 
 > [!IMPORTANT]
-> 如果您認為您因為產品錯誤而收到此訊息，請[將此問題回報給 Visual Studio](../ide/how-to-report-a-problem-with-visual-studio.md)。 如果您需要更多協助，請參閱 [Talk to Us](../ide/talk-to-us.md) 與 Microsoft 連絡。
+> 如果您認為您因為產品錯誤而收到此訊息，請[將此問題回報給 Visual Studio](../ide/how-to-report-a-problem-with-visual-studio.md)。 如果您需要更多協助，請參閱 [Talk to Us](../ide/feedback-options.md) 與 Microsoft 連絡。
 
 ## <a name="i-got-this-message-while-i-was-debugging-in-visual-studio-2010-or-earlier"></a>我在 Visual Studio 2010 或更早版本中偵錯時收到這則訊息
  如果您使用的 Visual Studio 版本是 Visual Studio 2010 或更早版本，在未啟用檔案或印表機共用時，也可能會收到這個錯誤。 若要深入了解這個問題，請參閱本文件的 Visual Studio 2010 版本：[Error: The Microsoft Visual Studio Remote Debugging Monitor (MSVSMON.EXE) does not appear to be running on the remote computer. - Visual Studio 2010](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/ms164726(v=vs.100)) (錯誤：Microsoft Visual Studio 遠端偵錯監視 (MSVSMON.EXE) 似乎沒有在遠端電腦上執行。- Visual Studio 2010)

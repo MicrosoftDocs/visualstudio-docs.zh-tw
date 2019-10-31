@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4e8ccaaf877c04b3d58fc6d54bb658c2cef77b6f
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 046f3bbca7b66d14e9b6a3eae96b613492292be0
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72985306"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189195"
 ---
 # <a name="troubleshoot-sharepoint-solutions"></a>SharePoint 方案疑難排解
   當您使用 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 偵錯工具來調試 SharePoint 方案時，可能會發生下列問題或警示。 如需詳細資訊，請參閱[偵錯工具 SharePoint 2007 工作流程解決方案](https://msdn.microsoft.com/3a5392f3-66f3-48be-956e-02de23fa6247)。
@@ -281,4 +281,4 @@ ms.locfileid: "72985306"
 
 - [針對 SharePoint 封裝和部署進行疑難排解](../sharepoint/troubleshooting-sharepoint-packaging-and-deployment.md)
 - [建置和偵錯 SharePoint 方案](../sharepoint/building-and-debugging-sharepoint-solutions.md)
-- [Visual Studio 偵錯](../debugger/debugging-in-visual-studio.md)
+- [Visual Studio 偵錯](../debugger/debugger-feature-tour.md)

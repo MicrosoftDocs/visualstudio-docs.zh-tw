@@ -13,12 +13,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7fa62baf020751a175b24f47a93b3e7280fb76fc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a755de4df0cd7402debbc964d2f3f9c54802eb85
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647655"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188978"
 ---
 # <a name="keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window"></a>類別圖表和類別細節視窗中的鍵盤和滑鼠快速鍵
 
@@ -105,4 +105,4 @@ ms.locfileid: "72647655"
 - [建立及設定類型成員](creating-and-configuring-type-members.md)
 - [如何只使用鍵盤](../reference/how-to-use-the-keyboard-exclusively.md)
 - [Visual Studio 中的預設鍵盤快速鍵](../default-keyboard-shortcuts-in-visual-studio.md)
-- [鍵盤快速鍵 (Blend)](../../designers/keyboard-shortcuts-in-blend.md)
+- [鍵盤快速鍵 (Blend)](../../xaml-tools/keyboard-shortcuts-in-blend.md)

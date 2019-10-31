@@ -1,5 +1,5 @@
 ---
-title: 撰寫。Vsct 檔案 |Microsoft Docs
+title: 製作..Vsct 檔案 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,29 +10,29 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f871cfce2fd3e26895d690b1f51ee38461493810
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 82960de02c43a7c4002e189d573a914bb2a73f20
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66315796"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73186661"
 ---
-# <a name="author-vsct-files"></a>撰寫.vsct 檔案
-本文件說明如何撰寫 *.vsct*將功能表項目、 工具列和其他使用者介面 (UI) 項目新增至 Visual Studio 整合式的開發環境 (IDE) 的檔案。 當您將 UI 項目新增到還沒有 Visual Studio 封裝 (VSPackage) 使用這些步驟 *.vsct*檔案。
+# <a name="author-vsct-files"></a>撰寫 .vsct 檔案
+本檔說明如何撰寫 *.vsct*檔案，以將功能表項目、工具列和其他使用者介面（UI）元素新增至 Visual Studio 的整合式開發環境（IDE）。 當您將 UI 元素新增至尚未擁有 *.vsct*檔案的 Visual Studio 封裝（VSPackage）時，請使用下列步驟。
 
- 對於新專案，我們建議您使用 Visual Studio package 範本，因為它會產生 *.vsct*檔案，根據您的選擇，已經有必要的項目，功能表命令、 工具視窗，或自訂編輯器. 您可以修改這 *.vsct*檔案，以符合需求的 VSPackage。 如需有關如何修改 *.vsct*檔案，請參閱中的範例[擴充功能表和命令](../../extensibility/extending-menus-and-commands.md)。
+ 針對新的專案，建議您使用 [Visual Studio 封裝] 範本，因為它會產生 *.vsct*檔案，根據您的選擇，已經有功能表命令、工具視窗或自訂編輯器的必要元素。 您可以修改這個 *.vsct*檔案，以符合 VSPackage 的需求。 如需如何修改 *.vsct*檔的詳細資訊，請參閱[擴充功能表和命令](../../extensibility/extending-menus-and-commands.md)中的範例。
 
-## <a name="author-the-file"></a>製作檔案
- 作者 *.vsct*這些階段中的檔案：建立檔案和資源的結構、 宣告的 UI 項目，將 UI 項目放在 IDE 中，並加入任何特殊的行為。
+## <a name="author-the-file"></a>撰寫檔案
+ 在下列階段中撰寫 *.vsct*檔案：建立檔案和資源的結構、宣告 ui 元素、將 ui 元素放在 IDE 中，以及新增任何特殊行為。
 
 ### <a name="file-structure"></a>檔案結構
- 基本結構 *.vsct*檔案[CommandTable](../../extensibility/commandtable-element.md)包含的根項目[命令](../../extensibility/commands-element.md)元素和[符號](../../extensibility/symbols-element.md)項目。
+ *.Vsct*檔案的基本結構是[CommandTable](../../extensibility/commandtable-element.md)根項目，其中包含[命令](../../extensibility/commands-element.md)元素和[符號](../../extensibility/symbols-element.md)元素。
 
-#### <a name="to-create-the-file-structure"></a>若要建立的檔案結構
+#### <a name="to-create-the-file-structure"></a>若要建立檔案結構
 
-1. 新增 *.vsct*檔案，以您的專案中的步驟[How to:建立.vsct 檔](../../extensibility/internals/how-to-create-a-dot-vsct-file.md)。
+1. 遵循[如何：建立 .vsct](../../extensibility/internals/how-to-create-a-dot-vsct-file.md)檔案中的步驟，將 *.vsct*檔案新增至您的專案。
 
-2. 新增必要的命名空間，以`CommandTable`項目，如下列範例所示：
+2. 將必要的命名空間新增至 `CommandTable` 元素，如下列範例所示：
 
     ```xml
     <CommandTable xmlns="http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable"
@@ -40,118 +40,118 @@ ms.locfileid: "66315796"
 
     ```
 
-3. 在 `CommandTable`項目，新增`Commands`來裝載您的自訂功能表、 工具列、 命令群組和命令的所有項目。 以便載入自訂的 UI 項目，`Commands`項目必須具有其`Package`屬性設為封裝的名稱。
+3. 在 `CommandTable` 元素中，新增 `Commands` 元素，以裝載您的所有自訂功能表、工具列、命令群組和命令。 為了讓您的自訂 UI 元素可以載入，`Commands` 元素必須將其 `Package` 屬性設定為封裝的名稱。
 
-     在後`Commands`項目，新增`Symbols`來定義封裝，以及的名稱 Guid 和您的 UI 項目的命令 Id 的項目。
+     在 `Commands` 專案之後，加入 `Symbols` 元素以定義封裝的 Guid，以及 UI 元素的名稱和命令識別碼。
 
 ### <a name="include-visual-studio-resources"></a>包含 Visual Studio 資源
- 使用[Extern](../../extensibility/extern-element.md)来存取 Visual Studio 的命令和功能表，才能將您的 UI 項目放在 IDE 中定義的檔案項目。 如果您將使用您的套件之外定義的命令，使用[UsedCommands](../../extensibility/usedcommands-element.md)項目，告知 Visual Studio。
+ 使用[Extern](../../extensibility/extern-element.md)元素來存取定義 Visual Studio 命令的檔案，以及將 UI 元素放在 IDE 中所需的功能表。 如果您將使用在封裝外部定義的命令，請使用[UsedCommands](../../extensibility/usedcommands-element.md)元素來通知 Visual Studio。
 
 #### <a name="to-include-visual-studio-resources"></a>包含 Visual Studio 資源
 
-1. 在頂端`CommandTable`項目，加入一個`Extern`參考，並設定每個外部檔案的項目`href`屬性加入檔案的名稱。 您可以參考下列標頭檔來存取 Visual Studio 資源：
+1. 在 `CommandTable` 專案的頂端，為每個要參考的外部檔案加入一個 `Extern` 元素，然後將 `href` 屬性設定為檔案的名稱。 您可以參考下列標頭檔來存取 Visual Studio 資源：
 
-   - *Stdidcmd.h*:定義識別碼針對 Visual Studio 所公開的所有命令。
+   - *Stdidcmd*：定義 Visual Studio 所公開之所有命令的識別碼。
 
-   - *Vsshlids.h*:包含 Visual Studio 功能表的命令識別碼。
+   - *Vsshlids .h*：包含 Visual Studio 功能表的命令識別碼。
 
-2. 如果您的封裝呼叫由 Visual Studio 或其他套件會定義任何命令，新增`UsedCommands`之後的項目`Commands`項目。 填入此項目[UsedCommand](../../extensibility/usedcommand-element.md)每個命令呼叫也就是不屬於您套件的一部分。 設定`guid`並`id`屬性的`UsedCommand`呼叫命令的 GUID 和 ID 值的項目。
+2. 如果您的封裝會呼叫 Visual Studio 或其他封裝所定義的任何命令，請在 `Commands` 元素後面加入 `UsedCommands` 元素。 針對您所呼叫且不屬於套件的每個命令，使用[UsedCommand](../../extensibility/usedcommand-element.md)元素填入此元素。 將 `UsedCommand` 元素的 `guid` 和 `id` 屬性，設定為要呼叫之命令的 GUID 和識別碼值。
 
-   如需如何尋找 [Guid] 和 Visual Studio 的識別碼命令的詳細資訊，請參閱[Guid 和 Visual Studio 的識別碼命令](../../extensibility/internals/guids-and-ids-of-visual-studio-commands.md)。 若要從其他套件呼叫的命令，使用 GUID 和命令的識別碼中所定義 *.vsct*這些套件的檔案。
+   如需如何尋找 Visual Studio 命令之 Guid 和識別碼的詳細資訊，請參閱[Visual Studio 命令的 guid 和識別碼](../../extensibility/internals/guids-and-ids-of-visual-studio-commands.md)。 若要從其他套件呼叫命令，請使用命令的 GUID 和識別碼，如這些封裝的 *.vsct*檔案中所定義。
 
-### <a name="declare-ui-elements"></a>宣告 UI 項目
- 將所有新的 UI 項目，在宣告`Symbols`一節 *.vsct*檔案。
+### <a name="declare-ui-elements"></a>宣告 UI 元素
+ 在 *.vsct*檔案的 `Symbols` 區段中，宣告所有新的 UI 元素。
 
-#### <a name="to-declare-ui-elements"></a>若要宣告 UI 項目
+#### <a name="to-declare-ui-elements"></a>宣告 UI 元素
 
-1. 在 `Symbols`項目，新增三個[GuidSymbol](../../extensibility/guidsymbol-element.md)項目。 每個`GuidSymbol`項目具有`name`屬性和`value`屬性。 設定`name`屬性，讓它反映出之項目的用途。 `value`屬性會是 GUID。 (若要在產生的 GUID，**工具**功能表上，選取**建立 GUID**，然後選取**登錄格式**。)
+1. 在 `Symbols` 元素中，新增三個[GuidSymbol](../../extensibility/guidsymbol-element.md)元素。 每個 `GuidSymbol` 元素都具有 `name` 屬性和 `value` 屬性。 設定 `name` 屬性，使其反映元素的目的。 `value` 屬性會採用 GUID。 （若要產生 GUID，請在 [**工具**] 功能表上，選取 [**建立 guid**]，然後選取 [登錄**格式**]）。
 
-     第一個`GuidSymbol`項目代表您的套件，且通常沒有子系。 第二個`GuidSymbol`命令集，並將包含的所有符號定義您的功能表、 群組和命令的項目表示。 第三個`GuidSymbol`項目代表您的映像存放區，並包含符號所有的圖示為您的命令。 如果您有沒有使用圖示的命令時，您可以省略第三個`GuidSymbol`項目。
+     第一個 `GuidSymbol` 元素代表您的封裝，而且通常沒有任何子系。 第二個 `GuidSymbol` 元素代表命令集，而且會包含定義您的功能表、群組和命令的所有符號。 第三個 `GuidSymbol` 元素代表您的映射存放區，並包含命令的所有圖示的符號。 如果您沒有使用圖示的命令，您可以省略第三個 `GuidSymbol` 元素。
 
-2. 在 `GuidSymbol`項目，表示您的命令集，新增一或多個[IDSymbol](../../extensibility/idsymbol-element.md)項目。 每一種代表功能表、 工具列、 群組或您要加入至 UI 的命令。
+2. 在代表命令集的 `GuidSymbol` 元素中，新增一或多個[IDSymbol](../../extensibility/idsymbol-element.md)元素。 其中每一個都代表您要加入至 UI 的功能表、工具列、群組或命令。
 
-     每個`IDSymbol`項目，設定`name`屬性設定為您的名稱會用來表示對應的功能表、 群組或命令，然後設定`value`項目為十六進位的數字表示其命令識別碼。 任兩個`IDSymbol`有相同的父代的項目可以有相同的值。
+     針對每個 `IDSymbol` 專案，將 `name` 屬性設定為您將用來參考對應功能表、群組或命令的名稱，然後將 `value` 元素設定為十六進位數位，以表示其命令識別碼。 沒有兩個具有相同父系的 `IDSymbol` 元素可以具有相同的值。
 
-3. 如果任何您的 UI 項目需要圖示，新增`IDSymbol`針對至每個圖示的項目`GuidSymbol`項目，表示您的映像存放區。
+3. 如果您的任何 UI 元素需要圖示，請將每個圖示的 `IDSymbol` 專案新增至代表映射存放區的 `GuidSymbol` 元素。
 
-### <a name="put-ui-elements-in-the-ide"></a>將 UI 項目放在 IDE 中
- [功能表](../../extensibility/menus-element.md)，[群組](../../extensibility/groups-element.md)，並[按鈕](../../extensibility/buttons-element.md)項目中包含的所有功能表、 群組和您的套件中所定義的命令定義。 將這些功能表、 群組和命令放在 IDE 中使用[父代](../../extensibility/parent-element.md)項目，這是組件的 UI 項目定義，或使用[CommandPlacement](../../extensibility/commandplacement-element.md)項目，是定義在其他位置。
+### <a name="put-ui-elements-in-the-ide"></a>將 UI 元素放在 IDE 中
+ [[功能表](../../extensibility/menus-element.md)]、[[群組](../../extensibility/groups-element.md)] 和 [[按鈕](../../extensibility/buttons-element.md)] 元素包含封裝中定義之所有功能表、群組和命令的定義。 使用[父](../../extensibility/parent-element.md)元素（屬於 UI 專案定義的一部分），或使用其他位置所定義的[CommandPlacement](../../extensibility/commandplacement-element.md)元素，將這些功能表、群組和命令放在 IDE 中。
 
- 每個`Menu`， `Group`，並`Button`項目具有`guid`屬性和`id`屬性。 一律設`guid`要比對的名稱屬性`GuidSymbol`項目，表示您的命令集，並設定`id`屬性的名稱`IDSymbol`項目，表示您的功能表、 群組或命令`Symbols`一節。
+ 每個 `Menu`、`Group`和 `Button` 元素都有一個 `guid` 屬性和一個 `id` 屬性。 請一律設定 `guid` 屬性，使其符合代表命令集之 `GuidSymbol` 元素的名稱，並將 `id` 屬性設定為代表您在 `Symbols` 區段中的功能表、群組或命令之 `IDSymbol` 元素的名稱。
 
 #### <a name="to-define-ui-elements"></a>若要定義 UI 元素
 
-1. 如果您正在定義任何新的功能表、 子功能表、 捷徑功能表或工具列，新增`Menus`項目`Commands`項目。 然後，針對要建立每個功能表，新增[ 功能表](../../extensibility/menu-element.md)項目`Menus`項目。
+1. 如果您要定義任何新的功能表、子功能表、快捷方式功能表或工具列，請將 `Menus` 專案加入 `Commands` 元素。 然後，針對要建立的每個功能表，將 [ [menu](../../extensibility/menu-element.md) ] 專案新增至 [`Menus`] 元素。
 
-    設定`guid`並`id`屬性`Menu`項目，然後再把`type`屬性設定為您想要的類型。 您也可以設定`priority`屬性，以在父群組中建立功能表的相對位置。
+    設定 `Menu` 元素的 `guid` 和 `id` 屬性，然後將 `type` 屬性設為您想要的功能表類型。 您也可以設定 `priority` 屬性，以建立父群組中功能表的相對位置。
 
    > [!NOTE]
-   > `priority`屬性不適用於工具列和快顯功能表。
+   > `priority` 屬性不適用於工具列和內容功能表。
 
-2. 命令群組功能表和工具列的直接子系所都必須裝載 Visual Studio IDE 中的所有命令。 如果您要新增新的功能表或工具列的 ide，這些必須包含新的命令群組。 您也可以新增至現有的功能表和工具列命令群組，以便您可以以視覺化方式分組您的命令。
+2. Visual Studio IDE 中的所有命令都必須由命令群組裝載，這些是功能表和工具列的直接子系。 如果您要在 IDE 中加入新的功能表或工具列，這些就必須包含新的命令群組。 您也可以將命令群組新增至現有的功能表和工具列，讓您能夠以視覺化方式將命令分組。
 
-    當您新增新的命令群組時，您必須先建立`Groups`項目，然後將它加入[群組](../../extensibility/group-element.md)針對每個命令群組的項目。
+    當您新增新的命令群組時，必須先建立一個 `Groups` 專案，然後將每個命令群組的[group](../../extensibility/group-element.md)元素新增至該元素。
 
-    設定`guid`並`id`每個屬性`Group`項目，然後再把`priority`屬性，以建立父功能表上的群組的相對位置。 如需詳細資訊，請參閱 <<c0> [ 建立可重複使用的按鈕群組](../../extensibility/creating-reusable-groups-of-buttons.md)。
+    設定每個 `Group` 專案的 `guid` 和 `id` 屬性，然後設定 `priority` 屬性，以在父功能表上建立群組的相對位置。 如需詳細資訊，請參閱[建立可重複使用的按鈕群組](../../extensibility/creating-reusable-groups-of-buttons.md)。
 
-3. 如果您要新增新的命令加入 IDE，新增`Buttons`項目`Commands`項目。 然後，針對每個命令中，新增[ 按鈕](../../extensibility/button-element.md)項目`Buttons`項目。
+3. 如果您要將新的命令加入至 IDE，請將 `Buttons` 專案加入至 `Commands` 元素。 然後，針對每個命令，將[Button](../../extensibility/button-element.md)元素新增至 `Buttons` 元素。
 
-   1. 設定`guid`並`id`每個屬性`Button`項目，然後再把`type`屬性設定為想要的按鈕類型。 您也可以設定`priority`屬性，以在父群組中建立命令的相對位置。
+   1. 設定每個 `Button` 元素的 `guid` 和 `id` 屬性，然後將 `type` 屬性設定為您想要的按鈕類型。 您也可以設定 `priority` 屬性，以在父群組中建立命令的相對位置。
 
        > [!NOTE]
-       > 使用`type="button"`標準功能表命令和工具列上的按鈕。
+       > 在工具列上使用標準功能表命令和按鈕的 `type="button"`。
 
-   2. 在 `Button`項目，新增[字串](../../extensibility/strings-element.md)包含的項目[ButtonText](../../extensibility/buttontext-element.md)項目和[CommandName](../../extensibility/commandname-element.md)項目。 `ButtonText`項目 功能表項目或工具列按鈕的工具提示中提供的文字標籤。 `CommandName`項目會提供要在命令中也使用的命令名稱。
+   2. 在 `Button` 元素中，新增包含[ButtonText](../../extensibility/buttontext-element.md)元素和[CommandName](../../extensibility/commandname-element.md)元素的[string](../../extensibility/strings-element.md)元素。 `ButtonText` 元素提供功能表項目的文字標籤，或工具列按鈕的工具提示。 `CommandName` 元素會提供命令中要使用的命令名稱。
 
-   3. 如果您的命令將會有圖示，建立[ 圖示](../../extensibility/icon-element.md)中的項目`Button`項目，並將其`guid`並`id`屬性加入`Bitmap`圖示的項目。
+   3. 如果您的命令會有圖示，請在 `Button` 元素中建立[圖示](../../extensibility/icon-element.md)專案，並將其 `guid` 和 `id` 屬性設定為圖示的 `Bitmap` 元素。
 
        > [!NOTE]
        > 工具列按鈕必須有圖示。
 
-   如需詳細資訊，請參閱[Menucommand 對比。OleMenuCommands](../../extensibility/menucommands-vs-olemenucommands.md)。
+   如需詳細資訊，請參閱[menucommand 對比與 OleMenuCommands](/visualstudio/extensibility/menucommands-vs-olemenucommands?view=vs-2015)。
 
-4. 如果任何您命令需要圖示，新增[點陣圖](../../extensibility/bitmaps-element.md)項目`Commands`項目。 然後，針對每個圖示，新增[點陣圖](../../extensibility/bitmap-element.md)項目`Bitmaps`項目。 這是您用來指定點陣圖資源的位置。 如需詳細資訊，請參閱 <<c0> [ 將圖示加入至功能表命令](../../extensibility/adding-icons-to-menu-commands.md)。
+4. 如果您的任何命令都需要圖示，請將[點陣圖](../../extensibility/bitmaps-element.md)元素新增至 `Commands` 元素。 然後，針對每個圖示，將[Bitmap](../../extensibility/bitmap-element.md)元素新增至 `Bitmaps` 元素。 這是您指定點陣圖資源位置的位置。 如需詳細資訊，請參閱[將圖示新增至功能表命令](../../extensibility/adding-icons-to-menu-commands.md)。
 
-   您可以依賴正確放置大部分的功能表、 群組和命令的父結構。 對於非常大的命令集，或當功能表、 群組或命令必須出現在多個位置中，我們建議您指定命令位置。
+   您可以依賴父結構，正確地放置大部分的功能表、群組和命令。 對於非常大型的命令集，或當功能表、群組或命令必須出現在多個位置時，我們建議您指定命令位置。
 
-#### <a name="to-rely-on-parenting-to-place-ui-elements-in-the-ide"></a>若要依賴將 UI 項目放在 IDE 中的父代
+#### <a name="to-rely-on-parenting-to-place-ui-elements-in-the-ide"></a>依賴父代將 UI 元素放在 IDE 中
 
-1. 針對典型的父代，建立`Parent`中每個項目`Menu`， `Group`，和`Command`您封裝中定義的項目。
+1. 針對一般的父代，請在封裝中定義的每個 `Menu`、`Group`和 `Command` 專案中，建立一個 `Parent` 元素。
 
-    目標`Parent`項目是功能表或群組將包含功能表、 群組或命令。
+    `Parent` 元素的目標是將包含功能表、群組或命令的功能表或群組。
 
-   1. 設定`guid`屬性的名稱`GuidSymbol`定義的命令集的項目。 如果目標項目不是套件的一部分，用於 guid 在設定該命令後，所定義之對應 *.vsct*檔案。
+   1. 將 `guid` 屬性設定為定義命令集之 `GuidSymbol` 元素的名稱。 如果目標元素不屬於您的封裝，請使用該命令集的 guid，如對應的 *.vsct*檔案中所定義。
 
-   2. 設定`id`屬性，以符合`id`目標 功能表或群組的屬性。 如需功能表和 Visual Studio 所公開的群組的清單，請參閱 < [Visual Studio 識別碼和 Guid 功能表](../../extensibility/internals/guids-and-ids-of-visual-studio-menus.md)或[Guid] 和 [Visual Studio 的識別碼工具列](../../extensibility/internals/guids-and-ids-of-visual-studio-toolbars.md)。
+   2. 設定 `id` 屬性，使其符合目標功能表或群組的 `id` 屬性。 如需 Visual Studio 所公開的功能表和群組清單，請參閱[Visual Studio 功能表的 guid 和識別碼](../../extensibility/internals/guids-and-ids-of-visual-studio-menus.md)[和 Visual Studio 工具列的 guid 和識別碼](../../extensibility/internals/guids-and-ids-of-visual-studio-toolbars.md)。
 
-   如果您有大量 UI 項目放在 IDE 中，或如果您有應該會出現在多個位置的項目，定義中的其配置[CommandPlacements](../../extensibility/commandplacements-element.md)項目，如下列步驟中所示。
+   如果您有大量的 UI 元素要放在 IDE 中，或如果您有應出現在多個位置中的專案，請在[CommandPlacements](../../extensibility/commandplacements-element.md)元素中定義其放置，如下列步驟所示。
 
-#### <a name="to-use-command-placement-to-place-ui-elements-in-the-ide"></a>若要使用命令位置來將 UI 項目放在 IDE 中
+#### <a name="to-use-command-placement-to-place-ui-elements-in-the-ide"></a>若要使用命令位置將 UI 元素放在 IDE 中
 
-1. 在後`Commands`項目，新增`CommandPlacements`項目。
+1. 在 `Commands` 元素後面，加入 `CommandPlacements` 元素。
 
-2. 在 `CommandPlacements`項目，新增`CommandPlacement`的每個功能表、 群組或命令，將項目。
+2. 在 `CommandPlacements` 元素中，為要放置的每個功能表、群組或命令加入 `CommandPlacement` 專案。
 
-    每個`CommandPlacement`項目或`Parent`項目會將一個功能表、 群組或命令放在一個 IDE 的位置。 UI 項目只能有一個父代，但它可以有多個命令的位置。 若要將 UI 項目放在多個位置中，新增`CommandPlacement`針對每個位置的項目。
+    每個 `CommandPlacement` 專案或 `Parent` 元素都會在一個 IDE 位置中放置一個功能表、群組或命令。 UI 元素只能有一個父代，但可以有多個命令放置。 若要將 UI 元素放在多個位置，請為每個位置加入一個 `CommandPlacement` 元素。
 
-3. 設定`guid`並`id`每個屬性`CommandPlacement`至裝載的功能表或群組，就如同您的項目會針對`Parent`項目。 您也可以設定`priority`屬性，以建立的 UI 元素的相對位置。
+3. 將每個 `CommandPlacement` 專案的 [`guid`] 和 [`id` 屬性] 設定為 [主控] 功能表或群組，就像您針對 `Parent` 元素所做的一樣。 您也可以設定 `priority` 屬性，以建立 UI 元素的相對位置。
 
-   您可以混合的父代的位置和命令位置。 不過，對於非常大的命令集，我們建議您使用只有命令位置。
+   您可以透過父和命令放置來混合放置。 不過，對於非常大型的命令集，我們建議您只使用命令位置。
 
-### <a name="add-specialized-behaviors"></a>新增特殊的行為
- 您可以使用[CommandFlag](../../extensibility/command-flag-element.md)項目來修改行為的功能表和命令，例如，若要變更其外觀和可見性。 您也可以影響時使用的命令會顯示[VisibilityConstraints](../../extensibility/visibilityconstraints-element.md)項目，或藉由加入鍵盤快速鍵[按鍵繫結關係](../../extensibility/keybindings-element.md)項目。 特定種類的功能表和命令已經有專用的內建的行為。
+### <a name="add-specialized-behaviors"></a>新增特殊行為
+ 例如，您可以使用[CommandFlag](../../extensibility/command-flag-element.md)元素來修改功能表和命令的行為，以變更其外觀和可見度。 您也可以使用[VisibilityConstraints](../../extensibility/visibilityconstraints-element.md)元素來影響命令的顯示時間，或使用[KeyBindings](../../extensibility/keybindings-element.md)專案加入鍵盤快速鍵。 某些類型的功能表和命令已經內建特定行為。
 
-#### <a name="to-add-specialized-behaviors"></a>將特製化的行為
+#### <a name="to-add-specialized-behaviors"></a>新增特殊行為
 
-1. 若要顯示的 UI 項目只在特定 UI 內容，例如，載入方案時，使用 可見性的條件約束。
+1. 若要讓 UI 元素僅在特定 UI 內容中可見，例如，載入方案時，請使用可見度條件約束。
 
-   1. 在後`Commands`項目，新增`VisibilityConstraints`項目。
+   1. 在 `Commands` 元素後面，加入 `VisibilityConstraints` 元素。
 
-   2. 每個 UI 項目來限制，加入[VisibilityItem](../../extensibility/visibilityitem-element.md)項目。
+   2. 針對每個要限制的 UI 專案，新增[VisibilityItem](../../extensibility/visibilityitem-element.md)元素。
 
-   3. 每個`VisibilityItem`項目，設定`guid`並`id` 功能表、 群組或命令，然後將設定的屬性`context`屬性設定為您想，UI 內容中所定義<xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids80>類別。
+   3. 針對每個 `VisibilityItem` 元素，將 `guid` 和 `id` 屬性設定為功能表、群組或命令，然後將 `context` 屬性設定為您想要的 UI 內容，如 <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids80> 類別中所定義。
 
-2. 若要在程式碼中設定的可見性或可用性的 UI 項目，使用一或多個下列的命令旗標：
+2. 若要在程式碼中設定 UI 專案的可見度或可用性，請使用下列一個或多個命令旗標：
 
    - `DefaultDisabled`
 
@@ -165,9 +165,9 @@ ms.locfileid: "66315796"
 
    - `NotInTBList`
 
-   如需詳細資訊，請參閱 < [CommandFlag](../../extensibility/command-flag-element.md)項目。
+   如需詳細資訊，請參閱[CommandFlag](../../extensibility/command-flag-element.md)元素。
 
-3. 若要變更項目隨即出現，或以動態方式變更其外觀的方式，使用一或多個下列的命令旗標：
+3. 若要變更元素的顯示方式，或動態變更其外觀，請使用下列一或多個命令旗標：
 
    - `AlwaysCreate`
 
@@ -193,9 +193,9 @@ ms.locfileid: "66315796"
 
    - `TextOnly`
 
-   如需詳細資訊，請參閱 < [CommandFlag](../../extensibility/command-flag-element.md)項目。
+   如需詳細資訊，請參閱[CommandFlag](../../extensibility/command-flag-element.md)元素。
 
-4. 若要變更項目如何回應收到命令時，使用一或多個下列的命令旗標：
+4. 若要變更元素收到命令時的回應方式，請使用下列一個或多個命令旗標：
 
    - `AllowParams`
 
@@ -219,21 +219,21 @@ ms.locfileid: "66315796"
 
    - `TextIsAnchorCommand`
 
-   如需詳細資訊，請參閱 < [CommandFlag](../../extensibility/command-flag-element.md)項目。
+   如需詳細資訊，請參閱[CommandFlag](../../extensibility/command-flag-element.md)元素。
 
-5. 若要附加功能表相關的快速鍵功能表或功能表上的項目，加上連字號字元 (&) 在`ButtonText`功能表或功能表項目的項目。 父功能表開啟時，遵循連字號字元會是作用中的鍵盤快速鍵。
+5. 若要將功能表相關的鍵盤快速鍵附加至功能表或功能表上的專案，請在功能表或功能表項目的 `ButtonText` 元素中加入連字號（&）。 當父功能表開啟時，符號後面的字元就是現用鍵盤快速鍵。
 
-6. 若要將獨立於功能表的鍵盤快速鍵附加至命令中，使用[按鍵繫結關係](../../extensibility/keybindings-element.md)項目。 如需詳細資訊，請參閱 <<c0> [ 按鍵繫結關係](../../extensibility/keybinding-element.md)項目。
+6. 若要將功能表獨立的鍵盤快速鍵附加至命令，請使用[KeyBindings](../../extensibility/keybindings-element.md)元素。 如需詳細資訊，請參閱[KeyBinding](../../extensibility/keybinding-element.md)元素。
 
-7. 若要當地語系化的功能表文字，請使用`LocCanonicalName`項目。 如需詳細資訊，請參閱 <<c0> [ 字串](../../extensibility/strings-element.md)項目。
+7. 若要將功能表文字當地語系化，請使用 `LocCanonicalName` 元素。 如需詳細資訊，請參閱[字串](../../extensibility/strings-element.md)元素。
 
-   某些功能表和按鈕的類型包括特製化的行為。 下列清單說明一些特殊的功能表和按鈕類型。 對於其他類型，請參閱`types`屬性中的描述[ 功能表](../../extensibility/menu-element.md)， [ 按鈕](../../extensibility/button-element.md)，和[組合](../../extensibility/combo-element.md)項目。
+   某些功能表和按鈕類型包含特殊行為。 下列清單說明一些特殊的功能表和按鈕類型。 如需其他類型，請參閱[功能表](../../extensibility/menu-element.md)、[按鈕](../../extensibility/button-element.md)和[組合](../../extensibility/combo-element.md)元素中的 `types` 屬性描述。
 
-   - 下拉式方塊：下拉式方塊是可以使用工具列的下拉式清單。 若要加入的 UI 中的下拉式方塊，建立[Combos](../../extensibility/combos-element.md)中的項目`Commands`項目。 然後加入`Combos`項目`Combo`將每個下拉式方塊的項目。 `Combo` 項目有相同的屬性和子系作為`Button`項目，也有`DefaultWidth`和`idCommandList`屬性。 `DefaultWidth`屬性設定的寬度，單位為像素和`idCommandList`屬性指向用來填入下拉式方塊的命令識別碼。
+   - 下拉式方塊：下拉式方塊是可以在工具列上使用的下拉式清單。 若要在 UI 中加入下拉式方塊，請在 `Commands` 元素中建立[Combos](../../extensibility/combos-element.md)專案。 然後，將每個下拉式方塊的 `Combo` 元素新增至 `Combos` 元素。 `Combo` 元素與 `Button` 元素具有相同的屬性和子系，而且也有 `DefaultWidth` 和 `idCommandList` 屬性。 `DefaultWidth` 屬性會設定寬度（以圖元為單位），而 `idCommandList` 屬性會指向用來填入下拉式方塊的命令識別碼。
 
-   - 功能表控制器：功能表控制器是具有它旁邊的箭號按鈕。 按一下箭號會開啟清單。 若要將功能表控制器加入至 UI 中，建立`Menu`項目並將其`type`屬性設定為`MenuController`或`MenuControllerLatched`，取決於您想要的行為。 若要填入功能表控制器，將它設為父代`Group`項目。 功能表控制器將會顯示該群組的所有子系，在它的下拉式清單。
+   - 功能表控制器：功能表控制器是一個按鈕，它旁邊有箭號。 按一下箭號就會開啟清單。 若要將功能表控制器加入至 UI，請根據您想要的行為，建立 `Menu` 專案，並將其 `type` 屬性設定為 [`MenuController`] 或 [`MenuControllerLatched`]。 若要填入功能表控制器，請將它設定為 `Group` 元素的父系。 功能表控制器會在下拉式清單中顯示該群組的所有子系。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [擴充功能表和命令](../../extensibility/extending-menus-and-commands.md)
-- [Visual Studio 命令表檔案 (.vsct)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
-- [VSCT XML 結構描述參考](../../extensibility/vsct-xml-schema-reference.md)
+- [Visual Studio 命令資料表（. .vsct）檔案](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+- [.VSCT XML 架構參考](../../extensibility/vsct-xml-schema-reference.md)

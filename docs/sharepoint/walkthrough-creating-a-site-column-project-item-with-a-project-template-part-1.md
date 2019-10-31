@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 13ede811cf2e9d900a0c78aca2214b43bd8438fe
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 6c8d4949bc8bbef0231986d2eeedfd36a2f678ea
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72984694"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189165"
 ---
 # <a name="walkthrough-create-a-site-column-project-item-with-a-project-template-part-1"></a>逐步解說：使用專案範本建立網站資料行專案專案（第1部分）
   SharePoint 專案是一個或多個 SharePoint 專案專案的容器。 您可以藉由建立您自己的 SharePoint 專案專案類型，然後將它們與專案範本產生關聯，在 Visual Studio 中擴充 SharePoint 專案系統。 在此逐步解說中，您將定義用來建立網站資料行的專案專案類型，然後您會建立專案範本，以用來建立包含網站資料行專案專案的新專案。
@@ -433,7 +433,7 @@ ms.locfileid: "72984694"
 
    - 使用命名空間 "<http://schemas.microsoft.com/developer/vstemplate/2005>"。 此方案中的其他專案檔使用「<http://schemas.microsoft.com/developer/msbuild/2003>」命名空間。 因此，將會產生 XML 架構警告訊息，但在本逐步解說中，您可以忽略它們。
 
-     如需 *.vstemplate*檔案內容的詳細資訊，請參閱[Visual Studio 範本架構參考](/visualstudio/extensibility/visual-studio-template-schema-reference)。
+     如需 *.vstemplate*檔案內容的詳細資訊，請參閱[Visual Studio 範本架構參考](../extensibility/visual-studio-template-schema-reference.md)。
 
 2. 儲存並關閉檔案。
 

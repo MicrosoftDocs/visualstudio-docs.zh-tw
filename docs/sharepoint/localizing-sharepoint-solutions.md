@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e6444f559902841c13a56265569a0bdc13a9ed26
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 7bcd11d7860e1d191479d4a2ea5f9fac78dcdfe2
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72981723"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189216"
 ---
 # <a name="localize-sharepoint-solutions"></a>當地語系化 SharePoint 方案
 
@@ -42,7 +42,7 @@ ms.locfileid: "72981723"
 |語言中性|資源檔，其中包含針對語言當地語系化的字串，但不含特定的文化特性。 例如，"fr" 代表法文。|
 |語言特定|包含針對語言和文化特性當地語系化之字串的資源檔。 例如，"fr-CA" 代表加拿大法文。|
 
- 如需詳細資訊，請參閱[階層式組織當地語系化的資源](../ide/hierarchical-organization-of-resources-for-localization.md)。
+ 如需詳細資訊，請參閱[階層式組織當地語系化的資源](../ide/globalizing-and-localizing-applications.md)。
 
  若要在 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]中開發的 SharePoint 專案中指定預設資源檔，請在新增資源檔時，于 [**加入資源**] 對話方塊的 [文化特性] 清單中選擇 [不**變語言（非變異國家）** ]。
 

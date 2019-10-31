@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d001edcd281a0c21d244704f0a068850804b8762
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 4d3afc8ff48355c74544edf123689495bfde1302
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72981150"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189132"
 ---
 # <a name="walkthrough-profile-a-sharepoint-application"></a>逐步解說：分析 SharePoint 應用程式
   本逐步解說將示範如何使用 Visual Studio 中的程式碼剖析工具最佳化 SharePoint 應用程式的效能。 範例應用程式是 SharePoint 功能事件接收器，內含的閒置迴圈會降低功能事件接收器的效能。 Visual Studio 分析工具可讓您找出並排除專案中成本最高（執行緩慢）的部分，也稱為「最忙碌*路徑*」。
@@ -197,7 +197,7 @@ ms.locfileid: "72981150"
 
 2. 在 [第一頁] 的 [**效能] 嚮導**中，將分析的方法保留為**CPU 取樣**，然後選擇 [**下一步]** 按鈕。
 
-     其他程式碼剖析方法可在進階的程式碼剖析情況下使用。 如需詳細資訊，請參閱[了解效能收集方法](/visualstudio/profiling/understanding-performance-collection-methods)。
+     其他程式碼剖析方法可在進階的程式碼剖析情況下使用。 如需詳細資訊，請參閱[了解效能收集方法](../profiling/understanding-performance-collection-methods.md)。
 
 3. 在 [**效能] Wizard**的第二頁上，將設定檔目標保留為**ProfileTest** ，然後選擇 [**下一步]** 按鈕。
 
@@ -273,7 +273,7 @@ ms.locfileid: "72981150"
      現在功能啟動的速度應該加快許多，因為已消除呼叫閒置迴圈。 樣本分析報告應該會反映這種情況。
 
 ## <a name="see-also"></a>請參閱
-- [效能總管](/visualstudio/profiling/performance-explorer)
-- [效能工作階段概觀](/visualstudio/profiling/performance-session-overview)
-- [效能分析的初級開發人員指南](/visualstudio/profiling/beginners-guide-to-performance-profiling)
+- [效能總管](../profiling/performance-explorer.md)
+- [效能工作階段概觀](../profiling/performance-session-overview.md)
+- [效能分析的初級開發人員指南](../profiling/beginners-guide-to-performance-profiling.md)
 - [使用 Visual Studio Profiler 尋找應用程式瓶頸](https://msdn.microsoft.com/magazine/cc337887.aspx)

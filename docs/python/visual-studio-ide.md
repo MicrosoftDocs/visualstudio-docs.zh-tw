@@ -11,12 +11,12 @@ dev_langs:
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 3b01d088618c07f1a3ff24aff2386584ebfad060
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 91f80d648450447a6ba0e80f10e5c39764445cef
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72983692"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189316"
 ---
 # <a name="welcome-to-the-visual-studio-ide--python"></a>歡迎使用 Visual Studio IDE | Python
 
@@ -26,7 +26,7 @@ Visual Studio 整合式開發環境是支援 Python (和其他語言) 且創作�
 
 此圖顯示 Visual Studio 有一個開啟的 Python 專案，以及數個您可能會用到的重要工具視窗：
 
-- [[方案總管]](../ide/solutions-and-projects-in-visual-studio.md) (右上) 可讓您檢視、巡覽及管理您的程式碼檔案。 [方案總管] 透過將程式碼的檔案分組到[解決方案和專案](/visualstudio/get-started/tutorial-projects-solutions)，以協助組織程式碼。
+- [[方案總管]](../ide/solutions-and-projects-in-visual-studio.md) (右上) 可讓您檢視、巡覽及管理您的程式碼檔案。 [方案總管] 透過將程式碼的檔案分組到[解決方案和專案](../get-started/tutorial-projects-solutions.md)，以協助組織程式碼。
   - 方案總管 旁的是 [Python 環境](managing-python-environments-in-visual-studio.md)，您可以在此環境中管理安裝在電腦上的其他 Python 解譯器。
 
   ::: moniker range=">=vs-2019"
