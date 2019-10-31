@@ -1,5 +1,5 @@
 ---
-title: 步驟 2：建立您的第一個 ASP.NET Core Web 應用程式
+title: 步驟2：建立您的第一個 ASP.NET Core Web 應用程式
 description: 使用此影片教學課程和逐步指示，建立您的第一個 ASP.NET Core Web 應用程式。
 ms.custom: get-started
 ms.date: 03/31/2019
@@ -16,14 +16,14 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 740d6336ab4258d3111dd6708de859108e22365e
-ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
-ms.translationtype: HT
+ms.openlocfilehash: 21959c4a0cc2b961eca43ab9724369c7aea8444b
+ms.sourcegitcommit: ab18c9d850192fc9ccec10961f1126e8b0cba8da
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66402060"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73061119"
 ---
-# <a name="step-2-create-your-first-aspnet-core-web-app"></a>步驟 2：建立您的第一個 ASP.NET Core Web 應用程式
+# <a name="step-2-create-your-first-aspnet-core-web-app"></a>步驟2：建立您的第一個 ASP.NET Core web 應用程式
 
 使用此影片教學課程和逐步指示，建立您的第一個 ASP.NET Core Web 應用程式。
 
@@ -33,9 +33,12 @@ _觀看此影片並跟著操作，建立您的第一個 ASP.NET Core 應用程�
 
 ## <a name="start-visual-studio-2019-and-create-a-new-project"></a>啟動 Visual Studio 2019 並建立新專案
 
-啟動 Visual Studio 2019 並按一下 [建立新專案]  。 選擇 [ASP.NET Core Web 應用程式]  。 選擇 [Web 應用程式]  範本，保留預設的專案名稱和位置。 按一下 [建立]  。 如需詳細指示，請參閱[本教學課程系列的上一段影片](tutorial-aspnet-core-ef-step-01.md)。
+啟動 Visual Studio 2019 並按一下 [建立新專案]。 選擇 [ASP.NET Core Web 應用程式]。 選擇 [Web 應用程式] 範本，保留預設的專案名稱和位置。 在具有 ASP.NET Core 版本的下拉式清單中，選擇 [ **ASP.NET Core 2.1** ] 或 [ **ASP.NET Core 2.2**]。 按一下 [建立]。 如需詳細指示，請參閱[本教學課程系列的上一段影片](tutorial-aspnet-core-ef-step-01.md)。
 
 ![Visual Studio 2019 選擇 ASP.NET Core 專案選項](media/vs-2019/vs2019-choose-aspnetcore-project.png)
+
+> [!WARNING]
+> 請確定您選擇的是 ASP .NET Core 2.1 或 ASP.NET Core 2.2。 本教學課程與 ASP.NET Core 3.x 不相容。
 
 ## <a name="explore-the-new-project"></a>探索新專案
 
@@ -61,7 +64,7 @@ _觀看此影片並跟著操作，建立您的第一個 ASP.NET Core 應用程�
 
 ### <a name="startupcs"></a>Startup.cs
 
-在 *Program.cs* 中建立的 Web 主機會參考啟動類別，並呼叫其方法以設定應用程式。 ConfigureServices 方法負責設定應用程式要使用的任何服務。 `Configure` 方法會設定應用程式的 HTTP 要求管線。 每個要求都會經由此管線，在如此做時與「中介軟體」  的每個片段互動。
+在 *Program.cs* 中建立的 Web 主機會參考啟動類別，並呼叫其方法以設定應用程式。 ConfigureServices 方法負責設定應用程式要使用的任何服務。 `Configure` 方法會設定應用程式的 HTTP 要求管線。 每個要求都會經由此管線，在如此做時與「中介軟體」的每個片段互動。
 
 ### <a name="indexcshtml"></a>Index.cshtml
 
@@ -69,7 +72,7 @@ _觀看此影片並跟著操作，建立您的第一個 ASP.NET Core 應用程�
 
 ## <a name="run-the-application"></a>執行應用程式
 
-現在執行應用程式，並在瀏覽器中檢視它。 您可以使用 **Ctrl**+**F5**，或從 Visual Studio 的功能表選擇 [偵錯]   > [啟動但不偵錯]  來執行應用程式。
+現在執行應用程式，並在瀏覽器中檢視它。 您可以使用 **Ctrl**+**F5**，或從 Visual Studio 的功能表選擇 [偵錯] > [啟動但不偵錯] 來執行應用程式。
 
 ## <a name="customize-the-application"></a>自訂應用程式
 
@@ -113,7 +116,7 @@ public void OnGet()
 當您瀏覽至應用程式時，現在應會看到瀏覽器中實際的伺服器時間。
 
 > [!NOTE]
-> 您的輸出可能會與圖片不同，因為 ToShortDateTimeString 的輸出格式取決於目前的文化特性設定。 請參閱 <xref:System.DateTime.ToShortTimeString>。
+> 您的輸出可能會與圖片不同，因為 ToShortDateTimeString 的輸出格式取決於目前的文化特性設定。 請參閱<xref:System.DateTime.ToShortTimeString>.
 
 ![瀏覽器中的 Visual Studio 2019 ASP.NET Core 專案](media/vs-2019/vs2019-app-fixed-in-browser.png)
 
@@ -121,8 +124,8 @@ public void OnGet()
 
 在下段影片中，您會了解如何將資料支援新增至您的應用程式。
 
-[教學課程：使用您 ASP.NET Core 應用程式中的資料](tutorial-aspnet-core-ef-step-03.md)
+[教學課程：使用 ASP.NET Core 應用程式中的資料](tutorial-aspnet-core-ef-step-03.md)
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
-- [教學課程：使用 ASP.NET Core 建立 Razor 頁面 Web 應用程式](/aspnet/core/tutorials/razor-pages/?view=aspnetcore-2.1)
+- [教學課程：使用 ASP.NET Core 建立 Razor Pages web 應用程式](/aspnet/core/tutorials/razor-pages/?view=aspnetcore-2.1)

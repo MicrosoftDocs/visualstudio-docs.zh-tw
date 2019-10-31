@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/29/2019
 ms.topic: conceptual
 description: 了解如何啟用 Visual Studio 訂用帳戶所包含的技術支援權益。
-ms.openlocfilehash: 6474cf3322b878055053eaaf1f1943ebc546b206
-ms.sourcegitcommit: 02acadb912faced7eaffe27c2c19104bf0428bcd
+ms.openlocfilehash: 6d76fa3bdff63a31598fb9a977f6ed024d214af1
+ms.sourcegitcommit: ab18c9d850192fc9ccec10961f1126e8b0cba8da
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70936897"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73061150"
 ---
 # <a name="activate-and-use-the-technical-support-benefit-in-visual-studio-subscriptions"></a>啟用並使用 Visual Studio 訂用帳戶中的技術支援權益
 如果產品仍在[支援生命週期](https://support.microsoft.com/lifecycle/search)的主要支援階段中，Visual Studio 訂用帳戶技術支援權益可為其解決**非生產環境**中的協助修正問題。 自權益啟用的 1 年內，Visual Studio Enterprise 標準和年度雲端訂用帳戶可接收四個事件，而 Visual Studio Professional 標準和年度雲端訂用帳戶可接收兩個事件。 您必須在訂用帳戶為最新狀態時啟用權益。
@@ -22,14 +22,14 @@ ms.locfileid: "70936897"
 > [!NOTE]
 > 指定層級的訂用帳戶不一定全部符合接收支援事件的資格。 透過 FTE、NFR、MPN、MCT 和其他方案取得的訂用帳戶無法接收支援事件。 如果您的訂用帳戶不符合接收技術支援事件的資格，[技術支援] 磚將不會出現在您的可用權益中。
 
-**您必須先啟用權益，才能使用權益來提交支援要求。請遵循下一節的步驟來完成啟用。**
+**若要使用權益提交支援要求，您必須先將它啟用。 請遵循下一節中的步驟，以完成啟用。**
 
 ## <a name="supported-products"></a>支援的產品 
 Visual Studio IDE 和 Azure DevOps Server 等開發人員工具將透過 Visual Studio 訂用帳戶獲得主流和延伸支援。
 
 從 Visual Studio 訂用帳戶下載的非開發人員產品（例如 SQL、Windows、SharePoint）僅符合主流支援的資格。 這些產品僅授權供開發環境用來設計、開發、測試或展示應用程式。 這些產品不會授權用於生產環境。
 
-產品層級描述-如果您看到支援方案無法用於指定產品上的支援，請展開 [無法使用]**支援方案**（代碼：8）。 您的支援合約無法用於您所選取的產品版本。
+產品層級描述：展開**無法使用的支援方案**。 如果您看到 **[支援方案] 無法用於指定產品的支援（代碼：8）** ，則您的支援合約無法用於您所選取的產品版本。
 
 ## <a name="how-to-activate-the-benefit"></a>如何啟用權益
 1. 前往 https://my.visualstudio.com/Benefits ，向下捲動至 [支援] 區段，然後在 [技術支援] 磚上，按一下 [Chat to activate] \(聊天啟用\)。
@@ -82,7 +82,7 @@ Visual Studio IDE 和 Azure DevOps Server 等開發人員工具將透過 Visual 
    > [!div class="mx-imgBorder"]
    > ![技術支援權益事件提交 - 新增合約](_img/vs-tech-support/vs-tech-support-add-contract.png)
 
-4. 輸入您的**存取識別碼**和**合約識別碼**。  按一下 [新增]。
+4. 輸入您的**存取識別碼**和**合約識別碼**。  按一下 [加入]。
 
    > [!div class="mx-imgBorder"]
    > ![技術支援權益事件提交 - 新增合約識別碼](_img/vs-tech-support/vs-tech-support-add-contract-id.png)
@@ -111,15 +111,15 @@ Visual Studio IDE 和 Azure DevOps Server 等開發人員工具將透過 Visual 
 
 | 訂用帳戶層級                                                 |     通道                                            | 優勢                                                          | 可續約？    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (Standard)   | VL, Azure, 零售, 選取的 NFR<sup>1</sup> | 4 個事件       |  是|
-| Visual Studio Professional (Standard) | VL、Azure、零售、挑選過的 NFR<sup>2</sup>                                        | 2 個事件                                                          |是         |
-| Visual Studio Test Professional (標準訂用帳戶)                         | VL, 零售                                              | 2 個事件                                             |  是         |
-| MSDN 平台 (標準)                                          | VL, 零售                                              | 2 個事件                                               | 是         |
+| Visual Studio Enterprise (Standard)   | VL, Azure, 零售, 選取的 NFR<sup>1</sup> | 4 個事件       |  [是]|
+| Visual Studio Professional (Standard) | VL、Azure、零售、挑選過的 NFR<sup>2</sup>                                        | 2 個事件                                                          |[是]         |
+| Visual Studio Test Professional (標準訂用帳戶)                         | VL, 零售                                              | 2 個事件                                             |  [是]         |
+| MSDN 平台 (標準)                                          | VL, 零售                                              | 2 個事件                                               | [是]         |
 | Visual Studio Enterprise、Visual Studio Professional (每月雲端) | Azure                                       | 無法使用                                                           |NA|
 ||
 
-<sup>1</sup> *包含：Imagine Premium，BizSpark。排除：禁止轉售 (NFR)、Visual Studio 產業夥伴 (VSIP)、Microsoft 合作夥伴網路 (MPN)、FTE、MCT 軟體與服務開發人員、Imagine 標準版、最有價值專家 (MVP)、區域經理 (RD)、MCT 軟體與服務。*
+<sup>1</sup> *包括：想像 Premium、BizSpark。排除：禁止轉售（NFR）、Visual Studio 產業夥伴（VSIP）、Microsoft 合作夥伴網路（MPN）、FTE、MCT Software & 服務開發人員、想像標準、最有價值專家（MVP）、區域主管（RD）、MCT Software & 服務。*
 
-<sup>2</sup> *包含：Imagine Standard。*
+<sup>2</sup> *包括：Imagine Standard。*
 
 不確定您使用哪一個訂用帳戶？  連線到 [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) 以查看指派給您的電子郵件地址的所有訂用帳戶。 若沒有看到您的所有訂用帳戶，可能有一或多個訂用帳戶是指派到不同的電子郵件地址。  您必須以該電子郵件地址登入才能查看對應的訂用帳戶。
