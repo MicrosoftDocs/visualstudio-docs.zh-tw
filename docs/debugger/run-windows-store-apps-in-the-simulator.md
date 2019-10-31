@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: ae0b559f4684fd4fd8b9eabff4b46b1defb5ef1f
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
-ms.translationtype: MT
+ms.openlocfilehash: 5e187299d3514b32d548f032382fc6ba7f1792b4
+ms.sourcegitcommit: bdccab4c2dbd50ea8adaaf88c69c9ca32db88099
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72911331"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73144729"
 ---
 # <a name="run-uwp-apps-in-the-simulator"></a>在模擬器中執行 UWP 應用程式
 
@@ -143,7 +143,9 @@ UWP 應用程式的 Visual Studio 模擬器不會在本機電腦的隔離環境�
 
 [網路資訊範例](https://code.msdn.microsoft.com/windowsapps/Network-Information-Sample-63aaa201)
 
+::: moniker range="vs-2017"
 [分析能源利用](../profiling/analyze-energy-use-in-store-apps.md)
+::: moniker-end
 
 [Windows.Networking.Connectivity](/uwp/api/windows.networking.connectivity)
 

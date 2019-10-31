@@ -13,12 +13,13 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 1259f92b89fc6d83bb0b7296cc07844bf25df705
-ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
+monikerRange: vs-2017
+ms.openlocfilehash: 0fc78a84d0c2f86e8db6c4703cc7404a32508d72
+ms.sourcegitcommit: bdccab4c2dbd50ea8adaaf88c69c9ca32db88099
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71128326"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73144741"
 ---
 # <a name="analyze-energy-use-in-uwp-apps"></a>分析 UWP App 中的能源耗用量
 
@@ -90,7 +91,7 @@ if (performance && performance.mark) {
 
 1. 在 [偵錯] 功能表上，選擇 [啟動診斷但不偵錯]。
 
-     ![選擇診斷中樞內的 [能源消耗]](../profiling/media/energyprof_diagnosticshub.png "ENERGYPROF_DiagnosticsHub")
+     ![選擇診斷中樞的能源耗用量](../profiling/media/energyprof_diagnosticshub.png "ENERGYPROF_DiagnosticsHub")
 
 2. 選擇 [ **能源消耗** ]，然後選擇 [ **開始**]。
 
@@ -125,12 +126,12 @@ if (performance && performance.mark) {
 
 |||
 |-|-|
-|![步驟 1](../profiling/media/procguid_1.png "ProcGuid_1")|報告檔的名稱為 Report*YYYYMMDD-HHMM*.diagsession。 如果您決定儲存報告，可以變更名稱。|
-|![步驟 2](../profiling/media/procguid_2.png "ProcGuid_2")|時間軸會顯示程式碼剖析工作階段的長度、應用程式週期啟用事件，以及使用者標記。|
-|![步驟 3](../profiling/media/procguid_3.png "ProcGuid_3")|您可以拖曳藍色巡覽列，選取時間軸的區域，將報告限制在時間軸的一部分。|
-|![步驟 4](../profiling/media/procguid_4.png "ProcGuid_4")|[ **用電量** ] 圖形是多行折線圖，顯示程式碼剖析工作階段期間由裝置資源造成的電源輸出變更。 能源消耗分析工具會追蹤 CPU、網路活動和螢幕顯示器使用的電源。|
-|![步驟 5](../profiling/media/procguid_6.png "ProcGuid_6")|[ **資源 (開啟/關閉)**  ] 圖形提供網路能源成本的詳細資料。 [ **網路** ] 橫條圖表示網路連接開啟的時間。 [ **資料傳輸** ] 子橫條圖是應用程式透過網路接收或傳送資料的時間。|
-|![步驟 6](../profiling/media/procguid_6a.png "ProcGuid_6a")|[ **用電量摘要** ] 會顯示所選時間軸中 CPU、網路活動和螢幕顯示器使用的能源總計比例。|
+|![步驟1](../profiling/media/procguid_1.png "ProcGuid_1")|報告檔的名稱為 Report*YYYYMMDD-HHMM*.diagsession。 如果您決定儲存報告，可以變更名稱。|
+|![步驟2](../profiling/media/procguid_2.png "ProcGuid_2")|時間軸會顯示程式碼剖析工作階段的長度、應用程式週期啟用事件，以及使用者標記。|
+|![步驟3](../profiling/media/procguid_3.png "ProcGuid_3")|您可以拖曳藍色巡覽列，選取時間軸的區域，將報告限制在時間軸的一部分。|
+|![步驟4](../profiling/media/procguid_4.png "ProcGuid_4")|[ **用電量** ] 圖形是多行折線圖，顯示程式碼剖析工作階段期間由裝置資源造成的電源輸出變更。 能源消耗分析工具會追蹤 CPU、網路活動和螢幕顯示器使用的電源。|
+|![步驟5](../profiling/media/procguid_6.png "ProcGuid_6")|[ **資源 (開啟/關閉)**  ] 圖形提供網路能源成本的詳細資料。 [ **網路** ] 橫條圖表示網路連接開啟的時間。 [ **資料傳輸** ] 子橫條圖是應用程式透過網路接收或傳送資料的時間。|
+|![步驟6](../profiling/media/procguid_6a.png "ProcGuid_6a")|[ **用電量摘要** ] 會顯示所選時間軸中 CPU、網路活動和螢幕顯示器使用的能源總計比例。|
 
  **若要分析能源分析資料**
 
@@ -139,7 +140,7 @@ if (performance && performance.mark) {
 ## <a name="optimize-energy-use"></a>最佳化能源利用
  除了傳輸資料之外，網路連線初始化、維護及關閉連線都會產生能源成本。 某些網路在資料已傳送或接收後仍然保持連線一段時間，以便讓更多資料透過單一連線傳輸。 您可以使用 [ **資源 (開啟/關閉)** ] 窗格檢查應用程式與連接互動的方式。
 
- ![資源 &#40;開&#47;關&#41; 窗格](../profiling/media/energyprof_resources.png "ENERGYPROF_Resources")
+ ![關閉&#40; &#41;窗格&#47;上的資源](../profiling/media/energyprof_resources.png "ENERGYPROF_Resources")
 
  如果 [ **網路** ] 和 [ **資料傳輸** ] 橫條圖顯示長時間開啟連接，間歇地傳送一系列的小型資料封包，您可以批次處理資料，使其在單一傳輸中傳送，減少開啟網路的時間，因此節省能源成本。
 
@@ -155,7 +156,7 @@ if (performance && performance.mark) {
 
 - [CPU 使用量] 工具可以協助您降低因無效率函式所造成的 CPU 負載。 請參閱[分析 CPU 使用量](../profiling/beginners-guide-to-performance-profiling.md)。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [Visual Studio 中的分析](../profiling/index.yml)
 - [初步認識分析工具](../profiling/profiling-feature-tour.md)
