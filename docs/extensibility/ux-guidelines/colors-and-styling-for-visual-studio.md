@@ -8,12 +8,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ac04f7ef5d7ad445bec470b3d019418a3bec1f7b
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 4ceea00a3fa77a9c1106f24f28ac1d5890437b41
+ms.sourcegitcommit: 97623fd6190c43fed0d2ee7af92b01c375282622
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73188891"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73568959"
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>Visual Studio 的色彩和樣式
 
@@ -269,7 +269,7 @@ protected override void Dispose(bool disposing)
 
 ## <a name="BKMK_ChoosingHighContrastColors"></a>選擇高對比色彩
 
-### <a name="overview"></a>總覽
+### <a name="overview"></a>概觀
 
 Windows 使用數種高對比的系統層級主題，可增加文字、背景和影像的色彩對比，讓元素在螢幕上出現更相異的外觀。 基於協助工具的原因，當使用者切換至高對比主題時，Visual Studio 介面元素必須正確回應。
 
@@ -307,7 +307,7 @@ Windows 使用數種高對比的系統層級主題，可增加文字、背景和
 
 許多常用的 UI 元素已經定義高對比色彩。 當您選擇自己的系統色彩名稱時，可以參考這些使用模式，讓您的 UI 元素與類似的元件一致。
 
-| 系統色彩 | 使用量 |
+| 系統色彩 | 使用方式 |
 | --- | --- |
 | ActiveCaption | -使用中 IDE 和 rafted 視窗按鈕在滑鼠停留時顯示圖示<br />-IDE 和 rafted 視窗的標題列背景<br />-預設狀態列背景 |
 | ActiveCaptionText | -作用中 IDE 和標題列前景的 rafted 視窗（文字和圖像）<br />-停留並按下使用中視窗按鈕的背景和框線 |
@@ -332,7 +332,7 @@ Windows 使用數種高對比的系統層級主題，可增加文字、背景和
 
 ## <a name="BKMK_ExposingColorsForEndUsers"></a>公開終端使用者的色彩
 
-### <a name="overview"></a>總覽
+### <a name="overview"></a>概觀
 
 有時候，您會想要允許使用者自訂您的 UI，例如當您建立程式碼編輯器或設計介面時。 最常見的做法是使用 [工具] &gt; [**選項**] 對話方塊。 除非您有需要特殊控制項的高度特製化 UI，否則呈現自訂最簡單的方式是透過對話方塊的 [**環境**] 區段中的 [字型**和色彩**] 頁面。 針對您針對自訂所公開的每個元素，使用者可以選擇變更前景色彩、背景色彩或兩者。
 
@@ -340,7 +340,7 @@ Windows 使用數種高對比的系統層級主題，可增加文字、背景和
 
 VSPackage 可以透過自訂類別控制字型和色彩，以及在 [字型和色彩] 屬性頁上顯示專案。 使用這種機制時，Vspackage 必須執行[IVsFontAndColorDefaultsProvider](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolordefaultsprovider)介面和其相關聯的介面。
 
-就原則而言，這項機制可以用來修改所有現有的顯示專案和包含它們的類別。 不過，它不應該用來修改文字編輯器分類或其顯示專案。 如需文字編輯器分類的詳細資訊，請參閱[字型和色彩總覽](../font-and-color-overview.md)。
+就原則而言，這項機制可以用來修改所有現有的顯示專案和包含它們的類別。 不過，它不應該用來修改文字編輯器分類或其顯示專案。 如需文字編輯器分類的詳細資訊，請參閱[字型和色彩總覽](/visualstudio/extensibility/font-and-color-overview?view=vs-2015)。
 
 若要執行自訂類別或顯示專案，VSPackage 必須：
 
@@ -358,10 +358,10 @@ VSPackage 可以透過自訂類別控制字型和色彩，以及在 [字型和�
 
 在登錄中填入兩個值：
 
-| [屬性] | 輸入 | 資料 | 描述 |
+| 名稱 | 類型 | 資料 | 說明 |
 | --- | --- | --- | --- |
-| Category | REG_SZ | GUID | 建立用來識別類別目錄的 GUID |
-| 封裝 | REG_SZ | GUID | 支援類別目錄之 VSPackage 服務的 GUID |
+| 分類 | REG_SZ | GUID | 建立用來識別類別目錄的 GUID |
+| Package | REG_SZ | GUID | 支援類別目錄之 VSPackage 服務的 GUID |
 
  登錄中指定的服務必須為對應的分類提供[IVsFontAndColorDefaults](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolordefaults)的執行。
 
@@ -371,10 +371,10 @@ VSPackage 可以透過自訂類別控制字型和色彩，以及在 [字型和�
 
 在登錄中填入兩個值：
 
-| [屬性] | 輸入 | 資料 | 描述 |
+| 名稱 | 類型 | 資料 | 說明 |
 |--- | --- | --- | --- |
-| Category | REG_SZ | GUID | 建立用來識別類別目錄的 GUID |
-| 封裝 | REG_SZ | GUID | 支援類別目錄之 VSPackage 服務的 GUID |
+| 分類 | REG_SZ | GUID | 建立用來識別類別目錄的 GUID |
+| Package | REG_SZ | GUID | 支援類別目錄之 VSPackage 服務的 GUID |
 
 登錄中指定的服務必須為對應的群組提供 <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup> 的執行。
 
