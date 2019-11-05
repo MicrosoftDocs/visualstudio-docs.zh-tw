@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8467463b5a97c5bf7de1c3864ee6a5e5fc4681d1
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: b833d8b68af418b727861226df41c700d582805e
+ms.sourcegitcommit: d55438841123aad56a524a65332a86ad67af386b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73188106"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73599285"
 ---
 # <a name="find-your-debugging-task-in-visual-studio"></a>在 Visual Studio 中尋找您的偵錯工具工作
 
@@ -102,6 +102,10 @@ ms.locfileid: "73188106"
 若要設定偵錯工具選項和偵錯工具專案設定，請參閱[偵錯工具設定和準備](debugger-settings-and-preparation.md)。
 
 ## <a name="additional-tasks"></a>其他工作
+
+### <a name="fix-an-exception"></a>修正例外狀況
+
+請參閱[修正例外](write-better-code-with-visual-studio.md#fix-an-exception)狀況。
 
 ### <a name="edit-code-during-a-debugging-session"></a>在偵錯工具期間編輯程式碼
 

@@ -10,12 +10,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 94c30279683a6d367ede31c00133e6fbf8c293e5
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 2aa8779a069f4b001743326470f69f3cb35a8c10
+ms.sourcegitcommit: 97623fd6190c43fed0d2ee7af92b01c375282622
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73186766"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73568883"
 ---
 # <a name="document-data-and-document-view-in-custom-editors"></a>自訂編輯器中的檔資料和檔視圖
 自訂編輯器是由兩個部分組成：檔資料物件和檔視圖物件。 顧名思義，檔資料物件代表要顯示的文字資料。 同樣地，document view 物件（或 "view"）代表要在其中顯示檔資料物件的一個或多個視窗。
@@ -34,7 +34,7 @@ ms.locfileid: "73186766"
 
  藉由比對執行中檔資料表中每個專案的專案識別碼（ItemID），IDE 會通知有關事件的查看（例如，當包含檔的方案關閉時）。 如需這種情況的詳細資訊，請參閱執行[檔資料表](../extensibility/internals/running-document-table.md)。
 
- 有兩個選項可供您建立自訂編輯器的視圖。 其中一個是就地啟用模型，其中的 view 會使用 ActiveX 控制項或檔資料物件裝載在視窗中。 第二個是簡化的內嵌模型，其中的 view 是由 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 裝載，而 <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane> 則是實作為處理視窗命令。 如需就地啟用模型的詳細資訊，請參閱就地[啟用](../extensibility/in-place-activation.md)。 如需簡化的內嵌模型的詳細資訊，請參閱[簡化](../extensibility/simplified-embedding.md)的內嵌。
+ 有兩個選項可供您建立自訂編輯器的視圖。 其中一個是就地啟用模型，其中的 view 會使用 ActiveX 控制項或檔資料物件裝載在視窗中。 第二個是簡化的內嵌模型，其中的 view 是由 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 裝載，而 <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane> 則是實作為處理視窗命令。 如需就地啟用模型的詳細資訊，請參閱就地[啟用](/visualstudio/misc/in-place-activation?view=vs-2015)。 如需簡化的內嵌模型的詳細資訊，請參閱[簡化](../extensibility/simplified-embedding.md)的內嵌。
 
 ## <a name="see-also"></a>請參閱
 
