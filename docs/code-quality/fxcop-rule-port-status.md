@@ -10,12 +10,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 571ba2a0c015d6d3a3c8757c25a0058d8e3ad8e1
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: a33286ffb678bf37cf684bb603d81ec8091e7405
+ms.sourcegitcommit: 97623fd6190c43fed0d2ee7af92b01c375282622
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73188809"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73568822"
 ---
 # <a name="fxcop-rule-port-status"></a>Fxcop 規則埠狀態
 
@@ -67,8 +67,8 @@ Roslyn 分析器存放庫中自動產生的[檔頁面](https://github.com/dotnet
 [CA1063 必須](ca1063-implement-idisposable-correctly.md) | 正確地執行 IDisposable
 [CA1064](ca1064-exceptions-should-be-public.md) | 例外狀況必須是公用
 [CA1065](ca1065-do-not-raise-exceptions-in-unexpected-locations.md) | 不要在非預期的位置中引發例外狀況
-CA1066 | 類型 {0} 應該 \<T > 執行 IEquatable，因為它會覆寫 Equals
-CA1067 | 執行 IEquatable \<T 時覆寫物件. Equals （物件） >
+CA1066 | 類型 {0} 應該\<T > 執行 IEquatable，因為它會覆寫 Equals
+CA1067 | 執行 IEquatable\<T 時覆寫物件. Equals （物件） >
 [CA1068](ca1068.md) | CancellationToken 參數必須位於最後
 CA1200 | 請避免使用具有前置詞的 cref 標記
 [CA1303](ca1303-do-not-pass-literals-as-localized-parameters.md) | 不要將常值當作已當地語系化的參數傳遞
@@ -286,7 +286,7 @@ CA9999 | 分析器版本不符
 - [CA1406](ca1406-avoid-int64-arguments-for-visual-basic-6-clients.md)
 - [CA1504 必須](ca1504-review-misleading-field-names.md)
 - [CA1701](ca1701-resource-string-compound-words-should-be-cased-correctly.md)
-- [CA1702](ca1702-compound-words-should-be-cased-correctly.md)
+- [CA1702](ca1702.md)
 - [CA1703](ca1703.md)
 - [CA1800](ca1800.md)
 - [CA1809](ca1809.md)
@@ -344,6 +344,6 @@ CA9999 | 分析器版本不符
 - [CA2233 運算](ca2233.md)
 - [CA5122 P-INVOKE](ca5122.md)
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [CodeAnalysis. FxCopAnalyzers 規則](https://github.com/dotnet/roslyn-analyzers/blob/master/src/Microsoft.CodeAnalysis.FxCopAnalyzers/Microsoft.CodeAnalysis.FxCopAnalyzers.md)

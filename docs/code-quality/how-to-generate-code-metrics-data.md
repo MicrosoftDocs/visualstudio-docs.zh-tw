@@ -11,12 +11,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 37f208421079f77cadaf85556e00a8f8548c6182
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 55f9904c95be45c7f293355340c814faafb5de2b
+ms.sourcegitcommit: 97623fd6190c43fed0d2ee7af92b01c375282622
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73188800"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73568847"
 ---
 # <a name="how-to-generate-code-metrics-data"></a>如何：產生程式碼度量資料
 
@@ -35,7 +35,7 @@ ms.locfileid: "73188800"
 - [CA1501](ca1501-avoid-excessive-inheritance.md)
 - [CA1502](ca1502.md)
 - [CA1505](ca1505-avoid-unmaintainable-code.md)
-- [CA1506](ca1506-avoid-excessive-class-coupling.md)
+- [CA1506](ca1506.md)
 
 這些規則預設為停用，但您可以從[**方案總管**](use-roslyn-analyzers.md#set-rule-severity-from-solution-explorer)或在[規則集](using-rule-sets-to-group-code-analysis-rules.md)檔案中啟用它們。 例如，若要啟用規則 CA1502 做為警告，則您的規則集檔案會包含下列專案：
 
@@ -48,7 +48,7 @@ ms.locfileid: "73188800"
 </RuleSet>
 ```
 
-### <a name="configuration"></a>Configuration
+### <a name="configuration"></a>組態
 
 您可以設定 FxCop 分析器封裝中的程式碼計量規則引發的臨界值。
 
@@ -62,7 +62,7 @@ ms.locfileid: "73188800"
 
    在此範例中，規則[CA1502](ca1502.md)設定為在方法的圈複雜度大於10時引發。
 
-3. 在 Visual Studio 的 [**屬性**] 視窗中，或在專案檔中，將設定檔的 [建立] 動作標記為[**AdditionalFiles**](../ide/build-actions.md#build-action-values)。 例如:
+3. 在 Visual Studio 的 [**屬性**] 視窗中，或在專案檔中，將設定檔的 [建立] 動作標記為[**AdditionalFiles**](../ide/build-actions.md#build-action-values)。 例如：
 
    ```xml
    <ItemGroup>
@@ -111,7 +111,7 @@ ms.locfileid: "73188800"
 
 ### <a name="microsoftcodeanalysismetrics-nuget-package"></a>CodeAnalysis。計量 NuGet 套件
 
-從命令列產生程式碼計量資料的最簡單方式，就是安裝[CodeAnalysis](https://www.nuget.org/packages/Microsoft.CodeAnalysis.Metrics/) NuGet 套件。 安裝套件之後，請從包含您專案檔的目錄執行 `msbuild /t:Metrics`。 例如:
+從命令列產生程式碼計量資料的最簡單方式，就是安裝[CodeAnalysis](https://www.nuget.org/packages/Microsoft.CodeAnalysis.Metrics/) NuGet 套件。 安裝套件之後，請從包含您專案檔的目錄執行 `msbuild /t:Metrics`。 例如：
 
 ```shell
 C:\source\repos\ClassLibrary3\ClassLibrary3>msbuild /t:Metrics
@@ -134,7 +134,7 @@ Build succeeded.
     0 Error(s)
 ```
 
-您可以藉由指定 `/p:MetricsOutputFile=<filename>`來覆寫輸出檔名稱。 您也可以藉由指定 `/p:LEGACY_CODE_METRICS_MODE=true`，取得[舊版的程式](#previous-versions)代碼計量資料。 例如:
+您可以藉由指定 `/p:MetricsOutputFile=<filename>` 來覆寫輸出檔名稱。 您也可以藉由指定 `/p:LEGACY_CODE_METRICS_MODE=true`，取得[舊版的程式](#previous-versions)代碼計量資料。 例如：
 
 ```shell
 C:\source\repos\ClassLibrary3\ClassLibrary3>msbuild /t:Metrics /p:LEGACY_CODE_METRICS_MODE=true /p:MetricsOutputFile="Legacy.xml"
@@ -231,7 +231,7 @@ Build succeeded.
 
 #### <a name="metricsexe-usage"></a>計量 .exe 使用方式
 
-若要執行*sn.exe*，請提供專案或方案和輸出 XML 檔做為引數。 例如:
+若要執行*sn.exe*，請提供專案或方案和輸出 XML 檔做為引數。 例如：
 
 ```shell
 C:\>Metrics.exe /project:ConsoleApp20.csproj /out:report.xml
@@ -263,7 +263,7 @@ Visual Studio 2015 包含一個也稱為「*公制*」的命令列程式碼計�
 
 其他度量（例如 `CyclomaticComplexity` 和 `MaintainabilityIndex` 使用與先前的*公制*版本相同的公式，但新的工具會計算 `IOperations` （邏輯來源指示）的數目，而不是中繼語言（IL）指令。 數位會與 Visual Studio IDE 和舊版的*公制*所產生的數目稍有不同。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [使用程式碼度量結果視窗](../code-quality/working-with-code-metrics-data.md)
 - [程式碼度量值](../code-quality/code-metrics-values.md)

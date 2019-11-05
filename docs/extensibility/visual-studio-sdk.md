@@ -14,12 +14,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 662b64f69b278c4cc815a742c5cba26592e000bd
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 73c14c61702ec978d8ffec896b13204c238762a2
+ms.sourcegitcommit: 97623fd6190c43fed0d2ee7af92b01c375282622
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73189095"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73568828"
 ---
 # <a name="visual-studio-sdk"></a>Visual Studio SDK
 Visual Studio SDK 可協助您擴充 Visual Studio 功能，或將新功能整合至 Visual Studio。 您可以將擴充功能散發給其他使用者，以及 Visual Studio Marketplace。 下列是一些可擴充 Visual Studio 的方法：
@@ -73,11 +73,11 @@ Visual Studio SDK 可協助您擴充 Visual Studio 功能，或將新功能整�
 
 - [擴充 Visual Studio](https://blog.slaks.net/2013-10-18/extending-visual-studio-part-1-getting-started/)
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [使用功能表命令建立擴充功能](../extensibility/creating-an-extension-with-a-menu-command.md)
 - [如何：將擴充性專案遷移至 Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md)
-- [常見問題：將增益集轉換成 VSPackage 擴充功能](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md)
+- [常見問題：將增益集轉換成 VSPackage 擴充功能](/visualstudio/extensibility/faq-converting-add-ins-to-vspackage-extensions?view=vs-2015)
 - [在 managed 程式碼中管理多個執行緒](../extensibility/managing-multiple-threads-in-managed-code.md)
 - [擴充功能表和命令](../extensibility/extending-menus-and-commands.md)
 - [將命令新增至工具列](../extensibility/adding-commands-to-toolbars.md)
