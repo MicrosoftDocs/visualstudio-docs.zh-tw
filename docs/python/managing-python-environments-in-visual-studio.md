@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: a709c4b76f23529e0ffee7027bd1b6257ba00d84
-ms.sourcegitcommit: bb5425b9c6d8fd7135d9584c2963831754071347
+ms.openlocfilehash: 5e269e19a09aec157e38eaf8938b5995c2647803
+ms.sourcegitcommit: 77ef1dcc71057cd5fdc4733ff0cb6085bd6113e0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73024718"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73661948"
 ---
 # <a name="how-to-create-and-manage-python-environments-in-visual-studio"></a>如何在 Visual Studio 中建立及管理 Python 環境
 
@@ -124,7 +124,7 @@ Visual Studio 可以使用全域、虛擬和 Conda 環境。
 
 Visual Studio 對於建立專案的虛擬環境提供直接的支援。 例如，如果您開啟專案，其中包含 *requirements.txt*，或從包含該檔案的範本建立專案，Visual Studio 會提示您自動建立虛擬環境並安裝這些相依性。
 
-在開啟的專案內，您可以隨時建立新的虛擬環境。 在 [方案總管] 中，展開專案節點、以滑鼠右鍵按一下 [Python 環境]，然後選取 [新增虛擬環境]。 如需詳細資訊，請參閱[建立虛擬環境](selecting-a-python-environment-for-a-project.md#create-a-virtual-environment-1)。
+在開啟的專案內，您可以隨時建立新的虛擬環境。 在 [方案總管] 中，展開專案節點、以滑鼠右鍵按一下 [Python 環境]，然後選取 [新增虛擬環境]。 如需詳細資訊，請參閱[建立虛擬環境](/visualstudio/python/selecting-a-python-environment-for-a-project?view=vs-2019#create-a-virtual-environment-1)。
 
 Visual Studio 提供的命令也可從虛擬環境產生 *requirements.txt* 檔案，方便您在其他電腦上重新建立環境。 如需詳細資訊，請參閱[使用虛擬環境](selecting-a-python-environment-for-a-project.md#use-virtual-environments)。
 

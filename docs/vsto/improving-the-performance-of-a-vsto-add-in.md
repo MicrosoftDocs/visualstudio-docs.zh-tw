@@ -10,12 +10,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 564672e01eeffbdcb53bf1af08f329d2f6bf218f
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: dd7b8f7b88040c7b80dcc6c40dc168a51890d8d2
+ms.sourcegitcommit: 77ef1dcc71057cd5fdc4733ff0cb6085bd6113e0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72985778"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73661844"
 ---
 # <a name="improve-the-performance-of-a-vsto-add-in"></a>改善 VSTO 增益集的效能
   最佳化您為 Office 應用程式建立的 VSTO 增益集，您可以提供使用者更好的體驗，讓他們快速地啟動、關閉、開啟項目及執行其他工作。 如果是 Outlook 適用的 VSTO 增益集，您還可以減少 VSTO 增益集因為效能不佳而停用的機率。 實作下列策略可以提升 VSTO 增益集的效能：
@@ -28,7 +28,7 @@ ms.locfileid: "72985778"
 
 - [在不同的執行緒中執行耗費資源的作業](#Perform)。
 
-  如需如何優化 Outlook VSTO 增益集的詳細資訊，請參閱[讓 VSTO 增益集保持啟用的效能準則](/previous-versions/office/jj228679(v=office.15)#ol15WhatsNew_AddinDisabling)。
+  如需如何優化 Outlook VSTO 增益集的詳細資訊，請參閱[讓 VSTO 增益集保持啟用的效能準則](/previous-versions/office/jj228679(v=office.15)#performance-criteria-for-keeping-add-ins-enabled)。
 
 ## <a name="Load"></a> 視需要載入 VSTO 增益集
  您可以設定只在下列情況下才載入 VSTO 增益集：

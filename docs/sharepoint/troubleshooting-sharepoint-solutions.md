@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 046f3bbca7b66d14e9b6a3eae96b613492292be0
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: fcb30056021a865d0b0e605de462ff72ced5a383
+ms.sourcegitcommit: 77ef1dcc71057cd5fdc4733ff0cb6085bd6113e0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73189195"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73661890"
 ---
 # <a name="troubleshoot-sharepoint-solutions"></a>SharePoint 方案疑難排解
   當您使用 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 偵錯工具來調試 SharePoint 方案時，可能會發生下列問題或警示。 如需詳細資訊，請參閱[偵錯工具 SharePoint 2007 工作流程解決方案](https://msdn.microsoft.com/3a5392f3-66f3-48be-956e-02de23fa6247)。
@@ -102,7 +102,7 @@ ms.locfileid: "73189195"
  無。
 
 ### <a name="resolution"></a>解決方式
- 發生這個問題的原因是 webtemp 網站定義設定檔的**Path**屬性值不正確，例如*webtemp_SiteDefinitionProject1。* 在 webtemp 檔案（位於**部署位置**底下）的 [**路徑**] 屬性中，將1033變更為適當的地區設定 [!INCLUDE[TLA2#tla_id](../sharepoint/includes/tla2sharptla-id-md.md)]。 例如，若要使用日文地區設定，請將值變更為1041。 如需詳細資訊，請參閱[Microsoft 指派的地區設定識別碼](/openspecs/windows_protocols/ms-lcid/a9eac961-e77d-41a6-90a5-ce1a8b0cdb9c)。
+ 發生此問題的原因是 webtemp 網站定義設定檔的**Path**屬性值不正確，例如*webtemp_SiteDefinitionProject1 .xml*。 在 webtemp 檔案（位於**部署位置**底下）的 [**路徑**] 屬性中，將1033變更為適當的地區設定 [!INCLUDE[TLA2#tla_id](../sharepoint/includes/tla2sharptla-id-md.md)]。 例如，若要使用日文地區設定，請將值變更為1041。 如需詳細資訊，請參閱[Microsoft 指派的地區設定識別碼](/openspecs/windows_protocols/ms-lcid/a9eac961-e77d-41a6-90a5-ce1a8b0cdb9c)。
 
 ## <a name="error-appears-when-a-workflow-project-is-deployed-on-a-clean-system"></a>在全新系統上部署工作流程專案時，出現錯誤
  如果您在乾淨系統上的 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 中部署工作流程專案，就會發生此問題。 乾淨系統為具有 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 和 SharePoint 全新安裝，但是沒有任何已部署工作流程專案的電腦。
@@ -172,16 +172,16 @@ ms.locfileid: "73189195"
 ### <a name="resolution"></a>解決方式
  若要解決此問題，請手動刪除模型，然後再次部署方案。  您可以使用下列其中一個工具來刪除模型：
 
-- SharePoint 2010 管理中心。 如需詳細資訊，請參閱 Microsoft TechNet 網站上的[BDC 模型管理](/previous-versions/office/sharepoint-server-2010/ee524073(v=office.14)#deleteamodel)。
+- SharePoint 2010 管理中心。 如需詳細資訊，請參閱 Microsoft TechNet 網站上的[BDC 模型管理](/previous-versions/office/sharepoint-server-2010/ee524073(v=office.14)#delete-a-bdc-model)。
 
-- Windows PowerShell 您可以在命令提示字元中輸入下列命令來刪除模型： **SPBusinessDataCatalogModel**。 如需詳細資訊，請參閱 Microsoft TechNet 網站上的[一般 Cmdlet （SharePoint Server 2010）](/powershell/module/sharepoint-server/&view=sharepoint-ps) 。
+- Windows PowerShell 您可以在命令提示字元中輸入下列命令來刪除模型： **SPBusinessDataCatalogModel**。 如需詳細資訊，請參閱 Microsoft TechNet 網站上的[一般 Cmdlet （SharePoint Server 2010）](/powershell/module/sharepoint-server) 。
 
 ## <a name="an-error-appears-when-you-try-to-view-a-visual-web-part-in-sharepoint"></a>當您嘗試在 SharePoint 中觀看視覺 web 元件時，出現錯誤
  當使用者控制項的**Path**屬性開頭不是 "CONTROLTEMPLATES\\" 字串時，就會發生這個問題。
 
 ### <a name="error-messages"></a>錯誤訊息
 
-- 檔案 '/_CONTROLTEMPLATES/ *\<專案名稱 >* / *\<Web 元件名稱 >* /\<*使用者控制項名稱 >* .ascx ' 不存在。
+- 檔案 '/_CONTROLTEMPLATES/ *\<專案名稱 >* / *\<Web 元件名稱*/\<*使用者控制項名稱 >* .ascx ' 不存在。
 
 - '/' 應用程式中發生伺服器錯誤。
 

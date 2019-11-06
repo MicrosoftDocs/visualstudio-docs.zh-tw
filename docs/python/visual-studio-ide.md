@@ -11,12 +11,12 @@ dev_langs:
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 91f80d648450447a6ba0e80f10e5c39764445cef
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 8b8b656aaefe4440e811378da2b84d1b944d4fb1
+ms.sourcegitcommit: 77ef1dcc71057cd5fdc4733ff0cb6085bd6113e0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73189316"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73661924"
 ---
 # <a name="welcome-to-the-visual-studio-ide--python"></a>歡迎使用 Visual Studio IDE | Python
 
@@ -94,7 +94,7 @@ Visual Studio 的某些熱門功能可在您開發軟體時協助您提高生產
     從 Visual Studio 2019 開始，您可以開啟包含 Python 程式碼的資料夾，享受像 IntelliSense 這樣的功能，而且不需要為程式碼建立 Visual Studio 專案就能偵錯。
 ::: moniker-end
 
-- [使用 Visual Studio 共同作業](/visualstudio/liveshare/use/vs)
+- [使用 Visual Studio 共同作業](/visualstudio/liveshare/)
   
     Visual Studio Live Share 可讓您即時與其他人以共同作業方式編輯和偵錯，不論您使用的程式設計語言或建置的應用程式類型為何。 
 

@@ -17,12 +17,12 @@ manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d917f0211a0888fa2a712b0c010cf6177823c223
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 08501d71400a0df139022f04e68573d0dd1449d1
+ms.sourcegitcommit: 77ef1dcc71057cd5fdc4733ff0cb6085bd6113e0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62430955"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73661913"
 ---
 # <a name="options-for-python-in-visual-studio"></a>Visual Studio 中 Python 的選項
 
@@ -44,14 +44,14 @@ ms.locfileid: "62430955"
 
 ([工具] > [選項] > [Python] 索引標籤。)
 
-| 選項 | 預設 | 說明 |
+| 選項 | Default | 描述 |
 | --- | --- | --- |
 | **建立虛擬環境時顯示輸出視窗**| 開啟 | 清除即可防止 [輸出] 視窗出現。 |
 | **安裝或移除套件時顯示輸出視窗** | 開啟 | 清除即可防止 [輸出] 視窗出現。 |
 | **顯示建立環境的通知列** | 開啟 | *僅限 Visual Studio 2019。* 當設定這個選項且使用者開啟包含 *requirements.txt* 或 *environment.yml* 檔案的專案時，Visual Studio 會顯示資訊列，其中包含個別建立虛擬環境或 conda 環境，而不是使用預設全域環境的建議。 |
 | **顯示安裝套件的通知列** | 開啟 | *僅限 Visual Studio 2019。* 當設定這個選項且使用者開啟包含 *requirements.txt* 檔案的專案 (且沒有使用預設全域環境) 時，Visual Studio 會比較那些需求與目前環境中已安裝的套件。 如果遺失任何套件，Visual Studio 會顯示安裝那些相依項目的提示。 |
 | **一律以系統管理員身分執行套件管理員** | Off | 一律提高所有環境的 `pip install` 和類似套件管理員作業的權限。 安裝套件時，如果環境位在檔案系統的受保護區域 (例如 *c:\Program Files*)，則 Visual Studio 會提示需要系統管理員權限。 您可以在該提示中選擇一律只針對該環境提高安裝命令的權限。 請參閱[套件索引標籤](python-environments-window-tab-reference.md#packages-tab)。 |
-| **第一次使用時自動產生完成 DB** | 開啟 | 適用於 Visual Studio 2017 15.5 版及較舊版本，也適用於使用 IntelliSense 資料庫的較新版本。 當您撰寫使用程式庫的程式碼時，系統會優先完成該程式庫的資料庫。 如需詳細資訊，請參閱 [IntelliSense 索引標籤](python-environments-window-tab-reference.md#intellisense-tab)。 |
+| **第一次使用時自動產生完成 DB** | 開啟 | 適用於 Visual Studio 2017 15.5 版及較舊版本，也適用於使用 IntelliSense 資料庫的較新版本。 當您撰寫使用程式庫的程式碼時，系統會優先完成該程式庫的資料庫。 如需詳細資訊，請參閱 [IntelliSense 索引標籤](python-environments-window-tab-reference.md?view=vs-2017#intellisense-tab)。 |
 | **略過全系統的 PYTHONPATH 變數** | 開啟 | 因為 Visual Studio 提供更多直接方法來指定環境和專案中的搜尋路徑，所以預設會略過 PYTHONPATH。 如需詳細資訊，請參閱[搜尋路徑](search-paths.md)。 |
 | **新增連結的檔案時更新搜尋路徑** | 開啟 | 設定時，將[連結的檔案](managing-python-projects-in-visual-studio.md#linked-files)新增至專案更新[搜尋路徑](search-paths.md)，讓 IntelliSense 可以將所連結檔案資料夾的內容包含在完成資料庫中。 清除此選項，可從完成資料庫排除這類內容。 |
 | **找不到匯入的模組時發出警告** | 開啟 | 清除此選項，可在您知道匯入的模組目前不可用但不會影響程式碼作業時隱藏警告。 |
@@ -71,7 +71,7 @@ ms.locfileid: "62430955"
 
 ([工具] > [選項] > [Python] > [Conda] 索引標籤。)
 
-| 選項 | 預設 | 說明 |
+| 選項 | Default | 描述 |
 | --- | --- | --- |
 | **Conda 可執行檔路徑** | (空白) | 請指定 *conda.exe* 可執行檔的確切路徑，而不要依賴 Python 工資負載隨附的預設 Miniconda 安裝。 如果在這裡指定另一個路徑，其優先順序會高於預設安裝和登錄中指定的任何其他 conda.exe 可執行檔。 如果手動安裝較新版本的 Anaconda 或 Miniconda，或想要使用 32 位元發行版本，而不是預設的 64 位元發行版本，您可以變更此設定。 |
 
@@ -83,7 +83,7 @@ ms.locfileid: "62430955"
 
 ([工具] > [選項] > [Python] > [偵錯] 索引標籤。)
 
-| 選項 | 預設 | 說明 |
+| 選項 | Default | 描述 |
 | --- | --- | --- |
 | **發生錯誤時於執行前提示** | 開啟 | 設定時，系統會提示您確認您想要執行包含錯誤的程式碼。 清除此選項，可停用警告。 |
 | **處理序異常結束時等候輸入**<br/><br/>**處理序正常結束時等候輸入** | 開啟 (針對兩者) | 從 Visual Studio 啟動的 Python 程式會執行它自己的主控台視窗中。 視窗預設會在關閉之前等待您按任一鍵，不論程式的結束方式為何。 若要移除該提示，並自動關閉視窗，請清除其中任一或兩個選項。 |
@@ -104,7 +104,7 @@ ms.locfileid: "62430955"
 
 ([工具] > [選項] > [Python] > [診斷] 索引標籤。)
 
-| 選項 | 預設 | 說明 |
+| 選項 | Default | 描述 |
 | --- | --- | --- |
 | **包括分析記錄檔** | 開啟 | 使用按鈕將診斷儲存到檔案，或將它們複製到剪貼簿時，包含與已安裝 Python 環境分析相關的詳細記錄檔。 此選項可能會大幅增加所產生檔案的大小，但通常是診斷 IntelliSense 問題時所需的項目。 |
 | **將診斷儲存到檔案**按鈕 | N/A | 提示輸入檔案名稱，然後將記錄檔儲存到文字檔。 |
@@ -116,7 +116,7 @@ ms.locfileid: "62430955"
 
 ([工具] > [選項] > [Python] > [互動式視窗] 索引標籤。)
 
-| 選項 | 預設 | 說明 |
+| 選項 | Default | 描述 |
 | --- | --- | --- |
 | **指令碼** | N/A | 指定啟動指令碼的一般資料夾，以套用至所有環境的**互動式**視窗。 請參閱[啟動指令碼](python-environments-window-tab-reference.md#startup-scripts)。 不過，請注意，這項功能目前無法運作。 |
 | **按向上鍵/向下鍵瀏覽歷程記錄** | 開啟 | 使用方向鍵，在**互動式**視窗中瀏覽歷程記錄。 清除此設定，可改為使用方向鍵在**互動式**視窗的輸出中進行瀏覽。 |
@@ -130,7 +130,7 @@ ms.locfileid: "62430955"
 
 ([工具] > [選項] > [Python] > [語言伺服器] 索引標籤。)
 
-| 選項 | 預設 | 說明 |
+| 選項 | Default | 描述 |
 | --- | --- | --- |
 | **停用從 Typeshed 自動完成** | Off | Visual Studio IntelliSense 通常會使用 Typeshed 的配套版本 (一組 *.pyi*  檔案) ，以尋找 Python 2 和 Python 3 的標準程式庫和協力廠商程式庫類型提示。 設定此選項會停用配套的 TypeShed 行為。 |
 | **自訂 Typeshed 路徑** | (空白) | 如果設定，Visual Studio 會使用此路徑的 Typeshed 檔案，而不是其配套版本。 如果設定了**停用從 Typeshed 自動完成**，則會忽略。 |
@@ -145,7 +145,7 @@ ms.locfileid: "62430955"
 
 ### <a name="completion-results"></a>完成結果
 
-| 選項 | 預設 | 說明 |
+| 選項 | Default | 描述 |
 | --- | --- | --- |
 | **成員完成會顯示成員的交集** | Off | 設定時，只會顯示所有可能類型所支援的完成。 |
 | **根據搜尋字串篩選清單** | 開啟 | 在您鍵入時，套用完成建議的篩選 (預設為核取)。 |
@@ -153,7 +153,7 @@ ms.locfileid: "62430955"
 
 ### <a name="selection-in-completion-list"></a>完成清單中的選取範圍
 
-| 選項 | 預設 | 說明 |
+| 選項 | Default | 描述 |
 | --- | --- | --- |
 | **輸入下列字元予以認可** | **{}\[\]().,:;+-*/%&&#124;^~=<>#@\\** | 這些字元一般會接在可從完成清單中選取的識別碼後面，因此只要鍵入字元就可以輕易地認可完成。 您可以視需要在清單中移除或新增特定字元。  |
 | **按 Enter 認可目前的完成** | 開啟 | 設定時，Enter 鍵會選擇並套用目前選取的完成，與上面字元相同 (但是，當然，沒有 Enter 的字元，因此無法直接進入該清單！)。 |
@@ -161,10 +161,10 @@ ms.locfileid: "62430955"
 
 ### <a name="miscellaneous-options"></a>其他選項
 
-| 選項 | 預設 | 說明 |
+| 選項 | Default | 描述 |
 | --- | --- | --- |
 | **檔案開啟時進入大綱模式** | 開啟 | 開啟 Python 程式碼檔案時，會自動開啟編輯器中的 Visual Studio 大綱功能。 |
-| **貼上已移除的 REPL 提示** | 開啟 | 從貼上的文字中移除 **>>>** 與 **...**，允許將程式碼從**互動式**視窗輕鬆傳送至編輯器。 如果您在從其他來源貼上時需要保留這些字元，請清除此選項。 |
+| **貼上已移除的 REPL 提示** | 開啟 | 從貼上的文字中移除 **>>>** 與 **...** ，允許將程式碼從**互動式**視窗輕鬆傳送至編輯器。 如果您在從其他來源貼上時需要保留這些字元，請清除此選項。 |
 | **根據類型為名稱上色** | 開啟 | 啟用 Python 程式碼中的語法著色。 |
 
 ![Python 編輯器選項對話方塊、進階索引標籤](media/options-editor-advanced.png)

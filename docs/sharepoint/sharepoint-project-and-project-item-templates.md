@@ -20,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 825e985820ac7a4d72bf321133491e312adb0a0e
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 762fce80ad1e97f700af0768cdb68251a3ee8017
+ms.sourcegitcommit: 77ef1dcc71057cd5fdc4733ff0cb6085bd6113e0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72981943"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73661866"
 ---
 # <a name="sharepoint-project-and-project-item-templates"></a>SharePoint 專案與專案專案範本
   下列各節說明可用的 SharePoint 專案和專案專案範本，以及其使用方式。
@@ -132,7 +132,7 @@ ms.locfileid: "72981943"
  *狀態機器工作流程*是一組商務邏輯狀態、轉換和動作。 狀態機器工作流程中的步驟不會依序執行。相反地，它們是由動作和狀態觸發。 如同順序工作流程，狀態機器工作流程會與 SharePoint 專案（例如清單和檔）相關聯。 同樣地，您可以建立網站層級（全域）工作流程或清單層級（本機）工作流程。 您也可以選取工作流程是自動啟動或手動啟動。 這個專案專案只能用在伺服器陣列方案中。 您只能將這個專案專案新增至伺服器陣列方案。 如需詳細資訊，請參閱[建立 sharepoint 工作流程方案](../sharepoint/creating-sharepoint-workflow-solutions.md)、 [sharepoint Server 2010 中的工作流程](/previous-versions/office/developer/sharepoint-2010/ms549489(v=office.14))和[新增功能：工作流程改進](/previous-versions/office/developer/sharepoint-2010/ee537015(v=office.14))。
 
 ### <a name="user-control-farm-solution-only"></a>使用者控制項（僅限陣列方案）
- *使用者控制項*是可重複使用的自訂控制項，您可以在其中加入其他 ASP.NET 控制項和 SharePoint 控制項。 使用者控制項可以加入至在 SharePoint 中執行的應用程式頁面和 web 元件。 這個專案專案只能用在伺服器陣列方案中。 您只能將這個專案專案新增至伺服器陣列方案。 如需詳細資訊，請參閱為[Web 組件或應用程式頁面建立可重複使用的控制項](/visualstudio/sharepoint/creating-reusable-controls-for-web-parts-or-application-pages&view=vs-2019)。
+ *使用者控制項*是可重複使用的自訂控制項，您可以在其中加入其他 ASP.NET 控制項和 SharePoint 控制項。 使用者控制項可以加入至在 SharePoint 中執行的應用程式頁面和 web 元件。 這個專案專案只能用在伺服器陣列方案中。 您只能將這個專案專案新增至伺服器陣列方案。 如需詳細資訊，請參閱為[Web 組件或應用程式頁面建立可重複使用的控制項](/visualstudio/sharepoint/creating-reusable-controls-for-web-parts-or-application-pages)。
 
 ### <a name="visual-web-part"></a>視覺 web 元件
  *視覺化網頁元件*專案專案包含*元素 .xml*定義檔、 **Web 元件**專案和**使用者控制項**專案。 您可以將控制項從 [Visual Studio 工具箱] 拖曳或複製到使用者控制項的介面，藉此設計視覺 web 元件的外觀。 如需詳細資訊，請參閱[如何：使用設計工具建立 SharePoint web 元件](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md)和[建立區塊： Web 組件](/previous-versions/office/developer/sharepoint-2010/ee535520(v=office.14))。
