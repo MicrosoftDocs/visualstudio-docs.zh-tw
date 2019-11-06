@@ -1,5 +1,5 @@
 ---
-title: 步驟 7：加入乘法和除法問題
+title: 步驟 7：新增乘法及除法問題
 ms.date: 11/04/2016
 ms.topic: tutorial
 ms.prod: visual-studio-windows
@@ -20,7 +20,7 @@ ms.contentlocale: zh-TW
 ms.lasthandoff: 10/19/2019
 ms.locfileid: "72647462"
 ---
-# <a name="step-7-add-multiplication-and-division-problems"></a>步驟 7：加入乘法和除法問題
+# <a name="step-7-add-multiplication-and-division-problems"></a>步驟 7：新增乘法及除法問題
 
 在本教學課程的第七個部分中，您將加入乘法和除法問題，不過要先思考如何進行這項變更。 思考初始步驟，其中牽涉到儲存值。
 
@@ -60,10 +60,10 @@ ms.locfileid: "72647462"
      受測者必須回答四個問題才能完成測驗，如下圖所示。
 
      ![包含四個問題的數學測驗](../ide/media/express_finishedquiz.png)<br/>
-*具有四個問題的****數學測驗***
+*具有四個問題的* ***數學測驗***
 
-## <a name="to-continue-or-review"></a>繼續或檢視
+## <a name="to-continue-or-review"></a>若要繼續或檢視
 
-- 若要移至下一個教學課程步驟，請參閱 **[步驟8：自訂測驗](../ide/step-8-customize-the-quiz.md)** 。
+- 若要移至下一個教學課程步驟，請參閱 **[步驟8：自訂](../ide/step-8-customize-the-quiz.md)** 的測驗。
 
 - 若要回到上一個教學課程步驟，請參閱[步驟 6：新增減法問題](../ide/step-6-add-a-subtraction-problem.md)。
