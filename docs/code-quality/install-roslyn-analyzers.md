@@ -11,12 +11,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: b204d6824f06037341420d27083c120e6e4b2a95
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 9013d7be60a8091f7ce4fc4fe92fa4acaef43720
+ms.sourcegitcommit: f9f389e72787de30eb869a55ef7725a10a4011f0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649294"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73636529"
 ---
 # <a name="install-net-compiler-platform-code-analyzers"></a>安裝 .NET Compiler Platform 程式碼分析器
 
@@ -26,7 +26,7 @@ Visual Studio 包含一組核心的 .NET Compiler Platform （*Roslyn*）分析�
 
 1. 尋找您要安裝在 www.nuget.org 上的分析器套件。
 
-   例如，您可能會想要[安裝 Microsoft FxCop 分析器](install-fxcop-analyzers.md#nuget-package)，以檢查您的程式碼中是否有安全性和效能問題，以及其他專案。 或者，安裝[StyleCopAnalyzers](https://www.nuget.org/packages/stylecop.analyzers/)以尋找程式碼基底中的樣式問題。
+   例如，您可能會想要[安裝 Microsoft FxCop 分析器](install-fxcop-analyzers.md#nuget-package)，以檢查您的程式碼中是否有安全性和效能問題，以及其他專案。 或者，安裝[stylecop 能夠](https://www.nuget.org/packages/stylecop.analyzers/)以尋找程式碼基底中的樣式問題。
 
 2. 使用 [[套件管理員主控台](/nuget/quickstart/install-and-use-a-package-in-visual-studio#package-manager-console)] 或 [[套件管理員] UI](/nuget/quickstart/install-and-use-a-package-in-visual-studio#package-manager-console)，在 Visual Studio 中安裝套件。
 
