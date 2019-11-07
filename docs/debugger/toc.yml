@@ -654,18 +654,8 @@
               href: javascript-console-commands.md
             - name: 鍵盤快速鍵 (HTML 和 JavaScript)
               href: keyboard-shortcuts-html-and-javascript.md
-            - name: 用戶端指令碼
-              items:
-                - name: 用戶端指令碼偵錯
-                  href: client-side-script-debugging.md
-                - name: 指令碼偵錯的限制
-                  href: limitations-on-script-debugging.md
-                - name: 附加 (指令碼)
-                  items:
-                    - name: 附加至指令碼
-                      href: how-to-attach-to-script.md
-                    - name: 警告：已停用指令碼偵錯
-                      href: warning-script-debugging-disabled.md
+            - name: 警告：已停用指令碼偵錯
+              href: warning-script-debugging-disabled.md
         - name: WCF 服務
           items:
             - name: 對 WCF 服務進行偵錯
