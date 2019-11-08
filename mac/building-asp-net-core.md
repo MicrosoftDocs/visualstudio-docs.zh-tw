@@ -5,12 +5,12 @@ author: sayedihashimi
 ms.author: sayedha
 ms.date: 05/30/2019
 ms.assetid: 771C2F8E-46BC-4280-AFE8-ED9D5C7790CE
-ms.openlocfilehash: 345111144e0e209d91d34e53fefcd7d1207d9a8a
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
-ms.translationtype: HT
+ms.openlocfilehash: 5aa0b02c87335305f29d098b51c89310cc0a9e5d
+ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68872531"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73717266"
 ---
 # <a name="building-aspnet-core-applications-in-visual-studio-for-mac"></a>在 Visual Studio for Mac 中建置 ASP.NET Core 應用程式
 
@@ -25,7 +25,7 @@ ASP.NET Core 是一個開放原始碼和跨平台架構，可建置現代雲端�
 > * 探索 ASP.NET Core 裝載、設定及中介軟體模型
 > * 對 ASP.NET Core Web 應用程式進行偵錯
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>Prerequisites
 
 - [Visual Studio for Mac](https://www.visualstudio.com/vs/visual-studio-mac)
 
@@ -33,21 +33,21 @@ ASP.NET Core 是一個開放原始碼和跨平台架構，可建置現代雲端�
 
 本實驗適用於熟悉 C# 的開發人員，但不需要深度經驗。
 
-## <a name="task-1-creating-a-new-aspnet-core-application"></a>工作 1：建立新的 ASP.NET Core 應用程式
+## <a name="task-1-creating-a-new-aspnet-core-application"></a>工作1：建立新的 ASP.NET Core 應用程式
 
 1. 啟動 **Visual Studio for Mac**。
 
-2. 選取 [檔案] > [新增方案]  。
+2. 選取 [檔案] > [新增方案]。
 
-3. 選取 [.NET Core] > [應用程式]  類別，然後選取 [ASP.NET Core Web 應用程式 (C#)]  範本。 按 [ **下一步**]。
+3. 選取 [.NET Core] > [應用程式] 類別，然後選取 [ASP.NET Core Web 應用程式 (C#)] 範本。 按 [ **下一步**]。
 
     ![](media/netcore-image1.png)
 
-4. 輸入 **"CoreLab"** 作為名稱，然後按一下 [建立]  來建立專案。 這需要花費一點時間才能完成。
+4. 輸入 **"CoreLab"** 作為名稱，然後按一下 [建立] 來建立專案。 這需要花費一點時間才能完成。
 
     ![](media/netcore-image2.png)
 
-## <a name="task-2-touring-the-solution"></a>工作 2：瀏覽方案
+## <a name="task-2-touring-the-solution"></a>工作2：旅行解決方案
 
 1. 預設範本將會產生具有名為 **CoreLab** 的單一 ASP.NET Core 專案的方案。 展開專案節點，以公開其內容。
 
@@ -61,11 +61,11 @@ ASP.NET Core 是一個開放原始碼和跨平台架構，可建置現代雲端�
 
     ![](media/netcore-image5.png)
 
-4. 專案也會有 **Views** 資料夾，內含對應至每個控制器的其他資料夾 (以及 [共用]  檢視的資料夾)。 例如， **/Home/About** 路徑的檢視 CSHTML 檔案 (副檔名為 HTML) 是在 **Views/Home/About.cshtml** 中。 開啟該檔案。
+4. 專案也會有 **Views** 資料夾，內含對應至每個控制器的其他資料夾 (以及 [共用] 檢視的資料夾)。 例如， **/Home/About** 路徑的檢視 CSHTML 檔案 (副檔名為 HTML) 是在 **Views/Home/About.cshtml** 中。 開啟該檔案。
 
     ![](media/netcore-image6.png)
 
-5. 此 CSHTML 檔案使用 Razor 語法，根據標準標記與內嵌 C# 的組合來呈現 HTML。 您可以在[線上文件](https://docs.microsoft.com/aspnet/web-pages/overview/getting-started/introducing-razor-syntax-c) \(部分機器翻譯\) 中深入了解這點。
+5. 此 CSHTML 檔案使用 Razor 語法，根據標準標記與內嵌 C# 的組合來呈現 HTML。 您可以在[線上文件](/aspnet/web-pages/overview/getting-started/introducing-razor-syntax-c) \(部分機器翻譯\) 中深入了解這點。
 
     ![](media/netcore-image7.png)
 
@@ -73,13 +73,13 @@ ASP.NET Core 是一個開放原始碼和跨平台架構，可建置現代雲端�
 
     ![](media/netcore-image8.png)
 
-7. 另外還有各種組態檔可用來在執行階段管理專案、其專案和應用程式。 例如，預設應用程式[組態](https://docs.microsoft.com/aspnet/core/fundamentals/configuration)會儲存在 **appsettings.json** 中。 不過，您可以根據每個環境來覆寫其中一部分/所有設定，例如，透過提供**開發**環境的 **appsettings.Development.json** 檔案。
+7. 另外還有各種組態檔可用來在執行階段管理專案、其專案和應用程式。 例如，預設應用程式[組態](/aspnet/core/fundamentals/configuration)會儲存在 **appsettings.json** 中。 不過，您可以根據每個環境來覆寫其中一部分/所有設定，例如，透過提供**開發**環境的 **appsettings.Development.json** 檔案。
 
     ![](media/netcore-image9.png)
 
-## <a name="task-3-understanding-how-the-application-is-hosted"></a>工作 3：了解應用程式的裝載方式
+## <a name="task-3-understanding-how-the-application-is-hosted"></a>工作3：瞭解如何託管應用程式
 
-1. 從 [方案總管]  中，開啟 **Program.cs**。 這是將會執行您應用程式的啟動載入器。
+1. 從 [方案總管] 中，開啟 **Program.cs**。 這是將會執行您應用程式的啟動載入器。
 
     ![](media/netcore-image10.png)
 
@@ -87,7 +87,7 @@ ASP.NET Core 是一個開放原始碼和跨平台架構，可建置現代雲端�
 
     ![](media/netcore-image11.png)
 
-3. 雖然 **WebHostBuilder** 會負責建立將會為應用程式啟動伺服器的主機，它需要您提供能實作 **IServer** 的伺服器。 根據預設，這會是 **[Kestrel](https://docs.microsoft.com/aspnet/core/fundamentals/servers/kestrel)** ，此為以 **libuv** (跨平台的非同步 I/O 程式庫) 為基礎，適用於 ASP.NET Core 的跨平台網頁伺服器。
+3. 雖然 **WebHostBuilder** 會負責建立將會為應用程式啟動伺服器的主機，它需要您提供能實作 **IServer** 的伺服器。 根據預設，這會是 **[Kestrel](/aspnet/core/fundamentals/servers/kestrel)** ，此為以 **libuv** (跨平台的非同步 I/O 程式庫) 為基礎，適用於 ASP.NET Core 的跨平台網頁伺服器。
 
     ![](media/netcore-image12.png)
 
@@ -111,27 +111,27 @@ ASP.NET Core 是一個開放原始碼和跨平台架構，可建置現代雲端�
 
     ![](media/netcore-image17.png)
 
-## <a name="task-4-running-and-debugging-the-application"></a>工作 4：執行應用程式並對其進行偵錯
+## <a name="task-4-running-and-debugging-the-application"></a>工作4：執行和偵錯工具
 
-1. 在 [方案總管]  中，以滑鼠右鍵按一下 [CoreLab]  專案節點，然後選取 [選項]  。
+1. 在 [方案總管] 中，以滑鼠右鍵按一下 [CoreLab] 專案節點，然後選取 [選項]。
 
     ![](media/netcore-image18.png)
 
-2. [專案選項]  對話方塊包含調整應用程式的建置及執行方法的所有必要內容。 從左側面板選取 [執行] > [設定] > [預設]  節點。
+2. [專案選項] 對話方塊包含調整應用程式的建置及執行方法的所有必要內容。 從左側面板選取 [執行] > [設定] > [預設] 節點。
 
-3. 核取 [在外部主控台上執行]  並取消核取 [暫停主控台輸出]  。 自我裝載應用程式的主控台通常不會可見，而會改為將結果記錄到 [輸出]  索引頁。 基於本實驗室的目的，我們也會在個別的視窗中顯示它，不過您在一般的開發期間並不需要那麼做。
+3. 核取 [在外部主控台上執行] 並取消核取 [暫停主控台輸出]。 自我裝載應用程式的主控台通常不會可見，而會改為將結果記錄到 [輸出] 索引頁。 基於本實驗室的目的，我們也會在個別的視窗中顯示它，不過您在一般的開發期間並不需要那麼做。
 
-4. 按一下 [確定]  。
+4. 按一下 [確定]。
 
     ![](media/netcore-image19.png)
 
-5. 按 **F5** 鍵建置並執行應用程式。 或者，您可以選取 [執行] > [開始偵錯]  。
+5. 按 **F5** 鍵建置並執行應用程式。 或者，您可以選取 [執行] > [開始偵錯]。
 
 6. Visual Studio for Mac 將會啟動兩個視窗。 第一個是主控台視窗，其能提供針對自我裝載伺服器應用程式的檢視。
 
     ![](media/netcore-image20.png)
 
-7. 第二個是一般的瀏覽器視窗，可用來測試該網站。 對瀏覽器來說，此應用程式可能被裝載在任何地方。 按一下 [關於]  來瀏覽至該頁面。
+7. 第二個是一般的瀏覽器視窗，可用來測試該網站。 對瀏覽器來說，此應用程式可能被裝載在任何地方。 按一下 [關於] 來瀏覽至該頁面。
 
     ![](media/netcore-image21.png)
 
@@ -161,7 +161,7 @@ ASP.NET Core 是一個開放原始碼和跨平台架構，可建置現代雲端�
 
     ![](media/netcore-image26.png)
 
-16. 按 [繼續]  按鈕以繼續執行。
+16. 按 [繼續] 按鈕以繼續執行。
 
     ![](media/netcore-image27.png)
 
@@ -171,9 +171,9 @@ ASP.NET Core 是一個開放原始碼和跨平台架構，可建置現代雲端�
 
 18. 關閉測試瀏覽器視窗和應用程式主控台。 這同時也會停止偵錯。
 
-## <a name="task-5-application-startup-configuration"></a>工作 5：應用程式啟動設定
+## <a name="task-5-application-startup-configuration"></a>工作5：應用程式啟動設定
 
-1. 從 [方案總管]  開啟 **Startup.cs**。 在系統於背景還原 NuGet 套件，且 Roslyn 編譯器正在編譯專案相依性的完整面貌時，您一開始可能會看見一些紅色波浪線。
+1. 從 [方案總管] 開啟 **Startup.cs**。 在系統於背景還原 NuGet 套件，且 Roslyn 編譯器正在編譯專案相依性的完整面貌時，您一開始可能會看見一些紅色波浪線。
 
     ![](media/netcore-image29.png)
 
@@ -189,7 +189,7 @@ ASP.NET Core 是一個開放原始碼和跨平台架構，可建置現代雲端�
 
     ![](media/netcore-image32.png)
 
-5. 在那之後，它會嘗試載入環境特定的 **appsettings.json** 檔案，其將會覆寫現有設定。 例如，以下是針對該特定環境所提供的 **appsettings.Development.json** 檔案。 若要深入了解 ASP.NET Core 中的設定，請參閱[相關文件](https://docs.microsoft.com/aspnet/core/fundamentals/configuration)。
+5. 在那之後，它會嘗試載入環境特定的 **appsettings.json** 檔案，其將會覆寫現有設定。 例如，以下是針對該特定環境所提供的 **appsettings.Development.json** 檔案。 若要深入了解 ASP.NET Core 中的設定，請參閱[相關文件](/aspnet/core/fundamentals/configuration)。
 
     ![](media/netcore-image34.png)
 
@@ -197,7 +197,7 @@ ASP.NET Core 是一個開放原始碼和跨平台架構，可建置現代雲端�
 
     ![](media/netcore-image35.png)
 
-## <a name="task-6-inserting-application-middleware"></a>工作 6：插入應用程式中介軟體
+## <a name="task-6-inserting-application-middleware"></a>工作6：插入應用程式中介軟體
 
 1. 找出 **Startup** 類別中的 **Configure** 方法。 這是設定所有中介軟體以將其插入至 HTTP 管線，並用來處理針對伺服器之所有要求的位置。 雖然此方法只會被呼叫一次，每個要求都可能會執行方法的內容 (例如 **UseStaticFiles**)。
 
@@ -217,13 +217,13 @@ ASP.NET Core 是一個開放原始碼和跨平台架構，可建置現代雲端�
 
 4. 我們可以使用瀏覽器來檢查標頭，以確認它們是否已被加入。 下列的指示適用於 Safari，但您可以在 [Chrome](https://stackoverflow.com/questions/4423061/view-http-headers-in-google-chrome) \(英文\) 或 [Firefox](https://stackoverflow.com/questions/33974595/in-firefox-how-do-i-see-http-request-headers-where-in-web-console) \(英文\) 中執行相同的工作。
 
-5. 在瀏覽器載入網站之後，請選取 [Safari] > [偏好設定]  。
+5. 在瀏覽器載入網站之後，請選取 [Safari] > [偏好設定]。
 
-6. 在 [進階]  索引標籤上，核取 [在選單列中顯示「開發」選單]  ，然後關閉對話方塊。
+6. 在 [進階] 索引標籤上，核取 [在選單列中顯示「開發」選單]，然後關閉對話方塊。
 
     ![](media/netcore-image37.png)
 
-7. 選取 [開發] > [顯示網頁資源]  。
+7. 選取 [開發] > [顯示網頁資源]。
 
 8. 重新整理瀏覽器視窗來讓新開啟的開發人員工具能追蹤及分析流量和內容。
 
@@ -231,7 +231,7 @@ ASP.NET Core 是一個開放原始碼和跨平台架構，可建置現代雲端�
 
     ![](media/netcore-image38.png)
 
-10. 展開 [詳細資訊]  側邊欄。
+10. 展開 [詳細資訊] 側邊欄。
 
     ![](media/netcore-image39.png)
 
@@ -243,4 +243,4 @@ ASP.NET Core 是一個開放原始碼和跨平台架構，可建置現代雲端�
 
 ## <a name="summary"></a>總結
 
-在本實驗室中，您已了解如何開始搭配 Visual Studio for Mac 開發 ASP.NET Core 應用程式。 如果您想了解如何開發更為完整的電影資料庫應用程式，請參閱[開始使用 ASP.NET Core MVC](https://docs.microsoft.com/aspnet/core/tutorials/first-mvc-app/start-mvc) 教學課程。
+在本實驗室中，您已了解如何開始搭配 Visual Studio for Mac 開發 ASP.NET Core 應用程式。 如果您想了解如何開發更為完整的電影資料庫應用程式，請參閱[開始使用 ASP.NET Core MVC](/aspnet/core/tutorials/first-mvc-app/start-mvc) 教學課程。

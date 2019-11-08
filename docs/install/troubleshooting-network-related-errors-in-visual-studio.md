@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: f585a4ee58408e5f48c875602ba5531419dfd2ff
-ms.sourcegitcommit: 77ef1dcc71057cd5fdc4733ff0cb6085bd6113e0
+ms.openlocfilehash: f1b928d04ae581b0df04ab74f3a756d359abc06f
+ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73661819"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73713956"
 ---
 # <a name="troubleshoot-network-related-errors-when-you-install-or-use-visual-studio"></a>當您安裝或使用 Visual Studio 時，針對網路相關錯誤進行疑難排解
 
@@ -137,7 +137,7 @@ Visual Studio 使用傳輸層安全性 (TLS) 1.2 通訊協定連線到網路資�
 
 當您使用 Visual Studio 啟動載入器和網路磁碟機機上的回應. json 檔案時，可能會遇到這個錯誤訊息。 錯誤的來源是 Windows 中的使用者帳戶控制（UAC）。
 
-以下是可能發生此錯誤的原因：對應的網路磁碟機機或[UNC](/dotnet/standard/io/file-path-formats#unc-paths)共用已連結至使用者的存取權杖。 當啟用 UAC 時，會建立兩個使用者[存取權杖](/windows/win32/secauthz/access-tokens)：一個*具備*系統管理員存取權，另一個則*沒有*系統管理員存取權。 建立網路磁碟機機或共用時，會連結到使用者的目前存取權杖。 因為啟動載入器必須以系統管理員的身分執行，所以如果磁片磁碟機或共用未連結到具有系統管理員存取權的使用者存取權杖，就無法存取網路磁碟機或共用。
+以下是可能發生此錯誤的原因：對應的網路磁碟機機或[UNC](/dotnet/standard/io/file-path-formats#unc-paths)共用已連結至使用者的存取權杖。 當啟用 UAC 時，會建立兩個使用者[存取權杖](/windows/win32/secauthz/access-tokens)：一個*具備*系統管理員存取權，另一個則*沒有*系統管理員存取權。 建立網路磁碟機機或共用時，會連結到該使用者的目前存取權杖。 因為啟動載入器必須以系統管理員的身分執行，所以如果磁片磁碟機或共用未連結到具有系統管理員存取權的使用者存取權杖，就無法存取網路磁碟機或共用。
 
 ### <a name="to-fix-this-error"></a>若要修正這個錯誤
 

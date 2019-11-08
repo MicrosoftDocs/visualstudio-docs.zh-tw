@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 386a489faf859038cd0f529da74a0fbac07b7250
-ms.sourcegitcommit: f9f389e72787de30eb869a55ef7725a10a4011f0
+ms.openlocfilehash: 7bd03ead39d0b2b5013075de017954f0c0c30e8c
+ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73636546"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73714496"
 ---
 # <a name="debug-a-javascript-or-typescript-app-in-visual-studio"></a>在 Visual Studio 中對 JavaScript 和 TypeScript 進行偵錯
 
@@ -157,7 +157,7 @@ Visual Studio 僅提供 Chrome 和 Internet Explorer 的用戶端偵錯工具支
 
     在偵錯工具中暫停時，您可以將滑鼠指標停留在變數上，並使用偵錯工具視窗，藉以檢查應用程式狀態。 您可以逐步執行程式碼 (**F5**、**F10** 和 **F11**) 來推進偵錯工具。 如需基本偵錯工具功能的詳細資訊，請參閱[偵錯工具的第一次](../debugger/debugger-feature-tour.md)查看。
 
-    您可以根據先前所遵循的步驟，以及您的環境和瀏覽器狀態，叫*用轉換或*原始程式檔中的中斷點。 不論哪一種方式，您都可以逐步執行程式碼並檢查變數。
+    根據您的應用程式類型、您先前遵循的步驟，以及瀏覽器狀態之類的其他因素，您可能會*在轉換的*檔案或來源檔案中叫用中斷點。 不論哪一種方式，您都可以逐步執行程式碼並檢查變數。
 
    * 如果您需要在 TypeScript、JSX 或*vue*原始程式檔中中斷程式碼，但無法這麼做，請確定您的環境已正確設定，如[疑難排解](#troubleshooting_source_maps)一節中所述。
 
@@ -171,7 +171,7 @@ Visual Studio 僅提供 Chrome 和 Internet Explorer 的用戶端偵錯工具支
       
 * 請確定您[是在 [調試] 模式下啟動瀏覽器](#prepare_the_browser_for_debugging)。
 
-* 請確定您的來源對應檔包含您原始程式檔的正確參考，而且不包含不支援的前置詞，例如*webpack:///* ，這會防止 Visual Studio 偵錯工具尋找來源檔案。 例如， *webpack:///.app.tsx*之類的參考可能會更正為 */app.tsx*。 您可以在來源對應檔案中，或透過自訂群組建設定來手動執行此動作。 如需詳細資訊，請參閱[產生來源對應以進行調試](#generate_source_maps)程式。
+* 請確定您的來源對應檔案包含原始程式檔的正確相對路徑，而且它不包含不支援的前置詞，例如*webpack:///* ，這會導致 Visual Studio 偵錯工具無法尋找來源檔案。 例如， *webpack:///.app.tsx*之類的參考可能會更正為 */app.tsx*。 您可以在來源對應檔（這有助於測試）或透過自訂群組建設定中，手動執行此動作。 如需詳細資訊，請參閱[產生來源對應以進行調試](#generate_source_maps)程式。
 
 或者，如果您需要中斷原始程式檔（例如 app.config）中的*程式*代碼，但無法這麼做，請嘗試使用原始程式檔中的 `debugger;` 語句，或在 Chrome 開發人員工具（或 Microsoft Edge 的 F12 工具）中設定中斷點。
 
