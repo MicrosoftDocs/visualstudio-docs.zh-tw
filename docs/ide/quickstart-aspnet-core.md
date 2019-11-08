@@ -2,7 +2,7 @@
 title: 以 C# 建立 ASP.NET Core Web 應用程式
 description: 了解如何在 Visual Studio 中使用 C# 與 ASP.NET Core 逐步建立簡單的 Hello World Web 應用程式。
 ms.custom: mvc,seodec18
-ms.date: 10/15/2019
+ms.date: 11/06/2019
 ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
 ms.topic: quickstart
@@ -14,12 +14,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: e57a72262e9fdf3224b97d6d107e8547dc0a267e
-ms.sourcegitcommit: 6244689e742e551e7b6933959bd42df56928ece3
+ms.openlocfilehash: c87fd68a68076ab0ccab2d86f758f2217e956e26
+ms.sourcegitcommit: 292ccebc601d465931fb94218a1c289c5cf77795
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72516902"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753932"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-app"></a>快速入門：使用 Visual Studio 建立您的第一個 ASP.NET Core Web 應用程式
 
@@ -120,6 +120,8 @@ Visual Studio 隨即開啟您的專案檔。
 
 ## <a name="create-and-run-the-app"></a>建立並執行應用程式
 
+::: moniker range="vs-2017"
+
 1. 在 [方案總管] 中，展開 [頁面] 資料夾，然後選擇 **About.cshtml**。
 
    ![從方案總管選擇 About.cshtml 檔案](../ide/media/csharp-aspnet-about-page-html-file.png)
@@ -168,6 +170,41 @@ Visual Studio 隨即開啟您的專案檔。
   ![檢視示範如何在 Visual Studio 中建立並執行簡單 C# ASP.NET Core Web 應用程式的動畫 .gif 檔案](../ide/media/csharp-aspnet-animated-hello-world.gif)
 
 恭喜您完成此快速入門！ 我們希望您更了解 C#、ASP.NET Core 和 Visual Studio IDE (整合式開發環境)。
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+1. 在 **方案總管**中，展開  **Pages**  資料夾，然後選擇  **Index. cshtml**。
+
+   ![從 方案總管中選擇 索引。](../ide/media/vs-2019/csharp-aspnet-index-page-cshtml-file.png)
+
+   此檔案會對應至 web 應用程式中名為**Home**的頁面，該網頁會在網頁瀏覽器中執行。
+
+   ![Web 應用程式中的 [關於] 頁面](../ide/media/vs-2019/csharp-aspnet-index-page.png)
+
+   在編輯器中，您會看到顯示**在首頁上**之文字的 HTML 程式碼。
+
+   ![Visual Studio 編輯器中首頁的 Index. cshtml 檔案中的 HTML 程式碼](../ide/media/vs-2019/csharp-aspnet-index-cshtml-page.png)
+
+1. 變更「歡迎」文字以閱讀「**Hello World！** 」。
+
+   ![在 [Visual Studio 編輯器] 中，將預設的 HTML 程式碼變更為 [歡迎]，改為顯示 Hello World](../ide/media/vs-2019/csharp-aspnet-index-cshtml-page-hello-world.png)
+
+1. 選擇 [IIS Express] 或按 **Ctrl**+**F5** 執行應用程式，並在網頁瀏覽器中開啟它。
+
+   ![選取 Visual Studio 中的 [IIS Express] 按鈕](../ide/media/vs-2019/csharp-aspnet-generic-iisbutton.png)
+
+   > [!NOTE]
+   > 如果您收到的錯誤訊息指出「無法連線到 Web 伺服器 'IIS Express'」，或是提及 SSL 憑證，請關閉 Visual Studio。 接下來，從右鍵操作功能表使用 [以系統管理員身分執行] 選項來開啟 Visual Studio。 接著，再次執行應用程式。
+
+1. 在網頁瀏覽器中，確認**首頁**包含更新的文字。
+
+   ![查看已更新的首頁，其中包含您所做的變更](../ide/media/vs-2019/csharp-aspnet-index-page-hello-world.png)
+
+1. 關閉網頁瀏覽器。
+
+::: moniker-end
 
 ## <a name="next-steps"></a>後續步驟
 

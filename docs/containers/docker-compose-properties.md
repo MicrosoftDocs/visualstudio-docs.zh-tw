@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.date: 08/12/2019
 ms.technology: vs-azure
 ms.topic: conceptual
-ms.openlocfilehash: 2178881c6ea0e597aef5e25074e3648162d3f6e9
-ms.sourcegitcommit: 6ae0a289f1654dec63b412bfa22035511a2ef5ad
+ms.openlocfilehash: 4ea1a936de215340cc13971e7a70a8d795d36cbb
+ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71950644"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73713925"
 ---
 # <a name="docker-compose-build-properties"></a>Docker Compose 組建屬性
 
@@ -27,20 +27,22 @@ ms.locfileid: "71950644"
 </PropertyGroup>
 ```
 
-您可以將屬性設定加入現有的 `PropertyGroup` 元素，或如果沒有，請建立新的 `PropertyGroup` 元素。
+您可以將屬性設定加入現有的 `PropertyGroup` 專案，如果沒有，則建立新的 `PropertyGroup` 元素。
 
 ## <a name="docker-compose-msbuild-properties"></a>Docker Compose MSBuild 屬性
 
 下表顯示可用於 Docker Compose 專案的 MSBuild 屬性。
 
-| 屬性名稱 | Location | 描述 | 預設值  |
+| 屬性名稱 | 位置 | 描述 | 預設值  |
 |---------------|----------|-------------|----------------|
-|DockerComposeBuildArguments|docker-compose.dcproj|指定要傳遞給 `docker-compose build` 命令的額外參數。 例如： `--parallel --pull` |
-|DockerComposeDownArguments|docker-compose.dcproj|指定要傳遞給 `docker-compose down` 命令的額外參數。 例如： `--timeout 500`|-|  
+|AdditionalComposeFiles|docker-compose.dcproj|針對所有命令，在以分號分隔的清單中指定要傳送至 docker-compose.dev.debug.yml 的其他撰寫檔案。 允許來自 docker 撰寫專案檔（docker-compose.dcproj）的相對路徑。|-|
+|DockerComposeBaseFilePath|docker-compose.dcproj|指定 docker 撰寫檔案之檔案名的第一個部分，不含副檔名*yml* 。 例如: <br>1. DockerComposeBaseFilePath = null/undefined：使用基底檔案路徑*docker-撰寫*，而檔案將命名為*docker-compose.dev.debug.yml. yml*和*docker-compose.dev.debug.yml。 yml*<br>2. DockerComposeBaseFilePath = *mydockercompose*：檔案將命名為*mydockercompose. yml*和*mydockercompose. override. yml*<br> 3. DockerComposeBaseFilePath = *.。\mydockercompose*：檔案會在一個層級上啟動。 |docker-compose.dev.debug.yml|
+|DockerComposeBuildArguments|docker-compose.dcproj|指定要傳遞給 `docker-compose build` 命令的額外參數。 例如：`--parallel --pull` |
+|DockerComposeDownArguments|docker-compose.dcproj|指定要傳遞給 `docker-compose down` 命令的額外參數。 例如：`--timeout 500`|-|  
 |DockerComposeProjectPath|.csproj 或 vbproj|Docker 撰寫專案（docker-compose.dcproj）檔案的相對路徑。 發佈服務專案時設定此屬性，以尋找儲存在 docker-compose.dev.debug.yml. yml 檔案中的相關聯映射組建設定。|-|
-|DockerComposeUpArguments|docker-compose.dcproj|指定要傳遞給 `docker-compose up` 命令的額外參數。 例如： `--timeout 500`|-|
+|DockerComposeUpArguments|docker-compose.dcproj|指定要傳遞給 `docker-compose up` 命令的額外參數。 例如：`--timeout 500`|-|
 |DockerLaunchAction| docker-compose.dcproj | 指定要在 F5 或 Ctrl + F5 上執行的啟動動作。  允許的值為 None、LaunchBrowser 和 LaunchWCFTestClient|None|
-|DockerLaunchBrowser| docker-compose.dcproj | 指出是否要啟動瀏覽器。 如果已指定 DockerLaunchAction，則會忽略。 | 偽 |
+|DockerLaunchBrowser| docker-compose.dcproj | 指出是否要啟動瀏覽器。 如果已指定 DockerLaunchAction，則會忽略。 | False |
 |DockerServiceName| docker-compose.dcproj|如果指定了 DockerLaunchAction 或 DockerLaunchBrowser，則 DockerServiceName 就是應該啟動的服務名稱。  使用此屬性可判斷 docker 撰寫檔案可以參考的其中一個可能的專案將會啟動。|-|
 |DockerServiceUrl| docker-compose.dcproj | 啟動瀏覽器時要使用的 URL。  有效的取代權杖為 "{ServiceIPAddress}"、"{ServicePort}" 和 "{圖式}"。  例如： {配置}：//{ServiceIPAddress}： {ServicePort}|-|
 |DockerTargetOS| docker-compose.dcproj | 建立 Docker 映射時使用的目標 OS。|-|
@@ -72,7 +74,7 @@ services:
 
 如需有關 MSBuild 屬性的一般資訊，請參閱[Msbuild 屬性](../msbuild/msbuild-properties.md)。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 [容器工具組建屬性](container-msbuild-properties.md)
 

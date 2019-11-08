@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 02/12/2019
 ms.assetid: 339F6051-5F90-48DC-8237-EBBC8A03A32B
-ms.openlocfilehash: c9b150c55e54b851e96e3bfb22e5e9a77646f7d7
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
-ms.translationtype: HT
+ms.openlocfilehash: 7d9cfbcafc90340d15172dd0d862ef9904fd6715
+ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68872262"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73716107"
 ---
 # <a name="xamarin-mobile-app-development"></a>Xamarin 行動裝置應用程式開發
 
@@ -32,7 +32,7 @@ iOS 設計工具已與 Visual Studio for Mac 完全整合在一起，以視覺�
 
 ![iOS 分鏡腳本設計工具](media/intro-image30.png)
 
-如需使用 iOS 詳細資訊，請參閱 [Designer](https://docs.microsoft.com/xamarin/ios/user-interface/designer/?tabs=macos) (設計工具) 指南。
+如需使用 iOS 詳細資訊，請參閱 [Designer](/xamarin/ios/user-interface/designer/?tabs=macos) (設計工具) 指南。
 
 ### <a name="mac"></a>Mac
 
