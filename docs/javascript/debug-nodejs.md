@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 7bd03ead39d0b2b5013075de017954f0c0c30e8c
-ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
+ms.openlocfilehash: 0405488f6f456f22711498e81789881ffc5a0a8a
+ms.sourcegitcommit: 308a2bdbea81df78bffc3a01afce4ab13131fabc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73714496"
+ms.lasthandoff: 11/11/2019
+ms.locfileid: "73913006"
 ---
 # <a name="debug-a-javascript-or-typescript-app-in-visual-studio"></a>在 Visual Studio 中對 JavaScript 和 TypeScript 進行偵錯
 
@@ -105,13 +105,13 @@ Visual Studio 僅提供 Chrome 和 Internet Explorer 的用戶端偵錯工具支
 
 若要從 Visual Studio 附加偵錯工具，並叫用用戶端程式代碼中的中斷點，偵錯工具需要協助來識別正確的進程。 以下是啟用此功能的其中一種方式。
 
-1. 切換至 Visual Studio，然後在您的原始程式碼中設定中斷點，這可能是 JavaScript 檔案、TypeScript 檔案、 *vue*檔或 JSX 檔案。 （在允許中斷點的程式程式碼中設定中斷點，例如 return 語句或 var 宣告）。
+1. 切換至 Visual Studio，然後在您的原始程式碼中設定中斷點，這可能是 JavaScript 檔案、TypeScript 檔案或 JSX 檔。 （在允許中斷點的程式程式碼中設定中斷點，例如 return 語句或 var 宣告）。
 
     ![設定中斷點](../javascript/media/tutorial-nodejs-react-set-breakpoint-client-code.png)
 
     若要在轉換檔案中尋找特定程式碼，請使用**Ctrl**+**F** （**編輯** > **尋找並取代** > **快速尋找**）。
 
-    針對用戶端程式代碼，若要叫用 TypeScript 檔案中的中斷點， *vue*或 JSX 檔案通常需要使用[來源對應](#generate_source_maps)。 來源對應必須正確設定，才能支援 Visual Studio 中的調試。
+    針對用戶端程式代碼，若要在 TypeScript 檔案或 JSX 檔中叫用中斷點，通常需要使用[來源對應](#generate_source_maps)。 來源對應必須正確設定，才能支援 Visual Studio 中的調試。
 
 2. 在 Visual Studio 中選取您的目標瀏覽器做為 debug 目標，然後按下**Ctrl**+**F5** （**debug** > **啟動但不進行調試**程式），以在瀏覽器中執行應用程式。
 
@@ -165,7 +165,7 @@ Visual Studio 僅提供 Chrome 和 Internet Explorer 的用戶端偵錯工具支
 
 ### <a name="troubleshooting_source_maps"></a>疑難排解中斷點和來源對應
 
-如果您需要在 TypeScript、JSX 或*vue*原始程式檔中中斷程式碼，但無法這麼做，請使用先前步驟中所述的 [**附加至進程**] 來附加偵錯工具。 請確定您的環境已正確設定：
+如果您需要在 TypeScript 或 JSX 原始程式檔中中斷程式碼，但無法這麼做，請使用先前步驟中所述的 [**附加至進程**] 來附加偵錯工具。 請確定您的環境已正確設定：
 
 * 您關閉了所有的瀏覽器實例，包括 Chrome 延伸模組（使用工作管理員），讓您可以在 [偵錯工具] 模式中執行瀏覽器。
       
