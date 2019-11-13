@@ -12,18 +12,18 @@ ms.assetid: c54969a7-d75a-4a35-9b37-af7a596a7c24
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 0f43222e593b836f44a84e5f64642403f0263ca5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 0facc87df720af8376561ae7599fe20afeab1a12
+ms.sourcegitcommit: c6af923c1f485959d751b23ab3f03541013fc4a7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649705"
+ms.lasthandoff: 11/12/2019
+ms.locfileid: "73925969"
 ---
 # <a name="create-a-ui-by-using-xaml-designer"></a>使用 XAML 設計工具建立 UI
 
 Visual Studio 中的「XAML 設計工具」和 Blend for Visual Studio 提供視覺化介面，可協助您設計以 XAML 為基礎的應用程式，例如 WPF、UWP 及 Xamarin.Forms 應用程式。 您可以藉由從 [工具箱] 視窗 (在 Blend for Visual Studio 的 [資產] 視窗中) 拖曳控制項，並在 [屬性] 視窗中設定屬性，為您的應用程式建立使用者介面。 您也可以在 [XAML] 檢視中直接編輯 XAML。
 
-如果是進階使用者，您甚至可以[自訂 XAML 設計工具](../extensibility/xaml-designer-extensibility-migration.md)。
+如果是進階使用者，您甚至可以[自訂 XAML 設計工具](https://github.com/microsoft/xaml-designer-extensibility/blob/master/documents/xaml-designer-extensibility-migration.md)。
 
 ## <a name="xaml-designer-workspace"></a>XML 設計工具工作區
 
