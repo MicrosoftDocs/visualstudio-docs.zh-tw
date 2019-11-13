@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/29/2019
 ms.topic: conceptual
 description: 瞭解如何啟用 Visual Studio 訂用帳戶中所含的 Azure DevTest 個人點數權益。
-ms.openlocfilehash: 7bd6313a0e6d52f9e461383fb04c9039f3b974ac
-ms.sourcegitcommit: bcdab788085bd9931d73883fe70cd5831317dca2
+ms.openlocfilehash: 25bb97675c65244258c217901a010ab2211554d0
+ms.sourcegitcommit: 3a19319e2599bd193fb2ca32020ca53942974bfd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72816445"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "73983773"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>在 Visual Studio 訂用帳戶中使用 Microsoft Azure
 身為 Visual Studio 訂閱者，您不需要額外收費即可使用 Microsoft Azure。  有了[每月 Azure DevTest 的個別點數](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/)，azure 就是您用於開發/測試的個人沙箱。  您可以佈建虛擬機器、雲端服務和其他 Azure 資源。  信用額度會依訂用帳戶層級而異。
@@ -41,9 +41,11 @@ ms.locfileid: "72816445"
 ## <a name="eligibility"></a>資格
 |                 訂用帳戶等級/方案                 |           優勢           |                         可續約？                          |
 |--------------------------------------------------------------|-----------------------------|-------------------------------------------------------------|
-|              Visual Studio Enterprise Standard               |     每月信用點數 $150 美元     |                             [是]                             ||
+|              Visual Studio Enterprise Standard               |     每月信用點數 $150 美元     |                             [是]                             |
+|              含 GitHub Enterprise 的 Visual Studio Enterprise               |     每月信用點數 $150 美元     |                             [是]                             |
 |               Visual Studio Enterprise 每月               |        無法使用        |                                                             |
 |             Visual Studio Professional Standard              |     每月信用點數 $50 美元      |                             [是]
+|              含 GitHub Enterprise 的 Visual Studio Professional              |     每月信用點數 $150 美元     |                             [是]                             |
 |              Visual Studio Professional 每月              |        無法使用        |                                                             |
 |                    Visual Studio Test Pro                    |     每月信用點數 $50 美元      |                             [是]                             |
 |                        MSDN 平台                        |     每月信用點數 $100 美元     |                             [是]                             |

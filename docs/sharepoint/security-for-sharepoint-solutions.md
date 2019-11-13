@@ -15,18 +15,18 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 16fb3e4a0e1aed14e4a3f1b3178dc753f5dc10b4
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 6dc1449a40528670274ea5b275cca3f0a8d2f277
+ms.sourcegitcommit: 3a19319e2599bd193fb2ca32020ca53942974bfd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72984178"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "73983782"
 ---
 # <a name="security-for-sharepoint-solutions"></a>SharePoint 方案的安全性
   [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 包含下列功能，以協助加強 SharePoint 應用程式的安全性。
 
 ## <a name="safe-control-entries"></a>安全控制項專案
- 在 [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] 中建立的每個 SharePoint 專案專案都有一個**安全控制項**專案屬性，代表安全控制項集合。 它的**Safe**子屬性可讓您指定您認為安全的控制項。 如需詳細資訊，請參閱[在專案專案中提供封裝和部署資訊](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)和[指定安全的 Web 組件](/previous-versions/office/developer/sharepoint2003/dd583154(v=office.11)#sharepoint_northwindwebparts_topic19)。
+ 在 [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] 中建立的每個 SharePoint 專案專案都有一個**安全控制項**專案屬性，代表安全控制項集合。 它的**Safe**子屬性可讓您指定您認為安全的控制項。 如需詳細資訊，請參閱[在專案專案中提供封裝和部署資訊](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)和[指定安全的 Web 組件](/previous-versions/office/developer/sharepoint2003/dd583154(v=office.11)#specifying-safe-web-parts)。
 
 ## <a name="allowpartiallytrustedcallers-attribute"></a>AllowPartiallyTrustedCallers 屬性
  根據預設，只有執行時間代碼啟用安全性（CAS）系統完全信任的應用程式可以存取共用的 managed 程式碼元件。 以 AllowPartiallyTrustedCallers 屬性標記完全受信任的元件，可讓部分信任元件存取它。
@@ -54,7 +54,7 @@ ms.locfileid: "72984178"
 
     2. 在 [**伺服器陣列管理員**] 頁面上，選擇 [**新增**] 功能表選項
 
-3. 將您的使用者帳戶新增至 WSS_ADMIN_WPG 群組。
+3. 將您的使用者帳戶新增至 WSS_ADMIN_WPG 群組的。
 
 ## <a name="additional-security-resources"></a>其他安全性資源
  如需安全性問題的詳細資訊，請參閱下列內容。

@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/29/2019
 ms.topic: conceptual
 description: 了解所選 Visual Studio 訂用帳戶中所包含的「Azure 社群支援」權益。
-ms.openlocfilehash: 128147833baf450c0d161f39628a0928e9118412
-ms.sourcegitcommit: bcdab788085bd9931d73883fe70cd5831317dca2
+ms.openlocfilehash: 32a1c962e238bfc5ab8083ff643a99a77b699925
+ms.sourcegitcommit: 3a19319e2599bd193fb2ca32020ca53942974bfd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72816548"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "73983756"
 ---
 # <a name="azure-community-support-forum-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶中的 Azure 社群支援論壇
 直接透過「Azure 社群」從精選支援論壇取得協助。  「Azure 社群」權益可讓您存取著重在 Azure 相關主題的論壇集合。
@@ -50,7 +50,9 @@ Azure 社群權益的可用性取決於訂用帳戶層級，如下所示：
 |                                          訂用帳戶層級                                           |     通道      |    優勢    | 可續約？ |
 |-------------------------------------------------------------------------------------------------------|-------------------|---------------|------------|
 |                           Visual Studio Enterprise (Standard)                           | VL, Azure, 零售 |   一年    |    [是]     |
+|                           含 GitHub Enterprise 的 Visual Studio Enterprise                           | VL, Azure, 零售 |   一年    |    [是]     |
 |                          Visual Studio Professional (Standard)                          | VL, Azure, 零售 |   一年    |    [是]     |
+|                          含 GitHub Enterprise 的 Visual Studio Professional                          | VL, Azure, 零售 |   一年    |    [是]     |
 |                              Visual Studio Test Professional (標準訂用帳戶)                               |    VL, 零售     |   一年    |    [是]     |
 |                                       MSDN 平台 (標準)                                       |    VL, 零售     |   一年    |    [是]     |
 | Visual Studio Enterprise (每月雲端)、Visual Studio Professional (每月雲端)、NFR<sup>1</sup> |        All        | 無法使用 |     否     |

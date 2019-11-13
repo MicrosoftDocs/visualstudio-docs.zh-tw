@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c9e75d003031d591c8ae777c606e6f7a2b6ea8c0
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: e3a83ad65232e75ffa74b66035e5c01a8491b426
+ms.sourcegitcommit: 3a19319e2599bd193fb2ca32020ca53942974bfd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72912006"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "73983696"
 ---
 # <a name="da0001-use-stringbuilder-for-concatenations"></a>DA0001：使用 StringBuilder 進行串連
 
@@ -41,4 +41,4 @@ ms.locfileid: "72912006"
 ## <a name="how-to-investigate-a-warning"></a>如何調查警告
  按兩下 [錯誤清單] 視窗中的訊息，巡覽至取樣分析資料的[函式詳細資料檢視](../profiling/function-details-view.md)。 找出程式最常使用字串串連的區段。 對於複雜的字串操作 (包括常見的字串串連作業) 使用 StringBuilder 類別。
 
- 如需如何使用字串的詳細資訊，請參閱 Microsoft Patterns and Practices 文件庫中[第 5 章 - 改善 Managed 程式碼的效能 (英文)](/previous-versions/msp-n-p/ff647790(v=pandp.10))的[字串作業 (英文)](/previous-versions/msp-n-p/ff647790(v=pandp.10)#scalenetchapt05_topic26)一節。
+ 如需如何使用字串的詳細資訊，請參閱 Microsoft Patterns and Practices 文件庫中[第 5 章 - 改善 Managed 程式碼的效能 (英文)](/previous-versions/msp-n-p/ff647790(v=pandp.10))的[字串作業 (英文)](/previous-versions/msp-n-p/ff647790(v=pandp.10)#string-operations)一節。
