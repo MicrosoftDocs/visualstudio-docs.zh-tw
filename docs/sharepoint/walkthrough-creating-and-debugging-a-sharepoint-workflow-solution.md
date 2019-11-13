@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0e62226147fc160c6d967115fbd3aaa52dd69995
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: e51f346501b680b8183f8552aad48ffff84a71dd
+ms.sourcegitcommit: 3a19319e2599bd193fb2ca32020ca53942974bfd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72985070"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "73983722"
 ---
 # <a name="walkthrough-create-and-debug-a-sharepoint-workflow-solution"></a>逐步解說：建立和調試 SharePoint 工作流程方案
   本逐步解說示範如何建立基本的順序工作流程範本。 工作流程會檢查共用文件庫的屬性，以判斷是否已審核檔。 如果檔已經過審核，工作流程就會完成。
@@ -285,7 +285,7 @@ ms.locfileid: "72985070"
 
 - 若要深入瞭解 SharePoint 工作流程活動，請參閱[Sharepoint Foundation 的工作流程活動](/previous-versions/office/developer/sharepoint-2010/ms446847(v=office.14))。
 
-- 若要深入瞭解 Windows Workflow Foundation 活動，請參閱[System.web 命名空間](/dotnet/api/system.workflow.activities&view=netframework-4.8)。
+- 若要深入瞭解 Windows Workflow Foundation 活動，請參閱[System.web 命名空間](/dotnet/api/system.windows.media.color)。
 
 ## <a name="see-also"></a>請參閱
 - [建立 SharePoint 工作流程方案](../sharepoint/creating-sharepoint-workflow-solutions.md)
