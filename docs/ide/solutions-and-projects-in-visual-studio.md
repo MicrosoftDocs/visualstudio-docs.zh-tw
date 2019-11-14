@@ -40,7 +40,7 @@ ms.locfileid: "72621573"
 
 ### <a name="project-file"></a>專案檔
 
-Visual Studio 使用[msbuild](../msbuild/msbuild.md)來建立方案中的每個專案，而且每個專案都包含一個 MSBuild 專案檔案。 副檔名會反映專案的類型，例如C#專案（.csproj）、Visual Basic 專案（. vbproj）或資料庫專案（.dbproj）。 專案檔是一份 XML 檔，其中包含 MSBuild 為了建立您的專案所需的所有資訊和指示，包括內容、平臺需求、版本設定資訊、網頁伺服器或資料庫伺服器設定，以及要執行.
+Visual Studio 使用[msbuild](../msbuild/msbuild.md)來建立方案中的每個專案，而且每個專案都包含一個 MSBuild 專案檔案。 副檔名會反映專案的類型，例如C#專案（.csproj）、Visual Basic 專案（. vbproj）或資料庫專案（.dbproj）。 專案檔是一份 XML 檔，其中包含 MSBuild 為了建立您的專案所需的所有資訊和指示，包括內容、平台需求、版本設定資訊、網頁伺服器或資料庫伺服器設定，以及要執行的工作。
 
 專案檔是以[MSBUILD XML 架構](../msbuild/msbuild-project-file-schema-reference.md)為基礎。 若要查看 Visual Studio 中較新的[sdk 樣式專案檔案](../msbuild/how-to-use-project-sdk.md)的內容，請以滑鼠右鍵按一下**方案總管**中的專案節點，然後選取 **編輯 \<projectname \>** 。 若要查看該樣式的 .NET Framework 和其他專案的內容，請先卸載專案（在**方案總管**中的專案節點上按一下滑鼠右鍵，然後選取 **[卸載專案**]）。 然後，以滑鼠右鍵按一下專案，然後選擇 [**編輯 \<projectname \>** ]。
 
