@@ -1,6 +1,6 @@
 ---
 title: 選項對話方塊、[一般]、[調試] |Microsoft Docs
-ms.date: 11/09/2018
+ms.date: 11/12/2019
 ms.topic: reference
 f1_keywords:
 - vs.debug.options.General
@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bbd99d260ba61d9e3ae9e877ecc1cefb1a22892e
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.openlocfilehash: 528fa04b081937af69e647b01911ed00c1ec40c9
+ms.sourcegitcommit: 9801fc66a14c0f855b9ff601fb981a9e5321819e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72569075"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "74072720"
 ---
 # <a name="general-debugging-options"></a>一般調試選項
 
@@ -137,6 +137,12 @@ ms.locfileid: "72569075"
 - **在應用程式中顯示執行時間工具**：在正在進行調試之 XAML 應用程式的主視窗上，顯示工具列中的**即時視覺化樹狀**命令。 此選項是在 Visual Studio 2015 Update 2 中引進。
 
 - **啟用 Xaml 熱重載**：當您的應用程式正在執行時，可讓您使用 Xaml 的熱重載功能搭配 xaml 程式碼。 （這項功能先前稱為「XAML 編輯後繼續」）
+
+::: moniker range=">= vs-2019" 
+- **僅啟用我的 XAML**：從 Visual Studio 2019 16.4 版開始，**即時視覺化樹狀結構**預設只會顯示分類為使用者程式碼的 XAML。 如果您停用此選項，則工具中會顯示所有產生的 XAML 程式碼。
+
+- **選取元素時關閉選取模式**從 Visual Studio 2019 16.4 版開始，選取專案時，應用程式內工具列元素選取器按鈕（**啟用選取**）會關閉。 如果您停用此選項，元素選取會保持開啟，直到您再次按一下 [應用程式內] 工具列按鈕為止。
+::: moniker-end
 
 在**調試過程中啟用診斷工具**：當您要進行調試時，**診斷工具**視窗隨即出現。
 
