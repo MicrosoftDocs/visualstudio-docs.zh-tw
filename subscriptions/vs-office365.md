@@ -6,12 +6,12 @@ manager: lank
 ms.date: 08/02/2019
 ms.topic: conceptual
 description: 了解某些 Visual Studio 訂用帳戶中所含的 Office 365 權益。
-ms.openlocfilehash: 58bfed3de99e3a3fa0a46e084ea566ae0451c47f
-ms.sourcegitcommit: bdccab4c2dbd50ea8adaaf88c69c9ca32db88099
+ms.openlocfilehash: 2dde8489f15d8bd2e6a5d04045b99aea2245f73d
+ms.sourcegitcommit: ca3bb6db949f5e405f6ffe1afa5f430662c1173f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73144713"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "74099608"
 ---
 # <a name="office-365-proplus-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶中的 Office 365 專業增強版
 
@@ -51,8 +51,10 @@ ms.locfileid: "73144713"
 | 訂用帳戶層級                                                 |     通道                                            | 優勢                                                          | 可續約？    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard)   | VL, Azure, 零售| 可用       |  [是]          |
+| 含 GitHub Enterprise 的 Visual Studio Enterprise  | VL | 可用       |  [是]          |
 | Visual Studio Enterprise (Standard)   | NFR<sup>1</sup> | 無法使用       |  N/A          |
 | Visual Studio Professional (Standard) | VL, Azure, 零售                                       | 無法使用                                                            |  N/A          |
+| 含 GitHub Enterprise 的 Visual Studio Professional | VL | 無法使用         |  N/A          |
 | Visual Studio Test Professional (標準訂用帳戶)                         | VL, 零售                                              | 無法使用                                             |  N/A          |
 | MSDN 平台 (標準)                                          | VL, 零售                                              | 無法使用                                              |  N/A          |
 | Visual Studio Enterprise、Visual Studio Professional (每月雲端) | Azure | 無法使用 | N/A |

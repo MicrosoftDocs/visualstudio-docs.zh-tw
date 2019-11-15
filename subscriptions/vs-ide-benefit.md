@@ -3,15 +3,15 @@ title: Visual Studio 訂用帳戶的 Visual Studio IDE 權益 | Microsoft Docs
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 08/01/2019
+ms.date: 11/14/2019
 ms.topic: conceptual
 description: 了解如何下載和安裝 Visual Studio 訂用帳戶中所含的 Visual Studio IDE。
-ms.openlocfilehash: 5a5acda814739f907aaa36e9b3408527b5ece732
-ms.sourcegitcommit: bcdab788085bd9931d73883fe70cd5831317dca2
+ms.openlocfilehash: 74f7de0272130f88c683dcabefaecccf1554ab12
+ms.sourcegitcommit: ca3bb6db949f5e405f6ffe1afa5f430662c1173f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72816514"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "74099640"
 ---
 # <a name="the-visual-studio-2019-benefit"></a>Visual Studio 2019 權益
 
@@ -62,7 +62,9 @@ ms.locfileid: "72816514"
 | 訂用帳戶層級                                                 |     通道                                            | 優勢                                                          | 可續約？    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (標準、每月雲端)   | VL, Azure, 零售, 選取的 NFR<sup>1</sup> | 可用       |  [是]          |
+| 含 GitHub Enterprise 的 Visual Studio Enterprise   | VL | 可用       |  [是]          |
 | Visual Studio Professional (標準、每月雲端) | VL, Azure, 零售                                       | 可用                                                            |  [是]          |
+| 使用 GitHub Enterprise 的 Visual Studio Professional | VL   | 可用              |  [是]          |
 | Visual Studio Test Professional (標準訂用帳戶)                         | VL, 零售                                              | 可用                                             |  [是]         |
 | MSDN 平台 (標準)                                          | VL, 零售                                              | 無法使用                                              |  N/A          |
 
