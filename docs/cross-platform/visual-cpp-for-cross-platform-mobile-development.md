@@ -1,7 +1,7 @@
 ---
 title: 使用的C++跨平臺行動開發 |Microsoft Docs
 ms.custom: ''
-ms.date: 10/17/2019
+ms.date: 11/14/2019
 ms.technology: vs-ide-mobile
 ms.topic: conceptual
 dev_langs:
@@ -12,14 +12,14 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: 61bb3e17b104759995852959a7396d5a76927cfb
-ms.sourcegitcommit: 8a96a65676fd7a2a03b0803d7eceae65f3fa142b
+ms.openlocfilehash: bc4164ec405aed2941e807934ee8d66b7ae72504
+ms.sourcegitcommit: ca3bb6db949f5e405f6ffe1afa5f430662c1173f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72589047"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "74098972"
 ---
-# <a name="cross-platform-mobile-development-with-c"></a>跨平臺行動裝置開發C++
+# <a name="cross-platform-mobile-development-with-c"></a>使用 C++ 進行跨平台行動裝置應用程式開發
 
 您可以使用 Visual Studio C++中提供的跨平臺工具，建立 IOS、Android 和 Windows 裝置的原生應用程式。 **使用C++** 的行動裝置開發是 Visual Studio 安裝程式中可用的工作負載。 它會安裝適用于跨平臺開發共用程式庫和原生應用程式所需的 Sdk 和工具。 安裝時，您可以使用C++來建立可在 IOS 和 Android 裝置和平臺、windows、microsoft Store 和 Xbox 上執行的程式碼。
 
@@ -42,10 +42,6 @@ ms.locfileid: "72589047"
 如果您原來使用的是 Android 或 iOS 程式開發，我們有一些很棒的材料協助您開始使用。 Visual Studio 是出色且強大的開發環境。 若要了解如何使用它，請嘗試 [Android 開發人員快速入門](/previous-versions/windows/apps/dn275875\(v=win.10\))或 [iOS 開發人員快速入門](/previous-versions/windows/apps/jj657966\(v=win.10\))。 這些文章將為您介紹如何 Visual Studio，以及開發適用于 Windows 和 Windows Store 的跨平臺應用程式所需的概念。 若要開始撰寫第一個 iOS 和 Android 的跨平臺應用程式，請參閱[在 Android 和 iOS 上建立 OPENGL ES 應用程式](../cross-platform/build-an-opengl-es-application-on-android-and-ios.md)。
 
 具有工作負載的C++行動裝置開發包含數個範本，可協助您開始使用您的應用程式：
-
-- OpenGLES 2 應用程式 (Android、iOS、Windows 通用)
-
-  建立一個方案來包含一組用以建置 Android Native Activity 應用程式、iOS 應用程式和通用 Windows 應用程式的專案，以及共用的 C++ 程式碼程式庫。 這些應用程式使用以通用 C++ OpenGL ES 程式碼所建立的平台特定程式庫，在每個應用程式中繪製相同的旋轉立方體。 若要使用此範本，請在安裝 Visual Studio 時包含**通用 Windows 平臺開發**工作負載。
 
 - Native-Activity 應用程式 (Android)
 
