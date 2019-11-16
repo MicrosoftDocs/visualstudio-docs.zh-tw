@@ -7,16 +7,16 @@ ms.date: 02/01/2019
 ms.prod: visual-studio-dev16
 ms.technology: vs-azure
 ms.topic: include
-ms.openlocfilehash: 124f60a4a632115625524b4e30ab28f795d41660
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
+ms.openlocfilehash: 7eae92f7c65208dfeda9cd19e14eaa627e12a22a
+ms.sourcegitcommit: bbff780cda82bb64862d77fe8f407f1803beb876
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70312117"
+ms.lasthandoff: 11/16/2019
+ms.locfileid: "74142185"
 ---
 有了 Visual Studio，您就可以輕鬆地建立、調試和執行容器化的 ASP.NET Core 應用程式，並將其發佈至 Azure Container Registry （ACR）、Docker Hub、Azure App Service 或您自己的容器登錄。 在本文中，我們將發佈到 ACR。
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>Prerequisites
 
 * [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
 * 已安裝**網頁程式開發**、**Azure Tools** 工作負載及(或) **.NET Core 跨平台開發** 工作負載的 [Visual Studio 2019](https://visualstudio.microsoft.com/downloads)
@@ -25,7 +25,7 @@ ms.locfileid: "70312117"
 
 ## <a name="installation-and-setup"></a>安裝和設定
 
-若要安裝 Docker，請先檢閱 [Docker Desktop for Windows：What to know before you install](https://docs.docker.com/docker-for-windows/install/#what-to-know-before-you-install) (安裝前須知) 中的資訊。 接下來，安裝 [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows)。
+針對 Docker 安裝，請先參閱適用于[Windows 的 Docker Desktop 中的資訊：安裝之前的須知](https://docs.docker.com/docker-for-windows/install/#what-to-know-before-you-install)事項。 接下來，安裝 [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows)。
 
 ## <a name="add-a-project-to-a-docker-container"></a>將專案新增至 Docker 容器
 
@@ -93,6 +93,18 @@ CONTAINER ID        IMAGE                  COMMAND               CREATED        
 cf5d2ef5f19a        hellodockertools:dev   "tail -f /dev/null"   2 minutes ago       Up 2 minutes        0.0.0.0:52036->80/tcp, 0.0.0.0:44342->443/tcp   priceless_cartwright
 ```
 
+## <a name="containers-window"></a>容器視窗
+
+如果您有 Visual Studio 2019 16.4 版或更新版本，您可以使用 [**容器**] 視窗來查看您的電腦上執行中的容器，以及您可用的映射。
+
+使用 IDE 中的 [搜尋] 方塊開啟 [**容器**] 視窗（按**Ctrl**+**Q**以使用它），輸入 `container`，然後從清單中選擇 [**容器**] 視窗。
+
+您可以在方便的位置（例如編輯器底下）移動 [**容器**] 視窗，方法是將它移到視窗放置參考後面，然後遵循。
+
+在視窗中，尋找您的容器並逐步執行每個索引標籤，以查看環境變數、埠對應、記錄和檔案系統。
+
+如需詳細資訊，請參閱[在 Visual Studio 中查看和診斷容器和映射](../../view-and-diagnose-containers.md)。
+
 ## <a name="publish-docker-images"></a>發行 Docker 映像
 
 一旦應用程式的開發和偵錯循環完成，您就可以建立應用程式的生產映像。
@@ -103,7 +115,7 @@ cf5d2ef5f19a        hellodockertools:dev   "tail -f /dev/null"   2 minutes ago  
 1. 選擇 [建立新的 Azure Container Registry]，然後按一下 [發佈]。
 1. 在 [建立新的 Azure Container Registry] 中填入您想要的值。
 
-    | 設定      | 建議的值  | 說明                                |
+    | 設定      | 建議的值  | 描述                                |
     | ------------ |  ------- | -------------------------------------------------- |
     | **DNS 首碼** | 全域唯一的名稱 | 用以唯一識別容器登錄的名稱。 |
     | **訂用帳戶** | 選擇您的訂用帳戶 | 要使用的 Azure 訂用帳戶。 |
