@@ -3,15 +3,15 @@ title: Visual Studio 訂用帳戶的 CloudPilot 權益 | Microsoft Docs
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/30/2019
+ms.date: 11/13/2019
 ms.topic: conceptual
 description: 了解所選 Visual Studio 訂用帳戶中所含的 CloudPilot 權益
-ms.openlocfilehash: 5f8592b15f61dff454b6fe29d4d207dd609ab461
-ms.sourcegitcommit: bcdab788085bd9931d73883fe70cd5831317dca2
+ms.openlocfilehash: 253a1b1c3b6996a200a236661d621c43975cb1ed
+ms.sourcegitcommit: ca3bb6db949f5e405f6ffe1afa5f430662c1173f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72816500"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "74099615"
 ---
 # <a name="the-cloudpilot-benefit-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶的 CloudPilot 權益
 將您的應用程式移至 Microsoft Azure 只需幾個簡單的步驟。 在幾分鐘內即可找出需進行程式碼變更 (細至程式碼行)，以成功遷移至：容器、VM、App Services、SQL Azure 和 (或) SQL MI。 然後，透過使用 ASR、DMA 和 DMS 的精靈，將應用程式遷移至 Azure。
@@ -59,7 +59,9 @@ ms.locfileid: "72816500"
 | 訂用帳戶層級                                                 |     通道                                            | 優勢                                                          | 可續約？    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard)   | VL, Azure, 零售, | 2 個授權、90 天、無限次數掃描       |  否。  僅提供給新訂閱者使用          |
+| 含 GitHub Enterprise 的 Visual Studio Enterprise   | VL | 2 個授權、90 天、無限次數掃描       |  否。  僅提供給新訂閱者使用          |
 | Visual Studio Professional (Standard) | VL, Azure, 零售                                       | 1 個授權、30 天、一次掃描                                                            |  否。  僅提供給新訂閱者使用           |
+| 含 GitHub Enterprise 的 Visual Studio Professional | VL | 1 個授權、30 天、一次掃描                                                            |  否。  僅提供給新訂閱者使用           |
 | Visual Studio Test Professional (標準訂用帳戶)                         | VL, 零售                                              | 無法使用                                             |  N/A           |
 | MSDN 平台 (標準)                                          | VL, 零售                                              | 無法使用                                              |  N/A          |
 | Visual Studio Enterprise (Standard)  | NFR<sup>1</sup> |無法使用  | N/A |
@@ -83,4 +85,4 @@ ms.locfileid: "72816500"
 
 ## <a name="next-steps"></a>後續步驟
 
-如果您尚未啟用訂用帳戶隨附的 Azure 權益，請造訪[https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) ，然後按一下 [工具] 類別中的 [azure] 磚，以設定您的 azure 訂用帳戶，並兌換您的 azure DevTest 個別信用額度。
+如果您尚未啟用訂用帳戶隨附的 Azure DevTest 個人信用額度權益，請造訪[https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)並按一下 [工具] 類別中的 [azure] 磚，以設定您的 azure 訂用帳戶，並兌換您的 azure DevTest 個別信用額度。
