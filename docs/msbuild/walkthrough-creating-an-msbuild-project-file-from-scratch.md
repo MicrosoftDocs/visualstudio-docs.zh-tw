@@ -20,7 +20,7 @@ ms.locfileid: "72748025"
 # <a name="walkthrough-create-an-msbuild-project-file-from-scratch"></a>逐步解說：從頭開始建立 MSBuild 專案檔
 以 .NET Framework 為目標的程式設計語言，使用 MSBuild 專案檔描述及控制應用程式建置流程。 當您使用 Visual Studio 建立 MSBuild 專案檔時，系統會自動將適當的 XML 加入該檔案。 不過，您可能會發現，了解 XML 的組織方式，以及您如何對其進行變更以控制組建會非常有用。
 
- 如需建立C++專案之專案檔的詳細資訊，請參閱[MSBuildC++（）](/cpp/build/msbuild-visual-cpp)。
+ 如需建立C++專案之專案檔的詳細資訊，請參閱[MSBuild（C++）](/cpp/build/msbuild-visual-cpp)。
 
  此逐步解說顯示如何僅使用文字編輯器以累加方式建立基本專案檔。 此逐步解說遵循下列步驟：
 
@@ -81,7 +81,7 @@ ms.locfileid: "72748025"
 
 7. 在命令提示字元中輸入 **helloworld**，以測試應用程式。
 
-     此時應該會顯示 [Hello, world!] 訊息。
+     此時應該會顯示 **Hello, world!** 訊息。
 
 8. 在命令提示字元中輸入**del helloworld.exe**，以刪除應用程式。
 
@@ -178,7 +178,7 @@ ms.locfileid: "72748025"
 
 2. 輸入 **helloworld** 來測試應用程式。
 
-     此時應該會顯示 [Hello, world!] 訊息。
+     此時應該會顯示 **Hello, world!** 訊息。
 
 > [!NOTE]
 > 提升詳細資訊層級，即可查看組建的更多詳細資料。 若要將詳細資訊層級設為「詳細」，請在命令提示字元處輸入下列命令：
