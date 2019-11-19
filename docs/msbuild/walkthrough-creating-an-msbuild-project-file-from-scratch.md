@@ -20,7 +20,7 @@ ms.locfileid: "72748025"
 # <a name="walkthrough-create-an-msbuild-project-file-from-scratch"></a>逐步解說：從頭開始建立 MSBuild 專案檔
 以 .NET Framework 為目標的程式設計語言，使用 MSBuild 專案檔描述及控制應用程式建置流程。 當您使用 Visual Studio 建立 MSBuild 專案檔時，系統會自動將適當的 XML 加入該檔案。 不過，您可能會發現，了解 XML 的組織方式，以及您如何對其進行變更以控制組建會非常有用。
 
- 如需建立C++專案之專案檔的詳細資訊，請參閱[MSBuildC++（）](/cpp/build/msbuild-visual-cpp)。
+ 如需建立C++專案之專案檔的詳細資訊，請參閱[MSBuild（C++）](/cpp/build/msbuild-visual-cpp)。
 
  此逐步解說顯示如何僅使用文字編輯器以累加方式建立基本專案檔。 此逐步解說遵循下列步驟：
 
