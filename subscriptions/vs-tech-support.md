@@ -3,15 +3,15 @@ title: 技術支援權益
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/29/2019
+ms.date: 11/18/2019
 ms.topic: conceptual
 description: 了解如何啟用 Visual Studio 訂用帳戶所包含的技術支援權益。
-ms.openlocfilehash: 6d76fa3bdff63a31598fb9a977f6ed024d214af1
-ms.sourcegitcommit: ab18c9d850192fc9ccec10961f1126e8b0cba8da
+ms.openlocfilehash: f88cf221f47f2b8aa89a733a4794e424ac938261
+ms.sourcegitcommit: 5c9ca18eadc7ed0ed095cc5a3e1df40bbc13e70c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73061150"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74161977"
 ---
 # <a name="activate-and-use-the-technical-support-benefit-in-visual-studio-subscriptions"></a>啟用並使用 Visual Studio 訂用帳戶中的技術支援權益
 如果產品仍在[支援生命週期](https://support.microsoft.com/lifecycle/search)的主要支援階段中，Visual Studio 訂用帳戶技術支援權益可為其解決**非生產環境**中的協助修正問題。 自權益啟用的 1 年內，Visual Studio Enterprise 標準和年度雲端訂用帳戶可接收四個事件，而 Visual Studio Professional 標準和年度雲端訂用帳戶可接收兩個事件。 您必須在訂用帳戶為最新狀態時啟用權益。
@@ -112,7 +112,9 @@ Visual Studio IDE 和 Azure DevOps Server 等開發人員工具將透過 Visual 
 | 訂用帳戶層級                                                 |     通道                                            | 優勢                                                          | 可續約？    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard)   | VL, Azure, 零售, 選取的 NFR<sup>1</sup> | 4 個事件       |  [是]|
+| 含 GitHub Enterprise 的 Visual Studio Enterprise | VL | 4 個事件       |  [是]|
 | Visual Studio Professional (Standard) | VL、Azure、零售、挑選過的 NFR<sup>2</sup>                                        | 2 個事件                                                          |[是]         |
+| 含 GitHub Enterprise 的 Visual Studio Professional | VL                                     | 2 個事件                                                          |[是]         |
 | Visual Studio Test Professional (標準訂用帳戶)                         | VL, 零售                                              | 2 個事件                                             |  [是]         |
 | MSDN 平台 (標準)                                          | VL, 零售                                              | 2 個事件                                               | [是]         |
 | Visual Studio Enterprise、Visual Studio Professional (每月雲端) | Azure                                       | 無法使用                                                           |NA|
@@ -123,3 +125,9 @@ Visual Studio IDE 和 Azure DevOps Server 等開發人員工具將透過 Visual 
 <sup>2</sup> *包括：Imagine Standard。*
 
 不確定您使用哪一個訂用帳戶？  連線到 [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) 以查看指派給您的電子郵件地址的所有訂用帳戶。 若沒有看到您的所有訂用帳戶，可能有一或多個訂用帳戶是指派到不同的電子郵件地址。  您必須以該電子郵件地址登入才能查看對應的訂用帳戶。
+
+## <a name="next-steps"></a>後續步驟
+請務必啟用這些絕佳的權益，以充分運用您的 Visual Studio 訂用帳戶：
+- [Visual Studio](vs-ide-benefit.md)
+- [Azure DevOps](vs-azure-devops.md)
+- [Azure DevTest 個人點數](vs-azure.md)

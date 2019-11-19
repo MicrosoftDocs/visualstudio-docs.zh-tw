@@ -3,15 +3,15 @@ title: Parasoft Virtualize/SOAtest Professional Desktop 權益 | Microsoft Docs
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/31/2019
+ms.date: 11/18/2019
 ms.topic: conceptual
 description: 了解如何啟用 Visual Studio 訂用帳戶中所含的 Parasoft Virtualize/SOA Test Professional 訂用帳戶。
-ms.openlocfilehash: a1bd6525df65ee8cc0c9f3dd9dfd60673dbb6df1
-ms.sourcegitcommit: bcdab788085bd9931d73883fe70cd5831317dca2
+ms.openlocfilehash: 036b265f9ca1accc7027477abfc27ce4e66c4033
+ms.sourcegitcommit: 5c9ca18eadc7ed0ed095cc5a3e1df40bbc13e70c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72816493"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74161935"
 ---
 # <a name="parasoft-virtualizesoatest-professional-desktop-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶中的 Parasoft Virtualize/SOAtest Professional Desktop
 
@@ -73,7 +73,9 @@ ms.locfileid: "72816493"
 | 訂用帳戶層級                                                 |     通道                                            | 優勢                                                          | 可續約？    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard)   | VL, Azure, 零售, 選取的 NFR<sup>1</sup> | 6 個月       |  [是]       |
+| 含 GitHub Enterprise 的 Visual Studio Enterprise | VL | 6 個月       |  [是]       |
 | Visual Studio Professional (Standard) | VL, Azure, 零售                                       | 無法使用                                                           |NA         |
+| 含 GitHub Enterprise 的 Visual Studio Professional | VL                                      | 無法使用                                                           |NA         |
 | Visual Studio Test Professional (標準訂用帳戶)                         | VL, 零售                                              | 無法使用                                                           |NA         |
 | MSDN 平台 (標準)                                          | VL, 零售                                              | 無法使用                                                           |NA         |
 | Visual Studio Enterprise、Visual Studio Professional (每月雲端) | Azure                                       | 無法使用                                                           |NA|

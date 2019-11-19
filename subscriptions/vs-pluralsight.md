@@ -3,15 +3,15 @@ title: Visual Studio 訂用帳戶的 Pluralsight 權益 | Microsoft Docs
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 08/02/2019
+ms.date: 11/18/2019
 ms.topic: conceptual
 description: 了解有關隨附於所選 Visual Studio 訂用帳戶的 Pluralsight 訓練課程訂用帳戶。
-ms.openlocfilehash: 25a699f0e97f88fefaaf5b62f752ef579c0cd736
-ms.sourcegitcommit: 689ba54ea14257d13031de881f5d4fe937a36f56
+ms.openlocfilehash: 7db7858b95ca0b78ea54cebc394c3d57de53305a
+ms.sourcegitcommit: 5c9ca18eadc7ed0ed095cc5a3e1df40bbc13e70c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "71342369"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74161952"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶中的 Pluralsight 訓練課程權益
 
@@ -29,9 +29,9 @@ ms.locfileid: "71342369"
    > [!IMPORTANT]
    > 當您按一下 Pluralsight 權益磚上的 [取得代碼] 連結時，您可能會收到下列訊息：
    >
-   > **「請注意： 如果您先前透過 Visual Studio 訂用帳戶啟用其他 Pluralsight 供應項目，此代碼可能無法讓您建立新的 Pluralsight 帳戶。」**
+   > **「請注意：如果您先前透過 Visual Studio 訂閱啟用其他 Pluralsight 供應項目，此代碼可能無法讓您建立新的 Pluralsight 帳戶。」**
 
-2. 您會收到已成功擷取優待券代碼的通知。  按一下 **[啟用]** 。
+2. 您會收到已順利擷取優待券代碼的通知。  按一下 [啟動]。
 
 3. 系統會將您重新導向至 Visual Studio 訂閱隨附的 Pluralsight 權益頁面。
    - 在表單中提供要求的連絡資訊
@@ -57,16 +57,18 @@ ms.locfileid: "71342369"
 |                          訂用帳戶層級                          |     通道      |    優勢    |   可續約？   |
 |----------------------------------------------------------------------|-------------------|---------------|----------------|
 |          Visual Studio Enterprise (Standard)           | VL, Azure, 零售 |   6 個月    | 是<sup>2</sup> |
+|          含 GitHub Enterprise 的 Visual Studio Enterprise          | VL  |   6 個月    | 是<sup>2</sup> |
 |         Visual Studio Professional (Standard)          | VL, Azure, 零售 |   3 個月    | 是<sup>2</sup> |
-|              Visual Studio Test Professional (標準訂用帳戶)              |    VL, 零售     |   3 個月    | 否 |
-|                      MSDN 平台 (標準)                       |    VL, 零售     |   3 個月    | 否 |
+|         含 GitHub Enterprise 的 Visual Studio Professional          | VL  |   3 個月    | 是<sup>2</sup> |
+|              Visual Studio Test Professional (標準訂用帳戶)              |    VL, 零售     |   3 個月    | 是<sup>2</sup>  |
+|                      MSDN 平台 (標準)                       |    VL, 零售     |   3 個月    | 是<sup>2</sup>  |
 | Visual Studio Enterprise、Visual Studio Professional (每月雲端) |       Azure       | 無法使用 |       NA       |
 |             Visual Studio Enterprise (NFR<sup>1</sup>)              |      計畫      | 無法使用 |       NA       |
 ||
 
-<sup>1</sup>  *包含：禁止轉售 (NFR)、Visual Studio 產業夥伴 (VSIP)、BizSpark、MCT 軟體與服務開發人員、MCT 軟體與服務、最有價值專家 (MVP)、區域經理 (RD)、Microsoft 合作夥伴網路 (MPN)、FTE、Imagine。*
+<sup>1</sup>  *包括：禁止轉售（NFR）、Visual Studio 產業夥伴（VSIP）、BizSpark、MCT Software & 服務開發人員、MCT 軟體 & 服務、最有價值專家（MVP）、區域主管（RD）、Microsoft 合作夥伴網路（MPN）、FTE、假設。*
 
-<sup>2</sup>  *特定 Visual Studio 訂閱中的 Pluralsight 權益會隨您的訂閱更新而更新。例如，如果您有年度訂用會每年更新，則每年當您更新時都會提供權益給您。如果您有多年期訂閱，則在訂閱期間會提供一次 Pluralsight 權益給您。如果您更新多年期訂閱，更新之後會再次提供權益。*
+<sup>2</sup>  *當您的訂用帳戶更新時，所選 Visual Studio 訂閱的 Pluralsight 權益會更新。例如，如果您有每年續訂的年度訂用帳戶，當您續訂時，每年都會提供權益。如果您有多年訂閱，訂用帳戶期間會提供您一次的 Pluralsight 權益。 如果您更新多年訂閱，此權益會在更新後再次提供。*
 
 > [!NOTE]
 > Microsoft 不再於雲端訂用帳戶中提供 Visual Studio Professional 年度訂用帳戶和 Visual Studio Enterprise 年度訂用帳戶。 現有的客戶體驗，以及更新、增加、減少或取消其訂用帳戶的能力將不會改變。 我們鼓勵新的客戶移至 [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) 來探索 Visual Studio 的不同購買選項。
@@ -97,3 +99,5 @@ ms.locfileid: "71342369"
 
 ## <a name="next-steps"></a>後續步驟
 一旦您的帳戶建立完成，即準備好開始訓練課程。  請前往 [https://www.pluralsight.com](http://www.pluralsight.com)，然後點選頁面右上角的 [登入] 開始新的課程，或返回已在進行中的課程。
+
+啟用您的[Azure DevTest 個別點數](vs-azure.md)，以利用您自己的開發沙箱。 
