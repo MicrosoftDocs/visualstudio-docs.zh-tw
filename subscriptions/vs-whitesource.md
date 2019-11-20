@@ -3,15 +3,15 @@ title: WhiteSource Bolt 權益 | Microsoft Docs
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 08/01/2019
+ms.date: 11/18/2019
 ms.topic: conceptual
 description: 了解如何啟用 Visual Studio 訂用帳戶所含的 WhiteSource Bolt 訂用帳戶。
-ms.openlocfilehash: 54248c0291fe54c2cb7db9155233d08e96991581
-ms.sourcegitcommit: bcdab788085bd9931d73883fe70cd5831317dca2
+ms.openlocfilehash: fb403053d101cf2edf8677c7bcce494ae4e2d21e
+ms.sourcegitcommit: 5c9ca18eadc7ed0ed095cc5a3e1df40bbc13e70c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72816406"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "74174133"
 ---
 # <a name="whitesource-bolt-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶中的 WhiteSource Bolt
 
@@ -38,7 +38,7 @@ ms.locfileid: "72816406"
 9. 如需詳細資訊，請瀏覽 WhiteSource Bolt [常見問題集頁面](https://bolt.whitesourcesoftware.com/azure/faq/) \(英文\)。 
 
 ## <a name="eligibility"></a>資格
-Visual Studio Marketplace 中現已免費提供 WhiteSource Bolt。 
+[WhiteSource Bolt](https://marketplace.visualstudio.com/search?term=whitesource&target=AzureDevOps&category=All%20categories&sortBy=Relevance) is now available free in the [Visual Studio Marketplace. 
 
 ## <a name="support-resources"></a>支援資源
 - 需要 WhiteSource Bolt 的說明嗎？  在 https://www.whitesourcesoftware.com/vse_whitesource_bolt/ 與 WhiteSource Bolt 代表即時聊天
@@ -46,4 +46,7 @@ Visual Studio Marketplace 中現已免費提供 WhiteSource Bolt。
 - 是否有關於 Visual Studio IDE、Azure DevOps Services 或其他 Visual Studio 產品或服務的問題？  前往 [Visual Studio 支援](https://visualstudio.microsoft.com/support/)
 
 ## <a name="next-steps"></a>後續步驟
-身為 Visual Studio 訂閱者，您不需要額外收費即可使用 Microsoft Azure。  有了[每月 Azure DevTest 的個別點數](vs-azure.md)，azure 就是您用於開發/測試的個人沙箱。  您可以佈建虛擬機器、雲端服務和其他 Azure 資源。  信用額度會依訂用帳戶層級而異。
+請務必啟用這些絕佳的權益，以充分運用您的 Visual Studio 訂用帳戶：
+- [Visual Studio](vs-ide-benefit.md)
+- [Azure DevOps](vs-azure-devops.md)
+- [Azure DevTest 個人點數](vs-azure.md)

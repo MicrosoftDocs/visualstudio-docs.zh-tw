@@ -3,15 +3,15 @@ title: Visual Studio 訂用帳戶的 Windows 開發人員帳戶權益 | Microsof
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/31/2019
+ms.date: 11/18/2019
 ms.topic: conceptual
 description: 了解 Visual Studio 訂用帳戶隨附的 Windows 開發人員帳戶。
-ms.openlocfilehash: e7dc24fef7328dee38f9aca92f3676573b0143ef
-ms.sourcegitcommit: bcdab788085bd9931d73883fe70cd5831317dca2
+ms.openlocfilehash: 662dc6d911903a4c0d2c0a77382647639bb25d07
+ms.sourcegitcommit: 5c9ca18eadc7ed0ed095cc5a3e1df40bbc13e70c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72816425"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "74174109"
 ---
 # <a name="windows-developer-account-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶中的 Windows 開發人員帳戶
 Windows 開發人員帳戶 (包含在所選取的 Visual Studio 訂用帳戶中) 可讓您將免費和付費 Windows 應用程式提交至 Windows 市集。
@@ -43,13 +43,15 @@ Windows 開發人員帳戶 (包含在所選取的 Visual Studio 訂用帳戶中)
 | 訂用帳戶層級                                                 |     通道                                            | 優勢                                                          | 可續約？    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard)   | VL, Azure, 零售, 選取的 NFR<sup>1</sup> | 包含       |  [是]|
+| 含 GitHub Enterprise 的 Visual Studio Enterprise   | VL  | 包含       |  [是]|
 | Visual Studio Professional (Standard) | VL, Azure, 零售                                       | 包含                                                            |[是]|
+| 含 GitHub Enterprise 的 Visual Studio Professional | VL                                        | 包含                                                            |[是]|
 | Visual Studio Test Professional (標準訂用帳戶)                         | VL, 零售                                              | 無法使用                                            |  NA|
 | MSDN 平台 (標準)                                          | VL, 零售                                              |  無法使用                                            |  NA|
 | Visual Studio Enterprise、Visual Studio Professional (每月雲端) | Azure                                       | 無法使用                                                           |NA|
 ||
 
-<sup>1</sup>  *包括：禁止轉售（NFR）、FTE、Visual Studio 產業夥伴（VSIP）、BizSpark、MCT Software & Services 開發人員。排除： Microsoft 合作夥伴網路（MPN）、想像、最有價值專家（MVP）、區域主管（RD）、MCT Software & Services。*
+<sup>1</sup>  *Includes:  Not for Resale (NFR), FTE, Visual Studio Industry Partner (VSIP), BizSpark, MCT Software & Services Developer. Excludes:  Microsoft Partner Network (MPN), Imagine, Most Valuable Professional (MVP), Regional Director (RD), MCT Software & Services.*
 
 > [!NOTE]
 > Microsoft 不再於雲端訂用帳戶中提供 Visual Studio Professional 年度訂用帳戶和 Visual Studio Enterprise 年度訂用帳戶。 現有的客戶體驗，以及更新、增加、減少或取消其訂用帳戶的能力將不會改變。 我們鼓勵新的客戶移至 [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) 來探索 Visual Studio 的不同購買選項。
@@ -63,4 +65,7 @@ Windows 開發人員帳戶 (包含在所選取的 Visual Studio 訂用帳戶中)
 - 是否有關於 Visual Studio IDE、Azure DevOps Services 或其他 Visual Studio 產品或服務的問題？  前往 [Visual Studio 支援](https://visualstudio.microsoft.com/support/)
 
 ## <a name="next-steps"></a>後續步驟
-Azure 是您個人的開發/測試沙箱。  您可以佈建虛擬機器、雲端服務和其他 Azure 資源。 請務必啟用您的[azure 權益](vs-azure.md)，以開始使用您的 azure DevTest 個人點數。
+請務必啟用這些絕佳的權益，以充分運用您的 Visual Studio 訂用帳戶：
+- [Visual Studio](vs-ide-benefit.md)
+- [Azure DevOps](vs-azure-devops.md)
+- [Azure DevTest 個人點數](vs-azure.md)
