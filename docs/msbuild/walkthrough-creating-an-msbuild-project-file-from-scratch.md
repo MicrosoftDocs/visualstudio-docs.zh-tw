@@ -267,7 +267,7 @@ ms.locfileid: "72748025"
 
 3. 輸入 **Bin\MSBuildSample** 來測試應用程式。
 
-     此時應該會顯示 [Hello, world!] 訊息。
+     此時應該會顯示 **Hello, world!** 訊息。
 
 ## <a name="add-build-targets"></a>加入建置目標
  接下來，再將兩個目標加入專案檔，如下所示：
@@ -342,7 +342,7 @@ ms.locfileid: "72748025"
 
 3. 輸入 **Bin\Greetings** 來測試 Greetings 應用程式。
 
-     此時應該會顯示 [Hello, world!] 訊息。
+     此時應該會顯示 **Hello, world!** 訊息。
 
 4. 輸入 **msbuild helloworld.csproj -t:clean** 來刪除 MSBuildSample 應用程式。
 
