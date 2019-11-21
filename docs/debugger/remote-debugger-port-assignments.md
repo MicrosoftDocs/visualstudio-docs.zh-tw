@@ -1,5 +1,5 @@
 ---
-title: 遠端偵錯程式埠指派 |Microsoft Docs
+title: Remote Debugger Port Assignments | Microsoft Docs
 ms.custom: ''
 ms.date: 05/18/2018
 ms.topic: reference
@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cf3d3ce704d517224452731c52a891ac2263f738
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 2d99a1aff2c241e81e8914a247d2f6d8981ee273
+ms.sourcegitcommit: 9c7d8693108ecd2042a70c04cebe3c44af657baf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72730246"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "74239449"
 ---
 # <a name="remote-debugger-port-assignments"></a>遠端偵錯工具連接埠指派
 Visual Studio 遠端偵錯工具可以應用程式或背景服務的形式執行。 當以應用程式的形式執行時，它會使用預設指派的連接埠，如下所示：
@@ -29,7 +29,7 @@ Visual Studio 遠端偵錯工具可以應用程式或背景服務的形式執行
 
 - Visual Studio 2012：4016
 
-  換句話說，指派給遠端偵錯工具的連接埠號碼會隨著每個版本遞增 2。 您可以設定您要的不同連接埠號碼。 我們將在稍後的章節中說明如何設定連接埠號碼。
+換句話說，指派給遠端偵錯工具的連接埠號碼會隨著每個版本遞增 2。 您可以設定您要的不同連接埠號碼。 我們將在稍後的章節中說明如何設定連接埠號碼。
 
 ## <a name="the-remote-debugger-port-on-32-bit-operating-systems"></a>32 位元作業系統上的遠端偵錯工具連接埠
 
@@ -48,10 +48,10 @@ Visual Studio 遠端偵錯工具可以應用程式或背景服務的形式執行
 
 ## <a name="the-remote-debugger-port-on-64-bit-operating-systems"></a>64 位元作業系統上的遠端偵錯工具連接埠
 ::: moniker range=">=vs-2019"
- 當64位版本的遠端偵錯程式啟動時，預設會使用主要端口（4024）。  如果您要對32位進程進行偵錯工具，64位版本的遠端偵錯程式會在埠4025上啟動32位版本的遠端偵錯程式（以1遞增的主要端口號碼）。 如果您執行 32 位元遠端偵錯工具，它會使用 4024，而不會使用 4025。
+ When the 64-bit version of the remote debugger is started, it uses the main port (4024) by default.  If you debug a 32-bit process, the 64-bit version of the remote debugger starts a 32-bit version of the remote debugger on port 4025 (the main port number incremented by 1). 如果您執行 32 位元遠端偵錯工具，它會使用 4024，而不會使用 4025。
 ::: moniker-end
 ::: moniker range="vs-2017"
- 當64位版本的遠端偵錯程式啟動時，預設會使用主要端口（4022）。  如果您要對32位進程進行偵錯工具，64位版本的遠端偵錯程式會在埠4023上啟動32位版本的遠端偵錯程式（以1遞增的主要端口號碼）。 如果您執行 32 位元遠端偵錯工具，它會使用 4022，而不會使用 4023。
+ When the 64-bit version of the remote debugger is started, it uses the main port (4022) by default.  If you debug a 32-bit process, the 64-bit version of the remote debugger starts a 32-bit version of the remote debugger on port 4023 (the main port number incremented by 1). 如果您執行 32 位元遠端偵錯工具，它會使用 4022，而不會使用 4023。
 :::moniker-end
 
  此連接埠可從命令列設定：**Msvsmon /wow64port \<連接埠號碼>** 。

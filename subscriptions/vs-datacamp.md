@@ -6,12 +6,12 @@ manager: lank
 ms.date: 11/13/2019
 ms.topic: conceptual
 description: 了解所選取 Visual Studio 訂用帳戶隨附的 DataCamp 訓練課程訂用帳戶。
-ms.openlocfilehash: 526b0f25fc745cee25ce2300a1326041e86df7db
-ms.sourcegitcommit: ca3bb6db949f5e405f6ffe1afa5f430662c1173f
+ms.openlocfilehash: ea889814373fa7c970e905bb4a845d5ca67c92e7
+ms.sourcegitcommit: 6f25855de9db455e6d38bc105057d2ed1e7454b9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "74099654"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "74199872"
 ---
 # <a name="the-datacamp-training-benefit-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶中的 DataCamp 訓練課程權益
 合格的 Visual Studio 訂閱包含 DataCamp 訂閱。  透過 DataCamp，您可以輕鬆從瀏覽器學習所需的所有資料科學技能。 您可以選擇何時學習及學習內容。 不需要安裝任何軟體且沒有任何特殊硬體需求，學習資料科學比以往更容易。
@@ -37,7 +37,7 @@ ms.locfileid: "74099654"
    > [!div class="mx-imgBorder"]
    > ![DataCamp 選擇路徑](_img/vs-datacamp/vs-datacamp-choose-path.png)
 
-5. 選取您的路徑之後，您可以藉由選取目標來進一步限定學習路徑。  例如，如果您選擇 [Develop your Data Science Skillset] (開發您的資料科學技能集) 路徑，您會看到下列選項。 選擇一個選項，或按一下 [**我不確定]。 顯示所有的事業路徑**，以建立更廣泛的路徑。
+5. 選取您的路徑之後，您可以藉由選取目標來進一步限定學習路徑。  例如，如果您選擇 [Develop your Data Science Skillset] (開發您的資料科學技能集) 路徑，您會看到下列選項。 Choose an option, or click **I am not sure.  Show me all career paths** to create a broader path.
    > [!div class="mx-imgBorder"]
    > ![DataCamp 資料科學技能集](_img/vs-datacamp/vs-datacamp-datascience.png)
 
@@ -53,7 +53,7 @@ ms.locfileid: "74099654"
 您可以隨時停止，並在下一個工作階段繼續訓練。  只要前往 [http://www.datacamp.com](http://www.datacamp.com)，並登入。  您會看到儀表板，並可以直接從暫停的地方繼續訓練。 只要按一下 [Continue Track] (繼續路徑) 即可。
 
 > [!div class="mx-imgBorder"]
-> ![DataCamp 繼續訓練](_img/vs-datacamp/vs-datacamp-continue-training.png)
+> ![DataCamp Continue Training](_img/vs-datacamp/vs-datacamp-continue-training.png)
 
 ## <a name="eligibility"></a>資格
 | 訂用帳戶層級                                                 |     通道                                            | 優勢                                                          | 可續約？    |
@@ -67,7 +67,7 @@ ms.locfileid: "74099654"
 | Visual Studio Enterprise (Standard)  | NFR<sup>1</sup> |無法使用  | N/A |
 | Visual Studio Enterprise、Visual Studio Professional (每月雲端) | Azure | 無法使用 | N/A |
 
-<sup>1</sup>  *包括：禁止轉售（NFR）、FTE、最有價值專家（MVP）、區域主管（RD）、Microsoft 合作夥伴網路（MPN）、Visual Studio 產業夥伴（VSIP）、Microsoft 認證訓練人員、BizSpark、想像*
+<sup>1</sup>  *Includes:  Not for Resale (NFR), FTE, Most Valuable Professional (MVP), Regional Director (RD), Microsoft Partner Network (MPN), Visual Studio Industry Partner (VSIP), Microsoft Certified Trainer, BizSpark, Imagine*
 
 > [!NOTE]
 > Microsoft 不再於雲端訂用帳戶中提供 Visual Studio Professional 年度訂用帳戶和 Visual Studio Enterprise 年度訂用帳戶。 現有的客戶體驗，以及更新、增加、減少或取消其訂用帳戶的能力將不會改變。 我們鼓勵新的客戶移至 [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) 來探索 Visual Studio 的不同購買選項。
@@ -86,6 +86,6 @@ ms.locfileid: "74099654"
 查看您訂用帳戶中的更多專業開發機會：
 - [Pluralsight](vs-pluralsight.md)
 - [LinkedIn Learning](vs-linkedin-learning.md)
-- [MSDN Magazine](vs-msdn.md)
 
-如果您尚未啟用訂用帳戶隨附的 Azure DevTest 個人信用額度權益，請造訪[https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)並按一下 [工具] 類別中的 [azure] 磚，以設定您的 azure 訂用帳戶，並兌換您的 azure DevTest 個別信用額度。
+
+If you haven't already activated the Azure DevTest individual credit benefit that comes with your subscription, visit [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) and click on the Azure tile in the Tools category to set up your Azure subscription and redeem your Azure DevTest individual credit.
