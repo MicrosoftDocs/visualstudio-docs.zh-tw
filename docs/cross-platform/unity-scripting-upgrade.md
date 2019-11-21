@@ -8,12 +8,12 @@ ms.assetid: E2C9420F-A5D5-4472-9020-2B63FB27A133
 ms.technology: vs-unity-tools
 ms.workload:
 - unity
-ms.openlocfilehash: b1f10778c4866e67630fcac7af3b92b3de780aa5
-ms.sourcegitcommit: 57bc1c3887838d707c13feff72a677b3bad3be4b
+ms.openlocfilehash: 01363ab1588507f31dc74800c85b159039c9bab6
+ms.sourcegitcommit: 9c7d8693108ecd2042a70c04cebe3c44af657baf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72777748"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "74239423"
 ---
 # <a name="using-net-4x-in-unity"></a>在 Unity 中使用 .NET 4.x
 
@@ -278,19 +278,19 @@ private void RecordHighScore(string playerName)
 
 ```csharp
 private void Start ()
-    {
-        ShowCallerInfo("Something happened.");
-    }
-    public void ShowCallerInfo(string message,
-            [System.Runtime.CompilerServices.CallerMemberName] string memberName = "",
-            [System.Runtime.CompilerServices.CallerFilePath] string sourceFilePath = "",
-            [System.Runtime.CompilerServices.CallerLineNumber] int sourceLineNumber = 0)
-    {
-        Debug.Log($"message: {message}");
-        Debug.Log($"member name: {memberName}");
-        Debug.Log($"source file path: {sourceFilePath}");
-        Debug.Log($"source line number: {sourceLineNumber}");
-    }
+{
+    ShowCallerInfo("Something happened.");
+}
+public void ShowCallerInfo(string message,
+        [System.Runtime.CompilerServices.CallerMemberName] string memberName = "",
+        [System.Runtime.CompilerServices.CallerFilePath] string sourceFilePath = "",
+        [System.Runtime.CompilerServices.CallerLineNumber] int sourceLineNumber = 0)
+{
+    Debug.Log($"message: {message}");
+    Debug.Log($"member name: {memberName}");
+    Debug.Log($"source file path: {sourceFilePath}");
+    Debug.Log($"source line number: {sourceLineNumber}");
+}
 // Output:
 // Something happened
 // member name: Start
@@ -335,7 +335,7 @@ public class UsingStaticExample: MonoBehaviour
 
 將遊戲匯出至 iOS 這類平台時，Unity 將使用其 IL2CPP 引擎以將 IL「轉換」為 C++ 程式碼，而且接著會使用目標平台的原生編譯器來編譯 C++ 程式碼。 在此情節中，有幾項不支援的 .NET 功能，例如反映的組件和 `dynamic` 關鍵字的用法。 雖然您可以利用自己的程式碼控制這些功能的使用，但是請注意，使用未以 Unity 和 IL2CPP 撰寫的協力廠商 DLL 和 SDK 可能會發生問題。 如需本主題的詳細資訊，請參閱 Unity 網站上的 [Scripting Restrictions](https://docs.unity3d.com/Manual/ScriptingRestrictions.html) (指令碼限制) 文件。
 
-此外，如上述 Json.NET 範例所述，Unity 將嘗試在 IL2CPP 匯出程序期間去除未使用的程式碼。  雖然這通常不是問題，但如果程式庫使用反映，它可能會不小心去除在執行時間呼叫的屬性或方法，而無法在匯出時間判斷。  若要修正這些問題，請將 **link.xml** 檔案新增至專案，而專案包含不要對其執行去除程序的組件和命名空間清單。  如需完整詳細資料，請參閱[位元組程式碼去除的 Unity 文件](https://docs.unity3d.com/Manual/IL2CPP-BytecodeStripping.html)。
+此外，如上述 Json.NET 範例所述，Unity 將嘗試在 IL2CPP 匯出程序期間去除未使用的程式碼。  While this typically isn't an issue, with libraries that use Reflection, it can accidentally strip out properties or methods that will be called at run time that can't be determined at export time.  若要修正這些問題，請將 **link.xml** 檔案新增至專案，而專案包含不要對其執行去除程序的組件和命名空間清單。  如需完整詳細資料，請參閱[位元組程式碼去除的 Unity 文件](https://docs.unity3d.com/Manual/IL2CPP-BytecodeStripping.html)。
 
 ## <a name="net-4x-sample-unity-project"></a>.NET 4.x 範例 Unity 專案
 
