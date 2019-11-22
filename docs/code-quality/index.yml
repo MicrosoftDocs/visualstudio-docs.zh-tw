@@ -7,15 +7,15 @@ metadata:
   ms.prod: visual-studio-windows
   ms.technology: vs-ide-general
   ms.topic: landing-page
-  author: gewarren
-  ms.author: gewarren
+  author: jillre
+  ms.author: jillfra
   ms.date: 10/15/2019
-  ms.openlocfilehash: eb7be803a8c9751550f46880cfd485dac2850527
-  ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+  ms.openlocfilehash: 45be3779e7ed8a625d9029c8eb03a69374c43ae8
+  ms.sourcegitcommit: b04c603ce73b993d042ebdf7f3722cf4fe2ef7f4
   ms.translationtype: HT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 10/16/2019
-  ms.locfileid: "72450585"
+  ms.lasthandoff: 11/22/2019
+  ms.locfileid: "74316363"
 landingContent:
 - title: 分析 C 和 C++ 程式碼
   linkLists:
