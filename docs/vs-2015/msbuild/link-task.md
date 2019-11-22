@@ -31,12 +31,12 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: efcdbb4f72d47a5044b287f1b40424f5611d6401
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 181c32017a84328037ea46d49698821fa3cb41ea
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65703437"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74295879"
 ---
 # <a name="link-task"></a>Link 工作
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,13 +68,13 @@ ms.locfileid: "65703437"
   
    指定將放入資訊清單檔案的 `dependency` 區段的屬性。  
   
-   如需詳細資訊，請參閱 [/MANIFESTDEPENDENCY (指定資訊清單相依性)](https://msdn.microsoft.com/library/e4b68313-33a2-4c3e-908e-ac2b9f7d6a73)。 另請參閱 [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) 網站上的＜發行者組態檔＞。  
+   如需詳細資訊，請參閱 [/MANIFESTDEPENDENCY (指定資訊清單相依性)](https://msdn.microsoft.com/library/e4b68313-33a2-4c3e-908e-ac2b9f7d6a73)。 另請參閱 [MSDN](https://go.microsoft.com/fwlink/?LinkId=737) 網站上的＜發行者組態檔＞。  
   
 - **AdditionalOptions**  
   
    選擇性的 **String** 參數。  
   
-   指定於命令列上的連結器選項清單。 例如 **"**_/option1 /option2 /option#_"。 使用此參數，來指定任何其他 **Link** 工作參數未表示的連結器選項。  
+   指定於命令列上的連結器選項清單。 例如 **"** _/option1 /option2 /option#_ "。 使用此參數，來指定任何其他 **Link** 工作參數未表示的連結器選項。  
   
    如需詳細資訊，請參閱[連結器選項](https://msdn.microsoft.com/library/c1d51b8a-bd23-416d-81e4-900e02b2c129)。  
   
@@ -140,13 +140,13 @@ ms.locfileid: "65703437"
   
    指定下列其中一個值；每個值會分別對應至一個連結器選項。  
   
-  - **Default** - *\<none>*  
+  - **Default** -  *\<none>*  
   
-  - **ForceIJWImage** - **/CLRIMAGETYPE:IJW**  
+  - **ForceIJWImage** -  **/CLRIMAGETYPE:IJW**  
   
-  - **ForcePureILImage** - **/CLRIMAGETYPE:PURE**  
+  - **ForcePureILImage** -  **/CLRIMAGETYPE:PURE**  
   
-  - **ForceSafeILImage** - **/CLRIMAGETYPE:SAFE**  
+  - **ForceSafeILImage** -  **/CLRIMAGETYPE:SAFE**  
   
     如需詳細資訊，請參閱 [/CLRIMAGETYPE (指定 CLR 映像類型)](https://msdn.microsoft.com/library/04c60ee6-9dd7-4391-bc03-6926ad0fa116)。  
   
@@ -158,11 +158,11 @@ ms.locfileid: "65703437"
   
    指定下列其中一個值；每個值會分別對應至一個連結器選項。  
   
-  - **Enabled** - **/CLRSupportLastError**  
+  - **Enabled** -  **/CLRSupportLastError**  
   
-  - **Disabled** - **/CLRSupportLastError:NO**  
+  - **Disabled** -  **/CLRSupportLastError:NO**  
   
-  - **SystemDlls** - **/CLRSupportLastError:SYSTEMDLL**  
+  - **SystemDlls** -  **/CLRSupportLastError:SYSTEMDLL**  
   
     如需詳細資訊，請參閱 [/CLRSUPPORTLASTERROR (保留 PInvoke 呼叫的最後一個錯誤碼)](https://msdn.microsoft.com/library/b7057990-4154-4b1d-9fc9-6236f7be7575)。  
   
@@ -174,11 +174,11 @@ ms.locfileid: "65703437"
   
    指定下列其中一個值；每個值會分別對應至一個連結器選項。  
   
-  - **DefaultThreadingAttribute** - **/CLRTHREADATTRIBUTE:NONE**  
+  - **DefaultThreadingAttribute** -  **/CLRTHREADATTRIBUTE:NONE**  
   
-  - **MTAThreadingAttribute** - **/CLRTHREADATTRIBUTE:MTA**  
+  - **MTAThreadingAttribute** -  **/CLRTHREADATTRIBUTE:MTA**  
   
-  - **STAThreadingAttribute** - **/CLRTHREADATTRIBUTE:STA**  
+  - **STAThreadingAttribute** -  **/CLRTHREADATTRIBUTE:STA**  
   
     如需詳細資訊，請參閱 [/CLRTHREADATTRIBUTE (設定 CLR 執行緒屬性)](https://msdn.microsoft.com/library/4907e9ef-5031-446c-aecf-0a0b32fae1e8)。  
   
@@ -198,13 +198,13 @@ ms.locfileid: "65703437"
   
    指定下列其中一個值，每個值會分別對應至一個連結器選項。  
   
-  - **Enabled** - **/FUNCTIONPADMIN**  
+  - **Enabled** -  **/FUNCTIONPADMIN**  
   
-  - **X86Image** - **/FUNCTIONPADMIN:5**  
+  - **X86Image** -  **/FUNCTIONPADMIN:5**  
   
-  - **X64Image** - **/FUNCTIONPADMIN:6**  
+  - **X64Image** -  **/FUNCTIONPADMIN:6**  
   
-  - **ItaniumImage** - **/FUNCTIONPADMIN:16**  
+  - **ItaniumImage** -  **/FUNCTIONPADMIN:16**  
   
     如需詳細資訊，請參閱 [/FUNCTIONPADMIN (建立可進行 Hotpatch 的映像)](https://msdn.microsoft.com/library/25b02c13-1add-4fbd-add9-fcb30eb2cae7)。  
   
@@ -220,7 +220,7 @@ ms.locfileid: "65703437"
   
    選擇性的 **String[]** 參數。  
   
-   此參數會導致 DLL「延遲載入」。 指定要延遲載入的 DLL 名稱。  
+   此參數會導致 DLL「延遲載入」  。 指定要延遲載入的 DLL 名稱。  
   
    如需詳細資訊，請參閱 [/DELAYLOAD (延遲載入匯入)](https://msdn.microsoft.com/library/39ea0f1e-5c01-450f-9c75-2d9761ff9b28)。  
   
@@ -240,13 +240,13 @@ ms.locfileid: "65703437"
   
    指定下列其中一個值；每個值會分別對應至一個連結器選項。  
   
-  - **NotSet** - *\<none>*  
+  - **NotSet** -  *\<none>*  
   
-  - **Driver** - **/Driver**  
+  - **Driver** -  **/Driver**  
   
-  - **UpOnly** - **/DRIVER:UPONLY**  
+  - **UpOnly** -  **/DRIVER:UPONLY**  
   
-  - **WDM** - **/DRIVER:WDM**  
+  - **WDM** -  **/DRIVER:WDM**  
   
     如需詳細資訊，請參閱 [/DRIVER (Windows NT 核心模式驅動程式)](https://msdn.microsoft.com/library/aeee8e28-5d97-40f5-ba16-9f370fe8a1b8)。  
   
@@ -298,11 +298,11 @@ ms.locfileid: "65703437"
   
    指定下列其中一個值；每個值會分別對應至一個命令列選項。  
   
-  - **Enabled** - **/FORCE**  
+  - **Enabled** -  **/FORCE**  
   
-  - **MultiplyDefinedSymbolOnly** - **/FORCE:MULTIPLE**  
+  - **MultiplyDefinedSymbolOnly** -  **/FORCE:MULTIPLE**  
   
-  - **UndefinedSymbolOnly** - **/FORCE:UNRESOLVED**  
+  - **UndefinedSymbolOnly** -  **/FORCE:UNRESOLVED**  
   
     如需詳細資訊，請參閱 [/FORCE (強制檔案輸出)](https://msdn.microsoft.com/library/b1e9a218-a5eb-4e60-a4a4-65b4be15e5da)。  
   
@@ -342,7 +342,7 @@ ms.locfileid: "65703437"
   
    選擇性的 **Boolean** 參數。  
   
-   如果是 `true`，即會建立「對應檔」。 對應檔的副檔名是 .map。  
+   如果是 `true`，即會建立「對應檔」  。 對應檔的副檔名是 .map。  
   
    如需詳細資訊，請參閱 [/MAP (產生對應檔)](https://msdn.microsoft.com/library/9ccce53d-4e36-43da-87b0-7603ddfdea63)。  
   
@@ -448,13 +448,13 @@ ms.locfileid: "65703437"
   
    指定下列其中一個值；每個值會分別對應至一個命令列選項。  
   
-  - **NoErrorReport** - **/ERRORREPORT:NONE**  
+  - **NoErrorReport** -  **/ERRORREPORT:NONE**  
   
-  - **PromptImmediately** - **/ERRORREPORT:PROMPT**  
+  - **PromptImmediately** -  **/ERRORREPORT:PROMPT**  
   
-  - **QueueForNextLogin** - **/ERRORREPORT:QUEUE**  
+  - **QueueForNextLogin** -  **/ERRORREPORT:QUEUE**  
   
-  - **SendErrorReport** - **/ERRORREPORT:SEND**  
+  - **SendErrorReport** -  **/ERRORREPORT:SEND**  
   
     如需詳細資訊，請參閱 [/ERRORREPORT (回報內部連結器錯誤)](https://msdn.microsoft.com/library/f5fab595-a2f1-4eb0-ab5c-1c0fbd3d8c28)。  
   
@@ -490,13 +490,13 @@ ms.locfileid: "65703437"
   
    指定下列其中一個值；每個值會分別對應至一個命令列選項。  
   
-  - **Default** - *\<none>*  
+  - **Default** -  *\<none>*  
   
-  - **UseLinkTimeCodeGeneration** - **/LTCG**  
+  - **UseLinkTimeCodeGeneration** -  **/LTCG**  
   
-  - **PGInstrument** - **/LTCG:PGInstrument**  
+  - **PGInstrument** -  **/LTCG:PGInstrument**  
   
-  - **PGOptimization** - **/LTCG:PGOptimize**  
+  - **PGOptimization** -  **/LTCG:PGOptimize**  
   
   - **PGUpdate**  
   
@@ -650,7 +650,7 @@ ms.locfileid: "65703437"
   
    選擇性的 **Boolean** 參數。  
   
-   如果是 `true`，即會產生可執行映像檔，其可使用 Windows 的「位址空間配置隨機載入」(ASLR) 功能，於載入時隨機重定基底。  
+   如果是 `true`，即會產生可執行映像檔，其可使用 Windows 的「位址空間配置隨機載入」  (ASLR) 功能，於載入時隨機重定基底。  
   
    如需詳細資訊，請參閱 [/DYNAMICBASE (使用位址空間配置隨機載入)](https://msdn.microsoft.com/library/6c0ced8e-fe9c-4b63-b956-eb8a55fbceb2)。  
   
@@ -684,19 +684,19 @@ ms.locfileid: "65703437"
   
    指定下列其中一個值；每個值會分別對應至一個命令列選項。  
   
-  - **NotSet** - *\<none>*  
+  - **NotSet** -  *\<none>*  
   
-  - **LinkVerbose** - **/VERBOSE**  
+  - **LinkVerbose** -  **/VERBOSE**  
   
-  - **LinkVerboseLib** - **/VERBOSE:Lib**  
+  - **LinkVerboseLib** -  **/VERBOSE:Lib**  
   
-  - **LinkVerboseICF** - **/VERBOSE:ICF**  
+  - **LinkVerboseICF** -  **/VERBOSE:ICF**  
   
-  - **LinkVerboseREF** - **/VERBOSE:REF**  
+  - **LinkVerboseREF** -  **/VERBOSE:REF**  
   
-  - **LinkVerboseSAFESEH** - **/VERBOSE:SAFESEH**  
+  - **LinkVerboseSAFESEH** -  **/VERBOSE:SAFESEH**  
   
-  - **LinkVerboseCLR** - **/VERBOSE:CLR**  
+  - **LinkVerboseCLR** -  **/VERBOSE:CLR**  
   
     如需詳細資訊，請參閱 [/VERBOSE (列印進度訊息)](https://msdn.microsoft.com/library/9c347d98-4c37-4724-a39e-0983934693ab)。  
   
@@ -746,25 +746,25 @@ ms.locfileid: "65703437"
   
    指定下列其中一個值；每個值會分別對應至一個命令列選項。  
   
-  - **NotSet** - *\<none>*  
+  - **NotSet** -  *\<none>*  
   
-  - **Console** - **/SUBSYSTEM:CONSOLE**  
+  - **Console** -  **/SUBSYSTEM:CONSOLE**  
   
-  - **Windows** - **/SUBSYSTEM:WINDOWS**  
+  - **Windows** -  **/SUBSYSTEM:WINDOWS**  
   
-  - **Native** - **/SUBSYSTEM:NATIVE**  
+  - **Native** -  **/SUBSYSTEM:NATIVE**  
   
-  - **EFI Application** - **/SUBSYSTEM:EFI_APPLICATION**  
+  - **EFI Application** -  **/SUBSYSTEM:EFI_APPLICATION**  
   
-  - **EFI Boot Service Driver** - **/SUBSYSTEM:EFI_BOOT_SERVICE_DRIVER**  
+  - **EFI Boot Service Driver** -  **/SUBSYSTEM:EFI_BOOT_SERVICE_DRIVER**  
   
-  - **EFI ROM** - **/SUBSYSTEM:EFI_ROM**  
+  - **EFI ROM** -  **/SUBSYSTEM:EFI_ROM**  
   
-  - **EFI Runtime** - **/SUBSYSTEM:EFI_RUNTIME_DRIVER**  
+  - **EFI Runtime** -  **/SUBSYSTEM:EFI_RUNTIME_DRIVER**  
   
-  - **WindowsCE** - **/SUBSYSTEM:WINDOWSCE**  
+  - **WindowsCE** -  **/SUBSYSTEM:WINDOWSCE**  
   
-  - **POSIX** - **/SUBSYSTEM:POSIX**  
+  - **POSIX** -  **/SUBSYSTEM:POSIX**  
   
     如需詳細資訊，請參閱 [/SUBSYSTEM (指定子系統)](https://msdn.microsoft.com/library/d7b133cf-cf22-4da8-ab46-6552702c0b9b)。  
   
@@ -816,29 +816,29 @@ ms.locfileid: "65703437"
   
    指定下列其中一個值；每個值會分別對應至一個命令列選項。  
   
-  - **NotSet** - *\<none>*  
+  - **NotSet** -  *\<none>*  
   
-  - **MachineARM** - **/MACHINE:ARM**  
+  - **MachineARM** -  **/MACHINE:ARM**  
   
-  - **MachineEBC** - **/MACHINE:EBC**  
+  - **MachineEBC** -  **/MACHINE:EBC**  
   
-  - **MachineIA64** - **/MACHINE:IA64**  
+  - **MachineIA64** -  **/MACHINE:IA64**  
   
-  - **MachineMIPS** - **/MACHINE:MIPS**  
+  - **MachineMIPS** -  **/MACHINE:MIPS**  
   
-  - **MachineMIPS16** - **/MACHINE:MIPS16**  
+  - **MachineMIPS16** -  **/MACHINE:MIPS16**  
   
-  - **MachineMIPSFPU** - **/MACHINE:MIPSFPU**  
+  - **MachineMIPSFPU** -  **/MACHINE:MIPSFPU**  
   
-  - **MachineMIPSFPU16** - **/MACHINE:MIPSFPU16**  
+  - **MachineMIPSFPU16** -  **/MACHINE:MIPSFPU16**  
   
-  - **MachineSH4** - **/MACHINE:SH4**  
+  - **MachineSH4** -  **/MACHINE:SH4**  
   
-  - **MachineTHUMB** - **/MACHINE:THUMB**  
+  - **MachineTHUMB** -  **/MACHINE:THUMB**  
   
-  - **MachineX64** - **/MACHINE:X64**  
+  - **MachineX64** -  **/MACHINE:X64**  
   
-  - **MachineX86** - **/MACHINE:X86**  
+  - **MachineX86** -  **/MACHINE:X86**  
   
     如需詳細資訊，請參閱 [/MACHINE (指定目標平台)](https://msdn.microsoft.com/library/8d41bf4b-7e53-4ab9-9085-d852b08d31c2)。  
   
@@ -926,5 +926,5 @@ ms.locfileid: "65703437"
   
    如需詳細資訊，請參閱 [/VERSION (版本資訊)](https://msdn.microsoft.com/library/b86d0e86-dca6-4316-aee2-d863ccb9f223)。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [工作參考](../msbuild/msbuild-task-reference.md)

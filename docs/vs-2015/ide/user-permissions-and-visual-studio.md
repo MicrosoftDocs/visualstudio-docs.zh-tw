@@ -14,12 +14,12 @@ caps.latest.revision: 17
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: b7ffc3a6b3fe5ad5952ecfde6091cbe7e656f305
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: dc49a628cdf5695df7744295d2c1d990986bcfbe
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72672679"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74295635"
 ---
 # <a name="user-permissions-and-visual-studio"></a>使用者權限和 Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ ms.locfileid: "72672679"
 ||從 Visual Studio 試用版升級。|[如何：從 Visual Studio 試用版升級](../install/how-to-upgrade-from-a-trial-edition-of-visual-studio.md)|
 ||安裝、更新或移除本機說明內容。|[安裝與管理本機內容](../ide/install-and-manage-local-content.md)|
 |應用程式類型|開發 SharePoint 2010 方案。|[開發 SharePoint 方案的需求](https://msdn.microsoft.com/library/ae8ff69d-4540-4380-ab0b-845f7108e89c)|
-||取得 [!INCLUDE[win8_appstore_long](../includes/win8-appstore-long-md.md)]的開發人員授權。|[取得開發人員授權 (Windows 市集應用程式)](http://go.microsoft.com/fwlink/?LinkID=241313)|
+||取得 [!INCLUDE[win8_appstore_long](../includes/win8-appstore-long-md.md)]的開發人員授權。|[取得開發人員授權 (Windows 市集應用程式)](https://go.microsoft.com/fwlink/?LinkID=241313)|
 |工具箱|將傳統 COM 控制項新增至 [工具箱]  。|[使用工具箱](../ide/using-the-toolbox.md)|
 |增益集|安裝及使用在 IDE 中使用傳統 COM 撰寫的增益集。|[建立增益集和精靈](https://msdn.microsoft.com/library/c5a47c21-6668-4de3-898d-afa969317e73)|
 |建置|使用註冊元件的建置後事件。|[了解自訂建置步驟和建置事件](https://msdn.microsoft.com/library/beb2f017-3e9f-4b2c-9b57-2572fd2628e4)|
@@ -45,10 +45,10 @@ ms.locfileid: "72672679"
 |偵錯|偵錯以更高權限執行的應用程式。|[偵錯設定和準備](../debugger/debugger-settings-and-preparation.md)|
 ||偵錯在不同使用者帳戶下執行的應用程式，例如 ASP.NET 網站。|[偵錯 ASP.NET 和 AJAX 應用程式](../debugger/debugging-aspnet-and-ajax-applications.md)|
 ||在 XAML 瀏覽器應用程式的區域 (XBAP) 中進行偵錯。|[WPF 主應用程式 (PresentationHost.exe)](https://msdn.microsoft.com/library/3215bfa1-722c-4ac8-a7c5-bdd02d30afbd)|
-||使用模擬器來偵錯 Microsoft Azure 雲端服務專案。|[在 Visual Studio 中偵錯雲端服務](http://go.microsoft.com/fwlink/?LinkId=266725)|
+||使用模擬器來偵錯 Microsoft Azure 雲端服務專案。|[在 Visual Studio 中偵錯雲端服務](https://go.microsoft.com/fwlink/?LinkId=266725)|
 ||設定遠端偵錯的防火牆。|[在裝置上設定遠端工具](https://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c)|
 |效能工具|對應用程式進行程式碼剖析。|[效能分析的初級開發人員指南](../profiling/beginners-guide-to-performance-profiling.md)|
-|部署|將 Web 應用程式部署在本機電腦上的 Internet Information Services (IIS)。|[Deploying an ASP.NET Web Application to a Hosting Provider using Visual Studio or Visual Web Developer: Deploying to IIS as a Test Environment](http://go.microsoft.com/fwlink/?LinkId=266478) (使用 Visual Studio 或 Visual Web Developer 將 ASP.NET Web 應用程式部署至主機服務提供者：部署至 IIS 作為測試環境)|
+|部署|將 Web 應用程式部署在本機電腦上的 Internet Information Services (IIS)。|[Deploying an ASP.NET Web Application to a Hosting Provider using Visual Studio or Visual Web Developer: Deploying to IIS as a Test Environment](https://go.microsoft.com/fwlink/?LinkId=266478) (使用 Visual Studio 或 Visual Web Developer 將 ASP.NET Web 應用程式部署至主機服務提供者：部署至 IIS 作為測試環境)|
 |提供意見給 Microsoft|變更您參與 Visual Studio 客戶經驗改進計畫的方式。|[如何：傳送意見回應](../misc/how-to-send-feedback-about-visual-studio.md)|
 
 ## <a name="running-visual-studio-as-an-administrator"></a>以系統管理員身分執行 Visual Studio

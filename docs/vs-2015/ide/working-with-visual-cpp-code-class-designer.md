@@ -19,12 +19,12 @@ caps.latest.revision: 27
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 5a543e7a1e2aca4590df320261aef2c653a55132
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: cb2b5a55f778b8025ea9da25713eca903f9cbf74
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72662611"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74296211"
 ---
 # <a name="working-with-visual-c-code-class-designer"></a>使用 Visual C++ 程式碼 (類別設計工具)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -82,7 +82,7 @@ ms.locfileid: "72662611"
 - 確定類型位於正確的範圍內，讓類別設計工具能夠找到它。 確定程式碼未遺漏 `using`、`imports` 或 `#include` 陳述式。 也請確定您未將該類型 (或相關類型) 從它最初建立所在的命名空間中移出。
 
 ### <a name="troubleshooting-other-error-messages"></a>其他錯誤訊息的疑難排解
- 您可以在 Microsoft Developer Network (MSDN) 公共論壇中尋求有關疑難排解錯誤和警告的協助。 請參閱 [Visual Studio 類別設計工具論壇](http://go.microsoft.com/fwlink/?linkid=160754)。
+ 您可以在 Microsoft Developer Network (MSDN) 公共論壇中尋求有關疑難排解錯誤和警告的協助。 請參閱 [Visual Studio 類別設計工具論壇](https://go.microsoft.com/fwlink/?linkid=160754)。
 
 ## <a name="limitations"></a> C++ 程式碼項目限制
 
@@ -107,4 +107,4 @@ ms.locfileid: "72662611"
 - 類別設計工具無法顯示 void 類型或衍生自 void 類型的類型。
 
 ## <a name="see-also"></a>另請參閱
- [設計和觀看類別和類型](../ide/designing-and-viewing-classes-and-types.md)[使用類別和其他類型（類別設計工具）](../ide/working-with-classes-and-other-types-class-designer.md)使用[類別圖表（類別設計工具）](../ide/working-with-class-diagrams-class-designer.md) [設計類別和類型（類別設計工具）](../ide/designing-classes-and-types-class-designer.md) [其他相關資訊類別設計工具錯誤](../ide/additional-information-about-class-designer-errors.md) [visual C++類別設計工具](../ide/visual-cpp-classes-in-class-designer.md) [ C++ ](../ide/visual-cpp-structures-in-class-designer.md)中的視覺效果類別在中類別設計工具[ C++ visual typedef](../ide/visual-cpp-typedefs-in-class-designer.md)的類別設計工具[視覺C++ ](../ide/visual-cpp-enumerations-in-class-designer.md)效果列舉類別設計工具
+ [設計和觀看類別和類型](../ide/designing-and-viewing-classes-and-types.md)[使用類別和其他類型（類別設計工具）](../ide/working-with-classes-and-other-types-class-designer.md) [使用類別圖表（類別設計工具）](../ide/working-with-class-diagrams-class-designer.md) [設計類別和類型（類別設計工具）](../ide/designing-classes-and-types-class-designer.md) [類別設計工具錯誤](../ide/additional-information-about-class-designer-errors.md) [ C++ ](../ide/visual-cpp-classes-in-class-designer.md) [ C++ ](../ide/visual-cpp-structures-in-class-designer.md) [ C++ ](../ide/visual-cpp-enumerations-in-class-designer.md) [ C++ ](../ide/visual-cpp-typedefs-in-class-designer.md)的其他資訊類別設計工具視覺效果中的類別設計工具 visual

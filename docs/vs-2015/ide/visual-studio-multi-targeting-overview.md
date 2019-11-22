@@ -14,12 +14,12 @@ caps.latest.revision: 39
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: ba7566e4a6bdffc5e7075bc138832097415a7129
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 6a816981b41dd8ca2a2119bbd99c776c6a7e2436
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72667103"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74296887"
 ---
 # <a name="visual-studio-multi-targeting-overview"></a>Visual Studio 多目標概觀
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -66,7 +66,7 @@ ms.locfileid: "72667103"
 > 在 Visual Studio Express 版中，您無法在 [新增專案]  對話方塊中設定目標 Framework。
 
 ## <a name="resolving-system-and-user-assembly-references"></a>解析系統與使用者組件參考
- 若要設定目標 .NET Framework 版本，您必須先安裝適當的組件參考。 .NET Framework 2.0、3.0 和 3.5 版的組件參考隨附在 .NET Framework 3.5 SP1 中，可從 [Microsoft Download Center, Microsoft Visual Studio](https://www.microsoft.com/download/details.aspx?id=25150) (Microsoft 下載中心的 Microsoft Visual Studio) 網站進行下載。 您也可以從 [Visual Studio 下載](http://go.microsoft.com/fwlink/?LinkId=179687)網站取得 .NET Framework 3.5 Client Profile、.NET Framework 4、.NET Framework 4 Client Profile 和 Silverlight 的組件參考。
+ 若要設定目標 .NET Framework 版本，您必須先安裝適當的組件參考。 .NET Framework 2.0、3.0 和 3.5 版的組件參考隨附在 .NET Framework 3.5 SP1 中，可從 [Microsoft Download Center, Microsoft Visual Studio](https://www.microsoft.com/download/details.aspx?id=25150) (Microsoft 下載中心的 Microsoft Visual Studio) 網站進行下載。 您也可以從 [Visual Studio 下載](https://go.microsoft.com/fwlink/?LinkId=179687)網站取得 .NET Framework 3.5 Client Profile、.NET Framework 4、.NET Framework 4 Client Profile 和 Silverlight 的組件參考。
 
 > [!NOTE]
 > .NET Framework Client Profile 是 .NET Framework 的子集，提供一組有限的程式庫和功能。 如需 Client Profile 的詳細資訊，請參閱 [.NET Framework Client Profile](https://msdn.microsoft.com/library/f0219919-1f02-4588-8704-327a62fd91f1)。

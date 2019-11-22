@@ -15,12 +15,12 @@ caps.latest.revision: 68
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 80811c63ff0b4fa764c95976bf2f69a30123b235
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 3ca14cead3b632cb70b817c79fce797078c7069b
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72651672"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299382"
 ---
 # <a name="application-page-project-designer-visual-basic"></a>Application Page, Project Designer (Visual Basic)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -62,7 +62,7 @@ ms.locfileid: "72651672"
 
  針對 Web 應用程式專案，您必須指定 [類別庫]  。
 
- 如果您指定 [WinMD 檔案]  選項，則類型可以投影至任何 Windows 執行階段程式設計語言。 將專案的輸出封裝為 WinMD 檔案，即可使用多種語言來撰寫應用程式，並讓程式碼交互操作，如同您使用相同的語言來撰寫程式碼一樣。 您可以針對以 Windows 執行階段程式庫為目標的方案使用 [WinMD 檔案]  選項，包括 [!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)] 應用程式。 如需詳細資訊，請參閱[在 C++ 和 Visual Basic 中建立 Windows 執行階段元件](http://go.microsoft.com/fwlink/?LinkId=231895)。
+ 如果您指定 [WinMD 檔案]  選項，則類型可以投影至任何 Windows 執行階段程式設計語言。 將專案的輸出封裝為 WinMD 檔案，即可使用多種語言來撰寫應用程式，並讓程式碼交互操作，如同您使用相同的語言來撰寫程式碼一樣。 您可以針對以 Windows 執行階段程式庫為目標的方案使用 [WinMD 檔案]  選項，包括 [!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)] 應用程式。 如需詳細資訊，請參閱[在 C++ 和 Visual Basic 中建立 Windows 執行階段元件](https://go.microsoft.com/fwlink/?LinkId=231895)。
 
 > [!NOTE]
 > Windows 執行階段可以投影類型，以使用它們的語言顯示為原生物件。 例如，與 Windows 執行階段互動的 JavaScript 應用程式會使用它作為一組 JavaScript 物件，而且 C# 應用程式會使用該程式庫作為 .NET 物件集合。 將專案的輸出封裝為 WinMD 檔案，即可利用 Windows 執行階段所使用的相同技術。
@@ -118,7 +118,7 @@ ms.locfileid: "72651672"
 
  **啟動顯示畫面**選取您想要用來做為啟動顯示畫面的表單。 您必須先前已使用表單或範本來建立啟動顯示畫面。 預設值為 [(無)]  。
 
- **查看應用程式事件**按一下此按鈕以顯示事件程式碼檔案，您可以在其中為應用程式架構事件 `Startup`、`Shutdown`、`UnhandledException`、`StartupNextInstance` 和 `NetworkAvailabilityChanged` 寫入事件。 您也可以覆寫特定應用程式架構方法。 例如，您可以覆寫 `OnInitialize` 來變更啟動顯示畫面的顯示行為。
+ **查看應用程式事件**按一下此按鈕以顯示事件程式碼檔案，您可以在其中為應用程式架構事件 `Startup`、`Shutdown`、`UnhandledException`、`StartupNextInstance` 和 `NetworkAvailabilityChanged`寫入事件。 您也可以覆寫特定應用程式架構方法。 例如，您可以覆寫 `OnInitialize` 來變更啟動顯示畫面的顯示行為。
 
 ### <a name="windows-application-framework-properties-for-windows-presentation-foundation-wpf-applications"></a>Windows Presentation Foundation (WPF) 應用程式的 Windows 應用程式架構屬性
  專案是 Windows Presentation Foundation 應用程式時，[Windows 應用程式架構屬性]  區段中具有下列設定。 只有在選取 [啟用應用程式架構]  核取方塊時，才能使用這些選項。 此表格中所列的選項僅適用於 WPF 應用程式或 WPF 瀏覽器應用程式。 它們不適用於 WPF 使用者控制項或自訂控制項程式庫。

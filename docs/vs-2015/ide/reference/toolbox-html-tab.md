@@ -15,12 +15,12 @@ caps.latest.revision: 18
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: d3d6eafbafbf9b373028a7ba052ba9e8df62511c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: b7ca3179d3e4883f8a2867e13cbdd5e874d60462
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72661605"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297783"
 ---
 # <a name="toolbox-html-tab"></a>HTML 索引標籤、工具箱
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -121,7 +121,7 @@ ms.locfileid: "72661605"
  如需詳細資訊，請參閱 [HTML Input 控制項](https://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de)、[HtmlInputPassword 伺服器控制項宣告式語法](https://msdn.microsoft.com/df703dd0-1624-4e5a-a547-c97f2f331b9f)、[如何：為密碼輸入設定 TextBox Web 伺服器控制項](https://msdn.microsoft.com/library/5b5069f3-64a1-435a-aee6-da263f4e6310)和[逐步解說：驗證 Web Forms 網頁中的使用者輸入](https://msdn.microsoft.com/library/7141d6ba-34f3-410b-b5cd-2102a24cb436)。
 
 > [!IMPORTANT]
-> 如果您的應用程式傳輸使用者名稱和密碼，您應該設定網站使用安全通訊端層 (SSL) 來加密傳輸。 如需詳細資訊，請參閱 [IIS Operations Guide](http://go.microsoft.com/fwlink/?linkid=47856) (IIS 作業手冊) 中的 "Securing Connections with SSL" (保護與 SSL 的連線)。 此外，建議驗證所有使用者輸入。 如需詳細資訊，請參閱[驗證 ASP.NET 網頁中的使用者輸入](https://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461)。
+> 如果您的應用程式傳輸使用者名稱和密碼，您應該設定網站使用安全通訊端層 (SSL) 來加密傳輸。 如需詳細資訊，請參閱 [IIS Operations Guide](https://go.microsoft.com/fwlink/?linkid=47856) (IIS 作業手冊) 中的 "Securing Connections with SSL" (保護與 SSL 的連線)。 此外，建議驗證所有使用者輸入。 如需詳細資訊，請參閱[驗證 ASP.NET 網頁中的使用者輸入](https://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461)。
 
  **輸入（核取方塊）** ![HTML 網頁工具箱核取方塊選項](../../ide/reference/media/vxcheckbox.gif "|::ref8::|")
 
