@@ -8,15 +8,15 @@ metadata:
   ms.prod: visual-studio-windows
   ms.technology: vs-ide-general
   ms.topic: landing-page
-  author: gewarren
-  ms.author: gewarren
+  author: jillre
+  ms.author: jillfra
   ms.date: 09/24/2019
-  ms.openlocfilehash: f45e063db85f782f7b51b3cc71b69cca61589f27
-  ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+  ms.openlocfilehash: 0db1718cbb1a43a2ebacafbdaac0ba0667b28dda
+  ms.sourcegitcommit: b04c603ce73b993d042ebdf7f3722cf4fe2ef7f4
   ms.translationtype: HT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 09/25/2019
-  ms.locfileid: "71254556"
+  ms.lasthandoff: 11/22/2019
+  ms.locfileid: "74316428"
 landingContent:
 - title: 開始使用
   linkLists:
