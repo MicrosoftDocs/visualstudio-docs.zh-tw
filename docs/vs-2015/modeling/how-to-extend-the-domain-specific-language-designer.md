@@ -9,19 +9,19 @@ caps.latest.revision: 10
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: c2c131032a97231dce0394065d78505e936e3e91
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 33a7f5a0f183030f9de021df328f8c5e50f5fd5a
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72656012"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300900"
 ---
 # <a name="how-to-extend-the-domain-specific-language-designer"></a>如何：擴充網域指定的語言設計工具
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 您可以對用來編輯 DSL 定義的設計工具建立延伸模組。 您可以進行的延伸模組類型包括新增功能表命令、新增拖曳和按兩下筆勢的處理常式，以及當特定類型的值或關聯性變更時所觸發的規則。 延伸模組可以封裝為 Visual Studio 整合擴充功能（VSIX），並散發給其他使用者。
 
- 如需有關此功能的範例程式碼和詳細資訊，請參閱 Visual Studio[視覺效果和模型 SDK （VMSDK）網站](http://go.microsoft.com/fwlink/?LinkID=186128)。
+ 如需有關此功能的範例程式碼和詳細資訊，請參閱 Visual Studio[視覺效果和模型 SDK （VMSDK）網站](https://go.microsoft.com/fwlink/?LinkID=186128)。
 
 ## <a name="setting-up-the-solution"></a>設定解決方案
  設定專案，其中包含擴充功能的程式碼，以及匯出專案的 VSIX 專案。 您的方案可以包含併入相同 VSIX 中的其他專案。
@@ -69,24 +69,24 @@ ms.locfileid: "72656012"
 ## <a name="testing-and-deployment"></a>建置和部署
  若要測試本主題中的任何延伸模組，請建立並執行解決方案。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的實驗執行個體隨即開啟。 在此情況下，請開啟 DSL 解決方案。 編輯 [Dsldefinition.dsl 檔] 圖表。 您可以看到延伸模組行為。
 
- 若要將擴充功能部署到主要 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 和其他電腦，請遵循下列步驟：
+ 若要將擴充功能部署到主要 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]和其他電腦，請遵循下列步驟：
 
-1. 在 bin 中的 VSIX 專案中尋找 VSIX 安裝檔案 \\ * \\ \* .vsix
+1. 在 bin 中的 VSIX 專案中尋找 VSIX 安裝檔案\\*\\\*.vsix
 
 2. 將此檔案複製到目的電腦，然後在 [Windows Explorer] （或 [檔案瀏覽器]）中按兩下該檔案。
 
-    [@No__t_0 擴充管理員] 隨即開啟，以確認已安裝延伸模組。
+    [[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 擴充管理員] 隨即開啟，以確認已安裝延伸模組。
 
    若要卸載擴充功能，請遵循下列步驟：
 
-3. 在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的 [**工具**] 功能表上，按一下 [**擴充管理員**]。
+3. 在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]的 [**工具**] 功能表上，按一下 [**擴充管理員**]。
 
 4. 選取擴充功能，並將它刪除。
 
 ## <a name="adding-a-shortcut-menu-command"></a>新增快捷方式功能表命令
  若要讓快捷方式功能表命令出現在 DSL 設計工具介面或 [DSL Explorer] 視窗中，請撰寫類似下列的類別。
 
- 類別必須實 `ICommandExtension`，而且必須具有 `DslDefinitionModelCommandExtension` 屬性。
+ 類別必須實 `ICommandExtension`，而且必須具有 `DslDefinitionModelCommandExtension`屬性。
 
 ```
 using System.Collections.Generic;

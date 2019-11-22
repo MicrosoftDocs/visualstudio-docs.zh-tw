@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: dae5bb86cd7f9da6151920a8020d71452bf8863f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 265dc7f84fbd1ec19b520e2e30d3554e2c66683b
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443993"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74302132"
 ---
 # <a name="events-vsperfcmd"></a>Events (VSPerfCmd)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +47,7 @@ VSPerfCmd.exe /events {On|Off} {Guid|ProviderName} [,Flags[,Level]
   
  **Events** 選項了解下列核心關鍵字作為提供者名稱：  
   
- **Process**  
+ **處理序**  
  處理序事件  
   
  **Thread**  
@@ -86,10 +86,10 @@ C:\<path>VSPerfCmd -events on, \".NET Common Language Runtime\", 0x7fffffff, 5
 ```  
   
 > [!IMPORTANT]
-> 如果您不要排除啟動事件，則因為這些事件不會列出在受控物件格式 (MOF) 檔案中，所以它們在報表中會顯示為 GUID。 如需詳細資訊，請參閱 Microsoft 網站上的下列網頁：[範例受控物件格式 (MOF) 檔案](http://go.microsoft.com/fwlink/?linkid=37118)。  
+> 如果您不要排除啟動事件，則因為這些事件不會列出在受控物件格式 (MOF) 檔案中，所以它們在報表中會顯示為 GUID。 如需詳細資訊，請參閱 Microsoft 網站上的這個頁面：[範例受控物件格式 (MOF) 檔案](https://go.microsoft.com/fwlink/?linkid=37118)。  
   
 ## <a name="see-also"></a>另請參閱  
  [VSPerfCmd](../profiling/vsperfcmd.md)   
  [對獨立應用程式進行程式碼剖析](../profiling/command-line-profiling-of-stand-alone-applications.md)   
- [對 ASP.NET Web 應用程式進行程式碼剖析](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
+ [為 ASP.NET Web 應用程式進行程式碼剖析](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
  [對服務進行程式碼剖析](../profiling/command-line-profiling-of-services.md)

@@ -8,21 +8,21 @@ ms.assetid: 6b0f72a4-70ca-4e55-b236-2ea1034fd8a7
 caps.latest.revision: 32
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: a48c01203d2e951e917482de3c0d9c2bec29ae01
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 4e8e167f42a2f00553f1462db058e1b4e6d81b0f
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72660563"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74302564"
 ---
 # <a name="extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel"></a>擴充自動程式化 UI 測試和動作記錄以支援 Microsoft Excel
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 自動程式化 UI 測試的測試架構和動作記錄並不支援所有可能的使用者介面。 它可能不支援您要測試的特定 UI。 例如，您無法立即為 [!INCLUDE[ofprexcel](../includes/ofprexcel-md.md)] 試算表建立自動程式碼 UI 測試或動作記錄。 不過，您可以利用自動程式碼 UI 測試架構的擴充性，在自動程式碼 UI 測試架構中自行建立可以支援特定 UI 的擴充功能。 以下主題會透過範例說明如何擴充架構，以支援 [!INCLUDE[ofprexcel](../includes/ofprexcel-md.md)] 的自動程式碼 UI 測試和動作記錄建立作業。 如需支援平台的詳細資訊，請參閱[自動程式化 UI 測試和動作記錄的支援組態和平台](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)。
 
- **Requirements**
+ **需求**
 
-- Visual Studio 企業版
+- Visual Studio Enterprise
 
   本節介紹可記錄及播放 Excel 工作表測試的自動程式碼 UI 測試擴充功能。 本節將說明該擴充功能的每個部分，想要建立此類擴充功能的開發人員可搭配程式碼註解依序操作。
 
@@ -39,7 +39,7 @@ ms.locfileid: "72660563"
 
 - SampleTestProject
 
-  從這篇[部落格文章 (英文)](http://go.microsoft.com/fwlink/?LinkID=185592) 取得範例。
+  從這篇[部落格文章 (英文)](https://go.microsoft.com/fwlink/?LinkID=185592) 取得範例。
 
 > [!NOTE]
 > 此範例主要搭配 Microsoft Excel 2010 使用。 此範例可搭配其他版本的 Microsoft Excel 使用，但目前不支援。
@@ -77,5 +77,5 @@ ms.locfileid: "72660563"
 - [UITestActionFilter](/previous-versions/visualstudio/visual-studio-2012/dd985757(v=vs.110))
 - <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITestExtensionPackage>
 - [使用 UI 自動化來測試您的程式碼](../test/use-ui-automation-to-test-your-code.md)
-- [自動程式化 UI 測試的最佳做法](../test/best-practices-for-coded-ui-tests.md)
-- [自動程式化 UI 測試和動作記錄的支援組態和平台](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
+- [自動程式碼 UI 測試的最佳作法](../test/best-practices-for-coded-ui-tests.md)
+- [自動程式碼 UI 測試和動作記錄的支援組態和平台](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)

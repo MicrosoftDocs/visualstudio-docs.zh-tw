@@ -9,12 +9,12 @@ caps.latest.revision: 20
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: cb77271c37b02104a0e1695d5495ff085518acad
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: c65561f9a9a2ca287232b7a61bb0e07ca07a769d
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65675274"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299662"
 ---
 # <a name="performance-tools-on-windows-8-and-windows-server-2012-applications"></a>Windows 8 和 Windows Server 2012 應用程式的效能工具
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,7 +64,7 @@ Windows 8 和 Windows Server 2012 增強式安全性功能需要的重大變更�
   
 - [JavaScript 函式計時](https://msdn.microsoft.com/library/b2bf49fc-aea7-4d9c-8fcf-cff8b8dd0c03)  
   
-- [在遠端裝置上的 JavaScript 函式計時](https://msdn.microsoft.com/library/d78812b6-a97e-46dc-8d99-e724d1d725d8)  
+- [遠端裝置上的 JavaScript 函數計時](https://msdn.microsoft.com/library/d78812b6-a97e-46dc-8d99-e724d1d725d8)  
   
 - [分析 JavaScript 函式計時資料](https://msdn.microsoft.com/library/b5aea8d8-36df-47ba-a7ca-95406700ca9b)  
   
@@ -100,7 +100,7 @@ Windows 8 和 Windows Server 2012 增強式安全性功能需要的重大變更�
   
  若要在沒有安裝 Visual Studio 的裝置上剖析應用程式，請執行下列任一作業：  
   
-- 從 [MSDN 網站](http://go.microsoft.com/fwlink/?LinkID=219549)下載工具當做 Visual studio 遠端工具的一部分。  
+- 從 [MSDN 網站](https://go.microsoft.com/fwlink/?LinkID=219549)下載工具當做 Visual studio 遠端工具的一部分。  
   
 - 從您的 Visual Studio 電腦複製並執行獨立的分析工具安裝程式。 安裝程式位在 *%VSInstallDir%* **\Team Tools\Performance Tools\Setups** 資料夾。 選擇遠端電腦的作業系統 (x86/x64) 安裝程式。  
   
@@ -136,7 +136,7 @@ Windows 8 和 Windows Server 2012 增強式安全性功能需要的重大變更�
   
    **在遠端電腦上收集 TIP 資料**  
   
-   若要在遠端電腦上收集階層互動資料，您必須從 Visual Studio 電腦的 _%VSInstallDir%_**\Team Tools\Performance Tools\Setups** 資料夾中，將 **vs\_profiler\_**_\<平台>_**\_**_\<語言>_**.exe** 檔案複製到遠端電腦並加以安裝。 您無法使用 [Visual Studio 遠端工具](https://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c) 下載封裝的程式碼剖析工具。  
+   若要在遠端電腦上收集階層互動資料，您必須從 Visual Studio 電腦的 **%VSInstallDir%\_\_\Team Tools\Performance Tools\Setups** 資料夾中，將 _vs\<profiler_ **\_** 平台> _\<_ _語言>_ **.exe** 檔案複製到遠端電腦並加以安裝。 您無法使用 [Visual Studio 遠端工具](https://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c)下載封裝的程式碼剖析工具。  
   
    您可以使用 [VSPerfCmd](../profiling/vsperfcmd.md) 或 [VSPerfASPNetCmd](../profiling/vsperfaspnetcmd.md) 收集程式碼剖析資料。  
   

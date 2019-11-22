@@ -12,12 +12,12 @@ caps.latest.revision: 20
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 5b22e120161a3fefb5688a71c8e4d7540b8bc66e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a23a8d28f336728789fe9cbbe38f965cc56763d7
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72669678"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74295521"
 ---
 # <a name="event-handlers-propagate-changes-outside-the-model"></a>事件處理常式傳播模型外的變更
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ ms.locfileid: "72669678"
 
 ### <a name="to-define-a-store-event"></a>若要定義存放區事件
 
-1. 選擇您想要監視的事件種類。 如需完整清單，請查看 <xref:Microsoft.VisualStudio.Modeling.EventManagerDirectory> 的屬性。 每個屬性都會對應到一個事件種類。 最常使用的事件種類為：
+1. 選擇您想要監視的事件種類。 如需完整清單，請查看 <xref:Microsoft.VisualStudio.Modeling.EventManagerDirectory>的屬性。 每個屬性都會對應到一個事件種類。 最常使用的事件種類為：
 
    - `ElementAdded` –在建立模型專案、關聯性連結、圖形或連接器時觸發。
 
@@ -189,5 +189,5 @@ private static void AlbumTitleAdjuster(object sender,
 |TransactionCommitted||
 |TransactionRolledBack||
 
-## <a name="see-also"></a>請參閱
- [回應及傳播變更](../modeling/responding-to-and-propagating-changes.md)[範例程式碼：電路圖](http://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
+## <a name="see-also"></a>另請參閱
+ [回應及傳播變更](../modeling/responding-to-and-propagating-changes.md)

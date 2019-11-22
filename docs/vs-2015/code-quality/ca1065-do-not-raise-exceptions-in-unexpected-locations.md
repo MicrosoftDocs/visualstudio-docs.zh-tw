@@ -15,12 +15,12 @@ caps.latest.revision: 18
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 4b49ea9c293128efd400a1aa22d78ae4ee945092
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 439c6b5fc30be2e76eb6c0b6a44b1ec5226633b1
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72663591"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74295945"
 ---
 # <a name="ca1065-do-not-raise-exceptions-in-unexpected-locations"></a>CA1065：不要在非預期的位置中引發例外狀況
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "72663591"
 |-|-|
 |TypeName|DoNotRaiseExceptionsInUnexpectedLocations|
 |CheckId|CA1065|
-|Category|Microsoft. Design|
+|類別|Microsoft. Design|
 |中斷變更|非中斷|
 
 ## <a name="cause"></a>原因
@@ -89,16 +89,16 @@ ms.locfileid: "72663591"
 
 - <xref:System.Object.Equals%2A?displayProperty=fullName>
 
-- [M:IEquatable.Equals](http://go.microsoft.com/fwlink/?LinkId=113472)
+- [M:IEquatable.Equals](https://go.microsoft.com/fwlink/?LinkId=113472)
 
-  **Equals**方法應該傳回 `true` 或 `false`，而不是擲回例外狀況。 例如，如果將 Equals 傳遞兩個不相符的類型，則應該只傳回 `false`，而不是擲回 <xref:System.ArgumentException>。
+  **Equals**方法應該會傳回 `true` 或 `false`，而不是擲回例外狀況。 例如，如果將 Equals 傳遞兩個不相符的類型，則應該只傳回 `false`，而不是擲回 <xref:System.ArgumentException>。
 
 ### <a name="gethashcode-methods"></a>GetHashCode 方法
  下列**GetHashCode**方法通常不應該擲回例外狀況：
 
 - <xref:System.Object.GetHashCode%2A>
 
-- [M:IEqualityComparer.GetHashCode （T）](http://go.microsoft.com/fwlink/?LinkId=113477)
+- [M:IEqualityComparer.GetHashCode （T）](https://go.microsoft.com/fwlink/?LinkId=113477)
 
   **GetHashCode**應該一律會傳回值。 否則，您可能會遺失雜湊表中的專案。
 
@@ -114,7 +114,7 @@ ms.locfileid: "72663591"
  從完成項擲回例外狀況會導致 CLR 快速失敗，這會向下眼淚進程。 因此，應一律避免在完成項中擲回例外狀況。
 
 ### <a name="dispose-methods"></a>Dispose 方法
- @No__t_0 的方法不應該擲回例外狀況。 處置通常會在 `finally` 子句中做為清除邏輯的一部分來呼叫。 因此，從 Dispose 明確擲回例外狀況，會強制使用者在 `finally` 子句內新增例外狀況處理。
+ <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> 的方法不應該擲回例外狀況。 處置通常會在 `finally` 子句中做為清除邏輯的一部分來呼叫。 因此，從 Dispose 明確擲回例外狀況，會強制使用者在 `finally` 子句內新增例外狀況處理。
 
  **Dispose （false）** 程式碼路徑絕對不會擲回例外狀況，因為這幾乎一律從完成項呼叫。
 
@@ -135,5 +135,5 @@ ms.locfileid: "72663591"
 ## <a name="related-rules"></a>相關規則
  [CA2219：不要在 exception 子句中引發例外狀況](../code-quality/ca2219-do-not-raise-exceptions-in-exception-clauses.md)
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
  [設計警告](../code-quality/design-warnings.md)

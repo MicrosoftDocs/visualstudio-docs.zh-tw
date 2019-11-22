@@ -9,12 +9,12 @@ caps.latest.revision: 31
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: be633da5e8af6b987178d7c7360096db57fff1a0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ebe3813ad01566e2994b0a16b4a3fdc735de8c8c
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647004"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74295705"
 ---
 # <a name="step-6-name-your-button-controls"></a>步驟 6：命名您的按鈕控制項
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "72647004"
 
  表單上有四個按鈕，IDE 將它們分別命名為 **button1**、 **button2**、 **button3**及 **button4**。 只從目前的名稱來看，並無法得知哪一個按鈕才是 [關閉] 按鈕，以及哪一個是 [顯示圖片] 按鈕。 這就是為按鈕控制項指定更具資訊性名稱會很有用的原因。
 
- ![影片連結](../data-tools/media/playvideo.gif "連結 playvideo")如需本主題的影片版本，請參閱[教學課程1：在 Visual Basic 中建立圖片檢視器-影片 3](http://go.microsoft.com/fwlink/?LinkId=205213)或[教學課程1：使用C# -影片3建立圖片檢視器](http://go.microsoft.com/fwlink/?LinkId=205202)。 這些影片使用舊版 Visual Studio，因此有一些功能表命令以及某些使用者介面項目會有些微差異。 不過，概念和程序在目前 Visual Studio 版本中的運作方式雷同。
+ ![影片連結](../data-tools/media/playvideo.gif "連結 playvideo")如需本主題的影片版本，請參閱[教學課程1：在 Visual Basic 中建立圖片檢視器-影片 3](https://go.microsoft.com/fwlink/?LinkId=205213)或[教學課程1：使用C# -影片3建立圖片檢視器](https://go.microsoft.com/fwlink/?LinkId=205202)。 這些影片使用舊版 Visual Studio，因此有一些功能表命令以及某些使用者介面項目會有些微差異。 不過，概念和程序在目前 Visual Studio 版本中的運作方式雷同。
 
 ### <a name="to-name-your-button-controls"></a>命名您的按鈕控制項
 
@@ -77,4 +77,4 @@ ms.locfileid: "72647004"
 
 - 若要移到下一個教學課程步驟，請參閱[步驟 7：將對話方塊元件新增至您的表單](../ide/step-7-add-dialog-components-to-your-form.md)。
 
-- 若要回到上一個教學課程步驟，請參閱[步驟 5：將控制項新增至您的表單](../ide/step-5-add-controls-to-your-form.md)。
+- 若要回到上一個教學課程步驟，請參閱 [Step 5: Add Controls to Your Form](../ide/step-5-add-controls-to-your-form.md)。

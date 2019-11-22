@@ -8,22 +8,22 @@ ms.assetid: f7c25ba7-5c9c-455b-9242-701cda56f90c
 caps.latest.revision: 43
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 2891a01590f2970fc2e68ea7bc2d57506b12d26b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 4b4d3e7c597766c3b416a7cb637cf0e5e99f71d5
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72657112"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74302058"
 ---
 # <a name="walkthrough-creating-editing-and-maintaining-a-coded-ui-test"></a>逐步解說：建立、編輯和維護自動程式化 UI 測試
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 在這個逐步解說中，您將建立簡單的 Windows Presentation Foundation (WPF) 應用程式，以示範如何建立、編輯和維護自動程式化 UI 測試。 本逐步解說提供解決方案用來修正各種因時間問題和控制項重構而中斷的測試。
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>先決條件
  在本逐步解說中，您將會需要：
 
-- Visual Studio 企業版
+- Visual Studio Enterprise
 
 ### <a name="create-a-simple-wpf-application"></a>建立簡單 WPF 應用程式
 
@@ -41,7 +41,7 @@ ms.locfileid: "72657112"
 
 6. 指定要儲存專案的資料夾。 在 [位置] 文字方塊中輸入資料夾的名稱。
 
-7. 選擇 [確定]。
+7. 選擇 [ **確定**]。
 
      WPF Designer for Visual Studio 隨即開啟，並顯示專案的 MainWindow。
 
@@ -120,7 +120,7 @@ ms.locfileid: "72657112"
 
 1. 找出先前建立的 SimpleWPFApp 應用程式。 這個應用程式的預設位置是：C:\Users\\<username\>\Documents\Visual Studio \<version>\Projects\SimpleWPFApp\SimpleWPFApp\bin\Debug\SimpleWPFApp.exe
 
-2. 建立 SimpleWPFApp 應用程式的桌面捷徑。 以滑鼠右鍵按一下 SimpleWPFApp.exe，然後選擇 [複製]。 在桌面上按一下滑鼠右鍵，然後選取 [貼上捷徑]。
+2. 建立 SimpleWPFApp 應用程式的桌面捷徑。 以滑鼠右鍵按一下 SimpleWPFApp.exe，然後選取 [**複製**]。 在桌面上按一下滑鼠右鍵，再選取 [**貼上捷徑**]。
 
     > [!TIP]
     > 使用應用程式的捷徑可以輕鬆加入或修改應用程式的自動程式化 UI 測試，因為它能讓您快速啟動應用程式。
@@ -133,13 +133,13 @@ ms.locfileid: "72657112"
 
 5. 在中間窗格中選取 [自動程式化 UI 測試專案] 範本。
 
-6. 選擇 [確定]。
+6. 選擇 [ **確定**]。
 
      在 [方案總管] 中，名為 **CodedUITestProject1** 的新自動程式化 UI 測試專案會加入至您的方案。
 
      [產生自動程式化 UI 測試的程式碼] 對話方塊隨即出現。
 
-7. 選取 [錄製動作、編輯 UI 對應或加入判斷提示] 選項，然後選擇 [確定]。
+7. 選取 [**錄製動作、編輯 UI 對應或加入判斷提示**] 選項，然後選擇 [**確定**]。
 
      [UIMap – 自動程式化 UI 測試產生器] 隨即顯示，並將 Visual Studio 視窗最小化。
 
@@ -151,7 +151,7 @@ ms.locfileid: "72657112"
 
      您可以視需要暫停錄製 (例如，如果您需要處理傳入的電子郵件)。
 
-     ![暫停錄製](../test/media/cuit.png "CUIT")
+     ![暫停錄製](../test/media/cuit.png "CUIT_")
 
     > [!WARNING]
     > 將會錄製所有在桌面上執行的動作。 如果您執行的動作可能會導致在錄製中包括敏感性資料，則請暫停錄製。
@@ -160,7 +160,7 @@ ms.locfileid: "72657112"
 
      和前面一樣，請注意，會停用核取方塊控制項。
 
-10. 選擇 SimpleWPFApp 上的 [開始]。
+10. 選擇 SimpleWPFApp 中的 [**開始**]。
 
      進度列幾分鐘後應該 100% 完成。
 
@@ -190,7 +190,7 @@ ms.locfileid: "72657112"
 
 ### <a name="edit-and-rerun-the-coded-ui-test"></a>編輯和重新執行自動程式化 UI 測試
 
-1. 在 [測試總管] 視窗中，選取失敗的測試，並在 [StackTrace] 區段中選擇 **UIMap.SimpleAppTest()** 的第一個連結。
+1. 在 [測試總管] 視窗中，選取失敗的測試，並在 [StackTrace] 區段中選擇 [UIMap.SimpleAppTest()] 的第一個連結。
 
 2. UIMap.Designer.cs 檔案隨即開啟，而且錯誤點反白顯示在程式碼中：
 
@@ -207,7 +207,7 @@ ms.locfileid: "72657112"
 
 4. 在 [方案總管] 中，找出自動程式化 UI 測試專案中的 **UIMap.uitest**。
 
-5. 開啟 **UIMap.uitest** 的捷徑功能表，並選擇 [開啟]。
+5. 開啟 [**UIMap.uitest**] 的捷徑功能表，並選擇 [**開啟**]。
 
      此自動程式碼 UI 測試隨即在 [自動程式碼 UI 測試編輯器] 中顯示。 您現在可以檢視及編輯自動程式化 UI 測試。
 
@@ -215,11 +215,11 @@ ms.locfileid: "72657112"
 
 7. 選擇 [自動程式化 UI 測試編輯器] 工具列上的 [移動程式碼] 按鈕。
 
-8. Microsoft Visual Studio 對話方塊隨即顯示。 它會警告此方法將從 UIMap.uitest 檔案移至 UIMap.cs 檔案，而且您將無法再使用 [自動程式化 UI 測試編輯器] 編輯此方法。 選擇 [ **是**]。
+8. Microsoft Visual Studio 對話方塊隨即顯示。 它會警告此方法將從 UIMap.uitest 檔案移至 UIMap.cs 檔案，而且您將無法再使用 [自動程式化 UI 測試編輯器] 編輯此方法。 選擇 [**是**]。
 
      測試方法就會從 UIMap.uitest 檔案移除，不再顯示在 [UI 動作] 窗格中。 若要編輯移動的測試檔案，請從 [方案總管] 開啟 UIMap.cs 檔案。
 
-9. 在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 工具列上，選擇 [儲存]。
+9. 在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 工具列上，選擇 [**儲存**]。
 
      測試方法的更新就會儲存在 UIMap.Designer 檔案中。
 
@@ -261,7 +261,7 @@ ms.locfileid: "72657112"
 
     ```
 
-14. 在 [建置] 功能表上，選擇 [建置方案]。
+14. 在 [**建置**] 功能表上，選擇 [**建置方案**]。
 
 15. 以滑鼠右鍵按一下 **CodedUITestMethod** 方法，然後選取 [執行測試]。
 
@@ -273,7 +273,7 @@ ms.locfileid: "72657112"
 
 2. 在 [屬性] 視窗頂端，將 [Name] 屬性值從 button1 變更為 buttonA。
 
-3. 在 [建置] 功能表上，選擇 [建置方案]。
+3. 在 [**建置**] 功能表上，選擇 [**建置方案**]。
 
 4. 在 [測試總管] 中，執行 **CodedUITestMethod1**。
 
@@ -305,17 +305,17 @@ ms.locfileid: "72657112"
 
      [開始] 按鈕被封入藍色方塊中，而 [自動程式化 UI 測試產生器] 需幾秒鐘的時間處理所選控制項的資料並顯示控制項屬性。 請注意，[AutomationUId] 已命名為 [buttonA]。
 
-4. 在控制項的屬性中，選擇左上角的箭號展開 [UI 控制項對應]。 請注意，[UIStartButton1] 處於選取狀態。
+4. 在控制項的屬性中，選擇左上角的箭號展開 [UI 控制項對應]。 請注意，[**UIStartButton1**] 處於選取狀態。
 
 5. 選擇工具列中的 [將控制項加入至 UI 控制項對應]。
 
-     視窗底部的狀態會顯示 [選取的控制項已經加入到此 UI 控制項對應] 來確認動作。
+     視窗底部的狀態會顯示 [**選取的控制項已經加入到此 UI 控制項對應**] 來確認動作。
 
 6. 選擇 [UIMap - 自動程式化 UI 測試產生器] 上的 [產生程式碼]。
 
      [自動程式化 UI 測試產生器 - 產生程式碼] 隨即出現，並帶有注意事項，指出不需要新方法，而且只會針對 UI 控制項對應的變更產生程式碼。
 
-7. 選擇 [產生]。
+7. 選擇 [**產生**]。
 
 8. 關閉 SimpleWPFApp.exe。
 
@@ -360,31 +360,31 @@ ms.locfileid: "72657112"
 
     ```
 
-13. 在 [建置] 功能表上，選擇 [建置方案]。
+13. 在 [**建置**] 功能表上，選擇 [**建置方案**]。
 
 14. 在 [測試總管] 中，執行 [CodedUITestMethod1]。
 
-     這次自動程式化 UI 測試成功完成測試中的所有步驟。  在 [測試結果] 視窗中，您將會看到 [成功] 的狀態。
+     這次自動程式化 UI 測試成功完成測試中的所有步驟。  在 [測試結果] 視窗中，您將會看到 [**成功**] 的狀態。
 
 ## <a name="external-resources"></a>外部資源
 
 ### <a name="videos"></a>視訊
- ![影片](../data-tools/media/playvideo.gif "連結 playvideo")自動[程式碼 UI 測試的連結-deepdive-episode1-gettingstarted-deepdive-episode1-gettingstarted-GettingStarted](http://go.microsoft.com/fwlink/?LinkID=230573)
+ ![影片](../data-tools/media/playvideo.gif "連結 playvideo")自動[程式碼 UI 測試的連結-deepdive-episode1-gettingstarted-deepdive-episode1-gettingstarted-GettingStarted](https://go.microsoft.com/fwlink/?LinkID=230573)
 
- ![影片](../data-tools/media/playvideo.gif "連結 playvideo")自動[程式碼 UI 測試的連結-deepdive-episode1-gettingstarted-deepdive-episode2-maintainenceanddebugging-deepdive-episode2-maintainenceanddebugging](http://go.microsoft.com/fwlink/?LinkID=230574)
+ ![影片](../data-tools/media/playvideo.gif "連結 playvideo")自動[程式碼 UI 測試的連結-deepdive-episode1-gettingstarted-deepdive-episode2-maintainenceanddebugging-deepdive-episode2-maintainenceanddebugging](https://go.microsoft.com/fwlink/?LinkID=230574)
 
- ![影片](../data-tools/media/playvideo.gif "連結 playvideo")自動[程式碼 UI 測試的連結-deepdive-episode1-gettingstarted-deepdive-episode3-handcoding-deepdive-episode3-handcoding](http://go.microsoft.com/fwlink/?LinkID=230575)
+ ![影片](../data-tools/media/playvideo.gif "連結 playvideo")自動[程式碼 UI 測試的連結-deepdive-episode1-gettingstarted-deepdive-episode3-handcoding-deepdive-episode3-handcoding](https://go.microsoft.com/fwlink/?LinkID=230575)
 
 ### <a name="hands-on-lab"></a>實習課程
- [MSDN 虛擬實驗室：使用 Visual Studio 2010 建立自動程式碼 UI 測試簡介](http://go.microsoft.com/fwlink/?LinkID=22508)
+ [MSDN 虛擬實驗室：使用 Visual Studio 2010 建立自動程式碼 UI 測試簡介](https://go.microsoft.com/fwlink/?LinkID=22508)
 
 ### <a name="faq"></a>常見問題 (FAQ)
- [自動程式碼 UI 測試常見問題集 - 1](http://go.microsoft.com/fwlink/?LinkID=230576)
+ [自動程式碼 UI 測試常見問題集 - 1](https://go.microsoft.com/fwlink/?LinkID=230576)
 
- [自動程式碼 UI 測試常見問題集 - 2](http://go.microsoft.com/fwlink/?LinkID=230578)
+ [自動程式碼 UI 測試常見問題集 - 2](https://go.microsoft.com/fwlink/?LinkID=230578)
 
 ### <a name="forum"></a>論壇
- [Visual Studio 使用者介面自動化測試 (包括 CodedUI)](http://go.microsoft.com/fwlink/?LinkID=224497)
+ [Visual Studio UI 自動化測試 (包括 CodedUI)](https://go.microsoft.com/fwlink/?LinkID=224497)
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
  [使用 UI 自動化來測試您的程式碼](../test/use-ui-automation-to-test-your-code.md)[消費者入門 WPF 設計](https://msdn.microsoft.com/18e61d03-b96a-4058-a166-8ec6b3f6116b)工具支援的設定[和平臺自動程式化 Ui 測試和動作記錄](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)[使用自動程式碼 UI 測試編輯器編輯](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md)自動程式化 ui 測試

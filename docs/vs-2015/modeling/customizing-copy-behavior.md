@@ -9,12 +9,12 @@ caps.latest.revision: 18
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: fdd45a1de7e2882626d9b12db9be4b0c7a36eb38
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: e17e29e36be5636662e6105a05446a9cbe0aa724
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72655058"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74301186"
 ---
 # <a name="customizing-copy-behavior"></a>自訂複製行為
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "72655058"
 在使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Visualization and Modeling SDK 建立之網域指定的語言 (DSL) 中，您可以變更使用者複製及貼上項目時所發生的情況。
 
 ## <a name="standard-copy-and-paste-behavior"></a>標準複製和貼上行為
- 若要啟用複製，請在 [DSL Explorer] 中設定 [**編輯器**] 節點的 [**啟用複製貼**上] 屬性。
+ 若要啟用複製，請設定 [DSL 總管] 中 [編輯器] 節點的 [啟用複製貼上] 屬性。
 
  根據預設，當使用者將項目複製到 [剪貼簿] 時，也會複製下列項目：
 
@@ -44,13 +44,13 @@ ms.locfileid: "72655058"
  如需使用程式碼自訂模型的詳細資訊，請參閱[在程式碼中流覽和更新模型](../modeling/navigating-and-updating-a-model-in-program-code.md)。
 
  **啟用或停用複製、剪下和貼上。**
-在 [DSL Explorer] 中，設定 [**編輯器**] 節點的 [**啟用複製貼**上] 屬性。
+在 [DSL 總管] 中，設定 [編輯器] 節點的 [啟用複製貼上] 屬性。
 
  **將連結複製到相同的目標。** 例如，若要讓複製的批註方塊連結至相同的主旨元素。
-將角色的 [**傳播複本**] 屬性設定為 [**只將複本傳播至連結**]。 如需詳細資訊，請參閱[自訂連結複製行為](#customizeLinks)。
+將角色的 [傳播複本] 屬性設定為 [只將複本傳播至連結]。 如需詳細資訊，請參閱[自訂連結複製行為](#customizeLinks)。
 
  複製連結的項目。 例如，當您複製新項目時，也會建立任何連結之註解方塊的複本。
-將角色的 [**傳播複本**] 屬性設定為 [將**複本傳播至連結和相反角色扮演**者]。 如需詳細資訊，請參閱[自訂連結複製行為](#customizeLinks)。
+將角色的 [傳播複本] 屬性設定為 [將複本傳播至連結和相反角色扮演者]。 如需詳細資訊，請參閱[自訂連結複製行為](#customizeLinks)。
 
  **複製並貼上，以快速複製元素。** 一般來說，您剛才複製的專案仍為選取狀態，而且您無法在其上貼上相同類型的元素。
 將 Element Merge 指示詞加入至網域類別，並加以設定，以正向合併至父類別。 這對拖曳作業會造成相同的影響。 如需詳細資訊，請參閱[自訂元素的建立和移動](../modeling/customizing-element-creation-and-movement.md)。
@@ -85,13 +85,13 @@ partial class MyDslClipboardCommandSet
  覆寫 `ClipboardCommandSet.ProcessOnPasteCommand()` 可在呼叫基底方法之後建立其他連結。
 
  **自訂可以將元素複製**到外部應用程式的格式，例如，將框線加入點陣圖表單。
-覆寫 DslPackage 專案中的*MyDsl* `ClipboardCommandSet.ProcessOnMenuCopyCommand()`。
+覆寫 DslPackage 專案中的 *MyDsl*`ClipboardCommandSet.ProcessOnMenuCopyCommand()`。
 
  **自訂 copy 命令將元素複製到剪貼簿的方式，但不是在拖曳作業中。**
-覆寫 DslPackage 專案中的*MyDsl* `ClipboardCommandSet.CopyModelElementsIntoElementGroupPrototype()`。
+覆寫 DslPackage 專案中的 *MyDsl*`ClipboardCommandSet.CopyModelElementsIntoElementGroupPrototype()`。
 
- **透過複製和貼上來保留圖形版面配置。**
-當使用者複製多個圖形時，您可以在貼上時保留圖形的相對位置。 這項技術是由[VMSDK：線路圖範例](http://go.microsoft.com/fwlink/?LinkId=213879)中的範例所示範。
+ **透過複製和貼上保留配置。**
+當使用者複製多個圖形時，您可以在貼上時保留圖形的相對位置。 這項技術是由[VMSDK：線路圖範例](https://go.microsoft.com/fwlink/?LinkId=213879)中的範例所示範。
 
  若要達成這個效果，請將圖形和連接線加入至複製的 ElementGroupPrototype。 最方便的覆寫方法是 ElementOperations.CreateElementGroupPrototype()。 若要執行這項操作，請將下列程式碼加入至 DSL 專案：
 
@@ -148,7 +148,7 @@ partial class MyDslDiagram // EDIT NAME
 ```
 
  **在選擇的位置貼上圖形，例如目前的游標位置。**
-當使用者複製多個圖形時，您可以在貼上時保留圖形的相對位置。 這項技術是由[VMSDK：線路圖範例](http://go.microsoft.com/fwlink/?LinkId=213879)中的範例所示範。
+當使用者複製多個圖形時，您可以在貼上時保留圖形的相對位置。 這項技術是由[VMSDK：線路圖範例](https://go.microsoft.com/fwlink/?LinkId=213879)中的範例所示範。
 
  若要達成這個效果，請覆寫 `ClipboardCommandSet.ProcessOnMenuPasteCommand()` 以使用特定位置版本的 `ElementOperations.Merge()`。 若要執行這項操作，請在 DslPackage 專案中加入下列程式碼：
 
@@ -218,7 +218,7 @@ partial class MyDslClipboardCommandSet // EDIT NAME
 請參閱[如何：加入拖放處理常式](../modeling/how-to-add-a-drag-and-drop-handler.md)。
 
 ## <a name="customizeLinks"></a>自訂連結複製行為
- 當使用者複製項目時，標準行為是所有內嵌項目也會一併複製。 您可以修改標準複製行為。 在 DSL 定義中，選取關聯性之一端的角色，然後在屬性視窗設定 [**傳播複製**值]。
+ 當使用者複製項目時，標準行為是所有內嵌項目也會一併複製。 您可以修改標準複製行為。 在 DSL 定義中，選取關聯性一端的角色，並在 [屬性] 視窗中設定 [傳播複本] 值。
 
  ![傳播網域角色的 Copy 屬性](../modeling/media/dslpropagatescopy.png "DslPropagatesCopy")
 
@@ -291,12 +291,12 @@ using Microsoft.VisualStudio.Modeling.Diagrams.ExtensionEnablement;
 
  在您的 ElementOperations 類別中定義兩個方法：
 
-- `CanMerge(ModelElement targetElement, System.Windows.Forms.IDataObject data)`，決定是否可以將來源項目拖曳至目標圖形、連接線或圖表上。
+- `CanMerge(ModelElement targetElement, System.Windows.Forms.IDataObject data)`，決定是否可以將來源專案拖曳至靶心圖表形、連接線或圖表。
 
-- `MergeElementGroupPrototype(ModelElement targetElement, ElementGroupPrototype sourcePrototype)`，將來源項目結合成目標。
+- `MergeElementGroupPrototype(ModelElement targetElement, ElementGroupPrototype sourcePrototype)`，它會將來源元素結合到目標中。
 
 ### <a name="canmerge"></a>CanMerge()
- 呼叫 `CanMerge()` 可決定當滑鼠移過圖表時，應提供給使用者的意見。 此方法的參數包括滑鼠停留的項目，以及有關執行拖曳作業之來源的資料。 使用者可以從畫面上的任何位置拖曳。 因此，來源物件可以是許多不同類型，並可以不同的格式進行序列化。 如果來源為 DSL 或 UML 模型，資料參數是 <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype> 的序列化。 拖曳、複製和工具箱作業使用 ElementGroupPrototypes 代表模型片段。
+ 呼叫 `CanMerge()` 以判斷當滑鼠移到圖表上時，應提供給使用者的意見反應。 此方法的參數包括滑鼠停留的項目，以及有關執行拖曳作業之來源的資料。 使用者可以從畫面上的任何位置拖曳。 因此，來源物件可以是許多不同類型，並可以不同的格式進行序列化。 如果來源為 DSL 或 UML 模型，資料參數是 <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype> 的序列化。 拖曳、複製和工具箱作業使用 ElementGroupPrototypes 代表模型片段。
 
  一個項目群組原型可以包含任意數目的項目和連結。 項目類型可由其 GUID 識別。 此 GUID 是拖曳圖形的 GUID，而不是基礎模型項目的 GUID。 在下列範例中，如果將 UML 圖表中的圖形類別拖曳至這個圖表上，則 `CanMerge()` 傳回 true。
 
@@ -377,7 +377,7 @@ private ElementGroupPrototype ConvertDraggedTypeToLocal (MyTargetShape snapshot,
 
  當使用者按下 CTRL+C 或使用 [複製] 功能表命令時，會呼叫 <xref:Microsoft.VisualStudio.Modeling.Shell.ClipboardCommandSet.ProcessOnMenuCopyCommand%2A> 方法。 您可以在**DslPackage\Generated Code\CommandSet.cs**中查看其設定方式。 如需如何設定命令的詳細資訊，請參閱[如何：將命令新增至快捷方式功能表](../modeling/how-to-add-a-command-to-the-shortcut-menu.md)。
 
- 您可以藉由在 DslPackage 專案中新增*MyDsl* `ClipboardCommandSet` 的部分類別定義來覆寫 ProcessOnMenuCopyCommand。
+ 您可以在 DslPackage 專案中加入 *MyDsl*`ClipboardCommandSet` 的部分類別定義，來覆寫 ProcessOnMenuCopyCommand。
 
 ```csharp
 using System.Collections.Generic;
@@ -563,5 +563,5 @@ namespace Company.MyDsl
 
 ```
 
-## <a name="see-also"></a>請參閱
- [自訂專案的建立和移動](../modeling/customizing-element-creation-and-movement.md)[如何：新增拖放處理常式](../modeling/how-to-add-a-drag-and-drop-handler.md)[自訂刪除行為](../modeling/customizing-deletion-behavior.md)[範例： VMSDK 電路圖表範例](http://go.microsoft.com/fwlink/?LinkId=213879)
+## <a name="see-also"></a>另請參閱
+ [自訂專案的建立和移動](../modeling/customizing-element-creation-and-movement.md)[如何：新增拖放處理常式](../modeling/how-to-add-a-drag-and-drop-handler.md)[自訂刪除行為](../modeling/customizing-deletion-behavior.md)[範例： VMSDK 電路圖表範例](https://go.microsoft.com/fwlink/?LinkId=213879)

@@ -13,19 +13,19 @@ caps.latest.revision: 30
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 165214dff519e7db94d5ee8f3a1a6d86856cd4a1
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f27fede436ea6cabe0aab6480cd4841299c42293
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72609661"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74302779"
 ---
 # <a name="model-user-requirements"></a>模型使用者需求
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio 透過繪製使用者活動的圖表，以及系統協助他們達到其目標所扮演的角色，幫助您了解、討論和溝通使用者需求。 需求模型是這些圖表的其中一組，各著重於使用者需求的不同層面。 如需視訊示範，請參閱︰ [Modeling the Business Domain](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-3-Modeling-the-Business-Domain/)(模型化商務網域)。
+Visual Studio 透過繪製使用者活動的圖表，以及系統協助他們達到其目標所扮演的角色，幫助您了解、討論和溝通使用者需求。 需求模型是這些圖表的其中一組，各著重於使用者需求的不同層面。 如需視訊示範，請參閱︰ [Modeling the Business Domain](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-3-modeling-the-business-domain)(模型化商務網域)。
 
- 若要查看支援各類型之模型的 Visual Studio 版本，請參閱 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。
+ 若要查看哪些版本的 Visual Studio 支援每種模型類型，請參閱 [Architecture and Modeling Tools 的版本支援](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。
 
  需求模型可協助您：
 
@@ -55,7 +55,7 @@ Visual Studio 透過繪製使用者活動的圖表，以及系統協助他們達
 |-------------------------|-----------------------------------------------|-------------|
 |使用案例圖|系統使用者和其對系統的處理方式。|[描述您系統的使用方式](#UseCases)|
 |概念性類別圖|用來描述需求的類型字彙；系統介面上可見的類型。|[定義用來描述需求的詞彙](#RequirementsClasses)|
-|活動圖表|使用者和系統或其組件所執行活動之間的工作和資訊流程。|[顯示使用者與您系統之間的工作流程](#Workflow)|
+|活動圖|使用者和系統或其組件所執行活動之間的工作和資訊流程。|[顯示使用者與您系統之間的工作流程](#Workflow)|
 |順序圖表|使用者和系統或其組件之間的互動順序。 活動圖表的替代檢視。|[顯示使用者與您系統之間的互動](#Sequences)|
 |其他文件或工作項目|效能、安全性、可用性和可靠性準則。|[描述服務需求品質](#QoSRequirements)|
 |其他文件或工作項目|非特定使用案例的特定條件約束和規則|[示範商務規則](#BusinessRules)|
@@ -134,16 +134,16 @@ Visual Studio 透過繪製使用者活動的圖表，以及系統協助他們達
 
 |深入了解|讀取|
 |--------------------|----------|
-|尋找需求類別的更多詳細資訊|[UML 類別圖表：方針](../modeling/uml-class-diagrams-guidelines.md)|
+|尋找需求類別的更多詳細資訊|[UML 類別圖：方針](../modeling/uml-class-diagrams-guidelines.md)|
 |概念性類別圖上的項目|[UML 類別圖表：參考](../modeling/uml-class-diagrams-reference.md)|
 |如何透過概念性類別開發程式碼|[建立應用程式架構的模型](../modeling/model-your-app-s-architecture.md)|
 
- 在概念性類別圖中，通常不適合將箭號放在關聯上來代表巡覽性。 原因是圖表不代表實作。 關聯代表真實世界物件之間的關聯性。 下列 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 擴充功能會將非方向性箭號設為預設值： [Sample: UML Domain Modeling features](http://go.microsoft.com/fwlink/?LinkId=213849)(範例：UML 網域模型功能)。
+ 在概念性類別圖中，通常不適合將箭號放在關聯上來代表巡覽性。 原因是圖表不代表實作。 關聯代表真實世界物件之間的關聯性。 下列 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 擴充功能會將非方向性箭號設為預設值： [Sample: UML Domain Modeling features](https://go.microsoft.com/fwlink/?LinkId=213849)(範例：UML 網域模型功能)。
 
 ## <a name="BusinessRules"></a> Showing Business Rules
  商務規則是未與特定使用案例相關聯的需求，而且應該會在系統中觀察到。
 
- 許多商務規則是概念性類別間之關聯性的條件約束。 您可以將這些*靜態商務規則*撰寫為與概念類別圖上相關類別相關聯的批註。 例如:
+ 許多商務規則是概念性類別間之關聯性的條件約束。 您可以將這些*靜態商務規則*撰寫為與概念類別圖上相關類別相關聯的批註。 例如：
 
  ![附加至 Order 類別的批註中的規則。](../modeling/media/uml-reqmcd2.png "UML_ReqmCD2")
 
@@ -157,7 +157,7 @@ Visual Studio 透過繪製使用者活動的圖表，以及系統協助他們達
 
 |深入了解|讀取|
 |--------------------|----------|
-|尋找和記錄靜態商務規則的更多詳細資訊|[UML 類別圖表：方針](../modeling/uml-class-diagrams-guidelines.md)|
+|尋找和記錄靜態商務規則的更多詳細資訊|[UML 類別圖：方針](../modeling/uml-class-diagrams-guidelines.md)|
 |概念性類別圖上的項目|[UML 類別圖表：參考](../modeling/uml-class-diagrams-reference.md)|
 |如何開發遵守商務規則的程式碼|[建立應用程式架構的模型](../modeling/model-your-app-s-architecture.md)|
 
@@ -188,11 +188,11 @@ Visual Studio 透過繪製使用者活動的圖表，以及系統協助他們達
 ## <a name="Workflow"></a>顯示使用者與您系統之間的工作流程
  您可以使用活動圖示範不同使用案例之間的工作流程。 繪製示範使用者在系統內外部所執行之主要工作的活動圖，這十分適用於開始需求模型。
 
- 例如:
+ 例如：
 
  ![具有三個動作和一個迴圈的活動。](../modeling/media/uc-reqmwfact.png "UC_ReqmWFAct")
 
- 您可以繪製使用案例圖和活動圖來顯示相同資訊的不同檢視。  使用案例圖可以更有效地顯示較大活動中較小動作的巢狀結構，但不會顯示工作流程。 例如:
+ 您可以繪製使用案例圖和活動圖來顯示相同資訊的不同檢視。  使用案例圖可以更有效地顯示較大活動中較小動作的巢狀結構，但不會顯示工作流程。 例如：
 
  ![先前動作的使用案例](../modeling/media/uml-reqmwfuc.png "UML_ReqmWFUC")
 
@@ -202,14 +202,14 @@ Visual Studio 透過繪製使用者活動的圖表，以及系統協助他們達
 
 |深入了解|讀取|
 |--------------------|----------|
-|如何定義商務工作流程的詳細資訊|[UML 活動圖表：方針](../modeling/uml-activity-diagrams-guidelines.md)|
-|活動圖上的項目|[UML 活動圖表：參考](../modeling/uml-activity-diagrams-reference.md)|
+|如何定義商務工作流程的詳細資訊|[UML 活動圖：方針](../modeling/uml-activity-diagrams-guidelines.md)|
+|活動圖上的項目|[UML 活動圖：參考](../modeling/uml-activity-diagrams-reference.md)|
 |如何透過活動圖開發程式碼|[建立應用程式架構的模型](../modeling/model-your-app-s-architecture.md)|
 
 ## <a name="Sequences"></a>顯示使用者與您系統之間的互動
  您可以使用循序圖來示範系統與外部行動之間或系統不同組件之間的訊息交換。 這提供極清楚顯示互動序列的使用案例中步驟的檢視。 在使用案例中有數個互動方以及系統具有 API 的情況下，循序圖特別有用。
 
- 例如:
+ 例如：
 
  ![具有系統和動作專案的順序圖表。](../modeling/media/uml-reqmseq.png "UML_ReqmSeq")
 
@@ -219,8 +219,8 @@ Visual Studio 透過繪製使用者活動的圖表，以及系統協助他們達
 
 |深入了解|讀取|
 |--------------------|----------|
-|如何定義互動的詳細資訊|[UML 順序圖表：方針](../modeling/uml-sequence-diagrams-guidelines.md)|
-|循序圖上的項目|[UML 順序圖表：參考](../modeling/uml-sequence-diagrams-reference.md)|
+|如何定義互動的詳細資訊|[UML 循序圖：方針](../modeling/uml-sequence-diagrams-guidelines.md)|
+|循序圖上的項目|[UML 循序圖：參考](../modeling/uml-sequence-diagrams-reference.md)|
 |如何透過循序圖開發程式碼|[建立應用程式架構的模型](../modeling/model-your-app-s-architecture.md)|
 
 ## <a name="using-a-model-to-reduce-inconsistencies"></a>使用模型來減少不一致
@@ -238,5 +238,5 @@ Visual Studio 透過繪製使用者活動的圖表，以及系統協助他們達
 
   檢查不同圖表所提供之檢視間的關聯性，即可快速了解使用者工作的主要概念，並幫助他們了解系統中他們所需的項目。 您也會深入了解利害關係人最不關心的需求。 您可以規劃在專案的早期階段開發這些功能 (至少為簡化形式)，讓使用者實驗它們。
 
-## <a name="see-also"></a>請參閱
- [編輯 UML 模型和圖表](../modeling/edit-uml-models-and-diagrams.md)[從模型開發測試](../modeling/develop-tests-from-a-model.md)[使用開發進程模型中的模型](../modeling/use-models-in-your-development-process.md)[應用程式的架構](../modeling/model-your-app-s-architecture.md)[範例 vs 延伸模組： uml 網域模型化功能](http://go.microsoft.com/fwlink/?LinkId=213849)[範例 vs 延伸模組：色彩 UML依造型的元素](http://go.microsoft.com/fwlink/?LinkID=213841)[範例 vs 延伸模組：將 UML 專案連結至圖表、檔案和其他元素](http://go.microsoft.com/fwlink/?LinkID=213813)[範例 vs 延伸模組：在 UML 圖表上對齊圖形](http://go.microsoft.com/fwlink/?LinkID=213809)[影片：模型化商務領域](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-3-Modeling-the-Business-Domain/)
+## <a name="see-also"></a>另請參閱
+ [編輯 UML 模型和圖表](../modeling/edit-uml-models-and-diagrams.md)[從模型開發測試](../modeling/develop-tests-from-a-model.md)[使用開發進程模型中的模型](../modeling/use-models-in-your-development-process.md)[您的應用程式的架構](../modeling/model-your-app-s-architecture.md)[範例 vs 延伸模組： uml 網域模型化功能](https://go.microsoft.com/fwlink/?LinkId=213849)[範例 VS 延伸模組：依造型的色彩 uml 元素](https://go.microsoft.com/fwlink/?LinkID=213841)[範例 vs 延伸模組：將 uml 專案連結至圖表、檔案和其他元素](https://go.microsoft.com/fwlink/?LinkID=213813)[範例 Vs 延伸模組：在 uml 圖表上對齊圖形](https://go.microsoft.com/fwlink/?LinkID=213809)[影片：建立商務網域模型](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-3-modeling-the-business-domain)

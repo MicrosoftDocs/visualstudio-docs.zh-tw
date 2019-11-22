@@ -11,22 +11,22 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 8/24/2017
 ms.author: ghogen
-ms.openlocfilehash: 1f2199907ab6a59e329624046079436ca7cd08dd
-ms.sourcegitcommit: 3cc73e74921a9ceb622542e0e263abeebc455c00
+ms.openlocfilehash: 36b2691525eb66bf946317c1bb5254796d5cd639
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "67624160"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74291225"
 ---
 # <a name="browse-and-manage-storage-resources-by-using-server-explorer"></a>使用伺服器總管來瀏覽及管理儲存體資源
 
 [!INCLUDE [storage-try-azure-tools](./includes/storage-try-azure-tools.md)]
 
-## <a name="overview"></a>總覽
+## <a name="overview"></a>概觀
 
 如果您已經安裝 Azure Tools for Microsoft Visual Studio，您可以從 Azure 的儲存體帳戶檢視 blob、佇列和資料表資料。 在 [伺服器總管] 中的 Azure **儲存體**節點會顯示位於您的本機儲存體模擬器帳戶和其他 Azure 儲存體帳戶中的資料。
 
-若要在 Visual Studio 中檢視 [伺服器總管]，請在功能表列上選取 [檢視]   > [伺服器總管]  。 **儲存體**節點會顯示存在於您連接之每個 Azure 訂用帳戶或憑證下的儲存體帳戶。 如果您的儲存體帳戶未出現，您可以遵循 [本文稍後](#add-storage-accounts-by-using-server-explorer)的指示加以新增。
+若要在 Visual Studio 中檢視 [伺服器總管]，請在功能表列上選取 [檢視] > [伺服器總管]。 **儲存體**節點會顯示存在於您連接之每個 Azure 訂用帳戶或憑證下的儲存體帳戶。 如果您的儲存體帳戶未出現，您可以遵循 [本文稍後](#add-storage-accounts-by-using-server-explorer)的指示加以新增。
 
 從 Azure SDK 2.7 開始，您也可以使用雲端總管來檢視和管理您的 Azure 資源。 如需詳細資訊，請參閱[使用雲端總管管理 Azure 資源](vs-azure-tools-resources-managing-with-cloud-explorer.md)。
 
@@ -44,8 +44,8 @@ ms.locfileid: "67624160"
 
 ### <a name="to-create-a-blob-container"></a>建立 Blob 容器
 
-1. 開啟 **Blobs** 節點的捷徑功能表，然後選取 [建立 Blob 容器]  。
-1. 在 [建立 Blob 容器]  對話方塊中，輸入新容器的名稱。  
+1. 開啟 **Blobs** 節點的捷徑功能表，然後選取 [建立 Blob 容器]。
+1. 在 [建立 Blob 容器] 對話方塊中，輸入新容器的名稱。  
 1. 選取鍵盤上的 Enter 鍵，也可以按一下或點選名稱欄位以外的地方，以儲存 Blob 容器。
 
    > [!NOTE]
@@ -53,11 +53,11 @@ ms.locfileid: "67624160"
 
 ### <a name="to-delete-a-blob-container"></a>刪除 Blob 容器
 
-開啟您想要移除之 Blob 容器的捷徑功能表，然後選取 [刪除]  。
+開啟您想要移除之 Blob 容器的捷徑功能表，然後選取 [刪除]。
 
 ### <a name="to-display-a-list-of-the-items-in-a-blob-container"></a>顯示 blob 容器中的項目清單
 
-開啟清單中 Blob 容器名稱的捷徑功能表，然後選取 [開啟]  。
+開啟清單中 Blob 容器名稱的捷徑功能表，然後選取 [開啟]。
 
 當您檢視 blob 容器的內容時，它就會出現在稱為 blob 容器檢視的索引標籤中。
 
@@ -74,9 +74,9 @@ ms.locfileid: "67624160"
 
 ### <a name="to-create-a-folder-or-subfolder-in-a-blob-container"></a>在 blob 容器中建立資料夾或子資料夾
 
-1. 在 [Cloud Explorer] 中選擇 Blob 容器。 在 [容器] 視窗中，選取 [上傳 Blob]  按鈕。
+1. 在 [Cloud Explorer] 中選擇 Blob 容器。 在 [容器] 視窗中，選取 [上傳 Blob] 按鈕。
 
-1. 在 [上傳新的檔案]  對話方塊中，選取 [瀏覽]  按鈕來指定您想要上傳的檔案，然後在 [資料夾 (選擇性)]  方塊中輸入資料夾名稱。
+1. 在 [上傳新的檔案] 對話方塊中，選取 [瀏覽] 按鈕來指定您想要上傳的檔案，然後在 [資料夾 (選擇性)] 方塊中輸入資料夾名稱。
 
    ![將檔案上傳至 blob 資料夾](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC766037.png)
 
@@ -84,7 +84,7 @@ ms.locfileid: "67624160"
 
    ![加入至 blob 容器的資料夾](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC766038.png)
 
-1. 按兩下資料夾或選取 Enter 鍵以查看資料夾的內容。 當您位於容器的資料夾中，您可以藉由選取 [開啟上層目錄]  \(箭頭) 按鈕來返回容器的根目錄。
+1. 按兩下資料夾或選取 Enter 鍵以查看資料夾的內容。 當您位於容器的資料夾中，您可以藉由選取 [開啟上層目錄] \(箭頭) 按鈕來返回容器的根目錄。
 
 ### <a name="to-delete-a-container-folder"></a>刪除容器資料夾
 
@@ -96,7 +96,7 @@ ms.locfileid: "67624160"
 
 您可以藉由指定一般的前置詞來篩選顯示的 blob。
 
-例如，如果您在篩選文字方塊中輸入前置詞 **hello**，然後選取 [執行]  \( **!** ) 按鈕，則只會出現以 "hello" 開頭的 blob。
+例如，如果您在篩選文字方塊中輸入前置詞 **hello**，然後選取 [執行] \( **!** ) 按鈕，則只會出現以 "hello" 開頭的 blob。
 
 ![篩選文字方塊](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC519076.png)
 
@@ -106,23 +106,23 @@ ms.locfileid: "67624160"
 
 在 Cloud Explorer 中，使用下列任何方法：
 
-* 開啟一或多個 blob 的捷徑功能表，然後選取 [開啟]  。
-* 選擇 blob 名稱，然後選取 [開啟]  按鈕。
+* 開啟一或多個 blob 的捷徑功能表，然後選取 [開啟]。
+* 選擇 blob 名稱，然後選取 [開啟] 按鈕。
 * 按兩下 blob 名稱。
 
-Blob 下載進度會顯示在 [Azure 活動記錄檔]  視窗中。
+Blob 下載進度會顯示在 [Azure 活動記錄檔] 視窗中。
 
 Blob 會在該檔案類型的預設編輯器中開啟。 如果作業系統辨識出檔案類型，該檔案就會以本機安裝的應用程式開啟。 否則，系統會提示您選擇適用於該 blob 檔案類型的應用程式。 下載 blob 時所建立的本機檔案會標示為唯讀。
 
 Blob 資料會在本機快取，並在 Azure Blob 儲存體中針對 blob 的上次修改時間進行檢查。 如果 blob 在上次下載之後已更新過，系統會再次下載該 blob。 否則，系統會從本機磁碟載入該 blob。
 
-根據預設，Blob 會下載至暫存目錄。 若要下載 blob 到特定的目錄中，請開啟所選 blob 名稱的捷徑功能表並選取 [另存新檔]  。 當您以這種方式儲存 blob 時，blob 檔案尚未開啟，本機檔案會利用讀/寫屬性建立。
+根據預設，Blob 會下載至暫存目錄。 若要下載 blob 到特定的目錄中，請開啟所選 blob 名稱的捷徑功能表並選取 [另存新檔]。 當您以這種方式儲存 blob 時，blob 檔案尚未開啟，本機檔案會利用讀/寫屬性建立。
 
 ### <a name="to-upload-blobs"></a>上傳 blob
 
-若要上傳 blob，當容器開啟以在 blob 容器檢視中加以檢視時，選取 [上傳 Blob]  按鈕。
+若要上傳 blob，當容器開啟以在 blob 容器檢視中加以檢視時，選取 [上傳 Blob] 按鈕。
 
-您可以選擇一或多個檔案上傳，而且您可以上傳任何類型的檔案。 [Azure 活動記錄]  視窗會顯示上傳的進度。 如需如何使用 blob 資料的詳細資訊，請參閱[如何在 .NET 中使用 Azure Blob 儲存體](http://go.microsoft.com/fwlink/p/?LinkId=267911)。
+您可以選擇一或多個檔案上傳，而且您可以上傳任何類型的檔案。 [Azure 活動記錄] 視窗會顯示上傳的進度。 如需如何使用 blob 資料的詳細資訊，請參閱[如何在 .NET 中使用 Azure Blob 儲存體](https://go.microsoft.com/fwlink/p/?LinkId=267911)。
 
 ### <a name="to-view-logs-transferred-to-blobs"></a>檢視傳送輸到 blob 的記錄檔
 
@@ -132,11 +132,11 @@ Blob 資料會在本機快取，並在 Azure Blob 儲存體中針對 blob 的上
 
 ### <a name="to-get-the-url-for-a-blob"></a>取得 blob 的 URL
 
-開啟 blob 的捷徑功能表，然後選取 [複製 URL]  。
+開啟 blob 的捷徑功能表，然後選取 [複製 URL]。
 
 ### <a name="to-edit-a-blob"></a>編輯 blob
 
-選取 blob，然後選取 [開啟 Blob]  按鈕。
+選取 blob，然後選取 [開啟 Blob] 按鈕。
 
 檔案會下載到暫存位置並在本機電腦上開啟。 在變更之後再次上傳 blob。
 
@@ -157,7 +157,7 @@ Blob 資料會在本機快取，並在 Azure Blob 儲存體中針對 blob 的上
 
 ![檢視佇列](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC651470.png)
 
-如需儲存體服務佇列的詳細資訊，請參閱[以 .NET 開始使用 Azure 佇列儲存體](http://go.microsoft.com/fwlink/?LinkID=264702)。 如需儲存體服務佇列之 Web 服務的詳細資訊，請參閱 [佇列服務概念](http://go.microsoft.com/fwlink/?LinkId=264788)。 如需有關如何使用 Visual Studio 將訊息傳送至儲存體服務佇列的資訊，請參閱 [傳送訊息至儲存體服務佇列](/azure/visual-studio/vs-storage-cloud-services-getting-started-queues)。
+如需儲存體服務佇列的詳細資訊，請參閱[以 .NET 開始使用 Azure 佇列儲存體](https://go.microsoft.com/fwlink/?LinkID=264702)。 如需儲存體服務佇列之 Web 服務的詳細資訊，請參閱 [佇列服務概念](https://go.microsoft.com/fwlink/?LinkId=264788)。 如需有關如何使用 Visual Studio 將訊息傳送至儲存體服務佇列的資訊，請參閱 [傳送訊息至儲存體服務佇列](/azure/visual-studio/vs-storage-cloud-services-getting-started-queues)。
 
 > [!NOTE]
 > 儲存體服務佇列與 Azure 服務匯流排佇列不同。 如需服務匯流排佇列的詳細資訊，請參閱[服務匯流排佇列、主題和訂用帳戶](/azure/service-bus-messaging/service-bus-queues-topics-subscriptions)。
@@ -168,14 +168,14 @@ Azure 資料表儲存體可儲存大量的結構化資料。 此服務是一個 
 
 ### <a name="to-create-a-table"></a>若要建立資料表
 
-1. 在 [Cloud Explorer] 中，選取儲存體帳戶的**資料表**節點，然後選取 [建立資料表]  。
-1. 在 [建立資料表]  對話方塊中，輸入資料表的名稱。
+1. 在 [Cloud Explorer] 中，選取儲存體帳戶的**資料表**節點，然後選取 [建立資料表]。
+1. 在 [建立資料表] 對話方塊中，輸入資料表的名稱。
 
 ### <a name="to-view-table-data"></a>檢視資料表資料
 
 1. 在 [Cloud Explorer] 中，開啟 **Azure** 節點，然後開啟**儲存體**節點。
 1. 開啟您有興趣的儲存體帳戶節點，然後開啟 **資料表** 節點以查看儲存體帳戶的資料表清單。
-1. 開啟資料表的捷徑功能表，然後選取 [檢視資料表]  。
+1. 開啟資料表的捷徑功能表，然後選取 [檢視資料表]。
 
     ![方案總管中的 Azure 資料表](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC744165.png)
 
@@ -183,7 +183,7 @@ Azure 資料表儲存體可儲存大量的結構化資料。 此服務是一個 
 
 ### <a name="to-edit-table-data"></a>編輯資料表資料
 
-在資料表設計工具中，開啟實體 (單一資料列) 或屬性 (單一儲存格) 的捷徑功能表，然後選取 [編輯]  。
+在資料表設計工具中，開啟實體 (單一資料列) 或屬性 (單一儲存格) 的捷徑功能表，然後選取 [編輯]。
 
 ![新增或編輯資料表實體](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC656238.png)
 
@@ -196,11 +196,11 @@ Azure 資料表儲存體可儲存大量的結構化資料。 此服務是一個 
 
 ### <a name="to-add-entities"></a>若要加入實體
 
-1. 在資料表設計工具中，選取 [新增實體]  按鈕。
+1. 在資料表設計工具中，選取 [新增實體] 按鈕。
 
     ![[新增實體] 按鈕](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC655336.png)
 
-1. 在 [新增實體]  對話方塊中，輸入 **PartitionKey** 和 **RowKey** 屬性的值。
+1. 在 [新增實體] 對話方塊中，輸入 **PartitionKey** 和 **RowKey** 屬性的值。
 
     ![[新增實體] 對話方塊](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC655335.png)
 
@@ -211,9 +211,9 @@ Azure 資料表儲存體可儲存大量的結構化資料。 此服務是一個 
 如果您使用查詢產生器，您就可以自訂會出現在資料表中的實體集。
 
 1. 若要開啟查詢產生器，請開啟資料表進行檢視。
-1. 選取資料表檢視工具列上的 [查詢產生器]  按鈕。
+1. 選取資料表檢視工具列上的 [查詢產生器] 按鈕。
 
-    [查詢產生器]  對話方塊會隨即出現。 下圖顯示建置於查詢產生器中的查詢。
+    [查詢產生器] 對話方塊會隨即出現。 下圖顯示建置於查詢產生器中的查詢。
 
     ![查詢產生器](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC652231.png)
 1. 當您完成查詢建置時，請關閉對話方塊。 產生的查詢文字格式會出現在文字方塊中做為 WCF Data Services 篩選條件。
@@ -227,25 +227,25 @@ Azure 資料表儲存體可儲存大量的結構化資料。 此服務是一個 
 
 ## <a name="refresh-storage-data"></a>重新整理儲存體資料
 
-當伺服器總管連線到儲存體帳戶或從中取得資料時，此作業最多可能需要一分鐘才能完成。 如果伺服器總管無法連線，此作業可能會逾時。擷取資料時，您可以繼續在 Visual Studio 的其他部分中運作。 如果因為作業時間太長而要將其取消，請選取 [伺服器總管] 工具列上的 [停止重新整理]  按鈕。
+當伺服器總管連線到儲存體帳戶或從中取得資料時，此作業最多可能需要一分鐘才能完成。 如果伺服器總管無法連接，此作業可能會超時。抓取資料時，您可以繼續在 Visual Studio 的其他部分中工作。 如果因為作業時間太長而要將其取消，請選取 [伺服器總管] 工具列上的 [停止重新整理] 按鈕。
 
 ### <a name="to-refresh-blob-container-data"></a>重新整理 blob 容器資料
 
-* 選取**儲存體**下的 **Blobs** 節點，然後選取 [伺服器總管] 工具列上的 [重新整理]  按鈕。
-* 若要重新整理顯示的 blob 清單，請選取 [執行]  按鈕。
+* 選取**儲存體**下的 **Blobs** 節點，然後選取 [伺服器總管] 工具列上的 [重新整理] 按鈕。
+* 若要重新整理顯示的 blob 清單，請選取 [執行] 按鈕。
 
 ### <a name="to-refresh-table-data"></a>重新整理資料表資料
 
-* 選取**儲存體**下的**資料表**節點，然後選取 [伺服器總管] 工具列上的 [重新整理]  按鈕。
-* 若要重新整理資料表設計工具中所顯示的實體清單，請選取資料表設計工具中的 [執行]  按鈕。
+* 選取**儲存體**下的**資料表**節點，然後選取 [伺服器總管] 工具列上的 [重新整理] 按鈕。
+* 若要重新整理資料表設計工具中所顯示的實體清單，請選取資料表設計工具中的 [執行] 按鈕。
 
 ### <a name="to-refresh-queue-data"></a>重新整理佇列資料
 
-選取**儲存體**下的**佇列**節點，然後選取 [伺服器總管] 工具列上的 [重新整理]  按鈕。
+選取**儲存體**下的**佇列**節點，然後選取 [伺服器總管] 工具列上的 [重新整理] 按鈕。
 
 ### <a name="to-refresh-all-items-in-a-storage-account"></a>重新整理儲存體帳戶中的所有項目
 
-選擇帳戶名稱，然後選取 [伺服器總管] 工具列上的 [重新整理]  按鈕。
+選擇帳戶名稱，然後選取 [伺服器總管] 工具列上的 [重新整理] 按鈕。
 
 ## <a name="add-storage-accounts-by-using-server-explorer"></a>使用 [伺服器總管] 新增儲存體帳戶
 
@@ -253,9 +253,9 @@ Azure 資料表儲存體可儲存大量的結構化資料。 此服務是一個 
 
 ### <a name="to-create-a-storage-account-by-using-server-explorer"></a>使用伺服器總管建立儲存體帳戶
 
-1. 在 [伺服器總管] 中，開啟**儲存體**節點的捷徑功能表，然後選取 [建立儲存體帳戶]  。
+1. 在 [伺服器總管] 中，開啟**儲存體**節點的捷徑功能表，然後選取 [建立儲存體帳戶]。
 
-1. 在 [建立儲存體帳戶]  對話方塊中，選取或輸入下列資訊：
+1. 在 [建立儲存體帳戶] 對話方塊中，選取或輸入下列資訊：
 
    * 您要加入儲存體帳戶的 Azure 訂用帳戶。
    * 您想要用於新儲存體帳戶的名稱。
@@ -264,30 +264,30 @@ Azure 資料表儲存體可儲存大量的結構化資料。 此服務是一個 
 
    ![建立 Azure 儲存體帳戶](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC744166.png)
 
-1. 選取 [建立]  。
+1. 選取 [建立]。
 
-新的儲存體帳戶會出現在 [方案總管] 中的 [儲存體]  清單。
+新的儲存體帳戶會出現在 [方案總管] 中的 [儲存體] 清單。
 
 ### <a name="to-attach-an-existing-storage-account-by-using-server-explorer"></a>使用伺服器總管附加現有的儲存體帳戶
 
-1. 在 [伺服器總管] 中，開啟 Azure **儲存體**節點的捷徑功能表，然後選取 [連結外部儲存體]  。
+1. 在 [伺服器總管] 中，開啟 Azure **儲存體**節點的捷徑功能表，然後選取 [連結外部儲存體]。
 
     ![新增現有的儲存體帳戶](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC766039.png)
-1. 在 [建立儲存體帳戶]  對話方塊中，選取或輸入下列資訊：
+1. 在 [建立儲存體帳戶] 對話方塊中，選取或輸入下列資訊：
 
    * 您想要連結的現有儲存體帳戶名稱。
-   * 選取之儲存體帳戶的金鑰。 當您選取儲存體帳戶時，通常會提供這個值給您。 如果您想要 Visual Studio 記住儲存體帳戶金鑰，請選取 [記住帳戶金鑰]  核取方塊。
+   * 選取之儲存體帳戶的金鑰。 當您選取儲存體帳戶時，通常會提供這個值給您。 如果您想要 Visual Studio 記住儲存體帳戶金鑰，請選取 [記住帳戶金鑰] 核取方塊。
    * 要用於連接至儲存體帳戶的通訊協定，例如 HTTP、HTTPS 或自訂端點。 如需有關自訂端點的詳細資訊，請參閱[如何設定連接字串](https://msdn.microsoft.com/library/azure/ee758697.aspx) 。
 
 ### <a name="to-view-the-secondary-endpoints"></a>檢視次要端點
 
-如果您建立的儲存體帳戶使用**讀取權限異地備援**複寫選項，您可以開啟帳戶名稱的快顯功能表，然後選取 [屬性]  ，以便檢視其次要端點。
+如果您建立的儲存體帳戶使用**讀取權限異地備援**複寫選項，您可以開啟帳戶名稱的快顯功能表，然後選取 [屬性]，以便檢視其次要端點。
 
 ![儲存體次要端點](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC766040.png)
 
 ### <a name="to-remove-a-storage-account-from-server-explorer"></a>從伺服器總管移除儲存體帳戶
 
-在 [伺服器總管] 中，開啟帳戶名稱的捷徑功能表，然後選取 [刪除]  。 
+在 [伺服器總管] 中，開啟帳戶名稱的捷徑功能表，然後選取 [刪除]。 
 
 如果您刪除儲存體帳戶，也會移除該帳戶的所有已儲存金鑰資訊。
 
@@ -295,4 +295,4 @@ Azure 資料表儲存體可儲存大量的結構化資料。 此服務是一個 
 
 ## <a name="next-steps"></a>後續步驟
 
-若要深入了解如何使用 Azure 儲存體服務，請參閱[Azure 儲存體簡介](/azure/storage/common/storage-introduction)。
+若要深入瞭解如何使用 Azure 儲存體服務，請參閱[Azure 儲存體簡介](/azure/storage/common/storage-introduction)。

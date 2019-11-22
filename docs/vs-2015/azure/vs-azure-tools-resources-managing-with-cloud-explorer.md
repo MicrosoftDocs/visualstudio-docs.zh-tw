@@ -11,23 +11,23 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/25/2017
 ms.author: ghogen
-ms.openlocfilehash: 25995eacc961474fcb6486668c918d2e5be5ba76
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f6ccc19ccc21b7cabcd553e9d040d20a89ed6ccb
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62936145"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74298075"
 ---
-# <a name="manage-the-resources-associated-with-your-azure-accounts-in-visual-studio-cloud-explorer"></a>在 Visual Studio Cloud Explorer 中管理與 Azure 帳戶關聯的資源
+# <a name="manage-the-resources-associated-with-your-azure-accounts-in-visual-studio-cloud-explorer"></a>在 Visual Studio Cloud Explorer 中管理與您的 Azure 帳戶關聯的資源
 
 Cloud Explorer 可讓您從 Visual Studio 內檢視您的 Azure 資源和資源群組、檢查其屬性，以及執行重要的開發人員診斷動作。
 
-與 [Azure 入口網站](http://go.microsoft.com/fwlink/p/?LinkID=525040)相同，Cloud Explorer 也是建立在 Azure Resource Manager 堆疊的基礎上。 因此，Cloud Explorer 了解 Azure 資源群組之類的資源，以及邏輯應用程式和 API 應用程式之類的 Azure 服務，並且支援[角色型存取控制](/azure/role-based-access-control/role-assignments-portal) (RBAC)。
+與 [Azure 入口網站](https://go.microsoft.com/fwlink/p/?LinkID=525040)相同，Cloud Explorer 也是建立在 Azure Resource Manager 堆疊的基礎上。 因此，Cloud Explorer 了解 Azure 資源群組之類的資源，以及邏輯應用程式和 API 應用程式之類的 Azure 服務，並且支援[角色型存取控制](/azure/role-based-access-control/role-assignments-portal) (RBAC)。
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>先決條件
 
-* Visual Studio 2015 [Microsoft Azure SDK for.NET 2.9](https://www.microsoft.com/download/details.aspx?id=51657)。
-* Microsoft Azure 帳戶 - 如果您沒有帳戶，您可以[申請免費試用](http://go.microsoft.com/fwlink/?LinkId=623901)，或是[啟用您的 Visual Studio 訂閱者權益](http://go.microsoft.com/fwlink/?LinkId=623901)。
+* Visual Studio 2015 與[Microsoft Azure SDK for .NET 2.9](https://www.microsoft.com/download/details.aspx?id=51657)。
+* Microsoft Azure 帳戶 - 如果您沒有帳戶，您可以[申請免費試用](https://go.microsoft.com/fwlink/?LinkId=623901)，或是[啟用您的 Visual Studio 訂閱者權益](https://go.microsoft.com/fwlink/?LinkId=623901)。
 
 > [!NOTE]
 > 若要檢視 Cloud Explorer，請在功能表列上，選取 [檢視] > [Cloud Explorer]。
@@ -78,7 +78,7 @@ Cloud Explorer 可讓您從 Visual Studio 內檢視您的 Azure 資源和資源�
 
 1. 從操作功能表中，選取所需的檢視：
 
-   * [資源類型] 檢視 - 在 [Azure 入口網站](http://go.microsoft.com/fwlink/p/?LinkID=525040)上使用的一般檢視，此檢視會依資源的類型 (例如 Web 應用程式、儲存體帳戶及虛擬機器) 分類來顯示 Azure 資源。
+   * [資源類型] 檢視 - 在 [Azure 入口網站](https://go.microsoft.com/fwlink/p/?LinkID=525040)上使用的一般檢視，此檢視會依資源的類型 (例如 Web 應用程式、儲存體帳戶及虛擬機器) 分類來顯示 Azure 資源。
    * [資源群組] 檢視 - 將 Azure 資源依關聯的 Azure 資源群組進行分類。 資源群組是通常由特定應用程式使用的 Azure 資源組合。 若要深入了解 Azure 資源群組，請參閱 [Azure Resource Manager 概觀](/azure/azure-resource-manager/resource-group-overview)。
 
    下圖顯示這兩種資源檢視的比較：
@@ -91,13 +91,13 @@ Cloud Explorer 可讓您從 Visual Studio 內檢視您的 Azure 資源和資源�
 
 * [動作] 索引標籤 - 列出您可以在 Cloud Explorer 中針對所選資源採取的動作。 您也可以在資源上按一下滑鼠右鍵來檢視其操作功能表，以檢視這些選項。
 
-* [屬性]  索引標籤 - 顯示資源的屬性，例如其類型、地區設定及關聯的資源群組。
+* [屬性] 索引標籤 - 顯示資源的屬性，例如其類型、地區設定及關聯的資源群組。
 
 下圖顯示您在 App Service 的各個索引標籤上所看到畫面的範例比較：
 
   ![Cloud Explorer 的螢幕擷取畫面](./media/vs-azure-tools-resources-managing-with-cloud-explorer/actions-and-properties.png)
 
-每個資源都有 [在入口網站中開啟] 這個動作。 當您選擇此動作時，[雲端總管] 會在 [Azure 入口網站](http://go.microsoft.com/fwlink/p/?LinkID=525040)中顯示選取的資源。 [在入口網站中開啟] 功能可方便您瀏覽至位於深層巢狀結構中的資源。
+每個資源都有 [在入口網站中開啟]這個動作。 當您選擇此動作時，[雲端總管] 會在 [Azure 入口網站](https://go.microsoft.com/fwlink/p/?LinkID=525040)中顯示選取的資源。 [在入口網站中開啟] 功能可方便您瀏覽至位於深層巢狀結構中的資源。
 
 根據 Azure 資源而定，也可能出現其他動作和屬性值。 例如，除了 [在入口網站中開啟]，Web 應用程式和邏輯應用程式也有 [在瀏覽器中開啟] 和 [附加偵錯工具] 動作。 當您選擇儲存體帳戶 blob、佇列或資料表時，將會出現開啟編輯器的動作。 Azure 應用程式具有 **URL** 和 **狀態**屬性，而儲存體資源具有索引鍵和連接字串屬性。
 

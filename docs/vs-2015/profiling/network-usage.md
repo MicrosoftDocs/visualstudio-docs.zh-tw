@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d85b71c2ed54a8ab8bc85c93ce61e3ed274d86e0
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: eed389a3847145a0f37eb3141526a38e4374d368
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65673813"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297901"
 ---
 # <a name="network-usage"></a>網路使用量
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,14 +24,14 @@ Visual Studio 的 [網路] 診斷工具會收集使用 [Windows.Web.Http 應用�
  網路工具僅支援 Windows 通用平台應用程式。 目前不支援其他平台。  
   
 > [!NOTE]
-> 如需更多完整的網路工具描述，請參閱[介紹 Visual Studio 的網路工具](http://blogs.msdn.com/b/visualstudio/archive/2015/05/04/introducing-visual-studio-s-network-tool.aspx)。  
+> 如需更多完整的網路工具描述，請參閱[介紹 Visual Studio 的網路工具](https://devblogs.microsoft.com/visualstudio/?m=20155)。  
   
 ## <a name="collecting-network-tool-data"></a>收集網路工具資料  
  您應該針對 Visual Studio 電腦上開啟的 Visual Studio 專案執行 [網路] 工具。  
   
 1. 在 Visual Studio 中開啟專案。  
   
-2. 在功能表上，按一下 [偵錯/效能分析工具]。選擇 [網路]，然後選擇 [啟動]。  
+2. 在功能表上，按一下 [ **Debug/Performance Profiler**]。選擇 [**網路**]，然後選擇 [**啟動**]。  
   
 3. 網路工具會開始收集您應用程式的 HTTP 流量。  
   
@@ -74,6 +74,6 @@ Visual Studio 的 [網路] 診斷工具會收集使用 [Windows.Web.Http 應用�
 3. 回應美化顯示按鈕 (在主體索引標籤內) 可協助您藉由增加內容可讀性來剖析 JSON、XML、HTML、CSS、JavaScript 和 TypeScript 的回應裝載。  
   
 ## <a name="see-also"></a>另請參閱  
- [執行但不偵錯程式碼剖析工具](https://msdn.microsoft.com/library/e97ce1a4-62d6-4b8e-a2f7-61576437ff01)   
- [Visual Studio 部落格：簡介 Visual Studio 的網路偵測器](http://go.microsoft.com/fwlink/?LinkId=535022)   
- [Channel 9 影片：VS 診斷工具-新的網路 Profiler](http://channel9.msdn.com/Series/ConnectOn-Demand/206)
+ [執行程式碼剖析工具但不進行調試](https://msdn.microsoft.com/library/e97ce1a4-62d6-4b8e-a2f7-61576437ff01)程式   
+ [Visual Studio blog: Introducing Visual Studio’s network inspector](https://go.microsoft.com/fwlink/?LinkId=535022)  (Visual Studio 部落格：Visual Studio 網路檢查簡介)  
+ [Channel 9 影片︰ VS 診斷工具 - 新的網路分析工具 (英文)](https://channel9.msdn.com/Series/ConnectOn-Demand/206)

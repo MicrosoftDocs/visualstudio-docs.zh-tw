@@ -11,12 +11,12 @@ caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 137f3f91922a16b0e3f2a7e459a72c4381162f2e
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 5b1d8bdeb4497af57c385e73ff0dcd34041a2097
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65704615"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297331"
 ---
 # <a name="graphics-event-list"></a>圖形事件清單
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "65704615"
   
  這是 [事件清單]：  
   
- ![其名稱中含有"Index"的事件清單。](../debugger/media/gfx-diag-demo-event-list-orientation.png "gfx_diag_demo_event_list_orientation")  
+ ![名稱中包含 "Index" 的事件清單。](../debugger/media/gfx-diag-demo-event-list-orientation.png "gfx_diag_demo_event_list_orientation")  
   
 ## <a name="using-the-event-list"></a>使用事件清單  
  當您選取事件清單中的事件時，該事件會反映在其他圖形分析工具所顯示的資訊中；透過搭配這些其他工具使用事件清單，您可以更詳細地檢查呈現問題以判斷原因。 若要深入了解如何搭配其他圖形分析工具使用事件清單以解決轉譯問題，請參閱[範例](../debugger/graphics-diagnostics-examples.md)。  
@@ -46,21 +46,21 @@ ms.locfileid: "65704615"
 ### <a name="event-list-views"></a>事件清單檢視  
  事件清單支援兩個不同的檢視，而這兩個檢視透過不同的方式來組織圖形事件，以支援您的工作流程和喜好設定。 第一個檢視是 *「繪製呼叫檢視」* (draw calls view)，其透過階層方式組織事件以及與事件相關聯的狀態。 第二個檢視是 *「時間軸檢視」* (timeline view)，其依時間順序組織事件，且格式為一般清單。  
   
- **繪製呼叫** 檢視  
+ **繪製呼叫**檢視  
  以階層形式顯示所擷取的事件和其狀態。 階層最上層是由事件 (例如繪製呼叫、清除、存在以及處理檢視的繪製呼叫、清除、存在) 所構成。 在事件清單中，您可以展開繪製呼叫，以顯示繪製呼叫時的目前裝置狀態，而且可以進一步展開每種狀態類型，以顯示設定其值的事件。 您也可以在此層級中，查看先前的畫面格中是否有設定特定狀態，或是否在最後一次繪製呼叫之後多次設定特定狀態。  
   
- **時間軸** 檢視  
+ **時間軸**檢視  
  依時間順序顯示每個擷取的事件。 這種組織事件清單的方式與舊版 Visual Studio 相同。  
   
 ##### <a name="to-change-the-event-list-view-mode"></a>變更事件清單檢視模式  
   
-- 在 [圖形事件清單]  視窗的事件清單上方，找到 [檢視]  下拉式清單，並選擇 [時間軸]  檢視或 [繪製呼叫]  檢視。  
+- 在 [圖形事件清單] 視窗的事件清單上方，找到 [檢視] 下拉式清單，並選擇 [時間軸] 檢視或 [繪製呼叫] 檢視。  
   
 ### <a name="filtering-events"></a>篩選事件  
- 您可以使用 [搜尋] 方塊 (位在 [圖形事件清單]  視窗右上角) 篩選事件清單，使清單只包括名稱包含特定關鍵字的事件。 如上圖所示，您可以指定單一關鍵字 (如 `Vertex`)，或使用以分號分隔清單指定多個關鍵字，例如 `Draw;Primitive`，其符合名稱中有 `Draw` 或 `Primitive` 的事件。 搜尋會受到空格影響；例如， `VSSet` 和 `VS Set` 是不同的搜尋，因此，請務必小心地建立搜尋。  
+ 您可以使用 [搜尋] 方塊 (位在 [圖形事件清單] 視窗右上角) 篩選事件清單，使清單只包括名稱包含特定關鍵字的事件。 如上圖所示，您可以指定單一關鍵字 (如 `Vertex`)，或使用以分號分隔清單指定多個關鍵字，例如 `Draw;Primitive`，其符合名稱中有 `Draw` 或 `Primitive` 的事件。 搜尋會受到空格影響；例如， `VSSet` 和 `VS Set` 是不同的搜尋，因此，請務必小心地建立搜尋。  
   
 ### <a name="moving-between-draw-calls"></a>在繪製呼叫之間移動  
- 因為檢查 `Draw` 呼叫相當重要，所以您可以使用 [移至下一個繪製呼叫]  和 [移至上一個繪製呼叫]  按鈕 (位在 [圖形事件清單]  視窗左上角)，尋找繪製呼叫並快速在其間移動。  
+ 因為檢查 `Draw` 呼叫相當重要，所以您可以使用 [移至下一個繪製呼叫] 和 [移至上一個繪製呼叫] 按鈕 (位在 [圖形事件清單] 視窗左上角)，尋找繪製呼叫並快速在其間移動。  
   
 ### <a name="links-to-graphics-objects"></a>圖形物件連結  
  若要了解特定圖形事件，您可能需要目前 Direct3D 狀態或事件所參考 Direct3D 物件的其他資訊。 許多事件都提供您可進入以取得其他詳細資料的資訊連結。  
@@ -93,7 +93,7 @@ ms.locfileid: "65704615"
 ### <a name="user-defined-events-in-direct3d-11-and-earlier"></a>Direct3D 11 和更早版本中的使用者定義事件  
  若要在 Direct3D 11 或更早版本中建立群組和標記，請使用本節所述的 API。 下表總結您可用於不同 Direct3D 11 版本和舊版 Direct3D 的 API。  
   
-|API 描述|[ID3D11DeviceContext2](/windows/desktop/api/d3d11_2/nn-d3d11_2-id3d11devicecontext2) (Direct3D 11.2)|[ID3DUserDefinedAnnotation](http://go.microsoft.com/fwlink/p/?LinkID=250967) (Direct3D 11.1)|D3DPerf_ API 系列 (Direct3D 11.0 和更早版本)|  
+|API 描述|[ID3D11DeviceContext2](/windows/desktop/api/d3d11_2/nn-d3d11_2-id3d11devicecontext2) (Direct3D 11.2)|[ID3DUserDefinedAnnotation](https://go.microsoft.com/fwlink/p/?LinkID=250967) (Direct3D 11.1)|D3DPerf_ API 系列 (Direct3D 11.0 和更早版本)|  
 |---------------------|---------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------|--------------------------------------------------------|  
 |開始事件群組|`BeginEventInt`|`BeginEvent`|`D3DPerf_BeginEvent`|  
 |結束事件群組|`EndEventInt`|`EndEvent`|`D3DPerf_EndEvent`|  

@@ -8,12 +8,12 @@ ms.assetid: 80f0104f-a4db-44dd-bd55-37bb67776c62
 caps.latest.revision: 7
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: a33d7928e6e2555f0cfd484059b062ae801d8633
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: af3dd595b786c57983e44982fa2eb8b9afa2959a
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442094"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300774"
 ---
 # <a name="visual-studio-emulator-for-android"></a>Visual Studio Emulator for Android
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,13 +24,13 @@ Visual Studio Emulator for Android 是模擬 Android 裝置的桌面應用程式
   
  您可以透過唯一的裝置設定檔，針對每個 Android 平台、螢幕解析度，以及 Visual Studio Emulator for Android 支援的其他硬體內容來測試應用程式。  
   
- 此主題包括下列各節。  
+ 此主題包括下列章節。  
   
 - [安裝及解除安裝](#Installing)  
   
 - [系統需求和回溯相容性](#Requirements)  
   
-- [Visual Studio 的 Android 模擬器網路功能](#Networking)  
+- [Visual Studio Emulator for Android 的網路功能](#Networking)  
   
 - [設定 Visual Studio 的 Android 模擬器](#Configuring)  
   
@@ -52,7 +52,7 @@ Visual Studio Emulator for Android 是模擬 Android 裝置的桌面應用程式
 > [!NOTE]
 > 解除安裝 Visual Studio 不會解除安裝此模擬器。 您必須個別解除安裝模擬器。  
   
- 當您解除安裝 Visual Studio Emulator for Android 時，不會自動移除為了提供給模擬器使用所建立的 Hyper-V 虛擬乙太網路介面卡。 您可以手動移除這些虛擬介面卡 (若未使用)，方法是開啟 Hyper-V 管理員，從中選取一個模擬器 VHD 影像，再選擇 [網路] 索引標籤，然後為此索引標籤中所顯示的每個參數選擇 [移除]。  
+ 當您解除安裝 Visual Studio Emulator for Android 時，不會自動移除為了提供給模擬器使用所建立的 Hyper-V 虛擬乙太網路介面卡。 您可以手動移除這些虛擬介面卡 (若未使用)，方法是開啟 Hyper-V 管理員，從中選取一個模擬器 VHD 映像，再選擇 [網路] 索引標籤，然後為此索引標籤中所顯示的每個參數選擇 [移除]。  
   
 ## <a name="Requirements"></a> 系統需求和回溯相容性  
  如需 Visual Studio Emulator for Android 之硬體、軟體與組態需求的重要資訊，請參閱下列主題。  
@@ -83,14 +83,14 @@ Visual Studio Emulator for Android 是模擬 Android 裝置的桌面應用程式
   
  在 Visual Studio 2015 中，您可以使用模擬器管理員，來安裝、解除安裝及啟動裝置設定檔。 若要存取 [模擬器管理員]，請依序選擇 [工具] 和 [Visual Studio 的 Android 模擬器]。  
   
- ![Visual Studio 的 Android 模擬器管理員](../cross-platform/media/android-emu-manager.png "Android_Emu_Manager")  
+ ![適用于 Android Manager 的 Visual Studio 模擬器](../cross-platform/media/android-emu-manager.png "Android_Emu_Manager")  
   
  預設有四個預先安裝的裝置設定檔 (5 英吋的 KitKat 和 Lollipop 手機和和 7 英吋的平板電腦組態)，如白色文字和圖示所示。 直到您選擇 [安裝設定檔] 按鈕並完成安裝為止，清單中的其他設定檔都會呈現灰色。 您可以依應用程式開發介面層級篩選清單，然後按一下設定檔右下方的詳細資料箭號，以檢視其完整組態詳細資料。  
   
  一旦您安裝好目標設定檔集合，即可按綠色的 [播放] 按鈕，直接從管理員啟動這些新的設定檔。 這些設定檔也會出現在任何 Visual Studio 跨平台行動專案類型中的 [偵錯目標] 下拉式功能表中。  
   
 ## <a name="FeaturesTest"></a> 您可以在模擬器中測試的功能  
- 如需可在模擬器中測試之功能的詳細資訊，請參閱本[文件](http://blogs.msdn.com/b/visualstudioalm/archive/2014/11/12/introducing-visual-studio-s-emulator-for-android.aspx)。  
+ 如需可在模擬器中測試之功能的詳細資訊，請參閱本[文件](https://devblogs.microsoft.com/devops/introducing-visual-studios-emulator-for-android/)。  
   
 ## <a name="FeaturesNonTest"></a> 您無法在模擬器中測試的功能  
  下列清單描述您**無法**在模擬器中測試的 Android 平台功能。 您必須在實體裝置上測試這些功能。  
@@ -106,10 +106,10 @@ Visual Studio Emulator for Android 是模擬 Android 裝置的桌面應用程式
 ## <a name="Support"></a> 支援資源  
  若您的主機電腦符合系統需求，但發生了此疑難排解指南未涵蓋的問題：  
   
-- 使用 [android-emulator](http://stackoverflow.com/questions/tagged/android-emulator) 與 visual-studio 標記在 StackOverflow 上發問。  
+- 使用 [android-emulator](https://stackoverflow.com/questions/tagged/android-emulator) 與 visual-studio 標記在 StackOverflow 上發問。  
   
 - 使用 Visual Studio 或模擬器管理員中的 [傳送笑臉] 工具回報問題。  
   
 ## <a name="see-also"></a>另請參閱  
  [Visual Studio 的 Android 模擬器系統需求](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md)   
- [Troubleshooting the Visual Studio Emulator for Android](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md)
+ [Visual Studio Emulator for Android 疑難排解](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md)

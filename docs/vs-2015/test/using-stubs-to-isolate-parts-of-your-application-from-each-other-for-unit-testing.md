@@ -8,12 +8,12 @@ ms.assetid: 73519dd9-f3d5-49b6-a634-38881b459ea4
 caps.latest.revision: 19
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: a230b55149152ba1d195f487951323eda855b8b2
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 9f2e62766f919c9f3379d59c4528a32739ef73ac
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72657147"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74301394"
 ---
 # <a name="using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing"></a>使用虛設常式隔離應用程式的各個組件，方便進行單元測試
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,14 +30,14 @@ ms.locfileid: "72657147"
 
  因為您必須能夠利用這種方式建構程式碼才能使用虛設常式，因此通常可以使用虛設常式隔離應用程式中不同的部分。 為了隔離虛設常式與您無法控制的其他組件 (例如 System.dll)，通常會使用填充碼。 請參閱[使用填充碼將應用程式與其他組件隔離，方便進行單元測試](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md)。
 
- **Requirements**
+ **需求**
 
-- Visual Studio 企業版
+- Visual Studio Enterprise
 
 ## <a name="How"></a> 如何使用虛設常式
 
 ### <a name="Dependency"></a> 相依性插入的設計
- 若要使用虛設常式，必須將應用程式設計為不同元件各自獨立，不會彼此相依，而只相依於介面定義。 元件不會在編譯時期結合，而是在執行階段連接。 這個模式有助於強化軟體，而且易於更新，因為變更散佈範圍通常不會超出元件界限。 即便您不使用虛設常式仍建議您採用這種方式。 如果您在撰寫新程式碼，也可以輕鬆地遵循[相依性插入](http://en.wikipedia.org/wiki/Dependency_injection)模式。 如果您在為現有的軟體撰寫測試，可能必須重新建構。 如果重新建構不實用，您可以考慮使用填充碼。
+ 若要使用虛設常式，必須將應用程式設計為不同元件各自獨立，不會彼此相依，而只相依於介面定義。 元件不會在編譯時期結合，而是在執行階段連接。 這個模式有助於強化軟體，而且易於更新，因為變更散佈範圍通常不會超出元件界限。 即便您不使用虛設常式仍建議您採用這種方式。 如果您在撰寫新程式碼，也可以輕鬆地遵循[相依性插入](https://en.wikipedia.org/wiki/Dependency_injection)模式。 如果您在為現有的軟體撰寫測試，可能必須重新建構。 如果重新建構不實用，您可以考慮使用填充碼。
 
  接下來開始討論圖表中的激勵範例。 StockAnalyzer 類別會讀取股票價格並產生一些有趣的結果。 我們想要測試其中一些公用方法。 為避免複雜，我們只看其中一個方法，這個方法會報告特定股票的現價，是非常簡單的方法。 我們要撰寫該方法的單元測試。 以下是測試的第一份草稿：
 
@@ -155,7 +155,7 @@ analyzer = new StockAnalyzer(new StockFeed())
 
 1. 在方案總管中，展開單元測試專案的 [參考]。
 
-    - 如果您在 Visual Basic 中工作，必須先選取方案總管工具列中的 [顯示所有檔案]，才能看見 [參考] 清單。
+    - 如果您在 Visual Basic 中工作，必須先選取 [方案總管] 工具列中的 [**顯示所有檔案**]，才能看見 [參考] 清單。
 
 2. 選取包含您要用於建立虛設常式之介面定義的組件。
 
@@ -224,7 +224,7 @@ End Class
  另外也會為屬性、事件及泛型方法的 getter 及 setter 產生虛設常式。
 
 ### <a name="mocks"></a> 驗證參數值
- 您可以驗證當您的元件呼叫另一個元件時，是否會傳遞正確的值。 您可以在虛設常式中加入判斷提示，也可以將值儲存在測試主體中並進行驗證。 例如:
+ 您可以驗證當您的元件呼叫另一個元件時，是否會傳遞正確的值。 您可以在虛設常式中加入判斷提示，也可以將值儲存在測試主體中並進行驗證。 例如：
 
 ```csharp
 [TestClass]
@@ -400,7 +400,7 @@ public void TestGetValue()
  如果程式碼是呼叫有任何其他具現化的 `GetValue<T>`，虛設常式會呼叫該行為。
 
 ### <a name="BKMK_Partial_stubs"></a> 虛擬類別的虛設常式
- 在上述範例中，虛設常式是從介面產生。 您也可以從具有虛擬或抽象成員的類別產生虛設常式。 例如:
+ 在上述範例中，虛設常式是從介面產生。 您也可以從具有虛擬或抽象成員的類別產生虛設常式。 例如：
 
 ```csharp
 // Base class in application under test
@@ -472,7 +472,7 @@ StubBehaviors.Current =
 ## <a name="external-resources"></a>外部資源
 
 ### <a name="guidance"></a>指引
- [使用 Visual Studio 2012 測試持續傳遞 - 第 2 章：單元測試：測試內部](http://go.microsoft.com/fwlink/?LinkID=255188)
+ [使用 Visual Studio 2012 測試持續傳遞 - 第 2 章：單元測試：測試內部](https://go.microsoft.com/fwlink/?LinkID=255188)
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
  [使用 Microsoft Fakes 在測試期間隔離程式碼](../test/isolating-code-under-test-with-microsoft-fakes.md)

@@ -15,12 +15,12 @@ caps.latest.revision: 28
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 757297123bff107c28ced53a14dcdbb94ae56a87
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 2a5e2a46a2326c123d6b7b4e85fa29908ede9fc9
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654919"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299334"
 ---
 # <a name="customizing-tools-and-the-toolbox"></a>自訂工具和工具箱
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,13 +64,13 @@ Editor
 - 刪除索引標籤和工具。
 
 > [!IMPORTANT]
-> 若要在 [DSL 總管] 中加入或貼上項目，請以滑鼠右鍵按一下新節點的上兩層節點。 例如，若要新增工具，請以滑鼠右鍵按一下索引標籤，而不是 [**工具**] 節點。 若要加入索引標籤，請以滑鼠右鍵按一下 [**編輯器**] 節點。
+> 若要在 [DSL 總管] 中加入或貼上項目，請以滑鼠右鍵按一下新節點的上兩層節點。 例如，若要加入工具，請以滑鼠右鍵按一下索引標籤，而不是 [工具] 節點。 若要加入索引標籤，請以滑鼠右鍵按一下 [編輯器] 節點。
 
- 每個工具的 [**工具箱] 圖示**屬性都會參考16x16 點陣圖檔案。 這些檔案通常會保留在**Dsl\Resources**資料夾中。
+ 每一個工具的 **Toolbox Icon** 屬性參考 16x16 點陣圖檔。 這些檔案通常會保留在**Dsl\Resources**資料夾中。
 
- 專案工具的**Class**屬性會參考實體網域類別。 根據預設，該工具會建立這個類別的執行個體。 不過，您可以撰寫程式碼，讓工具建立項目群組或不同類型的項目。
+ 項目工具的 **Class** 屬性參考具象網域類別。 根據預設，該工具會建立這個類別的執行個體。 不過，您可以撰寫程式碼，讓工具建立項目群組或不同類型的項目。
 
- 連接工具的**連接**產生器屬性會參考連接產生器，它會定義工具可以連接的專案類型，以及它在它們之間建立的關聯性。 連接產生器已定義為 [DSL 總管] 中的節點。 當您定義網域關聯性時，會自動建立連接產生器；不過您可以撰寫程式碼，來自訂這些產生器。
+ 連接工具的 **Connection Builder** 屬性參考一個連接產生器，以定義工具可連接的項目類型，以及在項目之間建立的關聯性。 連接產生器已定義為 [DSL 總管] 中的節點。 當您定義網域關聯性時，會自動建立連接產生器；不過您可以撰寫程式碼，來自訂這些產生器。
 
 #### <a name="to-add-a-tool-to-the-toolbox"></a>將工具加入至工具箱
 
@@ -78,13 +78,13 @@ Editor
 
      您通常會先建立連接線類別並將其對應至參考關聯性，再建立連接工具。
 
-2. 在 [DSL Explorer] 中 ，展開 [編輯器 **]** 節點和 [工具箱索引標籤] 節點。
+2. 在 [DSL 總管] 中，展開 [編輯器] 節點和 [工具箱索引標籤] 節點。
 
-     以滑鼠右鍵按一下 [工具箱] 索引標籤節點，然後按一下 [**加入新**的專案工具] 或 [**加入新的連接工具**]。
+     以滑鼠右鍵按一下 [工具箱索引標籤] 節點，然後按一下 [新增項目工具] 或 [新增連接工具]。
 
-3. 將 [**工具箱圖示**] 屬性設定為參考16x16 點陣圖。
+3. 將 **Toolbox Icon** 屬性設定為參考 16x16 點陣圖。
 
-     如果您想要定義新的圖示，請在 [ **Dsl\Resources** ] 資料夾的方案總管中建立點陣圖檔案。 檔案應具有下列屬性值：**組建動作** = **內容**;[**複製到輸出目錄**]  =  [不要**複製**]。
+     如果您想要定義新的圖示，請在 [ **Dsl\Resources** ] 資料夾的方案總管中建立點陣圖檔案。 檔案應具有下列屬性值：**組建動作** = **內容**;[**複製到輸出目錄**] = [不要**複製**]。
 
 4. **針對 [元素] 工具：** 設定工具的 [**類別**] 屬性，以參考對應至圖形的實體網域類別。
 
@@ -92,7 +92,7 @@ Editor
 
 5. 若要測試 DSL，請按 F5 鍵或 CTRL+F5，然後在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的實驗執行個體中開啟範例模型檔案。 新工具應顯示在工具箱上。 將工具拖曳至圖表上，驗證工具是否會建立新項目。
 
-     如果工具未出現，請停止實驗 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。 在 Windows [**開始**] 功能表中，執行 **[重設 Microsoft Visual Studio 2010 實驗實例**]。 在 [[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]**組建**] 功能表上，按一下 [**重建方案**]。 然後再測試一次 DSL。
+     如果工具未出現，請停止實驗 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。 在 Windows 的 [開始] 功能表中，執行 [重設 Microsoft Visual Studio 2010 實驗執行個體]。 在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的 **[建置]** 功能表上，按一下 **[重建方案]** 。 然後再測試一次 DSL。
 
 ## <a name="customizing"></a>自訂元素工具
  根據預設，此工具會建立指定類別的單一執行個體，但是您可以透過下列兩個方式來改變：
@@ -103,7 +103,7 @@ Editor
 
      如需詳細資訊，請參閱[自訂元素的建立和移動](../modeling/customizing-element-creation-and-movement.md)。
 
-- 撰寫程式碼來自訂此工具，使其可以建立項目群組。 此工具是由您可以覆寫之 ToolboxHelper.cs 中的方法初始化。 如需詳細資訊，請參閱[從工具建立元素群組](#groups)。
+- 撰寫程式碼來自訂此工具，使其可以建立項目群組。 此工具是由您可以覆寫之 ToolboxHelper.cs 中的方法初始化。 如需詳細資訊，請參閱[從工具建立項目群組](#groups)。
 
 ## <a name="groups"></a>從工具建立元素群組
  每個項目工具包含該工具應建立的項目原型。 根據預設，每個項目工具會建立一個項目，但也可能透過一個工具來建立一組相關的物件。 若要執行這項操作，您可以使用內含相關項目的 <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype> 來初始化工具。
@@ -170,23 +170,23 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
  連接產生器包含一個或多個 Link Connect 指示詞，可指定網域關聯性以及來源和目標項目。 例如，在 [工作流程] 方案範本中，您可以在 [ **DSL Explorer**] 中看到**CommentReferencesSubjectsBuilder** 。 此連接產生器包含一個名為**CommentReferencesSubjects**的 link connect 指示詞，它會對應至網域關聯性**CommentReferencesSubjects**。 此 Link Connect 指示詞包含指向 `Comment` 網域類別的來源角色指示詞，以及指向 `FlowElement` 網域類別的目標角色指示詞。
 
 ### <a name="using-connection-builders-to-restrict-source-and-target-roles"></a>使用連接產生器限制來源和目標角色
- 您可以使用連接產生器，限制特定類別在指定網域關聯性之來源角色或目標角色中的發生次數。 例如，您可以有一個基底網域類別，內含對另一個網域類別的網域關聯性，但您可能不想讓該基底類別的所有衍生類別在該關聯性中具有相同角色。 在工作流程方案中，有四個實體領域類別（**StartPoint**、**端點**、 **MergeBranch**和**同步**處理）直接繼承自抽象網域類別**FlowElement**，以及兩個具體的間接繼承自它的網域類別（**Task**和**ObjectInState**）。 還有一個**流程**參考關聯性，它會採用其來源角色和目標角色中的**FlowElement**網域類別。 不過，**端點**網域類別的實例不應該是**流程**關聯性實例的來源，也不應該**StartPoint**類別的實例是**流程**關聯性實例的目標。 **FlowBuilder**連接產生器具有名為**Flow**的連結 connect 指示詞，可指定哪些網域類別可以播放來源角色（**Task**、 **MergeBranch**、 **StartPoint**和**同步**處理），以及可以播放目標角色（**MergeBranch**、**端點**和**同步**處理）。
+ 您可以使用連接產生器，限制特定類別在指定網域關聯性之來源角色或目標角色中的發生次數。 例如，您可以有一個基底網域類別，內含對另一個網域類別的網域關聯性，但您可能不想讓該基底類別的所有衍生類別在該關聯性中具有相同角色。 在工作流程方案中，有四個實體領域類別（**StartPoint**、**端點**、 **MergeBranch**和**同步**處理）直接繼承自抽象網域類別**FlowElement**，以及間接繼承自它的兩個實體領域類別（**Task**和**ObjectInState**）。 還有一個**流程**參考關聯性，它會採用其來源角色和目標角色中的**FlowElement**網域類別。 不過，**端點**網域類別的實例不應該是**流程**關聯性實例的來源，也不應該**StartPoint**類別的實例是**流程**關聯性實例的目標。 **FlowBuilder**連接產生器具有名為**Flow**的連結 connect 指示詞，可指定哪些網域類別可以播放來源角色（**Task**、 **MergeBranch**、 **StartPoint**和**同步**處理），以及哪些可以扮演目標角色（**MergeBranch**、**端點**和**同步**處理）。
 
 ### <a name="connection-builders-with-multiple-link-connect-directives"></a>使用多個 Link Connect 指示詞的連接產生器
- 您可以將多個 Link Connect 指示詞加入至連接產生器。 這可協助您隱藏使用者對領域模型的一些複雜性，並讓 [**工具箱**] 變得過於雜亂。 您可以針對數個不同的網域關聯性，將多個 Link Connect 指示詞加入至一個連接產生器。 不過，您應該將執行類似功能的網域關聯性合併在一起。
+ 您可以將多個 Link Connect 指示詞加入至連接產生器。 這樣做可協助您不向使用者顯示網域模型的某些複雜部分，並避免 [工具箱] 變得過於雜亂。 您可以針對數個不同的網域關聯性，將多個 Link Connect 指示詞加入至一個連接產生器。 不過，您應該將執行類似功能的網域關聯性合併在一起。
 
- 在工作流程方案中，**流程**連接工具是用來繪製**流程**和**ObjectFlow**網域關聯性的實例。 **FlowBuilder**連接產生器除了先前所述的**流程**連結 connect 指示詞之外，還有兩個名為**ObjectFlow**的連結 connect 指示詞。 這些指示詞會指定**ObjectFlow**關聯性的實例可以在**ObjectInState**網域類別的實例之間繪製，或從**ObjectInState**的**實例建立到**工作的實例，但不能在兩個工作**的實例，或**從**工作的實例到** **ObjectInState**的實例。 不過，可能會在工作的兩個實例之間繪製**流程**關聯性的**實例。** 如果您編譯並執行工作流程方案，您可以看到將**流程**從**ObjectInState**實例繪製**至工作實例建立** **ObjectFlow**的實例，但在兩個實例之間繪製**流程** **工作會建立** **流程**的實例。
+ 在工作流程方案中，**流程**連接工具是用來繪製**流程**和**ObjectFlow**網域關聯性的實例。 **FlowBuilder**連接產生器除了先前所述的**流程**連結 connect 指示詞之外，還有兩個名為**ObjectFlow**的連結 connect 指示詞。 這些指示詞會指定**ObjectFlow**關聯性的實例可以在**ObjectInState**網域類別的實例之間繪製，或是從**ObjectInState**的**實例建立到**工作的實例，而不是在工作的兩個實例**之間，或是** **從工作的**實例到**ObjectInState**的實例。 不過，可能會在工作的兩個實例之間繪製**流程**關聯性的**實例。** 如果您編譯並執行工作流程方案，您可以看到從**ObjectInState**實例到工作實例的繪製**流程**會建立**ObjectFlow**的實例，但**在工作的**兩個實例之間繪製**流程**，**會建立** **流程**的實例。
 
 ### <a name="custom-code-for-connection-builders"></a>連接產生器的自訂程式碼
  使用者介面中有四個核取方塊，用於定義連接產生器的不同自訂類型：
 
-- 來源或目標角色指示詞上的 [**自訂接受**] 核取方塊
+- 原始或目標角色指示詞上的 [自訂接受] 核取方塊
 
-- 來源或目標角色指示詞上的 [**自訂連接]** 核取方塊
+- 原始或目標角色指示詞上的 [自訂連接] 核取方塊
 
-- connect 指示詞上的 [**使用自訂連接]** 核取方塊
+- 連接指示詞上的 [使用自訂連接] 核取方塊
 
-- 是連接產生器的**自訂**屬性
+- 連接產生器的 **Is Custom** 屬性
 
   您必須提供一些程式碼來建立這些自訂。 若要探索必須提供的程式碼，請核取上述其中一個方塊，按一下 [轉換所有範本]，然後建置您的方案。 錯誤報告隨即產生。 按兩下錯誤報告，以檢視說明應加入之程式碼的註解。
 
@@ -194,7 +194,7 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 > 若要加入自訂程式碼，請使用與 GeneratedCode 資料夾中的程式碼檔案不同的程式碼檔案，建立部分類別定義。 為了避免遺失工作，請勿編輯產生的程式碼檔案。 如需詳細資訊，請參閱覆[寫和擴充產生的類別](../modeling/overriding-and-extending-the-generated-classes.md)。
 
 #### <a name="creating-custom-connection-code"></a>建立自訂連接程式碼
- 在每個 link connect 指示詞中，[**來源角色**指示詞] 索引標籤會定義您可以拖曳的類型。 同樣地，[**目標角色**指示詞] 索引標籤會定義您可以拖曳的類型。 針對每個類型，您可以設定**自訂接受**旗標，然後提供額外的程式碼，以進一步指定是否允許連接（針對該連結 connect 指示詞）。
+ 在每個 Link Connect 指示詞中，[來源角色指示詞] 索引標籤會定義您可以拖曳的來源類型。 同樣地，[目標角色指示詞] 索引標籤會定義您可以拖曳的類型。 對於每個類型，您可以設定 [自訂接受] 旗標，然後提供額外的程式碼，來進一步指定是否要允許連接 (針對該 Link Connect 指示詞)。
 
  您也可以自訂建立連接時所發生的狀況。 例如，您可以自訂拖曳出或拖曳至特定類別的單一案例，一個 Link Connect 指示詞管理的所有案例，或整個 FlowBuilder 連接產生器。 針對上述每個選項，您可以在適當層級設定自訂旗標。 當您轉換所有範本並嘗試建置方案時，會出現錯誤訊息，將您引導至所產生之程式碼中的註解。 這些註解指出您必須提供的程式碼。
 
@@ -204,7 +204,7 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 
  ![連接產生器](../modeling/media/connectionbuilder-3.png "ConnectionBuilder_3")
 
- 因此，您可能需要指定可從巢狀元件連接至 OutPort。 若要指定這類連線，您可以在 [ **DSL 詳細資料**] 視窗中，將**InPort**類型的 [**自訂接受**] 設定為 [來源角色]，並將 [ **OutPort**類型] 當做 [目標角色]。
+ 因此，您可能需要指定可從巢狀元件連接至 OutPort。 若要指定此連接，您可以在 [DSL 詳細資料] 視窗中，將 [InPort] 類型上的 [使用自訂接受] 設定為來源角色，並將 [OutPort] 類型設定為目標角色，如下圖所示：
 
  **DSL Explorer 中的 Link Connect 指示詞**
 
@@ -248,5 +248,5 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 
  您可以使用自訂程式碼套用「硬式」條件約束，但請考量使用者是否應該能夠暫時建立無效的連接。 如果應該，您可以修改條件約束，在使用者嘗試儲存變更之前都不會驗證連接。
 
-## <a name="see-also"></a>請參閱
- [自訂專案的建立和移動](../modeling/customizing-element-creation-and-movement.md)[自訂複製行為](../modeling/customizing-copy-behavior.md)如何：在程式碼電路圖表中[新增拖放處理常式](../modeling/how-to-add-a-drag-and-drop-handler.md)[流覽和更新模型](../modeling/navigating-and-updating-a-model-in-program-code.md)[範例 DSL](http://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
+## <a name="see-also"></a>另請參閱
+ [自訂專案的建立和移動](../modeling/customizing-element-creation-and-movement.md)[自訂複製行為](../modeling/customizing-copy-behavior.md)[如何：在程式碼中新增拖放處理常式](../modeling/how-to-add-a-drag-and-drop-handler.md)[導覽和更新模型](../modeling/navigating-and-updating-a-model-in-program-code.md)

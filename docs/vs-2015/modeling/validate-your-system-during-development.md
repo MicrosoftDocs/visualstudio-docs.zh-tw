@@ -11,19 +11,19 @@ caps.latest.revision: 39
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 489642936c6b309cd7a30eb6e0a5ad9b0edc8bd0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 4fec3595ba7886f5ba979c35e9441ab108174726
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72659417"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74301347"
 ---
 # <a name="validate-your-system-during-development"></a>在開發期間驗證您的系統
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Visual Studio 可協助您保持軟體與使用者需求和系統架構的一致性。
 
- 若要查看支援每項功能的 Visual Studio 版本有哪些，請參閱 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。
+ 若要查看哪些版本的 Visual Studio 支援這些功能之每一項，請參閱[架構和模型工具的版本支援](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。
 
 ## <a name="key-tasks"></a>主要工作
  使用下列工作來驗證您的軟體。
@@ -38,10 +38,10 @@ Visual Studio 可協助您保持軟體與使用者需求和系統架構的一致
 
 |**分類**|**Links**|
 |------------------|---------------|
-|**影片**|![連結至影片](../data-tools/media/playvideo.gif "連結 playvideo") [Channel 9： Doug 七：程式碼瞭解和使用 Visual Studio 2010 的系統設計](http://go.microsoft.com/fwlink/?LinkId=216100)<br /><br /> ![連結至影片](../data-tools/media/playvideo.gif "PlayVideo")[頻道9：使用分層圖架構應用程式](http://go.microsoft.com/fwlink/?LinkID=201117)<br /><br /> ![連結至影片](../data-tools/media/playvideo.gif "PlayVideo") [MSDN 如何系列：如何使用分層圖驗證程式代碼](http://go.microsoft.com/fwlink/?LinkID=214405)|
-|**論壇**|-   [Visual Studio Visualization & Modeling Tools](http://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Visual Studio Visualization & Modeling SDK (DSL 工具)](http://go.microsoft.com/fwlink/?LinkId=184721)|
-|**部落格**|-   [Visual Studio ALM + Team Foundation Server 部落格](http://go.microsoft.com/fwlink/?LinkID=201340)|
-|**技術文件和日誌**|[MSDN 架構中心](http://go.microsoft.com/fwlink/?LinkId=201343)|
+|**影片**|![連結至影片](../data-tools/media/playvideo.gif "連結 playvideo") [Channel 9： Doug 七：程式碼瞭解和使用 Visual Studio 2010 的系統設計](https://go.microsoft.com/fwlink/?LinkId=216100)<br /><br /> ![連結至影片](../data-tools/media/playvideo.gif "PlayVideo")[頻道9：使用分層圖架構應用程式](https://go.microsoft.com/fwlink/?LinkID=201117)<br /><br /> ![連結至影片](../data-tools/media/playvideo.gif "PlayVideo") [MSDN 如何系列：如何使用分層圖驗證程式代碼](https://go.microsoft.com/fwlink/?LinkID=214405)|
+|**論壇**|-   [Visual Studio Visualization & Modeling Tools](https://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Visual Studio Visualization & Modeling SDK (DSL 工具)](https://go.microsoft.com/fwlink/?LinkId=184721)|
+|**部落格**|-   [Visual Studio ALM + Team Foundation Server 部落格](https://go.microsoft.com/fwlink/?LinkID=201340)|
+|**技術文件和日誌**|[MSDN 架構中心](https://go.microsoft.com/fwlink/?LinkId=201343)|
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
  [測試應用程式](https://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)[擴充 UML 模型和圖表](../modeling/extend-uml-models-and-diagrams.md)[模型使用者需求](../modeling/model-user-requirements.md)[分析和模型化架構](../modeling/analyze-and-model-your-architecture.md)

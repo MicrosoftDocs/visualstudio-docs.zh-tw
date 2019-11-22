@@ -9,17 +9,17 @@ caps.latest.revision: 9
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 3fdedf3fd9463b25e2c825a0a2d43b069049a2cb
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f634f028dafea3260a69537893513f13cc0ebe83
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72671225"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74292544"
 ---
 # <a name="run-unit-tests-on-uml-extensions"></a>在 UML 擴充功能上執行單元測試
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-為了協助在連續變更之後保持您程式碼的穩定，建議您撰寫單元測試，並在一般建置流程時執行它們。 如需詳細資訊，請參閱 [Unit Test Your Code](../test/unit-test-your-code.md)。 若要設定 Visual Studio 模型擴充功能的測試，您需要一些重要資訊。 歸納起來：
+為了協助在連續變更之後保持您程式碼的穩定，建議您撰寫單元測試，並在一般建置流程時執行它們。 如需詳細資訊，請參閱[單元測試您的程式碼](../test/unit-test-your-code.md)。 若要設定 Visual Studio 模型擴充功能的測試，您需要一些重要資訊。 摘要說明：
 
 - [設定 VSIX 擴充功能的單元測試](#Host)
 
@@ -43,12 +43,10 @@ ms.locfileid: "72671225"
 
   下列各節會詳細說明這些重點。
 
-  您可以在程式碼範例庫的 [UML - 使用文字快速輸入](http://code.msdn.microsoft.com/UML-Rapid-Entry-using-Text-0813ad8a)中找到進行過單元測試的 UML 擴充功能範例。
-
 ## <a name="requirements"></a>需求
  請參閱 [需求](../modeling/extend-uml-models-and-diagrams.md#Requirements)。
 
- 若要查看哪些 Visual Studio 版本支援這項功能，請參閱 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。
+ 若要查看哪些版本的 Visual Studio 支援此功能，請參閱 [Architecture and Modeling Tools 的版本支援](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。
 
 ## <a name="Host"></a>設定 VSIX 擴充功能的單元測試
  模型擴充功能中的方法通常會使用已開啟的圖表。 這些方法使用 MEF 匯入，例如 **IDiagramContext** 和 **ILinkedUndoContext**。 執行測試之前，您的測試環境必須先設定這個內容。
@@ -59,7 +57,7 @@ ms.locfileid: "72671225"
 
     1. **UML 擴充功能專案。** 您通常會使用命令、手勢或驗證專案範本，來建立這個專案。 例如，請參閱[在模型圖表上定義功能表命令](../modeling/define-a-menu-command-on-a-modeling-diagram.md)。
 
-    2. **單元測試專案。** 如需詳細資訊，請參閱 [Unit Test Your Code](../test/unit-test-your-code.md)。
+    2. **單元測試專案。** 如需詳細資訊，請參閱[單元測試您的程式碼](../test/unit-test-your-code.md)。
 
 2. 建立含有 UML 模型專案的 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 方案。 您將會使用這個方案做為測試的初始狀態。 它應該與您在其中撰寫 UML 擴充功能和其單元測試的方案區隔開來。 如需詳細資訊，請參閱[建立 UML 模型專案和圖表](../modeling/create-uml-modeling-projects-and-diagrams.md)。
 
@@ -70,7 +68,7 @@ ms.locfileid: "72671225"
         <CopyOutputSymbolsToOutputDirectory>true</CopyOutputSymbolsToOutputDirectory>
     ```
 
-     若要編輯 .csproj 檔案做為文字，請在方案總管的專案捷徑功能表上選擇 [卸載專案] 。 然後選擇 [編輯 ….csproj]。 在您編輯過文字之後，請選擇 [重新載入專案]。
+     若要編輯 .csproj 檔案做為文字，請在方案總管的專案捷徑功能表上選擇 [卸載專案]。 然後選擇 [編輯 ….csproj]。 在您編輯過文字之後，請選擇 [重新載入專案]。
 
 4. 在 UML 擴充功能專案中，於 **Properties\AssemblyInfo.cs**中加入下行。 這樣可讓單元測試存取您想要測試的方法：
 
@@ -99,7 +97,7 @@ ms.locfileid: "72671225"
      這樣可確定測試將在 Visual Studio 的試驗執行個體中執行。
 
 ## <a name="DTE"></a>存取 DTE 和 ModelStore
- 撰寫方法，以在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]中開啟模型專案。 在每個測試回合中，您通常只會想要開啟方案一次。 若只要執行此方法一次，請在此方法的前面加上 `[AssemblyInitialize]` 屬性。 請不要忘記，每種測試方法上也需要 [HostType("VS IDE")] 屬性。  例如:
+ 撰寫方法，以在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]中開啟模型專案。 在每個測試回合中，您通常只會想要開啟方案一次。 若只要執行此方法一次，請在此方法的前面加上 `[AssemblyInitialize]` 屬性。 請不要忘記，每種測試方法上也需要 [HostType("VS IDE")] 屬性。  例如：
 
 ```csharp
 using EnvDTE;
@@ -287,7 +285,7 @@ using Microsoft.VSSDK.Tools.VsIdeTesting;
 ...}
 ```
 
- 如果您想要測試的方法採用匯入的屬性做為參數，則可以將屬性匯入至測試類別，並將 `SatisfyImportsOnce` 套用至測試執行個體。 例如:
+ 如果您想要測試的方法採用匯入的屬性做為參數，則可以將屬性匯入至測試類別，並將 `SatisfyImportsOnce` 套用至測試執行個體。 例如：
 
 ```
 
@@ -338,7 +336,7 @@ using System.ComponentModel.Composition;
 [assembly:InternalsVisibleTo("MyUnitTests")] // Name of unit tests assembly.
 ```
 
- 定義測試介面定義的介面，包含要測試之類別的公用成員，以及您希望測試能夠使用之私用成員的其他屬性和方法。 將這個介面加入要測試的專案。 例如:
+ 定義測試介面定義的介面，包含要測試之類別的公用成員，以及您希望測試能夠使用之私用成員的其他屬性和方法。 將這個介面加入要測試的專案。 例如：
 
 ```csharp
 internal interface MyClassTestInterface {
@@ -349,7 +347,7 @@ internal interface MyClassTestInterface {
  }
 ```
 
- 將方法加入要測試的類別，以明確地實作存取子方法。 將這些其他方法與主要類別分隔開來，方法是在不同檔案的部分類別定義中撰寫這些方法。 例如:
+ 將方法加入要測試的類別，以明確地實作存取子方法。 將這些其他方法與主要類別分隔開來，方法是在不同檔案的部分類別定義中撰寫這些方法。 例如：
 
 ```csharp
 partial public class MyClass
@@ -368,7 +366,7 @@ partial public class MyClass
 [assembly:InternalsVisibleTo("MyUnitTests")] // Name of unit tests assembly.
 ```
 
- 在單元測試方法中，使用測試介面。 例如:
+ 在單元測試方法中，使用測試介面。 例如：
 
 ```csharp
 MyClassTestInterface testInstance = new MyClass();
@@ -378,5 +376,5 @@ Assert.AreEqual("hello", testInstance.privateField1_Accessor);
 
  使用反映來定義存取子：這是我們建議的最小方法。 舊版 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 已提供公用程式，來自動建立每種私用方法的存取子方法。 雖然這十分方便，但是我們的經驗告訴我們這樣可能會導致單元測試與其正在測試之應用程式的內部結構極緊密地結合。 因為測試需要與實作一起變更，所以這樣會在需求或架構變更時導致額外工作。 而且，實作設計中的任何錯誤假設也會內建至測試，因此，測試會找不到錯誤。
 
-## <a name="see-also"></a>請參閱
- [單元測試](https://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144)的結構[在模型圖表上定義功能表命令](../modeling/define-a-menu-command-on-a-modeling-diagram.md) [UML-使用文字快速輸入](http://code.msdn.microsoft.com/UML-Rapid-Entry-using-Text-0813ad8a)
+## <a name="see-also"></a>另請參閱
+ [單元測試](https://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144)的結構[在模型圖表上定義功能表命令](../modeling/define-a-menu-command-on-a-modeling-diagram.md)

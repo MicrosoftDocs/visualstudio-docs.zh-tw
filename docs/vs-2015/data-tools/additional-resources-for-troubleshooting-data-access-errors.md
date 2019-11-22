@@ -231,33 +231,33 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: b304b31447c0a43e37a333516a3a79c71070bd4e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 005f1d1edd1c0a6127c150922cdaab2aef439634
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72673023"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299447"
 ---
 # <a name="additional-resources-for-troubleshooting-data-access-errors"></a>用來對資料存取錯誤進行疑難排解的其他資源
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 您可以在 Microsoft Developer Network (MSDN) 公共論壇中尋求有關疑難排解錯誤和警告的協助。 下表列出 MSDN 上提供的資料相關論壇。
 
- [Windows Forms 資料控制項和](http://go.microsoft.com/fwlink/?LinkId=160179)資料系結提供 Windows Forms 中資料存取的相關問題和一般討論的論壇。
+ [Windows Forms 資料控制項和](https://go.microsoft.com/fwlink/?LinkId=160179)資料系結提供 Windows Forms 中資料存取的相關問題和一般討論的論壇。
 
- [ADO.NET 資料集論壇](http://go.microsoft.com/fwlink/?LinkId=160180)提供有關資料集之問題和一般討論的論壇。
+ [ADO.NET 資料集論壇](https://go.microsoft.com/fwlink/?LinkId=160180)提供有關資料集之問題和一般討論的論壇。
 
- [ADO.NET Entity Framework 和 LINQ to Entities](http://go.microsoft.com/fwlink/?LinkId=191520)提供有關 Entity Framework 應用程式和 LINQ to Entities 語言的問題和一般討論的論壇。
+ [ADO.NET Entity Framework 和 LINQ to Entities](https://go.microsoft.com/fwlink/?LinkId=191520)提供有關 Entity Framework 應用程式和 LINQ to Entities 語言的問題和一般討論的論壇。
 
- [WCF Data Services 論壇](http://go.microsoft.com/fwlink/?LinkId=160181)提供有關資料服務的問題和一般討論的論壇。
+ [WCF Data Services 論壇](https://go.microsoft.com/fwlink/?LinkId=160181)提供有關資料服務的問題和一般討論的論壇。
 
- [SQL Server 資料存取論壇](http://go.microsoft.com/fwlink/?LinkID=160184)提供有關在 Microsoft SQL Server 中存取資料之問題和一般討論的論壇。
+ [SQL Server 資料存取論壇](https://go.microsoft.com/fwlink/?LinkID=160184)提供有關在 Microsoft SQL Server 中存取資料之問題和一般討論的論壇。
 
- [Linq TO SQL 論壇](http://go.microsoft.com/fwlink/?LinkId=160183)提供有關 Linq to SQL 的問題和一般討論的論壇。
+ [Linq TO SQL 論壇](https://go.microsoft.com/fwlink/?LinkId=160183)提供有關 Linq to SQL 的問題和一般討論的論壇。
 
- [ADO.NET 資料提供者論壇](http://go.microsoft.com/fwlink/?LinkId=160182)提供有關不同 .NET Framework 資料提供者之問題和一般討論的論壇。
+ [ADO.NET 資料提供者論壇](https://go.microsoft.com/fwlink/?LinkId=160182)提供有關不同 .NET Framework 資料提供者之問題和一般討論的論壇。
 
- 如需如何針對 SQL Server 的連線進行疑難排解的相關資訊，請參閱[如何針對連接至 SQL Server 資料庫引擎進行疑難排解](http://go.microsoft.com/fwlink/?LinkID=246151)。
+ 如需如何針對 SQL Server 的連線進行疑難排解的相關資訊，請參閱[如何針對連接至 SQL Server 資料庫引擎進行疑難排解](https://go.microsoft.com/fwlink/?LinkID=246151)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
  [適用於 .NET 的 Visual Studio Data Tools](../data-tools/visual-studio-data-tools-for-dotnet.md)

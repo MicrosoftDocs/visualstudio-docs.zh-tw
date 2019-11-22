@@ -33,12 +33,12 @@ caps.latest.revision: 29
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 313cc11978355942bf6671cc040969c255d7e44d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 3ee0cf61f8ec2787894c6f67b8ac75424246c507
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72669340"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297451"
 ---
 # <a name="xml-tools-in-visual-studio"></a>Visual Studio 中的 XML 工具
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,15 +49,15 @@ ms.locfileid: "72669340"
 
  XML 是許多 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 和 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 功能的核心。 下列主題列出 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 和 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 所提供之與 XML 相關的工具和功能名稱。
 
- 如需詳細資訊，請參閱[Xml 開發人員中心](http://go.microsoft.com/fwlink/?LinkID=100176)，其中提供適用于 xml 開發人員的最新檔、技術資訊、下載、新聞群組和其他資源。
+ 如需詳細資訊，請參閱[Xml 開發人員中心](https://go.microsoft.com/fwlink/?LinkID=100176)，其中提供適用于 xml 開發人員的最新檔、技術資訊、下載、新聞群組和其他資源。
 
-## <a name="in-this-section"></a>本章節內容
- 使用[XML 資料](../xml-tools/working-with-xml-data.md)討論 XML 的角色在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中處理資料的方式。
+## <a name="in-this-section"></a>本節內容
+ 使用[XML 資料](../xml-tools/working-with-xml-data.md)討論 XML 的角色在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]中處理資料的方式。
 
  [調試 XSLT](../xml-tools/debugging-xslt.md)提供有關使用 Visual Studio 偵錯工具來偵測 XSLT 的主題連結。
 
-## <a name="reference"></a>參考資料
- [VisualStudio. XmlEditor](http://go.microsoft.com/fwlink/?LinkID=165699) [會針對任何](http://go.microsoft.com/fwlink/?LinkId=228250)Xml 檔公開[xml 編輯器](http://go.microsoft.com/fwlink/?LinkId=228249)剖析樹狀結構。
+## <a name="reference"></a>參考
+ [VisualStudio. XmlEditor](https://go.microsoft.com/fwlink/?LinkID=165699) [會針對任何](https://go.microsoft.com/fwlink/?LinkId=228250)Xml 檔公開[xml 編輯器](https://go.microsoft.com/fwlink/?LinkId=228249)剖析樹狀結構。
 
  [XML 標準參考](https://msdn.microsoft.com/79c78508-c9d0-423a-a00f-672e855de401)提供 XML 技術的相關資訊，包括 XML、檔案類型定義（DTD）、XML 架構定義語言（XSD）和 XSLT。
 

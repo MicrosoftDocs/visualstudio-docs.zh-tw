@@ -9,19 +9,19 @@ caps.latest.revision: 19
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: ab16750694e1bc8bb74afa7d22d899dc492d7c7d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 54e4713abef096d5a23cf1ebf74a9d90db0d6409
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72671794"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74295739"
 ---
 # <a name="step-4-lay-out-your-form-with-a-tablelayoutpanel-control"></a>步驟 4：使用 TableLayoutPanel 控制項來配置您的表單
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 在此步驟中，您會將 `TableLayoutPanel` 控制項新增至表單。 TableLayoutPanel 有助於正確對齊稍後加入至表單中的控制項。
 
- ![影片連結](../data-tools/media/playvideo.gif "連結 playvideo")如需本主題的影片版本，請參閱[教學課程1：在 Visual Basic 中建立圖片檢視器-影片 2](http://go.microsoft.com/fwlink/?LinkId=205211)或[教學課程1：在C#影片2中建立圖片檢視器](http://go.microsoft.com/fwlink/?LinkId=205200)。 這些影片使用舊版 Visual Studio，因此有一些功能表命令以及某些使用者介面項目會有些微差異。 不過，概念和程序在目前 Visual Studio 版本中的運作方式雷同。
+ ![影片連結](../data-tools/media/playvideo.gif "連結 playvideo")如需本主題的影片版本，請參閱[教學課程1：在 Visual Basic 中建立圖片檢視器-影片 2](https://go.microsoft.com/fwlink/?LinkId=205211)或[教學課程1：在C#影片2中建立圖片檢視器](https://go.microsoft.com/fwlink/?LinkId=205200)。 這些影片使用舊版 Visual Studio，因此有一些功能表命令以及某些使用者介面項目會有些微差異。 不過，概念和程序在目前 Visual Studio 版本中的運作方式雷同。
 
 ### <a name="to-lay-out-your-form-with-a-tablelayoutpanel-control"></a>若要使用 TableLayoutPanel 控制項來配置您的表單
 
@@ -46,15 +46,15 @@ ms.locfileid: "72671794"
 
      ![顯示 TableLayoutPanel 控制項的屬性視窗](../ide/media/express-controlspropwin.png "Express_ControlsPropWin")顯示 TableLayoutPanel 控制項的屬性視窗
 
-5. 在 [屬性] 視窗的工具列上，選擇 [字母順序] 按鈕。 這會造成 [屬性] 視窗中的屬性清單以字母順序顯示，可讓您輕鬆地找到本教學課程中的屬性。
+5. 在 [**屬性**] 視窗的工具列上選擇 [**字母順序**] 按鈕。 這會造成 [**屬性**] 視窗中的屬性清單以字母順序顯示，可讓您輕鬆地找到本教學課程中的屬性。
 
 6. 控制項選取器是 [屬性] 視窗頂端的下拉式清單。 在此範例中，它顯示已選取一個稱為 `tableLayoutPanel1` 的控制項。 您可以從 [Windows Form 設計工具] 或從控制項選取器中選擇區域，以選取控制項。 現在已選取 `TableLayoutPanel`，請尋找 **Dock** 屬性並選擇 [停駐]，此屬性應該設定為 [無]。 請注意，值旁邊會出現下拉箭號。 選擇箭號，然後選取 [填滿] 按鈕 (中間的大型按鈕)，如下圖所示。
 
      已![選取填滿的屬性視窗](../ide/media/express-docktable.png "Express_DockTable")已選取填滿的屬性視窗
 
-     Visual Studio 中的「停駐」是指在 IDE 中，將視窗附加至另一個視窗或區域。 例如，[屬性] 視窗可以取消停駐 (也就是未附加，可在 Visual Studio 內自由浮動)，也可以固定於 [方案總管] 中。
+     Visual Studio 中的「停駐」是指在 IDE 中，將視窗附加至另一個視窗或區域。 例如，[屬性] 視窗可以浮動，也就是未連接，可在 Visual Studio 內自由浮動，也可以固定於 [**方案總管**]。
 
-7. 將 TableLayoutPanel **Dock** 屬性設定為 [Fill] 之後，面板會填滿整個表單。 如果您再次調整表單的大小，TableLayoutPanel 會停駐不動，並調整大小來填滿表單。
+7. 將 TableLayoutPanel [**Dock**] 屬性設定為 [**Fill**] 之後，面板會填滿整個表單。 如果您再次調整表單的大小，TableLayoutPanel 會停駐不動，並調整大小來填滿表單。
 
     > [!NOTE]
     > TableLayoutPanel 就像 Microsoft Office Word 中的表格 (具有列和欄)，且單一儲存格可以跨越多個列和欄。 每一個儲存格中放置一個控制項 (例如按鈕、核取方塊或標籤)。 您的 TableLayoutPanel 將具有一個橫跨整個上方資料列的 `PictureBox` 控制項、在左下方儲存格有一個 `CheckBox` 控制項，以及在右下方儲存格中則有四個 `Button` 控制項。
@@ -69,13 +69,13 @@ ms.locfileid: "72671794"
 
      ![TableLayoutPanel](../ide/media/express-tablepanel.png "Express_TablePanel")工作TableLayoutPanel 工作
 
-10. 選擇 [編輯資料列與資料行] 工作以顯示 [資料行和資料列樣式] 視窗。 選擇 [資料行 1]，並將其大小設定為 15% (藉由確定已選取 [百分比] 按鈕，並在 [百分比] 方塊中輸入 `15`) （這是您將在稍後的教學課程中使用的 `NumericUpDown` 控制項）。選擇 [ **Column2** ]，並將它設定為 [85%]。 還不要選擇 [確定] 按鈕，因為視窗將會關閉 (但如果這樣做，您還是可以使用工作清單來重新開啟視窗)。
+10. 選擇 [編輯資料列與資料行] 工作以顯示 [資料行和資料列樣式] 視窗。 選擇 [資料行 1]，並將其大小設定為 15% (藉由確定已選取 [百分比] 按鈕，並在 [百分比]`15`**方塊中輸入**) （這是您將在稍後的教學課程中使用的 `NumericUpDown` 控制項）。選擇 [ **Column2** ]，並將它設定為 [85%]。 還不要選擇 [確定] 按鈕，因為視窗將會關閉 (但如果這樣做，您還是可以使用工作清單來重新開啟視窗)。
 
      ![TableLayoutPanel 資料行和資料列樣式](../ide/media/vs-tablelayoutpanel-setup.png "VS_TableLayoutPanel_Setup")TableLayoutPanel 資料行和資料列樣式
 
 11. 從視窗頂端的 [顯示] 下拉式清單中，選擇 [資料列]。 將 [資料列 1] 設定為 90%，並將 [資料列 2] 設定為 10%。
 
-12. 選擇 [ **確定** ] 按鈕。 TableLayoutPanel 現在應該具有大型的上方資料列、小型的下方資料列和大型的右邊資料行。 您可以在表單中選取 tableLayoutPanel1 並拖曳資料列和資料行的框線，來調整 TableLayoutPanel 中的資料列和資料行大小。
+12. 選擇 [確定] 按鈕。 TableLayoutPanel 現在應該具有大型的上方資料列、小型的下方資料列和大型的右邊資料行。 您可以在表單中選取 tableLayoutPanel1 並拖曳資料列和資料行的框線，來調整 TableLayoutPanel 中的資料列和資料行大小。
 
      已重設![大小之 TableLayoutPanel 的 Form1](../ide/media/vs-formafterlayoutpanel.png "VS_FormAfterLayoutPanel")已調整大小之 TableLayoutPanel 的 Form1
 

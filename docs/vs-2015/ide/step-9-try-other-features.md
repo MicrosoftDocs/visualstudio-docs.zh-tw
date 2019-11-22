@@ -9,19 +9,17 @@ caps.latest.revision: 13
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 9e05fc6615fb2d836f3ea029912374f49b4d97a1
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 379fc9c28b8d36f7bd606719a443b16108f0095d
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72646878"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299979"
 ---
 # <a name="step-9-try-other-features"></a>步驟 9：嘗試其他功能
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 若要了解詳細資訊，請試著變更圖示和色彩、加入遊戲計時器，以及加入音效。 若要讓遊戲更具挑戰性，請試著使戲局變大並調整計時器。
-
- 若要下載這個範例的完整版，請參閱 [Complete Matching Game tutorial sample](http://code.msdn.microsoft.com/Complete-Matching-Game-4cffddba) (完整的配對遊戲教學課程範例)。
 
 ### <a name="to-try-other-features"></a>若要嘗試其他功能
 
@@ -38,7 +36,7 @@ ms.locfileid: "72646878"
 - 加入當玩家找到配對項目時的音效、當玩家發現不相符的兩個圖示時的另一種音效，以及當程式再次隱藏圖示時的第三種音效。
 
     > [!TIP]
-    > 若要播放音效，您可以使用 System.media 命名空間。 如需詳細資訊，請參閱 [Play Sounds in Windows Forms App (C# .NET)](http://youtu.be/qOh4ooHg1UU) (在 Windows Forms 應用程式中播放音效 (C# .NET)) 或 [How To Play Audio In Visual Basic](http://youtu.be/-4oPDeQrtMs) (如何在 Visual Basic 中播放音訊)。
+    > 若要播放音效，您可以使用 System.media 命名空間。 如需詳細資訊，請參閱[在 Windows Form 應用程式中播放音效 (C#.NET)](https://www.youtube.com/watch?v=qOh4ooHg1UU&feature=youtu.be) 或[如何在 Visual Basic 中播放音訊](https://www.youtube.com/watch?v=-4oPDeQrtMs&feature=youtu.be)。
 
 - 使戲局變大，可讓遊戲變得更困難。
 
@@ -49,8 +47,8 @@ ms.locfileid: "72646878"
 
 ### <a name="to-continue-or-review"></a>繼續或檢視
 
-- 如果您碰到程式開發的問題，請嘗試發表問題至 MSDN 論壇。 請參閱 [Visual Basic 論壇](http://social.msdn.microsoft.com/Forums/home?forum=vbgeneral)和 [Visual C# 論壇](http://social.msdn.microsoft.com/Forums/home?forum=csharpgeneral)。
+- 如果您碰到程式開發的問題，請嘗試發表問題至 MSDN 論壇。 請參閱 [Visual Basic 論壇](https://social.msdn.microsoft.com/Forums/en-US/home)和 [Visual C# 論壇](https://social.msdn.microsoft.com/Forums/en-US/home)。
 
-- 其中提供了很好的免費視訊學習資源。 若要深入了解如何在 Visual Basic 程式設計，請參閱 [Visual Basic Fundamentals: Development for Absolute Beginners](http://channel9.msdn.com/Series/Visual-Basic-Development-for-Absolute-Beginners) (Visual Basic 基礎：徹底初學者開發)。 若要深入了解如何在 Visual C# 程式設計，請參閱 [C# Fundamentals: Development for Absolute Beginners](http://channel9.msdn.com/Series/C-Sharp-Fundamentals-Development-for-Absolute-Beginners)(Visual C# 基礎：徹底初學者開發)。
+- 其中提供了很好的免費視訊學習資源。 若要了解在 Visual Basic 程式設計的詳細資訊，請參閱[Visual Basic 基礎：適用於徹底初學者的開發](https://channel9.msdn.com/Series/Visual-Basic-Development-for-Absolute-Beginners)。 若要深入了解如何在 Visual C# 程式設計，請參閱 [C# Fundamentals: Development for Absolute Beginners](https://channel9.msdn.com/Series/C-Sharp-Fundamentals-Development-for-Absolute-Beginners)(Visual C# 基礎：徹底初學者開發)。
 
-- 若要返回上一個教學課程步驟，請參閱[步驟 8：新增方法以驗證玩家是否贏了](../ide/step-8-add-a-method-to-verify-whether-the-player-won.md)。
+- 若要返回上一個教學課程的步驟，請參閱[步驟 8：加入方法以確認玩家是否贏了](../ide/step-8-add-a-method-to-verify-whether-the-player-won.md)。

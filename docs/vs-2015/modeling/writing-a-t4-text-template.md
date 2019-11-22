@@ -13,17 +13,17 @@ caps.latest.revision: 45
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: e529e0ed4407343a9e233a08293bfc1bbd8458d7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: bcd5a4996db4a5e374baabe4f52d5fd1dbac2e5e
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72663006"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74301127"
 ---
 # <a name="writing-a-t4-text-template"></a>撰寫 T4 文字範本
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-文字範本包含將透過它產生的文字。 例如，建立網頁的範本將會包含 "\<html > ..."以及 HTML 網頁的所有其他標準部分。 插入至範本的是*控制區塊*，也就是程式碼的片段。 控制區塊提供不同的值，並允許文字的各部分成為條件式和重複。
+文字範本包含將透過它產生的文字。 例如，建立網頁的範本將會包含 "\<html > ..."以及 HTML 網頁的所有其他標準部分。 插入至範本的是 *「控制區塊」* (control block)，其為程式碼的片段。 控制區塊提供不同的值，並允許文字的各部分成為條件式和重複。
 
  此結構讓範本容易開發，因為您可以從所產生檔案的原型開始，並以累加方式插入讓結果不同的控制區塊。
 
@@ -31,9 +31,9 @@ ms.locfileid: "72663006"
 
 - 指示詞-控制範本處理**方式的元素**。
 
-- **文字區塊**-直接複製到輸出的內容。
+- **文字區塊** - 直接複製至輸出的內容。
 
-- **控制區塊**-將變數值插入至文字的程式碼，並控制文字的條件式或重複部分。
+- **控制區塊** - 將變數值插入至文字並控制文字條件式或重複部分的程式碼。
 
   若要嘗試本主題中的範例，請將它們複製到範本檔案中，如[使用 T4 文字模板產生設計階段程式碼](../modeling/design-time-code-generation-by-using-t4-text-templates.md)中所述。 編輯範本檔案之後，請加以儲存，然後檢查輸出 **.txt**檔案。
 
@@ -130,7 +130,7 @@ This is hello number <#= i+1 #>: Hello!
 ```
 
 ### <a name="class-feature-control-blocks"></a>類別功能控制區塊
- 類別功能控制區塊定義屬性、方法，或不應該併入主要轉換的任何其他程式碼。 類別功能區塊經常用於協助程式函式。  通常，類別功能區塊會放在不同的檔案中，讓一個以上的文字模板可以[包含](#Include)這些檔案。
+ 類別功能控制區塊定義屬性、方法，或不應該併入主要轉換的任何其他程式碼。 類別功能區塊經常用於協助程式函式。  通常，類別功能區塊會放在不同的檔案中，讓多個文字範本可以[包括](#Include)它們。
 
  類別功能控制區塊是使用符號 `<#+ ... #>` 隔開。
 
@@ -161,7 +161,7 @@ private int Square(int i)
  如需控制區塊的詳細資訊，請參閱[文字模板控制區塊](../modeling/text-template-control-blocks.md)。
 
 ### <a name="class-feature-blocks-can-contain-text-blocks"></a>類別功能區塊可以包含文字區塊。
- 您可以撰寫可產生文字的方法。 例如:
+ 您可以撰寫可產生文字的方法。 例如：
 
 ```
 List of Squares:
@@ -191,7 +191,7 @@ private void WriteSquareLine(int i)
 <#@ assembly name="System.Xml" #>
 ```
 
- 您應該使用絕對路徑名稱，或在路徑名稱中使用標準巨集名稱。 例如:
+ 您應該使用絕對路徑名稱，或在路徑名稱中使用標準巨集名稱。 例如：
 
 ```
 <#@ assembly name="$(SolutionDir)library\MyAssembly.dll" #>
@@ -199,7 +199,7 @@ private void WriteSquareLine(int i)
 
  如需宏清單，請參閱[組建命令和屬性的一般宏](https://msdn.microsoft.com/library/239bd708-2ea9-4687-b264-043f1febf98b)。
 
- Assembly 指示詞在前置處理過的[文字模板](../modeling/run-time-text-generation-with-t4-text-templates.md)中不會有任何作用。
+ assembly 指示詞在[前置處理過的文字範本](../modeling/run-time-text-generation-with-t4-text-templates.md)中無效。
 
  如需詳細資訊，請參閱[T4 Assembly](../modeling/t4-assembly-directive.md)指示詞。
 
@@ -235,21 +235,21 @@ private void WriteSquareLine(int i)
 
  有數種方式可以讀取原始程式檔。
 
- **讀取文字模板中**的檔案。 這是取得資料以放入範本的最簡單方式：
+ **讀取文字範本中的檔案**。 這是取得資料以放入範本的最簡單方式：
 
 ```
 <#@ import namespace="System.IO" #>
 <# string fileContent = File.ReadAllText(@"C:\myData.txt"); ...
 ```
 
- 將檔案**載入為可導覽的模型**。 功能較強大的方法是將資料讀取為您文字範本程式碼可以巡覽的模型。 例如，您可以載入 XML 檔案，並使用 XPath 運算式對其進行巡覽。 您也可以使用[xsd.exe](http://go.microsoft.com/fwlink/?LinkId=178765)來建立一組可供您讀取 XML 資料的類別。
+ 將檔案**載入為可導覽的模型**。 功能較強大的方法是將資料讀取為您文字範本程式碼可以巡覽的模型。 例如，您可以載入 XML 檔案，並使用 XPath 運算式對其進行巡覽。 您也可以使用[xsd.exe](https://go.microsoft.com/fwlink/?LinkId=178765)來建立一組可供您讀取 XML 資料的類別。
 
- **在圖表或表單中編輯模型檔案。** [!INCLUDE[dsl](../includes/dsl-md.md)] 提供的工具可讓您將模型編輯為圖表或 Windows form。 這樣可以更輕鬆地與所產生應用程式的使用者討論此模型。 [!INCLUDE[dsl](../includes/dsl-md.md)] 也會建立一組反映模型結構的強型別類別。 如需詳細資訊，請參閱[從特定領域語言產生程式碼](../modeling/generating-code-from-a-domain-specific-language.md)。
+ **在圖表或表單中編輯模型檔案。** [!INCLUDE[dsl](../includes/dsl-md.md)] 提供的工具可讓您將模型編輯為圖表或 Windows form。 這樣可以更輕鬆地與所產生應用程式的使用者討論此模型。 [!INCLUDE[dsl](../includes/dsl-md.md)] 也會建立一組強型別的類別，以反映模型的結構。 如需詳細資訊，請參閱[從特定領域語言產生程式碼](../modeling/generating-code-from-a-domain-specific-language.md)。
 
  **使用 UML 模型**。 您可以透過 UML 模型來產生程式碼。 這樣的優點是可以使用熟悉標記法，以圖表形式來編輯模型。 而且，您不需要設計圖表。 如需詳細資訊，請參閱[從 UML 模型產生](../modeling/generate-files-from-a-uml-model.md)檔案。
 
 ### <a name="relative-file-paths-in-design-time-templates"></a>設計階段範本中的相對檔案路徑
- 在[設計階段文字模板](../modeling/design-time-code-generation-by-using-t4-text-templates.md)中，如果您想要參考與文字模板相對之位置中的檔案，請使用 `this.Host.ResolvePath()`。 您也必須在 `hostspecific="true"` 指示詞中設定 `template`：
+ 在[設計階段文字範本](../modeling/design-time-code-generation-by-using-t4-text-templates.md)中，如果您想要參考與文字範本相對之位置中的檔案，請使用 `this.Host.ResolvePath()`。 您也必須在 `hostspecific="true"` 指示詞中設定 `template`：
 
 ```csharp
 <#@ template hostspecific="true" language="C#" #>
@@ -267,12 +267,12 @@ Content of MyFile.txt is:
  您也可以取得主機所提供的其他服務。 如需詳細資訊，請參閱[從範本存取 Visual Studio 或其他主機](https://msdn.microsoft.com/0556f20c-fef4-41a9-9597-53afab4ab9e4)。
 
 ### <a name="design-time-text-templates-run-in-a-separate-appdomain"></a>設計階段文字範本是在不同的 AppDomain 中執行
- 請注意，[設計階段文字模板](../modeling/design-time-code-generation-by-using-t4-text-templates.md)會在與主要應用程式不同的 AppDomain 中執行。 在大多數情況下，這並不重要，但是，您可能會發現特定複雜情況下的限制。 例如，如果您想要使用不同的服務，將資料傳入或傳出範本，則服務必須提供可序列化的 API
+ 您應該知道[設計階段文字範本](../modeling/design-time-code-generation-by-using-t4-text-templates.md)是在與主要應用程式不同的 AppDomain 中執行。 在大多數情況下，這並不重要，但是，您可能會發現特定複雜情況下的限制。 例如，如果您想要使用不同的服務，將資料傳入或傳出範本，則服務必須提供可序列化的 API
 
- （這不適用於[執行時間文字模板](../modeling/run-time-text-generation-with-t4-text-templates.md)，其提供與程式碼其餘部分一起編譯的程式碼）。
+ (這不適用於[執行階段文字範本](../modeling/run-time-text-generation-with-t4-text-templates.md)，其提供與您程式碼其餘部分一起編譯的程式碼)。
 
 ## <a name="editing-templates"></a>編輯範本
- 您可以從「擴充管理員線上圖庫」下載特殊化文字範本編輯器。 在 [**工具**] 功能表上，按一下 [**擴充管理員**]。 按一下 [**線上元件庫**]，然後使用 [搜尋] 工具。
+ 您可以從「擴充管理員線上圖庫」下載特殊化文字範本編輯器。 在 [工具]功能表上，按一下 [擴充管理員]。 按一下 [線上圖庫]，然後使用搜尋工具。
 
 ## <a name="related-topics"></a>相關主題
 

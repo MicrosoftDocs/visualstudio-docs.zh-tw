@@ -16,12 +16,12 @@ caps.latest.revision: 19
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 3d057296e38cbba38651bb9228b8cd837f21deaf
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 84828024e19d731c3de7db0859aa3b2033379a49
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72645542"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74290325"
 ---
 # <a name="globalizing-and-localizing-applications"></a>全球化和當地語系化應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ ms.locfileid: "72645542"
 
  Visual Studio 在設計之初就已設想到利用 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 內建的服務優勢，讓針對國際適用對象的開發作業更加輕鬆。 下列頁面有助您了解 Visual Studio 內建的國際化功能。
 
-## <a name="in-this-section"></a>本章節內容
+## <a name="in-this-section"></a>本節內容
  [以 .NET Framework 為基礎的國際應用程式簡介](../ide/introduction-to-international-applications-based-on-the-dotnet-framework.md)介紹使用 Visual Studio 和 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]，針對國際市場開發軟體的相關概念。
 
  [當地語系化應用程式](../ide/localizing-applications.md)提供有關自訂給定文化特性之應用程式的頁面連結。
@@ -38,9 +38,9 @@ ms.locfileid: "72645542"
  [全球化應用程式](../ide/globalizing-applications.md)提供有關建立支援多種文化特性之應用程式的頁面連結。
 
 ## <a name="related-sections"></a>相關章節
- [全球化您的應用程式（使用 JavaScript 和 HTML 的 Windows Store 應用程式）](http://go.microsoft.com/fwlink/?LinkId=258266)包含「如何」主題和指導方針，可協助您將使用 JavaScript 和 HTML 建立的 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 應用程式進行全球化和當地語系化。
+ [全球化您的應用程式（使用 JavaScript 和 HTML 的 Windows Store 應用程式）](https://go.microsoft.com/fwlink/?LinkId=258266)包含「如何」主題和指導方針，可協助您將使用 JavaScript 和 HTML 建立的 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 應用程式進行全球化和當地語系化。
 
- [全球化您的應用程式（使用C#/VB/C++和 XAML 的 Windows Store 應用程式）](http://go.microsoft.com/fwlink/?LinkId=258267)包含 how to 主題和指導方針，可協助您使用 XAML 和視覺效果C#、Visual Basic 或視覺效果C++來全球化和當地語系化 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 應用程式。
+ [全球化您的應用程式（使用C#/VB/C++和 XAML 的 Windows Store 應用程式）](https://go.microsoft.com/fwlink/?LinkId=258267)包含 how to 主題和指導方針，可協助您使用 XAML 和視覺效果C#、Visual Basic 或視覺效果C++來全球化和當地語系化 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 應用程式。
 
  [開發全球化應用程式的最佳作法](https://msdn.microsoft.com/library/f08169c7-aad8-4ec3-9a21-9ebd3b89986c)提供國際物件程式設計的背景資訊。
 

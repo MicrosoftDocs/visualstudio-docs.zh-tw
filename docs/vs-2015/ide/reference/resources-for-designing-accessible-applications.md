@@ -14,25 +14,25 @@ caps.latest.revision: 19
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 5cc95418f392e3c771350428e26e1447dae3bcf5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: af300bca2b1e679eae58a92962067fcd50fea78f
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72665566"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297786"
 ---
 # <a name="resources-for-designing-accessible-applications"></a>設計可及性應用程式的資源
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-您可以使用下列連結來尋找支援協助工具設計的技術，以及用來開發可存取的 Windows 應用程式和網站的秘訣和範例等相關資訊。 您可以在下列網站線上找到協助工具的一般資訊，網址為：[http://www.microsoft.com/enable/](http://www.microsoft.com/enable/)。
+您可以使用下列連結來尋找支援協助工具設計的技術，以及用來開發可存取的 Windows 應用程式和網站的秘訣和範例等相關資訊。 您可以在下列網站線上找到協助工具的一般資訊，網址為：[http://www.microsoft.com/enable/](https://www.microsoft.com/accessibility/)。
 
 ## <a name="technologies"></a>技術
 
-- **Microsoft Active Accessibility**：以 COM 為基礎的技術，可改善輔助協助工具與 Microsoft Windows 上執行之應用程式的搭配方式。 它提供合併至作業系統的動態連結程式庫，以及 COM 介面和應用程式的程式設計項目，以提供可靠的方法來公開使用者介面項目的相關資訊。 如需詳細資訊，請參閱 [https://msdn.microsoft.com/library/windows/desktop/dd373592(v=vs.85).aspx](https://msdn.microsoft.com/library/windows/desktop/dd373592\(v=vs.85\).aspx)。
+- **Microsoft Active Accessibility**：以 COM 為基礎的技術，可改善輔助協助工具與 Microsoft Windows 上執行之應用程式的搭配方式。 它提供合併至作業系統的動態連結程式庫，以及 COM 介面和應用程式的程式設計項目，以提供可靠的方法來公開使用者介面項目的相關資訊。 如需詳細資訊，請參閱[https://msdn.microsoft.com/library/windows/desktop/dd373592(v=vs.85).aspx](https://msdn.microsoft.com/library/windows/desktop/dd373592\(v=vs.85\).aspx)。
 
-- **Microsoft .NET Speech Technologies** (Microsoft .NET 語音技術)：Microsoft .NET 語音 SDK 是 Microsoft 的一組 [!INCLUDE[vstecasp](../../includes/vstecasp-md.md)] 控制項、Microsoft Internet Explorer 語音增益集、範例應用程式和文件，可讓 Web 開發人員建立、偵錯和部署啟用語音的 [!INCLUDE[vstecasp](../../includes/vstecasp-md.md)] 應用程式。 工具會順暢地整合至 Microsoft Visual Studio 中，允許開發人員運用熟悉的開發環境。 如需詳細資訊，請參閱 [https://msdn.microsoft.com/library/ms950383.aspx](https://msdn.microsoft.com/library/ms950383.aspx)。
+- **Microsoft .NET Speech Technologies** (Microsoft .NET 語音技術)：Microsoft .NET 語音 SDK 是 Microsoft 的一組 [!INCLUDE[vstecasp](../../includes/vstecasp-md.md)] 控制項、Microsoft Internet Explorer 語音增益集、範例應用程式和文件，可讓 Web 開發人員建立、偵錯和部署啟用語音的 [!INCLUDE[vstecasp](../../includes/vstecasp-md.md)] 應用程式。 工具會順暢地整合至 Microsoft Visual Studio 中，允許開發人員運用熟悉的開發環境。 如需詳細資訊，請參閱[https://msdn.microsoft.com/library/ms950383.aspx](https://msdn.microsoft.com/library/ms950383.aspx)。
 
-- **Understanding SAMI 1.0** (了解 SAMI 1.0)：Microsoft Synchronized Accessible Media Interchange (SAMI) 技術可讓開發人員為電腦多媒體製作音訊內容的標題。 如需詳細資訊，請參閱 [https://msdn.microsoft.com/library/ms971327.aspx](https://msdn.microsoft.com/library/ms971327.aspx)。
+- **Understanding SAMI 1.0** (了解 SAMI 1.0)：Microsoft Synchronized Accessible Media Interchange (SAMI) 技術可讓開發人員為電腦多媒體製作音訊內容的標題。 如需詳細資訊，請參閱[https://msdn.microsoft.com/library/ms971327.aspx](https://msdn.microsoft.com/library/ms971327.aspx)。
 
 ## <a name="windows-applications"></a>Windows 應用程式
 
@@ -54,7 +54,7 @@ ms.locfileid: "72665566"
 
 ### <a name="third-party-resources"></a>協力廠商資源
 
-- **Web Accessibility Initiative of the World Wide Web Consortium (W3C)** (全球資訊網協會 (W3C) 的 Web 協助工具計劃)：本網站提供可存取之網站開發的指導方針和技術。 如需詳細資訊，請參閱 [http://www.w3.org/WAI/GL/](http://www.w3.org/WAI/GL/)。
+- **Web Accessibility Initiative of the World Wide Web Consortium (W3C)** (全球資訊網協會 (W3C) 的 Web 協助工具計劃)：本網站提供可存取之網站開發的指導方針和技術。 如需詳細資訊，請參閱[http://www.w3.org/WAI/GL/](https://www.w3.org/WAI/GL/)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
  [Visual Studio 的協助工具功能](../../ide/reference/accessibility-features-of-visual-studio.md)

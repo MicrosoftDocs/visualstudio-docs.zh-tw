@@ -27,12 +27,12 @@ caps.latest.revision: 24
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 49f5d1d0cef7ec4d5a6f8ab61c785ea01f77d24b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ba8a37ac9e049455ffe19314dee0e228c3c14c97
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652661"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74295611"
 ---
 # <a name="using-the-toolbox"></a>使用工具箱
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ ms.locfileid: "72652661"
  專案的目標 .NET Framework 版本也會影響工具箱中顯示的控制項集合。 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] 專案預設會以 .NET Framework 4.5.1 為目標。 您可以在方案總管中選取專案節點，然後瀏覽至 [屬性/應用程式/目標 Framework]，將專案的目標設定為不同版本的 .NET Framework。
 
 ## <a name="managing-the-toolbox-and-its-controls"></a>管理工具箱及其控制項
- 預設已在 Visual Studio IDE 左側摺疊工具箱，您可以將游標移至上方加以顯示。 您可以釘選工具箱 (在工具箱工具列上按一下**釘選**圖示)，使其在移動游標時仍保持開啟狀態。 您也可以取消停駐工具箱視窗，並將其拖曳至畫面上的任何位置。 您可以使用滑鼠右鍵按一下工具箱工具列並選取其中一個選項，以停駐、取消停駐和隱藏工具箱。
+ 預設已在 Visual Studio IDE 左側摺疊工具箱，您可以將游標移至上方加以顯示。 您可以釘選工具箱 (在工具箱工具列上按一下釘選圖示)，使其在移動游標時仍保持開啟狀態。 您也可以取消停駐工具箱視窗，並將其拖曳至畫面上的任何位置。 您可以使用滑鼠右鍵按一下工具箱工具列並選取其中一個選項，以停駐、取消停駐和隱藏工具箱。
 
  您可以在操作功能表上使用下列命令重新排列工具箱索引標籤中的項目，或加入自訂索引標籤和項目：
 
@@ -58,13 +58,13 @@ ms.locfileid: "72652661"
 
 - **依字母順序排序項目** - 依名稱排序項目。
 
-- **重設工具列** - 還原預設工具箱設定和項目。
+- **重設工具列** - 還原預設的工具箱設定和項目。
 
-- **新增索引標籤** - 新增工具箱索引標籤。
+- **加入索引標籤** - 加入新的工具箱索引標籤。
 
 - **上移** - 向上移動選取的項目。
 
 - **下移** - 向下移動選取的項目。
 
 ## <a name="creating-and-distributing-custom-toolbox-controls"></a>建立及發佈自訂工具箱控制項
- 您可以在 Visual Basic 或 Visual C# 中建立自訂工具箱控制項，也可以使用以 [Windows Presentation Foundation](../extensibility/creating-a-wpf-toolbox-control.md) 或 [Windows Forms](../misc/how-to-create-a-toolbox-control-that-uses-windows-forms.md) 為基礎的專案範本開始作業。 您接著可以將控制項發佈給小組成員，或使用 [工具箱控制項安裝程式](http://download.microsoft.com/download/8/3/6/836657BD-9CCB-4ED4-B9D2-FB769473B284/TCI_whitepaper.docx)將它發佈到網站。
+ 您可以在 Visual Basic 或 Visual C# 中建立自訂工具箱控制項，也可以使用以 [Windows Presentation Foundation](../extensibility/creating-a-wpf-toolbox-control.md) 或 [Windows Form](../misc/how-to-create-a-toolbox-control-that-uses-windows-forms.md) 為基礎的專案範本開始作業。 您接著可以將控制項發佈給小組成員，或使用 [工具箱控制項安裝程式](http://www.unicode.org/versions/Unicode5.2.0/ch04.pdf)將它發佈到網站。

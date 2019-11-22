@@ -8,21 +8,21 @@ ms.assetid: 41981ad6-673e-492e-b739-9863b14157b1
 caps.latest.revision: 26
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 0e86364641b477c7b4d8d919cb78afb925f7c27e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 266c4fd418b71c61391ac3b9b20ac93e5c77428c
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72660509"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74302547"
 ---
 # <a name="making-coded-ui-tests-wait-for-specific-events-during-playback"></a>讓自動程式化 UI 測試在播放期間等候特定事件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 在自動程式化 UI 測試播放中，您可以指示測試等待發生特定事件 (例如出現視窗、進度列消失等)。 若要這樣做，請使用下表所述的適當 UITestControl.WaitForControlXXX() 方法。 如需使用 <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlEnabled%2A> 方法等待啟用控制項的自動程式化 UI 測試範例，請參閱[逐步解說：建立、編輯和維護自動程式化 UI 測試](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)。
 
- **Requirements**
+ **需求**
 
- Visual Studio 企業版
+ Visual Studio Enterprise
 
 > [!TIP]
 > 您也可以使用自動程式化 UI 測試編輯器，以新增動作之前的延遲。 如需詳細資訊，請參閱[如何：使用自動程式化 UI 測試編輯器，在 UI 動作前插入延遲](https://msdn.microsoft.com/library/509f8ef7-e105-4049-b11b-d64549e055b0)。
@@ -35,7 +35,7 @@ ms.locfileid: "72660509"
 
  <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlEnabled%2A>
 
- 當精靈藉由呼叫伺服器來執行輸入的一些非同步驗證時，等候啟用控制項。 例如，您可以命令方法等候精靈的 [下一步] 按鈕啟用 ()。 如需此方法的範例，請參閱[逐步解說：建立、編輯和維護自動程式化 UI 測試](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)。
+ 當精靈藉由呼叫伺服器來執行輸入的一些非同步驗證時，等候啟用控制項。 例如，您可以命令方法等候啟用精靈的 [**下一步**] 按鈕 ()。 如需此方法的範例，請參閱[逐步解說：建立、編輯和維護自動程式化 UI 測試](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)。
 
  <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlExist%2A>
 
@@ -47,7 +47,7 @@ ms.locfileid: "72660509"
 
  <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlPropertyEqual%2A>
 
- 等候控制項的指定屬性具有給定值。 例如，等候狀態文字變更為 [完成]。
+ 等候控制項的指定屬性具有給定值。 例如，等候狀態文字變更為 [**完成**]。
 
  <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlPropertyNotEqual%2A>
 
@@ -73,7 +73,7 @@ statusText.WaitForControlCondition(IsStatusDone);
 
  <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForCondition%2A>
 
- 所有先前的方法都是 UITestControl 的執行個體方法。 此方法是靜態方法。 這個方法也會等候指定的述詞成為 `true`，但可用於多個控制項上的複雜等候作業 (例如 OR 條件)。 例如，您可以等到狀態文字變成 [成功] 或直到出現錯誤訊息，如下列程式碼所示：
+ 所有先前的方法都是 UITestControl 的執行個體方法。 此方法是靜態方法。 這個方法也會等候指定的述詞成為 `true`，但可用於多個控制項上的複雜等候作業 (例如 OR 條件)。 比方說，您可以等到狀態文字變成 [**成功**] 或直到出現錯誤訊息，如下列程式碼所示：
 
 ```csharp
 
@@ -109,7 +109,7 @@ UITestControl.WaitForCondition<UITestControl[]>(new UITestControl[] { statusText
 
  **指引**
 
- 如需詳細資訊，請參閱[使用 Visual Studio 2012 測試持續傳遞 – 第 5 章：自動化系統測試 (英文)](http://go.microsoft.com/fwlink/?LinkID=255196)
+ 如需詳細資訊，請參閱[使用 Visual Studio 2012 測試持續傳遞 – 第 5 章：自動化系統測試 (英文)](https://go.microsoft.com/fwlink/?LinkID=255196)
 
-## <a name="see-also"></a>請參閱
- [使用 UI 自動化來測試您的程式碼](../test/use-ui-automation-to-test-your-code.md)[建立](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate)自動程式化 ui 測試[逐步解說：建立、編輯和維護](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)自動程式化 UI 測試的自動程式化 ui 測試[剖析](../test/anatomy-of-a-coded-ui-test.md)[支援自動程式化 ui 測試和動作的設定和平臺錄製](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)[如何：使用自動程式化 Ui 測試編輯器，在 UI 動作前插入延遲](https://msdn.microsoft.com/library/509f8ef7-e105-4049-b11b-d64549e055b0)
+## <a name="see-also"></a>另請參閱
+ [使用 UI 自動化來測試您的程式碼](../test/use-ui-automation-to-test-your-code.md)[建立](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate)自動程式化 ui 測試[逐步解說：建立、編輯及維護](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)自動程式化 UI 測試的自動程式化 UI 測試結構自動[程式化 ui 測試和動作記錄](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)[的](../test/anatomy-of-a-coded-ui-test.md)設定和平臺作法：使用自動程式[代碼 ui 測試編輯器，在 UI 動作前插入延遲](https://msdn.microsoft.com/library/509f8ef7-e105-4049-b11b-d64549e055b0)

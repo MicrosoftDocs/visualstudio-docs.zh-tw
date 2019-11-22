@@ -15,26 +15,26 @@ caps.latest.revision: 43
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: ddce137ebdf2cff0e029a1cbe8551c7437c58386
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 60813fcce28c71c91a3e0c2af9889261c8897a99
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72671679"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74301411"
 ---
 # <a name="how-to-create-a-domain-specific-language-solution"></a>如何：建立網域指定的語言方案
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 特定領域語言（DSL）是使用特製化的 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 解決方案所建立。
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>先決條件
  開始進行此程式之前，您必須先安裝下列元件：
 
 |||
 |-|-|
-|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185579](http://go.microsoft.com/fwlink/?LinkID=185579)|
-|[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185580](http://go.microsoft.com/fwlink/?LinkID=185580)|
-|Visual Studio Visualization and Modeling SDK|[http://go.microsoft.com/fwlink/?LinkID=185581](http://go.microsoft.com/fwlink/?LinkID=185581)|
+|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185579](https://go.microsoft.com/fwlink/?LinkID=185579)|
+|[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185580](https://go.microsoft.com/fwlink/?LinkID=185580)|
+|Visual Studio Visualization and Modeling SDK|[http://go.microsoft.com/fwlink/?LinkID=185581](https://go.microsoft.com/fwlink/?LinkID=185581)|
 
 ## <a name="creating-a-domain-specific-language-solution"></a>建立特定領域語言方案
 
@@ -50,7 +50,7 @@ ms.locfileid: "72671679"
 
    4. 按一下 [**網域指定的語言設計**工具]。
 
-   5. 在 [**名稱**] 方塊中，輸入解決方案的名稱。 按一下 [確定]。
+   5. 在 [**名稱**] 方塊中，輸入解決方案的名稱。 按一下 [**確定**]。
 
        **定義域指定的語言設計工具 Wizard**隨即出現。
 
@@ -69,7 +69,7 @@ ms.locfileid: "72671679"
 
    - 如果您已在先前的實驗性 Dsl 中使用尚未完整安裝的副檔名，您可以使用 [**重設實驗實例**] 工具將其清除，這可在 [[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] SDK] 功能表中找到。
 
-   - 如果您的電腦已完整安裝使用此副檔名的另一個 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 延伸模組，請考慮將它卸載。 在 [**工具**] 功能表上，按一下 [**擴充管理員**]。
+   - 如果您的電腦已完整安裝使用此副檔名的另一個 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 延伸模組，請考慮將它卸載。 在 [工具]功能表上，按一下 [擴充管理員]。
 
 4. 檢查並視需要調整 wizard 其餘頁面中的欄位。 當您對設定感到滿意時，請按一下 **[完成]** 。 如需設定的詳細資訊，請參閱[DSL 設計工具 Wizard 頁面](#settings)。
 
@@ -106,7 +106,7 @@ ms.locfileid: "72671679"
 
      \-或-
 
-- 如果您的電腦已完整安裝使用此副檔名的 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 延伸模組，請將它卸載。 在 [**工具**] 功能表上，按一下 [**擴充管理員**]。
+- 如果您的電腦已完整安裝使用此副檔名的 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 延伸模組，請將它卸載。 在 [工具]功能表上，按一下 [擴充管理員]。
 
 ### <a name="product-settings-page"></a>[產品設定] 頁面
  **新的特定領域語言所屬的產品名稱是什麼？**
@@ -127,7 +127,7 @@ ms.locfileid: "72671679"
 
  **使用現有的強式名稱金鑰**如果您想要整合 DSL 與另一個元件，請使用此選項。
 
- 如需強式命名的詳細資訊，請參閱[建立和使用強式名稱的元件](http://go.microsoft.com/fwlink/?LinkId=186073)。
+ 如需強式命名的詳細資訊，請參閱[建立和使用強式名稱的元件](https://go.microsoft.com/fwlink/?LinkId=186073)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
  [如何定義特定領域語言的](../modeling/how-to-define-a-domain-specific-language.md)[網域特定語言工具詞彙](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

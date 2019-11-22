@@ -14,20 +14,20 @@ caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5817943ebca51433e64ae3b549af76522992f018
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ce96be60126f5693bfb4ba504a756e0ce76b0b2d
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68158682"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74301248"
 ---
 # <a name="da0005-frequent-gc2-collections"></a>DA0005：常見的 GC2 集合
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 RuleId |DA0005 |  
-|類別目錄 |.NET Framework 使用方式 |  
-|程式碼剖析方法 |.NET 記憶體 |  
-|訊息 |有許多物件會收集在層代 2 記憶體回收。 |  
+|Category |。NET Framework 使用方式 |  
+|分析方法 |。網路記憶體 |  
+|訊息 |您的許多物件都是在層代2垃圾收集中收集的。 |  
 |訊息類型 |警告 |  
   
 ## <a name="cause"></a>原因  
@@ -38,9 +38,9 @@ RuleId |DA0005 |
   
  第 0 代中的物件通常會以頻繁且非常有效率的方式回收。 第 1 代中的物件則不會以太頻繁也不會太有效率的方式回收。 最後，在第 2 代中長時間執行的物件則不會太常回收。 第 2 代回收，是執行完整的記憶體回收，也是最耗費資源的作業。  
   
- 發生太高比例的第 2 代記憶體回收時，就會引發此規則。 如果有太多存留期相當短的物件在第 1 代回收之後存留下來，但接著就能在第 2 代回收中回收，則記憶體管理的成本很可能會變得過高。 如需詳細資訊，請參閱 MSDN 網站上 Rico Mariani's Performance Tidbits 的[中間存留期危機 (英文)](http://go.microsoft.com/fwlink/?LinkId=177835) 文章。  
+ 發生太高比例的第 2 代記憶體回收時，就會引發此規則。 如果有太多存留期相當短的物件在第 1 代回收之後存留下來，但接著就能在第 2 代回收中回收，則記憶體管理的成本很可能會變得過高。 如需詳細資訊，請參閱 MSDN 網站上 Rico Mariani's Performance Tidbits 的[中間存留期危機 (英文)](https://go.microsoft.com/fwlink/?LinkId=177835) 文章。  
   
 ## <a name="how-to-investigate-a-warning"></a>如何調查警告  
  檢閱 [.NET 記憶體資料檢視](../profiling/dotnet-memory-data-views.md)報表，以了解應用程式的記憶體配置模式。 使用[物件存留期檢視](../profiling/object-lifetime-view.md)可判斷程式的哪些資料物件會存留到第 2 代，然後從該處回收。 使用[配置檢視](../profiling/dotnet-memory-allocations-view.md)可判斷導致這些配置的執行路徑。  
   
- 如需如何改善記憶體回收效能的詳細資訊，請參閱 Microsoft 網站上的[記憶體回收行程的基礎概念和效能提示 (英文)](http://go.microsoft.com/fwlink/?LinkId=148226)。 如需有關自動記憶體回收之額外負荷的詳細資訊，請參閱[大型物件堆積的面目 (英文)](http://go.microsoft.com/fwlink/?LinkId=177836)。
+ 如需如何改善記憶體回收效能的詳細資訊，請參閱 Microsoft 網站上的[記憶體回收行程的基礎概念和效能提示 (英文)](https://go.microsoft.com/fwlink/?LinkId=148226)。 如需有關自動記憶體回收之額外負荷的詳細資訊，請參閱[大型物件堆積的面目 (英文)](https://go.microsoft.com/fwlink/?LinkId=177836)。

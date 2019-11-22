@@ -9,12 +9,12 @@ caps.latest.revision: 4
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 749763a9a2bb742bb3670050010f497c5c15fba4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 4917fc81f439ef0185a753fb1c4c85e460eb7681
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72668602"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297733"
 ---
 # <a name="msi-and-vsix-deployment-of-a-dsl"></a>DSL 的 MSI 和 VSIX 部署
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,10 +27,10 @@ ms.locfileid: "72668602"
 |方法|優點|
 |------------|--------------|
 |VSX （[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 延伸模組）|非常容易部署：從 DslPackage 專案複製並執行 **.vsix**檔案。<br /><br /> 如需詳細資訊，請參閱[使用 VSX 安裝和卸載 DSL](#Installing)。|
-|MSI （安裝程式檔案）|-允許使用者按兩下 DSL 檔案以開啟 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。<br />-將圖示與目的電腦中的 DSL 檔案類型產生關聯。<br />-將 XSD （XML 架構）與 DSL 檔案類型產生關聯。 這可避免在將檔案載入 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 時出現警告。<br /><br /> 您必須將安裝專案新增至您的解決方案，才能建立 MSI。<br /><br /> 如需詳細資訊，請參閱[使用 MSI 檔案部署 DSL](#msi)。|
+|MSI （安裝程式檔案）|-允許使用者按兩下 DSL 檔案以開啟 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。<br />-將圖示與目的電腦中的 DSL 檔案類型產生關聯。<br />-將 XSD （XML 架構）與 DSL 檔案類型產生關聯。 這可避免在將檔案載入 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]時出現警告。<br /><br /> 您必須將安裝專案新增至您的解決方案，才能建立 MSI。<br /><br /> 如需詳細資訊，請參閱[使用 MSI 檔案部署 DSL](#msi)。|
 
 ## <a name="Installing"></a>使用 VSX 安裝和卸載 DSL
- 當您使用此方法安裝 DSL 時，使用者可以從 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中開啟 DSL 檔案，但無法從 Windows Explorer 開啟該檔案。
+ 當您使用此方法安裝 DSL 時，使用者可以從 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]中開啟 DSL 檔案，但無法從 Windows Explorer 開啟該檔案。
 
 #### <a name="to-install-a-dsl-by-using-the-vsx"></a>若要使用 VSX 安裝 DSL
 
@@ -38,7 +38,7 @@ ms.locfileid: "72668602"
 
     1. 在**方案總管**中，以滑鼠右鍵按一下**DslPackage**專案，然後按一下 [**在 Windows Explorer 中開啟資料夾**]。
 
-    2. 找出 **\* \\ yourproject。的 bin \\** **。DslPackage .vsix**
+    2. 找出 **\*\\yourproject。的 bin\\** **。DslPackage .vsix**
 
 2. 將 .vsix 檔案複製到您要安裝 DSL 的目的電腦 **。** 這可以是您自己的電腦或另一部電腦。
 
@@ -56,13 +56,13 @@ ms.locfileid: "72668602"
 
 #### <a name="to-uninstall-a-dsl-that-was-installed-by-using-vsx"></a>卸載使用 VSX 安裝的 DSL
 
-1. 在 [**工具**] 功能表上，按一下 [**擴充管理員**]。
+1. 在 [工具]功能表上，按一下 [擴充管理員]。
 
 2. 展開 [已安裝的擴充功能]。
 
 3. 選取用來定義 DSL 的延伸模組，然後按一下 [**卸載**]。
 
-   在很少見的情況下，故障的擴充功能無法載入並且會在錯誤視窗中建立報告，但不會顯示在擴充管理員中。 在此情況下，您可以藉由從下列位置刪除檔案來移除擴充功能：
+   在很少見的情況下，錯誤的擴充功能會無法載入，並且在錯誤視窗中建立報表，但不會顯示在擴充管理員中。 在此情況下，您可以藉由從下列位置刪除檔案來移除擴充功能：
 
    *LocalAppData* **\Microsoft\VisualStudio\10.0\Extensions**
 
@@ -71,7 +71,7 @@ ms.locfileid: "72668602"
 
  如需 MSI 檔案和其他部署選項的詳細資訊，請參閱[部署應用程式、服務和元件](../deployment/deploying-applications-services-and-components.md)。
 
- 若要建立 MSI，您可以將安裝專案新增至 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 解決方案。 建立安裝專案最簡單的方法是使用 CreateMsiSetupProject.tt 範本，您可以從[VMSDK 網站](http://go.microsoft.com/fwlink/?LinkID=186128)下載。
+ 若要建立 MSI，您可以將安裝專案新增至 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 解決方案。 建立安裝專案最簡單的方法是使用 CreateMsiSetupProject.tt 範本，您可以從[VMSDK 網站](https://go.microsoft.com/fwlink/?LinkID=186128)下載。
 
 #### <a name="to-deploy-a-dsl-in-an-msi"></a>在 MSI 中部署 DSL
 
@@ -79,7 +79,7 @@ ms.locfileid: "72668602"
 
    1. 開啟 DslPackage\source.extension.tt
 
-   2. 在 `<SupportedProducts>` 之前插入下列這一行：
+   2. 在 `<SupportedProducts>`之前插入下列這一行：
 
        ```
        <InstalledByMsi>true</InstalledByMsi>
@@ -99,17 +99,17 @@ ms.locfileid: "72668602"
 
    - 在 [**建立**] 功能表上，開啟 [ **Configuration Manager**]，然後選取您要建立的設定，例如 [**發行**] 或 [ **Debug**]。
 
-4. 移至 [[視覺效果和模型 SDK](http://go.microsoft.com/fwlink/?LinkID=186128)] 首頁，然後從 [**下載**] 索引標籤下載**CreateMsiSetupProject.tt**。
+4. 移至 [[視覺效果和模型 SDK](https://go.microsoft.com/fwlink/?LinkID=186128)] 首頁，然後從 [**下載**] 索引標籤下載**CreateMsiSetupProject.tt**。
 
 5. 將**CreateMsiSetupProject.tt**新增至您的 Dsl 專案。
 
     [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 將會建立名為**CreateMsiSetupProject. vdproj**的檔案。
 
-6. 在 Windows Explorer 中，將 Dsl \\ *. vdproj 複製到名為 Setup 的新資料夾。
+6. 在 Windows Explorer 中，將 Dsl\\*. vdproj 複製到名為 Setup 的新資料夾。
 
     （如有需要，您現在可以從 Dsl 專案中排除 CreateMsiSetupProject.tt）。
 
-7. 在**方案總管**中，以現有專案的形式新增**安裝程式 \* \\ vdproj** 。
+7. 在**方案總管**中，以現有專案的形式新增**安裝程式 \*\\vdproj** 。
 
 8. 在 [**專案**] 功能表上，按一下 [專案相依性 **]** 。
 
@@ -129,7 +129,7 @@ ms.locfileid: "72668602"
 
     - 當您按兩下該檔案時，[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 會啟動，並在 DSL 編輯器中開啟 DSL 檔案。
 
-    如果您想要的話，也可以手動建立安裝專案，而不是使用文字模板。 如需包含此程式的逐步解說，請參閱[視覺效果和模型化 SDK 實驗室](http://go.microsoft.com/fwlink/?LinkId=208878)的第5章。
+    如果您想要的話，也可以手動建立安裝專案，而不是使用文字模板。 如需包含此程式的逐步解說，請參閱[視覺效果和模型化 SDK 實驗室](https://go.microsoft.com/fwlink/?LinkId=208878)的第5章。
 
 #### <a name="to-uninstall-a-dsl-that-was-installed-from-an-msi"></a>卸載從 MSI 安裝的 DSL
 
