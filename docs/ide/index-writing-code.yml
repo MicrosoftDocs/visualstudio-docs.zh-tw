@@ -1,23 +1,23 @@
 ### YamlMime:Landing
-title: 在 Visual Studio 中組織和編輯程式碼
-summary: 瞭解如何處理程式碼專案、使用程式碼編輯器功能，以及維護一致的程式碼樣式。
+title: Organize and edit code in Visual Studio
+summary: Learn about working with code projects, using code editor features, and maintaining consistent code style.
 metadata:
   title: 程式碼編輯器功能
-  description: 瞭解 Visual Studio 中的程式碼編輯功能。
+  description: Learn about code editing features in Visual Studio.
   ms.prod: visual-studio-windows
   ms.technology: vs-ide-general
   ms.topic: landing-page
-  author: gewarren
-  ms.author: gewarren
+  author: jillre
+  ms.author: jillfra
   ms.date: 10/15/2019
-  ms.openlocfilehash: 8cecddb4c8b9a49d56a6f133b751be53302b4347
-  ms.sourcegitcommit: 20325d85cd74906f5f30668133bd11a40f229b0c
+  ms.openlocfilehash: 797df026fb9873c5f50e39fe281e0c9a11688b8f
+  ms.sourcegitcommit: b04c603ce73b993d042ebdf7f3722cf4fe2ef7f4
   ms.translationtype: MT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 11/14/2019
-  ms.locfileid: "74087254"
+  ms.lasthandoff: 11/22/2019
+  ms.locfileid: "74316434"
 landingContent:
-- title: 開啟或建立專案
+- title: Open or create a project
   linkLists:
   - linkListType: tutorial
     links:
@@ -29,7 +29,7 @@ landingContent:
     links:
     - text: 使用 Visual Studio 而不使用專案或方案
       url: develop-code-in-visual-studio-without-projects-or-solutions.md
-- title: 使用編輯功能
+- title: Use editing features
   linkLists:
   - linkListType: overview
     links:
@@ -39,15 +39,15 @@ landingContent:
       url: navigating-code.md
     - text: 產生及修正程式嗎
       url: code-generation-in-visual-studio.md
-    - text: 使用 IntelliSense 來完成程式碼
+    - text: Use IntelliSense for code completion
       url: using-intellisense.md
-    - text: 管理程式碼樣式喜好設定
+    - text: Manage code style preferences
       url: code-styles-and-code-cleanup.md
     - text: 程式碼分析
       url: ../code-quality/roslyn-analyzers-overview.md
     - text: IntelliCode
       url: /visualstudio/intellicode/intellicode-visual-studio
-- title: 開始使用程式設計語言
+- title: Get started with programming languages
   linkLists:
   - linkListType: tutorial
     links:
