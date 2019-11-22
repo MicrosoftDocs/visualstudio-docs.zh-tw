@@ -16,17 +16,17 @@ caps.latest.revision: 30
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 37bbdfd00778575755379fc442dfa9be3f90eeb7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: de27d99d6bccab46734399e524f70a731a36aa1b
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72651308"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297884"
 ---
 # <a name="how-to-use-the-keyboard-exclusively"></a>如何：以獨佔模式使用鍵盤
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 提供許多預設快速鍵組合，讓您在整合式開發環境 (IDE) 內輕鬆巡覽和撰寫程式碼。 如需 Visual Studio 中使用的快速鍵完整清單，請參閱[預設鍵盤快速鍵](../../ide/default-keyboard-shortcuts-in-visual-studio.md)。 如需適用於其他 Microsoft 產品的鍵盤快速鍵詳細資訊，請參閱 [http://www.microsoft.com/enable/products/keyboard.aspx](http://go.microsoft.com/fwlink/?LinkID=40400)。
+[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 提供許多預設快速鍵組合，讓您在整合式開發環境 (IDE) 內輕鬆巡覽和撰寫程式碼。 如需 Visual Studio 中使用的快速鍵完整清單，請參閱[預設鍵盤快速鍵](../../ide/default-keyboard-shortcuts-in-visual-studio.md)。 如需適用於其他 Microsoft 產品的鍵盤快速鍵詳細資訊，請參閱 [http://www.microsoft.com/enable/products/keyboard.aspx](https://go.microsoft.com/fwlink/?LinkID=40400)。
 
 > [!NOTE]
 > 根據您目前使用的設定或版本，您所看到的對話方塊與功能表命令可能會與 [說明] 中描述的不同。 若要變更設定，請從 [ **工具** ] 功能表中選取 [ **匯入和匯出設定** ]。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)

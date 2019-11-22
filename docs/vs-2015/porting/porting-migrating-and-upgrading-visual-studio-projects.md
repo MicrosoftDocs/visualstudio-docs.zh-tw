@@ -19,12 +19,12 @@ caps.latest.revision: 108
 author: kraigb
 ms.author: kraigb
 manager: jillfra
-ms.openlocfilehash: 0a01b3d53fa3be4bb48000503c7fd43164fa932a
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 9aa3b7d6a9d94caeb4ac05d4cbb21ad31cc791e6
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65696720"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300343"
 ---
 # <a name="porting-migrating-and-upgrading-visual-studio-projects"></a>Porting, Migrating, and Upgrading Visual Studio Projects
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ ms.locfileid: "65696720"
 
 |專案類型|相容性|
 |---------------------|-------------------|
-|通用 Windows 平台應用程式|若要安裝通用 Windows 應用程式工具，請在 Visual Studio 安裝程式中，選取 [自訂]  或 [修改] ，然後選取 [通用 Windows 應用程式開發工具] 。<br /><br /> Windows 10 的通用 Windows 平台 (UWP) 應用程式只能在 Windows 10 或 [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)] 上的 [!INCLUDE[win81](../includes/win81-md.md)]受支援。|
+|通用 Windows 平台應用程式|若要安裝通用 Windows 應用程式工具，請在 Visual Studio 安裝程式中，選取 [自訂]  或 [修改]  ，然後選取 [通用 Windows 應用程式開發工具]  。<br /><br /> Windows 10 的通用 Windows 平台 (UWP) 應用程式只能在 Windows 10 或 [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)] 上的 [!INCLUDE[win81](../includes/win81-md.md)]受支援。|
 |Windows 市集應用程式|Windows 市集應用程式開發，包含以 Windows 8.1 和 Windows Phone 8.1 為目標的通用應用程式都受 [!INCLUDE[win81](../includes/win81-md.md)] 和 Windows 10 支援。 現有的 [!INCLUDE[win8](../includes/win8-md.md)] 專案可以繼續接收服務，但是無法建立新的 [!INCLUDE[win8](../includes/win8-md.md)] 專案。 [!INCLUDE[win81](../includes/win81-md.md)] 專案只能取決於特定的參考類型。 如需詳細資訊，請參閱[管理專案中的參考](../ide/managing-references-in-a-project.md)。 **注意：** 使用 [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)] 或 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] 建立的 [!INCLUDE[win81](../includes/win81-md.md)] 專案無法在 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] 中開啟。 這是因為使用 [!INCLUDE[win81](../includes/win81-md.md)] 和 [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)] 建立的 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] 專案是以這些版本為目標，而且 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] 僅支援目標設為 [!INCLUDE[win8](../includes/win8-md.md)] 的 [!INCLUDE[win8](../includes/win8-md.md)]專案。|
 |[!INCLUDE[net_v451](../includes/net-v451-md.md)]|安裝適當的多目標功能套件之後，您可以在 [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)] 和 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] 中建立和使用這些專案。 Visual Studio 2010 SP1 不支援這些專案。|
 |[!INCLUDE[net_v45](../includes/net-v45-md.md)]|您可以在 [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)]、 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] 和 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]中建立和開啟這些專案，但無法在 Visual Studio 2010 SP1 中這麼做。|
@@ -54,14 +54,14 @@ ms.locfileid: "65696720"
 |F#|如果您允許 Visual Studio 升級 Visual Studio 2010 SP1 所建立的專案，則可以在 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] 和 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]中開啟專案。 不過，您無法將舊版 Visual Studio 建立的 Silverlight 專案升級至 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]。 相反地，您必須在 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] 中建立 Silverlight 專案，然後將程式碼複製到其中。 在 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] 中建立的 Silverlight 專案是以 Silverlight 5 為目標。|
 |LightSwitch|如果您允許 Visual Studio 自動升級專案，則只能在 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] 中開啟專案。|
 |本機資料庫快取|[本機資料庫快取] 範本和 [ **設定資料同步處理** ] 對話方塊不包含在 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]中。 如果您已安裝 Microsoft Synchronization Services v1.0，就可以使用 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] 來開啟和執行 [!INCLUDE[vs2010](../includes/vs2010-md.md)] 所建立的專案。不過，如果您想要在 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]中更新這些專案，則必須在程式碼中手動進行所有變更。 或者，您可以繼續使用 [!INCLUDE[vs2010](../includes/vs2010-md.md)] 來維護和更新這些專案。  若要進行新開發，請以 Microsoft Sync Framework 提供的新同步處理模型為目標。 如需相關資訊，請參閱 [Microsoft Sync Framework Developer Center](https://msdn.microsoft.com/sync/default)(Microsoft Sync Framework 開發人員中心)|
-|模型檢視控制器 (MVC) 架構|Visual Studio 2010 SP1 只支援 MVC 2 和 MVC 3， [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] 只支援 MVC 3 和 MVC 4，而 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] 只支援 MVC 4。 如需關於如何從 MVC 2 自動升級到 MVC 3 的詳細資訊，請參閱 [ASP.NET MVC 3 Application Upgrader](http://go.microsoft.com/fwlink/?LinkID=238178) (ASP.NET MVC 3 應用程式升級程式)。 如需關於如何從 MVC 2 手動升級至 MVC 3 的詳細資訊，請參閱 [Upgrading an ASP.NET MVC 2 Project to ASP.NET MVC 3 Tools Update](http://go.microsoft.com/fwlink/?linkid=238178)(將 ASP.NET MVC 2 專案升級至 ASP.NET MVC 3 工具更新)。 如需關於如何從 MVC 3 手動升級至 MVC 4 的詳細資訊，請參閱 [Upgrading an ASP.NET MVC 3 Project to ASP.NET MVC 4](http://www.asp.net/whitepapers/mvc4-release-notes) (將 ASP.NET MVC 3 專案升級至 ASP.NET MVC 4)。 如果您的專案以 .NET Framework 3.5 SP1 為目標，專案必須重定目標為使用 .NET Framework 4。|
+|模型檢視控制器 (MVC) 架構|Visual Studio 2010 SP1 只支援 MVC 2 和 MVC 3， [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] 只支援 MVC 3 和 MVC 4，而 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] 只支援 MVC 4。 如需關於如何從 MVC 2 自動升級到 MVC 3 的詳細資訊，請參閱 [ASP.NET MVC 3 Application Upgrader](https://go.microsoft.com/fwlink/?LinkID=238178) (ASP.NET MVC 3 應用程式升級程式)。 如需關於如何從 MVC 2 手動升級至 MVC 3 的詳細資訊，請參閱 [Upgrading an ASP.NET MVC 2 Project to ASP.NET MVC 3 Tools Update](https://go.microsoft.com/fwlink/?linkid=238178)(將 ASP.NET MVC 2 專案升級至 ASP.NET MVC 3 工具更新)。 如需關於如何從 MVC 3 手動升級至 MVC 4 的詳細資訊，請參閱 [Upgrading an ASP.NET MVC 3 Project to ASP.NET MVC 4](https://docs.microsoft.com/aspnet/whitepapers/mvc4-release-notes) (將 ASP.NET MVC 3 專案升級至 ASP.NET MVC 4)。 如果您的專案以 .NET Framework 3.5 SP1 為目標，專案必須重定目標為使用 .NET Framework 4。|
 |模型化|如果您允許 Visual Studio 自動更新專案，則可以在 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]、 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]或 Visual Studio 2010 SP1 中開啟專案。<br /><br /> 當 Team Foundation 建置模型專案時，它會嘗試驗證專案中的各層。 在 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]中，Team Foundation Build 無法驗證 Visual Studio 2010 SP1 中所建立模型專案的各層。 不過，在 Visual Studio 2010 SP1 中，Team Foundation Build 可以驗證在 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]中建立的模型專案的各層。|
 |MPI/叢集偵錯|如果在執行 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]、 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]或 Visual Studio 2010 SP1 的電腦上有安裝相同版本的執行階段或工具，則在這三個版本的 Visual Studio 中都可以開啟這個專案。|
 |MSI 安裝程式 (.vdproj)|您無法在 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] 中開啟這個專案，因為它不支援該專案類型。 我們建議您使用 InstallShield Limited Edition for Visual Studio (ISLE)，它是直接支援大部分 Windows 平台和應用程式執行階段的免費部署方案。 您也可以使用 ISLE 從 Visual Studio Installer 專案匯入資料和設定。 中修改就能執行。|
 |Office 2007 VSTO|如果您升級專案，以 Office 2013 和 .NET Framework 4 為目標，則可以在 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]、 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]或 Visual Studio 2010 SP1 中開啟這個專案。|
 |Office 2010 VSTO|如果專案是以 .NET Framework 4 為目標，您就可以在 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]、 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]和 Visual Studio 2010 SP1 中開啟專案。 所有其他專案則需要單向升級。|
 |豐富網際網路應用程式|如果您升級專案，則可以在 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]、 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]和 Visual Studio 2010 SP1 中開啟專案。|
-|SharePoint 2007|這個專案無法在 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]中開啟。 不過，如果您手動升級專案至 SharePoint 2010，就可以在 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]、 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]和 Visual Studio 2010 SP1 中開啟專案。 如需如何升級 SharePoint 2007 的詳細資訊，請參閱[從 SharePoint 2007 移轉到 SharePoint 2010 (IT 專業人士適用)](http://go.microsoft.com/fwlink/?LinkId=238224) 和[適用於 SharePoint Server 2010 的 SharePoint 企業版搜尋移轉工具](https://docs.microsoft.com/previous-versions/office/developer/sharepoint-2010/ee556856(v%3Doffice.14)) \(英文\)。|
+|SharePoint 2007|這個專案無法在 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]中開啟。 不過，如果您手動升級專案至 SharePoint 2010，就可以在 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]、 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]和 Visual Studio 2010 SP1 中開啟專案。 如需如何升級 SharePoint 2007 的詳細資訊，請參閱[從 SharePoint 2007 移轉到 SharePoint 2010 (IT 專業人士適用)](https://go.microsoft.com/fwlink/?LinkId=238224) 和[適用於 SharePoint Server 2010 的 SharePoint 企業版搜尋移轉工具](https://docs.microsoft.com/previous-versions/office/developer/sharepoint-2010/ee556856(v%3Doffice.14)) \(英文\)。|
 |SharePoint 2010|您可以在 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]、 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]和 Visual Studio 2010 SP1 中開啟專案。|
 |SketchFlow|如果您允許 Visual Studio 升級專案至 WPF 4.5/Silverlight 5，則可以在 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] 和 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]中開啟專案。|
 |[!INCLUDE[ssKatmai_exp](../includes/sskatmai-exp-md.md)] 資料庫|您可以在 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]、 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]和 Visual Studio 2010 SP1 中開啟專案。 如果您有舊版 SQL Server 建立的資料庫檔案 (.mdf)，則必須將其升級至 [!INCLUDE[sql_Denali_long](../includes/sql-denali-long-md.md)] ，才能搭配 SQL Server Express LocalDB 使用該資料庫檔案，但是該資料庫不再與舊版 SQL Server 相容。 如果您不升級，則在同一台電腦上安裝和使用 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] ，就可以繼續在 [!INCLUDE[ssKatmai_exp](../includes/sskatmai-exp-md.md)] 中使用資料庫。 如需詳細資訊，請參閱[升級 .mdf 檔案](../data-tools/upgrade-dot-mdf-files.md)。|
@@ -87,7 +87,7 @@ ms.locfileid: "65696720"
 ## <a name="troubleshooting-project-compatibility-issues"></a>疑難排解專案相容性問題
  當專案在 [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)] 或 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]中不會開啟時，可執行的某些作業如下：
 
-- 如果您嘗試開啟 [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)] 或 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] 不支援的專案，而且相關聯的 Visual Studio 版本也未安裝，則可能會出現專案類型不支援的訊息，並且 [不支援的專案]  底下的 [檢閱專案和方案變更] 對話方塊可能會顯示專案類型。 若要解決這個問題，請開啟 Windows [ **控制台**] 的 [程式和功能] 頁面，選取 [ **Visual Studio**]，然後選擇 [ **變更**]、[ **修復**]。 然後您就可以安裝遺漏的版本。
+- 如果您嘗試開啟 [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)] 或 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] 不支援的專案，而且相關聯的 Visual Studio 版本也未安裝，則可能會出現專案類型不支援的訊息，並且 [不支援的專案]  底下的 [檢閱專案和方案變更]  對話方塊可能會顯示專案類型。 若要解決這個問題，請開啟 Windows [ **控制台**] 的 [程式和功能] 頁面，選取 [ **Visual Studio**]，然後選擇 [ **變更**]、[ **修復**]。 然後您就可以安裝遺漏的版本。
 
 - 如果您嘗試在 [!INCLUDE[vs_dev12_expwin](../includes/vs-dev12-expwin-md.md)]中開啟桌面應用程式的專案，將會發生錯誤並顯示下列其中一個訊息：「這個版本的 Visual Studio 僅支援 [!INCLUDE[win81](../includes/win81-md.md)] 應用程式」或「這個專案與目前的 Visual Studio 版本不相容」。 [!INCLUDE[vs_dev12_expwin](../includes/vs-dev12-expwin-md.md)] 只能用於開發、測試和部署針對 Windows 8.1 所設計的 Windows 市集應用程式。 若要開啟桌面應用程式專案，您必須使用支援該專案類型的 Visual Studio 版本。
 
@@ -99,7 +99,7 @@ ms.locfileid: "65696720"
 
 - 如果您使用的是 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] ，而您想要開啟 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]所建立的專案時，您或許可以自訂專案系統，將 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]的功能併入。 如需此作法的詳細資訊，請參閱[讓自訂專案成為版本感知](../misc/making-custom-projects-version-aware.md)。
 
-  如需其他疑難排解資訊，請參閱 [Visual Studio 2013 相容性](http://support.microsoft.com/kb/2863286) 知識庫文章。
+  如需其他疑難排解資訊，請參閱 [Visual Studio 2013 相容性](https://support.microsoft.com/help/2863286/roundtrip-issues-for-visual-studio-2012-and-visual-studio-2013-preview) 知識庫文章。
 
 ## <a name="file"></a> 檔案
  下列清單列出 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] 是否支援每個檔案類型，是否可以同時在 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] 和 Visual Studio 2010 SP1 中開啟檔案，以及是否必須進行修改以確保相容性。
@@ -129,6 +129,6 @@ ms.locfileid: "65696720"
 |程式碼檢閱和我的工作|如果您將 [!INCLUDE[esprfound](../includes/esprfound-md.md)] 的用戶端連接至 [!INCLUDE[vstsTfsRosarioLong](../includes/vststfsrosariolong-md.md)]，將無法使用 [程式碼檢閱] 和 [我的工作] 功能。|
 |[!INCLUDE[vs_dev11_expwin_long](../includes/vs-dev11-expwin-long-md.md)]|您無法使用 64 位元環境 (例如 MSBuild 或 [!INCLUDE[esprbuild](../includes/esprbuild-md.md)] ) 來建置您在 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 中建立的 [!INCLUDE[vs_dev12_expwin](../includes/vs-dev12-expwin-md.md)]應用程式。|
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [讓自訂專案成為版本感知](../misc/making-custom-projects-version-aware.md)

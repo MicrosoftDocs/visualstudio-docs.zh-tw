@@ -11,17 +11,17 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 8710ed0a35b483601a166c4644112b1ba7e4feaf
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 8e1dbe50f3161ca80b4eabe63cbf9264210e9658
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65705753"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300309"
 ---
 # <a name="advanced-settings-dialog-box-concurrency-visualizer"></a>進階設定對話方塊 (並行視覺化檢視)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-使用並行視覺化檢視中的 [進階設定] 對話方塊，您可以控制收集追蹤的方式。  此對話方塊提供適用於符號、Just My Code、緩衝處理、篩選、CLR 事件、標記、提供者及檔案的索引標籤。  
+使用並行視覺化檢視中的 [進階設定]  對話方塊，您可以控制收集追蹤的方式。  此對話方塊提供適用於符號、Just My Code、緩衝處理、篩選、CLR 事件、標記、提供者及檔案的索引標籤。  
   
 ## <a name="symbols"></a>符號  
  並行視覺化檢視會使用與 Visual Studio 偵錯工具相同的符號設定。 並行視覺化檢視會使用設定，來解析與效能資料相關聯的呼叫堆疊。  並行視覺化檢視會在處理追蹤時，存取設定頁面中所指定的符號伺服器。  透過網路存取此資料時，追蹤處理速度就會變慢。  若要降低解析符號所需的時間量，您可以本機快取符號。 如果已經下載符號，Visual Studio 將從本機快取中載入它們。  
@@ -32,7 +32,7 @@ ms.locfileid: "65705753"
  在收集追蹤時，會將 .exe 和 .dll 檔案的路徑儲存於追蹤檔中。  變更此設定不會影響任何先前收集的追蹤。  
   
 ## <a name="buffering"></a>緩衝  
- 並行視覺化檢視會在收集追蹤時，使用Windows 事件追蹤 (ETW)。  ETW 會在儲存事件時使用各種緩衝區。  預設的 ETW 緩衝區設定並非適用所有案例，在某些情況下，可能會導致像是遺失事件等問題。  您可以使用 [緩衝] 索引標籤來設定 ETW 緩衝區設定。 如需詳細資訊，請參閱[事件追蹤](http://go.microsoft.com/fwlink/?LinkId=234579)和 [EVENT_TRACE_PROPERTIES 結構 (英文)](http://go.microsoft.com/fwlink/?LinkId=234580)。  
+ 並行視覺化檢視會在收集追蹤時，使用Windows 事件追蹤 (ETW)。  ETW 會在儲存事件時使用各種緩衝區。  預設的 ETW 緩衝區設定並非適用所有案例，在某些情況下，可能會導致像是遺失事件等問題。  您可以使用 [緩衝] 索引標籤來設定 ETW 緩衝區設定。 如需詳細資訊，請參閱[事件追蹤](https://go.microsoft.com/fwlink/?LinkId=234579)和 [EVENT_TRACE_PROPERTIES 結構 (英文)](https://go.microsoft.com/fwlink/?LinkId=234580)。  
   
 ## <a name="filter"></a>篩選器  
  在 [篩選] 索引標籤上，您可以選取並行視覺化檢視所收集的事件集合。 選取事件子集會限制要在報表中顯示的資料類型、縮減每個追蹤的大小，並減少處理追蹤所需的時間。  
@@ -41,10 +41,10 @@ ms.locfileid: "65705753"
  由 Common Language Runtime (CLR) 所產生的事件，讓並行視覺化檢視能夠解析 Managed 呼叫堆疊。  如果您停用 CLR 事件的收集，將縮減追蹤大小，但將無法解析部分呼叫堆疊。  如此一來，可能會對某些 CPU 執行緒活動進行不正確的分類。  
   
 ### <a name="collect-for-native-processes"></a>針對原生處理序進行收集  
- 根據預設，由於通常不需針對原生處理器收集 CLR 事件，因此，只有在對 Managed 處理序進行程式碼剖析時，才會收集這類事件。  在某些情況下 (例如，當原生處理序裝載 CLR 時)，您可能必須針對原生處理序收集 CLR 事件。  如果是這種情況，請選取 [收集原生處理序] 核取方塊。  
+ 根據預設，由於通常不需針對原生處理器收集 CLR 事件，因此，只有在對 Managed 處理序進行程式碼剖析時，才會收集這類事件。  在某些情況下 (例如，當原生處理序裝載 CLR 時)，您可能必須針對原生處理序收集 CLR 事件。  如果是這種情況，請選取 [收集原生處理序]  核取方塊。  
   
 ### <a name="disable-rundown-events"></a>停用取消事件  
- CLR 會從下列兩個提供者產生事件︰執行階段和取消。  如果您想要收集 CLR 執行階段事件，但要避免收集取消事件，請選取 [停用取消事件] 核取方塊。  這可縮減因收集而產生的追蹤檔大小，但可能無法解析某些堆疊。 如需詳細資訊，請參閱 [CLR ETW 提供者](https://msdn.microsoft.com/library/0beafad4-b2c8-47f4-b342-83411d57a51f)。  
+ CLR 會從下列兩個提供者產生事件︰執行階段和取消。  如果您想要收集 CLR 執行階段事件，但要避免收集取消事件，請選取 [停用取消事件]  核取方塊。  這可縮減因收集而產生的追蹤檔大小，但可能無法解析某些堆疊。 如需詳細資訊，請參閱 [CLR ETW 提供者](https://msdn.microsoft.com/library/0beafad4-b2c8-47f4-b342-83411d57a51f)。  
   
 ### <a name="sample-events"></a>取樣事件  
  您可以使用取樣事件來收集與執行緒執行相關聯的呼叫堆疊。 針對在目前處理序中執行的執行緒，大約每毫秒會收集這些事件一次。 如果您停用取樣事件的收集，就能縮減所收集的追蹤大小，但您無法檢視任何與執行緒執行相關聯的呼叫堆疊。  
@@ -68,13 +68,13 @@ ms.locfileid: "65705753"
  您可以使用重要性層級清單來篩選出重要性或 ETW 層級小於指定值的事件。  
   
 ### <a name="configuring-an-existing-provider"></a>設定現有的提供者  
- 若要編輯與現有提供者相關聯的設定，在清單中選取它，然後選擇 [編輯提供者] 按鈕。  您可以變更名稱、GUID 和篩選設定。  
+ 若要編輯與現有提供者相關聯的設定，在清單中選取它，然後選擇 [編輯提供者]  按鈕。  您可以變更名稱、GUID 和篩選設定。  
   
 ### <a name="filter-marker-data-out-of-concurrency-visualizer-reports"></a>篩選出並行視覺化檢視報表的標記資料  
  如果您不想要讓特定提供者的資料出現在未來的追蹤中，請清除您想要移除之提供者旁邊的核取方塊。  
   
 ## <a name="files"></a>檔案  
- 在 [檔案] 索引標籤上，您可以指定每次收集追蹤時要儲存追蹤檔的目錄。  並行視覺化檢視會針對它所收集的每個追蹤產生四個檔案：  
+ 在 [檔案]  索引標籤上，您可以指定每次收集追蹤時要儲存追蹤檔的目錄。  並行視覺化檢視會針對它所收集的每個追蹤產生四個檔案：  
   
 - 核心模式的事件追蹤記錄 (ETL) 檔案 (*.kernel.etl)  
   
@@ -84,8 +84,8 @@ ms.locfileid: "65705753"
   
 - 並行視覺化檢視的追蹤檔案 (*.CVTrace)  
   
-  這兩個 ETL 檔案會儲存原始追蹤資料，而這兩個並行視覺化檢視檔案會儲存已處理的資料。  在處理追蹤之後，通常不會用到原始的 ETL 檔案。  選取 [分析後刪除事件追蹤記錄 (ETL) 檔案] 核取方塊，可減少儲存在磁碟上的追蹤資料量。  
+  這兩個 ETL 檔案會儲存原始追蹤資料，而這兩個並行視覺化檢視檔案會儲存已處理的資料。  在處理追蹤之後，通常不會用到原始的 ETL 檔案。  選取 [分析後刪除事件追蹤記錄 (ETL) 檔案]  核取方塊，可減少儲存在磁碟上的追蹤資料量。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [Just My Code](../profiling/just-my-code-threads-view.md)   
  [並行視覺化檢視標記](../profiling/concurrency-visualizer-markers.md)

@@ -15,17 +15,17 @@ caps.latest.revision: 18
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 62f81e6a697089d7a352f652ad9f77d279faac0c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: bc65e58aa5bdea786aba05236b6fa684780ccae2
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72660812"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74296089"
 ---
 # <a name="convert-dialog-box"></a>轉換對話方塊
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-[轉換]  對話方塊可讓您選取轉換工具，以從舊的專案建立新的專案 (例如從 Visual Basic 6 專案建立 [!INCLUDE[vbprvblong](../../includes/vbprvblong-md.md)] 專案)。 您也可以使用 CodePlex 網站上提供的 [Visual Studio Project Converter](http://go.microsoft.com/fwlink/?LinkID=246465)，來升級舊版 Visual Studio 所建立的專案。
+[轉換]  對話方塊可讓您選取轉換工具，以從舊的專案建立新的專案 (例如從 Visual Basic 6 專案建立 [!INCLUDE[vbprvblong](../../includes/vbprvblong-md.md)] 專案)。 您也可以使用 CodePlex 網站上提供的 [Visual Studio Project Converter](https://go.microsoft.com/fwlink/?LinkID=246465)，來升級舊版 Visual Studio 所建立的專案。
 
  [!INCLUDE[note_settings_general](../../includes/note-settings-general-md.md)]
 
