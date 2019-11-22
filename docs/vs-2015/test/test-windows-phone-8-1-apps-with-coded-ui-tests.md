@@ -8,12 +8,12 @@ ms.assetid: 7b866776-f2d5-4823-8d15-919f889db26f
 caps.latest.revision: 31
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 8e314b63490387b94c068e178f0d02db4822921f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 1f2ac13b62dcc522626fde92b1b29cac9873edec
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72672162"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74301835"
 ---
 # <a name="test-windows-uwp-and-81-phone-apps-with-coded-ui-tests"></a>使用自動程式碼 UI 測試來測試 Windows UWP 和 8.1 Phone 應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -104,7 +104,7 @@ ms.locfileid: "72672162"
 
     ![從建立器產生程式碼](../test/media/cuit-phone-generatecode.png "CUIT_Phone_GenerateCode")
 
-7. 使用交叉線工具選取文字方塊控制項，然後選取 **Text** 屬性。
+7. 使用交叉線工具選取文字方塊控制項，然後選取 [文字] 屬性。
 
     ![選取 [Text] 屬性](../test/media/cuit-phone-textproperty.png "CUIT_Phone_TextProperty")
 
@@ -299,7 +299,7 @@ ms.locfileid: "72672162"
 
      ![測試瀏覽器結果](../test/media/cuit-phone-runtestexplorerresults.png "CUIT_Phone_RunTestExplorerResults")
 
-## <a name="TestingPhoneAppsCodedUI_DataDriven"></a> 在 Windows Phone 應用程式上使用資料驅動型自動程式碼 UI 測試
+## <a name="TestingPhoneAppsCodedUI_DataDriven"></a> 在 Windows Phone App 上使用資料驅動型自動程式碼 UI 測試
  您可以使用不同的資料集多次執行自動程式碼 UI 測試，以測試不同的條件。
 
  Windows Phone 的資料驅動型自動程式碼 UI 測試是透過測試方法上的 DataRow 屬性來定義。 在下列範例中，x 和 y 針對測試的第一個反覆項目使用值 1 和 2，並針對第二個反覆項目使用 -1 和 -2。
@@ -351,7 +351,7 @@ public void DataDrivingDemo_MyTestMethod(int x, int y)
  **答**：每次您使用 [UIMap - 自動程式碼 UI 測試產生器] 產生程式碼時，對 UIMapDesigner.cs 檔案中的程式碼所做的變更都會被覆寫。 如果您需要修改錄製的方法，必須將它複製到 UIMap.cs 檔案並重新命名。 UIMap.cs 檔案可用來覆寫 UIMapDesigner.cs 檔案中的方法和屬性。 您必須移除 Coded UITest.cs 檔案中原始方法的參考，並將它取代為重新命名的方法名稱。
 
 ### <a name="q-can-i-run-a-coded-ui-test-on-my-windows-phone-app-from-the-command-line"></a>問：我可以在 Windows Phone 應用程式上從命令列執行自動程式碼 UI 測試嗎？
- **答**：可以，您可以使用 runsettings 檔案指定要執行測試的目標裝置。 例如:
+ **答**：可以，您可以使用 runsettings 檔案指定要執行測試的目標裝置。 例如：
 
  **vstest.console.exe “pathToYourCodedUITestDll” /settings:devicetarget.runsettings**
 
@@ -372,17 +372,17 @@ public void DataDrivingDemo_MyTestMethod(int x, int y)
 ### <a name="q-what-are-the-differences-between-coded-ui-tests-for-xaml-based-windows-store-apps-and-windows-phone-apps"></a>問：以 XAML 為基礎之 Windows 市集應用程式的自動程式碼 UI 測試與 Windows Phone 應用程式的自動程式碼 UI 測試有何差異？
  **答**：以下是其中一些主要差異：
 
-|特殊功能|Windows 市集應用程式|Windows Phone 應用程式|
+|功能|Windows 市集應用程式|Windows Phone 應用程式|
 |-------------|------------------------|------------------------|
-|執行測試的目標|本機或遠端電腦。 當您使用自動化測試案例執行測試時，可指定遠端電腦。 請參閱 [在 Microsoft Test Manager 中自動化測試案例](https://msdn.microsoft.com/library/4e02568b-9cde-47cc-b41c-82726c177e42)。|模擬器或裝置。 請參閱本主題中的 [問：我只能在模擬器上執行測試，還是也可以使用實體裝置？](#TestingPhoneAppsCodedUI_EmulatorDevice)|
+|執行測試的目標|本機或遠端電腦。 當您使用自動化測試案例執行測試時，可指定遠端電腦。 請參閱[在 Microsoft Test Manager 中自動化測試案例](https://msdn.microsoft.com/library/4e02568b-9cde-47cc-b41c-82726c177e42)。|模擬器或裝置。 請參閱本主題中的 [問：我只能在模擬器上執行測試，還是也可以使用實體裝置？](#TestingPhoneAppsCodedUI_EmulatorDevice)|
 |從命令列執行|不需要使用設定檔案來指定目標。|不需要使用 Runsettings 檔案來指定目標。|
 |殼層控制項的特製化類別|[DirectUIControl](/previous-versions/dn248208(v=vs.140))|<xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl>|
 |XAML 應用程式中的 WebView 控制項|如果使用 Html* 特製化類別與 HTML 項目互動，則支援。 請參閱<xref:Microsoft.VisualStudio.TestTools.UITesting.HtmlControls>.|不支援。|
 |從 MTM 執行自動化測試|支援。|不支援。|
-|資料驅動型測試|如需使用外部資料來源及使用測試方法上之 DataSource 屬性的相關資訊，請參閱 [資料驅動型測試](../test/creating-a-data-driven-coded-ui-test.md) 。|使用測試方法上的 DataRow 屬性以內嵌方式指定資料。 請參閱本主題中的 [在 Windows Phone 應用程式上使用資料驅動型自動程式碼 UI 測試](#TestingPhoneAppsCodedUI_DataDriven) 。|
+|資料驅動型測試|如需使用外部資料來源及使用測試方法上之 DataSource 屬性的相關資訊，請參閱[資料驅動型測試](../test/creating-a-data-driven-coded-ui-test.md)。|使用測試方法上的 DataRow 屬性以內嵌方式指定資料。 請參閱本主題中的 [在 Windows Phone 應用程式上使用資料驅動型自動程式碼 UI 測試](#TestingPhoneAppsCodedUI_DataDriven) 。|
 
 ## <a name="external-resources"></a>外部資源
- Microsoft Visual Studio 應用程式生命週期管理部落格： [使用自動程式碼 UI 來測試以 XAML 為基礎的 Windows Phone 應用程式](http://blogs.msdn.com/b/visualstudioalm/archive/2014/04/05/using-coded-ui-to-test-xaml-based-windows-phone-apps.aspx?PageIndex=2#comments)
+ Microsoft Visual Studio 應用程式生命週期管理部落格： [使用自動程式碼 UI 來測試以 XAML 為基礎的 Windows Phone 應用程式](https://devblogs.microsoft.com/devops/using-coded-ui-to-test-xaml-based-windows-phone-apps/#comments)
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
  [使用 UI 自動化來測試您的程式碼](../test/use-ui-automation-to-test-your-code.md)

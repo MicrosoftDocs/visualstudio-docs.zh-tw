@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: d4c6176caee5551b860029ac98b19d52fcb7b51f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d3a17275730cd093f8f9fa433aa28c7f9ca86e80
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72658558"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74298143"
 ---
 # <a name="t4-template-directive"></a>T4 範本指示詞
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,7 +62,7 @@ debug="true"
 
  針對設計階段範本，中繼程式碼檔案會寫入您的 **% TEMP%** 目錄。
 
- 若要在偵錯工具中執行設計階段範本，請儲存文字模板，然後在方案總管中開啟文字模板的快捷方式功能表，然後選擇 [ **Debug T4 template**]。
+ 若要執行偵錯工具的設計階段範本，請儲存文字範本，然後在 [方案總管] 中開啟文字範本的捷徑功能表，並選擇 [**偵錯 T4 範本**]。
 
 ## <a name="hostspecific-attribute"></a>hostspecific 屬性
  範例：
@@ -75,9 +75,9 @@ hostspecific="true"
 
  如果您將這個屬性值設定為 `true`，就會有名為 `Host` 的屬性加入至文字範本所產生的類別中。 屬性是轉換引擎主控制項的參考，而且會宣告為[ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110))。 如果您定義了自訂主應用程式，則可以將它轉換為自訂主應用程式類型。
 
- 由於這個屬性的類型依主應用程式的類型而定，因此只有在撰寫僅限搭配特定主應用程式使用的文字範本時才有用處。 它適用于[設計階段範本](../modeling/design-time-code-generation-by-using-t4-text-templates.md)，但不適用於[執行時間範本](../modeling/run-time-text-generation-with-t4-text-templates.md)。
+ 由於這個屬性的類型依主應用程式的類型而定，因此只有在撰寫僅限搭配特定主應用程式使用的文字範本時才有用處。 它適用於[設計階段範本](../modeling/design-time-code-generation-by-using-t4-text-templates.md)，但不適用於[執行階段範本](../modeling/run-time-text-generation-with-t4-text-templates.md)。
 
- 當 `hostspecific` 為 `true` 且您正在使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 時，可以將 `this.Host` 的類型轉換為 IServiceProvider 來存取 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的功能。 您也可以使用 `Host.ResolvePath(filename)` 取得專案中檔案的絕對路徑。 例如:
+ 當 `hostspecific` 為 `true` 且您正在使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 時，可以將 `this.Host` 的類型轉換為 IServiceProvider 來存取 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的功能。 您也可以使用 `Host.ResolvePath(filename)` 取得專案中檔案的絕對路徑。 例如：
 
 ```csharp
 <#@ template debug="false" hostspecific="true" language="C#" #>
@@ -110,7 +110,7 @@ Content of myFile is:
 
  Language 屬性會指定要用於語句和運算式區塊中之原始程式碼的語言（[!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 或 [!INCLUDE[csprcs](../includes/csprcs-md.md)]）。 從中產生輸出的中繼程式碼檔會使用這個語言。 這個語言與範本產生的語言無關，它可以是任何種類的文字。
 
- 例如:
+ 例如：
 
 ```vb
 <#@ template language="VB" #>
@@ -211,7 +211,7 @@ This is the common footer.
 
  如果是設計階段文字範本，您可指定任何衍生自 <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation?displayProperty=fullName> 的基底類別。 使用 `<#@assembly#>` 指示詞，可以載入包含基底類別的組件或專案。
 
- 如需詳細資訊，請參閱 Gareth 的 Blog 中的「[文字模板中的繼承](http://go.microsoft.com/fwlink/?LinkId=208373)」。
+ 如需詳細資訊，請參閱 Gareth 的 Blog 中的「[文字模板中的繼承](https://go.microsoft.com/fwlink/?LinkId=208373)」。
 
 ## <a name="linepragmas-attribute"></a>LinePragmas 屬性
  範例：`linePragmas="false"`

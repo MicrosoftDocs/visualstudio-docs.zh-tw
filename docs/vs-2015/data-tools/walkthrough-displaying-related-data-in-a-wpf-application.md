@@ -19,14 +19,14 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: c44b949daabf587dbca5d8a5d1d932afca2c1f9c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 787be52eeb546d2ab184a172464862d10cb43288
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72602459"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299582"
 ---
-# <a name="walkthrough-displaying-related-data-in-a-wpf-application"></a>逐步解說：在 WPF 應用程式中顯示相關資料
+# <a name="walkthrough-displaying-related-data-in-a-wpf-application"></a>逐步解說：顯示 WPF 應用程式中的相關資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 在此逐步解說中，您將建立 WPF 應用程式，以顯示具有父子式關聯性之資料庫資料表中的資料。 資料會封裝在實體資料模型的實體中。 父實體包含一組訂單的總覽資訊。 這個實體的每個屬性都會系結至應用程式中的不同控制項。 子實體包含每個訂單的詳細資料。 這組資料會系結至 <xref:System.Windows.Controls.DataGrid> 控制項。
@@ -41,12 +41,12 @@ ms.locfileid: "72602459"
 
    [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>先決條件
  您需要下列元件才能完成此逐步解說：
 
-- [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
+- [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]
 
-- 對執行中的 SQL Server 或 SQL Server Express (其中連結了 AdventureWorksLT 範例資料庫) 執行個體的存取權。 您可以從[CodePlex 網站](http://go.microsoft.com/fwlink/?linkid=87843)下載 AdventureWorksLT 資料庫。
+- 對執行中的 SQL Server 或 SQL Server Express (其中連結了 AdventureWorksLT 範例資料庫) 執行個體的存取權。 您可以從[CodePlex 網站](https://go.microsoft.com/fwlink/?linkid=87843)下載 AdventureWorksLT 資料庫。
 
   預先了解下列概念也有助於完成此逐步解說 (但非必要)：
 
@@ -63,7 +63,7 @@ ms.locfileid: "72602459"
 
 1. 啟動 Visual Studio。
 
-2. 在 [檔案] 功能表中，指向 [新增]，然後按一下 [專案]。
+2. 在 [檔案] **Deploying Office Solutions** 功能表中，指向 [新增]，然後按一下 [專案]。
 
 3. 展開 **[ C#視覺效果**] 或 [ **Visual Basic**]，然後選取 [ **Windows**]。
 
@@ -73,12 +73,12 @@ ms.locfileid: "72602459"
 
 6. 在 [名稱] 方塊中，輸入 `AdventureWorksOrdersViewer`。
 
-7. 按一下 [確定]。
+7. 按一下 [**確定**]。
 
      Visual Studio 會建立 `AdventureWorksOrdersViewer` 專案。
 
 ## <a name="creating-an-entity-data-model-for-the-application"></a>建立應用程式的實體資料模型
- 建立資料繫結控制項之前，您必須先定義應用程式的資料模型，並將其新增至 [資料來源] 視窗。 在此逐步解說中，資料模型是實體資料模型。
+ 建立資料繫結控制項之前，您必須先定義應用程式的資料模型，並將其加入至 [資料來源] 視窗。 在此逐步解說中，資料模型是實體資料模型。
 
 #### <a name="to-create-an-entity-data-model"></a>建立實體資料模型
 
@@ -88,7 +88,7 @@ ms.locfileid: "72602459"
 
 3. 在 [**選擇資料庫模型**] 頁面上，按一下 [**實體資料模型**]，然後按 **[下一步]** 。
 
-4. 在 [**選擇模型內容**] 頁面上，按一下 [**從資料庫產生**]，然後按 **[下一步]** 。
+4. 按一下 [**選擇模型內容**] 頁面上的 [**從資料庫產生**]，再按 [**下一步**]。
 
 5. 在 [**選擇您的資料連線**] 頁面上，執行下列其中一項：
 
@@ -96,7 +96,7 @@ ms.locfileid: "72602459"
 
       -或-
 
-   - 按一下 [**新增**連線]，然後建立與 AdventureWorksLT 資料庫的連接。
+   - 按一下 [新增連接]，建立與 AdventureWorksLT 資料庫的連接。
 
      請確定已選取 [**將 app.config 中的實體連接設定儲存為**] 選項，然後按 **[下一步]** 。
 
@@ -106,7 +106,7 @@ ms.locfileid: "72602459"
 
    - **SalesOrderHeader**
 
-7. 按一下 [ **完成**]。
+7. 按一下 [完成]。
 
 8. 建置專案。
 
@@ -115,13 +115,13 @@ ms.locfileid: "72602459"
 
 #### <a name="to-create-data-bound-controls-that-display-the-order-records"></a>若要建立資料繫結控制項，以顯示訂單記錄
 
-1. 在**方案總管**中，按兩下 [mainwindow.xaml]。
+1. 在**方案總管**中，按兩下 MainWindow.xaml。
 
     隨即會在 WPF 設計工具中開啟視窗。
 
 2. 編輯 XAML，使**Height**和**Width**屬性設定為800
 
-3. 在 **資料來源** 視窗中，按一下  **salesorderheaders**  節點的下拉式功能表，然後選取 **詳細資料**。
+3. 在 [資料來源] 視窗中，按一下 [SalesOrderHeaders] 節點的下拉式功能表，然後選取 [詳細資料]。
 
 4. 展開 [SalesOrderHeaders] 節點。
 
@@ -198,7 +198,7 @@ ms.locfileid: "72602459"
 
     - [**銷售訂單識別碼**] 下拉式方塊會顯示**71774**。 這是實體中的第一個訂單識別碼。
 
-    - 針對您在 [**銷售訂單識別碼**] 下拉式方塊中選取的每個訂單，<xref:System.Windows.Controls.DataGrid> 中會顯示詳細的訂單資訊。
+    - 針對您在 [**銷售訂單識別碼**] 下拉式方塊中選取的每個訂單，<xref:System.Windows.Controls.DataGrid>中會顯示詳細的訂單資訊。
 
 2. 關閉應用程式。
 

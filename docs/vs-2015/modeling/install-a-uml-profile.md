@@ -11,21 +11,21 @@ caps.latest.revision: 13
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: e38e89ee5572f5ba552f3b6807a3edab5012a727
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 14911cda4cfc2be5fece6005a879427c10529bbc
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72669596"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74298915"
 ---
 # <a name="install-a-uml-profile"></a>安裝 UML 設定檔
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-您可以使用 UML 設定檔擴充 Visual Studio。 設定檔可讓您將造型和其他屬性加入您可在 UML 模型中建立的項目。 若要查看哪些 Visual Studio 版本支援這項功能，請參閱 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。
+您可以使用 UML 設定檔擴充 Visual Studio。 設定檔可讓您將造型和其他屬性加入您可在 UML 模型中建立的項目。 若要查看哪些版本的 Visual Studio 支援此功能，請參閱 [Architecture and Modeling Tools 的版本支援](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。
 
  如果您收到已使用設定檔建立的 UML 模型，則除非您安裝相同的設定檔，否則不會顯示一些屬性。
 
- 設定檔分散在 Visual Studio 延伸模組內。 延伸模組也可能包含其他功能 (例如功能表命令)。 如需詳細資訊，請參閱[管理 Visual Studio 延伸](http://go.microsoft.com/fwlink/?LinkId=160728)模組。
+ 設定檔分散在 Visual Studio 延伸模組內。 延伸模組也可能包含其他功能 (例如功能表命令)。 如需詳細資訊，請參閱[管理 Visual Studio 延伸](https://go.microsoft.com/fwlink/?LinkId=160728)模組。
 
 ### <a name="to-install-a-uml-profile-on-your-computer"></a>在電腦上安裝 UML 設定檔
 
@@ -35,15 +35,15 @@ ms.locfileid: "72669596"
 
 2. 在 Windows 檔案總管 (或檔案總管) 中按兩下 `.vsix` 檔案，或在 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 內開啟它。
 
-3. 在出現的對話方塊中，按一下 [**安裝**]。
+3. 在出現的對話方塊中，按一下 [安裝]。
 
-4. 若要卸載或暫時停用擴充功能，請從 [**工具**] 功能表開啟 [**擴充管理員**]。
+4. 若要解除安裝或暫時停用這個擴充功能，請開啟 [工具] 功能表中的 [擴充管理員]。
 
 ### <a name="to-uninstall-or-disable-a-profile-extension"></a>解除安裝或停用設定檔擴充功能
 
-1. 在 [Visual Studio**工具**] 功能表上，按一下 [**擴充管理員**]。
+1. 在 Visual Studio [工具] 功能表上，按一下 [擴充管理員]。
 
-2. 按一下您要移除的延伸模組，然後按一下 [**停**用] 或 [**卸載**]。
+2. 按一下您要移除的擴充管理員，然後按一下 [停用] 或 [解除安裝]。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
  [使用設定檔和造型自訂您的模型](../modeling/customize-your-model-with-profiles-and-stereotypes.md)[定義要擴充 UML 的設定檔](../modeling/define-a-profile-to-extend-uml.md)

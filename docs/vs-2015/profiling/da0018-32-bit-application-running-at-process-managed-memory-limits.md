@@ -1,5 +1,5 @@
 ---
-title: DA0018：32 位元應用程式正以處理序受控記憶體限制執行 | Microsoft Docs
+title: DA0018：以處理序 Managed 記憶體限制執行的 32 位元應用程式 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -13,20 +13,20 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6418a39d7e53a3edaa48b3cd003d35d95cba386e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 67589a04b8f3c39e442b596a7a41981825bd5aa5
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68194952"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74301111"
 ---
-# <a name="da0018-32-bit-application-running-at-process-managed-memory-limits"></a>DA0018：執行 32 位元的應用程式時，處理序的記憶體限制會受到管理
+# <a name="da0018-32-bit-application-running-at-process-managed-memory-limits"></a>DA0018：以處理序 Managed 記憶體限制執行的 32 位元應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-規則 Id |DA0018 以 |  
-|類別目錄 |分析工具使用方式 |  
+規則識別碼 |DA0018 |  
+|類別 |分析工具使用方式 |  
 |程式碼剖析方法 |取樣 |  
-|訊息 |Managed 記憶體配置接近 32 位元處理程序的預設限制。 您的應用程式可能是記憶體繫結。|  
+|訊息 |受控記憶體配置接近32位進程的預設限制。 您的應用程式可能是記憶體繫結。|  
 |規則類型 |警告 |  
   
  當您使用取樣、.NET 記憶體或資源爭用方法進行分析時，必須至少收集 10 個樣本才能觸發此規則。  
@@ -64,7 +64,7 @@ ms.locfileid: "68194952"
   
   使用[配置檢視](../profiling/dotnet-memory-allocations-view.md)可判斷導致這些配置的執行路徑。  
   
-  如需如何改善記憶體回收效能的詳細資訊，請參閱 MSDN 網站上的 .NET Framework 技術文件：[記憶體回收行程的基礎概念和效能提示 (英文)](http://go.microsoft.com/fwlink/?LinkId=177946)。  
+  如需如何改善記憶體回收效能的詳細資訊，請參閱 MSDN 網站上的 .NET Framework 技術文件：[記憶體回收行程的基礎概念和效能提示 (英文)](https://go.microsoft.com/fwlink/?LinkId=177946)。  
   
   若要對處理序位址空間之私用部分大小解除虛擬記憶體的架構限制，請嘗試在 64 位元電腦上執行這個 32 位元處理序。  在 64 位元電腦上的 32 位元處理序可以取得高達 4 GB 的私用虛擬記憶體。  
   

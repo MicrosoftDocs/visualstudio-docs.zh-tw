@@ -1,30 +1,30 @@
 ---
-title: 了解 Xamarin.Forms 應用程式建置基本概念
+title: 瞭解 Xamarin 的應用程式建立基本概念
 ms.date: 11/15/2016
 ms.topic: conceptual
 ms.assetid: d22b5186-9e03-4e85-afc9-7cbe28522a6d
 caps.latest.revision: 14
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 18ea10e25117ee5bf52c6369e575d70a989435db
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: bc7e46af7e29ef554b80bd9244910e0c67d373af
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444517"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299762"
 ---
 # <a name="learn-app-building-basics-with-xamarinforms-in-visual-studio"></a>了解在 Visual Studio 中建置 Xamarin.Forms 應用程式的基本概念
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 在您完成 [Setup and install](../cross-platform/setup-and-install.md) 和 [Verify your Xamarin environment](../cross-platform/verify-your-xamarin-environment.md)中的步驟之後，本逐步解說會示範如何建立 Xamarin.Forms 基本應用程式 (如下所示)。 使用 Xamarin.Forms 時，您可以一次將所有 UI 程式碼寫入可攜式類別庫 (PCL)。 接著，Xamarin 即可針對 iOS、Android 和 Windows 平台自動呈現原生 UI 控制項。 我們建議您使用這種方法：只有使用支援所有目標平台的 .NET API，PCL 選項才能達到最佳支援效果，此外 Xamarin.Forms 亦可讓您跨平台共用 UI 程式碼。
 
- ![Android、iOS 和 Windows Phone 中的氣象應用程式範例](../cross-platform/media/crossplat-xamarin-formsguide-1.png "CrossPlat Xamarin FormsGuide 1")
+ ![Android、iOS 和 Windows Phone 上的氣象應用程式範例](../cross-platform/media/crossplat-xamarin-formsguide-1.png "CrossPlat Xamarin FormsGuide 1")
 
  您將會執行下列步驟來建置應用程式：
 
 - [設立方案](#solution)
 
-- [寫入共用的資料服務程式碼](#dataservice)
+- [撰寫共用的資料服務程式碼](#dataservice)
 
 - [開始寫入共用的 UI 程式碼](#uicode)
 
@@ -35,18 +35,18 @@ ms.locfileid: "63444517"
 > [!TIP]
 > 您可以在 [GitHub 上的 xamarin-forms-samples 存放庫](https://github.com/xamarin/xamarin-forms-samples/tree/master/Weather)找到本專案的完整原始程式碼。
 
-## <a name="solution"></a> 設立方案
+## <a name="solution"></a> 設定方案
  下列步驟會建立 Xamarin.Forms 方案，其中包含共用程式碼的 PCL 和兩個已加入的 NuGet 套件。
 
 1. 在 Visual Studio 中，建立新的 **空白應用程式 (Xamarin.Forms 可攜式)** 方案，並將其命名為 **WeatherApp**。 您可以在搜尋欄位中輸入 **Xamarin.Forms** ，輕鬆找到這個範本。
 
-     如果找不到，則可能必須安裝 Xamarin，或是啟用 Visual Studio 2015 功能，請參閱[設定與安裝](../cross-platform/setup-and-install.md)。
+     如果找不到，可能必須安裝 Xamarin，或是啟用 Visual Studio 2015 功能。請參閱 [Setup and install](../cross-platform/setup-and-install.md)。
 
-     ![建立新的空白應用程式 &#40;Xamarin.Forms 可攜式&#41; 專案](../cross-platform/media/crossplat-xamarin-formsguide-2.png "CrossPlat Xamarin FormsGuide 2")
+     ![建立新的空白應用&#40;程式 Xamarin。窗&#41;體可移植專案](../cross-platform/media/crossplat-xamarin-formsguide-2.png "CrossPlat Xamarin FormsGuide 2")
 
 2. 按一下 [確定] 建立解決方案後，您會擁有數個個別專案：
 
-    - **WeatherApp (可攜式)**：您會將跨平台共用的程式碼寫入此 PCL，包括搭配 Xamarin.Forms 使用的一般商務邏輯和 UI 程式碼。
+    - **WeatherApp (可攜式)** ：您會將跨平台共用的程式碼寫入此 PCL，包括搭配 Xamarin.Forms 使用的一般商務邏輯和 UI 程式碼。
 
     - **WeatherApp.Droid**：包含原生 Android 程式碼的專案。 這會設為預設啟始專案。
 
@@ -54,9 +54,9 @@ ms.locfileid: "63444517"
 
     - **WeatherApp.UWP**：包含 Windows 10 UWP 程式碼的專案。
 
-    - **WeatherApp.Windows (Windows 8.1)**：包含原生 Windows 8.1 程式碼的專案。
+    - **WeatherApp.Windows (Windows 8.1)** ：包含原生 Windows 8.1 程式碼的專案。
 
-    - **WeatherApp.WinPhone (Windows Phone 8.1)**：包含原生 Windows Phone 程式碼的專案。
+    - **WeatherApp.WinPhone (Windows Phone 8.1)** ：包含原生 Windows Phone 程式碼的專案。
 
     > [!NOTE]
     > 您可以隨意刪除任何不屬於目標平台的專案。 就本逐步解說的目的而言，我們會參考 Android、iOS 和 Windows Phone 8.1 專案。 UWP 和 Windows 8.1 專案的使用方式與 Windows Phone 8.1 專案十分相似。
@@ -67,27 +67,27 @@ ms.locfileid: "63444517"
 
     - 選取 [工具] > [NuGet 封裝管理員] > [管理方案的 NuGet 封裝]。
 
-    - 核取 [更新]  索引標籤下方的 **Xamarin.Forms** 更新，並核取要更新方案中的所有專案 。 (注意：請不要核取 Xamarin.Android.Support 的任何更新)。
+    - 核取 [更新] 索引標籤下方的 **Xamarin.Forms** 更新，並核取要更新方案中的所有專案 。 (注意：請不要核取 Xamarin.Android.Support 的任何更新)。
 
-    - 將 [版本]  欄位更新為可使用的 [最新穩定版]  。
+    - 將 [版本] 欄位更新為可使用的 [最新穩定版] 。
 
-    - 按一下 [更新] 。
+    - 按一下 [更新]。
 
-         ![更新 Xamarin.Forms NuGet 封裝](../cross-platform/media/crossplat-xamarin-formsguide-4.png "CrossPlat Xamarin FormsGuide 4")
+         ![更新 Xamarin. Forms NuGet 套件](../cross-platform/media/crossplat-xamarin-formsguide-4.png "CrossPlat Xamarin FormsGuide 4")
 
 4. 將 **Newtonsoft.Json** 和 NuGet 套件新增至 PCL 專案，您將使用此專案來處理從天氣資料服務擷取而來的資訊：
 
-    - 在 NuGet 套件管理員 (在步驟 3 後仍保持開啟) 中，選取 [瀏覽]  索引標籤，並搜尋 **Newtonsoft**。
+    - 在 NuGet 套件管理員 (在步驟 3 後仍保持開啟) 中，選取 [瀏覽] 索引標籤，並搜尋 **Newtonsoft**。
 
     - 選取 **Newtonsoft.Json**。
 
     - 核取 **WeatherApp** 專案 (這是唯一一個必須安裝套件的專案)。
 
-    - 請確認 [版本]  欄位設為 [最新穩定版]  。
+    - 請確認 [版本] 欄位設為 [最新穩定版] 。
 
-    - 按一下 [安裝] 。
+    - 按一下 [安裝]。
 
-    - ![找出並安裝 Newtonsoft.Json NuGet 封裝](../cross-platform/media/crossplat-xamarin-formsguide-5.png "CrossPlat Xamarin FormsGuide 5")
+    - ![尋找並安裝 Newtonsoft NuGet 套件](../cross-platform/media/crossplat-xamarin-formsguide-5.png "CrossPlat Xamarin FormsGuide 5")
 
 5. 重複步驟 4 以尋找並安裝 **Microsoft.Net.Http** 套件。
 
@@ -96,11 +96,11 @@ ms.locfileid: "63444517"
 ## <a name="dataservice"></a> 寫入共用的資料服務程式碼
  您可以在 **WeatherApp (可攜式)** 專案中撰寫可攜式類別庫 (PCL) 程式碼，進而跨所有平台共用。 系統會自動依據 iOS、Android 和 Windows Phone 專案，將 PCL 包含在應用程式套件中。
 
- 若要執行此範例，您必須先在 [http://openweathermap.org/appid](http://openweathermap.org/appid) 註冊免費的 API 金鑰。
+ 若要執行此範例，您必須先在 [http://openweathermap.org/appid](https://openweathermap.org/appid) 註冊免費的 API 金鑰。
 
  下列步驟會將程式碼新增至 PCL 以存取並儲存天氣服務的資料：
 
-1. 以滑鼠右鍵按一下 **WeatherApp** 專案，然後選取 [新增] > [類別...]。 在 [加入新項目]  對話方塊中，將檔案命名為 **Weather.cs**。 您將使用此類別儲存天氣資料服務的資料。
+1. 以滑鼠右鍵按一下 **WeatherApp** 專案，然後選取 [新增] > [類別...]。 在 [加入新項目] 對話方塊中，將檔案命名為 **Weather.cs**。 您將使用此類別儲存天氣資料服務的資料。
 
 2. 以下列程式碼取代整個 **Weather.cs** 的內容：
 
@@ -215,11 +215,11 @@ ms.locfileid: "63444517"
 ## <a name="uicode"></a> 開始寫入共用的 UI 程式碼
  Xamarin.Forms 可讓您在 PCL 中實作共用的 UI 程式碼。 在這些步驟中，您會將含按鈕的畫面加入 PCL 中，其會使用上一節加入的天氣資料服務程式碼所傳回的資料來更新它的文字：
 
-1. 新增名為 **WeatherPage.cs** 的 [Forms Xaml 頁面]，方法是以滑鼠右鍵按一下 **WeatherApp** 專案，然後選取 [新增] > [新項目...]。在 [加入新項目]  對話方塊中，搜尋「表單」，選取 [表單 Xaml 頁面] ，並將其命名為 **WeatherPage.cs**。
+1. 以滑鼠右鍵按一下 [ **WeatherApp** ] 專案，然後選取 [**新增 > 新專案**...]，以新增名為**WeatherPage.cs**的**表單 Xaml 頁面**。在 [**加入新專案**] 對話方塊中，搜尋 [表單]，選取 [**表單 Xaml] 頁面**，並將它命名為**WeatherPage.cs**。
 
      Xamarin.Forms 是以 XAML 為基礎，因此這個步驟會建立 **WeatherPage.xaml** 檔案以及巢狀的程式碼後置檔案 **WeatherPage.xaml.cs**。 這可讓您透過 XAML 或程式碼產生 UI。 您需要針對這兩項作業，進行本逐步解說中的一些步驟。
 
-     ![新增 Xamarin.Forms XAML 頁面](../cross-platform/media/crossplat-xamarin-formsguide-6.png "CrossPlat Xamarin FormsGuide 6")
+     ![加入新的 Xamarin。表單 XAML 頁面](../cross-platform/media/crossplat-xamarin-formsguide-6.png "CrossPlat Xamarin FormsGuide 6")
 
 2. 若要將按鈕加入 WeatherPage 畫面，請使用下列項目取代 WeatherPage.xaml 的內容：
 
@@ -277,20 +277,20 @@ ms.locfileid: "63444517"
 ## <a name="test"></a> 使用 Visual Studio Emulator for Android 測試您的應用程式。
  您現在可以準備執行應用程式！ 現在，我們先執行 Android 版本以確認應用程式可從氣象服務取得資料。 您可在稍後加入更多 UI 項目之後，再執行 iOS 和 Windows Phone 版本 。 (注意：如果您是在 Windows 7 上執行 Visual Studio，請遵循相同的步驟，但改為使用 Xamarin Player)。
 
-1. 以滑鼠右鍵按一下 **WeatherApp.Droid** 專案，然後選取 [設定為啟始專案] ，以將其設為啟始專案。
+1. 以滑鼠右鍵按一下 **WeatherApp.Droid** 專案，然後選取 [設定為啟始專案]，以將其設為啟始專案。
 
-2. 在 Visual Studio 工具列中，即會將 **WeatherApp.Droid** 列為目標專案。 選取其中一個 Android 模擬器進行偵錯，並按 **F5**。 建議您使用 **VS 模擬器** 的其中一個選項，以 Android 版 Visual Studio 模擬器選項執行應用程式。
+2. 在 Visual Studio 工具列中，即會將 **WeatherApp.Droid** 列為目標專案。 選取其中一個 Android 模擬器進行偵錯，並按 **F5**。 建議您使用 **VS 模擬器**的其中一個選項，以 Android 版 Visual Studio 模擬器選項執行應用程式。
 
-     ![選取 VS 模擬器偵錯目標](../cross-platform/media/crossplat-xamarin-formsguide-7.png "CrossPlat Xamarin FormsGuide 7")
+     ![選取 VS 模擬器偵錯工具目標](../cross-platform/media/crossplat-xamarin-formsguide-7.png "CrossPlat Xamarin FormsGuide 7")
 
-3. 在模擬器中啟動應用程式時，請按一下 [獲知天氣]  按鈕。 您應該會看到按鈕的文字更新為 **芝加哥，IL**，即為從天氣資料服務擷取的資料 *Title* 屬性。
+3. 在模擬器中啟動應用程式時，請按一下 [獲知天氣] 按鈕。 您應該會看到按鈕的文字更新為**芝加哥，IL**，即為從天氣資料服務擷取的資料 *Title* 屬性。
 
-     ![點選按鈕之前和之後的氣象應用程式](../cross-platform/media/crossplat-xamarin-formsguide-8.png "CrossPlat Xamarin FormsGuide 8")
+     ![點擊按鈕前後的氣象應用程式](../cross-platform/media/crossplat-xamarin-formsguide-8.png "CrossPlat Xamarin FormsGuide 8")
 
 ## <a name="finish"></a> 完成 UI 使其具備跨平台的原生外觀與風格
  Xamarin.Forms 可針對每個平台呈現原生的 UI 控制項，讓您的應用程式自動擁有原生的外觀與風格。 為了更清楚了解這項功能，讓我們先完成郵遞區號輸入欄位的 UI，並顯示從服務傳回的天氣資料。
 
-1. 以下列程式碼取代 **WeatherPage.xaml** 的內容。 請務必如上所述使用 **x:Name** 屬性來命名每個項目，才可從程式碼中參考這些項目。 Xamarin.Forms 也有提供一些 [版面配置選項](http://developer.xamarin.com/guides/xamarin-forms/controls/layouts/) (xamarin.com)；這裡的 WeatherPage 是使用 [StackLayout](http://developer.xamarin.com/api/type/Xamarin.Forms.StackLayout/) (xamarin.com)。
+1. 以下列程式碼取代 **WeatherPage.xaml** 的內容。 請務必如上所述使用 **x:Name** 屬性來命名每個項目，才可從程式碼中參考這些項目。 Xamarin.Forms 也有提供一些 [版面配置選項](https://docs.microsoft.com/xamarin/xamarin-forms/user-interface/controls/layouts) (xamarin.com)；這裡的 WeatherPage 是使用 [StackLayout](https://docs.microsoft.com/dotnet/api/Xamarin.Forms.StackLayout?view=xamarin-forms) (xamarin.com)。
 
    ```xaml
    <?xml version="1.0" encoding="utf-8" ?>
@@ -380,7 +380,7 @@ ms.locfileid: "63444517"
    </ContentPage>
    ```
 
-    請注意 **OnPlatform** 標記在 Xamarin.Forms 中的使用方式。 **OnPlatform** 標記會選取應用程式目前執行所在平台專屬的屬性值 (請參閱 [External XAML Syntax](http://developer.xamarin.com/guides/xamarin-forms/user-interface/xaml-basics/essential_xaml_syntax/) (xamarin.com)。 我們在這裡使用它來設定資料欄位不同的文字色彩：在 Android 和 Windows Phone、 iOS 則為黑色上的白色。 您可以針對任何屬性與資料類型使用 **OnPlatform** ，以在 XAML 的任意位置進行平台專屬的調整。 在程式碼後置檔案中，您可以使用 [Device.OnPlatform API](http://developer.xamarin.com/guides/xamarin-forms/platform-features/device/) 來達到相同的目的。
+    請注意 **OnPlatform** 標記在 Xamarin.Forms 中的使用方式。 **OnPlatform** 標記會選取應用程式目前執行所在平台專屬的屬性值 (請參閱 [External XAML Syntax](https://docs.microsoft.com/xamarin/xamarin-forms/xaml/xaml-basics/essential-xaml-syntax) (xamarin.com)。 在這裡，我們會使用它來為資料欄位設定不同的文字色彩：在 Android 和 Windows Phone 上設為白色，iOS 則為黑色。 您可以針對任何屬性與資料類型使用 **OnPlatform** ，以在 XAML 的任意位置進行平台專屬的調整。 在程式碼後置檔案中，您可以使用 [Device.OnPlatform API](https://docs.microsoft.com/xamarin/xamarin-forms/platform/device) 來達到相同的目的。
 
 2. 以下列程式碼取代 **WeatherPage.xaml.cs**中的 **GetWeatherBtn_Clicked** 事件處理常式。 此程式碼會驗證項目欄位中是否有郵遞區號、擷取該郵遞區號的資料、將整個畫面的繫結內容設定為產生的 Weather 執行個體，然後將按鈕的文字設為「再次搜尋」。 請注意，UI 中的每個標籤會繫結至 Weather 類別屬性，因此當您將畫面的繫結內容設定為 **Weather** 執行個體時，就會自動更新這些標籤。
 
@@ -398,6 +398,6 @@ ms.locfileid: "63444517"
 
 3. 在 Android、iOS 和 Windows Phone 這三個平台上執行應用程式：以滑鼠右鍵按一下適當的專案，選取 [設定為啟始專案]，然後在裝置上或模擬器中啟動應用程式。 輸入有效的美國郵遞區號 (例如 60601)，然後按 [獲知天氣] 按鈕，即可顯示該區域的天氣資料，如下所示。 若是 iOS 專案，您就必須將 Visual Studio 連線至您網路上的 Mac OS X 電腦。
 
-    ![Android、iOS 和 Windows Phone 中的氣象應用程式範例](../cross-platform/media/crossplat-xamarin-formsguide-1.png "CrossPlat Xamarin FormsGuide 1")
+    ![Android、iOS 和 Windows Phone 上的氣象應用程式範例](../cross-platform/media/crossplat-xamarin-formsguide-1.png "CrossPlat Xamarin FormsGuide 1")
 
    本專案的完整原始程式碼位於 [GitHub 上的 xamarin-forms-samples 存放庫](https://github.com/xamarin/xamarin-forms-samples/tree/master/Weather)。

@@ -11,12 +11,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2016
 ms.author: ghogen
-ms.openlocfilehash: dba4e9143c02a76763372a12153b2e22f612959c
-ms.sourcegitcommit: 3cc73e74921a9ceb622542e0e263abeebc455c00
+ms.openlocfilehash: 6c9c2e281ace3b483d1f37552fba0cc6f490978a
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "67624447"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74298130"
 ---
 # <a name="publish-webapplicationwebsite-windows-powershell-script"></a>Publish-WebApplicationWebSite (Windows PowerShell 指令碼)
 ## <a name="syntax"></a>語法
@@ -32,15 +32,15 @@ Publish-WebApplicationWebSite
 -Verbose
 ```
 
-## <a name="configuration"></a>Configuration
+## <a name="configuration"></a>設定
 描述部署詳細資訊的 JSON 組態檔路徑。
 
 | 參數 | 預設值 |
 | --- | --- |
-| 別名 |none |
-| 是否為必要項？ |true |
+| 別名 |無 |
+| 必要？ |true |
 | 位置 |已命名 |
-| 預設值 |none |
+| 預設值 |無 |
 | 接受管線輸入？ |False |
 | 接受萬用字元？ |False |
 
@@ -49,22 +49,22 @@ Publish-WebApplicationWebSite
 
 | 參數 | 預設值 |
 | --- | --- |
-| 別名 |none |
-| 是否為必要項？ |False |
+| 別名 |無 |
+| 必要？ |False |
 | 位置 |已命名 |
-| 預設值 |none |
+| 預設值 |無 |
 | 接受管線輸入？ |False |
 | 接受萬用字元？ |False |
 
 ## <a name="webdeploypackage"></a>WebDeployPackage
-要發佈至網站的 Web 部署封裝路徑。 您可以使用 Visual Studio 的 [發佈 Web] 精靈來建立此封裝。 如需詳細資訊，請參閱 [開始使用 Azure 雲端服務和 ASP.NET](http://go.microsoft.com/fwlink/p/?LinkID=623089)。
+要發佈至網站的 Web 部署封裝路徑。 您可以使用 Visual Studio 的 [發佈 Web] 精靈來建立此封裝。 如需詳細資訊，請參閱 [開始使用 Azure 雲端服務和 ASP.NET](https://go.microsoft.com/fwlink/p/?LinkID=623089)。
 
 | 參數 | 預設值 |
 | --- | --- |
-| 別名 |none |
-| 是否為必要項？ |False |
+| 別名 |無 |
+| 必要？ |False |
 | 位置 |已命名 |
-| 預設值 |none |
+| 預設值 |無 |
 | 接受管線輸入？ |False |
 | 接受萬用字元？ |False |
 
@@ -73,10 +73,10 @@ Publish-WebApplicationWebSite
 
 | 參數 | 預設值 |
 | --- | --- |
-| 別名 |none |
-| 是否為必要項？ |False |
+| 別名 |無 |
+| 必要？ |False |
 | 位置 |已命名 |
-| 預設值 |none |
+| 預設值 |無 |
 | 接受管線輸入？ |False |
 | 接受萬用字元？ |False |
 
@@ -85,8 +85,8 @@ Publish-WebApplicationWebSite
 
 | 參數 | 預設值 |
 | --- | --- |
-| 別名 |none |
-| 是否為必要項？ |False |
+| 別名 |無 |
+| 必要？ |False |
 | 位置 |已命名 |
 | 預設值 |False |
 | 接受管線輸入？ |False |

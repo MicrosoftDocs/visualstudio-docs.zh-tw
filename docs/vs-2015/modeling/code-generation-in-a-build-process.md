@@ -12,20 +12,20 @@ caps.latest.revision: 30
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 81c4160ca6d03d55d631cd4dad8c3bce01fa9722
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ae28c59f9c5f19e87b833c90e7dbc6bf3b7497ea
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72667870"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297938"
 ---
 # <a name="code-generation-in-a-build-process"></a>建置流程中的程式碼產生
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 文字轉換可以在 Visual Studio 方案的組建程式中叫用。 有的建置工作會針對文字轉換進行特製化。 T4 建置工作會執行設計階段的文字範本，也會編譯執行階段 (前置處理過後) 的文字範本。
 
-根據不同的建置引擎，建置工作可執行的動作會有些差異。 當您在 Visual Studio 中建立方案時，如果已設定[hostspecific = "true"](../modeling/t4-template-directive.md)屬性，文字模板就可以存取 Visual Studio API （EnvDTE）。 但在您從命令列建置方案或透過 Visual Studio 啟始伺服器組建時，這並不正確。 在這些情況下，會由 MSBuild 執行組建，並會使用不同的 T4 主機。
+根據不同的建置引擎，建置工作可執行的動作會有些差異。 在 Visual Studio 中建置方案時，如果設定 [hostspecific="true"](../modeling/t4-template-directive.md) 屬性，文字範本即可存取 Visual Studio API (EnvDTE)。 但在您從命令列建置方案或透過 Visual Studio 啟始伺服器組建時，這並不正確。 在這些情況下，會由 MSBuild 執行組建，並會使用不同的 T4 主機。
 
-這表示在 MSBuild 中建置文字範本時，您無法以相同方式來存取如專案檔名之類的項目。 不過，您可以[使用組建參數，將環境資訊傳遞至文字模板和](#parameters)指示詞處理器。
+這表示在 MSBuild 中建置文字範本時，您無法以相同方式來存取如專案檔名之類的項目。 不過，您可以[使用組建參數傳遞環境資訊至文字範本和指示詞處理器中](#parameters)。
 
 ## <a name="buildserver"></a>設定您的電腦
 
@@ -57,9 +57,9 @@ ms.locfileid: "72667870"
 
 您必須編輯專案檔，才能設定 MSBuild 中的部分功能。
 
-在 [方案瀏覽器] 中，從專案的內容功能表中選擇 **[** 卸載]。 如此可讓您在 XML 編輯器中編輯 .csproj 或 .vbproj 檔案。
+在方案總管中，從您專案的操作功能表選擇 [**卸載**]。 如此可讓您在 XML 編輯器中編輯 .csproj 或 .vbproj 檔案。
 
-當您完成編輯時，請選擇 [**重載**]。
+當您完成編輯時，請選擇 [**重新載入**]。
 
 ## <a name="import-the-text-transformation-targets"></a>匯入文字轉換目標
 
@@ -271,7 +271,7 @@ Visual Studio 巨集 (如 $(SolutionDir)) 在 MSBuild 中無法運作。 您可�
 
 **轉換文字模板有哪些其他選項？**
 
-- [TextTransform 公用程式](../modeling/generating-files-with-the-texttransform-utility.md)可用於命令腳本中。 大部分情況下，使用 MSBuild 較為容易。
+- [TextTransform 公用程式](../modeling/generating-files-with-the-texttransform-utility.md)可用於命令指令碼。 大部分情況下，使用 MSBuild 較為容易。
 
 - [叫用 VS 擴充功能中的文字轉換](../modeling/invoking-text-transformation-in-a-vs-extension.md)
 
@@ -284,5 +284,5 @@ Visual Studio 巨集 (如 $(SolutionDir)) 在 MSBuild 中無法運作。 您可�
 在 T4 MSbuild 範本中有好的指引：$(VSToolsPath)\TextTemplating\Microsoft.TextTemplating.targets
 
 - [撰寫 T4 文字範本](../modeling/writing-a-t4-text-template.md)
-- [Visual Studio 視覺效果和模型 SDK](http://go.microsoft.com/fwlink/?LinkID=185579)
+- [Visual Studio 視覺效果和模型 SDK](https://go.microsoft.com/fwlink/?LinkID=185579)
 - [Oleg Sych：瞭解 T4： MSBuild 整合](https://github.com/olegsych/T4Toolbox)

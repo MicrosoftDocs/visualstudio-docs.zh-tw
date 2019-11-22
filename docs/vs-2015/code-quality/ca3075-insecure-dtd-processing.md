@@ -8,12 +8,12 @@ caps.latest.revision: 19
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 7cf9da2f295d94ac68c74039458f4cdbfda3ae5c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 2ce5390ce8d649ab2c57eccde34506d6831b8193
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72661615"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300968"
 ---
 # <a name="ca3075-insecure-dtd-processing"></a>CA3075：不安全的 DTD 處理
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,14 +22,14 @@ ms.locfileid: "72661615"
 |-|-|
 |TypeName|InsecureDTDProcessing|
 |CheckId|CA3075|
-|Category|Microsoft.Security|
+|類別|Microsoft.Security|
 |中斷變更|非中斷|
 
 ## <a name="cause"></a>原因
  如果您使用不安全的 <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A> 執行個體或參考外部實體來源，剖析器可能會接受未受信任的輸入，而將機密資訊洩漏給攻擊者。
 
 ## <a name="rule-description"></a>規則描述
- [文件類型定義 (DTD)](https://msdn.microsoft.com/library/aa468547.aspx) 是  [World Wide Web Consortium (W3C) Extensible Markup Language (XML) 1.0](http://www.w3.org/TR/2008/REC-xml-20081126/)中針對 XML 剖析器用來判斷文件有效性所定義之兩種方式的其中一種。 此規則會搜尋已接受不受信任之資料的屬性和執行個體，藉此警告開發人員潛在的 [Information Disclosure](https://msdn.microsoft.com/library/4064c89f-afa6-444a-aa7e-807ef072131c) 威脅，這些威脅可能會導致 [Denial of Service (DoS)](https://msdn.microsoft.com/library/dfb150f3-d598-4697-a5e6-6779e4f9b600) 攻擊。 下列情況會觸發此規則：
+ [文件類型定義 (DTD)](https://msdn.microsoft.com/library/aa468547.aspx) 是  [World Wide Web Consortium (W3C) Extensible Markup Language (XML) 1.0](https://www.w3.org/TR/2008/REC-xml-20081126/)中針對 XML 剖析器用來判斷文件有效性所定義之兩種方式的其中一種。 此規則會搜尋已接受不受信任之資料的屬性和執行個體，藉此警告開發人員潛在的 [Information Disclosure](https://msdn.microsoft.com/library/4064c89f-afa6-444a-aa7e-807ef072131c) 威脅，這些威脅可能會導致 [Denial of Service (DoS)](https://msdn.microsoft.com/library/dfb150f3-d598-4697-a5e6-6779e4f9b600) 攻擊。 下列情況會觸發此規則：
 
 - <xref:System.Xml.XmlReader> 執行個體上已啟用 DtdProcessing，它會使用 <xref:System.Xml.XmlUrlResolver>解析外部 XML 項目。
 
@@ -49,15 +49,15 @@ ms.locfileid: "72661615"
 
 - 適當地攔截並處理所有的 XmlTextReader 例外狀況，以避免路徑資訊洩漏。
 
-- 使用  <xref:System.Xml.XmlSecureResolver> 來限制 XmlTextReader 可以存取的資源。
+- 使用 <xref:System.Xml.XmlSecureResolver> 來限制 XmlTextReader 可以存取的資源。
 
-- 不允許  <xref:System.Xml.XmlReader> 藉由將 <xref:System.Xml.XmlResolver> 屬性設為 **null**來開啟任何外部資源。
+- 不允許 <xref:System.Xml.XmlReader> 藉由將 <xref:System.Xml.XmlResolver> 屬性設為 **null**來開啟任何外部資源。
 
 - 請確認 <xref:System.Data.DataViewManager.DataViewSettingCollectionString%2A> 的 <xref:System.Data.DataViewManager> 屬性是從受信任的來源位置指派。
 
   .NET 3.5 和更早的版本
 
-- 如果您正在處理不受信任的來源，請將  <xref:System.Xml.XmlReaderSettings.ProhibitDtd%2A> 屬性設為 **true** ，以停用 DTD 處理。
+- 如果您正在處理不受信任的來源，請將 <xref:System.Xml.XmlReaderSettings.ProhibitDtd%2A> 屬性設為 **true** ，以停用 DTD 處理。
 
 - XmlTextReader 類別具有完全信任的繼承要求。 如需詳細資訊，請參閱 [繼承需求](https://msdn.microsoft.com/28b9adbb-8f08-4f10-b856-dbf59eb932d9)。
 

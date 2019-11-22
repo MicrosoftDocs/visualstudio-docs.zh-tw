@@ -1,5 +1,5 @@
 ---
-title: 在 Blend 中的 XAML 進行偵錯 |Microsoft Docs
+title: 在 Blend 中 Debug XAML |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ caps.latest.revision: 8
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: beea8cd3ad6ac12bef284e0d5fda9e995a8613c5
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: d90e495ba64018479758e4fa38de0035601a8f0d
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63434088"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74298325"
 ---
 # <a name="debug-xaml-in-blend"></a>在 Blend 中偵錯 XAML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ ms.locfileid: "63434088"
   
 - XAML 元素位於禁止的位置。  
   
-  如需一般 XAML 語法的詳細資訊，請參閱[基本 XAML 語法指南](http://go.microsoft.com/fwlink/?LinkId=329942)。  
+  如需一般 XAML 語法的詳細資訊，請參閱[基本 XAML 語法指南](https://go.microsoft.com/fwlink/?LinkId=329942)。  
   
   此外，您也可以在 [!INCLUDE[blend_subs](../includes/blend-subs-md.md)] 中辨識並解決簡單的程式碼後置語法錯誤、編譯錯誤和執行階段錯誤。 但是，在 Visual Studio 中能夠較容易辨識並解決程式碼後置語法錯誤。  
   
@@ -55,11 +55,11 @@ ms.locfileid: "63434088"
   
     專案類型清單隨即出現在 [新增專案] 對話方塊的左邊。 當您按一下專案類型時，與該類型有關聯的專案範本會顯示在右邊。  
   
-2. 在專案類型清單中，按一下**XAML （Windows 市集）**。  
+2. 在專案類型清單中，按一下 [**XAML (Windows 市集)** ]。  
   
-3. 在專案範本清單中，按一下**空白應用程式**。  
+3. 在專案範本清單中，按一下 [**空白應用程式**]。  
   
-4. 在 **名稱**文字方塊中，輸入`DebuggingSample`。  
+4. 在 [**名稱**] 文字方塊中，輸入 `DebuggingSample`。  
   
 5. 在 [位置] 文字方塊中，確認專案的位置。  
   
@@ -99,7 +99,7 @@ ms.locfileid: "63434088"
   
     螢幕隨即出現錯誤訊息，告訴您無法建置專案，同時應用程式底部的 [結果] 面板也會列出發生的錯誤。  
   
-    ![偵錯 Blend for Visual Studio 中的 XAML](../debugger/media/blend-debugxaml-xaml.png "blend_debugXAML_XAML")  
+    ![在 Blend for Visual Studio 中偵錯 XAML](../debugger/media/blend-debugxaml-xaml.png "blend_debugXAML_XAML")  
   
 ### <a name="resolving-xaml-errors"></a>解決 XAML 錯誤  
  偵測到 XAML 錯誤時，設計介面上會出現警示，說明您的專案包含無效的標記。 當您解決錯誤時，[結果] 面板中的錯誤清單也會隨即更新。 當您解決所有錯誤時，設計介面會再次出現並顯示應用程式畫面。  
@@ -108,22 +108,22 @@ ms.locfileid: "63434088"
   
 1. 按兩下清單中的第一個錯誤。 此描述為「值 '<' 不是有效的屬性」。 當您按兩下錯誤時，指標隨即找到程式碼中對應的位置。 `<` 前面的 `Button` 為有效字元，並非錯誤訊息中建議的屬性。 如果查看前一行程式碼，您會注意到 `Top` 屬性的右引號不見了。 請輸入右引號。 請注意，[結果] 面板中的錯誤清單隨即更新以反映您的變更。  
   
-2. 按兩下描述"'0' 無效的名稱開頭。 」 `Margin="0,149,0,0"` 格式正確，會出現。 但是，請注意 `Margin` 的色彩標示與程式碼中的其他 `Margin` 執行個體不符。 由於這個 `VerticalAlignment="Top` 前方的名稱/值組少了右引號 (`Margin="`)，因此就被視為屬於前一個屬性的值，導致 0 被視為名稱/值組的開頭。 請輸入 `Top` 的右引號。 [結果] 面板中的錯誤清單隨即更新以反映您的變更。  
+2. 按兩下描述 "' 0 ' 在名稱開頭無效。" `Margin="0,149,0,0"` 看起來是正確的格式。 但是，請注意 `Margin` 的色彩標示與程式碼中的其他 `Margin` 執行個體不符。 由於這個 `VerticalAlignment="Top` 前方的名稱/值組少了右引號 (`Margin="`)，因此就被視為屬於前一個屬性的值，導致 0 被視為名稱/值組的開頭。 請輸入 `Top` 的右引號。 [結果] 面板中的錯誤清單隨即更新以反映您的變更。  
   
 3. 按兩下剩餘的錯誤 [關閉的 XML 標籤 "Button" 不相符]。 指標隨即移至結尾**方格**標記處 (`</Grid>`)，提示錯誤是發生在 `Grid` 物件內。 請注意，第二個 `Button` 物件少了結尾標記。 在您新增結尾 `/` 之後，[結果] 面板清單也隨即更新。 我們現在已經解決一開始出現的錯誤，但是又出現了兩個錯誤。  
   
 4. 按兩下 [無法識別或無法存取成員 "content"。]， `c` 中的 `content` 應該是大寫才對。 請將小寫 "c" 改成大寫 "C"。  
   
-5. 按兩下 「 屬性 'Mame' 不存在於 '<http://schemas.microsoft.com/winfx/2006/xaml>' 命名空間。 」 "Mame" 中的 "M" 應該是 "N" 才對。 請將 "M" 改成 "N"。 現在已經可以解析 XAML，應用程式也隨即顯示在設計介面上。  
+5. 按兩下 屬性 ' Mame ' 不存在於 '<https://schemas.microsoft.com/winfx/2006/xaml>' 命名空間中」。 "Mame" 中的 "M" 應該是 "N" 才對。 請將 "M" 改成 "N"。 現在已經可以解析 XAML，應用程式也隨即顯示在設計介面上。  
   
-    ![偵錯 Blend for Visual Studio 中的 XAML](../debugger/media/blend-debugartboard-xaml.png "blend_debugArtboard_XAML")  
+    ![在 Blend for Visual Studio 中調試 XAML](../debugger/media/blend-debugartboard-xaml.png "blend_debugArtboard_XAML")  
   
     按 Ctrl+Shift+B 建置專案，確定不再發生其他任何錯誤。  
   
 ## <a name="debugging-in-visual-studio"></a>Visual Studio 偵錯  
  您可以在 Visual Studio 中開啟 [!INCLUDE[blend_subs](../includes/blend-subs-md.md)] 專案，讓應用程式的程式碼偵錯更為容易。 若要在 Visual Studio 中開啟 [!INCLUDE[blend_subs](../includes/blend-subs-md.md)] 專案，請以滑鼠右鍵按一下 [專案] 面板中的專案，然後按一下 [在 Visual Studio 進行編輯]。 在 Visual Studio 中結束偵錯工作階段之後，請按 Ctrl+Shift+S 儲存所有變更，然後再切換回 [!INCLUDE[blend_subs](../includes/blend-subs-md.md)]。 此時會出現要您重新載入專案的提示畫面。 請按一下 [全部皆是] 繼續在 [!INCLUDE[blend_subs](../includes/blend-subs-md.md)] 中處理專案。  
   
- 如需有關偵錯您的應用程式的詳細資訊，請參閱 <<c0> [ 在 Visual Studio 中的偵錯 Windows 市集應用程式](http://go.microsoft.com/fwlink/?LinkId=329944)。  
+ 如需有關偵錯工具的詳細資訊，請參閱[Visual Studio 中的 Debug Windows Store 應用程式](https://go.microsoft.com/fwlink/?LinkId=329944)。  
   
 ## <a name="getting-help"></a>取得協助  
- 如果您需要偵錯的詳細說明您[!INCLUDE[blend_subs](../includes/blend-subs-md.md)]應用程式中，您可以搜尋[Windows 市集應用程式社群論壇](http://go.microsoft.com/fwlink/?LinkId=280308)針對與您問題相關的文章或張貼問題。
+ 如果您需要更多協助來進行 [!INCLUDE[blend_subs](../includes/blend-subs-md.md)] 應用程式的調試，您可以搜尋[Windows Store 應用程式的社區論壇](https://go.microsoft.com/fwlink/?LinkId=280308)，以取得您的問題相關文章或張貼問題。

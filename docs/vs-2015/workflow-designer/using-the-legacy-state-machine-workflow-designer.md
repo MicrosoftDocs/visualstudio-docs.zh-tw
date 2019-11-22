@@ -18,20 +18,20 @@ caps.latest.revision: 5
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 8c2b1ce1f1b2c6a16b5576880904feadf37a3e7b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 5bab07b8ba0b71bd880135518ff9ff5fc697d54c
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72606764"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74302811"
 ---
 # <a name="using-the-legacy-state-machine-workflow-designer"></a>使用舊版狀態機器工作流程設計工具
-當您在以 [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] 或 [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] 為目標的 [!INCLUDE[vs2010](../includes/vs2010-md.md)] 中建立新狀態機器工作流程專案時，您可以選擇使用**狀態機器工作流程主控台應用程式**或**狀態機器工作流程程式庫**舊版專案範本。 如果您選擇其中一個狀態機器專案範本，則狀態機器設計工具會以舊版工作流程設計工具使用者介面的方式呈現。 如需舊版狀態機器專案範本的詳細資訊，請參閱 [How to：建立狀態機器工作流程主控台應用程式（舊版） ](../workflow-designer/how-to-create-state-machine-workflow-console-applications-legacy.md) 並 [How 至：建立狀態機器工作流程程式庫（舊版） ](../workflow-designer/how-to-create-a-state-machine-workflow-library-legacy.md)。
+當您在 [!INCLUDE[vs2010](../includes/vs2010-md.md)] 中建立新的狀態機器工作流程專案時，如果這個專案是以 [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] 或 [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] 為目標，您可以選擇使用 [**狀態機器工作流程主控台應用程式**] 或 [**狀態機器工作流程程式庫**] 舊版專案範本。 如果您選擇其中一個狀態機器專案範本，則狀態機器設計工具會以舊版工作流程設計工具使用者介面的方式呈現。 如需舊版狀態機器專案範本的詳細資訊，請參閱[如何：建立狀態機器工作流程主控台應用程式（舊版）](../workflow-designer/how-to-create-state-machine-workflow-console-applications-legacy.md)和[如何：建立狀態機器工作流程程式庫（舊版）](../workflow-designer/how-to-create-a-state-machine-workflow-library-legacy.md)。
 
  狀態機器工作流程包含了一組狀態。 其中有一個狀態表示初始狀態。 每個狀態可以接收特定的一組事件。 根據事件，會完成另一個狀態的轉換。 狀態機器工作流程會有最終狀態。 當轉換為最終狀態時，工作流程便完成。
 
 ## <a name="state-machine-designer-views"></a>狀態機器設計工具檢視
- 狀態機器設計工具是不限格式的設計工具，這表示活動可自由地在設計介面上移動。 狀態機器設計工具有兩個視圖：*狀態*視圖和*事件驅動*的視圖。
+ 狀態機器設計工具是不限格式的設計工具，這表示活動可自由地在設計介面上移動。 狀態機器設計工具有兩個檢視：「*狀態*」(State) 檢視和「*事件驅動*」(Event-Driven) 檢視。
 
  狀態檢視會顯示狀態活動和可包含在狀態活動中的事件驅動活動。 在這個檢視中，從某一個狀態的事件驅動活動延伸到另一個狀態的線條，表示狀態之間的轉換。 您也可以自行繪製線條來建立轉換。 若要繪製轉換，請選取事件驅動活動，再選取該活動上的其中一個控點，然後拖曳。 這個動作會繪製出一條直線。 接著將這條線連接到目標狀態，表示狀態間的轉換。
 
@@ -42,20 +42,20 @@ ms.locfileid: "72606764"
 
 |工具箱名稱|活動|描述|
 |------------------|--------------|-----------------|
-|**狀態**|[StateActivity](http://go.microsoft.com/fwlink?LinkID=65042)|代表狀態機器中的狀態。可能包含其他**StateActivity**活動。 如需詳細資訊，請參閱[使用 StateActivity 活動](http://go.microsoft.com/fwlink?LinkID=65083)。|
-|**SetState**|[SetStateActivity](http://go.microsoft.com/fwlink?LinkID=65041)|指定轉換至新狀態。 如需詳細資訊，請參閱[使用 SetStateActivity 活動](http://go.microsoft.com/fwlink?LinkID=65082)。|
-|**StateInitialization**|[StateInitializationActivity](http://go.microsoft.com/fwlink?LinkID=65044)|輸入狀態時執行，可能包含其他活動。 如需詳細資訊，請參閱[使用 StateInitialization 活動](http://go.microsoft.com/fwlink?LinkID=65006)。|
-|**StateFinalization**|[StateFinalizationActivity](http://go.microsoft.com/fwlink?LinkID=65043)|離開[StateActivity](http://go.microsoft.com/fwlink?LinkID=65042)活動時執行包含的活動。 如需詳細資訊，請參閱[使用 StateFinalizationActivity 活動](http://go.microsoft.com/fwlink?LinkID=65008)。|
-|**EventDriven**|[EventDrivenActivity](http://go.microsoft.com/fwlink?LinkID=65029)|用於信賴外部事件以啟動執行的狀態。 **EventDrivenActivity**活動必須具有將[IEventActivity](http://go.microsoft.com/fwlink?LinkID=65032)介面實作為第一個子活動的活動。 如需詳細資訊，請參閱[使用 EventDrivenActivity 活動](http://go.microsoft.com/fwlink?LinkID=65068)。|
+|**狀態**|[StateActivity](https://go.microsoft.com/fwlink?LinkID=65042)|代表狀態機器中的狀態。可能包含其他**StateActivity**活動。 如需詳細資訊，請參閱[使用 StateActivity 活動](https://go.microsoft.com/fwlink?LinkID=65083)。|
+|**SetState**|[SetStateActivity](https://go.microsoft.com/fwlink?LinkID=65041)|指定轉換至新狀態。 如需詳細資訊，請參閱[使用 SetStateActivity 活動](https://go.microsoft.com/fwlink?LinkID=65082)。|
+|**StateInitialization**|[StateInitializationActivity](https://go.microsoft.com/fwlink?LinkID=65044)|輸入狀態時執行，可能包含其他活動。 如需詳細資訊，請參閱[使用 StateInitialization 活動](https://go.microsoft.com/fwlink?LinkID=65006)。|
+|**StateFinalization**|[StateFinalizationActivity](https://go.microsoft.com/fwlink?LinkID=65043)|離開[StateActivity](https://go.microsoft.com/fwlink?LinkID=65042)活動時執行包含的活動。 如需詳細資訊，請參閱[使用 StateFinalizationActivity 活動](https://go.microsoft.com/fwlink?LinkID=65008)。|
+|**EventDriven**|[EventDrivenActivity](https://go.microsoft.com/fwlink?LinkID=65029)|用於信賴外部事件以啟動執行的狀態。 **EventDrivenActivity**活動必須具有將[IEventActivity](https://go.microsoft.com/fwlink?LinkID=65032)介面實作為第一個子活動的活動。 如需詳細資訊，請參閱[使用 EventDrivenActivity 活動](https://go.microsoft.com/fwlink?LinkID=65068)。|
 
- 狀態機器工作流程中的主要元件是[StateActivity](http://go.microsoft.com/fwlink?LinkID=65042)活動。 在狀態機器工作流程中的各種點捕捉到事件時，會進入不同的狀態來處理與事件相關聯的工作。 在工作流程的存留期中，工作流程會離開並進入數個不同的狀態。 這些狀態會使用[SetStateActivity](http://go.microsoft.com/fwlink?LinkID=65041)活動彼此連接。
+ 狀態機器工作流程中的主要元件是[StateActivity](https://go.microsoft.com/fwlink?LinkID=65042)活動。 在狀態機器工作流程中的各種點捕捉到事件時，會進入不同的狀態來處理與事件相關聯的工作。 在工作流程的存留期中，工作流程會離開並進入數個不同的狀態。 這些狀態會使用[SetStateActivity](https://go.microsoft.com/fwlink?LinkID=65041)活動彼此連接。
 
- 當您將新的**StateActivity**拖曳至工作流程設計介面時，可以將[EventDrivenActivity](http://go.microsoft.com/fwlink?LinkID=65029)、 [StateInitializationActivity](http://go.microsoft.com/fwlink?LinkID=65044)、 [StateFinalizationActivity](http://go.microsoft.com/fwlink?LinkID=65043)或其他**StateActivity**活動新增為子活動。
+ 當您將新的**StateActivity**拖曳至工作流程設計介面時，可以將[EventDrivenActivity](https://go.microsoft.com/fwlink?LinkID=65029)、 [StateInitializationActivity](https://go.microsoft.com/fwlink?LinkID=65044)、 [StateFinalizationActivity](https://go.microsoft.com/fwlink?LinkID=65043)或其他**StateActivity**活動新增為子活動。
 
 > [!CAUTION]
-> 當您使用狀態機器工作流程設計工具建立工作流程時，您必須使用 [**檔大綱**] 視圖視窗來監視您所設計之工作流程的結構。 [**檔大綱**] 視圖視窗中狀態機器工作流程的結構，會反映工作流程標記檔案中活動的邏輯版面配置。 當工作流程活動出現在設計介面時，其實體配置可能不會鏡像工作流程標記檔案中活動的邏輯配置。
+> 使用狀態機器工作流程設計工具建立工作流程時，必須使用 [**文件大綱**] 檢視視窗監視設計中的工作流程結構。 [**文件大綱**] 檢視視窗中狀態機器工作流程的結構檢視會鏡像工作流程標記檔案中活動的邏輯配置。 當工作流程活動出現在設計介面時，其實體配置可能不會鏡像工作流程標記檔案中活動的邏輯配置。
 >
-> 若要開啟 [**檔大綱**] 視窗，請在 [ **View** ] 功能表上，指向 [**其他視窗**]，然後選取 [**檔大綱**]。
+> 若要開啟 [**文件大綱**] 視窗，請在 [**檢視**] 功能表上指向 [**其他視窗**]，再選取 [**文件大綱**]。
 
 ## <a name="see-also"></a>另請參閱
- [如何：建立狀態機器工作流程主控台應用程式（舊版） ](../workflow-designer/how-to-create-state-machine-workflow-console-applications-legacy.md) [How：使用[StateActivity 活動](http://go.microsoft.com/fwlink?LinkID=65083)建立狀態機器工作流程程式庫（舊版） ](../workflow-designer/how-to-create-a-state-machine-workflow-library-legacy.md)[狀態機器工作流程](http://go.microsoft.com/fwlink?LinkID=65016)[使用 StateFinalizationActivity 活動](http://go.microsoft.com/fwlink?LinkID=65008) [使用 StateInitializationActivity 活動](http://go.microsoft.com/fwlink?LinkID=65006) 使用[EventDrivenActivity 活動](http://go.microsoft.com/fwlink?LinkID=65068)的[ SetStateActivity 活動](http://go.microsoft.com/fwlink?LinkID=65082)
+ [如何：建立狀態機器工作流程主控台應用程式（舊版）](../workflow-designer/how-to-create-state-machine-workflow-console-applications-legacy.md) how to：使用[StateActivity 活動](https://go.microsoft.com/fwlink?LinkID=65083)[建立狀態機器工作流程程式庫（舊版）](../workflow-designer/how-to-create-a-state-machine-workflow-library-legacy.md) [狀態機器工作流程](https://go.microsoft.com/fwlink?LinkID=65016)使用[StateInitializationActivity 活動](https://go.microsoft.com/fwlink?LinkID=65006)使用[StateFinalizationActivity 活動](https://go.microsoft.com/fwlink?LinkID=65008)使用[SetStateActivity 活動](https://go.microsoft.com/fwlink?LinkID=65082)使用[EventDrivenActivity 活動](https://go.microsoft.com/fwlink?LinkID=65068)

@@ -21,12 +21,12 @@ caps.latest.revision: 47
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ac304d695c13fde2b69aafbb903493ad9865bf87
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f90344c156ea6c012c6ac086ffa40bf30e78a682
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68187812"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300729"
 ---
 # <a name="creating-bootstrapper-packages"></a>建立啟動載入器套件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ ms.locfileid: "68187812"
  啟動載入器會先偵測是否已安裝所有必要條件。 如果未安裝必要條件，啟動載入器會先顯示授權合約。 接著，在使用者接受授權合約之後，就會開始安裝必要條件。 不過，如果啟動載入器偵測到所有必要條件，就會直接啟動應用程式安裝程式。  
   
 ## <a name="creating-custom-packages"></a>建立自訂套件  
- 您可以使用 Visual Studio 中的 XML 編輯器產生資訊清單。 如需詳細資訊，請參閱[如何：建立封裝資訊清單](../deployment/how-to-create-a-package-manifest.md)和[How to:建立產品資訊清單](../deployment/how-to-create-a-product-manifest.md)。 若要查看建立啟動載入器套件的範例，請參閱[逐步解說：建立自訂啟動載入器以顯示隱私權提示](../deployment/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt.md)。  
+ 您可以使用 Visual Studio 中的 XML 編輯器產生資訊清單。 如需詳細資訊，請參閱 [How to: Create a Package Manifest](../deployment/how-to-create-a-package-manifest.md) 與 [How to: Create a Product Manifest](../deployment/how-to-create-a-product-manifest.md)。 若要查看建立啟動載入器套件的範例，請參閱[逐步解說：建立自訂啟動載入器以顯示隱私權提示](../deployment/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt.md)。  
   
  若要建立啟動載入器套件，您必須將可轉散發套件以 EXE 或 MSI 檔案形式提供給啟動載入器資訊清單產生器。 啟動載入器資訊清單產生器接著會建立下列檔案：  
   
@@ -82,7 +82,7 @@ ms.locfileid: "68187812"
 \Program Files (x86)\Microsoft Visual Studio 14.0\SDK\Bootstrapper\Packages  
 ```  
   
- 您也可以從下列登錄機碼中的 [路徑]  值，決定啟動載入器資料夾位置：  
+ 您也可以從下列登錄機碼中的 [路徑] 值，決定啟動載入器資料夾位置：  
   
 ```  
 HKLM\Software\Microsoft\GenericBootstrapper\11.0  
@@ -115,7 +115,7 @@ HKLM\Software\Wow6432Node\Microsoft\GenericBootstrapper\11.0
   
  `%ProgramFiles%\Microsoft.NET\RedistList`  
   
- 可轉散發清單是 XML 檔案，您應該使用下列格式：*公司名稱*。*元件名稱*.Redistlist.xml。 例如，如果 Acme 建立稱為 Datawidgets 的元件，請使用 Acme.DataWidgets.RedistList.xml。 可轉散發清單的內容範例可能如下所示：  
+ 可轉散發清單是 XML 檔案，應該使用下列格式命名： *公司名稱*.*元件名稱*.RedistList.xml。 例如，如果 Acme 建立稱為 Datawidgets 的元件，請使用 Acme.DataWidgets.RedistList.xml。 可轉散發清單的內容範例可能如下所示：  
   
 ```  
 <?xml version="1.0" encoding="UTF-8"?>  
@@ -127,5 +127,5 @@ HKLM\Software\Wow6432Node\Microsoft\GenericBootstrapper\11.0
 ## <a name="see-also"></a>另請參閱  
  [如何：使用 ClickOnce 應用程式安裝必要條件](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)   
  [必要條件對話方塊](../ide/reference/prerequisites-dialog-box.md)   
- [產品和封裝結構描述參考](../deployment/product-and-package-schema-reference.md)   
- [使用 Visual Studio 2005 啟動載入器開始進行安裝](http://go.microsoft.com/fwlink/?LinkId=107537)
+ [產品和套件架構參考](../deployment/product-and-package-schema-reference.md)   
+ [使用 Visual Studio 2005 啟動載入器開始進行安裝](https://go.microsoft.com/fwlink/?LinkId=107537)

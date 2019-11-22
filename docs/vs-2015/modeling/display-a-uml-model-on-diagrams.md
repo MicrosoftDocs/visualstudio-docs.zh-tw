@@ -11,17 +11,17 @@ caps.latest.revision: 25
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 4c8365f045618b92b4b34935bf5024c2ff781650
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 67eb1a6ce55292415da4a5c4e363941a4285d8b7
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72669747"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74296013"
 ---
 # <a name="display-a-uml-model-on-diagrams"></a>在圖表上顯示 UML 模型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-在 Visual Studio 擴充功能的程式碼中，您可以控制模型項目在圖表上顯示的方式。 若要查看哪些 Visual Studio 版本支援 UML 模型，請參閱 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。
+在 Visual Studio 擴充功能的程式碼中，您可以控制模型項目在圖表上顯示的方式。 若要查看哪些版本的 Visual Studio 支援 UML 模型，請參閱 [Architecture and Modeling Tools 的版本支援](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。
 
 本主題內容：
 - [若要在圖表上顯示元素](#Display)
@@ -43,7 +43,7 @@ ms.locfileid: "72669747"
 |---------------------|-----------------|-------------------------------------|
 |分類器|`Class`<br /><br /> `Component`<br /><br /> `Actor`<br /><br /> `Use Case`|在指定的圖表上建立相關聯的圖形。 您可以為每一個分類器建立任意數目的圖形。<br /><br /> `diagram.Display<modelElementType>`<br /><br /> `(modelElement, parentShape,`<br /><br /> `xPosition , yPosition);`<br /><br /> 針對此圖表頂端的圖形，請將 `parentShape` 設為 `null`。<br /><br /> 在某一個圖形內顯示另一個圖形。<br /><br /> `IShape<IUseCase> usecaseShape =`<br /><br /> `useCaseDiagram.Display`<br /><br /> `(useCase,`<br /><br /> `subsystemShape,`<br /><br /> `subsystemShape.XPosition + 5,`<br /><br /> `subsystemShape.YPosition + 5);`**注意：** 如果您在**ILinkedUndo**交易內執行顯示，此方法有時不會傳回任何 `IShape`。 但是會正確建立此圖形，並且可以使用 `IElement.Shapes().` 存取。|
 |分類器的子系|屬性、作業、<br /><br /> 組件、通訊埠|自動 - 不需要程式碼。<br /><br /> 它會做為父系的一部分顯示。|
-|行為|互動 (序列)、<br /><br /> 活動|將行為繫結至適當的圖表。<br /><br /> 每一個行為每次最多可以繫結至一個圖表。<br /><br /> 例如:<br /><br /> `sequenceDiagram.Bind(interaction);`<br /><br /> `activityDiagram.Bind(activity);`|
+|行為|互動 (序列)、<br /><br /> 活動|將行為繫結至適當的圖表。<br /><br /> 每一個行為每次最多可以繫結至一個圖表。<br /><br /> 例如：<br /><br /> `sequenceDiagram.Bind(interaction);`<br /><br /> `activityDiagram.Bind(activity);`|
 |行為的子系|生命線、訊息、動作、物件節點|自動 - 不需要程式碼。<br /><br /> 它會在此父系繫結至圖表時顯示。|
 |Relationship|關聯、一般化、流程、相依性|自動 - 不需要程式碼。<br /><br /> 它會在兩端都顯示的每一個圖表上顯示。|
 
@@ -54,7 +54,7 @@ ms.locfileid: "72669747"
 
  `IShape<` *ElementType* `>`
 
- 其中*ElementType*是模型元素的類型，例如 `IClass` 或 `IUseCase`。
+ 其中*項目類型*是此模型項目的類型，例如 `IClass` 或 `IUseCase`。
 
 |||
 |-|-|
@@ -75,7 +75,7 @@ ms.locfileid: "72669747"
 |`anIShape.Move(x, y, [width], [height])`|移動圖形或調整大小。|
 |`IDiagram.EnsureVisible( IEnumerable<IShape> shapes, bool zoomToFit = false)`|啟動此視窗並捲動該圖表，以便所有指定的圖形都能呈現。 這些圖形全都必須在此圖表上。 如果 `zoomToFit` 為 true，該圖表即會視需要縮放，使所有圖形都能呈現。|
 
- 如需範例，請參閱[定義對齊方式命令](#AlignCommand)。
+ 如需範例，請參閱[定義對齊命令](#AlignCommand)。
 
 ## <a name="Removing"></a>若要從圖表中移除圖形
  您可以刪除一些項目類型的圖形，而不需刪除該項目。
@@ -378,5 +378,5 @@ namespace AlignCommand
 
 ```
 
-## <a name="see-also"></a>請參閱
- [擴充 uml 模型和圖表](../modeling/extend-uml-models-and-diagrams.md)[導覽 uml 模型](../modeling/navigate-the-uml-model.md)[範例：對齊圖表功能表命令的圖形](http://go.microsoft.com/fwlink/?LinkId=213809)[範例：建立專案、圖形和](http://go.microsoft.com/fwlink/?LinkId=213811)造型
+## <a name="see-also"></a>另請參閱
+ [擴充 uml 模型和圖表](../modeling/extend-uml-models-and-diagrams.md)[導覽 uml 模型](../modeling/navigate-the-uml-model.md)[範例：對齊圖表功能表命令的圖形](https://go.microsoft.com/fwlink/?LinkId=213809)[範例：建立專案、圖形和](https://go.microsoft.com/fwlink/?LinkId=213811)造型

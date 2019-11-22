@@ -13,12 +13,12 @@ caps.latest.revision: 24
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 6e6664f78123864073d605b59c7f43e5b2db36cc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 19d673d9d09ce95580e25033966e1a901255fd90
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72609255"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74292647"
 ---
 # <a name="adding-a-tracking-property-to-a-domain-specific-language-definition"></a>在網域指定的語言定義中加入追蹤屬性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,19 +45,19 @@ ms.locfileid: "72609255"
 
 - 在 [**屬性**] 視窗中，當追蹤屬性位於 [已更新的使用者] 狀態時，其值會以粗體字顯示。
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>先決條件
  開始進行本逐步解說之前，您必須先安裝下列元件：
 
 |||
 |-|-|
-|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185579](http://go.microsoft.com/fwlink/?LinkID=185579)|
-|[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185580](http://go.microsoft.com/fwlink/?LinkID=185580)|
-|[!INCLUDE[dsl](../includes/dsl-md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185581](http://go.microsoft.com/fwlink/?LinkID=185581)|
+|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185579](https://go.microsoft.com/fwlink/?LinkID=185579)|
+|[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185580](https://go.microsoft.com/fwlink/?LinkID=185580)|
+|[!INCLUDE[dsl](../includes/dsl-md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185581](https://go.microsoft.com/fwlink/?LinkID=185581)|
 
 ## <a name="creating-the-dsl-project"></a>建立 DSL 專案
  針對您的特定領域語言建立專案。
 
-#### <a name="to-create-the-project"></a>建立專案
+#### <a name="to-create-the-project"></a>若要建立專案
 
 1. 建立特定領域語言設計工具專案。 將它命名為 `TrackingPropertyDSL`。
 
@@ -100,15 +100,15 @@ ms.locfileid: "72609255"
 
     2. 在新屬性的 [**屬性**] 視窗中，將 [**預設值**] 設定為 `DefaultNamespace`，並將 [**類型**] 設定為 [**字串**]。
 
-2. 在**examplemodel.store.customer**網域類別中，新增名為 `CustomElements` 的網域屬性。
+2. 在**examplemodel.store.customer**網域類別中，新增名為 `CustomElements`的網域屬性。
 
      在新屬性的 [**屬性**] 視窗中，將 [**類型**] 設定為 [**計算**]。
 
-3. 在**ExampleElement**網域類別中，新增名為 `Namespace` 的網域屬性。
+3. 在**ExampleElement**網域類別中，新增名為 `Namespace`的網域屬性。
 
      在新屬性的 [**屬性**] 視窗中，將 [**可流覽**] 設定為 [ **False**]，並將 [**類型**] 設定為**CustomStorage**。
 
-4. 在**ExampleElement**網域類別中，新增名為 `IsNamespaceTracking` 的網域屬性。
+4. 在**ExampleElement**網域類別中，新增名為 `IsNamespaceTracking`的網域屬性。
 
      在新屬性的 **屬性** 視窗中，將 **可流覽** 設定為  **False**，將 **預設值** **設定為** `true`，並將 **類型** 設定為
 
@@ -141,7 +141,7 @@ ms.locfileid: "72609255"
 
 #### <a name="to-transform-the-text-templates"></a>轉換文字模板
 
-1. 在 [**方案總管**] 工具列上，按一下 [**轉換所有範本**]。
+1. 在 [方案總管]工具列上，按一下 [轉換所有範本]。
 
 2. 系統會重新產生解決方案的程式碼，並儲存 Dsldefinition.dsl 檔。 如需定義檔之 XML 格式的詳細資訊，請參閱[dsldefinition.dsl 檔。](../modeling/the-dsldefinition-dsl-file.md)
 
@@ -160,7 +160,7 @@ ms.locfileid: "72609255"
 
      隨即會建立並開啟 NamespaceTrackingProperty.cs 檔案以供編輯。
 
-4. 在資料夾中，建立下列程式碼檔案： `ExampleModel.cs,``HelperClasses.cs`、`Serialization.cs` 和 `TypeDescriptor.cs`。
+4. 在資料夾中，建立下列程式碼檔案： `ExampleModel.cs,``HelperClasses.cs`、`Serialization.cs`和 `TypeDescriptor.cs`。
 
 5. 在**DslPackage**專案中，同時建立 `CustomCode` 資料夾，並將 `Package.cs` 程式碼檔案加入其中。
 
@@ -346,7 +346,7 @@ ms.locfileid: "72609255"
 > [!NOTE]
 > DSL 工具針對 `ExampleModel` 呼叫所產生的程式碼 `GetCustomElementsValue`;不過，DSL 工具不會產生可執行方法的程式碼。
 
- 定義 `GetCustomElementsValue` 方法會為 `ExampleModel` 的 CustomElements 計算屬性提供邏輯。 這個方法會計算具有「命名空間追蹤」屬性（具有使用者更新值）的 `ExampleElement` 網域類別數目，並將表示此計數的字串當做模型中的總元素數的比例傳回。
+ 定義 `GetCustomElementsValue` 方法會為 `ExampleModel`的 CustomElements 計算屬性提供邏輯。 這個方法會計算具有「命名空間追蹤」屬性（具有使用者更新值）的 `ExampleElement` 網域類別數目，並將表示此計數的字串當做模型中的總元素數的比例傳回。
 
  此外，將 `OnDefaultNamespaceChanged` 方法加入 `ExampleModel`，並覆寫 `ExampleModel` 之 `DefaultNamespacePropertyHandler` 嵌套類別的 `OnValueChanged` 方法，以呼叫 `OnDefaultNamespaceChanged`。
 
@@ -420,7 +420,7 @@ ms.locfileid: "72609255"
 ## <a name="adding-custom-code-for-the-tracking-property"></a>加入追蹤屬性的自訂程式碼
  將 `CalculateNamespace` 方法加入 `ExampleElement` 網域類別。
 
- 定義此方法會為 `ExampleModel` 的 CustomElements 計算屬性提供邏輯。 這個方法會計算具有「命名空間追蹤」屬性（在使用者狀態更新）中的 `ExampleElement` 網域類別數目，並傳回表示此計數的字串，做為模型中的總專案數比例。
+ 定義此方法會為 `ExampleModel`的 CustomElements 計算屬性提供邏輯。 這個方法會計算具有「命名空間追蹤」屬性（在使用者狀態更新）中的 `ExampleElement` 網域類別數目，並傳回表示此計數的字串，做為模型中的總專案數比例。
 
  此外，新增、和方法的儲存體，以取得和設定 `ExampleElement` 網域類別的命名空間自訂儲存體屬性。
 
@@ -722,11 +722,11 @@ ms.locfileid: "72609255"
 
 #### <a name="to-exercise-the-language"></a>若要練習語言
 
-1. 在 [建置] 功能表上，按一下 [重建方案]。
+1. 在 **的**[建置]**功能表上，按一下** [重建方案]{5}。
 
-2. 按一下 [偵錯] 功能表上的 [開始偵錯]。
+2. 按一下 [**偵錯**] 功能表上的 [**開始偵錯**]。
 
-     @No__t_0 的實驗性組建會開啟包含空白測試檔案的「**調試**程式」方案。
+     [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 的實驗性組建會開啟包含空白測試檔案的「**調試**程式」方案。
 
 3. 在**方案總管**中，按兩下 trackingPropertyDsl 檔案，在設計工具中開啟該檔案，然後按一下設計介面。
 
@@ -759,6 +759,6 @@ ms.locfileid: "72609255"
 ## <a name="next-steps"></a>後續步驟
  如果您打算使用一個以上的追蹤屬性，或在多個 DSL 中執行追蹤屬性，您可以建立文字模板來產生支援每個追蹤屬性的通用程式碼。 如需文字模板的詳細資訊，請參閱程式[代碼產生和 T4 文字模板](../modeling/code-generation-and-t4-text-templates.md)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
  <xref:Microsoft.VisualStudio.Modeling.Design.TrackingPropertyDescriptor> <xref:Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor>
  [如何定義特定領域語言](../modeling/how-to-define-a-domain-specific-language.md)[如何：建立特定領域語言方案](../modeling/how-to-create-a-domain-specific-language-solution.md)[逐步解說：自訂特定領域語言定義](../misc/walkthrough-customizing-the-domain-specific-language-definition.md)

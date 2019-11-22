@@ -11,12 +11,12 @@ caps.latest.revision: 14
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: ddb8688822f4465d313130e5505ff67a93413956
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 5456ef4935feb2ad6f08e2a0b7ff24ad58089e1f
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72668860"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297865"
 ---
 # <a name="options-dialog-box-projects-and-solutions-web-projects"></a>選項對話方塊、專案和方案、Web 專案
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -26,9 +26,9 @@ ms.locfileid: "72668860"
  根據預設，當您在 Visual Studio 中執行 Web 專案時 (例如，使用 F5 或 Ctrl+F5)，Visual Studio 會使用 Visual Studio 程式開發伺服器。 如需詳細資訊，請參閱 [Visual Studio 中 ASP.NET Web 專案的 Web 伺服器](https://msdn.microsoft.com/31d4f588-df59-4b7e-b9ea-e1f2dd204328)。
 
 > [!NOTE]
-> 根據您目前使用的設定或版本，您所看到的對話方塊可用選項，以及功能表命令的名稱和位置，可能會與 [說明] 中描述的有所不同。 撰寫此說明頁時，主要是以 [Web 設定] 為考量。 若要檢視或變更您的設定，請選擇 [工具] 功能表上的 [匯入和匯出設定]。 如需詳細資訊，請參閱在 Visual Studio 中自訂開發設定 [Walkthrough: Calling Code in an VSTO Add-in from VBA](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。
+> 根據您目前使用的設定或版本，您所看到的對話方塊可用選項，以及功能表命令的名稱和位置，可能會與 [說明] 中描述的有所不同。 撰寫此說明頁時，主要是以 [**Web 設定**] 為考量。 若要檢視或變更您的設定，請在 [**工具**] 功能表上選擇 [**匯入和匯出設定**]。 如需詳細資訊，請參閱[在 Visual Studio 中自訂開發設定](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)
 
 ## <a name="settings"></a>設定
- **使用 web sites 和專案的64位版本 IIS Express**選取此選項可使用 IIS Express，而不是 Visual Studio 程式開發伺服器。 如需詳細資訊，請參閱 [IIS Express 簡介](http://go.microsoft.com/?linkid=9747914)和 [IIS Express 概觀](http://go.microsoft.com/?linkid=9747915)。 預設會停用這個選項。
+ **使用 web sites 和專案的64位版本 IIS Express**選取此選項可使用 IIS Express，而不是 Visual Studio 程式開發伺服器。 如需詳細資訊，請參閱 [IIS Express 簡介](https://weblogs.asp.net/scottgu/introducing-iis-express)和 [IIS Express 概觀](https://docs.microsoft.com/iis/extensions/introduction-to-iis-express/iis-express-overview)。 預設會停用這個選項。
 
  **當錯誤清單中有錯誤時，在執行 web 應用程式前提出警告**如果核取此方塊，當您嘗試在沒有發生錯誤的情況下執行 web 應用程式時，將會收到警告。

@@ -11,43 +11,43 @@ caps.latest.revision: 63
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 87acbb53fd8fe5eae744aa4ef72c808da8eb6642
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 23ba1a6900559d7ee13639bb1da696127e47e536
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72663484"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299273"
 ---
 # <a name="define-a-menu-command-on-a-modeling-diagram"></a>在模型圖上定義功能表命令
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-在 Visual Studio 中，您可以定義 UML 圖表之捷徑功能表上的額外功能表項目。 您可以控制是否在圖表上任何項目的捷徑功能表上顯示和啟用功能表命令，而且您可以撰寫在使用者選擇功能表項目時所執行的程式碼。 您可以將這些擴充功能封裝成 Visual Studio 整合擴充功能 ([VSIX](http://go.microsoft.com/fwlink/?LinkId=160780))，以及將這些整合擴充功能散發給其他 Visual Studio 使用者。
+在 Visual Studio 中，您可以定義 UML 圖表之捷徑功能表上的額外功能表項目。 您可以控制是否在圖表上任何項目的捷徑功能表上顯示和啟用功能表命令，而且您可以撰寫在使用者選擇功能表項目時所執行的程式碼。 您可以將這些擴充功能封裝成 Visual Studio 整合擴充功能 ([VSIX](https://go.microsoft.com/fwlink/?LinkId=160780))，以及將這些整合擴充功能散發給其他 Visual Studio 使用者。
 
 ## <a name="requirements"></a>需求
  請參閱 [需求](../modeling/extend-uml-models-and-diagrams.md#Requirements)。
 
- 若要查看哪些 Visual Studio 版本支援這項功能，請參閱 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。
+ 若要查看哪些版本的 Visual Studio 支援此功能，請參閱 [Architecture and Modeling Tools 的版本支援](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。
 
 ## <a name="defining-the-menu-command"></a>定義功能表命令
  若要建立 UML 設計工具的功能表命令，您必須建立一個類別來定義命令行為，並且將該類別內嵌在 Visual Studio 整合擴充功能 (VSIX)。 VSIX 會做為容器，可安裝該命令。 定義功能表命令有兩個替代方法：
 
-- **使用專案範本在它自己的 VSIX 中建立功能表命令。** 這是較快速的方法。 它適用於您不想合併您的功能表命令與其他類型的擴充功能時，例如驗證擴充功能、自訂工具箱項目或軌跡處理常式。
+- **使用專案範本在自己的 VSIX 中建立功能表命令。** 這是較快的方法。 它適用於您不想合併您的功能表命令與其他類型的擴充功能時，例如驗證擴充功能、自訂工具箱項目或軌跡處理常式。
 
-- **建立個別的功能表命令和 VSIX 專案。** 如果您想要將數種類型的擴充功能結合成相同的 VSIX，則請使用這個方法。 例如，如果您的功能表命令預期模型要觀察特定的條件約束，可以將它內嵌至與驗證方法相同的 VSIX。
+- **建立個別的功能表命令和 VSIX 專案。** 如果您想要將數種類型的擴充功能合併成相同的 VSIX，即可使用此方法。 例如，如果您的功能表命令預期模型要觀察特定的條件約束，可以將它內嵌至與驗證方法相同的 VSIX。
 
 #### <a name="to-create-a-menu-command-in-its-own-vsix"></a>在自己的 VSIX 中建立功能表命令
 
-1. 在 [新增專案] 對話方塊中，於 [模型專案]之下，選取 [命令擴充功能]。
+1. 在 [新增專案] 對話方塊中，於 [模型專案] 之下，選取 [命令擴充功能]。
 
 2. 在新的專案中開啟 **.cs** 檔案，並修改 `CommandExtension` 類別來實作命令。
 
-    如需詳細資訊，請參閱 [實作功能表命令](#Implementing)。
+    如需詳細資訊，請參閱[實作功能表命令](#Implementing)。
 
 3. 定義新的類別，即可將額外命令加入這個專案。
 
-4. 按 F5 測試功能表命令。 如需詳細資訊，請參閱 [執行功能表命令](#Executing)。
+4. 按 F5 測試功能表命令。 如需詳細資訊，請參閱[執行功能表命令](#Executing)。
 
-5. 在另一部電腦上安裝功能表命令，方法是複製專案所建立的**bin \\ \* \\ \* .vsix**檔案。 如需詳細資訊，請參閱 [安裝和解除安裝擴充功能](#Installing)。
+5. 在另一部電腦上安裝功能表命令，方法是複製專案所建立的**bin\\\*\\\*.vsix**檔案。 如需詳細資訊，請參閱[安裝和解除安裝擴充功能](#Installing)。
 
    以下是替代程序：
 
@@ -55,9 +55,9 @@ ms.locfileid: "72663484"
 
 1. 在新的 Visual Studio 方案或現有的方案中，建立類別庫專案。
 
-   1. 在 [檔案] 功能表上，依序選擇 [新增]和 [專案]。
+   1. 在 [檔案] 功能表上，依序選擇 [新增] 和 [專案]。
 
-   2. 在 [已安裝的範本]下，選取 [Visual C#] 或 [Visual Basic]。 在中間欄中，選擇 [類別庫]。
+   2. 在 [已安裝的範本] 下，選取 [Visual C#] 或 [Visual Basic]。 在中間欄中，選擇 [類別庫]。
 
    3. 設定 [方案] 以表示您是要建立新的方案，還是將元件加入已經開啟的 VSIX 方案。
 
@@ -65,9 +65,9 @@ ms.locfileid: "72663484"
 
 2. 將下列參考加入您的專案。
 
-   |                                                                                                    參考資料                                                                                                    |                                                                                                  這可讓您執行                                                                                                  |
+   |                                                                                                    參考                                                                                                    |                                                                                                  這可讓您執行                                                                                                  |
    |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-   |                                                                                        System.ComponentModel.Composition                                                                                        |                                         使用 [Managed Extensibility Framework (MEF)](https://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde)定義元件。                                          |
+   |                                                                                        System.ComponentModel.Composition                                                                                        |                                         使用 [Managed Extensibility Framework (MEF)](https://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde) 定義元件                                          |
    |                                                                                      Microsoft.VisualStudio.Uml.Interfaces                                                                                      |                                                                                        讀取和變更模型項目的屬性。                                                                                         |
    |                                                                             Microsoft.VisualStudio.ArchitectureTools.Extensibility                                                                              |                                                                                      建立模型項目、修改圖表上的圖形。                                                                                       |
    |                                                                                  Microsoft.VisualStudio.Modeling.Sdk.[版本]                                                                                  | 定義模型事件處理常式。<br /><br /> 將一系列的變更封裝至您的模型。 如需詳細資訊，請參閱[使用交易連結 UML 模型更新](../modeling/link-uml-model-updates-by-using-transactions.md)。 |
@@ -136,7 +136,7 @@ ms.locfileid: "72663484"
    }
    ```
 
-    如需要在方法中置入哪些項目的詳細資訊，請參閱 [實作功能表命令](#Implementing)。
+    如需要在方法中置入哪些項目的詳細資訊，請參閱[實作功能表命令](#Implementing)。
 
    您必須將功能表命令加入 VSIX 專案，期將會做為安裝命令的容器。 如果您想要，可以在相同的 VSIX 中包含其他元件。
 
@@ -146,9 +146,9 @@ ms.locfileid: "72663484"
 
 2. 除非您的方案已經包含 VSIX 專案，否則請建立一個。
 
-    1. 在 [方案總管]中，在方案的捷徑功能表上，選擇 [新增]和 [新增專案]。
+    1. 在 [方案總管] 中，在方案的捷徑功能表上，選擇 [新增] 和 [新增專案]。
 
-    2. 在 [已安裝的範本]下，展開 **Visual C#** 或 **Visual Basic**，然後選擇 [擴充性]。 在中間的資料行中，選擇 [VSIX 專案]。
+    2. 在 [已安裝的範本] 下，展開 **Visual C#** 或 **Visual Basic**，然後選擇 [擴充性]。 在中間的資料行中，選擇 [VSIX 專案]。
 
 3. 在方案總管中，於 VSIX 專案的捷徑功能表上，選擇 [設定為啟始專案]。
 
@@ -172,7 +172,7 @@ ms.locfileid: "72663484"
 |||
 |-|-|
 |`string Text { get; }`|傳回功能表項目的標籤。|
-|`void QueryStatus(IMenuCommand command);`|使用者在圖表中按一下滑鼠右鍵時呼叫。<br /><br /> 這個方法不應該變更模型。<br /><br /> 使用 `DiagramContext.CurrentDiagram.SelectedShapes` 來判斷是否要顯示和啟用命令。<br /><br /> 設定：<br /><br /> -    `command.Visible` `true` 如果使用者在圖表中按一下滑鼠右鍵時，命令必須出現在功能表中<br />如果使用者可以按一下功能表中的命令，-    `command.Enabled` `true`<br />-    `command.Text` 動態設定功能表標籤|
+|`void QueryStatus(IMenuCommand command);`|使用者在圖表中按一下滑鼠右鍵時呼叫。<br /><br /> 這個方法不應該變更模型。<br /><br /> 使用 `DiagramContext.CurrentDiagram.SelectedShapes` 來判斷是否要顯示和啟用命令。<br /><br /> 設定：<br /><br /> -   `command.Visible` `true` 如果使用者在圖表中按一下滑鼠右鍵時，命令必須出現在功能表中<br />如果使用者可以按一下功能表中的命令，-   `command.Enabled` `true`<br />-   `command.Text` 動態設定功能表標籤|
 |`void Execute (IMenuCommand command);`|使用者按一下您的功能表項目時呼叫 (如果顯示並啟用功能表項目)。|
 
 ### <a name="accessing-the-model-in-code"></a>使用程式碼存取模型
@@ -220,9 +220,9 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>()) {...}
 
      **疑難排解**：如果新的 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 未啟動：
 
-    - 如果您有多個專案，請確定 VSIX 專案已設定為方案的啟始專案。
+    - 您如有多個專案，請確定已將 VSIX 專案設定為解決方案的啟始專案。
 
-    - 在方案總管的啟始專案或唯一專案的捷徑功能表上，選擇 [屬性]。 在 [專案屬性編輯器] 中，選取 [**調試**程式] 索引標籤。請確定 [**啟動外部程式**] 欄位中的字串是 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的完整路徑名稱，通常是：
+    - 在方案總管的啟始專案或唯一專案的捷徑功能表上，選擇 [屬性]。 在 [專案屬性編輯器] 中，選取 [**調試**程式] 索引標籤。請確定 [**啟動外部程式**] 欄位中的字串是 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]的完整路徑名稱，通常是：
 
          `C:\Program Files\Microsoft Visual Studio [version]\Common7\IDE\devenv.exe`
 
@@ -236,7 +236,7 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>()) {...}
 
     - `Import` 和 `Export` 屬性的參數有效。
 
-    - @No__t_0 方法並未設定 `command`。`Enabled` 或 `Visible` 欄位以 `false`。
+    - `QueryStatus` 方法並未設定 `command`。`Enabled` 或 `Visible` 欄位以 `false`。
 
     - 您正在使用的模型圖類型 (UML 類別、順序等) 會列為下列其中一個功能表命令類別屬性： `[ClassDesignerExtension]`、 `[SequenceDesignerExtension]` 等。
 
@@ -247,9 +247,9 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>()) {...}
 
 1. 在您的電腦中，尋找 VSIX 專案所建置的 **.vsix** 檔案。
 
-    1. 在方案總管中，於 VSIX 專案的捷徑功能表上，選擇 [在 Windows 檔案總管中開啟資料夾]。
+    1. 在**方案總管**之 VSIX 專案的捷徑功能表上，選擇 [在 Windows 檔案總管開啟資料夾]。
 
-    2. 找出 **\* \\** _yourproject。_ 的 bin \\
+    2. 找出 **\*\\** _yourproject。_ 的 bin\\
 
 2. 將 **.vsix** 檔案複製到要安裝擴充功能的目標電腦。 這可以是您自己的電腦或另一部電腦。
 
@@ -269,9 +269,9 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>()) {...}
 
 3. 選取擴充功能，然後選擇 [解除安裝]。
 
-   在很少見的情況下，故障的擴充功能無法載入並且會在錯誤視窗中建立報告，但不會顯示在擴充管理員中。 在此情況下，您可以藉由從下列位置刪除檔案來移除擴充功能：
+   在很少見的情況下，錯誤的擴充功能會無法載入，並且在錯誤視窗中建立報表，但不會顯示在擴充管理員中。 在此情況下，您可以藉由從下列位置刪除檔案來移除擴充功能：
 
-   *% LocalAppData%* **\Local\Microsoft\VisualStudio \\ [version] \Extensions**
+   *% LocalAppData%* **\Local\Microsoft\VisualStudio\\[version] \Extensions**
 
 ## <a name="MenuExample"></a> 範例
  下列範例顯示功能表命令的程式碼，以在類別圖表上交換兩個項目的名稱。 這段程式碼必須在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 擴充功能專案中進行建置和安裝 (如先前章節所述)。
@@ -362,5 +362,5 @@ namespace SwapClassNames
 }
 ```
 
-## <a name="see-also"></a>請參閱
- [定義和安裝模型擴充功能](../modeling/define-and-install-a-modeling-extension.md)[擴充 UML 模型和圖表](../modeling/extend-uml-models-and-diagrams.md)[在模型圖表上定義軌跡處理常式](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md)[定義自訂模型工具箱專案](../modeling/define-a-custom-modeling-toolbox-item.md)[定義 UML 模型編輯的驗證條件約束](../modeling/define-validation-constraints-for-uml-models.md) [UML 順序圖表：使用 uml API 程式](../modeling/edit-uml-sequence-diagrams-by-using-the-uml-api.md)[設計搭配 uml api](../modeling/programming-with-the-uml-api.md) [範例：命令在 Uml 圖表上對齊圖形](http://go.microsoft.com/fwlink/?LinkID=213809)
+## <a name="see-also"></a>另請參閱
+ [定義和安裝模型擴充](../modeling/define-and-install-a-modeling-extension.md)功能[擴充 UML 模型和圖表](../modeling/extend-uml-models-and-diagrams.md)[在模型圖表上定義軌跡處理常式](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md)定義[自訂模型工具箱專案](../modeling/define-a-custom-modeling-toolbox-item.md)[定義 uml 模型的驗證條件約束](../modeling/define-validation-constraints-for-uml-models.md)使用 uml api 程式[設計與 uml API](../modeling/programming-with-the-uml-api.md)進行[編輯 uml 順序圖表](../modeling/edit-uml-sequence-diagrams-by-using-the-uml-api.md)[範例：命令以在 uml 圖表上對齊圖形](https://go.microsoft.com/fwlink/?LinkID=213809)

@@ -13,25 +13,25 @@ caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b8769cbb23b2c192fd3db07eca9519661b3e214c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: af214f6a29e12dcdf2fe8bd2de75e05283894922
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68190362"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74290116"
 ---
 # <a name="performance-session-properties"></a>效能工作階段屬性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-[效能工作階段]  可以讓您進行設定，以決定如何對應用程式進行程式碼剖析。 它也會儲存針對程式碼剖析工作階段所產生的報告。  
+[效能工作階段] 可以讓您進行設定，以決定如何對應用程式進行程式碼剖析。 它也會儲存針對程式碼剖析工作階段所產生的報告。  
   
  **需求**  
   
-- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)]、[!INCLUDE[vsPreLong](../includes/vsprelong-md.md)]、[!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
-  您可以執行 [效能精靈]  或手動建立工作階段，以建立 [效能工作階段]  。 在 [效能工作階段]  建立完成後，[效能總管]  中便會顯示 [效能工作階段]  。  
+  您可以執行 [效能精靈] 或手動建立工作階段，以建立 [效能工作階段]。 在 [效能工作階段] 建立完成後，[效能總管] 中便會顯示 [效能工作階段]。  
   
-  若要檢視 [效能工作階段]  屬性，請在 [效能總管]  中選取工作階段名稱，以滑鼠右鍵按一下，然後選取 [屬性]  。  
+  若要檢視 [效能工作階段] 屬性，請在 [效能總管] 中選取工作階段名稱，以滑鼠右鍵按一下，然後選取 [屬性]。  
   
   效能工作階段具有下列屬性頁︰  
   
@@ -75,13 +75,13 @@ ms.locfileid: "68190362"
  如需詳細資訊，請參閱[收集階層互動資料](../profiling/collecting-tier-interaction-data.md)  
   
 ## <a name="instrumentation"></a>測試設備  
- 這些設定可以讓您收集 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 網頁中 JScript 程式碼的效能資料，並指定您希望在檢測處理序前後發生的任何 [檢測前置]  和 [檢測後續]  事件。  
+ 這些設定可以讓您收集 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 網頁中 JScript 程式碼的效能資料，並指定您希望在檢測處理序前後發生的任何 [檢測前置] 和 [檢測後續] 事件。  
   
  如需詳細資訊，請參閱：  
   
  [如何：分析網頁中的 JavaScript 程式碼](../profiling/how-to-profile-javascript-code-in-web-pages.md)  
   
- [如何：指定檢測前和檢測後命令](../profiling/how-to-specify-pre-and-post-instrument-commands.md)  
+ [如何：指定檢測前置和檢測後續命令](../profiling/how-to-specify-pre-and-post-instrument-commands.md)  
   
 ## <a name="cpu-counters"></a>CPU 計數器  
  這些設定可讓您收集在使用檢測程式碼剖析方法時，有關 CPU 效能計數器的資料。 不論 CPU 設計或製造商為何，您都可以使用可移植的效能計數器。 平台事件需視 CPU 設計和製造商而定。 如需晶片上之效能計數器的詳細資訊，請參閱特定處理器的說明文件。  
@@ -89,16 +89,16 @@ ms.locfileid: "68190362"
  如需詳細資訊，請參閱[如何：收集 CPU 計數器資料](../profiling/how-to-collect-cpu-counter-data.md)  
   
 ## <a name="windows-events"></a>Windows 事件  
- 在剖析期間，您可以收集來自事件追蹤提供者的資料。 您可以使用 VSPerfReport.exe 命令列工具的 `/calltrace` 選項來檢視此資料。 如需 Windows 事件追蹤 (ETW) 的詳細資訊，請參閱[關於事件追蹤 (About Event Tracing)](http://go.microsoft.com/fwlink/?linkid=90752)。  
+ 在剖析期間，您可以收集來自事件追蹤提供者的資料。 您可以使用 VSPerfReport.exe 命令列工具的 `/calltrace` 選項來檢視此資料。 如需 Windows 事件追蹤 (ETW) 的詳細資訊，請參閱[關於事件追蹤 (About Event Tracing)](https://go.microsoft.com/fwlink/?linkid=90752)。  
   
  如需詳細資訊，請參閱：  
   
- [如何：收集 Windows 事件追蹤 (ETW) 資料](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md)  
+ [如何：收集 Windows 事件追蹤 (ETW) 資料](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md)。  
   
  [VSPerfReport](../profiling/vsperfreport.md)。  
   
 ## <a name="windows-counters"></a>Windows 計數器  
- 這個選項可以讓您從 Windows 效能監視器計數器收集資料。 若要收集此資料，請選取標記為 [收集 Windows 效能計數器]  的核取方塊。 收集的間隔時間可以在 [收集間隔]  方塊中設定。 另外，您可能也可以指定 [計數器分類]  和 [執行個體]  。 部分預設 Windows 效能監視器計數器可供使用。  
+ 這個選項可以讓您從 Windows 效能監視器計數器收集資料。 若要收集此資料，請選取標記為 [收集 Windows 效能計數器] 的核取方塊。 收集的間隔時間可以在 [收集間隔] 方塊中設定。 另外，您可能也可以指定 [計數器分類] 和 [執行個體]。 部分預設 Windows 效能監視器計數器可供使用。  
   
  如需詳細資訊，請參閱[如何：收集 Windows 計數器資料](../profiling/how-to-collect-windows-counter-data.md)。  
   
@@ -107,7 +107,7 @@ ms.locfileid: "68190362"
   
  如需詳細資訊，請參閱：  
   
- [如何：指定 .NET Framework 執行階段](../profiling/how-to-specify-the-dotnet-framework-runtime.md)  
+ [如何︰指定 .NET Framework 執行階段](../profiling/how-to-specify-the-dotnet-framework-runtime.md)  
   
  [如何：指定其他的檢測選項](../profiling/how-to-specify-additional-instrumentation-options.md)  
   

@@ -12,17 +12,17 @@ caps.latest.revision: 39
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 69315b8a81c321d8a33583b02e9579f392d1dc65
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: b8b154ccd18472d0b0bca502c78a6612aeccdda6
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72669602"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74301049"
 ---
-# <a name="extend-uml-models-and-diagrams"></a>擴充 UML 模型和圖表
+# <a name="extend-uml-models-and-diagrams"></a>Extend UML models and diagrams
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題摘要說明各種不同方式，可讓您擴充 Visual Studio 隨附的 UML 模型工具。 若要查看支援各種模型類型和工具的 Visual Studio 版本有哪些，請參閱 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。
+本主題摘要說明各種不同方式，可讓您擴充 Visual Studio 隨附的 UML 模型工具。 若要查看哪些版本的 Visual Studio 支援每種模型類型和工具，請參閱[架構和模型工具的版本支援](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。
 
  在下列範例案例中，Fabrikam 設計並安裝了機場行李處理系統。 機場專案之間在基本設備與控制的軟體上有許多共通點。 但是其中也有些大相逕庭之處，例如輸送帶的配置、登機報到櫃檯、儲物箱和其他處理行李的設備。
 
@@ -30,13 +30,13 @@ ms.locfileid: "72669602"
 
  Fabrikam 的工具小組製作了一系列的增強功能來協助此開發小組。 下列各節描述您可以定義的各種擴充功能。 您可以將多項技術合併成單一 Visual Studio 擴充功能。
 
- 如需詳細資訊，請參閱這段影片：![連結至影片](../data-tools/media/playvideo.gif "連結 playvideo")[MSDN How Do I 系列： UML 工具和](http://go.microsoft.com/fwlink/?LinkId=214467)擴充性。
+ 如需詳細資訊，請參閱這段影片：![連結至影片](../data-tools/media/playvideo.gif "連結 playvideo")[MSDN How Do I 系列： UML 工具和](https://go.microsoft.com/fwlink/?LinkId=214467)擴充性。
 
 ## <a name="Requirements"></a> 需求
 
 - [Visual Studio SDK](../extensibility/visual-studio-sdk.md)。
 
-- [Modeling SDK for Visual Studio 2015](http://www.microsoft.com/download/details.aspx?id=48148)。
+- [Modeling SDK for Visual Studio 2015](https://www.microsoft.com/download/details.aspx?id=48148)。
 
 ## <a name="profiles"></a>設定檔
  設定檔可讓您定義 UML 項目的造型和其他屬性。
@@ -113,10 +113,10 @@ ms.locfileid: "72669602"
 
 |**分類**|**Links**|
 |------------------|---------------|
-|**影片**|![連結至影片](../data-tools/media/playvideo.gif "連結 playvideo") [MSDN 「如何」系列： UML 工具和](http://go.microsoft.com/fwlink/?LinkId=214467)擴充性<br /><br /> ![連結至影片](../data-tools/media/playvideo.gif "PlayVideo")[頻道9：使用 Visual Studio 的 UML](http://go.microsoft.com/fwlink/?LinkId=199957)|
-|**論壇**|-   [Visual Studio Visualization & Modeling Tools](http://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Visual Studio Visualization & Modeling SDK (DSL 工具)](http://go.microsoft.com/fwlink/?LinkId=184721)|
-|**部落格**|[Visual Studio ALM + Team Foundation Server 部落格](http://go.microsoft.com/fwlink/?LinkID=201340)|
-|**技術文件和日誌**|[MSDN 架構中心](http://go.microsoft.com/fwlink/?LinkId=201343)|
+|**影片**|![連結至影片](../data-tools/media/playvideo.gif "連結 playvideo") [MSDN 「如何」系列： UML 工具和](https://go.microsoft.com/fwlink/?LinkId=214467)擴充性<br /><br /> ![連結至影片](../data-tools/media/playvideo.gif "PlayVideo")[頻道9：使用 Visual Studio 的 UML](https://go.microsoft.com/fwlink/?LinkId=199957)|
+|**論壇**|-   [Visual Studio Visualization & Modeling Tools](https://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Visual Studio Visualization & Modeling SDK (DSL 工具)](https://go.microsoft.com/fwlink/?LinkId=184721)|
+|**部落格**|[Visual Studio ALM + Team Foundation Server 部落格 (英文)](https://go.microsoft.com/fwlink/?LinkID=201340)|
+|**技術文件和日誌**|[MSDN 架構中心](https://go.microsoft.com/fwlink/?LinkId=201343)|
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
  建立適用于 UML 模型擴充性之[應用程式](../modeling/create-models-for-your-app.md) [API 參考的](../modeling/api-reference-for-uml-modeling-extensibility.md)模型

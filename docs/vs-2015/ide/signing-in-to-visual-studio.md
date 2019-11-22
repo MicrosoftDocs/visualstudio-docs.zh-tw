@@ -10,12 +10,12 @@ caps.latest.revision: 34
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 9c732f4011c4194ce95621cf49022c2b6a9fabf3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 257c3e097f890cc5b3ceec03aca8b264695e1bd9
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72661212"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74301221"
 ---
 # <a name="signing-in-to-visual-studio"></a>登入 Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,12 +35,12 @@ ms.locfileid: "72661212"
 
 - **延長 Visual Studio 試用期** - 您可以額外使用 90 天的 Visual Studio Professional 或 Visual Studio Enterprise，而不受限於 30 天的試用期。
 
-- **使用和 MSDN 或 VSO 訂閱相關聯的帳戶，就可以解除鎖定 Visual Studio**。 請參閱 [如何解除鎖定 Visual Studio](../ide/how-to-unlock-visual-studio.md)。
+- **使用和 MSDN 或 VSO 訂閱相關聯的帳戶，就可以解除鎖定 Visual Studio**。 請參閱[如何解除鎖定 Visual Studio](../ide/how-to-unlock-visual-studio.md)。
 
 - 對於同一個帳戶不會再次提示輸入認證，即可在 IDE 中**自動連接到 Azure 和 Visual Studio Team Services 等服務** 。
 
 ## <a name="how-to-sign-in-to-visual-studio"></a>如何登入 Visual Studio
- 第一次啟動 Visual Studio 時，系統會要求您登入並提供一些基本註冊資訊。 您應該選擇 Microsoft 帳戶或最能代表您的工作或學校帳戶。 如果您沒有任何一個這樣的帳戶，則可以免費建立一個 Microsoft 帳戶。 請查看 [如何註冊 Microsoft 帳戶？](http://windows.microsoft.com/windows-live/sign-up-create-account-how)
+ 第一次啟動 Visual Studio 時，系統會要求您登入並提供一些基本註冊資訊。 您應該選擇 Microsoft 帳戶或最能代表您的工作或學校帳戶。 如果您沒有任何一個這樣的帳戶，則可以免費建立一個 Microsoft 帳戶。 請查看 [如何註冊 Microsoft 帳戶？](https://support.microsoft.com/help/4026324/microsoft-account-how-to-create)
 
  接下來，選擇您在 Visual Studio 中要使用的 UI 設定和色彩佈景主題。 Visual Studio 會記住這些設定，並在您已登入的所有 Visual Studio 環境中同步處理這些設定。 如需同步設定的清單，請參閱[同步設定](../ide/synchronized-settings-in-visual-studio.md)。 您稍後可以在 Visual Studio 中開啟 [工具] &#124; [選項] 功能表來變更設定。
 

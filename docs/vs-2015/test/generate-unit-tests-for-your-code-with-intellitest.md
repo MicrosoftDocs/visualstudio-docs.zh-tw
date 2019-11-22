@@ -10,12 +10,12 @@ ms.assetid: cd9ff940-e948-4d28-a72c-b291ef5c1e90
 caps.latest.revision: 35
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: c7b3d6a3cdb6eefd27f391dbe68a45ec3824b7de
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f03490fc7ea3513a006254e3931cc1113f3bc159
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72660550"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74302583"
 ---
 # <a name="generate-unit-tests-for-your-code-with-intellitest"></a>使用 IntelliTest 為程式碼產生單元測試
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -118,7 +118,7 @@ IntelliTest 會探索您的 .NET 程式碼，從而產生測試資料及單元�
  當您加入判斷提示並重新執行 IntelliTest 時，其會檢查該判斷提示是否正確，若不正確，測試即會失敗。
 
 ### <a name="NoRun"></a> 問： 是否可以產生參數化的單元測試而不需先執行 IntelliTest?
- **答：** 可以，只要以滑鼠右鍵按一下類別或方法，然後選擇 [建立 IntelliTest]即可。
+ **答：** 可以，只要以滑鼠右鍵按一下類別或方法，然後選擇 [建立 IntelliTest] 即可。
 
  ![以&#45;滑鼠右鍵按一下編輯器，選擇 [建立 IntelliTest]](../test/media/pexcreateintellitest.png "PEXCreateIntelliTest")
 
@@ -127,11 +127,11 @@ IntelliTest 會探索您的 .NET 程式碼，從而產生測試資料及單元�
  ![使用 MSTest default 建立 IntelliTest](../test/media/pexcreateintellitestmstest.png "PEXCreateIntelliTestMSTest")
 
 ### <a name="q-can-i-use-other-unit-test-frameworks-with-intellitest"></a>問： 是否可以使用其他單元測試架構搭配 IntelliTest？
- **答：** 可以，請遵循 [尋找並安裝其他架構](../test/install-third-party-unit-test-frameworks.md)中的步驟。 重新啟動 Visual Studio 並重新開啟方案之後，以滑鼠右鍵按一下類別或方法，然後選擇 [建立 IntelliTest]。 於此處選取您已安裝的架構：
+ **答：** 可以，請遵循[尋找並安裝其他架構](../test/install-third-party-unit-test-frameworks.md)中的步驟。 重新啟動 Visual Studio 並重新開啟方案之後，以滑鼠右鍵按一下類別或方法，然後選擇 [建立 IntelliTest]。 於此處選取您已安裝的架構：
 
  ![選取 IntelliTest 的其他單元測試架構](../test/media/pexcreateintellitestextensions.png "PEXCreateIntelliTestExtensions")
 
  然後執行 IntelliTest，以在對應的 g.cs 檔案中產生個別的單元測試。
 
 ### <a name="q-can-i-learn-more-about-how-the-tests-are-generated"></a>問：我可以進一步了解如何產生測試嗎？
- **答：** 可以，如需高階概觀，請閱讀這篇 [部落格文章](http://blogs.msdn.com/b/visualstudioalm/archive/2015/07/05/intellitest-one-test-to-rule-them-all.aspx)。
+ **答：** 可以，如需高階概觀，請閱讀這篇 [部落格文章](https://devblogs.microsoft.com/devops/intellitest-one-test-to-rule-them-all/)。

@@ -9,12 +9,12 @@ caps.latest.revision: 31
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 7fc6f29246f90c47a4c59a5ae6bb1999ceac72bf
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 744b5f3c62ac2c5636ed2499653986d3b669fce3
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72646910"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299958"
 ---
 # <a name="step-9-review-comment-and-test-your-code"></a>步驟 9：檢閱、註解和測試您的程式碼
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ ms.locfileid: "72646910"
 
 - 方法是由程式碼「陳述式」或程式碼行所構成。 可將方法視為將程式碼陳述式配套起來的機制。
 
-- 執行 (或「呼叫」) 方法時，會從第一個陳述式開始依序逐一執行方法中的陳述式。
+- 執行方法時 (或說「*呼叫*」(Call))，方法中的陳述式會從第一個陳述式開始依序逐一執行。
 
    下列是陳述式的範例。
 
@@ -45,7 +45,7 @@ ms.locfileid: "72646910"
 
    陳述式就是讓程式執行動作的機制。 在 Visual C# 中，陳述式的結尾一定是分號。 在 Visual Basic 中，行尾就代表陳述式結尾 （Visual Basic 中不需要分號）。上述語句會告訴您的 `PictureBox` 控制項載入使用者以**OpenFileDialog**元件選取的檔案。
 
-  ![影片連結](../data-tools/media/playvideo.gif "連結 playvideo")如需本主題的影片版本，請參閱[教學課程1：在 Visual Basic 中建立圖片檢視器-影片 5](http://go.microsoft.com/fwlink/?LinkId=205216)或[教學課程1：建立C#圖片檢視器-影片 5](http://go.microsoft.com/fwlink/?LinkId=205206)。 這些影片使用舊版 Visual Studio，因此有一些功能表命令以及某些使用者介面項目會有些微差異。 不過，概念和程序在目前 Visual Studio 版本中的運作方式雷同。
+  ![影片連結](../data-tools/media/playvideo.gif "連結 playvideo")如需本主題的影片版本，請參閱[教學課程1：在 Visual Basic 中建立圖片檢視器-影片 5](https://go.microsoft.com/fwlink/?LinkId=205216)或[教學課程1：建立C#圖片檢視器-影片 5](https://go.microsoft.com/fwlink/?LinkId=205206)。 這些影片使用舊版 Visual Studio，因此有一些功能表命令以及某些使用者介面項目會有些微差異。 不過，概念和程序在目前 Visual Studio 版本中的運作方式雷同。
 
 ### <a name="to-add-comments"></a>加入註解
 
@@ -55,12 +55,12 @@ ms.locfileid: "72646910"
      [!code-vb[VbExpressTutorial1Step9_10#1](../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial1step9_10/vb/form1.vb#1)]
 
     > [!NOTE]
-    > **showButton** 按鈕的 Click 事件處理常式現在已完成，可以運作。 您已從 `if` 陳述式開始撰寫程式碼。 `if` 陳述式可指示程式「檢查這一件事，如果條件成立，則執行這些動作」。 在此情況下，您指示程式開啟 [開啟檔案] 對話方塊；而且，如果使用者選取檔案並選擇 [確定] 按鈕，則會在 PictureBox 中載入該檔案。
+    > **showButton** 按鈕的 Click 事件處理常式現在已完成，可以運作。 您已從 `if` 陳述式開始撰寫程式碼。 `if` 陳述式可指示程式「檢查這一件事，如果條件成立，則執行這些動作」。 在這個案例中，您指示程式開啟 [**開啟檔案**] 對話方塊，而如果使用者選取檔案並選擇 [**確定**] 按鈕，則在 PictureBox 中載入該檔案。
 
     > [!TIP]
     > 建置 IDE 可讓您輕鬆撰寫程式碼，而「程式碼片段」就是它基於此目的而提供的一種方式。 程式碼片段是捷徑，可展開成一小段程式碼區塊。
     >
-    >  您可以看到所有可用的程式碼片段。 在功能表列上，依序選擇 [工具] 和 [程式碼片段管理員]。 在 Visual C# 中，`if` 程式碼片段位於 [Visual C#] 中。 在 Visual Basic 中，`if` 程式碼片段位於 [程式碼模式] 的 [條件和迴圈] 中。 您可以使用此管理員來瀏覽現有的程式碼片段或加入您自己的程式碼片段。
+    >  您可以看到所有可用的程式碼片段。 在功能表列上，依序選擇 [工具] 和 [程式碼片段管理員]。 在 Visual C# 中，`if` 程式碼片段位於 [**Visual C#** ] 中。 在 Visual Basic 中，`if` 程式碼片段位於 [程式碼模式] 的 [條件和迴圈] 中。 您可以使用此管理員來瀏覽現有的程式碼片段或加入您自己的程式碼片段。
     >
     >  若要在輸入程式碼時啟動程式碼片段，請輸入程式碼並選擇 TAB 鍵。 許多程式碼片段會出現在 [IntelliSense] 視窗中，這就是為何選擇兩次 TAB 鍵的原因：第一次是從 [IntelliSense] 視窗中選取程式碼片段，第二次是指示 IDE 使用該程式碼片段 (IntelliSense 支援 `if` 程式碼片段，但不支援 `ifelse` 程式碼片段)。
 
@@ -68,7 +68,7 @@ ms.locfileid: "72646910"
 
      [![全部儲存] 工具列按鈕](../ide/media/express-iconsaveall.png "Express_IconSaveAll")全部儲存按鈕
 
-     或者，若要儲存程式，請在功能表列上依序選擇 [檔案] 和 [全部儲存]。 最好養成儘早並經常儲存的習慣。
+     或者，在功能表列上選擇 [**檔案**]、[**全部儲存**]，以儲存程式。 最好養成儘早並經常儲存的習慣。
 
      程式執行時，看起來應該類似下列圖片。
 
@@ -76,9 +76,9 @@ ms.locfileid: "72646910"
 
 ### <a name="to-test-your-program"></a>若要測試程式
 
-1. 選擇 F5 鍵或選擇 [開始偵錯] 工具列按鈕。
+1. 選擇 F5 鍵或選擇 [**開始偵錯**] 工具列按鈕。
 
-2. 選擇 [顯示圖片] 按鈕，執行您剛撰寫的程式碼。 首先，程式會開啟 [開啟檔案] 對話方塊。 確認篩選出現在對話方塊底部的 [檔案類型] 下拉式清單中。 然後，瀏覽至圖片並開啟它。 在 [我的文件] 資料夾的 [我的圖片\範例圖片] 資料夾內，您通常可以找到 Windows 作業系統隨附的範例圖片。
+2. 選擇 [顯示圖片] 按鈕，執行您剛撰寫的程式碼。 首先，程式會開啟 [**開啟檔案**] 對話方塊。 確認篩選出現在對話方塊底部的 [檔案類型] 下拉式清單中。 然後，瀏覽至圖片並開啟它。 在 [我的文件] 資料夾的 [我的圖片\範例圖片] 資料夾內，您通常可以找到 Windows 作業系統隨附的範例圖片。
 
     > [!NOTE]
     > 如果未在 [選取圖片檔案] 對話方塊中看見任何影像，請確定已選取對話方塊右下方的下拉式清單中的 [所有檔案 (*.\*)] 篩選條件。

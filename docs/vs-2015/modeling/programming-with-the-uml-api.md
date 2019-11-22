@@ -12,23 +12,23 @@ caps.latest.revision: 21
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: b264987818e244cf016e9b54794109cafc548439
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: dcb179ae80e60654c981da8c76e9a57e6fb8ed66
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652102"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74296059"
 ---
 # <a name="programming-with-the-uml-api"></a>Programming with the UML API
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio 的 UML API 可讓您撰寫程式碼，以建立、讀取和更新 UML 模型和圖表。 若要查看哪些 Visual Studio 版本支援 UML 模型，請參閱 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。
+Visual Studio 的 UML API 可讓您撰寫程式碼，以建立、讀取和更新 UML 模型和圖表。 若要查看哪些版本的 Visual Studio 支援 UML 模型，請參閱 [Architecture and Modeling Tools 的版本支援](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。
 
  除了應用程式開發介面參考頁面之外，下列主題也會描述應用程式開發介面。
 
 |主題|描述的範例類型和方法|描述的功能|
 |-----------|-----------------------------------------|------------------------|
-|[使用 UML API 巡覽關聯性](../modeling/navigate-relationships-with-the-uml-api.md)|UML 項目及其屬性和關聯。 例如，IElement 及其子系，包含：IClass、IActivity、IUseCase、IComponent、IInteraction、IModel、IPackage|在 Visual Studio 中，UML 模型符合 UML 規格版本2.1.2，可以在[Uml 資源網頁](http://go.microsoft.com/fwlink/?LinkId=160796)上取得。 每一個類型都是一個介面，此介面的名稱與 UML 類型相同，且包含前置詞 "I"。|
+|[使用 UML API 巡覽關聯性](../modeling/navigate-relationships-with-the-uml-api.md)|UML 項目及其屬性和關聯。 例如，IElement 及其子系，包含：IClass、IActivity、IUseCase、IComponent、IInteraction、IModel、IPackage|在 Visual Studio 中，UML 模型符合 UML 規格版本2.1.2，可以在[Uml 資源網頁](https://go.microsoft.com/fwlink/?LinkId=160796)上取得。 每一個類型都是一個介面，此介面的名稱與 UML 類型相同，且包含前置詞 "I"。|
 |[在 UML 模型中建立項目和關聯性](../modeling/create-elements-and-relationships-in-uml-models.md)|IPackage.CreateClass()<br /><br /> IClass.CreateOperation()|每一個項目類型都有建立其子項目的方法。|
 |[在圖表上顯示 UML 模型](../modeling/display-a-uml-model-on-diagrams.md)|IShape、IDiagram<br /><br /> IShape.Move()|模型中的每一個項目都可做為圖表上的圖形表示。 在某些情況下，您可以為每一個物件建立新圖形。 您可以移動圖形、調整圖形大小、為圖形上色，以及摺疊或展開這些圖形。|
 |[巡覽 UML 模型](../modeling/navigate-the-uml-model.md)|IModelStore<br /><br /> IDiagramContext|「模型存放區」可儲存模型。<br /><br /> 「圖表內容」可讓您存取目前的圖表和存放區。|
@@ -57,16 +57,16 @@ Visual Studio 的 UML API 可讓您撰寫程式碼，以建立、讀取和更新
 |Microsoft.VisualStudio.ArchitectureTools.Extensibility|VisualStudio. Microsoft.visualstudio.architecturetools.layer.validator 擴充性 Uml|[建立方法](../modeling/create-elements-and-relationships-in-uml-models.md)|
 ||Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation|[圖表和圖形](../modeling/display-a-uml-model-on-diagrams.md)|
 ||Microsoft.VisualStudio.ArchitectureTools.Extensibility|[模型專案](../modeling/read-a-uml-model-in-program-code.md)|
-|Microsoft.VisualStudio.Modeling.Sdk.[版本]|<xref:Microsoft.VisualStudio.Modeling.ExtensionEnablement>|[功能表命令延伸](../modeling/define-a-menu-command-on-a-modeling-diagram.md)模組。<br /><br /> [連結的復原交易](../modeling/link-uml-model-updates-by-using-transactions.md)。|
+|Microsoft.VisualStudio.Modeling.Sdk.[版本]|<xref:Microsoft.VisualStudio.Modeling.ExtensionEnablement>|[功能表命令延伸](../modeling/define-a-menu-command-on-a-modeling-diagram.md)模組。<br /><br /> [連結的復原異動](../modeling/link-uml-model-updates-by-using-transactions.md)。|
 ||<xref:Microsoft.VisualStudio.Modeling.Validation>|[驗證](../modeling/define-validation-constraints-for-uml-models.md)|
 ||(其他命名空間)|建議僅供進階使用。|
 |Microsoft.VisualStudio.Modeling.Sdk.Diagrams.[版本]|<xref:Microsoft.VisualStudio.Modeling.Diagrams.ExtensionEnablement>|軌跡[處理常式](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md)。|
 ||(其他命名空間)|建議僅供進階使用。|
-|Microsoft.VisualStudio.TeamFoundation.WorkItemTracking|Microsoft.VisualStudio.TeamFoundation.WorkItemTracking|[工作專案的連結](../modeling/define-a-work-item-link-handler.md)。|
+|Microsoft.VisualStudio.TeamFoundation.WorkItemTracking|Microsoft.VisualStudio.TeamFoundation.WorkItemTracking|[連結至工作項目](../modeling/define-a-work-item-link-handler.md)。|
 |Microsoft.TeamFoundation.WorkItemTracking.Client|Microsoft.TeamFoundation.WorkItemTracking.Client|[工作專案及其欄位](../modeling/define-a-work-item-link-handler.md)。|
 |Microsoft.TeamFoundation.Client|Microsoft.TeamFoundation.Client|[工作專案及其欄位](../modeling/define-a-work-item-link-handler.md)。|
 |System.ComponentModel.Composition|<xref:System.ComponentModel.Composition>|[針對 MEF 元件匯出和匯入](../modeling/define-and-install-a-modeling-extension.md)|
 |System.Linq|<xref:System.Linq>|[集合的輕鬆操作，特別是在處理關聯性時](../modeling/navigate-relationships-with-the-uml-api.md)。|
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
  [擴充 uml 模型和圖表](../modeling/extend-uml-models-and-diagrams.md) [API 參考以進行 uml](../modeling/api-reference-for-uml-modeling-extensibility.md)模型化延伸

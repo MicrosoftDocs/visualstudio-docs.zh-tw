@@ -1,5 +1,5 @@
 ---
-title: 使用已連接服務加入 Azure 儲存體
+title: 使用已連線的服務新增 Azure 儲存體
 description: 使用 Visual Studio 的加入已連接服務對話方塊加入 Azure 儲存體
 author: ghogen
 manager: jillfra
@@ -11,12 +11,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/26/2017
 ms.author: ghogen
-ms.openlocfilehash: e68f7503ecc75c03e9f4beda2003415d3175ee7e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6d7bf7901ab33dc6dba50013ebdfa05c3188cd6c
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62963840"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300177"
 ---
 # <a name="adding-azure-storage-by-using-visual-studio-connected-services"></a>使用 Visual Studio 的已連接服務加入 Azure 儲存體
 使用 Visual Studio 時，您可以使用 [加入已連接服務] 對話方塊，將下列任何服務連接到「Azure 儲存體」：
@@ -63,12 +63,12 @@ ms.locfileid: "62963840"
 ## <a name="how-your-project-is-modified"></a>您的專案修改方式
 當您完成對話方塊時，Visual Studio 會加入參考並修改某些組態檔。 特定變更會視專案類型而定：
 
-- ASP.NET 專案 - [發生什麼事 - ASP.NET 專案](http://go.microsoft.com/fwlink/p/?LinkId=513126)
-- ASP.NET Core 專案 - [發生什麼事 - ASP.NET 5 專案](http://go.microsoft.com/fwlink/p/?LinkId=513124)
-- 雲端服務專案 (Web 角色和背景工作角色) - [發生什麼事 - 雲端服務專案](http://go.microsoft.com/fwlink/p/?LinkId=516965)
+- ASP.NET 專案 - [發生什麼事 - ASP.NET 專案](https://go.microsoft.com/fwlink/p/?LinkId=513126)
+- ASP.NET Core 專案 - [發生什麼事 - ASP.NET 5 專案](https://go.microsoft.com/fwlink/p/?LinkId=513124)
+- 雲端服務專案 (Web 角色和背景工作角色) - [發生什麼事 - 雲端服務專案](https://go.microsoft.com/fwlink/p/?LinkId=516965)
 - WebJob 專案 - [發生什麼事 - WebJob 專案](/azure/visual-studio/vs-storage-webjobs-what-happened)
 
 ## <a name="next-steps"></a>後續步驟
-- [MSDN 論壇：Azure 儲存體](https://social.msdn.microsoft.com/forums/azure/home?forum=windowsazuredata)
-- [Microsoft Azure 儲存體小組部落格 (英文)](http://blogs.msdn.com/b/windowsazurestorage/)
+- [MSDN 論壇： Azure 儲存體](https://social.msdn.microsoft.com/forums/azure/home?forum=windowsazuredata)
+- [Microsoft Azure 儲存體小組部落格 (英文)](https://blogs.msdn.microsoft.com/windowsazurestorage/)
 - [Azure 儲存體文件](https://docs.microsoft.com/azure/storage/)
