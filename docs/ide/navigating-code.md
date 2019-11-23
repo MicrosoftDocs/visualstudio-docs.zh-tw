@@ -1,6 +1,6 @@
 ---
 title: 程式碼巡覽命令
-ms.date: 08/14/2018
+ms.date: 11/21/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - code editor, navigation
@@ -13,17 +13,17 @@ helpviewer_keywords:
 - peek definition
 - go to line
 - go to
-author: jillre
-ms.author: jillfra
-manager: jillfra
+author: mikadumont
+ms.author: midumont
+manager: tglee
 ms.workload:
 - multiple
-ms.openlocfilehash: f1fcfd69e2de9a174c708da1c4f5eaedd397722e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f5348fc0c36435e5760f3967a7e6c9be2aecb1b7
+ms.sourcegitcommit: b04c603ce73b993d042ebdf7f3722cf4fe2ef7f4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72667004"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74316459"
 ---
 # <a name="navigate-code"></a>巡覽程式碼
 
@@ -82,7 +82,7 @@ Visual Studio 提供許多方式在編輯器中巡覽程式碼。 本主題會�
 
 - **移至檔案** (**Ctrl**+**1**、**Ctrl**+**F**)：移至解決方案中的指定檔案。
 
-- **前往最近使用**的檔案（**ctrl** +**1**， **ctrl** +**R**）：移至方案中指定的最近造訪的檔案。
+- **Go To Recent File** (**Ctrl**+**1**, **Ctrl**+**R**): Move to the specified, recently visited file in the solution.
 
 - **移至類型** (**Ctrl**+**1**、**Ctrl**+**T**)：移至解決方案中的指定類型。
 
@@ -124,6 +124,15 @@ Visual Studio 提供許多方式在編輯器中巡覽程式碼。 本主題會�
 ------------ | ---
 **鍵盤** | 將文字資料指標放在類型名稱內的某個位置，然後按 **Ctrl**+**F12**
 **滑鼠** | 以滑鼠右鍵按一下類型名稱，然後選取 [移至實作]
+
+## <a name="go-to-base"></a>Go To Base
+
+Using Go To Base, you can navigate up the inheritance chain of the selected element. If there are multiple results, you will see them listed in the **Go To Base** window:
+
+輸入 | 功能
+------------ | ---
+**鍵盤** | Place your text cursor somewhere inside the type name, and press **Alt**+**Home**
+**滑鼠** | Right-click on the type name and select **Go To Base**
 
 ## <a name="call-hierarchy"></a>呼叫階層
 
